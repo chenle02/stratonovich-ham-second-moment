@@ -25,9 +25,10 @@ https://github.com/leanprover-community/mathlib4/releases/tag/v4.35.0.
 
 ## First statement fence (G0, already informally reviewed)
 
-1. Represent actual pair partitions of Fin(2k), equivalently fixed-point-free
-   involutions, and prove their cardinality is (2k)!/(2^k k!). Do not merely
-   define a scalar recurrence and call it a cardinality theorem.
+1. Reuse the exact-compatible Physlib count of actual fixed-point-free
+   involutions on Fin(2k), identify its two-element orbits with manuscript
+   pair partitions, and derive the factorial-form consumer. Do not rebuild
+   the counting library or define a scalar recurrence as a substitute.
 2. Deduce k! <= Pk <= 2^k k!, including k=0, and the 2k+1 chain-length splits.
 3. For a partition into Q0,Q1,Q2, derive q0+q2/2=k from q0=q1,
    q0+q1+q2=2k and even q2, with exact natural-number division obligations.
@@ -66,3 +67,16 @@ PROJECT-GOAL.md decision point 4 requires Le's decision before creating the
 companion repository. This proposal creates no repository, changes no sibling,
 and claims no Lean verification. Mathematics calibration can proceed while
 this package decision is pending.
+
+## Parallel source-search update
+
+Exact compatible reuse was found after the initial proposal: Physlib commit
+`3bfc7af8dbd43b439d761e09ce365a3759b5c2f5`, theorem
+`Physlib.Fin.involutionNoFixed_card_mul_two`, uses the proposed Lean/Mathlib
+pins and counts the actual objects including zero order. Its source module
+imports only Mathlib. Prefer an exact-pinned dependency/import and retain its
+Apache-2.0 attribution; a Mathlib cycle-type specialization is an alternative,
+not a second library to build in parallel. No proof/build acceptance follows
+from source inspection. See `recon/2026-10-27-reuse.md` for exact statements,
+license/source pins and search limitations. The proposed private repository
+name, remote and approval boundary are unchanged.

@@ -6,7 +6,7 @@
 
 ## Current state
 
-- **Phase:** Round 2 = Gate G1 complete (2026-10-27), after Le authorized continuation. Main targets remain open; companion creation awaits decision point 4.
+- **Phase:** Round 2 = Gate G1 complete (2026-10-27), after Le authorized continuation. Main targets remain open; G2 preparatory screens are active and companion creation awaits decision point 4.
 - **Proved in this project:** P:Jensen (§2); reviewed G0 P:mixed, L:white-test,
   L:crude-corrected and P:envelope (§3); reviewed G1 P:white-four, L:static-four and P:riesz-small (§4). Intermediate upper exponent rho>kappa; principal goals open.
 - **Open targets:** Goal G:upper, Goal G:sharp (see PROJECT-GOAL.md).
@@ -63,7 +63,7 @@ then the round-close protocol (`paper-dev-round-close-protocol`).
 |---|---|---|---|
 | 0 | 2026-10-26 | Setup: repo, notes scaffold (5 pp, clean build), source manifest, wiki project page | see git log |
 | 1 | 2026-10-27 | G0 complete: mixed expansion, corrected crude bound, intermediate rho upper bound and scoped no-go; Opus PASS_WITH_NOTES/high | 4ff2bca60e666482480596cc1e53b9be06750ea7 |
-| 2 | 2026-10-27 | G1 complete: all fifteen white order-four terms, exact static11/540, Riesz coefficients/representation; Opus PASS_WITH_NOTES/high | ROUND2_ARTICLE_SHA |
+| 2 | 2026-10-27 | G1 complete: all fifteen white order-four terms, exact static11/540, Riesz coefficients/representation; Opus PASS_WITH_NOTES/high | 8358d58c40591922a971790827f10ebe576932e0 |
 
 ## Round 1 — Gate G0 (2026-10-27)
 
@@ -352,8 +352,8 @@ are not used. Both G:upper and G:sharp remain open.
 - PDF SHA-256: `bfa0b11fb4f85a9c26a7a09fe021766170900eb2dfe5efd1194965aa99e8b0cb`.
 - Review: `reviews/2026-10-27-round2/review-report.json`; exact bindings in
   `review-summary.json`, full native evidence in `review-evidence.tar.xz`.
-- Article Round 2 commit: ROUND2_ARTICLE_SHA.
-- Wiki Round 2 commit: ROUND2_WIKI_SHA.
+- Article Round 2 commit: 8358d58c40591922a971790827f10ebe576932e0.
+- Wiki Round 2 commit: 7c61911c772834f7d26f0809466102434e1cb0ab.
 - Decision point 4: creation proposal prepared and asked; no answer received
   yet. No repository, remote or registry entry has been created.
 - Next formal work: reviewed G0 finite/algebraic seams in the proposed private
@@ -364,3 +364,18 @@ The Round 2 wiki clone helper initially refused its own overwritten tracked
 page-health cache. The failed clone was removed by the helper. A fresh manual
 isolated clone preserves the tracked cache and provisions read-only adapters;
 no canonical wiki WIP or tool installation was modified to bypass the refusal.
+
+### Parallel continuation authorized (2026-10-27)
+
+Le explicitly authorized multiple subagents for parallel/independent work.
+Three read-only tasks produced a mathematical route screen, an independent
+primary-source crosswalk, and an exact-pinned Lean reuse memo. These are
+reconnaissance, not new accepted manuscript proofs or Lean certificates.
+
+[held back: collaborators' unpublished work]
+
+Round 2 publication verification: project lint and relation checks pass;
+index/dashboard generators ran, with unrelated idle-time churn discarded.
+No project-status/DAG change required a separate generated propagation commit.
+The exact wiki commit passed the full pre-push gate and the final origin race
+check before publication. G1 is complete; G2 remains reconnaissance only.
