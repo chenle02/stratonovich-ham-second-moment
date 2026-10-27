@@ -1,5 +1,8 @@
 # Launching the Codex run
 
+> Superseded for the current hand-off by `HANDOFF.md` (agent #30, 2026-10-26),
+> which adds the lean-pkg track. This prompt remains valid for a fresh session.
+
 Run from the repository root (example; adjust model/effort to Le's current
 routing):
 

@@ -11,6 +11,8 @@
   the notes, §2.
 - **Open targets:** Goal G:upper, Goal G:sharp (see PROJECT-GOAL.md).
 - **Blocking human decisions:** none.
+- **Worker:** Codex agent #30 (<MACHINE>, `n30-stratonovich-ham-second`), handed over
+  2026-10-26; workflow paper-dev + lean-pkg (Lean track: `lean-progress/PROGRESS.md`).
 
 ## Round plan
 

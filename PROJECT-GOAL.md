@@ -2,7 +2,18 @@
 
 Status: SET UP 2026-10-26 by Le Chen's instruction ("create a project for
 the second moment, upper bound and exact constant; another agent (Codex)
-will run it"). Not yet started.
+will run it"). Handed to Codex agent #30 on 2026-10-26 with Le's instruction
+"use paper-dev + lean-pkg workflow".
+
+## Goal statement (set this as the run's goal)
+
+> Develop Article-Stratonovich-HAM-Second-Moment with the paper-dev + lean-pkg
+> workflow: prove an upper bound for E u^2(t,x) at the scale
+> t^{(4-alpha-alpha_0)/(3-alpha)} for the Stratonovich hyperbolic Anderson model
+> with time-fractional noise, then pursue the sharp p=2 constant, round by
+> round from Gate G0, with every new proof cross-family reviewed and its finite
+> and algebraic parts verified in a private lean-pkg companion; record no-gos
+> honestly; stop for Le at each decision point listed below.
 
 ## Objective
 
@@ -25,18 +36,12 @@ route cannot reach the scale t^κ.
 
 ## Completion contract (for any claimed result)
 
-1. Every new statement has a complete written proof in the notes, with all
-   imported inputs labeled and pinpointed to the author-version PDF.
-2. The statement passes the calibrations in AGENTS.md (α₀→0; p=1;
-   Jensen; comparison with the Skorohod p=2 result).
-3. An adversarial review by a model family different from the author
-   (Claude Opus 5.5 skeptic), every finding adjudicated in Progress.md, and
-   a final DeepSeek cold read for any result Le may circulate.
-4. Clean build: 0 errors, 0 undefined references/citations, 0 overfull
-   boxes; PDF committed with the source.
-5. Progress.md, the wiki project page status line, and a handoff updated;
-   commits pushed and <HUB> in sync.
+[held back until the source author has been told]
 
 ## Scope limits
+
+[held back: collaborators' unpublished work]
+
+## Decision points: stop and report to Le
 
 [held back: collaborators' unpublished work]

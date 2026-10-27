@@ -115,6 +115,19 @@ All.bib -> ../refdb/All.bib (read-only), extra.bib (local additions)
   and verify HEAD parity. Never drop or reset another agent's work.
 - Repository-relative paths only in committed files.
 
+### Lean track (lean-pkg)
+- Authority for Lean waves: `lean-progress/PROGRESS.md` (lean-dev skill); the
+  mathematics authority stays `Progress.md`. Strategy: `lean-progress/ROADMAP.md`.
+- Canonical workflow: `<HOME>/workspace/Le-AI-Lab/commands/lean-companion.md`
+  and the skills `lean-dev`, `lean-paper-verification-ladder`,
+  `lean-pkg-search-registry-before-new-package`, `search-before-building-lean`.
+- Before any new package: `lean-pkg search <terms>`; then `lean-pkg new` and
+  `lean-pkg register`; take a lease with `lean-pkg lease claim` while working.
+  Evidence: `lean-pkg verify` / `receipt` / `gate`. The package stays private.
+- Lean verifies finite and algebraic steps; analytic inputs are explicit named
+  hypotheses recorded in `lean-progress/BOUNDARIES.md`. Compile locally first;
+  Easley only for gates (CLAUDE.md HPC rules).
+
 ### Compute
 - This is pen-and-paper mathematics. Small symbolic or numerical checks run
   locally (sympy/mpmath via `uv run --with ...`). Do not use Easley for this
