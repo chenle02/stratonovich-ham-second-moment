@@ -62,7 +62,7 @@ then the round-close protocol (`paper-dev-round-close-protocol`).
 | Round | Date | Outcome | Commit |
 |---|---|---|---|
 | 0 | 2026-10-26 | Setup: repo, notes scaffold (5 pp, clean build), source manifest, wiki project page | see git log |
-| 1 | 2026-10-27 | G0 complete: mixed expansion, corrected crude bound, intermediate rho upper bound and scoped no-go; Opus PASS_WITH_NOTES/high | (this commit) |
+| 1 | 2026-10-27 | G0 complete: mixed expansion, corrected crude bound, intermediate rho upper bound and scoped no-go; Opus PASS_WITH_NOTES/high | 4ff2bca60e666482480596cc1e53b9be06750ea7 |
 
 ## Round 1 — Gate G0 (2026-10-27)
 
@@ -224,8 +224,8 @@ clearance. No Skorohod result was developed and no Lean package was created.
   `2c052ae4f6564b7f6a682ceb9830805ace7dca44fc74cce50f5e7664ac117761`.
 - Final PDF SHA-256:
   `177b04f39f41ea9255e2e42b83c691efcfa5e47b363a3cf1d10735be3c24c49e`.
-- Article round-close commit: (this commit).
-- Wiki sync commit: (next commit).
+- Article round-close commit: 4ff2bca60e666482480596cc1e53b9be06750ea7.
+- Wiki sync commit: e55a9f04102301b170fc875c71475e07695e1981.
 - Next action: Le reads this report and chooses whether/how to proceed.
   Round 2, Lean L1 and companion creation remain unopened.
 
@@ -239,3 +239,15 @@ clearance. No Skorohod result was developed and no Lean package was created.
 | Opus skeptic | 3 scientific attempts | Final PASS_WITH_NOTES/high, accepted | V1 medium below threshold; original v2 format rejected; recovery accepted; format-only quota attempt is not a review |
 | Final cold reader | 0 | Not run; required before circulation | No whole-paper clearance claimed |
 | Lean | 0 | L0 unchanged | No formal-verification claim |
+
+### Wiki propagation verification
+
+The project page and dashboard pass targeted lint; project relations and
+contract validation pass. Index and dashboard generators were run in an
+isolated clone. Timestamp-only index changes and unrelated machine-dependent
+idle-time churn were removed; the project's missing cohort/dashboard entries
+were retained. Existing companion and all five anchor-paper backlinks resolve.
+The historical global log has pre-existing render/citekey warnings outside the
+new log line; no such warning is introduced by this round. Full push-gate and
+remote parity are verified at final close. Dashboard propagation commit:
+`3e5c17975` (separate from the project Timeline commit above).
