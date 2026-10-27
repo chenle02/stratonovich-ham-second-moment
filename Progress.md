@@ -225,7 +225,7 @@ clearance. No Skorohod result was developed and no Lean package was created.
 - Final PDF SHA-256:
   `177b04f39f41ea9255e2e42b83c691efcfa5e47b363a3cf1d10735be3c24c49e`.
 - Article round-close commit: 4ff2bca60e666482480596cc1e53b9be06750ea7.
-- Wiki sync commit: e55a9f04102301b170fc875c71475e07695e1981.
+- Wiki sync commit: ae3ebd08c971f6f04f66cdef9da8344395b08722.
 - Next action: Le reads this report and chooses whether/how to proceed.
   Round 2, Lean L1 and companion creation remain unopened.
 
@@ -250,4 +250,17 @@ were retained. Existing companion and all five anchor-paper backlinks resolve.
 The historical global log has pre-existing render/citekey warnings outside the
 new log line; no such warning is introduced by this round. Full push-gate and
 remote parity are verified at final close. Dashboard propagation commit:
-`3e5c17975` (separate from the project Timeline commit above).
+`b413045eb74c4d61988e0178b8ade96c1def9ae9` (separate from the project Timeline commit above).
+
+### Wiki pre-push race reconciliation
+
+Three unrelated upstream wiki commits arrived before publication. The two
+local documentation commits were rebased; range-diff reports both patches
+identical (`=`). No Article source, review candidate or scientific report was
+rewritten. The preliminary unpublished wiki identifiers in the earlier
+provenance commit are superseded by the current hashes above.
+
+```text
+1:  e55a9f041 = 1:  ae3ebd08c project: record reviewed Stratonovich second-moment G0 verdict
+2:  3e5c17975 = 2:  b413045eb propagate: include Stratonovich HAM project in cohort dashboard
+```
