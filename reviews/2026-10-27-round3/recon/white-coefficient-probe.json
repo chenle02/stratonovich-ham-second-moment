@@ -1,0 +1,910 @@
+{
+  "status": "Unreviewed floating statistical probe; not certified integration or asymptotic evidence",
+  "normalization_control": {
+    "tiny_gap_control": "PASS",
+    "gap": 1e-50,
+    "normalization": "Beta(1-a,2), uniform lower endpoint, fair orientation give |s-r|^-a/Z; two spatial colors have density1/4 and four Green factors1/16, hence J=Z^2/4*P(event)"
+  },
+  "correlation": "Within each draw all nine diagrams reuse the same two covariance-pair times and two spatial colors. Draws and parameter runs are independently generated. Aggregate and ratio errors use the observed within-draw covariance.",
+  "error_scope": "Individual Wilson intervals assume ideal IID Bernoulli draws; ratio intervals use an asymptotic delta method. PRNG and floating arithmetic are not certified. Intervals are pointwise, not simultaneous across diagrams or parameters.",
+  "runs": [
+    {
+      "alpha0": 0.0,
+      "seed": 2026102700,
+      "samples": 4194304,
+      "Z": 1.0,
+      "factor": 0.25,
+      "diagrams": [
+        {
+          "diagram": "04-A",
+          "event_count": 5769,
+          "event_probability": 0.001375436782836914,
+          "coefficient_estimate": 0.0003438591957092285,
+          "binomial_standard_error": 4.524092705029775e-06,
+          "wilson_95_interval": [
+            0.00033510557538917336,
+            0.00035284115474439325
+          ],
+          "static_exact": "1/2880",
+          "z_against_exact": -0.7397556418183637,
+          "analytic_control": {
+            "formula": "[Gamma(1-a)/2]^2/Gamma(1+2(3-a))",
+            "exact_formula_float_evaluation": 0.0003472222222222218,
+            "z_against_formula": -0.7397556418182688
+          }
+        },
+        {
+          "diagram": "04-B",
+          "event_count": 1925,
+          "event_probability": 0.0004589557647705078,
+          "coefficient_estimate": 0.00011473894119262695,
+          "binomial_standard_error": 2.614542989745205e-06,
+          "wilson_95_interval": [
+            0.0001097276363062794,
+            0.00011997900448479633
+          ],
+          "static_exact": "1/8640",
+          "z_against_exact": -0.38150321753133004
+        },
+        {
+          "diagram": "04-C",
+          "event_count": 2848,
+          "event_probability": 0.00067901611328125,
+          "coefficient_estimate": 0.0001697540283203125,
+          "binomial_standard_error": 3.1798204642553675e-06,
+          "wilson_95_interval": [
+            0.0001636349778404238,
+            0.00017610173643221256
+          ],
+          "static_exact": "1/5760",
+          "z_against_exact": -1.199446826402747
+        },
+        {
+          "diagram": "13-A",
+          "event_count": 29121,
+          "event_probability": 0.0069429874420166016,
+          "coefficient_estimate": 0.0017357468605041504,
+          "binomial_standard_error": 1.0136087186536791e-05,
+          "wilson_95_interval": [
+            0.0017159930775648938,
+            0.0017557264325701938
+          ],
+          "static_exact": "1/576",
+          "z_against_exact": -0.03593227386748268
+        },
+        {
+          "diagram": "13-B",
+          "event_count": 14085,
+          "event_probability": 0.003358125686645508,
+          "coefficient_estimate": 0.000839531421661377,
+          "binomial_standard_error": 7.062006205747465e-06,
+          "wilson_95_interval": [
+            0.0008258033984456243,
+            0.0008534868756453185
+          ],
+          "static_exact": "29/34560",
+          "z_against_exact": 0.05822022896810326
+        },
+        {
+          "diagram": "13-C",
+          "event_count": 25968,
+          "event_probability": 0.006191253662109375,
+          "coefficient_estimate": 0.0015478134155273438,
+          "binomial_standard_error": 9.575264128691699e-06,
+          "wilson_95_interval": [
+            0.0015291589773798436,
+            0.001566693987048461
+          ],
+          "static_exact": "1/640",
+          "z_against_exact": -1.5266243025074364
+        },
+        {
+          "diagram": "22-A",
+          "event_count": 115641,
+          "event_probability": 0.02757096290588379,
+          "coefficient_estimate": 0.006892740726470947,
+          "binomial_standard_error": 1.998779942128629e-05,
+          "wilson_95_interval": [
+            0.006853673399478292,
+            0.006932024396273941
+          ],
+          "static_exact": "1/144",
+          "z_against_exact": -2.577390338541203,
+          "analytic_control": {
+            "formula": "1/[4((1-a)(2-a)(3-a))^2]",
+            "exact_formula_float_evaluation": 0.006944444444444444,
+            "z_against_formula": -2.577390338541203
+          }
+        },
+        {
+          "diagram": "22-B",
+          "event_count": 34872,
+          "event_probability": 0.008314132690429688,
+          "coefficient_estimate": 0.002078533172607422,
+          "binomial_standard_error": 1.1084231664132799e-05,
+          "wilson_95_interval": [
+            0.0020569207766092295,
+            0.0021003707298340437
+          ],
+          "static_exact": "1/480",
+          "z_against_exact": -0.4325671032851846
+        },
+        {
+          "diagram": "22-C",
+          "event_count": 30154,
+          "event_probability": 0.007189273834228516,
+          "coefficient_estimate": 0.001797318458557129,
+          "binomial_standard_error": 1.0313018566130647e-05,
+          "wilson_95_interval": [
+            0.0017772178460710572,
+            0.0018176447473862972
+          ],
+          "static_exact": "31/17280",
+          "z_against_exact": 0.32386800312821296
+        }
+      ],
+      "aggregates": {
+        "a2": {
+          "estimate": 0.000628352165222168,
+          "standard_error": 6.112166763859987e-06
+        },
+        "A2": {
+          "estimate": 0.020271480083465576,
+          "standard_error": 5.5453656751610444e-05
+        },
+        "D2": {
+          "estimate": 0.010768592357635498,
+          "standard_error": 2.6772568007213425e-05
+        }
+      },
+      "A2_over_a2": {
+        "estimate": 32.261335609941185,
+        "delta_method_standard_error": 0.26465404528270087,
+        "normal_95_interval": [
+          31.74261368118709,
+          32.78005753869528
+        ],
+        "uses_within_draw_covariance": true
+      },
+      "D2_over_a2": {
+        "estimate": 17.13782963384557,
+        "delta_method_standard_error": 0.15245731272609142,
+        "normal_95_interval": [
+          16.83901330090243,
+          17.43664596678871
+        ],
+        "uses_within_draw_covariance": true
+      },
+      "per_draw_metric_covariance": [
+        [
+          0.0025070920355293623,
+          0.014876653457759351,
+          0.004918555001263196
+        ],
+        [
+          0.014876653457759351,
+          0.20636700771984612,
+          0.0798915695959596
+        ],
+        [
+          0.004918555001263196,
+          0.0798915695959596,
+          0.04810164713853345
+        ]
+      ],
+      "floating_diagnostics": {
+        "naively_collapsed_pair_times": 0,
+        "number_of_sampled_pairs": 8388608,
+        "zero_beta_gaps": 0,
+        "minimum_beta_gap": 8.810368383427779e-08,
+        "same_pair_gap_subtraction": "direct signed gap; no L+h minus L"
+      },
+      "rare_event_min_count": 1925
+    },
+    {
+      "alpha0": 0.25,
+      "seed": 2026102701,
+      "samples": 4194304,
+      "Z": 1.5238095238095237,
+      "factor": 0.5804988662131518,
+      "diagrams": [
+        {
+          "diagram": "04-A",
+          "event_count": 9328,
+          "event_probability": 0.002223968505859375,
+          "coefficient_estimate": 0.0012910111961451246,
+          "binomial_standard_error": 1.335218292386025e-05,
+          "wilson_95_interval": [
+            0.0012651047219412509,
+            0.0013174469695423905
+          ],
+          "analytic_control": {
+            "formula": "[Gamma(1-a)/2]^2/Gamma(1+2(3-a))",
+            "exact_formula_float_evaluation": 0.0013040316841465786,
+            "z_against_formula": -0.9702883169885211
+          }
+        },
+        {
+          "diagram": "04-B",
+          "event_count": 1474,
+          "event_probability": 0.0003514289855957031,
+          "coefficient_estimate": 0.00020400412769274373,
+          "binomial_standard_error": 5.312682813849678e-06,
+          "wilson_95_interval": [
+            0.0001938537226589283,
+            0.00021468582304365972
+          ]
+        },
+        {
+          "diagram": "04-C",
+          "event_count": 2972,
+          "event_probability": 0.0007085800170898438,
+          "coefficient_estimate": 0.00041132989654195005,
+          "binomial_standard_error": 7.542441545524607e-06,
+          "wilson_95_interval": [
+            0.00039681006161544765,
+            0.00042638064201685994
+          ]
+        },
+        {
+          "diagram": "13-A",
+          "event_count": 36372,
+          "event_probability": 0.008671760559082031,
+          "coefficient_estimate": 0.005033947172619047,
+          "binomial_standard_error": 2.6280510755456953e-05,
+          "wilson_95_interval": [
+            0.004982698900794318,
+            0.005085717887519322
+          ]
+        },
+        {
+          "diagram": "13-B",
+          "event_count": 12072,
+          "event_probability": 0.0028781890869140625,
+          "coefficient_estimate": 0.00167078550170068,
+          "binomial_standard_error": 1.5184664216066784e-05,
+          "wilson_95_interval": [
+            0.001641287248551209,
+            0.0017008123583924797
+          ]
+        },
+        {
+          "diagram": "13-C",
+          "event_count": 33462,
+          "event_probability": 0.007977962493896484,
+          "coefficient_estimate": 0.004631198182397958,
+          "binomial_standard_error": 2.5216109323032022e-05,
+          "wilson_95_interval": [
+            0.0045820364370477915,
+            0.0046808831085585825
+          ]
+        },
+        {
+          "diagram": "22-A",
+          "event_count": 138615,
+          "event_probability": 0.033048391342163086,
+          "coefficient_estimate": 0.019184553704294213,
+          "binomial_standard_error": 5.0669772690759384e-05,
+          "wilson_95_interval": [
+            0.019085490771247972,
+            0.019284113160061872
+          ],
+          "analytic_control": {
+            "formula": "1/[4((1-a)(2-a)(3-a))^2]",
+            "exact_formula_float_evaluation": 0.019190045164071138,
+            "z_against_formula": -0.10836245288409031
+          }
+        },
+        {
+          "diagram": "22-B",
+          "event_count": 48557,
+          "event_probability": 0.01157689094543457,
+          "coefficient_estimate": 0.006720372068098071,
+          "binomial_standard_error": 3.0320673225408798e-05,
+          "wilson_95_interval": [
+            0.006661203777441665,
+            0.006780059712723532
+          ]
+        },
+        {
+          "diagram": "22-C",
+          "event_count": 25777,
+          "event_probability": 0.0061457157135009766,
+          "coefficient_estimate": 0.0035675810037556683,
+          "binomial_standard_error": 2.215230968386156e-05,
+          "wilson_95_interval": [
+            0.003524425065118369,
+            0.0036112620714827343
+          ]
+        }
+      ],
+      "aggregates": {
+        "a2": {
+          "estimate": 0.0019063452203798182,
+          "standard_error": 1.6216505817223198e-05
+        },
+        "A2": {
+          "estimate": 0.05595705893034296,
+          "standard_error": 0.000142714784195158
+        },
+        "D2": {
+          "estimate": 0.029472506776147954,
+          "standard_error": 6.74690152248416e-05
+        }
+      },
+      "A2_over_a2": {
+        "estimate": 29.353056483229274,
+        "delta_method_standard_error": 0.2068576863391409,
+        "normal_95_interval": [
+          28.947615418004556,
+          29.75849754845399
+        ],
+        "uses_within_draw_covariance": true
+      },
+      "D2_over_a2": {
+        "estimate": 15.460214897633222,
+        "delta_method_standard_error": 0.11904934219846504,
+        "normal_95_interval": [
+          15.22687818692423,
+          15.693551608342213
+        ],
+        "uses_within_draw_covariance": true
+      },
+      "per_draw_metric_covariance": [
+        [
+          0.0032731937806585033,
+          0.019387311392977023,
+          0.006401225727738999
+        ],
+        [
+          0.019387311392977023,
+          0.2535099929560248,
+          0.09736536167491329
+        ],
+        [
+          0.006401225727738999,
+          0.09736536167491329,
+          0.05665860734111581
+        ]
+      ],
+      "floating_diagnostics": {
+        "naively_collapsed_pair_times": 0,
+        "number_of_sampled_pairs": 8388608,
+        "zero_beta_gaps": 0,
+        "minimum_beta_gap": 4.410223346853587e-11,
+        "same_pair_gap_subtraction": "direct signed gap; no L+h minus L"
+      },
+      "rare_event_min_count": 1474
+    },
+    {
+      "alpha0": 0.5,
+      "seed": 2026102702,
+      "samples": 4194304,
+      "Z": 2.6666666666666665,
+      "factor": 1.7777777777777777,
+      "diagrams": [
+        {
+          "diagram": "04-A",
+          "event_count": 15443,
+          "event_probability": 0.0036818981170654297,
+          "coefficient_estimate": 0.006545596652560763,
+          "binomial_standard_error": 5.2575379334089216e-05,
+          "wilson_95_interval": [
+            0.006443355796647737,
+            0.006649453739590323
+          ],
+          "analytic_control": {
+            "formula": "[Gamma(1-a)/2]^2/Gamma(1+2(3-a))",
+            "exact_formula_float_evaluation": 0.0065449846949787345,
+            "z_against_formula": 0.011640164892367293
+          }
+        },
+        {
+          "diagram": "04-B",
+          "event_count": 931,
+          "event_probability": 0.0002219676971435547,
+          "coefficient_estimate": 0.00039460923936631944,
+          "binomial_standard_error": 1.2931360051975483e-05,
+          "wilson_95_interval": [
+            0.0003700649399726453,
+            0.0004207810369392921
+          ]
+        },
+        {
+          "diagram": "04-C",
+          "event_count": 2564,
+          "event_probability": 0.0006113052368164062,
+          "coefficient_estimate": 0.0010867648654513888,
+          "binomial_standard_error": 2.145575469388095e-05,
+          "wilson_95_interval": [
+            0.0010455176330603955,
+            0.001129638328166561
+          ]
+        },
+        {
+          "diagram": "13-A",
+          "event_count": 46997,
+          "event_probability": 0.011204957962036133,
+          "coefficient_estimate": 0.019919925265842013,
+          "binomial_standard_error": 9.137045271815084e-05,
+          "wilson_95_interval": [
+            0.019741636649169312,
+            0.020099805615223138
+          ]
+        },
+        {
+          "diagram": "13-B",
+          "event_count": 9113,
+          "event_probability": 0.002172708511352539,
+          "coefficient_estimate": 0.0038625929090711805,
+          "binomial_standard_error": 4.041810453593976e-05,
+          "wilson_95_interval": [
+            0.003784181342131148,
+            0.003942625621716176
+          ]
+        },
+        {
+          "diagram": "13-C",
+          "event_count": 44250,
+          "event_probability": 0.01055002212524414,
+          "coefficient_estimate": 0.018755594889322914,
+          "binomial_standard_error": 8.868927968975353e-05,
+          "wilson_95_interval": [
+            0.018582562280848577,
+            0.018930221363266244
+          ]
+        },
+        {
+          "diagram": "22-A",
+          "event_count": 167573,
+          "event_probability": 0.03995251655578613,
+          "coefficient_estimate": 0.07102669609917535,
+          "binomial_standard_error": 0.00017000666492757277,
+          "wilson_95_interval": [
+            0.0706942375283963,
+            0.07136065278790536
+          ],
+          "analytic_control": {
+            "formula": "1/[4((1-a)(2-a)(3-a))^2]",
+            "exact_formula_float_evaluation": 0.07111111111111111,
+            "z_against_formula": -0.4962568940965663
+          }
+        },
+        {
+          "diagram": "22-B",
+          "event_count": 70004,
+          "event_probability": 0.01669025421142578,
+          "coefficient_estimate": 0.02967156304253472,
+          "binomial_standard_error": 0.0001112049626210909,
+          "wilson_95_interval": [
+            0.029454390935177585,
+            0.02989030902005113
+          ]
+        },
+        {
+          "diagram": "22-C",
+          "event_count": 19100,
+          "event_probability": 0.004553794860839844,
+          "coefficient_estimate": 0.008095635308159722,
+          "binomial_standard_error": 5.8444433029072044e-05,
+          "wilson_95_interval": [
+            0.007981890232209595,
+            0.008210993775945198
+          ]
+        }
+      ],
+      "aggregates": {
+        "a2": {
+          "estimate": 0.008026970757378472,
+          "standard_error": 5.8197187825376724e-05
+        },
+        "A2": {
+          "estimate": 0.20992406209309894,
+          "standard_error": 0.0004934880923309586
+        },
+        "D2": {
+          "estimate": 0.10879389444986978,
+          "standard_error": 0.00022650109116401998
+        }
+      },
+      "A2_over_a2": {
+        "estimate": 26.152339212166016,
+        "delta_method_standard_error": 0.15325243936901636,
+        "normal_95_interval": [
+          25.851964431002745,
+          26.452713993329287
+        ],
+        "uses_within_draw_covariance": true
+      },
+      "D2_over_a2": {
+        "estimate": 13.553543140775162,
+        "delta_method_standard_error": 0.08762022473263258,
+        "normal_95_interval": [
+          13.381807500299201,
+          13.725278781251122
+        ],
+        "uses_within_draw_covariance": true
+      },
+      "per_draw_metric_covariance": [
+        [
+          0.00449478535304571,
+          0.02655787092349921,
+          0.008754031227628514
+        ],
+        [
+          0.02655787092349921,
+          0.32319029705225577,
+          0.12230875865470328
+        ],
+        [
+          0.008754031227628514,
+          0.12230875865470328,
+          0.06808407716950553
+        ]
+      ],
+      "floating_diagnostics": {
+        "naively_collapsed_pair_times": 0,
+        "number_of_sampled_pairs": 8388608,
+        "zero_beta_gaps": 0,
+        "minimum_beta_gap": 9.202024161298294e-14,
+        "same_pair_gap_subtraction": "direct signed gap; no L+h minus L"
+      },
+      "rare_event_min_count": 931
+    },
+    {
+      "alpha0": 0.75,
+      "seed": 2026102703,
+      "samples": 4194304,
+      "Z": 6.4,
+      "factor": 10.240000000000002,
+      "diagrams": [
+        {
+          "diagram": "04-A",
+          "event_count": 26093,
+          "event_probability": 0.00622105598449707,
+          "coefficient_estimate": 0.06370361328125002,
+          "binomial_standard_error": 0.00039313974763863636,
+          "wilson_95_interval": [
+            0.06293769090403938,
+            0.0644787975224387
+          ],
+          "analytic_control": {
+            "formula": "[Gamma(1-a)/2]^2/Gamma(1+2(3-a))",
+            "exact_formula_float_evaluation": 0.06278348113613105,
+            "z_against_formula": 2.3574525072729737
+          }
+        },
+        {
+          "diagram": "04-B",
+          "event_count": 314,
+          "event_probability": 7.486343383789062e-05,
+          "coefficient_estimate": 0.0007666015625000001,
+          "binomial_standard_error": 4.326020957651634e-05,
+          "wilson_95_interval": [
+            0.0006863721890589294,
+            0.0008562080847040857
+          ]
+        },
+        {
+          "diagram": "04-C",
+          "event_count": 1803,
+          "event_probability": 0.0004298686981201172,
+          "coefficient_estimate": 0.004401855468750001,
+          "binomial_standard_error": 0.00010364409185072898,
+          "wilson_95_interval": [
+            0.004203348095771252,
+            0.004609733331620403
+          ]
+        },
+        {
+          "diagram": "13-A",
+          "event_count": 63073,
+          "event_probability": 0.015037775039672852,
+          "coefficient_estimate": 0.15398681640625003,
+          "binomial_standard_error": 0.0006085154139692981,
+          "wilson_95_interval": [
+            0.15279868822857923,
+            0.15518404107176528
+          ]
+        },
+        {
+          "diagram": "13-B",
+          "event_count": 5058,
+          "event_probability": 0.0012059211730957031,
+          "coefficient_estimate": 0.012348632812500003,
+          "binomial_standard_error": 0.00017352715401486757,
+          "wilson_95_interval": [
+            0.012013171792933899,
+            0.012693449765459249
+          ]
+        },
+        {
+          "diagram": "13-C",
+          "event_count": 61008,
+          "event_probability": 0.014545440673828125,
+          "coefficient_estimate": 0.14894531250000004,
+          "binomial_standard_error": 0.0005986207236103733,
+          "wilson_95_interval": [
+            0.14777658200632013,
+            0.1501231487162922
+          ]
+        },
+        {
+          "diagram": "22-A",
+          "event_count": 206836,
+          "event_probability": 0.04931354522705078,
+          "coefficient_estimate": 0.5049707031250001,
+          "binomial_standard_error": 0.0010826093418702615,
+          "wilson_95_interval": [
+            0.5028530513542004,
+            0.5070968084693906
+          ],
+          "analytic_control": {
+            "formula": "1/[4((1-a)(2-a)(3-a))^2]",
+            "exact_formula_float_evaluation": 0.505679012345679,
+            "z_against_formula": -0.6538265495119626
+          }
+        },
+        {
+          "diagram": "22-B",
+          "event_count": 107485,
+          "event_probability": 0.025626420974731445,
+          "coefficient_estimate": 0.26241455078125003,
+          "binomial_standard_error": 0.0007900903037431434,
+          "wilson_95_interval": [
+            0.2608704454974343,
+            0.26396755394055627
+          ]
+        },
+        {
+          "diagram": "22-C",
+          "event_count": 10219,
+          "event_probability": 0.002436399459838867,
+          "coefficient_estimate": 0.024948730468750006,
+          "binomial_standard_error": 0.0002464986519999128,
+          "wilson_95_interval": [
+            0.024470246100971833,
+            0.025436547689709706
+          ]
+        }
+      ],
+      "aggregates": {
+        "a2": {
+          "estimate": 0.06887207031250002,
+          "standard_error": 0.00040867326446183456
+        },
+        "A2": {
+          "estimate": 1.5606396484375002,
+          "standard_error": 0.003310504198625466
+        },
+        "D2": {
+          "estimate": 0.7923339843750001,
+          "standard_error": 0.0014635906912100563
+        }
+      },
+      "A2_over_a2": {
+        "estimate": 22.659978730946474,
+        "delta_method_standard_error": 0.1048601103113996,
+        "normal_95_interval": [
+          22.45445291473613,
+          22.865504547156817
+        ],
+        "uses_within_draw_covariance": true
+      },
+      "D2_over_a2": {
+        "estimate": 11.50443105281815,
+        "delta_method_standard_error": 0.05952786298001431,
+        "normal_95_interval": [
+          11.387756441377322,
+          11.621105664258979
+        ],
+        "uses_within_draw_covariance": true
+      },
+      "per_draw_metric_covariance": [
+        [
+          0.006680553483435699,
+          0.03932968616144649,
+          0.012931162275278078
+        ],
+        [
+          0.03932968616144649,
+          0.4383775219646733,
+          0.16291242830267547
+        ],
+        [
+          0.012931162275278078,
+          0.16291242830267547,
+          0.08568390845586918
+        ]
+      ],
+      "floating_diagnostics": {
+        "naively_collapsed_pair_times": 815,
+        "number_of_sampled_pairs": 8388608,
+        "zero_beta_gaps": 0,
+        "minimum_beta_gap": 3.150803850606518e-30,
+        "same_pair_gap_subtraction": "direct signed gap; no L+h minus L"
+      },
+      "rare_event_min_count": 314
+    },
+    {
+      "alpha0": 0.9,
+      "seed": 2026102704,
+      "samples": 4194304,
+      "Z": 18.181818181818183,
+      "factor": 82.64462809917357,
+      "diagrams": [
+        {
+          "diagram": "04-A",
+          "event_count": 35185,
+          "event_probability": 0.008388757705688477,
+          "coefficient_estimate": 0.6932857608007007,
+          "binomial_standard_error": 0.003680477979813163,
+          "wilson_95_interval": [
+            0.686109274925867,
+            0.7005366688424308
+          ],
+          "analytic_control": {
+            "formula": "[Gamma(1-a)/2]^2/Gamma(1+2(3-a))",
+            "exact_formula_float_evaluation": 0.6945374323963039,
+            "z_against_formula": -0.339779991647245
+          }
+        },
+        {
+          "diagram": "04-B",
+          "event_count": 52,
+          "event_probability": 1.239776611328125e-05,
+          "coefficient_estimate": 0.0010246087696926655,
+          "binomial_standard_error": 0.00014208679061306428,
+          "wilson_95_interval": [
+            0.0007814092686669551,
+            0.0013434984860315527
+          ]
+        },
+        {
+          "diagram": "04-C",
+          "event_count": 957,
+          "event_probability": 0.0002281665802001953,
+          "coefficient_estimate": 0.0188567421653054,
+          "binomial_standard_error": 0.0006094823628629525,
+          "wilson_95_interval": [
+            0.017699409187023462,
+            0.020089732694914604
+          ]
+        },
+        {
+          "diagram": "13-A",
+          "event_count": 75886,
+          "event_probability": 0.018092632293701172,
+          "coefficient_estimate": 1.4952588672480311,
+          "binomial_standard_error": 0.005378619415139991,
+          "wilson_95_interval": [
+            1.4847533852051276,
+            1.505837302444692
+          ]
+        },
+        {
+          "diagram": "13-B",
+          "event_count": 2106,
+          "event_probability": 0.0005021095275878906,
+          "coefficient_estimate": 0.04149665517255295,
+          "binomial_standard_error": 0.0009040133613690845,
+          "wilson_95_interval": [
+            0.039762227059222444,
+            0.0433066993665811
+          ]
+        },
+        {
+          "diagram": "13-C",
+          "event_count": 75065,
+          "event_probability": 0.01789689064025879,
+          "coefficient_estimate": 1.479081871095768,
+          "binomial_standard_error": 0.005349978202337249,
+          "wilson_95_interval": [
+            1.4686325391994262,
+            1.4896041857780575
+          ]
+        },
+        {
+          "diagram": "22-A",
+          "event_count": 237730,
+          "event_probability": 0.05667924880981445,
+          "coefficient_estimate": 4.684235438827642,
+          "binomial_standard_error": 0.009330961861534193,
+          "wilson_95_interval": [
+            4.665980623103454,
+            4.702557366302122
+          ],
+          "analytic_control": {
+            "formula": "1/[4((1-a)(2-a)(3-a))^2]",
+            "exact_formula_float_evaluation": 4.685069620134556,
+            "z_against_formula": -0.08939180280826783
+          }
+        },
+        {
+          "diagram": "22-B",
+          "event_count": 142194,
+          "event_probability": 0.03390169143676758,
+          "coefficient_estimate": 2.801792680724594,
+          "binomial_standard_error": 0.0073030793874343525,
+          "wilson_95_interval": [
+            2.787514151181718,
+            2.816141770179704
+          ]
+        },
+        {
+          "diagram": "22-C",
+          "event_count": 4297,
+          "event_probability": 0.001024484634399414,
+          "coefficient_estimate": 0.08466815160325739,
+          "binomial_standard_error": 0.001290966057702755,
+          "wilson_95_interval": [
+            0.08217539241834215,
+            0.0872364477895408
+          ]
+        }
+      ],
+      "aggregates": {
+        "a2": {
+          "estimate": 0.7131671117356988,
+          "standard_error": 0.00373242511116161
+        },
+        "A2": {
+          "estimate": 15.028705281659596,
+          "standard_error": 0.029523916061935673
+        },
+        "D2": {
+          "estimate": 7.5706962711554935,
+          "standard_error": 0.01280421966858125
+        }
+      },
+      "A2_over_a2": {
+        "estimate": 21.073188926341384,
+        "delta_method_standard_error": 0.08427556158217438,
+        "normal_95_interval": [
+          20.908008825640323,
+          21.238369027042445
+        ],
+        "uses_within_draw_covariance": true
+      },
+      "D2_over_a2": {
+        "estimate": 10.615599270597336,
+        "delta_method_standard_error": 0.04784926218873875,
+        "normal_95_interval": [
+          10.521814716707409,
+          10.709383824487263
+        ],
+        "uses_within_draw_covariance": true
+      },
+      "per_draw_metric_covariance": [
+        [
+          0.008554858892562087,
+          0.05020672507363701,
+          0.016468155317309635
+        ],
+        [
+          0.05020672507363701,
+          0.5352769830743336,
+          0.19729033298703103
+        ],
+        [
+          0.016468155317309635,
+          0.19729033298703103,
+          0.1006785327733367
+        ]
+      ],
+      "floating_diagnostics": {
+        "naively_collapsed_pair_times": 204526,
+        "number_of_sampled_pairs": 8388608,
+        "zero_beta_gaps": 0,
+        "minimum_beta_gap": 6.482742252480708e-68,
+        "same_pair_gap_subtraction": "direct signed gap; no L+h minus L"
+      },
+      "rare_event_min_count": 52
+    }
+  ],
+  "environment": {
+    "numpy": "2.5.4",
+    "python": "3.14.7"
+  },
+  "postprocessing": "Analytic adjacent/domestic controls added from the already sampled counts; no additional random draws."
+}
