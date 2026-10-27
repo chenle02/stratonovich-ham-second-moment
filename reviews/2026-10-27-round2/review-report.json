@@ -1,0 +1,81 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    ".review/required-sources.json lines 1-30 (read plan only; no read credit claimed)",
+    "candidate.tex lines 1-1037 (complete, single read, no truncation marker); G1 section lines 614-976 checked line by line; abstract/title lines 67-95 checked for G1 integration",
+    "worker-report.md lines 1-70 (complete)",
+    "source-map.md lines 1-21 (complete)",
+    "G0-accepted-review.json lines 1-100 (complete; historical context only)",
+    "static-controls.json lines 1-268 (complete)",
+    "numerical-controls.json lines 1-77 (complete)",
+    "root-static-mc-results.json lines 1-79 (complete)",
+    "chen-hu-p2147.png (full image inspected: Theorem 1.2 (1.9)-(1.11), Remark 1.3, white-noise M value, Corollary 1.4 (1.12)-(1.13), (1.14))"
+  ],
+  "checks": [
+    {
+      "claim": "C1: Interval-area F formula, symmetry, and normalization of all 15 white order-four diagrams (9 distinct rows plus chain exchange), with paired time gaps and chain horizons",
+      "verdict": "PASS",
+      "reason": "Take a>=b. The corner {x-y>=c} of [-a,a]x[-b,b] is empty for c>=a+b. For a-b<=c<=a+b it is a right triangle with legs a+b-c. For c<a-b it is a trapezoid of area 2b(a-c). So the area is 4ab, 4ab-(a+b-c)^2 and 4bc respectively, and (E:interval-area) reproduces all three, since (a+b-c)^2-(a-b-c)^2=4b(a-c). Symmetry: swapping x and y gives F(b,a,c), and the unimodular map (x,y)->(x,x-y) gives F(a,c,b). With chains rooted at 0 and increment variables, I re-derived every position list, Green constraint, area and pair gap independently. (0,4): A area 4ac, gaps b,d; B area 4a min(b,c,d), gaps b+c, c+d; C area 4a min(b,d), gaps b+c+d, c. (1,3) with single time r: A area 4 min(r,a) b, gaps |r-a|, c; B area F(r,a,min(b,c)), gaps |r-a-b|, b+c; C area F(r,a,c), gaps |r-a-b-c|, b. (2,2): A area 4ac, gaps b,d; B area 4min(a,c)min(b,d), gaps |a-c|, |a+b-c-d|; C area F(a,c,min(b,d)), gaps |a-c-d|, |a+b-c|. Each wave factor contributes 1/2, giving 1/16, and each unit-mass delta removes one coordinate, so V = area/16 matches every row. The chain horizons (sum of increments < t in each chain, and 0<r<t) are correct. Chain exchange relabels the four vertices bijectively on Pi_2: for (3,1) it maps A->C, B->B, C->A relative to (1,3), and (4,0) maps identically. All 15 terms are therefore covered, and the multiplicities 2,2,1 in (E:total-four) are right. Scaling gives t^4 (measure) x t^2 (area) x t^{-2 alpha0} = t^{6-2 alpha0}."
+    },
+    {
+      "claim": "C2: Distributional white-noise reduction, boundary sets, uniform spatial bound and temporal integrability",
+      "verdict": "PASS",
+      "reason": "With mass-one smoothed deltas, change variables to (x, u=y_j-y_i, y, w=y_l-y_k). The regularized spatial factor is then the integral of p(u)p(w)Psi(u,w), where Psi is 1/16 times the area of a polygon cut out by interval indicators. For positive increments those indicators converge pointwise off their boundaries, which have two-dimensional measure zero. So Psi is continuous at (0,0), and the approximate identity gives Psi(0,0), which is the displayed area. Uniform bound: the Green factors confine all positions to [-1,1] at unit time. Each smoothed delta then integrates to at most 2 over its paired coordinates, giving 2^2/16 = 1/4 uniformly in the smoothing. The temporal weights are dominated on the unit cube by a product over two disjoint label pairs, which is integrable for alpha0<1. Temporal truncation in the source satisfies gamma^0_delta <= |.|^{-alpha0}. Dominated convergence therefore passes the regularized integrals to the table without pointwise delta evaluation. The written argument is terse (see minor findings) but complete in substance."
+    },
+    {
+      "claim": "C3: Fixed-order alpha0 -> 0 dominated convergence using disjoint labels and enlarged cubes",
+      "verdict": "PASS",
+      "reason": "On the unit domain all original times lie in [0,1], so |s-r| <= 1 and |s-r|^{-alpha0} <= |s-r|^{-abar} for 0 <= alpha0 <= abar < 1. The increment-to-time map is unimodular within each chain, so the domain can be enlarged to [0,1]^4. The two pairs use disjoint labels, so the dominator factorizes as (2/((1-abar)(2-abar)))^2; I confirmed that this value is the integral of |s-r|^{-abar} over [0,1]^2. The spatial factor (<= 1/4) does not depend on alpha0. Dominated convergence gives the limit as the alpha0=0 integral in every row. For Riesz, the same Tonelli bound with fixed abar applies, because the spatial Riesz factors do not depend on alpha0."
+    },
+    {
+      "claim": "C4: Exact static sector integrals, all nine table entries, reflection factor, factorial denominators, and the total 11/540",
+      "verdict": "PASS",
+      "reason": "Integrating the time slacks first gives the simplex volume (1-L)_+^n/n!. Together with the 1/16, this proves (E:static-sector). The length pairs match the position lists. The three sectors and their point reflections tile the plane and preserve |x|, |y| and w, which gives the factor 2. Each substitution is unimodular. I recomputed all 27 sector integrals by hand. Here I(p,q;N) = 1/(pq(N+1)(N+2)) handles the single-constraint cases. Beta integrals handle (1,3)A/B S2 (3/160), (1,3)A S3 (11/480), (1,3)B S3 (11/1440) and (2,2)C S1/S2 (31/1440). The substitution a=2u+v, b=u+2v with Jacobian 1/3 gives (2,2)C S3: (1/3)(1/9 - 98/1440) = 31/2160. Row factors are 1/192, 1/48 and 1/32. These give 1/2880, 1/8640, 1/5760; 1/576, 29/34560, 1/640; 1/144, 1/480, 31/17280. Row sums are 11/17280, 143/34560 and 187/17280. Also 2(11/17280) + 2(143/34560) + 187/17280 = 352/17280 = 11/540. As a third independent check, I integrated the table V entries directly over Dirichlet simplices using min(.,.) = integral of a product of indicators. This reproduces 1/2880, 1/5760, 1/8640, 1/576, 1/144 and 1/480. The order-two value 2c0 at alpha0=0 is 2/6 = 1/3. static-controls.json agrees with every value, and the Sobol and root Monte Carlo diagnostics are consistent."
+    },
+    {
+      "claim": "C5: Riesz order-two formulas, constants, powers, admissible parameters, static limit and normalized white limit",
+      "verdict": "PASS",
+      "reason": "Phi(x) = |x|^{2-alpha}/((1-alpha)(2-alpha)) has Phi'' = |x|^{-alpha}. This gives the integral of |y-z|^{-alpha} over [-s,s]x[-r,r] as 2(Phi(s+r)-Phi(s-r)). Multiplying by 1/4 and c_alpha yields the displayed kernel. Doubling over s>r, setting v=s-r and integrating r over (0,t-v) gives exactly the E X_1^2 formula. For E X_2, the spatial factor is c_alpha r v^{1-alpha}/(1-alpha), and the Beta integral of r v^{1-alpha-alpha0} over r+v<t gives t^beta/((2-alpha-alpha0)(3-alpha-alpha0)(4-alpha-alpha0)). Admissibility holds: alpha<1 (local integrability in d=1), alpha0<1, and alpha+alpha0<2 is automatic. Static check: the integral of (s+r)^{2-alpha}-|s-r|^{2-alpha} over [0,1]^2 is (2^{4-alpha}-4)/((3-alpha)(4-alpha)), and adding 2E X_2 gives c_alpha 2^{3-alpha}/((1-alpha)(2-alpha)(3-alpha)(4-alpha)). With c_alpha=(1-alpha)/2 this tends to 1/3. At fixed alpha0 the normalized E X_2 tends to c0/2. For E X_1^2 the bracket tends to (1-v)^2 and the prefactor to 1/2, giving (1/2)B(1-alpha0,3) = c0, with dominator C v^{-alpha0}. The formula value is consistent with the floating check in numerical-controls.json (about 1.714 at alpha=alpha0=1/2, matching my rough Simpson estimate of 1.717)."
+    },
+    {
+      "claim": "C6: Riesz order-four representation: independent uniforms, product of h_l, domains, all pairings, homogeneity and finiteness",
+      "verdict": "PASS",
+      "reason": "(1/2)1_{[-h,h]} equals h times the law of hU with U uniform on [-1,1], so each Green factor contributes h_l and the 1/16 is absorbed correctly. Green factors factor over increments, so the U_l are independent across both chains. Positions Y_l and times S_l restart at each chain's first index b(l), and the map is unimodular. H_m with an empty sum equal to 0 covers all five splits, and D ranges over A, B, C on the global labels. Scaling h -> t h gives t^4 (measure) x t^4 (product of h) x t^{-2 alpha0} x t^{-2 alpha} = t^{2 beta}. Finiteness: enlarge to [0,1]^4 x [-1,1]^4 and bound the indicators by one. The time and space singular factors each involve two disjoint pairs and are integrable for alpha0, alpha < 1, so Tonelli applies. The bound is uniform for alpha0 <= abar, which also justifies the static Riesz M_4 limit. The representation is correctly described as not closed-form."
+    },
+    {
+      "claim": "C7: Source calibration, no disputed Chen-Hu constant, no exchange of limits, coefficient versus asymptotic-constant distinction, polynomial-truncation limitation",
+      "verdict": "PASS",
+      "reason": "The image confirms Chen-Hu Theorem 1.2, (1.9), p.2147. Its exponent is (4-alpha)/(3-alpha) under (1.8) with 0<alpha<2^d or alpha=d=1, which covers both G1 cases. As alpha0 -> 0, both kappa and rho tend to this exponent. Corollary 1.4's printed constant is not used. Inserting the printed M = (1/4)(3/2)^{1/3} into (1.9) gives about 0.213 rather than the printed (1/2)(3/4)^{1/4}, about 0.465, consistent with a disputed constant. The candidate explicitly avoids exchanging t -> infinity with alpha0 -> 0 and labels the static values as coefficients, not asymptotic constants. By homogeneity, total order 2k scales as t^{k beta}. Any truncation is therefore a nonnegative polynomial in t^beta, whose log divided by t^kappa tends to 0. The remark correctly says finite orders cannot fix the all-order factorial power."
+    },
+    {
+      "claim": "C8: Scope and honesty: internal Stratonovich calibration only, no new Skorohod result, G:upper/G:sharp open, numerics not promoted to proof",
+      "verdict": "PASS",
+      "reason": "The abstract, the G1 opening, R:G1-scope and the Goals all keep G:upper and G:sharp open. The Skorohod comment is labeled structural. M_2 = E X_1^2 + 2E X_2 correctly shows that domestic-pair terms contribute. The candidate text never cites the Monte Carlo or Sobol results. The worker report and source map label them floating diagnostics. The new G1 deductions rely only on G0's P:mixed and its normalization conventions."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "P:white-four statement: 'given by the following table or by exchanging the two chains' does not say that exchange relabels pairings. For (3,1) the map is A<->C, B->B, so J_{3,1,A} = J_{1,3,C}, not J_{1,3,A}; statically 1/640 versus 1/576. (E:total-four) uses only split sums and is correct. A one-line clarification would prevent misreading of individual entries.",
+      "The approximate-identity paragraph in the proof of P:white-four is terse. It does not state the continuity of the reduced area Psi(u,w) at (0,0) explicitly. It also does not say that the source's temporal truncation gamma^0_delta <= |.|^{-alpha0} converges monotonically. Both steps are elementary and implied, but one sentence each would make the passage self-contained.",
+      "Lemma L:static-four takes the static order-two value from G0 Lemma L:white-test. That lemma still evaluates the delta pointwise ('G at zero is 1/2'), as the G0 review already noted. G1's new approximate-identity argument covers order two equally well, but the text applies it only to order four.",
+      "Remark R:riesz-static: 'any fixed exponent abar in (alpha0,1)' is awkward while alpha0 is the varying parameter. It should read: fixed abar in (0,1) and 0 < alpha0 <= abar, as in L:static-four.",
+      "For the Riesz kernel, G1 does not restate that the source's regularized limit defining J_{m,n,D} equals the classical Lebesgue integral used in (E:riesz-two)-(E:riesz-four). The step is elementary in d=1: Gaussian smoothing satisfies p_eps*|.|^{-alpha} <= C|.|^{-alpha}, the Green factors are bounded and compactly supported, and the time truncation is monotone. It is also implicit in the source's (4.3) and G0's P:mixed. A sentence would close it.",
+      "In the calibration table, 'alpha0=0' rows should be labeled as the alpha0 down-to-0 coefficient limits, since the model requires alpha0>0. R:G1-scope already says this.",
+      "Abstract: 'computes finite-order white-space and Riesz coefficients' slightly overstates the Riesz order-four case, which is given only as an explicit integral representation without a closed form. Section 4 says this correctly.",
+      "Diagnostics only: in root-static-mc-results.json the (3,1) A and B estimates lie about 2.3-2.4 standard errors above the exact (1,3) C and B values, which must equal them by chain exchange. Taken together with the (1,3) row, this is consistent with sampling noise, and no proof depends on it."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is an AI review of the scoped Gate G1 section and its integration with G0. It is not human verification, a novelty audit, Lean certification or circulation clearance.",
+    "G0 results (P:mixed, the regularization conventions, L:white-test, P:envelope) were taken as established inputs per the review contract and not re-audited. I could not independently confirm that the text before S:G1 is unchanged from the G0-reviewed version, because the prior candidate is not in the packet.",
+    "All 27 sector integrals, the nine coefficients, the row sums, 11/540, the F formula, and the Riesz order-two formulas and limits were checked by hand calculation. Six of the nine coefficients were also cross-checked by a separate Dirichlet-simplex integration. Nothing was executed, and the generating scripts (static_controls.py, numerical_controls.py, the root's Monte Carlo script) are not in the packet.",
+    "The Riesz order-four integral was checked for correctness of representation and finiteness only. No numerical value was verified.",
+    "Chen-Hu was checked only through the single rendered page p.2147. The publisher PDF hash and the separate source audit of the printed white-noise constant were not available to verify. My check that the printed Corollary 1.4 constant is inconsistent with (1.9) is a quick consistency computation, not a full audit.",
+    "The C2 and C6 passages from regularized to classical integrals were verified by elementary sketch arguments (continuity of the reduced area, Gaussian domination of the smoothed Riesz kernel). Neither is written out in full in the candidate."
+  ]
+}

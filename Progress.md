@@ -6,11 +6,11 @@
 
 ## Current state
 
-- **Phase:** Round 1 = Gate G0 complete (2026-10-27); STOP at decision point 1 before Round 2.
+- **Phase:** Round 2 = Gate G1 complete (2026-10-27), after Le authorized continuation. Main targets remain open; companion creation awaits decision point 4.
 - **Proved in this project:** P:Jensen (§2); reviewed G0 P:mixed, L:white-test,
-  L:crude-corrected and P:envelope (§3). Intermediate upper exponent rho>kappa; principal goals open.
+  L:crude-corrected and P:envelope (§3); reviewed G1 P:white-four, L:static-four and P:riesz-small (§4). Intermediate upper exponent rho>kappa; principal goals open.
 - **Open targets:** Goal G:upper, Goal G:sharp (see PROJECT-GOAL.md).
-- **Blocking human decisions:** Le's decision point 1 after this report; scoped no-go also recorded under decision point 2. No Round 2 or Lean L1 starts automatically.
+- **Blocking human decisions:** decision point 1 passed by Le's explicit reactivation/continuation. Decision point 4 still applies before companion creation; registry/reuse reconnaissance only until that proposal is ready.
 - **Worker:** Codex agent #30 (<MACHINE>, `n30-stratonovich-ham-second`), handed over
   2026-10-26; workflow paper-dev + lean-pkg (Lean track: `lean-progress/PROGRESS.md`).
 
@@ -63,6 +63,7 @@ then the round-close protocol (`paper-dev-round-close-protocol`).
 |---|---|---|---|
 | 0 | 2026-10-26 | Setup: repo, notes scaffold (5 pp, clean build), source manifest, wiki project page | see git log |
 | 1 | 2026-10-27 | G0 complete: mixed expansion, corrected crude bound, intermediate rho upper bound and scoped no-go; Opus PASS_WITH_NOTES/high | 4ff2bca60e666482480596cc1e53b9be06750ea7 |
+| 2 | 2026-10-27 | G1 complete: all fifteen white order-four terms, exact static11/540, Riesz coefficients/representation; Opus PASS_WITH_NOTES/high | ROUND2_ARTICLE_SHA |
 
 ## Round 1 — Gate G0 (2026-10-27)
 
@@ -264,3 +265,102 @@ provenance commit are superseded by the current hashes above.
 1:  e55a9f041 = 1:  ae3ebd08c project: record reviewed Stratonovich second-moment G0 verdict
 2:  3e5c17975 = 2:  b413045eb propagate: include Stratonovich HAM project in cohort dashboard
 ```
+
+## Resumption and Round 2 opening (2026-10-27)
+
+Le reactivated the full goal after reading the G0 report and the explanation
+of the checkpoint, then instructed continued work under replacement AGENTS
+instructions. This authorizes proceeding beyond decision point 1; the old
+handoff's stop is historical, not a fresh request to stop again. The broader
+goal remains unchanged and active. The previous substantial goal turn was
+progress: reviewed G0 results, source correction, committed evidence and parity.
+
+Preflight: clean local/origin/<HUB> at `2e2ce0e`. Round 2 is the existing
+G1 calibration subaim, not a novelty claim or a large new all-order proof wave.
+Its finite-order identities are specializations of the reviewed G0 expansion;
+retain the exact common field, covariance normalization and all self-pairings.
+The G0 uniform-pairing no-go is not reopened.
+
+Round 2 tasks:
+- [x] Explicit total-order-four white-space terms, including all five splits.
+- [x] Riesz order-two formula and useful reduced order-four representation.
+- [x] Static-noise boundary calibration, homogeneity and source comparison.
+- [x] Frozen packet, Opus skeptic, adjudication and clean notes build.
+- [ ] Round close and successor-route decision within the full goal.
+
+Lean reconnaissance found existing finite-matching interfaces in the private
+SWE companion registry. These are reuse candidates only; no sibling edits,
+new package, registration or verification claim has been made. A concrete
+creation proposal remains subject to decision point 4.
+
+### G1 candidate and verification status
+
+Candidate frozen at TeX SHA-256
+`1d1646e5b45ce8a80a5ccbde83bc944b8a0b1027620fc5ba6429be57c6c75560`.
+The new section gives nine distinct white-space rows, with chain exchange
+covering all fifteen order-four diagrams. Static total-order-four coefficient
+is 11/540; Riesz order-two and explicit order-four representations are included.
+These are fixed-order calculations, not proofs of either principal goal.
+
+The exact polynomial-sector integration is the written proof mechanism.
+Worker Sobol checks and the root's separate bounded-indicator Monte Carlo
+agree with the exact static values but are diagnostics only. The latter uses
+1,048,576 IID samples per split; the nine distinct entries are within 1.67
+reported Monte Carlo standard errors of their proposed exact values.
+Native Opus 5.5/high review is running on the frozen candidate, with mandatory
+source delivery and JSON-only reporting. No acceptance is claimed yet.
+
+Lean creation proposal: `lean-progress/CREATION-PROPOSAL.md`; Le was asked
+asynchronously at the explicit decision point 4. Creation remains pending;
+mathematics work is independent of that unanswered decision.
+
+### G1 final review and adjudication
+
+Native Opus 5.5/high returned **PASS_WITH_NOTES / high**, accepted=true,
+all C1–C8 PASS, no fatal/major findings or required repairs. Complete text
+and source-image delivery passed the read ledger. Root verified that the
+entire G0 section is byte-identical to its previous committed version;
+only title/abstract navigation and the new G1 section changed. This is a
+scoped G1 review, not a re-audit of G0 or of imported analytic theorems.
+
+| Optional finding | Adjudication |
+|---|---|
+| 1. Chain exchange also relabels pairings | Confirmed: between splits (1,3) and (3,1), A and C exchange and B stays B. For (0,4)/(4,0) the labels are unchanged. The theorem says exchange chains, not keep pairing labels fixed; the summed coefficient formula is correct. This explicit reading is retained here. |
+| 2. Approximate-identity and time-truncation passage is terse | C2 checks continuity of the reduced area off null boundaries, a uniform 1/4 bound, and the monotone time truncations. Accepted as complete in substance; preserve the optional exposition limitation. |
+| 3. G0 order-two white calculation could cite the same approximation | Existing G0 proof unchanged; the same elementary argument applies. No claim that a delta has a pointwise value. |
+| 4. Fixed dominating exponent wording in Riesz static remark | Read as choosing a fixed upper exponent before decreasing alpha0, exactly as in the preceding lemma. Deferred prose clarification; no limit-order change. |
+| 5. Riesz regularized-to-Lebesgue identification is implicit | C6 accepts the elementary domination at fixed alpha<1 and bounded wave supports; imported G0 convention remains explicit. No stronger covariance class is claimed. |
+| 6. Static rows could say coefficient limits instead of alpha0=0 | The lemma and scope remark explicitly define this meaning; no endpoint SPDE or interchanged large-time/static limit is claimed. |
+| 7. Abstract 'computes' can overstate Riesz order four | Actual proposition and scope table explicitly give an unevaluated but fully specified integral representation, not a closed form. Status reports retain that distinction. |
+| 8. Symmetry-related Monte Carlo rows fluctuate more | Root's earlier 1.67-SE statement concerned the nine distinct rows only. The full fifteen include deviations up to about 2.4 SE, consistent with the preserved raw sample. No acceptance or proof uses Monte Carlo accuracy. |
+
+Exact static white-space totals: M2(t)=t³/3 and M4(t)=11t⁶/540.
+For fractional time, M2(t)=2c0 t^(3-alpha0), and all M4 terms are the
+explicit time integrals in the nine-row table with chain exchange. The
+Riesz order-two formulas are explicit; its order-four result is a finite,
+fully specified unit-domain integral, not a closed-form evaluation.
+The published static exponent is source-checked; disputed white constants
+are not used. Both G:upper and G:sharp remain open.
+
+### Round 2 evaluation and close
+
+- Status: DONE_WITH_CONCERNS (optional exposition findings retained).
+- G1 completeness: 8/10; instantiation: 1.0; advance_delta: 1.0 for G1.
+- Clean notes build: 17 pages, 0 errors/undefined references/citations/
+  overfull boxes. No Lean verification is claimed.
+- TeX SHA-256: `1d1646e5b45ce8a80a5ccbde83bc944b8a0b1027620fc5ba6429be57c6c75560`.
+- PDF SHA-256: `bfa0b11fb4f85a9c26a7a09fe021766170900eb2dfe5efd1194965aa99e8b0cb`.
+- Review: `reviews/2026-10-27-round2/review-report.json`; exact bindings in
+  `review-summary.json`, full native evidence in `review-evidence.tar.xz`.
+- Article Round 2 commit: ROUND2_ARTICLE_SHA.
+- Wiki Round 2 commit: ROUND2_WIKI_SHA.
+- Decision point 4: creation proposal prepared and asked; no answer received
+  yet. No repository, remote or registry entry has been created.
+- Next formal work: reviewed G0 finite/algebraic seams in the proposed private
+  companion, once approved. Next mathematical work: falsification/reconnaissance
+  of an all-order estimate that retains more than the failed uniform bound.
+
+The Round 2 wiki clone helper initially refused its own overwritten tracked
+page-health cache. The failed clone was removed by the helper. A fresh manual
+isolated clone preserves the tracked cache and provisions read-only adapters;
+no canonical wiki WIP or tool installation was modified to bypass the refusal.
