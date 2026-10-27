@@ -1,0 +1,57 @@
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+*.nav
+*.snm
+*.vrb
+*.run.xml
+*-blx.bib
+
+# Editor backup
+*~
+*.swp
+*.swo
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# Output (figure regen)
+codes/data/*.npy
+codes/data/*.npz
+codes/data/*.hdf5
+
+# IDE
+.idea/
+.vscode/
+
+# Local notes / paper-dev state
+Notes/local/
+.omx/
+SCRATCH.md
+.paper-dev-state.json
+.paper-dev-state.json.lock
+experiments.tsv
+
+
+# Force-track these
+!Progress.md
+!HANDOFF.md
+!AGENTS.md
+!.paper-dev-retro.md
+
+# Canonical notes PDF is tracked (clone-and-read)
+!notes/notes_stratonovich_ham_second_moment.pdf

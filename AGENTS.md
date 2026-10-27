@@ -1,0 +1,121 @@
+# Article-Stratonovich-HAM-Second-Moment — AGENTS.md
+
+## Project overview
+
+**Goal.** For the Stratonovich hyperbolic Anderson model with Gaussian noise
+fractional in time (X. Chen, author version, `chen:author2026:time-dependency`):
+
+1. **Upper bound at the correct scale:**
+   limsup_{t→∞} t^{-κ} log 𝔼u²(t,x) < ∞, with κ = (4−α−α₀)/(3−α),
+   improving Chen's 𝔼u² ≤ e^{Ct²} (Remark 5.1, p. 37).
+2. **Sharp constant for p = 2:** two-sided bounds
+   2^{(4−α)/(3−α)} L_* ≤ liminf ≤ limsup ≤ 2^{(4−α)/(3−α)} L^*
+   (the p=2 case of Chen's conjecture (1.22), up to the same 𝓔_* < 𝓔 gap
+   as his p=1 theorem). The exact limit is the conditional target.
+
+The precise statements, notation and known results are in
+`notes/notes_stratonovich_ham_second_moment.tex` (§§1–3). Read it first.
+**Progress.md is the workflow authority** (rounds, gates, decisions).
+`PROJECT-GOAL.md` is the completion contract.
+
+[held back: private planning]
+
+**Wiki project page:**
+`../SPDEs-wiki/content/projects/stratonovich-ham-second-moment.md`.
+
+## Scope boundary (read before doing anything)
+
+[held back: collaborators' unpublished work]
+
+## Key structural facts (from the 2026-10-26 setup reading; do not relearn)
+
+1. **Expansion.** u = Σ S_n(g_n) with ordered single-chain kernels
+   (2.13)–(2.16). Expected Stratonovich integrals include **self-pairings**
+   within a chain (Wick sum over all pair partitions, (2.21)), unlike the
+   Skorohod chaos.
+2. **Second moment = two-chain pairing integrals.** 𝔼[S_n(g_n)]² is given
+   exactly by Theorem 4.1 (4.3) (two ordered chains I₁, I₂, all pair
+   partitions of 2n points). The full 𝔼u² also has cross terms
+   𝔼[S_m S_n], m ≠ n, m+n even (via (2.18)): justify and write them (Gate G0).
+3. **Theorem 3.1 (3.6)** is a universal bound for exactly these two-chain
+   integrals, including cross-pairings, with Laplace-weighted kernels in
+   Lemma A.1. Chen uses it only for integrability.
+4. **The crude bound** 𝔼u² ≤ e^{Ct²} (Remark 5.1) comes from (2.13) and
+   (4.4). Where the exponent 2 enters, instead of κ, is the first question.
+5. **Why Chen stops at p = 1** (Remark 6.3): his exact representation
+   (Theorem 6.1) needs the monotone order of one chain. For p = 2 each chain
+   is still ordered; only the interleaving is lost. That is the opening for a
+   two-clock representation.
+6. **Jensen gives the lower bound for free:** liminf ≥ 2L_*
+   (Proposition P:Jensen, proved in the notes). The conjectured constant
+   2^{(4−α)/(3−α)}L^* is larger, so the real lower-bound content is the extra
+   factor 2^{1/(3−α)}.
+7. **Version trap.** arXiv:2510.01412v1 states an exact first-moment limit;
+   the author version proves only two-sided bounds. Never cite v1 for
+   Theorem 1.2. See `sources/SOURCE-MANIFEST.md`.
+
+## Calibrations every proposed bound must pass
+
+[held back: collaborators' unpublished work]
+
+## Repository layout
+
+```
+AGENTS.md            this file
+PROJECT-GOAL.md      objective, completion contract, scope limits
+Progress.md          workflow authority (rounds, gates, decisions, failed routes)
+CODEX-START.md       the launch prompt for the Codex run
+README.md
+notes/notes_stratonovich_ham_second_moment.tex   (+ tracked PDF)
+sources/SOURCE-MANIFEST.md, sources/chen-2026-author/, sources/llm_pack/
+reviews/             review packets and reports (one dated directory each)
+handoffs/            session handoffs
+All.bib -> ../refdb/All.bib (read-only), extra.bib (local additions)
+20/ 29/ 4/           Le_Chen_Publications symlinks (BCC 2022, Chen–Eisenberg 2023, Chen–Dalang 2015)
+```
+
+## Workflow and rules
+
+### Mathematics
+- Self-contained proofs for every new claim. Imported results are labeled
+  ("From [Chen, Theorem 3.1]") with an exact pinpoint and are never presented
+  as proved here.
+- State conditional results as conditional. Never stamp a proof as complete
+  on reconnaissance or a one-pass argument.
+- Falsification first: before a long proof, test the claim on the simplest
+  case (small n, p = 2 chaos order 2 or 4, d = 1, α = 1) and record the test.
+- Record every failed route in Progress.md with the reason (a no-go is a
+  result).
+
+[held back: collaborators' unpublished work]
+
+### LaTeX
+- Build from the repo root:
+  `latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=notes notes/notes_stratonovich_ham_second_moment.tex`
+- Gate before every commit of a .tex change: 0 errors, 0 undefined
+  references/citations, 0 overfull boxes; commit the rebuilt PDF with it.
+- No tab characters (2-space indent). Labels: `T:` `L:` `P:` `C:` `R:` `D:`
+  `H:` `E:` `S:` `Conj:` (Goals use `G:`). Every `\end{proof}` is preceded by
+  "This proves Lemma~\ref{...}." (or Theorem/Proposition).
+- amsrefs: `\cite{key}*{Theorem~3.1}` for pinpoints; `\cites{k1,k2}` takes
+  one comma-separated argument.
+
+### Bibliography
+- `All.bib` is a read-only symlink to `../refdb/All.bib`. New entries go in
+  `extra.bib` (or through the refdb workflow, not by editing All.bib).
+- Before citing a key: `grep -n '{key,' All.bib extra.bib`.
+
+### Git
+- Remote: `origin` = <HUB> bare repo
+  `<HUB>:<HOME>/<REMOTES>/Article-Stratonovich-HAM-Second-Moment.git`.
+- Atomic commits per unit of work; push after each; stage only your own
+  paths (never `git add -A`).
+- After every push from a non-<HUB> machine, sync <HUB>:
+  `ssh <HUB> 'cd "<HOME>/workspace/svn/Article-Stratonovich-HAM-Second-Moment" && git fetch origin --prune && git pull --rebase --autostash'`
+  and verify HEAD parity. Never drop or reset another agent's work.
+- Repository-relative paths only in committed files.
+
+### Compute
+- This is pen-and-paper mathematics. Small symbolic or numerical checks run
+  locally (sympy/mpmath via `uv run --with ...`). Do not use Easley for this
+  project without Le's instruction.

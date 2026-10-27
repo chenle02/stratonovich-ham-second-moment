@@ -1,0 +1,279 @@
+\documentclass[12pt]{article}
+
+% === amsrefs bibliography setup ===
+\usepackage{amsrefs}
+\BibSpec{article}{%
+  +{}{\PrintAuthors}                {author}
+  +{,}{ \textit}                    {title}
+  +{.}{ }                           {part}
+  +{:}{ }                           {subtitle}
+  +{,}{ \PrintContributions}        {contribution}
+  +{.}{ \PrintPartials}             {partial}
+  +{,}{ }                           {journal}
+  +{}{ \textbf}                     {volume}
+  +{}{ \parenthesize}               {date}
+  +{,}{ }                           {pages}
+  +{,}{ }                           {status}
+  +{,}{ \PrintDOI}                  {doi}
+  +{.}{ Available at \eprint}       {eprint}
+  +{}{ \parenthesize}               {transition}
+  +{;}{ \PrintReviews}              {review}
+  +{.}{}                            {note}
+}
+
+% === Core packages ===
+\usepackage{amsmath, amsfonts, amssymb, amsthm}
+\usepackage{enumerate}
+\usepackage{mathrsfs}
+\usepackage{xcolor}
+\usepackage[colorlinks=true]{hyperref}
+\usepackage{framed}
+\usepackage{url}
+\setlength{\emergencystretch}{3em}
+
+% === Page geometry ===
+\setlength{\textwidth}{6.2in}
+\setlength{\oddsidemargin}{0.1in}
+\setlength{\evensidemargin}{0.1in}
+\setlength{\textheight}{8.8in}
+\setlength{\topmargin}{0in}
+
+% === Equation numbering ===
+\numberwithin{equation}{section}
+
+% === Theorem environments (shared counter) ===
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{hypothesis}[theorem]{Hypothesis}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{goal}[theorem]{Goal}
+
+% === Standard macros ===
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\W}{\dot W}
+\newcommand{\ud}{\,\mathrm{d}}
+\newcommand{\cE}{\mathcal{E}}
+\newcommand{\myCmts}[1]{\begin{framed}\noindent\textcolor{red}{#1}\end{framed}}
+
+\begin{document}
+
+\title{The second moment of the hyperbolic Anderson model with time-dependent
+  noise: Stratonovich regime\\[0.3em]
+  {\normalsize Working notes (project scaffold, 2026-10-26)}}
+\author{Le Chen}
+\date{\today}
+\maketitle
+
+\begin{abstract}
+  For the Stratonovich hyperbolic Anderson model driven by a Gaussian noise
+  that is fractional in time, X.~Chen~\cite{chen:author2026:time-dependency}
+  proves the sharp existence condition and two-sided bounds on the large-time
+  growth of the first moment, and he conjectures the growth of all integer
+  moments. For the second moment the only known upper bound is
+  $\E u^2(t,x)\le e^{Ct^2}$. The goal of this project is (i) an upper bound
+  for $\E u^2(t,x)$ at the correct scale
+  $t^{(4-\alpha-\alpha_0)/(3-\alpha)}$, and (ii) the sharp constant in the
+  second-moment asymptotics, or two-sided bounds of the same type as the
+  first-moment result. These notes fix the model, record exactly what is
+  known (with source pinpoints), state the targets, and list the planned
+  route. Nothing here beyond Proposition~\ref{P:Jensen} is proved yet.
+\end{abstract}
+
+\tableofcontents
+
+\section{Model and standing assumptions}\label{S:model}
+
+We study the hyperbolic Anderson model
+\cite{chen:author2026:time-dependency}*{(1.1)}
+\begin{equation}\label{E:HAM}
+  \frac{\partial^2 u}{\partial t^2}(t,x)=\Delta u(t,x)+\W(t,x)u(t,x),
+  \qquad u(0,x)=1,\quad \frac{\partial u}{\partial t}(0,x)=0,
+\end{equation}
+for $(t,x)\in\R_+\times\R^d$, $d\in\{1,2,3\}$, interpreted in the
+Stratonovich sense (limit of classical wave equations driven by smoothed
+noises $\W_{\epsilon,\delta}$). The noise is centered Gaussian with
+\begin{equation}\label{E:cov}
+  \operatorname{Cov}\big(\W(s,x),\W(t,y)\big)=|s-t|^{-\alpha_0}\gamma(x-y),
+  \qquad 0<\alpha_0<1,
+\end{equation}
+where $\gamma\ge0$ is nonnegative definite with spectral measure $\mu$.
+
+\begin{hypothesis}[Homogeneity]\label{H:homog}
+  $\gamma(cx)=c^{-\alpha}\gamma(x)$ for $c>0$, and
+  \begin{equation}\label{E:threshold}
+    \alpha_0+\alpha<2,
+  \end{equation}
+  with $0<\alpha<d$, or $\alpha=d=1$ (spatial white noise).
+\end{hypothesis}
+
+Throughout we write
+\begin{equation}\label{E:kappa}
+  \kappa:=\frac{4-\alpha-\alpha_0}{3-\alpha}\in(1,2).
+\end{equation}
+
+\section{What is known}\label{S:known}
+
+All pinpoints below refer to the current author version
+\cite{chen:author2026:time-dependency} (64 pages, ``Submitted to the Annals
+of Applied Probability'', SHA-256 \texttt{5f7385ca\dots}); see
+\path{sources/SOURCE-MANIFEST.md}. arXiv:2510.01412v1
+\cite{chen:25:time-dependency} differs in Theorem~1.2 and must not be used as
+the authority for it.
+
+\subsection{Stratonovich expansion and moments}
+
+The solution is the Stratonovich expansion
+\cite{chen:author2026:time-dependency}*{(2.13)--(2.16)}
+\begin{equation}\label{E:expansion}
+  \begin{split}
+    u(t,x)&=\sum_{n=0}^\infty S_n\big(g_n(\cdot,t,x)\big),\\
+    g_n(s_1,\dots,s_n,x_1,\dots,x_n,t,x)
+    &=\Big(\prod_{l=1}^nG(s_{l+1}-s_l,x_{l+1}-x_l)\Big)
+    \mathbf 1_{[0,t]^n_<}(s_1,\dots,s_n),
+  \end{split}
+\end{equation}
+with $s_{n+1}=t$, $x_{n+1}=x$, $G$ the fundamental solution of the wave
+equation, and $[0,t]^n_<=\{0<s_1<\dots<s_n<t\}$. Odd expected Stratonovich
+integrals vanish and even ones are given by Wick's formula
+\cite{chen:author2026:time-dependency}*{(2.19)--(2.21)}, a sum over pair
+partitions $\mathcal D\in\Pi_n$ of $\{1,\dots,2n\}$ that includes
+self-pairings within one chain. The second moment of a single chaos term is
+the two-chain pairing integral \cite{chen:author2026:time-dependency}*{Theorem~4.1, (4.3)}:
+\begin{equation}\label{E:Sn2}
+  \begin{split}
+    \E\big[S_n(g_n(\cdot,t,x))\big]^2
+    &=\sum_{\mathcal D\in\Pi_n}\int_{[0,t]^n_<\times[0,t]^n_<}\ud s
+    \int_{(\R^d)^n\times(\R^d)^n}\ud x
+    \Big(\prod_{\rho=1}^2\prod_{l\in I_\rho}G(s_l-s_{l-1},x_l-x_{l-1})\Big)\\
+    &\qquad\times\prod_{(j,k)\in\mathcal D}|s_j-s_k|^{-\alpha_0}\gamma(x_j-x_k),
+  \end{split}
+\end{equation}
+with $I_1=\{1,\dots,n\}$, $I_2=\{n+1,\dots,2n\}$ and the conventions of
+\cite{chen:author2026:time-dependency}*{Theorem~4.1}.
+
+\myCmts{To check (Gate~G0): the cross terms. By the product rule
+  \cite{chen:author2026:time-dependency}*{(2.18)} and Wick's formula, formally
+  $\E u^2(t,x)=\sum_{m,n\ge0,\ m+n\ \mathrm{even}}\E\big[S_m(g_m)S_n(g_n)\big]$,
+  each term a pairing integral over two ordered chains of lengths $m$ and
+  $n$. Justify this (including interchange of sum and expectation under
+  Theorem~1.1) and write the general term in the form of
+  \cite{chen:author2026:time-dependency}*{(3.6)} with $n_1=m$, $n_2=n$.}
+
+\subsection{The universal two-chain bound}
+
+\cite{chen:author2026:time-dependency}*{Theorem~3.1, (3.6), p.~15} bounds
+exactly such two-chain pairing integrals with general nonnegative kernels
+$G_l$ by products of the norms $\|G_l\|^{(0)}$, $\|G_l\|^{(1)}_{j,k}$,
+$\|G_l\|^{(2)}_{j,k}$ of \cite{chen:author2026:time-dependency}*{(3.3)--(3.5)},
+over a partition $\{Q_0,Q_1,Q_2\}$ of $\{1,\dots,2n\}$ with $\#Q_0=\#Q_1$ and
+$\#Q_2$ even. It includes cross-pairings between the two chains. In the
+source it is used only for Stratonovich integrability (Section~4) and, via
+Lemma~A.1 with $G_l(t,x)=e^{-\theta t}G(t,x)$, in Laplace variables.
+
+\subsection{Known moment bounds}
+
+\begin{theorem}[\cite{chen:author2026:time-dependency}*{Theorem~1.2, (1.10)--(1.13)}]\label{T:first}
+  Under Hypothesis~\ref{H:homog},
+  \[
+    L_*\le\liminf_{t\to\infty}t^{-\kappa}\log\E u(t,x)
+    \le\limsup_{t\to\infty}t^{-\kappa}\log\E u(t,x)\le L^*,
+  \]
+  where, for $\cE^\sharp\in\{\cE_*,\cE\}$,
+  \[
+    L(\cE^\sharp):=(3-\alpha)\bigg(
+    \frac{(4-\alpha-2\alpha_0)^{\frac{4-\alpha-2\alpha_0}{2}}}
+    {2^3(4-\alpha-\alpha_0)^{4-\alpha-\alpha_0}}
+    \Big(\frac{2\cE^\sharp}{2-\alpha}\Big)^{\frac{2-\alpha}{2}}
+    \bigg)^{\frac1{3-\alpha}},
+    \qquad L_*=L(\cE_*),\quad L^*=L(\cE),
+  \]
+  and $\cE_*<\cE$ are the variational quantities
+  \cite{chen:author2026:time-dependency}*{(1.11)--(1.13)}.
+\end{theorem}
+
+The source predicts that the limit exists and equals $L^*$
+\cite{chen:author2026:time-dependency}*{p.~4}; this is not proved, and
+\cite{chen:author2026:time-dependency}*{Remark~8.1} explains why the lower
+bound is not sharp (complex-valued intersection local time).
+
+\begin{theorem}[\cite{chen:author2026:time-dependency}*{Remark~5.1, (5.8)}]\label{T:crude}
+  $\E u^2(t,x)\le e^{Ct^2}$ for large $t$.
+\end{theorem}
+
+\begin{conjecture}[\cite{chen:author2026:time-dependency}*{(1.22)}]\label{Conj:allp}
+  For $p=1,2,\dots$,
+  \[
+    \lim_{t\to\infty}t^{-\kappa}\log\E|u(t,x)|^p
+    =p^{\frac{4-\alpha}{3-\alpha}}L^*.
+  \]
+\end{conjecture}
+
+Since $p^{(4-\alpha)/(3-\alpha)}$ grows faster than $p$, the conjectured
+second-moment constant $2^{(4-\alpha)/(3-\alpha)}L^*$ exceeds $2L^*$.
+The source explains why its method stops at $p=1$
+\cite{chen:author2026:time-dependency}*{Remark~6.3}: the representation of
+Theorem~6.1 there uses the monotone order $s_1\le\dots\le s_{2n}$ of a single
+chain.
+
+\begin{proposition}[Jensen lower bound]\label{P:Jensen}
+  Under Hypothesis~\ref{H:homog},
+  \[
+    \liminf_{t\to\infty}t^{-\kappa}\log\E u^2(t,x)\ge 2L_*.
+  \]
+\end{proposition}
+
+\begin{proof}
+  By \eqref{E:expansion} and \cite{chen:author2026:time-dependency}*{(2.20)--(2.21)},
+  $\E u(t,x)=\sum_{n\ge0}\E S_{2n}(g_{2n}(\cdot,t,x))\ge1$, since every term is
+  a pairing integral of a nonnegative integrand and $S_0=1$. By the
+  Cauchy--Schwarz inequality, $\E u^2(t,x)\ge(\E u(t,x))^2$, so
+  $t^{-\kappa}\log\E u^2(t,x)\ge2\,t^{-\kappa}\log\E u(t,x)$, and the claim
+  follows from the lower bound in Theorem~\ref{T:first}. This proves Proposition~\ref{P:Jensen}.
+\end{proof}
+
+\section{Targets}\label{S:targets}
+
+\begin{goal}[Upper bound at the correct scale]\label{G:upper}
+  Under Hypothesis~\ref{H:homog}, prove
+  $\limsup_{t\to\infty}t^{-\kappa}\log\E u^2(t,x)<\infty$, ideally with an
+  explicit constant.
+\end{goal}
+
+\begin{goal}[Sharp second-moment constant]\label{G:sharp}
+  Prove two-sided bounds of the type of Theorem~\ref{T:first} for $p=2$:
+  \[
+    2^{\frac{4-\alpha}{3-\alpha}}L_*
+    \le\liminf_{t\to\infty}t^{-\kappa}\log\E u^2(t,x)
+    \le\limsup_{t\to\infty}t^{-\kappa}\log\E u^2(t,x)
+    \le2^{\frac{4-\alpha}{3-\alpha}}L^*,
+  \]
+  which would confirm Conjecture~\ref{Conj:allp} at $p=2$ up to the same gap
+  $\cE_*<\cE$ as for $p=1$. The exact limit
+  $2^{(4-\alpha)/(3-\alpha)}L^*$ is the conditional target, contingent on
+  closing that gap.
+\end{goal}
+
+\myCmts{The exponents in Goal~\ref{G:sharp} are the conjectured ones. If
+  the analysis produces a different $p=2$ constant, that is a finding about
+  Conjecture~\ref{Conj:allp}, not a reason to adjust the target.}
+
+\section{Planned route}\label{S:route}
+
+\begin{enumerate}[G0.]
+  \item \textbf{Diagnosis (falsification first).} Reproduce
+  \item \textbf{Calibrations.} Any proposed bound must (a) as $\alpha_0\to0$
+  \item \textbf{Upper bound (Goal~\ref{G:upper}).} Laplace transform in $t$,
+  \item \textbf{Two-copy representation (Goal~\ref{G:sharp}).} Each of the
+\end{enumerate}
+% [held back: collaborators' unpublished work]
+
+\bibliography{All,extra}
+
+\end{document}
