@@ -66,7 +66,7 @@
 
 \title{The second moment of the hyperbolic Anderson model with time-dependent
   noise: Stratonovich regime\\[0.3em]
-  {\normalsize Working notes (project scaffold, 2026-10-26)}}
+  {\normalsize Working notes (Gate G0, 2026-10-27)}}
 \author{Le Chen}
 \date{\today}
 \maketitle
@@ -76,14 +76,20 @@
   that is fractional in time, X.~Chen~\cite{chen:author2026:time-dependency}
   proves the sharp existence condition and two-sided bounds on the large-time
   growth of the first moment, and he conjectures the growth of all integer
-  moments. For the second moment the only known upper bound is
+  moments. The source records the second-moment upper bound
   $\E u^2(t,x)\le e^{Ct^2}$. The goal of this project is (i) an upper bound
   for $\E u^2(t,x)$ at the correct scale
   $t^{(4-\alpha-\alpha_0)/(3-\alpha)}$, and (ii) the sharp constant in the
   second-moment asymptotics, or two-sided bounds of the same type as the
   first-moment result. These notes fix the model, record exactly what is
   known (with source pinpoints), state the targets, and list the planned
-  route. Nothing here beyond Proposition~\ref{P:Jensen} is proved yet.
+  route. Section~\ref{S:G0} gives the mixed-term expansion and the upper
+  bound $\E u^2(t,x)\le\exp(Ct^\rho)$ for large $t$, where
+  $\rho=(4-\alpha-\alpha_0)/(3-\alpha-\alpha_0)$ satisfies
+  $\kappa<\rho<2$. It identifies a time-uniformity issue in the source's
+  intermediate estimate and recovers the quadratic-exponential bound
+  with a corrected argument. The uniform pairing estimate cannot reach
+  the target scale. The two principal goals remain open.
 \end{abstract}
 
 \tableofcontents
@@ -158,13 +164,7 @@ the two-chain pairing integral \cite{chen:author2026:time-dependency}*{Theorem~4
 with $I_1=\{1,\dots,n\}$, $I_2=\{n+1,\dots,2n\}$ and the conventions of
 \cite{chen:author2026:time-dependency}*{Theorem~4.1}.
 
-\myCmts{To check (Gate~G0): the cross terms. By the product rule
-  \cite{chen:author2026:time-dependency}*{(2.18)} and Wick's formula, formally
-  $\E u^2(t,x)=\sum_{m,n\ge0,\ m+n\ \mathrm{even}}\E\big[S_m(g_m)S_n(g_n)\big]$,
-  each term a pairing integral over two ordered chains of lengths $m$ and
-  $n$. Justify this (including interchange of sum and expectation under
-  Theorem~1.1) and write the general term in the form of
-  \cite{chen:author2026:time-dependency}*{(3.6)} with $n_1=m$, $n_2=n$.}
+The full mixed-term expansion is justified in Proposition~\ref{P:mixed}.
 
 \subsection{The universal two-chain bound}
 
@@ -173,7 +173,13 @@ exactly such two-chain pairing integrals with general nonnegative kernels
 $G_l$ by products of the norms $\|G_l\|^{(0)}$, $\|G_l\|^{(1)}_{j,k}$,
 $\|G_l\|^{(2)}_{j,k}$ of \cite{chen:author2026:time-dependency}*{(3.3)--(3.5)},
 over a partition $\{Q_0,Q_1,Q_2\}$ of $\{1,\dots,2n\}$ with $\#Q_0=\#Q_1$ and
-$\#Q_2$ even. It includes cross-pairings between the two chains. In the
+$\#Q_2$ even. As stated, the theorem uses finite spatial spectral measures
+$\mu_{j,k}$ with nonnegative covariance functions and temporal kernels
+$\Gamma(\alpha_0)^{-1}\int_{A_{j,k}}e^{-\lambda|r|}
+\lambda^{\alpha_0-1}\ud\lambda$ for measurable $A_{j,k}\subset\R_+$.
+The application to the full covariance therefore requires regularization;
+this is carried out in Lemma~\ref{L:crude-corrected}.
+The theorem includes cross-pairings between the two chains. In the
 source it is used only for Stratonovich integrability (Section~4) and, via
 Lemma~A.1 with $G_l(t,x)=e^{-\theta t}G(t,x)$, in Laplace variables.
 
@@ -237,6 +243,371 @@ chain.
   $t^{-\kappa}\log\E u^2(t,x)\ge2\,t^{-\kappa}\log\E u(t,x)$, and the claim
   follows from the lower bound in Theorem~\ref{T:first}. This proves Proposition~\ref{P:Jensen}.
 \end{proof}
+
+\section{Gate G0: cross terms and the loss in the norm bound}\label{S:G0}
+
+This section records a diagnosis of the proposed route, not a proof of
+Goal~\ref{G:upper}. Put $X_n(t,x)=S_n(g_n(\cdot,t,x))$, with $X_0=1$, and
+\[
+  \beta=4-\alpha-\alpha_0>2,\qquad
+  P_k=\#\Pi_k=\frac{(2k)!}{2^k k!}.
+\]
+The count follows by pairing the smallest remaining label with one of
+$2k-1$ labels: $P_0=1$ and $P_k=(2k-1)P_{k-1}$, which gives the displayed
+formula by induction. All constants below may depend on the fixed covariance and its parameters,
+but not on the orders or on $t$.
+
+\subsection{The complete two-chain expansion}
+
+For $m+n=2k$, label the two chains by
+$I_1=\{1,\ldots,m\}$ and $I_2=\{m+1,\ldots,m+n\}$.
+Let $p(l)$ denote the preceding vertex in its own chain; at each first
+vertex set $(s_{p(l)},y_{p(l)})=(0,0)$. Thus, the second chain has its own
+root, rather than the last vertex of the first chain. For $D\in\Pi_k$, set
+\begin{equation}\label{E:mixed-diagram}
+  \begin{split}
+    J_{m,n,D}(t)
+    ={}&\int_{[0,t]^m_<\times[0,t]^n_<}\ud\mathbf s
+    \int_{(\R^d)^{m+n}}\ud\mathbf y\,
+    \prod_{\rho=1}^2\prod_{l\in I_\rho}
+    G(s_l-s_{p(l)},y_l-y_{p(l)})\\
+    &\hspace{20mm}\times
+    \prod_{(j,h)\in D}|s_j-s_h|^{-\alpha_0}\gamma(y_j-y_h).
+  \end{split}
+\end{equation}
+An empty chain contributes the factor one. For $d=3$, the spatial Green
+kernels are measures; for spatial white noise the covariance is a delta
+measure. Integrals in~\eqref{E:mixed-diagram} use the generalized-kernel
+and regularization conventions of the source, not pointwise values of
+these measures; see~\cite{chen:author2026:time-dependency}*{Remark~2.3,
+pp.~13--14, and Theorem~4.1}.
+
+\begin{proposition}[Mixed terms]\label{P:mixed}
+  Under Hypothesis~\ref{H:homog},
+  \begin{equation}\label{E:mixed-moment}
+    \E[X_m(t,x)X_n(t,x)]
+    =\begin{cases}
+      \displaystyle\sum_{D\in\Pi_k}J_{m,n,D}(t),&m+n=2k,\\
+      0,&m+n\text{ odd},
+    \end{cases}
+  \end{equation}
+  where the case $m=n=0$ equals one. In particular,
+  \begin{equation}\label{E:full-second}
+    \E u^2(t,x)=\sum_{k=0}^\infty\sum_{m=0}^{2k}
+    \sum_{D\in\Pi_k}J_{m,2k-m,D}(t).
+  \end{equation}
+  This is a convergent series of nonnegative terms.
+\end{proposition}
+
+\begin{proof}
+  From~\cite{chen:author2026:time-dependency}*{Theorem~4.1}, each
+  deterministic kernel $g_n$ is Stratonovich integrable. Its spectral
+  hypothesis (1.5) follows from Hypothesis~\ref{H:homog}, as recorded
+  on p.~3 of the source. Lemma~2.5 and
+  (2.18) of that source apply to these deterministic kernels and give
+  $X_mX_n=S_{m+n}(g_m\otimes g_n)$ for $m,n\ge1$. More explicitly,
+  the smoothed factors converge in $L^4$, so their products converge in
+  $L^2$ by H\"older's inequality. Thus, the product rule does not require
+  an unproved interchange of infinite series. The cases with a zero order
+  use $X_0=1$. From the source's (2.20)--(2.21), the expectation is zero
+  at odd total order and is the Wick sum at even total order.
+
+  We also justify the individual generalized integrals in the Wick sum.
+  Fix $D\in\Pi_k$ and take $k$ independent copies $W^e$, $e\in D$, of
+  the centered Gaussian noise $W$, each with the same covariance as $W$.
+  At vertex $l$ use the copy indexed by the unique pair $e\in D$
+  containing $l$. For either nonempty chain of length $r$, let
+  $Y_{r,a}$ be its integral against the product of these smoothed noises,
+  where $a$ denotes all smoothing parameters on that chain. For two
+  parameter choices $a,b$, Wick's formula expresses
+  $\E[Y_{r,a}Y_{r,b}]$ as a finite sum over those pairings of two copies
+  of this length-$r$ chain that join vertices of the same color.
+  This is a subset of the equal-length diagrams in
+  \cite{chen:author2026:time-dependency}*{Lemma~4.4, p.~30}.
+  Each summand has a finite joint limit as $a,b\to0$, independent of
+  their relative rates. Consequently, the three terms in
+  \[
+    \E|Y_{r,a}-Y_{r,b}|^2
+    =\E Y_{r,a}^2+\E Y_{r,b}^2-2\E[Y_{r,a}Y_{r,b}]
+  \]
+  have the same limiting covariance, and $Y_{r,a}$ converges in $L^2$.
+  For $d=3$, these integrals use precisely the measure-valued Green-kernel
+  convention of the source's pp.~13--14 and Lemma~4.4: for fixed noise
+  smoothing first take the $G_\eta$ limit as $\eta\downarrow0$, and then
+  take the noise-smoothing limit just proved.
+  An empty chain is the constant one. The product of the two colored
+  chain integrals therefore converges in $L^1$, by Cauchy--Schwarz.
+  In that product each color occurs exactly twice in total, so
+  independence and Wick's formula leave exactly the prescribed pairing
+  $D$. Its expectation is the regularized integral defining
+  $J_{m,n,D}(t)$, after the same reversal of both chains used below.
+  Thus, each such integral has a finite limit. The regularized
+  integrands are nonnegative, so $J_{m,n,D}(t)\ge0$.
+
+  In each chain reverse the order of its variables, replace each time by
+  $t$ minus that time, and each spatial coordinate by $x$ minus that
+  coordinate. Each terminal Green factor becomes an initial Green factor.
+  Both time and spatial covariance differences change sign; the covariance
+  kernels are even. The resulting permutation of the $2k$ labels is a
+  bijection of $\Pi_k$. This gives~\eqref{E:mixed-moment}, including its
+  nonnegativity. These are exactly the two chains in the integrand of
+  the source's (3.6), with $n_1=m$, $n_2=n$, restricted to the finite
+  horizons. The same transformations apply to the source's regularized
+  integrals before taking their defining limits.
+
+  From~\cite{chen:author2026:time-dependency}*{Theorem~1.1 and Section~5,
+  p.~34}, $u$ is the solution represented by the series of the $X_n$.
+  Its fixed-$t$ summability is also proved independently in
+  Lemma~\ref{L:crude-corrected} below, whose proof uses only the source's
+  diagonal identity and Theorem~3.1, not the present mixed expansion.
+  In particular, $U_N=\sum_{n=0}^N X_n$ converges to $u$ in $L^2$.
+  Consequently,
+  \[
+    |\E U_N^2-\E u^2|
+    \le\|U_N-u\|_2(\|U_N\|_2+\|u\|_2)\longrightarrow0.
+  \]
+  The finite expansion of $\E U_N^2$ is a sum of the nonnegative mixed
+  expectations already computed. Its increasing limit is therefore the
+  full double sum, independently of its enumeration. Regrouping by total
+  order gives~\eqref{E:full-second}. This proves Proposition~\ref{P:mixed}.
+\end{proof}
+
+\subsection{A small-order check and a source uniformity issue}
+
+\begin{lemma}[White-space test]\label{L:white-test}
+  For $d=\alpha=1$ and $\gamma=\delta_0$, put
+  $c_0=((1-\alpha_0)(2-\alpha_0)(3-\alpha_0))^{-1}$. Then
+  \begin{equation}\label{E:white-test}
+    \E X_1(t,x)^2=c_0t^{3-\alpha_0},\qquad
+    \E X_2(t,x)=\tfrac12c_0t^{3-\alpha_0}.
+  \end{equation}
+  In particular, the total-order-two contribution to~\eqref{E:full-second}
+  is $2c_0t^{3-\alpha_0}$.
+\end{lemma}
+
+\begin{proof}
+  Here $G(s,y)=\frac12\mathbf1_{\{|y|<s\}}$. Therefore,
+  $\int_\R G(s,y)G(r,y)\ud y=\min(s,r)/2$. The $(1,1)$ integral is
+  \[
+    \int_0^t\ud s\int_0^s r(s-r)^{-\alpha_0}\ud r
+    =\frac{t^{3-\alpha_0}}
+    {(1-\alpha_0)(2-\alpha_0)(3-\alpha_0)}.
+  \]
+  For the $(0,2)$ integral, the delta covariance sets the two spatial
+  vertices equal. The integral of the first Green factor is $r$, whereas
+  the second Green factor at zero is $1/2$. Its time integral is half the
+  preceding display. The $(2,0)$ term is identical. This proves
+  Lemma~\ref{L:white-test}.
+\end{proof}
+
+\begin{remark}[Source fidelity]\label{R:source-uniformity}
+  The author version's Remark~5.1 refers to (4.4), but (4.4), on p.~22,
+  is a smoothing limit. The relevant bound is (5.4), on p.~35,
+  $\E X_n(t,x)^2\le C^nt^{2n}/n!$, with the preceding sentence asserting
+  that $C$ is independent of $n$ and $t$. Taken for all $t>0$, this
+  uniformity contradicts~\eqref{E:white-test} at $n=1$.
+  The proof on pp.~34--35 sets $\theta=n/t$. Its first-norm estimate
+  uses (A.1), which is finite for every positive $\theta$ but does not
+  give a constant uniform as $\theta\downarrow0$. Its second-norm
+  estimate uses the large-$\theta$ bound (A.3) without retaining that
+  restriction. Both losses of uniformity matter when $n/t$ is small.
+  This is a source-internal uniformity discrepancy; it does not refute
+  Remark~5.1's final large-time conclusion. The next lemma repairs this
+  particular deduction without importing the asserted uniformity of (5.4).
+\end{remark}
+
+\subsection{Recovering the quadratic-exponential bound}
+
+Write $G_\theta(s,y)=e^{-\theta s}G(s,y)$ and let
+$N_i(\theta)$, $i=0,1,2$, denote the three norms in the source's
+(3.3)--(3.5), with the full covariance. From its (2.4) and Lemma~A.1,
+there are $C_0<\infty$ and $\theta_0>0$ such that, for
+$\theta\ge\theta_0$,
+\begin{equation}\label{E:crude-norms}
+  N_0(\theta)=\theta^{-2},\qquad
+  N_1(\theta)\le C_0,\qquad N_2(\theta)\le C_0\theta^{-1}.
+\end{equation}
+For $N_1$, the spectral formula (A.1) is decreasing in $\theta$, so its
+finite value at $\theta_0$ suffices. The last bound is (A.3).
+
+\begin{lemma}[Corrected crude estimate]\label{L:crude-corrected}
+  Under Hypothesis~\ref{H:homog}, for suitable $C<\infty$ and
+  $\theta_0>0$,
+  \begin{equation}\label{E:crude-corrected}
+    \E X_n(t,x)^2\le e^{2\theta_0t}\frac{C^nt^{2n}}{n!}
+    \quad(n\ge1,t>0),\qquad
+    \E u^2(t,x)\le2e^{2\theta_0t+2Ct^2}.
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  On the two finite chains, the product of the exponential weights
+  telescopes to $e^{-\theta(s_n+s_{2n})}\ge e^{-2\theta t}$.
+  Extend the nonnegative integral to the two infinite time simplices
+  and apply the source's Theorem~3.1. If $q_i=\#Q_i$, then
+  $q_0=q_1$ and $q_0+q_2/2=n$. Hence,~\eqref{E:crude-norms} bounds
+  each pairing by $e^{2\theta t}C^n\theta^{-2n}$.
+  Summing the $P_n$ pairings gives
+  \begin{equation}\label{E:theta-envelope}
+    \E X_n(t,x)^2\le P_n e^{2\theta t}C^n\theta^{-2n},
+    \qquad\theta\ge\theta_0.
+  \end{equation}
+  To be precise about the source's finite-spectral-measure hypothesis in
+  Theorem~3.1, first apply it with the spatially smoothed covariance and
+  the temporal truncations of (2.24). The smoothed spectral measure is
+  finite: the Gaussian multiplier is bounded by a constant times
+  $(1+|\xi|^2)^{-(2-\alpha_0)/2}$, whose integral is finite by (1.5).
+  This argument requires no radial density for the spectral measure.
+  The zero norm is unchanged; the
+  first norm is bounded by (A.1), since its spectral multiplier is at
+  most one; the squared second norm is bounded by the full temporal
+  covariance norm and then by removal of the spatial multiplier in the
+  nonnegative space-time spectral integral, as in (4.14). The bound is
+  uniform in these regularizations. In $d=3$, first use
+  $G_\eta=p_\eta*G$, as defined on pp.~13--14 of the source. Its
+  spatial Fourier multiplier is bounded by one and its spatial mass
+  equals that of $G$, so the same bounds are uniform in $\eta$ as well.
+  For each fixed noise regularization $(\epsilon,\delta)$, first let
+  $\eta\downarrow0$ in the source's $L^2$ definition. The squared
+  moments converge, so the inequality survives this first limit.
+  Then let $(\epsilon,\delta)\to0$ using Theorem~4.1. In $d=1,2$ only
+  this latter limit is needed. These limits transfer a uniform inequality;
+  no pointwise delta covariance bound is being used.
+
+  Choose $\theta=\theta_0+n/t$ in~\eqref{E:theta-envelope}. Since
+  $(2n)!\le(2n)^{2n}$, we have $P_n n^{-2n}\le2^n/n!$.
+  Absorb $2^ne^{2n}$ in $C^n$ to obtain the first bound
+  in~\eqref{E:crude-corrected}. Its square roots are summable for each
+  fixed $t$, by the ratio test. Thus, the norm series converges independently
+  of Proposition~\ref{P:mixed}. By Minkowski and Cauchy--Schwarz,
+  \[
+    \begin{split}
+      \|u(t,x)\|_2
+      &\le e^{\theta_0t}\sum_{n\ge0}\frac{(\sqrt C t)^n}{\sqrt{n!}},\\
+      \left(\sum_{n\ge0}\frac{z^n}{\sqrt{n!}}\right)^2
+      &\le\left(\sum_{n\ge0}2^{-n}\right)
+      \left(\sum_{n\ge0}\frac{(2z^2)^n}{n!}\right)
+      =2e^{2z^2}.
+    \end{split}
+  \]
+  This proves Lemma~\ref{L:crude-corrected}.
+\end{proof}
+
+Thus, the exponent two enters through replacing the paired norm products
+by $C\theta^{-2}$, followed by the pairing count and the order summation.
+The sum over unequal chain lengths is not responsible for this loss:
+the same loss already occurs in the diagonal estimate and Minkowski's
+inequality.
+
+\subsection{What homogeneity recovers, and what the bound still loses}
+
+\begin{proposition}[The uniform pairing estimate]\label{P:envelope}
+  Under Hypothesis~\ref{H:homog}, there is $K>0$ such that
+  \begin{equation}\label{E:homogeneous-envelope}
+    \E[X_m(t,x)X_n(t,x)]
+    \le P_k K^k e^{2\theta t}\theta^{-\beta k},
+    \qquad m+n=2k\ge2,\quad\theta>0.
+  \end{equation}
+  Define the numerical majorant produced by applying this estimate
+  separately at every total order by
+  \begin{equation}\label{E:B-envelope}
+    B_K(t)=1+\sum_{k\ge1}(2k+1)P_kK^k
+    \inf_{\theta>0}\{e^{2\theta t}\theta^{-\beta k}\}.
+  \end{equation}
+  Then $\E u^2(t,x)\le B_K(t)$ and, for some $c,C>0$ and all large $t$,
+  \begin{equation}\label{E:envelope-growth}
+    ct^{\rho}\le\log B_K(t)\le Ct^{\rho},\qquad
+    \rho=\frac{\beta}{\beta-1}
+    =\frac{4-\alpha-\alpha_0}{3-\alpha-\alpha_0}>\kappa.
+  \end{equation}
+  The lower bound here concerns the numerical majorant $B_K$, not the
+  second moment.
+\end{proposition}
+
+\begin{proof}
+  The wave kernel scales as
+  $G(cs,c\ud y)=cG(s,\ud y)$, and the covariance has degree $-\alpha$.
+  Changing all time and spatial variables by $\theta^{-1}$ in the norms
+  yields
+  \begin{equation}\label{E:homogeneous-norms}
+    N_0(\theta)=\theta^{-2},\quad
+    N_1(\theta)=N_1(1)\theta^{\alpha+\alpha_0-2},\quad
+    N_2(\theta)^2=N_2(1)^2\theta^{-\beta}.
+  \end{equation}
+  For the first norm this also follows directly from (A.1): substitute
+  $\lambda=\theta v$, $\xi=\theta\eta$, using the degree $\alpha$ of
+  the spectral measure. All constants are finite by Lemma~A.1.
+  The products $2N_0N_1$ and $N_2^2$ therefore both have degree
+  $-\beta$. Choose
+  $K\ge\max\{2N_1(1),N_2(1)^2\}$, increasing it to a positive
+  constant if needed. Theorem~3.1 and $q_0+q_2/2=k$ give
+  $K^k\theta^{-\beta k}$ for every partition it supplies. The finite
+  horizons contribute at most $e^{2\theta t}$. Apply this first to
+  regularized moments. In $d=3$, fix $(\epsilon,\delta)$ and let
+  $\eta\downarrow0$ in each factor's $L^2$ limit; Cauchy--Schwarz gives
+  $L^1$ convergence of their product. Then let
+  $(\epsilon,\delta)\to0$ in the same way, using Theorem~4.1 for each
+  chain. In $d=1,2$ only the noise limit is required. The estimates are
+  uniform at both stages, by the multiplier bounds in
+  Lemma~\ref{L:crude-corrected}. This proves~\eqref{E:homogeneous-envelope}.
+  Empty-chain cases satisfy the same bound (using $e^{2\theta t}$ is
+  harmless). Proposition~\ref{P:mixed} now gives the majorant.
+
+  The infimum in~\eqref{E:B-envelope} is attained at
+  $\theta=\beta k/(2t)$ and equals
+  $e^{\beta k}(2t/(\beta k))^{\beta k}$. Put $q=\beta-1>1$.
+  The elementary estimates
+  \[
+    k!\le P_k\le2^k k!,\qquad
+    (k/e)^k\le k!\le k^k,\qquad 2k+1\le3^k
+  \]
+  show that, for fixed positive $a,b$ depending only on $K,\beta$,
+  \[
+    \sum_{k\ge0}\frac{(at^\beta)^k}{(k!)^q}
+    \le B_K(t)\le
+    \sum_{k\ge0}\frac{(bt^\beta)^k}{(k!)^q}.
+  \]
+  Indeed, the additional factor $k!^\beta/k^{\beta k}$ lies between
+  $e^{-\beta k}$ and one and can be absorbed into $a^k,b^k$.
+  For $z>0$, the right-hand series is at most
+  $(\sum_{k\ge0}z^{k/q}/k!)^q=e^{qz^{1/q}}$, by the elementary
+  $\ell^q$ versus $\ell^1$ inequality for nonnegative sequences.
+  For a lower bound choose $k=\lfloor z^{1/q}/2\rfloor$ and use
+  $k!\le k^k$; its single summand is at least $2^{qk}$.
+  These estimates prove~\eqref{E:envelope-growth}. Finally,
+  $\beta-1=3-\alpha-\alpha_0<3-\alpha$, so $\rho>\kappa$.
+  This proves Proposition~\ref{P:envelope}.
+\end{proof}
+
+\begin{remark}[G0 verdict and its scope]\label{R:G0-verdict}
+  Since $\beta>2$, we have $1<\rho<2$. Thus,
+  Proposition~\ref{P:envelope} improves the crude quadratic time scale
+  under homogeneity, while leaving Goal~\ref{G:upper} open.
+  Theorem~3.1 used through its uniform pairing estimate is \emph{not
+  viable for Goal~\ref{G:upper}}: even with exact homogeneous norm
+  scaling, the resulting majorant has exponent $\rho>\kappa$.
+  The order coefficient has factorial denominator $(k!)^{3-\alpha-\alpha_0}$,
+  whereas the desired scale requires $(k!)^{3-\alpha}$; the missing
+  factor is $(k!)^{\alpha_0}$, up to exponential factors in $k$.
+  Counting the $2k+1$ chain-length splits does not cause this loss,
+  since it can be absorbed into an exponential factor.
+  This conclusion does not rule out a more refined application retaining
+  temporal order or grouping pairings before estimating them, and does not
+  disprove the conjecture. In the formal boundary limit
+  $\alpha_0\downarrow0$, both $\rho$ and $\kappa$ tend to
+  $(4-\alpha)/(3-\alpha)$. This necessary time-independent calibration
+  does not distinguish them and asserts no endpoint theorem or uniformity
+  of constants in $\alpha_0$. At $p=1$ use the empty-chain case with
+  $e^{\theta t}$ in place of $e^{2\theta t}$; minimizing at
+  $\theta=\beta k/t$ changes only a constant to the power $k$, leaving
+  the same factorial denominator $(k!)^{3-\alpha-\alpha_0}$.
+  It therefore also loses the factorial power $\alpha_0$ relative to
+  Chen's Theorem~1.2, so the loss is not specific to the second moment. Both the crude and homogeneous upper bounds are
+  consistent with the Jensen lower bound, being at larger time scales.
+  No identification with the Skorohod second moment is used: its exclusion
+  of self-pairings changes the combinatorics, already visible in the
+  $(0,2)$ and $(2,0)$ terms of Lemma~\ref{L:white-test}.
+\end{remark}
 
 \section{Targets}\label{S:targets}
 

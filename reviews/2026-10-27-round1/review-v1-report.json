@@ -1,0 +1,92 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "medium",
+  "source_coverage": [
+    ".review/required-sources.json lines 1-99 (read plan only; no read credit claimed)",
+    "candidate.tex lines 1-595 (complete; single read, no truncation marker)",
+    "worker-report.md lines 1-51 (complete)",
+    "root-source-check.md lines 1-35 (complete)",
+    "count-results.json lines 1-217 (complete)",
+    "chen-page-10.png (full image: Def 2.1, (2.13)-(2.17), Def 2.2)",
+    "chen-page-11.png (full image: Remark 2.3, Lemma 2.4, Lemma 2.5, (2.18))",
+    "chen-page-12.png (full image: (2.19)-(2.22), Wick formula, #Pi_n)",
+    "chen-page-13.png (full image: (2.23)-(2.25), d=3 eta-regularization G_eta)",
+    "chen-page-14.png (full image: two-step d=3 definition, Section 3, (3.1)-(3.5), two-chain integral with n1 or n2 = 0 allowed)",
+    "chen-page-15.png (full image: Theorem 3.1, (3.6), #Q0=#Q1, #Q2 even, factor 2 on Q1, start of proof)",
+    "chen-page-22.png (full image: Theorem 4.1, (4.1)-(4.4); (4.4) is a smoothing limit)",
+    "chen-page-23.png (full image: (4.5), chain-reversal substitution for m=n)",
+    "chen-page-33.png (full image: (4.14) Fourier removal of spatial multiplier, start of Section 5)",
+    "chen-page-34.png (full image: (5.1), (5.2), theta=n/t, N0 typo (t/n)^{2n}, N1 <= C claim)",
+    "chen-page-35.png (full image: N2 <= C t/n via Lemma A.1 with theta=n/t, (5.3) 'C independent of eps, n and t', (5.4))",
+    "chen-page-37.png (full image: (5.7), Remark 5.1 citing (2.13),(4.4), (5.8), Theorem 6.1)",
+    "chen-page-60.png (full image: (8.8), factorial power (n!)^{3-alpha}, Remark 8.1, Lemma A.1 (A.1)-(A.2))",
+    "chen-page-61.png (full image: rest of (A.2), (A.3) 'for large theta', proof of (A.1))"
+  ],
+  "checks": [
+    {
+      "claim": "C1: Product integrability and full mixed expansion (Proposition P:mixed), including zero chains, all pairings, chain reversal and the L2/nonnegative-series justification",
+      "verdict": "PASS",
+      "reason": "Lemma 2.5 (L^p for deterministic integrands) plus H\u00f6lder give L^2 convergence of the smoothed products. With common (eps,delta) these products are exactly the smoothed integrals of g_m\u2297g_n, so (2.18) and then (2.20)/(2.21) apply: odd total order gives zero, even total order gives the Wick sum over all of Pi_k, domestic pairings included. In the zero-order case X_0=1, and Pi_0 holds only the empty pairing, which gives 1. I checked the reversal index by index: with y'_j = x - x_{m-j+1} and s'_j = t - s_{m-j+1}, G(s_{l+1}-s_l, x_{l+1}-x_l) becomes G(s'_j - s'_{j-1}, y'_j - y'_{j-1}) with no sign error. The terminal factor G(t-s_m, x-x_m) becomes G(s'_1, y'_1), so each chain has its own root at (0,0). This matches the source's (3.6) convention on p.14 and the m=n computation on p.23. Covariances are even, and the induced label permutation is a bijection of Pi_k. Nonnegativity holds pointwise for the regularized integrands (G_eta, gamma_eps, gamma^0_delta all >= 0). E U_N^2 is a finite sum of nonnegative terms, increases in N, and converges to E u^2 because U_N -> u in L^2. The double series therefore converges and can be enumerated in any order. The counts in count-results.json agree with the enumeration I did by hand ((2k+1)P_k = (2k+1)!!, and the cross-pair splits for m=n=2,3,4 and m=2,n=6). Minor: the L^2 convergence is cited from source Section 5, whose estimate (5.4) the candidate itself flags; see findings.minor."
+    },
+    {
+      "claim": "C2: White-space low-order coefficients (Lemma L:white-test) and the uniformity counterexample",
+      "verdict": "PASS",
+      "reason": "For G(s,y)=\u00bd\u00b71{|y|<s}, \u222bG(s,y)G(r,y)dy = min(s,r)/2. Then J_{1,1} = 2\u222b_0^t ds\u222b_0^s (r/2)(s-r)^{-a} dr. The inner integral is s^{2-a}B(2,1-a) = s^{2-a}/((1-a)(2-a)), which gives c0\u00b7t^{3-a}. For (0,2), the delta covariance forces y2=y1, the first factor integrates to s1, G(s2-s1,0) = 1/2, and the result is c0\u00b7t^{3-a}/2. The order-2 total is c0 + c0/2 + c0/2 = 2c0. At a=1/2 this is c0 = 8/15 and a total of 16/15, matching count-results.json. Since 3-alpha0 > 2, E X_1^2 = c0\u00b7t^{3-alpha0} violates any bound C\u00b7t^2 that holds uniformly in t. The white case lies inside the source's own scope: p.13 names gamma=delta_0 in d=1, and (1.5) holds when alpha0<1."
+    },
+    {
+      "claim": "C3: The source really asserts uniformity, and its large-theta restriction is mishandled",
+      "verdict": "PASS",
+      "reason": "On p.35, (5.3) states that C is 'independent of eps, delta, n and t', and (5.4) is obtained by passing to the limit. On pp.34-35 the proof sets theta = n/t and invokes Lemma A.1, but (A.3) on p.61 is stated only 'for large theta'. When n=1 and t is large, theta = 1/t is small. The source's Remark 5.1 (p.37) cites (4.4), which on p.22 is a smoothing limit and not a bound. The candidate's reading is therefore accurate. It also scopes the problem correctly: an internal uniformity discrepancy, not a refutation of (5.8). Precision note in minor: the bound N1 <= C at theta=n/t (p.34) is also non-uniform as theta\u21920, although (A.1) itself is not a large-theta statement."
+    },
+    {
+      "claim": "C4: Corrected crude estimate (Lemma L:crude-corrected), choice of theta, and the infinite sum",
+      "verdict": "PASS",
+      "reason": "The exponential weights telescope to e^{-theta(s_last1+s_last2)} >= e^{-2 theta t}, which justifies extending to infinite simplices. For theta >= theta0: N0 = theta^{-2} (via (2.4), the mass of G(t,\u00b7) is t, confirmed by p.34). N1 is decreasing in theta by (A.1), so N1(theta) <= N1(theta0). N2 <= C0^{1/2}\u00b7theta^{-1} by (A.3). Theorem 3.1 with q0=q1 and q0+q2/2=n gives (2N0N1)^{q0}(N2^2)^{q2/2} <= C^n theta^{-2n}. Taking theta = theta0 + n/t gives e^{2 theta t} = e^{2 theta0 t}\u00b7e^{2n} and theta^{-2n} <= (t/n)^{2n}. Also P_n n^{-2n} <= (2n)^{2n}/(2^n n! n^{2n}) = 2^n/n!. Minkowski, followed by Cauchy-Schwarz with weights 2^{-n}, gives (sum z^n/sqrt(n!))^2 <= 2e^{2z^2}, hence E u^2 <= 2exp(2 theta0 t + 2Ct^2). All constants are independent of n and t. Theta stays at or above theta0, so the large-theta restriction is respected."
+    },
+    {
+      "claim": "C5: Finite-spectral-measure hypothesis of Theorem 3.1 and the generalized-kernel approximation (d=3, spatial white noise)",
+      "verdict": "PASS",
+      "reason": "Theorem 3.1 (p.14) requires finite mu_{j,k} and allows sets A_{j,k}. The spatially smoothed covariance gamma_eps has spectral measure e^{-eps|xi|^2}\u00b7mu, which is finite under homogeneity: mu ~ |xi|^{alpha-d}dxi with alpha>0, or Lebesgue measure when alpha=d=1. The truncation gamma^0_delta corresponds to A=[0,1/delta]. Under regularization, N0 is unchanged. N1 is dominated by (A.1) because the multiplier is <= 1 and A \u2282 R+. N2^2 is dominated by first using gamma^0_delta <= |\u00b7|^{-alpha0} pointwise on a nonnegative integrand, then using the (4.14) Fourier argument (p.33). For d=3, G_eta = p_eta * G is a nonnegative function (p.13) with Fourier multiplier <= 1 and the same mass t. The bounds are therefore uniform across the regularizations and pass to the limits defining the moments; no pointwise delta value is used. The treatment is prose-level, and the order of the two-step d=3 limit (eta first, then eps,delta) is not spelled out, but each step only transfers a uniform inequality."
+    },
+    {
+      "claim": "C6: Exact homogeneous norm scaling and partition cardinalities, with constants independent of orders and time",
+      "verdict": "PASS",
+      "reason": "Substituting lambda = theta\u00b7v and xi = theta\u00b7eta in (A.1), with mu of degree alpha, gives N1(theta) = N1(1)\u00b7theta^{alpha+alpha0-2}. Rescaling all variables by theta^{-1} in (A.2)/(3.5) gives the factors theta^{-2} (ds dt), theta^{alpha0}, theta^{alpha}, and theta^{-2} (G mass), so N2^2 = N2(1)^2\u00b7theta^{-beta}. Both 2N0N1 and N2^2 have degree -beta, where beta = 4-alpha-alpha0. Since q0=q1 and q0+q2/2=k, every partition supplied by Theorem 3.1 is bounded by K^k theta^{-beta k} with K >= max{2N1(1), N2(1)^2}. All norms are finite for every theta>0 by Lemma A.1(i),(ii), so the bound holds for all theta>0. The 2k+1 splits and the P_k pairings are counted correctly in B_K. K, a and b depend only on the covariance parameters."
+    },
+    {
+      "claim": "C7: Minimization, and both sides of the numerical-majorant growth, without confusing the majorant's lower bound with a lower bound on the moment",
+      "verdict": "PASS",
+      "reason": "inf_theta e^{2 theta t} theta^{-beta k} is attained at theta = beta k/(2t), with value e^{beta k}(2t/(beta k))^{beta k}. The estimates k! <= (2k-1)!! <= 2^k k!, (k/e)^k <= k! <= k^k, and 2k+1 <= 3^k give two-sided comparison with sum (c t^beta)^k/(k!)^q, where q = beta-1 > 1. Upper side: the l^q <= l^1 inequality gives sum z^k/(k!)^q <= e^{q z^{1/q}}. Lower side: at k = floor(z^{1/q}/2) a single summand is >= 2^{qk}. Hence log B_K is of order t^{beta/(beta-1)} on both sides. The candidate states explicitly (lines 457-458, Remark R:G0-verdict) that the lower bound concerns B_K and not E u^2. The actual moment is bounded only from above by B_K, and from below only by the Jensen bound (scale kappa)."
+    },
+    {
+      "claim": "C8: Strict exponent comparison, missing factorial power, calibration, and the precise scope of the no-go",
+      "verdict": "PASS",
+      "reason": "beta-1 = 3-alpha-alpha0 < 3-alpha, so rho = beta/(beta-1) > kappa = beta/(3-alpha). Since beta>2, 1 < rho < 2. The majorant coefficient is ~(k!)^{-(3-alpha-alpha0)}, while scale t^kappa needs (k!)^{-(3-alpha)}, consistent with the source's (8.8) on p.60. The missing factor is (k!)^{alpha0}, up to exponential factors in k. Applying the same estimate at p=1 (the m=0 special case) loses against Theorem 1.2, which supports the diagnosis. As alpha0 -> 0, rho -> (4-alpha)/(3-alpha) (a formal limit; see minor). The answer to the question 'does the argument establish an intermediate exponent?' is yes: an upper bound E u^2 <= B_K(t) <= exp(C t^rho) with kappa < rho < 2, which improves the crude t^2 scale under homogeneity. The answer to 'does it rule out every use of Theorem 3.1?' is no: the no-go is proved only for the common-theta uniform-per-pairing majorant B_K. Remark R:G0-verdict and the worker report both say this explicitly and leave open refined applications that retain temporal order or group pairings. Neither Goal is claimed."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "The proof of P:mixed takes U_N -> u in L^2 from source Theorem 1.1/Section 5. Section 5 obtains (5.1) from (5.4), whose uniformity the candidate itself disputes. The conclusion is still true: at fixed t, theta = n/t becomes large for n >= n0(t), and L:crude-corrected proves sum ||X_n||_2 < \u221e independently, with no circularity since it does not use P:mixed. It would be cleaner to cite L:crude-corrected, or to note why the source's fixed-t summability survives.",
+      "Remark R:source-uniformity attributes the defect to 'Lemma A.1's large-theta bounds'. In the source's p.34 step, 'N1 <= C < \u221e' at theta = n/t is also not uniform as theta -> 0: in the homogeneous case N1(theta) = N1(1)\u00b7theta^{alpha+alpha0-2} -> \u221e, since alpha+alpha0 < 2. (A.1) itself is valid for every theta>0, but it gives no uniform constant. Naming both N1 and N2 would make the diagnosis more precise.",
+      "The counterexample is not special to white noise. By homogeneity, E X_1(t)^2 = t^beta\u00b7E X_1(1)^2 with beta > 2 in every admissible case, so (5.4)'s uniformity fails throughout Hypothesis H:homog. The lemma could say so.",
+      "The abstract undersells the G0 content. P:envelope gives a genuine upper bound E u^2 <= exp(C t^rho) with kappa < rho < 2, and Remark R:source-uniformity records a source-internal discrepancy. The abstract mentions only the 'mixed-term expansion' and a diagnosis, and it reports the source's e^{Ct^2} bound without saying that the bound is recovered here by a corrected argument.",
+      "The summary of Theorem 3.1 in Section 2.2 omits its finite-spectral-measure and A_{j,k} hypotheses. They are handled only inside the proof of L:crude-corrected.",
+      "In P:envelope, the regularization step for mixed terms ('pass to the mixed L^1 limit') and the order of the two-step d=3 limit (eta first, then eps,delta) are referenced, not written out. The step is sound because it only transfers uniform inequalities, but it is prose-level.",
+      "The alpha0 \u2193 0 calibration is a formal limit outside 0 < alpha0 < 1. kappa has the same limit, so the calibration is necessary but does not distinguish rho from kappa.",
+      "The p=1 loss claim in R:G0-verdict ('same uniform bound would also lose (k!)^{alpha0}') is stated without a displayed derivation. It follows from the m=0 case of (E:homogeneous-envelope) with e^{theta t} in place of e^{2 theta t}; one sentence would close this.",
+      "Source typographical issues noted by the worker (p.34: ||G_l||^{(0)} printed as (t/n)^{2n} instead of (t/n)^2; p.15: ||G_2||^{\\{2\\}} in the n1=n2=1 base case) do not affect the candidate. The candidate does not rely on them."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "Imported results were not verified: source Theorem 3.1 (whose proof I read only in part on p.15), Lemma 2.5 and (2.18), Theorem 4.1, Theorem 1.1, Theorem 1.2 (first-moment two-sided bounds), and Lemma A.1. The review checks only that they are applied within their stated hypotheses.",
+    "Source pages for (1.5), (2.3)-(2.4), (2.9)-(2.11), Theorem 1.2/(1.10)-(1.13), (1.22), Remark 6.3 and p.42 are not in the packet. (2.4) was corroborated indirectly through its use on p.34. The pinpoints for Theorem 1.2, Conjecture (1.22) and Remark 6.3 outside G0 were not checked against images.",
+    "The claim that Hypothesis H:homog implies the source's (1.5) was checked by a standard spectral-integrability computation, not against the source text of (1.5).",
+    "The d=3 measure-valued kernel and white-noise regularizations were checked at the level of Fourier-multiplier domination. The two-step limits were not re-derived in full detail.",
+    "The no-go verdict was assessed only for the common-theta uniform-per-pairing majorant B_K. Whether chain-specific Laplace parameters or other refined uses of Theorem 3.1 could reach kappa was not investigated; the candidate explicitly leaves these open.",
+    "This is an AI review, not human verification, a Lean certificate, or a novelty/literature audit. count-results.json was read and spot-checked by hand; check_counts.py is not in the packet and was not run."
+  ]
+}

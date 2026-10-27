@@ -1,0 +1,99 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    ".review/required-sources.json lines 1-153 (read plan only; no read credit claimed)",
+    "candidate.tex lines 1-671 (complete, single read, no truncation marker)",
+    "worker-v2-report.md lines 1-28 (complete)",
+    "prior-review.json lines 1-93 (complete; used as history only)",
+    "count-results.json lines 1-217 (complete)",
+    "chen-page-2.png (full image: (1.1)-(1.4), start of Theorem 1.1)",
+    "chen-page-3.png (full image: (1.5), Theorem 1.1, (1.8) homogeneity, equivalence of (1.5) with alpha0+alpha<2, alpha<=d, alpha=d=1 case, Theorem 1.2/(1.9)-(1.10))",
+    "chen-page-4.png (full image: (1.11)-(1.14), prediction that the limit equals the upper bound)",
+    "chen-page-6.png (full image: (1.21) Laplace representation, (1.22) conjecture)",
+    "chen-page-7.png (full image: (2.1)-(2.6): Fourier transform of G, mass t, explicit G for d=1,2,3, scaling (2.6))",
+    "chen-page-8.png (full image: (2.7)-(2.10) smoothed noise, gamma_eps)",
+    "chen-page-9.png (full image: Delta_k construction, (2.11) cross-covariance, (2.12))",
+    "chen-page-10.png (full image: Def 2.1, (2.13)-(2.17), Def 2.2)",
+    "chen-page-11.png (full image: Remark 2.3, Lemma 2.4, Lemma 2.5, (2.18))",
+    "chen-page-12.png (full image: (2.19)-(2.22), #Pi_n)",
+    "chen-page-13.png (full image: (2.23)-(2.25), G_eta and the two-step d=3 definition)",
+    "chen-page-14.png (full image: end of the d=3 definition, Section 3, (3.1)-(3.5), two-chain integral with n1 or n2 zero allowed)",
+    "chen-page-15.png (full image: Theorem 3.1/(3.6), examples, start of proof)",
+    "chen-page-22.png (full image: Section 4, per-vertex parameters, (4.1)-(4.4), Theorem 4.1)",
+    "chen-page-23.png (full image: (4.5) and the chain-reversal permutation)",
+    "chen-page-30.png (full image: end of the Lemma 4.3 argument, Lemma 4.4, Remark 4.5)",
+    "chen-page-33.png (full image: (4.14) removal of the Fourier multiplier, start of Section 5)",
+    "chen-page-34.png (full image: (5.1), (5.2), theta=n/t, N1<=C via (i))",
+    "chen-page-35.png (full image: N2<=Ct/n via (ii) with theta=n/t, (5.3) 'C independent of eps, delta, n and t', (5.4))",
+    "chen-page-37.png (full image: (5.7), Remark 5.1 citing (2.13),(4.4), (5.8), Theorem 6.1)",
+    "chen-page-42.png (full image: end of the proof of Theorem 6.1, Remark 6.3, start of Section 7)",
+    "chen-page-60.png (full image: (8.8), Remark 8.1, Lemma A.1 (A.1)-(A.2))",
+    "chen-page-61.png (full image: rest of (A.2), (A.3) 'for large theta', proof of (A.1))"
+  ],
+  "checks": [
+    {
+      "claim": "C1: Colored-noise proof that each individual diagram J_{m,n,D}(t) has a finite nonnegative limit (two copies of each length-r chain, equal-color pairing subset, finite joint limits, L2 Cauchy criterion, exactly one surviving pairing, nonnegativity, zero chains, d=3 eta-first convention)",
+      "verdict": "PASS",
+      "reason": "Fix D in Pi_k and give each pair e its own independent copy W^e. Each copy is built as in Section 2.2, so by (2.11) Cov(W^e_{eps,delta}, W^e_{eps',delta'}) = gamma^0_{delta v delta'} gamma_{eps+eps'}, and different colors are uncorrelated. For one colored chain of length r, E[Y_{r,a}Y_{r,b}] is a Wick sum over pair partitions of the 2r vertices of the two copies in which only same-color pairs survive. A color whose pair crosses the two chains of D occurs once per copy and must be paired across copies. A domestic color occurs twice per copy and can be paired in 3 ways. The surviving set is a fixed finite subset of Pi_r that does not depend on (a,b). Each summand is exactly a Lemma 4.4 integrand (p.30): n=r, t1=t2=t, per-vertex factors gamma^0_{delta_j v delta_k} gamma_{eps_j+eps_k}. Getting there takes translation invariance (x to 0) and the p.23 reversal, which permutes the labels inside Pi_r. Lemma 4.4 states a joint limit as all 2r per-vertex parameters tend to 0, so the limit exists, is finite, and does not depend on the relative rates of a and b. Consequently E Y_a^2, E Y_b^2 and E Y_aY_b converge to the same number, and E|Y_a-Y_b|^2 tends to 0. That is the L2 Cauchy criterion, the same mechanism as the source's Lemma 2.4. An empty chain is the constant 1. Cauchy-Schwarz gives L1 convergence of the product of the two colored chains. In that product every color occurs exactly twice, so Wick leaves only D, and the regularized expectation equals the regularized J_{m,n,D} along per-vertex parameters. Common-parameter (2.25) limits are a special path. The uncolored regularized mixed moment is the finite sum of the same regularized diagrams, so its limit is the sum of the individual limits. This resolves the root's concern without inferring individual limits from the summed limit. The regularized integrands are nonnegative (G or G_eta >= 0, gamma_eps >= 0, gamma^0_delta >= 0), so J >= 0. The d=3 convention (eta-limit at fixed noise smoothing, then the noise limit) matches pp.13-14. Unwritten elementary steps are listed in minor."
+    },
+    {
+      "claim": "C2: Full mixed formula and independent fixed-t summability, with no circular use of P:mixed",
+      "verdict": "PASS",
+      "reason": "Lemma 2.5 (L^p convergence for deterministic integrands) and Hoelder give X_mX_n = S_{m+n}(g_m (x) g_n) as an L2 limit with common smoothing. Then (2.20)/(2.21) give zero at odd total order and the Wick sum over all of Pi_k, including domestic pairs, at even order. The m=n=0 case equals 1. I checked the reversal index by index: each terminal factor G(t-s_m, x-x_m) becomes the root factor G(s'_1, y'_1), and each chain gets its own root, which matches the source's (3.6) convention on p.14. Fixed-t summability comes from L:crude-corrected. Its proof uses only the diagonal regularized identity (4.5)/(4.3), Theorem 3.1 and the Theorem 4.1 limit; it never uses (E:mixed-moment). There is no circularity. Then sum ||X_n||_2 < infinity, U_N -> u in L2, E U_N^2 -> E u^2, and E U_N^2 is a finite sum of nonnegative mixed moments that increases in N. By monotone convergence the full double series converges to E u^2 in any enumeration, and grouping by total order gives (E:full-second). The counts in count-results.json agree with my hand enumeration ((2k+1)P_k = 3, 15, 105, 945; cross-pair splits 1/2 for (2,2), 9/6 for (3,3), 9/72/24 for (4,4))."
+    },
+    {
+      "claim": "C3: First-order counterexample and precise first-norm/second-norm source losses",
+      "verdict": "PASS",
+      "reason": "For G(s,y) = 1/2 1{|y|<s}, the integral of G(s,y)G(r,y) dy is min(s,r)/2. The symmetric [0,t]^2 integral gives integral_0^t ds integral_0^s r(s-r)^{-a} dr = t^{3-a}/((1-a)(2-a)(3-a)), which is c0 t^{3-alpha0}. For the (0,2) term, the regularized delta tends to evaluation at 0: the mass s1 times G(u,0) = 1/2 gives c0 t^{3-alpha0}/2, and (2,0) is the same. At alpha0=1/2 this gives 8/15, 4/15 and 16/15, matching count-results.json. Since 3-alpha0 > 2, this contradicts (5.4) with C uniform in t at n=1; (5.3) on p.35 explicitly says 'independent of eps, delta, n and t'. The case d=alpha=1 white noise is inside Theorem 1.2's scope (p.3). Remark 5.1 (p.37) cites (4.4), and on p.22 (4.4) is a smoothing limit. The first-norm loss is accurate: p.34 bounds N1 at theta = n/t by (i)/(A.1), which is finite for every theta, but under homogeneity N1(theta) = N1(1) theta^{alpha+alpha0-2} blows up as theta tends to 0. The second-norm loss is accurate: p.35 obtains C t/n = C theta^{-1}, which is the form of (A.3), stated only 'for large theta' on p.61, while for small theta N2^2 ~ theta^{-beta} is much larger than theta^{-2}. The remark correctly treats this as a source-internal uniformity discrepancy and not a refutation of (5.8)."
+    },
+    {
+      "claim": "C4: Corrected crude bound, together with the finite-spectral-measure and d=3 regularization required by Theorem 3.1",
+      "verdict": "PASS",
+      "reason": "Each chain is rooted at 0, so the weights telescope to e^{-theta(s_n+s_{2n})} >= e^{-2 theta t}. Extending to infinite simplices is valid because the integrand is nonnegative. For theta >= theta0: N0 = theta^{-2} by (2.4); N1 <= N1(theta0) because (A.1) is decreasing in theta; N2 <= C0 theta^{-1} by (A.3). Theorem 3.1 with q0=q1 and q0+q2/2=n gives C^n theta^{-2n} per pairing. Taking theta = theta0 + n/t gives e^{2 theta0 t} e^{2n} (t/n)^{2n}, and P_n n^{-2n} <= (2n)^{2n}/(2^n n! n^{2n}) = 2^n/n!. Minkowski and the weighted Cauchy-Schwarz inequality (sum z^n/sqrt(n!))^2 <= 2e^{2z^2} give E u^2 <= 2exp(2 theta0 t + 2Ct^2), with the n=0 term included. Theta never drops below theta0, so (A.3) is used within its range. Finite measures: the smoothed spectral measure is the Gaussian multiplier times mu, and the multiplier is at most C(1+|xi|^2)^{-(2-alpha0)/2}, which is mu-integrable by (1.5) (p.3). No radial density is used. Temporal truncation corresponds to A = [0, 1/(delta_j v delta_k)] in (3.2). N1 is dominated because its multiplier is <= 1; N2 is dominated by gamma^0_delta <= |.|^{-alpha0} pointwise and then (4.14). In d=3, G_eta = p_eta * G is a nonnegative function with the same mass and Fourier multiplier <= 1. The order eta first, then (eps, delta), transfers a uniform inequality through limits of second moments."
+    },
+    {
+      "claim": "C5: Homogeneous norm scaling and mixed-limit transfer for all declared dimensions and covariance types",
+      "verdict": "PASS",
+      "reason": "G(cs, c dy) = c G(s, dy) follows from (2.6) for d=1,2 and from the surface measure for d=3. gamma(cx) = c^{-alpha} gamma(x) gives mu(cB) = c^alpha mu(B) by uniqueness of the spectral measure; this includes the white case alpha=d=1 with Lebesgue mu and needs no density assumption. By (A.1) with lambda = theta v and xi = theta eta, N1(theta) = N1(1) theta^{alpha+alpha0-2}. Rescaling (3.5) gives N2^2 = N2(1)^2 theta^{-beta}, from theta^{-2} (ds dr), theta^{alpha0}, theta^alpha and theta^{-2} (Green masses). N1(1) and N2(1) are finite by Lemma A.1 at theta=1. Then 2N0N1 and N2^2 both have degree -beta, and K >= max{2N1(1), N2(1)^2} gives K^k theta^{-beta k} for every partition. The regularized mixed moments obey the bound uniformly because the regularized norms are at most the full ones. Passing to the limit uses L2 convergence of each factor (Theorem 4.1, with the d=3 eta-limit first), so the product converges in L1. This transfer uses only the summed mixed moment, which is legitimate for an upper bound. Empty chains use e^{theta t} <= e^{2 theta t}."
+    },
+    {
+      "claim": "C6: Optimized majorant, both asymptotic inequalities, and no lower-bound inference about the actual moment",
+      "verdict": "PASS",
+      "reason": "inf_theta e^{2 theta t} theta^{-beta k} is attained at theta = beta k/(2t), with value e^{beta k}(2t/(beta k))^{beta k}. The estimates k! <= (2k-1)!! <= 2^k k! (the second because binom(2k,k) <= 4^k), (k/e)^k <= k! <= k^k and 2k+1 <= 3^k give explicit a = K 2^beta beta^{-beta} and b = 6K e^beta 2^beta beta^{-beta} with sum (a t^beta)^k/(k!)^q <= B_K <= sum (b t^beta)^k/(k!)^q, where q = beta-1. Upper side: the l^q <= l^1 inequality gives e^{q z^{1/q}}. Lower side: at k = floor(z^{1/q}/2) a single term is >= 2^{qk}. Hence log B_K is of order t^{beta/(beta-1)}. The lower bound is explicitly attached to B_K, and the candidate never infers a lower bound on E u^2 at scale rho. E u^2 <= B_K uses nonnegativity of the mixed moments from P:mixed."
+    },
+    {
+      "claim": "C7: Strict rho/kappa/2 comparisons, single-chain explanation, and the formal alpha0 boundary calibration",
+      "verdict": "PASS",
+      "reason": "beta-1 = 3-alpha-alpha0 < 3-alpha gives rho > kappa. beta > 2 gives 1 < rho < 2. kappa lies in (1,2) because alpha0 < 1 and alpha-alpha0 < 2. Scale t^kappa needs the denominator (k!)^{3-alpha}, consistent with (8.8) on p.60, so the missing factor is (k!)^{alpha0} up to exponential factors. At p=1 the weight is e^{theta t}, the optimizer is theta = beta k/t, and the factorial power is the same, so the loss already occurs for a single chain and is not caused by the 2k+1 splits. As alpha0 tends to 0, both rho and kappa tend to (4-alpha)/(3-alpha). The candidate calls this a formal, necessary calibration that does not separate the exponents and claims no endpoint theorem or uniformity in alpha0. That is correct."
+    },
+    {
+      "claim": "C8: Overall scoped no-go, abstract and all changed claims; neither principal goal is established",
+      "verdict": "PASS",
+      "reason": "The abstract states three things: an upper bound exp(C t^rho) with kappa < rho < 2, a source uniformity issue with a corrected recovery of the quadratic bound, and that the uniform pairing estimate cannot reach the target scale. All three are supported. The no-go is confined to Theorem 3.1 used through the common-theta, per-pairing, per-order majorant B_K, which already optimizes theta separately at each order. Refined uses, such as keeping temporal order, grouping pairings, or chain-specific weights, are explicitly left open, and the conjecture is not disputed. Goals G:upper and G:sharp are stated as open targets. The changes listed in worker-v2-report.md (colored-noise proof, d=3 limit order, independent summability, both uniformity losses, Theorem 3.1 hypotheses with Gaussian domination and no radial density, expanded abstract, single-chain loss, recurrence P_k = (2k-1)P_{k-1}) are present and correct. Pinpoints checked against the images, (1.5), p.3, (2.4), (2.11), (2.24), pp.13-14, Theorem 3.1, Theorem 4.1, Lemma 4.4, (4.14), (5.3)-(5.4), Remark 5.1, Remark 6.3, (8.8) and (A.1)-(A.3), are accurate."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "C1 wording: the sentence that calls the two-copy covariance 'a subset of the equal-length diagrams in Lemma 4.4' skips two steps. Lemma 4.4 is printed at x=0 with chains rooted at 0, so translation invariance (x to 0) and the p.23 reversal, which permutes labels inside Pi_r, are needed before the identification. The reversal is mentioned later for J, but not at this point.",
+      "d=3 colored chains: at fixed noise smoothing, the existence of the G_eta limit for the colored chain integrals is asserted by appeal to the source convention. The source proves its own Theorem 4.1 only for the uncolored noise. The step is elementary, because at fixed smoothing the covariances are bounded and continuous and G_eta tends weakly to G with mass s, but it is not written. One sentence would close it.",
+      "It would help to say explicitly that Lemma 4.4 is a joint limit over all 2n per-vertex parameters. That is precisely what makes the mixed term E[Y_{r,a}Y_{r,b}], with different parameters on the two copies, tend to the same limit as the diagonal terms.",
+      "Lemma L:white-test evaluates the delta covariance pointwise ('sets the two spatial vertices equal', 'G at zero is 1/2'), while elsewhere the text forbids pointwise delta values. The regularized limit is immediate (p_eps concentrates at 0, and G(u,.) is continuous at 0 for u>0, with dominated convergence), but a sentence would make the convention consistent.",
+      "Optional: by homogeneity E X_1(t)^2 = t^beta E X_1(1)^2 with beta > 2 in every admissible case. The uniformity failure of (5.4) is therefore not specific to white noise, and the remark could say so.",
+      "Section 2.2 says Theorem 3.1 is used in the source 'only for Stratonovich integrability (Section 4) and ... in Laplace variables'. Section 5's use (p.34) falls under the Laplace-variable clause, but naming Section 5 explicitly would be clearer.",
+      "Route item G0 still says 'Reproduce Theorem T:crude from (2.13), (4.4)', although Remark R:source-uniformity shows the correct pinpoint is (5.4). This is harmless in a plan, but it could be updated."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "Imported source results were audited only for their printed hypotheses and how the candidate applies them, not re-proved: Lemma 2.4, Lemma 2.5/(2.18), (2.20)-(2.21), Theorem 3.1, Theorem 4.1, Lemma 4.4, Theorem 1.1/Section 5 identification of u, Theorem 1.2, and Lemma A.1.",
+    "The colored-noise argument depends on Lemma 4.4 being a genuine joint multi-parameter limit, as printed on p.30. I did not verify the source's proof of Lemma 4.4.",
+    "The d=3 eta-limit for colored chains at fixed noise smoothing, and the white-noise regularized limits in L:white-test, were checked by a sketch argument, not written out in full.",
+    "No numerical or Lean check was run. count-results.json was read and its entries checked by hand; the generating script is not in the packet.",
+    "This is an AI review of the scoped Gate G0 section, not human verification, a novelty audit, or clearance of the whole notes for circulation. prior-review.json served as historical context only. All verdicts here come from an independent reading of candidate.tex and the 23 source page images.",
+    "Constants such as theta0, C0, K, a, b, c and C were checked to be independent of order and time. Their numerical values were not optimized or tracked."
+  ]
+}
