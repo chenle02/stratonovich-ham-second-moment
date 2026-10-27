@@ -83,7 +83,7 @@ notes remain unreviewed and are not added to this accepted list.
 | 0 | 2026-10-26 | Setup: repo, notes scaffold (5 pp, clean build), source manifest, wiki project page | see git log |
 | 1 | 2026-10-27 | G0 complete: mixed expansion, corrected crude bound, intermediate rho upper bound and scoped no-go; Opus PASS_WITH_NOTES/high | 4ff2bca60e666482480596cc1e53b9be06750ea7 |
 | 2 | 2026-10-27 | G1 complete: all fifteen white order-four terms, exact static11/540, Riesz coefficients/representation; Opus PASS_WITH_NOTES/high | 8358d58c40591922a971790827f10ebe576932e0 |
-| 3 | 2026-10-27 | Reviewed partial G:upper: 0<alpha<=1 in d1,2,3, explicit constant; Opus PASS_WITH_NOTES/high; stop point 5, full goal still open | ROUND3_ARTICLE_SHA |
+| 3 | 2026-10-27 | Reviewed partial G:upper: 0<alpha<=1 in d1,2,3, explicit constant; Opus PASS_WITH_NOTES/high; stop point 5, full goal still open | 53e2817eafd9ed4de30f3acda6427629b61c71e0 |
 
 ## Round 1 — Gate G0 (2026-10-27)
 
@@ -563,4 +563,20 @@ The full objective is preserved, not marked achieved.
 Round3 bounded-proof completeness:8/10; instantiation:1.0 in the stated
 regime; advance_delta:0.7 toward the full G:upper target (qualitative partial
 coverage, not a completion fraction). Worker status DONE_WITH_CONCERNS.
-Article checkpoint: ROUND3_ARTICLE_SHA. Wiki checkpoint: ROUND3_WIKI_SHA.
+Article checkpoint: 53e2817eafd9ed4de30f3acda6427629b61c71e0. Wiki checkpoint: a1aab66454bfefa4c5823684b9a9635fcc152539.
+
+### Round 3 operational close
+
+The wiki project page and log were updated with the exact accepted scope and
+Article checkpoint. Targeted project lint and relation/contract validation
+pass. Index and dashboard generators ran; unrelated machine-dependent idle
+churn was discarded, with no semantic project/DAG propagation delta to commit.
+The full tracked push gate passed on the final wiki commit. An unrelated
+upstream move was incorporated before the gate; range-diff confirmed the
+project patch unchanged. The final origin race check passed and publication
+completed. Native review evidence, failed attempts, source images, author
+snapshots and status-promotion provenance are retained byte-for-byte.
+
+No additional proof work, companion creation, messages or public paper release
+was undertaken after the decision-point-5 checkpoint. Formal verification and
+cold-reader/circulation clearance remain explicitly outstanding.
