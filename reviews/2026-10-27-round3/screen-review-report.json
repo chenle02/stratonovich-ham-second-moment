@@ -1,0 +1,100 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    ".review/required-sources.json lines 1-26 (read plan only; no read credit claimed)",
+    "route-screen.md lines 1-154 (complete; primary target)",
+    "repair.md lines 1-36 (complete)",
+    "prior-screen-report.json lines 1-87 (complete)",
+    "white-coefficient-probe.md lines 1-67 (complete)",
+    "white-coefficient-probe.py lines 1-179 (complete)",
+    "white-coefficient-probe.json lines 1-910 (complete)",
+    "G1-review.json lines 1-81 (complete)",
+    "established-notes.tex lines 1-1036 (complete)"
+  ],
+  "checks": [
+    {
+      "claim": "R1 (prior required repair, 3a): every static-endpoint constant for (MC) now has correct parameter quantifiers",
+      "verdict": "PASS",
+      "reason": "Order one: A_1/a_1 = (c0+c0)/(c0/2) = 4, so C(a0) >= 4 is required at every fixed a0 in (0,1). Order four: A_2/a_2 = (352/17280)/(11/17280) = 32. The text now limits C >= sqrt(32) to two cases: the static endpoint, or a single C that works uniformly as a0 decreases to 0. It states explicitly that this does not bind a separately chosen a0-dependent C at an arbitrary fixed positive a0. For C=4: G1's L:static-four gives A_2(a0) -> 11/540 and a_2(a0) -> 11/17280 > 0, so the ratio tends to 32 > 16. Hence C=4 fails only for all sufficiently small positive a0, and the text says so ('without asserting this for every positive a0'). The C=8 passes (4 <= 8 and 32 <= 64) are labelled order-one and static respectively, and strictness is said to persist only near the endpoint. The Riesz order-one constraint C >= 3b_1+2 is a genuine fixed-parameter constraint at alpha=a0=1/2 and now correctly reads 'at least'. Every quantifier in 3a is correct."
+    },
+    {
+      "claim": "R2 (prior required repair, 3b): the D_n/a_n static constants have the parallel quantifiers",
+      "verdict": "PASS",
+      "reason": "D_1/a_1 = c0/(c0/2) = 2 at every fixed a0, so C(a0) >= 2. D_2/a_2 = (187/17280)/(11/17280) = 17 is labelled the static endpoint value. C >= sqrt(17) is confined to a0=0 or to a constant uniform as a0 decreases to 0, with the fixed-positive-a0 case explicitly excluded. C=2 fails at n=2 only for sufficiently small positive a0, since the limit is 17 > 4. The text adds 'No claim about every other fixed a0 follows' and 'A sufficiently large parameter-dependent C remains possible.' This is correct and matches the prior repair requirement."
+    },
+    {
+      "claim": "R3 (prior required repair, probe memo): white-coefficient-probe.md interpretation carries the same quantifiers",
+      "verdict": "PASS",
+      "reason": "Line 63 limits sqrt(32) and sqrt(17) to the static endpoint or to constants uniform as a0 decreases to 0. It denies them at an arbitrary fixed positive a0. It gives C=4 (MC) and C=2 (DT) failure only for sufficiently small positive a0. It keeps the exact order-one bounds C(a0) >= 4 and >= 2 at every fixed a0. It also states that the numerical grid gives no improved rigorous necessary constant. This is consistent with the probe data: at a0=0.9, A2/a2 is about 21.07 and D2/a2 about 10.62, below 32 and 17, so the old unqualified claim would have been contradicted, as the prior reviewer noted. No other static-endpoint constant claim remains in route-screen.md or the probe memo. Screen 2's white order-four comparison (71/2160 vs 44/2160) is explicitly labelled 'static' and makes only a non-falsification statement."
+    },
+    {
+      "claim": "C1 (incl. new general-k approximate-identity paragraph): homogeneity, scaling, the exact adjacent one-chain diagram and its delta convention",
+      "verdict": "PASS",
+      "reason": "Homogeneity and lambda-scaling are unchanged and correct. Dirichlet check: the integral over sum h < t of the product of h_odd^1 h_even^{-a0}, times 2^{-k}, equals [Gamma(1-a0)/2]^k t^{(3-a0)k}/Gamma(1+(3-a0)k). At k=1 this is c0/2; at k=2, a0=0 it is 1/2880. The new paragraph is substantively correct. Write u_j = y_2j - y_2j-1, and let Psi(u) be the integral over the k free odd coordinates. At u=0 the even indicators |u_j| < h_2j equal one near zero because h_2j > 0. The odd indicators converge pointwise off the hyperplanes |y_2j-1 - y_2j-3| = h_2j-1 (and |y_1| = h_1), a Lebesgue-null set. Bounded convergence on a bounded region then gives continuity of Psi at 0, and convolution with mass-one Gaussians yields Psi(0). Uniform bound: the Green indicators force all positions into [-t,t] at every smoothing level. Each smoothed pair integrates to at most 2t on [-t,t]^2, giving (2t)^k * 2^{-2k} = t^k/2^k. Domination: the times-cube integral of the product of k disjoint-pair factors |s-r|^{-a0} equals (2t^{2-a0}/((1-a0)(2-a0)))^k < infinity, and the increment-to-time map is unimodular. Dominated convergence is valid for each fixed k. The wording 'free paired positions converge to the diagonal restriction' is informal (see minor findings)."
+    },
+    {
+      "claim": "C2: Stirling obstruction to a uniform per-diagram (k!)^{-3} bound, narrowly scoped",
+      "verdict": "PASS",
+      "reason": "log Gamma(1+bk) = bk log k + O(k) with b = 3-a0, so log[(k!)^3 J_adj(1)] = a0 k log k + O(k), which eventually exceeds k log C for every fixed C and fixed a0 > 0. The verdict is properly narrow. It notes that the witness's own denominator (k!)^{3-a0} beats (k!)^2, and it asserts no grouped-estimate no-go."
+    },
+    {
+      "claim": "C3: Riesz alpha=a0=1/2 Jensen countertest and scope of the unit-prefactor amplification failure",
+      "verdict": "PASS",
+      "reason": "E|U-V| = s/2 + r^2/(6s) <= 2s/3 for r <= s. Convexity gives the kernel bound >= (3/2)^alpha s^{1-alpha} r. Then 2 * int_0^1 ds int_0^s (s-r)^{-a0} s^{1-alpha} r dr = 2/[(1-a0)(2-a0)(4-alpha-a0)]. At 1/2,1/2 the bound is (8/9) sqrt(3/2), about 1.089, which exceeds 2/3 = 2a_1; G1's E X_2 formula gives a_1 = 1/(0.5*1*2*3) = 1/3. White static check: 8a_2 + 4a_1^2 = 11/2160 + 60/2160 = 71/2160 and A_2 = 44/2160, a difference of 1/80. The small-time remainder argument O(t^{2beta}) holds for convergent nonnegative series. The exclusions are correctly scoped."
+    },
+    {
+      "claim": "C4: a0 -> 1 Riesz obstruction and all parameter/prefactor quantifiers",
+      "verdict": "PASS",
+      "reason": "H_alpha(0) = 2^{3-alpha}/(2(3-alpha)) = 2^{2-alpha}/(3-alpha). The approximate identity eps * int_0^1 v^{-1+eps} H(v) dv -> H(0) gives (1-a0) b_1 -> c_alpha 2^{2-alpha}/[(1-alpha)(2-alpha)(3-alpha)]. From E X_2, a_1 -> c_alpha/[(1-alpha)^2(2-alpha)(3-alpha)]. Hence (1-a0) A_1/a_1 -> 2^{2-alpha}(1-alpha) > 0. So C = 2^{4-alpha}, which is independent of a0, fails for a0 near 1 at fixed 0 < alpha < 1. The result is correctly restricted to Riesz, asserts no numerical threshold, and does not refute an (alpha,a0)-dependent C. The static-endpoint quantifier defect that caused the v1 C4 FAIL is resolved (R1-R3)."
+    },
+    {
+      "claim": "C5 (incl. new explicit coefficient optimization): conditional sufficiency of (MC)/(DT) via the imported first-moment theorem; both remain open",
+      "verdict": "PASS",
+      "reason": "(MC) with A_0 = a_0 = 1 gives E u^2(t) <= E u(C^{1/beta} t), so limsup t^{-kappa} log E u^2 <= C^{1/(3-alpha)} L*. New optimization: Theorem 1.2 gives, for any L > L* (see minor findings), a T with E u(t) <= exp(L t^kappa) for t >= T. Nonnegativity gives a_n t^{beta n} <= E u(t). With t = (qn/L)^{1/kappa}, L t^kappa = qn, and t^{beta n} = (qn/L)^{qn} because beta/kappa = 3-alpha = q. Hence a_n <= e^{qn}(L/(qn))^{qn} = [(eL/q)^q]^n n^{-qn} <= B^n/(n!)^q, using n! <= n^n. This holds for n large enough that t >= T, and the finitely many earlier finite coefficients are absorbed into B. No Section-8 import is needed. (DT) then gives ||X_n||_2 <= (CB)^{n/2} t^{beta n/2}/(n!)^{q/2}. The l^r-vs-l^1 inequality with r = q/2 >= 1 gives exp(r z^{1/r}) with z^{1/r} proportional to t^kappa. Minkowski is legitimate because u = sum X_n in L^2 (G0). Both comparisons are explicitly unproved."
+    },
+    {
+      "claim": "C6: pointwise concatenation counterexample on a positive-measure set",
+      "verdict": "PASS",
+      "reason": "The text is unchanged and correct. Chain 1 has times (1/4,3/4) at x = 1/5; chain 2 has times (1/2,7/8) at y = -2/5. All four Green factors are positive. The chronological jump covers distance 3/5 > 1/4, so the single-chain factor vanishes. The inequalities are strict, so the obstruction holds on an open set. The conclusion is limited to pointwise and constant-multiplier mechanisms."
+    },
+    {
+      "claim": "C7: geometry-erasing temporal symmetrization (Screen 4) with clarified time power",
+      "verdict": "PASS",
+      "reason": "The spatial factor is <= t^k/2^k. The symmetric temporal sum over a split simplex is 1/(m!n!) times the cube integral. Using sum_m 1/(m!(2k-m)!) = 4^k/(2k)!, the pairing count (2k)!/(2^k k!) and the per-pair value 2t^{2-a0}/((1-a0)(2-a0)), the product is [2/((1-a0)(2-a0))]^k t^{(3-a0)k}/k!. This sums to exp(C t^{3-a0}). Here 3-a0 is now explicitly called the exponential time power, with factorial denominator k!. Since 3-a0 > 2 > rho > kappa, it is worse than both G0 and the target. It is correctly labelled a majorant, not a lower bound."
+    },
+    {
+      "claim": "C8: probe normalization, event logic, error handling, and no scientific change to raw code/data",
+      "verdict": "PASS",
+      "reason": "Normalization: Beta(1-a,2) times a uniform lower endpoint times a fair orientation gives |s-r|^{-a}/Z with Z = 2/((1-a)(2-a)). Combined with the 1/4 spatial density and the 1/16 Green factor this gives J = (Z^2/4) P(event). event() tests the original chain order without sorting, and same-colour gaps are signed directly. Metrics a2 = sum04, A2 = 2sum04 + 2sum13 + sum22 and D2 = sum22 match (E:total-four). The ratio delta method uses within-draw covariance. Every number in probe.md agrees with the JSON: the five A2/a2 and D2/a2 estimates and SEs, minimum counts 1925/1474/931/314/52, collapses 0/0/0/815/204526, minimum gap 6.48e-68, max static |z| 2.58 at 22-A, control max 2.36 SE at a=.75, and static intervals containing 32 and 17. Line counts and quoted statistics match the prior report's coverage and citations, so I detect no scientific change. The changed probe.md prose is interpretation and provenance only. Byte hashes were not recomputed (see limitations)."
+    },
+    {
+      "claim": "C9: overall scope, claim boundary and next obligation",
+      "verdict": "PASS",
+      "reason": "The screen remains labelled unreviewed reconnaissance and claims no G:upper, G:sharp or G2 completion. MC/DT stay open, the held pure-cross/[held back] component and the separate d1upper candidate are excluded, and the next obligation (an integrated rearrangement/coupling at exponential cost in k with finite horizons) is precise. With the quantifier repair, no remaining statement overstates a necessary constant. repair.md accurately describes the v2 changes against v1 and the prior report, and does not ask for the v1 verdict to be upgraded."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Screen 1's new paragraph says 'the free paired positions converge to the diagonal restriction'. The precise mechanism is continuity at u=0 of the reduced spatial function Psi(u) (the integral over the k free coordinates), obtained by bounded convergence off the null hyperplanes, followed by the approximate identity. The substance is present, but one sentence naming Psi would make it self-contained, matching the G1-review minor note on P:white-four.",
+      "Screen 3b 'Choose L>0 and T such that E u <= exp(L t^kappa) for t>=T' should say that L is any constant strictly greater than L* (e.g. L*+1), since Theorem 1.2 gives only a limsup bound. The existence claim is correct as written.",
+      "'Fixed-order continuity from G1' really refers to the dominated-convergence limit as a0 decreases to 0, uniform on [0, abar], in L:static-four. That argument indeed gives continuity on [0, abar], so the usage is correct, but citing L:static-four explicitly would help.",
+      "Screen 2's white order-four non-falsification (difference 1/80) is a static-endpoint fact. By continuity it persists for small a0, but it has not been checked at an arbitrary fixed positive a0. The text says 'static white orders', so this is not a quantifier error; an explicit note would parallel 3a/3b.",
+      "probe.md line 61 calls C=8 'the proposed white-space constant' for the DT test D2 <= 64 a2 as well. The sharp-constant motivation attaches to (MC), and (MC) with C=8 implies (DT) with C=8 because D_n <= A_n. The wording is harmless but slightly conflates the two routes.",
+      "The Riesz diagnostic 3b_1+2, approximately 7.141593 (b_1 approximately 1.713864), still rests on the G1 floating value, which is correctly marked diagnostic. The exact necessary constraint C >= 3b_1+2 is stated separately."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is an AI review of a bounded route-screen and its repair. It is not human verification, a novelty audit, Lean certification, circulation clearance, or a proof of G:upper/G:sharp.",
+    "G0/G1 in established-notes.tex, the G1 review and the author-version Chen Theorem 1.2 were taken as imported accepted inputs, as the contract requires; they were not re-audited. No source PDF pinpoint was checked.",
+    "All algebra was checked by hand: ratios 4, 2, 32 and 17; 71/2160 vs 44/2160; the Dirichlet constant; Stirling asymptotics; the Jensen bound; the a0 -> 1 limits; the symmetrization count; the coefficient optimization; and the new approximate-identity argument. Nothing was executed.",
+    "The SHA-256 hashes in repair.md were not recomputed, since execution was disallowed. 'Raw probe code/data unchanged' was assessed only by internal consistency: probe.md vs probe.py vs probe.json, and the line counts and statistics quoted in the prior report. Byte identity is therefore unverified.",
+    "work/mean-comparison-attempt.md, cited in repair.md as inspected and unchanged, is not in the packet. Its contents and the claim that it needs no edit were not checked.",
+    "The held pure-cross/[held back] component, the separate d1upper candidate and the Skorohod problem are excluded by contract and were not examined.",
+    "Probe statistics remain floating, pointwise and uncertified (PRNG and cross-colour double-precision arithmetic), as the probe itself states."
+  ]
+}

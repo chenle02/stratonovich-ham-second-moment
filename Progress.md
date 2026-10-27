@@ -6,11 +6,11 @@
 
 ## Current state
 
-- **Phase:** Round 2 = Gate G1 complete (2026-10-27), after Le authorized continuation. Main targets remain open; G2 preparatory screens are active and companion creation awaits decision point 4.
+- **Phase:** Round 3 reviewed partial G:upper result: target scale for 0<alpha<=1 in d=1,2,3. STOP new proof work at decision point 5 after operational close.
 - **Proved in this project:** P:Jensen (§2); reviewed G0 P:mixed, L:white-test,
-  L:crude-corrected and P:envelope (§3); reviewed G1 P:white-four, L:static-four and P:riesz-small (§4). Intermediate upper exponent rho>kappa; principal goals open.
-- **Open targets:** Goal G:upper, Goal G:sharp (see PROJECT-GOAL.md).
-- **Blocking human decisions:** decision point 1 passed by Le's explicit reactivation/continuation. Decision point 4 still applies before companion creation; registry/reuse reconnaissance only until that proposal is ready.
+  L:crude-corrected and P:envelope (§3); G1 finite coefficients (§4); reviewed G2 target-scale bounds P:d1-upper/P:low-alpha-upper for alpha<=1 (§5). Full goal and formal verification remain incomplete.
+- **Open targets:** remaining G:upper range 1<alpha<2-alpha0 in d=2,3; G:sharp; requested private Lean verification (not yet created).
+- **Blocking human decisions:** decision point 5 after this reviewed upper-bound checkpoint; decision point 4 before private companion creation. Point 1 was passed by Le's continuation instruction.
 - **Worker:** Codex agent #30 (<MACHINE>, `n30-stratonovich-ham-second`), handed over
   2026-10-26; workflow paper-dev + lean-pkg (Lean track: `lean-progress/PROGRESS.md`).
 
@@ -57,6 +57,25 @@ then the round-close protocol (`paper-dev-round-close-protocol`).
   white-noise test grows as t^(3-alpha0), not O(t²). Restricting the Laplace
   parameter to theta>=theta0 recovers the large-time exponential conclusion.
 
+### Additional reviewed screening boundaries (Round 3)
+
+- A uniform stronger bound on every white diagram with denominator (k!)³
+  is false at any fixed positive alpha0; the adjacent diagram is the exact
+  witness. This does not forbid the successful bound on the SUM of diagrams.
+- The unit-prefactor all-time comparison E u² <= (E u_sqrt2)² fails in an
+  interior Riesz case. No eventual-time or prefactored comparison is refuted.
+- C=2^(4-alpha) cannot bound EVERY coefficient uniformly across alpha0 near1
+  for fixed Riesz alpha<1. This does not refute the sharp asymptotic constant.
+- Chronological pointwise chain concatenation has a positive-measure support
+  obstruction; an integrated comparison is a separate question.
+- Erasing all spatial geometry before temporal symmetrization gives only a
+  much weaker numerical upper majorant. Retaining its k-power is essential.
+
+These scopes are bound to the accepted screen report. The repaired static
+constants constrain only the endpoint or uniformity near it, not arbitrary
+fixed positive alpha0. The subsequent exploratory time-slice/trace/folding
+notes remain unreviewed and are not added to this accepted list.
+
 ## Round log
 
 | Round | Date | Outcome | Commit |
@@ -64,6 +83,7 @@ then the round-close protocol (`paper-dev-round-close-protocol`).
 | 0 | 2026-10-26 | Setup: repo, notes scaffold (5 pp, clean build), source manifest, wiki project page | see git log |
 | 1 | 2026-10-27 | G0 complete: mixed expansion, corrected crude bound, intermediate rho upper bound and scoped no-go; Opus PASS_WITH_NOTES/high | 4ff2bca60e666482480596cc1e53b9be06750ea7 |
 | 2 | 2026-10-27 | G1 complete: all fifteen white order-four terms, exact static11/540, Riesz coefficients/representation; Opus PASS_WITH_NOTES/high | 8358d58c40591922a971790827f10ebe576932e0 |
+| 3 | 2026-10-27 | Reviewed partial G:upper: 0<alpha<=1 in d1,2,3, explicit constant; Opus PASS_WITH_NOTES/high; stop point 5, full goal still open | ROUND3_ARTICLE_SHA |
 
 ## Round 1 — Gate G0 (2026-10-27)
 
@@ -234,10 +254,10 @@ clearance. No Skorohod result was developed and no Lean package was created.
 
 | Layer | Runs | Status | Scope |
 |---|---:|---|---|
-| Root checks / instantiation | 2 candidates | PASS | Build, finite controls, source/application checks; not independent review |
+| Root checks / instantiation | Per-round records | PASS at stated scope | Build, finite controls, source/application and exact promotion bindings; not independent scientific review |
 | Worker honesty | 2 | Recorded | Exact concern and import boundaries |
 | Fresh replay | 0 | Not due at Round 1 | Every-third-round cadence |
-| Opus skeptic | 3 scientific attempts | Final PASS_WITH_NOTES/high, accepted | V1 medium below threshold; original v2 format rejected; recovery accepted; format-only quota attempt is not a review |
+| Opus skeptic | See per-round logs | Latest upper PASS_WITH_NOTES/high, accepted | Original failures/below-threshold reports retained; format-only continuations are not new scientific votes |
 | Final cold reader | 0 | Not run; required before circulation | No whole-paper clearance claimed |
 | Lean | 0 | L0 unchanged | No formal-verification claim |
 
@@ -379,3 +399,168 @@ index/dashboard generators ran, with unrelated idle-time churn discarded.
 No project-status/DAG change required a separate generated propagation commit.
 The exact wiki commit passed the full pre-push gate and the final origin race
 check before publication. G1 is complete; G2 remains reconnaissance only.
+
+## Round 3 / G2 — proof candidate and review state (2026-10-27)
+
+This is concrete progress toward G:upper, not a completed full goal.
+The root found a new mechanism: remove spatial increments in descending
+vertex order, retain a common k^(-(2-alpha)k) spatial bound, then SUM all
+temporal pairings before applying the ordered-simplex symmetry factor.
+Two independent GPT audits found no defect in the d1 Riesz/white argument.
+The candidate produces denominator (k!)^(3-alpha), hence the target kappa.
+It does not use a conjectured mean comparison or the failed G0 norm majorant.
+
+### Screen review and repair
+
+[held back: collaborators' unpublished work]
+
+### Main upper review v1
+
+Frozen d1 TeX SHA-256:
+`94e284361c0e907b8244217df806908e3492bce87654aff336f4ce9347542b70`.
+Native Opus returned PASS_WITH_NOTES/medium: all ten checks PASS, no fatal,
+major or required-repair findings. The configured high-confidence gate was
+NOT met, and no proof is promoted on that report. Source (2.9)/(2.11) was
+missing from its packet; the actual covariance and convergence inputs were
+partly corroborated by the supplied pages.
+
+### Substantive successor underway
+
+A source-bound independent audit verifies a broader spatial convolution
+bound for every d=1,2,3 and 0<alpha<1 under the existing nonnegative homogeneous
+covariance hypotheses. If V=mu(B1), the exact layer-cake calculation gives
+integral min(h,1/|xi|) mu(dxi)=V h^(1-alpha)/(1-alpha). The wave Fourier
+multiplier and Gaussian regularizations yield a common convolution bound,
+without an isotropy assumption. Vector-increment removal, temporal symmetry
+and scalar summation then have the same proposed form. The d3 eta-first
+limit order must remain explicit. This extension is UNREVIEWED and is being
+written as a genuine v2 addition, with complete relevant primary-source pages.
+It is not an unchanged-candidate confidence retry. The d1 white endpoint
+remains a separate direct spatial estimate; alpha>=1 in d2/d3 stays open.
+
+Do not mark G:upper/G:sharp complete. No private companion exists, no Lean
+proof is claimed, and no approval answer to decision point 4 has arrived.
+The user asked about prospects and dimensions: responses distinguished the
+tractable upper-scale candidate from the harder sharp-constant problem, and
+Chen's d1/2/3 source results from our then-frozen d1 candidate.
+
+### Accepted G2 upper bound and precise scope
+
+**Accepted mathematical result:** under the original nonnegative homogeneous
+covariance assumptions, for d=1,2,3 and 0<alpha<=1,
+
+  E u²(t,x) <= exp(C2 t^kappa),  kappa=(4-alpha-alpha0)/(3-alpha).
+
+For V=mu(B1)>0, q=3-alpha and Z=2/[(1-alpha0)(2-alpha0)], take
+C2=q(2 Z K)^(1/q), where
+
+- K=V*2^(2-alpha)*(1-alpha)^(-alpha)/(2-alpha)^(2-alpha), if alpha<1;
+- K=pi*V, if alpha=1.
+
+V=0 is the trivial noise-free case. Direct d1 Riesz constants are sharper;
+white d1 gives K=c_delta. Degree-one covariance in d2/d3 is NOT full spatial
+white noise. This covers the full stated d1 range, but not the rougher
+1<alpha<2-alpha0 range in dimensions two and three. The sharp variational
+constant, the exact limit, novelty, and formal verification are not claimed.
+
+The proof's decisive step is a common spatial bound retaining
+k^(-(2-alpha)k), obtained by descending endpoint elimination and AM–GM.
+Only THEN is the temporal Wick SUM symmetrized. The resulting coefficient
+denominator is (k!)^(3-alpha). This is different from the failed uniform
+whole-diagram estimate; that earlier obstruction remains valid. At alpha=1,
+the Gaussian one-dimensional Fourier inversion must be retained: replacing
+it by the divergent absolute spectral envelope would be invalid.
+
+### Upper review acceptance and artifact lineage
+
+`upper-opus-v2b` completed normally: actual Claude Opus 5.5,
+PASS_WITH_NOTES/high, accepted=true, all C1–C12 PASS, no fatal/major findings
+or required repairs, and complete mandatory source delivery. The earlier
+d1-only review remains PASS_WITH_NOTES/medium, below its configured gate.
+The enlarged candidate is a substantive successor, adding the general
+low-alpha and degree-one convolution lemmas and the d3 limit argument.
+
+The first attempt to launch that successor stopped BEFORE a provider call:
+its prompt capitalized a supplied filename incorrectly. The case-only
+contract repair is retained in a new immutable attempt. No scientific vote
+is attributed to that workspace-preflight refusal.
+
+The accepted mathematical candidate SHA-256 is
+`848c545a1c537178509b58f8af20a435f8445855f5f8b95c0e2843aef7c2d55e`.
+The final source differs only by status/title/heading/scope-status promotion:
+`1ca13d491918d96126e70aef6229a80805ce5043a676f0a55c34c0858238e686`.
+Root independently compared all 14 proof environments, all 27 statement
+bodies and every equation block: byte-identical before/after promotion.
+The inherited Model/G0/G1 block is also byte-identical to the earlier
+committed notes. These byte checks resolve provenance, not a new scientific
+review. Bindings and exact status diff are in the Round 3 directory.
+Final PDF SHA-256:
+`461da80cee71c1b651ed63500c8ce9687c92dbeb8bcfc555979321690d6dc8bd`.
+Build: 25 pages, 0 errors, 0 undefined references/citations, 0 overfull boxes.
+
+### Finding-by-finding adjudication: route screen
+
+| Report / finding | Disposition |
+|---|---|
+| Screen v1 major: static constants applied to arbitrary positive alpha0 | Fixed throughout the screen and probe memo. Constants sqrt32/sqrt17 constrain the endpoint or uniformity near it; fixed-cost failures are only asserted for sufficiently small positive alpha0 by continuity. Raw numerical data/code unchanged. |
+| Screen v1 minor1: 'exceed' versus 'at least' | Fixed to the non-strict necessary inequality. |
+| Screen v1 minor2: general-k delta limit | Added approximate-identity and dominated-convergence justification; not pointwise delta evaluation. |
+| Screen v1 minor3: ambiguous exponent | Explicitly the exponential TIME power3-alpha0 of the loose majorant, not a factorial exponent or moment lower bound. |
+| Screen v1 minor4: missing coefficient-rate derivation | Added nonnegative-coefficient optimization from the imported first-moment upper theorem, including finite-prefix absorption. |
+| Screen v1 minor5: probe filenames | Successor packet uses original probe filenames; old packet remains unchanged. |
+| Screen v1 minor6: floating Riesz diagnostic | Retained only as a diagnostic; exact integral/Jensen countertest supplies the proof. |
+| Screen v2 minor1: name reduced approximate-identity function explicitly | Optional exposition. The accepted argument uses continuity off null boundaries and a uniform integrable dominator. |
+| Screen v2 minor2: choose L strictly above the limsup upper constant | Existence is asserted correctly; read L as any strictly larger positive constant, not necessarily the limiting bound itself. |
+| Screen v2 minor3: identify continuity lemma | It is G1 L:static-four's dominated-convergence argument on [0,abar]. No uniform-in-time limit is inferred. |
+| Screen v2 minor4: white amplification test is static | Retained explicitly as a static/small-alpha0 test, not a statement at every positive alpha0. |
+| Screen v2 minor5: C=8 motivation for MC versus DT | C=8 has sharp-coefficient motivation for MC only. It is merely a diagnostic test value for DT; no sharp DT conclusion. |
+| Screen v2 minor6: Riesz diagnostic values | Not proof inputs; the exact necessary inequality is separately stated. |
+
+[held back: collaborators' unpublished work]
+
+### Finding-by-finding adjudication: upper proof
+
+| Report / finding | Disposition |
+|---|---|
+| Upper v1 minor1: positions/increments notation | Successor explicitly distinguishes positions x_l from increments y_l and the earlier notation. |
+| Upper v1 minor2: source(2.11) absent | Supplied complete relevant source pages in the successor; (2.23)–(2.24) are explicitly cited. |
+| Upper v1 minor3: Gaussian averaging/Tonelli | Successor writes the mass-one average and Tonelli step explicitly. |
+| Upper v1 minor4: goals/route stale | Successor and status promotion record actual partial coverage and the direct coefficient method, retaining the full original goal. |
+| Upper v1 minor5: inherited white sanity-test shorthand | Inherited G0/G1 statement unchanged; it is only a sanity check, not a step in the new regularized proof. |
+| Upper v1 minor6: Balan–Conus wording | Softened to its Skorohod mild solution; exponent/normalization comparison only, not a proof input. |
+| Upper v1 minor7: finite enumeration not in packet | Explicitly a same-family diagnostic, not reviewer-verified evidence or an all-order proof. The proof uses the written general invariant. |
+| Upper final minor1: covariance width may be2eps/eps+eps' | Every positive width is allowed in the convolution lemmas; the bound is uniform in the Gaussian parameter. No formula relies on identifying noise width with covariance width. |
+| Upper final minor2: Gaussian variance convention pinpoint | The one-dimensional Gaussian/inversion convention is explicit in the proof; only positivity of the width matters to the bound. No source-normalization-dependent constant is omitted. |
+| Upper final minor3: continuous Fourier representation of gamma_eps | Standard convolution/Fourier identity for the Gaussian-weighted finite spectral measure; C5 checks the precise application. Retained as optional exposition before circulation. |
+| Upper final minor4: layer-cake endpoints | Null endpoints in the integration variable suffice; alternatively continuity of V R^alpha gives null spheres. No density assumption is used. |
+| Upper final minor5: 'sharper' direct d1 constant | The direct supremum is exact and the spectral envelope bounds it, so V>=c_alpha follows. No unverified numerical constant comparison is needed. |
+| Upper final minor6: legacy G0(4.4) reference | Historical plan wording, superseded by R:source-uniformity and the source manifest; not an input to the new proof. |
+| Upper final minor7: inherited G1 exposition | Preserve prior adjudication: delta as integrated approximate identity; (1,3)/(3,1) exchange relabels A/C. Neither affects the new bound. |
+| Upper final minor8: historical labels | Retain stable labels per repository convention; the actual statements explicitly cover alpha=1 and d2/d3. |
+
+C8's report heading uses 'noise' informally; the checked constants depend on
+covariance amplitude c or V and on alpha/alpha0, and are independent only of
+order, horizon, split, pairing and regularization. Its reason states this
+correct parameter dependence. No amplitude-independent claim is adopted.
+
+### Mathematical/verification boundary and decision point 5
+
+This is a reviewed PARTIAL result for the full goal, not full completion.
+The proof is self-contained apart from the explicitly imported G0/G1/source
+construction and first-moment comparison inputs. Imported results were not
+re-proved by the reviewer. No Lean certificate or final cold-reader/circulation
+clearance exists. The private companion remains uncreated pending the earlier
+explicit decision point 4 request.
+
+The user contract says to stop after any claimed G:upper/G:sharp proof and
+its cross-family review (decision point 5). New mathematical work stops here;
+finish only the durable records, clean build, publication of authorized
+repository/wiki status, handoff and parity checks. Le chooses the next wave.
+The full objective is preserved, not marked achieved.
+
+[held back: collaborators' unpublished work]
+
+Round3 bounded-proof completeness:8/10; instantiation:1.0 in the stated
+regime; advance_delta:0.7 toward the full G:upper target (qualitative partial
+coverage, not a completion fraction). Worker status DONE_WITH_CONCERNS.
+Article checkpoint: ROUND3_ARTICLE_SHA. Wiki checkpoint: ROUND3_WIKI_SHA.

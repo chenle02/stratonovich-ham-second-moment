@@ -1,0 +1,111 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    ".review/required-sources.json lines 1-90 (read plan only; no read credit claimed)",
+    "candidate.tex lines 1-1616, complete in three reads: 1-916 (stopped at the page cap), 917-1266, 1266-1616. Section 5 (S:d1-upper, lines 982-1543) was checked line by line. The G0/G1 statements it imports (P:mixed, L:crude-corrected, L:white-test, P:envelope, L:static-four, T:first, P:Jensen) were read in full. Targets and route (lines 1545-1616) were read for scope.",
+    "source-map.md lines 1-35 (complete)",
+    "writer-report.md lines 1-73 (complete)",
+    "G1-accepted-review.json lines 1-81 (complete)",
+    "prior-d1-review.json lines 1-91 (complete; history only, not adopted as a vote)",
+    "chen-03.png (full page: (1.5), (1.7), (1.8), the remark on alpha<=d with alpha=d only for the d=1 Dirac case, Theorem 1.2 (1.9)-(1.10))",
+    "chen-07.png (full page: (2.1)-(2.6); F(G(t,.))(xi)=sin(|xi|t)/|xi|, mass t, Green kernels in d=1,2,3, sphere measure in d=3)",
+    "chen-08.png (full page: (2.7)-(2.10), convolution smoothing, gamma_eps=p(eps)*gamma)",
+    "chen-09.png (full page: common-field construction, (2.11) Cov=gamma^0_{delta v delta~} gamma_{eps+eps~}, (2.12) L2 definition)",
+    "chen-10.png (full page: Definition 2.1, (2.13)-(2.17))",
+    "chen-11.png (full page: Remark 2.3, Lemma 2.4, Lemma 2.5, (2.18))",
+    "chen-13.png (full page: (2.23)-(2.25), G_eta and the two-step eta-then-noise definition)",
+    "chen-14.png (full page: the d=3 limit definition continued, (3.1)-(3.5), the two-chain integral of Section 3)",
+    "chen-22.png (full page: Section 4 notation, (4.1), Theorem 4.1 (4.2)-(4.3), (4.4))",
+    "balan-conus-02.png (full page: journal p.1489, (1)-(3) with alpha_H=H(2H-1), cases (i)-(iv))",
+    "balan-conus-05.png (full page: journal p.1492, (8)-(9), Theorem 2.1(a)-(c), (10)-(11))",
+    "balan-conus-07.png (full page: journal p.1494, comparison text, mild solution defined via the Skorohod integral)"
+  ],
+  "checks": [
+    {
+      "claim": "C1: The descending all-vector-increment elimination invariant holds: exactly one surviving covariance at each closing label and none at each opening label, for arbitrary pairings, block roots and empty chains.",
+      "verdict": "PASS",
+      "reason": "In increment coordinates each Green factor depends only on its own increment y_l. The position x_l is the sum of the increments with labels in [b(l), l] of its own block chain, so it involves only labels <= l. Invariant: before label l, the surviving covariances are exactly the pairs whose closing label is <= l. This holds at l=2k. At a closing label l with pair (i,l), x_l-x_i=y_l+z, where z involves only labels < l; this covers the same-chain, cross-chain and adjacent (z=0) cases. Every other surviving pair closes below l, so both of its endpoints are < l and it does not involve y_l. The bound sup_z depends only on h_l, and Tonelli (with y_{2k} innermost) removes the pair. At an opening label, the partner is larger and its pair is already removed; every surviving pair closes below l, so y_l enters only through G and integrates to h_l. The invariant then passes to l-1. Later positions do depend on y_l, but their covariances have already been replaced by h-only constants. The argument uses only label comparisons, so it is dimension-free and covers m=0, m=2k and every D, including domestic pairs. Each label is exactly one opening or one closing, which gives k of each. Hand checks: for (0,2) and (1,1) in d=1 white noise, the bound c*h_1/2 dominates the exact values."
+    },
+    {
+      "claim": "C2: The direct d=1 Riesz and white convolution bounds, the uniform Gaussian averaging, and all constants are correct.",
+      "verdict": "PASS",
+      "reason": "For even f that is nonincreasing in |y|, an interval of fixed length captures the most mass when centered at 0. So sup_z (1/2)c|y+z|^{-alpha} integrated over |y|<h equals c*h^{1-alpha}/(1-alpha) exactly. For gamma_eps=p_eps*gamma, Tonelli writes the smoothed integral as a mass-one p_eps(w)dw average of shifted integrals, so the same sup bounds it. White case: gamma_eps=c*p_eps and G<=1/2 give c/2. Both bounds are independent of eps and allow pair-dependent widths. This covers gamma_{2eps} in the source's (2.23) and gamma_{eps+eps~} in (2.11), as seen on the page images. No pointwise delta value is used, because S_{D,eps} is an ordinary integral."
+    },
+    {
+      "claim": "C3: Weighted AM-GM, the k-power and the exact common spatial bound are correct, with no illegal negative weights.",
+      "verdict": "PASS",
+      "reason": "The weights are 1 at the k openings and 1-alpha>0 at the k closings, total W=bk. Weighted AM-GM with x_l=h_l/w_l gives prod h^w <= (sum h/W)^W prod w^w <= (2t/(bk))^{bk}(1-alpha)^{(1-alpha)k}. Times (c/(1-alpha))^k this is [c 2^{2-alpha}(1-alpha)^{-alpha}(2-alpha)^{-(2-alpha)}]^k t^{bk}k^{-bk}, exactly K_sp; replacing c by V gives K_sp^gen. At alpha=1 the closing weight is 0, and the text correctly switches to ordinary AM-GM over the k openings only: (pi V/2)^k (2t/k)^k = (pi V)^k t^k/k^k, and likewise (c/2)^k(2t/k)^k = c^k t^k/k^k for d=1 white noise. No formula divides by 1-alpha at the endpoint. The constraint sum h <= 2t holds on [0,t]^m_< x [0,t]^{2k-m}_< after the chain reversal. The constants do not depend on k, m, D, any smoothing parameter or t."
+    },
+    {
+      "claim": "C4: The common full temporal kernel is introduced before the sum symmetry; the ordered block factor, cube integral, pairing and split counts, and the regularized coefficient inequality are correct.",
+      "verdict": "PASS",
+      "reason": "From chen-13 (2.24) and chen-09 (2.11), 0 <= gamma^0_delta(u) <= Gamma(alpha0)^{-1} int_0^inf e^{-lambda|u|} lambda^{alpha0-1} d lambda = |u|^{-alpha0}. Each regularized diagram is therefore bounded by its spatial factor times prod|s_i-s_j|^{-alpha0}. The spatial factor is bounded by a constant uniform in D and s, and only then is the sum over D taken (max_D S_D times sum_D T_D). F_k is invariant under all label permutations, because each permutation maps Pi_k bijectively. Block-preserving permutations tile [0,t]^{2k} into m!(2k-m)! copies of the ordered domain, and ties are null. The integral of |s-r|^{-alpha0} over [0,t]^2 is 2t^{2-alpha0}/((1-alpha0)(2-alpha0)) = Z t^{2-alpha0}. Disjoint pairs give P_k(Z t^{2-alpha0})^k, and P_k = (2k)!/(2^k k!). The split sum is 4^k/(2k)!. The product is (2ZK)^k t^{beta k}/(k! k^{bk}), with b+2-alpha0 = beta. Factors of 2 enter only through 4^k/2^k and through the 2t constraint inside K, so none is double-counted. Wick (2.23) has coefficient one per D, and A_k counts both (m,n) and (n,m)."
+    },
+    {
+      "claim": "C5: The low-alpha spectral estimate is correct: scaling of mu as a measure, finiteness of V, the exact layer-cake identity without isotropy or density assumptions, Fourier Fubini, and the sign/nonnegativity assumptions.",
+      "verdict": "PASS",
+      "reason": "gamma(c.) has spectral measure equal to the pushforward of mu under xi -> c xi. Homogeneity and Fourier uniqueness on tempered distributions give mu(A/c) = c^{-alpha} mu(A), hence mu(cA) = c^alpha mu(A). So mu(B_R) = V R^alpha, and V < infinity because mu is Radon. Continuity gives mu({0}) = 0 and null spheres. The layer cake gives int min{h,|xi|^{-1}} d mu = int_0^h mu(|xi| <= 1/u) du = V h^{1-alpha}/(1-alpha) for alpha<1; this uses only ball masses. e^{-eps|xi|^2/2} mu is finite by polynomial ball growth, so gamma_eps is the continuous Fourier transform of a finite measure, and it equals p_eps*gamma pointwise. G_{h,eta} has mass h (chen-07 (2.4)). Fubini is therefore absolute and gives multiplier e^{-eta|.|^2/2} sin(h|xi|)/|xi|, with |sin(hr)/r| <= min(h, 1/r). Nonnegativity: a nonnegative distribution is a positive measure, so gamma_eps >= 0, and G_{h,eta} >= 0. No positivity of the oscillatory integrand is asserted. The axis-supported example |x_1|^{-alpha} in d=2,3 is legitimately covered. Cross-check: the direct d=1 Riesz sup is exact, so the Fourier constant necessarily satisfies V >= c. This is consistent with calling the d=1 constants sharper."
+    },
+    {
+      "claim": "C6: Degree-one endpoint: mu = dr sigma from annular rectangles, total sigma = V, evenness, the correct antipodal count, Gaussian 1D Fourier inversion I = pi(g_h*p), and the bound pi V/2. Also d=1 white V = c/pi, with no use of the divergent absolute envelope.",
+      "verdict": "PASS",
+      "reason": "Sectors scale as R*sigma(E), so the polar rectangles (r1,r2] x E have mass (r2-r1)sigma(E). These form a pi-system generating the Borel sets of R^d minus {0}, and the measures are sigma-finite, so uniqueness gives mu = dr (x) sigma under the polar map. sigma(S^{d-1}) = mu(B_1 minus {0}) = V. A real stationary covariance is even, and Fourier uniqueness makes mu and sigma even. With a = (eps+eta)/2 > 0, the absolutely convergent double integral gives int sigma(d theta) int_0^inf e^{-ar^2} sin(hr)/r e^{ir theta.z} dr. Evenness of sigma turns the exponential into cos(r theta.z) with no factor 2. In 1D, g_h = (1/2)1_{|v|<h} has transform sin(hr)/r, and p_{2a} has transform e^{-ar^2}. Inversion with 1/(2 pi) and folding r to -r gives (g_h*p_{2a})(v) = (1/pi) I_a(h,v); the inversion is valid because the product is in L^1 and g*p is continuous. So 0 <= I_a <= pi/2, and the integral against sigma is at most pi V/2. In d=1 with gamma = c*delta_0: mu = c d xi/(2 pi), V = c/pi, and sigma({+1}) = sigma({-1}) = c/(2 pi). This gives c(g_h*p)(z) <= c/2, which matches the direct bound exactly, and K = pi V = c. Independent cross-check, d=3 with gamma = |x|^{-1}: mu = |xi|^{-2} d xi/(2 pi^2), so V = 2/pi and pi V/2 = 1. Newton's theorem gives int G_h(dy)|y+z|^{-1} = h*min(1/h, 1/|z|) <= 1, so the bound is attained. The absolute envelope is used only for alpha<1."
+    },
+    {
+      "claim": "C7: Dimension-3 Green approximation: positivity and mass, weak product-measure limits at fixed noise, bounded continuous Wick covariances, joint-eta Cauchy in L2, the correct eta-first/noise-second limit order, and the mixed L1 transfer.",
+      "verdict": "PASS",
+      "reason": "chen-13/14 define the d=3 integral by taking eta -> 0 first and then (eps,delta) -> 0. G_{h,eta} = p_eta*G_h is a nonnegative density of mass h with multiplier modulus <= 1, so both convolution lemmas hold uniformly in eta >= 0. At fixed (eps,delta), gamma^0_delta is bounded (gamma^0_delta(0) is finite) and gamma_{2eps} is bounded and continuous. The Wick sums for E[Y_eta Y_eta'] are therefore bounded continuous functions of linear combinations of increments. The increments are integrated against prod G_{h_l,eta} (x) prod G_{h_l,eta'}, which converges weakly with unchanged masses. The dominator C*prod h_l on bounded simplices gives dominated convergence in time. The joint limit does not depend on the rates, so the family is L2-Cauchy, and Cauchy-Schwarz passes the products to L1. The noise limit then uses chen-22 Theorem 4.1 (L2 limit for every n under (1.5)), and the products again converge in L1. Finitely many splits at fixed k and uniform bounds transfer the inequality to A_k(t). In d=1,2 only the noise limit is needed; the d=2 density is integrable, so Tonelli applies."
+    },
+    {
+      "claim": "C8: The factorial direction, the scalar q-series bound, the k=0 term, the exact beta/q = kappa, and constants independent of degree, noise and time.",
+      "verdict": "PASS",
+      "reason": "k! <= k^k gives k^{bk} >= (k!)^b, so k! k^{bk} >= (k!)^{b+1} = (k!)^q; this is the correct direction. For q >= 1 and nonnegative terms, sum a_k^q <= (sum a_k)^q, which gives sum z^k/(k!)^q <= exp(q z^{1/q}). With z = 2ZK t^beta, beta/q = (4-alpha-alpha0)/(3-alpha) = kappa, consistent with (E:kappa). A_0 = 1 is the k=0 term. The result C_2^gen = q(2ZK^gen)^{1/q} holds for every t>0. At alpha=1, q=2 and kappa = (3-alpha0)/2, which reproduces the writer's exp{2 sqrt(2Z pi V) t^{(3-alpha0)/2}}. The constants depend only on (alpha, alpha0, c or V)."
+    },
+    {
+      "claim": "C9: One-chain calibration, the p=1 lower bound and Jensen; the static exponent; the sharper d=1 normalized white check; no claim of variational-constant equality.",
+      "verdict": "PASS",
+      "reason": "A single chain has sum h <= t, so the spatial bound applies with t/2, and the ordered-simplex integral of F_k is P_k(Z t^{2-alpha0})^k/(2k)!. The product is (ZK/2^{b+1})^k t^{beta k}/(k! k^{bk}) with b+1 = q. Hence C_1 = q(ZK)^{1/q}/2 and C_2/C_1 = 2^{1+1/q} = 2^{(4-alpha)/(3-alpha)}. Expectations of the L2 partial sums converge, and odd terms vanish. The imported lower bound of Theorem 1.2 requires (1.8)-(1.9) with 0<alpha<d or alpha=d=1 (chen-03), which every stated case meets. Under that hypothesis it forces L_* <= C_1. Then C_1 > 0 gives 2C_1 < C_2, consistent with Jensen. This is a logical consequence, as the text says, not a numerical evaluation of E_*. As alpha0 -> 0, kappa -> (4-alpha)/(3-alpha), stated as an exponent calibration only. With c_alpha = (1-alpha)/2, K_sp = 2^{1-alpha}(1-alpha)^{1-alpha}/(2-alpha)^{2-alpha} -> 1 as alpha -> 1. The white checks also hold: the ratio 2Z/(2c_0) = 2(3-alpha0) > 4, and the static order-4 bound (2Z)^2/(2*4) = 1/2 >= 11/540."
+    },
+    {
+      "claim": "C10: Source imports match the supplied pages, with no missing hypothesis and no reliance on the false uniformity of (5.4).",
+      "verdict": "PASS",
+      "reason": "Each import matches its page. (2.3)-(2.5) on p.7: Fourier transform sin(|xi|t)/|xi|, mass t, sphere measure in d=3. (2.9) and (2.11) on pp.8-9: common-field smoothing with Cov = gamma^0_{delta v delta~} gamma_{eps+eps~}. (2.23)-(2.24) on p.13: Wick sum with gamma^0_delta and gamma_{2eps}. G_eta and the two-step definition on pp.13-14. Theorem 4.1 on p.22: fixed-order L2 limits under (1.5) with arbitrary parameter vectors. p.3: (1.5) is equivalent to alpha0+alpha<2, and alpha = d only in the d=1 Dirac case. Section 5 uses only these, P:mixed and T:first. Summability in P:mixed comes from L:crude-corrected, which explicitly avoids (5.4) (R:source-uniformity), so the new section never uses the (5.4) uniformity. The Balan-Conus exponent (8) with H = 1-alpha0/2 and a = alpha equals kappa (p.1492). alpha_H = H(2H-1) is on p.1489, and the Skorohod mild solution on p.1494. The comparison is correctly labelled as not a proof input."
+    },
+    {
+      "claim": "C11: Scope: the section actually proves exp(Ct^kappa) for the stated cases, and makes no claim about alpha>1 in higher dimensions, sharp constants, Lean verification, novelty or completion of the full goal.",
+      "verdict": "PASS",
+      "reason": "The section proves E u^2(t,x) <= exp(C_2^gen t^kappa) for all t>0 in d=1,2,3 with 0<alpha<=1 and V>0. V=0 is the trivial case u=1. In d=1 it also proves the sharper constants for c|y|^{-alpha} and c*delta_0. This is Goal G:upper restricted to these cases. The abstract, the candidate box, R:low-alpha-scope, R:d1-comparisons, the G:upper box and the route all state that 1<alpha<2-alpha0 in d=2,3 and G:sharp remain open, that degree one in d=2,3 is not white noise, and that no parameter-uniform limit of constants is claimed. The text makes no Lean, novelty or human-verification claim."
+    },
+    {
+      "claim": "C12: Overall hidden assumptions or gaps, and substantive changes since v1.",
+      "verdict": "PASS",
+      "reason": "I found no genuine gap. There are three substantive additions since the v1 d=1 review. (i) L:low-alpha-convolution: a measure-scaling and layer-cake Fourier bound valid for anisotropic or singular mu. (ii) L:alpha-one-convolution: a polar decomposition with exact 1D Gaussian inversion, avoiding the divergent absolute envelope. (iii) Transfer of the dimension-free elimination and temporal symmetry to d=2,3, with an explicit eta-first L2-Cauchy argument. The hidden assumptions are all standing ones: gamma real, even, nonnegative and nonnegative definite (so mu is positive and tempered); homogeneity understood distributionally; and the source's p_eps Gaussian convention, whose variance normalization does not affect any bound. The G0/G1 inputs are applied within their stated hypotheses."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "L:alpha-one-convolution sets a = (eps+eta)/2, which assumes covariance width eps. The source's mixed moments use gamma_{2eps} ((2.23)) or gamma_{eps+eps~} ((2.11)), which give a different a > 0. The bound is independent of a, so nothing breaks. A sentence saying that any covariance width eps' > 0 is allowed would align the text with the source.",
+      "The Brownian convention for p_eps (multiplier e^{-eps|xi|^2/2}) relies on the source's (1.20), which is not in the packet. Only positivity of a matters, so this is a pinpoint gap, not a mathematical one.",
+      "L:low-alpha-convolution goes from 'Gaussian weighting gives a finite measure' to Fourier Fubini without stating that gamma_eps equals, pointwise, the continuous Fourier transform of the finite measure e^{-eps|xi|^2/2}mu. That is the identity Fubini actually uses. One sentence would close it.",
+      "In the layer-cake step, the remark 'the endpoint of each indicator has no effect' implicitly uses mu(sphere) = 0, which follows from continuity of V R^alpha. This could be stated.",
+      "'Separate sharper Riesz constants in dimension one' is asserted without a displayed comparison. It holds because the direct d=1 Riesz convolution bound is the exact supremum, so necessarily V >= c_alpha; for example V/c is about 1.60 at alpha = 1/2. A one-line remark would justify the word 'sharper'.",
+      "The G0 route item still cites (4.4) for Theorem T:crude; R:source-uniformity identifies (5.4) as the relevant bound. This is legacy exposition outside Section 5.",
+      "Inherited G1 notes are still open in the frozen text: L:white-test evaluates the delta pointwise, and the chain-exchange relabelling (A<->C for (3,1)) is not stated. R:d1-upper-checks uses L:white-test only as a sanity comparison, so the new proof is unaffected.",
+      "The section label S:d1-upper and the label P:low-alpha-upper are retained although both now cover alpha = 1 and d = 2,3. This is cosmetic."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is an AI review of the frozen packet. It is not human verification, a Lean proof, a novelty audit or circulation clearance. Nothing was executed. All constants and identities were checked by hand calculation.",
+    "G0/G1 results (P:mixed, L:crude-corrected, P:envelope, L:white-test, the G1 tables) were treated as established inputs, per the contract, and checked only where Section 5 applies them. L:crude-corrected depends on the source's Lemma A.1, (A.1) and (A.3), and P:mixed on the source's Theorem 1.1 and p.34. None of these pages are in the packet.",
+    "I could not verify the writer's claim that lines 1-980 are byte-identical to the G0/G1-reviewed checkpoint, because no prior text is in the packet. The line positions match the prior d=1 review's coverage map (S:d1-upper begins near line 981/982), which is consistent but not proof.",
+    "Source pages (1.20) (the definition of p(t,x)) and Lemma A.1 are not supplied. Neither the variance convention nor A.1 enters the new bounds beyond positivity of the Gaussian parameter.",
+    "The imported first-moment lower bound (Theorem 1.2) was checked only for its hypotheses on chen-03. The variational quantity E_* was not evaluated, so L_* <= C_1 is a logical consequence of the proof, not an independent numerical test.",
+    "The Chen-Hu static exponent cited in R:G1-scope and R:d1-comparisons is not in this packet. It was accepted through the G1 review and is used only as an exponent calibration.",
+    "Balan-Conus was checked only from three rendered pages, for exponent, normalization and solution concept. It is not a proof input."
+  ]
+}

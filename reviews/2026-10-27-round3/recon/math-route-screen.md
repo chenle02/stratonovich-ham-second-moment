@@ -32,7 +32,9 @@ D_adj={(1,2),(3,4),...,(2k-1,2k)}. Write its positive time increments as h_1,...
       = [Gamma(1-a0)/2]^k
         t^((3-a0)*k)/Gamma(1+(3-a0)*k).
 
-The last equality is the Dirichlet simplex integral; it can also be verified inductively by the beta integral. All shape parameters are positive: 2 and 1-a0. At k=1 this is G0's E X2=c0*t^(3-a0)/2. At k=2,a0=0 it is G1's (0,4),A value t^6/2880.
+The delta calculation uses the same approximate-identity convention as G0/G1, rather than an unsupported pointwise product of distributions. For each fixed positive time-increment vector, replace each spatial delta by its nonnegative mass-one Gaussian smoothing. As the smoothing tends to zero, the free paired positions converge to the diagonal restriction: every even Green factor is continuous at zero displacement because its increment is positive, and the other indicator discontinuities lie in finitely many hyperplanes of the k free spatial coordinates, hence in a set of Lebesgue measure zero. Uniformly in the spatial smoothing, all vertex positions are in[-t,t], and bounding the 2k Green indicators by one gives spatial integral at most(2t)^k/2^(2k)=t^k/2^k: each disjoint smoothed pair integrates to at most2t on[-t,t]^2. The remaining temporal weights are dominated, on the full time cube, by a product of k integrable disjoint-pair factors |s-r|^(-a0). Dominated convergence therefore justifies the limit through the time integration for every fixed k; the source's temporal truncations are dominated by those same factors.
+
+The last equality in the displayed formula is the Dirichlet simplex integral; it can also be verified inductively by the beta integral. All shape parameters are positive: 2 and 1-a0. At k=1 this is G0's E X2=c0*t^(3-a0)/2. At k=2,a0=0 it is G1's (0,4),A value t^6/2880.
 
 For fixed b=3-a0, log Gamma(1+bk)=b*k*log k+O(k), whereas log(k!)^3=3*k*log k+O(k). Consequently
 
@@ -92,7 +94,7 @@ This uses all self-pairings in both coefficients. If proved, (MC) gives the exac
 
 Chen's author-version first-moment upper bound would then imply G:upper, using noise-strength scaling lambda^(2/(3-alpha)) of the first-moment exponential constant. The particular choice C=2^(4-alpha) would give the conjectured sharp **upper** constant, but is much stronger than needed for G:upper and is not established here.
 
-**Tests.** White noise has A_1/a_1=4 for every a0. At the static endpoint, G1 gives A_2/a_2=32, so a uniform C must be at least sqrt(32); C=4 fails at order four. The sharp candidate C=8 in white space passes these two tests (4<=8,32<=64). At alpha=a0=1/2,c_alpha=1, G1 gives A_1/a_1=3b_1+2 approximately7.141593, so C must exceed that value; the proposed sharp value 2^(7/2) approximately11.313708 is not falsified by this one coefficient. The numerical ratios are diagnostic only; the exact necessary constraint is C>=3b_1+2 with b_1 given by the proved G1 one-dimensional integral.
+**Tests with explicit parameter quantifiers.** White noise has A_1/a_1=4 for every fixed a0 in(0,1), so (MC) requires C(a0)>=4 at each such parameter. At the static endpoint a0=0, G1 gives A_2/a_2=32. Therefore C>=sqrt(32) is necessary for a comparison at that endpoint, or for a single constant C that works uniformly as a0 decreases to zero. It is not a necessary bound on a separately a0-dependent C at an arbitrary fixed positive a0. Fixed-order continuity from G1 shows that A_2(a0)/a_2(a0)>16 for all sufficiently small positive a0; hence C=4 fails at order four for those parameters, without asserting this for every positive a0. The sharp candidate C=8 passes the order-one white test and the static order-four test (4<=8,32<=64); continuity also makes the latter strict inequality persist near the static endpoint. At alpha=a0=1/2,c_alpha=1, G1 gives A_1/a_1=3b_1+2 approximately7.141593, so C must be at least that value; the proposed sharp value 2^(7/2) approximately11.313708 is not falsified by this one coefficient. The numerical ratios are diagnostic only; the exact necessary constraint is C>=3b_1+2 with b_1 given by the proved G1 one-dimensional integral.
 
 **Additional boundary kill test (root-proposed, independently checked).** Fix any 0<alpha<1 and c_alpha>0, and let a0↑1 through the admissible range. The G1 one-dimensional formula has the form b_1=c_alpha/[(1-alpha)(2-alpha)] times integral_0^1 v^(-a0) H_alpha(v) dv, with H_alpha continuous at zero and H_alpha(0)=2^(2-alpha)/(3-alpha). The elementary approximate-identity identity epsilon*integral_0^1 v^(-1+epsilon)H(v)dv→H(0) therefore gives
 
@@ -111,11 +113,21 @@ A potentially narrower sufficient statement is
 
     D_n <= C^n a_n for all n>=1.                        (DT)
 
-Here D_n is a two-chain length-(n,n) moment and a_n is a single-chain length-2n expectation. In d=1, the source's first-moment coefficient upper bounds have denominator (n!)^q, q=3-alpha>=2. If (DT) holds, summing the square roots by Minkowski gives a scalar series with denominator (n!)^(q/2) and argument proportional to t^(beta/2), hence the same scale t^(beta/q)=t^kappa. No sharp constant for this norm-summation route is claimed here.
+Here D_n is a two-chain length-(n,n) moment and a_n is a single-chain length-2n expectation. In d=1 put q=3-alpha=beta/kappa>=2. The required coefficient upper bound follows explicitly from the imported author-version Theorem1.2,(1.10),p3 and coefficient nonnegativity. Choose L>0 and T such that E u(t,x)<=exp(L t^kappa) for t>=T. Then
 
-The static white tests give D_1/a_1=2 and D_2/a_2=17. Thus C=2, or any proposed trace inequality with that fixed cost, is false already at n=2; C>=sqrt(17) is necessary. A sufficiently large unspecified C remains possible.
+    a_n t^(beta*n) <= E u(t,x) <= exp(L t^kappa).
 
-**Import requirement for either route.** Use the author-version first-moment upper bound (Theorem1.2) and its amplitude scaling, or its coefficient estimate in Section8, with an exact pinpoint checked before proof investment. The existence of a positive coefficient series alone is insufficient to supply its factorial rate. Neither route uses the Skorohod mean, which is one and has no counterpart of these nonzero a_k.
+For all sufficiently large n, choose t=(q*n/L)^(1/kappa)>=T. This gives
+
+    a_n <= exp(q*n) [L/(q*n)]^(q*n)
+         = [(e*L/q)^q]^n n^(-q*n)
+         <= B^n/(n!)^q,
+
+initially with B=(e*L/q)^q, since n!<=n^n. Increase B to absorb the finite remaining positive orders; their coefficients are finite by G0. This argument imports no unstated Section8 coefficient theorem. If (DT) holds, summing square roots by Minkowski gives a scalar series with denominator(n!)^(q/2) and argument proportional to t^(beta/2), hence scale t^(beta/q)=t^kappa. For example, the elementary nonnegative-sequence inequality sum z^n/(n!)^r <= exp(r*z^(1/r)), r>=1, applies with r=q/2. No sharp constant for this norm-summation route is claimed here.
+
+At every fixed positive a0, the white order-one test gives D_1/a_1=2, so (DT) requires C(a0)>=2. The additional value D_2/a_2=17 is the static endpoint value. It forces C>=sqrt(17) only at a0=0 or for a constant uniform as a0 decreases to zero, not for a separately chosen C at an arbitrary fixed positive a0. Since the fixed-order ratio is continuous and its limit is17>4, C=2 fails at n=2 for all sufficiently small positive a0. No claim about every other fixed a0 follows from this endpoint argument. A sufficiently large parameter-dependent C remains possible.
+
+**Import boundary for either route.** The only analytic upper input in the preceding coefficient optimization is the author-version first-moment theorem, taken as an established input in the reviewed G0 notes. Positivity of the coefficient series without that growth bound is insufficient. Neither route uses the Skorohod mean, which is one and has no counterpart of these nonzero a_k.
 
 ### Pointwise concatenation is not the missing mechanism
 
@@ -132,7 +144,7 @@ In white space, after any k delta contractions all free vertex positions lie in 
     sum_(m+n=2k) sum_D J_(m,n,D)(t)
       <= [2/((1-a0)(2-a0))]^k t^((3-a0)*k)/k!.
 
-Indeed, sum_(m+n=2k)1/(m!n!)=2^(2k)/(2k)!, the pairing count is (2k)!/(2^k k!), and each disjoint temporal pair integrates to 2t^(2-a0)/((1-a0)(2-a0)). The bound yields exponent3-a0, worse than both the G0 bound and the target.
+Indeed, sum_(m+n=2k)1/(m!n!)=2^(2k)/(2k)!, the pairing count is (2k)!/(2^k k!), and each disjoint temporal pair integrates to 2t^(2-a0)/((1-a0)(2-a0)). Summing the displayed majorant gives exp(C t^(3-a0)): 3-a0 is its exponential TIME power, while the coefficient factorial denominator is k!. This time power is worse than both the G0 bound and the target.
 
 **Verdict: quantitatively inadequate for G:upper.** Symmetrizing the temporal factors after erasing the spatial chain constraints loses too much. This is not a lower bound on the moment and does not rule out a symmetrization retaining its spatial dependence.
 
@@ -156,4 +168,4 @@ Every pair has block-label distance k, so a proposed span penalty based on |j-(k
 
 [held back: collaborators' unpublished work]
 
-No claim here has received the required non-GPT scientific review. The only inherited accepted results are the cited G0/G1 finite coefficients and source inputs. STATUS: DONE_WITH_CONCERNS (bounded reconnaissance complete; surviving obligations unproved).
+The v1 independent Opus screen review returned FAIL/medium because the static endpoint constraints in3a/3b were not qualified correctly. This v2 repairs those quantifiers and adds the requested limiting/import details; it has not yet passed a fresh review. The v1 report and packet remain immutable. The inherited accepted results are the cited G0/G1 finite coefficients and source inputs. STATUS: DONE_WITH_CONCERNS (repaired screen frozen for fresh review; surviving obligations unproved).

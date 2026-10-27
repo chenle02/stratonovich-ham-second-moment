@@ -80,3 +80,15 @@ not a second library to build in parallel. No proof/build acceptance follows
 from source inspection. See `recon/2026-10-27-reuse.md` for exact statements,
 license/source pins and search limitations. The proposed private repository
 name, remote and approval boundary are unchanged.
+
+## Reviewed G2 consumer update
+
+The accepted informal upper proof now covers 0<alpha<=1 in d1/2/3.
+After creation approval, the finite/algebraic audit should also reach its
+actual consumers: descending-label dependence, the fully summed temporal
+pairing permutation invariance, the block-order/split factorial cancellation,
+AM–GM constant algebra (with alpha=1 separate), and the factorial/power
+conversion to kappa. The scalar series bound is a useful later analysis seam.
+Do not claim the spectral, stochastic-integral or SPDE steps are formalized
+merely from a finite count certificate. Exact source labels are in notes §5;
+no new package or code is created by this proposal update.

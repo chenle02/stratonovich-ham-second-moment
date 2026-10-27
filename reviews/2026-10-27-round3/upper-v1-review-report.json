@@ -1,0 +1,91 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "medium",
+  "source_coverage": [
+    ".review/required-sources.json lines 1-50 (read plan only; no read credit claimed)",
+    "candidate.tex lines 1-925 (first Read, which stopped at its page cap) and lines 926-1336 (second Read): complete, 1-1336. Section S:d1-upper (lines 981-1275) was checked line by line, and the G0/G1 statements it imports (lines 252-616, 617-979) were read in full",
+    "writer-report.md lines 1-74 (complete)",
+    "source-map.md lines 1-25 (complete)",
+    "G1-accepted-review.json lines 1-82 (complete)",
+    "chen-03.png (full page: (1.5), (1.8), Theorem 1.2 (1.9)-(1.10))",
+    "chen-13.png (full page: (2.23)-(2.25), G_eta convention)",
+    "chen-22.png (full page: Section 4 notation, (4.1), Theorem 4.1 (4.2)-(4.3), (4.4))",
+    "balan-conus-02.png (full page: journal p.1489, covariance (1)-(3) with alpha_H=H(2H-1), cases (i)-(iv))",
+    "balan-conus-05.png (full page: journal p.1492, (8)-(9), Theorem 2.1(a)-(c), (10)-(11))",
+    "balan-conus-07.png (full page: journal p.1494, Skorohod mild solution concept, comparison with Stratonovich literature)"
+  ],
+  "checks": [
+    {
+      "claim": "C1: Spatial increment map and the descending all-label elimination invariant across two block chains, covering all pairings (crossing and domestic), empty chains and arbitrary orders",
+      "verdict": "PASS",
+      "reason": "After the change to increments, each Green factor G(h_l,y_l) depends only on its own y_l. In block order with separate roots, the position x_j is a sum of increments with labels in [b(j),j]. So x_j depends only on labels <= j, and chain-1 positions never involve chain-2 increments. Invariant: before label l, the remaining pairs are exactly those whose closing label is <= l. This holds at l=2k. Closing label l with pair (i,l): x_l-x_i=y_l+z, and z involves only labels < l (same chain: y_{i+1..l-1}; cross-chain: earlier chain-2 increments minus x_i; l=m+1: z=-x_i). Every other remaining pair has its closing label < l, hence both endpoints < l, so it does not involve y_l. The sup-in-z bound depends only on h_l, so Tonelli removes the pair. Opening label l: its partner is larger, so that pair was already removed. Every remaining pair has its closing label < l, so y_l enters only through G and integrates to h_l. In both cases the invariant passes to l-1. Positions of later labels do depend on y_l, but their covariances are already replaced by h-only bounds. This is the point that rescues the elimination order. The argument uses only label comparisons, so it covers crossing and domestic pairs, adjacent pairs (z=0), m=0 or n=0, and every k. I tested it by hand on (0,2), (1,1) and the G1 white order-four position lists. The bounds c h_1/2 and h_1/2 dominate the exact values c h_1/2 and min(h_1,h_2)/2."
+    },
+    {
+      "claim": "C2: Riesz convolution supremum, Gaussian averaging, white bound G<=1/2 times mass one, pair-dependent widths, no pointwise delta",
+      "verdict": "PASS",
+      "reason": "For even f that is nonincreasing in |y|, the map a -> integral of f over [a,a+2h] has derivative f(a+2h)-f(a). So the integral is maximal at a=-h. Then (1/2)c_alpha times the integral of |y|^{-alpha} over [-h,h] equals c_alpha h^{1-alpha}/(1-alpha), which is exact. For gamma_eps=p_eps*gamma, Tonelli gives the integral of G(h,y)gamma_eps(y+z) dy as a p_eps-average of shifted integrals, which is bounded by the same supremum. In the white case, G<=1/2 and c_delta p_eps has mass c_delta, so the bound is c_delta/2. Both bounds are independent of eps, and the lemma allows a separate eps_e for each pair. So the source's gamma_{2eps} (chen-13, (2.23)) and any eps_j+eps_k Gaussian widths are covered. The lemma is stated for the smoothed integral S_{D,eps}, which is an ordinary nonnegative integral, so no pointwise delta value is used."
+    },
+    {
+      "claim": "C3: Weighted AM-GM with k openings and k closings, nonnegative weights, sum h <= 2t, exact K_sp and k-power, constants independent of degree and time",
+      "verdict": "PASS",
+      "reason": "The weights are 1 at the k openings and 1-alpha at the k closings, with total W=bk. Weighted AM-GM gives the product of h_l^{w_l} <= (sum h/W)^W times the product of w_l^{w_l}, which is <= (2t/(bk))^{bk}(1-alpha)^{(1-alpha)k}. Multiplying by (c_alpha/(1-alpha))^k gives [c_alpha 2^{2-alpha}(1-alpha)^{-alpha}(2-alpha)^{-(2-alpha)}]^k t^{bk}k^{-bk}, which matches K_sp exactly. White case: the product of h_i over openings is <= (2t/k)^k, and with (c_delta/2)^k this gives c_delta^k t^k/k^k with b=1. The constraint sum h <= 2t holds because the increments sum to the two terminal times; for an empty chain the sum is <= t. Interleaving of openings and closings only loosens the maximum, so the inequality holds. K_sp and Z depend only on (alpha, alpha0, c), not on k, m, D, eps, delta or t."
+    },
+    {
+      "claim": "C4: Truncations replaced by the common full kernel before symmetry; why the summed F_k is symmetric when a single matching is not",
+      "verdict": "PASS",
+      "reason": "chen-13 (2.24): gamma^0_delta(u) is Gamma(alpha0)^{-1} times the integral over [0,1/delta] of e^{-lambda|u|}lambda^{alpha0-1}. This is at most the full integral over [0,infinity), which equals |u|^{-alpha0}, and it is nonnegative. So each regularized diagram is bounded by the same integrand with |s_i-s_j|^{-alpha0}. The spatial bound (E:d1-spatial-max) is extracted next. It is a constant independent of s, m, D and the regularization, because sum h <= 2t on every ordered domain. Only after this is the sum over D taken. Any permutation sigma of labels maps Pi_k bijectively, so F_k(s\u2218sigma)=F_k(s). The block-preserving permutations tile [0,t]^{2k} into m!(2k-m)! congruent copies of the ordered product domain, and ties are null. A single matching's integrand, or one weighted by a D-dependent spatial factor, is not symmetric; the proof never assumes it is (lines 1163-1165)."
+    },
+    {
+      "claim": "C5: Ordered-block factor 1/(m!n!), disjoint-pair cube integral, P_k, binomial split sum, all factors 2, no missing Wick coefficient",
+      "verdict": "PASS",
+      "reason": "The integral of |s-r|^{-alpha0} over [0,t]^2 is 2t^{2-alpha0}/((1-alpha0)(2-alpha0)) = Z t^{2-alpha0}. Each matching uses disjoint pairs, so integrating F_k over the cube gives P_k(Zt^{2-alpha0})^k. P_k=(2k)!/(2^k k!) follows from the recursion. The sum over m of 1/(m!(2k-m)!) is 4^k/(2k)!. The product is K^k t^{bk}k^{-bk} * 4^k/(2k)! * (2k)!/(2^k k!) * Z^k t^{(2-alpha0)k} = (2ZK)^k t^{beta k}/(k! k^{bk}), with b+2-alpha0=beta. The source's Wick formula (2.23) has coefficient one per D in Pi_n, and A_k sums the ordered splits m=0..2k, so (m,n) and (n,m) are both counted. Factors of 2 appear in exactly two places: 2^{2k}/2^k=2^k gives the 2 in 2ZK, and the 2t constraint gives the 2^b inside K_sp. Neither is counted twice. As a check, the white order-two bound 2Z versus the exact 2c_0 gives ratio 2(3-alpha0). At alpha0=0, the static order-four bound 4/(2*4)=1/2 is at least the exact 11/540."
+    },
+    {
+      "claim": "C6: Uniform regularized moment inequality -> L1 product limits -> nonnegative full second-moment series, without circularity",
+      "verdict": "PASS",
+      "reason": "Common parameters (eps,delta) in every factor fall under (2.23). Theorem 4.1 (chen-22, (4.2)) gives L2 limits of X_n^{eps,delta} as eps,delta->0+, so E[X_m^{eps,delta}X_n^{eps,delta}] -> E[X_m X_n] by Cauchy-Schwarz. At fixed k there are only finitely many splits, and the bound is uniform, so it passes to A_k(t). E u^2 = sum of A_k is the reviewed P:mixed series. Its summability rests on L:crude-corrected, which does not use the new bound, so there is no circularity. d=1 needs no G_eta limit."
+    },
+    {
+      "claim": "C7: Factorial inequality direction, q-series bound, exact kappa/time/noise scaling, k=0 separately",
+      "verdict": "PASS",
+      "reason": "From k! <= k^k we get k^{bk} >= (k!)^b, hence k! k^{bk} >= (k!)^{1+b} = (k!)^q, which is the correct direction. For q >= 1 and nonnegative terms, the sum of a_k^q is at most (sum of a_k)^q. This gives the sum of z^k/(k!)^q <= exp(q z^{1/q}) for all z >= 0. With z=2ZK_sp t^beta, z^{1/q}=(2ZK_sp)^{1/q}t^{beta/q} and kappa=beta/q=(4-alpha-alpha0)/(3-alpha), consistent with (E:kappa). A_0=1 equals the k=0 series term. The bound holds for every t>0, not only for large t. It is nonsharp."
+    },
+    {
+      "claim": "C8: First-moment calibration constant, Jensen compatibility, static exponent, normalized Riesz-to-white limit",
+      "verdict": "PASS",
+      "reason": "For one chain, sum h <= t, so the lemma applies with t/2, giving K^k t^{bk}2^{-bk}k^{-bk}. The simplex integral of F_k is P_k(Zt^{2-alpha0})^k/(2k)!, and the product is (ZK/2^{b+1})^k t^{beta k}/(k! k^{bk}). Then C1=q(ZK)^{1/q}/2. C2/C1=2*2^{1/q}=2^{(4-alpha)/(3-alpha)}, matching the stated relation. If the bound holds, Theorem T:first's liminf forces L_* <= C1, and 2^{(4-alpha)/(3-alpha)}>2 gives 2C1<C2. This is consistent with Jensen, E u^2 >= (E u)^2. As alpha0 -> 0, kappa -> (4-alpha)/(3-alpha), which is only an exponent calibration. With c_alpha=(1-alpha)/2 (unit mass on [-1,1]), K_sp=2^{1-alpha}(1-alpha)^{1-alpha}/(2-alpha)^{2-alpha} -> 1 as alpha -> 1, matching c_delta=1."
+    },
+    {
+      "claim": "C9: Scope and literature; no d=2,3, alpha>1, sharp constant or full-goal claim; Balan-Conus exponent-only comparison; no conflict with the G0 no-gos",
+      "verdict": "PASS",
+      "reason": "Section 5 restricts to d=1 with Riesz 0<alpha<1 or c_delta delta_0, and says no higher-dimensional result or sharp constant is claimed. Both cases satisfy (1.5)/(1.9) (chen-03). Balan-Conus (8) gives rho_w=(2H+2-a)/(3-a). With H=1-alpha0/2 and a=alpha this equals kappa. Their alpha_H=H(2H-1) normalization (p.1489) and Skorohod mild-solution concept (p.1494) are noted correctly, and the theorem is not used as an input. The G0 no-go concerns the common-Laplace whole-diagram norm majorant, which loses (k!)^{alpha0}. The new route does not use it, and it asserts no per-diagram factorial gain, so there is no conflict."
+    },
+    {
+      "claim": "C10: Overall: does it establish G:upper in the stated one-dimensional cases?",
+      "verdict": "PASS",
+      "reason": "I found no gap, hidden conditional hypothesis or unproved regularity step. The argument proves that limsup t^{-kappa} log E u^2 <= C2 < infinity for d=1 with Riesz 0<alpha<1 or white noise. That is G:upper restricted to these cases, with an explicit nonsharp constant. It is a genuine new estimate, not a rephrasing. The factorial power q=3-alpha comes from two sources: the spatial maximum k^{-bk}, and the factor 1/k! from summing ordered-block volumes of the symmetric F_k. Every imported ingredient checked: (2.23)-(2.24), Theorem 4.1, P:mixed, T:first. G:upper for d=2,3 and G:sharp remain open, as stated."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Notation clash: in (E:mixed-diagram) y_l are positions, but in Section 5 y_l are increments and x_l are positions; x is also the evaluation point of u(t,x). A one-line remark would prevent misreading.",
+      "P:d1-upper's proof cites the source's (2.11) for the smoothing. That equation is not in the frozen packet. The argument actually needs only the (2.23)-(2.24) covariance form, which is visible, and the Lemma's per-pair widths cover gamma_{2eps}. Citing (2.23) explicitly would make the import self-contained.",
+      "The proof relies implicitly on the fact that a Gaussian smoothing of a nonnegative, even, nonincreasing function stays bounded by the same supremum. The text says 'averaging the shifted integral'; one sentence noting Tonelli in w would make it explicit.",
+      "Goal G:upper (stated for d=1,2,3) and the Planned-route item G2 (Laplace / Mittag-Leffler / Tauberian) are not updated. They do not say that the d=1 cases are addressed by a different, direct coefficient method. This is an exposition gap only.",
+      "R:d1-upper-checks compares with L:white-test. As the G1 review noted, L:white-test still evaluates the delta pointwise in its own proof. This affects only the sanity check, not the new proof.",
+      "R:d1-comparisons says that Balan-Conus's solution concept 'omits the self-pairings present here'. That is a structural heuristic about the Skorohod chaos expansion, not something the cited pages state. It could be softened to 'uses the Skorohod (mild) solution'.",
+      "The writer report cites work/root-upper-candidate-audit.md (the 1068-case enumeration), which is not in the packet. It is not a proof input and was not verified."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is an AI review of the frozen packet. It is not human verification, a novelty audit, a Lean proof or circulation clearance. Nothing was executed.",
+    "G0/G1 statements (P:mixed, L:crude-corrected, L:white-test, P:envelope) and the source's fixed-order construction were treated as established imports, per the review contract. They were checked only at their points of application.",
+    "The source's (2.9)/(2.11) (definition of the smoothed noise) and Lemma 2.4/2.5 are not in the packet. I relied on the rendered (2.23)-(2.25) and Theorem 4.1. I assumed that common-parameter smoothing falls under (2.23) and under the L2 limit of Theorem 4.1, which allows arbitrary parameter vectors tending to zero.",
+    "I could not independently check whether C1 >= L_* numerically, because the variational quantity E_* is not computable from the packet. The consistency L_* <= C1 is therefore a logical consequence of the proof, not an independent test of it.",
+    "The Balan-Conus comparison was checked only from the three rendered pages (journal pp.1489, 1492, 1494), and only for exponents and normalization."
+  ]
+}

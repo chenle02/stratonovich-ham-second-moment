@@ -1,0 +1,87 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "medium",
+  "source_coverage": [
+    ".review/required-sources.json lines 1-24 (read plan only; no read credit claimed)",
+    "route-screen.md lines 1-143 (complete)",
+    "source-map.md lines 1-19 (complete)",
+    "established-notes.tex lines 1-1037 (complete)",
+    "G1-review.json lines 1-82 (complete)",
+    "probe.md lines 1-68 (complete)",
+    "probe.py lines 1-180 (complete)",
+    "probe.json lines 1-911 (complete)"
+  ],
+  "checks": [
+    {
+      "claim": "C1: All-order homogeneity, noise-amplitude bookkeeping, and the exact adjacent one-chain white diagram, including the empty and first orders and the delta convention",
+      "verdict": "PASS",
+      "reason": "Homogeneity: at total order 2k there are 2k time integrations, 2k spatial integrations and degree-0 Green densities in d=1, plus k covariance factors of degree -(alpha+a0). This gives t^{beta k}, and D_n scales as t^{beta n}. Multiplying the noise by lambda multiplies X_n by lambda^n, so E u_lambda(t)=sum lambda^{2k} a_k t^{beta k}. Sufficiency check: A_k<=C^k/(k!)^{3-alpha} gives log E u^2 of order (t^beta)^{1/(3-alpha)}=t^kappa. Adjacent diagram, using the notes' rooted-chain convention with the empty first chain contributing one: the delta sets y_{2j}=y_{2j-1}. The odd Green factor then integrates to its mass h_{2j-1}, the even factor equals G(h_{2j},0)=1/2, and the time weight is h_{2j}^{-a0}. The Dirichlet integral over sum h_i<t has shapes 2 (odd) and 1-a0 (even). It gives [Gamma(1-a0)/2]^k t^{(3-a0)k}/Gamma(1+(3-a0)k). At k=1 this is Gamma(1-a0)/(2Gamma(4-a0))=c0/2, matching G0. At k=2, a0=0 it is (1/4)/720=1/2880, matching G1's (0,4),A. The pointwise evaluation of the delta is consistent with the regularized convention, because the indicator is continuous at zero displacement for h>0 (see minor findings)."
+    },
+    {
+      "claim": "C2: Stirling obstruction to the uniform per-diagram (k!)^{-3} bound, kept narrow",
+      "verdict": "PASS",
+      "reason": "log Gamma(1+bk)=bk log k+O(k) and log (k!)^3=3k log k+O(k). Hence log[(k!)^3 J_adj(1)]=a0 k log k+O(k), which eventually exceeds k log C for every fixed C and every fixed a0>0. The motivating count is right: about 2^k k! pairings and 2k+1 splits turn (k!)^{-3} into (k!)^{-2}=(k!)^{-(3-alpha)} in white space. The verdict is properly narrow. It notes that the witness's own denominator (k!)^{3-a0} beats (k!)^2. It asserts no grouped-bound no-go and no moment lower bound at rho."
+    },
+    {
+      "claim": "C3: Riesz alpha=a0=1/2 Jensen countertest, small-time argument, and scope of the unit-prefactor amplification failure",
+      "verdict": "PASS",
+      "reason": "First-order coefficients: the left side has A_1=b_1+2a_1; the right side (sum 2^k a_k s^k)^2 has 4a_1. So b_1<=2a_1 is necessary. Nonnegative convergent series give remainders O(t^{2beta}) as t->0. White check: b_1=c0=2a_1. At a0=0, 8a_2+4a_1^2=88/17280+1/36=71/2160 and A_2=44/2160, a difference of 27/2160=1/80. Riesz check: E|U-V|=(s^2+r^2/3)/(2s)=s/2+r^2/(6s)<=2s/3 for r<=s. Jensen (z^{-alpha} is convex) gives sr E|U-V|^{-alpha}>=(3/2)^alpha s^{1-alpha} r. Then 2 times the integral over r<s of (s-r)^{-a0} s^{1-alpha} r equals 2/[(1-a0)(2-a0)(4-alpha-a0)]. At 1/2,1/2 the lower bound is 2(3/2)^{1/2}(4/9)=(8/9)sqrt(3/2), about 1.089, which exceeds 2/3=2a_1 (a_1=1/3 from G1). The parameter point is admissible. The positive-mixture inequality ||h+k||^2/2<=||h||^2+||k||^2 is correct, so a lambda-independent positive Gaussian-exponential mixture is excluded in this Riesz case. The exclusions are correctly scoped: white-only, eventual large-time, prefactor K>1 and the asymptotic constant are not refuted."
+    },
+    {
+      "claim": "C4: The a0-up-to-one coefficient obstruction and all parameter/prefactor quantifiers, including static endpoint tests",
+      "verdict": "FAIL",
+      "reason": "The a0->1 limit is correct. H_alpha is continuous on [0,1] with H_alpha(0)=2^{3-alpha}/(2(3-alpha))=2^{2-alpha}/(3-alpha). The approximate identity gives (1-a0)b_1 -> c_alpha 2^{2-alpha}/[(1-alpha)(2-alpha)(3-alpha)] and a_1 -> c_alpha/[(1-alpha)^2(2-alpha)(3-alpha)], so (1-a0)A_1/a_1 -> 2^{2-alpha}(1-alpha)>0. Hence C=2^{4-alpha} fails near a0=1, and the screen correctly does not refute a C depending on (alpha,a0). The static endpoint tests, however, are stated without the required qualification. A_2/a_2=32 and D_2/a_2=17 hold only for the a0->0 limit coefficients; the model fixes a0>0. 3a says 'C=4 fails at order four'. 3b says 'C=2 ... is false already at n=2; C>=sqrt(17) is necessary'. Both are given as unqualified necessary constraints in a framework that fixes 0<a0<1. At a fixed positive a0 they are proved only for a0 small enough (by L:static-four continuity) or for constants uniform as a0 decreases to 0. The packet's own probe estimates D_2/a_2 at about 10.6 and A_2/a_2 at about 21 for a0=0.9. So 'C>=sqrt(17) necessary' is not established, and is statistically contradicted at that fixed a0. The same unqualified sentence recurs in probe.md lines 62-63."
+    },
+    {
+      "claim": "C5: Conditional sufficiency of (MC)/(DT) for G:upper via the imported first-moment theorem; the comparisons remain OPEN",
+      "verdict": "PASS",
+      "reason": "(MC) with A_0=a_0=1 and nonnegative coefficients gives E u^2(t)<=sum C^k a_k t^{beta k}=E u(C^{1/beta} t). Theorem 1.2 then gives limsup t^{-kappa} log E u^2<=C^{1/(3-alpha)}L*, consistent with the stated scaling lambda^{2/(3-alpha)}. C=2^{4-alpha} reproduces the factor 2^{(4-alpha)/(3-alpha)}. For (DT): ||X_n||_2<=C^{n/2}a_n^{1/2}t^{beta n/2}, and Minkowski applies because L^2 convergence comes from G0. The coefficient bound a_n<=C'^n/(n!)^{3-alpha} follows from Theorem 1.2 together with coefficient nonnegativity, by optimizing over t, or from the Section-8 estimate the screen cites. Summation gives scale (t^{beta/2})^{2/q}=t^kappa. (MC) implies (DT) because D_n<=A_n. Both are explicitly left unproved, and the screen says that naming (MC) is not progress."
+    },
+    {
+      "claim": "C6: Pointwise concatenation counterexample on a positive-measure contracted domain, distinct from the integrated comparison",
+      "verdict": "PASS",
+      "reason": "White (2,2),A, t=1: chain 1 has times (1/4,3/4) at x=1/5, with |1/5|<1/4 and displacement 0<1/2. Chain 2 has times (1/2,7/8) at y=-2/5, with 2/5<1/2 and displacement 0<3/8. All four Green factors are positive. In chronological order, the jump from (1/4,1/5) to (1/2,-2/5) covers distance 3/5>1/4, so the single-chain factor vanishes. All inequalities are strict, so an open neighborhood in the six contracted variables works, and the time weights are positive there. The Riesz one-vertex example (|y-x|>r-s) is also valid. The screen correctly limits the conclusion to pointwise or constant-multiplier mechanisms and keeps integrated comparisons eligible."
+    },
+    {
+      "claim": "C7: Geometry-erasing temporal symmetrization and count; inadequacy of the majorant",
+      "verdict": "PASS",
+      "reason": "Positions lie in [-t,t]. Bounding the 2k Green factors by (1/2)^{2k} and integrating k free positions gives (2t)^k/4^k=t^k/2^k. Summing over pairings gives a fully symmetric function, so each split simplex carries a 1/(m!n!) share. Then sum 1/(m!n!)=4^k/(2k)!, P_k=(2k)!/(2^k k!), and each pair contributes 2t^{2-a0}/((1-a0)(2-a0)). The product is [2/((1-a0)(2-a0))]^k t^{(3-a0)k}/k!, i.e. exp(C t^{3-a0}), with time exponent 3-a0>2>rho>kappa. The text correctly calls this a numerical majorant, not a lower bound, and does not exclude geometry-retaining symmetrization."
+    },
+    {
+      "claim": "C8: Probe normalization, original-order event, Z^2/4, covariance handling in ratios, tiny-gap handling, limitations",
+      "verdict": "PASS",
+      "reason": "Beta(1-a,2) times uniform l on [0,1-h] gives joint density h^{-a}/B(1-a,2). With fair orientation this is |s-r|^{-a}/Z, Z=2/((1-a)(2-a)) (the integral of |s-r|^{-a} over the unit square). Spatial density 1/4 and Green factor 1/16 give J=(Z^2/4)P(event). The PAIRINGS tuples encode A,B,C correctly. event() tests the original chain order (dt>0) and the strict cones, with zero displacement for same-colour vertices and no sorting. The metrics a2=sum04, A2=2sum04+2sum13+sum22, D2=sum22 match (E:total-four). The ratio delta method uses within-draw covariance, and Z^2/4 cancels. The signed same-pair gap avoids the l+h-l cancellation, and the 1e-50 control logic is correct. Every number in probe.md agrees with probe.json: z=-2.58 for 22-A, which lies outside its Wilson interval; controls at most 2.36 SE for fractional a; the ratio table, event counts, collapse counts and minimum gap. No statistic is promoted to proof. Cross-colour arithmetic is acknowledged as uncertified."
+    },
+    {
+      "claim": "C9: Overall scope, claim boundary and next missing obligation",
+      "verdict": "PASS",
+      "reason": "The screen is labelled unreviewed reconnaissance. It claims no G:upper, G:sharp or Round3/G2 completion, and keeps MC/DT unproved. It does not treat any first-moment comparison as a theorem. The held pure-cross/[held back] component is excluded. It states the next obligation precisely: an integrated rearrangement or coupling of the two-chain Wick sum into the single-chain Wick sum, at exponential cost in k with finite horizons. The C4 quantifier defect is the only scope failure: it overstates certain necessary constants."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [
+      "Static-endpoint necessary constants are presented as unqualified constraints at fixed 0<a0<1. Route-screen 3a ('C=4 fails at order four'; 'a uniform C must be at least sqrt(32)', where 'uniform' is ambiguous) and 3b ('C=2 ... is false already at n=2; C>=sqrt(17) is necessary') rely on A_2/a_2=32 and D_2/a_2=17. These are limits as a0 decreases to 0 of fixed-order coefficients. They constrain only constants uniform near a0=0, or (by continuity) a0 sufficiently small. They do not constrain a separately a0-dependent constant at a fixed positive a0. The packet's own probe gives D_2/a_2 of about 10.6 and A_2/a_2 of about 21 at a0=0.9, so 'C>=sqrt(17) is necessary' is not established and appears false there. probe.md lines 62-63 repeat the unqualified statement. Only A_1/a_1=4 and D_1/a_1=2 (white) hold at every a0."
+    ],
+    "minor": [
+      "3a says the Riesz C 'must exceed' 3b_1+2 but then states C>=3b_1+2. Equality is allowed at order one, so 'at least' is the correct wording.",
+      "Screen 1 evaluates the delta pointwise ('evaluates the even Green factor at spatial zero as 1/2') for general k. The notes' convention is regularized. The G1 approximate-identity argument extends directly, since the indicator is continuous at zero displacement for h>0, but the screen should say so.",
+      "Screen 4 says 'exponent 3-a0'. It should specify the time exponent in exp(C t^{3-a0}) (factorial denominator k!), to avoid confusion with the factorial power of G0.",
+      "3b states that the source's first-moment coefficient bound has denominator (n!)^{3-alpha} without a pinpoint. It also follows from Theorem 1.2 together with coefficient nonnegativity, by optimizing over t; noting this would make the import self-contained.",
+      "probe.md and the probe.py docstring refer to white-coefficient-probe.py/.json, while the packet files are probe.py/probe.json. This is a provenance naming mismatch only.",
+      "Screen 2 quotes b_1 of about 1.713864 from G1 floating controls. It is correctly marked as not part of the proof, and its source file is not in this packet."
+    ]
+  },
+  "required_repairs": [
+    "Qualify every static-endpoint necessary-constant statement in route-screen.md section 3a ('C=4 fails at order four', 'C must be at least sqrt(32)') and section 3b ('C=2 ... false already at n=2', 'C>=sqrt(17) is necessary'). Each must be stated either as a limit as a0 decreases to 0 (so valid only for a0 sufficiently small, by fixed-order continuity), or as a constraint on constants uniform as a0 decreases to 0. None may be presented as a necessary constraint at an arbitrary fixed positive a0. The identical sentence in probe.md lines 62-63 must be qualified the same way."
+  ],
+  "limitations": [
+    "This is an AI review of a bounded route-screen. It is not human verification, a novelty audit, Lean certification or circulation clearance.",
+    "G0/G1 results and the imported Chen Theorem 1.2 were taken as established inputs and not re-audited. No source PDF pinpoint (including the Section-8 coefficient estimate) was available or checked.",
+    "All algebra was checked by hand: Dirichlet constant, Stirling asymptotics, the 71/2160 vs 44/2160 comparison, the Jensen bound and its integral, the a0->1 limits, and the symmetrization count. Nothing was executed. Probe statistics were checked only for internal consistency between probe.md, probe.py and probe.json, not by re-running.",
+    "The numerical contradiction of 'C>=sqrt(17) necessary' at a0=0.9 is statistical evidence only. The required repair rests on the logical point that the static-limit values do not constrain fixed positive a0, not on the probe.",
+    "The held pure-cross/[held back] component and the Skorohod problem were excluded by contract and not examined.",
+    "Floating-point behaviour of cross-colour time differences and PRNG quality in the probe are uncertified, as the probe itself states."
+  ]
+}
