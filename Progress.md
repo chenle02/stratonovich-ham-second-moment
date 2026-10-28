@@ -6,7 +6,7 @@
 
 ## Current state
 
-- **Phase:**59page notes. New Section11 full-spatial-class static first-variance phase estimate: all7PASS/high,full delivery,no required repairs,accepted scoped review. Section10 energy lemma remains accepted8PASS/high. Expanded Section9 full moment argument remains all17PASS/medium,HIGH gate unmet. Arbitrary-covariance d3 and sharp goals stay open;source normalization awaits clarification. Accepted alpha<=1 moment baseline unchanged.
+- **Phase:**65page notes. New Section12 all-order regularized static phase/interaction argument remains a CANDIDATE;first review failed terminally with DNS EAI_AGAIN before any scientific report. Fresh unchanged-packet transport recovery is being prepared. Section11first-variance scope remains7PASS/high and Section10energy8PASS/high. Full Section9colored-time moment candidate remains17PASS/medium,HIGH gate unmet. Original general upper and sharp goals stay open.
 - **Proved in this project:** the P:Jensen Cauchy--Schwarz reduction (§2; numeric L_* calibration conditional on the intended source bound); reviewed G0 P:mixed, L:white-test,
   L:crude-corrected and P:envelope (§3); G1 finite coefficients (§4); reviewed G2 target-scale bounds P:d1-upper/P:low-alpha-upper for alpha<=1 (§5). Full goal and formal verification remain incomplete.
 - **Open targets:** remaining G:upper range 1<alpha<2-alpha0 in d=2,3; G:sharp; requested private Lean verification (not yet created).
@@ -1849,3 +1849,28 @@ JavaScript parse refusal with ZERO tool actions. Reissued without backticks;
 no source mutation or provider attempt occurred in that refused cell.
 This was a missed application of the existing string-quoting lesson,not a
 new mathematical or setup failure.
+
+
+### Static all-order review1 terminal DNS failure;fresh recovery authorized
+
+Native Opus5.5 attempt1 returned blocked-provider,provider_error=true,exit1,
+710.898s,with EAI_AGAIN API/DNS error. No scientific report,confidence or
+verdict. Full source delivery was verified,but delivery is not review.
+57raw/preflight members losslessly archived/member-hash verified,original
+terminal workspace preserved. Same first-party <plan removed> doctor revalidated;
+read-only DNS/HTTPS connectivity subsequently succeeded. No system config
+changed. Installed wrapper refuses blocked-provider resume,so a fresh
+unchanged-contract/packet attempt is the supported recovery. HIGH unchanged.
+Details and authorization assessment in static-phase-all-orders/recovery-decision.md.
+
+Le asked to see work and why PDF opening failed. Valid65page PDF opened on
+<MACHINE> tag4 at new Section12page58 through existing desktop helper. Project
+vifm/terminal lacked DISPLAY;graphical PDF handler/direct zathura explain
+the binary fallback/display error. Standing Agent21 lookup found no live
+registration;no persistent setup edits or substitute assignment. Workaround
+given to Le. This did not cancel mathematical goal work.
+
+On breakthrough status: original full colored-time problem remains unsolved;
+static exponent is known. Candidate arbitrary-phase/all-order operator
+control is potentially useful,but neither correctness review nor novelty
+clearance is claimed from the failed provider attempt.
