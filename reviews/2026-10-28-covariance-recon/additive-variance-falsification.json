@@ -1,0 +1,19 @@
+{
+  "scope": "UNREVIEWED exact falsification of unrestricted additive-variance logconvexity; scalar static Gaussian wave ODE only,not an admissible positive-exponent SPDE counterexample",
+  "series": "F(A)=1+sum_(k>=1)2^(3k-1)(2k)! A^k/(k!(4k)!)",
+  "claim_tested": "F((A1+A2)/2)^2 <=F(A1)F(A2) for allGaussian covariance amplitudes",
+  "variances": [
+    99,
+    100,
+    101
+  ],
+  "partial_order": 20,
+  "tail_bound": "term_(N+1)/(1-q), q=16A/(4N+1)^3<1; subsequent exact term ratios<=q",
+  "F100_lower_approx": "212.33241307320566",
+  "F100_upper_approx": "212.33241307320566",
+  "strict_gap_lower_numerator": "193667095944174072428388119044983062774704147607906838797228676794220152752092562868651739889033335700572919931744771667987968998804761985525538771775791178239",
+  "strict_gap_lower_denominator": "27884674437337421234421620031615924223762930098262761071148592404253888604174930697382670390560007634149135220001072548074887522707170217297971248626708984375",
+  "strict_gap_lower_approx": "6.945288042698284",
+  "status": "REFUTED by positive exact rational separation",
+  "does_not_refute": "multiplicative-covariance Holder/logconvexity in log amplitude,the target Stratonovich SPDE bound,or a restricted time-kernel comparison"
+}

@@ -1503,3 +1503,15 @@ growth,time-integrated single-wave and two-FREE-wave bounds for all homogeneous
 positive covariances. These may be classical inputs and require source matching.
 They do not control residual remote covariance factors or the all-order factorial
 budget. No bound is promoted by that probe and the full original goal stays open.
+
+Local falsification BEFORE investing in a covariance-timeblock shortcut:
+for scalar static Gaussian y''=Zy,VarZ=A,unit-time y0=1,v0=0,the exact
+positive series F(A)=E[y²]has an interval certificate F(100)²>F(99)F(101).
+Twenty rational terms plus geometric positive-tail bounds give an exact
+positive gap lower bound(approx6.945288). Thus unrestricted additive-
+variance logconvexity is false. This UNREVIEWED toy is alpha=alpha0=0,
+outside the strict target;it refutes only that unrestricted shortcut,not
+restricted kernel comparisons,target bounds,or the valid geometric Holder
+used in the paper(log amplitude rather than additive amplitude). No new
+accepted no-go or general SPDE counterexample is claimed. Reproducible
+script,formula,exact gap and scope retained in covariance-recon/.
