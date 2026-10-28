@@ -691,3 +691,15 @@ Raw85-file review evidence is byte-verified in the immutable archive and manifes
 Scientific/provenance status: CANDIDATE, review disposition pending; not full
 G:upper completion, not a claimed accepted proof checkpoint. No active native
 review or cluster job remains. The final cold reader has not been dispatched.
+
+
+### Explicit safe stop
+
+Le requested `$save-handoff` before answering the review-disposition question.
+This is a save/stop instruction, not approval to lower the threshold, launch a
+cold read, create the companion or promote the candidate. Research stops here.
+Candidate checkpoint b428446d1cd35ba890b135a66e97378adfe0da41 is committed and
+pushed. Wiki publication/round-close provenance is unfinished: no wiki file was
+edited; its project page still reports the accepted Round3 result. A clean
+isolated wiki clone was prepared but is not a publication receipt. The handoff
+records the exact next decision and this operational remainder.

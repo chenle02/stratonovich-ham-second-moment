@@ -34,7 +34,7 @@ Exit 0; 31 pages. Final log: zero errors, zero undefined references/citations an
 @@ -1546,10 +1546,11 @@
  \section{Higher spatial exponents under a convolution bound}
  \label{S:higher-alpha}
- 
+
 -\myCmts{UNREVIEWED candidate: all new statements in this section await
 -  independent Opus review. The convolution assumption below is additional
 -  to homogeneity. The concrete applications cover only the stated Riesz
@@ -44,7 +44,7 @@ Exit 0; 31 pages. Final log: zero errors, zero undefined references/citations an
 +  assumption below is additional to homogeneity. The concrete applications
 +  cover only the stated Riesz ranges; the full general upper-bound goal
 +  and sharp constants remain open.}
- 
+
  We retain the standing covariance assumptions and take $d\in\{2,3\}$ and
  $1<\alpha<2-\alpha_0$. Put $\delta=\alpha-1$, $q=3-\alpha$, and
 @@ -1928,8 +1929,9 @@
@@ -57,7 +57,7 @@ Exit 0; 31 pages. Final log: zero errors, zero undefined references/citations an
 +  with PASS\_WITH\_NOTES/medium confidence; configured high-confidence
 +  acceptance remains pending.
  \end{remark}
- 
+
  \section{Targets}\label{S:targets}
 ```
 
