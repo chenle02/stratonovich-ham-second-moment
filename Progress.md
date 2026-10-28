@@ -1515,3 +1515,12 @@ restricted kernel comparisons,target bounds,or the valid geometric Holder
 used in the paper(log amplitude rather than additive amplitude). No new
 accepted no-go or general SPDE counterexample is claimed. Reproducible
 script,formula,exact gap and scope retained in covariance-recon/.
+
+A second UNREVIEWED local screen rejects a named potential universal recipe:
+Gamma_st(x)=int s^{(2alpha-beta)/2-1}(p_s*Gamma)(x)²ds need not be Radon.
+For actual admissible d3Gamma=|x1|^-9/10|x2|^-1/5,alpha11/10,alpha0=1/4,
+theta7/8,beta9/5,the local squared-heat mass is>=Cs^-2/5 and the Mellin
+weight s^-4/5,giving a divergent s^-6/5 integral. Exact Fraction parameter
+control and complete lower-bound argument retained in covariance-recon/.
+This kills that isotropic nonlinear recipe only,not H9,the manuscript's
+linear-image method or the full target. No high-reviewed no-go is claimed.
