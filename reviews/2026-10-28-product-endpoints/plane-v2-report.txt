@@ -1,0 +1,71 @@
+```json
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    ".review/required-sources.json lines 1-45 (read plan only; not a packet file)",
+    "probe.md lines 1-160 (complete)",
+    "H9-excerpt.txt lines 1-35 (complete)",
+    "scope.txt line 1 (complete)",
+    "source-map.txt line 1 (complete)",
+    "plane-and-mixture-controls.py lines 1-47 (complete)",
+    "plane-and-mixture-controls.json lines 1-21 (complete)",
+    "chen-02.png (full image, direct Read)",
+    "chen-03.png (full image, direct Read)",
+    "chen-07.png (full image, direct Read)",
+    "chen-13.png (full image, direct Read)"
+  ],
+  "checks": [
+    {
+      "claim": "C1: The plane-supported target and endpoint measures are positive, even, Radon and tempered covariances. Feasible parameters give tangential exponents below 1, a low exponent of 1 and static beta<2. The normal delta is kept as a measure. The positive-definiteness argument is valid.",
+      "verdict": "PASS",
+      "reason": "Recomputed the parameters. alpha=1+s lies in (1,2-alpha0) exactly when s is in (0,1-alpha0). theta<1-s=2-alpha. beta=(alpha-theta)/(1-theta)=1+s/(1-theta), and beta<2 exactly when theta<1-s. sum v_j=s/(1-theta)<1, so every v_j<1. The fixed example a=(1/2,0), alpha0=1/4 gives the interval (1/4,1/2), midpoint 3/8, 1-theta=5/8, v=(4/5,0) and beta=9/5. H9's formula also gives (3/2-3/8)/(5/8)=9/5. Scaling: dy contributes r^2, delta_0(dz) is invariant under dilation, and f(ry)=r^{-s}f(y). This gives r^{2-s}=r^{3-alpha}, r^2 for the low endpoint and r^{2-s/(1-theta)}=r^{3-beta} for the static endpoint. Local finiteness follows from 1D integrability of |y_j|^{-e} for e<1. The measures have polynomial growth, so they are tempered. Evenness and nonnegativity are clear. Positive definiteness: <Gamma, phi*phi~> becomes int dz' intint f_e(y-y') phi(y,z') conj(phi(y',z')) dy dy', which is the probe's form. The formula int_0^inf t^{e/2-1} exp(-t y^2) dt = Gamma(e/2)|y|^{-e} is correct. Anisotropic products of Gaussians are positive-definite functions on R^2. A zero coordinate gives the constant 1, which is positive definite because its form is |int psi|^2. Tonelli applies: int f_e(u)A(u)du is finite, where A is the autocorrelation of |phi| over (y,z), which decays rapidly, and f_e is locally integrable and bounded off the axes. The low endpoint (f=1) gives int dz |int phi(y,z)dy|^2 >= 0. Consistency with the source class: the Fourier transform of the target is a positive measure proportional to |xi_1|^{a1-1}|xi_2|^{a2-1} dxi (with an atom when a_j=0). It is homogeneous of degree alpha, so source condition (1.5) holds exactly when alpha+alpha0<2. alpha<2<3=d, consistent with Theorem 1.2 and the alpha<=d remark."
+    },
+    {
+      "claim": "C2: The common measure m, the finite Gaussian-weighted measure q_x and the identity between ordinary densities give the comparison for all epsilon>0 and all translations. Both endpoint convolutions are finite. Rotation preserves everything. The result corresponds exactly to H9.",
+      "verdict": "PASS",
+      "reason": "The isotropic Gaussian factorizes, so q_x has total mass p_eps^(1)(x_3), which is finite. On q_x the ordinary functions satisfy c^theta (c f^{1/(1-theta)})^{1-theta} = c f m-a.e., since the axes are dy-null. Hölder with exponents 1/theta and 1/(1-theta) then gives exactly (E:three-gaussian-comparison) for every eps and x. 0<theta<1 holds because alpha0<theta<1-s. No power of a distribution is ever taken. Amplitudes are c^theta c^{1-theta}=c, and zero exponents give factor 1 in both f and f^{1/(1-theta)}. Each endpoint convolution equals c p_eps^(1)(x_3) times a product of 1D integrals of Gaussian times |y_j|^{-v_j} with v_j<1, so it is finite. In the normal factor Hölder is an equality, since theta+(1-theta)=1. Rotation: if all three measures are pushed forward by the same orthogonal R, positivity, evenness, positive definiteness (phi∘R is Schwartz), temperedness and the r-scalings (R(rA)=rRA) are preserved. Also p_eps*(R_#Gamma)(x)=(p_eps*Gamma)(R^{-1}x), so the comparison holds at every x. Against H9: the target meets the preamble (nonnegative, even, positive definite, tempered, scaling r^{3-alpha}, 1<alpha<2-alpha0). The endpoints have the required properties and scalings r^2 and r^{3-beta}, with beta given by H9's formula. Every epsilon and z are covered."
+    },
+    {
+      "claim": "C3: Low-endpoint spectral normalization V_low=c/pi in the source convention, normal Fourier factor 1/(2pi), wave normal marginal 1/2 on (-h,h), and Gaussian closing bound c/2, presented as a diagnostic only.",
+      "verdict": "PASS",
+      "reason": "In the source convention gamma(x)=int e^{i xi·x} mu(dxi) (chen-02 (1.3)), a constant in x_1 or x_2 has the unit atom delta_0(dxi_j), and delta_0(x_3)=(2pi)^{-1} int e^{i xi_3 x_3} dxi_3. So mu_low = c/(2pi) delta delta dxi_3, and mu_low(B_1) = (c/(2pi))·2 = c/pi. The spectral value: with F G(t)=sin(|xi|t)/|xi| (chen-07 (2.3)), a degree-1 homogeneous mu with mu(B_r)=Vr gives int sin(rho h)/rho V drho = pi V/2. For mu_low this is int c/(2pi) sin(|xi_3|h)/|xi_3| dxi_3 = c/2. The direct check agrees. G(h)=sigma_h/(4pi h) (chen-07 (2.5)). By Archimedes, the surface measure projects onto a coordinate with uniform density 2pi h on (-h,h). The marginal density is therefore 1/2, the mass is h (consistent with (2.4)), and (Gamma_low*G_h)(x)=(c/2)1_{|x_3|<h}. Gaussian smoothing keeps this at most c/2. The probe states that C2 does not use this diagnostic. No normalization error found."
+    },
+    {
+      "claim": "C4: Finite mixtures with nonnegative weights and a common alpha and theta (hence a common beta) are closed under the endpoint condition. Zero weights and the all-zero target are handled. No stochastic additivity or coupling is claimed.",
+      "verdict": "PASS",
+      "reason": "Common alpha and theta give a common beta, so sums of the endpoints keep the scalings r^2 and r^{3-beta}. Nonnegative finite sums preserve nonnegativity, evenness, positive definiteness, local finiteness and temperedness. l_i and s_i are finite because a positive tempered measure convolved with a Gaussian is finite. The chain p*Gamma = sum w_i p*Gamma_i <= sum w_i l_i^theta s_i^{1-theta} = sum (w_i l_i)^theta (w_i s_i)^{1-theta} is correct, using w=w^theta w^{1-theta} and 0^theta=0 for theta in (0,1). Discrete Hölder, sum A_i^theta B_i^{1-theta} <= (sum A)^theta (sum B)^{1-theta}, points the right way. Linearity identifies the sums as p*L and p*S. Zero weights and unequal entries cause no problem. If all weights are zero, L=S=0 satisfy the condition trivially. The probe states this is a closure of a deterministic sufficient condition, not a moment identity. Countable and integral mixtures are explicitly excluded. Section 2 also asserts that the Section 9 product and Riesz constructions allow every theta in (alpha0,2-alpha). That construction text is not in the packet. I checked it only as a sketch: Riesz satisfies the comparison pointwise for any theta<2-alpha, and a feasibility count suggests the same for ordinary products. See minor findings and limitations."
+    },
+    {
+      "claim": "C5: The exact controls (fixed example, 189 parameter cases, 256 half-theta mixture cases) agree with the proof and are not presented as a certificate. Scope is honest.",
+      "verdict": "PASS",
+      "reason": "Recounted by hand. The grid {0,1/10,1/4,2/5,3/4,99/100}^2 has 5+5+4+4+2+1=21 pairs with 0<s<1, and 21×9=189. Pairs with a zero coordinate: 10, and 10×9=90. Mixture cases: 4^4=256. The asserted identities match the proof algebra. The mixture assertion (l1 s2 + l2 s1)^2 >= 4 l1 l2 s1 s2 is AM-GM and holds automatically, so it is a tautological control. The JSON and probe both call these finite algebra diagnostics. Section 3 claims no density or representation for arbitrary d=3 covariances, says uniform endpoint bounds are still needed, and makes no Skorohod, sharp-constant, novelty, Lean or full-goal claim."
+    },
+    {
+      "claim": "C6: Whole-argument adversarial check against H9 and the pinned generalized-noise source class.",
+      "verdict": "PASS",
+      "reason": "Falsification probes: (1/2,0), 1/4, 3/8 is verified. As s approaches 1, v_j < a_j/s <= 1 uniformly. As theta approaches 1-s, beta approaches 2 and sum v approaches 1, both staying strict. As theta approaches alpha0, nothing degenerates. Zero tangential coordinates are handled as the constant 1 and as atoms in spectral space. Zero weights and unequal entries are covered. The source admits generalized covariances (chen-13: gamma may exist only as a generalized function and gamma_eps = gamma*p_eps), so a plane-supported measure is in class. The target satisfies alpha<3 and alpha+alpha0<2, and (1.5) holds via its homogeneous positive spectral density. No source first-moment or static-rate theorem is used. No defeating type, normalization or hidden assumption was found. This auxiliary check does not accept the stochastic consumer of H9."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "probe.md lines 137-141 depend on Section 9 claims (the ordinary-product and Riesz constructions allow every theta in (alpha0,2-alpha)) whose text is not in this packet. The plane and closure results do not depend on them. A one-line citation of the exact Section 9 statements would make the remark self-contained.",
+      "plane-and-mixture-controls.py hardcodes the fixed example (a=(1/2,0), alpha0=1/4, theta=3/8, v, beta) into its JSON output without computing or asserting it. a_1=1/2 is not on the grid, so the example is not among the 189 cases. I verified it by hand.",
+      "The 256 mixture controls test only the two-term, theta=1/2 AM-GM reduction, which holds identically. They do not test zero weights or general theta. This is acceptable as disclosed, but they add no evidence beyond the analytic discrete Hölder step.",
+      "The Fubini justification (probe.md lines 66-67) would be clearer if it named the dominating integral: int f_e(u)A(u)du, where A is the autocorrelation of |phi| over (y,z), together with the bound of f_e off the unit cube.",
+      "The probe could state explicitly that the plane target satisfies source condition (1.5): its spectral measure is a positive homogeneous density of degree alpha, with atoms at zero coordinates. This holds, but the probe asserts membership in the class only via the H9 preamble."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is an AI auxiliary review, not human verification, circulation clearance or a novelty audit.",
+    "The control script was not executed (no commands were permitted). The 189/90/256 counts and the assertion logic were recounted by hand. Byte identity and SHA-256 of the images and the JSON were not checked by me; they are externally certified.",
+    "Section 9 product and Riesz construction text and the 'radial-lowering counterexample' are not in the packet. The Riesz case was rechecked independently, and the ordinary-product theta-interval feasibility only as a sketch. Neither is a complete verification of those constructions.",
+    "The stochastic moment consumer of Hypothesis 9.2 is outside scope and is not accepted by this review. The pass applies only to the deterministic endpoint condition and its finite positive-sum closure.",
+    "Source images were read as rendered pages. Constants such as the wave kernel 1/(4pi t) sigma_t and the Fourier convention were taken from them visually."
+  ]
+}
+```

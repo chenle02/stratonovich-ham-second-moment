@@ -6,7 +6,7 @@
 
 ## Current state
 
-- **Phase:** Upper-bound candidates in Sections7--9: full admissible d2, d3 Riesz/product families, and conditional d3 endpoint transfer; high-threshold acceptance still incomplete. Section9 is49pages and independent review is pending. A separate source-normalization audit now passed Opus/high with verified delivery: literal(1.10)--(1.13) conflict under the finite-energy interpretation. Intended correction unknown; sharp target flagged for Le while upper-bound work continues. Accepted alpha<=1 baseline and accepted weighted auxiliary remain unchanged.
+- **Phase:** Full Section9 conditional d3/product/Riesz moment review returned all14PASS/medium with complete delivery; HIGH gate unmet, no promotion. Sections7/8 also remain candidates. Canonical notes now50pages after source/calibration qualification,with all27proof bodies and33formal statements preserved. New deterministic plane-supported endpoints and finite positive-sum closure passed a separate all6PASS/high source-bound review; this does not accept the moment consumer. Source normalization remains flagged for Le; accepted alpha<=1 baseline is unchanged.
 - **Proved in this project:** P:Jensen (§2); reviewed G0 P:mixed, L:white-test,
   L:crude-corrected and P:envelope (§3); G1 finite coefficients (§4); reviewed G2 target-scale bounds P:d1-upper/P:low-alpha-upper for alpha<=1 (§5). Full goal and formal verification remain incomplete.
 - **Open targets:** remaining G:upper range 1<alpha<2-alpha0 in d=2,3; G:sharp; requested private Lean verification (not yet created).
@@ -1357,3 +1357,35 @@ is a retained negative control. The guard must run in the SAME fail-fast shell
 as provider dispatch; shell set-e does not gate later tool calls automatically.
 It certifies byte/commit identity only,not semantic completeness or mathematics.
 No gate/receipt was weakened or rewritten,and no old attempt will be resumed.
+
+
+### Accepted deterministic plane endpoints and finite-sum closure
+
+Fresh valid Opus auxiliary review completed in183.331s: PASS_WITH_NOTES/high,
+all6PASS,no mandatory repairs/fatal/major findings,accepted=true and verified
+coverage of all six texts/four source images. Revisiondbd787f held through
+terminal collection. Exact accepted scope: rotated plane-supported covariances
+with normal delta/tangential fractional powers satisfy H9; finite nonnegative
+sums sharing alpha/theta/beta preserve H9; low V=c/pi and closingc/2.
+Actual full stochastic Section9 consumer remains all14PASS/medium,unaccepted.
+No arbitrary-covariance representation,density,sharpness,novelty or Lean claim.
+
+All five findings/limitations adjudicated in product-endpoints/plane-adjudication.md.
+Ordinary-product/Riesz constructions mentioned in the probe were not fully
+re-reviewed; this HIGH auxiliary pass does not promote those components.
+The fixed example was only displayed in the old script; root now computes and
+asserts it with Fraction in the live diagnostic(189/90/256counts unchanged).
+Frozen packet/script/report are unchanged. General-theta closure is proved by
+analytic discrete Holder,not by the tautological256half-theta controls.
+Absolute Fubini follows from product-weighted rapid autocorrelation decay,
+not a false global bound away from a cube. Spectral measure mass scaling,
+not a density assumption,discharges the original source condition.
+Native+dry-run evidence is losslessly archived with every member hash verified.
+All relevant processes are terminal; no cluster or companion was created.
+
+Prepared a concrete private wiki project-status proposal/patch and bounded
+frontmatter/link-preservation checks in reviews/2026-10-28-status-propagation/.
+It is not yet published. The mandatory queue's automatic Telegram receipt
+conflicts with the project's no-messages-without-instruction boundary; no
+queue/notification was triggered. Source and primary-review statuses remain
+explicit,with no mathematical candidate promotion or intended source correction.

@@ -1,0 +1,318 @@
+{
+  "schema": "le-ai-lab.review-read-ledger/1",
+  "coverage_verified": true,
+  "claude_code_version": "2.1.304",
+  "events_sha256": "69377c00dbf44e2b4b4fcb89734c5003d6c2ec2db6e33f67802e1ba0005ce744",
+  "events_hash_bound_to_receipt": true,
+  "stream_workspace": "<HOME>/Dropbox/workspace/svn/Article-Stratonovich-HAM-Second-Moment/reviews/2026-10-28-product-endpoints/opus-plane-v2/workspace",
+  "required_sources_sha256": null,
+  "continuation": false,
+  "continuation_credit": null,
+  "proves": "Each credited line was returned, numbered and byte-equal to the frozen workspace file, in a tool_result paired with a Read or line-numbered content-mode Grep call of the hash-bound provider stream.",
+  "does_not_prove": "Attention, understanding, or retention: a credited line may have been skimmed, ignored, or dropped by context compaction before the report was written. Uncredited lines may still have been seen in a form the ledger cannot attribute (previews, unnumbered output, subagents).",
+  "sources": [
+    {
+      "path": "H9-excerpt.txt",
+      "sha256": "d9295684b53cd0e3da794670614603e9bf2e657963f0804536a01d86e4c99f91",
+      "total_lines": 34,
+      "required_ranges": [
+        [
+          1,
+          34
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          34
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "plane-and-mixture-controls.json",
+      "sha256": "d3fea6c6090280f849fc29ec6cbcfe9578e7eab85214cbaf203e1830c4987bc2",
+      "total_lines": 20,
+      "required_ranges": [
+        [
+          1,
+          20
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          20
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "plane-and-mixture-controls.py",
+      "sha256": "49798a0deb13980ea56267c8882d4b052b2efeade8be7771cd9a2a2ce806f4d5",
+      "total_lines": 46,
+      "required_ranges": [
+        [
+          1,
+          46
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          46
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "probe.md",
+      "sha256": "3cbb5299a3ab4bf76a4f5d9d3961d7bf71a137377369617b05b9f938ad53fd43",
+      "total_lines": 159,
+      "required_ranges": [
+        [
+          1,
+          159
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          159
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "scope.txt",
+      "sha256": "83fa1cb5f49c972fbcb3d853912a1ddf8f7a500958ffdb15eb0a297bb5ce04cb",
+      "total_lines": 1,
+      "required_ranges": [
+        [
+          1,
+          1
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          1
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "source-map.txt",
+      "sha256": "882cc6d24377abd0481f775ae624eef128a4ab7cd204d44fc9f60c8471092f90",
+      "total_lines": 1,
+      "required_ranges": [
+        [
+          1,
+          1
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          1
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    }
+  ],
+  "image_proves": "Each delivered image: a direct Read tool_use of its exact workspace path, in the stream's session, is paired by id with a tool_result (same session) whose content is one inline base64 image block of the declared media type, and the base64 decodes to bytes whose sha256 is the declared one.",
+  "image_does_not_prove": "That the model looked at, understood or correctly interpreted the image, or any scientific acceptance of what it shows: only delivery of these exact bytes. Transformed or resized content, metadata and self-reports earn nothing, so an undelivered image may still have been seen in another form.",
+  "required_images": [
+    {
+      "path": "chen-02.png",
+      "sha256": "779b3292ab9ab704d043bf0a4ce7248b9318cc00607d30ff2a384d1f989bbb35",
+      "media_type": "image/png",
+      "status": "delivered",
+      "delivered_by": [
+        "toolu_01NsQfdya33sfzu3rhZuiHSe"
+      ]
+    },
+    {
+      "path": "chen-03.png",
+      "sha256": "fdc694e9ef84e47392334ebc65c2b79215fff1e7d368402827cec359b706cfa6",
+      "media_type": "image/png",
+      "status": "delivered",
+      "delivered_by": [
+        "toolu_01D4ZmBG9tM1Gtpunz9jkj3J"
+      ]
+    },
+    {
+      "path": "chen-07.png",
+      "sha256": "09ea5dd9b94b1711807e01e775d8a75967fb7559d80ed35fa90d56c80af6cd84",
+      "media_type": "image/png",
+      "status": "delivered",
+      "delivered_by": [
+        "toolu_01ESxvvHUyEQ7QADDfBmC3cz"
+      ]
+    },
+    {
+      "path": "chen-13.png",
+      "sha256": "2012b798e41988bdc05281160d3c2437a62031adb2852e188ad4fcfc9dbf7c97",
+      "media_type": "image/png",
+      "status": "delivered",
+      "delivered_by": [
+        "toolu_016x4N1j7ZQrsBTvVtSSq8uD"
+      ]
+    }
+  ],
+  "tool_calls": [
+    {
+      "id": "toolu_01B6Zn7yMyJg3ZV1TcuK5S7x",
+      "tool": "Read",
+      "source": ".review/required-sources.json",
+      "plan_copy_read": [
+        ".review/required-sources.json"
+      ],
+      "uncredited": "runner-owned plan copy (.review/): never read credit",
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01PbKDdQuaESY4Fxu1BsjGGo",
+      "tool": "Read",
+      "source": "probe.md",
+      "credited": {
+        "probe.md": [
+          [
+            1,
+            159
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01Mrh9dw1E92kKb5Ajyk4pQf",
+      "tool": "Read",
+      "source": "H9-excerpt.txt",
+      "credited": {
+        "H9-excerpt.txt": [
+          [
+            1,
+            34
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01HAA9yU8MwGpV4k8zYQNrHA",
+      "tool": "Read",
+      "source": "scope.txt",
+      "credited": {
+        "scope.txt": [
+          [
+            1,
+            1
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_012Zsnqa49Sni5s5yfPwiM2g",
+      "tool": "Read",
+      "source": "source-map.txt",
+      "credited": {
+        "source-map.txt": [
+          [
+            1,
+            1
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_011Jr2noLbp54RPxKnmq2zJk",
+      "tool": "Read",
+      "source": "plane-and-mixture-controls.py",
+      "credited": {
+        "plane-and-mixture-controls.py": [
+          [
+            1,
+            46
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01DEbpQWGQFXM4wKHNpebW2y",
+      "tool": "Read",
+      "source": "plane-and-mixture-controls.json",
+      "credited": {
+        "plane-and-mixture-controls.json": [
+          [
+            1,
+            20
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01NsQfdya33sfzu3rhZuiHSe",
+      "tool": "Read",
+      "source": "chen-02.png",
+      "uncredited": "non-text result (image, PDF or block list)",
+      "stream": "attempt",
+      "image": {
+        "path": "chen-02.png",
+        "media_type": "image/png",
+        "decoded_sha256": "779b3292ab9ab704d043bf0a4ce7248b9318cc00607d30ff2a384d1f989bbb35",
+        "delivered": true
+      }
+    },
+    {
+      "id": "toolu_01D4ZmBG9tM1Gtpunz9jkj3J",
+      "tool": "Read",
+      "source": "chen-03.png",
+      "uncredited": "non-text result (image, PDF or block list)",
+      "stream": "attempt",
+      "image": {
+        "path": "chen-03.png",
+        "media_type": "image/png",
+        "decoded_sha256": "fdc694e9ef84e47392334ebc65c2b79215fff1e7d368402827cec359b706cfa6",
+        "delivered": true
+      }
+    },
+    {
+      "id": "toolu_01ESxvvHUyEQ7QADDfBmC3cz",
+      "tool": "Read",
+      "source": "chen-07.png",
+      "uncredited": "non-text result (image, PDF or block list)",
+      "stream": "attempt",
+      "image": {
+        "path": "chen-07.png",
+        "media_type": "image/png",
+        "decoded_sha256": "09ea5dd9b94b1711807e01e775d8a75967fb7559d80ed35fa90d56c80af6cd84",
+        "delivered": true
+      }
+    },
+    {
+      "id": "toolu_016x4N1j7ZQrsBTvVtSSq8uD",
+      "tool": "Read",
+      "source": "chen-13.png",
+      "uncredited": "non-text result (image, PDF or block list)",
+      "stream": "attempt",
+      "image": {
+        "path": "chen-13.png",
+        "media_type": "image/png",
+        "decoded_sha256": "2012b798e41988bdc05281160d3c2437a62031adb2852e188ad4fcfc9dbf7c97",
+        "delivered": true
+      }
+    }
+  ],
+  "diagnostics": []
+}

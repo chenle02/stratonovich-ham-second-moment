@@ -27,6 +27,14 @@ for a in product([F(0), F(1, 10), F(1, 4), F(2, 5), F(3, 4), F(99, 100)], repeat
             cases += 1
             zero_coordinates += any(x == 0 for x in a)
 
+# The separately displayed example must actually be computed and asserted.
+fixed_a, fixed_a0, fixed_theta = [F(1, 2), F(0)], F(1, 4), F(3, 8)
+fixed_alpha = 1 + sum(fixed_a)
+fixed_v = [x / (1 - fixed_theta) for x in fixed_a]
+fixed_beta = (fixed_alpha - fixed_theta) / (1 - fixed_theta)
+assert fixed_a0 < fixed_theta < 2 - fixed_alpha
+assert fixed_v == [F(4, 5), F(0)] and fixed_beta == F(9, 5)
+
 # At theta=1/2, squaring gives a purely rational Cauchy control.
 mixture_cases = 0
 for l1, l2, s1, s2 in product([F(0), F(1, 4), F(1), F(4)], repeat=4):
@@ -39,8 +47,9 @@ for l1, l2, s1, s2 in product([F(0), F(1, 4), F(1), F(4)], repeat=4):
 out = {"scope": "finite exact algebra diagnostics only; no analytic, stochastic, independent-review or Lean certificate",
        "plane_parameter_cases": cases, "cases_with_zero_tangential_coordinate": zero_coordinates,
        "two_term_half_theta_mixture_controls": mixture_cases,
-       "fixed_white_plane_example": {"a": ["1/2", "0"], "alpha0": "1/4",
-                                     "theta": "3/8", "v": ["4/5", "0"], "beta": "9/5"},
+       "fixed_white_plane_example": {"a": list(map(str, fixed_a)), "alpha0": str(fixed_a0),
+                                     "theta": str(fixed_theta), "v": list(map(str, fixed_v)),
+                                     "beta": str(fixed_beta), "executed_assertion": True},
        "status": "PASS"}
 Path(__file__).with_suffix(".json").write_text(json.dumps(out, indent=2) + "\n")
 print(json.dumps(out, indent=2))

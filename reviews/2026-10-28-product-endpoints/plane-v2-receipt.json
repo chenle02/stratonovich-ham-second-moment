@@ -1,0 +1,187 @@
+{
+  "provider": "claude",
+  "started_utc": "2026-10-28T11:13:57.409730+00:00",
+  "workspace": "<HOME>/Dropbox/workspace/svn/Article-Stratonovich-HAM-Second-Moment/reviews/2026-10-28-product-endpoints/opus-plane-v2/workspace",
+  "source_revision": "dbd787f82697d9c3bfc178d7f0c221d15ebeabed",
+  "input_hashes": {
+    "H9-excerpt.txt": "d9295684b53cd0e3da794670614603e9bf2e657963f0804536a01d86e4c99f91",
+    "chen-02.png": "779b3292ab9ab704d043bf0a4ce7248b9318cc00607d30ff2a384d1f989bbb35",
+    "chen-03.png": "fdc694e9ef84e47392334ebc65c2b79215fff1e7d368402827cec359b706cfa6",
+    "chen-07.png": "09ea5dd9b94b1711807e01e775d8a75967fb7559d80ed35fa90d56c80af6cd84",
+    "chen-13.png": "2012b798e41988bdc05281160d3c2437a62031adb2852e188ad4fcfc9dbf7c97",
+    "plane-and-mixture-controls.json": "d3fea6c6090280f849fc29ec6cbcfe9578e7eab85214cbaf203e1830c4987bc2",
+    "plane-and-mixture-controls.py": "49798a0deb13980ea56267c8882d4b052b2efeade8be7771cd9a2a2ce806f4d5",
+    "probe.md": "3cbb5299a3ab4bf76a4f5d9d3961d7bf71a137377369617b05b9f938ad53fd43",
+    "scope.txt": "83fa1cb5f49c972fbcb3d853912a1ddf8f7a500958ffdb15eb0a297bb5ce04cb",
+    "source-map.txt": "882cc6d24377abd0481f775ae624eef128a4ab7cd204d44fc9f60c8471092f90"
+  },
+  "target": "probe.md",
+  "claude_account": "<removed>",
+  "review_contract_sha256": "2576d3261b82447ebaa566c0b701e0a763fb5e1a1b2ed8d46f7e2c10fc12f657",
+  "effort_requested": "high",
+  "resumed_from": null,
+  "resume_mode": null,
+  "resume_binding": null,
+  "min_confidence": "high",
+  "scientific_verdict": "PASS_WITH_NOTES",
+  "accepted": true,
+  "report_contract_schema": "subscription-review-report/1",
+  "report_legacy_mode": null,
+  "legacy_resume_binding": null,
+  "diagnostics": [],
+  "required_sources_sha256": "694168369aa2943a748368c975049579a9bf00e5b6e1c5e82ac7098560d6cb9b",
+  "required_sources_workspace_copy": ".review/required-sources.json",
+  "workspace_preflight": {
+    "schema": "le-ai-lab.review-workspace-preflight/1",
+    "scanned": "review contract (--prompt-file)",
+    "references": {
+      "H9-excerpt.txt": [
+        "H9-excerpt.txt"
+      ],
+      "probe.md": [
+        "probe.md"
+      ],
+      "scope.txt": [
+        "scope.txt"
+      ],
+      "source-map.txt": [
+        "source-map.txt"
+      ]
+    },
+    "waived": [],
+    "missing": [],
+    "required_sources_copy": ".review/required-sources.json"
+  },
+  "runtime_preflight": {
+    "effective_version": "2.1.304",
+    "cli_version": "2.1.304 (Claude Code)",
+    "image_requirements": true,
+    "supported_versions": [
+      "2.1.302",
+      "2.1.304"
+    ],
+    "supported": true
+  },
+  "cli_version": "2.1.304 (Claude Code)",
+  "executable": "<HOME>/.local/state/Le-AI-Lab/swe-white-time-resume-20261024/runtime/node_modules/@anthropic-ai/claude-code-linux-x64/claude",
+  "executable_requested": null,
+  "executable_effective": {
+    "path": "<HOME>/.local/state/Le-AI-Lab/swe-white-time-resume-20261024/runtime/node_modules/@anthropic-ai/claude-code-linux-x64/claude",
+    "version": "2.1.304 (Claude Code)"
+  },
+  "read_ledger_format_supported": true,
+  "auth": {
+    "authMethod": "<removed>",
+    "apiProvider": "firstParty",
+    "subscriptionType": "<removed>",
+    "email": "<account email removed>"
+  },
+  "model_requested": "claude-opus-5-5",
+  "command_without_prompt": [
+    "<HOME>/.claude/bin/claude-acct",
+    "run",
+    "<account removed>",
+    "--print",
+    "--model",
+    "claude-opus-5-5",
+    "--effort",
+    "high",
+    "--disable-slash-commands",
+    "--strict-mcp-config",
+    "--mcp-config",
+    "{\"mcpServers\":{}}",
+    "--permission-mode",
+    "dontAsk",
+    "--permission-prompts",
+    "none",
+    "--output-format",
+    "stream-json",
+    "--verbose",
+    "--tools",
+    "Read,Grep,Glob",
+    "--allowedTools",
+    "Read,Grep,Glob",
+    "--agents",
+    "<HOME>/Dropbox/workspace/svn/Article-Stratonovich-HAM-Second-Moment/reviews/2026-10-28-product-endpoints/opus-plane-v2/claude-reviewer.json",
+    "--agent",
+    "artifact-reviewer",
+    "<stdin: prompt.txt without its final newline>"
+  ],
+  "prompt_transport": "stdin",
+  "prompt_bytes": 6937,
+  "prompt_sha256": "99abb12cd3adb9b60266e18615270929924a07839629ab423b411d881e542eb5",
+  "transport_exit_code": 0,
+  "transport_ok": true,
+  "model_actual": "claude-opus-5-5",
+  "session_id": "ad5e6585-9772-4231-9bd3-a8bfa10b412b",
+  "usage": {
+    "input_tokens": 8,
+    "cache_creation_input_tokens": 35153,
+    "cache_read_input_tokens": 69711,
+    "output_tokens": 19148,
+    "output_tokens_details": {
+      "thinking_tokens": 12896
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 35153,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 17740,
+        "cache_read_input_tokens": 26003,
+        "cache_creation_input_tokens": 12354,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 12354
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "provider_error": false,
+  "terminal_subtype": "success",
+  "tools_actual": [
+    "Read",
+    "Grep",
+    "Glob"
+  ],
+  "actual_route_verified": true,
+  "candidate_hashes_unchanged": true,
+  "raw_report_sha256": "7b85d4ff53a4346b123a49831c74c286c225a32253debef0c182c455d63639f2",
+  "status": "review-complete",
+  "confidence": "high",
+  "report_interpretation": {
+    "contract_schema": "subscription-review-report/1",
+    "report_schema": "subscription-review-report/1",
+    "legacy_mode": null,
+    "normalized_verdict": "PASS_WITH_NOTES",
+    "normalized_confidence": "high",
+    "normalized_check_verdicts": [
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS"
+    ]
+  },
+  "report_sha256": "8211d0fe4414244c35f86cd71729e43e23a7c49c811fdf83c6b6f437bd04a5f1",
+  "report_text_format": "fenced-json",
+  "report_body_sha256": "26ae8dd17d33b3afb84f7b3fb43a45a8254a0a30dbb2b5fa37fdb942e372a776",
+  "finished_utc": "2026-10-28T11:17:00.740828+00:00",
+  "elapsed_seconds": 183.331,
+  "transport_events_sha256": "69377c00dbf44e2b4b4fcb89734c5003d6c2ec2db6e33f67802e1ba0005ce744",
+  "transport_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "read_ledger_sha256": "12986510a116baf8090a3f5eda69a0eab798abc7717738516d487e332c051bf6",
+  "coverage_verified": true
+}
