@@ -1995,3 +1995,31 @@ new sharp-constant work. The standing goal stays ACTIVE and uncompleted;
 this required PI checkpoint does not silently pause,shrink or complete it.
 Final whole-paper DeepSeek/source-bound clearance remains due before Le
 circulates the result. No notification or source-author message was sent.
+
+
+### Continued authorized fresh whole-paper cold-read preparation
+
+Previous goal turn classified PROGRESS:full original upper proof accepted
+and reported to Le at decision5,then saved/pushed/synchronized. This
+continuation discharges the already requested fresh DeepSeek V4-Pro cold
+read;no G:sharp proof wave,Lean creation,publication or message is opened.
+The full goal and HIGH threshold remain unchanged.
+
+Canonical scan found two stale local-scope banners calling the general
+higher-alpha range open. Corrected to point to Section13;one remark now
+says coverage-of-this-section. All42proof bodies byte-identical. Canonical
+74page and prior-blind72page builds have0errors/undefined/overfull/tabs;
+actual formatter idempotent. The complete blind manuscript preserves all
+nonremark formal statements and all42proofs,removing only prior-review
+status boxes/sentences. Exact transformation/diff/binding retained.
+
+Fresh direct DeepSeek model/category match verified by native probe and
+export. Explicit --dir plus matching cwd and isolated temporary git root
+verified an actual file read inside the packet;no live-repo re-anchoring.
+Default route is TEXT ONLY,so pinned full primary-source text extractions
+and source TeX-as-text are available with exact edition/hash inventory.
+The full manuscript and bibliography are delivered inline with the
+verbatim canonical FREE-FORM cold-reader prompt,no history or checklist.
+Launch-local output cap131072 fits model393216;no repeat of the old32000
+reasoning-token/no-report cap. Preflight is not scientific review.
+Full fresh cold read PENDING;whole-paper gate UNCERTIFIED/NORMAL_REVIEW.
