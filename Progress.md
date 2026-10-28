@@ -954,3 +954,23 @@ All remain diagnostics, not replacements for the all-order proof/review.
 General anisotropic covariance factorization and sharp constants remain open.
 The new route would establish full isotropic Riesz coverage, not the full
 original homogeneous-covariance goal.
+
+
+### Wiki candidate/status propagation closed at this checkpoint
+
+Published project status47656fa4aec7163351f9933991ba3fe2f84de53e and
+propagation/retrospective dc0f88d550d4cf006c61189efdf537ae66f46cb4.
+Accepted Round3, unpromoted Round4 with cold-read limitations and accepted
+deterministic weighted two-wave lemma are separated explicitly. No full
+upper-bound or sharp-constant claim. The later interpolation route is still
+a new candidate under development and is not promoted by this wiki update.
+
+Queue CLEAR, targeted lint and110project relation/contract checks PASS.
+Index/dashboard commands ran; unrelated generated age/host churn removed;
+all five anchors and both companion backlinks already present. Full push
+gates passed for page and retrospective, with a refused origin race followed
+by rebase and complete regate. Process-local dependencies and <HUB>'s
+deployed Ruff0.11.13 were used; earlier tooling failures retained.
+Publication receipt/log archive: reviews/2026-10-28-wiki-propagation/.
+Local/origin/<HUB> parity observed at84fd5b9a; the clean fully published
+isolated clone was retired. No canonical wiki WIP or source adapter modified.
