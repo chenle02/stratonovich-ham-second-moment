@@ -1,62 +1,71 @@
 # HANDOFF
 
-**Last updated**: 2026-10-27 14:28 UTC
-**Project**: Article-Stratonovich-HAM-Second-Moment — reviewed partial upper bound
-**Wiki page (authoritative strategy)**: `../SPDEs-wiki/content/projects/stratonovich-ham-second-moment.md`
+**Last updated**: 2026-10-28 02:40 UTC (<MACHINE>, Codex)
+**Project**: Article-Stratonovich-HAM-Second-Moment — higher-alpha candidate checkpoint
+**Wiki page (accepted Round3 status, not current candidate)**: `../SPDEs-wiki/content/projects/stratonovich-ham-second-moment.md`
 
 ## ⏭ Next session: where to stand and what to do
 
-Stand at this repository root on `master`. Read `Progress.md` and the
-accepted Section5 result, especially Proposition 5.5 on PDF p.21.
-**Stop for Le at decision point 5:** the target-scale upper bound has now
-been proved and cross-family reviewed for 0<alpha<=1 in d=1,2,3. The
-original full goal is not complete. Do not open another proof wave until
-Le responds to this checkpoint. Point1 was passed earlier and must not be
-reimposed; this is the new proof checkpoint.
+Stand at this repository root on `master`. Read `Progress.md` and
+`reviews/2026-10-27-round4/review-summary.json`, then obtain Le's disposition
+of the concrete Round4 candidate. Two native Opus reviews returned
+PASS_WITH_NOTES/medium, all9checks PASS and no required repairs; the second
+has verified full source delivery. The configured high-confidence gate remains
+unmet, so no acceptance or proof-status promotion is claimed. Do not re-run an
+unchanged argument just to seek a higher confidence label.
 
-The private companion proposal is also pending the explicit decision point 4
-answer. No repository, remote, package registration or lease has been created.
-Approval to continue mathematics is not automatically approval to create it.
+Le explicitly requested the save handoff before answering the offered choices
+(keep the threshold and seek a fresh DeepSeek cold read; accept the medium scoped
+review with limitations; or save and stop). Saving is not an answer to that
+question. No new review/proof work is authorized by the save itself. The private
+Lean companion still separately awaits decision point4 approval.
 
 ## Pre-flight checks
 
-1. `git fetch origin && git status -sb`; audit local/origin/<HUB> and
-   preserve new foreign WIP. Expected ancestry and provenance are below.
-2. Author PDF SHA-256:
+1. Confirm repository root, branch and clean tree; expected pre-handoff HEAD
+   `2e4f6c5997efef9c22b8da8abe3c69369f39b411`, with a dedicated handoff commit
+   following it. Fetch and audit local/origin/<HUB> serially before edits.
+2. Read `AGENTS.md`, `PROJECT-GOAL.md`, `Progress.md` and the Round4 README.
+   `Progress.md` remains the workflow authority; the full goal is unfinished.
+3. Verify author PDF SHA256
    `5f7385ca451e643a1f3ff31835e4ee52b2708b5d2e3652eec3fb5d3958b97b6c`.
-3. Read `AGENTS.md`, `PROJECT-GOAL.md`, `Progress.md`, source manifest,
-   Section5 and `lean-progress/CREATION-PROPOSAL.md` before acting.
-4. Canonical notes have 25 pages. Build with the root latexmk command;
-   require 0 errors, 0 undefined references/citations and 0 overfull boxes.
-5. Final TeX SHA-256:
-   `1ca13d491918d96126e70aef6229a80805ce5043a676f0a55c34c0858238e686`.
-   PDF SHA-256:
-   `461da80cee71c1b651ed63500c8ce9687c92dbeb8bcfc555979321690d6dc8bd`.
-6. Verify actual live handles before waiting on any job. All current agents
-   and native mathematical reviews are terminal; no cluster job was launched.
+4. Canonical notes:31pages; final TeX SHA256
+   `81bd89bdd2cbbd10e4973953db3794a47aa596c65d7e5e0ad33e7a41531e473a`;
+   PDF SHA256
+   `d3c9179fa2466126bc77e2340536a05bf6ab1ab48aa6397bfc307321dbcc7099`.
+   Build with the root latexmk command only if source/build verification is
+   needed; last gate was0errors,0undefined references/citations,0overfull boxes.
+5. Verify `reviews/2026-10-27-round4/review-evidence.tar.xz` against its member
+   manifest before extracting evidence. It retains85byte-verified files from
+   both attempts and frozen packets, including all native receipts and streams.
+6. There are no active native reviews, subagent tasks or cluster jobs. Both
+   GPT workers were closed. No companion repository, registry entry or lease exists.
 
 ## Concrete deliverables for the next session
 
-- Obtain Le's decision after the reviewed partial G:upper result.
-- If mathematics continuation is authorized, choose the remaining
-  1<alpha<2-alpha0 range in d2/d3 or the sharp-constant work according to
-  that direction. Preserve the full goal, including the inherited constant gap.
-- A tentative high-alpha spatial-maximum/Holder lead is recorded in
-  `reviews/2026-10-27-round3/recon/high-alpha-transfer-note.md`; it is
-  UNREVIEWED, not a theorem. Its maximum hypothesis is not available for
-  arbitrary anisotropic homogeneous covariance. Revalidate before use.
-- If companion creation is approved, reuse the exact-compatible Physlib
-  matching count, review the actual statement interface and verify the new
-  coefficient-count/algebra consumers locally through lean-pkg. The package
-  must remain private; no public release is authorized.
+- Resolve the medium-confidence acceptance disposition with Le before promotion.
+  If a cold read is chosen, use the project-required DeepSeek V4-Pro route and a
+  fresh source-bound packet; this session did not preflight or dispatch it.
+- Candidate scope: isotropic Riesz d3,1<alpha<2-alpha0; d2,
+  1<alpha<min(3/2,2-alpha0). Conditional transfer assumes a genuinely uniform
+  spatial convolution maximum. Explicit constants are nonsharp.
+- Residual mathematics: general anisotropic high-alpha covariance, d2 Riesz
+  3/2<=alpha<2-alpha0 (possible only if alpha0<1/2), sharp constants and Lean.
+- After a disposition, finish the outstanding wiki candidate/status propagation
+  and provenance loop. No wiki page was edited or published in this session;
+  the existing page correctly retains accepted Round3 but omits Round4.
+- A clean disposable wiki clone exists at
+  `../../../../.local/state/tmp/spdes-wiki-wave.w5azow45`, HEAD
+  `143711bb1d5a192779c6524f1fa72bd2db54c739`, with no edits or external WIP.
+  It contains no unique research payload; use a fresh clone for a future wave.
 
 ## Success criteria for the immediate next step
 
-Le has made the next-wave decision. The successor must keep the accepted
-proof unchanged unless a concrete defect is found, preserve the distinction
-between proved alpha<=1 coverage and open higher-alpha cases, and obtain
-independent review for any new proof. Formal verification must reach actual
-consumers, not merely re-define the desired numerical recurrence.
+Le's disposition is explicit and recorded without rewriting the actual Opus
+confidence or receipts. The successor preserves the exact candidate proof,
+source bindings and acceptance boundary. An authorized status promotion must
+update the abstract, global coverage comments and planned route consistently;
+those currently retain the accepted alpha<=1 scope deliberately.
 
 ## Anti-success criteria
 
@@ -64,60 +73,65 @@ consumers, not merely re-define the desired numerical recurrence.
 
 ## What the previous sessions produced
 
-- G0: `4ff2bca60e666482480596cc1e53b9be06750ea7`, reviewed mixed expansion,
-  corrected crude bound, intermediate rho upper bound and scoped no-go.
-- G1: `8358d58c40591922a971790827f10ebe576932e0`, all 15 white order-four terms,
-  exact static coefficient11/540, Riesz coefficients/representation.
-- G2 scientific checkpoint: `53e2817eafd9ed4de30f3acda6427629b61c71e0`. Spatial endpoint elimination
-  retains k^(-(2-alpha)k); the full temporal Wick sum is then symmetrized,
-  yielding denominator(k!)^(3-alpha). Spectral ball masses handle alpha<1;
-  a separate degree-one polar/Gaussian Fourier identity handles alpha=1.
-- Result: E u²<=exp(C2 t^kappa), kappa=(4-alpha-alpha0)/(3-alpha), for
-  0<alpha<=1 in all three dimensions, with explicit nonsharp constants.
-  This covers the full stated d1 range and includes its white endpoint.
-- Opus final upper review: PASS_WITH_NOTES/high, all 12 checks PASS, accepted,
-  complete source delivery, no required repairs. Earlier FAIL/medium screen,
-  repaired screen, below-threshold d1 review and preflight refusal are preserved.
-- Status-only promotion changed no mathematics: root compared all 14 proof
-  environments, all 27 statement bodies and equation blocks byte-for-byte.
-- Exact scopes/hashes/archives: `reviews/2026-10-27-round3/README.md` and
-  `upper-review-summary.json`, `upper-promotion-binding.json`.
-- Known reusable count: Physlib pin3bfc7af8dbd43b439d761e09ce365a3759b5c2f5,
-  matching Lean 4.35.0 / Mathlib 56a005855ea17e0b0958f73ec801ae140b0a1679.
-  Read-only source findings are in `lean-progress/recon/`; no build was run.
+- Round4 candidate checkpoint `b428446d1cd35ba890b135a66e97378adfe0da41`:
+  Section6 conditional Holder/Dirichlet transfer, Riesz applications, spatial-max
+  obstructions,31page PDF, two scoped Opus reports, source evidence and diagnostics.
+- Safe-stop record `2e4f6c5997efef9c22b8da8abe3c69369f39b411`:
+  explicit user stop and unfinished review/wiki obligations; author-report whitespace
+  cleanup only, no mathematical changes.
+- Reviewed v2 TeX SHA256
+  `86ea2cf65a8eeff0a2bfb79fe045fcf9709d1e10ae7117b4d9472a7e2bd8a1da`.
+  Final source changes review-status prose only. Root compared18proofs and25formal
+  statement environments byte-for-byte; `status-binding.json` records exact counts.
+- V1: PASS_WITH_NOTES/medium, all9PASS; image delivery unverified because root
+  omitted image kinds in the manifest. Preserved unchanged, not accepted.
+- V2: substantively expanded Gaussian-mixture and approximate-identity arguments,
+  explicit comparison scope,17correctly typed/hash-bound source pages;
+  PASS_WITH_NOTES/medium, all9PASS, coverage_verified=true, accepted=false solely
+  at the configured high-confidence threshold. No mandatory repairs.
+- Accepted earlier results remain unchanged: G0 `4ff2bca60e666482480596cc1e53b9be06750ea7`;
+  G1 `8358d58c40591922a971790827f10ebe576932e0`; alpha<=1 upper checkpoint
+  `53e2817eafd9ed4de30f3acda6427629b61c71e0` in d1,d2,d3.
+- Previous accepted wiki checkpoint:
+  `a1aab66454bfefa4c5823684b9a9635fcc152539`.
 
 ## Repo & git state at handoff
 
-- Article pre-handoff HEAD: `0982ca48c65b8a55878019f2dcf0fb7b4ecddc9c` on `master`.
-- Accepted scientific checkpoint: `53e2817eafd9ed4de30f3acda6427629b61c71e0`.
-- Wiki proof-status commit: `a1aab66454bfefa4c5823684b9a9635fcc152539`, published after the full push gate
-  and final origin race check. Its rebase onto unrelated upstream work was
-  patch-identical. The provenance loop is recorded in Progress.md.
-- This handoff is a separate commit. Final push/parity and clean-tree checks
-  follow this write. The clean isolated wiki clone contains no external WIP.
+- Branch: `master`; pre-handoff HEAD `2e4f6c5997efef9c22b8da8abe3c69369f39b411`.
+- Both preceding commits are pushed to origin. Final handoff push and <HUB>
+  parity are checked after this write. Tree was clean before this handoff edit.
+- All new research payload is committed; no foreign or staged author WIP was found.
+- Origin remains the configured <HUB> bare remote. `All.bib` remains read-only.
+- The disposable wiki clone is clean and unpublished; no wiki commit from this wave.
 
 ## Operating notes
 
-The full goal remains unfinished; the goal service is stopped at the user's
-proof checkpoint, not marked complete. Higher-alpha G:upper, G:sharp, private
-formal verification and final cold-reader/circulation clearance remain open.
-The Lean track is still L0. The pending creation question was not answered;
-elapsed time is not approval. No emails, fleet messages or Telegram notices
-were sent. No public paper or Lean package was released.
+The user save request ends this research session. No goal service goal is active;
+the written full objective remains unfinished. Lean remains L0/proposed.
+No emails, fleet messages, Telegram notices, public paper release or cluster job
+occurred. The mathematical author and root checks are GPT-family work, not
+independent certification. Novelty remains unverified; no circulation clearance.
+
+The native reviewer used the already-retained CLI2.1.304 via process-local PATH
+and the existing <account B> subscription. Default CLI2.1.312 did not match
+the read-ledger gate; no system setup was modified. Exact runtime identity is in
+archived receipts. Revalidate account/runtime if a future dispatch is authorized.
 
 ## Risks to monitor
 
-1. The successful theorem requires nonnegative covariance as well as positive
-   definiteness; neither requirement may be silently removed.
-2. Temporal symmetry is used only AFTER taking a common spatial bound and
-   SUMMING pairings. It is false for a general individual diagram.
-3. The alpha=1 endpoint retains the oscillation and uses a polar measure;
-   the divergent absolute Fourier envelope cannot be used there.
-4. In d3, take the Green eta limit at fixed noise smoothing before the noise
-   limit. The accepted proof writes the L2/L1 transfer explicitly.
-5. Higher-alpha maximum bounds may fail for anisotropic covariance; the
-   unreviewed conditional lead is not the full remaining theorem.
-6. Static endpoint tests constrain uniformity near the endpoint, not an
-   arbitrary separately chosen constant at fixed positive alpha0.
-7. Imported source results remain imports; no whole-source, novelty, human
-   referee or Lean certification is inferred from the Opus report.
+1. Joint Holder must be on counting measure over pairings times time measure;
+   time symmetry applies only after summing the full temporal pairing factor.
+2. Negative closing powers cannot be put into the old weighted AMGM; only the
+   positive opening powers are bounded that way. Dirichlet integrability uses
+   delta*r<1 and alpha0*r'<1, equivalent to the standing threshold.
+3. The d3 Riesz supremum occurs at the sphere, not its center. d2 fails at3/2.
+   Nonnegative positive-definite anisotropic product covariances can fail the
+   spatial maximum for every alpha>1 despite satisfying the existence threshold.
+4. Product covariances are unbounded along coordinate singularities at infinity;
+   their Gaussian limit is justified by factorization, not boundedness at infinity.
+5. d3 Green smoothing is removed first at fixed noise smoothing, then the noise
+   limit; mixed products pass in L1 from fixed-order L2 convergence.
+6. V2 minor notes are explicitly nonblocking in the report: optional general
+   ball-growth remark, approximate-identity neighborhood order, scaling emphasis
+   and residual-case wording. Do not convert them into fabricated major defects
+   or silently certify them through a fresh unreviewed proof rewrite.
