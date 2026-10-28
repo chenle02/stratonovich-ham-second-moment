@@ -1,24 +1,33 @@
-Last updated: 2026-10-28 14:07 UTC
+Last updated: 2026-10-28 14:33 UTC
 
 # HANDOFF — Article-Stratonovich-HAM-Second-Moment
 
 ## ⏭ Next session: where to stand and what to do
 
-Continue the ORIGINAL arbitrary-covariance higher-alpha d3 upper-bound question.
-First do wiki CLI search/cite and read the new Milman paper/concept synthesis,
-then test whether the queued Rubin real-parameter cosine-transform results
-provide a controlled positive ENDPOINT MAJORANT for our d3 covariance class.
-Do not assume exact ellipsoid representation or replace the goal by a subclass.
-Read actual theorem hypotheses and run a singular/anisotropic falsification
-case before investing in a proof. Reuse the existing four exact reference
-tickets;do not duplicate enqueue.
+Test the missing STATIC PHASE-PROPAGATOR estimate needed for a possible
+time-block approach to the full arbitrary-covariance upper bound. Start with
+general-covariance-cones/block-propagator-screen.md and exact rational check.
+Two independent static blocks carry velocity;their scalar solution-value
+second moments do NOT multiply. The screen is UNREVIEWED and outside the
+target temporal class;it does not establish a replacement operator bound.
 
-The previously proposed physical/Fourier energy lemma is now DONE at its
-scoped HIGH gate: Section10 Lemma10.1,all8PASS/high,full delivery,no required
-repairs,accepted=true. Source2718647,disposition734d0bf. This does NOT accept
-the full moment argument;expanded Section9 remains all17PASS/MEDIUM. Do not
-rerun it unchanged to seek a confidence grade. General covariance,sharp
-constant,novelty and formal verification remain open.
+Before SPDE proof investment,identify a norm controlling both position and
+velocity for arbitrary deterministic initial phase,under the original rough
+homogeneous spatial covariance. A form-bounded potential need not be a
+bounded L2 multiplier. Switching field-dependent energy norms can introduce
+a fixed loss per short block. Prove/control that loss before claiming the
+formal dyadic scale calculation. Start any literature recon with actual wiki
+CLI search/cite and reading;do not assume static value asymptotics imply
+static phase-operator bounds. No Skorohod exact-constant work here.
+
+The preceding geometry recon is CLOSED at a narrow reviewed checkpoint:
+Rubin's analytic real-parameter closure does not supply an endpoint-mixture
+theorem;ordinary positive cosine integrals diverge in the target range;
+angular Poisson smoothing plus scalar Riesz envelopes lacks uniform amplitude.
+All6PASS/HIGH,full delivery,sourcecd6b490/dispositiona79ee25. This does NOT
+kill other endpoint/approximation methods or the moment goal. Do not rerun
+this source audit or seek a confidence-only retry of the17PASS/MEDIUM moment
+assembly. Accepted energy Lemma10.1 remains separate. Full target unchanged.
 
 ## Pre-flight checks
 
@@ -52,30 +61,37 @@ constant,novelty and formal verification remain open.
    58b152d78cd0d54d82b991933b3eaece86e1ed2b44fe09882c14eba921e97e22.
    Keep process-local supported native runtime/account verification.
 
+9. New scoped screen: scientific sourcecd6b490803115e7051e2404e69fc48542d92a50b;
+   dispositiona79ee254abdaef5b6fa6e24bdbedb419f22b0fdb. Opus6PASS/HIGH,
+   full4text/11image delivery,accepted=true,212.28s,no mandatory repairs.
+   general-covariance-cones/adjudication.md records all8minor findings.
+   Raw56members losslessly archived/member-hash verified;no run remains live.
+10. Rubin primary arXiv0704.0061v2 PDF SHA256:
+   44959d734e694c473b57f233f9d5c09e3f5a8efebc0b9a0b74c32267e4a35554.
+   Labels refer to arXivv2 only,not journal. The proof imports positivity,
+   not an unexamined density normalization. Heat p1 is Brownian variance1;
+   spectral convention Gamma=int exp(i xi.x)mu.
+
 ## Concrete deliverables for the next session
 
-- Resolve a genuinely new general-covariance step with falsification first,
-  rather than extending an already-known easier family. Positive covariance
-  domination preserves H9;bounded angular density has a Riesz majorant. The
-  difficult class includes unbounded angular/singular covariances beyond the
-  explicit endpoint families. Controlled limits require uniform constants.
-- Universal ball/time-integrated/two-FREE-wave controls are local UNREVIEWED
-  deductions in covariance-recon/general-covariance-probes.md,possibly
-  classical. They do not erase remote covariance factors or factorial costs.
-- Avoid the two recorded failed shortcuts: unrestricted additive-variance
-  logconvexity has an exact scalar toy refusal;isotropic heat-Mellin-square
-  construction fails local finiteness on product9/10,1/5,0. Both screens
-  remain unreviewed and narrowly scoped;neither refutes the target theorem.
-- Exact reference-state-final.json: Milman2006structure and Milman2008
-  nonequivalence are gold,verify_digest PASS,lint clean,all-six convergence.
-  Rubin2008cosine and Frank etal2026Riesz remain pending. Read version/range
-  restrictions;no integer n>=4 result is a d3real-alpha representation theorem.
-- Private wiki proposal reconciled to56pages/accepted energy lemma at7ff001e;
-  prepared page/patch are NOT published. Current canonical wiki HEAD was
-  9927dedfa0c5229ffd6749019a24d14049c58cca;project bytes unchanged from base.
-  Reread base/concurrent work before any authorized publication.
-- Lean stays L0/PROPOSED;no package/lease/registry/build exists. Generic praise
-  and explicit reference-queue permission do not answer companion decision4.
+- Establish or falsify the phase-propagator estimate described above before
+  attempting a long time-block proof. The dyadic scale calculation is merely
+  conditional;overlapping noise levels and regularization limits are open.
+- Do NOT use static solution-value products or additive-covariance logconvexity.
+  New exact two-block formal coefficient gap7/3 is a velocity diagnostic;
+  older independent additive-variance refusal remains separately scoped.
+- If revisiting geometry,keep the reviewed obstruction narrow: Poisson
+  smoothing plus angular-supremum scalar Riesz envelope fails uniformity.
+  Fixed Gaussian and spectral ball masses do not control angular suprema.
+  This does not disprove a better endpoint majorant.
+- Prior universal ball/time-integrated/two-FREE-wave controls do not remove
+  remote diagram factors or solve the all-order factorial budget.
+- Four references remain retained under their existing exact IDs. Last
+  verified snapshot: both Milman papers gold;Rubin and Frank pending. Do not
+  duplicate enqueue or infer source applicability from an ingestion receipt.
+- Prepared private wiki proposal includes the new screen atf912da4,still
+  unpublished. Recheck current base/concurrency before authorized publication.
+- Lean stays L0/PROPOSED;decision4 before creation remains unanswered.
 
 ## Success criteria for the immediate next step
 
@@ -227,9 +243,20 @@ Latest checkpoints:
   Durable operational/source lessons in energy-fidelity/lessons.md. Existing
   wiki-first rule application miss recorded;no duplicate canonical skill.
 
+- 2026-10-28 sourcecd6b490/dispositiona79ee25: actual canonical wiki CLI and
+  synthesized Milman/concept recon before primary Rubin reading. New complete
+  source/ordinary-kernel/Poisson-plane screen accepted6PASS/HIGH,all source
+  delivery verified,all8minor findings adjudicated;56raw members archived.
+  Canonical56page manuscript untouched. Narrow approximation obstruction only.
+- 2026-10-28 a79ee25: UNREVIEWED exact two-static-block phase diagnostic
+  through A²,formal first-order gap7/3;conditional time-block research plan
+  names all missing operator/overlap/limit steps. New lessons retained.
+- 2026-10-28 f912da4: prepared wiki proposal includes narrow accepted screen
+  and separates unreviewed block diagnostic;not published.
+
 ## Repo & git state at handoff
 
-- master;substantive pre-handoff HEAD 7ff001e67489e8acbdc68a65df11c8fb4eef6e01,pushed and <HUB>-synced.
+- master;substantive pre-handoff HEAD f912da4cfe6b01bc5114d9d0813bd0ece18d69c5,pushed and <HUB>-synced.
 - Only this dedicated HANDOFF update pending;no author WIP/native job remains.
 - Canonical56page source/PDF binding above. Source PDFs,All.bib and sibling
   Articles untouched by root. Reference service owns its six repository work.
@@ -283,3 +310,10 @@ current56page clearance. No unchanged confidence lottery.
 9. Byte provenance,native source delivery and mathematical confidence are
    separate. Raw diagnostic output is not formal proof or human verification.
 10. No general goal completion,sharpconstant,novelty,Lean or circulationclaim.
+11. Real-parameter analytic continuation is not an ordinary positive mixture.
+    Source Example6.3 uses a dual GENERALIZED COSINE (Radon-type)transform.
+    Theorem5.8 concerns star-body closure,not ellipsoid endpoints. New scope
+    does not imply a global representation impossibility.
+12. Wave blocks carry velocity. Do not extrapolate the unreviewed scalar
+    phase diagnostic to an SPDE theorem or mistake phase-energy equivalence
+    factors for bounds uniform in the number of short intervals.
