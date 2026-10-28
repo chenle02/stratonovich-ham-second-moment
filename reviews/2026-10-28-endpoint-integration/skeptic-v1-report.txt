@@ -1,0 +1,133 @@
+```json
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "medium",
+  "source_coverage": [
+    ".review/required-sources.json lines 1-204 (read plan only, no read credit)",
+    "section9.txt lines 1-887 (complete)",
+    "context.txt lines 1-459 (complete)",
+    "reading-map.json lines 1-90 (complete)",
+    "source-map.md lines 1-60 (complete)",
+    "references.bbl lines 1-73 (complete)",
+    "normalization-boundary.txt lines 1-12 (complete)",
+    "route-constraints.txt lines 1-13 (complete)",
+    "balan-conus-02.png, balan-conus-03.png, balan-conus-05.png, balan-conus-07.png (complete images: journal pp.1489, 1490, 1492, 1494)",
+    "chen-02.png, chen-03.png, chen-07.png, chen-08.png, chen-09.png, chen-10.png, chen-11.png, chen-13.png, chen-14.png, chen-22.png, chen-30.png (complete images, author-manuscript PDF pages)",
+    "chen-2023-01.png, chen-2023-02.png (complete images, EJP pp.1-2)",
+    "chen-hu-2145.png, chen-hu-2146.png, chen-hu-2147.png, chen-hu-2149.png, chen-hu-2150.png, chen-hu-2151.png, chen-hu-2152.png, chen-hu-2153.png, chen-hu-2165.png, chen-hu-2173.png, chen-hu-2175.png, chen-hu-2179.png, chen-hu-2180.png (complete images, printed journal pages)",
+    "canonical.tex, canonical.pdf, paper-*.pdf: not opened (optional context only)"
+  ],
+  "checks": [
+    {
+      "claim": "C1: Strict ordinary-product endpoint construction (Lemma 9.1)",
+      "verdict": "PASS",
+      "reason": "Checked on a positive coordinate: L_j<U_j in both cases a_j>=theta and a_j<theta. The r>=2 bound sum_I a_j<=alpha<2-theta<=r-(r-1)theta is equivalent to (r-2)(1-theta)>=0, which gives sum L<1; r=0 and r=1 also hold. sum U>1 holds because either some U_j=1 and a second positive coordinate exists, or sum U=alpha/theta>1. So 0<Lambda<1, sum b=1, and L_j<b_j<U_j gives 0<v_j<1. Zero coordinates give b=v=0. Also beta-alpha=theta(alpha-1)/(1-theta) and 2-beta=(2-alpha-theta)/(1-theta). Numerical tests passed: a=(0.6,0.6,0), theta=0.5 gives b=(.5,.5,0), v=(.7,.7,0), beta=1.4. a=(0.995,0.995,0), theta=0.008 gives L=.375, Lambda=.2, b=.5, v~0.999<1. a=(0.5,0.5,0.01), theta=0.9 gives sum b=1 and all v<1. The Gaussian-mixture Gamma(e/2) factors appear only for active exponents, and Fubini is justified by |psi|-integrability. Exponent-zero factors are the constant one, never a coordinate exponent 1. The common amplitude is c^theta c^(1-theta)=c, and Holder on the Gaussian probability measure is in the correct direction."
+    },
+    {
+      "claim": "C2: Plane-supported endpoints (Lemma 9.3), positive definiteness, V_low=c/pi and closing bound c/2",
+      "verdict": "PASS",
+      "reason": "Falsification case a=(1/2,0), alpha0=1/4, theta=3/8: alpha=3/2<7/4, theta lies in (1/4,1/2), b0=2/3, beta=9/5, v=(4/5,0) and v1+v2=beta-1=0.8. The measure scalings are 2-s=3-alpha, 2 and 2-(beta-1)=3-beta. The quadratic form <Gamma,phi*phi~>=int dz int int f_e(y-y')phi(y,z)conj(phi(y',z)) is correct and is slice-wise nonnegative for the tangential Gaussian mixture, including f=1 where it equals |int g|^2. A(u)<=C_N prod(1+|u_j|)^(-N) together with e_j<1 and N>1 gives absolute integrability. Holder is applied to ordinary densities w.r.t. the finite measure p_eps(w-(y,0))dy, whose mass is p^(1)_eps(w3); c f=c^theta(c f^(1/(1-theta)))^(1-theta). In the convention gamma(x)=int e^{i xi x}mu(d xi), mu_low=c delta0 delta0 d xi3/(2pi), so mu_low(B1)=c/pi and piV/2=c/2. An independent check by Archimedes' projection (the sphere measure G_h projects to (1/2)1_{|v|<h}dv) gives the same c/2."
+    },
+    {
+      "claim": "C3: Extension of H9 from isotropic widths to every nondegenerate Sigma",
+      "verdict": "PASS",
+      "reason": "For 0<a<lambda_min(Sigma), Sigma-aI is positive definite and q_Sigma=p_a*q_{Sigma-aI}. F_J=p_a*J is nonnegative and finite because J is a positive tempered measure. It is continuous and bounded by F_J(0), since its spectral measure e^{-a|xi|^2/2}mu_J is finite. By Tonelli, q_Sigma*Gamma=q_{Sigma-aI}*F_Gamma. H9 at width a holds pointwise, and Holder on the probability density q_{Sigma-aI}(x-.) runs in the correct direction. No degenerate limit and no isotropy are used."
+    },
+    {
+      "claim": "C4: Invertible pushforward closure",
+      "verdict": "PASS",
+      "reason": "Substituting u=Tw gives (phi*phi~)(Ty)=d_T(psi*psi~)(y) with psi=phi(T.), so the quadratic form of T#J is d_T times a nonnegative one. If Z~N(0,eps I), then T^{-1}Z has density d_T p_eps(Tw) and covariance eps T^{-1}T^{-T}, so (p_eps*T#J)(x)=d_T^{-1}(q_Sigma*J)(T^{-1}x). The endpoint factors give d_T^{-theta}d_T^{-(1-theta)}=d_T^{-1}. |det| covers negative orientation, and shears, diag(2,1,1/2) (d_T=1) and diag(2,1,1) (d_T=2) are all fine. Evenness, temperedness (|Ty|>=|y|/||T^{-1}||) and homogeneous scaling (T commutes with dilation) are preserved, including for singular plane measures. The pushed-forward normal delta and the determinant factor are tracked separately. The wave operator is never transformed."
+    },
+    {
+      "claim": "C5: Nonnegative finite-sum closure",
+      "verdict": "PASS",
+      "reason": "w_i(p*Gamma_i)<=w_i l_i^theta s_i^(1-theta)=(w_i l_i)^theta(w_i s_i)^(1-theta), and discrete Holder bounds the sum by (sum w_i l_i)^theta(sum w_i s_i)^(1-theta). With 0<theta<1, zero weights contribute 0, and the all-zero target is trivial. Common alpha, theta and beta are required and are supplied by the common midpoint. No signed weights, countable limits or moment additivity are used."
+    },
+    {
+      "claim": "C6: H9 and the conditional theorem match H:homog and source object types",
+      "verdict": "PASS",
+      "reason": "Distributional homogeneity of degree -alpha is equivalent to Gamma(rA)=r^{3-alpha}Gamma(A) and mu(rA)=r^alpha mu(A) (checked via gamma(cx) giving the pushforward of mu under xi->c xi). Both sources explicitly allow generalized covariances: Chen pp.2 and 13, Chen-Hu pp.2145-2146, Chen2023 p.1. The parameter set alpha0<theta<2-alpha is nonempty because alpha<2-alpha0, and b0=alpha0/theta lies in (0,1). The zero target is excluded or handled trivially. H9 is presented as an extra deterministic condition, and no universal general-d=3 factorization is claimed."
+    },
+    {
+      "claim": "C7: Static source application (Chen-Hu, Chen2023)",
+      "verdict": "PASS",
+      "reason": "The dyadic bound mu(B1)+2^beta mu(B1)sum 2^{j(beta-2)} verifies Dalang (1.6). Theorem 3.8(i) (p.2165) gives the fixed-order L2 limits. Mixed unequal-order moments are recovered as limits of explicit Wick sums over all of Pi_k, including within-chain pairs, which agrees with (2.17) and (2.19)-(2.22). (5.1) gives B_k(t)=t^{(4-beta)k}B_k(1), and (5.15) at p=2 gives a finite limsup. Chen2023 Theorem 1.1 allows generalized gamma and gives a finite square-root supremum, and p.2175 gives sup=2^{beta/(4-beta)}M. M_st matches (1.11) with unit gradient penalty, and its nonnegativity via dilation g_lambda=lambda^{3/2}g(lambda.) is correct. beta lies in (alpha,2), inside 0<beta<2 and d=3."
+    },
+    {
+      "claim": "C8: Regularized coefficient, common measure and Holder on the whole measure",
+      "verdict": "PASS",
+      "reason": "The source's W_{eps,delta} has covariance gamma^0_delta(s-t)gamma_{2eps}(x-y) ((2.9), (2.24)), so the edge width is 2eps. gamma^0_delta<=|u|^{-alpha0}=(|u|^{-b0})^theta, since the Laplace integral is truncated. Reversing (2.16) produces n root-anchored Green factors, the same form as the static (2.13). nu sums over all splits and pairings, with empty chains as empty products, and has mass sum_m P_k int prod h_l<infinity. Holder applies to int T_b0^theta H_low^theta H_st^(1-theta) d nu over the entire measure. L_k is a deterministic raw-time integral, and no stochastic identity or log-convexity is assumed for it."
+    },
+    {
+      "claim": "C9: Uniform degree-one closing bound and time/factorial bookkeeping",
+      "verdict": "PASS",
+      "reason": "In descending label order, the closing label j of pair (i,j) carries the only remaining covariance involving y_j; this holds for within-chain and cross-chain pairs because the chains have separate roots. Each such step is bounded by piV/2, uniformly in eps and eta>=0. At an opening the factor is h_i. AM-GM with sum<=2t gives (piV)^k t^k/k^k. The sum over D is symmetric, so the integral over the simplex product is the cube integral divided by m!(2k-m)!. int int|s-r|^{-b}=2t^{2-b}/((1-b)(2-b)), and P_k*2^{2k}/(2k)!=2^k/k!. Hence L<=(2Z pi V)^k t^{(3-b0)k}/(k! k^k)<=C_low^k t^{(3-b0)k}/(k!)^2. Lemma 2.10's proof uses only spectral homogeneity of degree 1 and evenness, so it applies to plane measures, transformed endpoints and sums without any angular density."
+    },
+    {
+      "claim": "C10: Static field and approximant identification",
+      "verdict": "PASS",
+      "reason": "Var increment=2int(1-cos)e^{-eps|xi|^2}mu<=|h|^2 int|xi|^2 e^{-eps|xi|^2}mu<infinity, and eighth moments of order |h|^8 exceed what Kolmogorov needs in dimension 3. ||Phi_n||^2<=P_n v^n by counting the (2n-1)!! pairings. L2-continuity and separable range give strong measurability. The Green-chain mass is int prod h<infinity, and at eta=0 the spatial marginal is mu_n^{t,x} (p.2152). The pathwise integral exists a.s. (int E|Phi|d rho<infinity, Minkowski). Fubini duality with Y=J_n-U_n identifies it with the Bochner integral. Modification independence follows from Fubini. The result is the integral in Chen-Hu's (3.1)/p.2153 convention, with common width as a special case of the vector-width statement."
+    },
+    {
+      "claim": "C11: Static Green eta->0 limit",
+      "verdict": "PASS",
+      "reason": "The second and mixed moment integrands are bounded continuous Wick functions of the positions. For fixed times, products of G_{h,eta} converge weakly with mass h unchanged, including mixed eta/0 products. They are dominated by sup times prod h, which is integrable on bounded simplexes. The identity E|U^eta-U^0|^2=E(U^eta)^2-2E[U^eta U^0]+E(U^0)^2->0 identifies the limit with the named eta=0 object, not merely a Cauchy limit. Order 0 is the constant 1."
+    },
+    {
+      "claim": "C12: Target field and eta=0 object",
+      "verdict": "PASS",
+      "reason": "gamma^0_delta matches source (2.9)/(2.24), and gamma^0_delta(0)=delta^{-alpha0}/(alpha0 Gamma(alpha0)). The temporal increment is <=|h|Gamma(alpha0)^{-1}int_0^{1/delta}lambda^{alpha0}d lambda, and the joint variance splits as 2[gamma(0)(K(0)-K(h'))+K(h')(gamma(0)-gamma(h0))]<=C(|h0|+|h'|^2). Twelfth moments are <=C|h|^6 for |h|<=1, enough for Kolmogorov in dimension 4. The target measure is its own kernel (2.16) with s_{n+1}=t and x_{n+1}=x. Bochner and pathwise integrals agree as in C10, and the eta-limit matches the source's two-step definition on pp.13-14 at fixed eps,delta."
+    },
+    {
+      "claim": "C13: Order of fixed-order noise limits",
+      "verdict": "PASS",
+      "reason": "The order is correct. First eta->0, using the uniform L-bound and L2 convergence at every order <=2k. Then eps,delta->0: target via Chen Theorem 4.1 (p.22, under (1.5), checked by the dyadic sum with weight (1+|xi|^2)^{-(2-alpha0)/2} and alpha<2-alpha0); static via Chen-Hu Theorem 3.8(i). Products converge in L1 by the displayed inequality, split sums are finite, and the empty orders are 1. The static majorant enters only after these limits. No monotone smoothing, no uniform smoothed asymptotic and no raw singular target integral is used."
+    },
+    {
+      "claim": "C14: Static all-time coefficient bound and precise p=2 rate",
+      "verdict": "PASS",
+      "reason": "C_st=max(e^R, max over the finitely many low k of ((k!)^Q B_k(1))^{1/k}) is independent of k, t and x by (5.1). The Xi=0 case and B_k(1)=0 cases are harmless. (5.15) at p=2 reads limsup((k!)^Q B_k(1))^{1/k}<=2^{-Q}2^{nu}(2sqrt(M)/nu)^nu, and the log there applies to the whole product, consistent with (5.3). nu-Q=1 gives Lambda_st=2(2sqrt(M_st)/(4-beta))^{4-beta}. No spatial-white sharp value and no current-author E or E_star enters."
+    },
+    {
+      "claim": "C15: Target coefficient, all-time series and nonsharp limsup",
+      "verdict": "PASS",
+      "reason": "2theta+(1-theta)(3-beta)=3-alpha and theta(3-b0)+(1-theta)(4-beta)=4-alpha-alpha0, both verified algebraically. q=3-alpha>1, and l1 inside lq gives sum z^k/(k!)^q<=(sum z^{k/q}/k!)^q=e^{q z^{1/q}}. A_0=1 and the full nonnegative series of Prop P:mixed apply. N_r depends only on B_k(1), so it is t-free. The finitely many low orders are kept as a real-exponent power sum P_r with log P_r/t^kappa->0. log(a+b)<=max+log 2 gives limsup<=qD_r^{1/q}, and r->0 handles a zero rate. The asymptotic constant is never inserted into the all-time bound."
+    },
+    {
+      "claim": "C16: Corollaries 9.6 and 9.7",
+      "verdict": "PASS",
+      "reason": "The midpoint theta=(alpha0+2-alpha)/2 lies in (alpha0,2-alpha) and depends only on alpha and alpha0. Each component's endpoints are verified: products by Lemma 9.1; Riesz by c|x|^{-e} with e<3, the Gaussian mixture, and alpha=theta+(1-theta)beta; planes by Lemma 9.3. Lemma 9.4 is then applied per map and per sum, with the endpoint sums written explicitly. The target is nonzero when some w_i>0. The constants depend on the maps and weights, with no uniform distortion and no solution-coupling identity. The Remark's Jensen calibration is explicitly conditional. The Balan-Conus comparison is confined to the Riesz case and the strictly positive alpha_j in (0,1) case (iii), with rho_w=kappa for 2H-2=-alpha0."
+    },
+    {
+      "claim": "C17: Whole-argument fidelity and dependency direction",
+      "verdict": "PASS",
+      "reason": "Section 9's premises are context-supplied accepted results (Prop P:mixed, Lemma L:alpha-one-convolution, Prop P:Jensen used only conditionally), imported theorems whose hypotheses were checked, and new deductions verified above. Sections 6/7/8 are not used. The current-author first-moment constants are not inputs, consistent with normalization-boundary.txt. The text claims no general d=3 upper bound, sharp constant, novelty or formal verification. No hidden gap that blocks acceptance was found."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Section 9 defines W_eps as 'the static Gaussian field with covariance p_{2eps}*Gamma_st' and then calls the result the source's 'actual' S_{n,eps}. Chen-Hu's S_{n,eps} uses the mollification of a given noise W. The moment identities need only equality in law, or a continuous version of the source's mollified field. A sentence saying which is meant would make the identification exact.",
+      "The text says the measure-form energy Q_st(g)=int int g(y+z)^2 g(y)^2 dy Gamma_st(dz) is 'precisely' Chen-Hu (1.11), and it relies on Chen2023's Fourier/generalized-function functional. For singular or transformed Gamma_st, equality of the measure pairing with the Fourier form is a standard Parseval step for the positive-definite L1 autocorrelation of g^2. It is not written out. Finiteness itself follows from Chen2023.",
+      "Applying Chen-Hu (5.1) and (5.15) to measure-valued Gamma_st (plane measures, pushforwards, sums) relies on reading (1.8) as distributional homogeneity. The source supports this reading (generalized noise; the Dirac case on p.2146), but Section 9 could state it explicitly next to the citation.",
+      "Lemma L:alpha-one-convolution is stated 'under the preceding covariance assumptions with alpha=1' for the model covariance, but it is used for endpoint measures that are not the model noise. Its proof uses only spectral homogeneity of degree 1 and evenness. A one-line note that the hypotheses hold for Gamma_low would make the application explicit.",
+      "Lemma 9.3: the bound A(u)<=C_N prod(1+|u_j|)^{-N} implicitly uses a Peetre-type convolution inequality. This is standard but unstated.",
+      "Chen-Hu's F_d (p.2147) does not say 'real'. Section 9's real-Sobolev convention is consistent with the g^2 structure, and real sup <= complex sup preserves finiteness. A brief note would help.",
+      "Section 9 claims an increment bound of the form C(|h0|+|h'|^2), sharper than the source's |s-t|+|x-y| on p.8. It is correct but stronger than needed.",
+      "The opening myCmts banner still says 'pending independent review'. This is editorial status text only."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is a read-only AI review. It is not human verification, a novelty audit, a Lean/formal check, or circulation clearance.",
+    "canonical.tex, canonical.pdf and the four full source PDFs were not opened. I did not independently confirm that section9.txt matches canonical.tex lines 2700-3585 or the reading-map hash; I relied on the packet's binding.",
+    "Imported results (Chen author Theorem 4.1 and its d=3 two-step convention; Chen-Hu Theorem 3.8(i), (5.1), (5.15); Chen2023 Theorem 1.1) were checked against their printed statements and hypotheses only. Their internal proofs were not re-derived.",
+    "Prop P:mixed and Lemma L:alpha-one-convolution were treated as accepted inherited results with their supplied proofs. P:mixed's proof cites Lemma L:crude-corrected, which is not in the packet, so that dependency is unverified here.",
+    "Measure-theoretic steps (Kolmogorov versions, Bochner/pathwise identification, weak convergence of Green products with domination) were checked by independent reasoning, not by symbolic or numeric computation. The parameter falsification tests were hand calculations.",
+    "The current-author first-moment normalization discrepancy and the intended L_* correction were outside scope. The Jensen calibration was checked only as a conditional implication.",
+    "Gold-standard self-check: NOT gold standard. This is an independent AI correctness review with no fatal or major findings and eight optional minor clarifications. Acceptance still requires human mathematical verification and external byte-delivery checks."
+  ]
+}
+```

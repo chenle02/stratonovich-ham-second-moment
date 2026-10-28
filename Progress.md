@@ -6,8 +6,8 @@
 
 ## Current state
 
-- **Phase:** Full Section9 conditional d3/product/Riesz moment review returned all14PASS/medium with complete delivery; HIGH gate unmet, no promotion. Sections7/8 also remain candidates. Canonical notes now50pages after source/calibration qualification,with all27proof bodies and33formal statements preserved. New deterministic plane-supported endpoints and finite positive-sum closure passed a separate all6PASS/high source-bound review; this does not accept the moment consumer. Source normalization remains flagged for Le; accepted alpha<=1 baseline is unchanged.
-- **Proved in this project:** P:Jensen (§2); reviewed G0 P:mixed, L:white-test,
+- **Phase:** Expanded54page Section9 includes plane endpoints, invertible-linear/finite-sum closure and actual moment consumers. Fresh primary review: all17PASS/medium,full source delivery,no required repairs,HIGH gate unmet. Earlier50page14PASS/medium and standalone plane/sum6PASS/high remain separate immutable scopes. Arbitrary-covariance d3 and sharp goals stay open; source normalization awaits clarification. Accepted alpha<=1 baseline is unchanged.
+- **Proved in this project:** the P:Jensen Cauchy--Schwarz reduction (§2; numeric L_* calibration conditional on the intended source bound); reviewed G0 P:mixed, L:white-test,
   L:crude-corrected and P:envelope (§3); G1 finite coefficients (§4); reviewed G2 target-scale bounds P:d1-upper/P:low-alpha-upper for alpha<=1 (§5). Full goal and formal verification remain incomplete.
 - **Open targets:** remaining G:upper range 1<alpha<2-alpha0 in d=2,3; G:sharp; requested private Lean verification (not yet created).
 - **Current authorization:** Le requested activation and pursuit of the full goal on 2026-10-28 UTC. Resume with a fresh DeepSeek V4-Pro cold read while retaining the high-confidence acceptance threshold. Round4 remains a candidate. Separate decision point4 before companion creation remains pending.
@@ -1438,3 +1438,21 @@ genuine new geometry/types/consumers and source-identification proof.
 The earlier prepared private wiki proposal describes the50page checkpoint.
 It must be reconciled to current evidence before any approved publication;
 notification approval remains unanswered,no queue or messages triggered.
+
+
+### Expanded assembly primary review terminal: no high promotion
+
+Opus5.5 completed full17check review in571.213s: allPASS,PASS_WITH_NOTES/medium,
+no fatal/major findings or required repairs,full seven-text/thirty-image
+coverage verified,accepted=false at HIGH. Source92a3eed held until collection.
+All eight minor findings/limitations adjudicated in endpoint-integration/
+adjudication.md;108native/dry-run members archived and hash verified.
+No unchanged confidence retry or review-complete resume.
+
+Concrete next fidelity seams: choose the actual source-mollified static field
+or state fixed-width equality in law;prove physical-measure/Fourier quartic
+energy identification on real H1 profiles via Schwartz bounds and density;
+spell distributional homogeneity/endpoint lemma hypotheses. These are minor
+in the report,not fabricated required repairs. The reviewer used an incorrect
+numeric reference(Lemma2.10)for the named degree-one lemma;compilednumber5.4
+is verified. No source/goal normalization repair or proof-status promotion.
