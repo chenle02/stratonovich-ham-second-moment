@@ -1,104 +1,114 @@
-Last updated: 2026-10-28 11:27 UTC
+Last updated: 2026-10-28 13:25 UTC
 
 # HANDOFF — Article-Stratonovich-HAM-Second-Moment
 
 ## ⏭ Next session: where to stand and what to do
 
-Integrate the separately HIGH-reviewed plane-supported endpoint and finite
-positive-sum lemmas into the notes with their actual conditional moment consumers.
-The current complete Section9 proof is all14PASS/MEDIUM and remains a candidate;
-do not rerun it unchanged just to seek HIGH. In the next substantive wave, make
-the actual target eta=0 object/limit and Bochner/pathwise correspondence explicit
-at the concrete minor seams named by its review. Imported static rate machinery
-remains imported; no unlimited whole-source re-proof is demanded.
+Continue the original arbitrary-covariance higher-alpha d3 upper-bound problem.
+Do wiki CLI search/cite and read the synthesized pages BEFORE further external
+recon. Four useful missing geometry/Riesz papers are already queued;check their
+EXACT ticket records/receipts before reusing them,do not duplicate enqueue.
+Current standing instruction from Le is to enqueue helpful missing references
+for future use. It is recorded in AGENTS.md and reference-queue.json.
 
-Keep the original arbitrary-covariance higher-alpha d3 goal intact. Plane/sum
-closure does not supply an arbitrary-covariance representation or uniform
-approximation. Continue that missing general step, not a substituted narrower goal.
-The literal sharp normalization and private companion creation still need Le's
-separate clarifications/approval; no source correction or package creation inferred.
+The54page expanded Section9 has a fresh all17PASS/MEDIUM review,full delivery,
+no required repairs and NO HIGH acceptance. Do not rerun it unchanged to seek
+a grade. A concrete next fidelity lemma is the physical-measure/Fourier quartic
+energy identity for real H1 profiles: start on Schwartz,use Chen2023Theorem1.1
+(1.5)'s finite variational bound,then density. The wiki identified that bound
+and root checked the pinned p2 image. Choose the actual source mollified field
+explicitly when refining its coupling/version language.
 
-The private wiki proposal is committed and ready, but its queue publication is
-pending the asynchronous approval for an automatic Telegram receipt. No queue
-or notification was triggered. On approval use the exact prepared content and
-normal single-writer publication gates, then close Article/wiki provenance.
+For the general step,seek controlled covariance majorants or uniformly bounded
+endpoint limits;do not assume exact ellipsoid-cone representation. At criterion
+level,positive physical covariance domination immediately preserves H9,and a
+bounded angular density has a Riesz majorant. The difficult general case includes
+unbounded angular/singular covariances beyond the explicit families. The new
+queued geometry results have parameter/source-object restrictions;none is
+currently an imported theorem for that missing step.
 
 ## Pre-flight checks
 
-1. Read Progress.md,PROJECT-GOAL.md and actual notes. Goal ACTIVE; accepted
-   moment upper baseline alpha<=1 in d1/2/3. No full G:upper or G:sharp proof.
-2. All authors/reviewers/builds are TERMINAL; no current native handle to wait
-   for or restart. Both GPT subtasks are completed. No cluster or Lean job.
-3. Current50page TeX SHA256:
-   cd9d1c6381e481592af8fb5f339f735b727aebc4647fa2c07510210093625b12.
+1. Read Progress.md and PROJECT-GOAL.md. Goal ACTIVE,full scope unchanged.
+   Accepted moment baseline alpha<=1 in d1/2/3;source sharp normalization and
+   private companion creation remain unresolved separate user boundaries.
+2. Canonical54page TeX SHA256:
+   7bbac562f562c4278c2e46b4f60c6ba0e6ac91dc0194bd851e9b701c577d0052.
    PDF SHA256:
-   d630a021b5647ccbc643cda5747ca9d35576f9990944873e495569a2d1c12d08.
-   Canonical build0errors/undefined/overfull/tabs; actual formatter idempotent
-   before build/commit. Source warning/calibration edits preserved all27proof
-   bodies and33formal statements. Changed pages1and48 visually checked.
-4. Section9 primary: reviews/2026-10-28-product-endpoints/skeptic-adjudication.md,
-   skeptic-v2-report/receipt/read-ledger.json and skeptic-native-evidence.tar.xz.
-   Revision483718324f4e88be96bb8274f36b0554a720fd18;all14PASS/MEDIUM,
-   coverage_verified=true,accepted=false,no required repairs,416.163s.
-5. Accepted deterministic plane/sum tool: same directory,plane-adjudication.md,
-   plane-v2-report/receipt/read-ledger.json and plane-native-v2.tar.xz.
-   Scientific revisiondbd787f82697d9c3bfc178d7f0c221d15ebeabed;all6PASS/HIGH,
-   coverage_verified=true,accepted=true,183.331s. Actual checkpoint190b7e6a59683571dcadd27b90564ba877181a1c.
-6. Before EVERY new native launch,run check-frozen-packet.py in the SAME
-   fail-fast shell as provider dispatch. It checks all packet/manifest/required/
-   contract bytes against actual HEAD. A failed tool call is not a control-flow
-   barrier for later tool calls. Preserve all frozen copies/old receipts.
-7. Preflight source images at final size; use actual matching declared PNGs.
-   Full Section9 delivered30exact source images,auxiliary4,on CLI2.1.304.
-   These are actual carriers,not universal pixel/image budget guarantees.
-8. Current author PDF SHA5f7385ca451e643a1f3ff31835e4ee52b2708b5d2e3652eec3fb5d3958b97b6c.
-   Static publisher SHA58b152d78cd0d54d82b991933b3eaece86e1ed2b44fe09882c14eba921e97e22.
+   3366d9cc4567fdc4e561ebfeb39146eabf06f51ef8fd71437ea2481f072281ad.
+   Build0errors/undefined/overfull/tabs,formatter idempotent before build/commit.
+   Earlier Sections1--8 and Targets bytes unchanged;all33old formal statements
+   preserved,3added;only old P:three-transfer proof rewritten,total30proofs.
+3. New scientific source92a3eed518f10cc9797f1660050da8e69dcc644d.
+   Expanded review is TERMINAL: endpoint-integration/adjudication.md and
+   skeptic-v1-report.json,receipt.json/read-ledger.json companions in that dir.
+   all17PASS/MEDIUM,coverage_verified=true,accepted=false,571.213s.
+  108native/dry-run members archived in native-evidence.tar.xz with exact manifest.
+4. Standalone plane/sum auxiliary retains its separate6PASS/HIGH scope at
+  190b7e6a59683571dcadd27b90564ba877181a1c. It does not accept new general linear
+   closure or the full moment consumer. Earlier50page14PASS/MEDIUM preserved.
+5. No local author,build,native reviewer or cluster process remains live.
+   Do not restart old native handle4579;all outputs are terminal and archived.
+   The external six-repo paper queue is separate;one claimed/three pending was
+   the observed snapshot,not a verified model-process liveness claim.
+6. Run check-frozen-packet.py in the SAME fail-fast shell as every provider
+   dispatch. Check all packet/manifest/required/contract blobs against actual
+   HEAD. A previous tool failure does not automatically gate a later tool call.
+7. Source images: same30exact native carriers were delivered on CLI2.1.304.
+   Keep process-local supported runtime/account verification;no global changes.
+8. Current author PDF5f7385ca451e643a1f3ff31835e4ee52b2708b5d2e3652eec3fb5d3958b97b6c;
+   static publisher58b152d78cd0d54d82b991933b3eaece86e1ed2b44fe09882c14eba921e97e22.
 
 ## Concrete deliverables for the next session
 
-- Written integration of the accepted plane/finite-sum endpoints with exact
-  type/source fidelity and a clear conditional stochastic consumer. Plane and
-  finite sums alone do not accept the old product/moment proof.
-- Address concrete exposition seams in the next substantive expanded proof,
-  retain original all14PASS/medium disposition,then review actual new scope.
-- Work on the missing arbitrary-covariance d3 step; no claim that finite cones
-  are dense without an actual representation and uniform endpoint controls.
-- If Le approves the automatic receipt,publish the committed private wiki
-  proposal from reviews/2026-10-28-status-propagation/ through the canonical
-  queue. Exact payload3b99657d2ca756331b1c584310c53fd0aadc2acd;recheck current
-  wiki base and normal gates,then record ticket/receipt/wiki/Article SHAs.
-- If Le supplies intended source normalization,check it without silently
-  editing source PDFs or adopting the unrelated unapproved(1.24)proposal.
-- Lean remains L0/PROPOSED;decision point4 before creation. New seams are
-  retained in lean-progress/ROADMAP.md,but no wave/code/lease exists.
+- Actual progress on the remaining general-covariance step,with falsification
+  before a long proof. Read covariance-recon/general-covariance-probes.md:
+  universal ball/time-integrated/two-FREE-wave controls are local UNREVIEWED
+  deductions,may be classical inputs,and do not handle residual remote weights.
+- Do not reinvest in the unrestricted additive-covariance logconvexity shortcut:
+  a scalar endpoint toy has an exact rational refusal. It does NOT refute
+  geometric Holder or the target interior-noise theorem.
+- Do not use the isotropic heat-Mellin-square static endpoint recipe without
+  local-finiteness proof:the admissible product9/10,1/5,0 gives a divergent
+  s^-6/5 mass. This is an unreviewed local screen,not an accepted general no-go.
+- Retain the exact eight optional findings and all confidence limitations of
+  the expanded report. Physical/Fourier form fidelity is a concrete useful
+  seam,not permission for unlimited re-proof of external rate machinery.
+- Inspect exact queue IDs/DOIs in covariance-recon/reference-queue.json,
+  exact-ticket-state.json and queue-verification.json. Mark ingestion complete
+  only from actual identity-correct digest/edition/gate receipts,not 'claimed'.
+- Latest private wiki proposal is reconciled to54pages at4760c1928e2046d1d39c2334b6ac51ad9a3e27b9.
+   It remains UNPUBLISHED;do not apply the obsolete50page3b99657snapshot. Recheck
+   current wiki base/concurrent work before any authorized writer publication.
+- Lean remains L0/PROPOSED,companion uncreated. No creation from generic praise
+  or from the explicit permission to enqueue ordinary reference tickets.
 
 ## Success criteria for the immediate next step
 
-The new geometry and its actual moment application are completely written with
-explicit named-source regularization and calibrated constants. Any new review
-has genuine new scope,verified inputs/terminal evidence and honest confidence.
-The original full goal remains incomplete until arbitrary-covariance upper and
-intended sharp targets and required completion gates have real evidence.
+The remaining covariance class is treated honestly rather than replaced by an
+easier class. New source claims have matching parameters/objects and actual
+primary verification. New proofs/accepted route kills have their proper reviewed
+scope,not a confidence-only rerun. Queued reference retention and completed
+six-repo ingestion stay distinct. Full target completion remains unproved.
 
 ## Anti-success criteria
 
-- Calling the complete Section9 theorem HIGH from its14PASS/MEDIUM report,
-  or transferring the auxiliary6PASS/HIGH verdict to its stochastic consumer.
-- Treating the auxiliary's remark about old product/Riesz constructions as a
-  full independent verification of them;it was only sketched in that scope.
-- Substituting an ordinary density at coordinate exponent1 for the actual
-  plane delta measure,or raising distributions to fractional powers.
-- Treating finite-sum closure as an arbitrary-covariance representation,
-  countable-mixture theorem,uniform approximation or moment-additivity claim.
-- Confidence-only retries,review-complete resume,edited receipts or source IDs.
-- Launching after a failed staging/commit tool call; actual prelaunch guard
-  MUST PASS inside the dispatch shell. Never overwrite the frozen packet.
-- Treating interrupted auxiliary v1 as provider outage/quota or a scientific
-  FAIL:root stopped it for an uncommitted-input mistake;no verdict existed.
-- Dropping raw failure evidence or stripping meaningful unified-diff context
-  whitespace. The wiki patch is lossless gzip,with roundtrip/hash checks.
-- Enqueueing the wiki update before approval for its automatic notification,
-  contacting anyone,creating Lean or using Easley without the required instruction.
+- Promoting54page all17PASS/MEDIUM to HIGH,or transferring the standalone
+  plane/sum HIGH verdict to the new linear closure/full moment proof.
+- Treating Milman's integer n>=4counterexample as a proved n3real-alpha result,
+  or equating exact ellipsoid-cone non-density with failure of H9/majorization.
+- Borrowing curved-angular white-time/nonhomogeneous noise results,Balan2022's
+  restricted d<=2existence theorem,or RMT pairing cards as this HAM theorem.
+- Importing a quadratic-confinement Riesz minimizer as the Sobolev-gradient M.
+- Copying Fourier constants from a generic concept page instead of the pinned
+  source convention. Physical mass and spectral V are not silently identified.
+- Assuming additive-covariance logconvexity from valid geometric interpolation.
+- Assuming positive-definiteness/homogeneity alone makes a nonlinear Mellin
+  construction locally finite;the recorded product screen fails that claim.
+- Duplicate tickets,raw-arXiv-only presence inference,prefix-glob receipt identity,
+  or calling a reference fully ingested from a request/claimed file.
+- Uncommitted-input provider launch,edited immutable receipts,source normalization
+  repair,unrequested source-author contact,public release,Lean creation or Easley.
 
 ## What the previous sessions produced
 
@@ -193,58 +203,83 @@ Latest checkpoints:
 - 5540be69a21710bb279c369514941610d6bb8078: Lean planning refresh with five
   concrete algebra/conditional-comparison seams;L0state unchanged,no package.
 
+Latest checkpoints:
+- 92a3eed518f10cc9797f1660050da8e69dcc644d: expanded54page Section9,
+  L:plane-endpoints9.3,L:endpoint-closure9.4,P:three-transfer9.5,
+  C:three-finite-images9.7;3new complete proofs plus rewritten approximation
+  identification. Finite linear/Jacobian controls54cases/6matrices;all gatesclean.
+- 67b4211f8822449aa78b6d6d3acd6cdd9327eefe: fresh primary17PASS/MEDIUM,
+  seven-text/thirty-image delivery,eight optional findings adjudicated,
+ 108native artifacts archived/verified;no proof-status promotion.
+- c8cd30a5e95fb9654dbe0a78992669ed217fa6ee: actual wiki CLI synthesis recon,
+  exact four reference request IDs/DOIs,application/edition boundaries,
+  standing AGENTS recon/retention preference and unreviewed full-class probes.
+- 4760c1928e2046d1d39c2334b6ac51ad9a3e27b9: proposed private wiki status
+  updated to54page/17check medium evidence,frontmatter/links preserved,
+  exact patch compressed losslessly;no publication ticket or wiki claim.
+- 441fbf36451421e9b1020724b59971fd583ac8fa: exact scalar additive-variance
+  logconvexity screen with positive rational gap(approx6.945288),UNREVIEWED.
+- 58cd528aeaa102ec9ccbf2428bd2cf805335e811: admissible anisotropic product
+  local-finiteness failure for a proposed heat-Mellin-square endpoint recipe;
+  exact parameter/exponent control and lower-bound argument,UNREVIEWED.
+
 ## Repo & git state at handoff
 
-- master; substantive pre-handoff HEAD 5540be69a21710bb279c369514941610d6bb8078, pushed and <HUB>-synced.
-- No own scientific WIP or active raw native output remains. Exact attempts
-  are losslessly archived;do not resume old terminal handles97257,28955,42735.
-- Canonical notes50pages;source PDFs,All.bib,sibling Articles unchanged.
-- Current wiki page is still its prior published31page-era status. Prepared
-  replacement is private and committed,but no claim of wiki convergence.
-- Prior canonical skill lessons e28fd72d remain published/runtime-synced.
-  New tool-boundary application failure and guard are recorded in this repo.
-- Lean .lean-dev-state.json matches L0/PROPOSED/no jobs/no candidate/no closed
-  wave. BOUNDARIES.md and the concrete private creation proposal are unchanged.
+- master;substantive pre-handoff HEAD 58cd528aeaa102ec9ccbf2428bd2cf805335e811,pushed and <HUB>-synced.
+- Own working tree is clean apart from this dedicated HANDOFF update;all
+  raw native jobs are terminal and losslessly archived. No active author WIP.
+- Canonical54page source/PDF unchanged after the reviewed freeze. Source PDFs,
+  All.bib/sibling Articles untouched by root. The authorized queue may update
+  its own six repos;do not reset/stash that service's work.
+- Private wiki proposal is committed,not published. Reference queuing was
+  explicitly requested and executed;do not confuse that with project publication.
+- No Lean package/registry entry/lease exists;state stays L0/PROPOSED.
 
 ## Operating notes
 
-[held back: collaborators' unpublished work]
+Full original goal ACTIVE,no token budget. Le's latest steering requires useful
+missing-reference retention and actual wiki recon. Apply existing wiki-first
+rules at the start,not merely raw filename searches. The initial CLI runtime
+needed frontmatter;process-local uv with declared dependencies worked. No global
+system/editor/service configuration was changed;setup still belongs to Agent21.
 
-Latest native account picker selected <account removed>;doctor confirms first-party <plan removed>,
-Opus5.5 and supported CLI2.1.304 through process-local PATH. Reverify route at
-next launch;do not modify global setup. System setup requests go to Agent21.
+Exact queued paper IDs:
+- tk-20261028-081542-codex-stratonovich-covariance-recon (Milman2006structure).
+- tk-20261028-081544-codex-stratonovich-covariance-recon (Milman2008nonequivalence).
+- tk-20261028-081547-codex-stratonovich-covariance-recon (Rubin2008cosine).
+- tk-20261028-081549-codex-stratonovich-covariance-recon (Frank etal2026Riesz).
+Published DOI identities and no-match/Papis checks accompany each. Normal
+reference tickets are expressly authorized;no force,wake,service restart or
+author contact. Future receipt matching is exact ID+DOI,never a prefix glob.
 
-Three independent pending user boundaries: intended first-moment normalization;
-private companion creation;automatic Telegram receipt for the wiki queue. None
-is answered by general encouragement or elapsed time. Mathematical upper-bound
-work and local preparation can continue independently. The queue-notification
-question was asked only after the exact proposed page was committed/reviewable.
+Separate unanswered user questions concern intended first-moment normalization,
+private companion creation,and an earlier project-wiki publication notification
+card. Do not let that old wiki card block newly authorized reference enqueues;
+do not infer broader correspondence or package permission. Current goal work
+can proceed independently. The prepared wiki page must match current evidence.
 
-Final whole-paper DeepSeek cold reading remains required before circulation;
-the earlier31page limited reader does not cover current50pages/new tools.
-Do not infer model-family diversity from multiple Opus sessions. Actual
-scientific verdict/confidence,delivery and project acceptance remain distinct.
+[held back: AI account details]
 
 ## Risks to monitor
 
-1. Full-disjoint-measure Holder includes splits,pairings,ordered times and Green
-   increments. Temporal symmetry applies only after the complete pairing sum.
-2. d3 Green limit precedes noise limits. Mixed eta/zero moments identify the
-   actual source approximant;Bochner/pathwise version correspondence must be
-   explicit when expanding the new consumer.
-3. Static homogeneity makes the asymptotic order threshold independent of t;
-   preserve finite low orders as a power sum. Do not replace all-time constants
-   by the precise asymptotic one.
-4. Plane endpoints keep a common underlying delta measure;finite mixtures share
-   alpha/theta/beta. No uniform control of countably many endpoints is proved.
-5. Autocorrelation rapid decay with product weights justifies Fubini. Product
-   singularities are not uniformly bounded merely outside a unit cube.
-6. Pure rational/finite diagnostic controls do not prove analytic bounds or Lean.
-7. Current-author variational normalization is unresolved;static square-root M
-   is a distinct published input. No intended correction is guessed.
-8. A source statement is an imported theorem,not a local re-proof. Reviewer's
-   concern about its internal machinery remains an honest confidence limitation.
-9. Byte/commit preflight is not semantic dependency completeness,native delivery,
-   scientific correctness or acceptance. Run all actual gates separately.
-10. Publication and correspondence remain separately gated;private wiki updating
-    through a notifying service still requires the pending message authorization.
+1. General covariance remains larger than the known endpoint families and their
+   linear/sum closure. Exact representation is stronger than needed;controlled
+   majorization may suffice,but must be proved with admissible endpoints.
+2. Two-free-wave/time-integrated controls cannot erase remote covariance factors,
+   time weights or the all-order factorial budget. Old uniform G0majorant stayskilled.
+3. Static measure/Fourier energy equality on H1 and actual mollified-field
+   coupling are concrete fidelity details;source(1.5)gives a verified Schwartz bound.
+4. Matrix changes act on covariance,not the isotropic wave operator. Endpoint
+   V/M constants are computed after pushforward and summation.
+5. Green eta0 limit precedes noise limits;named-source approximants and mixed
+   eta0 moments matter. Keep low orders in a finite power sum for limsupconstants.
+6. Mellin/nonlinear positivity does not certify Radon local finiteness;test the
+   recorded coordinate-singular product before proposing a universal construction.
+7. Scalar additive-covariance test is outside strict positive-exponent parameters;
+   do not overstate it as a target counterexample. Geometric Holder is unaffected.
+8. Wiki synthesis identifies methods/boundaries,but exact theorem/version/normalization
+   still comes from primary sources. New queued refs are leads,not importedresults.
+9. Driver byte/commit guards,delivery and mathematical confidence are separate.
+   Every new provider launch uses the guard inside its actual fail-fast shell.
+10. Original sharp constants need clarification;no intended source correction,
+    formal Lean verification,novelty or circulation clearance is established.
