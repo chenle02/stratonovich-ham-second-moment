@@ -1,0 +1,49 @@
+I read the manuscript and cross-checked its central citations against the frozen source texts (Chen's current author version, Chen–Hu 2025, Chen 2023, Balan–Conus 2016, Crouzeix–Palencia v1). Below are the things that caught my attention, in no particular order, with labels where helpful.
+
+**Framing and status of the document**
+
+1. The title carries "Working notes," and the abstract says the notes "state the targets, and list the planned route," while the body contains complete-sounding theorems (in particular Theorem `T:full-upper`). Moreover Section 15 ("Planned route") appears *after* the finished proofs and its items G0–G4 describe work that is already carried out in Sections 3–13, with G4 still genuinely open. This backward structure makes it genuinely hard to tell what the author is asserting as a theorem versus recording as a plan. As a referee I would ask for a single, unambiguous list of claimed results and their attribution.
+
+2. The pervasive hedging ("no novelty verdict asserted," "sharp constant remains open," "comparison only," "not an input," "no correction is adopted") is honest, but combined with point 1 it means the submission reads as a research log rather than a paper. That is a real obstacle to acceptance independent of the mathematics.
+
+**Notation**
+
+3. The symbol $\beta$ means $4-\alpha-\alpha_0$ in Sections 3–6 and 13, but $( \alpha-\vartheta)/(1-\vartheta)$ (the static endpoint covariance degree) in Sections 7, 8, and 9. Inside Section 9 the variational constants are written with $4-\beta$, $3-\beta$, where $\beta$ is the *static* degree, not $4-\alpha-\alpha_0$. Each section redefines it locally, but the collision is precisely in the part of the paper where both meanings are in play (the interpolation $C_{\rm low}^{\vartheta}C_{\rm st}^{1-\vartheta}$).
+
+4. Related overloads: $b=2-\alpha$ (Section 5) vs. the coordinate-exponent vectors $b_j$ (Section 9); $\delta=\alpha-1$ (Section 6, "an exponent, not a smoothing parameter") vs. $\delta$ as a temporal cutoff width (Sections 7, 9, 13); $b_0$ as the temporal interpolation parameter (Sections 7, 8, 9). Each is flagged locally, but they accumulate in a way that forces constant re-reading.
+
+5. The pairing terminology "domestic-pair / cross-pair" (Remark `R:G0-verdict`) and "mean field / cross field / higher field" (Section 13) is nonstandard and defined only implicitly; a reader must reconstruct the classification from the proof of Proposition `P:interval-coefficients`.
+
+**Propagation of the flagged source-normalization issue**
+
+6. The manuscript correctly identifies real problems in the cited source (Remark 5.1 mis-points to (4.4), which is a smoothing limit; the claimed $n$-independent constant in the source's (5.4) contradicts the $n=1$ white-noise computation; the source's (A.3) is only asserted for large $\theta$). I verified these against the source, and the repair in Lemma `L:crude-corrected` looks right. Good work here.
+
+7. However, the caveat "printed variational normalization requires clarification; no correction is adopted" (Theorem `T:first`) then propagates into several "calibration" statements that *use* $L_*$: Proposition `P:Jensen`, Corollary `C:d1-first-calibration` ($2L_*\le 2C_{1,*}<C_{2,*}$), and the "consistency with the Jensen lower bound" remarks in Sections 6–9. It is not clear whether these are claimed facts or merely consistency checks under an assumed normalization. A referee needs the author to state which.
+
+**Spots where the reasoning is compressed and needs scrutiny**
+
+8. Proposition `P:mixed` is foundational (every later section relies on the mixed two-chain expansion and its nonnegativity), and its proof is the longest in the paper yet asserts rather than demonstrates at the crucial points: the "colored chains" argument establishing finiteness/nonnegativity of each $J_{m,n,D}$, and the $d=3$ measure-convention handling ("first take the $G_\eta$ limit, then the noise-smoothing limit"). The sentence "Each summand has a finite joint limit ... Consequently ..." is doing a lot of work, as is the claim that the limit is independent of the relative rates of the two smoothing parameters. This deserves a rigorous, self-contained treatment.
+
+9. Proposition `P:interval-coefficients` (Section 13) is the linchpin of the main theorem, and its proof contains the most compressed combinatorics: the "simultaneous linear extraction of the cross fields," the statement that permutation simplices "do not introduce an additional factorial," the bookkeeping that "a mean field costs one [metric-change] factor ... and a higher field costs at most its square," and the assertion that "each background segment and each metric change occurs only once along a word." The subsequent reduction to Lemma `L:inventory-product` is asserted after the fact. I could not fill all of this in at referee pace, and I would want it expanded.
+
+10. Lemma `L:complex-phase`: the identification of the four phase blocks of $u''+Lu=0$ after the isometry $(u,v)\mapsto(u,A_\lambda^{-1/2}v)$ and the scalar sup bounds on $C_h,F_h,H_h$ (with $|F_h|\le2(1+\lambda h)e^{\lambda h}$, $|H_h|\le2e^{\lambda h}$) are stated tersely; the final constant is assembled as $39(1+\lambda h)e^{\lambda h}\le100e^{2\lambda h}$, but the route from the individual block bounds to the single matrix-norm bound via the four "root comparisons" (`E:phase-root-comparisons`) is not spelled out. This is standard-looking material but it is the heart of Sections 12–13.
+
+11. The interleaved limits are numerous and each is plausible but the reader must verify no uniformity is lost: Gaussian-mode $m$, Hermite-degree $N$, spatial band $b$, Green smoothing $\eta$, noise smoothing $\epsilon$, temporal cutoff $\delta$, interval depth $J$. In Theorem `T:full-upper`'s proof the "entrywise covariance domination inside positive Wick integrals" step is sound *if* one has first established that the interval-field model's second moment equals the pairing sum with $K_J\Gamma$ — which is true because the interval field is Gaussian with that covariance, but the paper states the domination ("no coupling or Gaussian convex-order assertion is made") without making that identification explicit at that point.
+
+**Citation precision**
+
+12. Chen 2023 "Theorem 1.1, (1.5), p. 2" is invoked in Section 10 for the "finite quartic variation," but (1.5) in that paper is a large-$t$ limit statement; the finiteness of the variation is the closing clause of Theorem 1.1, and the explicit quartic bound is Corollary 1.2, (1.10)–(1.11). The content is right; the pointer should be corrected.
+
+13. Balan–Conus "Theorem 2.1(b), (8), (10), p. 1492" — I verified Theorem 2.1(b) gives $E|u|^p\le c_1^p(u_0+tv_0)^p\exp(c_2 p^{(4-a)/(3-a)}t^{\rho_w})$, $\rho_w=(2H+2-a)/(3-a)$, and the exponent match with $H=1-\alpha_0/2$, $a=\alpha$ is correct. The mapping $H=1-\alpha_0/2$ is a formal identification of $|s-t|^{2H-2}$ with $|s-t|^{-\alpha_0}$ (the author acknowledges the $H(2H-1)$ normalization). Fine as a comparison, but the reader should not take "yields the same $\kappa$" as more than a formal match, especially since the solutions are Skorohod vs. Stratonovich.
+
+**Consistency of claimed scope**
+
+14. Theorem `T:full-upper` claims a constant depending only on $(\alpha,\alpha_0)$ and $R_\alpha$ (i.e., the covariance enters only through $\mu(B_1)$). This is a strong universality statement, and it appears to be a genuine artifact of the interval-field route, whose only covariance input is the uniform resolvent bound $R_\alpha\rho^{\alpha-2}$. The crux is that the Gaussian comparison in Lemma `L:interval-contractions` is uniform in the *entire* covariance class, not just for a particular $\Gamma$. This is asserted rather than flagged as the load-bearing step, and a referee should confirm nothing covariance-specific is silently absorbed when passing from $\Gamma_\epsilon$ to $R_\alpha$.
+
+15. Minor inconsistency: the abstract says Section `S:d1-upper` gives bounds "with explicit constants," but the final theorem's constant $C=C(\alpha,\alpha_0)$ (built from Crouzeix–Palencia constants, the inventory-product constant, etc.) is not explicit. "Explicit" is doing different work in the two places.
+
+**Checks that came out clean (for context)**
+
+I spot-verified the white-noise order-2 and order-4 values in Lemmas `L:white-test` and `L:static-four` (including $E X_2=\tfrac12 c_0 t^{3-\alpha_0}$, the static totals $t^3/3$ and $11t^6/540$), the first-moment calibration identity $C_{1,*}=C_{2,*}/2^{(4-\alpha)/(3-\alpha)}$, the homogeneous norm scalings in `E:homogeneous-norms`, the inequalities $\kappa<\rho<2$, and the Chen–Hu (5.1)/(5.15) import including the factor $2^{\nu-Q}=2$ in $\Lambda_{\rm st}$. These all checked out, which gives me some confidence in the author's care, but they are the easy parts; the burden is carried by Sections 11–13, which I could not fully verify at referee pace.
+
+If I had to pick the two things that most make me hesitate, they are (a) the document's status — it does not read as a citable paper and does not commit to a clean theorem list — and (b) the compressed combinatorial/operator-estimate core of Sections 12–13 (Propositions `P:interval-coefficients` and `L:complex-phase`), which is where the full-range claim actually lives and which is currently too terse to referee with confidence.

@@ -6,10 +6,10 @@
 
 ## Current state
 
-- **Phase:**74page notes. Section13 ORIGINAL full G:upper accepted11PASS/HIGH after its complete independent source-bound review,557.505s,full11text/7image delivery,no required repairs. All7minor findings adjudicated. Section12static scope remains9PASS/high;Section11first variance7PASS/high;Section10energy8PASS/high. Earlier Section9colored-time candidate remains17PASS/medium and is not promoted. STOP/report to Le at PROJECT-GOAL decision5 before sharp-constant work. Sharp target,Lean creation,novelty audit and final whole-paper cold read remain open.
+- **Phase:**74page notes. Fresh whole-manuscript DeepSeek cold read returned15items,including substantive clarity/source-dependency concerns;NOT CLEAR. Core proof expansion and a fresh primary review are required before cold clearance.  Section13 ORIGINAL full G:upper accepted11PASS/HIGH after its complete independent source-bound review,557.505s,full11text/7image delivery,no required repairs. All7minor findings adjudicated. Section12static scope remains9PASS/high;Section11first variance7PASS/high;Section10energy8PASS/high. Earlier Section9colored-time candidate remains17PASS/medium and is not promoted. STOP/report to Le at PROJECT-GOAL decision5 before sharp-constant work. Sharp target,Lean creation,novelty audit and final whole-paper cold read remain open.
 - **Proved in this project:** Theorem T:full-upper (§13) establishes the ORIGINAL full correct-scale upper bound in all admissible dimensions and covariances,with nonsharp constant;complete scoped Opus review all11PASS/HIGH. Also the P:Jensen Cauchy--Schwarz reduction (§2; numeric L_* calibration conditional on the intended source bound); reviewed G0 P:mixed, L:white-test,
   L:crude-corrected and P:envelope (§3); G1 finite coefficients (§4); reviewed G2 target-scale bounds P:d1-upper/P:low-alpha-upper for alpha<=1 (§5). Full goal and formal verification remain incomplete.
-- **Open targets:** G:sharp; requested private Lean verification (not yet created);final whole-paper DeepSeek/source-bound cold read before any circulation. G:upper now has a complete proof accepted at the scoped correctness gate;global novelty remains UNVERIFIED.
+- **Open targets:** repair the cold reader's substantive G:upper exposition/calibration concerns; G:sharp; requested private Lean verification (not yet created);final whole-paper DeepSeek/source-bound cold read before any circulation. G:upper now has a complete proof accepted at the scoped correctness gate;global novelty remains UNVERIFIED.
 - **Current authorization:** Le requested activation and pursuit of the full goal on 2026-10-28 UTC. HIGH threshold retained. The original full upper goal has now passed its new cross-family review;report and stop at decision5. A fresh complete DeepSeek V4-Pro cold read remains due before circulation. Separate decision point4 before companion creation remains pending.
 - **Worker:** Codex agent #30 (<MACHINE>, `n30-stratonovich-ham-second`), handed over
   2026-10-26; workflow paper-dev + lean-pkg (Lean track: `lean-progress/PROGRESS.md`).
@@ -2023,3 +2023,31 @@ verbatim canonical FREE-FORM cold-reader prompt,no history or checklist.
 Launch-local output cap131072 fits model393216;no repeat of the old32000
 reasoning-token/no-report cap. Preflight is not scientific review.
 Full fresh cold read PENDING;whole-paper gate UNCERTIFIED/NORMAL_REVIEW.
+
+
+### Fresh whole-manuscript cold read returned; substantive repairs OPEN
+
+Native DeepSeek V4-Pro,source26bb560,400.983s,exit0,finish stop. Complete
+frozen manuscript/bibliography delivered in actual initial user message;
+all42proofs present. Actual model/category verified,all tool paths within
+isolated git-root packet,no additional instructions,HEAD/input bytes held.
+No source-access re-anchoring or output-length failure. Exact report and
+all15item dispositions in full-upper-cold/cold-v1-report.txt and
+adjudication-v1.md. No graded verdict or confidence was requested/invented.
+
+NOT CLEAR:honest referee confusion in the coefficient counting,complex
+phase blocks,imported colored-chain limits,interval-model pairing identity
+and uniformity trace is SUBSTANTIVE. Numerical L_star calibrations need
+explicit local conditionality. Prior Opus/HIGH does not waive these gaps.
+No explicit counterexample returned,but that is not clearance. Claim-map,
+static-degree notation and citation-pointer improvements are also retained.
+Next bounded wave expands the same full upper proof and repairs source
+conditionality,then complete frozen Opus/HIGH review and fresh cold read.
+No G:sharp wave,Lean creation,contact or publication. Goal remains ACTIVE.
+
+All6native archive members hash/roundtrip verified before own raw/temp
+cleanup. Source texts were CONSULTED in recorded partial ranges/grep
+matches,not completely audited;full manuscript delivery is independently
+verified. Exact7ticket ID/DOI recheck confirms2gold/5pending. No duplicates
+or queue/service changes. Final source-normalization/companion decisions
+and canonical wiki publication remain separate.
