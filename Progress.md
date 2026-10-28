@@ -6,9 +6,8 @@
 
 ## Current state
 
-- **Phase:**74page notes. Fresh whole-manuscript DeepSeek cold read returned15items,including substantive clarity/source-dependency concerns;NOT CLEAR. Core proof expansion and a fresh primary review are required before cold clearance.  Section13 ORIGINAL full G:upper accepted11PASS/HIGH after its complete independent source-bound review,557.505s,full11text/7image delivery,no required repairs. All7minor findings adjudicated. Section12static scope remains9PASS/high;Section11first variance7PASS/high;Section10energy8PASS/high. Earlier Section9colored-time candidate remains17PASS/medium and is not promoted. STOP/report to Le at PROJECT-GOAL decision5 before sharp-constant work. Sharp target,Lean creation,novelty audit and final whole-paper cold read remain open.
-- **Proved in this project:** Theorem T:full-upper (§13) establishes the ORIGINAL full correct-scale upper bound in all admissible dimensions and covariances,with nonsharp constant;complete scoped Opus review all11PASS/HIGH. Also the P:Jensen Cauchy--Schwarz reduction (§2; numeric L_* calibration conditional on the intended source bound); reviewed G0 P:mixed, L:white-test,
-  L:crude-corrected and P:envelope (§3); G1 finite coefficients (§4); reviewed G2 target-scale bounds P:d1-upper/P:low-alpha-upper for alpha<=1 (§5). Full goal and formal verification remain incomplete.
+- **Phase:**78page proof-exposition revision. The complete cold read of source26bb560 returned substantive concerns and is NOT CLEAR. All fifteen items are mapped to a written repair in cold-core-expansion/repair-map.md;fresh complete primary Opus/HIGH review is pending,followed by another prior-blind cold read. The old full-upper source remains historically11PASS/HIGH;that does not certify this revision. Original upper claim/covariance scope and sharp target are unchanged. No G:sharp wave or Lean creation. Earlier Section9alternative remains below HIGH.
+- **Proved in this project:** the original full upper-bound source at4c41cb2 passed its scoped correctness review. The current expanded version and explicit conditional calibration statements await renewed review after the substantive cold-reader report. The unconditional Jensen comparison,reviewed G0/G1 and alpha<=1 bounds remain baseline results;numeric L_star uses require their stated premise. Full project,sharp constant,formal verification and circulation clearance remain incomplete.
 - **Open targets:** repair the cold reader's substantive G:upper exposition/calibration concerns; G:sharp; requested private Lean verification (not yet created);final whole-paper DeepSeek/source-bound cold read before any circulation. G:upper now has a complete proof accepted at the scoped correctness gate;global novelty remains UNVERIFIED.
 - **Current authorization:** Le requested activation and pursuit of the full goal on 2026-10-28 UTC. HIGH threshold retained. The original full upper goal has now passed its new cross-family review;report and stop at decision5. A fresh complete DeepSeek V4-Pro cold read remains due before circulation. Separate decision point4 before companion creation remains pending.
 - **Worker:** Codex agent #30 (<MACHINE>, `n30-stratonovich-ham-second`), handed over
@@ -2051,3 +2050,44 @@ matches,not completely audited;full manuscript delivery is independently
 verified. Exact7ticket ID/DOI recheck confirms2gold/5pending. No duplicates
 or queue/service changes. Final source-normalization/companion decisions
 and canonical wiki publication remain separate.
+
+
+### Cold-core proof expansion frozen for renewed primary review
+
+All fifteen cold-reader items have written dispositions and repair locations
+in cold-core-expansion/repair-map.md. New78page source expands the exact
+colored-chain joint-limit argument,complex inverse-root/scalar/four-block
+steps,and the entire interval coefficient proof. The same-noise split
+identity,each copy's Cauchy set,joint Gaussian operator on correlated
+background states,time-ordered cube,vacuum insertions,once-only metrics,
+split-weight table and positive generating-product identity are explicit.
+
+The actual finite interval covariance is now identified before comparing
+TERMINAL chain kernels;K_J need not be stationary in time. Fixed Green,
+mode/band,local-degree,depth,original noise and final series operations
+are separately justified. Uniformity is traced through R_alpha alone;
+v_max identifies coefficients only. An explicit inventory L=78 verifies
+the final parameter-only constant. No whole mollified-solution limit.
+
+Unconditional Jensen now states the implication for every valid rate ell;
+L_star is locally conditional in that statement,the first-moment corollary
+and all supplementary calibration consumers. The source theorem is quoted
+as printed,not adopted as an established normalization. No intended
+correction or change of original G:sharp. Static degree beta was reversibly
+renamed chi in Sections7--10;time powers there and in Section12use beta.
+A claim/dependency and notation guide and factual final roadmap make the
+main result/open sharp question explicit. SourceEJP2023pointer cites the
+actual closing finiteness sentence of Theorem1.1for its(1.5).
+
+All42proof owners retained. Source/PDF78pages,actual formatter idempotent,
+0errors/undefined/overfull/tabs;pages5,61,73,74visually inspected. Complete
+proof-change map and hash binding retained. Existing finite diagnostics
+unchanged,not a certificate. The renewed14check native Opus contract
+requires all12texts and14complete source-page images;33packet members.
+Fresh supported doctor/draft-format preflight PASS,not scientific review.
+The actual post-commit byte guard and fresh native copy bind final inputs.
+
+This is a changed proof/interface revision,not an unchanged confidence
+retry. HIGH unchanged. All new proof exposition remains PENDING until that
+review;whole-paper cold clearance remains OPEN. Same full covariance goal,
+no sharp-constant wave,Lean package,source-author contact or publication.
