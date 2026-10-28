@@ -1,65 +1,67 @@
 # HANDOFF
 
-Last updated: 2026-10-28 03:16 UTC (Codex)
-**Project**: Article-Stratonovich-HAM-Second-Moment — active goal, weighted-merge diagnostic next
+Last updated: 2026-10-28 09:10 UTC (Codex, active goal checkpoint)
+**Project**: Article-Stratonovich-HAM-Second-Moment — complete planar candidate, adversarial review live
 **Wiki page**: `../SPDEs-wiki/content/projects/stratonovich-ham-second-moment.md`
 
 ## ⏭ Next session: where to stand and what to do
 
-Stand at this repository root on master. Read Progress.md and
-reviews/2026-10-28-residual-recon/order-four-merge-diagnostic.md, then test the
-explicit weighted two-wave candidate (WC) on coincident, interior, wave-front
-and unequal-gap configurations before any all-order proof investment.
-Retain every remote covariance and the singular remote-gap cost.
+Stand at this repository root on master. Collect the ALREADY RUNNING native
+planar adversarial review at reviews/2026-10-28-static-holder/opus-planar-skeptic/.
+Current harness exec session94495 was confirmed live. Re-poll that handle;
+if the harness changed, inspect the actual process/terminal receipt before
+considering any dispatch. Do not restart on an observation timeout.
 
-Le reactivated the full goal on2026-10-28 UTC. The goal remains ACTIVE;
-this checkpoint is not a user pause. Round4 remains a candidate: native Opus
-confidence is still medium, and the completed DeepSeek cold read has limited
-source coverage and no confidence grade. No unchanged-confidence retry.
-The separate private Lean creation proposal is still awaiting explicit approval.
+Read Progress.md and the planar review-routing/packet-repair records first.
+Fresh replay completed allPASS/medium,no required repairs; high acceptance
+threshold remains unmet by replay. Adjudicate the adversarial report and
+preserve both actual confidences. Full planar theorem remains a candidate.
+The original full goal stays ACTIVE; this checkpoint is not a user pause.
 
 ## Pre-flight checks
 
-1. Confirm repository root, master and clean tree. Expected pre-handoff HEAD
-   e356037dd11dc9b7ea7da0dcb5137ac1b89dec77, followed by a dedicated handoff
-   commit. Fetch/audit local, origin and <HUB> serially before edits.
-2. Read AGENTS.md, PROJECT-GOAL.md, Progress.md, the cold-read adjudication
-   and the residual order-four diagnostic. The full goal is unfinished.
-3. Verify author PDF SHA256
-   5f7385ca451e643a1f3ff31835e4ee52b2708b5d2e3652eec3fb5d3958b97b6c.
-   Canonical notes remain31pages, TeX SHA256
-   81bd89bdd2cbbd10e4973953db3794a47aa596c65d7e5e0ad33e7a41531e473a;
-   PDF SHA256 d3c9179fa2466126bc77e2340536a05bf6ab1ab48aa6397bfc307321dbcc7099.
-   No canonical source changed in this session; no rebuild was required.
-4. Verify both retained review archives against their manifests:
-   reviews/2026-10-27-round4/review-evidence.tar.xz (85members) and
-   reviews/2026-10-28-round4-cold/native-evidence.tar.xz (13members).
-   The cold input-packet archive has its own manifest binding.
-5. All review processes and delegated tasks are terminal. No cluster job
-   or companion creation occurred. No external unique WIP is required;
-   temporary packet/source copies are fully preserved in committed artifacts.
+1. Confirm root/master. Pre-handoff HEAD e8b5d137cc084f655b3bebe3c27304ade67da3fd, with a dedicated
+   handoff commit following. Serialize local/origin/<HUB> fetches.
+2. Tracked source should be clean. Known owned untracked output exists at
+   reviews/2026-10-28-static-holder/opus-planar-replay/ (terminal raw evidence),
+   opus-planar-skeptic/ (live attempt) and planar-doctor.json. Preserve it;
+   collect/archive only after the relevant attempt is terminal.
+3. Canonical notes42pages: TeX SHA256
+   76d2331bad7f13ce1410d9bb3bfb23a1f6f4850132e9982ca62133af078abc17;
+   PDF SHA25678810a707571e53a43e18c72b7bbca11a0e4d2b85abc65aee408aca51c13353d.
+   Root post-hook rebuild passes all required gates. Source/PDF matched
+   committed v2 manifests before review dispatch.
+4. Only planar-packet-v2 and planar-replay-packet-v2 are valid current inputs.
+   The published56aa356 preparation had a formatter/binding mismatch and
+   was not dispatched. Read planar-packet-repair.md and post-hook-binding.json.
+5. Author PDF SHA2565f7385ca451e643a1f3ff31835e4ee52b2708b5d2e3652eec3fb5d3958b97b6c;
+   Chen-Hu publisher58b152d78cd0d54d82b991933b3eaece86e1ed2b44fe09882c14eba921e97e22.
+6. No active author task/build/cluster job. Both delegated GPT tasks are done.
+   The native adversarial review is the sole expected live task. No private
+   companion, registry entry or lease has been created.
 
 ## Concrete deliverables for the next session
 
-- Execute the bounded (WC) falsification test, with explicit configuration,
-  scaling and remaining averaging measure. If it fails, state its exact scope;
-  it is not a counterexample to second-moment growth.
-- Record any surviving weighted estimate as an unproved obligation until a
-  complete proof and cross-family review exist. No all-order leap from one diagram.
-- Preserve the separate Round4 acceptance boundary. The cold report and source
-  followup do not upgrade Opus medium to high or grant circulation clearance.
-- Wiki candidate/status propagation remains unfinished; the wiki still records
-  accepted Round3. Use the isolated-clone workflow for any authorized update.
-- Private Lean proposal remains lean-progress/CREATION-PROPOSAL.md; an approval
-  question was presented but no answer received. Do not create the companion
-  from elapsed time or the general goal-reactivation instruction.
+- Finish the current adversarial attempt, adjudicate every finding, preserve
+  exact report/native streams and archive manifests. Do not relabel replay
+  as skeptic or count format recovery as another independent vote.
+- The new candidate is Section8: L:planar-endpoints(Lemma8.1),
+  L:planar-static-input(Lemma8.2), P:planar-upper(Proposition8.3),
+  C:planar-range(Corollary8.4), R:planar-scope(Remark8.5).
+- Evaluate the configured high-threshold gates honestly before any abstract,
+  scope or wiki promotion. No unchanged confidence lottery. Sections6/7
+  remain separate unpromoted candidates and are not Section8 premises.
+- Full general higher-alpha d3 and sharp constants remain original targets.
+  The d3 radial-lowering counterexample does not refute moment growth.
+- Lean creation approval is still unanswered; proposal remains concrete in
+  lean-progress/CREATION-PROPOSAL.md. No creation from generic encouragement.
 
 ## Success criteria for the immediate next step
 
-A concrete, reproducible diagnostic accepts or rejects the specific weighted
-candidate at the tested configurations, with all covariance factors and clocks
-retained. State exactly what remains unproved. Preserve source, review and
-accepted/candidate boundaries; advance the full goal without claiming completion.
+Actual terminal review and source coverage are verified, every concern has an
+evidence-backed disposition, and source/PDF/report bindings remain intact.
+Keep acceptance, scientific verdict and confidence distinct. The full original
+objective is incomplete even if the planar checkpoint is adopted.
 
 ## Anti-success criteria
 
@@ -100,33 +102,53 @@ accepted/candidate boundaries; advance the full goal without claiming completion
   This is GPT source checking, not a new independent scientific review.
 - Exact order-four crossing-pair diagnostic rejects naive unweighted BNZ
   substitution and states an OPEN scaling-consistent weighted candidate(WC).
+- 2026-10-28 accepted weighted-wave tool5107781: Opus all9PASS/high,
+  covariance-only smoothing, ordinary-G corollary; full moments not supplied.
+- Full-Riesz Section7 candidate037a706: Opus all10PASS/medium after verified
+  format-only recovery; no repairs, no promotion. Complete static source audit.
+- General planar endpoint and explicit d3 obstruction9ac62d2: all10PASS/medium,
+  no repairs; source variational finiteness located explicitly in Chen2023.
+- Full Section8 planar theorem written with complete endpoint, coefficient,
+  smoothing-limit and series proofs.42pages; preserved earlier mathematical
+  content. Native replay allPASS/medium,no required repairs.
+- Hook repair chain56aa356/f8866f8/e970d99: recovered exact pre-hook source,
+  proved only leading ASCII indentation changed, rebuilt PDF with identical
+  extracted text, refreshed all bindings and force-included ignored bibliography.
+  No review was dispatched before committed-member checks passed.
+- Wiki publication closed: project47656fa4 and retro dc0f88d5, full gates and
+  race recovery recorded in reviews/2026-10-28-wiki-propagation/. Canonical
+  local/origin/<HUB> clean parity last observed at84fd5b9a; clone retired.
 
 ## Repo & git state at handoff
 
-- Branch master; pre-handoff HEAD e356037dd11dc9b7ea7da0dcb5137ac1b89dec77.
-- All research artifacts and adjudications are committed and pushed; <HUB>
-  parity verified. Dedicated handoff commit follows, with final parity checked.
-- Canonical notes/source PDFs and All.bib unchanged. No foreign/staged WIP.
-- No wiki publication or Lean repository creation in this session.
+- master; pre-handoff HEAD e8b5d137cc084f655b3bebe3c27304ade67da3fd, pushed with <HUB> parity.
+- Canonical proof/PDF and all valid v2 packet inputs are committed. Current
+  live/terminal raw native output is intentionally owned untracked WIP, listed
+  above; do not sweep it into a source commit while the process writes.
+- All.bib/source PDFs untouched. No sibling Article or private companion edits.
+- Wiki receipt closed the prior status loop; newly proposed Section8 has not
+  been promoted or published as an accepted result.
 
 ## Operating notes
 
-The goal service goal is ACTIVE; no budget was requested. The general
-upper-bound, sharp-constant and private Lean objectives remain unfinished.
-No emails, fleet messages, Telegram notices, public release or cluster jobs.
+Full goal ACTIVE, no requested budget. User asked for progress and encouraged
+continued work; no request to stop or pause. No emails/fleet/Telegram/public
+paper release/cluster jobs. All math remains Stratonovich.
 
-DeepSeek route: explicit deepseek/deepseek-v4-pro through OpenCode pure mode.
-Initial response exhausted32000reasoning tokens with no report. Same-session
-continuation with65536output ceiling returned a report; count one session.
-File tools unexpectedly re-anchored to the live repository despite subprocess
-cwd. They listed prior filenames and read SOURCE-MANIFEST.md, not previous
-report contents or the author PDF. Strict blindness/source coverage is limited.
-For any future fresh source review, use explicit --dir and process PWD plus
-path-restricted read permissions, and verify actual delivered source pages.
-Do not rerun solely for a higher confidence label.
+Native review route remains first-party Claude Opus5.5 high, supported
+CLI2.1.304 selected through process-local PATH, account <account B>.
+The immutable source for current reviews is e970d995cce35625e538188f0a006a6e06219c03.
+Replay and skeptic are distinct Claude sessions, not two model families.
+Final whole-paper DeepSeek cold reading is still outstanding before clearance.
 
-The old native Opus CLI/account receipt remains in its original archive.
-No system configuration was changed. Setup requests still belong to Agent21.
+The repo pre-commit hook autoformats staged TeX. Run its actual formatter
+BEFORE build/freeze, then validate committed file hashes AFTER the hook.
+Current formatting change is leading indentation only; worker-delivery
+byte-preservation claims are historical pre-hook records. Reading excerpts
+are exact plain-text snapshots, not editable TeX compilation units.
+
+The private Lean proposal remains pending decision point4. System setup
+requests still route to Agent21; no global hook/configuration was modified.
 
 ## Risks to monitor
 
@@ -152,3 +174,9 @@ No system configuration was changed. Setup requests still belong to Agent21.
    do not convert them into mathematical defects or a mandate to polish a paper.
 9. Source p23's second-block reversal index is misprinted. Use separate-chain
    reversal as in P:mixed; preserve the typo as a scoped source discrepancy.
+10. Planar covariance measures and spectral measures have different scaling
+    conventions; physical angular mass S is not silently identified with V.
+11. Replay notes source generalized-covariance scope as an imported statement,
+    not a re-proof of all source theorems. Preserve this limitation.
+12. All current new upper-bound statements remain candidate until the planned
+    gate disposition; the older accepted alpha<=1 scope is still the baseline.
