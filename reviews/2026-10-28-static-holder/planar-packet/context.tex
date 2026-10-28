@@ -1,0 +1,220 @@
+% === Standard macros ===
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\W}{\dot W}
+\newcommand{\ud}{\,\mathrm{d}}
+\newcommand{\cE}{\mathcal{E}}
+\newcommand{\myCmts}[1]{\begin{framed}\noindent\textcolor{red}{#1}\end{framed}}
+
+
+\section{Model and standing assumptions}\label{S:model}
+
+We study the hyperbolic Anderson model
+\cite{chen:author2026:time-dependency}*{(1.1)}
+\begin{equation}\label{E:HAM}
+  \frac{\partial^2 u}{\partial t^2}(t,x)=\Delta u(t,x)+\W(t,x)u(t,x),
+  \qquad u(0,x)=1,\quad \frac{\partial u}{\partial t}(0,x)=0,
+\end{equation}
+for $(t,x)\in\R_+\times\R^d$, $d\in\{1,2,3\}$, interpreted in the
+Stratonovich sense (limit of classical wave equations driven by smoothed
+noises $\W_{\epsilon,\delta}$). The noise is centered Gaussian with
+\begin{equation}\label{E:cov}
+  \operatorname{Cov}\big(\W(s,x),\W(t,y)\big)=|s-t|^{-\alpha_0}\gamma(x-y),
+  \qquad 0<\alpha_0<1,
+\end{equation}
+where $\gamma\ge0$ is nonnegative definite with spectral measure $\mu$.
+
+\begin{hypothesis}[Homogeneity]\label{H:homog}
+  $\gamma(cx)=c^{-\alpha}\gamma(x)$ for $c>0$, and
+  \begin{equation}\label{E:threshold}
+    \alpha_0+\alpha<2,
+  \end{equation}
+  with $0<\alpha<d$, or $\alpha=d=1$ (spatial white noise).
+\end{hypothesis}
+
+Throughout we write
+\begin{equation}\label{E:kappa}
+  \kappa:=\frac{4-\alpha-\alpha_0}{3-\alpha}\in(1,2).
+\end{equation}
+
+
+\section{Gate G0: cross terms and the loss in the norm bound}\label{S:G0}
+
+This section records a diagnosis of the proposed route, not a proof of
+Goal~\ref{G:upper}. Put $X_n(t,x)=S_n(g_n(\cdot,t,x))$, with $X_0=1$, and
+\[
+  \beta=4-\alpha-\alpha_0>2,\qquad
+  P_k=\#\Pi_k=\frac{(2k)!}{2^k k!}.
+\]
+The count follows by pairing the smallest remaining label with one of
+$2k-1$ labels: $P_0=1$ and $P_k=(2k-1)P_{k-1}$, which gives the displayed
+formula by induction. All constants below may depend on the fixed covariance and its parameters,
+but not on the orders or on $t$.
+
+\subsection{The complete two-chain expansion}
+
+For $m+n=2k$, label the two chains by
+$I_1=\{1,\ldots,m\}$ and $I_2=\{m+1,\ldots,m+n\}$.
+Let $p(l)$ denote the preceding vertex in its own chain; at each first
+vertex set $(s_{p(l)},y_{p(l)})=(0,0)$. Thus, the second chain has its own
+root, rather than the last vertex of the first chain. For $D\in\Pi_k$, set
+\begin{equation}\label{E:mixed-diagram}
+  \begin{split}
+    J_{m,n,D}(t)
+    ={}&\int_{[0,t]^m_<\times[0,t]^n_<}\ud\mathbf s
+    \int_{(\R^d)^{m+n}}\ud\mathbf y\,
+    \prod_{\rho=1}^2\prod_{l\in I_\rho}
+    G(s_l-s_{p(l)},y_l-y_{p(l)})\\
+    &\hspace{20mm}\times
+    \prod_{(j,h)\in D}|s_j-s_h|^{-\alpha_0}\gamma(y_j-y_h).
+  \end{split}
+\end{equation}
+An empty chain contributes the factor one. For $d=3$, the spatial Green
+kernels are measures; for spatial white noise the covariance is a delta
+measure. Integrals in~\eqref{E:mixed-diagram} use the generalized-kernel
+and regularization conventions of the source, not pointwise values of
+these measures; see~\cite{chen:author2026:time-dependency}*{Remark~2.3,
+pp.~13--14, and Theorem~4.1}.
+
+\begin{proposition}[Mixed terms]\label{P:mixed}
+  Under Hypothesis~\ref{H:homog},
+  \begin{equation}\label{E:mixed-moment}
+    \E[X_m(t,x)X_n(t,x)]
+    =\begin{cases}
+      \displaystyle\sum_{D\in\Pi_k}J_{m,n,D}(t),&m+n=2k,\\
+      0,&m+n\text{ odd},
+    \end{cases}
+  \end{equation}
+  where the case $m=n=0$ equals one. In particular,
+  \begin{equation}\label{E:full-second}
+    \E u^2(t,x)=\sum_{k=0}^\infty\sum_{m=0}^{2k}
+    \sum_{D\in\Pi_k}J_{m,2k-m,D}(t).
+  \end{equation}
+  This is a convergent series of nonnegative terms.
+\end{proposition}
+
+\begin{proof}
+  From~\cite{chen:author2026:time-dependency}*{Theorem~4.1}, each
+  deterministic kernel $g_n$ is Stratonovich integrable. Its spectral
+  hypothesis (1.5) follows from Hypothesis~\ref{H:homog}, as recorded
+  on p.~3 of the source. Lemma~2.5 and
+  (2.18) of that source apply to these deterministic kernels and give
+  $X_mX_n=S_{m+n}(g_m\otimes g_n)$ for $m,n\ge1$. More explicitly,
+  the smoothed factors converge in $L^4$, so their products converge in
+  $L^2$ by H\"older's inequality. Thus, the product rule does not require
+  an unproved interchange of infinite series. The cases with a zero order
+  use $X_0=1$. From the source's (2.20)--(2.21), the expectation is zero
+  at odd total order and is the Wick sum at even total order.
+
+  We also justify the individual generalized integrals in the Wick sum.
+  Fix $D\in\Pi_k$ and take $k$ independent copies $W^e$, $e\in D$, of
+  the centered Gaussian noise $W$, each with the same covariance as $W$.
+  At vertex $l$ use the copy indexed by the unique pair $e\in D$
+  containing $l$. For either nonempty chain of length $r$, let
+  $Y_{r,a}$ be its integral against the product of these smoothed noises,
+  where $a$ denotes all smoothing parameters on that chain. For two
+  parameter choices $a,b$, Wick's formula expresses
+  $\E[Y_{r,a}Y_{r,b}]$ as a finite sum over those pairings of two copies
+  of this length-$r$ chain that join vertices of the same color.
+  This is a subset of the equal-length diagrams in
+  \cite{chen:author2026:time-dependency}*{Lemma~4.4, p.~30}.
+  Each summand has a finite joint limit as $a,b\to0$, independent of
+  their relative rates. Consequently, the three terms in
+  \[
+    \E|Y_{r,a}-Y_{r,b}|^2
+    =\E Y_{r,a}^2+\E Y_{r,b}^2-2\E[Y_{r,a}Y_{r,b}]
+  \]
+  have the same limiting covariance, and $Y_{r,a}$ converges in $L^2$.
+  For $d=3$, these integrals use precisely the measure-valued Green-kernel
+  convention of the source's pp.~13--14 and Lemma~4.4: for fixed noise
+  smoothing first take the $G_\eta$ limit as $\eta\downarrow0$, and then
+  take the noise-smoothing limit just proved.
+  An empty chain is the constant one. The product of the two colored
+  chain integrals therefore converges in $L^1$, by Cauchy--Schwarz.
+  In that product each color occurs exactly twice in total, so
+  independence and Wick's formula leave exactly the prescribed pairing
+  $D$. Its expectation is the regularized integral defining
+  $J_{m,n,D}(t)$, after the same reversal of both chains used below.
+  Thus, each such integral has a finite limit. The regularized
+  integrands are nonnegative, so $J_{m,n,D}(t)\ge0$.
+
+  In each chain reverse the order of its variables, replace each time by
+  $t$ minus that time, and each spatial coordinate by $x$ minus that
+  coordinate. Each terminal Green factor becomes an initial Green factor.
+  Both time and spatial covariance differences change sign; the covariance
+  kernels are even. The resulting permutation of the $2k$ labels is a
+  bijection of $\Pi_k$. This gives~\eqref{E:mixed-moment}, including its
+  nonnegativity. These are exactly the two chains in the integrand of
+  the source's (3.6), with $n_1=m$, $n_2=n$, restricted to the finite
+  horizons. The same transformations apply to the source's regularized
+  integrals before taking their defining limits.
+
+  From~\cite{chen:author2026:time-dependency}*{Theorem~1.1 and Section~5,
+  p.~34}, $u$ is the solution represented by the series of the $X_n$.
+  Its fixed-$t$ summability is also proved independently in
+  Lemma~\ref{L:crude-corrected} below, whose proof uses only the source's
+  diagonal identity and Theorem~3.1, not the present mixed expansion.
+  In particular, $U_N=\sum_{n=0}^N X_n$ converges to $u$ in $L^2$.
+  Consequently,
+  \[
+    |\E U_N^2-\E u^2|
+    \le\|U_N-u\|_2(\|U_N\|_2+\|u\|_2)\longrightarrow0.
+  \]
+  The finite expansion of $\E U_N^2$ is a sum of the nonnegative mixed
+  expectations already computed. Its increasing limit is therefore the
+  full double sum, independently of its enumeration. Regrouping by total
+  order gives~\eqref{E:full-second}. This proves Proposition~\ref{P:mixed}.
+\end{proof}
+
+\begin{theorem}[\cite{chen:author2026:time-dependency}*{Theorem~1.2, (1.10)--(1.13)}]\label{T:first}
+  Under Hypothesis~\ref{H:homog},
+  \[
+    L_*\le\liminf_{t\to\infty}t^{-\kappa}\log\E u(t,x)
+    \le\limsup_{t\to\infty}t^{-\kappa}\log\E u(t,x)\le L^*,
+  \]
+  where, for $\cE^\sharp\in\{\cE_*,\cE\}$,
+  \[
+    L(\cE^\sharp):=(3-\alpha)\bigg(
+    \frac{(4-\alpha-2\alpha_0)^{\frac{4-\alpha-2\alpha_0}{2}}}
+    {2^3(4-\alpha-\alpha_0)^{4-\alpha-\alpha_0}}
+    \Big(\frac{2\cE^\sharp}{2-\alpha}\Big)^{\frac{2-\alpha}{2}}
+    \bigg)^{\frac1{3-\alpha}},
+    \qquad L_*=L(\cE_*),\quad L^*=L(\cE),
+  \]
+  and $\cE_*<\cE$ are the variational quantities
+  \cite{chen:author2026:time-dependency}*{(1.11)--(1.13)}.
+\end{theorem}
+
+\begin{proposition}[Jensen lower bound]\label{P:Jensen}
+  Under Hypothesis~\ref{H:homog},
+  \[
+    \liminf_{t\to\infty}t^{-\kappa}\log\E u^2(t,x)\ge 2L_*.
+  \]
+\end{proposition}
+
+\begin{proposition}[Upper bound for $\alpha\le1$]\label{P:low-alpha-upper}
+  Suppose that Hypothesis~\ref{H:homog} and the standing covariance
+  positivity assumptions hold, $d\in\{1,2,3\}$, $0<\alpha\le1$,
+  and $V>0$. Define
+  \begin{equation}\label{E:low-alpha-constants}
+    \begin{split}
+      K_{\rm sp}^{\rm gen}
+      &=\begin{cases}
+        \displaystyle\frac{V2^{2-\alpha}(1-\alpha)^{-\alpha}}
+        {(2-\alpha)^{2-\alpha}},&0<\alpha<1,\\[2mm]
+        \pi V,&\alpha=1,
+      \end{cases}\\
+      C_2^{\rm gen}&=q(2ZK_{\rm sp}^{\rm gen})^{1/q}.
+    \end{split}
+  \end{equation}
+  With the same $A_k$, $b$, $q$, $\beta$, and $Z$ as above, for
+  $k\ge1$ and $t>0$,
+  \begin{equation}\label{E:low-alpha-coefficient}
+    A_k(t)\le\frac{(2ZK_{\rm sp}^{\rm gen})^k t^{\beta k}}
+    {k!\,k^{bk}}
+    \le\frac{(2ZK_{\rm sp}^{\rm gen})^k t^{\beta k}}{(k!)^q},
+    \qquad
+    \E u^2(t,x)\le\exp(C_2^{\rm gen}t^\kappa).
+  \end{equation}
+\end{proposition}

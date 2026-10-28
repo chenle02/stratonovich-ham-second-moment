@@ -1,0 +1,99 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "medium",
+  "source_coverage": [
+    ".review/required-sources.json lines 1-96 (read plan only, earns no read credit)",
+    "planar-endpoint.md lines 1-280 (complete)",
+    "d3-obstruction.md lines 1-241 (complete)",
+    "source-finiteness.md lines 1-61 (complete)",
+    "source-map.md lines 1-29 (complete)",
+    "internal-input.tex lines 1-96 (complete)",
+    "chen-02.png (full page image viewed: Chen author p2, (1.1)-(1.4), generalized noise, spectral measure, gamma>=0)",
+    "chen-03.png (full page image viewed: Chen author p3, (1.5)-(1.10), homogeneity (1.8), alpha0+alpha<2 reduction, Theorem 1.2 range)",
+    "chen-07.png (full page image viewed: Chen author p7, (2.3)-(2.6) wave kernel normalization incl. d=2 density and d=3 sigma_t/(4 pi t))",
+    "chen-13.png (full page image viewed: Chen author p13, (2.23)-(2.25) generalized covariance, gamma_eps, gamma_{2eps}, G_eta)",
+    "chen-2023-01.png (full page image viewed: Chen 2023 EJP title page, DOI 10.1214/23-EJP985, generalized PD covariance on S(R^d))",
+    "chen-2023-02.png (full page image viewed: Chen 2023 p2, Theorem 1.1, (1.3)-(1.5), F_d, explicit finiteness sentence, FIXME header)",
+    "chen-hu-2145.png (full page image viewed: Chen-Hu p2145, (1.1)-(1.5), possibly generalized noise)",
+    "chen-hu-2146.png (full page image viewed: Chen-Hu p2146, Theorem 1.1, (1.6)-(1.8), Dalang <=> alpha<2, alpha<=d remark)",
+    "chen-hu-2147.png (full page image viewed: Chen-Hu p2147, Theorem 1.2, (1.9)-(1.11) variational M, F_d)",
+    "chen-hu-2151.png (full page image viewed: Chen-Hu p2151, Remark 2.3, Lemma 2.4, (2.15)-(2.17))",
+    "chen-hu-2152.png (full page image viewed: Chen-Hu p2152, generalized covariance, gamma_{2eps}, (2.18)-(2.21))",
+    "chen-hu-2153.png (full page image viewed: Chen-Hu p2153, (2.22), (3.1)-(3.3))",
+    "chen-hu-2175.png (full page image viewed: Chen-Hu p2175, (5.8), invocation of [11] Theorem 1.1, = 2^{alpha/(4-alpha)} M, rescaling map)"
+  ],
+  "checks": [
+    {
+      "claim": "C1: positive homogeneous covariance distribution as a Radon measure; measure versus density scaling; no atom at the origin; finite even angular measure sigma with factor (2-alpha); locally finite and tempered weighted endpoints; function-class preservation",
+      "verdict": "PASS",
+      "reason": "A nonnegative distribution is a positive Radon measure. Changing variables, the density law gamma(lambda x)=lambda^{-alpha}gamma(x) gives gamma(lambda A)=lambda^{2-alpha}gamma(A) in d=2, which is correct. Applying this to A={0} gives gamma({0})=lambda^{2-alpha}gamma({0}). With 2-alpha>0 and local finiteness, the atom is 0. The sector mass up to radius R is R^{2-alpha}sigma(E)/(2-alpha), which matches the integral of r^{1-alpha}dr from 0 to R times sigma(E). So the (2-alpha) normalization is exact. Evenness of gamma makes sigma even, and sigma(S^1)=(2-alpha)gamma(B_1) is finite. The weight |x|^{alpha-1} gives dr sigma, and |x|^{alpha-beta} gives r^{1-beta}dr sigma. Both are locally finite because 1-beta>-1 when beta<2. Their ball masses grow like R and R^{2-beta}, so both are tempered and integrate |psi| for Schwartz psi. If gamma is in L^1_loc, the weighted objects are L^1_loc functions because their finite ball masses are computed from the same polar form. Function class is preserved."
+    },
+    {
+      "claim": "C2: full-sphere line-mixture factor 1/2; absolute Schwartz Fubini and positive quadratic form; Gamma_low positive definite in d=2; physical angular sigma is distinct from the spectral angular measure",
+      "verdict": "PASS",
+      "reason": "Evenness of sigma gives int f dGamma_low = int sigma(domega) int_0^infty f(r omega)dr = (1/2) int sigma(domega) int_R f(r omega)dr, so the factor 1/2 is correct. For psi=phi*tildephi with tildephi(x)=conj(phi(-x)), the coordinates y=s omega+v give int_R psi(r omega)dr = int_{omega-perp}|int_R phi(s omega+v)ds|^2 dv >= 0. Schwartz decay makes every step absolutely convergent. Integrating against the finite nonnegative sigma gives Gamma_low(psi)>=0, which is tempered positive definiteness. I independently computed the spectral measure of Gamma_low under the source convention gamma(x)=int e^{i xi.x}mu(dxi): it is (4 pi)^{-1} int sigma(domega) times Lebesgue measure on the line omega-perp, so V=S/(2 pi). This shows the physical and spectral angular masses really differ, as the memo warns."
+    },
+    {
+      "claim": "C3: direct line integral of G_h, tangency and a.e. conventions, bound sigma(S^1)/4, preservation under Gaussian covariance and Green averaging; 4ZM=Z sigma is inherited bookkeeping only",
+      "verdict": "PASS",
+      "reason": "G_h^{(2)} matches Chen author (2.5) with d=2. For |b|<h, int_{-A}^{A}(A^2-s^2)^{-1/2}ds=pi, so the line integral is 1/2. Tangency (|b|=h) lies on a set of line-measure zero, and the open-disk representative gives the strict indicator in (LW). Tonelli extends (L) from Schwartz functions to nonnegative Borel functions, which gives (G_h*Gamma_low)(z)=(1/4)int 1_{|z.omega_perp|<h}sigma(domega)<=S/4. The smoothed identity follows from evenness of G_h and p, and from p_eps*p_eta=p_{eps+eta}. A mass-one Gaussian average preserves the uniform bound. As an independent cross-check, the imported lemma bound pi V/2 with V=S/(2 pi) also equals S/4, so the two routes agree exactly. The arithmetic 4 Z_{b0}(S/4)=Z_{b0}S is right, and 1/(k! k^k)<=1/(k!)^2 holds. The memo labels the K_sp=2M and Z_{b0} formulas as inherited bookkeeping, not a theorem. Their sources are not in the packet (see minor findings)."
+    },
+    {
+      "claim": "C4: Gamma_st positive definite via the original positive spectral measure times a Gaussian, with absolute mixture/Fubini, no undefined product or fractional power of distributions; homogeneity and Dalang beta<2",
+      "verdict": "PASS",
+      "reason": "The formula |x|^{-lambda}=Gamma(lambda/2)^{-1}int_0^infty s^{lambda/2-1}e^{-s|x|^2}ds is correct for lambda=beta-alpha>0 and x!=0. Since gamma({0})=0, nothing is lost at the origin. Multiplying the tempered measure gamma by the Schwartz Gaussian e^{-s|x|^2} is well defined. Its spectral measure is mu convolved with a positive Gaussian density, so the product is positive definite. Tonelli on |psi| gives int|psi||x|^{-lambda}dgamma<infty from Section 2, which justifies Fubini. Integrating nonnegative quadratic forms then gives Gamma_st(psi)>=0. No fractional covariance power is used. Gamma_st has degree -beta, so its spectral measure scales with degree beta. By Chen-Hu p2146, Dalang under homogeneity reduces to beta<2, and beta<2=d meets Theorem 1.2's range 0<beta<2 wedge d."
+    },
+    {
+      "claim": "C5: parameter interval and affine radial-weight cancellation; Holder on the finite, unnormalized Gaussian-weighted gamma measure; finiteness; common smoothing width; no hidden normalization",
+      "verdict": "PASS",
+      "reason": "The interval alpha0<theta<2-alpha is nonempty exactly when alpha0+alpha<2. On it, theta<1 because alpha>1, and b0=alpha0/theta lies in (0,1). The condition beta>alpha is equivalent to alpha theta>theta, i.e. alpha>1. The condition beta<2 is equivalent to theta<2-alpha. The identity theta(alpha-1)+(1-theta)(alpha-beta)=0 expands to zero. nu_{z,eps} is a finite positive measure because gamma is tempered, and Holder with exponents 1/theta and 1/(1-theta) needs no normalization. The absence of an atom at 0 makes the radial factorization valid nu-a.e. Both endpoint integrals are finite by the polynomial mass growth. The memo explicitly does not certify the all-pairing transfer, the limits, or coefficient summation. It uses the 2eps edge convention of Chen-Hu p2152 and Chen author p13 consistently."
+    },
+    {
+      "claim": "C6: exact admissibility of the original d=3 covariance, radially lowered F mass and tempered properties, short fixed-Gaussian box lower bound with constants, boundedness of a Gaussian-smoothed PD covariance, contradiction; no full moment no-go",
+      "verdict": "PASS",
+      "reason": "gamma=|x1|^{-9/10}|x2|^{-3/5} is in L^1_loc, even, nonnegative, and homogeneous of degree -3/2. A product Gaussian mixture shows it is positive definite, because each Gaussian constant in x3 is a PD function on R^3. 0<3/2<3 and 3/2+1/4<2 place it in Hypothesis H:homog and the Chen author (1.5) range. F=|x|^{1/2}gamma has degree -1, ball mass growing like R^2, and int(1+|x|)^{-N}F<infty for N>2. On Q_L: |y|>=L; |y1|^{-0.9}|y2|^{-0.6}>=2^{-3/2}; |z_L-y|^2<=9; and the volume is 1. Hence (p_1*F)(z_L)>=2^{-3/2}(2 pi)^{-3/2}e^{-9/2}L^{1/2}. If F were PD, p_1*F would be the continuous Fourier integral of the finite positive measure e^{-|xi|^2/2}mu_F, so it would be bounded by its value at 0, which is finite. That is a contradiction. The claim boundary (not a moment no-go) is stated."
+    },
+    {
+      "claim": "C7: longer shifted-sphere cross-check: projection normalization, beta integral and divergence, Gaussian approximate identity with polynomial-mass tail, null exceptional sets, Fatou, correct use of the degree-one lemma",
+      "verdict": "PASS",
+      "reason": "Each hemisphere has Jacobian (1-u^2-v^2)^{-1/2}, and 2/(4 pi) gives exactly G_1^{(2)}. The substitution h=1-u gives 1-u^2=2h-h^2. Then v=sqrt(2h-h^2)w produces the factor (2h-h^2)^{-a2/2} times int_{-1}^{1}|w|^{-a2}(1-w^2)^{-1/2}dw=B((1-a2)/2,1/2)=B(1/5,1/2). The lower bound 2^{-3/10}h^{-6/5} diverges at 0. Also |y+z|>=2 on the shifted sphere, so F>=sqrt(2)gamma there. The tail inequality p_eps(v)<=(2 pi eps)^{-3/2}e^{-delta^2/(4eps)}e^{-|v|^2/4} holds for eps<=1, |v|>=delta. Local continuity of F off the planes plus the order 'eps to 0, then delta to 0' gives pointwise convergence when x1x2!=0. The exceptional set is one point plus a great circle, both null. Fatou needs no monotonicity. The degree-one lemma (internal-input.tex) needs nonnegative, even, PD, degree 1 with 0<1<3, h=1, eta=0 allowed. All of these hold under the hypothesis that F is PD, so its uniform bound pi V_F/2 contradicts liminf=infinity."
+    },
+    {
+      "claim": "C8: the printed source covariance class supports these endpoint objects; function preservation is kept distinct from the generalized-measure interpretation; no model assumption or source statement is silently widened",
+      "verdict": "PASS",
+      "reason": "Chen author p2 and Chen-Hu p2145 state 'possibly generalized Gaussian noise' with gamma>=0 and a spectral measure. Chen author p13 and Chen-Hu p2152 define generalized covariances through gamma_{2eps}. The homogeneity theorems (Chen author p3 Theorem 1.2, Chen-Hu p2147 Theorem 1.2) carry no isotropy or angular-density hypothesis. The sources write homogeneity pointwise. The memo explicitly requires a final statement to make the distributional/measure homogeneity interpretation explicit, and it supplies the function-preservation route for a function-only reading. So it does not silently widen the class."
+    },
+    {
+      "claim": "C9: source variational M is finite: Chen-Hu (1.11) p2147 and p2175 citation and identification; Chen 2023 Theorem 1.1 on p2 explicitly finite under Dalang; penalty comparison and parameter use; source theorem imported, not re-proved",
+      "verdict": "PASS",
+      "reason": "Chen-Hu (1.11) defines M with penalty int|grad g|^2 over F_d with unit L^2 norm. P2175 invokes [11] Theorem 1.1 and displays sup{(...)^{1/2}-(1/2)int|grad g|^2}=2^{alpha/(4-alpha)}M, exactly as transcribed. Chen 2023 p2 Theorem 1.1, under Dalang (1.3), states 'the variations appearing on the right hand sides of (1.4) and (1.5) are finite'. Its F_d coincides with the unit-norm W^{1,2} class. The penalty comparison is valid: for every g, A(g)-int|grad g|^2 <= A(g)-(1/2)int|grad g|^2, so M is at most the finite supremum. The application to the planar static endpoint is explicitly made conditional on independent validation of its PD. Dalang for degree beta<2 comes from Chen-Hu p2146. The FIXME header is transcribed accurately and is mathematically immaterial."
+    },
+    {
+      "claim": "C10: every other new assertion and the real claim boundary: a planar endpoint lemma with conditional applicability only; no accepted SPDE interpolation, full moment bound, arbitrary d=3 extension, sharpness, novelty or Lean claim; the d=3 counterexample kills only this radial-lowering map",
+      "verdict": "PASS",
+      "reason": "The planar disposition and Section 6 table explicitly exclude a full planar moment theorem, G:upper closure, a d=3 extension, sharp constants, novelty and Riesz-review promotion. Section 3a's coefficient line is labeled substitution into existing bookkeeping. The d=3 memo's Section 6 marks only 'naive d3 radial-lowering for this explicit gamma' as falsified and leaves other endpoint choices and d=3 moment bounds 'NOT DECIDED'. Supporting assertions also check out. The non-isotropic product example in d=2 has finite sigma because a1,a2<1. The d=3 weighting of r^{2-alpha}dr gives r dr, as stated in the table. No Lean or novelty claim appears."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "planar-endpoint.md line 75-76: 'their homogeneity degrees are 1 and beta' conflicts in sign with the line-13 convention 'homogeneous of degree -alpha'. The densities have degrees -1 and -beta; 1 and beta are the spectral (and Chen-Hu 'alpha') exponents. A final candidate should use one convention.",
+      "planar-endpoint.md Section 3a reuses the symbol M for the spatial convolution constant (M=S/4), while source-finiteness.md uses M for the Chen-Hu variational quantity (1.11). A final candidate should rename one of them.",
+      "planar-endpoint.md Section 3a cites inherited bookkeeping (K_sp=2M, coefficient 2 Z_{b0} K_sp, Z_{b0}=2/[(1-b0)(2-b0)], format C^k t^{(3-b0)k}/(k! k^k)). Section 1 cites a static bound (S) in source-audit.md. Neither source is in this frozen packet, so only the arithmetic 4Z(S/4)=ZS could be checked here. Both are labeled as inherited or non-theorem, so this does not block acceptance.",
+      "planar-endpoint.md (PW) applies identity (L), stated for Schwartz f, to the nonnegative non-Schwartz function G_h(z-.). This is justified by the polar measure identity and Tonelli for nonnegative Borel functions, which the text invokes only implicitly as 'nonnegative Tonelli'. One explicit sentence would help.",
+      "planar-endpoint.md Section 2: the polar decomposition is fixed on polar rectangles. Extending it to all Borel sets uses the standard pi-system uniqueness argument, which is only implicit here; internal-input.tex states it explicitly for the spectral analogue.",
+      "planar-endpoint.md Section 5 does not restate how the time exponents split (|s-t|^{-alpha0}=(|s-t|^{-b0})^theta times 1^{1-theta}, with the static endpoint carrying time covariance 1). This is the existing framework, but a complete candidate should restate it.",
+      "As an independent consistency check (not in the memo), I computed the spectral ball mass of Gamma_low as V=S/(2 pi), so the imported bound pi V/2 equals the direct bound S/4. Recording this cross-check in the final lemma would make the constant easier to audit."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is a scoped AI review of a frozen packet. It is not human verification, a novelty audit, or circulation clearance. The packet itself says both memos are GPT-family author checks and unreviewed. This report is one independent AI check, not a certificate.",
+    "PDF SHA256 values and page-to-PDF identities could not be checked. Source checks rely on the rendered page images supplied in the packet.",
+    "Not available in the packet: source-audit.md, the inherited coefficient bookkeeping (K_sp, Z_{b0}), and the text referenced as 'as above' in the internal degree-one lemma proof. The degree-one lemma was taken as accepted, at its declared scope, and was not re-verified in full. Its constant matches my independent spectral computation for Gamma_low.",
+    "The verdict covers only the covariance-level endpoint constructions (C1-C5), the d=3 radial-lowering obstruction (C6-C7), and source support/finiteness (C8-C9). It does not certify the all-pairing Holder transfer, mixed-moment limits, coefficient summation, any planar interpolation moment theorem, or any d=3 moment statement. The memos explicitly leave all of these open.",
+    "Gold-standard self-check: NOT gold standard as a certification. This is a single AI review pass with medium confidence, and the inherited bookkeeping sources are missing from the packet. Closing the gap needs independent human or second-review checking of the inherited coefficient framework and of a complete planar lemma candidate."
+  ]
+}

@@ -1040,3 +1040,45 @@ Chen2023 Theorem1.1, p2, as cited by Chen-Hu p2175. No sharp value used.
 A fresh native Opus C1--C10 review is assigned to the frozen endpoint, d3
 guard and source-finiteness packet. No planar moment theorem or endpoint
 acceptance is claimed before that report.
+
+
+### Endpoint review and complete planar successor
+
+The endpoint/d3-guard/source-finiteness review returned all10PASS,
+PASS_WITH_NOTES/medium, complete delivery verified, no required repairs.
+Accepted=false at the retained high threshold. Seven optional findings are
+adjudicated in endpoint-adjudication.md; raw native evidence is preserved.
+No unchanged confidence retry or independent-family vote is invented.
+
+A substantive complete d2 candidate is now assigned: write both endpoint
+proofs and the entire coefficient/static-limit application in a new section,
+with no reliance on the unaccepted Riesz proposition as a premise. It will
+explicitly resolve notation/Borel-extension and inherited-bookkeeping context
+points while proving a broader general-covariance statement. Existing notes
+outside the insertion and their acceptance boundaries remain unchanged.
+Full d3 higher-alpha covariance, sharp constants and Lean remain open.
+
+
+### Complete planar theorem candidate frozen
+
+The new Section8 contains L:planar-endpoints(Lemma8.1),
+L:planar-static-input(Lemma8.2), P:planar-upper(Proposition8.3),
+C:planar-range(Corollary8.4), R:planar-scope(Remark8.5). It gives complete
+endpoint proofs and full planar moment transfer, not just inherited
+bookkeeping arithmetic. Xi=0 and restricted Riesz-only Skorohod comparisons
+were clarified before freezing. Worker DONE_WITH_CONCERNS; root read the
+full new proof and found no analytic defect. All preceding source bytes
+are recovered by deleting the new461-line insertion.
+
+Final candidate TeX326e1508002dd5ecbadc83fc1c5975926370ae468aa46f29bf2315a30ac39a32;
+PDF1ea056afa44b65dc35a54d3864afe25be45108d02d2977fc90412db35ba1312a.
+Canonical42page build passes0errors/undefined/overfull/tabs. Exact parameter
+and normalization controls rerun; they are not the proof or Lean evidence.
+
+Periodic fresh replay is explicitly due/caught up before adoption: a fresh
+Opus replay of Section8 plus the independent weighted-wave tool, followed
+by a distinct fresh Opus skeptic for the complete planar theorem. Both roles
+are planned before results, with high thresholds retained. No prior source
+audit or skeptic is relabeled as replay. Reading copies bind exact canonical
+ranges/context; fullsource/PDF available;30typed primary-source pages.
+No planar theorem acceptance or abstract/global status promotion yet.
