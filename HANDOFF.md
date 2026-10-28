@@ -1,71 +1,86 @@
-# HANDOFF
+Last updated: 2026-10-28 10:45 UTC
 
-Last updated: 2026-10-28 09:10 UTC (Codex, active goal checkpoint)
-**Project**: Article-Stratonovich-HAM-Second-Moment — complete planar candidate, adversarial review live
-**Wiki page**: `../SPDEs-wiki/content/projects/stratonovich-ham-second-moment.md`
+# HANDOFF — Article-Stratonovich-HAM-Second-Moment
 
 ## ⏭ Next session: where to stand and what to do
 
-Stand at this repository root on master. Collect the ALREADY RUNNING native
-planar adversarial review at reviews/2026-10-28-static-holder/opus-planar-skeptic/.
-Current harness exec session94495 was confirmed live. Re-poll that handle;
-if the harness changed, inspect the actual process/terminal receipt before
-considering any dispatch. Do not restart on an observation timeout.
+Prepare the independent native Opus review of the frozen49page Section9
+candidate. Review the actual endpoint/Green-limit/static-coefficient consumers,
+with the newly verified source-normalization discrepancy explicitly disclosed.
+The main upper proof does not use the suspect first-moment upper constant.
+Use a small image-carrier calibration and committed-blob manifest checks before
+dispatch, retain high confidence, and do not repeat completed source audits.
 
-Read Progress.md and the planar review-routing/packet-repair records first.
-Fresh replay completed allPASS/medium,no required repairs; high acceptance
-threshold remains unmet by replay. Adjudicate the adversarial report and
-preserve both actual confidences. Full planar theorem remains a candidate.
-The original full goal stays ACTIVE; this checkpoint is not a user pause.
+Source-normalization audit v2 is TERMINAL and accepted at its scoped contract:
+all9PASS/high, complete text and12image delivery. Intended correction remains
+unknown. An asynchronous text question asks Le for any known normalization;
+continue the upper-bound track while that sharp-target clarification is pending.
 
 ## Pre-flight checks
 
-1. Confirm root/master. Pre-handoff HEAD e8b5d137cc084f655b3bebe3c27304ade67da3fd, with a dedicated
-   handoff commit following. Serialize local/origin/<HUB> fetches.
-2. Tracked source should be clean. Known owned untracked output exists at
-   reviews/2026-10-28-static-holder/opus-planar-replay/ (terminal raw evidence),
-   opus-planar-skeptic/ (live attempt) and planar-doctor.json. Preserve it;
-   collect/archive only after the relevant attempt is terminal.
-3. Canonical notes42pages: TeX SHA256
-   76d2331bad7f13ce1410d9bb3bfb23a1f6f4850132e9982ca62133af078abc17;
-   PDF SHA25678810a707571e53a43e18c72b7bbca11a0e4d2b85abc65aee408aca51c13353d.
-   Root post-hook rebuild passes all required gates. Source/PDF matched
-   committed v2 manifests before review dispatch.
-4. Only planar-packet-v2 and planar-replay-packet-v2 are valid current inputs.
-   The published56aa356 preparation had a formatter/binding mismatch and
-   was not dispatched. Read planar-packet-repair.md and post-hook-binding.json.
-5. Author PDF SHA2565f7385ca451e643a1f3ff31835e4ee52b2708b5d2e3652eec3fb5d3958b97b6c;
-   Chen-Hu publisher58b152d78cd0d54d82b991933b3eaece86e1ed2b44fe09882c14eba921e97e22.
-6. No active author task/build/cluster job. Both delegated GPT tasks are done.
-   The native adversarial review is the sole expected live task. No private
-   companion, registry entry or lease has been created.
+1. Read Progress.md, PROJECT-GOAL.md and the actual notes. Full original goal
+   remains ACTIVE; accepted upper baseline is alpha<=1 in d1/2/3.
+2. Check local/origin/<HUB> state before edits and preserve all foreign WIP.
+   No active author, native review, build or cluster job remains at this stop.
+   Both delegated GPT tasks are completed, not live workers.
+3. Canonical49page TeX SHA256:
+   950add7de797a7c754e565efa4654013b85bca9ccda31bab5c42ba82770015dc.
+   PDF SHA256:
+   d0359c46bc7d855dc81051388608091e536e7df7e04ed30ee2854c0f54a33244.
+   Formatter preceded build;0errors/undefined/overfull/tabs; bytes unchanged
+   during this source audit. No rebuild is needed solely for documentation.
+4. Current author PDF SHA2565f7385ca451e643a1f3ff31835e4ee52b2708b5d2e3652eec3fb5d3958b97b6c.
+   Static Chen-Hu publisher SHA25658b152d78cd0d54d82b991933b3eaece86e1ed2b44fe09882c14eba921e97e22.
+5. Source audit evidence lives in reviews/2026-10-28-source-normalization/:
+   adjudication-v2.md, opus-v2-report/receipt/read-ledger.json and exact native
+   archive/manifest. Its immutable input revision is0b6439ecb6c2fe7da0ca8f8b9136e0d0b7b075b7.
+   Old v1 had HIGH scientific confidence but failed image delivery; never relabel it.
+6. Keep the verified CLI2.1.304 process-local runtime/account route. Native PNG
+   transformations can defeat the ledger even after successful Read calls.
+   The actual773x1000full-page images and1120x870crops passed12image delivery;
+   this is not a universal safe-size theorem. Calibrate final new source carriers.
 
 ## Concrete deliverables for the next session
 
-- Finish the current adversarial attempt, adjudicate every finding, preserve
-  exact report/native streams and archive manifests. Do not relabel replay
-  as skeptic or count format recovery as another independent vote.
-- The new candidate is Section8: L:planar-endpoints(Lemma8.1),
-  L:planar-static-input(Lemma8.2), P:planar-upper(Proposition8.3),
-  C:planar-range(Corollary8.4), R:planar-scope(Remark8.5).
-- Evaluate the configured high-threshold gates honestly before any abstract,
-  scope or wiki promotion. No unchanged confidence lottery. Sections6/7
-  remain separate unpromoted candidates and are not Section8 premises.
-- Full general higher-alpha d3 and sharp constants remain original targets.
-  The d3 radial-lowering counterexample does not refute moment growth.
-- Lean creation approval is still unanswered; proposal remains concrete in
-  lean-progress/CREATION-PROPOSAL.md. No creation from generic encouragement.
+- A complete, byte-bound Section9 review packet with all inherited inputs and
+  exact static/current-source pinpoints. Distinguish current fixed-order source
+  results from the suspect first-moment upper constant and calibrations.
+- Full cross-family skeptic review and finding-by-finding disposition before
+  promoting the d3 product/Riesz or conditional transfer statements.
+- General higher-alpha d3 covariance remains outside the discharged families.
+  Keep pursuing the full goal; do not redefine it as the product subclass.
+- G:sharp remains the literal completion contract, flagged for normalization
+  clarification rather than silently repaired. No source-author contact.
+- Revisit finite/algebraic Lean seams(product exponent intervals and the rational
+  discrepancy certificate) while preserving the separate creation-approval gate.
+- Update authorized private wiki status through its workflow after the next
+  substantive review checkpoint; earlier wiki loop was closed, newest Sections8/9
+  and source audit have not yet been propagated as current status there.
 
 ## Success criteria for the immediate next step
 
-Actual terminal review and source coverage are verified, every concern has an
-evidence-backed disposition, and source/PDF/report bindings remain intact.
-Keep acceptance, scientific verdict and confidence distinct. The full original
-objective is incomplete even if the planar checkpoint is adopted.
+The new review covers the actual full Section9 proof and its consumers with
+verified source delivery, complete terminal evidence and honest confidence.
+Every finding is adjudicated. Input-carrier repair does not count as another
+independent model family or change a mathematical threshold. The full general
+upper and intended sharp targets remain incomplete until their actual evidence exists.
 
 ## Anti-success criteria
 
-[held back: collaborators' unpublished work]
+- Calling Sections7/8/9 accepted from author checks or medium reports; replacing
+  the original full general goal with a more convenient covariance family.
+- Resuming review-complete, confidence-only retries, editing immutable receipts,
+  or treating the source audit's PASS as a proof of a moment upper bound.
+- Adopting an intended source normalization, changing source/goal/manuscript
+  definitions, or contacting anyone without Le's instruction.
+- Treating the printed source ordering as an uncontested input: the verified
+  discrepancy is scoped to meaningful measurable finite-energy profiles.
+- Treating arbitrary infinity-minus-infinity profiles as defined objectives.
+- Calling the accepted weighted two-wave lemma an all-order moment theorem.
+- Creating a Lean companion from generic encouragement or this lesson request.
+- Extending planar line-mixture radial lowering to general d3; that route has
+  a recorded counterexample, not a counterexample to moment growth.
+- Running a reviewer against pre-hook56aa356 bindings or missing committed inputs.
 
 ## What the previous sessions produced
 
@@ -119,64 +134,75 @@ objective is incomplete even if the planar checkpoint is adopted.
   race recovery recorded in reviews/2026-10-28-wiki-propagation/. Canonical
   local/origin/<HUB> clean parity last observed at84fd5b9a; clone retired.
 
+Latest checkpoints:
+- Section9 candidate79601c8: product-exponent endpoint construction, explicit
+  conditional d3 common-Gaussian transfer, product/Riesz applications, Green-limit
+  identification and nonsharp variational limsup constant. Full author/root
+  checks retained,49page clean build; independent review is still pending.
+- Source audit a6f8319/0f37bcd/0b6439e/84572a3: printed penalties1 and1/2
+  yield E_star>E at d=alpha=1,alpha0=1/10,delta0 under the finite-energy reading.
+  Exact rational certificate executed. v2 Opus9PASS/high,accepted=true and full
+  source delivery. Intended correction unknown; no manuscript/goal/source edits.
+- Image-carrier calibration22.193s passed exact PNG delivery; source audit v2
+  passed12actual images in228.584s. Both original failure and repaired evidence
+  are immutable SHA-verified archives with plain reports and adjudications.
+- Canonical durable lessons Le-AI-Lab e28fd72d6bfc8d5e8272593df00c3cc03e9e6c7f:
+  focused-subscription-cli-review and tex-commit-clean-compile-pdf-gate updated,
+  validated, pushed and runtime-synced. Exact delivery and post-hook packet
+  freeze are existing evidence boundaries, not excuses to weaken a gate.
+
 ## Repo & git state at handoff
 
-- master; pre-handoff HEAD e8b5d137cc084f655b3bebe3c27304ade67da3fd, pushed with <HUB> parity.
-- Canonical proof/PDF and all valid v2 packet inputs are committed. Current
-  live/terminal raw native output is intentionally owned untracked WIP, listed
-  above; do not sweep it into a source commit while the process writes.
-- All.bib/source PDFs untouched. No sibling Article or private companion edits.
-- Wiki receipt closed the prior status loop; newly proposed Section8 has not
-  been promoted or published as an accepted result.
+- master; substantive pre-handoff HEAD 84572a371b666ad63cb0161f86832f72f435ae49, pushed and synced to <HUB>.
+- No owned unstaged scientific WIP remains. Native outputs are terminal and
+  losslessly archived; do not restart old handle37972 or the old planar jobs.
+- Main TeX/PDF unchanged; All.bib, source PDFs and sibling Articles untouched.
+- Canonical lesson commit is present on <HUB> alongside newer other-agent
+  work. Its unrelated docs/org/lean-ops/BOARD.md WIP was preserved. Initial
+  concurrent sync refusal caused no reset/stash or foreign-file cleanup.
+- Owned isolated retro checkout is clean; all its work is pushed. Its location
+  is operational only and is not an uncommitted deliverable.
 
 ## Operating notes
 
-Full goal ACTIVE, no requested budget. User asked for progress and encouraged
-continued work; no request to stop or pause. No emails/fleet/Telegram/public
-paper release/cluster jobs. All math remains Stratonovich.
+Full goal ACTIVE, no token budget. Latest user explicitly requested durable
+learning along the way. Canonical retro was executed now rather than deferred
+until project completion. No emails, fleet/Telegram messages, public releases,
+cluster jobs or source-author contact. Mathematics remains Stratonovich only.
 
-Native review route remains first-party Claude Opus5.5 high, supported
-CLI2.1.304 selected through process-local PATH, account <account B>.
-The immutable source for current reviews is e970d995cce35625e538188f0a006a6e06219c03.
-Replay and skeptic are distinct Claude sessions, not two model families.
-Final whole-paper DeepSeek cold reading is still outstanding before clearance.
+High-confidence acceptance remains unchanged. Both Opus source-audit sessions
+are one model family; the author/recomputation family was GPT. Carrier calibration
+is not a scientific vote. The final DeepSeek whole-paper cold gate is still required
+before any circulatable result; its earlier31page limited read does not cover49pages.
 
-The repo pre-commit hook autoformats staged TeX. Run its actual formatter
-BEFORE build/freeze, then validate committed file hashes AFTER the hook.
-Current formatting change is leading indentation only; worker-delivery
-byte-preservation claims are historical pre-hook records. Reading excerpts
-are exact plain-text snapshots, not editable TeX compilation units.
+The main upper proof imports fixed-order current existence and separate static
+coefficient facts. Source-dependent first-moment/Jensen calibrations must explicitly
+retain the normalization caveat. Do not modify the notes based on the separate
+unadopted(1.24)proposal; it is not used in this audit.
 
-The private Lean proposal remains pending decision point4. System setup
-requests still route to Agent21; no global hook/configuration was modified.
+Run the actual formatter BEFORE canonical build; verify committed blobs AFTER
+hooks. Reading excerpts should be exact plain-text snapshots. System setup work
+routes to Agent21; no hook/configuration/driver edits were made here.
+Private Lean companion creation remains unapproved under decision point4.
 
 ## Risks to monitor
 
-1. Joint Holder must be on counting measure over pairings times time measure;
-   time symmetry applies only after summing the full temporal pairing factor.
-2. Negative closing powers cannot be put into the old weighted AMGM; only the
-   positive opening powers are bounded that way. Dirichlet integrability uses
-   delta*r<1 and alpha0*r'<1, equivalent to the standing threshold.
-3. The d3 Riesz supremum occurs at the sphere, not its center. d2 fails at3/2.
-   Nonnegative positive-definite anisotropic product covariances can fail the
-   spatial maximum for every alpha>1 despite satisfying the existence threshold.
-4. Product covariances are unbounded along coordinate singularities at infinity;
-   their Gaussian limit is justified by factorization, not boundedness at infinity.
-5. d3 Green smoothing is removed first at fixed noise smoothing, then the noise
-   limit; mixed products pass in L1 from fixed-order L2 convergence.
-6. V2 minor notes are explicitly nonblocking in the report: optional general
-   ball-growth remark, approximate-identity neighborhood order, scaling emphasis
-   and residual-case wording. Do not convert them into fabricated major defects
-   or silently certify them through a fresh unreviewed proof rewrite.
-7. BNZ/Balan unweighted convolution does not cover an internal pairing vertex
-   with a remote spatial covariance. The diagnostic's(WC) is only proposed.
-8. DeepSeek's free-form report includes editorial objections to internal notes;
-   do not convert them into mathematical defects or a mandate to polish a paper.
-9. Source p23's second-block reversal index is misprinted. Use separate-chain
-   reversal as in P:mixed; preserve the typo as a scoped source discrepancy.
-10. Planar covariance measures and spectral measures have different scaling
-    conventions; physical angular mass S is not silently identified with V.
-11. Replay notes source generalized-covariance scope as an imported statement,
-    not a re-proof of all source theorems. Preserve this limitation.
-12. All current new upper-bound statements remain candidate until the planned
-    gate disposition; the older accepted alpha<=1 scope is still the baseline.
+1. Full disjoint-measure Holder includes all splits, pairings, ordered times and
+   Green increments. Symmetry occurs only after the complete temporal pairing sum.
+2. d3 noise/Green limits: remove Green smoothing first at fixed noise width;
+   use actual source approximants and mixed eta/zero second moments, then noise limits.
+3. Static all-time coefficient homogeneity gives an order threshold independent
+   of t. Keep low orders as a finite power sum for the precise asymptotic constant.
+4. Product coordinate exponents equal1 are excluded; zero coordinates are constant1,
+   not Gamma(0) expressions or coordinate-white-noise endpoints.
+5. Planar physical angular covariance mass and spectral angular mass differ.
+6. A failed pointwise spatial supremum or radial covariance map is a route boundary,
+   not a moment asymptotics no-go.
+7. Literal variational-source discrepancy does not identify its intended repair;
+   later source sections were not fully audited. Stronger hand numerical estimates
+   in the reports are optional and unused; the decisive certificate is exact rational.
+8. Runtime image Read success is not exact delivery. Preserve MIME/hash failures;
+   no late byte swapping or confidence-only recovery.
+9. Source p23 reversal-index typo is already recorded; use separate-chain reversal.
+10. Current new upper statements remain candidates despite clean builds; no sharp
+    proof, novelty, formal Lean verification or release clearance is established.
