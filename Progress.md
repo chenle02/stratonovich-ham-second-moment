@@ -1585,3 +1585,19 @@ Retro capture in energy-fidelity/lessons.md distinguishes existing wiki-first
 application miss from a new skill;reference queue states,version/range
 restrictions,nonorthogonal transpose checks and same-shell committed-packet
 guard are recorded. No duplicate canonical skill or global setup change.
+
+
+### Private wiki proposal and reference retention reconciled after energy gate
+
+Prepared status page now matches56page energy checkpoint734d0bf,retaining
+full moment17PASS/MEDIUM and original target boundaries. Exact canonical
+wiki HEAD9927dedfa0c5229ffd6749019a24d14049c58cca was reread;project page
+bytes match the original base. Frontmatter and existing wikilink targets
+preserved;historical54page review identity retained. No project publication
+ticket,automatic notification or publication claim.
+
+Final exact-ID/DOI snapshot: Milman2006structure AND Milman2008nonequivalence
+now gold with verify_digest PASS,clean lint and all-six remote convergence
+receipts. Rubin2008 and Frank etal2026 remain pending. Full receipts retained
+in energy-fidelity/reference-state-final.json. No new theorem import follows
+from completed ingestion;the n3real-alpha applicability question remains open.

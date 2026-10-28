@@ -5,7 +5,7 @@ Exact proposed content: proposed-project-page.md. Patch: project-page.patch.gz (
 Base commit/content hash and proposal hash: preparation.json.
 
 Preserve the original full goals and accepted alpha<=1 baseline. Add current
-54page/candidate scope,expanded Section9 all17PASS/medium and no acceptance,
+56page/candidate scope,expanded Section9 all17PASS/medium and no acceptance,
 scoped source-normalization discrepancy with no intended repair, and the
 separate accepted plane/finite-sum deterministic auxiliary. Preserve historical
 rounds,all links/frontmatter and absence of source-author contact or release.
@@ -30,6 +30,10 @@ They are preserved losslessly in gzip rather than stripped or exempted from
 a repository-wide whitespace policy. The full proposed Markdown remains
 directly readable. Check compressed/decompressed hashes in preparation.json.
 
-The original50page proposal is superseded by this54page status reconciliation.
+The original50page proposal is superseded by this56page status reconciliation.
 References were separately enqueued at Le's explicit instruction;those normal
 reference requests are not a project-page publication receipt.
+
+Section10 energy lemma is separately accepted all8PASS/high at734d0bf;
+full Section9 moment assembly remains all17PASS/medium. Current canonical
+wiki HEAD was reread;the project page bytes match the original base.
