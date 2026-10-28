@@ -1,0 +1,406 @@
+{
+  "schema": "le-ai-lab.review-read-ledger/1",
+  "coverage_verified": true,
+  "claude_code_version": "2.1.304",
+  "events_sha256": "d2b59ae155779b2f3657d882b592728cb6f56991f98607875249a9676bc78cb7",
+  "events_hash_bound_to_receipt": true,
+  "stream_workspace": "<HOME>/Dropbox/workspace/svn/Article-Stratonovich-HAM-Second-Moment/reviews/2026-10-28-general-covariance-cones/opus-v1/workspace",
+  "required_sources_sha256": null,
+  "continuation": false,
+  "continuation_credit": null,
+  "proves": "Each credited line was returned, numbered and byte-equal to the frozen workspace file, in a tool_result paired with a Read or line-numbered content-mode Grep call of the hash-bound provider stream.",
+  "does_not_prove": "Attention, understanding, or retention: a credited line may have been skimmed, ignored, or dropped by context compaction before the report was written. Uncredited lines may still have been seen in a form the ledger cannot attribute (previews, unnumbered output, subagents).",
+  "sources": [
+    {
+      "path": "proof.md",
+      "sha256": "72e49cdb4fc0293d6a3181b70a870bfdac1d8c8c168d9682ca1b64124411b30f",
+      "total_lines": 143,
+      "required_ranges": [
+        [
+          1,
+          143
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          143
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "checks.py",
+      "sha256": "a183fce0571b82c7ffc6c1873d6c96110842e401cfe2443b8016d1bda8aaa505",
+      "total_lines": 20,
+      "required_ranges": [
+        [
+          1,
+          20
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          20
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "checks.json",
+      "sha256": "b9ed266b79d463600ea75739a77b8cb24bea5624bc980041e9a1ae5beecb7ba4",
+      "total_lines": 40,
+      "required_ranges": [
+        [
+          1,
+          40
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          40
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "source-map.json",
+      "sha256": "48637174d8df9e25a027876ddccf1daf09fc84103ec042649527bdf2d1cf830a",
+      "total_lines": 20,
+      "required_ranges": [
+        [
+          1,
+          20
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          20
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    }
+  ],
+  "image_proves": "Each delivered image: a direct Read tool_use of its exact workspace path, in the stream's session, is paired by id with a tool_result (same session) whose content is one inline base64 image block of the declared media type, and the base64 decodes to bytes whose sha256 is the declared one.",
+  "image_does_not_prove": "That the model looked at, understood or correctly interpreted the image, or any scientific acceptance of what it shows: only delivery of these exact bytes. Transformed or resized content, metadata and self-reports earn nothing, so an undelivered image may still have been seen in another form.",
+  "required_images": [
+    {
+      "path": "rubin-p07.png",
+      "sha256": "192cfe74f851249617e3e06c206b9a3d2e88d3f8b2bd47dcfb6c714ce76859e2",
+      "media_type": "image/png",
+      "status": "delivered",
+      "delivered_by": [
+        "toolu_01X2istNRJCc6j9iFMXyRNcJ"
+      ]
+    },
+    {
+      "path": "rubin-p08.png",
+      "sha256": "17bb21dec9591d4bce0918d2c2b68dfc304fc089fdff69ec235f8bddea234f49",
+      "media_type": "image/png",
+      "status": "delivered",
+      "delivered_by": [
+        "toolu_01Rsg8c3sQecnko4RFN46hfh"
+      ]
+    },
+    {
+      "path": "rubin-p10.png",
+      "sha256": "36d1604b6672a863fcbaa2684faf901cb21a4f55461249f61ccdb6ecd485656d",
+      "media_type": "image/png",
+      "status": "delivered",
+      "delivered_by": [
+        "toolu_01F1uMC8cYejRYHh8Dtm6sd5"
+      ]
+    },
+    {
+      "path": "rubin-p18.png",
+      "sha256": "73d6920a50524c2cf061e0c269cdb8a8a95826501438ef91b73bf664c9fef1b3",
+      "media_type": "image/png",
+      "status": "delivered",
+      "delivered_by": [
+        "toolu_0132ounpEPdf4DLVVSAWYKSF"
+      ]
+    },
+    {
+      "path": "rubin-p19.png",
+      "sha256": "7d4de5bfbd9b22d35ad7c960457cb78395d0fe3162a5353a470cb046ebb49582",
+      "media_type": "image/png",
+      "status": "delivered",
+      "delivered_by": [
+        "toolu_01FZ4mkW1BEMDt5qB4nmVeCZ"
+      ]
+    },
+    {
+      "path": "rubin-p20.png",
+      "sha256": "d2d6f61bd021cd67449065b60d68b0fb51c551a566e239acab0f9ec66a9f811b",
+      "media_type": "image/png",
+      "status": "delivered",
+      "delivered_by": [
+        "toolu_018xCmN28iY5fJaH4gRqRePd"
+      ]
+    },
+    {
+      "path": "rubin-p24.png",
+      "sha256": "a95af55b3676c236c0d8487590fc7c7e9a16db08860e003feb3878f1a20a5018",
+      "media_type": "image/png",
+      "status": "delivered",
+      "delivered_by": [
+        "toolu_011PuZhJw5CJYK8kyrH6XoJH"
+      ]
+    },
+    {
+      "path": "rubin-p25.png",
+      "sha256": "95e7cabd6736caba8cdc8e2d849cf6403d272fb4a5fce6f3bcea98cfd8dd942b",
+      "media_type": "image/png",
+      "status": "delivered",
+      "delivered_by": [
+        "toolu_01JY1u2ymiPRVFfgjZTrhLWV"
+      ]
+    },
+    {
+      "path": "rubin-p27.png",
+      "sha256": "0a031455061a400229c5c047d86c4c6b98aee04734c7be46e42b262b78090431",
+      "media_type": "image/png",
+      "status": "delivered",
+      "delivered_by": [
+        "toolu_01M4qKAzBMDwpF4rEHEAMmU3"
+      ]
+    },
+    {
+      "path": "rubin-p28.png",
+      "sha256": "70178fc59ab59bf5c93e22c6a6e67bca6b55a4b203e80ff4370a8946da57961e",
+      "media_type": "image/png",
+      "status": "delivered",
+      "delivered_by": [
+        "toolu_01KP3fB1oiCxtbFsTxsU4GRf"
+      ]
+    },
+    {
+      "path": "rubin-p29.png",
+      "sha256": "65dfd7bbc11d61836e76eea844cd5abcabd7110ce11826f0e6442fcee5f66cdf",
+      "media_type": "image/png",
+      "status": "delivered",
+      "delivered_by": [
+        "toolu_01BHG59B5rtGd3bQM1fpKzCC"
+      ]
+    }
+  ],
+  "tool_calls": [
+    {
+      "id": "toolu_017FW3HKkefMn1YE1pyCR2MS",
+      "tool": "Read",
+      "source": ".review/required-sources.json",
+      "plan_copy_read": [
+        ".review/required-sources.json"
+      ],
+      "uncredited": "runner-owned plan copy (.review/): never read credit",
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01DNsGP17wqCdB4LuCheecJ6",
+      "tool": "Read",
+      "source": "proof.md",
+      "credited": {
+        "proof.md": [
+          [
+            1,
+            143
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_015ygi6FG8eVaoeuY7CJbAvf",
+      "tool": "Read",
+      "source": "checks.py",
+      "credited": {
+        "checks.py": [
+          [
+            1,
+            20
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01JHmNnNX7KVEAjye7HRYtg1",
+      "tool": "Read",
+      "source": "checks.json",
+      "credited": {
+        "checks.json": [
+          [
+            1,
+            40
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01LX2zNkuQi789VxNDZ58cBa",
+      "tool": "Read",
+      "source": "source-map.json",
+      "credited": {
+        "source-map.json": [
+          [
+            1,
+            20
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01X2istNRJCc6j9iFMXyRNcJ",
+      "tool": "Read",
+      "source": "rubin-p07.png",
+      "uncredited": "non-text result (image, PDF or block list)",
+      "stream": "attempt",
+      "image": {
+        "path": "rubin-p07.png",
+        "media_type": "image/png",
+        "decoded_sha256": "192cfe74f851249617e3e06c206b9a3d2e88d3f8b2bd47dcfb6c714ce76859e2",
+        "delivered": true
+      }
+    },
+    {
+      "id": "toolu_01Rsg8c3sQecnko4RFN46hfh",
+      "tool": "Read",
+      "source": "rubin-p08.png",
+      "uncredited": "non-text result (image, PDF or block list)",
+      "stream": "attempt",
+      "image": {
+        "path": "rubin-p08.png",
+        "media_type": "image/png",
+        "decoded_sha256": "17bb21dec9591d4bce0918d2c2b68dfc304fc089fdff69ec235f8bddea234f49",
+        "delivered": true
+      }
+    },
+    {
+      "id": "toolu_01F1uMC8cYejRYHh8Dtm6sd5",
+      "tool": "Read",
+      "source": "rubin-p10.png",
+      "uncredited": "non-text result (image, PDF or block list)",
+      "stream": "attempt",
+      "image": {
+        "path": "rubin-p10.png",
+        "media_type": "image/png",
+        "decoded_sha256": "36d1604b6672a863fcbaa2684faf901cb21a4f55461249f61ccdb6ecd485656d",
+        "delivered": true
+      }
+    },
+    {
+      "id": "toolu_0132ounpEPdf4DLVVSAWYKSF",
+      "tool": "Read",
+      "source": "rubin-p18.png",
+      "uncredited": "non-text result (image, PDF or block list)",
+      "stream": "attempt",
+      "image": {
+        "path": "rubin-p18.png",
+        "media_type": "image/png",
+        "decoded_sha256": "73d6920a50524c2cf061e0c269cdb8a8a95826501438ef91b73bf664c9fef1b3",
+        "delivered": true
+      }
+    },
+    {
+      "id": "toolu_01FZ4mkW1BEMDt5qB4nmVeCZ",
+      "tool": "Read",
+      "source": "rubin-p19.png",
+      "uncredited": "non-text result (image, PDF or block list)",
+      "stream": "attempt",
+      "image": {
+        "path": "rubin-p19.png",
+        "media_type": "image/png",
+        "decoded_sha256": "7d4de5bfbd9b22d35ad7c960457cb78395d0fe3162a5353a470cb046ebb49582",
+        "delivered": true
+      }
+    },
+    {
+      "id": "toolu_018xCmN28iY5fJaH4gRqRePd",
+      "tool": "Read",
+      "source": "rubin-p20.png",
+      "uncredited": "non-text result (image, PDF or block list)",
+      "stream": "attempt",
+      "image": {
+        "path": "rubin-p20.png",
+        "media_type": "image/png",
+        "decoded_sha256": "d2d6f61bd021cd67449065b60d68b0fb51c551a566e239acab0f9ec66a9f811b",
+        "delivered": true
+      }
+    },
+    {
+      "id": "toolu_011PuZhJw5CJYK8kyrH6XoJH",
+      "tool": "Read",
+      "source": "rubin-p24.png",
+      "uncredited": "non-text result (image, PDF or block list)",
+      "stream": "attempt",
+      "image": {
+        "path": "rubin-p24.png",
+        "media_type": "image/png",
+        "decoded_sha256": "a95af55b3676c236c0d8487590fc7c7e9a16db08860e003feb3878f1a20a5018",
+        "delivered": true
+      }
+    },
+    {
+      "id": "toolu_01JY1u2ymiPRVFfgjZTrhLWV",
+      "tool": "Read",
+      "source": "rubin-p25.png",
+      "uncredited": "non-text result (image, PDF or block list)",
+      "stream": "attempt",
+      "image": {
+        "path": "rubin-p25.png",
+        "media_type": "image/png",
+        "decoded_sha256": "95e7cabd6736caba8cdc8e2d849cf6403d272fb4a5fce6f3bcea98cfd8dd942b",
+        "delivered": true
+      }
+    },
+    {
+      "id": "toolu_01M4qKAzBMDwpF4rEHEAMmU3",
+      "tool": "Read",
+      "source": "rubin-p27.png",
+      "uncredited": "non-text result (image, PDF or block list)",
+      "stream": "attempt",
+      "image": {
+        "path": "rubin-p27.png",
+        "media_type": "image/png",
+        "decoded_sha256": "0a031455061a400229c5c047d86c4c6b98aee04734c7be46e42b262b78090431",
+        "delivered": true
+      }
+    },
+    {
+      "id": "toolu_01KP3fB1oiCxtbFsTxsU4GRf",
+      "tool": "Read",
+      "source": "rubin-p28.png",
+      "uncredited": "non-text result (image, PDF or block list)",
+      "stream": "attempt",
+      "image": {
+        "path": "rubin-p28.png",
+        "media_type": "image/png",
+        "decoded_sha256": "70178fc59ab59bf5c93e22c6a6e67bca6b55a4b203e80ff4370a8946da57961e",
+        "delivered": true
+      }
+    },
+    {
+      "id": "toolu_01BHG59B5rtGd3bQM1fpKzCC",
+      "tool": "Read",
+      "source": "rubin-p29.png",
+      "uncredited": "non-text result (image, PDF or block list)",
+      "stream": "attempt",
+      "image": {
+        "path": "rubin-p29.png",
+        "media_type": "image/png",
+        "decoded_sha256": "65dfd7bbc11d61836e76eea844cd5abcabd7110ce11826f0e6442fcee5f66cdf",
+        "delivered": true
+      }
+    }
+  ],
+  "diagnostics": []
+}

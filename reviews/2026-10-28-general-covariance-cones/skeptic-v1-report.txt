@@ -1,0 +1,80 @@
+```json
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    ".review/required-sources.json lines 1-81 (complete; read plan only, earns no credit)",
+    "proof.md lines 1-144 (complete)",
+    "checks.py lines 1-21 (complete; inspected by hand, not executed)",
+    "checks.json lines 1-41 (complete)",
+    "source-map.json lines 1-21 (complete)",
+    "rubin-p07.png (full page image: (2.1) Poisson integral, (2.2)-(2.7))",
+    "rubin-p08.png (full page image: gamma_{n,i}, (2.8)-(2.11), historical notes)",
+    "rubin-p10.png (full page image: (3.4) multipliers, Lemma 3.2, Corollary 3.3)",
+    "rubin-p18.png (full page image: Section 4, Fourier convention, E_lambda, (4.1)-(4.2))",
+    "rubin-p19.png (full page image: (4.3)-(4.5), Theorem 4.1 statement)",
+    "rubin-p20.png (full page image: (4.6), proof of Theorem 4.1)",
+    "rubin-p24.png (full page image: Definition 5.7, (5.9), Theorem 5.8, proof Step 1)",
+    "rubin-p25.png (full page image: proof of Theorem 5.8 continued, Remark 5.9)",
+    "rubin-p27.png (full page image: Theorem 5.12, start of Section 6, Example 6.1)",
+    "rubin-p28.png (full page image: (6.1), Example 6.2, (6.2))",
+    "rubin-p29.png (full page image: Example 6.3, (6.3), Examples 6.4-6.6)",
+    "rubin-v2.pdf: not read (optional per instructions)"
+  ],
+  "checks": [
+    {
+      "claim": "C1: Source fidelity (Rubin arXiv v2 Theorem 4.1, Definition 5.7/Theorem 5.8, Example 6.3; labels refer to arXiv v2; no claim that no other representation theorem exists)",
+      "verdict": "PASS",
+      "reason": "Theorem 4.1 (p19) takes lambda in R minus Lambda0 = {n,n+2,...} union {0,-2,...}. For n=3, every lambda in (0,3) is allowed, including 3/2. For lambda>0, (ii)(a) 'E_{-lambda}f positive definite on R^n' is equivalent to (b) M^{1+lambda-n}f in M_{e+} and to (c) f=M^{1-lambda}mu with mu>=0. At n=3, M^{1+lambda-n}=M^{lambda-2}, which is exactly what proof.md lines 13-16 say. Definition 5.7 (p24) defines K=IB_lambda(L) for star bodies K,L in K^n through s_lambda rho_K^lambda = c^{-1}M^{1-lambda}rho_L^{n-lambda}. Theorem 5.8 (p24, proof pp24-25) says I_lambda^n = cl IB_{lambda,n} = cl IB^infty_{lambda,n} in the radial metric when lambda is not -2l. It says nothing about ellipsoid mixtures. Example 6.3 (p29) is an 'If ... then K in I_lambda^n' statement, so it is a sufficient construction. Its displayed (6.3) is an equivalence only for that particular mu, not a converse for every Fourier-positive object. Lines 9-11 and source-map.json say that numbering is arXiv v2 only and journal numbering is unverified. Line 32 explicitly does not assert that a majorant theorem is globally impossible. Small pinpoint and terminology slips are listed under minor findings."
+    },
+    {
+      "claim": "C2: Refusal of the ordinary kernel. (2.9) starts from Re(a)>0. For a=1-lambda<0 the raw integral against uniform measure diverges as J_lambda(delta). The (3.4) multiplier is a finite positive Gamma ratio. The continuation is not a literal positive generating measure.",
+      "verdict": "PASS",
+      "reason": "(2.9)-(2.10) on p8 define M^a with gamma_n(a) for Re a>0, and p10 continues it through (3.4). With a=1-lambda the kernel |theta.u|^{a-1} becomes |theta.u|^{-lambda}. On S^2 the normal coordinate is uniform on [-1,1], with density 1/2. Recomputing: int_{|v|>delta}|v|^{-lambda}(1/2)dv = int_delta^1 v^{-lambda}dv = (delta^{1-lambda}-1)/(lambda-1), which tends to infinity for lambda>1 and equals 2(delta^{-1/2}-1) at lambda=3/2. Setting j=0 in (3.4) with n=3 and alpha=1-lambda gives Gamma(lambda/2)/Gamma((3-lambda)/2), which is finite and positive, and equals 1 at lambda=3/2. At a=-1/2, gamma_3(a) contains Gamma(3/4)/Gamma(-1/4), and Gamma(-1/4)<0, so the continued normalizer is negative, as the proof says. Independently: the p8 Gamma-function identity holds with Rubin's d theta being the probability measure, since sigma_{n-2} int|v|^{alpha-1}(1-v^2)^{(n-3)/2}dv divided by sigma_{n-1} reproduces m_{0,alpha}. So the 'unnormalized kernel' cutoff computed against sigma hides no source constant. The section refutes only the raw-kernel reading and states that it does not contradict Rubin."
+    },
+    {
+      "claim": "C3: The singular plane Gamma at alpha=3/2, alpha0=1/4 is admissible. Gamma=H_{-alpha}nu with nu uniform on the equator. Poisson smoothing commutes with M. Each Gamma_t is positive definite, strictly positive and smooth away from 0.",
+      "verdict": "PASS",
+      "reason": "Pairing check: (1/2pi) int_{R2}|y|^{-1/2}phi(y,0)dy = int_0^infty r^{1/2} int phi(r u(phi)) dphi/(2pi) dr = <H_{-3/2}nu,phi>, with r^{2-alpha}=r^{1/2}. Homogeneity: Gamma(rA)=r^{2-s}Gamma(A)=r^{3-alpha}Gamma(A). The measure is nonnegative, even and Radon, and the local mass ~R^{3/2} makes it tempered. Gaussian mixture: int_0^infty q^{s/2-1}e^{-q|y|^2}dq = Gamma(s/2)|y|^{-s}. The quadratic form int (phi*phi~)dGamma equals int dz' of a tangential R^2 form against |y|^{-s}, which is >=0. Absolute Fubini follows from local integrability of |y|^{-1/2} in R^2 and Schwartz decay. Using Rubin's E_lambda with probability d theta, E_{-3/2}nu equals Gamma exactly, and E_{-3/2}f_t equals Gamma_t exactly. The ambient density |x|^{-alpha}f(x/|x|)/(4pi) follows from dx = 4pi r^2 dr sigma(dtheta). The positivity criterion is invariant under positive scalars. Theorem 4.1(ii) applies with nu even, so eta=M^{-1/2}nu>=0. Pi_t (multiplier t^j) and M^a (multiplier m_{j,a}) are both diagonal on spherical harmonics, so they commute on D'_e. Pi_t eta is the positive kernel applied to a finite measure, so it is >=0. f_t is even because P_t(-theta,u)=P_t(theta,-u). It is strictly positive and smooth because the kernel is smooth and positive for t<1. The argument uses neither a star-body assumption nor a divergent ordinary integral. One standard step is left implicit: the Bochner-Schwartz equivalence between the quadratic-form notion and Rubin's 'F^ positive' (see minor findings)."
+    },
+    {
+      "claim": "C4: Convergence and preserved normalizations (Poisson mass 1, approximate identity, Gamma_t->Gamma in S', fixed heat pairing, fixed spectral ball mass with the Euler Gamma factor; no pointwise or sup-norm convergence claimed)",
+      "verdict": "PASS",
+      "reason": "Mass: int(1-2tv+t^2)^{-3/2}dv from -1 to 1 equals (1/t)[1/(1-t)-1/(1+t)] = 2/(1-t^2), so (1-t^2)/2 times it is 1. Rubin's Pi_t (2.1) uses probability du, which matches. Off-diagonal: for |theta-u|>=eps, |theta-tu|>=eps/2 when t is near 1, so P_t <= (1-t^2)(2/eps)^3 -> 0 uniformly. Hence int g f_t dsigma = int Pi_t g dnu -> int g dnu for continuous g. h(theta)=int r^{1/2}phi(r theta)dr is continuous and bounded by dominated convergence, so <Gamma_t,phi> = int h f_t dsigma -> int h dnu = <Gamma,phi>. Heat pairing: if p1=(2pi)^{-3/2}e^{-|x|^2/2}, h is constant and the angular mass is 1, giving (2pi)^{-3/2} int r^{2-alpha}e^{-r^2/2}dr; the 4pi from the density cancels the area. Spectral measure: with Gamma_t = int e^{i xi.x} mu_t(d xi), mu_t is homogeneous of degree alpha-3 and mu_t(B_R)=R^alpha mu_t(B_1). Then int e^{-R^2/2} alpha R^{alpha-1}dR = alpha 2^{alpha/2-1}Gamma(alpha/2) = 2^{alpha/2}Gamma(1+alpha/2), which matches line 111. Only S' convergence is claimed. The definitions of p1 and of the spectral-measure convention are implicit; see minor findings."
+    },
+    {
+      "claim": "C5: Diverging Riesz envelope C_t >= 1/(8 sqrt2 pi^2 (1-t)), with the scope limited to Poisson smoothing followed by a scalar isotropic Riesz majorant",
+      "verdict": "PASS",
+      "reason": "Write |e1-t u(phi)|^2 = (1-t)^2 + 2t(1-cos phi). Since 2t(1-cos phi) <= phi^2, this is <= delta^2+phi^2 <= 2delta^2 when |phi|<=delta. Also 1-t^2 = delta(2-delta) >= delta. So P_t >= delta/(2 sqrt2 delta^3) = 1/(2 sqrt2 delta^2). The arc |phi|<=delta has nu-mass 2delta/(2pi) = delta/pi, giving f_t(e1) >= 1/(2 sqrt2 pi delta). Dividing by 4pi gives 1/(8 sqrt2 pi^2 delta). Both sides of the majorant are continuous on R^3 minus {0}, so a violation would hold on an open set of positive measure; the a.e. bound therefore holds pointwise. The true asymptotic f_t(e1) ~ 2/(pi delta) (peak*delta ~ 0.63662 in checks.json) is consistent with this. Lines 128-133 limit the conclusion to this one shortcut and explicitly do not touch other endpoint comparisons, the moment theorem, or known plane-specific constants. No Theorem 3.1 or all-routes no-go is claimed."
+    },
+    {
+      "claim": "C6: Finite checks and honest outcome",
+      "verdict": "PASS",
+      "reason": "By hand: the checks.py peak integrand (1-t^2)/pi int_0^pi (delta^2+2t(1-cos phi))^{-3/2}dphi is exactly f_t(e1) for uniform nu, using phi -> -phi symmetry. The breakpoints [0, delta, sqrt delta, 1, pi] resolve the peak. The lower bound is coded as 1/(2 sqrt2 pi delta). The mass integrand matches the proof, with a breakpoint at 1-delta. The cutoff 2(delta^{-1/2}-1) is asserted exactly equal to 2(10^{n/2}-1) for even n; I confirmed 18, 198, 1998, and 61.2455... for n=3. The parameter check asserts alpha+alpha0 = 7/4 < 2. The checks.json values agree, for example lower(0.01) = 11.2539..., and the mass equals 1 to about 1e-57. The script states it is not a proof. The consequence section (lines 135-143) stays limited. There is no full moment proof, sharp constant, novelty, Lean, human-verification or circulation claim, and the status line says the review is pending."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Pinpoint: Example 6.3 lies entirely on arXiv v2 p29. p28 contains (6.1) and Example 6.2. proof.md line 30 and source-map.json both cite 'pp28-29'.",
+      "Terminology: line 31 calls Example 6.3 a 'dual-Radon construction'. Rubin's object is the dual generalized cosine transform R*^{i-lambda}_{n-i} from (2.7), applied to a measure on G_{n,n-i}. Calling it 'dual generalized cosine (Radon-type)' would be more accurate.",
+      "The heat kernel p1 is not defined explicitly. The displayed constant implies p1(x) = (2pi)^{-3/2}exp(-|x|^2/2), and that should be stated.",
+      "The spectral-measure convention is not stated. The identity <Gamma_t,p1> = 2^{alpha/2}Gamma(1+alpha/2)mu_t(B1) holds for Gamma_t = int e^{i xi.x}mu_t(d xi), i.e. mu_t = (2pi)^{-3} times Rubin's F^. If mu_t were taken as Rubin's F^ directly, a factor (2pi)^{-3} would appear. The claim 'No inverse-Fourier factor is missing' is true only under the unstated convention.",
+      "Positive definiteness of Gamma is shown in the quadratic-form (Bochner-Schwartz) sense. Theorem 4.1 uses 'F^ is a positive distribution'. These are equivalent by the Bochner-Schwartz theorem, but the proof does not cite that link. Alternatively, it could note that the Fourier transform of |y|^{-1/2} tensor delta_0 is a positive multiple of |eta|^{-3/2} tensor 1.",
+      "Line 29 says star-body radial functions are continuous and strictly positive. The definition of K^n is not on any supplied page, so this standard convention cannot be checked inside the packet.",
+      "Line 37 restricts to lambda in (1,2). The raw divergence and the negative continued normalizer actually hold for every lambda in (1,3), and the integral diverges logarithmically at lambda=1. The statement is correct as written, just narrower than needed.",
+      "Line 137 says the analytic closure 'is not the missing positive endpoint majorant'. This is an interpretive summary of the raw-kernel refutation, not a proved non-density or no-representation theorem. The status lines already disclaim the stronger reading, but the sentence could be softened to match."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is an AI review. It is not human verification, a novelty audit, or a formal (Lean) check. checks.py was inspected by hand and not executed. The checks.json values were spot-checked by hand arithmetic only.",
+    "Source fidelity was checked only against the eleven supplied page images of arXiv 0704.0061v2 (pp7, 8, 10, 18, 19, 20, 24, 25, 27, 28, 29). The optional rubin-v2.pdf was not read. Definitions that live on other pages (the star-body class K^n, Theorem 9.1, the normalization of d theta) were inferred or checked indirectly. For d theta, consistency of (2.10) with (3.4) implies a probability measure. Journal numbering was not checked. Byte provenance and source delivery are left to the native ledger.",
+    "The target paper's admissibility conditions on (alpha, alpha0) are not in the packet. I accepted alpha+alpha0<2 together with positive definite, even, tempered, homogeneous Radon measure as the admissibility class, as the review contract states.",
+    "Standard facts used without packet sources: the Bochner-Schwartz theorem; uniform-approximate-identity properties of the Poisson kernel; that two continuous functions satisfying an inequality a.e. satisfy it everywhere; Fourier positivity of |y|^{-s} in R^2 for 0<s<2.",
+    "Gold-standard self-assessment: this is a single-pass independent correctness review of a scoped source audit and counterexample. It confirms correctness within that narrow scope (no fatal or major issues; minor exposition notes only). It does not certify any research consequence, novelty, or the arbitrary-covariance moment goal, which remains open."
+  ]
+}
+```

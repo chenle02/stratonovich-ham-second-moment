@@ -1634,3 +1634,44 @@ All continuous proof steps written;local60digit normalization checks PASS.
 Fresh six-check scoped skeptic packet includes four mandatory texts and
 eleven exact primary-source image pages. Independent review PENDING;no
 new accepted no-go or main-manuscript claim. Canonical TeX/PDF unchanged.
+
+
+### Real-parameter/Poisson screen accepted at its NARROW HIGH gate
+
+Sourcecd6b490803115e7051e2404e69fc48542d92a50b held through collection.
+Opus5.5 high returned all6PASS/HIGH,212.28s,accepted=true,full four-text/
+eleven-image delivery. No fatal/major findings or required repairs. Eight
+minor findings and all source-access/AI-review limitations adjudicated in
+general-covariance-cones/adjudication.md. In particular: probability area
+versus ambient density has factor4pi;heat kernel p1 is Brownian covariance1;
+spectral mu uses Gamma=int exp(i xi.x)mu,not raw Fourier transform. Example6.3
+is the dual GENERALIZED COSINE (Radon-type)transform,p29. The interpretive
+conclusion means the checked source theorem does not SUPPLY our majorant,
+not that every other possible majorant is disproved.
+
+Native/dry-run56members archived losslessly and all member hashes verified
+before own raw removal. This is a verified route-screen checkpoint,not a
+new full moment theorem or a Theorem3.1-all-routes kill. Original full target
+and all prior moment-review confidence states unchanged. Main56page TeX/PDF
+untouched. Existing queued Rubin paper retained,no duplicate reference.
+
+### Next genuinely different mechanism: time blocks,phase vector first
+
+UNREVIEWED block-propagator-screen.md records a possible dyadic-static-block
+mechanism and its scale calculation. The calculation is conditional on
+unproved phase-operator composition and overlapping-level estimates;no
+independent-block moment-product identity is assumed. Exact scalar finite
+diagnostic: two independent unit-time Gaussian static blocks carry velocity.
+Single-block second-moment formal A coefficient1/3;two-block final-value
+coefficient3;product-of-single-values coefficient2/3. Formal gap7/3,checked
+with rational Gaussian moments through A². This spatially constant,piecewise-
+static temporal toy lies OUTSIDE the target homogeneous covariance class.
+It is not an analytic remainder certificate or accepted SPDE no-go.
+
+Immediate useful question: can a uniform STATIC PHASE-PROPAGATOR estimate
+for arbitrary initial position/velocity replace scalar solution-value bounds?
+Rough spatial potential is form-bounded,not a bounded L2 multiplier;switching
+random form-dependent energy norms can introduce a factor per short block.
+That loss must be controlled before any long dyadic proof. Neither the valid
+static value asymptotics nor generic additive-covariance logconvexity supplies
+this missing operator estimate. No Skorohod exact-constant work developed.
