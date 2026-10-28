@@ -1,71 +1,65 @@
 # HANDOFF
 
-**Last updated**: 2026-10-28 02:40 UTC (<MACHINE>, Codex)
-**Project**: Article-Stratonovich-HAM-Second-Moment — higher-alpha candidate checkpoint
-**Wiki page (accepted Round3 status, not current candidate)**: `../SPDEs-wiki/content/projects/stratonovich-ham-second-moment.md`
+Last updated: 2026-10-28 03:16 UTC (Codex)
+**Project**: Article-Stratonovich-HAM-Second-Moment — active goal, weighted-merge diagnostic next
+**Wiki page**: `../SPDEs-wiki/content/projects/stratonovich-ham-second-moment.md`
 
 ## ⏭ Next session: where to stand and what to do
 
-Stand at this repository root on `master`. Read `Progress.md` and
-`reviews/2026-10-27-round4/review-summary.json`, then obtain Le's disposition
-of the concrete Round4 candidate. Two native Opus reviews returned
-PASS_WITH_NOTES/medium, all9checks PASS and no required repairs; the second
-has verified full source delivery. The configured high-confidence gate remains
-unmet, so no acceptance or proof-status promotion is claimed. Do not re-run an
-unchanged argument just to seek a higher confidence label.
+Stand at this repository root on master. Read Progress.md and
+reviews/2026-10-28-residual-recon/order-four-merge-diagnostic.md, then test the
+explicit weighted two-wave candidate (WC) on coincident, interior, wave-front
+and unequal-gap configurations before any all-order proof investment.
+Retain every remote covariance and the singular remote-gap cost.
 
-Le explicitly requested the save handoff before answering the offered choices
-(keep the threshold and seek a fresh DeepSeek cold read; accept the medium scoped
-review with limitations; or save and stop). Saving is not an answer to that
-question. No new review/proof work is authorized by the save itself. The private
-Lean companion still separately awaits decision point4 approval.
+Le reactivated the full goal on2026-10-28 UTC. The goal remains ACTIVE;
+this checkpoint is not a user pause. Round4 remains a candidate: native Opus
+confidence is still medium, and the completed DeepSeek cold read has limited
+source coverage and no confidence grade. No unchanged-confidence retry.
+The separate private Lean creation proposal is still awaiting explicit approval.
 
 ## Pre-flight checks
 
-1. Confirm repository root, branch and clean tree; expected pre-handoff HEAD
-   `2e4f6c5997efef9c22b8da8abe3c69369f39b411`, with a dedicated handoff commit
-   following it. Fetch and audit local/origin/<HUB> serially before edits.
-2. Read `AGENTS.md`, `PROJECT-GOAL.md`, `Progress.md` and the Round4 README.
-   `Progress.md` remains the workflow authority; the full goal is unfinished.
+1. Confirm repository root, master and clean tree. Expected pre-handoff HEAD
+   e356037dd11dc9b7ea7da0dcb5137ac1b89dec77, followed by a dedicated handoff
+   commit. Fetch/audit local, origin and <HUB> serially before edits.
+2. Read AGENTS.md, PROJECT-GOAL.md, Progress.md, the cold-read adjudication
+   and the residual order-four diagnostic. The full goal is unfinished.
 3. Verify author PDF SHA256
-   `5f7385ca451e643a1f3ff31835e4ee52b2708b5d2e3652eec3fb5d3958b97b6c`.
-4. Canonical notes:31pages; final TeX SHA256
-   `81bd89bdd2cbbd10e4973953db3794a47aa596c65d7e5e0ad33e7a41531e473a`;
-   PDF SHA256
-   `d3c9179fa2466126bc77e2340536a05bf6ab1ab48aa6397bfc307321dbcc7099`.
-   Build with the root latexmk command only if source/build verification is
-   needed; last gate was0errors,0undefined references/citations,0overfull boxes.
-5. Verify `reviews/2026-10-27-round4/review-evidence.tar.xz` against its member
-   manifest before extracting evidence. It retains85byte-verified files from
-   both attempts and frozen packets, including all native receipts and streams.
-6. There are no active native reviews, subagent tasks or cluster jobs. Both
-   GPT workers were closed. No companion repository, registry entry or lease exists.
+   5f7385ca451e643a1f3ff31835e4ee52b2708b5d2e3652eec3fb5d3958b97b6c.
+   Canonical notes remain31pages, TeX SHA256
+   81bd89bdd2cbbd10e4973953db3794a47aa596c65d7e5e0ad33e7a41531e473a;
+   PDF SHA256 d3c9179fa2466126bc77e2340536a05bf6ab1ab48aa6397bfc307321dbcc7099.
+   No canonical source changed in this session; no rebuild was required.
+4. Verify both retained review archives against their manifests:
+   reviews/2026-10-27-round4/review-evidence.tar.xz (85members) and
+   reviews/2026-10-28-round4-cold/native-evidence.tar.xz (13members).
+   The cold input-packet archive has its own manifest binding.
+5. All review processes and delegated tasks are terminal. No cluster job
+   or companion creation occurred. No external unique WIP is required;
+   temporary packet/source copies are fully preserved in committed artifacts.
 
 ## Concrete deliverables for the next session
 
-- Resolve the medium-confidence acceptance disposition with Le before promotion.
-  If a cold read is chosen, use the project-required DeepSeek V4-Pro route and a
-  fresh source-bound packet; this session did not preflight or dispatch it.
-- Candidate scope: isotropic Riesz d3,1<alpha<2-alpha0; d2,
-  1<alpha<min(3/2,2-alpha0). Conditional transfer assumes a genuinely uniform
-  spatial convolution maximum. Explicit constants are nonsharp.
-- Residual mathematics: general anisotropic high-alpha covariance, d2 Riesz
-  3/2<=alpha<2-alpha0 (possible only if alpha0<1/2), sharp constants and Lean.
-- After a disposition, finish the outstanding wiki candidate/status propagation
-  and provenance loop. No wiki page was edited or published in this session;
-  the existing page correctly retains accepted Round3 but omits Round4.
-- A clean disposable wiki clone exists at
-  `../../../../.local/state/tmp/spdes-wiki-wave.w5azow45`, HEAD
-  `143711bb1d5a192779c6524f1fa72bd2db54c739`, with no edits or external WIP.
-  It contains no unique research payload; use a fresh clone for a future wave.
+- Execute the bounded (WC) falsification test, with explicit configuration,
+  scaling and remaining averaging measure. If it fails, state its exact scope;
+  it is not a counterexample to second-moment growth.
+- Record any surviving weighted estimate as an unproved obligation until a
+  complete proof and cross-family review exist. No all-order leap from one diagram.
+- Preserve the separate Round4 acceptance boundary. The cold report and source
+  followup do not upgrade Opus medium to high or grant circulation clearance.
+- Wiki candidate/status propagation remains unfinished; the wiki still records
+  accepted Round3. Use the isolated-clone workflow for any authorized update.
+- Private Lean proposal remains lean-progress/CREATION-PROPOSAL.md; an approval
+  question was presented but no answer received. Do not create the companion
+  from elapsed time or the general goal-reactivation instruction.
 
 ## Success criteria for the immediate next step
 
-Le's disposition is explicit and recorded without rewriting the actual Opus
-confidence or receipts. The successor preserves the exact candidate proof,
-source bindings and acceptance boundary. An authorized status promotion must
-update the abstract, global coverage comments and planned route consistently;
-those currently retain the accepted alpha<=1 scope deliberately.
+A concrete, reproducible diagnostic accepts or rejects the specific weighted
+candidate at the tested configurations, with all covariance factors and clocks
+retained. State exactly what remains unproved. Preserve source, review and
+accepted/candidate boundaries; advance the full goal without claiming completion.
 
 ## Anti-success criteria
 
@@ -94,28 +88,45 @@ those currently retain the accepted alpha<=1 scope deliberately.
   `53e2817eafd9ed4de30f3acda6427629b61c71e0` in d1,d2,d3.
 - Previous accepted wiki checkpoint:
   `a1aab66454bfefa4c5823684b9a9635fcc152539`.
+- 2026-10-28 goal/reactivation packet cde6e07; full goal active, source/proof
+  bytes unchanged, fresh DeepSeek V4-Pro cold reader launched.
+- Residual source audit6927ce0 pins BNZ Lemma4.3/Balan AppendixC convolution
+  inputs and missing weighted transfer; novelty remains unverified.
+- Cold review/diagnostic checkpoint e356037: report returned after same-session
+  output-limit recovery, all14items adjudicated, source-access limitations
+  retained,13raw artifacts archived byte-exact,11rendered source pages checked.
+- Rendered source followup confirms L4/product and separate-root inputs; it
+  records the p23 printed reversal-index typo that the notes do not reproduce.
+  This is GPT source checking, not a new independent scientific review.
+- Exact order-four crossing-pair diagnostic rejects naive unweighted BNZ
+  substitution and states an OPEN scaling-consistent weighted candidate(WC).
 
 ## Repo & git state at handoff
 
-- Branch: `master`; pre-handoff HEAD `2e4f6c5997efef9c22b8da8abe3c69369f39b411`.
-- Both preceding commits are pushed to origin. Final handoff push and <HUB>
-  parity are checked after this write. Tree was clean before this handoff edit.
-- All new research payload is committed; no foreign or staged author WIP was found.
-- Origin remains the configured <HUB> bare remote. `All.bib` remains read-only.
-- The disposable wiki clone is clean and unpublished; no wiki commit from this wave.
+- Branch master; pre-handoff HEAD e356037dd11dc9b7ea7da0dcb5137ac1b89dec77.
+- All research artifacts and adjudications are committed and pushed; <HUB>
+  parity verified. Dedicated handoff commit follows, with final parity checked.
+- Canonical notes/source PDFs and All.bib unchanged. No foreign/staged WIP.
+- No wiki publication or Lean repository creation in this session.
 
 ## Operating notes
 
-The user save request ends this research session. No goal service goal is active;
-the written full objective remains unfinished. Lean remains L0/proposed.
-No emails, fleet messages, Telegram notices, public paper release or cluster job
-occurred. The mathematical author and root checks are GPT-family work, not
-independent certification. Novelty remains unverified; no circulation clearance.
+The goal service goal is ACTIVE; no budget was requested. The general
+upper-bound, sharp-constant and private Lean objectives remain unfinished.
+No emails, fleet messages, Telegram notices, public release or cluster jobs.
 
-The native reviewer used the already-retained CLI2.1.304 via process-local PATH
-and the existing <account B> subscription. Default CLI2.1.312 did not match
-the read-ledger gate; no system setup was modified. Exact runtime identity is in
-archived receipts. Revalidate account/runtime if a future dispatch is authorized.
+DeepSeek route: explicit deepseek/deepseek-v4-pro through OpenCode pure mode.
+Initial response exhausted32000reasoning tokens with no report. Same-session
+continuation with65536output ceiling returned a report; count one session.
+File tools unexpectedly re-anchored to the live repository despite subprocess
+cwd. They listed prior filenames and read SOURCE-MANIFEST.md, not previous
+report contents or the author PDF. Strict blindness/source coverage is limited.
+For any future fresh source review, use explicit --dir and process PWD plus
+path-restricted read permissions, and verify actual delivered source pages.
+Do not rerun solely for a higher confidence label.
+
+The old native Opus CLI/account receipt remains in its original archive.
+No system configuration was changed. Setup requests still belong to Agent21.
 
 ## Risks to monitor
 
@@ -135,3 +146,9 @@ archived receipts. Revalidate account/runtime if a future dispatch is authorized
    ball-growth remark, approximate-identity neighborhood order, scaling emphasis
    and residual-case wording. Do not convert them into fabricated major defects
    or silently certify them through a fresh unreviewed proof rewrite.
+7. BNZ/Balan unweighted convolution does not cover an internal pairing vertex
+   with a remote spatial covariance. The diagnostic's(WC) is only proposed.
+8. DeepSeek's free-form report includes editorial objections to internal notes;
+   do not convert them into mathematical defects or a mandate to polish a paper.
+9. Source p23's second-block reversal index is misprinted. Use separate-chain
+   reversal as in P:mixed; preserve the typo as a scoped source discrepancy.
