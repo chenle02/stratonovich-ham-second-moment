@@ -724,7 +724,7 @@ Todo:
 - [x] Activate the full goal and verify local/origin/<HUB> parity.
 - [x] Verify current candidate/source hashes and the85-member evidence archive.
 - [x] Preflight DeepSeek V4-Pro and freeze a fresh prior-blind packet.
-- [ ] Obtain the cold-reader terminal report and adjudicate every concern.
+- [x] Obtain the cold-reader terminal report and adjudicate every concern.
 - [ ] Resolve the Round4 acceptance boundary without rewriting Opus confidence.
 - [ ] Close authorized wiki/provenance propagation, then select the next
   bounded residual-mathematics subaim under the existing decision points.
@@ -764,3 +764,46 @@ remote spatial and temporal covariance retained. No test has run yet.
 Chen's integrated pair norms are another possible input only with an
 order-retaining mechanism that escapes the already recorded G0 no-go.
 No new theorem, proof, novelty, Lean or acceptance claim follows.
+
+
+### Cold-read terminal record and adjudication
+
+DeepSeek V4-Pro returned the report after a same-session continuation.
+Observed provider/model verified from the complete session export; one
+independent session, not two votes. All14 report items are mapped in
+reviews/2026-10-28-round4-cold/adjudication.md. No confidence grade was
+requested or invented. Its positive algebra spot checks are not a proof.
+
+Coverage limitation: the full candidate was inline, but the read tools
+re-anchored to the live checkout. They listed historical review filenames
+and read SOURCE-MANIFEST.md (including audit context), not previous report
+contents or rendered source pages. This limits strict blindness and source
+independence; source_coverage_verified=false. The source packet and canonical
+notes stayed byte-identical. Both original no-report attempt and report
+recovery are byte-preserved in native-evidence.tar.xz with13-member manifest.
+
+Rendered GPT source followup confirms Lemma2.5 includes L4 and(2.18),
+the two-root convention, and the existing(5.4)/Remark5.1 discrepancies.
+It also records the printed p23 second-block reversal-index typo; the notes
+use separate chain reversal and do not copy it. This followup is not credited
+as DeepSeek coverage or independent scientific review. No concrete new
+mathematical defect was established; exposition suggestions remain optional.
+
+Acceptance remains pending: Opus medium reports are unchanged; the limited
+free-form cold read does not meet the configured high-confidence gate. No
+unchanged-confidence retry, status promotion, wiki publication, or Lean
+creation occurred. The full goal remains active and incomplete.
+
+### Residual diagnostic completed
+
+The exact split(0,4), crossing-pair order-four diagram and vertex2 merge
+are written in reviews/2026-10-28-residual-recon/order-four-merge-diagnostic.md.
+The temporal covariance permits an upper pullout costing the remote gap;
+the spatial covariance has no finite uniform essential supremum even on
+an admissible interior lens. Thus naive unweighted BNZ substitution fails.
+This is an unreviewed author-side diagnostic, not an accepted new no-go or
+a counterexample to moment growth. A scaling-consistent weighted candidate
+(WC) is stated explicitly OPEN. Immediate mathematical next step: test(WC)
+at coincident and wave-front configurations, keeping actual remote-point
+constraints; if it fails, retain a nonuniform envelope for the remaining
+spatial average. Do not start an all-order proof before this diagnostic.
