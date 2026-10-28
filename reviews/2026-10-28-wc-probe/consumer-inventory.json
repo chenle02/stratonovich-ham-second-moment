@@ -1,0 +1,939 @@
+{
+  "kind": "finite-combinatorial-inventory",
+  "analytic_claims": [],
+  "orders": [
+    {
+      "total_order": 2,
+      "diagram_count": 3,
+      "edge_type_counts": {
+        "IT": 2,
+        "TT": 1
+      },
+      "time_case_counts": {
+        "same_chain_endpoint_T_equals_b": 2,
+        "two_terminals_no_interior_merge_vertex": 1
+      },
+      "every_diagram_has_terminal_edge": true,
+      "diagrams": [
+        {
+          "split": [
+            0,
+            2
+          ],
+          "chains": [
+            [],
+            [
+              1,
+              2
+            ]
+          ],
+          "matching": [
+            [
+              1,
+              2
+            ]
+          ],
+          "edges": [
+            {
+              "edge": [
+                1,
+                2
+              ],
+              "endpoint_types": "IT",
+              "terminal": 2,
+              "interior": 1,
+              "merge_neighbors": [
+                "root",
+                2
+              ],
+              "time_case": "same_chain_endpoint_T_equals_b"
+            }
+          ],
+          "terminal_incident_edge_count": 1,
+          "complete_pair_deletion_sequence_count": 1
+        },
+        {
+          "split": [
+            1,
+            1
+          ],
+          "chains": [
+            [
+              1
+            ],
+            [
+              2
+            ]
+          ],
+          "matching": [
+            [
+              1,
+              2
+            ]
+          ],
+          "edges": [
+            {
+              "edge": [
+                1,
+                2
+              ],
+              "endpoint_types": "TT",
+              "time_case": "two_terminals_no_interior_merge_vertex"
+            }
+          ],
+          "terminal_incident_edge_count": 1,
+          "complete_pair_deletion_sequence_count": 1
+        },
+        {
+          "split": [
+            2,
+            0
+          ],
+          "chains": [
+            [
+              1,
+              2
+            ],
+            []
+          ],
+          "matching": [
+            [
+              1,
+              2
+            ]
+          ],
+          "edges": [
+            {
+              "edge": [
+                1,
+                2
+              ],
+              "endpoint_types": "IT",
+              "terminal": 2,
+              "interior": 1,
+              "merge_neighbors": [
+                "root",
+                2
+              ],
+              "time_case": "same_chain_endpoint_T_equals_b"
+            }
+          ],
+          "terminal_incident_edge_count": 1,
+          "complete_pair_deletion_sequence_count": 1
+        }
+      ]
+    },
+    {
+      "total_order": 4,
+      "diagram_count": 15,
+      "edge_type_counts": {
+        "II": 9,
+        "IT": 18,
+        "TT": 3
+      },
+      "time_case_counts": {
+        "cross_chain_T_inside_or_right_of_interval": 4,
+        "cross_chain_T_left_inside_or_right_of_interval": 2,
+        "no_terminal_endpoint_selected": 9,
+        "same_chain_endpoint_T_equals_b": 6,
+        "same_chain_remote_T_gt_b": 6,
+        "two_terminals_no_interior_merge_vertex": 3
+      },
+      "every_diagram_has_terminal_edge": true,
+      "diagrams": [
+        {
+          "split": [
+            0,
+            4
+          ],
+          "chains": [
+            [],
+            [
+              1,
+              2,
+              3,
+              4
+            ]
+          ],
+          "matching": [
+            [
+              1,
+              2
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "edges": [
+            {
+              "edge": [
+                1,
+                2
+              ],
+              "endpoint_types": "II",
+              "time_case": "no_terminal_endpoint_selected"
+            },
+            {
+              "edge": [
+                3,
+                4
+              ],
+              "endpoint_types": "IT",
+              "terminal": 4,
+              "interior": 3,
+              "merge_neighbors": [
+                2,
+                4
+              ],
+              "time_case": "same_chain_endpoint_T_equals_b"
+            }
+          ],
+          "terminal_incident_edge_count": 1,
+          "complete_pair_deletion_sequence_count": 1
+        },
+        {
+          "split": [
+            0,
+            4
+          ],
+          "chains": [
+            [],
+            [
+              1,
+              2,
+              3,
+              4
+            ]
+          ],
+          "matching": [
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              4
+            ]
+          ],
+          "edges": [
+            {
+              "edge": [
+                1,
+                3
+              ],
+              "endpoint_types": "II",
+              "time_case": "no_terminal_endpoint_selected"
+            },
+            {
+              "edge": [
+                2,
+                4
+              ],
+              "endpoint_types": "IT",
+              "terminal": 4,
+              "interior": 2,
+              "merge_neighbors": [
+                1,
+                3
+              ],
+              "time_case": "same_chain_remote_T_gt_b"
+            }
+          ],
+          "terminal_incident_edge_count": 1,
+          "complete_pair_deletion_sequence_count": 1
+        },
+        {
+          "split": [
+            0,
+            4
+          ],
+          "chains": [
+            [],
+            [
+              1,
+              2,
+              3,
+              4
+            ]
+          ],
+          "matching": [
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "edges": [
+            {
+              "edge": [
+                1,
+                4
+              ],
+              "endpoint_types": "IT",
+              "terminal": 4,
+              "interior": 1,
+              "merge_neighbors": [
+                "root",
+                2
+              ],
+              "time_case": "same_chain_remote_T_gt_b"
+            },
+            {
+              "edge": [
+                2,
+                3
+              ],
+              "endpoint_types": "II",
+              "time_case": "no_terminal_endpoint_selected"
+            }
+          ],
+          "terminal_incident_edge_count": 1,
+          "complete_pair_deletion_sequence_count": 1
+        },
+        {
+          "split": [
+            1,
+            3
+          ],
+          "chains": [
+            [
+              1
+            ],
+            [
+              2,
+              3,
+              4
+            ]
+          ],
+          "matching": [
+            [
+              1,
+              2
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "edges": [
+            {
+              "edge": [
+                1,
+                2
+              ],
+              "endpoint_types": "IT",
+              "terminal": 1,
+              "interior": 2,
+              "merge_neighbors": [
+                "root",
+                3
+              ],
+              "time_case": "cross_chain_T_inside_or_right_of_interval"
+            },
+            {
+              "edge": [
+                3,
+                4
+              ],
+              "endpoint_types": "IT",
+              "terminal": 4,
+              "interior": 3,
+              "merge_neighbors": [
+                2,
+                4
+              ],
+              "time_case": "same_chain_endpoint_T_equals_b"
+            }
+          ],
+          "terminal_incident_edge_count": 2,
+          "complete_pair_deletion_sequence_count": 2
+        },
+        {
+          "split": [
+            1,
+            3
+          ],
+          "chains": [
+            [
+              1
+            ],
+            [
+              2,
+              3,
+              4
+            ]
+          ],
+          "matching": [
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              4
+            ]
+          ],
+          "edges": [
+            {
+              "edge": [
+                1,
+                3
+              ],
+              "endpoint_types": "IT",
+              "terminal": 1,
+              "interior": 3,
+              "merge_neighbors": [
+                2,
+                4
+              ],
+              "time_case": "cross_chain_T_left_inside_or_right_of_interval"
+            },
+            {
+              "edge": [
+                2,
+                4
+              ],
+              "endpoint_types": "IT",
+              "terminal": 4,
+              "interior": 2,
+              "merge_neighbors": [
+                "root",
+                3
+              ],
+              "time_case": "same_chain_remote_T_gt_b"
+            }
+          ],
+          "terminal_incident_edge_count": 2,
+          "complete_pair_deletion_sequence_count": 2
+        },
+        {
+          "split": [
+            1,
+            3
+          ],
+          "chains": [
+            [
+              1
+            ],
+            [
+              2,
+              3,
+              4
+            ]
+          ],
+          "matching": [
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "edges": [
+            {
+              "edge": [
+                1,
+                4
+              ],
+              "endpoint_types": "TT",
+              "time_case": "two_terminals_no_interior_merge_vertex"
+            },
+            {
+              "edge": [
+                2,
+                3
+              ],
+              "endpoint_types": "II",
+              "time_case": "no_terminal_endpoint_selected"
+            }
+          ],
+          "terminal_incident_edge_count": 1,
+          "complete_pair_deletion_sequence_count": 1
+        },
+        {
+          "split": [
+            2,
+            2
+          ],
+          "chains": [
+            [
+              1,
+              2
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "matching": [
+            [
+              1,
+              2
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "edges": [
+            {
+              "edge": [
+                1,
+                2
+              ],
+              "endpoint_types": "IT",
+              "terminal": 2,
+              "interior": 1,
+              "merge_neighbors": [
+                "root",
+                2
+              ],
+              "time_case": "same_chain_endpoint_T_equals_b"
+            },
+            {
+              "edge": [
+                3,
+                4
+              ],
+              "endpoint_types": "IT",
+              "terminal": 4,
+              "interior": 3,
+              "merge_neighbors": [
+                "root",
+                4
+              ],
+              "time_case": "same_chain_endpoint_T_equals_b"
+            }
+          ],
+          "terminal_incident_edge_count": 2,
+          "complete_pair_deletion_sequence_count": 2
+        },
+        {
+          "split": [
+            2,
+            2
+          ],
+          "chains": [
+            [
+              1,
+              2
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "matching": [
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              4
+            ]
+          ],
+          "edges": [
+            {
+              "edge": [
+                1,
+                3
+              ],
+              "endpoint_types": "II",
+              "time_case": "no_terminal_endpoint_selected"
+            },
+            {
+              "edge": [
+                2,
+                4
+              ],
+              "endpoint_types": "TT",
+              "time_case": "two_terminals_no_interior_merge_vertex"
+            }
+          ],
+          "terminal_incident_edge_count": 1,
+          "complete_pair_deletion_sequence_count": 1
+        },
+        {
+          "split": [
+            2,
+            2
+          ],
+          "chains": [
+            [
+              1,
+              2
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "matching": [
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "edges": [
+            {
+              "edge": [
+                1,
+                4
+              ],
+              "endpoint_types": "IT",
+              "terminal": 4,
+              "interior": 1,
+              "merge_neighbors": [
+                "root",
+                2
+              ],
+              "time_case": "cross_chain_T_inside_or_right_of_interval"
+            },
+            {
+              "edge": [
+                2,
+                3
+              ],
+              "endpoint_types": "IT",
+              "terminal": 2,
+              "interior": 3,
+              "merge_neighbors": [
+                "root",
+                4
+              ],
+              "time_case": "cross_chain_T_inside_or_right_of_interval"
+            }
+          ],
+          "terminal_incident_edge_count": 2,
+          "complete_pair_deletion_sequence_count": 2
+        },
+        {
+          "split": [
+            3,
+            1
+          ],
+          "chains": [
+            [
+              1,
+              2,
+              3
+            ],
+            [
+              4
+            ]
+          ],
+          "matching": [
+            [
+              1,
+              2
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "edges": [
+            {
+              "edge": [
+                1,
+                2
+              ],
+              "endpoint_types": "II",
+              "time_case": "no_terminal_endpoint_selected"
+            },
+            {
+              "edge": [
+                3,
+                4
+              ],
+              "endpoint_types": "TT",
+              "time_case": "two_terminals_no_interior_merge_vertex"
+            }
+          ],
+          "terminal_incident_edge_count": 1,
+          "complete_pair_deletion_sequence_count": 1
+        },
+        {
+          "split": [
+            3,
+            1
+          ],
+          "chains": [
+            [
+              1,
+              2,
+              3
+            ],
+            [
+              4
+            ]
+          ],
+          "matching": [
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              4
+            ]
+          ],
+          "edges": [
+            {
+              "edge": [
+                1,
+                3
+              ],
+              "endpoint_types": "IT",
+              "terminal": 3,
+              "interior": 1,
+              "merge_neighbors": [
+                "root",
+                2
+              ],
+              "time_case": "same_chain_remote_T_gt_b"
+            },
+            {
+              "edge": [
+                2,
+                4
+              ],
+              "endpoint_types": "IT",
+              "terminal": 4,
+              "interior": 2,
+              "merge_neighbors": [
+                1,
+                3
+              ],
+              "time_case": "cross_chain_T_left_inside_or_right_of_interval"
+            }
+          ],
+          "terminal_incident_edge_count": 2,
+          "complete_pair_deletion_sequence_count": 2
+        },
+        {
+          "split": [
+            3,
+            1
+          ],
+          "chains": [
+            [
+              1,
+              2,
+              3
+            ],
+            [
+              4
+            ]
+          ],
+          "matching": [
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "edges": [
+            {
+              "edge": [
+                1,
+                4
+              ],
+              "endpoint_types": "IT",
+              "terminal": 4,
+              "interior": 1,
+              "merge_neighbors": [
+                "root",
+                2
+              ],
+              "time_case": "cross_chain_T_inside_or_right_of_interval"
+            },
+            {
+              "edge": [
+                2,
+                3
+              ],
+              "endpoint_types": "IT",
+              "terminal": 3,
+              "interior": 2,
+              "merge_neighbors": [
+                1,
+                3
+              ],
+              "time_case": "same_chain_endpoint_T_equals_b"
+            }
+          ],
+          "terminal_incident_edge_count": 2,
+          "complete_pair_deletion_sequence_count": 2
+        },
+        {
+          "split": [
+            4,
+            0
+          ],
+          "chains": [
+            [
+              1,
+              2,
+              3,
+              4
+            ],
+            []
+          ],
+          "matching": [
+            [
+              1,
+              2
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "edges": [
+            {
+              "edge": [
+                1,
+                2
+              ],
+              "endpoint_types": "II",
+              "time_case": "no_terminal_endpoint_selected"
+            },
+            {
+              "edge": [
+                3,
+                4
+              ],
+              "endpoint_types": "IT",
+              "terminal": 4,
+              "interior": 3,
+              "merge_neighbors": [
+                2,
+                4
+              ],
+              "time_case": "same_chain_endpoint_T_equals_b"
+            }
+          ],
+          "terminal_incident_edge_count": 1,
+          "complete_pair_deletion_sequence_count": 1
+        },
+        {
+          "split": [
+            4,
+            0
+          ],
+          "chains": [
+            [
+              1,
+              2,
+              3,
+              4
+            ],
+            []
+          ],
+          "matching": [
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              4
+            ]
+          ],
+          "edges": [
+            {
+              "edge": [
+                1,
+                3
+              ],
+              "endpoint_types": "II",
+              "time_case": "no_terminal_endpoint_selected"
+            },
+            {
+              "edge": [
+                2,
+                4
+              ],
+              "endpoint_types": "IT",
+              "terminal": 4,
+              "interior": 2,
+              "merge_neighbors": [
+                1,
+                3
+              ],
+              "time_case": "same_chain_remote_T_gt_b"
+            }
+          ],
+          "terminal_incident_edge_count": 1,
+          "complete_pair_deletion_sequence_count": 1
+        },
+        {
+          "split": [
+            4,
+            0
+          ],
+          "chains": [
+            [
+              1,
+              2,
+              3,
+              4
+            ],
+            []
+          ],
+          "matching": [
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "edges": [
+            {
+              "edge": [
+                1,
+                4
+              ],
+              "endpoint_types": "IT",
+              "terminal": 4,
+              "interior": 1,
+              "merge_neighbors": [
+                "root",
+                2
+              ],
+              "time_case": "same_chain_remote_T_gt_b"
+            },
+            {
+              "edge": [
+                2,
+                3
+              ],
+              "endpoint_types": "II",
+              "time_case": "no_terminal_endpoint_selected"
+            }
+          ],
+          "terminal_incident_edge_count": 1,
+          "complete_pair_deletion_sequence_count": 1
+        }
+      ]
+    }
+  ]
+}

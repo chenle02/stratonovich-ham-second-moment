@@ -6,7 +6,7 @@
 
 ## Current state
 
-- **Phase:** Round 4 candidate checkpoint: higher-alpha Riesz extension received Opus PASS_WITH_NOTES/medium twice, all9checks PASS; final source delivery verified. Configured high-confidence acceptance remains unmet; no proof-status promotion. Accepted alpha<=1 results remain unchanged.
+- **Phase:** Accepted deterministic weighted two-wave tool (2026-10-28), awaiting manuscript integration and all-order application. Round 4 candidate checkpoint: higher-alpha Riesz extension received Opus PASS_WITH_NOTES/medium twice, all9checks PASS; final source delivery verified. Configured high-confidence acceptance remains unmet; no proof-status promotion. Accepted alpha<=1 results remain unchanged.
 - **Proved in this project:** P:Jensen (§2); reviewed G0 P:mixed, L:white-test,
   L:crude-corrected and P:envelope (§3); G1 finite coefficients (§4); reviewed G2 target-scale bounds P:d1-upper/P:low-alpha-upper for alpha<=1 (§5). Full goal and formal verification remain incomplete.
 - **Open targets:** remaining G:upper range 1<alpha<2-alpha0 in d=2,3; G:sharp; requested private Lean verification (not yet created).
@@ -899,3 +899,27 @@ Next consumer audit must retain terminal-vertex geometry, the temporal
 covariance and merged-gap factors. Full range, general anisotropy/d3, sharp
 constant and Lean remain unfinished; Round4's separate medium acceptance
 boundary is unchanged. No whole-paper or circulation clearance follows.
+
+
+### Finite consumer inventory and next obligation
+
+Exact enumeration consumer_inventory.py was independently rerun by root:
+3 total-order2 diagrams,15 total-order4 diagrams; at order4 edge totals
+II9,IT18,TT3. Of the18 interior-terminal edges,6 are same-chain adjacent
+(T=b),6 have a positive same-chain remote gap, and6 have cross-chain clocks
+that can put T inside the merge interval. These are finite graph facts, not
+an analytic or all-order proof. All source rows and output are retained in
+reviews/2026-10-28-wc-probe/consumer-inventory.md and companion script/JSON.
+
+The positive-gap temporal pullout is unusable already for the adjacent
+order2 diagram, since T=b. Both-terminal pairs also occur at order2 and
+need a different conditional integral. The next analytic target is therefore
+a temporal-weighted merge retaining endpoint/interior singularities, together
+with a two-terminal estimate and an explicit factorial-loss ledger. Restored
+ordinary Green form alone does not supply any of these.
+
+The accepted deterministic proof is currently in the frozen standalone
+review note, not yet integrated into the canonical TeX. Its mathematical
+review checkpoint is complete; manuscript integration/build and the full
+project completion contract remain outstanding. No canonical .tex/PDF changed
+during this turn.
