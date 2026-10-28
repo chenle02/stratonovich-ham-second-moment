@@ -834,3 +834,43 @@ prove any upper bound or asymptotic equivalence. No clipping or Monte Carlo.
 Evidence: reviews/2026-10-28-wc-probe/. A fresh native Opus review is assigned
 to this new bounded diagnostic packet (C1--C7), retaining high confidence.
 No accepted no-go or manuscript promotion before the report and adjudication.
+
+
+### Weighted diagnostic review
+
+Fresh native Opus5.5 returned PASS_WITH_NOTES/medium, all7checks PASS,
+complete required-file delivery verified, no required repairs. The driver
+retains accepted=false at the unchanged high-confidence threshold. Report:
+reviews/2026-10-28-wc-probe/diagnostic-review-report.json. No confidence retry.
+
+Minor findings are retained: tiny numerical rounding discrepancy; the two
+angular parameterizations share radial errors; extend the open-set witness
+to jointly varying h explicitly by scaling; clarify that the majorant's
+integrability iff is not a divergence claim; say necessary exponent rather
+than endpoint confirmed; outside source references were not checked but are
+not required for the self-contained diagnostic. None was a required repair.
+The frozen packet remains unchanged.
+
+A substantive new author-side sufficiency screen is in progress: use the
+exact time-integrated density, bound its two focal singularities separately,
+and apply layer cake to the remaining Riesz potential. This targets(WC) in
+the surviving q range, not full moments. It will receive its own independent
+review if the proof closes; it is not an unchanged confidence retry.
+
+
+### Substantive weighted upper-bound candidate
+
+The new self-contained sufficiency argument is complete as author work in
+reviews/2026-10-28-wc-probe/sufficiency-screen.md. It proposes(WC) for
+alpha>3/2,q>=alpha-1 and alpha=3/2,q>1/2, with explicit constants,
+uniform remote displacement and covariance-only mollification. The key step
+is to bound the exact time density by two radial focal profiles, then use
+disk-intersection layer cake. No numerics are proof inputs.
+
+Its ordinary-wave corollary gives I_alpha<=C'_alpha h^(2-alpha)G_h(Z),
+choosing q=alpha/2. This restores a useful kernel form but proves no
+all-order elimination, temporal-covariance control or factorial budget.
+A distinct frozen source-bound Opus review C1--C9 is assigned to this new
+upper proof and its necessity/consumer boundaries. All claims remain
+candidates until the actual review disposition; the old medium report is
+not rewritten or counted as acceptance of these new deductions.

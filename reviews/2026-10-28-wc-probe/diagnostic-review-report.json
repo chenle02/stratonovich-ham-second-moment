@@ -1,0 +1,69 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "medium",
+  "source_coverage": [
+    ".review/required-sources.json lines 1-18 (read plan only; earns no read credit)",
+    "boundary-probe.md lines 1-185 (complete)",
+    "diagram-context.md lines 1-163 (complete)",
+    "quadrature-memo.md lines 1-108 (complete)",
+    "quadrature-results.json lines 1-1674 (complete)",
+    "quadrature.py lines 1-69 (complete)"
+  ],
+  "checks": [
+    {
+      "claim": "C1: Exact two-dimensional wave normalization, WC scaling, all quantifiers, parameter ranges and connection to the stated crossing diagram.",
+      "verdict": "PASS",
+      "reason": "G_h(y)=1_{|y|<h}/(2pi sqrt(h^2-|y|^2)) is the d=2 wave fundamental solution. Its Fourier transform is sin(h rho)/rho, as the memo uses. G_{lambda h}(lambda y)=lambda^{-1}G_h(y). With u=lambda v and y=lambda Y, the left side of (WC) picks up lambda^{3-2-alpha}=lambda^{1-alpha}. The right side picks up lambda^{2q-alpha}\u00b7lambda^{-(2q-1)}=lambda^{1-alpha}, so normalizing to h=1 is faithful. Both sides vanish for |Z|>=h, because the supports force |Z|<h. The quantifiers are fixed alpha in [3/2,2), fixed q in (1/2,1), one C_{alpha,q} uniform in h, Z and W (a.e.). These match diagram-context \u00a74, and the probe negates them correctly. The parameter ranges (3/2<=alpha<2-alpha0, 0<alpha0<1/2) agree between the two files. In J(t), merging vertex 2 with a=s1, b=s3, T=s4, x=y1, z=y3, w=y4 leaves G_a(x), G_{T-b}(w-z), (b-a)^{-alpha0} and c|z-x|^{-alpha} outside the merge. Inside remain G_{v-a}, G_{b-v}, (T-v)^{-alpha0} and c|w-y|^{-alpha}; c^2 splits as c\u00b7c. The reduction to Wtilde_{h,tau}(Z,W) with (T-v)=h+tau-u is exact, and the scaling degree 1-alpha-alpha0 of Wtilde and of (WC-time) checks out. The upstream root-forward convention of E:mixed-diagram is outside the packet and was taken as given."
+    },
+    {
+      "claim": "C2: Positive-measure endpoint cell, both kernel supports, every explicit lower-bound constant and power, upper bound on RHS, strict failure q<alpha-1, a.e. interpretation and uniform-q qualification.",
+      "verdict": "PASS",
+      "reason": "Supports: |y|<eps/16<eps/4<u. |Z| lies in (1-17eps/16, 1-15eps/16), so |Z-y| lies in (1-9eps/8, 1-7eps/8), and 1-7eps/8<1-eps/2<1-u. First wave factor: G_u(y)>=1/(2pi u)>=1/(pi eps). Second: (1-u)^2-|Z-y|^2<=1-(1-9eps/8)^2=9eps/4-81eps^2/64<=9eps/4, so G_{1-u}(Z-y)>=1/(2pi\u00b7(3/2)sqrt(eps))=1/(3pi sqrt(eps)). Riesz factor: |W-y|<eps/8, so |W-y|^{-alpha}>8^alpha eps^{-alpha}. Cell volume: (eps/4)\u00b7pi eps^2/256=pi eps^3/1024. The product is 8^alpha eps^{3/2-alpha}/(3072 pi), so (LB) is correct, and it holds at every point of the open (Z,W) set, not just a.e. Right side: 1-|Z|^2>=x(2-x)>=x with x=15eps/16, which gives G_1(Z)^{2q-1}<=(2pi)^{-(2q-1)}(16/15)^{q-1/2}eps^{1/2-q}, so A_q is correct. The resulting exponent 1+q-alpha is negative exactly when q<alpha-1, so the failure is strict, and q=alpha-1 is correctly left open. Because the violating set is an open product of balls, the a.e. reading fails too. Special cases check out: alpha=3/2 imposes nothing beyond q>1/2; alpha=7/4 removes q<3/4; a single q<1 for all alpha near 2 is impossible. The probe correctly declines to attribute that uniform-q version to the candidate."
+    },
+    {
+      "claim": "C3: Time-reversal symmetry, admissible outer times/remote spatial geometry, temporal lower bound, and distinction between failure of a uniform conditional bound and the remaining full integral.",
+      "verdict": "PASS",
+      "reason": "Time reversal: u->1-u followed by y->Z-y maps G_u(y)G_{1-u}(Z-y)|W-y|^{-alpha} to G_u(y)G_{1-u}(Z-y)|(Z-W)-y|^{-alpha}. So I(1;Z,W)=I(1;Z,Z-W) exactly, and the obstruction transfers to W near Z. Outer geometry with a=1, b=2, T=4, t=5, x=0: h=1 and tau=2. |w-z|<=|Z|+|W|<1-7eps/8<2, so G_2(w-z)>0. G_1(0)=1/(2pi)>0, |Z|^{-alpha} is finite and positive, v=1+u lies in (a,b), and s4=4<t. Temporal factor: (T-v)^{-alpha0}=(3-u)^{-alpha0}>=3^{-alpha0}. The (WC-time) right side carries (T-b)^{-alpha0}=2^{-alpha0}, so (WC-time) also fails for q<alpha-1. \u00a73 states explicitly that the outer Z, W and time integrals have not been estimated, and that no divergence of J, failure of the moment scale, or no-go for nonuniform envelopes follows. That separation is correct."
+    },
+    {
+      "claim": "C4: Coincident Z=W=0 radial/time integral, every bound on K(r), logarithmic integrability for alpha<2, and no claimed uniform estimate from this single point.",
+      "verdict": "PASS",
+      "reason": "Radial form: G_u(y)G_{1-u}(y)=1/(4pi^2 sqrt((u^2-r^2)((1-u)^2-r^2))) on r<min(u,1-u). The polar measure gives 2pi r dr, so I=(1/(2pi))\u222b_0^{1/2} r^{1-alpha}K(r)dr. Case r<=1/4: symmetry doubles the integral over [r,1/2], where 1-u-r>=1/4 and 1-u+r>=1/2. Hence ((1-u)^2-r^2)^{-1/2}<=2sqrt2, and K<=4sqrt2\u00b7arcosh(1/(2r))<=4sqrt2\u00b7log(1/r), using arcosh(x)<=log(2x). Case 1/4<=r<1/2: u+r>=2r>=1/2 and 1-u+r>=2r>=1/2 give K<=2\u222b(u-r)^{-1/2}(1-r-u)^{-1/2}du=2pi (beta integral). The majorant \u222br^{1-alpha}log(1/r) converges iff alpha<2. Scaling gives h^{1-alpha}. The text claims finiteness only at this configuration and explicitly disclaims any uniform-W bound."
+    },
+    {
+      "claim": "C5: Exact time-integration change of variables, elliptic parameter and prefactor, polar ellipse support and singularity-removing radial Jacobian; exceptional null sets and actual integrability scope.",
+      "verdict": "PASS",
+      "reason": "Substitution u=a+L sin^2(theta): u-a=L sin^2, 1-u-b=L cos^2, du=2L sin cos dtheta. This yields (1/(2pi^2))\u222b[(2a+L sin^2)(2b+L cos^2)]^{-1/2}dtheta. Then t=tan(theta) gives the stated t-integral. The substitution t=sqrt(A/(A+L))tan(psi) gives prefactor ((A+L)(C+L))^{-1/2}=D^{-1/2}, with A+L=1+a-b and C+L=1-a+b, and parameter m=1-CA/((A+L)(C+L))=1-4ab/D. Since (a+b)^2<1, 4ab<=D, so m lies in [0,1). scipy's ellipkm1(p)=K(1-p), so the call ellipkm1(4ab/D) is correct. The ellipse condition |y|+|Z-y|<1 is equivalent to r<(1-z^2)/(2(1-z cos phi)), and R(phi)<=(1+z)/2<1. With r=R v^p and p=4/(2-alpha), r^{1-alpha}dr=R^{2-alpha}p v^{p(2-alpha)-1}dv=R^{2-alpha}p v^3 dv. The second angular map has Jacobian 2c/(cos^2+c^2 sin^2). The null sets are handled honestly: logarithmic values at a=0 and b=0, the boundary jump at L=0 where m=0, and the statement that skipping nodes proves nothing. Integrability is claimed only analytically, in boundary-probe \u00a74."
+    },
+    {
+      "claim": "C6: Calibration identity, transform normalization and script implementation; output agrees with memo; refinement agreement is not a rigorous enclosure; no clipping/Monte Carlo/sufficiency claim.",
+      "verdict": "PASS",
+      "reason": "Transform: \u222b_0^t sin(u rho)sin((t-u)rho)du/rho^2=[sin(t rho)-t rho cos(t rho)]/(2rho^3). The 2D Hankel transform of (1-|x|^2)_+^{1/2} is 2pi(sin rho-rho cos rho)/rho^3, so dividing by 4pi matches, and the mass is t^3/6. The script matches the memo formulas (b^2=(a-z)^2+2az(1-cos phi), weights, the factor 2, ellipkm1) and uses no clipping or sampling. From the JSON: unweighted maxima are 1.689e-4, 2.396e-5 and 9.146e-6, as tabulated. The maximum 256-node map discrepancy is about 4.9e-9 (<5e-9). The largest 128-to-256 plain change is about 6.43e-6 (<6.5e-6). All 16 tabulated endpoint_scaled values match the n=256 plain rows to 6 decimals, and the q=0.95, alpha=1.9, eps=1e-4 ratio is 61.58. The ratio trends agree with the analytic threshold: ratios grow as eps falls when q<alpha-1 and shrink when q>alpha-1. The rows are labelled non-certified and are not used for sufficiency. The script was not executed, per instructions; consistency was checked by reading only."
+    },
+    {
+      "claim": "C7: Stated conclusions are not overstated (weighted upper bound, endpoint sufficiency, full moment no-go, novelty, Lean); no real new mathematical gap.",
+      "verdict": "PASS",
+      "reason": "The conclusions are limited to two results. First, the necessary condition q>=alpha-1 for the uniform conditional (WC) and (WC-time), shown on open sets inside the support of the order-four diagram. Second, finiteness of I_alpha(1;0,0) for alpha<2. The endpoint q=alpha-1, the range q>alpha-1, smoothed uniformity, the factorial budget and all moment consequences are explicitly OPEN, NOT TESTED or NONE. No novelty or Lean claim is made. No unproved step is used in any asserted conclusion."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "quadrature-memo.md line 71 reports the theta/elliptic discrepancy as 1.43e-15. The JSON maximum is 1.4244859619e-15, which rounds to 1.42e-15. This is a cosmetic misreport only.",
+      "The angular-map agreement (<5e-9) is a weak proxy for accuracy, and the memo could say so explicitly. In the alpha=0 calibration at n=256, the two maps agree to about 1e-8 relative but both differ from the exact value by up to 9e-6. Both maps share the radial nodes, so radial error (for example from the log singularity at y=Z) is invisible to that check. The memo already disclaims certification, so no repair is needed.",
+      "boundary-probe.md \u00a72 shows failure on an open (Z,W) set at h=1. If (WC) is read as a.e. jointly in (h,Z,W), one line is missing: by exact scaling, (h,Z,W) with (Z/h,W/h) in the open set forms an open, positive-measure set. \u00a73's remark that outer times 'can be perturbed' relies on the same scaling.",
+      "boundary-probe.md lines 159-160 ('finite, since ... <infinity exactly when alpha<2') could be misread as an iff statement about I_alpha(1;0,0). The 'exactly when' applies only to the majorant. Divergence for alpha>=2 is neither claimed nor needed.",
+      "boundary-probe.md line 180 ('endpoint exponent is confirmed') would read more safely as 'the necessity of q>=alpha-1 is confirmed', so it cannot be taken as confirming that the endpoint suffices. The surrounding text already makes this clear.",
+      "Several references point outside the packet and cannot be checked here: the 'inherited source audit's REFRAME', the 'root memo', E:mixed-diagram/P:mixed, BNZ Lemma 4.3 and Balan (2022). The packet is self-contained for the claims actually made, so this does not affect any check."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "Per instructions, the script was not executed. Numerical consistency was checked by reading quadrature.py against quadrature-results.json and the memo tables; the JSON was not independently reproduced.",
+    "The order-four diagram J(t) and its root-forward convention were taken from diagram-context.md as given. The upstream notes (E:mixed-diagram, P:mixed) are not in the packet, so the conversion from the full Stratonovich fourth-order coefficient to J(t) was not verified.",
+    "The Hankel-transform identity for (1-|x|^2)_+^{1/2} was checked against the standard Bessel formula, not derived from first principles in the packet.",
+    "This is an AI review of scoped diagnostic statements. It is not human verification, a novelty audit, or clearance of the full moment project."
+  ]
+}
