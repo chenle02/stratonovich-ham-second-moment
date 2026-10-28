@@ -6,9 +6,9 @@
 
 ## Current state
 
-- **Phase:**78page proof-exposition revision. The complete cold read of source26bb560 returned substantive concerns and is NOT CLEAR. All fifteen items are mapped to a written repair in cold-core-expansion/repair-map.md;fresh complete primary Opus/HIGH review is pending,followed by another prior-blind cold read. The old full-upper source remains historically11PASS/HIGH;that does not certify this revision. Original upper claim/covariance scope and sharp target are unchanged. No G:sharp wave or Lean creation. Earlier Section9alternative remains below HIGH.
-- **Proved in this project:** the original full upper-bound source at4c41cb2 passed its scoped correctness review. The current expanded version and explicit conditional calibration statements await renewed review after the substantive cold-reader report. The unconditional Jensen comparison,reviewed G0/G1 and alpha<=1 bounds remain baseline results;numeric L_star uses require their stated premise. Full project,sharp constant,formal verification and circulation clearance remain incomplete.
-- **Open targets:** repair the cold reader's substantive G:upper exposition/calibration concerns; G:sharp; requested private Lean verification (not yet created);final whole-paper DeepSeek/source-bound cold read before any circulation. G:upper now has a complete proof accepted at the scoped correctness gate;global novelty remains UNVERIFIED.
+- **Phase:**78page expanded full-upper proof accepted at renewed primary14PASS/HIGH,617.957s,full12text/14image delivery,no required repairs. All7minor findings and the author sign-convention observation adjudicated in cold-core-expansion/adjudication-v1.md. Final source has only enumerated notation/status/elementary clarifications after that reviewed source. The first complete cold read remains historically NOT CLEAR;a NEW blind DeepSeek read is next. G:sharp,Lean creation,novelty and circulation remain open. Earlier Section9alternative remains below HIGH.
+- **Proved in this project:** the original full upper-scale deduction has passed both its initial11check and expanded14check scoped independent correctness reviews. The actual current source/goal/hypotheses are bound in cold-core-expansion/final-status-binding.json. The unconditional Jensen comparison and its explicitly conditional numerical specialization are retained. Full project,sharp constant,formal verification and whole-paper/circulation clearance remain incomplete.
+- **Open targets:** verify the written cold-reader repairs with a NEW blind whole-paper read; G:sharp; requested private Lean verification (not yet created);final whole-paper DeepSeek/source-bound cold read before any circulation. G:upper now has a complete proof accepted at the scoped correctness gate;global novelty remains UNVERIFIED.
 - **Current authorization:** Le requested activation and pursuit of the full goal on 2026-10-28 UTC. HIGH threshold retained. The original full upper goal has now passed its new cross-family review;report and stop at decision5. A fresh complete DeepSeek V4-Pro cold read remains due before circulation. Separate decision point4 before companion creation remains pending.
 - **Worker:** Codex agent #30 (<MACHINE>, `n30-stratonovich-ham-second`), handed over
   2026-10-26; workflow paper-dev + lean-pkg (Lean track: `lean-progress/PROGRESS.md`).
@@ -2091,3 +2091,34 @@ This is a changed proof/interface revision,not an unchanged confidence
 retry. HIGH unchanged. All new proof exposition remains PENDING until that
 review;whole-paper cold clearance remains OPEN. Same full covariance goal,
 no sharp-constant wave,Lean package,source-author contact or publication.
+
+
+### Expanded argument accepted14PASS/HIGH;new cold read next
+
+Source/dispatchce11214e804eaf43abe2941b1b794fdddc3fb545 held through collection.
+Fresh Opus5.5/high first-party <plan removed> returned PASS_WITH_NOTES/HIGH,all14PASS,
+617.957s,no required repairs,accepted=true,coverage_verified=true. All
+12texts/14images read completely. Actualmodel/input/report/ledger hashes
+verified. All86raw/native/draft-format-preflight members roundtrip/hash
+verified before own terminal cleanup. New report does NOT erase the first
+DeepSeek cold concerns;it independently checks the materially expanded proof.
+
+Every7minor finding adjudicated;notation cleaned locally and the already
+checked e+Y-1<=eY summation written out. The author noted a missing explicit
+Gaussian-amplitude sign convention WHILE review was live;now the proof
+absorbs each real sign into its independent field before using positive
+radii. The potential/law/covariance are unchanged,and C7 independently
+checked the reflection symmetry. No new model assumption or inequality.
+All nonremark formal statements remain BYTE-EQUAL to the reviewed source;
+39of42proofs byte-equal. Remaining3proof changes exactly enumerated and
+inverted:context wording,partial-order M->N,local alpha-renaming plus sign
+normalization and the C11-checked elementary prefactor step. No other
+proof content changed. Final78page build0errors/undefined/overfull/tabs,
+actual formatter idempotent;exact final hashes in final-status-binding.json.
+
+Root independently checked Chen2023page1hypotheses,not credited to Opus.
+Source theorem proofs remain imported as stated,not internally re-proved.
+No sharp/Lean/human/novelty/circulation claim. A prepared blind76page draft
+preserved42proofs,but MUST be regenerated from final minor-clarification
+bytes before the next native cold dispatch. Source reader context will
+again be prior-blind and free-form,not supplied with the14check verdict.

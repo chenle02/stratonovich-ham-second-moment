@@ -47,3 +47,12 @@ proof frozen at bee4b2a,first adversarial review accepted11PASS/HIGH,
 full source delivery,no required repairs. Final74page status adopts G:upper
 only. Sharp constant,novelty,Lean and final whole-paper cold read remain open.
 No public/notification permission inferred. Proposal remains local.
+
+Latest source ce11214 is78pages,after the complete DeepSeek cold read
+reported substantive concerns at b310b11. Current revision awaits renewed
+Opus/HIGH and fresh cold gates. Earlier full-upper scoped acceptance is
+historical,not clearance of the current exposition. Preserve all boundaries.
+
+Renewed primary sourcece11214 now accepted14PASS/HIGH,all required
+source delivery,no required repairs;fresh blind cold read remains NEXT.
+Keep the earlier cold report NOT CLEAR as history,not a cleared verdict.

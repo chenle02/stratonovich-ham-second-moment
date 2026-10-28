@@ -66,7 +66,7 @@
 
 \title{The second moment of the hyperbolic Anderson model with time-dependent
 noise: Stratonovich regime\\[0.3em]
-{\normalsize Working notes (proof exposition revision, 2026-10-28)}}
+{\normalsize Working notes (revised full upper bound, 2026-10-28)}}
 \author{Le Chen}
 \date{\today}
 \maketitle
@@ -364,9 +364,10 @@ pp.~13--14, and Theorem~4.1}.
   From~\cite{chen:author2026:time-dependency}*{Theorem~4.1}, each
   deterministic kernel $g_n$ is Stratonovich integrable. Its spectral
   hypothesis (1.5) follows from Hypothesis~\ref{H:homog}, as recorded
-  on p.~3 of the source. Lemma~2.5 and
+  on p.~3 of the source. For context, Lemma~2.5 and
   (2.18) of that source apply to these deterministic kernels and give
   $X_mX_n=S_{m+n}(g_m\otimes g_n)$ for $m,n\ge1$.
+  That product identity is not needed by the limit argument below.
   For the expectation identity needed here it suffices to use the fixed-order
   $L^2$ convergence in Theorem~4.1: Cauchy--Schwarz gives $L^1$ convergence
   of the product of two regularized factors, since their $L^2$ norms stay
@@ -698,7 +699,8 @@ inequality.
 \begin{remark}[G0 verdict and its scope]\label{R:G0-verdict}
   Since $\beta>2$, we have $1<\rho<2$. Thus,
   Proposition~\ref{P:envelope} improves the crude quadratic time scale
-  under homogeneity, while leaving Goal~\ref{G:upper} open.
+  under homogeneity. It does not itself settle Goal~\ref{G:upper};
+  Section~\ref{S:interval-upper} uses a different argument.
   Theorem~3.1 used through its uniform pairing estimate is \emph{not
   viable for Goal~\ref{G:upper}}: even with exact homogeneous norm
   scaling, the resulting majorant has exponent $\rho>\kappa$.
@@ -2023,7 +2025,7 @@ $G_{h,\eta}=p_\eta*G_h$, with $G_{h,0}=G_h$.
 \end{proof}
 
 \begin{remark}[Calibrations and scope]\label{R:higher-calibrations}
-  The first-moment theorem and Jensen bound remain those of
+  The printed first-moment statement and unconditional comparison are
   Theorem~\ref{T:first} and Proposition~\ref{P:Jensen}. Under the
   additional spatial hypothesis, Cauchy--Schwarz and
   Proposition~\ref{P:higher-transfer} give
@@ -2044,9 +2046,7 @@ $G_{h,\eta}=p_\eta*G_h$, with $G_{h,0}=G_h$.
   obstructions above concern only the spatial supremum, not existence,
   moment finiteness, or failure of the target time scale. In particular,
   arbitrary homogeneous covariances remain outside this conditional
-  argument, even when $\alpha+\alpha_0<2$. Opus reviewed this section
-  with PASS\_WITH\_NOTES/medium confidence; configured high-confidence
-  acceptance remains pending.
+  argument, even when $\alpha+\alpha_0<2$.
 \end{remark}
 
 \section{Riesz bounds by interpolation with static noise}
@@ -2328,9 +2328,8 @@ The source hypotheses for the Riesz covariances below are thus satisfied.
   with the Chen--Hu static exponent. This does not interchange the
   static and large-time limits or assert uniformity of the constants.
   Cauchy--Schwarz gives $\E u(t,x)\le
-  \exp(qC^{1/q}t^\kappa/2)$; together with Theorem~\ref{T:first}
-  and Proposition~\ref{P:Jensen}, this implies $2L_*\le qC^{1/q}$
-  conditionally on the intended first-moment lower bound.
+  \exp(qC^{1/q}t^\kappa/2)$. If the first-moment lower rate is at
+  least $L_*$, this upper bound implies $2L_*\le qC^{1/q}$.
   Thus, the first-moment and Jensen calibrations are retained, without
   identifying a sharp constant. The Skorohod comparison remains only
   the comparison recorded in Remark~\ref{R:higher-calibrations}; its
@@ -2795,16 +2794,16 @@ We first treat $\Gamma\ne0$ and $1<\alpha<2$.
   $\alpha_0\downarrow0$, consistently with the static source, without
   an interchange of limits or uniformity claim for the constants.
   For the nonzero higher-exponent case, Cauchy--Schwarz gives
-  $\E u(t,x)\le\exp(qC^{1/q}t^\kappa/2)$; the imported first-moment
-  lower bound and Proposition~\ref{P:Jensen} imply
-  $2L_*\le qC^{1/q}$ conditionally on the intended first-moment lower
-  bound. No sharp constant is identified. The existing
+  $\E u(t,x)\le\exp(qC^{1/q}t^\kappa/2)$.
+  If the first-moment lower rate is at least $L_*$, this implies
+  $2L_*\le qC^{1/q}$. No sharp constant is identified. The existing
   comparisons with Skorohod exponents, in their stated Riesz subclasses,
   concern different solution concepts and are not inputs here. The planar
   endpoint construction
   is dimension-specific; no general higher-exponent result in dimension
-  three follows from it. Thus, the full original homogeneous-covariance
-  goal, the sharp constant, novelty and formal verification remain open.
+  three follows from it. Section~\ref{S:interval-upper} treats the full
+  homogeneous-covariance class by a separate argument. The sharp
+  constant remains open.
 \end{remark}
 
 \section{Three-dimensional bounds from covariance endpoints}
@@ -4097,10 +4096,9 @@ establish Goal~\ref{G:upper}.
 We now seek all static Duhamel orders, retaining the full spatial
 covariance class of Section~\ref{S:static-phase}. The temporal
 covariance is not included in this section.
-\myCmts{The preceding version of the static estimates passed scoped
-correctness review. Their proofs are expanded here for a fresh reader;
-this exposition revision awaits renewed review. Static estimates alone
-do not identify the evolution for overlapping intervals.}
+\myCmts{The expanded operator argument passed renewed scoped correctness
+review. Static estimates alone do not identify the evolution for
+overlapping intervals; that step is treated in the next section.}
 
 We use one external operator theorem. From Crouzeix--Palencia
 \cite{crouzeix.palencia:source2017:numerical}*{author preprint v1,
@@ -4612,10 +4610,9 @@ for that evolution.
 \section{Interval fields and the full upper bound}
 \label{S:interval-upper}
 
-\myCmts{The preceding upper-bound proof passed scoped correctness review.
-A fresh whole-manuscript reader requested substantial expansion of its
-central steps. The revised exposition below awaits renewed review;
-whole-paper cold clearance and the sharp constant remain open.}
+\myCmts{The expanded upper-bound argument passed renewed scoped correctness
+review. Optional notation and sign-convention clarifications are included.
+A fresh whole-paper cold read and the sharp constant remain open.}
 
 Write
 \[
@@ -4864,6 +4861,10 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
 
 \begin{proof}
   Zero noise is trivial; omit any zero $\sigma_i$.
+  Replacing $(\sigma_i,W_i^\epsilon)$ by
+  $(|\sigma_i|,\operatorname{sgn}(\sigma_i)W_i^\epsilon)$ leaves the
+  potential unchanged and preserves the joint law of the independent
+  real Gaussian fields. Thus, we may assume $\sigma_i>0$.
   We first work with finitely many Gaussian coordinates of each field and
   a bounded spatial Fourier band. Denote their common phase Hilbert space
   by $\mathcal H_\rho=L^2(\Omega;X_\rho)$.
@@ -4885,34 +4886,34 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
   On Gaussian degrees at most $n$, multiplication by the instantaneous
   field has norm at most $2\sqrt{n+1}\sqrt{v_{\max}}$.
   The free phase has norm at most $e^{\lambda h/2}$ in $X_\lambda$,
-  and a phase insertion $(u,v)\mapsto(0,Wu)$ costs at most its
+  and a phase insertion $(u,w)\mapsto(0,Wu)$ costs at most its
   unweighted multiplication norm divided by $\lambda$.
-  Thus on $\max_i|z_i|\le M$ the total order-$n$ phase is bounded by
+  Thus, on $\max_i|z_i|\le z_*$ the total order-$n$ phase is bounded by
   \begin{equation}\label{E:interval-entire-majorant}
     e^{\lambda T/2}
-    \frac{(2M\sqrt{n+1}\sqrt{v_{\max}}T/\lambda)^n}{n!}
+    \frac{(2z_*\sqrt{n+1}\sqrt{v_{\max}}T/\lambda)^n}{n!}
     \|v\|_\lambda .
   \end{equation}
-  The series of these bounds converges for every finite $M$.
+  The series of these bounds converges for every finite $z_*$.
   It justifies the entire vector series and its absolutely convergent
   energy double series. This existence bound may depend on the full
   inventory and smoothing; it is not used as a uniform estimate.
 
   Set
-  $Q_{\boldsymbol r,\boldsymbol s}
-  =\langle U_{\boldsymbol r}v,U_{\boldsymbol s}v
+  $Q_{\boldsymbol r,\boldsymbol q}
+  =\langle U_{\boldsymbol r}v,U_{\boldsymbol q}v
   \rangle_{\mathcal H_{1/T}}$.
   Both vectors use the same Gaussian fields. Independence is between
   distinct colors, not between the two copies in this inner product.
   For real $s$, substitution $z_i=s$ gives the exact identity
   \begin{equation}\label{E:interval-energy-splits}
     [s^{2k}]\E\|\mathcal U(T;s)v\|_{1/T}^2
-    =\sum_{|\boldsymbol r|+|\boldsymbol s|=2k}
-    Q_{\boldsymbol r,\boldsymbol s}.
+    =\sum_{|\boldsymbol r|+|\boldsymbol q|=2k}
+    Q_{\boldsymbol r,\boldsymbol q}.
   \end{equation}
   Reflection of Gaussian color $i$ multiplies $U_{\boldsymbol r}v$
-  by $(-1)^{r_i}$. Hence $Q_{\boldsymbol r,\boldsymbol s}=0$ unless
-  $r_i+s_i=2k_i$ for every $i$, where $\sum_i k_i=k$.
+  by $(-1)^{r_i}$. Hence $Q_{\boldsymbol r,\boldsymbol q}=0$ unless
+  $r_i+q_i=2k_i$ for every $i$, where $\sum_i k_i=k$.
   If $k_i=0$, both coefficients are obtained by setting $z_i=0$;
   this removes that field exactly. There are at most $k$ active colors.
   For fixed $\boldsymbol k$, the number of splits is
@@ -4931,10 +4932,10 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
   their appearances in the coefficient, not their Gaussian means:
   \[
     \begin{array}{c|c|c}
-      k_i & (r_i,s_i)&\text{method}\\ \hline
+      k_i & (r_i,q_i)&\text{method}\\ \hline
       1 &(2,0)\text{ or }(0,2)&\text{mean term on one copy}\\
       1 &(1,1)&\text{one insertion on each copy}\\
-      \ge2 &r_i+s_i=2k_i&\text{Cauchy on each copy where used}.
+      \ge2 &r_i+q_i=2k_i&\text{Cauchy on each copy where used}.
     \end{array}
   \]
   Call the second class $\mathcal C$. For the other active colors set
@@ -4945,7 +4946,7 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
     \qquad a=\alpha/2.
   \]
   Put $\mathcal A_r=\{i\notin\mathcal C:r_i>0\}$ and
-  $\mathcal A_s=\{i\notin\mathcal C:s_i>0\}$, restricting to active colors.
+  $\mathcal A_q=\{i\notin\mathcal C:q_i>0\}$, restricting to active colors.
   On either copy write $\mathcal A$ for its corresponding set.
   Its unused amplitudes are evaluated at zero.
   In particular, a split $(2,0)$ supplies no field or cost on the second
@@ -4989,7 +4990,7 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
   once, even if other intervals overlap it or end simultaneously.
 
   \emph{The simultaneous single-insertion coefficient.}
-  Let $m=|\mathcal C|$ and let $J_i(u,v)=(0,\sigma_iW_i^\epsilon u)$,
+  Let $m=|\mathcal C|$ and let $J_i(u,w)=(0,\sigma_iW_i^\epsilon u)$,
   with the stated finite cutoffs. Regard the background amplitudes as
   fixed and give colors in $\mathcal C$ amplitudes $y_i$.
   Dyson expansion relative to $P_z$ shows that the coefficient of
@@ -5043,16 +5044,16 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
   The vector in~\eqref{E:interval-cross-vector} is holomorphic in the
   remaining amplitudes. For the first copy Cauchy's vector formula gives
   the additional factor $\prod_{i\in\mathcal A_r}\varrho_i^{-r_i}$;
-  on the second copy it gives $\prod_{i\in\mathcal A_s}\varrho_i^{-s_i}$.
+  on the second copy it gives $\prod_{i\in\mathcal A_q}\varrho_i^{-q_i}$.
   This is Cauchy extraction of two vector coefficients, followed by
   Cauchy--Schwarz between them, not Cauchy applied to a squared norm.
   Since $\|w\|_{1/T}\le k\|w\|_\lambda$ and
   $\|v\|_\lambda\le\|v\|_{1/T}$, the bound for
-  $|Q_{\boldsymbol r,\boldsymbol s}|$ has a further factor $k^2$.
+  $|Q_{\boldsymbol r,\boldsymbol q}|$ has a further factor $k^2$.
   Absorb it, the $3^k$ splits and the segment constants into $C^k$.
-  The combined metric factor is $D_{\mathcal A_r}D_{\mathcal A_s}$.
+  The combined metric factor is $D_{\mathcal A_r}D_{\mathcal A_q}$.
   Its exponent for color $i$ is the number of positive entries in
-  $(r_i,s_i)$: one for a mean singleton, at most two for a higher color.
+  $(r_i,q_i)$: one for a mean singleton, at most two for a higher color.
 
   For any color estimated on circles, the two exponents add to $2k_i$.
   Since $d_i^2\le12k_iR_\alpha$,
@@ -5125,8 +5126,14 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
   come from $\delta_{\alpha/2}$, the fixed phase bound, the inventory
   lemma and $L,c$; covariance enters only through $R_\alpha^k$.
   The zero-order energy is at most $e\|v\|_{1/T}^2$.
-  Finally, $\sum_{k\ge0}x^k/(k!)^\nu\le e^{\nu x^{1/\nu}}$ since
-  $\nu>1$. Absolute energy summation proves
+  Put $x=CR_\alpha T^\beta$ and $Y=e^{\nu x^{1/\nu}}\ge1$.
+  Since $\nu>1$, $\sum_{k\ge0}x^k/(k!)^\nu\le Y$.
+  Summing the coefficient bounds in absolute value gives
+  \[
+    \E\|\mathcal U(T;1)v\|_{1/T}^2
+    \le(e+Y-1)\|v\|_{1/T}^2\le eY\|v\|_{1/T}^2.
+  \]
+  Absorbing $\nu C^{1/\nu}$ into the parameter-only constant proves
   \eqref{E:interval-phase-bound}. This proves
   Proposition~\ref{P:interval-coefficients}.
 \end{proof}
@@ -5238,16 +5245,16 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
   the proof of Proposition~\ref{P:mixed} identify its classical
   measure-kernel Duhamel terms.
 
-  Write $U_M^{\epsilon,\delta}$ for the sum of source terms of orders
-  $0,\ldots,M$ after that Green limit. Write $V_{M,J}^\epsilon$ for the
+  Write $U_N^{\epsilon,\delta}$ for the sum of source terms of orders
+  $0,\ldots,N$ after that Green limit. Write $V_{N,J}^\epsilon$ for the
   same partial-order sum of the finite interval model. Both moments are
   finite sums over exactly the same terminal-chain kernels and pairings;
   only the covariance factors differ. By~\eqref{E:dyadic-time-majorant}
   each source covariance factor is bounded by its $K_\infty$ counterpart.
-  Since $K_J\uparrow K_\infty$, nonnegative Tonelli at fixed $M$ yields
+  Since $K_J\uparrow K_\infty$, nonnegative Tonelli at fixed $N$ yields
   \begin{equation}\label{E:interval-source-comparison}
-    \E|U_M^{\epsilon,\delta}(T,x)|^2
-    \le\lim_{J\to\infty}\E|V_{M,J}^\epsilon(T,x)|^2
+    \E|U_N^{\epsilon,\delta}(T,x)|^2
+    \le\lim_{J\to\infty}\E|V_{N,J}^\epsilon(T,x)|^2
     \le\sup_J\E|u_{J,\epsilon}(T,x)|^2\le B(T),
   \end{equation}
   where $B(T)$ is the right side of~\eqref{E:full-upper-bound}.
@@ -5257,7 +5264,7 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
   This is entrywise comparison of Wick integrals, not covariance order
   for arbitrary initial phases or a coupling of random solutions.
 
-  The constants in $B(T)$ are uniform in $M,J,\epsilon,\delta$.
+  The constants in $B(T)$ are uniform in $N,J,\epsilon,\delta$.
   Gaussian-mode and spatial-band limits have already been taken at fixed
   finite inventory and positive smoothing in
   Proposition~\ref{P:interval-coefficients}. Its local degree cutoffs
@@ -5265,16 +5272,16 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
   simultaneous limit. The only nonuniform smoothing variance was used
   there for coefficient identification, not in $B(T)$.
 
-  Finally, take the original noise limit at fixed $M$. The source's
+  Finally, take the original noise limit at fixed $N$. The source's
   spectral assumption (1.5) holds: radial homogeneity makes its large-shell
   bounds a constant times
   $\mu(B_1)\sum_{j\ge0}2^{j(\alpha+\alpha_0-2)}<\infty$,
   and its integral over $B_1$ is finite. From its
-  Theorem~4.1, (4.2), p.~22, each term in $U_M^{\epsilon,\delta}$
+  Theorem~4.1, (4.2), p.~22, each term in $U_N^{\epsilon,\delta}$
   converges in $L^2$ to the corresponding $X_n$ as
   $\epsilon,\delta\downarrow0$. Thus~\eqref{E:interval-source-comparison}
-  bounds $\E|\sum_{n=0}^M X_n|^2$ by $B(T)$.
-  Only now let $M\to\infty$, using the independently established
+  bounds $\E|\sum_{n=0}^N X_n|^2$ by $B(T)$.
+  Only now let $N\to\infty$, using the independently established
   $L^2$ series in Proposition~\ref{P:mixed} and
   Lemma~\ref{L:crude-corrected}. No convergence of a full mollified
   propagator or full mollified solution was assumed.
@@ -5313,7 +5320,7 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
 
 \myCmts{Theorem~\ref{T:full-upper} establishes the unchanged full upper
 goal for every admissible dimension and homogeneous covariance.
-Its revised exposition awaits renewed independent review.
+Its expanded argument passed renewed independent correctness review.
 The earlier explicit bounds for $0<\alpha\le1$ remain available.
 The sharp constant and final whole-paper cold read remain open.}
 
