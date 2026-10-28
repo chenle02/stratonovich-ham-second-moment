@@ -1082,3 +1082,21 @@ are planned before results, with high thresholds retained. No prior source
 audit or skeptic is relabeled as replay. Reading copies bind exact canonical
 ranges/context; fullsource/PDF available;30typed primary-source pages.
 No planar theorem acceptance or abstract/global status promotion yet.
+
+
+### Freeze repair before any planar review dispatch
+
+The commit hook at56aa356 rewrote60line-leading indentations after the
+pre-hook bindings were computed. The pushed preparation was therefore NOT a
+valid source/PDF freeze. No replay or skeptic was dispatched against it.
+The exact pre-hook source was recovered from its Git blob and archived.
+Root verified every line differs only by ASCII leading spaces, with no
+verbatim/catcode constructs. Canonical post-hook rebuild passes; complete
+PDF extracted text is byte-identical. No mathematical content changed.
+
+Current TeX76d2331bad7f13ce1410d9bb3bfb23a1f6f4850132e9982ca62133af078abc17;
+PDF78810a707571e53a43e18c72b7bbca11a0e4d2b85abc65aee408aca51c13353d.
+Original exact byte-preservation claims describe worker delivery, not the
+post-hook formatting. New v2 packets bind the rebuilt artifacts and exact
+plain-text reading ranges. Original preparation and worker evidence remain
+unchanged; committed-byte validation precedes both planned reviews.
