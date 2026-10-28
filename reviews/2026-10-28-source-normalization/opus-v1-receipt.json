@@ -1,0 +1,202 @@
+{
+  "provider": "claude",
+  "started_utc": "2026-10-28T10:23:31.944419+00:00",
+  "workspace": "<HOME>/Dropbox/workspace/svn/Article-Stratonovich-HAM-Second-Moment/reviews/2026-10-28-source-normalization/opus-v1/workspace",
+  "source_revision": "a6f8319",
+  "input_hashes": {
+    "author.pdf": "5f7385ca451e643a1f3ff31835e4ee52b2708b5d2e3652eec3fb5d3958b97b6c",
+    "controls.json": "e3f81330708d086a9794a6d4f4338de3c9227fb020e87e10d136bc467116f57d",
+    "current-source-check.json": "4da2ad90293c58d0ef79d8c1dd3e4b9bc31ee5cb8fc6b3fb70f5dabf3662da9f",
+    "evidence.json": "f9f2a9e650432941ce54c3fa1f6237024bb1fec34d0a1c8f8d43ccac6c268b07",
+    "goal-context.txt": "0866c9d6e7bfc967763af3722e77f17591effdc8409a4c768a0ed7139e7123cf",
+    "pages/chen-02.png": "de56d13c81b76f5cd7f97f8d1487c87f3c3e3a3fecc48c87e37518f62f4410a1",
+    "pages/chen-03.png": "17af1c6eb2c9a9231120598a75a489999f7d591fda4f2c63b1e9f2048df3b5a3",
+    "pages/chen-04.png": "ac12acc5606ac588f18eb2ac6544bebf2029d3c9b5559654d15e4a2791d65f6f",
+    "pages/chen-13.png": "f63e45e0c84311a91252b2e4e89554a2836aeacceff1c0cddf7168165cce468c",
+    "probe.md": "195f9f85f64160c68eae3516850e6773d087e7b0eeb5c91b865f496885fc4558"
+  },
+  "target": "probe.md",
+  "claude_account": "<removed>",
+  "review_contract_sha256": "aa261f8570ec04a5c86690cacbbf78553b9d5915a525cd9c26c4b74e1c98fb37",
+  "effort_requested": "high",
+  "resumed_from": null,
+  "resume_mode": null,
+  "resume_binding": null,
+  "min_confidence": "high",
+  "scientific_verdict": "PASS_WITH_NOTES",
+  "accepted": false,
+  "report_contract_schema": "subscription-review-report/1",
+  "report_legacy_mode": null,
+  "legacy_resume_binding": null,
+  "diagnostics": [
+    {
+      "code": "coverage-unverified",
+      "path": "pages/chen-02.png",
+      "message": "image not delivered: no Read returned its declared bytes (sha256 de56d13c81b76f5cd7f97f8d1487c87f3c3e3a3fecc48c87e37518f62f4410a1, image/png) as an image block"
+    },
+    {
+      "code": "coverage-unverified",
+      "path": "pages/chen-03.png",
+      "message": "image not delivered: no Read returned its declared bytes (sha256 17af1c6eb2c9a9231120598a75a489999f7d591fda4f2c63b1e9f2048df3b5a3, image/png) as an image block"
+    },
+    {
+      "code": "coverage-unverified",
+      "path": "pages/chen-04.png",
+      "message": "image not delivered: no Read returned its declared bytes (sha256 ac12acc5606ac588f18eb2ac6544bebf2029d3c9b5559654d15e4a2791d65f6f, image/png) as an image block"
+    },
+    {
+      "code": "coverage-unverified",
+      "path": "pages/chen-13.png",
+      "message": "image not delivered: no Read returned its declared bytes (sha256 f63e45e0c84311a91252b2e4e89554a2836aeacceff1c0cddf7168165cce468c, image/png) as an image block"
+    }
+  ],
+  "required_sources_sha256": "56cfe18f14032f256cac10461338b3910a9c24b99e0d52f8984ab31601c63a72",
+  "required_sources_workspace_copy": ".review/required-sources.json",
+  "workspace_preflight": {
+    "schema": "le-ai-lab.review-workspace-preflight/1",
+    "scanned": "review contract (--prompt-file)",
+    "references": {
+      "author.pdf": [
+        "author.pdf"
+      ]
+    },
+    "waived": [],
+    "missing": [],
+    "required_sources_copy": ".review/required-sources.json"
+  },
+  "runtime_preflight": {
+    "effective_version": "2.1.304",
+    "cli_version": "2.1.304 (Claude Code)",
+    "image_requirements": true,
+    "supported_versions": [
+      "2.1.302",
+      "2.1.304"
+    ],
+    "supported": true
+  },
+  "cli_version": "2.1.304 (Claude Code)",
+  "executable": "<HOME>/.local/state/Le-AI-Lab/swe-white-time-resume-20261024/runtime/node_modules/@anthropic-ai/claude-code-linux-x64/claude",
+  "executable_requested": null,
+  "executable_effective": {
+    "path": "<HOME>/.local/state/Le-AI-Lab/swe-white-time-resume-20261024/runtime/node_modules/@anthropic-ai/claude-code-linux-x64/claude",
+    "version": "2.1.304 (Claude Code)"
+  },
+  "read_ledger_format_supported": true,
+  "auth": {
+    "authMethod": "<removed>",
+    "apiProvider": "firstParty",
+    "subscriptionType": "<removed>",
+    "email": "<account email removed>"
+  },
+  "model_requested": "claude-opus-5-5",
+  "command_without_prompt": [
+    "<HOME>/.claude/bin/claude-acct",
+    "run",
+    "<account B>",
+    "--print",
+    "--model",
+    "claude-opus-5-5",
+    "--effort",
+    "high",
+    "--disable-slash-commands",
+    "--strict-mcp-config",
+    "--mcp-config",
+    "{\"mcpServers\":{}}",
+    "--permission-mode",
+    "dontAsk",
+    "--permission-prompts",
+    "none",
+    "--output-format",
+    "stream-json",
+    "--verbose",
+    "--tools",
+    "Read,Grep,Glob",
+    "--allowedTools",
+    "Read,Grep,Glob",
+    "--agents",
+    "<HOME>/Dropbox/workspace/svn/Article-Stratonovich-HAM-Second-Moment/reviews/2026-10-28-source-normalization/opus-v1/claude-reviewer.json",
+    "--agent",
+    "artifact-reviewer",
+    "<stdin: prompt.txt without its final newline>"
+  ],
+  "prompt_transport": "stdin",
+  "prompt_bytes": 6598,
+  "prompt_sha256": "54c0a6f573720f58400ab5e437030543afc194ff17becf89a5cb48fc529accc5",
+  "transport_exit_code": 0,
+  "transport_ok": true,
+  "model_actual": "claude-opus-5-5",
+  "session_id": "07b8f1e3-e9d3-447c-8ce3-3a142bf01712",
+  "usage": {
+    "input_tokens": 12,
+    "cache_creation_input_tokens": 57971,
+    "cache_read_input_tokens": 130284,
+    "output_tokens": 19721,
+    "output_tokens_details": {
+      "thinking_tokens": 12212
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 57971,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 7472,
+        "cache_read_input_tokens": 52600,
+        "cache_creation_input_tokens": 5371,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 5371
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "provider_error": false,
+  "terminal_subtype": "success",
+  "tools_actual": [
+    "Read",
+    "Grep",
+    "Glob"
+  ],
+  "actual_route_verified": true,
+  "candidate_hashes_unchanged": true,
+  "raw_report_sha256": "5779450f9aece4976620799cb920918d07df8acb5e3027e30a994bfaf835f737",
+  "status": "review-complete",
+  "confidence": "high",
+  "report_interpretation": {
+    "contract_schema": "subscription-review-report/1",
+    "report_schema": "subscription-review-report/1",
+    "legacy_mode": null,
+    "normalized_verdict": "PASS_WITH_NOTES",
+    "normalized_confidence": "high",
+    "normalized_check_verdicts": [
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS"
+    ]
+  },
+  "report_sha256": "5cdbc9c74d5c07e48cb37d4112e036d96b1ae746dcfcdecb684ef09b906b246d",
+  "report_text_format": "fenced-json",
+  "report_body_sha256": "b7c60c50619d7efdc4b171eca7c834c3834c66c7d82ab550c9fbb922f9919248",
+  "finished_utc": "2026-10-28T10:26:42.321997+00:00",
+  "elapsed_seconds": 190.377,
+  "transport_events_sha256": "f44eb1bd3155e7545cc6eb81bafdc56481a3b5dfba62a5e06774d12177a77904",
+  "transport_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "read_ledger_sha256": "668c75d2fa45c39c23152e5aa05c67fd71334d14722676cf60cf57a22e63be5b",
+  "coverage_verified": false
+}

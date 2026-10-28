@@ -1,0 +1,87 @@
+```json
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    ".review/required-sources.json: lines 1-42 (whole file; read plan only)",
+    "pages/chen-02.png: whole image viewed (p.2: (1.1)-(1.4), covariance |s-t|^{-alpha0} gamma(x-y))",
+    "pages/chen-03.png: whole image viewed (p.3: (1.5)-(1.10), Theorem 1.2 admissibility incl. alpha=d=1)",
+    "pages/chen-04.png: whole image viewed (p.4: (1.11)-(1.13), A_d, 'E_* < E' sentence)",
+    "pages/chen-13.png: whole image viewed (p.13: gamma=delta_0 in d=1 explicitly allowed; (2.23)-(2.25))",
+    "probe.md: lines 1-234 (whole file)",
+    "controls.json: lines 1-12 (whole file)",
+    "evidence.json: lines 1-19 (whole file)",
+    "current-source-check.json: lines 1-15 (whole file)",
+    "goal-context.txt: line 1 (whole file)",
+    "author.pdf: pages 5-6 only (optional context check of (1.21) and (1.22)); other pages not read. This is not a required source."
+  ],
+  "checks": [
+    {
+      "claim": "C1: Literal source reading (gradient coefficients, common A_d, gamma0_star kernel/denominator/Gamma normalization, same increasing L, white d=alpha=1, alpha0=1/10 admissible; omitted normalizations)",
+      "verdict": "PASS",
+      "reason": "I read the rendered pages myself before reading probe.md. (1.11): interaction kernel |s-r|^{-alpha0}gamma(x-y) with coefficient 1, gradient penalty coefficient 1. (1.12): interaction gamma0_*(s-r)gamma(x-y) with coefficient 1, gradient penalty 1/2. Both suprema are over the same A_d = {g(s,.) in W^{1,2}(R^d), ||g(s,.)||_2=1 for every 0<=s<=1}, with time domain [0,1]^2. (1.13): gamma0_*(u)=Gamma(alpha0)^{-1} int_0^inf exp{-(lambda+lambda^2/(2(4-alpha-2alpha0)))|u|} lambda^{alpha0-1} dlambda. At alpha=1, alpha0=1/10 the denominator is 2*2.8=28/5. (1.10) uses the same map L, once with E_* (lower) and once with E (upper). Theorem 1.2 allows 0<alpha0<1 and alpha=d=1 with alpha0+alpha=1.1<2. Page 3 says alpha=d is possible only for alpha=d=1 or gamma a constant multiple of Dirac, and p.13 names gamma=delta_0 in d=1 explicitly. If gamma=c*delta_0 for some c>0, both interaction terms scale by c and both values scale by c^2, so the comparison does not depend on c. No temporal amplitude, Fourier 2pi factor or time-length factor is printed that would change the 1 versus 1/2 asymmetry. The only omission I found is in the domain: A_d does not state measurability in s or a finite integrated energy int_0^1 ||grad g(s)||^2 ds (see C2). Optional context: (1.21) on p.6 is the Laplace identity |u|^{-alpha0}=Gamma(alpha0)^{-1} int e^{-lambda|u|} lambda^{alpha0-1} dlambda. The text's justification of E_*<E compares only the kernels."
+    },
+    {
+      "claim": "C2: Domain audit (finite-integrated-energy interpretation versus printed A_d; no values assigned to infinity minus infinity)",
+      "verdict": "PASS",
+      "reason": "Interpretation: g is jointly measurable and T=int_0^1 B_s ds<inf, where B_s=||d_x g(s)||_2^2. Under it both objectives are finite real numbers, because the interaction is at most K int sqrt(B_s) ds <= K sqrt(T). For a measurable profile with T=inf and finite interaction, the objective is -inf, which is harmless for a supremum. The only profiles without a defined value are those where both terms are +inf, which requires int sqrt(B_s) ds=inf. I assign them no value, and neither does the probe. The E_* lower bound uses smooth profiles that are constant in time; they belong to the printed A_d and to every reasonable variant. So the lower side does not depend on the interpretation. The E upper bound does depend on excluding infinity-minus-infinity profiles. That is the standard meaning, and the source's assertion E<inf (Lemma 5.2 of [8]) already requires some such convention. Intended meaning and printed text differ only by this unstated regularity. The difference does not invalidate the scoped comparison, but the comparison holds only under that interpretation. probe.md sec. 2 states this correctly."
+    },
+    {
+      "claim": "C3: Finite positive abstract Sobolev ratio R in 1D, without sharp constants or optimizers",
+      "verdict": "PASS",
+      "reason": "My calculation: for ||f||_2=1 let A=int f^4 and B=int f'^2. B>0 because a constant L^2 function is zero. f(x)^2 <= int|2ff'| over a half-line, so ||f||_inf^2 <= ||f||_2||f'||_2 = sqrt(B) and A <= ||f||_inf^2 ||f||_2^2 <= sqrt(B). Define R'=sup A^2/(4B), which lies in (0,1/4]; a Gaussian gives positivity. Dilation f_l=sqrt(l)f(l.) keeps ||f_l||_2=1 and gives A->lA, B->l^2 B. Hence M(theta,c):=sup_f{theta A - cB} = sup_f theta^2 A^2/(4cB) = theta^2 R'/c. Attainment is not needed. The probe uses R=sup A/sqrt(B)=2sqrt(R'), with the weaker but valid constant ||g||_inf^2<=2||g||_2||g'||_2, giving R<=2. The two normalizations agree: R^2K^2/4 = K^2 R'. All exponents depend on B being the squared H^1 seminorm. The probe states this and it matches (1.11)-(1.12)."
+    },
+    {
+      "claim": "C4: Upper bound for E over all time-dependent admissible profiles",
+      "verdict": "PASS",
+      "reason": "My calculation: let a(s)=||g(s)||_4^2. Spatial Cauchy-Schwarz gives int g_s^2 g_r^2 dx <= a(s)a(r). From 2a(s)a(r)<=a(s)^2+a(r)^2 and symmetry, the time integral is at most int_0^1 a(s)^2 (int_0^1|s-r|^{-a0}dr) ds <= K int a(s)^2 ds. Here the row integral is [s^{1-a0}+(1-s)^{1-a0}]/(1-a0), concave with maximum at s=1/2, so K=2^{a0}/(1-a0)=1.190859... at a0=1/10. So E <= int_0^1 sup_f{K A - B} ds = K^2 R' ~ 1.418145 R'. This holds pointwise in s for arbitrary measurable time-dependent g; no constant-in-time restriction is made. The probe's route (Cauchy-Schwarz in time and the scalar maximum of RK sqrt(T)-T) gives the same R^2K^2/4. Sanity check: constant profiles give E >= D0^2 R' with D0=int int|s-r|^{-a0}=2/((1-a0)(2-a0))=200/171~1.16959, so E lies in [1.3679R', 1.4181R']."
+    },
+    {
+      "claim": "C5: Lower bound for E_* from gamma0_* (Gamma moments), constant-time dilation, no sharp-R attainment",
+      "verdict": "PASS",
+      "reason": "My calculation, by a different route from the probe: D:=int_0^1 int_0^1 gamma0_*(s-r) ds dr = Gamma(a0)^{-1} int_0^inf lambda^{a0-1} h(c(lambda)) dlambda, where c=lambda+lambda^2/5.6 and h(c)=int_0^1 2(1-u)e^{-cu}du. h is convex, nonnegative and has h(0)=1, h'(0)=-1/3, so h(c)>=1-c/3. Integrating only over [0,1] gives int_0^1 lambda^{-0.9}(1-lambda/3-lambda^2/16.8) dlambda = 10-1/3.3-1/35.28 = 9.66863. With Gamma(0.1)=9.51351, D >= 1.0163. Constant profiles plus dilation then give E_* >= M(D,1/2) = 2D^2 R' >= 2.0657 R'. The probe's cruder route uses gamma0_*(u) >= gamma0_*(1) = E[exp(-lambda^2/(2D))] for lambda~Gamma(1/10,1), together with e^{-x}>=1-x and E[lambda^2]=a0(a0+1)=11/100. This gives m=1-11/560=549/560 and E_* >= m^2R^2/2 = 2m^2R'. I verified both the monotonicity in |u| and the moment. Neither route assumes sharp R is attained, since suprema are taken along sequences."
+    },
+    {
+      "claim": "C6: Exact separation at fixed alpha0=1/10; both objectives finite and positive; origin of the reversal",
+      "verdict": "PASS",
+      "reason": "Exact check in the probe's constants: 2^{1/10}<11/10 because (11/10)^10=2.5937424601>2, so K<11/9. Then 2m^2-(11/9)^2 = 301401/156800-121/81 = (24413481-18972800)/12700800 = 5440681/12700800 > 0, which matches controls.json. My sharper numbers give E_*/E >= 2(1.0163)^2/1.418145 ~ 1.457. Finiteness and positivity: 0 < D0^2 R' <= E <= K^2 R' < inf and 0 < 2D^2 R' <= E_* <= 2K^2 R' < inf, using gamma0_* <= |u|^{-a0} from (1.21). Mechanism: gamma0_* <= |u|^{-alpha0} pointwise, so the E_* interaction is smaller, but only slightly at small alpha0 (D/D0 >= 0.869). The gradient penalty in (1.12) is half that in (1.11), and under the L^2-preserving dilation the optimum scales like theta^2/c, so halving c doubles the value. The factor 2 outweighs the kernel loss of at most about (D/D0)^2. As alpha0->0, E->R' and E_*->2R'. At alpha0=1/10 the gap is exact and not a limit artifact."
+    },
+    {
+      "claim": "C7: Increasing L at alpha=1 and incompatibility of printed (1.10)",
+      "verdict": "PASS",
+      "reason": "At alpha=1: L(v) = 2*(K0*(2v)^{1/2})^{1/2} = 2 K0^{1/2} (2v)^{1/4}, with K0 = (4-1-2a0)^{(4-1-2a0)/2} / (8(3-a0)^{3-a0}) > 0. This is strictly increasing for v>0. In general the exponent is (2-alpha)/(2(3-alpha)) > 0. So E_*>E gives L(E_*)>L(E). The chain in (1.10) implies L(E_*) <= L(E) in the extended reals whatever the true value of liminf/limsup t^{-...} log E u(t,x) is. The contradiction is therefore internal to the printed constants and needs no knowledge of the actual asymptotics. Which correction was intended (a 1/2 on E's penalty, a different gamma0_* scaling, or something else) cannot be determined from the packet, and the probe does not claim one. In goal-context.txt the factor 2^{(4-alpha)/(3-alpha)} applied to both sides is a positive common multiplier, so the reversal carries over to the project's literal target interval."
+    },
+    {
+      "claim": "C8: Scope of the goal-context implication; no (1.24) premise",
+      "verdict": "PASS",
+      "reason": "The probe (lines 16-20, 198-205, 229-233) and goal-context.txt limit the finding to an inconsistency among the printed constants (1.10)-(1.13). They make no moment no-go claim, do not refute the sharp conjecture (1.22) or the intended Theorem 1.2, make no misconduct allegation, and do not authorize changes to the manuscript or goal or any communication. The separate (1.24) proposal is explicitly excluded, and none of the derivation uses it. My derivation uses only (1.10)-(1.13), A_d, (1.21) and the p.3/p.13 admissibility statements."
+    },
+    {
+      "claim": "C9: Overall verification of the surprise",
+      "verdict": "PASS",
+      "reason": "VERIFIED under the precise interpretation: printed (1.11)-(1.13), common A_d with measurable finite-integrated-energy profiles, d=alpha=1, gamma=delta_0 (or any c*delta_0), alpha0=1/10. Then E <= K^2 R' ~ 1.418 R' and E_* >= 2D^2 R' >= 2.066 R' (the probe's cruder certificate gives E_* >= 1.922 R'), with 0<R'<inf. Hence E_*>E strictly, and the printed (1.10) lower constant exceeds the printed upper constant. I found no escape through normalization, domain, scaling, time interval or Gamma factor. The only interpretive dependency is excluding infinity-minus-infinity profiles from A_d. Suggested internal note: 'In the pinned author PDF, (1.12) halves the gradient penalty relative to (1.11) while gamma0_* <= |u|^{-alpha0} is only slightly smaller. Because the L^2-preserving dilation optimum scales like (interaction)^2/(penalty coefficient), the halved penalty roughly doubles E_*. At d=alpha=1, gamma=delta_0, alpha0=1/10 this gives E_* > E, which reverses the printed bounds in (1.10). The intended normalization is unknown and needs source/PI clarification.' This makes no claim about novelty or about which correction is right."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "controls.json key 'root_power_control' = 5937424601/10^10 is the margin (11/10)^10 - 2, not (11/10)^10 itself. The value is correct but the label is ambiguous.",
+      "probe.md uses the non-sharp 1D estimate ||g||_inf^2 <= 2||g||_2||g'||_2. It is valid; the constant 1 also holds. Only finiteness of R matters, so this does not affect the result.",
+      "probe.md's lower bound gamma0_*(u) >= gamma0_*(1) >= 549/560 is valid but crude. A direct integration gives D = int int gamma0_* >= 1.0163, which widens the certified gap from 2m^2/K^2 ~ 1.355 to about 1.457. This is optional strengthening.",
+      "probe.md sec. 6 could state more strongly that the (1.10) chain forces L(E_*) <= L(E) in the extended reals whatever the true moment asymptotics are, so the inconsistency is purely internal to the printed constants.",
+      "The source's sentence 'comparing (1.13) with (1.21) ... E_* < E' (p.4) compares only the kernels and ignores the 1 versus 1/2 penalty mismatch. The internal note could cite this as where the printed claim goes wrong, while still making no claim about the intended fix."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is an AI cross-check, not human verification. My calculations were done by hand reasoning with no code execution. The exact rational identity was checked by hand integer arithmetic, and the decimal values (Gamma(0.1)=9.51351, 2^{0.1}=1.071773) are standard values I did not compute myself.",
+    "The verified conclusion holds for the printed formulas under the measurable, finite-integrated-energy reading of A_d. A different (nonstandard or renormalized) intended domain would have to be supplied explicitly before the conclusion is applied to it.",
+    "I read author.pdf only at pages 5-6, to check (1.21) and (1.22). Its other pages, including Sections 7-8, where the intended derivation of E_* may show the correct normalization, were not read. I do not know which intended correction is right.",
+    "Page images were read visually. Exponents in very small print (e.g. (4-alpha-2alpha0)/2 in (1.10)) were read at the supplied resolution, and the result does not depend on them beyond L being increasing.",
+    "No novelty, publishability or circulation clearance is implied, and nothing here authorizes manuscript, goal or source changes or any contact with the source author.",
+    "Gold-standard self-check: NOT gold standard. This is a single AI independent recomputation with no executed numerical or symbolic verification. To close: a human expert or an executed exact-arithmetic and quadrature check of D and K. Whether and how to raise the discrepancy needs a PI decision."
+  ]
+}
+```

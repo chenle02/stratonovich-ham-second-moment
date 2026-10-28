@@ -1204,3 +1204,24 @@ no intended repair is inferred. Core new upper-scale proofs do not use the
 suspect first-moment upper constant. Their imported lower-bound calibrations
 remain source-dependent and should not be promoted while this audit is open.
 Evidence and frozen audit packet: reviews/2026-10-28-source-normalization/.
+
+
+### Source audit terminal; durable operational lessons
+
+Native Opus source-normalization v1 is terminal: PASS_WITH_NOTES/high, all9PASS,
+no required repairs; accepted=false because coverage_verified=false. All required
+texts were returned, but the four actual direct PNG Reads were transformed:
+three returned JPEG and one changed PNG bytes. Scientific agreement and exact
+image delivery remain distinct. No review-complete resume or confidence retry.
+All findings/limitations are adjudicated in source-normalization/adjudication-v1.md.
+Exact rational controls were independently executed with Fraction and pass;
+optional mpmath diagnostic was NOT run (package unavailable). Full25member
+native evidence archive was hash-verified before removing only its own raw tree.
+
+Durable lesson capture: the missed post-hook source/PDF freeze rule is an
+existing-rule application failure, not a new formatter discovery. Required
+images must be calibrated on the actual CLI at final size before scientific
+dispatch; a successful Read can transform bytes and earns no exact credit.
+Preserve failure, isolate a small carrier/legibility probe, then repair inputs
+with a new immutable packet. No verified image-size remedy is claimed yet.
+Canonical skill updates are being prepared separately; no system hook changes.

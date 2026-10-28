@@ -1,0 +1,309 @@
+{
+  "schema": "le-ai-lab.review-read-ledger/1",
+  "coverage_verified": false,
+  "claude_code_version": "2.1.304",
+  "events_sha256": "f44eb1bd3155e7545cc6eb81bafdc56481a3b5dfba62a5e06774d12177a77904",
+  "events_hash_bound_to_receipt": true,
+  "stream_workspace": "<HOME>/Dropbox/workspace/svn/Article-Stratonovich-HAM-Second-Moment/reviews/2026-10-28-source-normalization/opus-v1/workspace",
+  "required_sources_sha256": null,
+  "continuation": false,
+  "continuation_credit": null,
+  "proves": "Each credited line was returned, numbered and byte-equal to the frozen workspace file, in a tool_result paired with a Read or line-numbered content-mode Grep call of the hash-bound provider stream.",
+  "does_not_prove": "Attention, understanding, or retention: a credited line may have been skimmed, ignored, or dropped by context compaction before the report was written. Uncredited lines may still have been seen in a form the ledger cannot attribute (previews, unnumbered output, subagents).",
+  "sources": [
+    {
+      "path": "probe.md",
+      "sha256": "195f9f85f64160c68eae3516850e6773d087e7b0eeb5c91b865f496885fc4558",
+      "total_lines": 233,
+      "required_ranges": [
+        [
+          1,
+          233
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          233
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "controls.json",
+      "sha256": "e3f81330708d086a9794a6d4f4338de3c9227fb020e87e10d136bc467116f57d",
+      "total_lines": 12,
+      "required_ranges": [
+        [
+          1,
+          12
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          12
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "evidence.json",
+      "sha256": "f9f2a9e650432941ce54c3fa1f6237024bb1fec34d0a1c8f8d43ccac6c268b07",
+      "total_lines": 19,
+      "required_ranges": [
+        [
+          1,
+          19
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          19
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "current-source-check.json",
+      "sha256": "4da2ad90293c58d0ef79d8c1dd3e4b9bc31ee5cb8fc6b3fb70f5dabf3662da9f",
+      "total_lines": 15,
+      "required_ranges": [
+        [
+          1,
+          15
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          15
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "goal-context.txt",
+      "sha256": "0866c9d6e7bfc967763af3722e77f17591effdc8409a4c768a0ed7139e7123cf",
+      "total_lines": 1,
+      "required_ranges": [
+        [
+          1,
+          1
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          1
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    }
+  ],
+  "image_proves": "Each delivered image: a direct Read tool_use of its exact workspace path, in the stream's session, is paired by id with a tool_result (same session) whose content is one inline base64 image block of the declared media type, and the base64 decodes to bytes whose sha256 is the declared one.",
+  "image_does_not_prove": "That the model looked at, understood or correctly interpreted the image, or any scientific acceptance of what it shows: only delivery of these exact bytes. Transformed or resized content, metadata and self-reports earn nothing, so an undelivered image may still have been seen in another form.",
+  "required_images": [
+    {
+      "path": "pages/chen-02.png",
+      "sha256": "de56d13c81b76f5cd7f97f8d1487c87f3c3e3a3fecc48c87e37518f62f4410a1",
+      "media_type": "image/png",
+      "status": "not-delivered",
+      "delivered_by": []
+    },
+    {
+      "path": "pages/chen-03.png",
+      "sha256": "17af1c6eb2c9a9231120598a75a489999f7d591fda4f2c63b1e9f2048df3b5a3",
+      "media_type": "image/png",
+      "status": "not-delivered",
+      "delivered_by": []
+    },
+    {
+      "path": "pages/chen-04.png",
+      "sha256": "ac12acc5606ac588f18eb2ac6544bebf2029d3c9b5559654d15e4a2791d65f6f",
+      "media_type": "image/png",
+      "status": "not-delivered",
+      "delivered_by": []
+    },
+    {
+      "path": "pages/chen-13.png",
+      "sha256": "f63e45e0c84311a91252b2e4e89554a2836aeacceff1c0cddf7168165cce468c",
+      "media_type": "image/png",
+      "status": "not-delivered",
+      "delivered_by": []
+    }
+  ],
+  "tool_calls": [
+    {
+      "id": "toolu_01BGiAW3Z5StZTFCryHQLGxw",
+      "tool": "Read",
+      "source": ".review/required-sources.json",
+      "plan_copy_read": [
+        ".review/required-sources.json"
+      ],
+      "uncredited": "runner-owned plan copy (.review/): never read credit",
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01X9KUvvCeWUsas7PUmnYmiK",
+      "tool": "Read",
+      "source": "pages/chen-02.png",
+      "uncredited": "non-text result (image, PDF or block list)",
+      "stream": "attempt",
+      "image": {
+        "path": "pages/chen-02.png",
+        "media_type": "image/png",
+        "decoded_sha256": null,
+        "delivered": false,
+        "uncredited": "image media_type 'image/jpeg' is not the declared 'image/png'"
+      }
+    },
+    {
+      "id": "toolu_012dcmba6PzXhTbLxDAuz3YV",
+      "tool": "Read",
+      "source": "pages/chen-03.png",
+      "uncredited": "non-text result (image, PDF or block list)",
+      "stream": "attempt",
+      "image": {
+        "path": "pages/chen-03.png",
+        "media_type": "image/png",
+        "decoded_sha256": null,
+        "delivered": false,
+        "uncredited": "image media_type 'image/jpeg' is not the declared 'image/png'"
+      }
+    },
+    {
+      "id": "toolu_01NTvhJdosmmCP6oAQmvQdGc",
+      "tool": "Read",
+      "source": "pages/chen-04.png",
+      "uncredited": "non-text result (image, PDF or block list)",
+      "stream": "attempt",
+      "image": {
+        "path": "pages/chen-04.png",
+        "media_type": "image/png",
+        "decoded_sha256": null,
+        "delivered": false,
+        "uncredited": "image media_type 'image/jpeg' is not the declared 'image/png'"
+      }
+    },
+    {
+      "id": "toolu_019BfpVtwGaVgkKZ17YZhtBx",
+      "tool": "Read",
+      "source": "pages/chen-13.png",
+      "uncredited": "non-text result (image, PDF or block list)",
+      "stream": "attempt",
+      "image": {
+        "path": "pages/chen-13.png",
+        "media_type": "image/png",
+        "decoded_sha256": "0ecfa543171188459dd36617078c449b42ad65eddbfbdb6e24c2e2609ac66a5a",
+        "delivered": false,
+        "uncredited": "decoded bytes differ from the declared image (transformed, resized or other content): unknown, never credited"
+      }
+    },
+    {
+      "id": "toolu_014KPynqs42LfwJuFms1Qt9Q",
+      "tool": "Read",
+      "source": "probe.md",
+      "credited": {
+        "probe.md": [
+          [
+            1,
+            233
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01ReW1iEkkQQZFgGsLsKtHeZ",
+      "tool": "Read",
+      "source": "controls.json",
+      "credited": {
+        "controls.json": [
+          [
+            1,
+            12
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01VVYckcjxdpwCNN4moN4Ryc",
+      "tool": "Read",
+      "source": "evidence.json",
+      "credited": {
+        "evidence.json": [
+          [
+            1,
+            19
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01L7m1ezfWUhUpVKPFoins5d",
+      "tool": "Read",
+      "source": "current-source-check.json",
+      "credited": {
+        "current-source-check.json": [
+          [
+            1,
+            15
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01TwFAnHiF8PUcS6uQLqeGVY",
+      "tool": "Read",
+      "source": "goal-context.txt",
+      "credited": {
+        "goal-context.txt": [
+          [
+            1,
+            1
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_017XsM1XfJoptoc9a3snX5QU",
+      "tool": "Read",
+      "source": "author.pdf",
+      "uncredited": "non-text result (image, PDF or block list)",
+      "stream": "attempt"
+    }
+  ],
+  "diagnostics": [
+    {
+      "code": "coverage-unverified",
+      "path": "pages/chen-02.png",
+      "message": "image not delivered: no Read returned its declared bytes (sha256 de56d13c81b76f5cd7f97f8d1487c87f3c3e3a3fecc48c87e37518f62f4410a1, image/png) as an image block"
+    },
+    {
+      "code": "coverage-unverified",
+      "path": "pages/chen-03.png",
+      "message": "image not delivered: no Read returned its declared bytes (sha256 17af1c6eb2c9a9231120598a75a489999f7d591fda4f2c63b1e9f2048df3b5a3, image/png) as an image block"
+    },
+    {
+      "code": "coverage-unverified",
+      "path": "pages/chen-04.png",
+      "message": "image not delivered: no Read returned its declared bytes (sha256 ac12acc5606ac588f18eb2ac6544bebf2029d3c9b5559654d15e4a2791d65f6f, image/png) as an image block"
+    },
+    {
+      "code": "coverage-unverified",
+      "path": "pages/chen-13.png",
+      "message": "image not delivered: no Read returned its declared bytes (sha256 f63e45e0c84311a91252b2e4e89554a2836aeacceff1c0cddf7168165cce468c, image/png) as an image block"
+    }
+  ]
+}
