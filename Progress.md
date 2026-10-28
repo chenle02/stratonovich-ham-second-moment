@@ -6,7 +6,7 @@
 
 ## Current state
 
-- **Phase:** Accepted deterministic weighted two-wave tool (2026-10-28), awaiting manuscript integration and all-order application. Round 4 candidate checkpoint: higher-alpha Riesz extension received Opus PASS_WITH_NOTES/medium twice, all9checks PASS; final source delivery verified. Configured high-confidence acceptance remains unmet; no proof-status promotion. Accepted alpha<=1 results remain unchanged.
+- **Phase:** Upper-bound candidates in Sections7--9: full admissible d2, d3 Riesz/product families, and conditional d3 endpoint transfer; high-threshold acceptance still incomplete. Section9 is49pages and independent review is pending. A separate source-normalization audit now passed Opus/high with verified delivery: literal(1.10)--(1.13) conflict under the finite-energy interpretation. Intended correction unknown; sharp target flagged for Le while upper-bound work continues. Accepted alpha<=1 baseline and accepted weighted auxiliary remain unchanged.
 - **Proved in this project:** P:Jensen (§2); reviewed G0 P:mixed, L:white-test,
   L:crude-corrected and P:envelope (§3); G1 finite coefficients (§4); reviewed G2 target-scale bounds P:d1-upper/P:low-alpha-upper for alpha<=1 (§5). Full goal and formal verification remain incomplete.
 - **Open targets:** remaining G:upper range 1<alpha<2-alpha0 in d=2,3; G:sharp; requested private Lean verification (not yet created).
@@ -31,7 +31,13 @@ then the round-close protocol (`paper-dev-round-close-protocol`).
 
 [held back: collaborators' unpublished work]
 
-## Verified facts (setup reading, 2026-10-26)
+## Setup source reading (2026-10-26; historical)
+
+**2026-10-28 qualification:** the first bullet records what is printed, not a
+currently certified ordering of the variational constants. The independent
+high-confidence audit below establishes a scoped literal-normalization conflict.
+Do not use that printed ordering or the first-moment upper constant as a new
+premise. The upper-scale proof track is independent of that upper constant.
 
 - Theorem 1.2 (p. 3) gives two-sided first-moment bounds L_* ≤ liminf ≤
   limsup ≤ L^*, with L(𝓔) as in the notes; 𝓔_* < 𝓔 ((1.11)–(1.13), p. 4).
@@ -1237,3 +1243,36 @@ and high-confidence threshold. It adds executed exact controls and a derivation
 map for12required images(four smaller full pages,eight exact pixel crops).
 Source/goal/manuscript unchanged. Purpose: repair actual source-image delivery,
 not seek a higher confidence(the first scientific report was already high).
+
+
+### Source-normalization discrepancy independently verified
+
+Repaired-input Opus v2 is terminal: PASS_WITH_NOTES/high, all9PASS, no required
+repairs, accepted=true,coverage_verified=true;228.584s. All12source images and
+all required texts were actually delivered. The original v1 coverage failure
+and both native archives are immutable. Full dispositions and qualifications:
+reviews/2026-10-28-source-normalization/adjudication-v2.md.
+
+At d=alpha=1,gamma=delta0,alpha0=1/10, for the literal formulas on the usual
+measurable finite-energy class, E_star>=m²R²/2>K²R²/4>=E, with m=549/560
+and K<11/9. The positive rational gap is5440681/50803200 timesR². Both
+objectives are finitepositive; R is the same finitepositive abstract Sobolev
+ratio, no sharp optimizer/staticwhite value used. Consequently the same
+increasing source L gives an internally reversed printed interval.
+
+Classify SOURCE-INTERNAL-DISCREPANCY at that exact scope, not a moment no-go
+or a conjecture refutation under intended constants. The intended correction
+is unknown; no source/goal/manuscript/bibliography edit or author contact.
+Le was asked asynchronously for any known correction. Full goal stays active;
+normalization uncertainty concerns the sharp target/calibrations, while the
+new upper-scale arguments do not use the suspect first-moment upper constant.
+
+Durable lessons were published as updates to two existing canonical skills,
+not duplicate new skills: focused-subscription-cli-review and
+tex-commit-clean-compile-pdf-gate, Le-AI-Lab e28fd72d. Both skill gates,
+frontmatter/description validation, runtime sync, search discovery and strict
+Codex budget checks passed. The Pi-settings absence is an existing nonblocking
+sync warning. Canonical local/origin converged; <HUB> contains the lesson
+commit plus newer work. A concurrent initial fast-forward refusal was retained
+and rechecked read-only; another agent's BOARD.md WIP was never reset/stashed.
+No setup/configuration change. New theorem candidates remain unpromoted.

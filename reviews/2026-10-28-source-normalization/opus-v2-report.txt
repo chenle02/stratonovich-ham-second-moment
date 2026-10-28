@@ -1,0 +1,98 @@
+```json
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    ".review/required-sources.json: lines 1-98 (complete; read as the plan, earns no credit)",
+    "scope-v2.txt: lines 1-2 (complete; read first)",
+    "pages/chen-02-full.png: whole image read directly with file_path only",
+    "pages/chen-02-upper.png: whole image read directly with file_path only",
+    "pages/chen-02-lower.png: whole image read directly with file_path only",
+    "pages/chen-03-full.png: whole image read directly with file_path only",
+    "pages/chen-03-upper.png: whole image read directly with file_path only",
+    "pages/chen-03-lower.png: whole image read directly with file_path only",
+    "pages/chen-04-full.png: whole image read directly with file_path only",
+    "pages/chen-04-upper.png: whole image read directly with file_path only",
+    "pages/chen-04-lower.png: whole image read directly with file_path only",
+    "pages/chen-13-full.png: whole image read directly with file_path only",
+    "pages/chen-13-upper.png: whole image read directly with file_path only",
+    "pages/chen-13-lower.png: whole image read directly with file_path only",
+    "probe.md: lines 1-234 (complete; read only after the images and my own derivation)",
+    "goal-context.txt: lines 1-2 (complete)",
+    "executed-controls.json: lines 1-10 (complete)",
+    "controls.json: lines 1-13 (complete)",
+    "evidence.json: lines 1-19 (complete)",
+    "current-source-check.json: lines 1-16 (complete)",
+    "carrier-derivation.json: lines 1-131 (complete)",
+    "author.pdf: pages 5-6 only (optional context check of (1.21) and (1.22); not a required source)"
+  ],
+  "checks": [
+    {
+      "claim": "C1: Literal source reading: the two gradient coefficients, the common A_d, the exact gamma0_star kernel, denominator and Gamma normalization, the same increasing L in (1.10), and admissibility of white noise with d=alpha=1, alpha0=1/10",
+      "verdict": "PASS",
+      "reason": "I read this from the p4 upper crop myself. (1.11) has the raw kernel |s-r|^{-alpha0} gamma(x-y) and gradient coefficient 1. (1.12) has gamma0_star(s-r) gamma(x-y) and gradient coefficient 1/2. Both suprema are over the same A_d = {g(s,.) in W^{1,2}(R^d), ||g(s,.)||_2 = 1 for every s in [0,1]}. (1.13) reads gamma0_star(u) = Gamma(alpha0)^{-1} int_{R+} exp{-(lambda + lambda^2/(2(4-alpha-2alpha0)))|u|} lambda^{alpha0-1} dlambda. Its Gamma normalization matches (2.24) on p13 and (1.21) on p6 of author.pdf, so without the lambda^2 term the kernel equals |u|^{-alpha0} exactly. At this test point the denominator is 2(4-1-0.2) = 28/5. On the p3 lower crop, (1.10) applies the same map L(v) = (3-alpha)(C (2v/(2-alpha))^{(2-alpha)/2})^{1/(3-alpha)} to E_star (lower) and E (upper), with C = (4-alpha-2alpha0)^{(4-alpha-2alpha0)/2} / (2^3 (4-alpha-alpha0)^{4-alpha-alpha0}). Admissibility: Theorem 1.2 explicitly allows '0<alpha0<1 and alpha=d=1'. alpha0+alpha = 1.1 < 2. p3 names the constant multiple of the Dirac function as the alpha=d case. p2 requires gamma >= 0 and d in {1,2,3}. p13 names gamma = delta_0 in d=1 as covered by the generalized-covariance convention. delta_0(cx) = c^{-1} delta_0(x), so alpha=1. I found no omitted normalization. There is no temporal amplitude in (1.2). An amplitude kappa on gamma scales both functionals' interaction terms equally, so after dilation the ratio E_star/E does not depend on kappa. Both functionals use the same unit time square [0,1]^2."
+    },
+    {
+      "claim": "C2: Domain audit: standard meaningful finite-energy interpretation versus the printed A_d, without assigning values to infinity-minus-infinity",
+      "verdict": "PASS",
+      "reason": "The printed A_d requires W^{1,2} and unit mass for each slice. It does not require time measurability or T = int_0^1 ||d_x g(s)||_2^2 ds < infinity. For non-measurable g the double time integrals are undefined. For T = infinity, the positive term is bounded by R^{1/2} K int_0^1 ||g_s'||_2 ds (my R), which may also be infinite, giving an undefined infinity minus infinity. probe.md correctly declines to assign such a value. The comparison holds for every domain that (a) contains the constant-in-time profiles g(s,x) = h(x), h in H^1, ||h||_2 = 1, and (b) contains only measurable finite-energy profiles. Shrinking the domain only lowers E, and the E_star lower bound uses only class-(a) profiles. This is the standard reading. The source's own claim 'E < infinity (Lemma 5.2, [8])' needs a meaningful finite-energy convention, so this interpretation supports the scoped comparison rather than undermining it. I did not infer the source author's intended domain beyond the printed text. A domain enlarged with a renormalized convention for infinity-minus-infinity profiles is not covered. probe.md flags this case explicitly."
+    },
+    {
+      "claim": "C3: A finite positive abstract Sobolev ratio R in 1D, with no disputed static/white constant or optimizer; Sobolev and dilation exponents; unit L2 constraint",
+      "verdict": "PASS",
+      "reason": "My own derivation: for ||h||_2 = 1, write h(x)^2 = int_{-inf}^x 2hh' = -int_x^inf 2hh'. Averaging the two forms gives ||h||_inf^2 <= ||h||_2 ||h'||_2. Hence ||h||_4^4 <= ||h||_inf^2 <= ||h'||_2, and R_mine := sup ||h||_4^8 / ||h'||_2^2 <= 1. Any nonzero normalized smooth compactly supported h gives R_mine > 0. Every normalized h has ||h'||_2 > 0, since otherwise h is constant and not in L^2. Dilation h_l(x) = l^{1/2} h(lx) keeps ||h_l||_2 = 1, multiplies ||h||_4^4 by l and multiplies ||h'||_2^2 by l^2. So sup_l [theta l A - c l^2 B] = theta^2 A^2/(4cB), and sup_h sup_l = theta^2 R_mine/(4c). No attainment is needed. probe.md defines R_probe = sup I/sqrt(B) = R_mine^{1/2} and uses the weaker constant ||g||_inf^2 <= 2||g||_2||g'||_2. That bound is valid, giving R_probe <= 2. The exponents and the unit-L2 constraint are handled correctly. As an illustration only, not used: the sech family gives R_mine = 1/3."
+    },
+    {
+      "claim": "C4: Upper bound for E over ALL time-dependent admissible profiles (spatial Cauchy-Schwarz, temporal row/2fg bound, Jensen, scalar maximum)",
+      "verdict": "PASS",
+      "reason": "Independently, for measurable finite-energy g: (i) Cauchy-Schwarz in space gives int g_s^2 g_r^2 dx <= F(s)F(r), with F(s) = ||g_s||_4^2. (ii) 2F(s)F(r) <= F(s)^2 + F(r)^2 and symmetry of the kernel give int int |s-r|^{-a} F(s)F(r) <= sup_s(int_0^1 |s-r|^{-a} dr) int F^2. The row integral is [s^{1-a} + (1-s)^{1-a}]/(1-a). It is concave in s, so its maximum is at s = 1/2: K = 2^a/(1-a) = (10/9) 2^{0.1} ≈ 1.190859. (iii) So E <= sup_g int_0^1 [K ||g_s||_4^4 - ||g_s'||_2^2] ds <= sup_s pointwise <= K^2 R_mine/4, using the scalar maximum sup_l [Kl A - l^2 B] = K^2 A^2/(4B). This bound is pointwise in s and never assumes constant-in-time g. probe.md's route, R K sqrt(T) - T <= R^2 K^2/4 with Jensen int sqrt(B_s) <= sqrt(T), gives the same constant: R_probe^2 K^2/4 = K^2 R_mine/4. The probe's strict bound K < 11/9 is equivalent to 2 < (11/10)^10 = 2.5937424601, which I checked by hand."
+    },
+    {
+      "claim": "C5: Lower bound for gamma0_star and E_star using exact Gamma moments, then constant-time dilation; no assumed attainment of sharp R",
+      "verdict": "PASS",
+      "reason": "Two independent lower bounds. (1) Probe-style: the integrand of (1.13) decreases in |u|, so on the unit square gamma0_star(u) >= gamma0_star(1) = E[exp(-lambda^2/(2D))] with lambda ~ Gamma(a,1), D = 14/5. Since e^{-x} >= 1-x and E[lambda^2] = a(a+1) = 11/100, this is >= 1 - (11/100)/(28/5) = 1 - 11/560 = 549/560 = m, which I confirmed. (2) My own sharper bound on M := int int_{[0,1]^2} gamma0_star(s-r) ds dr. By Fubini, M = Gamma(a)^{-1} int lambda^{a-1} phi(lambda + lambda^2/5.6) dlambda, where phi(b) = int int e^{-b|s-r|} = 2(b-1+e^{-b})/b^2. phi is decreasing with |phi'| <= int int |s-r| = 1/3, and phi(b) <= 2/b. So the deficit against N = int int |s-r|^{-a} = 2/((1-a)(2-a)) = 2/1.71 ≈ 1.169591 is at most Gamma(0.1)^{-1}[int_0^{l0} lambda^{1.1}/16.8 + int_{l0}^inf 2 lambda^{-1.9}], with l0^3 = 33.6, l0 ≈ 3.2269. That gives ≈ (0.3318 + 0.7743)/9.5135 ≈ 0.1163, so M >= 1.053 > m. A coarse quadrature suggests M ≈ 1.12. With constant-time profiles and dilation at gradient coefficient 1/2: E_star >= M^2 R_mine/2 >= m^2 R_probe^2/2, taken as a supremum over sequences, with no optimizer assumed. The finite-energy constant-time profiles lie in A_d."
+    },
+    {
+      "claim": "C6: Exact separation at fixed alpha0 = 1/10, finiteness and positivity of both objectives, and where the reversal comes from",
+      "verdict": "PASS",
+      "reason": "From the probe's certificate: m^2/2 - (11/9)^2/4 = 301401/627200 - 121/324. Over the common denominator 50803200 this is 24413481 - 18972800 = 5440681. I verified each product by hand: 549^2 = 301401, 313600*162 = 50803200, 324*156800 = 50803200. This matches controls.json and executed-controls.json, so E_star - E >= (5440681/50803200) R_probe^2 > 0. My own bound gives a wider gap: E_star/E >= 2M^2/K^2 >= 2(1.0533)^2/(1.190859)^2 ≈ 1.56. Finiteness and positivity: R_probe^2/4 <= N^2 R_mine/4 <= E <= K^2 R_mine/4. Here N^2 R_mine/4 uses |u|^{-a} >= 1 on the unit square; the probe uses the cruder kernel >= 1. Also 0 < m^2 R_probe^2/2 <= E_star <= K^2 R_mine/2, since gamma0_star <= |u|^{-a}. Illustration only, with R_mine = 1/3: E in [0.1140, 0.1182] and E_star >= 0.1849. Mechanism: under dilation, sup [theta A - c B] = theta^2 R/(4c) is inversely proportional to the gradient coefficient c. Moving from (1.11) to (1.12) halves c, which doubles the value. The kernel damping in (1.13) lowers the effective interaction only from about 1.17-1.19 to at least about 1.05, a squared factor of at least 0.78. That cannot offset the factor 2. Page 4 of the source supports E_star < E only by 'comparing (1.13) with (1.21)', i.e. gamma0_star <= |u|^{-alpha0}. That kernel comparison is correct but omits the differing gradient coefficients. This is where the reversal arises."
+    },
+    {
+      "claim": "C7: L is increasing at alpha=1, and printed (1.10) is incompatible with the recomputed ordering",
+      "verdict": "PASS",
+      "reason": "At alpha=1, alpha0=1/10: L(v) = 2(C(2v)^{1/2})^{1/2}. Here C = 2.8^{1.4}/(8 * 2.9^{2.9}) > 0, so L(v) is a positive constant times v^{1/4} and strictly increasing for v > 0, as probe.md states. In general the power is (2-alpha)/(2(3-alpha)) > 0. With 0 < E < E_star < infinity, L(E_star) > L(E). The printed chain L(E_star) <= liminf <= limsup <= L(E) then has no possible value for any real or extended-real sequence. This is a literal internal inconsistency among (1.10)-(1.13) as printed. The goal-context multiplication of both sides by 2^{(4-alpha)/(3-alpha)} preserves the reversal. I make no claim about which correction (gradient coefficient, kernel, or map) the author intended, and probe.md makes none either."
+    },
+    {
+      "claim": "C8: The goal-context implication is limited to a literal printed-constant inconsistency, and no (1.24) proposal is a premise",
+      "verdict": "PASS",
+      "reason": "goal-context.txt and probe.md scope the finding to an ordering reversal of the literal printed constants that needs PI or source clarification. Neither claims a moment no-go, a refutation of the conjecture or of (1.22), misconduct, or permission to change the manuscript, goal or bibliography, or to contact anyone. probe.md line 18 and goal-context state that the separate (1.24) proposal is unrelated and unused. My derivation does not use (1.24) and does not depend on it."
+    },
+    {
+      "claim": "C9: Overall independent verification of the surprise",
+      "verdict": "PASS",
+      "reason": "VERIFIED. The interpretation: literal printed (1.11)-(1.13), white noise gamma = delta_0 in d=1, alpha=1, alpha0=1/10, over the measurable finite-energy class (equivalently, any domain containing constant-time H^1 unit profiles and contained in that class). Under it, E_star > E strictly, and both are finite and positive. I found no defeat in the normalization (Gamma(alpha0) matches (1.21) and (2.24); spatial amplitude scales out), the domain, the time interval, the dilation exponents, or the admissibility. Internal-note summary: 'With the printed gradient coefficients 1 in (1.11) and 1/2 in (1.12) over the same A_d, dilation makes each variational value inversely proportional to its gradient coefficient. The damping in gamma0_star reduces the temporal interaction by far less than the factor sqrt(2) needed to compensate. In the admissible white case d=alpha=1, alpha0=1/10, this gives E_star >= m^2 R^2/2 > K^2 R^2/4 >= E (m = 549/560, K < 11/9). So the printed lower constant L(E_star) exceeds the printed upper constant L(E). The source's E_star < E remark compares kernels only.' This is not a novelty or publishability claim, and it identifies no intended correction."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "probe.md uses the non-sharp bound ||g||_inf^2 <= 2||g||_2||g'||_2; the sharp form ||g||_inf^2 <= ||g||_2||g'||_2 holds. The weaker bound is valid and only affects the R upper estimate, not the separation.",
+      "probe.md's R (sup I/sqrt(B)) is the square root of the more common R = sup I^2/B. The algebra is consistent throughout, but stating the convention explicitly next to (U) and (L) would help comparison with other reports.",
+      "The symbol D is used both for the damping parameter 4-alpha-2alpha0 (probe.md section 5) and, in some readings, for a deficit; a local rename would avoid confusion. The probe's own use is unambiguous.",
+      "The probe's lower kernel bound m = 549/560 is deliberately crude (gamma0_star >= gamma0_star(1)). The true unit-square mass is at least about 1.053 (my Fubini/phi bound). The real margin is therefore wider than the certificate shows, which only strengthens the conclusion.",
+      "The domain caveat could also say explicitly that the comparison holds for every domain between 'constant-time H^1 unit profiles' and 'measurable finite-energy profiles'. probe.md section 2 implies this without stating it as a sandwich."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is an AI review, not human verification, and not a novelty, publishability or circulation-clearance audit. It adopts no source correction and does not determine the author's intended normalization.",
+    "I ran no commands, so I did not independently verify the SHA-256 values of the delivered PNGs against required-sources.json or carrier-derivation.json. The pixel-crop equality claims are taken as the root's attestation. The crops displayed at about 1100x870 px, consistent with the stated 1120x870 boxes, but I cannot prove byte-exact native delivery.",
+    "All exact-rational checks (549^2, products over 50803200, 1.1^10) and the numerical M bound were done by hand. The Gamma(0.1) ≈ 9.5135 and exponential values come from my own arithmetic, not executed code. The decisive certificate (m^2/2 > (11/9)^2/4) needs only rational arithmetic, and I checked it exactly.",
+    "author.pdf was consulted only for pages 5-6, to confirm (1.21) and (1.22). The rest of the paper (e.g., Lemma 5.2 of [8], Section 8, Remark 8.1) was not read. A later redefinition of E or E_star elsewhere in the paper is therefore not excluded, though it would not change the printed (1.10)-(1.13) audited here.",
+    "The conclusion depends on the stated finite-energy measurable interpretation of A_d. A different, explicitly supplied renormalized meaning for infinity-minus-infinity profiles is outside scope.",
+    "Self-check: the deliverable is a scoped review report. Correctness of the literal-normalization surprise was independently reproduced (gate: exact rational separation plus an independent Fubini/phi bound). Any decision about the manuscript, the goal or contacting the source author is a PI decision and is not addressed."
+  ]
+}
+```
