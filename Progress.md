@@ -1320,3 +1320,40 @@ minor in the report,none converted to an invented required repair. Imported
 static internal(5.11)was not supplied; actual upper rate(5.15)was supplied.
 Medium uncertainty remains with imported rate machinery/compressed target limit.
 A separate plane-supported/finitesum endpoint probe is NOT covered by this report.
+
+
+### Deterministic extension probe: plane measures and positive mixtures
+
+Separate complete local argument in product-endpoints/plane-and-mixture-probe.md:
+Gamma=c|y1|^-a1|y2|^-a2 dy delta0(dz),s=a1+a2 in(0,1-alpha0). Low endpoint
+is c dy delta0(dz); static tangential exponents are a_j/(1-theta),with
+theta in(alpha0,1-s). Both keep the normal Dirac measure; Gaussian Holder
+is on the common measure dy delta0(dz),never powers of distributions.
+PD is proved by slice-wise tangential Gaussian quadratic forms. Low spectral
+V=c/pi and closingc/2 match the direct wave normal marginal. Rotations allowed.
+A second proof shows finite nonnegative sums preserve the endpoint condition
+when alpha,theta,beta are common,by discrete Holder. No stochastic mixture
+identity or arbitrary-covariance representation/density claim is made.
+
+Falsification preceded investment: fixed a=(1/2,0),alpha0=1/4,theta=3/8 gives
+v=(4/5,0),beta=9/5; exact controls189parameter cases(90zeros) and256two-term
+half-theta Cauchy cases pass. These finite diagnostics are not proof/Lean.
+The probe is outside the full Section9 review and does not promote that
+moment theorem. A separately bound10file/4image pure-auxiliary review packet
+and six-check contract are prepared; no first-moment/static-rate input is used.
+Original full general d3 and sharp goals remain unchanged and incomplete.
+
+Auxiliary v1 was supervisor-interrupted without scientific verdict: git diff
+--check refused a trailing blank line in the exact H9reading excerpt, but root
+launched the next tool call despite that nonzero commit result. This was an
+orchestration error,NOT provider outage/quota/scientific failure. Native driver
+terminated(exit4,transport143),and no live exact-profile process remained.
+All old packet/native/dry-run bytes and interruption cause are preserved.
+
+Packet-v2 removes only the boundary blank line. A new root prelaunch guard
+checks every packet/manifest/required/contract blob against actual HEAD and
+refuses uncommitted or changed bytes. The actual prior uncommitted preparation
+is a retained negative control. The guard must run in the SAME fail-fast shell
+as provider dispatch; shell set-e does not gate later tool calls automatically.
+It certifies byte/commit identity only,not semantic completeness or mathematics.
+No gate/receipt was weakened or rewritten,and no old attempt will be resumed.

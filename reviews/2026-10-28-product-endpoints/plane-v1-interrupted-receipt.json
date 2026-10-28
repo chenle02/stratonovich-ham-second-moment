@@ -1,0 +1,141 @@
+{
+  "provider": "claude",
+  "started_utc": "2026-10-28T11:08:38.075722+00:00",
+  "workspace": "<HOME>/Dropbox/workspace/svn/Article-Stratonovich-HAM-Second-Moment/reviews/2026-10-28-product-endpoints/opus-plane-v1/workspace",
+  "source_revision": "1f4b1702e135c0e6595f871fde7d0afe750f50ef",
+  "input_hashes": {
+    "H9-excerpt.txt": "3773a8e71e9f699ac09a534bec41ec237172b88647a32d3a1d74e9019e821dc9",
+    "chen-02.png": "779b3292ab9ab704d043bf0a4ce7248b9318cc00607d30ff2a384d1f989bbb35",
+    "chen-03.png": "fdc694e9ef84e47392334ebc65c2b79215fff1e7d368402827cec359b706cfa6",
+    "chen-07.png": "09ea5dd9b94b1711807e01e775d8a75967fb7559d80ed35fa90d56c80af6cd84",
+    "chen-13.png": "2012b798e41988bdc05281160d3c2437a62031adb2852e188ad4fcfc9dbf7c97",
+    "plane-and-mixture-controls.json": "d3fea6c6090280f849fc29ec6cbcfe9578e7eab85214cbaf203e1830c4987bc2",
+    "plane-and-mixture-controls.py": "49798a0deb13980ea56267c8882d4b052b2efeade8be7771cd9a2a2ce806f4d5",
+    "probe.md": "3cbb5299a3ab4bf76a4f5d9d3961d7bf71a137377369617b05b9f938ad53fd43",
+    "scope.txt": "83fa1cb5f49c972fbcb3d853912a1ddf8f7a500958ffdb15eb0a297bb5ce04cb",
+    "source-map.txt": "882cc6d24377abd0481f775ae624eef128a4ab7cd204d44fc9f60c8471092f90"
+  },
+  "target": "probe.md",
+  "claude_account": "<removed>",
+  "review_contract_sha256": "2576d3261b82447ebaa566c0b701e0a763fb5e1a1b2ed8d46f7e2c10fc12f657",
+  "effort_requested": "high",
+  "resumed_from": null,
+  "resume_mode": null,
+  "resume_binding": null,
+  "min_confidence": "high",
+  "scientific_verdict": null,
+  "accepted": false,
+  "report_contract_schema": "subscription-review-report/1",
+  "report_legacy_mode": null,
+  "legacy_resume_binding": null,
+  "diagnostics": [
+    {
+      "code": "transport-failure",
+      "path": "",
+      "message": "review transport/provider failed"
+    }
+  ],
+  "required_sources_sha256": "694168369aa2943a748368c975049579a9bf00e5b6e1c5e82ac7098560d6cb9b",
+  "required_sources_workspace_copy": ".review/required-sources.json",
+  "workspace_preflight": {
+    "schema": "le-ai-lab.review-workspace-preflight/1",
+    "scanned": "review contract (--prompt-file)",
+    "references": {
+      "H9-excerpt.txt": [
+        "H9-excerpt.txt"
+      ],
+      "probe.md": [
+        "probe.md"
+      ],
+      "scope.txt": [
+        "scope.txt"
+      ],
+      "source-map.txt": [
+        "source-map.txt"
+      ]
+    },
+    "waived": [],
+    "missing": [],
+    "required_sources_copy": ".review/required-sources.json"
+  },
+  "runtime_preflight": {
+    "effective_version": "2.1.304",
+    "cli_version": "2.1.304 (Claude Code)",
+    "image_requirements": true,
+    "supported_versions": [
+      "2.1.302",
+      "2.1.304"
+    ],
+    "supported": true
+  },
+  "cli_version": "2.1.304 (Claude Code)",
+  "executable": "<HOME>/.local/state/Le-AI-Lab/swe-white-time-resume-20261024/runtime/node_modules/@anthropic-ai/claude-code-linux-x64/claude",
+  "executable_requested": null,
+  "executable_effective": {
+    "path": "<HOME>/.local/state/Le-AI-Lab/swe-white-time-resume-20261024/runtime/node_modules/@anthropic-ai/claude-code-linux-x64/claude",
+    "version": "2.1.304 (Claude Code)"
+  },
+  "read_ledger_format_supported": true,
+  "auth": {
+    "authMethod": "<removed>",
+    "apiProvider": "firstParty",
+    "subscriptionType": "<removed>",
+    "email": "<account email removed>"
+  },
+  "model_requested": "claude-opus-5-5",
+  "command_without_prompt": [
+    "<HOME>/.claude/bin/claude-acct",
+    "run",
+    "<account removed>",
+    "--print",
+    "--model",
+    "claude-opus-5-5",
+    "--effort",
+    "high",
+    "--disable-slash-commands",
+    "--strict-mcp-config",
+    "--mcp-config",
+    "{\"mcpServers\":{}}",
+    "--permission-mode",
+    "dontAsk",
+    "--permission-prompts",
+    "none",
+    "--output-format",
+    "stream-json",
+    "--verbose",
+    "--tools",
+    "Read,Grep,Glob",
+    "--allowedTools",
+    "Read,Grep,Glob",
+    "--agents",
+    "<HOME>/Dropbox/workspace/svn/Article-Stratonovich-HAM-Second-Moment/reviews/2026-10-28-product-endpoints/opus-plane-v1/claude-reviewer.json",
+    "--agent",
+    "artifact-reviewer",
+    "<stdin: prompt.txt without its final newline>"
+  ],
+  "prompt_transport": "stdin",
+  "prompt_bytes": 6937,
+  "prompt_sha256": "7d17bf53b2bc404330b68ca542b6c816961d103628a7691688dacc6e5e42039a",
+  "transport_exit_code": 143,
+  "transport_ok": false,
+  "model_actual": "claude-opus-5-5",
+  "session_id": "66327e25-a28f-4a98-b0c7-24a6bc420f4e",
+  "usage": null,
+  "provider_error": false,
+  "terminal_subtype": null,
+  "tools_actual": [
+    "Read",
+    "Grep",
+    "Glob"
+  ],
+  "actual_route_verified": true,
+  "candidate_hashes_unchanged": true,
+  "status": "blocked-provider",
+  "terminal_message": "",
+  "finished_utc": "2026-10-28T11:09:34.972574+00:00",
+  "elapsed_seconds": 56.897,
+  "transport_events_sha256": "daf6caef9d373b36880f8089e0d28a2e64314d412f4acf4905725ef795882ee3",
+  "transport_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "read_ledger_sha256": "6bedf0de8716834450b678afa1856ec37bbdd4a9be1222ca8ae6f9ed1b6c68f5",
+  "coverage_verified": true
+}
