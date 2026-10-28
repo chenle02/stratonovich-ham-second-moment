@@ -923,3 +923,34 @@ review note, not yet integrated into the canonical TeX. Its mathematical
 review checkpoint is complete; manuscript integration/build and the full
 project completion contract remain outstanding. No canonical .tex/PDF changed
 during this turn.
+
+
+### Full-Riesz interpolation source gate
+
+The first static-only Jensen idea yielded only alpha+2alpha0<2; it is
+preserved as a preliminary candidate, not a no-go or the adopted target.
+A sharper two-input Holder argument interpolates whole positive diagram
+coefficients between degree1/time exponent b0 and static degree beta.
+Choose alpha0<theta<2-alpha, b0=alpha0/theta,
+beta=(alpha-theta)/(1-theta). Both time and factorial powers combine to
+the target values throughout the full Riesz existence range.
+
+Source gate: PROCEED to a bounded complete candidate, novelty UNVERIFIED.
+The pinned Chen-Hu publisher source(5.1),(5.15),pp2173/2180 directly
+supplies the needed static coefficient majorant; Theorem3.8(i),p2165,
+gives fixed-order spatial-smoothing limits, with the d3 convention at
+pp2152--2153. Exact source matrix/12rendered pages are retained in
+reviews/2026-10-28-static-holder/. Root also viewed pp2173/2165.
+
+The source audit supports a proof assignment, not theorem acceptance.
+Gaussian spatial Holder must use common widths. Temporal cutoffs are only
+dominated by raw powers; no cutoff logconvexity is assumed. Endpoint1 uses
+the uniform deterministic degree-one diagram estimate; static endpoint2
+passes to fixed-order limits before applying its coefficient bound.
+Four rational parameter controls include cases outside the first smaller
+wedge; finite pairing/split identities were checked through total order8.
+All remain diagnostics, not replacements for the all-order proof/review.
+
+General anisotropic covariance factorization and sharp constants remain open.
+The new route would establish full isotropic Riesz coverage, not the full
+original homogeneous-covariance goal.
