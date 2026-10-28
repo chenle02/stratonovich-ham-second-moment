@@ -6,7 +6,7 @@
 
 ## Current state
 
-- **Phase:**56page notes. New Section10 energy-identification lemma and exact M_st/source-field consumers: all8PASS/high,full delivery,accepted scoped review. Expanded Section9 full moment argument remains all17PASS/medium,no required repairs,HIGH gate unmet. Earlier50page14PASS/medium and standalone plane/sum6PASS/high remain separate scopes. Arbitrary-covariance d3 and sharp goals stay open;source normalization awaits clarification. Accepted alpha<=1 baseline unchanged.
+- **Phase:**59page notes. New Section11 full-spatial-class static first-variance phase estimate: all7PASS/high,full delivery,no required repairs,accepted scoped review. Section10 energy lemma remains accepted8PASS/high. Expanded Section9 full moment argument remains all17PASS/medium,HIGH gate unmet. Arbitrary-covariance d3 and sharp goals stay open;source normalization awaits clarification. Accepted alpha<=1 moment baseline unchanged.
 - **Proved in this project:** the P:Jensen Cauchy--Schwarz reduction (§2; numeric L_* calibration conditional on the intended source bound); reviewed G0 P:mixed, L:white-test,
   L:crude-corrected and P:envelope (§3); G1 finite coefficients (§4); reviewed G2 target-scale bounds P:d1-upper/P:low-alpha-upper for alpha<=1 (§5). Full goal and formal verification remain incomplete.
 - **Open targets:** remaining G:upper range 1<alpha<2-alpha0 in d=2,3; G:sharp; requested private Lean verification (not yet created).
@@ -1741,3 +1741,37 @@ No source,packet,scope,confidence threshold or scientific finding changed.
 No native review was created;preflight receipt and workspace preserved.
 The same-shell guard prevented launching after failure. This is filename
 wording repair,not a mathematical review or confidence retry.
+
+
+### First-variance full-class phase estimates accepted at scoped HIGH gate
+
+Source8d8a43e,dispatchaa57b91held to collection. Opus5.5 high returned
+all7PASS/HIGH,261.185s,no fatal/major findings or required repairs,
+accepted=true,full8text/4image delivery. All5minor findings and AI/source
+access limitations adjudicated in phase-propagator/adjudication.md.
+Temporal alpha0<1 is explicitly in original E:cov outside the sliced
+H:homog;the static new statements do not depend on alpha0. Actual phase
+inner product clarified in adjudication. Raw78members incl refused
+preflight1 archived/hash verified;only own terminal raw copies removed.
+
+This accepts the two contractions and both complete first-variance terms
+for the FULL stated spatial class,not an all-order/static-block/colored-
+noise upper bound. Earlier full moment17PASS/MEDIUM remains unchanged.
+Final source change is review-status prose only;all39formal statements/
+33proofs compared byte-equal against the frozen review source.
+
+Next proposal in next-operator-route.md:Gaussian Fock chaos cutoff plus
+sandwiched form-variance bounds and a complex numerical-range/cosine-family
+estimate. All UNREVIEWED;real selfadjoint bounds alone do not justify
+Cauchy coefficient extraction or uniform weak-phase norms. Fine-block
+losses from changing norms are a separate still-open problem.
+
+Three helpful missing operator references enqueued per Le's standing
+instruction,verified published DOIs plus separate Papis/All.bib checks:
+Crouzeix2004parabola10.1007/s00013-004-0605-2;Crouzeix2007JFA
+10.1016/j.jfa.2006.10.013;Crouzeix-Palencia2017
+10.1137/17M1116672. Exact IDs in phase-propagator/reference-queue.json.
+No force/wake/restart or author contact. The third ticket ends-2 and must
+be matched EXACTLY,never by the common prefix. These are future-use
+references,not imported theorems or completed ingestion claims. Author
+Nacta.pdf fetch timed out;no unacquired full-text theorem is assumed.

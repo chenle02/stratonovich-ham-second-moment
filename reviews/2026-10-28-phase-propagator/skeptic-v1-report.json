@@ -1,0 +1,77 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    ".review/required-sources.json lines 1-51 (complete; the read plan, which earns no read credit itself)",
+    "phase.txt lines 1-245 (complete)",
+    "context.txt lines 1-20 (complete)",
+    "calibration.md lines 1-70 (complete)",
+    "checks.py lines 1-27 (complete; inspected, not executed)",
+    "checks.json lines 1-75 (complete; inspected, not treated as proof)",
+    "references.bbl lines 1-73 (complete)",
+    "source-map.txt lines 1-5 (complete)",
+    "reading-map.json lines 1-17 (complete)",
+    "chen-2023-01.png (full image: EJP 28 #119 p.1, generalized nonnegative-definite gamma, Bochner spectral convention gamma=int e^{i xi.x} mu)",
+    "chen-hu-2145.png (full image: AOP p.2145, model (1.1), covariance (1.2), spectral convention (1.3), gamma>=0, d=1,2,3)",
+    "chen-hu-2146.png (full image: AOP p.2146, Theorem 1.1, homogeneity (1.8), radial formula alpha*mu(B_1)*int rho^{alpha-1}/(1+rho^2), Dalang <=> alpha<2)",
+    "chen-hu-2149.png (full image: AOP p.2149, hat G=sin(|xi|t)/|xi|, G_3=sigma_t/(4 pi t), W_eps=int W p_eps(y-x), covariance gamma_{2eps})",
+    "Optional context not read: canonical.tex, canonical.pdf, paper-chen-2023.pdf, paper-chen-hu.pdf"
+  ],
+  "checks": [
+    {
+      "claim": "C1: Covariance, smoothing and types",
+      "verdict": "PASS",
+      "reason": "Homogeneity of the measure, Gamma(rA)=r^{3-alpha}Gamma(A), carries over through the Fourier transform to mu(rB)=r^alpha mu(B). I checked this against the Riesz case: |x|^{-alpha} has spectral density c|xi|^{alpha-3}, so mu(B_r) is proportional to r^alpha. With A={0}, homogeneity gives Gamma({0})=mu({0})=0, so neither measure has an origin atom. Applying homogeneity to spheres gives mu(S_r)=r^alpha mu(S_1), and since uncountably many disjoint spheres lie in a finite ball, mu(S_1)=0; the same holds for Gamma. So open and closed balls give the same V and M. W_eps(x)=W(p_eps(x-.)) has covariance p_eps*p_eps*Gamma=p_{2eps}*Gamma, matching Chen-Hu (2.8). Its spectral measure is e^{-eps|xi|^2}mu, because the unnormalized Fourier transform of p_{2eps} is e^{-eps|xi|^2}. Only nonnegativity, evenness, positive-definiteness and homogeneity are used, so plane covariances such as |x'|^{-beta}dx' tensor delta(x_3) with alpha=1+beta<2, and product covariances, remain allowed. The new bounds import no asymptotic theorem, quartic estimate or endpoint factorization; the sources fix conventions only."
+    },
+    {
+      "claim": "C2: Shifted resolvent bound and R_alpha",
+      "verdict": "PASS",
+      "reason": "In the convention Gamma=int e^{i xi.x}mu, Schwartz pairing with psi(x)=p_{2s}(x)e^{iq.x} gives int e^{-s|q+xi|^2}mu(dxi)=int p_{2s}(x)e^{iq.x}Gamma(dx), with no stray (2pi)^3 factor. I checked this with Gamma=delta: mu=(2pi)^{-3}dxi, and both sides equal (4 pi s)^{-3/2}. Evenness makes the right side int p_{2s}cos(q.x)dGamma, which is at most int p_{2s}dGamma because Gamma>=0. Multiplying by e^{-lambda^2 s} and applying Tonelli to the nonnegative integrands on both sides gives sup_q int mu/(lambda^2+|q+xi|^2) <= int mu/(lambda^2+|xi|^2). With dmu(B_r)=alpha V r^{alpha-1}dr and r=lambda t this equals alpha V lambda^{alpha-2} int_0^infty t^{alpha-1}/(1+t^2)dt = alpha V lambda^{alpha-2} pi/(2 sin(pi alpha/2)), so R_alpha is correct. This agrees with the Chen-Hu p.2146 display. The integral is finite exactly for 0<alpha<2; Gamma=0 gives V=0 trivially. No isotropy or spectral density is assumed."
+    },
+    {
+      "claim": "C3: Centered same-chain contraction and D_Gamma",
+      "verdict": "PASS",
+      "reason": "Gamma_eps is continuous and equals int e^{i xi.x}mu_eps pointwise. G_a and mu_eps are finite measures, the latter because mu(B_r)=V r^alpha, so Fubini gives T_eps(a,q)=int hat G_a(q+xi)mu_eps(dxi); the Fourier sign is immaterial because hat G_a is even. Gamma_eps G_a is a nonnegative finite measure, so |T_eps(a,q)| <= T_eps(a,0). This is a modulation bound, not a translated physical covariance maximum, so it does not conflict with the known failure of translated single-wave bounds for alpha>1. Since Gamma(B_r)=M r^{3-alpha} is continuous with no atom, int F dGamma = (3-alpha)M int F(r)r^{2-alpha}dr = c_Gamma int F|x|^{-alpha}dx with the ordinary sphere area 4 pi, so c_Gamma=(3-alpha)M/(4pi). G_a*p_{2eps} is radial and Schwartz, and since p_{2eps} is a probability density the Gaussian average is at most the supremum. Using G_a=sigma_a/(4 pi a) (mass a) and the shell formula int_{S_a}f(|z-y|)dsigma=(2 pi a/r) int_{|a-r|}^{a+r} f(rho)rho drho, I recover the displayed expression [(a+r)^{2-alpha}-|a-r|^{2-alpha}]/(2r(2-alpha)). Its limit as r->0 is a^{1-alpha}; at r=a it is (2a)^{1-alpha}/(2-alpha), finite; it decays as r->infinity. The region bounds hold: r<a/2 gives <=2^alpha a^{1-alpha} (this also covers z=0 directly); r>2a gives <=a^{1-alpha}; and on [a/2,2a], dropping the subtracted term and using 2r>=a gives <=3^{2-alpha}a^{1-alpha}/(2-alpha). So b_alpha, written as a sum rather than a max, is a valid bound for all 0<alpha<2."
+    },
+    {
+      "claim": "C4: First random phase bound (E:phase-born)",
+      "verdict": "PASS",
+      "reason": "hat w_0 = cos(sq)hat f + (sin(sq)/q)hat g. Writing hat g = sqrt(lambda^2+q^2)\u00b7[hat g/sqrt(lambda^2+q^2)], the coefficient vector has squared norm 1+lambda^2 sin^2(sq)/q^2 <= 1+lambda^2 s^2, as claimed. The output map v -> (G_tau*v, C_tau v) in the phase norm is exactly the whitened multiplier k_tau=(sin(tau r)/r, cos(tau r)/sqrt(lambda^2+r^2)). Its squared norm is (1+lambda^2 sin^2(tau r)/r^2)/(lambda^2+r^2), which is at most (1+lambda^2 h^2)/(lambda^2+r^2) for tau<=h. The Gaussian identity E[hat(W_eps w_s)(zeta) conj hat(W_eps w_s')(zeta)] = int mu_eps(dxi) hat w_s(zeta-xi) conj hat w_s'(zeta-xi) holds with no extra factor; I checked it with Gamma==1. Substituting zeta=eta+xi gives the displayed exact formula with a single (2pi)^{-3}. Cauchy-Schwarz in time gives h^2(1+lambda^2h^2)^2 e_lambda/(lambda^2+|eta+xi|^2). Then mu_eps<=mu, the shifted resolvent bound, and (2pi)^{-3} int e_lambda = N^2 give R_alpha h^2 lambda^{alpha-2}(1+lambda^2h^2)^2 N^2. The Fubini exchange is justified at fixed eps because |k_tau| <= sqrt(1+lambda^2h^2)/lambda, E||W_eps w||^2 = Gamma_eps(0)||w||^2, |Gamma_eps| <= Gamma_eps(0), and mu_eps is finite. The multipliers cos(s|xi|) and sin(s|xi|)/|xi| are entire in |xi|^2, so w_0(s) stays Schwartz."
+    },
+    {
+      "claim": "C5: Second-order mean, free energy and complete sigma^2 coefficient",
+      "verdict": "PASS",
+      "reason": "E[W_eps(x)(G_{s-r}*(W_eps w_0(r)))(x)] = int G_{s-r}(dy)Gamma_eps(y)w_0(r,x-y), which is convolution with Gamma_eps G_{s-r}. The width is correct and nothing is missing. Its multiplier is T_eps(s-r,\u00b1eta), so its L^2 norm is at most D_Gamma(s-r)^{1-alpha}. The output norm is at most sqrt(1+lambda^2h^2)/lambda, and ||w_0(r)||_2 <= sqrt(1+lambda^2h^2)N. With int_0^h int_0^s (s-r)^{1-alpha} = h^{3-alpha}/((2-alpha)(3-alpha)), which is integrable for alpha<2, this gives (E:phase-mean). For the free energy, d/dt[||w||^2+||A^{-1/2}w'||^2] = 2Re<w',w> + 2Re<A^{-1}w', -Aw+lambda^2 w> = 2lambda^2 Re<A^{-1}w',w>. Its absolute value is at most 2lambda||A^{-1/2}w'|| ||w|| <= lambda E, so Gronwall gives e^{lambda h/2}N, using w'(0)=g. Because Z_0 is deterministic and E Z_1=0, the sigma^2 coefficient of the finite polynomial is exactly E||Z_1||^2 + 2Re<Z_0,E Z_2>_lambda; the polynomial is finite by fourth moments, using E X^2Y^2 = EX^2EY^2+2(EXY)^2 <= 3Gamma_eps(0)^2. At lambda=1/h: 4R_alpha h^{4-alpha}N^2 + 2\u00b7sqrt(e)N\u00b72D_Gamma h^{4-alpha}N/((2-alpha)(3-alpha)), which matches (E:phase-variance). All constants are independent of eps. Nothing is asserted about the full static solution or all-order convergence."
+    },
+    {
+      "claim": "C6: Falsification arithmetic and next-use arithmetic",
+      "verdict": "PASS",
+      "reason": "For y''=zy at unit time, M(z)=[[cosh sqrt z, sinh sqrt z/sqrt z],[sqrt z sinh sqrt z, cosh sqrt z]], and the series give the stated M0, M1 and M2. By hand: M1^T M1 = [[5/4,7/12],[7/12,5/18]] and M0^T M2 = [[1/24,1/120],[5/24,1/20]]. So K=[[4/3,4/5],[4/5,17/45]], and (1,-2)K(1,-2)^T = 60/45-144/45+68/45 = -16/45. The calibration's Taylor justification is sound: M is entire with growth exp(C sqrt|z|), the derivatives are Gaussian-integrable, odd moments vanish, and |x|^2=5. This is an alpha=0 toy outside the theorem and is consistent with the proposition bounding |K| rather than K. In checks.py the r=0 sample correctly uses the limit a^{1-alpha}=1; the alpha=1.9 quadrature differs from the exact value by about 3.7e-6 relative, within its stated loose 1e-4 tolerance; and every sampled wave value is below b_alpha. For the block sums with h_j=2^{-j}/lambda and a_j=h_j^{-alpha0}: (T/h_j)a_j h_j^2 lambda^{alpha-2} = T lambda^{alpha-2}h_j^{1-alpha0}, and (T/h_j)a_j h_j^{3-alpha}/lambda = T h_j^{2-alpha-alpha0}/lambda. Both sums are geometric with positive exponents when alpha0<1 and alpha+alpha0<2, and each totals C T lambda^{alpha+alpha0-3}. They are explicitly only sums of individual bounds."
+    },
+    {
+      "claim": "C7: Whole claim, dependency direction and research scope",
+      "verdict": "PASS",
+      "reason": "The dependencies run one way: Lemma (E:phase-resolvent) feeds (E:phase-born), Lemma (E:phase-trace) feeds (E:phase-mean), and both, together with the free-energy bound, feed (E:phase-variance). There is no circularity. The quantifiers are explicit: all lambda>0, q, a, eps>0, h>0 and real Schwartz data; uniformity in eps comes through mu_eps<=mu and the \u03b5-independent constants. The variance coefficient is bounded in absolute value, so either sign is allowed, and the scope paragraph explicitly does not inherit covariance monotonicity. The closing scope paragraph correctly disclaims higher contractions, independent-block products, overlapping levels and the temporal limit, and says Goal G:upper is not established. I found no integrability, operator-domain, phase-norm, Fourier-factor or quantifier defect."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "The fixed-eps Fubini/Bochner justification at phase.txt lines 158-164 is terse. It silently uses a jointly measurable (continuous) version of W_eps, which exists since Gamma_eps is smooth. It also uses the bounds |k_tau| <= sqrt(1+lambda^2h^2)/lambda and |Gamma_eps| <= Gamma_eps(0) needed to exchange E with the dzeta ds ds' integrals. Spelling out one line would help; the argument is correct as is.",
+      "b_alpha is a sum of the region bounds where a max would suffice. This is valid, just not sharp, and no sharpness is claimed.",
+      "The phrase 'These bounds also cover the endpoints by continuity' (phase.txt lines 100-101) is redundant. r=a/2 and r=2a already lie in the closed middle range, and r=0 is covered directly by the distance argument. The displayed formula, stated for r>0, is not needed at r=0.",
+      "In calibration.md the condition alpha0<1 for the first block series is not implied by the H:homog threshold alpha0+alpha<2 shown in context.txt; for example alpha=0.5 and alpha0=1.2 satisfy the threshold. The statement that this is 'exactly the original integrability range' therefore relies on a temporal hypothesis 0<=alpha0<1 that is not displayed in the packet. It concerns only heuristic next-use arithmetic, not the proved statements.",
+      "The proposition writes <.,.>_lambda without defining it explicitly. It is the inner product inducing (E:phase-norm), which is the only reading under which the Cauchy-Schwarz step holds."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is an AI review: I recomputed every constant and step by hand, but it is not human verification, a novelty audit or a Lean check.",
+    "I inspected checks.py and checks.json but did not execute them; their numbers were only compared with my hand values (sample Riesz values at alpha=1, 1.5, 1.9 and the resolvent closed form).",
+    "I did not read the optional canonical.tex, canonical.pdf or pinned source PDFs. The surrounding manuscript's temporal hypothesis on alpha0 and the definition of Goal G:upper were therefore not checked beyond the context.txt slice.",
+    "Byte provenance (the section SHA-256 and source revision aa57b91374b2a450bea8d842f45f0597ef7fba68) was not independently verified; scientific confidence concerns only the mathematical content as delivered.",
+    "Gold-standard self-check: this is a correctness review of one new first-variance-order section only. The verdict does not certify the full HAM moment goal, higher-order or block-composition estimates, the temporal limit, sharp constants, novelty or venue suitability."
+  ]
+}

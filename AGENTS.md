@@ -86,6 +86,11 @@ All.bib -> ../refdb/All.bib (read-only), extra.bib (local additions)
   case (small n, p = 2 chaos order 2 or 4, d = 1, α = 1) and record the test.
 - Record every failed route in Progress.md with the reason (a no-go is a
   result).
+- For a time-block approach, carry displacement AND velocity. Scalar
+  solution-value moments do not multiply across blocks. Section11 controls
+  both terms of the static first-variance phase coefficient;its second-order
+  mean term cannot be dropped,and arbitrary-phase covariance monotonicity
+  is unavailable. This is a full-spatial-class tool,not an all-order bound.
 
 [held back: collaborators' unpublished work]
 
