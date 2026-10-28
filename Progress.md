@@ -1389,3 +1389,11 @@ It is not yet published. The mandatory queue's automatic Telegram receipt
 conflicts with the project's no-messages-without-instruction boundary; no
 queue/notification was triggered. Source and primary-review statuses remain
 explicit,with no mathematical candidate promotion or intended source correction.
+
+Lean L0planning ledger refreshed at the new proof seams. G0 readiness no
+longer masquerades as the next creation gate: explicit decision point4 remains
+required. ROADMAP names actual product/plane/finite-sum/rational-certificate/
+exponent arithmetic and exclusions. Machine state stays L0/PROPOSED,no jobs,
+no candidate,closed wave or companion. No Lean command,registry write or
+package creation was performed. Wiki proposal is now committed at3b99657;
+permission for its required automatic queue notification is pending.

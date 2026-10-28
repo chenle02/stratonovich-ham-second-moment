@@ -10,8 +10,10 @@
 - **Companion package:** not yet created. Planned name
   `stratonovich-ham-second-moment-lean` (private, registered through
   `lean-pkg register` only after `lean-pkg search` finds no reusable package).
-- **Next:** wave L1 opens only after math Round 1 (Gate G0) has a written,
-  reviewed statement worth formalizing.
+- **Next execution gate:** explicit approval at PROJECT-GOAL.md decision point 4
+  before companion creation. G0 and the alpha<=1 proof now have reviewed
+  statements; that mathematical readiness does not authorize creating a repo.
+  No L1 wave, lease, code, local build or cluster job has been opened.
 
 ## Planned waves (strategy in ROADMAP.md)
 
@@ -26,3 +28,23 @@
 | Wave | State | Date | Evidence |
 |---|---|---|---|
 | L0 | PROPOSED | 2026-10-26 | Setup by session #4; no Lean code yet |
+| L0 | PROPOSED | 2026-10-28 | Readiness/strategy refresh after source and plane-endpoint reviews; creation approval still pending, no package or Lean verification |
+
+## New proof seams retained for later statement fences
+
+See ROADMAP.md for exact proposed roles and analytic exclusions. These are
+planning items, not opened Lean claims:
+
+- Section9 product-endpoint interval algebra and affine coefficient exponents
+  (the full moment review remains all14PASS/medium, below HIGH).
+- The accepted plane-endpoint parameter algebra and finite positive-sum
+  comparison, with covariance/Holder inputs explicit.
+- The exact rational separation used by the independently checked source
+  normalization audit, with its functional bounds as named hypotheses.
+- Static p2 factor-two algebra, keeping the imported coefficient rate and
+  its time-independent order threshold outside a pure arithmetic claim.
+
+The existing creation proposal and initial G0 statement fence are unchanged.
+Before execution, renew registry/Mathlib reuse searches and compatible release
+pins, then use a private registered package and lease after approval. This
+ledger update is not a workaround for the creation gate.
