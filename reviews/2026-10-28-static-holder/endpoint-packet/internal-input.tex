@@ -1,0 +1,95 @@
+% Exact standing assumptions and accepted degree-one lemma extracted from canonical source c21b9e69.
+\section{Model and standing assumptions}\label{S:model}
+
+We study the hyperbolic Anderson model
+\cite{chen:author2026:time-dependency}*{(1.1)}
+\begin{equation}\label{E:HAM}
+  \frac{\partial^2 u}{\partial t^2}(t,x)=\Delta u(t,x)+\W(t,x)u(t,x),
+  \qquad u(0,x)=1,\quad \frac{\partial u}{\partial t}(0,x)=0,
+\end{equation}
+for $(t,x)\in\R_+\times\R^d$, $d\in\{1,2,3\}$, interpreted in the
+Stratonovich sense (limit of classical wave equations driven by smoothed
+noises $\W_{\epsilon,\delta}$). The noise is centered Gaussian with
+\begin{equation}\label{E:cov}
+  \operatorname{Cov}\big(\W(s,x),\W(t,y)\big)=|s-t|^{-\alpha_0}\gamma(x-y),
+  \qquad 0<\alpha_0<1,
+\end{equation}
+where $\gamma\ge0$ is nonnegative definite with spectral measure $\mu$.
+
+\begin{hypothesis}[Homogeneity]\label{H:homog}
+  $\gamma(cx)=c^{-\alpha}\gamma(x)$ for $c>0$, and
+  \begin{equation}\label{E:threshold}
+    \alpha_0+\alpha<2,
+  \end{equation}
+  with $0<\alpha<d$, or $\alpha=d=1$ (spatial white noise).
+\end{hypothesis}
+
+Throughout we write
+\begin{equation}\label{E:kappa}
+  \kappa:=\frac{4-\alpha-\alpha_0}{3-\alpha}\in(1,2).
+\end{equation}
+
+
+\begin{lemma}[Degree-one convolution bound]\label{L:alpha-one-convolution}
+  Under the preceding covariance assumptions with $\alpha=1$, for
+  every $h>0$, $\epsilon>0$, $\eta\ge0$, and $z\in\R^d$,
+  \begin{equation}\label{E:alpha-one-convolution}
+    0\le\int_{\R^d}G_{h,\eta}(\ud y)\gamma_\epsilon(y+z)
+    \le\frac{\pi V}{2}.
+  \end{equation}
+  No isotropy or angular density is required.
+\end{lemma}
+
+\begin{proof}
+  Fourier uniqueness, applied to the distributional homogeneity as
+  above, gives $\mu(cA)=c\mu(A)$ and $\mu(\{0\})=0$.
+  Define a finite measure on the unit sphere by
+  \[
+    \sigma(E)=\mu\{\xi:0<|\xi|\le1,\ \xi/|\xi|\in E\}.
+  \]
+  Its total mass is $V$. Homogeneity implies that the corresponding
+  sector of radius $R$ has mass $R\sigma(E)$. Subtracting two such
+  sectors shows that a polar rectangle $(r_1,r_2]\times E$ has mass
+  $(r_2-r_1)\sigma(E)$. Uniqueness of measures on these generating
+  rectangles therefore gives the polar decomposition
+  $\mu(\ud\xi)=\ud r\,\sigma(\ud\theta)$, $r>0$,
+  $\theta\in\mathbb S^{d-1}$. The real stationary covariance is
+  even; Fourier uniqueness makes $\mu$, and hence $\sigma$, even.
+
+  Use the Brownian Gaussian convention, so the combined covariance
+  and Green smoothing multiplier is $e^{-ar^2}$ with
+  $a=(\epsilon+\eta)/2>0$. Gaussian weighting makes the spectral
+  measure finite. Fourier Fubini and evenness give
+  \begin{equation}\label{E:alpha-one-polar}
+    \begin{split}
+      \int G_{h,\eta}(\ud y)\gamma_\epsilon(y+z)
+      &=\int_{\mathbb S^{d-1}} I_a(h,\theta\cdot z)\sigma(\ud\theta),\\
+      I_a(h,v)&=\int_0^\infty e^{-ar^2}
+      \frac{\sin(hr)}r\cos(rv)\ud r.
+    \end{split}
+  \end{equation}
+  The radial integral is absolutely convergent: its integrand is
+  bounded near zero and Gaussian-decaying at infinity. Passing from
+  the complex exponential to cosine introduces no factor two, since
+  both antipodal directions are already included in $\sigma$.
+
+  Let $g_h(v)=\tfrac12\mathbf1_{\{|v|<h\}}$ and let
+  $p_{2a}^{(1)}(v)=(4\pi a)^{-1/2}e^{-v^2/(4a)}$ be the
+  one-dimensional Gaussian density. Their Fourier transforms are
+  $\sin(hr)/r$ and $e^{-ar^2}$. The one-dimensional inversion factor
+  is $1/(2\pi)$ in the source convention, so
+  \[
+    (g_h*p_{2a}^{(1)})(v)
+    =\frac1{2\pi}\int_\R e^{irv}e^{-ar^2}
+    \frac{\sin(hr)}r\ud r
+    =\frac1\pi I_a(h,v).
+  \]
+  The sign in the inversion exponential is immaterial because the
+  integrand pairs evenly under $r\mapsto-r$. Since $p_{2a}^{(1)}$
+  has mass one and $0\le g_h\le1/2$, we obtain
+  $0\le I_a(h,v)\le\pi/2$. Integrating against $\sigma$, whose mass
+  is $V$, proves~\eqref{E:alpha-one-convolution}. This retains the
+  oscillation until the one-dimensional integral is evaluated; the
+  divergent absolute Fourier envelope at $\alpha=1$ is not used.
+  This proves Lemma~\ref{L:alpha-one-convolution}.
+\end{proof}

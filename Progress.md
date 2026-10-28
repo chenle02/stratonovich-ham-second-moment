@@ -1014,3 +1014,29 @@ homogeneous-covariance goal: radial reweighting to degree1, represented as
 an even mixture of line measures in d2, and radial Riesz multiplication for
 the static endpoint. This is not yet an accepted lemma or moment extension.
 The same construction is NOT presumed valid in d3.
+
+
+### General planar covariance endpoint candidate and d3 guard
+
+The source/statement screen survives for d2. For the original positive
+homogeneous covariance measure Gamma of degree alpha>1, radial weights
+produce Gamma_low=|x|^(alpha-1)Gamma and
+Gamma_st=|x|^(alpha-beta)Gamma. The planar low endpoint is a HALF-mixture
+of full line Lebesgue measures with finite even physical angular measure;
+its positive definiteness and direct wave convolution bound are written out.
+The static endpoint is positive definite by an absolutely justified Gaussian
+mixture. Holder uses the original Gaussian-weighted Gamma measure; no
+fractional powers of a singular distribution occur. This is a new covariance
+construction, not a confidence retry of the Riesz proof.
+
+An explicit d3 guard shows radial lowering can destroy positive definiteness:
+gamma=|x1|^(-9/10)|x2|^(-3/5), independent x3; its lowered F has fixed
+Gaussian convolution growing like sqrt(L) along(0,0,L), impossible for a
+smoothed covariance. A sphere/Fatou cross-check is also retained. This is
+only a route obstruction, not a moment-growth counterexample.
+
+The finite static variational input is now explicitly source-bound to
+Chen2023 Theorem1.1, p2, as cited by Chen-Hu p2175. No sharp value used.
+A fresh native Opus C1--C10 review is assigned to the frozen endpoint, d3
+guard and source-finiteness packet. No planar moment theorem or endpoint
+acceptance is claimed before that report.
