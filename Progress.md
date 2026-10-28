@@ -1225,3 +1225,15 @@ dispatch; a successful Read can transform bytes and earns no exact credit.
 Preserve failure, isolate a small carrier/legibility probe, then repair inputs
 with a new immutable packet. No verified image-size remedy is claimed yet.
 Canonical skill updates are being prepared separately; no system hook changes.
+
+Image carrier calibration completed on the same effective CLI2.1.304/account.
+Both1120x870lossless definition crop and773x1000full-page PNG returned exact
+bytes; accepted=true,coverage_verified=true,22.193s. Reviewer read printed
+penalties1 and1/2. This is a carrier/legibility check, NOT a theorem audit or
+another independent scientific vote. Original coverage failure remains.
+
+Successor packet-v2 retains the same mathematical probe, current pinned PDF,
+and high-confidence threshold. It adds executed exact controls and a derivation
+map for12required images(four smaller full pages,eight exact pixel crops).
+Source/goal/manuscript unchanged. Purpose: repair actual source-image delivery,
+not seek a higher confidence(the first scientific report was already high).
