@@ -1,0 +1,89 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    ".review/required-sources.json lines 1-57 (whole file; read plan only)",
+    "new.txt lines 1-472 (complete)",
+    "context.txt lines 1-256 (complete: macros, Lemma L:phase-contractions with proof, Proposition P:static-phase-variance with proof, closing paragraph)",
+    "calibration.md lines 1-59 (complete)",
+    "checks.py lines 1-67 (complete; read by hand, not executed)",
+    "checks.json lines 1-87 (complete)",
+    "references.bbl lines 1-83 (complete)",
+    "source-map.txt lines 1-5 (complete)",
+    "reading-map.json lines 1-19 (complete)",
+    "cp-01.png (full image: CP arXiv 1702.00668v1 p.1, inequalities (1)-(3))",
+    "cp-05.png (full image: p.5, Remarks 4-5, Section 3, Theorem 6 and start of proof)",
+    "cp-06.png (full image: p.6, end of Theorem 6 proof, Corollary 7, Remarks 8-10)",
+    "chen-2023-01.png (full image: EJP 28 #119 p.1, nonnegative-definite generalized covariance, spectral convention gamma=int e^{i xi x} mu)",
+    "chen-hu-2149.png (full image: AOP 2025 p.2149, (2.4)-(2.9), W_eps covariance gamma_{2eps})",
+    "Optional files not read: canonical.tex, canonical.pdf, crouzeix-palencia-v1.pdf, paper-chen-2023.pdf, paper-chen-hu.pdf"
+  ],
+  "checks": [
+    {
+      "claim": "C1: Source fidelity of the Crouzeix-Palencia input and the convention sources",
+      "verdict": "PASS",
+      "reason": "cp-01 shows that (1) is stated for a bounded linear operator on a complex Hilbert space. It also shows (3), ||f(A)|| <= (1+sqrt2) sup_{W(A)}|f|, obtained from (2) through smooth convex domains Omega_n that contain closure W(A) and converge to it. Such Omega_n lie inside any neighborhood of the compact set closure W(A) for large n, so holomorphy on a neighborhood is the right hypothesis. cp-05 and cp-06 show Theorem 6 (C_Omega <= 1+sqrt2) with H complex and A in B(H), stated on p.5 and proved through p.6. The bbl entry pins arXiv v1 numbering and is kept separate from the journal DOI. Every application is bounded: A_0=-Delta on the band S_b tensored with the identity on Hermite degrees <= N has norm <= b^2. B_{N,m,b} is bounded because a finite sum of g_i M_{e_i} compressed to degree <= N is bounded. C_h and G_h are entire. sqrt(w+lambda^2) is principal on Re(w+lambda^2)>0, and closure W(L) lies in Re(w+lambda^2) >= 3lambda^2/4, so an open neighborhood exists. No finite-matrix-only or unbounded extension is imported. Chen 2023 p.1 matches gamma = int e^{i xi.x} mu(d xi). Chen-Hu (2.7)-(2.8) gives covariance gamma_{2eps} = gamma*p_{2eps}, which matches Gamma_eps = p_{2eps}*Gamma and mu_eps = e^{-eps|xi|^2}mu."
+    },
+    {
+      "claim": "C2: Complex root estimate, resolvent factorization, root integral, I_a/delta_a, <=1/6 and the four weighted comparisons",
+      "verdict": "PASS",
+      "reason": "Factorization: L_lambda + t = A_kappa - zB = A_kappa^{1/2}(1 - zK_kappa)A_kappa^{1/2}. The bound ||zK_kappa|| <= delta(lambda/kappa)^{2-a} <= delta holds because kappa >= lambda and a-2 < 0. Recomputed integrand: (L_lambda+t)^{-1} - A_kappa^{-1} = (L_lambda+t)^{-1} zB A_kappa^{-1}, so A_lambda^{1/2} times the difference equals A_lambda^{1/2}A_kappa^{-1/2}(1-zK_kappa)^{-1} zK_kappa A_kappa^{-1/2}. Its norm is <= |z| d kappa^{a-3}/(1-delta). Substituting t = lambda^2 s gives int t^{-1/2} kappa^{a-3} dt = lambda^{a-2} I_a, with I_a = B(1/2, 1-a/2) finite because the tail exponent is (a-4)/2 < -1. Then ||Q_z - 1|| <= delta I_a/(pi(1-delta)) <= (1/8)(4/3) = 1/6. Norm convergence holds because ||(L_lambda+t)^{-1}|| <= 1/(t+(1-delta)lambda^2). This gives ||Q_z|| <= 7/6 and ||Q_z^{-1}|| = ||L_lambda^{1/2}A_lambda^{-1/2}|| <= 6/5. Applying the argument to L* = A_0 - conj(z)B (B selfadjoint) and taking adjoints term by term in the real-weighted resolvent integral gives L_lambda^{-1/2}A_lambda^{1/2} and A_lambda^{-1/2}L_lambda^{1/2}. No Kato domain theorem is used. checks.json delta values (0.15672 at a=0.6, 0.13346 at a=0.9) agree with pi/(8B(1/2,1-a/2))."
+    },
+    {
+      "claim": "C3: Numerical range, scalar bounds, CP application and all four weighted phase blocks give 100 e^{2 lambda h}",
+      "verdict": "PASS",
+      "reason": "Choosing rho = s gives |<Bu,u>| <= d s^{a-2}(2s^2) = 2ds^a, and s = 0 follows by letting rho -> 0. The y-bound |y| <= 2 delta lambda^{2-a} s^a follows. The x-bound x+lambda^2 >= (1-delta)(s^2+lambda^2) follows from the rho = lambda real-part estimate, not from rho = s (see minor note). Weighted AM-GM gives s^{2a}lambda^{2-2a} <= s^2+lambda^2, hence y^2 <= 4delta^2/(1-delta) lambda^2(x+lambda^2) <= lambda^2(x+lambda^2)/3. Then (x+2lambda^2)^2 - |w|^2 >= (11/3)lambda^2(x+lambda^2) >= 0, and Im(sqrt w)^2 = (|w|-x)/2 <= lambda^2 for either root. Scalar bounds: |cos(h sqrt w)| <= cosh(lambda h). sin(zeta)/zeta = int_0^1 cos(t zeta)dt gives |G_h| <= h e^{lambda h}. F_h: for |w| <= lambda^2/2 the bound is sqrt(3/2) lambda h e^{lambda h}; otherwise sqrt3 e^{lambda h}. H_h: |H_h| = sqrt(|w|/|w+lambda^2|)|sin| <= sqrt(7/3) e^{lambda h}. Since 1+sqrt2 <= 3, CP gives operator bounds 3, 6(1+lambda h) and 6 (times e^{lambda h}). Conjugating by J = diag(1, A_lambda^{-1/2}) gives [[C, G A^{1/2}], [-A^{-1/2}LG, A^{-1/2}CA^{1/2}]], which equals the four displayed blocks. Block norms are 3, 12(1+lambda h), 12 and 12; the sum 39+12lambda h <= 39(1+lambda h)e^{lambda h} <= 100e^{lambda h}. The constant depends only on delta <= 1/4, uniformly in dimension, ||A_0|| and ||B||. The matrix entries cos(h sqrt L), G_h(L) and L G_h(L) are power series in L = A_0 - zB and hence entire in z. Branch formulas are used only for bounds."
+    },
+    {
+      "claim": "C4: Gaussian-Fock sandwich with single (2pi)^{-3}, compression, Hermite creation/annihilation and the uniform 2sqrt(N+1) factor",
+      "verdict": "PASS",
+      "reason": "Write phi = A_rho^{-1/2}f. Recomputed E|FT(W_eps phi)(eta)|^2 = int mu_eps(d xi)|phi^(eta - xi)|^2. Unnormalized Plancherel then gives exactly one (2pi)^{-3}, and the shift eta -> eta + xi gives J_{rho,eps}. Lemma 11.1 (proved in context.txt for the full nonnegative, even, positive-definite, homogeneous Radon class through Gaussian Fourier pairing, with no angular density), together with mu_eps <= mu, gives J <= R_alpha rho^{alpha-2}. This yields sum_i H_i^2 <= R_alpha rho^{alpha-4}. Compression: <S H S H S u,u> = ||S H S u||^2 <= ||H S u||^2. The normalized Hermite relation x h_n = sqrt(n+1)h_{n+1} + sqrt(n)h_{n-1} is correct. For the row operator R, RR* = sum a_i^* a_i <= number operator = k+1 on degree k+1, so ||R|| <= sqrt(k+1). Composed with the column of K_i = S_b H_i S_b, the creation part from degree k has norm <= sqrt(k+1) sigma. Outputs land in distinct degrees, so the norm is the max over k <= N-1, i.e. <= sqrt(N) sigma. The annihilation part is the exact adjoint because the K_i are selfadjoint. The total 2sqrt(N) sigma <= d_N rho^{alpha/2-2} holds uniformly in eps, m and b. The bound uses R_alpha only, with no uniform bound on the unsandwiched field."
+    },
+    {
+      "claim": "C5: Cauchy at finite cutoffs, N = n vacuum identification, lambda = n/h, norm comparisons and the factorial constant A_alpha",
+      "verdict": "PASS",
+      "reason": "The Dyson coefficient of z^n in M_z(h) applied to 1 x S_b(f,g) is the cutoff Duhamel word with + sign, matching u'' = Delta u + zBu and (E:phase-duhamel). Before the j-th insertion (j <= n) the degree is <= j-1, and after it the degree is <= j <= N = n, so both P_N projections act as the identity. Every self-contraction (annihilation) is kept, and N = n-1 would cut off the top degree. Cauchy on radius delta lambda^{2-alpha/2}/d_n gives the displayed coefficient bound. Norm comparisons: A_{n/h} <= n^2 A_{1/h} gives ||z||_{1/h} <= n||z||_{n/h}, and A_{n/h} >= A_{1/h} gives the reverse comparison for the data. d_n <= 2sqrt(2n)sqrt(R). The n-exponents combine as 1/2 - (2-alpha/2) = -(3-alpha)/2; the h-exponent is (4-alpha)n/2; and e^{2n} = (e^2)^n. Then 100n <= 200^n and n! <= n^n give A_alpha = 400sqrt2 e^2/delta_{alpha/2}. The case R_alpha = 0 is covered: V = 0 forces mu = 0, Gamma = 0 and W_eps = 0, which avoids the d > 0 hypothesis of the lemma."
+    },
+    {
+      "claim": "C6: Removal of the spatial band and Gaussian truncation at fixed eps",
+      "verdict": "PASS",
+      "reason": "Pointwise in x, sum_{i<=m} e_i(x)^2 <= v_eps gives a multiplication norm <= 2sqrt(N+1)sqrt(v_eps) on degree <= N, uniformly in m. The insertion (u,v) -> (0, W u) then has X_lambda norm <= that constant divided by lambda. The free evolution bound is e^{lambda h/2}. S_b commutes with the free flow and S_b -> I strongly, so integrands converge strongly with uniform domination. For F depending on g_1..g_K with K <= m, the annihilation tail vanishes and the creation tail norm^2 equals int sum_{i>m} e_i^2 ||F(x)||^2 dx -> 0 by dominated convergence (independence gives exact equality). Density plus uniform bounds extend this to all vectors in the degree levels. The bound survives because norms converge. No eps -> 0 phase limit is asserted."
+    },
+    {
+      "claim": "C7: Absolute L2 phase convergence and Mittag-Leffler-type bound for beta in (1/2, 3/2)",
+      "verdict": "PASS",
+      "reason": "For beta >= 1: sum a_n^beta <= (sum a_n)^beta = e^{beta x^{1/beta}} <= e^{3x^{1/beta}}. For beta < 1, H\u00f6lder with p = 1/beta and q = 1/(1-beta) applies to a_n = (2x^{1/beta})^n/n! and b_n = 2^{-beta n/(1-beta)}. The product a_n^beta b_n^{1-beta} = x^n/(n!)^beta, (sum a_n)^beta <= e^{2x^{1/beta}}, and sum b_n <= 2 because beta/(1-beta) >= 1 exactly when beta >= 1/2. The n = 0 term is ||Z_0(h)||_{1/h} <= e^{1/2}||(f,g)||_{1/h} by the Section 11 Gronwall estimate. The total is <= (sqrt e + 2)e^{3x^{1/beta}}. Squaring with x^{2/(3-alpha)} = A^{2/(3-alpha)}(sigma^2 R)^{1/(3-alpha)}h^{(4-alpha)/(3-alpha)} gives (E:all-static-phase-sum). The coefficients are ordinary Gaussian polynomials of degree <= n. No uniqueness, unsmoothed propagator or covariance monotonicity is used."
+    },
+    {
+      "claim": "C8: Small-block corollary, first coefficient, higher even orders, B_alpha, three exponents and the finite independent-block inequality",
+      "verdict": "PASS",
+      "reason": "||S_0(-h)||_lambda <= e^{lambda h/2}, because the Section 11 derivative is bounded in absolute value. With lambda h <= 1: e times (E:phase-born) gives 4eR h^2 lambda^{alpha-2}, and 2N sqrt e times (E:phase-mean) gives 4sqrt e D h^{3-alpha}/(lambda(2-alpha)(3-alpha)), matching L_alpha. The sigma^1 coefficient vanishes by parity. The comparison ||.||_lambda <= (lambda h)^{-1}||.||_{1/h} holds because A_{1/h} <= (lambda h)^{-2} A_lambda. Since binom(2k,r) <= binom(2k,k), r!s! >= (k!)^2. The r = 0 and s = 0 pairs are dominated using sqrt e <= e, (lambda h)^{-1} <= (lambda h)^{-2} and (2k)! >= (k!)^2. There are 2k+1 pairs, e(2k+1) <= (3e)^k, x = 3eA^2 sigma^2 R h^{4-alpha}, and sum_{k>=2} <= x^2 e^{gamma x^{1/gamma}} for gamma > 1. Exponents: 1-alpha_0 > 0, 2-alpha-alpha_0 > 0, and 2nu-3 > 1 with nu = 4-alpha-alpha_0 > 2. The exponential is monotone in h_j <= h_0. The bounded map X_lambda -> L2(Omega_j; X_lambda) with norm^2 <= e^{lambda h_j}(1+E_j), tensored with the identity on L2(Omega_past), gives the finite independent successive-block product. The statement explicitly excludes overlapping or repeated fields and makes no pathwise claim."
+    },
+    {
+      "claim": "C9: Adversarial whole-argument review, finite tests, calibration hypothesis and scope",
+      "verdict": "PASS",
+      "reason": "Calibration B_R test, recomputed: rho^{2-a} R^a/sqrt((rho^2+1)(rho^2+R^2)) is <= R^{a-1} for rho <= 1, <= (rho/R)^{1-a} <= 1 for 1 <= rho <= R, and <= (R/rho)^a <= 1 for rho >= R. So d = 1 holds for all rho. checks.py uses noncommuting H, compressed Fock matrices, the complex z = delta e^{i theta} with lambda = 1 and the correct velocity weights diag(1/sqrt2, 1/sqrt(1+R^2)). The vacuum test lifts the Dyson coefficient and confirms N = n against N = n+2, with refusal at N = n-1. These are finite diagnostics consistent with the proof, not proofs. No hidden commutation (only functions of L are commuted with L_lambda^{+-1/2}), domain (all bounded), Fourier (one (2pi)^{-3}), Hermite normalization, holomorphy or quantifier defect was found. The consumer scope is correct: static alpha_0 = 0 scale only. G:upper and the colored-time target are explicitly not concluded, and no sharp constant, novelty or human verification is claimed."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "L:complex-phase proof, integrand bound: 'the preceding estimate' (||A_kappa^{1/2}(L_lambda+t)^{-1}|| <= 1/((1-delta)kappa)) is not exactly the factor needed. The clean route is to write the integrand as A_lambda^{1/2}A_kappa^{-1/2}(1-zK_kappa)^{-1} zK_kappa A_kappa^{-1/2}. The stated bound |z| d kappa^{a-3}/(1-delta) is correct.",
+      "Numerical-range paragraph: 'Optimizing at rho = s ... we therefore have x+lambda^2 >= (1-delta)(s^2+lambda^2)' wrongly suggests that the x-bound comes from rho = s. With rho = s it would fail for small a (for example a = 0.1, s = lambda/2 gives 2 lambda^{2-a}s^a > s^2+lambda^2). The x-bound actually follows from the earlier rho = lambda real-part estimate, and the proof contains it, so this only needs a pointer.",
+      "Cutoff removal: identifying the strong limit of the truncated multiplications with the actual pointwise product W_eps F on all degree <= N vectors (closedness of multiplication, or L2_loc convergence of the partial sums) is implicit. It is standard and correct.",
+      "Notation collisions: N is a Hermite degree cutoff in L:fock-form and P:static-phase-all-orders but ||(f,g)||_lambda in the corollary; x is the real part of w, then the series variable, then the corollary variable; M denotes the physical mass, the propagator M_z and the block maps M_j.",
+      "The F_h split sentence's 'respectively' ordering is ambiguous. Both cases check: sqrt(3/2) lambda h e^{lambda h} for |w| <= lambda^2/2 and sqrt3 e^{lambda h} otherwise.",
+      "L:fock-form actually proves the sharper d_N = 2sqrt(N)sqrt(R_alpha). The stated 2sqrt(N+1) is harmless."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is an AI review, not human verification, a novelty audit or a Lean certification. All constants were recomputed by hand in this review; no code was executed, and checks.py/checks.json were inspected only.",
+    "cp-01.png ends at inequality (3) on p.1, so the exact wording of the function class for (3) on p.2 is not visible in the supplied images. The neighborhood-holomorphy hypothesis is inferred from the visible Omega_n construction and Theorem 6 (bounded A, complex H), which is consistent with the manuscript's use but not read verbatim.",
+    "Standard facts about the bounded Riesz-Dunford functional calculus were taken as background without separate source verification: multiplicativity, f(T)* = f~(T*), the principal inverse-square-root integral for spectrum in the right half-plane, and vector-valued Cauchy estimates.",
+    "Optional sources (canonical.tex/pdf, full CP/Chen/Chen-Hu PDFs) were not read. Downstream consumers outside the supplied Section 11 context, and byte provenance/SHA claims in calibration.md and source-map.txt, were not checked here; the task says the ledger checks provenance separately.",
+    "Gold-standard self-check (inside limitations as instructed): this is a single independent AI review pass with every required source read fully. It supports correctness of the regularized static all-order section with minor expository notes. It does not establish G:upper, the colored-time limit, sharp constants or novelty, and it is not human verification."
+  ]
+}

@@ -6,7 +6,7 @@
 
 ## Current state
 
-- **Phase:**65page notes. New Section12 all-order regularized static phase/interaction argument remains a CANDIDATE;first review failed terminally with DNS EAI_AGAIN before any scientific report. Fresh unchanged-packet transport recovery is being prepared. Section11first-variance scope remains7PASS/high and Section10energy8PASS/high. Full Section9colored-time moment candidate remains17PASS/medium,HIGH gate unmet. Original general upper and sharp goals stay open.
+- **Phase:**65page notes. Section12all regularized STATIC phase orders,interaction and independent successive-block bounds accepted9PASS/high,full delivery,no required repairs. Section11first-variance scope remains7PASS/high and Section10energy8PASS/high. The new overlapping-interval coefficient/full-upper candidate is UNREVIEWED,outside that report. Full Section9colored-time candidate remains17PASS/medium;original general upper and sharp goals stay open.
 - **Proved in this project:** the P:Jensen Cauchy--Schwarz reduction (§2; numeric L_* calibration conditional on the intended source bound); reviewed G0 P:mixed, L:white-test,
   L:crude-corrected and P:envelope (§3); G1 finite coefficients (§4); reviewed G2 target-scale bounds P:d1-upper/P:low-alpha-upper for alpha<=1 (§5). Full goal and formal verification remain incomplete.
 - **Open targets:** remaining G:upper range 1<alpha<2-alpha0 in d=2,3; G:sharp; requested private Lean verification (not yet created).
@@ -1874,3 +1874,58 @@ On breakthrough status: original full colored-time problem remains unsolved;
 static exponent is known. Candidate arbitrary-phase/all-order operator
 control is potentially useful,but neither correctness review nor novelty
 clearance is claimed from the failed provider attempt.
+
+### All regularized static orders and interaction bounds accepted HIGH
+
+Scientific sourceeb7d754,successful dispatchda197b3held to collection.
+Fresh Opus5.5/high returned9PASS/HIGH,472.302s,no fatal/major findings or
+required repairs,accepted=true,full8text/5image delivery. All6minor findings
+and source/AI-review limitations adjudicated in static-phase-all-orders/
+adjudication-v2.md. Failed DNS attempt is not a review or a second vote.
+Both failed57member and accepted60member native archives roundtrip/hash
+verified before removing only own terminal raw copies.
+
+Final main-source change is Section12review-status prose only;all43formal
+statements/37proofs compared byte-equal to frozen source. The new dyadic
+coefficient proposal is entirely outside that accepted scope. It uses a
+prospective local-degree color split,not an already-verified interleaving
+theorem. Its finite cube and first-inventory tests PASS but are not proofs.
+
+Le's breakthrough question was answered candidly:static exponent was known;
+the accepted contribution is arbitrary-phase/operator control. No complete
+colored-time proof or novelty claim has yet passed review. Original goal
+ACTIVE,unbounded;companion creation and sharp normalization remain separate.
+
+### Full-target overlap candidate and bounded literature recheck
+
+New complete internal candidate in dyadic-overlap/candidate.md and
+coefficient-proof.md proposes a uniform finite-interval phase coefficient
+bound,then adjacent dyadic covariance domination and fixed-order source
+transfer. This is UNREVIEWED and outside the accepted static report.
+Finite noncommuting disjoint/nested/overlapping interval cube tests PASS,
+with all9mixed-variance splits retained;refined first-order inventory sums
+are bounded while the crude squared norm-loss variant diverges. These
+are falsification diagnostics,not certification of the candidate.
+
+The static nine-check result is now accepted;all6minor findings adjudicated,
+and both failed57member/accepted60member native archives verified before raw
+cleanup. Final banner edit initially produced a literal backslash-n TeX
+error;fixed by direct patch and rebuilt. Current65page build is clean,
+all43formal statements/37proofs byte-equal to reviewed copy. File viewing
+was restored and the separate missing-DISPLAY issue explained to Le.
+
+Literature gate receipt in dyadic-overlap/literature-gate.md records REFRAME:
+bounded INTERNAL proof verification of unchanged G:upper,with novelty
+UNVERIFIED. Actual current-author online PDF still matches the pinned hash.
+Current source(2.24)p13andTh4.1p22checked for cutoff domination/fixed-order
+limits. Public-indexed MathSciNet/zbMATH web queries are not an authenticated
+citation-chain audit;that missing coverage is explicit. No publishability
+or new-theorem priority claim. No new useful missing reference identified
+beyond the seven already queued.
+
+Current residual is the simultaneous color coefficient/counting argument,
+not a claim that independent block products solve overlapping noise.
+The proof candidate uses local Gaussian degrees,one-copy means versus
+two-copy single appearances,and an inventory generating bound. It requires
+full adversarial validation before any G:upper promotion. Full goal remains
+ACTIVE and unchanged;Lean creation/sharp normalization remain separate.
