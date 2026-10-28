@@ -1100,3 +1100,28 @@ Original exact byte-preservation claims describe worker delivery, not the
 post-hook formatting. New v2 packets bind the rebuilt artifacts and exact
 plain-text reading ranges. Original preparation and worker evidence remain
 unchanged; committed-byte validation precedes both planned reviews.
+
+
+### Planar fresh replay returned; adversarial review live
+
+Fresh native Opus replay completed: all replay rows PASS/SOLID,
+PASS_WITH_NOTES/medium, complete required delivery verified, no fatal/major
+findings and no required repairs. The actual report/summary are preserved
+as planar-replay-report.json and planar-replay-summary.json. This is the
+periodic replay role, not a second skeptic vote or final cold read.
+The high-confidence acceptance threshold remains unmet by this replay.
+
+Minor findings: local Gamma/Euler Gamma,beta and B1 symbol overloads; some
+inherited definitions absent from the short context but checked in the full
+canonical source; distributional/a.e. qualification of homogeneity; redundant
+low-endpoint stochastic-admissibility observation; theta dependence in the
+existential corollary; historical OPEN row in the independent boundary note.
+None was a required repair. Source generalized-covariance scope was accepted
+as printed, with residual source-author/human-confirmation uncertainty retained.
+No contact with a source author is authorized or undertaken.
+
+The separately planned fresh adversarial Opus review is live at
+reviews/2026-10-28-static-holder/opus-planar-skeptic/, on the same verified
+e970d995cce35625e538188f0a006a6e06219c03 input. Current harness exec session
+94495 was polled and confirmed running. Re-poll this attempt; do not launch
+a duplicate on an observation timeout. No planar theorem promotion yet.
