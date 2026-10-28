@@ -1782,3 +1782,10 @@ Section11first-variance scope;canonical project-base bytes reread unchanged.
 No project publication/notification occurred. New operator-reference exact
 ID+DOI snapshot verifies all3pending requests,including the distinct-2
 sibling. No complete-ingestion claim. Full original goal stays ACTIVE.
+
+
+End-of-phase exact seven-reference snapshot retained in
+phase-propagator/reference-state-final.json:two Milman papers gold;Rubin,
+Frank and all three new Crouzeix papers remain pending. Exact ID+DOI
+matching used,including the distinct-2ticket. No service action or
+complete-ingestion claim for the five pending references.
