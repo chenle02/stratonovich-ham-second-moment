@@ -1176,3 +1176,31 @@ author p3--4 first-moment variational constants. It does not change the
 source/goal/manuscript. The new upper-scale proof imports current fixed-order
 existence and static coefficient facts, not that first-moment upper constant.
 The concern must be independently recomputed before any source-error claim.
+
+
+### Critical source-normalization concern: independent audit pending
+
+Root discovered a possible internal ordering conflict in the printed author
+first-moment variational definitions(1.11)--(1.13). Separate GPT recomputation
+tried to refute it and found the concern survives under the ordinary meaningful
+finite-energy variational interpretation. At d=alpha=1,gamma=delta0,
+alpha0=1/10, an abstract finitepositive1DSobolev ratio R gives
+E<=K^2 R^2/4 and E_star>=m^2 R^2/2, with K<11/9,m=549/560.
+The exact rational separation is positive; no disputed staticwhite constant
+is used. Both printed objectives are finitepositive on that interpretation.
+The same source map L is increasing, so literal lower/upper order would conflict.
+
+This is PRELIMINARY, not an adopted source correction or conjecture refutation.
+The printed Ad omits time-measurability/integrated finite-energy wording;
+that interpretation is explicit in the audit. Actual current author-linked PDF
+was fetched read-only and matches pinned SHA5f7385ca exactly. No stale-version
+swap, source-PDF/manuscript/goal edit or author contact. This argument does not
+use the separate unadopted(1.24)proposal.
+
+A different-family native Opus review is assigned PRIMARY FOCUS independent
+recomputation/refutation from raw source pages, not routine checklist approval.
+If verified, the literal sharp-target normalization needs PI/source disposition;
+no intended repair is inferred. Core new upper-scale proofs do not use the
+suspect first-moment upper constant. Their imported lower-bound calibrations
+remain source-dependent and should not be promoted while this audit is open.
+Evidence and frozen audit packet: reviews/2026-10-28-source-normalization/.
