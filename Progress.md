@@ -1397,3 +1397,44 @@ exponent arithmetic and exclusions. Machine state stays L0/PROPOSED,no jobs,
 no candidate,closed wave or companion. No Lean command,registry write or
 package creation was performed. Wiki proposal is now committed at3b99657;
 permission for its required automatic queue notification is pending.
+
+
+### Expanded Section9: integrated endpoints, linear closure, actual consumers
+
+Added L:plane-endpoints,L:endpoint-closure,C:three-finite-images with complete
+proofs. The new closure first derives comparison for arbitrary nondegenerate
+Gaussians by scalar Gaussian convolution and Holder; under invertible T,
+Sigma=epsilon*T^-1*T^-transpose and the common |detT|^-1 factors cancel.
+This changes the NOISE covariance only;the wave operator remains isotropic.
+It yields finite positive sums of invertible linear images of ordinary
+products,Riesz and plane measures,with actual transformed endpoint constants.
+No singular-map uniformity,infinite-mixture limit or arbitrary representation.
+
+Falsification before integration: two diagonal plane-delta/Jacobian controls,
+shear,negative determinant,scalar dilation and a nonsymmetric matrix. Exact
+matrix/control script passes54parameter cases for6matrices; finite algebra
+only,not a general proof/independent review/Lean certificate.
+
+Expanded P:three-transfer proof gives explicit regularized A_k,source static
+measure/S_n,epsilon correspondence via continuous Gaussian versions and
+Fubini/Bochner duality,actual target eta0 object and temporal cutoff variance,
+dimension3 eighth-moment and dimension4 twelfth-moment continuity criteria,
+and both mixed eta0 Green limits before noise limits. Direct static mixed/
+measure source pinpoints added. No first-moment upper constant is used.
+
+All prior sections1--8 and Targets source bytes are unchanged. All33existing
+formal statements preserved;3new statements/proofs,only the old conditional
+transfer proof rewritten. Actual formatter idempotent before canonical build.
+54pages,0errors/undefined/overfull/tabs;pages42,44,49,51visually checked.
+TeX7bbac562f562c4278c2e46b4f60c6ba0e6ac91dc0194bd851e9b701c577d0052;
+PDF3366d9cc4567fdc4e561ebfeb39146eabf06f51ef8fd71437ea2481f072281ad.
+Prior full50page14PASS/medium and scoped deterministic6PASS/high reports
+remain immutable and do NOT accept this new assembly. A full17check primary
+skeptic contract and43file packet are frozen,with the same30actual validated
+source-image carriers,full inherited proofs and pinned source PDFs. No
+confidence outcome is requested. HIGH threshold retained;new review is for
+genuine new geometry/types/consumers and source-identification proof.
+
+The earlier prepared private wiki proposal describes the50page checkpoint.
+It must be reconciled to current evidence before any approved publication;
+notification approval remains unanswered,no queue or messages triggered.

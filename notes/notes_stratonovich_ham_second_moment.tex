@@ -2700,11 +2700,13 @@ We first treat $\Gamma\ne0$ and $1<\alpha<2$.
 \section{Three-dimensional bounds from covariance endpoints}
 \label{S:three-endpoints}
 
-\myCmts{Candidate argument, pending independent review. The conditional
-transfer in this section has an explicit covariance comparison hypothesis.
-We verify it for ordinary product and isotropic Riesz covariances in
-dimension three. Earlier candidates and accepted-scope statements are
-unchanged; no general three-dimensional factorization is asserted.}
+\myCmts{Expanded candidate, pending independent review of the new assembly.
+The conditional moment transfer has not passed the required high-confidence
+gate. The plane-supported endpoints and finite-sum comparison were reviewed
+separately as deterministic tools. We now include their proofs, a new
+linear-image closure argument, and the resulting moment applications.
+Earlier accepted-scope statements are unchanged; no general
+three-dimensional factorization is asserted.}
 
 We first construct the product endpoints. Zero coordinate exponents below
 mean constant factors, not one-dimensional white noise.
@@ -2847,6 +2849,169 @@ This is a condition on deterministic covariance measures and their Gaussian
 convolutions. It assumes no moment estimate. We do not assert that every
 homogeneous covariance in dimension three admits these endpoints.
 
+\begin{lemma}[Plane-supported endpoints]\label{L:plane-endpoints}
+  Retain~\eqref{E:three-parameters}, let $c>0$, and let $a_1,a_2\ge0$
+  satisfy $s=a_1+a_2=\alpha-1$. In coordinates $(y,z)\in\R^2\times\R$,
+  put
+  \[
+    m(\ud y,\ud z)=\ud y\,\delta_0(\ud z),\qquad
+    v_j=\frac{a_j}{1-\vartheta},\qquad
+    \Gamma_{\rm pl}=c\prod_{j=1}^2|y_j|^{-a_j}m.
+  \]
+  Zero coordinate powers mean one. Then
+  \[
+    \Gamma_{\rm low}=cm,\qquad
+    \Gamma_{\rm st}=c\prod_{j=1}^2|y_j|^{-v_j}m
+  \]
+  satisfy Hypothesis~\ref{H:three-endpoints} for $\Gamma_{\rm pl}$.
+  In the spectral convention of Lemma~\ref{L:alpha-one-convolution},
+  this low endpoint has $V_{\rm low}=c/\pi$.
+\end{lemma}
+
+\begin{proof}
+  Since $0<s<1-\alpha_0$ and $\vartheta<2-\alpha=1-s$,
+  \[
+    0\le a_j<1,\qquad 0\le v_j<1,\qquad
+    v_1+v_2=\frac{s}{1-\vartheta}=\beta-1<1.
+  \]
+  A measure $f_e(y)\ud y\,\delta_0(\ud z)$, with
+  $f_e(y)=\prod_j|y_j|^{-e_j}$ and $0\le e_j<1$, is locally finite.
+  For a Schwartz test function, product-weighted rapid decay proves
+  absolute integrability and temperedness. Its scaling exponent as
+  a measure is $2-e_1-e_2$. Thus, the three measures in the statement
+  have exponents $3-\alpha$, $2$, and $3-\beta$. They are even and
+  nonnegative.
+
+  We verify positive definiteness, including the normal Dirac measure.
+  Each positive coordinate power has the Gaussian mixture
+  \[
+    |u|^{-e}=\frac1{\Gamma(e/2)}
+    \int_0^\infty r^{e/2-1}e^{-ru^2}\ud r,\qquad 0<e<1;
+  \]
+  a zero coordinate contributes the positive-definite constant one.
+  Consequently, $f_e$ is a positive mixture of positive-definite
+  tangential Gaussian functions. For $\varphi\in\mathcal S(\R^3)$,
+  its quadratic form against the plane measure is
+  \[
+    \int_\R\ud z\int_{\R^2}\int_{\R^2}
+    f_e(y-y')\varphi(y,z)\overline{\varphi(y',z)}
+    \ud y\ud y'.
+  \]
+  Absolute Fubini follows by setting
+  \[
+    A(u)=\int_\R\int_{\R^2}
+    |\varphi(y+u,z)\varphi(y,z)|\ud y\ud z.
+  \]
+  Rapid decay gives $A(u)\le C_N\prod_j(1+|u_j|)^{-N}$.
+  Hence, $\int f_e(u)A(u)\ud u<\infty$ for $N>1$, by
+  one-dimensional integrability. Integrating the nonnegative Gaussian
+  quadratic forms proves positive definiteness. This argument includes
+  the low endpoint, where both coordinate powers are zero.
+
+  For $\epsilon>0$ and $w\in\R^3$, apply H\"older on the finite
+  positive measure $p_\epsilon(w-(y,z))m(\ud y,\ud z)$.
+  Its mass is $p_\epsilon^{(1)}(w_3)$. If
+  $f(y)=\prod_j|y_j|^{-a_j}$, the identity between ordinary densities
+  \[
+    cf=c^\vartheta
+    \left(cf^{1/(1-\vartheta)}\right)^{1-\vartheta}
+  \]
+  holds $m$-almost everywhere. Both endpoint convolutions are finite,
+  since $v_j<1$ and the Gaussian decays at infinity. H\"older gives
+  exactly~\eqref{E:three-gaussian-comparison}; no power of a
+  distribution is taken.
+
+  Finally, the low spectral measure is
+  \[
+    \mu_{\rm low}(\ud\xi)
+    =\frac{c}{2\pi}\delta_0(\ud\xi_1)\delta_0(\ud\xi_2)\ud\xi_3.
+  \]
+  This follows from the unit spectral atom of a constant and the
+  one-dimensional Fourier identity for $\delta_0$ in the stated
+  convention. Its unit-ball mass is $c/\pi$, so the uniform closing
+  bound of Lemma~\ref{L:alpha-one-convolution} is $c/2$.
+  This proves Lemma~\ref{L:plane-endpoints}.
+\end{proof}
+
+\begin{lemma}[Linear images and finite positive sums]\label{L:endpoint-closure}
+  Fix the parameters in~\eqref{E:three-parameters}.
+  The covariance comparison of Hypothesis~\ref{H:three-endpoints}
+  is preserved by simultaneously pushing the target and its two
+  endpoints forward under any invertible linear map $T:\R^3\to\R^3$.
+  It is also preserved by finite sums with nonnegative weights, when
+  all component comparisons use the same $\alpha,\vartheta,\beta$.
+\end{lemma}
+
+\begin{proof}
+  First the comparison extends to every centered nondegenerate
+  Gaussian probability density $q_\Sigma$ with covariance matrix
+  $\Sigma$. Choose $a>0$ below the smallest eigenvalue of $\Sigma$.
+  The Gaussian convolution identity gives
+  $q_\Sigma=p_a*q_{\Sigma-aI}$. Put $F_J=p_a*J$ for each
+  $J\in\{\Gamma,\Gamma_{\rm low},\Gamma_{\rm st}\}$.
+  These functions are nonnegative, bounded, and continuous:
+  Gaussian weighting makes their positive tempered spectral
+  measures finite, and the covariance bound is
+  $|F_J(x)|\le F_J(0)<\infty$.
+  Tonelli and H\"older on the Gaussian probability measure yield
+  \[
+    q_\Sigma*\Gamma
+    \le q_{\Sigma-aI}*
+    \left(F_{\Gamma_{\rm low}}^\vartheta
+    F_{\Gamma_{\rm st}}^{1-\vartheta}\right)
+    \le(q_\Sigma*\Gamma_{\rm low})^\vartheta
+    (q_\Sigma*\Gamma_{\rm st})^{1-\vartheta}.
+  \]
+  Every convolution here is finite.
+
+  Write $J_T=T_\#J$ and $d_T=|\det T|$. Pushforward preserves
+  nonnegativity, evenness, local finiteness, temperedness, and
+  homogeneous scaling, since $T$ is invertible and commutes with
+  scalar dilation. For positive definiteness, take a complex
+  Schwartz function $\varphi$ and put $\psi(y)=\varphi(Ty)$.
+  Then
+  \[
+    (\varphi*\widetilde\varphi)(Ty)
+    =d_T(\psi*\widetilde\psi)(y).
+  \]
+  The quadratic form of $T_\#J$ is therefore $d_T$ times a
+  nonnegative quadratic form of $J$.
+  With $\Sigma=\epsilon T^{-1}(T^{-1})^\top$, direct Gaussian
+  change of variables gives, for every $\epsilon>0$ and $x$,
+  \[
+    (p_\epsilon*J_T)(x)
+    =d_T^{-1}(q_\Sigma*J)(T^{-1}x).
+  \]
+  Apply the preceding comparison. The two endpoint factors
+  contribute $d_T^{-\vartheta}d_T^{-(1-\vartheta)}=d_T^{-1}$,
+  which is the target factor. This proves the comparison for
+  the three pushed-forward measures.
+
+  For the finite-sum assertion, let
+  $\Gamma_i,L_i,S_i$, $1\le i\le N$, be component triples, and let
+  $w_i\ge0$. At a fixed width and translation put
+  $l_i=(p_\epsilon*L_i)(x)$ and $s_i=(p_\epsilon*S_i)(x)$.
+  Finite sums preserve all required covariance properties and scalings.
+  Discrete H\"older gives
+  \[
+    \begin{split}
+      p_\epsilon*\left(\sum_iw_i\Gamma_i\right)
+      &\le\sum_i(w_il_i)^\vartheta(w_is_i)^{1-\vartheta}\\
+      &\le\left(p_\epsilon*\sum_iw_iL_i\right)^\vartheta
+      \left(p_\epsilon*\sum_iw_iS_i\right)^{1-\vartheta}.
+    \end{split}
+  \]
+  Zero weights cause no ambiguity, since both powers are positive.
+  The all-zero target also satisfies the comparison.
+  This proves Lemma~\ref{L:endpoint-closure}.
+\end{proof}
+
+The linear maps in Lemma~\ref{L:endpoint-closure} act on the noise
+covariances. All moment estimates below still use the original isotropic
+wave kernel. Endpoint spectral masses and variational quantities are
+computed for the transformed covariances; their values need not be
+unchanged by a nonorthogonal map.
+
 For the low endpoint let $V_{\rm low}=\mu_{\rm low}(B_1)$ in the
 spectral convention of Lemma~\ref{L:alpha-one-convolution}, and put
 \[
@@ -2917,8 +3082,10 @@ energy term is nonnegative and its gradient penalty tends to zero.
   If $\Xi=0$, then $B_k=0$ for $k\ge1$, and $C_{\rm st}=1$
   suffices in the bound below. For the remaining static calculation,
   assume $\Xi\ne0$. From Chen--Hu~\cite{chen.hu:25:hyperbolic}*{Theorem~3.8(i), p.~2165,
-  and (2.17), (2.19), pp.~2151--2152}, these are finite nonnegative
-  coefficients with every split and pairing included. Finiteness of
+  and (2.17), (2.19)--(2.22), pp.~2151--2153}, the expectation and
+  product rules give finite nonnegative coefficients with every split
+  and pairing included; the latter formulas also specify the two-chain
+  and measure conventions. Finiteness of
   the variational input follows from
   Chen~\cite{chen:23:exponential}*{Theorem~1.1, p.~2}, which gives a
   finite square-root variational supremum under Dalang's condition.
@@ -2960,6 +3127,16 @@ energy term is nonnegative and its gradient penalty tends to zero.
   Fix $k\ge1$, $t>0$, and positive widths $\epsilon,\delta,\eta$.
   Noise width $\epsilon$ means edge covariance width $2\epsilon$;
   $\delta$ is the target temporal cutoff and $\eta$ is Green smoothing.
+  Write $X_n^{\epsilon,\delta,\eta}(t,x)$ for the source's ordered
+  integral against its smoothed field $W_{\epsilon,\delta}$, with
+  every Green kernel replaced by $G_{h,\eta}$, and set
+  $X_0^{\epsilon,\delta,\eta}=1$. Explicitly, the target coefficient is
+  \[
+    A_k^{\epsilon,\delta,\eta}(t)
+    =\sum_{m=0}^{2k}
+    \E\left[X_m^{\epsilon,\delta,\eta}(t,x)
+    X_{2k-m}^{\epsilon,\delta,\eta}(t,x)\right].
+  \]
   On the full disjoint union over all splits $m+n=2k$ and all
   $D\in\Pi_k$, define a common finite positive measure by
   \[
@@ -3037,7 +3214,19 @@ energy term is nonnegative and its gradient penalty tends to zero.
   $W_\epsilon$ be the static Gaussian field with covariance
   $p_{2\epsilon}*\Gamma_{\rm st}$. This covariance is bounded and
   continuous, since Gaussian weighting makes its positive tempered
-  spectral measure finite. For $n\ge1$ define
+  spectral measure finite. It has a continuous modification. Indeed,
+  with $\mu_{\rm st}$ the spectral measure,
+  \[
+    \E|W_\epsilon(x+h)-W_\epsilon(x)|^2
+    \le |h|^2\int_{\R^3}|\xi|^2e^{-\epsilon|\xi|^2}
+    \mu_{\rm st}(\ud\xi).
+  \]
+  The integral is finite by temperedness. Gaussian eighth moments
+  are therefore bounded by a constant times $|h|^8$.
+  Kolmogorov's continuity criterion in dimension three, applied on
+  compact sets and then on a countable exhaustion, gives the claimed
+  modification. We choose this version.
+  For $n\ge1$ define
   $\Phi_n(\mathbf{x})=\prod_{j=1}^n W_\epsilon(x_j)$ as an $L^2$
   random variable. Gaussian moments show that $\Phi_n$ is continuous
   as a map from $(\R^3)^n$ to $L^2$ and uniformly bounded there:
@@ -3050,18 +3239,47 @@ energy term is nonnegative and its gradient penalty tends to zero.
   Its separable continuous image is strongly measurable.
 
   Let $\mathfrak{g}_{n,t,x}^{\eta}$ be the finite positive ordered
-  Green-chain measure, including its time variables, with each Green
-  factor smoothed by $p_\eta$. For $\eta=0$, use the sphere measures
-  in the source's definition (2.22). Their time-integrated mass is
-  finite because each spatial factor has mass its time gap. Thus,
+  Green-chain measure, including its time variables, from the
+  source's kernel (2.13), with each Green factor smoothed by $p_\eta$.
+  For $\eta=0$, its spatial marginal is exactly the measure
+  $\mu_n^{t,x}$ specified immediately before (2.22), pp.~2152--2153.
+  Its mass is finite because each spatial factor has mass its time
+  gap. Thus,
   \[
     U_n^{\epsilon,0}(t,x)
     :=\int\Phi_n(\mathbf{x})
     \mathfrak{g}_{n,t,x}^{0}(\ud\mathbf{s},\ud\mathbf{x})
   \]
-  exists as a Bochner integral in $L^2$. This is precisely the
-  noise-smoothed static integral against the measure in
-  Chen--Hu~\cite{chen.hu:25:hyperbolic}*{(2.22), pp.~2152--2153}.
+  exists as a Bochner integral in $L^2$.
+  We verify its agreement with the source's pathwise integral,
+  rather than identifying it only by notation. Put
+  $\rho=\mathfrak{g}_{n,t,x}^{0}$ and
+  $M_n=P_n^{1/2}v_\epsilon^{n/2}$, and denote the pathwise integral
+  by $J_n=\int\Phi_n\ud\rho$.
+  The continuous field version makes the integrand jointly
+  measurable. Since
+  \[
+    \int\E|\Phi_n|\ud\rho\le M_n\rho(1)<\infty,
+    \qquad
+    \|J_n\|_2
+    \le\int\|\Phi_n\|_2\ud\rho\le M_n\rho(1),
+  \]
+  the pathwise integral exists almost surely and belongs to $L^2$.
+  For every $Y\in L^2$, Cauchy--Schwarz and Fubini give
+  \[
+    \E[YJ_n]
+    =\int\E[Y\Phi_n]\ud\rho.
+  \]
+  Bochner duality gives the same identity for the $L^2$ integral.
+  Taking $Y=J_n-U_n^{\epsilon,0}$ identifies the two random
+  variables almost surely. Changing to another jointly measurable
+  field modification leaves the integral unchanged by Fubini.
+  Since the static integrand is independent of the time variables,
+  this is the integral against $\mu_n^{t,x}$ in the source's
+  convention and hence its actual smoothed approximant
+  $S_{n,\epsilon}$ with common width, from
+  Chen--Hu~\cite{chen.hu:25:hyperbolic}*{(3.1), p.~2153,
+  and the convention preceding (2.22)}.
   Define $U_n^{\epsilon,\eta}$ by the same formula with
   $\mathfrak{g}_{n,t,x}^{\eta}$, and retain $U_0^{\epsilon,\eta}=1$.
 
@@ -3084,11 +3302,62 @@ energy term is nonnegative and its gradient penalty tends to zero.
   $U_n^{\epsilon,\eta}\to U_n^{\epsilon,0}$ in $L^2$.
   This identifies the limit with the source approximant, rather than
   only showing that positive-width approximants are Cauchy.
-  For the target, fix $\epsilon,\delta$ and use its prescribed inner
-  Green limit from
-  Chen~\cite{chen:author2026:time-dependency}*{pp.~13--14}.
-  The same bounded Gaussian moment factors and time domination give
-  the fixed-order convergence and passage of mixed coefficients.
+  For the target we specify the zero-Green-width object as well.
+  At fixed $\epsilon,\delta$, its field covariance is
+  $\gamma_\delta^0(s-r)(p_{2\epsilon}*\Gamma)(y-z)$, where
+  \[
+    \gamma_\delta^0(u)
+    =\Gamma(\alpha_0)^{-1}\int_0^{1/\delta}
+    e^{-\lambda|u|}\lambda^{\alpha_0-1}\ud\lambda,\qquad
+    \gamma_\delta^0(0)
+    =\frac{\delta^{-\alpha_0}}{\alpha_0\Gamma(\alpha_0)}.
+  \]
+  Here $\Gamma(\alpha_0)$ is Euler's gamma function.
+  The variance
+  $v_{\epsilon,\delta}
+  =\gamma_\delta^0(0)(p_{2\epsilon}*\Gamma)(0)$ is finite.
+  This field has a jointly continuous modification. The temporal
+  covariance satisfies
+  $\gamma_\delta^0(0)-\gamma_\delta^0(h)\le C_\delta|h|$,
+  by $1-e^{-\lambda|h|}\le\lambda|h|$.
+  The spatial increment bound just proved applies to
+  $p_{2\epsilon}*\Gamma$. The joint increment variance is therefore
+  bounded by $C_{\epsilon,\delta}(|h_0|+|h'|^2)$.
+  Gaussian twelfth moments are bounded by
+  $C_{\epsilon,\delta}|h|^6$ for $|h|\le1$.
+  Kolmogorov's criterion in dimension four supplies the version.
+
+  Let $\mathfrak{f}_{n,t,x}^{\eta}$ be the ordered Green measure
+  of the target's kernel (2.16), with $s_{n+1}=t$, $x_{n+1}=x$:
+  its factors are $G_{s_{j+1}-s_j,\eta}$.
+  Define
+  \[
+    \begin{split}
+      \Psi_n(\mathbf s,\mathbf x)
+      &=\prod_{j=1}^nW_{\epsilon,\delta}(s_j,x_j),\\
+      X_n^{\epsilon,\delta,0}(t,x)
+      &=\int\Psi_n(\mathbf s,\mathbf x)
+      \mathfrak f_{n,t,x}^{0}(\ud\mathbf s,\ud\mathbf x).
+    \end{split}
+  \]
+  The Gaussian moment bound is
+  $\|\Psi_n\|_2^2\le P_nv_{\epsilon,\delta}^n$.
+  Joint measurability, finite measure mass, and the preceding
+  Fubini argument show that this Bochner integral equals the
+  pathwise integral in the target's prescribed convention
+  \cite{chen:author2026:time-dependency}*{pp.~13--14}.
+  The same definition at positive $\eta$ gives
+  $X_n^{\epsilon,\delta,\eta}$ above.
+  Its second and mixed $\eta/0$ moments converge by weak Green
+  convergence against the bounded continuous Gaussian moment
+  functions, with dominating bound a constant times the product
+  of the time gaps. Thus,
+  \[
+    \|X_n^{\epsilon,\delta,\eta}
+    -X_n^{\epsilon,\delta,0}\|_2\longrightarrow0.
+  \]
+  This proves the inner-limit identification with the actual
+  target approximant. Both order-zero objects remain one.
 
   First take this Green limit in~\eqref{E:three-regularized-holder},
   using the uniform bound~\eqref{E:three-low-coefficient}. Next send
@@ -3229,6 +3498,59 @@ energy term is nonnegative and its gradient penalty tends to zero.
   Corollary~\ref{C:three-product-riesz}.
 \end{proof}
 
+\begin{corollary}[Finite sums of linear images]\label{C:three-finite-images}
+  Let $d=3$, $0<\alpha_0<1$, and $1<\alpha<2-\alpha_0$.
+  Let $\Gamma_i$, $1\le i\le N$, belong to one of the following
+  classes, always with homogeneity exponent $\alpha$:
+  \begin{enumerate}
+    \item the ordinary products in Corollary~\ref{C:three-product-riesz};
+    \item the isotropic Riesz covariances in that corollary;
+    \item the plane-supported measures of Lemma~\ref{L:plane-endpoints},
+      with $a_1+a_2=\alpha-1$.
+  \end{enumerate}
+  Let $T_i:\R^3\to\R^3$ be invertible linear maps, and let
+  $w_i\ge0$ with $\sum_iw_i>0$. Then the coefficient, all-time
+  moment, and nonsharp variational estimates
+  \eqref{E:three-transfer}--\eqref{E:three-variational-upper}
+  hold for
+  \[
+    \Gamma=\sum_{i=1}^Nw_i(T_i)_\#\Gamma_i.
+  \]
+  The constants may depend on all fixed component data, maps and
+  weights. The endpoints and their variational quantities are
+  those constructed in the proof.
+\end{corollary}
+
+\begin{proof}
+  Choose the common midpoint
+  $\vartheta=(\alpha_0+2-\alpha)/2$, and let $b_0,\beta$ be
+  given by~\eqref{E:three-parameters}.
+  Lemma~\ref{L:product-endpoints} supplies the ordinary-product
+  endpoints. For a Riesz component use $c_i|x|^{-1}$ and
+  $c_i|x|^{-\beta}$: the Gaussian-mixture calculation in the
+  preceding proof verifies their covariance properties, and
+  $\alpha=\vartheta+(1-\vartheta)\beta$ gives their Gaussian
+  comparison by H\"older. Lemma~\ref{L:plane-endpoints} supplies
+  the plane-supported endpoints. Thus, every component has an
+  endpoint triple with these same fixed parameters.
+
+  Apply Lemma~\ref{L:endpoint-closure} first to $T_i$ on each
+  triple, then to the finite weighted sums. The resulting endpoints
+  are
+  \[
+    \Gamma_{\rm low}=\sum_iw_i(T_i)_\#\Gamma_{{\rm low},i},
+    \qquad
+    \Gamma_{\rm st}=\sum_iw_i(T_i)_\#\Gamma_{{\rm st},i}.
+  \]
+  They satisfy Hypothesis~\ref{H:three-endpoints}. The target is
+  nonzero because all components are positive nonzero measures
+  and some weight is positive.
+  Proposition~\ref{P:three-transfer} now applies to these actual
+  target and endpoint measures. No addition or coupling identity
+  for random solutions is used.
+  This proves Corollary~\ref{C:three-finite-images}.
+\end{proof}
+
 \begin{remark}[Scope and calibrations]\label{R:three-endpoint-scope}
   As $\alpha_0\downarrow0$, the time exponent tends to
   $(4-\alpha)/(3-\alpha)$, agreeing with the static source without
@@ -3249,11 +3571,15 @@ energy term is nonnegative and its gradient penalty tends to zero.
   hypotheses; see Balan--Conus~\cite{balan.conus:16:intermittency}*{
   Theorem~2.1(b), p.~1492}. Their different solution concept and
   covariance normalization are not inputs here. The zero-exponent
-  product cases above do not enlarge that comparison. The product
+  product cases, plane-supported measures, linear images and finite
+  sums above do not enlarge that published comparison. The product
   construction changes coordinate powers; it is not Euclidean radial
   lowering of the original covariance. For a general three-dimensional
   covariance, Hypothesis~\ref{H:three-endpoints} remains an additional
-  condition, verified here only for the two stated families. The full
+  condition, verified here for the stated families and their finite
+  positive sums of invertible linear images. No representation or
+  density theorem for arbitrary covariances is asserted, and no
+  uniform estimate for a limiting infinite mixture is proved. The full
   general-covariance goal, the sharp constant, novelty and formal
   verification remain open.
 \end{remark}
