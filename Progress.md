@@ -1151,3 +1151,28 @@ PROCEED only to a complete separately reviewed product-family interpolation
 candidate; no generic d3 factorization or full moment theorem is claimed by
 that screen. The failed Euclidean radial lowering remains a distinct route.
 Original full general d3 and sharp-constant goals are unchanged.
+
+
+### Three-dimensional product/Riesz candidate written
+
+New Section9 contains L:product-endpoints(Lemma9.1),
+H:three-endpoints(Hypothesis9.2), P:three-transfer(Proposition9.3),
+C:three-product-riesz(Corollary9.4), R:three-endpoint-scope(Remark9.5).
+Root read the complete new argument and found no core upper-bound gap.
+The endpoint condition is explicitly additional, discharged for ordinary
+products(0<=a_j<1) and isotropic Riesz, not assumed for allgeneral3.
+Static eta0 identification uses actual BochnerL2 integral and mixed eta/zero
+second moments, before the source noise limit. A separate explicit nonsharp
+variational limsup constant is proved with finite low-order terms retained.
+
+Actual formatter precedes build and is byte-idempotent.49page canonical
+build0errors/undefined/overfull/tabs; removing556-line insertion recovers
+prior source76d2331b exactly. TeX950add7de797a7c754e565efa4654013b85bca9ccda31bab5c42ba82770015dc;
+PDFd0359c46bc7d855dc81051388608091e536e7df7e04ed30ee2854c0f54a33244.
+No status promotion before independent review.
+
+A separate preliminary source-normalization audit is examining the current
+author p3--4 first-moment variational constants. It does not change the
+source/goal/manuscript. The new upper-scale proof imports current fixed-order
+existence and static coefficient facts, not that first-moment upper constant.
+The concern must be independently recomputed before any source-error claim.
