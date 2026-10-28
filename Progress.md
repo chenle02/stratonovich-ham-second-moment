@@ -1601,3 +1601,36 @@ now gold with verify_digest PASS,clean lint and all-six remote convergence
 receipts. Rubin2008 and Frank etal2026 remain pending. Full receipts retained
 in energy-fidelity/reference-state-final.json. No new theorem import follows
 from completed ingestion;the n3real-alpha applicability question remains open.
+
+
+### Real-parameter source recon and angular-smoothing falsification freeze
+
+Previous goal turn was concrete progress: new energy lemma8PASS/HIGH,exact
+source delivery/receipts/clean56page build and two gold reference ingestions.
+Current focused local/origin/<HUB> checks clean0/0 at54c99e3;advisory
+workspace audit ran after resolving the executable path. Remote default
+Python runs the wiki CLI;uv was absent from its shell PATH,no setup changed.
+Actual canonical CLI search/cite and complete new Milman2008/concept reading
+preceded further web recon. Rubin lookup has no local wiki result yet;its
+existing exact ticket is reused,not duplicated. Actual query/page snapshot
+in general-covariance-cones/wiki-recon.json.
+
+Primary Rubin arXiv0704.0061v2 read,pinned44959d734e694c473b57f233f9d5c09e3f5a8efebc0b9a0b74c32267e4a35554.
+Theorem4.1 supplies an angular ANALYTIC-transform representation;Theorem5.8
+is radial-uniform closure of intersection bodies of STAR BODIES,not a
+positive ellipsoid endpoint mixture theorem. At real alpha>1 the ordinary
+positive cosine integral is outside its convergence range;even constant
+angular measure gives the exact divergent cutoff. No global geometric
+non-density theorem or source-normalization correction is inferred.
+
+New deterministic falsification in general-covariance-cones/proof.md:
+admissible alpha3/2,alpha0=1/4 plane covariance,Poisson angular approximants
+remain positive and positive definite,converge distributionally,keep angular
+mass/Gaussian pairing/spectral ball mass fixed,yet every scalar isotropic
+Riesz envelope amplitude diverges at least as1/(1-t). Thus that particular
+smoothing-plus-angular-supremum shortcut cannot supply uniform constants.
+Other endpoint comparisons and the actual target are not refuted.
+All continuous proof steps written;local60digit normalization checks PASS.
+Fresh six-check scoped skeptic packet includes four mandatory texts and
+eleven exact primary-source image pages. Independent review PENDING;no
+new accepted no-go or main-manuscript claim. Canonical TeX/PDF unchanged.
