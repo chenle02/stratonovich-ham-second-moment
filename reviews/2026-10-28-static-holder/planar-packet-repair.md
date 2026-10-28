@@ -27,3 +27,8 @@ The full canonical TeX is already formatter-idempotent and the rebuilt PDF
 is included. Raw pinned source PDFs are available for optional page checks.
 All committed packet bytes must pass the manifest check before any dispatch.
 No hook, global configuration or acceptance threshold was changed or bypassed.
+
+The committed-byte guard also caught the two required references.bbl snapshots
+being omitted by the repository ignore rule. Their exact manifest-bound bytes
+were explicitly force-staged before publication or dispatch. No source hash
+was relaxed and no review was launched on that incomplete preparation.
