@@ -1,120 +1,108 @@
-Last updated: 2026-10-28 15:19 UTC
+Last updated: 2026-10-28 18:27 UTC
 
 # HANDOFF — Article-Stratonovich-HAM-Second-Moment
 
 ## ⏭ Next session: where to stand and what to do
 
-Develop the ALL-ORDER static phase estimate proposed in
-reviews/2026-10-28-phase-propagator/next-operator-route.md. First pin/read
-a primary Crouzeix-Palencia2017 source (arXiv1702.00668 or verified publisher/
-author copy),then prove the Gaussian-Fock sandwich variance bound and the
-COMPLEX-coupling weak-phase estimate on a Cauchy circle. Use bounded spatial
-Fourier and Gaussian-chaos cutoffs before limits. Real selfadjoint energy
-bounds alone do not justify coefficient extraction. The note includes an
-explicit proposed square-root resolvent integral and all four phase blocks.
-It remains UNREVIEWED,not an accepted all-order theorem.
+Stand at PROJECT-GOAL.md decision5: the ORIGINAL full G:upper now has a
+complete proof accepted at the scoped cross-family correctness gate. Report
+Theorem13.5 to Le and obtain direction before beginning G:sharp. Do not spend
+another round reproving the accepted upper scale or rerun it for confidence.
 
-The prerequisite first-variance phase estimate is now DONE at a scoped
-HIGH gate:Section11 Lemma11.1/Proposition11.2,all7PASS/high,full delivery,
-no required repairs. It treats the FULL stated d3 spatial covariance class
-and arbitrary real Schwartz initial phase,in L2 displacement/H^{-1}_lambda
-velocity,uniform in spatial smoothing. Both the first random norm and
-second-order mean term are needed. Source8d8a43e,dispatchaa57b91,
-dispositione38e561. Do not spend another round reproving that same scope.
+Source/dispatch bee4b2a3ebdff2ac1cbae9208f436084ad2ad549;
+adoption4c41cb2dba43fe330f4b43d0d49cd4f31e58ff1d. Fresh Opus5.5/high:
+all11PASS/HIGH,full11text/7image delivery,no required repairs,accepted=true,
+557.505s. Every7minor finding and the limitations are adjudicated in
+reviews/2026-10-28-dyadic-overlap/adjudication-v1.md. Final74page notes,
+Section13starts p65,coefficient Proposition13.4 p68,Theorem13.5 p71.
 
-All-order coefficients with summable small-block losses are still missing.
-Changing X_{n/h} to one fixed X_lambda can destroy the needed small-block
-budget;do not hide that loss. Overlapping time levels and temporal limits
-remain separate unsolved steps. Original full Goal G:upper and sharp target
-unchanged;Section9moment candidate remains17PASS/MEDIUM. No confidence lottery.
+The sharp constant is OPEN. A fresh complete DeepSeek V4-Pro cold read is
+still due before circulation;the old31page read is no current clearance.
+Companion creation decision4 and intended source sharp normalization remain
+separate unanswered decisions. Original overall goal stays ACTIVE and
+uncompleted. No public/correspondence/automatic-notification permission.
 
 ## Pre-flight checks
 
-1. Read Progress.md and PROJECT-GOAL.md. Original goal ACTIVE,unbounded.
-   Accepted moment baseline alpha<=1 in d1/2/3. Companion creation and
-   intended source sharp normalization remain separate unanswered decisions.
-2. Canonical59page notes,formatter idempotent,0errors/undefined/overfull/tabs.
-   TeX SHA256:
-   b6abca9bfb71ac47a2c3f5ae8b7087e4041f7713f38efe248353d94de5b1de85.
-   PDF SHA256:
-   470b371695aa946e44b83a11460dca62a82876fc36faf14b75be0a36d3511fb1.
-3. New phase scientific source8d8a43e32080c2c47e501b316cd833c510f2d261;
-   dispatchaa57b91374b2a450bea8d842f45f0597ef7fba68;
-   dispositione38e561895547c05ce5135a0c17c101affd39028. Seven PASS/HIGH,
-   accepted=true,coverage_verified=true,261.185s. All8text/4image delivery.
-   All5minor findings adjudicated. Raw78members incl refused preflight1
-   losslessly archived/hash verified. Final status-only banner edit preserves
-   all39formal statements and33proofs byte-equal to reviewed source.
-4. Full54page Section9assembly remains17PASS/MEDIUM,full delivery,no repairs,
-   accepted=false at HIGH. Source92a3eed518f10cc9797f1660050da8e69dcc644d;
-   disposition67b4211f8822449aa78b6d6d3acd6cdd9327eefe. No promotion from phase.
-5. Section10 energy identity remains8PASS/HIGH at2718647/disposition734d0bf.
-   Geometry/Poisson approximation screen6PASS/HIGH atcd6b490/dispositiona79ee25
-   is narrow:scalar Riesz-envelope shortcut only,not all approximations.
-6. No reviewer/build/author/cluster process remains live;all own native
-   sessions terminal and archived. External six-repo writer is independent;
-   do not restart/manage it or reset/stash its work.
-7. Every provider dispatch uses check-frozen-packet.py in the SAME fail-fast
-   shell. Literal filenames must be separate:checks.py/checks.json triggered
-   a pre-provider workspace refusal;contract-v2 repaired wording only.
-8. Primary author PDF SHA256:
+1. Read Progress.md and PROJECT-GOAL.md. Full upper accepted at scoped
+   correctness gate;stop/report to Le at decision5 before sharp work.
+2. Final74page source/PDF:formatter idempotent,0errors/undefined/overfull/tabs.
+   TeX SHA256: 6b380149a094ffd0660d4537b407af4eea7af12a75c3273512a3c5c4e79b0ad8.
+   PDF SHA256: fc14246dff07caaedd57a684f7a39765faf28dd42fc7facc346910bd30c71ecf.
+   Exact binding in dyadic-overlap/final-status-binding.json.
+3. Full new proof review:all11PASS/HIGH,native model/identity/hash/delivery
+   verified.66raw native/dry-run members losslessly archived/member-hash
+   verified,then only own terminal raw copies removed. No native review,
+   build,author or cluster process remains live. Existing PDF viewer is
+   intentionally open on <MACHINE> tag4,p71.
+4. The frozen reviewed manuscript is73pages,not the final74page status
+   update.41of42proofs byte-equal;sole other proof change is sums-to changed
+   to is-at-most for the already checked integral upper bound C7.
+   No formula,hypothesis,constant or deduction changed. Old formal statements
+   unchanged;new theorem/remark only status promotion.
+5. Static Section12accepted9PASS/HIGH atcba14f9;Section11first variance7HIGH
+   ate38e561;Section10energy8HIGH at734d0bf. Section9full moment candidate
+   remains17PASS/MEDIUM and is not promoted by the different new proof.
+6. Preflight local/origin/<HUB> before edits;stage exact own paths only.
+   Provider dispatch guard check-frozen-packet.py must be in SAME fail-fast
+   shell as launch. Hold HEAD and git writers through actual collection.
+7. Default Claude CLI changed to2.1.312,unsupported by image-ledger preflight.
+   Existing2.1.304 works with launch-local PATH and the selected account.
+   Explicit executable/account mismatch was refused before provider launch.
+   Re-run supported doctor before any newly assigned native review.
+8. Primary author SHA256:
    5f7385ca451e643a1f3ff31835e4ee52b2708b5d2e3652eec3fb5d3958b97b6c.
-   Static publisher SHA256:
-   58b152d78cd0d54d82b991933b3eaece86e1ed2b44fe09882c14eba921e97e22.
-9. Seven-reference exact final snapshot in phase-propagator/reference-state-final.json:
-   two Milman gold;Rubin,Frank and three Crouzeix pending. No duplicated
-   tickets. A new Crouzeix ticket differs from its sibling only by-2.
+   CP arXiv1702.00668v1 SHA256:
+   0e33b65b3fab07632364111290e380b0696d7ace8168c9b834028de57d943c53.
+9. Seven reference IDs/DOIs already queued;last exact snapshot is
+   phase-propagator/reference-state-final.json. Do not duplicate or match
+   prefix IDs. Last recorded status2Milman gold/5pending is historical;
+   recheck if current processing status is needed.
 
 ## Concrete deliverables for the next session
 
-- Prove/falsify the explicit complex-phase estimate and Gaussian-Fock cutoff
-  mechanism before claiming any all-order bound. Source2017 is a bounded-
-  Hilbert-operator spectral-set theorem;unbounded limits/weak-phase norm
-  comparisons must be supplied,not assumed. New references already queued.
-- Retain small-block bookkeeping. Reviewed bounds at arbitrary lambda are
-  R_alpha h²lambda^{alpha-2}(1+lambda²h²)² for the first random term,and
-  D_Gamma(1+lambda²h²)h^{3-alpha}/[lambda(2-alpha)(3-alpha)] for its mean
-  second-order partner. Complete coefficient includes BOTH. Atlambda1/h
-  it has bound C h^{4-alpha}initial norm². No higher terms accepted.
-- The two individual fine-block coefficient budgets are summable under
-  alpha0<1 andalpha+alpha0<2. That sum is NOT a product or mixed-level theorem.
-- Scalar static phase(1,-2)has negative first-variance energy coefficient
-  -16/45. It lies outside the target covariance class/data,but rules out
-  casually inheriting covariance monotonicity for arbitrary phases.
-- Exact queued Crouzeix DOIs:2004parabola10.1007/s00013-004-0605-2;
-  2007JFA10.1016/j.jfa.2006.10.013;2017Crouzeix-Palencia10.1137/17M1116672.
-  The author Nacta.pdf fetch timed out;no full-source theorem imported.
-- Prepared private wiki proposal reconciled to59pages and accepted Section11
-  at2f6dae9,still unpublished. Canonical project-base bytes reread unchanged
-  at63bd322d89c2fc8f0e5c6750d4961498a3563ba7. Reread current base before write.
-- Lean remains L0/PROPOSED,no package/lease/registry. Decision4 remains open.
+- Report the complete accepted upper result to Le at decision5 before any
+  sharp-constant development. The overall goal is not complete.
+- When directed to continue,retain fresh final DeepSeek whole-paper/source-
+  bound review before circulation. Frozen prior review context is not a
+  final full-paper read,even with HIGH confidence.
+- Preserve the key interval mechanism:local color degrees,one-copy mean
+  costs versus new-color cross insertions,and uniform positive inventory
+  product. Retain both Gaussian creation and annihilation/self-pairings.
+- Prepared PRIVATE wiki proposal now matches74pages and the full scoped
+  acceptance at4c41cb2. Canonical page was reread unchanged;no wiki project
+  publication ticket,automatic notification or direct six-repo edit occurred.
+  Existing publication-notification boundary remains separate.
+- Lean remains L0/PROPOSED,no package/lease/code/build. Decision4 remains open.
+  New stable seams are the local-degree coefficient algebra,inventory
+  exponent/tail arithmetic and final growth conversion;analytic premises
+  must remain explicit rather than assumed to prove the paper theorem.
+- Durable scientific/runtime lessons retained in dyadic-overlap/lessons.md
+  and static-phase-all-orders/lessons.md,with actual review/proof boundaries.
 
 ## Success criteria for the immediate next step
 
-A valid operator estimate advances the unchanged general covariance target.
-It states explicit cutoffs,spaces,complex coupling radius and constants
-uniform in those cutoffs;identifies the Gaussian vacuum coefficient;and
-retains the true all-order factorial and small-block budget. A correct
-first-variance statement is kept within its accepted scope. New proofs have
-proper independent review/source delivery;full target remains open until
-all required temporal/composition limits are proved.
+Le has an accurate view of the accepted full upper bound and the remaining
+sharp target. Subsequent work starts only within his direction at decision5.
+Any circulation claim requires the fresh full-paper/source-bound cold read.
+Private Lean work requires its separate creation approval. No narrowed
+covariance subclass substitutes for the original full target.
 
 ## Anti-success criteria
 
-- Treating Section11's complete FIRST variance order as an all-order phase,
-  independent-block product or colored-time HAM bound.
-- Omitting the second-order mean or assuming arbitrary-phase monotonicity.
-- Applying the phase weight twice to the whitened output multiplier.
-- Confusing a centered Fourier modulation bound with the disproved translated
-  physical single-wave maximum. Physical M and spectral V stay distinct.
-- Using a real selfadjoint bound as a complex Cauchy-circle estimate.
-- Assuming a generic Kato square-root identification or cutoff norm
-  equivalence without the proposed quantitative resolvent proof.
-- Absorbing a fixed factor per short interval,or losing1/(lambda h)twice
-  without checking summability of the hierarchy.
-- Promoting17PASS/MEDIUM or rerunning an unchanged proof for confidence.
-- Direct six-repo writes,duplicate reference requests,prefix receipt matching,
-  force/wake/restart,author contact,Lean creation,public release or Easley.
+- Continuing directly to sharp work without reporting the full-upper proof.
+- Calling the project finished,sharp constant solved,novelty verified,Lean
+  checked or circulation cleared from one scoped correctness report.
+- Treating the old medium-confidence endpoint candidate as promoted.
+- Squaring every singleton metric cost or multiplying independent-time-block
+  estimates for overlapping/reused fields without the color argument.
+- Omitting self-pairings,using real-only bounds for complex Cauchy,or assuming
+  arbitrary-phase covariance positivity. Positive covariance domination is
+  used only inside the constant-data Wick integrals.
+- Assuming full mollified-solution convergence instead of fixed-order limits
+  followed by the independently convergent original series.
+- Direct six-repo edits,duplicate/prefix reference matching,service restart,
+  source-author contact,public release,Lean creation or Easley jobs.
 
 ## What the previous sessions produced
 
@@ -267,79 +255,89 @@ Latest checkpoints:
   with exact scoped phase acceptance;seven-reference exact ID+DOI snapshot
   retained(two gold,five pending). No project publication triggered.
 
+- 2026-10-28 sourceeb7d754: complete regularized static arbitrary-phase
+  operator/Fock/all-order/interaction proof. First review failed DNS and had
+  no scientific report;unchanged supported transport recovery returned
+ 9PASS/HIGH,full delivery,no mandatory repairs. Acceptancecba14f9 archives
+  both terminal attempts and adjudicates all6minor findings. Static growth
+  exponent was already known;no novelty/full time-fractional claim from it.
+- 2026-10-28 sourcebee4b2a: complete full-upper interval argument and73page
+  proof/dependency/source freeze. Native fresh Opus5.5/high passed11checks
+  at HIGH,full11text/7image delivery,no required repairs,557.505s. No source
+  angular density/Riesz restriction or suspect first-moment constant used.
+- 2026-10-28 adoption4c41cb2: ORIGINAL full G:upper established. All7minor
+  findings adjudicated;66member native evidence archive fully hash-verified.
+  Final74page clean notes,P71Theorem13.5,scope/status consistency updated,
+  private wiki proposal reconciled but UNPUBLISHED,durable lessons saved.
+  All old formal statements preserved;41of42proofs byte-equal to reviewed
+  source,only integral upper-bound wording clarified in the remaining proof.
+- PDF opening diagnosed:project vifm/terminal lacked DISPLAY;graphical-only
+  file handler fell back to binary contents. Existing wm helper opened the
+  valid PDF on <MACHINE> tag4. Agent21owns setup but live lookup found no21;
+  no persistent config edit,substitute owner or setup completion invented.
+
 ## Repo & git state at handoff
 
-- master;substantive pre-handoff HEAD 24a76d13e88aaa0782fcdcc30349ad8de1cafe8f,pushed and <HUB>-synced.
-- Only this dedicated handoff update pending;no author WIP/native job remains.
-- Canonical59page TeX/PDF binding above;source PDFs,All.bib and sibling
-  Articles untouched by root. Queue owns its seven-reference processing.
-- Wiki proposal committed,not published. No private Lean package/lease.
+- master;substantive pre-handoff HEAD 4c41cb2dba43fe330f4b43d0d49cd4f31e58ff1d,pushed and
+  <HUB>-synchronized. Only this dedicated handoff update pending.
+- No author WIP or review/build/cluster task left live.74page TeX/PDF binding
+  above. No source PDF,All.bib or sibling Article edits by root.
+- Private wiki proposal committed,not published. Queue owns seven-reference
+  processing. No private Lean companion exists. Final cold-read debt remains.
 
 ## Operating notes
 
-Original full goal ACTIVE,no token budget. Le explicitly requires helpful
-missing-reference enqueues and wiki recon. Apply actual synthesized CLI
-search/cite plus reading BEFORE further external recon;raw filename searches
-are not equivalent. Process-local uv dependencies solved the CLI import
-problem;no system/editor/service configuration changed. Setup belongs to21.
+Original overall goal remains ACTIVE with no budget. PROJECT-GOAL decision5
+is now the immediate boundary. No additional math work beyond that decision
+was started after acceptance. Sharp constant/source normalization and Lean
+creation are separate. Do not infer correspondence or publication authority.
 
-Exact ticket IDs:
-- tk-20261028-081542-codex-stratonovich-covariance-recon:gold Milman2006.
-- tk-20261028-081544-codex-stratonovich-covariance-recon:gold Milman2008.
-- tk-20261028-081547-codex-stratonovich-covariance-recon:pending Rubin2008.
-- tk-20261028-081549-codex-stratonovich-covariance-recon:pending Frank2026.
-Receipts and DOI identity in energy-fidelity/reference-state-final.json. No
-force,wake,restart or author contact;do not re-enqueue these exact requests.
+Actual wiki-first CLI recon and synthesized-page reading were performed;
+source editions and exact operator hypotheses come from primary sources.
+New CP source is pinned under sources/crouzeix-palencia-2017;version1
+numbering and the local extra.bib source key must be retained. All.bib is
+read-only. No missing helpful reference from this wave was left unqueued.
 
-Separate unanswered questions concern intended first-moment normalization,
-companion creation,and the standard automatic Telegram receipt for a private
-project-wiki status publication. The old wiki card does not block explicitly
-authorized reference tickets. No broader correspondence permission inferred.
+Exact seven existing ticket IDs:
+- tk-20261028-081542-codex-stratonovich-covariance-recon (Milman2006).
+- tk-20261028-081544-codex-stratonovich-covariance-recon (Milman2008).
+- tk-20261028-081547-codex-stratonovich-covariance-recon (Rubin2008).
+- tk-20261028-081549-codex-stratonovich-covariance-recon (Frank2026).
+- tk-20261028-110644-codex-stratonovich-phase-recon (Crouzeix2004).
+- tk-20261028-110645-codex-stratonovich-phase-recon (Crouzeix2007).
+- tk-20261028-110645-codex-stratonovich-phase-recon-2 (CP2017).
+Never prefix-match the last two or enqueue duplicates. Normal references
+were explicitly authorized;the old project-publication/automatic-notification
+card remains separate. No message was sent to Le/coauthors/source author.
 
-Opus5.5 native first-party high remains the skeptic;current route Max <account removed>
-on process-local supported CLI2.1.304. Final full-paper DeepSeek/source-bound
-clearance before circulation remains outstanding;old31page read covers no
-current59page clearance. No unchanged confidence lottery.
+Supported Opus runtime was selected by launch-local PATH to the existing
+Claude2.1.304 binary;effective account/executable verified by doctor.
+No system/dotfile/provider/auth changes. Setup belongs to Agent21;resolve
+its live address with amsg rather than assuming a stale identity.
 
-
-Additional exact queued IDs (all pending at final snapshot):
-- tk-20261028-110644-codex-stratonovich-phase-recon: Crouzeix2004.
-- tk-20261028-110645-codex-stratonovich-phase-recon: Crouzeix2007.
-- tk-20261028-110645-codex-stratonovich-phase-recon-2: Crouzeix-Palencia2017.
-These are three DISTINCT tickets;never use a prefix glob. Ordinary reference
-queueing was explicitly authorized by Le. Do not confuse it with the old
-project-wiki automatic-notification card,companion permission or author contact.
+For vifm PDF opening without DISPLAY,use the existing desktop helper via
+:!<HOME>/mydotfiles/bin/wm pdf %c --no-name
+The final theorem is on page71 of the notes PDF. Do not change persistent
+setup in this project;Agent21was not registered at the last actual lookup.
 
 ## Risks to monitor
 
-1. General covariance is larger than explicit endpoint/sum/linear families.
-   Exact representation is stronger than controlled domination;prove either
-   with correct hypotheses and constants before applying it.
-2. New accepted energy lemma closes profile identification only. Prior full
-   moment proof/stochastic approximation remains below HIGH,not reproved here.
-3. Source E/E_star printed-normalization discrepancy remains accepted within
-   its scoped audit;intended correction unknown,no suspect upperconstantused.
-4. Temporal weights and all-order factorial budget remain beyond isolated
-   free-wave bounds. Old common-theta uniform-pairing majorant remains killed.
-5. Green eta0 limits precede noise limits;actual source approximants/common
-   widths and mixed moments matter. Matrix changes act on covariance,not wave.
-6. Nonlinear positivity/homogeneity does not imply local finite Radon mass.
-7. Wiki synthesis finds useful methods,boundaries and retained references;
-   exact theorem/version/Fourier normalization comes from primary sources.
-8. Queue receipts certify per-paper service outcomes,not applicability to
-   this project. First two gold papers do not settle d3real-alpha geometry.
-9. Byte provenance,native source delivery and mathematical confidence are
-   separate. Raw diagnostic output is not formal proof or human verification.
-10. No general goal completion,sharpconstant,novelty,Lean or circulationclaim.
-11. Real-parameter analytic continuation is not an ordinary positive mixture.
-    Source Example6.3 uses a dual GENERALIZED COSINE (Radon-type)transform.
-    Theorem5.8 concerns star-body closure,not ellipsoid endpoints. New scope
-    does not imply a global representation impossibility.
-12. Wave blocks carry velocity. Do not extrapolate the unreviewed scalar
-    phase diagnostic to an SPDE theorem or mistake phase-energy equivalence
-    factors for bounds uniform in the number of short intervals.
-13. New phase estimates are positive full-spatial-class progress,but only
-    first variance order. Gaussian-Fock/spectral-set route is unreviewed;
-    maintain correct operator domains,complex bounds and cutoff uniformity.
-14. Queued operator references are future-use leads,not imported theorems.
-    Check actual source edition,constant and bounded/unbounded scope.
+1. The sharp second-moment constant remains unproved. The full upper-scale
+   result has a nonsharp constant and cannot certify the conjectured factor.
+2. Source E/E_star normalization conflict remains independently accepted in
+   its literal scoped audit;intended correction unknown. No suspect source
+   first-moment constant was used in the new upper proof.
+3. A single completed AI correctness review is neither human/formal proof
+   certification nor novelty/circulation clearance. Full cold read still due.
+4. Source fixed-order Green/noise limits precede the series limit. Do not
+   rewrite the proof using an unproved whole-propagator convergence claim.
+5. Complex sums,local color cutoffs and vacuum cross insertions are different
+   interfaces. Occupied-color annihilation cannot use the vacuum column bound.
+6. Static exponents are known. Any novelty assessment must keep the exact
+   new interval theorem separate and complete the still-missing broader audit.
+7. Queue service receipts prove per-paper ingestion,not applicability to HAM.
+8. Wiki proposal and final round-close provenance remain unpublished;do not
+   report private draft preparation as a canonical six-repo update.
+9. Native source delivery and mathematical verdict are separate checks.
+   Pre-provider runtime refusals and the old DNS failure are not reviews.
+10. Keep atomic exact-path commits,push/sync parity,and the mandatory PI stop.
