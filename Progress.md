@@ -1675,3 +1675,10 @@ random form-dependent energy norms can introduce a factor per short block.
 That loss must be controlled before any long dyadic proof. Neither the valid
 static value asymptotics nor generic additive-covariance logconvexity supplies
 this missing operator estimate. No Skorohod exact-constant work developed.
+
+
+Prepared private wiki proposal now also retains the accepted narrow angular-
+smoothing screen and distinguishes the unreviewed block/velocity diagnostic.
+No project publication or notification triggered. Main manuscript remains
+56pages with the same hashes/build status;the full original goal remains
+ACTIVE. New research lessons retained in general-covariance-cones/lessons.md.
