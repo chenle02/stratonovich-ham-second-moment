@@ -1,0 +1,76 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    ".review/required-sources.json: lines 1-12 (complete; read-plan only, no read credit)",
+    "sufficiency-screen.md: lines 1-311 (complete)",
+    "boundary-probe.md: lines 1-185 (complete)",
+    "diagram-context.md: lines 1-163 (complete)"
+  ],
+  "checks": [
+    {
+      "claim": "C1: Definitions, quantifiers, h scaling, support including |Z|>=h, null exceptional points, and the exact time-density/elliptic reduction (TD)",
+      "verdict": "PASS",
+      "reason": "Scaling: with u=hv and y=hY, G_{hv}(hY)=h^{-1}G_v(Y), so I_alpha(h;Z,W)=h\u00b7h^2\u00b7h^{-2}\u00b7h^{-alpha}\u00b7I_alpha(1;Z/h,W/h)=h^{1-alpha}I_alpha(1;Z/h,W/h). The right side has the same factor, h^{2q-alpha}h^{-(2q-1)}=h^{1-alpha}. Support: the kernels are nonzero exactly when a<u<1-b, so if z>=1 the triangle inequality gives a+b>=1 and the left side is 0. The right side is also 0 because G_h=0 on and outside the boundary. Time integral: setting u=a+L sin^2\u03b8 gives u-a=L sin^2\u03b8, 1-u-b=L cos^2\u03b8 and du=2L sin\u03b8 cos\u03b8 d\u03b8. This cancels sqrt((u-a)(1-u-b)) and leaves (1/(4\u03c0^2))\u00b72=1/(2\u03c0^2) times the stated \u03b8-integral. I rederived the substitution t=tan\u03b8, which gives (A+(A+L)t^2)(C+L+Ct^2). The substitution t=sqrt(A/(A+L))tan\u03c8 then gives D^{-1/2}\u222bd\u03c8/sqrt(cos^2\u03c8+k sin^2\u03c8), with D=(1+a-b)(1-a+b)=1-(a-b)^2 and k=AC/D=4ab/D. The identity D-4ab=1-(a+b)^2>0 gives 0<k<1. The exceptional points y=0 and y=Z (where k=0 and K_Z=+\u221e) are null in y, and the later envelope stays integrable against the Riesz weight even when W sits at one of them."
+    },
+    {
+      "claim": "C2: Elementary bound E(k)<=C_E[1+log(1/k)] for 0<k<=1",
+      "verdict": "PASS",
+      "reason": "On [0,\u03c0/4], cos^2\u03c8>=1/2 gives at most \u03c0\u221a2/4. On the other half, with v=\u03c0/2-\u03c8, the integrand denominator is sin^2v+k cos^2v>=4v^2/\u03c0^2+k/2. Here sin v>=2v/\u03c0 holds on [0,\u03c0/2] by concavity, and cos^2v>=1/2 holds on [0,\u03c0/4]. Substituting w=2v/\u03c0 gives (\u03c0/2)asinh(1/sqrt(2k)) exactly. asinh x<=log(1+2x) follows from sqrt(1+x^2)<=1+x, and 1+\u221a2/\u221ak<=(1+\u221a2)/\u221ak uses k<=1. The constant term \u03c0\u221a2/4+(\u03c0/2)log(1+\u221a2) and the log coefficient \u03c0/4 are both <=C_E. Since log(1/k)>=0, (EL) follows."
+    },
+    {
+      "claim": "C3: Geometry for 1/2<=z<1: partition a<=b, sign-sensitive D comparisons, k lower bound, C_N, monotone envelope (ENV)",
+      "verdict": "PASS",
+      "reason": "On a<=b inside a+b<1: 2a<1 gives a<1/2, and 2b>=a+b>=z gives b>=1/4. The reverse triangle inequality gives |a-b|<=z, so D>=\u03b4. Also 0<=b-a<1-2a with both sides nonnegative, so squaring is valid and D>4a(1-a)>=2a. Hence D>=max(\u03b4,2a)>=(\u03b4+a)/2. Upper bound: if z>=2a, then b-a>=z-2a>=0 (nonnegative, so squaring is valid) and D<=\u03b4+4az-4a^2<=\u03b4+4a. If z<2a, then \u03b4+4a>1-z^2+2z=1+z(2-z)>=1>=D. So D<=4(\u03b4+a), and k>=4a(1/4)/(4(\u03b4+a))=a/(4(\u03b4+a)). The step to C_N=\u221a2C_E(1+log4)/(2\u03c0^2) uses 1+log4+x<=(1+log4)(1+x) for x>=0, which holds. The region b<=a follows by the a\u2194b symmetry of D and k. f_\u03b4 is a product of positive decreasing factors truncated at r<1. Points with a=0 or b=0 are null."
+    },
+    {
+      "claim": "C4: Layer-cake rearrangement (RR), translations, J_alpha(\u03b4) and constant 4\u03c0C_N",
+      "verdict": "PASS",
+      "reason": "Both factors are written as layer-cake integrals of indicators of disks B_R(0) and B_S(W). Then |B_R(0)\u2229B_S(W)|<=min(\u03c0R^2,\u03c0S^2)=|B_R(0)\u2229B_S(0)|, and Tonelli for nonnegative extended-valued functions gives (RR) without assuming finiteness. The translated profile reduces to (RR) with displacement Z-W. Summing the two envelope terms gives 2C_N\u00b72\u03c0\u222b_0^1 r^{1-\u03b1}(\u03b4+r)^{-1/2}[1+log(1+\u03b4/r)]dr=4\u03c0C_N J_\u03b1(\u03b4). The full Riesz weight is kept; no mass/energy substitution or covariance drop occurs."
+    },
+    {
+      "claim": "C5: Scalar majorants B_alpha (\u03b1>3/2), B_0 and B_{0,q} (\u03b1=3/2), far-region C_F, B_F, assembly, and the q=\u03b1-1 endpoint; constants uniform in h,Z,W",
+      "verdict": "PASS",
+      "reason": "The substitution r=\u03b4s gives the prefactor \u03b4^{3/2-\u03b1} and upper limit 1/\u03b4>=1. On s<=1, log(1+1/s)<=log2+log(1/s) and \u222b_0^1 s^{1-\u03b1}log(1/s)ds=(2-\u03b1)^{-2}. On s>=1, the integrand is at most (1+log2)s^{1/2-\u03b1}, which integrates to 1/(\u03b1-3/2). B_\u03b1 is correct. Since \u03b4<=1, \u03b4^{3/2-\u03b1}<=\u03b4^{1/2-q} exactly when q>=\u03b1-1, so the endpoint is included. At \u03b1=3/2: B_0=2(1+log2)+4 is correct, as is the log(1/\u03b4) term. The bound \u03b4^\u03b7log(1/\u03b4)<=1/(e\u03b7) follows from max x e^{-\u03b7x}=1/(e\u03b7). For z<1/2: D>=\u03b4>3/4 gives sqrt D>=\u221a3/2 and C_F=C_E/(\u03c0^2\u221a3). The bound k>=4ab gives 1+log(1/k)<=1+log(1/a)+log(1/b), split into the two f_0 terms. B_F=1/(2-\u03b1)+1/(2-\u03b1)^2 is correct. Assembly: G_1(Z)^{2q-1}=(2\u03c0)^{1-2q}\u03b4^{1/2-q}. For z<1/2, \u03b4<=1 gives G_1^{2q-1}>=(2\u03c0)^{1-2q}, so the max-constant C_{\u03b1,q} is valid. No constant depends on h, Z or W."
+    },
+    {
+      "claim": "C6: Ordinary-wave corollary \u00a78a: I_alpha(h;Z,W)<=(2\u03c0)^{2-2q}C_{\u03b1,q}h^{2-\u03b1}G_h(Z), and admissibility of q=\u03b1/2",
+      "verdict": "PASS",
+      "reason": "On |Z|<h, G_h(Z)>=1/(2\u03c0h). Since p-1<0, G^{p-1}<=(2\u03c0h)^{1-p}, which is the correct direction. The power is 2q-\u03b1+(2-2q)=2-\u03b1 and the constant is (2\u03c0)^{2-2q}C. Both sides vanish for |Z|>=h. For \u03b1\u2208[3/2,2), q=\u03b1/2 lies in [3/4,1)\u2282(1/2,1), and \u03b1/2>=\u03b1-1 holds exactly because \u03b1<=2. The text says plainly that this restores only the ordinary G form for one gap h, and that the remote temporal covariance and singular-gap cost remain. It does not claim an all-order algorithm."
+    },
+    {
+      "claim": "C7: Supplied positive-measure necessity proof and resulting exact q threshold in q\u2208(1/2,1), \u03b1\u2208[3/2,2)",
+      "verdict": "PASS",
+      "reason": "Rechecked (LB): |y|<\u03b5/16<u and 1-9\u03b5/8<|Z-y|<1-7\u03b5/8<1-u. G_u(y)>=1/(\u03c0\u03b5) and (1-u)^2-|Z-y|^2<=9\u03b5/4, so G_{1-u}>=1/(3\u03c0\u221a\u03b5). Also |W-y|^{-\u03b1}>=8^\u03b1\u03b5^{-\u03b1}. The cell volume is \u03c0\u03b5^3/1024, which gives 8^\u03b1\u03b5^{3/2-\u03b1}/(3072\u03c0). Next, |Z|<=1-15\u03b5/16 and 1-|Z|^2>=1-|Z| give A_q. The (WC) constraint becomes \u03b5^{1+q-\u03b1}\u00b7const<=C, which fails as \u03b5\u21920 iff q<\u03b1-1, on open Z,W sets. The time-reversal identity I(1;Z,W)=I(1;Z,Z-W) is correct. The coincident finiteness bounds (4\u221a2 log(1/r) and 2\u03c0) also check out. Combined with C1\u2013C5: for \u03b1\u2208(3/2,2) and q\u2208(1/2,1), (WC) holds iff q>=\u03b1-1, endpoint included. At \u03b1=3/2 every q\u2208(1/2,1) passes. No numerical premise is used."
+    },
+    {
+      "claim": "C8: Covariance-only mass-one positive smoothing, failure of the same compact-support RHS under Gaussian Green smoothing, boundary values, no passage to the moment series",
+      "verdict": "PASS",
+      "reason": "Under Tonelli, the covariance smoothing (|\u00b7|^{-\u03b1}*p_\u03b5)(W-y) turns the left side into \u222bp_\u03b5(v)I_\u03b1(h;Z,W-v)dv. The uniform-W bound and \u222bp_\u03b5=1 then preserve the constant for every \u03b5, with the Green factors unsmoothed. Gaussian-convolved Green factors are strictly positive, so the left side is positive for |Z|>=h while the stated right side is 0. The correctly stated negative remark holds, and the note asserts no replacement. It explicitly disclaims any bound on the full moment series."
+    },
+    {
+      "claim": "C9: Global scope: time covariance/remote-gap costs, pairing elimination, factorial accounting, anisotropic/d3/sharpness/novelty/Lean remain open; every new claim assessed",
+      "verdict": "PASS",
+      "reason": "The (T-b)^{-\u03b10} pullout cost is consistent with diagram-context \u00a73. The note states in \u00a7\u00a71, 8a and 9 that it gives no accumulation control, closed fractional family, pairing removal, factorial denominator, d3/anisotropic extension or full-moment bound. Sharpness of the constants is disclaimed. No Lean or novelty claim is made. The threshold claim in \u00a78 is labelled a candidate pending review of both arguments. All remarks in \u00a7\u00a78, 8a and 9, and the disposition table, were checked. The table rows agree with the verified mathematics."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "\u00a74/\u00a77: the profiles f_\u03b4 and f_0 include the indicator 1_(0<r<1), so f(0)=0. The profile is therefore not literally decreasing at r=0, and its superlevel sets are punctured disks rather than disks. This differs from the hypothesis of (RR) only on a null set, and the \u00a75 null-endpoint remark covers it in spirit. Stating 1_(0<=r<1) with value +\u221e at 0, or citing the null modification explicitly, would be cleaner.",
+      "\u00a78a: the corollary is the q=1 form of (WC), which lies outside the originally stated window q\u2208(1/2,1). It is correctly derived as a consequence of an in-window q, not a new range claim. A one-line note that it is weaker than (WC) at the same q (because G^p<=(2\u03c0h)^{1-p}G) would help readers decide which form an eventual iteration needs.",
+      "boundary-probe.md \u00a75 still lists 'Endpoint q=\u03b1-1 and range q>\u03b1-1' as OPEN. That reflects its earlier status, but a reader combining the files should be told that sufficiency-screen.md is the later candidate addressing that row, so the two do not look contradictory.",
+      "The process statement 'The bounded falsification screen found no defect' (\u00a7 preamble) is not itself checkable from the packet. It carries no mathematical weight, since the full argument is supplied and was rederived here.",
+      "The constant B_{0,q} blows up like 1/(e(q-1/2)) as q\u21921/2 at \u03b1=3/2. This is consistent with the explicit exclusion of q=1/2, but anyone choosing q for an iteration should note it."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is an AI review, not human verification or a novelty audit. All algebra was rederived by hand reasoning; no symbolic or numerical computation was run (none was permitted).",
+    "The scope is the deterministic two-wave spatial inequality (WC), its ordinary-wave corollary, the smoothing remarks and the necessity probe. The full Stratonovich moment theorem, the all-order pairing/factorial accounting and the temporal remote-gap accumulation were not reviewed and remain open.",
+    "Optimality of the constants and sharpness of the \u03b1=3/2 logarithmic majorant were not assessed (neither is claimed).",
+    "The external sources cited in diagram-context.md (BNZ, Balan) were not consulted. The reviewed argument is self-contained and does not rely on them."
+  ]
+}

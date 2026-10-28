@@ -874,3 +874,28 @@ A distinct frozen source-bound Opus review C1--C9 is assigned to this new
 upper proof and its necessity/consumer boundaries. All claims remain
 candidates until the actual review disposition; the old medium report is
 not rewritten or counted as acceptance of these new deductions.
+
+
+### Accepted deterministic weighted two-wave lemma
+
+Fresh native Opus5.5: PASS_WITH_NOTES/high, all9checks PASS, complete
+source delivery verified, accepted=true, no required repairs. Exact frozen
+source checkpoint197c6678f20a2de5f8a744d25915393e28a4ae90; report and
+full native evidence in reviews/2026-10-28-wc-probe/. The preceding medium
+diagnostic report is preserved unchanged, not upgraded.
+
+Accepted bounded result: for d2 Riesz3/2<=alpha<2, uniform remote-point
+weighted two-wave estimate(WC) with exact q threshold in(1/2,1), and
+I_alpha<=C_alpha h^(2-alpha)G_h. Covariance-only smoothing is uniform.
+The proof uses exact time integration, elementary elliptic/log bounds and
+disk layer cake, without numerical premises. This is not Goal G:upper.
+
+All five minor findings adjudicated in the checkpoint README: null-value
+profile modification; weaker ordinary-G form; historical OPEN row; no weight
+on author's self-audit assertion; excluded q=1/2 constant blowup. Frozen
+proof bytes retained. No new mandatory repairs.
+
+Next consumer audit must retain terminal-vertex geometry, the temporal
+covariance and merged-gap factors. Full range, general anisotropy/d3, sharp
+constant and Lean remain unfinished; Round4's separate medium acceptance
+boundary is unchanged. No whole-paper or circulation clearance follows.
