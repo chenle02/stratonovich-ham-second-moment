@@ -974,3 +974,21 @@ deployed Ruff0.11.13 were used; earlier tooling failures retained.
 Publication receipt/log archive: reviews/2026-10-28-wiki-propagation/.
 Local/origin/<HUB> parity observed at84fd5b9a; the clean fully published
 isolated clone was retired. No canonical wiki WIP or source adapter modified.
+
+
+### Full-Riesz candidate written and frozen for review
+
+New Section7 contains L:static-holder-input(7.1), P:static-holder-upper(7.2)
+and R:static-holder-scope(7.3). Worker DONE_WITH_CONCERNS; root read the
+complete proof and source/application audit, found no analytic defect, and
+verified deleting the new295-line section recovers the prior source exactly.
+A pre-freeze literal exponent-comma typo was corrected; earlier hashes remain
+in the worker report as draft history. Final35page build has0errors,
+0undefined references/citations,0overfull boxes,0tabs.
+
+TeX c21b9e691a8a81b5414b65a53b0411b3894bd002d6a058686f7bb9e1e15dff3a;
+PDF d6e937e540175383dc8153a52b905643221c8f0d4706a58318289b21674cea72.
+The accepted abstract/global scope is deliberately unchanged until review.
+Fresh native Opus C1--C10 is assigned with27typed/hash-bound source pages,
+full candidate and exact source map. No acceptance yet. The independent
+weighted-wave lemma is not a premise of the new interpolation proof.

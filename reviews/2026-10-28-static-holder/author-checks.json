@@ -1,0 +1,53 @@
+{
+  "scope": "author diagnostics only; numerical values are not certified enclosures",
+  "parameters": {
+    "alpha": "7/4",
+    "alpha0": "3/16",
+    "theta": "7/32",
+    "b0": "6/7",
+    "beta": "49/25"
+  },
+  "amplitude": "3/7",
+  "time": "2/3",
+  "precision_decimal_digits": 60,
+  "exact_affine_and_interval_checks": true,
+  "exact_counts": [
+    {
+      "k": 1,
+      "pairings": 1,
+      "splits": 3,
+      "full_disjoint_components": 3,
+      "empty_chain_components": 2
+    },
+    {
+      "k": 2,
+      "pairings": 3,
+      "splits": 5,
+      "full_disjoint_components": 15,
+      "empty_chain_components": 6
+    }
+  ],
+  "same_chain_k1_floating_holder_check": [
+    {
+      "d": 2,
+      "target_J02": "6.3109248816482023308569910905542602",
+      "low_J02": "0.80708179917127923708411396549486036",
+      "static_J02": "56.72533903482204974387213725124974",
+      "holder_rhs": "22.375697101748860145915229793204048",
+      "ratio": "0.2820437214961650203482032968360453"
+    },
+    {
+      "d": 3,
+      "target_J02": "1.3559137961496113105251220978934836",
+      "low_J02": "0.51380423127043778857202065340200226",
+      "static_J02": "2.2083786923624228096684926958585207",
+      "holder_rhs": "1.6052565521163009008711833364191414",
+      "ratio": "0.84467108660110007276492514390243672"
+    }
+  ],
+  "not_claimed": [
+    "finite counts as all-order proof",
+    "numerical inequality as analytic proof",
+    "static coefficient constant evaluated"
+  ]
+}

@@ -1934,6 +1934,301 @@ $G_{h,\eta}=p_\eta*G_h$, with $G_{h,0}=G_h$.
   acceptance remains pending.
 \end{remark}
 
+\section{Riesz bounds by interpolation with static noise}
+\label{S:static-holder}
+
+\myCmts{Candidate argument, pending independent review. This section concerns
+  isotropic Riesz covariance in dimensions two and three. It does not promote
+  the preceding candidate, settle general anisotropic covariance, or identify
+  the sharp constant. The accepted scope stated elsewhere is unchanged.}
+
+We use the static Stratonovich model of Chen--Hu as one input and the
+space-degree-one estimate of Section~\ref{S:d1-upper} as the other.
+For $d \in \{2,3\}$, $c > 0$, and $0 < \lambda < \min\{2,d\}$, write
+\[
+  \gamma_\lambda(x)=c|x|^{-\lambda},\qquad
+  \gamma_{\lambda,\epsilon}=p_\epsilon*\gamma_\lambda.
+\]
+All these covariances use the same amplitude $c$ and Gaussian convention.
+They are nonnegative, locally integrable, and homogeneous. Their nonnegative
+definiteness follows from
+\[
+  \gamma_\lambda(x)=\frac{c}{\Gamma(\lambda/2)}
+  \int_0^\infty s^{\lambda/2-1}e^{-s|x|^2}\ud s.
+\]
+Indeed, each Gaussian is positive definite. For a Schwartz autocorrelation
+$\psi$, the integral $\int |x|^{-\lambda}|\psi(x)|\ud x$ is finite by
+$\lambda < d$ and rapid decay. Tonelli with $|\psi|$, followed by Fubini,
+therefore justifies the positive Gaussian mixture as a tempered distribution.
+The source hypotheses for the Riesz covariances below are thus satisfied.
+
+\begin{lemma}[Static coefficient input]\label{L:static-holder-input}
+  Let $U_n(t,x)$ be the ordered Stratonovich integrals for static Gaussian
+  noise with covariance $\gamma_\beta$, where
+  $d \in \{2,3\}$ and $1 < \beta < 2$. Put $U_0=1$ and
+  \[
+    B_k(t)=\sum_{m=0}^{2k}\E[U_m(t,x)U_{2k-m}(t,x)].
+  \]
+  Then $B_0=1$, and there is a finite constant
+  $C_{\rm st}=C_{\rm st}(\beta,c,d)>0$ such that
+  \begin{equation}\label{E:static-holder-input}
+    0\le B_k(t)\le
+    \frac{C_{\rm st}^{\,k}t^{(4-\beta)k}}{(k!)^{3-\beta}},
+    \qquad k\ge1,\quad t>0.
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  The static solution has data $(1,0)$ and wave operator $\Delta$, as here.
+  The degree satisfies $\beta<\min\{2,d\}$, so the Riesz covariance meets
+  the source's Dalang condition. From
+  Chen--Hu~\cite{chen.hu:25:hyperbolic}*{Theorem~3.8(i), p.~2165},
+  the fixed-order integrals exist in $L^2$. Their product rule and Wick
+  expectation formula in that source's (2.17) and (2.19),
+  pp.~2151--2152, identify $B_k$ with the complete nonnegative sum over
+  the $2k+1$ splits and every pairing of the $2k$ vertices. In particular,
+  it includes within-chain pairs; no orthogonality of different orders
+  is asserted. Empty chains contribute the factor one.
+
+  From~\cite{chen.hu:25:hyperbolic}*{(5.1), p.~2173, and (5.15), p.~2180},
+  specialized to $p=2$, we have
+  \[
+    B_k(t)=t^{(4-\beta)k}B_k(1),\qquad
+    \limsup_{k\to\infty}\frac1k
+    \log\left((k!)^{3-\beta}B_k(1)\right)<\infty.
+  \]
+  Only the finite upper coefficient rate from the latter formula is
+  used. Choose $R>0$ larger than this upper limit. For some $k_0\ge1$,
+  $(k!)^{3-\beta}B_k(1)\le e^{Rk}$ for all $k\ge k_0$.
+  Each of the remaining coefficients is finite by the fixed-order
+  $L^2$ property. Increase $e^R$, if necessary, to a finite positive
+  $C_{\rm st}$ that also dominates
+  $\left((k!)^{3-\beta}B_k(1)\right)^{1/k}$ for $1\le k<k_0$.
+  Homogeneity gives~\eqref{E:static-holder-input}. The source results
+  are imported inputs; this finite-order enlargement is the only
+  deduction about their constant needed here. This proves
+  Lemma~\ref{L:static-holder-input}.
+\end{proof}
+
+\begin{proposition}[Interpolation bound for Riesz covariance]
+\label{P:static-holder-upper}
+  Suppose that $d \in \{2,3\}$, $c > 0$, $0 < \alpha_0 < 1$, and
+  $1 < \alpha < 2-\alpha_0$. Let the spatial covariance be
+  $\gamma_\alpha(x)=c|x|^{-\alpha}$, and let $A_k(t)$ denote the full
+  total-order-$2k$ coefficient of the second moment, as in
+  Proposition~\ref{P:mixed}. Choose and fix
+  \begin{equation}\label{E:static-holder-parameters}
+    \alpha_0<\vartheta<2-\alpha,\qquad
+    b_0=\frac{\alpha_0}{\vartheta},\qquad
+    \beta=\frac{\alpha-\vartheta}{1-\vartheta}.
+  \end{equation}
+  Let $V_1$ be the spectral mass of the unit ball for $\gamma_1$, in
+  the convention of Lemma~\ref{L:alpha-one-convolution}, and define
+  \[
+    Z_{b_0}=\frac2{(1-b_0)(2-b_0)},\qquad
+    C_{\rm low}=2Z_{b_0}\pi V_1,\qquad
+    C=C_{\rm low}^{\,\vartheta}C_{\rm st}^{\,1-\vartheta},
+    \qquad q=3-\alpha,
+  \]
+  where $C_{\rm st}$ is supplied by Lemma~\ref{L:static-holder-input}
+  for the displayed $\beta$. Then, for every $k\ge1$, $t>0$, and
+  $x\in\R^d$,
+  \begin{equation}\label{E:static-holder-upper}
+    A_k(t)\le\frac{C^kt^{(4-\alpha-\alpha_0)k}}{(k!)^{3-\alpha}},
+    \qquad
+    \E u^2(t,x)\le\exp\left(qC^{1/q}t^\kappa\right).
+  \end{equation}
+  The finite constants may depend on $\alpha,\alpha_0,c,d$ and the fixed
+  choice of $\vartheta$, but not on $k,t,x$.
+\end{proposition}
+
+\begin{proof}
+  The interval for $\vartheta$ is nonempty by $\alpha+\alpha_0<2$.
+  Since $\alpha>1$, we have $0<\vartheta<1$, $0<b_0<1$, and
+  \[
+    \beta-1=\frac{\alpha-1}{1-\vartheta}>0,\qquad
+    2-\beta=\frac{2-\alpha-\vartheta}{1-\vartheta}>0.
+  \]
+  Thus, both endpoint covariances are admissible in dimensions two and
+  three. Moreover,
+  \begin{equation}\label{E:static-holder-affine}
+    \alpha=\vartheta+(1-\vartheta)\beta,
+    \qquad \alpha_0=\vartheta b_0.
+  \end{equation}
+
+  Fix $k\ge1$ and $t>0$. Use a common spatial noise width
+  $\epsilon>0$ and the target's temporal cutoff width $\delta>0$.
+  The covariance on each pairing edge has spatial width $2\epsilon$.
+  In dimension three first use $G_{h,\eta}=p_\eta*G_h$ with
+  $\eta>0$; in dimension two take $\eta=0$. For each split $m+n=2k$
+  and pairing $D\in\Pi_k$, use the two separate roots, increments
+  $h_l=s_l-s_{p(l)}$, and positions $x_l$ of
+  Section~\ref{S:d1-upper}. Define a common positive measure
+  $\nu_{k,t,\eta}$ by
+  \[
+    \int\Phi\ud\nu_{k,t,\eta}
+    :=\sum_{m=0}^{2k}\sum_{D\in\Pi_k}
+    \int_{[0,t]^m_<\times[0,t]^{2k-m}_<}\ud s
+    \int\Phi(m,D,s,y)\prod_{l=1}^{2k}G_{h_l,\eta}(\ud y_l).
+  \]
+  Here $y_l$ are vector increments and each $x_l$ is their cumulative
+  sum within its own chain. Empty blocks have empty products and their
+  own root conventions. This measure is finite: the spatial mass at
+  fixed times is $\prod_lh_l$, the time domains are bounded, and both
+  discrete sums are finite. It is the same measure for all three
+  covariance profiles.
+
+  For $\lambda\in\{1,\alpha,\beta\}$ and $b>0$, put
+  \[
+    H_\lambda=\prod_{(i,j)\in D}
+      \gamma_{\lambda,2\epsilon}(x_i-x_j),\qquad
+    T_b=\prod_{(i,j)\in D}|s_i-s_j|^{-b}.
+  \]
+  The pointwise identity
+  $\gamma_\alpha=\gamma_1^{\vartheta}\gamma_\beta^{1-\vartheta}$
+  retains the amplitude $c$, since $c^\vartheta c^{1-\vartheta}=c$.
+  H\"older's inequality on the Gaussian probability measure gives
+  \[
+    \gamma_{\alpha,2\epsilon}(z)
+    \le\gamma_{1,2\epsilon}(z)^\vartheta
+       \gamma_{\beta,2\epsilon}(z)^{1-\vartheta},
+    \qquad z\in\R^d.
+  \]
+  These convolutions are finite because the degrees are below $d$.
+  Let $Q_\delta$ denote the product of the target's truncated temporal
+  covariances. From the regularization in
+  Chen~\cite{chen:author2026:time-dependency}*{(2.9), (2.11)},
+  \[
+    0\le Q_\delta\le T_{\alpha_0}=T_{b_0}^{\,\vartheta}.
+  \]
+  This uses only domination by the raw temporal power; no interpolation
+  property of distinct temporal cutoffs is required.
+
+  Let $A_k^{\epsilon,\delta,\eta}(t)=\int Q_\delta H_\alpha
+  \ud\nu_{k,t,\eta}$ be the target regularized coefficient. The
+  Gaussian moment formula and the separate chain reversals in
+  Proposition~\ref{P:mixed} identify it with the finite sum of
+  regularized mixed moments. Also set
+  \[
+    L_k^{\epsilon,\eta}(t)=\int T_{b_0}H_1\ud\nu_{k,t,\eta},
+    \qquad
+    B_k^{\epsilon,\eta}(t)=\int H_\beta\ud\nu_{k,t,\eta}.
+  \]
+  The second expression is the actual regularized static coefficient,
+  by the Gaussian moment formula with all pairings and splits. The first
+  is a deterministic integral with raw temporal covariance. We do not
+  identify it with a stochastic integral having mixed regularizations.
+  H\"older's inequality on the full measure, including its two discrete
+  variables, yields
+  \begin{equation}\label{E:static-holder-regularized}
+    A_k^{\epsilon,\delta,\eta}(t)
+    \le\left(L_k^{\epsilon,\eta}(t)\right)^\vartheta
+       \left(B_k^{\epsilon,\eta}(t)\right)^{1-\vartheta}.
+  \end{equation}
+
+  The deterministic estimates in the proof of
+  Proposition~\ref{P:low-alpha-upper}, at spatial degree one and
+  temporal degree $b_0$, apply to $L_k^{\epsilon,\eta}$.
+  In detail, Lemma~\ref{L:alpha-one-convolution} gives the closing
+  bound $\pi V_1/2$, uniformly in both smoothing widths. Descending
+  integration and the opening arithmetic--geometric mean give the
+  common spatial bound $(\pi V_1)^kt^k/k^k$.
+  The temporal pairing sum is symmetric on the full time cube. Its
+  integral, after summing every split as in~\eqref{E:d1-time-symmetry},
+  is $2^k(Z_{b_0}t^{2-b_0})^k/k!$. Hence,
+  \begin{equation}\label{E:static-holder-low}
+    L_k^{\epsilon,\eta}(t)
+    \le\frac{C_{\rm low}^{\,k}t^{(3-b_0)k}}{k!\,k^k}
+    \le\frac{C_{\rm low}^{\,k}t^{(3-b_0)k}}{(k!)^2}.
+  \end{equation}
+  The raw temporal integral is finite since $b_0<1$. The static
+  regularized coefficient is finite because its covariance is bounded
+  at fixed $\epsilon$. Thus, the H\"older step has finite right side.
+
+  We pass to fixed-order limits before using the static coefficient
+  bound. In dimension three fix $\epsilon,\delta$ and let
+  $\eta\downarrow0$. The target and static smoothed covariance
+  factors are bounded continuous functions of the spatial positions.
+  Products of the finite Green measures converge weakly with masses
+  $\prod_lh_l$. A constant times this product dominates each time
+  integrand at fixed noise smoothing, so dominated convergence applies
+  on the bounded time simplexes. The same argument with two Green
+  widths gives a common mixed covariance limit, and hence fixed-order
+  $L^2$ convergence. This identifies the static limit with
+  the measure convention of
+  Chen--Hu~\cite{chen.hu:25:hyperbolic}*{(2.22), pp.~2152--2153}.
+  The target uses the corresponding inner limit in
+  Chen~\cite{chen:author2026:time-dependency}*{pp.~13--14}.
+  We need no limit identification for $L_k^{\epsilon,\eta}$:
+  its uniform upper bound in~\eqref{E:static-holder-low} suffices.
+
+  Next let the noise-smoothing parameters tend to zero. From
+  Chen--Hu~\cite{chen.hu:25:hyperbolic}*{Theorem~3.8(i), p.~2165},
+  each fixed static order converges in $L^2$ to $U_n$.
+  For the target, the fixed-order $L^2$ convergence follows from
+  Chen~\cite{chen:author2026:time-dependency}*{Theorem~4.1}, as used in
+  Proposition~\ref{P:mixed}. If $Y,Y',Z,Z'$ are the corresponding
+  approximations and limits, then
+  \[
+    \|YZ-Y'Z'\|_1
+    \le\|Y-Y'\|_2\|Z\|_2+\|Y'\|_2\|Z-Z'\|_2.
+  \]
+  Therefore, every fixed split product converges in $L^1$. The finite
+  sums over the $2k+1$ splits converge as well; a zero-order factor
+  stays equal to one. This argument applies directly in dimension two,
+  where no Green smoothing is needed. Passing to these limits
+  in~\eqref{E:static-holder-regularized}, using
+  \eqref{E:static-holder-low}, gives
+  \[
+    A_k(t)\le
+    \left(\frac{C_{\rm low}^{\,k}t^{(3-b_0)k}}{(k!)^2}\right)^\vartheta
+    B_k(t)^{1-\vartheta}.
+  \]
+  Only now apply Lemma~\ref{L:static-holder-input}. No monotonicity
+  in $\epsilon$ and no uniform static large-time bound in that
+  parameter have been assumed.
+
+  The powers combine without a counting loss. Indeed,
+  by~\eqref{E:static-holder-affine},
+  \[
+    \begin{split}
+      2\vartheta+(1-\vartheta)(3-\beta)&=3-\alpha,\\
+      \vartheta(3-b_0)+(1-\vartheta)(4-\beta)
+      &=4-\alpha-\alpha_0.
+    \end{split}
+  \]
+  This proves the coefficient bound in~\eqref{E:static-holder-upper}.
+  The constant term is $A_0=1$. Since $q=3-\alpha>1$, the scalar
+  inequality $\sum_{k\ge0}z^k/(k!)^q\le e^{qz^{1/q}}$ proved in
+  Proposition~\ref{P:d1-upper} applies with
+  $z=Ct^{4-\alpha-\alpha_0}$. Proposition~\ref{P:mixed} identifies
+  the nonnegative full coefficient series with $\E u^2(t,x)$.
+  Here $(4-\alpha-\alpha_0)/q=\kappa$. This proves
+  Proposition~\ref{P:static-holder-upper}.
+\end{proof}
+
+\begin{remark}[Calibrations and remaining scope]\label{R:static-holder-scope}
+  The time exponent in~\eqref{E:static-holder-upper} tends to
+  $(4-\alpha)/(3-\alpha)$ as $\alpha_0\downarrow0$, in agreement
+  with the Chen--Hu static exponent. This does not interchange the
+  static and large-time limits or assert uniformity of the constants.
+  Cauchy--Schwarz gives $\E u(t,x)\le
+  \exp(qC^{1/q}t^\kappa/2)$; together with Theorem~\ref{T:first}
+  and Proposition~\ref{P:Jensen}, this implies $2L_*\le qC^{1/q}$.
+  Thus, the first-moment and Jensen calibrations are retained, without
+  identifying a sharp constant. The Skorohod comparison remains only
+  the comparison recorded in Remark~\ref{R:higher-calibrations}; its
+  exponent agrees, but its solution concept and covariance normalization
+  differ. No Skorohod estimate is used in this proof. The argument covers
+  isotropic Riesz covariance throughout the stated higher-degree range
+  in dimensions two and three, including the previously uncovered
+  two-dimensional interval $3/2\le\alpha<2-\alpha_0$.
+  It does not prove the full homogeneous-covariance goal: arbitrary
+  anisotropic profiles need not factor into admissible endpoint
+  covariances as above. The sharp second-moment constant, novelty and
+  formal verification remain open.
+\end{remark}
+
 \section{Targets}\label{S:targets}
 
 \begin{goal}[Upper bound at the correct scale]\label{G:upper}
