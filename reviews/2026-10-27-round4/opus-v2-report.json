@@ -1,0 +1,93 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "medium",
+  "source_coverage": [
+    ".review/required-sources.json: lines 1-111 (read plan only; earns no read credit)",
+    "candidate.tex: lines 1-2006, complete (read as 1-905, 906-1465, 1466-2006). Section 6 (lines 1546-1933) checked line by line. Sections 1-5 read in full as context and as the inputs Section 6 relies on.",
+    "source-map.md: lines 1-51, complete",
+    "balan-conus-02.png (journal p.1489): full page",
+    "balan-conus-03.png (journal p.1490): full page",
+    "balan-conus-05.png (journal p.1492): full page",
+    "balan-conus-07.png (journal p.1494): full page",
+    "chen-02.png (author version p.2): full page",
+    "chen-03.png (p.3): full page",
+    "chen-07.png (p.7): full page",
+    "chen-08.png (p.8): full page",
+    "chen-09.png (p.9): full page",
+    "chen-10.png (p.10): full page",
+    "chen-11.png (p.11): full page",
+    "chen-13.png (p.13): full page",
+    "chen-14.png (p.14): full page",
+    "chen-22.png (p.22): full page",
+    "chen-30.png (p.30): full page",
+    "chen-37.png (p.37): full page",
+    "chen-hu-04.png (journal p.2147): full page"
+  ],
+  "checks": [
+    {
+      "claim": "C1: The standing covariance (nonnegative, nonnegative definite, homogeneous) and the exact scope d in {2,3}, 1<alpha<2-alpha0 are used. The extra convolution hypothesis is discharged only in the stated subclasses. There is no full-homogeneity claim and no novelty or Lean claim.",
+      "verdict": "PASS",
+      "reason": "The section opens by keeping the standing covariance assumptions with d in {2,3} and 1<alpha<2-alpha0. Proposition P:higher-transfer explicitly assumes both H:homog and H:spatial-maximum. Hypothesis H:spatial-maximum is discharged only for isotropic Riesz covariance: in d=3 for 1<alpha<2-alpha0, and in d=2 for 1<alpha<min{3/2,2-alpha0} (Corollary C:higher-riesz). Remark R:higher-calibrations says that arbitrary homogeneous covariances stay outside the argument even when alpha+alpha0<2. No novelty or Lean claim appears, and the section banner marks the content as a candidate."
+    },
+    {
+      "claim": "C2: The descending-label spatial invariant still holds with a negative closing exponent. It covers all pairings, block roots, empty blocks and Gaussian smoothing parameters. The opening AM-GM step is applied only to positive powers.",
+      "verdict": "PASS",
+      "reason": "Positions in each chain are partial sums of that chain's own increments, starting from its own root, and the Green factors depend only on increments. So when label l is integrated, the only remaining factor that depends on y_l is the covariance of l's own pair, and only when l is a closing label. That factor has the form gamma_eps(y_l+z) and is bounded by M h_l^{-delta}. This uses only H:spatial-maximum, which covers every per-edge width eps_e+eps'_e>0 (consistent with source (2.11) and the gamma_{2eps} of (2.9)) and every eta>=0. At an opening label the step gives the Green mass h_l, uniformly in eta. Empty chains add nothing. The negative powers h_j^{-delta} are kept in H_D rather than maximized. AM-GM is applied only to the k opening increments, whose sum is at most 2t, giving (2t/k)^k. The low-alpha Lemma L:d1-spatial is not invoked."
+    },
+    {
+      "claim": "C3: H\u00f6lder's inequality is applied on the joint measure (counting measure on pairings times Lebesgue measure on ordered times). Conjugate exponents exist exactly when alpha+alpha0<2. No individual-diagram symmetry is used, and time symmetry is used only after summing over pairings.",
+      "verdict": "PASS",
+      "reason": "Display (E:higher-holder) is H\u00f6lder's inequality on counting measure on Pi_k times Lebesgue measure on Omega_{m,n}. The two constraints are delta*r<1 (so H_D^r is integrable) and theta=alpha0*r'<1, which is equivalent to r>1/(1-alpha0). Both hold for some r exactly when delta<1-alpha0, that is, alpha+alpha0<2. The H-side is bounded diagram by diagram with a bound that does not depend on D. Permutation symmetry is applied only to sum_D T_D^{r'}, which is a symmetric function of all 2k times. This gives integral P_k (Z_theta t^{2-theta})^k/(m!n!) over the block-ordered region."
+    },
+    {
+      "claim": "C4: The Dirichlet integral is exact, with different closing counts in the two chains, the unused terminal gap, Gamma(1) conventions and positivity. The Gamma log-convexity step and the explicit lower bound for Gamma hold, including for finite k.",
+      "verdict": "PASS",
+      "reason": "Chain 1 has parameter 1-delta*r for each of its k_1 closing increments, 1 for its other increments, and 1 for the terminal gap. Its integral is t^{m-delta r k_1} Gamma(1-delta r)^{k_1}/Gamma(1+m-delta r k_1); chain 2 is the same with n and k_2. The product matches the display. An empty chain gives Gamma(1)=1. The arguments satisfy 1+m-delta r k_1 >= 1+m(1-delta r) > 0, and their average is 1+ak with a=1-delta*r/2. Log-convexity of Gamma gives Gamma(x)Gamma(y) >= Gamma((x+y)/2)^2. On [ak,ak+1] the integrand of Gamma(1+ak) is at least (ak)^{ak} e^{-ak-1}, so Gamma(1+ak) >= e^{-1}(a/e)^{ak} k^{ak} >= e^{-1}(a/e)^{ak}(k!)^a. Squaring and using e^{-2} >= e^{-2k} for k>=1 gives the D_a^{-k}(k!)^{2-delta r} bound with D_a=e^2(e/a)^{2a}."
+    },
+    {
+      "claim": "C5: Every pairing and split count, the factorial inequalities, the H\u00f6lder exponents, the powers of t and k, the scalar series, the k=0 term and the all-time bound with finite parameter-dependent constants are correct.",
+      "verdict": "PASS",
+      "reason": "The counting steps check out: P_k=prod(2j-1) <= 2^k k!; (2/k)^k <= 2^k/k!; m!n! >= (k!)^2 because C(2k,m) <= C(2k,k); and 2k+1 <= 3^k for k>=1. The power of t is 1+(2-delta r)/r+(2-theta)/r' = 3-delta-alpha0 = beta, using theta/r'=alpha0. The power of k! is -1+1-(2-delta r)/r-2/r' = -(2-delta) = -q. Together these give 4M[Gamma(1-delta r)D_a]^{1/r}Z_theta^{1/r'} and then K=12M[...]. Z_theta=2/((1-theta)(2-theta)) is the exact value of the double integral of |s-r|^{-theta} over [0,1]^2. Both Gamma(1-delta r) and Z_theta are finite. The series bound sum z^k/(k!)^q <= (sum z^{k/q}/k!)^q = e^{q z^{1/q}} for q>1 is the ell^q <= ell^1 inequality. The k=0 term equals A_0=1, and beta/q=kappa. The bound holds for every t>0."
+    },
+    {
+      "claim": "C6: The concrete spatial convolution estimates, wave normalization, finite constants and Gaussian averaging are correct, and the dimension restriction and endpoint exclusions are verified. Where the spatial maximum fails, the obstruction is shown rigorously without claiming that the moment theorem fails.",
+      "verdict": "PASS",
+      "reason": "The wave measures, their mass h and the scaling G_h(hA)=hG_1(A) match source (2.5) on p.7. The scaling identity G_h*gamma = c h^{1-alpha} F_d(z/h) holds. d=3: the closed form of F_3 is the standard spherical average. For rho<1 it is the average of the convex function (1+s)^{v-1} over [-rho,rho], so Hermite-Hadamard gives a nondecreasing derivative. For rho>1 every distance increases with rho. The maximum is therefore 2^{1-alpha}/(2-alpha). d=2: the ball estimate G_1(B(w,R)) <= 2R^{3/2} for R <= 1/4 is checked in both cases. For A<1/2 the density is at most 2/(pi sqrt7). For A >= 1/2, L+x>1 and the slice integral is at most 2 sqrt(2R), giving (2 sqrt2/pi)R^{3/2}. The layer-cake bound gives M_2 and needs alpha<3/2. Gaussian smoothing is a mass-one average of shifts by p_{eps+eta}, so both suprema are uniform in all widths. The d=3 optimality claim follows from Fatou at |z|=h with eta=0, using the approximate-identity convergence away from a single point of zero sphere measure. Obstructions: on the stated wedge 0<1-|y|^2 <= 2rho, so the d=2 Riesz integral diverges for alpha >= 3/2 (logarithmically at alpha=3/2). The product-covariance choice of a_1,a_2 satisfies 0<a_j<1 and a_1+a_2/2>1 for every 1<alpha<2. The Beta-function reduction is exact. The projection of the sphere measure onto two coordinates equals G_1^{(2)}, so the divergence carries over to d=3. The smoothed product kernel is handled coordinate by coordinate through Gaussian factorization and the one-dimensional approximate identity. Boundedness at spatial infinity is never used, and the singular axes or planes have zero Green measure. Taking eta=eps covers the case where both widths must be positive. Remark R:higher-calibrations states that these obstructions concern only the spatial supremum, not existence, moment finiteness or the time scale."
+    },
+    {
+      "claim": "C7: Regularization and limit order are correct: in d=3 the Green smoothing is removed first at fixed noise smoothing, then the noise smoothing is removed using fixed-order L2 and mixed L1 convergence, and the full series is a nonnegative sum. The supremum uniformities are enough.",
+      "verdict": "PASS",
+      "reason": "In d=3 the noise smoothing is fixed while eta tends to 0. The smoothed covariances are bounded and continuous, products of the finite Green measures converge weakly with masses prod h_l, and C*prod h_l is a dominating function on bounded simplices. A common joint limit for mixed eta values gives the L2 Cauchy property, matching the two-step definition on source pp.13-14. The noise smoothing is then removed using Theorem 4.1 (p.22) for fixed-order L2 convergence. The inequality ||YZ-Y'Z'||_1 <= ||Y-Y'||_2||Z||_2+||Y'||_2||Z-Z'||_2 gives L1 convergence of products at both stages. The bound is uniform in every parameter, so it passes to A_k(t). Proposition P:mixed holds under H:homog alone, with no alpha<=1 restriction, and supplies the nonnegative series sum_k A_k = E u^2."
+    },
+    {
+      "claim": "C8: The calibrations are sound: the static exponent, compatibility with p=1 and the Jensen bound, comparison only with Skorohod results, and no sharp constants or exact limit.",
+      "verdict": "PASS",
+      "reason": "Cauchy-Schwarz gives E u <= exp{qK^{1/q}t^kappa/2}. Together with the lower bound in Theorem T:first this gives 2L_* <= qK^{1/q}, and the argument is correct. As alpha0 tends to 0, kappa tends to (4-alpha)/(3-alpha), which is the Chen-Hu exponent in Theorem 1.2 (1.9), p.2147, valid for 0<alpha<2 and alpha<d. No limits are interchanged. Balan-Conus p.1489 defines the Riesz case (ii) for 0<alpha<d with temporal kernel H(2H-1)|t-s|^{2H-2}. Page 1490 states that (DC) holds iff a<2. Page 1492, Theorem 2.1(b), gives rho_w=(2H+2-a)/(3-a), and with H=1-alpha0/2 and a=alpha this equals kappa. Page 1494 confirms that their solution is a Skorohod mild solution. The candidate presents these only as comparisons, with a different solution concept and normalization, and identifies no constants."
+    },
+    {
+      "claim": "C9: Overall scope and hidden gaps, including every newly stated claim in the remarks.",
+      "verdict": "PASS",
+      "reason": "Every new statement in Section 6 was checked: the hypothesis, the transfer proposition, the Riesz lemma including the optimality of M_3, the Riesz corollary including the distributional Gaussian-mixture proof of positive definiteness, the obstruction proposition including the coordinatewise smoothing of the product kernel, and the calibration remark. No gap that blocks acceptance was found. The remaining issues are stale scope text outside Section 6, which the review contract says to defer, and a few terse justifications listed under minor findings."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Several scope statements outside Section 6 are now out of date: abstract lines 97-98, Remark R:d1-comparisons lines 1541-1543, the comment after Goal G:upper at lines 1947-1948, and route item G2 at lines 1990-1992. They still say that 1<alpha<2-alpha0 in d=2,3 is entirely open, while Section 6 now covers the stated Riesz subclasses conditionally. The contract says this text is deliberately left unpromoted until acceptance, so it is recorded here only for follow-up. If Section 6 is accepted, these lines should say that the general homogeneous case, d=2 Riesz with 3/2<=alpha<2-alpha0, and the sharp constants remain open.",
+      "In the proof of P:higher-transfer, the statement that the smoothed spatial covariances are bounded and continuous for a general covariance satisfying H:homog with alpha>1 relies on the ball-growth identity mu(B_R)=V R^alpha. That identity is derived inside Lemma L:low-alpha-convolution, which is stated for alpha<1, although the derivation itself does not use alpha<1. A one-line note that the identity holds for every degree alpha would remove any appearance of applying a low-alpha lemma at alpha>1.",
+      "The approximate-identity argument in Lemma L:higher-riesz ('a small neighborhood of x gives convergence by continuity') is terse. The standard order of limits (eps to 0, then neighborhood radius to 0) is implicit. It is correct as written, but one sentence would make it self-contained.",
+      "The optimality of M_3 is shown only through the eta=0, eps tending to 0 limit at h=1, with homogeneity extending it to all h. This is enough for the statement as made ('no smaller uniform constant'), but saying that the scaling in h is exact would make the claim fully explicit.",
+      "Corollary C:higher-riesz leaves d=2 Riesz covariance with 3/2<=alpha<2-alpha0 (possible only when alpha0<1/2) uncovered. Proposition P:higher-obstructions correctly shows that H:spatial-maximum fails there, and Remark R:higher-calibrations correctly states that this says nothing about the moment bound. It may help to name this case explicitly as an open subcase."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is an AI review of a frozen packet. It is not human verification, a novelty audit or clearance to circulate.",
+    "Sections 1-5 were read in full but treated as established inputs, as the contract instructs. Only their new uses in Section 6 were checked: Proposition P:mixed under H:homog, and the limit procedure modeled on P:low-alpha-upper. Their earlier proofs were not certified again.",
+    "Source results cited but not included in the packet (Chen Theorem 3.1 in full, the proof of Theorem 4.1, Lemma 2.5, equation (1.20) for the Brownian semigroup convention, Lemma A.1) were checked only against the visible statements on the supplied pages. Brownian semigroup was taken to mean variance eps*I.",
+    "The Balan-Conus and Chen-Hu pages were used only as comparisons. Their constants and solution concepts were not reconciled with this model.",
+    "No numerical or symbolic computation was run. All constants and integrals were checked by hand derivation."
+  ]
+}

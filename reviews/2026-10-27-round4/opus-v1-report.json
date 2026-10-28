@@ -1,0 +1,83 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "medium",
+  "source_coverage": [
+    ".review/required-sources.json lines 1-27 (read plan only; earns no read credit)",
+    "candidate.tex lines 1-1959 (complete: read as 1-909, 910-1459, 1460-1959)",
+    "source-map.md lines 1-30 (complete)",
+    "chen-03.png (single rendered page, viewed completely: source p.3, (1.5)-(1.10), homogeneous threshold alpha0+alpha<2)",
+    "chen-07.png (single rendered page, viewed completely: source p.7, (2.1)-(2.6), wave kernels and normalizations)",
+    "chen-13.png (single rendered page, viewed completely: source p.13, (2.23)-(2.25), G_eta convention)",
+    "chen-14.png (single rendered page, viewed completely: source p.14, two-step definition, (3.1)-(3.5))",
+    "chen-22.png (single rendered page, viewed completely: source p.22, Theorem 4.1, (4.1)-(4.4))",
+    "chen-37.png (single rendered page, viewed completely: source p.37, Remark 5.1 (5.8), Theorem 6.1)"
+  ],
+  "checks": [
+    {
+      "claim": "C1: Standing assumptions, the exact scope 1<alpha<2-alpha0 in d=2,3, the extra hypothesis discharged only in the stated subclasses, and no full-homogeneity, novelty or Lean claim",
+      "verdict": "PASS",
+      "reason": "Section 6 keeps the Section 5 standing assumptions: the covariance is nonnegative and nonnegative definite, distributionally if needed, and Hypothesis H:homog holds. It sets d in {2,3}, 1<alpha<2-alpha0 and delta=alpha-1. H:spatial-maximum is stated explicitly as an extra hypothesis. P:higher-transfer is conditional on it. C:higher-riesz discharges it only for the isotropic Riesz kernel c|x|^{-alpha}: in d3 for 1<alpha<2-alpha0, and in d2 for 1<alpha<min{3/2,2-alpha0}. R:higher-calibrations says that arbitrary homogeneous covariances remain outside the argument. There is no novelty claim and no Lean claim. The Riesz kernels are nonnegative, homogeneous of degree -alpha and locally integrable because alpha<d. The Gaussian mixture identity |x|^{-alpha}=Gamma(alpha/2)^{-1} int_0^infty s^{alpha/2-1} e^{-s|x|^2} ds is correct and gives positive definiteness."
+    },
+    {
+      "claim": "C2: The descending-label spatial invariant still holds with a negative closing exponent, for all pairings, block roots, empty blocks and Gaussian smoothing parameters; the opening AM-GM uses only positive powers",
+      "verdict": "PASS",
+      "reason": "The proof re-derives the invariant rather than importing L:d1-spatial. A position x_j depends only on increments in its own block with label at most j. So when label l is integrated, every remaining pair whose closing label is below l does not depend on y_l. At a closing label l=(i,l), the only factor involving y_l is gamma_eps(y_l+z), with z independent of y_l, and the uniform bound in z from H:spatial-maximum removes it as M h_l^{-delta}. At an opening label the partner is already gone, and the Green mass is h_l, including for G_{h,eta}. The second chain has its own root at zero, and empty chains are trivial. The hypothesis allows a separate positive width for each pair, covering 2eps and eps+eps' via p_eps*p_eps'=p_{eps+eps'}, and a separate nonnegative eta for each Green factor. AM-GM is applied only to the k opening increments, which have power one and sum to at most 2t, giving (2t/k)^k. The negative closing powers h_j^{-delta} are kept in H_D and handled by H\u00f6lder."
+    },
+    {
+      "claim": "C3: H\u00f6lder on the joint pairing/time measure; conjugate exponents feasible exactly when alpha+alpha0<2; time-factor symmetry used only after summing over pairings",
+      "verdict": "PASS",
+      "reason": "(E:higher-holder) is H\u00f6lder for counting measure on Pi_k times Lebesgue measure on Omega_{m,n}, which is valid for nonnegative functions. The constraints r>1/(1-alpha0) (equivalent to theta=alpha0 r'<1) and r<1/delta (equivalent to delta r<1) are compatible exactly when delta<1-alpha0, i.e. alpha+alpha0<2. The H_D^r integral is computed exactly for each individual D. Its only D-dependence is through the closing counts (k_1,k_2), which log convexity removes uniformly, so no diagram symmetry is used. The symmetry of sum_D T_D^{r'} under permutations of the 2k labels gives the full-cube integral P_k(Z_theta t^{2-theta})^k divided by m!n!. This symmetry is applied only to the sum over pairings, as the text states."
+    },
+    {
+      "claim": "C4: The Dirichlet integral with different closing counts in the two chains, the unused terminal gap, the Gamma(1) conventions and positivity; Gamma log convexity and the explicit Gamma lower bound for finite k",
+      "verdict": "PASS",
+      "reason": "In a chain of length m, the m increments have parameter 1-delta r at the k_1 closing labels and 1 elsewhere, and the terminal gap has parameter 1. This gives Gamma(1-delta r)^{k_1} t^{m-delta r k_1}/Gamma(1+m-delta r k_1). The product over the two chains matches the display, with time power (2-delta r)k. Since k_1<=m and delta r<1, each argument is at least 1+k_1(1-delta r)>0. An empty chain gives Gamma(1)=1. The average of the two arguments is 1+ak with a=1-delta r/2 in (1/2,1), so log convexity of Gamma gives the lower bound Gamma(1+ak)^2. On [ak,ak+1] we have x^{ak}>=(ak)^{ak} and e^{-x}>=e^{-ak-1}, so Gamma(1+ak)>=e^{-1}(a/e)^{ak}k^{ak}>=e^{-1}(a/e)^{ak}(k!)^a. Squaring and using e^{-2}>=e^{-2k} for k>=1 gives D_a^{-k}(k!)^{2-delta r}, with D_a=e^2(e/a)^{2a}."
+    },
+    {
+      "claim": "C5: Pairing and split counts, factorial inequalities, H\u00f6lder exponents, powers of t and k, the scalar series, k=0 and the all-time bound with finite constants",
+      "verdict": "PASS",
+      "reason": "I recomputed the combination. M^k(2t/k)^k times P_k^{1/r+1/r'}=P_k<=2^k k!, together with k^k>=k!, gives 4^k M^k t^k. The remaining factorial power is (2-delta r)/r+2/r'=2-delta=3-alpha=q. The time power is 1+(2/r-delta)+(2/r'-alpha0)=3-delta-alpha0=beta. Also m!n!>=(k!)^2 when m+n=2k, P_k=prod_{j=1}^k(2j-1)<=2^k k!, and 2k+1<=3^k for k>=1, so K=12M[Gamma(1-delta r)D_a]^{1/r}Z_theta^{1/r'}. K is finite because Gamma(1-delta r)<infty, theta<1 and a>1/2. Z_theta=2/((1-theta)(2-theta)) is the exact value of the cube integral. Since q in (1,2), the l^q<=l^1 step is valid; it includes the k=0 term A_0=1. With z=Kt^beta and beta/q=kappa this gives exp{qK^{1/q}t^kappa} for every t>0."
+    },
+    {
+      "claim": "C6: Concrete spatial convolution estimates, exact wave normalization, finite constants, Gaussian averaging, the dimension restriction and endpoint exclusions; the obstruction is rigorous and does not assert failure of the moment theorem",
+      "verdict": "PASS",
+      "reason": "The kernels G_h^{(2)}=1_{|y|<h}/(2pi sqrt(h^2-|y|^2)) and G_h^{(3)}=sigma_h/(4pi h) match source (2.5) on chen-07. Both satisfy G_h(hA)=hG_1(A), so the convolution equals c h^{-delta}F_d(z/h).\n\nd=3: Archimedes' formula gives F_3=((1+rho)^v-|1-rho|^v)/(2v rho) with v=2-alpha. For rho<1 this is the average of the convex function (1+s)^{v-1} on [-rho,rho], which increases in rho by the chord (Hermite-Hadamard) bound. For rho>1, F_3 decreases because each distance increases (derivative 2rho+2u>0). The maximum is 2^{1-alpha}/(2-alpha). Optimality follows from Fatou at the maximizing shift, since the singular point has zero sphere measure.\n\nd=2: I checked the ball bound G_1(B(w,R))<=2R^{3/2} for R<=1/4 in both cases. For A<1/2 the density is at most 2/(pi sqrt7). For A>=1/2, L+x>1, each slice integral of (L-x)^{-1/2} is at most 2sqrt(2R), and the mass is at most (2sqrt2/pi)R^{3/2}. The layer-cake split at level 4^alpha gives exactly M_2/c, which is finite iff alpha<3/2. Gaussian averaging works through the identity int G_{h,eta}(dy) gamma_eps(y+z) = int p_{eps+eps}... more precisely int p_{eps+eta}(w)(G_h*gamma)(z-w)dw.\n\nObstructions: on the wedge rho<1/2, phi in [2pi/3,4pi/3], we have 0<1-|y|^2<=2rho. This gives the lower bound (c/(3sqrt2)) int rho^{1/2-alpha} drho, which diverges for alpha>=3/2 (logarithmically at 3/2). For the product example, with alpha<=3/2 one gets a_1=(3-alpha)/2 and a_2=(3alpha-3)/2. With alpha>=3/2 one gets a_1=a_2=alpha/2. In both cases 0<a_i<1 and a_1+a_2/2>1. The substitution gives B((1-a_2)/2,1/2)/(2pi) times int u^{-a_1}(2u-u^2)^{-a_2/2}du, which diverges at u=0. The projection of G_1^{(3)} onto two coordinates equals G_1^{(2)}. The singular sets have zero Green measure, so Fatou shows that the smoothed convolutions are unbounded. R:higher-calibrations says the obstructions concern only the spatial supremum, not existence, moments or the time scale."
+    },
+    {
+      "claim": "C7: Regularization and limit order: in d=3 the Green smoothing is removed first at fixed noise smoothing, then the noise is removed via fixed-order L2 and mixed L1 convergence; the total series is nonnegative; the supremum uniformities suffice",
+      "verdict": "PASS",
+      "reason": "The order matches the source's two-step definition on chen-13 and chen-14: the eta-limit at fixed (eps,delta) first, then (eps,delta)->0. At fixed noise smoothing, gamma_eps is bounded and continuous because the Gaussian-weighted spectral measure is finite, and gamma^0_delta is bounded. The product Green measures converge weakly with masses prod h_l. Dominated convergence by C prod h_l on bounded simplexes gives a common joint covariance limit, hence the L2 Cauchy property. Products then converge in L1 by the displayed inequality. The noise limit uses Theorem 4.1 (chen-22), valid because H:homog implies (1.5) (chen-03). The bound holds uniformly over all eps, delta, eta, every eta>=0 width and all shifts z, which is exactly what the descending integration needs. A_k>=0, and E u^2=sum A_k comes from the established P:mixed under H:homog, whose proof does not restrict alpha."
+    },
+    {
+      "claim": "C8: Calibrations: static exponent, compatibility with p=1 and Jensen, Skorohod only as a comparison, no sharp constants and no exact limit",
+      "verdict": "PASS",
+      "reason": "Cauchy-Schwarz gives E u<=exp{qK^{1/q}t^kappa/2}. Combined with the imported lower bound in T:first (valid for 0<alpha<d), this gives 2L_*<=qK^{1/q}, consistent with the Jensen bound P:Jensen. As alpha0->0, kappa tends to (4-alpha)/(3-alpha), and no interchange of limits is claimed. The Skorohod (Balan-Conus) comparison is an exponent comparison only, explicitly not an input, and no [held back] identification is made. No sharp constant or exact limit is asserted."
+    },
+    {
+      "claim": "C9: Overall scope and hidden gaps in every newly stated claim, including remarks",
+      "verdict": "PASS",
+      "reason": "Every new statement checks out. That covers H:spatial-maximum, P:higher-transfer, L:higher-riesz including its optimality claim in d3, C:higher-riesz, both parts of P:higher-obstructions, and R:higher-calibrations. I found no genuine mathematical gap that blocks acceptance. The remaining issues are expository or cross-section consistency points, listed under minor findings."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Scope statements outside Section 6 are now stale if Section 6 is accepted. The abstract says 'The range alpha>1 in dimensions two and three ... remain open'. The comment after G:upper says '1<alpha<2-alpha0 in dimensions two and three remains open'. Route item G2 says the alpha>1 cases 'need a further estimate'. C:higher-riesz now covers isotropic Riesz in d3 for 1<alpha<2-alpha0 and in d2 for alpha<3/2. These should be reworded to 'general homogeneous covariance with alpha>1 remains open' once the section passes review. The Section 6 'UNREVIEWED' banner and the last sentence of R:higher-calibrations would also need updating.",
+      "L:higher-riesz says the wave measures were 'recalled in Section 5'. Section 5 recalls only the Fourier transform and the mass, not the explicit d2/d3 densities. The pointer should be to source (2.5) directly.",
+      "C:higher-riesz asserts nonnegative definiteness 'also as tempered distributions' through the Gaussian mixture. One sentence would make this explicit: Fubini against |phi-hat|^2 for Schwartz phi, or the positive Fourier constant of |x|^{-alpha} for 0<alpha<d. P:higher-obstructions makes the same brief tensor-product appeal for the product kernel.",
+      "In P:higher-transfer the regularized spatial covariance from source (2.23) is gamma_{2eps}. The text covers this through 'widths such as 2eps', but it could state once that every mixed-moment width has the form eps_e+eps_e'>0.",
+      "The pointwise convergence gamma_eps->gamma off the singular set, used in the optimality and obstruction Fatou arguments, is asserted without a sentence of proof. It is standard for locally integrable kernels that are continuous away from the singular set and bounded at infinity.",
+      "R:higher-calibrations says the Skorohod comparison 'has the same time exponent after matching parameters'. It does not check whether Balan-Conus Theorem 2.1(b) covers spatial exponents a>1 in d=2,3. Since this is a comparison only, a parenthetical scope caveat would be enough."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is an AI scoped mathematical review. It is not human verification, a novelty audit, Lean certification, or clearance for circulation.",
+    "Source pinpoints were checked only against the six supplied rendered pages: pp. 3, 7, 13, 14, 22 and 37. I did not inspect the source's Lemma 2.4/2.5, (2.9), (2.11), Lemma 4.4, Theorem 3.1 or Lemma A.1, so the inherited fixed-order and mixed-expansion inputs (P:mixed, L:crude-corrected, Theorem 4.1 usage) are taken as established Section 1-5 inputs, per source-map.md.",
+    "The Balan-Conus and Chen-Hu citations used for calibration were not available in the packet and were not checked.",
+    "All arithmetic and inequality checks were done by hand, with no symbolic or numeric verification. That covers the Dirichlet and Gamma bounds, the exponent bookkeeping, the d2 ball-mass and layer-cake constants, F_3, and the product-kernel exponents.",
+    "I could not confirm that the source revision ca65d6cf... is current, because git commands were not used; the review covers the frozen packet as supplied."
+  ]
+}

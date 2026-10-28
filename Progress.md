@@ -6,11 +6,11 @@
 
 ## Current state
 
-- **Phase:** Round 3 reviewed partial G:upper result: target scale for 0<alpha<=1 in d=1,2,3. STOP new proof work at decision point 5 after operational close.
+- **Phase:** Round 4 candidate checkpoint: higher-alpha Riesz extension received Opus PASS_WITH_NOTES/medium twice, all9checks PASS; final source delivery verified. Configured high-confidence acceptance remains unmet; no proof-status promotion. Accepted alpha<=1 results remain unchanged.
 - **Proved in this project:** P:Jensen (§2); reviewed G0 P:mixed, L:white-test,
   L:crude-corrected and P:envelope (§3); G1 finite coefficients (§4); reviewed G2 target-scale bounds P:d1-upper/P:low-alpha-upper for alpha<=1 (§5). Full goal and formal verification remain incomplete.
 - **Open targets:** remaining G:upper range 1<alpha<2-alpha0 in d=2,3; G:sharp; requested private Lean verification (not yet created).
-- **Blocking human decisions:** decision point 5 after this reviewed upper-bound checkpoint; decision point 4 before private companion creation. Point 1 was passed by Le's continuation instruction.
+- **Blocking human decisions:** disposition of the Round4 medium-confidence review checkpoint, and separate decision point4 before companion creation. Le authorized the higher-alpha wave after Round3; this candidate is now concrete and reviewed, but the configured high-confidence gate remains unmet.
 - **Worker:** Codex agent #30 (<MACHINE>, `n30-stratonovich-ham-second`), handed over
   2026-10-26; workflow paper-dev + lean-pkg (Lean track: `lean-progress/PROGRESS.md`).
 
@@ -257,7 +257,7 @@ clearance. No Skorohod result was developed and no Lean package was created.
 | Root checks / instantiation | Per-round records | PASS at stated scope | Build, finite controls, source/application and exact promotion bindings; not independent scientific review |
 | Worker honesty | 2 | Recorded | Exact concern and import boundaries |
 | Fresh replay | 0 | Not due at Round 1 | Every-third-round cadence |
-| Opus skeptic | See per-round logs | Latest upper PASS_WITH_NOTES/high, accepted | Original failures/below-threshold reports retained; format-only continuations are not new scientific votes |
+| Opus skeptic | See per-round logs | Round3 accepted/high; Round4 twice PASS_WITH_NOTES/medium, acceptance pending | V2 source delivery verified; no required repairs; original receipts retained |
 | Final cold reader | 0 | Not run; required before circulation | No whole-paper clearance claimed |
 | Lean | 0 | L0 unchanged | No formal-verification claim |
 
@@ -580,3 +580,114 @@ snapshots and status-promotion provenance are retained byte-for-byte.
 No additional proof work, companion creation, messages or public paper release
 was undertaken after the decision-point-5 checkpoint. Formal verification and
 cold-reader/circulation clearance remain explicitly outstanding.
+
+
+## Round 4 — higher-alpha continuation (2026-10-27)
+
+Le explicitly authorized the proposed higher-alpha continuation in this session.
+Focused preflight: local/origin/<HUB> clean at ca65d6cfd27a99e655222c3ac854bcac3b0ec4ab.
+The pinned author PDF hash is unchanged. No companion creation is authorized.
+
+Gate class: scoped. Gate scope: extension of the target-scale upper estimate
+for 1<alpha<2-alpha0 in d2/d3, starting by testing the saved spatial-maximum
+and joint pairing/time Holder route. Mandatory protocols: source fidelity,
+falsification first, independent Opus review for every new proof, decision
+point 5 after a reviewed result; no circulation clearance is sought.
+Lean routing: UNCERTIFIED / NORMAL_REVIEW. No companion or receipts exist;
+new exponent algebra and coefficient counting are open feasible seams, with
+implementation held at the explicit companion-creation decision point.
+
+Todo: (1) focused literature/application crosswalk; (2) falsify the spatial
+input and verify the Holder bookkeeping; (3) write only surviving scoped
+claims and run independent review; (4) adjudicate, build and close durably.
+The inherited high-alpha transfer note is a lead, not an accepted proof.
+
+Focused literature verdict: REFRAME, bounded internal extension; novelty remains
+UNVERIFIED. See `reviews/2026-10-27-round4/recon/literature-gate.md`.
+The previous full-range crosswalk remains relevant; today's rendered author
+pages7/37 confirm kernel normalization and the weaker printed second-moment
+bound. Elementary Holder/Gamma steps are local obligations, not imported claims.
+
+
+Round4 spatial falsification (author work, not yet accepted): the exact d3
+isotropic Riesz maximum is c*2^(1-alpha)/(2-alpha), whereas the d2 Riesz
+maximum is finite only below alpha=3/2. A function-valued product covariance
+counterexample prevents imposing the maximum on all homogeneous noises at
+any alpha>1. These are scoped failures of the maximum input, not moment
+counterexamples. Detailed derivations and diagnostics are frozen for review
+in `reviews/2026-10-27-round4/recon/spatial-probe.md`.
+
+### Round4 first independent review and successor preparation
+
+Opus v1 returned PASS_WITH_NOTES/medium with all9checks PASS and no required
+repairs. This is NOT accepted at the high threshold. The root's required-source
+manifest accidentally omitted `kind: image`, so the read-ledger validator
+classified PNGs as text and refused coverage even though the report records
+viewing the pages. The original attempt/receipt/report remain immutable.
+The successor will explicitly type and hash every image, add the previously
+missing regularization/calibration source pages, and expand test-function
+positive-definiteness and approximate-identity arguments. This is a materially
+clarified candidate and source packet, not an unchanged confidence retry.
+
+Root source recheck for minor6: Balan-Conus journal pp1489--1492 permits Riesz
+alpha<d with Dalang alpha<2 and H>1/2. Thus the numerical time-exponent
+comparison covers the new Riesz ranges after H=1-alpha0/2; it remains a
+Skorohod comparison only. Chen-Hu published p2147 confirms the static exponent.
+
+| Opus v1 finding | Disposition in successor |
+|---|---|
+| Minor1: stale global scope/status if candidate accepted | Deliberately held until acceptance; promotion must update abstract, section scope, goal coverage and planned route without changing mathematical statements/proofs. |
+| Minor2: explicit wave densities not actually recalled in Section5 | New proof points directly to author(2.5),p7. |
+| Minor3: distributional positive definiteness abbreviated | Added Schwartz-autocorrelation absolute-integrability and Fubini argument, including coordinate product covariance. |
+| Minor4: identify actual mixed smoothing width | Covariance width explicitly eps+eps'>0, including2eps. |
+| Minor5: justify off-singularity Gaussian convergence | Added near/far decomposition for radial powers; product case uses exact Gaussian factorization. The review's suggested bounded-at-infinity phrasing is NOT used for the product, which is unbounded near coordinate singularities. |
+| Minor6: check high-alpha Balan-Conus parameter range | Checked publisher pp1489,1490,1492,1494. New comparison explicitly restricted to Riesz alpha<d,alpha<2,H=1-alpha0/2. |
+
+The revised candidate hash is
+86ea2cf65a8eeff0a2bfb79fe045fcf9709d1e10ae7117b4d9472a7e2bd8a1da.
+Its389-line added section leaves the entire inherited manuscript byte-identical
+when removed. Root reread the substantive additions; clean build gate passes.
+The new review packet includes17typed/hash-bound source images, expanded source
+context and a fresh native Opus session. The previous report is preserved and
+is not counted as accepted or silently promoted to high confidence.
+
+
+### Round4 successor verdict and exact acceptance boundary
+
+Fresh Opus v2: PASS_WITH_NOTES/medium, all9checks PASS, no fatal/major
+findings and no required repairs. Full candidate and all17images were delivered;
+coverage_verified=true, actual model claude-opus-5-5. The native driver retains
+accepted=false solely because confidence is below the configured high threshold.
+No report or confidence is rewritten. No unchanged-candidate retry is authorized
+by this outcome. Le was asked for direction on retaining the threshold with a
+fresh cold read versus accepting the scoped medium report or stopping here.
+No answer is presumed. Full goal, sharp constants and Lean remain unfinished.
+
+| Opus v2 minor finding | Disposition |
+|---|---|
+| Global accepted-scope lines do not include candidate | No promotion while acceptance is pending; status banner is updated only to accurately report the reviews that ran. |
+| Ball-growth identity appears inside a low-alpha lemma although its derivation is general | Reviewer explicitly judges this nonblocking; record suggested one-line clarification for a future authorized revision. The new proof relies on the general homogeneity derivation, not the low-alpha convolution conclusion. |
+| Approximate-identity neighborhood order implicit | Reviewer says correct as written; optional exposition, not a missing proof. |
+| Optimal spatial constant scaling in h could be emphasized | Exact scaling is already displayed; optional exposition only. |
+| Name residual d2 Riesz alpha>=3/2 explicitly | Recorded here and in the project status:3/2<=alpha<2-alpha0, nonempty only if alpha0<1/2. No moment no-go asserted. |
+
+Current candidate establishes, subject to the pending acceptance disposition,
+the target-scale upper bound in isotropic Riesz d3 for1<alpha<2-alpha0 and
+d2 for1<alpha<min(3/2,2-alpha0), with explicit crude constants. Spatial-max
+obstructions are scoped route no-gos. This is not full general G:upper.
+No optional proof edits or additional mathematical dispatches are undertaken
+merely to obtain a higher confidence label. The second report is preserved in
+`reviews/2026-10-27-round4/opus-v2-report.json`; disposition is in review-summary.json.
+
+
+### Round4 durable candidate checkpoint
+
+The final status prose records that reviews occurred; it does not promote their
+confidence or the candidate's acceptance. Root compared all proof and formal
+statement environments against frozen v2: byte-identical. Final31page build has
+0errors,0undefined references/citations,0overfull boxes,0tabs. Exact hashes and
+environment counts are in `reviews/2026-10-27-round4/status-binding.json`.
+Raw85-file review evidence is byte-verified in the immutable archive and manifest.
+Scientific/provenance status: CANDIDATE, review disposition pending; not full
+G:upper completion, not a claimed accepted proof checkpoint. No active native
+review or cluster job remains. The final cold reader has not been dispatched.
