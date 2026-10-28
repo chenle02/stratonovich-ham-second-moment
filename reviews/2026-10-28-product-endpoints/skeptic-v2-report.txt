@@ -1,0 +1,114 @@
+```json
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "medium",
+  "source_coverage": [
+    ".review/required-sources.json lines 1-204 (read plan only; earns no read credit)",
+    "section9.txt lines 1-561 (complete)",
+    "context.txt lines 1-459 (complete)",
+    "reading-map.json lines 1-78 (complete)",
+    "source-map.md lines 1-60 (complete)",
+    "references.bbl lines 1-73 (complete)",
+    "normalization-boundary.txt lines 1-12 (complete)",
+    "route-constraints.txt lines 1-13 (complete)",
+    "balan-conus-02.png, balan-conus-03.png, balan-conus-05.png, balan-conus-07.png (each full image)",
+    "chen-02.png, chen-03.png, chen-07.png, chen-08.png, chen-09.png, chen-10.png, chen-11.png, chen-13.png, chen-14.png, chen-22.png, chen-30.png (each full image)",
+    "chen-2023-01.png, chen-2023-02.png (each full image)",
+    "chen-hu-2145.png, chen-hu-2146.png, chen-hu-2147.png, chen-hu-2149.png, chen-hu-2150.png, chen-hu-2151.png, chen-hu-2152.png, chen-hu-2153.png, chen-hu-2165.png, chen-hu-2173.png, chen-hu-2175.png, chen-hu-2179.png, chen-hu-2180.png (each full image)",
+    "Not read (optional context only): canonical.tex, canonical.pdf, paper-chen-author.pdf, paper-chen-hu.pdf, paper-chen-2023.pdf, paper-balan-conus.pdf"
+  ],
+  "checks": [
+    {
+      "claim": "C1: Lemma 9.1 gives strict product endpoint intervals for all stated parameters.",
+      "verdict": "PASS",
+      "reason": "θ<2-α<1 holds. Zero coordinate: L=max(0,(θ-1)/θ)=0 and U=0. Positive coordinate: if a≥θ then U=1>L, because (a-1+θ)/θ<1 is equivalent to a<1; if a<θ then U=a/θ>0 and U-L is either U or (1-θ)/θ. Let I={j: a_j>1-θ} and r=|I|. The case r≥2 reduces to Σ_I a≤α<2-θ≤r-(r-1)θ, which is equivalent to (r-2)(1-θ)≥0, so ΣL<1. ΣU>1 holds because either some U_j=1 and another positive coordinate exists (each a_j<1 and Σa>1 force at least two), or ΣU=α/θ>1. So 0<Λ<1, Σb=1, L<b<U, and therefore 0<b,v<1 on active coordinates, using b<a/θ and b>(a-1+θ)/θ. Also Σv=(α-θ)/(1-θ)=β, β-α=θ(α-1)/(1-θ)>0 and 2-β=(2-α-θ)/(1-θ)>0. Hand checks: a=(.9,.9,0), θ=.15 gives Λ=.25, b=.5, v≈.971, β≈1.941. a=(.45,.45,.45), θ=.6 gives r=3, ΣL=.25, b=1/3, v=.625, β=1.875. a=(.99,.5,0), θ=.3 gives v1≈.9995<1. a=(.99,.99,0), θ=.01 gives b=.5, v≈.995. Every a_j<1, so the exponent-1 case is excluded."
+    },
+    {
+      "claim": "C2: The product and Riesz positive-definiteness and comparison proofs are correct.",
+      "verdict": "PASS",
+      "reason": "Local integrability follows from one-dimensional exponents below 1 (product case) or from e<3 (Riesz case). Temperedness follows from |ψ|≤C∏(1+|x_j|)^{-N} with N>1. The Gaussian-mixture identity |u|^{-e}=Γ(e/2)^{-1}∫s^{e/2-1}e^{-su²}ds is used only for 0<e<1, or for e in {1,α,β} in the Riesz case, so Γ(0) never appears. Each mixture component is a Gaussian on the active coordinates and constant on the others. Its Fourier transform is a Gaussian measure times δ_0, which is positive, so the component is positive definite. Tonelli with |ψ| and then Fubini justify the quadratic form. Both endpoints share the amplitude c, since c^θ c^{1-θ}=c. γ_a=γ_b^θ γ_v^{1-θ} holds almost everywhere. Hölder against the probability measure p_ε(z-·)dw gives the inequality for every ε>0 and every z, not only at z=0."
+    },
+    {
+      "claim": "C3: Hypothesis 9.2 is a deterministic covariance condition with correct conventions.",
+      "verdict": "PASS",
+      "reason": "A density homogeneous of degree -e in R^3 gives the measure scaling Γ(rA)=r^{3-e}Γ(A), which matches r^{3-α}, r^2 and r^{3-β}. Positive distributions are Radon measures, and (p_ε*Γ)(z) is well defined and nonnegative. The spectral convention γ=∫e^{iξx}μ matches Chen–Hu (1.3), the target author's (1.3) and the convention of the degree-one convolution lemma. Feasibility of the fixed θ needs α0<2-α, which the standing assumption provides. Γ=0 is trivial (u=1). If Γ≠0, the comparison with θ in (0,1) forces Γ_low≠0 and Γ_st≠0. The text says explicitly (lines 147-149) that no moment estimate is assumed and that a general d=3 covariance is not claimed to satisfy the hypothesis."
+    },
+    {
+      "claim": "C4: The static inputs in Proposition 9.3 are applied within their stated hypotheses.",
+      "verdict": "PASS",
+      "reason": "Pushforward under dilation gives μ(sA)=s^βμ(A). The dyadic bound μ(B_1)+2^βμ(B_1)Σ2^{j(β-2)} is finite for β<2, so Dalang (1.6) holds. Chen–Hu Theorem 3.8(i) (p.2165) needs only Dalang. Theorem 1.2 and (5.1)/(5.15) need homogeneity with 0<β<2∧3 and data (1,0); both hold, and generalized (measure) covariances are allowed (p.2145). Chen2023 Theorem 1.1 covers generalized nonnegative positive-definite γ under Dalang and states finiteness of the ½-gradient supremum. I re-derived the p.2175 scaling identity: with g_c=c^{3/2}g(c·), c=2^{2/(4-β)} gives the factor 2^{β/(4-β)}. That makes M_st finite. The Riesz-only Balan–Conus result is used only as a comparison."
+    },
+    {
+      "claim": "C5: The static coefficient homogeneity, the rate constant and C_st are correct.",
+      "verdict": "PASS",
+      "reason": "(5.1) at p=2 gives B_k(t)=t^{(4-β)k}B_k(1). In (5.15) the logarithm applies to the whole product. At p=2 the bound is (1/2)^{3-β}·2^{4-β}·(2√M/(4-β))^{4-β}=2(2√M_st/(4-β))^{4-β}=Λ_st, since ν-Q=1. C_st comes from a finite limsup together with finitely many finite low-order terms, all of which are finite by Theorem 3.8(i). The zero static case gives C_st=1. C_st is independent of k, t and x by exact homogeneity and stationarity. M_st≥0 follows by dilation, so √M_st is defined. No sharp spatial-white value and no current-author E/E_* constant is used."
+    },
+    {
+      "claim": "C6: The common measure ν and the identification of the regularized moments are correct.",
+      "verdict": "PASS",
+      "reason": "ν sums over all splits m, all D∈Π_k and both ordered simplices, with product Green increments G_{h,η}. Each chain has its own root at time 0. The spatial mass is ∏h_l≤t^{2k}, so ν is finite. The target kernel (2.16) is rooted at (t,x). Reversing each chain separately with s→t-s and y→x-y leaves |s_i-s_j| unchanged across chains (common t) and flips spatial differences, which the even kernels absorb. Chen–Hu's g_n (2.13) is already rooted at 0. The target smoothed covariance with a common ε is γ^0_δ(s-t)γ_{2ε}(x-y) (pp.8, 9, 13), and the static one is γ_{2ε} (2.8). So all three integrands use the same edge width 2ε and Green width η. The static temporal factor is 1, and same-chain pairs are included in both. An empty chain contributes 1."
+    },
+    {
+      "claim": "C7: Hölder is applied to the whole common measure and the temporal domination is valid.",
+      "verdict": "PASS",
+      "reason": "From (2.24), γ^0_δ(u)=Γ(α0)^{-1}∫_0^{1/δ}e^{-λ|u|}λ^{α0-1}dλ≤|u|^{-α0}. So 0≤Q_δ≤T_{α0}=T_{b0}^θ pointwise for the same D, since θb0=α0. The integrand bound Q_δH_Γ≤(T_{b0}H_low)^θ H_st^{1-θ} is followed by a single Hölder step with exponents 1/θ and 1/(1-θ) on ν over the full disjoint union. There is no separate per-term Hölder followed by a reversed sum inequality. Diagonals s_i=s_j are ν-null. L is a deterministic integral, and the proof assumes no stochastic identity for it, no relation between different cutoffs and no coupling."
+    },
+    {
+      "claim": "C8: The low-endpoint coefficient bound (E:three-low-coefficient) is correct.",
+      "verdict": "PASS",
+      "reason": "Lemma L:alpha-one-convolution formally applies. Γ_low is nonnegative, positive definite and degree-1 homogeneous with 0<1<3 and α0+1<2, its proof uses no isotropy, and it holds for every ε>0 and η≥0, so also at width 2ε. Descending integration over vector increments works because x_l depends only on increments with labels ≤l in its own chain. Every pair touching a label above l has closing label >l and has already been removed. So a closing label sees only its own pair, bounded by πV/2, and an opening label integrates G mass h_l. Σ_l h_l≤2t, so AM-GM gives ∏_O h≤(2t/k)^k and the spatial bound is (πV)^k t^k/k^k, uniform in m, D, s, ε and η. The pairing sum is symmetric in all 2k labels. Each block simplex contributes 1/(m!(2k-m)!) of the cube integral, and the cube integral is P_k(Z t^{2-b0})^k with ∫∫|s-r|^{-b}=2t^{2-b}/((1-b)(2-b)). Then P_k·4^k/(2k)!=2^k/k!, which gives C_low^k t^{(3-b0)k}/(k!k^k)≤…/(k!)^2 with C_low=2Zπ V."
+    },
+    {
+      "claim": "C9: The static inner Green limit is identified with the source's actual approximant.",
+      "verdict": "PASS",
+      "reason": "p_{2ε}*Γ_st has the finite spectral measure e^{-ε|ξ|²}μ, so it is bounded and continuous. Wick's formula gives ‖Φ_n‖_2²≤P_n v_ε^n and L²-continuity. A continuous map with separable range is strongly measurable, and the finite Green-chain measure has mass ∏h, so the Bochner integral exists. At η=0 it uses Chen–Hu's sphere measure μ_n^{t,x} (pp.152-153), which is exactly their S_{n,ε} in (3.1) at d=3. The second moments and the mixed η/0 moments converge by weak convergence of products of Green measures against bounded continuous Gaussian moment functions, with time domination C(n,ε)∏gaps. Expanding the square then gives L² convergence to the identified limit, not merely a Cauchy statement. U_0=1 is kept."
+    },
+    {
+      "claim": "C10: The target inner limit, the noise limits and the order of limits are handled correctly.",
+      "verdict": "PASS",
+      "reason": "The target's two-step definition (pp.13-14) takes η→0 at fixed (ε,δ), then (ε,δ)→0. The target smoothed field has the bounded continuous covariance γ^0_δγ_{2ε}, with γ^0_δ(0)=δ^{-α0}/(α0Γ(α0)), so the same domination argument applies. Order used: η→0 first (L stays uniformly bounded), then (ε,δ)→0 using Chen–Hu Theorem 3.8(i) for the static side and target Theorem 4.1 (condition (1.5) checked dyadically: Σ2^{j(α+α0-2)}<∞) for the target. Products of two fixed-order terms converge in L¹ by the displayed inequality, the split sums are finite, and order-zero factors are 1. The static coefficient majorant (E:three-static-coefficient) is applied only after these limits. No monotone smoothing and no smoothed asymptotic is used."
+    },
+    {
+      "claim": "C11: The all-time coefficient and series bounds follow.",
+      "verdict": "PASS",
+      "reason": "The exponent identities check: 2θ+(1-θ)(3-β)=3-α and θ(3-b0)+(1-θ)(4-β)=4-α-α0, both using (1-θ)β=α-θ and θb0=α0. So C=C_low^θ C_st^{1-θ} is independent of k, t and x. q=3-α>1 because α<2. Σa_k^q≤(Σa_k)^q for nonnegative a_k and q≥1, with a_k=z^{k/q}/k!, gives e^{qz^{1/q}}. A_0=1 is the k=0 term. With z=Ct^ζ and ζ/q=κ, the nonnegative full series from P:mixed gives E u²≤exp(qC^{1/q}t^κ) for all t>0."
+    },
+    {
+      "claim": "C12: The nonsharp variational limsup bound is proved.",
+      "verdict": "PASS",
+      "reason": "Since B_k(t)=t^{(4-β)k}B_k(1) exactly, N_r is independent of t. For k≥N_r, A_k≤D_r^k t^{ζk}/(k!)^q with D_r=C_low^θ(Λ_st+r)^{1-θ}. For 1≤k<N_r, d_k=C_low^{θk}B_k(1)^{1-θ}/(k!)^{2θ}, which I re-derived. P_r(t) is a finite sum of powers, so log P_r/t^κ→0. log(a+b)≤max(log a, log b)+log 2. Letting r↓0 gives q(C_low^θΛ_st^{1-θ})^{1/q}, and the case Λ_st=0 needs no division. The finitely many low orders are kept, so the asymptotic constant is never substituted into the all-time bound."
+    },
+    {
+      "claim": "C13: Corollary 9.4 and Remark 9.5 discharge the hypothesis and stay within scope.",
+      "verdict": "PASS",
+      "reason": "The midpoint θ=(α0+2-α)/2 lies in (α0,2-α) and depends only on the data. Product case: Lemma 9.1 gives γ_b and γ_v with measure scalings r^2 and r^{3-β}. Riesz case: α=θ+(1-θ)β, with endpoints c|x|^{-1} and c|x|^{-β}. Zero exponents are allowed and a_j=1 is excluded. The constants depend only on (a,c,α0), respectively (α,c,α0). In Remark 9.5, E u≤(E u²)^{1/2}. The ≥2L_* statement is explicitly conditional on the intended first-moment lower bound. The Skorohod comparison is confined to Balan–Conus cases (ii) and (iii), and case (iii) requires α_j in (0,1) (p.1489). With α0=2-2H, ρ_w equals κ. The static M is kept distinct from the author's E/E_*."
+    },
+    {
+      "claim": "C14: Whole-argument fidelity, dependencies and scope.",
+      "verdict": "PASS",
+      "reason": "Sections 6-8 are never used as premises. The only inherited items are P:mixed, the definition of A_k and L:alpha-one-convolution, all supplied with proofs. The target Γ satisfies H:homog in d=3 (0<α<3, α+α0<2). No current-author first-moment upper constant enters the proof. The status box (lines 4-8) and Remark 9.5 disclaim general d=3 factorization, sharpness, novelty and formal verification. I found no hidden limit-order, uniformity or source-object error. This is an AI read-only review, not human verification."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "The regularized coefficient A_k^{ε,δ,η}(t) in (E:three-regularized-holder) is never defined explicitly. Its meaning, Σ_m E[X_m^{ε,δ,η}X_{2k-m}^{ε,δ,η}] at common widths, has to be inferred from line 297. A one-line definition would help.",
+      "The target inner Green limit (lines 388-392) is argued only by reference ('the same bounded Gaussian moment factors and time domination'). Stating the η=0 target object at fixed (ε,δ) and noting the bound γ^0_δ(0)=δ^{-α0}/(α0Γ(α0)) would make the parallel with the static case explicit.",
+      "The claim that the L²-Bochner integral U_n^{ε,0} equals Chen–Hu's pathwise integral against μ_n^{t,x} (line 363) is correct but stated without proof. It follows from continuity of W_ε and Fubini.",
+      "F_3 is restricted to real Sobolev functions. Chen–Hu's (1.11) uses g² and |∇g|², which implicitly means real g, so this is harmless but could be noted as a convention rather than a restriction.",
+      "Line 220 cites (2.17) and (2.19) for the static mixed coefficients. The two-chain identity actually used is (2.21) (p.2152), together with the d=3 convention (2.22). Adding those citations would improve precision."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is an independent AI read-only review. It is not human verification, a novelty audit, a Lean check or circulation clearance. No commands, builds or numerical tests were run. All calculations are hand derivations.",
+    "Imported results (Chen–Hu Theorem 3.8(i), (5.1), (5.15) and its constants from (5.11)/(5.13); Chen2023 Theorem 1.1; target Theorem 4.1 and Lemma 4.4) were checked for hypotheses, objects and the form of application only. Their internal proofs were not re-derived. In particular, (5.11) is not on the supplied pages.",
+    "The author-manuscript pages containing (1.11)-(1.13) (the variational definitions and their gradient penalties) are not among the required images. Remark 9.5's description of that normalization issue therefore could not be checked against source and was treated as a disclosed, non-load-bearing qualification.",
+    "canonical.tex, canonical.pdf and the four full PDFs were not read. They were optional context. Hashes and root build status were not checked, and nothing here should be read as provenance verification.",
+    "The inherited P:mixed and L:alpha-one-convolution proofs were read in full as supplied and found consistent with their Section 9 uses. They were not re-audited as primary targets.",
+    "Self-assessment: correctness review at medium confidence, not gold-standard certification. The remaining risk is concentrated in the imported static rate machinery and in the compressed target inner-limit step."
+  ]
+}
+```

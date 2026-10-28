@@ -1301,3 +1301,22 @@ both separate files were present. Preserve the immutable refusal/archive.
 Successor contract-v2 spells both filenames separately; no scientific input,
 proof,candidate,image,threshold or model changed. This is an input-name repair,
 not a model retry or proof FAIL. Use a new immutable attempt,with dry run first.
+
+
+### Section9 primary scientific review terminal: high gate unmet
+
+Opus5.5 completed the full14check primary skeptic review in416.163s: allPASS,
+PASS_WITH_NOTES/medium,no mandatory repairs/fatal/major findings. All seven
+texts and30images were delivered; coverage_verified=true,accepted=false at
+the retained HIGH threshold. Source revision4837183 held unchanged.
+Findings/limitations adjudicated in product-endpoints/skeptic-adjudication.md;
+full immutable native and dry-run evidence archived and hash-verified.
+No unchanged confidence retry or review-complete resume. Section9 stays candidate.
+
+Five minor points: explicit regularized coefficient definition; spell target
+eta=0/moment domination; explain Bochner/pathwise source correspondence; real
+Sobolev convention; add direct static mixed formula(2.21)pinpoint. All are
+minor in the report,none converted to an invented required repair. Imported
+static internal(5.11)was not supplied; actual upper rate(5.15)was supplied.
+Medium uncertainty remains with imported rate machinery/compressed target limit.
+A separate plane-supported/finitesum endpoint probe is NOT covered by this report.
