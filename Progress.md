@@ -1293,3 +1293,11 @@ Changed PDF pages1and48 visually checked;0errors/undefined/overfull/tabs.
 Original49page freeze and author reports remain immutable history.
 
 [held back: AI account details]
+
+The first Section9 launch was refused by workspace preflight BEFORE doctor or
+provider dispatch(exit5,0.002s,no scientific verdict). Contract shorthand
+canonical.tex/canonical.pdf was parsed as one nonexistent nested path, although
+both separate files were present. Preserve the immutable refusal/archive.
+Successor contract-v2 spells both filenames separately; no scientific input,
+proof,candidate,image,threshold or model changed. This is an input-name repair,
+not a model retry or proof FAIL. Use a new immutable attempt,with dry run first.
