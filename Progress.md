@@ -2122,3 +2122,19 @@ No sharp/Lean/human/novelty/circulation claim. A prepared blind76page draft
 preserved42proofs,but MUST be regenerated from final minor-clarification
 bytes before the next native cold dispatch. Source reader context will
 again be prior-blind and free-form,not supplied with the14check verdict.
+
+
+### Final revised-source blind packet ready
+
+Sourceef5f691b5d89f71d250bcb6271c3d6eee70376b3 is pushed/<HUB>-synced.
+New prior-blind packet regenerated from those final minor-clarification
+bytes:77pages,all42proofs and ALL formal statement bodies INCLUDING remarks
+byte-equal to canonical78page notes. All prior-review metadata is outside
+the packet;verbatim canonical free-form cold prompt,complete manuscript
+and bibliography inline,pinned cited-source texts available. Clean blind
+build0errors/undefined/overfull/tabs,actual formatter idempotent. No grades
+or old reports supplied. Fresh separate actual DeepSeek V4-Pro isolated
+access probe verified intended model/category and read,same text-only route
+and131072output cap. Scientific cold read is NEXT,not yet a report.
+
+[held back: collaborators' unpublished work]
