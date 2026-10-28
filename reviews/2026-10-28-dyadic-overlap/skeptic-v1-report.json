@@ -1,0 +1,106 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    ".review/required-sources.json lines 1-78 (read plan only, not a packet file)",
+    "new.txt lines 1-514 (complete)",
+    "dependencies.txt lines 1-856 (complete)",
+    "construction.txt lines 1-366 (complete)",
+    "author-source.txt lines 1-730 (complete)",
+    "references.bbl lines 1-83 (complete)",
+    "calibration.md lines 1-7 (complete)",
+    "checks.py lines 1-71 (complete)",
+    "checks.json lines 1-391 (complete)",
+    "literature-gate.md lines 1-78 (complete)",
+    "source-map.txt lines 1-8 (complete)",
+    "reading-map.json lines 1-32 (complete)",
+    "cp-01.png (full image: arXiv:1702.00668v1 p.1, eqs (1)-(3))",
+    "cp-02.png (full image: p.2, unbounded-extension remark, function algebra A(Omega))",
+    "cp-05.png (full image: p.5, Section 3 bounded A on complex H, Theorem 6 statement and proof start)",
+    "cp-06.png (full image: p.6, end of Theorem 6 proof, Cor 7, Remarks 8-10)",
+    "author-13.png (full image: Chen author PDF p.13, (2.23)-(2.25), G_eta definition)",
+    "author-14.png (full image: p.14, two-step Stratonovich definition, Section 3 norms)",
+    "author-22.png (full image: p.22, Theorem 4.1, (4.2)-(4.4))",
+    "canonical.tex, canonical.pdf, chen-current-author.pdf, crouzeix-palencia-v1.pdf: not read (optional, not in the required plan)"
+  ],
+  "checks": [
+    {
+      "claim": "C1: Source fidelity and prerequisite interface (CP input, inverse-root and four-block argument, Hermite sandwich, cutoff interface, all-d Plancherel)",
+      "verdict": "PASS",
+      "reason": "The cp-01, cp-05 and cp-06 images show arXiv:1702.00668v1. Eq. (3) on p.1 is stated for a bounded A on a complex Hilbert space, and Theorem 6 (pp.5-6) gives C_Omega <= 1+sqrt2 for bounded convex smooth Omega. Holomorphy on a neighbourhood of closure W(T) puts F in A(Omega_n) for close convex Omega_n, so (E:cp-input) is a faithful import. Every application is to bounded operators: A_0 = -Delta on a band, finitely many modes and truncated Fock spaces. The p.2 unbounded remark is never used. I re-derived the inverse-root bound: the integral of t^{-1/2} D kappa^{a-3}/(pi(1-delta)) equals D Lambda^{a-2} I_a/(pi(1-delta)), which is at most 1/6. The four phase blocks are C, F L^{-1/2}A^{1/2}, -A^{-1/2}L^{1/2}H and A^{-1/2}L^{1/2} C L^{-1/2}A^{1/2}, with total 39(1+Lambda h)e^{Lambda h} <= 100e^{2 Lambda h}. The Hermite row norm sqrt(j+1) comes from sum a_m^* a_m = (j+1)I on degree j+1, which does not depend on dimension. The new lemma states the Plancherel factor as (2pi)^{-d}, and the Gaussian comparison and the radial integral alpha V * integral of r^{alpha-1}/(rho^2+r^2) are valid in every d. No Kato-domain theorem is used."
+    },
+    {
+      "claim": "C2: All-d Gaussian contractions (shifted resolvent, origin atoms, vacuum column insertion, compression, tensoring, two-sided Fock sandwich)",
+      "verdict": "PASS",
+      "reason": "Pairing p_{2s} with Gamma gives integral of e^{-s|eta+xi|^2} mu(dxi) = integral of p_{2s}(x)e^{i eta x} Gamma(dx). Evenness makes this real and Gamma >= 0 bounds it by its value at eta = 0. A physical atom such as Gamma = delta_0 in d = alpha = 1 is allowed, and mu has no spectral atom because mu(B_r) = r^alpha mu(B_1). Integrating against e^{-rho^2 s} gives sup_eta J <= R_alpha rho^{alpha-2}, with R_alpha = alpha pi mu(B_1)/(2 sin(pi alpha/2)) finite for alpha < 2. I re-derived the column identity: E|hat(W_eps f)(eta)|^2 = integral of |hat f(eta-xi)|^2 mu_eps(dxi), with no stray (2pi)^d. The vacuum insertion Psi' -> sum_m g_m|0> tensor (0, sigma M_{e_m} u) has squared norm sigma^2 sum_m ||A^{-1/2} M_{e_m} u||^2. The operator inequality sum M A^{-1} M <= R rho^{alpha-2} I survives tensoring with arbitrary factors and band compression (S_b A^{-1} S_b <= A^{-1}). The occupied-color sandwich keeps both creation and annihilation, giving 2 sqrt(N+1) sqrt(R) rho^{alpha/2-2}. The v_max multiplication bound appears only in the non-uniform, fixed-smoothing entire-series step."
+    },
+    {
+      "claim": "C3: Extension to general bounded V, numerical range, constant 100exp(2 Lambda h), phase metric",
+      "verdict": "PASS",
+      "reason": "The identity (L+Lambda^2+t)^{-1} - A_kappa^{-1} = A_kappa^{-1/2}(1-K)^{-1}K A_kappa^{-1/2} is exact. With kappa >= Lambda, ||K|| <= D kappa^{a-2} <= delta. V* has the same sandwich bound, so all four root comparisons follow, using (f(T))* = f-bar(T*) for the principal root. For the numerical range, |<Vu,u>| <= D rho^{a-2}(rho^2+s^2) bounds both the real part (at rho = Lambda, giving x + Lambda^2 >= (1-delta)(s^2+Lambda^2)) and the imaginary part (at rho = s, giving 2Ds^a). Selfadjointness is not needed for either. The norm comparison ||z||_new <= max(1, rho_old/rho_new)||z||_old follows from the multiplier ratio. At a jump, (lambda+R+E)/(lambda+R+S) <= 1 + sum_E omega/lambda <= prod_E(1+omega/lambda). An increase costs nothing, each connected interval ends once, and the final return at T counts as an ending. All constants are independent of mode count, band and degree dimensions."
+    },
+    {
+      "claim": "C4: Coefficient algebra (entire series, parity, deletion, 3^k splits, local cutoff N_i = 2k_i, vector Cauchy, mean singleton)",
+      "verdict": "PASS",
+      "reason": "The crude bound e^{lambda T/2}(2 sqrt(n+1) sqrt(v_max) T/lambda)^n/n! is summable, so the truncated amplitude series is entire and the energy double series converges absolutely. Reflecting g^(i) -> -g^(i) multiplies U_r by (-1)^{r_i}, which kills odd r_i + s_i. Coefficients with r_i = s_i = 0 equal evaluation at zeta_i = 0, so inactive fields are deleted exactly. The number of splits is prod(2k_i+1) <= 3^k. A word with r_i <= 2k_i insertions of color i never exceeds degree 2k_i, so P_{N_i} with N_i = 2k_i leaves every coefficient unchanged, including create-annihilate self-pairings. Cauchy is applied to the vector coefficients U_r v and U_s v separately and combined by Cauchy-Schwarz. A mean field is set to zero on its unused copy, so it adds no circle, Lambda or metric cost there."
+    },
+    {
+      "claim": "C5: Simultaneous cross extraction",
+      "verdict": "PASS",
+      "reason": "The coefficient multilinear in the cross amplitudes is the sum over orderings pi of simplex integrals, which equals the integral over the cube prod(I_j intersect [0,T]) of the time-sorted word, without any 1/m! or m! factor. The background contains only Cauchy colors and acts as the identity on cross colors. Each cross color receives exactly one insertion per copy, so it is in vacuum immediately before that insertion, whatever the complex background and whatever other cross colors are already occupied (those sit in the arbitrary tensor factor). The insertion norm is sqrt(R) sigma_j Lambda(t_j)^{(alpha-2)/2} <= sqrt(R) sigma_j lambda^{(alpha-2)/2}. No annihilation estimate is applied to an occupied cross color. Background segments and metric changes occur once along each word, and splitting at insertion times adds at most k pieces, each costing a factor 100. Minkowski over the cube gives prod h_j per copy, and Cauchy-Schwarz across the two copies gives exactly R sigma_j^2 h_j^2 lambda^{alpha-2} per cross field, with no hidden k or 1/h. The checks.json cube-versus-ring agreement (errors around 1e-17) is consistent with this, but only as a finite diagnostic."
+    },
+    {
+      "claim": "C6: Cauchy radii, segment sum condition, factorial and metric bookkeeping",
+      "verdict": "PASS",
+      "reason": "With r* = delta omega^{2-a}/(sigma d) and a = alpha/2, sum |zeta_i| sigma_i d_i = delta sum omega_i^{2-a} <= delta Lambda(t)^{2-a}, because 2-a > 1 makes x^{2-a} superadditive. This holds on every segment. There are at most 3k+1 pieces. The integral of Lambda is at most lambda T + sum omega_i h_i, which is at most 2k. I recomputed (r*)^{-2k_i} = (sigma^2 d^2/delta^2)^{k_i}(h/k_i)^{(4-alpha)k_i} <= (C R sigma^2 h^{4-alpha})^{k_i} k_i^{-(3-alpha)k_i} <= (C R sigma^2 h^{4-alpha})^{k_i}/(k_i!)^nu, using d^2 <= 12 k_i R. Then sigma^2 <= c h^{-alpha0} gives h^beta. A mean field costs one factor (1+1/(lambda h)) and a higher field at most (1+k_i/(lambda h))^2. Converting X_lambda to X_{1/T} costs k^2 in energy, and ||v||_lambda <= ||v||_{1/T}. I checked that the weights h^{beta l}(1+lT/(kh))^2 (with beta l/2 - 1 > 0) and h^beta + T h^{beta-1}/k are increasing in h, so the upper bound h_i <= LT/i may be substituted. This yields v_i and b_{i,l} with a common factor (C R T^beta)^k."
+    },
+    {
+      "claim": "C7: Infinite inventory product, uniform in M and k",
+      "verdict": "PASS",
+      "reason": "On the admissible range: nu = 3-alpha > 1, beta = 4-alpha-alpha0 > 2 (equivalent to alpha+alpha0 < 2), beta - nu = 1-alpha0 > 0, p = 2-alpha0 > 1, and 2beta-3 > 0. At z = theta k^nu the third singleton term equals Q_i = theta k i^{-p}, since nu+alpha-2 = 1. The Q factors contribute at most A^{1/p} times a finite integral, which is O(k). For i <= k, S_nu(4P_i) <= e^{nu (4P_i)^{1/nu}} and sum i^{-beta/nu} < infinity give O(k). For i > k, P_i <= theta. The singleton tail is theta(1/(beta-1)+1/(beta-2)) k^{alpha0}, and the l >= 2 tail is bounded by C P^2(1+y^2), whose sum is C k^{2alpha0-1}. Positivity gives [z^k] <= theta^{-k} k^{-nu k} e^{Ck} <= C^k/(k!)^nu. All constants depend only on (alpha, alpha0), and L and c enter only through C^k."
+    },
+    {
+      "claim": "C8: Cutoff identification and entire summation",
+      "verdict": "PASS",
+      "reason": "At fixed eps and a finite inventory, v_max is finite and the degree-n multiplication bound holds uniformly in mode and band cutoffs. On finite-coordinate vectors the annihilation tail vanishes and the creation tail is controlled by the omitted variances through dominated convergence. Density and the uniform bound give strong convergence. S_b converges strongly and commutes with free evolution. Each fixed word converges by dominated time integration, and the n! bound gives uniform convergence on compact amplitude sets, so the coefficients are those of the actual finite-interval model. Odd coefficients vanish and the k = 0 term is at most e. The sum over k of x^k/(k!)^nu is at most e^{nu x^{1/nu}}, giving e*exp(C R^{1/nu} T^{beta/nu}). No zero-smoothing propagator is claimed."
+    },
+    {
+      "claim": "C9: Dyadic three-grid time majorant and decreasing-length counting",
+      "verdict": "PASS",
+      "reason": "Parent endpoints h_j(n+(-1)^j t) equal h_{j+1}(2n + 2(-1)^j t), and the shift difference 2n + (-1)^j 3t is an integer, so the grids are nested. Since H_0 >= 6T >= 6|s-r|, some j >= 0 has h_j in (3|s-r|, 6|s-r|]. The union of the three boundary sets is (h/3)Z, so a segment shorter than h/3 meets at most one boundary point, and at least two grids hold both s and r inside one interval. The term 6^{alpha0}|I|^{-alpha0} >= |s-r|^{-alpha0} follows. Diagonal and endpoint sets have Lebesgue measure zero. The cumulative count is at most 6T/h_j + 6(j+1) <= LT/h_j, using (j+1) <= C 2^j and H_0 < 12T, which covers clipped intervals and lengths above T. Independent static colors give time covariance exactly K_J, and no independence between time segments is assumed."
+    },
+    {
+      "claim": "C10: Constant data, finite propagation, and transfer to the original source limit",
+      "verdict": "PASS",
+      "reason": "supp G_s is contained in the closed ball B_s, so G_s*f_T(y) = s and C_s f_T(y) = 1 when |y|+s < T+1. Induction on Duhamel order identifies the f_T-solution on B_1 with the constant-data model. The n-th term is bounded by sqrt((2n-1)!!) v_max^{n/2} T^{2n}/(2n)!, which is summable. Stationarity gives |B_1| E u^2 <= e|B_{T+2}| exp(...), and |B_{T+2}|/|B_1| = (T+2)^d. Images p.13 and p.14 confirm the source covariance gamma_delta^0 gamma_{2eps}, which equals Gamma_eps = p_{2eps}*Gamma, and the G_eta two-step convention. Also gamma_delta^0 <= |t|^{-alpha0}. Every two-chain Wick integrand is a product of nonnegative G measures, gamma_delta^0 >= 0 and Gamma_eps >= 0, including self-pairings and unequal chain lengths. Domination by K_infty happens inside fixed-N pairing integrals, the K_J sums increase to the K_infty sum by monotone convergence, and each K_J sum is at most E u_{J,eps}^2 because the extra pairing terms are nonnegative. The limits are taken in the stated order: fixed-order L^2 limits from Theorem 4.1, (4.2) p.22 at fixed N, then N -> infinity using Proposition P:mixed and Lemma L:crude-corrected (an independent L^2 series). No convergence of the full mollified solution and no convex Gaussian order is used."
+    },
+    {
+      "claim": "C11: Scope, hidden assumptions and calibration",
+      "verdict": "PASS",
+      "reason": "I found no hidden commutation: Lemma L:complex-phase holds for any bounded V. I found no factorial in the cube, no unbounded functional calculus, no Fourier-normalization mismatch, no use of positivity of phase coefficients (checks.json shows negative split terms and the proof does not need them), and no restriction to alpha <= 1 or a Riesz or angular density. kappa = beta/nu = (4-alpha-alpha0)/(3-alpha), and alpha0 -> 0 gives the known static exponent (4-alpha)/(3-alpha). The bound has the same scale as the Jensen lower bound exp(c T^kappa), consistent with the first-moment result, and adopts no disputed constant. Creation and annihilation are both retained, so this is Stratonovich, not Skorohod. The supplied primary sources (Crouzeix-Palencia v1; Chen author version, which prints only e^{Ct^2}) do not supply the interval theorem. Novelty remains UNVERIFIED (REFRAME)."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Theorem T:full-upper proof (d=3): the claim that, at fixed (eps, delta), the source's eta-limit (G_eta -> G) of finite-order second moments equals the classical measure-kernel Wick sum is only asserted, with a pointer to Section S:G0. That section states the convention but does not prove the identification. It is standard, since gamma_delta^0 and Gamma_eps are bounded and continuous and G_eta(t,.) -> G(t,.) weakly, but one explicit sentence would close it.",
+      "Lemma L:interval-complex lists only the sandwich hypothesis. Lemma L:complex-phase also requires A_0 bounded nonnegative selfadjoint and V bounded; this is inherited from the band cutoffs, but stating it in the new lemma would help.",
+      "In Proposition P:interval-coefficients, 'at most 2k+1 background segments' is really 2(#Cauchy fields)+1. The bound is correct; a short justification (at most k Cauchy fields, two endpoints each) would help readers.",
+      "In Theorem T:full-upper, the cumulative count step 6(j+1) <= C T/h_j silently uses j+1 <= C 2^j and H_0/h_j = 2^j; this could be written out.",
+      "The upper comparability K_infty <= C|s-r|^{-alpha0} is proved but never used for the upper bound; it could be labelled as a calibration remark.",
+      "The restriction T >= 1 in (E:full-upper-bound) is not used by the proof.",
+      "Whole-paper consistency (outside this target): the abstract in dependencies.txt still says the range alpha > 1 in d = 2, 3 is open. If this section is accepted, that text and the myCmts candidate boxes will need updating."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is a single-pass AI review. It is not human verification, not a Lean or formal certificate, and not a whole-paper cold read.",
+    "No commands were executed. checks.py was read but not run; checks.json was taken as supplied and treated only as a finite diagnostic, not as evidence for the theorem.",
+    "The full PDFs (canonical.pdf, chen-current-author.pdf, crouzeix-palencia-v1.pdf) and canonical.tex are optional and were not read. Source fidelity rests on the supplied page images (CP pp. 1, 2, 5, 6; Chen author pp. 13, 14, 22) and the typed excerpts in author-source.txt (pp. 1-3, 7-8, 13-14, 22-23, 34, 37).",
+    "The source's Theorem 4.1, Lemma 2.4, Section 5 and Theorem 1.1 were accepted as stated in the cited pages and were not re-proved. Prerequisites in dependencies.txt and construction.txt were re-checked only where the new argument uses them.",
+    "Novelty and literature status: REFRAME, internal correctness only, with novelty UNVERIFIED. No global or authenticated literature search was done. This verdict gives no sharp constant (G:sharp), novelty, publication or circulation clearance.",
+    "All required sources were read completely, with no truncation: every text file in full and every required image once in full."
+  ]
+}

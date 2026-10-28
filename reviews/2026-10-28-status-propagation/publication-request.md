@@ -5,7 +5,7 @@ Exact proposed content: proposed-project-page.md. Patch: project-page.patch.gz (
 Base commit/content hash and proposal hash: preparation.json.
 
 Preserve the original full goals and accepted alpha<=1 baseline. Add current
-59page/candidate scope,expanded Section9 all17PASS/medium and no acceptance,
+74page/candidate scope,expanded Section9 all17PASS/medium and no acceptance,
 scoped source-normalization discrepancy with no intended repair, and the
 separate accepted plane/finite-sum deterministic auxiliary. Preserve historical
 rounds,all links/frontmatter and absence of source-author contact or release.
@@ -30,7 +30,7 @@ They are preserved losslessly in gzip rather than stripped or exempted from
 a repository-wide whitespace policy. The full proposed Markdown remains
 directly readable. Check compressed/decompressed hashes in preparation.json.
 
-The original50page proposal is superseded by this59page status reconciliation.
+The original50page proposal is superseded by this74page status reconciliation.
 References were separately enqueued at Le's explicit instruction;those normal
 reference requests are not a project-page publication receipt.
 
@@ -41,3 +41,9 @@ wiki HEAD was reread;the project page bytes match the original base.
 Section11 first-variance static phase estimate is separately7PASS/high;
 no all-order or full-target promotion. See exact source/dispatch/disposition
 in preparation.json. New canonical project-base bytes reread and unchanged.
+
+Section12 all static orders accepted9PASS/high at cba14f9. Section13 full-upper
+proof frozen at bee4b2a,first adversarial review accepted11PASS/HIGH,
+full source delivery,no required repairs. Final74page status adopts G:upper
+only. Sharp constant,novelty,Lean and final whole-paper cold read remain open.
+No public/notification permission inferred. Proposal remains local.

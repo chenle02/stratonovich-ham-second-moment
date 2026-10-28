@@ -6,15 +6,22 @@
 
 ## Current state
 
-- **Phase:**73page notes. Section12all regularized STATIC phase orders,interaction and independent successive-block bounds accepted9PASS/high,full delivery,no required repairs. Section11first-variance scope remains7PASS/high and Section10energy8PASS/high. New Section13 contains the complete overlapping-interval coefficient/inventory/source-transfer candidate for the ORIGINAL full G:upper; it is UNREVIEWED,outside those reports. Full Section9colored-time candidate remains17PASS/medium;original general upper and sharp goals stay open.
-- **Proved in this project:** the P:Jensen Cauchy--Schwarz reduction (§2; numeric L_* calibration conditional on the intended source bound); reviewed G0 P:mixed, L:white-test,
+- **Phase:**74page notes. Section13 ORIGINAL full G:upper accepted11PASS/HIGH after its complete independent source-bound review,557.505s,full11text/7image delivery,no required repairs. All7minor findings adjudicated. Section12static scope remains9PASS/high;Section11first variance7PASS/high;Section10energy8PASS/high. Earlier Section9colored-time candidate remains17PASS/medium and is not promoted. STOP/report to Le at PROJECT-GOAL decision5 before sharp-constant work. Sharp target,Lean creation,novelty audit and final whole-paper cold read remain open.
+- **Proved in this project:** Theorem T:full-upper (§13) establishes the ORIGINAL full correct-scale upper bound in all admissible dimensions and covariances,with nonsharp constant;complete scoped Opus review all11PASS/HIGH. Also the P:Jensen Cauchy--Schwarz reduction (§2; numeric L_* calibration conditional on the intended source bound); reviewed G0 P:mixed, L:white-test,
   L:crude-corrected and P:envelope (§3); G1 finite coefficients (§4); reviewed G2 target-scale bounds P:d1-upper/P:low-alpha-upper for alpha<=1 (§5). Full goal and formal verification remain incomplete.
-- **Open targets:** remaining G:upper range 1<alpha<2-alpha0 in d=2,3; G:sharp; requested private Lean verification (not yet created).
-- **Current authorization:** Le requested activation and pursuit of the full goal on 2026-10-28 UTC. Resume with a fresh DeepSeek V4-Pro cold read while retaining the high-confidence acceptance threshold. Round4 remains a candidate. Separate decision point4 before companion creation remains pending.
+- **Open targets:** G:sharp; requested private Lean verification (not yet created);final whole-paper DeepSeek/source-bound cold read before any circulation. G:upper now has a complete proof accepted at the scoped correctness gate;global novelty remains UNVERIFIED.
+- **Current authorization:** Le requested activation and pursuit of the full goal on 2026-10-28 UTC. HIGH threshold retained. The original full upper goal has now passed its new cross-family review;report and stop at decision5. A fresh complete DeepSeek V4-Pro cold read remains due before circulation. Separate decision point4 before companion creation remains pending.
 - **Worker:** Codex agent #30 (<MACHINE>, `n30-stratonovich-ham-second`), handed over
   2026-10-26; workflow paper-dev + lean-pkg (Lean track: `lean-progress/PROGRESS.md`).
 
 ## Round plan
+
+Gate class: whole-paper.
+Gate scope: original full upper-scale and sharp-constant research goal;
+this checkpoint adopts the complete scoped G:upper proof only.
+Mandatory protocols: AGENTS.md and PROJECT-GOAL.md;independent Opus5.5/HIGH
+with source delivery;fresh complete DeepSeek cold read before circulation;
+clean builds;decision5 report/stop and separate decision4 before Lean creation.
 
 Each round: one bounded question, a frozen claim boundary, a written result
 in the notes (or a recorded no-go), a cross-family review for any new proof,
@@ -24,7 +31,7 @@ then the round-close protocol (`paper-dev-round-close-protocol`).
 |---|---|---|---|
 | 1 | **G0 diagnosis** | (a) Justify 𝔼u² = Σ_{m,n} 𝔼[S_m(g_m)S_n(g_n)] (m+n even) from (2.13), (2.18), (2.21) and Theorem 1.1, and write each term as a two-chain pairing integral in the form of (3.6). (b) Reproduce Remark 5.1's e^{Ct²} from (2.13), (4.4) and locate exactly where the exponent 2 enters instead of κ. (c) Decide whether Theorem 3.1 with Laplace-weighted kernels (Lemma A.1) can give the scale t^κ. | A written section in the notes: the cross-term formula with proof; the diagnosis; a verdict "Theorem 3.1 route viable / not viable" with the counting argument. |
 | 2 | **G1 calibration and small cases** | Compute the n = 1, 2 (chaos orders 2 and 4) contributions to 𝔼u² explicitly (d = 1, α = 1 white space first; then Riesz) and compare their growth with t^κ scaling; check the α₀→0 limit against Chen–Hu (2025). | Explicit low-order formulas plus a calibration table in the notes. |
-| 3 | **G2 upper bound** | Prove the unchanged full Goal G:upper. Spatial endpoint elimination followed by temporal Wick-sum symmetry has settled 0<alpha<=1 in d1,2,3; the remaining higher-alpha range needs another estimate. | Complete proof for the full range plus Opus review. Current result is a reviewed partial checkpoint, not full G2 completion. |
+| 3/4 | **G2 upper bound** | Prove the unchanged full Goal G:upper. Section5 first settled alpha<=1;Section13 now covers the full range by interval coefficients and dyadic domination. | Complete full-range proof plus Opus review:Section13 all11PASS/HIGH,full source delivery. Report to Le at decision5;whole-paper cold read/wiki round-close remain separate. |
 | 4+ | **G3 sharp constant** | Two-clock analogue of Chen's Theorem 6.1 for two ordered chains, and the matching large deviations (Theorem 7.1 analogue); lower bound beyond Jensen first. | Per sub-goal; record partial results honestly. |
 
 ## Decisions log
@@ -95,6 +102,7 @@ notes remain unreviewed and are not added to this accepted list.
 | 1 | 2026-10-27 | G0 complete: mixed expansion, corrected crude bound, intermediate rho upper bound and scoped no-go; Opus PASS_WITH_NOTES/high | 4ff2bca60e666482480596cc1e53b9be06750ea7 |
 | 2 | 2026-10-27 | G1 complete: all fifteen white order-four terms, exact static11/540, Riesz coefficients/representation; Opus PASS_WITH_NOTES/high | 8358d58c40591922a971790827f10ebe576932e0 |
 | 3 | 2026-10-27 | Reviewed partial G:upper: 0<alpha<=1 in d1,2,3, explicit constant; Opus PASS_WITH_NOTES/high; stop point 5, full goal still open | 53e2817eafd9ed4de30f3acda6427629b61c71e0 |
+| 4 (G2 checkpoint) | 2026-10-28 | ORIGINAL full G:upper established in Section13,all admissible dimensions/covariances;Opus all11PASS/HIGH,full delivery,no required repairs. Stop/report at decision5. Sharp,Lean,novelty and final whole-paper cold read remain open;not a completed round-close. | scientific source bee4b2a3ebdff2ac1cbae9208f436084ad2ad549;reviews/2026-10-28-dyadic-overlap/adjudication-v1.md |
 
 ## Round 1 — Gate G0 (2026-10-27)
 
@@ -1951,3 +1959,39 @@ provider dispatch. Existing2.1.304 selected through launch-local PATH;
 first-party <plan removed> identity and dry-run image/source requirements verified.
 No persistent setup configuration was changed. Static acceptance checkpoint
 cba14f9 is pushed and <HUB>-synchronized. New argument still UNREVIEWED.
+
+
+### Original full G:upper accepted; stop at decision5
+
+Full Section13 scientific source/dispatch bee4b2a3ebdff2ac1cbae9208f436084ad2ad549.
+Fresh native Opus5.5/high,first-party <plan removed>,supported runtime2.1.304,557.505s,
+PASS_WITH_NOTES/HIGH,all11checks PASS,no fatal/major or mandatory repairs.
+accepted=true,coverage_verified=true,all11texts/7source images delivered.
+Actual input/report/ledger hashes and held HEAD verified at collection.
+Every one of7minor findings and the source/AI limitations is adjudicated in
+dyadic-overlap/adjudication-v1.md. Own66member native/dry-run evidence
+losslessly archived and every extracted member hash verified before cleanup.
+
+This is the ORIGINAL full correct-scale upper bound in all admissible d1/2/3,
+including the remaining higher-alpha covariances,without angular density,
+Riesz representation or a suspect source first-moment constant. The uniform
+interval coefficient retains denominator(k!)^(3-alpha),then dyadic covariance
+domination and fixed-order source convergence give the asserted HAM bound.
+The old common-pairing no-go and earlier below-HIGH candidates retain their
+original scopes. G:sharp,companion creation,novelty and full cold read remain
+OPEN. No claim of complete project achievement or circulation clearance.
+
+Final main-source status/abstract/target/route consistency updated after
+acceptance. All old formal statements preserved;41of42proofs byte-identical
+to frozen review. Sole remaining proof change is the inventory tail's words
+sums-to clarified to is-at-most:the same integral bound checked in C7,with
+NO formula,hypothesis,constant or deduction change. Final actual formatter
+idempotent;74pages,0errors/undefined/overfull/tabs. Exact final source/PDF
+binding is dyadic-overlap/final-status-binding.json. Frozen review remains
+the73page source;do not relabel it as a74page whole-paper read.
+
+PROJECT-GOAL decision5 now applies:report this proof to Le and STOP before
+new sharp-constant work. The standing goal stays ACTIVE and uncompleted;
+this required PI checkpoint does not silently pause,shrink or complete it.
+Final whole-paper DeepSeek/source-bound clearance remains due before Le
+circulates the result. No notification or source-author message was sent.

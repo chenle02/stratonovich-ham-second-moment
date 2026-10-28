@@ -66,7 +66,7 @@
 
 \title{The second moment of the hyperbolic Anderson model with time-dependent
 noise: Stratonovich regime\\[0.3em]
-{\normalsize Working notes (reviewed partial upper bound, 2026-10-27)}}
+{\normalsize Working notes (reviewed full upper scale, 2026-10-28)}}
 \author{Le Chen}
 \date{\today}
 \maketitle
@@ -95,8 +95,12 @@ noise: Stratonovich regime\\[0.3em]
   Section~\ref{S:d1-upper} establishes upper bounds at the target
   scale for $0<\alpha\le1$ in dimensions one, two and three, including
   spatial white noise in dimension one, with explicit constants.
-  The range $\alpha>1$ in dimensions two and three, and the sharp
-  constant, remain open.
+  Section~\ref{S:interval-upper} establishes the upper bound for the
+  full homogeneous covariance class in every admissible dimension,
+  using interval fields, a uniform coefficient estimate and covariance
+  domination. Its complete argument has passed a scoped independent
+  correctness review. The sharp constant, formal verification and final
+  whole-paper cold read remain open; no novelty verdict is asserted.
 \end{abstract}
 
 \tableofcontents
@@ -4452,12 +4456,13 @@ evolution driven by a sum of overlapping time-block fields. A uniform
 interleaving or background-evolution estimate, followed by the colored
 temporal limit, is still required for Goal~\ref{G:upper}.
 
-\section{Interval fields and a candidate full upper bound}
+\section{Interval fields and the full upper bound}
 \label{S:interval-upper}
 
-\myCmts{Full-target upper-bound candidate, pending independent review of
-the interval coefficient argument and the source-limit transfer.
-The accepted static results do not by themselves certify this section.}
+\myCmts{The complete full-target upper-bound argument passed a scoped
+independent review, including the interval coefficients and source transfer.
+The sharp constant, formal verification and final whole-paper cold read
+remain open.}
 
 Write
 \[
@@ -4653,7 +4658,7 @@ Complex Hilbert inner products are linear in the first slot.
   \]
   because $\beta/\nu>1$.
 
-  If $i>k$, then $P_i\le\theta$. The remaining singleton tail sums to
+  If $i>k$, then $P_i\le\theta$. The remaining singleton tail is at most
   \[
     \theta\left(\frac1{\beta-1}+\frac1{\beta-2}\right)
     k^{\nu+1-\beta}=Ck^{\alpha_0}.
@@ -4849,7 +4854,7 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
   Proposition~\ref{P:interval-coefficients}.
 \end{proof}
 
-\begin{theorem}[Candidate full upper scale]\label{T:full-upper}
+\begin{theorem}[Full upper scale]\label{T:full-upper}
   Under Hypothesis~\ref{H:homog}, for every admissible $d=1,2,3$,
   there is a finite $C=C(\alpha,\alpha_0)$ such that
   \begin{equation}\label{E:full-upper-bound}
@@ -4858,7 +4863,7 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
     \exp\{C R_\alpha^{1/(3-\alpha)}
     T^{(4-\alpha-\alpha_0)/(3-\alpha)}\},\qquad T\ge1.
   \end{equation}
-  In particular, this would establish the unchanged Goal~\ref{G:upper}.
+  In particular, this establishes the unchanged Goal~\ref{G:upper}.
 \end{theorem}
 
 \begin{proof}
@@ -4954,7 +4959,7 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
 \end{proof}
 
 \begin{remark}[Claim and calibration boundary]\label{R:full-upper-boundary}
-  This section is a proof candidate until its complete source-bound review.
+  This section has passed a complete source-bound correctness review.
   It does not adopt a sharp constant, a first-moment normalization repair,
   a novelty verdict or formal verification.
   Its exponent tends to $(4-\alpha)/(3-\alpha)$ as $\alpha_0\downarrow0$.
@@ -4975,12 +4980,11 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
   explicit constant.
 \end{goal}
 
-\myCmts{Proved coverage of the unchanged full goal:
-Proposition~\ref{P:d1-upper} treats the stated one-dimensional Riesz
-and white cases, and Proposition~\ref{P:low-alpha-upper} treats
-$0<\alpha\le1$ in all three dimensions. These partial results have
-passed independent review. The range $1<\alpha<2-\alpha_0$
-in dimensions two and three remains open.}
+\myCmts{Theorem~\ref{T:full-upper} establishes the unchanged full upper
+goal for every admissible dimension and homogeneous covariance.
+Its complete proof has passed independent correctness review.
+The earlier explicit bounds for $0<\alpha\le1$ remain available.
+The sharp constant and final whole-paper cold read remain open.}
 
 \begin{goal}[Sharp second-moment constant]\label{G:sharp}
   Prove two-sided bounds of the type of Theorem~\ref{T:first} for $p=2$:
