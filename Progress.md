@@ -1682,3 +1682,53 @@ smoothing screen and distinguishes the unreviewed block/velocity diagnostic.
 No project publication or notification triggered. Main manuscript remains
 56pages with the same hashes/build status;the full original goal remains
 ACTIVE. New research lessons retained in general-covariance-cones/lessons.md.
+
+
+### Full-spatial-class static phase variance estimate frozen
+
+Previous turn: reviewed geometry/Poisson shortcut screen and exact block/
+velocity falsification changed the next action;classified PROGRESS. Current
+focused local/origin/<HUB> check clean0/0 at955cf1e. Actual wiki CLI and
+complete Chen2014 quenched page read before this work:entropy/eigenvalue
+method useful context,but its Riesz/product covariance hypotheses are not
+a general arbitrary-phase propagator theorem. No new missing reference.
+
+New Section11 is a POSITIVE full-covariance building block,not a narrower
+replacement goal: all nonnegative even PD tempered homogeneous Radon Gamma
+in d3,0<alpha<2,no angular density or endpoint representation. Lemma11.1
+proves shifted spectral resolvent max by physical Gamma positivity,and the
+centered static contraction bound by radialization against positive
+Gaussian-smoothed spherical wave tests. Physical M=Gamma(B1),spectral
+V=mu(B1)kept distinct;no translated physical maximum is claimed.
+
+Proposition11.2 controls BOTH first-variance terms for arbitrary real
+Schwartz initial phase,in L2 displacement plus H^{-1}_lambda velocity.
+First random Duhamel phase uses exact spectral isometry and shifted
+resolvent;mean second-order phase uses the centered contraction. At
+lambda1/h the complete coefficient is bounded by C h^{4-alpha} times
+initial phase norm squared,uniform in spatial smoothing. Explicit constants
+written. No full static solution/phase-operator/all-order bound is inferred.
+
+Falsification BEFORE proof: scalar static Gaussian toy,spatial alpha0endpoint
+outside theorem,has exact first-variance phase matrix[[4/3,4/5],[4/5,17/45]].
+Initial phase(1,-2)has negative coefficient-16/45. The random first term
+alone is insufficient;full phase energy cannot inherit covariance
+monotonicity for original data(1,0). Continuous scalar Taylor justification
+and exact Fraction diagnostics retained in phase-propagator/calibration.md.
+Numerical Riesz sphere/resolvent checks PASS;slow alpha1.9 tail uses stated
+1e-4relative tolerance,not a fifty-digit accuracy claim.
+
+Necessary fine-block arithmetic: summing INDIVIDUAL first-variance bounds
+across h_j=2^{-j}/lambda with a_j=h_j^{-alpha0}gives two convergent series
+precisely under alpha0<1 andalpha+alpha0<2. This does not identify a product
+coefficient or control overlapping noise levels. The main missing step is
+now an all-order estimate with summable small-block losses,not scalar
+solution-value multiplication or a fixed factor per block.
+
+Canonical59page build0errors/undefined/overfull/tabs,actual formatter
+idempotent;new pages55--58 visually checked. Deleting the new section
+recovers ALL prior source bytes;37old formal statements/31proofs preserved,
+2new statements/proofs. Exact source/PDF in phase-propagator/change-binding.json.
+Eight-text/four-image primary source packet frozen for fresh seven-check
+review,HIGH threshold unchanged;no acceptance before actual report/ledger.
+Earlier full-moment17PASS/MEDIUM and accepted energy/geometry scopes unchanged.

@@ -1,0 +1,244 @@
+\section{A static phase estimate at first variance order}
+\label{S:static-phase}
+
+A time-block argument would have to carry both position and velocity.
+We establish a uniform estimate for the first variance coefficient with
+arbitrary deterministic initial phase. The covariance may be any member
+of the original three-dimensional class; no endpoint representation is
+assumed. The estimate below is not an all-order propagator bound.
+
+\myCmts{New static phase estimate, pending independent review.
+The full general-covariance moment goal and the preceding candidate
+moment arguments retain their stated status.}
+
+Let $0<\alpha<2$, and let $\Gamma$ be a nonnegative, even,
+positive-definite tempered Radon covariance on $\R^3$, satisfying
+$\Gamma(rA)=r^{3-\alpha}\Gamma(A)$. Its spectral convention is
+$\Gamma=\int e^{i\xi\cdot x}\mu(\ud\xi)$. Put
+\begin{equation}\label{E:phase-constants}
+  \begin{split}
+    V&=\mu(B_1),\qquad M=\Gamma(B_1),\qquad
+    R_\alpha=\frac{\alpha\pi V}{2\sin(\pi\alpha/2)},\\
+    c_\Gamma&=\frac{(3-\alpha)M}{4\pi},\qquad
+    b_\alpha=2^\alpha+\frac{3^{2-\alpha}}{2-\alpha},\qquad
+    D_\Gamma=c_\Gamma b_\alpha.
+  \end{split}
+\end{equation}
+Here $B_1$ is the open unit ball in the relevant variable.
+The physical mass $M$ and the spectral mass $V$ are not identified.
+Let $p_\epsilon$ be the Brownian Gaussian density with covariance
+$\epsilon I$, and set
+$\Gamma_\epsilon=p_{2\epsilon}*\Gamma$.
+
+\begin{lemma}[Two static contraction bounds]\label{L:phase-contractions}
+  For $\lambda>0$, $q\in\R^3$, $a>0$, and $\epsilon>0$,
+  \begin{align}
+    \int_{\R^3}\frac{\mu(\ud\xi)}{\lambda^2+|q+\xi|^2}
+    &\le R_\alpha\lambda^{\alpha-2},
+    \label{E:phase-resolvent}\\
+    \left|T_\epsilon(a,q)\right|
+    &\le D_\Gamma a^{1-\alpha},
+    \label{E:phase-trace}\\
+    T_\epsilon(a,q)
+    &:=\int_{\R^3}e^{iq\cdot x}\Gamma_\epsilon(x)G_a(\ud x)
+    =\int_{\R^3}\widehat G_a(q+\xi)e^{-\epsilon|\xi|^2}
+    \mu(\ud\xi).\nonumber
+  \end{align}
+\end{lemma}
+
+\begin{proof}
+  Homogeneity and Fourier uniqueness give
+  $\mu(B_r)=Vr^\alpha$. In particular, there is no origin atom.
+  For $s>0$, Schwartz Fourier pairing yields
+  \[
+    \int e^{-s|q+\xi|^2}\mu(\ud\xi)
+    =\int p_{2s}(x)e^{iq\cdot x}\Gamma(\ud x)
+    \le\int p_{2s}(x)\Gamma(\ud x)
+    =\int e^{-s|\xi|^2}\mu(\ud\xi).
+  \]
+  The integrals are finite. Evenness makes the middle integral real,
+  and nonnegativity of $\Gamma$ gives the inequality. Multiply by
+  $e^{-\lambda^2s}$ and integrate in $s$. Nonnegative Tonelli on
+  the spectral side gives the resolvent comparison. At $q=0$ its
+  value is
+  \[
+    \alpha V\int_0^\infty\frac{r^{\alpha-1}}{\lambda^2+r^2}\ud r
+    =R_\alpha\lambda^{\alpha-2}.
+  \]
+  This proves~\eqref{E:phase-resolvent}.
+
+  Since $\mu$ is tempered, its Gaussian weighting is finite. Fourier
+  Fubini therefore gives the identity for $T_\epsilon$. The measure
+  $\Gamma_\epsilon(x)G_a(\ud x)$ is finite and nonnegative, whence
+  $|T_\epsilon(a,q)|\le T_\epsilon(a,0)$.
+  The radial distribution function of $\Gamma$ is
+  $\Gamma(B_r)=Mr^{3-\alpha}$. Thus, for every nonnegative radial
+  Schwartz function $F$,
+  \[
+    \int F(x)\Gamma(\ud x)
+    =(3-\alpha)M\int_0^\infty F(r)r^{2-\alpha}\ud r
+    =c_\Gamma\int_{\R^3}F(x)|x|^{-\alpha}\ud x.
+  \]
+  Apply this to $F=G_a*p_{2\epsilon}$, which is radial and Schwartz.
+  Nonnegative Fubini gives
+  \[
+    T_\epsilon(a,0)
+    =c_\Gamma[p_{2\epsilon}*(G_a*|\cdot|^{-\alpha})](0)
+    \le c_\Gamma\sup_z(G_a*|\cdot|^{-\alpha})(z).
+  \]
+  Write $r=|z|$. The spherical wave measure has mass $a$, and direct
+  integration over its normal coordinate gives, for $r>0$,
+  \[
+    (G_a*|\cdot|^{-\alpha})(z)
+    =\frac{(a+r)^{2-\alpha}-|a-r|^{2-\alpha}}
+    {2r(2-\alpha)}.
+  \]
+  For $r<a/2$, distances from $z$ to the sphere are at least $a/2$,
+  giving the bound $2^\alpha a^{1-\alpha}$. For $r>2a$, they are
+  at least $a$, giving $a^{1-\alpha}$. On $a/2\le r\le2a$, the
+  displayed formula is at most
+  $3^{2-\alpha}a^{1-\alpha}/(2-\alpha)$. These bounds also cover
+  the endpoints by continuity and give~\eqref{E:phase-trace}.
+  This proves Lemma~\ref{L:phase-contractions}.
+\end{proof}
+
+Let $A_\lambda=\lambda^2-\Delta$, and equip deterministic phase pairs
+with the norm
+\begin{equation}\label{E:phase-norm}
+  \|(f,g)\|_\lambda^2
+  =\|f\|_2^2+\|A_\lambda^{-1/2}g\|_2^2.
+\end{equation}
+Let $C_t$ be the Fourier multiplier $\cos(t|\xi|)$.
+On one static isonormal Gaussian space with covariance $\Gamma$, use
+$W_\epsilon(x)=W(p_\epsilon(x-\cdot))$. Its covariance is exactly
+$\Gamma_\epsilon(x-y)$, with spectral measure
+$\mu_\epsilon(\ud\xi)=e^{-\epsilon|\xi|^2}\mu(\ud\xi)$.
+For real Schwartz $f,g$, define the free position
+$w_0(t)=C_tf+G_t*g$ and its phase $Z_0(t)=(w_0(t),\dot w_0(t))$.
+The next two regularized static Duhamel phases are
+\begin{equation}\label{E:phase-duhamel}
+  Z_{j+1}(t)
+  =\int_0^t
+  \begin{pmatrix}
+    G_{t-s}*(W_\epsilon Z_{j,u}(s))\\
+    C_{t-s}(W_\epsilon Z_{j,u}(s))
+  \end{pmatrix}\ud s,\qquad j=0,1,
+\end{equation}
+where $Z_{j,u}$ is the position component. At fixed $\epsilon>0$
+these are Gaussian-polynomial Bochner integrals in the indicated
+$L^2$ phase space.
+
+\begin{proposition}[First variance estimate for arbitrary phase]
+  \label{P:static-phase-variance}
+  Let $N=\|(f,g)\|_\lambda$. Uniformly in $\epsilon>0$,
+  \begin{align}
+    \E\|Z_1(h)\|_\lambda^2
+    &\le R_\alpha h^2\lambda^{\alpha-2}
+    (1+\lambda^2h^2)^2N^2,\label{E:phase-born}\\
+    \|\E Z_2(h)\|_\lambda
+    &\le\frac{D_\Gamma(1+\lambda^2h^2)h^{3-\alpha}}
+    {\lambda(2-\alpha)(3-\alpha)}N.
+    \label{E:phase-mean}
+  \end{align}
+  In particular, put $\lambda=h^{-1}$ and let $K_\epsilon$ be the
+  coefficient of $\sigma^2$ in the finite polynomial
+  $\E\|Z_0(h)+\sigma Z_1(h)+\sigma^2Z_2(h)\|_\lambda^2$.
+  Then
+  \begin{equation}\label{E:phase-variance}
+    |K_\epsilon|
+    \le\left(4R_\alpha+
+    \frac{4\sqrt e\,D_\Gamma}{(2-\alpha)(3-\alpha)}\right)
+    h^{4-\alpha}\|(f,g)\|_{1/h}^2.
+  \end{equation}
+\end{proposition}
+
+\begin{proof}
+  We use the unnormalized spatial Fourier transform and Plancherel
+  measure $(2\pi)^{-3}\ud\eta$.
+  At fixed positive smoothing, Gaussian second and fourth moments
+  make~\eqref{E:phase-duhamel} integrable: $G_t$ has finite positive
+  mass, $C_t$ is an $L^2$ contraction, and
+  $\E|W_\epsilon(x)W_\epsilon(y)|^2
+  \le3\Gamma_\epsilon(0)^2$.
+  These facts, Minkowski and time integration justify the Gaussian
+  and Fourier Fubini steps below first for Schwartz data.
+
+  Set $a_s(\eta)=\widehat w_0(s,\eta)$ and
+  \[
+    e_\lambda(\eta)=|\widehat f(\eta)|^2+
+    \frac{|\widehat g(\eta)|^2}{\lambda^2+|\eta|^2}.
+  \]
+  Cauchy--Schwarz on the two initial coordinates gives
+  \[
+    |a_s(\eta)|^2\le(1+\lambda^2s^2)e_\lambda(\eta),
+  \]
+  because the squared norm of their coefficient vector is
+  $\cos^2(sq)+(1+\lambda^2/q^2)\sin^2(sq)
+  \le1+\lambda^2s^2$, with the continuous value at $q=0$.
+  For the two-component output multiplier put
+  \[
+    k_\tau(r)=\left(\frac{\sin(\tau r)}r,
+    \frac{\cos(\tau r)}{\sqrt{\lambda^2+r^2}}\right).
+  \]
+  Its Euclidean squared norm is
+  \[
+    |k_\tau(r)|^2
+    =\frac{1+\lambda^2\sin^2(\tau r)/r^2}{\lambda^2+r^2}
+    \le\frac{1+\lambda^2h^2}{\lambda^2+r^2},\qquad 0\le\tau\le h.
+  \]
+  Expanding the covariance of the two copies of $W_\epsilon$,
+  followed by spatial Plancherel, gives exactly
+  \[
+    \E\|Z_1(h)\|_\lambda^2
+    =\frac1{(2\pi)^3}\int\ud\eta\int\mu_\epsilon(\ud\xi)
+    \left|\int_0^h k_{h-s}(|\eta+\xi|)a_s(\eta)\ud s\right|^2.
+  \]
+  Cauchy--Schwarz in time bounds the last squared norm by
+  \[
+    \frac{h^2(1+\lambda^2h^2)^2}
+    {\lambda^2+|\eta+\xi|^2}e_\lambda(\eta).
+  \]
+  Now $\mu_\epsilon\le\mu$ and
+  Lemma~\ref{L:phase-contractions} give~\eqref{E:phase-born}.
+
+  The contraction inside the mean of $Z_2$ is the convolution
+  operator with kernel $G_{s-r}(\ud x)\Gamma_\epsilon(x)$.
+  Indeed, this follows directly from
+  $\E[W_\epsilon(x)W_\epsilon(y)]=\Gamma_\epsilon(x-y)$
+  in the two Duhamel integrals. Its Fourier multiplier is
+  $T_\epsilon(s-r,\eta)$, up to the immaterial even sign.
+  Its $L^2$ operator norm is therefore at most
+  $D_\Gamma(s-r)^{1-\alpha}$.
+  Under the isometry $(u,v)\mapsto(u,A_\lambda^{-1/2}v)$,
+  $\|k_\tau(|D|)\|_{L^2\to L^2\oplus L^2}
+  \le\sqrt{1+\lambda^2h^2}/\lambda$ and
+  $\|w_0(r)\|_2\le\sqrt{1+\lambda^2h^2}N$.
+  Minkowski and
+  \[
+    \int_0^h\ud s\int_0^s(s-r)^{1-\alpha}\ud r
+    =\frac{h^{3-\alpha}}{(2-\alpha)(3-\alpha)}
+  \]
+  prove~\eqref{E:phase-mean}.
+
+  Finally, the free phase obeys
+  $\|Z_0(h)\|_\lambda\le e^{\lambda h/2}N$.
+  To see this, for Schwartz free data differentiate its squared norm.
+  The $-\Delta$ terms cancel, leaving
+  $2\lambda^2\operatorname{Re}\langle A_\lambda^{-1}\dot w_0,w_0\rangle$,
+  whose absolute value is at most $\lambda\|Z_0\|_\lambda^2$.
+  Gronwall gives the stated bound. The required coefficient is exactly
+  \[
+    K_\epsilon=\E\|Z_1(h)\|_\lambda^2+
+    2\operatorname{Re}\langle Z_0(h),\E Z_2(h)\rangle_\lambda.
+  \]
+  Substituting $\lambda=h^{-1}$ into the two estimates proves
+  \eqref{E:phase-variance}. This proves
+  Proposition~\ref{P:static-phase-variance}.
+\end{proof}
+
+The second term in $K_\epsilon$ must be retained; neither its sign nor
+monotonicity of the full phase energy in covariance is assumed. The estimates
+control both terms at this one variance order. They do not control higher
+Gaussian contractions, products of independent time blocks, overlapping
+noise levels or the temporal regularization limit. Thus they do not yet
+establish Goal~\ref{G:upper}.
