@@ -3038,8 +3038,10 @@ using real Sobolev functions, and define
 \end{equation}
 The functional is precisely Chen--Hu's (1.11), p.~2147, for the endpoint
 covariance, with unit gradient penalty. The positive-measure energy above
-states its meaning without assigning a density to a singular covariance.
-Finiteness follows from the static input used in the proof below.
+agrees with the spectral form on every real Sobolev profile by
+Lemma~\ref{L:physical-spectral-energy}; thus no density is assigned to a
+singular covariance. The lemma also supplies finiteness, since $\beta<2$
+gives Dalang's condition as checked below.
 Nonnegativity follows by dilating a unit-$L^2$ Schwartz function: its
 energy term is nonnegative and its gradient penalty tends to zero.
 
@@ -3210,9 +3212,12 @@ energy term is nonnegative and its gradient penalty tends to zero.
   in~\eqref{E:three-regularized-holder}.
 
   We now identify the static inner Green limit with the source's
-  prescribed zero-Green-width approximant. Fix $\epsilon>0$, and let
-  $W_\epsilon$ be the static Gaussian field with covariance
-  $p_{2\epsilon}*\Gamma_{\rm st}$. This covariance is bounded and
+  prescribed zero-Green-width approximant. Take the source's static
+  isonormal noise $W^{\rm st}$ with covariance $\Gamma_{\rm st}$ and set
+  $W_\epsilon(x)=W^{\rm st}(p_\epsilon(x-\cdot))$.
+  All widths are therefore on the source's Gaussian space, and the
+  covariance is $p_{2\epsilon}*\Gamma_{\rm st}$.
+  This covariance is bounded and
   continuous, since Gaussian weighting makes its positive tempered
   spectral measure finite. It has a continuous modification. Indeed,
   with $\mu_{\rm st}$ the spectral measure,
@@ -3583,6 +3588,149 @@ energy term is nonnegative and its gradient penalty tends to zero.
   general-covariance goal, the sharp constant, novelty and formal
   verification remain open.
 \end{remark}
+
+\section{Physical and spectral energy for measure covariances}
+\label{S:energy-fidelity}
+
+This section justifies the positive-measure energy used
+in~\eqref{E:three-static-variational}. It does not assume
+Hypothesis~\ref{H:three-endpoints} or the conditional moment bound.
+The imported analytic input is the finite quartic variation in
+Chen~\cite{chen:23:exponential}*{Theorem~1.1, (1.5), p.~2}.
+
+\myCmts{New analytic lemma, pending scoped independent review.
+This source-functional identification does not promote the separate
+conditional moment argument or resolve general covariance factorization.}
+
+\begin{lemma}[Sobolev energy identification]\label{L:physical-spectral-energy}
+  Let $\Xi$ be a nonnegative, even, positive-definite tempered Radon
+  covariance on $\R^3$, with
+  $\Xi(rA)=r^{3-\beta}\Xi(A)$ for $0<\beta<2$.
+  Let $\mu_\Xi$ be its positive even spectral measure in the convention
+  $\Xi=\int e^{i\xi\cdot x}\mu_\Xi(\ud\xi)$, understood distributionally,
+  and use the Fourier transform
+  $\widehat h(\xi)=\int e^{-i\xi\cdot x}h(x)\ud x$.
+  For every real $g\in W^{1,2}(\R^3)$,
+  \begin{equation}\label{E:physical-spectral-energy}
+    \mathcal Q_\Xi(g)
+    :=\int_{\R^3}\int_{\R^3}g(y+z)^2g(y)^2\ud y\,\Xi(\ud z)
+    =\int_{\R^3}|\widehat{g^2}(\xi)|^2\mu_\Xi(\ud\xi)<\infty.
+  \end{equation}
+  The physical expression is independent of the Borel representative
+  of $g$. There is a finite $C_0\ge0$, depending on $\Xi$, such that
+  \begin{equation}\label{E:energy-quartic-bound}
+    \mathcal Q_\Xi(g)
+    \le\frac12\|g\|_2^2\|\nabla g\|_2^2+C_0\|g\|_2^4.
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  Fourier uniqueness gives
+  $\mu_\Xi(rA)=r^\beta\mu_\Xi(A)$.
+  Since its unit-ball mass is finite, the dyadic estimate with
+  $\sum_{j\ge0}2^{j(\beta-2)}$ verifies Dalang's condition.
+  For a real Schwartz function $h$ put
+  \[
+    \mathscr E(h)=\int|\widehat h(\xi)|^2\mu_\Xi(\ud\xi),
+    \qquad Q(f)=\mathscr E(f^2).
+  \]
+  Schwartz Fourier pairing identifies $Q(f)$ with its ordinary
+  positive-measure integral. From the finiteness assertion in
+  Chen~\cite{chen:23:exponential}*{Theorem~1.1, (1.5), p.~2},
+  restricted to real unit-$L^2$ Schwartz profiles and then normalized,
+  there is $C_0\ge0$ such that
+  \[
+    Q(f)\le\frac12\|f\|_2^2\|\nabla f\|_2^2+C_0\|f\|_2^4.
+  \]
+  Only Schwartz pairings have been used at this point, so this import
+  presupposes no energy identification for nonsmooth profiles.
+  If $N(f)^2=\|f\|_2^2+\|\nabla f\|_2^2$, it follows that
+  $Q(f)^{1/2}\le D N(f)^2$ for some finite $D$.
+
+  We need two different Cauchy--Schwarz inequalities.
+  For real Schwartz $f,h$, spectral Cauchy--Schwarz gives
+  \[
+    \begin{split}
+      0\le P(f,h)
+      &:=\int\Xi(\ud z)\int f(y+z)^2h(y)^2\ud y\\
+      &=\int\widehat{f^2}(\xi)
+      \overline{\widehat{h^2}(\xi)}\mu_\Xi(\ud\xi)
+      \le Q(f)^{1/2}Q(h)^{1/2}.
+    \end{split}
+  \]
+  Evenness makes the Fourier sign convention in this real pairing
+  immaterial. On the other hand, Cauchy--Schwarz on the positive
+  measure $\ud y\,\Xi(\ud z)$ gives
+  \[
+    \mathscr E(fh)
+    =\int\Xi(\ud z)\int
+    f(y+z)f(y)h(y+z)h(y)\ud y
+    \le Q(f)^{1/2}Q(h)^{1/2}.
+  \]
+  All these are absolutely convergent Schwartz pairings.
+  In particular, $\mathscr E(fh)$ is the quadratic energy of $fh$,
+  not the quartic expression $Q(fh)$.
+
+  Let $\mathfrak m(\ud y,\ud z)=\ud y\,\Xi(\ud z)$ and define
+  \[
+    A_f(y,z)=f(y+z)f(y),\qquad B_f(\xi)=\widehat{f^2}(\xi).
+  \]
+  The measure $\mathfrak m$ is positive and sigma-finite.
+  The decomposition
+  \[
+    A_f-A_h=(f-h)(y+z)f(y)+h(y+z)(f-h)(y)
+  \]
+  and the bound for $P$ imply
+  \[
+    \|A_f-A_h\|_{L^2(\mathfrak m)}
+    \le D\bigl(N(f)+N(h)\bigr)N(f-h).
+  \]
+  Since $f^2-h^2=(f-h)(f+h)$, the bound for $\mathscr E$ gives
+  \[
+    \|B_f-B_h\|_{L^2(\mu_\Xi)}
+    \le D N(f-h)N(f+h)
+    \le D\bigl(N(f)+N(h)\bigr)N(f-h).
+  \]
+
+  Choose real Schwartz $f_n\to g$ in $W^{1,2}$.
+  These estimates make both $A_{f_n}$ and $B_{f_n}$ Cauchy in
+  their respective $L^2$ spaces. Pass to a subsequence with
+  $f_n\to g$ Lebesgue-almost everywhere.
+  Translation invariance of Lebesgue measure and sigma-finite Fubini give
+  \[
+    f_n(y+z)f_n(y)\longrightarrow g(y+z)g(y)
+    \quad\text{for }\mathfrak m\text{-almost every }(y,z).
+  \]
+  Thus, the strong $L^2(\mathfrak m)$ limit is $A_g$.
+  The same Fubini argument shows that changing the Borel
+  representative of $g$ does not change this limit.
+
+  Also
+  \[
+    \|f_n^2-g^2\|_1
+    \le\|f_n-g\|_2(\|f_n\|_2+\|g\|_2)\longrightarrow0.
+  \]
+  Hence, $\widehat{f_n^2}\to\widehat{g^2}$ uniformly on all
+  frequencies. A subsequence of its strong $L^2(\mu_\Xi)$ limit
+  converges $\mu_\Xi$-almost everywhere, and must agree with this
+  uniform limit. Consequently, that strong limit is $B_g$.
+  For every $n$,
+  $\|A_{f_n}\|_{L^2(\mathfrak m)}^2
+  =Q(f_n)=\|B_{f_n}\|_{L^2(\mu_\Xi)}^2$.
+  Passing to the strong limits proves
+  \eqref{E:physical-spectral-energy}, including finiteness.
+  Passing the Schwartz quartic bound to the same limit proves
+  \eqref{E:energy-quartic-bound}.
+  This proves Lemma~\ref{L:physical-spectral-energy}.
+\end{proof}
+
+In particular, for $\|g\|_2=1$ the energy is at most
+$\|\nabla g\|_2^2/2+C_0$. Therefore, the supremum of
+$\mathcal Q_\Xi(g)^{1/2}-\|\nabla g\|_2^2$ is finite.
+Applied to $\Xi=\Gamma_{\rm st}$, the profile-by-profile identity
+justifies the actual measure-form functional in
+\eqref{E:three-static-variational} without assigning a density to
+the covariance or borrowing a disputed special-case constant.
 
 \section{Targets}\label{S:targets}
 

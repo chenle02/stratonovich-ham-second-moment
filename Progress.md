@@ -1524,3 +1524,42 @@ weight s^-4/5,giving a divergent s^-6/5 integral. Exact Fraction parameter
 control and complete lower-bound argument retained in covariance-recon/.
 This kills that isotropic nonlinear recipe only,not H9,the manuscript's
 linear-image method or the full target. No high-reviewed no-go is claimed.
+
+
+### New scoped energy-fidelity lemma: freeze before independent review
+
+Added Lemma10.1: physical positive-measure quartic energy equals its raw-
+Fourier spectral form for ALL real H1 profiles,including singular plane and
+linear-image covariances. Sole analytic import is Chen2023Theorem1.1(1.5)
+restricted FIRST to Schwartz profiles. Spectral and physical Cauchy--Schwarz
+control two different pairings; both physical product and squared-profile
+Fourier maps extend strongly from Schwartz. Translation/Fubini and uniform
+Fourier convergence identify both limits. No H1 algebra or singular trace
+identity is assumed. The actual M_st definition now cites this identity;
+static smoothing is explicitly on the imported source isonormal model.
+Full conditional moment argument remains at its prior MEDIUM status.
+
+Falsification/normalization checks: twelve exact anisotropic Gaussian/linear
+map Gram-cofactor identities; exact nonsmooth tent plane energy9/10; Gaussian
+plane,Riesz and constant spectral-atom normalizations. Initial diagnostic
+used an inverse column instead of the required inverse row and failed on a
+nonsymmetric tilt; corrected before freeze,recorded in checks JSON. No main
+formula changed because of that diagnostic bug. These are local finite and
+numerical checks,not the analytic proof or Lean certification.
+
+Actual formatter before canonical build,idempotent;56pages,0errors/undefined
+references or citations/overfull boxes/tabs;new pages53--54 visually checked.
+All36old statements preserved,one new statement/proof;only old transfer proof
+change is source-field realization. Earlier sections1--8 and Targets unchanged.
+Exact source/PDF binding,complete new proof,eight-check independent contract,
+19-member packet with eight mandatory texts/seven exact primary-source image
+carriers are in energy-fidelity/. HIGH threshold retained;no requested verdict.
+Review of this genuinely new analytic lemma cannot accept the whole moment
+theorem or solve the general factorization problem.
+
+Reference retention checkpoint: first queued paper now gold,canonical key
+milman:06:generalized,all six repository commits and convergence receipt saved
+in energy-fidelity/reference-state.json. Its exact new wiki paper page was
+read: integer geometric results/continuous star-body hypotheses do NOT yield
+a general d3 real-alpha covariance representation. Second paper claimed,
+other two pending at snapshot. No duplicates or service intervention.

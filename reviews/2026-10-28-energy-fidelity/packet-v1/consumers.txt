@@ -1,0 +1,234 @@
+% === Standard macros ===
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\W}{\dot W}
+\newcommand{\ud}{\,\mathrm{d}}
+\newcommand{\cE}{\mathcal{E}}
+\newcommand{\myCmts}[1]{\begin{framed}\noindent\textcolor{red}{#1}\end{framed}}
+
+We now take $d=3$, $0<\alpha_0<1$, and $1<\alpha<2-\alpha_0$.
+Let $\Gamma$ be a nonnegative, even, positive-definite tempered spatial
+covariance, with homogeneity exponent $\alpha$. As a positive distribution
+it is a Radon measure satisfying
+$\Gamma(rA)=r^{3-\alpha}\Gamma(A)$; a covariance function is identified
+with its density measure. Gaussian convolution is used for all covariance
+products. Choose and fix
+\begin{equation}\label{E:three-parameters}
+  \alpha_0<\vartheta<2-\alpha,\qquad
+  b_0=\alpha_0/\vartheta,\qquad
+  \beta=(\alpha-\vartheta)/(1-\vartheta).
+\end{equation}
+Then $0<b_0<1$ and $\alpha<\beta<2$, by the identities in the preceding
+proof. The zero target covariance is trivial, since then $u=1$.
+
+\begin{hypothesis}[Gaussian covariance comparison]\label{H:three-endpoints}
+  There are nonnegative, even, positive-definite tempered endpoint
+  covariances $\Gamma_{\rm low}$ and $\Gamma_{\rm st}$ on $\R^3$
+  with measure scaling
+  \[
+    \Gamma_{\rm low}(rA)=r^2\Gamma_{\rm low}(A),\qquad
+    \Gamma_{\rm st}(rA)=r^{3-\beta}\Gamma_{\rm st}(A),
+  \]
+  such that, for every $\epsilon>0$ and $z\in\R^3$,
+  \begin{equation}\label{E:three-gaussian-comparison}
+    (p_\epsilon*\Gamma)(z)
+    \le(p_\epsilon*\Gamma_{\rm low})(z)^\vartheta
+    (p_\epsilon*\Gamma_{\rm st})(z)^{1-\vartheta}.
+  \end{equation}
+\end{hypothesis}
+
+This is a condition on deterministic covariance measures and their Gaussian
+convolutions. It assumes no moment estimate. We do not assert that every
+homogeneous covariance in dimension three admits these endpoints.
+
+For the low endpoint let $V_{\rm low}=\mu_{\rm low}(B_1)$ in the
+spectral convention of Lemma~\ref{L:alpha-one-convolution}, and put
+\[
+  Z_{b_0}=\frac2{(1-b_0)(2-b_0)},\qquad
+  C_{\rm low}=2Z_{b_0}\pi V_{\rm low}.
+\]
+For the actual static endpoint, write
+\[
+  \mathcal{Q}_{\rm st}(g)
+  =\int_{\R^3}\int_{\R^3}g(y+z)^2g(y)^2\ud y
+  \,\Gamma_{\rm st}(\ud z),\qquad
+  \mathcal{F}_3=\{g\in W^{1,2}(\R^3):\|g\|_2=1\},
+\]
+using real Sobolev functions, and define
+\begin{equation}\label{E:three-static-variational}
+  \begin{split}
+    \mathcal{M}_{\rm st}
+    &=\sup_{g\in\mathcal{F}_3}
+    \left\{\mathcal{Q}_{\rm st}(g)^{1/2}-\|\nabla g\|_2^2\right\},\\
+    Q&=3-\beta,\qquad \nu_{\rm st}=4-\beta,\qquad
+    \Lambda_{\rm st}
+    =2\left(\frac{2\sqrt{\mathcal{M}_{\rm st}}}{4-\beta}\right)^{4-\beta}.
+  \end{split}
+\end{equation}
+The functional is precisely Chen--Hu's (1.11), p.~2147, for the endpoint
+covariance, with unit gradient penalty. The positive-measure energy above
+agrees with the spectral form on every real Sobolev profile by
+Lemma~\ref{L:physical-spectral-energy}; thus no density is assigned to a
+singular covariance. The lemma also supplies finiteness, since $\beta<2$
+gives Dalang's condition as checked below.
+Nonnegativity follows by dilating a unit-$L^2$ Schwartz function: its
+energy term is nonnegative and its gradient penalty tends to zero.
+
+\begin{proposition}[Conditional three-dimensional transfer]
+  \label{P:three-transfer}
+  Under the preceding assumptions and Hypothesis~\ref{H:three-endpoints},
+  with $\Gamma\ne0$, there is a finite constant $C>0$ such that
+  \begin{equation}\label{E:three-transfer}
+    A_k(t)\le\frac{C^kt^{(4-\alpha-\alpha_0)k}}{(k!)^{3-\alpha}}
+    \quad(k\ge1),\qquad
+    \E u^2(t,x)\le\exp\left(qC^{1/q}t^\kappa\right),
+    \quad q=3-\alpha.
+  \end{equation}
+  The estimates hold for all $t>0$ and $x\in\R^3$, with data $(1,0)$.
+  The constant may depend on the fixed covariances, $\alpha_0$, and
+  $\vartheta$, but not on $k,t,x$. In addition, the explicit variational
+  upper constant satisfies
+  \begin{equation}\label{E:three-variational-upper}
+    \limsup_{t\to\infty}t^{-\kappa}\log\E u^2(t,x)
+    \le q\left(C_{\rm low}^{\,\vartheta}
+    \Lambda_{\rm st}^{\,1-\vartheta}\right)^{1/q}.
+  \end{equation}
+  This constant is not asserted sharp and is not substituted into the
+  pure all-time exponential bound in~\eqref{E:three-transfer}.
+\end{proposition}
+
+\begin{proof}
+  We first record the general static input needed here. For a static
+  endpoint covariance $\Xi$ of exponent $\beta$, Fourier uniqueness
+  gives $\mu_\Xi(rA)=r^\beta\mu_\Xi(A)$ for its positive spectral
+  measure. Its unit-ball mass is finite, and
+  \[
+    \int_{\R^3}(1+|\xi|^2)^{-1}\mu_\Xi(\ud\xi)
+    \le\mu_\Xi(B_1)
+    +2^\beta\mu_\Xi(B_1)\sum_{j\ge0}2^{j(\beta-2)}<\infty.
+  \]
+  Thus, the static Dalang condition holds. Let $U_n$ be the source's
+  static ordered Stratonovich integrals, with $U_0=1$, and set
+  $B_k(t)=\sum_{m=0}^{2k}\E[U_m(t,x)U_{2k-m}(t,x)]$.
+  If $\Xi=0$, then $B_k=0$ for $k\ge1$, and $C_{\rm st}=1$
+  suffices in the bound below. For the remaining static calculation,
+  assume $\Xi\ne0$. From Chen--Hu~\cite{chen.hu:25:hyperbolic}*{Theorem~3.8(i), p.~2165,
+  and (2.17), (2.19)--(2.22), pp.~2151--2153}, the expectation and
+  product rules give finite nonnegative coefficients with every split
+  and pairing included; the latter formulas also specify the two-chain
+  and measure conventions. Finiteness of
+  the variational input follows from
+  Chen~\cite{chen:23:exponential}*{Theorem~1.1, p.~2}, which gives a
+  finite square-root variational supremum under Dalang's condition.
+  Chen--Hu identify that supremum with
+  $2^{\beta/(4-\beta)}\mathcal{M}$ on p.~2175. Hence, their
+  coefficient-rate constant involving $\mathcal{M}$ is finite.
+  For $\Xi=\Gamma_{\rm st}$ this functional is $\mathcal{M}_{\rm st}$
+  defined above. Only finiteness, not a sharp value, is needed for the
+  all-time coefficient bound.
+
+  From Chen--Hu~\cite{chen.hu:25:hyperbolic}*{(5.1), p.~2173,
+  and (5.15), p.~2180}, at $p=2$,
+  \[
+    B_k(t)=t^{(4-\beta)k}B_k(1),\qquad
+    \limsup_{k\to\infty}\frac1k
+    \log\left((k!)^{3-\beta}B_k(1)\right)<\infty.
+  \]
+  For $\Xi\ne0$, choose $R>0$ above this upper limit, then enlarge
+  $e^R$ to cover the $k$th roots of the finitely many remaining
+  quantities $(k!)^{3-\beta}B_k(1)$. We obtain a finite
+  $C_{\rm st}=C_{\rm st}(\Xi)>0$ such that
+  \begin{equation}\label{E:three-static-coefficient}
+    B_k(t)\le\frac{C_{\rm st}^{\,k}t^{(4-\beta)k}}{(k!)^{3-\beta}},
+    \qquad k\ge1,\quad t>0.
+  \end{equation}
+  Also $B_0=1$. We apply this source bound only after taking the
+  fixed-order noise limits, with $\Xi=\Gamma_{\rm st}$.
+
+  For the target, the same spectral scaling calculation has exponent
+  $\alpha$. Its dyadic sum for the weight
+  $(1+|\xi|^2)^{-(2-\alpha_0)/2}$ is finite because
+  $\alpha<2-\alpha_0$. This verifies the condition of the target's
+  Theorem~4.1. The endpoint $\Gamma_{\rm low}$ has covariance
+  exponent one, with $V_{\rm low},C_{\rm low}$ defined above.
+  Finiteness of $V_{\rm low}$ follows from the Radon spectral measure.
+  It is positive: otherwise homogeneity gives $\mu_{\rm low}=0$,
+  contradicting~\eqref{E:three-gaussian-comparison} and $\Gamma\ne0$.
+
+  We now identify the static inner Green limit with the source's
+  prescribed zero-Green-width approximant. Take the source's static
+  isonormal noise $W^{\rm st}$ with covariance $\Gamma_{\rm st}$ and set
+  $W_\epsilon(x)=W^{\rm st}(p_\epsilon(x-\cdot))$.
+  All widths are therefore on the source's Gaussian space, and the
+  covariance is $p_{2\epsilon}*\Gamma_{\rm st}$.
+  This covariance is bounded and
+  continuous, since Gaussian weighting makes its positive tempered
+  spectral measure finite. It has a continuous modification. Indeed,
+  with $\mu_{\rm st}$ the spectral measure,
+  \[
+    \E|W_\epsilon(x+h)-W_\epsilon(x)|^2
+    \le |h|^2\int_{\R^3}|\xi|^2e^{-\epsilon|\xi|^2}
+    \mu_{\rm st}(\ud\xi).
+  \]
+  The integral is finite by temperedness. Gaussian eighth moments
+  are therefore bounded by a constant times $|h|^8$.
+  Kolmogorov's continuity criterion in dimension three, applied on
+  compact sets and then on a countable exhaustion, gives the claimed
+  modification. We choose this version.
+  For $n\ge1$ define
+  $\Phi_n(\mathbf{x})=\prod_{j=1}^n W_\epsilon(x_j)$ as an $L^2$
+  random variable. Gaussian moments show that $\Phi_n$ is continuous
+  as a map from $(\R^3)^n$ to $L^2$ and uniformly bounded there:
+  if $v_\epsilon=(p_{2\epsilon}*\Gamma_{\rm st})(0)$, then
+  \[
+    \|\Phi_n(\mathbf{x})\|_2^2\le P_n v_\epsilon^n.
+  \]
+  The continuity follows by applying the same finite Gaussian moment
+  formula to $\E|\Phi_n(\mathbf{x})-\Phi_n(\mathbf{x}')|^2$.
+  Its separable continuous image is strongly measurable.
+
+  Let $\mathfrak{g}_{n,t,x}^{\eta}$ be the finite positive ordered
+  Green-chain measure, including its time variables, from the
+  source's kernel (2.13), with each Green factor smoothed by $p_\eta$.
+  For $\eta=0$, its spatial marginal is exactly the measure
+  $\mu_n^{t,x}$ specified immediately before (2.22), pp.~2152--2153.
+  Its mass is finite because each spatial factor has mass its time
+  gap. Thus,
+  \[
+    U_n^{\epsilon,0}(t,x)
+    :=\int\Phi_n(\mathbf{x})
+    \mathfrak{g}_{n,t,x}^{0}(\ud\mathbf{s},\ud\mathbf{x})
+  \]
+  exists as a Bochner integral in $L^2$.
+  We verify its agreement with the source's pathwise integral,
+  rather than identifying it only by notation. Put
+  $\rho=\mathfrak{g}_{n,t,x}^{0}$ and
+  $M_n=P_n^{1/2}v_\epsilon^{n/2}$, and denote the pathwise integral
+  by $J_n=\int\Phi_n\ud\rho$.
+  The continuous field version makes the integrand jointly
+  measurable. Since
+  \[
+    \int\E|\Phi_n|\ud\rho\le M_n\rho(1)<\infty,
+    \qquad
+    \|J_n\|_2
+    \le\int\|\Phi_n\|_2\ud\rho\le M_n\rho(1),
+  \]
+  the pathwise integral exists almost surely and belongs to $L^2$.
+  For every $Y\in L^2$, Cauchy--Schwarz and Fubini give
+  \[
+    \E[YJ_n]
+    =\int\E[Y\Phi_n]\ud\rho.
+  \]
+  Bochner duality gives the same identity for the $L^2$ integral.
+  Taking $Y=J_n-U_n^{\epsilon,0}$ identifies the two random
+  variables almost surely. Changing to another jointly measurable
+  field modification leaves the integral unchanged by Fubini.
+  Since the static integrand is independent of the time variables,
+  this is the integral against $\mu_n^{t,x}$ in the source's
+  convention and hence its actual smoothed approximant
+  $S_{n,\epsilon}$ with common width, from
+  Chen--Hu~\cite{chen.hu:25:hyperbolic}*{(3.1), p.~2153,
+  and the convention preceding (2.22)}.
+  Define $U_n^{\epsilon,\eta}$ by the same formula with
+  $\mathfrak{g}_{n,t,x}^{\eta}$, and retain $U_0^{\epsilon,\eta}=1$.
