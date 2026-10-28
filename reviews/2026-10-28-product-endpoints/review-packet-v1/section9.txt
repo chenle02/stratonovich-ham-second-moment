@@ -1,0 +1,533 @@
+\section{Three-dimensional bounds from covariance endpoints}
+\label{S:three-endpoints}
+
+\myCmts{Candidate argument, pending independent review. The conditional
+transfer in this section has an explicit covariance comparison hypothesis.
+We verify it for ordinary product and isotropic Riesz covariances in
+dimension three. Earlier candidates and accepted-scope statements are
+unchanged; no general three-dimensional factorization is asserted.}
+
+We first construct the product endpoints. Zero coordinate exponents below
+mean constant factors, not one-dimensional white noise.
+
+\begin{lemma}[Strict product endpoints]\label{L:product-endpoints}
+  Let $0\le a_j<1$ for $j=1,2,3$, let
+  $\alpha=a_1+a_2+a_3\in(1,2)$, and choose $0<\vartheta<2-\alpha$.
+  Put $\beta=(\alpha-\vartheta)/(1-\vartheta)$ and define
+  \begin{equation}\label{E:product-endpoint-vectors}
+    \begin{split}
+      L_j&=\max\{0,(a_j-1+\vartheta)/\vartheta\},\qquad
+      U_j=\min\{1,a_j/\vartheta\},\\
+      \Lambda&=\frac{1-\sum_jL_j}{\sum_jU_j-\sum_jL_j},\qquad
+      b_j=L_j+\Lambda(U_j-L_j),\qquad
+      v_j=\frac{a_j-\vartheta b_j}{1-\vartheta}.
+    \end{split}
+  \end{equation}
+  Then $0<\Lambda<1$, $\sum_j b_j=1$, $\sum_jv_j=\beta$, and
+  \[
+    a_j=\vartheta b_j+(1-\vartheta)v_j,\qquad
+    a_j>0\Longrightarrow 0<b_j,v_j<1,\qquad
+    a_j=0\Longrightarrow b_j=v_j=0.
+  \]
+  For any $c>0$, the ordinary covariance densities
+  \[
+    \gamma_a(x)=c\prod_{j=1}^3|x_j|^{-a_j},\qquad
+    \gamma_b(x)=c\prod_{j=1}^3|x_j|^{-b_j},\qquad
+    \gamma_v(x)=c\prod_{j=1}^3|x_j|^{-v_j}
+  \]
+  are nonnegative, even, positive definite, locally integrable and
+  tempered. Their covariance homogeneity exponents are $\alpha,1,\beta$,
+  respectively, with $\alpha<\beta<2$. For every $\epsilon>0$ and
+  $z\in\R^3$,
+  \begin{equation}\label{E:product-gaussian-comparison}
+    (p_\epsilon*\gamma_a)(z)
+    \le(p_\epsilon*\gamma_b)(z)^\vartheta
+    (p_\epsilon*\gamma_v)(z)^{1-\vartheta}.
+  \end{equation}
+  A factor with exponent zero is defined to be one everywhere.
+\end{lemma}
+
+\begin{proof}
+  We have $\vartheta<1$. There are at least two positive coordinates,
+  since every $a_j<1$ and $\sum_j a_j>1$. At a zero coordinate,
+  $L_j=U_j=0$. At a positive coordinate, $L_j<U_j$: if
+  $a_j\ge\vartheta$, then $U_j=1$ and $L_j<1$; if
+  $a_j<\vartheta$, then $U_j=a_j/\vartheta>0$, and either $L_j=0$
+  or $U_j-L_j=(1-\vartheta)/\vartheta>0$.
+
+  Let $I=\{j:L_j>0\}$ and $r=|I|$. For $r=0$ the sum of the lower
+  endpoints is zero; for $r=1$ it is less than one. For $r\ge2$,
+  \[
+    \sum_{j\in I}a_j\le\alpha<2-\vartheta
+    \le r-(r-1)\vartheta,
+  \]
+  because the last inequality is equivalent to
+  $(r-2)(1-\vartheta)\ge0$. Therefore,
+  \[
+    \sum_jL_j
+    =\frac{\sum_{j\in I}a_j-r+r\vartheta}{\vartheta}<1.
+  \]
+  If some $a_j\ge\vartheta$, its upper endpoint equals one and a
+  different positive coordinate has positive upper endpoint. Otherwise,
+  $\sum_jU_j=\alpha/\vartheta>1$. Hence,
+  $\sum_jL_j<1<\sum_jU_j$, which proves $0<\Lambda<1$ and
+  $\sum_jb_j=1$. At every positive coordinate,
+  $L_j<b_j<U_j$, so $0<b_j<1$. The inequalities
+  $b_j<U_j\le a_j/\vartheta$ and
+  $b_j>L_j\ge(a_j-1+\vartheta)/\vartheta$ give $0<v_j<1$.
+  At a zero coordinate $b_j=v_j=0$. The reconstruction identity is
+  immediate, and summing it gives $\sum_jv_j=\beta$. Finally,
+  \[
+    \beta-\alpha=\frac{\vartheta(\alpha-1)}{1-\vartheta}>0,
+    \qquad 2-\beta=\frac{2-\alpha-\vartheta}{1-\vartheta}>0.
+  \]
+
+  For any of the three exponent vectors $e$, local integrability is a
+  product of one-dimensional integrals with exponents below one.
+  For a Schwartz function $\psi$, choose $N>1$ and use
+  $|\psi(x)|\le C_N\prod_j(1+|x_j|)^{-N}$. This proves absolute
+  integrability against $\gamma_e$ and also temperedness. For each
+  active coordinate, $0<e_j<1$, use
+  \[
+    |u|^{-e_j}=\frac1{\Gamma(e_j/2)}
+    \int_0^\infty s^{e_j/2-1}e^{-su^2}\ud s.
+  \]
+  The product over the active coordinates is a positive mixture of
+  Gaussian functions in those coordinates, constant in all other
+  coordinates. Each such Gaussian is positive definite. For a complex
+  Schwartz $\varphi$, set
+  $\psi=\varphi*\widetilde{\varphi}$, where
+  $\widetilde{\varphi}(x)=\overline{\varphi(-x)}$.
+  The absolute integrability just proved permits Tonelli with $|\psi|$
+  and then Fubini for the mixture against $\psi$. Its quadratic form
+  is nonnegative. No Euler Gamma factor at exponent zero is introduced.
+  Evenness and homogeneity follow from the displayed densities.
+
+  The reconstruction of each exponent and the common amplitude imply
+  $\gamma_a=\gamma_b^\vartheta\gamma_v^{1-\vartheta}$ almost
+  everywhere; values on singular coordinate planes do not change these
+  locally integrable covariances. H\"older's inequality on the Gaussian
+  probability measure gives~\eqref{E:product-gaussian-comparison}.
+  Its endpoint convolutions are finite by the product integrability and
+  Gaussian decay. The amplitude remains $c^\vartheta c^{1-\vartheta}=c$.
+  This proves Lemma~\ref{L:product-endpoints}.
+\end{proof}
+
+We now take $d=3$, $0<\alpha_0<1$, and $1<\alpha<2-\alpha_0$.
+Let $\Gamma$ be a nonnegative, even, positive-definite tempered spatial
+covariance, with homogeneity exponent $\alpha$. As a positive distribution
+it is a Radon measure satisfying
+$\Gamma(rA)=r^{3-\alpha}\Gamma(A)$; a covariance function is identified
+with its density measure. Gaussian convolution is used for all covariance
+products. Choose and fix
+\begin{equation}\label{E:three-parameters}
+  \alpha_0<\vartheta<2-\alpha,\qquad
+  b_0=\alpha_0/\vartheta,\qquad
+  \beta=(\alpha-\vartheta)/(1-\vartheta).
+\end{equation}
+Then $0<b_0<1$ and $\alpha<\beta<2$, by the identities in the preceding
+proof. The zero target covariance is trivial, since then $u=1$.
+
+\begin{hypothesis}[Gaussian covariance comparison]\label{H:three-endpoints}
+  There are nonnegative, even, positive-definite tempered endpoint
+  covariances $\Gamma_{\rm low}$ and $\Gamma_{\rm st}$ on $\R^3$
+  with measure scaling
+  \[
+    \Gamma_{\rm low}(rA)=r^2\Gamma_{\rm low}(A),\qquad
+    \Gamma_{\rm st}(rA)=r^{3-\beta}\Gamma_{\rm st}(A),
+  \]
+  such that, for every $\epsilon>0$ and $z\in\R^3$,
+  \begin{equation}\label{E:three-gaussian-comparison}
+    (p_\epsilon*\Gamma)(z)
+    \le(p_\epsilon*\Gamma_{\rm low})(z)^\vartheta
+    (p_\epsilon*\Gamma_{\rm st})(z)^{1-\vartheta}.
+  \end{equation}
+\end{hypothesis}
+
+This is a condition on deterministic covariance measures and their Gaussian
+convolutions. It assumes no moment estimate. We do not assert that every
+homogeneous covariance in dimension three admits these endpoints.
+
+For the low endpoint let $V_{\rm low}=\mu_{\rm low}(B_1)$ in the
+spectral convention of Lemma~\ref{L:alpha-one-convolution}, and put
+\[
+  Z_{b_0}=\frac2{(1-b_0)(2-b_0)},\qquad
+  C_{\rm low}=2Z_{b_0}\pi V_{\rm low}.
+\]
+For the actual static endpoint, write
+\[
+  \mathcal{Q}_{\rm st}(g)
+  =\int_{\R^3}\int_{\R^3}g(y+z)^2g(y)^2\ud y
+  \,\Gamma_{\rm st}(\ud z),\qquad
+  \mathcal{F}_3=\{g\in W^{1,2}(\R^3):\|g\|_2=1\},
+\]
+using real Sobolev functions, and define
+\begin{equation}\label{E:three-static-variational}
+  \begin{split}
+    \mathcal{M}_{\rm st}
+    &=\sup_{g\in\mathcal{F}_3}
+    \left\{\mathcal{Q}_{\rm st}(g)^{1/2}-\|\nabla g\|_2^2\right\},\\
+    Q&=3-\beta,\qquad \nu_{\rm st}=4-\beta,\qquad
+    \Lambda_{\rm st}
+    =2\left(\frac{2\sqrt{\mathcal{M}_{\rm st}}}{4-\beta}\right)^{4-\beta}.
+  \end{split}
+\end{equation}
+The functional is precisely Chen--Hu's (1.11), p.~2147, for the endpoint
+covariance, with unit gradient penalty. The positive-measure energy above
+states its meaning without assigning a density to a singular covariance.
+Finiteness follows from the static input used in the proof below.
+Nonnegativity follows by dilating a unit-$L^2$ Schwartz function: its
+energy term is nonnegative and its gradient penalty tends to zero.
+
+\begin{proposition}[Conditional three-dimensional transfer]
+  \label{P:three-transfer}
+  Under the preceding assumptions and Hypothesis~\ref{H:three-endpoints},
+  with $\Gamma\ne0$, there is a finite constant $C>0$ such that
+  \begin{equation}\label{E:three-transfer}
+    A_k(t)\le\frac{C^kt^{(4-\alpha-\alpha_0)k}}{(k!)^{3-\alpha}}
+    \quad(k\ge1),\qquad
+    \E u^2(t,x)\le\exp\left(qC^{1/q}t^\kappa\right),
+    \quad q=3-\alpha.
+  \end{equation}
+  The estimates hold for all $t>0$ and $x\in\R^3$, with data $(1,0)$.
+  The constant may depend on the fixed covariances, $\alpha_0$, and
+  $\vartheta$, but not on $k,t,x$. In addition, the explicit variational
+  upper constant satisfies
+  \begin{equation}\label{E:three-variational-upper}
+    \limsup_{t\to\infty}t^{-\kappa}\log\E u^2(t,x)
+    \le q\left(C_{\rm low}^{\,\vartheta}
+    \Lambda_{\rm st}^{\,1-\vartheta}\right)^{1/q}.
+  \end{equation}
+  This constant is not asserted sharp and is not substituted into the
+  pure all-time exponential bound in~\eqref{E:three-transfer}.
+\end{proposition}
+
+\begin{proof}
+  We first record the general static input needed here. For a static
+  endpoint covariance $\Xi$ of exponent $\beta$, Fourier uniqueness
+  gives $\mu_\Xi(rA)=r^\beta\mu_\Xi(A)$ for its positive spectral
+  measure. Its unit-ball mass is finite, and
+  \[
+    \int_{\R^3}(1+|\xi|^2)^{-1}\mu_\Xi(\ud\xi)
+    \le\mu_\Xi(B_1)
+    +2^\beta\mu_\Xi(B_1)\sum_{j\ge0}2^{j(\beta-2)}<\infty.
+  \]
+  Thus, the static Dalang condition holds. Let $U_n$ be the source's
+  static ordered Stratonovich integrals, with $U_0=1$, and set
+  $B_k(t)=\sum_{m=0}^{2k}\E[U_m(t,x)U_{2k-m}(t,x)]$.
+  If $\Xi=0$, then $B_k=0$ for $k\ge1$, and $C_{\rm st}=1$
+  suffices in the bound below. For the remaining static calculation,
+  assume $\Xi\ne0$. From Chen--Hu~\cite{chen.hu:25:hyperbolic}*{Theorem~3.8(i), p.~2165,
+  and (2.17), (2.19), pp.~2151--2152}, these are finite nonnegative
+  coefficients with every split and pairing included. Finiteness of
+  the variational input follows from
+  Chen~\cite{chen:23:exponential}*{Theorem~1.1, p.~2}, which gives a
+  finite square-root variational supremum under Dalang's condition.
+  Chen--Hu identify that supremum with
+  $2^{\beta/(4-\beta)}\mathcal{M}$ on p.~2175. Hence, their
+  coefficient-rate constant involving $\mathcal{M}$ is finite.
+  For $\Xi=\Gamma_{\rm st}$ this functional is $\mathcal{M}_{\rm st}$
+  defined above. Only finiteness, not a sharp value, is needed for the
+  all-time coefficient bound.
+
+  From Chen--Hu~\cite{chen.hu:25:hyperbolic}*{(5.1), p.~2173,
+  and (5.15), p.~2180}, at $p=2$,
+  \[
+    B_k(t)=t^{(4-\beta)k}B_k(1),\qquad
+    \limsup_{k\to\infty}\frac1k
+    \log\left((k!)^{3-\beta}B_k(1)\right)<\infty.
+  \]
+  For $\Xi\ne0$, choose $R>0$ above this upper limit, then enlarge
+  $e^R$ to cover the $k$th roots of the finitely many remaining
+  quantities $(k!)^{3-\beta}B_k(1)$. We obtain a finite
+  $C_{\rm st}=C_{\rm st}(\Xi)>0$ such that
+  \begin{equation}\label{E:three-static-coefficient}
+    B_k(t)\le\frac{C_{\rm st}^{\,k}t^{(4-\beta)k}}{(k!)^{3-\beta}},
+    \qquad k\ge1,\quad t>0.
+  \end{equation}
+  Also $B_0=1$. We apply this source bound only after taking the
+  fixed-order noise limits, with $\Xi=\Gamma_{\rm st}$.
+
+  For the target, the same spectral scaling calculation has exponent
+  $\alpha$. Its dyadic sum for the weight
+  $(1+|\xi|^2)^{-(2-\alpha_0)/2}$ is finite because
+  $\alpha<2-\alpha_0$. This verifies the condition of the target's
+  Theorem~4.1. The endpoint $\Gamma_{\rm low}$ has covariance
+  exponent one, with $V_{\rm low},C_{\rm low}$ defined above.
+  Finiteness of $V_{\rm low}$ follows from the Radon spectral measure.
+  It is positive: otherwise homogeneity gives $\mu_{\rm low}=0$,
+  contradicting~\eqref{E:three-gaussian-comparison} and $\Gamma\ne0$.
+
+  Fix $k\ge1$, $t>0$, and positive widths $\epsilon,\delta,\eta$.
+  Noise width $\epsilon$ means edge covariance width $2\epsilon$;
+  $\delta$ is the target temporal cutoff and $\eta$ is Green smoothing.
+  On the full disjoint union over all splits $m+n=2k$ and all
+  $D\in\Pi_k$, define a common finite positive measure by
+  \[
+    \int\Phi\ud\nu_{k,t,\eta}
+    :=\sum_{m=0}^{2k}\sum_{D\in\Pi_k}
+    \int_{[0,t]^m_<\times[0,t]^{2k-m}_<}\ud s
+    \int\Phi(m,D,s,y)\prod_{l=1}^{2k}G_{h_l,\eta}(\ud y_l).
+  \]
+  Each chain has its own root; $h_l=s_l-s_{p(l)}$, $y_l$ is an
+  increment, and $x_l$ is the cumulative position in its chain.
+  Empty chains use empty products. The spatial mass is $\prod_lh_l$,
+  so bounded time simplexes and finite discrete sums prove finiteness.
+  This measure does not depend on which covariance is inserted.
+
+  For $J\in\{\Gamma,\Gamma_{\rm low},\Gamma_{\rm st}\}$ set
+  \[
+    H_J=\prod_{(i,j)\in D}(p_{2\epsilon}*J)(x_i-x_j),\qquad
+    T_b=\prod_{(i,j)\in D}|s_i-s_j|^{-b}.
+  \]
+  If $Q_\delta$ is the product of the target temporal covariances,
+  the source cutoff gives $0\le Q_\delta\le T_{\alpha_0}
+  =T_{b_0}^{\,\vartheta}$. The covariance hypothesis gives
+  $H_\Gamma\le H_{\Gamma_{\rm low}}^\vartheta
+  H_{\Gamma_{\rm st}}^{1-\vartheta}$ at the same edge width.
+  Define the deterministic low endpoint and the actual regularized
+  static coefficient by
+  \[
+    L_k^{\epsilon,\eta}(t)
+    =\int T_{b_0}H_{\Gamma_{\rm low}}\ud\nu_{k,t,\eta},
+    \qquad
+    B_k^{\epsilon,\eta}(t)
+    =\int H_{\Gamma_{\rm st}}\ud\nu_{k,t,\eta}.
+  \]
+  Gaussian moments and separate chain reversal identify the target
+  regularized coefficient with $\int Q_\delta H_\Gamma
+  \ud\nu_{k,t,\eta}$. The static identity has temporal covariance
+  one and includes self-pairings. H\"older on the entire common measure
+  yields
+  \begin{equation}\label{E:three-regularized-holder}
+    A_k^{\epsilon,\delta,\eta}(t)
+    \le\left(L_k^{\epsilon,\eta}(t)\right)^\vartheta
+    \left(B_k^{\epsilon,\eta}(t)\right)^{1-\vartheta}.
+  \end{equation}
+  No stochastic identity is assumed for $L_k^{\epsilon,\eta}$ with
+  its raw temporal power, and no relation between different temporal
+  cutoff kernels is used.
+
+  Lemma~\ref{L:alpha-one-convolution} applies to the low endpoint
+  with no angular-density assumption. Its uniform closing bound is
+  $\pi V_{\rm low}/2$. Descending increment integration removes the
+  only remaining covariance at each closing label; at each opening
+  the paired covariance is already removed and the Green mass is $h_l$.
+  The $k$ opening increments sum to at most $2t$. Consequently, the
+  common spatial bound is $(\pi V_{\rm low})^kt^k/k^k$, uniformly in
+  $\epsilon,\eta$. After summing pairings, the temporal integrand is
+  symmetric in all $2k$ labels. Its full cube integral is
+  $P_k(Z_{b_0}t^{2-b_0})^k$, where $P_k=(2k)!/(2^kk!)$.
+  The block-order factors and the binomial split sum give
+  \[
+    P_k\sum_{m=0}^{2k}\frac1{m!(2k-m)!}=\frac{2^k}{k!}.
+  \]
+  Therefore,
+  \begin{equation}\label{E:three-low-coefficient}
+    L_k^{\epsilon,\eta}(t)
+    \le\frac{C_{\rm low}^{\,k}t^{(3-b_0)k}}{k!\,k^k}
+    \le\frac{C_{\rm low}^{\,k}t^{(3-b_0)k}}{(k!)^2}.
+  \end{equation}
+  Here $b_0<1$ makes the raw temporal cube integral finite. At fixed
+  spatial width, the static covariance is bounded, so its regularized
+  coefficient is finite too. This justifies the finite right side
+  in~\eqref{E:three-regularized-holder}.
+
+  We now identify the static inner Green limit with the source's
+  prescribed zero-Green-width approximant. Fix $\epsilon>0$, and let
+  $W_\epsilon$ be the static Gaussian field with covariance
+  $p_{2\epsilon}*\Gamma_{\rm st}$. This covariance is bounded and
+  continuous, since Gaussian weighting makes its positive tempered
+  spectral measure finite. For $n\ge1$ define
+  $\Phi_n(\mathbf{x})=\prod_{j=1}^n W_\epsilon(x_j)$ as an $L^2$
+  random variable. Gaussian moments show that $\Phi_n$ is continuous
+  as a map from $(\R^3)^n$ to $L^2$ and uniformly bounded there:
+  if $v_\epsilon=(p_{2\epsilon}*\Gamma_{\rm st})(0)$, then
+  \[
+    \|\Phi_n(\mathbf{x})\|_2^2\le P_n v_\epsilon^n.
+  \]
+  The continuity follows by applying the same finite Gaussian moment
+  formula to $\E|\Phi_n(\mathbf{x})-\Phi_n(\mathbf{x}')|^2$.
+  Its separable continuous image is strongly measurable.
+
+  Let $\mathfrak{g}_{n,t,x}^{\eta}$ be the finite positive ordered
+  Green-chain measure, including its time variables, with each Green
+  factor smoothed by $p_\eta$. For $\eta=0$, use the sphere measures
+  in the source's definition (2.22). Their time-integrated mass is
+  finite because each spatial factor has mass its time gap. Thus,
+  \[
+    U_n^{\epsilon,0}(t,x)
+    :=\int\Phi_n(\mathbf{x})
+    \mathfrak{g}_{n,t,x}^{0}(\ud\mathbf{s},\ud\mathbf{x})
+  \]
+  exists as a Bochner integral in $L^2$. This is precisely the
+  noise-smoothed static integral against the measure in
+  Chen--Hu~\cite{chen.hu:25:hyperbolic}*{(2.22), pp.~2152--2153}.
+  Define $U_n^{\epsilon,\eta}$ by the same formula with
+  $\mathfrak{g}_{n,t,x}^{\eta}$, and retain $U_0^{\epsilon,\eta}=1$.
+
+  In the second and mixed moments of these integrals, the Gaussian
+  moment factors are bounded continuous functions of all spatial
+  positions. For each pair of time vectors, weak convergence of the
+  products of Green measures, including mixed products with one width
+  already zero, applies to these functions. The masses are unchanged.
+  A constant depending only on $n,\epsilon$ times the product of all
+  time gaps dominates the resulting time integrals. This is integrable
+  on the two bounded time simplexes. Hence, as $\eta\downarrow0$,
+  \[
+    \E\left[(U_n^{\epsilon,\eta})^2\right]
+    \longrightarrow\E\left[(U_n^{\epsilon,0})^2\right],
+    \qquad
+    \E\left[U_n^{\epsilon,\eta}U_n^{\epsilon,0}\right]
+    \longrightarrow\E\left[(U_n^{\epsilon,0})^2\right].
+  \]
+  Subtracting twice the second limit from the two square terms proves
+  $U_n^{\epsilon,\eta}\to U_n^{\epsilon,0}$ in $L^2$.
+  This identifies the limit with the source approximant, rather than
+  only showing that positive-width approximants are Cauchy.
+  For the target, fix $\epsilon,\delta$ and use its prescribed inner
+  Green limit from
+  Chen~\cite{chen:author2026:time-dependency}*{pp.~13--14}.
+  The same bounded Gaussian moment factors and time domination give
+  the fixed-order convergence and passage of mixed coefficients.
+
+  First take this Green limit in~\eqref{E:three-regularized-holder},
+  using the uniform bound~\eqref{E:three-low-coefficient}. Next send
+  the noise widths to zero. The static fixed-order $L^2$ limit is from
+  Chen--Hu~\cite{chen.hu:25:hyperbolic}*{Theorem~3.8(i), p.~2165};
+  the target fixed-order limit is from
+  Chen~\cite{chen:author2026:time-dependency}*{Theorem~4.1}.
+  Products of two fixed orders converge in $L^1$, since
+  \[
+    \|YZ-Y'Z'\|_1
+    \le\|Y-Y'\|_2\|Z\|_2+\|Y'\|_2\|Z-Z'\|_2.
+  \]
+  The split sums are finite, and zero-order factors remain one.
+  We obtain
+  \[
+    A_k(t)\le
+    \left(\frac{C_{\rm low}^{\,k}t^{(3-b_0)k}}{(k!)^2}\right)^\vartheta
+    B_k(t)^{1-\vartheta}.
+  \]
+  Only now use~\eqref{E:three-static-coefficient}. Neither monotonicity
+  of spatial smoothing nor a uniform smoothed static asymptotic was
+  needed. The identities
+  \[
+    \begin{split}
+      2\vartheta+(1-\vartheta)(3-\beta)&=3-\alpha,\\
+      \vartheta(3-b_0)+(1-\vartheta)(4-\beta)&=4-\alpha-\alpha_0
+    \end{split}
+  \]
+  give the coefficient estimate with
+  $C=C_{\rm low}^{\,\vartheta}C_{\rm st}^{\,1-\vartheta}$.
+  Finally, $A_0=1$, $q=3-\alpha>1$, and
+  \[
+    \sum_{k\ge0}\frac{z^k}{(k!)^q}
+    \le\left(\sum_{k\ge0}\frac{z^{k/q}}{k!}\right)^q
+    =e^{qz^{1/q}},\qquad z\ge0.
+  \]
+  The nonnegative full series of Proposition~\ref{P:mixed}, with
+  $z=Ct^{4-\alpha-\alpha_0}$ and
+  $(4-\alpha-\alpha_0)/q=\kappa$, yields the moment estimate.
+  It remains to prove~\eqref{E:three-variational-upper}. The precise
+  upper coefficient rate in Chen--Hu's (5.15), p.~2180, at $p=2$ is
+  \[
+    \begin{split}
+      \limsup_{k\to\infty}
+      \left((k!)^Q B_k(1)\right)^{1/k}
+      &\le 2^{-Q}2^{\nu_{\rm st}}
+      \left(\frac{2\sqrt{\mathcal{M}_{\rm st}}}{\nu_{\rm st}}\right)^{\nu_{\rm st}}\\
+      &=\Lambda_{\rm st}.
+    \end{split}
+  \]
+  The factor two follows from $\nu_{\rm st}-Q=1$; the logarithm in
+  the source applies to the entire coefficient-rate product.
+  Fix $r>0$. There is $N_r\ge1$, depending on the fixed endpoint
+  and $r$ but not on $t$, such that
+  \[
+    B_k(1)\le\frac{(\Lambda_{\rm st}+r)^k}{(k!)^Q},
+    \qquad k\ge N_r.
+  \]
+  Static coefficient homogeneity and the already established
+  coefficient H\"older inequality therefore give, simultaneously for
+  every $t>0$ and $k\ge N_r$,
+  \[
+    A_k(t)\le\frac{D_r^k t^{\zeta k}}{(k!)^q},\qquad
+    D_r=C_{\rm low}^{\,\vartheta}(\Lambda_{\rm st}+r)^{1-\vartheta},
+    \qquad \zeta=4-\alpha-\alpha_0.
+  \]
+  For each $1\le k<N_r$ the same inequality with the exact static
+  coefficient gives $A_k(t)\le d_kt^{\zeta k}$, where
+  \[
+    d_k=\frac{C_{\rm low}^{\,\vartheta k}
+    B_k(1)^{1-\vartheta}}{(k!)^{2\vartheta}}<\infty.
+  \]
+  Adding $A_0=1$ and the nonnegative series yields
+  \[
+    \E u^2(t,x)\le P_r(t)+e^{qD_r^{1/q}t^\kappa},\qquad
+    P_r(t)=1+\sum_{k=1}^{N_r-1}d_kt^{\zeta k}.
+  \]
+  This finite power sum has $\log P_r(t)/t^\kappa\to0$; its
+  exponents need not be integers. The logarithm of a sum of two
+  positive terms is at most the larger logarithm plus $\log2$.
+  Consequently, the required limsup is at most $qD_r^{1/q}$.
+  Let $r\downarrow0$ to obtain~\eqref{E:three-variational-upper}.
+  This also covers a zero static rate, without division by that rate.
+  The exact static homogeneity makes $N_r$ independent of $t$;
+  no target coefficient homogeneity or smoothed static asymptotic was
+  invoked. The finitely many low orders were kept, so this argument
+  does not replace the all-time constant by the asymptotic one.
+  This proves Proposition~\ref{P:three-transfer}.
+\end{proof}
+
+\begin{corollary}[Ordinary product and Riesz covariances in dimension three]
+  \label{C:three-product-riesz}
+  Let $d=3$, $0<\alpha_0<1$, and $1<\alpha<2-\alpha_0$.
+  The coefficient and all-time moment estimates in~\eqref{E:three-transfer},
+  and the asymptotic estimate in~\eqref{E:three-variational-upper}, hold
+  for either of the following spatial covariances, with $c>0$:
+  \begin{enumerate}
+    \item $\gamma(x)=c\prod_{j=1}^3|x_j|^{-a_j}$, where
+      $0\le a_j<1$ and $\sum_j a_j=\alpha$;
+    \item $\gamma(x)=c|x|^{-\alpha}$.
+  \end{enumerate}
+  In the first case the constant depends only on $a_1,a_2,a_3,c,\alpha_0$;
+  in the second it depends only on $\alpha,c,\alpha_0$.
+  A zero coordinate exponent denotes a constant factor; the case $a_j=1$
+  and any interpretation of it as coordinate white noise are excluded.
+\end{corollary}
+
+\begin{proof}
+  In both cases choose the fixed midpoint
+  $\vartheta=(\alpha_0+2-\alpha)/2$ and define $b_0,\beta$
+  by~\eqref{E:three-parameters}. Then
+  $\alpha_0<\vartheta<2-\alpha$, and all subsequent choices depend
+  only on the data in the statement.
+  For the product covariance, Lemma~\ref{L:product-endpoints} supplies
+  $b,v$ by its explicit interval formula. Its same-amplitude endpoint
+  densities $\gamma_b,\gamma_v$ are admissible covariance measures
+  of exponents one and $\beta$. Their common-width Gaussian inequality
+  is exactly Hypothesis~\ref{H:three-endpoints}.
+
+  For the Riesz covariance take $\gamma_1(x)=c|x|^{-1}$ and
+  $\gamma_\beta(x)=c|x|^{-\beta}$. Each degree $e\in\{1,\alpha,\beta\}$
+  is less than three, so the corresponding density is locally integrable
+  and tempered. Positive definiteness follows from the Gaussian mixture
+  \[
+    c|x|^{-e}=\frac{c}{\Gamma(e/2)}
+    \int_0^\infty s^{e/2-1}e^{-s|x|^2}\ud s.
+  \]
+  For a Schwartz autocorrelation, absolute integrability follows from
+  $e<3$ near zero and rapid decay at infinity. Tonelli and Fubini
+  therefore justify integrating the positive Gaussian quadratic forms.
+  The affine identity $\alpha=\vartheta+(1-\vartheta)\beta$ gives
+  $\gamma_\alpha=\gamma_1^\vartheta\gamma_\beta^{1-\vartheta}$
+  almost everywhere, with the same amplitude $c$. H\"older on the
+  Gaussian probability measure proves the required common-width
+  comparison for every $\epsilon,z$. Thus, in both cases all endpoint
+  hypotheses are discharged without relying on an earlier candidate
+  proposition. Proposition~\ref{P:three-transfer} applies. This proves
+  Corollary~\ref{C:three-product-riesz}.
+\end{proof}
+
+[held back until the source author has been told]

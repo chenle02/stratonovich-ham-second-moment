@@ -1276,3 +1276,20 @@ sync warning. Canonical local/origin converged; <HUB> contains the lesson
 commit plus newer work. A concurrent initial fast-forward refusal was retained
 and rechecked read-only; another agent's BOARD.md WIP was never reset/stashed.
 No setup/configuration change. New theorem candidates remain unpromoted.
+
+
+### Section9 source boundary qualified and full skeptic packet prepared
+
+The source-normalization finding is now reflected in the abstract, a warning
+beside the reproduced source statement, and a conditional first-moment/Jensen
+calibration in Remark9.5. All27proof bodies and33formal statements remain
+byte-identical; no intended source correction or new theorem is adopted.
+The guarded first edit refused mismatched context before writing; its subsequent
+unchanged-source build was not edit evidence. Corrected fail-fast run verified
+the actual diff,formatter idempotence and clean canonical50page build.
+Current TeXcd9d1c6381e481592af8fb5f339f735b727aebc4647fa2c07510210093625b12;
+PDFd630a021b5647ccbc643cda5747ca9d35576f9990944873e495569a2d1c12d08.
+Changed PDF pages1and48 visually checked;0errors/undefined/overfull/tabs.
+Original49page freeze and author reports remain immutable history.
+
+[held back: AI account details]

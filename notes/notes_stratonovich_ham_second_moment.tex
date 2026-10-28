@@ -74,9 +74,10 @@ noise: Stratonovich regime\\[0.3em]
 \begin{abstract}
   For the Stratonovich hyperbolic Anderson model driven by a Gaussian noise
   that is fractional in time, X.~Chen~\cite{chen:author2026:time-dependency}
-  proves the sharp existence condition and two-sided bounds on the large-time
-  growth of the first moment, and he conjectures the growth of all integer
-  moments. The source records the second-moment upper bound
+  proves the sharp existence condition and studies the large-time growth
+  of the first moment. The printed variational normalization of his
+  two-sided first-moment bounds requires clarification; no correction is
+  adopted here. He conjectures the growth of all integer moments. The source records the second-moment upper bound
   $\E u^2(t,x)\le e^{Ct^2}$. The goal of this project is (i) an upper bound
   for $\E u^2(t,x)$ at the correct scale
   $t^{(4-\alpha-\alpha_0)/(3-\alpha)}$, and (ii) the sharp constant in the
@@ -190,6 +191,12 @@ source it is used only for Stratonovich integrability (Section~4) and, via
 Lemma~A.1 with $G_l(t,x)=e^{-\theta t}G(t,x)$, in Laplace variables.
 
 \subsection{Known moment bounds}
+
+\myCmts{The following statement records the source as printed. Its
+variational constants require normalization clarification; see
+Remark~\ref{R:three-endpoint-scope}. We retain the printed formulas
+without adopting a correction. The upper-bound proofs below do not
+use the first-moment upper constant.}
 
 \begin{theorem}[\cite{chen:author2026:time-dependency}*{Theorem~1.2, (1.10)--(1.13)}]\label{T:first}
   Under Hypothesis~\ref{H:homog},
@@ -3225,13 +3232,18 @@ energy term is nonnegative and its gradient penalty tends to zero.
 \begin{remark}[Scope and calibrations]\label{R:three-endpoint-scope}
   As $\alpha_0\downarrow0$, the time exponent tends to
   $(4-\alpha)/(3-\alpha)$, agreeing with the static source without
-  interchanging limits or asserting uniform constants. Cauchy--Schwarz
-  gives $\E u(t,x)\le\exp(qC^{1/q}t^\kappa/2)$; the first-moment
-  source theorem and Proposition~\ref{P:Jensen} imply
-  $2L_*\le qC^{1/q}$. The same first-moment lower bound and
-  Cauchy--Schwarz show that the variational upper constant
-  in~\eqref{E:three-variational-upper} is at least $2L_*$. Neither
-  upper constant is asserted sharp. Comparisons
+  interchanging limits or asserting uniform constants. Cauchy--Schwarz gives
+  $\E u(t,x)\le\exp(qC^{1/q}t^\kappa/2)$. Conditionally on a
+  first-moment lower bound with the intended constant $L_*$, both
+  upper constants above are at least $2L_*$, by the same inequality
+  and the argument of Proposition~\ref{P:Jensen}. The author version's
+  printed variational definitions (1.11)--(1.13), with gradient
+  penalties one and one-half, require normalization clarification.
+  Their intended correction remains unspecified. This
+  qualification concerns the source-dependent calibration; neither
+  the first-moment upper constant nor that calibration is an input
+  to the upper-bound proof here. Neither upper constant is asserted sharp.
+  Comparisons
   with Skorohod exponents are restricted to the published Riesz and
   strictly positive product-exponent cases satisfying their stated
   hypotheses; see Balan--Conus~\cite{balan.conus:16:intermittency}*{
