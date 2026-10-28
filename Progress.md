@@ -6,7 +6,7 @@
 
 ## Current state
 
-- **Phase:**78page expanded full-upper proof accepted at renewed primary14PASS/HIGH,617.957s,full12text/14image delivery,no required repairs. All7minor findings and the author sign-convention observation adjudicated in cold-core-expansion/adjudication-v1.md. Final source has only enumerated notation/status/elementary clarifications after that reviewed source. The first complete cold read remains historically NOT CLEAR;a NEW blind DeepSeek read is next. G:sharp,Lean creation,novelty and circulation remain open. Earlier Section9alternative remains below HIGH.
+- **Phase:**78page expanded deduction remains primary14PASS/HIGH on its exact reviewed source. The SECOND complete blind DeepSeek read returned9items and remains NOT CLEAR:explicit terminal-kernel matching and modular coefficient assembly are still requested. Source files were available but the reader made0tool calls;source-unavailability claims are not credited. A new bounded modularization/limit-tail repair is opening,no G:sharp wave. Old/new reports retained;no whole-paper/circulation clearance.
 - **Proved in this project:** the original full upper-scale deduction has passed both its initial11check and expanded14check scoped independent correctness reviews. The actual current source/goal/hypotheses are bound in cold-core-expansion/final-status-binding.json. The unconditional Jensen comparison and its explicitly conditional numerical specialization are retained. Full project,sharp constant,formal verification and whole-paper/circulation clearance remain incomplete.
 - **Open targets:** verify the written cold-reader repairs with a NEW blind whole-paper read; G:sharp; requested private Lean verification (not yet created);final whole-paper DeepSeek/source-bound cold read before any circulation. G:upper now has a complete proof accepted at the scoped correctness gate;global novelty remains UNVERIFIED.
 - **Current authorization:** Le requested activation and pursuit of the full goal on 2026-10-28 UTC. HIGH threshold retained. The original full upper goal has now passed its new cross-family review;report and stop at decision5. A fresh complete DeepSeek V4-Pro cold read remains due before circulation. Separate decision point4 before companion creation remains pending.
@@ -2138,3 +2138,32 @@ access probe verified intended model/category and read,same text-only route
 and131072output cap. Scientific cold read is NEXT,not yet a report.
 
 [held back: collaborators' unpublished work]
+
+
+### Second blind cold read returned;two substantive assembly concerns OPEN
+
+Source32ee0ce9f00a02558811162d42efb5cbc1ba09a3,mathematics ef5f691.
+Fresh DeepSeek V4-Pro,393.565s,exit0,finish stop;complete77page manuscript
+and bibliography delivered inline. All42proofs/all formal statements
+byte-equal to canonical78pages. Model/HEAD/input identity verified. Reader
+madeZEROtool calls;all6source texts were available but unconsulted. Thus
+its claim that source proofs were not in the packet is factually qualified;
+no actual source-proof audit is credited. Full report and numbered-item
+adjudication in full-upper-cold-v2/. All7native archive members roundtrip
+hash verified before own terminal raw/temp cleanup.
+
+NOT CLEAR:write the finite Gaussian TERMINAL-chain kernels/domains/Wick
+sum with explicit coefficient one and symmetrization cancellation. Isolate
+the fixed-split coefficient bound so its exact metric exponent and product
+weights are a checkable statement,then shorten the inventory assembly.
+Do not dismiss these concerns using the14PASS/HIGH verdict. Additional
+comments about unfinished sharp target,internal-working-note scope and
+properly labelled analytic imports are retained as known boundaries.
+
+A uniform-amplitude moment bound can also give a geometric Duhamel tail
+from positivity,so the final series/mollified-solution passage can be proved
+here from the single known fixed-order input Th4.1,instead of using the
+older source crude series argument. This is the next bounded repair,not
+an independent re-proof of all source results or a narrowed target.
+New/rewritten proofs require fresh primary/HIGH and fresh blind gates.
+Full original goal ACTIVE,incomplete;no sharp/Lean/novelty/circulationclaim.
