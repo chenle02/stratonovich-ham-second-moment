@@ -105,6 +105,22 @@ All.bib -> ../refdb/All.bib (read-only), extra.bib (local additions)
   `extra.bib` (or through the refdb workflow, not by editing All.bib).
 - Before citing a key: `grep -n '{key,' All.bib extra.bib`.
 
+### Literature recon and retention (Le, 2026-10-28)
+- Before external recon, query SPDEs-wiki with `scripts/cli.py search` and
+  `cite`, then read the relevant synthesized pages. A filename/raw-text
+  search alone is not the complete wiki recon. Use the wiki to check model,
+  parameter, technique and no-go boundaries before importing a result.
+- When a helpful reference is missing from the six-repository corpus,
+  enqueue it through the canonical `repo-queue` for future use, as Le
+  explicitly requested. Prefer a verified published DOI when available,
+  retain the accessible source edition and precise reason for relevance,
+  and avoid duplicate preprint/publication records.
+- `repo-queue check` takes a citekey or exact DOI; its five addressable
+  layer checks do not replace a Papis metadata check. Retain exact ticket
+  identities and receipts. Queued, claimed and fully ingested are distinct.
+  Normal reference queueing does not authorize source-author correspondence,
+  public release or creation of the private Lean companion.
+
 ### Git
 - Remote: `origin` = <HUB> bare repo
   `<HUB>:<HOME>/<REMOTES>/Article-Stratonovich-HAM-Second-Moment.git`.

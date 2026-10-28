@@ -29,6 +29,11 @@ then the round-close protocol (`paper-dev-round-close-protocol`).
 
 ## Decisions log
 
+- 2026-10-28(Le): when helpful references are not in the six-repository corpus,
+  enqueue them for future use;do SPDEs-wiki recon. This is a standing workflow
+  preference,now reflected in AGENTS.md. Normal reference tickets are authorized;
+  source-author contact/public release/private companion remain separately gated.
+
 [held back: collaborators' unpublished work]
 
 ## Setup source reading (2026-10-26; historical)
@@ -1456,3 +1461,45 @@ spell distributional homogeneity/endpoint lemma hypotheses. These are minor
 in the report,not fabricated required repairs. The reviewer used an incorrect
 numeric reference(Lemma2.10)for the named degree-one lemma;compilednumber5.4
 is verified. No source/goal normalization repair or proof-status promotion.
+
+
+### Wiki synthesis recon and missing-reference retention
+
+Completed actual wiki CLI search/cite and relevant synthesized-page reading,
+not just filename search. Initial active-phase recon was project/raw-text
+before web;CLI synthesis recon followed Le's steering. This is recorded as
+an application miss of existing wiki-first guidance;AGENTS now retrieves
+that requirement before further external work. Missing frontmatter in the
+default Python was resolved by process-local uv with declared dependencies,
+not a global setup edit. Exact queries/results: covariance-recon/wiki-cli-recon.json.
+
+Useful outcomes: curvature gain changes to white-time/nonhomogeneous additive
+noise and does not apply;four-fold RMT pairing insight is not a HAM bound;
+Balan2022Poisson representation has d<=2/alpha<1scope;Chen-Hu static page
+warns about the separate published white constant;Chen2023wiki identified
+the quartic bound,verified against pinned Theorem1.1(1.5),for the next
+Schwartz-to-H1 physical/Fourier energy fidelity step. Fourier conventions
+are checked against the primary source,not copied from a generic concept.
+
+Four missing useful references were enqueued with verified PUBLISHED DOIs,
+priority5/nonblocking/idempotent UIDs,no force/wake/service restart:
+- Milman2006GeneralizedIntersectionBodies: tk-20261028-081542-codex-stratonovich-covariance-recon.
+- Milman2008NonEquivalence: tk-20261028-081544-codex-stratonovich-covariance-recon.
+- Rubin2008CosineTransforms: tk-20261028-081547-codex-stratonovich-covariance-recon.
+- Frank etal2026AnisotropicRiesz: tk-20261028-081549-codex-stratonovich-covariance-recon.
+Before enqueue,DOI/canonical-key inventory checks and separate Papis metadata
+search found no matching records. Raw arXiv IDs alone are NOT a reliable
+repo-queue check argument. All four exact request IDs and DOI fields verified;
+one claimed/three pending at snapshot,not fully ingested. Source/version and
+application boundaries accompany each request. No author contact.
+
+Milman arXivv2Th1.1/Cor5.5has integer n>=4scope;its noninteger extension is
+only suggested. It cannot be cited as an n3real-alpha theorem or used to
+assume density of our endpoint families. Other new refs are background leads,
+not imported SPDE results. Source/queue/recon records live in covariance-recon/.
+
+A separate UNREVIEWED deterministic probe records universal covariance ball-
+growth,time-integrated single-wave and two-FREE-wave bounds for all homogeneous
+positive covariances. These may be classical inputs and require source matching.
+They do not control residual remote covariance factors or the all-order factorial
+budget. No bound is promoted by that probe and the full original goal stays open.
