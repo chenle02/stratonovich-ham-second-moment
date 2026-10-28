@@ -1,0 +1,88 @@
+```json
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    ".review/required-sources.json lines 1-68 (read plan only; earns no read credit)",
+    "energy.txt lines 1-142 (complete)",
+    "consumers.txt lines 1-235 (complete)",
+    "reading-map.json lines 1-65 (complete)",
+    "source-map.txt lines 1-5 (complete)",
+    "scope.txt lines 1-4 (complete)",
+    "references.bbl lines 1-72 (complete)",
+    "normalization-checks.py lines 1-88 (complete)",
+    "normalization-checks.json lines 1-12 (complete)",
+    "chen-2023-01.png (full image: Chen 2023 p.1, generalized gamma, Bochner convention gamma=int e^{i xi x} mu, tempered mu)",
+    "chen-2023-02.png (full image: Chen 2023 p.2, Theorem 1.1, (1.3) Dalang, (1.4), (1.5), F_d, explicit finiteness sentence)",
+    "chen-hu-2145.png (full image: Chen-Hu p.2145, model (1.1)-(1.3), gamma>=0, d<=3)",
+    "chen-hu-2146.png (full image: Chen-Hu p.2146, Theorem 1.1, Dalang (1.6), homogeneity (1.8), dyadic/alpha<2 remark)",
+    "chen-hu-2147.png (full image: Chen-Hu p.2147, Theorem 1.2, M in (1.11) with unit gradient penalty, F_d in W^{1,2})",
+    "chen-hu-2149.png (full image: Chen-Hu p.2149, (2.7) mollified noise, (2.8) covariance gamma_{2eps}, (2.9))",
+    "chen-hu-2153.png (full image: Chen-Hu p.2153, mu_n^{t,x} convention, (2.22), (3.1) S_{n,eps}, (3.2) gamma_{eps_j+eps_k})",
+    "Not read (optional): canonical.tex, canonical.pdf, paper-chen-2023.pdf, paper-chen-hu.pdf"
+  ],
+  "checks": [
+    {
+      "claim": "C1: Hypothesis/source match and import of Chen 2023 Theorem 1.1 (1.5) on real Schwartz profiles only, with normalization to the quartic bound",
+      "verdict": "PASS",
+      "reason": "I rederived the spectral homogeneity myself. Measure scaling Xi(rA)=r^{3-beta}Xi(A) gives <Xi,phi(./r)>=r^{3-beta}<Xi,phi>. Under hat-phi(./r)=r^3 hat-phi(r.) and <Xi,k>=int hat-k(-xi)mu(dxi), this forces mu(sB)=s^beta mu(B). The dyadic estimate then gives int(1+|xi|^2)^{-1}dmu <= mu(B1)+2^beta mu(B1) sum_j 2^{j(beta-2)}, which is finite because beta<2. So Chen's (1.3) holds. The images confirm what Chen 2023 assumes: gamma>=0, nonnegative definite, possibly generalized, with the same convention gamma=int e^{i xi x}mu, tempered mu, and Dalang (1.3). The theorem explicitly states that the variation on the right side of (1.5) is finite. The import uses (1.5), with the 1/2 gradient penalty and no square root, not (1.4). Real unit Schwartz profiles lie in Chen's F_d. For a positive Radon Xi and Schwartz g, the double integral in (1.5) has only one meaning, <Xi, g^2 correlation g^2>, so no H1 identification is presupposed. Let C0 = max(sup,0). Scaling u=f/||f||_2 gives Q(f)=||f||^4 Q(u) and ||grad f||^2=||f||^2||grad u||^2, hence Q(f) <= (1/2)||f||_2^2||grad f||_2^2 + C0||f||_2^4. The zero profile is trivial. As an independent sanity check, dilation g_lambda=lambda^{3/2}g(lambda.) gives Q(g_lambda)=lambda^beta Q(g) against lambda^2 for the gradient term, and beta<2 is consistent with a finite supremum."
+    },
+    {
+      "claim": "C2: Exact Schwartz Fourier pairings, signs and constants; P vs Q vs E(fh); the two Cauchy-Schwarz inequalities",
+      "verdict": "PASS",
+      "reason": "Let k(z)=int phi(y+z)psi(y)dy with phi, psi real Schwartz. Then hat-k(-xi)=hat-psi(xi)·conj(hat-phi(xi)), so int k dXi = int hat-psi·conj(hat-phi) dmu. The result is real, and evenness of mu plus reality of phi, psi makes the order of conjugation and the sign convention immaterial, as the text says. There is no (2pi)^{-3} factor, because the representation Xi=int e^{i xi x}mu absorbs it. Delta check: mu=(2pi)^{-3}dxi, and unnormalized Plancherel then returns int g^4. With phi=f^2, psi=h^2 the pairing gives P(f,h), which is >=0 since Xi>=0. Spectral Cauchy-Schwarz in L^2(mu) gives P <= Q(f)^{1/2}Q(h)^{1/2}, using mu>=0. With phi=psi=fh, E(fh)=int A_f A_h dm, and Cauchy-Schwarz in L^2(dy Xi(dz)) gives E(fh) <= ||A_f||·||A_h|| = Q(f)^{1/2}Q(h)^{1/2}. The identity ||A_f||^2=Q(f) holds by the same pairing with phi=psi=f^2. The text correctly separates E(fh), a quadratic energy of fh, from Q(fh). All integrands are Schwartz, and the measures are positive and tempered, so Fubini applies absolutely."
+    },
+    {
+      "claim": "C3: sqrt(Q) <= D N^2 and the two local Lipschitz estimates for A_f and B_f",
+      "verdict": "PASS",
+      "reason": "Q <= (1/2+C0)N^4, so D=sqrt(1/2+C0) works. A_f-A_h=(f-h)(y+z)f(y)+h(y+z)(f-h)(y). The squared L^2(m) norms of the two terms are exactly P(f-h,f) and P(h,f-h). Each is at most D^2N(f-h)^2N(f)^2 and D^2N(h)^2N(f-h)^2 respectively, so ||A_f-A_h|| <= D(N(f)+N(h))N(f-h). B_f-B_h is the transform of (f-h)(f+h), and its squared L^2(mu) norm is E((f-h)(f+h)) <= D^2N(f-h)^2N(f+h)^2. The triangle inequality N(f+h) <= N(f)+N(h) finishes. Both estimates are proved only for Schwartz f, h. No H1-algebra property, no g^2 in H1, and no prior finiteness of the physical integral for nonsmooth g is used."
+    },
+    {
+      "claim": "C4: Density and limit identification for both the physical and spectral sides",
+      "verdict": "PASS",
+      "reason": "Real C_c^infinity functions are dense in real W^{1,2}(R^3), and N(f_n) stays bounded, so A_{f_n} and B_{f_n} are Cauchy. Take a subsequence with f_n -> g off a Lebesgue-null set E. The failure set is contained in {y in E} union {y+z in E}. By Tonelli on the sigma-finite product dy x Xi (Xi is Radon), its m-measure is int Xi(dz)(|E|+|E-z|)=0. So A_{f_n} -> A_g m-a.e. even for singular Xi, for example the plane delta. A further subsequence converges m-a.e. to the L^2(m) limit, so the limit equals A_g. The same null-set argument gives independence of the Borel representative. On the spectral side, ||f_n^2-g^2||_1 <= ||f_n-g||_2(||f_n||_2+||g||_2), so the transforms converge uniformly. B_g=hat(g^2) is a genuine continuous function, so no L^2 class is evaluated on a singular mu. A mu-a.e. subsequence identifies the strong limit. Norm equality passes to strong limits with no Fatou-only step and no escape of mass, and Q_Xi(g)=||A_g||^2 by Tonelli. The text leaves the sub-subsequence step for A implicit (minor)."
+    },
+    {
+      "claim": "C5: Quartic bound on all real H1, finite energies, post-proof variational finiteness, and the M_st application",
+      "verdict": "PASS",
+      "reason": "Q(f_n) -> Q_Xi(g), ||f_n||_2 -> ||g||_2 and ||grad f_n||_2 -> ||grad g||_2, so the inequality passes to the limit. For unit g with a=||grad g||^2, sqrt(a/2+C0)-a <= sqrt(C0)+1/8, so the M_st supremum is finite. Gamma_st satisfies the lemma's hypotheses: it is nonnegative, even, positive-definite, tempered and Radon, and beta lies in (alpha,2), a subset of (1,2) within (0,2). The chen-hu-2147 image confirms that M in (1.11) carries the unit gradient cost, with F_d contained in W^{1,2}. The lemma's 1/2 cost belongs only to the imported (1.5) bound and is not substituted into M_st. I also rederived the consumer's scaling relation independently: S(c)=sup{Q^{1/2}-c||grad g||^2} equals c^{-beta/(4-beta)}S(1), so S(1/2)=2^{beta/(4-beta)}M. The page-2175 citation itself is outside the packet. No sharp constant and no E/E_star correction is borrowed. The lemma justifies the measure form agreeing with the spectral or generalized form profile by profile."
+    },
+    {
+      "claim": "C6: Source-field consumer, W_eps = W^st(p_eps(x-.)) on the source's isonormal model, with its covariances and S_{n,eps}",
+      "verdict": "PASS",
+      "reason": "On one isonormal space, E[W_eps(x)W_eps'(y)] = int int p_eps(x-a)p_eps'(y-b)Gamma_st(a-b)da db = (p_{eps+eps'}*Gamma_st)(x-y), by the Gaussian semigroup property and evenness. With common width this is p_{2eps}*Gamma_st, which matches Chen-Hu (2.8) gamma_{2eps}, and the mixed widths match (3.2) gamma_{eps_j+eps_k}. Evenness of p makes (2.7) p_eps(y-x) equal to p_eps(x-y). The spectral weight e^{-eps|xi|^2}mu is finite, so the covariance is bounded and continuous. The increment bound |e^{i xi h}-1|^2 <= |xi|^2|h|^2 gives the stated second-moment estimate and Gaussian eighth moments of order |h|^8 > |h|^3, which is enough for Kolmogorov in d=3. The static integral against mu_n^{t,x} matches the convention preceding (2.22) and (3.1) with common width. All widths live on one Gaussian space, so no coupling between different covariance models is assumed. The full moment estimate was not re-reviewed, as instructed."
+    },
+    {
+      "claim": "C7: Normalization diagnostics consistent with the formulas, including the corrected inverse-row use",
+      "verdict": "PASS",
+      "reason": "I recomputed each control by hand; the script was not executed. (1) Plane, with the g^2 autocorrelation equal to p1, Xi = Lebesgue measure on {z3=0} and mu=(2pi)^{-1}delta_{(0,0)} x dxi3: both sides give 2pi/(2pi)^{3/2} = sqrt(2pi)/(2pi) = 1/sqrt(2pi) ≈ 0.398942, matching the JSON. (2) Riesz |z|^{-1} with mu=(2pi^2)^{-1}|xi|^{-2}dxi: physical 4pi/(2pi)^{3/2} and spectral 4pi·sqrt(pi/2)/(2pi^2) both equal sqrt(2/pi) ≈ 0.797885. (3) Constant covariance, with Lebesgue Xi and atomic mu=delta_0: the value is 1. This case is beta=0, outside the lemma's range, and is correctly not asserted to satisfy it. (4) Tent: the 1D integrals are int t^2=2/3 and int t^4=2/5, and the marginal is G=(3/2)t^2, so int G^2=(9/4)(2/5)=9/10, and the script's (3/2)^6(2/3)^4(2/5) equals the same. (5) Tilted plane: the physical value is proportional to det(B)^{1/2}det(T_p^T B T_p)^{-1/2}, and the spectral value lies on the line n=T^{-T}e3 with Jacobian |det T|^{-1}. Equality reduces to the cofactor identity det(T_p^T B T_p)=det(T)^2 det(B) e3^T T^{-1}B^{-1}T^{-T}e3, and the script uses exactly that with det(t)^2, which covers the negative determinant. Corrected row use verified: for T with third row (1,1,1), row 3 of T^{-1} is (-1,-1,1), which is orthogonal to both columns of T_p, while column 3, (0,0,1), is not. The leading minors of the profiles are positive (third profile: 2, 5, 7). The case count 3x4=12 matches. These are diagnostics, not proof."
+    },
+    {
+      "claim": "C8: Whole-claim, type and application adversarial check",
+      "verdict": "PASS",
+      "reason": "No hidden integrability, trace or domain defect was found. g^2 is in L^1, so hat(g^2) is defined everywhere. A_g is Borel on the product space. m is sigma-finite. Everything rests on Schwartz-level identities, Chen's finiteness and closure. Dependencies run one way: Chen 2023 (1.5) feeds the Schwartz bound, then the Lipschitz estimates, then the H1 identity and bound, then M_st finiteness. Nothing feeds back into the import. The lemma does not use Hypothesis H:three-endpoints or the moment bound. Nothing here supports a full general d=3 upper bound, a sharp constant, novelty, Lean, or circulation, and the text's red comment disclaims these. Remaining items are notation and exposition (see minor findings)."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Notation collision: in the consumer, Q=3-beta (E:three-static-variational), but inside the lemma's proof Q(f)=E(f^2). Likewise A_f/B_f in the proof versus A_k(t)/B_k(t) in Proposition 9.5, and P(f,h) versus the consumer's P_n. Consider renaming the proof-local symbols.",
+      "In the A-limit step, 'Thus, the strong L^2(m) limit is A_g' leaves implicit the extraction of a further subsequence converging m-a.e. to the L^2 limit (Riesz-Fischer). The B step does this explicitly; the A step could be written the same way.",
+      "In the lemma's proof, the Dalang verification is only sketched ('dyadic estimate with sum 2^{j(beta-2)}'). The explicit bound mu(B1)+2^beta mu(B1) sum_j 2^{j(beta-2)} appears only in the consumer. Repeating it, or cross-referencing it, would make the section self-contained.",
+      "C0 is implicitly max(supremum in (1.5), 0). Saying this explicitly would make 'C0 >= 0' immediate.",
+      "The import relies on the literal reading that Chen's (1.5) functional, evaluated at a Schwartz profile, equals the canonical pairing <Xi, g^2 correlation g^2> for a positive Radon Xi. This is the only possible meaning, but one sentence stating it would close the interpretive gap.",
+      "The consumer's P_n in ||Phi_n||_2^2 <= P_n v_eps^n is not defined within the supplied slice (presumably (2n-1)!!). It lies outside the lemma's scope."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is a read-only AI review. It is not human verification, a byte-provenance check, a novelty audit, or Lean certification.",
+    "The primary sources were inspected only through the supplied page images. Optional full PDFs and canonical.tex/pdf were not read, so Chen-Hu p.2175 (the 2^{beta/(4-beta)}M identification), Theorem 3.8(i), (2.13)-(2.21), (5.1) and (5.15), cited in the consumer, were not checked against the source. I independently confirmed the 2^{beta/(4-beta)} factor only through a dilation computation.",
+    "normalization-checks.py was not executed. Its JSON outputs were checked by independent hand computation of each closed form.",
+    "The full conditional moment theorem (Proposition 9.5) and the stochastic approximation argument are outside scope and are not accepted by this review. Only the source-field covariance and version identification was checked.",
+    "Gold-standard self-check: NOT gold standard. This is a one-pass AI correctness review of a scoped lemma. Correctness of the lemma and its consumers was verified with no fatal or major findings, but no human verification, no Lean, and no full-source reading of the uncited Chen-Hu pages were done."
+  ]
+}
+```

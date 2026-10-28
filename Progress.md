@@ -6,7 +6,7 @@
 
 ## Current state
 
-- **Phase:** Expanded54page Section9 includes plane endpoints, invertible-linear/finite-sum closure and actual moment consumers. Fresh primary review: all17PASS/medium,full source delivery,no required repairs,HIGH gate unmet. Earlier50page14PASS/medium and standalone plane/sum6PASS/high remain separate immutable scopes. Arbitrary-covariance d3 and sharp goals stay open; source normalization awaits clarification. Accepted alpha<=1 baseline is unchanged.
+- **Phase:**56page notes. New Section10 energy-identification lemma and exact M_st/source-field consumers: all8PASS/high,full delivery,accepted scoped review. Expanded Section9 full moment argument remains all17PASS/medium,no required repairs,HIGH gate unmet. Earlier50page14PASS/medium and standalone plane/sum6PASS/high remain separate scopes. Arbitrary-covariance d3 and sharp goals stay open;source normalization awaits clarification. Accepted alpha<=1 baseline unchanged.
 - **Proved in this project:** the P:Jensen Cauchy--Schwarz reduction (§2; numeric L_* calibration conditional on the intended source bound); reviewed G0 P:mixed, L:white-test,
   L:crude-corrected and P:envelope (§3); G1 finite coefficients (§4); reviewed G2 target-scale bounds P:d1-upper/P:low-alpha-upper for alpha<=1 (§5). Full goal and formal verification remain incomplete.
 - **Open targets:** remaining G:upper range 1<alpha<2-alpha0 in d=2,3; G:sharp; requested private Lean verification (not yet created).
@@ -1563,3 +1563,25 @@ in energy-fidelity/reference-state.json. Its exact new wiki paper page was
 read: integer geometric results/continuous star-body hypotheses do NOT yield
 a general d3 real-alpha covariance representation. Second paper claimed,
 other two pending at snapshot. No duplicates or service intervention.
+
+
+### Energy-fidelity primary review accepted at its scoped HIGH gate
+
+Source27186474297ccdbbaba1be8b3b33b86e5632e55a held until terminal collection.
+Opus5.5/high first-party returned PASS_WITH_NOTES/high,all8checks PASS,
+no fatal/major findings or required repairs,229.305s. Full eight-text/seven-
+image delivery and all19candidate hashes verified;accepted=true. All six
+minor findings and source-access/one-pass limitations adjudicated in
+energy-fidelity/adjudication.md. Native/dry-run62members archived losslessly,
+member hashes/roundtrip verified before removing own raw copies.
+
+This accepts only the energy lemma and precise variational/source-field
+identification consumers. Full conditional moment proof remains MEDIUM and
+general covariance gap open. No unchanged confidence retry or source/goal
+normalization repair. Final manuscript edit is review-status prose only;
+all37formal statements and31proofs compared byte-for-byte before final build.
+
+Retro capture in energy-fidelity/lessons.md distinguishes existing wiki-first
+application miss from a new skill;reference queue states,version/range
+restrictions,nonorthogonal transpose checks and same-shell committed-packet
+guard are recorded. No duplicate canonical skill or global setup change.
