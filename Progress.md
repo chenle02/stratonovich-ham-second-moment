@@ -1732,3 +1732,12 @@ recovers ALL prior source bytes;37old formal statements/31proofs preserved,
 Eight-text/four-image primary source packet frozen for fresh seven-check
 review,HIGH threshold unchanged;no acceptance before actual report/ledger.
 Earlier full-moment17PASS/MEDIUM and accepted energy/geometry scopes unchanged.
+
+
+Phase review preflight1 REFUSED before any provider call: literal prompt
+checks.py/checks.json was parsed as one nonexistent workspace path. Required
+files both existed;contract-v2 replaces that shorthand with separate names.
+No source,packet,scope,confidence threshold or scientific finding changed.
+No native review was created;preflight receipt and workspace preserved.
+The same-shell guard prevented launching after failure. This is filename
+wording repair,not a mathematical review or confidence retry.
