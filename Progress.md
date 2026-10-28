@@ -1709,7 +1709,7 @@ lambda1/h the complete coefficient is bounded by C h^{4-alpha} times
 initial phase norm squared,uniform in spatial smoothing. Explicit constants
 written. No full static solution/phase-operator/all-order bound is inferred.
 
-Falsification BEFORE proof: scalar static Gaussian toy,spatial alpha0endpoint
+Falsification BEFORE proof: scalar static Gaussian toy,spatial alpha=0 endpoint
 outside theorem,has exact first-variance phase matrix[[4/3,4/5],[4/5,17/45]].
 Initial phase(1,-2)has negative coefficient-16/45. The random first term
 alone is insufficient;full phase energy cannot inherit covariance
@@ -1775,3 +1775,10 @@ No force/wake/restart or author contact. The third ticket ends-2 and must
 be matched EXACTLY,never by the common prefix. These are future-use
 references,not imported theorems or completed ingestion claims. Author
 Nacta.pdf fetch timed out;no unacquired full-text theorem is assumed.
+
+
+Private wiki proposal reconciled to59pages and the separate accepted
+Section11first-variance scope;canonical project-base bytes reread unchanged.
+No project publication/notification occurred. New operator-reference exact
+ID+DOI snapshot verifies all3pending requests,including the distinct-2
+sibling. No complete-ingestion claim. Full original goal stays ACTIVE.
