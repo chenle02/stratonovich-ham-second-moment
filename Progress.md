@@ -1125,3 +1125,29 @@ reviews/2026-10-28-static-holder/opus-planar-skeptic/, on the same verified
 e970d995cce35625e538188f0a006a6e06219c03 input. Current harness exec session
 94495 was polled and confirmed running. Re-poll this attempt; do not launch
 a duplicate on an observation timeout. No planar theorem promotion yet.
+
+
+### Planar replay and adversarial reviews terminal
+
+The actual existing adversarial attempt completed: PASS_WITH_NOTES/medium,
+C1--C12 allPASS, complete required delivery, no fatal/major findings or
+required repairs. Fresh replay likewise returned allPASS/medium. Both
+accepted=false at the retained high threshold; Section8 remains a candidate.
+No unchanged-confidence retry or abstract/wiki promotion. Distinct Claude
+sessions are not distinct model families. Reports, all minor dispositions
+and limitations are retained in planar-adjudication.md and exact native
+evidence archive/manifest. Both review processes are terminal.
+
+New d3 product endpoint factorization survived a bounded covariance/algebra
+screen. For0<=a_j<1,1<sum a_j<2, fixedtheta<2-alpha, explicit lower/upper
+coordinate intervals yield b,v with sums1,beta, strict active exponents below1,
+and a=theta b+(1-theta)v. Zero coordinates remain zero. Same-amplitude
+product covariance Gaussian Holder and PD follow. Exact controls: agent2985
+grid+5adversarial cases; root579distinct grid cases. These are finite
+diagnostics, not proof or independent-family certification. Complete proof
+and source boundary are in reviews/2026-10-28-product-endpoints/probe.md.
+
+PROCEED only to a complete separately reviewed product-family interpolation
+candidate; no generic d3 factorization or full moment theorem is claimed by
+that screen. The failed Euclidean radial lowering remains a distinct route.
+Original full general d3 and sharp-constant goals are unchanged.

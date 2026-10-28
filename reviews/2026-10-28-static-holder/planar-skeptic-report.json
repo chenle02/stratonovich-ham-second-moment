@@ -1,0 +1,101 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "medium",
+  "source_coverage": [
+    ".review/required-sources.json: lines 1-198 (complete; read plan only, no read credit)",
+    "section8.txt: lines 1-461 (complete)",
+    "context.txt: lines 1-219 (complete)",
+    "reading-map.json: lines 1-72 (complete)",
+    "source-map.md: lines 1-54 (complete)",
+    "references.bbl: lines 1-73 (complete)",
+    "chen-hu-2145.png, chen-hu-2146.png, chen-hu-2147.png, chen-hu-2149.png, chen-hu-2150.png, chen-hu-2151.png, chen-hu-2152.png, chen-hu-2153.png, chen-hu-2165.png, chen-hu-2173.png, chen-hu-2175.png, chen-hu-2179.png, chen-hu-2180.png: each full page image viewed (complete)",
+    "chen-2023-01.png, chen-2023-02.png: full page images viewed (complete)",
+    "chen-02.png, chen-03.png, chen-07.png, chen-08.png, chen-09.png, chen-10.png, chen-11.png, chen-13.png, chen-14.png, chen-22.png, chen-30.png: full page images viewed (complete)",
+    "balan-conus-02.png, balan-conus-03.png, balan-conus-05.png, balan-conus-07.png: full page images viewed (complete)",
+    "canonical.tex (optional extra context, not required): lines 982-1459 read (Section 5: L:d1-spatial, A_k definition, P:d1-upper, L:low-alpha-convolution, L:alpha-one-convolution, P:low-alpha-upper, start of R:low-alpha-scope); section headings and label locations located by untruncated Grep",
+    "canonical.pdf, paper-*.pdf: not opened (optional; the rendered page images were used instead)"
+  ],
+  "checks": [
+    {
+      "claim": "C1: H:homog and the source covariance class match the positive tempered Radon/measure interpretation (density vs measure scaling, evenness, no origin atom, zero covariance, no angular-density restriction)",
+      "verdict": "PASS",
+      "reason": "For a density, gamma(cx)=c^{-alpha}gamma(x) in d=2 gives Gamma(rA)=r^{2-alpha}Gamma(A) by change of variables. A nonnegative, positive-definite generalized covariance is a positive distribution, so it is a Radon measure, and Bochner-Schwartz makes it tempered. This matches the 'possibly generalized' gamma>=0 class on Chen pp.2-3 and Chen-Hu pp.2145-2146. Evenness follows from real stationarity. The case Gamma=0 gives u=1. Lemma 8.1 derives the absence of an origin atom from scaling plus local finiteness. Only the physical angular measure sigma is used; it may be atomic, and no density or isotropy is assumed."
+    },
+    {
+      "claim": "C2: Lemma 8.1 polar structure: polar rectangles and measure uniqueness, Borel/Tonelli extension, finite physical sigma with factor (2-alpha), weighted endpoints locally finite and tempered with exact scaling",
+      "verdict": "PASS",
+      "reason": "Gamma({0})=r^{2-alpha}Gamma({0}) for all r, and this is finite, so Gamma({0})=0. Sector differences give (b^{2-alpha}-a^{2-alpha})sigma(E)/(2-alpha), which equals int_a^b r^{1-alpha}dr sigma(E). Polar rectangles form a pi-system generating the Borel sets of (0,inf)xS^1, and the measures are finite on annuli, so uniqueness holds there and then on the increasing union. Tonelli extends this to nonnegative Borel f with values in [0,inf]. S>0, since otherwise Gamma=0. The weighted polar measures are dr sigma and r^{1-beta}dr sigma; both are integrable at 0 when beta<2 and grow polynomially. The scalings r^{alpha-1}r^{2-alpha}=r and r^{alpha-beta}r^{2-alpha}=r^{2-beta} are correct."
+    },
+    {
+      "claim": "C3: Low endpoint: full-sphere half-line mixture, Schwartz quadratic-form proof of positive definiteness, uniform line integral 1/2 with the correct tangent convention, bound S/4, Gaussian averaging, no spectral/physical identification",
+      "verdict": "PASS",
+      "reason": "Evenness of sigma (inherited from Gamma) turns int_{S^1}int_0^inf into (1/2)int_{S^1}int_R. Writing y=s omega+v gives int_R psi(r omega)dr=int_{omega-perp}|int_R phi(s omega+v)ds|^2 dv>=0. With A=sqrt(h^2-b^2), the line integral is (1/2pi)int_{-A}^A ds/sqrt(A^2-s^2)=1/2. Lines with |b|>=h meet the open disk in at most a null set, and the density is set to zero on the circle. So (G_h*Gamma_low)(z)=(1/4)int 1{|z.omega-perp|<h}sigma(d omega)<=S/4, uniformly in h and z. Evenness of G_h together with the semigroup property gives [p_{eps+eta}*(G_h*Gamma_low)](z), whose mass-one average keeps S/4. A sanity check with Gamma=c|x|^{-1}dx gives S/4=c pi/2, which agrees with the independent spectral bound pi V/2 of L:alpha-one-convolution, but the proof does not use this identification."
+    },
+    {
+      "claim": "C4: Static endpoint positive definiteness by Gaussian mixture using the original positive spectral measure, with absolute Fubini and no undefined distribution products or powers; Gaussian Holder on the unnormalized measure p_eps(z-x)Gamma(dx) with exact radial cancellation",
+      "verdict": "PASS",
+      "reason": "|x|^{-lambda}=Gamma_fn(lambda/2)^{-1}int_0^inf s^{lambda/2-1}e^{-s|x|^2}ds is correct. The Fourier transform of e^{-s|x|^2}psi is a positive Gaussian convolution of |phi-hat|^2, so its pairing with the positive tempered spectral measure mu is >=0. Tonelli on |psi|s^{lambda/2-1}e^{-s|x|^2} returns int|psi|dGamma_st<inf, which justifies Fubini. Only smooth multiplication of the measure is used. With theta=(beta-alpha)/(beta-1) and 1-theta=(alpha-1)/(beta-1), theta(alpha-1)+(1-theta)(alpha-beta)=0 holds exactly. Holder with exponents 1/theta and 1/(1-theta) on the finite measure p_eps(z-x)Gamma(dx) is valid, and the null origin removes the 0^0 issue."
+    },
+    {
+      "claim": "C5: Lemma 8.2: Xi=0 case; spectral homogeneity and dyadic Dalang; exact general (not Riesz-only) Chen-Hu model and coefficients; explicit variational finiteness via Chen 2023; homogeneity plus finite coefficient rate give a uniform all-k C_st after finite enlargement",
+      "verdict": "PASS",
+      "reason": "Xi=0 gives B_k=0 for k>=1. Fourier scaling gives mu_Xi(rA)=r^beta mu_Xi(A), and the dyadic sum mu(B_1)(1+2^beta sum 2^{j(beta-2)}) is finite for beta<2. This is Chen-Hu (1.6). Theorem 3.8(i) (p.2165) gives fixed-order L2 convergence. (2.17) and (2.19) (pp.2151-2152) give the Wick and product formulas, and nonnegativity is stated on p.2152. B_k is exactly the p=2 sum over l1+l2=2k in (5.1) (p.2173) and (5.15) (p.2180). Theorem 1.2's hypothesis 0<beta<2 and d is met by 1<beta<2 with d=2, for general homogeneous covariances. M is finite because p.2175 identifies 2^{beta/(4-beta)}M with the variation in Chen 2023 (1.4), and Chen 2023 Theorem 1.1 states that variation is finite under Dalang's condition for generalized nonnegative, nonnegative-definite gamma. A finite limsup R, plus taking the maximum over finitely many k-th roots, gives C_st>0, and the time scaling gives all t."
+    },
+    {
+      "claim": "C6: Proposition 8.3 feasibility and common-measure setup across the full range 1<alpha<2-alpha0",
+      "verdict": "PASS",
+      "reason": "alpha0<2-alpha<1, so theta lies in a nonempty interval, theta<1 and 0<b0<1. beta-alpha=theta(alpha-1)/(1-theta)>0 and 2-beta=(2-alpha-theta)/(1-theta)>0. beta-1=(alpha-1)/(1-theta) shows Lemma 8.1's weight equals theta. The dyadic sum for Chen (1.5) converges iff alpha<2-alpha0. Gamma_st is nonzero with 1<beta<2, so Lemma 8.2 applies. nu_{k,t} sums finitely over m and D and integrates over bounded simplex pairs. Each chain has its own root, empty chains contribute empty products, and the spatial mass is prod h_l, so nu is finite. The common-width Wick formula with gamma_delta^0 times gamma_{2eps} (Chen (2.9), (2.23)), followed by the P:mixed reversals, gives the regularized target coefficient."
+    },
+    {
+      "claim": "C7: Gaussian spatial Holder and raw temporal cutoff domination, with no cutoff log-convexity and no common random-field coupling; the L endpoint is a deterministic raw-time integral and the B endpoint is the actual static coefficient",
+      "verdict": "PASS",
+      "reason": "Chen (2.24) gives gamma_delta^0(u)<=Gamma_fn(alpha0)^{-1}int_0^inf e^{-lambda|u|}lambda^{alpha0-1}d lambda=|u|^{-alpha0}, so Q_delta<=T_{alpha0}=T_{b0}^theta. The pointwise H_Gamma<=H_low^theta H_st^{1-theta} then gives Q_delta H_Gamma<=(T_{b0}H_low)^theta(H_st)^{1-theta}. Holder is applied once on nu, including its discrete variables. B_k^eps=int H_st dnu is exactly the common-width smoothed static Wick sum over all splits and pairings in Chen-Hu (3.2), with no temporal factor. No probabilistic coupling of the endpoint models is used."
+    },
+    {
+      "claim": "C8: Low coefficient calculation (descending-label invariant, closing S/4, opening AM-GM, pairing symmetry only after the sum, split factorials, C_low=Z*S)",
+      "verdict": "PASS",
+      "reason": "Integrating labels in descending order 2k,...,1: at a closing label, the only remaining factor depending on y_l is its own pair (the partner is smaller and independent of y_l), and Lemma 8.1 with eta=0 at width 2eps gives S/4 uniformly. At an opening label nothing remains, so the integral is the mass h_l. The opening increments are distinct, and each chain's increments sum to <=t, so their sum is <=2t, and AM-GM gives (S/4)^k(2t/k)^k=(S/2)^k t^k/k^k. Temporal sum: the sum over D is permutation-symmetric, the full-cube integral is P_k(Z t^{2-b0})^k, the simplex share is divided by m!(2k-m)!, and sum_m 1/(m!(2k-m)!)=4^k/(2k)!, giving 2^k(Z t^{2-b0})^k/k!. The product is (ZS)^k t^{(3-b0)k}/(k! k^k), and this is <=C_low^k t^{(3-b0)k}/(k!)^2 since k^k>=k!. Every factor is accounted for."
+    },
+    {
+      "claim": "C9: Fixed-order L2 hypotheses, L1 products, finite split limits, zero orders; static majorant used only after the smoothing limits; no monotonicity, uniform static smoothed asymptotic, or raw singular-product identity",
+      "verdict": "PASS",
+      "reason": "Target orders converge in L2 by Chen Theorem 4.1 (p.22), under (1.5). Static orders converge by Chen-Hu Theorem 3.8(i); common widths are a special case of the multi-parameter limit. ||YZ-Y'Z'||_1<=||Y-Y'||_2||Z||_2+||Y'||_2||Z-Z'||_2 handles each of the 2k+1 splits, and zero orders are identically 1. The L bound is deterministic and uniform in eps, and x->x^{1-theta} is continuous, so the limit inequality A_k<=(Lbound)^theta B_k^{1-theta} holds. Lemma 8.2 is invoked only afterwards. Raw singular products are never formed."
+    },
+    {
+      "claim": "C10: Factorial and time exponents, constants independent of k,t,x, the k=0 term, nonnegative full series, scalar summation; the all-time t^kappa second-moment bound follows",
+      "verdict": "PASS",
+      "reason": "Using (1-theta)beta=alpha-theta and theta b0=alpha0: 2theta+(1-theta)(3-beta)=3-alpha and theta(3-b0)+(1-theta)(4-beta)=4-alpha-alpha0, with C=C_low^theta C_st^{1-theta}. A_0=1. The l^q<=l^1 inequality gives sum z^k/(k!)^q<=exp(q z^{1/q}). With z=C t^{4-alpha-alpha0}, z^{1/q}=C^{1/q}t^kappa. P:mixed supplies E u^2=sum_k A_k(t) as a convergent nonnegative series. The constants depend only on Gamma, alpha0 and theta."
+    },
+    {
+      "claim": "C11: Corollary 8.4 and Remark 8.5: low/high seam, zero noise, static exponent, p=1/Jensen, restricted Skorohod comparisons; the full d=3/general sharp-constant goal remains open",
+      "verdict": "PASS",
+      "reason": "P:low-alpha-upper (canonical lines 1356-1445) covers 0<alpha<=1 in d=2 for distributional covariances with V>0, and V=0 is equivalent to zero noise. Proposition 8.3 covers 1<alpha<2-alpha0, which is the rest of H:homog's planar range 0<alpha<2-alpha0. As alpha0->0, kappa tends to (4-alpha)/(3-alpha), matching Chen-Hu (1.9); no interchange of limits is claimed. Cauchy-Schwarz bounds E u. P:Jensen's liminf>=2L_* combined with the upper bound gives 2L_*<=qC^{1/q}. Balan-Conus Theorem 2.1(b) (Skorohod solution, Riesz/fBm classes) appears only as a comparison, which is correct because its solution concept differs. d=3 and the sharp constant are stated to remain open."
+    },
+    {
+      "claim": "C12: Global hidden gaps, new statements and dependency directions; no promotion, novelty, Lean, circulation or full-goal claim; cited theorems used as imported inputs with their hypotheses checked",
+      "verdict": "PASS",
+      "reason": "Section 8 depends only on H:homog, P:mixed (Section 3), P:Jensen, L:d1-spatial and P:low-alpha-upper (Section 5, outside Sections 6/7), and the external sources. It cites no Section 6/7 label. The myCmts banner keeps the candidate status, and the earlier accepted scope is unchanged. Imported hypotheses are verified: Dalang for Gamma_st, (1.5) for Gamma, homogeneity range beta<2 and d, gamma>=0 and positive definite. No novelty, formal-verification or full-goal claim is made. No circular dependency or hidden gap was found."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Line 113: the Gamma function Gamma(lambda/2) uses the same symbol as the covariance measure Gamma. Consider a distinct symbol for the Gamma function.",
+      "G_{h,eta}, A_k(t) and the regularized coefficient A_k^{eps,delta}(t) are not defined inside Section 8 or in the context packet. G_{h,eta} and A_k come from canonical lines 1121-1127 and 1227, and A_k^{eps,delta} appears only implicitly as sum_m E[X_m^{eps,delta}X_{2k-m}^{eps,delta}]. A one-line definition or cross-reference would help.",
+      "Lines 293-294: checking the low endpoint's spectral exponent against an existence range is unnecessary, because no stochastic low-endpoint model is built (L_k^eps is purely deterministic). The sentence could be removed or reworded to avoid suggesting such a model.",
+      "Line 324: Q_delta<=T_{alpha0} is asserted from 'the source regularization'. Displaying the one-line bound Gamma_fn(alpha0)^{-1}int_0^{1/delta}e^{-lambda|u|}lambda^{alpha0-1}d lambda<=|u|^{-alpha0} would make it self-contained.",
+      "Corollary 8.4 says C_2 depends on alpha0 and the covariance. For alpha>1 it also depends on the fixed theta. This is harmless if theta is chosen canonically (e.g. the midpoint of (alpha0,2-alpha)), and saying so would help.",
+      "Line 21: equivalence with H:homog's pointwise scaling holds only almost everywhere (or distributionally) for densities. The wording could say this."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is an AI scoped review, not human verification, a novelty audit or whole-project clearance.",
+    "Imported results were checked for statement and hypotheses only; their proofs were not re-derived. This covers Chen-Hu (5.1), (5.13)-(5.15) and the constants C, C_delta from (5.11)/(3.12), which are not on the packet pages; Chen-Hu Theorem 3.8(i); Chen Theorem 4.1; Chen 2023 Theorem 1.1; and the inherited P:mixed, P:Jensen and P:low-alpha-upper.",
+    "No commands were run: the LaTeX was not compiled, the PDFs were not hash-checked and canonical.pdf was not opened. Label numbers and pages in reading-map.json were not checked independently against the compiled PDF.",
+    "Of canonical.tex, only lines 982-1459 (plus untruncated Grep for labels and section headings) were read, for optional context. Other canonical sections, including the unadopted Sections 6/7, were deliberately not used as premises.",
+    "Self-check: this report is a one-pass independent mathematical audit of section8.txt against the frozen packet. It is not a gold-standard certification of the paper; the remaining items (human verification, compile gate, and a significance or novelty judgment) are outside this review's scope."
+  ]
+}
