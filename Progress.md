@@ -1789,3 +1789,63 @@ phase-propagator/reference-state-final.json:two Milman papers gold;Rubin,
 Frank and all three new Crouzeix papers remain pending. Exact ID+DOI
 matching used,including the distinct-2ticket. No service action or
 complete-ingestion claim for the five pending references.
+
+### All-order static phase and interaction candidate frozen
+
+Previous goal turn classified PROGRESS: accepted full-spatial-class complete
+first-variance phase estimate,clean59page build,exact source/review provenance
+and new operator references retained. Current focused local/origin/<HUB>
+check clean0/0 at0793920;advisory workspace audit also ran. Actual canonical
+wiki author-filter search for Crouzeix returned no page before the new primary
+source reading. The existing published-DOI ticket is reused,not duplicated.
+
+Acquired/pinned arXiv1702.00668v1,eight pages,SHA256
+0e33b65b3fab07632364111290e380b0696d7ace8168c9b834028de57d943c53.
+Read primary(3)p1 and Theorem6pp5--6,with rendered-page checks. Source-specific
+local extra.bib entry and SOURCE-MANIFEST distinguish preprint numbering from
+journal DOI10.1137/17M1116672. Only the BOUNDED-Hilbert-operator spectral-set
+inequality is imported. No unbounded theorem extension or generic Kato
+square-root domain theorem is assumed.
+
+New Section12 candidate contains four complete statements/proofs:
+- Complex phase bound via the all-rho sandwich hypothesis,an explicit
+  inverse-square-root resolvent integral,numerical-range parabola and all
+  four displacement/weak-velocity blocks on a complex coupling circle.
+- Gaussian Hermite cutoff form estimate with both creation AND annihilation,
+  finite Gaussian basis/spatial band,and the full spatial covariance class.
+- Cauchy extraction at Gaussian degreeN=n andlambda=n/h,then strong cutoff
+  removal at FIXED positive smoothing,giving all static Duhamel orders with
+  denominator(n!)^{(3-alpha)/2}inL2norm and a complete static series bound.
+- Interaction map close to identity,retaining the exact first-variance
+  coefficient separately and bounding the higher-order remainder. Fine-block
+  noise-excess bounds are summable under the original parameter condition.
+  A finite single partition of mutually INDEPENDENT successive fields has
+  a genuine conditional L2 product bound;overlapping/repeated fields do not.
+
+Falsification before drafting:finite noncommuting Hermite matrices and growing
+two-mode complex wave examples passed. After drafting,the vacuum cutoffN=n
+was additionally checked at orders1/2 againstN=n+2;N=n-1refuses with gaps.
+Those are finite diagnostics,not analytic proofs or Lean certificates.
+Exact hypothesis matching for the complex test is written in calibration.md.
+
+This resolves the STATIC small-block norm-loss issue by isolating variance
+order1;it does not identify a product with the evolution of a sum of overlapping
+colored-time block fields. Interleaving/background evolution and the temporal
+limit remain the actual full-goal gap. No G:upper/G:sharp claim,Skorohod exact
+development,novelty,Lean or circulation clearance. Existing moment17PASS/MEDIUM
+status and accepted earlier scopes are unchanged.
+
+Actual formatter before build,idempotent. Canonical65pages,0errors/undefined
+citations or references/overfull boxes/tabs. All old main-source bytes recovered
+by deleting the new section;39old formal statements/33proofs preserved,
+4new statements/proofs. Reviewed-source pin,extra.bib and exact hashes in
+static-phase-all-orders/change-binding.json. New pages58,60,63,64 visually
+checked. A full fresh nine-check skeptic contract is frozen with8mandatory
+texts (entire prerequisite Section11)and5typed primary-source images.
+Independent review PENDING,HIGH threshold unchanged.
+
+An attempted orchestration string containing Markdown backticks produced a
+JavaScript parse refusal with ZERO tool actions. Reissued without backticks;
+no source mutation or provider attempt occurred in that refused cell.
+This was a missed application of the existing string-quoting lesson,not a
+new mathematical or setup failure.
