@@ -1,0 +1,107 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "medium",
+  "source_coverage": [
+    ".review/required-sources.json: lines 1-171 (full; read-plan only, no read credit)",
+    "source-map.md: lines 1-39 (full)",
+    "candidate.tex: lines 1-2303 (full, read in three ranges 1-908, 909-1608, 1609-2303); Section 7 S:static-holder is lines 1937-2230",
+    "balan-conus-02.png: full image (journal p.1489)",
+    "balan-conus-03.png: full image (journal p.1490)",
+    "balan-conus-05.png: full image (journal p.1492)",
+    "balan-conus-07.png: full image (journal p.1494)",
+    "chen-02.png: full image (author ms p.2)",
+    "chen-03.png: full image (author ms p.3)",
+    "chen-07.png: full image (author ms p.7)",
+    "chen-08.png: full image (author ms p.8)",
+    "chen-09.png: full image (author ms p.9)",
+    "chen-10.png: full image (author ms p.10)",
+    "chen-11.png: full image (author ms p.11)",
+    "chen-13.png: full image (author ms p.13)",
+    "chen-14.png: full image (author ms p.14)",
+    "chen-22.png: full image (author ms p.22)",
+    "chen-30.png: full image (author ms p.30)",
+    "chen-hu-2145.png: full image",
+    "chen-hu-2146.png: full image",
+    "chen-hu-2147.png: full image",
+    "chen-hu-2149.png: full image",
+    "chen-hu-2150.png: full image",
+    "chen-hu-2151.png: full image",
+    "chen-hu-2152.png: full image",
+    "chen-hu-2153.png: full image",
+    "chen-hu-2165.png: full image",
+    "chen-hu-2173.png: full image",
+    "chen-hu-2179.png: full image",
+    "chen-hu-2180.png: full image"
+  ],
+  "checks": [
+    {
+      "claim": "C1: Source and model fidelity of the static input (Lemma 7.1)",
+      "verdict": "PASS",
+      "reason": "Chen-Hu (1.1) on p.2145 and Theorem 1.1 on p.2146 use the wave operator Delta with data u0=1, u1=0, the same as (E:HAM). Their covariance convention gamma(x)=int e^{i xi x} mu(d xi) matches the candidate's. On p.2146, under (1.8), Dalang's condition becomes alpha<2, and Theorem 1.2 on p.2147 requires 0<alpha<2 and alpha<d. For beta in (1,2) and d in {2,3}, beta<min{2,d}. Nonnegative definiteness of c|x|^{-beta} is shown in the Section 7 preamble by a Gaussian mixture with a Tonelli/Fubini justification. Chen-Hu (5.1) on p.2173 sums over l1+...+lp=2n. With p=2 this is exactly sum_m E[U_m U_{2k-m}] with n=k, so all splits and all pairings are included, among them self-pairs and empty chains (S_0=1). The scaling is t^{(4-beta)k}. (5.15) on p.2180 gives a finite limsup of (1/n)log((n!)^{3-beta}B_n(1)). The enlargement of C_st over k<k0 uses only finiteness of each fixed order (Theorem 3.8(i) on p.2165 plus Cauchy-Schwarz) and nonnegativity (p.2152). No sharp constant and no uniform asymptotic in alpha0 or epsilon is used."
+    },
+    {
+      "claim": "C2: Parameter feasibility, affine identities, admissibility, amplitude",
+      "verdict": "PASS",
+      "reason": "The interval alpha0<theta<2-alpha is nonempty because alpha+alpha0<2. Since alpha>1, theta<1, and theta>alpha0>0, so b0=alpha0/theta is in (0,1). I recomputed beta-1=(alpha-1)/(1-theta)>0 and 2-beta=(2-alpha-theta)/(1-theta)>0, so 1<beta<2<=d. The identities theta+(1-theta)beta=alpha and theta*b0=alpha0 hold. All degrees lambda in {1,alpha,beta} satisfy lambda<min{2,d}. The pointwise identity c|x|^{-alpha}=(c|x|^{-1})^theta (c|x|^{-beta})^{1-theta} keeps the amplitude c. Remark 7.3 explicitly declines a general anisotropic factorization."
+    },
+    {
+      "claim": "C3: The common finite measure nu_{k,t,eta} and its correspondence to the full regularized mixed moments",
+      "verdict": "PASS",
+      "reason": "nu sums over all 2k+1 splits and all D in Pi_k. It integrates over [0,t]^m_< x [0,t]^{2k-m}_< against the product of Green increments G_{h_l,eta}(dy_l), with a separate root in each chain and empty products for empty blocks. Its total mass is at most (2k+1) P_k t^{2k} times prod h_l, which is finite. The same measure serves all three profiles. With common widths, the Gaussian moment formula for 2k smoothed variables gives all pairings. The chain reversal of P:mixed (G_eta, gamma_{2eps} and the temporal cutoff are all even) matches the target regularized moments. Tonelli applied to the static kernel g_n (which integrates times inside, Chen-Hu (2.13)) matches B^{eps,eta}. Holder is applied on the full measure, discrete sums included."
+    },
+    {
+      "claim": "C4: Gaussian-covariance Holder at common width 2eps and raw temporal domination",
+      "verdict": "PASS",
+      "reason": "Holder with exponents 1/theta and 1/(1-theta) against the probability density p_{2eps}(w)dw gives gamma_{alpha,2eps} <= gamma_{1,2eps}^theta gamma_{beta,2eps}^{1-theta}. Each convolution is finite because the degrees are below d (local integrability plus decay). The product over edges gives H_alpha <= H_1^theta H_beta^{1-theta}. The source cutoff, Chen (2.9) and (2.24) on pp.8 and 13, is Gamma(alpha0)^{-1} int_0^{1/delta} e^{-lambda|r|} lambda^{alpha0-1} d lambda. It lies in [0, |r|^{-alpha0}] because the full integral equals Gamma(alpha0)|r|^{-alpha0}. Hence 0<=Q_delta<=T_{alpha0}=T_{b0}^theta. No log-convexity in the cutoff is used. The two endpoint integrals are deterministic, so no coupling of random endpoint models arises."
+    },
+    {
+      "claim": "C5: The low endpoint L_k is deterministic, and the bound with C_low=2Z pi V1",
+      "verdict": "PASS",
+      "reason": "L_k^{eps,eta} combines spatial covariance gamma_{1,2eps} with the raw temporal power b0, and it is never identified with a stochastic object. Lemma L:alpha-one-convolution applies to c|x|^{-1} in d=2,3: it is nonnegative, nonnegative definite and homogeneous of degree 1, and the bound piV1/2 holds uniformly for eps>0 and eta>=0. Descending integration yields (piV1/2)^k prod_{O_D}h_i. The sum of the opening increments is at most 2t, so AM-GM gives (piV1)^k t^k/k^k. The temporal Wick sum is symmetric. Summing over the splits gives P_k(Z_{b0}t^{2-b0})^k 2^{2k}/(2k)! = 2^k(Z_{b0}t^{2-b0})^k/k!, and multiplying by the spatial bound gives C_low^k t^{(3-b0)k}/(k! k^k) with C_low=2Z_{b0}piV1. Finally k!k^k >= (k!)^2."
+    },
+    {
+      "claim": "C6: The B endpoint is the actual static regularized coefficient; d=3 eta limit; source correspondence",
+      "verdict": "PASS",
+      "reason": "Static smoothed noise has covariance gamma_{2eps} (Chen-Hu (2.8) on p.2149), so B^{eps,eta}=int H_beta d nu is the regularized static moment sum. In d=3, at fixed eps (and delta), the smoothed covariances are bounded and continuous, and p_eta*G_h converges weakly to G_h with mass h. Dominated convergence on bounded time simplices then yields mixed-covariance limits and L^2 convergence. At eta=0 this matches the Chen-Hu measure convention mu_n^{t,x} at fixed eps (pp.2152-2153, (2.22)) and the target's inner eta-limit (Chen pp.13-14). Hypotheses hold: Dalang (beta<2) for Chen-Hu, and (1.5) for the target (alpha+alpha0<2, Chen p.3). The identification of the eta->0 limit with Chen-Hu's eta=0 approximant is stated tersely (see minor finding)."
+    },
+    {
+      "claim": "C7: Order of limits, L1 convergence of products, and use of the static majorant only after the limits",
+      "verdict": "PASS",
+      "reason": "L_k is replaced by its uniform deterministic bound before any limit is taken. In d=3, eta->0 is taken at fixed (eps,delta). Then (eps,delta)->0, using Chen Theorem 4.1 (p.22, limit independent of the path) for the target and Chen-Hu Theorem 3.8(i) (p.2165) for the static case. Products converge in L1 by the displayed inequality, the split sums are finite, and zero-order factors stay equal to 1. Lemma 7.1 is applied only to the limiting B_k(t) >= 0. No monotonicity in eps and no eps-uniform large-time bound is used."
+    },
+    {
+      "claim": "C8: Final exponents, constants, series identification and summation",
+      "verdict": "PASS",
+      "reason": "I recomputed both powers: 2theta+(1-theta)(3-beta)=3-alpha and theta(3-b0)+(1-theta)(4-beta)=4-alpha-alpha0. The constant is C=C_low^theta C_st^{1-theta}, which is independent of k, t and x. P:mixed applies under Hypothesis H:homog (0<alpha<d, alpha+alpha0<2), so E u^2=sum_k A_k with A_0=1 and nonnegative terms. With q=3-alpha in (1,2), the l^q versus l^1 inequality gives E u^2<=exp(qC^{1/q}t^kappa) for all t>0. The case k0=1 needs no enlargement, and the lemma covers every k>=1 uniformly."
+    },
+    {
+      "claim": "C9: Calibrations: static exponent, first moment/Jensen, Skorohod comparison",
+      "verdict": "PASS",
+      "reason": "As alpha0->0 the exponent tends to (4-alpha)/(3-alpha), matching Chen-Hu (1.9) on p.2147, and no interchange of limits is claimed. Cauchy-Schwarz gives E u <= exp(qC^{1/q}t^kappa/2), and Theorem T:first then gives 2L_* <= qC^{1/q}. Balan-Conus Theorem 2.1(b) (p.1492, case (ii) on p.1489, DC with a<2 on p.1490) has exponent (2H+2-a)/(3-a). With H=1-alpha0/2 and a=alpha this equals kappa. It is used for comparison only, with differences in solution concept and normalization stated. No sharp constant, novelty, Lean or circulation claim is made."
+    },
+    {
+      "claim": "C10: Every new claim and hidden dependency in Section 7, including Gaussian-mixture admissibility and the calibrated remarks",
+      "verdict": "PASS",
+      "reason": "Hidden dependencies were checked: the inherited Lemmas L:alpha-one-convolution and L:d1-spatial; the time symmetry (E:d1-time-symmetry); P:mixed; Chen-Hu (5.1)/(5.15) taken as imported; Gaussian-mixture positive definiteness for each lambda<d; and finiteness of M implicit in Chen-Hu Theorem 1.2. Section 6 (pending) is not used as a premise: Remark 7.3 cites Remark R:higher-calibrations only for the comparison. The claim to cover the 2D interval 3/2<=alpha<2-alpha0 follows from Proposition 7.2 independently of Section 6. I found no new mathematical gap."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "In d=3, the proof of Proposition 7.2 says the two-width covariance argument 'identifies the static limit' with Chen-Hu's measure convention. Strictly, identifying the eta->0 limit with Chen-Hu's fixed-eps approximant int W_eps d mu_n^{t,x} needs the mixed covariance between an eta>0 approximant and the eta=0 integral. The same weak-convergence and dominated-convergence argument covers this, so one sentence would make it explicit.",
+      "Lemma 7.1 uses that the right side of Chen-Hu (5.15) is finite, i.e. that the variational constant M in (1.11) is finite under Theorem 1.2's hypotheses (0<beta<2, beta<d). This is implicit in Theorem 1.2 asserting finite limits; stating it would close the dependency on paper.",
+      "Remark 7.3's statement about the previously uncovered 2D interval 3/2<=alpha<2-alpha0 is nonempty only when alpha0<1/2. A parenthetical would help readers.",
+      "Lemma 7.1 restricts to 1<beta<2. Chen-Hu covers 0<beta<2 with beta<d, and the restriction is only what Proposition 7.2 uses. The proof is unaffected.",
+      "The abstract, the Goal G:upper comment and the planned-route item 3 still say alpha>1 in d=2,3 is open. This is the deliberately unpromoted status boundary and is noted only for later reconciliation if the section is accepted."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "Chen-Hu (5.13)/(5.15) and Theorem 3.8(i), and Chen Theorem 4.1, are taken as imported results. Their internal proofs, including (5.11), the constants C and C_delta, and Lemma A.1, are not in the packet and were not re-verified.",
+    "Sections 1-5 were treated as established internal inputs. Their re-use here (Lemma L:alpha-one-convolution, descending integration, time-pairing symmetry, P:mixed) was checked for applicability, not re-proved from scratch.",
+    "This is an AI review: no human verification, novelty audit or formal (Lean) check. All arithmetic was checked by hand; no computation was run.",
+    "I could not check whether the packet's source page images match the published PDFs beyond the identities stated in source-map.md."
+  ]
+}

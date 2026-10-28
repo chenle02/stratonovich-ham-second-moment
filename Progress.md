@@ -992,3 +992,25 @@ The accepted abstract/global scope is deliberately unchanged until review.
 Fresh native Opus C1--C10 is assigned with27typed/hash-bound source pages,
 full candidate and exact source map. No acceptance yet. The independent
 weighted-wave lemma is not a premise of the new interpolation proof.
+
+
+### Full-Riesz native review disposition
+
+Native Opus5.5 found no new mathematical gap: C1--C10 allPASS,
+PASS_WITH_NOTES/medium, no required repairs. Complete27page source delivery
+and full candidate reading verified. The first report was rejected for prose
+outside JSON; the same-session format-only recovery preserved the verdict,
+confidence and all outside qualifications (FORMAT-LINEAGE-PRESERVED).
+This counts as one scientific review, not two votes.
+
+Accepted=false at the unchanged high-confidence threshold. The canonical
+35page candidate stays unpromoted. Five optional findings are adjudicated
+in reviews/2026-10-28-static-holder/riesz-adjudication.md; original streams,
+receipts, source snapshots and format lineage are archived byte-exact.
+No unchanged-confidence retry.
+
+A new bounded planar endpoint screen is investigating the actual general
+homogeneous-covariance goal: radial reweighting to degree1, represented as
+an even mixture of line measures in d2, and radial Riesz multiplication for
+the static endpoint. This is not yet an accepted lemma or moment extension.
+The same construction is NOT presumed valid in d3.
