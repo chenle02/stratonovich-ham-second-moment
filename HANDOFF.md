@@ -1,120 +1,120 @@
-Last updated: 2026-10-28 14:33 UTC
+Last updated: 2026-10-28 15:19 UTC
 
 # HANDOFF — Article-Stratonovich-HAM-Second-Moment
 
 ## ⏭ Next session: where to stand and what to do
 
-Test the missing STATIC PHASE-PROPAGATOR estimate needed for a possible
-time-block approach to the full arbitrary-covariance upper bound. Start with
-general-covariance-cones/block-propagator-screen.md and exact rational check.
-Two independent static blocks carry velocity;their scalar solution-value
-second moments do NOT multiply. The screen is UNREVIEWED and outside the
-target temporal class;it does not establish a replacement operator bound.
+Develop the ALL-ORDER static phase estimate proposed in
+reviews/2026-10-28-phase-propagator/next-operator-route.md. First pin/read
+a primary Crouzeix-Palencia2017 source (arXiv1702.00668 or verified publisher/
+author copy),then prove the Gaussian-Fock sandwich variance bound and the
+COMPLEX-coupling weak-phase estimate on a Cauchy circle. Use bounded spatial
+Fourier and Gaussian-chaos cutoffs before limits. Real selfadjoint energy
+bounds alone do not justify coefficient extraction. The note includes an
+explicit proposed square-root resolvent integral and all four phase blocks.
+It remains UNREVIEWED,not an accepted all-order theorem.
 
-Before SPDE proof investment,identify a norm controlling both position and
-velocity for arbitrary deterministic initial phase,under the original rough
-homogeneous spatial covariance. A form-bounded potential need not be a
-bounded L2 multiplier. Switching field-dependent energy norms can introduce
-a fixed loss per short block. Prove/control that loss before claiming the
-formal dyadic scale calculation. Start any literature recon with actual wiki
-CLI search/cite and reading;do not assume static value asymptotics imply
-static phase-operator bounds. No Skorohod exact-constant work here.
+The prerequisite first-variance phase estimate is now DONE at a scoped
+HIGH gate:Section11 Lemma11.1/Proposition11.2,all7PASS/high,full delivery,
+no required repairs. It treats the FULL stated d3 spatial covariance class
+and arbitrary real Schwartz initial phase,in L2 displacement/H^{-1}_lambda
+velocity,uniform in spatial smoothing. Both the first random norm and
+second-order mean term are needed. Source8d8a43e,dispatchaa57b91,
+dispositione38e561. Do not spend another round reproving that same scope.
 
-The preceding geometry recon is CLOSED at a narrow reviewed checkpoint:
-Rubin's analytic real-parameter closure does not supply an endpoint-mixture
-theorem;ordinary positive cosine integrals diverge in the target range;
-angular Poisson smoothing plus scalar Riesz envelopes lacks uniform amplitude.
-All6PASS/HIGH,full delivery,sourcecd6b490/dispositiona79ee25. This does NOT
-kill other endpoint/approximation methods or the moment goal. Do not rerun
-this source audit or seek a confidence-only retry of the17PASS/MEDIUM moment
-assembly. Accepted energy Lemma10.1 remains separate. Full target unchanged.
+All-order coefficients with summable small-block losses are still missing.
+Changing X_{n/h} to one fixed X_lambda can destroy the needed small-block
+budget;do not hide that loss. Overlapping time levels and temporal limits
+remain separate unsolved steps. Original full Goal G:upper and sharp target
+unchanged;Section9moment candidate remains17PASS/MEDIUM. No confidence lottery.
 
 ## Pre-flight checks
 
-1. Read Progress.md and PROJECT-GOAL.md. Goal ACTIVE,full scope unchanged.
-   Accepted moment baseline alpha<=1 in d1/2/3;private companion creation and
-   intended sharp source normalization remain separate unanswered decisions.
-2. Canonical notes56pages,formatter idempotent,build0errors/undefined/overfull/
-   tabs. Final TeX SHA256:
-   62221e8538087ee38b2f17d3468ad257ccac80eb2158f437752b4080176b4322.
+1. Read Progress.md and PROJECT-GOAL.md. Original goal ACTIVE,unbounded.
+   Accepted moment baseline alpha<=1 in d1/2/3. Companion creation and
+   intended source sharp normalization remain separate unanswered decisions.
+2. Canonical59page notes,formatter idempotent,0errors/undefined/overfull/tabs.
+   TeX SHA256:
+   b6abca9bfb71ac47a2c3f5ae8b7087e4041f7713f38efe248353d94de5b1de85.
    PDF SHA256:
-   4e964a2cee502d68f0721396135dad12e3d081391c5a8a3b4e8300cf09d27b70.
-3. Energy-fidelity scientific source27186474297ccdbbaba1be8b3b33b86e5632e55a;
-   disposition734d0bfa1895b5d06360b44b721f075f12e891b3. Reports/ledger/
-   receipt/adjudication in reviews/2026-10-28-energy-fidelity/. All8PASS/high,
-   accepted=true,coverage_verified=true,229.305s. Raw62members losslessly
-   archived/member-hash verified. Final status-only edit preserves all37
-   formal statements(including hypotheses/conjecture)and31proofs byte-equal.
-4. Full54page assembly remains all17PASS/MEDIUM,no required repairs,full
-   delivery,accepted=false at HIGH. Source92a3eed518f10cc9797f1660050da8e69dcc644d;
-   disposition67b4211f8822449aa78b6d6d3acd6cdd9327eefe. Separate plane/sum
-   deterministic6PASS/HIGH190b7e6a59683571dcadd27b90564ba877181a1c.
-5. No author/native reviewer/build/cluster process remains live. All owned
-   native runs terminal and archived. Do not resume/restart completed review.
-   External six-repo service is independent;do not reset/stash/manage it.
-6. Every provider launch: run check-frozen-packet.py in SAME fail-fast shell
-   as dispatch,checking all committed packet/manifest/required/contract bytes.
-   A failed previous tool call cannot gate a separate later tool invocation.
-7. Current author PDF SHA256:
+   470b371695aa946e44b83a11460dca62a82876fc36faf14b75be0a36d3511fb1.
+3. New phase scientific source8d8a43e32080c2c47e501b316cd833c510f2d261;
+   dispatchaa57b91374b2a450bea8d842f45f0597ef7fba68;
+   dispositione38e561895547c05ce5135a0c17c101affd39028. Seven PASS/HIGH,
+   accepted=true,coverage_verified=true,261.185s. All8text/4image delivery.
+   All5minor findings adjudicated. Raw78members incl refused preflight1
+   losslessly archived/hash verified. Final status-only banner edit preserves
+   all39formal statements and33proofs byte-equal to reviewed source.
+4. Full54page Section9assembly remains17PASS/MEDIUM,full delivery,no repairs,
+   accepted=false at HIGH. Source92a3eed518f10cc9797f1660050da8e69dcc644d;
+   disposition67b4211f8822449aa78b6d6d3acd6cdd9327eefe. No promotion from phase.
+5. Section10 energy identity remains8PASS/HIGH at2718647/disposition734d0bf.
+   Geometry/Poisson approximation screen6PASS/HIGH atcd6b490/dispositiona79ee25
+   is narrow:scalar Riesz-envelope shortcut only,not all approximations.
+6. No reviewer/build/author/cluster process remains live;all own native
+   sessions terminal and archived. External six-repo writer is independent;
+   do not restart/manage it or reset/stash its work.
+7. Every provider dispatch uses check-frozen-packet.py in the SAME fail-fast
+   shell. Literal filenames must be separate:checks.py/checks.json triggered
+   a pre-provider workspace refusal;contract-v2 repaired wording only.
+8. Primary author PDF SHA256:
    5f7385ca451e643a1f3ff31835e4ee52b2708b5d2e3652eec3fb5d3958b97b6c.
    Static publisher SHA256:
    58b152d78cd0d54d82b991933b3eaece86e1ed2b44fe09882c14eba921e97e22.
-   Keep process-local supported native runtime/account verification.
-
-9. New scoped screen: scientific sourcecd6b490803115e7051e2404e69fc48542d92a50b;
-   dispositiona79ee254abdaef5b6fa6e24bdbedb419f22b0fdb. Opus6PASS/HIGH,
-   full4text/11image delivery,accepted=true,212.28s,no mandatory repairs.
-   general-covariance-cones/adjudication.md records all8minor findings.
-   Raw56members losslessly archived/member-hash verified;no run remains live.
-10. Rubin primary arXiv0704.0061v2 PDF SHA256:
-   44959d734e694c473b57f233f9d5c09e3f5a8efebc0b9a0b74c32267e4a35554.
-   Labels refer to arXivv2 only,not journal. The proof imports positivity,
-   not an unexamined density normalization. Heat p1 is Brownian variance1;
-   spectral convention Gamma=int exp(i xi.x)mu.
+9. Seven-reference exact final snapshot in phase-propagator/reference-state-final.json:
+   two Milman gold;Rubin,Frank and three Crouzeix pending. No duplicated
+   tickets. A new Crouzeix ticket differs from its sibling only by-2.
 
 ## Concrete deliverables for the next session
 
-- Establish or falsify the phase-propagator estimate described above before
-  attempting a long time-block proof. The dyadic scale calculation is merely
-  conditional;overlapping noise levels and regularization limits are open.
-- Do NOT use static solution-value products or additive-covariance logconvexity.
-  New exact two-block formal coefficient gap7/3 is a velocity diagnostic;
-  older independent additive-variance refusal remains separately scoped.
-- If revisiting geometry,keep the reviewed obstruction narrow: Poisson
-  smoothing plus angular-supremum scalar Riesz envelope fails uniformity.
-  Fixed Gaussian and spectral ball masses do not control angular suprema.
-  This does not disprove a better endpoint majorant.
-- Prior universal ball/time-integrated/two-FREE-wave controls do not remove
-  remote diagram factors or solve the all-order factorial budget.
-- Four references remain retained under their existing exact IDs. Last
-  verified snapshot: both Milman papers gold;Rubin and Frank pending. Do not
-  duplicate enqueue or infer source applicability from an ingestion receipt.
-- Prepared private wiki proposal includes the new screen atf912da4,still
-  unpublished. Recheck current base/concurrency before authorized publication.
-- Lean stays L0/PROPOSED;decision4 before creation remains unanswered.
+- Prove/falsify the explicit complex-phase estimate and Gaussian-Fock cutoff
+  mechanism before claiming any all-order bound. Source2017 is a bounded-
+  Hilbert-operator spectral-set theorem;unbounded limits/weak-phase norm
+  comparisons must be supplied,not assumed. New references already queued.
+- Retain small-block bookkeeping. Reviewed bounds at arbitrary lambda are
+  R_alpha h²lambda^{alpha-2}(1+lambda²h²)² for the first random term,and
+  D_Gamma(1+lambda²h²)h^{3-alpha}/[lambda(2-alpha)(3-alpha)] for its mean
+  second-order partner. Complete coefficient includes BOTH. Atlambda1/h
+  it has bound C h^{4-alpha}initial norm². No higher terms accepted.
+- The two individual fine-block coefficient budgets are summable under
+  alpha0<1 andalpha+alpha0<2. That sum is NOT a product or mixed-level theorem.
+- Scalar static phase(1,-2)has negative first-variance energy coefficient
+  -16/45. It lies outside the target covariance class/data,but rules out
+  casually inheriting covariance monotonicity for arbitrary phases.
+- Exact queued Crouzeix DOIs:2004parabola10.1007/s00013-004-0605-2;
+  2007JFA10.1016/j.jfa.2006.10.013;2017Crouzeix-Palencia10.1137/17M1116672.
+  The author Nacta.pdf fetch timed out;no full-source theorem imported.
+- Prepared private wiki proposal reconciled to59pages and accepted Section11
+  at2f6dae9,still unpublished. Canonical project-base bytes reread unchanged
+  at63bd322d89c2fc8f0e5c6750d4961498a3563ba7. Reread current base before write.
+- Lean remains L0/PROPOSED,no package/lease/registry. Decision4 remains open.
 
 ## Success criteria for the immediate next step
 
-A concrete theorem or controlled comparison treats the remaining covariance
-class without silently reducing it. If a source cannot supply that step,record
-its exact parameter/object obstruction and proceed by another mechanism. New
-proofs have correct independent scope and source delivery. Energy identity
-acceptance is retained without promoting the whole moment candidate.
+A valid operator estimate advances the unchanged general covariance target.
+It states explicit cutoffs,spaces,complex coupling radius and constants
+uniform in those cutoffs;identifies the Gaussian vacuum coefficient;and
+retains the true all-order factorial and small-block budget. A correct
+first-variance statement is kept within its accepted scope. New proofs have
+proper independent review/source delivery;full target remains open until
+all required temporal/composition limits are proved.
 
 ## Anti-success criteria
 
-- Treating accepted Lemma10.1 as a full moment proof or general factorization.
-- Promoting prior17PASS/MEDIUM to HIGH or repeating it unchanged for confidence.
-- Treating integer star-body results as real-exponent covariance theorems.
-- Confusing quadratic-confinement minimizers with the Sobolev-gradient M.
-- Assuming two-free-wave controls remove residual diagram weights.
-- Treating a queued/claimed reference as fully ingested,or duplicate-enqueueing
-  because the local wiki checkout lags the canonical service commit.
-- Using raw arXiv-only presence checks or prefix-glob receipt identity.
-- Dropping Fourier normalization,using an inverse column instead of the
-  required inverse row,or forgetting singular-plane test cases.
-- Uncommitted-input provider launches,source normalization corrections,source-
-  author contact,public release,private Lean creation or Easley without authority.
+- Treating Section11's complete FIRST variance order as an all-order phase,
+  independent-block product or colored-time HAM bound.
+- Omitting the second-order mean or assuming arbitrary-phase monotonicity.
+- Applying the phase weight twice to the whitened output multiplier.
+- Confusing a centered Fourier modulation bound with the disproved translated
+  physical single-wave maximum. Physical M and spectral V stay distinct.
+- Using a real selfadjoint bound as a complex Cauchy-circle estimate.
+- Assuming a generic Kato square-root identification or cutoff norm
+  equivalence without the proposed quantitative resolvent proof.
+- Absorbing a fixed factor per short interval,or losing1/(lambda h)twice
+  without checking summability of the hierarchy.
+- Promoting17PASS/MEDIUM or rerunning an unchanged proof for confidence.
+- Direct six-repo writes,duplicate reference requests,prefix receipt matching,
+  force/wake/restart,author contact,Lean creation,public release or Easley.
 
 ## What the previous sessions produced
 
@@ -254,14 +254,26 @@ Latest checkpoints:
 - 2026-10-28 f912da4: prepared wiki proposal includes narrow accepted screen
   and separates unreviewed block diagnostic;not published.
 
+- 2026-10-28 source8d8a43e/dispatchaa57b91/dispositione38e561:
+  new Section11 full-class static contraction/first-variance phase estimates
+  accepted7PASS/HIGH,all8text/4image delivery,no repairs. Complete proofs,
+  explicit constants,scalar negative-coefficient test and fine-block sums.
+  Canonical59page clean build;all39formal statements/33proofs preserved in
+  final status-only edit. Raw78members archived/hash verified.
+- 2026-10-28 e38e561: unreviewed next Gaussian-Fock/complex numerical-range
+  proof assignment,three operator references queued by published DOI,
+  project AGENTS retrieval cue and phase-propagator/lessons.md updated.
+- 2026-10-28 2f6dae9/24a76d1: prepared private wiki reconciled to59pages
+  with exact scoped phase acceptance;seven-reference exact ID+DOI snapshot
+  retained(two gold,five pending). No project publication triggered.
+
 ## Repo & git state at handoff
 
-- master;substantive pre-handoff HEAD f912da4cfe6b01bc5114d9d0813bd0ece18d69c5,pushed and <HUB>-synced.
-- Only this dedicated HANDOFF update pending;no author WIP/native job remains.
-- Canonical56page source/PDF binding above. Source PDFs,All.bib and sibling
-  Articles untouched by root. Reference service owns its six repository work.
-- Wiki proposal committed,not published. Reference tickets explicitly authorized.
-- No private Lean package/registry entry/lease;L0/PROPOSED.
+- master;substantive pre-handoff HEAD 24a76d13e88aaa0782fcdcc30349ad8de1cafe8f,pushed and <HUB>-synced.
+- Only this dedicated handoff update pending;no author WIP/native job remains.
+- Canonical59page TeX/PDF binding above;source PDFs,All.bib and sibling
+  Articles untouched by root. Queue owns its seven-reference processing.
+- Wiki proposal committed,not published. No private Lean package/lease.
 
 ## Operating notes
 
@@ -288,6 +300,15 @@ Opus5.5 native first-party high remains the skeptic;current route Max <account r
 on process-local supported CLI2.1.304. Final full-paper DeepSeek/source-bound
 clearance before circulation remains outstanding;old31page read covers no
 current56page clearance. No unchanged confidence lottery.
+
+
+Additional exact queued IDs (all pending at final snapshot):
+- tk-20261028-110644-codex-stratonovich-phase-recon: Crouzeix2004.
+- tk-20261028-110645-codex-stratonovich-phase-recon: Crouzeix2007.
+- tk-20261028-110645-codex-stratonovich-phase-recon-2: Crouzeix-Palencia2017.
+These are three DISTINCT tickets;never use a prefix glob. Ordinary reference
+queueing was explicitly authorized by Le. Do not confuse it with the old
+project-wiki automatic-notification card,companion permission or author contact.
 
 ## Risks to monitor
 
@@ -317,3 +338,8 @@ current56page clearance. No unchanged confidence lottery.
 12. Wave blocks carry velocity. Do not extrapolate the unreviewed scalar
     phase diagnostic to an SPDE theorem or mistake phase-energy equivalence
     factors for bounds uniform in the number of short intervals.
+13. New phase estimates are positive full-spatial-class progress,but only
+    first variance order. Gaussian-Fock/spectral-set route is unreviewed;
+    maintain correct operator domains,complex bounds and cutoff uniformity.
+14. Queued operator references are future-use leads,not imported theorems.
+    Check actual source edition,constant and bounded/unbounded scope.
