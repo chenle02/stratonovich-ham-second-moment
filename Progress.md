@@ -807,3 +807,30 @@ a counterexample to moment growth. A scaling-consistent weighted candidate
 at coincident and wave-front configurations, keeping actual remote-point
 constraints; if it fails, retain a nonuniform envelope for the remaining
 spatial average. Do not start an all-order proof before this diagnostic.
+
+
+## Weighted two-wave falsification checkpoint (2026-10-28 UTC)
+
+Previous goal turn: PROGRESS (cold report/adjudication, source followup and
+order-four object mismatch changed the next mathematical action). Current
+preflight clean and synchronized at28eeaf1. Full goal active, Lean approval
+pending, Round4 acceptance unchanged.
+
+Gate class: scoped
+Gate scope: bounded WC endpoint/coincident diagnostic and exact-time
+quadrature representation; not full upper-bound or sharp-constant completion.
+Mandatory protocols: falsification-first, numerics-gate, paper-dev independent
+review and source-bound evidence; no Lean waiver.
+
+Author-side result: an explicit positive-measure near-front cell yields the
+necessary condition q>=alpha-1 for(WC), including its a.e. interpretation and
+admissibility in the original crossing diagram. Coincident Z=W=0 is finite
+for alpha<2. The surviving exponent range remains OPEN. Root derived an
+exact-time elliptic representation and ran two-map deterministic quadrature
+at64/128/256nodes; unweighted calibration error decreases to9.15e-6.
+These floating diagnostics agree with the proposed endpoint power but do not
+prove any upper bound or asymptotic equivalence. No clipping or Monte Carlo.
+
+Evidence: reviews/2026-10-28-wc-probe/. A fresh native Opus review is assigned
+to this new bounded diagnostic packet (C1--C7), retaining high confidence.
+No accepted no-go or manuscript promotion before the report and adjudication.
