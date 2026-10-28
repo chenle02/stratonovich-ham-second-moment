@@ -6,7 +6,7 @@
 
 ## Current state
 
-- **Phase:**65page notes. Section12all regularized STATIC phase orders,interaction and independent successive-block bounds accepted9PASS/high,full delivery,no required repairs. Section11first-variance scope remains7PASS/high and Section10energy8PASS/high. The new overlapping-interval coefficient/full-upper candidate is UNREVIEWED,outside that report. Full Section9colored-time candidate remains17PASS/medium;original general upper and sharp goals stay open.
+- **Phase:**73page notes. Section12all regularized STATIC phase orders,interaction and independent successive-block bounds accepted9PASS/high,full delivery,no required repairs. Section11first-variance scope remains7PASS/high and Section10energy8PASS/high. New Section13 contains the complete overlapping-interval coefficient/inventory/source-transfer candidate for the ORIGINAL full G:upper; it is UNREVIEWED,outside those reports. Full Section9colored-time candidate remains17PASS/medium;original general upper and sharp goals stay open.
 - **Proved in this project:** the P:Jensen Cauchy--Schwarz reduction (§2; numeric L_* calibration conditional on the intended source bound); reviewed G0 P:mixed, L:white-test,
   L:crude-corrected and P:envelope (§3); G1 finite coefficients (§4); reviewed G2 target-scale bounds P:d1-upper/P:low-alpha-upper for alpha<=1 (§5). Full goal and formal verification remain incomplete.
 - **Open targets:** remaining G:upper range 1<alpha<2-alpha0 in d=2,3; G:sharp; requested private Lean verification (not yet created).
@@ -1929,3 +1929,25 @@ The proof candidate uses local Gaussian degrees,one-copy means versus
 two-copy single appearances,and an inventory generating bound. It requires
 full adversarial validation before any G:upper promotion. Full goal remains
 ACTIVE and unchanged;Lean creation/sharp normalization remain separate.
+
+
+### Complete full-upper candidate frozen for first adversarial review
+
+Section13 now contains all-d Gaussian column/Fock contractions,general
+complex sums and connected-interval metric costs,the positive inventory
+product,uniform interval energy coefficients,and dyadic/source transfer.
+Theorem13.5 is a CANDIDATE for the original full G:upper,not yet adopted.
+No source sharp normalization or angular-density restriction is used.
+All earlier main-source bytes recover exactly by deleting the new section.
+Actual formatter idempotent;73pages,0errors/undefined/overfull/tabs;pages67,70,71
+visually inspected. Full dependencies and source transfer are frozen in
+dyadic-overlap/packet-v1:22members,11requiredtexts,7primary-source images.
+ContractC1-C11,HIGH unchanged. Review routing/honesty records UNCERTIFIED
+and NORMAL_REVIEW,no Lean waiver. Whole-paper/cold-read debt remains.
+
+Default CLI changed to2.1.312 and lacked supported image-ledger evidence.
+Preflight refused an ineffective executable/account combination before
+provider dispatch. Existing2.1.304 selected through launch-local PATH;
+first-party <plan removed> identity and dry-run image/source requirements verified.
+No persistent setup configuration was changed. Static acceptance checkpoint
+cba14f9 is pushed and <HUB>-synchronized. New argument still UNREVIEWED.
