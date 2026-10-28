@@ -10,7 +10,7 @@
 - **Proved in this project:** P:Jensen (§2); reviewed G0 P:mixed, L:white-test,
   L:crude-corrected and P:envelope (§3); G1 finite coefficients (§4); reviewed G2 target-scale bounds P:d1-upper/P:low-alpha-upper for alpha<=1 (§5). Full goal and formal verification remain incomplete.
 - **Open targets:** remaining G:upper range 1<alpha<2-alpha0 in d=2,3; G:sharp; requested private Lean verification (not yet created).
-- **Blocking human decisions:** disposition of the Round4 medium-confidence review checkpoint, and separate decision point4 before companion creation. Le authorized the higher-alpha wave after Round3; this candidate is now concrete and reviewed, but the configured high-confidence gate remains unmet.
+- **Current authorization:** Le requested activation and pursuit of the full goal on 2026-10-28 UTC. Resume with a fresh DeepSeek V4-Pro cold read while retaining the high-confidence acceptance threshold. Round4 remains a candidate. Separate decision point4 before companion creation remains pending.
 - **Worker:** Codex agent #30 (<MACHINE>, `n30-stratonovich-ham-second`), handed over
   2026-10-26; workflow paper-dev + lean-pkg (Lean track: `lean-progress/PROGRESS.md`).
 
@@ -703,3 +703,41 @@ pushed. Wiki publication/round-close provenance is unfinished: no wiki file was
 edited; its project page still reports the accepted Round3 result. A clean
 isolated wiki clone was prepared but is not a publication receipt. The handoff
 records the exact next decision and this operational remainder.
+
+
+## Goal reactivation and Round4 cold read (2026-10-28 UTC)
+
+Le asked: "Can you set up the goal and start achieving it?" The full project
+goal is active again. Root chose the previously recommended fresh DeepSeek
+cold-read route, retaining the configured high-confidence threshold; this is
+not approval to accept the existing medium reports or create the companion.
+
+Gate class: scoped
+Gate scope: full target-scale upper-bound and sharp-constant research goal;
+immediate review reads the complete current notes, including the Round4
+conditional transfer and its Riesz applications. No circulation clearance.
+Mandatory protocols: AGENTS.md, PROJECT-GOAL.md, canonical paper-dev and
+lean-aware-paper-review; GPT author, native Opus skeptic, DeepSeek V4-Pro
+cold reader; exact source bindings, findings adjudication and decision points.
+
+Todo:
+- [x] Activate the full goal and verify local/origin/<HUB> parity.
+- [x] Verify current candidate/source hashes and the85-member evidence archive.
+- [x] Preflight DeepSeek V4-Pro and freeze a fresh prior-blind packet.
+- [ ] Obtain the cold-reader terminal report and adjudicate every concern.
+- [ ] Resolve the Round4 acceptance boundary without rewriting Opus confidence.
+- [ ] Close authorized wiki/provenance propagation, then select the next
+  bounded residual-mathematics subaim under the existing decision points.
+
+Review routing: NORMAL_REVIEW / UNCERTIFIED. There is no companion,
+claim ledger or receipt supporting any Lean exemption. The existing
+lean-progress/CREATION-PROPOSAL.md remains the concrete separate approval
+request. High-value finite/algebraic seams remain feasible but unverified.
+
+Cold-reader artifacts: reviews/2026-10-28-round4-cold/. The frozen copy
+removes only prior-review status prose; every proof and formal statement is
+byte-identical to the canonical notes. The exact diff and input hashes are
+retained. No prior reports, Progress.md or handoff are supplied. A fresh
+OpenCode session explicitly requests deepseek/deepseek-v4-pro, matching
+paper-review-deepseek. The terminal report and observed model identity must
+be checked before treating this as a completed review. No silent fallback.
