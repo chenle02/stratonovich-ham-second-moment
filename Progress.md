@@ -741,3 +741,26 @@ retained. No prior reports, Progress.md or handoff are supplied. A fresh
 OpenCode session explicitly requests deepseek/deepseek-v4-pro, matching
 paper-review-deepseek. The terminal report and observed model identity must
 be checked before treating this as a completed review. No silent fallback.
+
+The first DeepSeek response ended with finish_reason=length after32000
+reasoning tokens and no report text (process exit0,414seconds). This is
+NO_REPORT, not a favorable or unfavorable scientific review. A same-session
+report continuation retains the exact candidate and model, with a65536-token
+output ceiling; it is transport recovery, not a second independent vote.
+The original stream, session and terminal receipt are preserved.
+
+
+### Residual d2 source reconnaissance
+
+A bounded independent GPT source audit is retained at
+reviews/2026-10-28-residual-recon/source-audit.md, with hashes and exact
+coverage. Decision: REFRAME to small diagnostic tests; novelty UNVERIFIED.
+BNZ arXiv:2003.10346v2 Lemma4.3 (4.7),p20, and its Balan AppendixC
+consumer supply a deterministic time-integrated two-wave convolution
+estimate with a fractional kernel power. They do not supply the required
+covariance-weighted elimination in a fractional-time full pairing diagram.
+The next bounded test is the total-order-four crossing-pair merge with every
+remote spatial and temporal covariance retained. No test has run yet.
+Chen's integrated pair norms are another possible input only with an
+order-retaining mechanism that escapes the already recorded G0 no-go.
+No new theorem, proof, novelty, Lean or acceptance claim follows.
