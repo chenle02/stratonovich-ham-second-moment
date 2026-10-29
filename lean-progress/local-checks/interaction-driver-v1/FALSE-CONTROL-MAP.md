@@ -11,8 +11,11 @@ parameter by the arithmetic sum. It resolves the actual mixC definition.
 MissingGaussianNormalization uses the generic positive-Pprefactor at P4,u=v1
 and omits1/sqrt(P), giving2ratherthan1. P=pi is the analytic specialization;
 this is an abstract prefactor identity control, not a physical pi sample.
+It hard-codes the reduced numbers rather than invoking mixC or the public
+gaussian_prefactor theorem; the main source/type audit covers that mapping.
 NegativeLogFactor uses L=-2 in the variance identity after dropping L>=0.
 It is an abstract domain control; the actual L(h)=1+|log h|is nonnegative.
 
-All five resolve imports/names and fail on False. The failed redundant tactic
+All five have valid imports, resolve every referenced name, and fail on
+False. Only the exponent control specifically exercises mixC. The failed redundant tactic
 and duplicate setup preflight are not mathematical controls or reviews.

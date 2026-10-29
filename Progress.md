@@ -6,15 +6,16 @@
 
 ## Current state
 
-- **Phase:** physical first-response phase/operator/observable test accepted8PASS/HIGH at0ae116c. The d1 localized Gaussian HSoperator passes in a rough phase and the balanced H^(1/2)xH^(-1/2) endpoint for the original range; the full-class local field trace and averaged-to-point moment transfer are checked. This is FIRSTresponse only. Full flow/remainder/event/sharp target remain open; WHITE13/original-class9counts unchanged.
+- **Phase:** local d1 interaction-driver paths and source-cutoff convergence accepted9PASS/HIGH atb398b77. On balanced H^(1/2)xH^(-1/2), localized first-driver increments give Holder exponents1/2<theta<1-a/2 and every finiteLp path-norm cutoff limit; finite-box normalized FIRSTdriver smallness follows. Full flow/event/sharp target remains open; WHITE13/original-class9 unchanged.
 - **Review boundaries:** prior92page quantitative/mild source `a7e725e` passed its own19checks/HIGH. The new8check review covers the direct norms, positive spatial Wick-measure limit, arbitrary joint vertex-width construction and their consumers. It does NOT freshly audit every unchanged operator/interval proof. Exact source/delivery/adoption bindings and limitations are in `reviews/2026-10-29-fixed-order-construction/`.
-- **Current artifact:** canonical110-page/60-proof TeX/PDF unchanged. Accepted research memos cover degree-four partial clocks, terminal/middle cross diagrams, projection-residual obstruction, exact semiclassical scaling/scalar calibration, and now notes/phase-response-test.md. The latest has six supporting local Lean deductions and its separate8HIGHanalytic/type gate. No new canonical PDF build or whole-paper clearance is implied.
-- **Open targets:** original full fixed-positive-alpha0 sharp p2 constant in all dimensions/covariances; interaction-driver time regularity, all-order physical flow/remainder, growing cone/data1, nonzero-profile spectral/event estimate and source-variational constant map. Next bounded proof: a cutoff-uniform short-time HS increment bound for the balanced interaction driver, before any Young flow. Higher-dimensional operators, whole-paper/novelty/circulation, companion decision4, canonical wiki publication and intended normalization remain separate/open.
+- **Current artifact:** canonical110-page/60-proof TeX/PDF unchanged. New accepted memo notes/interaction-driver-path.md extends the scoped fixed-time phase/operator/observable result. Eight local Lean deductions support exact prefactor/power/Holder/box applications; Gaussian/operator/path analysis passed its separate9HIGH gate. No new whole-paper clearance is implied.
+- **Open targets:** original full fixed-positive-alpha0 sharp p2 constant in all dimensions/covariances; all-order global-or-uniformly-local physical flow/remainder and source-solution identification, growing cone/data1, nonzero-profile spectral/event growth and source-variational constant map. Next action is the precise source/value crosswalk for the spatial/local bounded-operator interface, reusing held Banach Young theory. Higher-dimensional operators, whole-paper/novelty/circulation, companion decision4, canonical wiki publication and intended normalization remain separate/open.
 - **Agent8coordination:** completed at read-only source/statement/ownership level,as requested by Le. Agent8accepted our exact map;three API component fits and stronger-premise gaps are recorded in lean-progress/coordination/2026-10-29-agent8/reuse-adjudication.md. Current coefficient gate sourced5fde707,evidence successorbffd4329;historical SWE receipts remain e5e9558. Source/API/pins checked;no donor-package build/gate/companion/lease/registry transaction. Local Lean pilot is recorded separately. L0/PROPOSED and decision4unchanged.
-- **Authorization:** Le's continuing full goal includes the sharp/lower track. The current wave is the previously proposed bounded static-comparison/inequality step,with the HIGH review threshold unchanged. It does not redefine the original all-alpha0sharp target,claim novelty or promote a paper. Le now explicitly permits Lean verification;standalone local checks do not create a companion repo. Report/honor PROJECT-GOAL decision points;companion-creation decision4remains pending. No correspondence/public release authorized.
+- **Authorization:** Le's continuing full goal includes the sharp/lower track. The current wave is bounded local first-driver/path development,with the HIGH review threshold unchanged. It does not redefine the original all-alpha0sharp target,claim novelty or promote a paper. Le now explicitly permits Lean verification;standalone local checks do not create a companion repo. Report/honor PROJECT-GOAL decision points;companion-creation decision4remains pending. No correspondence/public release authorized.
 - **Worker:** Codex/GPT author, paper-dev workflow; historical project handoff to agent #30 on 2026-10-26. Lean remains L0/PROPOSED (`lean-progress/PROGRESS.md`). Nine normal reference requests exist; new edition-custody intake is nonblocking, not source authentication.
 
-- **Local Lean:** three conditional clock-filter statements compile/replay with standard axioms;independent exact-type/application4PASS/HIGH. Concrete measure instantiation and analytic density/representation remain outsideLean. No official package/companion gate. Evidence in lean-progress/local-checks/clock-filter-v1/.
+- **Local Lean:** seven standalone seams now contain38finite deductions with local compile/replay/standard-axiom evidence and scoped type/application checks. The latest8support the interaction driver; its5false controls and exact limits are in lean-progress/local-checks/interaction-driver-v1/. Analytic SPDE/path inputs remain outsideLean. No official package/companion gate.
+
 
 ## Round plan
 
@@ -3769,3 +3770,62 @@ All-orderflow/remainder, global/uniform-localconstruction,growingcone/data1,
 nonzero-profileevent growth, intended sourceconstant map and higherdims
 remainOPEN. No source1.24repair,Skorohod moment/asymptoticdevelopment,
 novelty or circulationclaim. Full original objective ACTIVE.
+
+
+## Local interaction-driver path: scoped acceptance (2026-10-29)
+
+The candidate above is now accepted at scientific source
+b398b77052718adc8ac4f3439a3c738b504aea86. Actual first-party Opus5.5/HIGH,
+all9groups PASS,389.195seconds, no required repairs. Terminal service exit0,
+source HEAD/tree held clean before collection, committed/current/workspace
+hashes and contract/model/events/report/read-ledger bindings checked.
+All26required texts and2exact source images covered. Native58/local50raw
+members read back; committed-blob verification precedes own raw cleanup.
+Evidence: reviews/2026-10-29-interaction-driver/adjudication.md,
+review-summary.json and final-status-binding.json.
+
+Accepted LOCALd1first-driver bound: squared HS increments at most h^(2-a),
+with squared logarithmic loss for white space. Exact positive Gaussian-mixture
+white trace, actual uniform short-time scaling, both frequency groups and
+low modes, fixed-horizon enlarged-cutoff finite propagation, filtered AND
+DEFECT covariance contractions are explicit. SOURCEcutoffs converge in
+EVERYfiniteLp CthetaHS path norm for1/2<theta<1-a/2; countable cutoffs have
+compatible versions. This is stronger than fixed-time convergence and is
+not a global stationary-noise bounded operator or an all-order flow.
+
+The actual block amplitude delta^((1-a)/2) times the finite maximum over
+at most15delta^-2local FIRSTdrivers tends to0 under the explicit sufficient
+p>4/(1-a)budget. No independence or source-width/large-time interchange.
+This does not construct an event of solution growth or identify a sharp
+constant. The global/uniform-local interface, source-solution identification,
+growing cone/data1, profiles/spectral cones/event lower bound, constants
+and original higher-dimensional operator work all remain OPEN.
+
+All8finite Lean types/application passed C7of9HIGH. Local clean compile,
+printed public types/live standard axioms, fresh owned-source replay with
+matching object hashes and5semantic controls retained. Normalization control
+hard-codes its reduced abstract example, not mixC; exact analytic mapping
+is separately checked. Failed redundant tactic/duplicate refusal preserved,
+no public proposition weakened. Gaussian/integration/HS/path/max analytics
+remain informal reviewed proofs. L0/decision4andAgent8ownership unchanged;
+no new companion/package/lease/registry/donor/cluster/Comparator gate.
+
+All5minor findings adjudicated: distributional test-side localization,
+pointwise polygonal strong measurability, global D<=piandexplicit2I factor,
+hardcoded control scope and named continuous-Tsource construction. All
+DISPLAYEDformula blocks and all8Lean proof bytes unchanged after review.
+Numerics6+12+5at60digits/mpmath1.4.1 have explicit analytical tail budgets;
+not certified intervals or full localized-operator measurements.
+
+Durable lessons saved. While the review ran, selected held-primary
+Friz--Hairer1.4--1.5/4.1/L4.2/8.3/8.9/P8.12andT12.18passages were inspected.
+Banach Young calculus is reusable; the analytic-semigroup theorem is not
+a direct wave-group theorem. The crosswalk/next plan are UNREVIEWEDplanning,
+not accepted flow results or a full literature/novelty audit. Complete the
+consumer/value crosswalk before substantial flow proof. Existing book in
+SPDEForge/refdb/wiki, no new absentref and no duplicate queue;9tickets persist.
+
+Canonical110-page/60-proof TeX/PDF and WHITE13/original-class9unchanged.
+Private wiki patch only, canonical page untouched. No Skorohod development,
+intended source1.24repair, whole-paper/novelty/circulation claim. Original
+full sharp goal remains ACTIVE.

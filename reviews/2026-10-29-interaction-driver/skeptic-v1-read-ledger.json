@@ -1,0 +1,934 @@
+{
+  "schema": "le-ai-lab.review-read-ledger/1",
+  "coverage_verified": true,
+  "claude_code_version": "2.1.304",
+  "events_sha256": "d894ef840b31fe580a3069d856fc769813d8cc315e5bd00ab7db56e312047800",
+  "events_hash_bound_to_receipt": true,
+  "stream_workspace": "${LOCAL_RAW}/stratonovich-interaction-driver-scientific-v1/workspace",
+  "required_sources_sha256": null,
+  "continuation": false,
+  "continuation_credit": null,
+  "proves": "Each credited line was returned, numbered and byte-equal to the frozen workspace file, in a tool_result paired with a Read or line-numbered content-mode Grep call of the hash-bound provider stream.",
+  "does_not_prove": "Attention, understanding, or retention: a credited line may have been skimmed, ignored, or dropped by context compaction before the report was written. Uncredited lines may still have been seen in a form the ledger cannot attribute (previews, unnumbered output, subagents).",
+  "sources": [
+    {
+      "path": "FALSE-CONTROL-MAP.md",
+      "sha256": "6ae27b76f1ec40f033a8c02ebe48b89533df6ba097461e5d7fb786142ac72276",
+      "total_lines": 18,
+      "required_ranges": [
+        [
+          1,
+          18
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          18
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "InteractionDriver.lean",
+      "sha256": "a4f0487d911f24eb91cf0dc4bfc4270c65f890632b67e73eebbcf47cdee97fb9",
+      "total_lines": 100,
+      "required_ranges": [
+        [
+          1,
+          100
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          100
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "Lean-local-receipt.json",
+      "sha256": "8870095ad5d9920ad5912a5529829800bf8693a932b42a7cfea42bcbcfee612d",
+      "total_lines": 87,
+      "required_ranges": [
+        [
+          1,
+          87
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          87
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "Lean-statement-fence.md",
+      "sha256": "7bbee8896e784243f566302af540dd49ebf31ff74d126e7825cd8b5a6a409817",
+      "total_lines": 21,
+      "required_ranges": [
+        [
+          1,
+          21
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          21
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "MissingGaussianNormalization.lean",
+      "sha256": "80303f1a7a31e4d912c40aed623725f3b420d5855d80a2863c72dcedbaae4b75",
+      "total_lines": 11,
+      "required_ranges": [
+        [
+          1,
+          11
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          11
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "MissingGaussianNormalization.txt",
+      "sha256": "f1991f73a7b77f8f42107d620356b0daddf5a9aad2b4efd2c65e95c680d717f8",
+      "total_lines": 4,
+      "required_ranges": [
+        [
+          1,
+          4
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          4
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "MissingSpatialCount.lean",
+      "sha256": "ac06de6a6be5ed4c9e2cc22936348c76d1a31dc4eb27ab1d9efd7c377af60089",
+      "total_lines": 6,
+      "required_ranges": [
+        [
+          1,
+          6
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          6
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "MissingSpatialCount.txt",
+      "sha256": "c403a8d67805140dae786bfab5a519c84bf6c3b1cea12c6a75222091cd3d2827",
+      "total_lines": 3,
+      "required_ranges": [
+        [
+          1,
+          3
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          3
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "NegativeLogFactor.lean",
+      "sha256": "62f67d858439e5494959537f33a2b7ebc4b6be5961b67340ddd6c0670ef56a19",
+      "total_lines": 6,
+      "required_ranges": [
+        [
+          1,
+          6
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          6
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "NegativeLogFactor.txt",
+      "sha256": "3d3d8b49d8833c6baad5e8c1da0e06f8946f74434415be15b683155a21a0d898",
+      "total_lines": 2,
+      "required_ranges": [
+        [
+          1,
+          2
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          2
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "WrongGaussianExponent.lean",
+      "sha256": "b9f3e242edf36c325c4e82c556a2c6d597a14203d8eb2ce0118a28af4aac88c5",
+      "total_lines": 6,
+      "required_ranges": [
+        [
+          1,
+          6
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          6
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "WrongGaussianExponent.txt",
+      "sha256": "1ca368af1ff1f7120532f26db9d1a00163c740b0be230bb804e6636895e6af7c",
+      "total_lines": 2,
+      "required_ranges": [
+        [
+          1,
+          2
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          2
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "WrongHolderThreshold.lean",
+      "sha256": "d5d52b9bd338923d6659828904ed524573a8047abac9261b926f61dfe912c5af",
+      "total_lines": 6,
+      "required_ranges": [
+        [
+          1,
+          6
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          6
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "WrongHolderThreshold.txt",
+      "sha256": "f30dfe16ba2e589dca5986cb42cf5b49246329b1387d2f402bace6e7c8aa71fc",
+      "total_lines": 3,
+      "required_ranges": [
+        [
+          1,
+          3
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          3
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "checks.json",
+      "sha256": "e1df90342b997ccd24270906689a61c12bbd5e84af9085ce928a73701401fabb",
+      "total_lines": 182,
+      "required_ranges": [
+        [
+          1,
+          182
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          182
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "checks.py",
+      "sha256": "82f48d525f0e8d4e5f2f15b39ab90a5d6dc4b1391187bd713e9c5689c05dea13",
+      "total_lines": 66,
+      "required_ranges": [
+        [
+          1,
+          66
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          66
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "driver-note.txt",
+      "sha256": "c048c51e1d4737ebcb2a902b48067fae05a84aad3b131a6faa7bda22e1e634ab",
+      "total_lines": 332,
+      "required_ranges": [
+        [
+          1,
+          332
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          332
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "numerical-fidelity.md",
+      "sha256": "45ccf7b3148d5016e31d0e213cfccf01683121ab64f6942a504b261be229d4fb",
+      "total_lines": 55,
+      "required_ranges": [
+        [
+          1,
+          55
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          55
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "prior-phase-binding.json",
+      "sha256": "0fa85f216caaa3bce0e6351b0f0425f097085fae6d1d60c99b9f5c3df7349c9b",
+      "total_lines": 21,
+      "required_ranges": [
+        [
+          1,
+          21
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          21
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "prior-phase-note.txt",
+      "sha256": "4cb9b52e7868ab6bc69023b9c1bd1dc4485654c189baa5e9cfa31204f660127f",
+      "total_lines": 378,
+      "required_ranges": [
+        [
+          1,
+          378
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          378
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "prior-phase-summary.json",
+      "sha256": "86372d837509f456b7f77274ee501123693b611074c68172a0b9775d1780057c",
+      "total_lines": 21,
+      "required_ranges": [
+        [
+          1,
+          21
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          21
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "reconnaissance.md",
+      "sha256": "298208d6fc37b4a4b43302c1bb8a2bcf38d73da4c82a5112c7939273309e4c36",
+      "total_lines": 52,
+      "required_ranges": [
+        [
+          1,
+          52
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          52
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "source-cutoff-inputs.txt",
+      "sha256": "66290b2ec97d087d08d4c1fb8b430c277dccd1b48fb0e23bc08514b410d0d6d2",
+      "total_lines": 132,
+      "required_ranges": [
+        [
+          1,
+          132
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          132
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "source-map.md",
+      "sha256": "441b6ee7840689b57404b1906f303992784b3a96a196bb4d865e23beab5aace2",
+      "total_lines": 16,
+      "required_ranges": [
+        [
+          1,
+          16
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          16
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "source-rendering.json",
+      "sha256": "23bb26e507e82ad81ad17af0a82fad3bc488b00e4fbfaf9343634a7120a0dfde",
+      "total_lines": 16,
+      "required_ranges": [
+        [
+          1,
+          16
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          16
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "types-and-axioms.txt",
+      "sha256": "86bc975ce00367d5be8bb02375af382fac5919954a223f21486de4c3180da4c9",
+      "total_lines": 236,
+      "required_ranges": [
+        [
+          1,
+          236
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          236
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    }
+  ],
+  "image_proves": "Each delivered image: a direct Read tool_use of its exact workspace path, in the stream's session, is paired by id with a tool_result (same session) whose content is one inline base64 image block of the declared media type, and the base64 decodes to bytes whose sha256 is the declared one.",
+  "image_does_not_prove": "That the model looked at, understood or correctly interpreted the image, or any scientific acceptance of what it shows: only delivery of these exact bytes. Transformed or resized content, metadata and self-reports earn nothing, so an undelivered image may still have been seen in another form.",
+  "required_images": [
+    {
+      "path": "author-8.png",
+      "sha256": "6d9272043e1044574254152d5994c40db37cf0c724c3f85b3755a2cfe9dcf3ab",
+      "media_type": "image/png",
+      "status": "delivered",
+      "delivered_by": [
+        "toolu_019MNYqcE822QKXyTXoN3zEz"
+      ]
+    },
+    {
+      "path": "author-9.png",
+      "sha256": "431d724040a3774dbe2859f85fdeb91b7f89dfe56d16ef9eb574d6f60460afe7",
+      "media_type": "image/png",
+      "status": "delivered",
+      "delivered_by": [
+        "toolu_01QQShkzEqrtMNmqaqPMDoHV"
+      ]
+    }
+  ],
+  "tool_calls": [
+    {
+      "id": "toolu_018oygozVjptfDtDRPv2Dpd4",
+      "tool": "Read",
+      "source": ".review/required-sources.json",
+      "plan_copy_read": [
+        ".review/required-sources.json"
+      ],
+      "uncredited": "runner-owned plan copy (.review/): never read credit",
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01QZYJPy5HWUkro5LoRyV1gZ",
+      "tool": "Read",
+      "source": "driver-note.txt",
+      "credited": {
+        "driver-note.txt": [
+          [
+            1,
+            332
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01DwbueSL27iaev1UDWbcc7N",
+      "tool": "Read",
+      "source": "source-cutoff-inputs.txt",
+      "credited": {
+        "source-cutoff-inputs.txt": [
+          [
+            1,
+            132
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_019MNYqcE822QKXyTXoN3zEz",
+      "tool": "Read",
+      "source": "author-8.png",
+      "uncredited": "non-text result (image, PDF or block list)",
+      "stream": "attempt",
+      "image": {
+        "path": "author-8.png",
+        "media_type": "image/png",
+        "decoded_sha256": "6d9272043e1044574254152d5994c40db37cf0c724c3f85b3755a2cfe9dcf3ab",
+        "delivered": true
+      }
+    },
+    {
+      "id": "toolu_01QQShkzEqrtMNmqaqPMDoHV",
+      "tool": "Read",
+      "source": "author-9.png",
+      "uncredited": "non-text result (image, PDF or block list)",
+      "stream": "attempt",
+      "image": {
+        "path": "author-9.png",
+        "media_type": "image/png",
+        "decoded_sha256": "431d724040a3774dbe2859f85fdeb91b7f89dfe56d16ef9eb574d6f60460afe7",
+        "delivered": true
+      }
+    },
+    {
+      "id": "toolu_01LeM3oTZ6aed5stPGU3Hd1o",
+      "tool": "Read",
+      "source": "InteractionDriver.lean",
+      "credited": {
+        "InteractionDriver.lean": [
+          [
+            1,
+            100
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01ADz7CTvCiESw8vyVH6Pv49",
+      "tool": "Read",
+      "source": "types-and-axioms.txt",
+      "credited": {
+        "types-and-axioms.txt": [
+          [
+            1,
+            236
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01SsX8ES3zy8qerjdZKJzvAS",
+      "tool": "Read",
+      "source": "Lean-local-receipt.json",
+      "credited": {
+        "Lean-local-receipt.json": [
+          [
+            1,
+            87
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01XhdadUyv27MmdTsfdJFzyP",
+      "tool": "Read",
+      "source": "Lean-statement-fence.md",
+      "credited": {
+        "Lean-statement-fence.md": [
+          [
+            1,
+            21
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01EmUbxTh3JT3CGZz1tW84cN",
+      "tool": "Read",
+      "source": "FALSE-CONTROL-MAP.md",
+      "credited": {
+        "FALSE-CONTROL-MAP.md": [
+          [
+            1,
+            18
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_016UwVuPaEuZEQM7pacP69ce",
+      "tool": "Read",
+      "source": "MissingGaussianNormalization.lean",
+      "credited": {
+        "MissingGaussianNormalization.lean": [
+          [
+            1,
+            11
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01XHnbswp8CYLpp2hGPwSXkA",
+      "tool": "Read",
+      "source": "MissingGaussianNormalization.txt",
+      "credited": {
+        "MissingGaussianNormalization.txt": [
+          [
+            1,
+            4
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01DpXQ9wWzGSGCxs7Zqha1Ut",
+      "tool": "Read",
+      "source": "MissingSpatialCount.lean",
+      "credited": {
+        "MissingSpatialCount.lean": [
+          [
+            1,
+            6
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01M4Cxusx85efqJATUjEbms8",
+      "tool": "Read",
+      "source": "MissingSpatialCount.txt",
+      "credited": {
+        "MissingSpatialCount.txt": [
+          [
+            1,
+            3
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01RccL4BiKRYVm3uUyP41XxX",
+      "tool": "Read",
+      "source": "NegativeLogFactor.lean",
+      "credited": {
+        "NegativeLogFactor.lean": [
+          [
+            1,
+            6
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01D1eA1ugd5tyfK6UHi3ELb3",
+      "tool": "Read",
+      "source": "NegativeLogFactor.txt",
+      "credited": {
+        "NegativeLogFactor.txt": [
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01QAmWW9ADWx5Srrt1hqTdpg",
+      "tool": "Read",
+      "source": "WrongGaussianExponent.lean",
+      "credited": {
+        "WrongGaussianExponent.lean": [
+          [
+            1,
+            6
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_011WtWsouyYkdmhvLKKccZVY",
+      "tool": "Read",
+      "source": "WrongGaussianExponent.txt",
+      "credited": {
+        "WrongGaussianExponent.txt": [
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01KQJgLRhr2DBfaxZDSxtkV1",
+      "tool": "Read",
+      "source": "WrongHolderThreshold.lean",
+      "credited": {
+        "WrongHolderThreshold.lean": [
+          [
+            1,
+            6
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01SdE9fwEWmyscqoMFFtyn8e",
+      "tool": "Read",
+      "source": "WrongHolderThreshold.txt",
+      "credited": {
+        "WrongHolderThreshold.txt": [
+          [
+            1,
+            3
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01Nvw8X3gFQa2Hh1uoyLYhyF",
+      "tool": "Read",
+      "source": "prior-phase-note.txt",
+      "credited": {
+        "prior-phase-note.txt": [
+          [
+            1,
+            378
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01CrgdAyF2J7SMjphGBGb54Q",
+      "tool": "Read",
+      "source": "prior-phase-binding.json",
+      "credited": {
+        "prior-phase-binding.json": [
+          [
+            1,
+            21
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01GcwxUGCSwzeCvVhxgXKQcT",
+      "tool": "Read",
+      "source": "prior-phase-summary.json",
+      "credited": {
+        "prior-phase-summary.json": [
+          [
+            1,
+            21
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01YaGxqLmvzxwusxCha49Kdy",
+      "tool": "Read",
+      "source": "numerical-fidelity.md",
+      "credited": {
+        "numerical-fidelity.md": [
+          [
+            1,
+            55
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01CfQZDYDRma8HCLwzbtrUnF",
+      "tool": "Read",
+      "source": "checks.py",
+      "credited": {
+        "checks.py": [
+          [
+            1,
+            66
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01EP2iEKA7rbyyaQZ8gJHbd8",
+      "tool": "Read",
+      "source": "checks.json",
+      "credited": {
+        "checks.json": [
+          [
+            1,
+            182
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_013NL2L5P5BH1MC5Z6EL9RyE",
+      "tool": "Read",
+      "source": "reconnaissance.md",
+      "credited": {
+        "reconnaissance.md": [
+          [
+            1,
+            52
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_019rK1z1gkqYUmiQUdPQ9GC5",
+      "tool": "Read",
+      "source": "source-map.md",
+      "credited": {
+        "source-map.md": [
+          [
+            1,
+            16
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01Bo64TYdktYUSiLqdUvPZMG",
+      "tool": "Read",
+      "source": "source-rendering.json",
+      "credited": {
+        "source-rendering.json": [
+          [
+            1,
+            16
+          ]
+        ]
+      },
+      "stream": "attempt"
+    }
+  ],
+  "diagnostics": []
+}

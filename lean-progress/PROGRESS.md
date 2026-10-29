@@ -171,3 +171,10 @@ Interaction-driver gate: all8finite facts compile cleanly; exact public types,
 live standard axioms, owned replay and5semantic False controls pass. A failed
 redundant tactic is preserved, no statement changed. Duplicate setup refused
 before overwrite, terminal state inspected. Analytical/type gate pending.
+
+Interaction-driver close: all8finite types/application passedC7of9HIGH at
+b398b77. Formal source/statements unchanged;5semantic controls retain their
+exact scopes (normalization control hard-codes its reduced abstract case).
+Gaussian/convolution/HS/source-cutoff/path/box arguments remain informal
+reviewed proofs. All-order/global-or-ulocflow/event/constant/higherdims open.
+L0anddecision4unchanged.

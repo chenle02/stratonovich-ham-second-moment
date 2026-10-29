@@ -80,14 +80,14 @@ are outside Lean; this is not a formal SPDE or canonical package gate.
 
 | Name | Scope | Status |
 |---|---|---|
-| temporal_range | Actual H=1-a/2 range | Local compile/replay; application pending |
-| variance_norm | Actual variance sqrt/rpow/log-factor normalization | Local compile/replay; application pending |
-| gaussian_prefactor | Actual positive Gaussian-mixture prefactor, P=pi application | Local compile/replay; application pending |
-| gaussian_exponent | Actual harmonic Gaussian exponent separation | Local compile/replay; application pending |
-| holder_parameters | Actual midpoint and high-moment dyadic margins | Local compile/replay; application pending |
-| dyadic_ratio | Actual real-power summation ratio in(0,1) | Local compile/replay; application pending |
-| box_margin | Sufficient two-index maximum margin | Local compile/replay; application pending |
-| box_scale | Actual delta real-power Gaussian-max normalization | Local compile/replay; application pending |
+| temporal_range | Actual H=1-a/2 range | Local compile/replay; exact type/application HIGH atb398b77 |
+| variance_norm | Actual variance sqrt/rpow/log-factor normalization | Local compile/replay; exact type/application HIGH atb398b77 |
+| gaussian_prefactor | Actual positive Gaussian-mixture prefactor, P=pi application | Local compile/replay; exact type/application HIGH atb398b77 |
+| gaussian_exponent | Actual harmonic Gaussian exponent separation | Local compile/replay; exact type/application HIGH atb398b77 |
+| holder_parameters | Actual midpoint and high-moment dyadic margins | Local compile/replay; exact type/application HIGH atb398b77 |
+| dyadic_ratio | Actual real-power summation ratio in(0,1) | Local compile/replay; exact type/application HIGH atb398b77 |
+| box_margin | Sufficient two-index maximum margin | Local compile/replay; exact type/application HIGH atb398b77 |
+| box_scale | Actual delta real-power Gaussian-max normalization | Local compile/replay; exact type/application HIGH atb398b77 |
 
 Every Gaussian/HS/path/convergence/max/Young-flow and event/constant input
 remains outside Lean. No companion or canonical package gate.

@@ -1,6 +1,9 @@
 # Localized interaction paths and source-cutoff convergence
 
-Status: CANDIDATE. Independent source/type/application review is pending.
+Status: ACCEPTED at the scoped independent source/type/application gate.
+Source b398b77052718adc8ac4f3439a3c738b504aea86, Opus5.5/HIGH: all9groups
+PASS,389.195seconds,26texts/2source images, no required repairs. See
+reviews/2026-10-29-interaction-driver/adjudication.md for exact boundaries.
 The result concerns a LOCALfirst Gaussian driver in d1. It does not construct
 an all-order flow, a global operator for stationary noise, an event growth
 bound or a sharp moment constant. The original full target remains open.
@@ -54,7 +57,7 @@ Use <x>=(1+x^2)^(1/2). The balanced convolution is
     D(q)<=24 log(2+|q|)/<q>.                               (C)
 
 Here is an explicit bound. D is even, and Cauchy--Schwarz gives D(q)<=pi
-for bounded q. For q>=2 split |k|<=q/2, |k+q|<=q/2 and their complement.
+for every q. For q>=2 split |k|<=q/2, |k+q|<=q/2 and their complement.
 The first two integrals are each at most4asinh(q/2)/q; the two remaining
 tails are each at most2/q. Thus D(q)<=[8log(1+q)+4]/q. With
 <q>/q<3/2, log(2+q)>1/2, this implies(C). For0<=q<=2 the same(C) follows
@@ -145,7 +148,8 @@ four-component trace is bounded by a constant times
 
 Extending the positive integrand to the whole plane is legitimate. Since
 the white spectral density is constant, k->-k makes the two integrals
-equal. Their common value is I_a(h) from(W). This step is not valid by
+equal. Their common value is I_a(h) from(W), so their sum is2I_a(h).
+This step is not valid by
 that same change of variables for a nonconstant spectral density, which
 was separately handled in(R).
 
@@ -183,7 +187,13 @@ wave phase, gives D_chi S(-t)=D_chi S(-t)D_psi for t<=T0. Thus
     X_chi(t)-X_chi(s)
        =D_chi S(-t) [D_psi N_(s,h)] S(s).                  (Q)
 
-There is no commutation of D_chi with S. The two exterior operators are
+For Gaussian forms the finite-propagation identity is first used on the
+test side in ordinary distributional duality. The transpose of D_chi S(-t)
+sends a compact smooth phase test into the enlarged region where psi=1.
+Thus(Q) first holds in mean-square distributional pairing on Schwartz
+inputs, then as the Hilbert--Schmidt identity after the bounded extension.
+No localization of the E-adjoint, which includes nonlocal Bessel weights,
+is used. There is no commutation of D_chi with S. The exterior operators are
 bounded on E with constants uniform for s,t in[0,T0]. The middle operator
 is exactly the prior localized first response. The HS ideal inequality
 and(R),(N) prove(I). This also constructs localized fixed-time interaction
@@ -193,7 +203,9 @@ operators without asserting that M itself is globally bounded.
 
 Use the current author's shared Gaussian construction(2.9)--(2.11), pp8--9.
 W_eta retains independent temporal Laplace slices below1/eta, and W is
-the sum of all slices; W-W_eta is independent of W_eta. The spatial heat
+the sum of all slices; W-W_eta is independent of W_eta. The continuous
+cutoff-parameter extension and independent slice increments are named
+inputs from that source construction, not re-proved here. The spatial heat
 operator has multiplier exp(-epsilon q^2/2). An optional sharp spatial
 projection |q|<=L is allowed for these linear integrals. Write F_(epsilon,L)
 for their product, whose multiplier lies in[0,1], and
@@ -272,8 +284,9 @@ uncountable set of exceptional null sets.
 
 Let P_n be polygonal interpolation on that grid. Deterministically,
 ||f-P_n f||_C^theta <=C 2^(-n(gamma-theta))||f||_C^gamma.
-The interpolation terms are strongly measurable in C^theta and the uniform
-Lq bound gives a strongly measurable C^theta limit. Equivalently one may
+The interpolation terms are strongly measurable in C^theta. Their
+pointwise-in-omega C^theta convergence on {Z_gamma<infinity} gives a
+strongly measurable limit; the Lq bound supplies its integrability. One may
 use the separable little-Hölder space containing these C^gamma paths.
 At fixed n, (T) gives P_n(X^rho-X)->0 in Lq C^theta. The two interpolation
 errors are uniform in rho and vanish as n increases. First take the source

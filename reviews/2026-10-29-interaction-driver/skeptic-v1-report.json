@@ -1,0 +1,101 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "driver-note.txt lines 1-333 (complete)",
+    "source-cutoff-inputs.txt lines 1-131 (complete)",
+    "author-8.png (whole image viewed)",
+    "author-9.png (whole image viewed)",
+    "InteractionDriver.lean lines 1-100 (complete)",
+    "types-and-axioms.txt lines 1-236 (complete)",
+    "Lean-local-receipt.json lines 1-87 (complete)",
+    "Lean-statement-fence.md lines 1-21 (complete)",
+    "FALSE-CONTROL-MAP.md lines 1-18 (complete)",
+    "MissingGaussianNormalization.lean lines 1-11 (complete)",
+    "MissingGaussianNormalization.txt lines 1-4 (complete)",
+    "MissingSpatialCount.lean lines 1-6 (complete)",
+    "MissingSpatialCount.txt lines 1-3 (complete)",
+    "NegativeLogFactor.lean lines 1-6 (complete)",
+    "NegativeLogFactor.txt lines 1-2 (complete)",
+    "WrongGaussianExponent.lean lines 1-6 (complete)",
+    "WrongGaussianExponent.txt lines 1-2 (complete)",
+    "WrongHolderThreshold.lean lines 1-6 (complete)",
+    "WrongHolderThreshold.txt lines 1-3 (complete)",
+    "numerical-fidelity.md lines 1-55 (complete)",
+    "checks.py lines 1-66 (complete)",
+    "checks.json lines 1-182 (complete)",
+    "prior-phase-note.txt lines 1-379 (complete)",
+    "prior-phase-binding.json lines 1-21 (complete)",
+    "prior-phase-summary.json lines 1-21 (complete)",
+    "reconnaissance.md lines 1-52 (complete)",
+    "source-map.md lines 1-16 (complete)",
+    "source-rendering.json lines 1-16 (complete)",
+    "(.review/required-sources.json lines 1-92 read as the plan only; no read credit claimed)"
+  ],
+  "checks": [
+    {
+      "claim": "C1: Balanced convolution bound (C), Gaussian-mixture formula (G), exact positive white trace (B), log bound on L and (L)",
+      "verdict": "PASS",
+      "reason": "Cauchy-Schwarz gives D(q)<=pi for every q, and D is even. For q>=2 I checked each region. On |k|<=q/2 we have <k+q>>=q/2, so the integral is at most (2/q)*2asinh(q/2). The region |k+q|<=q/2 is symmetric. The complement is {k>q/2} union {k<-3q/2}, and each part has integral at most integral_{q/2}^inf dm/m^2=2/q. Since asinh(q/2)<=log(1+q), D<=[8log(1+q)+4]/q. Using <q>/q<=sqrt(5/4)<3/2 and 4<8log(2+q), this is <=24log(2+q)/<q>. For 0<=q<=2: 24log2/sqrt5>24(1/2)/3=4>pi. For (G): 1/<k>=Gamma(1/2)^(-1)integral u^(-1/2)e^(-u(1+k^2))du. Completing the square gives sqrt(pi/(u+v))e^(-uvq^2/(u+v)), so the prefactor is pi^(-1)sqrt(pi)=pi^(-1/2), matching. J>=0 because J(q)=integral_{[0,h]^2}|s-t|^(-a)e^(iq(s-t)) and the kernel is positive definite. Tonelli for the positive mixture, then Fubini only inside each Gaussian component (e^(-cq^2)(h-z)z^(-a) is integrable), give sqrt(pi/c)e^(-z^2/(4c)). The prefactor pi^(-1/2)sqrt(pi/c)/sqrt(uv(u+v))=1/(uv) and the exponent splits as z^2/4u+z^2/4v. A final Tonelli gives exactly 2integral(h-z)z^(-a)L(z)^2dz. For 0<z<=1 the three u-regions give at most log4+e^(-1)<4 (via w=z^2/4u), 2log(1/z), and e^(-1)<1. Substituting z=hv gives (L), with finite integral_0^1(1-v)v^(-a)(1+|log v|)^2. The identity L=2K0 (u=(z/2)e^w) is used only for numerics. No absolute Fubini over the unweighted D is used."
+    },
+    {
+      "claim": "C2: Uniform short-time localized response (S), (F), (R), (H) and (N), with the 1/(2pi) and amplitude tracked",
+      "verdict": "PASS",
+      "reason": "The scaling J_{a,h}(q)=h^(2-a)J_{a,1}(hq) is exact (z=hy), and the bound follows from the prior unit-time (U). No fixed-time C_h is reused. (F): sqrt(w_{chi,1/2})<=C<r>^(1/2) and |sin(xr)/r|<=min(1,1/|r|)<=sqrt2/<r> for x<=h<=1, so there is no low-mode division. The normalized inputs cos(uk)<k>^(-1/2) and sin(uk)/k*<k>^(1/2) are <=C<k>^(-1/2). Because the raw kernel is positive, ||g||_a^2<=sup|g|^2*2h^(2-a)/((1-a)(2-a)). Hence (R) equals C h^(2-a)integral|q|^(alpha-1)D(q)dq, which is finite: near 0 since D<=pi and alpha>0; at infinity, q^(alpha-2)log q with alpha<1. White high/high: each weighted term is <=C<r>^(-1)<k>^(-1) times a nonnegative unweighted quadratic norm (<r>/|r|,<k>/|k|<=sqrt2). The four Gram factors sum exactly to cos(r(u-v))cos(k(u-v)), which gives J(r-k)+J(r+k). Extending this positive integrand to the plane and reflecting k->-k gives 2I_a(h). This uses the constant white density, as the note states. Low/high and high/low: after u=hv the low-mode factors have uniformly bounded C1 norm on [0,1] (including the k=0 limit). The prior modulation bound gives C h^(2-a)<hr>^(a-1), and integral_1^inf<hr>^(a-1)dr/<r> <= log(1/h)+1/(1-a). The both-bounded sector is <=Ch^(2-a). The 1/(2pi) factor and the amplitude c of |q|^(alpha-1) stay inside the constants."
+    },
+    {
+      "claim": "C3: Interaction increment (A), localization (Q) and (I), uniform in h and start time",
+      "verdict": "PASS",
+      "reason": "S(-u)=S(-t)S(t-u) and the shift u=s+u' give M(t)-M(s)=S(-t)N_{s,h}S(s), with the signs and order as stated. The shifted noise has the raw law by stationarity of |u-v|^(-a)Gamma(x-y); independent increments are not used. Every entry of the wave matrix, including the -r sin(tr) derivative entry, propagates with speed 1. So one psi equal to 1 near the T0-enlargement of supp chi gives D_chi S(-t)(I-D_psi)=0 for all |t|<=T0, without commuting chi with S. D_psi N_{s,h} is exactly the prior localized response (output cutoff psi, time h, shifted noise). The HS ideal inequality, with sup_{t<=T0}||D_chi S(-t)||_E and ||S(s)||_E finite, together with (R)/(N), gives (I) with constants depending on T0, a, Gamma and chi but not on h or s. No global HS bound and no global bounded M is inferred."
+    },
+    {
+      "claim": "C4: Source-compatible cutoffs (C0), (V), testwise convergence, HS coordinates and (T)",
+      "verdict": "PASS",
+      "reason": "Pages 8-9 (images and text) construct W from independent Laplace slices Delta_k W with covariance Gamma(alpha0)^(-1)integral_{T_{k-1}}^{T_k}e^(-lambda|s-t|)lambda^(alpha0-1)dlambda times gamma, extended to {W_T}, followed by the heat semigroup p(epsilon); (2.11) confirms a common space. This is not temporal convolution, and the note matches it. Var(W_rho f)=integral mu|F|^2Q_eta<=integral mu Q_inf, because the omitted slices are positive definite and 0<=F<=1. The difference splits into the orthogonal parts (I-F)W_eta and W-W_eta (independent slices), with variance <=integral mu Q_eta+integral mu Q_omit=Var W(f). The omitted-slice variance decreases to 0 by monotone/dominated convergence. The multiplier term is dominated by integral mu|1-F_{eps,L}|^2Q_inf->0 for any joint path, so arbitrary rates are allowed. Contraction plus density extends this to the noise Hilbert closure. A Schwartz ONB of E (Gram-Schmidt) gives rank-one HS coordinates that are deterministic noise tests. Summing (V) gives (I) for X^rho and for X-X^rho, and dominated convergence of the series gives (T). Both are jointly Gaussian on the common space, so the prior Gaussian Lp bound applies. The note does not claim measurability with respect to the raw field."
+    },
+    {
+      "claim": "C5: (G0), dyadic chaining (D0), C^gamma versions, strong measurability, and convergence (P) in the path norm",
+      "verdict": "PASS",
+      "reason": "Gaussian Lq of (I) gives h^(1-a/2)(1+|log h|). Bounding the max by the sum, ||D_n||_q<=(2^n)^(1/q)C(T0 2^(-n))^H(1+n), with no independence used. Since H-gamma=(H-theta)/2, q>2/(H-theta) gives epsilon>0 and summable (1+n)2^(-n epsilon). Chaining on countable dyadic grids gives a gamma-H\u00f6lder extension on {Z_gamma<inf}, and it agrees a.s. with X(t) at each fixed t by L^q continuity. There is no uncountable null-set swap. The polygonal estimate ||f-P_nf||_theta<=C2^(-n(gamma-theta))[f]_gamma follows by interpolating sup and gamma-seminorm. P_n X is strongly measurable and converges pointwise in omega, so the C^theta (little-H\u00f6lder) limit is strongly measurable. The three-term split is: two interpolation errors uniform in rho, plus the fixed-grid P_n(X^rho-X)->0 by (T). Taking rho first and then n, with q>p, proves (P) in the path norm and not only pointwise. Countable compatibility holds via commuting bounded multipliers at dyadic times plus continuity."
+    },
+    {
+      "claim": "C6: Finite boxes (B0), box count, (U0), and the residual amplitude",
+      "verdict": "PASS",
+      "reason": "delta^a|delta(u-u')|^(-a)=|u-u'|^(-a), with Gamma(x-x') unchanged. In the slice integral, lambda'=delta*lambda maps the cutoff 1/eta to delta/eta, i.e. eta->eta/delta, and spatial widths are unchanged. With n=ceil(1/delta)<=2/delta, (2n+1)(n+1)<=(5/delta)(3/delta)=15delta^(-2). Identical laws plus max<=sum give ||K||_p<=(15delta^(-2))^(1/p)sup||Y||_p, uniformly in j, m, delta and widths (via (V)). Rescaling t=m delta+delta u gives V_uu=Delta V+delta^(1/2)delta^(-a/2)W^delta V. The amplitude delta^((1-a)/2) is therefore correct, and it is consistent with kappa=(4-alpha-a)/(3-alpha) from the prior calibration. The exponent is positive iff p>4/(1-a). Markov and Lyapunov give the smaller-moment and event consequences. The scope statements (first driver only, sufficient budget, no interchange of limits) are accurate."
+    },
+    {
+      "claim": "C7: Lean fidelity, application of the eight deductions, and the five false controls",
+      "verdict": "PASS",
+      "reason": "variance_norm (C>=0, h>0, L>=0, real rpow) matches (G0) with L=1+|log h|>=0. gaussian_prefactor with P=pi is exactly the pi^(-1/2)sqrt(pi/c)/sqrt(uv(u+v))=1/(uv) step, and gaussian_exponent uses the actual mixC=uv/(u+v). temporal_range covers 0<a<1. In holder_parameters, the Lean p is the internal q; the hypothesis 2/(H-theta)<p yields gamma<H, gamma<1, H-gamma-1/p>0 and p>2. dyadic_ratio gives 2^(-epsilon) in (0,1). box_margin matches p>4/(1-a), and box_scale matches delta^((1-a)/2)(delta^(-2))^(1/p). The listed axioms are only propext, Classical.choice and Quot.sound, and no conclusion is assumed. I evaluated each control by hand. WrongHolderThreshold: 1/16-1/12<0 while the weak cut 8<12 holds. MissingSpatialCount: 1/4-1/3<0. WrongGaussianExponent: 1/8 vs 1/32. MissingGaussianNormalization: sqrt8/sqrt2=2. NegativeLogFactor: 2 vs -2. Each log shows unsolved goal False, not a name or import error."
+    },
+    {
+      "claim": "C8: Numeric and source fidelity",
+      "verdict": "PASS",
+      "reason": "I re-derived the Feynman-parameter form and the u=(1+cos)/2 reduction, which give D=2K(m=-q^2/4) in mpmath's convention. D_positive=2(tail+middle) reconstructs the whole-line k integral correctly. The time integral's substitution z=h e^(-beta y) gives the Jacobian beta h^(2-a)(1-e^(-beta y))e^(-y). The tail budget uses K0<=2.5+log(1/z) with the exact formula e^(-Y)(p+p'+p''). J1 matches the lower-incomplete-Gamma form of 2Re integral(1-v)v^(-a)e^(irv). The spectral rescaling 2h^(1-a)integral D(z/h)J_{a,1}(z), the leading and error tails, and their omitted-tail bounds via (C) with log(2+Qe^(beta y)/h)<=log(2+Q/h)+beta y all check. The case counts are 6/12/5 at dps 60 with mpmath 1.4.1. A hand estimate of I_{0.5}(1)\u2248130 agrees with 130.83. No positive domain is clipped, and these are not certified intervals. The analytic results do not depend on the numerics."
+    },
+    {
+      "claim": "C9: Claim boundary",
+      "verdict": "PASS",
+      "reason": "Every local, path, limit and finite-box claim is supported by the arguments above. None of them silently assumes a global stationary HS operator, a Young flow, a uniformly local flow, an event, or a sharp constant. The open items (all-order flow and remainder, growing cone and data 1, profiles and spectral cones, variational constants, higher dimensions) are stated as open. The scope exclusions are explicit: no Skorohod result, no normalization repair, no novelty claim."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Section 4 states D_chi S(-t)=D_chi S(-t)D_psi as an E-operator identity and then applies it to the unlocalized Gaussian form N_{s,h}. The note should say that this transfer uses the distributional (L2-duality) finite propagation of the transpose wave group on the test side. The E-adjoint involves nonlocal Bessel weights. The step is correct but compressed.",
+      "Section 6: the strong measurability of the C^theta limit comes from pointwise-in-omega convergence of P_n X on {Z_gamma<inf}. The phrase 'the uniform Lq bound gives a strongly measurable limit' slightly misattributes this.",
+      "Section 2 says 'D(q)<=pi for bounded q', but Cauchy-Schwarz gives it for every q. In Section 3 the two reflected integrals sum to 2I_a(h); the constant absorbs this.",
+      "MissingGaussianNormalization hard-codes the numbers (1/sqrt2)*sqrt8 rather than instantiating mixC or gaussian_prefactor. It is a valid abstract instance at P=4, u=v=1, but it does not resolve the kernel names.",
+      "Section 5 uses the source's continuous-T extension {W_T} with independent slice increments ('Kolmogorov consistence extension'). That is a named source input; this review does not audit its construction."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "No commands were run. Lean compilation, axiom listings, olean and source hashes, image SHA-256 values and the mpmath outputs come from the packet's receipts and were not re-executed. The numerical checks were reviewed by re-deriving formulas plus one hand estimate.",
+    "The named prior inputs (the HS trace and its 1/(2pi) normalization, carrier weights w_{chi,v}, the temporal (E)/(U) bounds, the modulation bound (B), and the Gaussian Hilbert Lp bound) were checked only for hypotheses and application, not re-proved.",
+    "The source pages 8-9 were read as images and text for the coupling construction only; this is not an audit of the source's proofs or of its (1.20)/(1.21).",
+    "This is an AI review, not human verification and not a novelty audit. Acceptance covers only the local d1 first-driver path, source-cutoff and finite-box claims and their exact applications."
+  ]
+}
