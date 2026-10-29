@@ -199,7 +199,10 @@ Thus neither Theorem~4.1 nor Lemma~4.4 nor Appendix~A.1 of the source is
 an analytic construction input. The finite-width Gaussian field and
 multiple Stratonovich integral use its definitions and regularization
 conventions, with Green smoothing removed before noise smoothing.
-The new construction lemmas are candidates awaiting independent review.
+The three construction lemmas and their changed consumers passed a fresh
+scoped Opus5.5/HIGH review at source revision \texttt{f9303ed}. This is
+separate from the earlier quantitative reviews and from the pending
+whole-paper cold read.
 
 Proposition~\ref{P:mild-construction} proves that the resulting series
 satisfies its onefold Stratonovich mild equation, using the corrected
@@ -553,6 +556,8 @@ The second expression uses the elementary wave Laplace transform
 $\int_0^\infty e^{-as}\widehat G_s(\xi)\ud s=(a^2+|\xi|^2)^{-1}$.
 The last expression is the space-time covariance quadratic form;
 in physical variables it pairs $G_\theta(s,x)$ with $G_\theta(t,y)$.
+Thus, the second Green factor in the printed source (3.5) is read with
+the independent variable $y$.
 
 \begin{lemma}[Homogeneous damped norms and temporal tails]
   \label{L:damped-homogeneous-norms}
@@ -583,7 +588,9 @@ in physical variables it pairs $G_\theta(s,x)$ with $G_\theta(t,y)$.
 \end{lemma}
 
 \begin{proof}
-  Fourier uniqueness and homogeneity give
+  Scaling the Fourier representation of $\Gamma$ and using Fourier
+  uniqueness gives $\mu(cA)=c^\alpha\mu(A)$. Radon finiteness and
+  $\alpha>0$ then imply $\mu(\{0\})=0$. In particular,
   $\mu(B_r)=r^\alpha V$, where $V=\mu(B_1)<\infty$.
   Therefore, for $a>0$,
   \[
@@ -787,12 +794,12 @@ in chain $i$, with value zero for an empty chain.
     S_1^{v_1+w/2}S_2^{v_2+w/2}\le(1+S_1)^k(1+S_2)^k.
   \]
   By~\eqref{E:construction-brownian-moments}, each expected factor
-  is bounded by a fixed finite sum $P_k$ of nonnegative powers of
+  is bounded by a fixed finite sum $M_k$ of nonnegative powers of
   its horizon, independently
   of $\epsilon_*$. Independence of the two paths now gives
   \[
     \sup_{\boldsymbol\epsilon>0}L_{\boldsymbol\epsilon,D}(0)
-    \le2^{-2k-2}\left(\int_0^\infty e^{-a/2}P_k(a)\ud a\right)^2<\infty.
+    \le2^{-2k-2}\left(\int_0^\infty e^{-a/2}M_k(a)\ud a\right)^2<\infty.
   \]
 
   Monotone convergence in~\eqref{E:spatial-positive-laplace} yields
@@ -807,7 +814,10 @@ in chain $i$, with value zero for an empty chain.
   integral of $\prod_l y_l^c$ is $L_D(c,\ldots,c)$.
   As $c\downarrow0$, continuity at zero and monotone convergence show
   that the cluster limit has no mass on the faces where any $y_l=0$.
-  Pulling it back proves weak convergence on $[0,\infty)^{2k}$.
+  Closed neighborhoods of the $y$-zero faces have limiting mass tending
+  to zero; the portmanteau inequality bounds the approximating tail
+  masses by these same quantities. Pulling back therefore proves weak
+  convergence on $[0,\infty)^{2k}$.
   Bounded continuous test functions are handled by cutting off a
   neighborhood of those zero faces and then using the vanishing tail mass.
   Every sequence of widths tending to zero has this same limit, so
@@ -1025,8 +1035,9 @@ $C_0<\infty$ and $\theta_0=1$ such that, for $\theta\ge\theta_0$,
 \end{lemma}
 
 \begin{proof}
-  The square of $Y_n^{\boldsymbol a}$ has the source's two-chain Wick
-  formula (4.5), with the widths copied to the second chain. Its edge
+  Wick's formula \cite{chen:author2026:time-dependency}*{(2.19), p.~12},
+  with the joint covariance (2.11), gives the square of
+  $Y_n^{\boldsymbol a}$, with the widths copied to the second chain. Its edge
   covariances are
   \[
     \gamma^0_{\delta_j\vee\delta_l}(s_j-s_l)
@@ -1294,9 +1305,8 @@ inequality.
     N_1(\theta)=N_1(1)\theta^{\alpha+\alpha_0-2},\quad
     N_2(\theta)^2=N_2(1)^2\theta^{-\beta}.
   \end{equation}
-  For the first norm this also follows directly from (A.1): substitute
-  $\lambda=\theta v$, $\xi=\theta\eta$, using the degree $\alpha$ of
-  the spectral measure. All constants are finite by Lemma~\ref{L:damped-homogeneous-norms}.
+  All constants and scalings follow directly from
+  Lemma~\ref{L:damped-homogeneous-norms}.
   The products $2N_0N_1$ and $N_2^2$ therefore both have degree
   $-\beta$. Choose
   $K\ge\max\{2N_1(1),N_2(1)^2\}$, increasing it to a positive
@@ -3304,8 +3314,8 @@ We first treat $\Gamma\ne0$ and $1<\alpha<2$.
   Chen~\cite{chen:author2026:time-dependency}*{p.~3}, since
   $\alpha<2-\alpha_0$. The low endpoint has spectral ball exponent
   one and $b_0<1$; the static endpoint has exponent $\chi<2$.
-  Hence, the imported existence and fixed-order convergence statements
-  are used within their stated parameter ranges.
+  Thus, Lemma~\ref{L:joint-fixed-order} applies to the target, and the
+  imported static fixed-order theorem is used within its stated range.
 
   Fix $k\ge1$, $t>0$, and common noise widths $\epsilon,\delta>0$.
   The spatial covariance on each edge has width $2\epsilon$.
@@ -5344,7 +5354,9 @@ for that evolution.
 \myCmts{The preceding interval and mild-construction arguments passed
 source-bound correctness review. The sixth cold reader requested clearer
 hypothesis and solution-object statements and a proof-level fixed-order
-input audit. Those revisions are in progress and need renewed review.
+input audit. The explicit statements, independent fixed-order construction and changed
+consumers passed a fresh scoped Opus5.5/HIGH review at \texttt{f9303ed}.
+The final whole-paper cold read remains pending.
 The sharp constant remains open.}
 
 Write
@@ -6611,8 +6623,8 @@ goal for every admissible dimension and homogeneous covariance.
 The interval estimate passed scoped correctness review.
 The preceding independent mild construction passed correctness review.
 The explicit hypothesis/object revision and independent fixed-order
-construction are written candidates; fresh primary and whole-paper
-review remain required.
+construction and their consumers passed their own scoped Opus5.5/HIGH
+review. A fresh whole-paper cold read remains required.
 The earlier explicit bounds for $0<\alpha\le1$ remain available.
 The sharp constant and final whole-paper cold read remain open.}
 

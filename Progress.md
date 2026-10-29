@@ -6,10 +6,10 @@
 
 ## Current state
 
-- **Phase:** independent fixed-order reconstruction, WRITTEN CANDIDATE. The sixth blind read of source `6cdc142` returned NOT CLEAR. Its construction request is now addressed by three unreviewed lemmas: direct homogeneous norms, positive spatial Wick-measure limits, and arbitrary joint vertex-width limits. The source Chapter 4/Appendix A construction imports have been replaced in all consumers. Fresh primary/HIGH and whole-paper cold review remain required.
-- **Prior verified checkpoint:** the 92-page quantitative upper argument plus independent mild construction passed its OWN 19-check Opus5.5/HIGH review at source `a7e725e`, with complete 27-text/36-image delivery and no required repairs. Final adoption `df1648b` binds its four minor explanatory changes. That review is not a verdict on this reconstruction. All six cold reports remain NOT CLEAR for their source versions.
-- **Current artifact:** 96 pages, 51 proofs; original full covariance/dimension and upper/sharp targets retained. Relative to `ebe4852`, two proofs are added, twelve consumer proofs change, 37 prior proofs and EVERY prior formal statement are byte equal. The previously unreviewed norm lemma is included in the fresh audit. Quantitative interval/CP/Fock estimates remain unchanged. Clean build: zero errors, undefined references/citations, overfull boxes, tabs.
-- **Open targets:** independently review this bounded construction repair, then a fresh cold read; G:sharp at the full original scope; private Lean verification once companion creation is approved; canonical wiki provenance and novelty/circulation gates. Printed first-moment normalization has no adopted correction.
+- **Phase:** independent fixed-order construction ADOPTED at its own scoped primary gate. Frozen source `f9303ed` returned Opus5.5 PASS_WITH_NOTES/HIGH: all8checks PASS,527.512s,complete7texts/36exact PNGs,no required repairs. All8minor notes adjudicated. This replaces the source Chapter4/Appendix A construction imports at the ORIGINAL scope. Fresh whole-paper cold read is next; all six prior cold reports retain NOT CLEAR for their source versions.
+- **Review boundaries:** prior92page quantitative/mild source `a7e725e` passed its own19checks/HIGH. The new8check review covers the direct norms, positive spatial Wick-measure limit, arbitrary joint vertex-width construction and their consumers. It does NOT freshly audit every unchanged operator/interval proof. Exact source/delivery/adoption bindings and limitations are in `reviews/2026-10-29-fixed-order-construction/`.
+- **Current artifact:**96pages,51proofs. Every formal statement is exactly reviewed at `f9303ed`;46proofs are byte equal and five have optional minor clarifications only. Critical joint/mixed/mild/full-upper proofs and quantitative interval/CP/Fock bodies are unchanged after review. Clean build:zero errors,undefined references/citations,overfull boxes,tabs. The original full Radon covariance/dimension class,upper/sharp targets and parameter-only upper constant are retained.
+- **Open targets:** final whole-paper cold read;G:sharp at the original full scope;private Lean once companion creation is approved;canonical wiki provenance and novelty/circulation gates. Printed first-moment normalization has no adopted correction.
 - **Authorization:** Le requested pursuit of the full goal, with the HIGH threshold unchanged. This is a clearly delimited reconstruction of a known input, not a new lower/asymptotic proof wave. Report and honor PROJECT-GOAL decision points; companion-creation decision 4 remains pending. No source-author/coauthor correspondence or public release authorized.
 - **Worker:** Codex/GPT author, paper-dev workflow; historical project handoff to agent #30 on 2026-10-26. Lean remains L0/PROPOSED (`lean-progress/PROGRESS.md`). Nine normal reference requests exist; new edition-custody intake is nonblocking, not source authentication.
 
@@ -2772,3 +2772,33 @@ is delivery preparation only, NOT mathematical acceptance. A fresh scoped
 Opus5.5/HIGH construction-and-consumer review is the next gate; all three
 new lemmas need it. No new review has yet completed for this candidate.
 The original full goal remains ACTIVE.
+
+## Independent construction: primary/HIGH adoption (2026-10-29)
+
+Fresh source `f9303ed` passed its8check Opus5.5/HIGH construction/interface
+audit in527.512s,all required7texts/36PNGs exact,accepted=true,no required
+repairs. All8minor findings are adjudicated in the new directory. Every
+final formal statement and46of51proofs match that source;five proofs have
+optional notation/pinpoint/elementary-argument clarifications. The direct
+joint-limit and main upper proof remain exact. Zero-error/undefined/overfull/
+tab build and hashes are in final-status-binding.json.
+
+All126native/dry-run archive members were individually read back and hashed.
+Actual first-party model/version/effort,held HEAD and clean tree,committed
+packet/workspace equality and this attempt's delivery ledger are verified.
+Default unsupported CLI discovery is retained; actual launch used supported
+2.1.304 in a scoped PATH. No system setup was modified.
+
+Root checked actual auxiliary covariance definitions outside the review's
+required snippets;all target applications are within H,with conditional
+endpoint assumptions retained. The review did not freshly audit unchanged
+quantitative internals;complete optional source availability is not reading.
+An extra1488exact Brownian determinant comparisons across124pairings passed;
+these were not in the review packet and receive no reviewer credit. They
+are finite falsification evidence only.
+
+Decision5status report: the construction repair is now accepted at its
+scoped gate alongside historical quantitative acceptance. A fresh complete
+DeepSeek V4-Pro cold read remains before whole-paper clearance. No sharp
+constant,normalization correction,Lean/novelty/human/circulation clearance
+follows. Full goal ACTIVE; no new lower proof wave has started.
