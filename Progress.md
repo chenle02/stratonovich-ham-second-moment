@@ -2456,3 +2456,37 @@ manuscript/bibliography inline,six pinned source texts available,prior-blind
 and no old reports/checklist. Current route agrees with explicit V4-Pro;
 earlier5.975s native access probe remains health evidence only. READY,not yet
 a scientific report. README's obsolete setup/round1status is corrected.
+
+
+### Fourth cold read: NOT CLEAR; explicit-justification repair cycle
+
+DeepSeek V4-Pro completed886.086s on source27e9746433eec5afdb4fa2b58d01f34d044c7556.
+Actual model,complete prompt,held HEAD and unchanged isolated inputs verified;
+15successful tool calls,partial source consultation,not a full source audit.
+All15items adjudicated in full-upper-cold-v4/adjudication-v1.md. No clear
+main-theorem counterexample reported;NOT whole-paper clearance. Earlier
+16PASS/HIGH does not waive the new verification-depth concerns.
+
+Valid real-part exposition gap repaired:rho=lambda controls the real part;
+separately optimized rho=s controls the imaginary part. Statements unchanged,
+44of45proofs unchanged,86pages,build0errors/undefined/overfull/tabs. Exact
+hashes in realpart-repair-binding.json. Repair is not yet re-reviewed.
+Next:finite-word cutoff proof,fresh-vacuum norm identity,coloured fixed-diagram
+reduction,nonselfadjoint root comparisons,whole-product metric monotonicity
+and consolidated source-consumer scope. Then fresh primary/HIGH and cold.
+
+Targeted source audit distinguishes(4.4),a joint regularization LIMIT,from
+faulty uniform estimate(5.4). Section4's fixed-order argument uses fixed
+Laplace parameters,not Section5's later degree/time substitution. Known mild
+identification stays imported;its full Section5proof is not newly audited.
+Reader item12 falsely attributes Chen2023Corollary1.2:only Theorem1.1 is used.
+
+Executed31exact finite words and225Gaussian variance-tool polynomial cases.
+These are bounded diagnostics,not analytic HAM proofs. Lower crosswalk is
+REFRAME/retrieval only:known density overlap,nonstationary first-moment bridge
+UNPROVED. GLL2010/CHSS2018 already in six-repo corpus,no duplicate enqueue.
+All17terminal native/workspace archive members read-back hash verified before
+only own raw cleanup. No live review. Full upper/sharp goal remains ACTIVE.
+Sharp constants,Lean approval,wiki publication,novelty/circulation remain open.
+Durable lesson:separate parameter choices explicitly;replace informal cutoff
+preservation by a prefix-degree proof. Finite tests/old votes replace neither.

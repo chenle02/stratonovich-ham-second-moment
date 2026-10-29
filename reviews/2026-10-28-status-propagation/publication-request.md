@@ -56,3 +56,5 @@ the earlier15HIGH verdict to these revised proofs. Exact candidate hashes
 are in reviews/2026-10-29-chronological-word/change-binding.json.
 
 LATEST:source-repaired chronological review16PASS/HIGH accepted with all19texts/24images. All8minor findings adjudicated;final86pages include one elementary Cauchy clarification,with all statements/44proofs and the critical fixed-split proof unchanged. Fresh full-paper cold read NEXT. The old v1and calibration failures remain retained;no canonical publication performed.
+
+LATEST superseding status:fourth cold NOT CLEAR on27e9746;all15items adjudicated. Real-part repair is not yet reviewed;finite-word/source-interface repairs then fresh primary/HIGH and cold required. This remains a PRIVATE proposal,not canonical publication.

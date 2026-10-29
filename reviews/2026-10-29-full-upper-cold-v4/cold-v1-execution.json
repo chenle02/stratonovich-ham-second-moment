@@ -1,0 +1,52 @@
+{
+  "source_revision": "27e9746433eec5afdb4fa2b58d01f34d044c7556",
+  "category": "paper-review-deepseek",
+  "model_requested": "deepseek/deepseek-v4-pro",
+  "argv": [
+    "opencode",
+    "run",
+    "--pure",
+    "--format",
+    "json",
+    "--agent",
+    "cold-referee",
+    "--dir",
+    "<HOME>/.local/state/tmp/stratonovich-whole-cold-229185hg",
+    "-m",
+    "deepseek/deepseek-v4-pro"
+  ],
+  "cwd": "<HOME>/.local/state/tmp/stratonovich-whole-cold-229185hg",
+  "environment_overrides": {
+    "OPENCODE_CONFIG": "<HOME>/Dropbox/workspace/svn/Article-Stratonovich-HAM-Second-Moment/reviews/2026-10-29-full-upper-cold-v4/launch-config.json",
+    "OPENCODE_DISABLE_CLAUDE_CODE": "true",
+    "OPENCODE_DISABLE_CLAUDE_CODE_PROMPT": "true",
+    "OPENCODE_DISABLE_CLAUDE_CODE_SKILLS": "true",
+    "OPENCODE_DISABLE_EXTERNAL_SKILLS": "true",
+    "OPENCODE_DISABLE_PROJECT_CONFIG": "true",
+    "OPENCODE_EXPERIMENTAL_OUTPUT_TOKEN_MAX": "131072"
+  },
+  "input_hashes": {
+    "balan-conus-2016-source.txt": "deb7931bfc00b150dd843f1d425cb3c7c510a13aa59b266d5e79a90c9e82d2ed",
+    "candidate.bbl": "70969780fa60d7f3ff1c53857c669abd78fe4c0c39118cc7fc5e8bc7b3b6d000",
+    "candidate.pdf": "8cf6e3b12185c1f40f45ecc4c9d0b9a9ca6620db34332ebe9863dc81870cedc0",
+    "candidate.tex": "576bee4c3e87e34fd583a39266198fdee31735516942dc7e536b769c49401b68",
+    "chen-2023.txt": "e9b0b9f72d8fd9918efb40a6509600a794f590d03549602e3f1a16180751ac43",
+    "chen-arxiv-v1-source.txt": "b765bb4ccff2cbf9285c3961d0317ceab71bfd0dff8a79cc863c8f741be103ae",
+    "chen-current-author.txt": "5a6eff9725bafa36cbaa8c8314661cbac79cc35d1eefa1d148d3b001f02729a2",
+    "chen-hu-2025.txt": "6f2ac9fa86be852e923e64b9ff6bb24a1614baf9937708b9b65ad51612ce3085",
+    "cited-sources.txt": "54bb85d333348e9bf0eaa6bffb5b283272ffa4073f05e4188d6b7d9ab80839ed",
+    "crouzeix-palencia-v1.txt": "0153355b785b4c6786b919c2ef25a90bb676a578690c8c8152ce5ce05e48d017"
+  },
+  "prompt_sha256": "ac7b2b9a9718b04067ea95e25411a95c6f4d67584e483d6cc8005b52147c36f4",
+  "started_unix": 1793255423.1161907,
+  "timeout_seconds": 2400,
+  "fresh_session": true,
+  "automatic_retry": false,
+  "pid": 4096529,
+  "exit_code": 0,
+  "status": "terminal",
+  "elapsed_seconds": 886.0855214595795,
+  "ended_unix": 1793256309.201714,
+  "head_held": true,
+  "workspace_bytes_unchanged": true
+}

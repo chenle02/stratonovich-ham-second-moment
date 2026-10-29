@@ -4287,7 +4287,15 @@ apply it below are bounded; no unbounded-operator extension is assumed.
   $s=\|A_0^{1/2}u\|$. Optimizing~\eqref{E:abstract-sandwich} at
   $\rho=s$ gives $|\langle Bu,u\rangle|\le2ds^a$.
   If $s=0$, the same conclusion follows by letting $\rho\downarrow0$.
-  For $w=x+iy=\langle Lu,u\rangle$ we therefore have
+  Separately, evaluating~\eqref{E:abstract-sandwich} at $\rho=\lambda$
+  gives
+  \[
+    |\langle Bu,u\rangle|
+    \le d\lambda^{a-2}(s^2+\lambda^2),\qquad
+    |z\langle Bu,u\rangle|\le\delta(s^2+\lambda^2).
+  \]
+  This is the estimate for the real part; the optimized estimate controls
+  the imaginary part. Thus, for $w=x+iy=\langle Lu,u\rangle$,
   \[
     x+\lambda^2\ge(1-\delta)(s^2+\lambda^2),\qquad
     |y|\le2\delta\lambda^{2-a}s^a.
@@ -4695,10 +4703,11 @@ for that evolution.
 \section{Interval fields and the full upper bound}
 \label{S:interval-upper}
 
-\myCmts{The chronological-word deduction passed scoped independent
-correctness review at high confidence. Its operator count and source
-interfaces were checked with complete required source delivery.
-Whole-paper cold clearance and the sharp constant remain open.}
+\myCmts{The preceding chronological-word version passed scoped independent
+correctness review. A fourth cold reader requested explicit parameter choices
+and finite-word/source bookkeeping. These clarifications are in progress and
+need renewed review. Whole-paper cold clearance and the sharp constant
+remain open.}
 
 Write
 \[
@@ -5870,8 +5879,9 @@ on the empty tuple. This definition introduces no kernel symmetrization.
 
 \myCmts{Theorem~\ref{T:full-upper} establishes the unchanged full upper
 goal for every admissible dimension and homogeneous covariance.
-The chronological-word revision passed scoped correctness review.
-A fresh whole-paper cold read remains required.
+The preceding chronological-word revision passed scoped correctness review.
+The next cold reader's explicit-justification repairs are in progress;
+fresh primary and whole-paper review are still required.
 The earlier explicit bounds for $0<\alpha\le1$ remain available.
 The sharp constant and final whole-paper cold read remain open.}
 
