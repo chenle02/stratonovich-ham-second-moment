@@ -1,58 +1,51 @@
 # Prepared private wiki status update
 
 Target: content/projects/stratonovich-ham-second-moment.md.
-Exact proposed content: proposed-project-page.md. Patch: project-page.patch.gz (lossless gzip; decompress before applying).
-Base commit/content hash and proposal hash: preparation.json.
+Exact proposed content: proposed-project-page.md.
+Lossless patch: project-page.patch.gz; decompress before applying.
+Base/proposal/patch hashes: preparation.json.
 
-Preserve the original full goals and accepted alpha<=1 baseline. Add current
-74page/candidate scope,expanded Section9 all17PASS/medium and no acceptance,
-scoped source-normalization discrepancy with no intended repair, and the
-separate accepted plane/finite-sum deterministic auxiliary. Preserve historical
-rounds,all links/frontmatter and absence of source-author contact or release.
-Article workflow authority/evidence and exact scientific commits are cited.
+The current proposal records the final82page notes and the original full
+spatial-class upper bound. The terminal/modular deduction passed fresh
+Opus5.5/HIGH review at source65b134243de4ea91cdd4c8e1ca6315975c26979c:
+all15checksPASS,complete15text/14image delivery,no mandatory repairs.
+All6minor findings are adjudicated. Adoption9054ece422489d278833c914b5b73569d2cbbb24
+retains every formal statement and43of45proofs byte-for-byte;the other two
+have only the recorded minor clarifications. All three new helper proofs
+are unchanged. Exact final binding is in terminal-modular/final-status-binding.json.
+
+Both older full-paper cold reports remain NOT CLEAR for their source revisions.
+A fresh80page prior-blind copy of the final notes preserves all45proofs and
+all formal statements including remarks. Its native DeepSeek V4-Pro read returned
+NOT CLEAR,with32tool calls and actual partial source consultation. The fixed-
+split proof,auxiliary source interfaces and uniformity trace need repair/audit.
+All9items are adjudicated under full-upper-cold-v3/.
+Do not treat primary acceptance or source delivery as whole-paper clearance.
+
+Preserve the original sharp target and accepted earlier results,the separate
+unpromoted alternative candidates,the printed source-normalization discrepancy
+with no adopted repair,and all source/AI/Lean/novelty/circulation boundaries.
+The sharp constant remains open. Private Lean creation remains unapproved.
+The proposal preserves frontmatter and the wiki-link target set. Historical
+scientific commits and exact review scope are cited in the proposed page.
 
 Publication is NOT performed. Use the attested canonical single-writer queue
-only after resolving its automatic receipt-notification boundary. It must
-re-read current target/base before applying,retain any concurrent updates,
-run the normal project lint/index and full publication gates,and return an
-exact target/ticket/commit receipt. No source PDF,bibliography,sibling Article,
-public page,coauthor or source-author message is authorized. No forced update
-or blanket staging. Capture required generated propagation paths explicitly.
+only after resolving its automatic receipt-notification boundary. The writer
+must re-read the current target/base,retain concurrent updates,run normal
+project lint/index/publication gates,and return an exact ticket/commit receipt.
+No source PDF,bibliography,sibling Article,public release,coauthor or
+source-author message is authorized. No forced update or blanket staging.
 
 The queue skill states that every receipt triggers one Telegram outcome
-notification. Its enqueue interface has no silent option. Project AGENTS.md
-requires explicit instruction before any message. This is why enqueueing
-awaits approval for the standard receipt,not because the private content
-update itself is scientifically or technically ambiguous.
+notification;its enqueue interface has no silent option. Project AGENTS.md
+requires explicit instruction before any message. The existing unanswered
+approval boundary concerns that standard receipt,not the prepared content.
+Normal reference requests were separately authorized and enqueued;they do
+not authorize a project-publication notification. Do not re-ask or infer
+approval from elapsed time or continued mathematical work.
 
-The unified diff intentionally contains space-prefixed blank context lines.
-They are preserved losslessly in gzip rather than stripped or exempted from
-a repository-wide whitespace policy. The full proposed Markdown remains
-directly readable. Check compressed/decompressed hashes in preparation.json.
-
-The original50page proposal is superseded by this74page status reconciliation.
-References were separately enqueued at Le's explicit instruction;those normal
-reference requests are not a project-page publication receipt.
-
-Section10 energy lemma is separately accepted all8PASS/high at734d0bf;
-full Section9 moment assembly remains all17PASS/medium. Current canonical
-wiki HEAD was reread;the project page bytes match the original base.
-
-Section11 first-variance static phase estimate is separately7PASS/high;
-no all-order or full-target promotion. See exact source/dispatch/disposition
-in preparation.json. New canonical project-base bytes reread and unchanged.
-
-Section12 all static orders accepted9PASS/high at cba14f9. Section13 full-upper
-proof frozen at bee4b2a,first adversarial review accepted11PASS/HIGH,
-full source delivery,no required repairs. Final74page status adopts G:upper
-only. Sharp constant,novelty,Lean and final whole-paper cold read remain open.
-No public/notification permission inferred. Proposal remains local.
-
-Latest source ce11214 is78pages,after the complete DeepSeek cold read
-reported substantive concerns at b310b11. Current revision awaits renewed
-Opus/HIGH and fresh cold gates. Earlier full-upper scoped acceptance is
-historical,not clearance of the current exposition. Preserve all boundaries.
-
-Renewed primary sourcece11214 now accepted14PASS/HIGH,all required
-source delivery,no required repairs;fresh blind cold read remains NEXT.
-Keep the earlier cold report NOT CLEAR as history,not a cleared verdict.
+The diff's space-prefixed blank context lines are preserved losslessly in
+gzip. Verify compressed/decompressed hashes and the base-page hash before
+applying. The full proposed Markdown is directly readable. This local request
+supersedes the older50/54/56/59/74/78page preparation descriptions;it is not
+a canonical wiki update or a completed round-close provenance loop.

@@ -14,8 +14,13 @@ ROOT = Path(__file__).resolve().parents[2]
 REVIEW = Path(__file__).resolve().parent
 PACKET = REVIEW / "packet-v1"
 NATIVE = REVIEW / "native-v1"
-if NATIVE.exists():
-    raise SystemExit("Refusing to overwrite or restart an existing attempt")
+terminal_records = [
+    REVIEW / "cold-v1-execution.json",
+    REVIEW / "native-v1-evidence.tar.xz",
+    REVIEW / "review-summary.json",
+]
+if NATIVE.exists() or any(path.exists() for path in terminal_records):
+    raise SystemExit("Refusing to overwrite or restart a live or archived terminal attempt")
 
 subprocess.run([
     sys.executable,

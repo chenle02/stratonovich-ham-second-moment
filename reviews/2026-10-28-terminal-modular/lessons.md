@@ -21,3 +21,17 @@ Durable lessons from the two whole-paper cold reads
 
 These are project-local workflow lessons. They do not certify the current
 candidate mathematics or authorize changes to shared skills or repositories.
+
+Third cold-read lesson: giving a compressed argument its own lemma does not
+make its count checkable. When the claim depends on charging each operator
+norm change once, write the chronological partition, intermediate spaces,
+identity maps, normalized coefficient integrals and a concrete constant.
+Finite endpoint-budget checks can falsify a proposed charging rule;they do
+not replace the word-norm proof. A new HIGH scoped report cannot erase a
+fresh reader's unresolved inability to follow that proof.
+
+After terminal raw-workspace cleanup,the launcher's immutable-attempt guard
+must also check the durable execution/report/archive records. Checking only
+the removed live directory would accidentally permit restarting an archived
+attempt. Preserve the existing report and use a new source-bound round for
+actual substantive repairs.

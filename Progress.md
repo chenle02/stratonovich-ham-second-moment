@@ -2264,3 +2264,49 @@ Canonical free-form prompt verbatim,complete manuscript/bibliography inline,
 pinned cited-source texts available;no prior reports,grades,workflow history
 or checklist in reader packet. Native route probe verified actual DeepSeek
 V4-Pro and isolated file access. This is READY,not a report or cold clearance.
+
+### Third full-paper cold read returned: NOT CLEAR; explicit word count needed
+
+Fresh DeepSeek V4-Pro source da0864bc4b688ba260ab648f487623b9b2da7928,
+canonical mathematics9054ece.994.522s,exit0,finish stop,full80page blind
+manuscript/bibliography delivered;all45proofs/all formal statements match.
+HEAD held and workspace unchanged.32source/tool calls,one failed grep;
+actual completed reads include Chen current author,Chen--Hu,Chen2023,
+Crouzeix--Palencia and Balan--Conus. Requested ranges/output hashes and
+native returned contents are retained;not a full cited-proof audit.
+
+All9items adjudicated in full-upper-cold-v3/adjudication-v1.md. SUBSTANTIVE
+OPEN:the reader still cannot follow L:fixed-split's operator-word/metric/
+coefficient count;generalized weighted-measure admissibility of static
+coefficient imports in alternative candidate sections needs a direct audit;
+the auxiliary unequal-chain P:mixed argument needs explicit structure and
+an unambiguous product-identity dependency;limit uniformity needs an indexed
+trace. The reader found downstream inventory/exponents and the geometric
+tail device consistent,but that is not cold clearance. Other concerns about
+internal working-note form,unpublished source normalization,T>=1 and a
+nonoptimized constant are retained as known scope;notation flags are pending.
+
+Next bounded repair:write the chronological partition and product norm
+estimate explicitly,including every endpoint identity map,each fresh-color
+vacuum subspace,the cube measure without a factorial,the normalized vector
+Cauchy integral,and a displayed admissible C_split. Do not recycle the old
+15HIGH verdict for the rewrite or call honest confusion cosmetic. Preserve
+the full spatial class and original target. Fresh primary and cold gates
+follow actual repairs;no unchanged confidence retry. Main source/PDF are
+unchanged at this review-record checkpoint. Full goal ACTIVE,incomplete.
+
+Read-only source reconnaissance for the future lower screen is retained in
+full-upper-cold-v3/lower-source-recon.md. Existing parabolic hypercontractivity
+and Gaussian pinning covariance-tilt sources were actually inspected and
+their model/interpretation mismatches recorded. Both already exist in the
+six-repo corpus;no duplicate enqueue. No new sharp proof wave was opened.
+
+All17native/workspace archive members were read-back hash verified before
+own terminal cleanup. No review process remains live. A first bounded
+falsification check of the proposed endpoint budget passes34314exact-rational
+schedules,including33624simultaneous-endpoint cases and28314clipped cases.
+Adding insertion cuts leaves the metric product unchanged;the largest
+actual/charged ratio is1. This verifies only finite arithmetic instances,
+not a propagator/coefficient/factorial theorem. The unreviewed repair map
+records the exact common-partition product and a candidate explicit constant;
+it is NOT an adopted manuscript proof. Actual analytic rewrite is next.
