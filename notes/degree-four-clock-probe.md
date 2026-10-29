@@ -90,7 +90,7 @@ The joint spatial δ expectation at time scale r is 1/(2π r√d).
 
 The scalar clock increments have variances rδ₁,rδ₂ and covariance ro≥0.
 For a>0, apply the positive real Gamma integral to each analytic power
-(δ+iZ)^(−a), taking the right-half-plane branch. Absolute Fubini at each
+(rδ+iZ)^(−a), taking the right-half-plane branch. Absolute Fubini at each
 strictly positive real part follows by dropping the characteristic factor.
 The joint Gaussian characteristic function then gives, at operational
 scale r and θ=1,
@@ -197,7 +197,16 @@ at positive spatial Gaussian regularization. All time/Fourier exchanges are
 then absolute. Integrate each heat gap: its factor
 (1/2)∫e^(−(1+ξ²)u/2)du is the same resolvent 1/(1+ξ²) as the wave gap.
 The resulting product of four resolvents is nonnegative; remove the Gaussian
-multiplier by monotone convergence on both sides. It is integrable: the
+multiplier by monotone convergence in the resulting nonnegative Fourier
+integral. The limit on the wave side is the unmollified position integral:
+§2 already proves that identification by dominated convergence, including
+at a=0. On the Brownian side, each positive pair-mollification width ε gives
+joint spatial covariance rC_B+2εI. Its density at zero increases to
+1/(2πr√d) as ε decreases to zero. This follows directly from the eigenvalues
+of the positive matrix rC_B; the dominating limit is integrable by §5.
+Thus monotone (or dominated) convergence identifies the Brownian limit too.
+No conclusion about physical-space mollifier monotonicity is used.
+The Fourier product is integrable: the
 map from four chain positions to four chain increments is invertible,
 and the two disjoint pair differences have rank two. Thus two columns of
 its two-by-four charge matrix give independent linear momentum forms L₁,L₂.
@@ -214,15 +223,156 @@ the previously derived one-chain degree-four coefficients multiplied by
 Γ(7−2a). The pure self-pair (2,2) actual value is Γ(1−a)²/4. The actual
 (1,3) pairing 01·23 and its reversed-chain counterpart are Γ(1−a)²/8:
 the spatial factor splits into the cross-root factor min(s,t)/2 and the
-remaining factor r/2; their independent gap integrals give this product.
+remaining factor h/2, where h is the middle transition gap; their independent
+gap integrals give this product.
 No factorization of all other diagrams is presumed.
 
 The independent polygon-clipping audit checks 288 exact rational geometric
 cases against the evaluator. A separate Brownian min-time covariance
 calculation checks the same 288 determinants against the positive polynomial.
-Ninety executed numerical calibrations cover all fifteen static diagrams,
+The geometry audit shares the evaluator's root/transition extraction logic;
+its independence concerns polygon integration,not that shared graph encoding.
+The static hand/table recount and the new original-chain anchors check the
+constraint semantics separately. Ninety executed numerical calibrations cover all fifteen static diagrams,
 the one-chain positive-a cases and the stated actual factorizations. Their
 diagnostic tolerance is stated in audit.json; it is not a certified enclosure.
+
+## 6a. Exact fixed-parameter calibration family
+
+A fixed-parameter diagram admits a closed rational equality anchor whenever
+all its positively charged temporal pairs lie within one and the same
+chain. Zero-parameter pairs still carry their spatial δ constraints. For
+an edge ending at vertex e, put q_e=1+Σλ_p, where the sum is over charged
+intra-chain pairs whose interval crosses that chain edge. Every q_e≥1.
+The physical exponential time factors then split into exp(−Σq_e s_e).
+The shared-clock Gaussian average has the corresponding sum of squared
+cut charges, so the heat damping is exp(−Σq_e² u_e/2). There is no clock
+charge on the other chain. Consequently the wave and heat gap integrals
+have the identical Fourier multiplier 1/(q_e²+ξ_e²) on every edge. Apply
+the positive-width Fubini and zero-width limits just proved. This establishes
+I[λ,ν]=J[λ,ν] for this family; it is not an equality for arbitrary cross
+charges or charges on both chains.
+
+Let A,B be the sums of q_e over root edges into each pair position and C
+the sum over edges between different positions. Same-position edges affect
+the denominator product but not the spatial exponential. Integrating the
+four wave resolvents and using the six-plane-cone calculation gives
+
+    I[λ,ν]=J[λ,ν]
+      = (A+B+C)/[4(A+B)(A+C)(B+C) ∏_e q_e].                    (A)
+
+There are 129 such diagram/parameter anchors in the sixteen-point grid.
+They are generated directly on the original labelled chains, independently
+of the global-cone area and Brownian determinant evaluators. They detect
+errors of the individual integrals, not merely errors of their ratio.
+The original coarse fixed-lambda run has up to 3.06% actual relative error
+and 0.424% shared relative error against these exact values. It is retained
+as a coarse diagnostic; a near-unit ratio is not an accuracy certificate.
+
+## 6b. Nine-diagram comparison in the original covariance class
+
+This subsection uses the ORIGINAL nonzero, nonnegative, positive-definite
+homogeneous Radon covariance Γ in d=1,2,3, with 0<a<1, α+a<2, and θ>0.
+It does not replace that class by the white-space test case. All identities
+are first established at a common spatial smoothing width ε>0, choosing
+spectral multiplier exp(−ε|ξ|²). Limits are
+specified below. The shared clock and forward pair orientation are unchanged.
+
+Imported already-proved input from the canonical clock-screen proposition:
+write R(q)=∫μ(dξ)/(q²+|ξ|²) and
+
+    Q(λ)=∫ μ(dξ)/[(θ²+|ξ|²)((θ+λ)²+|ξ|²)].
+
+The actual cross-pair gap transform and its shared-clock counterpart at fixed
+λ≥0 are respectively K(λ)=(2θ+λ)Q(λ)/(2θ) and Q(λ). Here Q(0) is the
+continuous zero-parameter value. These are the TWO-POINT identities already
+derived in P:clock-copy-obstruction; their scalar partial-fraction and filter
+steps also have local Lean checks. Positivity/finiteness and the precise
+measure correspondence remain analytic inputs from that proved proposition.
+The single self-pair transform is
+
+    S(ν)=R(θ+ν)/θ².
+
+For S, integrate the first wave gap's mass r₁ to obtain 1/θ² and then use
+the wave resolvent at θ+ν on the second gap. At positive smoothing the
+Fourier/time Fubini is absolute, and the resulting resolvent expression is
+positive. Equivalently its heat expression integrates the first operational
+gap to 2/θ² and the second to 2R(θ+ν), with prefactor 1/4.
+
+First consider (2,2), pairing 01·23. The actual pure-self diagram is
+S(λ)S(ν). In the candidate the spatial averages are independent increment
+averages h_Γ(u)h_Γ(v). Its shared clock factor is the product of the two
+marginal factors times exp(−λνo), where o is the overlap of the two forward
+self intervals. Dropping this last factor bounds the candidate by
+S(λ)S(ν). At λν>0 the inequality is strict: the overlap-positive operational
+region is open and has positive volume, and all other averaged factors are
+strictly positive for Γ≠0. This proves the pure-self comparison.
+
+Next take (1,3), pairing 01·23: its first pair connects the two root vertices,
+and its second pair joins the last two vertices of the long chain. Attach
+λ to the cross pair and ν to the self pair. Translation invariance permits
+independent spatial increments after the long chain's root. Integrating the
+middle wave gap gives its mass, and the last self increment is independent
+of the roots. Temporal factors also separate. Thus the actual diagram is
+
+    I_A(λ,ν)=K(λ)S(ν).
+
+For the candidate, let the operational root times be u,v and the remaining
+long-chain gaps w,z. Its spatial average is h_Γ(u+v)h_Γ(z): the self increment
+on (v+w,v+w+z) is independent of B₁(u)−B₂(v). The clock increments are the
+forward intervals between u,v and between v+w,v+w+z. Their covariance is
+their nonnegative overlap. Dropping exp(−λνo) bounds the clock product by
+the product of its marginals. The middle heat gap contributes 2/θ²; the
+root integral is 4Q(λ) and the last self integral 2R(θ+ν). Including 1/16,
+
+    J_A(λ,ν) ≤ Q(λ)S(ν)
+               = [2θ/(2θ+λ)] I_A(λ,ν).                        (P)
+
+This is strict below I_A whenever λ>0. Swapping chain names proves the
+same assertion for (3,1), pairing 03·12, with the cross parameter attached
+to that cross pair.
+
+These factorizations for generalized Γ do not multiply two singular
+spatial measures pointwise. Work with Γ_ε first. The independent-increment
+averages are h_ε(t)=∫e^(−(t/2+ε)|ξ|²)μ(dξ). They increase to h_Γ(t).
+R_ε and Q_ε likewise increase to their finite positive spectral limits.
+All candidate integrands after clock averaging are nonnegative, so monotone
+convergence passes to their limits. On the actual side the factorizations
+hold at every positive width; the products of these resolvent limits identify
+the existing fixed-order Green–Wick limits. No pointwise monotonicity of
+Γ_ε(x) is asserted. The covariance class supplies finite R and Q, and the
+accepted fixed-order construction supplies the diagram identification.
+
+Fractionally average λ,ν with positive measure
+Γ(a)^(−2)λ^(a−1)ν^(a−1)dλdν. The self integral is finite: near zero its
+density is bounded by a constant times ν^(a−1), and at infinity R(θ+ν)
+has order ν^(α−2), integrable because α+a<2. The cross integral is finite
+by the imported two-point proposition. Tonelli therefore gives
+
+    J_self(a) < I_self(a),
+    J_A(a) ≤ J_cross(a) S_a < K_cross(a) S_a = I_A(a),          (P-a)
+
+where S_a=Γ(a)^(−1)∫₀∞ν^(a−1)S(ν)dν is the positive fractional self
+integral. The strict cross
+comparison is precisely the already-proved two-point result; its locally
+Lean-checked deductions need not be re-proved here. In the degree-one case
+α=1 it gives the explicit bound J_A(a)≤(2−2^a)I_A(a).
+
+The six one-chain diagrams (three for each empty-chain orientation) are
+exact from the fixed-pair computation in current-author §6, pp.38–41,
+before the final global symmetrization. Its physical external-horizon factor
+is 1/θ, while the operational one is 2/θ²; these cancel the source θ/2
+when the physical gap transform is recovered, leaving exactly 1/16.
+That source calculation is imported,
+not claimed as new here. Together with the pure-self diagram and the two
+asymmetric root/self diagrams above, nine of the fifteen terms now satisfy
+a shared-clock ≤ actual comparison; the three newly treated mixed terms
+are strict for positive a. Strictness at zero width follows from the limiting positive h_Γ on
+the overlap-positive region;it is not inferred by taking a limit of strict
+inequalities. This partial comparison is a candidate awaiting its own review. The remaining SIX mixed diagrams are not controlled by it.
+In particular a lower inequality for these nine terms alone does not prove
+the comparison of the full fifteen-term sum, its all-order extension, or
+the sharp constant.
 
 ## 7. Numerical result and the unresolved theorem
 
@@ -238,6 +388,15 @@ The stronger (F) screen tested sixteen pairs in {0,0.1,1,10}². It found
 no mixed-diagram negative difference exceeding eight replicate standard
 errors. Ratios slightly above one near expected equalities are retained,
 not suppressed. This is survival of a finite test, not a per-parameter proof.
+
+The original coarse fixed-lambda run and a denser run with a different
+Dirichlet density are both retained. The denser run uses eight replicates
+of2^17points and η=1/2,valid for the fixed-parameter formula (F). The129exact
+anchors reduce its maximum actual relative error to0.0456%,but its maximum
+shared relative error is1.15%. Thus this change of density improved one
+estimator while worsening the other. Neither run certifies near-equalities;
+no tolerance was loosened and no value clipped. The positive-a fractional
+experiment is a separate sampler with its own90calibrations.
 
 The still-unproved statement is that the full shared-clock degree-four
 Stratonovich sum is bounded above by the actual sum for every a∈(0,1).

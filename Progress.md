@@ -3174,3 +3174,55 @@ shuffles. No mixed negative beyond8replicateSEfound;near-equality ratiosabove1
 retained. This does NOT prove the integrated lower comparison. It remains
 open even at degree4;all-order/original-class/balanced-horizon/sharp steps
 remain further obligations. No Skorohod result or novelty claim.
+
+
+### Degree-four primary v4: below the unchanged acceptance threshold
+
+Scientific source28f6d1,canonical native Opus5.5review387.008s:all seven
+checksPASS,PASS_WITH_NOTES/MEDIUM,transport_ok=true,coverage=true,
+accepted=false. No fatal/major findings or required repairs. The HIGHgate is
+not met. Do not replace this with the earlier failed-transportHIGHoutput.
+Archive115members readback-verified;source/native events and all12texts/12PNGs
+bound. Five minor notes identify explicit real/Fourier limit detail,omitted
+fixed-lambda SEs,shared constraint-extraction code,input provenance and notation.
+
+Actual source repair is now in progress:write out the regularization limits,
+supply full per-lambda differences/SEs and root input bindings,and derive
+closed fixed-lambda calibration anchors. Initial129exact equality anchors
+expose up to3.06%actual-estimator error at the coarse large-lambda cases
+(shared up to.424%). Ratios near1alone masked this. Original lambda15probe
+and initial anchor script/output are preserved. A justified denser fixed-
+lambda Dirichlet sampler is being tested;no clipping or tolerance relaxation.
+This is a precision issue,not a counterexample to the averaged inequality.
+
+
+### New analytic successor and calibrated finite-parameter anchors (candidate)
+
+The new reduction revision supplies explicit spatial/operational zero-width
+identifications and full per-lambda difference/SEdata with input-projection
+hashes. The exact129fixed-parameter family proves equality when all charged
+pairs lie in one SAMEchain. Closed values calibrate integrals separately.
+The original coarse lambda15data and the alternative eta1/2refined17data
+are BOTHretained;the latter's shared estimate is still up to1.15%off exact
+anchors. Therefore near-equalities remain unresolved numerically,no claim of
+uniform accuracy. The positive-a fractional8*2^18run is separate.
+
+Substantive new MODELclaim awaiting review:in the ORIGINALnonzero homogeneous
+Radon covariance/d1--3class,the pure-self(2,2)diagram and the root-cross/self
+(1,3)/(3,1)diagrams have J<I forpositivea. Proof works first atspatialepsilon,
+factors independent spatial increments,and drops the nonnegative clock
+interval overlap. Imported two-point filter gives a strict factor and,at
+alpha1,the explicit2-2^abound for the asymmetric terms. Sourceone-chain6
+identities plus these3give9of15controlled terms;the remaining6mixed terms
+are still OPEN. No full sum/all-order/sharp/Skorohod theorem follows. This
+new analytic content,not just cosmetic changes,requires a fresh own review.
+
+Fresh read-only publishedChen--Hu source recon authenticatesLemma5.1(5.6)
+p2174andLemma5.3pp2183--2185:unequal-dampingUPPERcontrol and common-damping
+matching lower imply balanced lifetime concentration near(4-alpha)n/p.
+The held older TeX omits1/p;publisher contains it. Rootopened4direct source
+images,hashbound in balanced-horizon-recon/. No fractional transfer is proved.
+Currentauthor37/41/42also confirms even analytic clock orientation,which
+must not be replaced by the wiki's residual Hermitian-looking display in
+products. No source1.24or numericalconstantcorrection adopted. Both refs
+alreadyheld;no new normal queue ticket. Canonicalwiki unchanged.

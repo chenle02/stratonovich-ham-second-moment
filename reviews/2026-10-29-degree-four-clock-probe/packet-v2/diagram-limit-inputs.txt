@@ -1,0 +1,47 @@
+Imported OWNpre-proved interfaces,not new claims of this revision.
+Sourcef9303ed247b9eb7903516768dfd9b8053df5e892;both formal statements checked
+byte-identical to current canonical notes. No old reviewer report supplied.
+HypothesisH:homog and conventions are inmodel-inputs.txt. The initial-chain
+J diagrams have all spatial Green kernels and all covariance pairings,
+including self/unequal/empty chains. rho_D is the positive spatial Green--Wick
+measure on the chain time increments after space integration. nu_D is its
+exponentially damped finite version. Original fractional-time diagram values
+are the rawtime multiplier products integrated against rho_D,identified by
+P:mixed and its fixed-order cutoff/limit construction. These inputs are
+assumed as prior theorems;the new proof must identify its special diagrams
+and smoothing limits correctly,not reconstruct the entire SPDE again.
+
+\begin{proposition}[Mixed terms]\label{P:mixed}
+  Under Hypothesis~\ref{H:homog},
+  \begin{equation}\label{E:mixed-moment}
+    \E[X_m(t,x)X_n(t,x)]
+    =\begin{cases}
+      \displaystyle\sum_{D\in\Pi_k}J_{m,n,D}(t),&m+n=2k,\\
+      0,&m+n\text{ odd},
+    \end{cases}
+  \end{equation}
+  where the case $m=n=0$ equals one. In particular,
+  \begin{equation}\label{E:full-second}
+    \E u^2(t,x)=\sum_{k=0}^\infty\sum_{m=0}^{2k}
+    \sum_{D\in\Pi_k}J_{m,2k-m,D}(t).
+  \end{equation}
+  This is a convergent series of nonnegative terms.
+\end{proposition}
+
+\begin{lemma}[Positive spatial Wick-measure limit]\label{L:spatial-wick-measures}
+  Under Hypothesis~\ref{H:homog}, the finite measures
+  $\nu_{\boldsymbol\epsilon,D}$ converge weakly, as all spatial widths
+  tend to zero at arbitrary relative rates, to a finite measure $\nu_D$.
+  The locally finite measure $\rho_D=e^{\sum_l r_l}\nu_D$ satisfies
+  \[
+    \rho_D(cA)=c^{(4-\alpha)k}\rho_D(A),\qquad c>0.
+  \]
+  It gives zero mass to every face $r_l=0$ and every face
+  $\ell_i=T>0$. Consequently, for every bounded continuous $\varphi$
+  and $T_1,T_2>0$,
+  \begin{equation}\label{E:spatial-wick-limit}
+    \int_{\ell_1<T_1,\,\ell_2<T_2}\varphi\ud\rho_{\boldsymbol\epsilon,D}
+    \longrightarrow
+    \int_{\ell_1<T_1,\,\ell_2<T_2}\varphi\ud\rho_D.
+  \end{equation}
+\end{lemma}

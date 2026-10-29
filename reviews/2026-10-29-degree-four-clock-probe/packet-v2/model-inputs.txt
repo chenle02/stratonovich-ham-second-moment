@@ -1,0 +1,233 @@
+\section{Model and standing assumptions}\label{S:model}
+
+We study the hyperbolic Anderson model
+\cite{chen:author2026:time-dependency}*{(1.1)}
+\begin{equation}\label{E:HAM}
+  \frac{\partial^2 u}{\partial t^2}(t,x)=\Delta u(t,x)+\W(t,x)u(t,x),
+  \qquad u(0,x)=1,\quad \frac{\partial u}{\partial t}(0,x)=0,
+\end{equation}
+for $(t,x)\in\R_+\times\R^d$, $d\in\{1,2,3\}$, interpreted in the
+Stratonovich sense (limit of classical wave equations driven by smoothed
+noises $\W_{\epsilon,\delta}$). The noise is centered Gaussian with
+\begin{equation}\label{E:cov}
+  \operatorname{Cov}\big(\W(s,x),\W(t,y)\big)=|s-t|^{-\alpha_0}\gamma(x-y),
+  \qquad 0<\alpha_0<1,
+\end{equation}
+where $\gamma\ge0$ is nonnegative definite with spectral measure $\mu$.
+
+\begin{hypothesis}[Homogeneous covariance]\label{H:homog}
+  Let $d\in\{1,2,3\}$ and $0<\alpha_0<1$.
+  The spatial covariance is a nonnegative, even, positive-definite
+  tempered Radon measure $\Gamma$ on $\R^d$, with positive even
+  tempered Radon spectral measure $\mu$ in the convention
+  \[
+    \Gamma=\int e^{i\xi\cdot x}\mu(\ud\xi)
+    \quad\text{in the sense of tempered distributions}.
+  \]
+  The symbol $\gamma$ in~\eqref{E:cov} denotes this covariance as a
+  function when one exists, and as a distribution otherwise.
+  For every Borel set $A$ and $c>0$,
+  $\Gamma(cA)=c^{d-\alpha}\Gamma(A)$, and
+  \begin{equation}\label{E:threshold}
+    \alpha_0+\alpha<2,
+  \end{equation}
+  with $0<\alpha<d$, or $\alpha=d=1$.
+  In particular, the last case includes spatial white noise
+  $\Gamma=\delta_0$.
+\end{hypothesis}
+
+Throughout we write
+\begin{equation}\label{E:kappa}
+  \kappa:=\frac{4-\alpha-\alpha_0}{3-\alpha}\in(1,2).
+\end{equation}
+
+\paragraph{Main result and dependencies.}
+The main assertion of these notes is Theorem~\ref{T:full-upper}: the
+second moment has a finite upper growth rate at scale $t^\kappa$ for
+every covariance in Hypothesis~\ref{H:homog}. The sharp constant in
+Goal~\ref{G:sharp} is open. Theorem~\ref{T:full-upper} uses the fixed-order
+construction proved in Lemma~\ref{L:joint-fixed-order}, the Gaussian
+and complex phase estimates in Sections~\ref{S:static-phase}--\ref{S:static-all-orders},
+and the interval coefficient and inventory estimates in
+Section~\ref{S:interval-upper}. It does not use the alternative covariance
+interpolation arguments in Sections~\ref{S:higher-alpha}--\ref{S:energy-fidelity}
+as inputs. Its uniform geometric tail is proved here from scaled finite-model
+moments; the older mixed-series and crude estimates in
+Section~\ref{S:G0} are not needed for that moment-limit passage.
+The separate verification of the mild equation is proved in
+Proposition~\ref{P:mild-construction}, using the corrected
+vertexwise bound of Lemma~\ref{L:vertex-crude}. The alternative
+arguments are retained to record their separate hypotheses
+and limitations. Section~\ref{S:d1-upper} also gives explicit constants for
+$\alpha\le1$; the full-class theorem asserts a finite uniform constant,
+without giving a numerically optimized value.
+
+\paragraph{Notation and source-dependent statements.}
+The target spatial degree is $\alpha$, whereas $\chi$ denotes the degree
+of an auxiliary static covariance in
+Sections~\ref{S:static-holder}--\ref{S:energy-fidelity}.
+The coefficient power is $\beta=4-\alpha-\alpha_0$; the factorial power in
+Section~\ref{S:interval-upper} is $\nu=3-\alpha$.
+The local exponent $b=2-\alpha$ in Section~\ref{S:d1-upper} is different
+from coordinate powers $b_j$ in Section~\ref{S:three-endpoints}.
+In Section~\ref{S:higher-alpha}, $\delta=\alpha-1$ is an exponent;
+when used for temporal noise smoothing, $\delta$ is a cutoff width.
+The covariance measure $\Gamma(\ud x)$ and the Euler Gamma function
+$\Gamma(q)$ are distinguished by their arguments. The local
+$p=2-\alpha_0$ in Section~\ref{S:interval-upper} is an inventory-decay
+exponent; it is not the moment order $p$ in Conjecture~\ref{Conj:allp}.
+The unconditional first-to-second moment comparison is
+Proposition~\ref{P:Jensen}. Any numerical consequence involving the
+source's $L_*$ explicitly assumes a valid first-moment lower bound with
+that constant. No correction of its printed normalization is adopted.
+
+\paragraph{Which source statements are inputs.}
+The moment estimate uses the bounded-operator Crouzeix--Palencia
+theorem in~\eqref{E:cp-input}. The fixed-order construction is supplied
+here by Lemmas~\ref{L:spatial-wick-measures}--\ref{L:joint-fixed-order},
+using only the source's universal pairing inequality
+\cite{chen:author2026:time-dependency}*{Theorem~3.1, (3.6), pp.~14--15}
+and the direct norm bounds in Lemma~\ref{L:damped-homogeneous-norms}.
+Thus neither Theorem~4.1 nor Lemma~4.4 nor Appendix~A.1 of the source is
+an analytic construction input. The finite-width Gaussian field and
+multiple Stratonovich integral use its definitions and regularization
+conventions, with Green smoothing removed before noise smoothing.
+The three construction lemmas and their changed consumers passed a fresh
+scoped Opus5.5/HIGH review at source revision \texttt{f9303ed}. This is
+separate from the earlier quantitative reviews and from the pending
+whole-paper cold read.
+
+Proposition~\ref{P:mild-construction} proves that the resulting series
+satisfies its onefold Stratonovich mild equation, using the corrected
+vertexwise bound. It does not import the author's Section~5(ii) argument
+or (5.3)--(5.4). No uniqueness assertion is made. The uniform tail passage
+for the target-scale moment estimate is proved in
+Lemma~\ref{L:uniform-series-tail}, independently of the crude bound and
+the source's series estimate. The mixed-width and order-limit passages
+for the mild equation are supplied here as well.
+
+The first-moment formulas in Theorem~\ref{T:first} are quoted source
+statements, with the printed-normalization qualification there; they are
+not premises of the full upper theorem. Chen--Hu's static coefficient
+estimates and Chen's 2023 variational finiteness theorem are used only in
+the explicitly identified auxiliary sections. In particular, our uses of
+the latter cite Theorem~1.1, not Corollary~1.2. Thus neither a disputed
+first-moment constant nor an auxiliary static coefficient theorem enters
+the interval-field upper bound.
+
+\subsection{Recovering the quadratic-exponential bound}
+
+Write $G_\theta(s,y)=e^{-\theta s}G(s,y)$ and
+$\widehat G_s(\xi)=\sin(s|\xi|)/|\xi|$, with value $s$ at $\xi=0$.
+We use the norms in the source's (3.3)--(3.5), with the full covariance,
+but give their bounds directly. Write $\Gamma_{\mathrm E}$ for Euler's
+Gamma function in the following definitions, to distinguish it from the
+covariance measure:
+\begin{equation}\label{E:damped-norm-definitions}
+  \begin{split}
+    N_0(\theta)&=\int_0^\infty e^{-\theta s}G_s(\R^d)\ud s,\\
+    N_1(\theta)&=\frac1{\Gamma_{\mathrm E}(\alpha_0)}
+    \int_0^\infty\lambda^{\alpha_0-1}\ud\lambda
+    \int\frac{\mu(\ud\xi)}{(\theta+\lambda)^2+|\xi|^2},\\
+    N_2(\theta)^2&=\int_0^\infty\int_0^\infty
+    e^{-\theta(s+t)}|s-t|^{-\alpha_0}
+    \int\widehat G_s(\xi)\overline{\widehat G_t(\xi)}
+    \mu(\ud\xi)\ud s\ud t.
+  \end{split}
+\end{equation}
+The second expression uses the elementary wave Laplace transform
+$\int_0^\infty e^{-as}\widehat G_s(\xi)\ud s=(a^2+|\xi|^2)^{-1}$.
+The last expression is the space-time covariance quadratic form;
+in physical variables it pairs $G_\theta(s,x)$ with $G_\theta(t,y)$.
+Thus, the second Green factor in the printed source (3.5) is read with
+the independent variable $y$.
+
+\begin{lemma}[Homogeneous damped norms and temporal tails]
+  \label{L:damped-homogeneous-norms}
+  Under Hypothesis~\ref{H:homog}, the integrals in
+  \eqref{E:damped-norm-definitions} are finite for every $\theta>0$,
+  with $N_2(\theta)^2\ge0$, and
+  \[
+    N_0(\theta)=\theta^{-2},\qquad
+    N_1(\theta)=\theta^{\alpha+\alpha_0-2}N_1(1),\qquad
+    N_2(\theta)^2=\theta^{-\beta}N_2(1)^2,
+    \quad\beta=4-\alpha-\alpha_0.
+  \]
+  Let
+  \[
+    K_M(r)=\frac1{\Gamma_{\mathrm E}(\alpha_0)}
+    \int_M^\infty e^{-\lambda|r|}\lambda^{\alpha_0-1}\ud\lambda.
+  \]
+  Denote by $N_1^{(M)}(1)$ the first norm with $\lambda>M$, and by
+  $N_2^{(M)}(1)$ the second norm with $K_M(s-t)$ in place of
+  $|s-t|^{-\alpha_0}$. Then
+  \begin{equation}\label{E:damped-tail-norms}
+    N_1^{(M)}(1)\longrightarrow0,\qquad
+    N_2^{(M)}(1)\longrightarrow0\quad(M\to\infty).
+  \end{equation}
+  Spatial Gaussian smoothing, Gaussian smoothing of the Green kernel,
+  and restriction of a temporal Laplace domain do not increase these
+  corresponding full or tail norm bounds.
+\end{lemma}
+
+\begin{proof}
+  Scaling the Fourier representation of $\Gamma$ and using Fourier
+  uniqueness gives $\mu(cA)=c^\alpha\mu(A)$. Radon finiteness and
+  $\alpha>0$ then imply $\mu(\{0\})=0$. In particular,
+  $\mu(B_r)=r^\alpha V$, where $V=\mu(B_1)<\infty$.
+  Therefore, for $a>0$,
+  \[
+    \int\frac{\mu(\ud\xi)}{a^2+|\xi|^2}
+    =\alpha V a^{\alpha-2}
+    \int_0^\infty\frac{u^{\alpha-1}}{1+u^2}\ud u<\infty.
+  \]
+  The last integral is finite since $0<\alpha<2$.
+  Substitution into $N_1$ reduces its finiteness to
+  $\int_0^\infty\lambda^{\alpha_0-1}(\theta+\lambda)^{\alpha-2}
+  \ud\lambda<\infty$: the conditions at zero and infinity are
+  $\alpha_0>0$ and $\alpha+\alpha_0<2$.
+
+  For $N_2$ use
+  $|\widehat G_s(\xi)|\le\min(s,|\xi|^{-1})$.
+  On $|\xi|\le1$, absolute integration is bounded by
+  \[
+    V\int_0^\infty\int_0^\infty
+    e^{-\theta(s+t)}|s-t|^{-\alpha_0}st\ud s\ud t<\infty.
+  \]
+  On $|\xi|>1$, use
+  $\int_{|\xi|>1}|\xi|^{-2}\mu(\ud\xi)=\alpha V/(2-\alpha)$
+  and the same time integral without $st$. Both time integrals are
+  finite by splitting into $s\le t$ and $t\le s$, then using
+  $u=\min(s,t)$ and $v=|s-t|$; the only singular factor is
+  $v^{-\alpha_0}$, with $\alpha_0<1$.
+  This proves absolute integrability of the displayed spectral formula.
+  For each $\xi$, its time integral is nonnegative because the
+  temporal kernel is positive definite. Indeed, it is a positive
+  Laplace mixture of the kernels $e^{-\lambda|s-t|}$.
+  This proves $N_2(\theta)^2\ge0$.
+
+  The mass identity $G_s(\R^d)=s$ proves the formula for $N_0$.
+  In $N_1$ change $\lambda=\theta u$ and $\xi=\theta\eta$.
+  In $N_2$ change $s=u/\theta$, $t=v/\theta$ and
+  $\xi=\theta\eta$, using
+  $\widehat G_{u/\theta}(\theta\eta)=\theta^{-1}\widehat G_u(\eta)$.
+  These changes give exactly the stated powers.
+
+  The first tail in~\eqref{E:damped-tail-norms} is a tail of the
+  finite nonnegative $N_1(1)$ integral. For the second,
+  $0\le K_M(r)\le|r|^{-\alpha_0}$ and $K_M(r)\to0$ for $r\ne0$.
+  The absolute majorant just proved permits dominated convergence
+  in $(s,t,\xi)$, giving $N_2^{(M)}(1)^2\to0$.
+  The tail kernel is positive definite by the same Laplace-mixture
+  argument, so its quadratic form is nonnegative.
+
+  Spatial and Green Gaussian smoothing multiply the spectral integrals
+  by factors in $[0,1]$. For $N_1$ the integrand is nonnegative.
+  For $N_2$, first integrate in time: the quadratic form at each
+  $\xi$ is nonnegative, so its Gaussian multiplier can be removed
+  in an upper bound. Restricting a temporal Laplace domain likewise
+  decreases the first norm and its nonnegative covariance quadratic
+  form. This proves all smoothing and truncation assertions, including
+  the bounds for temporal tails.
+  This proves Lemma~\ref{L:damped-homogeneous-norms}.
+\end{proof}

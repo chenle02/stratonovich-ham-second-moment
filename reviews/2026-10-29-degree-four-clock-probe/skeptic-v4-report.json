@@ -1,0 +1,87 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "medium",
+  "source_coverage": [
+    ".review/required-sources.json lines 1-111 (read plan only; earns no read credit)",
+    "reduction.txt lines 1-249 (complete)",
+    "degree-four.py lines 1-208 (complete)",
+    "lambda-probe.py lines 1-95 (complete)",
+    "audit.py lines 1-118 (complete)",
+    "calibration-summary.json lines 1-13 (complete)",
+    "diagram-table.md lines 1-18 (complete)",
+    "lambda-summary.json lines 1-334 (complete)",
+    "numerical-summary.json lines 1-1086 (complete)",
+    "one-chain-benchmarks.json lines 1-98 (complete)",
+    "source-excerpts.txt lines 1-465 (complete)",
+    "source-map.md lines 1-20 (complete)",
+    "source-rendering.json lines 1-129 (complete)",
+    "author-37-top.png (full image)",
+    "author-37-bottom.png (full image)",
+    "author-38-top.png (full image)",
+    "author-38-bottom.png (full image)",
+    "author-39-top.png (full image)",
+    "author-39-bottom.png (full image)",
+    "author-40-top.png (full image)",
+    "author-40-bottom.png (full image)",
+    "author-41-top.png (full image)",
+    "author-41-bottom.png (full image)",
+    "author-42-top.png (full image)",
+    "author-42-bottom.png (full image)"
+  ],
+  "checks": [
+    {
+      "claim": "C1: 15 diagrams / 48 labelled cones, with both empty-chain orientations, every unequal split and every self-pair, and no extra binomial or factorial factor",
+      "verdict": "PASS",
+      "reason": "I recounted. There are 16 color strings, with C(4,m) = 1,4,6,4,1 strings for split m, and 3 pairings each, giving 48 cones. The 5 splits times 3 pair partitions give 15 diagrams. Splits (0,4) and (4,0) are both present. The (2,2) 01|23 diagram is the pure self-pair case, and self-pairs inside a chain occur across all splits. With the ordered (non-symmetrised) kernels, Wick's rule gives coefficient one for each pair partition, which matches source (2.22)/(6.1) as used on p.38-41. The sum of a diagram over its C(4,m) shuffles equals the product of independent chain-gap integrals, up to null ties, so no binomial factor belongs on a cone. In graphs(), each chain's global positions are relabelled to local labels in chain order and the pair partition is canonicalised. The asserts check 48 cones, 15 keys, C(4,m) cones per key, and one static value per key. In lambda-probe.py the fixed (lambda,nu) is indexed by the canonical local pair (canon.index(pairs[k])) before the global pairing order is used, so a parameter stays with its diagram pair label in every cone, and d1/d2 match lam/nu. The note states that 11/6 is a gap-transform sum, not a diagonal-horizon moment coefficient or a physical unequal-time correlation (lines 7-8, 209-210)."
+    },
+    {
+      "claim": "C2: the spatial factor V = area/16, the area formulas, V <= 1/4, the regularization limit, and the radial constants of (W)",
+      "verdict": "PASS",
+      "reason": "Four wave kernels of height 1/2 give 1/16. Space white noise identifies paired endpoints, leaving two free positions. A same-pair transition gives G_s(0) = 1/2. With one root bound missing, the area is 4AC or 4BC by integrating in the unbounded coordinate. With C missing it is 4AB. The rooted chain graph forces C finite whenever a pair carries no root. I recomputed the finite case from the length of [-H,H] intersected with [X-C,X+C] for |X|<L: the area is 4LC if C <= H-L, 4LC-(C-H+L)^2 in the middle range (two corner triangles of area (C-H+L)^2/2 each), and 4LH if C >= H+L. The branches agree at the boundaries. The code's min(c,H+L) form is equivalent. Every finite bound is at most 1, so V <= 4/16 = 1/4, and V > 0. Under the regularization, every vertex stays in |x| < r, the difference mollifiers have mass one, and the change of coordinates has Jacobian 1, giving the uniform bound r^2/4. Constraint boundaries are lines, so they are null. Domination comes from the same radial integral with V replaced by 1/4. Radial factors: r^3 (time Jacobian) * r^2 (space) * r^(-2a) (covariance) * e^(-r ell), so the r-integral gives Gamma(6-2a) ell^(2a-6). This is (W) and matches the code's gamma(q)*volume*(d1 d2)^(-a)/ell^q with q = 6-2a. The note states the scope restriction d = alpha = 1, Gamma = delta_0 and says the original target is unchanged; I found no hidden narrowing."
+    },
+    {
+      "claim": "C3: the charge matrix, Cauchy-Binet, the endpoint minor, the density, the clock covariance, (H) and its constants, the a = 0 endpoint, and J as an ansatz",
+      "verdict": "PASS",
+      "reason": "The code's charge rows are -1 on columns (c_i, 0..i) and +1 on columns (c_j, 0..j), which is the pair difference written in global-gap increments of the two independent paths. C_B = M diag(x,x) M^T, and Cauchy-Binet gives the sum of squared minors times x_p x_q. The code keys terms by (p mod 4, q mod 4) and never subtracts. Endpoint minor: take j < l. Column (c_j, j) has entry 1 in row 1. Column (c_l, l) has entry 0 in row 1 and 1 in row 2. So the 2x2 minor is triangular with determinant 1, and d >= x_j x_l. The pair-difference vector has covariance r C_B, so its density at 0 is 1/(2 pi r sqrt d). The clock increments have variances r delta_i and covariance r o, with o the interval overlap. Since Re = r delta > 0, absolute Fubini holds via lambda^(a-1) e^(-lambda r delta). The Gaussian characteristic function gives T_a with the cross term 2 lambda nu o, which is a joint average, not a product of separate expectations. The wave-to-heat factor (1/2) per gap gives 1/16, and with 1/(2 pi) this makes 1/(32 pi). The r^3 * r^(-1) leaves r^2 in J_g. I substituted lambda = y1/sqrt(r delta1), nu = y2/sqrt(r delta2) myself. This gives r^(-a)(delta1 delta2)^(-a/2) and the factor [2^(a/2-1) Gamma(a/2)]^2/Gamma(a)^2 = c_a^2, with Y = sqrt(2 Gamma(a/2)) and the cross term rho Y1 Y2. The r-integral with G ~ Gamma(3-a) gives (2/ell)^(3-a) Gamma(3-a) and the exponent sqrt(2G/ell) S. Every constant in (H) matches the code (ca, pref, y, radial, mixture, copied). For a = 0 the direct computation is 1/(32 pi) * 2(2/ell)^3 = 1/(2 pi ell^3), consistent with c_a -> 1. The note says explicitly that J is a candidate, not an identity, and that 6.1 is one-chain (line 112; source-map.md)."
+    },
+    {
+      "claim": "C4: the fixed-lambda formulas (F), finiteness for all 0 <= a < 1, and the Dirichlet second moment",
+      "verdict": "PASS",
+      "reason": "The integral of r^5 e^(-r(ell+L)) is Gamma(6)/(ell+L)^6. Also (1/(32 pi)) * integral of r^2 e^(-r(ell/2+L+Q/2)) = 1/(16 pi (ell/2+L+Q/2)^3). Here Q = sum of c_l^2 * gap = lambda^2 delta1 + nu^2 delta2 + 2 lambda nu o. Both match lambda-probe.py. Averaging against Gamma(a)^(-2) lambda^(a-1) nu^(a-1) returns (W). Finiteness: delta1 >= x_j, delta2 >= x_l, V <= 1/4 and ell in [1,2] give a (W) bound of order (x_j x_l)^(-a). The bound d >= x_j x_l gives an (H) bound of order (x_j x_l)^(-(1+a)/2). Both are integrable for a < 1. Second moment: the integral of f^2/p, with the mixture factor at most 1 for the independent Y and G draws, has Dirichlet exponents (x_j x_l)^(-a-eta) and x_i^(1-eta). The Dirichlet integral of a product of x_i^(alpha_i - 1) is finite iff every alpha_i > 0, which covers all face intersections. Here this means eta < 1-a. (W) needs eta < 2-2a, which is implied. (F) needs eta < 1. The code's invpdf is the exact reciprocal Dirichlet density and asserts 0 < eta < 1-a. The note says that finite variance does not make the replicate SE a certified interval (lines 174-176)."
+    },
+    {
+      "claim": "C5: the static formula (S), the 15 values summing to 11/6, the resolvent matching, the one-chain conversion and factorizations, and audit independence",
+      "verdict": "PASS",
+      "reason": "The integral of e^(-s) G_s(z) ds is e^(-|z|)/2. The three quadrant integrals are 1/((A+B)(A+C)), 1/((A+B)(B+C)) and 1/((A+C)(B+C)). Reflections double them, and 1/16 gives (A+B+C)/(4(A+B)(A+C)(B+C)). I recounted (A0,B0,C0) for all 15 diagrams by hand. The results are 1/4, 1/12, 1/8; 1/8, 1/18, 3/32; 1/4, 1/16, 1/18; 3/32, 1/18, 1/8; 1/4, 1/12, 1/8. Their sum is 132/144 + 79/144 + 53/144 = 11/6. The wave resolvent (integral of e^(-s) sin(s xi)/xi) and the heat resolvent ((1/2) integral of e^(-(1+xi^2)u/2)) both equal 1/(1+xi^2). Integrability uses two independent momentum forms from a rank-2 charge matrix. The note limits itself to the Gaussian-regularized, absolutely convergent setting. I derived the pure self-pair directly: (1/4)(integral of g e^(-g))^2 Gamma(1-a)^2 = Gamma(1-a)^2/4. For (1,3) 01|23 the cross-root factor is (1/4) times the double integral of e^(-s-u) min(s,u) |s-u|^(-a), which equals Gamma(1-a)/8, and the remaining gaps give Gamma(1-a), so the diagram is Gamma(1-a)^2/8. At a = 0 these are 1/4 and 1/8. For the Gamma(7-2a) conversion: 1/2880 * 720 = 1/4. The adjacent benchmark at a = 1/2 is pi/480, which times 120 gives pi/4, matching my Gamma(1-a)^2/4. I derived the nested value at a = 1/2 independently as 2/15, which equals (1/900)*120. audit.py clips polygons in exact rationals, replaces a missing root bound by the redundant B+C, and computes min-time covariance determinants by direct subtraction. Over 6 patterns x 48 cones it calls the actual evaluator functions (physical_volume, det_terms), giving 288 cases. The 90 calibration cases count as 30 (a = 0) + 4 x 12 (one-chain) + 4 x 3 (factorizations)."
+    },
+    {
+      "claim": "C6: fidelity to the source pages and implementation; whether the summaries match the claims",
+      "verdict": "PASS",
+      "reason": "Page 37 states Theorem 6.1 as a one-chain E S_2n(g_2n) Laplace identity. Pages 38-41 fix one D and keep the time order. Equation (6.3) on p.41 requires (u,v) in R+ x R, i.e. positive real part. The even extension gamma^0 appears at the bottom of p.41. Remark 6.3 on p.42 warns that the order restriction blocks p > 1. The source's p.41 joint E0 of a product supports the note's joint clock average. The note does not use the (6.2) prefactor or the (7.1) modulus. The heat substitution (1/2) e^(-(theta+c)^2 t/2) with theta = 1 gives the note's e^(-u/2), L and Q/2. In the summaries, one-chain shared/actual ratios are about 1 at every a, consistent with the per-D 6.1 identity. At a = 0 every shared and actual value matches the static table within about 1-2 SE. Totals at a = 0, 1/8, 1/4, 1/2, 3/4 are 0.99997, 0.97117, 0.93809, 0.86072 and 0.76992, as the note reports. My spot checks of Gamma(1-a)^2/4 and /8 against the numerical actual values agreed at a = 1/8, 1/2 and 3/4. lambda-summary's helper hash equals numerical-summary's source hash. The raw replicates and the full 90-case audit output are not in the packet and I do not claim to have read them."
+    },
+    {
+      "claim": "C7: honest research verdict; the positive-a lower comparison stays open; no overclaim",
+      "verdict": "PASS",
+      "reason": "Section 7 calls the full shared-clock <= actual inequality for a in (0,1) unproved and says that neither the experiment nor the reductions prove it. All-degree, covariance-class, horizon-transfer and sharp-constant claims are listed as further obligations. The note makes no Skorohod, source-correction, novelty, Lean or circulation claims. Ratios above 1 are kept: 1.0043 and 0.9965 in (0,10)/(10,0) cases where my resolvent argument predicts exact equality, and 1.0007 for 2:01|23 at (10,10). These indicate about 0.4% resolution at large lambda; they are not counterexamples. The reductions form a coherent, exactly normalized next model test, and the numerical sign is not presented as a proof."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "lambda-summary.json reports only ratios and empty 'below -8 SE' lists, without per-diagram difference SEs, so the sixteen-pair screen claim cannot be re-derived from the packet. Ratios of 1.0043 and 0.9965 in cases with exact fixed-lambda equality (one active pair inside a chain, resolvents (1+nu)^2+xi^2 equal on both sides) show about 0.4% numerical resolution at lambda = 10. Per-lambda differences below that level are unresolved.",
+      "The Section 6 sentence 'remove the Gaussian multiplier by monotone convergence on both sides' is monotone on the Fourier side. Identifying the epsilon -> 0 limit with the unmollified position-space integrals also needs continuity or dominated convergence of the e^(-|z|) kernels and of 1/sqrt(det(rC_B+eps I)). This is easy but not written out.",
+      "audit.py's polygon check is independent only for the area geometry. It reuses the same root/cross-transition extraction logic as physical_volume. The constraint extraction is checked independently only through the a = 0 match to (S) and by my hand recount.",
+      "audit.py reads its benchmarks and numerical run from paths outside the packet (../2026-10-29-near-static-lower/white-order-four-screen.json and refined-18.json). The packet does not show that one-chain-benchmarks.json and numerical-summary.json are byte-identical to those inputs.",
+      "There are notation clashes: r is both the radial variable and the cross-transition gap in Section 6, and Section 3 writes (delta + iZ)^(-a) where the operational real part is r*delta."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "Nothing was executed. Hashes, the 90-case audit output, the raw replicates and the pilot run are root evidence that I did not verify.",
+    "The one-chain crossing benchmarks for a > 0 come from a prior derivation outside the packet. I independently checked the adjacent case (all a) and the nested case at a = 1/2 only.",
+    "This is an AI review of exact reductions and code correspondence. It is not human verification and grants no lower-comparison, full-SPDE, sharp-constant, formal, novelty, whole-paper or circulation clearance.",
+    "The per-lambda screen and scrambled-QMC results are diagnostics only. I checked internal consistency of the reported numbers, not their statistical certification."
+  ]
+}
