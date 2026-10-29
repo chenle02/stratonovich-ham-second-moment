@@ -1,7 +1,8 @@
 # Exact scaling and a residual-driven scalar calibration
 
-Status: CANDIDATE. Independent analytic/source/type/application review is
-pending. The exact scaling below applies to the original covariance class.
+Status: accepted scoped analytic/source/type/application review, seven
+checks HIGH at source9d77f90. See
+reviews/2026-10-29-direct-event-calibration/adjudication.md. The exact scaling below applies to the original covariance class.
 The scalar growth result and weak-norm counterexample are auxiliary tests,
 not HAM lower bounds. The full sharp target remains open.
 
@@ -59,7 +60,7 @@ first on both sides, with its spatial width rescaled by R^2. No interchange
 of the large-T limit and regularization limits is used. This proves(S)--(M).
 
 The actual real-power equalities(A), kappa>1 and the physical-space power
-in(S) are intended local Lean consumers. The Gaussian/Green/series
+in(S) are locally kernel-checked Lean consumers. The Gaussian/Green/series
 identifications remain analytic inputs. In particular(W) is a fast wave
 equation, not the usual fixed-speed weak-noise equation in a support theorem.
 
@@ -68,13 +69,15 @@ equation, not the usual fixed-speed weak-noise equation in a support theorem.
 The held Chen--Deya--Song--Tindel source, "Hyperbolic Anderson model2:
 Strichartz estimates and Stratonovich setting", Theorem thm:wave-eq and
 Corollary cor:wave-eq, gives the homogeneous conditions alpha+a<1 in d1
-and alpha+a<1/2 in d2. These are stricter than our original alpha+a<2,
+and alpha+a<1/2 in d2. That source treats only d1,2, so d3 is a further
+coverage gap. These are stricter than our original alpha+a<2,
 and exclude d=alpha1 with positive a. Theorem theo:wellposedness requires
 global Sobolev initial data H^(1+k) x H^k; constant1 is not in global L2.
 Localizing data would require a growing-cutoff/finite-propagation argument.
 Its proof explicitly chooses global Picard iteration rather than patching
-small time intervals. It does not supply a restartable phase-space transfer
-bound or a spectral lower bound uniform in delta. These are source gaps,
+small time intervals. The inspected statements and proof do not supply a restartable phase-space
+transfer bound or a spectral lower bound uniform in delta. This is selected-
+passage coverage, not a whole-source audit. These are source gaps,
 not claims that no such extension can exist.
 
 There is also a normalization to retain. The time primitive of a raw scalar
@@ -141,7 +144,7 @@ After at least one full block, the component ratio is at most
 the largest column ratio, and(1+40eta)/(1-40eta)<=3. On the final fractional
 block, the off-diagonal entries of B_omega are nonnegative. Its ODE preserves
 nonnegative X, so X_1'>=-eta X_1. Also ||F_omega(tau)||<=exp(2) for tau<=1.
-As y=X_1, this gives
+The upper constant can be taken as6exp(2)<54. As y=X_1, this gives
 
     exp(-eta)y_n <= y(1) <=54 y_n.                          (R)
 
@@ -176,7 +179,10 @@ The two transfer matrices give the period monodromy
     c=cosh(sqrt2), s=sinh(sqrt2)/sqrt2,
     det M=1, tr M=2(c+s).                                  (D)
 
-All entries are positive. Its Perron eigenvalue is
+Here detM=1 uses cosh^2-sinh^2=1 at the specified c,s. That analytic
+specialization is outside the Lean monodromy identity. Its generic Lean
+parameters a,b (and the script keys a,b) mean c,s here, not the temporal
+exponent. All entries are positive. Its Perron eigenvalue is
 lambda=c+s+sqrt((c+s)^2-1)>1; the other is1/lambda. The coefficient of
 lambda^n in the first component of M^n(1,0) is
 (c-1/lambda)/(lambda-1/lambda)>0. Hence
@@ -200,7 +206,8 @@ to apply the same velocity gauge to a spatially rough noise primitive, the
 corresponding square is not automatically defined. A spatial mollification
 does not solve this consumer unless the resulting bounds are uniform as the
 cutoff is removed and compatible with the chosen delta scale. Our accepted
-projection-residual obstruction forbids simply dropping the omitted noise
+projection-residual obstruction (a named prior warning, not an input to
+Sections1--4) forbids simply dropping the omitted noise
 by covariance Loewner order. We establish no such cutoff-uniform estimate.
 
 For a direct lower bound one would need actual events A_delta with

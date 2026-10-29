@@ -37,7 +37,7 @@ Exact source implications found:
 | Initial data(1,0) | theo:wellposedness | Requires global H^(1+kappa) x H^kappa; constant1 is not in global L2. A growing cutoff/finite-propagation passage needs proof |
 | Iterated phase-space transfer maps | proof of theo:wellposedness | Explicitly uses global Picard iteration instead of patching small time intervals; does not furnish a restartable phase-space operator norm |
 | Uniform exponential stability on time scale1/delta | same theorem/proof | Arbitrary fixed T and constants c_T depending on noise norm; no such scale-uniform spectral lower bound supplied |
-| Gaussian primitive normalization | e:cov-general | Source primitive R_a=(t^(2-a)+s^(2-a)-|t-s|^(2-a))/2 has derivative covariance H(2H-1)|t-s|^-a; raw target needs division by H(2H-1) |
+| Gaussian primitive normalization | e:cov-general | Source primitive R_a=(t^(2-a)+s^(2-a)-|t-s|^(2-a))/2 has derivative covariance H(2H-1)|t-s|^-a; raw target covariance needs division by H(2H-1); the process is divided by its square root |
 
 These are failures of an unchanged theorem substitution, not impossibility
 of extending the pathwise theory. The held source's regularity exponent

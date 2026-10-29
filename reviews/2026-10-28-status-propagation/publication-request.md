@@ -1,3 +1,9 @@
+Latest private proposal: exact full-class semiclassical scaling and auxiliary
+scalar residual-growth/C0falsification, source9d77f90,7HIGH. Rough-SPDE
+phase/event lower bound and full sharp target remain open. WHITE13/original
+class9and canonical TeX/PDF unchanged. No canonical publication requested/
+enqueued. Earlier private checkpoint history is retained below.
+
 Latest private proposal: scoped admissible-parent projection/residual-discard
 obstruction, primary6HIGHefbdbd9 plus source/limit9HIGH1787644. Small-coupling
 full-mean failure only; large-time sharp target and actual residual stability

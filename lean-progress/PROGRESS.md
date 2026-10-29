@@ -127,3 +127,8 @@ Direct-event local gate: all seven actual scalar/matrix facts compile cleanly,
 exact public types/live standard axioms and fresh owned-source replay pass.
 Three current semantic controls fail on False; initial warning-only success
 preserved with unchanged public signatures. Analytic/type application pending.
+
+Direct-event close: all7actual scalar/matrix types/application passedC6of
+the seven-check HIGH review at9d77f90. Proof source unchanged. Gaussian/
+Green/series scaling and scalar ODE/Floquet/Holder inputs are informal
+reviewed proofs; rough-SPDE event/stability remains open. L0unchanged.

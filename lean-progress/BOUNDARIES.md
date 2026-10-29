@@ -65,3 +65,7 @@ algebra only. Generalized-noise/Green/common-width scaling, infinite series
 limits, scalar ODE stability and Floquet/Riccati arguments remain analytic.
 The scalar spatial degree0 case is not a positive-alpha HAM result. Rough-
 SPDE event stability/source variational identification remain entirely open.
+
+Direct-event7scalar/matrix type applications passedC6of the7HIGHreview
+at9d77f90. Actual formal proof source unchanged; source/ODE/Floquet/
+Gaussian and full rough-SPDE limitations remain as stated above.

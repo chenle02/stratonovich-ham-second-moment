@@ -6,10 +6,10 @@
 
 ## Current state
 
-- **Phase:** admissible-parent projection/residual-discard mean obstruction accepted: primary6HIGH at efbdbd9 plus exact common-noise source/limit9HIGH at1787644. This rejects a specific unconditional lower-route shortcut, not all covariance tilts or the sharp target. Earlier WHITE13/original-class9 comparison counts remain unchanged; full sharp/all-order goal is active.
+- **Phase:** exact original-class semiclassical scaling and auxiliary scalar event calibration accepted7PASS/HIGH at9d77f90. Large-time u(T) becomes delta^2Vtt=Delta V+sqrt(delta)WV with delta=T^-kappa. Scalar residual stability and a uniform-C0counterexample are checked; rough-SPDE event/stability and full sharp target remain open. Earlier WHITE13/original-class9counts unchanged.
 - **Review boundaries:** prior92page quantitative/mild source `a7e725e` passed its own19checks/HIGH. The new8check review covers the direct norms, positive spatial Wick-measure limit, arbitrary joint vertex-width construction and their consumers. It does NOT freshly audit every unchanged operator/interval proof. Exact source/delivery/adoption bindings and limitations are in `reviews/2026-10-29-fixed-order-construction/`.
-- **Current artifact:** canonical110pages/60proofs and TeX/PDF unchanged. Accepted research memos: degree-four-clock-probe.md (9original-class terms), terminal-cross-comparison.md (2additionalWHITE terms) and middle-cross-comparison.md (2additionalWHITE terms). The last has seven local scalar Lean deductions and a separate six-group/seventeen-check HIGH analytic/type review. No new TeX build or whole-paper clearance is implied. New accepted lower-route obstruction: notes/projection-residual-obstruction.md and its source-bound regularization addendum; two local scalar Lean deductions support its exact gap, not its Gaussian/wave inputs.
-- **Open targets:** full fixed-positive-alpha0 sharp p2 constant for the original covariance class; full Stratonovich aggregate and all orders; focused exposition/whole-paper clearance; companion decision4, canonical wiki provenance and novelty/circulation. Next bounded question: direct u^2 event lower bound with actual residual-field wave stability, after source/feasibility recon. The modified-mean tilt bridge(H) remains open; residual-discard and deterministic-surrogate shortcuts cannot replace it. No Skorohod development or numerical normalization repair.
+- **Current artifact:** canonical110pages/60proofs and TeX/PDF unchanged. Accepted research memos: degree-four-clock-probe.md (9original-class terms), terminal-cross-comparison.md (2additionalWHITE terms) and middle-cross-comparison.md (2additionalWHITE terms). The last has seven local scalar Lean deductions and a separate six-group/seventeen-check HIGH analytic/type review. No new TeX build or whole-paper clearance is implied. New accepted lower-route obstruction: notes/projection-residual-obstruction.md and its source-bound regularization addendum; two local scalar Lean deductions support its exact gap, not its Gaussian/wave inputs. Exact scaling/scalar proofs are now in notes/direct-event-calibration.md, with seven local real-power/matrix consumers and separate7HIGHapplication review. No canonical PDF change.
+- **Open targets:** full fixed-positive-alpha0 sharp p2 constant for the original covariance class; actual rough-SPDE event growth and phase-space iteration, full Stratonovich aggregate/all orders, focused exposition/whole-paper clearance, companion decision4, canonical wiki provenance and novelty/circulation. Next bounded task: test a physical phase-space block norm using the first Gaussian response before constructing an operator. No source constant repair, Skorohod development or density/projection shortcut.
 - **Agent8coordination:** completed at read-only source/statement/ownership level,as requested by Le. Agent8accepted our exact map;three API component fits and stronger-premise gaps are recorded in lean-progress/coordination/2026-10-29-agent8/reuse-adjudication.md. Current coefficient gate sourced5fde707,evidence successorbffd4329;historical SWE receipts remain e5e9558. Source/API/pins checked;no donor-package build/gate/companion/lease/registry transaction. Local Lean pilot is recorded separately. L0/PROPOSED and decision4unchanged.
 - **Authorization:** Le's continuing full goal includes the sharp/lower track. The current wave is the previously proposed bounded static-comparison/inequality step,with the HIGH review threshold unchanged. It does not redefine the original all-alpha0sharp target,claim novelty or promote a paper. Le now explicitly permits Lean verification;standalone local checks do not create a companion repo. Report/honor PROJECT-GOAL decision points;companion-creation decision4remains pending. No correspondence/public release authorized.
 - **Worker:** Codex/GPT author, paper-dev workflow; historical project handoff to agent #30 on 2026-10-26. Lean remains L0/PROPOSED (`lean-progress/PROGRESS.md`). Nine normal reference requests exist; new edition-custody intake is nonblocking, not source authentication.
@@ -3556,3 +3556,57 @@ gauge is not defined/controlled just by that calculation. No uniform cutoff,
 restartable phase-space, point-evaluation or event/source variational map
 proved. (H) is an exact missing event micro-contract only. WHITE13/original
 class9 and canonical110-page/60-proof TeX/PDF unchanged; sharp goal ACTIVE.
+
+
+### Direct-event gate accepted7PASS/HIGH, exact full-class scaling
+
+Native first-party Opus5.5/HIGH,310.312seconds,source9d77f90; all7checks PASS,
+no required repairs,22texts/2exact full source images, service exit0 and
+complete native read coverage. Held source/tree clean before collection;
+committed/current/workspace, contract/model/auth, provider events and ledger
+hashes verified. Native47/local52member archives read back. All7minor findings
+adjudicated; no reviewer execution/hash recomputation or full parent/publisher
+source audit is claimed. No unchanged confidence retry or hidden fallback.
+
+New full-class exact reduction:delta=T^-kappa,R=Tdelta, V(t,x)=u(Tt,Rx)in law
+satisfies delta^2Vtt=Delta V+sqrt(delta)WV with the SAMEraw covariance. Time
+and spatial noise widths scaleeta/T,epsilon/R^2; Green measures giveR and
+mild vertexdelta^-1/2. Shared covariance laws and all self/unequal/empty-chain
+terms survive fixed-T canonical width/series limits. This is not a fixed-
+speed small-noise theorem or a proof of the sharp constant.
+
+Separate scalar spatial-degree0calibration retains its residual: microscopic
+eta_delta=delta^-1sup_{|t-s|<=delta}|b(t)-b(s)|->0 gives delta logy1->1.
+Positive transfer products and the FINALfractional block are proved. For
+sqrt(delta) times a theta-Holder primitive with theta>1/2 the condition holds;
+raw Gaussian time primitives allow suchtheta for0<a<1. A triangular driver
+with evenb/sqrt(delta)->0inC0instead has a strict smaller Floquet rate,
+proved via periodic Riccati/strict Cauchy--Schwarz. It rejects a UNIFORMC0
+stability substitution, not Gaussian convergence in probability or all
+methods. Scalar spatial degree alpha=0 is not the target positive-alpha class.
+
+Seven local facts check ACTUALpositive-T real powers, Real.sqrt(delta),
+physical/mild amplitudes and2x2gauge/pulse algebra. Standard axioms, fresh
+owned replay and3current semantic controls pass; initial warning-only success
+preserved, all public signatures unchanged. Exact types/application passedC6.
+Root rechecked both owned output hashes. Kernel source and all displayed
+formula blocks unchanged after review. Final prose clarifies the source d3/
+selected-coverage gaps,constant54, analyticdet=1specialization and pulse names.
+No new companion/package/lease/registry/donor write/cluster or formal-SPDEgate.
+
+The actual source crosswalk is scoped: heldCDSTonlyd1,2,alpha+a<1or1/2,
+global Sobolev data excluding1,and global Picard not interval patching. Raw
+primitive covariance versus process normalization are distinguished. A
+spatially rough gauge square and a cutoff-uniform physical phase-space/
+point-evaluation/spectral consumer remain UNPROVED. Exact event contract(H)
+is not a proof or source-variational identification. Full sharp target ACTIVE.
+
+Read-only next-source reconnaissance found held Balan--Tudor additive-wave
+spectral norm N_t and order2H+1. These selected passages do not give the
+velocity-phase or multiplicative random-operator consumer. Next test must
+check actual position/velocity kernels and cutoff growth, not assume the
+energy phase or infer a derivative result. No new Skorohod proof or absent
+reference;9existing tickets persist. Durable lessons and scoped next plan
+saved. Private wiki proposal only; canonical110-page/60-proof TeX/PDF and
+WHITE13/original-class9unchanged. No normalization repair, novelty or
+circulation clearance.
