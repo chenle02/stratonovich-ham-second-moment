@@ -383,7 +383,7 @@ kernels are measures; for spatial white noise the covariance is a delta
 measure. Integrals in~\eqref{E:mixed-diagram} use the generalized-kernel
 and regularization conventions of the source, not pointwise values of
 these measures; see~\cite{chen:author2026:time-dependency}*{Remark~2.3,
-pp.~13--14, and Theorem~4.1}.
+p.~11, the Green regularization on pp.~13--14, and Theorem~4.1}.
 
 \begin{proposition}[Mixed terms]\label{P:mixed}
   Under Hypothesis~\ref{H:homog},
@@ -4237,9 +4237,9 @@ establish Goal~\ref{G:upper}.
 We now seek all static Duhamel orders, retaining the full spatial
 covariance class of Section~\ref{S:static-phase}. The temporal
 covariance is not included in this section.
-\myCmts{The expanded operator argument passed renewed scoped correctness
-review. Static estimates alone do not identify the evolution for
-overlapping intervals; that step is treated in the next section.}
+\myCmts{The phase estimates and finite-word cutoff lemma passed scoped
+correctness review. Static estimates alone do not identify the evolution
+for overlapping intervals; that step is treated in the next section.}
 
 We use one external operator theorem. From Crouzeix--Palencia
 \cite{crouzeix.palencia:source2017:numerical}*{author preprint v1,
@@ -4808,10 +4808,9 @@ for that evolution.
 \section{Interval fields and the full upper bound}
 \label{S:interval-upper}
 
-\myCmts{The preceding chronological-word version passed scoped independent
-correctness review. A fourth cold reader requested explicit parameter choices
-and finite-word/source bookkeeping. These clarifications are in progress and
-need renewed review. Whole-paper cold clearance and the sharp constant
+\myCmts{The explicit-justification revision passed scoped independent
+correctness review at high confidence, including the finite-word and
+source interfaces. Whole-paper cold clearance and the sharp constant
 remain open.}
 
 Write
@@ -5583,7 +5582,9 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
   If their weights are $m_i$ and $c_i$, then
   $2m_i+c_i\le3(m_i+c_i)$.
   Higher degree $l$ has at most $2l+1\le3^l$ splits.
-  Thus, summing the split choices costs only a constant per total order,
+  This is the same split-counting factor already absorbed into $C^k$
+  above, not a second charge. Thus, summing the split choices costs
+  only a constant per total order,
   and the singleton weight is the sum of the two types in the table.
   Substituting $h_i\le LT/i$ and $\lambda=k/T$ therefore extracts
   $C^kR_\alpha^kT^{\beta k}$, leaving $v_i$ at $k_i=1$ and
@@ -5869,6 +5870,15 @@ on the empty tuple. This definition introduces no kernel symmetrization.
   from $(f_T,0)$ at time $T$ on $B_1$ with the constant-data model
   $u_{J,\epsilon}$.
   This identity can be taken in Gaussian $L^2$ term by term.
+  At fixed $J,\epsilon$, each finite-order terminal integral is
+  continuous in $x$ as an $L^2(\Omega)$ vector: write its Green
+  variables as displacements from $x$, and use continuity of
+  $\Gamma_\epsilon$ in its mixed Wick moments. Bounded covariance
+  products and the finite terminal Green mass permit dominated
+  convergence. These measurable representatives identify the
+  $L^2(\Omega;L^2_x)$ position on $B_1$ with the same pointwise
+  constant-data terms. The summable bound below passes this identity
+  to their series.
   At finite $J,\epsilon$, pointwise convergence for constant data follows
   from the bound
   $\sqrt{(2n-1)!!}\,v_{\max}^{n/2}T^{2n}/(2n)!$
@@ -6061,9 +6071,8 @@ on the empty tuple. This definition introduces no kernel symmetrization.
 
 \myCmts{Theorem~\ref{T:full-upper} establishes the unchanged full upper
 goal for every admissible dimension and homogeneous covariance.
-The preceding chronological-word revision passed scoped correctness review.
-The next cold reader's explicit-justification repairs are in progress;
-fresh primary and whole-paper review are still required.
+The explicit-justification revision passed scoped correctness review.
+A fresh whole-paper cold read remains required.
 The earlier explicit bounds for $0<\alpha\le1$ remain available.
 The sharp constant and final whole-paper cold read remain open.}
 

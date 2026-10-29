@@ -8,14 +8,15 @@ t^{(4−α−α₀)/(3−α)} and the sharp p = 2 constant, building on X. Chen,
 
 **Status (2026-10-29):** the full target-scale upper bound is written for the
 original covariance class in dimensions one, two and three, and has passed
-source-bound cross-family correctness review. The final whole-paper cold
+fresh 17-check source-bound correctness review at high confidence. The final whole-paper cold
 read remains open. The sharp second-moment constant is unproved, and the
 private Lean companion has not been created. See `Progress.md` for exact
 review scope, source qualifications and remaining gates.
 
-The current [86-page notes](notes/notes_stratonovich_ham_second_moment.pdf)
-state the upper bound in Theorem 13.8 on page 81. Resume from `HANDOFF.md`;
-the next step is the fresh blind read of the final proof bytes.
+The current [89-page notes](notes/notes_stratonovich_ham_second_moment.pdf)
+state the upper bound in Theorem 13.8 on page 84. Resume from `HANDOFF.md`;
+the next step is a fresh blind read of the repaired final proof bytes. The
+four earlier cold reports remain NOT CLEAR for their respective sources.
 
 ## Start here
 
