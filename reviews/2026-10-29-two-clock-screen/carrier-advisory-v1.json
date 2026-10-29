@@ -1,0 +1,64 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    ".review/required-sources.json lines 1-77 (read-only plan, no read credit)",
+    "images.txt lines 1-15 (complete)",
+    "author-37-top.png (complete image, one direct Read)",
+    "author-37-bottom.png (complete image, one direct Read)",
+    "author-38-top.png (complete image, one direct Read)",
+    "author-38-bottom.png (complete image, one direct Read)",
+    "author-39-top.png (complete image, one direct Read)",
+    "author-39-bottom.png (complete image, one direct Read)",
+    "author-40-top.png (complete image, one direct Read)",
+    "author-40-bottom.png (complete image, one direct Read)",
+    "author-41-top.png (complete image, one direct Read)",
+    "author-41-bottom.png (complete image, one direct Read)",
+    "author-42-top.png (complete image, one direct Read)",
+    "author-42-bottom.png (complete image, one direct Read)"
+  ],
+  "checks": [
+    {
+      "claim": "CARRIER_ONLY: images.txt lists exactly the 12 required PNGs with SHA-256 values that match the required-sources plan",
+      "verdict": "PASS",
+      "reason": "I compared all 12 filename and hash pairs in images.txt lines 3-14 with the sha256 fields in .review/required-sources.json, and they match character for character. I did not compute any hashes from the image bytes. The root verifies the native bytes separately."
+    },
+    {
+      "claim": "CARRIER_ONLY: every one of the 12 PNGs was delivered as a native image and could be read",
+      "verdict": "PASS",
+      "reason": "Each of the 12 direct Reads, using only file_path, returned a rendered image. None failed, came back blank or was corrupted."
+    },
+    {
+      "claim": "CARRIER_ONLY: the body text, displayed formulas, subscripts and superscripts are legible at the delivered resolution",
+      "verdict": "PASS",
+      "reason": "I could read the running heads (HYPERBOLIC ANDERSON EQUATION), the page numbers 37-42, the equation tags (5.7), (5.8), (6.1), (6.2), (6.3), (7.1) and (7.2), and the theorem, remark and proof headings. Fine detail was also clear: alpha_0 exponents, the [0,t]^{2n}_< subscripts, lambda_{j,k}^{1-alpha_0}, the sigma(k) indices and the blue cross-reference numbers."
+    },
+    {
+      "claim": "CARRIER_ONLY: the top and bottom windows of each page overlap so that no content is lost at the cut",
+      "verdict": "PASS",
+      "reason": "On every page, the lines cut at the lower edge of the top window appear in full near the top of the bottom window. Page 37: the Section 6 opening paragraph. Page 38: the line defining q_l and the formula for c_l. Page 39: the line after Multiplying the factor. Page 40: the subscript under the lambda-product. Page 41: the subscript under the (j,k) product. Page 42: equation (7.1). The overlap behaves as images.txt describes."
+    },
+    {
+      "claim": "CARRIER_ONLY: the bottom windows reach the end of the text on each page",
+      "verdict": "PASS",
+      "reason": "All six bottom windows end in a band of blank page, about 150-250 px. The last visible items are: the parabolic-case display (p.37), the line after (6.2) we have (p.38), the dx_1...x_{2n} display (p.39), the sum identity for beta (p.40), the sigma-permutation identity (p.41), and the definition of F_d (p.42). No text is cut off at a lower edge."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Some lines are clipped at the window edges: the q_l line at the top of author-38-bottom.png, the lower half of Multiplying the factor at the bottom of author-39-top.png, the subscripts at the bottom of author-40-top.png and author-41-top.png, and (7.1) at the bottom of author-42-top.png. Each clipped line appears in full in the matching overlap window, so nothing is lost. A reader needs both windows of a page to see a clipped line whole.",
+      "images.txt is written with run-together words (for example ALL12PNGs and 870pixelwindows). It can still be understood, but the stated window geometry of 870 px windows, 140 px overlap and 1600 scaled px is my reading of that wording. I did not measure the pixels."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is a check of the image carrier and its legibility only. It is not science, not a proof check, not a mathematical vote and not clearance to circulate. I did not check any mathematics, constants or cross-references, and nothing here certifies the correctness of the displayed content.",
+    "I did not compute byte-level SHA-256 integrity, file sizes or pixel dimensions. I only compared the hash text in images.txt with the plan. The root verifies the native bytes separately.",
+    "I read each image once as delivered by the harness. I cannot tell whether the harness downscaled the images before display. Legibility was judged at the resolution I received.",
+    "This review covers only source pages 37-42, the window pairs in the packet. It says nothing about the rest of the document.",
+    "This is an AI review, not human verification or a novelty audit."
+  ]
+}

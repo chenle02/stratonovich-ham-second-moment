@@ -3110,3 +3110,9 @@ must precede science. The scopedC1--C7contract covers the two new proofs.
 lambda-integral warning retained. Substitutionlambda=t^8removed endpoint
 singularity without loosening tolerance;refined run treats warnings as errors.
 Numeric probes remain finite diagnostics,not proof of the full Radon class.
+
+Fresh12image native carrier completed55.772s:exact delivery,legibility and
+valid advisory JSON,accepted=trueat CARRIER-ONLYscope. Preparation guard
+returns CARRIER-READYfor this exactnewcohort. Its math scope isNONE;fresh
+C1--C7scientific review and OWNsource ledger still required. Carrier archive
+members individually readback verified. No scientific verdict exists yet.
