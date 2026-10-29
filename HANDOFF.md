@@ -1,107 +1,122 @@
-Last updated: 2026-10-29 17:45 UTC
+Last updated: 2026-10-29 19:21 UTC
 
-Original full upper/sharp goal ACTIVE;degree-four9term partial comparison reviewed.
+Originalfullupper/sharpgoalACTIVE;white11vsoriginalclass9partialcomparisonsreviewed.
 
 ## ⏭ Next session: where to stand and what to do
 
-Prove or falsify an INTEGRATEDcomparison for the first of the remaining six
-mixed degree-four diagrams:in white1D,(1,3)03|12(zero-based labels),the
-terminal cross pair plus earlier self pair. Read the accepted research memo
-notes/degree-four-clock-probe.md,its adjudication-v5and next-step.md first.
+Validate the UNREVIEWED middle-cross/self route in
+reviews/2026-10-29-terminal-cross/successor-middle/CANDIDATE.md. The target
+is WHITE13:02|13and31mirror,not the finished terminal-cross diagram.
+First verify its rational actualIand heat-bridge/survival-envelope Mformula
+against exactlambda0anchors,then formalize the ACTUALtwo-root scalarconsumer
+with its domains/denominators. The exact300positiveINTEGERcoefficient screen
+is promising but NOTyet a kernel or model proof. No13termcountisaccepted.
 
-The15diagram/48cone table and9term original-class comparison are now DONE
-at their own8PASS/HIGHgate. Do not repeat their derivation/review or stop at
-that partial count. Six terms/fullsum/allorder/physical-time sharpconstant
-remainOPEN. A stronger overlap-dropped candidate for these six terms survives
-finite tests in successor-probe/,but is UNREVIEWEDand unproved;it is the
-next bounded hypothesis,not an adopted result or a full SPDE theorem.
+The terminal13:03|12/31:01|23result is now DONEat6PASS/HIGHwithfive local
+Leaninputs and exactapplication check. WHITEcount11of15;ORIGINALgeneral
+classcount9of15. Fourwhite/sixgeneral,fullsum/allorder/sharp remainOPEN.
+Do not re-derive/re-review finished9/11comparisons or shrink the globalgoal.
 
 ## Pre-flight checks
 
-1. Progress.md is authority. New scientific sourced016a34993c9bf2cfbfeb29eb29e61821c53b41a,
-   actual native Opus5.5/HIGH517.097s,8PASS,no required repairs,accepted=true,
-   coverage=true,complete19texts/CSVs+12exact PNGs. Substantive adoption
-   827c92a16030ceaaa22baf1946ef00b131dfb9b0pushed/local-origin-<HUB> parity.
-2. New exact W/H/F/S/Aformulas,finite second-moment sampling,andSection6b's
-   three NEWstrictmixed comparisons are reviewed. Six one-chain equalities
-   are explicitly imported fromcurrentauthorfixedDpp38--41,not new results.
-   OriginalGammaRadon/d1--3class,alpha+a<2retained for the9termcomparison.
-3. New asymmetric bound:atfixedlambda,J_A<=2theta/(2theta+lambda)*I_A;
-   afterfractionalaveraging,alpha1givesJ_A<=(2-2^a)I_A. Pure-self22andboth
-   root/self13/31are strict forpositivea. The other SIXterms are uncontrolled.
-4. Final memo status/scope and explicit candidate/zero-width scaling clarified
-   per reviewer. Tagged formulas unchanged;exact note/PDF bindings are in
-   degree-four-clock-probe/final-status-binding.json. Main canonical notes
-   STILL110pages/60proofs,ENTIRELYUNCHANGEDduring this round.
+1. ReadProgress.md,terminal-crossadjudication-v1andfinal-status-binding.
+   Source6475ea0c8a89ccc6e50578c35215e21b03dc0878,actualOpus5.5/HIGH280.956s,
+   all6PASS,no requiredrepairs,accepted=true,coverage=true.24texts/CSVs+
+   12exactPNGdelivery andnative/source/contract/ledger hashesbound. Adoption
+   703ff1e9206ddd2531279af31443e59fc377615eis pushed/synced local-origin-<HUB>.
+2. Acceptedwhite13terminal-cross03|12andmirror31:01|23:J<=Jplus<Ifor
+   crosslambda>0,selfnu>=0;fractionalstrictalla in(0,1),allcommontheta>0.
+   In31the canonicalfirstpair01isSELFnuandsecond23isCROSSlambda;swap.
+   Whitecount11,generalcount9. Noallorder/fullsharp/circulationclearance.
+3. The analytic positiveexponentialmixture givesJplus<=U;five localLean
+   statementspolynomialidentity/positivity,rate,expconvexityandACTUALclosed
+   U<Iconsumer compile/replay withstandard3axioms. Formalproofsource matches
+   frozen science. The integral/modelidentifications remaininformal proofs.
+   TheF0andrate-to-closedUidentities are outside the formalstatement,checked
+   analytically. The type/applicationcheck isC5ofthesix-groupreview,not five
+   separate reviews. No privatepackage/Comparator/fullMathlibrebuildclaimed.
+4. Fouroriginal semanticFalsecontrols were delivered. TwoDEFINITION-level
+   postreviewcontrols(wrongheatprefactorandinvalidstrictendpoint)alsofailon
+   Falsewith importsresolved,rootexecutedonly;reviewer didNOTreadthem.
+   FALSE-CONTROL-MAPdocumentsb1,c7,root7/5andU285/307328vsI816/307328.
+   Namespacequalification/redundanttacticfailures preserved;no statementweakened.
+5. Newnotehash bd52924291343642f6b4ef3dd3bf4b84fb98b76ab17bfec6d0440d6e847a38c2.
+   Canonical110page/60proofTeX/PDF ENTIRELYUNCHANGED:
    TeX58b092b258d4f363f8bfa0a02dcf492dcb9c13e794dbcab440bf7b0529b53b7d;
    PDFb552a051874ac18920fd32610318404015673e50b1b035f6793bff29618c7e30.
-5. Earlier degree-four source28f6d1had7PASS/MEDIUM,accepted=false. Native2
-   had favorableHIGHtext but driver143/missingreceipt and is NOTa review.
-   Preflight1joined filenames and launch3PATHfailures preserved. Do not
-   substitute them for actual accepted v5. Two reviewer-reason textual slips
-   are explicitly unadopted;exact source formulas govern.
-6. Both samplers and129exactanchors retained:coarsefixedlambda actualerror
-   up to3.06%,alternative-densityshared up to1.15%. Near1ratios alone hide
-   errors. Ninety fractional calibrations/288rational geometry+288determinant
-   controls are finite diagnostics,not proof. No clipping or certifiedSEs.
-7. Separate UNREVIEWEDsix-term successor:drop positive clock overlap to
-   enlarge J.96fixedlambda+24fractionaldiagram tests survive;fractional
-   aggregate ratios .92910,.84577,.62798,.32994. Actual estimates match the
-   original evaluator on identical draws. This was NOTcovered by v5and does
-   not complete the15terms. It contains only finite probes,not a theorem.
-8. PublishedChen--Hu2174/2183--2185renders authenticated:Lemma5.3uses an
-   unequal-dampingUPPERlaw to force lifetimes near(4-alpha)n/p. OldTeX
-   omitted1/p;publication retains it. This is future-transfer RECON,not an
-   imported fractional theorem or numerical/source1.24correction.
-9. Three old standalone Lean support steps remain locally checked/replayed,
-   standardaxioms,4HIGHtype/applicationreview at86de3d8. New scalar filter
-   use reuses that scope;new Brownian/diagram identities are informal proofs.
-   No new companion,package,lease,registry,donor writes,Slurm or duplicategate.
-10. No reviewer or numerical process remains live.53member accepted archive
-    and115member oldarchive readback andCOMMITTEDblobverified before removing
-    ONLYowned terminal rawtrees. All successor/source payloads committed and
-    checked. PRIVATEwiki proposal refreshed/patch-applied in isolated temp;
-    canonicalwiki unchanged. Nine existingref tickets,no newabsentref.
+   No gratuitousPDFrebuild or retroactivewhole-paperclearance.
+6. Terminal-crossnative60memberarchive andlocalLean52memberarchive readback/
+   COMMITTEDblobverified before ONLYowned terminalrawcopies were removed.
+   No reviewer/numericalprocessalive. Allmiddlecandidatepayloadscommitted,
+   not externalWIP. Earlier9term8HIGH/7MED/failedtransports remain scoped
+   in their own degree-fourdirectory;do not substitute favorablefailedtext.
+7. Middle successor is UNREVIEWED:actualI_mid,Gaussianbridge/survivalenvelope
+   andtwo-rootrationalparameterization. Its shiftednumerator has300positive
+   INTEGERcoefficients,all ydegrees>=1,maxx19/y15. Actualrootconsumer and
+   modelcorrespondence unverified. Root-shifterasure has a PROVISIONALclosed
+   overshoot atb1,c11/10;desiredJ<=Iisnotrefuted. Do not copy the terminal
+   component's positivedecayrate:the evencomponent has zeroinitialhazard.
+8. Agent8freshresolved<MACHINE>/n8;FYIffe3f792af2dqueued(notdeliveredclaim)with
+   6475source/pins/read-onlycacheownership. No newdonorwrite,package,lease,
+   registry orcluster gate. CompanionL0remainsPROPOSED,decision4unchanged.
+   Re-resolve#8andwhoami before future messages,not rememberedtransportIDs.
+9. Privatewiki proposal exactpatch/frontmatter/link reconstructionchecked;
+   canonicalunchanged. Nineexistingref tickets,no newlyfoundabsentref.
+   Publishedstaticlifetime/clockorientationwarningspersist. Originalsource
+   numerical/variationalnormalizationhasNOadopted intendedcorrection.
 
 ## Concrete deliverables for the next session
 
-- Use W/H/Fto compare white13terminal-cross03|12after appropriate averaging.
-  Spatial increments are dependent here;the factorization for01|23does not
-  apply. The other remaining cases are13:02|13;31:01|23,02|13;
-  and22:02|13,03|12. Keep their place in the full Stratonovich sum explicit.
-- Test/prove the stronger overlap-dropped bound only with its actual measure
-  and normalization. A failed pointwise/conditionalbound does not decide an
-  averaged comparison. Do not infer a theorem from finite surviving tests.
-- Keep sourceanalyticgamma0 orientation. The full-square even extension has
-  sgn(time difference)on BOTHreal/imaginary differences;the wiki's residual
-  Hermitian-looking display is not interchangeable in products. Never replace
-  this by the modulus7.1or a positive parabolic Hamiltonian without proof.
-- A full degree4comparison still needs an all-order route and an original-
-  class/sharp-rate/balanced-horizon transfer. PublishedLemma5.3shows the exact
-  unequal-damping obligation. Do not assume the missing analyticupperlaw.
-- Preserve reviewed proof scope,explicit model inputs of reused Lean lemmas,
-  HIGHgate and source fidelity. No unchanged confidence retry. New analytic
-  content gets its own frozen source-bound primary;circulation needs a new
-  whole-paper cold read after actual manuscript repair/promotion.
+- Independently verify middleactual andheatbridge identities,including all
+  1/16/1/32factors. CheckasymmetricsurvivalS_As<=S_A,1/2withitspositive
+  integral representation. Keep the rootshift;the maximum-at-zero shortcut
+  has a provisional rationalovershoot. This is a namedroutewarning,not a
+  fullconjecturecounterexample.
+- Checkthe closedM_b(a;A)Gamma/bridge/triple-Lorentzian integrations andthe
+  divided-difference cancellation atA=1/2. Do not integrate signedpieces
+  across a pole without retaining cancellation/finiteness.
+- Forb>=1,c>1,verifyD=sqrt(b^2+c^2-1),E=sqrt(b^2+1),Z=b+E,T=(D+c)/(b+1)
+  andall inverse/rational-domain identities. The screenusesZ=2+x,T=1+y;
+  its300coefficients are NOTa proof of the actualconsumer until linked.
+- Use the same pinned localLeanruntime/read-onlycache withownedoutputs;
+  compilelocallyfirst,preservefailures,actualtypes/standardaxioms,meaningful
+  controls and freshownedreplay. No newrepo/package/lease/registry/Slurm.
+- Freezea coherent middleproofandobtain its OWNsource/type/applicationgate.
+  Whitewouldthen13ifvalid,butnothinghereadopts thatcount. Twofullycross22
+  terms,originalclass extension,allorders,balancedhorizonsandsharp stillfollow.
+  Any materialBCWidea is forLe;noSkorohoddevelopment here.
 
 ## Success criteria for the immediate next step
 
-One mathematically justified integrated comparison for an uncontrolled
-mixed diagram,or a precisely scoped obstruction with independent verification.
-No full-sum claim until all remaining terms or their aggregate are controlled.
-Numerics may guide or kill a named shortcut,not prove the sharp constant.
+A fullychecked actualmiddle-root scalarconsumer and complete analyticbridge/
+survival comparison with correct normalization,or a preciselyscoped falsifying
+obstruction. Newclaimsneedtheir owncross-family/sourcegate. No13or15term
+claim from a symbolicpositivecoefficientlist or finiteprobes alone.
 
 ## Anti-success criteria
 
-Do not call9of15a proof for the fullsum. Do not repeat completed tables,
-9termproofs or old scalar corollaries. Do not discard spatial dependence,
-self-pairs,unequal/empty chains or horizon-shift factors. No scope switch to
-Riesz/densities or an independent-clock/modulus substitute. No ratio-only
-accuracy claims or confidence upgrades for failed/medium transports. No
-Skorohod development,All.bib/sibling/source PDF edits,HPC,companion creation,
-public release,source-author contact or intended normalization correction.
+No11general-classor13whiteclaim fromcurrentacceptedresults. No source/type
+hypothesis mismatch whenreusing terminalrate/convexitylemmas. No rootshift,
+spatialdependence,self-pair orpairlabeldrop. No fullsum/allorder/sharpclaim
+from loworderdiagrams. No testsclaimedreviewerexecuted or postreviewcontrols
+claimedseen. No actualprivatepackage/Comparator/formalSPDEclaim fromlocal
+sourcechecks. No source1.24/whitevariationalconstantcorrection,publicrelease,
+All.bib/sibling/sourcePDFedit,HPC orunauthorizedcorrespondence.
 
 ## What the previous sessions produced
+
+Latestcheckpoint2026-10-29:terminal-cross/selfWHITE13:03|12and31:01|23
+accepted6PASS/HIGH280.956s,source6475ea0,adoption703ff1e. White11of15,
+originalclass9of15. PositiveCMexponentialmixture kernelbound plus47term
+scalarconsumer;five localLeanproofs/replay/standardaxioms,C5typeapplication
+review. FourFalsecontrolsseen+twoactualconsumerpostreviewcontrolsrootonly.
+All5minorfindingsadjudicated;taggedformulas/Leanbytesunchanged. Native60/
+local52archivesverifiedcommittedbeforeowncleanup. Canonical110pagePDFand
+all60proofsunchanged;newproofinMarkdown. Agent8FYIffe3f792af2dqueued;
+privatewiki only. UNREVIEWEDmiddleheatbridge/survival300coefficientroute
+savedasnextstep,no13claim. Originalfullsharp/allorder/circulationOPEN.
+
+
 
 Latest checkpoint2026-10-29:complete degree-four15diagram/48cone exact
 reductions and original-class9term partial comparison accepted8PASS/HIGH,
@@ -548,21 +563,19 @@ Latest checkpoints:
 
 ## Repo & git state at handoff
 
-Latest substantive adoption827c92a16030ceaaa22baf1946ef00b131dfb9b0pushed and
-synchronized local/origin/<HUB>,clean0/0before this dedicated HANDOFF-only
-successor. Scientific freeze d016a34993c9bf2cfbfeb29eb29e61821c53b41a.
-Method memo,new native proof review,all probes/controls/source images,
-input/projection/final bindings and PRIVATEwiki patch are committed.
+Latestsubstantiveadoption703ff1e9206ddd2531279af31443e59fc377615epushedand
+synchronizedlocal/origin/<HUB>,clean0/0beforethisdedicatedHANDOFF-only
+successor. Scientificfreeze6475ea0c8a89ccc6e50578c35215e21b03dc0878.
+Newterminalproof,Leanmodule/evidence,actual6HIGHreport,controls,allmiddle
+workingpayloadsandPRIVATEwikipatchcommitted. MainTeX/PDFunchanged.
 
-New native53member and old115member archives checked against committed
-blobs before owned terminal native/launch/source/probe rawcopies were removed.
-No current math or review WIP needs an external workspace. The separate old
-Lean local-execution snapshots remain at
+Native60/local52archivescheckedagainstcommittedblobsbeforeterminalraw
+native/launch/compile/audit/control/middlecopiesremoved. No math/reviewWIP
+needsanexternaldirectory. The oldclock-filterlocalrawsnapshotsremainat
 ../../../../.local/state/Le-AI-Lab/stratonovich-clock-filter-local-raw-v1;
-all portable Lean evidence/source/replay/control records are already committed.
-Related-package pins/owners remain in lean-progress/coordination/2026-10-29-agent8/;
-no new package operation was made in this round. Revalidate current fleet
-addresses/checkouts before future use instead of assuming historical HEADs.
+itsportableevidenceandproofsourcealreadycommitted. Relatedpackageownership/
+pinsinlean-progress/coordination/2026-10-29-agent8/;no donorcheckoutmutated.
+Revalidatecurrentfleetaddresses/checkoutsbeforefutureuse.
 
 ## Operating notes
 
@@ -645,26 +658,33 @@ contains the9termcomparison not yet integrated into the canonical PDF.
 Do not rebuild/alter that PDF merely to refresh its timestamp. Its source
 and all60proofs are unchanged in this round.
 
+
+Newterminalnotereviewexplicitlychecked5Leanpublictypesasinputs,leavingthe
+physical/clock/positive-mixtureidentificationsinformal. Do not equate a
+compilerreceiptwith the modelapplication. Thepositive47termconsumerincludes
+itsdenominatorsandsqrt. SourceA=scomponentcaseandlambda0endpointareexplicit.
+Tinycomponentquadraturefailedrelativeprecisionat~1e-261;factoringanexact
+commonexponentialfixeditwithoutloosening1e-45. Bothscripts/driversretained.
+The terminalproofisnotes/terminal-cross-comparison.md,notinthecanonicalPDF.
+
 ## Risks to monitor
 
-1. Six mixed degree-four terms/fullsum,allorder,original sharpconstant and
-   balanced-horizon transfer remainOPEN. Nine controlled terms are a partial
-   model advance,not completion. Original covariance/dimension scope persists.
-2. Original variational/source numerical normalization has no adopted intended
-   correction. No source1.24or white-corollary value is repaired here.
-3. Analytic oriented complex-clock products differ from Hermitian/modulus
-   kernels at overlapping pairs. Do not inherit a parabolic LDP by renaming.
-4. Chain-gap transforms,auxiliary cutoffs and physical unequal-time moments
-   differ. Published lifetime proof needs a sharp unequal-dampingupper law.
-5. Exact anchors revealed individual errors hidden by ratios;changing density
-   can worsen one estimator. QMCSEis diagnostic,not a certified enclosure.
-6. Keep actual7MED/failed transports separate from8HIGHaccepted source. Source
-   packet/receipt/model/coverage/final bindings are scope-specific;no same-source
-   confidence fishing. Imported old Lean claims do not formalize new SPDE facts.
-7. Skorohod remainsBCW's. All new controlled mixed terms contain self-pairs;
-   any material cross-only/all-order idea is forLe,not development here.
-8. PRIVATEwiki/reference intake is not canonical publication or source custody
-   clearance. All7older whole-paper cold reports remain NOT CLEAR;novelty,
-   human/circulation and privatecompanion-creation gates remain separate.
-9. Full original goal ACTIVE. Preserve own-path atomic commits,push/<HUB>
-   parity and honest failed-route/source-boundary records.
+1. White11vsoriginalclass9are DIFFERENTscopes. Fourwhite/sixgeneral,
+   fullsum/allorder/sharpconstant andbalanced-horizontransfer remainOPEN.
+2. The middle300termrouteisUNREVIEWED,not13termproof. Kernelpositivitymust
+   connecttoactualrootconsumerandmodelvariables. Initialevencomponenthazard
+   zero preventsblindreuseofterminalpositivedecayrate.
+3. Orientedanalyticclockproducts differfrommodulus/Hermitian substitutes.
+   Root-shifterasuremaydestroyasharpbudgetevenwithcorrectlambda0anchors.
+4. Gaptransforms,auxiliarycutoffs,physicalunequal-timecorrelationsdiffer.
+   PublishedChen--HuLemma5.3needsunequal-dampingUPPERcontrol;no fractional
+   transferisproven. OldTeX'smissing1/pisnotapublishererror.
+5. Local5new/3oldLeanchecksarenotregisteredcompanion/package/Comparator
+   orfullSPDEgates. Typefidelityanduncoveredanalyticinputsremainessential.
+6. Sourcevariational/numericalconstants stillhaveNOadoptedintendedrepair.
+   No1.24correction,noSkorohoddevelopment,nomessagesexceptauthorizedAgent8.
+7. Privatewikiproposal/referenceintakeisnotcanonicalpublication/custody
+   closure. All7olderwholepapercoldreportsremainNOTCLEAR;human/novelty/
+   circulationandcompanioncreationgatesremainseparate.
+8. FullgoalACTIVE. PreserveactualHIGHsource/coverage/pins,own-pathatomic
+   commitsandserializedpush/<HUB>parity. No unchangedconfidenceretry.
