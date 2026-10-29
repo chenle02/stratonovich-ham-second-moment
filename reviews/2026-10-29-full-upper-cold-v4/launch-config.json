@@ -1,0 +1,23 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "instructions": [],
+  "agent": {
+    "cold-referee": {
+      "mode": "primary",
+      "prompt": "You are a mathematical journal referee. Follow the user request. Read only the supplied packet. Do not delegate or edit files.",
+      "tools": {
+        "*": false,
+        "read": true,
+        "glob": true,
+        "grep": true
+      },
+      "permission": {
+        "*": "deny",
+        "read": "allow",
+        "glob": "allow",
+        "grep": "allow",
+        "external_directory": "deny"
+      }
+    }
+  }
+}

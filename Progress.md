@@ -2446,3 +2446,13 @@ final hashes in final-status-binding.json. All122native/dry-run archive
 members read-back hash verified before only own terminal cleanup. No primary
 process is live. PRIVATE wiki proposal reconciled;canonical publication debt
 remains open. Regenerate cold-v4 from these final bytes before dispatch.
+
+Cold-v4 final packet is regenerated from adoption3b248ea37c588055f2cc712606f5767be9d898e3:
+85blind pages,all45proofs and all formal statement types including remarks,
+conjectures and definitions byte-equal to canonical86pages. Mathematical
+qualifications remain;only review metadata/title workflow qualifier removed.
+Clean build/formatter idempotent;canonical free-form prompt verbatim,complete
+manuscript/bibliography inline,six pinned source texts available,prior-blind
+and no old reports/checklist. Current route agrees with explicit V4-Pro;
+earlier5.975s native access probe remains health evidence only. READY,not yet
+a scientific report. README's obsolete setup/round1status is corrected.

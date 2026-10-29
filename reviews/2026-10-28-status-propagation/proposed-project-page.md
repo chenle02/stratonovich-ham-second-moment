@@ -35,7 +35,7 @@ Here $L_*=L(\mathcal{E}_*)$ and $L^*=L(\mathcal{E})$ are the constants of [[pape
 
 ## Current state
 
-**Source-repaired chronological deduction accepted at the primary gate.** Fresh native Opus5.5/HIGH source `ec7a9c4449eb3f16b085c579f293813191bc5f1a` completed641.655s:all16checksPASS,complete19-text/24-image delivery,no required repairs,accepted=true. All8minor findings are adjudicated in Article reviews/2026-10-29-chronological-word/adjudication-v2.md. A final elementary doubled-polydisc Cauchy paragraph explains an already-asserted absolute convergence;every formal statement and44of45proofs match reviewed bytes,and the critical fixed-split proof is unchanged. Final86page hashes are in final-status-binding.json. Originalv1remainsUNACCEPTED;carrier calibration is not a mathematical vote and its format rejection remains. All three older cold reports remain NOT CLEAR for their source versions. A fresh prior-blind full-paper read of the final bytes is next;no sharp,Lean,novelty or circulation claim.
+**Source-repaired chronological deduction accepted at the primary gate.** Fresh native Opus5.5/HIGH source `ec7a9c4449eb3f16b085c579f293813191bc5f1a` completed641.655s:all16checksPASS,complete19-text/24-image delivery,no required repairs,accepted=true. All8minor findings are adjudicated in Article reviews/2026-10-29-chronological-word/adjudication-v2.md. A final elementary doubled-polydisc Cauchy paragraph explains an already-asserted absolute convergence;every formal statement and44of45proofs match reviewed bytes,and the critical fixed-split proof is unchanged. Final86page adoption is Article `3b248ea37c588055f2cc712606f5767be9d898e3`;hashes are in final-status-binding.json. Originalv1remainsUNACCEPTED;carrier calibration is not a mathematical vote and its format rejection remains. All three older cold reports remain NOT CLEAR for their source versions. A fresh prior-blind full-paper read of the final bytes is next;no sharp,Lean,novelty or circulation claim.
 
 **Chronological review:16PASS/HIGH but UNACCEPTED source carrier.** Native review of source `dcbed86f599bbd505754ebe91963ecbd928e7c2b` completed715.188s with all16checksPASS and no mandatory mathematical repairs. All18required texts and22of23images were exact;one direct PNG Read returned JPEG. The old receipt stays accepted=false/coverage_verified=false. Full failure/evidence is retained in Article reviews/2026-10-29-chronological-word/. Two overlapping direct-PDF windows now preserve all of sourcep2145. A separate24image carrier run verified every PNG byte;its legibility advisory had a format-rejected preamble,retained without relabelling or scientific credit. New immutable repaired-input review is next at the same HIGH threshold. Mathematical TeX/PDF remain the same86page candidate;no primary adoption or cold clearance.
 
@@ -140,6 +140,8 @@ Every new proof gets a cross-family adversarial review (Claude Opus 5.5 skeptic 
 [held back: collaborators' unpublished work]
 
 ## Timeline
+
+- **2026-10-29 — chronological full-upper adoption:**Article `3b248ea37c588055f2cc712606f5767be9d898e3`,86pages;source-repaired primary16PASS/HIGH with all19texts24images. Final minor Cauchy clarification bound explicitly;fresh85page blind whole-paper packet ready. No cold or circulation clearance yet.
 
 - **2026-10-29 — chronological-word candidate:**86pages,explicit word/metric/Cauchy/constant derivation;source-class and unequal-chain/limit repairs written. Fresh primary gate next;previous cold findings are not yet independently cleared.
 

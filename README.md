@@ -6,8 +6,16 @@ t^{(4−α−α₀)/(3−α)} and the sharp p = 2 constant, building on X. Chen,
 *Time-dependency in hyperbolic Anderson models: Stratonovich regime*
 (author version, submitted to AAP; arXiv:2510.01412).
 
-**Status (2026-10-26):** set up, not started. Next step: Round 1 (Gate G0) by
-a Codex worker; see `CODEX-START.md`.
+**Status (2026-10-29):** the full target-scale upper bound is written for the
+original covariance class in dimensions one, two and three, and has passed
+source-bound cross-family correctness review. The final whole-paper cold
+read remains open. The sharp second-moment constant is unproved, and the
+private Lean companion has not been created. See `Progress.md` for exact
+review scope, source qualifications and remaining gates.
+
+The current [86-page notes](notes/notes_stratonovich_ham_second_moment.pdf)
+state the upper bound in Theorem 13.8 on page 81. Resume from `HANDOFF.md`;
+the next step is the fresh blind read of the final proof bytes.
 
 ## Start here
 
