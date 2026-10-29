@@ -6,7 +6,7 @@
 
 ## Current state
 
-- **Phase:** fixed-positive-a clock screen REVIEWED at scoped7groups/HIGH,e68310f. The exact unweighted constant-correlation analytic substitution strictly underestimates the actual first cross gap transform throughout the original covariance class. This is not a no-go for lower/asymptotic clock use or G:sharp.
+- **Phase:** degree-four shared-clock LOWERcomparison is a live MODELroute. Full15diagram/48cone exact reductions and finite probes are written as a NEWcandidate memo;own source-bound HIGH review pending. The earlier exact-identity screen retains its scoped7HIGHacceptance;it does not refute lower/asymptotic use.
 - **Review boundaries:** prior92page quantitative/mild source `a7e725e` passed its own19checks/HIGH. The new8check review covers the direct norms, positive spatial Wick-measure limit, arbitrary joint vertex-width construction and their consumers. It does NOT freshly audit every unchanged operator/interval proof. Exact source/delivery/adoption bindings and limitations are in `reviews/2026-10-29-fixed-order-construction/`.
 - **Current artifact:**110pages,60proofs. Two clock-screen proofs and all58prior proofs match frozen science exactly;only the scope remark and abstract/status clarified. Build0errors/undefined/overfull/tabs,formatter idempotent. Final binding/adjudication in reviews/2026-10-29-two-clock-screen/.
 - **Open targets:** full fixed-positive-alpha0sharp p2constant via MODEL information;focused exposition/whole-paper clearance;isolated local Lean seam checks now authorized;separate companion creation still pending;canonical wiki provenance and novelty/circulation. Next model route is the full degree-four Stratonovich aggregate for a possible one-sided clock comparison;unproved. No numerical normalization correction adopted.
@@ -3147,3 +3147,30 @@ and keep measurable integrability/representation explicit. The39member archive
 preserves two preflight failures and the actual accepted review. No failed
 preflight counts as a review. Agent8FYIba0138631977queued with exact source,
 read-only dependency use and preserved package ownership;not a completion reply.
+
+
+## Degree-four full Stratonovich clock probe (candidate)
+
+Previous goal turn:PROGRESS. Three local Lean supporting statements plus
+exact-type/application4HIGHreview are committed;original goal remains active.
+Current bounded question:does the shared analytic clock give a one-sided
+lower comparison after retaining the complete Stratonovich degree-four sum?
+
+Derived15ordered diagrams/48labelled global cones,exact physical spatial
+areas,positive Brownian covariance determinants and normalized angular
+representationsW/H/F. Notes/degree-four-clock-probe.md is CANDIDATEinternal
+research,not an accepted new theorem. Canonical110page/60proofTeX/PDFunchanged.
+Its own C1--C7source-bound HIGHreview is required before analytic adoption.
+
+Executed finite diagnostics:288independent rational polygon cases and288
+Brownian covariance determinant cases;90numeric calibration cases pass their
+stated diagnostic budget. Pilot4replicates*2^14points;refined8*2^18,eta1/8,
+a0,1/8,1/4,1/2,3/4. Static total11/6is recovered within error. Positive-a
+shared/actual totals approximately.97117,.93809,.86072,.76992. No clipping;
+replicateSEnot a certified enclosure. Full per-diagram/replicate outputs kept.
+
+Stronger fixed-lambda16pair probe preserves original pair labels through all
+shuffles. No mixed negative beyond8replicateSEfound;near-equality ratiosabove1
+retained. This does NOT prove the integrated lower comparison. It remains
+open even at degree4;all-order/original-class/balanced-horizon/sharp steps
+remain further obligations. No Skorohod result or novelty claim.
