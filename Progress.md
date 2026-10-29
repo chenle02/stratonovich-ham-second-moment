@@ -2621,3 +2621,19 @@ source images retained exactly. A carrier-only calibration of the COMPLETE
 36image cohort must pass exact native delivery before science. Dimensions
 or the old24image ledger are insufficient. This is CANDIDATE ONLY;all five
 cold reports remain NOT CLEAR;no sharp/Lean/novelty/circulation promotion.
+
+
+Complete36-image carrier calibration finished81.167s at source3705ad7.
+Actual supported Opus5.5route,all36PNGs exact/all plan text complete,
+coverage_verified=true,held HEAD/input hashes verified. Raw legibility
+advisory says all images readable and overlaps complete. Wrapper status is
+invalid-report/accepted=false:an unescaped quotation inside a source-title
+string makes its JSON invalid. That rejection/raw evidence are retained;
+no format continuation,parser relaxation or mathematical vote is inferred.
+Unchanged preparation guard returns CARRIER-READY for the exact36cohort;
+it correctly refuses the old24image ledger as a control. New scientific
+review still needs its own complete ledger,valid report and HIGH verdict.
+All51native archive members read-back hash verified before own raw cleanup.
+No calibration process live. The scientific contract now explicitly reminds
+JSON string escaping,without changing any claim,threshold or scientific
+instruction. This is a fresh substantive19check proof review,not a retry.
