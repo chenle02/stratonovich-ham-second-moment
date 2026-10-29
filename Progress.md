@@ -3507,3 +3507,52 @@ No new absent mathematical reference; existing nine tickets persist. Durable
 lessons and historical registry-coverage caveat saved; no unrelated package
 rerun, canonical publication, source normalization repair, coauthor message,
 Skorohod result, novelty or circulation clearance.
+
+
+## Direct-event route: exact scaling and scalar feasibility candidate
+
+Previous goal turn: PROGRESS (admissible-parent residual-discard obstruction
+accepted/synchronized). Full sharp objective ACTIVE. New bounded wave is
+REFRAMEto an exact original-class scaling plus auxiliary scalar test, not a
+new paper or large SPDE foundation. Wiki and held primary CDST source actually
+read; supplemental MathSciNet/zbMATH-domain/arXiv queries do not authenticate
+a novelty/citation-chain audit. No newly helpful absent-six-repo reference;
+existing nine tickets persist. Full novelty/circulation remains OPEN.
+
+Candidate exact full-class reduction:delta=T^-kappa,R=Tdelta, V(t,x)=u(Tt,Rx)
+in law solves delta^2Vtt=Delta V+sqrt(delta)WV with the original covariance.
+Noise widths become epsilon/R^2,eta/T and the mild vertex delta^-1/2. The
+proof retains generalized covariance/Green measures and every self/unequal/
+empty-chain term, using fixed-T width limits before largeT. Actual real-power
+normalizations are locally Lean-verified, not only numerical exponent tests.
+
+Source CDST wellposedness only covers alpha+a<1in d1,<1/2in d2, requires
+global Sobolev initialdataexcluding1, and explicitly uses global Picard rather
+than interval patching. No restartable uniform spectral growth consumer is
+supplied. Raw primitive covariance has H(2H-1)normalization. This is a precise
+source gap, not nonexistence of an extension. No intended source1.24repair.
+
+Auxiliary scalar candidate retains the residual:delta^2y''=y+y b_delta',
+with microscopic eta=delta^-1sup_{|t-s|<=delta}|b(t)-b(s)|->0. Exact velocity
+gauge gives drift[omega,1;1-omega^2,-omega]. A positive-matrix/full/fractional-
+block proof gives delta logy1->1. A triangular primitive with supnormdelta
+has alternating0/2potential and a smaller Floquet rate; periodic Riccati
+and strict Cauchy--Schwarz prove the sign, not floats. This rejects only a
+uniform globalC0bound. Scalar spatial degree0 is OUTSIDEthe target class;
+its Gaussian time-primitive calibration is not an HAM lower theorem.
+
+Before proof investment:16exact exponent cases,7gauge cases;28finite60digit
+closed-transfer checks include8negative instantaneous-potential and1zero
+case. Floating values are not enclosures. Seven local actual scalar/matrix
+facts compile cleanly with standard axioms, exact types and owned replay;
+3current semantic False controls pass. Initial warning-only success with
+unchanged statements preserved. No companion/package/lease/registry/donor
+write/cluster gate. All Gaussian/Green/series, ODE/Floquet/source applications
+remain informal and require new independent HIGH review. Frozen7-group
+packet includes22texts and2exact currentauthor images; acceptance pending.
+
+First open model consumer: a spatially rough primitive square in the scalar
+gauge is not defined/controlled just by that calculation. No uniform cutoff,
+restartable phase-space, point-evaluation or event/source variational map
+proved. (H) is an exact missing event micro-contract only. WHITE13/original
+class9 and canonical110-page/60-proof TeX/PDF unchanged; sharp goal ACTIVE.

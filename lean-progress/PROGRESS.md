@@ -116,3 +116,14 @@ Projection-residual close: source/limit clarification passed2groups/9checks
 HIGH at1787644, in addition to the primary6HIGH gate at efbdbd9. Both formal
 proofs unchanged. The Gaussian/projection/mean arguments remain informal
 reviewed analytic inputs. L0/PROPOSED and package-creation decision4 unchanged.
+
+## Direct-event scaling/gauge pilot (2026-10-29)
+
+Seven actual real-power and scalar2x2matrix consumers are fenced before
+execution. Full-model analytic scaling and scalar calibration remain
+candidates. No new companion/package/lease/registry/cluster; L0 unchanged.
+
+Direct-event local gate: all seven actual scalar/matrix facts compile cleanly,
+exact public types/live standard axioms and fresh owned-source replay pass.
+Three current semantic controls fail on False; initial warning-only success
+preserved with unchanged public signatures. Analytic/type application pending.

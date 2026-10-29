@@ -46,3 +46,18 @@ analytic/type/applicationreview at6475ea0,not five separate six-checkreviews.
 
 Gaussian projection, cone/integral and full-mean/asymptotic inputs stay
 outside Lean. Evidence: local-checks/projection-residual-v1/.
+
+## Direct event: StratonovichHAMAudit.DirectEvent
+
+| Name | Exact scope | Status |
+|---|---|---|
+| kappa_gt_one | Real target kappa greater than1 | Local compile/replay; application pending |
+| physical_scale | Actual positive-T real power for physical radius | Local compile/replay; application pending |
+| noise_scale | Actual equation amplitude equals Real.sqrt(delta) | Local compile/replay; application pending |
+| vertex_scale | Actual mild vertex amplitude equals delta^(-1/2) | Local compile/replay; application pending |
+| gauge_inverse | Exact2x2matrix inverse | Local compile/replay; application pending |
+| gauge_drift | Actual drift includes negative square | Local compile/replay; application pending |
+| monodromy | Scalar pulse product/determinant/trace | Local compile/replay; application pending |
+
+Gaussian/Green/series scaling, ODE/Floquet analysis and all rough-SPDE event
+consumers are outside Lean. No companion or canonical package gate.

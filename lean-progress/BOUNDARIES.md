@@ -59,3 +59,9 @@ source/limit followup pending.
 Projection-residual common-noise clarification accepted9HIGH at1787644;
 source cutoff and direct amplified-series norm consumer are independently
 reviewed but unformalized. The two scalar proof bytes remain frozen.
+
+Direct-event pilot checks real-power normalizations and scalar2x2gauge/pulse
+algebra only. Generalized-noise/Green/common-width scaling, infinite series
+limits, scalar ODE stability and Floquet/Riccati arguments remain analytic.
+The scalar spatial degree0 case is not a positive-alpha HAM result. Rough-
+SPDE event stability/source variational identification remain entirely open.
