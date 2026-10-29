@@ -1,108 +1,103 @@
-Last updated: 2026-10-28 18:27 UTC
+Last updated: 2026-10-29 03:32 UTC
 
 # HANDOFF — Article-Stratonovich-HAM-Second-Moment
 
 ## ⏭ Next session: where to stand and what to do
 
-Stand at PROJECT-GOAL.md decision5: the ORIGINAL full G:upper now has a
-complete proof accepted at the scoped cross-family correctness gate. Report
-Theorem13.5 to Le and obtain direction before beginning G:sharp. Do not spend
-another round reproving the accepted upper scale or rerun it for confidence.
+Inspect the current cold-v3 attempt, then collect/adjudicate it. The final
+80-page prior-blind packet is frozen at d82ce9c;canonical mathematics is
+adoption9054ece422489d278833c914b5b73569d2cbbb24. Before dispatch there is
+NO cold-v3 scientific process. The current run intends to launch it once
+using reviews/2026-10-28-full-upper-cold-v3/launch.py after this handoff.
+If native-v1/execution.json exists,inspect its actual PID/session/status and
+poll that same process. Never restart on an observation timeout. If no
+attempt exists,launch the committed packet once with its same-process guard.
+Hold the ACTUAL launch HEAD until terminal collection;execution.json records it.
 
-Source/dispatch bee4b2a3ebdff2ac1cbae9208f436084ad2ad549;
-adoption4c41cb2dba43fe330f4b43d0d49cd4f31e58ff1d. Fresh Opus5.5/high:
-all11PASS/HIGH,full11text/7image delivery,no required repairs,accepted=true,
-557.505s. Every7minor finding and the limitations are adjudicated in
-reviews/2026-10-28-dyadic-overlap/adjudication-v1.md. Final74page notes,
-Section13starts p65,coefficient Proposition13.4 p68,Theorem13.5 p71.
+The terminal/modular primary review is TERMINAL and ACCEPTED at the scoped
+correctness gate:15PASS/HIGH,full15text/14image delivery,no required repairs,
+636.876s. Every6minor finding is adjudicated and reflected in the final notes.
+All94native/dry-run members were archived/hash verified;raw workspaces removed.
+Do not poll old primary session18255 or restart it. Both older whole-paper
+cold reports remain NOT CLEAR on their respective sources.
 
-The sharp constant is OPEN. A fresh complete DeepSeek V4-Pro cold read is
-still due before circulation;the old31page read is no current clearance.
-Companion creation decision4 and intended source sharp normalization remain
-separate unanswered decisions. Original overall goal stays ACTIVE and
-uncompleted. No public/correspondence/automatic-notification permission.
+Full original goal ACTIVE. Sharp constant OPEN;Lean creation still requires
+decision4. The upper proof has been reported to Le at decision5;current work
+finishes the authorized cold gates,not a new sharp proof wave.
 
 ## Pre-flight checks
 
-1. Read Progress.md and PROJECT-GOAL.md. Full upper accepted at scoped
-   correctness gate;stop/report to Le at decision5 before sharp work.
-2. Final74page source/PDF:formatter idempotent,0errors/undefined/overfull/tabs.
-   TeX SHA256: 6b380149a094ffd0660d4537b407af4eea7af12a75c3273512a3c5c4e79b0ad8.
-   PDF SHA256: fc14246dff07caaedd57a684f7a39765faf28dd42fc7facc346910bd30c71ecf.
-   Exact binding in dyadic-overlap/final-status-binding.json.
-3. Full new proof review:all11PASS/HIGH,native model/identity/hash/delivery
-   verified.66raw native/dry-run members losslessly archived/member-hash
-   verified,then only own terminal raw copies removed. No native review,
-   build,author or cluster process remains live. Existing PDF viewer is
-   intentionally open on <MACHINE> tag4,p71.
-4. The frozen reviewed manuscript is73pages,not the final74page status
-   update.41of42proofs byte-equal;sole other proof change is sums-to changed
-   to is-at-most for the already checked integral upper bound C7.
-   No formula,hypothesis,constant or deduction changed. Old formal statements
-   unchanged;new theorem/remark only status promotion.
-5. Static Section12accepted9PASS/HIGH atcba14f9;Section11first variance7HIGH
-   ate38e561;Section10energy8HIGH at734d0bf. Section9full moment candidate
-   remains17PASS/MEDIUM and is not promoted by the different new proof.
-6. Preflight local/origin/<HUB> before edits;stage exact own paths only.
-   Provider dispatch guard check-frozen-packet.py must be in SAME fail-fast
-   shell as launch. Hold HEAD and git writers through actual collection.
-7. Default Claude CLI changed to2.1.312,unsupported by image-ledger preflight.
-   Existing2.1.304 works with launch-local PATH and the selected account.
-   Explicit executable/account mismatch was refused before provider launch.
-   Re-run supported doctor before any newly assigned native review.
-8. Primary author SHA256:
-   5f7385ca451e643a1f3ff31835e4ee52b2708b5d2e3652eec3fb5d3958b97b6c.
-   CP arXiv1702.00668v1 SHA256:
-   0e33b65b3fab07632364111290e380b0696d7ace8168c9b834028de57d943c53.
-9. Seven reference IDs/DOIs already queued;last exact snapshot is
-   phase-propagator/reference-state-final.json. Do not duplicate or match
-   prefix IDs. Last recorded status2Milman gold/5pending is historical;
-   recheck if current processing status is needed.
+1. Read Progress.md and PROJECT-GOAL.md. Canonical adoption9054ece and cold
+   freeze d82ce9c are pushed/<HUB>-synchronized before this handoff commit.
+2. Final82pages,45proofs;actual formatter idempotent;zero errors,undefined
+   references/citations,overfull boxes,tabs or duplicate labels. Binding in
+   terminal-modular/final-status-binding.json.
+   TeX SHA256: 1b8be5c9956d42b0b233cae773c7a38f004c7327ea5cd5e1634c2cc26e066d38.
+   PDF SHA256: 2919ef64e0165cc1cc30946bce0e95dcf7e8f665bc3368199110b32ef5385dbc.
+3. Primary source65b1342 accepted15PASS/HIGH at9054ece. All formal statements
+   including remarks and three new helper proofs byte-equal to reviewed source;
+   43of45proofs byte-equal. The two minor-clarified proofs and six finding
+   dispositions are explicit. No new result is attributed to the reviewer.
+4. T:full-upper is Theorem13.8 on PDF page78. Coefficient13.5 page73;
+   fixed-split13.4 page70;terminal13.6 page75;tail13.7 page77.
+5. The moment estimate/series limit uses source Th4.1(4.2)p22 fixed-order L2,
+   the uniform scaled finite-model bound and geometric tails. Known mild-
+   solution identification is separately retained from Theorem1.1(1) and
+   its Section5part(ii). No uniqueness or new mild-equation proof is claimed.
+6. Cold-v3 blind80pages,all45proofs and every formal statement INCLUDING
+   remarks byte-equal to final82pages. Complete manuscript/bibliography inline;
+   six pinned source texts available. Canonical free-form prompt,prior-blind,
+   no grades/checklist/reports in packet. Native DeepSeek V4-Pro access probe
+   passed6.828s,but is not a scientific review.
+7. Same-process committed-byte guard and canonical hash checks must pass
+   before dispatch. Isolated TEMP.git root,explicit cwd/--dir,read-only pure
+   configuration,131072output cap. Do not commit during native collection.
+8. Earlier cold source26bb560/dispositionb310b119:15items,partial source reads,
+   NOT CLEAR. Second source32ee0ce/disposition6f2dc0c:9items,ZEROsource calls,
+   NOT CLEAR. Full delivery never substitutes for actual source consultation.
+9. Seven reference requests already queued;latest exact snapshot is
+   full-upper-cold/reference-state.json. Last observed2gold/5pending is
+   historical;recheck if needed. Never duplicate or prefix-match ticket IDs.
 
 ## Concrete deliverables for the next session
 
-- Report the complete accepted upper result to Le at decision5 before any
-  sharp-constant development. The overall goal is not complete.
-- When directed to continue,retain fresh final DeepSeek whole-paper/source-
-  bound review before circulation. Frozen prior review context is not a
-  final full-paper read,even with HIGH confidence.
-- Preserve the key interval mechanism:local color degrees,one-copy mean
-  costs versus new-color cross insertions,and uniform positive inventory
-  product. Retain both Gaussian creation and annihilation/self-pairings.
-- Prepared PRIVATE wiki proposal now matches74pages and the full scoped
-  acceptance at4c41cb2. Canonical page was reread unchanged;no wiki project
-  publication ticket,automatic notification or direct six-repo edit occurred.
-  Existing publication-notification boundary remains separate.
-- Lean remains L0/PROPOSED,no package/lease/code/build. Decision4 remains open.
-  New stable seams are the local-degree coefficient algebra,inventory
-  exponent/tail arithmetic and final growth conversion;analytic premises
-  must remain explicit rather than assumed to prove the paper theorem.
-- Durable scientific/runtime lessons retained in dyadic-overlap/lessons.md
-  and static-phase-all-orders/lessons.md,with actual review/proof boundaries.
+- Collect the new native DeepSeek report,verify actual model,prompt delivery,
+  source HEAD/input stability,and actual source reads. Adjudicate every concern
+  under the canonical substantive/cosmetic/already-known distinctions;do not
+  turn an unresolved assembly concern into clearance using the primary HIGH.
+- If substantive repairs are required,write them and obtain fresh primary
+  review before another fresh cold read. Do not rerun unchanged for a label.
+- Preserve terminal native evidence and read-back member hashes before own
+  workspace cleanup. Record actual source consultation,including zero calls.
+- Reconcile the PRIVATE wiki proposal to the cold outcome;canonical project
+  publication/provenance debt remains open. No direct shared six-repo edit,
+  project-publication ticket or automatic notification is authorized by the
+  ordinary missing-reference enqueue instruction.
+- Keep terminal-modular/lessons.md. The lower tilt screen in
+  cold-core-expansion/next-lower-screen.md is UNREVIEWED planning only.
+- Lean remains L0/PROPOSED;no package,lease,code or build. Decision4 is open.
+  Sharp target and intended source normalization remain unresolved.
 
 ## Success criteria for the immediate next step
 
-Le has an accurate view of the accepted full upper bound and the remaining
-sharp target. Subsequent work starts only within his direction at decision5.
-Any circulation claim requires the fresh full-paper/source-bound cold read.
-Private Lean work requires its separate creation approval. No narrowed
-covariance subclass substitutes for the original full target.
+The fresh full-paper cold report is bound to the actual final proof bytes,
+actual source consultation and native model. Every concern is adjudicated;
+substantive concerns stay open until repaired/reviewed. Full original spatial
+class and sharp target remain intact. The project is not declared complete.
 
 ## Anti-success criteria
 
-- Continuing directly to sharp work without reporting the full-upper proof.
-- Calling the project finished,sharp constant solved,novelty verified,Lean
-  checked or circulation cleared from one scoped correctness report.
-- Treating the old medium-confidence endpoint candidate as promoted.
-- Squaring every singleton metric cost or multiplying independent-time-block
-  estimates for overlapping/reused fields without the color argument.
-- Omitting self-pairings,using real-only bounds for complex Cauchy,or assuming
-  arbitrary-phase covariance positivity. Positive covariance domination is
-  used only inside the constant-data Wick integrals.
-- Assuming full mollified-solution convergence instead of fixed-order limits
-  followed by the independently convergent original series.
-- Direct six-repo edits,duplicate/prefix reference matching,service restart,
-  source-author contact,public release,Lean creation or Easley jobs.
+- Promoting the new lemmas using the old14HIGH report, or describing either
+  whole-paper cold report as cleared.
+- Restarting a live native reviewer after an observation timeout,committing
+  while its source HEAD is held,or treating a missing report as a review.
+- Losing self-pairings,ordinary degree,one-copy singleton metrics or the
+  difference between a fresh-vacuum insertion and an occupied-color field.
+- Assuming full unsmoothed convergence before proving geometric tails,or
+  using the amplitude-two tail constant as the final amplitude-one bound.
+- Claiming sharp constants,novelty,formal/human verification or circulation.
+- Changing the printed source normalization,creating Lean without approval,
+  contacting anyone,publishing,submitting cluster jobs or editing siblings.
 
 ## What the previous sessions produced
 
@@ -276,68 +271,93 @@ Latest checkpoints:
   valid PDF on <MACHINE> tag4. Agent21owns setup but live lookup found no21;
   no persistent config edit,substitute owner or setup completion invented.
 
+
+- 2026-10-28 first whole-paper cold source26bb560: complete blind manuscript
+  and partial actual primary-source consultation;15items,NOT CLEAR;substantive
+  assembly/conditionality concerns adjudicatedb310b119.
+- 2026-10-28 expanded sourcece11214:78pages,all14checksPASS/HIGH,complete
+ 12text/14image delivery,no required repairs;617.957s. Adoptionef5f691
+  adjudicates every minor finding and retains the cold-read debt.
+- 2026-10-28 second whole-paper cold source32ee0ce:393.565s,complete77page
+  blind manuscript/all42proofs,butZEROsource tool calls. NOT CLEAR:explicit
+  terminal Wick factors and separately checkable coefficient assembly.
+  All9items adjudicated6f2dc0c;7native members archived/hash-verified.
+- 2026-10-28 terminal/modular source65b1342:82pages,45proofs;new fixed-split,
+  terminal-Wick and uniform-series-tail lemmas,revised final limit requiring
+  only known fixed-order L2 construction. Exact order2/4 scalar diagnostics
+  retain unequal-chain splits1/3,1/105. Fresh15check primary packet frozen,
+  pushed/synchronized;native Opus5.5/HIGH currently running. Local lessons
+  retained;prepared PRIVATE wiki revised to82candidate/cold2NOTCLEAR.
+
+- 2026-10-28 adoption9054ece:terminal/modular15PASS/HIGH,636.876s,full15text/
+ 14image delivery,no mandatory repairs. All6minor findings adjudicated;
+ 82page final build,every formal statement/three new proofs unchanged,
+ 43of45proofs byte-equal. All94native/dry-run members archived/hash-verified.
+- 2026-10-28 cold-freeze d82ce9c:final80page blind copy regenerated from9054ece,
+  all45proofs/all formal statements byte-equal;canonical free-form prompt and
+  full source texts available in isolated read-only packet. New actualV4-Pro
+  health probe passed;scientific cold read is NEXT,not yet a report.
+
 ## Repo & git state at handoff
 
-- master;substantive pre-handoff HEAD 4c41cb2dba43fe330f4b43d0d49cd4f31e58ff1d,pushed and
-  <HUB>-synchronized. Only this dedicated handoff update pending.
-- No author WIP or review/build/cluster task left live.74page TeX/PDF binding
-  above. No source PDF,All.bib or sibling Article edits by root.
-- Private wiki proposal committed,not published. Queue owns seven-reference
-  processing. No private Lean companion exists. Final cold-read debt remains.
+- master;pre-handoff HEAD is cold freeze d82ce9c,with mathematics adoption
+  9054ece422489d278833c914b5b73569d2cbbb24. Both are pushed and <HUB>-
+  synchronized. Only HANDOFF.md belongs to this dedicated commit.
+- Primary native review/builds and the separate DeepSeek health probe are
+  terminal. No cold-v3 scientific process exists at this commit;the active
+  run intends to launch it next. Consult cold-v3/native-v1/execution.json
+  for the subsequent actual PID/workspace/source HEAD rather than restarting.
+- No source PDF,All.bib or sibling Article edits. No private Lean package.
+  Canonical wiki unchanged;the accurate local proposal is unpublished.
 
 ## Operating notes
 
-Original overall goal remains ACTIVE with no budget. PROJECT-GOAL decision5
-is now the immediate boundary. No additional math work beyond that decision
-was started after acceptance. Sharp constant/source normalization and Lean
-creation are separate. Do not infer correspondence or publication authority.
+Original overall goal remains ACTIVE without a token budget. Do not declare
+completion of the project from the nonsharp upper result. Intended source
+first-moment normalization remains unknown; its scoped printed contradiction
+was independently accepted,but no correction is adopted. All numerical L_star
+calibrations carry explicit premises. New upper bound uses no such constant.
 
-Actual wiki-first CLI recon and synthesized-page reading were performed;
-source editions and exact operator hypotheses come from primary sources.
-New CP source is pinned under sources/crouzeix-palencia-2017;version1
-numbering and the local extra.bib source key must be retained. All.bib is
-read-only. No missing helpful reference from this wave was left unqueued.
+Primary author PDF SHA256:
+5f7385ca451e643a1f3ff31835e4ee52b2708b5d2e3652eec3fb5d3958b97b6c.
+CP arXiv1702.00668v1 SHA256:
+0e33b65b3fab07632364111290e380b0696d7ace8168c9b834028de57d943c53.
+Use this source version's numbering and title,not the journal's different title.
 
-Exact seven existing ticket IDs:
-- tk-20261028-081542-codex-stratonovich-covariance-recon (Milman2006).
-- tk-20261028-081544-codex-stratonovich-covariance-recon (Milman2008).
-- tk-20261028-081547-codex-stratonovich-covariance-recon (Rubin2008).
-- tk-20261028-081549-codex-stratonovich-covariance-recon (Frank2026).
-- tk-20261028-110644-codex-stratonovich-phase-recon (Crouzeix2004).
-- tk-20261028-110645-codex-stratonovich-phase-recon (Crouzeix2007).
-- tk-20261028-110645-codex-stratonovich-phase-recon-2 (CP2017).
-Never prefix-match the last two or enqueue duplicates. Normal references
-were explicitly authorized;the old project-publication/automatic-notification
-card remains separate. No message was sent to Le/coauthors/source author.
+Actual wiki-first CLI recon and synthesized-page reading were performed.
+Seven existing queue IDs are retained without prefix matching:
+- tk-20261028-081542-codex-stratonovich-covariance-recon
+- tk-20261028-081544-codex-stratonovich-covariance-recon
+- tk-20261028-081547-codex-stratonovich-covariance-recon
+- tk-20261028-081549-codex-stratonovich-covariance-recon
+- tk-20261028-110644-codex-stratonovich-phase-recon
+- tk-20261028-110645-codex-stratonovich-phase-recon
+- tk-20261028-110645-codex-stratonovich-phase-recon-2
+Normal reference authorization does not authorize project publication or
+messages to Le/coauthors/the source author. No such message was sent.
 
-Supported Opus runtime was selected by launch-local PATH to the existing
-Claude2.1.304 binary;effective account/executable verified by doctor.
-No system/dotfile/provider/auth changes. Setup belongs to Agent21;resolve
-its live address with amsg rather than assuming a stale identity.
+Launch-local PATH selects the supported existing Claude2.1.304 binary under
+.local/state/Le-AI-Lab/swe-white-time-resume-20261024/runtime/node_modules/
+@anthropic-ai/claude-code-linux-x64. No persistent system/auth/provider changes.
+Future system/dotfile/Neovim setup belongs to Agent21;resolve via amsg. Last
+actual Agent21lookup was UNREGISTERED;do not substitute another agent.
 
-For vifm PDF opening without DISPLAY,use the existing desktop helper via
+For vifm PDF opening without DISPLAY,use the existing desktop helper:
 :!<HOME>/mydotfiles/bin/wm pdf %c --no-name
-The final theorem is on page71 of the notes PDF. Do not change persistent
-setup in this project;Agent21was not registered at the last actual lookup.
+The current full-upper theorem is on page78. The intentionally open viewer
+was previously placed on <MACHINE> tag4;no persistent display setup was changed.
 
 ## Risks to monitor
 
-1. The sharp second-moment constant remains unproved. The full upper-scale
-   result has a nonsharp constant and cannot certify the conjectured factor.
-2. Source E/E_star normalization conflict remains independently accepted in
-   its literal scoped audit;intended correction unknown. No suspect source
-   first-moment constant was used in the new upper proof.
-3. A single completed AI correctness review is neither human/formal proof
-   certification nor novelty/circulation clearance. Full cold read still due.
-4. Source fixed-order Green/noise limits precede the series limit. Do not
-   rewrite the proof using an unproved whole-propagator convergence claim.
-5. Complex sums,local color cutoffs and vacuum cross insertions are different
-   interfaces. Occupied-color annihilation cannot use the vacuum column bound.
-6. Static exponents are known. Any novelty assessment must keep the exact
-   new interval theorem separate and complete the still-missing broader audit.
-7. Queue service receipts prove per-paper ingestion,not applicability to HAM.
-8. Wiki proposal and final round-close provenance remain unpublished;do not
-   report private draft preparation as a canonical six-repo update.
-9. Native source delivery and mathematical verdict are separate checks.
-   Pre-provider runtime refusals and the old DNS failure are not reviews.
-10. Keep atomic exact-path commits,push/sync parity,and the mandatory PI stop.
+1. Current terminal/modular deduction passed primary;whole-paper cold remains open.
+2. Full sharp p2 constant remains open;upper constant is nonsharp.
+3. Source E_star/E printed normalization conflict has no adopted repair.
+4. Full covariance class must not be replaced with a Riesz/angular subclass.
+5. Native source delivery is separate from actual source reading and verdict.
+6. Novelty audit,formal/human verification and circulation remain unresolved.
+7. Wiki proposal preparation is not canonical publication/provenance closure.
+8. Reused interval fields require joint Gaussian operator control;no false
+   independence after conditioning and no lost annihilation/self-pairings.
+9. Fixed-order import,scaled positive bound and geometric tails have a strict
+   dependency order;do not assume the full limit to obtain the bound.
+10. Keep exact-path commits,push/sync parity,source HEAD freeze and PI stops.
