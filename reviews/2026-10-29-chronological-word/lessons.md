@@ -21,3 +21,16 @@ Lessons retained at the candidate checkpoint; no new correctness certification.
 
 The finite diagnostics and root source audit are evidence for this candidate,
 not formal verification or a substitute for the fresh primary/cold gates.
+
+Application miss at v1:the added1900pixel page was not carrier-calibrated.
+Native Read re-encoded it to JPEG;the16PASS/HIGH scientific report correctly
+remained unaccepted. The already-existing canonical image rule applies.
+Small direct-PDF windows now preserve full page coverage;the complete final
+24image cohort was actually delivered as exact PNG bytes. A preparation
+guard matches the final cohort to that bound ledger before the next science
+call. No universal safe pixel threshold is inferred from this one success.
+
+The carrier advisory's prose preamble was format-rejected even though its
+official byte ledger was complete. Keep that rejection and all prose. A
+preparation-only byte observation is not an accepted scientific report;do
+not add a permissive report parser or resume a completed scientific review.

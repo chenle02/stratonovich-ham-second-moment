@@ -2387,3 +2387,22 @@ If exact delivery passes,a new immutable repaired-input binding and fresh
 review follow,with the HIGH threshold unchanged. Mathematics remains the
 same86page candidate. This is a genuine source-carrier repair,not a retry
 for a preferred confidence rating. Old16HIGH receipt stays unaccepted.
+
+Carrier calibration completed82.767s:all24declared PNGs delivered exactly,
+one plan text complete,official ledger coverage_verified=true. Its raw
+legibility advisory says all pages are readable and confirms the overlap
+covers the clipped line. The wrapper rejected a prose preamble before its
+JSON,status invalid-report/accepted=false;that rejection and every
+qualification are retained. No format continuation or scientific acceptance
+is inferred. This is objective carrier-preparation evidence,not a math vote.
+
+Repaired packet-v2 preserves the mathematical TeX/PDF and every mathematical
+text byte;only the page2145carrier,two metadata maps and explicit carrier
+provenance change.19required texts/24images,new immutable contract,unchanged
+HIGH gate. A thin preparation guard checks the exact final image cohort
+against the hash-bound calibration ledger. It passes the repaired plan and
+refuses the actual unmodified23image v1plan. It never accepts science or
+changes any rejected receipt;the new scientific run still needs its own
+complete delivery and actual HIGH verdict. Fresh source-repaired review NEXT.
+All39carrier-calibration archive members roundtrip hash verified before
+only own terminal raw cleanup. No old review or calibration process is live.

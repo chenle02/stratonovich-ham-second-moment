@@ -1,0 +1,61 @@
+All 24 images opened and were legible. Here is the report.
+
+```json
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    ".review/required-sources.json: lines 1-150 (complete; read plan only, earns no read credit)",
+    "images.txt: lines 1-34 (complete)",
+    "author-02.png: whole image, opened once by direct Read",
+    "author-03.png: whole image, opened once by direct Read",
+    "author-04.png: whole image, opened once by direct Read",
+    "author-09.png: whole image, opened once by direct Read",
+    "author-12.png: whole image, opened once by direct Read",
+    "author-13.png: whole image, opened once by direct Read",
+    "author-14.png: whole image, opened once by direct Read",
+    "author-22.png: whole image, opened once by direct Read",
+    "author-30.png: whole image, opened once by direct Read",
+    "chen-2023-02.png: whole image, opened once by direct Read",
+    "cp-01.png: whole image, opened once by direct Read",
+    "cp-02.png: whole image, opened once by direct Read",
+    "cp-05.png: whole image, opened once by direct Read",
+    "cp-06.png: whole image, opened once by direct Read",
+    "chen-hu-2145-top.png: whole image, opened once by direct Read",
+    "chen-hu-2145-bottom.png: whole image, opened once by direct Read",
+    "chen-hu-2147.png: whole image, opened once by direct Read",
+    "chen-hu-2151.png: whole image, opened once by direct Read",
+    "chen-hu-2152.png: whole image, opened once by direct Read",
+    "chen-hu-2153.png: whole image, opened once by direct Read",
+    "chen-hu-2165.png: whole image, opened once by direct Read",
+    "chen-hu-2173.png: whole image, opened once by direct Read",
+    "chen-hu-2175.png: whole image, opened once by direct Read",
+    "chen-hu-2180.png: whole image, opened once by direct Read"
+  ],
+  "checks": [
+    {
+      "claim": "CARRIER_ONLY",
+      "verdict": "PASS",
+      "reason": "All 24 images listed in images.txt and .review/required-sources.json were opened once each by direct Read with only file_path. Each one came back as a rendered image with no error, no truncation marker and no partial-read notice. Printed text, running heads, page numbers, displayed equations and equation labels are visually legible on every page: author pp. 2, 3, 4, 9, 12, 13, 14, 22, 30; chen-2023 p. 2; cp pp. 1, 2, 5, 6; chen-hu pp. 2145, 2147, 2151, 2152, 2153, 2165, 2173, 2175, 2180. This includes small super- and subscripts such as fractional exponents, gamma^0_{delta_j v delta_k}, [0,t]^n_< and the root signs. The two chen-hu-2145 crops overlap. The top crop runs from the running head 'STRATONOVICH HYPERBOLIC ANDERSON EQUATIONS 2145' through display (1.1), and its last text line ('run by a time-independent, mean zero and possibly generalized Gaussian noise W(x) with') is clipped at the lower edge. The bottom crop starts again at display (1.1) and shows that clipped line in full, then continues through (1.2)-(1.5), with blank space below (1.5). Taken together, the two crops show the page from running head to the end of its text, and nothing was missed at the seam."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "chen-hu-2145-top.png: the bottom text line is cut through by the crop edge. This is not a loss, because the overlapping chen-hu-2145-bottom.png shows the same line in full. Judge the two crops together.",
+      "The pages come from different typesetting sources at different resolutions (author/chen-hu: journal-style or preprint pages; chen-2023-02: an EJP page; cp-*: an arXiv preprint with a vertical arXiv stamp on p. 1). All are legible, but the finest scripts on author-03/04 (e.g., exponents like (4-alpha-2alpha_0)/2 and 1/(3-alpha)) are small, and the cp-* pages are slightly softer than the others. Legibility holds, but these are the pages most likely to fail if the images were downsampled.",
+      "Some content-level oddities belong to the source pages, not to the image carrier, and were not judged: the 'FIXME!' running head on chen-2023-02, and the '3assifications' typo on cp-01."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is only a native image-carrier and legibility calibration. It is not a scientific review, not a proof check, not an independent mathematical vote and not circulation clearance. No mathematical statement, constant, equation or citation on any page was checked or re-derived.",
+    "I did not compute or check SHA-256 hashes, byte counts or media types. The sha256 and media_type values in .review/required-sources.json were read as text only; Root verifies exact image bytes and media types separately in the native stream.",
+    "Whether the chen-hu-2145 crops cover the full page was judged by eye (matching running head, overlap at display (1.1), blank space after (1.5)). I had no reference full-page image to compare against.",
+    "Legibility was judged on the images as the Read tool rendered them in this session. Display on another device or at another resolution may differ.",
+    "No git state was checked. Source revision 10397ae277e5b4dbf1a723d3b5ed01ffdea2ff25 is taken as given from the request and was not checked against the packet."
+  ]
+}
+```
