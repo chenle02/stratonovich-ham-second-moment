@@ -154,3 +154,8 @@ Final phase-response gate: all6facts compile cleanly, exact public types/live
 standard axioms and owned replay pass,4semantic controls. Three executions
 record the warning/binder cleanup and actual balanced budget addition; no
 old proposition weakened. Analytic/type/average application pending.
+
+Phase-response close: all6finite scalar/Gram/rpow application types passed
+C6of8HIGH at0ae116c. Formal source unchanged. Gaussian/Sobolev/HS/averaging
+arguments remain informal reviewed proofs; time-driver/all-order/event and
+source-constant consumers remain open. L0anddecision4unchanged.

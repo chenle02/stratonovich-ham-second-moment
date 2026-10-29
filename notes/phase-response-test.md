@@ -1,7 +1,8 @@
 # The first Gaussian response in a physical phase norm
 
-Status: CANDIDATE. Independent analytic/source/type/application review is
-pending. These are first-response regularity/operator tests for the direct
+Status: accepted scoped analytic/source/type/application review, eight
+checks HIGH at source0ae116c. See
+reviews/2026-10-29-phase-response/adjudication.md. These are first-response regularity/operator tests for the direct
 Stratonovich lower-bound route. They do not construct an all-order random
 flow, its remainder, an event lower bound or a sharp moment constant.
 
@@ -49,11 +50,12 @@ This proves(E). In particular, for r>=2B_a/(A_a t),
 The constants can equivalently be written
 A_a=pi/[Gamma(a)cos(pi a/2)], B_a=2pi/[Gamma(a)sin(pi a/2)], by the Euler
 beta integral after z^2 substitution. These evaluations are not needed for
-the bounds. At r=0, J(0)=2t^(2-a)/[(1-a)(2-a)]. The temporal Fourier norm
+the bounds. At r=0, J(0)=2t^(2-a)/[(1-a)(2-a)]. The complex sesquilinear extension of the temporal Fourier norm
 identity in the held Balan--Tudor AppendixA, equation lemmaA1, gives strict
 positivity of J(r) at each r: apply it to exp(iru)1_[0,t]. Its Fourier
 transform is not zero, and the weight |tau|^(a-1) is positive a.e. Continuity
-follows by dominated convergence in(J). Compactness and(W) therefore yield
+follows by dominated convergence in(J). Set r_0=2B_a/(A_a t)>0.
+Compactness on[0,r_0] and(W) therefore yield
 
     J(r) is comparable to <r>^(a-1),  r>=0,                (U)
 
@@ -164,8 +166,12 @@ integral |tau|^(a-1)/(1+|tau-r|^2)dtau by C_a<r>^(a-1). For |r|>=2 split
 |tau-r|<=|r|/2, then |tau|<=2|r| in the complement, then |tau|>2|r|.
 The three bounds are O(|r|^(a-1)), O(|r|^(a-2)) and O(|r|^(a-2)),
 respectively. Bounded r follows by local integrability at tau=0 and the
-integrable tail |tau|^(a-3). The real sine/cosine bound follows from the
-complex modulations and the triangle inequality. This proves(B).
+integrable tail |tau|^(a-3). For the real factors used here, symmetry gives the exact identity
+||f cos(ru)||_a^2+||f sin(ru)||_a^2=||f exp(iru)||_a^2. For complex f, use
+the half-sum of the two opposite modulation norms. Output factors at t-u
+are a trigonometric rotation, or a constant unimodular phase followed by
+negative frequency. These observations prove(B) without an unnecessary
+triangle estimate for the real sum.
 
 ## 4. The localized first response OPERATOR in d1
 
@@ -261,6 +267,13 @@ The same estimates show logarithmic cutoff growth at equality and power
 L^(2s+alpha+a-3) above, within alpha+a<2. Orthogonal noise tails show L2
 Hilbert--Schmidt convergence in the finite case. The Gaussian isometry
 construction makes the limit a Gaussian Hilbert--Schmidt-valued variable.
+Choose its measurable Hilbert--Schmidt representative for each cutoff and
+the limit. On a countable dense Schwartz set, the isometry identifies its
+values with(O); intersecting those countably many full-measure sets gives
+one operator version agreeing there. Continuity extends that version to
+E_s. Agreement in L2 for each deterministic Schwartz input follows by the
+same isometry. No simultaneous versions of uncountably many formal input
+integrals are assumed.
 
 All finite Gaussian Lp bounds follow without independence of components:
 for any finite orthonormal expansion in that Hilbert space, Minkowski in
@@ -274,7 +287,7 @@ operator assertion.
 
 The endpoint phase E_(1/2)=H^(1/2) x H^(-1/2) also passes the d1
 first-response operator test throughout alpha+a<2. To prove this, repeat
-Section4 with s=1/2. In sectorsA andB the formerly bounded/power k or r
+Section4 with s=1/2. In the first two bullet sectors of Section4, the formerly bounded/power k or r
 integrals are now O(log(2+q)); the high-q tails are bounded by
 
     C q^(alpha+a-3)log(2+q).                               (V)
@@ -301,13 +314,20 @@ common-width Gaussian family. Thus the canonical fixed-order limits are
 L2-continuous in x. Applying the named prior positive mixed expansion at an
 amplified covariance gives uniform-in-x geometric norm tails, since every
 coefficient norm and the amplified second moment are stationary. Consequently
-u(T,x) is L2-continuous, with its L2 norm independent of x. The Bochner
+u(T,x) is L2-continuous, with its L2 norm independent of x. More explicitly,
+the amplified input is Prop P:mixed at c^2 Gamma, c>1, which still satisfies
+H:homog. Degree-n homogeneity makes its diagonal c^(2n)E X_n^2 at most
+B_c=E|u_c(T,0)|^2; hence ||X_n(T,x)||_2<=sqrt(B_c)c^(-n), uniformly in x.
+This uses no uniform-regularization tail hypothesis. The Bochner
 triangle inequality gives
 ||integral rho(x)u(T,Rx)dx||_2 <= integral rho(x)||u(T,Rx)||_2dx
 =||u(T,0)||_2, proving(M). No positivity of the random solution is assumed.
 This is a Bochner L2 statement; no simultaneous pointwise version is needed.
 
-For the rescaled V_delta, this is a delta-dependent physical average of
+Here V_delta(t,x) denotes u(Tt,Rx), with delta=T^(-kappa),R=Tdelta and
+kappa=(4-alpha-a)/(3-alpha), as in notes/direct-event-calibration.md.
+Inequality(M) itself holds for every T,R>0 independently of that rescaling.
+For this V_delta, the average is a delta-dependent physical average of
 unit L1 mass, so there is NO lost factor R^d. Its fixed rescaled test rho
 defines a bounded linear functional on every local H^s, by Sobolev duality
 with the smooth test. Thus a direct event lower bound for the actual squared

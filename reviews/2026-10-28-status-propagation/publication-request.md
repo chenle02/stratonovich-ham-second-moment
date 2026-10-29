@@ -1,3 +1,9 @@
+Latest private proposal: original-class first-field phase and localized d1
+Gaussian first-response HSoperator, balanced endpoint and exact averaged-
+to-point moment transfer, source0ae116c,8HIGH. Full flow/event/sharp target
+remain open. CanonicalTeX/PDF and WHITE13/original9unchanged. No canonical
+publication requested/enqueued; earlier private checkpoint history below.
+
 Latest private proposal: exact full-class semiclassical scaling and auxiliary
 scalar residual-growth/C0falsification, source9d77f90,7HIGH. Rough-SPDE
 phase/event lower bound and full sharp target remain open. WHITE13/original

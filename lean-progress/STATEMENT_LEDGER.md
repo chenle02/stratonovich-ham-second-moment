@@ -66,12 +66,12 @@ consumers are outside Lean. No companion or canonical package gate.
 
 | Name | Scope | Status |
 |---|---|---|
-| rough_phase_choice | Actual s0 and strict trace/sector margins | Local compile/replay; application pending |
-| balanced_phase | Actual balanced endpoint strict tail budget | Local compile/replay; application pending |
-| energy_boundary | Exact energy-phase critical inequality | Local compile/replay; application pending |
-| four_component_gram | Actual four-phase temporal Gram factorization | Local compile/replay; application pending |
-| two_frequency_average | Exact half-factor cosine product | Local compile/replay; application pending |
-| frequency_window | Actual rpow two-sided window from proved error input | Local compile/replay; application pending |
+| rough_phase_choice | Actual s0 and strict trace/sector margins | Local compile/replay; exact type/application HIGH at0ae116c |
+| balanced_phase | Actual balanced endpoint strict tail budget | Local compile/replay; exact type/application HIGH at0ae116c |
+| energy_boundary | Exact energy-phase critical inequality | Local compile/replay; exact type/application HIGH at0ae116c |
+| four_component_gram | Actual four-phase temporal Gram factorization | Local compile/replay; exact type/application HIGH at0ae116c |
+| two_frequency_average | Exact half-factor cosine product | Local compile/replay; exact type/application HIGH at0ae116c |
+| frequency_window | Actual rpow two-sided window from proved error input | Local compile/replay; exact type/application HIGH at0ae116c |
 
 All temporal/Gaussian/spectral/Sobolev/HS-operator inputs and all-order flow
 are outside Lean; this is not a formal SPDE or canonical package gate.

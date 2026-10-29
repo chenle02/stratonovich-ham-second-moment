@@ -78,3 +78,8 @@ flow/event/constant remain analytic. Application review pending.
 Balanced endpoint logarithmic sectors and the Bochner spatial-average
 transfer to the actual point second moment are new analytic obligations,
 not covered by the sixth finite budget statement. Review pending.
+
+Phase-response8HIGH gate at0ae116c checked all6actual finite type
+applications(C6) and the independent analytic phase/operator/average proofs.
+The latter remain outside Lean. Interaction time regularity, full random
+flow, remainder and sharp event/source-variational map are still unproved.

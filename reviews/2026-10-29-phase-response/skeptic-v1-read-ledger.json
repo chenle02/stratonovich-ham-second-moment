@@ -1,0 +1,934 @@
+{
+  "schema": "le-ai-lab.review-read-ledger/1",
+  "coverage_verified": true,
+  "claude_code_version": "2.1.304",
+  "events_sha256": "1603bf3542600bdb37eb1a2fe7992b6f6fd658ba4cd1ce39adae22a071b4b0d2",
+  "events_hash_bound_to_receipt": true,
+  "stream_workspace": "${LOCAL_RAW}/stratonovich-phase-response-scientific-v1/workspace",
+  "required_sources_sha256": null,
+  "continuation": false,
+  "continuation_credit": null,
+  "proves": "Each credited line was returned, numbered and byte-equal to the frozen workspace file, in a tool_result paired with a Read or line-numbered content-mode Grep call of the hash-bound provider stream.",
+  "does_not_prove": "Attention, understanding, or retention: a credited line may have been skimmed, ignored, or dropped by context compaction before the report was written. Uncredited lines may still have been seen in a form the ledger cannot attribute (previews, unnumbered output, subagents).",
+  "sources": [
+    {
+      "path": "Balan-Tudor-selected.txt",
+      "sha256": "5568bd32e0a3b528440d8f9c0af1de3d4962a0e7dbb5eaf7b18f14e22c6fc7dd",
+      "total_lines": 391,
+      "required_ranges": [
+        [
+          1,
+          391
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          391
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "FALSE-CONTROL-MAP.md",
+      "sha256": "e9009367041615087470ac8688f9f43d9fcb457b605e6f67e5ef5c32e42e47da",
+      "total_lines": 16,
+      "required_ranges": [
+        [
+          1,
+          16
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          16
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "Lean-local-receipt.json",
+      "sha256": "8ba31756609f39d0db2b27264272fd8604d3e967e77584ab1533759daa37bc70",
+      "total_lines": 85,
+      "required_ranges": [
+        [
+          1,
+          85
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          85
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "Lean-statement-fence.md",
+      "sha256": "72c5fcb2738dce0db6c079447597cbec77ea7030e5be509ad9ac1eac4e77aff7",
+      "total_lines": 20,
+      "required_ranges": [
+        [
+          1,
+          20
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          20
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "MissingHalf.lean",
+      "sha256": "091c527b7ca6149d1385d9e40a75d15cb5d4771df932ab6aa018385b713b622a",
+      "total_lines": 5,
+      "required_ranges": [
+        [
+          1,
+          5
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          5
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "MissingHalf.txt",
+      "sha256": "201775299834f7d8c60672ae113e3e5156dadb0e74088c78a79e3e2f6f9c2500",
+      "total_lines": 2,
+      "required_ranges": [
+        [
+          1,
+          2
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          2
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "PhaseResponse.lean",
+      "sha256": "3faacb3a5c8518d449e21d8ca3a6b2a6461fd68a0dc84ee86f977e0cfb20b2c2",
+      "total_lines": 67,
+      "required_ranges": [
+        [
+          1,
+          67
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          67
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "WrongEndpoint.lean",
+      "sha256": "8f9a08a6ee3231f62d2f57573e62eb63ceb3e418a3208890c99552eedb9f4e29",
+      "total_lines": 5,
+      "required_ranges": [
+        [
+          1,
+          5
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          5
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "WrongEndpoint.txt",
+      "sha256": "78f5eb574a966e77bf36510d11333069c4ee019e8c19f8d6f08f25d265b11c3b",
+      "total_lines": 2,
+      "required_ranges": [
+        [
+          1,
+          2
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          2
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "WrongEnergy.lean",
+      "sha256": "f60a03f6f99329c39a4ff6d0aa2b91090b17b6dd95af21c201e566cf896b48c4",
+      "total_lines": 5,
+      "required_ranges": [
+        [
+          1,
+          5
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          5
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "WrongEnergy.txt",
+      "sha256": "76c5ed02f6a91fe958943b002168127545c727a315ab863513572250440bcf43",
+      "total_lines": 2,
+      "required_ranges": [
+        [
+          1,
+          2
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          2
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "WrongWindow.lean",
+      "sha256": "214c1afbcbbc1f4701ca523ab970b3109f1d756bcea6e7727eca5d2ea8d60525",
+      "total_lines": 7,
+      "required_ranges": [
+        [
+          1,
+          7
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          7
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "WrongWindow.txt",
+      "sha256": "d8af3e83ff7859edda93e69126bace83f50d30fe30feb0dc0d3a48d9dbb73ec1",
+      "total_lines": 4,
+      "required_ranges": [
+        [
+          1,
+          4
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          4
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "author-8-9.txt",
+      "sha256": "66290b2ec97d087d08d4c1fb8b430c277dccd1b48fb0e23bc08514b410d0d6d2",
+      "total_lines": 132,
+      "required_ranges": [
+        [
+          1,
+          132
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          132
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "gram-check.json",
+      "sha256": "462393b9fe42326c2115461a065b26fcf76b9cb34f57f92e059001c3d28a7445",
+      "total_lines": 193,
+      "required_ranges": [
+        [
+          1,
+          193
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          193
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "gram-check.py",
+      "sha256": "325482e9e5f8bce42744efe93269b15e4cd65309d5c5032cf4c0bdc8af442fe7",
+      "total_lines": 32,
+      "required_ranges": [
+        [
+          1,
+          32
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          32
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "phase-note.txt",
+      "sha256": "a9d2042014ab8d381c9fd47a31cb286fd74ba8ee6ded5b16b2f5f2067b500f6b",
+      "total_lines": 358,
+      "required_ranges": [
+        [
+          1,
+          358
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          358
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "quadrature.json",
+      "sha256": "dcedc671b0e44c7d5bc9122e62805475e68839c4968500a5528756123421f2a3",
+      "total_lines": 207,
+      "required_ranges": [
+        [
+          1,
+          207
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          207
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "quadrature.py",
+      "sha256": "13ab4b08570dcc4579842188c859f99c3f51e0851bb714b70bc34f6e5fcaba55",
+      "total_lines": 40,
+      "required_ranges": [
+        [
+          1,
+          40
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          40
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "reconnaissance.md",
+      "sha256": "e841a3be51ee950ef99474155e66188e279fe9cbac20d1e5be3dece40f9f8f39",
+      "total_lines": 69,
+      "required_ranges": [
+        [
+          1,
+          69
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          69
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "screen.json",
+      "sha256": "80f1d00da06aaed7904eb0fc54bab7593f600ca33f1a93af6a9e93248d594098",
+      "total_lines": 165,
+      "required_ranges": [
+        [
+          1,
+          165
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          165
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "screen.py",
+      "sha256": "0a758a42528b50d53a1ae46076f2f9c1731b1c29c74cbba52f5da6b08ce53178",
+      "total_lines": 29,
+      "required_ranges": [
+        [
+          1,
+          29
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          29
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "source-inputs.txt",
+      "sha256": "777051053289ad49656ecff08b01d019e3d36838b5291e5b4bcf0d178c731b7c",
+      "total_lines": 427,
+      "required_ranges": [
+        [
+          1,
+          427
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          427
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "source-map.md",
+      "sha256": "3f5f0be8109d23c03843d65e936f799fb45ed8ecabfe4d86e64d610dfa19e31d",
+      "total_lines": 19,
+      "required_ranges": [
+        [
+          1,
+          19
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          19
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "source-rendering.json",
+      "sha256": "23bb26e507e82ad81ad17af0a82fad3bc488b00e4fbfaf9343634a7120a0dfde",
+      "total_lines": 16,
+      "required_ranges": [
+        [
+          1,
+          16
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          16
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "types-and-axioms.txt",
+      "sha256": "c9e4067aa58979dc38187690348af12fdc786125e0b9daaca89d0e5a9ab60fc8",
+      "total_lines": 226,
+      "required_ranges": [
+        [
+          1,
+          226
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          226
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    }
+  ],
+  "image_proves": "Each delivered image: a direct Read tool_use of its exact workspace path, in the stream's session, is paired by id with a tool_result (same session) whose content is one inline base64 image block of the declared media type, and the base64 decodes to bytes whose sha256 is the declared one.",
+  "image_does_not_prove": "That the model looked at, understood or correctly interpreted the image, or any scientific acceptance of what it shows: only delivery of these exact bytes. Transformed or resized content, metadata and self-reports earn nothing, so an undelivered image may still have been seen in another form.",
+  "required_images": [
+    {
+      "path": "author-8.png",
+      "sha256": "6d9272043e1044574254152d5994c40db37cf0c724c3f85b3755a2cfe9dcf3ab",
+      "media_type": "image/png",
+      "status": "delivered",
+      "delivered_by": [
+        "toolu_01D2fGdnECMp6beKj2wufaof"
+      ]
+    },
+    {
+      "path": "author-9.png",
+      "sha256": "431d724040a3774dbe2859f85fdeb91b7f89dfe56d16ef9eb574d6f60460afe7",
+      "media_type": "image/png",
+      "status": "delivered",
+      "delivered_by": [
+        "toolu_01AaU5scmoA5eiT5HVZpTmEL"
+      ]
+    }
+  ],
+  "tool_calls": [
+    {
+      "id": "toolu_01MjGmYxktTKtzE3TSWsZ8cf",
+      "tool": "Read",
+      "source": ".review/required-sources.json",
+      "plan_copy_read": [
+        ".review/required-sources.json"
+      ],
+      "uncredited": "runner-owned plan copy (.review/): never read credit",
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_018sfLu1mjNeZ6jgnyxdQzEV",
+      "tool": "Read",
+      "source": "phase-note.txt",
+      "credited": {
+        "phase-note.txt": [
+          [
+            1,
+            358
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01JoSfZeeR5V6BSqmpskBZuP",
+      "tool": "Read",
+      "source": "Balan-Tudor-selected.txt",
+      "credited": {
+        "Balan-Tudor-selected.txt": [
+          [
+            1,
+            391
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01RS5J4E7q8g4bGJH88aYozW",
+      "tool": "Read",
+      "source": "PhaseResponse.lean",
+      "credited": {
+        "PhaseResponse.lean": [
+          [
+            1,
+            67
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01DNMGLziJCQcjsPLrUNSBBF",
+      "tool": "Read",
+      "source": "types-and-axioms.txt",
+      "credited": {
+        "types-and-axioms.txt": [
+          [
+            1,
+            226
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01P3qLoWZakP5XDv4w7xgMA8",
+      "tool": "Read",
+      "source": "Lean-local-receipt.json",
+      "credited": {
+        "Lean-local-receipt.json": [
+          [
+            1,
+            85
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01X4jnBKQf7dwDBmAeJRfdVb",
+      "tool": "Read",
+      "source": "Lean-statement-fence.md",
+      "credited": {
+        "Lean-statement-fence.md": [
+          [
+            1,
+            20
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01J8AWBKABHbVvLfvCKeuq4r",
+      "tool": "Read",
+      "source": "FALSE-CONTROL-MAP.md",
+      "credited": {
+        "FALSE-CONTROL-MAP.md": [
+          [
+            1,
+            16
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01M25T6VhgQY62T3bgyM4qyy",
+      "tool": "Read",
+      "source": "MissingHalf.lean",
+      "credited": {
+        "MissingHalf.lean": [
+          [
+            1,
+            5
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_012ZYxyj2yYUEvHmJtdhGSKj",
+      "tool": "Read",
+      "source": "MissingHalf.txt",
+      "credited": {
+        "MissingHalf.txt": [
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01Gb8gGvBBoALAvPn3H7PAab",
+      "tool": "Read",
+      "source": "WrongEndpoint.lean",
+      "credited": {
+        "WrongEndpoint.lean": [
+          [
+            1,
+            5
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01UCukobibmfjpKe2FPQhuad",
+      "tool": "Read",
+      "source": "WrongEndpoint.txt",
+      "credited": {
+        "WrongEndpoint.txt": [
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01CQQEKHJxutJd9GajNwrSGK",
+      "tool": "Read",
+      "source": "WrongEnergy.lean",
+      "credited": {
+        "WrongEnergy.lean": [
+          [
+            1,
+            5
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01Eu399cc8AaisXDMNBp7pG6",
+      "tool": "Read",
+      "source": "WrongEnergy.txt",
+      "credited": {
+        "WrongEnergy.txt": [
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01BhaLdDYtECNbLKgMNXmtm1",
+      "tool": "Read",
+      "source": "WrongWindow.lean",
+      "credited": {
+        "WrongWindow.lean": [
+          [
+            1,
+            7
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_015eG1Gh2ud9SAKQtN9j4GJu",
+      "tool": "Read",
+      "source": "WrongWindow.txt",
+      "credited": {
+        "WrongWindow.txt": [
+          [
+            1,
+            4
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01BcMYJ4DseJTMB4aJEWopSp",
+      "tool": "Read",
+      "source": "author-8-9.txt",
+      "credited": {
+        "author-8-9.txt": [
+          [
+            1,
+            132
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01D2fGdnECMp6beKj2wufaof",
+      "tool": "Read",
+      "source": "author-8.png",
+      "uncredited": "non-text result (image, PDF or block list)",
+      "stream": "attempt",
+      "image": {
+        "path": "author-8.png",
+        "media_type": "image/png",
+        "decoded_sha256": "6d9272043e1044574254152d5994c40db37cf0c724c3f85b3755a2cfe9dcf3ab",
+        "delivered": true
+      }
+    },
+    {
+      "id": "toolu_01AaU5scmoA5eiT5HVZpTmEL",
+      "tool": "Read",
+      "source": "author-9.png",
+      "uncredited": "non-text result (image, PDF or block list)",
+      "stream": "attempt",
+      "image": {
+        "path": "author-9.png",
+        "media_type": "image/png",
+        "decoded_sha256": "431d724040a3774dbe2859f85fdeb91b7f89dfe56d16ef9eb574d6f60460afe7",
+        "delivered": true
+      }
+    },
+    {
+      "id": "toolu_0167aAHisEU5DUexBrARNCbv",
+      "tool": "Read",
+      "source": "gram-check.json",
+      "credited": {
+        "gram-check.json": [
+          [
+            1,
+            193
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01Ef3raKwjXqLC81rRJsV3rW",
+      "tool": "Read",
+      "source": "gram-check.py",
+      "credited": {
+        "gram-check.py": [
+          [
+            1,
+            32
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01HEEYmRcRCG1M322ZXBE3uQ",
+      "tool": "Read",
+      "source": "quadrature.json",
+      "credited": {
+        "quadrature.json": [
+          [
+            1,
+            207
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01EEXfgePUaPhYdoCc6AK92v",
+      "tool": "Read",
+      "source": "quadrature.py",
+      "credited": {
+        "quadrature.py": [
+          [
+            1,
+            40
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01FMATHpoBdxYozFpXsKJA9T",
+      "tool": "Read",
+      "source": "reconnaissance.md",
+      "credited": {
+        "reconnaissance.md": [
+          [
+            1,
+            69
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01KXwcZDsHwzRFtxefYcvaG4",
+      "tool": "Read",
+      "source": "screen.json",
+      "credited": {
+        "screen.json": [
+          [
+            1,
+            165
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01Gotoe2Nfb7WvFKynWAhLeB",
+      "tool": "Read",
+      "source": "screen.py",
+      "credited": {
+        "screen.py": [
+          [
+            1,
+            29
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_019rJAnnjLH83to1hj4u6h7A",
+      "tool": "Read",
+      "source": "source-inputs.txt",
+      "credited": {
+        "source-inputs.txt": [
+          [
+            1,
+            427
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_0153u4BYJCz8KqFk7UUQJbaZ",
+      "tool": "Read",
+      "source": "source-map.md",
+      "credited": {
+        "source-map.md": [
+          [
+            1,
+            19
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_016sy9xfftCBDjYcofMBRmJV",
+      "tool": "Read",
+      "source": "source-rendering.json",
+      "credited": {
+        "source-rendering.json": [
+          [
+            1,
+            16
+          ]
+        ]
+      },
+      "stream": "attempt"
+    }
+  ],
+  "diagnostics": []
+}
