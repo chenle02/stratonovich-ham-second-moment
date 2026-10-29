@@ -1,95 +1,108 @@
-Last updated: 2026-10-29 08:10 UTC
+Last updated: 2026-10-29 08:38 UTC
 
-Original full upper/sharp goal ACTIVE;fifth cold review is the immediate gate.
+Original full upper/sharp goal ACTIVE;mild-identification proof is next.
 
 ## ⏭ Next session: where to stand and what to do
 
-Inspect the fifth cold-reader attempt in
-reviews/2026-10-29-full-upper-cold-v5 before starting anything else.
-The current run intends to launch native-v1 immediately after this handoff.
-If native-v1/execution.json or active-cold-handle.json exists,revalidate the
-actual process/session and collect or wait;do not restart on an observation
-timeout. If terminal records/archive exist,collect/adjudicate rather than
-rerunning. Only if no live or terminal evidence exists,launch exactly once:
+Implement the concrete mild-equation dependency repair from
+reviews/2026-10-29-full-upper-cold-v5/mild-identification-repair-plan.md.
+Do not re-poll or restart cold-v5:it is TERMINAL,fully collected,adjudicated,
+archived and cleaned. Its actual source20c5571 returned NOT CLEAR,item2.
+The next step is actual proof writing,not another unchanged cold review.
 
-```bash
-python3 reviews/2026-10-29-full-upper-cold-v5/launch.py
-```
-
-Hold every Git writer until native terminal collection. The actual dispatch
-source revision is recorded by the launcher,not inferred from this handoff.
-This is a fresh free-form DeepSeek V4-Pro read of the finalized proof.
-All four earlier cold reports remain NOT CLEAR for their own source versions.
-The original full upper/sharp goal remains ACTIVE;sharp constant still open.
+The source's Section5(ii),pp35--36,uses(5.3) for arbitrary vertex widths.
+Show our corrected crude argument gives a uniform mixed-vertex q_n(t).
+Then use the elementary occupied finite-Gaussian-degree multiplication bound
+and Bochner/Green limits to prove the onefold Stratonovich mild equation
+independently. No new hypercontractivity import is needed. The plan has a
+complete proposed dependency order;it is NOT yet a proof or accepted result.
+Keep every original upper/sharp hypothesis. Fresh primary/HIGH and then
+fresh cold follow actual repairs;no completed reader may be resumed.
 
 ## Pre-flight checks
 
-1. Read Progress.md as workflow authority and the explicit-justifications
-   adjudication-v1.md/final-status-binding.json. Original goal/class unchanged.
-2. Canonical adoptionf489938082557abd97418b2a2e8669786df17e4e:89pages,
-   46proofs. Fresh primary source431a3d685752224da3ce480214f6d62562b19c1b
-   returned17PASS/HIGH,846.204s,23texts/24images exact,accepted/coverage true.
-3. All8minor findings adjudicated. Final statements all as reviewed;
-   44of46proofs byte-equal. Two minor explanatory bodies:P:interval-coefficients
-   and T:full-upper. New finite-word/fixed-split proofs are exactly reviewed.
-4. Main theorem13.8p84;fixed-split13.4p74;finite-word12.3p66.
-   Cold packet1e5f836d1cadf8c1cbc2689f4dfc5bcd2f2bd6a4:88blind pages,
-   all46proofs/every formal type equal. Full manuscript/bibliography inline;
-   six pinned source texts available,verbatim canonical free-form request.
-5. No checklist,old reports or grade supplied. Explicit actual model is
-   deepseek/deepseek-v4-pro,read-only isolated TEMP.git cwd and --dir,
-   131072output cap. Actual route/prompt/HEAD/source reads require collection.
-6. Source-authoritative URL is aap-chen-2025.pdf;online bytes still match our
-   pinned64page author version. hp-23.pdf is a different older69page public
-   version with an exact-mean abstract;do not substitute it.
-7. All older jobs terminal. Accepted primary130member archive and fourth
-   cold17member archive fully read-back hash verified before own raw cleanup.
-8. Local/origin/<HUB> parity before editing;serialize ref mutations.
-   No foreign WIP known. During the cold run,its own metadata is expected WIP.
-9. Lean L0/PROPOSED,no package/lease/code/build before decision4. Canonical
-   wiki unchanged,PRIVATE proposal current. Seven references already queued;
-   follow-up found no useful newly absent work,so no duplicate tickets.
+1. Read Progress.md,the fifth cold report/adjudication and the repair plan.
+   SourceSection5(ii) actually invokes(5.3);this is a concrete consumer gap,
+   not a request for another operator explanation. Core checked parts were
+   described as correct,but all five cold reports remain NOT CLEAR.
+2. Pre-handoff checkpointb4751f0 records current disposition. Canonical
+   mathematical adoptionf489938:89pages,46proofs,Theorem13.8p84. No TeX/PDF
+   mathematics changed in the fifth-cold disposition. Primary431a3d6 had
+   17PASS/HIGH,complete23texts/24images;that does not waive new item2.
+3. Cold20c5571:actualV4-Pro899.313s,24successful tools,complete initial
+   prompt and source/model/HEAD bindings verified,partial source reading.
+   All14items adjudicated. Native20member archive fully read-back hash
+   verified;raw own workspace/native directory removed. No live reviewer.
+4. Existing L:crude-corrected proof already has width-uniform pair-norm
+   ingredients. Make the arbitrary vertex-array conclusion explicit before
+   inner widths go to zero. Use theta=theta0+n/t,not the faulty n/t rule.
+5. Each finite-order term/limit lies in Gaussian degree<=n INCLUDING traces.
+   Multiplication by W(h) on degree<=n costs at most2sqrt(n+1)||h||,proved
+   by one-coordinate Hermite raising/lowering and closedness. Do not use a
+   fresh-vacuum estimate for this coupled external noise. 522exact rational
+   cases pass;F=g with externalg gives norm squared3versus false vacuum1.
+6. Inner fixed-order L2 convergence plus stationarity makes spatial error
+   uniform in y. Uniform limit of smoothed continuous vectors yields the
+   spatial continuity needed for d3 weak Green convergence. Integrate at
+   fixed outer noise widths first;then use joint Theorem4.1 convergence to
+   remove outer widths,with width-uniform order tails. No uniqueness claim.
+7. Collector lesson:pipe export exited0 but truncated at65536bytes. Raw
+   failure retained;regular-file export of SAME completed session passed.
+   collect.py is evidence tooling,not a scientific grade. Do not relaunch.
+8. Local/origin/<HUB> parity before editing;serialize ref writes.
+   No foreign WIP known. Source PDFs/All.bib/siblings/canonical wiki unchanged.
+9. Lean L0/PROPOSED;no package/lease/code/build before decision4. PRIVATE wiki
+   proposal current but unpublished. No new absent reference found;do not
+   duplicate the seven existing reference tickets.
 
 ## Concrete deliverables for the next session
 
-- Collect the fifth cold report and actual model/full prompt,held HEAD,
-  input stability and source-tool coverage. Read its concern prose without
-  inventing a confidence grade or using17HIGH as a waiver.
-- Adjudicate every finding. Any substantive repair needs actual changed
-  mathematics and a fresh source-bound primary/HIGH before another cold read.
-- Archive terminal native/workspace contents with every-member readback
-  hashes before removing only owned raw directories. Never restart a live or
-  completed review merely for a preferred verdict.
-- Reconcile Progress.md,README,PRIVATE wiki proposal and this handoff with
-  the actual outcome. Canonical wiki/notification boundary remains open.
-- Retain all source-normalization,scope,novelty,human/formal and circulation
-  boundaries. The prospective lower-route static comparison is a question
-  in retrieval-followup.md,not an approved proof wave or partial result.
+- Write and prove the uniform arbitrary-vertex bound and the independent
+  mild-construction statement for the original class. Likely two added
+  statements/proofs(46->48);derive actual counts,do not change old guards by
+  assumption. Keep existing statement scope and first-moment qualifications.
+- Update all consumers:main dependency paragraph,P:mixed series passage,
+  final theorem limit trace and status/README. The moment-bound route can
+  remain independent of the crude bound,while the new mild identification
+  explicitly uses it. Do not hide that distinction or assert uniqueness.
+- Pinpoint sourceDefinition2.1,Theorem3.1,LemmaA.1,Theorem4.1 and Section5(ii).
+  New rendered source pages require a complete-cohort native carrier
+  calibration BEFORE science. Prior24PNGcoverage is not coverage of added
+  pages. Keep all old failure receipts unchanged;no relaxed thresholds.
+- Clean TeX/PDF build,immutable source/change binding,new source-bound primary
+  at HIGH,then fresh prior-blind ungraded whole-paper read. Adjudicate every
+  finding;do not restart unchanged sources merely to get acceptance.
+- Update Progress.md,PRIVATE wiki status and handoff,commit/push/<HUB>
+  parity. No direct canonical publication/automatic notification approval.
+- Sharp constant remains open. The reversed amplification screen reuses
+  old static-white coefficients:gap1/80;not an eventual-time or prefactored
+  no-go,new reviewed theorem,or authorization for a lower proof wave.
 
 ## Success criteria for the immediate next step
 
-The fresh full-paper report is bound to the finalized88blind-page source,
-all46proofs and actual native route. Every concern is adjudicated,with source
-availability separated from actual consultation. Original d1--3 covariance
-class,upper/sharp goals and conditional numerical calibrations remain intact.
-Whole-paper correctness is separate from novelty,Lean,human/circulation and
-canonical wiki provenance. The overall goal is not complete.
+A complete written proof identifies the Gaussian series as a Stratonovich
+mild solution using the corrected bound,without source(5.3)/(5.4) or the
+source's Section5(ii) proof. Every product,inner/outer width,Green and order
+limit is justified in the actual order. Proof passes fresh source-bound
+primary/HIGH and cold gates. Original full covariance/dimension and upper/
+sharp targets preserved;no uniqueness,novelty,Lean or circulation promotion.
 
 ## Anti-success criteria
 
-- Reusing an earlier HIGH verdict for new mathematics or claiming any earlier
-  cold report cleared its source.
-- Restarting a live/completed native call,committing while HEAD is held,
-  treating silence/quota/missing report as a mathematical verdict.
-- Losing self-pairings or confusing selected finite-coefficient cutoff
-  equality with equality of full fixed-cutoff propagators.
-- Estimating an occupied colour by a fresh-vacuum bound,or bounding inverse
-  length separately instead of the whole increasing metric weight.
-- Assuming full unsmoothed convergence before uniform geometric tails,
-  or using amplitude-two tail constant as the amplitude-one final constant.
-- Adopting a source-normalization correction,claiming sharp/novelty/Lean,
-  creating a companion without approval,developing the Skorohod problem,
-  contacting anyone,editing siblings or submitting cluster jobs.
+- Repeating another cold read of unchanged mathematics or treating17HIGH as
+  a waiver for the concrete mild-identification gap.
+- Using the source's false all-time constant or asserting its fixed-t repair
+  without proving the mixed-vertex and onefold-integral consumers.
+- Applying an independent-vacuum bound to W_ext times its coupled inner
+  polynomial,losing lowering terms,or assuming u already solves the SPDE.
+- Invoking joint width convergence as a partial-limit theorem without proving
+  fixed-outer-width product/Bochner convergence first.
+- Swapping d3 Green/noise limits,or assuming unproved spatial measurability/
+  continuity when integrating a random field against the Green measure.
+- Treating a successful pipe-export exit code as complete JSON,or salvaging a
+  truncated prefix. Preserve raw failure and re-export the same session.
+- Adopting source normalization,creating Lean without approval,working the
+  Skorohod problem,contacting anyone,publishing or using cluster jobs.
 
 ## What the previous sessions produced
 
@@ -373,18 +386,36 @@ Latest checkpoints:
   full manuscript/bibliography inline,six source texts available. READY;
   native scientific launch follows this handoff. All prior colds NOT CLEAR.
 
+- 2026-10-29 fifth-cold dispositionb4751f0:actualV4-Pro899.313s,24tools,
+  complete prompt/model/HEAD/input binding,partial primary-source reading.
+  All14items adjudicated;NOT CLEAR for source20c5571. Main item2asks explicit
+  repair of source5(ii)'s dependency on faulty(5.3). Core described coherent;
+  no new operator counterexample. Concrete independent-mild proof plan saved.
+- 2026-10-29 collect.py replays completed predecessor exactly and refuses7
+  corrupted records. Actual pipe export exited0 with65536byteincompleteJSON,
+  rejected. Same-session regular-file export passed all bindings. Failed
+  raw retained;all20native/workspace archive members verified before cleanup.
+- 2026-10-29 multiplication-screen.*:522exact rational Gaussian polynomial
+  cases,degrees0--8/two coordinates;creation and annihilation retained;
+  coupled negative control norm squared3vs false vacuum1. Diagnostic only.
+- 2026-10-29 lower-orientation-screen reuses old reviewed a1=1/12,
+  a2=11/17280,A2=11/540. Amplified squared-mean degree4=71/2160,gap1/80.
+  Reverse all-time unit-prefactor shortcut fails static coefficient screen;
+  no new eventual/asymptotic no-go or sharp proof claim. Read-only sibling/
+  MSN/zbMATH follow-up adds no adopted correction or novelty clearance.
+  PRIVATE wiki proposal reconciled to fifth-cold NOT CLEAR;canonical unchanged.
+
 ## Repo & git state at handoff
 
-- master;pre-handoff HEAD1e5f836d1cadf8c1cbc2689f4dfc5bcd2f2bd6a4,
-  canonical adoptionf489938082557abd97418b2a2e8669786df17e4e. Both pushed
-  and <HUB>-synchronized. Only HANDOFF.md in this dedicated commit.
-- Canonical89page source/PDF and88page blind packet committed. All46proofs
-  and every formal type equal in blind copy. No WIP before this handoff.
-- No process live at handoff commit. Current run intends to launch cold-v5
-  native-v1 next;later execution.json/active-cold-handle/native outputs are own
-  WIP. Inspect actual state before doing anything;do not blindly relaunch.
-- All older primary/cold/calibration jobs terminal and verified archives.
-  No private Lean repository,public release or external correspondence.
+- master;pre-handoff checkpointb4751f0 (fifth-cold disposition),canonical
+  mathematical adoptionf489938082557abd97418b2a2e8669786df17e4e. Pushed and
+  <HUB>-synchronized before this dedicated HANDOFF-only commit.
+- Canonical89page source/PDF,46proofs remain unchanged. All cold-v5 evidence,
+  collector,diagnostics,adjudication and next proof plan committed.
+- No live job. Cold native/workspace owned raw removed only after verified
+  archive;do not recreate/restart that attempt. No WIP before this handoff.
+- No source PDF,All.bib,sibling,canonical wiki,system setup,private Lean
+  package,external correspondence or public-release mutation.
 
 ## Operating notes
 
@@ -426,7 +457,8 @@ was previously placed on <MACHINE> tag4;no persistent display setup was changed.
 ## Risks to monitor
 
 1. Explicit-justification core PASSED source-complete17HIGH primary. Final
-   source has two minor explanatory proof changes;fresh whole-paper read open.
+   source has two minor explanatory proof changes;fifth cold requires a new
+   independent mild-identification proof,not more status disclaimers.
 2. Full sharp p2 constant remains open;upper constant nonsharp.
 3. Source E_star/E normalization conflict has no adopted correction.
 4. Full class must not be replaced by a Riesz/angular subclass.
