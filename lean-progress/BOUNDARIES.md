@@ -40,3 +40,8 @@ forb>=1,c>1,withderivedrootinverseidentities,originaldenominatorsigns and
 300termcertificate. Exactresolventdivideddifferencealsochecked. Source/type
 applicationpending;physicalwave/Brownianbridge/survival/integral identities
 areoutsideLean. White1Dfourverticesonly,notgeneralclass/allorder/sharpSPDE.
+
+Middle-cross close: all seven actual scalar types/application passed the C5
+checks within the six-group / seventeen-check HIGH review at e638186. The
+wave/bridge/survival/integration identifications remain informal, reviewed
+analytic inputs. Formal proof source and all seven signatures are unchanged.

@@ -29,10 +29,10 @@ analytic/type/applicationreview at6475ea0,not five separate six-checkreviews.
 
 | Name | Scope | Status |
 |---|---|---|
-| certificate_pos | Positive300termHornercertificate | Localcompile/replay;applicationpending |
-| parameter_identity | Exactrationalparameterizednumeratoridentity | Localcompile/replay;applicationpending |
-| parameter_numerator_pos | z>=2,t>1giveclearednumeratorpositive | Localcompile/replay;applicationpending |
-| difference_identity | ActualrationalI-Uequalsnum/positiveoriginaldenominator | Localcompile/replay;applicationpending |
-| resolvent_difference | ExactnonsingularMdivideddifference | Localcompile/replay;applicationpending |
-| root_numerator_pos | Actualrootsgiverootparameterizationandpositivenum | Localcompile/replay;applicationpending |
-| middle_bound | ACTUALstrictU<Iwithbothsquarerootsanddomain | Localcompile/replay;applicationpending |
+| certificate_pos | Positive300termHornercertificate | Local compile/replay; application HIGH at e638186 |
+| parameter_identity | Exactrationalparameterizednumeratoridentity | Local compile/replay; application HIGH at e638186 |
+| parameter_numerator_pos | z>=2,t>1giveclearednumeratorpositive | Local compile/replay; application HIGH at e638186 |
+| difference_identity | ActualrationalI-Uequalsnum/positiveoriginaldenominator | Local compile/replay; application HIGH at e638186 |
+| resolvent_difference | ExactnonsingularMdivideddifference | Local compile/replay; application HIGH at e638186 |
+| root_numerator_pos | Actualrootsgiverootparameterizationandpositivenum | Local compile/replay; application HIGH at e638186 |
+| middle_bound | ACTUALstrictU<Iwithbothsquarerootsanddomain | Local compile/replay; application HIGH at e638186 |

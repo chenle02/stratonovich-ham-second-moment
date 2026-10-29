@@ -6,10 +6,10 @@
 
 ## Current state
 
-- **Phase:** terminal-cross/self WHITEcomparison accepted6PASS/HIGH at6475ea0. Two new white diagrams give11of15WHITEterms;the original covariance-class count remains9with6left. Fourwhite/fullsum/allorder/sharp targets remainOPEN. Positive-mixture kernel envelope plus the ACTUALstrict scalarconsumer (five localLeanlemmas)are checked;model/integralproofs remaininformal.
+- **Phase:** middle-cross/self WHITE comparison accepted at six groups / seventeen checks HIGH, source e638186. Two new white diagrams give13of15WHITE terms; the original covariance-class count remains9with6left. Full sum, all orders and the original sharp target remain open. Seven actual scalar Lean deductions and their analytic application are checked; the model/integral proofs remain informal.
 - **Review boundaries:** prior92page quantitative/mild source `a7e725e` passed its own19checks/HIGH. The new8check review covers the direct norms, positive spatial Wick-measure limit, arbitrary joint vertex-width construction and their consumers. It does NOT freshly audit every unchanged operator/interval proof. Exact source/delivery/adoption bindings and limitations are in `reviews/2026-10-29-fixed-order-construction/`.
-- **Current artifact:**canonical110pages/60proofs andTeX/PDFunchanged. Accepted researchmemos:degree-four-clock-probe.md(9original-class terms)andterminal-cross-comparison.md(2additionalWHITEterms,5localLeanconsumers,type/application6HIGH). Canonical last build remains0errors/undefined/overfull/tabs;final bindings are scope-specific in the two review directories. No new.texbuild or fullpaper clearance is implied.
-- **Open targets:** full fixed-positive-alpha0 sharp p2 constant via model information; focused exposition/whole-paper clearance; separate companion creation still pending; canonical wiki provenance and novelty/circulation. The white (1,3)02|13 comparison and its mirror now have a complete candidate analytic proof and a locally verified actual two-root scalar consumer. Independent analytic/source/type/application review is pending; the accepted counts remain 11 white and 9 original-class terms. No numerical normalization correction adopted.
+- **Current artifact:** canonical110pages/60proofs and TeX/PDF unchanged. Accepted research memos: degree-four-clock-probe.md (9original-class terms), terminal-cross-comparison.md (2additionalWHITE terms) and middle-cross-comparison.md (2additionalWHITE terms). The last has seven local scalar Lean deductions and a separate six-group/seventeen-check HIGH analytic/type review. No new TeX build or whole-paper clearance is implied.
+- **Open targets:** full fixed-positive-alpha0 sharp p2 constant via model information; full Stratonovich aggregate/all orders/original covariance class; focused exposition and whole-paper clearance; companion creation decision4; canonical wiki provenance and novelty/circulation. The two remaining WHITE diagrams are fully cross(2,2): do not develop them as a separate Skorohod result. Return to full Stratonovich model information and original sharp target. No numerical normalization correction adopted.
 - **Agent8coordination:** completed at read-only source/statement/ownership level,as requested by Le. Agent8accepted our exact map;three API component fits and stronger-premise gaps are recorded in lean-progress/coordination/2026-10-29-agent8/reuse-adjudication.md. Current coefficient gate sourced5fde707,evidence successorbffd4329;historical SWE receipts remain e5e9558. Source/API/pins checked;no donor-package build/gate/companion/lease/registry transaction. Local Lean pilot is recorded separately. L0/PROPOSED and decision4unchanged.
 - **Authorization:** Le's continuing full goal includes the sharp/lower track. The current wave is the previously proposed bounded static-comparison/inequality step,with the HIGH review threshold unchanged. It does not redefine the original all-alpha0sharp target,claim novelty or promote a paper. Le now explicitly permits Lean verification;standalone local checks do not create a companion repo. Report/honor PROJECT-GOAL decision points;companion-creation decision4remains pending. No correspondence/public release authorized.
 - **Worker:** Codex/GPT author, paper-dev workflow; historical project handoff to agent #30 on 2026-10-26. Lean remains L0/PROPOSED (`lean-progress/PROGRESS.md`). Nine normal reference requests exist; new edition-custody intake is nonblocking, not source authentication.
@@ -3356,3 +3356,41 @@ entirely unchanged. No new absent-six-repository reference was needed; the
 nine existing reference tickets persist. The remaining fully cross(2,2)
 patterns must not become a separate Skorohod research problem; future work
 must preserve the full Stratonovich aggregate/original-class sharp target.
+
+
+### Middle-cross analytic/type gate accepted: six groups, seventeen checks HIGH
+
+Native first-party Opus5.5,308.793seconds,sourcee638186; all17individual
+checks in6contract groups PASS, no required repairs, accepted=true,
+coverage=true. Service exit0,23text/CSV sources and12exact source images.
+Held HEAD/tree clean before collection; source/contract/actual model/auth,
+event stream and read-ledger hashes verified. Native58/local64-member raw
+archives read back member-by-member; readable copies map filesystem prefixes
+only. All6minor findings adjudicated. No favorable failed transport or
+unchanged confidence retry is counted.
+
+Accepted WHITE13:02|13 and mirror31:02|13 satisfy J<=Jplus<=U<I for
+positive CROSSlambda and nonnegative SELFnu. Fractional averages are strict
+for all0<a<1 and common theta>0; lambda0 is exact equality. The mirror swaps
+canonical pair parameters. WHITEcount13of15, original covariance-class9of15.
+The seven formal scalar statements, actual two roots and original denominator
+signs have compile/replay/standard-three-axiom evidence. Their exact types
+and analytic application passed C5; Gaussian/wave/bridge/survival/integration
+remain informal reviewed inputs. Proof source and all displayed formula
+blocks are unchanged after review. Public signatures match every preserved
+development source; root independently rechecked both owned object hashes.
+
+Final note spells out the already-reviewed strip-edge derivative, positivity
+and clock scaling. The current false-control map narrows doubled-envelope
+credit to its actual claim. Supplemental calibration's prior input path/hash
+is bound, but was not in the packet; no reviewer execution credit is claimed.
+Canonical110-page/60-proof TeX/PDF is entirely unchanged. Local checks total
+fifteen supporting statements (3clock-filter,5terminal,7middle), not fifteen
+formal SPDE theorems. CompanionL0/PROPOSED and decision4 remain unchanged.
+
+[held back: collaborators' unpublished work]
+
+Agent8 FYI da82522a4e45: fresh-resolved <MACHINE>/n8 and sender#3, exact
+e638186 source/pins/scope sent under Le's standing coordination request.
+Transport reported delivered; receipt is not proof of package work completed.
+No action requested and no package/gate ownership changed.

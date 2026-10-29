@@ -8,8 +8,8 @@ All current controls set autoImplicit=false and use fully qualified symbols.
 - WrongZeroShift uses b=1,c=11/10. The root-shift-erased M(0) is
   1025/21483,above actual545/11616. It tests a false SHORTCUT,not J<=I.
 - WrongPrefactor uses b=4/3,c=9/4,d=29/12,e=5/3,which satisfy the exact
-  square-root identities. U=51329/9827636,I=5277/706552;2U>I. The missing
-  heat-Jacobian factor makes the proposed comparison false.
+  square-root identities. U=51329/9827636,I=5277/706552;2U>I. This rejects a doubled-envelope
+  comparison at that valid point; it does not locate a physical prefactor error.
 - WrongEndpoint uses the ACTUALtwo square roots at b=4/3,c=1. Both roots
   reduce to4/3and5/3,andU=I=189/7744. The strict theorem requires c>1.
 - WrongInverse uses the same valid roots,Z=3. Correct T=(d+c)/(b+1)=2;

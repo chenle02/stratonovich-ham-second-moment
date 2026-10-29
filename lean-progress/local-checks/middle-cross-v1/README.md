@@ -12,4 +12,5 @@ andautoImplicit=falsefixname resolution;proofbytesunchanged.
 
 This isnot a companion/package/lease/registry/cluster/Comparatorgate. The
 wave/heatbridge/survival/integral reductions andtheir application remain
-informal analytic obligations;independentsource/type/applicationreviewpending.
+informal analytic obligations;independent source/type/application review passed at six groups / seventeen
+checks HIGH (source e638186). The analytic proof remains outside Lean.

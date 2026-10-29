@@ -1,3 +1,11 @@
+Latest private proposal: WHITE13 versus original covariance-class9, from
+middle-cross/self sourcee638186, six groups/seventeen checks HIGH. Two white
+fully-cross patterns, six general-class terms, full sum/all orders/sharp
+remain open. Seven new actual scalar Lean deductions; analytic application
+reviewed, no formal SPDE/package claim. Agent8 FYI da82522a4e45 sent with
+exact pins/ownership boundary. Canonical publication is not requested or
+enqueued. The entries below retain earlier private checkpoint history.
+
 Latestprivateproposal:white11vsoriginalclass9finite-degreecomparison,
 terminal-cross6HIGHat6475ea0;fourwhite/sixgeneralandsharpremainOPEN.
 No canonical publicationrequested/enqueued/authorizedhere.

@@ -92,5 +92,6 @@ The actual two-root consumer U<I for b>=1,c>1, root parameterization and
 replay and five definition-level False controls pass. Initial compile/setup
 errors are preserved. Seven public facts reuse read-only pins; no new
 companion, package, lease, registry, cluster or Comparator gate is opened.
-Analytic/type/application review is pending. Evidence:
+Analytic/type/application review passed six groups / seventeen checks HIGH
+at e638186. The formal proof source is unchanged after review. Evidence:
 local-checks/middle-cross-v1/local-receipt.json. L0 remains PROPOSED.

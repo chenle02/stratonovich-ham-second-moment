@@ -1,11 +1,13 @@
 # Middle-cross/self comparison in white space
 
-Status: candidate analytic proof and local Lean consumer; source/type/application
-review is pending. The scope is d=α=1, Γ=δ₀, raw temporal exponent 0<a<1,
+Status: accepted scoped analytic/type/application review, six groups and
+seventeen checks PASS/HIGH at source e638186. See
+reviews/2026-10-29-middle-cross/adjudication-v1.md. The scope is
+d=α=1, Γ=δ₀, raw temporal exponent 0<a<1,
 and common gap damping θ>0. A positive multiple of δ₀ contributes the same
 positive square to every four-vertex term. The original general covariance
-comparison remains at nine terms. This note would add two WHITE terms only,
-giving thirteen there if accepted. It does not solve the all-order or sharp
+comparison remains at nine terms. This note adds two WHITE terms only,
+giving thirteen there. It does not solve the all-order or sharp
 constant problem.
 
 The ordered diagram definitions, the analytic shared clock and their white
@@ -19,12 +21,12 @@ For split (1,3), the singleton is vertex 0 and the long chain is 1<2<3.
 The partition is 02·13. Attach λ≥0 to the CROSS pair 02 and ν≥0 to the SELF
 pair 13. Let I be the actual wave transform and J the shared-clock candidate.
 Delete the nonnegative clock-overlap penalty to define the enlarged candidate
-J⁺≥J. We propose the strict comparison
+J⁺≥J. We prove the strict comparison
 
     0<J(λ,ν)≤J⁺(λ,ν)≤U(b,c)<I(λ,ν),  λ>0,ν≥0,             (T)
     b=1+ν, c=1+λ.
 
-At λ=0 all four quantities agree. Fractional averaging would give J_a<I_a
+At λ=0 all four quantities agree. Fractional averaging gives J_a<I_a
 for every 0<a<1. The mirrored (3,1) partition is also 02·13, but canonical
 pair 02 is then SELF and pair 13 is CROSS. Its parameters must be exchanged.
 
@@ -38,9 +40,9 @@ spatial pairing gives
 
 Put C=min(w,z). The spatial factor is area{|X|<u,|Y|<v,|X−Y|<C}/16.
 For R=u+v, q=u−v, d=|q|, the area derivative with respect to C is
-2(R−max(C,d))₊. This follows by differentiating the three rectangle-strip
-branches of the reviewed area formula; it can also be checked by integrating
-the lengths of the two strip edges. The area is zero at C=0. Including the
+2(R−max(C,d))₊. To see this directly, assume u≥v by symmetry. Each strip
+edge has projected length [min(u,C+v)−max(−u,C−v)]₊, which equals
+(R−max(C,u−v))₊; add the two edges. The area is zero at C=0. Including the
 coordinate Jacobian 1/2, positive Tonelli and one elementary Gamma integral give
 
     (1/32)∫_{|q|}∞ e^(−R)area(R,q,C)dR
@@ -83,7 +85,9 @@ of density values is not independence of the two pair differences.
 
 For forward scalar-clock increments the covariance is their nonnegative
 interval overlap O. Deleting exp(−λνO) increases the positive averaged
-integrand. Put A=λ+λ²/2. The self factor and heat damping combine to
+integrand. The retained overlap factor and joint Gaussian density are strictly
+positive at every finite positive-gap point, so their integral J is positive.
+Put A=λ+λ²/2. The self factor and heat damping combine to
 exp(−b²r/2). The root change R=u+v,q=u−v has Jacobian 1/2. Thus
 
     J⁺=(1/32)∫₀∞ h(r)e^(−b²r/2)
@@ -211,8 +215,8 @@ and actual consumer (L) are source-checked in Lean. The certificate is in
 the source, with the exact monomial data retained by its generator.
 
 The analytic wave, Gaussian bridge and survival-integral identifications
-remain outside Lean and require the independent source/type/application
-review. This is a local proof/replay using pinned read-only dependencies,
+remain outside Lean; their independent source/type/application review passed
+at the scope stated above. This is a local proof/replay using pinned read-only dependencies,
 not a new companion, full Mathlib rebuild, Comparator or formal SPDE gate.
 
 ## 7. Fractional averaging and scope
@@ -230,7 +234,11 @@ on the positive parameter domain, not by a limit of strict inequalities.
 
 At common θ>0 the fixed-parameter factor is θ^(−6) with parameters
 λ/θ,ν/θ, and the fractional factor is θ^(2a−6). Positive white amplitudes
-give a common positive square. Swapping chain names gives the mirror with
+give a common positive square. On the wave side four gaps and two spatial
+variables scale by θ^(−1). On the clock side use operational gaps θ^(−2)
+times the primed gaps: the four measures contribute θ^(−8), the joint
+two-pair white density contributes θ², and the scalar clock parameters become
+λ/θ,ν/θ by Brownian scaling. Swapping chain names gives the mirror with
 its canonical parameters exchanged.
 
 [held back: collaborators' unpublished work]
