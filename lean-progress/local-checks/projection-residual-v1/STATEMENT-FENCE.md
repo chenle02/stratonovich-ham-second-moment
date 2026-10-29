@@ -16,5 +16,6 @@ Hilbert/Loewner positivity, cone profile bound and actual first-coefficient
 integral, Gaussian density, Stratonovich tail/remainder and full means,
 finite-rank asymptotic lower bridge. Independent type/application review
 must match the scalar constants to these analytic reductions. No full sharp
-or all-tilts impossibility claim. Finiteness under q tilt requires1<q<2,
+or all-tilts impossibility claim. Finiteness of the density L2 norm holds for0<q<2; the variance-inflation
+consumer chooses1<q<2,
 although the scalar affine identity itself is valid for all real q.

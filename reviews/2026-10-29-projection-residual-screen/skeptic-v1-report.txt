@@ -1,0 +1,74 @@
+```json
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    ".review/required-sources.json lines 1-45 (complete; read plan only, no read credit claimed)",
+    "projection-note.txt lines 1-197 (complete)",
+    "ProjectionResidual.lean lines 1-29 (complete)",
+    "types-and-axioms.txt lines 1-32 (complete)",
+    "Lean-statement-fence.md lines 1-21 (complete)",
+    "Lean-local-receipt.json lines 1-82 (complete)",
+    "WrongParentSign.lean lines 1-6 (complete)",
+    "WrongParentSign.txt lines 1-3 (complete)",
+    "WrongTiltDirection.lean lines 1-7 (complete)",
+    "WrongTiltDirection.txt lines 1-3 (complete)",
+    "reconnaissance.md lines 1-65 (complete)",
+    "screen.json lines 1-63 (complete)",
+    "screen.py lines 1-29 (complete)",
+    "source-map.md lines 1-11 (complete)",
+    "source-inputs.txt lines 1-428 (complete)"
+  ],
+  "checks": [
+    {
+      "claim": "C1: The parent model is in the original class, and P is an actual rank-one orthogonal Gaussian projection with the stated positivity properties.",
+      "verdict": "PASS",
+      "reason": "Checked against H:homog in source-inputs.txt. With d=1 and Gamma(dx)=(1-a)|x|^{-1/2}dx, Gamma(cA)=c^{1/2}Gamma(A)=c^{d-alpha}Gamma(A), so alpha=1/2 lies in (0,d). Also alpha_0=a=99/100 lies in (0,1), and alpha+a=149/100<2. The positive factor 1-a is allowed because the class contains any nonnegative even PD tempered measure with this homogeneity. The mixture formula holds: int_0^inf v^{s-1}e^{-vx^2}dv=Gamma(s)|x|^{-2s}, and s=1/4 gives Gamma(1/4)^{-1}int v^{-3/4}e^{-vx^2}dv=|x|^{-1/2}. A positive mixture of Gaussian PD kernels is PD, the kernel is locally integrable with polynomial growth, and so it is tempered. psi=1_[0,1]x1_[-1,1] lies in the Hilbert completion: int int|psi psi C|<inf because a<1 and the exponent 1/2<1. Approximants bounded by 1 on a fixed compact set converge in the C-norm by dominated convergence. V=2E_phi/(2-a), about 14.94, is finite and positive, so Z=W(psi)/sqrt(V) has unit variance. m=E[W Z] is the Riesz representer of the unit vector psi/sqrt(V). P=m tensor m is therefore the covariance of the orthogonal projection Z*m, C-P is the covariance of the residual Wperp and is Loewner-PSD by Cauchy-Schwarz, and Wperp is independent of Z by joint Gaussianity and orthogonality. P>=0 pointwise because B_a>0 and F>0. The note does not infer pointwise positivity of C-P. In fact C-P is negative on the cone: for s=0, t=1, C<=0.01*2^{-1/2}... no, C is at least (1-a)/sqrt(2) on |x-y|<=2, about 0.007, while P>=8/V is about 0.535. This sign is consistent with the counterexample."
+    },
+    {
+      "claim": "C2: The projected profile is normalized correctly, and the lower bound A_P >= 101/(3200 sqrt2) is derived rather than assumed.",
+      "verdict": "PASS",
+      "reason": "E_phi=2 int_0^2 (2-r)r^{-1/2}dr=2(4sqrt2-4sqrt2/3)=16sqrt2/3. The time integral is int int_[0,1]^2|s-t|^{-a}=2/((1-a)(2-a)), so V=(1-a)*2/((1-a)(2-a))*E_phi=2E_phi/(2-a). Next, int_0^1|s-t|^{-a}dt=(s^{1-a}+(1-s)^{1-a})/(1-a), so the factor 1-a cancels and m=B_a F/sqrt(V). For |x|<=1, F=2(sqrt(1+x)+sqrt(1-x)), and the squared sum is 2+2sqrt(1-x^2)>=2, so F>=2sqrt2, with maximum 4 at x=0. For |x|>1, F=2(sqrt(|x|+1)-sqrt(|x|-1)), which decreases from 2sqrt2, so F<=4 globally. Since 0<1-a<1, s^{1-a}>=s on [0,1], which gives 1<=B_a<=2. In the terminal n=2 kernel, |y|<1-t and |z-y|<t-s give |z|<1-s. Both vertices therefore lie in the backward cone of (1,0), inside [0,1]x[-1,1], where mm>=(2sqrt2)^2/V=8/V=4(2-a)/E_phi. The Green masses are 1-t and t-s, and int_{0<s<t<1}(1-t)(t-s)=(1/2)int_0^1(1-t)t^2=1/24. Hence A_P>=(2-a)/(6E_phi)=(2-a)/(32sqrt2)=101/(3200sqrt2). This exceeds 101/4800>1/48 because sqrt2<3/2. The argument uses the forward terminal kernel only: there is no time reversal, no factorial, and no initial-chain transplant."
+    },
+    {
+      "claim": "C3: The parent integral is correct, and the scalar Lean application matches it exactly.",
+      "verdict": "PASS",
+      "reason": "With G_r=1{|w|<r}/2, the z-integration gives int G_{t-s}(w)|w|^{-1/2}dw=2(t-s)^{1/2}=(t-s)^{1-alpha}/(1-alpha). The remaining y-mass is 1-t. Setting r=t-s, int_{0<s<t<1}r^beta(1-t)=(1/2)int_0^1 r^beta(1-r)^2dr=(1/2)B(beta+1,3)=1/[(beta+1)(beta+2)(beta+3)], where beta=1-alpha-a=-0.49>-1. This gives A_C=(1-a)/[(1-alpha)(2-alpha-a)(3-alpha-a)(4-alpha-a)]. Numerically this is (1/100)/((1/2)(51*151*251/10^6)), and 51*151*251=1932951, so A_C=20000/1932951. Then 96*20000=1920000<1932951, so A_C<1/96. The formula matches screen.py parent() at alpha=1/2, and the source white-test pattern E X_2=c_0/2. In the Lean file, actualMeanCoeff=20000/1932951 equals A_C and projectedLower=101/(3200*Real.sqrt 2) equals the derived A_P lower bound. The elaborated signatures in types-and-axioms.txt match these over Real. projection_gap states A_C+1/96<projectedLower, which is exactly A_P-A_C>1/96 once A_P>=projectedLower. tilted_gap has hypothesis projectedLower<=p, which is discharged by p=A_P from (B), and q is unrestricted. Its conclusion A_C+(q-1)p+1/96<qp is (Q) with A_Q=A_C+(q-1)A_P, and the condition 1<q<2 is needed only for the Gaussian density. Neither statement assumes the gap. Both public facts depend only on propext, Classical.choice and Quot.sound. WrongParentSign (A_C>=1/48) and WrongTiltDirection (with p=1/20, about 0.05, which is above projectedLower, about 0.0223; equivalent to A_C>=1/20) both reduce to the goal False, as expected for false concrete affine claims. The receipt records the dev-01 division-orientation failure as an API failure only. The receipt states that this is a local owned replay, not a canonical package or Comparator gate. No execution credit is claimed by the reviewer."
+    },
+    {
+      "claim": "C4: The full means under the retained-residual tilt satisfy (M), giving a strict full-mean failure for sufficiently small h.",
+      "verdict": "PASS",
+      "reason": "L_q=q^{-1/2}exp((1-1/q)Z^2/2) is the N(0,q)/N(0,1) density ratio, and E L_q=1. Also E L_q^2=q^{-1}(1-2(1-1/q))^{-1/2}=[q(2-q)]^{-1/2}, which is finite iff q<2. Under the tilt, W=Zm+Wperp with Z~N(0,q) and Wperp unchanged and independent, so the covariance is qP+(C-P)=C+(q-1)P. The laws are mutually absolutely continuous, so the original a.s.-defined functional u_C is evaluated under an equivalent law, and no new existence theorem is used. For the geometric bound, P:mixed applied to the admissible covariance r^2C gives E u_C(r)^2 as a convergent sum of nonnegative terms that contains r^{2n}E X_n^2, using n-linearity of the chains. Hence ||X_n||_2<=sqrt(B_r)r^{-n}, and the tail bound (T) follows. Cauchy-Schwarz with ||L_q||_2 gives an L1 remainder O(h^4) that is uniform for |h|<=r/2. The sign flip W->-W preserves both laws, L_q is even and X_n is odd for odd n, so odd orders vanish. For E_Q X_2: E[L_q Y_2^{eps}]=A_{C_eps}+(q-1)A_{P_eps} by the positive-width Wick formula. The first term converges to A_C by parent L2 convergence. The profile part converges to A_P by dominated convergence, because the regularized profiles are bounded by sup m and converge pointwise (m is continuous) on a finite-mass kernel. For qP, the Picard coefficients satisfy |d_n|<=M^n/(2n)! from the mass of g_n, which is 1/(2n)!. The absolute series is bounded by E cosh(sqrt(M sqrt(q)|Z|))<inf for |h|<=1, so its tail beyond n>=4 is O(h^4). Odd terms vanish, and the degree-2 term is q E[Z^2]... evaluated as h^2 q d_2=h^2 q A_P. Hence E_Q u_C-E u_qP=h^2(A_C-A_P)+O(h^4)<-h^2/96+O(h^4)<0 for small h>0. No uniform numerical h threshold is claimed. At q=1 the same argument gives E_C u_C(h)<E u_P(h). Only C and h^2C are required to be admissible."
+    },
+    {
+      "claim": "C5: The residual lower-bridge contract (F) is correct, and (H) is stated as an unproved sufficient condition.",
+      "verdict": "PASS",
+      "reason": "For N orthonormal coordinates, the product density L has E L^2=[q(2-q)]^{-N/2}. Since E_Q u=E[Lu]<=||L||_2||u||_2, this gives (F) for each fixed 1<q<2. Assume (H) with N_T=o(T^kappa) and E_Q u eventually positive. Because log(q(2-q)) is a fixed finite number for fixed q, (N_T/2)log(q(2-q))=o(T^kappa), and so liminf T^{-kappa}log E u^2>=2(q^{1/(3-alpha)}ell-delta). Letting T->inf, then delta->0, then q up to 2 gives the factor 2^{1+1/(3-alpha)}*ell, where ell>0 is an independently valid first-mean lower constant. The exponent q^{1/(3-alpha)} agrees with the wave scaling for an amplified homogeneous covariance, lambda^{kappa/(4-alpha-alpha_0)}=lambda^{1/(3-alpha)}. Here it appears only inside the hypothesis (H) and is not applied as a theorem to Q or P. The note labels (H) as unproved and does not assume q(T)->2 or uniformity in q. It adopts no repair of the printed normalization, consistent with the source paragraph. The obstruction is scoped only to unconditional residual discard."
+    },
+    {
+      "claim": "C6: Source inputs, application and scope are consistent with the packet.",
+      "verdict": "PASS",
+      "reason": "The canonical inputs used are H:homog, P:mixed, L:terminal-wick and L:uniform-series-tail, quoted in source-inputs.txt with the source hash. They apply to C and r^2C, which are scalar multiples in the class. The terminal Wick lemma is applied only at positive widths, where the field has bounded variance and mean-square continuity. Its entrywise monotonicity statement is not misused: Q and qP are not entrywise ordered, since C-P<0 on the cone. The Q application rests on equivalence of measures. No source stationary or one-chain representation is transplanted, and the note explicitly declines Chen's stationary representation. screen.py uses exact Fractions only. Its false rows use a coarser lower bound (2-a)/48 and are labelled as not deciding the sign. Its a=99/100 assertions agree with the analytic constants. The scalar Lean facts are arithmetic only. The scope language is consistent across the note, source-map, reconnaissance and fence. The work is a Stratonovich self-pair first-mean result with no Skorohod development and no novelty, sharp, all-order, package, cluster or circulation claim."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Section 4 (T) cites L:uniform-series-tail, whose hypothesis is a uniform-in-regularization bound, but supplies only B_r=E|u_C(r)|^2<inf. The bound ||X_n||_2<=sqrt(B_r)r^{-n} follows directly from P:mixed applied to the admissible covariance r^2C, together with the n-linearity X_n^{(r^2C)}=r^n X_n^{(C)}. Stating this one-line route would remove the mismatch with the lemma's hypothesis.",
+      "Section 4 says the regularized projection profiles are 'mollifications of the bounded m'. The packet does not reproduce the source's exact noise-regularization operator. The step needs only that the regularization is a linear positive averaging map of W on the same probability space, so that the regularized profiles are bounded by sup m and converge pointwise to the continuous m. This should be stated explicitly.",
+      "The wording 'Positivity yields' for the geometric bound is terse. The positivity used is that of the mixed moments in the amplified series.",
+      "Lean-statement-fence.md says finiteness under the q tilt 'requires 1<q<2'. The condition E L_q^2<inf actually holds for all 0<q<2. The lower limit q>1 comes from the tilt consumer, not from finiteness. This is harmless.",
+      "Section 1 says the Gaussian mixture also works for the temporal power. This is true, since |t|^{-a}=Gamma(a/2)^{-1}int v^{a/2-1}e^{-vt^2}dv, but it is unnecessary because the temporal factor |s-t|^{-alpha_0} is fixed by the source model.",
+      "Section 5 should state explicitly that ell>0, so that sending q up to 2 is the optimal direction."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "No commands were executed: the SHA-256 values of the Lean source, the olean, screen.py and the canonical notes were not recomputed, and the Lean build was not replayed. Kernel correctness of projection_gap and tilted_gap was accepted from the supplied receipt and the axiom printout, as instructed.",
+    "The canonical parent construction (P:mixed, L:terminal-wick, L:uniform-series-tail, H:homog) was treated as a named, previously reviewed input from the selected excerpt in source-inputs.txt. The full 110-page source and its regularization definitions were not audited.",
+    "This AI review is neither human verification nor a novelty audit. It covers only the projected-mean, residual-discard obstruction and its exact scalar application. It does not cover the missing sharp lower bridge (H) or the original sharp target."
+  ]
+}
+```

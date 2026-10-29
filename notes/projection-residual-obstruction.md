@@ -1,6 +1,8 @@
 # Rank-one projection does not permit discarding the residual
 
-Status: CANDIDATE. Independent analytic/type/application review is pending.
+Status: primary analytic/type/application review passed six checks HIGH at
+source efbdbd9. An explicit common-noise cutoff clarification is awaiting
+its focused source-fidelity check; no final adoption of that update yet.
 This is a fixed-horizon, small-coupling obstruction to a particular proposed
 lower-bound shortcut. The parent is an admissible Stratonovich HAM. It is
 not an obstruction to every covariance tilt or to the sharp asymptotic goal.
@@ -128,10 +130,14 @@ application; the Gaussian, cone and integral identifications are outside Lean.
 ## 4. Pass to full means without assuming a new Q-model theorem
 
 Write the original ordinary Stratonovich expansion at (1,0) as
-u_C(h)=sum_(n>=0) h^n X_n. Named prior inputs are canonical P:mixed and
-L:uniform-series-tail: nonnegative mixed moments, convergence in L2 and
-finiteness for each fixed amplified homogeneous covariance. In particular,
-fix r>1 and B_r=E|u_C(r)|^2<infinity. Positivity yields
+u_C(h)=sum_(n>=0) h^n X_n. Named prior inputs are canonical P:mixed and the
+parent construction: nonnegative mixed moments, convergence in L2 and
+finiteness for every amplified homogeneous covariance. Fix r>1 and
+B_r=E|u_C(r)|^2<infinity. Apply P:mixed to the admissible covariance r^2 C.
+The same-noise n-linearity identifies its coefficients with r^n X_n, so its
+nonnegative mixed series contains r^(2n) E X_n^2. This gives the following
+bound directly, without the uniform-regularization premise of the separate
+L:uniform-series-tail:
 
     ||X_n||_2 <= sqrt(B_r) r^(-n),
     ||sum_(n>=4) h^n X_n||_2
@@ -150,9 +156,21 @@ well-defined under it. Global sign symmetry kills odd-order expectations.
 The fixed-order Wick identity gives E_Q X_2=A_Q: at positive regularization
 widths this is the ordinary Gaussian covariance formula; L2 parent
 convergence and L_q in L2 pass the expectation to the limit. The projection
-profiles are mollifications of the bounded m, converge almost everywhere on
-the cone and remain uniformly bounded, so the additional P integral passes
-by dominated convergence. Therefore the first line of(M) follows. We do not
+profiles use the source's common-noise temporal Laplace cutoff and spatial
+heat average, not temporal convolution. Explicitly, with K_delta the
+truncated temporal covariance of current author(2.9)--(2.11),
+
+    m_(epsilon,delta)(s,x)
+      = [(1-a) integral_0^1 K_delta(s-r)dr]
+          (p_epsilon*F)(x)/sqrt(V).
+
+The bound0<=K_delta<=|.|^(-a) gives0<=m_(epsilon,delta)<=8/sqrt(V), and
+the profiles converge to m at interior times and every spatial point by
+monotone convergence in the temporal factor and the heat approximate
+identity for bounded continuous F. Thus the P integral passes by dominated
+convergence on the finite-mass terminal kernel. The source coupling, cross-
+covariance with Z and this exact limit are detailed in the accompanying
+regularization addendum. Therefore the first line of(M) follows. We do not
 invoke Chen's stationary representation for the nonstationary Q.
 
 For qP, m is bounded by some M on[0,1] x R. Deterministic Picard iteration
@@ -179,7 +197,7 @@ the modified mean is eventually positive and
     liminf_(T->infinity) T^(-kappa) log E_Q u_C(T,x)
        >= q^(1/(3-alpha)) ell-delta.                        (H)
 
-Here ell must be an independently valid first-mean lower constant. Applying
+Here ell>0 must be an independently valid first-mean lower constant. Applying
 this to the original sharp target requires its intended source constant;
 no correction of the recorded printed normalization discrepancy is adopted.
 If(H) held, (F) would give the lower factor2^(1+1/(3-alpha)) by first taking

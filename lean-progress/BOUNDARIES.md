@@ -50,3 +50,8 @@ Projection-residual pilot formalizes only the actual rational/sqrt gap and
 affine coefficient consumer. The Gaussian test projection and Loewner order,
 Stratonovich coefficient integrals, law-tilt density/remainders/full means and
 the prospective sharp asymptotic bridge are outside Lean. Review pending.
+
+Projection-residual arithmetic/type application passed C3 of the six-check
+HIGH primary review at efbdbd9; both source proofs unchanged. The exact
+common-noise cutoff clarification remains outside Lean, with a focused
+source/limit followup pending.

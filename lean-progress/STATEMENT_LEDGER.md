@@ -41,8 +41,8 @@ analytic/type/applicationreview at6475ea0,not five separate six-checkreviews.
 
 | Name | Scope | Status |
 |---|---|---|
-| projection_gap | Actual rational/sqrt coefficient lower gap greater than1/96 | Local compile/replay; application pending |
-| tilted_gap | Affine retained-residual versus projected coefficient consumer | Local compile/replay; application pending |
+| projection_gap | Actual rational/sqrt coefficient lower gap greater than1/96 | Local compile/replay; exact type/application HIGH at efbdbd9 |
+| tilted_gap | Affine retained-residual versus projected coefficient consumer | Local compile/replay; exact type/application HIGH at efbdbd9 |
 
 Gaussian projection, cone/integral and full-mean/asymptotic inputs stay
 outside Lean. Evidence: local-checks/projection-residual-v1/.

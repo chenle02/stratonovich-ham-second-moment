@@ -3432,3 +3432,27 @@ all-tilts no-go, full sharp proof or circulation claim. Accepted WHITE13/
 original-class9counts and canonical110-page/60-proof TeX/PDF unchanged.
 Frozen packet in reviews/2026-10-29-projection-residual-screen/packet-v1;
 new six-group analytic/source/type/application review pending.
+
+
+Projection-residual primary review:6PASS/HIGH,209.105seconds,sourceefbdbd9,
+14texts, no required repairs, service exit0 and complete read coverage.
+Both scalar types/application passedC3. All analytic source/type hashes and
+held source/tree checked at collection;38native archive members read back.
+The original full sharp target is NOTrefuted by this low-coupling no-go.
+
+Root source-fidelity check of the optional regularization finding identified
+an important specificity: current author pp8--9,(2.9)--(2.11), uses independent
+Laplace slices and spatial heat convolution, not temporal convolution.
+The updated proof/addendum now gives its ACTUALcross-profile with the fixed
+full-noise Z, bounds it by8/sqrtV and proves the needed joint limit. The norm
+bound now follows directly from P:mixed at r^2C and n-linearity, avoiding the
+separate uniform-regularization hypothesis. Coefficient/gap/mean/rate formulas
+and both Lean sources unchanged. A focused NEWtwo-group source/limit followup
+is required before final adoption, with exact current source pages/images.
+This is new evidence, not an unchanged confidence retry. The primary report's
+incidental blanket claim C-P<0on the cone is NOTadopted: the proof uses only
+its negative weighted integral and makes no universal pointwise sign claim.
+
+Recovered historical registry callback2cece592ecaa is recorded with a coverage
+caveat, not current-version verification. No unrelated tool/package work was
+opened. White13/original-class9 and full goal ACTIVE remain unchanged.

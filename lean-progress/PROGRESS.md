@@ -106,3 +106,8 @@ Projection-residual local gate: two actual scalar facts compile cleanly;
 exact types/live standard axioms, fresh owned-source replay and two semantic
 False controls pass. One division-API failure is preserved, with unchanged
 public signatures. Analytic/type/application review remains pending.
+
+Projection-residual: exact two scalar types/application passed the primary
+six-check HIGH review at efbdbd9. Formal source unchanged. Analytic common-
+noise regularization clarification has a focused source/limit followup
+pending; no companion or package wave.
