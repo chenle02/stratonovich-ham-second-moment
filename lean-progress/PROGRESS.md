@@ -111,3 +111,8 @@ Projection-residual: exact two scalar types/application passed the primary
 six-check HIGH review at efbdbd9. Formal source unchanged. Analytic common-
 noise regularization clarification has a focused source/limit followup
 pending; no companion or package wave.
+
+Projection-residual close: source/limit clarification passed2groups/9checks
+HIGH at1787644, in addition to the primary6HIGH gate at efbdbd9. Both formal
+proofs unchanged. The Gaussian/projection/mean arguments remain informal
+reviewed analytic inputs. L0/PROPOSED and package-creation decision4 unchanged.

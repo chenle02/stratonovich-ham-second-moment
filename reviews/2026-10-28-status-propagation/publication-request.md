@@ -1,3 +1,9 @@
+Latest private proposal: scoped admissible-parent projection/residual-discard
+obstruction, primary6HIGHefbdbd9 plus source/limit9HIGH1787644. Small-coupling
+full-mean failure only; large-time sharp target and actual residual stability
+remain open. WHITE13/original-class9 and canonical TeX/PDF unchanged. No
+canonical publication requested/enqueued. Earlier checkpoint history below.
+
 Latest private proposal: WHITE13 versus original covariance-class9, from
 middle-cross/self sourcee638186, six groups/seventeen checks HIGH. Two white
 fully-cross patterns, six general-class terms, full sum/all orders/sharp

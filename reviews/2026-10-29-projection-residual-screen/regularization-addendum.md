@@ -28,6 +28,9 @@ independent Gaussian lambda slices, giving
 
 The source writes W as the sum of all independent lambda slices, W_delta
 as the sum below1/delta, and W_(epsilon,delta)=p_epsilon*W_delta in SPACE.
+The independent-increment structure holds for every finite set of cutoffs:
+include those cutoffs in one ordered partition before the consistent
+continuum extension. The extension preserves these joint distributions.
 Consequently its covariance with W(psi) uses exactly the retained slices,
 not a new cutoff of the test coordinate. For the indicator psi this yields
 
@@ -35,7 +38,9 @@ not a new cutoff of the test coordinate. For the indicator psi this yields
        = [(1-a)integral_0^1 K_delta(s-r)dr]
             (p_epsilon*F)(x)/sqrt(V).                      (P)
 
-This identity first holds for smooth compact test approximants to psi.
+This identity first holds for smooth compact test approximants to psi,
+chosen in[0,1] on a fixed compact set and converging pointwise almost
+everywhere to psi, as well as in the noise Hilbert norm.
 The H-norm convergence of those tests and the finite L2 norm of the fixed
 W_(epsilon,delta)(s,x) pass the covariance to psi by Cauchy--Schwarz. The
 integral passes by dominated convergence: K_delta is bounded at fixed delta,

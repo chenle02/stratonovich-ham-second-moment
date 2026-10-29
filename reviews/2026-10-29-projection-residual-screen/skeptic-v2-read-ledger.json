@@ -1,0 +1,274 @@
+{
+  "schema": "le-ai-lab.review-read-ledger/1",
+  "coverage_verified": true,
+  "claude_code_version": "2.1.304",
+  "events_sha256": "aa45c8d3aeb9418e24092221c30149bfbcf68fe3ca6631217834c326162b161f",
+  "events_hash_bound_to_receipt": true,
+  "stream_workspace": "${LOCAL_RAW}/stratonovich-projection-residual-scientific-v2/workspace",
+  "required_sources_sha256": null,
+  "continuation": false,
+  "continuation_credit": null,
+  "proves": "Each credited line was returned, numbered and byte-equal to the frozen workspace file, in a tool_result paired with a Read or line-numbered content-mode Grep call of the hash-bound provider stream.",
+  "does_not_prove": "Attention, understanding, or retention: a credited line may have been skimmed, ignored, or dropped by context compaction before the report was written. Uncredited lines may still have been seen in a form the ledger cannot attribute (previews, unnumbered output, subagents).",
+  "sources": [
+    {
+      "path": "author-8-9.txt",
+      "sha256": "66290b2ec97d087d08d4c1fb8b430c277dccd1b48fb0e23bc08514b410d0d6d2",
+      "total_lines": 132,
+      "required_ranges": [
+        [
+          1,
+          132
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          132
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "projection-note.txt",
+      "sha256": "b3994c6af2388783cebb791bf64a7be12810c4d241be84e0794e0ec71c68513c",
+      "total_lines": 214,
+      "required_ranges": [
+        [
+          1,
+          214
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          214
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "regularization-addendum.txt",
+      "sha256": "cda46ebcb580b905fbc82a8e82f7a71e3f96ff19a816debe0d10dc818d6c237f",
+      "total_lines": 79,
+      "required_ranges": [
+        [
+          1,
+          79
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          79
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "scope-map.md",
+      "sha256": "680fd98215af4dd636c76a3cdc8750b7cdff02310e2a123b467ebf5198cd4132",
+      "total_lines": 15,
+      "required_ranges": [
+        [
+          1,
+          15
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          15
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "source-inputs.txt",
+      "sha256": "777051053289ad49656ecff08b01d019e3d36838b5291e5b4bcf0d178c731b7c",
+      "total_lines": 427,
+      "required_ranges": [
+        [
+          1,
+          427
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          427
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "source-rendering.json",
+      "sha256": "23bb26e507e82ad81ad17af0a82fad3bc488b00e4fbfaf9343634a7120a0dfde",
+      "total_lines": 16,
+      "required_ranges": [
+        [
+          1,
+          16
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          16
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    }
+  ],
+  "image_proves": "Each delivered image: a direct Read tool_use of its exact workspace path, in the stream's session, is paired by id with a tool_result (same session) whose content is one inline base64 image block of the declared media type, and the base64 decodes to bytes whose sha256 is the declared one.",
+  "image_does_not_prove": "That the model looked at, understood or correctly interpreted the image, or any scientific acceptance of what it shows: only delivery of these exact bytes. Transformed or resized content, metadata and self-reports earn nothing, so an undelivered image may still have been seen in another form.",
+  "required_images": [
+    {
+      "path": "author-8.png",
+      "sha256": "6d9272043e1044574254152d5994c40db37cf0c724c3f85b3755a2cfe9dcf3ab",
+      "media_type": "image/png",
+      "status": "delivered",
+      "delivered_by": [
+        "toolu_01NsHEGeiwUVJ9wgLnex3fuZ"
+      ]
+    },
+    {
+      "path": "author-9.png",
+      "sha256": "431d724040a3774dbe2859f85fdeb91b7f89dfe56d16ef9eb574d6f60460afe7",
+      "media_type": "image/png",
+      "status": "delivered",
+      "delivered_by": [
+        "toolu_01Fi7uge2sVtqpyEYxwKzMY7"
+      ]
+    }
+  ],
+  "tool_calls": [
+    {
+      "id": "toolu_01HCe4qqGEXhzEmqoiX1DfC2",
+      "tool": "Read",
+      "source": ".review/required-sources.json",
+      "plan_copy_read": [
+        ".review/required-sources.json"
+      ],
+      "uncredited": "runner-owned plan copy (.review/): never read credit",
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01ECzEsHYstyj7vptxeXvygj",
+      "tool": "Read",
+      "source": "regularization-addendum.txt",
+      "credited": {
+        "regularization-addendum.txt": [
+          [
+            1,
+            79
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01Sj8w1pianyqUjE7RBsUaqf",
+      "tool": "Read",
+      "source": "author-8-9.txt",
+      "credited": {
+        "author-8-9.txt": [
+          [
+            1,
+            132
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01NsHEGeiwUVJ9wgLnex3fuZ",
+      "tool": "Read",
+      "source": "author-8.png",
+      "uncredited": "non-text result (image, PDF or block list)",
+      "stream": "attempt",
+      "image": {
+        "path": "author-8.png",
+        "media_type": "image/png",
+        "decoded_sha256": "6d9272043e1044574254152d5994c40db37cf0c724c3f85b3755a2cfe9dcf3ab",
+        "delivered": true
+      }
+    },
+    {
+      "id": "toolu_01Fi7uge2sVtqpyEYxwKzMY7",
+      "tool": "Read",
+      "source": "author-9.png",
+      "uncredited": "non-text result (image, PDF or block list)",
+      "stream": "attempt",
+      "image": {
+        "path": "author-9.png",
+        "media_type": "image/png",
+        "decoded_sha256": "431d724040a3774dbe2859f85fdeb91b7f89dfe56d16ef9eb574d6f60460afe7",
+        "delivered": true
+      }
+    },
+    {
+      "id": "toolu_01X9FYHWYGNk4tDKnDCCKezJ",
+      "tool": "Read",
+      "source": "projection-note.txt",
+      "credited": {
+        "projection-note.txt": [
+          [
+            1,
+            214
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01Q7QPPRdFer4eRBWXmgAZ6y",
+      "tool": "Read",
+      "source": "scope-map.md",
+      "credited": {
+        "scope-map.md": [
+          [
+            1,
+            15
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01BmMDktwPddXb3GMXSBsVHY",
+      "tool": "Read",
+      "source": "source-inputs.txt",
+      "credited": {
+        "source-inputs.txt": [
+          [
+            1,
+            427
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01GUvwwA8WiU9iLB4TSE7pVQ",
+      "tool": "Read",
+      "source": "source-rendering.json",
+      "credited": {
+        "source-rendering.json": [
+          [
+            1,
+            16
+          ]
+        ]
+      },
+      "stream": "attempt"
+    }
+  ],
+  "diagnostics": []
+}

@@ -1,0 +1,185 @@
+{
+  "provider": "claude",
+  "started_utc": "2026-10-29T20:46:47.539748+00:00",
+  "workspace": "${LOCAL_RAW}/stratonovich-projection-residual-scientific-v2/workspace",
+  "source_revision": "17876449824d0a9d0b851cf04786e87ce3f7d6fe",
+  "input_hashes": {
+    "author-8-9.txt": "66290b2ec97d087d08d4c1fb8b430c277dccd1b48fb0e23bc08514b410d0d6d2",
+    "author-8.png": "6d9272043e1044574254152d5994c40db37cf0c724c3f85b3755a2cfe9dcf3ab",
+    "author-9.png": "431d724040a3774dbe2859f85fdeb91b7f89dfe56d16ef9eb574d6f60460afe7",
+    "projection-note.txt": "b3994c6af2388783cebb791bf64a7be12810c4d241be84e0794e0ec71c68513c",
+    "regularization-addendum.txt": "cda46ebcb580b905fbc82a8e82f7a71e3f96ff19a816debe0d10dc818d6c237f",
+    "scope-map.md": "680fd98215af4dd636c76a3cdc8750b7cdff02310e2a123b467ebf5198cd4132",
+    "source-inputs.txt": "777051053289ad49656ecff08b01d019e3d36838b5291e5b4bcf0d178c731b7c",
+    "source-rendering.json": "23bb26e507e82ad81ad17af0a82fad3bc488b00e4fbfaf9343634a7120a0dfde"
+  },
+  "target": "regularization-addendum.txt",
+  "claude_account": "<removed>",
+  "review_contract_sha256": "97575f7efdd366fa4c419c47f180115eac32c4f229906d0cf2b75fced700ca99",
+  "effort_requested": "high",
+  "resumed_from": null,
+  "resume_mode": null,
+  "resume_binding": null,
+  "min_confidence": "high",
+  "scientific_verdict": "PASS_WITH_NOTES",
+  "accepted": true,
+  "report_contract_schema": "subscription-review-report/1",
+  "report_legacy_mode": null,
+  "legacy_resume_binding": null,
+  "diagnostics": [],
+  "required_sources_sha256": "6fffed5247808a8697f5a9fbe8f0e28bbc12c0a191174eb1924e148d8f749a29",
+  "required_sources_workspace_copy": ".review/required-sources.json",
+  "workspace_preflight": {
+    "schema": "le-ai-lab.review-workspace-preflight/1",
+    "scanned": "review contract (--prompt-file)",
+    "references": {
+      "author-8-9.txt": [
+        "author-8-9.txt"
+      ],
+      "projection-note.txt": [
+        "projection-note.txt"
+      ],
+      "regularization-addendum.txt": [
+        "regularization-addendum.txt"
+      ]
+    },
+    "waived": [],
+    "missing": [],
+    "required_sources_copy": ".review/required-sources.json"
+  },
+  "runtime_preflight": {
+    "effective_version": "2.1.304",
+    "cli_version": "2.1.304 (Claude Code)",
+    "image_requirements": true,
+    "supported_versions": [
+      "2.1.302",
+      "2.1.304"
+    ],
+    "supported": true
+  },
+  "cli_version": "2.1.304 (Claude Code)",
+  "executable": "${LOCAL_RAW}/swe-white-time-resume-20261024/runtime/node_modules/@anthropic-ai/claude-code-linux-x64/claude",
+  "executable_requested": null,
+  "executable_effective": {
+    "path": "${LOCAL_RAW}/swe-white-time-resume-20261024/runtime/node_modules/@anthropic-ai/claude-code-linux-x64/claude",
+    "version": "2.1.304 (Claude Code)"
+  },
+  "read_ledger_format_supported": true,
+  "auth": {
+    "authMethod": "<removed>",
+    "apiProvider": "firstParty",
+    "subscriptionType": "<removed>",
+    "email": "<account email removed>"
+  },
+  "model_requested": "claude-opus-5-5",
+  "command_without_prompt": [
+    "${HOME}/.claude/bin/claude-acct",
+    "run",
+    "<account removed>",
+    "--print",
+    "--model",
+    "claude-opus-5-5",
+    "--effort",
+    "high",
+    "--disable-slash-commands",
+    "--strict-mcp-config",
+    "--mcp-config",
+    "{\"mcpServers\":{}}",
+    "--permission-mode",
+    "dontAsk",
+    "--permission-prompts",
+    "none",
+    "--output-format",
+    "stream-json",
+    "--verbose",
+    "--tools",
+    "Read,Grep,Glob",
+    "--allowedTools",
+    "Read,Grep,Glob",
+    "--agents",
+    "${LOCAL_RAW}/stratonovich-projection-residual-scientific-v2/claude-reviewer.json",
+    "--agent",
+    "artifact-reviewer",
+    "<stdin: prompt.txt without its final newline>"
+  ],
+  "prompt_transport": "stdin",
+  "prompt_bytes": 5893,
+  "prompt_sha256": "2cfdb5d8888242aedaef2ad0fb1fd95e6cc78a5d80244561e0203a5218439276",
+  "transport_exit_code": 0,
+  "transport_ok": true,
+  "model_actual": "claude-opus-5-5",
+  "session_id": "eb30f410-17f8-4819-a6ac-ccaaff420a42",
+  "usage": {
+    "input_tokens": 8,
+    "cache_creation_input_tokens": 43005,
+    "cache_read_input_tokens": 71557,
+    "output_tokens": 14236,
+    "output_tokens_details": {
+      "thinking_tokens": 8653
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 43005,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 13024,
+        "cache_read_input_tokens": 28819,
+        "cache_creation_input_tokens": 17390,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 17390
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "provider_error": false,
+  "terminal_subtype": "success",
+  "tools_actual": [
+    "Read",
+    "Grep",
+    "Glob"
+  ],
+  "actual_route_verified": true,
+  "candidate_hashes_unchanged": true,
+  "raw_report_sha256": "d49750f2b894d51baaf1618c01af9a80c711d521f080c9c630b26e4c14dd0db7",
+  "status": "review-complete",
+  "confidence": "high",
+  "report_interpretation": {
+    "contract_schema": "subscription-review-report/1",
+    "report_schema": "subscription-review-report/1",
+    "legacy_mode": null,
+    "normalized_verdict": "PASS_WITH_NOTES",
+    "normalized_confidence": "high",
+    "normalized_check_verdicts": [
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS"
+    ]
+  },
+  "report_sha256": "49a9f91fe0ad57993b57c7c00d2ebfe27c70da9c0111c6015918210719888b7d",
+  "report_text_format": "bare",
+  "report_body_sha256": "d49750f2b894d51baaf1618c01af9a80c711d521f080c9c630b26e4c14dd0db7",
+  "finished_utc": "2026-10-29T20:49:05.776113+00:00",
+  "elapsed_seconds": 138.236,
+  "transport_events_sha256": "aa45c8d3aeb9418e24092221c30149bfbcf68fe3ca6631217834c326162b161f",
+  "transport_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "read_ledger_sha256": "f60a19756a6d1eec71a9b123f87cd45e1386689675a33cf5aa60e50df7101bb2",
+  "coverage_verified": true
+}

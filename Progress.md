@@ -6,10 +6,10 @@
 
 ## Current state
 
-- **Phase:** middle-cross/self WHITE comparison accepted at six groups / seventeen checks HIGH, source e638186. Two new white diagrams give13of15WHITE terms; the original covariance-class count remains9with6left. Full sum, all orders and the original sharp target remain open. Seven actual scalar Lean deductions and their analytic application are checked; the model/integral proofs remain informal.
+- **Phase:** admissible-parent projection/residual-discard mean obstruction accepted: primary6HIGH at efbdbd9 plus exact common-noise source/limit9HIGH at1787644. This rejects a specific unconditional lower-route shortcut, not all covariance tilts or the sharp target. Earlier WHITE13/original-class9 comparison counts remain unchanged; full sharp/all-order goal is active.
 - **Review boundaries:** prior92page quantitative/mild source `a7e725e` passed its own19checks/HIGH. The new8check review covers the direct norms, positive spatial Wick-measure limit, arbitrary joint vertex-width construction and their consumers. It does NOT freshly audit every unchanged operator/interval proof. Exact source/delivery/adoption bindings and limitations are in `reviews/2026-10-29-fixed-order-construction/`.
-- **Current artifact:** canonical110pages/60proofs and TeX/PDF unchanged. Accepted research memos: degree-four-clock-probe.md (9original-class terms), terminal-cross-comparison.md (2additionalWHITE terms) and middle-cross-comparison.md (2additionalWHITE terms). The last has seven local scalar Lean deductions and a separate six-group/seventeen-check HIGH analytic/type review. No new TeX build or whole-paper clearance is implied.
-- **Open targets:** full fixed-positive-alpha0 sharp p2 constant via model information; full Stratonovich aggregate/all orders/original covariance class; focused exposition and whole-paper clearance; companion creation decision4; canonical wiki provenance and novelty/circulation. The two remaining WHITE diagrams are fully cross(2,2): do not develop them as a separate Skorohod result. Return to full Stratonovich model information and original sharp target. No numerical normalization correction adopted.
+- **Current artifact:** canonical110pages/60proofs and TeX/PDF unchanged. Accepted research memos: degree-four-clock-probe.md (9original-class terms), terminal-cross-comparison.md (2additionalWHITE terms) and middle-cross-comparison.md (2additionalWHITE terms). The last has seven local scalar Lean deductions and a separate six-group/seventeen-check HIGH analytic/type review. No new TeX build or whole-paper clearance is implied. New accepted lower-route obstruction: notes/projection-residual-obstruction.md and its source-bound regularization addendum; two local scalar Lean deductions support its exact gap, not its Gaussian/wave inputs.
+- **Open targets:** full fixed-positive-alpha0 sharp p2 constant for the original covariance class; full Stratonovich aggregate and all orders; focused exposition/whole-paper clearance; companion decision4, canonical wiki provenance and novelty/circulation. Next bounded question: direct u^2 event lower bound with actual residual-field wave stability, after source/feasibility recon. The modified-mean tilt bridge(H) remains open; residual-discard and deterministic-surrogate shortcuts cannot replace it. No Skorohod development or numerical normalization repair.
 - **Agent8coordination:** completed at read-only source/statement/ownership level,as requested by Le. Agent8accepted our exact map;three API component fits and stronger-premise gaps are recorded in lean-progress/coordination/2026-10-29-agent8/reuse-adjudication.md. Current coefficient gate sourced5fde707,evidence successorbffd4329;historical SWE receipts remain e5e9558. Source/API/pins checked;no donor-package build/gate/companion/lease/registry transaction. Local Lean pilot is recorded separately. L0/PROPOSED and decision4unchanged.
 - **Authorization:** Le's continuing full goal includes the sharp/lower track. The current wave is the previously proposed bounded static-comparison/inequality step,with the HIGH review threshold unchanged. It does not redefine the original all-alpha0sharp target,claim novelty or promote a paper. Le now explicitly permits Lean verification;standalone local checks do not create a companion repo. Report/honor PROJECT-GOAL decision points;companion-creation decision4remains pending. No correspondence/public release authorized.
 - **Worker:** Codex/GPT author, paper-dev workflow; historical project handoff to agent #30 on 2026-10-26. Lean remains L0/PROPOSED (`lean-progress/PROGRESS.md`). Nine normal reference requests exist; new edition-custody intake is nonblocking, not source authentication.
@@ -3456,3 +3456,54 @@ its negative weighted integral and makes no universal pointwise sign claim.
 Recovered historical registry callback2cece592ecaa is recorded with a coverage
 caveat, not current-version verification. No unrelated tool/package work was
 opened. White13/original-class9 and full goal ACTIVE remain unchanged.
+
+
+### Projection-residual closure: primary6HIGH plus source/limit9HIGH
+
+Primary sourceefbdbd9 accepted6checks/HIGH,209.105seconds,14texts; focused
+NEWexact-source clarification at1787644 accepted2groups/9checksHIGH,
+138.236seconds,6texts+2fullcurrentauthorpages8--9. Both actual first-party
+Opus5.5, service exit0, unchanged HIGH threshold, no required repairs and
+complete native read coverage. Exact source/workspace/contract/model/auth/
+provider-event/ledger hashes checked under held clean source before collection.
+Native38/31and local34-member archives read back; no reviewer execution
+credited. All6primary and5followupminor findings adjudicated. Root declined
+the primary report's incidental universal negative cone-sign claim; source
+followup explicitly checked its rejection and the integrated-only argument.
+
+Accepted actual-model no-go: d1,Rieszalpha1/2,a99/100,Gamma=(1-a)|x|^-1/2,
+T1,x0. The parent's ordinary degree-two mean coefficient is20000/1932951,
+while an ACTUALnoise-Hilbert rank-one projection has coefficient at least
+101/(3200sqrt2); gap>1/96. Forfixed1<q<2, retaining the independent residual
+while inflating this coordinate gives smaller full mean than qP at small
+positive coupling. This refutes unconditional residual discard/Loewner mean
+monotonicity, not every tilt, selected large-time projections, the density
+method or the original sharp target. P/Q are not asserted stationary or
+homogeneous; the parent and its positive amplitude scalings are admissible.
+
+The source clarification uses currentauthor(2.9)--(2.11): independent temporal
+Laplace slices and spatial heat average. Its fixed-FULL-Z cross-profile has
+one spatial heat width, boundedby8/sqrtV with joint limit; its self covariance
+has twice the width. Exact profile DCT and the direct amplified-parent norm
+bound replace the vague mollification/wrong-tail-premise wording. All original
+coefficient/gap/full-mean/rate formula blocks retained; both Lean proof bytes
+unchanged. Two scalar types/application passed primaryC3; formal source/replay/
+standard axioms and2semantic controls checked, originalAPI failure preserved.
+Gaussian/source/integration/full-mean steps remain informal reviewed inputs.
+Local supporting statements total17, not17formal SPDE theorems. L0/decision4
+and Agent8package/gate ownership unchanged; no new package/cluster work.
+
+The exact missing modified-mean bridge(H) is retained as UNPROVED with
+ranko(T^kappa), fixedq thenq up to2 and validell>0. Next planning question is
+a direct nonnegative u^2 event lower bound with the residual in the ACTUAL
+wave solution. Its uniform growth/stability and source-variational map are
+not proved. Read the held Chen--Deya--Song--Tindel source before investing;
+do not repeat the failed deterministic-surrogate Cauchy argument. Full
+Stratonovich sharp target remains ACTIVE, not a smaller comparison goal.
+
+Canonical110-page/60-proof TeX/PDF and WHITE13/original-class9 counts entirely
+unchanged. Private wiki proposal refreshed only, canonical page unchanged.
+No new absent mathematical reference; existing nine tickets persist. Durable
+lessons and historical registry-coverage caveat saved; no unrelated package
+rerun, canonical publication, source normalization repair, coauthor message,
+Skorohod result, novelty or circulation clearance.

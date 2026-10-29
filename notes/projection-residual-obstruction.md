@@ -1,8 +1,9 @@
 # Rank-one projection does not permit discarding the residual
 
-Status: primary analytic/type/application review passed six checks HIGH at
-source efbdbd9. An explicit common-noise cutoff clarification is awaiting
-its focused source-fidelity check; no final adoption of that update yet.
+Status: accepted scoped obstruction. Primary analytic/type/application review
+passed six checks HIGH at source efbdbd9; the exact common-noise source/limit
+clarification passed nine focused checks HIGH at source1787644. See
+reviews/2026-10-29-projection-residual-screen/adjudication.md.
 This is a fixed-horizon, small-coupling obstruction to a particular proposed
 lower-bound shortcut. The parent is an admissible Stratonovich HAM. It is
 not an obstruction to every covariance tilt or to the sharp asymptotic goal.
@@ -64,7 +65,8 @@ mean comparison used to discard a Loewner-positive Gaussian residual.
 The noise Hilbert space has inner product induced by(C). The indicator psi
 belongs to its completion: bounded compactly supported smooth approximants
 converge by dominated convergence for the locally integrable product kernel.
-They can be chosen bounded by one on a fixed compact set. Direct integration
+They can be chosen bounded between zero and one on a fixed compact set,
+converging to psi pointwise almost everywhere. Direct integration
 gives
 
     E_phi=integral_[-1,1]^2 |x-y|^(-1/2) dxdy=16 sqrt(2)/3,
@@ -164,7 +166,8 @@ truncated temporal covariance of current author(2.9)--(2.11),
       = [(1-a) integral_0^1 K_delta(s-r)dr]
           (p_epsilon*F)(x)/sqrt(V).
 
-The bound0<=K_delta<=|.|^(-a) gives0<=m_(epsilon,delta)<=8/sqrt(V), and
+The bound0<=K_delta<=|.|^(-a), together with F<=4 globally and the
+unit mass of p_epsilon, gives0<=m_(epsilon,delta)<=8/sqrt(V), and
 the profiles converge to m at interior times and every spatial point by
 monotone convergence in the temporal factor and the heat approximate
 identity for bounded continuous F. Thus the P integral passes by dominated

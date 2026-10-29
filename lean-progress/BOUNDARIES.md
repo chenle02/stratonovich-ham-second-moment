@@ -55,3 +55,7 @@ Projection-residual arithmetic/type application passed C3 of the six-check
 HIGH primary review at efbdbd9; both source proofs unchanged. The exact
 common-noise cutoff clarification remains outside Lean, with a focused
 source/limit followup pending.
+
+Projection-residual common-noise clarification accepted9HIGH at1787644;
+source cutoff and direct amplified-series norm consumer are independently
+reviewed but unformalized. The two scalar proof bytes remain frozen.

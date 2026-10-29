@@ -1,0 +1,81 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    ".review/required-sources.json lines 1-33 (read plan only; earns no read credit)",
+    "regularization-addendum.txt lines 1-80 (complete)",
+    "author-8-9.txt lines 1-132 (complete)",
+    "author-8.png full page image (complete; physical page 8: (2.7)-(2.10), popular temporal-convolution display, Kolmogorov-continuity display)",
+    "author-9.png full page image (complete; physical page 9: independent Delta_k slices, W_{T_n}, re-definition of W, Kolmogorov extension, W_delta notation, W_{eps,delta}=p(eps)*W_delta, (2.11), Section 2.3 (2.12))",
+    "projection-note.txt lines 1-215 (complete)",
+    "scope-map.md lines 1-16 (complete)",
+    "source-inputs.txt lines 1-428 (complete)",
+    "source-rendering.json lines 1-17 (complete)"
+  ],
+  "checks": [
+    {
+      "claim": "S1a: Both author images support the map. The displayed time-convolution construction is the 'popular' one in the literature. The construction actually chosen is independent lambda-slices Delta_k W with Laplace-weight covariance, W_delta as the sum of slices below 1/delta, and W_{eps,delta}=p(eps,.)*W_delta in space only.",
+      "verdict": "PASS",
+      "reason": "Page 8 shows the convolution display with p0(delta,t-u)p(eps,x-y), introduced as 'A popular construction ... in literature'. It then says 'we shall construct ... in a slightly different way' leading to (2.9). Page 9 gives the independent Delta_k W fields with covariance Gamma(alpha0)^{-1} integral_{T_{k-1}}^{T_k} e^{-lambda|s-t|} lambda^{alpha0-1} dlambda gamma(x-y). It also gives W=sum_k Delta_k W, the Kolmogorov extension to all T, the relabelling W_{delta^{-1}} -> W_delta, and W_{eps,delta}(t,x)=integral p(eps,x-y) W_delta(t,y) dy. The extracted text matches both images. The profiles are therefore a spectral (lambda) cutoff in time and a heat average in space, not temporal mollifications. Nothing from source 1.24 or the v1 first-mean theorem is used."
+    },
+    {
+      "claim": "S1b: Formula (S) is correct: K_delta(t)=Gamma(a)^{-1} integral_0^{1/delta} e^{-lambda|t|} lambda^{a-1} dlambda with 0<=K_delta<=|t|^{-a}. The cross-covariance is (1-a) K_{max(delta,delta')} (p_{eps+eps'}*gamma), with gamma=|x|^{-1/2} and the amplitude 1-a separated out.",
+      "verdict": "PASS",
+      "reason": "Gamma(a)^{-1} integral_0^inf e^{-lambda|t|} lambda^{a-1} dlambda = |t|^{-a}. Truncating a positive integrand therefore gives 0<=K_delta<=|t|^{-a}. Two fields W_delta and W_delta' share exactly the slices below min(1/delta,1/delta')=1/max(delta,delta'), which matches the source's delta vee delta-tilde. The spatial part is p_eps*p_eps'*gamma = p_{eps+eps'}*gamma by the semigroup property, matching gamma_{eps+eps-tilde} in (2.11) and gamma_{2eps} in (2.9). The note's parent spatial covariance is Gamma=(1-a)|x|^{-1/2}, so pulling the factor 1-a out of the source's gamma is purely notational. This choice is admissible under H:homog: it is homogeneous of degree d-alpha=1/2 with d=1, alpha=1/2."
+    },
+    {
+      "claim": "S1c: Covariance with the fixed full-noise coordinate Z=W(psi)/sqrt(V) gives exactly (P), not a separately normalized regularized coordinate.",
+      "verdict": "PASS",
+      "reason": "For a smooth compact test phi, W(phi) splits into the retained slices plus slices above 1/delta, and the latter are independent of W_delta. So Cov(W_{eps,delta}(s,x),W(phi)) = integral (1-a) K_delta(s-r) (p_eps*gamma)(x-y) phi(r,y) dr dy. With phi=psi=1_[0,1] x 1_[-1,1], this factorizes into (1-a) integral_0^1 K_delta(s-r) dr times p_eps*(gamma*1_[-1,1]) = p_eps*F. Dividing by the fixed full-noise sqrt(V)=sqrt(2E_phi/(2-a)) gives (P). There is no width-dependent renormalization. This is what lets the same Z, and hence the same L_q(Z), serve at every width and in the limit."
+    },
+    {
+      "claim": "S1d: The step from smooth compact tests to the indicator is valid, using H-norm/L2 convergence plus bounded fixed-width kernels.",
+      "verdict": "PASS",
+      "reason": "At fixed widths, W_{eps,delta}(s,x) has finite variance (1-a) K_delta(0) gamma_{2eps}(0), where K_delta(0)=delta^{-a}/Gamma(a+1) and gamma_{2eps}(0)<inf. Cauchy-Schwarz with W(phi_n) -> W(psi) in L2 then passes the left side to the limit. On the right, K_delta and p_eps*gamma are bounded at fixed widths, and the tests are bounded by 1 on a fixed compact set. Dominated convergence therefore passes the integral, given pointwise a.e. convergence of the approximants. Projection-note Section 2 supplies that implicitly (see minor note)."
+    },
+    {
+      "claim": "S1e: 0<=m_{eps,delta}<=8/sqrt(V) uniformly in both widths, with joint convergence to m=B_a(s)F(x)/sqrt(V).",
+      "verdict": "PASS",
+      "reason": "(1-a) integral_0^1 |s-r|^{-a} dr = s^{1-a}+(1-s)^{1-a} = B_a(s), which is at most 2 on [0,1]. Since K_delta<=|.|^{-a}, the temporal bracket lies in [0,B_a(s)]. F is nonnegative and globally at most 4, and p_eps is a probability density, so 0<=p_eps*F<=4. The product gives the bound 8/sqrt(V). As delta decreases, K_delta increases to |.|^{-a}, so monotone convergence gives bracket -> B_a(s); this actually holds at every s in [0,1], so 'interior' is conservative. F is bounded and continuous (it matches 2sqrt(2) on both sides at |x|=1), so the heat approximate identity gives p_eps*F(x) -> F(x) at every x. Each factor depends on only one width, so the limit holds however (eps,delta) tends to 0."
+    },
+    {
+      "claim": "S2a: The added P integral converges by dominated convergence on the finite-mass n=2 terminal kernel, with product bound 64/V.",
+      "verdict": "PASS",
+      "reason": "Vertex times lie in (0,1). The pointwise product m_{eps,delta}(s,z) m_{eps,delta}(t,y) is at most 64/V and converges pointwise to m(s,z)m(t,y). The kernel G_{1-t}(-y)G_{t-s}(y-z) on 0<s<t<1 is nonnegative with mass integral (1-t)(t-s) = 1/24 < inf. Dominated convergence gives A_{P_{eps,delta}} -> A_P."
+    },
+    {
+      "claim": "S2b: Under L_q(Z) the positive-width covariance is C_reg+(q-1) m_reg tensor m_reg, and parent fixed-order L2 convergence plus L_q in L2 give E_Q X_2 = A_C+(q-1)A_P.",
+      "verdict": "PASS",
+      "reason": "Write W_{eps,delta}(s,x) = m_{eps,delta}(s,x) Z + R, with R Gaussian and independent of Z. The tilt by L_q makes Z ~ N(0,q) and leaves R unchanged. The finite vectors stay Gaussian, with covariance C_{eps,delta}+(q-1) m_{eps,delta} tensor m_{eps,delta}. The terminal Wick formula (single self-pair, coefficient one, finite-mass kernel, bounded variances) gives E_Q Y_2 = A_{C_{eps,delta}}+(q-1) A_{P_{eps,delta}}. On the left, |E[L_q(Y_2-X_2)]| <= ||L_q||_2 ||Y_2-X_2||_2 -> 0, using the parent's L2 convergence under the same source coupling. E L_q^2 = [q(2-q)]^{-1/2} is finite for 0<q<2. On the right, the parent term converges by the named reviewed construction (equivalently, take q=1), and the P term converges by S2a. No sign assumption on C-P is used."
+    },
+    {
+      "claim": "S2c: The direct tail bound (T) follows from P:mixed at the admissible covariance r^2 C, n-linearity, and the nonnegative full mixed series, without importing L:uniform-series-tail.",
+      "verdict": "PASS",
+      "reason": "r^2 C keeps the same temporal exponent and only rescales the homogeneous spatial measure, so it is admissible under H:homog. Noise rW on the same space has fixed-order terms r^n X_n. P:mixed expresses E u_C(r)^2 as a convergent series of nonnegative terms, and the diagonal term r^{2n} E X_n^2 is one of them. Hence ||X_n||_2 <= sqrt(B_r) r^{-n}, and the geometric sum gives sqrt(B_r) (|h|/r)^4/(1-|h|/r). Per its quoted proof, P:mixed draws its L2 summability from L:crude-corrected/L:vertex-crude and P:mild-construction, not from L:uniform-series-tail. So no regularization-uniform hypothesis is silently imported."
+    },
+    {
+      "claim": "S2d: Scope and invariants are respected: q ranges, the not-adopted cone claim, the large-time bridge, and no added claims.",
+      "verdict": "PASS",
+      "reason": "The density L_q is in L2 exactly for 0<q<2, and variance inflation needs 1<q<2, as stated. C-P cannot be negative everywhere on the cone: C contains (1-a)|s-t|^{-a}|y-z|^{-1/2}, which is unbounded near spatial coincidence, while P<=64/V. The proof needs only the integrated inequality A_C < A_P, so declining that assertion is correct. Within this packet, (A), (Q), (M), (R), (B), (D), (F), (H) and the small-coupling, fixed-horizon scope appear unaltered by the clarification. The bridge (H) is still labelled unproved, with ell>0 and the fixed-q, T-first limit order. No nonstationary existence, Skorohod, formal-SPDE/package, sharp-constant or circulation claim is added."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "The dominated-convergence step from smooth tests to psi needs the approximants to converge to psi pointwise a.e. (or in L1), not only to be bounded by 1 on a fixed compact set. Projection-note Section 2 implies this ('converge by dominated convergence') but does not state it, and the addendum relies on it silently.",
+      "The cross-covariance identity uses the fact that the slices above 1/delta are independent of W_delta for the continuum family W_T built by the Kolmogorov extension. The source asserts this extension; the addendum could say explicitly that the independent-increment structure is inherited for every T, not only along the sequence T_n.",
+      "Convergence of the temporal bracket to B_a(s) holds at every s in [0,1], endpoints included. Saying 'interior' is conservative but correct.",
+      "Projection-note lines 167-168 credit the bound 8/sqrt(V) to K_delta<=|.|^{-a} alone. The global bound F<=4, together with the fact that p_eps is a probability density (both stated in the addendum), is also needed and could be cited there.",
+      "The ordering inside (P) is purely notational: the amplitude (1-a) is placed inside the temporal bracket so that the bracket equals B_a(s) in the limit. This agrees with projection-note (P) and with the parent's Gamma=(1-a)|x|^{-1/2}."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "I did not verify the source PDF's SHA256 or that the two PNGs are faithful renderings of it. Provenance rests on source-rendering.json. The image contents themselves were inspected in full and agree with the extracted text.",
+    "No earlier version of projection-note.txt was supplied. 'Formulas unchanged' was therefore checked only for internal consistency within this packet, not by diff.",
+    "As instructed, the named inputs were not re-proved: the parent fixed-order construction and its L2 convergence under the source coupling, P:mixed, L:terminal-wick, the coefficient values A_C and A_P, the density identities, the qP Picard bound, and both Lean scalar sources. The A_{C_eps,delta} -> A_C passage is accepted as a named input.",
+    "This is an AI review, not human verification or a novelty audit. Acceptance covers only the common-noise source/limit clarification and the direct tail consumer. It does not prove the large-time bridge (H) or any sharp constant."
+  ]
+}
