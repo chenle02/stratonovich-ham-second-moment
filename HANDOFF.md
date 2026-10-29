@@ -1,107 +1,120 @@
-Last updated: 2026-10-29 12:16 UTC
+Last updated: 2026-10-29 12:44 UTC
 
-Original full upper/sharp goal ACTIVE; independent fixed-order construction adopted.
+Original full upper/sharp goal ACTIVE; seventh cold read TERMINAL/adjudicated.
 
 ## ⏭ Next session: where to stand and what to do
 
-Prepare and launch a FRESH whole-paper DeepSeek V4-Pro cold read of the
-final adopted96page/51proof notes at `30f80be4151a5af514c6728fa1d294cab07b57d0`.
-The independent construction is IMPLEMENTED and passed its OWN scoped
-Opus5.5/HIGH gate. Do not reconstruct it again or repeat the old cold-v6.
-All six prior cold reports retain NOT CLEAR for their respective sources.
-Do not launch another unchanged primary review to seek a preferred verdict.
-No native reviewer is running at this handoff.
+Do NOT launch another unchanged cold/primary review or reconstruct source4.1.
+The seventh cold read of322cb0e is collected and adjudicated,NOT CLEAR.
+Its mathematical spot-checks are clean;no specific failed inequality is given.
+Remaining concerns are journal presentation/critical-path auditability. Both
+published citation caveats are now resolved. Start from the new proof map:
+reviews/2026-10-29-full-upper-cold-v7/upper-proof-map.md.
+
+The original full G:upper retains its scoped primary proof acceptance. Report
+at PROJECT-GOAL decision5;G:sharp remains open. The next useful mathematical
+recon is the existing bounded near-static lower REF RAME,with exact source/
+implication checks before investment. Keep full original sharp scope and
+normalization qualifications. No new SPDE lower proof is yet asserted.
+No reviewer is running and no native handle needs polling.
 
 ## Pre-flight checks
 
-1. Read the Current-state header of Progress.md first. The full original
-   homogeneous Radon/dimensional upper and sharp goals remain unchanged.
-2. Scientific construction source `f9303ed247b9eb7903516768dfd9b8053df5e892`:
-   native Opus5.5/HIGH,527.512s,all8checksPASS,complete7texts/36exact PNGs,
-   accepted=true,coverage_verified=true,no required repairs. New review dir:
-   reviews/2026-10-29-fixed-order-construction/.
-3. Three independently reviewed lemmas: L:damped-homogeneous-norms,
-   L:spatial-wick-measures, L:joint-fixed-order. They replace source4.1/4.4/
-   Appendix A construction imports at ORIGINAL H:homog, using only known
-   sourceTheorem3.1 analytically and the source regularization definitions.
-   Unequal/empty chains, arbitrary joint width rates and Green-before-noise
-   are proved. No broader nonhomogeneous theorem or uniqueness is claimed.
-4. Final adoption `30f80be4151a5af514c6728fa1d294cab07b57d0`:96pages,51proofs,every formal statement exactly
-   reviewed,46proofs byte equal,five optional minor clarifications. The joint,
-   mixed,mild and full-upper proofs are EXACTLY reviewed. Quantitative interval/
-   CP/Fock bodies remain unchanged and retain their earlier scoped reviews.
-5. Final exact hashes:TeX8c46c996f41fb51659ca3229cd65640281a77b772997174702fd6bd495d66d62;
+1. Read Progress.md CURRENT header,not historical accepted/pending banners.
+   Cold7source322cb0e2146d47e4dce735637a18656b53a46183:actual V4-Pro822.464s,
+   complete initial manuscript/bibliography,22source tools(21successful,one
+   repaired invalid regex),partial source consultation. All15items adjudicated.
+2. Current canonical mathematics is still adoption30f80be:96pages,51proofs.
+   TeX8c46c996f41fb51659ca3229cd65640281a77b772997174702fd6bd495d66d62;
    PDFd378605f3ebe6432e787b05fc1c0f71841b19c83a12b1c7d22c77087207046a3.
-   Clean build0errors/undefined/overfull/tabs,formatter idempotent. See
-   final-status-binding.json and adjudication-v1.md in the new review dir.
-6. CARRIER preparation reused the exact old36image cohort,not new source
-   pages. Scientific review has its OWN complete exact ledger. The default
-   CLI2.1.312 doctor is retained as unsupported discovery;actual launch used
-   scoped supported2.1.304,first-party subscription,HIGH,no fallback.
-7. All126native/dry-run archive members individually read back/hash verified;
-   archive committed and its committed blob checked before removing ONLY the
-   two owned terminal raw trees. No live process. New archive/manifest and
-   native reports/receipts/ledger are in the review dir. Do not re-poll it.
-8. Cold-v6source6cdc142 is also terminal,collected,adjudicated,archived. Its
-   main construction concern motivated the now written and reviewed repair.
-   Earlier19HIGHsourcea7e725e is historical and does not cover this delta;
-   the new8HIGHgate supplies that scoped review,not full cold clearance.
-9. Local/origin/<HUB> parity verified;no foreign WIP known. Lean remains
-   L0/PROPOSED,decision4 companion creation unapproved. Canonical wiki unchanged;
-   PRIVATE proposal refreshed. Nine normal reference tickets exist (below).
-   No source-author contact,public release,project notification or sibling edit.
+   No canonical mathematical edit occurred during cold7. The95page blind copy
+   preserved ALL51proofs and EVERY formal statement byte for byte.
+3. Construction sourcef9303ed had its OWN8PASS/HIGH,527.512s,complete7texts/
+   36exact PNGs,no required repairs. Three direct construction lemmas replace
+   source4.1/4.4/Appendix A imports,using known source3.1 and source definitions.
+   All original covariance/dimension targets and Green-before-noise remain.
+4. Actual quantitative primarya7e725e had19PASS/HIGH. New binding shows current
+   L:fixed-split,L:terminal-wick and L:uniform-series-tail EXACT primary bytes.
+   P:interval-coefficients matches final adoptiondf1648b,with its recorded
+   singleton split-count explanatory delta. Do not claim all4exact primary.
+5. Both cold7citation caveats are checked against published images. Existing
+   Balan--Conus47page PDF:first5pages/header read,printed1492opened,Eq8/10and
+   Theorem2.1(b)match. Existing Chen--Hu2180PNG reopened:Eq5.15fixedintegerp,
+   p2factor simplifies to2. No new theorem,source-author contact or queue item.
+6. All18native/workspace/launch archive members individually read back/hashed;
+   archive committed and committed blob verified before ONLY owned raw trees
+   removed. Reports/session export/config/receipts remain in cold-v7dir.
+   Cold7,all6earlier cold runs and construction primary are TERMINAL.
+7. All seven cold reports remain NOT CLEAR for their own sources. Actual
+   cold7trace has no arXiv-v1content read despite its opening coverage claim.
+   Do not infer full-source proof reading,confidence grade or circulation.
+8. Read-only wiki recon found residual 'exact first-moment' prose atline252
+   in chen-25-time-dependency.md;correct current author version has bounds.
+   Private narrow correction/hash receipt in cold-v7/followups/. No canonical
+   wiki edit or duplicate ref intake. PRIVATE project-status proposal updated.
+9. Local/origin/<HUB> parity after adjudication `36e0d39feaf85a62243a12782fbf0305d1fdda7a`.
+   LeanL0/PROPOSED,decision4creation pending. Nine reference tickets persist;
+   no newly discovered absent reference this turn. Original full goal ACTIVE.
 
 ## Concrete deliverables for the next session
 
-- Freeze a prior-blind whole-paper candidate from the FINAL adopted bytes.
-  Strip only editorial workflow metadata;retain ALL51proofs and EVERY formal
-  statement,including remarks/goals/conjectures,byte-for-byte. Verify that
-  comparison and clean build;bind source/bibliography/edition hashes.
-- Use the canonical free-form cold-referee prompt VERBATIM. No old reports,
-  checklist,desired grade or root verdict. Native DeepSeek V4-Pro,readonly
-  isolated workspace,full initial manuscript inline plus exact source texts.
-  Preserve actual model/session/prompt/HEAD/input hashes and tool targets.
-- Hold all Git writers during the native read,then collect the SAME terminal
-  session and complete export. A truncated JSON prefix is not an export.
-  Reuse the previous collector's validated evidence rules and refusal controls.
-- Adjudicate the cold reader's ACTUAL concrete concerns;do not blindly adopt
-  false section/dependency descriptions or invent source normalization fixes.
-  Do not add another proof reconstruction merely because a known theorem is
-  cited. Source3.1 is an explicitly imported known universal inequality.
-- If cold clearance permits the next mathematical wave,report original G:upper
-  at decision5 and honor PI steering before a new lower/sharp proof wave.
-  Near-static-lower-recon.md remains reconnaissance only,not a new theorem.
-- Update Progress's current snapshot and log,PRIVATE wiki/handoff,commit/push
-  own paths and serialize <HUB> sync. Never direct-publish canonical wiki
-  or send project notifications under the separate unapproved boundary.
+- Read all15cold7adjudications and the proof map. Distinguish a specific proof
+  failure from an unease/request for independent checking already supplied by
+  exact scoped primary reports. Do not retry an unchanged candidate for a vote.
+- Whole-paper circulation still needs a focused exposition repairing actual
+  presentation concerns. A paper-promotion step first needs the dated closest-
+  source/novelty implication gate;no journal-ready claim follows from this guide.
+  Preserve historical research notes and ORIGINAL theorem scope.
+- For mathematical progress toward G:sharp,use the existing near-static lower
+  recon at reviews/2026-10-29-mild-construction/near-static-lower-recon.md.
+  Update its stale source4.1reference to our own joint lemma when next editing.
+  Freeze exact candidate partial target and primary-source crosswalk;the static
+  p2law supplies2^qL0without adopting disputed absolute white constants.
+  Check exact limit order and actual coefficient Holder/entire-series steps.
+  Respect PROJECT-GOAL decision5report/PI steering before a new sharp proof wave.
+- The new scalar deterministic-tilt planning screen is a RESTRICTED shortcut
+  screen only. Discarding a leading residual Gaussian mean can lose the factor;
+  five exact Gaussian controls show the FULL tilted mean may avoid it. Do not
+  inflate this into an SPDE theorem or a no-go for all Gaussian shifts.
+- Do not create Lean,develop Skorohod,run HPC,contact anyone,publish or send
+  automatic project notifications outside authorization. Keep All.bib read-only.
+- Update Progress current snapshot/log,PRIVATE wiki/handoff and push own paths,
+  serializing <HUB> ref writes. No canonical wiki publication by accident.
 
 ## Success criteria for the immediate next step
 
-A genuinely fresh whole-paper cold read of the final96page candidate,with
-all scientific content preserved and actual native-source binding verified.
-The upper target stays full scope and sharp goal remains open. A new report
-is read/adjudicated honestly;old reviews remain tied to their own versions.
-No confidence retry,hidden fallback,broader source/novelty/formal/circulation
-clearance is inferred from the scoped primary acceptance.
+Concrete forward work toward the unchanged full sharp goal or actual focused
+exposition,with exact sources/hypotheses and bounded investment gate. Preserve
+the accepted full upper proof and its separate construction/quantitative review
+scopes. Circulation,novelty,Lean and all-alpha0sharp constants remain open.
+No repeated reviewer launch on unchanged mathematics merely to seek approval.
 
 ## Anti-success criteria
 
-- Rewriting the two construction lemmas again:they are written and reviewed.
-- Polling/restarting completed primary or cold-v6 jobs as though still live.
-- Treating exact optional-file availability as actual reviewer reading. The
-  primary read7required texts/36images;unchanged quantitative internals were
-  optional complete context and NOT freshly audited by that scoped contract.
-- Physical pointwise heat-covariance monotonicity,homogeneity-only zero-face
-  exclusion,missing Gaussianhalf/waveBrownian horizonfactor,or S^a<=S^k for
-  smallS. These delicate steps now have explicit correct proofs.
-- Interpreting the scoped printed-normalization discrepancy as a theorem
-  counterexample or changing source(1.24)/first-moment constants without Le.
-- Using the wrong-edition Kallenberg PDF to authenticate2002Th5.22. Its
-  pending custody ticket is NONBLOCKING;the finite-Laplace criterion is proved
-  directly in the notes. No direct six-repository write or payload overwrite.
-- Starting Lean,Skorohod,HPC,outreach or public release outside authorization.
+- Re-polling/restarting cold7or any archived terminal job.
+- A further generic source4.1independence audit:its replacement is written and
+  reviewed. Source3.1is an explicitly imported known universal inequality.
+- Declaring the whole paper cleared because spot-checks passed,or declaring a
+  mathematical refutation from the reader's inability to rederive a long proof.
+- Deleting/weakening original G:sharp or adopting a normalization correction.
+- Treating the source PDF being available as actual read coverage. Reported
+  source consultation must follow native tools and actual rendered-page views.
+- Claiming all4critical quantitative proofs exact primary bytes;one has the
+  recorded final-adoption singleton explanation. See exact binding/diff.
+- New duplicate queue requests for Balan--Conus/Chen--Hu already in the corpus.
+- Treating the restricted deterministic-surrogate screen as an all-tilts no-go.
 
 ## What the previous sessions produced
+
+Latest checkpoint (2026-10-29):cold7source322cb0eactualV4-Pro822.464s,
+NOT CLEAR,all15items adjudicated,no specific mathematical failure. Citation
+pinpoints authenticated;full-upper proof map and exact critical-path review
+binding added. Canonical96page/51proof source/PDF unchanged. All18archive
+members read back and committed before owned native/workspace raw removed.
+No live reviewer. Private wiki residual-version note and restricted scalar
+planning screen preserved. Original full sharp/circulation/Lean goals open.
+Adjudication checkpoint36e0d39feaf85a62243a12782fbf0305d1fdda7a.
+
 
 Latest construction checkpoint (2026-10-29):all three construction lemmas
 written,8PASS/HIGH at f9303ed,final adoption30f80be. All eight minor findings
@@ -490,15 +503,7 @@ Latest checkpoints:
 
 ## Repo & git state at handoff
 
-Mathematical adoption `30f80be4151a5af514c6728fa1d294cab07b57d0` is pushed to origin and synchronized with
-<HUB>,clean0/0. This handoff is a separate HANDOFF-only checkpoint on top.
-No native reviewer remains live. Native evidence is committed in the new
-review dir;the two owned terminal native/dryrun trees were removed only after
-committed-archive verification. Source/packet/PDF,review receipts,diagnostics,
-Progress and PRIVATE wiki proposal are committed. No external mathematical WIP
-is required to continue;routine launch scratch is duplicated by committed
-artifacts and need not be recreated. Preserve any newly appearing foreign WIP.
-Canonical wiki remains unpublished and All.bib/siblings/source PDFs untouched.
+[held back: collaborators' unpublished work]
 
 ## Operating notes
 
