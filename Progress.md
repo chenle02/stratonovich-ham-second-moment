@@ -2903,3 +2903,15 @@ source images are retained. The final11image cohort requires its OWN native
 carrier calibration before scientific dispatch. ContractC1--C7covers the
 four new proofs and their reused interfaces. Full original sharp target and
 whole-paper cold limitations remain unchanged. New results are CANDIDATE.
+
+### New lower candidate carrier preparation
+
+Actual new11image native calibration completed44.464s,first-party Opus5.5,
+complete exact PNG delivery/legibility. Its returned advisory has INVALID JSON
+syntax and remains accepted=false/statusinvalid-report;no repair/relabeling or
+scientific credit. The unchanged preparation guard verifies actual bytes/ledger
+and returns CARRIER-READY for EXACTLY this11image cohort. All windows overlap
+and cover their full source pages. A fresh scientific C1--C7review with its
+OWN delivery ledger and unchanged HIGH threshold must now run. Calibration
+is not mathematical acceptance. Native calibration evidence archived/readback
+verified;source unchanged.
