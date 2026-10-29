@@ -6,10 +6,10 @@
 
 ## Current state
 
-- **Phase:** degree-four MODELpartial comparison ACCEPTED at its own8PASS/HIGH,d016a34. Nine of15terms are controlled in the ORIGINALcovariance/d1--3class:6imported one-chain equalities plus3newstrictmixedcomparisons. The remaining6mixed terms/fullsum/allorder/sharpconstant remainOPEN. Exact15diagram/48cone reductions and finite-variance sampling are reviewed;finite probes are not proofs.
+- **Phase:** terminal-cross/self WHITEcomparison accepted6PASS/HIGH at6475ea0. Two new white diagrams give11of15WHITEterms;the original covariance-class count remains9with6left. Fourwhite/fullsum/allorder/sharp targets remainOPEN. Positive-mixture kernel envelope plus the ACTUALstrict scalarconsumer (five localLeanlemmas)are checked;model/integralproofs remaininformal.
 - **Review boundaries:** prior92page quantitative/mild source `a7e725e` passed its own19checks/HIGH. The new8check review covers the direct norms, positive spatial Wick-measure limit, arbitrary joint vertex-width construction and their consumers. It does NOT freshly audit every unchanged operator/interval proof. Exact source/delivery/adoption bindings and limitations are in `reviews/2026-10-29-fixed-order-construction/`.
-- **Current artifact:**110pages,60proofs. Two clock-screen proofs and all58prior proofs match frozen science exactly;only the scope remark and abstract/status clarified. Build0errors/undefined/overfull/tabs,formatter idempotent. Final binding/adjudication in reviews/2026-10-29-two-clock-screen/.
-- **Open targets:** full fixed-positive-alpha0sharp p2constant via MODEL information;focused exposition/whole-paper clearance;isolated local Lean seam checks now authorized;separate companion creation still pending;canonical wiki provenance and novelty/circulation. Next model question is the remaining SIXdegree-four terms,starting from white(1,3)03|12and the stronger overlap-dropped candidate. The full comparison is unproved. No numerical normalization correction adopted.
+- **Current artifact:**canonical110pages/60proofs andTeX/PDFunchanged. Accepted researchmemos:degree-four-clock-probe.md(9original-class terms)andterminal-cross-comparison.md(2additionalWHITEterms,5localLeanconsumers,type/application6HIGH). Canonical last build remains0errors/undefined/overfull/tabs;final bindings are scope-specific in the two review directories. No new.texbuild or fullpaper clearance is implied.
+- **Open targets:** full fixed-positive-alpha0sharp p2constant via MODEL information;focused exposition/whole-paper clearance;isolated local Lean seam checks now authorized;separate companion creation still pending;canonical wiki provenance and novelty/circulation. Next model question is white(1,3)02|13and its mirror. An UNREVIEWEDheat-bridge/survival-envelope route has a300termexactalgebra screen;the full comparison is unproved. No numerical normalization correction adopted.
 - **Agent8coordination:** completed at read-only source/statement/ownership level,as requested by Le. Agent8accepted our exact map;three API component fits and stronger-premise gaps are recorded in lean-progress/coordination/2026-10-29-agent8/reuse-adjudication.md. Current coefficient gate sourced5fde707,evidence successorbffd4329;historical SWE receipts remain e5e9558. Source/API/pins checked;no donor-package build/gate/companion/lease/registry transaction. Local Lean pilot is recorded separately. L0/PROPOSED and decision4unchanged.
 - **Authorization:** Le's continuing full goal includes the sharp/lower track. The current wave is the previously proposed bounded static-comparison/inequality step,with the HIGH review threshold unchanged. It does not redefine the original all-alpha0sharp target,claim novelty or promote a paper. Le now explicitly permits Lean verification;standalone local checks do not create a companion repo. Report/honor PROJECT-GOAL decision points;companion-creation decision4remains pending. No correspondence/public release authorized.
 - **Worker:** Codex/GPT author, paper-dev workflow; historical project handoff to agent #30 on 2026-10-26. Lean remains L0/PROPOSED (`lean-progress/PROGRESS.md`). Nine normal reference requests exist; new edition-custody intake is nonblocking, not source authentication.
@@ -3285,3 +3285,34 @@ precision;common exponentialrescalingfixes it withouttolerancerelaxation.
 UnprovedstrongerRayleigh-fibertrial is unused by the proof. Sourcekernels/
 Gammaidentityalreadyheld;no new absentref or duplicateenqueue. Canonical
 110pageTeX/PDFandallreviewedoldproofs areunchanged.
+
+
+### Terminal-cross analytic/type gate accepted6PASS/HIGH
+
+Actual native first-partyOpus5.5/HIGH,280.956s,source6475ea0,all six checks
+PASS,no requiredrepairs,accepted=true,coverage=true.24texts/CSVs+12exact
+sourceimages,model/identity/source/contract/native-event/read-ledger hashes
+verified,persistentserviceexit0.60member archive readbackverified. All five
+minor findingsadjudicated;no old/newfailedattempt is counted as a review.
+
+New accepted endpointresult:white13terminal-cross/self03|12andmirror31:01|23
+satisfyJ<=Jplus<Iforpositivecrosslambda,selfnu>=0,andstrictfractionalaverages
+alla in(0,1),allcommontheta>0. The mirror swaps canonicalpairparameters.
+Whitecount11of15,notallGamma11;generalclassstays9. FormalconsumerU<I,
+polynomialidentity/positivity,mixturerateandexpconvexityallkernel-checked,
+standardaxioms,owned-source replay. Source/analyticapplicationspassedC5and
+othergroups;no formalSPDEorpackage/Comparatorgate. TwoactualconsumerFalse
+checks addedAFTERreview(total6;reviewer saw4),documentedwithoutretrocredit.
+
+Finalnoteclarifications:negativeqregion,explicitoldJoverlapandclosedform
+formalboundary;T/I/J/E/U/Qtaggedformulasandall5Leanproofbytesunchanged.
+Canonical110page/60proofTeX/PDFENTIRELYUNCHANGED. Agent8FYIffe3f792af2d
+queuedwithexact6475source/pinsandpreservedpackageownership,no newpackagework.
+
+SeparateUNREVIEWEDmiddlecrosssuccessorproposesI_mid,Gaussianbridge/survival
+envelope,and300positiveintegercoefficientalgebraonrationalizedrootparameters.
+No13termcountisaccepted. Itsroot-shift-erasureshortcut has a provisional
+rationalovershoot atb1,c11/10;desiredintegratedcomparison isnotrefuted.
+Allfourwhite/sixgeneralremainingterms,allorders,physicalsharpconstant and
+whole-paper/circulation remainOPEN. No newabsent6reporef;existing9tickets
+persist. Privatewiki refreshedonly;canonicalunchanged. Fullgoal ACTIVE.

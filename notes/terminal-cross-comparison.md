@@ -1,14 +1,15 @@
 # A terminal-cross/self comparison in white space
 
-Status: candidate analytic proof; independent source/type/application review
-is pending. Its five supporting scalar Lean statements compile with standard
-axioms and fresh owned-source replay. This does not certify the analytic
-identifications below or complete the full sharp-constant problem.
+Status: the analytic comparison and its scalar type/application correspondence
+passed source-bound Opus5.5/HIGH review at 6475ea0, all six checks passing.
+Five supporting scalar statements have local Lean source/replay evidence.
+The model reductions and integral identifications remain informal proofs;
+the full sharp-constant problem remains open.
 
 The scope here is d=α=1, Γ=δ₀, with raw temporal exponent 0<a<1. A positive
 multiple of δ₀ multiplies every four-vertex term by the same positive square.
 The previously reviewed nine-term comparison for the original covariance
-class is unchanged. If accepted, this note adds two white-space diagrams,
+class is unchanged. This note adds two white-space diagrams,
 giving eleven controlled terms there; it does not give eleven terms for
 the general covariance class.
 
@@ -28,7 +29,7 @@ shared-clock candidate, with each pair oriented forward in global time.
 Write J⁺ for the enlarged candidate obtained by deleting the nonnegative
 clock-overlap term λνO from the Gaussian exponential. This is a diagram
 upper bound, not a claim about a new Gaussian process or a Feynman–Kac formula.
-We prove the candidate assertion
+The resulting comparison is
 
     0 < J(λ,ν) ≤ J⁺(λ,ν) < I(λ,ν)      if λ>0, ν≥0.          (T)
 
@@ -69,8 +70,9 @@ Put R=u+L, q=u−L; the Jacobian is 1/2 and R>|q|. Direct integration gives
 For the first branch use V=(R−q)³/192. For the second write R=d+t,
 so V=t d²/32+t²d/32+t³/192 and integrate the three Gamma moments.
 
-Let c=1+λ and b=1+ν. Split the positive (q,w) quadrant according to q>w
-or w>q. The actual integral becomes
+Let c=1+λ and b=1+ν. The negative-q half-plane contributes the second
+term below. Separately split the positive (q,w) quadrant into q>w and w>q
+to obtain the first term. The actual integral becomes
 
     64 I = [1/(b+1)] [1/c+1/(b+λ)]
             +[1/(b+λ)] [1/c+2/c²+2/c³]
@@ -94,7 +96,10 @@ are correlated; a product of density VALUES here is not independence.
 
 The forward scalar-clock increments have nonnegative overlap O. The joint
 Gaussian characteristic function contributes exp(−λνO). Dropping this factor
-increases the positive averaged integrand. Put A=λ+λ²/2; the self damping
+increases the positive averaged integrand. Here O is the overlap of
+[min(u,v+w+z),max(u,v+w+z)] with [v,v+w]. Thus the original J has exactly
+the integrand below times exp(−λνO), as in the prior degree-four definition.
+Put A=λ+λ²/2; the self damping
 combines with heat damping to give b²/2. Therefore
 
     J⁺ = (1/16)∫ L e^(−(u+L)/2) h(u+L) h(w)
@@ -188,18 +193,21 @@ by y. Its y coefficient at x=0 is 96. Thus it is positive for x≥0,y>0.
 The exact certificate, its identity with (Q), the domain conditions, clearing
 positive denominators and the STRICT square-root comparison are all checked
 by terminal_bound in the local TerminalCross Lean module. The formal consumer
-is the displayed bound (U) itself, not merely a sample or a polynomial sign.
+starts with the closed form displayed in (U), not merely a sample or a
+polynomial sign. The preceding identifications F₀=4P/[c³(c+1)] and
+2k=(c²−1)/(c²+1) are algebraically proved above and were independently
+checked for this application; they are not part of the formal statement.
 No desired bound is a Lean hypothesis.
 
 The formal boundary excludes the physical/Brownian reductions, the positive
-mixture identification, and their application. Those analytic steps require
-the independent review of this note. No new companion/package gate, full
+mixture identification, and their application. Those analytic steps are covered by the separate source-bound review of
+this note,not by the Lean statements. No new companion/package gate, full
 dependency rebuild, Comparator run or full SPDE formalization is claimed.
 
 ## 6. Fractional averaging, scaling and the remaining problem
 
-Combine J≤J⁺ with (U) and (I). For λ>0, ν≥0 this proves (T) as a candidate
-analytic result. At λ=0, A=0 and F_A(w)=∫H(q)dq=6; hence J⁺=3/(32b)=I.
+Combine J≤J⁺ with (U) and (I). For λ>0, ν≥0 this proves (T) at its stated
+finite-degree scope. At λ=0, A=0 and F_A(w)=∫H(q)dq=6; hence J⁺=3/(32b)=I.
 The clock overlap factor is then one, so J=J⁺ also. No Gamma(0) is used.
 
 For every 0<a<1, average with
@@ -221,7 +229,7 @@ their θ=1 values at λ/θ,ν/θ. After fractional averaging the factor is
 names proves the mirrored (3,1)01·23 comparison, with its pair parameters
 exchanged as specified in §1.
 
-This would add two controlled diagrams only in the white endpoint, giving
+This adds two controlled diagrams only in the white endpoint, giving
 eleven there and leaving four: (1,3)02·13, its (3,1)02·13 mirror, and the
 two fully cross-paired (2,2) diagrams. The original covariance-class count
 stays at nine. No all-order comparison, full sharp constant, novelty,

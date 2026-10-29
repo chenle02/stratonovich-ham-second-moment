@@ -1,0 +1,81 @@
+```json
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    ".review/required-sources.json lines 1-147 (read plan only; earns no read credit)",
+    "terminal-note.txt lines 1-229 (complete)",
+    "TerminalCross.lean lines 1-113 (complete)",
+    "Lean-statement-fence.md lines 1-35 (complete)",
+    "types-and-axioms.txt lines 1-108 (complete)",
+    "Lean-local-receipt.json lines 1-93 (complete)",
+    "StrictEndpoint.lean lines 1-3 (complete); StrictEndpoint.txt lines 1-2 (complete)",
+    "WrongPolySign.lean lines 1-4 (complete); WrongPolySign.txt lines 1-2 (complete)",
+    "WrongPrefactor.lean lines 1-3 (complete); WrongPrefactor.txt lines 1-2 (complete)",
+    "WrongRate.lean lines 1-3 (complete); WrongRate.txt lines 1-2 (complete)",
+    "calibration-summary.json lines 1-321 (complete)",
+    "closed-probe.py lines 1-111 (complete)",
+    "component-checks.csv lines 1-69 (complete, 68 cases)",
+    "component-probe.py lines 1-42 (complete)",
+    "numerical-precision.md lines 1-7 (complete)",
+    "prior-inputs.md lines 1-38 (complete)",
+    "source-excerpts.txt lines 1-464 (complete)",
+    "source-map.md lines 1-23 (complete)",
+    "source-rendering.json lines 1-128 (complete)",
+    "symbolic-certificate.json lines 1-255 (complete)",
+    "symbolic-certificate.py lines 1-38 (complete)",
+    "author-37-top.png, author-37-bottom.png, author-38-top.png, author-38-bottom.png, author-39-top.png, author-39-bottom.png, author-40-top.png, author-40-bottom.png, author-41-top.png, author-41-bottom.png, author-42-top.png, author-42-bottom.png (all 12 images viewed in full)"
+  ],
+  "checks": [
+    {
+      "claim": "C1: The object and labels are exact. White case d=alpha=1, Gamma=delta0, theta=1. Split (1,3): vertex 0 is the singleton, vertices 1<2<3 form the long chain, pair 03 is cross (lambda) and pair 12 is self (nu). The Green product G_u(X)G_v(Y)G_w(0)G_z(X-Y) and the cross delay |u-v-w-z| match this diagram. The mirror (3,1) 01|23 needs the parameters swapped.",
+      "verdict": "PASS",
+      "reason": "Independently checked. The singleton sits at physical time u and position X. The long chain has vertex 1 at (v,Y), vertex 2 at (v+w, x2) and vertex 3 at (v+w+z, x3). The white pairing 12 forces x2=Y, which gives the gap factor G_w(0)=1/2. The pairing 03 forces x3=X, which gives G_z(X-Y). The cross time difference is |u-(v+w+z)| and the self time difference is w, so the damping factors are exp(-lambda|u-v-w-z|) and exp(-nu w), as written. In the mirror, the long chain 0,1,2 comes first and the singleton is 3. The self pair (first two long-chain vertices) is 01 and the cross pair (last long-chain vertex with the singleton) is 23. So canonical pair 01 carries nu and pair 23 carries lambda, which is the stated swap. The fractional weight is symmetric, so the averaged result transfers. The note says explicitly that the transforms are auxiliary chain-gap transforms, not unequal-time correlations or diagonal-horizon coefficients."
+    },
+    {
+      "claim": "C2: The physical rational formula I=N/[32c^3(b+c-1)(b+1)], with N=b(c^2+c+1)+c^3+c+1, c=1+lambda and b=1+nu.",
+      "verdict": "PASS",
+      "reason": "Re-derived every step. (1) In p=v+Y, q=v-Y the constraints |Y|<v and |X-Y|<L-v become 0<p<L+X and 0<q<L-X. The Jacobian is 1/2 and the two Green factors give 1/4, so the convolution is (L^2-X^2)_+/8. (2) Integrating against G_u(X)=1/2 on |X|<m and including G_w(0)=1/2 gives V=(L^2 m - m^3/3)/16. (3) With R=u+L, q=u-L (Jacobian 1/2): for q>=0, m=L and V=(R-q)^3/192, so (1/2)·6e^{-q}/192 = e^{-q}/64. For q=-d<0, R=d+t, m=t/2, L=d+t/2 and V = d^2t/32 + dt^2/32 + t^3/192. The Gamma moments 1, 2 and 6 give e^{-d}(d+1)^2/64. (4) The q<0 part contributes [1/(b+lambda)][1/c+2/c^2+2/c^3]. The q>=0 part splits into q>w, giving 1/(c(b+1)), and q<w, giving 1/((b+lambda)(b+1)). (5) Over the common denominator c^3(b+c-1)(b+1) the numerator is c^2(b+2c-1)+(c^2+2c+2)(b+1) = 2N. So 64I = 2N/[c^3(b+c-1)(b+1)]. No delay, binomial, factorial or half-factor is lost. All integrands are nonnegative (Tonelli), and at lambda=0, I=3/(32b)."
+    },
+    {
+      "claim": "C3: For the enlarged clock J+: positive overlap drop, joint spatial density, the 1/16 and 1/64 constants, A=lambda+lambda^2/2, the b^2/2 self/heat combination, and the definitions of H and F.",
+      "verdict": "PASS",
+      "reason": "Both forward-oriented clock increments are taken with the source's sign convention (pp.40-41: sum c_l(beta(s_l)-beta(s_{l-1})) = sum lambda_jk(beta(s_k)-beta(s_j)) with j<k). Their joint characteristic function is exp(-[lambda^2|I_X| + nu^2|I_S| + 2 lambda nu |I_X ∩ I_S|]/2), so the overlap factor exp(-lambda nu O) with O>=0 is at most 1, and dropping it from a positive integrand gives J<=J+. The cross pair gives theta·lambda|Delta| + lambda^2|Delta|/2, so A=lambda+lambda^2/2. The self pair gives exp(-nu w - nu^2 w/2), which combines with the heat factor e^{-w/2} into e^{-b^2 w/2}. Four Green gaps give (1/2)^4=1/16, matching the p.39 per-gap 1/2. For D1=B0(u)-B1(v+w+z) and D2=B1(v+w)-B1(v): Var D1=u+v+w+z, Var D2=w, Cov=-w. The determinant is w(u+v+z), so the joint density at 0 is h(w)h(u+v+z). The note correctly says this is a joint density, not independence. All remaining factors depend on (v,z) only through L, so integrating v over 0<v<L gives L. Under R,q this becomes (1/16)(1/2)(1/2)(R-q), which is the 1/64 in (J). The note does not claim a new clock process or a PAM Hamiltonian. The definition of J itself comes from the named prior degree-four memo; I checked consistency with its prose description in prior-inputs.md, not against the memo."
+    },
+    {
+      "claim": "C4: Positive mixture, component envelope, Lean lemma application, uniform rate k=A/[2(A+1)], mass F0, and J+ <= F0/[64 sqrt(b^2+2k)].",
+      "verdict": "PASS",
+      "reason": "Mixture of f: substitute s=1/2+tau and use Gamma(1/2)=sqrt(pi); the result is f(R)=e^{-R/2}/sqrt(2 pi R). Integrating gives g(q)=∫e^{-sq}ω(ds) with ω=ds/[pi sqrt2 s^2 sqrt(s-1/2)], and H(-q)=∫e^{-sq}(1+2sq)ω(ds). Since ∫R f=1 (Gamma(3/2)), ω is a probability measure. Closed form of L_{A,s}: the e^{-Aw} coefficient is 1/(s-A)+(A+3s)/(s+A)^2 = 4s^2/[(s-A)(s+A)^2], and the e^{-sw} coefficient is -2A/[(s-A)(s+A)]. For A<s, (C,D,r,R)=(4s^2/[(s-A)(s+A)^2], 2A/[(s-A)(s+A)], A, s). For s<A, (C,D,r,R)=(2A/[(A-s)(A+s)], 4s^2/[(A-s)(A+s)^2], s, A). In both cases C-D=2(A+2s)/(A+s)^2>0, D>0, and Cr-DR = 2As/(A+s)^2 = (C-D)k_s. So exponential_difference's three hypotheses (0<=D, D<C, (C-D)k=Cr-DR) are actually discharged by these coefficients. Its conclusion is the bound itself; no hmix-style desired bound is assumed. For A=s, L=e^{-Aw}(w+3/(2A)), m=3/(2A), k=A/3, and the bound follows from 1+t<=e^t with t=2Aw/3. L_{A,s}(0)=2/(A+s)+2s/(A+s)^2 equals m_{A,s}. rate_le applies with A>0 (lambda>0) and s>=1/2 (the support), and k_s is increasing in s. The bound is used pointwise in s and only nonnegative envelopes are integrated, so the signed C and D are never integrated across s=A. F_A(0) = ∫f(R)∫_{-R}^{R}(R-q)e^{-A|q|}dq dR = (2/A)∫Rf(1-e^{-AR}). With ∫Rf e^{-AR} = (1+2A)^{-3/2} = c^{-3} and A=(c^2-1)/2, F0=4(c^2+c+1)/[c^3(c+1)]. Also 2k=A/(A+1)=(c^2-1)/(c^2+1), and ∫h e^{-d^2w/2}=1/d. So J+ <= F0/[64 sqrt(b^2+2k)] = P/[16c^3(c+1)sqrt(b^2+(c^2-1)/(c^2+1))]. Everything is finite. lambda=0 is handled separately: A=0, F_0(w)≡2∫R^2 f=6 exactly, and rate_le is not invoked there."
+    },
+    {
+      "claim": "C5: The Lean types, axioms and trust scope match, and the application corresponds exactly.",
+      "verdict": "PASS",
+      "reason": "All five public types (types-and-axioms.txt) match their source declarations and the fence's scope. terminal_bound states exactly numP c/(16 c^3 (c+1) Real.sqrt(b^2+(c^2-1)/(c^2+1))) < numN b c/(32 c^3 (b+c-1)(b+1)) under 1<=b and 1<c. Here numP=P and numN=bP+c^3+c+1=N. The left side is my derived envelope (U) and the right side is my derived I, with the 16/32 denominators, the sqrt and the domain (nu>=0 gives b>=1; lambda>0 gives c>1) all matching. No hypothesis is a desired inequality. rate_le and exponential_difference have only the domain and coefficient hypotheses that the C4 application discharges. The axiom audit lists only propext, Classical.choice and Quot.sound. I spot-checked the certificate: 47 monomials (8+9+10+10+10), each with y-degree >=1, and the x^0 y^1 coefficient is 96. Squaring after clearing denominators reproduces (Q). The receipt is local, using a read-only pinned dependency cache, and the packet records no canonical lean-pkg or Comparator gate; status is LOCAL_ELABORATED_CORRESPONDENCE_PENDING. I did not execute anything, so no execution credit is taken."
+    },
+    {
+      "claim": "C6: Fractional averaging, finiteness, strictness, the lambda=0 endpoint, scaling, diagram counts, scope, source use and calibration status.",
+      "verdict": "PASS",
+      "reason": "Bound I<=3/(16bc): P<=3c^2 and c^3+c+1<=3c^3, so N<=3c^2(b+c); with b+c-1>=(b+c)/2 and b+1>=b the bound follows. Gamma(a)^{-1}∫lambda^{a-1}/(1+lambda) = Gamma(1-a) (via the r-representation), so I_a<=(3/16)Gamma(1-a)^2<∞. On lambda>0 (full measure), I-J>0 pointwise and the integrands are nonnegative, so J_a<I_a holds directly, not as a limit. At lambda=0, J=J+=I=3/(32b) because the overlap factor is 1, and no Gamma(0) appears. Scaling: four gap times and two spatial integrals give theta^{-6} at (lambda/theta, nu/theta), and the two lambda^{a-1}dlambda weights give theta^{2a}, so the total is theta^{2a-6}. Amplitude kappa·delta0 gives kappa^2 for both sides. Counts: 15 degree-four diagrams = 3·5 splits × pairings; 9+2+4=15. The remaining four are (1,3)02|13, its mirror, and (2,2)02|13 and 03|12. The general-class count stays at 9. Source pages 37-42 confirm Theorem 6.1, the heat conversion (p.39), the beta characteristic function (p.40), the analytic Gamma (6.3) (p.41) and Remark 6.3 (p.42). The note imports neither a two-chain 6.1 identity nor the (7.1) modulus bound. Calibrations are labelled finite floating checks. The Rayleigh fibers and the closed M/N evaluation are explicitly not proof inputs. The 1e-261 precision fix factors an exact common exp(-min(A,s)w) out of both sides with an unchanged 1e-45 criterion. Packet values agree with the proven envelope: for example lambda=.1, nu=10 gives U≈6.72586e-3 > J+≈6.72579e-3, and lambda=10, nu=10 gives U≈4.712e-5 > J+≈4.697e-5."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Section 2 says 'Split the positive (q,w) quadrant according to q>w or w>q', but the q<0 half-plane is a separate third region; it supplies the term [1/(b+lambda)][1/c+2/c^2+2/c^3]. Rewording would help, though the formula (I) itself is correct.",
+      "The Lean consumer formalizes only the final closed form (U)<I. Two identifications that turn F0/[64 sqrt(b^2+2k)] into (U) are informal: F0=4P/[c^3(c+1)] and 2k=(c^2-1)/(c^2+1), which rely on A=(c^2-1)/2 and 1+2A=c^2. I checked both by hand and they are correct. The note's phrase 'the formal consumer is the displayed bound (U) itself' could say this explicitly.",
+      "The semantic false controls are standalone norm_num numeric statements. Only WrongPolySign touches module definitions. None tests that terminal_bound would fail if its statement were perturbed (for example 16 and 32 swapped, or the sqrt argument altered). WrongPrefactor's sample values (1140/307328 vs 816/307328) are not tied to a documented parameter point in the packet.",
+      "The A=s component case has omega-measure zero, so the 1+t<=e^t argument is not strictly needed for the integrated bound. It is harmless and correct.",
+      "The envelope is nearly tight at small lambda with large nu (lambda=.1, nu=10: relative gap U-J+ ≈ 1e-5). The strict comparison then rests on U<I, whose margin there is about 4%. This is consistent with the proof but worth noting for any later sharpening."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "The definition of the shared-clock candidate J comes from the named prior 'degree-four memo', which is not in the packet. I checked J+ against the prose description in prior-inputs.md and against source Theorem 6.1 (pp.38-41). I did not check it against the memo text.",
+    "The previously reviewed nine-term comparison and the 15-diagram enumeration are taken as named prior inputs. I verified the counts are arithmetically consistent, but did not re-review the earlier comparisons.",
+    "I executed nothing (no Lean, Python or sympy). Kernel-check status, axiom audit and numerical outputs are taken from the packet's receipts and logs, as instructed.",
+    "This AI review is not human verification, a novelty audit, or a review of the all-order, sharp-constant, Skorohod, general-covariance or whole-paper claims, all of which are outside the accepted scope."
+  ]
+}
+```

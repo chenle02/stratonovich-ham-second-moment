@@ -1,0 +1,18 @@
+{
+  "status": "Root input/application map;not additional reviewer reading",
+  "prior_note_sha256": "b4ddf6954ee0895d0534089dd810935a60d06731fb4cc25f71d1a0f3e9955f90",
+  "prior_definition_excerpt": "Explicitly,\nfor four ordered operational vertices s, let U,V be the last times of the\nnonempty chains (zero for an empty chain), \u0394\u2081,\u0394\u2082 the lengths of the forward\npair intervals, O their overlap, and H_\u0393(s) the spatial Brownian average of\nthe two \u0393 factors. Interpret H_\u0393 as the nonnegative spatial heat-regularized\nlimit. The fixed-parameter candidate is\n\n    J^\u0393_{m,D}(\u03b8;\u03bb,\u03bd) = (1/16) \u222b e^(\u2212\u03b8\u00b2(U+V)/2) H_\u0393(s)\n      exp[\u2212\u03b8(\u03bb\u0394\u2081+\u03bd\u0394\u2082)\u2212(\u03bb\u00b2\u0394\u2081+\u03bd\u00b2\u0394\u2082+2\u03bb\u03bdO)/2] ds.\n\nThe domain is the product of the two ordered positive chain time simplices.\nThis definition permits extended values before finiteness is proved;the nine\nterms used here are finite by the identities and bounds below. It specifies\nthe same shared clock as before,not a new two-chain representation theorem.\n\n",
+  "substitution": {
+    "theta": "1",
+    "Gamma": "delta0",
+    "vertices": "s0=u;s1=v;s2=v+w;s3=v+w+z",
+    "last_times_sum": "u+v+w+z",
+    "Delta_cross": "abs(u-v-w-z)",
+    "Delta_self": "w",
+    "overlap": "[min(u,v+w+z),max(u,v+w+z)] intersect [v,v+w]",
+    "spatial_average": "jointdensityh(w)h(u+v+z)",
+    "prefactor": "1/16"
+  },
+  "matches_new_J_before_overlap_drop": true,
+  "reviewer_read_prior_memo": false
+}

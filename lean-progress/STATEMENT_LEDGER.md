@@ -13,11 +13,14 @@ and evidence/attempt-03/Audit.txt. No companion/package gate is claimed.
 
 | Lean name | Consumer | Status |
 |---|---|---|
-| polynomial_identity | Exact shifted47termcertificate | Local compile/replay;application review pending |
-| polynomial_pos | b>=1,c>1imply strict positivity | Local compile/replay;application review pending |
-| rate_le | Uniform positive-mixture exponential rate | Local compile/replay;application review pending |
-| exponential_difference | Convexity bound for slow/fast exponential difference | Local compile/replay;application review pending |
-| terminal_bound | ACTUALstrict rational/square-root clock-envelope versus wave-integral bound | Local compile/replay;application review pending |
+| polynomial_identity | Exact shifted47termcertificate | Local compile/replay;application6PASS/HIGH |
+| polynomial_pos | b>=1,c>1imply strict positivity | Local compile/replay;application6PASS/HIGH |
+| rate_le | Uniform positive-mixture exponential rate | Local compile/replay;application6PASS/HIGH |
+| exponential_difference | Convexity bound for slow/fast exponential difference | Local compile/replay;application6PASS/HIGH |
+| terminal_bound | ACTUALstrict rational/square-root clock-envelope versus wave-integral bound | Local compile/replay;application6PASS/HIGH |
 
 Exact hypotheses/types and excluded analytic inputs are in
 local-checks/terminal-cross-v1/STATEMENT-FENCE.md and the source/Audit evidence.
+
+The five terminal-cross names were checked together inC5of the six-group
+analytic/type/applicationreview at6475ea0,not five separate six-checkreviews.

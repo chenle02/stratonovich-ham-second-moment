@@ -75,6 +75,12 @@ Five scalar statements compile with only standard axioms;owned-source replay
 and four meaningful false controls pass. The strict finalconsumer includes
 its real square root and positive denominators. The positive47termcertificate,
 rate bound and exponentialconvexity support a NEWanalytic white terminal-cross
-comparison. Exact type/application review pending. This is a standalone local
+comparison. Exact type/application review passed in the6PASS/HIGHanalytic gate at6475ea0. This is a standalone local
 pilot,not an opened companion/package/lease/cluster wave. L0remainsPROPOSED.
 Evidence:local-checks/terminal-cross-v1/local-receipt.json.
+
+Terminal-crossclose:all five scalarpublictypes/applicationpassed6HIGHreview,
+280.956s. Proofsourceunchangedafterreview. Rootadded2actualconsumerFalse
+controls afterreview (total6;reviewer saw4),documented as such. Analyticwave/
+clock/mixtureidentities remaininformal proofs. Evidence/type boundary at
+local-checks/terminal-cross-v1/local-receipt.json. L0companionunchanged.

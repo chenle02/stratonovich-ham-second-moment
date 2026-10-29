@@ -1,3 +1,7 @@
+Latestprivateproposal:white11vsoriginalclass9finite-degreecomparison,
+terminal-cross6HIGHat6475ea0;fourwhite/sixgeneralandsharpremainOPEN.
+No canonical publicationrequested/enqueued/authorizedhere.
+
 Latest private proposal:degree-four9of15partialcomparison,originalGamma/d1--3,
 8PASS/HIGHsourced016a34. Sixremaining/fullsum/allorder/sharpstillOPEN;
 canonical110pageTeX/PDFunchanged. This update is private and unpublished.

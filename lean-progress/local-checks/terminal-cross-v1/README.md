@@ -14,4 +14,6 @@ SHAvalues are retained,raw local records are preserved until archival.
 
 No new repo/package,lease,registry,donor write or cluster job. No fullMathlib
 rebuild or Comparator/privatepackage gate. Analytic source/type/application
-correspondence for the white SPDE reduction remains pending.
+correspondence for the white reduction passed6checks/HIGHat6475ea0. Two
+additional definition-levelFalsecontrols were root-runafterreview (six total,
+four actually shown);see FALSE-CONTROL-MAP.md. The fullSPDEis not formalized.

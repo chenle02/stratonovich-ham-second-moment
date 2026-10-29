@@ -27,3 +27,9 @@ convexity consumer are kernel-checked. No desired inequality is a hypothesis.
 The physical/clock reduction,positive mixture and parameter correspondence
 remain analytic obligations. Scope is a white1Ddegree-four diagram,not an
 all-covariance/all-order or sharp theorem. No new companion/package gate.
+
+Terminal-crossapplicationgateclosed6PASS/HIGHat6475ea0. Itcertifies exact
+scalarstatement/applicationcorrespondence;the integral reductionsremain
+informal. Original4falsecontrolsseenbyreviewer;2definition-level postreview
+controls root-executedonly. F0andrate-to-closedUidentificationsare outside
+the Leanstatement. Proofsource unchanged. No allcovariance/allorder claim.
