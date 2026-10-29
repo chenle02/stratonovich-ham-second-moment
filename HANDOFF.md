@@ -1,96 +1,96 @@
-Last updated: 2026-10-29 05:24 UTC
+Last updated: 2026-10-29 06:25 UTC
 
 # HANDOFF — Article-Stratonovich-HAM-Second-Moment
 
 ## ⏭ Next session: where to stand and what to do
 
-Collect the NEW source-carrier-repaired SCIENTIFIC review,opus-v2,in
-reviews/2026-10-29-chronological-word/. Its packet-v2 is frozen at
- a8d31d5a3b9f72f07c302ad6342ba5ab1a9ceed1. Mathematics is byte-unchanged
-from38de334. At this handoff commit no process is live;the current run
-intends to launch opus-v2 once after the same-shell frozen-byte and
-check-carrier-preparation.py guards. If opus-v2/receipt.json or
-active-review-handle-v2.json exists,inspect the actual current process/
-terminal state and collect that attempt. Never restart an observation timeout.
-Hold its ACTUAL launch HEAD until terminal collection.
+Collect/adjudicate the NEW fourth whole-paper cold read in
+reviews/2026-10-29-full-upper-cold-v4/. Its final85page blind packet is
+frozen at37f9107346607100a0098d44528945dba028e0ab;canonical final mathematics
+adoption3b248ea37c588055f2cc712606f5767be9d898e3. At this handoff commit
+NO process is live;the current run intends to launch launch.py once next.
+If native-v1/execution.json or active-cold-handle.json exists,inspect its
+actual PID/session/status and poll that attempt. Do not restart an observation
+timeout. The actual launch HEAD is recorded there and must be held until
+terminal collection. If no attempt exists,launch only the committed packet
+with its same-process guard and exact canonical binding.
 
-Do NOT accept or resume opus-v1. It returned16PASS/HIGH,no mathematical
-repairs,in715.188s,but accepted=false/coverage_verified=false:one source PNG
-was re-encoded by native Read to JPEG. All18texts and22of23images were exact.
-The report is complete and preserved;this was not an unread-file error.
+Primary source-repaired review is TERMINAL and ACCEPTED:Opus5.5/HIGH,
+641.655s,16PASS,all19texts/24images exact,no mandatory repairs. Actual source
+ec7a9c4;all8minor findings adjudicated. Final86page source has one elementary
+Cauchy explanation of existing absolute energy convergence plus status prose;
+all formal statements/44of45proofs are byte-equal,and the critical fixed-split
+proof is EXACTLY reviewed. The final blind copy preserves ALL45final proofs.
+Originalv1and non-science calibration rejected receipts remain unchanged.
+All122accepted native/dry-run members archived/read-back verified;raw removed.
 
-Carrier repair is REAL and calibrated:two overlapping direct-PDF PNG windows
-cover all of printed2145,and the complete final24image cohort was delivered
-byte-for-byte in a separate82.767s carrier-only run. That run's prose preamble
-was format-rejected (invalid-report/accepted=false),preserved verbatim.
-Its official image ledger is complete;it is preparation evidence,not a
-scientific vote or report-format acceptance. The new scientific review must
-independently pass ALL19texts/24images and the unchanged HIGH threshold.
-
-The86page proof remains CANDIDATE. All three older cold reads remain NOT
-CLEAR. Only after actual new primary adjudication may cold-v4 be finalized
-and dispatched. Full original goal ACTIVE;sharp OPEN,Lean decision4 pending.
+Full original goal ACTIVE,not complete. All three older cold reports remain
+NOT CLEAR on old sources;this new full read must be adjudicated independently.
+Sharp constant OPEN;Lean creation decision4pending. No novelty,circulation,
+source-author contact,public release or canonical wiki publication claim.
 
 ## Pre-flight checks
 
-1. Read Progress.md and PROJECT-GOAL.md. Scientific proof freeze38de334,
-   original failure10397ae and repaired packet a8d31d5 are pushed/synchronized.
-2. Current86pages,45proofs;clean/idempotent build;all formal statements
-   unchanged. TeX SHA2566826aab7bbdd57948813e419878be0478e13b297ff5580e6c31ed8ccd86a8c99;
-   PDF SHA2569a1e028579b36b649f7afde4aab36a8156557df48ccfb6cd35f0b6ed47835474.
-3. T:full-upper13.8 is page81;fixed-split13.4 page72;coefficient13.5 page76;
-   terminal13.6 page79;tail13.7 page80. No .tex/PDF change during carrier repair.
-4. Opus-v1 source dcbed86,16PASS/HIGH,overall UNACCEPTED. All7minor findings
-   adjudicated.118native/dry-run files archived/read-back hash verified;own
-   terminal raw removed. Do not poll old session18651 or resume it.
-5. Carrier-only source10397ae:all24PNG bytes delivered,official ledger true;
-   format-invalid advisory and all qualifications retained.39native members
-   archived/read-back verified;own raw removed. Old session19233 terminal.
-   This is not mathematical acceptance. No parser/version/threshold changed.
-6. packet-v2 has the same mathematical files as v1;only two metadata maps,
-   one page replaced by two overlapping crops,and carrier provenance change.
-   input-carrier-delta-v2.json records actual equality.19texts/24images.
-7. Before actual science launch,run check-carrier-preparation.py on required-v2
-   and the bound carrier receipt/ledger. It passes final24and refuses actual
-   old23plan. This checks PREPARATION only;actual scientific coverage still
-   must pass. Run committed-member guard in the SAME fail-fast launch shell.
-8. Fresh doctor/picker:authorized account <account removed>,first-party <plan removed>,supported
-   Claude2.1.304,model5.5/effortHIGH. Launch-local PATH only;no global setup.
-   Bare JSON is now explicitly requested;actual output still needs checking.
-9. Core proof/covariance class/target unchanged;source-class/unequal-chain/
-   limit repairs are candidates until the new scientific gate. Main moment
-   limit uses fixed-order Th4.1+geometric tails;known mild identification is
-   separately imported,not re-proved or claimed unique.
+1. Read Progress.md and PROJECT-GOAL.md. Canonical adoption3b248ea and
+   cold-v4 freeze37f9107 are pushed/<HUB>-synchronized before this handoff.
+2. Canonical86pages,45proofs;clean/idempotent build. Final binding in
+   chronological-word/final-status-binding.json.
+   TeX SHA256aca129634519a0e9baa1bc9700caf1103e5ece5f65be3aca906615fbc76a6241;
+   PDF SHA256128a54230eeb637aae516a37fdaa878677ecfb4ce12573427554f9e9e13b9386.
+3. All statements including remarks/conjectures/definitions unchanged;44proofs
+   byte-equal to reviewed source. Only P:interval-coefficients gains elementary
+   doubled-polydisc Cauchy details. Its2^|F|/4^|F| factors justify identities
+   at a fixed family;they do NOT enter the uniform moment bound.
+4. Main theorem13.8 page81;fixed-split13.4 page72;coefficient13.5 page76;
+   terminal13.6 page79;tail13.7 page81. The sharp target remains open.
+5. New blind85pages,ALL45proofs/every formal type byte-equal to FINAL86pages.
+   Only workflow/status boxes and title qualifier removed;mathematical source
+   qualifications remain. Full manuscript/bibliography inline;all6pinned source
+   texts available;canonical free-form prompt,NO checklist/old reports/grades.
+6. Actual DeepSeekV4-Pro isolated read probe passed5.975s;current configured
+   category agrees with explicitmodel. It is not science evidence. Use fresh
+   session,read-only pure config,explicit TEMP.git cwd/--dir,131072output cap.
+   Inspect actual tool paths and source consultation,including zero calls.
+7. source-repaired primary receipt accepted=true/coverage=true at16HIGH.
+   Its optional full PDFs were supplied but not read;do not repeat 'unavailable'
+   as a delivery fact. Root checked Chen2023p1class separately;not Opus credit.
+8. Originalv1science16HIGH remains UNACCEPTED for PNG/JPEG mismatch. Carrier
+   run ledger24exact is preparation only;its prose-preamble invalid-report
+   status stays intact. All old review/calibration processes terminal,archives
+   verified. Do not resume completed scientific reviews or relabel receipts.
+9. Canonical wiki unchanged;PRIVATE proposal cites actual3b248ea and exact
+   accepted scope. Notification/publication boundary still open. Lean L0/
+   PROPOSED,no package/lease/code/build. Seven references already queued.
 
 ## Concrete deliverables for the next session
 
-- Collect opus-v2 actual report and native ledger;verify route,source/input
-  stability and every required text/image. Retain exact verdict/confidence.
-  A full HIGH scientific report with failed delivery remains unaccepted.
-- Adjudicate every actual finding. Originalv1minor4 suggested a short
-  polydisc-Cauchy justification of coefficientwise absolute energy convergence;
-  it is planned for the final minor pass,not silently added to this unchanged
-  source-carrier repair. Other optional tightening/renaming is not required.
-- If the new primary passes,regenerate cold-v4 from final canonical bytes.
-  Provisional85page blind copy/scripts/live-route probe are OWN UNTRACKED WIP
-  in reviews/2026-10-29-full-upper-cold-v4/. All45proofs and all formal types,
-  including conjectures/definitions,are checked. It has NOT been scientifically
-  dispatched or finalized;do not launch before actual primary adjudication.
-- Preserve and archive each terminal attempt before own cleanup. Keep
-  calibration advisory invalid-report separate from its successful byte
-  observation. Never relabel old receipts or combine failed gates informally.
-- PRIVATE wiki proposal is current86candidate/unaccepted16HIGH plus carrier
-  evidence. Canonical wiki/notification boundary remains open;no publication.
-- Full sharp target remains open;no new sharp wave. Lean L0/PROPOSED;
-  no package,lease,code or build without explicit decision4approval.
+- Collect the fresh cold report,verify actual model/full initial prompt,
+  HEAD/input stability and exact source reads. Preserve its concern prose
+  without manufacturing a confidence grade. Adjudicate every item under
+  substantive/cosmetic/already-known distinctions. Actual confusion about
+  a proof step is substantive,even after the valid16HIGH primary report.
+- If substantive,repair the actual argument,then fresh primary/HIGH before
+  another fresh cold read. Do not make unchanged confidence/clearance retries.
+- Archive terminal native evidence and workspace contents with read-back
+  hashes before own cleanup. The launcher refuses durable completed records
+  after cleanup as well as an existing live directory.
+- Retain known boundaries:working-note organization,unpublished pinned source,
+  unresolved printed E_star/E normalization,nonsharp constant,T>=1,and source
+  theorem proofs imported rather than re-proved. No automatic source correction.
+- Reconcile PRIVATE wiki proposal and README/HANDOFF with actual cold outcome;
+  canonical wiki/notification still require their existing boundary. No direct
+  shared six-repo edits,source-author/coauthor messages or public release.
+- Original sharp goal remains open;the variance-tilt screen/source recon are
+  planning only. Lean creation requires separate decision4authorization.
 
 ## Success criteria for the immediate next step
 
-The new immutable source-repaired input receives its OWN complete native
-scientific verdict/delivery record. The unchanged HIGH gate passes only if
-that actual report and every required source meet it. Carrier preparation
-never substitutes for scientific acceptance. Fresh whole-paper cold review
-still follows;the full goal is not complete.
+A fresh full-paper concern report is bound to the actual final85page proof
+bytes,the exact native model and actual source consultation. Every concern
+is adjudicated without using earlier HIGH to waive a substantive defect.
+The full original spatial class and upper/sharp targets stay unchanged.
+Whole-paper reading is separate from novelty,formal/human or circulation
+clearance;the original overall goal is still incomplete.
 
 ## Anti-success criteria
 
@@ -350,19 +350,33 @@ Latest checkpoints:
   Fresh scientific review NEXT. Provisional85page cold-v4 and actual5.975s
   DeepSeekV4-Pro isolated access probe are prepared,not a scientific review.
 
+- 2026-10-29 source-repaired primaryec7a9c4:641.655s,all16PASS/HIGH,
+ 19texts/24imagesexact,no mandatory repairs,accepted=true. All8minor findings
+  adjudicated;optional-PDF availability wording corrected without extra read
+  credit.122native/dry-run files archived/hash verified and raw cleaned.
+- 2026-10-29 adoption3b248ea:final86page clean notes,all formal statement
+  types/44of45proofs byte-equal;critical fixed-split proof unchanged. Only
+  existing absolute-energy claim gets elementary polydisc-Cauchy explanation.
+  Final source/PDF hashes and exact delta retained. README stale setup status
+  corrected;PRIVATE proposal cites actual adoption,not canonical publication.
+- 2026-10-29 cold-freeze37f9107:final85page blind copy regenerated,all45proofs
+  and every formal type including conjecture/definition match. Canonical
+  free-form prompt and6source texts,isolated read-only fresh route. Current
+  category verified;5.975s actual access probe is not science. New cold NEXT.
+
 ## Repo & git state at handoff
 
-- master;pre-handoff HEADa8d31d5a3b9f72f07c302ad6342ba5ab1a9ceed1,
-  pushed/<HUB>-synchronized. Only HANDOFF.md in this dedicated commit.
-- Mathematics/PDF unchanged86pages from38de334. packet-v2 frozen50members,
- 19required texts/24images. Its canonical.tex/pdf equal the actual notes.
-- No process live at this handoff commit;current run will launch opus-v2 next.
-  Subsequent native/dry-run outputs and active-review-handle-v2.json are own
-  metadata WIP outside the frozen packet. Inspect actual process status.
-- OWN untracked cold-v4 provisional work is preserved by exact path above.
-  All old scientific/calibration processes terminal and archives verified.
-- No source PDF,All.bib,sibling Article,canonical wiki or system config edits.
-  No private Lean companion;wiki proposal remains unpublished.
+- master;pre-handoff HEAD37f9107346607100a0098d44528945dba028e0ab,
+  canonical adoption3b248ea37c588055f2cc712606f5767be9d898e3. Both pushed
+  and <HUB>-synchronized. Only HANDOFF.md in this dedicated commit.
+- Canonical86page final TeX/PDF and cold85page packet committed. All45proofs
+  and every formal type equal in blind copy. No own WIP before this handoff.
+- No process live at this handoff commit;current run intends to launch the
+  cold-v4 native-v1 attempt next. Its later execution.json/active-cold-handle
+  and native outputs are own metadata WIP;inspect actual process/terminal state.
+- All older primary/cold/calibration jobs terminal and archives verified.
+  No source PDF,All.bib,sibling Article,canonical wiki or system config edits.
+  No private Lean companion and no authorized external correspondence.
 
 ## Operating notes
 
@@ -403,8 +417,8 @@ was previously placed on <MACHINE> tag4;no persistent display setup was changed.
 
 ## Risks to monitor
 
-1. Current86page chronology is CANDIDATE. v1math16HIGH is UNACCEPTED due
-   one PNG/JPEG mismatch;new source-repaired science and cold gates are open.
+1. Current chronological core PASSED source-complete16HIGH primary. Final
+   source has one bound elementary clarification;fresh whole-paper cold open.
 2. Full sharp p2 constant remains open;upper constant is nonsharp.
 3. Source E_star/E printed normalization conflict has no adopted repair.
 4. Full covariance class must not be replaced with a Riesz/angular subclass.
