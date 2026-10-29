@@ -1,0 +1,426 @@
+\subsection{Finite Gaussian models and their terminal kernels}
+
+For $n\ge1$, define the positive terminal-chain measure
+\begin{equation}\label{E:terminal-chain-measure}
+  \mathsf g_n^{T,x}(\ud\boldsymbol s,\ud\boldsymbol y)
+  =\mathbf1_{[0,T]^n_<}(\boldsymbol s)\ud\boldsymbol s
+  \prod_{j=1}^n
+  G_{s_{j+1}-s_j}(y_{j+1}-\ud y_j),
+  \qquad (s_{n+1},y_{n+1})=(T,x).
+\end{equation}
+The spatial product is read backwards from $x$. Explicitly, it is the
+pushforward of $\prod_{j=1}^nG_{s_{j+1}-s_j}(\ud w_j)$ under
+$y_j=x-\sum_{l=j}^n w_l$. This defines the measure also in dimension
+three. In dimensions one and two its density is the ordered kernel
+$g_n$ in~\eqref{E:expansion}. Set $\mathsf g_0^{T,x}$ equal to unit mass
+on the empty tuple. This definition introduces no kernel symmetrization.
+
+\begin{lemma}[The finite terminal-chain Wick formula]\label{L:terminal-wick}
+  Let $\mathcal W(s,y)$ be a centered real Gaussian field on
+  $[0,T]\times\R^d$, $d=1,2,3$, with covariance
+  $\mathcal K(s,y;r,z)$. Suppose that
+  $V=\sup_{s,y}\E|\mathcal W(s,y)|^2<\infty$, and that the field is
+  jointly continuous in mean square on each open cell of a finite
+  partition of $[0,T]$, times $\R^d$.
+  Define $Y_0=1$ and
+  \[
+    Y_n(T,x)=\int\prod_{j=1}^n\mathcal W(s_j,y_j)
+    \,\mathsf g_n^{T,x}(\ud\boldsymbol s,\ud\boldsymbol y).
+  \]
+  These Bochner integrals exist in $L^2(\Omega)$ and satisfy
+  \begin{equation}\label{E:terminal-term-majorant}
+    \|Y_n(T,x)\|_2
+    \le\sqrt{(2n-1)!!}\,V^{n/2}\frac{T^{2n}}{(2n)!},
+    \qquad n\ge1.
+  \end{equation}
+  For $m+n=2k$, concatenate
+  $\boldsymbol\tau=(s_1,\ldots,s_m,r_1,\ldots,r_n)$ and
+  $\boldsymbol\eta=(y_1,\ldots,y_m,z_1,\ldots,z_n)$. Then
+  \begin{equation}\label{E:terminal-wick-formula}
+    \E[Y_m(T,x)Y_n(T,x)]
+    =\sum_{D\in\Pi_k}\mathcal T_{m,n,D}^{\mathcal K}(T,x),
+  \end{equation}
+  where, with both chains terminating at $(T,x)$,
+  \begin{equation}\label{E:terminal-pairing-integral}
+    \begin{split}
+      \mathcal T_{m,n,D}^{\mathcal K}
+      ={}&\int_{[0,T]^m_<\times[0,T]^n_<}
+      \ud\boldsymbol s\,\ud\boldsymbol r
+      \int_{(\R^d)^m\times(\R^d)^n}\\
+      &\quad\times\prod_{j=1}^m
+      G_{s_{j+1}-s_j}(y_{j+1}-\ud y_j)
+      \prod_{j=1}^n
+      G_{r_{j+1}-r_j}(z_{j+1}-\ud z_j)\\
+      &\quad\times\prod_{\{a,b\}\in D}
+      \mathcal K(\tau_a,\eta_a;\tau_b,\eta_b).
+    \end{split}
+  \end{equation}
+  Each pairing has coefficient one. If $m+n$ is odd, the expectation
+  is zero. Empty chains and the case $m=n=0$ have the usual empty-product
+  meaning. If $\mathcal K\ge0$, every integral above is nonnegative.
+  Consequently, entrywise comparison $0\le\mathcal K_1\le\mathcal K_2$
+  compares all finite partial-order second moments in the same direction.
+  The series $\sum_{n\ge0}r^nY_n$ converges absolutely in $L^2$ for
+  every real or complex $r$.
+\end{lemma}
+
+\begin{proof}
+  The mass of $G_h$ is $h$. If $M_n(T)$ is the total mass of
+  $\mathsf g_n^{T,x}$, integration at the last vertex gives
+  $M_0=1$ and $M_n(T)=\int_0^T(T-s)M_{n-1}(s)\ud s$.
+  Induction therefore yields $M_n(T)=T^{2n}/(2n)!$.
+  Gaussian moments and H\"older's inequality give
+  \[
+    \left\|\prod_{j=1}^n\mathcal W(s_j,y_j)\right\|_2
+    \le\prod_{j=1}^n\|\mathcal W(s_j,y_j)\|_{2n}
+    \le\sqrt{(2n-1)!!}\,V^{n/2}.
+  \]
+  Mean-square continuity of Gaussian variables implies their continuity
+  in every fixed finite $L^p$. Hence, the product is strongly measurable
+  in $L^2$ on the stated pieces. The finite kernel mass and the displayed
+  bound prove Bochner integrability and~\eqref{E:terminal-term-majorant}.
+
+  Fubini now passes expectation through the product of the two finite
+  kernel measures. For the $m+n$ Gaussian variables at their labelled
+  vertices, differentiate
+  \[
+    \E\exp\left(\sum_i t_i\mathcal W(\tau_i,\eta_i)\right)
+    =\exp\left(\frac12\sum_{i,j}t_i t_j
+    \mathcal K(\tau_i,\eta_i;\tau_j,\eta_j)\right)
+  \]
+  once in each $t_i$ at zero. Odd total degree gives zero.
+  At degree $2k$ the result is the sum over unordered pair partitions,
+  with one covariance product per pairing. Orientations and orderings
+  of the $k$ pairs cancel the exponential's $2^k k!$ denominator.
+  Integration gives~\eqref{E:terminal-wick-formula} with precisely
+  the domains and coefficients in~\eqref{E:terminal-pairing-integral}.
+
+  Symmetrizing a chain measure does not change its stochastic integral:
+  the product of its $n$ scalar field values is invariant under relabeling.
+  Thus, averaging the $n!$ pushforwards of $\mathsf g_n^{T,x}$ with
+  coefficient $1/n!$ gives the same $Y_n$. There is no additional $n!$
+  factor in~\eqref{E:terminal-wick-formula}, or $m!n!$ in a two-chain
+  product. This identifies the ordinary ordered regularized integrals
+  and their symmetrized convention in~\eqref{E:expansion}.
+
+  In dimension three one may first replace $G$ by $p_\eta*G$.
+  Those positive measures have the same masses and converge weakly to
+  $G$. Off the finitely many time cut points, all finite Gaussian moments
+  are bounded continuous functions of the spatial variables. Dominated
+  convergence for their finite Wick sums proves the same limit for
+  the mixed second moments with two Green widths. It gives $L^2$
+  convergence to the Bochner integral above, exactly the fixed-noise
+  Green convention used in the source.
+
+  If $\mathcal K\ge0$, positivity of the Green measures makes each
+  covariance product nonnegative. Comparing them proves the stated
+  finite-moment monotonicity, including self-pairs and unequal chains.
+  Finally, the ratio of successive right sides of
+  \eqref{E:terminal-term-majorant}, with an additional factor $|r|^n$,
+  is $|r|\sqrt V T^2/((2n+2)\sqrt{2n+1})$, which tends to zero.
+  The zero-variance case is immediate. This proves the absolute series
+  convergence and Lemma~\ref{L:terminal-wick}.
+\end{proof}
+
+\begin{lemma}[Uniform series tails from scaled moments]\label{L:uniform-series-tail}
+  Fix $(T,x)$. For each positive regularization pair $(\epsilon,\delta)$,
+  let $Y_n^{\epsilon,\delta}$ be the terms of
+  Lemma~\ref{L:terminal-wick} for a field with nonnegative covariance.
+  Write $u^{\epsilon,\delta}(r)=\sum_{n\ge0}r^nY_n^{\epsilon,\delta}$.
+  Suppose that, for some $r>1$ and finite $B_r$,
+  \[
+    \sup_{\epsilon,\delta>0}
+    \E|u^{\epsilon,\delta}(r)|^2\le B_r,
+    \qquad
+    Y_n^{\epsilon,\delta}\longrightarrow X_n
+    \text{ in }L^2\text{ for each fixed }n.
+  \]
+  Then $u=\sum_{n\ge0}X_n$ converges absolutely in $L^2$,
+  $u^{\epsilon,\delta}(1)\to u$ in $L^2$, and
+  \begin{equation}\label{E:uniform-series-tail}
+    \|Y_n^{\epsilon,\delta}\|_2,\ \|X_n\|_2
+    \le B_r^{1/2}r^{-n},\qquad
+    \left\|\sum_{n>N}Y_n^{\epsilon,\delta}\right\|_2,
+    \left\|\sum_{n>N}X_n\right\|_2
+    \le\frac{B_r^{1/2}r^{-(N+1)}}{1-r^{-1}}.
+  \end{equation}
+  If also $\E|u^{\epsilon,\delta}(1)|^2\le B_1$ uniformly, then
+  $\E|u|^2\le B_1$.
+\end{lemma}
+
+\begin{proof}
+  Lemma~\ref{L:terminal-wick} gives absolute $L^2$ convergence of every
+  regularized series and nonnegative mixed moments.
+  Its scaled second moment therefore contains the nonnegative term
+  $r^{2n}\E|Y_n^{\epsilon,\delta}|^2$, so
+  $r^{2n}\E|Y_n^{\epsilon,\delta}|^2\le B_r$.
+  Taking the fixed-order $L^2$ limit proves the same bound for $X_n$.
+  The geometric series and the triangle inequality give all estimates
+  in~\eqref{E:uniform-series-tail}, including absolute convergence.
+
+  For each $N$, write both full series as their first $N+1$ terms
+  and their tails. Their distance is at most
+  \[
+    \frac{2B_r^{1/2}r^{-(N+1)}}{1-r^{-1}}
+    +\left\|\sum_{n=0}^N(Y_n^{\epsilon,\delta}-X_n)\right\|_2.
+  \]
+  First let $\epsilon,\delta\downarrow0$ at fixed $N$, and then let
+  $N\to\infty$. This proves convergence of the full regularized solution;
+  it was not assumed. Continuity of the $L^2$ norm passes the bound
+  $B_1$ to $u$. This proves Lemma~\ref{L:uniform-series-tail}.
+\end{proof}
+
+\begin{theorem}[Full upper scale]\label{T:full-upper}
+  Under Hypothesis~\ref{H:homog}, let $u$ be the canonical expansion
+  solution~\eqref{E:expansion}, constructed as a Stratonovich mild
+  solution in Proposition~\ref{P:mild-construction}. Put
+  \[
+    R_\alpha=\frac{\alpha\pi\mu(B_1)}{2\sin(\pi\alpha/2)}.
+  \]
+  For every admissible $d=1,2,3$, there is a finite
+  $C=C(\alpha,\alpha_0)$ such that
+  \begin{equation}\label{E:full-upper-bound}
+    \E u^2(T,x)
+    \le e(T+2)^d
+    \exp\{C R_\alpha^{1/(3-\alpha)}
+    T^{(4-\alpha-\alpha_0)/(3-\alpha)}\},\qquad T\ge1.
+  \end{equation}
+  In particular, this establishes the unchanged Goal~\ref{G:upper}.
+\end{theorem}
+
+\begin{proof}
+  Zero noise is trivial. Choose $H_0$ with $6T\le H_0<12T$.
+  At lengths $h_j=H_0 2^{-j}$, use the three grids with endpoints
+  $h_j(n+(-1)^j t)$, $n\in\mathbb Z$, $t=0,1/3,2/3$.
+  They are nested: the difference between the parent and child shifts
+  in child units is an integer, since $3t\in\mathbb Z$.
+  For $s\ne r$ in $[0,T]$, choose a scale
+  $3|s-r|<h_j\le6|s-r|$.
+  Boundaries of the three grids at this scale have mutual spacing
+  $h_j/3>|s-r|$. Hence at least one grid interval contains both points,
+  including their endpoints after choosing a boundary-free grid.
+  It follows that
+  \begin{equation}\label{E:dyadic-time-majorant}
+    |s-r|^{-\alpha_0}
+    \le6^{\alpha_0}\sum_{\text{three grids},\,|I|\le H_0}
+    |I|^{-\alpha_0}\mathbf1_I(s)\mathbf1_I(r)=:K_\infty(s,r).
+  \end{equation}
+  For context, the sum is at most $C_{\alpha_0}|s-r|^{-\alpha_0}$ off the diagonal:
+  only lengths at least $|s-r|$ contribute, with at most one interval
+  per grid and length. Endpoint values do not affect the time integrals.
+
+  Keep intervals meeting $[0,T]$ through depth $J$, and use independent
+  static smoothed fields with $\sigma_I^2=6^{\alpha_0}|I|^{-\alpha_0}$.
+  Their time covariance is the corresponding partial sum $K_J$.
+  The decreasing interval lengths obey $h_i\le78T/i$.
+  Indeed, at length $h_j$ there are at most $3(T/h_j+2)$ intervals.
+  Summing levels $0,\ldots,j$ bounds their cumulative count by
+  \[
+    6T/h_j+6(j+1)\le6T/h_j+6\,2^j\le78T/h_j,
+  \]
+  since $H_0<12T$ and $2^j=H_0/h_j$.
+  Each index at level $j$ is at most that cumulative count, which gives
+  the asserted decreasing-length bound. Thus, one may take $L=78$
+  and $c=6^{\alpha_0}$ in Proposition~\ref{P:interval-coefficients}.
+  Proposition~\ref{P:interval-coefficients} applies uniformly in $J,\epsilon$.
+
+  To pass from phase data to constant initial data, choose
+  $f_T\in C_c^\infty$ with $0\le f_T\le1$, equal to one on $B_{T+1}$
+  and supported in $B_{T+2}$, and set the velocity to zero.
+  For $|y|+s<T+1$, $G_s*f_T(y)=s$, so $C_sf_T(y)=1$.
+  The support of $G_t$ is contained in $B_t$.
+  Along a chain ending at $x\in B_1$ at time $T$, each earlier point
+  $(s,y)$ satisfies $|y|+s\le|x|+T<T+1$.
+  Thus, its free initial-data factor is one.
+  Induction on Duhamel order identifies the position generated
+  from $(f_T,0)$ at time $T$ on $B_1$ with the constant-data model
+  $u_{J,\epsilon}$.
+  This identity can be taken in Gaussian $L^2$ term by term.
+  At fixed $J,\epsilon$, each finite-order terminal integral is
+  continuous in $x$ as an $L^2(\Omega)$ vector: write its Green
+  variables as displacements from $x$, and use continuity of
+  $\Gamma_\epsilon$ in its mixed Wick moments. Bounded covariance
+  products and the finite terminal Green mass permit dominated
+  convergence. These measurable representatives identify the
+  $L^2(\Omega;L^2_x)$ position on $B_1$ with the same pointwise
+  constant-data terms. The summable bound below passes this identity
+  to their series.
+  At finite $J,\epsilon$, pointwise convergence for constant data follows
+  from the bound
+  $\sqrt{(2n-1)!!}\,v_{\max}^{n/2}T^{2n}/(2n)!$
+  on the $n$th position term.
+  The model is spatially stationary. Consequently,
+  \[
+    |B_1|\E|u_{J,\epsilon}(T,0)|^2
+    \le\E\|u_{f_T,J,\epsilon}(T)\|_2^2
+    \le e\,|B_{T+2}|\exp\{C R_\alpha^{1/\nu}T^{\beta/\nu}\}.
+  \]
+
+  We now identify the interval-model Wick sums before comparing them.
+  Its centered Gaussian noise has covariance
+  \[
+    \E[W_{J,\epsilon}(s,y)W_{J,\epsilon}(r,z)]
+    =\sum_{I\in\mathcal F_J}\sigma_I^2
+    \mathbf1_I(s)\mathbf1_I(r)\Gamma_\epsilon(y-z)
+    =K_J(s,r)\Gamma_\epsilon(y-z).
+  \]
+  Lemma~\ref{L:terminal-wick} applies: at fixed $J,\epsilon$ the field
+  has bounded variance, is mean-square continuous in space and is
+  piecewise continuous in time. Its exact terminal kernels are
+  \eqref{E:terminal-chain-measure}, and every term of
+  \eqref{E:terminal-pairing-integral} has covariance factor
+  $K_J(s_j,s_l)\Gamma_\epsilon(y_j-y_l)$, with coefficient one.
+  This comparison is made before any time reversal; $K_J$ need not be
+  stationary in time. The position kernels and constant initial data
+  are nonnegative. Thus, every such integral, including self-pairings
+  and unequal chain lengths, is nonnegative. The pointwise $L^2$ convergence
+  proved above identifies the full moment with their nonnegative sum.
+  In particular, the moment of every finite partial-order sum is at most
+  the full moment, even though samplewise partial sums need not increase.
+
+  From the current author version
+  \cite{chen:author2026:time-dependency}*{(2.23)--(2.24), p.~13},
+  the actual common noise regularization has covariance
+  $\gamma_\delta^0(s-r)\Gamma_\epsilon(y-z)$, where
+  \[
+    0\le\gamma_\delta^0(t)
+    =\Gamma(\alpha_0)^{-1}\int_0^{\delta^{-1}}
+    e^{-q|t|}q^{\alpha_0-1}\ud q
+    \le |t|^{-\alpha_0}.
+  \]
+  Here $\Gamma(\alpha_0)$ is the Euler Gamma function.
+  At fixed positive $\epsilon,\delta$, first take the source's Green-width
+  limit. The bounded continuous covariances, weak convergence of the
+  positive Green measures and the dominated finite Wick calculation in
+  Lemma~\ref{L:terminal-wick} identify its classical measure-kernel
+  Duhamel terms. For the source's continuous field modification, these
+  Bochner terms equal the pathwise smoothed integrals: writing $\Phi_n$
+  for the product of field values, the Gaussian bound in that lemma gives
+  $\int\|\Phi_n\|_2\ud\mathsf g_n^{T,x}<\infty$.
+  Tonelli gives pathwise integrability and Minkowski puts the integral
+  in $L^2$. Fubini against every $L^2$ test variable and Bochner duality
+  identify the two versions. The same argument applies before the
+  Green-width limit in dimension three.
+
+  Write $U_N^{\epsilon,\delta}$ for the sum of source terms of orders
+  $0,\ldots,N$ after that Green limit. Write $V_{N,J}^\epsilon$ for the
+  same partial-order sum of the finite interval model. Both moments are
+  finite sums over exactly the same terminal-chain kernels and pairings;
+  only the covariance factors differ. By~\eqref{E:dyadic-time-majorant}
+  each source covariance factor is bounded by its $K_\infty$ counterpart.
+  Since $K_J\uparrow K_\infty$, nonnegative Tonelli at fixed $N$ yields
+  \begin{equation}\label{E:interval-source-comparison}
+    \E|U_N^{\epsilon,\delta}(T,x)|^2
+    \le\lim_{J\to\infty}\E|V_{N,J}^\epsilon(T,x)|^2
+    \le\sup_J\E|u_{J,\epsilon}(T,x)|^2\le B(T),
+  \end{equation}
+  where $B(T)$ is the right side of~\eqref{E:full-upper-bound}.
+  The middle inequality uses the positive pairing sum just identified.
+  No Gaussian field of covariance $K_\infty\Gamma_\epsilon$ is constructed;
+  $K_\infty$ is used only inside these monotone limits of positive integrals.
+  This is entrywise comparison of Wick integrals, not covariance order
+  for arbitrary initial phases or a coupling of random solutions.
+
+  The same finite-model argument works after multiplying the source
+  noise by any real amplitude $a>0$. This replaces $\Gamma$ by
+  $a^2\Gamma$ and $R_\alpha$ by $a^2R_\alpha$, without changing its
+  homogeneity degree or any parameter-only constant. Thus,
+  \begin{equation}\label{E:regularized-scaled-moment}
+    \E|u^{\epsilon,\delta}(a;T,x)|^2
+    \le B(T;a):=e(T+2)^d
+    \exp\{C(a^2R_\alpha)^{1/\nu}T^\kappa\}.
+  \end{equation}
+  Here the full regularized series exists by
+  Lemma~\ref{L:terminal-wick}; it is the ordinary Duhamel series with
+  its order-$n$ term multiplied by $a^n$. Taking the finite partial-order
+  cutoff to infinity in~\eqref{E:interval-source-comparison} is justified
+  at positive regularization by that lemma, not by a theorem about the
+  original unsmoothed solution.
+
+  Lemma~\ref{L:joint-fixed-order} supplies the fixed-order construction:
+  each $Y_n^{\epsilon,\delta}$ converges in $L^2$ to $X_n=S_n(g_n)$
+  as $\epsilon,\delta\downarrow0$, with arbitrary relative rates.
+  The bounded-noise Green limit and ordered-kernel convention needed
+  to match these terms are already verified in
+  Lemma~\ref{L:terminal-wick}.
+
+  Apply Lemma~\ref{L:uniform-series-tail} with $r=2$ and
+  $B_r=B(T;2)$. It proves absolute $L^2$ convergence of the series
+  defining $u$ in~\eqref{E:expansion} and convergence of the full
+  regularized solution to that series. Taking the limit in
+  \eqref{E:regularized-scaled-moment} at $a=1$ proves the required bound.
+  This series-limit argument is independent of
+  Proposition~\ref{P:mixed}, Lemma~\ref{L:crude-corrected}, and the
+  source's Section~5 convergence proof. No first-moment asymptotic or
+  printed normalization is used. The fixed-order construction just used is proved here from the
+  universal pairing bound and the homogeneous norm estimates; neither
+  the source's Theorem~4.1 nor its Lemma~4.4 is imported.
+  Proposition~\ref{P:mild-construction} separately proves that this
+  same series satisfies the source's Definition~2.1: its onefold
+  Stratonovich integral equals $u-1$. That construction uses the
+  corrected mixed-vertex crude bound for its product and order limits.
+  This is a separate dependency from the sharp-scale moment estimate
+  just proved; the source's Section~5(ii) proof is not imported.
+  The crude constants used for this identification may depend on the
+  fixed covariance; they do not enter~\eqref{E:full-upper-bound}.
+  No uniqueness assertion is made.
+
+  \emph{Cutoff dependence and the order of limits.}
+  The preceding argument uses the following distinct statements.
+  \begin{enumerate}[(i)]
+    \item At fixed total order $2k$, the coefficient estimates are uniform
+      in the Gaussian-mode and spatial-band cutoffs, in the finite interval
+      family, and in positive spatial smoothing. The local Hermite cutoff
+      $N_i=2k_i$ preserves each selected coefficient exactly; it is an
+      algebraic choice, not a degree limit. Lemma~\ref{L:fixed-split} and
+      the inventory bound contain no smoothing-dependent variance.
+    \item At fixed finite interval family and $\epsilon>0$, mode and band
+      limits identify these coefficients with the actual Duhamel words.
+      The entire-series majorant in Proposition~\ref{P:interval-coefficients}
+      may depend on this family and $\epsilon$, through $v_{\max}$.
+      It is used for identification, not as a uniform moment estimate.
+      The uniform coefficient bound passes to these limits. Localization
+      and positive covariance comparison are applied only after removing
+      these cutoffs; positivity of a finite-mode covariance is not assumed.
+    \item For the resulting finite-depth interval model, the moment bound
+      is uniform in $J,\epsilon$. Fix positive source widths
+      $\epsilon,\delta$ and finite partial order $N$. The Green-width limit
+      is taken first. The subsequent $J\to\infty$ comparison in
+      \eqref{E:interval-source-comparison} is monotone convergence of finite
+      positive Wick integrals. At these fixed noise widths,
+      $N\to\infty$ is justified by Lemma~\ref{L:terminal-wick}, yielding
+      \eqref{E:regularized-scaled-moment}. There is no infinite-depth
+      Gaussian field or simultaneous mode-depth limit in this step.
+    \item At each fixed $T,x,\Gamma$ and order $n$,
+      Lemma~\ref{L:joint-fixed-order} gives qualitative $L^2$ convergence as
+      $\epsilon,\delta\downarrow0$, with arbitrary relative rates.
+      The bound $B(T;2)$ gives tails uniform in these two widths.
+      Lemma~\ref{L:uniform-series-tail} first uses their limit at fixed
+      partial order, then sends that order to infinity. The final moment
+      bound comes from $B(T;1)$, not the larger tail bound $B(T;2)$.
+    \item All identifications above are for fixed $T,x,\Gamma$; no
+      convergence rate uniform in $T$ or over covariance shapes is claimed.
+      They prove~\eqref{E:full-upper-bound} for every fixed $T\ge1$ with
+      the same parameter-only constant. Only after this estimate is proved
+      is $T\to\infty$ used for the growth-rate conclusion.
+  \end{enumerate}
+  The constants come from $L=78$, $c=6^{\alpha_0}$ and the parameter-only
+  constants of Proposition~\ref{P:interval-coefficients}; covariance enters
+  only through $R_\alpha$.
+  The volume ratio is $|B_{T+2}|/|B_1|=(T+2)^d$.
+  This proves~\eqref{E:full-upper-bound} and
+  Theorem~\ref{T:full-upper}.
+\end{proof}
+
+\begin{remark}[Claim and calibration boundary]\label{R:full-upper-boundary}
+  Theorem~\ref{T:full-upper} asserts a nonsharp upper growth rate.
+  It does not identify the sharp constant or require a correction of the
+  printed first-moment normalization as an input.
+  Its exponent tends to $(4-\alpha)/(3-\alpha)$ as $\alpha_0\downarrow0$.
+  Cauchy--Schwarz and the unconditional Jensen inequality remain compatible
+  with the nonsharp upper constant; any numeric $L_*$ calibration retains
+  the source-normalization qualification stated earlier.
+  The Skorohod exponent is compared, not used to identify constants:
+  both Gaussian creation and annihilation were retained here.
+  Goal~\ref{G:sharp} remains open.
+\end{remark}

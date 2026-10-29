@@ -6,11 +6,11 @@
 
 ## Current state
 
-- **Phase:** seventh whole-paper cold read COLLECTED/adjudicated,NOT CLEAR. Source `322cb0e`,actual DeepSeek V4-Pro822.464s,22source tools(21successful,one repaired invalid regex). Mathematical spot-checks clean;no specific verified failed inequality or counterexample. Remaining concerns are working-note/journal organization,critical-path auditability and citation custody. Both citation caveats are now resolved against published page images. No unchanged cold/primary retry or further construction rewrite is warranted.
+- **Phase:** bounded near-static lower-comparison/internal-corollary wave IN PROGRESS. Original full G:upper has been reported;the continuing user goal includes pursuit of G:sharp. The exact target/crosswalk and limited investment decision are in `reviews/2026-10-29-near-static-lower/reconnaissance.md`:REFRAME as an internal consequence,novelty UNVERIFIED. No new result is yet accepted. The seventh cold remains NOT CLEAR for journal presentation/auditability;no specific failed inequality was supplied and its citation caveats are resolved.
 - **Review boundaries:** prior92page quantitative/mild source `a7e725e` passed its own19checks/HIGH. The new8check review covers the direct norms, positive spatial Wick-measure limit, arbitrary joint vertex-width construction and their consumers. It does NOT freshly audit every unchanged operator/interval proof. Exact source/delivery/adoption bindings and limitations are in `reviews/2026-10-29-fixed-order-construction/`.
-- **Current artifact:**96pages,51proofs. Every formal statement is exactly reviewed at `f9303ed`;46proofs are byte equal and five have optional minor clarifications only. Critical joint/mixed/mild/full-upper proofs and quantitative interval/CP/Fock bodies are unchanged after review. Clean build:zero errors,undefined references/citations,overfull boxes,tabs. The original full Radon covariance/dimension class,upper/sharp targets and parameter-only upper constant are retained.
+- **Current artifact:**102pages,55proofs. Four new candidate proofs establish raw-power coefficient interpolation,positive-series type,static temporal-minimum comparison and a near-static actual-mean gap. ALL51prior proofs and every prior formal statement are byte equal to the previous checkpoint. Clean build:zero errors,undefined references/citations,overfull boxes,tabs. The new section has no primary acceptance yet. Original full upper/sharp scope retained.
 - **Open targets:** focused exposition/whole-paper clearance before circulation;G:sharp at the original full scope;private Lean once companion creation is approved;canonical wiki provenance and novelty/circulation gates. The full-upper proof map makes existing dependencies/review limits explicit. Near-static lower work remains a proposed partial step;no sharp completion or printed-normalization correction is adopted.
-- **Authorization:** Le requested pursuit of the full goal, with the HIGH threshold unchanged. This is a clearly delimited reconstruction of a known input, not a new lower/asymptotic proof wave. Report and honor PROJECT-GOAL decision points; companion-creation decision 4 remains pending. No source-author/coauthor correspondence or public release authorized.
+- **Authorization:** Le's continuing full goal includes the sharp/lower track. The current wave is the previously proposed bounded static-comparison/inequality step,with the HIGH review threshold unchanged. It does not redefine the original all-alpha0sharp target,claim novelty,promote a paper or authorize Lean creation. Report/honor PROJECT-GOAL decision points;companion-creation decision4remains pending. No correspondence/public release authorized.
 - **Worker:** Codex/GPT author, paper-dev workflow; historical project handoff to agent #30 on 2026-10-26. Lean remains L0/PROPOSED (`lean-progress/PROGRESS.md`). Nine normal reference requests exist; new edition-custody intake is nonblocking, not source authentication.
 
 ## Round plan
@@ -2867,3 +2867,39 @@ Original full G:upper retains its primary proof acceptance;whole-paper
 circulation clearance and original G:sharp remain OPEN. Report at decision5;
 no Lean creation,paper promotion,normalization correction,source-author contact,
 public release or canonical project notification is authorized by this read.
+
+## Bounded near-static lower wave: pre-investment receipt (2026-10-29)
+
+Previous turn classification:PROGRESS,cold7collected/adjudicated,published
+source pinpoints authenticated,critical-path provenance and proof map saved.
+No reviewer is live. The next bounded step is the existing near-static lower
+route,within the unchanged user goal. Exact A/Btargets and auxiliary scopes
+are frozen in the new reconnaissance receipt. Decision:REFRAME to an internal
+corollary/inequality wave,not novel-paper or Lean investment. Supplemental
+MathSciNet/zbMATHdomain queries yielded no authenticated citation-chain audit;
+novelty UNVERIFIED. Published static theorem and current model source maps
+are checked;new source pinpoints2.10p2150and L2convergencep2171authenticated.
+
+Falsification precedes long proof:existing20clock/84white-order2Holder/40gap
+controls pass. New local white-order4mean checks include all3pairings and
+recover1/2880+1/5760+1/8640=11/17280;four raw-time Holder comparisons pass.
+These are diagnostics,not proofs. New claims require their OWN cross-family
+source-bound HIGH review;none inherits upper acceptance or cold clearance.
+No printed L_*constant,absolute static white constant,Skorohod adaptation,
+uniqueness,circulation or paper novelty is asserted.
+
+### Near-static candidate written and frozen
+
+Four new proofs are written in Section14,102pages/55proofs. Exact original
+51proofs and prior formal statements preserved. A useful robustness refinement
+constructs the STATIC endpoint norm series using our regularized fractional-
+time upper bound at a fixed b0>0,finite positive Wick comparison and uniform
+geometric tails. Thus no static source(4.3)quantitative/time-uniform estimate
+is imported. Only the source's structural static p1/p2moment law and positive
+finite actualL0are new analytic inputs. No numerical normalization is adopted.
+
+All six new direct PDF windows2146/2150/2171were opened;five prior exact
+source images are retained. The final11image cohort requires its OWN native
+carrier calibration before scientific dispatch. ContractC1--C7covers the
+four new proofs and their reused interfaces. Full original sharp target and
+whole-paper cold limitations remain unchanged. New results are CANDIDATE.
