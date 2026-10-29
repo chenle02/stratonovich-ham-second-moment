@@ -6,9 +6,9 @@
 
 ## Current state
 
-- **Phase:** full-moment interpolation and static-constant continuity ADOPTED at their own scoped primary gate. Source1bf6141:Opus5.5 PASS_WITH_NOTES/HIGH,all7checksPASS,265.132s,complete13texts/11exact PNGs,no required repairs. Actual static p1/p2constants are recovered in an ITERATED limit. Original fixed-positive-alpha0sharp curve remains open;the reviewed scalar screen shows interpolation alone cannot identify it.
+- **Phase:** fixed-positive-a model-level clock-copy screen IN PROGRESS. Current-author6.1/6.3read directly (statementp37,proofpp38--42,order obstructionp42). A named unweighted constant-correlation Brownian-clock extension is being falsified at the admissible white(1,1)cross pair;it is not a no-go for all two-clock representations or G:sharp. Existing type/static-limit results retain their scoped acceptance. No new claim is accepted yet.
 - **Review boundaries:** prior92page quantitative/mild source `a7e725e` passed its own19checks/HIGH. The new8check review covers the direct norms, positive spatial Wick-measure limit, arbitrary joint vertex-width construction and their consumers. It does NOT freshly audit every unchanged operator/interval proof. Exact source/delivery/adoption bindings and limitations are in `reviews/2026-10-29-fixed-order-construction/`.
-- **Current artifact:**105pages,58proofs. All formal statements match the scientific source;56proofs exact,two minor static-L1/stationarity pointers. ALL55earlier proofs unchanged. Actual UPPER rates are log-convex/interior-continuous;both time-liminf/time-limsup recover static constants as the temporal exponent tends to zero. No fixed-positive-aTlimit asserted. Clean0errors/undefined/overfull/tabs;formatter idempotent.
+- **Current artifact:**109pages,60proofs. Two new candidate proofs give low-order white Laplace calibrations and a strict spectral filter loss for the named direct Brownian clock-copying family,throughout the original nonzero covariance class. ALL58prior proofs/formal statements unchanged. Clean0errors/undefined/overfull/tabs,formatter idempotent. New screen requires its OWN HIGHreview;it does not rule out lower/asymptotic clock use or G:sharp.
 - **Open targets:** full fixed-positive-alpha0sharp p2constant via MODEL information;focused exposition/whole-paper clearance;private Lean after creation approval;canonical wiki provenance and novelty/circulation. Next route is current-author6.1/6.3two-clock FIXED-ORDER reconnaissance with exact white low-order checks. No numerical normalization correction adopted.
 - **Agent8coordination:** completed at read-only source/statement/ownership level,as requested by Le. Agent8accepted our exact map;three API component fits and stronger-premise gaps are recorded in lean-progress/coordination/2026-10-29-agent8/reuse-adjudication.md. Current coefficient gate sourced5fde707,evidence successorbffd4329;historical SWE receipts remain e5e9558. Source/API/pins checked,no new build/gate/companion/lease/registry transaction here. L0/PROPOSED and decision4unchanged.
 - **Authorization:** Le's continuing full goal includes the sharp/lower track. The current wave is the previously proposed bounded static-comparison/inequality step,with the HIGH review threshold unchanged. It does not redefine the original all-alpha0sharp target,claim novelty,promote a paper or authorize Lean creation. Report/honor PROJECT-GOAL decision points;companion-creation decision4remains pending. No correspondence/public release authorized.
@@ -3071,3 +3071,42 @@ receipt metadata names d5and standard axioms. No gate replay here;owner's
 independent release/source-rights audit remains pending. No code,companion,
 lease,build,registry or Slurm job opened here;L0/PROPOSED,decision4unchanged.
 Partial registry searches remain partial,no missing-package absence claim.
+
+## Fixed-exponent model screen: pre-investment/falsification receipt
+
+Previous turn:PROGRESS,three temporal-type/static-limit proofs accepted
+7PASS/HIGH and Agent8read-only reuse map completed. The original full sharp
+curve remains open. New exact candidate/source map in two-clock-screen/
+reconnaissance.md is a bounded falsification of the naive covariance-clock
+copy,not a narrower replacement objective or novelty/paper investment.
+
+Read sourceTheorem6.1p37and full proofpp38--42. It transforms FIXED order;
+one-chain order givesc_l>=0before the heat/Brownian clock substitution.
+Remark6.3p42identifies that opening forp2. No full-moment Laplace transform
+is attempted;positive superlinear growth makes ordinary exponential damping
+insufficient. Relative ordering of distinct chains must not be erased.
+
+Local calibration before long proof:9common-damping cases,3unequal-parameter
+cross transforms and45EXACT covariance-variance comparisons pass. Atwhite
+alpha1,a0=1/2,theta1,the actual cross gap transform is0.4431134627;
+shared-clock ansatz0.2595698568(ratio2-sqrt2),independent-clock0.2041190640.
+This tests a named analytic-covariance substitution,not a physical model
+refutation. New analytic proof/source-bound HIGH review is required next.
+
+### Clock screen candidate written/source prepared
+
+The general spectral calculation gives actualK=intw_lambda,shared-clockJ1=
+int[2theta/(2theta+lambda)]w_lambda,andJ_rho<=J1<Kfor EVERYoriginal
+nonzeroGamma. No density/isotropy restriction. Degree-one ratio is2-2^a;
+white small-order witness agrees. This is a failure of EXACTunweighted
+constant-correlation analytic covariance substitution,not a lower-bound or
+asymptotic no-go. Source6.3analytic power is distinguished from7.1modulus.
+
+Two new proofs written,109pages/60proofs,all58prior proofs/statements exact.
+Source37--42rendered into12direct windows,all12opened in full. Old11image
+calibration correctly refuses this new cohort;a fresh12image calibration
+must precede science. The scopedC1--C7contract covers the two new proofs.
+12general actual/filter and12spectral numeric probes pass;initial adaptive
+lambda-integral warning retained. Substitutionlambda=t^8removed endpoint
+singularity without loosening tolerance;refined run treats warnings as errors.
+Numeric probes remain finite diagnostics,not proof of the full Radon class.

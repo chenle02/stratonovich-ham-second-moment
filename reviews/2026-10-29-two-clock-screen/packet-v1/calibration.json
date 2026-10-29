@@ -1,0 +1,114 @@
+{
+  "status": "PASS finite calibration only",
+  "common_damping_cases": [
+    {
+      "a": 0.25,
+      "theta": 0.5,
+      "actual": 2.0608970245899823,
+      "actual_closed": 2.0608970245899916,
+      "shared_clock": 1.6709606448196936,
+      "shared_ratio": 0.8107928852738934,
+      "expected_shared_ratio": 0.810792884997279,
+      "independent_clock": 1.5154539377431417
+    },
+    {
+      "a": 0.25,
+      "theta": 1.0,
+      "actual": 0.30635417561629275,
+      "actual_closed": 0.30635417561629447,
+      "shared_clock": 0.24838978587494667,
+      "shared_ratio": 0.8107928849843842,
+      "expected_shared_ratio": 0.810792884997279,
+      "independent_clock": 0.22527357531062464
+    },
+    {
+      "a": 0.25,
+      "theta": 2.0,
+      "actual": 0.04553982066920966,
+      "actual_closed": 0.04553982066921131,
+      "shared_clock": 0.036923362582825886,
+      "shared_ratio": 0.8107928850012023,
+      "expected_shared_ratio": 0.810792884997279,
+      "independent_clock": 0.03348711731973297
+    },
+    {
+      "a": 0.5,
+      "theta": 0.5,
+      "actual": 2.5066282746326083,
+      "actual_closed": 2.5066282746310007,
+      "shared_clock": 1.4683488474526296,
+      "shared_ratio": 0.5857864376271917,
+      "expected_shared_ratio": 0.5857864376269049,
+      "independent_clock": 1.154671794426345
+    },
+    {
+      "a": 0.5,
+      "theta": 1.0,
+      "actual": 0.4431134627262793,
+      "actual_closed": 0.44311346272637897,
+      "shared_clock": 0.25956985679517686,
+      "shared_ratio": 0.5857864376274181,
+      "expected_shared_ratio": 0.5857864376269049,
+      "independent_clock": 0.20411906398328272
+    },
+    {
+      "a": 0.5,
+      "theta": 2.0,
+      "actual": 0.07833213358211169,
+      "actual_closed": 0.07833213358221877,
+      "shared_clock": 0.045885901482809126,
+      "shared_ratio": 0.585786437627276,
+      "expected_shared_ratio": 0.5857864376269049,
+      "independent_clock": 0.03608349357720887
+    },
+    {
+      "a": 0.75,
+      "theta": 0.5,
+      "actual": 4.311601098777628,
+      "actual_closed": 4.311601099081856,
+      "shared_clock": 1.3719823817199932,
+      "shared_ratio": 0.3182071695150464,
+      "expected_shared_ratio": 0.318207169492571,
+      "independent_clock": 0.8882378821412449
+    },
+    {
+      "a": 0.75,
+      "theta": 1.0,
+      "actual": 0.9064024770465555,
+      "actual_closed": 0.9064024770554772,
+      "shared_clock": 0.2884237666448096,
+      "shared_ratio": 0.31820716949562716,
+      "expected_shared_ratio": 0.318207169492571,
+      "independent_clock": 0.18672901273697362
+    },
+    {
+      "a": 0.75,
+      "theta": 2.0,
+      "actual": 0.19054764842312089,
+      "actual_closed": 0.1905476484332595,
+      "shared_clock": 0.06063362786138284,
+      "shared_ratio": 0.31820716950934363,
+      "expected_shared_ratio": 0.318207169492571,
+      "independent_clock": 0.03925493936127487
+    }
+  ],
+  "exact_variance_order_cases": 45,
+  "unequal_damping_cases": [
+    {
+      "theta1": 0.5,
+      "theta2": 1.0,
+      "ratio": 1.0000000000002829
+    },
+    {
+      "theta1": 1.0,
+      "theta2": 2.0,
+      "ratio": 0.9999999999993023
+    },
+    {
+      "theta1": 2.0,
+      "theta2": 0.5,
+      "ratio": 0.9999999999999721
+    }
+  ],
+  "scope": "Tests exact fixed-order white cross integrals vs a named unweighted Brownian clock ansatz. Not a proof of all-rho bound,full model conjecture no-go,high-order asymptotics or sharp constant."
+}

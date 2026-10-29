@@ -1,0 +1,332 @@
+\section{A small-order test for direct Brownian clock copying}
+\label{S:two-clock-screen}
+
+\myCmts{This is a new candidate method screen, awaiting independent review.
+It tests a named extension of the source's analytic covariance substitution.
+It does not rule out two-clock representations with additional ordering
+terms, or refute the original sharp conjecture.}
+
+Theorem~6.1 of \cite{chen:author2026:time-dependency}*{pp.~37--42}
+represents the time Laplace transform of a \emph{fixed-order} mean by a
+spatial Brownian path and an independent scalar Brownian clock.
+The proof uses nonnegative cut sums \(c_l\), obtained from one-chain time
+order on p.~38, before the wave-to-heat substitution on p.~39.
+Remark~6.3, p.~42, singles out that order as the obstruction for more copies.
+We test the direct replacement by two spatial Brownian paths and two scalar
+Brownian clocks, without an additional ordering weight.
+
+All transforms below are at fixed total order. We begin with the original
+admissible case \(d=\alpha=1\), \(\Gamma=\delta_0\), \(0<a<1\), and
+\(G_s(y)=\frac12\mathbf1_{\{|y|<s\}}\).
+This is a falsification case for an intended general representation,
+not a restriction of Goal~\ref{G:sharp}.
+
+\begin{lemma}[White-space low-order Laplace transforms]
+  \label{L:white-clock-laplace}
+  The \((1,1)\) cross-pair gap transform is
+  \begin{equation}\label{E:white-cross-clock-transform}
+    \begin{split}
+      K_\times(\theta_1,\theta_2)
+      &:=\int_0^\infty\int_0^\infty
+      e^{-\theta_1s-\theta_2t}|s-t|^{-a}
+      \frac{\min(s,t)}2\ud s\ud t\\
+      &=\frac{\Gamma_{\mathrm E}(1-a)}
+      {2(\theta_1+\theta_2)^2}
+      \big(\theta_1^{a-1}+\theta_2^{a-1}\big),
+      \qquad \theta_1,\theta_2>0.
+    \end{split}
+  \end{equation}
+  In particular,
+  \(K_\times(\theta,\theta)=
+  \Gamma_{\mathrm E}(1-a)/(4\theta^{3-a})\).
+  For the empty-plus-length-two self-pair, independent gap damping gives
+  \begin{equation}\label{E:white-self-clock-transform}
+    K_{\rm self}(\eta_1,\eta_2)
+    :=\int_0^\infty\int_0^\infty
+    e^{-\eta_1r_1-\eta_2r_2}r_2^{-a}\frac{r_1}2
+    \ud r_1\ud r_2
+    =\frac{\Gamma_{\mathrm E}(1-a)}
+    {2\eta_1^2\eta_2^{1-a}}.
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  The spatial cross factor is
+  \[
+    \int G_s(y)G_t(z)\delta_0(y-z)\ud y\ud z
+    =\frac14\int\mathbf1_{\{|y|<s\wedge t\}}\ud y
+    =\frac{\min(s,t)}2.
+  \]
+  Split its time integral into \(s=t+v\) and \(t=s+v\), with \(v>0\).
+  Each part is one half the product of
+  \[
+    \int_0^\infty t e^{-(\theta_1+\theta_2)t}\ud t
+    =(\theta_1+\theta_2)^{-2}
+  \]
+  and
+  \(\int_0^\infty e^{-\theta_i v}v^{-a}\ud v
+  =\Gamma_{\mathrm E}(1-a)\theta_i^{a-1}\).
+  All integrands are nonnegative and finite since \(a<1\), so Tonelli
+  justifies the separation. This proves
+  \eqref{E:white-cross-clock-transform}.
+
+  For one length-two chain, its delta covariance forces the two positions
+  equal. The second Green factor is \(G_{r_2}(0)=1/2\), and integration
+  of the first gives mass \(r_1\). The time difference is \(r_2\).
+  The two elementary Laplace integrals therefore give
+  \eqref{E:white-self-clock-transform}.
+  This proves Lemma~\ref{L:white-clock-laplace}.
+\end{proof}
+
+The source's analytic time covariance is
+\[
+  \gamma_a^{\rm an}(z)
+  =\big(z\,\operatorname{sgn}\Re z\big)^{-a},\qquad \Re z\ne0,
+\]
+with the power taken on the right half-plane. For \(r>0,v\ge0\), put
+\begin{equation}\label{E:averaged-clock-kernel}
+  \Psi_a(r,v)=\frac1{\Gamma_{\mathrm E}(a)}
+  \int_0^\infty \lambda^{a-1}e^{-r\lambda-v\lambda^2/2}\ud\lambda.
+\end{equation}
+From the source's complex Laplace identity
+\cite{chen:author2026:time-dependency}*{(6.3), p.~41},
+and the Gaussian characteristic function,
+\(\Psi_a(r,v)=\E(r+iZ)^{-a}\) when \(Z\) is centered normal with variance \(v\).
+Fubini at fixed \(r>0\) is justified by
+\(\int_0^\infty\lambda^{a-1}e^{-r\lambda}\ud\lambda<\infty\).
+In particular, \(\Psi_a\) is nonnegative, decreases with \(v\), and
+\(\Psi_a(r,v)\le r^{-a}\).
+
+Return to an arbitrary nonzero covariance in Hypothesis~\ref{H:homog},
+with temporal exponent \(a\), so \(0<a<1\), \(0<\alpha<2\) and
+\(a+\alpha<2\). Define
+\[
+  h_\Gamma(w)=\int e^{-w|\xi|^2/2}\mu(\ud\xi)
+  =(p_w*\Gamma)(0),\qquad
+  \mathcal R_\Gamma(q)=\int\frac{\mu(\ud\xi)}{q^2+|\xi|^2}.
+\]
+Both are positive and finite for \(w,q>0\).
+Spectral homogeneity gives \(h_\Gamma(w)=w^{-\alpha/2}h_\Gamma(1)\) and
+\(\mathcal R_\Gamma(q)=q^{\alpha-2}\mathcal R_\Gamma(1)\).
+The actual cross-pair gap transform at common damping is
+\[
+  K_\Gamma(\theta)=N_2(\theta)^2
+\]
+with temporal exponent \(a\) in~\eqref{E:damped-norm-definitions}.
+This is the spatial-regularization limit of the \((1,1)\) diagram.
+
+Let \(B_1,B_2\) be independent spatial standard Brownian motions.
+For auxiliary standard Brownian clocks with
+\(\E[\beta_1(u)\beta_2(v)]=\rho\min(u,v)\), \(-1\le\rho\le1\),
+independent of the spatial paths, the clock difference has variance
+\[
+  v_\rho(u,v)=u+v-2\rho\min(u,v).
+\]
+At common damping \(\theta>0\), the direct unweighted, unrestricted
+two-clock covariance substitution yields the averaged candidate
+\begin{equation}\label{E:naive-clock-candidate}
+  J_{\Gamma,\rho}(\theta)
+  :=\frac14\int_0^\infty\int_0^\infty
+  e^{-\theta^2(u+v)/2}h_\Gamma(u+v)
+  \Psi_a(\theta|u-v|,v_\rho(u,v))\ud u\ud v .
+\end{equation}
+Values on \(u=v\) do not affect the integral.
+The factor \(1/4\) is one factor \(1/2\) for each wave-to-heat gap
+transform; \(h_\Gamma(u+v)\) is the spatial average of
+\(\Gamma(B_1(u)-B_2(v))\).
+This average is interpreted by spatial heat regularization.
+For the white covariance it is \((2\pi(u+v))^{-1/2}\).
+The analytic covariance, not its absolute-value bound, is being copied.
+
+\begin{proposition}[Obstruction to unweighted constant-correlation clock copying]
+  \label{P:clock-copy-obstruction}
+  For every covariance and parameters just specified, put
+  \begin{equation}\label{E:cross-clock-lambda-weight}
+    w_\theta(\lambda)
+    =\frac{\lambda^{a-2}}
+    {2\theta\Gamma_{\mathrm E}(a)}
+    \big(\mathcal R_\Gamma(\theta)
+    -\mathcal R_\Gamma(\theta+\lambda)\big),\qquad\lambda>0.
+  \end{equation}
+  This is a positive integrable density, and
+  \begin{equation}\label{E:clock-copy-obstruction}
+    \begin{split}
+      K_\Gamma(\theta)&=\int_0^\infty w_\theta(\lambda)\ud\lambda,\\
+      0<J_{\Gamma,\rho}(\theta)
+      &\le J_{\Gamma,1}(\theta)
+      =\int_0^\infty
+      \frac{2\theta}{2\theta+\lambda}w_\theta(\lambda)\ud\lambda
+      <K_\Gamma(\theta).
+    \end{split}
+  \end{equation}
+  When \(\alpha=1\),
+  \begin{equation}\label{E:degree-one-clock-loss}
+    J_{\Gamma,1}(\theta)=(2-2^a)K_\Gamma(\theta).
+  \end{equation}
+  Thus this direct analytic clock-copying family, including independent
+  clocks and a single shared clock, fails to reproduce the cross-pair
+  transform throughout the original nonzero covariance class.
+\end{proposition}
+
+\begin{proof}
+  First evaluate the actual cross transform. Temporarily smooth the spatial
+  covariance, so Fourier and time Fubini are absolute. For \(r=|\xi|\),
+  direct integration over \(s=t+v\) and \(t=s+v\) gives
+  \[
+    \int_0^\infty\int_0^\infty
+    e^{-\theta(s+t)-\lambda|s-t|}
+    \widehat G_s(\xi)\overline{\widehat G_t(\xi)}\ud s\ud t
+    =\frac{2\theta+\lambda}
+    {2\theta(\theta^2+r^2)((\theta+\lambda)^2+r^2)} .
+  \]
+  For example, on the first cone the \(v\)-integral uses
+  \[
+    \int_0^\infty e^{-(\theta+\lambda)v}
+    \sin(r(t+v))\ud v
+    =\frac{(\theta+\lambda)\sin(rt)+r\cos(rt)}
+    {(\theta+\lambda)^2+r^2}.
+  \]
+  Integrating the remaining sine-square and sine-cosine terms against
+  \(e^{-2\theta t}\), and adding the second cone, gives the displayed
+  identity. The value at \(r=0\) is its continuous limit.
+
+  The resulting spectral integrand is nonnegative. Removing the spatial
+  Gaussian multiplier and using the raw-time Laplace formula therefore gives
+  \[
+    \begin{split}
+      K_\Gamma(\theta)
+      &=\frac1{\Gamma_{\mathrm E}(a)}
+      \int_0^\infty\lambda^{a-1}
+      \frac{2\theta+\lambda}{2\theta}
+      \int\frac{\mu(\ud\xi)}
+      {(\theta^2+|\xi|^2)((\theta+\lambda)^2+|\xi|^2)}
+      \ud\lambda\\
+      &=\int_0^\infty w_\theta(\lambda)\ud\lambda.
+    \end{split}
+  \]
+  The second equality is partial fractions, with
+  \((\theta+\lambda)^2-\theta^2=\lambda(2\theta+\lambda)\).
+  The smoothing passage is justified by monotone convergence in this
+  nonnegative spectral expression and the finite quadratic form in
+  Lemma~\ref{L:damped-homogeneous-norms}. Alternatively, homogeneity
+  directly bounds the density near zero by a constant times
+  \(\lambda^{a-1}\), and at infinity by a constant times
+  \(\lambda^{a-2}\). Its strict positivity follows from
+  \(\mathcal R_\Gamma(\theta)
+  -\mathcal R_\Gamma(\theta+\lambda)>0\), since \(\mu\ne0\).
+
+  The candidate integrals are well defined and positive.
+  The bound \(\Psi_a(\theta|u-v|,v_\rho)\le
+  (\theta|u-v|)^{-a}\), together with
+  \(h_\Gamma(w)=h_\Gamma(1)w^{-\alpha/2}\), supplies an absolute
+  majorant. With \(w=u+v\), \(q=u-v\), the Jacobian is \(1/2\) and
+  \(-w<q<w\). It is a constant times
+  \[
+    \int_0^\infty e^{-\theta^2w/2}w^{-\alpha/2}
+    \int_{-w}^w|q|^{-a}\ud q\ud w
+    =\frac2{1-a}\int_0^\infty
+    e^{-\theta^2w/2}w^{1-\alpha/2-a}\ud w<\infty .
+  \]
+  Here \(a<1\) and \(a+\alpha/2<2\).
+  The same bound dominates the spatial heat-regularized averages, whose
+  spatial factor is \(h_\Gamma(w+2\epsilon)\le h_\Gamma(w)\).
+  This is an averaged spectral bound, not pointwise covariance monotonicity.
+  Since \(v_\rho(u,v)\ge|u-v|=v_1(u,v)\), monotonicity of
+  \(\Psi_a\) gives \(J_{\Gamma,\rho}\le J_{\Gamma,1}\).
+
+  We compute the latter by nonnegative Tonelli. Write
+  \(A=\theta\lambda+\lambda^2/2\). Integration in \(q\) gives
+  \(2(1-e^{-Aw})/A\). Also
+  \[
+    \mathcal R_\Gamma(q)
+    =\frac12\int_0^\infty e^{-q^2w/2}h_\Gamma(w)\ud w,
+  \]
+  by the elementary resolvent integral and spectral Tonelli.
+  Consequently,
+  \[
+    \begin{split}
+      J_{\Gamma,1}(\theta)
+      &=\frac1{4\Gamma_{\mathrm E}(a)}
+      \int_0^\infty\frac{\lambda^{a-1}}A
+      \int_0^\infty h_\Gamma(w)
+      \left(e^{-\theta^2w/2}
+      -e^{-(\theta+\lambda)^2w/2}\right)\ud w\ud\lambda\\
+      &=\frac1{\Gamma_{\mathrm E}(a)}
+      \int_0^\infty
+      \frac{\lambda^{a-2}
+      (\mathcal R_\Gamma(\theta)-\mathcal R_\Gamma(\theta+\lambda))}
+      {2\theta+\lambda}\ud\lambda\\
+      &=\int_0^\infty
+      \frac{2\theta}{2\theta+\lambda}w_\theta(\lambda)\ud\lambda.
+    \end{split}
+  \]
+  The \(q\)-integral's factor two cancels its coordinate Jacobian
+  \(1/2\); the resolvent identity supplies the other factor two.
+  Since \(w_\theta>0\) and \(2\theta/(2\theta+\lambda)<1\) for
+  every \(\lambda>0\), the strict inequality follows.
+
+  Finally, if \(\alpha=1\), homogeneity gives
+  \(\mathcal R_\Gamma(q)=\mathcal R_\Gamma(1)/q\).
+  Substitution in the two densities gives
+  \[
+    \begin{split}
+      K_\Gamma(\theta)
+      &=\frac{\mathcal R_\Gamma(1)}
+      {2\theta^2\Gamma_{\mathrm E}(a)}
+      \int_0^\infty\frac{\lambda^{a-1}}{\theta+\lambda}\ud\lambda,\\
+      J_{\Gamma,1}(\theta)
+      &=\frac{\mathcal R_\Gamma(1)}
+      {\theta^2\Gamma_{\mathrm E}(a)}
+      \int_0^\infty\lambda^{a-1}
+      \left(\frac1{\theta+\lambda}
+      -\frac1{2\theta+\lambda}\right)\ud\lambda .
+    \end{split}
+  \]
+  The real Beta identity
+  \[
+    \int_0^\infty\frac{x^{a-1}}{x+c}\ud x
+    =c^{a-1}\Gamma_{\mathrm E}(a)\Gamma_{\mathrm E}(1-a),
+    \qquad c>0,
+  \]
+  follows by scaling and
+  \((r,s)\mapsto(r+s,r/s)\) in the positive product of the two
+  Gamma integrals. Their finiteness uses \(0<a<1\).
+  Evaluation of these two integrals gives
+  \(J_{\Gamma,1}/K_\Gamma=2(1-2^{a-1})=2-2^a\), proving
+  \eqref{E:degree-one-clock-loss}.
+  This proves Proposition~\ref{P:clock-copy-obstruction}.
+\end{proof}
+
+\begin{remark}[Normalization and scope of the obstruction]
+  \label{R:clock-copy-scope}
+  At the static endpoint define the time covariance directly as one.
+  The candidate with \(\Psi_0=1\) gives
+  \[
+    J_{\Gamma,\rho}(\theta)
+    =\int\frac{\mu(\ud\xi)}{(\theta^2+|\xi|^2)^2}
+    =K_\Gamma(\theta).
+  \]
+  This follows by integrating \(w e^{-\theta^2w/2}h_\Gamma(w)/4\)
+  spectrally. In the white case it equals \(1/(4\theta^3)\).
+  Thus static and homogeneous-degree checks alone miss the positive-\(a\)
+  loss. At the cross-pair level, the omitted multiplier is exactly
+  \(1+\lambda/(2\theta)\). This does not assert a correction rule at
+  higher orders.
+
+  The transforms \(K_\times\) use gap damping. For the cross coefficient
+  with two external horizons, nonnegative Fubini adds the factor
+  \(1/(\theta_1\theta_2)\). Setting the two damping parameters equal
+  is not the single Laplace transform of a diagonal-horizon moment.
+  For a self-pair at common gap damping, one external horizon instead
+  adds \(1/\theta\), recovering the known first-mean coefficient.
+
+  The proposition rules out exactly the analytic covariance substitution
+  in~\eqref{E:naive-clock-candidate}, with product heat-chain measure,
+  unrestricted operational-time rectangle and constant Brownian correlation.
+  Additional relative-order weights,other derived clock couplings,matrix
+  representations,modulus inequalities and their possible asymptotics are
+  not covered. In particular, the inequality at this first cross pair
+  leaves open a shared-clock lower comparison or asymptotic equivalence
+  at higher orders. The original full sharp conjecture remains open.
+  This is not a Skorohod result or a no-go for every two-clock method.
+\end{remark}
