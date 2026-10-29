@@ -1,85 +1,122 @@
-Last updated: 2026-10-29 16:24 UTC
+Last updated: 2026-10-29 17:45 UTC
 
-Original full upper/sharp goal ACTIVE;clock screen and local Lean seam reviewed.
+Original full upper/sharp goal ACTIVE;degree-four9term partial comparison reviewed.
 
 ## ⏭ Next session: where to stand and what to do
 
-Derive the complete degree-four two-chain Stratonovich pairing table in the
-admissible white one-dimensional test case,then test the sign of a possible
-SHARED-CLOCK LOWERcomparison. Read reviews/2026-10-29-two-clock-screen/
-next-model-step.md first. Include all15diagrams across chain lengths
-(0,4),(1,3),(2,2),(3,1),(4,0). A proposed9of15factorization is only an
-unreviewed outline,not an established estimate.
+Prove or falsify an INTEGRATEDcomparison for the first of the remaining six
+mixed degree-four diagrams:in white1D,(1,3)03|12(zero-based labels),the
+terminal cross pair plus earlier self pair. Read the accepted research memo
+notes/degree-four-clock-probe.md,its adjudication-v5and next-step.md first.
 
-The naive exact unweighted constant-correlation clock identity is now
-FALSIFIED/REVIEWED at the first cross pair throughout the original nonzero
-covariance class. This does not refute a lower/asymptotic comparison or the
-original sharp conjecture. Do not repeat the finished screen or replace the
-model problem with more scalar corollaries. Full original goal remains ACTIVE.
+The15diagram/48cone table and9term original-class comparison are now DONE
+at their own8PASS/HIGHgate. Do not repeat their derivation/review or stop at
+that partial count. Six terms/fullsum/allorder/physical-time sharpconstant
+remainOPEN. A stronger overlap-dropped candidate for these six terms survives
+finite tests in successor-probe/,but is UNREVIEWEDand unproved;it is the
+next bounded hypothesis,not an adopted result or a full SPDE theorem.
 
 ## Pre-flight checks
 
-1. Read Progress.md,then the clock-screen adjudication/final binding.
-   Scientific sourcee68310f:Opus5.5/HIGH286.374s,7contract groups/14detailed
-   PASS,12texts/12exact source PNGs,accepted=true,no required repairs.
-2. Current notes110pages/60proofs. ALL60proofs match frozen science;ALL58
-   earlier proofs equal baseline405a4d0. Only scope remark and abstract/status
-   clarified. TeX58b092b258d4f363f8bfa0a02dcf492dcb9c13e794dbcab440bf7b0529b53b7d;
+1. Progress.md is authority. New scientific sourced016a34993c9bf2cfbfeb29eb29e61821c53b41a,
+   actual native Opus5.5/HIGH517.097s,8PASS,no required repairs,accepted=true,
+   coverage=true,complete19texts/CSVs+12exact PNGs. Substantive adoption
+   827c92a16030ceaaa22baf1946ef00b131dfb9b0pushed/local-origin-<HUB> parity.
+2. New exact W/H/F/S/Aformulas,finite second-moment sampling,andSection6b's
+   three NEWstrictmixed comparisons are reviewed. Six one-chain equalities
+   are explicitly imported fromcurrentauthorfixedDpp38--41,not new results.
+   OriginalGammaRadon/d1--3class,alpha+a<2retained for the9termcomparison.
+3. New asymmetric bound:atfixedlambda,J_A<=2theta/(2theta+lambda)*I_A;
+   afterfractionalaveraging,alpha1givesJ_A<=(2-2^a)I_A. Pure-self22andboth
+   root/self13/31are strict forpositivea. The other SIXterms are uncontrolled.
+4. Final memo status/scope and explicit candidate/zero-width scaling clarified
+   per reviewer. Tagged formulas unchanged;exact note/PDF bindings are in
+   degree-four-clock-probe/final-status-binding.json. Main canonical notes
+   STILL110pages/60proofs,ENTIRELYUNCHANGEDduring this round.
+   TeX58b092b258d4f363f8bfa0a02dcf492dcb9c13e794dbcab440bf7b0529b53b7d;
    PDFb552a051874ac18920fd32610318404015673e50b1b035f6793bff29618c7e30.
-   Build0errors/undefined/overfull/tabs;formatter idempotent.
-3. New clock screen proves J_rho<=J_1<K=intw with shared-clock multiplier
-   2theta/(2theta+lambda). Degree-one ratio2-2^a. Missing reciprocal multiplier
-   1+lambda/(2theta) is relative torho1ONLY. No all-order or sharp claim.
-4. Le explicitly permits Lean verification. Standalone local pilot at
-   lean-progress/local-checks/clock-filter-v1/ has THREEconditional theorems:
-   resolvent partial fractions,filter bounds,strict integral deficit for a
-   nonzero arbitrary measure without a finiteness premise. Derived filtered
-   integrability is a conclusion. Standard-three live axiom audit,fresh OWNED
-   source replay and three semantic false controls pass.
-5. Exact-type/application review source86de3d8:Opus5.5/HIGH112.922s,all4PASS,
-   complete7texts,accepted=true. All five minor notes adjudicated. Concrete
-   sigma=positive-lambda Lebesgue restriction is NOT Lean-instantiated;extend
-   w byzero outsidepositive lambda. Density measurable integrability and K/J
-   representations remain explicit analytic inputs. No full SPDE/package gate.
-6. CompanionL0 remains PROPOSED;no new repo,lease,registry,donor-package write,
-   duplicate gate or cluster job. Runtime Lean4.35.0/Mathlib56a005855ea17e0b0958f73ec801ae140b0a1679
-   reused read-only. Source SHA0e501b255a23661c3c75d2dc98e08390c6ba4324a73537367f0c07aac6843d38.
-7. Agent8reuse coordination remains accepted. Updateba0138631977FYI queued
-   with exact local source/pins/ownership;queueing is not a new Agent8reply.
-   Fresh resolve#8and whoami before future messages. Their packages/gates
-   remain exclusively owned;our local output lives outside their checkout.
-8. Scientific78member/carrier28member and Lean-review39member archives
-   readback and COMMITTEDblob verified before removing ONLYowned terminal
-   raw reviewer trees. No live reviewer/handle exists. Two Lean development
-   failures and two review preflight failures are preserved,not fake reviews.
-9. Full fixed-positive-a sharp constant remains open. Prior type/static-limit,
-   near-static gap,upper19HIGH/construction8HIGH retain their exact scopes.
-   All7older whole-paper cold reports remain NOT CLEAR. PRIVATEwiki proposal
-   refreshed only;canonical unchanged. Nine reference tickets persist.
+5. Earlier degree-four source28f6d1had7PASS/MEDIUM,accepted=false. Native2
+   had favorableHIGHtext but driver143/missingreceipt and is NOTa review.
+   Preflight1joined filenames and launch3PATHfailures preserved. Do not
+   substitute them for actual accepted v5. Two reviewer-reason textual slips
+   are explicitly unadopted;exact source formulas govern.
+6. Both samplers and129exactanchors retained:coarsefixedlambda actualerror
+   up to3.06%,alternative-densityshared up to1.15%. Near1ratios alone hide
+   errors. Ninety fractional calibrations/288rational geometry+288determinant
+   controls are finite diagnostics,not proof. No clipping or certifiedSEs.
+7. Separate UNREVIEWEDsix-term successor:drop positive clock overlap to
+   enlarge J.96fixedlambda+24fractionaldiagram tests survive;fractional
+   aggregate ratios .92910,.84577,.62798,.32994. Actual estimates match the
+   original evaluator on identical draws. This was NOTcovered by v5and does
+   not complete the15terms. It contains only finite probes,not a theorem.
+8. PublishedChen--Hu2174/2183--2185renders authenticated:Lemma5.3uses an
+   unequal-dampingUPPERlaw to force lifetimes near(4-alpha)n/p. OldTeX
+   omitted1/p;publication retains it. This is future-transfer RECON,not an
+   imported fractional theorem or numerical/source1.24correction.
+9. Three old standalone Lean support steps remain locally checked/replayed,
+   standardaxioms,4HIGHtype/applicationreview at86de3d8. New scalar filter
+   use reuses that scope;new Brownian/diagram identities are informal proofs.
+   No new companion,package,lease,registry,donor writes,Slurm or duplicategate.
+10. No reviewer or numerical process remains live.53member accepted archive
+    and115member oldarchive readback andCOMMITTEDblobverified before removing
+    ONLYowned terminal rawtrees. All successor/source payloads committed and
+    checked. PRIVATEwiki proposal refreshed/patch-applied in isolated temp;
+    canonicalwiki unchanged. Nine existingref tickets,no newabsentref.
 
 ## Concrete deliverables for the next session
 
-[held back: collaborators' unpublished work]
+- Use W/H/Fto compare white13terminal-cross03|12after appropriate averaging.
+  Spatial increments are dependent here;the factorization for01|23does not
+  apply. The other remaining cases are13:02|13;31:01|23,02|13;
+  and22:02|13,03|12. Keep their place in the full Stratonovich sum explicit.
+- Test/prove the stronger overlap-dropped bound only with its actual measure
+  and normalization. A failed pointwise/conditionalbound does not decide an
+  averaged comparison. Do not infer a theorem from finite surviving tests.
+- Keep sourceanalyticgamma0 orientation. The full-square even extension has
+  sgn(time difference)on BOTHreal/imaginary differences;the wiki's residual
+  Hermitian-looking display is not interchangeable in products. Never replace
+  this by the modulus7.1or a positive parabolic Hamiltonian without proof.
+- A full degree4comparison still needs an all-order route and an original-
+  class/sharp-rate/balanced-horizon transfer. PublishedLemma5.3shows the exact
+  unequal-damping obligation. Do not assume the missing analyticupperlaw.
+- Preserve reviewed proof scope,explicit model inputs of reused Lean lemmas,
+  HIGHgate and source fidelity. No unchanged confidence retry. New analytic
+  content gets its own frozen source-bound primary;circulation needs a new
+  whole-paper cold read after actual manuscript repair/promotion.
 
 ## Success criteria for the immediate next step
 
-A complete normalized degree-four fifteen-diagram table,with actual and
-shared-clock transforms clearly defined and their total difference tested in
-the simplest admissible case. Report the sign or a precise unresolved term.
-Any new theorem needs a full proof and its own cross-family/source gate;
-finite numerics or a factorization outline cannot close the sharp goal.
+One mathematically justified integrated comparison for an uncontrolled
+mixed diagram,or a precisely scoped obstruction with independent verification.
+No full-sum claim until all remaining terms or their aggregate are controlled.
+Numerics may guide or kill a named shortcut,not prove the sharp constant.
 
 ## Anti-success criteria
 
-No full-conjecture/all-clock no-go from the first-pair exact screen. No
-all-order lower comparison from a few diagrams. No lost self-pairs/unequal
-chains,independence shortcut,uncontrolled singular Monte Carlo,or physical/
-auxiliary-horizon substitution. No claim that the local Lean seam formalizes
-SPDE representation,density estimates,full package trust or the sharp constant.
-No sibling/All.bib/source PDF edits,HPC,source correction,author contact or
-public release. No silently weakened review confidence or source scope.
+Do not call9of15a proof for the fullsum. Do not repeat completed tables,
+9termproofs or old scalar corollaries. Do not discard spatial dependence,
+self-pairs,unequal/empty chains or horizon-shift factors. No scope switch to
+Riesz/densities or an independent-clock/modulus substitute. No ratio-only
+accuracy claims or confidence upgrades for failed/medium transports. No
+Skorohod development,All.bib/sibling/source PDF edits,HPC,companion creation,
+public release,source-author contact or intended normalization correction.
 
 ## What the previous sessions produced
+
+Latest checkpoint2026-10-29:complete degree-four15diagram/48cone exact
+reductions and original-class9term partial comparison accepted8PASS/HIGH,
+517.097s,scientificd016a34,adoption827c92a. Three new strict mixed terms;
+six sourceone-chain equalities imported. Six remaining terms/fullsum/allorder/
+sharpconstant OPEN. All six minor findings adjudicated. Canonical110page/
+60proofTeX/PDFunchanged;new work is the separate Markdown research memo.
+Exact129lambdaanchors,90fractionalcalibrations,288polygon+288detchecks;
+coarse/alternative precision limits preserved. Earlier7MEDand failednative
+transports retained.53member new/115member oldarchives verified committed
+before own cleanup. Sourcepublished horizon/authored clock orientation traps
+recorded. Separate overlap-dropped6termprobe survives96+24finitecases but is
+UNREVIEWED. PRIVATEwiki updated only. No live jobs or external mathWIP.
+
+
 
 Latest checkpoint2026-10-29:adopted the two clock-screen proofs at7groups/HIGH,
 sourcee68310f,286.374s;110pages/60proofs,all60proof bodies exact science.
@@ -511,20 +548,21 @@ Latest checkpoints:
 
 ## Repo & git state at handoff
 
-Latest substantive closure5078b99db3ce4e69dc6554e856ca55ed15011502pushed and
+Latest substantive adoption827c92a16030ceaaa22baf1946ef00b131dfb9b0pushed and
 synchronized local/origin/<HUB>,clean0/0before this dedicated HANDOFF-only
-successor. Math adoption/Lean source freeze86de3d8e5475cb6120414c400e26be6b59bc0c12.
-Canonical110page source/PDF,scientific/native evidence,local Lean source/types/
-replay/control records,correspondence review and PRIVATEwiki proposal committed.
+successor. Scientific freeze d016a34993c9bf2cfbfeb29eb29e61821c53b41a.
+Method memo,new native proof review,all probes/controls/source images,
+input/projection/final bindings and PRIVATEwiki patch are committed.
 
-Read-only related checkouts at preflight:coefficient evidence successor
-bffd43297794d4e3d95490ea313092921cb92087(gated sourced5fde707);SWE1Dpreparation
-adf05d66e0d18b57e2007fb77c5e5cd96a237d36;shared GrowthRates
-89f1ef67440aed605b91964d655fdbcf41e20d78. No package checkout was edited.
-Exact local execution raw snapshots still preserved on this machine at
-../../../../.local/state/Le-AI-Lab/stratonovich-clock-filter-local-raw-v1.
-Portable logs,all failed sources,hash bindings and successful replay evidence
-are committed;no scientific WIP depends on an external reviewer workspace.
+New native53member and old115member archives checked against committed
+blobs before owned terminal native/launch/source/probe rawcopies were removed.
+No current math or review WIP needs an external workspace. The separate old
+Lean local-execution snapshots remain at
+../../../../.local/state/Le-AI-Lab/stratonovich-clock-filter-local-raw-v1;
+all portable Lean evidence/source/replay/control records are already committed.
+Related-package pins/owners remain in lean-progress/coordination/2026-10-29-agent8/;
+no new package operation was made in this round. Revalidate current fleet
+addresses/checkouts before future use instead of assuming historical HEADs.
 
 ## Operating notes
 
@@ -593,25 +631,40 @@ nonzero measure is needed for strictness. Reviewer v1wrong-target/v2unsupported
 CLI preflights have no scientific verdict;v3used supported existing2.1.304.
 No global runtime/dotfile/provider change was made.
 
+
+For long native review jobs,use a persistent user service in background.slice,
+with explicit subscription-review-cli executable,pinned supported ClaudePATH,
+and doctor INSIDEthe service before provider launch. Foreground unifiedexec
+can lose the driver while the provider remainslive. Confirm actual process/
+service terminal state and receipt;do not restart merely on observationtimeout,
+forge an exit0or count a detached favorable report as a cleared review.
+The current v5archive preserves its exact working launch/collector template.
+
+New research note notes/degree-four-clock-probe.md is terminal-readable;it
+contains the9termcomparison not yet integrated into the canonical PDF.
+Do not rebuild/alter that PDF merely to refresh its timestamp. Its source
+and all60proofs are unchanged in this round.
+
 ## Risks to monitor
 
-1. Full fixed-positive-a sharp p2constant remains OPEN;source normalization
-   conflict has no adopted intended correction.
-2. Exact unweighted clock identity failure still allows one-sided/asymptotic
-   approaches. Shared-clock first-pair lower sign does not prove higher orders.
-3. Preserve original dimensions/Radon covariances and every Stratonovich self-
-   pairing. Degree-four white case is a falsification test,not scope narrowing.
-4. GAPversus auxiliary cutoff versus physical unequal-time transforms differ.
-   Balanced external horizons and order-dependent constants are unresolved.
-5. Lean proves only the encoded conditional steps. Concrete measure facts,
-   density/measurability/representation are analytic application obligations.
-   Local replay is not a canonical lean-pkg/Comparator/full-dependency gate.
-6. Agent8ownership/source-pin/receipt distinctions persist. Generic-series
-   kappais factorialnu,notphysicaltimekappa(a);rootTendsto is stronger than
-   our coefficientlimsup. Cross-copy permutations omit self-pairings.
-7. PRIVATEwiki is not canonical provenance closure;reference intake is not
-   source authentication. No direct shared-repo writes or outreach.
-8. Original full goal ACTIVE;no whole-paper,circulation,novelty or public
-   Lean release clearance. Companion creation still has its separate gate.
-9. Preserve HIGHcross-family/source coverage,own-path commits and serialized
-   push/<HUB> parity. Do not repeat completed algebraic reviews unchanged.
+1. Six mixed degree-four terms/fullsum,allorder,original sharpconstant and
+   balanced-horizon transfer remainOPEN. Nine controlled terms are a partial
+   model advance,not completion. Original covariance/dimension scope persists.
+2. Original variational/source numerical normalization has no adopted intended
+   correction. No source1.24or white-corollary value is repaired here.
+3. Analytic oriented complex-clock products differ from Hermitian/modulus
+   kernels at overlapping pairs. Do not inherit a parabolic LDP by renaming.
+4. Chain-gap transforms,auxiliary cutoffs and physical unequal-time moments
+   differ. Published lifetime proof needs a sharp unequal-dampingupper law.
+5. Exact anchors revealed individual errors hidden by ratios;changing density
+   can worsen one estimator. QMCSEis diagnostic,not a certified enclosure.
+6. Keep actual7MED/failed transports separate from8HIGHaccepted source. Source
+   packet/receipt/model/coverage/final bindings are scope-specific;no same-source
+   confidence fishing. Imported old Lean claims do not formalize new SPDE facts.
+7. Skorohod remainsBCW's. All new controlled mixed terms contain self-pairs;
+   any material cross-only/all-order idea is forLe,not development here.
+8. PRIVATEwiki/reference intake is not canonical publication or source custody
+   clearance. All7older whole-paper cold reports remain NOT CLEAR;novelty,
+   human/circulation and privatecompanion-creation gates remain separate.
+9. Full original goal ACTIVE. Preserve own-path atomic commits,push/<HUB>
+   parity and honest failed-route/source-boundary records.
