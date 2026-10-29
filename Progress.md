@@ -2739,3 +2739,5 @@ replacement. A direct finite-Laplace criterion proof avoids blocking on edition
 acquisition. All18cold native/workspace archive members readback verified before
 only own cleanup. No live reviewer. Full original goal ACTIVE;sharp,Lean approval,
 novelty,canonical wiki/circulation still open. All six coldsNOTCLEARfor their sources.
+
+The coordinate-face negative control now matches the white-test degree3:rho=delta_0(dr1)*r2^2dr2. Its transform is computed by Laplace integration-by-parts recurrence and stays positive aslambda1grows;no tautological constant-list check. This refines a diagnostic only,not the new unreviewed construction.

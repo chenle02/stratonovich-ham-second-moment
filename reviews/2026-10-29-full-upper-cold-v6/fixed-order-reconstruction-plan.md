@@ -84,7 +84,7 @@ Do not cite Kallenberg2002Th5.22from the misfiled THIRD-edition PDF.
 Coordinate-zero faces require a SEPARATE check:L_D(lambda*e_l)->0 aslambda
 infinity by the same dominated positive resolvent integral. This equals
 nu_D({r_l0}),so it is0. Global homogeneity alone does NOT prove this;the
-negative control delta_0(dr1)*r2dr2is homogeneous and charges r1=0.
+negative control delta_0(dr1)*r2^2dr2is homogeneous of degree3and charges r1=0.
 
 Let rho_D=e^(sum r)*nu_D. Heat/Green scaling gives
 rho_eps,D(cA)=c^((4-alpha)k)*rho_(eps/c^2),D(A).
