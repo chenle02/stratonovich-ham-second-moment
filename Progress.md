@@ -2637,3 +2637,43 @@ All51native archive members read-back hash verified before own raw cleanup.
 No calibration process live. The scientific contract now explicitly reminds
 JSON string escaping,without changing any claim,threshold or scientific
 instruction. This is a fresh substantive19check proof review,not a retry.
+
+
+### Independent mild construction PASSES:19PASS/HIGH,complete source delivery
+
+Actual sourcea7e725e4490513d55dd6ae5390ebcc3eeba84e48;proof freeze3705ad7.
+Fresh native Opus5.5/HIGH775.593s,19PASS,no fatal/major or required repairs,
+accepted=true,coverage_verified=true. All27required texts/36PNGimages exact
+and complete;actual route/model,held HEAD,input and evidence hashes verified.
+Both new proofs received their OWN checksC18/C19. This is not old17HIGHreuse.
+All9minor findings adjudicated in mild-construction/adjudication-v1.md.
+
+The final minor pass makes quartic normalization,the norm-constant absorption,
+joint measurability and single split-count explicit,and states the random-
+Green integrand convention already used. Every formal statement remains as
+reviewed;44of48proofs byte-equal,critical fixed-split unchanged. Four explanatory
+bodies changed per final-status-binding.json. Full original model/dimensions/
+covariance class and upper/sharp targets unchanged. SourceSection5(ii) is no
+longer an imported identification;the mild equation is independently proved.
+No uniqueness or source-normalization correction. Fresh whole-paper cold still
+required;all five older cold reports remain NOT CLEAR for their source versions.
+All162native/dry-run archive members readback verified before own raw cleanup.
+Carrier invalid-report/accepted=false is preserved as non-science preparation.
+
+A useful GGL2023reference was refdb-only on canonical <HUB>. Both arXiv/
+DOI predictor attempts rejected the compound surname;raw failures retained.
+Supported EXISTING-KEY-ONLY intake preserves gaudreau-lamarre.ghosal.ea:23:moment,
+no force/repair/duplicate. New nonblocking ticket:
+tk-20261029-054257-codex-stratonovich-future-reference. Exact remote id/key/UID
+verified;QUEUED is not six-layer completion. DOI10.1090/tran/8978,arxiv2206.13622v2.
+No current proof dependency or source-author/coauthor outreach. This follows
+Le's standing future-reference instruction;project wiki publication is separate.
+Eight reference requests now exist;no existing ticket is relabelled or replaced.
+
+Near-static-lower-recon.md freezes a possible partial lower/strict-intermittency
+window using static p=1,2growth structure and coefficient Holder comparison.
+This is REFRAME/reconnaissance only,not a new theorem/proof wave or novelty PASS.
+No printed white constant or sourceE_*repair adopted. Full sharp goal remains
+unchanged;novelty,private Lean creation,canonical wiki and circulation still open.
+
+Final minor pass verified:92pages,48proofs,all formal statements exactly reviewed,44proofs byte-equal. Four clarifications:L:vertex-crude,P:mild-construction,L:physical-spectral-energy,P:interval-coefficients. Critical fixed-split unchanged.0errors/undefined/overfull/tabs;formatter idempotent;source/PDF hashes in final-status-binding.json. PRIVATE wiki proposal reconciled,canonical unchanged. Fresh cold6packet regeneration NEXT.
