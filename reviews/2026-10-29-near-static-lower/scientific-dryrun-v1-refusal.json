@@ -1,0 +1,79 @@
+{
+  "provider": "claude",
+  "started_utc": "2026-10-29T13:10:30.738212+00:00",
+  "workspace": "<HOME>/.local/state/Le-AI-Lab/stratonovich-near-static-scientific-dryrun-v1/workspace",
+  "source_revision": "a1e1687dad902a41eda64ceb9da7a855042166ab",
+  "input_hashes": {
+    "canonical.pdf": "561344f1ad78ffb14056a111fbae24c307adc4da58c3a6dac16df245f20d28d2",
+    "canonical.tex": "57b0785ba57a9219feba424f19cb3923bac2774bcce61524c4cd26751811f35a",
+    "change-binding.json": "7a58cf2dec279a7ffac08294ef243f0a1dc5a3500431b9a0d6109df4c4d67735",
+    "chen-hu-2025.pdf": "58b152d78cd0d54d82b991933b3eaece86e1ed2b44fe09882c14eba921e97e22",
+    "chen-hu-2025.txt": "6f2ac9fa86be852e923e64b9ff6bb24a1614baf9937708b9b65ad51612ce3085",
+    "chen-hu-2145-bottom.png": "a44878f099ae8a4d7b3c0dc0a15f76256a482ccae83e710567cf9dac3c37013f",
+    "chen-hu-2145-top.png": "f837956278559daa4d1c7e8db225e7df378986d426813fe24cd010e3d50ca385",
+    "chen-hu-2147.png": "e36d9c2fff2469068a87363a4e3e3906cd2a3090d676dd22edc3864ab9098de7",
+    "chen-hu-2152.png": "692f235d07bfc58916dc617ab0f57cf3a1ab3c4e56ad5dd0a8d7f4b15f1aaaa5",
+    "chen-hu-2165.png": "304db4b53c17c0df6761c49029bbe5e907c7d035389bb1b20204032fd4083a54",
+    "construction-inputs.txt": "852c224a8b3c1eb618465fffe4e9d1e549fea4b4f119e989defd5b8b60dc907c",
+    "lower.txt": "7897a5552fe0b9a9487014716955a71230ee1bbccd3f667a2c7a54df7e685847",
+    "near-static-calibration.json": "c1a1a4e34e8b5f1be5026a602d4da6bde99a192403d4a98dc85168b6136267e4",
+    "near-static-calibration.py": "c77a52ae49e41cacdc403cc5d032df609f0c850b8a9d8ea1de3bedd8813b0215",
+    "project-goal.md": "0728224bf39e443ac5ce46733158c1a3fbafce62624fa62e69deed015cad382c",
+    "references.bbl": "70969780fa60d7f3ff1c53857c669abd78fe4c0c39118cc7fc5e8bc7b3b6d000",
+    "source-rendering.json": "58a943d728763e1fca02d6cd23e3c9d52c080acc17e3cda43482509252e033f4",
+    "static-2146-bottom.png": "fc8d017036652d3db4d6bc91a05b359ff9bff58fac401212c01b0a225178a0b3",
+    "static-2146-top.png": "cf238812cee827ecb9a58f7f732d8a42b2e3afd27f5c9cdd834c215f13ee9c7d",
+    "static-2150-bottom.png": "bc55dea516750e3df0cf593038935c1e01f1107a8c7f952e1e3578de8c4b32d0",
+    "static-2150-top.png": "e12618c744681035a427d04107b9e9d0ce72ae03ebc92d19124cf88f63be99f4",
+    "static-2171-bottom.png": "5ebdb6b942ec5af2ddd045f27c7be0ecd60efa4905cd64961814bb9368100034",
+    "static-2171-top.png": "26d0752cc370c72bf4eb7060a6c25ed1ce4ba1d6ea2000db41d566193c8ab915",
+    "static-source-map.md": "5b85210c91675e8d4d00ca28efa8be45059c27e1ff9e97332d54510089b9cc26",
+    "upper-inputs.txt": "2610ed3f840feebe626c410b527af4a7976a324a7bb3340964e3dac52477f197",
+    "white-order-four-screen.json": "3a243d312dd0f40afa0b32e7a97eb0520f15fe3189e4869cd5732052a368217f",
+    "white-order-four-screen.py": "01cc5c5151e60b2818680c9893ed6ee0aa4c4e370e7e320968e468e20a550457"
+  },
+  "target": "lower.txt",
+  "claude_account": "<removed>",
+  "review_contract_sha256": "9d06afed79a250cd6a825373b560eb20ce5c1deb4c56118de63658854408c197",
+  "effort_requested": "high",
+  "resumed_from": null,
+  "resume_mode": null,
+  "resume_binding": null,
+  "min_confidence": "high",
+  "scientific_verdict": null,
+  "accepted": false,
+  "report_contract_schema": "subscription-review-report/1",
+  "report_legacy_mode": null,
+  "legacy_resume_binding": null,
+  "diagnostics": [
+    {
+      "code": "input-identity",
+      "path": "Upper-inputs.txt",
+      "message": "workspace-reference-missing: the review contract names this file but the provider-visible workspace has no such file"
+    }
+  ],
+  "required_sources_sha256": "b70100c9080f56f1fbf575cdc474d8779b729d181d392cc6ad5cdc89759b7f31",
+  "required_sources_workspace_copy": ".review/required-sources.json",
+  "workspace_preflight": {
+    "schema": "le-ai-lab.review-workspace-preflight/1",
+    "scanned": "review contract (--prompt-file)",
+    "references": {
+      "construction-inputs.txt": [
+        "construction-inputs.txt"
+      ],
+      "lower.txt": [
+        "lower.txt"
+      ]
+    },
+    "waived": [],
+    "missing": [
+      "Upper-inputs.txt"
+    ],
+    "required_sources_copy": ".review/required-sources.json"
+  },
+  "status": "blocked-workspace-preflight",
+  "reason": "the review contract references files absent from the provider-visible workspace: Upper-inputs.txt",
+  "finished_utc": "2026-10-29T13:10:30.740707+00:00",
+  "elapsed_seconds": 0.002,
+  "coverage_verified": false
+}

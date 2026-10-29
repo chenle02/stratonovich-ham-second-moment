@@ -2915,3 +2915,9 @@ and cover their full source pages. A fresh scientific C1--C7review with its
 OWN delivery ledger and unchanged HIGH threshold must now run. Calibration
 is not mathematical acceptance. Native calibration evidence archived/readback
 verified;source unchanged.
+
+Scientific dry-run preflight refused a case-mismatched contract filename
+Upper-inputs.txt(actualupper-inputs.txt). No model dispatch occurred and no
+scientific verdict exists. Corrected the contract case without a waiver,
+packet/proof/source-image change. Refusal retained;new dry-run then FIRST
+scientific attempt follows at the same HIGH threshold.
