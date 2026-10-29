@@ -3610,3 +3610,55 @@ reference;9existing tickets persist. Durable lessons and scoped next plan
 saved. Private wiki proposal only; canonical110-page/60-proof TeX/PDF and
 WHITE13/original-class9unchanged. No normalization repair, novelty or
 circulation clearance.
+
+
+## First physical phase/operator response candidate (2026-10-29)
+
+Previous goal turn:PROGRESS (exact scaling/scalar calibration7HIGH at9d77f90,
+adoptedb11dd6d/synchronized). Full sharp goal ACTIVE. Pre-investmentREFRAME
+is a bounded necessary phase/operator test, not a new additive-wave endstate
+or paper. Wiki and held Balan--Tudor selected source/isometry actually read;
+source position theorem is not blindly differentiated. Existing nine refs,
+no new useful absent reference or duplicate queue. Novelty remains unverified.
+
+Candidate combined phase calculation J=S+C has an exact Laplace representation
+and positive leading A_a t r^(a-1),error<=B_a r^(a-2). Gaussian/Sobolev carrier
+weights and homogeneous spectral annuli give local H^s x H^(s-1)trace criterion
+2s+alpha+a<3 for original nonzero covariance in all dimensions, no angular
+ density. Energyphase s1fails whenalpha+a>=1, with critical logarithmic or
+power squared cutoff growth. A rougher s0=1-(alpha+a)/4passes foralpha+a<2.
+The static a0endpoint is NONuniform; direct J0formula gives a different
+energy budget and no Gamma0or moment-scale contradiction.
+
+The d1candidate checks an ACTUALlocalized first Gaussian response OPERATOR:
+outputchi, globalE_sinput, full four-component trace, all high/low frequency
+sectors and GaussianHS-valued limit. For1/2<s<=1, its cutoff-uniform HS/Lp
+criterion is2s+alpha+a<3. The balanced s1/2endpoint also passes original
+alpha+a<2 via logarithmic sector bounds. No full random flow or remainder
+is asserted. Original data1is not globalE_s; first-response localization
+uses free finite propagation only. Higher dimensions require their own
+operator test, not an inferred d1extension.
+
+A new candidate Bochner spatial-average inequality transfers a lower bound
+for the actual squared normalized average back to ORIGINALpoint Eu^2 by
+stationarity and L2triangle. No pointwise positivity or simultaneous version
+assumed, no lostR^d for shrinking scale. This avoids demanding point evaluation
+from the chosen phase and does not replace the original pointwise target.
+
+Falsification/consistency before analytic review:10exact budgets,9finite
+annulus squared-ratio controls;18independent60digit time/Laplace checks;
+9actual four-component Gram cases at64/128cells, including integrated singular
+diagonal, with improving errors. Floats are not enclosures and no spatial
+operator norm was numerically measured. Six local actual phase/Gram/rpow
+window facts compile/replay with standard axioms,4semanticFalsecontrols;
+warning-only first run/binder rename and later balanced-budget addition
+preserved. Prior propositions not weakened. Gaussian/trace/HS/operator/
+averaging steps remain unformalized, requiring the NEW8-group HIGHgate.
+No companion/package/lease/registry/donorwrite/cluster/Comparator opened.
+
+Complete candidate notes/phase-response-test.md; frozen source packet in
+reviews/2026-10-29-phase-response/packet-v1. All-order flow/remainder,
+interaction-driver time regularity, growing cone/data1, nonzero-profile
+spectral/event and source-variational constants remain OPEN. No source1.24
+repair or Skorohod second-moment/asymptotic development. WHITE13/original9
+and canonical110-page/60-proofTeX/PDF unchanged; full sharp goal ACTIVE.

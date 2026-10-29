@@ -69,3 +69,12 @@ SPDE event stability/source variational identification remain entirely open.
 Direct-event7scalar/matrix type applications passedC6of the7HIGHreview
 at9d77f90. Actual formal proof source unchanged; source/ODE/Floquet/
 Gaussian and full rough-SPDE limitations remain as stated above.
+
+Phase-response pilot formalizes phase/Gram/error-window deductions only.
+The actual temporal asymptotic, Gaussian/Sobolev trace, homogeneous tails,
+localized operator HS construction/sectors, LpGaussian step and all-order
+flow/event/constant remain analytic. Application review pending.
+
+Balanced endpoint logarithmic sectors and the Bochner spatial-average
+transfer to the actual point second moment are new analytic obligations,
+not covered by the sixth finite budget statement. Review pending.

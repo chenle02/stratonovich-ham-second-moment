@@ -61,3 +61,17 @@ outside Lean. Evidence: local-checks/projection-residual-v1/.
 
 Gaussian/Green/series scaling, ODE/Floquet analysis and all rough-SPDE event
 consumers are outside Lean. No companion or canonical package gate.
+
+## Phase response: StratonovichHAMAudit.PhaseResponse
+
+| Name | Scope | Status |
+|---|---|---|
+| rough_phase_choice | Actual s0 and strict trace/sector margins | Local compile/replay; application pending |
+| balanced_phase | Actual balanced endpoint strict tail budget | Local compile/replay; application pending |
+| energy_boundary | Exact energy-phase critical inequality | Local compile/replay; application pending |
+| four_component_gram | Actual four-phase temporal Gram factorization | Local compile/replay; application pending |
+| two_frequency_average | Exact half-factor cosine product | Local compile/replay; application pending |
+| frequency_window | Actual rpow two-sided window from proved error input | Local compile/replay; application pending |
+
+All temporal/Gaussian/spectral/Sobolev/HS-operator inputs and all-order flow
+are outside Lean; this is not a formal SPDE or canonical package gate.

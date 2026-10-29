@@ -132,3 +132,25 @@ Direct-event close: all7actual scalar/matrix types/application passedC6of
 the seven-check HIGH review at9d77f90. Proof source unchanged. Gaussian/
 Green/series scaling and scalar ODE/Floquet/Holder inputs are informal
 reviewed proofs; rough-SPDE event/stability remains open. L0unchanged.
+
+## Phase-response pilot (2026-10-29)
+
+Five actual phase/Gram/error-window deductions fenced before local execution.
+Analytic spectral/HS claims remain candidates. No new companion/package; L0
+unchanged. The window input is the computed analytic error bound, not the
+open sharp/event target.
+
+Phase-response gate: all5facts compile cleanly; public types/live standard
+axioms, owned-source replay and4semantic False controls pass. Initial unused-
+hypothesis-name warning preserved; hB->_hB only, propositions unchanged.
+Analytic/type application pending; no package/companion wave.
+
+Phase-response pilot now adds a sixth balanced-endpoint budget before the
+final gate; the five existing proposition types are unchanged. Analytic
+endpoint logarithms and spatial-average moment transfer remain unformalized
+new review obligations.
+
+Final phase-response gate: all6facts compile cleanly, exact public types/live
+standard axioms and owned replay pass,4semantic controls. Three executions
+record the warning/binder cleanup and actual balanced budget addition; no
+old proposition weakened. Analytic/type/average application pending.
