@@ -6,18 +6,20 @@
 
 ## Current state
 
-- **Phase:**78page expanded deduction remains primary14PASS/HIGH on its exact reviewed source. The SECOND complete blind DeepSeek read returned9items and remains NOT CLEAR:explicit terminal-kernel matching and modular coefficient assembly are still requested. Source files were available but the reader made0tool calls;source-unavailability claims are not credited. A new bounded modularization/limit-tail repair is opening,no G:sharp wave. Old/new reports retained;no whole-paper/circulation clearance.
-- **Proved in this project:** the original full upper-scale deduction has passed both its initial11check and expanded14check scoped independent correctness reviews. The actual current source/goal/hypotheses are bound in cold-core-expansion/final-status-binding.json. The unconditional Jensen comparison and its explicitly conditional numerical specialization are retained. Full project,sharp constant,formal verification and whole-paper/circulation clearance remain incomplete.
-- **Open targets:** verify the written cold-reader repairs with a NEW blind whole-paper read; G:sharp; requested private Lean verification (not yet created);final whole-paper DeepSeek/source-bound cold read before any circulation. G:upper now has a complete proof accepted at the scoped correctness gate;global novelty remains UNVERIFIED.
-- **Current authorization:** Le requested activation and pursuit of the full goal on 2026-10-28 UTC. HIGH threshold retained. The original full upper goal has now passed its new cross-family review;report and stop at decision5. A fresh complete DeepSeek V4-Pro cold read remains due before circulation. Separate decision point4 before companion creation remains pending.
-- **Worker:** Codex agent #30 (<MACHINE>, `n30-stratonovich-ham-second`), handed over
-  2026-10-26; workflow paper-dev + lean-pkg (Lean track: `lean-progress/PROGRESS.md`).
+- **Phase:** independent fixed-order reconstruction, IN PROGRESS. The sixth blind read of source `6cdc142` returned NOT CLEAR. It requests a proof-level check of the Chapter 4 import and explicit hypothesis/canonical-object statements. Those statement/Jensen clarifications are written. The first new construction component, `L:damped-homogeneous-norms`, is written and unreviewed; the spatial Wick-measure and joint-limit lemmas remain to implement from `reviews/2026-10-29-full-upper-cold-v6/fixed-order-reconstruction-plan.md`.
+- **Prior verified checkpoint:** the 92-page quantitative upper argument plus independent mild construction passed its OWN 19-check Opus5.5/HIGH review at source `a7e725e`, with complete 27-text/36-image delivery and no required repairs. Final adoption `df1648b` binds its four minor explanatory changes. That review is not a verdict on the new norm/construction revision. All six cold reports remain NOT CLEAR for their source versions.
+- **Current artifact:** 94 pages, 49 proofs; original full covariance/dimension and upper/sharp targets retained. The Radon covariance class and canonical solution are now explicit. The new norm lemma replaces Appendix A.1 in the crude norm bounds. The source's fixed-order imports remain until the two planned lemmas replace them. Quantitative interval/CP/Fock estimates remain unchanged.
+- **Open targets:** finish/review the bounded construction repair, then a fresh cold read; G:sharp at the full original scope; private Lean verification once companion creation is approved; canonical wiki provenance and novelty/circulation gates. Printed first-moment normalization has no adopted correction.
+- **Authorization:** Le requested pursuit of the full goal, with the HIGH threshold unchanged. This is a clearly delimited reconstruction of a known input, not a new lower/asymptotic proof wave. Report and honor PROJECT-GOAL decision points; companion-creation decision 4 remains pending. No source-author/coauthor correspondence or public release authorized.
+- **Worker:** Codex/GPT author, paper-dev workflow; historical project handoff to agent #30 on 2026-10-26. Lean remains L0/PROPOSED (`lean-progress/PROGRESS.md`). Nine normal reference requests exist; new edition-custody intake is nonblocking, not source authentication.
 
 ## Round plan
 
 Gate class: whole-paper.
 Gate scope: original full upper-scale and sharp-constant research goal;
-this checkpoint adopts the complete scoped G:upper proof only.
+the current intra-round checkpoint retains the reviewed quantitative estimate
+and reconstructs its fixed-order input at the unchanged scope; it is not a
+closed round or a whole-paper clearance.
 Mandatory protocols: AGENTS.md and PROJECT-GOAL.md;independent Opus5.5/HIGH
 with source delivery;fresh complete DeepSeek cold read before circulation;
 clean builds;decision5 report/stop and separate decision4 before Lean creation.
@@ -2679,3 +2681,61 @@ unchanged;novelty,private Lean creation,canonical wiki and circulation still ope
 Final minor pass verified:92pages,48proofs,all formal statements exactly reviewed,44proofs byte-equal. Four clarifications:L:vertex-crude,P:mild-construction,L:physical-spectral-energy,P:interval-coefficients. Critical fixed-split unchanged.0errors/undefined/overfull/tabs;formatter idempotent;source/PDF hashes in final-status-binding.json. PRIVATE wiki proposal reconciled,canonical unchanged. Fresh cold6packet regeneration NEXT.
 
 Cold6packet regenerated from adoptiondf1648b:91blind pages versus92canonical,all48proofs/every formal type byte-equal. Mathematical qualifications and random-Green convention retained;only review metadata/title qualifier removed. Canonical free-form prompt verbatim,complete manuscript/bibliography inline,six pinned source texts available. Clean build;readonly isolated nativeV4-Pro launcher/config. Collection uses regular-file export;historical replay/7negative controls pass. Prepared,not a scientific report;all five prior cold reports still NOT CLEAR.
+
+
+### Sixth cold read NOT CLEAR;proof-level fixed-order reconstruction begins
+
+Actual source6cdc142dad89775a54691990a3a7392f777fa34d,DeepSeekV4-Pro472.212s,
+18successful tools/no failed calls. Complete prompt/model/held HEAD/input/
+isolated target bindings verified. Partial source consultation,not a full
+proof audit. All10items adjudicated in full-upper-cold-v6/adjudication-v1.md.
+No new specific mild-step or interval-constant error is supplied. Primary19HIGH
+is not a waiver. The report requests independent conviction of the fixed-order
+preprint input and explicit main hypothesis/object statements.
+
+Factual corrections:static phase Sections11--12ARE inputs;interval fields are
+Section13and there are14sections,contrary to the report's description. Literal
+source constants are defined;their intended normalization/order is unresolved.
+Not all other computed bounds are conditional. No source correction adopted.
+
+HypothesisH:homog now explicitly states the ORIGINAL full nonnegative even PD
+tempered Radon covariance/spectral class and dimensions/ranges. T:full-upper
+names the original canonical expansion solution and definesR_alpha. This
+clarifies the supplied goal,not a new narrower class or different solution.
+Jensen's mean interchange now has an explicit independent norm-series forward
+reference and absolute L1summability. No uniqueness assertion.
+
+Rendered source25--28audit and exact algebra identify repairable intermediate
+proof issues:second-chain tail index,missing heat-filter half,horizon integral
+normalization,and unsupported occupation-power replacement. These are not
+Theorem4.1counterexamples or reviewed source-normalization corrections. Rather
+than another generic independence assertion,REFRAME is a bounded independent
+reconstruction of this KNOWN input under the unchanged homogeneous class.
+Value/cost/stop conditions and precise proof plan are in fixed-order-
+reconstruction-plan.md. No novelty or new lower-proof wave. Next TWO spatial
+Wick-measure/joint-limit lemmas must actually be written;do not redesign the
+plan or rerun unchanged cold reviews.
+
+First component is now written:LemmaL:damped-homogeneous-norms independently
+proves full norm finiteness,scaling and vanishing high-Laplace tails,including
+uniform Gaussian smoothing/domain restrictions. Crude/vertex norm calculations
+no longer import AppendixA.1. This is UNREVIEWED;the source4.1/4.4construction
+imports remain until the two new lemmas replace them. Quantitative interval/
+CP/Fock estimates stay unchanged. An intra-round checkpoint,not a round close.
+
+Falsification:32exact white static cross/self Laplace checks pass. A homogeneous
+coordinate-face measure is a negative control:homogeneity alone cannot exclude
+r_l=0atoms;a separate large-Laplace-parameter argument is required. Near-static
+recon checks20scalings/84white Holder/40window exponents also pass,not SPDEproofs.
+Hu--Wang's primary model is explicitlySkorohod;its digest omits that distinction.
+Local crosswalk only,no canonical wiki edit or Skorohod development.
+
+Source custody:the file cataloguedkallenberg:02:foundationsis actually THIRD
+edition on both machines(SHA256da12514120c896c759952d6624686efd176121d91195c95f82740c44dfb46446).
+It cannot verify2002Th5.22. Ninth nonblocking reference intake:
+tk-20261029-071443-codex-stratonovich-edition-custody,exact remote id/key verified,
+normal existing-key path,no force/repair. No direct six-repo write or destructive
+replacement. A direct finite-Laplace criterion proof avoids blocking on edition
+acquisition. All18cold native/workspace archive members readback verified before
+only own cleanup. No live reviewer. Full original goal ACTIVE;sharp,Lean approval,
+novelty,canonical wiki/circulation still open. All six coldsNOTCLEARfor their sources.

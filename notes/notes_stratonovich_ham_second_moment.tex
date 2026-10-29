@@ -95,7 +95,7 @@ noise: Stratonovich regime\\[0.3em]
   Section~\ref{S:d1-upper} establishes upper bounds at the target
   scale for $0<\alpha\le1$ in dimensions one, two and three, including
   spatial white noise in dimension one, with explicit constants.
-  Section~\ref{S:interval-upper} establishes the upper bound for the
+  Section~\ref{S:interval-upper} gives the upper-bound argument for the
   full homogeneous covariance class in every admissible dimension,
   using interval fields, a uniform coefficient estimate and covariance
   domination. The sharp constant remains open. The qualification on the
@@ -122,12 +122,25 @@ noises $\W_{\epsilon,\delta}$). The noise is centered Gaussian with
 \end{equation}
 where $\gamma\ge0$ is nonnegative definite with spectral measure $\mu$.
 
-\begin{hypothesis}[Homogeneity]\label{H:homog}
-  $\gamma(cx)=c^{-\alpha}\gamma(x)$ for $c>0$, and
+\begin{hypothesis}[Homogeneous covariance]\label{H:homog}
+  Let $d\in\{1,2,3\}$ and $0<\alpha_0<1$.
+  The spatial covariance is a nonnegative, even, positive-definite
+  tempered Radon measure $\Gamma$ on $\R^d$, with positive even
+  tempered Radon spectral measure $\mu$ in the convention
+  \[
+    \Gamma=\int e^{i\xi\cdot x}\mu(\ud\xi)
+    \quad\text{in the sense of tempered distributions}.
+  \]
+  The symbol $\gamma$ in~\eqref{E:cov} denotes this covariance as a
+  function when one exists, and as a distribution otherwise.
+  For every Borel set $A$ and $c>0$,
+  $\Gamma(cA)=c^{d-\alpha}\Gamma(A)$, and
   \begin{equation}\label{E:threshold}
     \alpha_0+\alpha<2,
   \end{equation}
-  with $0<\alpha<d$, or $\alpha=d=1$ (spatial white noise).
+  with $0<\alpha<d$, or $\alpha=d=1$.
+  In particular, the last case includes spatial white noise
+  $\Gamma=\delta_0$.
 \end{hypothesis}
 
 Throughout we write
@@ -341,6 +354,10 @@ chain.
 \end{proposition}
 
 \begin{proof}
+  For each fixed $t,x$, Lemma~\ref{L:vertex-crude} below gives
+  $\sum_n\|X_n(t,x)\|_2<\infty$; its proof does not use the present
+  proposition. Thus, $\sum_n\E|X_n(t,x)|<\infty$, and the mean of
+  the canonical series is the sum of its means.
   By \eqref{E:expansion} and \cite{chen:author2026:time-dependency}*{(2.20)--(2.21)},
   $\E u(t,x)=\sum_{n\ge0}\E S_{2n}(g_{2n}(\cdot,t,x))\ge1$, since every term is
   a pairing integral of a nonnegative integrand and $S_0=1$. By the
@@ -653,17 +670,123 @@ p.~11, the Green regularization on pp.~13--14, and Theorem~4.1}.
 
 \subsection{Recovering the quadratic-exponential bound}
 
-Write $G_\theta(s,y)=e^{-\theta s}G(s,y)$ and let
-$N_i(\theta)$, $i=0,1,2$, denote the three norms in the source's
-(3.3)--(3.5), with the full covariance. From its (2.4) and Lemma~A.1,
-there are $C_0<\infty$ and $\theta_0>0$ such that, for
-$\theta\ge\theta_0$,
+Write $G_\theta(s,y)=e^{-\theta s}G(s,y)$ and
+$\widehat G_s(\xi)=\sin(s|\xi|)/|\xi|$, with value $s$ at $\xi=0$.
+We use the norms in the source's (3.3)--(3.5), with the full covariance,
+but give their bounds directly. Write $\Gamma_{\mathrm E}$ for Euler's
+Gamma function in the following definitions, to distinguish it from the
+covariance measure:
+\begin{equation}\label{E:damped-norm-definitions}
+  \begin{split}
+    N_0(\theta)&=\int_0^\infty e^{-\theta s}G_s(\R^d)\ud s,\\
+    N_1(\theta)&=\frac1{\Gamma_{\mathrm E}(\alpha_0)}
+    \int_0^\infty\lambda^{\alpha_0-1}\ud\lambda
+    \int\frac{\mu(\ud\xi)}{(\theta+\lambda)^2+|\xi|^2},\\
+    N_2(\theta)^2&=\int_0^\infty\int_0^\infty
+    e^{-\theta(s+t)}|s-t|^{-\alpha_0}
+    \int\widehat G_s(\xi)\overline{\widehat G_t(\xi)}
+    \mu(\ud\xi)\ud s\ud t.
+  \end{split}
+\end{equation}
+The second expression uses the elementary wave Laplace transform
+$\int_0^\infty e^{-as}\widehat G_s(\xi)\ud s=(a^2+|\xi|^2)^{-1}$.
+The last expression is the space-time covariance quadratic form;
+in physical variables it pairs $G_\theta(s,x)$ with $G_\theta(t,y)$.
+
+\begin{lemma}[Homogeneous damped norms and temporal tails]
+  \label{L:damped-homogeneous-norms}
+  Under Hypothesis~\ref{H:homog}, the integrals in
+  \eqref{E:damped-norm-definitions} are finite for every $\theta>0$,
+  with $N_2(\theta)^2\ge0$, and
+  \[
+    N_0(\theta)=\theta^{-2},\qquad
+    N_1(\theta)=\theta^{\alpha+\alpha_0-2}N_1(1),\qquad
+    N_2(\theta)^2=\theta^{-\beta}N_2(1)^2,
+    \quad\beta=4-\alpha-\alpha_0.
+  \]
+  Let
+  \[
+    K_M(r)=\frac1{\Gamma_{\mathrm E}(\alpha_0)}
+    \int_M^\infty e^{-\lambda|r|}\lambda^{\alpha_0-1}\ud\lambda.
+  \]
+  Denote by $N_1^{(M)}(1)$ the first norm with $\lambda>M$, and by
+  $N_2^{(M)}(1)$ the second norm with $K_M(s-t)$ in place of
+  $|s-t|^{-\alpha_0}$. Then
+  \begin{equation}\label{E:damped-tail-norms}
+    N_1^{(M)}(1)\longrightarrow0,\qquad
+    N_2^{(M)}(1)\longrightarrow0\quad(M\to\infty).
+  \end{equation}
+  Spatial Gaussian smoothing, Gaussian smoothing of the Green kernel,
+  and restriction of a temporal Laplace domain do not increase these
+  corresponding full or tail norm bounds.
+\end{lemma}
+
+\begin{proof}
+  Fourier uniqueness and homogeneity give
+  $\mu(B_r)=r^\alpha V$, where $V=\mu(B_1)<\infty$.
+  Therefore, for $a>0$,
+  \[
+    \int\frac{\mu(\ud\xi)}{a^2+|\xi|^2}
+    =\alpha V a^{\alpha-2}
+    \int_0^\infty\frac{u^{\alpha-1}}{1+u^2}\ud u<\infty.
+  \]
+  The last integral is finite since $0<\alpha<2$.
+  Substitution into $N_1$ reduces its finiteness to
+  $\int_0^\infty\lambda^{\alpha_0-1}(\theta+\lambda)^{\alpha-2}
+  \ud\lambda<\infty$: the conditions at zero and infinity are
+  $\alpha_0>0$ and $\alpha+\alpha_0<2$.
+
+  For $N_2$ use
+  $|\widehat G_s(\xi)|\le\min(s,|\xi|^{-1})$.
+  On $|\xi|\le1$, absolute integration is bounded by
+  \[
+    V\int_0^\infty\int_0^\infty
+    e^{-\theta(s+t)}|s-t|^{-\alpha_0}st\ud s\ud t<\infty.
+  \]
+  On $|\xi|>1$, use
+  $\int_{|\xi|>1}|\xi|^{-2}\mu(\ud\xi)=\alpha V/(2-\alpha)$
+  and the same time integral without $st$. Both time integrals are
+  finite by splitting into $s\le t$ and $t\le s$, then using
+  $u=\min(s,t)$ and $v=|s-t|$; the only singular factor is
+  $v^{-\alpha_0}$, with $\alpha_0<1$.
+  This proves absolute integrability of the displayed spectral formula.
+  For each $\xi$, its time integral is nonnegative because the
+  temporal kernel is positive definite. Indeed, it is a positive
+  Laplace mixture of the kernels $e^{-\lambda|s-t|}$.
+  This proves $N_2(\theta)^2\ge0$.
+
+  The mass identity $G_s(\R^d)=s$ proves the formula for $N_0$.
+  In $N_1$ change $\lambda=\theta u$ and $\xi=\theta\eta$.
+  In $N_2$ change $s=u/\theta$, $t=v/\theta$ and
+  $\xi=\theta\eta$, using
+  $\widehat G_{u/\theta}(\theta\eta)=\theta^{-1}\widehat G_u(\eta)$.
+  These changes give exactly the stated powers.
+
+  The first tail in~\eqref{E:damped-tail-norms} is a tail of the
+  finite nonnegative $N_1(1)$ integral. For the second,
+  $0\le K_M(r)\le|r|^{-\alpha_0}$ and $K_M(r)\to0$ for $r\ne0$.
+  The absolute majorant just proved permits dominated convergence
+  in $(s,t,\xi)$, giving $N_2^{(M)}(1)^2\to0$.
+  The tail kernel is positive definite by the same Laplace-mixture
+  argument, so its quadratic form is nonnegative.
+
+  Spatial and Green Gaussian smoothing multiply the spectral integrals
+  by factors in $[0,1]$. For $N_1$ the integrand is nonnegative.
+  For $N_2$, first integrate in time: the quadratic form at each
+  $\xi$ is nonnegative, so its Gaussian multiplier can be removed
+  in an upper bound. Restricting a temporal Laplace domain likewise
+  decreases the first norm and its nonnegative covariance quadratic
+  form. This proves all smoothing and truncation assertions, including
+  the bounds for temporal tails.
+  This proves Lemma~\ref{L:damped-homogeneous-norms}.
+\end{proof}
+
+Since $\beta>2$ and $\alpha+\alpha_0<2$, the lemma gives constants
+$C_0<\infty$ and $\theta_0=1$ such that, for $\theta\ge\theta_0$,
 \begin{equation}\label{E:crude-norms}
   N_0(\theta)=\theta^{-2},\qquad
   N_1(\theta)\le C_0,\qquad N_2(\theta)\le C_0\theta^{-1}.
 \end{equation}
-For $N_1$, the spectral formula (A.1) is decreasing in $\theta$, so its
-finite value at $\theta_0$ suffices. The last bound is (A.3).
 
 \begin{lemma}[Corrected crude estimate]\label{L:crude-corrected}
   Under Hypothesis~\ref{H:homog}, for suitable $C<\infty$ and
@@ -694,10 +817,10 @@ finite value at $\theta_0$ suffices. The last bound is (A.3).
   $(1+|\xi|^2)^{-(2-\alpha_0)/2}$, whose integral is finite by (1.5).
   This argument requires no radial density for the spectral measure.
   The zero norm is unchanged; the
-  first norm is bounded by (A.1), since its spectral multiplier is at
-  most one; the squared second norm is bounded by the full temporal
-  covariance norm and then by removal of the spatial multiplier in the
-  nonnegative space-time spectral integral, as in (4.14). The bound is
+  first and second norms are bounded by
+  Lemma~\ref{L:damped-homogeneous-norms}: their Gaussian multipliers
+  can be removed in the upper bounds for the nonnegative transforms
+  and covariance quadratic forms. The bound is
   uniform in these regularizations. In $d=3$, first use
   $G_\eta=p_\eta*G$, as defined on pp.~13--14 of the source. Its
   spatial Fourier multiplier is bounded by one and its spatial mass
@@ -791,11 +914,11 @@ before any noise width is removed.
   smoothed spatial covariance. Its space-time spectral expression is
   an integral of the squared absolute transform against nonnegative
   measures, so removal of the spatial Gaussian multiplier increases it.
-  This is the source's argument (4.14), p.~32. Green smoothing has
-  multiplier at most one and unchanged mass, so the same bounds hold
-  before its removal. Thus, Lemma~A.1, specifically (A.1) at
-  $\theta\ge\theta_0$ and (A.3) for sufficiently large $\theta_0$,
-  supplies constants independent of all the vertex widths.
+  Green smoothing has multiplier at most one and unchanged mass,
+  so the same bounds hold before its removal. These assertions follow
+  from Lemma~\ref{L:damped-homogeneous-norms}, rather than an imported
+  normalization or large-parameter formula in the source's Appendix.
+  The constants are independent of all the vertex widths.
 
   Since $\#Q_0=\#Q_1$ and $\#Q_0+\#Q_2/2=n$ in Theorem~3.1,
   exactly as in~\eqref{E:theta-envelope} we obtain the following bound.
@@ -5080,10 +5203,11 @@ for that evolution.
 \section{Interval fields and the full upper bound}
 \label{S:interval-upper}
 
-\myCmts{The interval estimate passed scoped independent correctness
-review. The independent mild construction has now passed its own
-source-bound correctness review at high confidence. A fresh whole-paper
-cold read and the sharp constant remain open.}
+\myCmts{The preceding interval and mild-construction arguments passed
+source-bound correctness review. The sixth cold reader requested clearer
+hypothesis and solution-object statements and a proof-level fixed-order
+input audit. Those revisions are in progress and need renewed review.
+The sharp constant remains open.}
 
 Write
 \[
@@ -6081,8 +6205,14 @@ on the empty tuple. This definition introduces no kernel symmetrization.
 \end{proof}
 
 \begin{theorem}[Full upper scale]\label{T:full-upper}
-  Under Hypothesis~\ref{H:homog}, for every admissible $d=1,2,3$,
-  there is a finite $C=C(\alpha,\alpha_0)$ such that
+  Under Hypothesis~\ref{H:homog}, let $u$ be the canonical expansion
+  solution~\eqref{E:expansion}, constructed as a Stratonovich mild
+  solution in Proposition~\ref{P:mild-construction}. Put
+  \[
+    R_\alpha=\frac{\alpha\pi\mu(B_1)}{2\sin(\pi\alpha/2)}.
+  \]
+  For every admissible $d=1,2,3$, there is a finite
+  $C=C(\alpha,\alpha_0)$ such that
   \begin{equation}\label{E:full-upper-bound}
     \E u^2(T,x)
     \le e(T+2)^d
@@ -6346,8 +6476,9 @@ on the empty tuple. This definition introduces no kernel symmetrization.
 \myCmts{Theorem~\ref{T:full-upper} establishes the unchanged full upper
 goal for every admissible dimension and homogeneous covariance.
 The interval estimate passed scoped correctness review.
-The independent mild construction passed source-bound correctness review.
-A fresh whole-paper cold read remains required.
+The preceding independent mild construction passed correctness review.
+The explicit hypothesis/object revision and fixed-order input audit are
+in progress; fresh primary and whole-paper review remain required.
 The earlier explicit bounds for $0<\alpha\le1$ remain available.
 The sharp constant and final whole-paper cold read remain open.}
 
