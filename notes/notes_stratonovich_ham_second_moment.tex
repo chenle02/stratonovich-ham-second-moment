@@ -66,7 +66,7 @@
 
 \title{The second moment of the hyperbolic Anderson model with time-dependent
 noise: Stratonovich regime\\[0.3em]
-{\normalsize Working notes (terminal-kernel revision, 2026-10-28)}}
+{\normalsize Working notes (chronological-word revision, 2026-10-29)}}
 \author{Le Chen}
 \date{\today}
 \maketitle
@@ -163,6 +163,10 @@ The local exponent $b=2-\alpha$ in Section~\ref{S:d1-upper} is different
 from coordinate powers $b_j$ in Section~\ref{S:three-endpoints}.
 In Section~\ref{S:higher-alpha}, $\delta=\alpha-1$ is an exponent;
 when used for temporal noise smoothing, $\delta$ is a cutoff width.
+The covariance measure $\Gamma(\ud x)$ and the Euler Gamma function
+$\Gamma(q)$ are distinguished by their arguments. The local
+$p=2-\alpha_0$ in Section~\ref{S:interval-upper} is an inventory-decay
+exponent; it is not the moment order $p$ in Conjecture~\ref{Conj:allp}.
 The unconditional first-to-second moment comparison is
 Proposition~\ref{P:Jensen}. Any numerical consequence involving the
 source's $L_*$ explicitly assumes a valid first-moment lower bound with
@@ -368,13 +372,14 @@ pp.~13--14, and Theorem~4.1}.
 \end{proposition}
 
 \begin{proof}
-  From~\cite{chen:author2026:time-dependency}*{Theorem~4.1}, each
+  \emph{Imported inputs and the finite-order target.}
+  From~\cite{chen:author2026:time-dependency}*{Theorem~4.1, (4.2), p.~22}, each
   deterministic kernel $g_n$ is Stratonovich integrable. Its spectral
   hypothesis (1.5) follows from Hypothesis~\ref{H:homog}, as recorded
-  on p.~3 of the source. For context, Lemma~2.5 and
-  (2.18) of that source apply to these deterministic kernels and give
-  $X_mX_n=S_{m+n}(g_m\otimes g_n)$ for $m,n\ge1$.
-  That product identity is not needed by the limit argument below.
+  on p.~3 of the source. The other analytic input is the equal-length
+  diagram limit in its Lemma~4.4, specified below. We prove the unequal-
+  length identity from these inputs without invoking a product rule for
+  multiple Stratonovich integrals.
   For the expectation identity needed here it suffices to use the fixed-order
   $L^2$ convergence in Theorem~4.1: Cauchy--Schwarz gives $L^1$ convergence
   of the product of two regularized factors, since their $L^2$ norms stay
@@ -388,6 +393,7 @@ pp.~13--14, and Theorem~4.1}.
   chain lengths. We separate a fixed-noise measure limit from the joint
   noise limit imported from the source.
 
+  \emph{Green measures at fixed noise widths.}
   At fixed positive noise widths, all covariance functions and all finite
   Gaussian moments are bounded and continuous in their spatial arguments.
   In dimension three the source defines $G_\eta=p_\eta*G$; these positive
@@ -403,7 +409,8 @@ pp.~13--14, and Theorem~4.1}.
   Thus, from now on the fixed-noise integrals use the actual Green
   measures. This step takes place before any noise width tends to zero.
 
-  Here is the precise imported joint-limit fact. From
+  \emph{The precise equal-length import.}
+  From
   \cite{chen:author2026:time-dependency}*{Lemma~4.4 and Remark~4.5,
   pp.~30--31}, for two chains of the same length $r$, every pairing
   $D'\in\Pi_r$ has a finite joint limit when all its vertexwise widths
@@ -419,22 +426,40 @@ pp.~13--14, and Theorem~4.1}.
   imported, not proved here. Its spectral assumption is the source's
   (1.5), already checked from Hypothesis~\ref{H:homog}.
 
+  \emph{A finite coloring reduces each limit to that import.}
   Choose and fix $D\in\Pi_k$ for the original lengths $m,n$.
   Assign an independent copy $W^e$ of the source noise to each pair
   $e\in D$, and at each vertex use the copy of its pair. For a chain
   of length $r\ge1$ write $c(l)$ for this color assignment and
   $Y_{r,a}$ for its integral, where $a$ is the collection of its positive
   noise widths. At fixed widths it exists by the preceding measure limit.
-  In the covariance of two copies of this same colored chain, let
-  $\Pi_r(c)$ be the pairings that join only equal colors. Wick's formula
+  In the product of two copies of this same length-$r$ chain, define
+  the doubled color map by
+  \[
+    \widetilde c(j)=c(j),\qquad
+    \widetilde c(r+j)=c(j),\qquad 1\le j\le r,
+  \]
+  and set
+  \[
+    \Pi_r(c)=\{D'\in\Pi_r:
+    \widetilde c(j)=\widetilde c(l)
+    \text{ for every }\{j,l\}\in D'\}.
+  \]
+  The two copies use widths $a$ and $b$, but the same Gaussian color
+  fields. A color occurring twice on this chain occurs four times in
+  the product; all equal-color pairings of those four vertices are kept.
+  Wick's formula
   and independence give exactly
   \[
     \E[Y_{r,a}Y_{r,b}]
     =\sum_{D'\in\Pi_r(c)}B_{D'}(a,b).
   \]
-  Each $B_{D'}$ is one of the equal-length diagrams in the imported
-  joint-limit statement, with its vertex widths taken from $a$ and $b$.
-  The sum is finite. Consequently, for a finite number $Q_{r,c}$,
+  Each $B_{D'}$ has two chains of length $r$, with its vertex widths
+  taken from $a$ and $b$. After reversing each chain, it is a diagram
+  in the imported joint-limit statement; reversal only permutes its
+  vertex widths. Thus it has a finite limit $b_{D'}$, independent of
+  their relative rates. Define the finite sum
+  $Q_{r,c}=\sum_{D'\in\Pi_r(c)}b_{D'}$. Consequently,
   \[
     \lim_{a,b\to0}\E[Y_{r,a}Y_{r,b}]=Q_{r,c},\qquad
     \lim_{a\to0}\E Y_{r,a}^2=\lim_{b\to0}\E Y_{r,b}^2=Q_{r,c}.
@@ -447,6 +472,7 @@ pp.~13--14, and Theorem~4.1}.
   Completeness of $L^2$ gives a unique limit $Y_r$. Set $Y_0=1$
   for an empty chain.
 
+  \emph{The original unequal chains and their reversal.}
   For the original two chains the product converges in $L^1$, since
   \[
     \begin{split}
@@ -476,17 +502,30 @@ pp.~13--14, and Theorem~4.1}.
   and set $D^{\rm rev}=\{\{\rho(a),\rho(b)\}:\{a,b\}\in D\}$.
   Since $\rho^2$ is the identity, this is a bijection of $\Pi_k$.
 
-  In each chain reverse the order of its variables, replace each time by
-  $t$ minus that time, and each spatial coordinate by $x$ minus that
-  coordinate. Each terminal Green factor becomes an initial Green factor.
+  More explicitly, if $(s_j,y_j)$ are the first chain's terminal
+  variables, set
+  \[
+    s'_j=t-s_{m+1-j},\qquad y'_j=x-y_{m+1-j},
+    \qquad 1\le j\le m,
+  \]
+  and use the analogous length-$n$ transformation on the second chain.
+  The new variables remain strictly increasing in time and have the
+  initial root $(s'_0,y'_0)=(0,0)$ on each chain. For example, the
+  terminal factor $G(t-s_m,x-y_m)$ becomes $G(s'_1,y'_1)$;
+  every other Green factor becomes its corresponding successive
+  increment. This also specifies the equal-length reversal used above.
   Both time and spatial covariance differences change sign; the covariance
   kernels are even. The resulting permutation of the $2k$ labels is a
-  bijection of $\Pi_k$. This gives~\eqref{E:mixed-moment}, including its
+  bijection of $\Pi_k$. At positive widths the uncolored product is
+  the finite sum of these individual terminal diagrams. Its $L^1$
+  limit and the individual colored limits therefore give
+  \eqref{E:mixed-moment}, including its
   nonnegativity. These are exactly the two chains in the integrand of
   the source's (3.6), with $n_1=m$, $n_2=n$, restricted to the finite
   horizons. The same transformations apply to the source's regularized
   integrals before taking their defining limits.
 
+  \emph{The separate solution-series passage.}
   From~\cite{chen:author2026:time-dependency}*{Theorem~1.1 and Section~5,
   p.~34}, $u$ is the solution represented by the series of the $X_n$.
   Its fixed-$t$ summability is also proved independently in
@@ -2078,6 +2117,21 @@ the sharp constant. The accepted scope stated elsewhere is unchanged.}
 
 We use the static Stratonovich model of Chen--Hu as one input and the
 space-degree-one estimate of Section~\ref{S:d1-upper} as the other.
+The static source allows nonnegative generalized covariances, not only
+Riesz functions: see its standing assumptions (1.2)--(1.3), p.~2145,
+and its explicit generalized-covariance convention (2.18), p.~2152,
+in~\cite{chen.hu:25:hyperbolic}. In the latter convention every covariance
+factor is heat regularized before its defining limit. A nonnegative,
+even, positive-definite tempered Radon measure is such a generalized
+covariance. In each application below we separately verify its homogeneity
+range and static Dalang condition before using the source's quantitative
+coefficient estimates (5.1) and (5.15). Positive definiteness of a weighted
+endpoint is proved in Lemma~\ref{L:planar-endpoints}, or is an explicit
+assumption in Hypothesis~\ref{H:three-endpoints}; weighting a measure alone
+is not being used to assert that property. Chen's variational finiteness
+theorem supplies only finiteness of the static constant, not a
+coefficient-rate theorem.
+
 For $d \in \{2,3\}$, $c > 0$, and $0 < \lambda < \min\{2,d\}$, write
 \[
   \gamma_\lambda(x)=c|x|^{-\lambda},\qquad
@@ -2577,6 +2631,13 @@ We first treat $\Gamma\ne0$ and $1<\alpha<2$.
     +2^\chi\mu_\Xi(B_1)\sum_{j\ge0}2^{j(\chi-2)}<\infty.
   \]
   This verifies the static Dalang condition without an angular density.
+  The present $\Xi$ also satisfies the source's covariance assumptions:
+  it is a nonnegative positive-definite tempered distribution, and
+  $1<\chi<2=d$. The source expressly includes generalized covariances
+  and uses their heat-regularized interpretation
+  \cite{chen.hu:25:hyperbolic}*{p.~2152, (2.18)}.
+  Thus the coefficient estimate invoked below is a direct application
+  within the source's stated class, not an extension from density kernels.
   From Chen--Hu~\cite{chen.hu:25:hyperbolic}*{Theorem~3.8(i), p.~2165},
   every fixed order exists in $L^2$. The product and Wick formulas
   (2.17) and (2.19), pp.~2151--2152, identify $B_k$ with all pairings
@@ -3207,7 +3268,12 @@ energy term is nonnegative and its gradient penalty tends to zero.
     +2^\chi\mu_\Xi(B_1)\sum_{j\ge0}2^{j(\chi-2)}<\infty.
   \]
   Thus, the static Dalang condition holds. Let $U_n$ be the source's
-  static ordered Stratonovich integrals, with $U_0=1$, and set
+  ordered integrals for this covariance. Its nonnegative positive-definite
+  tempered-distribution class is explicitly included by the generalized
+  covariance convention in
+  \cite{chen.hu:25:hyperbolic}*{p.~2152, (2.18)}; its homogeneity degree
+  satisfies $0<\chi<2<3$. No density or angular regularity is added here.
+  Let $U_0=1$, and set
   $B_k(t)=\sum_{m=0}^{2k}\E[U_m(t,x)U_{2k-m}(t,x)]$.
   If $\Xi=0$, then $B_k=0$ for $k\ge1$, and $C_{\rm st}=1$
   suffices in the bound below. For the remaining static calculation,
@@ -4629,11 +4695,11 @@ for that evolution.
 \section{Interval fields and the full upper bound}
 \label{S:interval-upper}
 
-\myCmts{A second cold read requested explicit terminal kernels and a modular
-coefficient assembly. The revised deduction and its three helper lemmas
-passed a fresh scoped correctness review at high confidence, with all
-fifteen checks passed. Whole-paper cold clearance and the sharp constant
-remain open.}
+\myCmts{The preceding terminal-kernel deduction passed fifteen scoped
+correctness checks at high confidence. A third whole-paper cold reader
+still could not follow the fixed-split operator count. Its chronological
+word-norm proof is rewritten below and awaits fresh independent review.
+Whole-paper cold clearance and the sharp constant remain open.}
 
 Write
 \[
@@ -4911,165 +4977,292 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
 \end{lemma}
 
 \begin{proof}
-  All cutoff generators are bounded and piecewise constant in time.
-  Their evolution is a finite product of bounded block exponentials,
-  hence is entire in every complex amplitude. Cauchy extraction of its
-  vector coefficients is therefore legitimate. Write
-  $\mathcal H_\rho=L^2(\Omega;X_\rho)$ and
-  $Q_{\boldsymbol r,\boldsymbol q}
-  =\langle U_{\boldsymbol r}v,U_{\boldsymbol q}v\rangle_{\mathcal H_{1/T}}$.
-  Both copies use the same Gaussian fields.
-  Coordinates outside $\mathcal I$ have degree zero on both copies and
-  are evaluated at zero. Thus, the argument concerns at most $k$ fields,
-  without changing their original labels in the final inventory sum.
+  We give a bound for each vector coefficient before taking their inner
+  product. Every operator below acts on the finite Gaussian-mode, Hermite
+  and spatial-band Hilbert space in the statement. In particular, it is
+  bounded. Its piecewise-constant evolution is a finite product of block
+  exponentials, hence is entire in every amplitude. All coefficient
+  extractions in this proof are ordinary power-series extractions.
 
-  \emph{The split determines which norm costs are present.}
-  Put $\lambda=k/T$. All fields are centered; the following names describe
-  their appearances in the coefficient, not their Gaussian means:
-  \[
-    \begin{array}{c|c|c}
-      k_i & (r_i,q_i)&\text{method}\\ \hline
-      1 &(2,0)\text{ or }(0,2)&\text{mean term on one copy}\\
-      1 &(1,1)&\text{one insertion on each copy}\\
-      \ge2 &r_i+q_i=2k_i&\text{Cauchy on each copy where used}.
-    \end{array}
-  \]
-  Call the second class $\mathcal C$. For the other active colors set
-  \[
-    \omega_i=k_i/h_i,\qquad
+  An amplitude with $k_i=0$ is evaluated at zero on both copies. If
+  $k_i>0$ but $I_i\cap[0,T]$ has zero length, every coefficient with a
+  positive power of that amplitude vanishes. The claimed inner product
+  is then zero. We may therefore assume that every active interval has
+  a positive-length intersection
+  $I_i^T=(a_i,b_i)$ with $(0,T)$; endpoint conventions do not affect the
+  evolution or its time integrals. Its length is at most $h_i$.
+
+  Write $a=\alpha/2$, and use the positive constant $\delta_a$ in
+  Lemma~\ref{L:complex-phase}. For every $i\in\mathcal B$ put
+  \begin{equation}\label{E:split-radii}
+    \omega_i=\frac{k_i}{h_i},\qquad
     d_i=2\sqrt{2k_i+1}\sqrt{R_\alpha},\qquad
-    \varrho_i=\frac{\delta_a\omega_i^{2-a}}{\sigma_i d_i},
-    \qquad a=\alpha/2.
-  \]
-  Put $\mathcal A_r=\{i\notin\mathcal C:r_i>0\}$ and
-  $\mathcal A_q=\{i\notin\mathcal C:q_i>0\}$, restricting to active colors.
-  On either copy write $\mathcal A$ for its corresponding set.
-  Its unused amplitudes are evaluated at zero.
-  In particular, a split $(2,0)$ supplies no field or cost on the second
-  copy. Use the Cauchy circles $|z_i|=\varrho_i$ for $i\in\mathcal A$.
+    \varrho_i=\frac{\delta_a\omega_i^{2-a}}{\sigma_i d_i}.
+  \end{equation}
+  Fix one of the two copies. Its background set is
+  $\mathcal A_r=\{i\in\mathcal B:r_i>0\}$ or
+  $\mathcal A_q=\{i\in\mathcal B:q_i>0\}$; denote that set by
+  $\mathcal A$. Evaluate every unused amplitude at zero. Colors in
+  $\mathcal C$ have degree one on this copy. Put $m=|\mathcal C|$.
+  Thus there are at most $k$ background and cross colors altogether.
 
-  With the colors in $\mathcal C$ set to zero, write $P_z(t,s)$ for this
-  background evolution. Its phase weight is
+  \emph{Background segments and the common partition.}
+  Fix $|z_i|=\varrho_i$ for $i\in\mathcal A$. With the cross amplitudes
+  zero, the potential is
+  $V_z(t)=\sum_{i\in\mathcal A}z_i\sigma_i\mathbf1_{I_i^T}(t)B_i$.
+  Write $P_z(t,s)$ for its evolution, and set
   \[
     \Lambda(t)=\lambda+\sum_{i\in\mathcal A}
-    \omega_i\mathbf1_{I_i}(t).
+    \omega_i\mathbf1_{I_i^T}(t).
   \]
-  This is a bounded deterministic operator on the Hilbert space containing
-  all the retained Gaussian factors. Its input may depend on the very
-  fields present in the background. No conditional independence between
-  successive background segments is assumed.
-  Lemma~\ref{L:interval-contractions}, tensored with all other color
-  factors, gives for every $\rho>0$ the sandwich coefficient
-  $D(t)=\sum_{i\in\mathcal A}|z_i|\sigma_i d_i
-  \mathbf1_{I_i}(t)$.
-  On every constant segment,
+  For each $\rho>0$, Lemma~\ref{L:interval-contractions} gives
   \[
-    D(t)\le\delta_a\sum_{i\in\mathcal A}
-    \omega_i^{2-a}\mathbf1_{I_i}(t)
+    \|A_\rho^{-1/2}V_z(t)A_\rho^{-1/2}\|
+    \le D(t)\rho^{a-2},\qquad
+    D(t)=\sum_{i\in\mathcal A}|z_i|\sigma_i d_i
+    \mathbf1_{I_i^T}(t)
     \le\delta_a\Lambda(t)^{2-a}.
   \]
-  The last inequality uses $2-a>1$.
-  Lemma~\ref{L:interval-complex} bounds each segment by
-  $100e^{2\Lambda(t)\Delta t}$ in its own phase norm.
-  At most $k$ colors have at most $2k$ endpoints, so there are at most
-  $2k+1$ such segments. Also
+  The last step follows from~\eqref{E:split-radii} and
+  $\sum x_i^{2-a}\le(\sum x_i)^{2-a}$ for nonnegative $x_i$.
+  The spatial resolvents here include the identity on every Gaussian
+  factor. This is a deterministic operator inequality on their joint
+  Hilbert space; the input can depend on the background fields.
+
+  For the moment fix a tuple $(t_i)_{i\in\mathcal C}$ with
+  $t_i\in I_i^T$, all distinct and away from the background endpoints.
+  The excluded tuples have Lebesgue measure zero. Form the common
+  partition
+  \begin{equation}\label{E:split-partition}
+    0=\tau_0<\tau_1<\cdots<\tau_M=T
+  \end{equation}
+  from these times and all background endpoints in $(0,T)$.
+  On $(\tau_{j-1},\tau_j)$ let $\Lambda_j$ be the constant value of
+  $\Lambda$, and put $P_j=P_z(\tau_j,\tau_{j-1})$.
+  There are at most $2|\mathcal A|+m$ interior partition points, so
+  $M\le2|\mathcal A|+m+1\le3k+1$.
+  Lemma~\ref{L:interval-complex}, with its adjoint bound as stated there,
+  gives
+  \begin{equation}\label{E:split-segment-product}
+    \begin{split}
+      \prod_{j=1}^M\|P_j\|_{\mathcal H_{\Lambda_j}\to
+      \mathcal H_{\Lambda_j}}
+      &\le100^M\exp\left(2\sum_{j=1}^M
+      \Lambda_j(\tau_j-\tau_{j-1})\right)\\
+      &\le100^{3k+1}e^{4k}=:M_k,
+      \qquad \mathcal H_\rho=L^2(\Omega;X_\rho).
+    \end{split}
+  \end{equation}
+  Indeed, the sum in the exponential is exactly
+  $\lambda T+\sum_{i\in\mathcal A}\omega_i(b_i-a_i)
+  \le k+\sum_{i\in\mathcal A}k_i\le2k$.
+  Insertion times refine a partition; they do not repeat this integral.
+
+  \emph{Every identity between phase norms.}
+  Put $\Lambda_0=\Lambda_{M+1}=\lambda$.
+  At $\tau_j$ let $\mathscr I_j$ be the identity from
+  $\mathcal H_{\Lambda_j}$ to $\mathcal H_{\Lambda_{j+1}}$,
+  for $0\le j\le M$. Its norm is at most
   \[
-    \int_0^T\Lambda(t)\ud t
-    \le\lambda T+\sum_{i\in\mathcal A}\omega_i h_i\le2k.
+    q_j:=\max\{1,\Lambda_j/\Lambda_{j+1}\}.
   \]
-  The norm changes, including the initial and final ones, cost at most
+  This follows directly from the two components of the phase norm and
+  the spectral inequality
+  $A_{\Lambda_{j+1}}^{-1}\le q_j^2 A_{\Lambda_j}^{-1}$.
+  At an interior background endpoint, let $E_j,S_j,R_j$ denote the
+  ending, starting and remaining background colors. Then
+  \[
+    \frac{\Lambda_j}{\Lambda_{j+1}}
+    =\frac{\lambda+\sum_{R_j}\omega_i+\sum_{E_j}\omega_i}
+    {\lambda+\sum_{R_j}\omega_i+\sum_{S_j}\omega_i}
+    \le1+\sum_{E_j}\omega_i/\lambda
+    \le\prod_{i\in E_j}(1+\omega_i/\lambda).
+  \]
+  The last product is at least one, so it also bounds $q_j$.
+  At an insertion-only cut the heights agree and $q_j=1$.
+  Initially $q_0=1$. At $T$ the same inequality charges all intervals
+  with $b_i=T$ as ending there. Each connected $I_i^T$ ends at precisely
+  one such cut. Consequently,
   \begin{equation}\label{E:interval-copy-metric}
-    D_{\mathcal A}:=\prod_{i\in\mathcal A}
-    (1+k_i/(\lambda h_i)).
+    \prod_{j=0}^M q_j
+    \le D_{\mathcal A}:=
+    \prod_{i\in\mathcal A}(1+k_i/(\lambda h_i)).
   \end{equation}
-  Only an ending interval can cause a loss. Its single ending is counted
-  once, even if other intervals overlap it or end simultaneously.
+  This product includes the initial and final conversions. There is no
+  new copy of $D_{\mathcal A}$ at an insertion time or an overlapping
+  interval's start.
 
-  \emph{The simultaneous single-insertion coefficient.}
-  Let $m=|\mathcal C|$ and let $J_i(u,w)=(0,\sigma_iW_i^\epsilon u)$,
-  with the stated finite cutoffs. Regard the background amplitudes as
-  fixed and give colors in $\mathcal C$ amplitudes $y_i$.
-  Dyson expansion relative to $P_z$ shows that the coefficient of
-  $\prod_{i\in\mathcal C}y_i$ is
+  \emph{The cross-color subspaces and the word norm.}
+  Let $\mathscr G_i^{(0)}$ be the vacuum of color $i$ and
+  $\mathscr G_i^{(1)}$ its first Gaussian degree. For
+  $S\subset\mathcal C$, use the tensor subspace
+  \[
+    \mathscr Z_S=
+    \bigotimes_{i\in\mathcal A}\mathscr G_i^{\le N_i}
+    \otimes\bigotimes_{i\in S}\mathscr G_i^{(1)}
+    \otimes\bigotimes_{i\in\mathcal C\setminus S}
+    \mathscr G_i^{(0)},
+  \]
+  with every omitted Gaussian color in its vacuum and with the common
+  spatial band understood. Each $P_j$ preserves the corresponding
+  phase space over $\mathscr Z_S$: its potential acts only on colors in
+  $\mathcal A$, and its spatial operators act identically on all cross
+  Gaussian factors. The identities $\mathscr I_j$ preserve the same
+  tensor subspace.
+
+  Define $J_i(u,w)=(0,\sigma_i B_i u)$ for $i\in\mathcal C$.
+  If $i\notin S$, multiplication by its field takes its vacuum into
+  first Gaussian degree. The Hermite cutoff $N_i=2$ does not alter this
+  step. Thus $J_i$ maps the phase over $\mathscr Z_S$ into the phase
+  over $\mathscr Z_{S\cup\{i\}}$. The vacuum-column estimate in
+  Lemma~\ref{L:interval-contractions}, tensored with all the other
+  factors, gives at its insertion time
+  \begin{equation}\label{E:split-fresh-insertion}
+    \|J_i\|\le\sigma_i\sqrt{R_\alpha}
+    \Lambda(t_i)^{(\alpha-2)/2}
+    \le c_i:=\sigma_i\sqrt{R_\alpha}\lambda^{(\alpha-2)/2}.
+  \end{equation}
+  Starting with $\mathscr Z_\varnothing$, these subspaces describe every
+  partial word. They justify each new-color estimate even though the
+  current vector depends on the background and earlier cross colors.
+  No occupied-color annihilation is estimated by a vacuum bound.
+
+  At an interior cut $\tau_j$ let $B_j^{\rm cut}=J_i$ if
+  $\tau_j=t_i$ and let $B_j^{\rm cut}$ be the identity otherwise.
+  Apply $B_j^{\rm cut}$ after $\mathscr I_j$; at an insertion cut the
+  two heights are equal. The chronological word, as a map from
+  $\mathcal H_\lambda$ back to $\mathcal H_\lambda$, is exactly
+  \[
+    \mathcal W_{\mathcal A}(z,\boldsymbol t)
+    =\mathscr I_M P_M B_{M-1}^{\rm cut}\mathscr I_{M-1}P_{M-1}
+    \cdots B_1^{\rm cut}\mathscr I_1P_1\mathscr I_0.
+  \]
+  For $M=1$ this means $\mathscr I_1P_1\mathscr I_0$.
+  The rightmost factor acts first; no spatial operators are commuted.
+  Multiplying their norms, using the subspaces just specified,
+  gives the explicit bound
+  \begin{equation}\label{E:split-word-product}
+    \begin{split}
+      \|\mathcal W_{\mathcal A}(z,\boldsymbol t)v\|_\lambda
+      &\le\left(\prod_{j=1}^M\|P_j\|\right)
+      \left(\prod_{j=0}^M q_j\right)
+      \left(\prod_{i\in\mathcal C}c_i\right)\|v\|_\lambda\\
+      &\le M_kD_{\mathcal A}\|v\|_\lambda
+      \prod_{i\in\mathcal C}c_i.
+    \end{split}
+  \end{equation}
+  The background norm bound is on the joint Gaussian Hilbert space;
+  it is not obtained by conditioning on successive fields.
+
+  \emph{The insertion cube and vector Cauchy formula.}
+  Give the cross colors amplitudes $y_i$ and define the vector
+  \[
+    \Phi_{\mathcal A}(z)
+    :=\left[\prod_{i\in\mathcal C}y_i\right]
+    \mathcal M^{\rm cut}_{(z,y,0)}(T)v.
+  \]
+  Variation of constants about $P_z$ and iteration give a Dyson series.
+  A monomial of degree one in every $y_i$ uses exactly $m$ insertions,
+  with each distinct cross color used once. Hence
   \begin{equation}\label{E:interval-cross-cube}
-    \sum_{\pi}\int_{D_\pi}
-    P_z(T,t_{\pi_m})J_{\pi_m}
-    P_z(t_{\pi_m},t_{\pi_{m-1}})\cdots
-    J_{\pi_1}P_z(t_{\pi_1},0)v\,\ud\boldsymbol t,
+    \Phi_{\mathcal A}(z)
+    =\sum_{\pi}\int_{D_\pi}
+    \mathcal W_{\mathcal A}(z,\boldsymbol t)v\,\ud\boldsymbol t,
+    \qquad
+    D_\pi=\left\{\boldsymbol t\in\prod_{i\in\mathcal C}I_i^T:
+    t_{\pi_1}<\cdots<t_{\pi_m}\right\}.
   \end{equation}
-  where $\pi$ runs over permutations of $\mathcal C$ and
+  Each ordered Dyson integral has coefficient one. The permutation
+  simplices $D_\pi$ partition the cube up to null diagonals. In particular,
   \[
-    D_\pi=\{\boldsymbol t\in
-    \prod_{i\in\mathcal C}(I_i\cap[0,T]):
-    t_{\pi_1}<\cdots<t_{\pi_m}\}.
+    \sum_\pi |D_\pi|=\prod_{i\in\mathcal C}|I_i^T|
+    \le\prod_{i\in\mathcal C}h_i.
   \]
-  Indeed, a degree-one appearance of every $y_i$ uses exactly $m$
-  insertions and a permutation of the $m$ distinct colors. Each ordered
-  Dyson integral has coefficient one. The $D_\pi$ partition the cube up
-  to null diagonals. Thus the sum in~\eqref{E:interval-cross-cube} is a
-  single integral of the time-sorted word over that cube, without a
-  multiplier $m!$ or $1/m!$. If $m=0$, it means $P_z(T,0)v$.
-
-  Before $J_i$ occurs, color $i$ is in its vacuum: the background and
-  all other insertions act identically on its Gaussian factor.
-  Lemma~\ref{L:interval-contractions} therefore bounds this insertion
-  from the other color factors into the enlarged phase space by
-  \[
-    \sigma_i\sqrt{R_\alpha}\Lambda(t_i)^{(\alpha-2)/2}
-    \le\sigma_i\sqrt{R_\alpha}\lambda^{(\alpha-2)/2}.
-  \]
-  Previously created colors are part of the remaining tensor factor in
-  that lemma. No estimate for annihilation on an occupied color is used
-  at a single-insertion step.
-
-  Apply these bounds sequentially along a word. Splitting background
-  segments at the $m\le k$ insertion times gives at most $3k+1$ pieces.
-  Their exponential costs still multiply to at most $e^{4k}$ and their
-  fixed constants to at most $100^{3k+1}$. Each metric change still occurs
-  just once along the word, so its entire metric budget is
-  $D_{\mathcal A}$, not a new power of that budget at each insertion.
-  Minkowski over the cube consequently bounds its vector coefficient by
+  Minkowski applied to~\eqref{E:interval-cross-cube} and the single-word
+  bound~\eqref{E:split-word-product} therefore gives
   \begin{equation}\label{E:interval-cross-vector}
-    C^kD_{\mathcal A}\|v\|_\lambda
-    \prod_{i\in\mathcal C}
-    \sigma_i\sqrt{R_\alpha}\lambda^{(\alpha-2)/2}h_i .
+    \|\Phi_{\mathcal A}(z)\|_\lambda
+    \le M_kD_{\mathcal A}\|v\|_\lambda
+    \prod_{i\in\mathcal C}c_i h_i.
   \end{equation}
-  This holds uniformly on all the background Cauchy circles.
+  There is no factor $m!$ or $1/m!$ in this estimate. For $m=0$,
+  the cube has unit mass and $\Phi_{\mathcal A}(z)=P_z(T,0)v$.
 
-  \emph{Vector Cauchy and the fixed split.}
-  The vector in~\eqref{E:interval-cross-vector} is holomorphic in the
-  remaining amplitudes. For the first copy Cauchy's vector formula gives
-  the additional factor $\prod_{i\in\mathcal A_r}\varrho_i^{-r_i}$;
-  on the second copy it gives $\prod_{i\in\mathcal A_q}\varrho_i^{-q_i}$.
-  This is Cauchy extraction of two vector coefficients, followed by
-  Cauchy--Schwarz between them, not Cauchy applied to a squared norm.
-  Since $\|w\|_{1/T}\le k\|w\|_\lambda$ and
-  $\|v\|_\lambda\le\|v\|_{1/T}$, the bound for
-  $|Q_{\boldsymbol r,\boldsymbol q}|$ has a further factor $k^2$.
-  Keep $k^2$ explicit. The segment constants on both copies are bounded
-  by a constant to the power $k$.
-  The combined metric factor is $D_{\mathcal A_r}D_{\mathcal A_q}$.
-  Its exponent for color $i$ is the number of positive entries in
-  $(r_i,q_i)$: one for a mean singleton, at most two for a higher color.
+  The vector $\Phi_{\mathcal A}$ is entire in the background amplitudes.
+  On the first copy its coefficient is given by the normalized formula
+  \begin{equation}\label{E:split-vector-cauchy}
+    \begin{split}
+      U_{\boldsymbol r}v
+      ={}&\left(\prod_{i\in\mathcal A_r}\varrho_i^{-r_i}\right)
+      \int_{[0,2\pi]^{\mathcal A_r}}
+      e^{-i\sum_{i\in\mathcal A_r}r_i\theta_i}
+      \Phi_{\mathcal A_r}((\varrho_i e^{i\theta_i})_i)
+      \prod_{i\in\mathcal A_r}\frac{\ud\theta_i}{2\pi}.
+    \end{split}
+  \end{equation}
+  This is precisely the desired coefficient because each cross exponent
+  equals one and every omitted exponent is zero. The normalized angular
+  measure has total mass one. Thus~\eqref{E:interval-cross-vector}
+  bounds $\|U_{\boldsymbol r}v\|_\lambda$ with the additional factor
+  $\prod_{i\in\mathcal A_r}\varrho_i^{-r_i}$, and the identical
+  formula bounds the second copy using $\mathcal A_q,q_i$.
+  No holomorphic formula is applied to a squared norm.
 
-  For any color estimated on circles, the two exponents add to $2k_i$.
-  Since $d_i^2\le12k_iR_\alpha$,
+  \emph{The inner product and all constants.}
+  Since $\lambda=k/T$ and $k\ge1$,
   \[
-    \varrho_i^{-2k_i}
-    \le(CR_\alpha\sigma_i^2h_i^{4-\alpha})^{k_i}
-    k_i^{-(3-\alpha)k_i}
-    \le\frac{(CR_\alpha\sigma_i^2h_i^{4-\alpha})^{k_i}}
-    {(k_i!)^\nu}.
+    \|w\|_{1/T}\le k\|w\|_\lambda,\qquad
+    \|v\|_\lambda\le\|v\|_{1/T}.
   \]
-  The cross colors contribute one factor
-  $R_\alpha\sigma_i^2h_i^2\lambda^{\alpha-2}$ each.
-  The circle colors contribute the displayed radius bound and exactly
-  $\ell_i$ metric factors. Since
-  $|\mathcal C|+\sum_{i\in\mathcal B}k_i=k$,
-  their covariance factors multiply to $R_\alpha^k$.
-  The fixed segment constants and powers of $\delta_{\alpha/2}^{-1}$
-  are absorbed into $C_{\rm split}^k$. This gives
-  \eqref{E:fixed-split-bound}. This proves Lemma~\ref{L:fixed-split}.
+  Cauchy--Schwarz between the two vectors on the same Gaussian space
+  now gives, before any constants are absorbed,
+  \begin{equation}\label{E:split-before-absorption}
+    \begin{split}
+      |\langle U_{\boldsymbol r}v,U_{\boldsymbol q}v
+      \rangle_{\mathcal H_{1/T}}|
+      \le{}&k^2 M_k^2D_{\mathcal A_r}D_{\mathcal A_q}
+      \|v\|_{1/T}^2
+      \prod_{i\in\mathcal B}\varrho_i^{-2k_i}\\
+      &\quad\times\prod_{i\in\mathcal C}
+      (R_\alpha\sigma_i^2h_i^2\lambda^{\alpha-2}).
+    \end{split}
+  \end{equation}
+  The radius exponent is $r_i+q_i=2k_i$. The metric product is exactly
+  \[
+    D_{\mathcal A_r}D_{\mathcal A_q}
+    =\prod_{i\in\mathcal B}(1+k_i/(\lambda h_i))^{\ell_i}.
+  \]
+  In particular, a singleton on only one copy has one ending charge,
+  not two. For every $i\in\mathcal B$, $d_i^2\le12k_iR_\alpha$ gives
+  \begin{equation}\label{E:split-radius-factorial}
+    \begin{split}
+      \varrho_i^{-2k_i}
+      &=\left(\frac{\sigma_i^2d_i^2}{\delta_a^2}\right)^{k_i}
+      \left(\frac{h_i}{k_i}\right)^{(4-\alpha)k_i}\\
+      &\le(12\delta_a^{-2})^{k_i}
+      (R_\alpha\sigma_i^2h_i^{4-\alpha})^{k_i}
+      k_i^{-(3-\alpha)k_i}\\
+      &\le(12\delta_a^{-2})^{k_i}
+      \frac{(R_\alpha\sigma_i^2h_i^{4-\alpha})^{k_i}}
+      {(k_i!)^{3-\alpha}}.
+    \end{split}
+  \end{equation}
+  The last step uses $k_i!\le k_i^{k_i}$.
+  Finally,
+  \[
+    M_k^2=100^{6k+2}e^{8k}\le(100^8e^8)^k,
+    \qquad |\mathcal C|+\sum_{i\in\mathcal B}k_i=k.
+  \]
+  Substituting these inequalities in~\eqref{E:split-before-absorption}
+  proves~\eqref{E:fixed-split-bound} with the explicit admissible choice
+  \begin{equation}\label{E:split-explicit-constant}
+    C_{\rm split}=100^8e^8
+    \max\{1,12\delta_{\alpha/2}^{-2}\}.
+  \end{equation}
+  This constant depends only on $\alpha$. No permutation, Gaussian-mode,
+  inventory-size or further degree factor remains. The projected initial
+  phase has norm at most the displayed original $\|v\|_{1/T}$.
+  This proves Lemma~\ref{L:fixed-split}.
 \end{proof}
 
 \begin{proposition}[Uniform interval coefficients]\label{P:interval-coefficients}
@@ -5590,13 +5783,45 @@ on the empty tuple. This definition introduces no kernel symmetrization.
   Section~5, part (ii), pp.~35--37}. We retain that model identification; we do not
   claim a new proof of the mild equation or of uniqueness.
 
-  Mode and spatial-band limits in the interval phase bound were taken
-  at fixed finite inventory and positive smoothing. Local Hermite cutoffs
-  preserve selected coefficients; no simultaneous degree limit is assumed.
-  The finite-model bound is uniform in the interval depth and all source
-  noise widths. The source's fixed-order limits are taken at fixed
-  covariance, and the geometric tails then control the entire series.
-  Thus, no convergence rate uniform over covariance shapes is needed.
+  \emph{Cutoff dependence and the order of limits.}
+  The preceding argument uses the following distinct statements.
+  \begin{enumerate}[(i)]
+    \item At fixed total order $2k$, the coefficient estimates are uniform
+      in the Gaussian-mode and spatial-band cutoffs, in the finite interval
+      family, and in positive spatial smoothing. The local Hermite cutoff
+      $N_i=2k_i$ preserves each selected coefficient exactly; it is an
+      algebraic choice, not a degree limit. Lemma~\ref{L:fixed-split} and
+      the inventory bound contain no smoothing-dependent variance.
+    \item At fixed finite interval family and $\epsilon>0$, mode and band
+      limits identify these coefficients with the actual Duhamel words.
+      The entire-series majorant in Proposition~\ref{P:interval-coefficients}
+      may depend on this family and $\epsilon$, through $v_{\max}$.
+      It is used for identification, not as a uniform moment estimate.
+      The uniform coefficient bound passes to these limits. Localization
+      and positive covariance comparison are applied only after removing
+      these cutoffs; positivity of a finite-mode covariance is not assumed.
+    \item For the resulting finite-depth interval model, the moment bound
+      is uniform in $J,\epsilon$. Fix positive source widths
+      $\epsilon,\delta$ and finite partial order $N$. The Green-width limit
+      is taken first. The subsequent $J\to\infty$ comparison in
+      \eqref{E:interval-source-comparison} is monotone convergence of finite
+      positive Wick integrals. At these fixed noise widths,
+      $N\to\infty$ is justified by Lemma~\ref{L:terminal-wick}, yielding
+      \eqref{E:regularized-scaled-moment}. There is no infinite-depth
+      Gaussian field or simultaneous mode-depth limit in this step.
+    \item At each fixed $T,x,\Gamma$ and order $n$, the source's
+      Theorem~4.1 gives qualitative $L^2$ convergence as
+      $\epsilon,\delta\downarrow0$, with arbitrary relative rates.
+      The bound $B(T;2)$ gives tails uniform in these two widths.
+      Lemma~\ref{L:uniform-series-tail} first uses their limit at fixed
+      partial order, then sends that order to infinity. The final moment
+      bound comes from $B(T;1)$, not the larger tail bound $B(T;2)$.
+    \item All identifications above are for fixed $T,x,\Gamma$; no
+      convergence rate uniform in $T$ or over covariance shapes is claimed.
+      They prove~\eqref{E:full-upper-bound} for every fixed $T\ge1$ with
+      the same parameter-only constant. Only after this estimate is proved
+      is $T\to\infty$ used for the growth-rate conclusion.
+  \end{enumerate}
   The constants come from $L=78$, $c=6^{\alpha_0}$ and the parameter-only
   constants of Proposition~\ref{P:interval-coefficients}; covariance enters
   only through $R_\alpha$.
@@ -5629,8 +5854,9 @@ on the empty tuple. This definition introduces no kernel symmetrization.
 
 \myCmts{Theorem~\ref{T:full-upper} establishes the unchanged full upper
 goal for every admissible dimension and homogeneous covariance.
-The terminal-kernel and series-tail revision passed scoped independent
-correctness review. A fresh whole-paper cold read remains due.
+The preceding terminal-kernel revision passed scoped correctness review.
+The chronological-word rewrite requested by the next cold reader awaits
+fresh primary and whole-paper review.
 The earlier explicit bounds for $0<\alpha\le1$ remain available.
 The sharp constant and final whole-paper cold read remain open.}
 

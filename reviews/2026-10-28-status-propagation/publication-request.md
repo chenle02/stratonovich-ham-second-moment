@@ -5,8 +5,8 @@ Exact proposed content: proposed-project-page.md.
 Lossless patch: project-page.patch.gz; decompress before applying.
 Base/proposal/patch hashes: preparation.json.
 
-The current proposal records the final82page notes and the original full
-spatial-class upper bound. The terminal/modular deduction passed fresh
+The current proposal records the new86page candidate and the original full
+spatial-class upper bound. The earlier82page terminal/modular deduction passed fresh
 Opus5.5/HIGH review at source65b134243de4ea91cdd4c8e1ca6315975c26979c:
 all15checksPASS,complete15text/14image delivery,no mandatory repairs.
 All6minor findings are adjudicated. Adoption9054ece422489d278833c914b5b73569d2cbbb24
@@ -49,3 +49,8 @@ gzip. Verify compressed/decompressed hashes and the base-page hash before
 applying. The full proposed Markdown is directly readable. This local request
 supersedes the older50/54/56/59/74/78page preparation descriptions;it is not
 a canonical wiki update or a completed round-close provenance loop.
+
+The86page chronological-word rewrite has18required texts/23source images
+and a fresh16check primary contract. It remains CANDIDATE;do not attribute
+the earlier15HIGH verdict to these revised proofs. Exact candidate hashes
+are in reviews/2026-10-29-chronological-word/change-binding.json.

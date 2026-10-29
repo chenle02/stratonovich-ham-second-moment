@@ -35,6 +35,8 @@ Here $L_*=L(\mathcal{E}_*)$ and $L^*=L(\mathcal{E})$ are the constants of [[pape
 
 ## Current state
 
+**2026-10-29 chronological-word revision: CANDIDATE,86pages.** In response to the third cold report,the actual fixed-split proof now displays the common partition,every identity between phase norms,cross-vacuum subspaces,the complete word product,normalized Cauchy integration and an explicit finite constant. The unequal-chain proof and limit trace are clarified. A direct Chen--Hu source-class audit uses the explicit generalized-covariance convention on printedp2152;the coefficient rate is imported from(5.15),not inferred from variational finiteness. All formal statements remain unchanged;five proof bodies are revised. Fresh16check Opus/HIGH review is next,with18required texts and23source-page images. The old15HIGH verdict applies to the earlier source,not this rewrite. Exact candidate source/PDF hashes are in Article reviews/2026-10-29-chronological-word/change-binding.json. All earlier cold reports remain NOT CLEAR;no new sharp,Lean,novelty or circulation claim.
+
 **Round 3: reviewed partial upper bound, 2026-10-27.** Under the original nonnegative homogeneous covariance assumptions, the notes prove
 
 $$
@@ -47,7 +49,7 @@ Claude Opus 5.5 returned **PASS_WITH_NOTES/high**, all twelve checks passed, com
 
 The full upper scale has a written Section13 proof for the original class, including **1 < α < 2−α₀ in d=2,3**. Its earlier versions passed scoped correctness reviews; the current terminal/modular revision passed a fresh fifteen-check primary review after two cold reads raised substantive assembly concerns. A third blind whole-paper read has now returned substantive concerns;see the latest checkpoint below. The sharp constant remains unfinished. Le reactivated the full goal on 2026-10-28 UTC. The private Lean companion is still proposed, not created, pending decision point 4.
 
-**Later higher-exponent candidates, still unaccepted.** The current notes have 82 pages. Sections7/8 contain the Riesz/static interpolation and full admissible planar covariance candidates. Expanded Section9 includes plane-supported endpoints, invertible-linear/finite-positive-sum closure, their actual moment applications and a nonsharp variational limsup bound. Its fresh primary Opus review passed all **17 checks**, with complete source delivery and no required repairs, but returned **medium** confidence; `accepted=false` at the unchanged high threshold. Section7/8 likewise remain below that threshold. No full-goal or scope promotion follows. Expanded assembly: Article `92a3eed518f10cc9797f1660050da8e69dcc644d`; review disposition `67b4211f8822449aa78b6d6d3acd6cdd9327eefe`, `reviews/2026-10-28-endpoint-integration/adjudication.md`. The earlier 50-page Section9 review remains all14PASS/medium at `1f4b1702e135c0e6595f871fde7d0afe750f50ef`.
+**Later higher-exponent candidates, still unaccepted.** The current notes have 86 pages. Sections7/8 contain the Riesz/static interpolation and full admissible planar covariance candidates. Expanded Section9 includes plane-supported endpoints, invertible-linear/finite-positive-sum closure, their actual moment applications and a nonsharp variational limsup bound. Its fresh primary Opus review passed all **17 checks**, with complete source delivery and no required repairs, but returned **medium** confidence; `accepted=false` at the unchanged high threshold. Section7/8 likewise remain below that threshold. No full-goal or scope promotion follows. Expanded assembly: Article `92a3eed518f10cc9797f1660050da8e69dcc644d`; review disposition `67b4211f8822449aa78b6d6d3acd6cdd9327eefe`, `reviews/2026-10-28-endpoint-integration/adjudication.md`. The earlier 50-page Section9 review remains all14PASS/medium at `1f4b1702e135c0e6595f871fde7d0afe750f50ef`.
 
 The upper-bound candidate uses current fixed-order existence and the separate published static coefficient machinery, not the suspect first-moment upper constant. The earlier source/calibration qualification at `52350ee57aa3e4ddfccc78ed92cb3195cd5ee20d` preserved all then-existing 27 proof bodies and 33 formal statements. The expanded assembly adds three statements/proofs and rewrites only the conditional transfer proof; Sections1--8 and the original targets stay byte-identical. The intended first-moment/Jensen calibration remains conditional. Arbitrary higher-exponent d3 covariance is outside those earlier endpoint arguments; no representation or uniformly controlled infinite approximation is asserted there. The different Section13 interval method below covers the original full class.
 
@@ -85,7 +87,7 @@ $$
 
 The constant is explicit and nonsharp. Covariance-only positive mass-one smoothing preserves it; the Green kernels remain unsmoothed. A stronger fractional-power form has the exact threshold $q\ge\alpha-1$ for $\alpha>3/2$ within $1/2<q<1$, and holds for every such $q$ when $\alpha=3/2$. The proof integrates time exactly, bounds the two focal singularities, and uses disk layer cake. Native Opus5.5 returned PASS_WITH_NOTES/high, all nine checks passed, complete delivery verified, no required repairs. Frozen proof and review evidence: Article checkpoint `5107781a7c7f813c277e8f50032659019f4942d5`, directory `reviews/2026-10-28-wc-probe/`.
 
-This is **not a second-moment upper-bound extension**: temporal covariance factors, terminal-vertex cases, repeated merging and the required factorial denominator remain unresolved. No general anisotropic or d=3 extension, sharp constant, novelty, Lean certificate or circulation clearance follows. At that auxiliary checkpoint the canonical notes had 31 pages; they now have 82 pages, with Sections7--9 unpromoted and Sections10--12 accepted only at their separate scoped gates; Section13 has fresh scoped terminal/modular acceptance and still awaits whole-paper cold clearance. The auxiliary weighted proof remains a separate, precisely scoped result.
+This is **not a second-moment upper-bound extension**: temporal covariance factors, terminal-vertex cases, repeated merging and the required factorial denominator remain unresolved. No general anisotropic or d=3 extension, sharp constant, novelty, Lean certificate or circulation clearance follows. At that auxiliary checkpoint the canonical notes had 31 pages; they now have 86 pages, with Sections7--9 unpromoted and Sections10--12 accepted only at their separate scoped gates; Section13 has fresh scoped terminal/modular acceptance and still awaits whole-paper cold clearance. The auxiliary weighted proof remains a separate, precisely scoped result.
 
 G0 historical diagnosis: The full mixed-term expansion and a corrected derivation of the quadratic-exponential bound are written in the notes. The uniform-pairing majorant gave the weaker exponent
 
@@ -135,6 +137,8 @@ Every new proof gets a cross-family adversarial review (Claude Opus 5.5 skeptic 
 
 ## Timeline
 
+- **2026-10-29 — chronological-word candidate:**86pages,explicit word/metric/Cauchy/constant derivation;source-class and unequal-chain/limit repairs written. Fresh primary gate next;previous cold findings are not yet independently cleared.
+
 - **2026-10-28 UTC — third whole-paper cold read:** source `da0864bc4b688ba260ab648f487623b9b2da7928`,994.522s,32tool calls with actual partial source consultation. NOT CLEAR:fixed-split transparency and auxiliary source/limit interfaces remain open. No new mathematical counterexample or circulation clearance is claimed.
 
 - **2026-10-28 UTC — terminal/modular candidate after second cold read:** source `65b134243de4ea91cdd4c8e1ca6315975c26979c`, 82 pages and three new lemmas. Second blind report at `6f2dc0c1a3cab62bc213b29b5d1e368d6b026f0a` remains NOT CLEAR for its source. Revised deduction passed15checks/HIGH with full delivery and no mandatory repairs;fresh whole-paper cold clearance remains due.
@@ -166,7 +170,7 @@ Every new proof gets a cross-family adversarial review (Claude Opus 5.5 skeptic 
 ## Files
 
 - Local folder: `<HOME>/Dropbox/workspace/svn/Article-Stratonovich-HAM-Second-Moment`
-- Main tex: `notes/notes_stratonovich_ham_second_moment.tex` (tracked PDF, 82 pp.; fresh scoped terminal/modular full-upper acceptance;whole-paper cold clearance remains due)
+- Main tex: `notes/notes_stratonovich_ham_second_moment.tex` (tracked PDF, 86 pp.;chronological-word candidate pending fresh primary and whole-paper review)
 - Governance: `AGENTS.md`, `PROJECT-GOAL.md`, `Progress.md` (workflow authority), `CODEX-START.md`
 - Sources: `sources/SOURCE-MANIFEST.md` (hash-pinned author PDF with page pinpoints; SPDEForge TeX copies)
 - Remote: <HUB> bare repository `<REMOTES>/Article-Stratonovich-HAM-Second-Moment.git`

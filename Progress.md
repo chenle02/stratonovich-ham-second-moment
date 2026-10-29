@@ -2310,3 +2310,53 @@ actual/charged ratio is1. This verifies only finite arithmetic instances,
 not a propagator/coefficient/factorial theorem. The unreviewed repair map
 records the exact common-partition product and a candidate explicit constant;
 it is NOT an adopted manuscript proof. Actual analytic rewrite is next.
+
+### 2026-10-29 chronological-word rewrite written; fresh primary gate NEXT
+
+The actual L:fixed-split proof is now rewritten,not merely renamed or
+delegated to another compressed lemma. It gives the common clipped-interval/
+insertion partition;all intermediate phase spaces and identity maps;
+one-ending charging including simultaneous jumps and the final return;
+explicit cross-vacuum tensor subspaces;the chronological operator product;
+the exact insertion-cube measure;normalized vector Cauchy integration;the
+complete pre-absorption bound;and an explicit finite C_split depending
+only on alpha. No spatial operators are commuted and no factorial is hidden
+in a generic constant. All self-pairings and ordinary degrees are retained.
+
+The third-cold auxiliary concerns also have written candidate repairs:
+P:mixed now defines the doubled color map and its finite allowed pairing
+set,keeps all four occurrences of a self-pair color in the doubled chain,
+specifies individual imported limits,and writes the reversal and finite
+uncolored product passage. No multiple-Stratonovich product identity is
+invoked. The main theorem has an explicit five-stage cutoff/limit trace;
+positive comparison occurs after mode/band removal,and no uniform convergence
+rate over T or covariance shapes is claimed. Gamma/Euler and inventory-p/
+moment-p notation are flagged globally.
+
+Direct published-source audit:Chen--Hu p2152 expressly allows generalized
+COVARIANCES and defines their pairing integrals by heat regularization(2.18).
+Standing assumptionsp2145,Theorem1.2p2147,scaling(5.1)p2173 and coefficient
+rate(5.15)p2180 have been checked against pinned PDF/text. Each auxiliary
+static endpoint is required/proved to be nonnegative,PD,tempered and
+homogeneous in the source degree range,with Dalang checked. This is a direct
+source-class application,not an extension derived from Chen2023 finiteness.
+Root audit and nine prepared source-page images are in chronological-word/.
+Alternative candidate sections are not thereby independently promoted.
+
+Current86page build:45proofs,zero errors/undefined/overfull/tabs;formatter
+idempotent. All formal statements including remarks are byte-equal to the
+82page baseline. Exactly five proof bodies changed:P:mixed,L:planar-static-input,
+P:three-transfer,L:fixed-split,T:full-upper. Nine new equation labels make
+the operator count explicit. The34314endpoint cases are retained;fresh
+noncommuting operator/cube checks pass3interval configurations and5inventory
+depths. These are finite falsification diagnostics,not formal certificates.
+
+Fresh16check primary contract and packet are prepared in
+reviews/2026-10-29-chronological-word/:18required texts,23actual source-page
+images,complete revised proofs/prerequisites/consumers,completion contract,
+source-class crosswalk and finite checks. No prior review report is supplied.
+The86page source is CANDIDATE and is not covered by the old15HIGH verdict.
+Fresh supported native doctor passes;committed-byte freeze and launch follow.
+All three older cold reports remain NOT CLEAR for their respective sources.
+The full original upper/sharp goals and spatial class remain unchanged;
+no sharp constant,Lean creation,novelty,human or circulation claim.
