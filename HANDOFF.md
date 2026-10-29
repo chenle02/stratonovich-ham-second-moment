@@ -1,63 +1,96 @@
-Last updated: 2026-10-29 04:33 UTC
+Last updated: 2026-10-29 05:24 UTC
 
 # HANDOFF — Article-Stratonovich-HAM-Second-Moment
 
 ## ⏭ Next session: where to stand and what to do
 
-Collect the NEW chronological-word primary review before changing the proof.
-The actual rewrite and bound packet are frozen at scientific source
-38de33450f6699853a0789e45b1b1f1abdfe74f8;lessons85b6efd. The current86page
-source is CANDIDATE. At this handoff commit no scientific process is live;
-the current run intends to dispatch once next into
-reviews/2026-10-29-chronological-word/opus-v1/ using the same-shell guard.
-If that directory/receipt or active-review-handle.json exists,inspect the
-actual process/session/terminal status and collect that attempt. Do not
-restart because an observation timed out. Hold its ACTUAL launch HEAD until
-terminal collection. No old review is resumed.
+Collect the NEW source-carrier-repaired SCIENTIFIC review,opus-v2,in
+reviews/2026-10-29-chronological-word/. Its packet-v2 is frozen at
+ a8d31d5a3b9f72f07c302ad6342ba5ab1a9ceed1. Mathematics is byte-unchanged
+from38de334. At this handoff commit no process is live;the current run
+intends to launch opus-v2 once after the same-shell frozen-byte and
+check-carrier-preparation.py guards. If opus-v2/receipt.json or
+active-review-handle-v2.json exists,inspect the actual current process/
+terminal state and collect that attempt. Never restart an observation timeout.
+Hold its ACTUAL launch HEAD until terminal collection.
 
-All third-cold substantive findings have WRITTEN CANDIDATE repairs:the common
-partition,each phase identity,fresh cross-vacuum subspaces,actual word norm,
-normalized Cauchy integral and explicit C_split;the unequal-chain coloring
-and reversal;direct static-source class pinpoints;the five-stage limit trace.
-No formal statement,original spatial class,exponent or target was changed.
-The earlier15HIGH and all three NOT CLEAR cold reports remain historical;
-they do not certify this rewrite. Fresh16check Opus5.5/HIGH is next,then a
-fresh prior-blind DeepSeek whole-paper read after actual adjudication.
+Do NOT accept or resume opus-v1. It returned16PASS/HIGH,no mathematical
+repairs,in715.188s,but accepted=false/coverage_verified=false:one source PNG
+was re-encoded by native Read to JPEG. All18texts and22of23images were exact.
+The report is complete and preserved;this was not an unread-file error.
 
-Full original goal ACTIVE. Sharp constant OPEN. No new sharp proof wave,
-private Lean creation,novelty or circulation clearance. Decision4 remains.
+Carrier repair is REAL and calibrated:two overlapping direct-PDF PNG windows
+cover all of printed2145,and the complete final24image cohort was delivered
+byte-for-byte in a separate82.767s carrier-only run. That run's prose preamble
+was format-rejected (invalid-report/accepted=false),preserved verbatim.
+Its official image ledger is complete;it is preparation evidence,not a
+scientific vote or report-format acceptance. The new scientific review must
+independently pass ALL19texts/24images and the unchanged HIGH threshold.
+
+The86page proof remains CANDIDATE. All three older cold reads remain NOT
+CLEAR. Only after actual new primary adjudication may cold-v4 be finalized
+and dispatched. Full original goal ACTIVE;sharp OPEN,Lean decision4 pending.
 
 ## Pre-flight checks
 
-[held back: AI account details]
+1. Read Progress.md and PROJECT-GOAL.md. Scientific proof freeze38de334,
+   original failure10397ae and repaired packet a8d31d5 are pushed/synchronized.
+2. Current86pages,45proofs;clean/idempotent build;all formal statements
+   unchanged. TeX SHA2566826aab7bbdd57948813e419878be0478e13b297ff5580e6c31ed8ccd86a8c99;
+   PDF SHA2569a1e028579b36b649f7afde4aab36a8156557df48ccfb6cd35f0b6ed47835474.
+3. T:full-upper13.8 is page81;fixed-split13.4 page72;coefficient13.5 page76;
+   terminal13.6 page79;tail13.7 page80. No .tex/PDF change during carrier repair.
+4. Opus-v1 source dcbed86,16PASS/HIGH,overall UNACCEPTED. All7minor findings
+   adjudicated.118native/dry-run files archived/read-back hash verified;own
+   terminal raw removed. Do not poll old session18651 or resume it.
+5. Carrier-only source10397ae:all24PNG bytes delivered,official ledger true;
+   format-invalid advisory and all qualifications retained.39native members
+   archived/read-back verified;own raw removed. Old session19233 terminal.
+   This is not mathematical acceptance. No parser/version/threshold changed.
+6. packet-v2 has the same mathematical files as v1;only two metadata maps,
+   one page replaced by two overlapping crops,and carrier provenance change.
+   input-carrier-delta-v2.json records actual equality.19texts/24images.
+7. Before actual science launch,run check-carrier-preparation.py on required-v2
+   and the bound carrier receipt/ledger. It passes final24and refuses actual
+   old23plan. This checks PREPARATION only;actual scientific coverage still
+   must pass. Run committed-member guard in the SAME fail-fast launch shell.
+8. Fresh doctor/picker:authorized account <account removed>,first-party <plan removed>,supported
+   Claude2.1.304,model5.5/effortHIGH. Launch-local PATH only;no global setup.
+   Bare JSON is now explicitly requested;actual output still needs checking.
+9. Core proof/covariance class/target unchanged;source-class/unequal-chain/
+   limit repairs are candidates until the new scientific gate. Main moment
+   limit uses fixed-order Th4.1+geometric tails;known mild identification is
+   separately imported,not re-proved or claimed unique.
 
 ## Concrete deliverables for the next session
 
-- Collect the actual new primary report;verify model/route,input/HEAD
-  stability,native text/image delivery,report and ledger hashes. Adjudicate
-  every finding. A quota error,missing report or medium confidence does not
-  satisfy the unchanged HIGH gate. Do not retry unchanged for a label.
-- If required,repair and review the real changed argument. After primary
-  adjudication,get a fresh prior-blind DeepSeek full-paper read. Do not let
-  older HIGH reports waive a new reader's substantive confusion.
-- Preserve terminal raw evidence and read-back member hashes before cleanup.
-  Record actual source consultation separately from provided sources.
-- The source-class and unequal-chain candidates must be audited explicitly;
-  neither Chen2023 finiteness nor an assumed product rule is the rate proof.
-  Alternative candidate sections are not independently promoted wholesale.
-- Reconcile the PRIVATE wiki proposal to the actual outcome. It currently
-  says86page CANDIDATE. Canonical wiki/notification boundary remains open;
-  no direct six-repo write or automatic notification is authorized here.
-- Sharp tilt screen and lower-source recon remain planning/retrieval only.
-  Lean stays L0/PROPOSED,no package/lease/code/build without decision4.
+- Collect opus-v2 actual report and native ledger;verify route,source/input
+  stability and every required text/image. Retain exact verdict/confidence.
+  A full HIGH scientific report with failed delivery remains unaccepted.
+- Adjudicate every actual finding. Originalv1minor4 suggested a short
+  polydisc-Cauchy justification of coefficientwise absolute energy convergence;
+  it is planned for the final minor pass,not silently added to this unchanged
+  source-carrier repair. Other optional tightening/renaming is not required.
+- If the new primary passes,regenerate cold-v4 from final canonical bytes.
+  Provisional85page blind copy/scripts/live-route probe are OWN UNTRACKED WIP
+  in reviews/2026-10-29-full-upper-cold-v4/. All45proofs and all formal types,
+  including conjectures/definitions,are checked. It has NOT been scientifically
+  dispatched or finalized;do not launch before actual primary adjudication.
+- Preserve and archive each terminal attempt before own cleanup. Keep
+  calibration advisory invalid-report separate from its successful byte
+  observation. Never relabel old receipts or combine failed gates informally.
+- PRIVATE wiki proposal is current86candidate/unaccepted16HIGH plus carrier
+  evidence. Canonical wiki/notification boundary remains open;no publication.
+- Full sharp target remains open;no new sharp wave. Lean L0/PROPOSED;
+  no package,lease,code or build without explicit decision4approval.
 
 ## Success criteria for the immediate next step
 
-The actual86page chronological rewrite receives a source-bound independent
-primary verdict with full required delivery and every finding adjudicated.
-If it passes the unchanged HIGH gate,it still needs a fresh full-paper cold
-read. The original full upper/sharp targets and covariance class stay intact;
-no goal-completion,novelty,formal or circulation claim follows.
+The new immutable source-repaired input receives its OWN complete native
+scientific verdict/delivery record. The unchanged HIGH gate passes only if
+that actual report and every required source meet it. Carrier preparation
+never substitutes for scientific acceptance. Fresh whole-paper cold review
+still follows;the full goal is not complete.
 
 ## Anti-success criteria
 
@@ -303,20 +336,33 @@ Latest checkpoints:
   dependence,normalized coefficients,explicit covariance-source class and
   uniform estimates versus qualitative identification retained durably.
 
+- 2026-10-29 v1source dcbed86:16PASS/HIGH,715.188s,no mandatory math repairs,
+  but accepted=false/coverage=false. Native Read of chen-hu-2145.png returned
+  JPEG;all18texts/22other images exact.118raw members archived/hash verified.
+  Failure/adjudication10397ae retains all7minor findings and the transformed
+  image witness;no resume,receipt edit or confidence/coverage weakening.
+- 2026-10-29 carrier run82.767s:two full-coverage1080x870windows with140overlap,
+  all24final PNGs delivered exactly. Prose preamble makes advisory invalid-report;
+  failure kept,not a science vote.39raw members archived/verified. Preparation
+  guard passes repaired cohort and refuses actual unrepaired23image plan.
+- 2026-10-29 repaired-input freeze a8d31d5:all mathematical source bytes and
+ 86page PDF unchanged;new19text/24image packet and bare-JSON16check contract.
+  Fresh scientific review NEXT. Provisional85page cold-v4 and actual5.975s
+  DeepSeekV4-Pro isolated access probe are prepared,not a scientific review.
+
 ## Repo & git state at handoff
 
-- master;pre-handoff HEAD85b6efd6903f4d8bb9b3e81e8eb729a9370a2ec8,
-  scientific freeze38de33450f6699853a0789e45b1b1f1abdfe74f8. Both pushed
-  and <HUB>-synchronized. Only HANDOFF.md in this dedicated commit.
-- Current source/PDF86pages,45proofs,CANDIDATE. Exact current binding in
-  chronological-word/change-binding.json;all formal statements unchanged.
-- No scientific/build/cluster process is live at this handoff commit. The
-  current run intends to launch the new primary next. Subsequent native
-  artifacts/active-review-handle.json are OWN WIP outside the frozen packet;
-  inspect actual process/terminal evidence before acting.
-- All older native processes are terminal and their evidence archived.
-  No source PDF,All.bib,sibling Article or canonical shared-wiki edits.
-  No private Lean package;PRIVATE wiki proposal remains unpublished.
+- master;pre-handoff HEADa8d31d5a3b9f72f07c302ad6342ba5ab1a9ceed1,
+  pushed/<HUB>-synchronized. Only HANDOFF.md in this dedicated commit.
+- Mathematics/PDF unchanged86pages from38de334. packet-v2 frozen50members,
+ 19required texts/24images. Its canonical.tex/pdf equal the actual notes.
+- No process live at this handoff commit;current run will launch opus-v2 next.
+  Subsequent native/dry-run outputs and active-review-handle-v2.json are own
+  metadata WIP outside the frozen packet. Inspect actual process status.
+- OWN untracked cold-v4 provisional work is preserved by exact path above.
+  All old scientific/calibration processes terminal and archives verified.
+- No source PDF,All.bib,sibling Article,canonical wiki or system config edits.
+  No private Lean companion;wiki proposal remains unpublished.
 
 ## Operating notes
 
@@ -357,8 +403,8 @@ was previously placed on <MACHINE> tag4;no persistent display setup was changed.
 
 ## Risks to monitor
 
-1. Current86page chronological rewrite is CANDIDATE;fresh primary and cold
-   gates remain open. All three earlier cold reports remain NOT CLEAR.
+1. Current86page chronology is CANDIDATE. v1math16HIGH is UNACCEPTED due
+   one PNG/JPEG mismatch;new source-repaired science and cold gates are open.
 2. Full sharp p2 constant remains open;upper constant is nonsharp.
 3. Source E_star/E printed normalization conflict has no adopted repair.
 4. Full covariance class must not be replaced with a Riesz/angular subclass.
