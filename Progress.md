@@ -2490,3 +2490,28 @@ only own raw cleanup. No live review. Full upper/sharp goal remains ACTIVE.
 Sharp constants,Lean approval,wiki publication,novelty/circulation remain open.
 Durable lesson:separate parameter choices explicitly;replace informal cutoff
 preservation by a prefix-degree proof. Finite tests/old votes replace neither.
+
+
+### Explicit finite-word and source-interface candidate ready for review
+
+The88page repair adds L:finite-word-cutoff with a complete prefix-degree
+induction,retaining raising and lowering. Six existing proof bodies change
+relative to27e9746;every prior formal statement remains byte-equal. Applications
+cover static Duhamel words,the two local degree cutoffs,and fresh cross colours
+with the bounded background space as an arbitrary Hilbert factor. The fresh
+insertion now displays first-chaos orthogonality and its exact tensor norm.
+P:mixed displays the colour covariance matrix,compatible fixed-diagram integral
+and all three four-vertex pairings. L:interval-complex gives all four ordered
+root comparisons via the adjoint integral plus separate parameter choices.
+Metric substitution expands the entire positive-power polynomial and enlarges
+L to>=1,with the already allowed dependence of the constant. Source-consumer
+paragraph distinguishes fixed-order construction,mild identification,auxiliary
+imports and quoted-only constants. No original upper/sharp scope change.
+
+Clean88page build,46proofs,0errors/undefined/overfull/tabs;formatter idempotent.
+Exact source/PDF/change map in explicit-justifications/change-binding.json.
+Fresh17check primary/HIGH contract,23required texts and the same calibrated
+24PNGimages;full Section4 extraction is now required for dependency checking.
+Carrier-preparation guard passes exact cohort,but is not a science verdict.
+Actual supported native doctor passes. CANDIDATE only;fresh primary and cold
+remain required. No reviewer report or source-normalization repair is supplied.

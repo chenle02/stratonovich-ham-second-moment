@@ -1,0 +1,819 @@
+\section{A static phase estimate at first variance order}
+\label{S:static-phase}
+
+A time-block argument would have to carry both position and velocity.
+We establish a uniform estimate for the first variance coefficient with
+arbitrary deterministic initial phase. The covariance may be any member
+of the original three-dimensional class; no endpoint representation is
+assumed. The estimate below is not an all-order propagator bound.
+
+\myCmts{The static contraction and first-variance phase estimates
+passed a scoped independent review.
+The full general-covariance moment goal and the preceding candidate
+moment arguments retain their stated status.}
+
+Let $0<\alpha<2$, and let $\Gamma$ be a nonnegative, even,
+positive-definite tempered Radon covariance on $\R^3$, satisfying
+$\Gamma(rA)=r^{3-\alpha}\Gamma(A)$. Its spectral convention is
+$\Gamma=\int e^{i\xi\cdot x}\mu(\ud\xi)$. Put
+\begin{equation}\label{E:phase-constants}
+  \begin{split}
+    V&=\mu(B_1),\qquad M=\Gamma(B_1),\qquad
+    R_\alpha=\frac{\alpha\pi V}{2\sin(\pi\alpha/2)},\\
+    c_\Gamma&=\frac{(3-\alpha)M}{4\pi},\qquad
+    b_\alpha=2^\alpha+\frac{3^{2-\alpha}}{2-\alpha},\qquad
+    D_\Gamma=c_\Gamma b_\alpha.
+  \end{split}
+\end{equation}
+Here $B_1$ is the open unit ball in the relevant variable.
+The physical mass $M$ and the spectral mass $V$ are not identified.
+Let $p_\epsilon$ be the Brownian Gaussian density with covariance
+$\epsilon I$, and set
+$\Gamma_\epsilon=p_{2\epsilon}*\Gamma$.
+
+\begin{lemma}[Two static contraction bounds]\label{L:phase-contractions}
+  For $\lambda>0$, $q\in\R^3$, $a>0$, and $\epsilon>0$,
+  \begin{align}
+    \int_{\R^3}\frac{\mu(\ud\xi)}{\lambda^2+|q+\xi|^2}
+    &\le R_\alpha\lambda^{\alpha-2},
+    \label{E:phase-resolvent}\\
+    \left|T_\epsilon(a,q)\right|
+    &\le D_\Gamma a^{1-\alpha},
+    \label{E:phase-trace}\\
+    T_\epsilon(a,q)
+    &:=\int_{\R^3}e^{iq\cdot x}\Gamma_\epsilon(x)G_a(\ud x)
+    =\int_{\R^3}\widehat G_a(q+\xi)e^{-\epsilon|\xi|^2}
+    \mu(\ud\xi).\nonumber
+  \end{align}
+\end{lemma}
+
+\begin{proof}
+  Homogeneity and Fourier uniqueness give
+  $\mu(B_r)=Vr^\alpha$. In particular, there is no origin atom.
+  For $s>0$, Schwartz Fourier pairing yields
+  \[
+    \int e^{-s|q+\xi|^2}\mu(\ud\xi)
+    =\int p_{2s}(x)e^{iq\cdot x}\Gamma(\ud x)
+    \le\int p_{2s}(x)\Gamma(\ud x)
+    =\int e^{-s|\xi|^2}\mu(\ud\xi).
+  \]
+  The integrals are finite. Evenness makes the middle integral real,
+  and nonnegativity of $\Gamma$ gives the inequality. Multiply by
+  $e^{-\lambda^2s}$ and integrate in $s$. Nonnegative Tonelli on
+  the spectral side gives the resolvent comparison. At $q=0$ its
+  value is
+  \[
+    \alpha V\int_0^\infty\frac{r^{\alpha-1}}{\lambda^2+r^2}\ud r
+    =R_\alpha\lambda^{\alpha-2}.
+  \]
+  This proves~\eqref{E:phase-resolvent}.
+
+  Since $\mu$ is tempered, its Gaussian weighting is finite. Fourier
+  Fubini therefore gives the identity for $T_\epsilon$. The measure
+  $\Gamma_\epsilon(x)G_a(\ud x)$ is finite and nonnegative, whence
+  $|T_\epsilon(a,q)|\le T_\epsilon(a,0)$.
+  The radial distribution function of $\Gamma$ is
+  $\Gamma(B_r)=Mr^{3-\alpha}$. Thus, for every nonnegative radial
+  Schwartz function $F$,
+  \[
+    \int F(x)\Gamma(\ud x)
+    =(3-\alpha)M\int_0^\infty F(r)r^{2-\alpha}\ud r
+    =c_\Gamma\int_{\R^3}F(x)|x|^{-\alpha}\ud x.
+  \]
+  Apply this to $F=G_a*p_{2\epsilon}$, which is radial and Schwartz.
+  Nonnegative Fubini gives
+  \[
+    T_\epsilon(a,0)
+    =c_\Gamma[p_{2\epsilon}*(G_a*|\cdot|^{-\alpha})](0)
+    \le c_\Gamma\sup_z(G_a*|\cdot|^{-\alpha})(z).
+  \]
+  Write $r=|z|$. The spherical wave measure has mass $a$, and direct
+  integration over its normal coordinate gives, for $r>0$,
+  \[
+    (G_a*|\cdot|^{-\alpha})(z)
+    =\frac{(a+r)^{2-\alpha}-|a-r|^{2-\alpha}}
+    {2r(2-\alpha)}.
+  \]
+  For $r<a/2$, distances from $z$ to the sphere are at least $a/2$,
+  giving the bound $2^\alpha a^{1-\alpha}$. For $r>2a$, they are
+  at least $a$, giving $a^{1-\alpha}$. On $a/2\le r\le2a$, the
+  displayed formula is at most
+  $3^{2-\alpha}a^{1-\alpha}/(2-\alpha)$. These bounds also cover
+  the endpoints by continuity and give~\eqref{E:phase-trace}.
+  This proves Lemma~\ref{L:phase-contractions}.
+\end{proof}
+
+Let $A_\lambda=\lambda^2-\Delta$, and equip deterministic phase pairs
+with the norm
+\begin{equation}\label{E:phase-norm}
+  \|(f,g)\|_\lambda^2
+  =\|f\|_2^2+\|A_\lambda^{-1/2}g\|_2^2.
+\end{equation}
+Let $C_t$ be the Fourier multiplier $\cos(t|\xi|)$.
+On one static isonormal Gaussian space with covariance $\Gamma$, use
+$W_\epsilon(x)=W(p_\epsilon(x-\cdot))$. Its covariance is exactly
+$\Gamma_\epsilon(x-y)$, with spectral measure
+$\mu_\epsilon(\ud\xi)=e^{-\epsilon|\xi|^2}\mu(\ud\xi)$.
+For real Schwartz $f,g$, define the free position
+$w_0(t)=C_tf+G_t*g$ and its phase $Z_0(t)=(w_0(t),\dot w_0(t))$.
+The next two regularized static Duhamel phases are
+\begin{equation}\label{E:phase-duhamel}
+  Z_{j+1}(t)
+  =\int_0^t
+  \begin{pmatrix}
+    G_{t-s}*(W_\epsilon Z_{j,u}(s))\\
+    C_{t-s}(W_\epsilon Z_{j,u}(s))
+  \end{pmatrix}\ud s,\qquad j=0,1,
+\end{equation}
+where $Z_{j,u}$ is the position component. At fixed $\epsilon>0$
+these are Gaussian-polynomial Bochner integrals in the indicated
+$L^2$ phase space.
+
+\begin{proposition}[First variance estimate for arbitrary phase]
+  \label{P:static-phase-variance}
+  Let $N=\|(f,g)\|_\lambda$. Uniformly in $\epsilon>0$,
+  \begin{align}
+    \E\|Z_1(h)\|_\lambda^2
+    &\le R_\alpha h^2\lambda^{\alpha-2}
+    (1+\lambda^2h^2)^2N^2,\label{E:phase-born}\\
+    \|\E Z_2(h)\|_\lambda
+    &\le\frac{D_\Gamma(1+\lambda^2h^2)h^{3-\alpha}}
+    {\lambda(2-\alpha)(3-\alpha)}N.
+    \label{E:phase-mean}
+  \end{align}
+  In particular, put $\lambda=h^{-1}$ and let $K_\epsilon$ be the
+  coefficient of $\sigma^2$ in the finite polynomial
+  $\E\|Z_0(h)+\sigma Z_1(h)+\sigma^2Z_2(h)\|_\lambda^2$.
+  Then
+  \begin{equation}\label{E:phase-variance}
+    |K_\epsilon|
+    \le\left(4R_\alpha+
+    \frac{4\sqrt e\,D_\Gamma}{(2-\alpha)(3-\alpha)}\right)
+    h^{4-\alpha}\|(f,g)\|_{1/h}^2.
+  \end{equation}
+\end{proposition}
+
+\begin{proof}
+  We use the unnormalized spatial Fourier transform and Plancherel
+  measure $(2\pi)^{-3}\ud\eta$.
+  At fixed positive smoothing, Gaussian second and fourth moments
+  make~\eqref{E:phase-duhamel} integrable: $G_t$ has finite positive
+  mass, $C_t$ is an $L^2$ contraction, and
+  $\E|W_\epsilon(x)W_\epsilon(y)|^2
+  \le3\Gamma_\epsilon(0)^2$.
+  These facts, Minkowski and time integration justify the Gaussian
+  and Fourier Fubini steps below first for Schwartz data.
+
+  Set $a_s(\eta)=\widehat w_0(s,\eta)$ and
+  \[
+    e_\lambda(\eta)=|\widehat f(\eta)|^2+
+    \frac{|\widehat g(\eta)|^2}{\lambda^2+|\eta|^2}.
+  \]
+  Cauchy--Schwarz on the two initial coordinates gives
+  \[
+    |a_s(\eta)|^2\le(1+\lambda^2s^2)e_\lambda(\eta),
+  \]
+  because the squared norm of their coefficient vector is
+  $\cos^2(sq)+(1+\lambda^2/q^2)\sin^2(sq)
+  \le1+\lambda^2s^2$, with the continuous value at $q=0$.
+  For the two-component output multiplier put
+  \[
+    k_\tau(r)=\left(\frac{\sin(\tau r)}r,
+    \frac{\cos(\tau r)}{\sqrt{\lambda^2+r^2}}\right).
+  \]
+  Its Euclidean squared norm is
+  \[
+    |k_\tau(r)|^2
+    =\frac{1+\lambda^2\sin^2(\tau r)/r^2}{\lambda^2+r^2}
+    \le\frac{1+\lambda^2h^2}{\lambda^2+r^2},\qquad 0\le\tau\le h.
+  \]
+  Expanding the covariance of the two copies of $W_\epsilon$,
+  followed by spatial Plancherel, gives exactly
+  \[
+    \E\|Z_1(h)\|_\lambda^2
+    =\frac1{(2\pi)^3}\int\ud\eta\int\mu_\epsilon(\ud\xi)
+    \left|\int_0^h k_{h-s}(|\eta+\xi|)a_s(\eta)\ud s\right|^2.
+  \]
+  Cauchy--Schwarz in time bounds the last squared norm by
+  \[
+    \frac{h^2(1+\lambda^2h^2)^2}
+    {\lambda^2+|\eta+\xi|^2}e_\lambda(\eta).
+  \]
+  Now $\mu_\epsilon\le\mu$ and
+  Lemma~\ref{L:phase-contractions} give~\eqref{E:phase-born}.
+
+  The contraction inside the mean of $Z_2$ is the convolution
+  operator with kernel $G_{s-r}(\ud x)\Gamma_\epsilon(x)$.
+  Indeed, this follows directly from
+  $\E[W_\epsilon(x)W_\epsilon(y)]=\Gamma_\epsilon(x-y)$
+  in the two Duhamel integrals. Its Fourier multiplier is
+  $T_\epsilon(s-r,\eta)$, up to the immaterial even sign.
+  Its $L^2$ operator norm is therefore at most
+  $D_\Gamma(s-r)^{1-\alpha}$.
+  Under the isometry $(u,v)\mapsto(u,A_\lambda^{-1/2}v)$,
+  $\|k_\tau(|D|)\|_{L^2\to L^2\oplus L^2}
+  \le\sqrt{1+\lambda^2h^2}/\lambda$ and
+  $\|w_0(r)\|_2\le\sqrt{1+\lambda^2h^2}N$.
+  Minkowski and
+  \[
+    \int_0^h\ud s\int_0^s(s-r)^{1-\alpha}\ud r
+    =\frac{h^{3-\alpha}}{(2-\alpha)(3-\alpha)}
+  \]
+  prove~\eqref{E:phase-mean}.
+
+  Finally, the free phase obeys
+  $\|Z_0(h)\|_\lambda\le e^{\lambda h/2}N$.
+  To see this, for Schwartz free data differentiate its squared norm.
+  The $-\Delta$ terms cancel, leaving
+  $2\lambda^2\operatorname{Re}\langle A_\lambda^{-1}\dot w_0,w_0\rangle$,
+  whose absolute value is at most $\lambda\|Z_0\|_\lambda^2$.
+  Gronwall gives the stated bound. The required coefficient is exactly
+  \[
+    K_\epsilon=\E\|Z_1(h)\|_\lambda^2+
+    2\operatorname{Re}\langle Z_0(h),\E Z_2(h)\rangle_\lambda.
+  \]
+  Substituting $\lambda=h^{-1}$ into the two estimates proves
+  \eqref{E:phase-variance}. This proves
+  Proposition~\ref{P:static-phase-variance}.
+\end{proof}
+
+The second term in $K_\epsilon$ must be retained; neither its sign nor
+monotonicity of the full phase energy in covariance is assumed. The estimates
+control both terms at this one variance order. They do not control higher
+Gaussian contractions, products of independent time blocks, overlapping
+noise levels or the temporal regularization limit. Thus they do not yet
+establish Goal~\ref{G:upper}.
+
+\section{All static orders with arbitrary initial phase}
+\label{S:static-all-orders}
+
+We now seek all static Duhamel orders, retaining the full spatial
+covariance class of Section~\ref{S:static-phase}. The temporal
+covariance is not included in this section.
+\myCmts{The expanded operator argument passed renewed scoped correctness
+review. Static estimates alone do not identify the evolution for
+overlapping intervals; that step is treated in the next section.}
+
+We use one external operator theorem. From Crouzeix--Palencia
+\cite{crouzeix.palencia:source2017:numerical}*{author preprint v1,
+(3), p.~1, and Theorem~6, pp.~5--6}, if $T$ is a bounded operator on a
+complex Hilbert space and $F$ is holomorphic on a neighborhood of
+$\overline{W(T)}$, then
+\begin{equation}\label{E:cp-input}
+  \|F(T)\|\le(1+\sqrt2)\sup_{w\in W(T)}|F(w)|,\qquad
+  W(T)=\{\langle Tu,u\rangle:\|u\|=1\}.
+\end{equation}
+The theorem is imported, not proved here. All operators to which we
+apply it below are bounded; no unbounded-operator extension is assumed.
+
+\begin{lemma}[A complex phase bound]\label{L:complex-phase}
+  Let $H$ be a complex Hilbert space, $A_0$ a bounded nonnegative
+  selfadjoint operator, and $B$ a bounded selfadjoint operator.
+  Write $A_\rho=\rho^2+A_0$. Suppose that, for $0<a<1$ and $d>0$,
+  \begin{equation}\label{E:abstract-sandwich}
+    \|A_\rho^{-1/2}BA_\rho^{-1/2}\|\le d\rho^{a-2},
+    \qquad \rho>0.
+  \end{equation}
+  Put
+  \[
+    I_a=\int_0^\infty s^{-1/2}(1+s)^{(a-3)/2}\ud s,\qquad
+    \delta_a=\min\{1/4,\pi/(8I_a)\}.
+  \]
+  For $\lambda>0$ and $|z|\le\delta_a\lambda^{2-a}/d$, let
+  $L=A_0-zB$. The phase propagator of $u''+Lu=0$ satisfies
+  \begin{equation}\label{E:complex-phase-bound}
+    \|\mathcal M_z(h)\|_{X_\lambda\to X_\lambda}
+    \le100e^{2\lambda h},\qquad
+    \|(f,g)\|_{X_\lambda}^2
+    =\|f\|^2+\|A_\lambda^{-1/2}g\|^2,\quad h\ge0.
+  \end{equation}
+  The constant is independent of $H$, $\|A_0\|$ and $\|B\|$.
+\end{lemma}
+
+\begin{proof}
+  Set $\delta=\delta_a$ and $L_\lambda=L+\lambda^2$.
+  For $\kappa=(\lambda^2+t)^{1/2}$,
+  \[
+    L_\lambda+t
+    =A_\kappa^{1/2}(1-zK_\kappa)A_\kappa^{1/2},\qquad
+    K_\kappa=A_\kappa^{-1/2}BA_\kappa^{-1/2}.
+  \]
+  Since $a-2<0$, $\|zK_\kappa\|\le\delta$. Thus these operators are
+  invertible and
+  \[
+    \|A_\kappa^{1/2}(L_\lambda+t)^{-1}\|
+    \le\frac1{(1-\delta)\kappa}.
+  \]
+  Also $\operatorname{Re}\langle L_\lambda u,u\rangle
+  \ge(1-\delta)\langle A_\lambda u,u\rangle$.
+
+  Principal inverse square roots are defined on the right half-plane.
+  The scalar identity
+  $w^{-1/2}=\pi^{-1}\int_0^\infty t^{-1/2}(w+t)^{-1}\ud t$,
+  and bounded holomorphic calculus, give
+  \[
+    Q_z-1
+    =\frac1\pi\int_0^\infty t^{-1/2}A_\lambda^{1/2}
+    \big[(L_\lambda+t)^{-1}-(A_\lambda+t)^{-1}\big]\ud t,
+    \qquad Q_z=A_\lambda^{1/2}L_\lambda^{-1/2}.
+  \]
+  The integrals converge in operator norm. Indeed, the resolvent
+  identity, $\|A_\lambda^{1/2}A_\kappa^{-1/2}\|\le1$, and the
+  following ordered factorization give the required integrand bound:
+  \[
+    \begin{split}
+      &A_\lambda^{1/2}
+      \big[(L_\lambda+t)^{-1}-A_\kappa^{-1}\big]\\
+      &\qquad=A_\lambda^{1/2}A_\kappa^{-1/2}
+      (1-zK_\kappa)^{-1}zK_\kappa A_\kappa^{-1/2}.
+    \end{split}
+  \]
+  The four factors have norms at most $1$, $(1-\delta)^{-1}$,
+  $|z|d\kappa^{a-2}$ and $\kappa^{-1}$, respectively.
+  Thus, the integrand without $t^{-1/2}/\pi$ is bounded by
+  \[
+    \frac{|z|d}{1-\delta}\kappa^{a-3}.
+  \]
+  Consequently,
+  \[
+    \|Q_z-1\|
+    \le\frac{|z|d\lambda^{a-2}I_a}{\pi(1-\delta)}
+    \le\frac16.
+  \]
+  In particular, $Q_z$ and $Q_z^{-1}$ have norm at most two.
+  Apply the same argument to $L^*=A_0-\overline zB$ and take adjoints.
+  It follows that all four operators
+  \begin{equation}\label{E:phase-root-comparisons}
+    A_\lambda^{1/2}L_\lambda^{-1/2},\quad
+    L_\lambda^{-1/2}A_\lambda^{1/2},\quad
+    L_\lambda^{1/2}A_\lambda^{-1/2},\quad
+    A_\lambda^{-1/2}L_\lambda^{1/2}
+  \end{equation}
+  have norm at most two. This is a quantitative comparison at the
+  bounded cutoffs, not an assumed square-root domain identity.
+
+  We next control the numerical range. For $\|u\|=1$ put
+  $s=\|A_0^{1/2}u\|$. Optimizing~\eqref{E:abstract-sandwich} at
+  $\rho=s$ gives $|\langle Bu,u\rangle|\le2ds^a$.
+  If $s=0$, the same conclusion follows by letting $\rho\downarrow0$.
+  Separately, evaluating~\eqref{E:abstract-sandwich} at $\rho=\lambda$
+  gives
+  \[
+    |\langle Bu,u\rangle|
+    \le d\lambda^{a-2}(s^2+\lambda^2),\qquad
+    |z\langle Bu,u\rangle|\le\delta(s^2+\lambda^2).
+  \]
+  This is the estimate for the real part; the optimized estimate controls
+  the imaginary part. Thus, for $w=x+iy=\langle Lu,u\rangle$,
+  \[
+    x+\lambda^2\ge(1-\delta)(s^2+\lambda^2),\qquad
+    |y|\le2\delta\lambda^{2-a}s^a.
+  \]
+  Since $s^{2a}\lambda^{2-2a}\le s^2+\lambda^2$,
+  \[
+    y^2\le\frac{4\delta^2}{1-\delta}\lambda^2(x+\lambda^2)
+    \le\frac13\lambda^2(x+\lambda^2),\qquad
+    x\ge-\lambda^2/4.
+  \]
+  Hence $|w|\le x+2\lambda^2$, and either square root of $w$ has
+  $|\operatorname{Im}\sqrt w|\le\lambda$.
+
+  The scalar functions
+  \[
+    C_h(w)=\cos(h\sqrt w),\qquad
+    F_h(w)=\sqrt{w+\lambda^2}\frac{\sin(h\sqrt w)}{\sqrt w},\qquad
+    H_h(w)=\frac{w}{\sqrt{w+\lambda^2}}
+    \frac{\sin(h\sqrt w)}{\sqrt w}
+  \]
+  are holomorphic on a neighborhood of $\overline{W(L)}$.
+  The values at $w=0$ are removable; the only square-root branch
+  required is that of $w+\lambda^2$, whose real part is positive.
+  On the numerical range,
+  \[
+    |C_h(w)|\le e^{\lambda h},\qquad
+    |F_h(w)|\le2(1+\lambda h)e^{\lambda h},\qquad
+    |H_h(w)|\le2e^{\lambda h}.
+  \]
+  Indeed, $|\operatorname{Im}\sqrt w|\le\lambda$ gives
+  $|\cos(h\sqrt w)|,|\sin(h\sqrt w)|\le e^{\lambda h}$.
+  The entire identity
+  $\sin(h\sqrt w)/\sqrt w=\int_0^h\cos(r\sqrt w)\ud r$
+  also gives the bound $he^{\lambda h}$, including $w=0$.
+  If $|w|\le\lambda^2/2$, then
+  \[
+    |F_h(w)|\le\sqrt{3/2}\,\lambda h e^{\lambda h}.
+  \]
+  If $|w|>\lambda^2/2$, then
+  $|w+\lambda^2|/|w|\le3$, so
+  $|F_h(w)|\le\sqrt3 e^{\lambda h}$.
+  These bounds imply the displayed estimate for $F_h$.
+  Finally,
+  \[
+    \frac{|w|}{|w+\lambda^2|}
+    \le1+\frac{\lambda^2}{|w+\lambda^2|}
+    \le1+(1-\delta)^{-1}\le7/3,
+  \]
+  and $H_h(w)=\sqrt w\sin(h\sqrt w)/\sqrt{w+\lambda^2}$ gives
+  its stated bound. All identities have their removable values at zero.
+  Applying the imported~\eqref{E:cp-input} gives bounds
+  $3e^{\lambda h}$, $6(1+\lambda h)e^{\lambda h}$ and
+  $6e^{\lambda h}$ for these three operator functions.
+
+  Under the isometry $(u,v)\mapsto(u,A_\lambda^{-1/2}v)$,
+  the four phase blocks are
+  \[
+    C_h(L),\quad
+    F_h(L)L_\lambda^{-1/2}A_\lambda^{1/2},\quad
+    -A_\lambda^{-1/2}L_\lambda^{1/2}H_h(L),\quad
+    A_\lambda^{-1/2}L_\lambda^{1/2}C_h(L)
+    L_\lambda^{-1/2}A_\lambda^{1/2}.
+  \]
+  This is the usual matrix
+  $\left(\begin{smallmatrix}C_h(L)&G_h(L)\\-LG_h(L)&C_h(L)\end{smallmatrix}\right)$,
+  with $G_h(w)=\sin(h\sqrt w)/\sqrt w$, after weighting.
+  In the order displayed, the four block norms are at most
+  \[
+    3e^{\lambda h},\qquad
+    12(1+\lambda h)e^{\lambda h},\qquad
+    12e^{\lambda h},\qquad12e^{\lambda h}.
+  \]
+  For example, the last block has two root-comparison factors of norm
+  at most two, with $C_h(L)$ between them. Only functions of $L$ commute;
+  no commutation with $A_\lambda$ is used in these ordered products.
+  A block operator on $H\oplus H$ has norm at most the sum of its four
+  block norms, by the triangle inequality and the norm-one coordinate
+  inclusions and projections. Therefore, its norm is at most
+  \[
+    (39+12\lambda h)e^{\lambda h}
+    \le39(1+\lambda h)e^{\lambda h}\le100e^{2\lambda h}.
+  \]
+  The phase operator itself is the exponential of the bounded block
+  generator with rows $(0,1)$ and $(-L,0)$. It is entire in $z$;
+  the intermediate square roots are used to estimate it, not to impose
+  a branch-dependent definition of that entire operator.
+  This proves Lemma~\ref{L:complex-phase}.
+\end{proof}
+
+\begin{lemma}[Gaussian cutoff form bound]\label{L:fock-form}
+  Retain the covariance and $R_\alpha$ of
+  Section~\ref{S:static-phase}. Fix $\epsilon>0$.
+  Represent the smoothed real field on independent standard Gaussian
+  coordinates as $W_\epsilon(x)=\sum_{i\ge1}g_i e_i(x)$ in $L^2(\Omega)$.
+  Let $P_N$ be projection onto Gaussian Hermite degrees at most $N$,
+  and $S_b$ spatial Fourier projection onto $|\eta|\le b$.
+  For finite $m$, on their joint range set
+  \[
+    B_{N,m,b}=P_NS_b\Big(\sum_{i=1}^m g_i M_{e_i}\Big)S_bP_N,\qquad
+    A_\rho=\rho^2-\Delta .
+  \]
+  These are bounded selfadjoint operators and, uniformly in
+  $\epsilon,m,b$,
+  \begin{equation}\label{E:fock-sandwich}
+    \|A_\rho^{-1/2}B_{N,m,b}A_\rho^{-1/2}\|
+    \le d_N\rho^{\alpha/2-2},\qquad
+    d_N=2\sqrt{N+1}\sqrt{R_\alpha}.
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  Choose an orthonormal basis of the real isonormal space, which is
+  separable, and write $e_i(x)=\E[W_\epsilon(x)g_i]$.
+  Then $\sum_i e_i(x)^2=\Gamma_\epsilon(0)=:v_\epsilon$, and
+  $|e_i(x)|\le\sqrt{v_\epsilon}$. Thus each multiplication $M_{e_i}$
+  is bounded and selfadjoint. Put
+  $H_i=A_\rho^{-1/2}M_{e_i}A_\rho^{-1/2}$ on spatial $L^2$.
+  Gaussian isometry and spatial Plancherel give
+  \[
+    \sum_i\|H_i f\|_2^2
+    =\frac1{(2\pi)^3}\int
+    \frac{|\widehat f(\eta)|^2}{\rho^2+|\eta|^2}
+    J_{\rho,\epsilon}(\eta)\ud\eta,\qquad
+    J_{\rho,\epsilon}(\eta)
+    =\int\frac{e^{-\epsilon|\xi|^2}\mu(\ud\xi)}
+    {\rho^2+|\eta+\xi|^2}.
+  \]
+  This is the covariance calculation for
+  $A_\rho^{-1/2}W_\epsilon A_\rho^{-1/2}f$.
+  By Lemma~\ref{L:phase-contractions},
+  $J_{\rho,\epsilon}\le R_\alpha\rho^{\alpha-2}$.
+  Therefore
+  $\sum_i H_i^2\le R_\alpha\rho^{\alpha-4}I$
+  in quadratic forms. Finite sums have the same upper bound.
+  Compression to $S_b$ preserves it: for selfadjoint $H_i$,
+  $(S_bH_iS_b)^2\le S_bH_i^2S_b$ on its range.
+  Both row and column variances are the same, since these
+  operators are selfadjoint.
+
+  For completeness, use normalized Hermite polynomials, so multiplication
+  by $g_i$ is $a_i^*+a_i$, with
+  $g_i h_k=\sqrt{k_i+1}\,h_{k+e_i}+\sqrt{k_i}\,h_{k-e_i}$.
+  On degree $k$, the row map $(v_i)\mapsto\sum_i a_i^*v_i$
+  has norm $\sqrt{k+1}$: its product with its adjoint is
+  $\sum_i a_i^*a_i=(k+1)I$ on degree $k+1$.
+  Composing with the column of spatial operators $S_bH_iS_b$ bounds
+  the creation part by
+  $\sqrt{k+1}\sqrt{R_\alpha}\rho^{(\alpha-4)/2}$.
+  Distinct input degrees have orthogonal output degrees.
+  The annihilation part is its adjoint, with the same bound after
+  truncation. Adding them on degrees at most $N$ proves
+  \eqref{E:fock-sandwich}. Boundedness of $-\Delta$ on $S_b$ is explicit;
+  no infinite-frequency operator theorem was used.
+  This proves Lemma~\ref{L:fock-form}.
+\end{proof}
+
+\begin{lemma}[Exact cutoffs for finite Gaussian words]\label{L:finite-word-cutoff}
+  Let $g_{ij}$, $1\le i\le M$, $1\le j\le m_i$, be independent
+  standard real Gaussian coordinates, grouped by color $i$, and let
+  $\mathscr X$ be a complex Hilbert space. On Gaussian polynomials
+  with coefficients in $\mathscr X$ set
+  \[
+    J_i=\sum_{j=1}^{m_i}M_{g_{ij}}\otimes K_{ij},
+  \]
+  where each $K_{ij}$ is bounded on $\mathscr X$. Let
+  $F_0,\ldots,F_n$ be bounded operators acting only on $\mathscr X$.
+  Fix a word $i_1,\ldots,i_n$, and let $r_i$ be the number of its
+  occurrences of color $i$. If $N_i\ge r_i$ and $P$ projects each
+  color onto total Hermite degree at most $N_i$, then, for every
+  $v\in\mathscr X$,
+  \begin{equation}\label{E:finite-word-cutoff}
+    \begin{split}
+      &(I\otimes F_n)(PJ_{i_n}P)(I\otimes F_{n-1})\cdots
+      (PJ_{i_1}P)(I\otimes F_0)(1\otimes v)\\
+      &\qquad=(I\otimes F_n)J_{i_n}(I\otimes F_{n-1})\cdots
+      J_{i_1}(I\otimes F_0)(1\otimes v).
+    \end{split}
+  \end{equation}
+  The equality holds for finite sums and for Bochner integrals of such
+  words whenever the displayed vector integrals exist.
+\end{lemma}
+
+\begin{proof}
+  In normalized Hermite coordinates, multiplication by $g_{ij}$ maps
+  $h_{\boldsymbol a}$ to
+  $\sqrt{a_{ij}+1}\,h_{\boldsymbol a+e_{ij}}
+  +\sqrt{a_{ij}}\,h_{\boldsymbol a-e_{ij}}$; the second term is zero
+  if $a_{ij}=0$. Thus it changes the total degree of color $i$ by
+  one and leaves all other color degrees unchanged. The operators
+  $I\otimes F_l$ leave every Gaussian degree unchanged.
+  After the first $l$ insertions, the uncompressed word therefore
+  has color-$i$ degree at most
+  $r_i(l)=|\{j\le l:i_j=i\}|\le r_i\le N_i$.
+  This is an induction starting from degree zero in every color.
+  Consequently $P$ is the identity both before and after every
+  insertion along that word. Induction on $l$ now proves
+  \eqref{E:finite-word-cutoff}. The lowering term has been retained:
+  the assertion includes creation followed by annihilation and all
+  resulting self-contractions. Linearity and equality of the vector
+  integrands prove the last assertion. This is an equality of selected
+  finite words, not of full propagators at a fixed cutoff.
+  This proves Lemma~\ref{L:finite-word-cutoff}.
+\end{proof}
+
+\begin{proposition}[All regularized static phase orders]
+  \label{P:static-phase-all-orders}
+  Retain the full covariance class of Section~\ref{S:static-phase}.
+  For real Schwartz $f,g$, let $Z_n^\epsilon(h)$ be the $n$th
+  regularized static Duhamel phase, with the recursion
+  \eqref{E:phase-duhamel} for every $n\ge0$. This is an ordinary
+  Gaussian polynomial of degree at most $n$, including self-contractions;
+  it is not a pure Wick chaos.
+  There is an explicit finite constant
+  \[
+    A_\alpha=\frac{400\sqrt2\,e^2}{\delta_{\alpha/2}}
+  \]
+  such that, for $n\ge1$, uniformly in $\epsilon>0$,
+  \begin{equation}\label{E:all-static-phase-orders}
+    \|Z_n^\epsilon(h)\|_{L^2(\Omega;X_{1/h})}
+    \le
+    \frac{(A_\alpha\sqrt{R_\alpha})^n
+    h^{(4-\alpha)n/2}}{(n!)^{(3-\alpha)/2}}
+    \|(f,g)\|_{1/h}.
+  \end{equation}
+  At every fixed positive smoothing and real coupling $\sigma$,
+  $\sum_{n\ge0}\sigma^nZ_n^\epsilon(h)$ converges in $L^2$ phase.
+  Its squared norm is at most
+  \begin{equation}\label{E:all-static-phase-sum}
+    (\sqrt e+2)^2
+    \exp\left\{6A_\alpha^{2/(3-\alpha)}
+    (|\sigma|^2R_\alpha)^{1/(3-\alpha)}
+    h^{(4-\alpha)/(3-\alpha)}\right\}\|(f,g)\|_{1/h}^2.
+  \end{equation}
+\end{proposition}
+
+\begin{proof}
+  If $R_\alpha=0$, spectral homogeneity gives $\mu=0$, and every
+  positive-order term is zero. Assume $R_\alpha>0$.
+  First work at finite Gaussian cutoff $m$, degree cutoff $N$ and
+  spatial band $b$, with initial phase $S_b(f,g)$ times the Gaussian
+  vacuum $1$. All relevant operators are bounded.
+  Lemmas~\ref{L:fock-form} and \ref{L:complex-phase}, with $a=\alpha/2$,
+  give a bound $100e^{2\lambda h}$ on the complex coupling circle
+  of radius $\delta_{\alpha/2}\lambda^{2-\alpha/2}/d_N$.
+
+  The four phase entries are entire in the coupling, by the power series
+  for $\cos(h\sqrt L)$ and $\sin(h\sqrt L)/\sqrt L$ of a bounded $L$.
+  Cauchy's formula for their operator-valued series bounds the $n$th
+  coefficient by
+  \[
+    100e^{2\lambda h}
+    \left(\frac{d_N}
+    {\delta_{\alpha/2}\lambda^{2-\alpha/2}}\right)^n
+    \|S_b(f,g)\|_\lambda .
+  \]
+  The coefficient is exactly the $n$th Duhamel phase from the vacuum.
+  Apply Lemma~\ref{L:finite-word-cutoff} with one color, $N=n$,
+  the spatial phase Hilbert space as $\mathscr X$, and its free wave
+  operators as the $F_l$. It identifies each cutoff Duhamel word
+  exactly with its uncompressed word, including self-contractions.
+  Dominated time integration preserves this identity.
+
+  Choose $\lambda=n/h$. For any phase $z$,
+  $\|z\|_{1/h}\le n\|z\|_{n/h}$ and
+  $\|(f,g)\|_{n/h}\le\|(f,g)\|_{1/h}$.
+  Also $d_n\le2\sqrt{2n}\sqrt{R_\alpha}$.
+  The preceding bound is therefore at most
+  \[
+    100n\left(\frac{2\sqrt2 e^2}{\delta_{\alpha/2}}\right)^n
+    R_\alpha^{n/2}h^{(4-\alpha)n/2}
+    n^{-(3-\alpha)n/2}\|(f,g)\|_{1/h}.
+  \]
+  Since $100n\le200^n$ and $n!\le n^n$, this gives
+  \eqref{E:all-static-phase-orders} at the cutoffs.
+
+  We justify removal of those cutoffs at fixed $\epsilon$ and $n$.
+  On Gaussian degrees at most $N$, the unweighted field multiplication
+  has norm at most $2\sqrt{N+1}\sqrt{v_\epsilon}$, uniformly in $m$,
+  by the same creation/annihilation argument applied pointwise in $x$.
+  It follows that the noise phase insertion
+  $(u,v)\mapsto(0,W_\epsilon u)$, between the required finite degree
+  levels, is bounded on $X_\lambda$ by this constant divided by
+  $\lambda$. Free phase evolution is bounded by $e^{\lambda h/2}$.
+  For finite $m$, $S_b\to I$ strongly and commutes with the free
+  propagator. Each fixed Duhamel word therefore converges strongly
+  as $b\to\infty$, by dominated time integration.
+
+  Next let $m\to\infty$ on the full Gaussian space.
+  The truncated field multiplications converge strongly between
+  finite degree levels. To see this, first take a vector depending on
+  finitely many Gaussian coordinates. The annihilation tail is then
+  zero, while the creation tail is bounded by a constant times
+  \[
+    \left(\int\sum_{i>m}e_i(x)^2\|F(x)\|^2\ud x\right)^{1/2},
+  \]
+  which tends to zero by dominated convergence, since the sum is
+  bounded by $v_\epsilon$. Such vectors are dense; the uniform
+  multiplication bound extends strong convergence to all vectors
+  in those degree levels. Dominated time integration again gives
+  convergence of every fixed word. The limit is precisely
+  $Z_n^\epsilon$, so the estimate survives both limits.
+  We assert no zero-smoothing phase limit in this argument.
+
+  Finally, put $\beta=(3-\alpha)/2\in(1/2,3/2)$ and
+  $x=A_\alpha|\sigma|\sqrt{R_\alpha}h^{(4-\alpha)/2}$.
+  The elementary series satisfies
+  \[
+    \sum_{n\ge0}\frac{x^n}{(n!)^\beta}
+    \le2e^{3x^{1/\beta}}.
+  \]
+  For $\beta\ge1$, this follows from
+  $\sum a_n^\beta\le(\sum a_n)^\beta$ with
+  $a_n=x^{n/\beta}/n!$.
+  For $\beta<1$, apply H\"older to
+  $((2x^{1/\beta})^n/n!)^\beta
+  (2^{-\beta n/(1-\beta)})^{1-\beta}$.
+  The second geometric sum is at most two.
+  Since $\|Z_0(h)\|_{1/h}\le\sqrt e\|(f,g)\|_{1/h}$,
+  absolute $L^2$ summation and squaring give
+  \eqref{E:all-static-phase-sum}.
+  This proves Proposition~\ref{P:static-phase-all-orders}.
+\end{proof}
+
+\begin{corollary}[Summable static interaction bounds]
+  \label{C:static-interaction}
+  Let $\mathcal S_0(t)$ be free phase evolution and, for $\lambda h\le1$,
+  define the static interaction map by its convergent series
+  \[
+    \mathcal I^\epsilon_\sigma(h)(f,g)
+    =\mathcal S_0(-h)\sum_{n\ge0}\sigma^n Z_n^\epsilon(h).
+  \]
+  Put $\gamma=3-\alpha$, $B_\alpha=3eA_\alpha^2$ and
+  \[
+    \begin{split}
+      L_\alpha(h,\lambda)
+      &=4eR_\alpha h^2\lambda^{\alpha-2}
+      +\frac{4\sqrt eD_\Gamma}{(2-\alpha)(3-\alpha)}
+      \frac{h^{3-\alpha}}{\lambda},\\
+      x&=B_\alpha\sigma^2R_\alpha h^{4-\alpha},\\
+      \mathcal E(h,\sigma,\lambda)
+      &=\sigma^2L_\alpha(h,\lambda)
+      +(\lambda h)^{-2}x^2e^{\gamma x^{1/\gamma}}.
+    \end{split}
+  \]
+  Uniformly in $\epsilon>0$,
+  \begin{equation}\label{E:static-interaction}
+    \E\|\mathcal I^\epsilon_\sigma(h)(f,g)\|_\lambda^2
+    \le[1+\mathcal E(h,\sigma,\lambda)]\|(f,g)\|_\lambda^2.
+  \end{equation}
+  If $0<\alpha_0<1$ and $\alpha+\alpha_0<2$, then, for
+  $h_j=2^{-j}/\lambda$, $\sigma_j^2=h_j^{-\alpha_0}$ and $T>0$,
+  \begin{equation}\label{E:static-block-series}
+    \sum_{j\ge0}\frac{T}{h_j}\mathcal E(h_j,\sigma_j,\lambda)<\infty.
+  \end{equation}
+  For a finite single partition, let $\mathcal M_j(h_j)$ be the static
+  phase maps with mutually independent copies of the smoothed field,
+  real couplings $\sigma_j$, and $\lambda h_j\le1$. They have continuous
+  $L^2$ extensions to independent random initial phases. Then
+  \begin{equation}\label{E:independent-static-blocks}
+    \E\|\mathcal M_K(h_K)\cdots\mathcal M_1(h_1)(f,g)\|_\lambda^2
+    \le
+    \exp\left\{\lambda\sum_{j=1}^K h_j+
+    \sum_{j=1}^K\mathcal E(h_j,\sigma_j,\lambda)\right\}
+    \|(f,g)\|_\lambda^2.
+  \end{equation}
+  This concerns independent successive blocks on one partition.
+  Formula~\eqref{E:static-block-series} only sums individual upper
+  bounds across dyadic levels; it does not identify a product with
+  an evolution driven by overlapping or repeated fields.
+\end{corollary}
+
+\begin{proof}
+  Write $N=\|(f,g)\|_\lambda$ and
+  $Y_n=\mathcal S_0(-h)Z_n^\epsilon(h)$.
+  The free estimate from Section~\ref{S:static-phase} holds for both
+  time directions, since its differentiated energy was bounded in
+  absolute value. Thus $\|\mathcal S_0(-h)\|_\lambda\le\sqrt e$.
+  Since $Y_0=(f,g)$, Proposition~\ref{P:static-phase-variance}
+  bounds the complete first variance coefficient of
+  $\E\|\sum\sigma^nY_n\|_\lambda^2$ in absolute value by
+  $L_\alpha(h,\lambda)N^2$.
+  In detail, its first random squared norm is bounded by
+  $e$ times~\eqref{E:phase-born}, and its second-order mean
+  cross term by $2N\sqrt e$ times~\eqref{E:phase-mean}.
+
+  For $n\ge1$, the norm comparisons when $\lambda h\le1$ and
+  \eqref{E:all-static-phase-orders} give
+  \[
+    \|Y_n\|_{L^2(\Omega;X_\lambda)}
+    \le\frac{\sqrt e}{\lambda h}
+    \frac{(A_\alpha\sqrt{R_\alpha})^n h^{(4-\alpha)n/2}}
+    {(n!)^{\gamma/2}}N.
+  \]
+  Gaussian symmetry makes
+  $\E\langle Y_r,Y_s\rangle_\lambda=0$ if $r+s$ is odd.
+  All double series below converge absolutely by these bounds.
+  For $r+s=2k$, the elementary factorial inequality
+  $r!s!\ge(k!)^2$ shows that the sum of absolute inner products
+  is at most
+  \[
+    \frac{e(2k+1)}{(\lambda h)^2}
+    \frac{(A_\alpha^2R_\alpha)^k h^{(4-\alpha)k}}
+    {(k!)^\gamma}N^2,\qquad k\ge1.
+  \]
+  This includes $r=0$ or $s=0$, since $\lambda h\le1$ and
+  $\|Y_0\|=N$. The bound $e(2k+1)\le(3e)^k$ therefore controls
+  all orders $k\ge2$ by
+  \[
+    \frac1{(\lambda h)^2}
+    \sum_{k\ge2}\frac{x^k}{(k!)^\gamma}N^2
+    \le\frac{x^2e^{\gamma x^{1/\gamma}}}{(\lambda h)^2}N^2.
+  \]
+  Here $\gamma>1$, and
+  $\sum_{j\ge0}x^j/(j!)^\gamma\le e^{\gamma x^{1/\gamma}}$.
+  Keeping the sharper first coefficient separately proves
+  \eqref{E:static-interaction}.
+
+  Finally, set $\beta=4-\alpha-\alpha_0>2$.
+  After multiplication by $T/h_j$, the two first-coefficient
+  terms in~\eqref{E:static-block-series} are constant multiples of
+  \[
+    T\lambda^{\alpha-2}h_j^{1-\alpha_0},\qquad
+    \frac T\lambda h_j^{2-\alpha-\alpha_0}.
+  \]
+  The higher-order term is
+  \[
+    \frac{T(B_\alpha R_\alpha)^2}{\lambda^2}
+    h_j^{2\beta-3}
+    \exp\{\gamma(B_\alpha R_\alpha)^{1/\gamma}h_j^{\beta/\gamma}\}.
+  \]
+  The exponential factor is bounded by its value at $h_0$.
+  All three powers are positive, so their geometric series converge.
+  For the finite partition, write
+  $\mathcal M_j(h_j)=\mathcal S_0(h_j)\mathcal I_j(h_j)$.
+  Bound~\eqref{E:static-interaction} and
+  $\|\mathcal S_0(h_j)\|_\lambda^2\le e^{\lambda h_j}$
+  give a bounded linear map from deterministic $X_\lambda$ to
+  $L^2(\Omega_j;X_\lambda)$, initially on Schwartz phases and then
+  by density. Tensoring with the past probability space extends this
+  bound to random initial phases independent of the $j$th field.
+  Iteration gives the product of
+  $e^{\lambda h_j}(1+\mathcal E(h_j,\sigma_j,\lambda))$.
+  The inequality $1+y\le e^y$ for $y\ge0$ proves
+  \eqref{E:independent-static-blocks}.
+  This proves Corollary~\ref{C:static-interaction}.
+\end{proof}
+
+These estimates concern individual static phase and interaction maps.
+Their summability alone does not identify the evolution driven by
+overlapping interval fields. The coefficient argument in
+Section~\ref{S:interval-upper} supplies the separate estimate needed
+for that evolution.

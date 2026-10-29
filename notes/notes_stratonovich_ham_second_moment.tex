@@ -172,6 +172,37 @@ Proposition~\ref{P:Jensen}. Any numerical consequence involving the
 source's $L_*$ explicitly assumes a valid first-moment lower bound with
 that constant. No correction of its printed normalization is adopted.
 
+\paragraph{Which source statements are inputs.}
+The full upper proof directly imports the fixed-order $L^2$ construction
+from the current author version, Theorem~4.1, and the bounded-operator
+Crouzeix--Palencia theorem stated in~\eqref{E:cp-input}.
+Identification of the resulting series with the known mild solution is
+imported separately from the author's Theorem~1.1(1) and Section~5(ii);
+we do not re-prove that mild-equation assertion or uniqueness.
+The uniform tail passage for the series is proved here in
+Lemma~\ref{L:uniform-series-tail}, independently of the source's series estimate.
+
+The equal-length diagram limit in the author's Lemma~4.4 is an additional
+input to the auxiliary mixed-term Proposition~\ref{P:mixed}.
+Its Section~4 uses Lemmas~4.2--4.3, a static continuity input,
+Theorem~3.1 and Lemma~A.1 at fixed Laplace parameters. Remark~4.5,
+pp.~30--31, explicitly gives Lemma~4.4 $\Rightarrow$ (4.4)
+$\Rightarrow$ Lemma~2.4 $\Rightarrow$ Theorem~4.1.
+Here (4.4) is a joint regularization limit, different from the
+time-uniform estimate (5.4) diagnosed in Remark~\ref{R:source-uniformity}.
+Those fixed-order arguments do not use Section~5's later
+degree/time-dependent parameter substitution. This dependency distinction
+does not certify every step of the separately imported mild identification.
+
+The first-moment formulas in Theorem~\ref{T:first} are quoted source
+statements, with the printed-normalization qualification there; they are
+not premises of the full upper theorem. Chen--Hu's static coefficient
+estimates and Chen's 2023 variational finiteness theorem are used only in
+the explicitly identified auxiliary sections. In particular, our uses of
+the latter cite Theorem~1.1, not Corollary~1.2. Thus neither a disputed
+first-moment constant nor an auxiliary static coefficient theorem enters
+the interval-field upper bound.
+
 \section{What is known}\label{S:known}
 
 All pinpoints below refer to the current author version
@@ -446,19 +477,44 @@ pp.~13--14, and Theorem~4.1}.
     \text{ for every }\{j,l\}\in D'\}.
   \]
   The two copies use widths $a$ and $b$, but the same Gaussian color
-  fields. A color occurring twice on this chain occurs four times in
-  the product; all equal-color pairings of those four vertices are kept.
-  Wick's formula
-  and independence give exactly
+  fields. Concatenate their vertex widths as
+  $(\epsilon_j,\delta_j)_{1\le j\le2r}$ and their spacetime variables
+  as $(\tau_j,\eta_j)_{1\le j\le2r}$. Put
   \[
-    \E[Y_{r,a}Y_{r,b}]
-    =\sum_{D'\in\Pi_r(c)}B_{D'}(a,b).
+    K_{jl}=\gamma^0_{\delta_j\vee\delta_l}(\tau_j-\tau_l)
+    \gamma_{\epsilon_j+\epsilon_l}(\eta_j-\eta_l).
   \]
-  Each $B_{D'}$ has two chains of length $r$, with its vertex widths
-  taken from $a$ and $b$. After reversing each chain, it is a diagram
-  in the imported joint-limit statement; reversal only permutes its
-  vertex widths. Thus it has a finite limit $b_{D'}$, independent of
-  their relative rates. Define the finite sum
+  The covariance matrix of the colored evaluations is exactly
+  $\mathbf1_{\{\widetilde c(j)=\widetilde c(l)\}}K_{jl}$.
+  Let $H_{r,t,x}(\ud\mathbf s,\ud\mathbf y)$ be the terminal
+  Green measure on $0<s_1<\cdots<s_r<t$, with kernel product
+  $\prod_{j=1}^rG(s_{j+1}-s_j,y_{j+1}-y_j)$ and
+  $(s_{r+1},y_{r+1})=(t,x)$, in the measure convention already stated.
+  Wick's formula gives exactly
+  \[
+    \begin{split}
+      \E[Y_{r,a}Y_{r,b}]&=\sum_{D'\in\Pi_r(c)}B_{D'}(a,b),\\
+      B_{D'}(a,b)&=\int H_{r,t,x}(\ud\mathbf s,\ud\mathbf y)
+      H_{r,t,x}(\ud\mathbf s',\ud\mathbf y')
+      \prod_{\{j,l\}\in D'}K_{jl}.
+    \end{split}
+  \]
+  An incompatible pairing has a zero color indicator; for a compatible
+  pairing every indicator is one. The remaining integrand has no colors:
+  it is precisely the one-field fixed-diagram integral with these $2r$
+  vertex widths. The one-field import already uses the same covariance
+  function on all its $r$ edges, so repetition adds no new hypothesis.
+  For example, if $r=2$ and both chain vertices have one color, the
+  four-vertex covariance product in the expectation is
+  \[
+    K_{12}K_{34}+K_{13}K_{24}+K_{14}K_{23}.
+  \]
+  These are exactly the three uncolored diagrams in $\Pi_2$, including
+  the self-pairing on each copy. None is discarded.
+  Reversing each terminal chain as specified below gives its initial-chain
+  diagram of Lemma~4.4, merely permuting the vertex widths. Each
+  $B_{D'}$ therefore has a finite limit $b_{D'}$, independent of their
+  relative rates. Define the finite sum
   $Q_{r,c}=\sum_{D'\in\Pi_r(c)}b_{D'}$. Consequently,
   \[
     \lim_{a,b\to0}\E[Y_{r,a}Y_{r,b}]=Q_{r,c},\qquad
@@ -4452,6 +4508,54 @@ apply it below are bounded; no unbounded-operator extension is assumed.
   This proves Lemma~\ref{L:fock-form}.
 \end{proof}
 
+\begin{lemma}[Exact cutoffs for finite Gaussian words]\label{L:finite-word-cutoff}
+  Let $g_{ij}$, $1\le i\le M$, $1\le j\le m_i$, be independent
+  standard real Gaussian coordinates, grouped by color $i$, and let
+  $\mathscr X$ be a complex Hilbert space. On Gaussian polynomials
+  with coefficients in $\mathscr X$ set
+  \[
+    J_i=\sum_{j=1}^{m_i}M_{g_{ij}}\otimes K_{ij},
+  \]
+  where each $K_{ij}$ is bounded on $\mathscr X$. Let
+  $F_0,\ldots,F_n$ be bounded operators acting only on $\mathscr X$.
+  Fix a word $i_1,\ldots,i_n$, and let $r_i$ be the number of its
+  occurrences of color $i$. If $N_i\ge r_i$ and $P$ projects each
+  color onto total Hermite degree at most $N_i$, then, for every
+  $v\in\mathscr X$,
+  \begin{equation}\label{E:finite-word-cutoff}
+    \begin{split}
+      &(I\otimes F_n)(PJ_{i_n}P)(I\otimes F_{n-1})\cdots
+      (PJ_{i_1}P)(I\otimes F_0)(1\otimes v)\\
+      &\qquad=(I\otimes F_n)J_{i_n}(I\otimes F_{n-1})\cdots
+      J_{i_1}(I\otimes F_0)(1\otimes v).
+    \end{split}
+  \end{equation}
+  The equality holds for finite sums and for Bochner integrals of such
+  words whenever the displayed vector integrals exist.
+\end{lemma}
+
+\begin{proof}
+  In normalized Hermite coordinates, multiplication by $g_{ij}$ maps
+  $h_{\boldsymbol a}$ to
+  $\sqrt{a_{ij}+1}\,h_{\boldsymbol a+e_{ij}}
+  +\sqrt{a_{ij}}\,h_{\boldsymbol a-e_{ij}}$; the second term is zero
+  if $a_{ij}=0$. Thus it changes the total degree of color $i$ by
+  one and leaves all other color degrees unchanged. The operators
+  $I\otimes F_l$ leave every Gaussian degree unchanged.
+  After the first $l$ insertions, the uncompressed word therefore
+  has color-$i$ degree at most
+  $r_i(l)=|\{j\le l:i_j=i\}|\le r_i\le N_i$.
+  This is an induction starting from degree zero in every color.
+  Consequently $P$ is the identity both before and after every
+  insertion along that word. Induction on $l$ now proves
+  \eqref{E:finite-word-cutoff}. The lowering term has been retained:
+  the assertion includes creation followed by annihilation and all
+  resulting self-contractions. Linearity and equality of the vector
+  integrands prove the last assertion. This is an equality of selected
+  finite words, not of full propagators at a fixed cutoff.
+  This proves Lemma~\ref{L:finite-word-cutoff}.
+\end{proof}
+
 \begin{proposition}[All regularized static phase orders]
   \label{P:static-phase-all-orders}
   Retain the full covariance class of Section~\ref{S:static-phase}.
@@ -4504,10 +4608,11 @@ apply it below are bounded; no unbounded-operator extension is assumed.
     \|S_b(f,g)\|_\lambda .
   \]
   The coefficient is exactly the $n$th Duhamel phase from the vacuum.
-  Each Gaussian multiplication changes Hermite degree by one,
-  and the free wave preserves it. Thus, if $N=n$, every partial word
-  of at most $n$ multiplications stays within the cutoff.
-  No self-contraction is removed by this projection.
+  Apply Lemma~\ref{L:finite-word-cutoff} with one color, $N=n$,
+  the spatial phase Hilbert space as $\mathscr X$, and its free wave
+  operators as the $F_l$. It identifies each cutoff Duhamel word
+  exactly with its uncompressed word, including self-contractions.
+  Dominated time integration preserves this identity.
 
   Choose $\lambda=n/h$. For any phase $z$,
   $\|z\|_{1/h}\le n\|z\|_{n/h}$ and
@@ -4825,8 +4930,17 @@ Complex Hilbert inner products are linear in the first slot.
 \end{lemma}
 
 \begin{proof}
-  The adjoint has the identical sandwich bound, since $A_\rho$ is
-  selfadjoint. Put $K_\kappa=A_\kappa^{-1/2}VA_\kappa^{-1/2}$ and
+  The adjoint has the identical sandwich bound, since
+  \[
+    A_\rho^{-1/2}V^*A_\rho^{-1/2}
+    =(A_\rho^{-1/2}VA_\rho^{-1/2})^*.
+  \]
+  The form estimate at $\rho=\Lambda$ gives
+  $\operatorname{Re}\langle(L+\Lambda^2)u,u\rangle
+  \ge(1-\delta_a)\langle A_\Lambda u,u\rangle$.
+  The shifted operator and its adjoint thus have spectra in the right
+  half-plane, where their principal inverse roots are defined.
+  Put $K_\kappa=A_\kappa^{-1/2}VA_\kappa^{-1/2}$ and
   $\kappa=(\Lambda^2+t)^{1/2}$. The resolvent difference is exactly
   \[
     (L+\Lambda^2+t)^{-1}-A_\kappa^{-1}
@@ -4835,17 +4949,38 @@ Complex Hilbert inner products are linear in the first slot.
   Its product on the left with $A_\Lambda^{1/2}$ has norm at most
   $D\kappa^{a-3}/(1-\delta_a)$. The inverse-root integral in
   Lemma~\ref{L:complex-phase} therefore gives the same $1/6$ bound.
-  Apply it also to the adjoint and take inverses to obtain all four
-  root comparisons, each with norm at most two.
+  More explicitly, put $L_\Lambda=L+\Lambda^2$ and
+  $Q=A_\Lambda^{1/2}L_\Lambda^{-1/2}$. Then
+  $\|Q-I\|\le1/6$, so $\|Q\|\le7/6$ and
+  $\|Q^{-1}\|\le6/5$ by its Neumann series.
+  Taking adjoints under the norm-convergent resolvent integral gives
+  $(L_\Lambda^{-1/2})^*=(L_\Lambda^*)^{-1/2}$.
+  Apply the same estimate to $L^*=A_0-V^*$ and take adjoints.
+  This bounds $L_\Lambda^{-1/2}A_\Lambda^{1/2}$ by $7/6$ and its
+  inverse $A_\Lambda^{-1/2}L_\Lambda^{1/2}$ by $6/5$.
+  Together with $Q$ and $Q^{-1}=L_\Lambda^{1/2}A_\Lambda^{-1/2}$,
+  these are all four ordered comparisons in
+  \eqref{E:phase-root-comparisons}, each at most two.
 
-  The real-part bound at $\rho=\Lambda$ is
-  $\operatorname{Re}\langle(L+\Lambda^2)u,u\rangle
-  \ge(1-\delta_a)\langle A_\Lambda u,u\rangle$.
-  Separately, optimizing the form estimate at
-  $\rho=\|A_0^{1/2}u\|/\|u\|$ bounds the imaginary part as in that
-  lemma. Thus the same numerical-range parabola, scalar functions
-  $C_h,F_h,H_h$, and four weighted phase blocks give $100e^{2\Lambda h}$.
-  Selfadjointness of $V$ was not used; the adjoint estimate replaced it.
+  For a unit vector $u$ put $s=\|A_0^{1/2}u\|$ and
+  $\langle Lu,u\rangle=x+iy$. The form estimate at $\rho=\Lambda$
+  and, separately, at $\rho=s$ gives
+  \[
+    |\langle Vu,u\rangle|\le D\Lambda^{a-2}(s^2+\Lambda^2),
+    \qquad |\langle Vu,u\rangle|\le2Ds^a.
+  \]
+  At $s=0$ the second bound follows by $\rho\downarrow0$.
+  Thus $x+\Lambda^2\ge(1-\delta_a)(s^2+\Lambda^2)$ and
+  $|y|\le2\delta_a\Lambda^{2-a}s^a$. These are the two inequalities
+  used for the numerical-range parabola in Lemma~\ref{L:complex-phase}.
+  Its scalar bounds and the bounded-operator Crouzeix--Palencia theorem
+  apply to $L$ without selfadjointness. The four weighted block formulas
+  there use only functions of $L$ and the root comparisons just proved.
+  Their norms are at most $3e^{\Lambda h}$,
+  $12(1+\Lambda h)e^{\Lambda h}$, $12e^{\Lambda h}$ and
+  $12e^{\Lambda h}$. Their sum is at most $100e^{2\Lambda h}$.
+  This uses neither selfadjointness of $V$ nor commutation of
+  $A_\Lambda$ with $L$.
 
   For a common phase vector,
   \[
@@ -5122,9 +5257,33 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
   If $i\notin S$, multiplication by its field takes its vacuum into
   first Gaussian degree. The Hermite cutoff $N_i=2$ does not alter this
   step. Thus $J_i$ maps the phase over $\mathscr Z_S$ into the phase
-  over $\mathscr Z_{S\cup\{i\}}$. The vacuum-column estimate in
-  Lemma~\ref{L:interval-contractions}, tensored with all the other
-  factors, gives at its insertion time
+  over $\mathscr Z_{S\cup\{i\}}$.
+  Collect all other Gaussian factors into $\mathscr R_i$.
+  Every input has the form $1_i\otimes(u,w)$, with
+  $(u,w)\in\mathscr R_i\otimes X_\rho$. The cutoffs on other
+  colors are identities on its retained degrees, which multiplication
+  by the color-$i$ field leaves unchanged. Hence
+  \[
+    J_i(1_i\otimes(u,w))
+    =\sigma_i\sum_{j=1}^{m_i}g_{ij}\otimes
+    (0,S_bM_{e_{ij}}S_bu).
+  \]
+  Orthogonality $\E[g_{ij}g_{il}]=\mathbf1_{\{j=l\}}$ gives
+  \[
+    \begin{split}
+      \|J_i(1_i\otimes(u,w))\|_{\mathcal H_\rho}^2
+      &=\sigma_i^2\sum_{j=1}^{m_i}
+      \|A_\rho^{-1/2}S_bM_{e_{ij}}S_bu
+      \|_{\mathscr R_i\otimes L^2_x}^2\\
+      &\le\sigma_i^2R_\alpha\rho^{\alpha-2}
+      \|u\|_{\mathscr R_i\otimes L^2_x}^2\\
+      &\le\sigma_i^2R_\alpha\rho^{\alpha-2}
+      \|1_i\otimes(u,w)\|_{\mathcal H_\rho}^2.
+    \end{split}
+  \]
+  The first inequality is~\eqref{E:interval-column} tensored with
+  $\mathscr R_i$ and allows arbitrary dependence on earlier colors.
+  Thus, at the insertion time,
   \begin{equation}\label{E:split-fresh-insertion}
     \|J_i\|\le\sigma_i\sqrt{R_\alpha}
     \Lambda(t_i)^{(\alpha-2)/2}
@@ -5134,6 +5293,13 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
   partial word. They justify each new-color estimate even though the
   current vector depends on the background and earlier cross colors.
   No occupied-color annihilation is estimated by a vacuum bound.
+
+  Equivalently, apply Lemma~\ref{L:finite-word-cutoff} to the cross
+  colors, with $\mathscr X$ containing the bounded background Gaussian
+  space and the spatial phase space. Background segments act only on
+  $\mathscr X$, and each cross color occurs once. Its cutoff is an
+  exact identity on every prefix of the selected word. This does not
+  identify an untruncated background propagator with a fixed cutoff.
 
   At an interior cut $\tau_j$ let $B_j^{\rm cut}=J_i$ if
   $\tau_j=t_i$ and let $B_j^{\rm cut}$ be the identity otherwise.
@@ -5290,6 +5456,9 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
 
 \begin{proof}
   Zero noise is trivial; omit any zero $\sigma_i$.
+  Enlarge the inventory constant $L$ to $\max\{1,L\}$ if necessary.
+  The hypotheses remain true and the final constant may depend on $L$,
+  so throughout this proof we may assume $L\ge1$.
   Replacing $(\sigma_i,W_i^\epsilon)$ by
   $(|\sigma_i|,\operatorname{sgn}(\sigma_i)W_i^\epsilon)$ leaves the
   potential unchanged and preserves the joint law of the independent
@@ -5367,11 +5536,13 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
   $\prod_i(2k_i+1)\le3^k$.
 
   For this fixed $\boldsymbol k$, truncate the Hermite degree of color $i$
-  at $N_i=2k_i$. A word contributing to $U_{\boldsymbol r}$ has at most
-  $r_i\le2k_i$ insertions of that color. Starting in its vacuum, none of
-  its intermediate degrees exceeds $2k_i$. The same holds on the other
-  copy. Thus these cutoffs preserve the two selected vector coefficients
-  exactly, including creation followed by annihilation. There is no
+  at $N_i=2k_i$. A word contributing to $U_{\boldsymbol r}$ has
+  $r_i\le2k_i$ insertions of color $i$, and the other copy has
+  $q_i\le2k_i$. Lemma~\ref{L:finite-word-cutoff}, with the spatial
+  phase space as $\mathscr X$ and free phase factors between insertions,
+  therefore preserves both selected vector coefficients exactly.
+  Their Duhamel time integrals and finite word sums preserve the equality.
+  Creation followed by annihilation is retained; there is no
   Hermite-degree limit in this coefficient calculation.
 
   For the uniform coefficient estimate put $\lambda=k/T$.
@@ -5394,9 +5565,20 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
     \end{array}
   \]
   The first metric factor occurs on only one copy; the last costs at
-  most one factor on each copy. These weights increase with $h_i$:
-  their expanded powers are $\beta,\beta-1,p$ and
-  $\beta l,\beta l-1,\beta l-2$, all positive.
+  most one factor on each copy. To justify the length substitution,
+  expand the entire higher-degree weight, before its positive constant:
+  \[
+    h^{\beta l}(1+l/(\lambda h))^2
+    =h^{\beta l}+\frac{2l}{\lambda}h^{\beta l-1}
+    +\frac{l^2}{\lambda^2}h^{\beta l-2}.
+  \]
+  Since $\beta>2$ and $l\ge2$, all three powers are positive.
+  The singleton mean likewise has powers $\beta,\beta-1$, and
+  the cross singleton has power $p=2-\alpha_0>0$.
+  Thus each whole local weight increases with $h$; we do not bound
+  the inverse-length factor separately. At $h=LT/i$,
+  $1+l/(\lambda h)=1+li/(kL)\le1+li/k$, since $L\ge1$.
+  The remaining powers of $L$ are absorbed in the allowed $C^k$.
   There are two orientations of the singleton mean and one cross split.
   If their weights are $m_i$ and $c_i$, then
   $2m_i+c_i\le3(m_i+c_i)$.
