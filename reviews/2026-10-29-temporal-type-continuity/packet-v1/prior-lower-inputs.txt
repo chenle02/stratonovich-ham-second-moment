@@ -1,0 +1,378 @@
+\section{A static lower comparison and a near-static mean gap}
+\label{S:near-static-lower}
+
+\myCmts{The four proofs in this section passed a source-bound Opus5.5/HIGH
+review at \texttt{46d1075}, all seven checks passing. This is a scoped
+internal consequence; the original sharp target and whole-paper
+clearance remain open. No novelty or numerical normalization is claimed.}
+
+Fix a nonzero spatial covariance in Hypothesis~\ref{H:homog}, and put
+\[
+  \begin{gathered}
+    \nu=3-\alpha>1,\qquad a_{\max}=\min(1,2-\alpha),\qquad
+    \beta(a)=4-\alpha-a,\\
+    \kappa(a)=\frac{\beta(a)}\nu,\qquad
+    \kappa_{\rm st}=\frac{4-\alpha}\nu.
+  \end{gathered}
+\]
+Here the temporal exponent varies: $u^{(a)}$ denotes our canonical solution
+with covariance $|s-r|^{-a}\Gamma$, for $0<a<a_{\max}$.
+At $a=0$ define $u^{(0)}=U$ to be the static canonical solution with the
+same spatial covariance and initial data $(1,0)$. This endpoint means the
+temporal covariance one, not a substitution into $\Gamma_{\mathrm E}(a)$.
+The notation $\gamma_{\delta,a}^0$ records the temporal exponent $a$
+in the same Laplace-prefix regularization previously denoted by
+$\gamma_\delta^0$.
+
+\paragraph{Imported static input.}
+From Chen--Hu~\cite{chen.hu:25:hyperbolic}*{Theorem~1.2, (1.9), p.~2147},
+the actual static first-mean rate $L_0$ exists and
+\begin{equation}\label{E:static-ratio-input}
+  0<L_0:=\lim_{t\to\infty}t^{-\kappa_{\rm st}}\log\E U(t,x)<\infty,
+  \qquad
+  \lim_{t\to\infty}t^{-\kappa_{\rm st}}\log\E U(t,x)^2
+  =2^{\kappa_{\rm st}}L_0.
+\end{equation}
+We use only the common $p^{\kappa_{\rm st}}$ factor for $p=1,2$;
+no numerical value of the static variational constant or its white-noise
+specialization is adopted. Strict positivity in that formula follows by
+using a nonzero Gaussian competitor: its interaction and gradient terms
+scale as $A c^{\alpha/2}$ and $B c^2$, with $A,B>0$, so their difference
+is positive for small $c$. Finiteness and the moment law are the imported
+source result. The static kernel and integral conventions are its
+(2.10)--(2.14), p.~2150; the fixed-order limits agree with its
+Theorem~3.8(i), p.~2165. We supply the static series convergence needed
+below from our regularized fractional-time upper bound, without using
+the source's quantitative (4.3). The generalized-covariance convention is explicit
+in its (2.18), p.~2152. Our spectral ball law gives
+\[
+  \int\frac{\mu(\ud\xi)}{1+|\xi|^2}
+  \le\mu(B_1)+C_\alpha\mu(B_1)\sum_{j\ge0}2^{j(\alpha-2)}<\infty.
+\]
+Thus the static Dalang condition holds in every admissible dimension.
+Measure homogeneity of degree $d-\alpha$ is equivalent to distributional
+homogeneity of degree $-\alpha$, so the source's (1.8) applies in its
+explicit generalized-covariance convention. The static object is identified
+by its canonical heat-limit expansion; no uniqueness assertion for other
+mild solutions is used.
+
+For $a>0$ write $X_n^{(a)}$ for our fixed-order terms; at zero use the
+corresponding static terms. Set
+\[
+  m_k(a)=\E X_{2k}^{(a)}(1,0),\qquad m_0(a)=1.
+\]
+
+\begin{lemma}[Raw-power mean coefficients]\label{L:mean-coefficient-holder}
+  For every $0\le a<a_{\max}$, the coefficients $m_k(a)$ are nonnegative,
+  and
+  \begin{equation}\label{E:mean-positive-series}
+    \E u^{(a)}(t,x)=\sum_{k\ge0}m_k(a)t^{\beta(a)k}.
+  \end{equation}
+  The series $F_a(z)=\sum_{k\ge0}m_k(a)z^k$ is finite for every $z\ge0$.
+  If $0<a<b<a_{\max}$, then
+  \begin{equation}\label{E:mean-coefficient-holder}
+    m_k(a)\le m_k(0)^{1-a/b}m_k(b)^{a/b},\qquad k\ge1.
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  We first justify the static endpoint and its norm series.
+  At positive spatial widths its ordered terms are the bounded-variance
+  Gaussian Bochner integrals of Lemma~\ref{L:terminal-wick}, with a
+  time-constant field. Lemma~\ref{L:spatial-wick-measures}, applied with
+  temporal multiplier one to the diagonal and mixed-width second
+  moments, gives a common finite diagram limit. The same Hilbert
+  Cauchy argument as in Lemma~\ref{L:joint-fixed-order} therefore gives
+  the static fixed-order limits $X_n^{(0)}$, with the source's heat-limit
+  convention. This uses no infinite solution series.
+
+  Fix any $b_0\in(0,a_{\max})$ and $\delta_0>0$, and put
+  $c=\gamma_{\delta_0,b_0}^0(1)>0$.
+  Let $U_N^\epsilon(r;1,x)$ be the static partial series at horizon one
+  and noise amplitude $r>1$. Compare its finite Wick sum with that of
+  the fractional-time partial series at widths $\epsilon,\delta_0$,
+  exponent $b_0$ and amplitude $r/\sqrt c$.
+  Since $\gamma_{\delta_0,b_0}^0(s-r')\ge c$ for $s,r'\in[0,1]$,
+  every pair factor on the second side dominates the static pair factor.
+  Positivity, then the full regularized bound
+  \eqref{E:regularized-scaled-moment}, gives
+  \[
+    \E|U_N^\epsilon(r;1,x)|^2
+    \le \E|u^{\epsilon,\delta_0}_{b_0}(r/\sqrt c;1,x)|^2
+    \le B_{b_0}(1;r/\sqrt c)<\infty,
+  \]
+  uniformly in $N,\epsilon$. The notation $B_{b_0}$ means the bound
+  in~\eqref{E:regularized-scaled-moment} at temporal exponent $b_0$.
+  Both positive-width full series exist by Lemma~\ref{L:terminal-wick}.
+  Letting $N\to\infty$ at fixed $\epsilon$ preserves this bound.
+  Lemma~\ref{L:uniform-series-tail} now applies to the static family
+  (with only the spatial width varying). It proves absolute $L^2$
+  convergence of its limiting series at horizon one, with geometric
+  coefficient bounds for every $r>1$.
+  Static fixed-order homogeneity gives
+  \[
+    \|X_n^{(0)}(t,x)\|_2
+    =t^{(4-\alpha)n/2}\|X_n^{(0)}(1,0)\|_2.
+  \]
+  Choosing $r>\max\{1,t^{(4-\alpha)/2}\}$ in those bounds proves
+  norm summability at every fixed $t>0$. The resulting series has
+  precisely the source's canonical static kernels and fixed-order limits.
+
+
+  For a single chain of length $2k$, use the initial-chain variables of
+  Proposition~\ref{P:mixed}. At common positive spatial width $\epsilon$,
+  let $\omega_{\epsilon,D}$ be its finite positive spatial Green--Wick
+  measure on the unit time simplex, with covariance $\gamma_{2\epsilon}$
+  on every pair. It is finite because that covariance is bounded and
+  the Green masses are the time gaps. Define
+  \[
+    m_k^\epsilon(a)=\sum_{D\in\Pi_k}\int
+    \prod_{\{j,h\}\in D}|s_j-s_h|^{-a}\ud\omega_{\epsilon,D},
+    \qquad 0\le a<a_{\max}.
+  \]
+  These raw-time integrals are finite. At fixed $\epsilon$ the spatial
+  factors and Green masses are bounded on the finite horizon; the
+  disjoint pair endpoints give integrable powers on the full time cube
+  since $a<1$. Diagonals are null there. On the disjoint union of the
+  pairing measures, the time multiplier at $a$ is exactly the $a/b$ power
+  of its multiplier at $b$. H\"older's inequality therefore gives
+  \[
+    m_k^\epsilon(a)\le
+    m_k^\epsilon(0)^{1-a/b}m_k^\epsilon(b)^{a/b}.
+  \]
+  This is a raw-power identity; no exponent-dependent Laplace cutoff or
+  Euler Gamma normalization is being interpolated.
+
+  We justify removal of the common spatial width. For each positive
+  exponent, the proof of Lemma~\ref{L:joint-fixed-order} gives this
+  raw-time limit as well. Indeed, writing $F_{\epsilon,\eta,D}$ for
+  the diagram with common temporal cutoff $\eta$,
+  \eqref{E:joint-temporal-tail} gives
+  \[
+    F_{\epsilon,\eta,D}\le F_{\epsilon,0,D}
+    \le F_{\epsilon,\eta,D}+r_a(\eta),\qquad r_a(\eta)\longrightarrow0,
+  \]
+  uniformly in $\epsilon$. First pass to the spatial limit at fixed
+  $\eta$, then send $\eta$ to zero. The resulting limit is exactly
+  the joint diagram value from that lemma. At zero exponent the
+  multiplier is one, so Lemma~\ref{L:spatial-wick-measures} gives the
+  spatial limit directly; the positive-width Wick calculation and
+  the imported static fixed-order convergence identify it with the
+  static expectation. Thus, $m_k^\epsilon(a)\to m_k(a)$ at all three
+  fixed exponents $0,a,b$, proving~\eqref{E:mean-coefficient-holder}
+  and nonnegativity. No convergence uniform in $a$ is claimed.
+
+  Scaling all times and spatial displacements by $t$ in a regularized
+  one-chain diagram gives the factor
+  $t^{2(2k)-\alpha k-ak}=t^{\beta(a)k}$ and changes the spatial width
+  to $\epsilon/t^2$. Passing to the just established limits proves
+  $\E X_{2k}^{(a)}(t,x)=t^{\beta(a)k}m_k(a)$.
+  Odd expectations vanish by Wick's formula. For positive $a$ the
+  independently proved norm summability in Lemma~\ref{L:vertex-crude}
+  justifies the mean-series interchange. At zero the static norm series
+  just proved does so, with nonnegative even means. This proves
+  \eqref{E:mean-positive-series}. Since $\beta(a)>0$, every $z\ge0$
+  equals $t^{\beta(a)}$ for some $t\ge0$, and the series is finite.
+  This proves Lemma~\ref{L:mean-coefficient-holder}.
+\end{proof}
+
+\begin{lemma}[Type of a positive coefficient series]\label{L:positive-series-type}
+  Let $\nu\ge1$, $c_k\ge0$, $c_0=1$, and suppose
+  $F(z)=\sum_{k\ge0}c_kz^k<\infty$ for every $z\ge0$. If
+  \[
+    \tau=\limsup_{z\to\infty}z^{-1/\nu}\log F(z)<\infty,
+  \]
+  then
+  \begin{equation}\label{E:positive-series-type}
+    K:=\limsup_{k\to\infty}\big((k!)^\nu c_k\big)^{1/k}<\infty,
+    \qquad \tau=\nu K^{1/\nu}.
+  \end{equation}
+  Conversely, finite $K$ implies the same finite $\tau$ and equality.
+\end{lemma}
+
+\begin{proof}
+  If $\tau<\infty$, choose $L>\tau$. Since $c_0=1$, $\tau\ge0$,
+  and continuity of the power series on compact positive intervals gives
+  $F(z)\le C_L e^{Lz^{1/\nu}}$ for all $z\ge0$.
+  For $k\ge1$, the inequality $c_kz^k\le F(z)$ at
+  $z=(\nu k/L)^\nu$ yields
+  \[
+    c_k\le C_L e^{\nu k}\left(\frac L{\nu k}\right)^{\nu k}.
+  \]
+  Monotonicity of $\log x$ and integration on $[1,k]$ give
+  \[
+    k\log k-k+1\le\log(k!)
+    \le k\log k-k+1+\log k.
+  \]
+  Consequently $K\le(L/\nu)^\nu$. Letting $L\downarrow\tau$ proves
+  $K\le(\tau/\nu)^\nu$, including $K=0$ when $\tau=0$.
+
+  Conversely, for any $A>K$ all sufficiently large coefficients obey
+  $c_k\le A^k/(k!)^\nu$. Hence, for a polynomial $P$ with nonnegative
+  coefficients,
+  \[
+    F(z)\le P(z)+\sum_{k\ge0}\frac{(Az)^k}{(k!)^\nu}
+    \le P(z)+\exp\{\nu(Az)^{1/\nu}\}.
+  \]
+  The last inequality is the elementary $\ell^\nu$ bound
+  $\sum a_k^\nu\le(\sum a_k)^\nu$, applied to
+  $a_k=(Az)^{k/\nu}/k!$. The polynomial contributes zero to the
+  normalized logarithmic growth. Therefore $\tau\le\nu A^{1/\nu}$;
+  let $A\downarrow K$. Combining both inequalities proves the equality
+  when either quantity is finite. This proves Lemma~\ref{L:positive-series-type}.
+\end{proof}
+
+\begin{proposition}[Static temporal-minimum comparison]\label{P:static-minorant-lower}
+  For every $0<a<a_{\max}$, $T>0$ and $p\in\{1,2\}$,
+  \begin{equation}\label{E:static-minorant-moment}
+    \E[u^{(a)}(T,x)^p]
+    \ge\E\left[U\left(T^{1-a/(4-\alpha)},x\right)^p\right].
+  \end{equation}
+  In particular,
+  \begin{equation}\label{E:static-minorant-rate}
+    \liminf_{T\to\infty}T^{-\kappa(a)}\log\E[u^{(a)}(T,x)^p]
+    \ge p^{\kappa_{\rm st}}L_0,\qquad p=1,2.
+  \end{equation}
+\end{proposition}
+
+\begin{proof}
+  Fix positive common spatial and temporal noise widths $\epsilon,\delta$.
+  On $[0,T]$, the source's Laplace-prefix temporal covariance satisfies
+  \[
+    \gamma_{\delta,a}^0(s-r)\ge c_{\delta,T}:=
+    \gamma_{\delta,a}^0(T)>0,\qquad
+    c_{\delta,T}\longrightarrow T^{-a}\quad(\delta\downarrow0).
+  \]
+  Compare the order-$N$ partial series of $u^{(a)}$ with the same partial
+  series of a static model having covariance
+  $c_{\delta,T}\gamma_{2\epsilon}$.
+  At positive widths, the mean or squared moment is a finite Wick sum
+  of the same terminal Green kernels and pairings. Every spatial factor
+  is the same nonnegative $\gamma_{2\epsilon}$; every time factor on
+  the first side is at least $c_{\delta,T}$. Thus, the finite expected
+  powers are ordered for $p=1,2$. For $d=3$, remove Green smoothing
+  first at these fixed positive noise widths using the bounded covariance
+  calculation preceding Lemma~\ref{L:spatial-wick-measures}.
+
+  Now send $(\epsilon,\delta)$ jointly to zero at fixed $N$.
+  Lemma~\ref{L:joint-fixed-order} gives the fractional-time $L^2$ limits.
+  Static fixed-order $L^2$ convergence gives all static split products
+  in $L^1$, by Cauchy--Schwarz. Dependence on $c_{\delta,T}$ is a
+  finite polynomial at fixed order, so its limit is the static model
+  with noise amplitude $\sigma=T^{-a/2}$. This requires no uniform
+  approximation in $T$ or in a varying infinite-order series.
+  At every fixed $\sigma,T>0$, static norm homogeneity gives
+  \[
+    \sigma^n\|X_n^{(0)}(T,x)\|_2
+    =\|X_n^{(0)}(\sigma^{2/(4-\alpha)}T,x)\|_2.
+  \]
+  Thus the amplitude-scaled static norm series is summable at the
+  effective time already covered by Lemma~\ref{L:mean-coefficient-holder}.
+  Finally let $N\to\infty$ using the two $L^2$ expansions, with the
+  static one supplied in Lemma~\ref{L:mean-coefficient-holder}. Means and
+  squared moments converge, preserving the finite-order inequality.
+  No covariance-order coupling of the two Gaussian fields is asserted.
+
+  Write $U_\sigma$ for the static solution with noise amplitude $\sigma$.
+  In its $p$th moment, a total order $2k$ has amplitude factor
+  $\sigma^{2k}$ and, by static diagram homogeneity, time factor
+  $T^{(4-\alpha)k}$. For $p=1,2$, the finite sums and then the
+  convergent nonnegative moment series therefore give the exact identity
+  \[
+    \E[U_\sigma(T,x)^p]
+    =\E[U(\sigma^{2/(4-\alpha)}T,x)^p].
+  \]
+  Only moments are identified; no spatially indexed random fields are
+  coupled. At $\sigma=T^{-a/2}$ this proves
+  \eqref{E:static-minorant-moment}. The effective static time tends to
+  infinity and
+  \[
+    \left(T^{1-a/(4-\alpha)}\right)^{\kappa_{\rm st}}
+    =T^{\kappa(a)}.
+  \]
+  The imported static rates~\eqref{E:static-ratio-input} now prove
+  \eqref{E:static-minorant-rate}.
+  This proves Proposition~\ref{P:static-minorant-lower}.
+\end{proof}
+
+\begin{proposition}[Near-static strict gap from the actual mean rate]
+  \label{P:near-static-mean-gap}
+  Define
+  \[
+    M(a)=\limsup_{T\to\infty}T^{-\kappa(a)}\log\E u^{(a)}(T,x),\qquad
+    K(a)=\limsup_{k\to\infty}\big((k!)^\nu m_k(a)\big)^{1/k}.
+  \]
+  Then $K(0)=(L_0/\nu)^\nu>0$, and $K(b)<\infty$ for every
+  $0<b<a_{\max}$. Fix such a $b$ and choose any finite
+  $B_b\ge\max\{2K(0),K(b)\}$. For $0<a<b$,
+  \begin{equation}\label{E:near-static-mean-upper}
+    M(a)\le L_0\left(\frac{B_b}{K(0)}\right)^{a/(b\nu)}.
+  \end{equation}
+  In particular, with
+  \begin{equation}\label{E:near-static-window}
+    a_*:=\frac{b\log2}{\log(B_b/K(0))}\in(0,b],
+  \end{equation}
+  every $0<a<a_*$ satisfies
+  \begin{equation}\label{E:near-static-mean-gap}
+    \liminf_{T\to\infty}T^{-\kappa(a)}\log\E[u^{(a)}(T,x)^2]
+    >2M(a).
+  \end{equation}
+\end{proposition}
+
+\begin{proof}
+  By Lemma~\ref{L:mean-coefficient-holder}, the substitution
+  $z=T^{\beta(a)}$ identifies the normalized logarithmic type of
+  $F_a(z)$ with the mean limsup $M(a)$; at zero it equals $L_0$.
+  The imported static law and Lemma~\ref{L:positive-series-type} give
+  $K(0)=(L_0/\nu)^\nu$.
+  For positive $b$, Cauchy--Schwarz and Theorem~\ref{T:full-upper},
+  applied at temporal exponent $b$, give $M(b)<\infty$.
+  The same type lemma therefore gives $K(b)<\infty$.
+  There is no use of a printed first-moment rate constant.
+
+  Multiplying~\eqref{E:mean-coefficient-holder} by $(k!)^\nu$,
+  taking $k$th roots and then limsups yields
+  \[
+    K(a)\le K(0)^{1-a/b}B_b^{a/b}.
+  \]
+  To justify this even if coefficients vanish, for any $\eta>0$ both
+  endpoint root sequences are eventually bounded by $K(0)+\eta$ and
+  $B_b+\eta$; take their weighted product and then let $\eta\downarrow0$.
+  Lemma~\ref{L:positive-series-type} now gives
+  \[
+    M(a)=\nu K(a)^{1/\nu}
+    \le L_0\left(\frac{B_b}{K(0)}\right)^{a/(b\nu)},
+  \]
+  proving~\eqref{E:near-static-mean-upper}.
+  Since $B_b/K(0)\ge2$, the window in~\eqref{E:near-static-window}
+  is positive and at most $b$. For $0<a<a_*$,
+  \[
+    2M(a)<2L_0\cdot2^{1/\nu}
+    =2^{\kappa_{\rm st}}L_0,
+  \]
+  because $\kappa_{\rm st}=1+1/\nu$.
+  Combine this with Proposition~\ref{P:static-minorant-lower} at $p=2$.
+  This proves Proposition~\ref{P:near-static-mean-gap}.
+\end{proof}
+
+\begin{remark}[Scope and calibrations]\label{R:near-static-scope}
+  The static lower comparison holds at every admissible positive temporal
+  exponent; the strict gap from twice the actual first-mean limsup is
+  asserted only in the nonempty window~\eqref{E:near-static-window}.
+  Its endpoint depends on the fixed covariance and the chosen anchor $b$;
+  no uniformity over covariance shapes is claimed. As $a\downarrow0$,
+  the comparison clock has exponent tending to one, the growth exponent
+  tends to $\kappa_{\rm st}$, and the mean upper bound tends to $L_0$.
+  The static second-moment constant is exactly $2^{\kappa_{\rm st}}L_0$.
+
+  The gap concerns $\E u$, which is positive by its pairing series;
+  no theorem for $\E|u|$ or all moment orders is asserted.
+  If an intended source first-mean lower rate $L_*(a)$ is valid, then
+  $L_*(a)\le M(a)$, so~\eqref{E:near-static-mean-gap} also improves
+  the corresponding Jensen rate $2L_*(a)$ in this window.
+  This does not establish the original lower target
+  $2^{\kappa_{\rm st}}L_*(a)$, or either sharp bound for arbitrary $a$.
+  Goal~\ref{G:sharp} remains open. The proof uses the ordinary
+  Stratonovich pairing expansion, including self-contractions; no
+  Skorohod result or sibling-project development is made.
+\end{remark}

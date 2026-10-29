@@ -6,9 +6,9 @@
 
 ## Current state
 
-- **Phase:** static lower comparison and near-static actual-mean gap ADOPTED at their own scoped primary gate. Source `46d1075` returned Opus5.5 PASS_WITH_NOTES/HIGH: all 7 checks PASS,308.952 seconds,complete 11 texts/11 exact PNGs,no required repairs. All six minor notes are adjudicated. This is partial progress toward the ORIGINAL full G:sharp,which remains open. The seven older whole-paper cold reports retain NOT CLEAR for their source versions.
+- **Phase:** bounded full-moment temporal interpolation/static-constant continuity wave IN PROGRESS. The prior four lower proofs retain their own 7PASS/HIGH acceptance. New targets extend coefficient Holder to all two-chain splits,then the actual upper growth type and iterated static-constant limit. These are not yet proved/reviewed. Original full G:sharp remains unchanged/open;no novelty or whole-paper clearance is claimed.
 - **Review boundaries:** prior92page quantitative/mild source `a7e725e` passed its own19checks/HIGH. The new8check review covers the direct norms, positive spatial Wick-measure limit, arbitrary joint vertex-width construction and their consumers. It does NOT freshly audit every unchanged operator/interval proof. Exact source/delivery/adoption bindings and limitations are in `reviews/2026-10-29-fixed-order-construction/`.
-- **Current artifact:** 102 pages,55 proofs. Four new reviewed proofs give raw-time coefficient Holder,positive-series limsup type,all-admissible-time static baseline comparison,and a strict actual-mean gap in a nonempty near-static window. All formal statements match the frozen scientific source;53 proofs are byte equal and two have optional consumer/typography clarifications. ALL 51 earlier proofs remain unchanged. Clean build:zero errors,undefined references/citations,overfull boxes,tabs. Original full covariance/dimension and sharp targets retained.
+- **Current artifact:**105pages,58proofs. Three new candidate proofs extend raw-power coefficient interpolation to the full moment,prove upper growth-type log-convexity,and recover the actual static p1/p2constants in an iterated temporal-parameter limit. ALL55prior proofs and old formal statements are unchanged. Clean build:zero errors,undefined references/citations,overfull boxes,tabs. New claims still need their own HIGH review;original full fixed-positive-a sharp target remains open.
 - **Open targets:** the full all-alpha0sharp p2constant;focused exposition/whole-paper clearance before circulation;private Lean once creation is approved;canonical wiki provenance and novelty/circulation gates. A next PLAN is to extend raw-power Holder to total two-chain coefficients and test constant-level static continuity. It is not yet proved/reviewed. No printed-normalization correction or numerical static white constant is adopted.
 - **Authorization:** Le's continuing full goal includes the sharp/lower track. The current wave is the previously proposed bounded static-comparison/inequality step,with the HIGH review threshold unchanged. It does not redefine the original all-alpha0sharp target,claim novelty,promote a paper or authorize Lean creation. Report/honor PROJECT-GOAL decision points;companion-creation decision4remains pending. No correspondence/public release authorized.
 - **Worker:** Codex/GPT author, paper-dev workflow; historical project handoff to agent #30 on 2026-10-26. Lean remains L0/PROPOSED (`lean-progress/PROGRESS.md`). Nine normal reference requests exist; new edition-custody intake is nonblocking, not source authentication.
@@ -2963,3 +2963,57 @@ wave,no duplicate request enqueued,nine earlier requests persist. No Lean,
 HPC,Skorohod development,normalization correction,outreach or release.
 The next-coefficient-step.md file is a PLAN for a further p2coefficient
 interpolation/static-continuity calibration;it gains no current review credit.
+
+## Full-moment temporal interpolation: pre-investment receipt (2026-10-29)
+
+Previous turn:PROGRESS,four lower/type/gap proofs accepted7PASS/HIGH and
+adopted atae0742d. Current102page/55proof mathematics is clean/synchronized.
+The exact next internal corollary is frozen in temporal-type-continuity/
+reconnaissance.md. Decision:REFRAME as the same-neighborhood internal
+inequality wave,no new external source or novel-paper investment. Prior
+citation-chain/novelty ceiling remains UNVERIFIED. Full original spatial/
+dimensional/all-alpha0sharp scope is not replaced by a static-limit result.
+
+Falsification before long proof:30EXACT white order2Holder checks pass for
+general temporal endpoints;the full static order4sum is11/540. Dropping
+empty/unequal splits fails that value.96positive atomic samples covering
+all pairings and split assignments pass30Holder checks. These are finite
+calibrations,not continuum moment evaluation or analytic proof. New formal
+statements need their OWN source-bound cross-family HIGH gate.
+
+### Full-moment candidate written and source prepared
+
+Three new proofs are written in the actual notes. Coefficient Holder retains
+all splits/self-pairs and one versus two empty orientations correctly. The
+new actual upper rates are positive/finite and log-convex;only their interior
+continuity is asserted. Both time-liminf/time-limsup rates approach actual
+static constants after the ITERATED a->0limit;no fixed-positive-a Tlimit.
+All55prior proofs/formal statements unchanged;105page/58proof clean build.
+The exact11source PNGs match the previous carrier cohort;the unchanged guard
+passes preparation only. Fresh scientific13texts/11images and C1--C7gate
+will audit the new three proofs plus the restricted scalar-inference screen.
+
+A useful falsification screens the tempting global-ratio shortcut:positive
+series with nu2,F1coefficientsx^(2k)/(k!)^2andF2coefficients(8x)^k/(k!)^2,
+1<=x=e^a<=2,satisfy interpolation,static comparison and coefficient Jensen,
+but their rate ratio sqrt(8/x)falls below static sqrt8forpositivea.72exact
+finite Jensen coefficient checks pass. This only obstructs inference from
+those SCALAR properties,not the SPDE conjecture or geometry-based routes.
+It is included for independent checking,not asserted as a model no-go.
+
+### User-requested Agent8Lean coordination
+
+Le explicitly requested coordination with Agent8on related Lean packages.
+Fresh amsg resolution:#8=<MACHINE>/n8-swe-exact-moments;sender#3=<MACHINE>/n3-stratonovich-ham-second.
+Requestd4820d013742and threaded replyb7c809f9d44fdelivered;Agent8acknowledges
+L0/PROPOSED and is preparing an exact signature/receipt map. Initial candidates
+include growth-rates-lean,SWE finite matching/series-root lemmas and coefficient-
+<PRIVATE-PACKAGE>. These are preliminary agent-provided pointers,not verified
+reuse. We own READ-ONLY Stratonovich consumer-fence/correspondence review;
+Agent8/its worker owns the declaration map and its existing package gates.
+No edits,duplicate gates,companion,lease,Lean code/build/registry or cluster
+transaction was opened here. Decision4creation approval remains pending.
+Four offline registry/index queries are INCOMPLETE(five missing checkouts;
+pairing search omits175hits);no absence claim. Exact messages/search evidence
+in lean-progress/coordination/2026-10-29-agent8/. This coordination runs beside
+the active mathematics goal and does not substitute for it.

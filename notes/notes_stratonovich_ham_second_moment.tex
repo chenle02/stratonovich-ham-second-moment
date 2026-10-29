@@ -105,6 +105,9 @@ noise: Stratonovich regime\\[0.3em]
   and a near-static gap from twice the actual first-mean growth rate.
   These internal consequences passed their own scoped independent review;
   the original sharp constant remains open.
+  A further candidate subsection treats temporal interpolation of the full
+  moment and recovery of the static moment constant as the time exponent
+  tends to zero; these additional proofs await independent review.
 \end{abstract}
 
 \tableofcontents
@@ -6991,6 +6994,227 @@ corresponding static terms. Set
   Goal~\ref{G:sharp} remains open. The proof uses the ordinary
   Stratonovich pairing expansion, including self-contractions; no
   Skorohod result or sibling-project development is made.
+\end{remark}
+
+
+\subsection{Temporal interpolation of the full moment}
+\label{S:temporal-type-continuity}
+
+\myCmts{The following three additional proofs are candidates awaiting their
+own independent review. They do not inherit the preceding four-proof gate.
+The full sharp constant at positive temporal exponent remains open.}
+
+Retain the fixed nonzero covariance and the notation of this section.
+For \(p=1,2\), set \(c_{p,0}(a)=1\) and, for \(k\ge1\),
+\begin{equation}\label{E:full-moment-coefficients}
+  c_{1,k}(a)=m_k(a),\qquad
+  c_{2,k}(a)=\sum_{m=0}^{2k}
+  \E[X_m^{(a)}(1,0)X_{2k-m}^{(a)}(1,0)].
+\end{equation}
+The zero-exponent terms are the static limits constructed in
+Lemma~\ref{L:mean-coefficient-holder}.
+
+\begin{lemma}[Interpolation of the full moment coefficients]
+  \label{L:full-moment-coefficient-holder}
+  For \(0\le a<a_{\max}\) and \(p=1,2\), the coefficients are nonnegative and
+  \begin{equation}\label{E:full-moment-positive-series}
+    \E[u^{(a)}(t,x)^p]
+    =\sum_{k\ge0}c_{p,k}(a)t^{\beta(a)k}<\infty,\qquad t>0.
+  \end{equation}
+  If \(0\le a_1<a<a_2<a_{\max}\) and
+  \(\theta=(a-a_1)/(a_2-a_1)\), then
+  \begin{equation}\label{E:full-moment-coefficient-holder}
+    c_{p,k}(a)\le
+    c_{p,k}(a_1)^{1-\theta}c_{p,k}(a_2)^\theta,\qquad k\ge0.
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  Work first at a common positive spatial noise width \(\epsilon\) and
+  at unit horizon. For each split \(m+n=2k\) and pairing \(D\), let
+  \(\omega_{\epsilon,m,n,D}\) be the finite positive spatial
+  Green--Wick measure in the initial-chain convention of
+  Proposition~\ref{P:mixed}, with covariance \(\gamma_{2\epsilon}\).
+  For \(p=1\) take the disjoint union over the single specified split
+  \((m,n)=(0,2k)\) and all pairings. For \(p=2\), take the disjoint union
+  over every \(m=0,\ldots,2k\) and all pairings. In particular, the two
+  empty-chain orientations are distinct terms for \(p=2\), whereas
+  \(p=1\) has just one. Wick's formula has coefficient one for each
+  pairing on each ordered domain.
+
+  With \(\omega_{\epsilon,p,k}\) denoting this disjoint-union measure,
+  define its raw-time integral by
+  \[
+    c_{p,k}^{\epsilon}(a)=
+    \int \prod_{\{j,h\}\in D}|s_j-s_h|^{-a}
+    \ud\omega_{\epsilon,p,k}.
+  \]
+  The pairing label in the multiplier is that of its component.
+  These integrals are finite: the spatial covariances and Green masses
+  are bounded on the unit horizons, and the disjoint pair endpoints
+  give integrable factors on the full time cube since \(a<1\).
+  The multiplier at \(a\) is exactly the product of the endpoint
+  multipliers to powers \(1-\theta,\theta\), off null diagonals.
+  Hölder's inequality on the disjoint union gives
+  \[
+    c_{p,k}^{\epsilon}(a)\le
+    c_{p,k}^{\epsilon}(a_1)^{1-\theta}
+    c_{p,k}^{\epsilon}(a_2)^\theta.
+  \]
+
+  For each fixed positive endpoint, the all-chain bound
+  \eqref{E:joint-temporal-tail} and the common temporal-cutoff sandwich
+  used in Lemma~\ref{L:mean-coefficient-holder} identify the raw-time
+  spatial limit with the joint diagram value. This applies to every
+  unequal or empty split, not only to a mean diagram. At exponent zero,
+  the multiplier is one and Lemma~\ref{L:spatial-wick-measures} gives
+  the same limit. The static diagonal and mixed-width Gaussian limits
+  identify those diagram values with the split expectations of the
+  constructed static terms. For positive exponents this identification
+  is Proposition~\ref{P:mixed}. The union is finite at fixed \(k\);
+  passing to the spatial limit proves
+  \eqref{E:full-moment-coefficient-holder} and nonnegativity.
+  No interpolation of exponent-dependent Laplace prefixes is used.
+
+  Every diagram has \(2k\) time Jacobians, \(2k\) Green scaling factors,
+  \(k\) spatial covariance factors and \(k\) temporal factors.
+  Thus its homogeneous time degree is
+  \(4k-\alpha k-ak=\beta(a)k\), including both empty-chain cases.
+  For positive \(a\), the full second-moment series follows from
+  Proposition~\ref{P:mixed}; the mean series is
+  \eqref{E:mean-positive-series}. At zero, the static norm series gives
+  convergence of the finite partial means and squared moments. Each
+  finite moment expansion has nonnegative mixed terms, so its increasing
+  limit may be regrouped by total order \(2k\). The homogeneity just
+  proved then gives~\eqref{E:full-moment-positive-series}.
+  This proves Lemma~\ref{L:full-moment-coefficient-holder}.
+\end{proof}
+
+For \(p=1,2\) define the actual normalized time growth rates
+\begin{equation}\label{E:moment-growth-types}
+  \begin{split}
+    \overline\Lambda_p(a)&=\limsup_{T\to\infty}
+    T^{-\kappa(a)}\log\E[u^{(a)}(T,x)^p],\\
+    \underline\Lambda_p(a)&=\liminf_{T\to\infty}
+    T^{-\kappa(a)}\log\E[u^{(a)}(T,x)^p].
+  \end{split}
+\end{equation}
+Here \(p=1\) concerns \(\E u\), not \(\E|u|\).
+
+\begin{proposition}[Log-convexity of the upper growth type]
+  \label{P:moment-growth-logconvex}
+  The functions \(\overline\Lambda_p(a)\), \(p=1,2\), are positive and
+  finite on \(0\le a<a_{\max}\). For the endpoints and \(\theta\)
+  in Lemma~\ref{L:full-moment-coefficient-holder},
+  \begin{equation}\label{E:moment-growth-logconvex}
+    \overline\Lambda_p(a)\le
+    \overline\Lambda_p(a_1)^{1-\theta}
+    \overline\Lambda_p(a_2)^\theta .
+  \end{equation}
+  In particular, \(\log\overline\Lambda_p\) is convex and
+  \(\overline\Lambda_p\) is continuous on \((0,a_{\max})\).
+\end{proposition}
+
+\begin{proof}
+  Put \(C_p=p^{\kappa_{\rm st}}L_0>0\).
+  The imported static law gives
+  \(\overline\Lambda_p(0)=\underline\Lambda_p(0)=C_p\).
+  Proposition~\ref{P:static-minorant-lower} gives
+  \(\underline\Lambda_p(a)\ge C_p\) for positive \(a\).
+  The full upper bound gives finiteness for \(p=2\).
+  Cauchy--Schwarz gives finiteness for \(p=1\), whose mean is at
+  least one by its positive series. Hence all logarithms and rates
+  used here are well defined, positive and finite.
+
+  Let \(F_{p,a}(z)=\sum_{k\ge0}c_{p,k}(a)z^k\). It is finite for
+  every \(z\ge0\), by Lemma~\ref{L:full-moment-coefficient-holder}.
+  Its normalized logarithmic type equals
+  \(\overline\Lambda_p(a)\), since \(z=T^{\beta(a)}\) and
+  \(z^{1/\nu}=T^{\kappa(a)}\).
+  Lemma~\ref{L:positive-series-type} therefore gives
+  \[
+    K_p(a):=\limsup_{k\to\infty}
+    \big((k!)^\nu c_{p,k}(a)\big)^{1/k}
+    =\left(\frac{\overline\Lambda_p(a)}{\nu}\right)^\nu.
+  \]
+  Multiplying the coefficient interpolation by \((k!)^\nu\),
+  taking \(k\)th roots and then limsups gives
+  \[
+    K_p(a)\le K_p(a_1)^{1-\theta}K_p(a_2)^\theta.
+  \]
+  More explicitly, the two endpoint root sequences are eventually
+  bounded by \(K_p(a_i)+\eta\); let \(\eta\downarrow0\) after taking
+  their weighted product. This argument permits zero or oscillating
+  coefficient subsequences. Taking the \(1/\nu\) power and multiplying
+  by \(\nu\) proves~\eqref{E:moment-growth-logconvex}.
+
+  For completeness, continuity follows directly from secant slopes.
+  Write \(f=\log\overline\Lambda_p\). If
+  \(L<l\le x<y\le r<R\) are in \((0,a_{\max})\), convexity gives
+  \[
+    \frac{f(l)-f(L)}{l-L}\le
+    \frac{f(y)-f(x)}{y-x}\le
+    \frac{f(R)-f(r)}{R-r}.
+  \]
+  Both outer slopes are finite. They bound the absolute difference
+  quotient on each compact interior interval, proving continuity of
+  \(f\), and hence of its exponential.
+  This proves Proposition~\ref{P:moment-growth-logconvex}.
+\end{proof}
+
+\begin{corollary}[Recovery of the static moment constant]
+  \label{C:static-moment-constant-continuity}
+  Put \(C_p=p^{\kappa_{\rm st}}L_0\), \(p=1,2\).
+  For every fixed \(0<b<a_{\max}\) and \(0<a<b\),
+  \begin{equation}\label{E:static-constant-envelope}
+    C_p\le\underline\Lambda_p(a)\le\overline\Lambda_p(a)
+    \le C_p\left(\frac{\overline\Lambda_p(b)}{C_p}\right)^{a/b}.
+  \end{equation}
+  Consequently,
+  \begin{equation}\label{E:static-constant-continuity}
+    \lim_{a\downarrow0}\underline\Lambda_p(a)
+    =\lim_{a\downarrow0}\overline\Lambda_p(a)=C_p,\qquad p=1,2,
+  \end{equation}
+  and
+  \begin{equation}\label{E:static-moment-ratio-continuity}
+    \lim_{a\downarrow0}
+    \frac{\underline\Lambda_2(a)}{\overline\Lambda_1(a)}
+    =2^{\kappa_{\rm st}}.
+  \end{equation}
+\end{corollary}
+
+\begin{proof}
+  The lower estimate is Proposition~\ref{P:static-minorant-lower}.
+  For the upper estimate, apply Proposition~\ref{P:moment-growth-logconvex}
+  with endpoints \(0,b\), using
+  \(\overline\Lambda_p(0)=C_p\).
+  This proves~\eqref{E:static-constant-envelope}.
+  The finite ratio \(\overline\Lambda_p(b)/C_p\) is at least one.
+  With \(b\) and the covariance fixed, its \(a/b\) power tends to one.
+  Squeezing both rates proves~\eqref{E:static-constant-continuity}.
+  The numerator and denominator in
+  \eqref{E:static-moment-ratio-continuity} tend to
+  \(2^{\kappa_{\rm st}}L_0\) and \(L_0>0\), respectively.
+  Division gives the asserted ratio.
+  This proves Corollary~\ref{C:static-moment-constant-continuity}.
+\end{proof}
+
+\begin{remark}[Order of limits and remaining sharp target]
+  \label{R:temporal-type-scope}
+  The static calibration now concerns the constant, not only the time
+  exponent. It is an iterated statement: first take a time liminf or
+  limsup at each fixed \(a\), with its own normalization
+  \(T^{-\kappa(a)}\), and then send \(a\downarrow0\).
+  No uniformity over covariances or \(T\), no simultaneous limit,
+  and no existence of the time limit at a fixed positive \(a\) follows.
+  Only the upper rate is asserted to be log-convex on the interior.
+
+  Neither \(L_*(a)\) nor \(L^*(a)\) enters this argument.
+  The constant \(L_0\) is the actual static first-mean rate.
+  The original fixed-positive-time-exponent sharp target
+  in Goal~\ref{G:sharp} remains open; parameter continuity does not
+  identify its full conjectured curve. No all-\(p\), absolute-first-moment,
+  Skorohod, novelty or circulation result is claimed.
 \end{remark}
 
 
