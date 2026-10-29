@@ -1,128 +1,117 @@
-Last updated: 2026-10-29 11:51 UTC
+Last updated: 2026-10-29 12:16 UTC
 
-Original full upper/sharp goal ACTIVE;implement TWO remaining construction lemmas.
+Original full upper/sharp goal ACTIVE; independent fixed-order construction adopted.
 
 ## ⏭ Next session: where to stand and what to do
 
-Implement the remaining TWO fixed-order construction lemmas in
-reviews/2026-10-29-full-upper-cold-v6/fixed-order-reconstruction-plan.md.
-The first component,L:damped-homogeneous-norms,is ALREADY WRITTEN and
-builds in the94page/49proof notes. Do not redesign the plan or run another
-unchanged cold review. Start actual proof writing:positive spatial Wick
-measures via independent gap Laplace transforms,then temporal-tail removal
-and the Gaussian L2Cauchy construction.
-
-Cold-v6is TERMINAL,collected,all10items adjudicated,18member native/workspace
-archive verified and own raw cleaned. No process is live;do not re-poll or
-restart it. Current norm/reconstruction wave is UNREVIEWED/incomplete.
-The quantitative interval/CP/Fock proofs remain exactly as reviewed.
-The original full upper/sharp goal and covariance/dimension class remain
-unchanged. This is a bounded reconstruction of a KNOWN input,not a new
-lower/asymptotic wave or novelty claim.
+Prepare and launch a FRESH whole-paper DeepSeek V4-Pro cold read of the
+final adopted96page/51proof notes at `30f80be4151a5af514c6728fa1d294cab07b57d0`.
+The independent construction is IMPLEMENTED and passed its OWN scoped
+Opus5.5/HIGH gate. Do not reconstruct it again or repeat the old cold-v6.
+All six prior cold reports retain NOT CLEAR for their respective sources.
+Do not launch another unchanged primary review to seek a preferred verdict.
+No native reviewer is running at this handoff.
 
 ## Pre-flight checks
 
-1. Read the REFRESHED Current-state header of Progress.md first. Its old
-   second-cold snapshot was stale and is now corrected. Workflow authority
-   is the current snapshot plus dated records,not old historical DONE lines.
-2. Current mathematical checkpointd68b3e6:94pages,49proofs. H:homog now
-   explicitly states original nonnegative even PD tempered Radon Gamma/mu,
-   d1--3 and original degree/time ranges. T:full-upper names the original
-   canonical series and definesR_alpha. No added Riesz/density/finite-variance
-   condition or uniqueness. Jensen has an independent forward norm-series
-   reference. Exact delta/build in cold-v6/norm-candidate-binding.json.
-3. New norm lemma3.4p12is self-contained:resolvent radial bound provesN1,
-   splitfrequency/min(s,1/|xi|)bound provesN2,scaling and high-Laplace tails,
-   positive time quadratic forms justify removing Gaussian multipliers.
-   It removes AppendixA.1from crude/vertex bounds. NOT yet independently
-   reviewed. Source4.1/4.4imports remain until remaining lemmas replace them.
-4. Main theorem13.8p89,mild3.7p15. Newconstruction should use ONLY known
-   sourceTheorem3.1plus direct norm/heat/probability arguments,not Chapter4.
-   Proposed proof and all delicate steps are fully spelled out in the plan.
-5. Direct source25--28PDF windows were opened. Exact controls identify
-   second-chain c_lindex,heat-filterhalf,horizonprefactor and occupation-power
-   proof-line issues. These admit local repairs;they do NOT refute4.1or
-   authorize any correction of sourceE_*,E orEq1.24. See source-proof-audit/.
-6. Spatial construction must NOT use homogeneity alone to exclude coordinate
-   zero faces. The negative control delta_0(dr1)*r2^2dr2is homogeneous of
-   degree3and charges r1=0. Its transform is derived by Laplace integration
-   by parts. Use the separate lambda_l->infinity resolvent argument.
-7.32exact white cross/self Laplace cases pass;20scaling/84white Holder/
-   40window cases pass;all are diagnostics,not convergence proofs. Source
-   Book lookup is nonblocking:the kallenberg-02PDF is THIRD edition on both
-   hosts,hashda12514120c896c759952d6624686efd176121d91195c95f82740c44dfb46446.
-   Do not cite2002Th5.22from it. Prove finite-Laplace criterion directly or
-   authenticate a correct edition first. Ninth queue ticket below,not digested.
-8. Prior92page adoptiondf1648b/actualprimarya7e725e had19PASS/HIGH,775.593s,
-   complete27texts/36PNGs,no required repairs. That is NOT a vote on new94
-   page norm/reconstruction. Sixth cold6cdc142actualV4-Pro472.212s,18tools,
-   NOT CLEAR;no new specific interval/mild-step counterexample. All10items
-   adjudicated,including its mistaken section/dependency descriptions.
-9. Local/origin/<HUB> parity;serialize ref writes. No foreign WIP known.
-   LeanL0/PROPOSED;decision4creation pending. PRIVATE wiki current,canonical
-   unpublished. No direct six-repo/sibling/system edit or external outreach.
+1. Read the Current-state header of Progress.md first. The full original
+   homogeneous Radon/dimensional upper and sharp goals remain unchanged.
+2. Scientific construction source `f9303ed247b9eb7903516768dfd9b8053df5e892`:
+   native Opus5.5/HIGH,527.512s,all8checksPASS,complete7texts/36exact PNGs,
+   accepted=true,coverage_verified=true,no required repairs. New review dir:
+   reviews/2026-10-29-fixed-order-construction/.
+3. Three independently reviewed lemmas: L:damped-homogeneous-norms,
+   L:spatial-wick-measures, L:joint-fixed-order. They replace source4.1/4.4/
+   Appendix A construction imports at ORIGINAL H:homog, using only known
+   sourceTheorem3.1 analytically and the source regularization definitions.
+   Unequal/empty chains, arbitrary joint width rates and Green-before-noise
+   are proved. No broader nonhomogeneous theorem or uniqueness is claimed.
+4. Final adoption `30f80be4151a5af514c6728fa1d294cab07b57d0`:96pages,51proofs,every formal statement exactly
+   reviewed,46proofs byte equal,five optional minor clarifications. The joint,
+   mixed,mild and full-upper proofs are EXACTLY reviewed. Quantitative interval/
+   CP/Fock bodies remain unchanged and retain their earlier scoped reviews.
+5. Final exact hashes:TeX8c46c996f41fb51659ca3229cd65640281a77b772997174702fd6bd495d66d62;
+   PDFd378605f3ebe6432e787b05fc1c0f71841b19c83a12b1c7d22c77087207046a3.
+   Clean build0errors/undefined/overfull/tabs,formatter idempotent. See
+   final-status-binding.json and adjudication-v1.md in the new review dir.
+6. CARRIER preparation reused the exact old36image cohort,not new source
+   pages. Scientific review has its OWN complete exact ledger. The default
+   CLI2.1.312 doctor is retained as unsupported discovery;actual launch used
+   scoped supported2.1.304,first-party subscription,HIGH,no fallback.
+7. All126native/dry-run archive members individually read back/hash verified;
+   archive committed and its committed blob checked before removing ONLY the
+   two owned terminal raw trees. No live process. New archive/manifest and
+   native reports/receipts/ledger are in the review dir. Do not re-poll it.
+8. Cold-v6source6cdc142 is also terminal,collected,adjudicated,archived. Its
+   main construction concern motivated the now written and reviewed repair.
+   Earlier19HIGHsourcea7e725e is historical and does not cover this delta;
+   the new8HIGHgate supplies that scoped review,not full cold clearance.
+9. Local/origin/<HUB> parity verified;no foreign WIP known. Lean remains
+   L0/PROPOSED,decision4 companion creation unapproved. Canonical wiki unchanged;
+   PRIVATE proposal refreshed. Nine normal reference tickets exist (below).
+   No source-author contact,public release,project notification or sibling edit.
 
 ## Concrete deliverables for the next session
 
-- WRITE the spatial Wick-measure and joint-limit lemmas now. Use the fixed
-  plan:positive independent-gap spectral resolvents,uniform mass by elementary
-  Brownian heat conditioning/occupation moments,finite-Laplace continuity,
-  homogeneity horizon boundaries and separate zero-face control.
-- Remove temporal cutoffs by marked-edge Theorem3.1and the ALREADY PROVED
-  vanishing tail norms;then prove finite Gaussian L2Cauchy. All vertex-width
-  ratios and unequal/empty chains must be covered. Keep d3Green first.
-- Move the existing Y_npositive-width prelude before construction. Simplify
-  P:mixed via the new all-chain lemma,preserving its old valid colour/source
-  proof as a historical review artifact. Replace construction-consumer4.1/
-  4.4imports only after checking each covariance's hypotheses. Do not claim
-  a proof of the broader nonhomogeneous source theorem.
-- Preserve quantitative interval/operator bounds and the parameter-only
-  moment constant. Crude construction constants do not enter that constant.
-  No new lower wave,source normalization,uniqueness or Skorohod development.
-- Finish candidate proofs,clean TeX/PDF,semantic scope/binding,then a fresh
-  source-bound primary/HIGH and cold. No proof review has started for the
-  new construction. This is an INTRA-ROUND checkpoint,not a closed round.
-- New source images require a complete final native carrier calibration
-  BEFORE science. The old36image ledger covers neither added source25--28
-  windows nor any further pages. Preserve all old format/coverage failures.
-- Source custody issue is not a reason to stop proof work:provide the
-  elementary finite-measure Laplace criterion directly rather than falsely
-  authenticating2002from the third-edition file. No six-repo direct writes.
-- Update Progress's CURRENT snapshot as well as its log,PRIVATE wiki,handoff,
-  and commit/push/<HUB> parity. No canonical project publication or
-  automatic project notification without its separate standing boundary.
+- Freeze a prior-blind whole-paper candidate from the FINAL adopted bytes.
+  Strip only editorial workflow metadata;retain ALL51proofs and EVERY formal
+  statement,including remarks/goals/conjectures,byte-for-byte. Verify that
+  comparison and clean build;bind source/bibliography/edition hashes.
+- Use the canonical free-form cold-referee prompt VERBATIM. No old reports,
+  checklist,desired grade or root verdict. Native DeepSeek V4-Pro,readonly
+  isolated workspace,full initial manuscript inline plus exact source texts.
+  Preserve actual model/session/prompt/HEAD/input hashes and tool targets.
+- Hold all Git writers during the native read,then collect the SAME terminal
+  session and complete export. A truncated JSON prefix is not an export.
+  Reuse the previous collector's validated evidence rules and refusal controls.
+- Adjudicate the cold reader's ACTUAL concrete concerns;do not blindly adopt
+  false section/dependency descriptions or invent source normalization fixes.
+  Do not add another proof reconstruction merely because a known theorem is
+  cited. Source3.1 is an explicitly imported known universal inequality.
+- If cold clearance permits the next mathematical wave,report original G:upper
+  at decision5 and honor PI steering before a new lower/sharp proof wave.
+  Near-static-lower-recon.md remains reconnaissance only,not a new theorem.
+- Update Progress's current snapshot and log,PRIVATE wiki/handoff,commit/push
+  own paths and serialize <HUB> sync. Never direct-publish canonical wiki
+  or send project notifications under the separate unapproved boundary.
 
 ## Success criteria for the immediate next step
 
-A complete independent fixed-order construction under the ORIGINAL homogeneous
-Radon class replaces the sourceChapter4black box. Spatial/time/Green limits,
-positivity,weak-measure boundary claims and Gaussian Cauchy are proved in the
-actual order,without narrower covariance assumptions or Appendixnorm imports.
-Fresh primary/HIGH and full cold follow actual changed mathematics. Known
-source3.1is explicitly pinpointed;no broader theorem,novelty,formal/human,
-uniqueness or circulation clearance is inferred. Full sharp goal still open.
+A genuinely fresh whole-paper cold read of the final96page candidate,with
+all scientific content preserved and actual native-source binding verified.
+The upper target stays full scope and sharp goal remains open. A new report
+is read/adjudicated honestly;old reviews remain tied to their own versions.
+No confidence retry,hidden fallback,broader source/novelty/formal/circulation
+clearance is inferred from the scoped primary acceptance.
 
 ## Anti-success criteria
 
-- Repeating another generic statement that source4.1is independent of5,
-  or retrying an unchanged completed reviewer to get a preferred verdict.
-- Redesigning the fixed proof plan for another turn instead of implementing
-  its two remaining lemmas. The norm lemma is already in the notes.
-- Treating printed intermediate source errors as a theorem counterexample
-  or adopting an intended first-moment/1.24normalization correction.
-- Applying pointwise spatial heat-covariance monotonicity,forgetting the
-  Gaussian Fourierhalf,or repeating the wrong Brownian horizon prefactor.
-- Bounding occupation products by S1^kS2^k without adding1,or using only
-  homogeneity to exclude coordinate-zero faces.
-- Treating the canonical-object wording as a new easier solution choice;
-  it restates the original prescribed expansion/regularization object.
-- Using a filename/catalogue/hostparity as edition authentication,or
-  transplanting2002Th5.22to a third-edition PDF. Do not overwrite the payload.
-- Promoting diagnostics,new49proof revision or old19HIGH to current clearance;
-  creating Lean without approval,using HPC,contacting anyone,publishing,
-  or writing six repositories/siblings directly.
+- Rewriting the two construction lemmas again:they are written and reviewed.
+- Polling/restarting completed primary or cold-v6 jobs as though still live.
+- Treating exact optional-file availability as actual reviewer reading. The
+  primary read7required texts/36images;unchanged quantitative internals were
+  optional complete context and NOT freshly audited by that scoped contract.
+- Physical pointwise heat-covariance monotonicity,homogeneity-only zero-face
+  exclusion,missing Gaussianhalf/waveBrownian horizonfactor,or S^a<=S^k for
+  smallS. These delicate steps now have explicit correct proofs.
+- Interpreting the scoped printed-normalization discrepancy as a theorem
+  counterexample or changing source(1.24)/first-moment constants without Le.
+- Using the wrong-edition Kallenberg PDF to authenticate2002Th5.22. Its
+  pending custody ticket is NONBLOCKING;the finite-Laplace criterion is proved
+  directly in the notes. No direct six-repository write or payload overwrite.
+- Starting Lean,Skorohod,HPC,outreach or public release outside authorization.
 
 ## What the previous sessions produced
+
+Latest construction checkpoint (2026-10-29):all three construction lemmas
+written,8PASS/HIGH at f9303ed,final adoption30f80be. All eight minor findings
+adjudicated;seven clarified,eighth terseness note retained. Forty-six proofs
+and all formal statements match reviewed bytes. The additional1488exact
+Brownian determinant cases across124pairings passed but were NOT in the
+review packet;no reviewer credit. Native126member archive verified and owned
+raw removed. No live reviewer. Next step is fresh whole-paper cold,not more
+construction redesign. Full sharp goal and Lean/publication gates remain open.
+
 
 - Round4 candidate checkpoint `b428446d1cd35ba890b135a66e97378adfe0da41`:
   Section6 conditional Holder/Dirichlet transfer, Riesz applications, spatial-max
@@ -501,17 +490,15 @@ Latest checkpoints:
 
 ## Repo & git state at handoff
 
-- master;pre-handoff HEADfa710c56b059b8ff36d8a605ff371db80942c320,
-  mathematical checkpointd68b3e6789afb92e792ce116d7744cf419def0f3. Pushed and
-  <HUB>-synchronized. Only HANDOFF.md in this dedicated commit.
-- Current94page TeX/PDF,49proofs,cold6report/archive/adjudication,source
-  audit windows/controls,explicit fixed reconstruction plan and norm binding
-  committed. No WIP before this handoff. No live process or new science call.
-- Latest prior ACCEPTED math remains92page df1648b/19HIGHsourcea7e725e;
-  current new norm/construction is not yet reviewed or complete.
-- No sourcePDF,All.bib,sibling,canonical wiki or system configuration edited.
-  Normal reference tasks use sole canonical queue. No private Lean package,
-  source-author/coauthor message or public release.
+Mathematical adoption `30f80be4151a5af514c6728fa1d294cab07b57d0` is pushed to origin and synchronized with
+<HUB>,clean0/0. This handoff is a separate HANDOFF-only checkpoint on top.
+No native reviewer remains live. Native evidence is committed in the new
+review dir;the two owned terminal native/dryrun trees were removed only after
+committed-archive verification. Source/packet/PDF,review receipts,diagnostics,
+Progress and PRIVATE wiki proposal are committed. No external mathematical WIP
+is required to continue;routine launch scratch is duplicated by committed
+artifacts and need not be recreated. Preserve any newly appearing foreign WIP.
+Canonical wiki remains unpublished and All.bib/siblings/source PDFs untouched.
 
 ## Operating notes
 
