@@ -109,8 +109,8 @@ noise: Stratonovich regime\\[0.3em]
   moment and recovery of the static moment constant as the time exponent
   tends to zero; these three additional proofs passed their own scoped
   independent review.
-  A further candidate small-order screen tests direct Brownian clock copying
-  for the two-chain problem; it awaits its own independent review.
+  A further small-order screen tests direct Brownian clock copying
+  for a two-chain gap transform and passed its own scoped independent review.
 \end{abstract}
 
 \tableofcontents
@@ -7229,10 +7229,11 @@ Here \(p=1\) concerns \(\E u\), not \(\E|u|\).
 \section{A small-order test for direct Brownian clock copying}
 \label{S:two-clock-screen}
 
-\myCmts{This is a new candidate method screen, awaiting independent review.
-It tests a named extension of the source's analytic covariance substitution.
-It does not rule out two-clock representations with additional ordering
-terms, or refute the original sharp conjecture.}
+\myCmts{These two proofs passed a source-bound Opus5.5/HIGH review at
+\texttt{e68310f}, all seven contract groups passing. The result concerns a
+specified gap-transform substitution. It does not rule out ordering
+corrections, a diagonal-only representation, one-sided/asymptotic use,
+or the original sharp conjecture.}
 
 Theorem~6.1 of \cite{chen:author2026:time-dependency}*{pp.~37--42}
 represents the time Laplace transform of a \emph{fixed-order} mean by a
@@ -7537,14 +7538,25 @@ The analytic covariance, not its absolute-value bound, is being copied.
   This follows by integrating \(w e^{-\theta^2w/2}h_\Gamma(w)/4\)
   spectrally. In the white case it equals \(1/(4\theta^3)\).
   Thus static and homogeneous-degree checks alone miss the positive-\(a\)
-  loss. At the cross-pair level, the omitted multiplier is exactly
-  \(1+\lambda/(2\theta)\). This does not assert a correction rule at
+  loss. Relative to the shared-clock value \(\rho=1\), the omitted
+  cross-pair multiplier is exactly \(1+\lambda/(2\theta)\).
+  For smaller correlations the deficit can be larger.
+  This does not assert a correction rule at
   higher orders.
 
-  The transforms \(K_\times\) use gap damping. For the cross coefficient
-  with two external horizons, nonnegative Fubini adds the factor
-  \(1/(\theta_1\theta_2)\). Setting the two damping parameters equal
-  is not the single Laplace transform of a diagonal-horizon moment.
+  The transforms \(K_\times\) use gap damping. For the auxiliary cutoff
+  function
+  \[
+    F(T_1,T_2)=\int_0^{T_1}\int_0^{T_2}
+    |s-t|^{-a}\frac{\min(s,t)}2\ud s\ud t,
+  \]
+  nonnegative Fubini adds \(1/(\theta_1\theta_2)\) to its double
+  external-horizon transform. This function is not an actual unequal-time
+  solution correlation. Reversing chains ending at different physical
+  times instead shifts the cross covariance to
+  \(|T_1-T_2-s+t|^{-a}\).
+  Setting the two damping parameters equal is also not the single
+  Laplace transform of a diagonal-horizon moment.
   For a self-pair at common gap damping, one external horizon instead
   adds \(1/\theta\), recovering the known first-mean coefficient.
 

@@ -13,7 +13,10 @@
 - **Next execution gate:** explicit approval at PROJECT-GOAL.md decision point 4
   before companion creation. G0 and the alpha<=1 proof now have reviewed
   statements; that mathematical readiness does not authorize creating a repo.
-  No L1 wave, lease, code, local build or cluster job has been opened.
+  No companion L1 wave,lease or cluster job has been opened. Le separately
+  authorized standalone local Lean verification on2026-10-29;the clock-filter
+  pilot now has three elaborated statements and an owned-source replay.
+  Exact type/application review is pending;no official package gate is claimed.
 
 ## Planned waves (strategy in ROADMAP.md)
 
@@ -48,3 +51,13 @@ The existing creation proposal and initial G0 statement fence are unchanged.
 Before execution, renew registry/Mathlib reuse searches and compatible release
 pins, then use a private registered package and lease after approval. This
 ledger update is not a workaround for the creation gate.
+
+## Standalone local verification authorized by Le (2026-10-29)
+
+Clock-filter pilot:three statements compile using read-only pinned dependencies.
+Exact public types/standard-three axiom audit pass. Fresh owned-source replay
+passes;three false controls fail semantically. Two development failures are
+preserved. Analytic input is explicit and the measure need not be finite.
+Evidence:local-checks/clock-filter-v1/local-receipt.json. Independent exact-type/
+application correspondence pending. This pilot does not create the proposed
+companion,claim a package gate or open a cluster job. L0 remains PROPOSED.

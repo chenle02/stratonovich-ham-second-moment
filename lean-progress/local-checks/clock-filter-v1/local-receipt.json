@@ -1,0 +1,89 @@
+{
+  "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "lean_binary_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+  "mathlib_pin": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "dependency_pins": [
+    {
+      "name": "mathlib",
+      "revision": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+      "build_root_exists": true
+    },
+    {
+      "name": "plausible",
+      "revision": "dfa4f38190d07c37e315953e08b90fe2d95b3c24",
+      "build_root_exists": true
+    },
+    {
+      "name": "LeanSearchClient",
+      "revision": "d6b4c7be5be75ec4917c873ac50c756dc1436372",
+      "build_root_exists": true
+    },
+    {
+      "name": "importGraph",
+      "revision": "a41f0e9a4dea23188ea9cc1c41ac9f8bbafe0b93",
+      "build_root_exists": true
+    },
+    {
+      "name": "proofwidgets",
+      "revision": "df72b022e558978a1c50264cfc4d7fec86fa8e04",
+      "build_root_exists": true
+    },
+    {
+      "name": "aesop",
+      "revision": "4a174c490d8707121c4a9290800489f105d85e07",
+      "build_root_exists": true
+    },
+    {
+      "name": "Qq",
+      "revision": "dce0ad79c486cb1fb504af04f953c3466b0c6db8",
+      "build_root_exists": true
+    },
+    {
+      "name": "batteries",
+      "revision": "66e469188fe07963e5cf666c7d4433f45b8131c5",
+      "build_root_exists": true
+    },
+    {
+      "name": "Cli",
+      "revision": "c24fe6078c630e89b489bffe59b3e20ac30d12c8",
+      "build_root_exists": false
+    }
+  ],
+  "source_sha256": "0e501b255a23661c3c75d2dc98e08390c6ba4324a73537367f0c07aac6843d38",
+  "source_bytes_equal_development_and_fresh_replay": true,
+  "elaboration_exit": 0,
+  "audit_exit": 0,
+  "replay_elaboration_exit": 0,
+  "replay_audit_exit": 0,
+  "audit_transitive_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "owned_module_sha256_development": "04a7b26179a0008e8d706e8cab406bd39d020dc6b9b56ae9a5c93081ffb5b42e",
+  "owned_module_sha256_replay": "04a7b26179a0008e8d706e8cab406bd39d020dc6b9b56ae9a5c93081ffb5b42e",
+  "negative_controls": {
+    "WrongNormalization": {
+      "exit": 1,
+      "reason": "unsolved False;imports and tactics resolved"
+    },
+    "WrongFilter": {
+      "exit": 1,
+      "reason": "unsolved False;imports and tactics resolved"
+    },
+    "ZeroMeasureStrict": {
+      "exit": 1,
+      "reason": "unsolved False;imports and tactics resolved"
+    }
+  },
+  "scope": "Local source elaboration,full types,axiom inspection,semantic controls,owned-source replay;not canonical lean-pkg/Comparator/full-dependency build or SPDE verification",
+  "independent_type_application_review": "PENDING",
+  "caps": {
+    "CPUQuota": "200%",
+    "MemoryHigh": "4G",
+    "MemoryMax": "6G",
+    "TasksMax": 64,
+    "RuntimeMaxSec": 180
+  },
+  "resources_development": "\tCommand being timed: \"${LEAN_BIN} -j1 -D Elab.async=false -R ./lean-progress/local-checks/clock-filter-v1/attempt-03/src -o ./lean-progress/local-checks/clock-filter-v1/attempt-03/out/StratonovichHAMAudit/ClockFilter.olean ./lean-progress/local-checks/clock-filter-v1/attempt-03/src/StratonovichHAMAudit/ClockFilter.lean\"\n\tUser time (seconds): 1.11\n\tSystem time (seconds): 0.44\n\tPercent of CPU this job got: 94%\n\tElapsed (wall clock) time (h:mm:ss or m:ss): 0:01.64\n\tAverage shared text size (kbytes): 0\n\tAverage unshared data size (kbytes): 0\n\tAverage stack size (kbytes): 0\n\tAverage total size (kbytes): 0\n\tMaximum resident set size (kbytes): 1995800\n\tAverage resident set size (kbytes): 0\n\tMajor (requiring I/O) page faults: 132\n\tMinor (reclaiming a frame) page faults: 55640\n\tVoluntary context switches: 973\n\tInvoluntary context switches: 56\n\tSwaps: 0\n\tFile system inputs: 63368\n\tFile system outputs: 448\n\tSocket messages sent: 0\n\tSocket messages received: 0\n\tSignals delivered: 0\n\tPage size (bytes): 4096\n\tExit status: 0\n"
+}

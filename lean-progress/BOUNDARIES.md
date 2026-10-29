@@ -1,5 +1,17 @@
 # Verification boundaries
 
-No Lean claim exists yet. Each wave adds one line here when it OPENS:
-the exact statement, its hypotheses, and what remains outside Lean.
-A wave may not widen this file after it opens.
+CompanionL0 is still proposed. Separately authorized local pilot2026-10-29:
+clock-filter-v1 has the exact three statements frozen in its STATEMENT-FENCE.md
+before execution. No premise/conclusion was weakened during development.
+
+- Resolvent partial fractions:realtheta>0,lambda>0,r arbitrary.
+- Filter bounds:0<2theta/(2theta+lambda)<1 under positive parameters.
+- Conditional strict integral:arbitrary nonzero measure sigma onReal,positive
+  lambda sigma-a.e.,integrable w and w>0sigma-a.e. Derives filtered
+  integrability and STRICTintegral deficit. No finite-measure assumption.
+
+Paper sigma is volume restricted to positive lambda,not the spatial spectral
+measure. Analytic w_theta positivity/integrability,K/J representations,
+Brownian/spatial smoothing and SPDE identification remain outsideLean. No
+all-order,sharp-asymptotic or full-model conclusion follows from this pilot.
+Types compile with standard axioms;independent application check pending.

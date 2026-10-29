@@ -6,12 +6,12 @@
 
 ## Current state
 
-- **Phase:** fixed-positive-a model-level clock-copy screen IN PROGRESS. Current-author6.1/6.3read directly (statementp37,proofpp38--42,order obstructionp42). A named unweighted constant-correlation Brownian-clock extension is being falsified at the admissible white(1,1)cross pair;it is not a no-go for all two-clock representations or G:sharp. Existing type/static-limit results retain their scoped acceptance. No new claim is accepted yet.
+- **Phase:** fixed-positive-a clock screen REVIEWED at scoped7groups/HIGH,e68310f. The exact unweighted constant-correlation analytic substitution strictly underestimates the actual first cross gap transform throughout the original covariance class. This is not a no-go for lower/asymptotic clock use or G:sharp.
 - **Review boundaries:** prior92page quantitative/mild source `a7e725e` passed its own19checks/HIGH. The new8check review covers the direct norms, positive spatial Wick-measure limit, arbitrary joint vertex-width construction and their consumers. It does NOT freshly audit every unchanged operator/interval proof. Exact source/delivery/adoption bindings and limitations are in `reviews/2026-10-29-fixed-order-construction/`.
-- **Current artifact:**109pages,60proofs. Two new candidate proofs give low-order white Laplace calibrations and a strict spectral filter loss for the named direct Brownian clock-copying family,throughout the original nonzero covariance class. ALL58prior proofs/formal statements unchanged. Clean0errors/undefined/overfull/tabs,formatter idempotent. New screen requires its OWN HIGHreview;it does not rule out lower/asymptotic clock use or G:sharp.
-- **Open targets:** full fixed-positive-alpha0sharp p2constant via MODEL information;focused exposition/whole-paper clearance;private Lean after creation approval;canonical wiki provenance and novelty/circulation. Next route is current-author6.1/6.3two-clock FIXED-ORDER reconnaissance with exact white low-order checks. No numerical normalization correction adopted.
+- **Current artifact:**110pages,60proofs. Two clock-screen proofs and all58prior proofs match frozen science exactly;only the scope remark and abstract/status clarified. Build0errors/undefined/overfull/tabs,formatter idempotent. Final binding/adjudication in reviews/2026-10-29-two-clock-screen/.
+- **Open targets:** full fixed-positive-alpha0sharp p2constant via MODEL information;focused exposition/whole-paper clearance;isolated local Lean seam checks now authorized;separate companion creation still pending;canonical wiki provenance and novelty/circulation. Next model route is the full degree-four Stratonovich aggregate for a possible one-sided clock comparison;unproved. No numerical normalization correction adopted.
 - **Agent8coordination:** completed at read-only source/statement/ownership level,as requested by Le. Agent8accepted our exact map;three API component fits and stronger-premise gaps are recorded in lean-progress/coordination/2026-10-29-agent8/reuse-adjudication.md. Current coefficient gate sourced5fde707,evidence successorbffd4329;historical SWE receipts remain e5e9558. Source/API/pins checked,no new build/gate/companion/lease/registry transaction here. L0/PROPOSED and decision4unchanged.
-- **Authorization:** Le's continuing full goal includes the sharp/lower track. The current wave is the previously proposed bounded static-comparison/inequality step,with the HIGH review threshold unchanged. It does not redefine the original all-alpha0sharp target,claim novelty,promote a paper or authorize Lean creation. Report/honor PROJECT-GOAL decision points;companion-creation decision4remains pending. No correspondence/public release authorized.
+- **Authorization:** Le's continuing full goal includes the sharp/lower track. The current wave is the previously proposed bounded static-comparison/inequality step,with the HIGH review threshold unchanged. It does not redefine the original all-alpha0sharp target,claim novelty or promote a paper. Le now explicitly permits Lean verification;standalone local checks do not create a companion repo. Report/honor PROJECT-GOAL decision points;companion-creation decision4remains pending. No correspondence/public release authorized.
 - **Worker:** Codex/GPT author, paper-dev workflow; historical project handoff to agent #30 on 2026-10-26. Lean remains L0/PROPOSED (`lean-progress/PROGRESS.md`). Nine normal reference requests exist; new edition-custody intake is nonblocking, not source authentication.
 
 ## Round plan
@@ -3116,3 +3116,22 @@ valid advisory JSON,accepted=trueat CARRIER-ONLYscope. Preparation guard
 returns CARRIER-READYfor this exactnewcohort. Its math scope isNONE;fresh
 C1--C7scientific review and OWNsource ledger still required. Carrier archive
 members individually readback verified. No scientific verdict exists yet.
+
+### Clock screen scoped review adopted; local Lean pilot authorized
+
+Native Opus5.5/HIGH e68310f completed286.374s,7groups/14detailedPASS,
+accepted=true,coverage=true,12texts/12exact PNGs,no required repairs. All four
+minor findings adjudicated,including shared-clock multiplier and physical
+unequal-time versus auxiliary-cutoff distinction. Final110pages/60proofs,
+ALL60proof bodies match frozen science,58earlier proofs unchanged. The scope
+remark is clarified,not asserted byte-identical. No original sharp completion.
+
+Le2026-10-29:"You may use Lean verification to alleviate the review burden."
+A standalone local pilot checks resolvent partial fractions,pointwise filter
+bounds and a conditional STRICTintegral comparison for an arbitrary nonzero
+measure (not assumed finite). Analytic/SPDE representation,positive density
+and integrability stay explicit inputs. Three statements elaborate;printed
+transitive axioms are exactly propext/Classical.choice/Quot.sound. Three false
+controls fail with False,not setup errors;fresh OWNEDsource replay passes.
+Exact type/application correspondence review still pending. No new package,
+registered companion,donor writes,cluster or official lean-pkg gate is claimed.
