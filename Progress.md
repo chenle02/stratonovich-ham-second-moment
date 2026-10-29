@@ -6,10 +6,10 @@
 
 ## Current state
 
-- **Phase:** independent fixed-order construction ADOPTED at its own scoped primary gate. Frozen source `f9303ed` returned Opus5.5 PASS_WITH_NOTES/HIGH: all8checks PASS,527.512s,complete7texts/36exact PNGs,no required repairs. All8minor notes adjudicated. This replaces the source Chapter4/Appendix A construction imports at the ORIGINAL scope. The fresh seventh whole-paper cold packet is prepared (not yet dispatched); all six prior cold reports retain NOT CLEAR for their source versions.
+- **Phase:** seventh whole-paper cold read COLLECTED/adjudicated,NOT CLEAR. Source `322cb0e`,actual DeepSeek V4-Pro822.464s,22source tools(21successful,one repaired invalid regex). Mathematical spot-checks clean;no specific verified failed inequality or counterexample. Remaining concerns are working-note/journal organization,critical-path auditability and citation custody. Both citation caveats are now resolved against published page images. No unchanged cold/primary retry or further construction rewrite is warranted.
 - **Review boundaries:** prior92page quantitative/mild source `a7e725e` passed its own19checks/HIGH. The new8check review covers the direct norms, positive spatial Wick-measure limit, arbitrary joint vertex-width construction and their consumers. It does NOT freshly audit every unchanged operator/interval proof. Exact source/delivery/adoption bindings and limitations are in `reviews/2026-10-29-fixed-order-construction/`.
 - **Current artifact:**96pages,51proofs. Every formal statement is exactly reviewed at `f9303ed`;46proofs are byte equal and five have optional minor clarifications only. Critical joint/mixed/mild/full-upper proofs and quantitative interval/CP/Fock bodies are unchanged after review. Clean build:zero errors,undefined references/citations,overfull boxes,tabs. The original full Radon covariance/dimension class,upper/sharp targets and parameter-only upper constant are retained.
-- **Open targets:** final whole-paper cold read;G:sharp at the original full scope;private Lean once companion creation is approved;canonical wiki provenance and novelty/circulation gates. Printed first-moment normalization has no adopted correction.
+- **Open targets:** focused exposition/whole-paper clearance before circulation;G:sharp at the original full scope;private Lean once companion creation is approved;canonical wiki provenance and novelty/circulation gates. The full-upper proof map makes existing dependencies/review limits explicit. Near-static lower work remains a proposed partial step;no sharp completion or printed-normalization correction is adopted.
 - **Authorization:** Le requested pursuit of the full goal, with the HIGH threshold unchanged. This is a clearly delimited reconstruction of a known input, not a new lower/asymptotic proof wave. Report and honor PROJECT-GOAL decision points; companion-creation decision 4 remains pending. No source-author/coauthor correspondence or public release authorized.
 - **Worker:** Codex/GPT author, paper-dev workflow; historical project handoff to agent #30 on 2026-10-26. Lean remains L0/PROPOSED (`lean-progress/PROGRESS.md`). Nine normal reference requests exist; new edition-custody intake is nonblocking, not source authentication.
 
@@ -2821,3 +2821,49 @@ proof/formal comparison are bound in reviews/2026-10-29-full-upper-cold-v7/.
 Collector replay and all seven corrupted-evidence refusal controls pass.
 These are preparation checks,not scientific acceptance or actual reading.
 Native dispatch/model/session/prompt/HEAD/coverage must be verified next.
+
+## Seventh whole-paper cold read collected and adjudicated (2026-10-29)
+
+Actual native DeepSeek V4-Pro822.464s at frozen source322cb0e. Complete
+initial95page manuscript/bibliography,actual model/session/prompt,held HEAD,
+all input hashes and isolated source-tool targets verified.22tools,21completed;
+one invalid-regex grep was followed by a successful corrected search. Actual
+source reading was partial;the report opening overstates arXiv-v1consultation,
+which its tool trace does not show. No confidence grade was requested/invented.
+All18native/workspace/launch archive members individually read back and hashed.
+No live reviewer remains. Canonical96page TeX/PDF hashes are UNCHANGED.
+
+Disposition:NOT CLEAR. All15numbered items are adjudicated in the new review
+directory. The reader's mathematical spot-checks are clean;it gives no specific
+verified failed inequality. Main unease is genre/organization and the long
+critical combinatorial path. Exact L:fixed-split,L:terminal-wick and uniform-tail
+proofs match actual19HIGHprimarya7e725e. P:interval-coefficients matches final
+adoptiondf1648b,with its already adjudicated singleton split-count explanatory
+delta explicitly retained. Do not mislabel all four as exact primary bytes.
+No unchanged confidence retry or additional source4.1reconstruction is justified.
+The new full-upper proof map describes the actual branches and review limits.
+
+Citation12a resolved using existing-corpus published Balan--Conus PDF(first5
+pages and full direct rendered1492):Theorem2.1(b),Eq8/10andpage1492are correct.
+Citation12b resolved by reopening the published Chen--Hu2180PNG:Eq5.15has
+fixedintegerp>=1;its p2factor simplifies to2as written. Exact custody receipts
+are in source-checks/. These images were NOT supplied to the cold reader and
+gain no retrospective delivery credit. No new reference ticket was needed;
+nine earlier normal tickets persist. No Skorohod result was developed.
+
+Read-only wiki recon found a residual exact-first-mean sentence atline252of
+chen-25-time-dependency.md despite its corrected theorem/open-problem summary.
+A narrow private correction/hash receipt is saved;canonical wiki untouched.
+The separate PRIVATE project-status proposal is refreshed below this checkpoint.
+
+A scalar planning diagnostic records a restricted deterministic-surrogate
+Gaussian-tilt loss:2A*H^r-H^2is exactly twice A*H^r-H^2/2,rather than the
+full annealed2^qfactor. Five exact exponential-Gaussian controls explicitly
+show a FULL tilted mean can avoid that loss. This is not an SPDE theorem or
+a no-go for all Gaussian shifts. It prevents an unjustified long shortcut;
+near-static lower reconnaissance remains separate and unproved.
+
+Original full G:upper retains its primary proof acceptance;whole-paper
+circulation clearance and original G:sharp remain OPEN. Report at decision5;
+no Lean creation,paper promotion,normalization correction,source-author contact,
+public release or canonical project notification is authorized by this read.
