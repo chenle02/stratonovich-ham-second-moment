@@ -83,3 +83,9 @@ Phase-response8HIGH gate at0ae116c checked all6actual finite type
 applications(C6) and the independent analytic phase/operator/average proofs.
 The latter remain outside Lean. Interaction time regularity, full random
 flow, remainder and sharp event/source-variational map are still unproved.
+
+Interaction-driver finite pilot verifies normalization/parameter/scaling
+deductions only. Spatial/temporal integration, operator ideals/localization,
+source Gaussian covariance/convergence, dyadic versions/measurability/path
+convergence and maximum inequalities remain analytic. All-order flow/event
+and source constant maps are entirely open. Independent application pending.

@@ -3720,3 +3720,52 @@ Canonical110-page/60-proofTeX/PDF and WHITE13/original-class9entirelyunchanged.
 Private wiki patch only, canonical unchanged. No new useful absentref;
 existing9tickets persist. Durable lessons and precise next plan committed.
 Original full sharp objective ACTIVE.
+
+
+## Local interaction-driver path candidate (2026-10-29)
+
+Previous goal turn:PROGRESS, phase/operator/observable8HIGH at0ae116c,
+adoption7154a4e synchronized. Full sharp goal ACTIVE. New pre-investment
+REFRAMEis the exact next local first-driver/path consumer, not a new global
+Youngflow/paper/event result. Wiki rough-evolution/Young chapters retrieved;
+digest coverage is not a primary-source or novelty audit. Before a broader
+flow theorem the implication/value gate remains mandatory. No new useful
+absentref;9existingtickets persist, no duplicate queue or canonical edit.
+
+Candidate new proof notes/interaction-driver-path.md constructs local
+Xchi(t)=chi integralS(-u)B(Wdu)S(u) on balancedE=H1/2xH-1/2. The proposed
+short-time HS squared-mean bound is h^(2-a)for d1Rieszalpha<1 and
+h^(2-a)(1+|logh|)^2for white. It derives a positive Gaussian-mixture/time
+representation for the critical white trace, retains both frequencygroups/
+low modes, and uses finite propagation plus an enlarged cutoff rather than
+commuting chi with S. Constants are uniform on fixed finite T0, not globalT.
+
+Source-compatible common Gaussian cutoffs use independent temporal Laplace
+slices/spatialheat/optionalspatialprojection. Filtered and raw-defect
+covariance bounds apply LINEARLY, not as nonlinear mean/solution order.
+The candidate proves testwise/HS point convergence and a dyadic/polygonal
+argument for CthetaHS versions and LpDRIVERnorm convergence, theta between
+1/2andH=1-a/2. Countable local cutoffs can be compatible; no globalstationary
+HS operator claimed. All limits fixedhorizon, no large-time/cutoff interchange.
+
+A finite-grid first-driver maximum uses at most15delta^-2space/timeboxes,
+normalizationdelta^((1-a)/2), and a sufficientp>4/(1-a)budget, with no
+independence. It does NOTconstruct a flow/event of solutiongrowth or solve
+data1/growing-cone/nonzero-profile/spectral/sourceconstant problems.
+
+Checksbeforeanalyticreview:6positive convolution checks,12positive white
+trace cases,5spectral/time validations at60digits with explicit analytic
+tail budgets, actualmpmath1.4.1. Not certified intervals or full operator
+measurements. Numericalservice exit0,about25CPUseconds under caps. Eight
+actual finite normalization/Holder/dyadic/box Lean facts compile cleanly/
+replay/standardaxioms;5semantic Falsecontrols pass. One redundant-tactic
+failure and refused duplicate setup preserved; no live job restarted and
+all propositions unchanged. No newpackage/companion/lease/registry/donor
+write/cluster/Comparator. New Gaussian/HS/path/convergence/max claims need
+their OWN9-group HIGHgate; acceptance pending in the frozen packet.
+
+WHITE13/originalclass9andcanonical110-page/60-proofTeX/PDFunchanged.
+All-orderflow/remainder, global/uniform-localconstruction,growingcone/data1,
+nonzero-profileevent growth, intended sourceconstant map and higherdims
+remainOPEN. No source1.24repair,Skorohod moment/asymptoticdevelopment,
+novelty or circulationclaim. Full original objective ACTIVE.
