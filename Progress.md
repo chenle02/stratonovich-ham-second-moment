@@ -6,10 +6,10 @@
 
 ## Current state
 
-- **Phase:** bounded near-static lower-comparison/internal-corollary wave IN PROGRESS. Original full G:upper has been reported;the continuing user goal includes pursuit of G:sharp. The exact target/crosswalk and limited investment decision are in `reviews/2026-10-29-near-static-lower/reconnaissance.md`:REFRAME as an internal consequence,novelty UNVERIFIED. No new result is yet accepted. The seventh cold remains NOT CLEAR for journal presentation/auditability;no specific failed inequality was supplied and its citation caveats are resolved.
+- **Phase:** static lower comparison and near-static actual-mean gap ADOPTED at their own scoped primary gate. Source `46d1075` returned Opus5.5 PASS_WITH_NOTES/HIGH: all 7 checks PASS,308.952 seconds,complete 11 texts/11 exact PNGs,no required repairs. All six minor notes are adjudicated. This is partial progress toward the ORIGINAL full G:sharp,which remains open. The seven older whole-paper cold reports retain NOT CLEAR for their source versions.
 - **Review boundaries:** prior92page quantitative/mild source `a7e725e` passed its own19checks/HIGH. The new8check review covers the direct norms, positive spatial Wick-measure limit, arbitrary joint vertex-width construction and their consumers. It does NOT freshly audit every unchanged operator/interval proof. Exact source/delivery/adoption bindings and limitations are in `reviews/2026-10-29-fixed-order-construction/`.
-- **Current artifact:**102pages,55proofs. Four new candidate proofs establish raw-power coefficient interpolation,positive-series type,static temporal-minimum comparison and a near-static actual-mean gap. ALL51prior proofs and every prior formal statement are byte equal to the previous checkpoint. Clean build:zero errors,undefined references/citations,overfull boxes,tabs. The new section has no primary acceptance yet. Original full upper/sharp scope retained.
-- **Open targets:** focused exposition/whole-paper clearance before circulation;G:sharp at the original full scope;private Lean once companion creation is approved;canonical wiki provenance and novelty/circulation gates. The full-upper proof map makes existing dependencies/review limits explicit. Near-static lower work remains a proposed partial step;no sharp completion or printed-normalization correction is adopted.
+- **Current artifact:** 102 pages,55 proofs. Four new reviewed proofs give raw-time coefficient Holder,positive-series limsup type,all-admissible-time static baseline comparison,and a strict actual-mean gap in a nonempty near-static window. All formal statements match the frozen scientific source;53 proofs are byte equal and two have optional consumer/typography clarifications. ALL 51 earlier proofs remain unchanged. Clean build:zero errors,undefined references/citations,overfull boxes,tabs. Original full covariance/dimension and sharp targets retained.
+- **Open targets:** the full all-alpha0sharp p2constant;focused exposition/whole-paper clearance before circulation;private Lean once creation is approved;canonical wiki provenance and novelty/circulation gates. A next PLAN is to extend raw-power Holder to total two-chain coefficients and test constant-level static continuity. It is not yet proved/reviewed. No printed-normalization correction or numerical static white constant is adopted.
 - **Authorization:** Le's continuing full goal includes the sharp/lower track. The current wave is the previously proposed bounded static-comparison/inequality step,with the HIGH review threshold unchanged. It does not redefine the original all-alpha0sharp target,claim novelty,promote a paper or authorize Lean creation. Report/honor PROJECT-GOAL decision points;companion-creation decision4remains pending. No correspondence/public release authorized.
 - **Worker:** Codex/GPT author, paper-dev workflow; historical project handoff to agent #30 on 2026-10-26. Lean remains L0/PROPOSED (`lean-progress/PROGRESS.md`). Nine normal reference requests exist; new edition-custody intake is nonblocking, not source authentication.
 
@@ -17,9 +17,9 @@
 
 Gate class: whole-paper.
 Gate scope: original full upper-scale and sharp-constant research goal;
-the current intra-round checkpoint retains the reviewed quantitative estimate
-and reconstructs its fixed-order input at the unchanged scope; it is not a
-closed round or a whole-paper clearance.
+the current checkpoint retains the reviewed quantitative upper estimate and
+its independent construction,then adds the scoped internal lower comparison
+and near-static actual-mean gap;it is not whole-paper/circulation clearance.
 Mandatory protocols: AGENTS.md and PROJECT-GOAL.md;independent Opus5.5/HIGH
 with source delivery;fresh complete DeepSeek cold read before circulation;
 clean builds;decision5 report/stop and separate decision4 before Lean creation.
@@ -2921,3 +2921,45 @@ Upper-inputs.txt(actualupper-inputs.txt). No model dispatch occurred and no
 scientific verdict exists. Corrected the contract case without a waiver,
 packet/proof/source-image change. Refusal retained;new dry-run then FIRST
 scientific attempt follows at the same HIGH threshold.
+
+## Near-static lower comparison: primary/HIGH adoption (2026-10-29)
+
+Scientific source46d1075,mathematical freeze7790910,native first-party
+Opus5.5/HIGH308.952s,allC1--C7PASS,no required repairs. accepted=true and
+coverage_verified=true,complete11required texts/11exact PNGs. Actual model,
+unchanged HIGH threshold,held HEAD/clean tree and all committed/packet/workspace
+bytes verified at terminal collection.108native/dry-run archive members were
+individually read back and hashed. Earlier26member carrier archive and its
+invalid-JSON advisory remain separate,with NO mathematical credit.
+
+All six minor findings adjudicated. Fix comma to multiplication in the
+strict-gap calculation;make scaled-static norm summability explicit;clarify
+measure/distribution homogeneity,source expansion identification without
+uniqueness,and the temporal-exponent notation. Keep internal-corollary/novelty
+boundaries. The reviewer's optional numerical white-corollary aside is NOT
+adopted;only the structural moment-law ratio and positive actualL0are inputs.
+The full optional canonical text was supplied but not read in full,so old
+operator internals are not newly audited. Exact scope in adjudication-v1.md.
+
+New result:for every original admissible spatial covariance/dimension and
+positive temporal exponenta,the static baseline gives normalized p2liminf
+>=2^kappa_st*L0. For each fixed nonzero covariance there is a nonempty window
+0<a<a_star in which this lower rate is STRICTLY greater than twice the actual
+Eu limsup rate. Consequently it beats2L_*(a)in that window IF the intended
+first-mean lower rate is valid. No E|u|/full-pintermittency or universal-window
+claim. It does NOT establish the original2^kappa_st*L_*(a)lower target for
+arbitrarya,or the matching sharp upper constant. G:sharp remains ACTIVE/open.
+
+Final102page source has every formal statement equal to the scientific
+freeze,53of55proofs exact,two minor clarifications,and ALL51prior proofs
+unchanged. Clean gate and exact source/PDF hashes are in final-status-binding.
+The static endpoint full series is independently constructed from our
+fractional-time upper bound,not the source's time-uniform(4.3)estimate.
+
+This is the promised bounded internal consequence,not a new-paper/novelty
+verdict. No authenticated exhaustive citation-chain audit;novelty UNVERIFIED.
+No reference absent from the six-repository corpus was authenticated in this
+wave,no duplicate request enqueued,nine earlier requests persist. No Lean,
+HPC,Skorohod development,normalization correction,outreach or release.
+The next-coefficient-step.md file is a PLAN for a further p2coefficient
+interpolation/static-continuity calibration;it gains no current review credit.

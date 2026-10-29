@@ -1,6 +1,9 @@
 """Freeze the bounded internal lower-comparison candidate and image calibration."""
 from pathlib import Path
-import subprocess,re,json,hashlib,shutil,gzip
+import subprocess,re,json,hashlib,shutil,gzip,argparse
+parser=argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--build-log',type=Path,required=True)
+args=parser.parse_args()
 ROOT=Path(__file__).resolve().parents[2];R=Path(__file__).resolve().parent
 P=R/'packet-v1';CAL=R/'carrier-packet-v1';assert not P.exists() and not CAL.exists();P.mkdir();CAL.mkdir()
 src=ROOT/'notes/notes_stratonovich_ham_second_moment.tex';s=src.read_text();old=subprocess.check_output(['git','show','HEAD:'+str(src.relative_to(ROOT))],cwd=ROOT,text=True)
@@ -83,5 +86,5 @@ required_repairs,limitations. Decide your own legibility verdict/confidence.
 State in limitations:this is not a scientific review,mathematical vote or
 proof/circulation clearance. Escape all strings as valid JSON.
 ''')
-(R/'build-driver.txt.gz').write_bytes(gzip.compress(Path('<HOME>/.local/state/tmp/stratonovich-near-static-build.txt').read_bytes(),mtime=0))
+(R/'build-driver.txt.gz').write_bytes(gzip.compress(args.build_log.read_bytes(),mtime=0))
 print(json.dumps({'pages':pages,'proofs':55,'new':new,'required_texts':11,'source_images':11,'members':len(list(P.iterdir()))},indent=2))

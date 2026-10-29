@@ -1,0 +1,89 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "lower.txt: lines 1-363 (complete)",
+    "construction-inputs.txt: lines 1-898 and 899-1278 (complete, 1278 lines)",
+    "upper-inputs.txt: lines 1-427 (complete)",
+    "project-goal.md: lines 1-69 (complete)",
+    "change-binding.json: lines 1-24 (complete)",
+    "static-source-map.md: lines 1-37 (complete)",
+    "source-rendering.json: lines 1-82 (complete)",
+    "near-static-calibration.py: lines 1-49 (complete)",
+    "near-static-calibration.json: lines 1-131 (complete)",
+    "white-order-four-screen.py: lines 1-35 (complete)",
+    "white-order-four-screen.json: lines 1-98 (complete)",
+    "chen-hu-2145-top.png: full image",
+    "chen-hu-2145-bottom.png: full image",
+    "static-2146-top.png: full image",
+    "static-2146-bottom.png: full image",
+    "chen-hu-2147.png: full image",
+    "static-2150-top.png: full image",
+    "static-2150-bottom.png: full image",
+    "chen-hu-2152.png: full image",
+    "chen-hu-2165.png: full image",
+    "static-2171-top.png: full image",
+    "static-2171-bottom.png: full image",
+    "canonical.tex (optional context, not required): non-truncated Grep for near-static/minorant/cross-family wording, plus lines 90-119 (abstract) and 7030-7055 (closing status) only",
+    "Not read (optional): canonical.pdf, chen-hu-2025.pdf, chen-hu-2025.txt, references.bbl, construction-inputs beyond packet, unchanged interval/phase internals"
+  ],
+  "checks": [
+    {
+      "claim": "C1: Static source class, Dalang, the structural moment law and L0 in (0,infinity)",
+      "verdict": "PASS",
+      "reason": "Recomputed. Original H:homog has d<=3, Gamma>=0 even PD tempered Radon, Gamma(cA)=c^(d-alpha)Gamma(A), 0<alpha<d or alpha=d=1, and alpha+alpha0<2, so alpha<2. This gives 0<alpha<2 wedge d or alpha=d=1, the exact range of Chen-Hu Thm 1.2 (p.2147). A measure homogeneous of degree d-alpha is the same as a distribution homogeneous of degree -alpha, which is (1.8) read distributionally. The source explicitly allows generalized gamma (Dirac, p.2146 bottom, p.2147; generalized-integral convention (2.18), p.2152). In d=1 with alpha=d, homogeneity of degree 0 plus Radon local finiteness forces a multiple of delta_0, which is the source's white endpoint. In d=3 the source itself uses Green measures (mu_n^{t,x}, p.2152 bottom). Shell calculation: mu(cA)=c^alpha mu(A) (proved in L:damped-homogeneous-norms). The shell 2^j<|xi|<=2^(j+1) contributes at most 2^(-2j) 2^((j+1)alpha) mu(B1). The sum is mu(B1)(1+2^alpha sum 2^(j(alpha-2)))<infinity since alpha<2, so C_alpha=2^alpha. (1.9) at p=1,2 gives ratio 2^((4-alpha)/(3-alpha))=2^kappa_st, independent of the value of M. L0=((3-alpha)/2)(2M^(1/2)/(4-alpha))^kappa_st is positive iff M>0. For g_lambda=lambda^(d/2)g(lambda x), the interaction term is (lambda^alpha I)^(1/2) and the gradient term is lambda^2 B. I=integral of |FT(g^2)|^2 d mu>0 for a Gaussian g and nonzero mu. So small lambda gives a positive value, and A c^(alpha/2)-B c^2 is correct. No absolute white constant is used. The candidate uses neither (4.3) nor the time-uniform constants on p.2171."
+    },
+    {
+      "claim": "C2: Static endpoint construction from the fractional-time regularized upper bound",
+      "verdict": "PASS",
+      "reason": "The static positive-width field has covariance gamma_2eps(y-z)>=0, variance gamma_2eps(0)<infinity, and is constant in time and mean-square continuous, so L:terminal-wick applies. Diagonal and mixed-width second moments are sum_D rho_{eps,D}(l1<t,l2<t) after chain reversal. (E:spatial-wick-limit) with phi=1 gives a common limit, so the Hilbert Cauchy argument of L:joint-fixed-order goes through. Covariance gamma_{eps_j+eps_h} matches the source heat convention (2.14)/(2.18)/(3.23). Comparison at amplitude r/sqrt c: gamma^0_{delta0,b0} is decreasing in |t|, so it is >=c on [0,1]^2. Each of the k pairs carries a factor c^(-1)gamma^0>=1 times the same gamma_2eps on both sides, so the comparison is exact termwise and uniform in N and eps. Partial-sum moment <= full moment follows from nonnegative mixed moments. (E:regularized-scaled-moment) is applied at T=1 (allowed, T>=1) to the source regularization of the homogeneous Gamma at widths (eps,delta0) and exponent b0<a_max. It is not applied to Gamma_eps. Sending N to infinity at fixed eps preserves the bound by L2 convergence. L:uniform-series-tail (a one-parameter family suffices) gives ||X_n^(0)(1)||<=B^(1/2) r^(-n) for every r>1. ||X_n(t)||^2=sum_D rho_D(l1<t,l2<t) scales as t^((4-alpha)n) by rho_D homogeneity with k=n. Summability at t follows with r>t^((4-alpha)/2). The limits are L2 limits of the source's S_n(g_n) regularizations, so the series is the source canonical expansion. No circularity in the supplied text: T:full-upper uses interval models, finite Wick comparison and L:joint-fixed-order. The Brownian occupation bound only bounds measure masses and does not presuppose U or (1.9)."
+    },
+    {
+      "claim": "C3: L:mean-coefficient-holder (raw-power Holder, width removal, homogeneity, mean series)",
+      "verdict": "PASS",
+      "reason": "Single chain (m,n)=(2k,0), so only self-pairings arise. omega_{eps,D} is finite with density J_{eps,D}<=gamma_2eps(0)^k prod r_l. Disjoint pairs factor the full-cube time integral into k copies of integral |s-r|^(-a), finite for a,b<1. omega is absolutely continuous, so diagonals are null. On the disjoint union over D, prod|Delta|^(-a)=(prod|Delta|^(-b))^(a/b). Holder with exponents b/a and b/(b-a) against the constant 1 gives m^eps(a)<=m^eps(0)^(1-a/b) m^eps(b)^(a/b). If m^eps(0)=0 then omega=0 and both sides vanish. The interpolated multiplier is the raw power, because gamma^0_delta tends to Gamma(a)^(-1)Gamma(a)|t|^(-a)=|t|^(-a). Width removal: gamma^0_eta<=|t|^(-a) gives F_{eps,eta}<=F_{eps,0}. (E:joint-temporal-tail) with an empty second chain gives a remainder uniform in eps. Limsup and liminf over eps are sandwiched between b_D(eta) and b_D(eta)+r(eta), and eta to 0 gives b_D, the joint diagram value equal to E X_2k via P:mixed. At a=0, (E:spatial-wick-limit) with phi=1 is used and no Gamma_E(0) appears. Scaling: 2k time Jacobians, 2k Green masses, c^(-alpha k) from the covariance and c^(-ak) from time give t^((4-alpha-a)k), with width eps/t^2. Odd means vanish. The interchange uses L:vertex-crude for a>0 and the static norm series at a=0. Every z>=0 equals t^beta(a), so F_a is finite. No uniform-in-a rate is used."
+    },
+    {
+      "claim": "C4: L:positive-series-type",
+      "verdict": "PASS",
+      "reason": "c0=1 gives tau>=0. For L>tau there is z0 with F(z)<=e^(L z^(1/nu)) for z>=z0, and monotonicity gives C_L=F(z0) on [0,z0]. Minimizing L z^(1/nu)-k log z gives z^(1/nu)=nu k/L and c_k<=C_L e^(nu k)(L/(nu k))^(nu k). The integral bounds k log k-k+1<=log k!<=k log k-k+1+log k are correct (sum vs integral of the monotone log). Hence ((k!)^nu c_k)^(1/k)<=C_L^(1/k)(L/nu)^nu (ek)^(nu/k), which tends to (L/nu)^nu, so K<=(tau/nu)^nu, with K=0 when tau=0. Converse: for A>K (A>0), c_k<=A^k/(k!)^nu eventually. sum a_k^nu<=(sum a_k)^nu for a_k>=0, nu>=1, with a_k=(Az)^(k/nu)/k!, gives exp(nu(Az)^(1/nu)). The polynomial prefix contributes 0 to the normalized log, so tau<=nu A^(1/nu). Combining gives equality whenever either side is finite. The result is a limsup type statement; zero or oscillating coefficients are allowed. No Stirling formula or named entire-function theorem is imported."
+    },
+    {
+      "claim": "C5: P:static-minorant-lower and static time scaling",
+      "verdict": "PASS",
+      "reason": "gamma^0_{delta,a}(s-r)>=gamma^0_{delta,a}(T)=c_{delta,T}>0 for |s-r|<=T, which covers self- and cross-pairs in both chains. c increases to T^(-a) as delta tends to 0. At fixed widths and fixed N, both p=1 and p=2 moments are finite Wick sums over identical terminal kernels and pairings, with the same gamma_2eps on every pair. The comparison is termwise, with no pointwise spatial monotonicity, PSD-difference or coupling. In d=3 Green smoothing is removed first, per the L:terminal-wick paragraph. Joint (eps,delta) limit at fixed N: L:joint-fixed-order handles the left side. On the right, products of static fixed orders converge in L1, and the expression is a polynomial in c (only even total orders survive) with coefficients converging, so the limit has amplitude sigma=sqrt(T^(-a))=T^(-a/2). For N to infinity, the fractional side uses L:vertex-crude. On the static side, sigma^n||X_n(T)||=||X_n(sigma^(2/(4-alpha))T)|| is summable by the static norm series (implicit but immediate). Moment identity: each total order 2k carries sigma^(2k) T^((4-alpha)k), via rho_D homogeneity including unequal and empty splits, so E U_sigma(T)^p=E U(sigma^(2/(4-alpha))T)^p for p=1,2. The clock T^(1-a/(4-alpha)) tends to infinity, and (1-a/(4-alpha))(4-alpha)/nu=kappa(a). The calibration script independently confirms that the variance-instead-of-amplitude error would lose a/nu. Sanity check on white d=1 order 2: c0(a)/2>=1/12."
+    },
+    {
+      "claim": "C6: P:near-static-mean-gap",
+      "verdict": "PASS",
+      "reason": "E u>=1 and E u<=(E u^2)^(1/2)<=B(T)^(1/2) by T:full-upper at exponent b give M(b)<infinity with no printed first-mean constant. Substituting z=T^beta(a) gives z^(-1/nu)=T^(-kappa(a)), so tau(a)=M(a), and tau(0)=L0 is a limit. The type lemma gives K(0)=(L0/nu)^nu>0 and K(b)<infinity. Holder times (k!)^nu=(k!)^(nu(1-theta))(k!)^(nu theta), followed by k-th roots and the eta-argument, gives K(a)<=K(0)^(1-theta)B_b^theta, which is valid with zero coefficients. Then M(a)=nu K(a)^(1/nu)<=nu K(0)^(1/nu)(B_b/K(0))^(theta/nu)=L0(B_b/K(0))^(a/(b nu)). B_b/K(0)>=2 gives a_*=b log2/log(B_b/K(0)) in (0,b]. For a<a_*, strict monotonicity gives (B_b/K(0))^(a/(b nu))<2^(1/nu), so 2M(a)<2^(1+1/nu)L0=2^kappa_st L0, since kappa_st=(4-alpha)/(3-alpha)=1+1/nu. Combined with the p=2 liminf from C5, the inequality is strict. The window depends on Gamma and b, all original classes are retained, and no E|u|, universal-window or all-a claim is made."
+    },
+    {
+      "claim": "C7: Claim boundaries, calibrations and implication check",
+      "verdict": "PASS",
+      "reason": "As alpha0 tends to 0: the clock exponent tends to 1, kappa(a) to kappa_st, and the mean bound to L0. Static p1/p2 consistency holds since 2^kappa_st>2. If a valid L_*(a) lower first-mean rate holds, then L_*(a)<=liminf<=M(a), so the improvement over 2L_*(a) is correctly conditional. The original 2^kappa_st L_*(a) target and G:sharp are explicitly left open. Skorohod appears only as a boundary remark. Refutation attempt by substitution: the static minorant is essentially an immediate internal corollary of Wick positivity, |s-r|^(-a)>=T^(-a), static scaling and Chen-Hu (1.9). Its substantive content is the construction-level justification, mainly the static series via the fractional upper bound. The near-static gap adds a genuine log-convexity (Holder-in-exponent) plus type-lemma step that is not printed in the supplied sources. No novelty judgment is made. Diagnostics: the near-static script is exact rational algebra plus order-2 Holder. The white order-4 screen gives static m_2(0)=11/17280. Then (k!)^2 m_k is 1/12 at k=1, and (4*11/17280)^(1/2)~0.0505 at k=2, against K(0)=(L0/2)^2=(3/4)^(1/2)/16~0.054 from (1.12), which is plausible. These are finite falsification checks only. The lower.txt comment, abstract (canonical.tex 104-107) and closing item (7040-7045) all describe the new section as awaiting review, with no prior acceptance claimed."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "lower.txt line 334 has a typo: \"2L_0,2^{1/\\nu}\" renders as a comma-separated pair. It should be a product, e.g. \"2L_0\\,2^{1/\\nu}\".",
+      "The direct class match with Chen-Hu Theorem 1.2 relies on reading (1.8) distributionally for non-function homogeneous measures, e.g. anisotropic or lower-dimensionally supported Gamma in d=2,3. lower.txt only proves Dalang and cites the pages. One sentence noting that measure homogeneity of degree d-alpha is equivalent to distributional homogeneity of degree -alpha, and that the source admits generalized gamma via (2.18), would make the import explicit.",
+      "In P:static-minorant-lower, L2 summability of the static series at amplitude sigma=T^(-a/2) is used without being stated. It follows at once from sigma^n||X_n^(0)(T)||=||X_n^(0)(sigma^(2/(4-alpha))T)|| and the every-t summability of L:mean-coefficient-holder. Stating it would close the reference.",
+      "The imported U of (1.9) is the source's expansion solution (2.10). The identification of the candidate's U with it goes through equality of the fixed-order L2 limits (Def. 2.2/Thm 3.8(i)), which is sound. No uniqueness in the sense of Definition 2.1 is used or needed, and this could be stated.",
+      "Notation gamma^0_{delta,a} in lower.txt versus gamma^0_delta in upper-inputs.txt (2.23)-(2.24): the exponent subscript is a harmless but new decoration.",
+      "Implication/novelty context (not a validity defect): the all-a static baseline lower bound is close to an immediate corollary of the supplied published source plus Wick positivity. The near-static strict gap is the more substantive addition. Neither reaches the original 2^kappa_st L_*(a) target."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is an AI review, not human verification, novelty audit, Lean check, or circulation clearance. A valid acceptance of the four proofs grants no completion of the original G:sharp goal.",
+    "Reused interfaces (L:terminal-wick, L:uniform-series-tail, T:full-upper incl. (E:regularized-scaled-moment), L:spatial-wick-measures, L:joint-fixed-order, P:mixed, L:vertex-crude) were checked only for their current application, per the contract. The unchanged interval/phase/Fock internals, e.g. Proposition interval-coefficients, were not supplied or audited. Non-circularity of T:full-upper with respect to U and (1.9) therefore rests on the supplied proof text and dependency statements.",
+    "Chen-Hu Theorem 1.2/(1.9) is imported as a published theorem. Its proof and the exact value of M were not re-verified, and only the structural p^kappa_st law and the sign of M are used.",
+    "The unchanged status of the 51 prior proofs (change-binding.json) and build-gate claims were not independently machine-checked. No commands were executed.",
+    "Diagnostic scripts were read but not run. Their JSON outputs were inspected as finite calibrations only.",
+    "canonical.tex was consulted only via a non-truncated Grep and two short ranges (abstract and closing status). It is optional context and was not read in full."
+  ]
+}

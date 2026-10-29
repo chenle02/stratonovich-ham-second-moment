@@ -103,7 +103,7 @@ noise: Stratonovich regime\\[0.3em]
   the sharp target, and is not an input to this upper bound.
   Section~\ref{S:near-static-lower} adds a candidate static lower comparison
   and a near-static gap from twice the actual first-mean growth rate.
-  These new internal consequences await their own independent review;
+  These internal consequences passed their own scoped independent review;
   the original sharp constant remains open.
 \end{abstract}
 
@@ -6617,9 +6617,10 @@ on the empty tuple. This definition introduces no kernel symmetrization.
 \section{A static lower comparison and a near-static mean gap}
 \label{S:near-static-lower}
 
-\myCmts{This section is a new candidate internal consequence, awaiting its own
-source-bound cross-family review. It retains the original spatial class and
-sharp target. No novelty or numerical normalization is claimed.}
+\myCmts{The four proofs in this section passed a source-bound Opus5.5/HIGH
+review at \texttt{46d1075}, all seven checks passing. This is a scoped
+internal consequence; the original sharp target and whole-paper
+clearance remain open. No novelty or numerical normalization is claimed.}
 
 Fix a nonzero spatial covariance in Hypothesis~\ref{H:homog}, and put
 \[
@@ -6635,6 +6636,9 @@ with covariance $|s-r|^{-a}\Gamma$, for $0<a<a_{\max}$.
 At $a=0$ define $u^{(0)}=U$ to be the static canonical solution with the
 same spatial covariance and initial data $(1,0)$. This endpoint means the
 temporal covariance one, not a substitution into $\Gamma_{\mathrm E}(a)$.
+The notation $\gamma_{\delta,a}^0$ records the temporal exponent $a$
+in the same Laplace-prefix regularization previously denoted by
+$\gamma_\delta^0$.
 
 \paragraph{Imported static input.}
 From Chen--Hu~\cite{chen.hu:25:hyperbolic}*{Theorem~1.2, (1.9), p.~2147},
@@ -6662,6 +6666,11 @@ in its (2.18), p.~2152. Our spectral ball law gives
   \le\mu(B_1)+C_\alpha\mu(B_1)\sum_{j\ge0}2^{j(\alpha-2)}<\infty.
 \]
 Thus the static Dalang condition holds in every admissible dimension.
+Measure homogeneity of degree $d-\alpha$ is equivalent to distributional
+homogeneity of degree $-\alpha$, so the source's (1.8) applies in its
+explicit generalized-covariance convention. The static object is identified
+by its canonical heat-limit expansion; no uniqueness assertion for other
+mild solutions is used.
 
 For $a>0$ write $X_n^{(a)}$ for our fixed-order terms; at zero use the
 corresponding static terms. Set
@@ -6868,6 +6877,13 @@ corresponding static terms. Set
   finite polynomial at fixed order, so its limit is the static model
   with noise amplitude $\sigma=T^{-a/2}$. This requires no uniform
   approximation in $T$ or in a varying infinite-order series.
+  At every fixed $\sigma,T>0$, static norm homogeneity gives
+  \[
+    \sigma^n\|X_n^{(0)}(T,x)\|_2
+    =\|X_n^{(0)}(\sigma^{2/(4-\alpha)}T,x)\|_2.
+  \]
+  Thus the amplitude-scaled static norm series is summable at the
+  effective time already covered by Lemma~\ref{L:mean-coefficient-holder}.
   Finally let $N\to\infty$ using the two $L^2$ expansions, with the
   static one supplied in Lemma~\ref{L:mean-coefficient-holder}. Means and
   squared moments converge, preserving the finite-order inequality.
@@ -6947,7 +6963,7 @@ corresponding static terms. Set
   Since $B_b/K(0)\ge2$, the window in~\eqref{E:near-static-window}
   is positive and at most $b$. For $0<a<a_*$,
   \[
-    2M(a)<2L_0,2^{1/\nu}
+    2M(a)<2L_0\cdot2^{1/\nu}
     =2^{\kappa_{\rm st}}L_0,
   \]
   because $\kappa_{\rm st}=1+1/\nu$.
@@ -7042,7 +7058,7 @@ Conjecture~\ref{Conj:allp}, not a reason to adjust the target.}
     Jensen comparison and a matching sharp upper constant. The new candidate
     in Section~\ref{S:near-static-lower} supplies a static lower comparison
     for all admissible temporal exponents and a strict actual-mean gap only
-    near the static endpoint; it still needs independent review.
+    near the static endpoint; these proofs passed their own scoped review.
     A representation
     using two ordered chains is a possible research direction, not a
     proved result of these notes. The intended normalization of the

@@ -1,3 +1,10 @@
+Implementation update2026-10-29:the bounded route below is now written in
+Section14and passed its OWN7check Opus5.5/HIGH review at46d1075. Evidence:
+reviews/2026-10-29-near-static-lower/. The original source4.1discussion below
+is HISTORICAL;our own joint-limit lemma is used,and the static endpoint norm
+series is supplied from our fractional-time upper bound. Original full sharp
+scope remains open. The rest of this file preserves the pre-wave recon.
+
 # Near-static lower route:bounded reconnaissance only
 
 Decision:REFRAME to a possible internal corollary/inequality screen after the
