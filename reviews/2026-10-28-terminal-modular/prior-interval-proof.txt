@@ -1,0 +1,278 @@
+\begin{proof}
+  Zero noise is trivial; omit any zero $\sigma_i$.
+  Replacing $(\sigma_i,W_i^\epsilon)$ by
+  $(|\sigma_i|,\operatorname{sgn}(\sigma_i)W_i^\epsilon)$ leaves the
+  potential unchanged and preserves the joint law of the independent
+  real Gaussian fields. Thus, we may assume $\sigma_i>0$.
+  We first work with finitely many Gaussian coordinates of each field and
+  a bounded spatial Fourier band. Denote their common phase Hilbert space
+  by $\mathcal H_\rho=L^2(\Omega;X_\rho)$.
+  The initial data are projected to the band. This contracts every
+  $X_\rho$ norm; we keep the original $\|v\|_\rho$ on the right of
+  the estimates. The projections converge strongly to the original data.
+
+  \emph{Ordinary coefficients and their existence.}
+  Give interval $i$ its own amplitude $z_i$ and write
+  \[
+    \mathcal U(T;\boldsymbol z)v
+    =\sum_{\boldsymbol r\in\N_0^{\mathcal F}}
+    \boldsymbol z^{\boldsymbol r}U_{\boldsymbol r}v.
+  \]
+  These are ordinary power-series coefficients, without factorials
+  incorporated in their definition. At fixed smoothing and finite inventory,
+  put $v_{\max}=\sup_t\sum_i\sigma_i^2\mathbf1_{I_i}(t)
+  \Gamma_\epsilon(0)<\infty$.
+  On Gaussian degrees at most $n$, multiplication by the instantaneous
+  field has norm at most $2\sqrt{n+1}\sqrt{v_{\max}}$.
+  The free phase has norm at most $e^{\lambda h/2}$ in $X_\lambda$,
+  and a phase insertion $(u,w)\mapsto(0,Wu)$ costs at most its
+  unweighted multiplication norm divided by $\lambda$.
+  Thus, on $\max_i|z_i|\le z_*$ the total order-$n$ phase is bounded by
+  \begin{equation}\label{E:interval-entire-majorant}
+    e^{\lambda T/2}
+    \frac{(2z_*\sqrt{n+1}\sqrt{v_{\max}}T/\lambda)^n}{n!}
+    \|v\|_\lambda .
+  \end{equation}
+  The series of these bounds converges for every finite $z_*$.
+  It justifies the entire vector series and its absolutely convergent
+  energy double series. This existence bound may depend on the full
+  inventory and smoothing; it is not used as a uniform estimate.
+
+  Set
+  $Q_{\boldsymbol r,\boldsymbol q}
+  =\langle U_{\boldsymbol r}v,U_{\boldsymbol q}v
+  \rangle_{\mathcal H_{1/T}}$.
+  Both vectors use the same Gaussian fields. Independence is between
+  distinct colors, not between the two copies in this inner product.
+  For real $s$, substitution $z_i=s$ gives the exact identity
+  \begin{equation}\label{E:interval-energy-splits}
+    [s^{2k}]\E\|\mathcal U(T;s)v\|_{1/T}^2
+    =\sum_{|\boldsymbol r|+|\boldsymbol q|=2k}
+    Q_{\boldsymbol r,\boldsymbol q}.
+  \end{equation}
+  Reflection of Gaussian color $i$ multiplies $U_{\boldsymbol r}v$
+  by $(-1)^{r_i}$. Hence $Q_{\boldsymbol r,\boldsymbol q}=0$ unless
+  $r_i+q_i=2k_i$ for every $i$, where $\sum_i k_i=k$.
+  If $k_i=0$, both coefficients are obtained by setting $z_i=0$;
+  this removes that field exactly. There are at most $k$ active colors.
+  For fixed $\boldsymbol k$, the number of splits is
+  $\prod_i(2k_i+1)\le3^k$.
+
+  For this fixed $\boldsymbol k$, truncate the Hermite degree of color $i$
+  at $N_i=2k_i$. A word contributing to $U_{\boldsymbol r}$ has at most
+  $r_i\le2k_i$ insertions of that color. Starting in its vacuum, none of
+  its intermediate degrees exceeds $2k_i$. The same holds on the other
+  copy. Thus these cutoffs preserve the two selected vector coefficients
+  exactly, including creation followed by annihilation. There is no
+  Hermite-degree limit in this coefficient calculation.
+
+  \emph{The split determines which norm costs are present.}
+  Put $\lambda=k/T$. All fields are centered; the following names describe
+  their appearances in the coefficient, not their Gaussian means:
+  \[
+    \begin{array}{c|c|c}
+      k_i & (r_i,q_i)&\text{method}\\ \hline
+      1 &(2,0)\text{ or }(0,2)&\text{mean term on one copy}\\
+      1 &(1,1)&\text{one insertion on each copy}\\
+      \ge2 &r_i+q_i=2k_i&\text{Cauchy on each copy where used}.
+    \end{array}
+  \]
+  Call the second class $\mathcal C$. For the other active colors set
+  \[
+    \omega_i=k_i/h_i,\qquad
+    d_i=2\sqrt{2k_i+1}\sqrt{R_\alpha},\qquad
+    \varrho_i=\frac{\delta_a\omega_i^{2-a}}{\sigma_i d_i},
+    \qquad a=\alpha/2.
+  \]
+  Put $\mathcal A_r=\{i\notin\mathcal C:r_i>0\}$ and
+  $\mathcal A_q=\{i\notin\mathcal C:q_i>0\}$, restricting to active colors.
+  On either copy write $\mathcal A$ for its corresponding set.
+  Its unused amplitudes are evaluated at zero.
+  In particular, a split $(2,0)$ supplies no field or cost on the second
+  copy. Use the Cauchy circles $|z_i|=\varrho_i$ for $i\in\mathcal A$.
+
+  With the colors in $\mathcal C$ set to zero, write $P_z(t,s)$ for this
+  background evolution. Its phase weight is
+  \[
+    \Lambda(t)=\lambda+\sum_{i\in\mathcal A}
+    \omega_i\mathbf1_{I_i}(t).
+  \]
+  This is a bounded deterministic operator on the Hilbert space containing
+  all the retained Gaussian factors. Its input may depend on the very
+  fields present in the background. No conditional independence between
+  successive background segments is assumed.
+  Lemma~\ref{L:interval-contractions}, tensored with all other color
+  factors, gives for every $\rho>0$ the sandwich coefficient
+  $D(t)=\sum_{i\in\mathcal A}|z_i|\sigma_i d_i
+  \mathbf1_{I_i}(t)$.
+  On every constant segment,
+  \[
+    D(t)\le\delta_a\sum_{i\in\mathcal A}
+    \omega_i^{2-a}\mathbf1_{I_i}(t)
+    \le\delta_a\Lambda(t)^{2-a}.
+  \]
+  The last inequality uses $2-a>1$.
+  Lemma~\ref{L:interval-complex} bounds each segment by
+  $100e^{2\Lambda(t)\Delta t}$ in its own phase norm.
+  At most $k$ colors have at most $2k$ endpoints, so there are at most
+  $2k+1$ such segments. Also
+  \[
+    \int_0^T\Lambda(t)\ud t
+    \le\lambda T+\sum_{i\in\mathcal A}\omega_i h_i\le2k.
+  \]
+  The norm changes, including the initial and final ones, cost at most
+  \begin{equation}\label{E:interval-copy-metric}
+    D_{\mathcal A}:=\prod_{i\in\mathcal A}
+    (1+k_i/(\lambda h_i)).
+  \end{equation}
+  Only an ending interval can cause a loss. Its single ending is counted
+  once, even if other intervals overlap it or end simultaneously.
+
+  \emph{The simultaneous single-insertion coefficient.}
+  Let $m=|\mathcal C|$ and let $J_i(u,w)=(0,\sigma_iW_i^\epsilon u)$,
+  with the stated finite cutoffs. Regard the background amplitudes as
+  fixed and give colors in $\mathcal C$ amplitudes $y_i$.
+  Dyson expansion relative to $P_z$ shows that the coefficient of
+  $\prod_{i\in\mathcal C}y_i$ is
+  \begin{equation}\label{E:interval-cross-cube}
+    \sum_{\pi}\int_{D_\pi}
+    P_z(T,t_{\pi_m})J_{\pi_m}
+    P_z(t_{\pi_m},t_{\pi_{m-1}})\cdots
+    J_{\pi_1}P_z(t_{\pi_1},0)v\,\ud\boldsymbol t,
+  \end{equation}
+  where $\pi$ runs over permutations of $\mathcal C$ and
+  \[
+    D_\pi=\{\boldsymbol t\in
+    \prod_{i\in\mathcal C}(I_i\cap[0,T]):
+    t_{\pi_1}<\cdots<t_{\pi_m}\}.
+  \]
+  Indeed, a degree-one appearance of every $y_i$ uses exactly $m$
+  insertions and a permutation of the $m$ distinct colors. Each ordered
+  Dyson integral has coefficient one. The $D_\pi$ partition the cube up
+  to null diagonals. Thus the sum in~\eqref{E:interval-cross-cube} is a
+  single integral of the time-sorted word over that cube, without a
+  multiplier $m!$ or $1/m!$. If $m=0$, it means $P_z(T,0)v$.
+
+  Before $J_i$ occurs, color $i$ is in its vacuum: the background and
+  all other insertions act identically on its Gaussian factor.
+  Lemma~\ref{L:interval-contractions} therefore bounds this insertion
+  from the other color factors into the enlarged phase space by
+  \[
+    \sigma_i\sqrt{R_\alpha}\Lambda(t_i)^{(\alpha-2)/2}
+    \le\sigma_i\sqrt{R_\alpha}\lambda^{(\alpha-2)/2}.
+  \]
+  Previously created colors are part of the remaining tensor factor in
+  that lemma. No estimate for annihilation on an occupied color is used
+  at a single-insertion step.
+
+  Apply these bounds sequentially along a word. Splitting background
+  segments at the $m\le k$ insertion times gives at most $3k+1$ pieces.
+  Their exponential costs still multiply to at most $e^{4k}$ and their
+  fixed constants to at most $100^{3k+1}$. Each metric change still occurs
+  just once along the word, so its entire metric budget is
+  $D_{\mathcal A}$, not a new power of that budget at each insertion.
+  Minkowski over the cube consequently bounds its vector coefficient by
+  \begin{equation}\label{E:interval-cross-vector}
+    C^kD_{\mathcal A}\|v\|_\lambda
+    \prod_{i\in\mathcal C}
+    \sigma_i\sqrt{R_\alpha}\lambda^{(\alpha-2)/2}h_i .
+  \end{equation}
+  This holds uniformly on all the background Cauchy circles.
+
+  \emph{Cauchy on the remaining variables and the exact inventory sum.}
+  The vector in~\eqref{E:interval-cross-vector} is holomorphic in the
+  remaining amplitudes. For the first copy Cauchy's vector formula gives
+  the additional factor $\prod_{i\in\mathcal A_r}\varrho_i^{-r_i}$;
+  on the second copy it gives $\prod_{i\in\mathcal A_q}\varrho_i^{-q_i}$.
+  This is Cauchy extraction of two vector coefficients, followed by
+  Cauchy--Schwarz between them, not Cauchy applied to a squared norm.
+  Since $\|w\|_{1/T}\le k\|w\|_\lambda$ and
+  $\|v\|_\lambda\le\|v\|_{1/T}$, the bound for
+  $|Q_{\boldsymbol r,\boldsymbol q}|$ has a further factor $k^2$.
+  Absorb it, the $3^k$ splits and the segment constants into $C^k$.
+  The combined metric factor is $D_{\mathcal A_r}D_{\mathcal A_q}$.
+  Its exponent for color $i$ is the number of positive entries in
+  $(r_i,q_i)$: one for a mean singleton, at most two for a higher color.
+
+  For any color estimated on circles, the two exponents add to $2k_i$.
+  Since $d_i^2\le12k_iR_\alpha$,
+  \[
+    \varrho_i^{-2k_i}
+    \le(CR_\alpha\sigma_i^2h_i^{4-\alpha})^{k_i}
+    k_i^{-(3-\alpha)k_i}
+    \le\frac{(CR_\alpha\sigma_i^2h_i^{4-\alpha})^{k_i}}
+    {(k_i!)^\nu}.
+  \]
+  After $\sigma_i^2\le c h_i^{-\alpha_0}$, the resulting local weights,
+  with a common per-total-order constant understood, are
+  \[
+    \begin{array}{c|c}
+      \text{case}&\text{weight in energy}\\ \hline
+      (2,0)\text{ or }(0,2)&R_\alpha h_i^\beta
+      (1+1/(\lambda h_i))\\
+      (1,1)&R_\alpha\lambda^{\alpha-2}h_i^{2-\alpha_0}\\
+      k_i=l\ge2&R_\alpha^l h_i^{\beta l}
+      (1+l/(\lambda h_i))^2/(l!)^\nu .
+    \end{array}
+  \]
+  The first metric factor occurs on only one copy; the last costs at
+  most one factor on each copy. These weights increase with $h_i$:
+  their expanded powers are $\beta,\beta-1,p$ and
+  $\beta l,\beta l-1,\beta l-2$, all positive.
+  There are two orientations of the singleton mean and one cross split.
+  If their weights are $m_i$ and $c_i$, then
+  $2m_i+c_i\le3(m_i+c_i)$.
+  Higher degree $l$ has at most $2l+1\le3^l$ splits.
+  Thus, summing the split choices costs only a constant per total order,
+  and the singleton weight is the sum of the two types in the table.
+  Substituting $h_i\le LT/i$ and $\lambda=k/T$ therefore extracts
+  $C^kR_\alpha^kT^{\beta k}$, leaving $v_i$ at $k_i=1$ and
+  $b_{i,l}$ at $k_i=l\ge2$ from Lemma~\ref{L:inventory-product}.
+
+  There is no further multinomial factor: for nonnegative weights
+  $w_{i,0}=1$, ordinary multiplication of power series gives exactly
+  \[
+    \sum_{\sum_i k_i=k}\prod_i w_{i,k_i}
+    =[z^k]\prod_i\left(\sum_{l\ge0}w_{i,l}z^l\right).
+  \]
+  Apply this identity to the sum in~\eqref{E:interval-energy-splits},
+  using the two singleton alternatives together in $v_i$.
+  Lemma~\ref{L:inventory-product} now proves
+  \eqref{E:interval-coefficient-bound} at the finite cutoffs.
+
+  \emph{Identification and summation.}
+  Keep positive smoothing, finite inventory and a fixed coefficient.
+  The finite-degree multiplication bound used in
+  \eqref{E:interval-entire-majorant} is uniform in mode and band cutoffs.
+  On finite-coordinate Gaussian vectors the omitted annihilation tail is
+  zero and the creation tail tends to zero by its omitted pointwise
+  variances and dominated convergence. Density in each finite degree
+  extends this strong convergence. Closedness identifies the limit with
+  actual multiplication by the measurable smoothed field.
+  Fourier projections converge strongly and commute with free evolution.
+  Dominated time integration thus identifies every fixed Duhamel word.
+  The selected coefficients of the local Hermite truncation were already
+  equal to those untruncated words. The full actual series is constructed
+  separately using~\eqref{E:interval-entire-majorant}, choosing a sufficient
+  degree cutoff anew at each order. A fixed-degree truncated propagator
+  is not identified with the full evolution.
+  The entire majorant gives convergence uniformly on compact amplitude
+  sets. The coefficients estimated above are therefore those of the
+  actual finite-interval model, with no zero-smoothing limit at this step.
+
+  The nonuniform number $v_{\max}$ was used only for this identification.
+  The uniform coefficient bound contains no such number. Its constants
+  come from $\delta_{\alpha/2}$, the fixed phase bound, the inventory
+  lemma and $L,c$; covariance enters only through $R_\alpha^k$.
+  The zero-order energy is at most $e\|v\|_{1/T}^2$.
+  Put $x=CR_\alpha T^\beta$ and $Y=e^{\nu x^{1/\nu}}\ge1$.
+  Since $\nu>1$, $\sum_{k\ge0}x^k/(k!)^\nu\le Y$.
+  Summing the coefficient bounds in absolute value gives
+  \[
+    \E\|\mathcal U(T;1)v\|_{1/T}^2
+    \le(e+Y-1)\|v\|_{1/T}^2\le eY\|v\|_{1/T}^2.
+  \]
+  Absorbing $\nu C^{1/\nu}$ into the parameter-only constant proves
+  \eqref{E:interval-phase-bound}. This proves
+  Proposition~\ref{P:interval-coefficients}.
+\end{proof}

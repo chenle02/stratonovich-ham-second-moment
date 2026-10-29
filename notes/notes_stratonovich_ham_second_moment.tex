@@ -66,7 +66,7 @@
 
 \title{The second moment of the hyperbolic Anderson model with time-dependent
 noise: Stratonovich regime\\[0.3em]
-{\normalsize Working notes (revised full upper bound, 2026-10-28)}}
+{\normalsize Working notes (terminal-kernel revision, 2026-10-28)}}
 \author{Le Chen}
 \date{\today}
 \maketitle
@@ -139,13 +139,16 @@ Throughout we write
 The main assertion of these notes is Theorem~\ref{T:full-upper}: the
 second moment has a finite upper growth rate at scale $t^\kappa$ for
 every covariance in Hypothesis~\ref{H:homog}. The sharp constant in
-Goal~\ref{G:sharp} is open. Theorem~\ref{T:full-upper} uses the mixed
-expansion and convergence in Section~\ref{S:G0}, the Gaussian and complex
-phase estimates in Sections~\ref{S:static-phase}--\ref{S:static-all-orders},
+Goal~\ref{G:sharp} is open. Theorem~\ref{T:full-upper} uses the known fixed-order construction in
+\cite{chen:author2026:time-dependency}*{Theorem~4.1, p.~22}, the Gaussian
+and complex phase estimates in Sections~\ref{S:static-phase}--\ref{S:static-all-orders},
 and the interval coefficient and inventory estimates in
 Section~\ref{S:interval-upper}. It does not use the alternative covariance
 interpolation arguments in Sections~\ref{S:higher-alpha}--\ref{S:energy-fidelity}
-as inputs. Those arguments are retained to record their separate hypotheses
+as inputs. Its uniform geometric tail is proved here from scaled finite-model
+moments; the older mixed-series and crude estimates in
+Section~\ref{S:G0} are not needed for that limit passage. The alternative
+arguments are retained to record their separate hypotheses
 and limitations. Section~\ref{S:d1-upper} also gives explicit constants for
 $\alpha\le1$; the full-class theorem asserts a finite uniform constant,
 without giving a numerically optimized value.
@@ -191,19 +194,23 @@ equation, and $[0,t]^n_<=\{0<s_1<\dots<s_n<t\}$. Odd expected Stratonovich
 integrals vanish and even ones are given by Wick's formula
 \cite{chen:author2026:time-dependency}*{(2.19)--(2.21)}, a sum over pair
 partitions $\mathcal D\in\Pi_n$ of $\{1,\dots,2n\}$ that includes
-self-pairings within one chain. The second moment of a single chaos term is
+self-pairings within one chain. The second moment of one ordered term is
 the two-chain pairing integral \cite{chen:author2026:time-dependency}*{Theorem~4.1, (4.3)}:
 \begin{equation}\label{E:Sn2}
   \begin{split}
-    \E\big[S_n(g_n(\cdot,t,x))\big]^2
+    \E\big[S_n(g_n(\cdot,t,x))^2\big]
     &=\sum_{\mathcal D\in\Pi_n}\int_{[0,t]^n_<\times[0,t]^n_<}\ud s
     \int_{(\R^d)^n\times(\R^d)^n}\ud x
-    \Big(\prod_{\rho=1}^2\prod_{l\in I_\rho}G(s_l-s_{l-1},x_l-x_{l-1})\Big)\\
+    \Big(\prod_{\rho=1}^2\prod_{l\in I_\rho}
+    G(s_l-s_{p(l)},x_l-x_{p(l)})\Big)\\
     &\qquad\times\prod_{(j,k)\in\mathcal D}|s_j-s_k|^{-\alpha_0}\gamma(x_j-x_k),
   \end{split}
 \end{equation}
-with $I_1=\{1,\dots,n\}$, $I_2=\{n+1,\dots,2n\}$ and the conventions of
-\cite{chen:author2026:time-dependency}*{Theorem~4.1}.
+with $I_1=\{1,\dots,n\}$ and $I_2=\{n+1,\dots,2n\}$.
+Here $p(l)$ is the preceding label in its own chain; at the first vertex
+of either chain use the common root $(s_{p(l)},x_{p(l)})=(0,0)$.
+Thus, the second chain does not continue the first one. This spells out
+the source's conventions in Theorem~4.1.
 
 The full mixed-term expansion is justified in Proposition~\ref{P:mixed}.
 
@@ -461,6 +468,14 @@ pp.~13--14, and Theorem~4.1}.
   finiteness and nonnegativity of each diagram, without interchanging
   an infinite series or asserting a pointwise value of a singular kernel.
 
+  More precisely, define the involution on vertex labels by
+  \[
+    \rho(j)=m+1-j\quad(1\le j\le m),\qquad
+    \rho(m+j)=m+n+1-j\quad(1\le j\le n),
+  \]
+  and set $D^{\rm rev}=\{\{\rho(a),\rho(b)\}:\{a,b\}\in D\}$.
+  Since $\rho^2$ is the identity, this is a bijection of $\Pi_k$.
+
   In each chain reverse the order of its variables, replace each time by
   $t$ minus that time, and each spatial coordinate by $x$ minus that
   coordinate. Each terminal Green factor becomes an initial Green factor.
@@ -511,8 +526,9 @@ pp.~13--14, and Theorem~4.1}.
     {(1-\alpha_0)(2-\alpha_0)(3-\alpha_0)}.
   \]
   For the $(0,2)$ integral, the delta covariance sets the two spatial
-  vertices equal. The integral of the first Green factor is $r$, whereas
-  the second Green factor at zero is $1/2$. Its time integral is half the
+  vertices equal. Write $0<r<s<t$ for their ordered time variables.
+  The first factor $G_r$ has spatial mass $r$, while
+  $G_{s-r}(0)=1/2$. Its time integral is half the
   preceding display. The $(2,0)$ term is identical. This proves
   Lemma~\ref{L:white-test}.
 \end{proof}
@@ -720,7 +736,10 @@ inequality.
   $\theta=\beta k/t$ changes only a constant to the power $k$, leaving
   the same factorial denominator $(k!)^{3-\alpha-\alpha_0}$.
   It therefore also loses the factorial power $\alpha_0$ relative to
-  Chen's Theorem~1.2, so the loss is not specific to the second moment. Both the crude and homogeneous upper bounds are
+  $\beta/\kappa=3-\alpha$, the power corresponding to the target
+  series scale. This is a comparison of scales, not a coefficient estimate
+  asserted by the source's Theorem~1.2. The loss is not specific to the
+  second moment. Both the crude and homogeneous upper bounds are
   consistent with the Jensen lower bound, being at larger time scales.
   No identification with the Skorohod second moment is used: its exclusion
   of self-pairings changes the combinatorics, already visible in the
@@ -4610,9 +4629,10 @@ for that evolution.
 \section{Interval fields and the full upper bound}
 \label{S:interval-upper}
 
-\myCmts{The expanded upper-bound argument passed renewed scoped correctness
-review. Optional notation and sign-convention clarifications are included.
-A fresh whole-paper cold read and the sharp constant remain open.}
+\myCmts{The preceding expanded deduction passed scoped correctness review,
+but a second cold read requested explicit terminal kernels and a modular
+coefficient assembly. The new lemmas and revised proof below are pending
+fresh review. Whole-paper cold clearance and the sharp constant remain open.}
 
 Write
 \[
@@ -4844,88 +4864,63 @@ and suppose
 Write $\mathcal U_{\mathcal F}^\epsilon(T;s)$ for phase evolution with
 potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
 
-\begin{proposition}[Uniform interval coefficients]\label{P:interval-coefficients}
-  There is $C=C(\alpha,\alpha_0,L,c)$ such that, for real Schwartz phase $v$,
-  every $k\ge1$ satisfies
-  \begin{equation}\label{E:interval-coefficient-bound}
-    \left|[s^{2k}]\E\|\mathcal U_{\mathcal F}^\epsilon(T;s)v\|_{1/T}^2\right|
-    \le\frac{C^k R_\alpha^k T^{\beta k}}{(k!)^\nu}\|v\|_{1/T}^2,
+\begin{lemma}[A fixed degree-split estimate]\label{L:fixed-split}
+  Retain the finite interval fields above, with $R_\alpha>0$ and
+  $\sigma_i>0$. Fix integers $r_i,q_i,k_i\ge0$ with
+  $r_i+q_i=2k_i$, and put $k=\sum_i k_i\ge1$, $\lambda=k/T$.
+  Represent $W_i^\epsilon(x)=\sum_jg_{ij}e_{ij}(x)$ as in
+  Lemma~\ref{L:interval-contractions}. Retain $m_i$ Gaussian modes,
+  a spatial Fourier band $S_b$, and Hermite cutoff $N_i=2k_i$ on
+  color $i$. Write $P=\bigotimes_iP_{N_i}$
+  and set
+  \[
+    B_i=P S_b\left(\sum_{j=1}^{m_i}g_{ij}M_{e_{ij}}\right)S_bP,
+    \qquad V_{\boldsymbol z}(t)
+    =\sum_i z_i\sigma_i\mathbf1_{I_i}(t)B_i.
+  \]
+  Let $\mathcal M^{\rm cut}_{\boldsymbol z}(T)$ be the phase evolution
+  with this bounded potential and $A_0=-\Delta$ on the band. Define
+  $U_{\boldsymbol r}v=[\boldsymbol z^{\boldsymbol r}]
+  \mathcal M^{\rm cut}_{\boldsymbol z}(T)v$, with the projected
+  deterministic initial phase in the Gaussian vacuum. Put
+  \[
+    \begin{gathered}
+      \mathcal I=\{i:k_i>0\},\qquad
+      \mathcal C=\{i:k_i=1,\ r_i=q_i=1\},\\
+      \mathcal B=\mathcal I\setminus\mathcal C,\qquad
+      \ell_i=\mathbf1_{\{r_i>0\}}+\mathbf1_{\{q_i>0\}}.
+    \end{gathered}
+  \]
+  There is a finite $C_{\rm split}=C_{\rm split}(\alpha)$, uniform
+  in all these cutoffs and in the finite inventory, such that
+  \begin{equation}\label{E:fixed-split-bound}
+    \begin{split}
+      |\langle U_{\boldsymbol r}v,U_{\boldsymbol q}v
+      \rangle_{L^2(\Omega;X_{1/T})}|
+      \le{}&k^2 C_{\rm split}^k R_\alpha^k\|v\|_{1/T}^2
+      \prod_{i\in\mathcal C}
+      (\sigma_i^2h_i^2\lambda^{\alpha-2})\\
+      &\quad\times\prod_{i\in\mathcal B}
+      \frac{(\sigma_i^2h_i^{4-\alpha})^{k_i}}{(k_i!)^\nu}
+      (1+k_i/(\lambda h_i))^{\ell_i}.
+    \end{split}
   \end{equation}
-  uniformly in $\epsilon>0$ and the finite family.
-  In particular,
-  \begin{equation}\label{E:interval-phase-bound}
-    \E\|\mathcal U_{\mathcal F}^\epsilon(T;1)v\|_{1/T}^2
-    \le e\exp\{C R_\alpha^{1/\nu}T^{\beta/\nu}\}\|v\|_{1/T}^2.
-  \end{equation}
-\end{proposition}
+  In particular, a singleton used twice on one copy has $\ell_i=1$;
+  a higher color has at most two metric factors.
+\end{lemma}
 
 \begin{proof}
-  Zero noise is trivial; omit any zero $\sigma_i$.
-  Replacing $(\sigma_i,W_i^\epsilon)$ by
-  $(|\sigma_i|,\operatorname{sgn}(\sigma_i)W_i^\epsilon)$ leaves the
-  potential unchanged and preserves the joint law of the independent
-  real Gaussian fields. Thus, we may assume $\sigma_i>0$.
-  We first work with finitely many Gaussian coordinates of each field and
-  a bounded spatial Fourier band. Denote their common phase Hilbert space
-  by $\mathcal H_\rho=L^2(\Omega;X_\rho)$.
-  The initial data are projected to the band. This contracts every
-  $X_\rho$ norm; we keep the original $\|v\|_\rho$ on the right of
-  the estimates. The projections converge strongly to the original data.
-
-  \emph{Ordinary coefficients and their existence.}
-  Give interval $i$ its own amplitude $z_i$ and write
-  \[
-    \mathcal U(T;\boldsymbol z)v
-    =\sum_{\boldsymbol r\in\N_0^{\mathcal F}}
-    \boldsymbol z^{\boldsymbol r}U_{\boldsymbol r}v.
-  \]
-  These are ordinary power-series coefficients, without factorials
-  incorporated in their definition. At fixed smoothing and finite inventory,
-  put $v_{\max}=\sup_t\sum_i\sigma_i^2\mathbf1_{I_i}(t)
-  \Gamma_\epsilon(0)<\infty$.
-  On Gaussian degrees at most $n$, multiplication by the instantaneous
-  field has norm at most $2\sqrt{n+1}\sqrt{v_{\max}}$.
-  The free phase has norm at most $e^{\lambda h/2}$ in $X_\lambda$,
-  and a phase insertion $(u,w)\mapsto(0,Wu)$ costs at most its
-  unweighted multiplication norm divided by $\lambda$.
-  Thus, on $\max_i|z_i|\le z_*$ the total order-$n$ phase is bounded by
-  \begin{equation}\label{E:interval-entire-majorant}
-    e^{\lambda T/2}
-    \frac{(2z_*\sqrt{n+1}\sqrt{v_{\max}}T/\lambda)^n}{n!}
-    \|v\|_\lambda .
-  \end{equation}
-  The series of these bounds converges for every finite $z_*$.
-  It justifies the entire vector series and its absolutely convergent
-  energy double series. This existence bound may depend on the full
-  inventory and smoothing; it is not used as a uniform estimate.
-
-  Set
+  All cutoff generators are bounded and piecewise constant in time.
+  Their evolution is a finite product of bounded block exponentials,
+  hence is entire in every complex amplitude. Cauchy extraction of its
+  vector coefficients is therefore legitimate. Write
+  $\mathcal H_\rho=L^2(\Omega;X_\rho)$ and
   $Q_{\boldsymbol r,\boldsymbol q}
-  =\langle U_{\boldsymbol r}v,U_{\boldsymbol q}v
-  \rangle_{\mathcal H_{1/T}}$.
-  Both vectors use the same Gaussian fields. Independence is between
-  distinct colors, not between the two copies in this inner product.
-  For real $s$, substitution $z_i=s$ gives the exact identity
-  \begin{equation}\label{E:interval-energy-splits}
-    [s^{2k}]\E\|\mathcal U(T;s)v\|_{1/T}^2
-    =\sum_{|\boldsymbol r|+|\boldsymbol q|=2k}
-    Q_{\boldsymbol r,\boldsymbol q}.
-  \end{equation}
-  Reflection of Gaussian color $i$ multiplies $U_{\boldsymbol r}v$
-  by $(-1)^{r_i}$. Hence $Q_{\boldsymbol r,\boldsymbol q}=0$ unless
-  $r_i+q_i=2k_i$ for every $i$, where $\sum_i k_i=k$.
-  If $k_i=0$, both coefficients are obtained by setting $z_i=0$;
-  this removes that field exactly. There are at most $k$ active colors.
-  For fixed $\boldsymbol k$, the number of splits is
-  $\prod_i(2k_i+1)\le3^k$.
-
-  For this fixed $\boldsymbol k$, truncate the Hermite degree of color $i$
-  at $N_i=2k_i$. A word contributing to $U_{\boldsymbol r}$ has at most
-  $r_i\le2k_i$ insertions of that color. Starting in its vacuum, none of
-  its intermediate degrees exceeds $2k_i$. The same holds on the other
-  copy. Thus these cutoffs preserve the two selected vector coefficients
-  exactly, including creation followed by annihilation. There is no
-  Hermite-degree limit in this coefficient calculation.
+  =\langle U_{\boldsymbol r}v,U_{\boldsymbol q}v\rangle_{\mathcal H_{1/T}}$.
+  Both copies use the same Gaussian fields.
+  Coordinates outside $\mathcal I$ have degree zero on both copies and
+  are evaluated at zero. Thus, the argument concerns at most $k$ fields,
+  without changing their original labels in the final inventory sum.
 
   \emph{The split determines which norm costs are present.}
   Put $\lambda=k/T$. All fields are centered; the following names describe
@@ -5040,7 +5035,7 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
   \end{equation}
   This holds uniformly on all the background Cauchy circles.
 
-  \emph{Cauchy on the remaining variables and the exact inventory sum.}
+  \emph{Vector Cauchy and the fixed split.}
   The vector in~\eqref{E:interval-cross-vector} is holomorphic in the
   remaining amplitudes. For the first copy Cauchy's vector formula gives
   the additional factor $\prod_{i\in\mathcal A_r}\varrho_i^{-r_i}$;
@@ -5050,7 +5045,8 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
   Since $\|w\|_{1/T}\le k\|w\|_\lambda$ and
   $\|v\|_\lambda\le\|v\|_{1/T}$, the bound for
   $|Q_{\boldsymbol r,\boldsymbol q}|$ has a further factor $k^2$.
-  Absorb it, the $3^k$ splits and the segment constants into $C^k$.
+  Keep $k^2$ explicit. The segment constants on both copies are bounded
+  by a constant to the power $k$.
   The combined metric factor is $D_{\mathcal A_r}D_{\mathcal A_q}$.
   Its exponent for color $i$ is the number of positive entries in
   $(r_i,q_i)$: one for a mean singleton, at most two for a higher color.
@@ -5064,6 +5060,108 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
     \le\frac{(CR_\alpha\sigma_i^2h_i^{4-\alpha})^{k_i}}
     {(k_i!)^\nu}.
   \]
+  The cross colors contribute one factor
+  $R_\alpha\sigma_i^2h_i^2\lambda^{\alpha-2}$ each.
+  The circle colors contribute the displayed radius bound and exactly
+  $\ell_i$ metric factors. Since
+  $|\mathcal C|+\sum_{i\in\mathcal B}k_i=k$,
+  their covariance factors multiply to $R_\alpha^k$.
+  The fixed segment constants and powers of $\delta_{\alpha/2}^{-1}$
+  are absorbed into $C_{\rm split}^k$. This gives
+  \eqref{E:fixed-split-bound}. This proves Lemma~\ref{L:fixed-split}.
+\end{proof}
+
+\begin{proposition}[Uniform interval coefficients]\label{P:interval-coefficients}
+  There is $C=C(\alpha,\alpha_0,L,c)$ such that, for real Schwartz phase $v$,
+  every $k\ge1$ satisfies
+  \begin{equation}\label{E:interval-coefficient-bound}
+    \left|[s^{2k}]\E\|\mathcal U_{\mathcal F}^\epsilon(T;s)v\|_{1/T}^2\right|
+    \le\frac{C^k R_\alpha^k T^{\beta k}}{(k!)^\nu}\|v\|_{1/T}^2,
+  \end{equation}
+  uniformly in $\epsilon>0$ and the finite family.
+  In particular,
+  \begin{equation}\label{E:interval-phase-bound}
+    \E\|\mathcal U_{\mathcal F}^\epsilon(T;1)v\|_{1/T}^2
+    \le e\exp\{C R_\alpha^{1/\nu}T^{\beta/\nu}\}\|v\|_{1/T}^2.
+  \end{equation}
+\end{proposition}
+
+\begin{proof}
+  Zero noise is trivial; omit any zero $\sigma_i$.
+  Replacing $(\sigma_i,W_i^\epsilon)$ by
+  $(|\sigma_i|,\operatorname{sgn}(\sigma_i)W_i^\epsilon)$ leaves the
+  potential unchanged and preserves the joint law of the independent
+  real Gaussian fields. Thus, we may assume $\sigma_i>0$.
+  We first work with finitely many Gaussian coordinates of each field and
+  a bounded spatial Fourier band. Denote their common phase Hilbert space
+  by $\mathcal H_\rho=L^2(\Omega;X_\rho)$.
+  The initial data are projected to the band. This contracts every
+  $X_\rho$ norm; we keep the original $\|v\|_\rho$ on the right of
+  the estimates. The projections converge strongly to the original data.
+
+  \emph{Ordinary coefficients and their existence.}
+  Fix $\lambda>0$ temporarily. Give interval $i$ its own amplitude
+  $z_i$ and write
+  \[
+    \mathcal U(T;\boldsymbol z)v
+    =\sum_{\boldsymbol r\in\N_0^{\mathcal F}}
+    \boldsymbol z^{\boldsymbol r}U_{\boldsymbol r}v.
+  \]
+  These are ordinary power-series coefficients, without factorials
+  incorporated in their definition. At fixed smoothing and finite inventory,
+  put $v_{\max}=\sup_t\sum_i\sigma_i^2\mathbf1_{I_i}(t)
+  \Gamma_\epsilon(0)<\infty$.
+  On Gaussian degrees at most $n$, multiplication by the instantaneous
+  field has norm at most $2\sqrt{n+1}\sqrt{v_{\max}}$.
+  The free phase has norm at most $e^{\lambda h/2}$ in $X_\lambda$,
+  and a phase insertion $(u,w)\mapsto(0,Wu)$ costs at most its
+  unweighted multiplication norm divided by $\lambda$.
+  Thus, on $\max_i|z_i|\le z_*$ the total order-$n$ phase is bounded by
+  \begin{equation}\label{E:interval-entire-majorant}
+    e^{\lambda T/2}
+    \frac{(2z_*\sqrt{n+1}\sqrt{v_{\max}}T/\lambda)^n}{n!}
+    \|v\|_\lambda .
+  \end{equation}
+  The series of these bounds converges for every finite $z_*$.
+  It justifies the entire vector series and its absolutely convergent
+  energy double series. This existence bound may depend on the full
+  inventory and smoothing; it is not used as a uniform estimate.
+
+  Set
+  $Q_{\boldsymbol r,\boldsymbol q}
+  =\langle U_{\boldsymbol r}v,U_{\boldsymbol q}v
+  \rangle_{\mathcal H_{1/T}}$.
+  Both vectors use the same Gaussian fields. Independence is between
+  distinct colors, not between the two copies in this inner product.
+  For real $s$, substitution $z_i=s$ gives the exact identity
+  \begin{equation}\label{E:interval-energy-splits}
+    [s^{2k}]\E\|\mathcal U(T;s)v\|_{1/T}^2
+    =\sum_{|\boldsymbol r|+|\boldsymbol q|=2k}
+    Q_{\boldsymbol r,\boldsymbol q}.
+  \end{equation}
+  Reflection of Gaussian color $i$ multiplies $U_{\boldsymbol r}v$
+  by $(-1)^{r_i}$. Hence $Q_{\boldsymbol r,\boldsymbol q}=0$ unless
+  $r_i+q_i=2k_i$ for every $i$, where $\sum_i k_i=k$.
+  If $k_i=0$, both coefficients are obtained by setting $z_i=0$;
+  this removes that field exactly. There are at most $k$ active colors.
+  For fixed $\boldsymbol k$, the number of splits is
+  $\prod_i(2k_i+1)\le3^k$.
+
+  For this fixed $\boldsymbol k$, truncate the Hermite degree of color $i$
+  at $N_i=2k_i$. A word contributing to $U_{\boldsymbol r}$ has at most
+  $r_i\le2k_i$ insertions of that color. Starting in its vacuum, none of
+  its intermediate degrees exceeds $2k_i$. The same holds on the other
+  copy. Thus these cutoffs preserve the two selected vector coefficients
+  exactly, including creation followed by annihilation. There is no
+  Hermite-degree limit in this coefficient calculation.
+
+  For the uniform coefficient estimate put $\lambda=k/T$.
+  Apply Lemma~\ref{L:fixed-split} to each selected coefficient,retaining
+  the original sorted interval labels in the final sum.
+  Its factor $\ell_i$ is one for a singleton mean and at most two for
+  every higher color. The separate cross factor applies only at
+  $(r_i,q_i)=(1,1)$.
+  Absorb $k^2\le4^k$,the finite split count,and $c^k$ into $C^k$.
   After $\sigma_i^2\le c h_i^{-\alpha_0}$, the resulting local weights,
   with a common per-total-order constant understood, are
   \[
@@ -5136,6 +5234,178 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
   Absorbing $\nu C^{1/\nu}$ into the parameter-only constant proves
   \eqref{E:interval-phase-bound}. This proves
   Proposition~\ref{P:interval-coefficients}.
+\end{proof}
+
+\subsection{Finite Gaussian models and their terminal kernels}
+
+For $n\ge1$, define the positive terminal-chain measure
+\begin{equation}\label{E:terminal-chain-measure}
+  \mathsf g_n^{T,x}(\ud\boldsymbol s,\ud\boldsymbol y)
+  =\mathbf1_{[0,T]^n_<}(\boldsymbol s)\ud\boldsymbol s
+  \prod_{j=1}^n
+  G_{s_{j+1}-s_j}(y_{j+1}-\ud y_j),
+  \qquad (s_{n+1},y_{n+1})=(T,x).
+\end{equation}
+The spatial product is read backwards from $x$. Explicitly, it is the
+pushforward of $\prod_{j=1}^nG_{s_{j+1}-s_j}(\ud w_j)$ under
+$y_j=x-\sum_{l=j}^n w_l$. This defines the measure also in dimension
+three. In dimensions one and two its density is the ordered kernel
+$g_n$ in~\eqref{E:expansion}. Set $\mathsf g_0^{T,x}$ equal to unit mass
+on the empty tuple. This definition introduces no kernel symmetrization.
+
+\begin{lemma}[The finite terminal-chain Wick formula]\label{L:terminal-wick}
+  Let $\mathcal W(s,y)$ be a centered real Gaussian field on
+  $[0,T]\times\R^d$, $d=1,2,3$, with covariance
+  $\mathcal K(s,y;r,z)$. Suppose that
+  $V=\sup_{s,y}\E|\mathcal W(s,y)|^2<\infty$, and that the field is
+  jointly continuous in mean square on each open cell of a finite
+  partition of $[0,T]$, times $\R^d$.
+  Define $Y_0=1$ and
+  \[
+    Y_n(T,x)=\int\prod_{j=1}^n\mathcal W(s_j,y_j)
+    \,\mathsf g_n^{T,x}(\ud\boldsymbol s,\ud\boldsymbol y).
+  \]
+  These Bochner integrals exist in $L^2(\Omega)$ and satisfy
+  \begin{equation}\label{E:terminal-term-majorant}
+    \|Y_n(T,x)\|_2
+    \le\sqrt{(2n-1)!!}\,V^{n/2}\frac{T^{2n}}{(2n)!},
+    \qquad n\ge1.
+  \end{equation}
+  For $m+n=2k$, concatenate
+  $\boldsymbol\tau=(s_1,\ldots,s_m,r_1,\ldots,r_n)$ and
+  $\boldsymbol\eta=(y_1,\ldots,y_m,z_1,\ldots,z_n)$. Then
+  \begin{equation}\label{E:terminal-wick-formula}
+    \E[Y_m(T,x)Y_n(T,x)]
+    =\sum_{D\in\Pi_k}\mathcal T_{m,n,D}^{\mathcal K}(T,x),
+  \end{equation}
+  where, with both chains terminating at $(T,x)$,
+  \begin{equation}\label{E:terminal-pairing-integral}
+    \begin{split}
+      \mathcal T_{m,n,D}^{\mathcal K}
+      ={}&\int_{[0,T]^m_<\times[0,T]^n_<}
+      \ud\boldsymbol s\,\ud\boldsymbol r
+      \int_{(\R^d)^m\times(\R^d)^n}\\
+      &\quad\times\prod_{j=1}^m
+      G_{s_{j+1}-s_j}(y_{j+1}-\ud y_j)
+      \prod_{j=1}^n
+      G_{r_{j+1}-r_j}(z_{j+1}-\ud z_j)\\
+      &\quad\times\prod_{\{a,b\}\in D}
+      \mathcal K(\tau_a,\eta_a;\tau_b,\eta_b).
+    \end{split}
+  \end{equation}
+  Each pairing has coefficient one. If $m+n$ is odd, the expectation
+  is zero. Empty chains and the case $m=n=0$ have the usual empty-product
+  meaning. If $\mathcal K\ge0$, every integral above is nonnegative.
+  Consequently, entrywise comparison $0\le\mathcal K_1\le\mathcal K_2$
+  compares all finite partial-order second moments in the same direction.
+  The series $\sum_{n\ge0}r^nY_n$ converges absolutely in $L^2$ for
+  every real or complex $r$.
+\end{lemma}
+
+\begin{proof}
+  The mass of $G_h$ is $h$. If $M_n(T)$ is the total mass of
+  $\mathsf g_n^{T,x}$, integration at the last vertex gives
+  $M_0=1$ and $M_n(T)=\int_0^T(T-s)M_{n-1}(s)\ud s$.
+  Induction therefore yields $M_n(T)=T^{2n}/(2n)!$.
+  Gaussian moments and H\"older's inequality give
+  \[
+    \left\|\prod_{j=1}^n\mathcal W(s_j,y_j)\right\|_2
+    \le\prod_{j=1}^n\|\mathcal W(s_j,y_j)\|_{2n}
+    \le\sqrt{(2n-1)!!}\,V^{n/2}.
+  \]
+  Mean-square continuity of Gaussian variables implies their continuity
+  in every fixed finite $L^p$. Hence, the product is strongly measurable
+  in $L^2$ on the stated pieces. The finite kernel mass and the displayed
+  bound prove Bochner integrability and~\eqref{E:terminal-term-majorant}.
+
+  Fubini now passes expectation through the product of the two finite
+  kernel measures. For the $m+n$ Gaussian variables at their labelled
+  vertices, differentiate
+  \[
+    \E\exp\left(\sum_i t_i\mathcal W(\tau_i,\eta_i)\right)
+    =\exp\left(\frac12\sum_{i,j}t_i t_j
+    \mathcal K(\tau_i,\eta_i;\tau_j,\eta_j)\right)
+  \]
+  once in each $t_i$ at zero. Odd total degree gives zero.
+  At degree $2k$ the result is the sum over unordered pair partitions,
+  with one covariance product per pairing. Orientations and orderings
+  of the $k$ pairs cancel the exponential's $2^k k!$ denominator.
+  Integration gives~\eqref{E:terminal-wick-formula} with precisely
+  the domains and coefficients in~\eqref{E:terminal-pairing-integral}.
+
+  Symmetrizing a chain measure does not change its stochastic integral:
+  the product of its $n$ scalar field values is invariant under relabeling.
+  Thus, averaging the $n!$ pushforwards of $\mathsf g_n^{T,x}$ with
+  coefficient $1/n!$ gives the same $Y_n$. There is no additional $n!$
+  factor in~\eqref{E:terminal-wick-formula}, or $m!n!$ in a two-chain
+  product. This identifies the ordinary ordered regularized integrals
+  and their symmetrized convention in~\eqref{E:expansion}.
+
+  In dimension three one may first replace $G$ by $p_\eta*G$.
+  Those positive measures have the same masses and converge weakly to
+  $G$. Off the finitely many time cut points, all finite Gaussian moments
+  are bounded continuous functions of the spatial variables. Dominated
+  convergence for their finite Wick sums proves the same limit for
+  the mixed second moments with two Green widths. It gives $L^2$
+  convergence to the Bochner integral above, exactly the fixed-noise
+  Green convention used in the source.
+
+  If $\mathcal K\ge0$, positivity of the Green measures makes each
+  covariance product nonnegative. Comparing them proves the stated
+  finite-moment monotonicity, including self-pairs and unequal chains.
+  Finally, the ratio of successive right sides of
+  \eqref{E:terminal-term-majorant}, with an additional factor $|r|^n$,
+  is $|r|\sqrt V T^2/((2n+2)\sqrt{2n+1})$, which tends to zero.
+  The zero-variance case is immediate. This proves the absolute series
+  convergence and Lemma~\ref{L:terminal-wick}.
+\end{proof}
+
+\begin{lemma}[Uniform series tails from scaled moments]\label{L:uniform-series-tail}
+  Fix $(T,x)$. For each positive regularization pair $(\epsilon,\delta)$,
+  let $Y_n^{\epsilon,\delta}$ be the terms of
+  Lemma~\ref{L:terminal-wick} for a field with nonnegative covariance.
+  Write $u^{\epsilon,\delta}(r)=\sum_{n\ge0}r^nY_n^{\epsilon,\delta}$.
+  Suppose that, for some $r>1$ and finite $B_r$,
+  \[
+    \sup_{\epsilon,\delta>0}
+    \E|u^{\epsilon,\delta}(r)|^2\le B_r,
+    \qquad
+    Y_n^{\epsilon,\delta}\longrightarrow X_n
+    \text{ in }L^2\text{ for each fixed }n.
+  \]
+  Then $u=\sum_{n\ge0}X_n$ converges absolutely in $L^2$,
+  $u^{\epsilon,\delta}(1)\to u$ in $L^2$, and
+  \begin{equation}\label{E:uniform-series-tail}
+    \|Y_n^{\epsilon,\delta}\|_2,\ \|X_n\|_2
+    \le B_r^{1/2}r^{-n},\qquad
+    \left\|\sum_{n>N}Y_n^{\epsilon,\delta}\right\|_2,
+    \left\|\sum_{n>N}X_n\right\|_2
+    \le\frac{B_r^{1/2}r^{-(N+1)}}{1-r^{-1}}.
+  \end{equation}
+  If also $\E|u^{\epsilon,\delta}(1)|^2\le B_1$ uniformly, then
+  $\E|u|^2\le B_1$.
+\end{lemma}
+
+\begin{proof}
+  Lemma~\ref{L:terminal-wick} gives absolute $L^2$ convergence of every
+  regularized series and nonnegative mixed moments.
+  Its scaled second moment therefore contains the nonnegative term
+  $r^{2n}\E|Y_n^{\epsilon,\delta}|^2$, so
+  $r^{2n}\E|Y_n^{\epsilon,\delta}|^2\le B_r$.
+  Taking the fixed-order $L^2$ limit proves the same bound for $X_n$.
+  The geometric series and the triangle inequality give all estimates
+  in~\eqref{E:uniform-series-tail}, including absolute convergence.
+
+  For each $N$, write both full series as their first $N+1$ terms
+  and their tails. Their distance is at most
+  \[
+    \frac{2B_r^{1/2}r^{-(N+1)}}{1-r^{-1}}
+    +\left\|\sum_{n=0}^N(Y_n^{\epsilon,\delta}-X_n)\right\|_2.
+  \]
+  First let $\epsilon,\delta\downarrow0$ at fixed $N$, and then let
+  $N\to\infty$. This proves convergence of the full regularized solution;
+  it was not assumed. Continuity of the $L^2$ norm passes the bound
+  $B_1$ to $u$. This proves Lemma~\ref{L:uniform-series-tail}.
 \end{proof}
 
 \begin{theorem}[Full upper scale]\label{T:full-upper}
@@ -5217,9 +5487,12 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
     \mathbf1_I(s)\mathbf1_I(r)\Gamma_\epsilon(y-z)
     =K_J(s,r)\Gamma_\epsilon(y-z).
   \]
-  Expanding a finite pair of its Duhamel terms and applying Wick's formula
-  therefore gives exactly the two \emph{terminal} wave chains with one
-  factor $K_J(s_j,s_l)\Gamma_\epsilon(y_j-y_l)$ per pair.
+  Lemma~\ref{L:terminal-wick} applies: at fixed $J,\epsilon$ the field
+  has bounded variance, is mean-square continuous in space and is
+  piecewise continuous in time. Its exact terminal kernels are
+  \eqref{E:terminal-chain-measure}, and every term of
+  \eqref{E:terminal-pairing-integral} has covariance factor
+  $K_J(s_j,s_l)\Gamma_\epsilon(y_j-y_l)$, with coefficient one.
   This comparison is made before any time reversal; $K_J$ need not be
   stationary in time. The position kernels and constant initial data
   are nonnegative. Thus, every such integral, including self-pairings
@@ -5264,33 +5537,55 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
   This is entrywise comparison of Wick integrals, not covariance order
   for arbitrary initial phases or a coupling of random solutions.
 
-  The constants in $B(T)$ are uniform in $N,J,\epsilon,\delta$.
-  Gaussian-mode and spatial-band limits have already been taken at fixed
-  finite inventory and positive smoothing in
-  Proposition~\ref{P:interval-coefficients}. Its local degree cutoffs
-  preserve the selected coefficients exactly; they are not another
-  simultaneous limit. The only nonuniform smoothing variance was used
-  there for coefficient identification, not in $B(T)$.
+  The same finite-model argument works after multiplying the source
+  noise by any real amplitude $a>0$. This replaces $\Gamma$ by
+  $a^2\Gamma$ and $R_\alpha$ by $a^2R_\alpha$, without changing its
+  homogeneity degree or any parameter-only constant. Thus,
+  \begin{equation}\label{E:regularized-scaled-moment}
+    \E|u^{\epsilon,\delta}(a;T,x)|^2
+    \le B(T;a):=e(T+2)^d
+    \exp\{C(a^2R_\alpha)^{1/\nu}T^\kappa\}.
+  \end{equation}
+  Here the full regularized series exists by
+  Lemma~\ref{L:terminal-wick}; it is the ordinary Duhamel series with
+  its order-$n$ term multiplied by $a^n$. Taking the finite partial-order
+  cutoff to infinity in~\eqref{E:interval-source-comparison} is justified
+  at positive regularization by that lemma, not by a theorem about the
+  original unsmoothed solution.
 
-  Finally, take the original noise limit at fixed $N$. The source's
-  spectral assumption (1.5) holds: radial homogeneity makes its large-shell
-  bounds a constant times
+  We now use one analytic model-construction input from the source.
+  From \cite{chen:author2026:time-dependency}*{Theorem~4.1, (4.2), p.~22},
+  each fixed-order term $Y_n^{\epsilon,\delta}$ converges in $L^2$ to
+  $X_n=S_n(g_n)$ as $\epsilon,\delta\downarrow0$.
+  Its spectral assumption (1.5) follows from radial homogeneity: the
+  large-shell bounds are a constant times
   $\mu(B_1)\sum_{j\ge0}2^{j(\alpha+\alpha_0-2)}<\infty$,
-  and its integral over $B_1$ is finite. From its
-  Theorem~4.1, (4.2), p.~22, each term in $U_N^{\epsilon,\delta}$
-  converges in $L^2$ to the corresponding $X_n$ as
-  $\epsilon,\delta\downarrow0$. Thus~\eqref{E:interval-source-comparison}
-  bounds $\E|\sum_{n=0}^N X_n|^2$ by $B(T)$.
-  Only now let $N\to\infty$, using the independently established
-  $L^2$ series in Proposition~\ref{P:mixed} and
-  Lemma~\ref{L:crude-corrected}. No convergence of a full mollified
-  propagator or full mollified solution was assumed.
-  These qualitative source limits are taken for each fixed covariance;
-  no uniform convergence rate over the covariance class is required,
-  since the same $B(T)$ already bounds every approximant.
-  Its constants come from $L=78$, $c=6^{\alpha_0}$ and the parameter-only
-  constants in Proposition~\ref{P:interval-coefficients}. Covariance enters
-  only through $R_\alpha$; the volume ratio below is exact.
+  and its integral over $B_1$ is finite.
+  The bounded-noise Green limit and ordered-kernel convention needed
+  to match these terms are already verified in
+  Lemma~\ref{L:terminal-wick}.
+
+  Apply Lemma~\ref{L:uniform-series-tail} with $r=2$ and
+  $B_r=B(T;2)$. It proves absolute $L^2$ convergence of the series
+  defining $u$ in~\eqref{E:expansion} and convergence of the full
+  regularized solution to that series. Taking the limit in
+  \eqref{E:regularized-scaled-moment} at $a=1$ proves the required bound.
+  This series-limit argument is independent of
+  Proposition~\ref{P:mixed}, Lemma~\ref{L:crude-corrected}, and the
+  source's Section~5 convergence proof. No first-moment asymptotic or
+  printed normalization is used. The only imported analytic construction
+  input here is the fixed-order statement just cited.
+
+  Mode and spatial-band limits in the interval phase bound were taken
+  at fixed finite inventory and positive smoothing. Local Hermite cutoffs
+  preserve selected coefficients; no simultaneous degree limit is assumed.
+  The finite-model bound is uniform in the interval depth and all source
+  noise widths. The source's fixed-order limits are taken at fixed
+  covariance, and the geometric tails then control the entire series.
+  Thus, no convergence rate uniform over covariance shapes is needed.
+  The constants come from $L=78$, $c=6^{\alpha_0}$ and the parameter-only
+  constants of Proposition~\ref{P:interval-coefficients}; covariance enters
+  only through $R_\alpha$.
   The volume ratio is $|B_{T+2}|/|B_1|=(T+2)^d$.
   This proves~\eqref{E:full-upper-bound} and
   Theorem~\ref{T:full-upper}.
@@ -5320,7 +5615,7 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
 
 \myCmts{Theorem~\ref{T:full-upper} establishes the unchanged full upper
 goal for every admissible dimension and homogeneous covariance.
-Its expanded argument passed renewed independent correctness review.
+The terminal-kernel and series-tail revision awaits fresh independent review.
 The earlier explicit bounds for $0<\alpha\le1$ remain available.
 The sharp constant and final whole-paper cold read remain open.}
 

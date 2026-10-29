@@ -1,0 +1,123 @@
+\subsection{Finite Gaussian models and their terminal kernels}
+
+For $n\ge1$, define the positive terminal-chain measure
+\begin{equation}\label{E:terminal-chain-measure}
+  \mathsf g_n^{T,x}(\ud\boldsymbol s,\ud\boldsymbol y)
+  =\mathbf1_{[0,T]^n_<}(\boldsymbol s)\ud\boldsymbol s
+  \prod_{j=1}^n
+  G_{s_{j+1}-s_j}(y_{j+1}-\ud y_j),
+  \qquad (s_{n+1},y_{n+1})=(T,x).
+\end{equation}
+The spatial product is read backwards from $x$. Explicitly, it is the
+pushforward of $\prod_{j=1}^nG_{s_{j+1}-s_j}(\ud w_j)$ under
+$y_j=x-\sum_{l=j}^n w_l$. This defines the measure also in dimension
+three. In dimensions one and two its density is the ordered kernel
+$g_n$ in~\eqref{E:expansion}. Set $\mathsf g_0^{T,x}$ equal to unit mass
+on the empty tuple. This definition introduces no kernel symmetrization.
+
+\begin{lemma}[The finite terminal-chain Wick formula]\label{L:terminal-wick}
+  Let $\mathcal W(s,y)$ be a centered real Gaussian field on
+  $[0,T]\times\R^d$, $d=1,2,3$, with covariance
+  $\mathcal K(s,y;r,z)$. Suppose that
+  $V=\sup_{s,y}\E|\mathcal W(s,y)|^2<\infty$, and that the field is
+  jointly continuous in mean square on each open cell of a finite
+  partition of $[0,T]$, times $\R^d$.
+  Define $Y_0=1$ and
+  \[
+    Y_n(T,x)=\int\prod_{j=1}^n\mathcal W(s_j,y_j)
+    \,\mathsf g_n^{T,x}(\ud\boldsymbol s,\ud\boldsymbol y).
+  \]
+  These Bochner integrals exist in $L^2(\Omega)$ and satisfy
+  \begin{equation}\label{E:terminal-term-majorant}
+    \|Y_n(T,x)\|_2
+    \le\sqrt{(2n-1)!!}\,V^{n/2}\frac{T^{2n}}{(2n)!},
+    \qquad n\ge1.
+  \end{equation}
+  For $m+n=2k$, concatenate
+  $\boldsymbol\tau=(s_1,\ldots,s_m,r_1,\ldots,r_n)$ and
+  $\boldsymbol\eta=(y_1,\ldots,y_m,z_1,\ldots,z_n)$. Then
+  \begin{equation}\label{E:terminal-wick-formula}
+    \E[Y_m(T,x)Y_n(T,x)]
+    =\sum_{D\in\Pi_k}\mathcal T_{m,n,D}^{\mathcal K}(T,x),
+  \end{equation}
+  where, with both chains terminating at $(T,x)$,
+  \begin{equation}\label{E:terminal-pairing-integral}
+    \begin{split}
+      \mathcal T_{m,n,D}^{\mathcal K}
+      ={}&\int_{[0,T]^m_<\times[0,T]^n_<}
+      \ud\boldsymbol s\,\ud\boldsymbol r
+      \int_{(\R^d)^m\times(\R^d)^n}\\
+      &\quad\times\prod_{j=1}^m
+      G_{s_{j+1}-s_j}(y_{j+1}-\ud y_j)
+      \prod_{j=1}^n
+      G_{r_{j+1}-r_j}(z_{j+1}-\ud z_j)\\
+      &\quad\times\prod_{\{a,b\}\in D}
+      \mathcal K(\tau_a,\eta_a;\tau_b,\eta_b).
+    \end{split}
+  \end{equation}
+  Each pairing has coefficient one. If $m+n$ is odd, the expectation
+  is zero. Empty chains and the case $m=n=0$ have the usual empty-product
+  meaning. If $\mathcal K\ge0$, every integral above is nonnegative.
+  Consequently, entrywise comparison $0\le\mathcal K_1\le\mathcal K_2$
+  compares all finite partial-order second moments in the same direction.
+  The series $\sum_{n\ge0}r^nY_n$ converges absolutely in $L^2$ for
+  every real or complex $r$.
+\end{lemma}
+
+\begin{proof}
+  The mass of $G_h$ is $h$. If $M_n(T)$ is the total mass of
+  $\mathsf g_n^{T,x}$, integration at the last vertex gives
+  $M_0=1$ and $M_n(T)=\int_0^T(T-s)M_{n-1}(s)\ud s$.
+  Induction therefore yields $M_n(T)=T^{2n}/(2n)!$.
+  Gaussian moments and H\"older's inequality give
+  \[
+    \left\|\prod_{j=1}^n\mathcal W(s_j,y_j)\right\|_2
+    \le\prod_{j=1}^n\|\mathcal W(s_j,y_j)\|_{2n}
+    \le\sqrt{(2n-1)!!}\,V^{n/2}.
+  \]
+  Mean-square continuity of Gaussian variables implies their continuity
+  in every fixed finite $L^p$. Hence, the product is strongly measurable
+  in $L^2$ on the stated pieces. The finite kernel mass and the displayed
+  bound prove Bochner integrability and~\eqref{E:terminal-term-majorant}.
+
+  Fubini now passes expectation through the product of the two finite
+  kernel measures. For the $m+n$ Gaussian variables at their labelled
+  vertices, differentiate
+  \[
+    \E\exp\left(\sum_i t_i\mathcal W(\tau_i,\eta_i)\right)
+    =\exp\left(\frac12\sum_{i,j}t_i t_j
+    \mathcal K(\tau_i,\eta_i;\tau_j,\eta_j)\right)
+  \]
+  once in each $t_i$ at zero. Odd total degree gives zero.
+  At degree $2k$ the result is the sum over unordered pair partitions,
+  with one covariance product per pairing. Orientations and orderings
+  of the $k$ pairs cancel the exponential's $2^k k!$ denominator.
+  Integration gives~\eqref{E:terminal-wick-formula} with precisely
+  the domains and coefficients in~\eqref{E:terminal-pairing-integral}.
+
+  Symmetrizing a chain measure does not change its stochastic integral:
+  the product of its $n$ scalar field values is invariant under relabeling.
+  Thus, averaging the $n!$ pushforwards of $\mathsf g_n^{T,x}$ with
+  coefficient $1/n!$ gives the same $Y_n$. There is no additional $n!$
+  factor in~\eqref{E:terminal-wick-formula}, or $m!n!$ in a two-chain
+  product. This identifies the ordinary ordered regularized integrals
+  and their symmetrized convention in~\eqref{E:expansion}.
+
+  In dimension three one may first replace $G$ by $p_\eta*G$.
+  Those positive measures have the same masses and converge weakly to
+  $G$. Off the finitely many time cut points, all finite Gaussian moments
+  are bounded continuous functions of the spatial variables. Dominated
+  convergence for their finite Wick sums proves the same limit for
+  the mixed second moments with two Green widths. It gives $L^2$
+  convergence to the Bochner integral above, exactly the fixed-noise
+  Green convention used in the source.
+
+  If $\mathcal K\ge0$, positivity of the Green measures makes each
+  covariance product nonnegative. Comparing them proves the stated
+  finite-moment monotonicity, including self-pairs and unequal chains.
+  Finally, the ratio of successive right sides of
+  \eqref{E:terminal-term-majorant}, with an additional factor $|r|^n$,
+  is $|r|\sqrt V T^2/((2n+2)\sqrt{2n+1})$, which tends to zero.
+  The zero-variance case is immediate. This proves the absolute series
+  convergence and Lemma~\ref{L:terminal-wick}.
+\end{proof}

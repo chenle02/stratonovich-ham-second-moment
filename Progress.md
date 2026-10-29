@@ -2167,3 +2167,52 @@ older source crude series argument. This is the next bounded repair,not
 an independent re-proof of all source results or a narrowed target.
 New/rewritten proofs require fresh primary/HIGH and fresh blind gates.
 Full original goal ACTIVE,incomplete;no sharp/Lean/novelty/circulationclaim.
+
+### Terminal/modular repair written; fresh primary review packet frozen
+
+The two substantive concerns from the second blind read are addressed in
+the CANDIDATE manuscript, not yet independently cleared. The full original
+spatial class, dimensions and upper target are unchanged. The notes now
+have 82 pages and 45 proofs, including three new explicit helpers:
+
+- L:fixed-split states the finite-cutoff coefficient bound with its exact
+  metric exponent, cross-singleton weight, covariance powers and factorials.
+  P:interval-coefficients now invokes it before summing the inventory.
+- L:terminal-wick defines both ordered terminal chains, the d=3 measure
+  pushforward, every Wick pairing with coefficient one, and the cancellation
+  of symmetrization factors. It proves the finite Gaussian model's entire
+  series and fixed-noise Green limit, with unequal chains and self-pairs.
+- L:uniform-series-tail derives geometric tails from uniform scaled moments
+  and positivity. The full upper theorem now proves the full-series limit
+  from the known fixed-order L2 input, Chen Th4.1(4.2)p22. It does not use
+  P:mixed, L:crude-corrected or source Section5 convergence for this passage.
+
+The scaled finite-model bound is established before any unsmoothed series
+limit. Its amplitude-two version controls tails; its amplitude-one version
+passes the claimed constant. Source fixed-order construction remains an
+explicit analytic import, not a result re-proved here. No intended repair
+of the source first-moment normalization is adopted.
+
+Falsification checks for the terminal lemma retain all unequal-chain splits
+at orders two/four and give exactly 1/3 and 1/105 in a scalar constant-field
+test. This is an auxiliary bounded-field diagnostic, not an admissible
+H:homog example or a proof certificate. Earlier noncommuting interval and
+inventory diagnostics are retained. Actual format-tex is idempotent; the
+82-page build has zero errors, undefined references/citations, overfull
+boxes or tabs. Duplicate-label and proof-count checks pass.
+
+Fresh packet: reviews/2026-10-28-terminal-modular/packet-v1, with all current
+upper-bound prerequisites and consumers verbatim, the completion contract,
+the new helpers, diagnostics, exact source excerpts and 14 primary-source
+page images. Fifteen required texts include PROJECT-GOAL.md. The fresh
+15-check contract separately audits the terminal identity, fixed split,
+scaled finite-model bound and geometric limit. No prior report is supplied.
+Exact current source/PDF hashes and four changed existing proofs are in
+change-binding.json. New primary Opus5.5/HIGH review is NEXT; the prior
+14PASS/HIGH does not cover these new proofs. After adjudication, a fresh
+prior-blind whole-paper cold read is still required. Both earlier cold
+reports remain NOT CLEAR for their reviewed revisions.
+
+This is intra-round repair, not round close. The canonical wiki is not
+updated by this local checkpoint; its publication/provenance debt remains
+open. No sharp constant, Lean creation, novelty or circulation clearance.

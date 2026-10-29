@@ -1,0 +1,47 @@
+\begin{lemma}[Uniform series tails from scaled moments]\label{L:uniform-series-tail}
+  Fix $(T,x)$. For each positive regularization pair $(\epsilon,\delta)$,
+  let $Y_n^{\epsilon,\delta}$ be the terms of
+  Lemma~\ref{L:terminal-wick} for a field with nonnegative covariance.
+  Write $u^{\epsilon,\delta}(r)=\sum_{n\ge0}r^nY_n^{\epsilon,\delta}$.
+  Suppose that, for some $r>1$ and finite $B_r$,
+  \[
+    \sup_{\epsilon,\delta>0}
+    \E|u^{\epsilon,\delta}(r)|^2\le B_r,
+    \qquad
+    Y_n^{\epsilon,\delta}\longrightarrow X_n
+    \text{ in }L^2\text{ for each fixed }n.
+  \]
+  Then $u=\sum_{n\ge0}X_n$ converges absolutely in $L^2$,
+  $u^{\epsilon,\delta}(1)\to u$ in $L^2$, and
+  \begin{equation}\label{E:uniform-series-tail}
+    \|Y_n^{\epsilon,\delta}\|_2,\ \|X_n\|_2
+    \le B_r^{1/2}r^{-n},\qquad
+    \left\|\sum_{n>N}Y_n^{\epsilon,\delta}\right\|_2,
+    \left\|\sum_{n>N}X_n\right\|_2
+    \le\frac{B_r^{1/2}r^{-(N+1)}}{1-r^{-1}}.
+  \end{equation}
+  If also $\E|u^{\epsilon,\delta}(1)|^2\le B_1$ uniformly, then
+  $\E|u|^2\le B_1$.
+\end{lemma}
+
+\begin{proof}
+  Lemma~\ref{L:terminal-wick} gives absolute $L^2$ convergence of every
+  regularized series and nonnegative mixed moments.
+  Its scaled second moment therefore contains the nonnegative term
+  $r^{2n}\E|Y_n^{\epsilon,\delta}|^2$, so
+  $r^{2n}\E|Y_n^{\epsilon,\delta}|^2\le B_r$.
+  Taking the fixed-order $L^2$ limit proves the same bound for $X_n$.
+  The geometric series and the triangle inequality give all estimates
+  in~\eqref{E:uniform-series-tail}, including absolute convergence.
+
+  For each $N$, write both full series as their first $N+1$ terms
+  and their tails. Their distance is at most
+  \[
+    \frac{2B_r^{1/2}r^{-(N+1)}}{1-r^{-1}}
+    +\left\|\sum_{n=0}^N(Y_n^{\epsilon,\delta}-X_n)\right\|_2.
+  \]
+  First let $\epsilon,\delta\downarrow0$ at fixed $N$, and then let
+  $N\to\infty$. This proves convergence of the full regularized solution;
+  it was not assumed. Continuity of the $L^2$ norm passes the bound
+  $B_1$ to $u$. This proves Lemma~\ref{L:uniform-series-tail}.
+\end{proof}
