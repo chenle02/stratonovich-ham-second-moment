@@ -2360,3 +2360,30 @@ Fresh supported native doctor passes;committed-byte freeze and launch follow.
 All three older cold reports remain NOT CLEAR for their respective sources.
 The full original upper/sharp goals and spatial class remain unchanged;
 no sharp constant,Lean creation,novelty,human or circulation claim.
+
+### Chronological review returned16PASS/HIGH but source-image delivery fails
+
+Native Opus5.5/HIGH,source dcbed86f599bbd505754ebe91963ecbd928e7c2b,
+715.188s:PASS_WITH_NOTES/HIGH,all16checksPASS,no fatal/major findings or
+mandatory mathematical repairs. Actual model/route,unchanged candidate
+hashes and HEAD held through terminal collection verified. All18required
+texts fully delivered and22of23required images exact. Overall accepted=false,
+coverage_verified=false. Do NOT promote this candidate from that report.
+
+The failure is one precise carrier mismatch:direct Read of chen-hu-2145.png
+returned a1283x1900JPEG instead of the declared1283x1900PNG. It was opened
+and visually read,not an unread file,but exact PNG bytes were not delivered.
+The original receipt,report,ledger and transformed JPEG witness are retained.
+Root missed the required pre-science carrier calibration for this added page.
+The strict gate correctly refused;no parser/threshold/receipt is weakened.
+
+Recovery follows focused-subscription-cli-review's explicit image rule:
+no resume of review-complete. Two direct pinned-PDF windows now cover all of
+printed2145 at1600pixel height,with140pixel overlap;each is1080x870 and has
+been visually checked for legibility. No OCR/AI reconstruction or source
+content removal. A carrier-only calibration will check the COMPLETE final
+24image cohort,including22unchanged pages. It is not a scientific vote.
+If exact delivery passes,a new immutable repaired-input binding and fresh
+review follow,with the HIGH threshold unchanged. Mathematics remains the
+same86page candidate. This is a genuine source-carrier repair,not a retry
+for a preferred confidence rating. Old16HIGH receipt stays unaccepted.
