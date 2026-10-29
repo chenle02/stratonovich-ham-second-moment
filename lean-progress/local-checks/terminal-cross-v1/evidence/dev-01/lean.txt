@@ -1,0 +1,12 @@
+${LOCAL_RAW}/stratonovich-terminal-cross-lean-dev-01/src/StratonovichHAMAudit/TerminalCross.lean:62:16: error(lean.unknownIdentifier): Unknown constant `Real.convexOn_exp`
+${LOCAL_RAW}/stratonovich-terminal-cross-lean-dev-01/src/StratonovichHAMAudit/TerminalCross.lean:54:35: error: unsolved goals
+C D r R k w : ℝ
+hD : 0 ≤ D
+hCD : D < C
+hmix : (C - D) * k = C * r - D * R
+hC : 0 < C
+ha : 0 ≤ (C - D) / C
+hb : 0 ≤ D / C
+hab : (C - D) / C + D / C = 1
+hcombo : (C - D) / C * (-k * w) + D / C * (-R * w) = -r * w
+⊢ C * Real.exp (-r * w) - D * Real.exp (-R * w) ≤ (C - D) * Real.exp (-k * w)

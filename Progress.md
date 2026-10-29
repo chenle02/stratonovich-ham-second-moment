@@ -3258,3 +3258,30 @@ is pointwise aboveoriginal on same draws. Positive-a totalsratiosapproximately
 not close the remaining terms. No new absent6repo reference identified;
 nine normal tickets persist. Sourcepublishedstatic horizon map saved,not a
 fractional transfer theorem. Full goal ACTIVE,wholepaper/circulation open.
+
+
+## Terminal-cross successor: analytic candidate plus local Lean checks
+
+Previous goal turn:PROGRESS,original-class9of15comparisonaccepted8HIGH,
+not fullgoal completion. Current targetwhite13:03|12andits31:01|23mirror.
+New directwave-convolution reduction gives rationalI(lambda,nu);enlargedclock
+candidate is a positive exponential mixture with uniform decay envelope.
+A47monomial polynomial proves the envelope strictly belowIforcrosslambda>0,
+selfnu>=0. FractionalGammaaveraging would control bothdiagrams foralla in(0,1).
+This is a CANDIDATErequiring its OWNanalytic/source/type/applicationreview.
+Ifaccepted,11of15WHITEterms,still9inORIGINALgeneralclass. No allorder/sharp
+or Skorohod theorem. Pairparameters exchange under the mirroredallocation.
+
+Five new standaloneLeanstatements compile/replay with standardthreeaxioms:
+polynomialidentity/positivity,the actualstrictsquare-rootconsumer,uniform
+mixture-rate inequality,and exponentialconvexity. Foursemanticfalsecontrols
+fail onFalseafterimports. Two development failures(namespacequalification,
+redundanttactic)preserved;statementsneverweakened. No companion/package/
+lease/registry/donorwrite/cluster job. Exactfidelity/application reviewpending.
+
+16closedhighprecision cases match oldprobes,and68positivecomponentquadrature
+casespass at60digits. The tiny-valueunscaledinitialcheckfailedrelative
+precision;common exponentialrescalingfixes it withouttolerancerelaxation.
+UnprovedstrongerRayleigh-fibertrial is unused by the proof. Sourcekernels/
+Gammaidentityalreadyheld;no new absentref or duplicateenqueue. Canonical
+110pageTeX/PDFandallreviewedoldproofs areunchanged.

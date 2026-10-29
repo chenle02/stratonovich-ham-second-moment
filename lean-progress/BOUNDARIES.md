@@ -18,3 +18,12 @@ Types compile with standard axioms;independent exact-type/application check
 passed4checks/HIGH. The concrete measure facts remain hand-checked,not Lean
 instantiated. Extend w_theta by zero offpositive lambda;its measurability and
 integrability against the restricted measure remain explicit analytic inputs.
+
+
+Terminal-cross-v1local pilot:five statements in its frozen statement fence.
+The final strict square-root bound holds for b>=1,c>1. The47monomial identity
+and positivity,rateA/[2(A+1)]<=sA/(A+2s)forA>0,s>=1/2,and exact exponential
+convexity consumer are kernel-checked. No desired inequality is a hypothesis.
+The physical/clock reduction,positive mixture and parameter correspondence
+remain analytic obligations. Scope is a white1Ddegree-four diagram,not an
+all-covariance/all-order or sharp theorem. No new companion/package gate.

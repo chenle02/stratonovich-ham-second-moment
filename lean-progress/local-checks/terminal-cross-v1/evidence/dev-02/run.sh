@@ -1,0 +1,8 @@
+#!/bin/bash
+set -u
+export LEAN_NUM_THREADS=3
+export LEAN_PATH=${LOCAL_RAW}/stratonovich-terminal-cross-lean-dev-02/out:${DEPENDENCY_ROOT}/.lake/packages/mathlib/.lake/build/lib/lean:${DEPENDENCY_ROOT}/.lake/packages/plausible/.lake/build/lib/lean:${DEPENDENCY_ROOT}/.lake/packages/LeanSearchClient/.lake/build/lib/lean:${DEPENDENCY_ROOT}/.lake/packages/importGraph/.lake/build/lib/lean:${DEPENDENCY_ROOT}/.lake/packages/proofwidgets/.lake/build/lib/lean:${DEPENDENCY_ROOT}/.lake/packages/aesop/.lake/build/lib/lean:${DEPENDENCY_ROOT}/.lake/packages/Qq/.lake/build/lib/lean:${DEPENDENCY_ROOT}/.lake/packages/batteries/.lake/build/lib/lean
+/usr/bin/time -v -o ${LOCAL_RAW}/stratonovich-terminal-cross-lean-dev-02/time.txt ${LEAN_BIN} -j1 -D Elab.async=false -R ${LOCAL_RAW}/stratonovich-terminal-cross-lean-dev-02/src -o ${LOCAL_RAW}/stratonovich-terminal-cross-lean-dev-02/out/StratonovichHAMAudit/TerminalCross.olean ${LOCAL_RAW}/stratonovich-terminal-cross-lean-dev-02/src/StratonovichHAMAudit/TerminalCross.lean > ${LOCAL_RAW}/stratonovich-terminal-cross-lean-dev-02/lean.txt 2>&1
+rc=$?
+printf "%s\n" "$rc" > ${LOCAL_RAW}/stratonovich-terminal-cross-lean-dev-02/EXIT
+exit "$rc"

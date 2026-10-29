@@ -68,3 +68,13 @@ are hand-checked,not instantiated inLean. Density total extension is zero
 outsidepositive lambda;measurability/integrability and K/J representations
 remain analytic inputs. See correspondence-adjudication.md for all five minor
 notes and both preflight failures. No new companion/package gate is claimed.
+
+## Standalone terminal-cross local pilot (2026-10-29)
+
+Five scalar statements compile with only standard axioms;owned-source replay
+and four meaningful false controls pass. The strict finalconsumer includes
+its real square root and positive denominators. The positive47termcertificate,
+rate bound and exponentialconvexity support a NEWanalytic white terminal-cross
+comparison. Exact type/application review pending. This is a standalone local
+pilot,not an opened companion/package/lease/cluster wave. L0remainsPROPOSED.
+Evidence:local-checks/terminal-cross-v1/local-receipt.json.
