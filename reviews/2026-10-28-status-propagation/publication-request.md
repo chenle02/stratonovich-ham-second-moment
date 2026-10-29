@@ -1,3 +1,7 @@
+Latest private proposal:degree-four9of15partialcomparison,originalGamma/d1--3,
+8PASS/HIGHsourced016a34. Sixremaining/fullsum/allorder/sharpstillOPEN;
+canonical110pageTeX/PDFunchanged. This update is private and unpublished.
+
 Current private proposal2026-10-29:110page/60proof clock-screen adoption,
 sourcee68310f7groups/HIGH. Standalone local Lean3statements compile/replay,
 exact-type/application4PASS/HIGH at86de3d8. Concrete measure/analytic model

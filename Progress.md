@@ -6,11 +6,11 @@
 
 ## Current state
 
-- **Phase:** degree-four shared-clock LOWERcomparison is a live MODELroute. Full15diagram/48cone exact reductions and finite probes are written as a NEWcandidate memo;own source-bound HIGH review pending. The earlier exact-identity screen retains its scoped7HIGHacceptance;it does not refute lower/asymptotic use.
+- **Phase:** degree-four MODELpartial comparison ACCEPTED at its own8PASS/HIGH,d016a34. Nine of15terms are controlled in the ORIGINALcovariance/d1--3class:6imported one-chain equalities plus3newstrictmixedcomparisons. The remaining6mixed terms/fullsum/allorder/sharpconstant remainOPEN. Exact15diagram/48cone reductions and finite-variance sampling are reviewed;finite probes are not proofs.
 - **Review boundaries:** prior92page quantitative/mild source `a7e725e` passed its own19checks/HIGH. The new8check review covers the direct norms, positive spatial Wick-measure limit, arbitrary joint vertex-width construction and their consumers. It does NOT freshly audit every unchanged operator/interval proof. Exact source/delivery/adoption bindings and limitations are in `reviews/2026-10-29-fixed-order-construction/`.
 - **Current artifact:**110pages,60proofs. Two clock-screen proofs and all58prior proofs match frozen science exactly;only the scope remark and abstract/status clarified. Build0errors/undefined/overfull/tabs,formatter idempotent. Final binding/adjudication in reviews/2026-10-29-two-clock-screen/.
-- **Open targets:** full fixed-positive-alpha0sharp p2constant via MODEL information;focused exposition/whole-paper clearance;isolated local Lean seam checks now authorized;separate companion creation still pending;canonical wiki provenance and novelty/circulation. Next model route is the full degree-four Stratonovich aggregate for a possible one-sided clock comparison;unproved. No numerical normalization correction adopted.
-- **Agent8coordination:** completed at read-only source/statement/ownership level,as requested by Le. Agent8accepted our exact map;three API component fits and stronger-premise gaps are recorded in lean-progress/coordination/2026-10-29-agent8/reuse-adjudication.md. Current coefficient gate sourced5fde707,evidence successorbffd4329;historical SWE receipts remain e5e9558. Source/API/pins checked,no new build/gate/companion/lease/registry transaction here. L0/PROPOSED and decision4unchanged.
+- **Open targets:** full fixed-positive-alpha0sharp p2constant via MODEL information;focused exposition/whole-paper clearance;isolated local Lean seam checks now authorized;separate companion creation still pending;canonical wiki provenance and novelty/circulation. Next model question is the remaining SIXdegree-four terms,starting from white(1,3)03|12and the stronger overlap-dropped candidate. The full comparison is unproved. No numerical normalization correction adopted.
+- **Agent8coordination:** completed at read-only source/statement/ownership level,as requested by Le. Agent8accepted our exact map;three API component fits and stronger-premise gaps are recorded in lean-progress/coordination/2026-10-29-agent8/reuse-adjudication.md. Current coefficient gate sourced5fde707,evidence successorbffd4329;historical SWE receipts remain e5e9558. Source/API/pins checked;no donor-package build/gate/companion/lease/registry transaction. Local Lean pilot is recorded separately. L0/PROPOSED and decision4unchanged.
 - **Authorization:** Le's continuing full goal includes the sharp/lower track. The current wave is the previously proposed bounded static-comparison/inequality step,with the HIGH review threshold unchanged. It does not redefine the original all-alpha0sharp target,claim novelty or promote a paper. Le now explicitly permits Lean verification;standalone local checks do not create a companion repo. Report/honor PROJECT-GOAL decision points;companion-creation decision4remains pending. No correspondence/public release authorized.
 - **Worker:** Codex/GPT author, paper-dev workflow; historical project handoff to agent #30 on 2026-10-26. Lean remains L0/PROPOSED (`lean-progress/PROGRESS.md`). Nine normal reference requests exist; new edition-custody intake is nonblocking, not source authentication.
 
@@ -3226,3 +3226,35 @@ Currentauthor37/41/42also confirms even analytic clock orientation,which
 must not be replaced by the wiki's residual Hermitian-looking display in
 products. No source1.24or numericalconstantcorrection adopted. Both refs
 alreadyheld;no new normal queue ticket. Canonicalwiki unchanged.
+
+
+### Degree-four successor v5 accepted at scoped8PASS/HIGH
+
+Actual canonical native review517.097s,d016a34,modelOpus5.5,firstParty,
+HIGH,all8PASS,no required repairs,accepted=true,coverage=true. Complete19
+texts/CSVs+12exactPNGdelivery and actual event/receipt/source/contract hashes
+verified. Persistentserviceexit0. Native53memberarchive readbackverified;
+old115member failed/mediumarchive retained,not substituted. All six minor
+notes adjudicated;two reviewer-reason textual slips are explicitly unadopted.
+
+New ANALYTICresult in notes/degree-four-clock-probe.md:original fullGamma
+class,the pure-self22diagram and root-cross/self13/31diagrams satisfy strict
+shared-clock<actual comparisons forpositivea. Atfixedlambda,asymmetric bound
+isJ_A<=2theta/(2theta+lambda)*I_A;afterfractionalaveraging,alpha1gives
+J_A<=(2-2^a)I_A. One-chain6equalities are explicitly imported fromcurrent
+sourcefixedDpp38--41,not claimed newly proved. Thus9of15controlled,not the
+fullsum;remaining6andallorder/diagonal-horizon/sharp steps remainOPEN.
+
+Finalmemo clarifies opening scope,explicit generalcandidate,theta<1time/
+spatial-width scaling and unusedsource6.2normalization. TaggedW/H/F/S/A/P/
+Paformulas unchanged. Canonical110page/60proofTeX/PDF ENTIRELYUNCHANGED.
+No new.texbuild or additionalLean/package/cluster gate is claimed.
+
+Separate UNREVIEWEDsuccessor-probe drops the positive clockoverlap for ONLY
+six remaining terms.96fixed-lambda+24fractionaldiagram cases survive finite
+checks;the actual estimates match original evaluator and enlargedcandidate
+is pointwise aboveoriginal on same draws. Positive-a totalsratiosapproximately
+.92910,.84577,.62798,.32994. This was NOTdelivered to/accepted byv5anddoes
+not close the remaining terms. No new absent6repo reference identified;
+nine normal tickets persist. Sourcepublishedstatic horizon map saved,not a
+fractional transfer theorem. Full goal ACTIVE,wholepaper/circulation open.

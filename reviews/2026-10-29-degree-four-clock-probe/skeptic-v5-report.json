@@ -1,0 +1,99 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "reduction.txt lines 1-408 (complete)",
+    "model-inputs.txt lines 1-234 (complete)",
+    "diagram-limit-inputs.txt lines 1-48 (complete)",
+    "two-point-inputs.md lines 1-33 (complete)",
+    "audit.py lines 1-118 (complete)",
+    "degree-four.py lines 1-208 (complete)",
+    "diagram-table.md lines 1-18 (complete)",
+    "exact-anchors.py lines 1-74 (complete)",
+    "lambda-probe.py lines 1-95 (complete)",
+    "input-projection-binding.json lines 1-15 (complete)",
+    "numerical-summary.json lines 1-1086 (complete)",
+    "one-chain-benchmarks.json lines 1-98 (complete)",
+    "partial-bound-check.json lines 1-93 (complete)",
+    "exact-anchors-refined.csv lines 1-131 (complete, 129 data rows)",
+    "lambda-15-differences.csv lines 1-242 (complete)",
+    "lambda-refined-17-differences.csv lines 1-242 (complete)",
+    "source-excerpts.txt lines 1-465 (complete)",
+    "source-map.md lines 1-26 (complete)",
+    "source-rendering.json lines 1-129 (complete)",
+    "author-37-top.png (full image)",
+    "author-37-bottom.png (full image)",
+    "author-38-top.png (full image)",
+    "author-38-bottom.png (full image)",
+    "author-39-top.png (full image)",
+    "author-39-bottom.png (full image)",
+    "author-40-top.png (full image)",
+    "author-40-bottom.png (full image)",
+    "author-41-top.png (full image)",
+    "author-41-bottom.png (full image)",
+    "author-42-top.png (full image)",
+    "author-42-bottom.png (full image)"
+  ],
+  "checks": [
+    {
+      "claim": "C1: there are 15 ordered Stratonovich diagrams and 48 labelled cones, with no extra combinatorial factor; fixed-lambda relabelling is correct; chain-gap objects are kept separate from other quantities",
+      "verdict": "PASS",
+      "reason": "I recounted the cones. The splits m=0..4 give choose(4,m) shuffles each, 16 colour strings in total, and each string has 3 pairings, so 48 cones. They collapse to 15 keys, each with multiplicity choose(4,m). Both empty orientations (m=0 and m=4), all unequal splits and the self-pairs are included, and the Wick coefficient is 1 with no extra binomial. In lambda-probe.py the parameters are attached by the canonical local (chain-ordered) pair index: canon[0] is the pair containing local label 0 and gets lambda. This matches the order of zip(pairing,parameters) in exact-anchors.py, so unequal parameters are carried with their original pair labels. The numbers confirm this. In the refined CSV, at (lambda,nu)=(1,0), 1:01|23 and 3:03|12 both have ratio 0.66667=2theta/(2theta+lambda). That value is only correct if lambda sits on the cross pair. Lines 7-8 and 218-219 state that the objects are gap transforms, not horizon moment coefficients or physical correlations."
+    },
+    {
+      "claim": "C2: physical spatial area/16, the three finite rectangle branches, missing-bound cases, V<=1/4, the regularization bound r^2/4 with null boundaries, the W Jacobian, and the Section 6 real-space/Brownian limit identification",
+      "verdict": "PASS",
+      "reason": "With G_s=1{|y|<s}/2, there are 4 factors of 1/2, giving 1/16. For each X in [-L,L], I integrated the length of [-H,H]\u2229[X-C,X+C]. This gives 4LC when C<=H-L, 4LC-(C-H+L)^2 in the middle range (the two corner triangles), and 4LH when C>=H+L. The branches are continuous, and the code's min(C,H+L) form is equivalent. A missing bound gives 4AC or 4BC. Every finite bound is at most 1, so V<=1/4. In the regularization coordinates (first position, difference) the Jacobian is 1, the mollifier masses are 1, and the positions lie in [-r,r]^2, which gives the bound r^2/4; the boundaries are Lebesgue-null. For W, the radial integrand r^3*r^2*r^{-2a}*e^{-r ell} integrates to Gamma(6-2a)ell^{2a-6}. In Section 6, positive-width Gaussian smoothing makes the wave Fourier/time integrals absolute, because |Ghat_s|<=s. The heat gap gives (1/2)\u222be^{-(1+xi^2)u/2}du=1/(1+xi^2). The wave limit comes from the Section 2 dominated convergence, not from the Fourier MCT. On the Brownian side, det(rC_B+2epsI) decreases as eps decreases, so the density increases to 1/(2pi r sqrt d), by eigenvalues. The four resolvents are bounded by 1/((1+L1^2)(1+L2^2)), which is integrable. Unsmoothed oscillatory Fubini and pointwise Gamma_eps monotonicity are explicitly not used."
+    },
+    {
+      "claim": "C3: the charge matrix, the Cauchy-Binet expansion, the minor equal to \u00b11, d>=x_j x_l, the density, clock overlap>=0, the complex Gamma branch, the 1/16 heat factor, c_a, Y, G, H, the a=0 case, and the constants in F",
+      "verdict": "PASS",
+      "reason": "A vertex at global position j contributes its sign to columns (c,0..j), so C_B=M diag(x,x) M^T, and Cauchy-Binet gives a sum of squared minors times x_p x_q. Order the pairs by right endpoint j<l. The first pair has entry 0 in column (c_l,l), and its entry in (c_j,j) is 1 (its left endpoint is i<j). So the two-column minor is triangular with determinant 1, and d>=x_j x_l. The clock increments over forward intervals have covariance r*o>=0. Using \u222b\u03bb^{a-1}e^{-\u03bbw}=\u0393(a)w^{-a} for Re w>0, with the modulus bound e^{-\u03bb r\u03b4}, gives absolute Fubini. Substituting \u03bb=Y1/sqrt(r\u03b41) produces (r\u03b41\u03b42)^{-a/2}c_a^2 with c_a=2^{a/2-1}\u0393(a/2)/\u0393(a), and the Y=sqrt(2Gamma(a/2)) density checks out. The r-integral with r=2G/ell gives \u0393(3-a)(2/ell)^{3-a}, which yields the H prefactor c_a^2\u0393(3-a)2^{3-a}/(32\u03c0); 1/(32\u03c0)=(1/16)(1/2\u03c0), and the code's pref matches. At a=0, J=\u222b1/(2\u03c0\u2113^3\u221ad), with no \u0393(0). For F, \u222br^5e^{-r(\u2113+L)}=\u0393(6)/(\u2113+L)^6 and (1/32\u03c0)\u00b72/(\u2113/2+L+Q/2)^3=1/(16\u03c0)(...)^{-3}, with parameters attached by original pair labels."
+    },
+    {
+      "claim": "C4: finiteness and second moments under Dirichlet(eta), eta<1-a for W and H, eta<1 for F, no clipping",
+      "verdict": "PASS",
+      "reason": "The W integrand is bounded by C(x_j x_l)^{-a}, and the H integrand by C(x_j x_l)^{-(1+a)/2}; this uses \u2113^{a-3}<=1 and the fact that the exponential is at most 1 since S,\u03c1,Y>=0. Squaring and dividing by the density \u221d\u220fx^{\u03b7-1} gives (x_jx_l)^{-a-\u03b7}\u220f_{others}x^{1-\u03b7} for H. For W the endpoint exponent is 1-\u03b7-2a, which is >-1 under \u03b7<1-a. For F (candidate) the endpoint exponent is (x_jx_l)^{-\u03b7}, with the actual integrand bounded, so \u03b7<1 suffices and \u03b7=1/2 is valid for the fixed-lambda test. These are product-form Dirichlet integrals, so every exponent >-1 covers all simplex faces. The code asserts 0<\u03b7<1-a only in the fractional evaluator. There is no clipping or cutoff; there are finite/positive asserts. The memo correctly says a finite second moment does not certify scrambled-QMC standard errors."
+    },
+    {
+      "claim": "C5: (S) from 6 regions, the 15 table values, total 11/6, one-chain \u0393(7-2a) calibration, the white-case factorizations, the limits of the audit's independence, the exact family (A), and the 129 anchors",
+      "verdict": "PASS",
+      "reason": "The six plane regions give 2[1/((A+B)(A+C))+1/((A+B)(B+C))+1/((A+C)(B+C))]\u00b7... and hence (S). I recomputed (A0,B0,C0) for all 15 diagrams and got exactly the table values. The sum is 11/12+79/144+53/144=11/6. Pure self: \u0393(1-a)^2/4. For (1,3) 01|23, \u222b\u222bmin(s,t)|s-t|^{-a}e^{-s-t}=\u0393(1-a)/2, which gives \u0393(1-a)^2/8; numerics agree (\u03c0/8\u22480.392659 at a=1/2). One-chain values \u00d7 \u0393(7-2a) match: at a=0 they are 1/4, 1/12, 1/8; at a=1/2, adjacent \u00d7120=\u03c0/4. For the exact family, per-edge clock damping \u03b8c+c^2/2 combines with \u03b8^2/2 to give (\u03b8+c)^2/2. So both heat and wave give 1/(q_e^2+\u03be^2), but only when every charged pair lies on one chain. exact() rejects cross charges and charges on two chains, and multiplies all 4 q_e, including roots. I recounted the anchors as 96 one-chain + 12 (m=1) + 12 (m=3) + 7+1+1 (m=2) = 129, which matches the CSV rows. I verified 1/128 and 15/176 by hand from the wave resolvents. The polygon audit shares the root/transition extraction, and the memo discloses this. The determinant audit independently uses min-time covariance."
+    },
+    {
+      "claim": "C6: source pp.37-42 usage, code/numerics agreement, CSV/SE mapping, disclosure of the 3.06% and 1.15% errors",
+      "verdict": "PASS",
+      "reason": "In the images: (6.1) is on p.37; the fixed-D Laplace calculation with c_l=\u03a3_{j<l<=k}\u03bb>=0 is on pp.38-41; (6.3) and the complex Gamma on p.41; the even extension \u03b3^0 on pp.41-42; Remark 6.3 (order obstruction) on p.42. The horizon prefactors check out: the physical horizon equals \u03b8^{-1}\u00b7\u220f(gap transforms), and the operational horizon equals (2/\u03b8^2)\u00b7\u220f(heat gaps). Combined with the source's (1/2)^{2n}\u03b8/2, this leaves exactly 1/16 for 2n=4. Printed (6.2) omits e^{-\u03b8t} on its right side; the memo explicitly does not use that printed normalization. I recomputed the CSV relative errors myself: the coarse run's maximum actual error is +3.056% (10,10, 0:03|12) and its maximum shared error 0.424% (0.1,10, 0:03|12). The refined run gives 0.0456% (actual) and 1.15% (shared). All match the memo and are disclosed. The ratios 0.97117, 0.93809, 0.86072 and 0.76992 match numerical-summary.json. The anchor differences/SEs map consistently between the CSVs."
+    },
+    {
+      "claim": "C7: scope honesty",
+      "verdict": "PASS",
+      "reason": "Lines 372-375 and 401-407 keep these items open: the six remaining mixed diagrams, the full 15-term comparison, all-order, the original-class full sum, horizon transfer, and the sharp constant. The memo makes no Skorohod, source-correction, novelty, Lean (beyond the imported scalar evidence), package or circulation claim. The new Section 6b is a real analytic comparison: exact factorization plus overlap dropping, valid for general \u0393. It is labelled a candidate awaiting review, and nowhere implies the full objective is done."
+    },
+    {
+      "claim": "C8: the new original-class partial comparison for 9 of 15 terms (Section 6b)",
+      "verdict": "PASS",
+      "reason": "S(\u03bd)=R(\u03b8+\u03bd)/\u03b8^2 from the wave mass \u222bs e^{-\u03b8s}=1/\u03b8^2 and the resolvent at \u03b8+\u03bd; equivalently (1/4)(2/\u03b8^2)(2R). For actual (1,3) 01|23, I integrated the last self increment \u222bG_g\u0393, the middle mass h, and the root cross term; the times separate, giving K(\u03bb)S(\u03bd). In the candidate, B1 on (v+w,v+w+z) is independent of B0(u)-B1(v), so the spatial factor is h(u+v)h(z). The clock covariance is the overlap of [min(u,v),max(u,v)] with [v+w,v+w+z], which is >=0. I checked 4Q(\u03bb) directly: \u222b\u222be^{-\u03b8^2(u+v)/2-(\u03b8\u03bb+\u03bb^2/2)|u-v|}h(u+v)=\u222b\u03bc\u00b74/((\u03b8^2+\u03be^2)((\u03b8+\u03bb)^2+\u03be^2)). The middle gap gives 2/\u03b8^2 and the last gap 2R, and (1/16)\u00b74\u00b72\u00b72=1, so the result is QS=[2\u03b8/(2\u03b8+\u03bb)]K S. The white closed forms K=1/(4\u03b8^2(\u03b8+\u03bb)) and Q=1/(2\u03b8(\u03b8+\u03bb)(2\u03b8+\u03bb)) agree, and the fixed-\u03bb numeric ratio is exactly 2/3 at (1,0). For (3,1) 03|12, the cross pair (0,3) consists of both roots and gets \u03bb; the self pair (1,2) gets \u03bd. For (2,2) 01|23, dropping exp(-\u03bb\u03bdo) gives S(\u03bb)S(\u03bd), strict for \u03bb\u03bd>0 because overlap>0 on an open set and h_\u0393>0 for \u0393\u22600. h_\u03b5=\u222be^{-(t/2+\u03b5)|\u03be|^2}\u03bc, and R_\u03b5, Q_\u03b5 increase, so MCT applies. Zero-width strictness uses the limiting positive h (pure-self) or Q<K (cross), not a limit of strict inequalities. S_a is finite: \u03bd^{a-1} near 0 and \u03bd^{\u03b1-2+a-1} at \u221e with \u03b1+a<2. (P-a) follows from J_cross<K_cross. In the white case J_cross=\u0393(1-a)(1/2-2^{a-2}) and K_cross=\u0393(1-a)/4, so the ratio is 2-2^a, which matches the partial-bound-check bounds. Count: 6 one-chain (equalities) + pure-self + 2 root/self = 9, with exactly 6 left uncontrolled. No general two-chain or cross-only claim is made."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "The header (lines 3-6) says the note works only in the white test case d=\u03b1=1, \u0393=\u03b40, but Section 6b works in the original covariance class. The opening scope sentence should mention the Section 6b exception.",
+      "Section 6b never restates the general-\u03b8/\u0393 shared-clock candidate (heat damping \u03b8^2/2, linear clock term \u03b8\u03bb\u00b7interval, prefactor (1/2)^4). The candidate is fixed only implicitly, through source pp.39-41 and the imported Q. A one-line definition would remove the ambiguity.",
+      "On the actual side, the zero-width identification is compressed into a reference to the imported L:spatial-wick-measures/P:mixed. For \u03b8<1 the damping test function is not bounded relative to \u03bd_D, so a homogeneity-scaling remark (\u03c1(cA)=c^{(4-\u03b1)k}\u03c1(A)) would make the passage explicit.",
+      "audit.py reads refined-18.json, audit.json and an external white-order-four-screen.json, none of which are in the packet. The 90 calibrations and the input-projection hashes are root claims that this reviewer did not execute. The counts are correct by design.",
+      "At a=1/8 the numerical margin to the analytic bound in partial-bound-check is only about 2.3 replicate SE. The margin is consistent with the bound, but the bound rests on the analytic proof, not on this diagnostic.",
+      "Printed source (6.2) omits e^{-\u03b8t} on its right-hand side; the source's own application uses the correct form. The memo rightly avoids that normalization. A brief note would help later readers."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "No code was executed. Hashes, the projection binding and the omitted raw fractional/90-case audit outputs could not be verified, and I give them no read credit.",
+    "The imported inputs were taken as stated and not re-proved, as the contract permits: P:clock-copy-obstruction (the K/Q identities, J_cross<K_cross, the \u03b1=1 factor), L:spatial-wick-measures, P:mixed, and the source's fixed-D computation.",
+    "This is an AI review, not human verification or a novelty audit. Numerical outputs are scrambled-QMC diagnostics, not certified enclosures; near-equality signs remain unresolved.",
+    "The 12 source images were read visually; OCR/rendering fidelity was cross-checked only against source-excerpts.txt."
+  ]
+}

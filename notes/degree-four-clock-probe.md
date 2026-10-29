@@ -1,10 +1,12 @@
 # Degree-four shared-clock probe
 
-Status: candidate internal reductions and numerical evidence, not a proved
-lower comparison. The original fixed-positive-time-exponent sharp target
-and its full dimension/covariance scope remain unchanged. This note works
-in the admissible test case d = α = 1, Γ = δ₀, with 0 ≤ a < 1 and θ = 1.
-It is about auxiliary chain-gap transforms, not physical unequal-time
+Status: the exact reductions and the nine-diagram partial comparison passed
+source-bound Opus5.5/HIGH review at d016a34, all eight checks passing. The
+full fifteen-term lower comparison and the original sharp target remain open.
+Sections 1–6a and the numerical experiments use the admissible test case
+d = α = 1, Γ = δ₀, 0 ≤ a < 1, θ = 1. Section 6b uses the original
+covariance/dimension class and arbitrary θ>0.
+This note concerns auxiliary chain-gap transforms, not physical unequal-time
 correlations or a diagonal-horizon moment Laplace transform.
 
 ## 1. The fifteen diagrams and their forty-eight cones
@@ -97,6 +99,10 @@ scale r and θ=1,
 
     T_a(r,x) = Γ(a)^(−2) ∫₀∞∫₀∞ λ^(a−1)ν^(a−1)
       exp[−r(λδ₁+νδ₂)−r(λ²δ₁+ν²δ₂+2λνo)/2] dλ dν.
+
+The printed right side of source (6.2) omits its Laplace damping;that
+normalization is not an input here. Every gap transform used in this note
+retains its own exponential damping.
 
 This derivation also fixes the product expectation: it is not a product
 of separate clock expectations. It is consistent with current-author
@@ -276,7 +282,20 @@ homogeneous Radon covariance Γ in d=1,2,3, with 0<a<1, α+a<2, and θ>0.
 It does not replace that class by the white-space test case. All identities
 are first established at a common spatial smoothing width ε>0, choosing
 spectral multiplier exp(−ε|ξ|²). Limits are
-specified below. The shared clock and forward pair orientation are unchanged.
+specified below. The shared clock and forward pair orientation are unchanged. Explicitly,
+for four ordered operational vertices s, let U,V be the last times of the
+nonempty chains (zero for an empty chain), Δ₁,Δ₂ the lengths of the forward
+pair intervals, O their overlap, and H_Γ(s) the spatial Brownian average of
+the two Γ factors. Interpret H_Γ as the nonnegative spatial heat-regularized
+limit. The fixed-parameter candidate is
+
+    J^Γ_{m,D}(θ;λ,ν) = (1/16) ∫ e^(−θ²(U+V)/2) H_Γ(s)
+      exp[−θ(λΔ₁+νΔ₂)−(λ²Δ₁+ν²Δ₂+2λνO)/2] ds.
+
+The domain is the product of the two ordered positive chain time simplices.
+This definition permits extended values before finiteness is proved;the nine
+terms used here are finite by the identities and bounds below. It specifies
+the same shared clock as before,not a new two-chain representation theorem.
 
 Imported already-proved input from the canonical clock-screen proposition:
 write R(q)=∫μ(dξ)/(q²+|ξ|²) and
@@ -340,7 +359,18 @@ All candidate integrands after clock averaging are nonnegative, so monotone
 convergence passes to their limits. On the actual side the factorizations
 hold at every positive width; the products of these resolvent limits identify
 the existing fixed-order Green–Wick limits. No pointwise monotonicity of
-Γ_ε(x) is asserted. The covariance class supplies finite R and Q, and the
+Γ_ε(x) is asserted. To make the actual-side damping limit explicit, at
+θ≥1 its exponential test function relative to the finite measure ν_D is
+bounded and continuous. For θ<1 rescale all chain times and positions by
+1/θ. Homogeneity gives
+
+    I^Γ(θ;λ,ν)=θ^(−(8−2α)) I^Γ(1;λ/θ,ν/θ).
+
+At positive smoothing the width becomes εθ², which tends to zero through
+the same admissible joint spatial limit. Thus the θ=1 identification also
+implies the one at every θ>0;no unbounded-test-function weak-convergence
+claim is needed. The candidate has the same scaling,with operational times
+rescaled by 1/θ². The covariance class supplies finite R and Q, and the
 accepted fixed-order construction supplies the diagram identification.
 
 Fractionally average λ,ν with positive measure
@@ -369,8 +399,8 @@ asymmetric root/self diagrams above, nine of the fifteen terms now satisfy
 a shared-clock ≤ actual comparison; the three newly treated mixed terms
 are strict for positive a. Strictness at zero width follows from the limiting positive h_Γ on
 the overlap-positive region;it is not inferred by taking a limit of strict
-inequalities. This partial comparison is a candidate awaiting its own review. The remaining SIX mixed diagrams are not controlled by it.
-In particular a lower inequality for these nine terms alone does not prove
+inequalities. This partial comparison is included in the scoped eight-check review above. The remaining SIX mixed diagrams are not controlled by it.
+In particular, a lower inequality for these nine terms alone does not prove
 the comparison of the full fifteen-term sum, its all-order extension, or
 the sharp constant.
 
