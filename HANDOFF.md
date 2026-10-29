@@ -1,34 +1,37 @@
-Last updated: 2026-10-29 03:32 UTC
+Last updated: 2026-10-29 04:01 UTC
 
 # HANDOFF — Article-Stratonovich-HAM-Second-Moment
 
 ## ⏭ Next session: where to stand and what to do
 
-Inspect the current cold-v3 attempt, then collect/adjudicate it. The final
-80-page prior-blind packet is frozen at d82ce9c;canonical mathematics is
-adoption9054ece422489d278833c914b5b73569d2cbbb24. Before dispatch there is
-NO cold-v3 scientific process. The current run intends to launch it once
-using reviews/2026-10-28-full-upper-cold-v3/launch.py after this handoff.
-If native-v1/execution.json exists,inspect its actual PID/session/status and
-poll that same process. Never restart on an observation timeout. If no
-attempt exists,launch the committed packet once with its same-process guard.
-Hold the ACTUAL launch HEAD until terminal collection;execution.json records it.
+Rewrite L:fixed-split with the explicit chronological word-norm derivation
+in reviews/2026-10-28-full-upper-cold-v3/fixed-split-repair-map.md. This is
+the next mathematical action,not another unchanged review. Start from the
+CURRENT82page canonical source,mathematics adoption9054ece. The third cold
+report returned NOT CLEAR and all9items are adjudicated at94a57b4.
 
-The terminal/modular primary review is TERMINAL and ACCEPTED at the scoped
-correctness gate:15PASS/HIGH,full15text/14image delivery,no required repairs,
-636.876s. Every6minor finding is adjudicated and reflected in the final notes.
-All94native/dry-run members were archived/hash verified;raw workspaces removed.
-Do not poll old primary session18255 or restart it. Both older whole-paper
-cold reports remain NOT CLEAR on their respective sources.
+The concrete missing presentation is the common time partition,each identity
+between phase norms,one-ending charging,explicit cross-vacuum subspaces,
+normalized vector Cauchy integrals and an actual C_split. A proposed constant
+and the exact pre-absorption product are in the UNREVIEWED map. The finite
+endpoint-budget diagnostic passes34314exact-rational schedules,including
+simultaneous/clipped endpoints;it is not an operator/coefficient theorem.
 
-Full original goal ACTIVE. Sharp constant OPEN;Lean creation still requires
-decision4. The upper proof has been reported to Le at decision5;current work
-finishes the authorized cold gates,not a new sharp proof wave.
+No review/build process is live. Third cold source da0864b,994.522s,actual
+DeepSeekV4-Pro,32tool calls(one failed),partial actual primary-source reads.
+All17native/workspace archive members hash verified;own raw/temp copies
+removed. Do not poll old sessions56602 or18255 or restart archived attempts.
+The cold-v3 launcher now refuses even after raw cleanup using durable records.
+
+The earlier primary15PASS/HIGH is genuine scoped evidence but does not waive
+this cold finding. After actual substantive repair,get fresh primary/HIGH,
+then a fresh prior-blind whole-paper read. Full original goal ACTIVE;sharp
+constant OPEN;Lean creation still requires decision4. No new sharp wave.
 
 ## Pre-flight checks
 
-1. Read Progress.md and PROJECT-GOAL.md. Canonical adoption9054ece and cold
-   freeze d82ce9c are pushed/<HUB>-synchronized before this handoff commit.
+1. Read Progress.md and PROJECT-GOAL.md. Canonical adoption9054ece and third-cold disposition94a57b4 are
+   pushed/<HUB>-synchronized before this handoff commit.
 2. Final82pages,45proofs;actual formatter idempotent;zero errors,undefined
    references/citations,overfull boxes,tabs or duplicate labels. Binding in
    terminal-modular/final-status-binding.json.
@@ -44,15 +47,16 @@ finishes the authorized cold gates,not a new sharp proof wave.
    the uniform scaled finite-model bound and geometric tails. Known mild-
    solution identification is separately retained from Theorem1.1(1) and
    its Section5part(ii). No uniqueness or new mild-equation proof is claimed.
-6. Cold-v3 blind80pages,all45proofs and every formal statement INCLUDING
+6. Completed cold-v3 blind80pages,all45proofs and every formal statement INCLUDING
    remarks byte-equal to final82pages. Complete manuscript/bibliography inline;
    six pinned source texts available. Canonical free-form prompt,prior-blind,
-   no grades/checklist/reports in packet. Native DeepSeek V4-Pro access probe
-   passed6.828s,but is not a scientific review.
+   no grades/checklist/reports in packet. Native DeepSeek V4-Pro cold read returned NOT CLEAR
+   after994.522s. Separate6.828s access probe was not a scientific review.
 7. Same-process committed-byte guard and canonical hash checks must pass
    before dispatch. Isolated TEMP.git root,explicit cwd/--dir,read-only pure
-   configuration,131072output cap. Do not commit during native collection.
-8. Earlier cold source26bb560/dispositionb310b119:15items,partial source reads,
+   configuration,131072output cap. Hold HEAD during any future native collection. No process is live now.
+8. Third cold source da0864b/disposition94a57b4:9items,32calls,partial actual
+   source reads,NOT CLEAR. Earlier source26bb560/dispositionb310b119:15items,partial source reads,
    NOT CLEAR. Second source32ee0ce/disposition6f2dc0c:9items,ZEROsource calls,
    NOT CLEAR. Full delivery never substitutes for actual source consultation.
 9. Seven reference requests already queued;latest exact snapshot is
@@ -61,29 +65,35 @@ finishes the authorized cold gates,not a new sharp proof wave.
 
 ## Concrete deliverables for the next session
 
-- Collect the new native DeepSeek report,verify actual model,prompt delivery,
-  source HEAD/input stability,and actual source reads. Adjudicate every concern
-  under the canonical substantive/cosmetic/already-known distinctions;do not
-  turn an unresolved assembly concern into clearance using the primary HIGH.
-- If substantive repairs are required,write them and obtain fresh primary
-  review before another fresh cold read. Do not rerun unchanged for a label.
-- Preserve terminal native evidence and read-back member hashes before own
-  workspace cleanup. Record actual source consultation,including zero calls.
-- Reconcile the PRIVATE wiki proposal to the cold outcome;canonical project
-  publication/provenance debt remains open. No direct shared six-repo edit,
-  project-publication ticket or automatic notification is authorized by the
-  ordinary missing-reference enqueue instruction.
-- Keep terminal-modular/lessons.md. The lower tilt screen in
-  cold-core-expansion/next-lower-screen.md is UNREVIEWED planning only.
-- Lean remains L0/PROPOSED;no package,lease,code or build. Decision4 is open.
-  Sharp target and intended source normalization remain unresolved.
+- Expand the actual L:fixed-split proof with explicit intermediate spaces,
+  chronological product,endpoint charges,normalized coefficient extraction
+  and a displayed admissible constant. Preserve the full covariance class,
+  ordinary degrees,self-pairings and the exact factorial denominator.
+- Audit the alternative static coefficient import for generalized weighted
+  endpoint measures against Chen--Hu's exact hypotheses. Chen2023 finiteness
+  is not a coefficient-rate theorem. This concerns unpromoted alternatives,
+  not a main-theorem input,but it cannot be waved away.
+- Make P:mixed's equal-length import and own unequal-length deduction fully
+  explicit;remove ambiguity about the contextual product identity. Add an
+  indexed parameter/limit trace and notation flags. All substantive items
+  in cold-v3/adjudication-v1.md remain open until actually addressed.
+- Freeze the real revised source and actual primary source inputs after
+  clean format/build gates. Fresh Opus5.5/HIGH primary review,then fresh
+  prior-blind DeepSeek full read. Do not rerun unchanged or use old grades.
+- Keep canonical wiki untouched. Accurate PRIVATE proposal is updated to
+  third-cold NOT CLEAR;its notification/publication boundary remains open.
+  Normal seven reference requests are already queued;no duplicates.
+- Lower-source-recon.md records actual local wiki/primary retrieval for two
+  existing background papers and their model mismatches. It opens no sharp
+  proof wave. Lean remains L0/PROPOSED,no package,lease,code or build.
 
 ## Success criteria for the immediate next step
 
-The fresh full-paper cold report is bound to the actual final proof bytes,
-actual source consultation and native model. Every concern is adjudicated;
-substantive concerns stay open until repaired/reviewed. Full original spatial
-class and sharp target remain intact. The project is not declared complete.
+A cold reader can reconstruct the fixed-split estimate from explicit products
+and counts rather than qualitative absorption. The finite diagnostic is
+retained as falsification evidence,not proof. Actual repairs address all
+substantive source/auxiliary/limit findings before fresh gates. The original
+full spatial class and sharp target remain intact;the project is not complete.
 
 ## Anti-success criteria
 
@@ -298,17 +308,34 @@ Latest checkpoints:
   full source texts available in isolated read-only packet. New actualV4-Pro
   health probe passed;scientific cold read is NEXT,not yet a report.
 
+- 2026-10-29 disposition94a57b4:third prior-blind read returned after994.522s,
+ 32tool calls/1failed,actual partial source consultation;all9items adjudicated.
+  NOT CLEAR:fixed-split transparency,alternative static measure-class source
+  fidelity,unequal-chain exposition and limit tracking remain open. Source/PDF
+  unchanged. All17native/workspace members archived/hash verified and cleaned.
+- 2026-10-29 endpoint-budget check passes34314exact-rational schedules,
+  33624simultaneous cases,28314clipped cases,largest actual/charged ratio1;
+  insertion cuts add no metric loss. Diagnostic only,not theorem. Concrete
+  unreviewed word-norm/constant repair map retained. Archived-attempt restart
+  guard fixed and actual pre-provider refusal checked. Private proposal and
+  writer request reconciled to third-cold NOT CLEAR;no canonical publication.
+- 2026-10-29 actual lower-source recon:wiki concepts/digests then primary
+  Chen--Hu--Song--Song2018parabolic hypercontractivity and Giacomin--Lacoin--
+  Toninelli2010Gaussian covariance tilt,with exact paths/ranges/hashes. Both
+  already in six-repo corpus;no duplicates or imported HAM lower theorem.
+
 ## Repo & git state at handoff
 
-- master;pre-handoff HEAD is cold freeze d82ce9c,with mathematics adoption
-  9054ece422489d278833c914b5b73569d2cbbb24. Both are pushed and <HUB>-
-  synchronized. Only HANDOFF.md belongs to this dedicated commit.
-- Primary native review/builds and the separate DeepSeek health probe are
-  terminal. No cold-v3 scientific process exists at this commit;the active
-  run intends to launch it next. Consult cold-v3/native-v1/execution.json
-  for the subsequent actual PID/workspace/source HEAD rather than restarting.
-- No source PDF,All.bib or sibling Article edits. No private Lean package.
-  Canonical wiki unchanged;the accurate local proposal is unpublished.
+- master;pre-handoff HEAD94a57b44f3930329cad241a46eb686e5ce9bcf83,pushed
+  and <HUB>-synchronized. Only HANDOFF.md is in this dedicated commit.
+- Canonical mathematics/PDF are unchanged from9054ece422489d278833c914b5b73569d2cbbb24:
+  82pages,45proofs;exact final binding in terminal-modular/final-status-binding.json.
+  No proof rewrite has yet been applied at the cold-report checkpoint.
+- All primary/cold/health/build processes are terminal. Latest cold source
+  da0864bc4b688ba260ab648f487623b9b2da7928 was held through full collection.
+  Archive17members read-back verified;raw/temp workspace removed. No live job.
+- No source PDF,All.bib,sibling Article or canonical shared-wiki edits.
+  No private Lean companion. Local wiki proposal is unpublished.
 
 ## Operating notes
 
@@ -349,7 +376,8 @@ was previously placed on <MACHINE> tag4;no persistent display setup was changed.
 
 ## Risks to monitor
 
-1. Current terminal/modular deduction passed primary;whole-paper cold remains open.
+1. Current terminal/modular deduction passed primary;third whole-paper cold
+   is NOT CLEAR and substantive repairs are OPEN.
 2. Full sharp p2 constant remains open;upper constant is nonsharp.
 3. Source E_star/E printed normalization conflict has no adopted repair.
 4. Full covariance class must not be replaced with a Riesz/angular subclass.
