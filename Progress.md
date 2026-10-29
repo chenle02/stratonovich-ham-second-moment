@@ -6,10 +6,10 @@
 
 ## Current state
 
-- **Phase:** independent fixed-order reconstruction, IN PROGRESS. The sixth blind read of source `6cdc142` returned NOT CLEAR. It requests a proof-level check of the Chapter 4 import and explicit hypothesis/canonical-object statements. Those statement/Jensen clarifications are written. The first new construction component, `L:damped-homogeneous-norms`, is written and unreviewed; the spatial Wick-measure and joint-limit lemmas remain to implement from `reviews/2026-10-29-full-upper-cold-v6/fixed-order-reconstruction-plan.md`.
-- **Prior verified checkpoint:** the 92-page quantitative upper argument plus independent mild construction passed its OWN 19-check Opus5.5/HIGH review at source `a7e725e`, with complete 27-text/36-image delivery and no required repairs. Final adoption `df1648b` binds its four minor explanatory changes. That review is not a verdict on the new norm/construction revision. All six cold reports remain NOT CLEAR for their source versions.
-- **Current artifact:** 94 pages, 49 proofs; original full covariance/dimension and upper/sharp targets retained. The Radon covariance class and canonical solution are now explicit. The new norm lemma replaces Appendix A.1 in the crude norm bounds. The source's fixed-order imports remain until the two planned lemmas replace them. Quantitative interval/CP/Fock estimates remain unchanged.
-- **Open targets:** finish/review the bounded construction repair, then a fresh cold read; G:sharp at the full original scope; private Lean verification once companion creation is approved; canonical wiki provenance and novelty/circulation gates. Printed first-moment normalization has no adopted correction.
+- **Phase:** independent fixed-order reconstruction, WRITTEN CANDIDATE. The sixth blind read of source `6cdc142` returned NOT CLEAR. Its construction request is now addressed by three unreviewed lemmas: direct homogeneous norms, positive spatial Wick-measure limits, and arbitrary joint vertex-width limits. The source Chapter 4/Appendix A construction imports have been replaced in all consumers. Fresh primary/HIGH and whole-paper cold review remain required.
+- **Prior verified checkpoint:** the 92-page quantitative upper argument plus independent mild construction passed its OWN 19-check Opus5.5/HIGH review at source `a7e725e`, with complete 27-text/36-image delivery and no required repairs. Final adoption `df1648b` binds its four minor explanatory changes. That review is not a verdict on this reconstruction. All six cold reports remain NOT CLEAR for their source versions.
+- **Current artifact:** 96 pages, 51 proofs; original full covariance/dimension and upper/sharp targets retained. Relative to `ebe4852`, two proofs are added, twelve consumer proofs change, 37 prior proofs and EVERY prior formal statement are byte equal. The previously unreviewed norm lemma is included in the fresh audit. Quantitative interval/CP/Fock estimates remain unchanged. Clean build: zero errors, undefined references/citations, overfull boxes, tabs.
+- **Open targets:** independently review this bounded construction repair, then a fresh cold read; G:sharp at the full original scope; private Lean verification once companion creation is approved; canonical wiki provenance and novelty/circulation gates. Printed first-moment normalization has no adopted correction.
 - **Authorization:** Le requested pursuit of the full goal, with the HIGH threshold unchanged. This is a clearly delimited reconstruction of a known input, not a new lower/asymptotic proof wave. Report and honor PROJECT-GOAL decision points; companion-creation decision 4 remains pending. No source-author/coauthor correspondence or public release authorized.
 - **Worker:** Codex/GPT author, paper-dev workflow; historical project handoff to agent #30 on 2026-10-26. Lean remains L0/PROPOSED (`lean-progress/PROGRESS.md`). Nine normal reference requests exist; new edition-custody intake is nonblocking, not source authentication.
 
@@ -2741,3 +2741,34 @@ only own cleanup. No live reviewer. Full original goal ACTIVE;sharp,Lean approva
 novelty,canonical wiki/circulation still open. All six coldsNOTCLEARfor their sources.
 
 The coordinate-face negative control now matches the white-test degree3:rho=delta_0(dr1)*r2^2dr2. Its transform is computed by Laplace integration-by-parts recurrence and stays positive aslambda1grows;no tautological constant-list check. This refines a diagnostic only,not the new unreviewed construction.
+
+## Independent fixed-order reconstruction written (2026-10-29)
+
+The two remaining lemmas are implemented in the actual notes, after the
+already written `L:damped-homogeneous-norms`. `L:spatial-wick-measures`
+proves nonnegative gap-Laplace transforms, uniform mass by elementary
+Brownian heat conditioning and occupation moments, finite-Laplace weak
+convergence, separate coordinate-face exclusion, and homogeneous horizon
+non-atomicity. `L:joint-fixed-order` uses marked temporal-tail edges in
+known source Theorem 3.1 and the direct norms, then finite Gaussian Wick
+moments and Hilbert completeness. Arbitrary width ratios, unequal/empty
+chains and the Green-before-noise convention are included. No broader
+nonhomogeneous theorem or novelty claim is made.
+
+`P:mixed` now uses those lemmas directly; its previous colour/import proof
+is preserved in `reviews/2026-10-29-fixed-order-construction/previous-mixed-proof.tex`.
+Construction consumers (including the mild equation and final theorem)
+use the new joint limit. Only the known universal source Theorem 3.1 is
+imported analytically for construction; source definitions remain explicit.
+No source 4.1/4.4 or Appendix A.1 construction import remains load bearing.
+Every original formal statement is unchanged from `ebe4852`; exact proof
+comparison/build/hash binding is in the new review directory. The critical
+quantitative interval/phase/Fock estimates retain their prior proof bodies.
+
+The new frozen packet includes all construction text and every changed
+downstream proof. Its 36 rendered source images are byte equal to the
+previously carrier-calibrated cohort; the preparation guard passes. This
+is delivery preparation only, NOT mathematical acceptance. A fresh scoped
+Opus5.5/HIGH construction-and-consumer review is the next gate; all three
+new lemmas need it. No new review has yet completed for this candidate.
+The original full goal remains ACTIVE.

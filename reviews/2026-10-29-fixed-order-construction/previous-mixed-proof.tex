@@ -1,0 +1,197 @@
+\begin{proof}
+\emph{Imported inputs and the finite-order target.}
+From~\cite{chen:author2026:time-dependency}*{Theorem~4.1, (4.2), p.~22}, each
+deterministic kernel $g_n$ is Stratonovich integrable. Its spectral
+hypothesis (1.5) follows from Hypothesis~\ref{H:homog}, as recorded
+on p.~3 of the source. The other analytic input is the equal-length
+diagram limit in its Lemma~4.4, specified below. We prove the unequal-
+length identity from these inputs without invoking a product rule for
+multiple Stratonovich integrals.
+For the expectation identity needed here it suffices to use the fixed-order
+$L^2$ convergence in Theorem~4.1: Cauchy--Schwarz gives $L^1$ convergence
+of the product of two regularized factors, since their $L^2$ norms stay
+bounded. This is a finite-order statement, not an interchange of infinite
+solution series. The cases with a zero order use $X_0=1$.
+At positive widths Wick's formula gives zero at odd total order and
+the finite pairing sum at even total order; see the source's
+(2.20)--(2.21). We justify every term of its noise limit next.
+
+We next justify each individual generalized integral, including unequal
+chain lengths. We separate a fixed-noise measure limit from the joint
+noise limit imported from the source.
+
+\emph{Green measures at fixed noise widths.}
+At fixed positive noise widths, all covariance functions and all finite
+Gaussian moments are bounded and continuous in their spatial arguments.
+In dimension three the source defines $G_\eta=p_\eta*G$; these positive
+measures converge weakly to $G$ and all have mass $s$ at time $s$.
+For each fixed strictly ordered time tuple, products of these measures
+and their linear pushforwards therefore converge against every bounded
+continuous covariance product. The absolute integrals are bounded by
+a finite Gaussian-moment constant times the product of the time gaps,
+hence by an integrable function on the finite time simplices. Dominated
+convergence applies to each finite Wick sum. Applied also to mixed
+second moments with two Green widths, it proves the $L^2$ Cauchy
+property of every fixed-noise colored integral as $\eta\downarrow0$.
+Thus, from now on the fixed-noise integrals use the actual Green
+measures. This step takes place before any noise width tends to zero.
+
+\emph{The precise equal-length import.}
+From
+\cite{chen:author2026:time-dependency}*{Lemma~4.4 and Remark~4.5,
+pp.~30--31}, for two chains of the same length $r$, every pairing
+$D'\in\Pi_r$ has a finite joint limit when all its vertexwise widths
+$(\bar\epsilon,\bar\delta)$ tend to zero. Its regularized covariance
+factors are
+\[
+  \prod_{(j,l)\in D'}
+  \gamma^0_{\delta_j\vee\delta_l}(s_j-s_l)
+  \gamma_{\epsilon_j+\epsilon_l}(y_j-y_l).
+\]
+The joint limit permits arbitrary relative rates of all these widths;
+it is not a limit with one ratio held fixed. This analytic fact is
+imported, not proved here. Its spectral assumption is the source's
+(1.5), already checked from Hypothesis~\ref{H:homog}.
+
+\emph{A finite coloring reduces each limit to that import.}
+Choose and fix $D\in\Pi_k$ for the original lengths $m,n$.
+Assign an independent copy $W^e$ of the source noise to each pair
+$e\in D$, and at each vertex use the copy of its pair. For a chain
+of length $r\ge1$ write $c(l)$ for this color assignment and
+$Y_{r,a}$ for its integral, where $a$ is the collection of its positive
+noise widths. At fixed widths it exists by the preceding measure limit.
+In the product of two copies of this same length-$r$ chain, define
+the doubled color map by
+\[
+  \widetilde c(j)=c(j),\qquad
+  \widetilde c(r+j)=c(j),\qquad 1\le j\le r,
+\]
+and set
+\[
+  \Pi_r(c)=\{D'\in\Pi_r:
+  \widetilde c(j)=\widetilde c(l)
+  \text{ for every }\{j,l\}\in D'\}.
+\]
+The two copies use widths $a$ and $b$, but the same Gaussian color
+fields. Concatenate their vertex widths as
+$(\epsilon_j,\delta_j)_{1\le j\le2r}$ and their spacetime variables
+as $(\tau_j,\eta_j)_{1\le j\le2r}$. Put
+\[
+  K_{jl}=\gamma^0_{\delta_j\vee\delta_l}(\tau_j-\tau_l)
+  \gamma_{\epsilon_j+\epsilon_l}(\eta_j-\eta_l).
+\]
+The covariance matrix of the colored evaluations is exactly
+$\mathbf1_{\{\widetilde c(j)=\widetilde c(l)\}}K_{jl}$.
+Let $H_{r,t,x}(\ud\mathbf s,\ud\mathbf y)$ be the terminal
+Green measure on $0<s_1<\cdots<s_r<t$, with kernel product
+$\prod_{j=1}^rG(s_{j+1}-s_j,y_{j+1}-y_j)$ and
+$(s_{r+1},y_{r+1})=(t,x)$, in the measure convention already stated.
+Wick's formula gives exactly
+\[
+  \begin{split}
+    \E[Y_{r,a}Y_{r,b}]&=\sum_{D'\in\Pi_r(c)}B_{D'}(a,b),\\
+    B_{D'}(a,b)&=\int H_{r,t,x}(\ud\mathbf s,\ud\mathbf y)
+    H_{r,t,x}(\ud\mathbf s',\ud\mathbf y')
+    \prod_{\{j,l\}\in D'}K_{jl}.
+  \end{split}
+\]
+An incompatible pairing has a zero color indicator; for a compatible
+pairing every indicator is one. The remaining integrand has no colors:
+it is precisely the one-field fixed-diagram integral with these $2r$
+vertex widths. The one-field import already uses the same covariance
+function on all its $r$ edges, so repetition adds no new hypothesis.
+For example, if $r=2$ and both chain vertices have one color, the
+four-vertex covariance product in the expectation is
+\[
+  K_{12}K_{34}+K_{13}K_{24}+K_{14}K_{23}.
+\]
+These are exactly the three uncolored diagrams in $\Pi_2$, including
+the self-pairing on each copy. None is discarded.
+Reversing each terminal chain as specified below gives its initial-chain
+diagram of Lemma~4.4, merely permuting the vertex widths. Each
+$B_{D'}$ therefore has a finite limit $b_{D'}$, independent of their
+relative rates. Define the finite sum
+$Q_{r,c}=\sum_{D'\in\Pi_r(c)}b_{D'}$. Consequently,
+\[
+  \lim_{a,b\to0}\E[Y_{r,a}Y_{r,b}]=Q_{r,c},\qquad
+  \lim_{a\to0}\E Y_{r,a}^2=\lim_{b\to0}\E Y_{r,b}^2=Q_{r,c}.
+\]
+It follows that
+\[
+  \lim_{a,b\to0}\|Y_{r,a}-Y_{r,b}\|_2^2
+  =Q_{r,c}+Q_{r,c}-2Q_{r,c}=0.
+\]
+Completeness of $L^2$ gives a unique limit $Y_r$. Set $Y_0=1$
+for an empty chain.
+
+\emph{The original unequal chains and their reversal.}
+For the original two chains the product converges in $L^1$, since
+\[
+  \begin{split}
+    \|Y_{m,a}Y_{n,b}-Y_mY_n\|_1
+    &\le\|Y_{m,a}-Y_m\|_2\|Y_{n,b}\|_2\\
+    &\quad+\|Y_m\|_2\|Y_{n,b}-Y_n\|_2\longrightarrow0.
+  \end{split}
+\]
+In that product each color occurs exactly twice in total, even when
+both occurrences lie on one chain. Thus, exactly one pairing of equal
+colors is possible: the prescribed $D$. Its regularized expectation
+is the terminal-chain integral for $D$, and has the finite limit
+$\E[Y_mY_n]$. The reversal below carries it to $J_{m,n,D^{\rm rev}}$.
+Since $D\mapsto D^{\rm rev}$ is a bijection of pairings, every
+integral in~\eqref{E:mixed-diagram} is obtained this way.
+The regularized integrands are nonnegative, since the Green measures,
+temporal covariances and smoothed spatial covariances are nonnegative.
+Hence, every limiting $J_{m,n,D}$ is nonnegative as well. This proves
+finiteness and nonnegativity of each diagram, without interchanging
+an infinite series or asserting a pointwise value of a singular kernel.
+
+More precisely, define the involution on vertex labels by
+\[
+  \rho(j)=m+1-j\quad(1\le j\le m),\qquad
+  \rho(m+j)=m+n+1-j\quad(1\le j\le n),
+\]
+and set $D^{\rm rev}=\{\{\rho(a),\rho(b)\}:\{a,b\}\in D\}$.
+Since $\rho^2$ is the identity, this is a bijection of $\Pi_k$.
+
+More explicitly, if $(s_j,y_j)$ are the first chain's terminal
+variables, set
+\[
+  s'_j=t-s_{m+1-j},\qquad y'_j=x-y_{m+1-j},
+  \qquad 1\le j\le m,
+\]
+and use the analogous length-$n$ transformation on the second chain.
+The new variables remain strictly increasing in time and have the
+initial root $(s'_0,y'_0)=(0,0)$ on each chain. For example, the
+terminal factor $G(t-s_m,x-y_m)$ becomes $G(s'_1,y'_1)$;
+every other Green factor becomes its corresponding successive
+increment. This also specifies the equal-length reversal used above.
+Both time and spatial covariance differences change sign; the covariance
+kernels are even. The resulting permutation of the $2k$ labels is a
+bijection of $\Pi_k$. At positive widths the uncolored product is
+the finite sum of these individual terminal diagrams. Its $L^1$
+limit and the individual colored limits therefore give
+\eqref{E:mixed-moment}, including its
+nonnegativity. These are exactly the two chains in the integrand of
+the source's (3.6), with $n_1=m$, $n_2=n$, restricted to the finite
+horizons. The same transformations apply to the source's regularized
+integrals before taking their defining limits.
+
+\emph{The separate solution-series passage.}
+Proposition~\ref{P:mild-construction} below identifies the series
+of the $X_n$ as a Stratonovich mild solution. Its fixed-$t$ summability
+follows independently from Lemma~\ref{L:crude-corrected} and the
+vertexwise version in Lemma~\ref{L:vertex-crude}. Their proofs use
+the source's fixed-order inputs, not the present mixed expansion.
+Thus, this use of the later construction is not circular.
+In particular, $U_N=\sum_{n=0}^N X_n$ converges to $u$ in $L^2$.
+Consequently,
+\[
+  |\E U_N^2-\E u^2|
+  \le\|U_N-u\|_2(\|U_N\|_2+\|u\|_2)\longrightarrow0.
+\]
+The finite expansion of $\E U_N^2$ is a sum of the nonnegative mixed
+expectations already computed. Its increasing limit is therefore the
+full double sum, independently of its enumeration. Regrouping by total
+order gives~\eqref{E:full-second}. This proves Proposition~\ref{P:mixed}.
+\end{proof}

@@ -152,8 +152,8 @@ Throughout we write
 The main assertion of these notes is Theorem~\ref{T:full-upper}: the
 second moment has a finite upper growth rate at scale $t^\kappa$ for
 every covariance in Hypothesis~\ref{H:homog}. The sharp constant in
-Goal~\ref{G:sharp} is open. Theorem~\ref{T:full-upper} uses the known fixed-order construction in
-\cite{chen:author2026:time-dependency}*{Theorem~4.1, p.~22}, the Gaussian
+Goal~\ref{G:sharp} is open. Theorem~\ref{T:full-upper} uses the fixed-order
+construction proved in Lemma~\ref{L:joint-fixed-order}, the Gaussian
 and complex phase estimates in Sections~\ref{S:static-phase}--\ref{S:static-all-orders},
 and the interval coefficient and inventory estimates in
 Section~\ref{S:interval-upper}. It does not use the alternative covariance
@@ -189,29 +189,26 @@ source's $L_*$ explicitly assumes a valid first-moment lower bound with
 that constant. No correction of its printed normalization is adopted.
 
 \paragraph{Which source statements are inputs.}
-The moment estimate and its series-limit passage import the fixed-order
-$L^2$ construction from the current author version, Theorem~4.1, and the
-bounded-operator Crouzeix--Palencia theorem in~\eqref{E:cp-input}.
-Proposition~\ref{P:mild-construction} proves that this series satisfies
-its onefold Stratonovich mild equation. That separate construction uses
-Theorem~3.1 and Lemma~A.1 through the corrected vertexwise estimate;
-it does not import the author's Section~5(ii) argument or (5.3)--(5.4).
-No uniqueness assertion is made. The uniform tail passage used for the
-sharp-scale moment estimate is proved in Lemma~\ref{L:uniform-series-tail},
-independently of the crude bound and the source's series estimate.
+The moment estimate uses the bounded-operator Crouzeix--Palencia
+theorem in~\eqref{E:cp-input}. The fixed-order construction is supplied
+here by Lemmas~\ref{L:spatial-wick-measures}--\ref{L:joint-fixed-order},
+using only the source's universal pairing inequality
+\cite{chen:author2026:time-dependency}*{Theorem~3.1, (3.6), pp.~14--15}
+and the direct norm bounds in Lemma~\ref{L:damped-homogeneous-norms}.
+Thus neither Theorem~4.1 nor Lemma~4.4 nor Appendix~A.1 of the source is
+an analytic construction input. The finite-width Gaussian field and
+multiple Stratonovich integral use its definitions and regularization
+conventions, with Green smoothing removed before noise smoothing.
+The new construction lemmas are candidates awaiting independent review.
 
-The equal-length diagram limit in the author's Lemma~4.4 is an additional
-input to the auxiliary mixed-term Proposition~\ref{P:mixed}.
-Its Section~4 uses Lemmas~4.2--4.3, a static continuity input,
-Theorem~3.1 and Lemma~A.1 at fixed Laplace parameters. Remark~4.5,
-pp.~30--31, explicitly gives Lemma~4.4 $\Rightarrow$ (4.4)
-$\Rightarrow$ Lemma~2.4 $\Rightarrow$ Theorem~4.1.
-Here (4.4) is a joint regularization limit, different from the
-time-uniform estimate (5.4) diagnosed in Remark~\ref{R:source-uniformity}.
-Those fixed-order arguments do not use Section~5's later
-degree/time-dependent parameter substitution. The mixed-width and order-limit
-passages for the mild equation are supplied here in
-Proposition~\ref{P:mild-construction}.
+Proposition~\ref{P:mild-construction} proves that the resulting series
+satisfies its onefold Stratonovich mild equation, using the corrected
+vertexwise bound. It does not import the author's Section~5(ii) argument
+or (5.3)--(5.4). No uniqueness assertion is made. The uniform tail passage
+for the target-scale moment estimate is proved in
+Lemma~\ref{L:uniform-series-tail}, independently of the crude bound and
+the source's series estimate. The mixed-width and order-limit passages
+for the mild equation are supplied here as well.
 
 The first-moment formulas in Theorem~\ref{T:first} are quoted source
 statements, with the printed-normalization qualification there; they are
@@ -249,7 +246,9 @@ integrals vanish and even ones are given by Wick's formula
 \cite{chen:author2026:time-dependency}*{(2.19)--(2.21)}, a sum over pair
 partitions $\mathcal D\in\Pi_n$ of $\{1,\dots,2n\}$ that includes
 self-pairings within one chain. The second moment of one ordered term is
-the two-chain pairing integral \cite{chen:author2026:time-dependency}*{Theorem~4.1, (4.3)}:
+the two-chain pairing integral, stated in
+\cite{chen:author2026:time-dependency}*{Theorem~4.1, (4.3)} and proved
+here under Hypothesis~\ref{H:homog} in Proposition~\ref{P:mixed}:
 \begin{equation}\label{E:Sn2}
   \begin{split}
     \E\big[S_n(g_n(\cdot,t,x))^2\big]
@@ -405,8 +404,10 @@ An empty chain contributes the factor one. For $d=3$, the spatial Green
 kernels are measures; for spatial white noise the covariance is a delta
 measure. Integrals in~\eqref{E:mixed-diagram} use the generalized-kernel
 and regularization conventions of the source, not pointwise values of
-these measures; see~\cite{chen:author2026:time-dependency}*{Remark~2.3,
-p.~11, the Green regularization on pp.~13--14, and Theorem~4.1}.
+these measures. Lemmas~\ref{L:spatial-wick-measures}--\ref{L:joint-fixed-order}
+construct them with the convention of
+\cite{chen:author2026:time-dependency}*{Remark~2.3, p.~11,
+and the Green regularization on pp.~13--14}.
 
 \begin{proposition}[Mixed terms]\label{P:mixed}
   Under Hypothesis~\ref{H:homog},
@@ -426,201 +427,61 @@ p.~11, the Green regularization on pp.~13--14, and Theorem~4.1}.
 \end{proposition}
 
 \begin{proof}
-  \emph{Imported inputs and the finite-order target.}
-  From~\cite{chen:author2026:time-dependency}*{Theorem~4.1, (4.2), p.~22}, each
-  deterministic kernel $g_n$ is Stratonovich integrable. Its spectral
-  hypothesis (1.5) follows from Hypothesis~\ref{H:homog}, as recorded
-  on p.~3 of the source. The other analytic input is the equal-length
-  diagram limit in its Lemma~4.4, specified below. We prove the unequal-
-  length identity from these inputs without invoking a product rule for
-  multiple Stratonovich integrals.
-  For the expectation identity needed here it suffices to use the fixed-order
-  $L^2$ convergence in Theorem~4.1: Cauchy--Schwarz gives $L^1$ convergence
-  of the product of two regularized factors, since their $L^2$ norms stay
-  bounded. This is a finite-order statement, not an interchange of infinite
-  solution series. The cases with a zero order use $X_0=1$.
-  At positive widths Wick's formula gives zero at odd total order and
-  the finite pairing sum at even total order; see the source's
-  (2.20)--(2.21). We justify every term of its noise limit next.
+  Lemma~\ref{L:joint-fixed-order} below constructs each $X_n$ and each
+  individual two-chain diagram at arbitrary vertexwise widths, including
+  unequal and empty chains. Its proof uses the positive spatial-measure
+  limit and the imported universal Theorem~3.1; it uses neither the present
+  proposition nor any infinite solution series.
 
-  We next justify each individual generalized integral, including unequal
-  chain lengths. We separate a fixed-noise measure limit from the joint
-  noise limit imported from the source.
+  At positive noise widths Wick's formula gives zero at odd total order
+  and the finite pairing sum at even total order. The Green-width limit
+  is taken first, as in the construction preceding
+  Lemma~\ref{L:spatial-wick-measures}. At fixed $m,n$, joint $L^2$
+  convergence of the two factors gives product convergence in $L^1$:
+  \[
+    \|Y_mY_n-X_mX_n\|_1
+    \le\|Y_m-X_m\|_2\|Y_n\|_2
+    +\|X_m\|_2\|Y_n-X_n\|_2\longrightarrow0.
+  \]
+  A zero-order factor stays equal to one. Each individual Wick diagram
+  also has the finite nonnegative limit in
+  Lemma~\ref{L:joint-fixed-order}.
 
-  \emph{Green measures at fixed noise widths.}
-  At fixed positive noise widths, all covariance functions and all finite
-  Gaussian moments are bounded and continuous in their spatial arguments.
-  In dimension three the source defines $G_\eta=p_\eta*G$; these positive
-  measures converge weakly to $G$ and all have mass $s$ at time $s$.
-  For each fixed strictly ordered time tuple, products of these measures
-  and their linear pushforwards therefore converge against every bounded
-  continuous covariance product. The absolute integrals are bounded by
-  a finite Gaussian-moment constant times the product of the time gaps,
-  hence by an integrable function on the finite time simplices. Dominated
-  convergence applies to each finite Wick sum. Applied also to mixed
-  second moments with two Green widths, it proves the $L^2$ Cauchy
-  property of every fixed-noise colored integral as $\eta\downarrow0$.
-  Thus, from now on the fixed-noise integrals use the actual Green
-  measures. This step takes place before any noise width tends to zero.
+  To identify its initial-chain form, for terminal variables in the
+  first chain set
+  \[
+    s'_j=t-s_{m+1-j},\qquad y'_j=x-y_{m+1-j},\qquad1\le j\le m,
+  \]
+  and use the corresponding length-$n$ transformation on the second
+  chain. Each transformed chain has initial root $(0,0)$.
+  For example, $G(t-s_m,x-y_m)$ becomes $G(s'_1,y'_1)$;
+  every other factor becomes the corresponding successive increment.
+  The differences in each covariance change sign, absorbed by evenness.
+  The vertex involution is
+  \[
+    \rho(j)=m+1-j\ (1\le j\le m),\qquad
+    \rho(m+j)=m+n+1-j\ (1\le j\le n).
+  \]
+  It induces the pairing bijection
+  $D\mapsto\{\{\rho(a),\rho(b)\}:\{a,b\}\in D\}$.
+  The same transformation holds before removing noise smoothing.
+  Passing to the finitely many diagram limits proves
+  \eqref{E:mixed-moment} with precisely~\eqref{E:mixed-diagram}.
 
-  \emph{The precise equal-length import.}
-  From
-  \cite{chen:author2026:time-dependency}*{Lemma~4.4 and Remark~4.5,
-  pp.~30--31}, for two chains of the same length $r$, every pairing
-  $D'\in\Pi_r$ has a finite joint limit when all its vertexwise widths
-  $(\bar\epsilon,\bar\delta)$ tend to zero. Its regularized covariance
-  factors are
-  \[
-    \prod_{(j,l)\in D'}
-    \gamma^0_{\delta_j\vee\delta_l}(s_j-s_l)
-    \gamma_{\epsilon_j+\epsilon_l}(y_j-y_l).
-  \]
-  The joint limit permits arbitrary relative rates of all these widths;
-  it is not a limit with one ratio held fixed. This analytic fact is
-  imported, not proved here. Its spectral assumption is the source's
-  (1.5), already checked from Hypothesis~\ref{H:homog}.
-
-  \emph{A finite coloring reduces each limit to that import.}
-  Choose and fix $D\in\Pi_k$ for the original lengths $m,n$.
-  Assign an independent copy $W^e$ of the source noise to each pair
-  $e\in D$, and at each vertex use the copy of its pair. For a chain
-  of length $r\ge1$ write $c(l)$ for this color assignment and
-  $Y_{r,a}$ for its integral, where $a$ is the collection of its positive
-  noise widths. At fixed widths it exists by the preceding measure limit.
-  In the product of two copies of this same length-$r$ chain, define
-  the doubled color map by
-  \[
-    \widetilde c(j)=c(j),\qquad
-    \widetilde c(r+j)=c(j),\qquad 1\le j\le r,
-  \]
-  and set
-  \[
-    \Pi_r(c)=\{D'\in\Pi_r:
-    \widetilde c(j)=\widetilde c(l)
-    \text{ for every }\{j,l\}\in D'\}.
-  \]
-  The two copies use widths $a$ and $b$, but the same Gaussian color
-  fields. Concatenate their vertex widths as
-  $(\epsilon_j,\delta_j)_{1\le j\le2r}$ and their spacetime variables
-  as $(\tau_j,\eta_j)_{1\le j\le2r}$. Put
-  \[
-    K_{jl}=\gamma^0_{\delta_j\vee\delta_l}(\tau_j-\tau_l)
-    \gamma_{\epsilon_j+\epsilon_l}(\eta_j-\eta_l).
-  \]
-  The covariance matrix of the colored evaluations is exactly
-  $\mathbf1_{\{\widetilde c(j)=\widetilde c(l)\}}K_{jl}$.
-  Let $H_{r,t,x}(\ud\mathbf s,\ud\mathbf y)$ be the terminal
-  Green measure on $0<s_1<\cdots<s_r<t$, with kernel product
-  $\prod_{j=1}^rG(s_{j+1}-s_j,y_{j+1}-y_j)$ and
-  $(s_{r+1},y_{r+1})=(t,x)$, in the measure convention already stated.
-  Wick's formula gives exactly
-  \[
-    \begin{split}
-      \E[Y_{r,a}Y_{r,b}]&=\sum_{D'\in\Pi_r(c)}B_{D'}(a,b),\\
-      B_{D'}(a,b)&=\int H_{r,t,x}(\ud\mathbf s,\ud\mathbf y)
-      H_{r,t,x}(\ud\mathbf s',\ud\mathbf y')
-      \prod_{\{j,l\}\in D'}K_{jl}.
-    \end{split}
-  \]
-  An incompatible pairing has a zero color indicator; for a compatible
-  pairing every indicator is one. The remaining integrand has no colors:
-  it is precisely the one-field fixed-diagram integral with these $2r$
-  vertex widths. The one-field import already uses the same covariance
-  function on all its $r$ edges, so repetition adds no new hypothesis.
-  For example, if $r=2$ and both chain vertices have one color, the
-  four-vertex covariance product in the expectation is
-  \[
-    K_{12}K_{34}+K_{13}K_{24}+K_{14}K_{23}.
-  \]
-  These are exactly the three uncolored diagrams in $\Pi_2$, including
-  the self-pairing on each copy. None is discarded.
-  Reversing each terminal chain as specified below gives its initial-chain
-  diagram of Lemma~4.4, merely permuting the vertex widths. Each
-  $B_{D'}$ therefore has a finite limit $b_{D'}$, independent of their
-  relative rates. Define the finite sum
-  $Q_{r,c}=\sum_{D'\in\Pi_r(c)}b_{D'}$. Consequently,
-  \[
-    \lim_{a,b\to0}\E[Y_{r,a}Y_{r,b}]=Q_{r,c},\qquad
-    \lim_{a\to0}\E Y_{r,a}^2=\lim_{b\to0}\E Y_{r,b}^2=Q_{r,c}.
-  \]
-  It follows that
-  \[
-    \lim_{a,b\to0}\|Y_{r,a}-Y_{r,b}\|_2^2
-    =Q_{r,c}+Q_{r,c}-2Q_{r,c}=0.
-  \]
-  Completeness of $L^2$ gives a unique limit $Y_r$. Set $Y_0=1$
-  for an empty chain.
-
-  \emph{The original unequal chains and their reversal.}
-  For the original two chains the product converges in $L^1$, since
-  \[
-    \begin{split}
-      \|Y_{m,a}Y_{n,b}-Y_mY_n\|_1
-      &\le\|Y_{m,a}-Y_m\|_2\|Y_{n,b}\|_2\\
-      &\quad+\|Y_m\|_2\|Y_{n,b}-Y_n\|_2\longrightarrow0.
-    \end{split}
-  \]
-  In that product each color occurs exactly twice in total, even when
-  both occurrences lie on one chain. Thus, exactly one pairing of equal
-  colors is possible: the prescribed $D$. Its regularized expectation
-  is the terminal-chain integral for $D$, and has the finite limit
-  $\E[Y_mY_n]$. The reversal below carries it to $J_{m,n,D^{\rm rev}}$.
-  Since $D\mapsto D^{\rm rev}$ is a bijection of pairings, every
-  integral in~\eqref{E:mixed-diagram} is obtained this way.
-  The regularized integrands are nonnegative, since the Green measures,
-  temporal covariances and smoothed spatial covariances are nonnegative.
-  Hence, every limiting $J_{m,n,D}$ is nonnegative as well. This proves
-  finiteness and nonnegativity of each diagram, without interchanging
-  an infinite series or asserting a pointwise value of a singular kernel.
-
-  More precisely, define the involution on vertex labels by
-  \[
-    \rho(j)=m+1-j\quad(1\le j\le m),\qquad
-    \rho(m+j)=m+n+1-j\quad(1\le j\le n),
-  \]
-  and set $D^{\rm rev}=\{\{\rho(a),\rho(b)\}:\{a,b\}\in D\}$.
-  Since $\rho^2$ is the identity, this is a bijection of $\Pi_k$.
-
-  More explicitly, if $(s_j,y_j)$ are the first chain's terminal
-  variables, set
-  \[
-    s'_j=t-s_{m+1-j},\qquad y'_j=x-y_{m+1-j},
-    \qquad 1\le j\le m,
-  \]
-  and use the analogous length-$n$ transformation on the second chain.
-  The new variables remain strictly increasing in time and have the
-  initial root $(s'_0,y'_0)=(0,0)$ on each chain. For example, the
-  terminal factor $G(t-s_m,x-y_m)$ becomes $G(s'_1,y'_1)$;
-  every other Green factor becomes its corresponding successive
-  increment. This also specifies the equal-length reversal used above.
-  Both time and spatial covariance differences change sign; the covariance
-  kernels are even. The resulting permutation of the $2k$ labels is a
-  bijection of $\Pi_k$. At positive widths the uncolored product is
-  the finite sum of these individual terminal diagrams. Its $L^1$
-  limit and the individual colored limits therefore give
-  \eqref{E:mixed-moment}, including its
-  nonnegativity. These are exactly the two chains in the integrand of
-  the source's (3.6), with $n_1=m$, $n_2=n$, restricted to the finite
-  horizons. The same transformations apply to the source's regularized
-  integrals before taking their defining limits.
-
-  \emph{The separate solution-series passage.}
-  Proposition~\ref{P:mild-construction} below identifies the series
-  of the $X_n$ as a Stratonovich mild solution. Its fixed-$t$ summability
-  follows independently from Lemma~\ref{L:crude-corrected} and the
-  vertexwise version in Lemma~\ref{L:vertex-crude}. Their proofs use
-  the source's fixed-order inputs, not the present mixed expansion.
-  Thus, this use of the later construction is not circular.
-  In particular, $U_N=\sum_{n=0}^N X_n$ converges to $u$ in $L^2$.
-  Consequently,
+  Lemmas~\ref{L:crude-corrected} and~\ref{L:vertex-crude} independently
+  prove fixed-$t$ norm summability of the $X_n$, using the fixed-order
+  construction just cited and the universal pairing bound.
+  Proposition~\ref{P:mild-construction} identifies their series as a
+  Stratonovich mild solution. None of those proofs uses the present
+  mixed-term identity. Hence $U_N=\sum_{n=0}^N X_n\to u$ in $L^2$, and
   \[
     |\E U_N^2-\E u^2|
     \le\|U_N-u\|_2(\|U_N\|_2+\|u\|_2)\longrightarrow0.
   \]
-  The finite expansion of $\E U_N^2$ is a sum of the nonnegative mixed
-  expectations already computed. Its increasing limit is therefore the
-  full double sum, independently of its enumeration. Regrouping by total
-  order gives~\eqref{E:full-second}. This proves Proposition~\ref{P:mixed}.
+  The finite expansions of $\E U_N^2$ increase, since every mixed
+  expectation computed above is nonnegative. Their limit is the full
+  double sum, independent of its enumeration. Regrouping by total order
+  gives~\eqref{E:full-second}. This proves Proposition~\ref{P:mixed}.
 \end{proof}
 
 \subsection{A small-order check and a source uniformity issue}
@@ -781,7 +642,303 @@ in physical variables it pairs $G_\theta(s,x)$ with $G_\theta(t,y)$.
   This proves Lemma~\ref{L:damped-homogeneous-norms}.
 \end{proof}
 
-Since $\beta>2$ and $\alpha+\alpha_0<2$, the lemma gives constants
+Use the joint Gaussian regularizations of the source's (2.11).
+Write $a=(\epsilon,\delta)>0$ for one pair of widths and
+$\boldsymbol a=(a_1,\ldots,a_n)$ for vertexwise widths.
+Let $Y_n^{\boldsymbol a}(t,x)$ be the ordered terminal integral with
+kernel $g_n$ in~\eqref{E:expansion} and field
+$W_{\epsilon_j,\delta_j}(s_j,y_j)$ at vertex $j$; put $Y_0=1$.
+At fixed positive widths these are Gaussian-polynomial Bochner integrals.
+Indeed, Wick's formula bounds their product integrands in $L^2$ by
+$\sqrt{(2n-1)!!}\,V^{n/2}$, where $V$ is the largest of the finitely
+many field variances. The terminal Green measure has mass
+$t^{2n}/(2n)!$, by induction using $G_r(\R^d)=r$.
+In dimension three these integrals use the actual Green measures:
+products and linear pushforwards of $p_\eta*G$ converge against the
+bounded continuous covariance products. Mixed moments with two Green
+widths and the same mass bound give the $L^2$ limit as $\eta\downarrow0$,
+before any noise width is removed.
+
+\subsection{Spatial Wick measures and fixed-order construction}
+
+Put $\gamma_b=p_b*\Gamma$, where $p_b$ is the Brownian heat kernel.
+Fix $m+n=2k\ge2$, the two chains $I_1,I_2$ above and $D\in\Pi_k$.
+For a gap vector $\boldsymbol r\in(0,\infty)^{2k}$, let $s_l$ be the
+sum of the gaps up to vertex $l$ in its own chain. Similarly, for spatial
+increments $z_l$, let $x_l$ be their cumulative sum in that chain.
+For positive spatial widths $\boldsymbol\epsilon$ define
+\[
+  J_{\boldsymbol\epsilon,D}(\boldsymbol r)
+  =\int\prod_{l=1}^{2k}G_{r_l}(\ud z_l)
+  \prod_{\{j,h\}\in D}
+  \gamma_{\epsilon_j+\epsilon_h}(x_j-x_h),\qquad
+  \rho_{\boldsymbol\epsilon,D}(\ud\boldsymbol r)
+  =J_{\boldsymbol\epsilon,D}(\boldsymbol r)\ud\boldsymbol r.
+\]
+These are nonnegative measures. They are locally finite because the
+smoothed covariances are bounded and the Green masses are $r_l$.
+Write $\nu_{\boldsymbol\epsilon,D}=e^{-\sum_l r_l}
+\rho_{\boldsymbol\epsilon,D}$, and let $\ell_i$ be the sum of the gaps
+in chain $i$, with value zero for an empty chain.
+
+\begin{lemma}[Positive spatial Wick-measure limit]\label{L:spatial-wick-measures}
+  Under Hypothesis~\ref{H:homog}, the finite measures
+  $\nu_{\boldsymbol\epsilon,D}$ converge weakly, as all spatial widths
+  tend to zero at arbitrary relative rates, to a finite measure $\nu_D$.
+  The locally finite measure $\rho_D=e^{\sum_l r_l}\nu_D$ satisfies
+  \[
+    \rho_D(cA)=c^{(4-\alpha)k}\rho_D(A),\qquad c>0.
+  \]
+  It gives zero mass to every face $r_l=0$ and every face
+  $\ell_i=T>0$. Consequently, for every bounded continuous $\varphi$
+  and $T_1,T_2>0$,
+  \begin{equation}\label{E:spatial-wick-limit}
+    \int_{\ell_1<T_1,\,\ell_2<T_2}\varphi\ud\rho_{\boldsymbol\epsilon,D}
+    \longrightarrow
+    \int_{\ell_1<T_1,\,\ell_2<T_2}\varphi\ud\rho_D.
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  Orient each pair $e=\{j,h\}$ as $j<h$, and let $\eta_l(\boldsymbol\xi)$
+  be the coefficient of $z_l$ in
+  $\sum_{e=\{j,h\}}\xi_e\cdot(x_j-x_h)$.
+  Finite heat-weighted spectral measures and the finite damped Green
+  masses justify Fourier and Laplace Fubini. The wave Laplace transform
+  gives, for $\lambda_l\ge0$,
+  \begin{equation}\label{E:spatial-positive-laplace}
+    \begin{split}
+      L_{\boldsymbol\epsilon,D}(\boldsymbol\lambda)
+      &:=\int e^{-\sum_l\lambda_l r_l}\ud\nu_{\boldsymbol\epsilon,D}\\
+      &=\int\exp\left\{-\frac12\sum_{e=\{j,h\}}
+      (\epsilon_j+\epsilon_h)|\xi_e|^2\right\}
+      \prod_{l=1}^{2k}\frac1{(1+\lambda_l)^2+|\eta_l(\boldsymbol\xi)|^2}
+      \prod_{e\in D}\mu(\ud\xi_e).
+    \end{split}
+  \end{equation}
+  The integrand is nonnegative. Thus the transforms increase when any
+  spatial width decreases. This is transform monotonicity, not pointwise
+  monotonicity of the physical covariances.
+
+  We prove a uniform bound on their total masses.
+  With $V=\mu(B_1)$, Fourier triangle and radial homogeneity give
+  \begin{equation}\label{E:construction-heat-bound}
+    0\le(p_t*\gamma_b)(x)\le A t^{-\alpha/2},\qquad t,b>0,
+    \quad A=\alpha V\int_0^\infty u^{\alpha-1}e^{-u^2/2}\ud u<\infty.
+  \end{equation}
+  Indeed, its Fourier multiplier is $e^{-(t+b)|\xi|^2/2}$, whose
+  integral is $A(t+b)^{-\alpha/2}\le At^{-\alpha/2}$.
+  For a Brownian motion $B$ put
+  $S_b(T)=\int_0^T\int_0^T\gamma_b(B_s-B_t)\ud s\ud t$.
+  For every integer $j\ge1$,
+  \begin{equation}\label{E:construction-brownian-moments}
+    \E_B S_b(T)^j
+    \le\frac{(2j)![A\Gamma_{\mathrm E}(1-\alpha/2)]^j}
+    {\Gamma_{\mathrm E}((2-\alpha/2)j+1)}T^{(2-\alpha/2)j}.
+  \end{equation}
+  To verify this, order the $2j$ time variables in the moment integral.
+  Condition on all but the last remaining Brownian vertex. Its pair
+  factor has conditional mean at most $A$ times the last remaining
+  time gap to the power $-\alpha/2$, by~\eqref{E:construction-heat-bound}.
+  Remove this vertex and its partner. The remaining factors do not
+  involve either removed vertex, and their marginal law is again the
+  Brownian law at the remaining times. Repeat this procedure.
+  The $j$ selected right endpoints are distinct; each selected gap is
+  at least the original adjacent gap at its right endpoint.
+  On each ordered simplex the resulting bound is therefore $A^j$
+  times a product of $j$ distinct adjacent gaps to the power
+  $-\alpha/2$. Integration over the simplex gives
+  $\Gamma_{\mathrm E}(1-\alpha/2)^j
+  T^{(2-\alpha/2)j}/\Gamma_{\mathrm E}((2-\alpha/2)j+1)$.
+  There are $(2j)!$ possible orders. This proves the bound uniformly
+  in $b$; the zeroth moment is one.
+
+  Let $\epsilon_* =\min_l\epsilon_l$. The positive formula
+  \eqref{E:spatial-positive-laplace} bounds $L_{\boldsymbol\epsilon,D}(0)$
+  by the transform with every vertex width equal to $\epsilon_*$.
+  The identity of finite positive measures
+  \[
+    \int_0^\infty e^{-at}G_t(\ud x)\ud t
+    =\frac12\int_0^\infty e^{-a^2u/2}p_u(x)\ud u\ud x
+  \]
+  follows by their equal Fourier transforms $(a^2+|\xi|^2)^{-1}$.
+  Apply it to the $2k$ Green factors at unit damping. This writes the
+  common-width transform as $2^{-2k}$ times a two-Brownian-chain
+  integral with gap weights $e^{-\sum_l u_l/2}$ and covariance
+  $\gamma_{2\epsilon_*}$ on every pair.
+  If $\tau_i$ is the last Brownian time in chain $i$, insert
+  \[
+    1=\frac14\int_{\tau_1}^\infty\int_{\tau_2}^\infty
+    e^{-((a-\tau_1)+(b-\tau_2))/2}\ud a\ud b.
+  \]
+  This also holds for an empty chain with $\tau_i=0$.
+  Positivity permits extension of the ordered Brownian time domains to
+  their full cubes. At fixed paths the time integrations then factor
+  into one occupation integral per pair.
+  For independent Brownian paths, spectral Cauchy--Schwarz gives
+  \[
+    0\le A_{12}:=\int_0^a\int_0^b
+    \gamma_{2\epsilon_*}(B_1(s)-B_2(t))\ud s\ud t
+    \le\sqrt{S_{2\epsilon_*}^{(1)}(a)S_{2\epsilon_*}^{(2)}(b)}.
+  \]
+  If the pairing has $v_1,v_2$ self-pairs and $w$ cross-pairs, with
+  $v_1+v_2+w=k$, its occupation product is at most
+  \[
+    S_1^{v_1+w/2}S_2^{v_2+w/2}\le(1+S_1)^k(1+S_2)^k.
+  \]
+  By~\eqref{E:construction-brownian-moments}, each expected factor
+  is bounded by a fixed finite sum $P_k$ of nonnegative powers of
+  its horizon, independently
+  of $\epsilon_*$. Independence of the two paths now gives
+  \[
+    \sup_{\boldsymbol\epsilon>0}L_{\boldsymbol\epsilon,D}(0)
+    \le2^{-2k-2}\left(\int_0^\infty e^{-a/2}P_k(a)\ud a\right)^2<\infty.
+  \]
+
+  Monotone convergence in~\eqref{E:spatial-positive-laplace} yields
+  finite limits $L_D(\boldsymbol\lambda)$ for all
+  $\boldsymbol\lambda\ge0$. The limiting integrand at zero is integrable,
+  so dominated convergence shows continuity at zero.
+  Here is the finite-measure Laplace argument, including possible loss
+  of mass. Push the measures to $[0,1]^{2k}$ by $y_l=e^{-r_l}$.
+  Uniformly bounded masses on this compact cube have weak cluster limits.
+  Their integer monomial moments are the prescribed $L_D$ values, so
+  polynomial density determines a unique cluster limit. For $c>0$ the
+  integral of $\prod_l y_l^c$ is $L_D(c,\ldots,c)$.
+  As $c\downarrow0$, continuity at zero and monotone convergence show
+  that the cluster limit has no mass on the faces where any $y_l=0$.
+  Pulling it back proves weak convergence on $[0,\infty)^{2k}$.
+  Bounded continuous test functions are handled by cutting off a
+  neighborhood of those zero faces and then using the vanishing tail mass.
+  Every sequence of widths tending to zero has this same limit, so
+  the convergence is joint and independent of their relative rates.
+
+  Sending just $\lambda_l\to\infty$ in the limiting positive integral
+  \eqref{E:spatial-positive-laplace} gives zero by domination by its
+  integrable zero-parameter integrand. On the measure side this limit
+  is $\nu_D\{r_l=0\}$. Thus every coordinate-zero face has zero mass.
+
+  Heat and wave scaling give, for Borel sets,
+  \[
+    \rho_{\boldsymbol\epsilon,D}(cA)
+    =c^{(4-\alpha)k}\rho_{\boldsymbol\epsilon/c^2,D}(A).
+  \]
+  This follows from $G_{cr}(c\ud z)=cG_r(\ud z)$,
+  $\gamma_b(cx)=c^{-\alpha}\gamma_{b/c^2}(x)$, and the $2k$ time
+  Jacobians. Passing to vague limits proves the stated homogeneity
+  of $\rho_D$.
+  If a compact part $A$ of $\{\ell_i=T\}$, $T>0$, had positive mass,
+  its dilates $cA$ at distinct $c\in[1,2]$ would be disjoint, have a
+  common positive lower mass bound, and lie in one compact set.
+  This contradicts local finiteness. Exhausting the face by compacts
+  proves it has zero mass. For an empty chain the positive-level face
+  is empty. The finite-horizon region is bounded, and its boundary is
+  contained in these horizon faces and the coordinate-zero faces.
+  Weak convergence with a compact cutoff, and the bounded continuous
+  multiplier $e^{\sum r_l}\varphi$ there, proves
+  \eqref{E:spatial-wick-limit}.
+  This proves Lemma~\ref{L:spatial-wick-measures}.
+\end{proof}
+
+\begin{lemma}[Joint diagram limits and fixed-order construction]
+  \label{L:joint-fixed-order}
+  Under Hypothesis~\ref{H:homog}, every two-chain diagram with
+  $m+n=2k\ge2$ has a finite joint limit as all its positive vertexwise
+  spatial and temporal widths tend to zero, at arbitrary relative rates.
+  This includes unequal and empty chains. For every $n\ge1,t>0,x$,
+  $Y_n^{\boldsymbol a}(t,x)$ has a unique joint $L^2$ limit, denoted
+  $X_n(t,x)$; it is the multiple Stratonovich integral of $g_n$.
+  Green smoothing in dimension three is removed before noise smoothing.
+\end{lemma}
+
+\begin{proof}
+  Use the gap variables and spatial measures of
+  Lemma~\ref{L:spatial-wick-measures}. With $s_j=s_j(\boldsymbol r)$
+  define, on $\ell_1<T_1,\ell_2<T_2$,
+  \[
+    F_{\boldsymbol\epsilon,\boldsymbol\delta,D}
+    =\int\prod_{\{j,h\}\in D}
+    \gamma^0_{\delta_j\vee\delta_h}(s_j-s_h)
+    \ud\rho_{\boldsymbol\epsilon,D}.
+  \]
+  At a common temporal width $\eta>0$ the multiplier is bounded and
+  continuous. Hence the spatial limit exists at every $T_1,T_2>0$
+  by~\eqref{E:spatial-wick-limit}.
+
+  We next bound removal of that temporal cutoff uniformly in all spatial
+  widths. Write $F_{\boldsymbol\epsilon,0,D}$ for the integral with
+  full factors $|s_j-s_h|^{-\alpha_0}$.
+  It is finite at positive spatial widths: bound the spatial covariances
+  by their finite suprema and the Green masses by their horizon bounds,
+  then integrate the disjoint-pair time factors on the full time cube.
+  Each factor $|s-r|^{-\alpha_0}$ is integrable since $\alpha_0<1$.
+  The elementary difference-of-products inequality bounds
+  $F_{\boldsymbol\epsilon,0,D}-F_{\boldsymbol\epsilon,\eta,D}$ by a sum
+  of $k$ nonnegative integrals, each with one marked time covariance
+  $K_{1/\eta}$ and all other time covariances full.
+
+  Apply the imported universal pairing inequality
+  \cite{chen:author2026:time-dependency}*{Theorem~3.1, (3.6), pp.~14--15}
+  to the damped kernels $e^{-s}G_s$. At first smooth the Green kernels
+  in dimension three and cap the temporal Laplace domains above.
+  Each spatial edge measure is a finite Gaussian-weighted $\mu$ with
+  nonnegative physical covariance, and each temporal domain is a
+  Laplace interval or its restriction. These are exactly the hypotheses
+  of that theorem. The finite-horizon exponential loss is at most
+  $e^{T_1+T_2}$. Lemma~\ref{L:damped-homogeneous-norms} bounds all
+  unmarked norms independently of the smoothing parameters. The marked
+  edge appears once in the first-norm product or twice in the
+  second-norm product. Consequently,
+  \begin{equation}\label{E:joint-temporal-tail}
+    0\le F_{\boldsymbol\epsilon,0,D}
+    -F_{\boldsymbol\epsilon,\eta,D}
+    \le C_{k,T_1,T_2}
+    \left(N_1^{(1/\eta)}(1)+N_2^{(1/\eta)}(1)^2\right),
+  \end{equation}
+  uniformly in all spatial widths. Constants may depend on the fixed
+  covariance and $k,T_1,T_2$; no uniformity in these quantities is needed.
+  Let the upper temporal caps tend to infinity by positivity, and then
+  remove Green smoothing at these fixed spatial widths. For the latter
+  passage, the bounded spatial covariance products, weak convergence
+  of Green measures and the integrable time-cube majorant just used
+  give convergence. The bound survives both passages.
+  Its right side tends to zero as $\eta\downarrow0$.
+
+  Denote the fixed-$\eta$ spatial limit by $b_D(\eta)$. These numbers
+  increase as $\eta$ decreases, and~\eqref{E:joint-temporal-tail} makes
+  them Cauchy with a finite limit $b_D$. If every $\delta_j<\eta$,
+  positivity gives
+  \[
+    F_{\boldsymbol\epsilon,\eta,D}
+    \le F_{\boldsymbol\epsilon,\boldsymbol\delta,D}
+    \le F_{\boldsymbol\epsilon,0,D}.
+  \]
+  Fix $\eta$, pass to the spatial limit in the lower term, and use
+  the uniform remainder in~\eqref{E:joint-temporal-tail}; then let
+  $\eta\downarrow0$. This proves the asserted joint limit $b_D$ with
+  arbitrary spatial/temporal rates. If one chain is empty its horizon
+  contributes no variables, and the same proof applies.
+
+  At positive widths Wick's formula gives the mixed second moments
+  of two copies of $Y_n$ as the finite sum of these diagrams, after
+  reversing both terminal chains at their common horizon $t$.
+  Evenness of the covariances absorbs the sign changes. Every such
+  mixed moment, including either diagonal moment, tends to the same
+  finite sum $Q_n=\sum_{D\in\Pi_n}b_D$. Hence
+  \[
+    \|Y_n^{\boldsymbol a}-Y_n^{\boldsymbol b}\|_2^2
+    \longrightarrow Q_n+Q_n-2Q_n=0.
+  \]
+  Completeness of $L^2$ gives a unique limit independent of all width
+  ratios. At fixed positive noise widths the Green-width limit was
+  already taken in the terminal construction, so the result has the
+  required Green-before-noise convention. Restricting to common noise
+  widths gives precisely the multiple Stratonovich definition for $g_n$.
+  This proves Lemma~\ref{L:joint-fixed-order}.
+\end{proof}
+
+Since $\beta>2$ and $\alpha+\alpha_0<2$,
+Lemma~\ref{L:damped-homogeneous-norms} gives constants
 $C_0<\infty$ and $\theta_0=1$ such that, for $\theta\ge\theta_0$,
 \begin{equation}\label{E:crude-norms}
   N_0(\theta)=\theta^{-2},\qquad
@@ -828,7 +985,7 @@ $C_0<\infty$ and $\theta_0=1$ such that, for $\theta\ge\theta_0$,
   For each fixed noise regularization $(\epsilon,\delta)$, first let
   $\eta\downarrow0$ in the source's $L^2$ definition. The squared
   moments converge, so the inequality survives this first limit.
-  Then let $(\epsilon,\delta)\to0$ using Theorem~4.1. In $d=1,2$ only
+  Then let $(\epsilon,\delta)\to0$ using Lemma~\ref{L:joint-fixed-order}. In $d=1,2$ only
   this latter limit is needed. These limits transfer a uniform inequality;
   no pointwise delta covariance bound is being used.
 
@@ -852,23 +1009,6 @@ $C_0<\infty$ and $\theta_0=1$ such that, for $\theta\ge\theta_0$,
 \end{proof}
 
 \subsection{The mild equation with the corrected bound}
-
-Use the joint Gaussian regularizations of the source's (2.11).
-Write $a=(\epsilon,\delta)>0$ for one pair of widths and
-$\boldsymbol a=(a_1,\ldots,a_n)$ for vertexwise widths.
-Let $Y_n^{\boldsymbol a}(t,x)$ be the ordered terminal integral with
-kernel $g_n$ in~\eqref{E:expansion} and field
-$W_{\epsilon_j,\delta_j}(s_j,y_j)$ at vertex $j$; put $Y_0=1$.
-At fixed positive widths these are Gaussian-polynomial Bochner integrals.
-Indeed, Wick's formula bounds their product integrands in $L^2$ by
-$\sqrt{(2n-1)!!}\,V^{n/2}$, where $V$ is the largest of the finitely
-many field variances. The terminal Green measure has mass
-$t^{2n}/(2n)!$, by induction using $G_r(\R^d)=r$.
-In dimension three these integrals use the actual Green measures:
-products and linear pushforwards of $p_\eta*G$ converge against the
-bounded continuous covariance products. Mixed moments with two Green
-widths and the same mass bound give the $L^2$ limit as $\eta\downarrow0$,
-before any noise width is removed.
 
 \begin{lemma}[Uniform vertexwise regularization bound]\label{L:vertex-crude}
   Under Hypothesis~\ref{H:homog}, there are $C<\infty$ and $\theta_0>0$
@@ -932,7 +1072,7 @@ before any noise width is removed.
   widths, and choose $\theta=\theta_0+n/t$.
   The inequality $P_n n^{-2n}\le2^n/n!$ then proves
   \eqref{E:vertex-crude}, after increasing $C$.
-  The source's Theorem~4.1 gives the joint noise-width limit $X_n$;
+  Lemma~\ref{L:joint-fixed-order} gives the joint noise-width limit $X_n$;
   the same bound passes to it. Finally,
   \[
     \frac{\sqrt{n+2}\,q_{n+1}(T)}
@@ -1066,8 +1206,8 @@ establishes that limit for the actual product $uW_{\epsilon,\delta}$.
   noise widths. Thus,~\eqref{E:partial-vertex-limit} does not interchange
   the source's Green and noise limits.
 
-  For each fixed $n$, the joint fixed-order convergence in the source's
-  Theorem~4.1 implies
+  For each fixed $n$, the joint fixed-order convergence in
+  Lemma~\ref{L:joint-fixed-order} implies
   \begin{equation}\label{E:external-vertex-limit}
     \lim_{a\downarrow0}I_{n,a}(t,x)=X_n(t,x)\quad\text{in }L^2.
   \end{equation}
@@ -1156,7 +1296,7 @@ inequality.
   \end{equation}
   For the first norm this also follows directly from (A.1): substitute
   $\lambda=\theta v$, $\xi=\theta\eta$, using the degree $\alpha$ of
-  the spectral measure. All constants are finite by Lemma~A.1.
+  the spectral measure. All constants are finite by Lemma~\ref{L:damped-homogeneous-norms}.
   The products $2N_0N_1$ and $N_2^2$ therefore both have degree
   $-\beta$. Choose
   $K\ge\max\{2N_1(1),N_2(1)^2\}$, increasing it to a positive
@@ -1166,7 +1306,7 @@ inequality.
   regularized moments. In $d=3$, fix $(\epsilon,\delta)$ and let
   $\eta\downarrow0$ in each factor's $L^2$ limit; Cauchy--Schwarz gives
   $L^1$ convergence of their product. Then let
-  $(\epsilon,\delta)\to0$ in the same way, using Theorem~4.1 for each
+  $(\epsilon,\delta)\to0$ in the same way, using Lemma~\ref{L:joint-fixed-order} for each
   chain. In $d=1,2$ only the noise limit is required. The estimates are
   uniform at both stages, by the multiplier bounds in
   Lemma~\ref{L:crude-corrected}. This proves~\eqref{E:homogeneous-envelope}.
@@ -1812,8 +1952,8 @@ Proposition~\ref{P:mixed}, $\E u^2(t,x)=\sum_{k\ge0}A_k(t)$.
   \]
   The same proof covers empty chains, with $X_0^{\epsilon,\delta}=1$.
 
-  From the source's Theorem~4.1, as used in
-  Proposition~\ref{P:mixed}, each smoothed factor converges in $L^2$.
+  By Lemma~\ref{L:joint-fixed-order}, each smoothed factor converges
+  in $L^2$.
   Products converge in $L^1$ by Cauchy--Schwarz; for fixed $k$ the sum
   over splits is finite. The bound is uniform in $\epsilon,\delta$,
   so it passes to $A_k(t)$. Since $k!\le k^k$ and $b>0$, we have
@@ -2051,7 +2191,7 @@ $d$-dimensional solution.
   on pp.~13--14. Products of two factors converge in $L^1$ by
   Cauchy--Schwarz, so the moment inequality survives this limit.
   Next send the noise-smoothing parameters to zero using the
-  fixed-order $L^2$ convergence of the source's Theorem~4.1, and again
+  fixed-order $L^2$ convergence of Lemma~\ref{L:joint-fixed-order}, and again
   pass products in $L^1$. In dimensions one and two only the latter
   limit is required. The bounds at both stages are uniform.
 
@@ -2314,10 +2454,9 @@ $G_{h,\eta}=p_\eta*G_h$, with $G_{h,0}=G_h$.
   $1+(2-\delta r)/r+2/r'-1=2-\delta=q$.
   There are $2k+1\le3^k$ splits, giving the asserted $K$.
 
-  We now pass to the solution using exactly the inherited fixed-order
-  inputs. Hypothesis~\ref{H:homog} implies the source's spectral
-  condition (1.5), as recorded in Proposition~\ref{P:mixed}; hence the
-  deterministic chain kernels satisfy its Theorem~4.1. In dimension
+  We now pass to the solution using the independent fixed-order
+  construction in Lemma~\ref{L:joint-fixed-order}, which applies under
+  Hypothesis~\ref{H:homog}. In dimension
   three, fix the noise smoothing first and send the Green smoothing
   to zero. Smoothed spatial covariances are bounded and continuous.
   Products of the finite Green measures converge weakly, with masses
@@ -2327,8 +2466,8 @@ $G_{h,\eta}=p_\eta*G_h$, with $G_{h,0}=G_h$.
   approximations gives a common joint covariance limit, and hence the
   fixed-order $L^2$ Cauchy property. This is the inner limit of the
   source's pp.~13--14, detailed in Proposition~\ref{P:low-alpha-upper}.
-  Next remove the noise smoothing using Theorem~4.1's fixed-order
-  $L^2$ convergence. In dimension two only this latter limit is needed.
+  Next remove the noise smoothing using Lemma~\ref{L:joint-fixed-order}'s
+  fixed-order $L^2$ convergence. In dimension two only this latter limit is needed.
   At each stage products converge in $L^1$, since
   \[
     \|YZ-Y'Z'\|_1
@@ -2802,8 +2941,7 @@ The source hypotheses for the Riesz covariances below are thus satisfied.
   Chen--Hu~\cite{chen.hu:25:hyperbolic}*{Theorem~3.8(i), p.~2165},
   each fixed static order converges in $L^2$ to $U_n$.
   For the target, the fixed-order $L^2$ convergence follows from
-  Chen~\cite{chen:author2026:time-dependency}*{Theorem~4.1}, as used in
-  Proposition~\ref{P:mixed}. If $Y,Y',Z,Z'$ are the corresponding
+  Lemma~\ref{L:joint-fixed-order}. If $Y,Y',Z,Z'$ are the corresponding
   approximations and limits, then
   \[
     \|YZ-Y'Z'\|_1
@@ -3255,7 +3393,7 @@ We first treat $\Gamma\ne0$ and $1<\alpha<2$.
   finiteness in the H\"older estimate.
 
   We next take fixed-order limits. The target orders converge in $L^2$
-  by Chen~\cite{chen:author2026:time-dependency}*{Theorem~4.1}.
+  by Lemma~\ref{L:joint-fixed-order}.
   For the static orders the corresponding input is
   Chen--Hu~\cite{chen.hu:25:hyperbolic}*{Theorem~3.8(i), p.~2165}.
   For products of two fixed orders, the inequality
@@ -3761,8 +3899,8 @@ energy term is nonnegative and its gradient penalty tends to zero.
   For the target, the same spectral scaling calculation has exponent
   $\alpha$. Its dyadic sum for the weight
   $(1+|\xi|^2)^{-(2-\alpha_0)/2}$ is finite because
-  $\alpha<2-\alpha_0$. This verifies the condition of the target's
-  Theorem~4.1. The endpoint $\Gamma_{\rm low}$ has covariance
+  $\alpha<2-\alpha_0$. The target fixed-order limit is supplied by
+  Lemma~\ref{L:joint-fixed-order}. The endpoint $\Gamma_{\rm low}$ has covariance
   exponent one, with $V_{\rm low},C_{\rm low}$ defined above.
   Finiteness of $V_{\rm low}$ follows from the Radon spectral measure.
   It is positive: otherwise homogeneity gives $\mu_{\rm low}=0$,
@@ -4011,7 +4149,7 @@ energy term is nonnegative and its gradient penalty tends to zero.
   the noise widths to zero. The static fixed-order $L^2$ limit is from
   Chen--Hu~\cite{chen.hu:25:hyperbolic}*{Theorem~3.8(i), p.~2165};
   the target fixed-order limit is from
-  Chen~\cite{chen:author2026:time-dependency}*{Theorem~4.1}.
+  Lemma~\ref{L:joint-fixed-order}.
   Products of two fixed orders converge in $L^1$, since
   \[
     \|YZ-Y'Z'\|_1
@@ -6371,14 +6509,9 @@ on the empty tuple. This definition introduces no kernel symmetrization.
   at positive regularization by that lemma, not by a theorem about the
   original unsmoothed solution.
 
-  We now use one analytic model-construction input from the source.
-  From \cite{chen:author2026:time-dependency}*{Theorem~4.1, (4.2), p.~22},
-  each fixed-order term $Y_n^{\epsilon,\delta}$ converges in $L^2$ to
-  $X_n=S_n(g_n)$ as $\epsilon,\delta\downarrow0$.
-  Its spectral assumption (1.5) follows from radial homogeneity: the
-  large-shell bounds are a constant times
-  $\mu(B_1)\sum_{j\ge0}2^{j(\alpha+\alpha_0-2)}<\infty$,
-  and its integral over $B_1$ is finite.
+  Lemma~\ref{L:joint-fixed-order} supplies the fixed-order construction:
+  each $Y_n^{\epsilon,\delta}$ converges in $L^2$ to $X_n=S_n(g_n)$
+  as $\epsilon,\delta\downarrow0$, with arbitrary relative rates.
   The bounded-noise Green limit and ordered-kernel convention needed
   to match these terms are already verified in
   Lemma~\ref{L:terminal-wick}.
@@ -6391,9 +6524,9 @@ on the empty tuple. This definition introduces no kernel symmetrization.
   This series-limit argument is independent of
   Proposition~\ref{P:mixed}, Lemma~\ref{L:crude-corrected}, and the
   source's Section~5 convergence proof. No first-moment asymptotic or
-  printed normalization is used. The only imported analytic construction
-  input for this moment estimate and its series-limit passage is the
-  fixed-order statement just cited.
+  printed normalization is used. The fixed-order construction just used is proved here from the
+  universal pairing bound and the homogeneous norm estimates; neither
+  the source's Theorem~4.1 nor its Lemma~4.4 is imported.
   Proposition~\ref{P:mild-construction} separately proves that this
   same series satisfies the source's Definition~2.1: its onefold
   Stratonovich integral equals $u-1$. That construction uses the
@@ -6430,8 +6563,8 @@ on the empty tuple. This definition introduces no kernel symmetrization.
       $N\to\infty$ is justified by Lemma~\ref{L:terminal-wick}, yielding
       \eqref{E:regularized-scaled-moment}. There is no infinite-depth
       Gaussian field or simultaneous mode-depth limit in this step.
-    \item At each fixed $T,x,\Gamma$ and order $n$, the source's
-      Theorem~4.1 gives qualitative $L^2$ convergence as
+    \item At each fixed $T,x,\Gamma$ and order $n$,
+      Lemma~\ref{L:joint-fixed-order} gives qualitative $L^2$ convergence as
       $\epsilon,\delta\downarrow0$, with arbitrary relative rates.
       The bound $B(T;2)$ gives tails uniform in these two widths.
       Lemma~\ref{L:uniform-series-tail} first uses their limit at fixed
@@ -6477,8 +6610,9 @@ on the empty tuple. This definition introduces no kernel symmetrization.
 goal for every admissible dimension and homogeneous covariance.
 The interval estimate passed scoped correctness review.
 The preceding independent mild construction passed correctness review.
-The explicit hypothesis/object revision and fixed-order input audit are
-in progress; fresh primary and whole-paper review remain required.
+The explicit hypothesis/object revision and independent fixed-order
+construction are written candidates; fresh primary and whole-paper
+review remain required.
 The earlier explicit bounds for $0<\alpha\le1$ remain available.
 The sharp constant and final whole-paper cold read remain open.}
 
