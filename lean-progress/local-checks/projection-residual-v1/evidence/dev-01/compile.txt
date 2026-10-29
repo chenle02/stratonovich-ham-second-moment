@@ -1,0 +1,19 @@
+${LOCAL_RAW}/stratonovich-projection-residual-lean-v1/src/StratonovichHAMAudit/ProjectionResidual.lean:18:4: error: Tactic `apply` failed: could not unify the conclusion of `(div_lt_iff₀
+    (have this := ?m.105;
+    this)).mpr`
+  ?m.90 / (3200 * √2) < ?m.89
+with the goal
+  1 / 48 < 101 / (3200 * √2)
+
+Note: The full type of `(div_lt_iff₀
+    (have this := ?m.105;
+    this)).mpr` is
+  ?m.90 < ?m.89 * (3200 * √2) → ?m.90 / (3200 * √2) < ?m.89
+
+Note: The following definitions were not unfolded because their definition is not exposed:
+  Real.instLT ↦ 4
+
+hs : 0 < √2
+hs2 : √2 ^ 2 = 2
+hslt : √2 < 3 / 2
+⊢ 1 / 48 < 101 / (3200 * √2)

@@ -1,0 +1,31 @@
+StratonovichHAMAudit.ProjectionResidual.projection_gap : @LT.lt.{0} Real Real.instLT
+  (@HAdd.hAdd.{0, 0, 0} Real Real Real (@instHAdd.{0} Real Real.instAdd)
+    StratonovichHAMAudit.ProjectionResidual.actualMeanCoeff
+    (@HDiv.hDiv.{0, 0, 0} Real Real Real (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+      (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne))
+      (@OfNat.ofNat.{0} Real (nat_lit 96)
+        (@instOfNatAtLeastTwo.{0} Real (nat_lit 96) Real.instNatCast
+          (@Nat.instAtLeastTwoHAddOfNat (@OfNat.ofNat.{0} Nat (nat_lit 95) (instOfNatNat (nat_lit 95)))
+            (@Nat.instNeZeroSucc (@OfNat.ofNat.{0} Nat (nat_lit 94) (instOfNatNat (nat_lit 94)))))))))
+  StratonovichHAMAudit.ProjectionResidual.projectedLower
+StratonovichHAMAudit.ProjectionResidual.tilted_gap : ∀ (p q : Real)
+  (hp : @LE.le.{0} Real Real.instLE StratonovichHAMAudit.ProjectionResidual.projectedLower p),
+  @LT.lt.{0} Real Real.instLT
+    (@HAdd.hAdd.{0, 0, 0} Real Real Real (@instHAdd.{0} Real Real.instAdd)
+      (@HAdd.hAdd.{0, 0, 0} Real Real Real (@instHAdd.{0} Real Real.instAdd)
+        StratonovichHAMAudit.ProjectionResidual.actualMeanCoeff
+        (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+          (@HSub.hSub.{0, 0, 0} Real Real Real (@instHSub.{0} Real Real.instSub) q
+            (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne)))
+          p))
+      (@HDiv.hDiv.{0, 0, 0} Real Real Real (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+        (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne))
+        (@OfNat.ofNat.{0} Real (nat_lit 96)
+          (@instOfNatAtLeastTwo.{0} Real (nat_lit 96) Real.instNatCast
+            (@Nat.instAtLeastTwoHAddOfNat (@OfNat.ofNat.{0} Nat (nat_lit 95) (instOfNatNat (nat_lit 95)))
+              (@Nat.instNeZeroSucc (@OfNat.ofNat.{0} Nat (nat_lit 94) (instOfNatNat (nat_lit 94)))))))))
+    (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul) q p)
+'StratonovichHAMAudit.ProjectionResidual.projection_gap' depends on axioms: [propext,
+ Classical.choice.{u},
+ Quot.sound.{u}]
+'StratonovichHAMAudit.ProjectionResidual.tilted_gap' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]

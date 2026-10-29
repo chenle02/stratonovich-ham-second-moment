@@ -3394,3 +3394,41 @@ Agent8 FYI da82522a4e45: fresh-resolved <MACHINE>/n8 and sender#3, exact
 e638186 source/pins/scope sent under Le's standing coordination request.
 Transport reported delivered; receipt is not proof of package work completed.
 No action requested and no package/gate ownership changed.
+
+
+## Full lower route: projection-residual consumer screen (2026-10-29)
+
+Previous goal turn: PROGRESS (middle-cross accepted and synchronized).
+Full sharp target ACTIVE. Pre-investment decision REFRAME to a bounded
+actual-model falsification, not a new paper, large formalization or claimed
+sharp result. Existing lower source/no-go records and wiki concepts searched;
+known density tools overlap GLL2010, but no nonstationary HAM bridge is
+supplied. Novelty/citation-chain status remains UNVERIFIED. No new helpful
+absent-six-repo reference found; existing nine tickets persist.
+
+Candidate: for original d1,Rieszalpha1/2,a99/100,Gamma=(1-a)|x|^-1/2,
+a normalized positive test defines an actual Gaussian rank-one projection.
+Its ordinary self-pair mean coefficient is bounded below by101/(3200sqrt2),
+while the parent coefficient is20000/1932951; the gap exceeds1/96. Thus a
+Loewner-positive Gaussian residual need not contribute a positive wave mean.
+For1<q<2 the retained-residual variance tilt Q=C+(q-1)P has smaller first
+coefficient than qP. A candidate L2-density/geometric-tail argument promotes
+this to the full mean for small coupling. This is NOTa refutation of a
+large-time selected-projection bridge or the original sharp target.
+
+Exact finite screen passes: seven time exponents, four tilt parameters and
+81quadratic residual-PSD controls. Two actual scalar rational/sqrt and affine
+consumer facts compile cleanly/replay with standard axioms; two semantic
+False controls pass. One division-API orientation failure preserved; public
+signatures unchanged. Gaussian projection, cone integrals, law tilt, L2 tail
+and full-mean application remain outside Lean and require fresh independent
+HIGH review. No companion/package/lease/registry/donor write/cluster gate.
+
+Complete candidate notes/projection-residual-obstruction.md states a precise
+still-UNPROVED large-time bridge with ranko(T^kappa), fixedq thenq up to2,
+and a valid independently supplied first-mean lower constant. No printed
+source normalization repair, stationary theorem transplantation, Skorohod,
+all-tilts no-go, full sharp proof or circulation claim. Accepted WHITE13/
+original-class9counts and canonical110-page/60-proof TeX/PDF unchanged.
+Frozen packet in reviews/2026-10-29-projection-residual-screen/packet-v1;
+new six-group analytic/source/type/application review pending.

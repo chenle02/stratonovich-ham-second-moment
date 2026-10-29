@@ -45,3 +45,8 @@ Middle-cross close: all seven actual scalar types/application passed the C5
 checks within the six-group / seventeen-check HIGH review at e638186. The
 wave/bridge/survival/integration identifications remain informal, reviewed
 analytic inputs. Formal proof source and all seven signatures are unchanged.
+
+Projection-residual pilot formalizes only the actual rational/sqrt gap and
+affine coefficient consumer. The Gaussian test projection and Loewner order,
+Stratonovich coefficient integrals, law-tilt density/remainders/full means and
+the prospective sharp asymptotic bridge are outside Lean. Review pending.

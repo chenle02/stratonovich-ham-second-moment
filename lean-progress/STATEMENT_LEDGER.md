@@ -36,3 +36,13 @@ analytic/type/applicationreview at6475ea0,not five separate six-checkreviews.
 | resolvent_difference | ExactnonsingularMdivideddifference | Local compile/replay; application HIGH at e638186 |
 | root_numerator_pos | Actualrootsgiverootparameterizationandpositivenum | Local compile/replay; application HIGH at e638186 |
 | middle_bound | ACTUALstrictU<Iwithbothsquarerootsanddomain | Local compile/replay; application HIGH at e638186 |
+
+## Projection residual: StratonovichHAMAudit.ProjectionResidual
+
+| Name | Scope | Status |
+|---|---|---|
+| projection_gap | Actual rational/sqrt coefficient lower gap greater than1/96 | Local compile/replay; application pending |
+| tilted_gap | Affine retained-residual versus projected coefficient consumer | Local compile/replay; application pending |
+
+Gaussian projection, cone/integral and full-mean/asymptotic inputs stay
+outside Lean. Evidence: local-checks/projection-residual-v1/.

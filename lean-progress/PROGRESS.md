@@ -95,3 +95,14 @@ companion, package, lease, registry, cluster or Comparator gate is opened.
 Analytic/type/application review passed six groups / seventeen checks HIGH
 at e638186. The formal proof source is unchanged after review. Evidence:
 local-checks/middle-cross-v1/local-receipt.json. L0 remains PROPOSED.
+
+## Projection-residual scalar pilot (2026-10-29)
+
+Two paper-specific rational/square-root and affine-consumer statements are
+fenced before execution. Analytic projection/mean comparison remains a
+candidate. Existing local standalone authorization only; L0 remains PROPOSED.
+
+Projection-residual local gate: two actual scalar facts compile cleanly;
+exact types/live standard axioms, fresh owned-source replay and two semantic
+False controls pass. One division-API failure is preserved, with unchanged
+public signatures. Analytic/type/application review remains pending.
