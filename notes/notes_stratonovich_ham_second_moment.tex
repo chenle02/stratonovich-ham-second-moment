@@ -4695,10 +4695,9 @@ for that evolution.
 \section{Interval fields and the full upper bound}
 \label{S:interval-upper}
 
-\myCmts{The preceding terminal-kernel deduction passed fifteen scoped
-correctness checks at high confidence. A third whole-paper cold reader
-still could not follow the fixed-split operator count. Its chronological
-word-norm proof is rewritten below and awaits fresh independent review.
+\myCmts{The chronological-word deduction passed scoped independent
+correctness review at high confidence. Its operator count and source
+interfaces were checked with complete required source delivery.
 Whole-paper cold clearance and the sharp constant remain open.}
 
 Write
@@ -5317,9 +5316,26 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
     \|v\|_\lambda .
   \end{equation}
   The series of these bounds converges for every finite $z_*$.
-  It justifies the entire vector series and its absolutely convergent
-  energy double series. This existence bound may depend on the full
-  inventory and smoothing; it is not used as a uniform estimate.
+  Its locally uniform convergence defines an entire vector function.
+  We also verify coefficientwise absolute convergence. Fix $z_*>0$ and put
+  \[
+    K_{2z_*}=\sup_{\max_i|z_i|\le2z_*}
+    \|\mathcal U(T;\boldsymbol z)v\|_{\mathcal H_{1/T}}<\infty,
+  \]
+  using the majorant with its temporary parameter $\lambda=1/T$.
+  Normalized vector Cauchy integration on this larger polydisc gives
+  \[
+    \|U_{\boldsymbol r}v\|_{\mathcal H_{1/T}}
+    \le K_{2z_*}(2z_*)^{-|\boldsymbol r|},\qquad
+    \sum_{\boldsymbol r}z_*^{|\boldsymbol r|}
+    \|U_{\boldsymbol r}v\|_{\mathcal H_{1/T}}
+    \le2^{|\mathcal F|}K_{2z_*}.
+  \]
+  The sum is the product of $|\mathcal F|$ geometric series.
+  Cauchy--Schwarz therefore bounds the absolute energy double series
+  by $4^{|\mathcal F|}K_{2z_*}^2$. This finite factor justifies the
+  coefficient identities at fixed family and smoothing; it does not
+  enter the uniform coefficient estimate below.
 
   Set
   $Q_{\boldsymbol r,\boldsymbol q}
@@ -5854,9 +5870,8 @@ on the empty tuple. This definition introduces no kernel symmetrization.
 
 \myCmts{Theorem~\ref{T:full-upper} establishes the unchanged full upper
 goal for every admissible dimension and homogeneous covariance.
-The preceding terminal-kernel revision passed scoped correctness review.
-The chronological-word rewrite requested by the next cold reader awaits
-fresh primary and whole-paper review.
+The chronological-word revision passed scoped correctness review.
+A fresh whole-paper cold read remains required.
 The earlier explicit bounds for $0<\alpha\le1$ remain available.
 The sharp constant and final whole-paper cold read remain open.}
 

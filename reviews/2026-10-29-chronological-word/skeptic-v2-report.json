@@ -1,0 +1,134 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "project-goal.md lines 1-69 (complete)",
+    "foundation.txt lines 1-1151 (complete; read as 1-935 and 936-1151)",
+    "calibrations.txt lines 1-2780 (complete; read as 1-921, 922-1541, 1542-2161, 2162-2780)",
+    "operators.txt lines 1-763 (complete; read as 1-600 and 600-763)",
+    "intervals.txt lines 1-1151 (complete; read as 1-450, 450-899, 899-1151)",
+    "references.bbl lines 1-83 (complete)",
+    "source-excerpts.txt lines 1-1771 (complete; read as 1-1000, 1001-1400, 1401-1771)",
+    "source-map.txt lines 1-11 (complete)",
+    "calibration.md line 1 (complete)",
+    "checks.py lines 1-71 (complete)",
+    "checks.json lines 1-391 (complete)",
+    "terminal-checks.py lines 1-15 (complete)",
+    "terminal-checks.json lines 1-29 (complete)",
+    "proof-change-map.json lines 1-78 (complete)",
+    "reading-map.json lines 1-50 (complete)",
+    "static-source-class-audit.md lines 1-50 (complete)",
+    "endpoint-budget-check.py lines 1-70 (complete)",
+    "endpoint-budget-check.json lines 1-28 (complete)",
+    "carrier-derivation.json lines 1-63 (complete)",
+    "Images read in full: author-02.png, author-03.png, author-04.png, author-09.png, author-12.png, author-13.png, author-14.png, author-22.png, author-30.png, chen-2023-02.png, cp-01.png, cp-02.png, cp-05.png, cp-06.png, chen-hu-2145-top.png, chen-hu-2145-bottom.png (both overlapping windows of printed 2145), chen-hu-2147.png, chen-hu-2151.png, chen-hu-2152.png, chen-hu-2153.png, chen-hu-2165.png, chen-hu-2173.png, chen-hu-2175.png, chen-hu-2180.png",
+    "Optional context not read: canonical.tex, canonical.pdf, chen-2023.pdf, chen-current-author.pdf, chen-hu-2025.pdf, crouzeix-palencia-v1.pdf, balan-conus-2016-source.txt"
+  ],
+  "checks": [
+    {
+      "claim": "C1 Claim and assumption fidelity: P:Jensen, C:d1-first-calibration and the L_star consumers",
+      "verdict": "PASS",
+      "reason": "P:Jensen proves E u >= 1 and E u^2 >= (E u)^2 unconditionally. The implication liminf t^-kappa log E u >= ell => liminf t^-kappa log E u^2 >= 2 ell holds for any real ell, and the L_star specialization is explicitly conditional. I recomputed C:d1-first-calibration: one chain of length 2k with t/2 gives (ZK/2^{b+1})^k t^{beta k}/(k! k^{bk}), b+1=3-alpha, and C_{1,*}=C_{2,*}/2^{(4-alpha)/(3-alpha)}. Hence 2C_1 < C_2 unconditionally, and L_star enters only through the stated premise. The consumers R:higher-calibrations, R:static-holder-scope, R:planar-scope, R:three-endpoint-scope and R:full-upper-boundary all phrase L_star conditionally. T:first quotes printed (1.10)-(1.13), which I matched to author pp.3-4, without adopting a correction. No first-moment constant enters T:full-upper."
+    },
+    {
+      "claim": "C2 Fixed-noise Green limit in P:mixed",
+      "verdict": "PASS",
+      "reason": "At fixed positive noise widths, covariances and finite Gaussian moments are bounded and continuous. The G_eta=p_eta*G are positive measures of mass s that converge weakly, and finite products and linear (increment-to-position) pushforwards preserve weak convergence. A constant times the product of the time gaps dominates on the bounded simplices. Mixed eta/eta' second moments then give L2 Cauchy convergence of every colored fixed-noise integral. The eta limit is taken before any noise limit, no singular kernel is evaluated pointwise, and the two-step convention matches author pp.13-14."
+    },
+    {
+      "claim": "C3 Equal-length import and the rewritten unequal-chain deduction",
+      "verdict": "PASS",
+      "reason": "Author p.30 Lemma 4.4 gives the joint limit for each D in Pi_n, two length-n root-form chains, gamma^0 with the max of delta and gamma with the sum of epsilon, and arbitrary vertex widths; Remark 4.5 is pp.30-31. In the doubled map ctilde(j)=ctilde(r+j)=c(j), a self-pair color occurs four times and all three equal-color pairings are kept in Pi_r(c). Independence and Wick give E[Y_a Y_b] = sum over Pi_r(c) of B_{D'}. Each B_{D'}, after the time/space reversal s'=t-s, y'=x-y, is a Lemma 4.4 integrand whose vertex widths are permuted, so the common limit Q gives an L2 Cauchy sequence. In the original unequal chains each color appears exactly twice, so only D survives, and the L1 product limit follows by Cauchy-Schwarz. The colored D-diagram at common widths equals the uncolored D-term, so the uncolored Theorem 4.1 limit splits into these finite limits. The involution rho is a bijection of Pi_k. No product rule is assumed, and empty and odd cases are handled. T:full-upper does not use P:mixed or L:crude-corrected."
+    },
+    {
+      "claim": "C4 Source fidelity of the operator input (CP and Chen 2023)",
+      "verdict": "PASS",
+      "reason": "The cp-01 image shows (3) obtained from (2) by smooth convex Omega_n shrinking to cl W(A) for bounded A in a complex Hilbert space. The cp-02 image shows the algebra A(Omega). Theorem 6 (cp-05/06) gives C_Omega <= 1+sqrt2 for bounded A. Every application (L:complex-phase, L:interval-complex) is to bounded operators on finite mode/band/Hermite spaces. The functions are entire or holomorphic near cl W(L), since Re(w+lambda^2) >= 3 lambda^2/4. No unbounded extension or journal numbering is used. The chen-2023-02 image confirms the Theorem 1.1 closing sentence on finiteness of the (1.4)/(1.5) variations. L:physical-spectral-energy uses only the (1.5) finiteness, and no Corollary 1.2 is imported."
+    },
+    {
+      "claim": "C5 Complex roots and scalar estimates",
+      "verdict": "PASS",
+      "reason": "I recomputed the following. L_lambda+t = A_kappa^{1/2}(1-zK_kappa)A_kappa^{1/2}. The resolvent difference is A_kappa^{-1/2}(1-zK)^{-1} zK A_kappa^{-1/2}, with norm bound |z| d kappa^{a-3}/(1-delta). The t-integral equals lambda^{a-2} I_a, so ||Q_z-1|| <= delta I_a/(pi(1-delta)) <= 1/6. All four root comparisons are <= 2 by adjoint/inverse. The real part uses rho=lambda. The imaginary part uses rho=s, giving |<Bu,u>| <= 2d s^a, with s=0 by a limit. The parabola y^2 <= lambda^2(x+lambda^2)/3 and x >= -lambda^2/4 give |w| <= x+2 lambda^2, hence |Im sqrt w| <= lambda. The F_h small and large regimes give sqrt(3/2) lambda h and sqrt3, and the H_h ratio is <= 7/3. With CP these yield 3, 6(1+lambda h), 6. The weighted blocks are 3, 12(1+lambda h), 12, 12, with operator order kept, summing to (39+12 lambda h)e^{lambda h} <= 100 e^{2 lambda h}. The propagator is the exponential of a bounded block generator and is entire in z. The non-selfadjoint extension in L:interval-complex is valid via the identical adjoint sandwich bound."
+    },
+    {
+      "claim": "C6 Gaussian spatial/color bounds",
+      "verdict": "PASS",
+      "reason": "The bound int e^{-s|eta+xi|^2} mu <= int e^{-s|xi|^2} mu uses only physical nonnegativity and evenness, and holds with an origin atom. Laplace integration and mu(B_r)=V r^alpha give R_alpha = alpha pi V/(2 sin(pi alpha/2)) for 0<alpha<2. White-noise check: V=1/pi gives R_1=1/2, matching int dxi/(2pi(rho^2+xi^2)). The column identity follows from Gaussian isometry and Plancherel with spectral weight e^{-eps|xi|^2} mu. The vacuum insertion norm is sqrt(R) rho^{(alpha-2)/2} by orthogonality of the new color, and tensoring with other factors is harmless. The occupied-color bound is: creation row norm sqrt(j+1) (R R* is the number operator), times column norm sqrt(R) rho^{alpha/2-2}, with annihilation as the adjoint, giving 2 sqrt(N+1) sqrt(R) rho^{alpha/2-2}. Band compression contracts. The constants are independent of angular shape, mode count and band. v_max is used only at fixed smoothing."
+    },
+    {
+      "claim": "C7 Fixed-split statement, ordinary coefficients and local cutoffs",
+      "verdict": "PASS",
+      "reason": "B_i = P S_b(sum g M)S_b P with N_i=2k_i, and d_i = 2 sqrt(2k_i+1) sqrt R matches (E:interval-fock). Unused amplitudes are set to zero. A zero-length clipped interval with k_i>0 forces a zero coefficient. Original sorted labels are retained. Color reflection gives the parity r_i+q_i even, and the splits number prod(2k_i+1) <= 3^k. A word in U_r has exactly r_i <= 2k_i insertions of color i from vacuum, so N_i=2k_i preserves both selected coefficients exactly, including creation followed by annihilation. No fixed-degree propagator is identified with the full series. I traced the proof from the operator definitions to (E:split-before-absorption) and the explicit C_split; see C8-C10."
+    },
+    {
+      "claim": "C8 Common chronological partition and complete metric product",
+      "verdict": "PASS",
+      "reason": "D(t) = sum |z_i| sigma_i d_i 1_{I_i} = delta_a sum omega_i^{2-a} <= delta_a Lambda^{2-a}, since 2-a>1. This is a deterministic operator bound on the joint Hilbert space, so it covers correlated input vectors without conditioning. The partition from clipped background endpoints and distinct insertion times (a null complement) has M <= 2|A|+m+1 <= 2k+1 <= 3k+1. The sum of Lambda_j Delta tau equals lambda T + sum omega_i |I_i^T| <= k + sum_A k_i <= 2k, giving M_k = 100^{3k+1} e^{4k}. The identity I_j has norm max(1, Lambda_j/Lambda_{j+1}), from A_{Lambda_{j+1}}^{-1} <= q^2 A_{Lambda_j}^{-1}. At a cut the ratio is (lambda+R+E)/(lambda+R+S) <= prod_E(1+omega/lambda). Also q_0=1, the final cut at T charges the intervals ending at T, and each connected clipped interval ends once. Insertion cuts cost 1. So the product of the q_j is <= D_A once per copy. The endpoint-budget diagnostic agrees but was not relied on."
+    },
+    {
+      "claim": "C9 Cross-vacuum subspaces, word product and cube",
+      "verdict": "PASS",
+      "reason": "Z_S has background colors truncated, used cross colors in degree 1, unused cross colors in vacuum. The P_j act only on A colors and space, so they preserve Z_S, and so do the I_j. J_i(u,w)=(0, sigma_i B_i u) maps Z_S to Z_{S union i} for i not in S, and N_i=2 is harmless. Its norm is <= sigma_i sqrt R Lambda(t_i)^{(alpha-2)/2} <= c_i, because Lambda >= lambda and alpha<2. In the word I_M P_M B_{M-1} I_{M-1} ... B_1 I_1 P_1 I_0 each factor appears once, B_j acts at equal heights, and the rightmost factor acts first. This gives ||W v|| <= M_k D_A prod c_i ||v||. The Dyson coefficient of prod y_i (each degree one) is a sum over orderings of ordered integrals with coefficient 1, and the simplices tile the cube. Minkowski and |I_i^T| <= h_i give (E:interval-cross-vector) with no m! or 1/m!. Empty A gives D_A=1, and empty C gives Phi = P_z(T,0)v. The checks.py cube diagnostic confirms the noncommuting time-ordering on examples."
+    },
+    {
+      "claim": "C10 Normalized Cauchy integral and explicit constant",
+      "verdict": "PASS",
+      "reason": "The multivariate Cauchy formula with dtheta/(2pi) has mass 1 and supplies only prod rho_i^{-r_i}. Bounding each copy and then using Cauchy-Schwarz in the same Gaussian space, with ||w||_{1/T} <= k||w||_lambda per copy and ||v||_lambda <= ||v||_{1/T}, gives (E:split-before-absorption). The radius exponents sum to r_i+q_i = 2k_i, and D_{A_r} D_{A_q} = prod_B (1+k_i/(lambda h_i))^{ell_i}. The radius term rho_i^{-2k_i} = (sigma^2 d^2/delta^2)^{k_i}(h/k)^{(4-alpha)k_i} <= (12 delta^-2)^{k_i}(R sigma^2 h^{4-alpha})^{k_i}/(k_i!)^{3-alpha}, using d^2 <= 12 k R and k! <= k^k. Then M_k^2 = 100^{6k+2} e^{8k} <= (100^8 e^8)^k and |C| + sum_B k_i = k, so C_split = 100^8 e^8 max(1, 12 delta_{alpha/2}^{-2}) is explicit. In P:interval-coefficients: the local weights after sigma^2 <= c h^{-alpha0} are R h^beta(1+1/(lambda h)), R lambda^{alpha-2} h^p, and R^l h^{beta l}(1+l/(lambda h))^2/(l!)^nu; their expanded powers are positive, so they are monotone in h. Substituting h <= LT/i gives v_i and b_{i,l}, and the generating-product identity is exact with no multinomial."
+    },
+    {
+      "claim": "C11 Inventory product and entire summation",
+      "verdict": "PASS",
+      "reason": "At z = theta k^nu with theta=1/4: Q_i = theta k i^{-p} since nu+alpha-2 = 1, and the (1+Q_i) factors give C k^{1/p}. For i <= k the factor is <= S_nu(4P_i) <= exp(nu(4P_i)^{1/nu}), summing to Ck since beta/nu > 1. For i > k, P_i <= theta; the singleton tail is theta(1/(beta-1)+1/(beta-2)) k^{nu+1-beta} = C k^{alpha0}, and the higher tail is C k^{2nu+1-2beta} = C k^{2 alpha0 - 1} (2beta-3 > 1). The product is e^{Ck} uniformly in inventory size, and positivity gives [z^k] <= theta^{-k} k^{-nu k} e^{Ck} <= C^k/(k!)^nu. The energy series uses zero-order <= e, Y = exp(nu x^{1/nu}) and sum x^k/(k!)^nu <= Y, which yields exp(C R^{1/nu} T^{beta/nu}). Parameter conditions beta>2, nu>1, beta>nu, p>1 all hold."
+    },
+    {
+      "claim": "C12 Mode/band removal and uniformity",
+      "verdict": "PASS",
+      "reason": "On degrees <= n, unweighted multiplication is <= 2 sqrt(n+1) sqrt(v_max), and the entire majorant (E:interval-entire-majorant) converges for every z_*. On finite-coordinate vectors the annihilation tail vanishes and the creation tail tends to zero by dominated convergence; density and the uniform bound extend this. S_b converges strongly and commutes with free evolution, and fixed words converge by dominated time integration. v_max enters only this identification. The uniform coefficient bound depends on covariance only through R_alpha^k and on parameter-only constants. No Gamma-uniform or T-uniform rate is asserted."
+    },
+    {
+      "claim": "C13 Terminal-chain lemma and model identification",
+      "verdict": "PASS",
+      "reason": "The backward pushforward y_j = x - sum w_l defines the measure in d=3. The mass recursion M_n(T) = int (T-s) M_{n-1}(s) ds = T^{2n}/(2n)!. Hoelder gives sqrt((2n-1)!!) V^{n/2}. Mean-square continuity on finitely many open time cells gives strong measurability and Bochner integrability, and Fubini plus Wick give coefficient one per pair partition, with orientations cancelling 2^k k!. Symmetrization does not change the integral, so no extra n! or m!n! appears. The ratio |r| sqrt V T^2/((2n+2) sqrt(2n+1)) -> 0. In d=3, Green widths are handled by weak convergence against bounded continuous mixed moments. The interval field has exactly covariance K_J Gamma_eps, bounded variance and piecewise-constant time structure, and is not stationary in time. The comparison is made before reversal. The constant-potential check (1/3, 1/105) tests only this lemma."
+    },
+    {
+      "claim": "C14 Dyadic majorant, localization and scaled bound",
+      "verdict": "PASS",
+      "reason": "Shifted grids h_j(n+(-1)^j t), t in {0,1/3,2/3}, are nested since 3t is an integer. A scale with 3|s-r| < h_j <= 6|s-r| exists because H_0 >= 6T. The union boundary spacing h_j/3 > |s-r| leaves at least one boundary-free grid, giving |s-r|^{-alpha0} <= 6^{alpha0}|I|^{-alpha0}. The count is 3(T/h+2) per level; the cumulative 6T/h_j + 6(j+1) <= 6T/h_j + 6*2^j < 78T/h_j, so L=78 and c=6^{alpha0}. Finite propagation gives C_s f_T = 1 for |y|+s < T+1, and chains to x in B_1 stay in the cone; spatial stationarity and |B_{T+2}|/|B_1| = (T+2)^d follow. Source (2.23)-(2.24) (author p.13) gives gamma_delta^0 Gamma_eps with gamma_delta^0 <= |t|^{-alpha0}, which is <= K_infty inside positive fixed-order integrals, and K_J increases to K_infty by monotone convergence. No infinite-depth field is constructed. The amplitude a scaling a^2 Gamma, a^2 R_alpha leaves the constants unchanged."
+    },
+    {
+      "claim": "C15 Uniform tails, single analytic import, full claim",
+      "verdict": "PASS",
+      "reason": "Nonnegative mixed moments give r^{2n} E|Y_n|^2 <= B_r, which passes to X_n through fixed-order L2 limits. Geometric tails then give absolute convergence and u^{eps,delta}(1) -> u, with the limits in the stated order: fixed N first, then N -> infinity. B(T;2) is used for tails and B(T;1) for the final bound. Theorem 4.1 (4.2) p.22 (image) is the only analytic construction input. (1.5) follows from the dyadic sum and alpha+alpha0 < 2. Mild-model identification is labeled as imported from Theorem 1.1(1) and Section 5(ii). There is no circularity: the scaled regularized bound uses only terminal-Wick series at positive widths. The five-stage trace is accurate. The theorem covers d=1,2,3, the full class including d=alpha=1 white noise, original kappa, and universality of covariance shape via R_alpha only. No P:mixed, L:crude-corrected, Section 5 series or first-moment constant is used."
+    },
+    {
+      "claim": "C16 Direct static-source class audit",
+      "verdict": "PASS",
+      "reason": "Both 2145 windows show: gamma >= 0, nonnegative definite with spectral measure, d=1,2,3, possibly generalized noise. Page 2147 Theorem 1.2: 0<alpha<2 wedge d or alpha=d=1, data (1,0). Page 2152 explicitly allows a covariance existing only as a generalized function and defines (2.18) by heat regularization; 2151-2153 give (2.17), (2.19), (2.22) and the d=3 mu_n^{t,x} convention. Page 2165 Theorem 3.8(i) gives fixed-order L2. Page 2173 (5.1) is time scaling of the total-degree sum over all splits. Page 2175 identifies the square-root variation with 2^{alpha/(4-alpha)} M via Chen 2023 Theorem 1.1. Page 2180 (5.15) is the upper rate. A nonnegative even PD tempered Radon measure with measure scaling r^{d-chi} and Dalang (verified by the dyadic spectral sum) is in this class directly. Gamma_st in L:planar-endpoints is proved PD via a Gaussian mixture of e^{-s|x|^2} Gamma, not by weighting alone. P:three-transfer states endpoint PD/homogeneity as H:three-endpoints. Source alpha maps to chi and p=2. The rate comes from (5.15); Chen 2023 supplies only finiteness of M. Finitely many initial coefficients are absorbed. No Riesz/angular restriction or white-noise numeric constant is introduced. The notation flags are scoped correctly."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "CP (3) on p.1 is printed without an explicit function class; the manuscript reads it as F holomorphic on a neighborhood of cl W(T) via the A(Omega_n) approximation. This reading is correct, but an optional one-line justification (F in A(Omega_n) for large n) would make the import self-evident.",
+      "Chen 2023 p.1 (its standing class statement) is not in the packet. The claim that Theorem 1.1 permits generalized nonnegative PD covariances is supported here only indirectly by the p.2 examples (delta_0, Dirac comb). The main theorem does not depend on it.",
+      "The section-opening comment in intervals.txt asserts prior 'fifteen scoped correctness checks at high confidence'. This provenance cannot be verified from the packet and should not be presented as evidence.",
+      "Notation overloads: P (tensor Hermite projection, segment propagators P_j, background evolution P_z, inventory P_i, pair count P_k) and M/m (segment count, M_k, inventory size, modes m_i, m=|C|). Optional exposition.",
+      "M <= 2|A|+m+1 actually gives M <= 2k+1, so 3k+1 is valid but loose. Since delta_a <= 1/4, 12 delta^-2 >= 192 and the max{1,.} in C_split is redundant. Both are harmless.",
+      "T:full-upper restricts to T >= 1, which the proof does not need. Harmless.",
+      "The imported mild-model identification (source Section 5 part (ii), pp.35-37) is not in the packet and builds on source Section 5 estimates whose time-uniformity R:source-uniformity questions. The new moment bound and series convergence are proved independently, and the identification is correctly labeled as an import, so this is a scoping note only.",
+      "Identification steps (mode/band strong convergence, Bochner versus pathwise integrals, d=3 Green-width limits) are written compactly. They are standard and I found no gap, but they are less detailed than the operator core."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "One-pass AI review by a single model; not human verification, not a novelty audit, not Lean/formal certification, not a whole-paper cold read, and grants no circulation clearance or sharp-constant claim.",
+    "No code was executed; checks.py, terminal-checks.py and endpoint-budget-check.py outputs were read as supplied and treated only as falsification diagnostics, not proof.",
+    "Imported theorems (Chen Theorem 4.1 and Lemma 4.4, Theorem 1.1 and Section 5(ii); Crouzeix-Palencia Theorem 6 and (3); Chen-Hu Theorem 3.8(i), (5.1), (5.15); Chen 2023 Theorem 1.1 finiteness) were checked against the supplied page images for statement fidelity, not re-proved.",
+    "Source pages outside the packet (e.g., author pp.35-37, Chen 2023 p.1, CP pp.3-4) were not available.",
+    "Only the verbatim sections in foundation/calibrations/operators/intervals were reviewed; optional full canonical.tex/PDF were not read, so cross-section label consistency outside these extracts is unchecked.",
+    "Alternative-route sections (higher-alpha, static-holder, planar, three-endpoint, energy-fidelity) were reviewed at the source-interface and consumer level required by C1 and C16, not certified as independent proofs.",
+    "Byte/delivery provenance (carrier-derivation.json, image hashes) was not independently audited; carrier-derivation.json was treated as provenance only."
+  ]
+}

@@ -54,3 +54,5 @@ The86page chronological-word rewrite has18required texts/23source images
 and a fresh16check primary contract. It remains CANDIDATE;do not attribute
 the earlier15HIGH verdict to these revised proofs. Exact candidate hashes
 are in reviews/2026-10-29-chronological-word/change-binding.json.
+
+LATEST:source-repaired chronological review16PASS/HIGH accepted with all19texts/24images. All8minor findings adjudicated;final86pages include one elementary Cauchy clarification,with all statements/44proofs and the critical fixed-split proof unchanged. Fresh full-paper cold read NEXT. The old v1and calibration failures remain retained;no canonical publication performed.

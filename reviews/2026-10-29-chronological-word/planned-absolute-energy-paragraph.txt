@@ -1,0 +1,29 @@
+Historical draft used for the final minor-clarification pass.
+The canonical paragraph is recorded in final-status-binding.json;packet-v2 is unchanged.
+This expands the existing asserted absolute convergence;it is not a new
+uniform-in-inventory estimate or a new theorem.
+
+Proposed replacement after the entire-majorant display:
+
+The majorant converges uniformly on every compact amplitude polydisc,
+so it defines an entire vector function. Coefficientwise absolute
+convergence can be seen directly. Fix $z_*>0$ and put
+\[
+  K_{2z_*}=\sup_{\max_i|z_i|\le2z_*}
+  \|\mathcal U(T;\boldsymbol z)v\|_{\mathcal H_{1/T}}<\infty.
+\]
+This follows by taking the temporary phase parameter $\lambda=1/T$
+in the majorant. Normalized vector Cauchy integration on that larger
+polydisc gives
+\[
+  \|U_{\boldsymbol r}v\|_{\mathcal H_{1/T}}
+  \le K_{2z_*}(2z_*)^{-|\boldsymbol r|},\qquad
+  \sum_{\boldsymbol r}z_*^{|\boldsymbol r|}
+  \|U_{\boldsymbol r}v\|_{\mathcal H_{1/T}}
+  \le2^{|\mathcal F|}K_{2z_*}.
+\]
+The sum is the product of $|\mathcal F|$ geometric series. Consequently,
+Cauchy--Schwarz bounds the absolute energy double series by
+$4^{|\mathcal F|}K_{2z_*}^2$. This finite factor is used only to justify
+the coefficient identities at a fixed family and positive smoothing;
+it does not enter the uniform coefficient estimate below.
