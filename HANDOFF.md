@@ -1,110 +1,139 @@
-Last updated: 2026-10-29 20:25 UTC
+Last updated: 2026-10-29 20:52 UTC
 
-Original full upper/sharp goal ACTIVE. Reviewed partial clock comparisons:
-13WHITE diagrams versus9in the original covariance class.
+Original full upper/sharp goal ACTIVE. New scoped actual-parent projection/
+residual-discard obstruction reviewed; full sharp lower bridge still open.
 
 ## ⏭ Next session: where to stand and what to do
 
-Return to the FULL Stratonovich sharp lower-bound problem. First read the
-existing lower-route source/failure crosswalks and produce one exact
-model-specific bridge contract for a covariance-tilted first moment that
-retains the residual Gaussian law. The elementary density/Cauchy step is
-already screened; the missing step is a lower rate for the ACTUAL modified
-nonstationary HAM expectation. Do not substitute the stationary amplified
-covariance theorem or the failed deterministic surrogate. Record a bounded
-PROCEED/REFRAME/STOP decision before any long proof or Lean investment.
+Test a DIRECT nonnegative u(T,x)^2 event lower bound with the residual field
+inside the ACTUAL wave solution. First inspect the held Chen--Deya--Song--
+Tindel pathwise wave source and current author's lower variational functional,
+then state one falsification-tested uniform growth/stability micro-contract
+near a positive deterministic profile. Specify the spatial scale, time norm,
+noise topology, event probability and order of limits. Run the source/value
+gate before long proof or Lean work. See the bounded plan in
+reviews/2026-10-29-projection-residual-screen/next-step.md.
 
-Start with reviews/2026-10-28-full-upper-cold-v3/lower-source-recon.md,
-reviews/2026-10-29-full-upper-cold-v4/lower-bridge-source-crosswalk.md and
-reviews/2026-10-29-full-upper-cold-v7/followups/deterministic-tilt-planning-screen.md.
-This is an open analytic bridge, not a result or a requirement to persist
-with an unpromising route. The original all-covariance, fixed-positive-time-
-exponent sharp target is unchanged.
-
-[held back: collaborators' unpublished work]
+This is an unproved next direction, not a theorem or permission to replace
+the random solution by a deterministic surrogate. The old Cauchy surrogate
+paid twice the Gaussian cost; do not repeat it. The modified-mean tilt
+bridge(H) is also still open, but its unconditional residual-discard shortcut
+has now been rigorously refuted for an admissible parent. Do not reprove
+that completed obstruction or the already reviewed WHITE13/original-class9
+comparisons. Do not develop the two cross-only WHITE(2,2) patterns as a
+separate Skorohod problem. Full covariance/all-order/sharp target unchanged.
 
 ## Pre-flight checks
 
-1. Read Progress.md and reviews/2026-10-29-middle-cross/adjudication-v1.md,
-   review-summary.json and final-status-binding.json. Native Opus5.5/HIGH,
-  308.793seconds, all17checks PASS in6groups, no required repairs. Source
-   e63818606e3af1aa61af2d976dde3d985b5e558b; adoption
-  17af2d68bc2dd198dcbd6f8d8ffe2616933c4b58. Local/origin/<HUB> parity.
-2. Accepted new scope: WHITE13:02|13 and mirror31:02|13. CROSSlambda>0,
-   SELFnu>=0; J<=Jplus<=U<I, strict fractional average for0<a<1 and all
-   common theta>0. At lambda0 exact equality. Mirror swaps canonical pair
-   parameters. General covariance class remains9/15, not13/15.
-3. Seven MiddleCross scalar facts compile/replay with only standard axioms.
-   The ACTUALconsumer has both square roots, derived root-domain/inverse
-   identities and original positive denominators. No desired inequality or
-   numerator positivity assumed. Formal source1b77887c7927095d000e6120efa652d141acc7f4af1ad83d903068054fe26292
-   is byte-equal to the frozen reviewed source. Five fully qualified actual-
-   definition False controls fail semantically. Initial compile/setup failures
-   are preserved, not counted as mathematical controls.
-4. Reviewer C5 checked exact types and application; no reviewer execution is
-   claimed. Wave, joint Gaussian bridge, survival mixture and integrals remain
-   informal reviewed inputs. The earlier degree-four definitions/white limits
-   remain named previously reviewed inputs, not freshly rebuilt foundations.
-   Local total15supporting statements (3clock,5terminal,7middle) is not15
-   formal SPDE theorems. CompanionL0/PROPOSED and decision4 unchanged.
-5. Every displayed formula block and formal proof byte is unchanged after
-   review. Final note only adds accepted status, the reviewed strip-edge
-   derivative, positivity and clock scaling. All6minor findings adjudicated.
-   Calibration is finite floating consistency; its prior input was not in
-   the packet. Preserve that limitation and its bound path/hash.
-6. Canonical110-page/60-proof TeX/PDF entirely unchanged:
+1. Read Progress.md, notes/projection-residual-obstruction.md and
+   reviews/2026-10-29-projection-residual-screen/adjudication.md and
+   final-status-binding.json. Primary efbdbd95a7c701eeec2a1676a2f9388eb764c713:
+   six checks HIGH,209.105seconds,14texts. Exact common-noise followup
+   17876449824d0a9d0b851cf04786e87ce3f7d6fe: two groups/nine checks HIGH,
+   138.236seconds,6texts/2full current-author source images. Both actual
+   first-party Opus5.5, exit0, no required repairs, full native read coverage.
+2. Adoptionff99bcfa43e19834225fd60ff479924719fd47d2 is pushed/synchronized.
+   Accepted parent: d1,alpha1/2,a99/100,Gamma=(1-a)|x|^-1/2,T1,x0. An ACTUAL
+   normalized Hilbert rank-one Gaussian projection has A_P>=101/(3200sqrt2),
+   while A_C=20000/1932951; gap>1/96. For1<q<2, Q=C+(q-1)P has smaller
+   FULLmean than qP for sufficiently small positive coupling. P/Q need not
+   be homogeneous; C and its positive amplitude scalings are admissible.
+3. Scope is small coupling/fixed horizon, not all tilts or a large-time
+   lower-rate no-go. The original sharp target is not refuted. The proposed
+   bridge(H) remains unproved: actual modified mean, ranko(T^kappa), fixedq
+   limit order and valid independently supplied ell>0. No source constant
+   repair or stationary first-mean theorem import for Q/P is adopted.
+4. Exact source pp8--9,(2.9)--(2.11): independent temporal Laplace slices,
+   spatial heat average, fixed FULLZ across widths. Cross-profile has ONE
+   heat width; field self covariance has TWO. The exact bounded profile
+   limit/DCT and direct parent norm bound passed the focused followup. No
+   generic temporal-mollification claim. The primary review's incidental
+   blanket C-P<0on-the-cone assertion is NOTadopted; proof is integrated only.
+5. Two ProjectionResidual scalar facts compile/replay with standard-three
+   axioms and two semantic False controls; division-API failure preserved.
+   Formal source unchanged, exact primaryC3type/application checked. Current
+   Gaussian/source/cone/integral/remainder claims remain informal reviewed
+   analytic inputs. No canonical package/Comparator/full-SPDE gate. Total17
+   supporting local statements is not17formal SPDE theorems. L0/decision4
+   and Agent8 ownership unchanged, no donor writes/lease/registry/cluster.
+6. Primary coefficient/gap/mean/rate formula blocks retained; final followup
+   blocks unchanged. Final notes only add reviewed status and explicit a.e.
+   test approximation/continuum increments/profile-bound ingredients. All
+   six primary/five followup minor findings adjudicated, with limitations.
+7. Canonical110-page/60-proof TeX/PDF entirely unchanged:
    TeX58b092b258d4f363f8bfa0a02dcf492dcb9c13e794dbcab440bf7b0529b53b7d;
    PDFb552a051874ac18920fd32610318404015673e50b1b035f6793bff29618c7e30.
-   New proof is notes/middle-cross-comparison.md, not integrated into PDF.
-7. Native58/local64-member archives read back and verified against COMMITTED
-   blobs before only owned terminal raw copies were removed. No live review
-   or Lean job. Proof/evidence/controls and Agent8 message are committed.
-8. Agent8 FYI da82522a4e45: fresh resolution <MACHINE>/n8 and sender#3; transport
-   reported delivered. Receipt does not prove package work completed. Exact
-   source/pins/read-only cache ownership sent; no action requested. Re-resolve
-   future addresses, preserve existing package/gate ownership, no donor writes.
-9. Private wiki proposal updated and exact patch application reconstructed;
-   canonical page hash d10c4f829f74eeea0f91c1a2122204365ff1d0c0f4f1cac373a17ea1db1ddb33
-   unchanged. Nine reference tickets, no new absent reference. Source printed
-   constant discrepancy still has no adopted intended repair. Whole-paper
-   cold/novelty/circulation gates remain separate; full goal stays ACTIVE.
+   WHITE13/original covariance-class9 counts unchanged. Two white cross-only,
+   six general-class terms, full sum/all orders/sharp remain open.
+8. Native38/31and local34-member archives read back and verified against
+   committed blobs before ONLYowned terminal raw copies were removed. No
+   review or Lean process alive. No external mathematical WIP required.
+   Root verified current source/rendering provenance; reviewers did not run
+   commands/recompute hashes. Private wiki patch exactly applies/reconstructs;
+   canonical page unchanged, no project publication ticket.
+9. Nine reference tickets persist, no newly found absent mathematical ref.
+   Historical registry callback2cece592ecaa reports complete/not_searched
+   defect at its message-time version; current status not independently
+   checked. Durable caveat recorded, no package rerun or new message. Existing
+   Agent8reuse maps remain scoped. Whole-paper/circulation and source printed
+   normalization remain separate/open; full goal stays ACTIVE.
 
 ## Concrete deliverables for the next session
 
-- A precise lower-route bridge micro-contract: noise law, finite-rank or
-  profile perturbation, expectation being bounded, scaling/rank limit and
-  the lower-rate conclusion needed for the unchanged sharp constant.
-- A source crosswalk showing what Chen's stationary one-chain representation
-  supplies and where the nonstationary perturbation fails that direct import.
-  Reuse the existing density tool and no-go screens rather than reprove them.
-- A cheap falsification at the smallest finite model before long proof work.
-  Distinguish residual Gaussian contribution from deterministic substitution.
-  A useful no-go must identify the exact failed step, not claim all tilts fail.
-- If the bridge is viable, select one stable load-bearing Lean seam; otherwise
-  record its exact analytic gap and reframe toward full Stratonovich aggregate
-  information. No separate fully-cross Skorohod wave or new companion.
-- Preserve source-bound HIGH analytic review for any new proof, actual Lean
-  type/application checks, own-path commits/pushes and <HUB> parity.
+- Exact source crosswalk for a direct squared-solution event lower bound:
+  identify what the pathwise existence theorem supplies and what uniform
+  fast-growth/small-residual estimate it does not. Audit the current source
+  variational functional before identifying a constant with it.
+- One precise growth/stability statement with noise still present in the
+  actual wave solution. State all scales, norms, positivity/sign requirements,
+  probability cost, Gaussian event and limiting quantifiers. d1 may be the
+  first calibration, not a narrowed final target.
+- A cheap deterministic/finite-mode falsification before any long analytic
+  proof. The nonnegative square avoids out-of-event mean cancellation, but
+  does not prove the event or its uniform wave lower bound.
+- PROCEED/REFRAME/STOP on that exact bridge. If a stable arithmetic/finite
+  seam is load-bearing, use authorized local Lean with its actual consumer;
+  do not build missing SPDE foundations or assume the desired conclusion.
+- Preserve source-bound independent HIGH review for new proofs and source
+  applications, own-path commits/pushes and serialized <HUB> parity.
 
 ## Success criteria for the immediate next step
 
-One falsification-tested, source-grounded model bridge with an honest
-PROCEED/REFRAME/STOP verdict. Explicitly identify the first unproved analytic
-input. Do not claim the fixed-positive-a sharp lower bound from a density
-identity, finite diagram counts, a deterministic surrogate or a conditional
-Lean shell that assumes the target itself.
+A source-grounded, falsification-tested direct-event wave stability contract,
+with its first genuinely missing analytic input identified and a defensible
+investment verdict. A correct no-go for a named estimate also counts, but a
+new plan without tests or evidence does not. No sharp lower proof from
+Gaussian event cost alone or an uncontrolled deterministic substitution.
 
 ## Anti-success criteria
 
-No13general-class or15white claim. No standalone Skorohod development. No
-fresh review of unchanged certified algebra for a higher confidence label.
-No source6.1 two-chain/nonstationary transplantation, absolute-value clock
-substitution, root-shift erasure, spatial independence or mirror-label drop.
-No package/Comparator/full-SPDE gate from local checks. No source1.24 or
-intended variational-constant repair, All.bib/sibling/sourcePDF edit, HPC,
-public release or correspondence except the authorized Agent8 coordination.
+No large-time/all-tilts no-go from the accepted small-coupling example. No
+Loewner-order residual discard, width-dependent Z substitution or temporal-
+convolution misattribution. No unconditional sourceL_*repair,13general-class
+or15white claim. No Skorohod development or re-review of unchanged kernel
+algebra for confidence. No package/Comparator/full-SPDE claim, new companion,
+sourcePDF/All.bib/sibling edit, HPC, canonical publication, circulation or
+unauthorized correspondence. User goal remains the original full sharp one.
 
 ## What the previous sessions produced
+
+Latest checkpoint2026-10-29: admissible-parent projection/residual-discard
+obstruction, primary6HIGH at efbdbd9,209.105seconds, and exact common-noise
+source/limit followup9HIGH at1787644,138.236seconds. Adoption
+ff99bcfa43e19834225fd60ff479924719fd47d2. ActualRieszparentalpha1/2,a99/100,
+normalizedrank-one projection, exact self-pair gap>1/96 and full-mean failure
+at small coupling. Both scalar Lean facts compile/replay/standard axioms,
+2semantic controls; one API failure preserved. Source pp8--9 cutoff versus
+popular convolution trap resolved with exact fixed-Z cross-profile and joint
+limit. Direct amplified-series norm bound avoids wrong uniform-tail premise.
+All6+5minor findings adjudicated; incidental reviewer blanket cone sign
+explicitly rejected. Primary/followup formula invariants and formal proof
+bytes bound. Native38/31/local34 archives committed/readback/blob-verified
+before own terminal cleanup. Canonical TeX/PDF and WHITE13/general9 unchanged.
+Private wiki proposal only;9reference tickets persist. Historical registry
+coverage callback recorded, no new package work. Exact modified-mean bridge(H)
+unproved; next direct u^2 event-stability route is planning only. Full goalACTIVE.
+
 
 Latest checkpoint2026-10-29: middle-cross/selfWHITE13:02|13 and mirrored
 31:02|13 accepted at six groups/seventeen checks HIGH,308.793seconds,
@@ -579,22 +608,25 @@ Latest checkpoints:
 
 ## Repo & git state at handoff
 
-Latest substantive adoption17af2d68bc2dd198dcbd6f8d8ffe2616933c4b58 pushed and
-synchronized local/origin/<HUB>, clean0/0 before this HANDOFF-only successor.
-Scientific review froze e63818606e3af1aa61af2d976dde3d985b5e558b (formal source
-unchanged from preceding dfc24c8). Proof, local/source review evidence,
-Agent8 message and private wiki proposal are committed. Main TeX/PDF unchanged.
+Latest substantive adoptionff99bcfa43e19834225fd60ff479924719fd47d2 pushed
+and synchronized local/origin/<HUB>, clean0/0 before this HANDOFF-only
+successor. Primary freezeefbdbd95a7c701eeec2a1676a2f9388eb764c713;
+source/limit freeze17876449824d0a9d0b851cf04786e87ce3f7d6fe. Main TeX/PDF
+unchanged. Both accepted research proof and exact source addendum, local/
+native evidence, scoped adjudication, next plan, lessons and private wiki
+proposal are committed.
 
-Native58/local64 archives were verified against committed blobs before only
-owned terminal middle-cross native/launch/compile/audit/control directories
-were removed. No external math/review WIP is needed for this checkpoint.
-Older clock-filter raw snapshots remain at
-../../../../.local/state/Le-AI-Lab/stratonovich-clock-filter-local-raw-v1;
-its portable evidence and source are already committed. Package ownership/
-pins remain in lean-progress/coordination/2026-10-29-agent8/. No donor checkout
-was mutated. Revalidate current fleet addresses and dependency pins on reuse.
+Native38/31and local34 archives were verified against committed blobs before
+only owned terminal projection-residual compile/native/launch directories
+and generated source-page temporary files were removed. No current math or
+review WIP depends on an external directory. Older clock-filter raw snapshots
+remain at ../../../../.local/state/Le-AI-Lab/stratonovich-clock-filter-local-raw-v1;
+its source/portable evidence are committed. Agent8package ownership/pins and
+historical registry caveat are under lean-progress/coordination/. No donor
+checkout was mutated. Revalidate addresses and pins before future reuse.
 
 ## Operating notes
+
 
 
 Original overall goal remains ACTIVE without a token budget. Do not declare
@@ -693,6 +725,16 @@ its kernel-certified300-term identity by LLM or infer SPDE formalization from
 it. Its positive survival integral is kept combined through the apparent
 pole; signed pieces are not separately fractionally averaged. The erased
 root shift is a proved shortcut no-go, not a counterexample to J<=I.
+
+
+Projection-residual proof: notes/projection-residual-obstruction.md. Its exact
+source addendum, six-check primary and nine-check focused source/limit gates
+are in reviews/2026-10-29-projection-residual-screen/. Do not collapse them
+into a single fresh15-check whole-proof review. The full fixed-order parent
+construction remains a named prior input, not a freshly audited110-page proof.
+Root checked source/rendering/hash and archive provenance; reviewers did not
+execute Lean or independently recompute those hashes. The next direct-event
+plan is not a proved wave stability theorem or a new source correspondence.
 
 ## Risks to monitor
 
