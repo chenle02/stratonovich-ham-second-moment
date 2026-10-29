@@ -15,8 +15,9 @@ review scope, source qualifications and remaining gates.
 
 The current [89-page notes](notes/notes_stratonovich_ham_second_moment.pdf)
 state the upper bound in Theorem 13.8 on page 84. Resume from `HANDOFF.md`;
-the next step is a fresh blind read of the repaired final proof bytes. The
-four earlier cold reports remain NOT CLEAR for their respective sources.
+the next step is to close the mild-solution identification dependency raised
+by the fifth cold read. All five cold reports remain NOT CLEAR for their
+respective sources.
 
 ## Start here
 

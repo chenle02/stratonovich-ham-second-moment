@@ -60,3 +60,5 @@ LATEST:source-repaired chronological review16PASS/HIGH accepted with all19texts/
 LATEST superseding status:fourth cold NOT CLEAR on27e9746;all15items adjudicated. Real-part repair is not yet reviewed;finite-word/source-interface repairs then fresh primary/HIGH and cold required. This remains a PRIVATE proposal,not canonical publication.
 
 LATEST superseding status:explicit-justification17PASS/HIGH accepted at source431a3d6,23texts/24images;all8minor adjudicated. Final89pages retain every statement and44of46proofs;finite-word/fixed-split exactly reviewed. Fresh cold NEXT;all four older cold reports remain NOT CLEAR. Still PRIVATE/unpublished.
+
+LATEST superseding status:fifth cold NOT CLEAR on20c5571. Item2requires explicit mild-identification dependency repair. Plan is UNREVIEWED;then fresh primary/HIGH and cold required. All14items adjudicated. All five old cold reports NOT CLEAR. Still PRIVATE/unpublished;no source-author contact.

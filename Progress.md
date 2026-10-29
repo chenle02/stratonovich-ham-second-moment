@@ -2548,3 +2548,41 @@ project-local lessons retained. No source-author/coauthor message sent.
 Final minor pass verified:89pages,46proofs,all formal statements as reviewed,44proofs byte-equal. Only P:interval-coefficients and T:full-upper have the recorded minor explanations. New finite-word/fixed-split proofs exactly reviewed. Clean build0errors/undefined/overfull/tabs;formatter idempotent. All130native/dry-run archive members read-back hash verified before owned terminal cleanup. Final binding and build retained;PRIVATE wiki proposal reconciled,canonical unchanged. Fresh cold packet regeneration NEXT.
 
 Fifth cold packet regenerated from final adoptionf489938:88blind pages versus89canonical,all46proofs/every formal type byte-equal. Mathematical qualifications retained,only workflow metadata removed. Verbatim canonical free-form prompt,full manuscript/bibliography inline,six pinned source texts available. Clean build;read-only isolated launcher/config retained. Prior actualV4-Pro probe is health only;new actual model/source consultation must be checked at terminal collection. Prepared,not yet a scientific report. All four earlier cold reports remain NOT CLEAR.
+
+
+### Fifth cold read:NOT CLEAR;close the mild-equation dependency
+
+Actual source20c5571301a9ccb67551e1ec5abb501761d787f9. DeepSeekV4-Pro
+899.313s,24successful tools/no failed calls. Complete prompt,actualmodel,
+held HEAD,input hashes and isolated targets verified. Actual partial source
+consultation,not a full source-proof audit. All14items adjudicated under
+full-upper-cold-v5/adjudication-v1.md. The core is described as coherent and
+checked parts correct,but whole-paper clearance is NOT granted.
+
+Main substantive item2:sourceSection5(ii) explicitly uses its faulty(5.3)
+for uniform mixed-vertex domination. We already repair the norm scale,but
+must trace that repair through the actual onefold integral and width/order
+limits,or prove the mild construction independently. No further unidentified
+operator error is supplied;L:interval-complex already has the explicit
+adjoint/inverse-root/four-block proof that its own17HIGHprimary checked.
+Next concrete proof plan:mild-identification-repair-plan.md. Uniform arbitrary-
+vertex corrected crude bound,finite Gaussian-degree multiplication bound,
+inner-limit/product identification,Green eta-first continuity and uniform
+order tails should prove the mild equation without sourceSection5estimates.
+This is an UNREVIEWED plan,not another disclaimer or a completed proof.
+
+Reusable collect.py reproduces the predecessor report and refuses7corrupted
+records. Its first pipe export exited0 with incomplete65536byteJSON;strict
+parse rejected it. Same completed session exported to a regular file then
+passed every original binding. Failed raw export retained;no review restart.
+All20terminal native/workspace members read-back hash verified before only
+own cleanup. No reviewer live. Source HEAD freeze released after collection.
+
+Read-only sibling/index follow-up adds no adopted correction or novelty
+clearance;MSN MR4988274/zbMATH records inaccessible. No missing new reference
+found,no duplicate enqueue. Reverse amplification lower shortcut fails the
+existing static-white coefficient screen by1/80;this reuses old reviewed
+numbers and is diagnostic only,not a new eventual/asymptotic no-go. No lower
+proof wave or Skorohod development. Full original goals remain ACTIVE.
+
+Before proof investment,the proposed finite-degree multiplication step passed522exact rational polynomial cases(degrees0--8,two coordinates,mixed/homogeneous inputs). Coupled negative control F=g and externalW=g gives product norm squared3,not the incorrect vacuum value1. Creation and annihilation retained. This is a diagnostic,not an infinite-dimensional or mild-equation proof;code/output in full-upper-cold-v5/multiplication-screen.*.
