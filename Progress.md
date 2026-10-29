@@ -2586,3 +2586,38 @@ numbers and is diagnostic only,not a new eventual/asymptotic no-go. No lower
 proof wave or Skorohod development. Full original goals remain ACTIVE.
 
 Before proof investment,the proposed finite-degree multiplication step passed522exact rational polynomial cases(degrees0--8,two coordinates,mixed/homogeneous inputs). Coupled negative control F=g and externalW=g gives product norm squared3,not the incorrect vacuum value1. Creation and annihilation retained. This is a diagnostic,not an infinite-dimensional or mild-equation proof;code/output in full-upper-cold-v5/multiplication-screen.*.
+
+
+### Independent mild-construction candidate written
+
+The fifth-cold item2 now has a complete written CANDIDATE repair:Lemma
+L:vertex-crude gives q_n(t) uniform in all positive vertexwise noise widths,
+using sourceTheorem3.1 edge hypotheses,LemmaA.1 at theta>=theta0 and
+choice theta0+n/t. PropositionP:mild-construction proves the actual onefold
+Stratonovich equation. It uses a self-contained occupied Gaussian-degree
+multiplication bound,closedness,stationary uniform spatial approximation,
+Bochner/time domination,Green eta-first limits,fixed-external inner limits,
+joint fixed-order convergence,and uniform q_n order tails. The potentially
+large V_a is used only at fixed external widths,not for the outer limit.
+No new hypercontractivity import,sourceSection5proof or uniqueness assumption.
+
+The source5(ii) consumer has been removed from main/mixed-series dependency
+claims. The moment estimate/its geometric-series passage stay independent
+of the crude bound;the separate mild identification explicitly uses the
+new corrected branch. Its fixed-covariance constants do not enter the
+parameter-only sharp-scale upper bound. Original model/class/dimensions,
+upper/sharp targets and first-moment normalization qualifications unchanged.
+
+Clean92pages,48proofs,all earlier formal statements byte-equal to67ec196;
+44of46old proofs unchanged. Only P:mixed and T:full-upper consumers change;
+new proofsL:vertex-crude,P:mild-construction.0errors/undefined/overfull/tabs;
+formatter idempotent. Exact hashes in mild-construction/change-binding.json.
+The522exact Gaussian diagnostic cases are supporting falsification only.
+
+Fresh19check source-bound primary/HIGH packet prepared:27required texts,
+36images. Source pages10,15,35,36,60,61 have12new direct PDF windows with
+full-page overlap;root opened and visually checked every tile. Existing24
+source images retained exactly. A carrier-only calibration of the COMPLETE
+36image cohort must pass exact native delivery before science. Dimensions
+or the old24image ledger are insufficient. This is CANDIDATE ONLY;all five
+cold reports remain NOT CLEAR;no sharp/Lean/novelty/circulation promotion.

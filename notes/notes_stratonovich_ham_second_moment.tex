@@ -95,8 +95,8 @@ noise: Stratonovich regime\\[0.3em]
   Section~\ref{S:d1-upper} establishes upper bounds at the target
   scale for $0<\alpha\le1$ in dimensions one, two and three, including
   spatial white noise in dimension one, with explicit constants.
-  Section~\ref{S:interval-upper} establishes the upper bound for the
-  full homogeneous covariance class in every admissible dimension,
+  Section~\ref{S:interval-upper} gives a proof candidate for the upper
+  bound on the full homogeneous covariance class in every admissible dimension,
   using interval fields, a uniform coefficient estimate and covariance
   domination. The sharp constant remains open. The qualification on the
   printed first-moment normalization concerns numerical calibrations and
@@ -147,7 +147,10 @@ Section~\ref{S:interval-upper}. It does not use the alternative covariance
 interpolation arguments in Sections~\ref{S:higher-alpha}--\ref{S:energy-fidelity}
 as inputs. Its uniform geometric tail is proved here from scaled finite-model
 moments; the older mixed-series and crude estimates in
-Section~\ref{S:G0} are not needed for that limit passage. The alternative
+Section~\ref{S:G0} are not needed for that moment-limit passage.
+The separate verification of the mild equation is proved in
+Proposition~\ref{P:mild-construction}, using the corrected
+vertexwise bound of Lemma~\ref{L:vertex-crude}. The alternative
 arguments are retained to record their separate hypotheses
 and limitations. Section~\ref{S:d1-upper} also gives explicit constants for
 $\alpha\le1$; the full-class theorem asserts a finite uniform constant,
@@ -173,14 +176,16 @@ source's $L_*$ explicitly assumes a valid first-moment lower bound with
 that constant. No correction of its printed normalization is adopted.
 
 \paragraph{Which source statements are inputs.}
-The full upper proof directly imports the fixed-order $L^2$ construction
-from the current author version, Theorem~4.1, and the bounded-operator
-Crouzeix--Palencia theorem stated in~\eqref{E:cp-input}.
-Identification of the resulting series with the known mild solution is
-imported separately from the author's Theorem~1.1(1) and Section~5(ii);
-we do not re-prove that mild-equation assertion or uniqueness.
-The uniform tail passage for the series is proved here in
-Lemma~\ref{L:uniform-series-tail}, independently of the source's series estimate.
+The moment estimate and its series-limit passage import the fixed-order
+$L^2$ construction from the current author version, Theorem~4.1, and the
+bounded-operator Crouzeix--Palencia theorem in~\eqref{E:cp-input}.
+Proposition~\ref{P:mild-construction} proves that this series satisfies
+its onefold Stratonovich mild equation. That separate construction uses
+Theorem~3.1 and Lemma~A.1 through the corrected vertexwise estimate;
+it does not import the author's Section~5(ii) argument or (5.3)--(5.4).
+No uniqueness assertion is made. The uniform tail passage used for the
+sharp-scale moment estimate is proved in Lemma~\ref{L:uniform-series-tail},
+independently of the crude bound and the source's series estimate.
 
 The equal-length diagram limit in the author's Lemma~4.4 is an additional
 input to the auxiliary mixed-term Proposition~\ref{P:mixed}.
@@ -191,8 +196,9 @@ $\Rightarrow$ Lemma~2.4 $\Rightarrow$ Theorem~4.1.
 Here (4.4) is a joint regularization limit, different from the
 time-uniform estimate (5.4) diagnosed in Remark~\ref{R:source-uniformity}.
 Those fixed-order arguments do not use Section~5's later
-degree/time-dependent parameter substitution. This dependency distinction
-does not certify every step of the separately imported mild identification.
+degree/time-dependent parameter substitution. The mixed-width and order-limit
+passages for the mild equation are supplied here in
+Proposition~\ref{P:mild-construction}.
 
 The first-moment formulas in Theorem~\ref{T:first} are quoted source
 statements, with the printed-normalization qualification there; they are
@@ -582,11 +588,12 @@ p.~11, the Green regularization on pp.~13--14, and Theorem~4.1}.
   integrals before taking their defining limits.
 
   \emph{The separate solution-series passage.}
-  From~\cite{chen:author2026:time-dependency}*{Theorem~1.1 and Section~5,
-  p.~34}, $u$ is the solution represented by the series of the $X_n$.
-  Its fixed-$t$ summability is also proved independently in
-  Lemma~\ref{L:crude-corrected} below, whose proof uses only the source's
-  diagonal identity and Theorem~3.1, not the present mixed expansion.
+  Proposition~\ref{P:mild-construction} below identifies the series
+  of the $X_n$ as a Stratonovich mild solution. Its fixed-$t$ summability
+  follows independently from Lemma~\ref{L:crude-corrected} and the
+  vertexwise version in Lemma~\ref{L:vertex-crude}. Their proofs use
+  the source's fixed-order inputs, not the present mixed expansion.
+  Thus, this use of the later construction is not circular.
   In particular, $U_N=\sum_{n=0}^N X_n$ converges to $u$ in $L^2$.
   Consequently,
   \[
@@ -719,6 +726,258 @@ finite value at $\theta_0$ suffices. The last bound is (A.3).
     \end{split}
   \]
   This proves Lemma~\ref{L:crude-corrected}.
+\end{proof}
+
+\subsection{The mild equation with the corrected bound}
+
+Use the joint Gaussian regularizations of the source's (2.11).
+Write $a=(\epsilon,\delta)>0$ for one pair of widths and
+$\boldsymbol a=(a_1,\ldots,a_n)$ for vertexwise widths.
+Let $Y_n^{\boldsymbol a}(t,x)$ be the ordered terminal integral with
+kernel $g_n$ in~\eqref{E:expansion} and field
+$W_{\epsilon_j,\delta_j}(s_j,y_j)$ at vertex $j$; put $Y_0=1$.
+At fixed positive widths these are Gaussian-polynomial Bochner integrals.
+Indeed, Wick's formula bounds their product integrands in $L^2$ by
+$\sqrt{(2n-1)!!}\,V^{n/2}$, where $V$ is the largest of the finitely
+many field variances. The terminal Green measure has mass
+$t^{2n}/(2n)!$, by induction using $G_r(\R^d)=r$.
+In dimension three these integrals use the actual Green measures:
+products and linear pushforwards of $p_\eta*G$ converge against the
+bounded continuous covariance products. Mixed moments with two Green
+widths and the same mass bound give the $L^2$ limit as $\eta\downarrow0$,
+before any noise width is removed.
+
+\begin{lemma}[Uniform vertexwise regularization bound]\label{L:vertex-crude}
+  Under Hypothesis~\ref{H:homog}, there are $C<\infty$ and $\theta_0>0$
+  such that, for all positive vertexwise widths and $n\ge1$,
+  \begin{equation}\label{E:vertex-crude}
+    \|Y_n^{\boldsymbol a}(t,x)\|_2\le q_n(t),\qquad
+    q_n(t):=e^{\theta_0t}\frac{C^{n/2}t^n}{\sqrt{n!}}.
+  \end{equation}
+  The bound also holds for $X_n(t,x)$, with $q_0(t)=e^{\theta_0t}\ge1$.
+  For each $T<\infty$,
+  \begin{equation}\label{E:vertex-summability}
+    \sum_{n\ge0}\sqrt{n+1}\,q_n(T)<\infty.
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  The square of $Y_n^{\boldsymbol a}$ has the source's two-chain Wick
+  formula (4.5), with the widths copied to the second chain. Its edge
+  covariances are
+  \[
+    \gamma^0_{\delta_j\vee\delta_l}(s_j-s_l)
+    \gamma_{\epsilon_j+\epsilon_l}(y_j-y_l).
+  \]
+  On each terminal chain use
+  $s'_j=t-s_{n+1-j}$ and $y'_j=x-y_{n+1-j}$.
+  This reverses the chain and only permutes its vertex widths;
+  covariance differences change sign and the kernels are even.
+  For each pairing apply the imported Theorem~3.1 to
+  $e^{-\theta r}G_r$, first with Green smoothing if
+  $d=3$. The theorem permits a separate finite spectral measure and
+  temporal truncation on each edge; see its (3.1)--(3.2), pp.~14--15.
+  These hypotheses hold here: the spatial spectral measure on an edge
+  is $e^{-(\epsilon_j+\epsilon_l)|\xi|^2/2}\mu(\ud\xi)$, which is
+  finite by (1.5), and its temporal Laplace domain is
+  $[0,(\delta_j\vee\delta_l)^{-1}]$.
+
+  All edge norms obey~\eqref{E:crude-norms}, uniformly in their widths.
+  For the first norm the Laplace--Fourier transform of the damped Green
+  kernel is positive, and the spatial Gaussian multiplier and temporal
+  truncation can only decrease its nonnegative spectral integral.
+  For the second norm first enlarge the temporal covariance to
+  $|s-r|^{-\alpha_0}$, using positivity of the Green kernels and the
+  smoothed spatial covariance. Its space-time spectral expression is
+  an integral of the squared absolute transform against nonnegative
+  measures, so removal of the spatial Gaussian multiplier increases it.
+  This is the source's argument (4.14), p.~32. Green smoothing has
+  multiplier at most one and unchanged mass, so the same bounds hold
+  before its removal. Thus, Lemma~A.1, specifically (A.1) at
+  $\theta\ge\theta_0$ and (A.3) for sufficiently large $\theta_0$,
+  supplies constants independent of all the vertex widths.
+
+  Since $\#Q_0=\#Q_1$ and $\#Q_0+\#Q_2/2=n$ in Theorem~3.1,
+  exactly as in~\eqref{E:theta-envelope} we obtain
+  \[
+    \|Y_n^{\boldsymbol a}(t,x)\|_2^2
+    \le P_n e^{2\theta t}C_1^n\theta^{-2n},\qquad\theta\ge\theta_0.
+  \]
+  Let the Green width tend to zero at these fixed positive noise
+  widths, and choose $\theta=\theta_0+n/t$.
+  The inequality $P_n n^{-2n}\le2^n/n!$ then proves
+  \eqref{E:vertex-crude}, after increasing $C$.
+  The source's Theorem~4.1 gives the joint noise-width limit $X_n$;
+  the same bound passes to it. Finally,
+  \[
+    \frac{\sqrt{n+2}\,q_{n+1}(T)}
+    {\sqrt{n+1}\,q_n(T)}
+    =\sqrt C\,T\frac{\sqrt{n+2}}{n+1}\longrightarrow0.
+  \]
+  The ratio test proves~\eqref{E:vertex-summability}.
+  This proves Lemma~\ref{L:vertex-crude}.
+\end{proof}
+
+\begin{proposition}[Mild construction from the fixed-order limits]
+  \label{P:mild-construction}
+  Under Hypothesis~\ref{H:homog}, the series
+  $u(t,x)=\sum_{n\ge0}X_n(t,x)$ is a mild solution in
+  \cite{chen:author2026:time-dependency}*{Definition~2.1 and (2.12),
+  pp.~9--10}. More precisely, for each $t>0$ and $x\in\R^d$,
+  \begin{equation}\label{E:mild-construction}
+    \lim_{\epsilon,\delta\downarrow0}
+    \int_0^t\int_{\R^d}G(t-s,x-\ud y)
+    u(s,y)W_{\epsilon,\delta}(s,y)\ud s
+    =u(t,x)-1\quad\text{in }L^2(\Omega).
+  \end{equation}
+  The limit allows arbitrary relative rates of the two widths.
+  In dimension three the Green-width limit precedes the noise-width
+  limit. No uniqueness assertion is made.
+\end{proposition}
+
+\begin{proof}
+  Let $\mathscr P_{\le n}$ be the closed Gaussian polynomial space of
+  total degree at most $n$, generated by all the coupled source fields.
+  It includes all lower-degree contractions.
+  The fixed-width terminal integrals lie in this space, by their
+  Bochner construction; their fixed-order $L^2$ limits $X_n$ do too.
+
+  We first record an elementary multiplication bound on these spaces.
+  If $H$ is any centered linear Gaussian variable and
+  $F\in\mathscr P_{\le n}$, then
+  \begin{equation}\label{E:occupied-multiplication}
+    \|HF\|_2\le2\sqrt{n+1}\,\|H\|_2\|F\|_2.
+  \end{equation}
+  If $H=0$ the assertion is immediate. Otherwise take $H/\|H\|_2$
+  as the first coordinate of an orthonormal Gaussian basis.
+  On normalized Hermite polynomials its creation and annihilation
+  operators have norms at most $\sqrt{n+1}$ and $\sqrt n$ on total
+  degrees at most $n$: the squared coefficient sums have respective
+  weights $a_1+1\le n+1$ and $a_1\le n$.
+  Their sum proves the bound for finite-coordinate polynomials.
+  Approximation in the degree-closed space proves it for $F$ as well.
+  Indeed, the products of an approximating sequence are $L^2$ Cauchy
+  by this bound; subsequences converging almost surely identify their
+  limit with $HF$. This also proves the closedness of multiplication
+  needed below. The argument allows $F$ to depend on $H$.
+
+  Lemma~\ref{L:vertex-crude} proves absolute $L^2$ convergence of the
+  defining series for $u$, locally uniformly in time in the displayed
+  norm bounds. All fields are strongly measurable as $L^2(\Omega)$
+  vectors: the positive-width terminal constructions are measurable,
+  and pointwise $L^2$ limits along a fixed countable sequence of widths
+  give this property for $X_n$, then for the series.
+  For later Green limits we also need spatial continuity at each fixed
+  time. Positive-width terminal terms are $L^2$-continuous in space,
+  by continuity of their bounded smoothed covariance products and
+  dominated integration against the finite Green measures.
+  Joint spatial stationarity of the coupled regularizations shows that
+  \[
+    \|Y_n^{\boldsymbol b}(s,y)-X_n(s,y)\|_2
+    =\|Y_n^{\boldsymbol b}(s,0)-X_n(s,0)\|_2.
+  \]
+  Thus their convergence is uniform in $y$ for fixed $s$.
+  Consequently $X_n(s,\cdot)$, and by summability $u(s,\cdot)$,
+  have continuous $L^2$ representatives.
+
+  Fix an external width $a=(\epsilon,\delta)>0$ and write
+  $W_a=W_{\epsilon,\delta}$, with variance
+  $V_a=\gamma^0_\delta(0)\gamma_{2\epsilon}(0)<\infty$.
+  For $n\ge1$ define the Bochner integral
+  \[
+    I_{n,a}(t,x)=\int_0^t\int_{\R^d}G(t-s,x-\ud y)
+    W_a(s,y)X_{n-1}(s,y)\ud s.
+  \]
+  It exists because~\eqref{E:occupied-multiplication} gives
+  \begin{equation}\label{E:fixed-external-domination}
+    \|W_a(s,y)X_{n-1}(s,y)\|_2
+    \le2\sqrt n\sqrt{V_a}\,q_{n-1}(T),\qquad0\le s\le T,
+  \end{equation}
+  and the spatial Green mass is $t-s$.
+  At fixed $a$, multiplication of the inner regularizations by $W_a$
+  preserves their $L^2$ convergence, by the same bound on degree
+  at most $n-1$. Their norms have the uniform domination just used.
+  Dominated Bochner integration therefore gives
+  \begin{equation}\label{E:partial-vertex-limit}
+    I_{n,a}(t,x)=\lim_{\boldsymbol b\downarrow0}
+    Y_n^{(\boldsymbol b,a)}(t,x)\quad\text{in }L^2.
+  \end{equation}
+  Here $a$ is at the last, terminal vertex and $\boldsymbol b$ at the
+  preceding $n-1$ vertices. At positive widths this identity before
+  passage to the limit is ordinary terminal-kernel Fubini; its moment
+  bound was established before Lemma~\ref{L:vertex-crude}.
+  For $n=1$ there are no inner widths and the identity is exact.
+  In particular,~\eqref{E:vertex-crude} passes to this inner limit:
+  \begin{equation}\label{E:mixed-vertex-bound}
+    \sup_{a>0}\|I_{n,a}(t,x)\|_2\le q_n(t).
+  \end{equation}
+
+  We spell out the dimension-three convention in these steps.
+  The product $W_a(s,y)X_{n-1}(s,y)$ is $L^2$-continuous in $y$.
+  Apply~\eqref{E:occupied-multiplication} first to
+  $W_a(s,y)(X_{n-1}(s,y)-X_{n-1}(s,y'))$ and then to
+  $(W_a(s,y)-W_a(s,y'))X_{n-1}(s,y')$.
+  The two factors tend to zero in the required norms, by the continuity
+  just proved and the smoothed covariance of $W_a$.
+  The bound~\eqref{E:fixed-external-domination} is uniform in $y$.
+  Therefore convolution against $p_\eta*G_{t-s}$ converges in $L^2$
+  to convolution against $G_{t-s}$: on a compact set approximate this
+  continuous vector function by a finite continuous partition of unity
+  times fixed vector values, use scalar weak convergence, and control
+  the complement by tightness
+  and the uniform bound. The mass $t-s$ and
+  \eqref{E:fixed-external-domination} permit dominated time integration.
+  This proves the Green-width limit at fixed external widths.
+  The same argument applies before the inner noise limit; all
+  $Y_n^{(\boldsymbol b,a)}$ already use their Green limit at positive
+  noise widths. Thus,~\eqref{E:partial-vertex-limit} does not interchange
+  the source's Green and noise limits.
+
+  For each fixed $n$, the joint fixed-order convergence in the source's
+  Theorem~4.1 implies
+  \begin{equation}\label{E:external-vertex-limit}
+    \lim_{a\downarrow0}I_{n,a}(t,x)=X_n(t,x)\quad\text{in }L^2.
+  \end{equation}
+  To see the role of joint convergence, fix $\zeta>0$ and choose
+  $r>0$ so that every vertex width below $r$ gives
+  $\|Y_n^{(\boldsymbol b,a)}-X_n\|_2<\zeta$.
+  Fix any external pair $a$ below $r$ and let the inner widths tend
+  to zero in~\eqref{E:partial-vertex-limit}. Then
+  $\|I_{n,a}-X_n\|_2\le\zeta$. This proves the asserted limit with
+  arbitrary relative rates; it does not assume a partial-limit theorem.
+
+  It remains to identify the full product integral, rather than only
+  its finite-order terms. At fixed $a$,
+  \eqref{E:occupied-multiplication} and
+  \eqref{E:vertex-summability} imply
+  \[
+    \sum_{n\ge1}\|W_a(s,y)X_{n-1}(s,y)\|_2
+    \le2\sqrt{V_a}\sum_{n\ge1}\sqrt n\,q_{n-1}(T)<\infty,
+    \qquad0\le s\le T.
+  \]
+  Multiplication is closed: partial sums of $u$ converge in $L^2$,
+  and their products converge by this estimate, so an almost surely
+  convergent subsequence identifies the product limit with $W_a u$.
+  Dominated Green integration and norm summability now prove
+  \[
+    I_a(t,x):=\int_0^t\int_{\R^d}G(t-s,x-\ud y)
+    W_a(s,y)u(s,y)\ud s
+    =\sum_{n\ge1}I_{n,a}(t,x)\quad\text{in }L^2.
+  \]
+  The sum of the product integrands is spatially $L^2$-continuous
+  by uniform summability, so its Green-width limit is justified in
+  exactly the same way. Finally, for every $N$,
+  \[
+    \|I_a(t,x)-(u(t,x)-1)\|_2
+    \le\sum_{n=1}^N\|I_{n,a}(t,x)-X_n(t,x)\|_2
+    +2\sum_{n>N}q_n(t).
+  \]
+  First let $a\downarrow0$ using~\eqref{E:external-vertex-limit}, then
+  let $N\to\infty$ using~\eqref{E:vertex-summability}.
+  This proves~\eqref{E:mild-construction}, hence the mild equation in
+  the stated definition. The source's (5.3)--(5.4) and its Section~5(ii)
+  identification proof have not been used.
+  This proves Proposition~\ref{P:mild-construction}.
 \end{proof}
 
 Thus, the exponent two enters through replacing the paired norm products
@@ -4808,10 +5067,10 @@ for that evolution.
 \section{Interval fields and the full upper bound}
 \label{S:interval-upper}
 
-\myCmts{The explicit-justification revision passed scoped independent
-correctness review at high confidence, including the finite-word and
-source interfaces. Whole-paper cold clearance and the sharp constant
-remain open.}
+\myCmts{The interval estimate passed scoped independent correctness
+review. The added mild-construction proof addresses the fifth cold
+reader's dependency concern and is a new candidate awaiting review.
+Whole-paper cold clearance and the sharp constant remain open.}
 
 Write
 \[
@@ -5994,11 +6253,15 @@ on the empty tuple. This definition introduces no kernel symmetrization.
   printed normalization is used. The only imported analytic construction
   input for this moment estimate and its series-limit passage is the
   fixed-order statement just cited.
-  The identification of the series~\eqref{E:expansion} with a mild
-  solution in the source's Definition~2.1 is the known result
-  \cite{chen:author2026:time-dependency}*{Theorem~1.1(1), pp.~2--3;
-  Section~5, part (ii), pp.~35--37}. We retain that model identification; we do not
-  claim a new proof of the mild equation or of uniqueness.
+  Proposition~\ref{P:mild-construction} separately proves that this
+  same series satisfies the source's Definition~2.1: its onefold
+  Stratonovich integral equals $u-1$. That construction uses the
+  corrected mixed-vertex crude bound for its product and order limits.
+  This is a separate dependency from the sharp-scale moment estimate
+  just proved; the source's Section~5(ii) proof is not imported.
+  The crude constants used for this identification may depend on the
+  fixed covariance; they do not enter~\eqref{E:full-upper-bound}.
+  No uniqueness assertion is made.
 
   \emph{Cutoff dependence and the order of limits.}
   The preceding argument uses the following distinct statements.
@@ -6071,8 +6334,9 @@ on the empty tuple. This definition introduces no kernel symmetrization.
 
 \myCmts{Theorem~\ref{T:full-upper} establishes the unchanged full upper
 goal for every admissible dimension and homogeneous covariance.
-The explicit-justification revision passed scoped correctness review.
-A fresh whole-paper cold read remains required.
+The interval estimate passed scoped correctness review.
+The independent mild-construction repair is a new proof candidate;
+fresh primary and whole-paper review remain required.
 The earlier explicit bounds for $0<\alpha\le1$ remain available.
 The sharp constant and final whole-paper cold read remain open.}
 

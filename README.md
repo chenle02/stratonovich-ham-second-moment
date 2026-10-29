@@ -7,17 +7,16 @@ t^{(4−α−α₀)/(3−α)} and the sharp p = 2 constant, building on X. Chen,
 (author version, submitted to AAP; arXiv:2510.01412).
 
 **Status (2026-10-29):** the full target-scale upper bound is written for the
-original covariance class in dimensions one, two and three, and has passed
-fresh 17-check source-bound correctness review at high confidence. The final whole-paper cold
-read remains open. The sharp second-moment constant is unproved, and the
-private Lean companion has not been created. See `Progress.md` for exact
-review scope, source qualifications and remaining gates.
+original covariance class in dimensions one, two and three. The interval
+argument passed source-bound correctness review. A new independent
+mild-construction proof addresses the fifth cold reader's dependency concern
+and awaits its own primary and whole-paper review. The sharp constant is
+unproved; the private Lean companion has not been created. See `Progress.md`.
 
-The current [89-page notes](notes/notes_stratonovich_ham_second_moment.pdf)
-state the upper bound in Theorem 13.8 on page 84. Resume from `HANDOFF.md`;
-the next step is to close the mild-solution identification dependency raised
-by the fifth cold read. All five cold reports remain NOT CLEAR for their
-respective sources.
+The current [92-page notes](notes/notes_stratonovich_ham_second_moment.pdf)
+state the full upper bound in Theorem 13.8 on page 87 and the new construction
+in Proposition 3.6 on page 13. Resume from `HANDOFF.md`. All five earlier cold
+reports remain NOT CLEAR for their respective sources.
 
 ## Start here
 
