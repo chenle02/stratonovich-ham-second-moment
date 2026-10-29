@@ -1,121 +1,144 @@
-Last updated: 2026-10-29 20:52 UTC
+Last updated: 2026-10-29 21:24 UTC
 
-Original full upper/sharp goal ACTIVE. New scoped actual-parent projection/
-residual-discard obstruction reviewed; full sharp lower bridge still open.
+Original full upper/sharp goal ACTIVE. Exact original-class semiclassical
+scaling and auxiliary scalar residual-growth/C0 calibration now reviewed.
 
 ## ⏭ Next session: where to stand and what to do
 
-Test a DIRECT nonnegative u(T,x)^2 event lower bound with the residual field
-inside the ACTUAL wave solution. First inspect the held Chen--Deya--Song--
-Tindel pathwise wave source and current author's lower variational functional,
-then state one falsification-tested uniform growth/stability micro-contract
-near a positive deterministic profile. Specify the spatial scale, time norm,
-noise topology, event probability and order of limits. Run the source/value
-gate before long proof or Lean work. See the bounded plan in
-reviews/2026-10-29-projection-residual-screen/next-step.md.
+Test a PHYSICALphase-space block norm for the rough wave equation before
+building a long operator argument. Start with the FIRSTGaussian response:
+write the actual position and velocity kernels and check spectral
+integrability/cutoff growth in candidate phase spaces. Do not assume the
+usual H1xL2energy phase or differentiate a point-solution criterion without
+proof. The immediate source/read/test contract is
+reviews/2026-10-29-direct-event-calibration/next-step.md.
 
-This is an unproved next direction, not a theorem or permission to replace
-the random solution by a deterministic surrogate. The old Cauchy surrogate
-paid twice the Gaussian cost; do not repeat it. The modified-mean tilt
-bridge(H) is also still open, but its unconditional residual-discard shortcut
-has now been rigorously refuted for an admissible parent. Do not reprove
-that completed obstruction or the already reviewed WHITE13/original-class9
-comparisons. Do not develop the two cross-only WHITE(2,2) patterns as a
-separate Skorohod problem. Full covariance/all-order/sharp target unchanged.
+Read the held Balan--Tudor source wave-th/rem-AB-equiv and wave-prop-1 for
+its additive POSITIONresponse only; it does not give the velocity or
+multiplicative random-operator consumer in the inspected passages. Choose
+an invariant phase only if it can also control the desired terminal
+observable and accommodate data1/expanding cone. Record the first precise
+missing input and PROCEED/REFRAME/STOP before a long proof or Lean wave.
+
+Do not reprove the completed scaling/scalar result or pretend it proves the
+rough-SPDE event lower bound(H). The original all-covariance/all-order sharp
+constant remains the objective. No standalone Skorohod development. The
+previous projected-mean bridge is still open; its residual-discard shortcut
+and the deterministic-surrogate Cauchy shortcut remain ruled out as stated.
 
 ## Pre-flight checks
 
-1. Read Progress.md, notes/projection-residual-obstruction.md and
-   reviews/2026-10-29-projection-residual-screen/adjudication.md and
-   final-status-binding.json. Primary efbdbd95a7c701eeec2a1676a2f9388eb764c713:
-   six checks HIGH,209.105seconds,14texts. Exact common-noise followup
-   17876449824d0a9d0b851cf04786e87ce3f7d6fe: two groups/nine checks HIGH,
-   138.236seconds,6texts/2full current-author source images. Both actual
-   first-party Opus5.5, exit0, no required repairs, full native read coverage.
-2. Adoptionff99bcfa43e19834225fd60ff479924719fd47d2 is pushed/synchronized.
-   Accepted parent: d1,alpha1/2,a99/100,Gamma=(1-a)|x|^-1/2,T1,x0. An ACTUAL
-   normalized Hilbert rank-one Gaussian projection has A_P>=101/(3200sqrt2),
-   while A_C=20000/1932951; gap>1/96. For1<q<2, Q=C+(q-1)P has smaller
-   FULLmean than qP for sufficiently small positive coupling. P/Q need not
-   be homogeneous; C and its positive amplitude scalings are admissible.
-3. Scope is small coupling/fixed horizon, not all tilts or a large-time
-   lower-rate no-go. The original sharp target is not refuted. The proposed
-   bridge(H) remains unproved: actual modified mean, ranko(T^kappa), fixedq
-   limit order and valid independently supplied ell>0. No source constant
-   repair or stationary first-mean theorem import for Q/P is adopted.
-4. Exact source pp8--9,(2.9)--(2.11): independent temporal Laplace slices,
-   spatial heat average, fixed FULLZ across widths. Cross-profile has ONE
-   heat width; field self covariance has TWO. The exact bounded profile
-   limit/DCT and direct parent norm bound passed the focused followup. No
-   generic temporal-mollification claim. The primary review's incidental
-   blanket C-P<0on-the-cone assertion is NOTadopted; proof is integrated only.
-5. Two ProjectionResidual scalar facts compile/replay with standard-three
-   axioms and two semantic False controls; division-API failure preserved.
-   Formal source unchanged, exact primaryC3type/application checked. Current
-   Gaussian/source/cone/integral/remainder claims remain informal reviewed
-   analytic inputs. No canonical package/Comparator/full-SPDE gate. Total17
-   supporting local statements is not17formal SPDE theorems. L0/decision4
-   and Agent8 ownership unchanged, no donor writes/lease/registry/cluster.
-6. Primary coefficient/gap/mean/rate formula blocks retained; final followup
-   blocks unchanged. Final notes only add reviewed status and explicit a.e.
-   test approximation/continuum increments/profile-bound ingredients. All
-   six primary/five followup minor findings adjudicated, with limitations.
-7. Canonical110-page/60-proof TeX/PDF entirely unchanged:
+1. Read Progress.md and notes/direct-event-calibration.md; evidence in
+   reviews/2026-10-29-direct-event-calibration/adjudication.md,
+   review-summary.json and final-status-binding.json. Scientific source
+   9d77f90fb3026b575e713494e0731b5b6a28a08f: native first-party Opus5.5/HIGH,
+   all7checks PASS,310.312seconds,22texts/2exact source images, no required
+   repairs, service exit0, complete native read coverage. Adoption
+   b11dd6d225fdb755673f3b2ae659a7659161f28b pushed/synchronized.
+2. Accepted exact full-class law:delta=T^-kappa,R=Tdelta, V(t,x)=u(Tt,Rx)
+   satisfies delta^2Vtt=Delta V+sqrt(delta)WV with the SAMEraw covariance.
+   Noise widths mapeta/T,epsilon/R^2; Green measures giveR and mild vertex
+   delta^-1/2. Fixed-T common-noise width/series limits keep all self,
+   unequal/empty-chain terms; no large-T/width interchange or hidden
+   uniqueness. Normalized second moment isdelta logEV(1,0)^2.
+3. Separate scalar calibration has SPATIALdegree0, outside the target
+   positive-alpha class. Microscopic eta_delta=delta^-1sup_{|t-s|<=delta}
+   |b(t)-b(s)|->0 implies delta logy1->1, with actual residual retained.
+   Positive full-block products and the FINALfractional block are proved.
+   Holderprimitive theta>1/2 satisfies this under sqrt(delta)amplitude;
+   raw temporalGaussian primitives permit theta<1-a/2. No rough-SPDE
+   stability theorem follows from this calibration.
+4. Triangular b_delta with supnormdelta and evenb_delta/sqrt(delta)->0inC0
+   has alternating0/2potential and a strict smaller Floquet rate. The
+   analytic proof uses periodic Riccati and strict Cauchy--Schwarz, not the
+   floating0.9693display. It refutes UNIFORMglobalC0stability only, not
+   Gaussian convergence in probability or all direct-event methods.
+5. Seven actual local Lean consumers: kappa_gt_one,physical_scale,
+   noise_scale(withReal.sqrt(delta)),vertex_scale,gauge_inverse,gauge_drift
+   andmonodromy. All compile/replay with standard-three axioms;3semantic
+   controls fail onFalse, currentomega1/100insideeta<=1/80. Initial warning-
+   only success and unrestrictedomega1controls preserved as history, not
+   extra scoped checks. Proof source and all displayed formulas unchanged
+   after review; exact types/application passedC6of7, not7separate reviews.
+6. Formal algebra is not the Gaussian/Green/series/ODE/Floquet proof. Those
+   remain informal reviewed arguments. The hyperbolic-function specialization
+   detM=1 is outside Lean's polynomial determinant identity. Both owned
+   object hashes rechecked. No companion/package/lease/registry/donor write/
+   cluster/Comparator/full-SPDE gate; L0 and decision4 unchanged.
+7. Held CDSTsource onlyd1,2, stricternoisealpha+a<1or1/2, global Sobolev
+   dataexcluding1, and explicit globalPicardnotpatching. The inspected
+   passages do not supply restartablephase/spectralbounds; this is not an
+   exhaustive source/publisher audit. Covariance-level normalization is
+   H(2H-1), process-level its square root. No intended printed-source repair.
+8. Native47/local52-member archives read back and verified against COMMITTED
+   blobs before only owned terminal direct-event raw directories were
+   removed. No live review/Lean job or external mathematical WIP needed.
+   Current source images are the unchanged previously root-opened cohort;
+   reviewer did not run commands/recompute hashes. All7minor findings are
+   adjudicated; final prose clarifications change no displayed formula.
+9. Canonical110-page/60-proof TeX/PDF ENTIRELYUNCHANGED:
    TeX58b092b258d4f363f8bfa0a02dcf492dcb9c13e794dbcab440bf7b0529b53b7d;
    PDFb552a051874ac18920fd32610318404015673e50b1b035f6793bff29618c7e30.
-   WHITE13/original covariance-class9 counts unchanged. Two white cross-only,
-   six general-class terms, full sum/all orders/sharp remain open.
-8. Native38/31and local34-member archives read back and verified against
-   committed blobs before ONLYowned terminal raw copies were removed. No
-   review or Lean process alive. No external mathematical WIP required.
-   Root verified current source/rendering provenance; reviewers did not run
-   commands/recompute hashes. Private wiki patch exactly applies/reconstructs;
-   canonical page unchanged, no project publication ticket.
-9. Nine reference tickets persist, no newly found absent mathematical ref.
-   Historical registry callback2cece592ecaa reports complete/not_searched
-   defect at its message-time version; current status not independently
-   checked. Durable caveat recorded, no package rerun or new message. Existing
-   Agent8reuse maps remain scoped. Whole-paper/circulation and source printed
-   normalization remain separate/open; full goal stays ACTIVE.
+   WHITE13/original-class9counts unchanged. Private wiki patch exact;
+   canonicalpage unchanged.9existing reference tickets, no new useful
+   absentref. Agent8 ownership and previous source/API map preserved.
+   Fullsharp/wholepaper/novelty/circulation/companion/sourceconstant issues
+   remain open; overall goal ACTIVE.
 
 ## Concrete deliverables for the next session
 
-- Exact source crosswalk for a direct squared-solution event lower bound:
-  identify what the pathwise existence theorem supplies and what uniform
-  fast-growth/small-residual estimate it does not. Audit the current source
-  variational functional before identifying a constant with it.
-- One precise growth/stability statement with noise still present in the
-  actual wave solution. State all scales, norms, positivity/sign requirements,
-  probability cost, Gaussian event and limiting quantifiers. d1 may be the
-  first calibration, not a narrowed final target.
-- A cheap deterministic/finite-mode falsification before any long analytic
-  proof. The nonnegative square avoids out-of-event mean cancellation, but
-  does not prove the event or its uniform wave lower bound.
-- PROCEED/REFRAME/STOP on that exact bridge. If a stable arithmetic/finite
-  seam is load-bearing, use authorized local Lean with its actual consumer;
-  do not build missing SPDE foundations or assume the desired conclusion.
-- Preserve source-bound independent HIGH review for new proofs and source
-  applications, own-path commits/pushes and serialized <HUB> parity.
+- A source-checked FIRSTGaussian response in candidate physical phase norms,
+  including the velocity kernel and cutoff growth. The existing additive
+  position theorem alone cannot certify that consumer.
+- A precise phase-space/operator micro-contract with all scales, regularity,
+  weights/cone size, data1 and terminal-observable map. Reject a proposed
+  space when the actual first response already fails; keep the failure scoped.
+- Only after that test, assess whether unit-block errors could be bounded
+  in Lp uniformly in the spatial cutoff and block index. This is currently
+  unproved. Parent constant-data moment bounds are not operator norms for
+  arbitrary phase data. Do not assume temporal independence for a union bound.
+- Source/value and cheap falsification gates before long analysis or Lean.
+  Do not build generic missing SPDE foundations to force a formal claim.
+- New analytic proofs keep source-bound independent HIGH review, actual
+  formal type/application boundaries, own-path commits and <HUB> parity.
 
 ## Success criteria for the immediate next step
 
-A source-grounded, falsification-tested direct-event wave stability contract,
-with its first genuinely missing analytic input identified and a defensible
-investment verdict. A correct no-go for a named estimate also counts, but a
-new plan without tests or evidence does not. No sharp lower proof from
-Gaussian event cost alone or an uncontrolled deterministic substitution.
+A tested phase choice or a precise obstruction at the actual first-response
+consumer, with source correspondence and an investment verdict. An unexecuted
+plan or a fixed-speed small-noise theorem title is not success. Keep event
+probability, actual growth and source variational identification separate.
+No sharp constant from event cost or a scalar calibration alone.
 
 ## Anti-success criteria
 
-No large-time/all-tilts no-go from the accepted small-coupling example. No
-Loewner-order residual discard, width-dependent Z substitution or temporal-
-convolution misattribution. No unconditional sourceL_*repair,13general-class
-or15white claim. No Skorohod development or re-review of unchanged kernel
-algebra for confidence. No package/Comparator/full-SPDE claim, new companion,
-sourcePDF/All.bib/sibling edit, HPC, canonical publication, circulation or
-unauthorized correspondence. User goal remains the original full sharp one.
+No uniform C0event-stability substitution, undefined spatial primitive square,
+cutoff-uniform claim without an estimate, or sourceCDSTphase/restart import.
+No mean-residual discard/Loewner shortcut, deterministic-surrogate Cauchy
+retry, source1.24repair,13general-class or15white claim. No Skorohod
+second-moment development, sourcePDF/All.bib/sibling edit, HPC, companion/
+package creation, formal-SPDE/Comparator claim, canonical publication,
+circulation or unauthorized correspondence. No unchanged-confidence retry.
 
 ## What the previous sessions produced
+
+Latest checkpoint2026-10-29: exact ORIGINAL-class scaling to
+ delta^2Vtt=Delta V+sqrt(delta)WV, delta=T^-kappa,R=Tdelta; source9d77f90,
+7PASS/HIGH310.312seconds; adoptionb11dd6d225fdb755673f3b2ae659a7659161f28b.
+All generalized covariance/Green width/series terms kept. Auxiliary scalar
+continuous-driver stability with microscopic increments includes positive
+transfer products and finalfractionalblock. TriangularC0counterexample has
+strict smaller Floquet rate viaRiccati, notnumerics. CDSTselected-source
+regime/data/nonpatching gaps and primitive normalization pinned. Seven actual
+real-power/matrix Lean consumers, clean/replay/standard axioms,3scopedFalse
+controls; warning-only first success preserved. All7minor findings adjudicated,
+formulas/Leanbytes unchanged. Native47/local52archives committed/readback/blob-
+verified before own cleanup. Canonical TeX/PDF and WHITE13/general9 unchanged.
+Private wiki only;9reference tickets persist, no new useful absentref. New
+next-source read: held Balan--Tudor additive POSITIONcriterion selected
+passages only, not a velocity/phase-operator result. Nextphysical phase test
+and rough-SPDE event(H)/sourceconstant map remain open. Full goal ACTIVE.
+
 
 Latest checkpoint2026-10-29: admissible-parent projection/residual-discard
 obstruction, primary6HIGH at efbdbd9,209.105seconds, and exact common-noise
@@ -608,24 +631,23 @@ Latest checkpoints:
 
 ## Repo & git state at handoff
 
-Latest substantive adoptionff99bcfa43e19834225fd60ff479924719fd47d2 pushed
+Latest substantive adoptionb11dd6d225fdb755673f3b2ae659a7659161f28b pushed
 and synchronized local/origin/<HUB>, clean0/0 before this HANDOFF-only
-successor. Primary freezeefbdbd95a7c701eeec2a1676a2f9388eb764c713;
-source/limit freeze17876449824d0a9d0b851cf04786e87ce3f7d6fe. Main TeX/PDF
-unchanged. Both accepted research proof and exact source addendum, local/
-native evidence, scoped adjudication, next plan, lessons and private wiki
-proposal are committed.
+successor. Scientificfreeze9d77f90fb3026b575e713494e0731b5b6a28a08f.
+New exact-scaling/scalar proof, local/native evidence, scoped adjudication,
+next-source plan/lessons and private wiki proposal committed. Main TeX/PDF
+unchanged. No current math/review WIP needs an external directory.
 
-Native38/31and local34 archives were verified against committed blobs before
-only owned terminal projection-residual compile/native/launch directories
-and generated source-page temporary files were removed. No current math or
-review WIP depends on an external directory. Older clock-filter raw snapshots
-remain at ../../../../.local/state/Le-AI-Lab/stratonovich-clock-filter-local-raw-v1;
-its source/portable evidence are committed. Agent8package ownership/pins and
-historical registry caveat are under lean-progress/coordination/. No donor
-checkout was mutated. Revalidate addresses and pins before future reuse.
+Native47/local52archives were checked against committed blobs before ONLY
+owned terminal direct-event compile/native/launch directories were removed.
+Older clock-filter raw snapshots remain at
+../../../../.local/state/Le-AI-Lab/stratonovich-clock-filter-local-raw-v1;
+its portable evidence/source are committed. Agent8ownership/source/API map
+and historical registry coverage caveat stay in lean-progress/coordination/.
+No donor checkout mutated. Revalidate addresses/pins for any future reuse.
 
 ## Operating notes
+
 
 
 
@@ -735,6 +757,16 @@ construction remains a named prior input, not a freshly audited110-page proof.
 Root checked source/rendering/hash and archive provenance; reviewers did not
 execute Lean or independently recompute those hashes. The next direct-event
 plan is not a proved wave stability theorem or a new source correspondence.
+
+
+Direct-event proof is notes/direct-event-calibration.md; source/evidence and
+scope binding live in reviews/2026-10-29-direct-event-calibration/. Exact
+full-class scaling and scalar degree0calibration are distinct results.
+Do not promote the latter to the rough model or call the former a sharp
+bound. Formula(H) is an unproved event micro-contract, not a conditional
+formal theorem claiming the target. The next held Balan--Tudor read is
+selected additive-position coverage; no velocity-phase result has been
+checked. Its source path/hash and precise next test are in next-step.md.
 
 ## Risks to monitor
 
