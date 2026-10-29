@@ -84,3 +84,13 @@ Terminal-crossclose:all five scalarpublictypes/applicationpassed6HIGHreview,
 controls afterreview (total6;reviewer saw4),documented as such. Analyticwave/
 clock/mixtureidentities remaininformal proofs. Evidence/type boundary at
 local-checks/terminal-cross-v1/local-receipt.json. L0companionunchanged.
+
+## Local middle-cross pilot (2026-10-29)
+
+The actual two-root consumer U<I for b>=1,c>1, root parameterization and
+300-term identity compile cleanly with standard axioms. Fresh owned-source
+replay and five definition-level False controls pass. Initial compile/setup
+errors are preserved. Seven public facts reuse read-only pins; no new
+companion, package, lease, registry, cluster or Comparator gate is opened.
+Analytic/type/application review is pending. Evidence:
+local-checks/middle-cross-v1/local-receipt.json. L0 remains PROPOSED.

@@ -33,3 +33,10 @@ scalarstatement/applicationcorrespondence;the integral reductionsremain
 informal. Original4falsecontrolsseenbyreviewer;2definition-level postreview
 controls root-executedonly. F0andrate-to-closedUidentificationsare outside
 the Leanstatement. Proofsource unchanged. No allcovariance/allorder claim.
+
+
+Middle-crosslocalfence:actualclosedU(b,c,sqrt(b²+c²-1),sqrt(b²+1))<I(b,c)
+forb>=1,c>1,withderivedrootinverseidentities,originaldenominatorsigns and
+300termcertificate. Exactresolventdivideddifferencealsochecked. Source/type
+applicationpending;physicalwave/Brownianbridge/survival/integral identities
+areoutsideLean. White1Dfourverticesonly,notgeneralclass/allorder/sharpSPDE.

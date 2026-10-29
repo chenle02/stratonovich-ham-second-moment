@@ -9,7 +9,7 @@
 - **Phase:** terminal-cross/self WHITEcomparison accepted6PASS/HIGH at6475ea0. Two new white diagrams give11of15WHITEterms;the original covariance-class count remains9with6left. Fourwhite/fullsum/allorder/sharp targets remainOPEN. Positive-mixture kernel envelope plus the ACTUALstrict scalarconsumer (five localLeanlemmas)are checked;model/integralproofs remaininformal.
 - **Review boundaries:** prior92page quantitative/mild source `a7e725e` passed its own19checks/HIGH. The new8check review covers the direct norms, positive spatial Wick-measure limit, arbitrary joint vertex-width construction and their consumers. It does NOT freshly audit every unchanged operator/interval proof. Exact source/delivery/adoption bindings and limitations are in `reviews/2026-10-29-fixed-order-construction/`.
 - **Current artifact:**canonical110pages/60proofs andTeX/PDFunchanged. Accepted researchmemos:degree-four-clock-probe.md(9original-class terms)andterminal-cross-comparison.md(2additionalWHITEterms,5localLeanconsumers,type/application6HIGH). Canonical last build remains0errors/undefined/overfull/tabs;final bindings are scope-specific in the two review directories. No new.texbuild or fullpaper clearance is implied.
-- **Open targets:** full fixed-positive-alpha0sharp p2constant via MODEL information;focused exposition/whole-paper clearance;isolated local Lean seam checks now authorized;separate companion creation still pending;canonical wiki provenance and novelty/circulation. Next model question is white(1,3)02|13and its mirror. An UNREVIEWEDheat-bridge/survival-envelope route has a300termexactalgebra screen;the full comparison is unproved. No numerical normalization correction adopted.
+- **Open targets:** full fixed-positive-alpha0 sharp p2 constant via model information; focused exposition/whole-paper clearance; separate companion creation still pending; canonical wiki provenance and novelty/circulation. The white (1,3)02|13 comparison and its mirror now have a complete candidate analytic proof and a locally verified actual two-root scalar consumer. Independent analytic/source/type/application review is pending; the accepted counts remain 11 white and 9 original-class terms. No numerical normalization correction adopted.
 - **Agent8coordination:** completed at read-only source/statement/ownership level,as requested by Le. Agent8accepted our exact map;three API component fits and stronger-premise gaps are recorded in lean-progress/coordination/2026-10-29-agent8/reuse-adjudication.md. Current coefficient gate sourced5fde707,evidence successorbffd4329;historical SWE receipts remain e5e9558. Source/API/pins checked;no donor-package build/gate/companion/lease/registry transaction. Local Lean pilot is recorded separately. L0/PROPOSED and decision4unchanged.
 - **Authorization:** Le's continuing full goal includes the sharp/lower track. The current wave is the previously proposed bounded static-comparison/inequality step,with the HIGH review threshold unchanged. It does not redefine the original all-alpha0sharp target,claim novelty or promote a paper. Le now explicitly permits Lean verification;standalone local checks do not create a companion repo. Report/honor PROJECT-GOAL decision points;companion-creation decision4remains pending. No correspondence/public release authorized.
 - **Worker:** Codex/GPT author, paper-dev workflow; historical project handoff to agent #30 on 2026-10-26. Lean remains L0/PROPOSED (`lean-progress/PROGRESS.md`). Nine normal reference requests exist; new edition-custody intake is nonblocking, not source authentication.
@@ -3316,3 +3316,43 @@ rationalovershoot atb1,c11/10;desiredintegratedcomparison isnotrefuted.
 Allfourwhite/sixgeneralremainingterms,allorders,physicalsharpconstant and
 whole-paper/circulation remainOPEN. No newabsent6reporef;existing9tickets
 persist. Privatewiki refreshedonly;canonicalunchanged. Fullgoal ACTIVE.
+
+
+## Middle-cross/self candidate and actual Lean consumer (2026-10-29)
+
+Previous goal turn: progress, with the original sharp/all-order goal active.
+The new candidate in notes/middle-cross-comparison.md controls white
+(1,3)02|13 and its mirrored (3,1)02|13. It derives the physical rational
+integral, a positive Gaussian bridge/survival envelope, an exact resolvent
+integral and a nonsingular upper bound through the apparent survival pole.
+The root-shift-erasure shortcut is rigorously too large at b=1,c=11/10;
+this does not refute the desired integrated comparison. No general-covariance
+or full-sum result is claimed. Accepted counts remain11WHITE/9original class
+until a new source-bound analytic/type/application review passes.
+
+Seven new standalone Lean facts prove the actual U<I consumer with BOTH
+square roots, inverse/domain facts, original positive denominators and the
+300-positive-integer-monomial identity. No desired comparison or numerator
+positivity is assumed. Clean compile, exact public types/live axioms and
+fresh owned-source replay pass; only standard propext/Classical.choice/
+Quot.sound occur. Five fully qualified definition-level false controls fail
+on False after successful name/import resolution. One initial compilation
+failure, a warning-only successful build and three initial invalid control
+setups are preserved and not credited as semantic checks. No companion,
+package, lease, registry, donor write, cluster or Comparator gate opened.
+
+Finite calibration:36 positive bridge integrals,36 triple resolvent
+integrals,64 positive survival integrals and16 fixed-parameter cases at60
+digits. Exact common exponential factoring protects tiny survival values;
+no clipping or relaxed acceptance threshold. These are consistency checks,
+not interval enclosures or a global proof. The global scalar comparison is
+supplied by the actual Lean consumer. All new analytic identifications and
+their formal application retain the HIGH independent review threshold.
+
+Review packet:reviews/2026-10-29-middle-cross/packet-v1; six independent
+contract groups,23 text/CSV sources and12 exact author-source images. No old
+review report substitutes for analysis. Canonical110-page TeX/PDF remains
+entirely unchanged. No new absent-six-repository reference was needed; the
+nine existing reference tickets persist. The remaining fully cross(2,2)
+patterns must not become a separate Skorohod research problem; future work
+must preserve the full Stratonovich aggregate/original-class sharp target.

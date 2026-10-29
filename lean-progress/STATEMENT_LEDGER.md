@@ -24,3 +24,15 @@ local-checks/terminal-cross-v1/STATEMENT-FENCE.md and the source/Audit evidence.
 
 The five terminal-cross names were checked together inC5of the six-group
 analytic/type/applicationreview at6475ea0,not five separate six-checkreviews.
+
+## Middle-crosspilot:StratonovichHAMAudit.MiddleCross
+
+| Name | Scope | Status |
+|---|---|---|
+| certificate_pos | Positive300termHornercertificate | Localcompile/replay;applicationpending |
+| parameter_identity | Exactrationalparameterizednumeratoridentity | Localcompile/replay;applicationpending |
+| parameter_numerator_pos | z>=2,t>1giveclearednumeratorpositive | Localcompile/replay;applicationpending |
+| difference_identity | ActualrationalI-Uequalsnum/positiveoriginaldenominator | Localcompile/replay;applicationpending |
+| resolvent_difference | ExactnonsingularMdivideddifference | Localcompile/replay;applicationpending |
+| root_numerator_pos | Actualrootsgiverootparameterizationandpositivenum | Localcompile/replay;applicationpending |
+| middle_bound | ACTUALstrictU<Iwithbothsquarerootsanddomain | Localcompile/replay;applicationpending |

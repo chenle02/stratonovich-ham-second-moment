@@ -1,0 +1,51 @@
+import took 876ms
+.olean serialization took 5.82s
+interpretation of Mathlib.Tactic.FieldSimp._aux_Mathlib_Tactic_FieldSimp___elabRules_Mathlib_Tactic_FieldSimp_fieldSimp_1._boxed took 6.28s
+ring took 1.38s
+share common exprs took 3.19s
+fix level params took 193ms
+type checking took 6.22s
+process pre-definitions took 4.19s
+linting took 1.29s
+elaboration took 1.21s
+${LOCAL_RAW}/stratonovich-middle-cross-lean-dev-02/src/StratonovichHAMAudit/MiddleCross.lean:101:54: warning: Custom `field_simp` dischargers do not make use of the `field_simp` arguments list
+interpretation of Mathlib.Tactic.FieldSimp._aux_Mathlib_Tactic_FieldSimp___elabRules_Mathlib_Tactic_FieldSimp_fieldSimp_1._boxed took 123ms
+ring took 551ms
+share common exprs took 693ms
+type checking took 906ms
+process pre-definitions took 232ms
+linting took 1.77s
+elaboration took 366ms
+${LOCAL_RAW}/stratonovich-middle-cross-lean-dev-02/src/StratonovichHAMAudit/MiddleCross.lean:118:54: warning: Custom `field_simp` dischargers do not make use of the `field_simp` arguments list
+interpretation of Mathlib.Tactic._aux_Mathlib_Tactic_Linarith_Frontend___elabRules_Mathlib_Tactic_nlinarith_1._boxed took 427ms
+interpretation of Mathlib.Tactic._aux_Mathlib_Tactic_Linarith_Frontend___elabRules_Mathlib_Tactic_nlinarith_1._boxed took 522ms
+interpretation of Mathlib.Tactic._aux_Mathlib_Tactic_Linarith_Frontend___elabRules_Mathlib_Tactic_nlinarith_1._boxed took 660ms
+cumulative profiling times:
+	.olean serialization 5.82s
+	attribute application 0.17ms
+	compilation (IR) 1.88ms
+	compilation (LCNF base) 33.5ms
+	compilation (LCNF impure) 6.4ms
+	compilation (LCNF mono) 16.3ms
+	congr simp thm 0.202ms
+	declTypeLinter 3.76ms
+	dsimp 2.17ms
+	elaboration 1.66s
+	fix level params 222ms
+	import 876ms
+	initialization 45.8ms
+	instantiate metavars 108ms
+	interpretation 8.79s
+	let-to-have transformation 0.203ms
+	linting 3.1s
+	module linting 0.00793ms
+	norm_num 65.6ms
+	parsing 11.5ms
+	process pre-definitions 4.46s
+	ring 2.01s
+	share common exprs 3.93s
+	simp 10ms
+	tactic execution 149ms
+	tacticAnalysis 3.33ms
+	type checking 7.23s
+	typeclass inference 621ms

@@ -1,0 +1,280 @@
+${LOCAL_RAW}/stratonovich-middle-cross-lean-dev-01/src/StratonovichHAMAudit/MiddleCross.lean:9:4: error(lean.dependsOnNoncomputable): failed to compile definition, consider marking it as 'noncomputable' because it depends on 'Real.instDivInvMonoid', which is 'noncomputable'
+${LOCAL_RAW}/stratonovich-middle-cross-lean-dev-01/src/StratonovichHAMAudit/MiddleCross.lean:12:4: error(lean.dependsOnNoncomputable): failed to compile definition, consider marking it as 'noncomputable' because it depends on 'Real.instDivInvMonoid', which is 'noncomputable'
+${LOCAL_RAW}/stratonovich-middle-cross-lean-dev-01/src/StratonovichHAMAudit/MiddleCross.lean:13:4: error(lean.dependsOnNoncomputable): failed to compile definition, consider marking it as 'noncomputable' because it depends on 'Real.instDivInvMonoid', which is 'noncomputable'
+${LOCAL_RAW}/stratonovich-middle-cross-lean-dev-01/src/StratonovichHAMAudit/MiddleCross.lean:15:4: error(lean.dependsOnNoncomputable): failed to compile definition, consider marking it as 'noncomputable' because it depends on 'Real.instDivInvMonoid', which is 'noncomputable'
+${LOCAL_RAW}/stratonovich-middle-cross-lean-dev-01/src/StratonovichHAMAudit/MiddleCross.lean:17:4: error(lean.dependsOnNoncomputable): failed to compile definition, consider marking it as 'noncomputable' because it depends on 'Real.instDivInvMonoid', which is 'noncomputable'
+${LOCAL_RAW}/stratonovich-middle-cross-lean-dev-01/src/StratonovichHAMAudit/MiddleCross.lean:20:4: error(lean.dependsOnNoncomputable): failed to compile definition, consider marking it as 'noncomputable' because it depends on 'resolvent', which is 'noncomputable'
+${LOCAL_RAW}/stratonovich-middle-cross-lean-dev-01/src/StratonovichHAMAudit/MiddleCross.lean:32:4: error(lean.dependsOnNoncomputable): failed to compile definition, consider marking it as 'noncomputable' because it depends on 'Real.instDivInvMonoid', which is 'noncomputable'
+${LOCAL_RAW}/stratonovich-middle-cross-lean-dev-01/src/StratonovichHAMAudit/MiddleCross.lean:33:4: error(lean.dependsOnNoncomputable): failed to compile definition, consider marking it as 'noncomputable' because it depends on 'Real.instDivInvMonoid', which is 'noncomputable'
+${LOCAL_RAW}/stratonovich-middle-cross-lean-dev-01/src/StratonovichHAMAudit/MiddleCross.lean:34:4: error(lean.dependsOnNoncomputable): failed to compile definition, consider marking it as 'noncomputable' because it depends on 'Real.instDivInvMonoid', which is 'noncomputable'
+${LOCAL_RAW}/stratonovich-middle-cross-lean-dev-01/src/StratonovichHAMAudit/MiddleCross.lean:36:4: error(lean.dependsOnNoncomputable): failed to compile definition, consider marking it as 'noncomputable' because it depends on 'Real.instDivInvMonoid', which is 'noncomputable'
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+${LOCAL_RAW}/stratonovich-middle-cross-lean-dev-01/src/StratonovichHAMAudit/MiddleCross.lean:67:51: error: unsolved goals
+z t : ℝ
+hz : 0 < z
+ht : 0 < t
+⊢ ⋯ - ⋯ - ⋯ * 7995392 - z ^ 15 * t ^ 10 * 11010048 - z ^ 15 * t ^ 10 * paramB z * 22020096 -
+                                                                                                z ^ 15 * t ^ 10 *
+                                                                                                    paramB z ^ 2 *
+                                                                                                  11796480 -
+                                                                                              z ^ 15 * t ^ 10 *
+                                                                                                  paramB z ^ 3 *
+                                                                                                1572864 -
+                                                                                            z ^ 15 * t ^ 10 *
+                                                                                                paramB z ^ 4 *
+                                                                                              786432 -
+                                                                                          z ^ 15 * t ^ 11 * 4587520 -
+                                                                                        z ^ 15 * t ^ 11 * paramB z *
+                                                                                          13762560 -
+                                                                                      z ^ 15 * t ^ 11 * paramB z ^ 2 *
+                                                                                        13762560 -
+                                                                                    z ^ 15 * t ^ 11 * paramB z ^ 3 *
+                                                                                      4587520 +
+                                                                                  z ^ 15 * t ^ 12 * 4456448 +
+                                                                                z ^ 15 * t ^ 12 * paramB z * 17825792 +
+                                                                              z ^ 15 * t ^ 12 * paramB z ^ 2 *
+                                                                                26738688 +
+                                                                            z ^ 15 * t ^ 12 * paramB z ^ 3 * 17825792 +
+                                                                          z ^ 15 * t ^ 12 * paramB z ^ 4 * 4456448 -
+                                                                        z ^ 16 * t ^ 5 * 131072 +
+                                                                      z ^ 16 * t ^ 5 * paramB z * 393216 -
+                                                                    z ^ 16 * t ^ 5 * paramB z ^ 2 * 393216 +
+                                                                  z ^ 16 * t ^ 5 * paramB z ^ 3 * 131072 -
+                                                                z ^ 16 * t ^ 6 * 524288 +
+                                                              z ^ 16 * t ^ 6 * paramB z * 1048576 -
+                                                            z ^ 16 * t ^ 6 * paramB z ^ 2 * 524288 -
+                                                          z ^ 16 * t ^ 7 * 131072 +
+                                                        z ^ 16 * t ^ 7 * paramB z * 131072 +
+                                                      z ^ 16 * t ^ 7 * paramB z ^ 2 * 1703936 -
+                                                    z ^ 16 * t ^ 7 * paramB z ^ 3 * 1703936 -
+                                                  z ^ 16 * t ^ 8 * 5242880 -
+                                                z ^ 16 * t ^ 8 * paramB z ^ 2 * 3145728 -
+                                              z ^ 16 * t ^ 9 * 1441792 -
+                                            z ^ 16 * t ^ 9 * paramB z * 1441792 -
+                                          z ^ 16 * t ^ 9 * paramB z ^ 2 * 131072 -
+                                        z ^ 16 * t ^ 9 * paramB z ^ 3 * 131072 -
+                                      z ^ 16 * t ^ 10 * 2621440 -
+                                    z ^ 16 * t ^ 10 * paramB z * 5242880 -
+                                  z ^ 16 * t ^ 10 * paramB z ^ 2 * 2621440 +
+                                z ^ 16 * t ^ 11 * 1703936 +
+                              z ^ 16 * t ^ 11 * paramB z * 5111808 +
+                            z ^ 16 * t ^ 11 * paramB z ^ 2 * 5111808 +
+                          z ^ 16 * t ^ 11 * paramB z ^ 3 * 1703936 -
+                        z ^ 17 * t ^ 6 * 262144 +
+                      z ^ 17 * t ^ 6 * paramB z * 524288 -
+                    z ^ 17 * t ^ 6 * paramB z ^ 2 * 262144 +
+                  z ^ 17 * t ^ 7 * 524288 -
+                z ^ 17 * t ^ 7 * paramB z * 524288 -
+              z ^ 17 * t ^ 9 * 524288 -
+            z ^ 17 * t ^ 9 * paramB z * 524288 +
+          z ^ 17 * t ^ 10 * 262144 +
+        z ^ 17 * t ^ 10 * paramB z * 524288 +
+      z ^ 17 * t ^ 10 * paramB z ^ 2 * 262144 =
+    ⋯ + ⋯ + ⋯ * 123904 - z ^ 18 * t * 13312 + z ^ 18 * t ^ 2 * 44032 + z ^ 18 * t ^ 3 * 89088 -
+                                                                                              z ^ 18 * t ^ 4 * 197632 -
+                                                                                            z ^ 18 * t ^ 5 * 304128 +
+                                                                                          z ^ 18 * t ^ 6 * 171008 +
+                                                                                        z ^ 18 * t ^ 7 * 199680 -
+                                                                                      z ^ 18 * t ^ 8 * 685056 -
+                                                                                    z ^ 18 * t ^ 9 * 1760256 -
+                                                                                  z ^ 18 * t ^ 10 * 1866752 -
+                                                                                z ^ 18 * t ^ 11 * 224256 +
+                                                                              z ^ 18 * t ^ 12 * 1651712 +
+                                                                            z ^ 18 * t ^ 13 * 1815552 +
+                                                                          z ^ 18 * t ^ 14 * 865280 +
+                                                                        z ^ 18 * t ^ 15 * 197632 +
+                                                                      z ^ 18 * t ^ 16 * 17408 +
+                                                                    z ^ 19 * t * 1024 -
+                                                                  z ^ 19 * t ^ 2 * 3072 -
+                                                                z ^ 19 * t ^ 3 * 13312 +
+                                                              z ^ 19 * t ^ 4 * 15360 +
+                                                            z ^ 19 * t ^ 5 * 78848 +
+                                                          z ^ 19 * t ^ 6 * 41984 -
+                                                        z ^ 19 * t ^ 7 * 123904 -
+                                                      z ^ 19 * t ^ 8 * 259072 -
+                                                    z ^ 19 * t ^ 9 * 259072 -
+                                                  z ^ 19 * t ^ 10 * 107520 +
+                                                z ^ 19 * t ^ 11 * 123904 +
+                                              z ^ 19 * t ^ 12 * 242688 +
+                                            z ^ 19 * t ^ 13 * 179200 +
+                                          z ^ 19 * t ^ 14 * 68608 +
+                                        z ^ 19 * t ^ 15 * 13312 +
+                                      z ^ 19 * t ^ 16 * 1024 +
+                                    t * 1024 -
+                                  t ^ 2 * 11264 +
+                                t ^ 3 * 19456 +
+                              t ^ 4 * 48128 -
+                            t ^ 5 * 84992 -
+                          t ^ 6 * 97280 +
+                        t ^ 7 * 72704 +
+                      t ^ 8 * 68608 +
+                    t ^ 9 * 68608 +
+                  t ^ 10 * 64512 -
+                t ^ 11 * 105472 -
+              t ^ 12 * 117760 +
+            t ^ 13 * 15360 +
+          t ^ 14 * 44032 +
+        t ^ 15 * 13312 +
+      t ^ 16 * 1024
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+${LOCAL_RAW}/stratonovich-middle-cross-lean-dev-01/src/StratonovichHAMAudit/MiddleCross.lean:86:76: error: unsolved goals
+b c d e : ℝ
+hb : 1 ≤ b
+hc : 1 ≤ c
+hd : 0 < d
+he : 0 < e
+hb0 : 0 < b
+hc0 : 0 < c
+hbc : 0 < b + c - 1
+h2bc : 0 < 2 * b + 2 * c - 1
+hbe : 0 < b + c + e
+hbd : 0 < b + c + d
+hb1d : 0 < b + d + 1
+hb1e : 0 < b + e + 1
+hb1 : 0 < b + 1
+h2b1 : 0 < 2 * b + 1
+hc1 : 0 < c + 1
+hde : 0 < d + e
+⊢ ⋯ + ⋯ + ⋯ * 4 + ⋯ * ⋯ * 20 + ⋯ * d ^ 3 * ⋯⁻¹ * 24 + c ^ 3 * e ^ 3 * d ^ 4 * (⋯ + c * 2)⁻¹ * 8 +
+                                                                                              c ^ 3 * e ^ 4 * d *
+                                                                                                  (-1 + b * 2 +
+                                                                                                      c * 2)⁻¹ *
+                                                                                                4 +
+                                                                                            c ^ 3 * e ^ 4 * d ^ 2 *
+                                                                                                (-1 + b * 2 + c * 2)⁻¹ *
+                                                                                              12 +
+                                                                                          c ^ 3 * e ^ 4 * d ^ 3 *
+                                                                                              (-1 + b * 2 + c * 2)⁻¹ *
+                                                                                            8 -
+                                                                                        c ^ 3 * d * 8 -
+                                                                                      c ^ 3 * d ^ 2 * 8 -
+                                                                                    c ^ 3 * d ^ 3 * 8 +
+                                                                                  c ^ 4 * e * d ^ 2 *
+                                                                                      (-1 + b * 2 + c * 2)⁻¹ *
+                                                                                    4 +
+                                                                                c ^ 4 * e * d ^ 3 *
+                                                                                    (-1 + b * 2 + c * 2)⁻¹ *
+                                                                                  12 +
+                                                                              c ^ 4 * e * d ^ 4 *
+                                                                                  (-1 + b * 2 + c * 2)⁻¹ *
+                                                                                8 +
+                                                                            c ^ 4 * e ^ 2 * d * (-1 + b * 2 + c * 2)⁻¹ *
+                                                                              4 +
+                                                                          c ^ 4 * e ^ 2 * d ^ 2 *
+                                                                              (-1 + b * 2 + c * 2)⁻¹ *
+                                                                            24 +
+                                                                        c ^ 4 * e ^ 2 * d ^ 3 * (-1 + b * 2 + c * 2)⁻¹ *
+                                                                          28 +
+                                                                      c ^ 4 * e ^ 2 * d ^ 4 * (-1 + b * 2 + c * 2)⁻¹ *
+                                                                        8 +
+                                                                    c ^ 4 * e ^ 3 * d * (-1 + b * 2 + c * 2)⁻¹ * 12 +
+                                                                  c ^ 4 * e ^ 3 * d ^ 2 * (-1 + b * 2 + c * 2)⁻¹ * 28 +
+                                                                c ^ 4 * e ^ 3 * d ^ 3 * (-1 + b * 2 + c * 2)⁻¹ * 16 +
+                                                              c ^ 4 * e ^ 4 * d * (-1 + b * 2 + c * 2)⁻¹ * 8 +
+                                                            c ^ 4 * e ^ 4 * d ^ 2 * (-1 + b * 2 + c * 2)⁻¹ * 8 +
+                                                          c ^ 5 * e * d ^ 2 * (-1 + b * 2 + c * 2)⁻¹ * 8 +
+                                                        c ^ 5 * e * d ^ 3 * (-1 + b * 2 + c * 2)⁻¹ * 8 +
+                                                      c ^ 5 * e ^ 2 * d * (-1 + b * 2 + c * 2)⁻¹ * 8 +
+                                                    c ^ 5 * e ^ 2 * d ^ 2 * (-1 + b * 2 + c * 2)⁻¹ * 16 +
+                                                  c ^ 5 * e ^ 2 * d ^ 3 * (-1 + b * 2 + c * 2)⁻¹ * 8 +
+                                                c ^ 5 * e ^ 3 * d * (-1 + b * 2 + c * 2)⁻¹ * 8 +
+                                              c ^ 5 * e ^ 3 * d ^ 2 * (-1 + b * 2 + c * 2)⁻¹ * 8 +
+                                            e * 8 +
+                                          e * d * 16 +
+                                        e * d ^ 2 * 16 +
+                                      e * d ^ 3 * 16 +
+                                    e * d ^ 4 * 8 +
+                                  e ^ 2 * 8 +
+                                e ^ 2 * d * 8 +
+                              e ^ 2 * d ^ 2 * 8 +
+                            e ^ 2 * d ^ 3 * 8 +
+                          e ^ 2 * d ^ 3 * (-1 + b * 2 + c * 2)⁻¹ * 4 +
+                        e ^ 2 * d ^ 4 * (-1 + b * 2 + c * 2)⁻¹ * 4 +
+                      e ^ 3 * d ^ 2 * (-1 + b * 2 + c * 2)⁻¹ * 4 +
+                    e ^ 3 * d ^ 3 * (-1 + b * 2 + c * 2)⁻¹ * 8 +
+                  e ^ 3 * d ^ 4 * (-1 + b * 2 + c * 2)⁻¹ * 4 +
+                e ^ 4 * d ^ 2 * (-1 + b * 2 + c * 2)⁻¹ * 4 +
+              e ^ 4 * d ^ 3 * (-1 + b * 2 + c * 2)⁻¹ * 4 +
+            d * 8 +
+          d ^ 2 * 8 +
+        d ^ 3 * 8 +
+      d ^ 4 * 8 =
+    ⋯ + ⋯ - ⋯ * 8 - ⋯ * ⋯ * 8 - c ^ 3 * d ^ 3 * ⋯⁻¹ * 8 - c ^ 3 * d ^ 4 * (⋯ + c * 2)⁻¹ * 16 +
+                                                                                              c ^ 3 *
+                                                                                                  (-1 + b * 2 +
+                                                                                                      c * 2)⁻¹ *
+                                                                                                8 -
+                                                                                            c ^ 4 * e * d *
+                                                                                                (-1 + b * 2 + c * 2)⁻¹ *
+                                                                                              16 -
+                                                                                          c ^ 4 * e * d ^ 2 *
+                                                                                              (-1 + b * 2 + c * 2)⁻¹ *
+                                                                                            12 +
+                                                                                        c ^ 4 * e * d ^ 3 *
+                                                                                            (-1 + b * 2 + c * 2)⁻¹ *
+                                                                                          12 +
+                                                                                      c ^ 4 * e * d ^ 4 *
+                                                                                          (-1 + b * 2 + c * 2)⁻¹ *
+                                                                                        8 -
+                                                                                    c ^ 4 * e * (-1 + b * 2 + c * 2)⁻¹ *
+                                                                                      16 +
+                                                                                  c ^ 4 * e ^ 2 * d *
+                                                                                      (-1 + b * 2 + c * 2)⁻¹ *
+                                                                                    4 +
+                                                                                c ^ 4 * e ^ 2 * d ^ 2 *
+                                                                                    (-1 + b * 2 + c * 2)⁻¹ *
+                                                                                  24 +
+                                                                              c ^ 4 * e ^ 2 * d ^ 3 *
+                                                                                  (-1 + b * 2 + c * 2)⁻¹ *
+                                                                                28 +
+                                                                            c ^ 4 * e ^ 2 * d ^ 4 *
+                                                                                (-1 + b * 2 + c * 2)⁻¹ *
+                                                                              8 +
+                                                                          c ^ 4 * e ^ 3 * d * (-1 + b * 2 + c * 2)⁻¹ *
+                                                                            12 +
+                                                                        c ^ 4 * e ^ 3 * d ^ 2 * (-1 + b * 2 + c * 2)⁻¹ *
+                                                                          28 +
+                                                                      c ^ 4 * e ^ 3 * d ^ 3 * (-1 + b * 2 + c * 2)⁻¹ *
+                                                                        16 +
+                                                                    c ^ 4 * e ^ 4 * d * (-1 + b * 2 + c * 2)⁻¹ * 8 +
+                                                                  c ^ 4 * e ^ 4 * d ^ 2 * (-1 + b * 2 + c * 2)⁻¹ * 8 -
+                                                                c ^ 4 * d * (-1 + b * 2 + c * 2)⁻¹ * 16 -
+                                                              c ^ 4 * d ^ 2 * (-1 + b * 2 + c * 2)⁻¹ * 16 -
+                                                            c ^ 4 * d ^ 3 * (-1 + b * 2 + c * 2)⁻¹ * 16 -
+                                                          c ^ 4 * (-1 + b * 2 + c * 2)⁻¹ * 16 +
+                                                        c ^ 5 * e * d ^ 2 * (-1 + b * 2 + c * 2)⁻¹ * 8 +
+                                                      c ^ 5 * e * d ^ 3 * (-1 + b * 2 + c * 2)⁻¹ * 8 +
+                                                    c ^ 5 * e ^ 2 * d * (-1 + b * 2 + c * 2)⁻¹ * 8 +
+                                                  c ^ 5 * e ^ 2 * d ^ 2 * (-1 + b * 2 + c * 2)⁻¹ * 16 +
+                                                c ^ 5 * e ^ 2 * d ^ 3 * (-1 + b * 2 + c * 2)⁻¹ * 8 +
+                                              c ^ 5 * e ^ 3 * d * (-1 + b * 2 + c * 2)⁻¹ * 8 +
+                                            c ^ 5 * e ^ 3 * d ^ 2 * (-1 + b * 2 + c * 2)⁻¹ * 8 -
+                                          e * d * (-1 + b * 2 + c * 2)⁻¹ * 16 -
+                                        e * d ^ 2 * (-1 + b * 2 + c * 2)⁻¹ * 16 -
+                                      e * d ^ 3 * (-1 + b * 2 + c * 2)⁻¹ * 16 -
+                                    e * d ^ 4 * (-1 + b * 2 + c * 2)⁻¹ * 8 -
+                                  e * (-1 + b * 2 + c * 2)⁻¹ * 8 -
+                                e ^ 2 * d * (-1 + b * 2 + c * 2)⁻¹ * 8 -
+                              e ^ 2 * d ^ 2 * (-1 + b * 2 + c * 2)⁻¹ * 8 -
+                            e ^ 2 * d ^ 3 * (-1 + b * 2 + c * 2)⁻¹ * 4 +
+                          e ^ 2 * d ^ 4 * (-1 + b * 2 + c * 2)⁻¹ * 4 -
+                        e ^ 2 * (-1 + b * 2 + c * 2)⁻¹ * 8 +
+                      e ^ 3 * d ^ 2 * (-1 + b * 2 + c * 2)⁻¹ * 4 +
+                    e ^ 3 * d ^ 3 * (-1 + b * 2 + c * 2)⁻¹ * 8 +
+                  e ^ 3 * d ^ 4 * (-1 + b * 2 + c * 2)⁻¹ * 4 +
+                e ^ 4 * d ^ 2 * (-1 + b * 2 + c * 2)⁻¹ * 4 +
+              e ^ 4 * d ^ 3 * (-1 + b * 2 + c * 2)⁻¹ * 4 -
+            d * (-1 + b * 2 + c * 2)⁻¹ * 8 -
+          d ^ 2 * (-1 + b * 2 + c * 2)⁻¹ * 8 -
+        d ^ 3 * (-1 + b * 2 + c * 2)⁻¹ * 8 -
+      d ^ 4 * (-1 + b * 2 + c * 2)⁻¹ * 8
