@@ -1,5 +1,6 @@
 """Freeze the terminal/modular revision; byte checks are not proof checks."""
 from pathlib import Path
+import argparse
 import gzip
 import hashlib
 import json
@@ -11,6 +12,9 @@ ROOT = Path(__file__).resolve().parents[2]
 ROUND = Path(__file__).resolve().parent
 OLD = ROOT / "reviews/2026-10-28-cold-core-expansion/packet-v1"
 PACKET = ROUND / "packet-v1"
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument("--build-log", required=True, type=Path)
+args = parser.parse_args()
 
 
 def digest(data):
@@ -143,8 +147,7 @@ dump(ROUND / "manifest-v1.json", {
     p.relative_to(PACKET).as_posix(): digest(p.read_bytes())
     for p in sorted(PACKET.rglob("*")) if p.is_file()
 })
-build = Path("<HOME>/.local/state/tmp/stratonovich-terminal-modular-build.txt")
-(ROUND / "build-driver.txt.gz").write_bytes(gzip.compress(build.read_bytes(), mtime=0))
+(ROUND / "build-driver.txt.gz").write_bytes(gzip.compress(args.build_log.read_bytes(), mtime=0))
 print(json.dumps({"pages": 82, "proofs": 45, "required_texts": len(texts),
                   "required_images": len(images), "new_proofs": change["new_proofs"],
                   "changed_existing_proofs": change["changed_existing_proofs"]}, indent=2))

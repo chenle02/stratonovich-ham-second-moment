@@ -2216,3 +2216,43 @@ reports remain NOT CLEAR for their reviewed revisions.
 This is intra-round repair, not round close. The canonical wiki is not
 updated by this local checkpoint; its publication/provenance debt remains
 open. No sharp constant, Lean creation, novelty or circulation clearance.
+
+### Terminal/modular primary returned: fifteen PASS at HIGH
+
+Fresh native Opus5.5/HIGH reviewed source65b134243de4ea91cdd4c8e1ca6315975c26979c
+in636.876s. PASS_WITH_NOTES/HIGH,all15checksPASS,no fatal/major findings or
+required repairs;accepted=true. Actual model/first-party route,all15required
+texts/all14images,unchanged candidate hashes,and HEAD held through terminal
+collection were independently verified. Full report,ledger and exact binding
+are retained in terminal-modular/. All94native/dry-run members were archived
+and read-back hash verified before own terminal raw cleanup.
+
+Six minor findings adjudicated individually in adjudication-v1.md:
+the redundant P:mixed pointer is replaced by L:terminal-wick;the standard
+Bochner/pathwise identification is written;the source's known mild-solution
+identification is explicitly retained without claiming uniqueness or a new
+mild-equation proof;T>=1 is deliberately retained for the asymptotic goal;
+coefficient spaces/common constants are clarified;the unused upper comparison
+for K_infinity is marked as context. No hypothesis,formal theorem statement,
+target exponent,local weight,factorial or covariance scope is changed.
+The new helper proofs remain unchanged;final binding enumerates the two
+minor-clarified existing proof bodies. All source/AI limitations remain.
+
+This accepts the new terminal/modular deduction at the scoped correctness
+gate. It does NOT clear either earlier cold report,certify alternative
+candidate sections,prove novelty/sharp constants,authorize Lean creation,
+or grant circulation. A provisional80page blind copy preserves all45proofs
+and all formal statements;it must be regenerated from final minor-clarification
+bytes before dispatch. Fresh separate DeepSeek V4-Pro route/read probe passed
+with no external instructions;that probe is not a scientific review.
+Full original goal ACTIVE. Next:final source binding,clean build,then a fresh
+prior-blind whole-paper cold read with the canonical free-form prompt.
+
+Final minor-clarification build:82pages,45proofs,0errors/undefined/overfull/tabs;
+actual formatter idempotent. Every formal statement including remarks and
+all three new helper proofs are byte-equal to reviewed source.43of45proofs
+byte-equal;the other two are exactly the adjudicated coefficient typography/
+constant naming and main-proof standard identification/dependency clarifications.
+No theorem extension or uniqueness claim is adopted. Exact final source/PDF
+hashes in terminal-modular/final-status-binding.json. The PRIVATE wiki proposal
+is reconciled to this result;canonical publication/provenance remains open.

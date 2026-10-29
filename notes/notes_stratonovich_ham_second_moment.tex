@@ -4629,10 +4629,11 @@ for that evolution.
 \section{Interval fields and the full upper bound}
 \label{S:interval-upper}
 
-\myCmts{The preceding expanded deduction passed scoped correctness review,
-but a second cold read requested explicit terminal kernels and a modular
-coefficient assembly. The new lemmas and revised proof below are pending
-fresh review. Whole-paper cold clearance and the sharp constant remain open.}
+\myCmts{A second cold read requested explicit terminal kernels and a modular
+coefficient assembly. The revised deduction and its three helper lemmas
+passed a fresh scoped correctness review at high confidence, with all
+fifteen checks passed. Whole-paper cold clearance and the sharp constant
+remain open.}
 
 Write
 \[
@@ -5156,14 +5157,14 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
   Hermite-degree limit in this coefficient calculation.
 
   For the uniform coefficient estimate put $\lambda=k/T$.
-  Apply Lemma~\ref{L:fixed-split} to each selected coefficient,retaining
+  Apply Lemma~\ref{L:fixed-split} to each selected coefficient, retaining
   the original sorted interval labels in the final sum.
   Its factor $\ell_i$ is one for a singleton mean and at most two for
   every higher color. The separate cross factor applies only at
   $(r_i,q_i)=(1,1)$.
-  Absorb $k^2\le4^k$,the finite split count,and $c^k$ into $C^k$.
+  Absorb $k^2C_{\rm split}^k3^kc^k$ into $C^k$, using $k^2\le4^k$.
   After $\sigma_i^2\le c h_i^{-\alpha_0}$, the resulting local weights,
-  with a common per-total-order constant understood, are
+  with this common per-total-order constant understood, are
   \[
     \begin{array}{c|c}
       \text{case}&\text{weight in energy}\\ \hline
@@ -5437,7 +5438,7 @@ on the empty tuple. This definition introduces no kernel symmetrization.
     \le6^{\alpha_0}\sum_{\text{three grids},\,|I|\le H_0}
     |I|^{-\alpha_0}\mathbf1_I(s)\mathbf1_I(r)=:K_\infty(s,r).
   \end{equation}
-  The sum is at most $C_{\alpha_0}|s-r|^{-\alpha_0}$ off the diagonal:
+  For context, the sum is at most $C_{\alpha_0}|s-r|^{-\alpha_0}$ off the diagonal:
   only lengths at least $|s-r|$ contribute, with at most one interval
   per grid and length. Endpoint values do not affect the time integrals.
 
@@ -5515,8 +5516,15 @@ on the empty tuple. This definition introduces no kernel symmetrization.
   At fixed positive $\epsilon,\delta$, first take the source's Green-width
   limit. The bounded continuous covariances, weak convergence of the
   positive Green measures and the dominated finite Wick calculation in
-  the proof of Proposition~\ref{P:mixed} identify its classical
-  measure-kernel Duhamel terms.
+  Lemma~\ref{L:terminal-wick} identify its classical measure-kernel
+  Duhamel terms. For the source's continuous field modification, these
+  Bochner terms equal the pathwise smoothed integrals: writing $\Phi_n$
+  for the product of field values, the Gaussian bound in that lemma gives
+  $\int\|\Phi_n\|_2\ud\mathsf g_n^{T,x}<\infty$.
+  Tonelli gives pathwise integrability and Minkowski puts the integral
+  in $L^2$. Fubini against every $L^2$ test variable and Bochner duality
+  identify the two versions. The same argument applies before the
+  Green-width limit in dimension three.
 
   Write $U_N^{\epsilon,\delta}$ for the sum of source terms of orders
   $0,\ldots,N$ after that Green limit. Write $V_{N,J}^\epsilon$ for the
@@ -5574,7 +5582,13 @@ on the empty tuple. This definition introduces no kernel symmetrization.
   Proposition~\ref{P:mixed}, Lemma~\ref{L:crude-corrected}, and the
   source's Section~5 convergence proof. No first-moment asymptotic or
   printed normalization is used. The only imported analytic construction
-  input here is the fixed-order statement just cited.
+  input for this moment estimate and its series-limit passage is the
+  fixed-order statement just cited.
+  The identification of the series~\eqref{E:expansion} with a mild
+  solution in the source's Definition~2.1 is the known result
+  \cite{chen:author2026:time-dependency}*{Theorem~1.1(1), pp.~2--3;
+  Section~5, part (ii), pp.~35--37}. We retain that model identification; we do not
+  claim a new proof of the mild equation or of uniqueness.
 
   Mode and spatial-band limits in the interval phase bound were taken
   at fixed finite inventory and positive smoothing. Local Hermite cutoffs
@@ -5615,7 +5629,8 @@ on the empty tuple. This definition introduces no kernel symmetrization.
 
 \myCmts{Theorem~\ref{T:full-upper} establishes the unchanged full upper
 goal for every admissible dimension and homogeneous covariance.
-The terminal-kernel and series-tail revision awaits fresh independent review.
+The terminal-kernel and series-tail revision passed scoped independent
+correctness review. A fresh whole-paper cold read remains due.
 The earlier explicit bounds for $0<\alpha\le1$ remain available.
 The sharp constant and final whole-paper cold read remain open.}
 
