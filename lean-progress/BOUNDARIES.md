@@ -14,4 +14,7 @@ Paper sigma is volume restricted to positive lambda,not the spatial spectral
 measure. Analytic w_theta positivity/integrability,K/J representations,
 Brownian/spatial smoothing and SPDE identification remain outsideLean. No
 all-order,sharp-asymptotic or full-model conclusion follows from this pilot.
-Types compile with standard axioms;independent application check pending.
+Types compile with standard axioms;independent exact-type/application check
+passed4checks/HIGH. The concrete measure facts remain hand-checked,not Lean
+instantiated. Extend w_theta by zero offpositive lambda;its measurability and
+integrability against the restricted measure remain explicit analytic inputs.

@@ -1,0 +1,259 @@
+{
+  "schema": "le-ai-lab.review-read-ledger/1",
+  "coverage_verified": true,
+  "claude_code_version": "2.1.304",
+  "events_sha256": "cf84e327bfd8ec544411d8c2ab5f0ac4fb3b427db35a36c5d9ebfa39caa1f15f",
+  "events_hash_bound_to_receipt": true,
+  "stream_workspace": "<HOME>/.local/state/Le-AI-Lab/stratonovich-lean-filter-correspondence-v3/workspace",
+  "required_sources_sha256": null,
+  "continuation": false,
+  "continuation_credit": null,
+  "proves": "Each credited line was returned, numbered and byte-equal to the frozen workspace file, in a tool_result paired with a Read or line-numbered content-mode Grep call of the hash-bound provider stream.",
+  "does_not_prove": "Attention, understanding, or retention: a credited line may have been skimmed, ignored, or dropped by context compaction before the report was written. Uncredited lines may still have been seen in a form the ledger cannot attribute (previews, unnumbered output, subagents).",
+  "sources": [
+    {
+      "path": "Audit.lean",
+      "sha256": "28ebb67d34ed899231f3d67b2b1aeefab4ec2db0a957d8a26faeb52beba5a137",
+      "total_lines": 12,
+      "required_ranges": [
+        [
+          1,
+          12
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          12
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "ClockFilter.lean",
+      "sha256": "0e501b255a23661c3c75d2dc98e08390c6ba4324a73537367f0c07aac6843d38",
+      "total_lines": 64,
+      "required_ranges": [
+        [
+          1,
+          64
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          64
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "STATEMENT-FENCE.md",
+      "sha256": "99f974265a602df4cf8d95c9625c243db349af5c615b25b5e6fe30b72f077ea5",
+      "total_lines": 54,
+      "required_ranges": [
+        [
+          1,
+          54
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          54
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "correspondence.md",
+      "sha256": "e517d7938f435d7cb493bd7dd14e94776867d6d76f7c4afcec399c375b11b052",
+      "total_lines": 26,
+      "required_ranges": [
+        [
+          1,
+          26
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          26
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "local-receipt.json",
+      "sha256": "e7261eea55ba398c6061042709b3b5a9225f94c587cabd76b3e64042c3c19a07",
+      "total_lines": 89,
+      "required_ranges": [
+        [
+          1,
+          89
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          89
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "paper-clock.txt",
+      "sha256": "05fca345e80a9759a64c1954f3946695f4fa6da4070aba7cb0de3668f1f73afb",
+      "total_lines": 346,
+      "required_ranges": [
+        [
+          1,
+          346
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          346
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "types-and-axioms.txt",
+      "sha256": "04542062e6ed71f52d458173c9f0b8ba3f10118d7d1c90a8a944d7bd5da77a59",
+      "total_lines": 173,
+      "required_ranges": [
+        [
+          1,
+          173
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          173
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    }
+  ],
+  "tool_calls": [
+    {
+      "id": "toolu_01MHpmpumXNxpVzHd3SZvHoX",
+      "tool": "Read",
+      "source": ".review/required-sources.json",
+      "plan_copy_read": [
+        ".review/required-sources.json"
+      ],
+      "uncredited": "runner-owned plan copy (.review/): never read credit",
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_016DfS3dyAdWutU197jdasBH",
+      "tool": "Read",
+      "source": "ClockFilter.lean",
+      "credited": {
+        "ClockFilter.lean": [
+          [
+            1,
+            64
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01K5FeALrvGA18ae3MYX1zum",
+      "tool": "Read",
+      "source": "STATEMENT-FENCE.md",
+      "credited": {
+        "STATEMENT-FENCE.md": [
+          [
+            1,
+            54
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01Cv1u7WWBYEnYmmG7oiiZDw",
+      "tool": "Read",
+      "source": "types-and-axioms.txt",
+      "credited": {
+        "types-and-axioms.txt": [
+          [
+            1,
+            173
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01CjMECvukjsYosqzVPoNfcZ",
+      "tool": "Read",
+      "source": "Audit.lean",
+      "credited": {
+        "Audit.lean": [
+          [
+            1,
+            12
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_011bGcoZZGfgbAnwHDRTAXah",
+      "tool": "Read",
+      "source": "correspondence.md",
+      "credited": {
+        "correspondence.md": [
+          [
+            1,
+            26
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01MtfhY6deQKZXr3qp8fVzud",
+      "tool": "Read",
+      "source": "paper-clock.txt",
+      "credited": {
+        "paper-clock.txt": [
+          [
+            1,
+            346
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01VRG4k9nBPM7roRj5idDWzc",
+      "tool": "Read",
+      "source": "local-receipt.json",
+      "credited": {
+        "local-receipt.json": [
+          [
+            1,
+            89
+          ]
+        ]
+      },
+      "stream": "attempt"
+    }
+  ],
+  "diagnostics": []
+}

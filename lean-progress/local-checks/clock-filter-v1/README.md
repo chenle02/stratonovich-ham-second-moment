@@ -20,4 +20,6 @@ local execution records remain outside the committed portable evidence.
 No dependency source or compiled dependency artifact is changed. This is
 local verification,not an official package trust gate or Comparator replay.
 The mathematical model's representation and density hypotheses remain outside
-Lean. Independent exact-type/application correspondence is pending.
+Lean. Independent exact-type/application correspondence passed all four checks
+at HIGH (112.922s). See correspondence-adjudication.md for remaining explicit
+analytic and concrete-measure obligations.

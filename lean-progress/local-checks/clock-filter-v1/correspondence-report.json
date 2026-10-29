@@ -1,0 +1,56 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    ".review/required-sources.json lines 1-23 (read plan; not a packet file, no read credit claimed)",
+    "Audit.lean lines 1-12 (complete)",
+    "ClockFilter.lean lines 1-64 (complete)",
+    "STATEMENT-FENCE.md lines 1-54 (complete)",
+    "correspondence.md lines 1-26 (complete)",
+    "local-receipt.json lines 1-89 (complete)",
+    "paper-clock.txt lines 1-346 (complete)",
+    "types-and-axioms.txt lines 1-173 (complete)"
+  ],
+  "checks": [
+    {
+      "claim": "C1: The three public Lean types state exactly the frozen statements in STATEMENT-FENCE.md (binders, premises, positive parameters, strict conclusion, nonzero arbitrary measure, derived filtered integrability, no finite-measure premise, no assumed target inequality, no vacuity loophole).",
+      "verdict": "PASS",
+      "reason": "resolvent_partial_fraction: binders \u03b8 ell r : \u211d, premises 0<\u03b8 and 0<ell, and conclusion (2\u03b8+ell)/((2\u03b8)(\u03b8\u00b2+r\u00b2)((\u03b8+ell)\u00b2+r\u00b2)) = (1/(\u03b8\u00b2+r\u00b2) \u2212 1/((\u03b8+ell)\u00b2+r\u00b2))/((2\u03b8)\u00b7ell). The source and the printed explicit type (types-and-axioms.txt lines 1-55) agree, and this matches fence (1). I checked the identity by hand: 1/A \u2212 1/B = (B\u2212A)/(AB) and B\u2212A = ell(2\u03b8+ell). The premise ell>0 is needed, because at ell=0 Lean's x/0=0 would make the right side 0. clock_filter_bounds: printed type lines 56-76 give 0 < 2\u03b8/(2\u03b8+ell) \u2227 2\u03b8/(2\u03b8+ell) < 1 under \u03b8>0 and ell>0, matching fence (2). strict_filter_integral: printed type lines 77-164 quantify \u03b8 with 0<\u03b8, \u03c3 : Measure \u211d over Real.measurableSpace (Borel), \u03c3 \u2260 0, \u2200\u1d50 ell \u2202\u03c3, 0<ell, w : \u211d\u2192\u211d, Integrable w \u03c3, and \u2200\u1d50 ell \u2202\u03c3, 0 < w ell. There is no IsFiniteMeasure, SigmaFinite or other instance argument; the only elided \u22ef terms are internal instance/AtLeastTwo proofs. The conclusion is Integrable (filter\u00b7w) \u03c3 \u2227 \u222b filter\u00b7w \u2202\u03c3 < \u222b w \u2202\u03c3, so filtered integrability is a conclusion. The proof derives it through Integrable.mono_nonneg from a.e. measurability, nonnegativity and the a.e. bound f \u2264 w. The strict inequality is not an input. Strictness comes from integral_eq_iff_of_ae_le together with ae_neBot (\u03c3 \u2260 0) and the a.e.-strict pointwise bound, which is the right mechanism. The premises can all hold together (for example, \u03c3 = volume restricted to (0,\u221e) and w(x) = e^{-x}), so the theorem is not vacuous. Both integrals are genuine Bochner integrals of integrable functions, so no junk-value loophole exists. Points where ell \u2264 0 or 2\u03b8+ell = 0 lie in a \u03c3-null set by hypothesis."
+    },
+    {
+      "claim": "C2: The application in correspondence.md matches paper-clock.txt: sigma is Lebesgue measure restricted to positive \u03bb (not spectral \u03bc), the infinite-measure generic theorem applies, w positivity/integrability and the K/J1 representations are left as analytic obligations, and every half factor and resolvent denominator corresponds.",
+      "verdict": "PASS",
+      "reason": "correspondence.md lines 13-20 take \u03c3 = volume restricted to (0,\u221e) and say explicitly that no spatial spectral measure is substituted. That measure is nonzero (infinite mass), concentrated a.e. on \u03bb>0, and admissible because the Lean type has no finiteness premise. Positivity and integrability of w_\u03b8 (paper lines 211-217) and the representations K_\u0393 = \u222bw_\u03b8 and J_{\u0393,1} = \u222b (2\u03b8/(2\u03b8+\u03bb)) w_\u03b8 are listed as external inputs, and the conclusion is stated as conditional (line 19); nothing is claimed as Lean-certified. Factor checks by hand: (i) Per-frequency kernel (paper line 181) is (2\u03b8+\u03bb)/(2\u03b8(\u03b8\u00b2+r\u00b2)((\u03b8+\u03bb)\u00b2+r\u00b2)), the Lean left side with r = |\u03be|. As a sanity check at r\u21920, the direct computation gives (2\u03b8+\u03bb)/(2\u03b8\u00b3(\u03b8+\u03bb)\u00b2), consistent. (ii) Applying the Lean identity: \u03bb^{a-1}(2\u03b8+\u03bb)/(2\u03b8AB) = \u03bb^{a-2}(1/A \u2212 1/B)/(2\u03b8). Integrating against \u03bc and dividing by \u0393(a) gives exactly w_\u03b8 = \u03bb^{a-2}(R(\u03b8) \u2212 R(\u03b8+\u03bb))/(2\u03b8\u0393(a)) in (E:cross-clock-lambda-weight). (iii) For J_{\u0393,1}, with \u03c1=1 we have v_1 = |q|, so the exponent is \u2212A|q| with A = \u03b8\u03bb + \u03bb\u00b2/2 = \u03bb(2\u03b8+\u03bb)/2. The constants are (1/4)\u00b7(Jacobian 1/2)\u00b7(\u222b_{-w}^{w} e^{-A|q|} dq = 2(1\u2212e^{-Aw})/A) = 1/(4\u0393(a))\u00b7(\u03bb^{a-1}/A)\u00b7\u222b\u2026, matching paper line 250. Also e^{-\u03b8\u00b2w/2}e^{-Aw} = e^{-(\u03b8+\u03bb)\u00b2w/2}. (iv) R(q) = (1/2)\u222be^{-q\u00b2w/2}h(w)dw holds because (1/2)\u00b72/(q\u00b2+|\u03be|\u00b2) = 1/(q\u00b2+|\u03be|\u00b2). The inner integral is then 2\u0394R, so J = (1/\u0393(a))\u222b\u03bb^{a-2}\u0394R/(2\u03b8+\u03bb) = \u222b(2\u03b8/(2\u03b8+\u03bb))w_\u03b8, which is the Lean filter applied to w. (v) The \u03b1=1 densities and J/K = 2(1\u22122^{a-1}) = 2\u22122^a are also consistent by hand. The correspondence correctly does not claim them as Lean-certified."
+    },
+    {
+      "claim": "C3: The proof source has no custom axioms, sorry, unsafe code or altered statements; the transitive axioms are exactly propext, Classical.choice, Quot.sound; the receipt's evidence claims are honest and scoped.",
+      "verdict": "PASS",
+      "reason": "ClockFilter.lean (64 lines) has no axiom, sorry, admit, unsafe, implemented_by, extern, opaque or set_option that weakens checking. autoImplicit is false. The only local instance is an anonymous `let` for (ae \u03c3).NeBot, built from ae_neBot.2 h\u03c3, which is legitimate. All three statements in the source match the printed types. The printed #print axioms output (types-and-axioms.txt lines 165-173) lists exactly [propext, Classical.choice, Quot.sound] for all three theorems, consistent with audit_transitive_axioms in the receipt. The receipt's scope field explicitly excludes canonical lean-pkg, Comparator, full dependency rebuild and SPDE verification. It marks independent_type_application_review as PENDING, and it uses the pinned dependency cache rather than rebuilding Mathlib. These are honest, limited claims, and no new execution is credited here."
+    },
+    {
+      "claim": "C4: The kernel-checked scalar/integral steps let further review focus on analytic correspondence without implying that the fixed-a sharp constant or the full model is verified; no material statement mismatch or unprovided premise remains inside the stated scope.",
+      "verdict": "PASS",
+      "reason": "Two steps are formalized at the exact form the paper uses: the partial-fraction step (paper line 208) and the strict final comparison step (paper lines 266-267), including the integrability of the filtered density, which the paper leaves implicit. The remaining obligations are clearly analytic and external: (a) positivity and integrability of w_\u03b8 (and its measurability, with any extension to \u03bb \u2264 0 being irrelevant under \u03c3); (b) K_\u0393 = \u222bw_\u03b8, including the smoothing and monotone-convergence passage and spectral Fubini; (c) J_{\u0393,1} = \u222b(2\u03b8/(2\u03b8+\u03bb))w_\u03b8, including the \u03a8_a representation and the Tonelli steps; (d) J_{\u0393,\u03c1} \u2264 J_{\u0393,1} and J > 0; (e) the \u03b1=1 constant 2\u22122^a; (f) the normalization K_\u0393 = N_2\u00b2, whose definition is outside the packet. Both correspondence.md (lines 25-26) and the fence (lines 39-41) disclaim the full sharp constant and the SPDE. I found no material mismatch between the Lean statements and their paper use."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "No Lean lemma instantiates strict_filter_integral at \u03c3 = volume.restrict (Ioi 0). The facts that this \u03c3 is nonzero and a.e. positive are checked by hand in correspondence.md. They are elementary (volume (Ioi 0) = \u221e \u2260 0; ae_restrict_mem), but they are not kernel-checked in the packet.",
+      "The paper defines w_\u03b8 only for \u03bb>0, while the Lean w : \u211d \u2192 \u211d needs some total extension and AE-strong measurability with respect to \u03c3. correspondence.md does not name the extension or the measurability obligation explicitly. Measurability follows from continuity of w_\u03b8 on (0,\u221e), but it belongs in the stated list of analytic inputs.",
+      "The receipt reports negative controls (WrongNormalization, WrongFilter, ZeroMeasureStrict) only as one-line summaries ('unsolved False'). Their sources are not in the frozen packet, so their semantic content cannot be inspected. Likewise the source_sha256 and module hashes cannot be matched to ClockFilter.lean by reading alone.",
+      "The receipt's resources path refers to attempt-03. The fence requires preserving every failed attempt, but those earlier attempts are not part of this packet.",
+      "The Cli dependency shows build_root_exists=false. It is not imported by ClockFilter.lean, so it does not affect the result, but the receipt does not comment on it."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "Per the contract, I executed nothing. Compilation success, exit codes, hash equality and the claim that the printed types and axioms came from live compiled source rest on the receipt's attestation. Internally, the printed types agree exactly with the source text.",
+    "I took Mathlib lemma names and signatures at pin 56a005855\u2026 (Integrable.mono_nonneg, integral_eq_iff_of_ae_le, ae_neBot, integral_mono_ae) as given by the reported successful elaboration; I did not check them against the Mathlib source.",
+    "I checked half factors and resolvent denominators by hand within paper-clock.txt only. The definitions of N_2 (E:damped-norm-definitions), Hypothesis H:homog, Lemma L:damped-homogeneous-norms and the cited source Theorem 6.1/(6.3) are outside the packet and were not audited.",
+    "I could not tie source revision 86de3d8e\u2026 or the paper review revision e68310f to the packet bytes.",
+    "This is an AI correspondence and trust-boundary review, not human verification, a novelty audit, or verification of the full SPDE or the sharp constant."
+  ]
+}

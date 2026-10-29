@@ -16,7 +16,7 @@
   No companion L1 wave,lease or cluster job has been opened. Le separately
   authorized standalone local Lean verification on2026-10-29;the clock-filter
   pilot now has three elaborated statements and an owned-source replay.
-  Exact type/application review is pending;no official package gate is claimed.
+  Exact type/application review passed4checks/HIGH;no official package gate is claimed.
 
 ## Planned waves (strategy in ROADMAP.md)
 
@@ -59,5 +59,12 @@ Exact public types/standard-three axiom audit pass. Fresh owned-source replay
 passes;three false controls fail semantically. Two development failures are
 preserved. Analytic input is explicit and the measure need not be finite.
 Evidence:local-checks/clock-filter-v1/local-receipt.json. Independent exact-type/
-application correspondence pending. This pilot does not create the proposed
+application correspondence passed4checks/HIGH,source86de3d8,112.922s. This pilot does not create the proposed
 companion,claim a package gate or open a cluster job. L0 remains PROPOSED.
+
+Local clock-filter close:source unchanged after review;all three public types
+and standard-three axiom lists exact. Concrete positive-lambda measure facts
+are hand-checked,not instantiated inLean. Density total extension is zero
+outsidepositive lambda;measurability/integrability and K/J representations
+remain analytic inputs. See correspondence-adjudication.md for all five minor
+notes and both preflight failures. No new companion/package gate is claimed.
