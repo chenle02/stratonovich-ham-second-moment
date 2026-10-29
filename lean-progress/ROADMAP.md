@@ -70,3 +70,33 @@ Evidence: reviews/2026-10-28-product-endpoints/ in the manuscript repo
 ../reviews/2026-10-28-source-normalization/. Search exact reusable declarations
 locally at the selected pins before writing any proof. No Lean command was
 run and no private package was created by this strategy update.
+
+## Agent8coordination and exact reuse fences (2026-10-29)
+
+Le explicitly requested this coordination. Full map and source/hash receipts:
+coordination/2026-10-29-agent8/reuse-adjudication.md. Agent8owns its existing
+packages and gates;we own this read-only Stratonovich correspondence review.
+No package/lease/code/build/registry/cluster wave opened;L0/PROPOSED and
+PROJECT-GOAL decision4remain unchanged.
+
+1. Finite interval power budget can consume CoefficientConvolution.sum_rpow_le,
+   with kappa=2-alpha/2 and nonnegative active omega_i. The actual operator/
+   covariance hypotheses stay outside this scalar component.
+2. Positive-series type can reuse SWEExactMomentsR7Gamma.factorial_log_error_limit
+   for its factorial normalization step. Full root-limit reconstruction does
+   NOT prove the paper's limsup-only lemma,which also permits nu = 1 and K = 0.
+3. Static-parameter squeeze can consume GrowthRates.Envelope.envelope_limit:
+   right-neighborhood filter at0,constant index valuesC_p,error0,and the
+   exponential parameter envelope as v. The actual moment/coefficient/rate
+   hypotheses remain explicit;the generic theorem cannot supply them.
+4. Permutation matching sums cover cross-copy permutations,not all pair
+   partitions with self-pairs. No such full Stratonovich counting theorem
+   was identified in this bounded triage;registry/Mathlib absence is NOT proved.
+
+Pins:shared GrowthRates89f1ef67440aed605b91964d655fdbcf41e20d78;
+SWE preparationadf05d66e0d18b57e2007fb77c5e5cd96a237d36;
+coefficient gate sourced5fde7072d4a12b9ebd3a806dc8f009946c4da34,
+evidence successor bffd43297794d4e3d95490ea313092921cb92087.
+All use Lean4.35.0/Mathlib56a005855ea17e0b0958f73ec801ae140b0a1679.
+Historical SWE receipts bind e5e9558,not the preparation successor. Fresh
+source replay/consumer checks remain necessary if an execution wave opens.

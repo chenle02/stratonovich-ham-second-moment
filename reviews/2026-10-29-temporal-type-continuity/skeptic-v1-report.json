@@ -1,0 +1,89 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "temporal.txt lines 1-220 (complete)",
+    "prior-lower-inputs.txt lines 1-379 (complete)",
+    "construction-inputs.txt lines 1-898 and 899-1278 (complete, read in two consecutive ranges)",
+    "upper-inputs.txt lines 1-427 (complete)",
+    "project-goal.md lines 1-69 (complete)",
+    "change-binding.json lines 1-23 (complete)",
+    "source-map.md lines 1-31 (complete)",
+    "source-rendering.json lines 1-82 (complete)",
+    "calibration.py lines 1-60 (complete)",
+    "calibration.json lines 1-11 (complete)",
+    "rate-shape-screen.md lines 1-35 (complete)",
+    "rate-shape-screen.py lines 1-19 (complete)",
+    "rate-shape-screen.json lines 1-7 (complete)",
+    "chen-hu-2145-top.png (full image viewed)",
+    "chen-hu-2145-bottom.png (full image viewed)",
+    "chen-hu-2147.png (full image viewed)",
+    "chen-hu-2152.png (full image viewed)",
+    "chen-hu-2165.png (full image viewed)",
+    "static-2146-top.png (full image viewed)",
+    "static-2146-bottom.png (full image viewed)",
+    "static-2150-top.png (full image viewed)",
+    "static-2150-bottom.png (full image viewed)",
+    "static-2171-top.png (full image viewed)",
+    "static-2171-bottom.png (full image viewed)",
+    ".review/required-sources.json lines 1-108 (read plan; earns no read credit)",
+    "canonical.tex (optional context only): lines 74-111 (abstract) and 7223-7257 (Goals G:upper and G:sharp), plus a Grep for the abstract, the four-proof gate note and goal labels; not a whole-file read"
+  ],
+  "checks": [
+    {
+      "claim": "C1: Full coefficient assembly",
+      "verdict": "PASS",
+      "reason": "Recomputed. By Proposition P:mixed, E u^2 = sum over (m,n) of E[X_m X_n]. Odd totals vanish (Wick), so grouping by m+n=2k gives c_{2,k} = sum_{m=0}^{2k} E[X_m X_{2k-m}]. That is 2k+1 ordered splits, so (0,2k) and (2k,0) are separate terms; each equals m_k. For p=1, E[X_0 X_{2k}] = E X_{2k} = m_k, so the single split (0,2k) is correct. Lemma L:terminal-wick gives coefficient one per pair partition: the 2^k k! of the exponential is cancelled by pair orientations and orderings. The ordered terminal measure carries no n! or m!n! factor. The disjoint union over splits and pairings, with the self-pairs and cross-pairs of Pi_k, reproduces exactly this sum with weight one. At a fixed common width eps, gamma_{2eps} <= gamma_{2eps}(0) = integral of exp(-eps|xi|^2) mu(dxi) < infinity, using mu(B_r) = V r^alpha. The Green masses are gaps <= 1. The density in gap variables is therefore at most sup^k, and the change from gap to time variables has unit Jacobian. On [0,1]^{2k} the disjoint-pair factors integrate to (double integral of |s-r|^{-a})^k, which is finite because a<1. The measure is absolutely continuous, so the tie set {s_j=s_h} is null. The covariance gamma_{2eps} matches the static smoothing convention on source p.2152."
+    },
+    {
+      "claim": "C2: Raw Holder and regularization limits",
+      "verdict": "PASS",
+      "reason": "Since a = (1-theta)a_1 + theta a_2, the product of |s_j-s_h|^{-a} equals (product of |.|^{-a_1})^{1-theta} times (product of |.|^{-a_2})^theta off null ties. With a_1=0 the first factor is 1. Holder's inequality for the integral of f^{1-theta} g^theta against the finite positive disjoint-union measure gives the eps-level inequality on the whole union. For a positive endpoint a_i, the condition a_i < a_max <= 2-alpha means Lemma L:joint-fixed-order and (E:joint-temporal-tail) apply with alpha_0 replaced by a_i. Its F_{eps,0,D} uses the full raw factor |s|^{-a_i}, which is the complete Laplace integral, so no Gamma_E normalization enters. The sandwich F_{eps,eta} <= F_{eps,0} <= F_{eps,eta} + r(eta), uniform in eps, gives lim_eps F_{eps,0,D} = b_D for every split, including unequal and empty chains. At 0 the multiplier is 1, and Lemma L:spatial-wick-measures with phi=1 and null horizon faces gives the limit. The identification with E[X_m X_n] is P:mixed at positive exponents. At 0 it comes from the static fixed-order L^2 limits built in prior-lower-inputs, through product L^1 convergence (Cauchy-Schwarz) and chain reversal. Statement and proof are tersely worded on this point but complete through the reused interfaces. Finitely many terms and continuity of (x,y) -> x^{1-theta} y^theta on [0,infinity)^2 pass the inequality to the limit. No uniformity in a or T is used, and no Gamma_E(0), prefix interpolation, pointwise spatial monotonicity or PSD coupling appears."
+    },
+    {
+      "claim": "C3: Full moment series and homogeneity",
+      "verdict": "PASS",
+      "reason": "Recounted the scaling degree. Scaling times by c gives c^{2k} (2k time Jacobians). G_{cr}(c dz) = c G_r(dz) gives c^{2k} (2k Green factors, including the spatial Jacobians). gamma_b(cx) = c^{-alpha} gamma_{b/c^2}(x) over k pairs gives c^{-alpha k}. The raw time factors give c^{-ak}. Total degree (4-alpha-a)k = beta(a)k, matching rho_D(cA) = c^{(4-alpha)k} rho_D(A). The count depends only on the 2k total vertices, so it is the same for empty chains. The width becomes eps/c^2, and the limits are independent of width, so homogeneity passes to the limit. For a>0, P:mixed and (E:mean-positive-series) give both series. At a=0, the static norm summability from prior-lower-inputs gives U_N -> U in L^2. E U_N and E U_N^2 are finite sums of nonnegative mixed terms, increasing in N, so their limits regroup by total order 2k. Every z >= 0 equals t^{beta(a)} with beta(a) > 2, so F_{p,a}(z) is finite and c_0 = 1. The static object is the heat-limit expansion with the source's (2.10)-(2.14) kernels (p.2150, image checked). No uniqueness of mild solutions is invoked."
+    },
+    {
+      "claim": "C4: Actual growth types and log-convexity",
+      "verdict": "PASS",
+      "reason": "Rates are positive and finite. At 0, source (1.9) on p.2147 (image checked) gives the limit p^{(4-alpha)/(3-alpha)} times a common constant for E u^p, so C_p = p^{kappa_st} L_0. For a>0, Proposition P:static-minorant-lower gives liminf >= C_p > 0. Theorem T:full-upper at alpha_0 = a gives limsup <= C R_alpha^{1/nu} < infinity for p=2, and Cauchy-Schwarz with E u >= 1 handles p=1. Each a is normalized by its own kappa(a) = beta(a)/nu, with nu = 3-alpha fixed. Under z = T^{beta(a)}, z^{1/nu} = T^{kappa(a)}, so the series type equals the upper rate. I rechecked Lemma L:positive-series-type. It uses the bounds on log k! and the l^nu inequality, and gives tau = nu K^{1/nu}, a limsup with no root-limit assumption. Write x_k and y_k for the endpoint sequences ((k!)^nu c_{p,k}(a_i))^{1/k}. Then ((k!)^nu c_{p,k}(a))^{1/k} <= x_k^{1-theta} y_k^theta, and eventually x_k <= K_1+eta and y_k <= K_2+eta. This gives K(a) <= K_1^{1-theta} K_2^theta and handles zero or oscillating coefficients. Finally nu K(a)^{1/nu} <= (nu K_1^{1/nu})^{1-theta} (nu K_2^{1/nu})^theta, which is log-convexity of the rate itself. No exact coefficient root limit and no fixed-a time limit is inferred."
+    },
+    {
+      "claim": "C5: Interior continuity and static limit quantifiers",
+      "verdict": "PASS",
+      "reason": "Secant slopes s(u,v) of a convex f are nondecreasing in each argument. Hence s(L,l) <= s(L,y) <= s(x,y) <= s(x,R) <= s(r,R) when L < l <= x < y <= r < R, so f is Lipschitz on compact interior intervals and exp(f) is continuous. Only the upper rate is claimed log-convex or continuous. Envelope: Proposition P:moment-growth-logconvex with endpoints 0 and b and theta = a/b gives an upper rate at most C_p^{1-a/b} times (upper rate at b)^{a/b}, which equals C_p (upper rate at b / C_p)^{a/b}. The ratio is at least 1, since the upper rate at b is at least the lower rate at b, which is at least C_p. The ratio is finite for fixed b and covariance, so its a/b power tends to 1 as a decreases to 0. The squeeze gives both the time-liminf and the time-limsup rates tending to C_p. The ratio (liminf rate for p=2)/(limsup rate for p=1) tends to 2^{kappa_st} L_0 / L_0, with L_0 > 0. This is an iterated limit only: time asymptotics at each fixed a, then a decreasing to 0. Remark R:temporal-type-scope correctly disclaims uniform, simultaneous and fixed-positive-a time limits."
+    },
+    {
+      "claim": "C6: Source, class and original-target fidelity",
+      "verdict": "PASS",
+      "reason": "temporal.txt retains the fixed nonzero covariance of Hypothesis H:homog: d=1-3, 0<alpha<d or alpha=d=1, and the white endpoint (a_max = 1 when alpha = 1). No density or isotropy restriction appears. The source images confirm Thm 1.2 (1.9) for E u^p, p=1,2,..., under (1.8) with 0<alpha<2 and d, or alpha=d=1, and data (1,0). They also confirm (2.10)-(2.14) on p.2150, (2.18) on p.2152, Thm 3.8(i) on p.2165 and (1.6)/(1.8) on p.2146. Only the actual L_0 and the p^{kappa_st} structural factor are used. Cor 1.4 (1.12) on p.2147 and (4.3) on p.2171 are visible but not used quantitatively. Goal G:sharp is unchanged in canonical.tex at lines 7239-7251. The subsection note says three additional candidate proofs that do not inherit the four-proof gate. The abstract (lines 104-110) separates the reviewed near-static section from the new candidate subsection. No Skorohod, higher-p, E|u|, novelty or circulation claim appears. Byte-equality of the 55 prior proofs is asserted in change-binding.json, not verified here."
+    },
+    {
+      "claim": "C7: Falsification evidence and restricted scalar-shape obstruction",
+      "verdict": "PASS",
+      "reason": "Calibration: A1(a) = 2/((1-a)(2-a)(3-a)) equals 2c_0, matching Lemma L:white-test. Its log is a sum of convex terms -log(j-a), so the 30 Holder cases (3x2x5) are consistent. A1(0) = 1/3 = 1/6+1/12+1/12. I independently recomputed the static order-4 pure-mean coefficient: the three pairings give 1/2880, 1/5760 and 1/8640, with sum 11/17280, as in the script. The arithmetic 22+143+187 = 352 and 352/17280 = 11/540 also checks. The 96 atomic samples test Holder for positive atoms, which holds automatically, so they are diagnostics, not quadrature or proof, as stated. Scalar screen: nu=2 forces alpha=1 and kappa_st = 3/2. Coefficients x^{2k}/(k!)^2 and (8x)^k/(k!)^2 are log-affine in a, so Holder holds with equality. Types are 2 sqrt(A): the upper bound is exp(2 sqrt(Az)) by l^2, and the lower bound uses k = floor(sqrt(Az)) with log k! <= k log k - k + 1 + log k, giving log F >= 2 sqrt(Az) - O(log z). So Lambda1 = 2x and Lambda2 = 2 sqrt(8x), with matching liminf. The static minorant is coefficientwise at the same z = T^{3-a}, using x >= 1. Jensen holds since F1^2 has coefficients x^{2k} C(2k,k)/(k!)^2 with C(2k,k) <= 4^k, and 4x^2 <= 8x on [1,2]. The ratio sqrt(8/x) lies in [2, sqrt 8) for x in (1,2], and equals 2^{3/2} at x=1. This refutes only the scalar inference, and the md explicitly disclaims any SPDE, covariance or wave-kernel counterexample."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "temporal.txt lines 72-75 identify the static (a=0) unequal-split diagram limits with E[X_m^(0) X_n^(0)] in one compressed sentence. The required ingredients are product L^1 convergence of static fixed-order terms via Cauchy-Schwarz and terminal-to-initial chain reversal at positive widths. Both exist in reused interfaces (P:mixed proof, prior-lower static construction) but are not restated. An explicit pointer would aid readers.",
+      "Proposition P:moment-growth-logconvex identifies the type of F_{p,a}, which is defined at (1,0), with the rate at an arbitrary x. This uses spatial stationarity of the canonical solution implicitly; one clause would make it explicit.",
+      "rate-shape-screen.md parametrizes a in [0, log 2] rather than the full [0, a_max) = [0,1) at alpha=1. For x > 2 the Jensen coefficient inequality fails. The logical non-implication is unaffected, since a log-affine reparametrization such as x = 2^a covers [0,1), but the screen as written is restricted. Not silently repaired here.",
+      "The abstract describes the new material as 'additional proofs' awaiting review without stating the number three. The subsection note does state three and separates the four-proof gate."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is an AI review: no human verification, novelty audit, Lean check or whole-paper audit. Correctness of the unchanged reused interfaces is assumed from the supplied texts, not re-derived in full. These are P:mixed, L:joint-fixed-order, (E:joint-temporal-tail), L:spatial-wick-measures, the static construction and norm series, P:static-minorant-lower, T:full-upper and L:positive-series-type. I did recheck the type lemma's inequalities.",
+    "No commands were executed. The sha256 values of the PNGs, the tex and the PDF, the byte-equality of the 55 prior proofs, and the script outputs were not machine-verified. The image contents were inspected visually and match the cited equations.",
+    "Of the calibration's static diagram values, only the pure-mean 11/17280 and the total-sum arithmetic were independently recomputed. The unequal (143/34560) and equal (187/17280) split values were not recomputed. These are diagnostics only.",
+    "The imported static law (Chen-Hu Thm 1.2 (1.9)) is used as a published external input. Its proof, the positivity argument for L_0 via a Gaussian competitor, and the generalized-covariance reduction were reviewed previously and are not re-audited here.",
+    "canonical.tex and canonical.pdf were consulted only for the abstract and goal statements; the rest of canonical.tex and the PDF were not read.",
+    "Scientific acceptance of these scoped proofs grants no completion of G:sharp, no fixed-positive-a exact time limit, and no circulation or whole-paper clearance."
+  ]
+}

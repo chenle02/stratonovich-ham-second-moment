@@ -105,9 +105,10 @@ noise: Stratonovich regime\\[0.3em]
   and a near-static gap from twice the actual first-mean growth rate.
   These internal consequences passed their own scoped independent review;
   the original sharp constant remains open.
-  A further candidate subsection treats temporal interpolation of the full
+  A further subsection proves temporal interpolation of the full
   moment and recovery of the static moment constant as the time exponent
-  tends to zero; these additional proofs await independent review.
+  tends to zero; these three additional proofs passed their own scoped
+  independent review.
 \end{abstract}
 
 \tableofcontents
@@ -7000,9 +7001,10 @@ corresponding static terms. Set
 \subsection{Temporal interpolation of the full moment}
 \label{S:temporal-type-continuity}
 
-\myCmts{The following three additional proofs are candidates awaiting their
-own independent review. They do not inherit the preceding four-proof gate.
-The full sharp constant at positive temporal exponent remains open.}
+\myCmts{The following three proofs and the separate scalar-inference screen
+passed their own source-bound Opus5.5/HIGH review at \texttt{1bf6141},
+all seven checks passing. The full sharp constant at a fixed positive
+temporal exponent and whole-paper clearance remain open.}
 
 Retain the fixed nonzero covariance and the notation of this section.
 For \(p=1,2\), set \(c_{p,0}(a)=1\) and, for \(k\ge1\),
@@ -7070,7 +7072,10 @@ Lemma~\ref{L:mean-coefficient-holder}.
   the multiplier is one and Lemma~\ref{L:spatial-wick-measures} gives
   the same limit. The static diagonal and mixed-width Gaussian limits
   identify those diagram values with the split expectations of the
-  constructed static terms. For positive exponents this identification
+  constructed static terms: products converge in \(L^1\) by
+  Cauchy--Schwarz, and the terminal-to-initial chain reversal is the one
+  in Proposition~\ref{P:mixed}, applied before removing widths.
+  For positive exponents this identification
   is Proposition~\ref{P:mixed}. The union is finite at fixed \(k\);
   passing to the spatial limit proves
   \eqref{E:full-moment-coefficient-holder} and nonnegativity.
@@ -7129,7 +7134,8 @@ Here \(p=1\) concerns \(\E u\), not \(\E|u|\).
   Let \(F_{p,a}(z)=\sum_{k\ge0}c_{p,k}(a)z^k\). It is finite for
   every \(z\ge0\), by Lemma~\ref{L:full-moment-coefficient-holder}.
   Its normalized logarithmic type equals
-  \(\overline\Lambda_p(a)\), since \(z=T^{\beta(a)}\) and
+  \(\overline\Lambda_p(a)\): spatial stationarity makes the moment
+  independent of \(x\), while \(z=T^{\beta(a)}\) and
   \(z^{1/\nu}=T^{\kappa(a)}\).
   Lemma~\ref{L:positive-series-type} therefore gives
   \[

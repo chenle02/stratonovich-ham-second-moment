@@ -4,7 +4,7 @@ This screens the attempted deduction of the FULL sharp p2/mean ratio from
 positive coefficients,Holder/log-convexity,static continuity and Jensen ALONE.
 It does not refute the model conjecture or the new static-limit result.
 
-Set nu=2,kappa_st=3/2,a in[0,log2],x=exp(a),and
+Set nu=2,kappa_st=3/2,a in[0,1),x=2^a in[1,2),and
 F1(z,a)=sum (x^2*z)^k/(k!)^2,
 F2(z,a)=sum (8*x*z)^k/(k!)^2.
 These series are finite for allz>=0 by the ell2series bound. Each coefficient
@@ -26,7 +26,8 @@ At a=0,Lambda1=2 and Lambda2=4sqrt2=2^kappa_st*Lambda1.
 Both rates are positive,finite,log-convex and converge to these static
 constants. Yet for everya>0,
 Lambda2/Lambda1 = sqrt(8/x) < sqrt8 =2^kappa_st,
-while it remains >=2throughout1<=x<=2.
+while it remains >=2throughout1<=x<=2. The endpointx=2is included only as
+a closed-boundary scalar calibration;the admissible parameter range isa<1.
 Thus the global sharp proportionality does not follow from these scalar
 properties. Additional model geometry/comparison is essential. This only
 rules out that inference;the functions are not claimed to arise from the
