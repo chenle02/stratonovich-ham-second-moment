@@ -1,99 +1,63 @@
-Last updated: 2026-10-29 04:01 UTC
+Last updated: 2026-10-29 04:33 UTC
 
 # HANDOFF — Article-Stratonovich-HAM-Second-Moment
 
 ## ⏭ Next session: where to stand and what to do
 
-Rewrite L:fixed-split with the explicit chronological word-norm derivation
-in reviews/2026-10-28-full-upper-cold-v3/fixed-split-repair-map.md. This is
-the next mathematical action,not another unchanged review. Start from the
-CURRENT82page canonical source,mathematics adoption9054ece. The third cold
-report returned NOT CLEAR and all9items are adjudicated at94a57b4.
+Collect the NEW chronological-word primary review before changing the proof.
+The actual rewrite and bound packet are frozen at scientific source
+38de33450f6699853a0789e45b1b1f1abdfe74f8;lessons85b6efd. The current86page
+source is CANDIDATE. At this handoff commit no scientific process is live;
+the current run intends to dispatch once next into
+reviews/2026-10-29-chronological-word/opus-v1/ using the same-shell guard.
+If that directory/receipt or active-review-handle.json exists,inspect the
+actual process/session/terminal status and collect that attempt. Do not
+restart because an observation timed out. Hold its ACTUAL launch HEAD until
+terminal collection. No old review is resumed.
 
-The concrete missing presentation is the common time partition,each identity
-between phase norms,one-ending charging,explicit cross-vacuum subspaces,
-normalized vector Cauchy integrals and an actual C_split. A proposed constant
-and the exact pre-absorption product are in the UNREVIEWED map. The finite
-endpoint-budget diagnostic passes34314exact-rational schedules,including
-simultaneous/clipped endpoints;it is not an operator/coefficient theorem.
+All third-cold substantive findings have WRITTEN CANDIDATE repairs:the common
+partition,each phase identity,fresh cross-vacuum subspaces,actual word norm,
+normalized Cauchy integral and explicit C_split;the unequal-chain coloring
+and reversal;direct static-source class pinpoints;the five-stage limit trace.
+No formal statement,original spatial class,exponent or target was changed.
+The earlier15HIGH and all three NOT CLEAR cold reports remain historical;
+they do not certify this rewrite. Fresh16check Opus5.5/HIGH is next,then a
+fresh prior-blind DeepSeek whole-paper read after actual adjudication.
 
-No review/build process is live. Third cold source da0864b,994.522s,actual
-DeepSeekV4-Pro,32tool calls(one failed),partial actual primary-source reads.
-All17native/workspace archive members hash verified;own raw/temp copies
-removed. Do not poll old sessions56602 or18255 or restart archived attempts.
-The cold-v3 launcher now refuses even after raw cleanup using durable records.
-
-The earlier primary15PASS/HIGH is genuine scoped evidence but does not waive
-this cold finding. After actual substantive repair,get fresh primary/HIGH,
-then a fresh prior-blind whole-paper read. Full original goal ACTIVE;sharp
-constant OPEN;Lean creation still requires decision4. No new sharp wave.
+Full original goal ACTIVE. Sharp constant OPEN. No new sharp proof wave,
+private Lean creation,novelty or circulation clearance. Decision4 remains.
 
 ## Pre-flight checks
 
-1. Read Progress.md and PROJECT-GOAL.md. Canonical adoption9054ece and third-cold disposition94a57b4 are
-   pushed/<HUB>-synchronized before this handoff commit.
-2. Final82pages,45proofs;actual formatter idempotent;zero errors,undefined
-   references/citations,overfull boxes,tabs or duplicate labels. Binding in
-   terminal-modular/final-status-binding.json.
-   TeX SHA256: 1b8be5c9956d42b0b233cae773c7a38f004c7327ea5cd5e1634c2cc26e066d38.
-   PDF SHA256: 2919ef64e0165cc1cc30946bce0e95dcf7e8f665bc3368199110b32ef5385dbc.
-3. Primary source65b1342 accepted15PASS/HIGH at9054ece. All formal statements
-   including remarks and three new helper proofs byte-equal to reviewed source;
-   43of45proofs byte-equal. The two minor-clarified proofs and six finding
-   dispositions are explicit. No new result is attributed to the reviewer.
-4. T:full-upper is Theorem13.8 on PDF page78. Coefficient13.5 page73;
-   fixed-split13.4 page70;terminal13.6 page75;tail13.7 page77.
-5. The moment estimate/series limit uses source Th4.1(4.2)p22 fixed-order L2,
-   the uniform scaled finite-model bound and geometric tails. Known mild-
-   solution identification is separately retained from Theorem1.1(1) and
-   its Section5part(ii). No uniqueness or new mild-equation proof is claimed.
-6. Completed cold-v3 blind80pages,all45proofs and every formal statement INCLUDING
-   remarks byte-equal to final82pages. Complete manuscript/bibliography inline;
-   six pinned source texts available. Canonical free-form prompt,prior-blind,
-   no grades/checklist/reports in packet. Native DeepSeek V4-Pro cold read returned NOT CLEAR
-   after994.522s. Separate6.828s access probe was not a scientific review.
-7. Same-process committed-byte guard and canonical hash checks must pass
-   before dispatch. Isolated TEMP.git root,explicit cwd/--dir,read-only pure
-   configuration,131072output cap. Hold HEAD during any future native collection. No process is live now.
-8. Third cold source da0864b/disposition94a57b4:9items,32calls,partial actual
-   source reads,NOT CLEAR. Earlier source26bb560/dispositionb310b119:15items,partial source reads,
-   NOT CLEAR. Second source32ee0ce/disposition6f2dc0c:9items,ZEROsource calls,
-   NOT CLEAR. Full delivery never substitutes for actual source consultation.
-9. Seven reference requests already queued;latest exact snapshot is
-   full-upper-cold/reference-state.json. Last observed2gold/5pending is
-   historical;recheck if needed. Never duplicate or prefix-match ticket IDs.
+[held back: AI account details]
 
 ## Concrete deliverables for the next session
 
-- Expand the actual L:fixed-split proof with explicit intermediate spaces,
-  chronological product,endpoint charges,normalized coefficient extraction
-  and a displayed admissible constant. Preserve the full covariance class,
-  ordinary degrees,self-pairings and the exact factorial denominator.
-- Audit the alternative static coefficient import for generalized weighted
-  endpoint measures against Chen--Hu's exact hypotheses. Chen2023 finiteness
-  is not a coefficient-rate theorem. This concerns unpromoted alternatives,
-  not a main-theorem input,but it cannot be waved away.
-- Make P:mixed's equal-length import and own unequal-length deduction fully
-  explicit;remove ambiguity about the contextual product identity. Add an
-  indexed parameter/limit trace and notation flags. All substantive items
-  in cold-v3/adjudication-v1.md remain open until actually addressed.
-- Freeze the real revised source and actual primary source inputs after
-  clean format/build gates. Fresh Opus5.5/HIGH primary review,then fresh
-  prior-blind DeepSeek full read. Do not rerun unchanged or use old grades.
-- Keep canonical wiki untouched. Accurate PRIVATE proposal is updated to
-  third-cold NOT CLEAR;its notification/publication boundary remains open.
-  Normal seven reference requests are already queued;no duplicates.
-- Lower-source-recon.md records actual local wiki/primary retrieval for two
-  existing background papers and their model mismatches. It opens no sharp
-  proof wave. Lean remains L0/PROPOSED,no package,lease,code or build.
+- Collect the actual new primary report;verify model/route,input/HEAD
+  stability,native text/image delivery,report and ledger hashes. Adjudicate
+  every finding. A quota error,missing report or medium confidence does not
+  satisfy the unchanged HIGH gate. Do not retry unchanged for a label.
+- If required,repair and review the real changed argument. After primary
+  adjudication,get a fresh prior-blind DeepSeek full-paper read. Do not let
+  older HIGH reports waive a new reader's substantive confusion.
+- Preserve terminal raw evidence and read-back member hashes before cleanup.
+  Record actual source consultation separately from provided sources.
+- The source-class and unequal-chain candidates must be audited explicitly;
+  neither Chen2023 finiteness nor an assumed product rule is the rate proof.
+  Alternative candidate sections are not independently promoted wholesale.
+- Reconcile the PRIVATE wiki proposal to the actual outcome. It currently
+  says86page CANDIDATE. Canonical wiki/notification boundary remains open;
+  no direct six-repo write or automatic notification is authorized here.
+- Sharp tilt screen and lower-source recon remain planning/retrieval only.
+  Lean stays L0/PROPOSED,no package/lease/code/build without decision4.
 
 ## Success criteria for the immediate next step
 
-A cold reader can reconstruct the fixed-split estimate from explicit products
-and counts rather than qualitative absorption. The finite diagnostic is
-retained as falsification evidence,not proof. Actual repairs address all
-substantive source/auxiliary/limit findings before fresh gates. The original
-full spatial class and sharp target remain intact;the project is not complete.
+The actual86page chronological rewrite receives a source-bound independent
+primary verdict with full required delivery and every finding adjudicated.
+If it passes the unchanged HIGH gate,it still needs a fresh full-paper cold
+read. The original full upper/sharp targets and covariance class stay intact;
+no goal-completion,novelty,formal or circulation claim follows.
 
 ## Anti-success criteria
 
@@ -324,18 +288,35 @@ Latest checkpoints:
   Toninelli2010Gaussian covariance tilt,with exact paths/ranges/hashes. Both
   already in six-repo corpus;no duplicates or imported HAM lower theorem.
 
+- 2026-10-29 source38de334:actual chronological fixed-split rewrite,common
+  time partition,each identity map,cross-vacuum subspaces,complete word norm,
+  normalized vector Cauchy and explicit C_split. P:mixed finite color/reversal
+  and source/limit interfaces clarified.86page clean build,all45proofs/all
+  formal statements retained;exactly five proof bodies changed,nine new
+  equation labels. Fresh16check packet18texts/23images;not yet reviewed.
+- 2026-10-29 root static-source class audit:published Chen--Hu2152explicitly
+  includes generalized covariance and heat definition(2.18);hypotheses/rate
+  on2145,2147,2173,2180. New required images also2151,2153,2165,2175.
+  No theorem extension from Chen2023 finiteness or angular-density assumption.
+  Fresh3operator configurations/5inventory depths pass;diagnostics only.
+- 2026-10-29 lessons85b6efd:chronological norm charging,vacuum-subspace
+  dependence,normalized coefficients,explicit covariance-source class and
+  uniform estimates versus qualitative identification retained durably.
+
 ## Repo & git state at handoff
 
-- master;pre-handoff HEAD94a57b44f3930329cad241a46eb686e5ce9bcf83,pushed
-  and <HUB>-synchronized. Only HANDOFF.md is in this dedicated commit.
-- Canonical mathematics/PDF are unchanged from9054ece422489d278833c914b5b73569d2cbbb24:
-  82pages,45proofs;exact final binding in terminal-modular/final-status-binding.json.
-  No proof rewrite has yet been applied at the cold-report checkpoint.
-- All primary/cold/health/build processes are terminal. Latest cold source
-  da0864bc4b688ba260ab648f487623b9b2da7928 was held through full collection.
-  Archive17members read-back verified;raw/temp workspace removed. No live job.
-- No source PDF,All.bib,sibling Article or canonical shared-wiki edits.
-  No private Lean companion. Local wiki proposal is unpublished.
+- master;pre-handoff HEAD85b6efd6903f4d8bb9b3e81e8eb729a9370a2ec8,
+  scientific freeze38de33450f6699853a0789e45b1b1f1abdfe74f8. Both pushed
+  and <HUB>-synchronized. Only HANDOFF.md in this dedicated commit.
+- Current source/PDF86pages,45proofs,CANDIDATE. Exact current binding in
+  chronological-word/change-binding.json;all formal statements unchanged.
+- No scientific/build/cluster process is live at this handoff commit. The
+  current run intends to launch the new primary next. Subsequent native
+  artifacts/active-review-handle.json are OWN WIP outside the frozen packet;
+  inspect actual process/terminal evidence before acting.
+- All older native processes are terminal and their evidence archived.
+  No source PDF,All.bib,sibling Article or canonical shared-wiki edits.
+  No private Lean package;PRIVATE wiki proposal remains unpublished.
 
 ## Operating notes
 
@@ -371,13 +352,13 @@ actual Agent21lookup was UNREGISTERED;do not substitute another agent.
 
 For vifm PDF opening without DISPLAY,use the existing desktop helper:
 :!<HOME>/mydotfiles/bin/wm pdf %c --no-name
-The current full-upper theorem is on page78. The intentionally open viewer
+The current full-upper theorem is on page81. The intentionally open viewer
 was previously placed on <MACHINE> tag4;no persistent display setup was changed.
 
 ## Risks to monitor
 
-1. Current terminal/modular deduction passed primary;third whole-paper cold
-   is NOT CLEAR and substantive repairs are OPEN.
+1. Current86page chronological rewrite is CANDIDATE;fresh primary and cold
+   gates remain open. All three earlier cold reports remain NOT CLEAR.
 2. Full sharp p2 constant remains open;upper constant is nonsharp.
 3. Source E_star/E printed normalization conflict has no adopted repair.
 4. Full covariance class must not be replaced with a Riesz/angular subclass.
