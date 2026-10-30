@@ -4435,3 +4435,19 @@ HPC, correspondence, source correction or canonical TeX/PDF edit.
 Original fullgoalACTIVE. Next is raw variational spatial dilation and
 optimizer/source correspondence, retaining source-normalization caveats.
 No live reviewer remains at this adoption capture.
+
+
+## Raw variational dilation statement freeze — 2026-10-30
+
+Frozen proposed target in reviews/2026-10-30-raw-variational-dilation/:
+actual positive separable class, fixed-scale profile/covariance/spectral/
+variance dilation, well-defined real raw score suprema V_c and expected
+scaling relative to AUXILIARYV1. Exact6case rational checks pass, including
+white/Riesz endpoints and variance/L2normalization controls; not analytic
+proof. Full generator supplied. Selected wiki search/cite/synthesis reads
+and primarysourcep4visual crosswalk retained; no staticnumericvalue or
+source E/E_star/L_*identification/repair. Exact accepted upper theorem
+excerpt/custody supplies finite-rate input, canonicalTeX/PDF unchanged.
+Todo: independent preproof statement/fidelity audit; then self-contained
+raw dilation/supremum proof and highvalue scalarLean checks; scientific
+review; then actual source/optimizer gap. FullgoalACTIVE.
