@@ -1,81 +1,94 @@
-Last updated: 2026-10-30 18:53 UTC (Codex)
+Last updated: 2026-10-30 19:16 UTC (Codex)
 
-Original full upper/sharp goal ACTIVE. General-positive smoothcompact d1
-stochastic/rawvariational consumer accepted; occupation-class bridge next.
+Original full upper/sharp goal ACTIVE. Actual occupationcontrol bridge
+accepted; raw variational value/source/clock comparison next.
 
 ## ⏭ Next session: where to stand and what to do
 
-Stand in this repository root. Freeze and falsify the ACTUAL positive
-occupation-profile approximation statement described in
-reviews/2026-10-30-general-positive-consumer/next-occupation-class-obligations.md.
-That file is UNREVIEWEDplanning. Establish the precise relaxed potential/
-quadratic form and measurable ground-rate functional before any density
-proof or source-constant identification.
+Stand in this repository root. Freeze/falsify an ACTUAL raw variational
+VALUE comparison with an explicitly defined occupation/clock functional,
+starting from reviews/2026-10-30-occupation-approximation/
+next-variational-value-obligations.md (UNREVIEWEDplanning). Do not repeat
+homogeneity or smooth/rough density as a substitute for value computation.
+Keep time-dependent square-root rates and any clock weights explicit.
 
-General-positive SMOOTHCOMPACT d1 stochastic/variational consumer is now
-ACCEPTED: scientific12c9879,24groups/HIGH,462.611seconds,34texts,adoption
-daf8f51. No reviewer/Lean job is live; do not restart completed sessions.
-Use notes/general-positive-consumer.md and its scientific adjudication.
-Original full upper/sharp goal remains ACTIVE; this is a partial result.
+Occupation approximation is now ACCEPTED: scientific80e47d6,8groups/HIGH,
+272.897seconds,25texts,adoption80436e3. Read notes/occupation-control-
+approximation.md and its scientific adjudication. No reviewer/Lean job
+is live; do not restart completed sessions. Original full upper/sharp goal
+ACTIVE; intended source normalization UNKNOWN, no source-value equality.
 
 ## Pre-flight checks
 
-1. Read AGENTS.md/PROJECT-GOAL.md and Progress.md; original full goal,
-   scope and decision points persist. No source correction/contact/HPC.
-2. Check local/origin/<HUB> refs and dirty ownership, serializing ref
-   writes. Latest substantive adoption before this HANDOFF-only successor:
-   daf8f51eecc7713af2ef59d131fea5e1221f0de6. All work pushed/synced, no foreign WIP.
-3. Consumer scientific12c9879: actualfirst-partyOpus5.5/high,24PASSgroups,
-   462.611seconds,34texts complete,no requiredrepairs. All34live/frozen/git
-   hashes,49nativearchive members, exactcurrentcanonical/Jensen excerpts
-   and executedproxyJSON verified. Nineoptional findings adjudicated.
-   Mathematical proofbody from Section1 onward exactscientific12c9879.
-4. Preproof14fe727,16groups/HIGH,328.136seconds,28texts accepted ONLY
-   statement/objects/feasibility. Its eightoptional clarifications were
-   applied before proof. Do not confuse preproof with full scientificgate.
-5. Actual nonseparable family S1-S3 remains accepted atc0a0093,27HIGH.
-   Sigma0..1 is an index,notcoupling; h0 is nonlocalCovprofile,lambda0>0.
-   ActualF includes compactphases PLUSbothconstants; velocity retained.
-6. Newconsumer DISCHARGES actual noisy/masked operator-error premise via
-   unitmax,commonC1profiles,slowfreeze/fixedB products and finalprefix
-   extension. Less-than-two-fastunit acceptedpadding disclosed; no new
-   B-long noise or full-long-product closeness. SAMEZ retainedrawcost.
-7. Nineunchangedfinite kernels/publictypes and NEWactualapplications
-   checked;58declarations/12seams unchanged. No rebuild or formalSPDE/
-   spectral/Young/probability/supremum theorem,package/companion/lease/
-   registry/cluster/Comparator transaction. L0/PROPOSED,decision4pending.
-8. Canonical110-page/60-proofTeX/PDF unchanged; no manuscript integration
-   or whole-paper/cold-read/novelty/circulation clearance. Wikiunchanged.
-9. Intended source normalization UNKNOWN; literal discrepancy HIGHaudit
-   retained. AuxiliaryV1pos is NOTactualfirstmean/sourceL/E/E_star;
-   V2pos>2V1pos does NOTprove actualJensen improvement. No strictvaluegap
-   betweenpositivegeneral/separable classes; sourceoptimizerstillopen.
+1. Read AGENTS.md/PROJECT-GOAL.md and current Progress.md; preserve original
+   scope/stop decisions. No source correction/contact/HPC/public release.
+2. Verify local/origin/<HUB> refs/dirty ownership, serialize ref writes.
+   Substantive adoption before this HANDOFF-only successor:
+   80436e34c08f713a69f2defdd9a880f4e0eb7f3e. Allworkpushed/synced,no foreignWIP.
+3. Occupationscientific80e47d6: actualOpus5.5/high8PASS/HIGH,
+   272.897seconds,25texts,no mandatoryrepairs. All25inputbindings,
+   40nativearchive members,executedJSON and both29/30fileLeanarchives
+   verified. Sevenoptional findings adjudicated. Proofbody Section1onward
+   exact80e47d6; only openingstatus changed. No fullpaperclearance.
+4. Preproof8f60730:7HIGH/266.316seconds/13texts,statementonly. NativeJSON
+   missingonebrace, supportedunique byte11450insertion, byte-reversible,
+   zero providercalls/allordinarygatesrerun. Originalinvalid and recovered
+   identitiesretained,31nativearchive files verified. Do not confuse with
+   fullscience, which returned directvalidJSON and needed no recovery.
+5. Actual X=L2(time;L1intersectL2space) controls BOTHspatialmass andL2.
+   L2-only continuity FAILS in realRiesz a=alpha1/2: psi_n=n^-5*1t(0,1)*
+   1x(0,n8) has L2²=n^-2 but rawv=(64/9)n². Fiveexactcases andsixwhite
+   cutoff/renormalization controls retained, finitearithmetic only.
+6. WholeH1closedform and actualRayleighsup/core equality, positivefinite
+   measurablerate, positiveapproximation/cost convergence/one-sidedI,
+   originalpointlower and sameREALV_c over smooth/Xclasses accepted.
+   StrongH1 finiteenergyoccupationg² and boundednonnegative TIMEweights
+   included. No roughH2/eigenfunction/selfadjointrepresentation/stochastic
+   flow theorem; countablecore is dense in UNITL2sphere, notwholeH1.
+7. New2scalar kernels potential_budget/shifted_coercivity have complete
+   publictypes/std3axioms,cleancompile/audit/freshreplay,5matchingoutputs,
+   2actualFalsecontrols; exact(8)/(10)applications independentlychecked.
+   Lateststable4.35.0/Mathlib56a0058 verified viaofficialGitHubAPI;
+   binaryversion/commiteb6cafb rootchecked.60finite deductions/13seams.
+8. Initialredundant<;>warning causedserverhashrefusal, preserved; clean
+   successorremovesonlytoken,publictypes unchanged. Rootuniverse-parser
+   failure initially leftreceipts absent at083b7dc; successor a6ac8d8
+   addsactualevidence after universe-aware parsing. Nativeoutputs/guards
+   untouched. Both failures transparent, no confidence/gateweakening.
+9. Existing smooth/generalpositive physicalconsumer12c9879 and actual
+   familyc0a0093 remainaccepted. Xextension uses EACHfixedsmooth score,
+   no roughnoiseevent or uniformn(delta). Canonical110-page/60-proofTeX/
+   PDFunchanged, wikiunchanged, L0/PROPOSED/companiondecision4pending.
+10. Intendedsource normalizationUNKNOWN; originalliteraldiscrepancy
+   HIGHaudit retained. RawV1notactualfirstmean/sourceL/E/E_star; no
+   strictactualJensen improvement,signedoptimizer/sharpupper/d2/d3 claim.
 
 ## Concrete deliverables for the next session
 
-- Precise bounded occupation-profile approximation statement, actual
-  rough potential/form/rate definitions and falsification controls.
-- Independent statement/source/application review before a long proof.
-- If viable, cost convergence and one-sided integrated-rate approximation
-  for fixed smooth positive controls, with all density/core/measurability
-  obligations proved and reviewed. Source normalization remains separate.
+- Precisely defined raw-value/occupation/clock comparison statement,
+  actual object/source dictionary and falsification before proof.
+- Identify the substantive control-elimination/minimax/clock inequality
+  needed for the original constant; prove it or record a precise no-go.
+- Keep any intended-source comparison explicitly conditional and preserve
+  all gradient/kernel coefficients; no chosen correction or optimizer
+  attainment assumption. Independent preproof/fullscience gates required.
 
 ## Success criteria for the immediate next step
 
-A well-posed, independently audited approximation target (or a precise
-obstruction) that preserves the actual covariance cost and Rayleigh rate.
-Do not infer source equality, a signed-control theorem or a new stochastic
-rough-coefficient flow from smooth-test approximation. The current smooth
-positive consumer already passed its proper proof gate.
+A well-posed, falsified/audited VALUE comparison moving beyond accepted
+density, or a precise obstruction explaining why the named control/clock
+route cannot compare the original constants. No intsqrt->sqrtint or
+unproved sup/inf exchange. Original sharpupper/higherdimensional tasks
+remain independent and open, not redefined by this bounded checkpoint.
 
 ## Anti-success criteria
 
-No relabelled proxy/assumed spectral shell, no countable-core surrogate
-without actual form equality, no silent source normalization fix, no
-V1=firstmean/L identification, no s(delta) or moving-test estimate, no
-whole-goal completion from another auxiliary homogeneity identity. No
-Skorohod development, source-author contact, private companion creation,
-HPC, canonical/wiki publication or circulation without authorization.
+No further density/homogeneity identity presented as source-value progress,
+no arbitrary-phase covariance monotonicity, no timeconstantlambda or
+optimizer/variation/minimax premise without proof, no intended source
+normalization fix. No rawV1=firstmean/sourceL/E assertion. No Skorohod,
+sourceauthorcontact, privatecompanion creation,HPC, public/wiki/manuscript
+release or wholepaper/circulation claim without required authorization.
 
 ## What the previous sessions produced
 
@@ -719,38 +732,52 @@ Latest checkpoints:
   Nextoccupationclass obligations remain UNREVIEWEDplanning, notdensity
   proof/sourceconstant/actualJensen or higherdimensional result.
 
+- 2026-10-30 occupationcontrol bridge: realRiesz L2-only continuity
+  falsified byspreadingsequence; correctedX includes spatialmass. Target
+  8f60730 preproof7HIGH/266.316seconds,13texts,uniqueonebrace recovery
+  zero providercalls. Fullcandidate80e47d6,actualscientificOpus5.5/high
+  8PASS/HIGH,272.897seconds,25texts,no requiredrepairs. All25bindings/
+  40nativearchive members/executedJSON/localLeanarchives verified.
+  Adoption80436e3: rawcost/wholeH1form/measurableRayleighrate/positive
+  approximation/ORIGINALpoint lower/sameREALV_c suprema, actualfinite
+  energyoccupationg²/timeweights included. Sevenoptional findings
+  adjudicated; mathematicalproofbody exact80e47d6,onlystatus changes.
+  Two newscalarformbudget kernels completepublictypes/std3axioms,
+  5replaymatches/2Falsecontrols and NEWactualapplications checked.
+  Initialserverwarning replayfailure androotuniverse-parser missing-
+  receiptfailure preserved/repaired, no guard weakened.60localfinite
+  declarations/13seams; no formalform/density/SPDE/officialpackage claim.
+  Nextvalue/source/clock obligations UNREVIEWEDplanning only.
+
 ## Repo & git state at handoff
 
-Substantive adoption before this HANDOFF-only successor: daf8f51eecc7713af2ef59d131fea5e1221f0de6.
-Local/origin/<HUB> synchronized there, all mathematical/evidence paths
-committed/pushed. No foreign WIP or live reviewer/Lean job. Literalroot
-HANDOFF.md preserves cumulative history and exact next action.
+Substantive adoption before this HANDOFF-only successor: 80436e34c08f713a69f2defdd9a880f4e0eb7f3e.
+Local/origin/<HUB> synchronized there; all mathematical/evidence paths
+committed/pushed. No foreign WIP or live reviewer/Lean job.
 Wiki ../SPDEs-wiki/content/projects/stratonovich-ham-second-moment.md exists
-and is unchanged. This is an intra-round checkpoint; fullwiki/cold-read/
-round-close, manuscript integration and circulation remain separate.
+and is unchanged. This is intra-round; canonicalintegration/fullwiki/
+coldread/round-close/wholepaper/novelty/circulation remain separate.
 
 ## Operating notes
 
-All source reports/receipts/read ledgers/native archives/adjudications
-retained in dated review directories. Nativeactualread-onlyreview separated
-from root executed diagnostics/hash/excerpt/archive validation. No review
-retry/confidencechange/provider substitution. Ambientamsghook notread/used;
-no external message sent.
+Actualreviewread-only handverification is distinct from rootexecution/
+hash/archive/version/source-ref checks. Alloriginal/recoveredpreproof
+identities retained; fullscientific validJSON direct, no recovery/retry.
+NewLeanpublictypes fullyprinted, standarduniverses explicit; rootparser
+strips only universe suffixes when comparing standardaxiom names, never
+changes printedtypes or native outputs. Samefiveartifactguard retained.
 
-Latest properconsumer scientificproof uses exactgeneralpositive family,
-physicalFflow/generalpsi tilt/sourcefiniteupper. Generic scalarproofs
-reused only with all NEWactualhypotheses independently checked; no
-kernel proof of analytic assembly. Full publictypes/prior localreceipt
-bindings in reuse-bindings-v1.json. No donor/package/companion edits.
-Supported native runtime2.1.304,selected<account removed> account<usage removed>
-at last launch,not a promise of future quota. No systemsetup changes.
+Native review uses supported launch-local2.1.304PATH, account<account removed>,
+last<usage removed> atfullsciencelaunch,not futurequota promise.
+Ambientamsghook NOTread/used; no externalmessage sent. No setupedit,
+donor/package/companion/lease/registry/HPC/Comparator transaction.
 
 ## Risks to monitor
 
-Current smoothpositiveclass is neither all signed Gaussian controls nor
-the source occupation-profile optimizer class. Rough profile approximation
-requires actualformdomains/coreequality/measurablerates and covariance
-cost convergence before passing any variational score. Source's intended
-normalization UNKNOWN and original higher-dimensional driver/flow/spectral
-work/sharpupper remain open. Preserve originalstop/report decisions.
-No firstmean/Jensen/sourceconstant inference from auxiliarylabel scaling.
+Density bridges actualpositivecontrols to finiteenergyoccupation
+profiles but does NOTcompute the rawscore supremum or identify sourceL.
+Time-dependent square-root rates/clockweights and Gaussiancontrol
+elimination may obstruct a naive occupationenergy map; do not assume
+concavity/minimax or an optimizer. Intendednormalization UNKNOWN and
+originalhigherdimensional flow/lower/sharpupper remain open. Preserve
+all original stop/report decisions and full goal, no prematurecompletion.
