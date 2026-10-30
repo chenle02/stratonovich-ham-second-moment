@@ -5453,3 +5453,25 @@ completecandidate/localcompiled but stillawaitfulltype/application gate;
 firstownedartifactreplay mismatch preserved, explicitcancellation proof
 successor matchesall5artifacts with3Falsecontrols. No officialpackage/HPC/
 contact/Skorohod/sourcefix/TeX/PDF/wiki/publication transaction.
+
+### Finite Gaussian matrix full candidate and local consumer — 2026-10-30
+
+Complete new notes/finite-gaussian-schatten.md proves evenp rectangular
+complex Gaussian moment with stronger average of BOTH variance tracepowers,
+thenmax, sqrt(p-1), p2 equality. Self-contained scalarYoung/Holder,
+Hermitian spectral trace inequality/twoeigenbases, polynomialGaussianIBP,
+rectangulardilation/factor2; exactrow/column negativecontrols. v2finite
+quadratures also checkAVERAGE, not justv1MAX; no certifiedprecisionclaim.
+
+Standalone localFiniteYoung1public naturalLq consumer reuses pinnedMathlib
+weightedAMGM,4.35.0/56a0058, compile/audit/3Falsecontrols and5matchingowned
+freshreplay artifacts, completepp.allTYPE/standard3axioms, original/replay
+typeauditbyteequal. Attempt01 private/server bytes differed despitecompile/
+audit;51nativefiles preserved. Samepublicheader proofrefactor toexplicit
+cancellations, attempt02all5match/63nativefiles verified. No serializer
+rootcauseclaim or gateweakening. Boundedpriorart incomplete, exactREUSE hit,
+no competingpackage.71finitefacts/18seams PROVISIONAL pendingfullfidelity.
+29textFULLscientificpacket frozen, no analytic/finiteapplication adoption
+beforegate. OriginalgoalACTIVE, actualvariance9bfb907 retained independently;
+no infiniteSchattenseries/path/Young/sourcecutoff/newmoment/sourceconstant/
+HPC/contact/Skorohod/companion/TeX/PDF/wiki/publication transaction.

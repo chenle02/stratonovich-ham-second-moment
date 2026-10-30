@@ -1,0 +1,21 @@
+{
+  "theorem": "StratonovichHAMAudit.FiniteYoung.weighted_natural_powers",
+  "source_sha256": "994a493c72f2b74d304fe5aa85d552967707d977b876a9de5beb851c94a0f335",
+  "scope": "ONLY scalar trace-summand inequality, not matrix/Gaussian theorem",
+  "consumer": "notes/finite-gaussian-schatten.md Section3, equation(5)",
+  "L": "2m-2, natural m>=2 hence L>0",
+  "q": "integer natural 0<=q<=L from product derivative position",
+  "x": "lambda_j real eigenvalue of HermitianY",
+  "y": "lambda_i real eigenvalue of HermitianY",
+  "weights": "Real casts q/L,(L-q)/L; Nat.cast_sub applies because q<=L",
+  "p2_case": "m1 separate, no L0 application",
+  "other_analytic_steps_not_formalized": [
+    "Hermitian spectral theorem",
+    "trace diagonalization",
+    "Gaussian integration by parts",
+    "two eigenbases and trace Holder",
+    "expectation Holder/Jensen",
+    "rectangular dilation",
+    "infinite dimensional convergence"
+  ]
+}

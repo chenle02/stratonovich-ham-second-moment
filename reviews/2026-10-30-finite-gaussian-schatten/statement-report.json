@@ -1,0 +1,133 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "reviews/2026-10-30-finite-gaussian-schatten/target-v1.md: lines 1-56, complete (line 56 is the empty EOF line)",
+    "reviews/2026-10-30-finite-gaussian-schatten/falsification-v1.md: lines 1-21, complete (line 21 is the empty EOF line)",
+    "reviews/2026-10-30-finite-gaussian-schatten/worker-honesty-v1.md: lines 1-16, complete (line 16 is the empty EOF line)",
+    "reviews/2026-10-30-finite-gaussian-schatten/check-diagnostics.py: lines 1-36, complete (line 36 is the empty EOF line)",
+    "reviews/2026-10-30-finite-gaussian-schatten/diagnostics-v1.json: lines 1-179, complete (line 179 is the empty EOF line)",
+    ".review/required-sources.json: lines 1-18, complete (read plan only, not a packet file)"
+  ],
+  "checks": [
+    {
+      "claim": "C1: the objects in N1 are well defined for rectangular complex A_k of size o x n, real independent standard Gaussians, unnormalized trace and even p=2m.",
+      "verdict": "PASS",
+      "reason": "Vout is o x o and Vin is n x n, both positive semidefinite. ||A||_Sp^p=Tr((A*A)^m) holds for rectangular A. ||Vout^(1/2)||_Sp^p=Tr(Vout^m), and likewise for Vin. Real g_k are what make Y Hermitian. Complex entries of A_k need no restriction."
+    },
+    {
+      "claim": "C1: E||X||_Sp^p <= (p-1)^m (Tr Vout^m+Tr Vin^m)/2 for every even p, with a dimension-free sqrt(p-1) constant.",
+      "verdict": "PASS",
+      "reason": "Refutation was attempted and the route was re-derived by hand. F=2E||X||_Sp^p and Tr D^m=Tr Vout^m+Tr Vin^m. For m>=2 and F>0, F<=(2m-1)(Tr D^m)^(1/m)F^((m-1)/m) gives F<=(2m-1)^m Tr D^m. The factor 2 cancels into the average, and (p-1)^(m/p)=sqrt(p-1). The constant has no o, n or N dependence."
+    },
+    {
+      "claim": "C1: the average form implies the max form and is the stronger of the two.",
+      "verdict": "PASS",
+      "reason": "[(a+b)/2]^(1/p)<=max(a,b)^(1/p)=max(||Vout^(1/2)||_Sp,||Vin^(1/2)||_Sp) with a=Tr Vout^m and b=Tr Vin^m. The inequality is strict when a differs from b, so the first form is the stronger one and the implication runs in the stated direction."
+    },
+    {
+      "claim": "C1: p=2 gives equality in the first inequality, and zero cases are trivial.",
+      "verdict": "PASS",
+      "reason": "Independence and Eg_kg_l=delta_kl give E||X||_S2^2=Tr Vout=Tr Vin, and sqrt(p-1)=1, so equality holds. If all A_k=0, every side is 0. F=0 occurs exactly when all A_k=0, and the bound is then immediate."
+    },
+    {
+      "claim": "C2: Hermitian dilation, D=diag(Vout,Vin) and trace factor 2.",
+      "verdict": "PASS",
+      "reason": "The block sizes are consistent: the A_k block is o x n and B_k has size o+n. B_k^2=diag(A_kA_k*,A_k*A_k) and Y^2=diag(XX*,X*X). Therefore Tr Y^(2m)=Tr(XX*)^m+Tr(X*X)^m=2Tr(X*X)^m by rectangular cyclicity."
+    },
+    {
+      "claim": "C2: the Gaussian IBP formula has the correct sum, range, matrices and order.",
+      "verdict": "PASS",
+      "reason": "F=sum_k E[g_k Tr(B_k Y^(2m-1))] and the derivative of Y^(2m-1) in g_k is sum_(q=0)^(2m-2) Y^q B_k Y^(2m-2-q). This reproduces the stated term ETr(B_k Y^q B_k Y^(2m-2-q)) with exactly 2m-1 summands. All integrands are polynomials in Gaussians, so they are integrable and IBP applies, entrywise to real and imaginary parts."
+    },
+    {
+      "claim": "C2: the eigenbasis scalar Young route gives F<=(2m-1)ETr(D|Y|^(2m-2)).",
+      "verdict": "PASS",
+      "reason": "Pointwise in g, Tr(B Y^q B Y^r)=sum_ij |B_ij|^2 lambda_j^q lambda_i^r, which is real. N2 with L=2m-2>0 bounds it by sum_ij |B_ij|^2[(q/L)|lambda_j|^L+(r/L)|lambda_i|^L]. Both resulting sums equal Tr(B^2|Y|^L) by the symmetry of |B_ij|^2, so the weights add to 1. Since |Y|^(2m-2)=Y^(2m-2) is polynomial, no measurable eigenbasis selection is needed."
+    },
+    {
+      "claim": "C2: trace Holder and expectation Holder/Jensen are feasible, and the m=1 and F=0 endpoints are separated.",
+      "verdict": "PASS",
+      "reason": "Tr(D Y^(2m-2))<=(Tr D^m)^(1/m)(Tr Y^(2m))^((m-1)/m) has the conjugate pair m, m/(m-1), with D>=0. Concave Jensen then gives E[(Tr Y^(2m))^((m-1)/m)]<=F^((m-1)/m). For m>=2 the exponent (m-1)/m is positive, so F=0 is harmless. At m=1 the exponent is 0, which is the 0^0 risk the target isolates, and L=0 would violate N2's L>0. The direct m=1 computation avoids both."
+    },
+    {
+      "claim": "C3: the N2 scalar inequality is true and feasible with real casts, natural exponents and zero endpoints, and any Lean seam would be finite algebra only.",
+      "verdict": "PASS",
+      "reason": "It is weighted AM-GM applied to |x|^L and |y|^L. For q=0 and q=L it reduces to equality under the natural-power convention t^0=1, including at x=0 or y=0. For 0<q<L a zero argument makes the left side 0. The hypotheses L>0 and q<=L prevent division by zero. The inequality is a suitable standalone statement, and target lines 35-37 limit it to this finite inequality with no package or companion authorization. No Lean file is in the packet, so nothing was compiled or claimed."
+    },
+    {
+      "claim": "C4: the row 1x16 negative control has exact moment 288, which exceeds the input-only upper bound 144, against max upper bound 2304.",
+      "verdict": "PASS",
+      "reason": "||X||_S4^4=|g|^4 and E|g|^4=3N+N(N-1)=N(N+2)=288. Vin=I_16 gives Tr Vin^2=16, and Vout=16 (1x1) gives Tr Vout^2=256. Then 9*16=144<288 and 9*256=2304>=288. The stronger average upper bound is 9*136=1224>=288, so N1 survives."
+    },
+    {
+      "claim": "C4: the column 16x1 transpose refutes the output-only bound, and no impossibility claim is made about actual wave variance.",
+      "verdict": "PASS",
+      "reason": "Vout=I_16 and Vin=16, with the same moment 288, so 144<288. The JSON labels for omitted side and wrong bound are correct in both controls. Target line 44-45 and falsification line 17-18 explicitly exclude any claim about a special actual wave variance bound."
+    },
+    {
+      "claim": "C5: the code has 12 cases with correct Hermite orders and Gaussian scaling.",
+      "verdict": "PASS",
+      "reason": "Three cases times p in {2,4,6,8} gives 12 rows. The polynomial has per-coordinate degree at most 2m, and order m+1 is exact through degree 2m+1 in exact arithmetic, so the code comment is correct. The substitution g=sqrt2*x and per-coordinate weight w/sqrt(pi) is the correct standard Gaussian normalization. Hermite_order in the JSON equals m+1 in every row."
+    },
+    {
+      "claim": "C5: the variance powers and powered max upper bounds in the JSON are correct, and p=2 equality is asserted.",
+      "verdict": "PASS",
+      "reason": "By hand: the Hermitian case has V=2.25I. The rectangular case has Vin=[[12,-3],[-3,10]] with trace powers 22, 262, 3322, 44002. Its Vout has trace powers 22, 200, 2107, 24048, obtained from e1=22, e2=142, e3=277. All powered upper bounds (p-1)^m*max match. Line 28 of the script asserts p=2 equality."
+    },
+    {
+      "claim": "C5: selected moment entries are exact values rather than numerical artifacts.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Hand-recomputed exactly: scalar 5, 59, 1155, 31929; Hermitian 4.5, 22.375, 167.71875, 1677.0703125; rectangular 22 and 592, the latter via a three-pairing Wick sum 262+200+130. Rectangular p6 26712 and p8 1709208 were not recomputed. They were checked only for agreement with the listed ratio and bound. N1 does not depend on these values."
+    },
+    {
+      "claim": "C5: the diagnostic checks only the MAX bound, while N1 proposes the stronger AVERAGE, and this gap is disclosed.",
+      "verdict": "PASS",
+      "reason": "Line 26 of the script uses max(tout,tin), and falsification lines 8-9 disclose that the average bound is not checked. From the JSON data, the Hermitian and scalar rows have tout=tin. The rectangular average upper bounds are 22, 2079, 339312.5 and 81694025, all at least the listed moments. This hand comparison is not a script check, and the N1 average is supported by the route derivation rather than by the diagnostic."
+    },
+    {
+      "claim": "C5: no certified quadrature proof, actual noise or continuum claim is made.",
+      "verdict": "PASS",
+      "reason": "The JSON scope field, target lines 47-49 and falsification lines 10-11 and 17-18 all deny these uses. Negative controls are disclosed as analytic integer prescriptions, not 16-dimensional integration. Both the formula N(N+2) and the assertion in the script are consistent with that disclosure."
+    },
+    {
+      "claim": "C6: the original full goal remains active and the actual-variance review is not an input.",
+      "verdict": "PASS",
+      "reason": "Target lines 51-53 and worker-honesty lines 3-7 and 15 agree. The N1-N3 route does not use any wave-variance object, so independence holds in the mathematics as well as in the wording."
+    },
+    {
+      "claim": "C6: no operator-norm, Schatten series, path, source Young, source cutoff, new moment, source constant, Lean proof, HPC, contact, companion, Skorohod or whole-paper claim is made.",
+      "verdict": "PASS",
+      "reason": "Target lines 3-4 and 50-55, falsification lines 17-20 and worker-honesty lines 7-15 contain the relevant exclusions, and no positive claim of these kinds appears anywhere in the packet. The max term is a Schatten norm of a variance square root, not an operator norm. Scalar Young in N2 is finite algebra and is not the excluded source Young/PDE comparison."
+    },
+    {
+      "claim": "Overall: no false constant, false exponent or missing object exists in N1-N3 at statement level.",
+      "verdict": "PASS",
+      "reason": "Every constant and exponent was traced: 2m-1, (m-1)/m, 1/m, trace factor 2, sqrt(p-1), 9, 16, 256, 288, 144, 2304. All objects needed by the route are defined. The long proof remains unwritten and has not been adopted by this review, and the target correctly labels itself unproved."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Target line 28 says scalar trace inequalities can be derived in an eigenbasis, but trace Holder for Tr(D Y^(2m-2)) involves two eigenbases that generally differ. The long proof should expand through the unitary-stochastic weights |U_ij|^2. It can then apply N2 with L=m, q=1 plus scaling, or use Jensen with sum_i D_ii^m<=Tr D^m. This is feasible and not a defect in the statement.",
+      "N2 alone does not yield Holder without the scaling step and doubly stochastic row and column sums, so the word 'required' at target line 31 should not be read as the only finite ingredient.",
+      "Target line 14, 'No dependence on o,n,N', is true of the constant sqrt(p-1). The variance traces themselves can depend on these sizes, as in the 16-dimensional control. A more explicit wording would be 'constant independent of o,n,N'.",
+      "Target line 20 restricts IBP to m>=2, although the formula also holds at m=1. The restriction is harmless and matches the separate m=1 treatment.",
+      "In falsification line 3, 'three noncommuting Hermitian' is loose because the third matrix 0.5I commutes with the others. The family is noncommuting overall through sigma_x and sigma_z, so the test remains meaningful.",
+      "The negative controls at N=16 refute one-sided bounds with the same constant. Scaling N also rules out any fixed one-sided dimension-free constant, since N(N+2)/N is unbounded. This stronger remark is optional and not claimed by the target.",
+      "Any Lean version of N2 needs care with natural subtraction and casts: exponent L-q uses q<=L, while the weight (L-q)/L must be computed in the reals, using Nat.cast_sub or an equivalent."
+    ],
+    "major_notes": []
+  },
+  "required_repairs": [],
+  "limitations": [
+    "Statement, object and feasibility audit only. It is not proof adoption, human verification, a novelty audit, a literature audit or a whole-paper or gold-standard certificate. The packet makes no novelty claim and none was assessed.",
+    "The reviewer had read-only tools, so check-diagnostics.py was not executed and diagnostics-v1.json was not regenerated. mpmath API behavior, including gauss_quadrature with 'hermite', was assessed from reading and from knowledge, not from a run. The worker's statement that the diagnostic was executed locally could not be independently confirmed.",
+    "Rectangular p6 and p8 moments, 26712 and 1709208, were not independently recomputed by hand. All other moment entries, variance powers and powered upper bounds were hand-checked. These two values are floating diagnostics and do not bear on the validity of N1.",
+    "The hand derivation of the N1 route is a review check rather than a formal or machine-checked proof, and the full written long proof still requires its own gate.",
+    "No Lean file exists in the packet, so N2's formal feasibility is a judgment and no compilation was performed.",
+    "The review covers only the frozen packet. It does not examine the actual wave-variance review, the original source paper or the driver route, so usefulness of this ingredient for the original goal was not assessed."
+  ]
+}

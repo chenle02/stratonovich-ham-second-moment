@@ -1,0 +1,191 @@
+{
+  "provider": "claude",
+  "started_utc": "2026-10-30T23:18:13.815264+00:00",
+  "workspace": "${HOME}/.local/state/Le-AI-Lab/stratonovich-finite-gaussian-schatten-statement-v1/workspace",
+  "source_revision": "4ad20757b61f805bdab91ca4557255cdcb4edf74",
+  "input_hashes": {
+    "reviews/2026-10-30-finite-gaussian-schatten/check-diagnostics.py": "ad4e376382f02be91eb8b5d33d5c0ed7b733386dfcc9c13a195b45143a5f9005",
+    "reviews/2026-10-30-finite-gaussian-schatten/diagnostics-v1.json": "0228c6d2f6c37ed35798f6e2dd73aee61186ab9b2c1efc63eafe0cb8511afe26",
+    "reviews/2026-10-30-finite-gaussian-schatten/falsification-v1.md": "85e5c548361be805e57defb8e2b8f346bb8cce8d490453a90788b69288536626",
+    "reviews/2026-10-30-finite-gaussian-schatten/target-v1.md": "b404bc2bc4b0a9b98e1b6027df882797c24f7b40f303307c0ff747124442ae5f",
+    "reviews/2026-10-30-finite-gaussian-schatten/worker-honesty-v1.md": "66e3d206cf6ecfbbd32d4994e034c40de6d2c3e4f521177be7f7ae43d9815a3b"
+  },
+  "target": "reviews/2026-10-30-finite-gaussian-schatten/target-v1.md",
+  "claude_account": "<removed>",
+  "review_contract_sha256": "a687bc1eb40acc4913389e65ea8c060c783f0ac00c4d0d16d361bd8a73c3a692",
+  "effort_requested": "high",
+  "resumed_from": null,
+  "resume_mode": null,
+  "resume_binding": null,
+  "min_confidence": "high",
+  "scientific_verdict": "PASS_WITH_NOTES",
+  "accepted": true,
+  "report_contract_schema": "subscription-review-report/1",
+  "report_legacy_mode": null,
+  "legacy_resume_binding": null,
+  "diagnostics": [],
+  "required_sources_sha256": "0aed75b2cca03356fc0189bc527bca9d323ef8fcdc5dba9bd52ff271d056b159",
+  "required_sources_workspace_copy": ".review/required-sources.json",
+  "workspace_preflight": {
+    "schema": "le-ai-lab.review-workspace-preflight/1",
+    "scanned": "review contract (--prompt-file)",
+    "references": {
+      "target-v1.md": [
+        "reviews/2026-10-30-finite-gaussian-schatten/target-v1.md"
+      ]
+    },
+    "waived": [],
+    "missing": [],
+    "required_sources_copy": ".review/required-sources.json"
+  },
+  "runtime_preflight": {
+    "effective_version": "2.1.304",
+    "cli_version": "2.1.304 (Claude Code)",
+    "image_requirements": false,
+    "supported_versions": [
+      "2.1.299",
+      "2.1.300",
+      "2.1.301",
+      "2.1.302",
+      "2.1.303",
+      "2.1.304",
+      "2.1.314"
+    ],
+    "supported": true
+  },
+  "cli_version": "2.1.304 (Claude Code)",
+  "executable": "${HOME}/.local/state/Le-AI-Lab/swe-white-time-resume-20261024/runtime/node_modules/@anthropic-ai/claude-code-linux-x64/claude",
+  "executable_requested": null,
+  "executable_effective": {
+    "path": "${HOME}/.local/state/Le-AI-Lab/swe-white-time-resume-20261024/runtime/node_modules/@anthropic-ai/claude-code-linux-x64/claude",
+    "version": "2.1.304 (Claude Code)"
+  },
+  "read_ledger_format_supported": true,
+  "auth": {
+    "authMethod": "<removed>",
+    "apiProvider": "firstParty",
+    "subscriptionType": "<removed>",
+    "email": "<account email removed>"
+  },
+  "model_requested": "claude-opus-5-5",
+  "command_without_prompt": [
+    "${HOME}/.claude/bin/claude-acct",
+    "run",
+    "<account removed>",
+    "--print",
+    "--model",
+    "claude-opus-5-5",
+    "--effort",
+    "high",
+    "--disable-slash-commands",
+    "--strict-mcp-config",
+    "--mcp-config",
+    "{\"mcpServers\":{}}",
+    "--permission-mode",
+    "dontAsk",
+    "--permission-prompts",
+    "none",
+    "--output-format",
+    "stream-json",
+    "--verbose",
+    "--tools",
+    "Read,Grep,Glob",
+    "--allowedTools",
+    "Read,Grep,Glob",
+    "--agents",
+    "${HOME}/.local/state/Le-AI-Lab/stratonovich-finite-gaussian-schatten-statement-v1/claude-reviewer.json",
+    "--agent",
+    "artifact-reviewer",
+    "<stdin: prompt.txt without its final newline>"
+  ],
+  "prompt_transport": "stdin",
+  "prompt_bytes": 4534,
+  "prompt_sha256": "73414061fedb71ccb1f461131154fb7154feed5e0dc4086a554f81d005aac20b",
+  "transport_exit_code": 0,
+  "transport_ok": true,
+  "model_actual": "claude-opus-5-5",
+  "session_id": "fd34a539-f19e-4c2b-a39e-9c8bebe0e2ef",
+  "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 24104,
+    "cache_read_input_tokens": 22500,
+    "output_tokens": 23409,
+    "output_tokens_details": {
+      "thinking_tokens": 17407
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 24104,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 22662,
+        "cache_read_input_tokens": 19296,
+        "cache_creation_input_tokens": 8012,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 8012
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "provider_error": false,
+  "terminal_subtype": "success",
+  "tools_actual": [
+    "Read",
+    "Grep",
+    "Glob"
+  ],
+  "actual_route_verified": true,
+  "candidate_hashes_unchanged": true,
+  "raw_report_sha256": "3d7bc72a953e99b04ef239a828d038875b29b0adb2c3084a9703d871a392e49d",
+  "status": "review-complete",
+  "confidence": "high",
+  "report_interpretation": {
+    "contract_schema": "subscription-review-report/1",
+    "report_schema": "subscription-review-report/1",
+    "legacy_mode": null,
+    "normalized_verdict": "PASS_WITH_NOTES",
+    "normalized_confidence": "high",
+    "normalized_check_verdicts": [
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS_WITH_NOTES",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS"
+    ]
+  },
+  "report_sha256": "675b8b6ec2c3018014ce0ae0c14092a4d896f65079f57164a6607601cc6447e2",
+  "report_text_format": "bare",
+  "report_body_sha256": "3d7bc72a953e99b04ef239a828d038875b29b0adb2c3084a9703d871a392e49d",
+  "finished_utc": "2026-10-30T23:21:41.719266+00:00",
+  "elapsed_seconds": 207.904,
+  "transport_events_sha256": "8b6b6473d49411361b39c416af12213db4dba1f23025539d09247d6333a40394",
+  "transport_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "read_ledger_sha256": "d93bb1bc4838da30c62493f4daf0f94bb5947e0c17687f3bf3f7925e52fbd299",
+  "coverage_verified": true
+}

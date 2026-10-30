@@ -1,0 +1,193 @@
+{
+  "schema": "le-ai-lab.review-read-ledger/1",
+  "coverage_verified": true,
+  "claude_code_version": "2.1.304",
+  "events_sha256": "8b6b6473d49411361b39c416af12213db4dba1f23025539d09247d6333a40394",
+  "events_hash_bound_to_receipt": true,
+  "stream_workspace": "${HOME}/.local/state/Le-AI-Lab/stratonovich-finite-gaussian-schatten-statement-v1/workspace",
+  "required_sources_sha256": null,
+  "continuation": false,
+  "continuation_credit": null,
+  "proves": "Each credited line was returned, numbered and byte-equal to the frozen workspace file, in a tool_result paired with a Read or line-numbered content-mode Grep call of the hash-bound provider stream.",
+  "does_not_prove": "Attention, understanding, or retention: a credited line may have been skimmed, ignored, or dropped by context compaction before the report was written. Uncredited lines may still have been seen in a form the ledger cannot attribute (previews, unnumbered output, subagents).",
+  "sources": [
+    {
+      "path": "reviews/2026-10-30-finite-gaussian-schatten/target-v1.md",
+      "sha256": "b404bc2bc4b0a9b98e1b6027df882797c24f7b40f303307c0ff747124442ae5f",
+      "total_lines": 55,
+      "required_ranges": [
+        [
+          1,
+          55
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          55
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "reviews/2026-10-30-finite-gaussian-schatten/falsification-v1.md",
+      "sha256": "85e5c548361be805e57defb8e2b8f346bb8cce8d490453a90788b69288536626",
+      "total_lines": 20,
+      "required_ranges": [
+        [
+          1,
+          20
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          20
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "reviews/2026-10-30-finite-gaussian-schatten/worker-honesty-v1.md",
+      "sha256": "66e3d206cf6ecfbbd32d4994e034c40de6d2c3e4f521177be7f7ae43d9815a3b",
+      "total_lines": 15,
+      "required_ranges": [
+        [
+          1,
+          15
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          15
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "reviews/2026-10-30-finite-gaussian-schatten/check-diagnostics.py",
+      "sha256": "ad4e376382f02be91eb8b5d33d5c0ed7b733386dfcc9c13a195b45143a5f9005",
+      "total_lines": 35,
+      "required_ranges": [
+        [
+          1,
+          35
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          35
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "reviews/2026-10-30-finite-gaussian-schatten/diagnostics-v1.json",
+      "sha256": "0228c6d2f6c37ed35798f6e2dd73aee61186ab9b2c1efc63eafe0cb8511afe26",
+      "total_lines": 178,
+      "required_ranges": [
+        [
+          1,
+          178
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          178
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    }
+  ],
+  "tool_calls": [
+    {
+      "id": "toolu_01FX82KJLbE5KwrR97bYBXMr",
+      "tool": "Read",
+      "source": ".review/required-sources.json",
+      "plan_copy_read": [
+        ".review/required-sources.json"
+      ],
+      "uncredited": "runner-owned plan copy (.review/): never read credit",
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_014cNdoX4gnAWfoocexd9Dx4",
+      "tool": "Read",
+      "source": "reviews/2026-10-30-finite-gaussian-schatten/target-v1.md",
+      "credited": {
+        "reviews/2026-10-30-finite-gaussian-schatten/target-v1.md": [
+          [
+            1,
+            55
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01VhCWYA9z66v5besyPPQCXT",
+      "tool": "Read",
+      "source": "reviews/2026-10-30-finite-gaussian-schatten/check-diagnostics.py",
+      "credited": {
+        "reviews/2026-10-30-finite-gaussian-schatten/check-diagnostics.py": [
+          [
+            1,
+            35
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01G91nxjphXGdfrtFu6nHQAZ",
+      "tool": "Read",
+      "source": "reviews/2026-10-30-finite-gaussian-schatten/diagnostics-v1.json",
+      "credited": {
+        "reviews/2026-10-30-finite-gaussian-schatten/diagnostics-v1.json": [
+          [
+            1,
+            178
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_017FDo9uGecWM4jiAF8dki7a",
+      "tool": "Read",
+      "source": "reviews/2026-10-30-finite-gaussian-schatten/falsification-v1.md",
+      "credited": {
+        "reviews/2026-10-30-finite-gaussian-schatten/falsification-v1.md": [
+          [
+            1,
+            20
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01K28hgj6HTbhQ5SbR6tExBG",
+      "tool": "Read",
+      "source": "reviews/2026-10-30-finite-gaussian-schatten/worker-honesty-v1.md",
+      "credited": {
+        "reviews/2026-10-30-finite-gaussian-schatten/worker-honesty-v1.md": [
+          [
+            1,
+            15
+          ]
+        ]
+      },
+      "stream": "attempt"
+    }
+  ],
+  "diagnostics": []
+}

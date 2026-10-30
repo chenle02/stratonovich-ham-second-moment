@@ -420,3 +420,28 @@ kernel NEWcontextbindings/hypotheses independentlychecked. Rootnewsource/
 5artifactpairs/Falsegoal/archives andoldsource/fulltypes reverified.
 70finitefacts/17seams scopedaccepted. No formalFourier/HS/covariance/
 SPDE or officialpackage/companion/lease/registry/HPC/Comparator gate.
+
+## Finite weighted natural-power seam proposed — 2026-10-30
+
+After independent finiteGaussian STATEMENT gate19checks/HIGH207.904s,
+propose standalone1lemma N2: allnaturalL>0,q<=L, realx/y, absoluteinteger
+powers and realcastweights. Exact pinned Mathlib weightedAMGM found/reused;
+bounded registry/public prior-art receipts retained, missing7checkouts and
+cappedGitHub not absenceproof. Localtype/compile/replay/threeFalsecontrols
+pending, no newclaim fromplanned run. No officialpackage/companion/lease/
+registry/HPC; L0/PROPOSED and PROJECT decision4 unchanged. NewGaussian/
+trace/continuum arguments not formalized by this finite seam.
+
+## Finite weighted natural powers provisional — 2026-10-30
+
+One public weighted_natural_powers consumer compiled/audited/freshreplayed
+at4.35.0/Mathlib56a0058 with exact Mathlib weightedAMGM reuse,5 matching
+artifacts,3 actualFalse controls (zeroL, invalidq range, signedpower).
+Complete separate pp.allTYPE/standard3axioms printed againstboth modules,
+byteidentical. First attempt compiled/audited but private/server bytes
+mismatched;51nativefiles preserved. Samepublicheader successor replaced
+field_simp with explicit cancellation, fresh5matches; root cause of first
+serializer difference not asserted. Second63nativefiles memberverified.
+71localfinitefacts/18seams PROVISIONAL pending full exacttype/application
+review. No Gaussian/trace/Schatten/continuum/operator/SPDE formal theorem.
+L0/PROPOSED/decision4 unchanged, no officialpackage/lease/registry/HPC.

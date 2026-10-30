@@ -103,3 +103,9 @@ remains outside Lean. No companion or canonical package gate.
 | source_overlap | Actual finite mask/Schur/source-budget consumer | Local compile/replay; exact type/application HIGH atd020a2a |
 | source_white_obstruction | Actual finite mask/Schur/source-budget consumer | Local compile/replay; exact type/application HIGH atd020a2a |
 | source_tail_obstruction | Actual finite mask/Schur/source-budget consumer | Local compile/replay; exact type/application HIGH atd020a2a |
+
+## FiniteYoung local consumer: StratonovichHAMAudit.FiniteYoung
+
+| Name | Scope | Status |
+|---|---|---|
+| weighted_natural_powers | Natural L>0,q<=L,real x/y, absolute integer powers and realcastweights; exact pinned Mathlib AM-GM reuse | Local compile/audit/owned5artifact replay/3False controls; independent exacttype/application gate pending |

@@ -1,0 +1,29 @@
+{
+  "status": "FAILED_OWNED_ARTIFACT_REPLAY",
+  "terminal": "AssertionError hashes original==replay",
+  "source_identical": true,
+  "audit_identical": true,
+  "matching_artifacts": [
+    "FiniteYoung.olean",
+    "FiniteYoung.ir.sig",
+    "FiniteYoung.ir"
+  ],
+  "artifact_hashes": {
+    "original": {
+      "FiniteYoung.olean.server": "6a238a398a71bc4281a0dd3db471f360bfffa6043bf976dc2b9e4cdc8afeeef5",
+      "FiniteYoung.olean": "b84915817ac90bf286f9d07c021831f0cb8c6af19be43c045d3cf0829a137d5e",
+      "FiniteYoung.ir.sig": "e39ce3739f630a52c9e82971ba734d1d7ce661c947a829db9a32fab9da9aca55",
+      "FiniteYoung.olean.private": "93cc0343e35375444714593f0d39894c20588ae79f20481d461c83dba6d268f1",
+      "FiniteYoung.ir": "0235360a7092ddb48f0d23f6d564e9a35f3b0a0d9a14ab6dd1a788e3ec6a24aa"
+    },
+    "replay": {
+      "FiniteYoung.olean.server": "733c14d18d86eb588be392e355807a868cb0a50138bf3ee943cf7ec75e7e4f89",
+      "FiniteYoung.olean": "b84915817ac90bf286f9d07c021831f0cb8c6af19be43c045d3cf0829a137d5e",
+      "FiniteYoung.ir.sig": "e39ce3739f630a52c9e82971ba734d1d7ce661c947a829db9a32fab9da9aca55",
+      "FiniteYoung.olean.private": "62e571eb9194bb33898ef2325e7edcc7ab582fc59b8b65d6365dfd0ac8dc65fe",
+      "FiniteYoung.ir": "0235360a7092ddb48f0d23f6d564e9a35f3b0a0d9a14ab6dd1a788e3ec6a24aa"
+    }
+  },
+  "failure_scope": "Private/server byte replay; publicolean/IR match. Does not establish equality of all private proof payloads. No gate promotion.",
+  "next": "Same public header, replace field_simp by explicit cancellation identities; one fresh attempt, no gate weakening."
+}

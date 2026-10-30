@@ -109,3 +109,11 @@ operator/Young/causality/canonical-L2/flow stability. The uniform-in-p dyadic
 margin is explicit reviewed analytic algebra outside the current Lean scope.
 Official-format nongated receipts via a future embedded Lake project are
 an owner-confirmed option, not current evidence or companion authorization.
+
+FiniteYoung standalone consumer verifies only natural L>0,q<=L weighted
+absolute integer powers with REAL-cast weights, reusing pinned Mathlib
+weighted AM-GM. Proposed trace application L=2m-2,m>=2 and q derivative
+index0..L remains subject to independent exacttype/application review.
+Gaussian IBP, Hermitian spectra, trace Holder/two eigenbases, expectation,
+rectangular dilation and every continuum/path/SPDE step remain analytic.
+No formal Gaussian Schatten theorem or official companion from this lemma.
