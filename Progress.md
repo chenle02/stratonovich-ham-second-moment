@@ -6,7 +6,6 @@
 
 ## Current state
 
-- **Live actuald2/3HS preproof:** fullspace/smoothmaskedmean/EsFourierkernel/Gaussiancovariance obstruction target atd5c4663; actualOpus5.5/high,15texts+2images,session46516/native stratonovich-dimensional-hs-statement-v1. No no-goadopted; no originalmoment/Gupperfailure or replacementnorm claimed. Poll samehandle.
 - **Latest GLOBALd1lower:** Omega>1 andexplicitgainV(a/2)^(-1/k) ORIGINALpointlower(18) forALLadmissibled1Riesz/whitea/alpha/amplitudes, withown E_star^O, accepted7groups/HIGH atee188ab (447.816seconds,31texts+2images). EntireactualGamma/kernel/rationalproof and4finitecompleteQ/D/Vtype/applications checked. This closes d1LOWERcomparison only; source/domain/label/intendednormalization, sharpupper andd2d3 remainOPEN. NEXT: freeze/falsify actualhigher-dimensional firstdriver/flow norms, preservingoriginalcovarianceclass andsource-independentretainedGupper.
 - **Latest actual damped lower result:** temporalBeta/legalX/staticlower/dampedenergy GENERALOmega pointcomparison and whitealpha1,a1/2 directpoint theorem(16), exactzeta=(2418683125/2415919104)^(1/8)>1, accepted7groups/HIGH at8883160 (295.426seconds,28texts+2images). OwnE_star^O explicitmeaningfuldomain; source/domain/label matching and normalization unadopted. Threefinite scalar applications checked. GlobalOmega nowclosed atee188ab; NEXToriginalhigher-dimensional/sharpupper work. Sharpupper/originald2d3/exactlimit/fullgoal remainOPEN.
 - **Latest raw value comparison:** actual positive-control variational VALUE ceiling in own raw occupation energy E_eta, with strict displayed-map gaps ateta1/2 and legalalpha1/10,a9/10eta1, accepted8groups/HIGH atad6c188 (322.118seconds,26texts+4images). Actual moment Q2 still has only LOWERQ2>=V2 from thismechanism; no Q2 upper/sourceconstantidentity. Two scalar applications checked. Dampedbridge/whitepoint now accepted at8883160; NEXTglobalOmega comparison. Original9pointrecon doesnotprove fullrange. Original sharpupper/all-dimensions/intendednormalization remainopen.
@@ -5138,3 +5137,22 @@ Initialupperentrynegationnormalization failure preserved, ringaddedonly
 onremaininggoals.70finitefacts/17seams provisional; twooldscalarinternals
 unchanged, allNEWkernel/Fourier/Gaussian/HS applications forfullgate.
 No analyticno-go orreplacementtopology adoptedfromthisfinite check.
+
+### DimensionalHS preproof and completecandidate — 2026-10-30
+
+ActualOpus5.5/high7PASS/HIGH,444.177seconds,15texts+2sourceimages,
+no requiredrepairs. All17live/frozen/gitd5c4663 inputs,32nativearchive
+files/diagnosticBYTEreplay/ancestry841->d5c checked. Sevenminorfindings
+adjudicated. StatementapprovalONLY, not adoptedno-go. No retry/recovery/
+confidencechange. Newlycompiledfullmatrixoutsidepreproof, fullgate next.
+
+Newnotes/higher-dimensional-hs-obstruction.md completecandidate actual
+whole-space boundedNONHS mean onEVERYEs d2/3, compactphysical/input-output
+localization, exactnear-frequency-diagonalkernel/truncatedtraceUVdivergence,
+ACTUALallnonzeroGamma_H covariance/testcompletion/Sobolevadjoint forms,
+Bochnercovariance contradictionforcompatibleL²HSdriverlaw. No d2/3white,
+periodic/constant/globalvolproxy orarbitrarymaskquotientbound assumed.
+NOactualmoment/nonexistence/Gupper/Theorem3.1/Skorohodno-go claimed.
+26texts+2imagesFULLsciencepacket includes1newmatrixtype/defs and2OLDscalar
+NEWapplications. No no-go/admissiblenormadoptionbeforeFULLgate. Original
+higher-d lower/sharpupper/source/fullgoal ACTIVE, not replacedbythis test.

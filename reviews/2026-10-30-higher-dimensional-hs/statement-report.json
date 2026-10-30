@@ -1,0 +1,85 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "reviews/2026-10-30-higher-dimensional-hs/target-v1.md: lines 1-111 (whole file)",
+    "reviews/2026-10-30-higher-dimensional-hs/worker-honesty-v1.md: lines 1-37 (whole file)",
+    "reviews/2026-10-30-higher-dimensional-hs/falsification-v1.md: lines 1-24 (whole file)",
+    "reviews/2026-10-30-higher-dimensional-hs/check-diagnostics.py: lines 1-47 (whole file; read, not executed)",
+    "reviews/2026-10-30-higher-dimensional-hs/diagnostics-v1.json: lines 1-192 (whole file)",
+    "reviews/2026-10-30-higher-dimensional-hs/reuse-bindings-v1.json: lines 1-20 (whole file)",
+    "reviews/2026-10-30-higher-dimensional-hs/reused-complete-types.txt: lines 1-227 (whole file)",
+    "reviews/2026-10-30-higher-dimensional-hs/canonical-model-context.txt: lines 1-38 (whole file)",
+    "reviews/2026-10-30-higher-dimensional-hs/canonical-source-custody.json: lines 1-22 (whole file)",
+    "reviews/2026-10-30-higher-dimensional-hs/source-context-v1.json: lines 1-21 (whole file)",
+    "reviews/2026-10-30-higher-dimensional-hs/local-recon-v1.md: lines 1-27 (whole file)",
+    "notes/interaction-driver-path.md: lines 1-346 (whole file)",
+    "notes/local-causal-young-flow.md: lines 1-504 (whole file)",
+    "lean-progress/local-checks/phase-response-v1/StratonovichHAMAudit/PhaseResponse.lean: lines 1-68 (whole file; read, not compiled)",
+    "lean-progress/local-checks/phase-response-v1/local-receipt.json: lines 1-90 (whole file)",
+    "reviews/2026-10-28-source-normalization/packet-v2/pages/chen-02-upper.png: full image viewed",
+    "reviews/2026-10-28-source-normalization/packet-v2/pages/chen-03-lower.png: full image viewed",
+    ".review/required-sources.json: lines 1-60 (read plan; no read credit)"
+  ],
+  "checks": [
+    {
+      "claim": "C1: D1 uses the actual original d=2,3 class and whole-space objects, and its first-driver object matches the old d=1 contract.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Gamma, alpha and a match H:homog, and alpha=d is excluded for d=2,3. This agrees with the source crop statement that alpha=d under alpha<2 occurs only for d=1 or Dirac. E_s=H^s x H^(s-1) keeps both entries and all real s. S is bounded on E_s because <xi>|sin(t|xi|)|/|xi| and |xi|/<xi> are bounded, with a continuous sinc at xi=0. S is strongly continuous, so the integrand of (A) is strongly measurable and bounded for bounded measurable k. Operator-norm continuity is correctly not assumed. B(h)(v,w)=(0,hv) is bounded on E_s because multiplication by a C_c^infinity function is bounded on H^s and H^s embeds in H^(s-1). A real orthonormal basis stays orthonormal in the complexification, so the Fourier complexification preserves the real HS norm. The compact mask, Parseval and no-torus framing are explicit. M and D_chi M agree with (D) of notes/interaction-driver-path.md and (3.4) of notes/local-causal-young-flow.md, and s=1/2 recovers the old E. This is an interaction operator, not a scalar solution map. The note is that line 19 omits smoothness of chi (see minor findings)."
+    },
+    {
+      "claim": "C2: (K), the near-diagonal time product, (L), the truncation bound, the divergence and the finite-propagation sandwich are correct.",
+      "verdict": "PASS",
+      "reason": "Hand derivation with unitary F gives F(Hv)(xi)=(2pi)^(-d/2) integral Hhat(xi-eta) vhat(eta) d eta. The block product S(-u)BS(u) has lower-left entry H cos(|xi|u)cos(|eta|u). J_s conjugation gives weight <xi>^(s-1)<eta>^(-s), so (K) is correct. Hhat is real and Hhat(0)>0. ||xi|-|eta||u<=epsilon T<=1 and cos 1>1/2 give a difference term >=J0/2, using k>=0. IBP has zero boundary term at u=0 and gives |sum term|<=B0/(|xi|+|eta|). Hence the time product is >=J0/4-B0/(2(|xi|+|eta|))>=J0/8 once |xi|>=4B0/J0. Peetre gives (<xi>/<eta>)^s>=2^(-|s|/2)<epsilon>^(-|s|) for every real s, and <xi><=sqrt2|xi| for |xi|>=1, so (L) holds. For |xi|<=N-epsilon the epsilon-ball in eta lies in B_N, and the L2 kernel identity gives c integral_R0^(N-epsilon) r^(d-3) dr with c independent of N. This is log divergence for d=2 and linear divergence for d=3. HS norms dominate blocks and truncations, so (N) follows for every s. Output support lies in B_(A+T). An input supported off B_(A+T+1) stays off B_(A+1) up to time T, so it is annihilated by h. Thus A_h=D_chi A_h D_chi. Nothing uses global spatial volume."
+    },
+    {
+      "claim": "C3: The Gaussian example covers every nonzero original Gamma with the correct mask order, k, Z and variance.",
+      "verdict": "PASS",
+      "reason": "Gamma nonzero Radon gives L with Gamma(B_L)>0. For x in B_(L+1) and z in B_L, |x-z|<=2L+1, so U(x)>=Gamma(B_L) there and the integral of qU is >=|B_(L+1)|Gamma(B_L). It is finite because q has compact support and U is locally bounded. U is smooth by differentiating q under the locally finite Gamma integral, and it is even and nonnegative. U(0)>=Gamma(B_L)>0, so H=zeta_R U is even, nonnegative, C_c^infinity and has H(0)>0. k(u)=integral |w|^(-a) f(u-w) dw is C1 for C1 compactly supported f. For u,v in [0,1], |u-v|^(-a)>=1, so k>=integral f>0 on [0,T] with T<=1. Var Z=(integral f k)(integral qU) is positive and finite. Time approximation by interior smooth functions works in the raw form, so Z is not a point evaluation. B_W(F,f tensor q)=integral integral F k U matches the stated convention. Applying this to tests multiplied by zeta_R gives H=zeta_R(Gamma*q), not Gamma*(zeta q). No density or Riesz structure and no d>=2 white noise are used. Raw units |u-v|^(-a) and alpha+a<2 are retained."
+    },
+    {
+      "claim": "C4: The Gaussian form, the Sobolev adjoint, (C), the Bochner contradiction and the partition consequence are correct and correctly scoped.",
+      "verdict": "PASS",
+      "reason": "With Lambda=diag(<D>^(2s),<D>^(2s-2)), the E_s adjoint is (D_chi S(-u))^*=Lambda^(-1) S(-u)^T D_chi Lambda, where ^T is the L2 transpose. The H^(s-1) pairing on the second entry reproduces psi exactly. D_chi is correctly not treated as selfadjoint. Since S(u) preserves Schwartz, psi equals 1_(0,T)(u) zeta_R [S(u)z]_1 g(u,x). Here g=-(sin(u|D|)/|D|)(chi <D>^(2s) w1)+cos(u|D|)(chi <D>^(2s-2) w2) is smooth with compact x-support. So psi is a bounded compactly supported test, smooth in x with a time-indicator jump. Time mollification with dominated convergence in B_W handles the endpoints for singular Gamma too, so membership is feasible. E[W(psi)Z]=integral integral psi k U=<D_chi A_h(T)z,w>_(E_s), so (C) is derived rather than postulated. A strongly measurable X in L2(Omega;HS) gives E[ZX] in HS with the stated norm bound and with matrix entries given by (C) on fixed Schwartz pairs. Density and D_chi A_h=A_h then contradict (N). No simultaneous uncountable version and no sigma(W)-measurability is needed. For the partition, ell is linear in chi, and D_rho^* w is Schwartz for smooth compact rho, so sums of compatible cells represent ell_chi. Bad-cutoff claims are limited to chi=1 on the cone. Lines 94-97 exclude claims about all HS-valued laws, Young flow, moments and the retained G upper route."
+    },
+    {
+      "claim": "C5: Finite controls are as stated, and script and JSON match by hand.",
+      "verdict": "PASS",
+      "reason": "Hand checks, with no execution by this reviewer. Matrix entries -H cq sp/p, -H sp sq/(pq), H cp cq and H cp sq/q agree with direct multiplication. Beta values B(3,1/2)=16/15, 2B(4,1/2)=64/35 and B(5,1/2)=256/315 confirm the exact k at a=1/2. J=2(32/105-128/315+512/3465)=64/693, integral f=1/30, f<=1/16, and |f'|<=1/2 (actual maximum about 0.1925). The integral of |u-v|^(-1/2) over v in [0,1] is <=2sqrt2, so k<=1/4 and |k'|<=2 hold. B=9/4 and threshold 4(9/4)(693/64)=6237/64<128. The moment formula in the script is correct. The JSON has 12 rows and 7 shells with the correct d=1, d=2 and d=3 values. The script has 2 literal quadrature assertions at w=1/2 and 4. Spot checks: r=128, difference 0 gives J/2+k(1)sin(256)/512, about 0.04608. r=128, difference 1 gives about 0.0392. Margins equal value minus 8/693. Differences up to 1 at T=1 respect epsilon T<=1. f=t^2(1-t)^2 has its C1 zero extension legal. The scope statements exclude Hhat, operator-norm and energy claims. The d=1 integral is calibration only. Zero H, k or Gamma and d>=2 white noise are not used. The script's run status and the flag all_assertions_passed are author-side execution claims that were not replayed."
+    },
+    {
+      "claim": "C6: Unchanged Lean reuse and its new binding are exact, with new hypotheses still to discharge.",
+      "verdict": "PASS",
+      "reason": "two_frequency_average and frequency_window in the Lean source agree with the complete types. Axioms listed are propext, Classical.choice and Quot.sound. frequency_window has unrestricted real a, so the parameter value 1 is type-legal, and it is not noise a. Instantiating J=time product, A=Ddiff/2, B=B0/2, t=1, r=|xi|, a=1: hA follows from Ddiff>=J0/2. hcut is 2B0/Ddiff<=4B0/J0<=r. herr is |sum term|/2<=(B0/2)r^(-1), since |xi|+|eta|>=r. The conclusion gives time product >=Ddiff/4>=J0/8, matching D1. Bindings and target state the same binding and require the new hypotheses to be discharged. The binding SHA equals the receipt SHA by string comparison. The old HIGH fidelity is retained only for the prior application, and no formal Fourier, HS, Gaussian or SPDE shell is claimed."
+    },
+    {
+      "claim": "C7: Goal, scope and non-claims are preserved, and no missing object blocks the long proof.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Target lines 3-6 and 94-99 keep the original all-dimensional and sharp-constant goal ACTIVE. They disclaim moment, nonexistence and Skorohod results, a Theorem 3.1 or G-upper no-go, replacement Schatten or Besov results, source fixes, contact, companion or HPC actions, and novelty or circulation claims. Canonical excerpts and the source crops agree on the model, covariance and regime. D1-D3 use no easier covariance range as a success criterion. Every object D3 needs is defined or trivially fixable: chi, A, Z, psi, k, H. The minor wording items below do not affect mathematical truth."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Target line 19 says real compact chi without saying smooth. For arbitrary real s, D_chi on E_s needs a C_c^infinity (or sufficiently regular) multiplier, as in the old notes' real compact smooth cutoff. Read the statement as C_c^infinity. D3 needs only one such chi, so its contradiction is unaffected.",
+      "Notation is implicit in places. Hhat0 means Hhat(0). In D2 the radius A should be stated as any radius with supp H contained in B_A, for example one containing supp zeta_R, so that the cone in D3 is fixed. In f, support[0,1] should read contained in [0,1], since C_c^infinity((0,1)) is also allowed.",
+      "R0>=2 epsilon is not needed for the time product or the Peetre ratio, since |xi|+|eta|>=|xi| and Peetre suffice. It is harmless.",
+      "No changing Sobolev s repairs N refers only to the same-scale pair E_s. By the same near-diagonal count, a two-index HS(E_s,E_s') norm would give r^(d-3-2(s-s')), which is not divergent for s-s'>(d-2)/2. That is a loss-of-regularity map, not a bound established here. Line 95's unchanged-Sobolev qualifier is the correct scope and should be kept.",
+      "(2.2) of notes/local-causal-young-flow.md is a d=1 Schur bound and is not available for d>=2 in the original class. D2 does not need it, because W_R is used only through the direct test W(psi). The long proof should keep it that way and not import mask boundedness on the completion.",
+      "For the claim that the Gaussian form is the localized formal driver, the fixed-pair identification at positive source widths is not spelled out in the target. For smooth regularized noise the pairing is the same test functional, so this is routine. It remains a proof obligation, not an adopted result.",
+      "Diagnostics labelling: the JSON row key s is a second radius, not the Sobolev index. Sympy symbols are declared nonzero, so xi=0 and eta=0 are outside the symbolic control and rely on the analytic sinc argument. The bounds k<=1/4 and |k'|<=2 are comments rather than computed checks, though they hold by hand. Rows test radial differences only, not vector frequencies or Hhat, as disclosed."
+    ],
+    "note_on_scope": []
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is an AI statement, object, class, source and feasibility audit. It is not human verification, not a novelty audit, not adoption of a long proof and not a whole-paper certificate.",
+    "No script, Lean build or hash computation was run. Hash and revision statements were compared only as strings across packet files. Compile, replay, reachability and root-view claims remain author-side. Whether the custody capture revision relates to source revision d5c46630a7d2e0a53e073d318a59c16be51233ed cannot be determined from the packet.",
+    "Numerical JSON rows were spot-checked by hand, not all recomputed to full precision. The 2 quadrature assertions appear only in the script, and their execution is not replayed.",
+    "notes/phase-response-test.md and the prior adjudications are not in the packet. Old HS-trace and Gaussian-test details were inspected only through the two included notes, and old acceptance status is taken as recorded there.",
+    "The two source images are crops of pages 2 and 3. They cover the model, covariance form, homogeneity regime and Theorem 1.2 display, not the full source, and no source constant was used.",
+    "Mathematical verification here is by read-only reasoning at statement level. The elementary derivations were checked as feasible steps, while the target's fully written proofs of N, C and test-completion membership remain to be supplied and reviewed."
+  ]
+}
