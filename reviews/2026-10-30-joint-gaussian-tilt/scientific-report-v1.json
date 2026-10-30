@@ -1,0 +1,93 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    ".review/required-sources.json lines 1-72 (read plan only; not a packet file)",
+    "notes/joint-gaussian-tilt.md lines 1-317 (complete)",
+    "reviews/2026-10-30-joint-gaussian-tilt/contract-v3.md lines 1-173 (complete)",
+    "notes/local-causal-young-flow.md lines 1-504 (complete)",
+    "notes/interaction-driver-path.md lines 1-346 (complete)",
+    "notes/direct-event-calibration.md lines 1-224 (complete)",
+    "notes/phase-response-test.md lines 1-379 (complete)",
+    "lean-progress/local-checks/joint-tilt-v1/StratonovichHAMAudit/JointTilt.lean lines 1-29 (complete)",
+    "lean-progress/local-checks/joint-tilt-v1/Audit.lean lines 1-11 (complete)",
+    "lean-progress/local-checks/joint-tilt-v1/STATEMENT-FENCE.md lines 1-39 (complete)",
+    "lean-progress/local-checks/joint-tilt-v1/local-receipt.json lines 1-71 (complete)",
+    "lean-progress/local-checks/joint-tilt-v1/types-and-axioms.txt lines 1-13 (complete)",
+    "lean-progress/local-checks/joint-tilt-v1/WrongSign.lean lines 1-5 (complete)",
+    "lean-progress/local-checks/joint-tilt-v1/WrongSign.txt lines 1-3 (complete)",
+    "lean-progress/local-checks/joint-tilt-v1/WrongCost.lean lines 1-5 (complete)",
+    "lean-progress/local-checks/joint-tilt-v1/WrongCost.txt lines 1-3 (complete)",
+    "lean-progress/local-checks/joint-tilt-v1/WrongAmplitude.lean lines 1-5 (complete)",
+    "lean-progress/local-checks/joint-tilt-v1/WrongAmplitude.txt lines 1-3 (complete)",
+    "reviews/2026-10-30-joint-gaussian-tilt/check_contract.py lines 1-41 (complete)",
+    "reviews/2026-10-30-joint-gaussian-tilt/finite-checks.json lines 1-67 (complete)",
+    "reviews/2026-10-30-joint-gaussian-tilt/check_polynomial.py lines 1-57 (complete)",
+    "reviews/2026-10-30-joint-gaussian-tilt/polynomial-checks.json lines 1-43 (complete)",
+    "reviews/2026-10-30-joint-gaussian-tilt/worker-honesty-v1.md lines 1-36 (complete)",
+    "reviews/2026-10-30-joint-gaussian-tilt/lean-release-preflight.json lines 1-27 (complete)"
+  ],
+  "checks": [
+    {
+      "claim": "C1. Original scope, coupling, source fidelity and named-input boundary.",
+      "verdict": "PASS",
+      "reason": "Note \u00a71 lines 31-38 fix d=1, 0<a<1, 0<alpha<=1, the raw kernel |t-s|^-a, and Gamma = c_Gamma|x|^-alpha dx (alpha<1) or c_Gamma delta_0 (alpha=1) with c_Gamma>0 kept. Lines 36-38 state that W is the raw-law noise of the SEMICLASSICAL equation (W), not the original unscaled field, and that the raw driver and Z come from the same W. No source cutoff is assumed measurable from W. I checked W^delta(f)=delta^(a/2-1)W(f(./delta,.)) directly: its covariance is delta^(a-2)\u00b7delta^2\u00b7delta^(-a)|u-u'|^-a Gamma, which is raw, as line 49 says. The named inputs (lines 15-26) match contract-v3 lines 5-8 exactly, including phase-response Section5(M) lines 302-325 rather than Section 6. I confirmed those lines hold (M) for every T,R>0 with a Bochner L2 proof and no positivity assumption. The local-flow inputs used are the R>=1 mask, F, K via (4.2), the input/output support [-2R-T,2R+T], the kappa_R extension (local-flow lines 211-216), the Young map (5.1)-(5.3), the deterministic base (5.5)-(5.6) and (6.1). The driver inputs used are \u00a7\u00a75-6 (common-space tests, C^gamma versions, the little-H\u00f6lder space). Direct-event \u00a71 is used for (S)/(W). One citation, to phase-response \u00a74 for the d=1 form of Gamma, lies outside the explicit list; see minor finding 2. Every claimed limit is at fixed delta, r, L (line 52)."
+    },
+    {
+      "claim": "C2. Concrete full-product assembly Phi, its bound, separability, Phi(X)=A including constant inputs, joint Gaussian closure, and Bochner b.",
+      "verdict": "PASS",
+      "reason": "I is finite because O=[-2r-L,2r+L] is compact and supp rho_j is in [j-1,j+1]. K:F->E is bounded by (4.2) at fixed r, L. D_rho_j:E->F is bounded because rho_j is a bounded E multiplier and global E embeds in F (local-flow lines 173-176). Bound (3) follows from HS >= operator norm, and Phi(x)(0)=0, so Phi is everywhere linear and continuous into C^theta_0(B(F)) with only a sum bound; nothing claims B(F)-valued separability. The separability proof for h^theta_0 holds: two polygonal paths with the same vertices and nearby breakpoints differ by a Lipschitz function with small sup norm, and interpolation [f]_theta <= 2||f||_inf^(1-theta) Lip(f)^theta makes the difference small; vertices are then approximated in separable HS(E). X_j lies in h^theta_0 because driver lines 285-290 give C^gamma versions, with polygonal convergence in C^theta for gamma>theta. For Phi(X)=A: local-flow lines 213-216 define A(u)w := A(u)(kappa w) for every w in F, including constants. The output lies in O, so sum_{j in I} rho_j y = y. Also rho_j chi_j = rho_j, and global E is never assumed dense in F. Joint Gaussianity of the countably many HS matrix entries with Z holds because every entry is a W-test in the first-chaos closure of the same W (driver lines 233-238). b=E[XZ] exists by Cauchy-Schwarz on separable B, and Phi(b)=E[AZ] because bounded linear maps commute with Bochner integrals."
+    },
+    {
+      "claim": "C3. Raw profile h, its regularity and tails, the strong integral (7), the covariance with Jacobian (8), extension to indicator coordinate kernels, and Phi(b)=sqrt(delta) H_delta.",
+      "verdict": "PASS",
+      "reason": "I checked (8): delta^(a/2-1)\u222bf(t/delta,x)h(t,x)dtdx = delta^(a/2)\u222bf(q,x)h(delta q,x)dqdx under t=delta q. Writing h(t)=\u222b|q|^-a G(t-q)dq with G(s)=Gamma*psi(s) compact in s\u2208(0,1), only |q|<1 matters for t\u2208[0,1]. So \u2202_t h and \u2202_t\u2202_x h are absolutely convergent and bounded, which gives Lipschitz dependence into C_b^1, hence continuity and strong measurability despite C_b^1 being nonseparable. For Riesz, Gamma*\u2202^k psi = O((1+|x|)^-alpha) with c_Gamma kept; for white it is compact, so the tails in (6) vanish. Multiplying by zeta_r keeps everything in the admissible class (5.6) with compact support. The coordinate kernel of chi_j A(u) is 1_[0,u](q)\u00b7zeta_r(x) times a smooth function of (q,x). This holds because the free wave multipliers cos(t\u03be), sin(t\u03be)/\u03be and \u03be sin(t\u03be) preserve Schwartz functions, and the E-adjoint factors (1-\u0394)^(\u00b11/2) and chi do as well. Approximating the indicator converges in the noise Hilbert norm by dominated convergence, because the kernel |q-q'|^-a Gamma is nonnegative and locally finite. So (8) extends to the literal coordinates and gives E[<X_j(u)e_k,e_l>Z] = g delta^(a/2) <chi_j H_delta(u)e_k,e_l>. Since g delta^(a/2) = delta^((1-a)/2+a/2) = delta^(1/2), (9) holds on global E inputs. Extending (9) to constant inputs also needs finite propagation for H_delta, which is not spelled out; see minor finding 1. Identification goes through coordinates, not a contraction bound."
+    },
+    {
+      "claim": "C4. The Gaussian law identity (10): equivalent probability, finite-dimensional completion of squares including singular covariance, sign and cost, Borel generation, pi-lambda, null sets, v=0.",
+      "verdict": "PASS",
+      "reason": "The representation (xi,Z) =law (TN, z\u00b7N) via a PSD square root allows singular covariance, with Tz = Cov(xi,Z) = l(b) and |z|^2 = v. The identity exp(-|n|^2/2 - s z\u00b7n - s^2|z|^2/2) = exp(-|n+sz|^2/2) with n'=n+sz gives E[exp(-sZ - s^2v/2) f(l(X)+s l(b))] = E f(l(X)) with no matrix inverse. MINUS density with PLUS shift is correct: tilting by -sZ moves the mean of xi to -s l(b). Taking f=1 gives normalization, and the density is positive and finite, so Q ~ P. On Borel generation: point evaluations and matrix entries are continuous linear functionals. The sup norm and H\u00f6lder seminorm of a continuous path are suprema over rational times and pairs (Q\u2229[0,L] plus {0,L}), and the HS norm is the square root of the sum of squared entries in an E-ONB. So x \u21a6 ||x-y||_B is coordinate-measurable, balls are cylinder-generated, and separability makes the Borel sigma-algebra equal sigma(coordinates). The pi-lambda argument and monotone convergence then extend to all nonnegative Borel j on all of B, allowing +\u221e. v=0 forces Z=0 and b=0, so (10) is trivial. Translating by the deterministic s\u00b7b stays in B and creates no exceptional set."
+    },
+    {
+      "claim": "C5. The observable J_delta, the retained-residual tilt (13), the noise-only canonical identification, and the original point consumer (14).",
+      "verdict": "PASS",
+      "reason": "J_delta is continuous and nonnegative on all of B for four reasons: Phi is continuous linear, S(L) is bounded on F (local-flow \u00a74), U_A is locally Lipschitz in C^theta on bounded sets (5.3), and ell_phi is bounded on F by (4.2) plus duality. With s=1/sqrt(delta), (9) gives Phi(X + b/sqrt(delta)) = A + H_delta. This is the Young flow with deterministic base A_h, h = zeta_r h(delta q,\u00b7), plus g M_r, as local-flow line 324 allows. So the residual g zeta_r W^delta is kept and no nonzero-profile canonical series is assumed. The cost is s^2 v/2 = v/(2 delta), which is correct. E J_delta(X) is finite by the all-moment bounds on the evolution (local-flow lines 294-298), which also makes the weighted side of (13) finite. Mask protection holds: M+L <= (1+M)/delta <= r and zeta_r = 1 on [-r,r]. Then (6.1) applies at horizon L. The time change to slow time works because a fast vertex g delta^(a/2-1) G_((t-t')/delta) W(dt') equals delta^(-1/2) G_((t-t')/delta) W(dt'), which is direct-event's mild vertex for (W), with phase (V, delta V_t) and data e0. Direct-event (S)/(W) then gives the law of u(T,Rx) with R = T delta, and (M) gives (14) with no R^d factor and no positivity assumption. Neither covariance monotonicity nor a global stationary operator is used. Two steps are left implicit and are supplied inside the named scope: the time-change citation (local-flow lines 464-468) and the Bochner-average law transfer; see minor findings 3 and 4."
+    },
+    {
+      "claim": "C6. Clock, block and source application, and quantifiers.",
+      "verdict": "PASS",
+      "reason": "The note separates horizon L=1/delta, mask r=c/delta with c>=1+M (so r>=1, as local-flow needs), and physical R=T delta (lines 40-43, 283-285). The source cutoff is eta/delta (line 52). On block m: W^delta(m+u,x) = delta^(a/2) W(m delta + delta u, x) and h(delta(m+u)) = h(m delta + delta u), with amplitude g and phase (V, delta V_t). These match local-flow (7.1) and lines 432-434. The final fractional block is kept by restriction and the composition law. Line 299 says explicitly that no bound on the entire product is given. Every limit is at fixed delta (line 52), and nowhere is a large-time limit interchanged with a source limit."
+    },
+    {
+      "claim": "C7. The four local Lean statements, the negative controls, and the Python probes.",
+      "verdict": "PASS",
+      "reason": "The literal types in types-and-axioms.txt match JointTilt.lean. tilt_exponent is a universal ring identity over r,s,c,v,w. It is exactly the log of E[exp(-sZ - s^2v/2 + r(xi + sc))] = exp(r^2 w/2), using Var(r xi - sZ) = r^2w - 2rsc + s^2v. That matches (10) with j = exp(r l) and the note's MINUS density/PLUS shift; it is not a Gaussian MGF theorem. I checked the residuals by hand: wrong_sign_error leaves 2rsc and wrong_cost_error leaves -s^2v/2. shifted_amplitude has only hypothesis 0<delta and proves delta^((1-a)/2)\u00b7delta^(a/2)/\u221adelta = 1 via rpow_add, sqrt_eq_rpow and div_self. That is the real-power amplitude consumed in (9) and (13); no target identity is assumed. All four depend only on propext, Classical.choice and Quot.sound. The controls are false at r=s=c=v=w=1: WrongSign evaluates to 2\u22600, WrongCost to -1/2\u22600, and WrongAmplitude 4/\u221a4 = 2\u22601. Each log shows 'unsolved goals \u22a2 False' with exit code 1, not an API or setup error. The receipt's original and replay hashes are identical. Reading check_contract.py (A=X, Z=\u03c3X+\u03c4Y, w=1) and check_polynomial.py as source, both encode the same exact algebra, and their JSON values match my hand recomputation (for example 4, -2, -6, -2601/200, -9/8, -40). I did not re-score kernel correctness. The probes add no Gaussian or flow content, and none is claimed."
+    },
+    {
+      "claim": "C8. Honesty, non-vacuity, no hidden gaps or circularity, remaining goal stays open.",
+      "verdict": "PASS",
+      "reason": "Lines 3-8 and \u00a76 (lines 301-316) disclaim everything C8 lists: no event rate, spectral complement/cone/product bound, terminal-growth observable, sharp constant, optimizer-profile map, source-constant map, source-normalization repair, higher-dimensional claim, novelty, whole-paper/circulation clearance or Lean package. No desired analytic result enters as a hypothesis: (10) is proved from finite-dimensional facts, (9) from the covariance computation, and (13)-(14) from named inputs. The four worker-honesty concerns are each addressed by the C2-C5 checks above. Prior inputs remain scoped named inputs. The note does not state non-vacuity (v>0 for nonzero psi, as contract \u00a75 does), but the theorem holds for all v>=0; see minor finding 6."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "1. \u00a73 lines 193-197 extend (9) from global-E inputs to all of F, including constant phases, by 'the bounded operator/cutoff construction'. This needs two facts that are not spelled out: H_delta(u)w = H_delta(u)Kw, and that H_delta(u) has output supported in O. Both follow quickly from accepted finite propagation of the free group (local-flow \u00a74, chi_j S(t)v = chi_j S(t)psi_j v) and supp zeta_r \u2282 [-2r,2r]. Global-E density in F cannot replace them, and the note correctly does not assume it. One explicit sentence would close this.",
+      "2. Line 34 cites 'accepted phase-response Section4' for the d=1 form Gamma = c_Gamma|x|^-alpha dx. That section is outside the contract's explicit list. The fact is elementary and is an internal dependency of the named local-flow note (local-flow line 27 lists phase-response as an input), so no stronger analytic input is borrowed. The citation boundary could be stated precisely.",
+      "3. Line 283 cites only local-flow (6.1) and direct-event \u00a71 for identifying J_delta(X) with the semiclassical canonical average. This needs the fast-to-slow time change (u = t/delta, cutoff eta/delta \u2194 eta, vertex factor g delta^(a/2-1) = delta^(-1/2)). The accepted local-flow \u00a77 lines 464-468 supply it, and I checked the algebra, but the note should cite that passage.",
+      "4. The law transfer from direct-event \u00a71, which equates finite lists of fixed-order terminal coefficients, to the Bochner spatial average \u222bphi(x)u(T,Rx)dx is left implicit. For (14) only the second moment is needed, which is \u222b\u222bphi phi E[V V] by Bochner/Fubini and follows from two-point equality. Worth one sentence.",
+      "5. Notation overlaps: local-flow's (T,R) means (horizon, mask), applied here at T=L, R=r, while direct-event's (T,R) is physical (line 283 versus 285). Line 274 also calls the probability space carrying the semiclassical W 'the original common Gaussian probability space'. The note does distinguish r from the physical R (line 43), but these phrasings risk confusion.",
+      "6. Non-vacuity, i.e. v>0 for nonzero psi as in contract \u00a75, is not restated in the note. The tilt is correct for every v>=0, so this affects only the remark, not correctness.",
+      "7. Phi(X)=A and the version identities hold almost surely; the qualifier is implicit in lines 100-107. The WrongAmplitude control (delta=4, exponent sum 1) is a generic altered-power check and is not tied to one named plausible error. Both points are presentation only."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is an AI review using Read only. It is not human verification and not a novelty audit. I did not run Lean, Python or any build. The compiled-correctness, replay and hash evidence for the four kernel deductions was accepted as the named local input, as instructed. I checked types, statements, applications and the reachability of each control's False by hand arithmetic only. That norm_num reduces \u221a4 to 2 in the pinned Mathlib is inferred from the recorded logs.",
+    "The prior accepted notes (interaction-driver \u00a7\u00a75-6, local-flow \u00a7\u00a73-7, direct-event \u00a71, phase-response \u00a75(M)) were treated as scoped named inputs and were not re-proved. Any defect inside them would carry over to this note's conclusions.",
+    "No whole-paper, novelty, circulation or formal Gaussian/Young/SPDE Lean acceptance is claimed or implied. The original sharp target, including spectral/cone/product growth, event rate, optimizer and source-constant map, and higher dimensions, stays open as the note says.",
+    "Source revision e51432c7d36f3a93aeb1ffcfa45b0dfa78f88a76 was taken as given. The packet is not a git repository, and I did not check that the frozen files match that revision."
+  ]
+}

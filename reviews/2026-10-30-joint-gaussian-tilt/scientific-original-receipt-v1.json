@@ -1,0 +1,187 @@
+{
+  "provider": "claude",
+  "started_utc": "2026-10-30T04:53:57.710962+00:00",
+  "workspace": "${HOME}/.local/state/Le-AI-Lab/stratonovich-tilt-scientific-v1/workspace",
+  "source_revision": "e51432c7d36f3a93aeb1ffcfa45b0dfa78f88a76",
+  "input_hashes": {
+    "lean-progress/local-checks/joint-tilt-v1/Audit.lean": "540bd4e209479a2eb73634bd717bbe9cbf71b37e02be60e603819036c84d9c88",
+    "lean-progress/local-checks/joint-tilt-v1/STATEMENT-FENCE.md": "bd8a2532d37f6fe4193ec403367063d7373666d94152abadff02a2c15e62a5e3",
+    "lean-progress/local-checks/joint-tilt-v1/StratonovichHAMAudit/JointTilt.lean": "241a4d4884c94e38c51fc713bafe4b0f845902557217e624169e0794bb132ad0",
+    "lean-progress/local-checks/joint-tilt-v1/WrongAmplitude.lean": "9fb85e70ffd09f742632c786ddf71e8640464a7ee30648b502bf5beb279804d2",
+    "lean-progress/local-checks/joint-tilt-v1/WrongAmplitude.txt": "3aa97ab014ad66ad6858c220fc63c363e2815e93f301777d78dcc63ae49817f4",
+    "lean-progress/local-checks/joint-tilt-v1/WrongCost.lean": "325d031f3fc04e39dee0e72094d58d7bc848ed2493ea6d5bc98864d4a6075ad5",
+    "lean-progress/local-checks/joint-tilt-v1/WrongCost.txt": "c51e08ef167c4c0944932d1b1667ca39817d8e3ba627b277ed241bcf04a8e6bc",
+    "lean-progress/local-checks/joint-tilt-v1/WrongSign.lean": "5360758f9b0b3ab75f80aa3d362fb2fb80b260e72212ff3f305cc3644b5ff390",
+    "lean-progress/local-checks/joint-tilt-v1/WrongSign.txt": "4b4e90e55db64ae261043a39de21911a04f2d7c5b23c5084921b2c56e4dff555",
+    "lean-progress/local-checks/joint-tilt-v1/local-receipt.json": "9e67a146c7ac5904a590dd966c9e4557e813c8218fd6152e878328fb4a0d9c69",
+    "lean-progress/local-checks/joint-tilt-v1/types-and-axioms.txt": "4301c69795e51d8120694695fa0fb1fde575ccab5edf75a26887ace0ddc1749a",
+    "notes/direct-event-calibration.md": "41091a143e7fb7f6081aadd2475751cf115a3f5ef318965d97ccc72277f79720",
+    "notes/interaction-driver-path.md": "d3df482028572f1f71f8b5055582265677284a537575952a41cd3ea121f88e8c",
+    "notes/joint-gaussian-tilt.md": "9c7b68a907474df8d929291842e05ed09c913947be13569dab6be514157bdd96",
+    "notes/local-causal-young-flow.md": "f482da909ce87e4789b09302a25c5e2a56e3e3cecddee59f5b22e6a0e04111b4",
+    "notes/phase-response-test.md": "4cb9b52e7868ab6bc69023b9c1bd1dc4485654c189baa5e9cfa31204f660127f",
+    "reviews/2026-10-30-joint-gaussian-tilt/check_contract.py": "69b4fec5917b47a3e8a28f65fc2473a7fd71fcc4ddf7302a68a8b98eddbc6bbd",
+    "reviews/2026-10-30-joint-gaussian-tilt/check_polynomial.py": "1f48a892c30b6e839cc961138dddd7b042e9490aafa9935ca7028df8147a5f06",
+    "reviews/2026-10-30-joint-gaussian-tilt/contract-v3.md": "537d0c6d94e4593223699c507cd3a25108a99ba6048edd867a573df3cdb7e8b3",
+    "reviews/2026-10-30-joint-gaussian-tilt/finite-checks.json": "b1a71014274c8ef5c6b8c6ae2c43a8d056b59abe7ea42fc0f231f231457e83b0",
+    "reviews/2026-10-30-joint-gaussian-tilt/lean-release-preflight.json": "3ed9aa93bfb61beef35e881f9c5ac32a9e5841ea55db033786c601917e55c94c",
+    "reviews/2026-10-30-joint-gaussian-tilt/polynomial-checks.json": "0192273a14b4c3c4d58245f8ac9120654f40739ef2261614d0c8679c85885610",
+    "reviews/2026-10-30-joint-gaussian-tilt/worker-honesty-v1.md": "063c71b9b26d1b7ea41a64edc84861a029dd3d23668aaa8e46630c0832193888"
+  },
+  "target": "notes/joint-gaussian-tilt.md",
+  "claude_account": "<removed>",
+  "review_contract_sha256": "a52e8fda7bece9f6f76f55362795bd6c0d70570dc47987f2e0c6de1d5a5fd787",
+  "effort_requested": "high",
+  "resumed_from": null,
+  "resume_mode": null,
+  "resume_binding": null,
+  "min_confidence": "high",
+  "scientific_verdict": null,
+  "accepted": false,
+  "report_contract_schema": "subscription-review-report/1",
+  "report_legacy_mode": null,
+  "legacy_resume_binding": null,
+  "diagnostics": [
+    {
+      "code": "unsupported-schema",
+      "path": "",
+      "message": "invalid report JSON: Expecting value: line 1 column 1 (char 0)"
+    }
+  ],
+  "required_sources_sha256": "4ac679a40ea150498987e3807b521d20712a32cc46e6ea3528b6af20353755bc",
+  "required_sources_workspace_copy": ".review/required-sources.json",
+  "workspace_preflight": {
+    "schema": "le-ai-lab.review-workspace-preflight/1",
+    "scanned": "review contract (--prompt-file)",
+    "references": {
+      "JointTilt.lean": [
+        "lean-progress/local-checks/joint-tilt-v1/StratonovichHAMAudit/JointTilt.lean"
+      ],
+      "notes/joint-gaussian-tilt.md": [
+        "notes/joint-gaussian-tilt.md"
+      ]
+    },
+    "waived": [],
+    "missing": [],
+    "required_sources_copy": ".review/required-sources.json"
+  },
+  "runtime_preflight": {
+    "effective_version": "2.1.304",
+    "cli_version": "2.1.304 (Claude Code)",
+    "image_requirements": false,
+    "supported_versions": [
+      "2.1.299",
+      "2.1.300",
+      "2.1.301",
+      "2.1.302",
+      "2.1.303",
+      "2.1.304",
+      "2.1.314"
+    ],
+    "supported": true
+  },
+  "cli_version": "2.1.304 (Claude Code)",
+  "executable": "${HOME}/.local/state/Le-AI-Lab/swe-white-time-resume-20261024/runtime/node_modules/@anthropic-ai/claude-code-linux-x64/claude",
+  "executable_requested": null,
+  "executable_effective": {
+    "path": "${HOME}/.local/state/Le-AI-Lab/swe-white-time-resume-20261024/runtime/node_modules/@anthropic-ai/claude-code-linux-x64/claude",
+    "version": "2.1.304 (Claude Code)"
+  },
+  "read_ledger_format_supported": true,
+  "auth": {
+    "authMethod": "<removed>",
+    "apiProvider": "firstParty",
+    "subscriptionType": "<removed>",
+    "email": "<account email removed>"
+  },
+  "model_requested": "claude-opus-5-5",
+  "command_without_prompt": [
+    "${HOME}/.claude/bin/claude-acct",
+    "run",
+    "<account removed>",
+    "--print",
+    "--model",
+    "claude-opus-5-5",
+    "--effort",
+    "high",
+    "--disable-slash-commands",
+    "--strict-mcp-config",
+    "--mcp-config",
+    "{\"mcpServers\":{}}",
+    "--permission-mode",
+    "dontAsk",
+    "--permission-prompts",
+    "none",
+    "--output-format",
+    "stream-json",
+    "--verbose",
+    "--tools",
+    "Read,Grep,Glob",
+    "--allowedTools",
+    "Read,Grep,Glob",
+    "--agents",
+    "${HOME}/.local/state/Le-AI-Lab/stratonovich-tilt-scientific-v1/claude-reviewer.json",
+    "--agent",
+    "artifact-reviewer",
+    "<stdin: prompt.txt without its final newline>"
+  ],
+  "prompt_transport": "stdin",
+  "prompt_bytes": 9309,
+  "prompt_sha256": "a664e8fc7a371f1b36d9d1a39beb00eac8be7f39448c406a20dc7ba4e882a443",
+  "transport_exit_code": 0,
+  "transport_ok": true,
+  "model_actual": "claude-opus-5-5",
+  "session_id": "2cd3380c-a950-424e-841a-5844d3ab9a40",
+  "usage": {
+    "input_tokens": 18,
+    "cache_creation_input_tokens": 78933,
+    "cache_read_input_tokens": 402496,
+    "output_tokens": 38733,
+    "output_tokens_details": {
+      "thinking_tokens": 28451
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 78933,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 35419,
+        "cache_read_input_tokens": 76025,
+        "cache_creation_input_tokens": 6112,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 6112
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "provider_error": false,
+  "terminal_subtype": "success",
+  "tools_actual": [
+    "Read",
+    "Grep",
+    "Glob"
+  ],
+  "actual_route_verified": true,
+  "candidate_hashes_unchanged": true,
+  "raw_report_sha256": "88221dfddb7da443ded16eae30e45aacdb22ec6bc804009cf4738fd863b995b9",
+  "status": "invalid-report",
+  "reason": "invalid report JSON: Expecting value: line 1 column 1 (char 0)",
+  "finished_utc": "2026-10-30T05:00:04.556927+00:00",
+  "elapsed_seconds": 366.846,
+  "transport_events_sha256": "debe5b20e0c894741d936fb0a010cef53cb109e64048636e9bbf4fb0168dbe2d",
+  "transport_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "read_ledger_sha256": "ab8b743f797c1e546b39a68337e15034ae68a14b42fad43d59ae3fad0c5fa18b",
+  "coverage_verified": true
+}

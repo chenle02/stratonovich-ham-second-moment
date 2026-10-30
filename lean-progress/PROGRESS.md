@@ -222,3 +222,9 @@ retain their exact earlier gates; total49local finite deductions, not49accepted
 new claims. Official latest stable Lean4.35.0/Mathlibv4.35.0 pin56a0058 checked
 against the existing read-only donor; no dependency migration or donor write.
 L0/PROPOSED, companion decision4 and all package/registry gates unchanged.
+
+Joint-tilt C7type/application gate now accepted8PASS/HIGH within the full
+scientific tilt review, sourcee51432c. All4formal sources unchanged;49local
+finite deductions retain their exact scoped gates. No formalGaussian/SPDE,
+companion or official package gate is inferred. Evidence/adjudication in
+reviews/2026-10-30-joint-gaussian-tilt/.

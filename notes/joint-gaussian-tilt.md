@@ -1,11 +1,13 @@
 # Joint Gaussian tilt for the actual masked local flow
 
-Status: CANDIDATE PROOF, NOT INDEPENDENTLY ACCEPTED. The scientific HIGH
-statement/analytic/type/application gate is open. Original full sharp target
-remains active. This is an application of standard Gaussian tilting, not a
-novel Gaussian theorem or whole-paper clearance. The repaired target is
-reviews/2026-10-30-joint-gaussian-tilt/contract-v3.md. Earlier statement audits
-and their unchanged failed/medium dispositions are recorded separately.
+Status: ACCEPTED at the scoped scientific statement/analytic/type/application
+ gate: Opus5.5/HIGH,8PASS,366.846seconds,23texts, no required repairs.
+Scientific source e51432c7d36f3a93aeb1ffcfa45b0dfa78f88a76; deterministic
+byte-reversible report-fence recovery, no new provider call. Exact adoption
+and seven optional clarifications are in
+reviews/2026-10-30-joint-gaussian-tilt/scientific-adjudication-v1.md.
+This is a standard Gaussian-tilt application, not a sharp constant, spectral
+product estimate, whole-paper clearance or formal Gaussian Lean result.
 
 ## 1. Named inputs and exact objects
 
