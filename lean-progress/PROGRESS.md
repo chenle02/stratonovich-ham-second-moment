@@ -400,3 +400,14 @@ fiveownedoutputs, actualFalsecontrols and11/30filearchives reverified.
 69finitefacts/16localseams scopedaccepted; Gamma/kernel/actualpoint proof
 NOTformalizedbythoselemmas. No officialpackage/companion/lease/registry/
 HPC/Comparator transaction; L0/PROPOSED/decision4unchanged.
+
+## Dimensional fullphase matrix provisional — 2026-10-30
+
+New1public full_interaction theorem/3actualmatrixdefs compile/audit/fresh
+replay cleanlyat4.35.0/Mathlib56a0058,officialreleaseAPIchecked. Complete
+pp.alldefs/type/std3axioms,5matchingartifacts,1Falsecontrol. Initialtwo-
+upperentry negationnormalizationcompilefailure retained; ringaddedonly
+onremaininggoals, no statement/guardchange. Botharchives memberverified.
+Evidence local-checks/dimensional-matrix-v1/.70finitefacts/17seams
+provisional. TwooldPhaseResponse kernels reusedunchanged,newcontext
+applications awaitgate; no newFourier/HS/Gaussian/flow/SPDE/packageproof.
