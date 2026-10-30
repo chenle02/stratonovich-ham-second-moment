@@ -1,10 +1,13 @@
 # Temporal equilibrium controls and a damped lower-endpoint comparison
 
-CANDIDATE PROOF, not adopted. Preproof92f2e16 passed8groups/HIGH,
-269.588seconds,15texts+2sourceimages,no requiredrepairs. Fullscientific
-analytic/source/type/application review REQUIRED. Generalcomparisonbelow
-has an explicit factor; globalfactor>=1 remainsOPEN. Oneactualwhitepoint
-is closed. Original all-range/sharpupper/dimensional goal remainsACTIVE.
+ACCEPTED at the scoped scientific analytic/source/type/application gate:
+actualOpus5.5/HIGH,7PASSgroups,295.426seconds,28texts+2sourceimages,
+no requiredrepairs; scientificsource8883160. Exact evidence and six
+optional clarifications in reviews/2026-10-30-damped-lower-bridge/
+scientific-adjudication-v1.md. Generalactualpoint comparison has explicit
+Omega; globalOmega>=1 remainsOPEN. One actualwhitepoint(alpha1,a1/2)
+is closed with exactzeta>1. Originalall-range/sharpupper/dimensional goal
+and intendedsource/domain/label interpretation remainOPEN/ACTIVE.
 
 ## 1. Actual model and scoped inputs
 

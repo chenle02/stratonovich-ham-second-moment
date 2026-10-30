@@ -1,0 +1,98 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "reviews/2026-10-30-damped-lower-bridge/target-v1.md lines 1-127 (complete)",
+    "reviews/2026-10-30-damped-lower-bridge/worker-honesty-v1.md lines 1-31 (complete)",
+    "reviews/2026-10-30-damped-lower-bridge/check-diagnostics.py lines 1-33 (complete)",
+    "reviews/2026-10-30-damped-lower-bridge/diagnostics-v1.json lines 1-111 (complete)",
+    "reviews/2026-10-30-damped-lower-bridge/check-diagnostics-attempt01.py lines 1-33 (complete)",
+    "reviews/2026-10-30-damped-lower-bridge/diagnostics-attempt01.json lines 1-10 (complete)",
+    "reviews/2026-10-30-damped-lower-bridge/falsification-v1.md lines 1-22 (complete)",
+    "reviews/2026-10-30-damped-lower-bridge/source-context-v1.json lines 1-20 (complete)",
+    "reviews/2026-10-30-damped-lower-bridge/local-recon-v1.md lines 1-29 (complete)",
+    "notes/occupation-control-approximation.md lines 1-364 (complete)",
+    "reviews/2026-10-30-occupation-approximation/scientific-adjudication-v1.md lines 1-63 (complete)",
+    "notes/raw-positive-value-ceiling.md lines 1-348 (complete)",
+    "reviews/2026-10-30-raw-value-ceiling/scientific-adjudication-v1.md lines 1-67 (complete)",
+    "notes/general-positive-consumer.md lines 1-477 (complete)",
+    "reviews/2026-10-28-source-normalization/adjudication-v2.md lines 1-66 (complete)",
+    "reviews/2026-10-28-source-normalization/packet-v2/pages/chen-03-lower.png (full image viewed)",
+    "reviews/2026-10-28-source-normalization/packet-v2/pages/chen-04-upper.png (full image viewed)",
+    "notes/damped-lower-endpoint-bridge.md lines 1-344 (complete)",
+    "reviews/2026-10-30-damped-lower-bridge/statement-adjudication-v1.md lines 1-33 (complete)",
+    "reviews/2026-10-30-damped-lower-bridge/scientific-worker-honesty-v1.md lines 1-39 (complete)",
+    "reviews/2026-10-30-damped-lower-bridge/pi-library-context-v1.txt lines 1-15 (complete)",
+    "lean-progress/local-checks/damped-lower-v1/StratonovichHAMAudit/DampedLower.lean lines 1-34 (complete)",
+    "lean-progress/local-checks/damped-lower-v1/Audit.lean lines 1-9 (complete)",
+    "lean-progress/local-checks/damped-lower-v1/WrongMargin.lean lines 1-3 (complete)",
+    "lean-progress/local-checks/damped-lower-v1/WeakPi.lean lines 1-4 (complete)",
+    "lean-progress/local-checks/damped-lower-v1/types-and-axioms.txt lines 1-101 (complete)",
+    "lean-progress/local-checks/damped-lower-v1/local-receipt.json lines 1-68 (complete)",
+    "lean-progress/local-checks/damped-lower-v1/README.md lines 1-20 (complete)",
+    "lean-progress/local-checks/damped-lower-v1/archive-verification.json lines 1-11 (complete)",
+    "lean-progress/local-checks/damped-lower-v1/version-check.json lines 1-16 (complete)",
+    ".review/required-sources.json lines 1-98 (read as the plan; earns no read credit)"
+  ],
+  "checks": [
+    {
+      "claim": "C1: The note uses the exact accepted objects: the actual d1 Riesz or white Gamma with amplitude, the a/alpha domain, q/k/m/d/kappa, X, O, the form rate, the covariance and the real V_c. Q2>=V2=2^m V1 is the same canonical point consumer with no first-mean premise. Source (1.10) is used as a map only, (1.12)-(1.13) define an own E_star^O on an explicit domain, and E_sp is purely spatial.",
+      "verdict": "PASS",
+      "reason": "Section 1 matches occupation Sections 1-6 and (SUP), and consumer (24), (31)-(32) at c=2 give V2=2^m V1. O agrees with occupation Section 6. The images confirm the exact (1.10) map with 2^3, the (1.12) penalty 1/2, the (1.13) denominator 2(4-alpha-2alpha_0)=2d, and the every-slice A_d. Delta and F_a/F_0=exp(Delta/k) were recomputed by hand. Unknown normalization is retained, and E_sp contains no temporal kernel and no disputed M."
+    },
+    {
+      "claim": "C2: Section 2 is a complete proof of the temporal identity for every s in [0,1], with mass M_a and legal unbounded controls f_a tensor phi having time-constant potential.",
+      "verdict": "PASS",
+      "reason": "I re-derived the following by hand. The Gamma recurrence and Beta product follow with Jacobian R. The binomial series satisfies (1-z)y'=py and (1-z)^p y is constant. The left split has exponent 2r-1-r+1=r. The ratio Beta(n+1-r,2r)/Beta(1-r,2r)=(1-r)_n/(1+r)_n holds and (r)_n/(1+r)_n=r/(r+n). The expansion of B_s has identical terms, and reflection gives L(1-s) and B_s+B_(1-s)=Beta(r,r). The product r Beta(1-r,2r)Beta(r,r)=Gamma(r)Gamma(1-r) holds. s=0 gives Beta(r,1-r) directly and s=1 follows by reflection, with finiteness argued separately. M_a in (4) is correct, and L2 membership needs -2r=a-1>-1, i.e. a>0. The product is strongly measurable with norm ||f_a||2||phi||B. For every sigma, q=phi and h=Gamma*phi, v=M_a int phi(Gamma*phi), and I is the constant whole-H1 rate by occupation (11). No rough flow, point Gaussian or mass renormalization enters."
+    },
+    {
+      "claim": "C3: R_sp and E_sp are positive finite real, relation (6) holds in both sup directions, and the actual theta/ell controls yield (7)-(8) with exact constants.",
+      "verdict": "PASS",
+      "reason": "b>0 and A_sp<=C b^(alpha/2) follow slice by slice from raw-value Section 2, and A_sp>0 holds. Occupation dilation gives ell^alpha and ell^2, including white via the Radon pushforward. (6) agrees with raw-value (6)-(7) at eta=1/2. The radicand is L^2 and the cost is M_a(1+u)^2 L^q/(R u^(alpha/2)), which is (7). u=alpha/q minimizes the factor. The maximum (k/q)(qC)^(-1/k), with 1+u=4/q, gives k[(R/M_a)alpha^(alpha/2)/(8q^(q/2))]^(1/k), since -k+1-alpha/2=-q/2. (6) then gives exactly M_a^(-1/k)F_0(E_sp). All tests lie in X_pos and are fixed before time limits, and no sup/time interchange or static SPDE theorem is used."
+    },
+    {
+      "claim": "C4: K_star has the stated properties and R_star is the exact row maximum. Spatial CS follows from the accepted X CS, (9) is a positive finite real supremum, (10) holds, and the general (11) holds with no global Omega>=1 assertion.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "K_star<=|u|^-a, concavity of Phi, and midpoint equality are correct. chi tensor h_i gives B_Gamma=tau int h1(Gamma*h2), and the v's carry the same tau>0, so CS follows by cancellation. Pointwise interaction <=R_sp b_s^(alpha/4) b_t^(alpha/4), then Schur with row R_star, then unit-interval concavity gives R_star R_sp T^(alpha/2). The scalar maximum equals R_star^(2/(2-alpha))E_sp. A constant-in-time bump plus dilation gives positivity. F_0 homogeneity gives R_star^(1/k), and (8)+(1)+consumer gives (11) exactly. Omega is amplitude-free and global Omega>=1 is explicitly not claimed. The notes concern only the unstated but routine measurability of the (s,t) integrand and the citation of (6) where the definition of R_sp is what is used."
+    },
+    {
+      "claim": "C5: The white point alpha=1, a=1/2 yields (12)-(16) with exact constants, and the original point lower bound holds for any white amplitude.",
+      "verdict": "PASS",
+      "reason": "q=3, k=2, m=3/2, d=2, kappa=5/4. The substitution gives Gamma(a/2)/(2Gamma(a))(2d/u)^(a/2). Integration gives (4/3)2^(-1/4)Gamma(1/4)/sqrt(pi), which is also the script's formula. Gamma(1/2) and Gamma(3/2) are correct. M_a^-1/B_star=3pi 2^(1/4)/(8Gamma(3/4)) and the CS split gives Gamma(3/4)<=pi^(1/4), hence W. expDelta is correct, and W^4=81pi^3/2048 gives (14) exactly. Omega^2>=W/expDelta gives Omega^8>=(14). (157/50)^3*5^10/(9*2^25)=N/D. N=2418683125, D=2415919104 and the difference 2764021 were checked by hand. The strict Omega>zeta>1 and (16) follow. Amplitude stays only in E_star^O. No computed energy, static M, source fix, p1 or Jensen premise is used."
+    },
+    {
+      "claim": "C6: The three Lean lemmas have the stated public types, real pi, proper Nat and standard axioms, and the module imports the Mathlib Pi bounds. Analytic steps stay outside the kernel, and the evidence is recorded only.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The types printed in types-and-axioms.txt match the source and the uses in Section 5: Nat 9*2^28<157^3*5^4; real (9*2^25)/5^10<pi^3; real (157^3*5^4)/(9*2^28)<(pi^3*5^10)/(9*2^25). Axioms are propext, Classical.choice and Quot.sound. The two controls are False numeric instances (the 3^3 case: 30.92...<27). The receipt records 5/5 equal replay hashes, compile/audit exits of 0, control exits of 1, and the Mathlib pin 56a0058. archive-verification records 30-member archives and unchanged first-two types. All of this is taken as recorded only; I executed nothing and validated no hash, archive or tag. Control failure at False is recorded by the README, while the receipt holds only exit codes. The note gives no formal Beta, Gamma, energy, point or SPDE credit and no package gate."
+    },
+    {
+      "claim": "C7: The diagnostics, failure preservation, preproof clarifications, source boundaries and open-goal statements are honest and match the code and JSON.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The successor differs from attempt01 only in the two integrand lines, with the same 50 digits, 1e-18 and 1e-45 tolerances and the same assertions. The substitution was hand-checked with Jacobian s^(1-a)/(1-a). All 15 JSON cases and the point values match the code. Endpoint singularities remain integrable and are stated as such. Attempt01 is written metadata, and numerics are explicitly not a proof. The nine-point probe gets no global credit. The seven preproof items are addressed across the note and honesty file. The original G:upper is retained and the sharp/all-dimensional goal stays active. No Skorohod, source-correction, contact, companion, HPC, novelty, whole-paper or circulation claim appears. The note concerns one sentence in Section 6, whose conditional does not itself repeat the first-to-second label dictionary."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Section 6 lines 318-321: the sentence 'If a source lower constant is defined using exactly (9), (16) gives its corresponding displayed p2 lower endpoint' names only the energy-input condition and calls itself the 'precise' conditional. The raw-value adjudication (finding 2) says a comparison with a source second-moment constant needs both the source input and a first-to-second-label dictionary. The note separates the 2^m label earlier in Section 6 and says 'displayed', so no inequality is wrong. Naming both conditions in this sentence would be cleaner.",
+      "Section 6 'displayed p2' can be misread as source page 2. Elsewhere the note cites pages as p3 and p4, whereas 'p2' here means moment order 2.",
+      "Section 4 does not state measurability of (s,t)->int g_s^2(Gamma*g_t^2) in (9). It follows routinely from strong B-measurability of g^2 (occupation Section 6) and continuity of the bilinear pairing (occupation (4)), so this is a clarification only.",
+      "Section 4 line 207 says 'then (6)', but the pointwise bound A_sp<=R_sp b^(alpha/2) uses the definition of R_sp from Section 3, not the energy relation (6). The display (6) does contain R_sp, so the mathematics is unaffected.",
+      "Section 4 line 200: 'positive smooth time function chi in (0,1)' should be read as an L2(0,1) function such as a compact bump or constant, so that chi tensor h lies in X. tau is then automatically positive and finite.",
+      "Section 2 says the Gamma and Beta integrals 'converge' without displaying the local exponent argument. This is classical and harmless."
+    ],
+    "lean_note": []
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is hand reasoning by an AI reviewer. It is not human verification, a novelty audit, a whole-paper cold read or circulation clearance.",
+    "I executed no Lean, Python, hash, archive, replay, tag or version check. All such evidence is reported only as recorded in the packet. The native Lean control logs and archives are not in the required sources. The receipt does not itself state the Lean version tag; the tag context comes from the README, version-check and the earlier root-check adjudications.",
+    "Accepted occupation, general-positive and raw-value inputs were checked for matching and scope, not re-proved. The general-positive scientific adjudication and the canonical excerpts it cites are outside the required sources.",
+    "Source reading is limited to the two supplied crops of p3 and p4. No conjectured source second-moment display or page outside those crops was available, so the Section 6 conditional source interpretation cannot be compared with such a display.",
+    "The Mathlib excerpt shows pi_gt_d2 without its enclosing namespace. Its Real. prefix rests on the recorded compile.",
+    "Global Omega>=1, the d2/d3 lower construction, the sharp upper constant, the conditional exact limit and source normalization remain open and were not assessed as proved.",
+    "The ambient amsg hook notice was neither read nor used."
+  ]
+}
