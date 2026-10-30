@@ -4788,3 +4788,11 @@ gitbindings verified,supporteddoctor/selectedheadroom13short63weekly.
 Includes new2finitekernel exacttype/application check. No proofadoption
 until properterminalverdict; preproofsyntaxrecovery is separate identity.
 OriginalgoalACTIVE; no source/optimizer/dimensional claim.
+
+While FULLoccupationproofgate runs, next rawVALUE/source/clock obligations
+retained as UNREVIEWEDplanning in occupation-approximation/next-variational-
+value-obligations.md. Actualdensity is not sourcevaluecomputation; any
+occupation-Rayleigh selection, Gaussiancontrol elimination, clockweights
+or minimax step needs its own precise frozenclaim/falsification/proof.
+No intsqrt ->sqrtint shortcut, timeconstant rate, optimizerattainment or
+normalizationfix is adopted. Not part of running25textproofpacket.
