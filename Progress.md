@@ -4323,3 +4323,10 @@ now exactly replayable. Not independently accepted. Three finite scalar
 budgets compile/replay with standard3axioms and3False controls, all5owned
 outputs match; no formal analytic/cone theorem. Full independent proof/
 application/type/C5scientific HIGHgate required next. Goal remains ACTIVE.
+
+Full moving-cone scientific gate live at frozenabfdab4: actualfirst-party
+Opus5.5/high,24required texts, unchangedHIGHthreshold; session43331/native
+stratonovich-moving-cone-scientific-v1. Includes analytic proof, actual
+input applications, exact3finite Lean types/applications and independent
+mandatory C5repair recheck. Poll samehandle/receipt; no restart on timeout.
+No scientific cone/product acceptance at this capture. FullgoalACTIVE.
