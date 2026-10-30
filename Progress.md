@@ -4406,3 +4406,12 @@ runtime2.1.304 doctor passed; selected account healthy36percent short/
 and2finite Lean exact types/application review. Poll samehandle/receipt,
 no restart on observation timeout. No event or lower-rate adoption yet.
 Original fullgoalACTIVE and canonicalTeX/PDF unchanged.
+
+While the actual event scientific gate runs, exact source p4 upper image
+and retained HIGH source-normalization adjudication were re-read. The
+literal penalty/kernel discrepancy remains an input boundary; no intended
+fix inferred. Next raw variational/dilation obligations retained as
+UNREVIEWEDplanning in actual-shifted-event/variational-next-contract.md.
+It keeps auxiliary V1 separate from actual first mean/source L_*, and
+requires fixed-scale class/eigenrate/rawvariance tests before any proof.
+No new variational or sharp result claimed. Same live proof gate continues.
