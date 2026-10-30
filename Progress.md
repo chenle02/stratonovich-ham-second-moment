@@ -4451,3 +4451,11 @@ excerpt/custody supplies finite-rate input, canonicalTeX/PDF unchanged.
 Todo: independent preproof statement/fidelity audit; then self-contained
 raw dilation/supremum proof and highvalue scalarLean checks; scientific
 review; then actual source/optimizer gap. FullgoalACTIVE.
+
+Raw variational preproof audit now live on frozen6203ab7: actual
+first-partyOpus5.5/high,12texts+1exactprimarysourceimage,unchangedHIGH
+threshold; session4799/native stratonovich-raw-variational-statement-v1.
+Supportedlaunch-local2.1.304doctor and selectedheadroom37/60passed.
+Poll samehandle/receipt; no restart on observation timeout. No raw
+variational dilation/supremum proof or sourceconstant claim yet.
+FullgoalACTIVE; refresh HANDOFF to current accepted actual lower result.
