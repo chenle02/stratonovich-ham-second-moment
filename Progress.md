@@ -4480,3 +4480,9 @@ accepted. Four local power identities cleancompile/replay/standard3axioms
 with3False controls and5ownedhashmatches; first warning/serverhash refusal
 preserved and two tacticsequencing tokens cleaned, publictypes unchanged.
 Full scientific analytic/type/application gate required next. GoalACTIVE.
+
+Predispatch whitespace check found an extra blank EOF in the new accepted
+upper context and its packet copy. Trimmed only trailing blank lines and
+resealed the scientific manifest BEFORE any review dispatch; mathematical
+proof, Lean sources, old statement packet/sourceimage unchanged. Historical
+e1cb2ef checkpoint remains preserved; the review uses its clean successor.
