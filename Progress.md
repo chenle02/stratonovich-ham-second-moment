@@ -4115,3 +4115,21 @@ screening, not S1proof or independent acceptance. C.3.5does not supply
 uniform familyconstants. Next unresolved primary inputs: ground-state
 existence/isolation/essential threshold, then uniform gap/weighted derivatives
 and the Sobolev-to-F wave transfer. No new proof/Lean/package/event claim.
+
+
+### Ground-state primary-source leads — 2026-10-30
+
+Matched Teschl2014SECONDedition authorPDF identified (schroe2.pdf), local
+custody/hash and selectedstatement locations retained. Initialschroe.pdf
+was2009FIRSTedition; its theorem numbering is not reused. Secondedition
+T10.2p258 supplies selfadjointness/core/essential[0,infinity) for decaying
+bounded potentials; T10.13 supplies simplicity/positivity IF groundstate
+exists. Selected reading only, visual/definition/source gate stillopen.
+Negativebottom variationaltest, uniformfamilygap/weighted derivatives and
+F-wave transfer remain necessary; no spectralproof accepted.
+
+Normal reference completion queued as exactticket
+ tk-20261030-010856-codex-stratonovich-spectral
+for existingrefdbDOI10.1090/gsm/157, canonicalteschl:14:mathematical;
+PapisexactDOIempty,wikiciteabsent,queuecheckrefdb1/5. QUEUED only, no
+terminalingestreceipt yet. Sourceauthorcontact/directsixrepowrites none.
