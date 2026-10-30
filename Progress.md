@@ -4682,3 +4682,10 @@ All nine old finite kernels unchanged; exact NEWanalytic/typeapplication
 hypotheses spelled out, no new compile/formalSPDE claim. CanonicalTeX/PDF
 unchanged. Full scientific gate next; original fullgoal ACTIVE and lower
 class not enlarged as accepted mathematics before that gate.
+
+General-positive consumer FULLscientific gate now live at12c9879:
+actualfirst-partyOpus5.5/high,34texts,unchangedHIGHthreshold; session67761/
+native stratonovich-general-consumer-scientific-v1. All34live/frozen/git
+bindings verified, supporteddoctor/selectedheadroom9short62weekly passed.
+Proof not yet adopted; do not call preproof review a proof review.
+Poll samehandle/receipt,no observation-timeout restart. FullgoalACTIVE.
