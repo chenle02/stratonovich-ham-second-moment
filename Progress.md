@@ -6,6 +6,7 @@
 
 ## Current state
 
+- **Live damped-lower preproof:** actualtemporal/static/dampedenergy/generalOmega comparison and exactwhitealpha1,a1/2point target at92f2e16; actualOpus5.5/high,15texts+2images,session27492/native stratonovich-damped-lower-statement-v1. No lower theorem adopted yet. GlobalOmega>=1/all-dimensional sharp goal open; poll same handle.
 - **Latest raw value comparison:** actual positive-control variational VALUE ceiling in own raw occupation energy E_eta, with strict displayed-map gaps ateta1/2 and legalalpha1/10,a9/10eta1, accepted8groups/HIGH atad6c188 (322.118seconds,26texts+4images). Actual moment Q2 still has only LOWERQ2>=V2 from thismechanism; no Q2 upper/sourceconstantidentity. Two scalar applications checked. NEXT: freeze/falsify concrete damped-LOWER-endpoint comparison via proposed temporalpotential/staticcontrol/kernel-row route; current9pointrecon unproved. Original sharpupper/all-dimensions/intendednormalization remainopen.
 - **Latest occupation bridge:** actual positive X=L2(time;L1 intersect L2 space) covariance/closed-H1-form/measurable-Rayleigh-rate approximation, original-point lower and exact smooth/X score-supremum equality accepted8groups/HIGH at80e47d6 (272.897seconds,25texts). Includes actual finite-energy occupation densities g² and bounded nonnegative timeweights. Two new scalar form-budget applications checked. RawVALUE ceiling now accepted atad6c188; NEXTdamped-lower-endpoint comparison. Intended normalization/sharp upper/higher dimensions remain open.
 - **Latest general-positive consumer:** actual d1 general-positive compact psi cone/noisy event/SAME-Z raw half-cost original-point lower and enlarged V_c^pos accepted24groups/HIGH at12c9879 (462.611seconds,34texts). All nine unchanged finite-kernel NEWapplications checked. Q2>=V2pos>=V2sep with exact auxiliary homogeneity; no source/firstmean/Jensen-improvement claim. Occupation-profile approximation now accepted at80e47d6; NEXT raw value/source/clock comparison, retaining sharp upper/higher dimensions/intended normalization.
@@ -4935,3 +4936,9 @@ correctedfactoredproduct/expm1 SAMEassertion/tolerance. No theoremfrom
 quadrature. Frozen15texts+2exactauthorimages in damped-lower-bridge/;
 independentstatement/class/sourceaudit beforelongproof. Originalallrange/
 sharpupper/d2d3/fullgoal notnarrowed; potentialwhitepoint partialresult.
+
+Dampedlower preproof live at92f2e16: actualfirstpartyOpus5.5/high,
+15texts+2exactauthorimages,all17live/frozen/gitbindings checked,supported
+doctor/selectedheadroom22short65weekly. Session27492/samehandle,no restart
+onobservationtimeout. Longanalyticproof awaitsstatement/object/sourcegate.
+OriginalfullgoalACTIVE; no sourcefix/firstmean/wholegoal claim.
