@@ -357,3 +357,15 @@ Rootversion4.35.0/eb6cafb andMathlibv4.35.0tag->56a0058/Falsegoals/archives
 rechecked.62finite deductions/14localseams scopedaccepted. No formal
 energy/covariance/spectral/valueceiling/SPDE or officialpackage/companion/
 lease/registry/HPC/Comparator transaction. L0/PROPOSEDunchanged.
+
+## Damped-lower point scalar seam provisional — 2026-10-30
+
+3locallemmas exact_margin/pi_cube_certificate/rational_pi_gain compile,
+audit/freshownedreplay cleanly on4.35.0/Mathlib56a0058,latestofficialAPI
+verified. Completepublictypes/std3axioms,5matchingartifacts,2Falsecontrols.
+Clean2declpilot retained; successorADDSstrongerRealratioforactualzeta,
+first2typesunchanged, bothnativearchives allmembersverified. Evidence
+local-checks/damped-lower-v1/.65finite deductions/15localseams provisional.
+Gamma/Beta/staticcontrol/sourceenergy/pointlower analyticapplications
+remainforindependentfullgate. No package/companion/lease/registry/HPC/
+Comparator transaction, L0/PROPOSEDunchanged.

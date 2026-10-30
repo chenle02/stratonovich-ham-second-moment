@@ -4942,3 +4942,11 @@ Dampedlower preproof live at92f2e16: actualfirstpartyOpus5.5/high,
 doctor/selectedheadroom22short65weekly. Session27492/samehandle,no restart
 onobservationtimeout. Longanalyticproof awaitsstatement/object/sourcegate.
 OriginalfullgoalACTIVE; no sourcefix/firstmean/wholegoal claim.
+
+While dampedlower preproof runs, three genericlocalpointscalar lemmas
+compile/audit/replay: exactNatmargin, pi³threshold and strongerRealratio
+neededforzeta. Completepublictypes/std3axioms,5matchingownedartifacts,
+2actualFalsecontrols. Clean2declpilot plusclean3declstrengthening retained,
+first2typesidentical, bothfullarchives memberverified.65finite deductions/
+15seams provisional; no Beta/Gamma/control/sourceenergy/SPDE proof from
+thesechecks. Exactactualanalyticapplications awaitfullscientificgate.
