@@ -5396,3 +5396,17 @@ bindings checked, no newLeanmodule or analyticformalization. Fifteen-text
 preproofpacket frozen before longproof. Original all-dimensional lower/
 sharpupper/source goal ACTIVE, no operator/Schatten/path/flow/new moment
 adoption. No sourcefix/contact/HPC/Skorohod/companion/TeX/PDF/wiki edits.
+
+### Independent finite Gaussian matrix ingredient frozen — 2026-10-30
+
+Actual variance statement59507 still running; no long actual proof/adoption
+before gate. Independent next ingredient N1 finite rectangular complex
+Gaussian Schatten evenp moment, sqrt(p-1) with average of both variance
+trace powers, then max. Proposed self-contained Hermitian-dilation/IBP/
+scalar Young/trace Holder route, not an imported external theorem.
+N2 natural-power weighted scalar inequality is a proposed useful LOCAL
+Lean seam only; no new module/package/companion yet. N3 exact row/column
+16-dimensional p4 controls refute dropping either variance side (288>144).
+12 finite Hermite polynomial controls pass MAX bound, not average;50digit
+working not certified accuracy. No continuum/actualnoise/series/path/flow
+claim. Five-text preproof frozen before longproof, original full goal ACTIVE.
