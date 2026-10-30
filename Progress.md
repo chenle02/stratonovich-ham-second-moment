@@ -4592,3 +4592,12 @@ H2/formdomain explicit. No new Lean/kernel theorem: core analytic
 source/family obligations outside existing finite seams. Not independently
 accepted; full scientific analytic/application/source gate next.
 Original fullgoalACTIVE; no general-profile event/sourceconstant claim.
+
+Nonseparable actual-family full scientific gate now live onc0a0093:
+actualfirst-partyOpus5.5/high,22texts+8exactsourceimages, unchangedHIGH
+threshold; session84918/native stratonovich-nonseparable-scientific-v1.
+All30live/packet/committed hashes matched; supportedlaunch-localdoctor
+passed, selectedaccount <usage removed>. Includes actual uniform
+spectral/weighted/J_phi/physicalF complement proof, not just feasibility.
+Poll samehandle/receipt, no timeoutrestart. No S1-S3adoption or general
+positive-profile event/sourceconstant claim yet; original fullgoalACTIVE.
