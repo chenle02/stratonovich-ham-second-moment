@@ -1,0 +1,259 @@
+{
+  "schema": "le-ai-lab.review-read-ledger/1",
+  "coverage_verified": true,
+  "claude_code_version": "2.1.304",
+  "events_sha256": "bbdf740af080adfc39aeb0f9f7761bb2bc07c2a9c166c30402cf261d313aea19",
+  "events_hash_bound_to_receipt": true,
+  "stream_workspace": "${HOME}/.local/state/Le-AI-Lab/stratonovich-weighted-scientific-v1/workspace",
+  "required_sources_sha256": null,
+  "continuation": false,
+  "continuation_credit": null,
+  "proves": "Each credited line was returned, numbered and byte-equal to the frozen workspace file, in a tool_result paired with a Read or line-numbered content-mode Grep call of the hash-bound provider stream.",
+  "does_not_prove": "Attention, understanding, or retention: a credited line may have been skimmed, ignored, or dropped by context compaction before the report was written. Uncredited lines may still have been seen in a form the ledger cannot attribute (previews, unnumbered output, subagents).",
+  "sources": [
+    {
+      "path": "notes/spectral-weighted-projection.md",
+      "sha256": "12a2e8bb71c10f93a191f358773a164a4b4e4974b597b4004f4f78c690da799a",
+      "total_lines": 200,
+      "required_ranges": [
+        [
+          1,
+          200
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          200
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "notes/spectral-ground-family.md",
+      "sha256": "6198fc526a7e65a1ef2131184d86f335066cd07edf61998c0765ef72d0cf488c",
+      "total_lines": 138,
+      "required_ranges": [
+        [
+          1,
+          138
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          138
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "notes/local-causal-young-flow.md",
+      "sha256": "f482da909ce87e4789b09302a25c5e2a56e3e3cecddee59f5b22e6a0e04111b4",
+      "total_lines": 503,
+      "required_ranges": [
+        [
+          1,
+          503
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          503
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "notes/joint-gaussian-tilt.md",
+      "sha256": "35e67b2a208abc5d9f9684e515dc5fbab23e9ad236f37ddb29ec0acf98dfa063",
+      "total_lines": 318,
+      "required_ranges": [
+        [
+          1,
+          318
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          318
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "reviews/2026-10-30-spectral-phase/target-v2.md",
+      "sha256": "b0a68593dd73b17872a364f3708b75bfb9d56209e6777842e4a14eda1073bedd",
+      "total_lines": 97,
+      "required_ranges": [
+        [
+          1,
+          97
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          97
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "reviews/2026-10-30-weighted-projection/worker-honesty.md",
+      "sha256": "e390731e3af85c11f62751f720926043209af21b949170161013e25e65622a45",
+      "total_lines": 35,
+      "required_ranges": [
+        [
+          1,
+          35
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          35
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "reviews/2026-10-30-weighted-projection/diagnostics.json",
+      "sha256": "45a97d5461544fe359fb586af693ae7461005e4a9e0506590127c4b651196187",
+      "total_lines": 30,
+      "required_ranges": [
+        [
+          1,
+          30
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          30
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    }
+  ],
+  "tool_calls": [
+    {
+      "id": "toolu_01VZ4y878SRwzXp2dGLtMkC6",
+      "tool": "Read",
+      "source": ".review/required-sources.json",
+      "plan_copy_read": [
+        ".review/required-sources.json"
+      ],
+      "uncredited": "runner-owned plan copy (.review/): never read credit",
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01HfgU7GYAouv4TftEoEFmQA",
+      "tool": "Read",
+      "source": "notes/spectral-weighted-projection.md",
+      "credited": {
+        "notes/spectral-weighted-projection.md": [
+          [
+            1,
+            200
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01LYBE8ukVe4Ji3FgrnS1Hfu",
+      "tool": "Read",
+      "source": "notes/joint-gaussian-tilt.md",
+      "credited": {
+        "notes/joint-gaussian-tilt.md": [
+          [
+            1,
+            318
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01VVWquN6zAyWCHRCnfVjB8Q",
+      "tool": "Read",
+      "source": "notes/local-causal-young-flow.md",
+      "credited": {
+        "notes/local-causal-young-flow.md": [
+          [
+            1,
+            503
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01MwjxFMr7AgfScSV7ZhqLp9",
+      "tool": "Read",
+      "source": "notes/spectral-ground-family.md",
+      "credited": {
+        "notes/spectral-ground-family.md": [
+          [
+            1,
+            138
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01H8LoAzrmHGV6qUm78ENx1j",
+      "tool": "Read",
+      "source": "reviews/2026-10-30-spectral-phase/target-v2.md",
+      "credited": {
+        "reviews/2026-10-30-spectral-phase/target-v2.md": [
+          [
+            1,
+            97
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01DU4qwhCwR4onz2sEftSBzi",
+      "tool": "Read",
+      "source": "reviews/2026-10-30-weighted-projection/diagnostics.json",
+      "credited": {
+        "reviews/2026-10-30-weighted-projection/diagnostics.json": [
+          [
+            1,
+            30
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01AoM69gNof2ZpYENVjA2pXp",
+      "tool": "Read",
+      "source": "reviews/2026-10-30-weighted-projection/worker-honesty.md",
+      "credited": {
+        "reviews/2026-10-30-weighted-projection/worker-honesty.md": [
+          [
+            1,
+            35
+          ]
+        ]
+      },
+      "stream": "attempt"
+    }
+  ],
+  "diagnostics": []
+}

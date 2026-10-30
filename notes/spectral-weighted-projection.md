@@ -1,8 +1,11 @@
 # Uniform tails and the actual local-phase ground projection
 
-CANDIDATE, not independently accepted. This is standard ODE/spectral
-analysis for the original sharp-lower consumer, not a novel theorem or a
-complementary wave estimate. Full original goal remains active.
+ACCEPTED at the scoped analytic/application gate: actual Opus5.5/HIGH,
+18 checks PASS,244.922seconds, no required repairs; scientific source1242590.
+Evidence and seven optional adjudications are in
+reviews/2026-10-30-weighted-projection/adjudication.md. This is standard
+ODE/spectral groundwork, not a novel theorem or complementary wave estimate.
+Full original goal remains active.
 
 ## 1. Inputs and target
 

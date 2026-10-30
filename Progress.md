@@ -6,6 +6,7 @@
 
 ## Current state
 
+- **Latest weighted projection:** actual d1 fixed-family weighted eigenfunction/derivative tails, duality, projection continuity and forward invariance accepted18PASS/HIGH at1242590. Seven optional findings adjudicated in reviews/2026-10-30-weighted-projection/. Complement/product/event/sharp targets still open.
 - **Latest spectral input:** actual d1 fixed-family ground-state existence/positivity and uniform energy/rate gap accepted11PASS/HIGH at45e1b13. Evidence/7minor adjudications in reviews/2026-10-30-spectral-phase/. Weighted tails, actual F-wave complement, product/event/sharp targets remain open.
 - **Latest accepted consumer:** actual d1 driver/canonical squared-average Gaussian tilt at `e51432c`,8PASS/HIGH; exact recovered report and7minor adjudications in reviews/2026-10-30-joint-gaussian-tilt/. Retained residual, exact raw profile/cost and original point-moment consumer. Spectral product/event/sharp/higher-dimensional targets remain open.
 - **Phase:** actual d1masked/local causal Young flow, canonical noise-only averaged observable and growing-block operator stability accepted13PASS/HIGH atd020a2a. Uniform local operator bounds handle data1 and a growing observation cone without a global stationary HS norm. Actual d1 Gaussian tilt is accepted at the later scoped gate; spectral product-growth/event and sharp constants remain open; original higher-dimensional scope retained. WHITE13/original9unchanged.
@@ -4219,3 +4220,22 @@ not claimed. Frozen prior S1 statement covers this unchanged subaim.
 Review routing NORMAL_REVIEW: no Lean certificate covers ODE/duality/wave
 claims; exact analytic exclusion recorded in worker honesty. No new Lean
 package, companion, source import, source-normalization or novelty claim.
+
+
+### Weighted projection adopted; complementary bridge candidate
+
+Actual Opus5.5/HIGH18PASS,244.922seconds,no requiredrepairs, all7texts
+read; native/current/frozen/committed bindings and full native archive
+verified. All7optional findings adjudicated; only opening status changes
+on adoption, full proof body remains inherited bytes. Fixed-family
+weighted tails, duality, actual F projection/continuity/positive entrance
+and forward invariance now accepted. No new Lean/spectral foundation.
+
+Next bounded candidate notes/spectral-complement-transfer.md gives explicit
+fractional-form comparison, global spectral-wave calculus including zero
+threshold and decaying branch, actual-flow identification, finite propagation
+localization and indispensable global-projection tail correction. Exact
+155geometry cases and finite wrong-tail/sign/zero-threshold controls pass;
+mechanisms were named before drafting, executable run was after drafting.
+Candidate UNREVIEWED; no use in product/event/sharp target before HIGH gate.
+Original fullgoalACTIVE; canonicalTeX/PDF and accepted prior proofs unchanged.

@@ -1,0 +1,129 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "notes/spectral-weighted-projection.md lines 1-201 (complete)",
+    "notes/spectral-ground-family.md lines 1-139 (complete)",
+    "notes/local-causal-young-flow.md lines 1-504 (complete)",
+    "notes/joint-gaussian-tilt.md lines 1-319 (complete)",
+    "reviews/2026-10-30-spectral-phase/target-v2.md lines 1-98 (complete)",
+    "reviews/2026-10-30-weighted-projection/worker-honesty.md lines 1-36 (complete)",
+    "reviews/2026-10-30-weighted-projection/diagnostics.json lines 1-31 (complete)",
+    ".review/required-sources.json lines 1-24 (read plan; no read credit)"
+  ],
+  "checks": [
+    {
+      "claim": "C1: The objects match the frozen family: same Riesz/white Gamma with amplitude, fixed K=[b0,b1] with b0>0, U=Gamma*q, H_b=-d^2-bU, H_b p_b=-lambda_b^2 p_b.",
+      "verdict": "PASS",
+      "reason": "These match target-v2 and ground-note Inputs. Ground-note eq. (2) supplies l=sqrt(epsilon) and L=sqrt(b1 M), and eq. (4) supplies the Lipschitz levels. The kinetic and potential signs agree with u_tt=u_xx+bUu and with the target generator (v,w)->(w,v_xx+V_b v), because p''+bUp=lambda^2 p."
+    },
+    {
+      "claim": "C1: F is the actual separable closure of compact smooth phases plus both constants, with no Riesz L1 premise and no assumed complement.",
+      "verdict": "PASS",
+      "reason": "Local-flow Section 4 is used unchanged, and the note correctly says compact phases alone are not dense. Integrability is used only for p_b, via (1), never for U. The Riesz tail enters only through U->0 and bounded derivatives. No step uses a complementary estimate or assumes a single bound state."
+    },
+    {
+      "claim": "C2: The eigenfunction has uniform H2 and Sobolev bounds and vanishes at infinity.",
+      "verdict": "PASS",
+      "reason": "The energy identity gives ||p'||^2=b int U p^2-lambda^2<=b1 M. The ODE gives ||p''||_2<=L^2+b1 M. The inequality ||g||_inf^2<=2||g||_2||g'||_2 is valid (not sharp) and applies to p and p' in H1. Density of compact smooth functions gives vanishing at infinity. All constants depend only on the fixed family."
+    },
+    {
+      "claim": "C2: One fixed R and beta=l/2 give the half-line comparison and bound (1).",
+      "verdict": "PASS",
+      "reason": "For |x|>=R, b1 U<=l^2/2, lambda_b^2>=l^2, b<=b1, U>=0 and p>0 give p''>=(l^2/2)p>=(l^2/4)p. Then w=p-z is C2, has w(R)=0, tends to 0 at infinity, and satisfies w''-beta^2 w>=0. A positive maximum would be attained in the open half-line and would give w''-beta^2 w<0 there, a contradiction. R does not depend on b, and neither half-line uses evenness of U. The uniform sup bound handles the interior, so C=sup||p||_inf e^(beta R) is uniform."
+    },
+    {
+      "claim": "C2: p, p', p'' have uniform exponential tails, and the weighted bound (2) holds for gamma<beta.",
+      "verdict": "PASS",
+      "reason": "|p''|<=(L^2+b1 M)|p| gives the p'' tail. Integrating from the appropriate infinity gives |p'|<=C/beta e^(-beta|x|), using p'->0. Squaring and integrating gives (2) exactly for gamma<beta, and the strict inequality is respected."
+    },
+    {
+      "claim": "C3: The localized H1/2 and H-1/2 pairings converge absolutely and are bounded on F.",
+      "verdict": "PASS",
+      "reason": "Since rho_j lives in [j-1,j+1], (3) follows from the uniform multiplier bounds and the p, p' tails. Each term is at most ||rho_j p||_H1 ||chi_j z||_E. Summing the geometric series in j gives <=C||z||_uloc. Because rho_j chi_j=rho_j, the formula equals the ordinary integral for bounded locally integrable phases, and equals the global E pairing because sum rho_j p converges absolutely in H1."
+    },
+    {
+      "claim": "C3: Partition independence holds through the actual dense class, and the cutoff tail (5) holds uniformly.",
+      "verdict": "PASS",
+      "reason": "Independence is checked on compact smooth phases plus constants, which is the defining dense set of F, and then extended by boundedness. In (5), rho_j(1-kappa_D)=0 unless |j|>D-1. Multipliers move across the pairing, the H1 multiplier bounds of (1-kappa_D) are uniform in D, and the geometric tail gives C e^(-beta D)||z||_F. No pointwise evaluation of w occurs."
+    },
+    {
+      "claim": "C3: e_b, ell_b and Pi_b are normalized correctly, including both wave branches and uniform positive entrance from e0.",
+      "verdict": "PASS",
+      "reason": "ell_b(p,lambda p)=(1+1)/2=1 and ell_b(p,-lambda p)=(1-1)/2=0, so Pi^2=Pi and the decaying partner lies in the complement. Uniform norms follow from the H2 bounds, the E->F embedding and lambda_b>=l. The pairing of the constant 1 with p is int p by (4). From 1=int p^2<=||p||_inf int p we get ell_b(e0)>=1/(2 sup_b||p_b||_inf)>0 uniformly."
+    },
+    {
+      "claim": "C4: The complement bound and residual give (8), with constant 2M/Delta.",
+      "verdict": "PASS",
+      "reason": "The spectrum of H_c off {E1(c)} lies in [E2(c),inf), including the threshold case E2=0, so ||(H_c-E1(c))Q_c y||>=Delta||Q_c y||. The exact residual is (H_c-E1(c))p_b=(E1(b)-E1(c)+(b-c)U)p_b, which has the correct sign, and each of the two terms has norm <=M|b-c|. Here Q_c is the L2 complement and is kept distinct from I-Pi_c."
+    },
+    {
+      "claim": "C4: Positive overlap gives L2 Lipschitz continuity, and (9) gives H2 Lipschitz continuity.",
+      "verdict": "PASS",
+      "reason": "Strict positivity gives a in (0,1], and ||p_b-p_c||^2=2(1-a)<=2(1-a^2)=2||Q_c p_b||^2. Also p_b''-p_c''=(lambda_b^2-bU)(p_b-p_c)+(lambda_b^2-lambda_c^2-(b-c)U)p_c, with lambda^2=-E1 Lipschitz, so the second derivative is Lipschitz. The first derivative follows by interpolation, using xi^2<=1+xi^4."
+    },
+    {
+      "claim": "C4: e_b is continuous, and ell_b and Pi_b are operator-norm continuous on F, by finite core plus uniform tails.",
+      "verdict": "PASS",
+      "reason": "lambda_b is Lipschitz because it is bounded below by l. For fixed D the kappa_D part contributes at most C_D|b-c|, and the tail is uniformly <=C e^(-beta D) by (5). The reciprocal lambda factor is handled, and Pi_b-Pi_c=(e_b-e_c)ell_b+e_c(ell_b-ell_c). Global E density in F is not used. Compactness of K gives uniform continuity."
+    },
+    {
+      "claim": "C5: Classical solutions with bounded derivatives exist on finite horizons for compact and constant phases.",
+      "verdict": "PASS",
+      "reason": "The d'Alembert kernel 1/2 on |x-y|<=t-s has mass t-s, so the Volterra iteration converges in C_b. Tilt Section 3 gives boundedness of every derivative of U, and in the white case U=c_Gamma q. The differentiated equations therefore have bounded coefficients and forcing. This does not need compact U."
+    },
+    {
+      "claim": "C5: Differentiation and integration by parts give a''=lambda^2 a and y'=lambda y.",
+      "verdict": "PASS",
+      "reason": "Integrable tails of p and bounded u_t, u_tt justify dominated differentiation. Integration by parts has vanishing boundary terms because p,p'->0 and u,u_x are bounded. Then a''=int(p''+bUp)u=lambda^2 a, so y=(a+a'/lambda)/2 satisfies y'=(a'+lambda a)/2=lambda y. Formula (4) gives the ordinary integral on (u,u_t) directly, even though these phases are neither compact nor constant at positive time."
+    },
+    {
+      "claim": "C5: The growing eigenmode (10), functional covariance (11) and full commutation (12) hold on actual F.",
+      "verdict": "PASS",
+      "reason": "e^(lambda t)e_b is a classical solution with e_b in H2xH2, inside D(G) on E. Its interaction-picture path is C1 in E and so satisfies the accepted Young/strong integral equation. For (11), both sides are bounded functionals by (4) and the accepted flow bound, and they extend from the defining dense class. (12) follows algebraically: P Pi z=ell(z)e^(lambda t)e_b and Pi P z=e_b e^(lambda t)ell(z). Identifying the classical solution with P_b(t)z is a routine unstated step, recorded in findings.minor; it closes by the mechanism recorded there."
+    },
+    {
+      "claim": "C5: bU is an admissible profile, so the named flow on F exists for the unmasked Riesz potential.",
+      "verdict": "PASS",
+      "reason": "Local-flow (5.6) with c=0 requires vanishing W1infinity tails, not merely bounded derivatives. Tilt Section 3 proves the C1 tail C(1+|x|)^-alpha, including for derivatives, and compact support in the white case. A time-constant coefficient is trivially strongly measurable in C_b^1. The note cites only bounded derivatives explicitly; the required tail is available in its cited section."
+    },
+    {
+      "claim": "C6: The exact rational diagnostics are arithmetically correct and correctly scoped.",
+      "verdict": "PASS",
+      "reason": "I recomputed every row. Growing coefficient 1, decaying 0, displacement-only on the decaying partner 1/2, and no-reciprocal on the growing mode (1+lambda)/2 = 2/3, 1, 9/4. The scope line disclaims any ODE, Sobolev or wave theorem. The note also disclaims spectral certification."
+    },
+    {
+      "claim": "C6: There is no false Lean, spectral, complement, product, event, sharp, novelty or clearance claim, and uniformity is fixed-family only.",
+      "verdict": "PASS",
+      "reason": "Note Sections 1, 5 and 6 and the worker file keep the complement, cone/product, event, variational, sharp and high-dimensional items open and disclaim novelty and clearance. Lean is explicitly not claimed. All constants are over one frozen U and K; none is claimed across profiles."
+    },
+    {
+      "claim": "C6: The worker's listed concerns each resolve mathematically.",
+      "verdict": "PASS",
+      "reason": "Each listed item was checked above: the unbounded-half-line maximum principle, derivative tails, both duality entries, partition density, cutoff tails, gap residual, positive normalization, H2 and operator continuity, classical wave solution, invariance on constants, and generator signs."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Section 5 passes from the classical solution to ell_b(P_b(t)z)=(a+a'/lambda_b)/2 without saying (u,u_t)=P_b(t)z. 'Uniqueness of the named evolution' is invoked explicitly only for e_b. For constant data, the classical solution is not known a priori to be a path in F, so uniqueness on F does not apply verbatim. The step closes as follows: the Volterra iterates named in the note coincide term by term with the Picard iterates of the mild equation on F, and local-flow Section 6 identifies the Young and strong integrals. A Gronwall argument in E_uloc is an alternative. One explicit sentence is recommended; this reviewer does not treat the omission as a mathematical failure.",
+      "The note does not state that unmasked bU satisfies local-flow (5.6). It mentions only bounded derivatives, whereas vanishing of U' at infinity is what gives F invariance. Tilt Section 3 supplies this tail, so a one-line citation would suffice.",
+      "Section 6 says dropping the reciprocal-lambda factor 'would fail' the normalization tests. That holds only for lambda!=1: at lambda=1 the wrong and right functionals coincide, as the diagnostics row with value 1 shows. The family of functionals is still wrong in general, but the test is non-detecting at that value.",
+      "Worker-honesty says 'accepted ground and tilt inputs', while the note also relies on the accepted local-flow Sections 4-5. Note Section 1 cites it correctly, so the worker summary is merely incomplete.",
+      "Worker-honesty says the S1 target was 'independently statement-audited previously', while the frozen target-v2 header still reads 'PROPOSED, unproved and unreviewed'. The packet contains no audit evidence, so this is unverified here. It does not affect the mathematics.",
+      "Equations (10)-(12) are forward-time statements, t>=0, for P_b(t)=P_b(t,0), as the accepted evolution is on s<=t. This is not stated explicitly; an explicit t>=0 would be cleaner.",
+      "The note uses L for the upper rate bound, while the tilt note uses L=1/delta. This is harmless here but could confuse later consumers."
+    ],
+    "note": []
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is an AI artifact review only, not human verification, a novelty audit, a whole-paper review or circulation clearance.",
+    "Accepted ground, local-flow and tilt results were treated as scoped inputs. Their application was checked, but their own proofs and the Teschl and Friz--Hairer sources were not re-audited, and those primary sources are not in the packet.",
+    "Process claims in worker-honesty could not be verified from the packet: preflight SHAs, doctor output, the inherited-draft byte preservation, and diagnostics inherited_sha256. inherited-draft.md is absent from the packet, and no hash was recomputed.",
+    "The diagnostic values were recomputed by hand from their definitions. No script or file-integrity check was run.",
+    "The verdict covers only the note's own scope: tails, duality, projection, continuity and invariance on the fixed family. The complementary propagator, cone/product, event and sharp-constant obligations remain open and were not assessed as true."
+  ]
+}
