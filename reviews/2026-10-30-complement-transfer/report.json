@@ -1,0 +1,131 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "notes/spectral-complement-transfer.md: lines 1-205, whole file, read without offset or limit",
+    "notes/spectral-weighted-projection.md: lines 1-203, whole file, read without offset or limit",
+    "notes/spectral-ground-family.md: lines 1-138, whole file, read without offset or limit",
+    "notes/local-causal-young-flow.md: lines 1-503, whole file, read without offset or limit",
+    "notes/joint-gaussian-tilt.md: lines 1-318, whole file, read without offset or limit",
+    "reviews/2026-10-30-spectral-phase/target-v2.md: lines 1-97, whole file, read without offset or limit",
+    "reviews/2026-10-30-weighted-projection/adjudication.md: lines 1-43, whole file, read without offset or limit",
+    "reviews/2026-10-30-complement-transfer/worker-honesty.md: lines 1-31, whole file, read without offset or limit",
+    "reviews/2026-10-30-complement-transfer/diagnostics.json: lines 1-796, whole file, read without offset or limit",
+    ".review/required-sources.json: lines 1-29, read as the plan; earns no read credit"
+  ],
+  "checks": [
+    {
+      "claim": "C1: The objects are the actual frozen family: real H_b=-d2-bU, U=Gamma*q with actual amplitude, fixed positive K, and F as the closure of compact smooth phases PLUS both constants in uniformly local E.",
+      "verdict": "PASS",
+      "reason": "Sections 1 and 4 use the accepted ground and weighted objects, with M=||U||infinity carrying the amplitude. The projection and d come from those notes. No complement bound, single-bound-state or Riesz L1 premise appears. Infinitely many Riesz bound states are covered by the E2 convention."
+    },
+    {
+      "claim": "C2: (2) B<=A_b<=cB holds with c=1+b1M, and both operators are >=1 with common form domain H1.",
+      "verdict": "PASS",
+      "reason": "A_b=B+(b1M-bU) with 0<=b1M-bU<=b1M, and b1M<=b1M*B because B>=1. Hence A_b<=(1+b1M)B."
+    },
+    {
+      "claim": "C2: The inverse variational formula and resolvent monotonicity hold for unbounded T,S.",
+      "verdict": "PASS",
+      "reason": "Completing the square in the form norm of T+t gives <f,(T+t)^-1 f> minus the form norm of u-(T+t)^-1 f, with maximizer (T+t)^-1 f. Form order then gives the resolvent order and T/(T+t)<=S/(S+t) for each f in L2."
+    },
+    {
+      "claim": "C2: The square-root integral, Tonelli step and domain inclusion yield (3).",
+      "verdict": "PASS",
+      "reason": "The scalar integral is pi by the stated substitutions. Tonelli applied to the spectral measure of f gives <f,T^(1/2)f> in [0,infinity], so finiteness on the S side forces f in D(T^(1/4)). Applying this to (B,A_b) and (A_b,cB), with (cB)^(1/4)=c^(1/4)B^(1/4), gives (3) with the correct exponent and D(A_b^(1/4))=H1/2."
+    },
+    {
+      "claim": "C2: The negative-dual completion and (4) identify E_b with E uniformly in b.",
+      "verdict": "PASS",
+      "reason": "For w in L2, ||A^-1/4 w||=sup|<w,v>| over ||A^1/4 v||<=1, since A^1/4 maps its domain onto L2. Nesting the unit balls through (3) gives ||w||_A<=||w||_H-1/2<=c^(1/4)||w||_A. L2 is dense in H-1/2, the pairing is the distributional one, and c depends only on b1 and M."
+    },
+    {
+      "claim": "C3: Q has spectral support in [-mu^2,infinity), and (5) is the correct wave matrix with the four stated conjugated entries.",
+      "verdict": "PASS",
+      "reason": "Max-min with a simple isolated E1 gives the support. Differentiation gives u_t=-hS_t v+C_t w on each spectral branch, including h<0 and h=0. Conjugation by (A^1/4,A^-1/4) gives C_t, sqrt(h+c)S_t, -hS_t/sqrt(h+c) and C_t exactly."
+    },
+    {
+      "claim": "C3: All four entries are <=C(1+t)exp(mu t) at positive, negative and zero h, with no inverse mu.",
+      "verdict": "PASS",
+      "reason": "For h>=0, |S_t|<=min(t,h^-1/2) gives upper entry <=sqrt(1+c)(1+t) and lower entry <=1. For h<0, sinh(x)/x<=cosh(x) gives |S_t|<=t exp(mu t), and 1<=h+c<=c, |h|<=b1M follow from -mu^2>=E1>=-b1M. At mu=0 the negative case is vacuous and S_t(0)=t."
+    },
+    {
+      "claim": "C3: The decaying ground branch is retained, the projections are uniform, and (6) follows.",
+      "verdict": "PASS",
+      "reason": "For z=(v,w) with alpha=<p,v>, gamma=<p,w>, one has (I-Pi)z=(Qv,Qw)+a(p,-lambda p) with a=(alpha-gamma/lambda)/2, and the Q part is unaffected because ell vanishes on it. The branch evolves by exp(-lambda t)<=exp(mu t). Weighted norms use c-lambda^2 in [1,c] and l<=lambda<=L. The Q and branch parts are E_b-orthogonal, so (6) holds uniformly."
+    },
+    {
+      "claim": "C3: The spectral flow equals the named physical flow on global E through H2xH1 regularity, Duhamel, uniqueness and density in E only.",
+      "verdict": "PASS",
+      "reason": "For data in H2xH1 the multipliers give (u,u_t) in C(H2xH1), with u in C2(L2) and u_tt=-Hu. Differentiating S(t-s)z(s) gives the free Duhamel equation with forcing (0,bUu). Equality with the physical flow follows by Picard/Gronwall, which needs the small completion recorded in findings.minor, not a new idea. Extension uses density of compact smooth phases in E, E bounds for the spectral flow, F bounds for the physical flow and the E->F embedding. No density of E in F is used, and all E bounds come from the weighted calculus rather than L2 bounds."
+    },
+    {
+      "claim": "C4: The kappa_(j,t) family exists with the stated radius and uniform derivatives, and (7) holds through a finite partition with an O(1+t) count.",
+      "verdict": "PASS",
+      "reason": "A product of shifted fixed transitions equals 1 on [j-t-4,j+t+4], is supported in [j-t-5,j+t+5], and has derivative bounds independent of j and t. At most 2t+13 indices k contribute. Each term is bounded in E by a uniform W1infinity multiplier bound times ||chi_k z||_E. The triangle inequality gives (7), and kappa z is global E."
+    },
+    {
+      "claim": "C4: Finite propagation holds on F including constants, and (8) follows.",
+      "verdict": "PASS",
+      "reason": "The free group on F has the accepted localization identity, and bU multiplication preserves support. Picard terms converge factorially in F through accepted bounds on S on finite horizons and on B on F. Compact distributional testing is continuous. The input (1-kappa)z vanishes on |x-j|<t+4, so at time t its output vanishes on |x-j|<4, a set containing supp chi_j."
+    },
+    {
+      "claim": "C4: Identity (9) is exact and has the correct sign.",
+      "verdict": "PASS",
+      "reason": "Substituting R=P-exp(lambda t)e ell on both z and kappa z in (8) gives chi R z=chi R(kappa z)+exp(lambda t)chi e ell((kappa-1)z). Only the accepted P Pi=exp(lambda t)Pi is used."
+    },
+    {
+      "claim": "C4: The local eigenvector bound ||chi_j e_b||_E<=C exp(-beta|j|) and the shifted dual bound (10) hold uniformly, including distant cells.",
+      "verdict": "PASS",
+      "reason": "Pointwise tails of p and p' on |x|>=|j|-3 give the first bound. For (10), a cell k contributes only if |k-j|>=t+3, hence |k|>=t+3-|j|. Summing ||rho_k p||_H1<=C exp(-beta|k|) against the uniform multiplier bound gives C exp(-beta(t-|j|)) for t>|j|, and the full sum gives the uniform bound otherwise. The accepted centered bound (5) is not misapplied; the shifted cutoff is handled by rerunning the cell sum."
+    },
+    {
+      "claim": "C4: The nonlocal tail after growth and the supremum in j yield (11).",
+      "verdict": "PASS",
+      "reason": "|j|+(t-|j|)_+=max(|j|,t)>=t gives C exp((lambda-beta)t) for every j. The first term is C(1+t)^2 exp(mu t) from (6), (7) and the chi_j multiplier bound. The F norm is exactly sup_j||chi_j .||_E, and the argument uses no global L2 norm of constants."
+    },
+    {
+      "claim": "C5: The final uniform eta and polynomial absorption are correct, including threshold zero and repeated other bound states.",
+      "verdict": "PASS",
+      "reason": "With 2eta=min(d,beta,l)=min(d,l/2), one has mu<=lambda-2eta, lambda-beta<=lambda-2eta and 0<eta<=l/4<inf lambda. Inequality (12) follows from (1+t)^2<=2+2t^2 and exp(eta t)>=(eta t)^2/2. Combining gives (1) with a constant depending only on the family and partition. No profile or family exchange occurs, and mu=0 is allowed."
+    },
+    {
+      "claim": "C6: The exact rational diagnostics recompute.",
+      "verdict": "PASS",
+      "reason": "Five t values times 31 j values give 155 rows, and each tail_exponent_distance equals max(|j|,t)>=t. Cutoff identity: -1=3/2+(-5/2), while the wrong sign gives 4 and dropping the tail gives 3/2, so both fail as recorded. Threshold: S_4(0)=4 with unit velocity. These are witnesses, not operator proofs, and the file says so."
+    },
+    {
+      "claim": "C6: Honesty and scope are accurate: no formal spectral or Lean claim, only the frozen complement is proved, and products, observables, events, variational, sharp, higher-dimensional and source-normalization items stay open.",
+      "verdict": "PASS",
+      "reason": "The candidate and worker-honesty.md state these limits explicitly and no argument relies on them. The target's polynomial-prefactor conversion requirement is met. Non-load-bearing status wording and control-coverage notes are in findings.minor."
+    },
+    {
+      "claim": "C6: All author-named risks were evaluated: form order and domains, negative dual, flow equality, threshold, decaying branch, cutoff constants, finite propagation with constants, sign and tail of (9), distant cells, and absorption.",
+      "verdict": "PASS",
+      "reason": "Each risk was traced in the checks above and none produces a failed implication."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Section 3 states the Picard/Gronwall uniqueness bound on global E, but the accepted physical flow is a priori F-valued. The conclusion still follows from accepted inputs in either of two ways. Run Gronwall on F using local-flow Section 5 bounds and the E->F embedding, or note that the physical flow of compact smooth data is compactly supported by finite propagation, hence global E with continuity from the local cutoff bounds. Stating the chosen space would be clearer; this is disclosed here, not silently absorbed.",
+      "The identification paragraph needs (5) on the full H_b spectrum, or an explicit exponential treatment of the p_b phase, whereas the displayed scalar bounds are stated on the Q support. The extension is immediate on finite horizons because h>=-lambda^2>=-b1M.",
+      "Real Hilbert spaces are used with the spectral theorem implicitly through complexification. This is harmless because the functional-calculus functions are real and H_b commutes with conjugation, but the note does not say so.",
+      "The derivation of (10) is compressed. The explicit cell condition |k|>=t+3-|j| and the geometric tail constant depending on beta would make the shifted estimate easier to audit.",
+      "The candidate header still says it depends on the weighted projection candidate, and worker-honesty.md says it is conditional on that note passing, while the frozen weighted note is now marked ACCEPTED. This status wording is stale and does not affect the mathematics.",
+      "worker-honesty.md says the S1 target was independently statement-audited. The weighted adjudication records that audit as 9PASS/MEDIUM with accepted=false, as a preproof audit and not accepted scientific evidence. The wording should not be read as acceptance. It is not used as proof here.",
+      "Section 5 lists five finite controls, but diagnostics.json has rows only for the threshold, cutoff identity and geometry. The ground decaying-partner control and the margin/absorption control have no diagnostic row. Both were checked by hand in this review. The boolean fail flags are recorded results, and no executable script is in the packet.",
+      "The min with l in eta is redundant because beta=l/2. The p_b'' bound cited for ||chi_j e_b||_E is also unnecessary. Neither affects correctness."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is an AI review, not human verification, novelty audit, Lean certificate, or whole-paper or circulation clearance. It covers only the frozen complement bound (1), and only its deterministic argument for the frozen family.",
+    "Accepted internals of the ground, weighted-projection, local-flow and tilt notes were examined at their applications, as instructed, and not re-proved. This includes imported Teschl theorems, H1/2 multiplier bounds, free-group bounds on F, Young solution identities and admissibility of bU.",
+    "Packet-external files named in those notes were not read, including original source images and earlier reports. The target-v2 pre-proof source-crosswalk step and the audit records named by the adjudication could not be inspected, and were not treated as evidence.",
+    "Diagnostics were recomputed by hand from the stored values. No executable was run and no script was available, so the run timing claim in diagnostics.json was not independently confirmed.",
+    "Explicit numerical values of the uniform constants C and C_eta are not given by the candidate. Their dependence was traced qualitatively to the frozen family and partition."
+  ]
+}

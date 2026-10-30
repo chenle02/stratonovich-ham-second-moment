@@ -1,0 +1,170 @@
+{
+  "provider": "claude",
+  "started_utc": "2026-10-30T14:07:54.863815+00:00",
+  "workspace": "${HOME}/.local/state/Le-AI-Lab/stratonovich-complement-scientific-v1/workspace",
+  "source_revision": "b07d013",
+  "input_hashes": {
+    "notes/joint-gaussian-tilt.md": "35e67b2a208abc5d9f9684e515dc5fbab23e9ad236f37ddb29ec0acf98dfa063",
+    "notes/local-causal-young-flow.md": "f482da909ce87e4789b09302a25c5e2a56e3e3cecddee59f5b22e6a0e04111b4",
+    "notes/spectral-complement-transfer.md": "578b6e8ffb3f695445ff71f886211f4f53346438028fb6ddaf90fbdb8f961a34",
+    "notes/spectral-ground-family.md": "6198fc526a7e65a1ef2131184d86f335066cd07edf61998c0765ef72d0cf488c",
+    "notes/spectral-weighted-projection.md": "75050b8d05c15fb34983cd17bffcfdbe23cf0cf93d2ae243b4881074e56be620",
+    "reviews/2026-10-30-complement-transfer/diagnostics.json": "517d6dd863c3ef047712b16f387db14dcb3725b37a6af306d6088041d2f7412e",
+    "reviews/2026-10-30-complement-transfer/worker-honesty.md": "45884f667b0e4fcad03972700d9d49c4363d3f3410273720a7885872a6b54303",
+    "reviews/2026-10-30-spectral-phase/target-v2.md": "b0a68593dd73b17872a364f3708b75bfb9d56209e6777842e4a14eda1073bedd",
+    "reviews/2026-10-30-weighted-projection/adjudication.md": "2c6c46de7f697f8e92461473f160cbaff2b720663fc03f0dc6ecf2e02451a37c"
+  },
+  "target": "notes/spectral-complement-transfer.md",
+  "claude_account": "<removed>",
+  "review_contract_sha256": "3ace60f59395fef2ccaa78688781954e13c11694d673ebd30a2ceeb7f08103bd",
+  "effort_requested": "high",
+  "resumed_from": null,
+  "resume_mode": null,
+  "resume_binding": null,
+  "min_confidence": "high",
+  "scientific_verdict": null,
+  "accepted": false,
+  "report_contract_schema": "subscription-review-report/1",
+  "report_legacy_mode": null,
+  "legacy_resume_binding": null,
+  "diagnostics": [
+    {
+      "code": "unsupported-schema",
+      "path": "",
+      "message": "invalid report JSON: Expecting ',' delimiter: line 1 column 12435 (char 12434)"
+    }
+  ],
+  "required_sources_sha256": "bf3da842da047d127c9911f257e7a7190d2268840d602ea3ce6455418b620936",
+  "required_sources_workspace_copy": ".review/required-sources.json",
+  "workspace_preflight": {
+    "schema": "le-ai-lab.review-workspace-preflight/1",
+    "scanned": "review contract (--prompt-file)",
+    "references": {
+      "notes/spectral-complement-transfer.md": [
+        "notes/spectral-complement-transfer.md"
+      ]
+    },
+    "waived": [],
+    "missing": [],
+    "required_sources_copy": ".review/required-sources.json"
+  },
+  "runtime_preflight": {
+    "effective_version": "2.1.304",
+    "cli_version": "2.1.304 (Claude Code)",
+    "image_requirements": false,
+    "supported_versions": [
+      "2.1.299",
+      "2.1.300",
+      "2.1.301",
+      "2.1.302",
+      "2.1.303",
+      "2.1.304",
+      "2.1.314"
+    ],
+    "supported": true
+  },
+  "cli_version": "2.1.304 (Claude Code)",
+  "executable": "${HOME}/.local/state/Le-AI-Lab/swe-white-time-resume-20261024/runtime/node_modules/@anthropic-ai/claude-code-linux-x64/claude",
+  "executable_requested": null,
+  "executable_effective": {
+    "path": "${HOME}/.local/state/Le-AI-Lab/swe-white-time-resume-20261024/runtime/node_modules/@anthropic-ai/claude-code-linux-x64/claude",
+    "version": "2.1.304 (Claude Code)"
+  },
+  "read_ledger_format_supported": true,
+  "auth": {
+    "authMethod": "<removed>",
+    "apiProvider": "firstParty",
+    "subscriptionType": "<removed>",
+    "email": "<account email removed>"
+  },
+  "model_requested": "claude-opus-5-5",
+  "command_without_prompt": [
+    "${HOME}/.claude/bin/claude-acct",
+    "run",
+    "<account removed>",
+    "--print",
+    "--model",
+    "claude-opus-5-5",
+    "--effort",
+    "high",
+    "--disable-slash-commands",
+    "--strict-mcp-config",
+    "--mcp-config",
+    "{\"mcpServers\":{}}",
+    "--permission-mode",
+    "dontAsk",
+    "--permission-prompts",
+    "none",
+    "--output-format",
+    "stream-json",
+    "--verbose",
+    "--tools",
+    "Read,Grep,Glob",
+    "--allowedTools",
+    "Read,Grep,Glob",
+    "--agents",
+    "${HOME}/.local/state/Le-AI-Lab/stratonovich-complement-scientific-v1/claude-reviewer.json",
+    "--agent",
+    "artifact-reviewer",
+    "<stdin: prompt.txt without its final newline>"
+  ],
+  "prompt_transport": "stdin",
+  "prompt_bytes": 5605,
+  "prompt_sha256": "4bc2a0a4cd4a660c255b47921dd134979024a8038c572ea1d1fee3e0488265bd",
+  "transport_exit_code": 0,
+  "transport_ok": true,
+  "model_actual": "claude-opus-5-5",
+  "session_id": "149d8e07-f8e8-441e-9543-cb55ea9c6a0f",
+  "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 62558,
+    "cache_read_input_tokens": 22698,
+    "output_tokens": 29332,
+    "output_tokens_details": {
+      "thinking_tokens": 23225
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 62558,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 28268,
+        "cache_read_input_tokens": 19494,
+        "cache_creation_input_tokens": 46268,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 46268
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "provider_error": false,
+  "terminal_subtype": "success",
+  "tools_actual": [
+    "Read",
+    "Grep",
+    "Glob"
+  ],
+  "actual_route_verified": true,
+  "candidate_hashes_unchanged": true,
+  "raw_report_sha256": "583f37a6bbe28c8a3ae22fe96cc7a5518ca18d42e40f6527609be46ac5b11580",
+  "status": "invalid-report",
+  "reason": "invalid report JSON: Expecting ',' delimiter: line 1 column 12435 (char 12434)",
+  "finished_utc": "2026-10-30T14:12:23.757510+00:00",
+  "elapsed_seconds": 268.893,
+  "transport_events_sha256": "cf94f3d3a3f4f72181fadd87990bef4cd80fea68ce63d6599a79e9fbb2a31822",
+  "transport_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "read_ledger_sha256": "178bf1d1b53863cc21aac0cbe46ee1cfdd15517f96d7074fe164e2363275cdb9",
+  "coverage_verified": true
+}

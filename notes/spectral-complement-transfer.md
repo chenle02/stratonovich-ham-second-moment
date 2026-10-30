@@ -1,9 +1,12 @@
 # Complementary wave bound on the actual local phase
 
-CANDIDATE, not independently accepted. Depends on the weighted projection
-candidate; no downstream stochastic or sharp-constant use is authorized by
-this status. This is a standard deterministic bridge for the unchanged S1
-target, not a novel spectral theorem.
+ACCEPTED at the scoped analytic/application gate: actual Opus5.5/HIGH,
+18 checks PASS,268.893seconds, no required repairs; sourceb07d013.
+Original malformed report and reversible syntax-only recovery are retained
+in reviews/2026-10-30-complement-transfer/, with all optional adjudications.
+The weighted projection dependency is accepted at1242590. This is standard
+deterministic groundwork, not novelty or a sharp moment theorem.
+Full original goal remains active.
 
 ## 1. Fixed objects and conclusion
 
