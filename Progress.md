@@ -6,6 +6,7 @@
 
 ## Current state
 
+- **Live occupation proof review:** complete X-class approximation/closed-form/rate/cost/occupation-density consumer at80e47d6; actual Opus5.5/high,25texts,session96093/native stratonovich-occupation-scientific-v1. Preproof7HIGH accepted statement only; density/point/sup conclusions remain unadopted. Poll same handle/receipt.
 - **Latest general-positive consumer:** actual d1 general-positive compact psi cone/noisy event/SAME-Z raw half-cost original-point lower and enlarged V_c^pos accepted24groups/HIGH at12c9879 (462.611seconds,34texts). All nine unchanged finite-kernel NEWapplications checked. Q2>=V2pos>=V2sep with exact auxiliary homogeneity; no source/firstmean/Jensen-improvement claim. NEXT: positive occupation-profile approximation and source correspondence, retaining sharp upper/higher dimensions/intended normalization.
 - **Latest general-profile bridge:** actual d1 general-positive-psi covariance family S1-S3 (uniform ground/gap, weighted actual F projection and physical complement) accepted27PASS/HIGH atc0a0093. Original undefined-J_phi preproof FAIL is preserved and repaired. General-test stochastic event/raw lower/variational consumer now scoped accepted at12c9879; source constants and original higher dimensions remain open.
 - **Latest raw variational consumer:** positive-separable d1 raw V_c finite/positive, exact auxiliary-label homogeneity and Q2>=V2 accepted20groups/HIGH at0fd2a05. Four finite Lean applications checked. V1 is not actual first mean/source L; this is not a Jensen improvement or sharp source constant. Next: nonseparable optimizer class and source correspondence, with original dimensions/sharp upper open.
@@ -4780,3 +4781,10 @@ unitL2sphere countablecore, classes/nullsets and diagonalFatou explicit.
 Two newfinite formbudget types/application boundaries included in25text
 FULLscientificpacket; mathematicaldensity proof not yet adopted. Fullgoal
 ACTIVE, intendedsource normalization/optimizer/sharp/dimensions unchanged.
+
+Occupationconsumer FULLscientific gate live at80e47d6: actualfirstparty
+Opus5.5/high,25texts,unchangedHIGHthreshold;session96093. All25live/frozen/
+gitbindings verified,supporteddoctor/selectedheadroom13short63weekly.
+Includes new2finitekernel exacttype/application check. No proofadoption
+until properterminalverdict; preproofsyntaxrecovery is separate identity.
+OriginalgoalACTIVE; no source/optimizer/dimensional claim.
