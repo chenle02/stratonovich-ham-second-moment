@@ -1,0 +1,88 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "reviews/2026-10-30-damped-lower-bridge/target-v1.md: lines 1-127 (full)",
+    "reviews/2026-10-30-damped-lower-bridge/worker-honesty-v1.md: lines 1-31 (full)",
+    "reviews/2026-10-30-damped-lower-bridge/check-diagnostics.py: lines 1-33 (full)",
+    "reviews/2026-10-30-damped-lower-bridge/diagnostics-v1.json: lines 1-111 (full)",
+    "reviews/2026-10-30-damped-lower-bridge/check-diagnostics-attempt01.py: lines 1-33 (full)",
+    "reviews/2026-10-30-damped-lower-bridge/diagnostics-attempt01.json: lines 1-10 (full)",
+    "reviews/2026-10-30-damped-lower-bridge/falsification-v1.md: lines 1-22 (full)",
+    "reviews/2026-10-30-damped-lower-bridge/source-context-v1.json: lines 1-20 (full)",
+    "reviews/2026-10-30-damped-lower-bridge/local-recon-v1.md: lines 1-29 (full)",
+    "notes/occupation-control-approximation.md: lines 1-364 (full)",
+    "reviews/2026-10-30-occupation-approximation/scientific-adjudication-v1.md: lines 1-63 (full)",
+    "notes/raw-positive-value-ceiling.md: lines 1-348 (full)",
+    "reviews/2026-10-30-raw-value-ceiling/scientific-adjudication-v1.md: lines 1-67 (full)",
+    "notes/general-positive-consumer.md: lines 1-477 (full)",
+    "reviews/2026-10-28-source-normalization/adjudication-v2.md: lines 1-66 (full)",
+    "reviews/2026-10-28-source-normalization/packet-v2/pages/chen-03-lower.png: full image viewed",
+    "reviews/2026-10-28-source-normalization/packet-v2/pages/chen-04-upper.png: full image viewed",
+    ".review/required-sources.json: lines 1-59 (full; read plan, earns no read credit)"
+  ],
+  "checks": [
+    {
+      "claim": "C1: exact d1 model, actual objects, source map, kernel and penalty, E_star^O domain, E_sp purely spatial, and finite positive real values before suprema",
+      "verdict": "PASS",
+      "reason": "The Riesz 0<alpha<1 or white alpha=1 setting, 0<a<1 and retained amplitude match the accepted notes and p3 Theorem 1.2. The (M) map matches image (1.10) term by term: 2^3, exponent (q-2a)/2, (q-a)^(q-a), (2z/(2-alpha))^((2-alpha)/2) and root 1/k. K_star matches image (1.13), with denominator 2(4-alpha-2a)=2d and lambda^(a-1). The half gradient matches (1.12). Delta is the log ratio of the F_a and F_0 brackets, with q^(q/2)/q^q=q^(-q/2). Target lines 31-33 and 41-42 keep (1.10) as a first-mean map, c=2 as our label, O as our own domain, and normalization UNKNOWN. E_sp has no temporal kernel or static M. Finite positive E_sp follows from the accepted raw-ceiling (2)-type homogeneous bound at s=t plus dilation, so the supremum is real before use."
+    },
+    {
+      "claim": "C2: temporal identity for every s, including endpoints, with constants and class membership",
+      "verdict": "PASS",
+      "reason": "Rederived by hand. With r=(1-a)/2, so a=1-2r, substituting t=sv gives left part s^r int (1-v)^(2r-1) v^(-r) (1-sv)^(-r) dv. The positive binomial series and Tonelli give s^r Beta(1-r,2r) 2F1(r,1-r;1+r;s)=r Beta(1-r,2r) B_s(r,r). Reflection and B_s(r,r)+B_(1-s)(r,r)=Beta(r,r) give the total r Beta(1-r,2r) Beta(r,r)=Gamma(r)Gamma(1-r). At s=0 the integral is Beta(r,1-r) directly; s=1 follows by reflection. As an independent classical check, rescaling the known potential on [-1,1] gives pi/cos(pi a/2)=Gamma(r)Gamma(1-r). The mass Beta(1-r,1-r)/[Gamma(r)Gamma(1-r)] simplifies to the printed M_a. f_a is in L2 iff 2r<1 iff a>0. For phi in B, ||psi(t)||_B=f_a(t)||phi||_B, so psi is in X_pos despite the unbounded time weight. Then q_sigma=phi for every sigma, h_sigma=Gamma*phi is time-constant, v_psi=M_a int phi Gamma*phi, and I_psi is the whole-H1 Rayleigh rate of that potential. No d>=2 theorem, rough flow, Gaussian point value or mass renormalization is needed."
+    },
+    {
+      "claim": "C3: static-control lower bound (L) with all constants",
+      "verdict": "PASS",
+      "reason": "Rederived by hand. For unit real H1 g, phi=theta(S_ell g)^2 is in B. The test f=S_ell g gives lambda^2>=Y-X with Y=theta ell^alpha A and X=ell^2 b. Cost is v=M_a Y^2/(ell^alpha A)=M_a Y^2/(rho_g X^(alpha/2)), where rho_g=A/b^(alpha/2). At fixed L^2=Y-X, minimizing gives X=alpha L^2/q and Y=4L^2/q, which matches the honesty note's X/(Y-X)=alpha/(4-alpha). Then v=16 M_a q^(-q/2) alpha^(-alpha/2) L^q/rho_g. Maximizing L-v/2 gives k[rho_g alpha^(alpha/2) q^(-q/2)/(8M_a)]^(1/k). The sharp relation at eta=1/2 is R_sp=(2E_sp/(2-alpha))^((2-alpha)/2) alpha^(-alpha/2), by the accepted (6)-(7) argument transplanted to A_sp and b. It holds in both directions by approximating the supremum, with no optimizer. Substitution yields exactly M_a^(-1/k) F_0(E_sp). Every control has positive theta, ell and radicand. Each test is fixed before time, and the input is accepted X-class (POINT)/(SUP), not a static SPDE asymptotic."
+    },
+    {
+      "claim": "C4: K_star properties, row maximum, covariance CS, (S), and comparison (C)",
+      "verdict": "PASS",
+      "reason": "Positivity, evenness and monotonicity are immediate. Dropping the lambda^2 term and using int exp(-lambda|u|) lambda^(a-1) dlambda=Gamma(a)|u|^(-a) gives K_star<=|u|^(-a). The row is Phi(s)+Phi(1-s) with Phi concave, so its maximum is exactly R_star at s=1/2. Spatial CS follows from accepted X CS (9) with a common time factor, since B_Gamma(w tensor f, w tensor h)=c_w int f Gamma*h with c_w>0. Then the interaction is <=rho b_s^(alpha/4) b_t^(alpha/4). Schur gives R_star rho int b^(alpha/2), and Jensen gives <=R_star rho T^(alpha/2). Scalar maximization with D_(1/2) gives (S) with exponent 2/(2-alpha) and penalty 1/2. E_star^O is positive by constant-time g and dilation, since alpha<2. Since F_0 is proportional to z^((2-alpha)/(2k)), (S) gives F_0(E_sp)>=R_star^(-1/k) F_0(E_star^O). Combining this with (L), V2=2^m V1 and F_a=exp(Delta/k)F_0 gives (C) exactly. Omega depends only on alpha and a, is positive, and is free of the amplitude. The target claims neither global Omega>=1 nor any upper bound. Consistency with the accepted ceiling reduces to M_a^(-1)<=int int |s-t|^(-a) ds dt, which holds by the equilibrium property (2.622<2.667 at a=1/2)."
+    },
+    {
+      "claim": "C5: white alpha=1, a=1/2 closure (P)",
+      "verdict": "PASS",
+      "reason": "Parameters: q=3, k=2, d=2, m=3/2, kappa=5/4. Dropping only exp(-u lambda) and integrating int exp(-lambda^2 u/4) lambda^(-1/2) dlambda=(1/2)Gamma(1/4) 2^(1/2) u^(-1/4) gives, after 2 int_0^(1/2), B_star=(4/3) 2^(-1/4) Gamma(1/4)/sqrt(pi). M_a^(-1)/B_star=(3 pi/8) 2^(1/4)/Gamma(3/4), and Holder log-convexity gives Gamma(3/4)<=Gamma(1/2)^(1/2) Gamma(1)^(1/2)=pi^(1/4), hence >=W. expDelta=2*3^(3/2)/(5/2)^(5/2). The fourth power simplifies as (W/expDelta)^4=pi^3 5^10/(9*2^25). With pi>157/50 this exceeds 157^3 5^4/(9*2^28)=2418683125/2415919104>1 (hand arithmetic, difference 2764021). Since k=2, Omega>=(W/expDelta)^(1/2)>(that ratio)^(1/8)=zeta>1. (P) follows from (C) and F>0 for all amplitudes, with no numeric M, source fix, actual p1 or Jensen premise."
+    },
+    {
+      "claim": "C6: diagnostics, preserved failure, corrected quadrature and no overclaim",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "By inspection, attempt01 and the successor differ only in lines 13 and 15, so identity, 50 digits, 1e-18 tolerance and case list are unchanged. The substitution is correct by hand: t=s(1-u^p) and s+(1-s)u^p with p=1/(1-a) and Jacobian s^(1-a)/(1-a). The successor is an exact algebraic factorization of t(1-t) with expm1, with no clipping, regularizer or loosened assertion, so it resolves the rounding without masking a defect. Failure at a=0.1, s=1 is plausible because t=1-u^p can round to 1 as u approaches 0, while s=0 does not form that subtraction. JSON values agree with my hand evaluation to the digits I computed. Diagnostics, falsification note and target all disclaim proof of the identity, Holder, global Omega or SPDE, and the 9-point probe is recon only. This reviewer did not execute anything; replayability is judged from code and data only, and any execution evidence belongs to root. See minor notes on terminology and metadata."
+    },
+    {
+      "claim": "C7: scope and original goal honesty",
+      "verdict": "PASS",
+      "reason": "T1-T3 are the full d1 comparison with explicit Omega, and T4 is one legal white point. The original goal stays open (target lines 5-6, 113-116, and falsification line 22). The target does not claim all-range results, global Omega>=1, literal two-sided endpoints or a source exact limit. E_star^O is explicitly not source L or every printed Ad reading. No first-mean, actual Jensen, signed, attainment, minimax, clock equality or rough-flow premise is used. No Skorohod, source correction, contact, companion, HPC, novelty or circulation claim appears. Lean seams are limited to value-ranked finite scalar certificates in the honesty note. The target is stated as PROPOSED, with independent pre-proof and full review still mandatory."
+    },
+    {
+      "claim": "No missing object or quantifier prevents starting the long proof",
+      "verdict": "PASS",
+      "reason": "Each inference from accepted (POINT), (SUP), (31), (OCC), (9), (6)-(7) to (L), (S), (C) and (P) has its hypotheses available and its direction checked. I found no failed implication or wrong constant. Hand derivations here establish statement correctness and feasibility, not proof acceptance."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "R_sp is never displayed. The long proof could state R_sp=sup A_sp/b^(alpha/2)=(2E_sp/(2-alpha))^((2-alpha)/2) alpha^(-alpha/2) and E_sp=((2-alpha)/2) alpha^(alpha/(2-alpha)) R_sp^(2/(2-alpha)).",
+      "(D) leaves the time domain (0,1)^2 implicit. K_star(0)=+infinity, so K_star is finite only off the null diagonal. Stating both would be cleaner.",
+      "pi>157/50 is an external classical input named but not derived. The long proof should cite or prove it.",
+      "(S) needs only scalar maximization in T for E_star^O; spatial dilation enters only through the exact E_sp and R_sp relation. The target's phrase 'Schur and spatial dilation' could be read as dilating g in O, which is unnecessary.",
+      "'Singularity-resolved' is slightly loose. The substitution removes the interior |s-t|^(-a) singularity, but algebraic endpoint singularities such as u^(-1/2) at s in {0,1} remain for tanh-sinh. This is consistent with errors near 5e-28 at those cases, still far inside the tolerance.",
+      "The successor script keeps an unused density function. diagnostics-attempt01.json is a written failure record, not native traceback output, and its sigma string '1' differs from the script format '1.0'. Neither affects a claim.",
+      "local-recon-v1.md records c7efed7, while the review source revision is 92f2e16. The packet does not show how these revisions relate."
+    ],
+    "major_notes": []
+  },
+  "required_repairs": [],
+  "limitations": [
+    "Read-only hand reasoning only: no script was executed, no hash was computed, and no git state was checked. Image identity rests on the supplied plan and packet.",
+    "Accepted foundations were inspected for matching only, as instructed, and were not re-proved. nonseparable-profile-family.md, joint-gaussian-tilt.md and the general-positive scientific adjudication are cited by accepted notes but are not in the packet.",
+    "Statement, object, source and feasibility audit only. It is not proof acceptance, human verification, a novelty audit or a whole-paper certificate. The T1-T4 long proof and full review are still required.",
+    "Only the two supplied source image crops were read, not the full source paper, so source (1.21) and later sections were not inspected."
+  ]
+}

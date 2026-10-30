@@ -1,0 +1,15 @@
+Exact pinned Mathlib source input for pi>157/50.
+Mathlib revision56a005855ea17e0b0958f73ec801ae140b0a1679,tagv4.35.0.
+Source-relative path Mathlib/Analysis/Real/Pi/Bounds.lean
+Whole-fileSHA256 647d558a8923811c11a7879c19e2e2fbc14f1bbdc7e5fb3a987f33c9730f46bf
+Exact source lines159-165:
+theorem pi_gt_d2 : 3.14 < π := by
+  -- bound[314*^-2, Iters -> 4, Rounding -> 1.5, Precision -> 8]
+  pi_lower_bound [338 / 239, 704 / 381, 1940 / 989, 1447 / 727]
+
+theorem pi_lt_d2 : π < 3.15 := by
+  -- bound[315*^-2, Iters -> 4, Rounding -> 1.4, Precision -> 7]
+  pi_upper_bound [41 / 29, 109 / 59, 865 / 441, 412 / 207]
+
+All imported Mathlib proof dependencies are checked by local Lean compilation;
+this excerpt is source/API context, not a standalone proof of the entire library.
