@@ -4755,3 +4755,11 @@ preserved; only redundant <;> removed, samepublictypes, guardunchanged.
 No longdensityproof or analyticadoption from this arithmetic. Exactnew
 Sobolev/form/application interfaces require fullscientificreview. Local
 60declarations/13seams provisional; no newcompanion/package/HPC.
+
+Receipt-adapter correction after083b7dc: initialroot axiom-name check
+failed on printed universe suffixes .{u}, so the previous batch committed
+README/progress/source before receipt/archive files existed. Native Lean
+runs were terminal/clean and unchanged. Corrected ONLYthe root parser to
+normalize standardaxiom universe annotations, verified all exacttypes and
+both native archives, now retained actualreceipts/types/archive hashes.
+This fixes missing evidence, not a Lean theorem/guard or confidence level.
