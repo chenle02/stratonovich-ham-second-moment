@@ -18,7 +18,7 @@
 - **Authorization:** Le's continuing full goal includes the sharp/lower track. The current wave is the bounded actual local-flow/sharp-lower consumer,with the HIGH review threshold unchanged. It does not redefine the original all-alpha0sharp target,claim novelty or promote a paper. Le now explicitly permits Lean verification;standalone local checks do not create a companion repo. Report/honor PROJECT-GOAL decision points;companion-creation decision4remains pending. No correspondence/public release authorized.
 - **Worker:** Codex/GPT author, paper-dev workflow; historical project handoff to agent #30 on 2026-10-26. Lean remains L0/PROPOSED (`lean-progress/PROGRESS.md`). Ten normal reference requests exist; new edition-custody intake is nonblocking, not source authentication.
 
-- **Local Lean:** nine standalone seams now contain49finite deductions with local compile/replay/standard-axiom evidence and scoped type/application checks. The latest7support the local flow/source map; its3false controls and exact limits are in lean-progress/local-checks/local-flow-v1/. Analytic SPDE/path inputs remain outsideLean. No official package/companion gate.
+- **Local Lean:** ten standalone seams now contain52finite deductions with local compile/replay/standard-axiom evidence and scoped type/application checks. The latest7support the local flow/source map; its3false controls and exact limits are in lean-progress/local-checks/local-flow-v1/. Analytic SPDE/path inputs remain outsideLean. No official package/companion gate.
 
 
 ## Resume checkpoint — 2026-10-30: joint Gaussian tilt contract
@@ -4302,3 +4302,24 @@ first-party Opus5.5/high,8required texts, unchangedHIGHthreshold;
 session34194/native stratonovich-moving-cone-statement-v1. Poll same
 handle/receipt, no restart on observation timeout. No statement verdict
 or cone proof at this capture. Active goal remains unchanged/full.
+
+Moving-cone statement audit terminal: actualOpus5.5/high,277.215seconds,
+8texts complete. Service invalid-report (unsupported UNCHECKED check enum);
+raw INCONCLUSIVE/HIGH has one mandatory C5reproducibility finding, not
+an accepted statement gate. Mathematical C1-C4 pass in raw report.
+Original100proxy booleans lacked definition/generator; no evidence credit
+for old rows alone. Exact definition+replay now in diagnostics-v2/script,
+root100case replay PASS. All6minor findings adjudicated; mathematical
+target unchanged. Independent C5recheck remains in full scientific gate.
+Preproof audit complete with required input repair implemented; next proof
+development, not a confidence-only retry. Original fullgoalACTIVE.
+
+
+Moving-cone candidate proof notes/moving-block-cone.md now gives explicit
+noncircular theta/T/omega/epsilon choices, actual constant-data entrance,
+rebased residual/positive amplitude preservation for EVERY full block and
+uniform positive terminal displacement average including s0,N1. C5repair
+now exactly replayable. Not independently accepted. Three finite scalar
+budgets compile/replay with standard3axioms and3False controls, all5owned
+outputs match; no formal analytic/cone theorem. Full independent proof/
+application/type/C5scientific HIGHgate required next. Goal remains ACTIVE.

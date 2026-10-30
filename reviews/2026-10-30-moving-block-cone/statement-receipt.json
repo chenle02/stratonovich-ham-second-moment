@@ -1,0 +1,169 @@
+{
+  "provider": "claude",
+  "started_utc": "2026-10-30T14:27:30.844361+00:00",
+  "workspace": "${HOME}/.local/state/Le-AI-Lab/stratonovich-moving-cone-statement-v1/workspace",
+  "source_revision": "ba836d6",
+  "input_hashes": {
+    "notes/joint-gaussian-tilt.md": "35e67b2a208abc5d9f9684e515dc5fbab23e9ad236f37ddb29ec0acf98dfa063",
+    "notes/local-causal-young-flow.md": "f482da909ce87e4789b09302a25c5e2a56e3e3cecddee59f5b22e6a0e04111b4",
+    "notes/spectral-complement-transfer.md": "a3c1dff83346316776aec87c5de3665da493b07a95d2b20e884f0377fd5ca900",
+    "notes/spectral-ground-family.md": "6198fc526a7e65a1ef2131184d86f335066cd07edf61998c0765ef72d0cf488c",
+    "notes/spectral-weighted-projection.md": "75050b8d05c15fb34983cd17bffcfdbe23cf0cf93d2ae243b4881074e56be620",
+    "reviews/2026-10-30-moving-block-cone/diagnostics-v1.json": "af666a660e4f2a5894e49bba2c08dfb76d47c0a89fa491599bb717b249401db1",
+    "reviews/2026-10-30-moving-block-cone/target-v1.md": "b9412c3d0d15ea9e82c7e2241cf1bd36a6c43c698337fd6eb877aab911b149a9",
+    "reviews/2026-10-30-moving-block-cone/worker-honesty-v1.md": "b945c3ca0d943587be31271c31b09d2fa689500ad02b4881c5e0bc8632425274"
+  },
+  "target": "reviews/2026-10-30-moving-block-cone/target-v1.md",
+  "claude_account": "<removed>",
+  "review_contract_sha256": "eb54dfea28f450cd21d7d62a08f2929c3c222aab007d66a72ee2dfad313441d4",
+  "effort_requested": "high",
+  "resumed_from": null,
+  "resume_mode": null,
+  "resume_binding": null,
+  "min_confidence": "high",
+  "scientific_verdict": null,
+  "accepted": false,
+  "report_contract_schema": "subscription-review-report/1",
+  "report_legacy_mode": null,
+  "legacy_resume_binding": null,
+  "diagnostics": [
+    {
+      "code": "unsupported-verdict",
+      "path": "checks[22].verdict",
+      "message": "unsupported verdict/confidence value"
+    }
+  ],
+  "required_sources_sha256": "e25d576bcee6b244477356125db03c61abcc53d1416529235b8cabaf8d79cf97",
+  "required_sources_workspace_copy": ".review/required-sources.json",
+  "workspace_preflight": {
+    "schema": "le-ai-lab.review-workspace-preflight/1",
+    "scanned": "review contract (--prompt-file)",
+    "references": {
+      "reviews/2026-10-30-moving-block-cone/target-v1.md": [
+        "reviews/2026-10-30-moving-block-cone/target-v1.md"
+      ]
+    },
+    "waived": [],
+    "missing": [],
+    "required_sources_copy": ".review/required-sources.json"
+  },
+  "runtime_preflight": {
+    "effective_version": "2.1.304",
+    "cli_version": "2.1.304 (Claude Code)",
+    "image_requirements": false,
+    "supported_versions": [
+      "2.1.299",
+      "2.1.300",
+      "2.1.301",
+      "2.1.302",
+      "2.1.303",
+      "2.1.304",
+      "2.1.314"
+    ],
+    "supported": true
+  },
+  "cli_version": "2.1.304 (Claude Code)",
+  "executable": "${HOME}/.local/state/Le-AI-Lab/swe-white-time-resume-20261024/runtime/node_modules/@anthropic-ai/claude-code-linux-x64/claude",
+  "executable_requested": null,
+  "executable_effective": {
+    "path": "${HOME}/.local/state/Le-AI-Lab/swe-white-time-resume-20261024/runtime/node_modules/@anthropic-ai/claude-code-linux-x64/claude",
+    "version": "2.1.304 (Claude Code)"
+  },
+  "read_ledger_format_supported": true,
+  "auth": {
+    "authMethod": "<removed>",
+    "apiProvider": "firstParty",
+    "subscriptionType": "<removed>",
+    "email": "<account email removed>"
+  },
+  "model_requested": "claude-opus-5-5",
+  "command_without_prompt": [
+    "${HOME}/.claude/bin/claude-acct",
+    "run",
+    "<account removed>",
+    "--print",
+    "--model",
+    "claude-opus-5-5",
+    "--effort",
+    "high",
+    "--disable-slash-commands",
+    "--strict-mcp-config",
+    "--mcp-config",
+    "{\"mcpServers\":{}}",
+    "--permission-mode",
+    "dontAsk",
+    "--permission-prompts",
+    "none",
+    "--output-format",
+    "stream-json",
+    "--verbose",
+    "--tools",
+    "Read,Grep,Glob",
+    "--allowedTools",
+    "Read,Grep,Glob",
+    "--agents",
+    "${HOME}/.local/state/Le-AI-Lab/stratonovich-moving-cone-statement-v1/claude-reviewer.json",
+    "--agent",
+    "artifact-reviewer",
+    "<stdin: prompt.txt without its final newline>"
+  ],
+  "prompt_transport": "stdin",
+  "prompt_bytes": 5345,
+  "prompt_sha256": "dcba6b53946e8fe9cc7d75a6157b6a00235b268bf0c83e9d424a779e9ebfe5d7",
+  "transport_exit_code": 0,
+  "transport_ok": true,
+  "model_actual": "claude-opus-5-5",
+  "session_id": "e05e1636-0fc3-4a01-a1b3-b3757e6bc774",
+  "usage": {
+    "input_tokens": 6,
+    "cache_creation_input_tokens": 60210,
+    "cache_read_input_tokens": 52523,
+    "output_tokens": 29549,
+    "output_tokens_details": {
+      "thinking_tokens": 22418
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 60210,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 28567,
+        "cache_read_input_tokens": 29934,
+        "cache_creation_input_tokens": 33480,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 33480
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "provider_error": false,
+  "terminal_subtype": "success",
+  "tools_actual": [
+    "Read",
+    "Grep",
+    "Glob"
+  ],
+  "actual_route_verified": true,
+  "candidate_hashes_unchanged": true,
+  "raw_report_sha256": "db35f4f8731ca0947275ae9aa634b05dd7bd516491f7ae4817257ce3f17cd4db",
+  "status": "invalid-report",
+  "reason": "unsupported verdict/confidence value",
+  "finished_utc": "2026-10-30T14:32:08.059865+00:00",
+  "elapsed_seconds": 277.215,
+  "transport_events_sha256": "57e29cc74a38d126cb0d95a5441e7ddc520df80dd9f9fad21b4cd02a9de55710",
+  "transport_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "read_ledger_sha256": "3f51117b0fb4c3f9f2215da56e2f775d0f11d77c218e999dfac5f3887a1fd79b",
+  "coverage_verified": true
+}

@@ -228,3 +228,14 @@ scientific tilt review, sourcee51432c. All4formal sources unchanged;49local
 finite deductions retain their exact scoped gates. No formalGaussian/SPDE,
 companion or official package gate is inferred. Evidence/adjudication in
 reviews/2026-10-30-joint-gaussian-tilt/.
+
+
+## Moving-cone local scalar budgets (2026-10-30)
+
+Three finite deductions for residual contraction, positive amplitude/cone
+conversion and terminal-observable margin compile/replay cleanly on latest
+stable Lean/Mathlib4.35.0. Exact public types/live standard3axioms and
+three semantic False controls checked; five owned output hashes match.
+Evidence local-checks/moving-cone-v1/. Analytic operator/cone/field theorem
+not formalized. Independent type/application scientific review pending.
+No package/companion/lease/registry/HPC transaction; L0 remains PROPOSED.

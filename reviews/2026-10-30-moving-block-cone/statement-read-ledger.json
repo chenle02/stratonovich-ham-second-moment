@@ -1,0 +1,292 @@
+{
+  "schema": "le-ai-lab.review-read-ledger/1",
+  "coverage_verified": true,
+  "claude_code_version": "2.1.304",
+  "events_sha256": "57e29cc74a38d126cb0d95a5441e7ddc520df80dd9f9fad21b4cd02a9de55710",
+  "events_hash_bound_to_receipt": true,
+  "stream_workspace": "${HOME}/.local/state/Le-AI-Lab/stratonovich-moving-cone-statement-v1/workspace",
+  "required_sources_sha256": null,
+  "continuation": false,
+  "continuation_credit": null,
+  "proves": "Each credited line was returned, numbered and byte-equal to the frozen workspace file, in a tool_result paired with a Read or line-numbered content-mode Grep call of the hash-bound provider stream.",
+  "does_not_prove": "Attention, understanding, or retention: a credited line may have been skimmed, ignored, or dropped by context compaction before the report was written. Uncredited lines may still have been seen in a form the ledger cannot attribute (previews, unnumbered output, subagents).",
+  "sources": [
+    {
+      "path": "reviews/2026-10-30-moving-block-cone/target-v1.md",
+      "sha256": "b9412c3d0d15ea9e82c7e2241cf1bd36a6c43c698337fd6eb877aab911b149a9",
+      "total_lines": 83,
+      "required_ranges": [
+        [
+          1,
+          83
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          83
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "reviews/2026-10-30-moving-block-cone/worker-honesty-v1.md",
+      "sha256": "b945c3ca0d943587be31271c31b09d2fa689500ad02b4881c5e0bc8632425274",
+      "total_lines": 16,
+      "required_ranges": [
+        [
+          1,
+          16
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          16
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "reviews/2026-10-30-moving-block-cone/diagnostics-v1.json",
+      "sha256": "af666a660e4f2a5894e49bba2c08dfb76d47c0a89fa491599bb717b249401db1",
+      "total_lines": 710,
+      "required_ranges": [
+        [
+          1,
+          710
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          710
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "notes/spectral-ground-family.md",
+      "sha256": "6198fc526a7e65a1ef2131184d86f335066cd07edf61998c0765ef72d0cf488c",
+      "total_lines": 138,
+      "required_ranges": [
+        [
+          1,
+          138
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          138
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "notes/spectral-weighted-projection.md",
+      "sha256": "75050b8d05c15fb34983cd17bffcfdbe23cf0cf93d2ae243b4881074e56be620",
+      "total_lines": 203,
+      "required_ranges": [
+        [
+          1,
+          203
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          203
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "notes/spectral-complement-transfer.md",
+      "sha256": "a3c1dff83346316776aec87c5de3665da493b07a95d2b20e884f0377fd5ca900",
+      "total_lines": 208,
+      "required_ranges": [
+        [
+          1,
+          208
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          208
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "notes/local-causal-young-flow.md",
+      "sha256": "f482da909ce87e4789b09302a25c5e2a56e3e3cecddee59f5b22e6a0e04111b4",
+      "total_lines": 503,
+      "required_ranges": [
+        [
+          1,
+          503
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          503
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "notes/joint-gaussian-tilt.md",
+      "sha256": "35e67b2a208abc5d9f9684e515dc5fbab23e9ad236f37ddb29ec0acf98dfa063",
+      "total_lines": 318,
+      "required_ranges": [
+        [
+          1,
+          318
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          318
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    }
+  ],
+  "tool_calls": [
+    {
+      "id": "toolu_01YFJwK11H4dn7Yu2qsyRfBe",
+      "tool": "Read",
+      "source": ".review/required-sources.json",
+      "plan_copy_read": [
+        ".review/required-sources.json"
+      ],
+      "uncredited": "runner-owned plan copy (.review/): never read credit",
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01UcpoJtX6ncLfxNJ1kFMQLS",
+      "tool": "Read",
+      "source": "reviews/2026-10-30-moving-block-cone/target-v1.md",
+      "credited": {
+        "reviews/2026-10-30-moving-block-cone/target-v1.md": [
+          [
+            1,
+            83
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01KUJdC1AQrp3WDgjuNmeQek",
+      "tool": "Read",
+      "source": "reviews/2026-10-30-moving-block-cone/worker-honesty-v1.md",
+      "credited": {
+        "reviews/2026-10-30-moving-block-cone/worker-honesty-v1.md": [
+          [
+            1,
+            16
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01Aqbi9Pvko2VGpfNuqK1Fpq",
+      "tool": "Read",
+      "source": "reviews/2026-10-30-moving-block-cone/diagnostics-v1.json",
+      "credited": {
+        "reviews/2026-10-30-moving-block-cone/diagnostics-v1.json": [
+          [
+            1,
+            710
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_011nS51gQEFvyjDs5DSmvxKG",
+      "tool": "Read",
+      "source": "notes/spectral-ground-family.md",
+      "credited": {
+        "notes/spectral-ground-family.md": [
+          [
+            1,
+            138
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01YEHPy1zjfHp1BaTiadJaXH",
+      "tool": "Read",
+      "source": "notes/spectral-weighted-projection.md",
+      "credited": {
+        "notes/spectral-weighted-projection.md": [
+          [
+            1,
+            203
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01Xs8QzYbuTWJab5Hu3hxejP",
+      "tool": "Read",
+      "source": "notes/spectral-complement-transfer.md",
+      "credited": {
+        "notes/spectral-complement-transfer.md": [
+          [
+            1,
+            208
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01WSQBPV72Mebs9C6j6Nf4YP",
+      "tool": "Read",
+      "source": "notes/local-causal-young-flow.md",
+      "credited": {
+        "notes/local-causal-young-flow.md": [
+          [
+            1,
+            503
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01EaRVaat1Adz6PUPHBEhvpD",
+      "tool": "Read",
+      "source": "notes/joint-gaussian-tilt.md",
+      "credited": {
+        "notes/joint-gaussian-tilt.md": [
+          [
+            1,
+            318
+          ]
+        ]
+      },
+      "stream": "attempt"
+    }
+  ],
+  "diagnostics": []
+}
