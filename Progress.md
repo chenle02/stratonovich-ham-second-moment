@@ -6,6 +6,7 @@
 
 ## Current state
 
+- **Live occupation-class preproof:** proposed positive X=L2(time;L1 intersect L2 space) approximation/rate/cost/occupation-density consumer at8f60730; actual Opus5.5/high,13texts,session50500/native stratonovich-occupation-statement-v1. No density proof/adoption yet. Poll same handle/receipt.
 - **Latest general-positive consumer:** actual d1 general-positive compact psi cone/noisy event/SAME-Z raw half-cost original-point lower and enlarged V_c^pos accepted24groups/HIGH at12c9879 (462.611seconds,34texts). All nine unchanged finite-kernel NEWapplications checked. Q2>=V2pos>=V2sep with exact auxiliary homogeneity; no source/firstmean/Jensen-improvement claim. NEXT: positive occupation-profile approximation and source correspondence, retaining sharp upper/higher dimensions/intended normalization.
 - **Latest general-profile bridge:** actual d1 general-positive-psi covariance family S1-S3 (uniform ground/gap, weighted actual F projection and physical complement) accepted27PASS/HIGH atc0a0093. Original undefined-J_phi preproof FAIL is preserved and repaired. General-test stochastic event/raw lower/variational consumer now scoped accepted at12c9879; source constants and original higher dimensions remain open.
 - **Latest raw variational consumer:** positive-separable d1 raw V_c finite/positive, exact auxiliary-label homogeneity and Q2>=V2 accepted20groups/HIGH at0fd2a05. Four finite Lean applications checked. V1 is not actual first mean/source L; this is not a Jensen improvement or sharp source constant. Next: nonseparable optimizer class and source correspondence, with original dimensions/sharp upper open.
@@ -4741,3 +4742,8 @@ Target/falsification/code/JSON/localrecon and13textpacket frozen in
 reviews/2026-10-30-occupation-approximation/. Roughrate is variational,
 not an H2roughoperator/eigenflow or a countableproxywithoutcoreequality.
 No sourcevalue/normalizationfix, firstmean/Jensen/signed/companion claim.
+
+Occupationapproximation preproof live at8f60730: actualfirst-party
+Opus5.5/high,13texts,unchangedHIGHthreshold;session50500. All13live/
+packet/gitbindings verified; supporteddoctor/selectedheadroom12short63weekly.
+Longproof awaitsactualstatement/object/class audit. OriginalgoalACTIVE.
