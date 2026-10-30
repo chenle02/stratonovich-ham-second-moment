@@ -5192,3 +5192,17 @@ No reviewer/Leanjoblive. Nextactualspectralgrowth/auxmaskedLINEARcovariance
 framework notyetproved; no Schattenfix orweaker-rangeasfinalsolution.
 Fulloriginalall-dimensional/sharp/sourcegoal ACTIVE. CanonicalTeX/PDF/wiki
 unchanged,no contact/sourcefix/HPC/companion/publication/circulation.
+
+### Spectral/mask foundation frozen — 2026-10-30
+
+Actualclean094632a local/origin/<HUB>0:0 plusadvisoryaudit verified.
+NEW T1 translatedspectralballgrowth fromactualnonnegativeGamma/Gaussian
+Schwartzdistributionpairing; T2 positiveauxiliaryspectralmeasure for
+physicalmask LINEARvariance,uniformR growth/H_a-valuedCS/actual(2pi)^d
+factor; T3 allowed d2delta tensorLeb compactmask null-quotientcounterexample.
+Nineactualsingular,9Riesznormalization,4GaussianSCHWARTZmask,onecompact
+plateauIBP controlsPASS60digits. Schwartzmask NOTcompacttest; distinct
+compactcounterexample retained. No operator/path/Schatten/flow/momentresult.
+Frozen6-textpreproof target beforelongproof; no newLeansemantics claimed.
+Originalall-dimensional sharpgoalACTIVE,sourceissuesunchanged,no contact/
+HPC/companion/Skorohod/wiki/source/PDF/TeX edits. Fullproofgate required.
