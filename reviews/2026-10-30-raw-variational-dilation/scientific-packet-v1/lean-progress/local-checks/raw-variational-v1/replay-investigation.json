@@ -1,0 +1,54 @@
+{
+  "original_attempt": {
+    "status": "COMPILE_AUDIT_AND_FALSE_CONTROLS_COMPLETED_BUT_REPLAY_HASH_ASSERTION_FAILED",
+    "warning": "Two source tactic lint warnings include absolute source path; exact cause not yet isolated",
+    "artifacts": [
+      {
+        "file": "RawVariational.ir",
+        "same": true,
+        "original_sha256": "e755a57ddab7e23d97c71bb66f151c2be3277f56856abcaa3b4059cff179061c",
+        "replay_sha256": "e755a57ddab7e23d97c71bb66f151c2be3277f56856abcaa3b4059cff179061c",
+        "original_bytes": 1704,
+        "replay_bytes": 1704
+      },
+      {
+        "file": "RawVariational.ir.sig",
+        "same": true,
+        "original_sha256": "ffcb31e117a96aa498df3aa2bbeb79dd1dc85b614a5b82b2066618cdaefd4580",
+        "replay_sha256": "ffcb31e117a96aa498df3aa2bbeb79dd1dc85b614a5b82b2066618cdaefd4580",
+        "original_bytes": 176,
+        "replay_bytes": 176
+      },
+      {
+        "file": "RawVariational.olean",
+        "same": true,
+        "original_sha256": "27a6ff94cf70a4de4ff015cd4842dafaf488085e0a5a572aea23be6bc8fc2357",
+        "replay_sha256": "27a6ff94cf70a4de4ff015cd4842dafaf488085e0a5a572aea23be6bc8fc2357",
+        "original_bytes": 15808,
+        "replay_bytes": 15808
+      },
+      {
+        "file": "RawVariational.olean.private",
+        "same": true,
+        "original_sha256": "56a5373b5cae9f64008f576035423e6a0cdd2ca027b5392adeb33841a6324750",
+        "replay_sha256": "56a5373b5cae9f64008f576035423e6a0cdd2ca027b5392adeb33841a6324750",
+        "original_bytes": 215664,
+        "replay_bytes": 215664
+      },
+      {
+        "file": "RawVariational.olean.server",
+        "same": false,
+        "original_sha256": "20fb95bb288f50314c6f5988264cd0c9af32ca816d8bfd7a6d3b7c00bfa7796c",
+        "replay_sha256": "787b952f44aa6a576dce947a5ff03143793fa705b2e06ba2e0096e2a5344a655",
+        "original_bytes": 2928,
+        "replay_bytes": 2928
+      }
+    ],
+    "types_outputs_equal": true
+  },
+  "repair": "Removed exactly two unnecessary <;> tactic combinators; public statement signatures unchanged",
+  "second_attempt": "Clean compile/audit/3semanticFalsecontrols/freshreplay; all5ownedoutputs identical",
+  "complete_types_old_vs_new_equal": true,
+  "general_cause_claim": "Only observed warning/server correlation and successful clean successor; no claim of universal warning/serialization theorem",
+  "gate_unchanged": "Server output still included in exact replay comparisons; no linter disabled or hash ignored"
+}

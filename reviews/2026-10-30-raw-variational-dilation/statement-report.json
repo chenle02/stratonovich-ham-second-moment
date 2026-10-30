@@ -1,0 +1,107 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    ".review/required-sources.json lines 1-45 (read plan only; no read credit)",
+    "reviews/2026-10-30-raw-variational-dilation/target-v1.md lines 1-85 (complete)",
+    "reviews/2026-10-30-raw-variational-dilation/worker-honesty-v1.md lines 1-23 (complete)",
+    "reviews/2026-10-30-raw-variational-dilation/check-diagnostics.py lines 1-29 (complete; traced by hand, not executed)",
+    "reviews/2026-10-30-raw-variational-dilation/diagnostics-v1.json lines 1-61 (complete; all 6 rows recomputed by hand)",
+    "reviews/2026-10-30-raw-variational-dilation/local-recon.md lines 1-28 (complete)",
+    "reviews/2026-10-30-raw-variational-dilation/accepted-full-upper-statement.txt lines 1-18 (complete)",
+    "reviews/2026-10-30-raw-variational-dilation/accepted-full-upper-custody.json lines 1-11 (complete)",
+    "reviews/2026-10-30-raw-variational-dilation/source-crosswalk-v1.md lines 1-26 (complete)",
+    "notes/actual-shifted-event.md lines 1-336 (complete)",
+    "notes/spectral-ground-family.md lines 1-139 (complete)",
+    "notes/joint-gaussian-tilt.md lines 1-319 (complete)",
+    "reviews/2026-10-28-source-normalization/adjudication-v2.md lines 1-67 (complete)",
+    "reviews/2026-10-28-source-normalization/packet-v2/pages/chen-04-upper.png (whole image viewed directly; displays (1.11)-(1.14), the domain A_d and the intervening text)"
+  ],
+  "checks": [
+    {
+      "claim": "C1: C_sep and the raw objects k_f, U_q, H_(b,q), lambda_(b,q), I_psi and v_psi match the accepted lower theorem, and no covariance or kinetic convention is changed.",
+      "verdict": "PASS",
+      "reason": "Target lines 9-17 match actual-shifted-event Sections 1-2 and the spectral note: same f,q class, k, U=Gamma*q, H_b=-d2-bU, and I_psi as the time integral of the ground rate. v_psi=E W(psi)^2 equals the integral of f(t)k_f(t) times <q,U_q> by tilt (5),(8). The amplitude and the white/Riesz endpoints are retained, and b=k_f(t) lies in the positive compact K_par of note (5)."
+    },
+    {
+      "claim": "C1: I_psi and v_psi are representation-independent, and the dilation is an intrinsic bijection of C_sep.",
+      "verdict": "PASS",
+      "reason": "For nonzero nonnegative factors, f q=f' q' forces f'=l f and q'=q/l with l>0. Hence h_psi=k_f U_q is unchanged, so H at each t, its ground rate, I_psi and v_psi depend only on psi. psi_s(t,x)=s^(3-alpha)psi(t,sx) preserves the class because f is unchanged and q_s stays smooth, compact, nonnegative and nonzero. By hand, (psi_s)_r=psi_(rs), so the inverse is scale 1/s."
+    },
+    {
+      "claim": "C2: q_s, the pushforward factor and U_(q_s)=s^2 U_q(sx) are exact at both Riesz and white endpoints.",
+      "verdict": "PASS",
+      "reason": "Gamma(sA)=s^(1-alpha)Gamma(A) holds directly for c|x|^-alpha dx and for c delta_0. The pushforward under y->sy is Gamma(A/s)=s^(alpha-1)Gamma(A). So Gamma*q_s(x)=s^(3-alpha)s^(alpha-1)U_q(sx)=s^2U_q(sx). At alpha=1 this is c s^2 q(sx), with the true amplitude retained. No Fourier density or compact Riesz potential is used."
+    },
+    {
+      "claim": "C2: the L2 unitary, H2 domain, s^2 energy scaling and s rate scaling are correct.",
+      "verdict": "PASS",
+      "reason": "With (D_s g)(x)=sqrt(s)g(sx), hand recomputation gives H_(b,q_s)=s^2 D_s H_(b,q) D_s^-1, and D_s preserves H2. Thus E1 scales by s^2, simplicity and positivity of the ground state transfer, and lambda=sqrt(-E1) scales by s at the same b. Since k_f is unchanged, I_(psi_s)=s I_psi."
+    },
+    {
+      "claim": "C2: raw variance scales by s^(4-alpha), not its square root; fixed-s use is legal without uniform estimates.",
+      "verdict": "PASS",
+      "reason": "v_(psi_s)=A_f<q_s,U_(q_s)> with exponent (3-alpha)+2-1=4-alpha, where A_f is the double time integral of f against |t-u|^-a. Each fixed s gives a fixed member of C_sep, to which the accepted fixed-test theorem applies with its own K_par and constants. Target lines 19-21 and 67-68 exclude moving tests, s=s(delta) and uniform event claims."
+    },
+    {
+      "claim": "C3: V_c is a well-defined positive finite real for every c>0, without an optimizer.",
+      "verdict": "PASS",
+      "reason": "C_sep is nonempty. I_psi is positive and finite by note (6). v_psi is positive and finite because a<1, U_q is bounded, and all factors are nonnegative and nonzero. Each score at c=2 is at most Q2, and Q2 is at most the limsup, which is finite from E:full-upper because kappa>0 and the prefactor log is o(t^kappa). This bound is one number and is not a uniform event estimate. V_1>0 follows from s I-s^(4-alpha)v/2>0 for small s, since 4-alpha>1. All other c transfer by the dilation bijection."
+    },
+    {
+      "claim": "C3: V_c=c^((4-alpha)/(3-alpha))V_1, V_2>2V_1 and Q2>=V_2 are correct and noncircular.",
+      "verdict": "PASS",
+      "reason": "With c=s^(3-alpha), the score satisfies c I_(psi_s)-v_(psi_s)/2=s^(4-alpha)(I_psi-v_psi/2) exactly. Because the map is bijective, the suprema transform with no optimizer. The exponent lies in [4/3,3/2], so 2^p>2, and strictness uses 0<V_1<infinity. Q2>=V_2 is a supremum of fixed lower bounds on one fixed number, with no limit interchange. The upper input is an independent import that does not use V_c. Added falsification: inserting a covariance amplitude A gives V_c proportional to A^(1/(3-alpha)), matching the R_alpha^(1/(3-alpha)) power in T:full-upper."
+    },
+    {
+      "claim": "C4: c, V_1 and V_2>2V_1 are scoped as auxiliary, with no extra moment, first-mean, Skorohod, optimizer, dimensional or sharp claim.",
+      "verdict": "PASS",
+      "reason": "Target lines 62-68 say c is a label, V_1 is not the first-mean rate, L_*, E or E_star, and V2>2V1 is not a Jensen improvement. They also exclude nonseparable optimizer transfer, source correction, a sharp upper bound and higher-dimensional closure. No Skorohod result is claimed anywhere in the target. This agrees with actual-shifted-event Section 7."
+    },
+    {
+      "claim": "C4: the source-image description and retained discrepancy boundary are accurate and not silently repaired.",
+      "verdict": "PASS",
+      "reason": "The image shows (1.11) with kernel gamma(x-y)/|s-r|^alpha_0 and gradient penalty 1. It shows (1.12) with damped gamma^0_* from (1.13) and penalty 1/2, and the same A_d in both. The target and crosswalk state these factors correctly. They retain adjudication-v2's scoped discrepancy with the intended correction UNKNOWN, and identify V_c with neither expression. The image's alpha_0 is the time exponent, which supports the mapping alpha_0=a."
+    },
+    {
+      "claim": "C4: the T:full-upper excerpt and custody serve only as a finite-upper import.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The exponent matches kappa under alpha_0=a. The bound holds at x=0 for T>=1 and gives a finite limsup. Custody records the consequence as same-model finiteness, not a new proof or a first-mean constant, and adjudication-v2 says the upper arguments avoid the suspect first-moment constant. Only finiteness is consumed, so C and R_alpha values are not imported. Notes: the text of H:homog is absent from the packet, the alpha_0=a and same-solution mapping is implicit, and custody capture is at 28cc01e rather than the review revision 6203ab7."
+    },
+    {
+      "claim": "C5: the script and data give 6 exact white/Riesz cases with s>1 and s<1, and the correct relations and controls.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Hand trace of alpha in {1,1/2,1/4} with s=u^(2d) and u in {2,1/2} reproduces every JSON value. Examples are alpha=1/2, s=16 giving 1024, 1/4 and 16384, and alpha=1/4, s=256 giving 4194304, 1/64 and 2^30. Assertions cover amplitude times pushforward equal to s^2, eigenfunction norm amp^2/s=1, variance s^(4-alpha), and the score relation at c=s^(3-alpha). Wrong-variance (s^2) and unnormalized-eigenfunction controls are present. The script's stated scope correctly disclaims proof. Notes appear in minor findings; the script was not executed in this review."
+    },
+    {
+      "claim": "C5: local recon is not novelty clearance and adds no theorem import.",
+      "verdict": "PASS",
+      "reason": "local-recon.md and target lines 72-73 label the wiki reads as recon, state that search results are not absence evidence, and import no time-white or Fourier convention and no numeric static or white constant. They propose no novelty."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Hypothesis text for T:full-upper is not in the frozen packet. Coverage of the full target range, including white alpha=1 in d=1, rests on the acceptance declared in the review brief, crosswalk lines 20-21, custody, and the accepted class in tilt Section 1. An optional clarification would state this range explicitly.",
+      "The target does not display the dictionary alpha_0=a, nor the identification of the T:full-upper canonical expansion solution with the original point solution in the lower theorem. Both are strongly implied, but stating them would make the application explicit.",
+      "Custody records capture at 28cc01e with a source hash, while this review is at 6203ab7. The canonical TeX is not in the packet, so the crosswalk's claim that the excerpt is current cannot be confirmed here. Recording the hash check at 6203ab7 would close this bookkeeping point.",
+      "Adjudication-v2 says the upper arguments use a separate static coefficient source, and the target notes a published white-constant mismatch on the static page. This does not affect the deduction because only finiteness is consumed, but the proof should keep that restriction visible.",
+      "The target does not state lambda=sqrt(-E1), v_psi>0, the explicit v_psi product formula, nonemptiness of C_sep, or the elementary scalar-only ambiguity of factorizations. All follow directly from accepted notes or elementary reasoning, and the proof wave should write them out.",
+      "The script's wrong-variance control uses s^2, not the literal square-root variance s^((4-alpha)/2), and there is no wrong-rate (s^2) or explicit composition control. The required behavior was confirmed by hand recomputation.",
+      "JSON fields eigen_L2_normalized and score_relation are hard-coded True, guarded by preceding asserts. They carry no independent value, so the formulas and asserts are the actual evidence.",
+      "The word 'positive' for f and q in the target's factorization sentence means nonnegative and nonzero, as line 11 defines it. Tighter wording is optional."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is a pre-proof audit of statement, object, class and feasibility. It is not proof acceptance, novelty clearance, human verification or whole-paper certification.",
+    "Accepted lower-theorem, spectral-family and T:full-upper internals were inspected only as statements and applications, and were not re-proved.",
+    "No shell was available, so check-diagnostics.py was traced by hand rather than executed.",
+    "SHA256 values for the PNG, excerpt, canonical TeX and PDF were not recomputed. The custody hash and capture revision could not be compared with canonical TeX, which is outside the packet.",
+    "H:homog, E:expansion, P:mild-construction and the other cited notes are not in the packet, so their exact hypotheses were not read.",
+    "Hand exponent and supremum recomputation in this review checks feasibility only. The measure change of variables, unitary conjugation and class argument still have to be written in the proof wave.",
+    "Only page 4 of the source was inspected, through the one required image."
+  ]
+}

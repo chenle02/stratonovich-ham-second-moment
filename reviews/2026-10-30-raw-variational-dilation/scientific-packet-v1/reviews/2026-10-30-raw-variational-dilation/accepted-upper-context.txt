@@ -1,0 +1,39 @@
+Accepted upper-input dictionary (not a new proof): alpha_0=a; the
+canonical expansion solution in T:full-upper is the ORIGINAL canonical
+point solution used in actual-shifted-event(4). No assertion about all
+possible mild versions or pathwise uniqueness is made. The d1 positive
+Riesz/white family is within H:homog below. Only finite limsup is used;
+no first-mean or numerical static constant is an input.
+
+Exact current H:homog excerpt:
+\begin{hypothesis}[Homogeneous covariance]\label{H:homog}
+  Let $d\in\{1,2,3\}$ and $0<\alpha_0<1$.
+  The spatial covariance is a nonnegative, even, positive-definite
+  tempered Radon measure $\Gamma$ on $\R^d$, with positive even
+  tempered Radon spectral measure $\mu$ in the convention
+  \[
+    \Gamma=\int e^{i\xi\cdot x}\mu(\ud\xi)
+    \quad\text{in the sense of tempered distributions}.
+  \]
+  The symbol $\gamma$ in~\eqref{E:cov} denotes this covariance as a
+  function when one exists, and as a distribution otherwise.
+  For every Borel set $A$ and $c>0$,
+  $\Gamma(cA)=c^{d-\alpha}\Gamma(A)$, and
+  \begin{equation}\label{E:threshold}
+    \alpha_0+\alpha<2,
+  \end{equation}
+  with $0<\alpha<d$, or $\alpha=d=1$.
+  In particular, the last case includes spatial white noise
+  $\Gamma=\delta_0$.
+\end{hypothesis}
+
+Exact current main-result dependency qualification:
+The first-moment formulas in Theorem~\ref{T:first} are quoted source
+statements, with the printed-normalization qualification there; they are
+not premises of the full upper theorem. Chen--Hu's static coefficient
+estimates and Chen's 2023 variational finiteness theorem are used only in
+the explicitly identified auxiliary sections. In particular, our uses of
+the latter cite Theorem~1.1, not Corollary~1.2. Thus neither a disputed
+first-moment constant nor an auxiliary static coefficient theorem enters
+the interval-field upper bound.
+

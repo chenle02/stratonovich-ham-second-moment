@@ -264,3 +264,17 @@ types/live standardaxioms and actual recurrence/penalty applications
 independently checked. Lean sources unchanged; fence clarification was
 post-execution and fully in review. Local receipts remain no-package/
 no-Comparator/no-formal-analytic-event evidence; L0/PROPOSED unchanged.
+
+
+## Raw variational local power identities (2026-10-30)
+
+Four public scalar consumers compile/replay cleanly at latest stable4.35.0:
+dilation potential/variance exponents, label-score scaling, positive-score
+witness and strict label2factor. Complete public types/live standard3axioms,
+3numericFalse controls and5ownedhashmatches checked. Initial compile/audit
+reached finalhashguard but server artifact differed with two lint warnings;
+attempt preserved, successor removes only2unnecessary tactic combinators
+and all4public types match. No gate weakened or linterdisabled. Evidence
+local-checks/raw-variational-v1/. Independent exacttype/application review
+pending. No formal covariance/spectral/supremum/event or package theorem.
+L0/PROPOSED/privatecompanioncreation decision unchanged.
