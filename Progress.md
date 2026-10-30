@@ -4101,3 +4101,17 @@ paper/visual-formula/source gate or novelty clearance claimed. Prospective
 two-region cutoff mechanism recorded UNPROVED; no spectral theorem added.
 Next: visually check source formulas/Kato hypotheses and matched existence/
 wave inputs, then independent target-fidelity review. Original goalACTIVE.
+
+
+### Spectral visual/hypothesis screen — 2026-10-30
+
+PrintedSimon1982pp448/453/498 visually checked from held PDF; images,
+exactpage mapping/hashes and initial off-by-one lookup retained in
+reviews/2026-10-30-spectral-phase/simon82-visual-binding-v2.json.
+A1normalization andC.3.5half-factor confirmed. A14d1Kato definition applies
+to actual bounded U_b=-V_b/2 via uniform local integral<=||V_b||infinity;
+Riesz globalL1integrability is not required. This is source-hypothesis
+screening, not S1proof or independent acceptance. C.3.5does not supply
+uniform familyconstants. Next unresolved primary inputs: ground-state
+existence/isolation/essential threshold, then uniform gap/weighted derivatives
+and the Sobolev-to-F wave transfer. No new proof/Lean/package/event claim.
