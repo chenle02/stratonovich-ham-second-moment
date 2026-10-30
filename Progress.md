@@ -4974,3 +4974,11 @@ doctor/selectedheadroom23short66weekly. Session97067/samehandle,no restart
 onobservationtimeout. Includes3newfinite scalar exacttype/actualapplication
 gate andMathlibpi sourcecontext. No pointlower adoption until terminal
 proofverdict. FulloriginalgoalACTIVE, globalOmega>=1stillOPEN.
+
+OutsideFULLdampedlowerpacket, nextglobalOmega target refined asUNREVIEWED
+Taylor4rowenvelope: P4>=exp(-z)>0 wouldbound Rstar by explicit5Gamma-term
+B4(a,d), monotonicd<=4-2a and decreasingDelta(q,a)<=Delta(3,a) reduceALLd1
+range toONEvariable inequality Ma^-1>=B4(a,4-2a)expDelta(3,a). Eight50digit
+marginspositive(.001.. .99), code/JSON/obligations retained. Reduction and
+GLOBALGamma inequality NOTproved/adopted. This targetsoriginalrange,
+not a claimed resultfromgrid; originalpointproofstillawaitsFULLgate.
