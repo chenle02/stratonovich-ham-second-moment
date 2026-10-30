@@ -1,0 +1,99 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    ".review/required-sources.json lines 1-69 (read plan only; earns no read credit)",
+    "notes/spectral-ground-family.md lines 1-136 (complete)",
+    "notes/joint-gaussian-tilt.md lines 1-319 (complete)",
+    "reviews/2026-10-30-spectral-phase/target-v2.md lines 1-98 (complete)",
+    "reviews/2026-10-30-spectral-phase/teschl-second-edition-custody.json lines 1-25 (complete)",
+    "reviews/2026-10-30-spectral-phase/ground-worker-honesty-v1.md lines 1-14 (complete)",
+    "reviews/2026-10-30-spectral-phase/ground-trial-check.json lines 1-12 (complete)",
+    "reviews/2026-10-30-spectral-phase/source-images/teschl2014-title.png (full image)",
+    "reviews/2026-10-30-spectral-phase/source-images/teschl2014-copyright.png (full image)",
+    "reviews/2026-10-30-spectral-phase/source-images/teschl2014-p140.png (full image)",
+    "reviews/2026-10-30-spectral-phase/source-images/teschl2014-p141.png (full image)",
+    "reviews/2026-10-30-spectral-phase/source-images/teschl2014-p200.png (full image)",
+    "reviews/2026-10-30-spectral-phase/source-images/teschl2014-p201.png (full image)",
+    "reviews/2026-10-30-spectral-phase/source-images/teschl2014-p258.png (full image)",
+    "reviews/2026-10-30-spectral-phase/source-images/teschl2014-p273.png (full image)"
+  ],
+  "checks": [
+    {
+      "claim": "C1 Source fidelity: edition and the imported Teschl statements",
+      "verdict": "PASS",
+      "reason": "The title page reads 'SECOND EDITION', GSM Volume 157. The copyright page gives ISBN 978-1-4704-1704-8, 'Second edition', QC174.17.S3T47 2014, (c) 2009, 2014. These match the custody JSON. Theorem 10.2 (p258) requires V real-valued in L^infty_infty(R^n)+L^2 for n<=3. Lemma 7.21 on p200-201 defines L^infty_infty as the bounded Borel functions that vanish at infinity. The theorem then gives H=H0+V self-adjoint on H^2, bounded below, sigma_ess=[0,infinity), with C_c^infinity a core. Theorem 10.13 (p273) is conditional: 'If E0=min sigma(H) is an eigenvalue, it is simple and the corresponding eigenfunction is strictly positive.' The note states it conditionally. Theorem 4.12 (p141) with (4.37) (p140) is the max-min formula. Later levels equal inf sigma_ess once the eigenvalues run out, and the form-domain extension is the sentence immediately after the theorem. All three are labelled as imported, not proved here."
+    },
+    {
+      "claim": "C1 Actual family: original d1 Riesz/white Gamma with amplitude, U bounded, nonnegative, nonzero and vanishing; no global L1; correct kinetic factor",
+      "verdict": "PASS",
+      "reason": "U=Gamma*q with Gamma>=0 and q>=0 nonzero gives U>=0 and U nonzero. The white case gives c_Gamma q, keeping the amplitude. Riesz boundedness and the decay C(1+|x|)^-alpha follow from the tail argument in tilt Section 3 (that argument is for psi, but psi=f q makes it apply to q). So -bU lies in L^infty_infty, which is the hypothesis of Theorem 10.2. Only m=integral over [-D,D] of U, which is finite, is used; no global L1 of the non-integrable Riesz tail is used. Teschl's H0=-Delta (units with mass 1/2, p200) matches H_b=-d^2/dx^2-bU and the target's V_b=b(Gamma*q)."
+    },
+    {
+      "claim": "C2 Uniform negative trial: constants fixed before b, energy and norm identities, epsilon, and spectral bounds",
+      "verdict": "PASS",
+      "reason": "D, m, chi, A, B and L depend only on U and b0, so they are fixed before b. A change of variables gives ||chi(./L)||^2=LB and ||(chi(./L))'||^2=A/L. Since L>=D, w_L=1 on [-D,D]. With U>=0, w_L^2>=0 and b>=b0, <w_L,H_b w_L> <= A/L-b0 m. L>=2A/(b0 m) then gives <= -b0 m/2. The Rayleigh quotient gives E1(b) <= -b0 m/(2LB) = -epsilon for every b in K. The lower bound <z,H_b z> >= -b||U||_inf >= -b1 M is correct. Bound (2) follows."
+    },
+    {
+      "claim": "C2 Existence of an isolated ground eigenvalue without circular use of Theorem 10.13",
+      "verdict": "PASS",
+      "reason": "inf sigma(H_b) is in the closed spectrum, which is bounded below. It equals the Rayleigh infimum over D(H_b)=H^2, which contains w_L (this is the n=1 case of (4.41), or the spectral theorem). It is <= -epsilon < 0 = inf sigma_ess, so it is not in sigma_ess. By the definition on p140 it is therefore an isolated eigenvalue of finite multiplicity. Only after this is Theorem 10.13 invoked, so the argument is not circular."
+    },
+    {
+      "claim": "C2 Pointwise positivity via d1 regularity and ODE uniqueness",
+      "verdict": "PASS",
+      "reason": "In d1, H^2 embeds in C^1. The eigen-equation gives p''=(lambda^2-bU)p, which is continuous, so p is C^2. The continuous representative of an a.e.-positive function is >=0 everywhere. At an interior zero, which is a minimum, p'=0, and uniqueness for this linear ODE with continuous coefficients forces p=0, contradicting normalization."
+    },
+    {
+      "claim": "C3 Max-min E2, threshold convention, multiplicity, and (3)",
+      "verdict": "PASS",
+      "reason": "E2 is defined as the second max-min level. By Theorem 4.12 it equals the second eigenvalue counted with multiplicity if one lies below 0, and otherwise inf sigma_ess=0. This also covers infinitely many Riesz bound states. Simplicity of E1 rules out E2=E1 when a second eigenvalue exists, and E1<=-epsilon<0 handles the threshold case. So E1<E2<=0."
+    },
+    {
+      "claim": "C3 Lipschitz bound |Ej(b)-Ej(c)| <= M|b-c| from common test classes",
+      "verdict": "PASS",
+      "reason": "The test classes are the same for all b: U(psi_1,...) uses D(H_b)=H^2 for every b (Theorem 10.2), and psi_1,... range over all of the Hilbert space. The quadratic forms differ by (c-b)<z,Uz>, and <z,Uz> lies in [0,M]. A uniform pointwise bound survives an infimum and then a supremum, giving exactly the constant M=||U||_inf. No continuity of eigenvectors is assumed."
+    },
+    {
+      "claim": "C3 Uniform gap Delta>0 on compact K",
+      "verdict": "PASS",
+      "reason": "E2-E1 is continuous by (4) and strictly positive by (3), so it attains a positive minimum on the compact interval K=[b0,b1]."
+    },
+    {
+      "claim": "C4 Conversion from energy gap to rate gap, and the choice of eta0",
+      "verdict": "PASS",
+      "reason": "With mu_b=sqrt(-E2)>=0, lambda-mu=(lambda^2-mu^2)/(lambda+mu)=(E2-E1)/(lambda+mu). The denominator lies in [sqrt(epsilon), 2sqrt(b1 M)], so lambda-mu >= Delta/(2sqrt(b1 M)). Take eta0=(1/2)min(sqrt(epsilon), Delta/(2sqrt(b1 M))). Then 0<eta0<sqrt(epsilon)<=inf lambda_b, and 2eta0<=Delta/(2sqrt(b1 M)) gives mu_b<=lambda_b-2eta0. No F-complement, projection or decay estimate is used as a premise, and the note says explicitly that this is not an operator-norm estimate on F."
+    },
+    {
+      "claim": "C5 Exact white H1 trapezoid diagnostic",
+      "verdict": "PASS",
+      "reason": "A=2*1^2=2. B=2+2*integral_0^1 t^2 dt=8/3. With unit mass q supported in [-1,1] and c_Gamma=1, m=1 and L=16=2A/(b0 m) at b0=1/4. Energy is 2/16-1/4=-1/8. LB=128/3, so the quotient is -3/1024, which equals -epsilon as expected. The note labels this an H1 diagnostic that relies on the form-domain sentence on p141, distinct from the smooth-chi proof and not a growth-rate computation."
+    },
+    {
+      "claim": "C5 Lean boundary, scope and honesty, including every worker-honesty concern",
+      "verdict": "PASS",
+      "reason": "No formal Gaussian, spectral or variational Lean theorem is claimed. Status is CANDIDATE, not a novel theorem. Still open: weighted eigenfunction/duality bounds on F, wave-projection normalization, global fractional Sobolev-to-F wave calculus, the F-complement estimate, product/cone/event/sharp constants, higher dimensions and source normalization. Each listed worker concern was checked: trial normalization, non-circular existence, threshold cap and common classes, compactness, rate conversion, ODE positivity, H1 versus smooth trial, and no hidden F premise. Each is substantiated above."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "The note says tilt-note Section 3 'gives' U nonnegative and nonzero. Section 3 actually proves smoothness, boundedness and the tail estimate for h=|.|^-a*Gamma*psi. Nonnegativity and nonzero-ness of Gamma*q are immediate from Gamma>=0 and q>=0 nonzero, and the q-level bound comes from applying Section 3 to psi=f q. A one-line attribution fix would be clearer.",
+      "Teschl works in complex L^2, while the target fixes real spaces. Passing to the real setting (real potential, real and imaginary parts of eigenvectors, max-min restricted to real vectors) is standard but not stated.",
+      "The identification of the quadratic form domain of H_b with H^1 (used for the 'common form domain H1' alternative and for the H1 diagnostic) is standard for a bounded perturbation of -d^2/dx^2, but it is not among the imported statements. The proof itself uses the H^2 version, so nothing load-bearing depends on it.",
+      "The identity inf sigma(H_b) = Rayleigh infimum is used implicitly. It is the n=1 case of (4.41), or Theorem 2.20 as cited on p140, and could be named explicitly.",
+      "Line 20 says the Theorem 10.2 'source/definition map was statement-reviewed', but the packet has no record of that review; the custody JSON says 'source recon only' and the queue receipt is unchecked. I independently confirmed the statements against the images, so this is only a provenance gap.",
+      "The diagnostic takes covariance amplitude 1 and b0=1/4 for illustration; these are not tied to the frozen family's actual c_Gamma or the range of k. This is acceptable as a diagnostic only.",
+      "Notation: M means ||U||_inf here but the support radius of phi in the tilt note. This is harmless within the note."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is an AI review of the frozen packet only, not human verification and not a novelty audit. The source images are selected pages; I did not check the rest of the book, such as Theorem 2.20, Lemma 7.19 or the definitions of positivity and core beyond what is visible.",
+    "The edition and theorem-number custody rests on the provided images and JSON hashes. I did not recompute the hashes, and the bibliography queue receipt is recorded as unchecked.",
+    "Tilt-note bounds were treated as scoped accepted inputs, as instructed, and were not re-proved.",
+    "The verdict covers only the L2 ground-state existence, uniform spectral bounds, uniform energy gap and rate separation. It says nothing about the F-wave projection, the complement estimate, product/cone/event rates, sharp constants or higher dimensions, which all remain open."
+  ]
+}

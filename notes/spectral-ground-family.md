@@ -1,8 +1,11 @@
 # Ground state and uniform gap for the actual profile family
 
-CANDIDATE, not independently accepted. This is standard spectral groundwork
-for the proposed actual-F complement target, not a novel spectral theorem.
-Full original upper/sharp goal remains active. No F-wave bound follows yet.
+ACCEPTED at the scoped analytic/source gate: actual Opus5.5/HIGH,
+11PASS,126.626seconds, no required repairs, scientific source45e1b13.
+Evidence and seven optional clarifications are in
+reviews/2026-10-30-spectral-phase/ground-adjudication-v1.md.
+This is standard spectral groundwork, not novelty or an F-wave bound.
+Full original upper/sharp goal remains active.
 
 ## Inputs and scope
 

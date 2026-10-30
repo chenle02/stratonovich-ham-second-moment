@@ -1,0 +1,406 @@
+{
+  "schema": "le-ai-lab.review-read-ledger/1",
+  "coverage_verified": true,
+  "claude_code_version": "2.1.304",
+  "events_sha256": "048ed59159ce7de7d4b4dc60825b83e215a0a00f1acc0dd4e5c236b363a05f00",
+  "events_hash_bound_to_receipt": true,
+  "stream_workspace": "${HOME}/.local/state/Le-AI-Lab/stratonovich-ground-scientific-v1/workspace",
+  "required_sources_sha256": null,
+  "continuation": false,
+  "continuation_credit": null,
+  "proves": "Each credited line was returned, numbered and byte-equal to the frozen workspace file, in a tool_result paired with a Read or line-numbered content-mode Grep call of the hash-bound provider stream.",
+  "does_not_prove": "Attention, understanding, or retention: a credited line may have been skimmed, ignored, or dropped by context compaction before the report was written. Uncredited lines may still have been seen in a form the ledger cannot attribute (previews, unnumbered output, subagents).",
+  "sources": [
+    {
+      "path": "notes/spectral-ground-family.md",
+      "sha256": "089e8065a0a34b1fd6af528fe019f3dd7630b052dabe95d63da467b97c5cc8df",
+      "total_lines": 135,
+      "required_ranges": [
+        [
+          1,
+          135
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          135
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "notes/joint-gaussian-tilt.md",
+      "sha256": "35e67b2a208abc5d9f9684e515dc5fbab23e9ad236f37ddb29ec0acf98dfa063",
+      "total_lines": 318,
+      "required_ranges": [
+        [
+          1,
+          318
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          318
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "reviews/2026-10-30-spectral-phase/target-v2.md",
+      "sha256": "b0a68593dd73b17872a364f3708b75bfb9d56209e6777842e4a14eda1073bedd",
+      "total_lines": 97,
+      "required_ranges": [
+        [
+          1,
+          97
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          97
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "reviews/2026-10-30-spectral-phase/teschl-second-edition-custody.json",
+      "sha256": "aafb52c79855d6caf4d9c02487ff507463d0104449e59f0dc42935f862edb228",
+      "total_lines": 24,
+      "required_ranges": [
+        [
+          1,
+          24
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          24
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "reviews/2026-10-30-spectral-phase/ground-worker-honesty-v1.md",
+      "sha256": "f7a2b517c46b1455a4ca839f74014284a9de809808e564e2d2db3365d2e83c23",
+      "total_lines": 13,
+      "required_ranges": [
+        [
+          1,
+          13
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          13
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "reviews/2026-10-30-spectral-phase/ground-trial-check.json",
+      "sha256": "c9fd63cc2c1494109f46f8f815f6ff2f6131506b5db065bdc4575e043a4e2535",
+      "total_lines": 11,
+      "required_ranges": [
+        [
+          1,
+          11
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          11
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    }
+  ],
+  "image_proves": "Each delivered image: a direct Read tool_use of its exact workspace path, in the stream's session, is paired by id with a tool_result (same session) whose content is one inline base64 image block of the declared media type, and the base64 decodes to bytes whose sha256 is the declared one.",
+  "image_does_not_prove": "That the model looked at, understood or correctly interpreted the image, or any scientific acceptance of what it shows: only delivery of these exact bytes. Transformed or resized content, metadata and self-reports earn nothing, so an undelivered image may still have been seen in another form.",
+  "required_images": [
+    {
+      "path": "reviews/2026-10-30-spectral-phase/source-images/teschl2014-title.png",
+      "sha256": "06d93958b6e69863dda91ad3962b5f33da58cb9f1fbe4d3993dbc6d336f7b3ab",
+      "media_type": "image/png",
+      "status": "delivered",
+      "delivered_by": [
+        "toolu_01Rm27VyypbsiXfoh2jAufro"
+      ]
+    },
+    {
+      "path": "reviews/2026-10-30-spectral-phase/source-images/teschl2014-copyright.png",
+      "sha256": "9c2d1f295e986746c68eafa30ae625906c5de4bf6777e98e7c16435fc9a3c664",
+      "media_type": "image/png",
+      "status": "delivered",
+      "delivered_by": [
+        "toolu_01SGEXhb2q3UKXWHXrjAmfJV"
+      ]
+    },
+    {
+      "path": "reviews/2026-10-30-spectral-phase/source-images/teschl2014-p140.png",
+      "sha256": "7a26372443829a9aabedc2dc2ec1657e4a88d8f8e60bcb2a487ec98279d2e242",
+      "media_type": "image/png",
+      "status": "delivered",
+      "delivered_by": [
+        "toolu_01Dnkg8TrwoS5y2tAQoQFyvY"
+      ]
+    },
+    {
+      "path": "reviews/2026-10-30-spectral-phase/source-images/teschl2014-p141.png",
+      "sha256": "c0671b00a98f19f2a5e95bb67bd74b46dd6049289c048f44362d1ecd0529836c",
+      "media_type": "image/png",
+      "status": "delivered",
+      "delivered_by": [
+        "toolu_01YHup81bgwUFmR7CkeC5KaD"
+      ]
+    },
+    {
+      "path": "reviews/2026-10-30-spectral-phase/source-images/teschl2014-p200.png",
+      "sha256": "9baaddda60a0887952cf92d00574ca69f74445f68ba10e9615873e3ac1392f67",
+      "media_type": "image/png",
+      "status": "delivered",
+      "delivered_by": [
+        "toolu_017imu8UxrgBnrcnfzDAhNsa"
+      ]
+    },
+    {
+      "path": "reviews/2026-10-30-spectral-phase/source-images/teschl2014-p201.png",
+      "sha256": "75926ba34080981795625ee34ee5e07d8a190023e1ad6e5ee39ae05d0623cab6",
+      "media_type": "image/png",
+      "status": "delivered",
+      "delivered_by": [
+        "toolu_019476B35eaSdJwdycsayuzJ"
+      ]
+    },
+    {
+      "path": "reviews/2026-10-30-spectral-phase/source-images/teschl2014-p258.png",
+      "sha256": "f4aba7f622a78b8812ac81700679c967337a35ba5ac955c30f400a7b7e399cbb",
+      "media_type": "image/png",
+      "status": "delivered",
+      "delivered_by": [
+        "toolu_01Bmpo9SCLJgjKLKboq3yT7U"
+      ]
+    },
+    {
+      "path": "reviews/2026-10-30-spectral-phase/source-images/teschl2014-p273.png",
+      "sha256": "86d96e2743a9e1a22ae16936d6c08ee428315496ba90162f8b71f96e33b20d5b",
+      "media_type": "image/png",
+      "status": "delivered",
+      "delivered_by": [
+        "toolu_01UmGzL5muKPXpvvNxp5nEia"
+      ]
+    }
+  ],
+  "tool_calls": [
+    {
+      "id": "toolu_011pWNUuB5iHFAF5NdQzNf6k",
+      "tool": "Read",
+      "source": ".review/required-sources.json",
+      "plan_copy_read": [
+        ".review/required-sources.json"
+      ],
+      "uncredited": "runner-owned plan copy (.review/): never read credit",
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_0153hqXdBd6tz4BXvyEvNJh6",
+      "tool": "Read",
+      "source": "notes/spectral-ground-family.md",
+      "credited": {
+        "notes/spectral-ground-family.md": [
+          [
+            1,
+            135
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01GgLwuLL5wxq71WqrNCRmKe",
+      "tool": "Read",
+      "source": "reviews/2026-10-30-spectral-phase/target-v2.md",
+      "credited": {
+        "reviews/2026-10-30-spectral-phase/target-v2.md": [
+          [
+            1,
+            97
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01E75pDLnt4zsgd8LJRqEKDq",
+      "tool": "Read",
+      "source": "reviews/2026-10-30-spectral-phase/ground-worker-honesty-v1.md",
+      "credited": {
+        "reviews/2026-10-30-spectral-phase/ground-worker-honesty-v1.md": [
+          [
+            1,
+            13
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01UzrYiYhBRiCmG5zkEojsyf",
+      "tool": "Read",
+      "source": "reviews/2026-10-30-spectral-phase/ground-trial-check.json",
+      "credited": {
+        "reviews/2026-10-30-spectral-phase/ground-trial-check.json": [
+          [
+            1,
+            11
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01Hu4BYR7qx5kX2FrM7pbHsv",
+      "tool": "Read",
+      "source": "reviews/2026-10-30-spectral-phase/teschl-second-edition-custody.json",
+      "credited": {
+        "reviews/2026-10-30-spectral-phase/teschl-second-edition-custody.json": [
+          [
+            1,
+            24
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01PCBmpQGSvCQdcdUPrc8DBk",
+      "tool": "Read",
+      "source": "notes/joint-gaussian-tilt.md",
+      "credited": {
+        "notes/joint-gaussian-tilt.md": [
+          [
+            1,
+            318
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01Rm27VyypbsiXfoh2jAufro",
+      "tool": "Read",
+      "source": "reviews/2026-10-30-spectral-phase/source-images/teschl2014-title.png",
+      "uncredited": "non-text result (image, PDF or block list)",
+      "stream": "attempt",
+      "image": {
+        "path": "reviews/2026-10-30-spectral-phase/source-images/teschl2014-title.png",
+        "media_type": "image/png",
+        "decoded_sha256": "06d93958b6e69863dda91ad3962b5f33da58cb9f1fbe4d3993dbc6d336f7b3ab",
+        "delivered": true
+      }
+    },
+    {
+      "id": "toolu_01SGEXhb2q3UKXWHXrjAmfJV",
+      "tool": "Read",
+      "source": "reviews/2026-10-30-spectral-phase/source-images/teschl2014-copyright.png",
+      "uncredited": "non-text result (image, PDF or block list)",
+      "stream": "attempt",
+      "image": {
+        "path": "reviews/2026-10-30-spectral-phase/source-images/teschl2014-copyright.png",
+        "media_type": "image/png",
+        "decoded_sha256": "9c2d1f295e986746c68eafa30ae625906c5de4bf6777e98e7c16435fc9a3c664",
+        "delivered": true
+      }
+    },
+    {
+      "id": "toolu_01Dnkg8TrwoS5y2tAQoQFyvY",
+      "tool": "Read",
+      "source": "reviews/2026-10-30-spectral-phase/source-images/teschl2014-p140.png",
+      "uncredited": "non-text result (image, PDF or block list)",
+      "stream": "attempt",
+      "image": {
+        "path": "reviews/2026-10-30-spectral-phase/source-images/teschl2014-p140.png",
+        "media_type": "image/png",
+        "decoded_sha256": "7a26372443829a9aabedc2dc2ec1657e4a88d8f8e60bcb2a487ec98279d2e242",
+        "delivered": true
+      }
+    },
+    {
+      "id": "toolu_01YHup81bgwUFmR7CkeC5KaD",
+      "tool": "Read",
+      "source": "reviews/2026-10-30-spectral-phase/source-images/teschl2014-p141.png",
+      "uncredited": "non-text result (image, PDF or block list)",
+      "stream": "attempt",
+      "image": {
+        "path": "reviews/2026-10-30-spectral-phase/source-images/teschl2014-p141.png",
+        "media_type": "image/png",
+        "decoded_sha256": "c0671b00a98f19f2a5e95bb67bd74b46dd6049289c048f44362d1ecd0529836c",
+        "delivered": true
+      }
+    },
+    {
+      "id": "toolu_017imu8UxrgBnrcnfzDAhNsa",
+      "tool": "Read",
+      "source": "reviews/2026-10-30-spectral-phase/source-images/teschl2014-p200.png",
+      "uncredited": "non-text result (image, PDF or block list)",
+      "stream": "attempt",
+      "image": {
+        "path": "reviews/2026-10-30-spectral-phase/source-images/teschl2014-p200.png",
+        "media_type": "image/png",
+        "decoded_sha256": "9baaddda60a0887952cf92d00574ca69f74445f68ba10e9615873e3ac1392f67",
+        "delivered": true
+      }
+    },
+    {
+      "id": "toolu_019476B35eaSdJwdycsayuzJ",
+      "tool": "Read",
+      "source": "reviews/2026-10-30-spectral-phase/source-images/teschl2014-p201.png",
+      "uncredited": "non-text result (image, PDF or block list)",
+      "stream": "attempt",
+      "image": {
+        "path": "reviews/2026-10-30-spectral-phase/source-images/teschl2014-p201.png",
+        "media_type": "image/png",
+        "decoded_sha256": "75926ba34080981795625ee34ee5e07d8a190023e1ad6e5ee39ae05d0623cab6",
+        "delivered": true
+      }
+    },
+    {
+      "id": "toolu_01Bmpo9SCLJgjKLKboq3yT7U",
+      "tool": "Read",
+      "source": "reviews/2026-10-30-spectral-phase/source-images/teschl2014-p258.png",
+      "uncredited": "non-text result (image, PDF or block list)",
+      "stream": "attempt",
+      "image": {
+        "path": "reviews/2026-10-30-spectral-phase/source-images/teschl2014-p258.png",
+        "media_type": "image/png",
+        "decoded_sha256": "f4aba7f622a78b8812ac81700679c967337a35ba5ac955c30f400a7b7e399cbb",
+        "delivered": true
+      }
+    },
+    {
+      "id": "toolu_01UmGzL5muKPXpvvNxp5nEia",
+      "tool": "Read",
+      "source": "reviews/2026-10-30-spectral-phase/source-images/teschl2014-p273.png",
+      "uncredited": "non-text result (image, PDF or block list)",
+      "stream": "attempt",
+      "image": {
+        "path": "reviews/2026-10-30-spectral-phase/source-images/teschl2014-p273.png",
+        "media_type": "image/png",
+        "decoded_sha256": "86d96e2743a9e1a22ae16936d6c08ee428315496ba90162f8b71f96e33b20d5b",
+        "delivered": true
+      }
+    }
+  ],
+  "diagnostics": []
+}

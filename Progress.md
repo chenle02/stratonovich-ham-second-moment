@@ -6,6 +6,7 @@
 
 ## Current state
 
+- **Latest spectral input:** actual d1 fixed-family ground-state existence/positivity and uniform energy/rate gap accepted11PASS/HIGH at45e1b13. Evidence/7minor adjudications in reviews/2026-10-30-spectral-phase/. Weighted tails, actual F-wave complement, product/event/sharp targets remain open.
 - **Latest accepted consumer:** actual d1 driver/canonical squared-average Gaussian tilt at `e51432c`,8PASS/HIGH; exact recovered report and7minor adjudications in reviews/2026-10-30-joint-gaussian-tilt/. Retained residual, exact raw profile/cost and original point-moment consumer. Spectral product/event/sharp/higher-dimensional targets remain open.
 - **Phase:** actual d1masked/local causal Young flow, canonical noise-only averaged observable and growing-block operator stability accepted13PASS/HIGH atd020a2a. Uniform local operator bounds handle data1 and a growing observation cone without a global stationary HS norm. Actual d1 Gaussian tilt is accepted at the later scoped gate; spectral product-growth/event and sharp constants remain open; original higher-dimensional scope retained. WHITE13/original9unchanged.
 - **Review boundaries:** prior92page quantitative/mild source `a7e725e` passed its own19checks/HIGH. The new8check review covers the direct norms, positive spatial Wick-measure limit, arbitrary joint vertex-width construction and their consumers. It does NOT freshly audit every unchanged operator/interval proof. Exact source/delivery/adoption bindings and limitations are in `reviews/2026-10-29-fixed-order-construction/`.
@@ -4181,3 +4182,17 @@ Opus5.5/high firstparty subscription, unchangedHIGHthreshold,6texts/8images.
 Session63672/native stratonovich-ground-scientific-v1; all live/committed
 inputhashes match. Poll samehandle/native receipt, no restart on timeout.
 No verdict or ground/gap adoption yet; original fullgoalACTIVE.
+
+
+### Ground-state/gap adoption — 2026-10-30
+
+Scientific source45e1b13 accepted11PASS/HIGH,126.626seconds, no required
+repairs, complete6text/8image coverage; actualfirstpartyOpus5.5. All14input
+current/frozen/committed hashes and native29member archive checked. All7minor
+findings adjudicated. Only openingstatus changes on adoption; fullproof/
+formulabody unchanged. No newformalSpectral/Lean/package claim.
+Uniform actualfamilyground existence/positivity and firsttwolevel/rate gap
+closed. Next open: weighted eigenfunction/derivative/localdual bounds and
+fractionalSobolev-to-Fwave complement, before wholeproduct/observable/event/
+sharpconstant. No livereviewer remains; original fullgoalACTIVE. Canonical
+TeX/PDF/source-normalization/higherdimensional/companiondecision unchanged.
