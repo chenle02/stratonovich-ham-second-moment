@@ -10,7 +10,7 @@
 - **Review boundaries:** prior92page quantitative/mild source `a7e725e` passed its own19checks/HIGH. The new8check review covers the direct norms, positive spatial Wick-measure limit, arbitrary joint vertex-width construction and their consumers. It does NOT freshly audit every unchanged operator/interval proof. Exact source/delivery/adoption bindings and limitations are in `reviews/2026-10-29-fixed-order-construction/`.
 - **Current artifact:** canonical110-page/60-proofTeX/PDF unchanged. New accepted memo notes/local-causal-young-flow.md proves the masked/local all-order d1bridge from the accepted first driver. Seven new finite Lean deductions support exact mask/Schur/source-budget applications, with8earlier deductions reused; full analytic/source/flow gate is13HIGH. No whole-paper clearance implied.
 - **Open targets:** full original fixed-positive-a sharp p2 constant in all dimensions/covariances; exact Gaussian tilt/canonical profile identification, deterministic spectral cone/product growth and resulting event/variational bounds, intended source-constant map, original higher-dimensional operators/flows. Next bounded consumer: joint Gaussian tilting of the ACTUALmasked driver and its canonical averaged observable, before a spectral product estimate. Whole-paper/novelty/circulation, companion decision4, canonical wiki publication and intended normalization remain separate/open.
-- **Agent8coordination:** completed at read-only source/statement/ownership level,as requested by Le. Agent8accepted our exact map;three API component fits and stronger-premise gaps are recorded in lean-progress/coordination/2026-10-29-agent8/reuse-adjudication.md. Current coefficient gate sourced5fde707,evidence successorbffd4329;historical SWE receipts remain e5e9558. Source/API/pins checked;no donor-package build/gate/companion/lease/registry transaction. Local Lean pilot is recorded separately. L0/PROPOSED and decision4unchanged.
+- **Agent8coordination:** completed at read-only source/statement/ownership level,as requested by Le. Agent8accepted our exact map;three API component fits and stronger-premise gaps are recorded in lean-progress/coordination/2026-10-29-agent8/reuse-adjudication.md. Current <PRIVATE-PACKAGE> (<PRIVATE-PACKAGE>) gated7f27788/evidence5393594: read-only source/pins and offline20PASSreceiptbinding verified; all9Leanfiles unchanged fromd5fde707/75d9781. PriorMEDIUMmathematicalreview is not upgraded; historicalSWEreceipts remain e5e9558. Source/API/pins checked;no donor-package build/gate/companion/lease/registry transaction. Local Lean pilot is recorded separately. L0/PROPOSED and decision4unchanged.
 - **Authorization:** Le's continuing full goal includes the sharp/lower track. The current wave is the bounded actual local-flow/sharp-lower consumer,with the HIGH review threshold unchanged. It does not redefine the original all-alpha0sharp target,claim novelty or promote a paper. Le now explicitly permits Lean verification;standalone local checks do not create a companion repo. Report/honor PROJECT-GOAL decision points;companion-creation decision4remains pending. No correspondence/public release authorized.
 - **Worker:** Codex/GPT author, paper-dev workflow; historical project handoff to agent #30 on 2026-10-26. Lean remains L0/PROPOSED (`lean-progress/PROGRESS.md`). Ten normal reference requests exist; new edition-custody intake is nonblocking, not source authentication.
 
@@ -3950,3 +3950,26 @@ in reviews/2026-10-29-local-flow-source-gate/lean-ops/runtime-owner-response.md.
 The earlier reproducible report/receipt remains preserved; policy answered
 does not mean a2.1.314adapter exists. Original math goal and Gaussian-tilt
 next step remain ACTIVE/unchanged.
+
+
+### Agent8 shared-package successor: read-only check (2026-10-29 local date)
+
+Fresh-resolvedAgent8=<MACHINE>/n8-swe-exact-moments. Reported factorial repository
+evidence53935943702decd7507c143d251bc71bb7db5ce9 binds gated
+7f27788e602c190244a95b9e8e5aafd9293871f1. Registrykeyremains
+<PRIVATE-PACKAGE>; GitHubrepositorynowfactorial-convolution-lean.
+All9Leanfiles matched d5fde707/75d9781/gated/current bytes; kept metadata/
+Lean4.35.0/fullMathlibpin unchanged. Offline receiptcheck20PASS validates
+committednative/replay/Comparatorbindings, runsLeanfalse/networkfalse.
+Derivedformalizationevidence/README changes follow the committedrule.
+No duplicated native/replay/Comparator gate, donor fetch/edit, lease,
+registration, newcompanion or mathematics developed. Strictsafety0remains
+owner-reported; PRIVATEobservedregistrymetadata. PriorMEDIUMmathematical
+review notupgraded. Existing finite-sum hypotheses/self-pair/limsupnu1K0
+fences and L0/PROPOSED unchanged. Evidence:
+lean-progress/coordination/2026-10-29-agent8/factorial-successor/.
+
+Durable lesson: registrykey, GitHubbasename, gatedsource and evidence
+descendant are distinct identities. A metadata repair preserves proof
+bytes but does not upgrade mathematical correspondence. This operational
+check leaves the actual Gaussian-tilt/mathnextstep and fullgoalACTIVE.

@@ -199,3 +199,11 @@ source-bound systemd/check receipts without registry; manual evidence stays
 project-owned. Optional migration not performed. Separate exact defaultCLI
 2.1.314read-ledger compatibility friction a73f556e4e30delivered; dry-run only,
 no provider, no gate weakening; current scientific review used2.1.304.
+
+Shared-library metadata followup2026-10-29local: registeredcoefficient-
+<PRIVATE-PACKAGE> now points to <PRIVATE-PACKAGE>. Gated7f27788/
+evidence5393594checkedread-only; all9Lean files identical to oldd5fde707/
+75d9781, pins unchanged, offline receipt20PASS. No Lean/gate/network
+execution in that parser, no confidence upgrade of earlierMEDIUMmathreview,
+no change to owned45deductions/L0/PROPOSED or package creation decision4.
+See coordination/2026-10-29-agent8/factorial-successor/.
