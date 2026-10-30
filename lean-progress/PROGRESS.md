@@ -347,3 +347,13 @@ Evidence local-checks/raw-value-ceiling-v1/.62declarations/14localseams
 provisional; exactanalyticapplications remainforindependentscientificgate.
 No formaloccupationenergy/covarianceCS/valueceiling/source/SPDE or package/
 companion/lease/registry/HPC/Comparator transaction. L0/PROPOSEDunchanged.
+
+
+Rawvalue scalar application close: scientificad6c188,8groups/HIGH,
+322.118seconds,26texts+4images,no requiredrepairs. exact_gap/strict_log_gap
+completepublictypes/stdaxioms and actualSection5applications independently
+checked; analyticNatcast/log/domain conversion remainsoutsidekernel.
+Rootversion4.35.0/eb6cafb andMathlibv4.35.0tag->56a0058/Falsegoals/archives
+rechecked.62finite deductions/14localseams scopedaccepted. No formal
+energy/covariance/spectral/valueceiling/SPDE or officialpackage/companion/
+lease/registry/HPC/Comparator transaction. L0/PROPOSEDunchanged.

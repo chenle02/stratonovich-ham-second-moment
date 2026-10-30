@@ -1,0 +1,103 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "reviews/2026-10-30-raw-value-ceiling/target-v1.md lines 1-128 (complete)",
+    "reviews/2026-10-30-raw-value-ceiling/worker-honesty-v1.md lines 1-32 (complete)",
+    "reviews/2026-10-30-raw-value-ceiling/check-diagnostics.py lines 1-49 (complete)",
+    "reviews/2026-10-30-raw-value-ceiling/diagnostics-v1.json lines 1-118 (complete)",
+    "reviews/2026-10-30-raw-value-ceiling/falsification-v1.md lines 1-25 (complete)",
+    "reviews/2026-10-30-raw-value-ceiling/source-and-recon-v1.md lines 1-33 (complete)",
+    "reviews/2026-10-30-raw-value-ceiling/source-custody-v1.json lines 1-32 (complete)",
+    "notes/occupation-control-approximation.md lines 1-364 (complete)",
+    "reviews/2026-10-30-occupation-approximation/scientific-adjudication-v1.md lines 1-63 (complete)",
+    "notes/general-positive-consumer.md lines 1-477 (complete)",
+    "notes/nonseparable-profile-family.md lines 1-385 (complete)",
+    "reviews/2026-10-30-nonseparable-family/scientific-adjudication-v1.md lines 1-72 (complete)",
+    "reviews/2026-10-28-source-normalization/adjudication-v2.md lines 1-66 (complete)",
+    "reviews/2026-10-28-source-normalization/packet-v2/pages/chen-03-upper.png full image viewed",
+    "reviews/2026-10-28-source-normalization/packet-v2/pages/chen-03-lower.png full image viewed",
+    "reviews/2026-10-28-source-normalization/packet-v2/pages/chen-04-upper.png full image viewed",
+    "reviews/2026-10-28-source-normalization/packet-v2/pages/chen-04-lower.png full image viewed",
+    "notes/raw-positive-value-ceiling.md lines 1-346 (complete)",
+    "notes/joint-gaussian-tilt.md lines 1-318 (complete)",
+    "reviews/2026-10-30-raw-value-ceiling/statement-adjudication-v1.md lines 1-34 (complete)",
+    "reviews/2026-10-30-raw-value-ceiling/scientific-worker-honesty-v1.md lines 1-40 (complete)",
+    "lean-progress/local-checks/raw-value-ceiling-v1/StratonovichHAMAudit/RawValueCeiling.lean lines 1-27 (complete)",
+    "lean-progress/local-checks/raw-value-ceiling-v1/Audit.lean lines 1-7 (complete)",
+    "lean-progress/local-checks/raw-value-ceiling-v1/WrongInteger.lean lines 1-4 (complete)",
+    "lean-progress/local-checks/raw-value-ceiling-v1/WrongEndpoint.lean lines 1-5 (complete)",
+    "lean-progress/local-checks/raw-value-ceiling-v1/types-and-axioms.txt lines 1-58 (complete)",
+    "lean-progress/local-checks/raw-value-ceiling-v1/local-receipt.json lines 1-68 (complete)",
+    "lean-progress/local-checks/raw-value-ceiling-v1/README.md lines 1-27 (complete)",
+    "lean-progress/local-checks/raw-value-ceiling-v1/archive-verification.json lines 1-22 (complete)",
+    "lean-progress/local-checks/raw-value-ceiling-v1/version-check.json lines 1-16 (complete)",
+    ".review/required-sources.json lines 1-104 (read plan, no read credit)"
+  ],
+  "checks": [
+    {
+      "claim": "C1: Actual objects, parameters, energy domain and source dictionary",
+      "verdict": "PASS",
+      "reason": "By hand: the Riesz and white Gamma amplitudes, 0<alpha<=1, 0<a<1, q=4-alpha, k=3-alpha and m=q/k match the accepted notes. O, X, rho_g, B_Gamma, v, I and V_c match occupation Sections 1-6 and consumer (24)-(32). Q2>=V_2 is the only point consumer, and it is a lower bound. E_eta is a newly defined raw energy with kinetic coefficient eta. The images show (1.10) with the printed map, (1.11) with raw kernel and penalty 1, and (1.12) with damped kernel and penalty 1/2. Printed A_d requires W^{1,2} and unit mass for every s, with no time measurability or integrated-energy condition. The note retains the discrepancy, leaves the intended fix UNKNOWN, and makes no identification."
+    },
+    {
+      "claim": "C2: Homogeneous occupation bound (2)-(3) and positive finite real suprema",
+      "verdict": "PASS",
+      "reason": "A zero weak derivative gives a constant, and L2 then forces 0, so T>0. Riesz: L_t<=2 sqrt(b); near and far parts give c[2L R^(1-alpha)/(1-alpha)+R^-alpha]; R=1/L gives c[2/(1-alpha)+1]2^alpha b^(alpha/2). Mass 1, symmetry and min<=geometric mean give (2). White: spatial CS with int g^4<=2 sqrt(b) gives constant 2c and exponent 1/4. Schur with K0=2^a/(1-a) and Jensen on the unit interval give (3). The score C x^(alpha/2)-eta x and the ratio are bounded above before suprema are taken. Positivity comes from small ell, using alpha<2. No source finiteness is imported."
+    },
+    {
+      "claim": "C3: Occupation dilation, scalar maximum and exact GN relation (4)-(7)",
+      "verdict": "PASS",
+      "reason": "S_ell is an L2-unitary H1 isomorphism and preserves strong measurability and O. The Radon pushforward factor ell^(alpha-1), including 1 for white, gives A degree alpha, and T has degree 2. S_ell is correctly distinguished from D_s. The derivative factorization, endpoint limits and maximizer ell_* are correct. The maximum value D_eta[A/T^(alpha/2)]^(2/(2-alpha)) was recomputed. The union of dilates equals O, both supremum inequalities hold without attainment or minimax, and (7) with E_eta=eta^(-alpha/(2-alpha))E_1 solves correctly. Actual a is unchanged."
+    },
+    {
+      "claim": "C4: Smooth ground curve, covariance CS and inequality (10)",
+      "verdict": "PASS",
+      "reason": "H2 continuity gives strong H1 measurability and finite T, so g=p_sigma lies in O. The eigenequation with kinetic coefficient 1 gives lambda^2+||p'||^2=int h p^2. Integrating, then Tonelli, evenness and K symmetry, give (8) exactly. CS at finite n uses the shared raw Gaussian W on two smooth tests, not kernel positivity or independent noise. Bilinear continuity (5) and cost continuity (7) pass it to X. Time CS is used only as I^2<=int lambda^2. The factor sqrt(v C_occ)T^(alpha/4) is correct, and no rough ground state or flow is assumed."
+    },
+    {
+      "claim": "C5: Global T and v optimizations, coefficient identity and exact ceiling (11)-(15)",
+      "verdict": "PASS",
+      "reason": "Recomputed: the T maximum (1-beta)beta^(beta/(1-beta))H^(1/(1-beta)) gives (11) with q/4, (alpha/4)^(alpha/q) and (vC)^(2/q). The v maximum k v_*/2 at v_*=(2cD/q)^(q/k) gives (12) with raw half cost. (13) holds. (alpha/4)^(alpha/2)(2eta/alpha)^(alpha/2)=(eta/2)^(alpha/2) and 2^(-k)(eta/2)^(alpha/2)=(2eta)^(alpha/2)/8 both hold, giving exactly U_c(eta)=c^m(2eta)^(alpha/(2k))F_0(E_eta). Eta cancels through (7). The cap is uniform in psi before the real supremum. SUP gives the X value without any rough spectral argument. Display b=0 retains the actual-a energy, with no static model or a-limit theorem."
+    },
+    {
+      "claim": "C6: Strict map gap, criterion, certificate and source map identity",
+      "verdict": "PASS",
+      "reason": "q>=3 and q-2a>1 make all logs legal. The x log x integral gives 2 Delta_map>0, and F_a/F_0=exp(Delta/k). The exact ratio exp([Delta-(alpha/2)log(2eta)]/k) gives criterion (18), which is automatic for eta<=1/2. At alpha=1/10, a=9/10: q=39/10, q-2a=21/10, q-a=3, and 20 Delta=log[39^39 21^21/30^60]. The integer inequality gives 20 Delta>log 2, which is (18) at eta=1, for all amplitudes and c>0. Digit counts, leading digits and the difference prefix agree with the JSON by hand; the ratio is about 15.5. F_b matches the image of (1.10) with alpha_0=b as a map only. No E_half=E_star/E identity, all-A_d=O claim, F_a(E_star)>U claim or normalization repair is made."
+    },
+    {
+      "claim": "C7: Lean seams, receipts and scalar diagnostics scope",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Source declarations match the public pp.all types and the two applications, exact_gap and strict_log_gap(q,a,ha,hpos), and the printed axioms are the standard three. Log and integer conversion and domain checks are analytic and outside the kernel, as stated. The receipt records exits 0/0/1/1/0/0, Mathlib pin 56a0058 and five equal hash pairs, and the failed attempt01 archive is retained. Both controls are numeric instances of false statements, not mutated theorems. By hand I reproduced all six gaps and wrong-cost ratios, the M values of cases 1, 2, 4 and 6, and the full T, v, score, F0 and Fa values of case 4 plus F0 and ceiling of case 6. The code has no physical energy or optimizer evaluator. I did not execute or hash anything: replay, hash, archive and version claims remain root-recorded evidence."
+    },
+    {
+      "claim": "C8: Mechanism consequence and non-claims",
+      "verdict": "PASS",
+      "reason": "V_2 upper bounds limit only the positive-control scores. Since Q2>=V_2 is one-sided, no Q2 upper bound or moment counterexample follows, and other c stay auxiliary. The source lower F_a(E_star) is not compared with the ceiling, and intended normalization, the exact limit, higher dimensions and sharp upper remain open. The G:upper and Theorem 3.1 route is untouched, and calibrations are scalar only. No first-mean, source L, Jensen-improvement, signed-control, optimizer, attainment, minimax, clock-equality, Skorohod, source-fix, contact, companion, HPC, novelty, whole-paper or circulation claim appears. The original full goal is stated ACTIVE."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Section 1 cites joint-gaussian-tilt Section 1 for the covariance law on all smooth tests. That section states the raw-law W and the W^delta covariance. The cross-covariance is explicit only by scaling back and in tilt (8), with (W) defined in a note outside this packet. The inference is sound, and an explicit pointer would be clearer.",
+      "Section 6 compares c^m F_a at c=2 with V_2, while printed (1.10) is a first-moment map. The note correctly calls this a displayed quantity and adopts no source identity. Stating explicitly that 2^m F_a(z) is not a printed second-moment constant, and that any source comparison must also fix the first-to-second-moment label, would prevent misreading of the U_2 sentence.",
+      "The phrase 'Squaring D and multiplying powers' before (13) is loose: the computation raises D to the power q. The identity itself is correct.",
+      "The Nat-to-real cast before log monotonicity in Section 5 is left implicit. It is elementary and correct.",
+      "The packet holds no WrongInteger or WrongEndpoint logs, only exit codes and README prose. Both statements are mathematically false, so failure is expected, but the exact False residual goal could not be seen from packet files.",
+      "version-check.json records the latest v4.35.0 tags, and the receipt records Mathlib revision 56a0058 and a binary hash. Neither packet file itself binds the Lean version string or the tag to that revision; the binding rests on README text.",
+      "The script comment 'derivative signs' at line 40 describes sampled-neighbor checks only. Section 7 correctly describes them as such and proves global maxima analytically."
+    ],
+    "required_repairs": []
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is an AI read-only hand review, not human verification or a novelty audit.",
+    "Nothing was executed. I did not run the script, compile Lean, recompute any hash or verify any archive. All execution, replay, hash, archive, version and commit claims are root-recorded evidence I checked only for internal consistency.",
+    "The accepted occupation, general-positive, smooth-ground and joint-Gaussian inputs were read and their new applications checked, but they were not re-proved. The conclusion is scoped to them.",
+    "Source facts come only from the four supplied author p3/p4 crops. The source PDF, its later sections, the author name and page labels were not independently checked from the PDF.",
+    "No claim is made on the intended source normalization, F_a(E_star) versus the ceiling, the original exact-limit conjecture, higher dimensions, sharp upper constants or whole-paper status.",
+    "The ambient amsg hook notice was not read or used. It is outside the frozen packet, and no message was sent."
+  ]
+}

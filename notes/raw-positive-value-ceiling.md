@@ -1,10 +1,12 @@
 # A ceiling for the positive Gaussian-control variational value
 
-CANDIDATE PROOF, not adopted. Preproof3efedd8 passed20groups/HIGH,
-317.273seconds,13texts+4exactauthorimages,no requiredrepairs. Full
-scientific analytic/type/application/source review is REQUIRED.
-This bounds the LOWER-MECHANISM VALUE V_c, not the point moment Q2.
-Original sharp/source/all-dimensional goal and normalization remain open.
+ACCEPTED at the scoped scientific analytic/source/type/application gate:
+actualOpus5.5/HIGH,8PASSgroups,322.118seconds,26texts+4sourceimages,
+no requiredrepairs; scientificsourcead6c188. Exact evidence and seven
+optional clarifications in reviews/2026-10-30-raw-value-ceiling/
+scientific-adjudication-v1.md. This bounds the positive-control LOWER-
+MECHANISM VALUE V_c, not the point moment Q2. Original sharp/source/
+dimensional goal and intended normalization remain open.
 
 ## 1. Fixed actual objects, scoped imports and new energy
 

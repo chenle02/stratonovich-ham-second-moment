@@ -6,8 +6,8 @@
 
 ## Current state
 
-- **Live raw-value ceiling FULL review:** candidate analytic V_c ceiling/strict displayed-map mechanism limit atad6c188; actual Opus5.5/high,26texts+4images,session32900/native stratonovich-value-ceiling-scientific-v1. Preproof20HIGH accepted statement only. No V ceiling adopted yet; never Q2 upper. Poll same handle/receipt.
-- **Latest occupation bridge:** actual positive X=L2(time;L1 intersect L2 space) covariance/closed-H1-form/measurable-Rayleigh-rate approximation, original-point lower and exact smooth/X score-supremum equality accepted8groups/HIGH at80e47d6 (272.897seconds,25texts). Includes actual finite-energy occupation densities g² and bounded nonnegative timeweights. Two new scalar form-budget applications checked. NEXT: raw variational VALUE/source/clock comparison; intended normalization/sharp upper/higher dimensions remain open.
+- **Latest raw value comparison:** actual positive-control variational VALUE ceiling in own raw occupation energy E_eta, with strict displayed-map gaps ateta1/2 and legalalpha1/10,a9/10eta1, accepted8groups/HIGH atad6c188 (322.118seconds,26texts+4images). Actual moment Q2 still has only LOWERQ2>=V2 from thismechanism; no Q2 upper/sourceconstantidentity. Two scalar applications checked. NEXT: freeze/falsify concrete damped-LOWER-endpoint comparison via proposed temporalpotential/staticcontrol/kernel-row route; current9pointrecon unproved. Original sharpupper/all-dimensions/intendednormalization remainopen.
+- **Latest occupation bridge:** actual positive X=L2(time;L1 intersect L2 space) covariance/closed-H1-form/measurable-Rayleigh-rate approximation, original-point lower and exact smooth/X score-supremum equality accepted8groups/HIGH at80e47d6 (272.897seconds,25texts). Includes actual finite-energy occupation densities g² and bounded nonnegative timeweights. Two new scalar form-budget applications checked. RawVALUE ceiling now accepted atad6c188; NEXTdamped-lower-endpoint comparison. Intended normalization/sharp upper/higher dimensions remain open.
 - **Latest general-positive consumer:** actual d1 general-positive compact psi cone/noisy event/SAME-Z raw half-cost original-point lower and enlarged V_c^pos accepted24groups/HIGH at12c9879 (462.611seconds,34texts). All nine unchanged finite-kernel NEWapplications checked. Q2>=V2pos>=V2sep with exact auxiliary homogeneity; no source/firstmean/Jensen-improvement claim. Occupation-profile approximation now accepted at80e47d6; NEXT raw value/source/clock comparison, retaining sharp upper/higher dimensions/intended normalization.
 - **Latest general-profile bridge:** actual d1 general-positive-psi covariance family S1-S3 (uniform ground/gap, weighted actual F projection and physical complement) accepted27PASS/HIGH atc0a0093. Original undefined-J_phi preproof FAIL is preserved and repaired. General-test stochastic event/raw lower/variational consumer now scoped accepted at12c9879; source constants and original higher dimensions remain open.
 - **Latest raw variational consumer:** positive-separable d1 raw V_c finite/positive, exact auxiliary-label homogeneity and Q2>=V2 accepted20groups/HIGH at0fd2a05. Four finite Lean applications checked. V1 is not actual first mean/source L; this is not a Jensen improvement or sharp source constant. Next: nonseparable optimizer class and source correspondence, with original dimensions/sharp upper open.
@@ -25,7 +25,7 @@
 - **Authorization:** Le's continuing full goal includes the sharp/lower track. The current wave is the bounded actual local-flow/sharp-lower consumer,with the HIGH review threshold unchanged. It does not redefine the original all-alpha0sharp target,claim novelty or promote a paper. Le now explicitly permits Lean verification;standalone local checks do not create a companion repo. Report/honor PROJECT-GOAL decision points;companion-creation decision4remains pending. No correspondence/public release authorized.
 - **Worker:** Codex/GPT author, paper-dev workflow; historical project handoff to agent #30 on 2026-10-26. Lean remains L0/PROPOSED (`lean-progress/PROGRESS.md`). Ten normal reference requests exist; new edition-custody intake is nonblocking, not source authentication.
 
-- **Local Lean:** thirteen standalone seams contain60finite deductions with local compile/replay/standard-axiom evidence. Latest4raw variational identities have clean source/replay and3numericFalse controls; their exact type/application gate passed20groups/HIGH with the analytic proof. Earlier scoped reviews retain their own exact boundaries. Analytic SPDE, measure, spectral and supremum arguments remain outside these kernel checks. No official package/companion gate.
+- **Local Lean:** fourteen standalone seams contain62finite deductions with local compile/replay/standard-axiom evidence. Latest4raw variational identities have clean source/replay and3numericFalse controls; their exact type/application gate passed20groups/HIGH with the analytic proof. Earlier scoped reviews retain their own exact boundaries. Analytic SPDE, measure, spectral and supremum arguments remain outside these kernel checks. No official package/companion gate.
 
 
 ## Resume checkpoint — 2026-10-30: joint Gaussian tilt contract
@@ -4891,3 +4891,28 @@ is proved. Code/JSON/preciseobligations retained in raw-value-ceiling/
 next-damped-lower-*; freeze/falsify/review before longproof. This explores
 originaldampedLOWERtarget ratherthan rebranding the currentVceiling as
 momentupper/refutation. Intendedsource normalization/fullgoal unchanged.
+
+### Raw positive-control value ceiling adoption — 2026-10-30
+
+ActualOpus5.5/high8PASS/HIGH,322.118seconds,26texts+4exactimages complete,
+no requiredrepairs. All30live/frozen/gitad6c188 bindings,45nativearchive
+files,executedscalarJSON/two localLean receipts/fiveartifacts and both
+11/30fileLeanarchives verified. Sevenoptional findings adjudicated,including
+crossGaussianpointer,labelc2notprintedp2constant,positivepowercoefficient,
+Natcast/logbridge and actualversion/tag/Falsegoals. Only openingstatus
+changed; proofbody exactad6c188. Preproof317.273/20HIGH separateidentity.
+
+ACCEPTED ownrawE_eta finitepositive/exactinterpolation, actualsmoothground/
+sharedcovCS/timeCS scalarceiling V_c<=U_c, strictdisplaymapgap undereta1/2
+and legaleta1examplealpha1/10,a9/10. This is positivecontrolVALUEceiling,
+NOTQ2upper/actualmomentcounterexample and not a no-go for Gupper/Theorem3.1.
+Sourceinput/domain/normalization and first-to-second-label identification
+unadopted. Fa(E_star) versusrawvalue stillOPEN, so originaltwo-sidedlower
+notrefuted. Two newscalar exacttypes/applications scopedaccepted;
+62localdeductions/14seams. No reviewer/Lean job live, no formalenergy/
+Gaussian/value/SPDE/packagecompanion gate. CanonicalTeX/PDF unchanged.
+Concrete nextdampedlower probe has9positivecandidate logmargins/two
+quadratures but ALLcapacity/static/globalcomparison steps unproved,
+outside acceptedpacket. Freeze/falsify/audit before longproof.
+Fulloriginalsharp/source/dimensional goalACTIVE, no contact/sourcefix/
+Skorohod/wiki/publication/wholepaper/coldread/novelty/circulation claim.
