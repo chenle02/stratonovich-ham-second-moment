@@ -1,10 +1,12 @@
 # Actual shifted-flow growth event and raw-cost second-moment lower bound
 
-CANDIDATE, not independently accepted. The exact target in
-reviews/2026-10-30-actual-shifted-event/target-v1.md passed its preproof
-statement/fidelity audit; that is not proof acceptance. This note discharges
-the actual random block premise of the accepted deterministic cone theorem.
-The original sharp constants and full dimensional scope remain open.
+ACCEPTED at the scoped scientific analytic/type/application gate: actual
+Opus5.5/HIGH,18PASS/PASS_WITH_NOTES groups,379.671seconds,no required
+repairs; scientific sourced5dcd46. Evidence and six optional adjudications
+in reviews/2026-10-30-actual-shifted-event/scientific-adjudication-v1.md.
+Actual residual is retained; positive average event and raw-cost original
+point lower bound are for each FIXED positive separable test only.
+Original sharp constants, optimizer identification and dimensions remain open.
 
 ## 1. Objects, scoped inputs and claims
 

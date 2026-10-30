@@ -257,3 +257,10 @@ local-checks/actual-event-v1/. Operator recurrence uses finite identity
 extension; its analytic derivation and all probability/source/flow inputs
 remain outsideLean. Independent exacttype/application review pending.
 No package/companion/lease/registry/HPC; L0 remains PROPOSED.
+
+Actual-event local close: full scientific18groups/HIGH atd5dcd46,
+379.671seconds/24texts, no mandatory repairs. Both exact finite public
+types/live standardaxioms and actual recurrence/penalty applications
+independently checked. Lean sources unchanged; fence clarification was
+post-execution and fully in review. Local receipts remain no-package/
+no-Comparator/no-formal-analytic-event evidence; L0/PROPOSED unchanged.
