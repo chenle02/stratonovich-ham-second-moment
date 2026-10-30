@@ -76,10 +76,14 @@
   checked. Raw41member archive retained. Official latest stable Lean/Mathlib
   both4.35.0 and Mathlib56a0058match existing read-only pins. Local only;
   no package or Gaussian/flow theorem. Independent type/application pending.
-- Next action: freeze and dispatch the full scientific statement/analytic/
-  type/application gate. Worker honesty concerns are retained; both prior
-  medium/failed statement reviews remain unchanged. No extra statement
-  confidence retry substitutes for the required full proof gate.
+- Full scientific statement/analytic/type/application review launched on
+  frozen `e51432c`: actual Opus5.5/high <plan removed> <account removed>,
+  supported runtime2.1.304, unchanged HIGH threshold;23required texts.
+  Live session67422/native state stratonovich-tilt-scientific-v1, recorded
+  in scientific-launch-v1.json. Poll the same handle; no restart on timeout.
+  All23live/packet/COMMITTEDblob hashes match. No verdict at capture.
+  Worker honesty concerns retained; earlier statement v1MEDIUM/v2FAIL
+  unchanged. No confidence retry substitutes for this full proof gate.
 - Accepted science and canonical TeX/PDF unchanged. Lean stays L0/PROPOSED;
   decision4, source normalization, higher dimensions, sharp constants and
   whole-paper clearance remain open. No cluster or correspondence action.
