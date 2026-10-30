@@ -1,100 +1,89 @@
-Last updated: 2026-10-30 22:20 UTC (Codex)
+Last updated: 2026-10-30 23:07 UTC (Codex)
 
-Original full upper/sharp goal ACTIVE. PhysicallyMASKED SAME-W L²HS
-obstruction accepted; actualspectral/auxmask covariance foundation next.
+Original full upper/sharp goal ACTIVE. Three reviewed analytic foundations
+accepted; actual two-direction masked wave variance matching next.
 
 ## ⏭ Next session: where to stand and what to do
 
-Stand in this repository root. Freeze/falsify the actual spectral-growth
-and enlarged-mask LINEARcovariance domination statements in
-reviews/2026-10-30-higher-dimensional-hs/next-spectral-schatten-obligations.md
-(UNREVIEWEDplanning). Prove those boundedfacts before a largeSchatten/
-operatorpath claim. Do NOTassume the originalnoise-Hilbertmaskquotient
-bound in d2/3, nor that a normchange already gives a Youngflow.
+Stand in this repository root. The immediate next action is to freeze and
+falsify the ACTUAL first-interaction matrix forms and the two finite-family
+variance inequalities in
+reviews/2026-10-30-temporal-phase-bound/next-actual-two-variance-obligations.md.
+That file is UNREVIEWED planning, outside the accepted proof packets.
+Match all four normalized phase entries, actual time/sign/Fourier constants,
+SAME-W completion and both adjoint directions before a long operator proof.
+Do not assume the masked noise is stationary or a bounded Gaussian operator
+already exists. No live reviewer/Lean job; no restart is needed.
 
-The maskedSAME-W L²HS(E_s,E_s) obstruction is now ACCEPTED: scientific
-0743b2d,8groups/HIGH,407.368seconds,26texts+2images,adoption5ff14c9.
-Read notes/higher-dimensional-hs-obstruction.md anditsadjudication.
-This concerns PHYSICALLYMASKEDnoise andsame-spacecompatiblematrixforms,
-not theunmaskedrawdriver/equal-lawother-spaces/momentnonexistence.
-No reviewer/Leanjoblive; no restart. Originalall-dimensional lower,
-sharpupper/source/domain/label/exactlimit goalremainsACTIVE.
+Three reviewed foundations now available: spectral/auxiliary mask covariance,
+weighted scalar frequency row, temporal modulation/continuous low modes.
+Original full all-dimensional lower/sharp upper/source goal remains ACTIVE;
+these tools do not constitute the higher-dimensional moment theorem.
 
 ## Pre-flight checks
 
-1. Read AGENTS.md/PROJECT-GOAL.md andProgress.md; fulloriginalscope/stop
-   decisions retained. No sourcefix/contact/HPC/publicrelease/Skorohod.
-2. Check local/origin/<HUB>refs/dirtyownership,serialize refwrites.
-   Substantiveadoption before this HANDOFF-only successor:
-   5ff14c9af6770084065805e95e8760ceceb5e4ad. Allworkpushed/synced,no foreignWIP.
-3. DimensionalHSFULLscientific0743b2d: actualOpus5.5/high8PASS/HIGH,
-   407.368seconds,26texts+2sourceimagescomplete,no requiredrepairs.
-   All28bindings/43nativearchivefiles/diagnosticBYTEreplay/newmatrix
-   5artifactpairs/both9/26filearchives/oldscalar-source-types checked.
-   Sixminorfindings adjudicated; bodySection1onwardexact0743b2d,statusonly.
-4. Preproofd5c4663:7HIGH/444.177seconds,15texts+2images,32nativearchive
-   fileschecked,statementONLY. BothgatesdirectvalidJSON,no recovery/
-   retry/confidencechange. Fullscience launchrecord is terminalatcapture,
-   withauthenticstarted/finishedtimes,nofabricatedrunningstatus.
-5. ActualcompactmaskedmeanH=zeta_R(Gamma*q),k_fpositiveLip; ANYreal s,
-   boundedstrongprimitive A_h onHs xHs-1, full2phasekernelnearxi-eta0
-   order1/|xi|,actualtruncatedtraceUVdivergence d2log/d3linear. Compact
-   physical/input/outputcones proved,notperiodic/constant/globalvolume
-   proxy. ActualoriginalNONZERORadonGamma (notRiesz-only), no white2.
-6. SAME-W completedGaussianphaseforms useactualSobolevadjoint,
-   DchiNOTEs-selfadjoint;fixedcompacttests finitewithoutoriginalquotient
-   maskbound. Covariance withactualZ yieldsmeanA_h. StrongL²HScompatible
-   X wouldgiveHSBochnerEZX=A_h,contradiction. Fixedpairversion/density,
-   no uncountableset,sigmaWmeasorindependence premise.
-7. Scope: ONLYphysicallyMASKED W_R/largechi=1oncone/somefinitecovercell;
-   NOTdirectfailureofUNMASKEDrawDchiM,notEVERYchi,notlaw-onlyother-space
-   realization,notmixedindexregularityloss/allBanach/invariantstates.
-   Originalconstant(1,0) belongs toNOglobalEs; actualmoment/solution and
-   Gupper/Theorem3.1route notrefuted. No Skorohodmomentresult.
-8. OneNEWfullmatrixpublictheorem/3defs and2OLDscalarNEWapplications
-   independentlychecked. Matrixzero-frequencydiv0 is algebraonly;
-   physicalS usescontinuoussinc. Reusedwindowa_win1 NOTnoisea1,t_win1
-   NOTphysicalT1; allhypothesesdischarged. 70facts/17local-seams,
-   no formalFourier/HS/Gaussian/SPDE/package certificate. Newmatrix
-   initialnegationnormalizationfailure retained, ringonlyproofrepair.
-9. Root4.35.0/eb6cafb/Mathlibv4.35.0tag56a0058/actualFalsegoal rechecked;
-   newdefs/type/std3axioms/5cleanreplaymatches/1Falsecontrol,oldkernel
-   source/fulltypes/priorHIGHfidelity bound. L0/PROPOSED,decision4pending.
-10. FullGLOBALd1lower.ee188ab remainsaccepted,notreopened. Canonical110-
-    page/60-proofTeX/PDF/wiki unchanged,TeXSHA58b092b... unchanged.
-    Sourceintendednormalization/domain/label,sharpupper,d2d3lower,
-    conditionalexactlimit/fullpaper/coldread/novelty/circulation OPEN.
-11. Lastcontinuationbeforethiswork wasNO_PROGRESS(repeatedfinalonly),
-    explicitlyrevalidatedandcorrected bynewactualdimensionalproof. Do
-    NOTrepeatcheckpoint-only replies; nextmusttakeconcreteboundedaction.
+1. Read AGENTS.md, PROJECT-GOAL.md and Progress.md; retain full original
+   scope and decision points. No source repair/contact/HPC/Skorohod/publication.
+2. Audit local/origin/<HUB> refs and dirty ownership before editing;
+   substantive checkpoint8fb38f5e529f2d96003a91aa6acd913ee509ec56 before this
+   HANDOFF-only successor. All work pushed/synced0:0, no foreign WIP.
+3. Read the three accepted notes and full adjudications, not only headlines:
+   notes/spectral-mask-covariance-foundation.md (scientific af9b1ad,
+   adoption d967ea5;20checks/HIGH326.133s,9texts/24nativefiles);
+   notes/scalar-frequency-row-bound.md (scientific e905ad8,
+   adoption5497358;16checks/HIGH247.426s,12texts/27nativefiles);
+   notes/temporal-phase-bound.md (scientific81d9158,
+   adoption8fb38f5;19checks/HIGH203.22s,10texts/25nativefiles).
+4. Actual native Opus5.5/high, every full input live/frozen/git binding and
+   native archive member hash verified before adoption edits. Header and
+   reported explanatory/notation fixes only; no new estimate silently added.
+5. Scalar statement v1 genuinely FAIL/HIGH275.953s: missing lambda=2|xi|
+   quadrature split despite narrative. Preserved original8texts/23nativefiles.
+   New v2 explicit2q/width1/h nodes,30/50digit agreement, C=2/alpha and
+   normalized ratios; repaired gate12checks/HIGH257.443s,10texts/25files.
+   Numeric agreement is not certified accuracy or an analytic proof.
+6. Keep the accepted MASKED SAME-W L2HS obstruction5ff14c9, all real s in
+   d2/3. It does not refute operator/Schatten/Banach alternatives, source
+   solutions, moments or G:upper. Constant initial data belongs to no globalEs.
+7. No original-noise quotient mask multiplier for the full covariance class:
+   actual d2 delta tensorLeb compactmask sends a zero-noise test to positive
+   variance. Auxiliary and original test norms can be incomparable; the
+   proved contraction concerns W(zeta_R F), not W(F).
+8. No new Lean in these analytic waves; prior70facts/17seams not upgraded.
+   No official package, source-energy identification or whole-paper clearance.
+9. Canonical TeX/PDF/wiki unchanged. TeX SHA256
+   58b092b258d4f363f8bfa0a02dcf492dcb9c13e794dbcab440bf7b0529b53b7d.
+   Original GLOBALd1 lower ee188ab/e6ca0b5 remains accepted, not reopened.
 
 ## Concrete deliverables for the next session
 
-- PreciseoriginalGamma/mu Gaussian-test uniformballgrowth statement,
-  falsification and proof/source/typeaudit.
-- EnlargedPOSITIVEauxspectralmeasure for actualphysicalmaskLINEARvariance,
-  uniformRgrowth andtemporalHilbert-valued Fouriertest version; no bounded
-  multiplication ontheoriginalquotient assumed.
-- Onlythen actualbalancedrowcovariance/localizedSchatten moment/source/
-  Youngflow/canonicalpoint/growingcone obligations, preservingfull
-  alpha+a<2/covarianceclass. No announcedfix without actualbounds.
+- A frozen actual two-direction Gaussian variance target with falsification
+  controls, complete phase/adjoint/Fourier conventions and required source
+  bindings; get independent statement review before a long proof.
+- If accepted and proved, a full independent proof gate and Progress.md
+  adjudication; no operator/path/Schatten theorem from scalar rows alone.
+- Only afterward address physical compact localization, finite Gaussian
+  Schatten moment inequality and infinite-dimensional/source limits.
+  These are subsequent obligations, not the immediate first action.
 
 ## Success criteria for the immediate next step
 
-A correctaudited covariance/norm foundation that can feed an actual
-higher-dimensional first-driver construction. The maskedHSmethodfailure
-is alreadyproved; repeatingitord1Gammafacts isnot the nextgoal. A proposed
-largeroperatorclass needs bothvariance directions/localization/tail/path
-bounds,not justboundedoperatorvariance or a regularitylossHSmap.
+The ACTUAL SAME-W forms match the normalized full2x2 wave matrix and both
+finite-family variance inequalities for all original covariances/ranges.
+Physical masking is treated through the proved auxiliary LINEAR covariance
+bound before any stationary auxiliary calculation. Constants, low modes,
+complexification, temporal indicators and both Parseval sums are explicit.
+Independent statement audit precedes a long proof; full gate precedes adoption.
 
 ## Anti-success criteria
 
-No HSno-go calledactualmoment/nonexistence/Gupperfailure, no maskedresult
-silentlyextendedtounmaskedraw, no torus/proxy replacingactualcovariance.
-No auxiliaryspectralfield substitutedfororiginalnonlinearwave, no PSD
-covorder->momentmonotonicity, no Schattenworksbyname. No easierparameter
-range as finalsuccess, sourcefix/Skorohod/contact/companion/HPC/publicwiki/
-manuscriptrelease/wholepaper/circulation claim. Fullgoalstaysactive.
+Do not repeat completed d1 work, shrink to easier noise/dimensions, or claim
+scalar/temporal tools already construct a flow. Do not declare physically
+masked noise stationary, omit a phase entry/variance direction, import an
+original-quotient mask bound, assume HS on the same E, or treat covariance
+PSD order as nonlinear wave-moment order. No source normalization choice,
+Skorohod work/contact/HPC/private companion/public release. No goal completion
+from an intermediate result or a reviewed planning statement.
 
 ## What the previous sessions produced
 
@@ -817,35 +806,61 @@ Latest checkpoints:
   primaryoperatornormscope reconsidered,existingpartialticketretained,
   currentwikiCLOciteNOTFOUND; no duplicatequeue/sourcefix/correspondence.
 
+- 2026-10-30: NEW three-foundation checkpoint8fb38f5. Actual spectral
+  Gaussian distribution identity -> uniform translated mu-ball growth;
+  positive even auxiliary nu_R for physically masked LINEAR covariance,
+  uniformR growth and SAME-W auxiliary completion; compact d2 null-quotient
+  counterexample. Full native20checks/HIGH326.133s9texts/24files,
+  scientificaf9b1ad/adoptiond967ea5. Norm replacement, not norm domination.
+- 2026-10-30: Weighted scalar row for arbitrary translated-growth measures,
+  allxi/h, strictgamma, alpha<1/criticalLOG/alpha>1 regimes and scalar
+  strictbeta>1/2. Full16checks/HIGH247.426s12texts/27files,
+  scientifice905ad8/adoption5497358. Original diagnostic missing2q resonance
+  produced genuine FAIL/HIGH; retained, corrected with30/50digit quadratures,
+  new statement12checks/HIGH257.443s. No theorem constant from numeric ratios.
+- 2026-10-30: Raw temporal C1 modulation C0=16/(1-a), correlated product,
+  continuous b0=t factors C1=4*3^(1-a)C0 with(1+T)^4. Full19checks/HIGH
+  203.22s10texts/25files, scientific81d9158/adoption8fb38f5.120 finite
+  real polynomial controls; complex/product/sinc handled analytically.
+  All live/frozen/git/native hashes verified; no retry/recovery/confidence
+  reduction. Actual two-direction phase variance plan UNREVIEWED, no
+  Gaussian operator/Schatten/path/sourceflow/new moment adopted. No new
+  Lean module or canonical TeX/PDF/wiki change. Original full goal ACTIVE.
+
 ## Repo & git state at handoff
 
-Substantive adoption before this HANDOFF-only successor: 5ff14c9af6770084065805e95e8760ceceb5e4ad.
-Local/origin/<HUB> synchronized there, all mathematical/evidencepaths
-committed/pushed. No foreignWIP or live reviewer/Leanjob.
+Substantive checkpoint before this HANDOFF-only successor:
+8fb38f5e529f2d96003a91aa6acd913ee509ec56.
+Local/origin/<HUB> synchronized0:0; all mathematical/evidence paths
+committed and pushed, no foreign WIP or live reviewer/Lean job.
 Wiki ../SPDEs-wiki/content/projects/stratonovich-ham-second-moment.md exists
-and is unchanged. Intra-roundcheckpoint,no canonicalintegration/fullwiki/
-coldread/roundclose/wholepaper/novelty/circulation clearance.
+and is unchanged. This is an internal checkpoint, not canonical integration,
+whole-paper/cold-reader/novelty/circulation clearance.
 
 ## Operating notes
 
-Rootexecution/hash/archive/git/tag/version/sourceimage checks separate
-fromnativeAIread-only handverification. Allnativeattempts retained;
-preproof/fullscience directvalidJSON,no retry/recovery/confidencechange.
-Matrixcompilefailure wasnegationnormalization, notstatementchange.
-Oldscalarproofinternals unchanged; NEWanalyticapplications reviewed.
+Actual root execution/hash/archive/git checks remain distinct from native
+read-only AI hand verification. Every attempt retained, including real scalar
+v1 failure. Direct valid JSON throughout, no recovery or confidence changes.
+All three full gates actual Opus5.5/high via supported CLI2.1.304 and account
+<account removed>; no future quota/availability promise. Ambient amsg hook not used.
 
-SupportedCLI2.1.304PATH/account<account removed>,last<usage removed>atfull
-sciencelaunch,notfuturequotapromise. Launchcapturedafterterminalhonestly.
-Ambientamsghooknotread/used,no externalmessage. No donor/package/
-companion/lease/registry/HPC/Comparator/setup/source/wiki/sibling/
-publication transaction. CanonicalmathTeX/PDF unchanged.
+Next-variance plan is not reviewed. Proposed finite Gaussian Schatten
+inequality in scalar packet's next-actual-driver-obligations.md is also
+UNREVIEWED: possible self-contained finite Gaussian IBP/spectral-basis route,
+not an imported theorem or continuum estimate. No external reference acquired
+or duplicate queue ticket. Existing partial CLO ticket retained; not proof of
+whole-space full-range flow. No setup/registry/lease/companion/HPC transaction.
 
 ## Risks to monitor
 
-The HSobstruction is a specificmethodtest,not a completedhigherdimensional
-momentbound. Nextplan's spectralgrowth/auxmask/counterexample/Schatten
-predictions areNOTacceptedlemmas. GeneralGamma invariantdirections matter;
-originalquotientmaskbound mayfail andmustbetested,notimportd1Schur.
-A replacementdriverneedsactualoperator/path/sourcebounds acrossoriginal
-range andcanonicaldata. Sourceintendednormalization/sharpupper/fullgoal
-requirements remainOPEN; no prematurecomplete/paused/blockedstatus.
+The actual masked covariance is not stationary. Auxiliary spectral positivity
+and uniform ball growth bound only linear forms; inverse auxiliary physical
+covariance need not be nonnegative. Match every phase component and both
+variance directions before operator claims. In normalized coordinates the
+physical cutoff is J Dchi J^-1 and is generally not selfadjoint; compact
+factors need correct adjoints in both variance directions. No HS shortcut.
+
+Higher-dimensional lower bounds, sharp upper constants, source normalization/
+domain/label and conditional exact-limit issues remain OPEN. Original full
+goal remains ACTIVE; do not mark complete, paused or blocked at this checkpoint.
