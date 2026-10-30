@@ -7,15 +7,15 @@
 ## Current state
 
 - **Latest accepted consumer:** actual d1 driver/canonical squared-average Gaussian tilt at `e51432c`,8PASS/HIGH; exact recovered report and7minor adjudications in reviews/2026-10-30-joint-gaussian-tilt/. Retained residual, exact raw profile/cost and original point-moment consumer. Spectral product/event/sharp/higher-dimensional targets remain open.
-- **Phase:** actual d1masked/local causal Young flow, canonical noise-only averaged observable and growing-block operator stability accepted13PASS/HIGH atd020a2a. Uniform local operator bounds handle data1 and a growing observation cone without a global stationary HS norm. Canonical Cameron-shift, spectral product-growth/event and sharp constants remain open; original higher-dimensional scope retained. WHITE13/original9unchanged.
+- **Phase:** actual d1masked/local causal Young flow, canonical noise-only averaged observable and growing-block operator stability accepted13PASS/HIGH atd020a2a. Uniform local operator bounds handle data1 and a growing observation cone without a global stationary HS norm. Actual d1 Gaussian tilt is accepted at the later scoped gate; spectral product-growth/event and sharp constants remain open; original higher-dimensional scope retained. WHITE13/original9unchanged.
 - **Review boundaries:** prior92page quantitative/mild source `a7e725e` passed its own19checks/HIGH. The new8check review covers the direct norms, positive spatial Wick-measure limit, arbitrary joint vertex-width construction and their consumers. It does NOT freshly audit every unchanged operator/interval proof. Exact source/delivery/adoption bindings and limitations are in `reviews/2026-10-29-fixed-order-construction/`.
 - **Current artifact:** canonical110-page/60-proofTeX/PDF unchanged. New accepted memo notes/local-causal-young-flow.md proves the masked/local all-order d1bridge from the accepted first driver. Seven new finite Lean deductions support exact mask/Schur/source-budget applications, with8earlier deductions reused; full analytic/source/flow gate is13HIGH. No whole-paper clearance implied.
-- **Open targets:** full original fixed-positive-a sharp p2 constant in all dimensions/covariances; exact Gaussian tilt/canonical profile identification, deterministic spectral cone/product growth and resulting event/variational bounds, intended source-constant map, original higher-dimensional operators/flows. Next bounded consumer: joint Gaussian tilting of the ACTUALmasked driver and its canonical averaged observable, before a spectral product estimate. Whole-paper/novelty/circulation, companion decision4, canonical wiki publication and intended normalization remain separate/open.
+- **Open targets:** full original fixed-positive-a sharp p2 constant in all dimensions/covariances; Gaussian tilt is now scoped accepted; remaining targets include deterministic spectral cone/product growth and resulting event/variational bounds, intended source-constant map, original higher-dimensional operators/flows. Next bounded consumer: actual local-phase ground-state projection and complementary propagator estimate, then spectral product growth. Whole-paper/novelty/circulation, companion decision4, canonical wiki publication and intended normalization remain separate/open.
 - **Agent8coordination:** completed at read-only source/statement/ownership level,as requested by Le. Agent8accepted our exact map;three API component fits and stronger-premise gaps are recorded in lean-progress/coordination/2026-10-29-agent8/reuse-adjudication.md. Current <PRIVATE-PACKAGE> (<PRIVATE-PACKAGE>) gated7f27788/evidence5393594: read-only source/pins and offline20PASSreceiptbinding verified; all9Leanfiles unchanged fromd5fde707/75d9781. PriorMEDIUMmathematicalreview is not upgraded; historicalSWEreceipts remain e5e9558. Source/API/pins checked;no donor-package build/gate/companion/lease/registry transaction. Local Lean pilot is recorded separately. L0/PROPOSED and decision4unchanged.
 - **Authorization:** Le's continuing full goal includes the sharp/lower track. The current wave is the bounded actual local-flow/sharp-lower consumer,with the HIGH review threshold unchanged. It does not redefine the original all-alpha0sharp target,claim novelty or promote a paper. Le now explicitly permits Lean verification;standalone local checks do not create a companion repo. Report/honor PROJECT-GOAL decision points;companion-creation decision4remains pending. No correspondence/public release authorized.
 - **Worker:** Codex/GPT author, paper-dev workflow; historical project handoff to agent #30 on 2026-10-26. Lean remains L0/PROPOSED (`lean-progress/PROGRESS.md`). Ten normal reference requests exist; new edition-custody intake is nonblocking, not source authentication.
 
-- **Local Lean:** eight standalone seams now contain45finite deductions with local compile/replay/standard-axiom evidence and scoped type/application checks. The latest7support the local flow/source map; its3false controls and exact limits are in lean-progress/local-checks/local-flow-v1/. Analytic SPDE/path inputs remain outsideLean. No official package/companion gate.
+- **Local Lean:** nine standalone seams now contain49finite deductions with local compile/replay/standard-axiom evidence and scoped type/application checks. The latest7support the local flow/source map; its3false controls and exact limits are in lean-progress/local-checks/local-flow-v1/. Analytic SPDE/path inputs remain outsideLean. No official package/companion gate.
 
 
 ## Resume checkpoint — 2026-10-30: joint Gaussian tilt contract
@@ -4067,3 +4067,23 @@ Canonical TeX/PDF unchanged. No live reviewer/Lean job remains. Original full
 goalACTIVE; next is exact spectral projection/complement/product consumer on
 F with constant data and final averaged observable, before any event/constant
 claim. Higher-dimensional/source-normalization/whole-paper/decision4 open.
+
+
+## Spectral phase target freeze — 2026-10-30
+
+Local/origin/<HUB> clean and aligned at e50d94e before edits. Frozen
+PROPOSED S1 in reviews/2026-10-30-spectral-phase/target-v1.md specifies
+actual covariance-generated positive profile family, wave ground projection
+and complementary propagator on F INCLUDING constants, with uniform gap,
+normalization and decay/duality obligations. It is not proved or reviewed.
+S2full product/observable and Riesz mask perturbation remain later consumers.
+
+Exact rational two-mode diagnostics passed: both block norms2 can give
+productidentity/norm1, and a phase vector of norm100 can have displacement
+observable0. These are finite diagnostic witnesses, NOT actual HAM no-gos.
+Wiki search/cite and selected synthesis recon retained in local-recon.md;
+retrieved Simon survey/heat-semigroup leads are not imported wave/F results.
+Next: inspect matched primary-source Schrodinger/wave inputs and the F
+transfer gap, then independent statement fidelity review BEFORE proof work.
+No novelty, source theorem, spectral/event/rate, new Lean/package claim.
+Original full goalACTIVE; canonical TeX/PDF and accepted tilt proof unchanged.
