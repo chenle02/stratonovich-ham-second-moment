@@ -6,6 +6,7 @@
 
 ## Current state
 
+- **Live full scientific review:** general-positive-test consumer candidate at12c9879; actual Opus5.5/high,34texts,session67761/native stratonovich-general-consumer-scientific-v1. Preproof16groups/HIGH accepted statement only; T1-T3 remain unadopted pending actual terminal proof verdict. Poll same session/receipt, no observation-timeout restart.
 - **Latest general-profile bridge:** actual d1 general-positive-psi covariance family S1-S3 (uniform ground/gap, weighted actual F projection and physical complement) accepted27PASS/HIGH atc0a0093. Original undefined-J_phi preproof FAIL is preserved and repaired. General-test stochastic event/raw lower/variational consumer STILL open; existing point lower remains positive-separable until next proof.
 - **Latest raw variational consumer:** positive-separable d1 raw V_c finite/positive, exact auxiliary-label homogeneity and Q2>=V2 accepted20groups/HIGH at0fd2a05. Four finite Lean applications checked. V1 is not actual first mean/source L; this is not a Jensen improvement or sharp source constant. Next: nonseparable optimizer class and source correspondence, with original dimensions/sharp upper open.
 - **Latest actual lower consumer:** retained-residual d1 positive-average event and raw-cost original point second-moment lower rate >=2I_psi-v_psi/2 for EACH fixed positive separable test accepted18groups/HIGH atd5dcd46. Exact2finite Lean applications checked. Next: raw variational dilation/optimizer class/source correspondence; full sharp/all-dimensional normalization targets open.
@@ -4689,3 +4690,10 @@ native stratonovich-general-consumer-scientific-v1. All34live/frozen/git
 bindings verified, supporteddoctor/selectedheadroom9short62weekly passed.
 Proof not yet adopted; do not call preproof review a proof review.
 Poll samehandle/receipt,no observation-timeout restart. FullgoalACTIVE.
+
+Next occupation-class/density obligations retained as UNREVIEWEDplanning
+in general-positive-consumer/next-occupation-class-obligations.md, outside
+the running scientific packet. Exact finite-covariance/cost, legitimate
+rough spatial forms/measurable rates, countable-core equality and one-sided
+rate approximation must be established before source comparison. No density
+theorem or source-optimizer identification is claimed from this planning.
