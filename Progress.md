@@ -4517,3 +4517,23 @@ fullgoalACTIVE. Next REALgap: optimizer class/general positive time-space
 profiles and source correspondence, not another homogeneity restatement.
 No live reviewer remains at this adoption capture; no new companion/HPC/
 correspondence/source correction or canonicalTeX/PDF edits.
+
+
+## Actual nonseparable family statement/witness — 2026-10-30
+
+Original fullgoal continues from accepted raw positive-separable V.
+Next actual target in reviews/2026-10-30-nonseparable-family/target-v1.md
+defines h_sigma=Cov(W(sigma,.),W(psi)) for generalpositivecompact psi,
+not b(sigma)U. Frozen S1-S3 obligations: uniform ground/gap, weighted
+actualF projection/duality and real fractional-wave complement. Existing
+scalar results only POINTWISE at each legalq_sigma/coupling1; no assumed
+uniform constants or silent parameter substitution.
+
+Falsification first: actual white two-bump endpoint profiles are not
+proportional (A>B>0, positive determinant). Proposed short analytic
+witness and exact3rational determinant controls retained, all finite
+controls PASS. This is an exactrepresentation no-go ONLY, not proof that
+separable tests miss the optimizer or any sharp moment no-go. Common
+positive profile screen h_sigma>=Gamma*integralpsi needs family proof.
+Independent preproof statement/witness audit required before longproof.
+Core new obligations analytic; no new foundational Lean/package claim.
