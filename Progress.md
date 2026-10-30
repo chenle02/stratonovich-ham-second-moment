@@ -4561,3 +4561,11 @@ and18texts/8sameprimaryimages. Newpacket includes originalFAILreport and
 adjudication; failedv1 not overwritten. V2reaudit must independently
 confirmactualobject and alluniformity/source hypotheses before longproof.
 No S1-S3proof/adoption or oldconfidenceupgrade. FullgoalACTIVE.
+
+Revised nonseparable preproofv2 live at02b17a6: actualfirst-party
+Opus5.5/high,18texts+8exactsourceimages, unchangedHIGHthreshold;
+session34060/native stratonovich-nonseparable-statement-v2. All26live/
+packet/committed hashes match, same supportedlaunchlocaldoctor passed.
+Required J_phiobject repair now independentlyre-audited. OriginalFAIL
+receipt/report preserved; no longS1-S3proof before revisedgate.
+Original fullgoalACTIVE.
