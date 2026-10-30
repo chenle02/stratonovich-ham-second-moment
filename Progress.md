@@ -6,6 +6,7 @@
 
 ## Current state
 
+- **Live GLOBALd1Omega FULL review:** complete candidate all-rangeGamma/elementary-envelope/rationalcertificate/actuald1pointlower atee188ab; actualOpus5.5/high,31texts+2images,session98561/native stratonovich-global-omega-scientific-v1. Preproof17HIGH statementonly; no global theoremadopted. Fullsharpupper/d2d3/source/domain/label/exactlimit gates remainOPEN; poll samehandle.
 - **Latest actual damped lower result:** temporalBeta/legalX/staticlower/dampedenergy GENERALOmega pointcomparison and whitealpha1,a1/2 directpoint theorem(16), exactzeta=(2418683125/2415919104)^(1/8)>1, accepted7groups/HIGH at8883160 (295.426seconds,28texts+2images). OwnE_star^O explicitmeaningfuldomain; source/domain/label matching and normalization unadopted. Threefinite scalar applications checked. NEXT: freeze/falsify candidate full-range Taylor4/Gamma inequality for globalOmega>=1; current8samples/reduction unreviewed. Sharpupper/originald2d3/exactlimit/fullgoal remainOPEN.
 - **Latest raw value comparison:** actual positive-control variational VALUE ceiling in own raw occupation energy E_eta, with strict displayed-map gaps ateta1/2 and legalalpha1/10,a9/10eta1, accepted8groups/HIGH atad6c188 (322.118seconds,26texts+4images). Actual moment Q2 still has only LOWERQ2>=V2 from thismechanism; no Q2 upper/sourceconstantidentity. Two scalar applications checked. Dampedbridge/whitepoint now accepted at8883160; NEXTglobalOmega comparison. Original9pointrecon doesnotprove fullrange. Original sharpupper/all-dimensions/intendednormalization remainopen.
 - **Latest occupation bridge:** actual positive X=L2(time;L1 intersect L2 space) covariance/closed-H1-form/measurable-Rayleigh-rate approximation, original-point lower and exact smooth/X score-supremum equality accepted8groups/HIGH at80e47d6 (272.897seconds,25texts). Includes actual finite-energy occupation densities g² and bounded nonnegative timeweights. Two new scalar form-budget applications checked. RawVALUE ceiling now accepted atad6c188; NEXTdamped-lower-endpoint comparison. Intended normalization/sharp upper/higher dimensions remain open.
@@ -5059,3 +5060,20 @@ boundselfcontained/noEulerconstanttable/reflection. 31texts+2imagesFULL
 scientificpacket includescomplete4publicdefs/types/source/applications.
 Notadoptedbefore properFULLgate. Originald2d3/sharpupper/source/domain/
 label/conditionalexactlimit/wholepaper remainOPEN, fullgoalACTIVE.
+
+Globald1Omega FULLscience live atee188ab: actualfirstpartyOpus5.5/high,
+31texts+2exactsourceimages,all33live/frozen/gitbindings verified. Supported
+doctor/selectedheadroom6short67weekly. Session98561/samehandle,norestart
+onobservationtimeout. Includescomplete4publicQ/D/Vdefs/types andnew
+analyticapplications gate. No globalpoint theoremadoption beforeverdict.
+FulloriginalgoalACTIVE, d2d3/sharpupper/sourceissues notdeclaredsolved.
+
+Outside runningglobald1packet, nextoriginaldimensional obligations retained
+UNREVIEWED in global-omega/next-original-dimensional-obligations.md. A
+specificactuald2/3maskedRieszCMmean/freewave Fourierkernel mayobstruct
+HS(E_s) firstdriver extension bynear-diagonalhighfrequency~1/|p|. Must
+freeze/falsify/prove actualspace/covariance/kernel beforeclaimingno-go;
+not a periodic/constantproxy, momentcounterexample or Gupperfailure.
+Iftrue, neednewactualoperator/Banach Gaussian/flowbounds ratherthanblind
+reuse d1HS. No topology/source/classsuccessor assumed. Originaldimensional/
+sharpupper/normalization objectives retained, not replacedbyd1refinements.
