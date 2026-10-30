@@ -4486,3 +4486,14 @@ upper context and its packet copy. Trimmed only trailing blank lines and
 resealed the scientific manifest BEFORE any review dispatch; mathematical
 proof, Lean sources, old statement packet/sourceimage unchanged. Historical
 e1cb2ef checkpoint remains preserved; the review uses its clean successor.
+
+Raw variational scientific gate now live on clean frozen0fd2a05:
+actualfirst-partyOpus5.5/high,29texts+1exactprimaryimage, unchangedHIGH
+threshold; session54342/native stratonovich-raw-variational-scientific-v1.
+All30live/packet/committed input hashes matched before launch. Supported
+launch-local2.1.304doctor/healthyaccount0short61weekly. Includes full
+class/Radon/spectral/supremum proof and4exactfinite Lean applications;
+poll samehandle/receipt, no timeoutrestart. No variational adoption yet.
+Next REALoptimizer/class/source gap, not another homogeneity restatement,
+is retained as UNREVIEWED next-optimizer-class-obligations.md.
+Original fullgoalACTIVE, canonicalTeX/PDF unchanged.
