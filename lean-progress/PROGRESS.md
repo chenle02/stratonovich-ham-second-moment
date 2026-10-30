@@ -311,3 +311,16 @@ scientific-adjudication-v1.md. Root also executed exactproxyJSON controls.
 58finite declarations/12seams unchanged; no formal spectral/Young/Gaussian/
 probability/supremum or SPDE theorem and no official package/companion/
 lease/registry/cluster/Comparator transaction. L0/PROPOSED unchanged.
+
+## Occupation-form finite seam provisional (2026-10-30)
+
+Two new local real inequalities potential_budget/shifted_coercivity compile,
+audit and freshownedreplay cleanly on lateststable4.35.0/Mathlib56a0058
+(officialGitHublatestreleaseJSON checked). Completepublictypes/std3axioms,
+fiveartifacthashmatches andtwoactualFalsecontrols verified. Attempt01
+serverhashrefusal with redundanttacticwarning preserved; attempt02 removes
+only <;>, publictypes identical, zero warnings; guard unchanged. Bothnative
+archives allmembers verified. Evidence local-checks/occupation-form-v1/.
+60finite declarations/13localseams now provisional, no form/Sobolev/density/
+Bochner/rate/SPDE certificate. Actual newapplication review stillREQUIRED;
+no package/companion/lease/registry/donor/HPC/Comparator transaction.

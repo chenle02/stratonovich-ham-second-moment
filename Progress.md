@@ -4747,3 +4747,11 @@ Occupationapproximation preproof live at8f60730: actualfirst-party
 Opus5.5/high,13texts,unchangedHIGHthreshold;session50500. All13live/
 packet/gitbindings verified; supporteddoctor/selectedheadroom12short63weekly.
 Longproof awaitsactualstatement/object/class audit. OriginalgoalACTIVE.
+
+While occupationpreproof runs, two GENERICfinite scalar formbudgets have
+localcompile/audit/freshreplay evidence, completepublictypes/std3axioms,
+fivematchingartifacts andtwoFalsecontrols. Firstwarning/serverhashrefusal
+preserved; only redundant <;> removed, samepublictypes, guardunchanged.
+No longdensityproof or analyticadoption from this arithmetic. Exactnew
+Sobolev/form/application interfaces require fullscientificreview. Local
+60declarations/13seams provisional; no newcompanion/package/HPC.
