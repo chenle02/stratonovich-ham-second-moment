@@ -1,0 +1,86 @@
+EXACTcanonical source excerpts for imported model/upper input.
+Dictionary: alpha_0=a, SAMEoriginal canonical expansion/mild solution u
+as in the accepted Gaussian/direct-event/point consumer. Only FINITE
+upper rate used; no numerical/static/firstmeanconstant. The new control
+psi changes only the mean/test and not original model Gamma,a,u.
+
+=== E:HAM (exact source lines 122-125) ===
+\begin{equation}\label{E:HAM}
+  \frac{\partial^2 u}{\partial t^2}(t,x)=\Delta u(t,x)+\W(t,x)u(t,x),
+  \qquad u(0,x)=1,\quad \frac{\partial u}{\partial t}(0,x)=0,
+\end{equation}
+
+=== E:cov (exact source lines 129-132) ===
+\begin{equation}\label{E:cov}
+  \operatorname{Cov}\big(\W(s,x),\W(t,y)\big)=|s-t|^{-\alpha_0}\gamma(x-y),
+  \qquad 0<\alpha_0<1,
+\end{equation}
+
+=== H:homog (exact source lines 135-154) ===
+\begin{hypothesis}[Homogeneous covariance]\label{H:homog}
+  Let $d\in\{1,2,3\}$ and $0<\alpha_0<1$.
+  The spatial covariance is a nonnegative, even, positive-definite
+  tempered Radon measure $\Gamma$ on $\R^d$, with positive even
+  tempered Radon spectral measure $\mu$ in the convention
+  \[
+    \Gamma=\int e^{i\xi\cdot x}\mu(\ud\xi)
+    \quad\text{in the sense of tempered distributions}.
+  \]
+  The symbol $\gamma$ in~\eqref{E:cov} denotes this covariance as a
+  function when one exists, and as a distribution otherwise.
+  For every Borel set $A$ and $c>0$,
+  $\Gamma(cA)=c^{d-\alpha}\Gamma(A)$, and
+  \begin{equation}\label{E:threshold}
+    \alpha_0+\alpha<2,
+  \end{equation}
+  with $0<\alpha<d$, or $\alpha=d=1$.
+  In particular, the last case includes spatial white noise
+  $\Gamma=\delta_0$.
+\end{hypothesis}
+
+=== E:expansion (exact source lines 248-255) ===
+\begin{equation}\label{E:expansion}
+  \begin{split}
+    u(t,x)&=\sum_{n=0}^\infty S_n\big(g_n(\cdot,t,x)\big),\\
+    g_n(s_1,\dots,s_n,x_1,\dots,x_n,t,x)
+    &=\Big(\prod_{l=1}^nG(s_{l+1}-s_l,x_{l+1}-x_l)\Big)
+    \mathbf 1_{[0,t]^n_<}(s_1,\dots,s_n),
+  \end{split}
+\end{equation}
+
+=== P:mild-construction (exact source lines 1107-1122) ===
+\begin{proposition}[Mild construction from the fixed-order limits]
+  \label{P:mild-construction}
+  Under Hypothesis~\ref{H:homog}, the series
+  $u(t,x)=\sum_{n\ge0}X_n(t,x)$ is a mild solution in
+  \cite{chen:author2026:time-dependency}*{Definition~2.1 and (2.12),
+  pp.~9--10}. More precisely, for each $t>0$ and $x\in\R^d$,
+  \begin{equation}\label{E:mild-construction}
+    \lim_{\epsilon,\delta\downarrow0}
+    \int_0^t\int_{\R^d}G(t-s,x-\ud y)
+    u(s,y)W_{\epsilon,\delta}(s,y)\ud s
+    =u(t,x)-1\quad\text{in }L^2(\Omega).
+  \end{equation}
+  The limit allows arbitrary relative rates of the two widths.
+  In dimension three the Green-width limit precedes the noise-width
+  limit. No uniqueness assertion is made.
+\end{proposition}
+
+=== T:full-upper (exact source lines 6367-6383) ===
+\begin{theorem}[Full upper scale]\label{T:full-upper}
+  Under Hypothesis~\ref{H:homog}, let $u$ be the canonical expansion
+  solution~\eqref{E:expansion}, constructed as a Stratonovich mild
+  solution in Proposition~\ref{P:mild-construction}. Put
+  \[
+    R_\alpha=\frac{\alpha\pi\mu(B_1)}{2\sin(\pi\alpha/2)}.
+  \]
+  For every admissible $d=1,2,3$, there is a finite
+  $C=C(\alpha,\alpha_0)$ such that
+  \begin{equation}\label{E:full-upper-bound}
+    \E u^2(T,x)
+    \le e(T+2)^d
+    \exp\{C R_\alpha^{1/(3-\alpha)}
+    T^{(4-\alpha-\alpha_0)/(3-\alpha)}\},\qquad T\ge1.
+  \end{equation}
+  In particular, this establishes the unchanged Goal~\ref{G:upper}.
+\end{theorem}

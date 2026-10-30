@@ -4630,3 +4630,31 @@ Existing point lower still positive-SEPARABLE, NOTsilentlyextended.
 Original fullsource/sharp/all-dimensional goalACTIVE. No live reviewer
 remains at this adoption; no source correction/newcompanion/HPC/contact
 or canonicalTeX/PDF edit.
+
+
+## Actual general-positive-test consumer statement — 2026-10-30
+
+Next target in reviews/2026-10-30-general-positive-consumer/target-v1.md
+asks indexed-family cone argument, actual masked/noisy all-block event/
+SAME-Z rawcost original point lower, then enlarged C_pos variational
+lower/homogeneity/class inclusion. Not proved/adopted. ExplicitJ_phi
+linearfirstentry, sigmaINDEX0allowedlambda0positive, no oldbU theorem
+substitution or covariance-profile=psi mistake.
+
+Falsification first: fullyspecified exact15normalizedcone/partial cases
+(with sigma0,tinyantisymmetricerrors and both entries) plus nonrank1
+finiteGaussian covariance matrix control PASS. Rawv146 differs from
+chosenrank1surrogate581/4 and wrongmeanL2cost. These are finite proxies,
+not a physical HAM evaluator or optimizer counterexample. Currentexact
+canonical-model/covariance/expansion/mild/finiteupper excerpts retained.
+Nineoldscalar proofs/source/types/acceptedfidelity checkedunchanged; NEW
+analytic/application boundary is PARTIAL/BOUNDARY_REVIEW, no gatewaiver.
+Independentpreproof object/class/source audit required before longproof.
+Original fullgoalACTIVE, source normalization/sharp/dimensions unchanged.
+
+Consumer preproof packet frozen with28texts: fullactualtarget/controls,
+acceptedprofile/localflow/tilt/cone/event/variational/scaling inputs, exact
+canonicalmodel/covariance/mild/finiteupper excerpts, and9unchangedscalar
+Lean source/types/receipts with current bindings. Route stays original
+whole-paper PARTIAL/BOUNDARY_REVIEW, not a certified-goal waiver.
+No new proof or sourceconstant identification until the proper gates.
