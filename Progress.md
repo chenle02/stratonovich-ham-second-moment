@@ -7,7 +7,7 @@
 ## Current state
 
 - **Latest weighted projection:** actual d1 fixed-family weighted eigenfunction/derivative tails, duality, projection continuity and forward invariance accepted18PASS/HIGH at1242590. Seven optional findings adjudicated in reviews/2026-10-30-weighted-projection/. Complement/product/event/sharp targets still open.
-- **Latest spectral input:** actual d1 fixed-family ground-state existence/positivity and uniform energy/rate gap accepted11PASS/HIGH at45e1b13. Evidence/7minor adjudications in reviews/2026-10-30-spectral-phase/. Weighted tails, actual F-wave complement, product/event/sharp targets remain open.
+- **Latest spectral input:** actual d1 fixed-family ground-state existence/positivity and uniform energy/rate gap accepted11PASS/HIGH at45e1b13. Evidence/7minor adjudications in reviews/2026-10-30-spectral-phase/. Weighted tails/projections are accepted at1242590; actual F-wave complement, product/event/sharp targets remain open.
 - **Latest accepted consumer:** actual d1 driver/canonical squared-average Gaussian tilt at `e51432c`,8PASS/HIGH; exact recovered report and7minor adjudications in reviews/2026-10-30-joint-gaussian-tilt/. Retained residual, exact raw profile/cost and original point-moment consumer. Spectral product/event/sharp/higher-dimensional targets remain open.
 - **Phase:** actual d1masked/local causal Young flow, canonical noise-only averaged observable and growing-block operator stability accepted13PASS/HIGH atd020a2a. Uniform local operator bounds handle data1 and a growing observation cone without a global stationary HS norm. Actual d1 Gaussian tilt is accepted at the later scoped gate; spectral product-growth/event and sharp constants remain open; original higher-dimensional scope retained. WHITE13/original9unchanged.
 - **Review boundaries:** prior92page quantitative/mild source `a7e725e` passed its own19checks/HIGH. The new8check review covers the direct norms, positive spatial Wick-measure limit, arbitrary joint vertex-width construction and their consumers. It does NOT freshly audit every unchanged operator/interval proof. Exact source/delivery/adoption bindings and limitations are in `reviews/2026-10-29-fixed-order-construction/`.
@@ -4239,3 +4239,8 @@ localization and indispensable global-projection tail correction. Exact
 mechanisms were named before drafting, executable run was after drafting.
 Candidate UNREVIEWED; no use in product/event/sharp target before HIGH gate.
 Original fullgoalACTIVE; canonicalTeX/PDF and accepted prior proofs unchanged.
+
+Complement scientific gate launched on frozenb07d013: actual first-party
+Opus5.5/high,9texts, unchangedHIGHthreshold, session39542/native
+stratonovich-complement-scientific-v1. Poll same handle/receipt; no restart
+on observation timeout. No complement verdict or adoption at this capture.
