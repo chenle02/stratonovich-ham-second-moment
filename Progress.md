@@ -4879,3 +4879,15 @@ Rawvalueceiling FULLscience live atad6c188: actualfirstpartyOpus5.5/high,
 doctor/selectedheadroom20short65weekly. Session32900/samehandle, no restart
 onobservationtimeout. Includesnew2scalarpublictype/actualapplication gate.
 No proof/source/methodno-go adoption until actualterminalverdict. GoalACTIVE.
+
+While fullrawceilinggate runs, a concrete nextdampedLOWER-endpoint route
+has UNREVIEWEDnumericrecon outsidepacket: temporalRiesz-equilibrium
+candidate wouldmake mean timeconstant; staticspatialrawcontrol bound and
+dampedrowenergyestimate wouldreduce desiredlowercomparison toscalar
+1/Ma>=Rstar expDelta. Nineexplicitalpha/a pairs, TWOsourcekernelquadratures
+at35digits agree1e-15; all9candidate log margins positive. None of the
+capacityidentity/staticcomparison/globalscalar or sourceendpoint result
+is proved. Code/JSON/preciseobligations retained in raw-value-ceiling/
+next-damped-lower-*; freeze/falsify/review before longproof. This explores
+originaldampedLOWERtarget ratherthan rebranding the currentVceiling as
+momentupper/refutation. Intendedsource normalization/fullgoal unchanged.
