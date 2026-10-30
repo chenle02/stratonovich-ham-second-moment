@@ -298,3 +298,16 @@ rank; no axiomatized desired-complement shell. Existing finite cone/
 power budgets may be reused at exact checked next-consumer applications.
 58finite declarations/12localseams unchanged; L0/PROPOSED, no package/
 companion/lease/registry/cluster/Comparator transaction.
+
+
+## General-positive consumer application close (2026-10-30)
+
+Scientific12c9879,24groups/HIGH,462.611seconds,34texts,no requiredrepairs:
+all nine unchanged MovingCone/ActualEvent/RawVariational publictypes and
+NEWactualgeneral-profile/class applications independently checked.
+Source/type/receipt/replay bindings retained, no rebuild needed or claimed
+for unchanged internals. Complete individual hypotheses in consumer
+scientific-adjudication-v1.md. Root also executed exactproxyJSON controls.
+58finite declarations/12seams unchanged; no formal spectral/Young/Gaussian/
+probability/supremum or SPDE theorem and no official package/companion/
+lease/registry/cluster/Comparator transaction. L0/PROPOSED unchanged.

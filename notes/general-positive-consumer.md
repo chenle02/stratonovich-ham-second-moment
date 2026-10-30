@@ -1,9 +1,12 @@
 # Actual general-positive-test event and variational lower bound
 
-CANDIDATE PROOF, not adopted. Preproof statement/object audit passed
-Opus5.5/HIGH with no required repairs at source14fe727. Full independent
-scientific analytic/type/application review is REQUIRED. Original sharp
-source constants, intended normalization and all dimensions remain open.
+ACCEPTED at the scoped scientific analytic/type/application gate: actual
+Opus5.5/HIGH,24PASS/PASS_WITH_NOTES groups,462.611seconds,no required
+repairs; scientific source12c9879. Exact evidence and nine optional
+clarifications in reviews/2026-10-30-general-positive-consumer/
+scientific-adjudication-v1.md. Original-point lower class now includes
+all FIXED general positive smooth compact tests in d1. Original sharp
+source constants, intended normalization and dimensions remain open.
 
 ## 1. Exact fixed objects and scoped imports
 

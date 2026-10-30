@@ -1,0 +1,189 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "reviews/2026-10-30-general-positive-consumer/target-v1.md lines 1-132 (complete)",
+    "reviews/2026-10-30-general-positive-consumer/worker-honesty-v1.md lines 1-26 (complete)",
+    "reviews/2026-10-30-general-positive-consumer/check-diagnostics.py lines 1-50 (complete)",
+    "reviews/2026-10-30-general-positive-consumer/diagnostics-v1.json lines 1-131 (complete)",
+    "reviews/2026-10-30-general-positive-consumer/canonical-model-upper-context.txt lines 1-86 (complete)",
+    "reviews/2026-10-30-general-positive-consumer/canonical-source-custody.json lines 1-34 (complete)",
+    "reviews/2026-10-30-general-positive-consumer/reuse-routing-v1.md lines 1-34 (complete)",
+    "reviews/2026-10-30-general-positive-consumer/reuse-bindings-v1.json lines 1-127 (complete)",
+    "reviews/2026-10-30-general-positive-consumer/accepted-input-map.md lines 1-42 (complete)",
+    "reviews/2026-10-30-general-positive-consumer/local-recon.md lines 1-19 (complete)",
+    "notes/nonseparable-profile-family.md lines 1-385 (complete)",
+    "notes/local-causal-young-flow.md lines 1-503 (complete)",
+    "notes/joint-gaussian-tilt.md lines 1-318 (complete)",
+    "notes/moving-block-cone.md lines 1-239 (complete)",
+    "notes/actual-shifted-event.md lines 1-335 (complete)",
+    "notes/raw-variational-dilation.md lines 1-249 (complete)",
+    "notes/direct-event-calibration.md lines 1-223 (complete)",
+    "notes/phase-response-test.md lines 1-378 (complete)",
+    "reviews/2026-10-30-nonseparable-family/scientific-adjudication-v1.md lines 1-72 (complete)",
+    "lean-progress/local-checks/moving-cone-v1/StratonovichHAMAudit/MovingCone.lean lines 1-30 (complete)",
+    "lean-progress/local-checks/moving-cone-v1/types-and-axioms.txt lines 1-117 (complete)",
+    "lean-progress/local-checks/moving-cone-v1/local-receipt.json lines 1-69 (complete)",
+    "lean-progress/local-checks/actual-event-v1/StratonovichHAMAudit/ActualEvent.lean lines 1-35 (complete)",
+    "lean-progress/local-checks/actual-event-v1/types-and-axioms.txt lines 1-49 (complete)",
+    "lean-progress/local-checks/actual-event-v1/local-receipt.json lines 1-68 (complete)",
+    "lean-progress/local-checks/raw-variational-v1/StratonovichHAMAudit/RawVariational.lean lines 1-73 (complete)",
+    "lean-progress/local-checks/raw-variational-v1/types-and-axioms.txt lines 1-195 (complete)",
+    "lean-progress/local-checks/raw-variational-v1/local-receipt.json lines 1-70 (complete)",
+    "notes/general-positive-consumer.md lines 1-474 (complete)",
+    "reviews/2026-10-30-general-positive-consumer/statement-adjudication-v1.md lines 1-36 (complete)",
+    "reviews/2026-10-30-general-positive-consumer/scientific-worker-honesty-v1.md lines 1-41 (complete)",
+    "reviews/2026-10-30-general-positive-consumer/accepted-jensen-context.txt lines 1-27 (complete)",
+    "reviews/2026-10-30-general-positive-consumer/jensen-custody.json lines 1-9 (complete)",
+    "reviews/2026-10-30-general-positive-consumer/calibration-boundary.md lines 1-21 (complete)",
+    ".review/required-sources.json lines 1-104 (read plan; earns no read credit)"
+  ],
+  "checks": [
+    {
+      "claim": "C1a: Section 1 fixes the exact original real d1 model. This covers the Riesz/white Gamma with amplitude, the constraints 0<a<1, 0<alpha<=1, alpha+a<2, the dictionary alpha_0=a and the SAME canonical u.",
+      "verdict": "PASS",
+      "reason": "E:cov is the raw covariance |s-t|^-alpha0 gamma(x-y). H:homog with d=1 gives Gamma(cA)=c^(1-alpha)Gamma(A) and the condition alpha0+alpha<2. T:full-upper names the canonical expansion and mild solution. Tilt Sections 1 and 5, direct-event Section 1 and phase-response (M) carry the same raw normalization and solution to the lower consumer. Custody line ranges agree with the excerpt section lengths by count."
+    },
+    {
+      "claim": "C1b: The test class and actual profile are correct. Psi is general nonnegative nonzero compact and fixed before time, h_sigma is the nonlocal covariance rather than psi(sigma,.), and sigma is an index with lambda_0>0.",
+      "verdict": "PASS",
+      "reason": "Definition (1) equals family (1) and tilt (5) by Tonelli, as family adjudication item 1 records. Family (2) gives h_sigma>=U_avg, which is nonzero, so sigma=0 needs no coupling interpretation. No bU theorem is invoked at b=0. Tilt (5)-(6) are proved for general real psi, and the word 'separable' there refers to the Banach driver space."
+    },
+    {
+      "claim": "C1c: Actual F contains both constants, J is the unsquared real linear bounded displacement pairing, and both phase entries are retained.",
+      "verdict": "PASS",
+      "reason": "F matches local-flow Section 4 and family Section 1. J is family (13), with no point evaluation. e_sigma and ell_sigma retain lambda p and the reciprocal-lambda velocity pairing throughout. Y_delta is unsquared and is squared only after the tilt."
+    },
+    {
+      "claim": "C1d: Imports S1-S3 supply every norm, gap, projection, commutation and continuity datum plus actual a_* and j_*, with no desired conclusion as a premise.",
+      "verdict": "PASS",
+      "reason": "Eq. (2) is family (14) plus (19) with C_R>=1 and eta>0 uniform. Lambda bounds and Lipschitz continuity are (4) and (8). Boundedness and continuity of e, ell and Pi are in family Section 4. a_* is (12), and j_* follows (13). The finite-horizon bound M_B follows from (2) with bounded Pi and lambda. None of the imports contains the new event or lower bound."
+    },
+    {
+      "claim": "C2a: The Section 2 budgets are feasible in the stated order, theta before integer B, nu, omega, epsilon_op, and uniformly in N, s and the index sequence.",
+      "verdict": "PASS",
+      "reason": "Theta depends only on j_*, H and C_R, and contains no B. Then q_B, nu and the omega modulus follow. Finally (3) is five positive ratios with finite positive coefficients, so the minimum works. Nothing depends on N, s or the sequence."
+    },
+    {
+      "claim": "C2b: Entrance, rebase, full-block preservation and all-time terminal lower bound (5) are correct, with constant c_*=a_*j_*/4 and the exponent (1-rho)^(N-1).",
+      "verdict": "PASS",
+      "reason": "Recomputed by hand. (6) gives a_*-M_l eps E0>=a_*/2 and residual <=theta a_*/4, so the ratio is <=theta/2. (7) follows from Q_c z=Q_b z+(Pi_b-Pi_c)z with ||z||<=M_z A, which uses theta<=1. (8) gives (1/8)(2theta)+theta/4=theta/2. A'>=(1-rho)A>A/2 closes the cone. Terminal: 3j_*/4-2HC_R theta>=5j_*/8, minus j_*/8, gives j_*/2. The amplitude has one a_*/2 entrance and N-1 factors of (1-rho). N=1, s=0 and index 0 are all covered, and D positivity, composition and independence are not used."
+    },
+    {
+      "claim": "C2c: The three MovingCone public types and their substitutions match, and the analytic boundaries stay outside the kernel.",
+      "verdict": "PASS",
+      "reason": "residual_budget uses theta>=0, q_B<=1/8, 0<=nu M_z<=theta and M_Q eps M_z<=theta/4. cone_conversion uses x=A', y=the normalized residual, a=A>0, rho<1/2 and the bounds from (8). terminal_margin uses j=j_*, K=HC_R, e=H eps M_z and y=the normalized observable divided by A, with 16K theta<=j_* and e<=j_*/8. The printed types agree with the source and each statement is true by hand. Spectral, norm and rebase facts (2), (4), (7) are outside the kernel, as the note states."
+    },
+    {
+      "claim": "C3a: Full general-time C1 regularity and tails support the common mask defect (11), the admissible capped profiles (12) and the slow defect (13).",
+      "verdict": "PASS",
+      "reason": "Tilt (6) gives the Lipschitz C_b^1 bound and uniform vanishing tails. (zeta_r-1)h vanishes on |x|<=r, and zeta_r' h is O(1/r). The capped h_bar stays Lipschitz, and masked profiles satisfy local-flow (5.6) with constant part 0 and a W1infinity bound uniform in r>=1. In block m the time distance is <=delta B. On capped padding, 1-delta NB<=delta B keeps the same bound."
+    },
+    {
+      "claim": "C3b: Reset unit flows, the same W, (4.4), (5.2)-(5.6) and (7.1)-(7.3) yield unit errors (15) and a common A, with no S(j) cost.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "W^delta(j+u,x)=W_j^delta(u,x) follows from tilt (1) and local-flow (7.1). A(j+u)-A(j)=S(-j)gM^(j)(u)S(j) gives P(j+u,j+v)=S(u)U_j(u,v)S(-v), so no S(j) norm appears. (7.3) with epsilon=x_delta, via Lipschitz (5.3), gives C_1 x_delta. (5.5) and (5.3) give C_2 a_delta(B). The candidate cites this identification instead of displaying the conjugation, which I verified independently. See minor findings."
+    },
+    {
+      "claim": "C3c: The driver maximum tends to 0 with p>4/(1-a) and no independence, and the accepted <2 fast-unit padding is disclosed with no new B-long noise.",
+      "verdict": "PASS",
+      "reason": "(14) is (7.2) with exponent (1-a)/2-2/p>0. Units end at ceil(L)+1<L+2, and the note cites this openly. Physical operators use only the prefix through L. The D_N extension is frozen and deterministic."
+    },
+    {
+      "claim": "C3d: Telescope (16), the all-n recurrence, the at-most-B piece count and (17) are correct, and finite_error_accumulation is used only for the scalar deduction.",
+      "verdict": "PASS",
+      "reason": "The induction B_n(old difference)+(A_n-B_n)(A product) is correct and needs no commutation. The alternative split A_n(P_n-Q_n)+(A_n-B_n)Q_n with ||Q_n||<=A^n gives d_(n+1)<=A d_n+A^n e. Identity extension keeps norms 1<=A and differences 0<=e_delta for all indices, so hC, he, hzero and hstep hold samplewise on {x_delta<=1}. [mB,mB+t] has at most B pieces, including a partial one, and n A^n e<=B A^B e."
+    },
+    {
+      "claim": "C3e: D_m, the recursion, the observed-product identity, the frozen extension (18), the M_B error (19) and the measurable event (20) discharge premise (4) with probability tending to 1. No whole-long-product closeness is used.",
+      "verdict": "PASS",
+      "reason": "Autonomy gives D_N(t)-P(t)=P(t-s)[D_N(s)-P(s)], and D_N(s) is unchanged. At s=0 the extension is the frozen flow. xi_delta is defined as a scalar off the event, x_delta is measurable, and a_delta(B)->0 and x_delta->0 in probability give P(E_delta)->1. Only fixed-B blocks are compared, and Y_delta's product identity follows from evolution composition."
+    },
+    {
+      "claim": "C4a: The quantifier order e->rho->theta,B,nu,omega,epsilon_op,c_*->small delta, the requirements N>=1 and delta B<=omega, the rates and all loss budgets are correct.",
+      "verdict": "PASS",
+      "reason": "Weights satisfy delta(NB+s)=1. Left-endpoint Riemann error is <=w_lambda(delta B), including the partial last interval. 0<=delta(N-1)<=1/B<=1 gives a loss >=log(1-rho)>-e/3. delta log c_*->0 and R_delta->I absorb the remaining margin. Y_delta is signed, measurable and positive on E_delta, and (21) has probability tending to 1."
+    },
+    {
+      "claim": "C4b: The retained general-psi potential and tilt (13) are applied exactly. This covers the SAME Z, the MINUS density, the raw half cost and the moderate restriction on the nonnegative square.",
+      "verdict": "PASS",
+      "reason": "Tilt (9)-(10) with s=1/sqrt(delta) gives the driver A+H_delta and the potential in (10). Signs were checked: density exp(-Z/sqrt(delta)-v/(2delta)). Chebyshev gives v delta^(1/2). The union bound needs no independence. Restriction is legal because the integrand is nonnegative. (23) has exponent (2I-2e-v/2)/delta-delta^(-3/4). p_delta->1, and the lower limit followed by e down 0 gives 2I-v/2."
+    },
+    {
+      "claim": "C4c: moderate_penalty and the original-point consumer are applied correctly, with delta=t^-kappa, R=t delta, no R^d loss and no first-mean or signed restriction.",
+      "verdict": "PASS",
+      "reason": "The printed type is delta*(delta^(-1/4)/sqrt delta)=delta^(1/4) for delta>0, which is exactly the normalized penalty. Tilt (14), direct-event (S)-(M) and phase-response (M) require unit-mass nonnegative phi, which holds. The mask satisfies L+M<=r. The t-delta bijection preserves the lower limit, giving (24)."
+    },
+    {
+      "claim": "C5a: v_psi=int psi h by Tonelli is finite and positive through h>=Gamma*q_avg with nonzero q_avg, and I_psi is positive and finite.",
+      "verdict": "PASS",
+      "reason": "|sigma-u|^-a>=1 on [0,1]^2 gives h_sigma>=Gamma*q_avg. This yields v>=int q_avg(Gamma*q_avg)>0, with the white and Riesz cases separated correctly. h is bounded and psi integrable, so v is finite. l<=lambda<=L_rate gives I in (0,infinity)."
+    },
+    {
+      "claim": "C5b: Fixed D_s is an intrinsic bijection of C_pos with the correct Radon pushforward, including the white endpoint. It gives h_s=s^2 h(sx), the whole-H2 unitary conjugation, I_s=sI and raw v_s=s^(4-alpha)v.",
+      "verdict": "PASS",
+      "reason": "Recomputed. D_rD_s=D_(rs). Gamma(A/s)=s^(alpha-1)Gamma(A) follows from H:homog with c=1/s. The Radon change of variables gives (27) with no false Jacobian at alpha=1. T_s maps H2 onto H2, with (T_s f)''=s^2 T_s f'' and H_(D_s)=s^2 T_s H T_s^-1, so E1 scales by s^2 and lambda by s. The dx Jacobian gives exponent (3-alpha)+2-1=4-alpha. The note uses no F isometry, noise change, moving test or uniform test event. dilation_factors matches the two exponents and contains no analytic content."
+    },
+    {
+      "claim": "C6a: Finite upper bounds are test-independent, the real sets are nonempty and bounded above, Q2 is real, and V_1^pos>0 via fixed s0.",
+      "verdict": "PASS",
+      "reason": "E:full-upper gives limsup<=C R_alpha^(1/(3-alpha))=C_up for the fixed Gamma, independent of psi, since log(e(t+2))/t^kappa->0. Eq. (29) bounds S_2, and I>0 bounds S_1 by the same constant. The s0 score is s0 I/2>0. positive_score has the exact expression and hypotheses I>0, v>0, alpha<3."
+    },
+    {
+      "claim": "C6b: S_c=c^m S_1 and both supremum inequalities yield (31) with no optimizer or limit interchange. label_score and strict_label_factor types and hypotheses match.",
+      "verdict": "PASS",
+      "reason": "With k=3-alpha and s=c^(1/k): cs=s^(k+1)=c^m, which is exactly label_score. The D_s bijection gives set equality, and boundedness precedes the supremum. Both directions of the argument are correct. Q2>=V_2^pos follows from fixed tests with epsilon. V_2>2V_1 uses m>1, strict_label_factor and V_1>0, and it is labelled auxiliary."
+    },
+    {
+      "claim": "C6c: C_sep inclusion is preceded by actual I and v matching, and no strict value gap, moment-order, first-mean or Jensen improvement claim is made.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "For psi=f tensor q, (1) gives h_sigma=k_f(sigma)U_q, so I is the old integral and (25) factors as A_f B_q. Lines 448-458 state the label and non-identification boundaries, and the Jensen material is context only. V_2^sep>0 is taken from the accepted raw-variational note, as recorded in the minor findings."
+    },
+    {
+      "claim": "C7a: All nine kernels have exact public types and standard axioms, and receipts are consistent, without formal SPDE credit.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The source statements agree with the printed pp.all types for all nine: 3 MovingCone, 2 ActualEvent, 4 RawVariational. There is no sorry or custom axiom, and the axioms are propext, Classical.choice and Quot.sound. Receipt results are compile/audit 0, controls 1, and the recorded original and replay hashes are identical by inspection. Binding source hashes equal receipt hashes. This is read-only review: no Lean run, hash recomputation or commit-reachability check was performed."
+    },
+    {
+      "claim": "C7b: The NEW applications are analytic and outside the kernels, and the routing is PARTIAL/BOUNDARY_REVIEW rather than a formal or gate waiver.",
+      "verdict": "PASS",
+      "reason": "Note lines 154-158, 245-247, 329, 392-393 and 460-467 separate scalar checks from analytic interfaces, and the routing file agrees. Every new hypothesis was checked in C2, C3, C4 and C6 above."
+    },
+    {
+      "claim": "C7c: The diagnostics are fully specified with the stated values, and authored execution is distinguished from this review's hand reasoning. No physical or optimizer counterexample is implied.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Hand recomputation gave h=[[19,27],[18,19]], v=quad=146, ||h||^2=1775, q_avg=[4,3], U_avg=[11,13], lower bound 83 and rank-1 v1=581/4, all matching the JSON. The 15 rows are the product of 5 N values and 3 times. An analytic bound on the rational recursion (rebase defect ~0.001, decay 1/64, eps=1e-6) supports all cone asserts, but I did not execute the script or iterate N=100 exactly. Execution is the author's claim. The scope field disclaims any physical HAM evaluation."
+    },
+    {
+      "claim": "C7d: Preproof clarifications are applied, stale text is not treated as a defect, the source upper bound is finiteness only, and all open goals are retained.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Sup replaces max, the import list is expanded, D_m and the recursion are defined, the order is stated, V_2^sep and H=max(1,||J||) are in place. Item 6's individual scalar listing is grouped rather than enumerated, which is minor because each hypothesis does hold. Old closing prose is governed by accepted headers. Upper input is used only as a finite rate. The original sharp optimizer, signed class, normalization, dimensions and whole-paper goals remain open, with no Skorohod, source correction, contact, novelty, publication, private companion or HPC claim."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Line 438-440: positivity of V_2^sep is inherited from accepted raw-variational (16)-(17) without being listed as an import, while lines 63-66 say the old conclusions only motivate the arguments. This is not a gap, because that accepted value is about C_sep and is not used as a general-test theorem. It also follows from the same s0 argument, since D_s preserves C_sep. An explicit citation would be cleaner.",
+      "Line 227-230: the reset identification is cited rather than displayed. The identity A(j+u)-A(j)=S(-j)gM^(j)(u)S(j), hence P(j+u,j+v)=S(u)U_j(u,v)S(-v), is valid on F and is displayed in actual-shifted-event Section 3. The candidate could state it directly.",
+      "Line 154-158: preproof clarification 6 asked for individual scalar hypotheses, while the note summarizes them as 'Each scalar hypothesis follows above'. I checked each one individually, so this affects presentation only.",
+      "Line 359-360: the Riesz positivity sentence is garbled. The intended argument is that positive locally integrable kernel values on the product of an interval where q_avg>0 give finiteness and strict positivity.",
+      "Line 199-200: the parametrization j=mB+nu, 0<=nu<B, does not literally cover a wholly padded unit j=NB+B when s>B-1. That unit is unused, and the (13) bound holds there anyway because capped times are within delta B of sigma_N.",
+      "Line 398: the candidate does not repeat that log(e(t+2))/t^kappa->0 when deriving C_up from E:full-upper. This is immediate from kappa>0 and is explicit in the accepted raw-variational note.",
+      "Symbols are overloaded but disambiguated by context: nu (modulus and integer offset), A (cone amplitude and unit operator bound), s (partial time and dilation), r (mask radius and cone residual), B (block length and operator space), H (norm bound and operator), D (block operators and dilation), and e (loss, plus e_sigma, e_delta).",
+      "Line 450-451: 'matches the static calibration' is an unproved calibration remark with no static theorem in the packet. It is correctly separated from the proof and from any a->0 interchange.",
+      "Diagnostics contain no negative cone mutation, and the positive_terminal and direct_covariance_matches literals are guarded by prior asserts rather than computed output. This is disclosed, and the preproof adjudication did not require a mutation."
+    ],
+    "note": []
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is an AI read-only review, not human verification, a novelty audit or a whole-paper certificate. Analytic checks are by hand from the packet.",
+    "No execution tool was available or used. I did not run the diagnostics, Lean or replay, and did not recompute hashes or verify commit reachability. Receipts and binding claims are inspected as recorded evidence only.",
+    "Accepted profile, local-flow/Young, Gaussian-tilt, direct-event, phase-response and canonical upper results are scoped inputs. Their exact application hypotheses were checked, but their internal proofs and out-of-packet dependencies (interaction-driver-path, spectral notes, Teschl images, full canonical TeX, prior scientific reports) were not re-proved or read.",
+    "The canonical excerpts were read only as provided. The custody line ranges were compared with excerpt lengths by count and were not checked against the source file.",
+    "An ambient hook announced a queued amsg message. It is outside the packet, was not read and contributed no evidence. No messages were sent.",
+    "The PASS_WITH_NOTES verdict covers only Sections 1-6 of the candidate at this frozen packet. It gives no source-constant, optimizer, signed-class, normalization, higher-dimensional, sharp-upper or circulation clearance."
+  ]
+}
