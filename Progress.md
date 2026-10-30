@@ -4146,3 +4146,19 @@ Poll same handle/native receipt; no restart on observation timeout.
 This is pre-proof target review, not spectralproof acceptance. Source
 existence/uniform gap/weighted derivative/Sobolev-to-F transfer obligations
 remain explicitly open. Gaussian tilt stays accepted; full goalACTIVE.
+
+
+### Spectral statement audit terminal — 2026-10-30
+
+Actual Opus5.5,9PASS/MEDIUM,249.56seconds, complete10text/7image native
+coverage; no requiredrepairs, accepted=false/serviceexit3 belowHIGH.
+Native32member archive and all current/frozen/committed input hashes checked.
+Seven optionalfindings adjudicated; target-v2 fixes whiteamplitude wording,
+explicitreal/parameter range, uniformgap obligation and generalprofile scope.
+Mediumconfidence unchanged; no confidenceonlyretry or spectralacceptance.
+Independentpreproofaudit completed; candidateproof development next, with
+full HIGHscientificadoption gate stillrequired. Start negativeRayleightrial
+for actualpositiveprofile and matched selfadjoint/essential/core inputs;
+then uniformgap/weighted derivatives and Sobolev-to-F complement transfer.
+Precedingdefinition/copyrightpage images remain documentary source tasks.
+No live reviewer remains; original fullgoalACTIVE, accepted tilt unchanged.

@@ -1,0 +1,93 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "medium",
+  "source_coverage": [
+    ".review/required-sources.json lines 1-75 (read plan; whole file read; earns no credit)",
+    "reviews/2026-10-30-spectral-phase/target-v1.md lines 1-93 (complete)",
+    "reviews/2026-10-30-spectral-phase/source-crosswalk-v1.md lines 1-51 (complete)",
+    "reviews/2026-10-30-spectral-phase/teschl-input-crosswalk.md lines 1-41 (complete)",
+    "reviews/2026-10-30-spectral-phase/kato-application-screen.md lines 1-30 (complete)",
+    "reviews/2026-10-30-spectral-phase/teschl-second-edition-custody.json lines 1-25 (complete)",
+    "reviews/2026-10-30-spectral-phase/teschl-visual-check.json lines 1-26 (complete)",
+    "reviews/2026-10-30-spectral-phase/simon82-custody.json lines 1-27 (complete)",
+    "reviews/2026-10-30-spectral-phase/simon82-visual-binding-v2.json lines 1-30 (complete)",
+    "notes/local-causal-young-flow.md lines 1-504 (complete)",
+    "notes/joint-gaussian-tilt.md lines 1-319 (complete)",
+    "reviews/2026-10-30-spectral-phase/source-images/p448.png (full image read)",
+    "reviews/2026-10-30-spectral-phase/source-images/p453.png (full image read)",
+    "reviews/2026-10-30-spectral-phase/source-images/p498.png (full image read)",
+    "reviews/2026-10-30-spectral-phase/source-images/teschl2014-title.png (full image read)",
+    "reviews/2026-10-30-spectral-phase/source-images/teschl2014-p201.png (full image read)",
+    "reviews/2026-10-30-spectral-phase/source-images/teschl2014-p258.png (full image read)",
+    "reviews/2026-10-30-spectral-phase/source-images/teschl2014-p273.png (full image read)"
+  ],
+  "checks": [
+    {
+      "claim": "C1: Actual objects are the original d1 objects (covariance with amplitude, separable nonnegative test, positive compact family, whole-line F with both constants, massless physical wave generator), not a surrogate",
+      "verdict": "PASS",
+      "reason": "target-v1 l.14-28: psi=f(t)q(x) with f,q nonzero, nonnegative, compactly supported smooth, f supported in (0,1); k(t)=int_0^1|t-s|^-a f(s)ds; V_b=b(Gamma*q), K=[b0,b1] containing range k([0,1]), 0<b0. This matches joint-gaussian-tilt (5): h(t,x)=int_0^1|t-s|^-a(Gamma*psi(s,.))(x)ds=k(t)(Gamma*q)(x). k(t)>0 on [0,1] because the kernel is positive and f>=0, f nonzero; k is continuous because a<1, so a positive b0 exists. Gamma is 'the original nonzero d1 Riesz/white covariance including its amplitude' (l.22), consistent with tilt Sec.1 (c_Gamma retained). F (l.9-10) matches local-flow Sec.4 (closure of compact smooth phases plus (1,0),(0,1) in E_uloc). The generator (v,w)->(w,v''+V_b v) is the massless wave with potential +V_b, matching the sign of the tilted retained potential (tilt l.268). l.28 excludes a circle operator; l.55 makes the L2 theorem only an input. V_b satisfies the local-flow (5.6) admissibility (tilt (6), constant part 0), so P_b is an accepted deterministic flow on F on every finite horizon. Concatenation gives all t>=0. One wording issue is in minor findings."
+    },
+    {
+      "claim": "C2a: Simon normalization map H=H_b/2, V=-V_b/2, E=-lambda_b^2/2, C.3.5 exponent beta<lambda_b, no sqrt2 import",
+      "verdict": "PASS",
+      "reason": "p448 image (A1): H=H_0+V, H_0=-(1/2)Delta. Then H_b/2=-(1/2)d^2-V_b/2, so V_Simon=-V_b/2 and E=-lambda_b^2/2. The p498 image states Theorem C.3.5 with condition (1/2)A^2<Sigma_ess-E and Sigma_ess=min sigma_ess(H). Halving H_b leaves the threshold 0 at 0, so A^2/2<lambda_b^2/2, i.e. A<lambda_b. The crosswalk (l.11-16) is exact, and no factor sqrt2 arises."
+    },
+    {
+      "claim": "C2b: Kato-class hypotheses of C.3.5 (V_- in K_1, V_+ in K_1^loc) verified for the actual bounded profile",
+      "verdict": "PASS",
+      "reason": "The p453 image (A14) states the nu=1 condition sup_x int_{|x-y|<=1}|V(y)|dy<infinity. V_b>=0 because Gamma>=0, q>=0 and b>0. So V_Simon=-V_b/2 has negative part V_b/2 and positive part 0. The integral is <=2*(1/2)||V_b||_inf=||V_b||_inf, as the kato screen (l.8-15) says, and sup_K||V_b||_inf=b1||Gamma*q||_inf (tilt Sec.3). No global L1 condition on the Riesz tail is needed. The screen correctly says C.3.5 yields individual, not uniform, constants (l.21-24) and only pointwise decay, with no derivative bounds. C.3.4 on p498 gives 'some delta>0', which the crosswalk accurately calls weaker."
+    },
+    {
+      "claim": "C2c: Teschl second edition identity and Theorem 10.2 hypotheses (bounded, vanishing-at-infinity class) correctly applied",
+      "verdict": "PASS",
+      "reason": "The title image shows 'SECOND EDITION', GSM Volume 157. The p258 image shows Theorem 10.2: V real, V in L^inf_inf + L^2 for n<=3. Its conclusions are relative compactness, H self-adjoint on H^2, bounded below, sigma_ess=[0,inf), and C_c^inf a core. Teschl's H_0=-Delta, as in the same page's hydrogen example (10.5), so the kinetic normalization matches H_b with no rescaling. The p201 image shows the tail of the class description, 'bounded Borel functions which vanish at infinity', and its use in (7.45). V=-b(Gamma*q) is bounded, continuous and tends to 0 (Riesz tail ~|x|^-alpha; white case compact). The crosswalk claim is correct; the partial visibility of the definition is noted in minor findings."
+    },
+    {
+      "claim": "C2d: Teschl 10.13 treated as conditional; sources not overclaimed for existence, uniform bounds, or F-wave complement",
+      "verdict": "PASS",
+      "reason": "The p273 image reads: 'Suppose H=H_0+V is self-adjoint and bounded from below with C_c^inf as a core. If E_0=min sigma(H) is an eigenvalue, it is simple and the corresponding eigenfunction is strictly positive.' The teschl crosswalk l.18-25, teschl-visual-check 'confirmed', the simon82 custody 'not_supplied' list and the source-crosswalk l.20-25 all state that existence of a negative bottom, uniform gaps, weighted derivatives and the F-wave complement are not supplied. Isolation below the essential threshold is correctly derived as a consequence, not attributed to a theorem. Custody is treated as a root input, not as reviewer-checked acquisition."
+    },
+    {
+      "claim": "C3a: Projection algebra exact \u2014 e_b=(p_b,lambda_b p_b), ell_b=(<p_b,v>+<p_b,w>/lambda_b)/2, Pi_b^2=Pi_b, P_b(t)Pi_b=e^{lambda_b t}Pi_b, decaying partner in kernel, ell_b(e0)>0",
+      "verdict": "PASS",
+      "reason": "If H_b p=-lambda^2 p, then on span{p} the generator acts as alpha'=beta, beta'=lambda^2 alpha. The functional (alpha+beta/lambda)/2 evolves at rate lambda. ell_b(e_b)=(1+1)/2=1 when ||p_b||_2=1, so Pi_b^2=Pi_b. The partner (p,-lambda p) gives ell_b=(1-1)/2=0, so it lies in the complement as l.53 states. ell_b(e0)=(1/2) int p_b>0 for strictly positive integrable p_b. The constant entries need p_b in L1 together with weighted local-Sobolev summability, which l.40-41 correctly leaves as obligations. Left invariance ell_b o P_b(t)=e^{lambda t} ell_b is not listed, but it follows from the target bound: apply the semigroup property and let t->infinity. So it is not a missing hypothesis."
+    },
+    {
+      "claim": "C3b: The S1 statement is sound and non-vacuous for the actual positive profiles, including Riesz profiles with infinitely many bound states",
+      "verdict": "PASS",
+      "reason": "Existence: in d1, any nonzero, nonnegative, bounded, vanishing V_b gives a negative bottom (dilated-trial variational test; for Riesz tails the potential term even dominates the 1/L kinetic term). With Teschl 10.2/10.13 the bottom is then simple, positive and isolated. Riesz tails ~|x|^-alpha with alpha<1 produce infinitely many negative eigenvalues accumulating at 0. The target explicitly allows this (l.52) and removes only the top wave mode. The feasible eta is limited by min(lambda_b-mu_{2,b}, lambda_b), and this gap is positive. H_b=-d^2-bV_1 is norm-resolvent continuous in b, so on compact K the gaps and inf lambda_b are uniformly positive and an eta>0 independent of b exists. eta<inf lambda_b is necessary because the continuous spectrum at threshold 0 gives non-decaying, even linearly growing, F orbits (e.g. constant (0,1) data). I found no counterexample. Heuristically, the F transfer for compact data, far translates, and constants cut off at radius O(t) is consistent with an exp((lambda-eta)t) bound up to polynomial factors. This is a plausibility check, not a proof."
+    },
+    {
+      "claim": "C4: The analytic obligation boundary is honest; no conclusion is assumed or hidden in a named input",
+      "verdict": "PASS",
+      "reason": "Existence and isolation are 'Establish' obligations (l.32). Uniform constants are required (l.34). Pairings on F 'MUST be defined and bounded ... by decay/local Sobolev duality' (l.40-41). 'No premise may assume the desired F-complement estimate' (l.43). l.55-59 separates the L2 spectral theorem from the H^{1/2}xH^{-1/2} spectral calculus and from the F transfer. It names the growing global Sobolev norm of localized data and the removed-projection tails after exponential growth, and it states that compact phases are not dense in F. A polynomial prefactor is allowed only as an intermediate with an exact uniform conversion (l.49-51). The source-crosswalk transfer mechanism is labeled UNPROVED and 'not a lemma or a substitute for S1'. The named inputs (local flow, tilt) supply no spectral or complement content."
+    },
+    {
+      "claim": "C5: Compatible with the accepted local flow and tilt; S2 items kept as consumers, not premises; no spectral, event or rate claim",
+      "verdict": "PASS",
+      "reason": "The tilt retains the potential g zeta_r W^delta + zeta_r h(delta u,x) with h=k(t)(Gamma*q). On fast block m the frozen operator is H_{k(m delta)} with b in K, matching the family. l.69-72 correctly separate the masked Riesz profile zeta_r V_b from V_b: ||(1-zeta_r)V_b||_{W1inf}=O(r^-alpha)->0, which needs its own fixed-block estimate, while white compact support gives equality once the mask is 1. l.61-67 lists slow-b changes, random block errors (accepted (7.3) only bounds per-block differences), initial entrance, the whole product, the final fractional block and the positive terminal displacement average as S2. The rate 2Lambda(h)-v/2 is consistent with tilt (13), where s=1/sqrt(delta) gives cost v/(2 delta) against squared growth exp(2Lambda/delta). l.75-76 asserts no rate. The original point/sharp goal stays active (l.4); nothing is redefined to an averaged or heat surrogate."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "target-v1 l.23 wording defect: 'Do not set Gamma*q=q outside the white case' implicitly suggests Gamma*q=q in the white case. In the accepted tilt (Sec.1/3), white Gamma=c_Gamma delta_0, so Gamma*q=c_Gamma q. The binding definition V_b=b(Gamma*q) 'including its amplitude' (l.22) controls, but the guard should read 'Gamma*q=c_Gamma q only in the white case' to avoid dropping the amplitude.",
+      "target-v1 states no exponent ranges (0<a<1, 0<alpha<=1, alpha+a<2) or the real-scalar setting explicitly; these are inherited from the accepted notes. Optional clarification.",
+      "The S1 target does not list, as a feasibility constraint, the uniform gap between lambda_b and the next growth rate mu_{2,b} (or the threshold 0). It is implied by the complement bound but could be named as the bottleneck that determines eta. Optional.",
+      "The separable test class psi=f(t)q(x) gives a lower-bound subclass. Reaching the sharp constant may require non-separable profiles or an optimizer-approximation step (listed as open only in the tilt note Sec.6). The target could say this explicitly. Optional clarification; nothing is redefined.",
+      "teschl-visual-check credits printed p201 as the definition of the vanishing class. The image shows only the tail '...bounded Borel functions which vanish at infinity', with the subject and the precise 'vanish at infinity' convention on the preceding page, which is not in the packet. The application is unaffected because V_b is continuous and tends uniformly to 0.",
+      "teschl-input-crosswalk l.5-6 says the title/copyright identify 2014. The packet title image shows SECOND EDITION / GSM Vol. 157 but no copyright year; 2014 rests on custody, not on a viewed image.",
+      "Stale scope text: simon82-custody.json 'no visual formula verification yet' and source-crosswalk-v1 l.5-7 are superseded by simon82-visual-binding-v2 and the retained images. The Simon p449 ground-state-uniqueness overview claim has no image in the packet; it is non-load-bearing because Teschl 10.13 supplies simplicity."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is a statement-fidelity review, not a proof audit. S1 existence, uniform gaps, weighted derivative and duality bounds, the fractional-Sobolev spectral calculus and the F-complement transfer are unproved and not certified here. Non-vacuity was assessed by standard variational and perturbation reasoning and heuristic finite-propagation bookkeeping, not by a proof.",
+    "Only the seven supplied page images were inspected. No full-book or full-paper audit was done, the preceding Teschl page (start of the Lemma 7.21 statement) and Simon p449 were not available, and Teschl first-edition numbering (10.12) was not verifiable from the packet.",
+    "Custody hashes, URLs and the queue ticket were taken as root inputs and not re-verified. No commands were run, so image sha256 values were not recomputed.",
+    "The accepted local-flow and Gaussian-tilt notes were treated as scoped named inputs and not re-proved.",
+    "No novelty, whole-paper, Lean or spectral-result certification is implied."
+  ]
+}
