@@ -5006,3 +5006,23 @@ No reviewer/Leanjob live. NextFULLrangeOmega target viaTaylor4/Gamma
 onevariablecandidate UNREVIEWED,8positivesamples notproof. Originalsharp
 upper/d2d3/exactlimit/intendednormalization/wholepaper remainopen; fullgoal
 ACTIVE. CanonicalTeX/PDF/wiki/source unchanged, no contact/publicrelease.
+
+## Globald1Omega proposed — 2026-10-30
+
+Previousgoalturn PROGRESS: dampedbridge/actualwhitepoint lower accepted
+8883160/adoption0c38ba0. Currentcleanlocal/origin/<HUB>ada62f0/0:0,
+advisoryauditexit0 checked. FulloriginalgoalACTIVE,notnarrowedtopoints.
+
+Newcandidate targetsGLOBALd1Omega>1 viaTaylor4kernelupper/dmax/Deltaqmin,
+exactGammaidentity, ELEMENTARYGamma bounds andactualrationalenvelopeV.
+Gamma estimates avoidunverifiedEulerconstant/reflection/numericGamma:
+logmoment viaExp reciprocalCS/e11/4; ratio viaBeta/duplication; product
+viaCS1.5/recurrence. ExactD(1-V)=xQdegree15 withtwoPOSITIVE16term rational
+certificates. Weakroute droppingP(x) failed4exactcases, whole-interval
+Bernstein coefficientindex6negative refused(not Qcounterexample);
+twoquarter certificatespositive. Allsourcecode/coefficients retained.
+Eight60digitactualratio/ID/AUX<=V<1 controls pass, notglobalproof.
+Frozen15texts+2sourceimages forindependentpreproof; no longproofwritten,
+no actualglobalOmega/pointloweradoption until propergates. Sharpupper/
+d2d3/source/domain/label/exactlimit/wholepaper remainOPEN. No newreference/
+sourcefix/contact/companion/HPC/Skorohod/publicrelease.
