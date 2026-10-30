@@ -4537,3 +4537,11 @@ separable tests miss the optimizer or any sharp moment no-go. Common
 positive profile screen h_sigma>=Gamma*integralpsi needs family proof.
 Independent preproof statement/witness audit required before longproof.
 Core new obligations analytic; no new foundational Lean/package claim.
+
+Nonseparable actual-family preproof/witness audit now live at315a8d8:
+actualfirst-partyOpus5.5/high,16texts+8exactTeschl2ndedimages, unchanged
+HIGHthreshold; session66811/native stratonovich-nonseparable-statement-v1.
+All24live/packet/committed hashes matched; launch-local2.1.304doctor and
+healthyselectedaccount1short61weekly. S1-S3are NOTproved or adopted;
+shortactualwhitewitness also independentlycheckedinthisaudit. Poll same
+handle/receipt, no timeoutrestart. Original fullgoalACTIVE.
