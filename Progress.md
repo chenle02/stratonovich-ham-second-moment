@@ -5410,3 +5410,21 @@ Lean seam only; no new module/package/companion yet. N3 exact row/column
 12 finite Hermite polynomial controls pass MAX bound, not average;50digit
 working not certified accuracy. No continuum/actualnoise/series/path/flow
 claim. Five-text preproof frozen before longproof, original full goal ACTIVE.
+
+### Actual variance statement accepted; full candidate — 2026-10-30
+
+Actual native Opus5.5/high8 checks PASS_WITH_NOTES/HIGH412.886s,
+all15 texts complete/no required repairs. All15 live/frozen/gitf158ff7
+bindings and30 native archive members verified; route/model/coverage checked.
+Nine minor notes adjudicated, including new alldT complex/indicator extension,
+oldell_chi literal scope and sourcewidth-vs-raw pairing. Enhancedv2finite
+controls record both missingconjugate failures, PSD minima/Bessel residuals;
+no continuumclaim. v1 unchanged. Complete new proof candidate
+notes/actual-two-variance-forms.md derives allfour actualnormalizedentries,
+complexactualauxdom/consistentcompletion, both finite-family variances and
+SAME-W mean-square column/adjoint-column maps. No randomboundedoperator/HS.
+Twenty-text FULL scientific packet frozen; no new analytic adoption before
+fullgate. Independent finiteGaussian statement19checks/HIGH207.904s,
+5texts/20nativefiles accepted, not input toactualvarianceproof. ProposedN2
+localfiniteLeanseam not provedyet. FulloriginalgoalACTIVE, no sourcefix/
+contact/HPC/Skorohod/companion/TeX/PDF/wiki/publication transaction.

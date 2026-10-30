@@ -1,0 +1,88 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "reviews/2026-10-30-actual-two-variance/target-v1.md: lines 1-80, whole file",
+    "reviews/2026-10-30-actual-two-variance/falsification-v1.md: lines 1-34, whole file",
+    "reviews/2026-10-30-actual-two-variance/worker-honesty-v1.md: lines 1-23, whole file",
+    "reviews/2026-10-30-actual-two-variance/check-diagnostics.py: lines 1-96, whole file",
+    "reviews/2026-10-30-actual-two-variance/diagnostics-v1.json: lines 1-839, whole file",
+    "reviews/2026-10-30-actual-two-variance/prior-bindings-v1.json: lines 1-17, whole file",
+    "reviews/2026-10-30-actual-two-variance/canonical-model-context.txt: lines 1-39, whole file",
+    "notes/spectral-mask-covariance-foundation.md: lines 1-309, whole file",
+    "notes/scalar-frequency-row-bound.md: lines 1-191, whole file",
+    "notes/temporal-phase-bound.md: lines 1-192, whole file",
+    "notes/higher-dimensional-hs-obstruction.md: lines 1-348, whole file",
+    "lean-progress/local-checks/dimensional-matrix-v1/StratonovichHAMAudit/DimensionalMatrix.lean: lines 1-23, whole file",
+    "lean-progress/local-checks/dimensional-matrix-v1/definitions-types-and-axioms.txt: lines 1-242, whole file",
+    "lean-progress/local-checks/dimensional-matrix-v1/local-receipt.json: lines 1-67, whole file",
+    "reviews/2026-10-30-higher-dimensional-hs/scientific-report.json: lines 1-99, whole file",
+    ".review/required-sources.json: lines 1-47, whole file (read plan only, no read credit)"
+  ],
+  "checks": [
+    {
+      "claim": "C1: target objects use the actual Gamma/a/alpha/d, E_(1/2) with both phase entries, W_C with complex covariance form, a test completion with time indicator, and a physical mask for all R>0 with no observation chi.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The class in lines 4-6 matches canonical H:homog (d in {1,2,3}, 0<a<1, alpha+a<2, 0<alpha<d or alpha=d=1), with the zero covariance excluded only as in the foundation. J is unitary from the complexified E onto L2(C^2). For complex F=F1+iF2, the cross term of ||hat F(xi)||^2 is 2 Im<hat F1,hat F2>, which is odd in xi because hat Fj(-xi) is the conjugate of hat Fj(xi). Evenness of mu therefore gives E|W_C(F)|^2=(2pi)^d int||hat F||^2 dmu, so the complex extension is true. For Schwartz phases, cos(t|xi|) and sin(t|xi|)/|xi| are smooth in xi with polynomially bounded derivatives uniformly on compact t, so v_z and G_w are Schwartz uniformly in t. Hence x->1_I v conj G is an H_a^C-valued Schwartz function and Foundation (6) applies directly with complex H. zeta_R F has fixed compact spatial support and a bounded time envelope, so the Section 7 (14) argument admits it to the raw completion; that argument is written for d=2,3 but its proof does not depend on d. Foundation (7)-(8) are stated only on the tensor class D, so identifying the raw variance with the left side of (6) needs an approximation by D elements. That approximation is feasible (piecewise-in-time tensor approximants converge in both norms) and is correctly listed as a later proof obligation in lines 20 and 62-63. Prop 2 allows all R>0, and no observation chi occurs in ell_R."
+    },
+    {
+      "claim": "D1: G_w is the correct Sobolev adjoint, the potential pairing is exact, sesquilinearity holds, the old ell_chi relates via Dchi^*E rather than chi=1 substitution, and source width is pairing only with no cutoff limit.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "S(-t)(0,g)=(-sin(t|D|)/|D| g, cos(t|D|) g). Pairing with E_(1/2) weights Lambda and Lambda^-1 and moving the real even multipliers across gives <S(-t)B(b)S(t)z,w>_E=int b v_z conj(G_w) dx with G_w exactly as in line 17. This is Section 7 (12)-(13) at s=1/2 with chi removed. ell_R is linear in z and antilinear in w. Solving <Dchi a,w>_E=<a,w'>_E gives Lambda w'_1=chi Lambda w_1 and Lambda^-1 w'_2=chi Lambda^-1 w_2, so w'=Dchi^*E w is Schwartz and G_w'=G_(w,chi) of (12). Thus ell_chi(z,w)=ell_R(z,Dchi^*E w) is correct on the old form's parameters, and Dchi is not E-selfadjoint because chi does not commute with Lambda. The target claims no source-cutoff limit: the smooth-source pairing is the W^rho functional of the old note, not ell_R. The relation omits the interval argument and implicit parameter restrictions; see minor findings."
+    },
+    {
+      "claim": "C2: all normalized K entries, signs, weights, prefactor and same absolute time are correct; zero-frequency continuous b_0 is handled; product Fourier reflection at -lambda and c_d are correct; the imported matrix identity applies only at r,rho>0 with continuity afterwards.",
+      "verdict": "PASS",
+      "reason": "Hand computation gives hat v_z(eta)=<eta>^(-1/2)[c_rho U1+b_rho U2] and hat G_w(xi)=<xi>^(-1/2)[-b_r V1+c_r V2], both at the same absolute t. The product is V^*KU with K11=-b_r c_rho, K12=-b_r b_rho, K21=c_r c_rho, K22=c_r b_rho and prefactor (<xi><eta>)^(-1/2), matching lines 33-34. Direct multiplication J(r)S(r,-t)[[0,0],[1,0]]S(rho,t)J(rho)^-1 gives the same four entries. hat(v conj G)(zeta)=c_d int hat v(eta) conj(hat G(eta-zeta)) deta, because c_d^2(2pi)^d=1, so zeta=-lambda gives lines 38-39 with xi=eta+lambda. Parseval then gives the kernel c_d hat b(xi-eta)K. DimensionalMatrix backward and forward equal S(-t) and S(t) at positive frequency, and full_interaction reproduces the unweighted product with H=1. The definitions dump agrees with the source and records axioms propext, Classical.choice and Quot.sound. Lean's division convention is not used at zero: the zero cases use b_0=t, the continuous limit since <0>=1, and K is continuous there. The weights and analytic use are not part of the Lean identity, and the packet says so in falsification lines 33-34."
+    },
+    {
+      "claim": "C3: real mask auxiliary nu_R is even with uniform ball growth, the linear variance bound is applied before the stationary auxiliary norm, (2pi)^d c_d^2 cancels, and masked noise is not treated as stationary with no nonlinear PDE comparison.",
+      "verdict": "PASS",
+      "reason": "Real zeta gives k_R(-u)=conj k_R(u), so with even mu the density rho_R is even (Foundation Prop 2). Foundation (5) gives nu_R(B(y,r))<=c_d^2 L^2 C_Gamma r^alpha uniformly in R>0, matching line 57. The target applies the bound to a fixed linear form: E|ell_R|^2=(2pi)^d int||hat(zeta_R F)||^2 dmu<=(2pi)^d int||hat F(eta)||^2 dnu_R. Reflecting eta=-lambda uses evenness of nu_R, and inserting line 38 gives (2pi)^d c_d^2=1. Lines 41 and 64-65 correctly state that the original noise is non-stationary, that no auxiliary field is needed, and that the nonlinear PDE is not replaced. This agrees with Foundation Sections 3-4, which disclaim positivity of the inverse covariance of nu_R."
+    },
+    {
+      "claim": "C4: both finite complex ON family variance inequalities hold in form, with a fixed vector in the negative Sobolev weight, uniform in R, family and h; vector Hilbert Bessel and phase CS are legitimate; the reverse variance uses reflection and evenness; T3, scalar Prop 1, the logarithm and beta>1/2 all match.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "First inequality: for fixed lambda put A_j(eta)=1_I sum_i K_ij(eta+lambda,eta) conj V_i(eta+lambda) in H_a^C. Scalar Bessel along an ONB of H_a gives sum_k||int sum_j (Je_k)_j A_j||^2<=int sum_j||A_j||^2. CS over i uses only that V_i is time-independent and makes no independence assumption. T3 (6) gives ||1_I K_ij||_a^2<=C1(1+T)^4 h^(2-a)[<h(r-rho)>^(a-1)+<h(r+rho)>^(a-1)]/(<xi><eta>). Tonelli with xi=eta+lambda yields int|V(xi)|^2<xi>^(-2gamma) J_h(xi) dxi, exactly the (2) form with eta=xi-lambda, weighted on the fixed output vector, and ||<xi>^-gamma Jz||_L2 is the stated E_(1/2-gamma) norm. Second inequality: the same argument with Bessel in the output family leaves the weight on the fixed input frequency eta, and the kernel integral is at eta'=eta+lambda. Using lambda'=-lambda, evenness of nu_R and the symmetry of the bracket and denominator in (xi,eta) gives J_h(eta). Hypotheses match: nu_R is positive Radon with the ball bound for all y,r, the ranges of d, a, alpha and gamma are identical, Prop 1's K is independent of d and nu, and T3 is uniform in s, h, r and rho. All constants are independent of R, I, z and family size, with C_T proportional to (1+T)^4. B_alpha, including the critical logarithm at alpha=1 in every admissible d, matches (3). The strict interval for beta and the h^(2beta) bound match Cor 2, and the endpoint is not claimed. Consistency check: combining with (15) would imply A_h gains regularity from E_(1/2-gamma) to E_(1/2) for gamma<1/2, which agrees with the order -1 near-diagonal kernel and does not conflict with the d=2,3 non-HS result, since Sum_k||e_k||^2_(E_(1/2-gamma)) diverges."
+    },
+    {
+      "claim": "C5: D3 mean-square column and adjoint-column maps on the same W are obtainable via a real Schwartz basis with fixed-pair versions and Gaussian limits, and no common uncountable version, random bounded operator or HS statement is inferred.",
+      "verdict": "PASS",
+      "reason": "Gram-Schmidt on a countable E-dense subset of real Schwartz pairs yields the basis, which is also complex ON and therefore an admissible D2 family. Define m z=sum_k ell(z,e_k)e_k using the second inequality and n w=sum_k ell(e_k,w)e_k using the first. Both have norm bounded by the D2 constant in L2(Omega;E), and they extend by density of real Schwartz pairs in E_(1/2-gamma). The identity <m z,w>_E=ell(z,w) needs ell(z,w-P_N w)->0 in L2. This follows from the second inequality applied to a singleton normalized family, giving E|ell(z,e)|^2<=C||z||^2||e||_E^2. The n identity follows symmetrically. Coefficients are real for real pairs, partial sums are L2 limits of jointly Gaussian variables on the same probability space, and limits remain Gaussian as in Foundation Section 4. Lines 71-73 correctly refuse L2(Omega;B(E)), HS and a common version. This is consistent with Section 8, because no HS sum over the input basis is claimed."
+    },
+    {
+      "claim": "C6: diagnostics contain 120 kernel snapshots including zero, 12 generic Gaussian FT controls, 3 actual singular d=2 spatial covariance controls, and finite 6-input/8-output/4-correlated-cell algebra with complex bases, PSD checks, both directions and a missing-conjugate negative control, explicitly atomic and not H:homog with no continuum estimate.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Code and JSON counts agree: 6x4x5=120 kernel rows (720 JSON lines at 6 lines each), 3x4=12 Fourier rows, 3 covariance rows, n=6, o=8, ncell=4, a=0.5. Kernel code implements direct J S(-t) coupling S(t) J^-1 against K with sinc(0,t)=t. The Fourier closed form 2^(-d/2)exp(-|p-q+lambda|^2/4) and the convolution integrand are correct by hand; JSON d=1 values 0.61815 and 0.021688 were spot-recomputed. The covariance closed form pi^(3/2)/sqrt2 exp(-y^2/2) and the spectral formula (2pi)^2(2pi)^-1 int (1/4)exp(-((l-x)^2+y^2)/2) dl agree by hand with values 3.9374, 0.53287 and 3.47475. The cell Gram formula is the exact second difference of |t-s|^(2-a)/((1-a)(2-a)), and the entries sum to 8/3, equal to the exact unit-square integral. Basis sum identities are algebraically correct, since the output-basis sum uses Ct symmetry, and trace equality and PSD follow. JSON satisfies partial<=full and shows discrepancy 110.09 for the conjugate control. Scope comments disclose atomic weights, snapshots and no continuum inference. The diagnostic files disclose that they are controls, and no execution by this reviewer is claimed. Finite-algebra numeric values and quadrature output were not re-executed; see minor findings on control asymmetry."
+    },
+    {
+      "claim": "C7: no operator norm, Schatten, path, Young, source flow, new moment, source energy, Lean, HPC, contact, companion, Skorohod, public release or whole-paper claim is made, the original full goal stays active, and accepted inputs are used only in their exact scope.",
+      "verdict": "PASS",
+      "reason": "Target lines 3-4 and 75-80 and worker-honesty lines 9-23 contain these exclusions and require a later full gate. Falsification lines 29-34 limit the controls. Prior bindings state that new applications need a full gate and no new Lean check. Accepted notes are cited within their stated hypotheses: Foundation Props 1-3 and Section 4, scalar Prop 1 and Cor 2, temporal Props 1-3 and Section 1. The HS note is used only for phase, duality and test completion with no new HS claim, and it remains distinct from the new no-chi form. The unchanged prior matrix report reads PASS_WITH_NOTES/high, and its source hash field matches the receipt as read; hashes were not recomputed."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Line 26's ell_chi relation drops the interval argument and leaves the old form's parameters implicit. The accepted old form is at I=(0,T) with T<=1 (a.e. equal indicator), s=1/2 as a special case, d in {2,3}, real phases and R>=1 masks. For d=1 no old accepted form is in this packet, and the algebra then only defines a new object. The algebraic identity itself holds for any real compact smooth chi.",
+      "Line 60-61 says the reverse row 'needs' evenness of nu_R. The evenness route is valid and available, but it is not strictly necessary for the ball hypothesis, because the reflected measure satisfies the same translated-ball bound. Evenness is sufficient and convenient.",
+      "Foundation (7)-(8) are stated for real tensor tests in D, so the complex and indicator extension is new and is not automatic from the note. It requires both (a) the odd cross-term cancellation for complex F under even mu and nu_R, and (b) approximation consistent in raw covariance and auxiliary norm. Both appear feasible; a later full proof must write them.",
+      "The HS note's test-completion estimate (14) and adjoint section are in d=2,3 scope only. The target's d=1 (including alpha=d=1) and all-T admissions are new applications of the same proof, not inherited accepted results.",
+      "The potential-pairing statement does not state the class of b. For later proofs, a class with b v_z in L2 uniformly on I (for example smooth and spatially compact after masking) should be explicit. Also, the smooth-source pairing is W^rho of the masked test, not ell_R itself.",
+      "The finite-algebra negative control is run only on the input-basis sum; the output direction has no conjugation-removal control. Partial-sum assertions compare real parts only, and the JSON records neither PSD minimum eigenvalues nor Bessel residuals. These facts rest on code asserts plus a claim of execution.",
+      "The 'direct marginal' covariance is a hard-coded closed form rather than a numerical marginal integral. Its correctness was checked by hand here, but the code comparison is closed form against spectral quadrature only. Likewise, the 12 Fourier controls compare closed form against convolution quadrature and do not transform an actual wave evolution over an interval, as disclosed.",
+      "Custody observation: the supplied source revision f158ff7 is not named inside the packet, whose bindings record source 7780e01 and old science 0743b2d. The prior report's line references are offset by 2 relative to the current HS note (346 versus 348 lines), consistent with an added acceptance header, but this was not verified by hashing.",
+      "Target notation is telegraphic ('alpha1' for alpha=1, 'onB1', 'zeta>=0,1 onB1'). It was read in the only mathematically consistent way, but a proof document should expand these forms."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "Read-only hand review. I ran no Python, mpmath, Lean, hash or replay step, so diagnostics execution, numeric JSON generation, compile, audit, False-control and SHA claims remain recorded author evidence. Finite-algebra values such as the 9.904 trace were checked only for structural consistency, not recomputed.",
+    "This is a statement, object, class and feasibility gate. The chain from D1 to D3 was derived formally by hand as a feasibility check, but it is not a complete written proof. Complex and indicator completion, H_a-valued Bochner identification, Fourier interchanges and d=1 application remain for the later full proof gate.",
+    "The canonical context is a short excerpt beginning at an equation's closing line, so the PDE display itself is not in this packet. The multiplicative coupling convention is taken from the accepted HS note and prior report; its sign does not affect the variance forms.",
+    "Accepted notes were reviewed for exact scope and applied hypotheses, and I re-derived their key formulas where the target uses them. This is not a fresh full re-review of their complete proofs.",
+    "This is an AI review, not human verification, a novelty audit, a publication clearance or a whole-paper certificate. Passing this statement gate does not adopt D1-D3 as proved. The original sharp, all-dimensional and source-normalization goals remain open."
+  ]
+}

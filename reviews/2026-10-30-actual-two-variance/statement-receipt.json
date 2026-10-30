@@ -1,0 +1,190 @@
+{
+  "provider": "claude",
+  "started_utc": "2026-10-30T23:15:01.462775+00:00",
+  "workspace": "${HOME}/.local/state/Le-AI-Lab/stratonovich-actual-two-variance-statement-v1/workspace",
+  "source_revision": "f158ff7721c7bc7a78c85fd3504bf11e7e265c85",
+  "input_hashes": {
+    "lean-progress/local-checks/dimensional-matrix-v1/StratonovichHAMAudit/DimensionalMatrix.lean": "d58bb2d78dc0a203d767cf9706da1a60f6fe9fd7b14d8e69ece870ac1711649c",
+    "lean-progress/local-checks/dimensional-matrix-v1/definitions-types-and-axioms.txt": "f2717a1a80c4a13451fb52558d1f008f1b774ba81337cf3022ed44cb9b8c26fb",
+    "lean-progress/local-checks/dimensional-matrix-v1/local-receipt.json": "4968fff9eb6cad64e6ed38420f0e512c177351aac1d4bb9c13c0c9c7c2126a4b",
+    "notes/higher-dimensional-hs-obstruction.md": "8546dc7192df74100a2368071b01ff43f6647ed3e77130091548ade6896fcb09",
+    "notes/scalar-frequency-row-bound.md": "bb5617c4bbffdd9fba8d5d3507deb72ea85edceaa413a10ee41b3a3669c9f1a6",
+    "notes/spectral-mask-covariance-foundation.md": "91358c34f5c03b81de7143035973fa2190dfe031ecb163aa28c677cec8f6e8b5",
+    "notes/temporal-phase-bound.md": "25a93a3107a25ae24b23fc920a4ead71937e3bc8c3b197fdbbfd2150102c2356",
+    "reviews/2026-10-30-actual-two-variance/canonical-model-context.txt": "a54e4415738a71f9bf2d37c83a6d1c7f50026eb6c03e902af0a485007dbeb06b",
+    "reviews/2026-10-30-actual-two-variance/check-diagnostics.py": "d5286b735ba879dd3a395c5ae27cc013c4b817ada7cb067dd5b37b3f301c7dd0",
+    "reviews/2026-10-30-actual-two-variance/diagnostics-v1.json": "b91934a61f39a6e0bfc3e1ccaec3258198e31d955bd0288650d7e70d5b4d61a1",
+    "reviews/2026-10-30-actual-two-variance/falsification-v1.md": "a80b84d78a88e71be04a64c9b1f7ab1bea3ab60dc6a1981f43cca909c78aceb3",
+    "reviews/2026-10-30-actual-two-variance/prior-bindings-v1.json": "eba3c59fc60ed959deed31ed81ae7bc1b6c4c65e0d2b047fd9bcb0a9399933e9",
+    "reviews/2026-10-30-actual-two-variance/target-v1.md": "79ad786d840190287c7917f4c59831266eb58c9d93caf03dabdba2b02c192668",
+    "reviews/2026-10-30-actual-two-variance/worker-honesty-v1.md": "a5ee47a26a8d86678c23fbcc93d79c65be0867a155b45cb6e53e4f7fdf2eaea0",
+    "reviews/2026-10-30-higher-dimensional-hs/scientific-report.json": "7bb03dc73feb3b680764623af0d03efac71dd0b2cfbd6b16264d6fd3bc12da03"
+  },
+  "target": "reviews/2026-10-30-actual-two-variance/target-v1.md",
+  "claude_account": "<removed>",
+  "review_contract_sha256": "db01a302d0966def31adac5b76ec72a8ca589a487d9cb1bdd77846b1db996d05",
+  "effort_requested": "high",
+  "resumed_from": null,
+  "resume_mode": null,
+  "resume_binding": null,
+  "min_confidence": "high",
+  "scientific_verdict": "PASS_WITH_NOTES",
+  "accepted": true,
+  "report_contract_schema": "subscription-review-report/1",
+  "report_legacy_mode": null,
+  "legacy_resume_binding": null,
+  "diagnostics": [],
+  "required_sources_sha256": "fab3fb18affcd95308e4664cc65a02fbfd17bf4311a3ec32c0c3abb5ddd3888e",
+  "required_sources_workspace_copy": ".review/required-sources.json",
+  "workspace_preflight": {
+    "schema": "le-ai-lab.review-workspace-preflight/1",
+    "scanned": "review contract (--prompt-file)",
+    "references": {
+      "target-v1.md": [
+        "reviews/2026-10-30-actual-two-variance/target-v1.md"
+      ]
+    },
+    "waived": [],
+    "missing": [],
+    "required_sources_copy": ".review/required-sources.json"
+  },
+  "runtime_preflight": {
+    "effective_version": "2.1.304",
+    "cli_version": "2.1.304 (Claude Code)",
+    "image_requirements": false,
+    "supported_versions": [
+      "2.1.299",
+      "2.1.300",
+      "2.1.301",
+      "2.1.302",
+      "2.1.303",
+      "2.1.304",
+      "2.1.314"
+    ],
+    "supported": true
+  },
+  "cli_version": "2.1.304 (Claude Code)",
+  "executable": "${HOME}/.local/state/Le-AI-Lab/swe-white-time-resume-20261024/runtime/node_modules/@anthropic-ai/claude-code-linux-x64/claude",
+  "executable_requested": null,
+  "executable_effective": {
+    "path": "${HOME}/.local/state/Le-AI-Lab/swe-white-time-resume-20261024/runtime/node_modules/@anthropic-ai/claude-code-linux-x64/claude",
+    "version": "2.1.304 (Claude Code)"
+  },
+  "read_ledger_format_supported": true,
+  "auth": {
+    "authMethod": "<removed>",
+    "apiProvider": "firstParty",
+    "subscriptionType": "<removed>",
+    "email": "<account email removed>"
+  },
+  "model_requested": "claude-opus-5-5",
+  "command_without_prompt": [
+    "${HOME}/.claude/bin/claude-acct",
+    "run",
+    "<account removed>",
+    "--print",
+    "--model",
+    "claude-opus-5-5",
+    "--effort",
+    "high",
+    "--disable-slash-commands",
+    "--strict-mcp-config",
+    "--mcp-config",
+    "{\"mcpServers\":{}}",
+    "--permission-mode",
+    "dontAsk",
+    "--permission-prompts",
+    "none",
+    "--output-format",
+    "stream-json",
+    "--verbose",
+    "--tools",
+    "Read,Grep,Glob",
+    "--allowedTools",
+    "Read,Grep,Glob",
+    "--agents",
+    "${HOME}/.local/state/Le-AI-Lab/stratonovich-actual-two-variance-statement-v1/claude-reviewer.json",
+    "--agent",
+    "artifact-reviewer",
+    "<stdin: prompt.txt without its final newline>"
+  ],
+  "prompt_transport": "stdin",
+  "prompt_bytes": 6095,
+  "prompt_sha256": "d1c5adc4adef9b5ee870adfdafb6cf9a7bc2cd20eec9c424e0bdc797edc9097e",
+  "transport_exit_code": 0,
+  "transport_ok": true,
+  "model_actual": "claude-opus-5-5",
+  "session_id": "51019d04-5527-49a8-ac57-b3ebb8e4ac31",
+  "usage": {
+    "input_tokens": 6,
+    "cache_creation_input_tokens": 85443,
+    "cache_read_input_tokens": 46832,
+    "output_tokens": 44452,
+    "output_tokens_details": {
+      "thinking_tokens": 35474
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 85443,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 42554,
+        "cache_read_input_tokens": 23610,
+        "cache_creation_input_tokens": 65037,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 65037
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "provider_error": false,
+  "terminal_subtype": "success",
+  "tools_actual": [
+    "Read",
+    "Grep",
+    "Glob"
+  ],
+  "actual_route_verified": true,
+  "candidate_hashes_unchanged": true,
+  "raw_report_sha256": "d39cf36ea18174ebe883124a0f1775b178d6c7e85469ec0cf5ecaf1c89c447eb",
+  "status": "review-complete",
+  "confidence": "high",
+  "report_interpretation": {
+    "contract_schema": "subscription-review-report/1",
+    "report_schema": "subscription-review-report/1",
+    "legacy_mode": null,
+    "normalized_verdict": "PASS_WITH_NOTES",
+    "normalized_confidence": "high",
+    "normalized_check_verdicts": [
+      "PASS_WITH_NOTES",
+      "PASS_WITH_NOTES",
+      "PASS",
+      "PASS",
+      "PASS_WITH_NOTES",
+      "PASS",
+      "PASS_WITH_NOTES",
+      "PASS"
+    ]
+  },
+  "report_sha256": "ba0a66dd70c0eb3829539698d9c2c37f11998201957115b48209bd1c528d62a7",
+  "report_text_format": "bare",
+  "report_body_sha256": "d39cf36ea18174ebe883124a0f1775b178d6c7e85469ec0cf5ecaf1c89c447eb",
+  "finished_utc": "2026-10-30T23:21:54.348781+00:00",
+  "elapsed_seconds": 412.886,
+  "transport_events_sha256": "8e9a8be5af484ec4c5e1a9ad498ff4267ea9c5ca577bff1a287716cf32dba3e8",
+  "transport_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "read_ledger_sha256": "3f0942596b17fea41a4635d69b2e429f904b45701dfee65916f4b9ff1bf07418",
+  "coverage_verified": true
+}
