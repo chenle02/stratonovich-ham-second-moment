@@ -6,7 +6,8 @@
 
 ## Current state
 
-- **Latest GLOBALd1lower:** Omega>1 andexplicitgainV(a/2)^(-1/k) ORIGINALpointlower(18) forALLadmissibled1Riesz/whitea/alpha/amplitudes, withown E_star^O, accepted7groups/HIGH atee188ab (447.816seconds,31texts+2images). EntireactualGamma/kernel/rationalproof and4finitecompleteQ/D/Vtype/applications checked. This closes d1LOWERcomparison only; source/domain/label/intendednormalization, sharpupper andd2d3 remainOPEN. NEXT: freeze/falsify actualhigher-dimensional firstdriver/flow norms, preservingoriginalcovarianceclass andsource-independentretainedGupper.
+- **Latest actualdimensional methodtest:** physicallyMASKED SAME-W L²HS(E_s,E_s) firstdriver reconstruction in d2/3 ruledout forEVERYs byactualcompactGaussianmean/FourierUV/covariance proof, accepted8groups/HIGH at0743b2d (407.368seconds,26texts+2images). Not an unmasked/law-only/moment/solution/Gupper no-go. Onefullmatrixtype+2OLDscalarNEWapplications checked. NEXT: freeze/falsify actualuniformspectralballgrowth and auxiliarymaskvariance domination for a larger driverclass; Schatten/flow claims remainUNPROVED. Originalall-dimensional lower/sharpupper/source issues open.
+- **Latest GLOBALd1lower:** Omega>1 andexplicitgainV(a/2)^(-1/k) ORIGINALpointlower(18) forALLadmissibled1Riesz/whitea/alpha/amplitudes, withown E_star^O, accepted7groups/HIGH atee188ab (447.816seconds,31texts+2images). EntireactualGamma/kernel/rationalproof and4finitecompleteQ/D/Vtype/applications checked. This closes d1LOWERcomparison only; source/domain/label/intendednormalization, sharpupper andd2d3 remainOPEN. MaskedHS extension nowrefuted at0743b2d; NEXTactualspectral/mask/operatornorm bounds preservingoriginalclass.
 - **Latest actual damped lower result:** temporalBeta/legalX/staticlower/dampedenergy GENERALOmega pointcomparison and whitealpha1,a1/2 directpoint theorem(16), exactzeta=(2418683125/2415919104)^(1/8)>1, accepted7groups/HIGH at8883160 (295.426seconds,28texts+2images). OwnE_star^O explicitmeaningfuldomain; source/domain/label matching and normalization unadopted. Threefinite scalar applications checked. GlobalOmega nowclosed atee188ab; NEXToriginalhigher-dimensional/sharpupper work. Sharpupper/originald2d3/exactlimit/fullgoal remainOPEN.
 - **Latest raw value comparison:** actual positive-control variational VALUE ceiling in own raw occupation energy E_eta, with strict displayed-map gaps ateta1/2 and legalalpha1/10,a9/10eta1, accepted8groups/HIGH atad6c188 (322.118seconds,26texts+4images). Actual moment Q2 still has only LOWERQ2>=V2 from thismechanism; no Q2 upper/sourceconstantidentity. Two scalar applications checked. Dampedbridge/whitepoint now accepted at8883160; NEXTglobalOmega comparison. Original9pointrecon doesnotprove fullrange. Original sharpupper/all-dimensions/intendednormalization remainopen.
 - **Latest occupation bridge:** actual positive X=L2(time;L1 intersect L2 space) covariance/closed-H1-form/measurable-Rayleigh-rate approximation, original-point lower and exact smooth/X score-supremum equality accepted8groups/HIGH at80e47d6 (272.897seconds,25texts). Includes actual finite-energy occupation densities g² and bounded nonnegative timeweights. Two new scalar form-budget applications checked. RawVALUE ceiling now accepted atad6c188; NEXTdamped-lower-endpoint comparison. Intended normalization/sharp upper/higher dimensions remain open.
@@ -27,7 +28,7 @@
 - **Authorization:** Le's continuing full goal includes the sharp/lower track. The current wave is the bounded actual local-flow/sharp-lower consumer,with the HIGH review threshold unchanged. It does not redefine the original all-alpha0sharp target,claim novelty or promote a paper. Le now explicitly permits Lean verification;standalone local checks do not create a companion repo. Report/honor PROJECT-GOAL decision points;companion-creation decision4remains pending. No correspondence/public release authorized.
 - **Worker:** Codex/GPT author, paper-dev workflow; historical project handoff to agent #30 on 2026-10-26. Lean remains L0/PROPOSED (`lean-progress/PROGRESS.md`). Ten normal reference requests exist; new edition-custody intake is nonblocking, not source authentication.
 
-- **Local Lean:** sixteen standalone seams contain69finite deductions with local compile/replay/standard-axiom evidence. Latest4raw variational identities have clean source/replay and3numericFalse controls; their exact type/application gate passed20groups/HIGH with the analytic proof. Earlier scoped reviews retain their own exact boundaries. Analytic SPDE, measure, spectral and supremum arguments remain outside these kernel checks. No official package/companion gate.
+- **Local Lean:** seventeen standalone seams contain70finite deductions with local compile/replay/standard-axiom evidence. Latest4raw variational identities have clean source/replay and3numericFalse controls; their exact type/application gate passed20groups/HIGH with the analytic proof. Earlier scoped reviews retain their own exact boundaries. Analytic SPDE, measure, spectral and supremum arguments remain outside these kernel checks. No official package/companion gate.
 
 
 ## Resume checkpoint — 2026-10-30: joint Gaussian tilt contract
@@ -5168,3 +5169,26 @@ source/flow/canonicaldata/growingcone. No claimnormchangealreadyworks.
 HeldCLOprimaryselectedsource usesoperatornorm,notstateHS; periodic/massive/
 noisebudget restrictions retained; exactoldpartialticketnotduplicated,
 currentwikiCLOciteNOTFOUND. Originalmoment/sharpupper/allcovscope notshrunk.
+
+### Actualmasked dimensionalHS method no-go adoption — 2026-10-30
+
+ActualOpus5.5/high8PASS/HIGH,407.368seconds,26texts+2sourceimages,
+no requiredrepairs. All28live/frozen/git0743b2d inputs,43nativearchive
+files,diagnosticBYTEreplay/newmatrix5artifactpairs/both9/26filearchives/
+oldscalar source-types reverified. Sixminorfindingsadjudicated: SAME-W
+notlaw-only, PHYSICALLYMASKED notunmaskedraw,constantdataoutsideEs,
+absoluteBILINEARnoisecompletionbound, supportextensionnotextraassumption,
+actualversion/tag/Falsegoal. Onlyopeningstatuschanged; proofbodyexact0743.
+Preproof7HIGH/444.177 separateidentity. No retry/recovery/confidencechange.
+
+ACCEPTED failure ofthe specificMASKED L²HS Es→Es reconstruction ANYs
+ind2/3, foractualoriginalnonzeroRadonGamma/mask/CMtest law. Compactinput/
+outputmean, whole-frequencynear-diagonalUVdivergence notperiodic/global
+volumeproxy. No sourceu/moment/nonexistence/Gupper/Theorem3.1/Skorohod
+no-go. Differentoperator/Banach/loss-index/invariantstate frameworks NOT
+ruledout. Newmatrixtypeand2reusedscalarNEWapplications reviewed;
+70localfacts/17seams,no formalHS/Gaussian/SPDE/officialpackage theorem.
+No reviewer/Leanjoblive. Nextactualspectralgrowth/auxmaskedLINEARcovariance
+framework notyetproved; no Schattenfix orweaker-rangeasfinalsolution.
+Fulloriginalall-dimensional/sharp/sourcegoal ACTIVE. CanonicalTeX/PDF/wiki
+unchanged,no contact/sourcefix/HPC/companion/publication/circulation.

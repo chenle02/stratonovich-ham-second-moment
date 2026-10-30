@@ -1,0 +1,99 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "notes/higher-dimensional-hs-obstruction.md: lines 1-346, whole file",
+    "reviews/2026-10-30-higher-dimensional-hs/target-v1.md: lines 1-110, whole file",
+    "reviews/2026-10-30-higher-dimensional-hs/worker-honesty-v1.md: lines 1-36, whole file",
+    "reviews/2026-10-30-higher-dimensional-hs/falsification-v1.md: lines 1-23, whole file",
+    "reviews/2026-10-30-higher-dimensional-hs/check-diagnostics.py: lines 1-46, whole file",
+    "reviews/2026-10-30-higher-dimensional-hs/diagnostics-v1.json: lines 1-191, whole file",
+    "reviews/2026-10-30-higher-dimensional-hs/reuse-bindings-v1.json: lines 1-19, whole file",
+    "reviews/2026-10-30-higher-dimensional-hs/reused-complete-types.txt: lines 1-226, whole file",
+    "reviews/2026-10-30-higher-dimensional-hs/canonical-model-context.txt: lines 1-37, whole file",
+    "reviews/2026-10-30-higher-dimensional-hs/canonical-source-custody.json: lines 1-21, whole file",
+    "reviews/2026-10-30-higher-dimensional-hs/source-context-v1.json: lines 1-20, whole file",
+    "reviews/2026-10-30-higher-dimensional-hs/local-recon-v1.md: lines 1-26, whole file",
+    "reviews/2026-10-30-higher-dimensional-hs/statement-adjudication-v1.md: lines 1-36, whole file",
+    "reviews/2026-10-30-higher-dimensional-hs/scientific-worker-honesty-v1.md: lines 1-44, whole file",
+    "notes/interaction-driver-path.md: lines 1-345, whole file",
+    "notes/local-causal-young-flow.md: lines 1-503, whole file",
+    "lean-progress/local-checks/phase-response-v1/StratonovichHAMAudit/PhaseResponse.lean: lines 1-67, whole file",
+    "lean-progress/local-checks/phase-response-v1/local-receipt.json: lines 1-89, whole file",
+    "lean-progress/local-checks/dimensional-matrix-v1/StratonovichHAMAudit/DimensionalMatrix.lean: lines 1-23, whole file",
+    "lean-progress/local-checks/dimensional-matrix-v1/Audit.lean: lines 1-8, whole file",
+    "lean-progress/local-checks/dimensional-matrix-v1/WrongSlot.lean: lines 1-8, whole file",
+    "lean-progress/local-checks/dimensional-matrix-v1/definitions-types-and-axioms.txt: lines 1-242, whole file",
+    "lean-progress/local-checks/dimensional-matrix-v1/local-receipt.json: lines 1-67, whole file",
+    "lean-progress/local-checks/dimensional-matrix-v1/README.md: lines 1-21, whole file",
+    "lean-progress/local-checks/dimensional-matrix-v1/archive-verification.json: lines 1-10, whole file",
+    "lean-progress/local-checks/dimensional-matrix-v1/version-check.json: lines 1-16, whole file",
+    "reviews/2026-10-28-source-normalization/packet-v2/pages/chen-02-upper.png: full image viewed",
+    "reviews/2026-10-28-source-normalization/packet-v2/pages/chen-03-lower.png: full image viewed",
+    ".review/required-sources.json: lines 1-92, whole file (read plan only, no read credit)"
+  ],
+  "checks": [
+    {
+      "claim": "C1: actual d=2,3 deterministic lemma for any real s, on E_s=H^s x H^(s-1) with Bessel weights, the full two-entry massless phase group with continuous sinc, and B(h) lower-left. Smooth even nonnegative compact H, positive W1infinity k, bounded strong primitive. Multiplication proof exact, real-to-complex HS norm the same, and source regime exact.",
+      "verdict": "PASS",
+      "reason": "Symbol (1) solves v_tt=-|xi|^2 v. The normalized off-diagonal sizes <xi>|sin(t r)|/r<=C_T and r|sin(t r)|/<xi><=1 are correct. Dominated pointwise convergence gives strong continuity, and no operator-norm continuity is claimed. Peetre follows from 1+|xi|^2<=2(1+|eta|^2)(1+|xi-eta|^2), so the weight bound 2^(|s|/2)<xi-eta>^|s| holds for both signs of s. The unitary multiplication kernel (2pi)^(-d/2)Hhat(xi-eta) is correct, and Young/Minkowski gives boundedness on H^s for every real s. B(H) maps H^s into H^s, which embeds in H^(s-1). The integrand of (2) is strongly continuous with the stated bound, so the Bochner primitive exists. A real ONB is a complex ONB of the complexification, and the Fourier-weighted real inner product is real, so the HS norm is preserved. The Gamma class matches canonical H:homog lines 135-154 and source (1.2), (1.8), (1.9). alpha=d is unavailable in d=2,3 under alpha+a<2, so no white-noise or Riesz-only swap occurs. Homogeneity is available but unused."
+    },
+    {
+      "claim": "C2: finite propagation by classical energy, shrinking ball, zero initial value and time reversal gives the output and input cone, then bounded E_s density extension. Dchi smooth and 1 on B_(A+T+1), A_h=Dchi A_h Dchi on all E_s, no compact-phase or E-dense-F shortcut, no stationary volume claim, and constant data acknowledged outside E_s.",
+      "verdict": "PASS",
+      "reason": "The flux v_t d_n v-(v_t^2+|grad v|^2)/2<=0 is correct by Cauchy-Schwarz. Zero energy plus zero initial v gives v=0 in the cone, and time reversal handles S(-u). For Schwartz z, B(h(u))S(u)z is compact in B_A and S(-u) moves it into B_(A+u). (1-Dchi)z is Schwartz and vanishes on B_(A+T+1), so its evolution vanishes on B_(A+T+1-u), which contains B_A. Hence (3) holds on Schwartz data. Dchi is bounded on each Sobolev entry by the same Peetre proof, so (3) extends by density. The compact chi is smooth as required. Lines 81-85 explicitly disclaim the F-density shortcut and any all-state-space failure."
+    },
+    {
+      "claim": "C3: full phase product and matrix lemma, zero-S limit, unitary convolution constant, normalized kernel (4), Schwartz Fubini and domains. Hhat positive near 0, cos difference>=J0/2, sum IBP<=B0/(r+rho), product>=J0/8 with threshold 4B0/J0. Sobolev weight r^-1 for any s. No phase or covariance monotonicity. Scalar lemma applications discharged, with a_win=1 and t_win=1 not physical.",
+      "verdict": "PASS",
+      "reason": "I recomputed the product. Its lower-left entry is c_r Hhat c_rho and its upper entries are as displayed. The lower-left entry involves no division, so it extends continuously to zero. With outputs weighted by <xi>^(s-1) and inputs by <eta>^-s, (4) follows with constant (2pi)^(-d/2). S preserves Schwartz because cos(t|xi|) and sin(t|xi|)/|xi| are smooth in xi. Fubini is absolute for compact or Schwartz inputs and outputs. For |xi-eta|<=epsilon, |r-rho|T<=1 and cos z>=1/2 give Ddiff>=J0/2 since k>=0. IBP gives |Dsum|<=(|k(T)|+T||k'||inf)/(r+rho)<=B0/r, with zero lower boundary term. I=(Ddiff+Dsum)/2>=J0/4-B0/(2r)>=J0/8 for r>=4B0/J0. The Bessel step is correct: |<xi>-<eta>|<=|xi-eta|, the ratio <xi>/<eta> lies in [2/3,2], so its s-th power is >=2^(-|s|), and <xi><=sqrt(2) r on r>=1. This yields (6). In frequency_window with J=I, A=Ddiff/2, B=B0/2, t=1, a=1: hA uses A>=J0/4, hB uses B0>=0, ht and hr are immediate, hcut uses B0/A<=4B0/J0<=r, and herr is |I-A|=|Dsum|/2<=B0/(2r)=B r^(-1) since r^0=1. The conclusion I>=A/2>=J0/8 agrees. two_frequency_average at x=ru, y=rho u is exact. The note separates a_win from noise a and t_win from T."
+    },
+    {
+      "claim": "C4: actual P_N whole-frequency balls, truncated continuous kernel, Parseval HS identity by density and Tonelli. Near-diagonal band with Jacobian 1 and r<=N-epsilon gives c^2 vol(B_eps) sphere int r^(d-3), d2 log and d3 linear. HS ideal contraction gives non-HS with no torus or volume substitute. The d1 radial integral is calibration only. Same-index s cannot repair, and mixed-index loss is not refuted.",
+      "verdict": "PASS",
+      "reason": "K_s is continuous, hence bounded and L2 on B_N x B_N. It represents the truncated block on the dense C_c^infinity test class. Parseval in eta and Tonelli give ||T||_HS^2=int|K|^2. The band fits since |eta|<=|xi|+epsilon<=N. With eta=xi-z and (6), polar integration of |xi|^(-2) gives exactly (7), including |B_eps||S^(d-1)|. It diverges as a logarithm in d=2 and linearly in d=3. Compression plus the unitary J_s and projection bound the truncated HS norm by ||A_h||_HS, so (8) follows. Sanity check: the near-diagonal operator has order -1 with compact coefficient, which is HS iff d<2, matching the ultraviolet mechanism. d=1 gives int r^-2 dr, which is finite, and only consistency is asserted. Line 325-327 retains the two-index scope."
+    },
+    {
+      "claim": "C5: original Gaussian example for all nonzero Gamma in d=2,3. q even plateau, L mass, U smooth locally, even, positive, H=zeta_R U compact with H(0)>0, Q_sp finite and positive with (10). f C1 on [0,1], interior approximation, Z in the completion, (11), k C1 and positive in raw units, no source constant. No uniform mask bound on the noise Hilbert quotient, only fixed compact tests.",
+      "verdict": "PASS",
+      "reason": "A nonzero Radon measure has some ball with finite positive mass. U=Gamma*q is locally a compact-Gamma integral and differentiates under the integral. Evenness of Gamma and q gives evenness of U, and U(0)>=Gamma(B_L)>0. (10) holds since |x|<=L+1 and |z|<=L give q(x)q(x-z)>=1. H is smooth, compact, even, nonnegative, nonzero at 0, with A=2R. The mask is applied after convolution. k=|.|^-a*f on [0,1] is C1 with k'=|.|^-a*f', and sup_u int_0^1|u-v|^-a dv=2^a/(1-a)<=2/(1-a), so the stated bounds hold. k>=m_f on the unit square since |u-v|<=1 and a>0. Interior C1 approximation works because f(t)=o(t) at the endpoints. L2 time Schur then gives Z in the completion. (11) follows from (9) and is strictly positive since int f k>=m_f^2. Lines 279-280 explicitly avoid the d1 multiplier (2.2)."
+    },
+    {
+      "claim": "C6: actual Gaussian phase form (12)-(15). Sobolev adjoint of Dchi S(-u), Lambda weights and order, G correct, Dchi not E_s self-adjoint. Schwartz, time-uniform, indicator completion bound (14). No point noise evaluation. Positive-width pair equals test functional without HS or source-operator convergence. Same-W covariance derived by absolute Fubini to Dchi A_h. Z the same raw test noise.",
+      "verdict": "PASS",
+      "reason": "S(-u)(0,g)=(-sin(u|D|)/|D| g,cos(u|D|)g). Pairing with E_s weights Lambda^(2s), Lambda^(2s-2) and using L2 symmetry of the even real multipliers gives (12) and (13). Testing T^* on (0,g) gives exactly G=Lambda^(2s-2)((T^* w)_2). chi Lambda^(2s)w_1 is compact smooth, and v_u, G are jointly smooth and Schwartz uniformly in |u|<=1. (14): the z-domain lies in K-K, and sup_u int_0^T|u-v|^-a dv=2^a T^(1-a)/(1-a) at u=T/2, so the constant is exact. A smooth time cutoff of the jointly smooth integrand converges in L2(0,T; sup), so F_z,w lies in the completion. Absolute Fubini with Gamma finite on compact differences gives, with G=f tensor q, int_0^T k(u) int F(u,x)U(x) dx du, which by (13) and Bochner pairing is (15). At positive width b=zeta_R W^rho is smooth in x and integrable in time, so pairing equals W^rho(F_z,w). The form is defined by completion. Z=W(f tensor q) uses the raw unmasked W with no independent copy."
+    },
+    {
+      "claim": "C7: hypothetical strong L2 HS X with fixed-pair identification gives Bochner E[ZX] in HS, norm bound, evaluation, A_h by density and large chi, contradiction with non-HS. No uncountable a.s. version and no sigma(W) measurability. Finite compatible local families fail somewhere, not every cutoff. Nonzero scalar cannot repair. No claim on all HS-valued laws, all Banach or Young, actual solution, moments, G-upper or Theorem 3.1, or Skorohod. Original goals open, no replacement norm assumed.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Cauchy-Schwarz gives E||ZX||_HS<=||Z||_2||X||_L2HS. Evaluation by HS-continuous functionals gives <E[ZX]z,w>=E[Z ell_chi(z,w)]=<A_h z,w> for each fixed pair. Boundedness and density of real Schwartz pairs give E[ZX]=A_h, contradicting (8). Only countably many or individual fixed pairs are used. (15) before its last equality holds for any smooth compact rho_j, so a finite partition with sum rho_j=1 on B_(A+T) gives the some-cell failure. Claim boundaries at lines 34-38 and 325-332 are honest. Note: the theorem is same-space a.s. compatibility and physically masked noise, see the minor findings."
+    },
+    {
+      "claim": "C8: new matrix public defs, type, 3 standard axioms, application, and old scalar reuse internals unchanged, as recorded. Pins 4.35, Mathlib 56a0058, 5 artifact pairs, False control as recorded. Initial negation-normalization failure retained and repair only ring. Diagnostics 2x2, 12 cases, 2 quadrature, 7 shells and scope comments in code and data, no Hhat, noisy operator or source energy. Old receipt fidelity, root SHA, reachability not own execution. Canonical TeX and PDF unchanged, no source fix, contact, companion, HPC, wiki, sibling, novelty, whole paper, circulation. Full goal active.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "By reading only: DimensionalMatrix.lean and definitions-types-and-axioms.txt agree on backward=!![cp,(-sp)/p;p*sp,cp], coupling=!![0,0;H,0], forward=!![cq,sq/q;(-q)*sq,cq], and the conclusion. I checked the identity by hand. The application cp=c_r, sp=s_r, p=r, cq=c_rho, sq=s_rho, q=rho reproduces S(-u)B S(u) at positive frequencies, with Hhat real by evenness. Recorded axioms are propext, Classical.choice, Quot.sound. The local receipt records 5 identical artifact pairs, exits 0, WrongSlot exit 1, Mathlib pin 56a0058. WrongSlot is semantically false, since its lower-left entry equals 1. README line 16-18 retains attempt01 and the ring-only repair. Scalar PhaseResponse.lean types agree with reused-complete-types.txt, and source_sha256 agrees between receipt and binding. Custody line ranges agree with the excerpt lengths. The script has the stated asserts and the JSON has 12 rows and 7 shells. I checked by hand J0=64/693, f mass 1/30, B0=9/4 from the analytical bounds, threshold 6237/64, k(0)=16/315, and first-order consistency of rows at r=128 and r=256 diff 0 with k(1)sin(w)/w. No Hhat or operator norm is computed. Key s is a frequency radius, as disclosed. No execution, hash or archive replay was performed by this reviewer; these remain recorded evidence only."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Section 1 line 36 says realization of the Gaussian first-driver law, but Section 8 proves the same-space statement: a.s. identification with ell_chi on the probability space carrying W and Z. Equal-law realizations on another space are not addressed by the written argument. The note's disclaimers are consistent, but the word law could be read more broadly than what is proved.",
+      "The contradiction covers the physically masked W_R, the analogue of local-flow (3.2). It does not directly cover an unmasked raw D_chi M, the literal analogue of interaction-driver (I). A large chi with chi=1 on B_(2R+T+1) cannot also make the mask inactive on the support of G_w,chi, and the note rightly assumes no mask bound on the noise Hilbert quotient. Lines 315-317 scope this with 'this compact mask', and any wider reading should not be inferred.",
+      "Line 83 says (1,0) need not belong to global E_s. It in fact belongs to no H^s(R^d) x H^(s-1)(R^d). Harmless understatement.",
+      "Extending the covariance formula from smooth tests to completed F_z,w and f tensor q needs the absolute bilinear version of (14) for a pair of tests. Line 291 implies this and it follows by the same proof, but (14) is displayed only on the diagonal.",
+      "Lines 70-73's E_s extension of general support statements is not needed by (3), which uses Schwartz inputs, boundedness and density. The terse standard-approximation sentence is therefore not a dependency.",
+      "version-check.json lists release tags but does not itself bind tag v4.35.0 to Mathlib revision 56a0058; that link appears only in README and the receipt. The packet contains no WrongSlot log, so failure at False is supported by the exit code and my hand evaluation, not by a logged goal."
+    ],
+    "required_repairs": []
+  },
+  "required_repairs": [],
+  "limitations": [
+    "Read-only hand review. I did not run Lean, Python, sympy, hashes, archive replay or any git ancestry check, so all SHA, compile, replay, reachability, archive, version and diagnostics execution claims are recorded author evidence only.",
+    "Canonical TeX and PDF, native archives, the attempt01 failure and source revision 0743b2dc are outside the packet as files. Their unchanged status and custody are recorded claims, except for what the excerpts and two page images show.",
+    "Source images were only viewed. Their pixel hashes were not recomputed, and they cover only page 2 upper and page 3 lower of the pinned edition.",
+    "Standard imported facts (Young inequality, Bochner integration, wave energy identity, Gaussian Hilbert completion of a positive-definite form) were checked as applied, not formalized. The Lean lemmas certify only the finite matrix and scalar algebra.",
+    "This is an AI scientific review of the scoped candidate, not human verification, a novelty audit, a whole-paper certificate or circulation clearance. The original sharp upper and all-dimensional lower goal remains active."
+  ]
+}

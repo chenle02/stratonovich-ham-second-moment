@@ -1,10 +1,12 @@
 # An actual higher-dimensional obstruction to the HS first-driver space
 
-CANDIDATE PROOF, not adopted. Preproofd5c4663 passed7groups/HIGH,
-444.177seconds,15texts+2sourceimages,no requiredrepairs. Fullscientific
-analytic/source/type/application review REQUIRED. This concerns a specific
-Hilbert–Schmidt first-driver reconstruction, not existence of the original
-wave solution, a moment bound or the retained full G:upper theorem.
+ACCEPTED at the scoped scientific analytic/source/type/application gate:
+actualOpus5.5/HIGH,8PASSgroups,407.368seconds,26texts+2sourceimages,
+no requiredrepairs; scientificsource0743b2d. Exact evidence andsixoptional
+clarifications in reviews/2026-10-30-higher-dimensional-hs/
+scientific-adjudication-v1.md. This rules out the PHYSICALLYMASKED,
+SAME-W compatible L2HS(E_s,E_s) reconstruction in d2/3,not an arbitrary
+unmasked/law-only construction or the originalmoment/solution problem.
 Originalsharp/all-dimensional goal remainsACTIVE.
 
 ## 1. Actual phase, operator and statements
