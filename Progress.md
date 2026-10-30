@@ -4658,3 +4658,11 @@ canonicalmodel/covariance/mild/finiteupper excerpts, and9unchangedscalar
 Lean source/types/receipts with current bindings. Route stays original
 whole-paper PARTIAL/BOUNDARY_REVIEW, not a certified-goal waiver.
 No new proof or sourceconstant identification until the proper gates.
+
+General-positive consumer preproof audit now live at14fe727: actual
+first-partyOpus5.5/high,28texts,unchangedHIGHthreshold; session9942/native
+stratonovich-general-consumer-statement-v1. All28live/packet/committed
+hashes matched; supportedlaunch-localdoctor/selectedheadroom7short62weekly.
+No proof/adoption of T1-T3or general-test point lower yet. Ninekernel
+internals unchanged; NEWanalytic/typeapplication interface stillrequires
+independentgate. Poll samehandle/receipt, no timeoutrestart. GoalACTIVE.
