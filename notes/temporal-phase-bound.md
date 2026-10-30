@@ -1,6 +1,8 @@
 # Raw temporal modulation and continuous wave factors
 
-COMPLETE CANDIDATE, not adopted before independent full proof review.
+ACCEPTED internal temporal estimates: native Opus5.5/high full review,
+PASS_WITH_NOTES/HIGH, scientific revision 81d9158; see the
+2026-10-30-temporal-phase-bound proof packet and adjudication.
 Only temporal estimates are proved below. The actual spatial two-phase
 operator, its Fourier normalization, both variances and source cutoff
 limits remain separate matching and construction obligations.
@@ -23,7 +25,7 @@ Indeed symmetry cancels the imaginary cross term, leaving the sum of the
 two nonnegative real quadratic forms for Re f and Im f. The same bound
 (1) follows by adding those real bounds. Smooth compact tests are dense
 in complex L2, so (1) extends the map from L2 into this Hilbert completion.
-In particular any bounded function on I=[s,s+h] subset[0,T], extended by
+In particular any bounded measurable function on I=[s,s+h] subset[0,T], extended by
 zero outside I, is admitted. Formula (1) and the integral formula persist
 by L2 approximation: the absolute bilinear form is bounded by the same
 Schur constant via Cauchy-Schwarz. No differentiability of the zero
@@ -53,7 +55,7 @@ Ordinary differentiation of an integral with moving endpoint gives
 Thus c is C1 on the closed interval (one-sided derivatives at endpoints),
 c(h)=0, |c(v)|<=h M^2, and |c'(v)|<=M^2+hMD. The two triangles t>u and
 t<u in the covariance integral are complex conjugates, so, by absolute
-integrability of the kernel against bounded functions, the norm in (2)
+integrability of the kernel against bounded functions, the squared norm in (2)
 is exactly
 
     2 Re int_0^h v^-a exp(i omega v)c(v)dv.                         (3)
@@ -141,7 +143,10 @@ are present use a one-point probability space for this statement.
 The map from averaging parameters into L2(0,T) is continuous by dominated
 convergence, since t is bounded and every frequency here is finite.
 Equation (1) makes it continuous into H_a as well, so these are genuine
-Bochner integrals. Hilbert Jensen bounds the squared norm of the average
+Bochner integrals. Their images under the continuous L2-to-H_a map
+agree with the pointwise-in-t averages: this follows first in L2 by joint
+continuity and ordinary integration, then by continuity into H_a.
+Hilbert Jensen bounds the squared norm of the average
 by the average of the squared norms.
 
 Apply Proposition 2 to each integrand with A=t^j. For j=0,

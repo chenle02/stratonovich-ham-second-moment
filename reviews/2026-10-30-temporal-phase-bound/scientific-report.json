@@ -1,0 +1,135 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "notes/temporal-phase-bound.md: lines 1-188, full",
+    "reviews/2026-10-30-temporal-phase-bound/target-v1.md: lines 1-53, full",
+    "reviews/2026-10-30-temporal-phase-bound/falsification-v1.md: lines 1-19, full",
+    "reviews/2026-10-30-temporal-phase-bound/worker-honesty-v1.md: lines 1-13, full",
+    "reviews/2026-10-30-temporal-phase-bound/accepted-temporal-hilbert-context.txt: lines 1-25, full",
+    "reviews/2026-10-30-temporal-phase-bound/accepted-context-binding.json: lines 1-11, full",
+    "reviews/2026-10-30-temporal-phase-bound/check-diagnostics.py: lines 1-30, full",
+    "reviews/2026-10-30-temporal-phase-bound/diagnostics-v1.json: lines 1-1208, full",
+    "reviews/2026-10-30-temporal-phase-bound/statement-adjudication-v1.md: lines 1-18, full",
+    "reviews/2026-10-30-temporal-phase-bound/scientific-worker-honesty-v1.md: lines 1-19, full",
+    ".review/required-sources.json: lines 1-33, full (read plan only, no read credit)"
+  ],
+  "checks": [
+    {
+      "claim": "C1: The note imports only the H_a positivity, Schur bound and separable completion from the excerpt, and not a modulation bound.",
+      "verdict": "PASS",
+      "reason": "Re-derived by hand. The Laplace identity for |t-s|^-a and the identity exp(-lambda|t-s|)=int 2lambda exp(-lambda(t-u))exp(-lambda(s-u))du both hold. Also int_0^T|t-s|^-a ds=(t^(1-a)+(T-t)^(1-a))/(1-a)<=2T^(1-a)/(1-a). Bound (1) has the same constant. Nothing beyond this is imported."
+    },
+    {
+      "claim": "C1: Complexification cancels the cross term and preserves (1).",
+      "verdict": "PASS",
+      "reason": "For f=g+ik, f(t)conj(f(u)) has imaginary part k(t)g(u)-g(t)k(u), which is antisymmetric and integrates to zero against the symmetric kernel. The form is therefore Q(g)+Q(k)>=0, and adding the real bounds gives (1) with the same constant."
+    },
+    {
+      "claim": "C1: The L2 extension, indicator admission and persistence of the integral formula hold.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Density and the absolute Schur bound int int|f||g||t-u|^-a<=S||f||_2||g||_2 give continuity of the map and of the integral formula. Zero extensions are admitted through L2 only, and no derivative of the extension is used. Note: 'any bounded function' should read bounded measurable; every actual use is continuous on I."
+    },
+    {
+      "claim": "C2: The moving-endpoint derivative of c and the facts c(h)=0, |c|<=hM^2, |c'|<=M^2+hMD hold, with c in C1 on the closed interval.",
+      "verdict": "PASS",
+      "reason": "Leibniz gives the boundary term -A(s+h)conj(A(s+h-v)) plus the stated integral. The bounds follow from interval length h-v<=h. A' is uniformly continuous on compact I, so c' is continuous."
+    },
+    {
+      "claim": "C2: Absolute-kernel Fubini, the conjugate triangles and (3) hold.",
+      "verdict": "PASS",
+      "reason": "The kernel is absolutely integrable against bounded functions and the diagonal is null. On t>u, the substitution t=u+v gives int_0^h v^-a exp(i omega v)c(v)dv. Relabeling shows the t<u triangle is its complex conjugate, so the squared norm equals (3)."
+    },
+    {
+      "claim": "C2: The scaling to (4) and the bounds on f hold.",
+      "verdict": "PASS",
+      "reason": "v=hy gives the factor h^(-a)*h*h=h^(2-a). f'(y)=c'(hy), so |f'|<=M(M+hD)<=K^2, |f|<=M^2<=K^2, and f(1)=0."
+    },
+    {
+      "claim": "C3: The low-kappa case, the zero-amplitude case and the exponent direction hold.",
+      "verdict": "PASS",
+      "reason": "For |kappa|<=1, |integral|<=K^2/(1-a). Since a-1<0 and <kappa><=sqrt2, <kappa>^(a-1)>=2^((a-1)/2). Hence C0>=2*2^((1-a)/2)/(1-a) suffices, which is implied by 2sqrt2/(1-a). K=0 forces A=0."
+    },
+    {
+      "claim": "C3: The high-kappa split, delta endpoint, negative omega and constant 16/(1-a) hold.",
+      "verdict": "PASS",
+      "reason": "With k=|kappa|>1 and delta=1/k: the small interval gives K^2 k^(a-1)/(1-a), and the endpoint term is delta^-a K^2/k=K^2 k^(a-1). The derivative term uses a int_delta^1 y^(-a-1)dy=delta^-a-1<=k^a and int y^-a<=1/(1-a). The total is K^2 k^(a-1)[2+2/(1-a)]<=4K^2 k^(a-1)/(1-a). Also <kappa><=sqrt2 k gives k^(a-1)<=sqrt2<kappa>^(a-1). The factor 2 then gives 8sqrt2/(1-a)<=16/(1-a). Only |kappa| enters the bounds, so the sign of omega is immaterial. Proposition 1 is correct."
+    },
+    {
+      "claim": "C4: The four signed modes, coefficient sum, weighted Hilbert Cauchy-Schwarz and factor one half hold, with no independence assumed.",
+      "verdict": "PASS",
+      "reason": "Each product of two sine or cosine factors has four modes sigma r+tau rho with coefficients of modulus 1/4, whose sum is 1. The inequality is valid in any Hilbert space and uses no orthogonality. The bracket is even, so two modes give |r-rho| and two give r+rho, yielding 1/2 of the right side of (5). r=0, rho=0 and r=rho are all covered. C0 depends only on a."
+    },
+    {
+      "claim": "C5: The factorization of b_r, the b_0=t case and the coefficient bound 2 hold.",
+      "verdict": "PASS",
+      "reason": "Identity (7) was checked for r>0 including t=0, and for r=0. For r>=1, <r>/r<=sqrt2. For r<=1, <r><=sqrt2. No division by small r occurs. Every product has a coefficient of modulus at most 2, a normalized integral over 0, 1 or 2 copies of [0,1], and j in {0,1,2}."
+    },
+    {
+      "claim": "C5: The amplitude bounds for t^j hold in every case.",
+      "verdict": "PASS",
+      "reason": "Using I subset [0,T] and h<=1: j=0 gives M+hD=1; j=1 gives M+hD<=T+1; j=2 gives M+hD<=T^2+2T<=(1+T)^2. Therefore (M+hD)^2<=(1+T)^4 in all cases."
+    },
+    {
+      "claim": "C5: The Hilbert-valued Bochner integrals and Jensen step hold.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Dominated convergence gives continuity into L2, and (1) gives continuity into H_a. A continuous map on compact [0,1]^k is Bochner integrable, and Jensen for a probability measure is valid. Note: identification of the L2-valued integral with the pointwise-in-t average is routine but unstated. It follows because the integrand is jointly continuous, so Riemann sums converge uniformly."
+    },
+    {
+      "claim": "C5: The frequency shift bound, the negative-power bracket comparison and the constant C1=4*3^(1-a)*C0 hold, uniformly in r, rho, T.",
+      "verdict": "PASS",
+      "reason": "|r'-r|<=1 and |rho'-rho|<=1 with h<=1 give a shift of at most 2. <x+d><=(1+|d|)<x> holds in both directions, so <h(r'+-rho')>^(a-1)<=3^(1-a)<h(r+-rho)>^(a-1). Multiplying by the squared coefficient 4 gives C1 exactly. The right side is free of the averaging parameters. C1>=C0 depends only on a, and T enters only through (1+T)^4."
+    },
+    {
+      "claim": "C6: The script performs what the note describes for the 120 rows, including exact autocorrelations, lag desingularization and the constant zero-frequency identity.",
+      "verdict": "PASS",
+      "reason": "The grid 3x2x4x5 is 120, and the JSON has 120 ten-line rows. Linear and quadratic autocorrelations were expanded by hand and match. For v=h z^b with b=1/(1-a), the Jacobian cancels v^-a and gives the prefactor 2h^(1-a)b. The value 2h^(2-a)/((1-a)(2-a)) is correct. Hand spot-checks agree with stored values: a=.5,h=1,omega=1, constant is approximately 2.55569 by series, and a=.9,h=1,omega=0, linear S=0 is approximately 5.865 by Beta functions."
+    },
+    {
+      "claim": "C6: The note separates working precision from certified accuracy and claims no false numerical coverage.",
+      "verdict": "PASS",
+      "reason": "The note, script and JSON all disclaim certification. Only real amplitudes and omega>=0 are computed, with no complex, negative-omega, product, sinc or operator computation, and the note says so. The proof does not rely on the diagnostics. All stored ratios lie below C0(a): at most about 1.77 for a=.1, 3.38 for a=.5 and 19.1 for a=.9. This is consistency only."
+    },
+    {
+      "claim": "C7: The excerpt boundary and citation match the binding, and custody is kept distinct from reviewer hand verification.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The excerpt begins at the binding's 'Fix T>0.' and stops before 'Let D consist'. Its content is what the note imports. The mathematics was independently re-derived here, so correctness does not depend on custody. The source file, excerpt SHA and earlier acceptance were not verified by this reviewer; see limitations."
+    },
+    {
+      "claim": "C7: Actual kernel, times, signs, Fourier constants and both variances remain unmatched, and the scalar theorem is not an input.",
+      "verdict": "PASS",
+      "reason": "Section 5 states this. The note retitles the target's 'actual balanced' language as a defined family. The proofs of Propositions 1-3 use no scalar frequency result."
+    },
+    {
+      "claim": "C7: No Schatten, path, Young, source-flow, moment, source-constant or new Lean claim is made, and the full original goal remains active.",
+      "verdict": "PASS",
+      "reason": "Header and Section 5 disclaim all of these and keep the original goal ACTIVE. No theorem in Sections 2-4 asserts more than temporal norms. The packet contains no Lean module."
+    },
+    {
+      "claim": "Statements (2), (5), (6) match target T1-T3, and all five adjudication clarifications are made explicit.",
+      "verdict": "PASS",
+      "reason": "The forms and exponents match the targets. The uniform constant, non-matching of the kernel, complexification and Bochner measurability, original-goal scope, and diagnostic limits are each written out in the note."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Section 1 line 26 says 'any bounded function'; bounded measurable is meant. This is harmless because all uses are continuous on I.",
+      "Section 2 line 56-57 says 'the norm in (2)'; (3) equals the squared norm.",
+      "Section 4 does not state that the Bochner average coincides with the pointwise-in-t function appearing in (7). The identification is routine by joint continuity.",
+      "Section 1 uses a=alpha_0 in (0,1), but the excerpt itself states neither alpha_0 nor the range of a. The hand check confirms the imported statements for every a in (0,1), so nothing fails.",
+      "target-v1 retains 'actual balanced' wording, but it is a superseded proposal. The note correctly does not assert kernel matching.",
+      "Recalled from memory of mpmath and not checkable in the packet: almosteq with only rel_eps also sets abs_eps to that value. The 1e-35 test would then also pass on absolute error, which is slightly weaker in relative terms for values near 0.02. The note's wording is still accurate and no theorem depends on it."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "No execution tool was available or used. The diagnostic script was not rerun; its formulas were read and hand-checked, and only selected rows were spot-checked analytically. Numerical stored values are otherwise unverified.",
+    "SHA-256 values in the binding were not recomputed. The source note spectral-mask-covariance-foundation.md at d967ea5 is not in the packet, so excerpt exactness against that file and its earlier acceptance are unverified custody claims here. The mathematics of the excerpt was instead re-derived independently.",
+    "Execution, timing, hash-binding, and no-discarded-run claims in the honesty and adjudication files were read but cannot be confirmed from the packet.",
+    "The actual two-phase kernel, spatial operator and source are not in the packet, so applicability of c_r and b_r to them was not assessed. The note makes no such claim.",
+    "This is one AI review of Sections 1-5 only. It is not human verification, a novelty audit or a whole-paper certificate, and it clears only temporal estimates."
+  ]
+}
