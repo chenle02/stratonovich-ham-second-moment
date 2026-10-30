@@ -4369,3 +4369,9 @@ not actual stochastic proof. Packet has exact generator, no C5omission.
 Todo: independent preproof object/statement audit; actual analytic proof;
 value-ranked existing Lean reuse; scientific HIGHgate; then optimizer/
 source constant map and original dimensions. Original fullgoalACTIVE.
+
+Actual shifted-event statement audit now live at frozen31783aa: actual
+first-party Opus5.5/high,12texts,unchangedHIGHthreshold; session39201/native
+stratonovich-actual-event-statement-v1. Poll samehandle/receipt; no restart
+on observation timeout. New signed-average event/raw-cost lower-rate
+statement NOT proved or accepted at this capture. Fullgoal remainsACTIVE.
