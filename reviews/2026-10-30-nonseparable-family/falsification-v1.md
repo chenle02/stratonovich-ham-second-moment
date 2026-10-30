@@ -1,8 +1,9 @@
 # Falsification first: actual positive white rank-two profile
 
-CANDIDATE short witness for independent audit, not yet adopted.
-This refutes a universal exact b(sigma)U reduction, not optimizer
-sufficiency or the original sharp moment conjecture.
+ACCEPTED as the short exact-representation obstruction on its stated
+scope: independent Opus5.5/HIGH checks in repaired statement gate02b17a6,
+with original witness body from315a8d8 unchanged. S1-S3spectral/flow
+statements remain UNPROVED. No optimizer/sharp or moment no-go claimed.
 
 Fix ANY0<a<1 and original d1 white Gamma=c_Gamma delta0,c_Gamma>0.
 Choose nonzero nonnegative smooth f1 supported in(1/8,1/4), let

@@ -4569,3 +4569,26 @@ packet/committed hashes match, same supportedlaunchlocaldoctor passed.
 Required J_phiobject repair now independentlyre-audited. OriginalFAIL
 receipt/report preserved; no longS1-S3proof before revisedgate.
 Original fullgoalACTIVE.
+
+Revised nonseparable statementv2 terminal17PASS/HIGH,237.815seconds,
+18texts+8images complete, no mandatory repairs. All26current/frozen/
+committed bindings/native archive verified;7optional findings adjudicated.
+Required J_phi definition repair CLOSED; V1FAIL retainedunaccepted.
+This is PREPROOFstatement acceptance only, no S1-S3proof. Actualwhite
+two-bump exact-representation obstruction independentlychecked in both
+reports and adopted on its narrow scope; not optimizer/moment no-go.
+Longactualfamilyproof nowauthorized by the completed revised gate, with
+common trial/maxmin/weighted/physicalF transfer obligations all explicit.
+Full originalgoalACTIVE.
+
+
+Actual nonseparable family candidate notes/nonseparable-profile-family.md
+now supplies NEWcommon trial/maxmin gap, uniform weighted p/derivative
+tails, exact F duality/continuity/constant and J_phi positivity, physical
+commutation and real fractional-wave complement with growingprojection
+tail retained. Uniformityledger tracks every common constant; no per-q
+uniformity assumed. SourceTeschl conditionalexistence roles and common
+H2/formdomain explicit. No new Lean/kernel theorem: core analytic
+source/family obligations outside existing finite seams. Not independently
+accepted; full scientific analytic/application/source gate next.
+Original fullgoalACTIVE; no general-profile event/sourceconstant claim.
