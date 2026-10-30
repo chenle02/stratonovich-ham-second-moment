@@ -6,7 +6,6 @@
 
 ## Current state
 
-- **Live occupation-class preproof:** proposed positive X=L2(time;L1 intersect L2 space) approximation/rate/cost/occupation-density consumer at8f60730; actual Opus5.5/high,13texts,session50500/native stratonovich-occupation-statement-v1. No density proof/adoption yet. Poll same handle/receipt.
 - **Latest general-positive consumer:** actual d1 general-positive compact psi cone/noisy event/SAME-Z raw half-cost original-point lower and enlarged V_c^pos accepted24groups/HIGH at12c9879 (462.611seconds,34texts). All nine unchanged finite-kernel NEWapplications checked. Q2>=V2pos>=V2sep with exact auxiliary homogeneity; no source/firstmean/Jensen-improvement claim. NEXT: positive occupation-profile approximation and source correspondence, retaining sharp upper/higher dimensions/intended normalization.
 - **Latest general-profile bridge:** actual d1 general-positive-psi covariance family S1-S3 (uniform ground/gap, weighted actual F projection and physical complement) accepted27PASS/HIGH atc0a0093. Original undefined-J_phi preproof FAIL is preserved and repaired. General-test stochastic event/raw lower/variational consumer now scoped accepted at12c9879; source constants and original higher dimensions remain open.
 - **Latest raw variational consumer:** positive-separable d1 raw V_c finite/positive, exact auxiliary-label homogeneity and Q2>=V2 accepted20groups/HIGH at0fd2a05. Four finite Lean applications checked. V1 is not actual first mean/source L; this is not a Jensen improvement or sharp source constant. Next: nonseparable optimizer class and source correspondence, with original dimensions/sharp upper open.
@@ -4763,3 +4762,21 @@ runs were terminal/clean and unchanged. Corrected ONLYthe root parser to
 normalize standardaxiom universe annotations, verified all exacttypes and
 both native archives, now retained actualreceipts/types/archive hashes.
 This fixes missing evidence, not a Lean theorem/guard or confidence level.
+
+### Occupation preproof and complete candidate — 2026-10-30
+
+ActualOpus5.5/high7PASS/HIGH,266.316seconds,13texts complete,no
+requiredrepairs. OriginalinvalidJSON retained; supportedunique onebrace
+insertion byte11450, reversible/zero providercalls/ordinarygatesrerun.
+All13live/frozen/git8f60730 hashes,31original/recoveredarchive members
+and executedfiniteJSON verified. Eightoptional findings adjudicated;
+statementapproval only, not proofacceptance. No confidence/modelretry.
+
+New notes/occupation-control-approximation.md completecandidate proves
+actualX covariancecontinuity, wholeH1closedform/core/positivefiniterate,
+positivecost/rateapproximation, originalpoint consumer and sameREALV_c
+supremum; actualfiniteenergyoccupationg² inclusion. Realroughlocalmass,
+unitL2sphere countablecore, classes/nullsets and diagonalFatou explicit.
+Two newfinite formbudget types/application boundaries included in25text
+FULLscientificpacket; mathematicaldensity proof not yet adopted. Fullgoal
+ACTIVE, intendedsource normalization/optimizer/sharp/dimensions unchanged.

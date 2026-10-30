@@ -1,0 +1,81 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "reviews/2026-10-30-occupation-approximation/target-v1.md lines 1-120 (complete)",
+    "reviews/2026-10-30-occupation-approximation/worker-honesty-v1.md lines 1-41 (complete)",
+    "reviews/2026-10-30-occupation-approximation/check-diagnostics.py lines 1-28 (complete)",
+    "reviews/2026-10-30-occupation-approximation/diagnostics-v1.json lines 1-91 (complete)",
+    "reviews/2026-10-30-occupation-approximation/falsification-v1.md lines 1-32 (complete)",
+    "reviews/2026-10-30-occupation-approximation/local-recon-v1.md lines 1-30 (complete)",
+    "notes/general-positive-consumer.md lines 1-478 (complete)",
+    "notes/nonseparable-profile-family.md lines 1-386 (complete)",
+    "reviews/2026-10-30-general-positive-consumer/scientific-adjudication-v1.md lines 1-74 (complete)",
+    "reviews/2026-10-30-nonseparable-family/scientific-adjudication-v1.md lines 1-73 (complete)",
+    "reviews/2026-10-30-general-positive-consumer/canonical-model-upper-context.txt lines 1-87 (complete)",
+    "reviews/2026-10-30-general-positive-consumer/canonical-source-custody.json lines 1-35 (complete)",
+    "reviews/2026-10-28-source-normalization/adjudication-v2.md lines 1-67 (complete)",
+    "Read plan .review/required-sources.json lines 1-41 (complete; earns no read credit)"
+  ],
+  "checks": [
+    {
+      "claim": "C1: The original d1 model, X, C_pos inclusion and D1 raw variance are correct, including the white endpoint and near/far and temporal Schur mechanisms, with no covariance change.",
+      "verdict": "PASS",
+      "reason": "Own hand reasoning. Canonical H:homog with d=1 gives Gamma=c|x|^-alpha dx for 0<alpha<1, and at alpha=1 the only locally finite even homogeneous measure is c delta_0. B is separable, so Bochner measurability is unproblematic. C_pos is continuous into B, so C_pos is in X_pos. The row maximum sup_s int_0^1|s-t|^-a dt is 2^a/(1-a), attained at s=1/2, so symmetric Schur gives ||q||_X<=K||psi||_X. Spatially, |<f,Gamma*g>|<=||Gamma_near||_1||f||_2||g||_2+||Gamma_far||_inf||f||_1||g||_1, with ||Gamma_near||_1=2c/(1-alpha) and ||Gamma_far||_inf=c; white uses c||f||_2||g||_2. Hence v is a bounded bilinear form on X, with absolute convergence. The form is applied to signed differences only as an estimate, so no signed control is introduced. For nonnegative nonzero psi, |s-t|^-a>=1 on (0,1)^2 and a positive kernel or c int q_avg^2 give v>0. On C_pos, D1 equals accepted (25) by Tonelli, with the same amplitude and normalization. All objects depend only on the class up to null sigma. Pointwise noise values are never used."
+    },
+    {
+      "claim": "C2: The whole-H1 form D2 and variational rate D3 are feasible under exact X hypotheses, with the correct exponent, closedness, countable core equality, measurability and 0<I<infinity, and they match accepted lambda on C_pos.",
+      "verdict": "PASS",
+      "reason": "Own hand reasoning. ||f||_4^4<=||f||_inf^2||f||_2^2<=2||f'||_2||f||_2^3 gives the honesty bound with exact constant sqrt(2) and exponents 1/2 and 3/2. Scalar Young with exponents 4 and 4/3 gives infinitesimal relative kinetic bound, lower boundedness and shifted H1-norm equivalence, hence closedness on whole H1. No H2 operator or eigenfunction is needed. The rate bound is lambda<=C(||h_near||_2^(2/3)+||h_far||_inf^(1/2)). Since ||h_near||_2<=C||q_sigma||_2 and ||h_far||_inf<=C||q_sigma||_1 lie in L2(sigma), lambda is integrable and I<infinity. The Rayleigh functional is H1-continuous, and normalizing a countable H1-dense subset of real C_c^infinity gives a set dense in the L2-unit sphere of H1, fixed independently of psi and sigma. It computes the supremum exactly, so lambda is measurable as a countable supremum of measurable pairings. Positivity: q_sigma>=q_avg gives h_sigma>=Gamma*q_avg, which is nonzero with finite local mass m on [-D,D]. Trial chi(x/R) with R>=max(1,D,2A/m) gives a uniform a.e.-sigma lower bound, so I>0 without continuity of the rough potential. On C_pos, accepted E1<=-eps<0 from nonseparable (3)-(4) and T4.12 at n=1 give sup=-E1. The real positive p_sigma lies in H1 and attains the complex infimum, so the real D3 supremum equals lambda_sigma^2 and max(0,.) is inactive."
+    },
+    {
+      "claim": "C3: A1 is valid for each fixed psi in X_pos through positive cutoffs and mollification, with X convergence, v continuity, core pairings, and diagonal/Fatou giving liminf I_n>=I, under the stated quantifiers.",
+      "verdict": "PASS",
+      "reason": "Own hand reasoning. Truncating min(psi,N)1_{|x|<=N}1_{1/N<t<1-1/N} converges in X by dominated convergence, first for a.e. t in B, then with the L2(t) majorant ||psi_t||_B. Nonnegative space-time mollification with radius below 1/(2N) stays in C_pos for large N. On common compact support, spacetime L2 convergence controls both the L2L1 and L2L2 parts, so both X components converge without renormalization. The pairing int h_sigma f^2=int|sigma-t|^-a int psi_t(Gamma*f^2)dxdt is linear and bounded from L2L1 to L2(sigma) with constant K||Gamma*f^2||_inf, including white. A diagonal a.e. subsequence over the countable core gives liminf lambda_n^2>=each core term, hence >=lambda^2 at a.e. sigma, and Fatou gives the integrated lower bound with no uncountable sup-integral interchange. Passing first to a subsequence realizing the liminf yields the claim for the original sequence too, so the target's allowed chosen subsequence is also sufficient. Growing support is harmless because each psi_n is fixed before its own time limit in accepted (24). No uniform stochastic constants or n(delta) are used."
+    },
+    {
+      "claim": "C4: The A2 inequality and sup equality (A3) follow for the same canonical Q2 and existing real V_c^pos from accepted (24),(31),(32), by fixed smooth scores only.",
+      "verdict": "PASS",
+      "reason": "Own hand reasoning against the accepted consumer. Q2 and kappa in the target are exactly those of (24). Applying (24) to each fixed psi_n and taking the liminf, using v_n->v and A1, gives Q2>=2I-v/2 with no rough stochastic observable. For c>0, cI_psi-v_psi/2<=liminf(cI_n-v_n/2)<=V_c^pos, which gives bounded-above real score sets and one inequality before any supremum over X_pos is taken. V_c^pos is real by (31). Inclusion C_pos in X_pos plus C2 score equality gives the reverse inequality, and nonemptiness is immediate. No optimizer attainment, sup/time interchange or first-mean/Jensen identity enters. Label homogeneity transfers only through equality of already defined values."
+    },
+    {
+      "claim": "C5: O is explicitly defined, rho=g^2 lies in X_pos, the square map H1->B is continuous, and bounded nonnegative w with nonzero product is legal, without proxy or source-identification claims.",
+      "verdict": "PASS",
+      "reason": "Own hand reasoning. ||f^2-g^2||_1<=||f-g||_2||f+g||_2 and ||f^2-g^2||_2<=||f-g||_inf||f+g||_2, with the Sobolev bound, give continuity, so strong measurability transfers by composition. For normalized g, ||rho_s||_1=1 and ||rho_s||_2^2=int g^4<=2||g'||_2, which is correct with the stated nonsharp constant. Then ||rho||_X^2<=2+4 int||g'||_2 ds<=2+4 sqrt(T_g), the time Cauchy-Schwarz step. rho is nonnegative and nonzero since ||rho_s||_1=1 a.e. For w, the product stays strongly measurable and bounded in X, and it is nonzero exactly when w is nonzero on a positive-measure set. Times with w=0 cause no issue because D1/D3 are evaluated for the actual product with no renormalization. Noncompact spatial support is allowed. O contains all constant-time unit-H1 profiles and is the measurable finite-energy class, matching source-normalization adjudication item 5. The target expressly disclaims all-printed-Ad identification, source gradient penalty, kernel choice and optimizer constant maps."
+    },
+    {
+      "claim": "C6: The falsification controls are arithmetically exact, the Riesz control refutes only L2-topology continuity, the code is fully specified and the JSON matches.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Hand reasoning only; I did not execute the script. Riesz: a=alpha=1/2 is legal. int int|s-t|^-1/2=8/3 and the interval self-energy is (8/3)R^(3/2) at R=n^8, so v=(8/3)^2 n^-10 n^12=(64/9)n^2. L2 squared is n^-2 and mass is n^3. The growing X norm means the sequence does not contradict X continuity, and v<=C||psi||_X^2 is consistent, so it refutes only L2-topology continuity, not X density or any SPDE claim. White: time self-energy is (8/3)ell^(3/2), giving raw (8/3)(n/(n+1))^3, and dividing the test by ell gives cost/ell^2=(8/3)(n+1)/n. I hand-recomputed all 5 Riesz rows and all 6 white rows, the key names and the scope string, and they agree with the deterministic script and JSON. Whether the JSON is the output of a run is not established by this review. The controls draw no physical ground-rate or optimizer conclusion."
+    },
+    {
+      "claim": "C7: Source, model and authorization boundaries are respected, accepted inputs are used at exact scope, and no real missing object or quantifier blocks the proof stage.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The target is labelled PROPOSED and unproved, and it keeps the original goal active. It keeps the intended source normalization as UNKNOWN and repairs no source E penalties. It claims no source L/E/E_star, actual p1, Jensen improvement, signed control, sharp upper, higher dimension or whole-paper result. It authorizes no Skorohod work, companion, HPC, contact or source/wiki edit, and it makes no novelty or publication claim. The accepted consumer and profile-family adjudications support the imported statements at the fixed-test scope used. All remaining obligations are elementary analysis listed in the target. The only notes are the wording and pointer items recorded in findings.minor."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Label collision: the sup-equality display carries label (A3) inside the section titled A2, while the occupation inclusion section is also titled A3. The phrase 'A1-A3 apply to rho_g' is therefore ambiguous. Renaming would improve clarity; the mathematics is unaffected.",
+      "Literal wording 'COUNTABLE H1-dense normalized' core: a normalized set cannot be dense in whole H1. The correct object is the normalization of a countable H1-dense real C_c^infinity subset, dense in the L2-unit sphere of H1.",
+      "The target's 0<alpha<=1 should be read as Riesz only for 0<alpha<1 and white at alpha=1, as in canonical H:homog. The near-L1 statement is false for |x|^-1, but that kernel is not in the model.",
+      "Bochner classes need a stated jointly measurable representative when forming D1 and pointwise nonnegativity. This is standard, but the proof should say it once and show class independence.",
+      "The target and honesty note give no mechanism for I_psi>0. The accepted smooth argument at nonseparable (3) cites bounded continuous U_avg, while rough white U_avg=c q_avg need not be continuous. The same trial works using only nonzero finite local mass of Gamma*q_avg, and the proof should use that form rather than cite (3) directly.",
+      "Real D3 versus the complexified accepted spectral statement: the proof should note that real p_sigma attains the bottom and that E1<0 makes max(0,.) inactive.",
+      "The target's 'Use ONLY accepted notes/general-positive-consumer.md(24),(31)-(32)' governs the stochastic input, but smooth score matching also needs nonseparable-profile-family.md (3)-(4) and its T4.12 citation at lines 96 and 114. An explicit pointer would remove the apparent tension.",
+      "The tail decay of far convolution in the target is not used by the variational route. It is harmless and implies no spectral claim for rough potentials."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "Statement, object, class, source and feasibility audit only. It does not accept any density proof, because no long proof exists in the packet. Feasibility sketches here are reviewer reasoning, not a replacement proof, and the proof remains to be written and reviewed.",
+    "Read-only tools were used. check-diagnostics.py was not executed, and hashes, custody SHAs and source revision 8f60730f00cbe92ca43206efd82cd9f4fe5cf6ca were not recomputed or verified. Excerpt line counts were checked against custody ranges by inspection only.",
+    "Accepted general-positive consumer and profile-family internals, Teschl images, canonical theorem proofs and source PDF content outside the packet were not re-proved or read. They were treated as scoped inputs per the contract.",
+    "Claims in local-recon and honesty notes about repository parity, wiki searches and Lean declaration counts cannot be verified from the packet and contribute no scientific evidence here.",
+    "The ambient hook announced a queued amsg message. It was not read, contributed no evidence, and no message was sent.",
+    "This AI review is not human verification, novelty audit, whole-paper certification or circulation clearance."
+  ]
+}
