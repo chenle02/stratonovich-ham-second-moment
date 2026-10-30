@@ -4545,3 +4545,19 @@ All24live/packet/committed hashes matched; launch-local2.1.304doctor and
 healthyselectedaccount1short61weekly. S1-S3are NOTproved or adopted;
 shortactualwhitewitness also independentlycheckedinthisaudit. Poll same
 handle/receipt, no timeoutrestart. Original fullgoalACTIVE.
+
+Nonseparable preproofv1 terminal FAIL/HIGH,232.77seconds,16texts+8images
+complete, serviceexit2. Required defect: J_phi undefined, so actual
+linear/squared/phase-entry consumer not frozen. All24input/native bindings
+verified, originalfailure retained. Shortwhitewitness C5PASS independently
+on its ownscope, not overallS1-S3acceptance. V2now fixes UNSQUAREDreal
+LINEARfirst-entry distributional J_phi(v,w)=<v,phi>; boundedness/positive
+inf remain obligations. Also explicit commonCeta, rate-labels, auxiliary
+f_aux and signed-profile exclusion. Revised independent statementaudit
+REQUIRED before longproof; no S1-S3proof started. FullgoalACTIVE.
+
+Repaired nonseparable statementv2 frozen with FULLactual J_phi definition
+and18texts/8sameprimaryimages. Newpacket includes originalFAILreport and
+adjudication; failedv1 not overwritten. V2reaudit must independently
+confirmactualobject and alluniformity/source hypotheses before longproof.
+No S1-S3proof/adoption or oldconfidenceupgrade. FullgoalACTIVE.

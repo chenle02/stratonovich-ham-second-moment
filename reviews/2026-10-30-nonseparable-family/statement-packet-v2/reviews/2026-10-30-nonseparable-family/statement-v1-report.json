@@ -1,0 +1,132 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "high",
+  "source_coverage": [
+    "reviews/2026-10-30-nonseparable-family/target-v1.md lines 1-100 (complete)",
+    "reviews/2026-10-30-nonseparable-family/falsification-v1.md lines 1-43 (complete)",
+    "reviews/2026-10-30-nonseparable-family/check-diagnostics.py lines 1-12 (complete; read, not executed)",
+    "reviews/2026-10-30-nonseparable-family/diagnostics-v1.json lines 1-27 (complete)",
+    "reviews/2026-10-30-nonseparable-family/worker-honesty-v1.md lines 1-25 (complete)",
+    "reviews/2026-10-30-nonseparable-family/accepted-input-map.md lines 1-48 (complete)",
+    "reviews/2026-10-30-nonseparable-family/local-recon.md lines 1-27 (complete)",
+    "notes/joint-gaussian-tilt.md lines 1-318 (complete)",
+    "notes/spectral-ground-family.md lines 1-138 (complete)",
+    "notes/spectral-weighted-projection.md lines 1-203 (complete)",
+    "notes/spectral-complement-transfer.md lines 1-208 (complete)",
+    "notes/local-causal-young-flow.md lines 1-503 (complete)",
+    "reviews/2026-10-30-spectral-phase/teschl-second-edition-custody.json lines 1-24 (complete)",
+    "reviews/2026-10-30-spectral-phase/ground-adjudication-v1.md lines 1-57 (complete)",
+    "reviews/2026-10-30-weighted-projection/adjudication.md lines 1-43 (complete)",
+    "reviews/2026-10-30-complement-transfer/adjudication.md lines 1-56 (complete)",
+    "reviews/2026-10-30-spectral-phase/source-images/teschl2014-title.png (full image viewed)",
+    "reviews/2026-10-30-spectral-phase/source-images/teschl2014-copyright.png (full image viewed)",
+    "reviews/2026-10-30-spectral-phase/source-images/teschl2014-p140.png (full image viewed)",
+    "reviews/2026-10-30-spectral-phase/source-images/teschl2014-p141.png (full image viewed)",
+    "reviews/2026-10-30-spectral-phase/source-images/teschl2014-p200.png (full image viewed)",
+    "reviews/2026-10-30-spectral-phase/source-images/teschl2014-p201.png (full image viewed)",
+    "reviews/2026-10-30-spectral-phase/source-images/teschl2014-p258.png (full image viewed)",
+    "reviews/2026-10-30-spectral-phase/source-images/teschl2014-p273.png (full image viewed)"
+  ],
+  "checks": [
+    {
+      "claim": "C1: The family uses the same general nonnegative smooth compact psi, the original d1 fractional-time Riesz/white covariance with its amplitude, and the actual F with both entries and constants.",
+      "verdict": "PASS",
+      "reason": "Target lines 9-34 match tilt Section 1 and local-flow Section 4. With extension by zero and Fubini, h_sigma=Gamma*q_sigma equals tilt (5) at t=sigma. Tilt Section 3 assumes only real psi, not separability. The covariance notation is explicitly distributional shorthand. The equation (w,v_xx+h v) has the attractive sign of u_tt=u_xx+h u, and the coefficient-1 retained potential agrees with tilt Section 5."
+    },
+    {
+      "claim": "C1: q_sigma is smooth, compact, commonly supported and >=q_avg>=0 nonzero, and h_sigma>=Gamma*q_avg, with C1, time, tail and derivative regularity available.",
+      "verdict": "PASS",
+      "reason": "For sigma,u in [0,1], |sigma-u|<=1 and a>0 give kernel >=1, so q_sigma>=q_avg. The positivity sets {q_sigma>0} and {q_avg>0} coincide, so the supports are literally identical. Differentiation under the integrable kernel gives smoothness. A positive Radon convolution preserves the order. Tilt (6) gives Lipschitz dependence into C_b^1 and a uniform W1,infinity tail. The all-derivative boundedness prose in tilt Section 3 covers the higher spatial derivatives used for fixed-member classical solutions."
+    },
+    {
+      "claim": "C1: sigma is an index and not an amplitude, sigma=0 is allowed with a nonzero potential, and no b0>0 assumption is made on sigma.",
+      "verdict": "PASS",
+      "reason": "Target lines 20-23 and 96 say this explicitly. At sigma=0, q_0>=q_avg is nonzero."
+    },
+    {
+      "claim": "C2: Old fixed-q results can be legally instantiated at each q_sigma with coupling 1, and they confer only pointwise facts.",
+      "verdict": "PASS",
+      "reason": "Each q_sigma is a legal nonzero nonnegative smooth compact q, and K containing 1 is a legal interval in the ground, weighted and complement notes. Target lines 36-42 and input-map lines 10-18 and 30-37 disclaim common constants over varying q. The accepted notes' constants depend on the fixed U, so they do not restate S1-S3. The optional temporal-range convention is not needed by S1-S3 and could not be checked against target-v2, which is outside the packet (see minors)."
+    },
+    {
+      "claim": "C2: S1 is well posed and feasible as a new deduction, with no global L1 Riesz assumption and no simplicity-before-existence circularity.",
+      "verdict": "PASS",
+      "reason": "A fixed trial w_L with h_sigma>=U_avg gives E1(sigma)<=-epsilon using only a local mass of U_avg. Boundedness gives a uniform lower bound. The T10.2 and p140 essential-spectrum definition then give an isolated eigenvalue before the conditional T10.13 is used. Lipschitz potential dependence and common max-min classes make E1 and E2 Lipschitz through threshold 0. Compactness of [0,1] gives Delta>0 and rate separation. Infinitely many Riesz bound states are allowed. This is a feasibility assessment, not proof acceptance."
+    },
+    {
+      "claim": "C2: The exact Teschl second-edition statements match their claimed use.",
+      "verdict": "PASS",
+      "reason": "Title and copyright pages show Second Edition, GSM 157, ISBN 978-1-4704-1704-8, copyright 2009, 2014. Lemma 7.21 on pp200-201 defines bounded Borel functions vanishing at infinity. T10.2 on p258 gives self-adjointness on H2, lower boundedness, essential spectrum [0,infinity) and a C_c^infinity core. T10.13 on p273 is conditional on the bottom being an eigenvalue. p140 gives the essential-spectrum definition, (4.37) and the threshold convention. T4.12 on p141 gives max-min, followed by the form-domain sentence. Page headers agree with the custody JSON's 12-page offset."
+    },
+    {
+      "claim": "C3: The weighted p, p', p'' bounds, duality norms, projection algebra, continuity, entrance and commutation in S2 are correct and feasible for the real family.",
+      "verdict": "PASS",
+      "reason": "Uniform lambda bounds, a uniform h bound and a uniform tail allow one exterior comparison radius and rate. e=(p,lambda p) and ell=(<p,v>+<p,w>/lambda)/2 give ell(e)=1 and ell(p,-lambda p)=0. ell(e0)=(1/2)integral p is uniformly positive. Positive overlap plus the gap gives Lipschitz H2 dependence, and the local-tail split gives operator-norm continuity. Time-constant h_sigma satisfies local-flow (5.6) with zero constant part. Commutation extends from compact-plus-constant phases by the defining density, with no compact-only density, point evaluation or E-density shortcut."
+    },
+    {
+      "claim": "C3: The positive smooth averaged-observable clause in S2 is a fully specified statement.",
+      "verdict": "FAIL",
+      "reason": "Target line 72 requires J_phi bounded on F and inf_sigma J_phi(e_sigma)>0, but J_phi is defined nowhere in the target or the packet. An exact search finds only target line 72. Tilt has a different squared flow functional J_delta (line 254) and a displacement functional ell_phi (line 256). The clause therefore leaves open a linear first-entry pairing, a squared functional (not a bounded linear functional in the same sense), or a velocity-inclusive functional. Under the first-entry reading the claim looks feasible because p_sigma>0 is continuous in H2 over compact [0,1], but the review may not supply that definition and PASS the original."
+    },
+    {
+      "claim": "C4: S3 is a true-looking, feasible obligation stating a uniform F complement for all sigma in [0,1], tau>=0 from derived data, with no assumed uniformity or hidden conclusion.",
+      "verdict": "PASS",
+      "reason": "With M=sup||h_sigma||, c=1+M and A_sigma=H_sigma+c, one has B<=A_sigma<=cB, so the fractional identification is uniform. The Q-phase entries, threshold-zero case and decaying branch carry over. Finite propagation and identity (9) apply to frozen h_sigma, and the tail product gives C exp(-beta tau) using the uniform weighted constants from S2. Target lines 80-84 require fractional calculus and localized tails with nonlocal growth, and forbid inference from per-member estimates. Local-flow and complement-note obligations are mapped in input-map lines 30-37. This is feasibility only, not a proof."
+    },
+    {
+      "claim": "C4: The positive-profile order is not used as arbitrary-phase covariance monotonicity, and no desired product or event estimate is a premise.",
+      "verdict": "PASS",
+      "reason": "Target lines 84 and 91-96 keep the deterministic scalar profile order separate and defer the moving-cone/event extension until after S1-S3, with hypotheses to be rechecked."
+    },
+    {
+      "claim": "C5: The analytic white two-bump witness refutes a universal exact h_sigma=b(sigma)U representation.",
+      "verdict": "PASS",
+      "reason": "Independently verified. f1 supported in (1/8,1/4) and f2(u)=f1(1-u) supported in (3/4,7/8) give a legal nonnegative test in C_c^infinity((0,1)xR). The substitution gives int u^-a f2=B and int (1-u)^-a f2=A, so h_0=c(Aq1+Bq2) and h_1=c(Bq1+Aq2). A>B>0 follows from u<1-u on supp f1, a>0, and f1 positive on an open interval. Disjoint bumps give determinant c^2(A^2-B^2)q1(x1)q2(x2)>0, while any b(sigma)U has determinant 0, including the case where a value of b vanishes. Disjoint time supports and spatial bumps also rule out a single product form of psi. White with a<1 is inside the original model."
+    },
+    {
+      "claim": "C5: The witness scope is honest, including the a=0 case and the non-claims about optimizer sufficiency and sharp moments.",
+      "verdict": "PASS",
+      "reason": "Falsification lines 3-5 and target lines 88-90 limit the witness to refuting the exact universal representation. Line 42 acknowledges A=B at a=0 and restricts to positive a. The separate lines 34-40 profile screen is correct and disclaims a wave complement."
+    },
+    {
+      "claim": "C5: The diagnostics are three fully specified rational determinant cases plus one non-detecting control, and are scoped as finite rather than an integral evaluator.",
+      "verdict": "PASS",
+      "reason": "Hand recomputation of amp^2(A^2-B^2) gives 3, (49/4)(391/144)=19159/576 and (1/9)(3/5)=1/15, matching the JSON and script. The script's docstring, JSON scope and worker-honesty lines 16-17 all deny integral or spectral evaluation. The non-detecting control is the literal assertion 1*1-1*1==0 and is mentioned only in the scope string."
+    },
+    {
+      "claim": "C6: Completeness, goal and source boundaries are preserved, with no restated conclusion and no upgrade of old verdicts.",
+      "verdict": "PASS",
+      "reason": "Target lines 3-5 and 94-100 plus input-map lines 39-48 keep sharp, source-normalization, optimizer, upper-constant and higher-dimensional goals open and exclude novelty, Skorohod, whole-paper/circulation, companion, HPC and correspondence claims. Lean, package and spectral-foundation exclusions appear in the input map and worker note. Local-recon treats wiki absence as a lookup result only, and custody records the queue status without claiming authentication. No named input states uniformity over varying q or an F complement for this family."
+    },
+    {
+      "claim": "C6: Every worker concern has been evaluated.",
+      "verdict": "PASS",
+      "reason": "Profile, support, time and tail regularity, the nonzero attractive profile, H2 and max-min domains, threshold 0 and compactness are each matched above. The feared per-member-to-uniform inference is explicitly barred. The white witness and profile-order scopes are honest. The statement that existing scalar Lean checks cannot certify the core analytic content is consistent with the accepted notes."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [
+      "Target S2 line 72 uses an undefined functional J_phi, so its 'bounded on F' and 'inf_sigma J_phi(e_sigma)>0' obligations are not frozen. The packet's closest objects are the squared J_delta and the displacement pairing ell_phi. The actual functional must be fixed before long proof, because linear versus squared and displacement versus velocity-inclusive readings have different meanings and consumers."
+    ],
+    "minor": [
+      "S3 does not spell out the quantifiers. A clearer wording is: there exist C finite and eta in (0,inf_sigma lambda_sigma), independent of sigma and tau. The heading's 'uniform' and the S2 analogue make the intended reading clear.",
+      "S1 uses L for the upper spectral rate, while tilt uses L=1/delta for the fast horizon. Earlier adjudications already warned about this kind of symbol collision, and later consumers should keep the two apart.",
+      "Input-map line 14 says 'nonnegative auxiliary smooth f in (0,1)' without saying nonzero or compactly supported, although positivity and boundedness of k_f require both. k_f and the older application-range condition are not defined in the frozen packet. This clause is optional and is not load-bearing for S1-S3.",
+      "The target does not explicitly record that signed or otherwise non-positive psi remain outside this family. It makes no contrary claim, and 'general class' is only implicitly deferred by line 97.",
+      "The diagnostics' determinant suppresses the q1(x1)q2(x2) factor and hard-codes not_proportional after an assertion. The non-detecting control is a literal identity and has no JSON row. This is acceptable given the stated scope, but it adds no evidence about the integrals.",
+      "Target line 88 says the witness 'rules out' the representation, while falsification-v1.md is labelled a candidate not yet adopted. This review supports the witness on its own scope, but adoption remains a separate act."
+    ]
+  },
+  "required_repairs": [
+    "Define J_phi explicitly in the S2 statement, including whether it is linear or squared and which phase entries it pairs, using the local duality on F with no point evaluation. Then re-audit the revised statement."
+  ],
+  "limitations": [
+    "Assessment of S1-S3 covers statement, fidelity and feasibility only. None of S1-S3 is proved or accepted here. Only the short witness was assessed as a proof, on its own scope.",
+    "No shell was available, so check-diagnostics.py was not executed and its arithmetic was verified by hand. Image SHA-256 values and source revision 315a8d8 were not independently recomputed or verified.",
+    "Files cited by the packet but outside it could not be checked, including spectral-phase target-v2.md, the tilt and local-flow adjudications, the interaction-driver, phase-response and direct-event notes, and the full Teschl PDF. Accepted-note status headers were treated as contract inputs.",
+    "The Teschl review covers only the eight supplied page images, not the full book.",
+    "This is an AI review, not human verification, a novelty audit or whole-paper certification."
+  ]
+}
