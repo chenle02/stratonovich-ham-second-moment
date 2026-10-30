@@ -1,89 +1,104 @@
-Last updated: 2026-10-30 23:07 UTC (Codex)
+Last updated: 2026-10-30 23:55 UTC (Codex)
 
-Original full upper/sharp goal ACTIVE. Three reviewed analytic foundations
-accepted; actual two-direction masked wave variance matching next.
+Original full upper/sharp goal ACTIVE. Actual both-direction variance and
+finite Gaussian matrix moment accepted; compact whole-space cutoff next.
 
 ## ⏭ Next session: where to stand and what to do
 
 Stand in this repository root. The immediate next action is to freeze and
-falsify the ACTUAL first-interaction matrix forms and the two finite-family
-variance inequalities in
-reviews/2026-10-30-temporal-phase-bound/next-actual-two-variance-obligations.md.
-That file is UNREVIEWED planning, outside the accepted proof packets.
-Match all four normalized phase entries, actual time/sign/Fourier constants,
-SAME-W completion and both adjoint directions before a long operator proof.
-Do not assume the masked noise is stationary or a bounded Gaussian operator
-already exists. No live reviewer/Lean job; no restart is needed.
+falsify the ACTUAL whole-space compact Sobolev cutoff singular-value target
+in reviews/2026-10-30-finite-gaussian-schatten/
+next-localized-schatten-obligations.md. That file is UNREVIEWED planning,
+outside the accepted proof packet. The target is
+Lambda^sigma chi Lambda^(-sigma-gamma), sigma=+/-1/2, singular values
+bounded by C j^(-gamma/d), Sp when p gamma>d. A torus Fourier series may
+be an auxiliary factorization only; prove its cutoff/periodization/extension
+maps and recover the original whole-space operator exactly.
 
-Three reviewed foundations now available: spectral/auxiliary mask covariance,
-weighted scalar frequency row, temporal modulation/continuous low modes.
-Original full all-dimensional lower/sharp upper/source goal remains ACTIVE;
-these tools do not constitute the higher-dimensional moment theorem.
+Actual SAME-W BOTH variance directions and real mean-square column maps
+are now accepted (9bfb907); finite Gaussian rectangular complex even-p
+Schatten moment and scalar N2 application accepted (e348748).
+These do not yet construct a random bounded operator/path. After the
+compact lemma, prove deterministic CM gain/localization and compact
+variance-tail domination before Gaussian series/path/Young/source limits.
+No reviewer or Lean job is live; no restart is needed.
+
+Original full all-dimensional lower/sharp upper/source goal remains ACTIVE.
 
 ## Pre-flight checks
 
-1. Read AGENTS.md, PROJECT-GOAL.md and Progress.md; retain full original
-   scope and decision points. No source repair/contact/HPC/Skorohod/publication.
-2. Audit local/origin/<HUB> refs and dirty ownership before editing;
-   substantive checkpoint8fb38f5e529f2d96003a91aa6acd913ee509ec56 before this
-   HANDOFF-only successor. All work pushed/synced0:0, no foreign WIP.
-3. Read the three accepted notes and full adjudications, not only headlines:
-   notes/spectral-mask-covariance-foundation.md (scientific af9b1ad,
-   adoption d967ea5;20checks/HIGH326.133s,9texts/24nativefiles);
-   notes/scalar-frequency-row-bound.md (scientific e905ad8,
-   adoption5497358;16checks/HIGH247.426s,12texts/27nativefiles);
-   notes/temporal-phase-bound.md (scientific81d9158,
-   adoption8fb38f5;19checks/HIGH203.22s,10texts/25nativefiles).
-4. Actual native Opus5.5/high, every full input live/frozen/git binding and
-   native archive member hash verified before adoption edits. Header and
-   reported explanatory/notation fixes only; no new estimate silently added.
-5. Scalar statement v1 genuinely FAIL/HIGH275.953s: missing lambda=2|xi|
-   quadrature split despite narrative. Preserved original8texts/23nativefiles.
-   New v2 explicit2q/width1/h nodes,30/50digit agreement, C=2/alpha and
-   normalized ratios; repaired gate12checks/HIGH257.443s,10texts/25files.
-   Numeric agreement is not certified accuracy or an analytic proof.
-6. Keep the accepted MASKED SAME-W L2HS obstruction5ff14c9, all real s in
-   d2/3. It does not refute operator/Schatten/Banach alternatives, source
-   solutions, moments or G:upper. Constant initial data belongs to no globalEs.
-7. No original-noise quotient mask multiplier for the full covariance class:
-   actual d2 delta tensorLeb compactmask sends a zero-noise test to positive
-   variance. Auxiliary and original test norms can be incomparable; the
-   proved contraction concerns W(zeta_R F), not W(F).
-8. No new Lean in these analytic waves; prior70facts/17seams not upgraded.
-   No official package, source-energy identification or whole-paper clearance.
-9. Canonical TeX/PDF/wiki unchanged. TeX SHA256
-   58b092b258d4f363f8bfa0a02dcf492dcb9c13e794dbcab440bf7b0529b53b7d.
-   Original GLOBALd1 lower ee188ab/e6ca0b5 remains accepted, not reopened.
+1. Read AGENTS.md, PROJECT-GOAL.md and Progress.md; full original scope,
+   review gates and decision4 remain. No contact/sourcefix/Skorohod/HPC.
+2. Revalidate local/origin/<HUB> refs/dirty ownership before editing.
+   Substantive checkpoint e3487484dd4d78c395626bb8aac9257e55297d7a before this
+   HANDOFF-only successor. All paths committed/pushed/synced0:0, no foreignWIP.
+3. Read notes/actual-two-variance-forms.md and actual packet adjudication:
+   scientific227d4bc/adoption9bfb907,9checks/HIGH416.904s,20texts/35nativefiles.
+   Raw physicallymasked SAME-W forms have NO observationchi. Full2x2,
+   complex/indicatorcompletion, both finite-family variances uniformR,
+   criticalLOG/strictbeta>1/2 and real mean-squarecolumns accepted. Oldell_chi
+   identity only under its actual plateau/d2d3/T<=1 scope; no compact-chi1 trick.
+4. Read notes/finite-gaussian-schatten.md and its complete adjudication:
+   scientifice59c29b/adoptione348748,10checks/HIGH. Original308.576s scientific
+   report invalidJSON/acceptedfalse preserved (43nativefiles). Supported
+   format-only continuation47.197s,zero tools,115identical tokens and EXACT
+   onecomma deletion;14formatnativefiles, all29bindings verified. Root canonical
+   correspondence/readcoverage/lineage checks passed with BOTH byte-exact rawtexts.
+   Refused closer-only recovery retained; no manual report edit or confidencechange.
+5. Scalar N2 localFiniteYoung fulltype/application HIGH: source unchanged,
+   Lean4.35.0/Mathlib56a0058,5matchingownedartifacts/3Falsecontrols, separate
+   completepp.allTYPE/3standardaxioms againstboth modules. Firstprivate/server
+   replay mismatch retained51files; samepublicheader explicitcancellation
+   successor63files.71finitefacts/18local-seams, no Gaussian/trace/SPDEformalization.
+   TypeAudit/excerptEOF/officialtag/warningpath custody clarified in localfolder.
+6. Three earlier accepted analytic inputs remain intact:
+   spectral-mask-covariance-foundation.md (af9b1ad/d967ea5,20checks/HIGH326.133s);
+   scalar-frequency-row-bound.md (e905ad8/5497358,16checks/HIGH247.426s);
+   temporal-phase-bound.md (81d9158/8fb38f5,19checks/HIGH203.22s).
+   Original scalar missing2q diagnostic FAIL retained and repaired honestly.
+7. No originalnoisequotient mask multiplier: actual d2 null-to-positive test
+   refutes fullclass claim. Auxiliary and original norms can be incomparable.
+   Maskednoise is not stationary; only proved LINEAR covariance domination.
+8. Accepted physicallyMASKED SAME-W L2HS same-index obstruction5ff14c9 remains
+   d2/3,anys. No incompatibility with laterSp/operator alternatives. Original
+   constant(1,0) is in no globalEs; canonicaldata/localphase still need work.
+9. L0/PROPOSED and decision4 remain: no official companion/package/lease/registry
+   or cluster transaction. New standalone localcheck is separately authorized.
+10. Canonical TeX/PDF/wiki unchanged. TeX SHA256
+    58b092b258d4f363f8bfa0a02dcf492dcb9c13e794dbcab440bf7b0529b53b7d.
+    Reviewed fullGupper and GLOBALd1 lower ee188ab/e6ca0b5 retained.
+    No sharpupper/source normalization/domain/label/exactlimit completion.
 
 ## Concrete deliverables for the next session
 
-- A frozen actual two-direction Gaussian variance target with falsification
-  controls, complete phase/adjoint/Fourier conventions and required source
-  bindings; get independent statement review before a long proof.
-- If accepted and proved, a full independent proof gate and Progress.md
-  adjudication; no operator/path/Schatten theorem from scalar rows alone.
-- Only afterward address physical compact localization, finite Gaussian
-  Schatten moment inequality and infinite-dimensional/source limits.
-  These are subsequent obligations, not the immediate first action.
+- Freeze a genuine whole-space compact-cutoff theorem, with all Sobolev
+  indices, adjoints, constants and auxiliary Fourier domains explicit;
+  falsify and obtain independent statement gate before its long proof.
+- If proved, obtain full independent analytic/application gate and record
+  all findings. Correctly match both compact covariance envelopes in E1/2.
+- Later prove deterministic CM coefficients/gain/finitepropagation, then
+  finite Gaussian bounds for actual compact operators and positive compact
+  variance tails; only afterward Gaussian series/path/source/Young flow.
+  The next-plan file is a sequence of OPEN obligations, not proved machinery.
 
 ## Success criteria for the immediate next step
 
-The ACTUAL SAME-W forms match the normalized full2x2 wave matrix and both
-finite-family variance inequalities for all original covariances/ranges.
-Physical masking is treated through the proved auxiliary LINEAR covariance
-bound before any stationary auxiliary calculation. Constants, low modes,
-complexification, temporal indicators and both Parseval sums are explicit.
-Independent statement audit precedes a long proof; full gate precedes adoption.
+An actual compact operator Lambda^sigma chi Lambda^(-sigma-gamma) on
+L2(Rd) satisfies the claimed singular-value bound, with a proved factorization
+and exact whole-space recovery. Both positive and negative sigma and the
+correct adjoint phase blocks are covered. Independent statement then full
+proof gate precede adoption. No finite torus-state substitute for the model.
 
 ## Anti-success criteria
 
-Do not repeat completed d1 work, shrink to easier noise/dimensions, or claim
-scalar/temporal tools already construct a flow. Do not declare physically
-masked noise stationary, omit a phase entry/variance direction, import an
-original-quotient mask bound, assume HS on the same E, or treat covariance
-PSD order as nonlinear wave-moment order. No source normalization choice,
-Skorohod work/contact/HPC/private companion/public release. No goal completion
-from an intermediate result or a reviewed planning statement.
+Do not repeat completed d1/variance work or shrink to easier noise/dimensions.
+Do not infer a Gaussian operator from mean-square columns, a path from a
+scalar increment exponent, or source convergence from uniform bounds alone.
+Pchi=J Dchi J^-1 is not selfadjoint; do not replace it by multiplication in
+Fourier coordinates. Positive A<=B does NOT imply A^m<=B^m: use correct
+singular-value/minmax reasoning for trace powers. No originalquotient mask
+bound, nonlinear PDE covariance comparison, source normalization choice,
+Skorohod/contact/HPC/private companion/publication or premature goalcompletion.
 
 ## What the previous sessions produced
 
@@ -827,40 +842,67 @@ Latest checkpoints:
   Gaussian operator/Schatten/path/sourceflow/new moment adopted. No new
   Lean module or canonical TeX/PDF/wiki change. Original full goal ACTIVE.
 
+- 2026-10-30: Actual physicallymasked SAME-W two-variance component adopted
+  9bfb907, scientific227d4bc,9checks/HIGH416.904s,20texts/35nativefiles.
+  All4normalizedphase entries includingzero, actualSobolevadjoint,
+  complex/indicatorcompletion, exact(2pi)^d c_d² cancellation and BOTH
+  finite-family Bessel rows uniformR; real mean-squarecolumn/adjoint-column
+  reconstruction.20live/frozen/gitbindings/native hashes verified before
+  reported explanatory adoption edits. No randomop/Sp/path/Young theorem.
+- 2026-10-30: Finite Gaussian rectangularcomplex evenp moment adopted
+  e348748, scientifice59c29b,10checks/HIGH. StrongerAVERAGE thenMAX of both
+  variance tracepowers, sqrt(p-1),p2equality, exactrow/column16D negative
+  controls. Self-contained GaussianIBP/twoeigenbases/Holder/dilation.
+  Original308.576s malformedJSON/false preserved43files;47.197s supported
+  token-identical nativeformatcontinuation,zero tools,onecomma deletion,
+  canonical lineage/readcoverage/receipt validation and14formatfiles verified.
+  All29bindings checked. No semanticretry/confidencechange/manual report edit.
+- 2026-10-30: OneNEW localFiniteYoung public N2 consumer reuses pinnedMathlib
+  weightedAMGM. Completepublictype/3axioms,3Falsecontrols/5artifactreplay,
+  exacttraceapplication HIGH. Firstprivate/server mismatch51files preserved;
+  sameheader explicitcancellation successor63files.71finitefacts/18seams,
+  no formalGaussian/trace/SPDE or officialcompanion. CustodyEOF/TypeAudit/
+  officialtagpin/pathwarning differences explained. NextcompactSobolev cutoff
+  and Gaussianseries/path/source obligations UNREVIEWED. OriginalfullgoalACTIVE.
+
 ## Repo & git state at handoff
 
 Substantive checkpoint before this HANDOFF-only successor:
-8fb38f5e529f2d96003a91aa6acd913ee509ec56.
-Local/origin/<HUB> synchronized0:0; all mathematical/evidence paths
-committed and pushed, no foreign WIP or live reviewer/Lean job.
-Wiki ../SPDEs-wiki/content/projects/stratonovich-ham-second-moment.md exists
-and is unchanged. This is an internal checkpoint, not canonical integration,
-whole-paper/cold-reader/novelty/circulation clearance.
+e3487484dd4d78c395626bb8aac9257e55297d7a.
+Local/origin/<HUB> synchronized0:0, all work committed and pushed;
+no foreignWIP or live reviewer/Leanjob. Wiki project page
+../SPDEs-wiki/content/projects/stratonovich-ham-second-moment.md exists and
+is unchanged. Internal checkpoint only, no wholepaper/coldreader/novelty/
+canonicalintegration/circulation clearance.
 
 ## Operating notes
 
-Actual root execution/hash/archive/git checks remain distinct from native
-read-only AI hand verification. Every attempt retained, including real scalar
-v1 failure. Direct valid JSON throughout, no recovery or confidence changes.
-All three full gates actual Opus5.5/high via supported CLI2.1.304 and account
-<account removed>; no future quota/availability promise. Ambient amsg hook not used.
+Root compiler/hash/git/archive checks differ from native read-only AI hand
+verification. Every failed producer/report retained. The finiteGaussian full
+gate includes a supported format-only continuation with immutable original,
+zero toolcalls and canonical token-lineage proof, not a fresh scientific
+verdict request. Both rawtexts are byte-exact and committed, with archives.
 
-Next-variance plan is not reviewed. Proposed finite Gaussian Schatten
-inequality in scalar packet's next-actual-driver-obligations.md is also
-UNREVIEWED: possible self-contained finite Gaussian IBP/spectral-basis route,
-not an imported theorem or continuum estimate. No external reference acquired
-or duplicate queue ticket. Existing partial CLO ticket retained; not proof of
-whole-space full-range flow. No setup/registry/lease/companion/HPC transaction.
+CLI2.1.304/Opus5.5/high/account<account removed>, current launches were healthy; no
+future quota promise. No setup/dotfile/agent/contact transaction. Prior-art
+searches for standard weightedAMGM were bounded/incomplete, exactMathlib
+REUSE verified locally; no absence claim or new library. Existing partial
+CLO ticket remains retained, not a proof of full-range whole-space flow.
+
+Read next-localized-schatten-obligations.md for the self-contained compact-
+domination tail route proposed instead of assuming a Banach martingale
+convergence theorem. Every step still needs freeze/falsify/fullreview.
 
 ## Risks to monitor
 
-The actual masked covariance is not stationary. Auxiliary spectral positivity
-and uniform ball growth bound only linear forms; inverse auxiliary physical
-covariance need not be nonnegative. Match every phase component and both
-variance directions before operator claims. In normalized coordinates the
-physical cutoff is J Dchi J^-1 and is generally not selfadjoint; compact
-factors need correct adjoints in both variance directions. No HS shortcut.
+Actual variance bounds and finite Gaussian moments are ingredients only.
+Whole-space compact singular values, correctly adjointed localization,
+actual CM coefficients, variance-tail convergence, Gaussian series/timepath,
+sourcecutoff identity and canonicaldata/growingcone lower bounds remain OPEN.
+A finite torus diagonal can prove an auxiliary compact embedding factor,
+not replace the original spatial state or covariance. Inspect source time-
+boundary/filter conventions before any uniform-source contraction claim.
 
-Higher-dimensional lower bounds, sharp upper constants, source normalization/
-domain/label and conditional exact-limit issues remain OPEN. Original full
-goal remains ACTIVE; do not mark complete, paused or blocked at this checkpoint.
+Sharp upper constants and source normalization/domain/label/conditional
+exact-limit requirements also remain OPEN. Keep the original full goal
+ACTIVE; no premature complete/paused/blocked status at this checkpoint.
