@@ -1,0 +1,74 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "medium",
+  "source_coverage": [
+    ".review/required-sources.json lines 1-18 (complete; read plan only, no read credit)",
+    "reviews/2026-10-30-joint-gaussian-tilt/contract-v2.md lines 1-167 (complete)",
+    "notes/local-causal-young-flow.md lines 1-504 (complete)",
+    "notes/interaction-driver-path.md lines 1-346 (complete)",
+    "notes/direct-event-calibration.md lines 1-224 (complete)",
+    "notes/phase-response-test.md lines 1-379 (complete)"
+  ],
+  "checks": [
+    {
+      "claim": "C1: Exact original objects and coupling",
+      "verdict": "PASS",
+      "reason": "Contract lines 13-18 keep the full d1 class: 0<a<1, 0<alpha<=1, alpha+a<2, Gamma a nonzero homogeneous nonnegative Radon covariance, and the raw kernel |t-s|^-a. There is no fBm normalization, projection or discard. This matches direct-event lines 83-91 and phase-response lines 9-11. Z=W(psi) uses the same common W (line 17). Line 18 explicitly declines the premise that each cutoff is measurable from the raw field, consistent with interaction-driver lines 216-231. I checked the distributional Jacobian independently: substituting t=delta u gives W^delta(f)=delta^(a/2-1)W(f(./delta,.)), whose covariance equals the raw covariance, so W^delta has the raw law. In fast time the semiclassical equation delta^2 V_tt=V_xx+sqrt(delta)WV becomes V_uu=V_xx+delta^((1-a)/2)W^delta V, which confirms g. This matches local-flow (7.1) and interaction-driver (B0). The masked HS coordinates are the source construction W_R(f)=W(zeta_R f) (local-flow lines 114-117), applied with T=L and R=r."
+    },
+    {
+      "claim": "C2: Phi in (A) is an everywhere-defined continuous linear map on the full B into operator-driver paths on F, and Phi(X)=A",
+      "verdict": "PASS",
+      "reason": "For any x in B, x_j(u) is in HS(E), which is contained in B(E), and K:F->E is bounded. Here kappa is compact smooth, and the proof of local-flow (4.2), a finite rho_l chi_l expansion, applies to any such kappa. Multiplication by rho_j is bounded on E and gives compactly supported E phases. These embed continuously in F (local-flow lines 173-176). I is finite. So Phi(x)(u) is in B(F), Phi(x)(0)=0, and the Holder increments are bounded by C(||K||, max_j||rho_j||) times sum_j[x_j]_theta, with no compatibility needed. The agreement Phi(X)=A follows exactly from the local-flow construction: the output of M_R and its input-vanishing support lie in [-2R-T,2R+T]=O for R=r, T=L (lines 144-151). A is defined on F via the global-E operator applied to kappa v (lines 212-216). chi_j=1 on supp rho_j (lines 161-162). Sum over I of rho_j equals 1 on O because the omitted rho_j vanish on O. The mask is never commuted with S. e0=(1,0) is in F, and K e0=(kappa,0) is compact smooth. This is a sound, non-vacuous fixed-parameter target. The constant C_(r,L) carries a sum over roughly r+L indices, which is correctly flagged as not replacing the MAX bound (4.4)."
+    },
+    {
+      "claim": "C3: Covariance shift, exact cancellation (C), rescaling, shifted potential and block phase",
+      "verdict": "PASS",
+      "reason": "Bochner integrability: X lies in L^2(B), so E||XZ||_B <= ||X||_(L2 B) v^(1/2). Phi is bounded linear, so Phi(b)=E[Phi(X)Z]=E[AZ], taken on the separable closed range. I computed independently: E[W^delta(f)Z]=delta^(a/2-1)E[W(f(./delta))W(psi)]=delta^(a/2) times the integral of f(u,x)h(delta u,x), with h exactly as in line 86. Hence E[A(u)Z]=g delta^(a/2) H_delta(u)=sqrt(delta)H_delta(u), using g delta^(a/2)=delta^(1/2). This confirms (C) and the amplitude identity in line 138. H_delta is a strong integral, as in local-flow (5.5), and is Lipschitz into B(F). No norm continuity of S is used. In the masking, the mask radius r=c/delta is kept distinct from the physical R=T delta (lines 22-23). The fast-block slow time m delta+delta u and the phase (V,partial_u V)=(V,delta partial_t V) are correct, with the fractional block retained."
+    },
+    {
+      "claim": "C4a: Tilt (T), sign, half-cost, degenerate covariance, Borel generation and version safety",
+      "verdict": "PASS",
+      "reason": "Under e^(lambda Z - lambda^2 v/2)dP, the law of X is the law of X+lambda b. With lambda=-1/sqrt(delta) and test x -> j(x+b/sqrt(delta)), this gives E j(X), so the sign and v/(2delta) are correct. Evaluation at rational q composed with HS matrix coordinates in a Schwartz ONB gives countably many continuous linear functionals that separate points of B: HS matrices determine the operator, and paths are continuous. B is Polish, so these generate the Borel sigma-algebra, and finite cylinders form a pi-system. Joint Gaussianity of these coordinates with Z therefore determines both laws without inverting any covariance. The cases v=0 and singular covariance are trivial or covered. The density is positive with mean 1, so the measures are equivalent. Because j is defined on all of B, changing versions of X only changes null sets."
+    },
+    {
+      "claim": "C4b: J_delta is a continuous nonnegative function on B, and the post-tilt observable is the actual retained-potential local Young flow",
+      "verdict": "PASS",
+      "reason": "J_delta is a composition of continuous maps: Phi (continuous linear), the locally Lipschitz Young map (5.3), the bounded S(L) on F, and the bounded compact-test functional on F (via (4.2)). It is therefore continuous and nonnegative. By (A) and (C), J_delta(X+b/sqrt(delta)) uses the driver A+H_delta, the interaction primitive for g zeta_r W^delta + zeta_r h(delta u). The compactly supported W^(1,inf) profile is admissible (local-flow lines 303-327). No nonzero-profile canonical series, independent increments or raw point evaluation is assumed (lines 110-111, 139-141). I found no circular premise."
+    },
+    {
+      "claim": "C4c: Noise-only canonical average, and the average-to-original-point moment map with its exact pinpoint support",
+      "verdict": "FAIL",
+      "reason": "The mathematics holds. The cone condition is M+L <= c/delta, which holds when c >= 1+M delta, and so whenever c >= 1+M (needed for local-flow (6.1)). The scaling identity is direct-event Section 1. The inequality E|int phi u(T,R.)|^2 <= E u(T,0)^2 is valid for nonnegative unit-mass phi. The statement's support is defective, however. Contract lines 114-115 cite 'the accepted phase-response Section6 average inequality'. Phase-response Section 6 (lines 348-378) is endpoint/scope calibration and contains no such inequality. The inequality is phase-response (M), Section 5, lines 302-325. Also, contract lines 6-9 declare that the accepted analytic inputs are 'exactly' interaction-driver Sections 5-6, local-flow Sections 3-7 and direct-event Section 1. phase-response is not on that list, yet the statement uses it directly as the load-bearing consumer toward the original POINT target. The input boundary and the pinpoint are internally inconsistent."
+    },
+    {
+      "claim": "C5: Profile admissibility, non-vacuity and retained scope",
+      "verdict": "PASS",
+      "reason": "psi is in C_c^infinity((0,1)xR), extended by zero to a smooth function. So G(s)=Gamma*psi(s) and its s-derivatives are C_b^1, using c|x|^-alpha, 0<alpha<1, with derivatives moved onto psi, or c delta for white noise. Then h(t)=int|tau|^-a G(t-tau)dtau over |tau|<=2 is bounded and Lipschitz (indeed C^1) into C_b^1 on [0,1]. The decay of Gamma*psi gives spatial C^1 tails tending to 0 uniformly in t, so (5.6) holds with c(t)=0. zeta_r h is supported in [-2r,2r] with uniform W^(1,inf) bounds for r>=1, and r=c/delta>=1. In d1 the even homogeneous class is exactly Riesz or white (phase-response lines 178-181), and a nonzero test has positive variance. The open items (spectral complement/product/event, optimizer map, source constant, normalization, profile-shifted mask independence, higher dimensions and sharp constants) are retained at lines 159-166. Lines 147-149 make no moment-rate or source theorem claim."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [
+      "Pinpoint and input-boundary defect in the average-to-point consumer. Contract lines 113-115 attribute the averaged-to-point second-moment inequality to 'phase-response Section6'. Section 6 of notes/phase-response-test.md (lines 348-378) contains no such inequality; it is inequality (M) in Section 5 (lines 302-325). Contract lines 6-9 say the accepted analytic inputs are 'exactly' interaction-driver Sections 5-6, local-flow Sections 3-7 and direct-event Section 1, which excludes phase-response, but the statement uses it directly as the link to the original POINT target. Local-flow lines 404-405 refer only generically to 'the accepted average inequality'. The underlying mathematics is correct; the exact statement's declared support is not."
+    ],
+    "minor": [
+      "The 'exactly' input list (lines 6-9) omits local-flow Sections 1-2 and interaction-driver Sections 1-4. Those sections define zeta, E and S, prove the uniform mask bound (2.2), and prove the local HS bounds that the listed sections rely on. Saying the listed sections are consumed together with their internal dependencies would remove the ambiguity.",
+      "Line 77, 'The fixed-parameter bound (A)', attaches the label (A) to the bound, but (A) labels the formula at line 63; the Holder bound at lines 68-69 is unlabeled.",
+      "State explicitly that W is the raw-law noise of the semiclassical equation (direct-event (W)), not the noise of the original u.",
+      "State explicitly that local-flow Sections 3-6 are applied to the raw-law field W^delta on the single horizon T=L with mask radius R=r and source temporal cutoff eta/delta. Section 7 itself is phrased with unit blocks W_m^delta.",
+      "Line 113 says 'scaling note Section1'; the file is notes/direct-event-calibration.md, so name it.",
+      "Lines 97-100 should keep the positive covariance amplitude c in the Riesz kernel c|x|^-alpha and the white kernel c delta. The phrase 'Gamma(x-dy)' should be read as convolution of the even measure Gamma with psi(s,.)."
+    ]
+  },
+  "required_repairs": [
+    "Correct the support for the average-to-original-point moment inequality at contract lines 113-115. Cite notes/phase-response-test.md Section 5, inequality (M), lines 302-325, instead of 'Section6'. Make the declared accepted-input list at lines 6-9 consistent: either add phase-response Section 5 (M) as a named accepted input, or route the consumer only through a listed input that actually states the inequality."
+  ],
+  "limitations": [
+    "This is a statement-fidelity review, not a proof audit. The prior notes were treated as scoped accepted inputs and were not re-proved.",
+    "The Jacobian, the covariance cancellation (C), the tilt sign and half-cost, the cone radius, Borel generation and profile admissibility were checked by hand. No Lean or numerical checks were run.",
+    "Classifying the citation and input-boundary defect as blocking is a judgment. The statement is otherwise sound and worth proving, and after the single citation repair I would expect C4c to pass.",
+    "Confidence is medium overall: high on the C1-C3 and C5 checks and on the factual existence of the defect, but the blocking classification is a judgment call. This does not meet the HIGH acceptance threshold.",
+    "Not a novelty, whole-paper or source-text audit; no external sources were consulted."
+  ]
+}

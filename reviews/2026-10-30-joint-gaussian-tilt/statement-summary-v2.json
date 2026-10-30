@@ -1,0 +1,25 @@
+{
+  "status": "review-complete",
+  "scientific_verdict": "FAIL",
+  "confidence": "medium",
+  "accepted": false,
+  "coverage_verified": true,
+  "model_actual": "claude-opus-5-5",
+  "source_revision": "5eef4f5ec4e0ccbc5d7dea72924ff593d2e31fc1",
+  "elapsed_seconds": 289.272,
+  "diagnostics": [
+    {
+      "code": "blocking-finding",
+      "path": "findings",
+      "message": "actual correspondence has blocking findings or mandatory repairs"
+    }
+  ],
+  "service_exit": 2,
+  "checks_passed": 6,
+  "checks_failed": 1,
+  "required_repairs": [
+    "Correct the support for the average-to-original-point moment inequality at contract lines 113-115. Cite notes/phase-response-test.md Section 5, inequality (M), lines 302-325, instead of 'Section6'. Make the declared accepted-input list at lines 6-9 consistent: either add phase-response Section 5 (M) as a named accepted input, or route the consumer only through a listed input that actually states the inequality."
+  ],
+  "archive_members": 20,
+  "scope": "Statement only. FAIL/MEDIUM. Mathematical checks pass; named input boundary/citation requires repair. No proof acceptance."
+}

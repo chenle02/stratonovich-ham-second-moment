@@ -1,0 +1,77 @@
+--- contract-v2.md
++++ contract-v3.md
+@@ -1,12 +1,13 @@
+ # Actual-driver Gaussian tilt: explicit separable path-space target
+ 
+ Status: PROPOSED statement, not a proved or accepted Gaussian/flow result.
+-This successor replaces the unspecified constructed path space by a finite
+-product and a specified everywhere-defined continuous linear assembly. No
+-prior reviewer verdict is an input. Accepted analytic inputs are exactly
+-notes/interaction-driver-path.md Sections5-6, notes/local-causal-young-flow.md
+-Sections3-7 and notes/direct-event-calibration.md Section1. They retain their
+-own scoped acceptance; this target does not freshly certify them.
++The target uses a finite product and an everywhere-defined continuous linear
++assembly. Named accepted analytic inputs, together with their internal
++definitions and dependencies, are notes/interaction-driver-path.md Sections5-6,
++notes/local-causal-young-flow.md Sections3-7, notes/direct-event-calibration.md
++Section1, and notes/phase-response-test.md Section5, inequality(M), lines302-325.
++They retain their own scoped acceptance; this target does not freshly certify
++them. No previous reviewer verdict is a mathematical input.
+ 
+ ## 1. Original objects
+ 
+@@ -14,7 +15,9 @@
+ alpha+a<2, Gamma nonzero in the original homogeneous nonnegative Radon
+ class. No fBm normalization, covariance projection or residual discard.
+ Let psi be a real C_c^infinity((0,1) x R) test, extended by zero, Z=W(psi),
+-v=E Z^2. All raw drivers and Z use the SAME common Gaussian family W.
++v=E Z^2. Here W is the raw-law noise in the SEMICLASSICAL equation of
++notes/direct-event-calibration.md( W ), not the original unscaled field.
++All raw drivers and Z use this SAME common Gaussian family W.
+ There is no assumption that each source cutoff is measurable from raw W.
+ 
+ Fix 0<delta<=1, L=1/delta, a nonnegative unit-mass smooth compact spatial
+@@ -50,7 +53,9 @@
+     B = product_(j in I) h^theta_0([0,L];H),
+     X_j(u)=chi_j A(u) on global E inputs,     X=(X_j)_(j in I).
+ 
+-The accepted local HS construction and its stronger-gamma paths give a
++Apply local-flow Sections3-6 to the raw-law field W^delta, single horizon
++T=L and mask radius R=r; its source temporal cutoff is eta/delta. The
++accepted local HS construction and its stronger-gamma paths give a
+ strongly measurable B-valued X with finite moments of every finite order.
+ Coordinates <X_j(q)e_k,e_l> at rational/dyadic q and a fixed Schwartz ONB
+ of E are deterministic noise-Hilbert limits, jointly Gaussian with Z.
+@@ -74,7 +79,7 @@
+ full-product assembly removes any need for a Borel inverse of a compatible
+ HS-coordinate map. Its separable closed linear image closure may be used
+ as an operator-driver support, but equality of laws will be proved on B.
+-The fixed-parameter bound (A) does not replace the accepted MAX bound or
++The displayed fixed-parameter Holder bound does not replace the accepted MAX bound or
+ its uniform growing-block estimates.
+ 
+ ## 3. Covariance shift and the actual observable
+@@ -96,8 +101,9 @@
+ h with the smooth test is bounded and smooth. Required application bounds:
+ t->h(t) is Lipschitz into C_b^1 on[0,1], uniformly W1infinity bounded,
+ with uniform C1 spatial tails to zero. For Riesz use the actual homogeneous
+-|x|^-alpha kernel with derivatives transferred to psi; for white use the
+-spatial delta covariance. Masked profiles are compactly supported and have
++kernel c_Gamma|x|^-alpha with c_Gamma>0 and derivatives transferred to psi;
++for white use c_Gamma times the spatial delta covariance. Convolution with
++Gamma means convolution with the even covariance measure, preserving c_Gamma. Masked profiles are compactly supported and have
+ uniform W1infinity bounds for r>=1. These are obligations, not assumed
+ Cameron-shift or source-constant identifications.
+ 
+@@ -110,9 +116,9 @@
+ be a continuous nonnegative function on B. No raw point evaluation or
+ samplewise positivity of the displacement is requested. Noise-only J_delta(X)
+ is the squared canonical semiclassical smooth average by the accepted
+-local-flow Section6 identification and scaling note Section1. Its expectation
++local-flow Section6 identification and notes/direct-event-calibration.md Section1. Its expectation
+ is bounded above by the original point second moment, by the accepted
+-phase-response Section6 average inequality. This is a consumer toward the
++notes/phase-response-test.md Section5, inequality(M), lines302-325. This is a consumer toward the
+ original POINT target, not a redefinition of the target as an average.
+ 
+ ## 4. Tilt target and exact application

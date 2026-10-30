@@ -1,0 +1,193 @@
+{
+  "schema": "le-ai-lab.review-read-ledger/1",
+  "coverage_verified": true,
+  "claude_code_version": "2.1.304",
+  "events_sha256": "24a305edc29e407a200729fdb0964715796b1c73c003e2155139a9d92abefeaa",
+  "events_hash_bound_to_receipt": true,
+  "stream_workspace": "${HOME}/.local/state/Le-AI-Lab/stratonovich-tilt-statement-v2/workspace",
+  "required_sources_sha256": null,
+  "continuation": false,
+  "continuation_credit": null,
+  "proves": "Each credited line was returned, numbered and byte-equal to the frozen workspace file, in a tool_result paired with a Read or line-numbered content-mode Grep call of the hash-bound provider stream.",
+  "does_not_prove": "Attention, understanding, or retention: a credited line may have been skimmed, ignored, or dropped by context compaction before the report was written. Uncredited lines may still have been seen in a form the ledger cannot attribute (previews, unnumbered output, subagents).",
+  "sources": [
+    {
+      "path": "reviews/2026-10-30-joint-gaussian-tilt/contract-v2.md",
+      "sha256": "39ee24de72a12971286e9f2d682ad061fafecb79468272af420f0e6c1736be13",
+      "total_lines": 166,
+      "required_ranges": [
+        [
+          1,
+          166
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          166
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "notes/local-causal-young-flow.md",
+      "sha256": "f482da909ce87e4789b09302a25c5e2a56e3e3cecddee59f5b22e6a0e04111b4",
+      "total_lines": 503,
+      "required_ranges": [
+        [
+          1,
+          503
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          503
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "notes/interaction-driver-path.md",
+      "sha256": "d3df482028572f1f71f8b5055582265677284a537575952a41cd3ea121f88e8c",
+      "total_lines": 345,
+      "required_ranges": [
+        [
+          1,
+          345
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          345
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "notes/direct-event-calibration.md",
+      "sha256": "41091a143e7fb7f6081aadd2475751cf115a3f5ef318965d97ccc72277f79720",
+      "total_lines": 223,
+      "required_ranges": [
+        [
+          1,
+          223
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          223
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "notes/phase-response-test.md",
+      "sha256": "4cb9b52e7868ab6bc69023b9c1bd1dc4485654c189baa5e9cfa31204f660127f",
+      "total_lines": 378,
+      "required_ranges": [
+        [
+          1,
+          378
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          378
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    }
+  ],
+  "tool_calls": [
+    {
+      "id": "toolu_01LWdugJwZERbxGFyLqASWYg",
+      "tool": "Read",
+      "source": ".review/required-sources.json",
+      "plan_copy_read": [
+        ".review/required-sources.json"
+      ],
+      "uncredited": "runner-owned plan copy (.review/): never read credit",
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_0143xiHwSmoefq5ETi8KBFQ3",
+      "tool": "Read",
+      "source": "reviews/2026-10-30-joint-gaussian-tilt/contract-v2.md",
+      "credited": {
+        "reviews/2026-10-30-joint-gaussian-tilt/contract-v2.md": [
+          [
+            1,
+            166
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01PjiHk3uYQX5xNew7Ftpfe8",
+      "tool": "Read",
+      "source": "notes/local-causal-young-flow.md",
+      "credited": {
+        "notes/local-causal-young-flow.md": [
+          [
+            1,
+            503
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01QGqAabfpKViorYCQiBdXs9",
+      "tool": "Read",
+      "source": "notes/interaction-driver-path.md",
+      "credited": {
+        "notes/interaction-driver-path.md": [
+          [
+            1,
+            345
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_016NdAeqtnF56sjifuv1S9Lf",
+      "tool": "Read",
+      "source": "notes/direct-event-calibration.md",
+      "credited": {
+        "notes/direct-event-calibration.md": [
+          [
+            1,
+            223
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01GbynrbHZFxirsk8TcMfBNN",
+      "tool": "Read",
+      "source": "notes/phase-response-test.md",
+      "credited": {
+        "notes/phase-response-test.md": [
+          [
+            1,
+            378
+          ]
+        ]
+      },
+      "stream": "attempt"
+    }
+  ],
+  "diagnostics": []
+}

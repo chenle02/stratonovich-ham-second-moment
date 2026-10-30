@@ -54,6 +54,18 @@
   local-recon.json. REFRAME as standard Gaussian tilting applied to the
   actual flow; no theorem/method novelty or full literature gate claimed.
   Existing algebra inspected for reuse; no new Lean declarations or build.
+- V2 independent statement audit at `5eef4f5`: FAIL/MEDIUM,6checksPASS,
+  one citation/input-boundary failure;289.272seconds, complete native coverage.
+  The author incorrectly named phase-response Section6 and omitted it from
+  the declared input list. V3 fixes both to Section5(M),lines302-325;
+  root source check binds line306 and verifies every formula line unchanged.
+  All6minor findings adjudicated in statement-adjudication-v2.md. No prior
+  review confidence or accepted flag is upgraded. Independent pre-proof
+  statement audits are completed; full proof development on repaired v3 is
+  the next action, with HIGH scientific adoption gate still mandatory/open.
+- New exact sparse-polynomial check verifies the scalar exponent cancellation
+  universally over rational polynomial coefficients, with wrong-sign and
+  wrong-cost error controls. This is testing, not a Gaussian/Lean theorem.
 - Accepted science and canonical TeX/PDF unchanged. Lean stays L0/PROPOSED;
   decision4, source normalization, higher dimensions, sharp constants and
   whole-paper clearance remain open. No cluster or correspondence action.

@@ -1,0 +1,184 @@
+{
+  "provider": "claude",
+  "started_utc": "2026-10-30T04:40:46.903368+00:00",
+  "workspace": "${HOME}/.local/state/Le-AI-Lab/stratonovich-tilt-statement-v2/workspace",
+  "source_revision": "5eef4f5ec4e0ccbc5d7dea72924ff593d2e31fc1",
+  "input_hashes": {
+    "notes/direct-event-calibration.md": "41091a143e7fb7f6081aadd2475751cf115a3f5ef318965d97ccc72277f79720",
+    "notes/interaction-driver-path.md": "d3df482028572f1f71f8b5055582265677284a537575952a41cd3ea121f88e8c",
+    "notes/local-causal-young-flow.md": "f482da909ce87e4789b09302a25c5e2a56e3e3cecddee59f5b22e6a0e04111b4",
+    "notes/phase-response-test.md": "4cb9b52e7868ab6bc69023b9c1bd1dc4485654c189baa5e9cfa31204f660127f",
+    "reviews/2026-10-30-joint-gaussian-tilt/contract-v2.md": "39ee24de72a12971286e9f2d682ad061fafecb79468272af420f0e6c1736be13"
+  },
+  "target": "reviews/2026-10-30-joint-gaussian-tilt/contract-v2.md",
+  "claude_account": "<removed>",
+  "review_contract_sha256": "666c467ef83bbd0744a7b64bc74db990dc43f1ef6a9ca18782c51e5fd946ba99",
+  "effort_requested": "high",
+  "resumed_from": null,
+  "resume_mode": null,
+  "resume_binding": null,
+  "min_confidence": "high",
+  "scientific_verdict": "FAIL",
+  "accepted": false,
+  "report_contract_schema": "subscription-review-report/1",
+  "report_legacy_mode": null,
+  "legacy_resume_binding": null,
+  "diagnostics": [
+    {
+      "code": "blocking-finding",
+      "path": "findings",
+      "message": "actual correspondence has blocking findings or mandatory repairs"
+    }
+  ],
+  "required_sources_sha256": "86e6fc0e2cddb94e52d28b29f9fd6d29ffba5515d5290c6e92f5165963abb57e",
+  "required_sources_workspace_copy": ".review/required-sources.json",
+  "workspace_preflight": {
+    "schema": "le-ai-lab.review-workspace-preflight/1",
+    "scanned": "review contract (--prompt-file)",
+    "references": {
+      "reviews/2026-10-30-joint-gaussian-tilt/contract-v2.md": [
+        "reviews/2026-10-30-joint-gaussian-tilt/contract-v2.md"
+      ]
+    },
+    "waived": [],
+    "missing": [],
+    "required_sources_copy": ".review/required-sources.json"
+  },
+  "runtime_preflight": {
+    "effective_version": "2.1.304",
+    "cli_version": "2.1.304 (Claude Code)",
+    "image_requirements": false,
+    "supported_versions": [
+      "2.1.299",
+      "2.1.300",
+      "2.1.301",
+      "2.1.302",
+      "2.1.303",
+      "2.1.304"
+    ],
+    "supported": true
+  },
+  "cli_version": "2.1.304 (Claude Code)",
+  "executable": "${HOME}/.local/state/Le-AI-Lab/swe-white-time-resume-20261024/runtime/node_modules/@anthropic-ai/claude-code-linux-x64/claude",
+  "executable_requested": null,
+  "executable_effective": {
+    "path": "${HOME}/.local/state/Le-AI-Lab/swe-white-time-resume-20261024/runtime/node_modules/@anthropic-ai/claude-code-linux-x64/claude",
+    "version": "2.1.304 (Claude Code)"
+  },
+  "read_ledger_format_supported": true,
+  "auth": {
+    "authMethod": "<removed>",
+    "apiProvider": "firstParty",
+    "subscriptionType": "<removed>",
+    "email": "<account email removed>"
+  },
+  "model_requested": "claude-opus-5-5",
+  "command_without_prompt": [
+    "${HOME}/.claude/bin/claude-acct",
+    "run",
+    "<account removed>",
+    "--print",
+    "--model",
+    "claude-opus-5-5",
+    "--effort",
+    "high",
+    "--disable-slash-commands",
+    "--strict-mcp-config",
+    "--mcp-config",
+    "{\"mcpServers\":{}}",
+    "--permission-mode",
+    "dontAsk",
+    "--permission-prompts",
+    "none",
+    "--output-format",
+    "stream-json",
+    "--verbose",
+    "--tools",
+    "Read,Grep,Glob",
+    "--allowedTools",
+    "Read,Grep,Glob",
+    "--agents",
+    "${HOME}/.local/state/Le-AI-Lab/stratonovich-tilt-statement-v2/claude-reviewer.json",
+    "--agent",
+    "artifact-reviewer",
+    "<stdin: prompt.txt without its final newline>"
+  ],
+  "prompt_transport": "stdin",
+  "prompt_bytes": 5610,
+  "prompt_sha256": "83c22382281053f0b1b3ec62147f5c5adc454276b49b74856958d7718f616257",
+  "transport_exit_code": 0,
+  "transport_ok": true,
+  "model_actual": "claude-opus-5-5",
+  "session_id": "ac88d0f5-714f-4b8f-9b1f-59e3555e4dd1",
+  "usage": {
+    "input_tokens": 6,
+    "cache_creation_input_tokens": 56401,
+    "cache_read_input_tokens": 46409,
+    "output_tokens": 28511,
+    "output_tokens_details": {
+      "thinking_tokens": 23290
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 56401,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 27847,
+        "cache_read_input_tokens": 23766,
+        "cache_creation_input_tokens": 35839,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 35839
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "provider_error": false,
+  "terminal_subtype": "success",
+  "tools_actual": [
+    "Read",
+    "Grep",
+    "Glob"
+  ],
+  "actual_route_verified": true,
+  "candidate_hashes_unchanged": true,
+  "raw_report_sha256": "e5c5b1957cffdcff4e7e44602640d0671ba50f06b58e67e1200272e74a35105e",
+  "status": "review-complete",
+  "confidence": "medium",
+  "report_interpretation": {
+    "contract_schema": "subscription-review-report/1",
+    "report_schema": "subscription-review-report/1",
+    "legacy_mode": null,
+    "normalized_verdict": "FAIL",
+    "normalized_confidence": "medium",
+    "normalized_check_verdicts": [
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "FAIL",
+      "PASS"
+    ]
+  },
+  "report_sha256": "cda7ae0edaae211258e1e527f706c107f82206f95f0f6d47cc9d189d3ca9adf5",
+  "report_text_format": "fenced-json",
+  "report_body_sha256": "50c33ac08e91ef056ccc5f3004f34878280d374d8c9c2fe48cf0219ff4da1c48",
+  "finished_utc": "2026-10-30T04:45:36.175945+00:00",
+  "elapsed_seconds": 289.272,
+  "transport_events_sha256": "24a305edc29e407a200729fdb0964715796b1c73c003e2155139a9d92abefeaa",
+  "transport_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "read_ledger_sha256": "9127e52c33e350fa54b12d21820cd810d5a03b781c986029e8f93880d28b870e",
+  "coverage_verified": true
+}
