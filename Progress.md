@@ -4162,3 +4162,16 @@ for actualpositiveprofile and matched selfadjoint/essential/core inputs;
 then uniformgap/weighted derivatives and Sobolev-to-F complement transfer.
 Precedingdefinition/copyrightpage images remain documentary source tasks.
 No live reviewer remains; original fullgoalACTIVE, accepted tilt unchanged.
+
+
+### Ground-state/gap candidate — 2026-10-30
+
+Candidate notes/spectral-ground-family.md gives actual positive-profile
+negativeRayleightrial uniformly inb, importedmatched selfadjoint/core/
+essential-spectrum and conditionalpositivity, two max-min levels including
+thresholdE2=0, Lipschitzenergy levels, compactfamilygap and growingrate
+separation. No F-wave/projection/weightedtail/product theorem claimed.
+ActualwhiteH1diagnostic exactenergy-1/8,Rayleigh-3/1024; no RieszL1assumed.
+Teschlp140/141max-min and missingp200/copyright images now supplied.
+No newLean spectralfoundation: exact analytic exclusion in candidate/honesty.
+Full independent HIGHscientificreview packet frozen; no adoption yet.
