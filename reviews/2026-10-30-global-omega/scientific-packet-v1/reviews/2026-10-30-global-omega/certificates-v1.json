@@ -1,0 +1,108 @@
+{
+  "scope": "Exact rational identities and positive Bernstein coefficients ONLY. Analytic Gamma/kernel envelope and SPDE consequence need proof/review.",
+  "Q_descending_coefficients": [
+    -237888,
+    2567920,
+    -10605344,
+    17964536,
+    3700636,
+    -59045877,
+    66291248,
+    36266494,
+    -125535292,
+    58424029,
+    68792033,
+    -94022217,
+    42981706,
+    -8102234,
+    516600,
+    9900
+  ],
+  "Q_expression": "-237888*x**15 + 2567920*x**14 - 10605344*x**13 + 17964536*x**12 + 3700636*x**11 - 59045877*x**10 + 66291248*x**9 + 36266494*x**8 - 125535292*x**7 + 58424029*x**6 + 68792033*x**5 - 94022217*x**4 + 42981706*x**3 - 8102234*x**2 + 516600*x + 9900",
+  "D_expression": "(1 - x)*(2 - x)*(3 - 2*x)*(5 - 3*x)*(5 - 2*x)*(2250 - 750*x)*(-2*x**2 - 4*x + 3)",
+  "V_expression": "-(2*x - 1)*(2*x + 1)*(4*x - 3)*(x**4 - 2*x**2 + 2)*(14868*x**9 - 149344*x**8 + 584279*x**7 - 1045688*x**6 + 513920*x**5 + 1138276*x**4 - 2101861*x**3 + 1480325*x**2 - 592275*x + 168750)/(750*(x - 3)*(x - 2)*(x - 1)*(2*x - 5)*(2*x - 3)*(3*x - 5)*(2*x**2 + 4*x - 3))",
+  "identity": "D(x)*(1-V(x))=x*Q(x)",
+  "certificates": [
+    {
+      "label": "left",
+      "substitution": "t/4",
+      "scale": 1073741824,
+      "degree": 15,
+      "shifted_positive_coefficients": [
+        10630044057599,
+        298124417433585,
+        2513855498420119,
+        11108582904823353,
+        30835186027461291,
+        58554861260633157,
+        79751967489125491,
+        80316614660581085,
+        61414936532707037,
+        36921141989698675,
+        18353430194004037,
+        7893814205477547,
+        2890010244293689,
+        811168303884183,
+        146648694693297,
+        12356981993087
+      ],
+      "all_coefficients_strictly_positive": true
+    },
+    {
+      "label": "right",
+      "substitution": "t/4 + 1/4",
+      "scale": 1073741824,
+      "degree": 15,
+      "shifted_positive_coefficients": [
+        12356981993087,
+        224060765099313,
+        1894937289568407,
+        9799655243171641,
+        34453566936433323,
+        87031904519822405,
+        163125524987087987,
+        231150225523443421,
+        249909141873911517,
+        206372784329731187,
+        129237504527758405,
+        60326501022497451,
+        20332988225551929,
+        4674097187389335,
+        655486353407985,
+        42278584319999
+      ],
+      "all_coefficients_strictly_positive": true
+    }
+  ],
+  "failed_whole_interval_certificate": {
+    "nonpositive_coefficients": [
+      {
+        "index": 6,
+        "value": "-2340641/29120"
+      }
+    ],
+    "scope": "Negative Bernstein coefficient refuses this certificate, not polynomial positivity."
+  },
+  "failed_weak_envelope": [
+    {
+      "x": "1/20",
+      "one_minus_weak_envelope": "-243713125747867/200511163921250000",
+      "negative": true
+    },
+    {
+      "x": "1/10",
+      "one_minus_weak_envelope": "-83037356231/10961714531250",
+      "negative": true
+    },
+    {
+      "x": "1/5",
+      "one_minus_weak_envelope": "-1087326833/29713125000",
+      "negative": true
+    },
+    {
+      "x": "3/10",
+      "one_minus_weak_envelope": "-55729434407/1018872421875",
+      "negative": true
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "reviews/2026-10-30-global-omega/target-v1.md: lines 1-108 (complete)",
+    "reviews/2026-10-30-global-omega/worker-honesty-v1.md: lines 1-30 (complete)",
+    "reviews/2026-10-30-global-omega/falsification-v1.md: lines 1-22 (complete)",
+    "reviews/2026-10-30-global-omega/build-certificates.py: lines 1-34 (complete)",
+    "reviews/2026-10-30-global-omega/certificates-v1.json: lines 1-108 (complete)",
+    "reviews/2026-10-30-global-omega/check-envelope.py: lines 1-25 (complete)",
+    "reviews/2026-10-30-global-omega/envelope-diagnostics-v1.json: lines 1-54 (complete)",
+    "reviews/2026-10-30-global-omega/source-context-v1.json: lines 1-17 (complete)",
+    "reviews/2026-10-30-global-omega/local-recon-v1.md: lines 1-21 (complete)",
+    "notes/damped-lower-endpoint-bridge.md: lines 1-347 (complete)",
+    "reviews/2026-10-30-damped-lower-bridge/scientific-adjudication-v1.md: lines 1-60 (complete)",
+    "notes/raw-positive-value-ceiling.md: lines 1-348 (complete)",
+    "notes/occupation-control-approximation.md: lines 1-364 (complete)",
+    "notes/general-positive-consumer.md: lines 1-477 (complete)",
+    "reviews/2026-10-28-source-normalization/adjudication-v2.md: lines 1-66 (complete)",
+    "reviews/2026-10-28-source-normalization/packet-v2/pages/chen-03-lower.png: full image viewed",
+    "reviews/2026-10-28-source-normalization/packet-v2/pages/chen-04-upper.png: full image viewed",
+    ".review/required-sources.json: lines 1-59 (read plan; not a packet file)"
+  ],
+  "checks": [
+    {
+      "claim": "C1: objects, parameters and scope match the original d1 model and the accepted bridge.",
+      "verdict": "PASS",
+      "reason": "Target lines 9-20 match bridge Section 1 and (1),(4),(9),(11): Riesz c_Gamma|x|^-alpha for 0<alpha<1 or white c_Gamma delta_0 at alpha=1, 0<a<1, q=4-alpha, k=3-alpha, m=q/k, d=q-2a. The goal is all d1 parameters, not a point substitution."
+    },
+    {
+      "claim": "C1: source reading keeps the first-mean map separate from the own c=2 point label, and keeps domain and normalization qualifications.",
+      "verdict": "PASS",
+      "reason": "Image p3 (1.10) is for E u(t,x), a first mean, and its algebra equals F_a. Image p4 (1.12)-(1.13) gives the penalty 1/2 and the kernel with damping lambda^2/(2(4-alpha-2alpha_0)), which equals K_star with d=q-2a. Target lines 19-20 and 103-106 adopt no printed Ad identity, first-to-second-label identity, source fix, Jensen improvement, sharp upper bound or all-dimensional completion. Intended normalization stays UNKNOWN."
+    },
+    {
+      "claim": "T1: P4 upper bound, absolute integrability of each term, and R_star<=B4 with the stated coefficients.",
+      "verdict": "PASS",
+      "reason": "exp(-z)<=P4(z) follows from the signed Taylor remainder, and P4>=exp(-z)>0. With z=lambda u, int_0^inf lambda^(a+j-1)exp(-lambda^2 u/(2d))dlambda=(1/2)Gamma((a+j)/2)(2d/u)^((a+j)/2). The u-power is (j-a)/2>-1, so each term is absolutely integrable on (0,1/2). Integrating and collecting powers of 2 gives exactly (-1)^j Gamma((a+j)/2)/Gamma(a)*2^a d^((a+j)/2)/[j!(j+2-a)]. The Section 5 Gaussian term at a=1/2, d=2 reproduces bridge (12)."
+    },
+    {
+      "claim": "T1: monotonicity in d, monotonicity of Delta in q, and sufficiency and strict direction of G4.",
+      "verdict": "PASS",
+      "reason": "B4 equals a positive double integral of P4(lambda u)exp(-lambda^2 u/(2d))lambda^(a-1)/Gamma(a), which increases in d. The argument does not use the alternating coefficients termwise. d=4-alpha-2a<=4-2a. dDelta/dq=(1/2)log[q(q-2a)/(q-a)^2]<0 because q(q-2a)=(q-a)^2-a^2, so Delta(q,a)<=Delta(3,a). Hence R_star expDelta<=B4(a,4-2a)expDelta(3,a)<M_a^-1 gives Omega^k>1. The envelope mixes d at q=4 with Delta at q=3, and target line 35 correctly disclaims an alpha=0 SPDE."
+    },
+    {
+      "claim": "T2: exact identity ID at x=a/2, including E, C, the j factorials and Ceff.",
+      "verdict": "PASS",
+      "reason": "Hand derivation: 2^a d^((a+j)/2)=16^x 2^j (1-x)^x (1-x)^(j/2). Even terms j=0,2,4 give Gamma(x)E(x) exactly. Odd terms j=1,3 give -2sqrt(1-x)C(x)Gamma(1/2+x) exactly. With Ceff=Gamma(1+2x)Gamma(1/2-x)/Gamma(1/2+x), Gamma(x)/Gamma(2x)=sqrt(pi)2^(1-2x)/Gamma(x+1/2) and Gamma(1+2x)=2^(2x)Gamma(1/2+x)Gamma(1+x)/sqrt(pi), the prefactor is exactly 2pi(1-x)^x/[Gamma(1/2+x)Gamma(1/2-x)Gamma(1+x)]. Duplication follows from Beta(x,x)=2^(1-2x)Beta(x,1/2). No reflection formula is used."
+    },
+    {
+      "claim": "T2: Gamma(1+x)>=g(x) through the log moment.",
+      "verdict": "PASS",
+      "reason": "t^x>=1+x log t gives the tangent bound. int_0^1(-log t)t^j dt=1/(j+1)^2 gives 1-1/4+1/18-1/96+1/600=5737/7200. Integration by parts gives int_1^inf log t e^-t dt=E1(1). The unnamed reciprocal step reconstructs correctly as follows: for X=1+Y, mu=2, 1/X=1/mu-(X-mu)/mu^2+(X-mu)^2/(mu^2 X). CS gives E[(X-mu)^2/X]>=(E|Y-1|)^2/E X=(2/e)^2/2. So E[1/X]>=1/2+1/(2e^2) and E1(1)=e^-1 E[1/X]>=1/(2e)+1/(2e^3). At e<11/4 this exceeds 274/1331>1/5. The log moment exceeds -4297/7200>-3/5. e<11/4 follows from the series tail."
+    },
+    {
+      "claim": "T2: ratio bound T(x)>=L(x)>0.",
+      "verdict": "PASS",
+      "reason": "T(x)=pi^(-1/2)int_0^1 s^(x-1/2)(1-s)^(-1/2)ds is convex on x>-1/2, because each s^x is convex in x. Differentiating duplication at 0 gives Gamma'(1/2)/sqrt(pi)=Gamma'(1)-2log2, so T'(0)=-2sqrt(pi)log2 with Gamma'(1) cancelling. Since 1-x log4>0 on (0,1/2), sqrt(pi)>177/100 and log4<7/5 give T>=L>0. L(1/2)=0.531>0. This is ratio convexity and is not confused with log-Gamma convexity."
+    },
+    {
+      "claim": "T2: product bound, sqrt bound, P bound and Delta bound.",
+      "verdict": "PASS",
+      "reason": "CS gives Gamma(3/2-x)Gamma(3/2+x)>=Gamma(3/2)^2=pi/4, and recurrence gives Gamma(1/2-x)Gamma(1/2+x)>=pi/(1-4x^2). sqrt(1-x)>=g holds iff x<=5/9. (1-x)^x<=exp(-x^2)<=1-x^2+x^4/2 uses log(1-x)<=-x and signed Taylor. Delta(3,2x)=(1/2)[f(3)+f(3-4x)-2f(3-2x)] with f=u log u and f''=1/u<=1/(3-4x) gives Delta<=2x^2/(3-4x). 3-4x-2x^2>=1/2>0 on the interval gives y<1 and exp y<=1/(1-y)=(3-4x)/(3-4x-2x^2). No bound is false and no hypothesis is missing."
+    },
+    {
+      "claim": "T3: the envelope chain 0<B4 expDelta/Ceff<=V(x).",
+      "verdict": "PASS",
+      "reason": "B4>0 from the positive P4 integral and a positive ID prefactor force the original bracket to be positive. Replacing sqrt(1-x) by g and T by L only increases the bracket, since g,C,x,L>0. So the replaced bracket is at least the original and is positive. Prefactor bounds use 1-4x^2>0, g>0, P>0 and the AUX lower bounds in the denominator. Multiplication is by positive quantities. The result equals V exactly, and V>0 is obtained analytically from this chain."
+    },
+    {
+      "claim": "T3: D(1-V)=xQ, degree 15, and every coefficient of Q in the target and JSON.",
+      "verdict": "PASS",
+      "reason": "Hand expansion gives D V=(1-4x^2)(3-4x)(x^4-2x^2+2)Num, with Num=625(5-2x)(3-2x)E1-177x(3-x)(2-x)(1-x)(5-3x)(5-7x)C1, E1=18+7x-49x^2+34x^3+2x^4-8x^5+2x^6, C1=18-5x-8x^2+4x^3. Num equals the JSON's 10 coefficients 168750,...,14868. Expanding D-Z*Num term by term reproduces all 16 Q coefficients, and the constant cancels. Target lines 81-84 match the JSON list. D>0 on [0,1/2] factor by factor. Direct checks: V(0)=1, V'(0)=-11/1125 gives Q(0)=9900, and Q(1/2)=39375=2D(1/2)."
+    },
+    {
+      "claim": "T3: the two 16-term positive shifted Bernstein identities give Q>0 on [0,1/2].",
+      "verdict": "PASS",
+      "reason": "The code's formula is correct: c_i=sum_(j<=i)C(15-j,i-j)Q_j 4^(15-j) (shifted for the right interval), and subtracting 1=sum C(15,i)t^i(1-t)^(15-i) gives the shift. Hand checks on left: A_0, A_1, A_2 and A_15=4^15 Q(1/4)-1 exact; sum A_i+2^15=8^15 Q(1/8); alternating sum=237888; sum 2^i A_i+3^15=2^15*6^15 Q(1/6). Hand checks on right: B_0=A_15, B_15=4^15*39375-1, sum B_i+2^15=8^15 Q(3/8), alternating sum=237888, sum 2^i B_i+3^15=12^15 Q(5/12). All are exact. All JSON entries are visibly positive, and t/4, (1+t)/4 cover [0,1/2], so Q>4^-15>0."
+    },
+    {
+      "claim": "C4: the whole-interval negative Bernstein attempt and weak-V failures are preserved and read only as proof no-gos.",
+      "verdict": "PASS",
+      "reason": "Hand computation of the Q(t/2) index-6 coefficient gives -80.379=-2340641/29120. Indices 5 and 7 are positive by hand. This refuses the certificate and does not touch polynomial positivity, as Q>0 is certified by subdivision. The weak values at x=1/20 and 1/10 were cross-checked approximately as V/P from Q,D, giving 1-Vweak about -0.0012155 and -0.007575. The JSON retains all four negative values, and they refute only the route that omits P."
+    },
+    {
+      "claim": "C4: no Gamma or SPDE proof is claimed from CAS or the 8 samples.",
+      "verdict": "PASS",
+      "reason": "Target lines 92-95, falsification lines 5-9 and 20-22, and the scope strings in both JSONs disclaim this. The analytic chain T1-T3 supplies the Gamma content as written proof obligations, and CAS is used only for rational identities."
+    },
+    {
+      "claim": "T4/C5: global strict Omega>1, GAIN and strict (END) follow from accepted (11) and T1-T3.",
+      "verdict": "PASS",
+      "reason": "Omega^k=M_a^-1/(R_star expDelta(q,a))>=1/V(a/2)>1 for every admissible (alpha,a), since x=a/2 is in (0,1/2) and V is in (0,1). (11) gives Q2>=2^m Omega F_a(E_star^O), and F_a(E_star^O)>0 because 0<E_star^O<inf (bridge Section 4). So GAIN and END hold. As a consistency check, V tends to 1 as a tends to 0, so no uniform gain exists and none is claimed. Also, M_a^-1 is the minimal time energy, which is at most the raw time mass, so the claim does not contradict the accepted raw ceiling."
+    },
+    {
+      "claim": "C5: excluded claims and open gates are retained.",
+      "verdict": "PASS",
+      "reason": "Target lines 102-108 exclude uniform gain, parameter/time interchange, first mean, Jensen, source upper bound, normalization fix, optimizer, minimax, moving test, Skorohod, companion, HPC, contact, novelty and circulation. No rough flow or signed-control claim appears, and bridge (11) consumes only accepted fixed-approximant scores. d2/d3, sharp upper bound, exact limit and source/domain/label gates remain open."
+    },
+    {
+      "claim": "C6: replayability and honesty of the code and data records.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Static reading: the builder's V, D, Q and certificate logic match the target, its assertions precede its hard-coded booleans, and JSON strings such as (2250 - 750*x) are consistent with it. The Gamma and e bounds are not fitted to samples. Hand checks agree with diagnostics rows: at a=0.5 ratio about 0.7821, and 1-V matches xQ/D at a=0.1, 0.5 and 0.75. Note: falsification lines 3-5 say every AUX Gamma/sqrt/power/Delta estimate was checked numerically, but check-envelope.py has no sqrt(1-x)>=g assertion and no assertion of the final rational expDelta bound, only Delta<=2x^2/(3-4x). The code was not executed in this review."
+    },
+    {
+      "claim": "C6: Lean and application scope for later work.",
+      "verdict": "PASS",
+      "reason": "Target lines 92-95 and worker lines 21-24 limit Lean to the finite rational core with complete public definitions and types and an independent application gate. They give no analytic Gamma, Beta, energy, SPDE or kernel credit. No Lean artifact is claimed yet. No HPC, companion, Skorohod, contact, novelty or circulation authorization is claimed."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "falsification-v1.md lines 3-5 overstates the numerical controls: check-envelope.py asserts neither sqrt(1-x)>=g(x) nor the final expDelta<=(3-4x)/(3-4x-2x^2), only the intermediate Delta<=2x^2/(3-4x). No proof depends on this, and both facts were verified analytically here. The record could say so or add the assertions.",
+      "The E1(1) step in target lines 60-61 does not display the reciprocal identity. The long proof should write 1/X=1/2-(X-2)/4+(X-2)^2/(4X), CS with E|Y-1|=2/e, and E1(1)=e^-1 E[1/(1+Y)].",
+      "sqrt(pi)>177/100 and log4<7/5 are left as elementary or verified finite bounds. The long proof should name a route, for example the bridge's already-accepted pi>157/50>3.1329 and a finite log2<7/10 bound.",
+      "The monotonicity sentence in target line 31 should display B4 explicitly as the positive P4 double integral. Otherwise a reader may try to read monotonicity from the alternating coefficients.",
+      "T4 line 99 cites V(x)>0, which comes from the T3 chain rather than from Q or a factor sign. The positivity of the replaced bracket should be stated explicitly when V is first introduced.",
+      "envelope-diagnostics-v1.json records only all_assertions_passed for the AUX checks, with no per-row AUX margins, so the assertion record can be replayed only by rerunning the script.",
+      "The margin near a=0 is thin but exact: 1-V is approximately 11x/1125, against an actual ratio slope of about 0.038x. The long proof must keep the exact rationals. Any further coarsening of the 3/5 or 177/100 constants must be rechecked."
+    ],
+    "major_note": []
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is a pre-proof object, class, source, feasibility and statement audit. It is not acceptance of a written long proof, and full scientific, type and source review remains required afterward.",
+    "This is AI review, not human verification, a novelty audit or whole-paper clearance.",
+    "No code was executed and no hash was computed because the available tools are read-only. All arithmetic checks were done by hand. Execution, SHA, sync and prior-receipt statements in the packet, including local-recon, were not independently verified.",
+    "All 16 Q coefficients and all 10 Num coefficients were derived by hand. The 32 Bernstein coefficients were not each derived individually: A_0, A_1, A_2, A_15, B_0 and B_15 are exact, and three independent weighted-sum identities per certificate were checked, in addition to static review of the builder formula. A finite Lean or kernel check of each coefficient remains the proposed later gate.",
+    "Accepted bridge, occupation, raw-value and consumer inputs were read and reviewed only for scope and new application, not reproved wholesale.",
+    "Source interpretation is limited to the two supplied crops. Later source sections were not read, and intended normalization stays UNKNOWN.",
+    "The ambient amsg queue notice was neither read nor used."
+  ]
+}

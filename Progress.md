@@ -6,7 +6,6 @@
 
 ## Current state
 
-- **Live GLOBALd1Omega preproof:** full-rangeGamma/elementaryrational-envelope target at6aa03b9; actualOpus5.5/high,15texts+2images,session24608/native stratonovich-global-omega-statement-v1. No globaltheoremadopted yet. Originalall-dimensional/sharpupper/sourcegates open; poll samehandle.
 - **Latest actual damped lower result:** temporalBeta/legalX/staticlower/dampedenergy GENERALOmega pointcomparison and whitealpha1,a1/2 directpoint theorem(16), exactzeta=(2418683125/2415919104)^(1/8)>1, accepted7groups/HIGH at8883160 (295.426seconds,28texts+2images). OwnE_star^O explicitmeaningfuldomain; source/domain/label matching and normalization unadopted. Threefinite scalar applications checked. NEXT: freeze/falsify candidate full-range Taylor4/Gamma inequality for globalOmega>=1; current8samples/reduction unreviewed. Sharpupper/originald2d3/exactlimit/fullgoal remainOPEN.
 - **Latest raw value comparison:** actual positive-control variational VALUE ceiling in own raw occupation energy E_eta, with strict displayed-map gaps ateta1/2 and legalalpha1/10,a9/10eta1, accepted8groups/HIGH atad6c188 (322.118seconds,26texts+4images). Actual moment Q2 still has only LOWERQ2>=V2 from thismechanism; no Q2 upper/sourceconstantidentity. Two scalar applications checked. Dampedbridge/whitepoint now accepted at8883160; NEXTglobalOmega comparison. Original9pointrecon doesnotprove fullrange. Original sharpupper/all-dimensions/intendednormalization remainopen.
 - **Latest occupation bridge:** actual positive X=L2(time;L1 intersect L2 space) covariance/closed-H1-form/measurable-Rayleigh-rate approximation, original-point lower and exact smooth/X score-supremum equality accepted8groups/HIGH at80e47d6 (272.897seconds,25texts). Includes actual finite-energy occupation densities g² and bounded nonnegative timeweights. Two new scalar form-budget applications checked. RawVALUE ceiling now accepted atad6c188; NEXTdamped-lower-endpoint comparison. Intended normalization/sharp upper/higher dimensions remain open.
@@ -5041,3 +5040,22 @@ std3axioms/2Falsecontrols; initialdenominatornormalizationcompilefailure
 retained, fixedonlycanonicalnonzerofacts. CAS/generatorbyte-replay and
 compiledsourceSHA checked.69facts/16seams provisional, analyticGamma/
 kernel/actualpointconsumer applications await fullindependentgate.
+
+### Globald1Omega preproof and completecandidate — 2026-10-30
+
+ActualOpus5.5/high17PASS/HIGH,472.565seconds,15texts+2sourceimages,
+no requiredrepairs. All17live/frozen/git6aa03b9 inputs,32nativearchive
+members rootverified. Sevenminorfindingsadjudicated; v1numericsprose
+claimed2assertions absent inoldcode, oldv1preserved; v2explicitlyadds
+sqrt/finalexp assertions/all7marginfields,SAME60digits/cases,execPASS.
+No proofdependsonoldoverstatement. Statementapproval ONLY, no recovery/
+retry/confidencechange. Actual4finiteLeanlemmas notpartofpreproof.
+
+Newnotes/global-d1-damped-lower.md completecandidate: actualP4kernel/
+Gammaelementarybounds/positivebracket/rationalV, exactdegree15Q with
+TWO16term positiveintegerTABLES, fullfiniteLeanQ/D/V bound, thenACTUAL
+originalpointlower ALLd1a/alpha with explicitgainV^-1/k>1. Gamma moment
+boundselfcontained/noEulerconstanttable/reflection. 31texts+2imagesFULL
+scientificpacket includescomplete4publicdefs/types/source/applications.
+Notadoptedbefore properFULLgate. Originald2d3/sharpupper/source/domain/
+label/conditionalexactlimit/wholepaper remainOPEN, fullgoalACTIVE.
