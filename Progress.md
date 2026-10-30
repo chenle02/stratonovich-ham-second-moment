@@ -40,7 +40,15 @@
   and null-set-safe driver reconstruction; raw profile C1/tail application;
   exact observable shift; high-value existing Lean algebra reuse; scientific
   Opus5.5/HIGH review; then spectral cone/product estimate. The statement
-  review has NOT been dispatched at this checkpoint. No review invented.
+  review was launched on frozen source `0586399` using actual Opus5.5/high
+  subscription runtime2.1.304 and account <account removed>. Session3915 is live at
+  capture; exact launch binding is in statement-launch-v1.json. Poll the
+  same native state for a terminal report; do not restart on an observation
+  timeout. No verdict yet; no review invented.
+- Local wiki search/cite and synthesized concept/model reads are recorded in
+  local-recon.json. REFRAME as standard Gaussian tilting applied to the
+  actual flow; no theorem/method novelty or full literature gate claimed.
+  Existing algebra inspected for reuse; no new Lean declarations or build.
 - Accepted science and canonical TeX/PDF unchanged. Lean stays L0/PROPOSED;
   decision4, source normalization, higher dimensions, sharp constants and
   whole-paper clearance remain open. No cluster or correspondence action.
