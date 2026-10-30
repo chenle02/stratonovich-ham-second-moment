@@ -1,0 +1,93 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "high",
+  "source_coverage": [
+    "reviews/2026-10-30-scalar-frequency-row/target-v1.md: full file, lines 1-51",
+    "reviews/2026-10-30-scalar-frequency-row/falsification-v1.md: full file, lines 1-26",
+    "reviews/2026-10-30-scalar-frequency-row/worker-honesty-v1.md: full file, lines 1-18",
+    "reviews/2026-10-30-scalar-frequency-row/canonical-model-context.txt: full file, lines 1-39 (the file itself is an excerpt)",
+    "reviews/2026-10-30-scalar-frequency-row/check-diagnostics.py: full file, lines 1-25",
+    "reviews/2026-10-30-scalar-frequency-row/diagnostics-v1.json: full file, lines 1-151",
+    "reviews/2026-10-30-scalar-frequency-row/check-radial-diagnostics.py: full file, lines 1-18",
+    "reviews/2026-10-30-scalar-frequency-row/next-scalar-row-diagnostics.json: full file, lines 1-142",
+    ".review/required-sources.json: full read plan, lines 1-26 (no read credit)"
+  ],
+  "checks": [
+    {
+      "claim": "C1: nu(d(xi-eta)) is the pushforward eta=xi-lambda, lambda~nu, valid for zero and nonzero xi and for singular spectra, with no density, Jacobian, evenness or physical positivity needed.",
+      "verdict": "PASS",
+      "reason": "The set {|eta|<=rho} is the closed ball of radius rho about xi in lambda, so its mass is at most C rho^alpha, and the far region uses the ball centred at lambda=0. Only ball growth is used, and the integrand is continuous and positive, so the integral is well defined in [0,infinity]. Nothing is lost at xi=0, where the bracket is 2<h|eta|>^(a-1). nu=0 is trivial, and C=0 forces nu=0."
+    },
+    {
+      "claim": "C2 near region: for |lambda|<=4q with q=max(1,|xi|), dropping the brackets gives a bound uniform in xi and h.",
+      "verdict": "PASS",
+      "reason": "|eta|<=5q holds. <xi>^(2gamma-1)<=q^(2gamma-1) for all xi, including |xi|<1, because 2gamma-1<0. The shell sum of 2^(j(alpha-1)) up to 5q is O(1) for alpha<1, O(1+log q) for alpha=1, and O(q^(alpha-1)) for alpha>1. After the weight, these give q^(2gamma-1), q^(2gamma-1)(1+log q), and q^(2gamma+alpha-2). All are bounded under the stated gamma range, and the log is absorbed by the strict negative power at alpha=1. Since B_alpha(h)>=1 on (0,1], the near term fits the target."
+    },
+    {
+      "claim": "C2 far region: for |lambda|>4q, both oscillatory arguments are at least |lambda|/2, |eta| is comparable to |lambda|, and centred shells give B_alpha(h), with the tail convergent exactly under alpha+a<2.",
+      "verdict": "PASS",
+      "reason": "3|lambda|/4<=|eta|<=5|lambda|/4 and |xi|<|lambda|/4 give ||xi|-|eta||>=|lambda|/2 and |xi|+|eta|>=|lambda|/2. The bracket is monotone, so it is at most 2<h|lambda|/2>^(a-1). Shells with h2^j<=1 sum to O(1), O(1+log(1/h)), or O(h^(1-alpha)) according to alpha<1, =1, or >1. Shells with h2^j>1 sum to h^(a-1) times a geometric series in 2^(j(alpha+a-2)), giving O(h^(1-alpha)), which is at most O(B_alpha(h)). For nu=|lambda|^(alpha-d)dlambda at xi=0 the integral converges iff alpha+a<2, so 'exactly' is correct. The same example shows B_alpha is the correct order at xi=0 for each regime of alpha."
+    },
+    {
+      "claim": "C2 constant: K can depend only on alpha, a and gamma, not on d, nu, C, h or xi.",
+      "verdict": "PASS",
+      "reason": "Only Euclidean ball masses and one-dimensional dyadic series are used, with no covering or volume constant, so no d-dependence enters. The factors are 1/|1-2^(alpha-1)| away from alpha=1, sup_q q^(2gamma-1)(1+log 5q) at alpha=1, and 1/(1-2^(alpha+a-2)). No impossible uniformity was found. This is a statement-stage exponent audit, not acceptance of a written proof."
+    },
+    {
+      "claim": "C3: h^(2-a)B_alpha(h)<=K_beta h^(2beta) on (0,1] for 1/2<beta<min(1-a/2,(3-a-alpha)/2), the interval is nonempty, and the log endpoint is excluded.",
+      "verdict": "PASS",
+      "reason": "For alpha<1 the condition is 2beta<=2-a. For alpha=1 both caps equal 1-a/2, and strictness gives sup h^epsilon(1+log(1/h))<infinity with epsilon=2-a-2beta>0. For alpha>1 the exponent is 3-a-alpha, which is below 2-a, so the min selects the correct branch. Nonemptiness follows exactly from a<1 and alpha+a<2. At alpha=1 and beta=1-a/2 the implication fails, since the radial xi=0 row grows like log(1/h). The target explicitly denies any Gaussian Holder, path or Young conclusion."
+    },
+    {
+      "claim": "C4 d1 controls: the 12 rows use actual measures and admissible parameters, compute both oscillatory terms and both signs of lambda, and report the stated maximum.",
+      "verdict": "PASS",
+      "reason": "The code implements |lambda|^(alpha-1)dlambda with eta=q-r and eta=q+r. The parameters alpha=0.5 and 1, a=0.5, gamma=0.2 are admissible for d=1. There are 12 rows and the maximum J/B is 14.2338, as stated. Hand checks agree: 10.48823 at xi=0, h=1 equals 2 Gamma(1/4)Gamma(1/2)/Gamma(3/4), and it coincides for alpha=0.5 and 1 by Beta symmetry. An asymptotic estimate for alpha=1, xi=64, h=1 gives about 0.32 against the listed 0.3158."
+    },
+    {
+      "claim": "C4 resonance nodes: falsification-v1.md lines 7-8 say the d1 quadratures are split at all relevant small, large and resonant nodes.",
+      "verdict": "FAIL",
+      "reason": "In d=1, lambda=r>0 gives eta=q-r, so |eta|=|xi| at r=0 and also at r=2q, where the first bracket reaches its maximum value 1 with width about 1/h. The list {0,1,q-1,q,q+1,1/h,4max(1,q)} contains r=q (eta=0, the denominator peak) but never r=2q for q=8 or q=64. The point 16 lies inside [9,32] when q=8 with either h. The point 128 lies inside [65,256] when q=64 with either h. All 8 nonzero-frequency rows are therefore unsplit at the true phase resonance. The stated claim is false as a description of the code."
+    },
+    {
+      "claim": "C4 radial: the 15 xi=0 rows are correctly normalized, and alpha=1.25 is admissible only with d=2 or d=3.",
+      "verdict": "PASS",
+      "reason": "The factor 2 accounts for both equal oscillatory terms at xi=0, and angular mass is normalized to 1. The relation to the d1 rows is the expected factor 2: 5.2441 against 10.4882. Scales 1, 1+log(1/h) and h^(-1/4) are coded and listed correctly. Hand checks agree: 8.8195 equals Gamma(5/8)Gamma(1/8)/Gamma(3/4), the alpha=1 increments equal 8 log 2 per four dyadic steps, and the alpha=1.25 ratio tends to Gamma(1/8)^2/Gamma(1/4), about 15.66. A density |lambda|^(alpha-d) in d=2 or 3 satisfies translated growth by rearrangement. A line measure with alpha=1.25 fails it, so its exclusion is correct."
+    },
+    {
+      "claim": "C4 status: numerical precision is not presented as a certificate and no all-xi theorem is inferred.",
+      "verdict": "PASS",
+      "reason": "The script status strings and falsification lines 9-11 and 18-19 limit the rows to unreviewed calibration and deny certified integral accuracy. The missing-node defect concerns a separate statement about splitting and does not change this disclaimer."
+    },
+    {
+      "claim": "C5: the scalar-versus-operator gap and the original full goal are explicit, the pending foundation is not imported, and no new Lean, Skorohod, contact, source-fix, companion, HPC or whole-paper claim is made.",
+      "verdict": "PASS",
+      "reason": "Target lines 3-4 and 45-51 state the gap and keep the original all-dimensional lower, sharp upper and source goals active. Worker-honesty lines 3-8 keep ball growth as a named hypothesis, and target line 8-9 makes nu_R conditional on the separate foundation. The parameter ranges match H:homog once a is read as alpha_0."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [
+      "falsification-v1.md lines 7-8 claim a split at all relevant resonant nodes, but check-diagnostics.py line 19 omits the phase-resonance point lambda=2|xi| in all 8 nonzero-frequency rows. This is a false statement about the diagnostic artifact on a point the gate asks to verify. Hand estimates give the correct order of magnitude for the sampled rows, so no bound is contradicted. However, the two q=64, h=1 rows contain a peak of width about 1 inside an interval of length 191, so their long printed strings should not be read as accurate. A rough estimate, not executed, suggests about 5 correct digits there."
+    ],
+    "minor": [
+      "The target inequality itself survived the exponent audit in every regime. This FAIL does not refute the statement, and no false exponent or impossible uniformity was found.",
+      "No finite control tests nonzero xi with alpha>1, which is possible only for d=2,3. That is the regime where the gamma threshold and h^(1-alpha) both act, and it is covered here only by hand exponent analysis. The target does not depend on numerics, and the falsification note says the radial rows are xi=0 only.",
+      "No control uses a singular nu, and every row has a=0.5. Neither gamma nor alpha+a is tested near its threshold, so the assertion about singular spectra rests on the analytic shell route alone.",
+      "The ratio columns are J/B, not J/(C B). The ball constants C=2/alpha for the d1 rows and C=1/alpha for the radial rows are not recorded. In the target's normalization, the 12 d1 rows have maximum ratio about 5.24, not 14.234.",
+      "The figure 14.234 is the maximum over the 12 d1 rows only. The separate radial table reaches 14.773 and is still increasing toward about 15.66.",
+      "The strict gamma inequality is needed for the near bound only at alpha=1. At alpha<1 with gamma=1/2, or alpha>1 with 2gamma+alpha=2, the near exponent is 0 and remains bounded. The target's wording is true but does not make this distinction.",
+      "The target never writes a=alpha_0 explicitly. The identification is clear from the matching ranges and threshold, but an explicit statement would remove any doubt.",
+      "Translated ball growth is not implied by homogeneity alone: a homogeneous measure on a line with alpha>1 violates it. The target correctly treats it as a hypothesis, so applicability to every H:homog covariance remains conditional on the pending foundation."
+    ]
+  },
+  "required_repairs": [
+    "Make the falsification record true: either add lambda=2|xi| to the quadrature nodes in check-diagnostics.py and regenerate diagnostics-v1.json, or withdraw the claim in falsification-v1.md lines 7-8 that all relevant resonant nodes were split and state the omission."
+  ],
+  "limitations": [
+    "This is a statement, object and feasibility audit. It does not accept a complete proof, and it is neither human verification nor a novelty audit.",
+    "No script was run because the review had read-only file tools. Numerical rows were checked by code inspection, closed forms and hand asymptotics. The quadrature-error estimate is rough and unverified.",
+    "Only the excerpt in canonical-model-context.txt was available. The pending foundation note named in worker-honesty-v1.md is not in the packet and was not read, so translated growth for the actual nu_R was not assessed.",
+    "The relation of J_h, including its weight <xi>^(2gamma), to the actual phase operators is outside this packet. The target explicitly leaves that derivation open, and this report gives no whole-paper or operator-level clearance."
+  ]
+}

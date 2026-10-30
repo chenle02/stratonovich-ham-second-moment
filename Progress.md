@@ -5261,3 +5261,21 @@ Separate scalar row statement review session67937 still running; its input
 ball growth is a named hypothesis, no adopted scalar theorem yet. No new
 Lean claim or official companion. Canonical TeX/PDF/wiki unchanged; no
 correspondence, source normalization repair, Skorohod, HPC or public release.
+
+### Scalar diagnostic failure and repair — 2026-10-30
+
+Actual native Opus5.5/high scalar STATEMENT v1 FAIL/HIGH,10 checks,
+275.953 seconds. One required repair: diagnostic narrative said all
+resonances were split, but code omitted lambda=2|xi|. Mathematical estimate
+survived the exponent audit; no scalar counterexample found. Preserve FAIL,
+all eight live/frozen/git e5cd77d bindings and23 native files verified.
+
+New v2 adds phase resonance2q and width1/h neighbors, regenerates12 actual
+d1 rows at30/50-digit precision (agreement1e-10, not certified accuracy),
+records C=2/alpha and raw versus normalized ratios. Fifteen radial xi0
+controls remain distinct; no alpha>1 nonzero-xi or singular-spectrum test
+claimed. Explicit a=alpha_0; mathematical target/range unchanged. Ten-text
+repaired statement packet frozen before long proof. Full goal ACTIVE;
+accepted covariance foundation d967ea5 retained, no scalar/operator/path/
+new moment adoption from diagnostics. Native v1 failure not quota/missing
+report and not converted to a pass. No sourcefix/contact/HPC/companion.
