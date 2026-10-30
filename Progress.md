@@ -4821,3 +4821,23 @@ retained. No reviewer/Lean job remains live. CanonicalTeX/PDF unchanged.
 Next realgap rawVALUE/clock/sourcecomparison, not more homogeneity/density.
 Original intendednormalization/sharpupper/higherdimensions/wholepaper/
 coldread/novelty/circulation remain open; fullgoalACTIVE.
+
+## Raw value ceiling proposed — 2026-10-30
+
+Previousgoalturn PROGRESS: actualoccupationcontrol approximation/same
+rawREALsupremum/pointconsumer adopted80436e3 after8HIGHchecks,60finite
+localdeductions/13seams exactscopes. Currentcleanlocal/origin/<HUB>
+1803694/0:0 checked, advisoryauditexit0, no foreignWIP/livejob.
+
+Next substantivecandidate: rawpositivecontrolVALUE upper viaexplicit
+occupationenergy E_eta=sup_O(v_g²-etaT), sharp interpolation/actual
+smoothground/covarianceCS/timeCS/scalaroptimization. Proposedcap
+V_c<=c^m(2eta)^(alpha/(2k))F0(E_eta), plusstrictalgebraicdisplaymapgap
+Fa/F0 and legalalpha1/10,a9/10 eta1 exactintegercriterion. No longproof
+yet; primaryp3/p4images viewed/hashbound,13texts+4images frozen for
+independentpreproof. Six80digitscalarcontrols/kineticfactor andhalfvariance
+mutations pass; exact39^39*21^21>2*30^60 checked. E inputs arbitrary,
+notphysicalenergycomputed, no adoptedroute-no-go. F0 retainsactuala in
+energy; sourcegradient/kernel/domain/intendedUNKNOWN boundaries explicit.
+Vceiling is NOTQ2upper. Fulloriginalsharp/all-dimensionalgoal ACTIVE;
+no sourcecorrection/companion/HPC/contact/Skorohod/wholepaper claim.
