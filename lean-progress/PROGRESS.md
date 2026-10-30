@@ -378,3 +378,15 @@ checked; analyticGamma/Beta/static/dampedenergy/point assembly notformal.
 Rootversion/tag/Falsegoals/archives rechecked.65finite deductions/15local
 seams scopedaccepted. No officialpackage/companion/lease/registry/HPC/
 Comparator transaction; L0/PROPOSED anddecision4 unchanged.
+
+## GlobalOmega exact rational core provisional — 2026-10-30
+
+Fournewpublictheorems plusactualpublicQ/D/Vdefinitions compile/audit/
+freshreplay at4.35.0/Mathlib56a0058: two16term positivequartercertificates,
+Qpositive and ACTUALrationalV<1. Completeprinteddefs/types/std3axioms,
+5matchingartifacts,2Falsecontrols. Initialdenominatornormalizationcompile
+failure preserved; canonicalnonzerofacts added,no publicstatementchange.
+CAS/Leangeneratorreplay byteidentical andsource matchesreceipt; bothnative
+archives memberverified.69finite deductions/16localseams provisional.
+Independent actualGamma-envelope/applicationreview required, no formal
+Gamma/kernel/energy/globalOmega/SPDE or package/companion/HPC theorem.

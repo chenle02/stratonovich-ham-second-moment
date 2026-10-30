@@ -5033,3 +5033,11 @@ GlobalOmega preprooflive at6aa03b9: actualfirstpartyOpus5.5/high,
 selectedheadroom0short66weekly. Session24608/samehandle,norestart on
 observationtimeout. Longanalyticproof awaitsproperstatement/sourcegate.
 FinitepolynomialLeanwork provisional/outsidepreproofpacket. GoalACTIVE.
+
+While globalpreproof runs, FOURfinitekernel lemmas nowchecktheactual
+rationalcore(Q/D/Vdefs fullyprinted),twoquarterpositive16termcertificates,
+Qpositivity and V<1 withdomain0<x<=1/2. Cleancompile/audit/5replayhashes,
+std3axioms/2Falsecontrols; initialdenominatornormalizationcompilefailure
+retained, fixedonlycanonicalnonzerofacts. CAS/generatorbyte-replay and
+compiledsourceSHA checked.69facts/16seams provisional, analyticGamma/
+kernel/actualpointconsumer applications await fullindependentgate.
