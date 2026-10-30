@@ -1,91 +1,104 @@
-Last updated: 2026-10-30 16:08 UTC (Codex)
+Last updated: 2026-10-30 17:51 UTC (Codex)
 
-Original full upper/sharp goal ACTIVE. Raw positive-separable d1 variational
-lower/homogeneity is now accepted; source/optimizer, original higher
-dimensions and sharp upper/lower identification remain open.
+Original full upper/sharp goal ACTIVE. Uniform actual general-positive-profile
+S1-S3bridge accepted. Existing point lower/variational class remains
+positive-SEPARABLE until the actual stochastic consumer is proved.
 
 ## ⏭ Next session: where to stand and what to do
 
 Stand in this repository root. Read Progress.md and freeze/falsify the
-ACTUAL nonseparable-positive-profile extension statement described in
-reviews/2026-10-30-raw-variational-dilation/next-optimizer-class-obligations.md.
-This is the next REAL class/source gap, not another homogeneity calculation.
-No reviewer is live now; do not restart completed statement/proof sessions.
+ACTUAL general-positive-test cone/event/raw-cost/variational consumer in
+reviews/2026-10-30-nonseparable-family/next-general-test-consumer.md.
+That file is UNREVIEWEDplanning. The new uniform-family bridge is now
+accepted, but the original point lower class is STILLpositive-separable
+until this actual stochastic consumer is proved/reviewed.
 
-Do not repeat the accepted raw variational proof. The accepted lower class
-is positive SEPARABLE smooth compact tests. General time-space profiles
-produce h(t,x)=Cov(W(t,x),W(psi)) and not a single b(t)U(x). The accepted
-bU spectral/cone/event statements cannot silently be relabelled. Derive
-the required compact-family spectral/weighted/F-wave statements for the
-actual positive profile family, then its actual event/lower consumer.
-Keep V1 auxiliary: no first-mean/source E/E_star/L_* identification or
-normalization correction is approved.
+No reviewer or Lean job is live; do not restart completed sessions.
+Use notes/nonseparable-profile-family.md and its scientific adjudication
+(sourcec0a0093,27PASS/HIGH). Reapply the quantitative cone ARGUMENT
+with hypotheses verified for sigma-indexed h_sigma, not a silent bU
+theorem substitution. Derive actual masked/noisy block errors, final
+partial block and SAME-Z cost before enlarging the lower test class.
+Keep auxiliary V1 distinct from actual first mean/source constants.
 
 ## Pre-flight checks
 
-1. Read AGENTS.md/PROJECT-GOAL.md and current Progress.md authority;
-   preserve full original all-dimensional upper/sharp goal and decisions.
-2. Recheck local/origin/<HUB> refs/dirty ownership; serialize ref writes.
-   Substantive adoption before this HANDOFF-only successor is
-   3cebe0f471fbf47d5a18f71033c307c3243316a1. No foreign WIP or live reviewer remains.
-3. Latest scientific0fd2a05, adoption3cebe0f: raw variational class/Radon/
-   spectrum/supremum proof20groups/HIGH,280.82seconds,29texts+1image,
-   no mandatory repairs. All30input bindings/native archive verified.
-   Nineoptional findings adjudicated; opening status and3proseclarifications
-   changed on adoption, formulas and4Lean sources unchanged. Evidence in
-   reviews/2026-10-30-raw-variational-dilation/.
-4. Accepted raw V_c finite/positive, V_c=c^((4-alpha)/(3-alpha))*V1 and
-   original point lower Q2>=V2 apply only to positive-separable d1 tests.
-   V1 is not actual first mean or sourceL; V2>2V1 is not actualJensen
-   improvement. Gamma fixed; each spatial scale fixed before time limit.
-5. Actual event scientificd5dcd46/adoption28cc01e stays accepted18HIGH,
-   same residual and raw halfcost. Coneabfdab4, weighted1242590,
-   complementb07d013 andtilte51432c remain scopedaccepted inputs.
-6. Four newest scalar Lean types/applications passed20HIGH; total58finite
-   declarations across12standalone seams. First lint/serverhash refusal
-   preserved; clean successor has all5outputmatches and3numericFalse
-   controls. No formal measure/spectrum/supremum/SPDE/package theorem.
-7. Exact canonical upper/current-source0fd2a05 hashes match original
-   custody; H:homog and alpha0=a/samecanonicalu dictionary retained.
-   Only finite upper rate consumed, no staticnumeric/firstmeanvalue.
-   Canonical110-pageTeX/PDF unchanged; L0/PROPOSED and companiondecision4
-   still pending. No cluster or correspondence authorization.
-8. Pinned author source normalization discrepancy and static white numeric
-   warning remain open. No correction inferred. Local wiki search/cite/
-   synthesis and exactp4image reads retained in raw-dilation local-recon
-   and source-crosswalk. Broader source/optimizer correspondence needs
-   actual proof, not relabelling V1 as a known constant.
+1. Read AGENTS.md/PROJECT-GOAL.md and current Progress.md; original
+   all-dimensional upper/sharp objective and decisions remain binding.
+2. Check local/origin/<HUB> refs and dirty ownership, serializing ref
+   writes. Substantive adoption before this HANDOFF-only successor is
+   4a6d672c782bdc102806ddf2463e327b16225512. No foreign WIP or live jobs.
+3. Latest actual-family scientificc0a0093,adoption4a6d672:27PASS/HIGH,
+   379.661seconds,22texts+8exactsourceimages complete,no requiredrepairs.
+   All30input bindings/native archive checked;8optional clarifications
+   in reviews/2026-10-30-nonseparable-family/scientific-adjudication-v1.md.
+   Entire mathematical proofbody unchanged on adoption.
+4. Earlier preproofv1FAIL/HIGH (undefinedJ_phi) remains unaccepted. V2
+   explicitly defined unsquaredrealLINEAR displacement-only pairing,
+   passed17HIGH, and completed BEFORElongproof. Actual white rank-two
+   obstruction independentlychecked: exact b(sigma)U representation
+   falseonly, no optimizer/moment no-go. Do not repeat the repaired defect.
+5. S1-S3now hold for each fixed GENERALpositive compactpsi, sigma in
+   [0,1] asindex, notamplitude. Uniformcommon trial/gap/tails/duals/
+   projection and fractionalphysicalFcomplement are proved. Bothphase
+   entries/constants and decayingpartner remain. J_phi ignores velocity
+   asmeasurement only; no phasevalue-only multiplication shortcut.
+6. Existing stochastic/variational lower results remain SEPARABLE:
+   actualeventd5dcd46,rawV0fd2a05 and coneabfdab4. They are inputs/
+   proof arguments to recheck, not automatically general-profile claims.
+7. No new Lean declarations in this analytic-family wave.58finite local
+   deductions/12seams remain, all with their exact earlier scopes; no
+   formal operator/source/ODE/spectral/supremum/SPDE theorem.
+   L0/PROPOSED and privatecompanioncreationdecision4 unchanged.
+8. TeschlSECONDedition2014source images were checked at both repaired
+   preproof and fullgate. Custody queue field is an old snapshot; wiki
+   cite still notfound at the last check, not a pipelinecompletion claim.
+   No duplicate ticket or sourceauth claim from ingest status.
+9. Canonical110-pageTeX/PDF unchanged. Source normalization and static
+   white numerical warnings remain unresolved; no correction/sourceL
+   or firstmean identification approved. No external contact/publication.
 
 ## Concrete deliverables for the next session
 
-- One frozen actual general-positive-profile spectral/flow target with
-  parameter/family/class and source hypotheses explicit, followed by
-  falsification and independent preproof statement/fidelity audit.
-- Complete self-contained actual-family extension or precise obstruction,
-  with source/context and full scientific review before use.
-- Then derive the actual nonseparable lower/variational consumer and
-  compare optimizer/source classes and all constants without selecting
-  an unapproved normalization correction.
+- Frozen actual general-positive-test consumer, with independent
+  statement/fidelity audit before proof, including exact h_sigma and J_phi.
+- Rechecked cone budgets for the new index family plus actual noisy/masked
+  freezing/telescope/last-block errors; then positive-average event and
+  same-Z raw half-cost ORIGINAL point lower for every positive compactpsi.
+- Enlarged positive-test V^pos with verified class/scaling/variance/upper
+  hypotheses, full scientific review and exact reused finite-kernel
+  application matching. Source/optimizer comparison remains separate.
 
 ## Success criteria for the immediate next step
 
-An independently audited exact next class statement with no desired
-F-wave/product estimate hidden as a premise. Then a reviewed complete
-actual-family proof or a precise no-go. Preserve the original point,
-covariance, dimensional and sharp-constant objectives; passing a d1
-class bridge does not complete them.
+A complete reviewed actual stochastic consumer that DISCHARGES its
+block-error premise and enlarges the real lower class, or a precise
+obstruction. No assumption of whole-product closeness, no change of the
+actual residual or original point target. Even successful positive-class
+closure does not identify a source sharp constant or solve higher dimensions.
 
 ## Anti-success criteria
 
-No separable-density/sufficiency assumption, silent bU-to-general-profile
-substitution, V1=firstmean/sourceL, or claim of Jensen improvement from
-raw label homogeneity. No source correction, wrong kinetic/variance
-factor, F-isometry across spatial scales, moving-scale uniformity or
-Skorohod development. No sibling/refdb/sourcePDF edits, privatecompanion
-creation, HPC, public release, correspondence, novelty or whole-paper
-clearance without the separately required authority/gates.
+No automatic bU-to-h_sigma theorem substitution, per-q-to-uniform
+constant inference, point evaluation or squared/velocity-inclusive J_phi.
+No deleted velocity/decayingpartner/nonlocalprojection tail, no global
+E-density-in-F or stationaryglobalHS shortcut. No across-testuniformity,
+s(delta), signedtest coverage, or optimizer/sourceL/firstmean equality
+assumption. No actualJensen improvement inferred from auxiliary V2>2V1.
+No source1.24repair, sibling/refdb/sourcePDF edit, Skorohod development,
+privatecompanion/HPC/contact/circulation/novelty or whole-paper clearance.
 
 ## What the previous sessions produced
+
+2026-10-30 actual nonseparable family close: sourcec0a0093/adoption4a6d672,
+27PASS/HIGH,379.661seconds,22texts+8Teschl2ndedimages,no required repairs.
+Derived commonRayleigh/maxmin gap, uniformODEtails, exactlocalFduals/
+projection/constant and average entrance, physicalcommutation and
+fractional/globalE/localFcomplement with growingprojectiontail retained.
+V1undefinedJ_phi failure preserved; repairedV2passed17HIGHbeforeproof.
+Actualwhite rank-two representation obstruction scopedreviewed. No new
+Lean code or general-profile event claimed. Full proofbody unchanged;
+8optional clarifications recorded. Next stochastic/test-class consumer.
 
 2026-10-30 raw variational close: scientific0fd2a05/adoption3cebe0f,
 20groups/HIGH,29texts+1sourceimage,280.82seconds,no required repairs.
@@ -706,33 +719,38 @@ Latest checkpoints:
 
 ## Repo & git state at handoff
 
-Article substantive adoption before this handoff successor: 3cebe0f471fbf47d5a18f71033c307c3243316a1.
-Local/origin/<HUB> synchronized there; no foreign dirty paths or live
-reviewer/Lean job. All mathematical/evidence changes committed and pushed.
+Article adoption before this handoff successor: 4a6d672c782bdc102806ddf2463e327b16225512.
+Local/origin/<HUB> synchronized there; all mathematical/evidence paths
+committed/pushed, no foreign WIP or live reviewer/Lean job.
 Wiki ../SPDEs-wiki/content/projects/stratonovich-ham-second-moment.md exists
-and remains unchanged. This is an intra-round checkpoint, not completed
-full wiki/cold-read/round-close or whole-paper/circulation clearance.
+and is unchanged. This is an intra-round checkpoint, not complete full
+wiki/cold-read/round-close or whole-paper/circulation clearance.
 
 ## Operating notes
 
-Read exact reports/receipts/ledgers/adjudications under dated review
-directories. Native original artifacts and both local Lean attempts are
-retained; no report confidence or failed receipt was relabelled. Current
-full raw variational proof changed only its status and3optional prose
-clarifications at adoption. All mathematical formulas/Lean sources remain
-scientific0fd2a05. Local kernel evidence and AI analytic review are separate.
-No official private companion/package/Comparator gate exists.
+Source reports/receipts/read ledgers/native archives and alladjudications
+are retained in dated review directories. The native original FAIL and
+repaired statement PASS are distinct identities, not confidence retries.
+Scientific family proofbody is exactc0a0093; only openingstatus changed.
+Eight optional proof clarifications are explicit in its adjudication.
 
-Next planning file is NOT proof or novelty clearance. Source corrections
-remain UNKNOWN; auxiliary V1 cannot be substituted into the original sharp
-source target. Full original goal remains ACTIVE.
+Generic old fractional comparison/localF/physicalflow arguments were
+reused only after matching actual hypotheses; all new common constants
+are traced in uniformity-ledger-v1.md, never inferred from per-member
+fixed-q estimates. This wave is analytic, not a Lean spectral certificate.
+
+No package/companion/lease/registry/cluster/Comparator transaction.
+Supported first-party Opus route uses launch-local2.1.304PATH and same
+environmentdoctor. Latest selected account <usage removed> at
+last scientificlaunch, not a promise of future quota. No systemsetup edit.
 
 ## Risks to monitor
 
-Positive separable tests may not contain the source optimizer. General
-h(t,.) requires actual compact-family spectral/F-wave consumers; lower
-class enlargement and source correspondence are separate from homogeneity.
-Original higher-dimensional first-driver/phase/flow/spectral work and sharp
-upper constant remain open. Intended source normalization still needs PI
-clarification before any claimed identification. Respect all original
-stop/report decisions and never declare full completion from scoped gates.
+The frozen family theorem is deterministic. Actual full-horizon product,
+masked generalprofile h(delta u), uniform C1mask and slow-freezing error,
+final partial interval and positive terminal average still require the
+consumer proof. Positive test class is not signed controls or source
+optimizer sufficiency. Original higher-dimensional phase/flow/spectral
+work, sharpupper constant and intendedsource normalization remain open.
+Retain original stop/report decisions and full objective. No source
+constant or first-mean identification from auxiliary label homogeneity.
