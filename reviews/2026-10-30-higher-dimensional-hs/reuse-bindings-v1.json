@@ -1,0 +1,19 @@
+{
+  "scope": "Unchangedtwo_frequency_average/frequency_window proofs, NEWactualhigher-dimensional analyticapplications pendingreview, no gatewaiver",
+  "current_module_path": "lean-progress/local-checks/phase-response-v1/StratonovichHAMAudit/PhaseResponse.lean",
+  "current_and_prior_committed_source_sha256": "3faacb3a5c8518d449e21d8ca3a6b2a6461fd68a0dc84ee86f977e0cfb20b2c2",
+  "scientific_source": "0ae116caaa7764c45887f05c8d62e28c376f9f41",
+  "scientific_source_reachable_from_fetched_origin": true,
+  "prior_model_actual": "claude-opus-5-5",
+  "prior_review_accepted_HIGH": true,
+  "complete_types_sha256": "c9e4067aa58979dc38187690348af12fdc786125e0b9daaca89d0e5a9ab60fc8",
+  "local_receipt_path": "lean-progress/local-checks/phase-response-v1/local-receipt.json",
+  "prior_fidelity_check": [
+    {
+      "claim": "C6: Lean definitions, types, axioms, application, controls and development history",
+      "verdict": "PASS",
+      "reason": "phaseIndex = 1-(alpha+a)/4 matches (C). rough_phase_choice's hypotheses 0<\u03b1+a<2 are exactly the needed ones, and its conclusions are the margins s>1/2, s<1, (T), the sector-1 exponent <-1, and the other-sector exponent <-1. balanced_phase matches s=1/2 under \u03b1+a<2. energy_boundary is (T) at s=1. In four_component_gram, substituting r1=(t-u)|r|, r2=(t-v)|r|, k1=u|k|, k2=v|k| gives exactly the unweighted Gram cos(|r|(u-v))cos(|k|(u-v)). two_frequency_average supplies the half factor. frequency_window uses rpow exponents a-1 and a-2 as in (E), the threshold 2B/(At)\u2264r as in (W), and conclusions identical to (W). Its herr is the analytically proved (E), not a goal or event premise, and all hypotheses are discharged by C1. _hB is retained in the type (renamed, not removed). types-and-axioms lists only propext, Classical.choice and Quot.sound for all six. Controls: WrongEndpoint has s=3/4, b=3/2, 2s+b=3, so it is false. WrongEnergy is 3.5<3, false. MissingHalf is 1=2, false. WrongWindow has J=0 and A=B=t=r=1, which satisfy herr and the weak cut but not 2B/(At)\u2264r; its goal 1/2\u22640 is the inferred lower window and is false. It is labelled abstract, not the model J. The logs fail at the example lines with \u22a2 False, consistent with names and imports resolving. Compile and replay receipts are author-run; I did not execute them."
+    }
+  ],
+  "new_application": "window exponent1,t_win1,A_win=Ddiff/2,B_win=B0/2,r=absxi; parameter1NOTnoisea. Allactualthreshold/error/domain hypotheses toprove."
+}

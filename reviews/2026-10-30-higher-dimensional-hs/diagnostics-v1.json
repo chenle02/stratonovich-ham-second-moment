@@ -1,0 +1,191 @@
+{
+  "scope": "Exact 2x2 actual wave matrix and whole-space radial/temporal controls; not a Gaussian HS/SPDE no-go proof, no spatial Hhat value or source energy computed",
+  "precision_decimal_digits": 50,
+  "matrix": [
+    [
+      "-H*cq*sp/p",
+      "-H*sp*sq/(p*q)"
+    ],
+    [
+      "H*cp*cq",
+      "H*cp*sq/q"
+    ]
+  ],
+  "temporal_test": "f(t)=t^2(1-t)^2 1_[0,1],C1zeroextension in actualrawGaussiancompletion at a=1/2",
+  "J_exact": "64/693",
+  "f_mass_exact": "1/30",
+  "time_IBP_bound": "9/4",
+  "radius_threshold_exact": "6237/64",
+  "rows": [
+    {
+      "r": "128",
+      "s": "128.0",
+      "difference": "0.0",
+      "actual_time_cosine_product": "0.04607639207786856915978546294972062",
+      "proposed_lower_J_over_8": "0.011544011544011544011544011544011544",
+      "positive_margin": "0.034532380533857025148241451405709076"
+    },
+    {
+      "r": "128",
+      "s": "128.25",
+      "difference": "0.25",
+      "actual_time_cosine_product": "0.04562755402904443871984872226303164",
+      "proposed_lower_J_over_8": "0.011544011544011544011544011544011544",
+      "positive_margin": "0.034083542485032894708304710719020096"
+    },
+    {
+      "r": "128",
+      "s": "128.5",
+      "difference": "0.5",
+      "actual_time_cosine_product": "0.044297815712535052752322908178344943",
+      "proposed_lower_J_over_8": "0.011544011544011544011544011544011544",
+      "positive_margin": "0.032753804168523508740778896634333399"
+    },
+    {
+      "r": "128",
+      "s": "129.0",
+      "difference": "1.0",
+      "actual_time_cosine_product": "0.039196581790021435832199748040865625",
+      "proposed_lower_J_over_8": "0.011544011544011544011544011544011544",
+      "positive_margin": "0.027652570246009891820655736496854081"
+    },
+    {
+      "r": "256",
+      "s": "256.0",
+      "difference": "0.0",
+      "actual_time_cosine_product": "0.046179989816529659873074453189391773",
+      "proposed_lower_J_over_8": "0.011544011544011544011544011544011544",
+      "positive_margin": "0.034635978272518115861530441645380229"
+    },
+    {
+      "r": "256",
+      "s": "256.25",
+      "difference": "0.25",
+      "actual_time_cosine_product": "0.045716742533301175222133735296500821",
+      "proposed_lower_J_over_8": "0.011544011544011544011544011544011544",
+      "positive_margin": "0.034172730989289631210589723752489277"
+    },
+    {
+      "r": "256",
+      "s": "256.5",
+      "difference": "0.5",
+      "actual_time_cosine_product": "0.044367097946797517273094845864161765",
+      "proposed_lower_J_over_8": "0.011544011544011544011544011544011544",
+      "positive_margin": "0.032823086402785973261550834320150221"
+    },
+    {
+      "r": "256",
+      "s": "257.0",
+      "difference": "1.0",
+      "actual_time_cosine_product": "0.039214814519039097965974461446629546",
+      "proposed_lower_J_over_8": "0.011544011544011544011544011544011544",
+      "positive_margin": "0.027670802975027553954430449902618002"
+    },
+    {
+      "r": "512",
+      "s": "512.0",
+      "difference": "0.0",
+      "actual_time_cosine_product": "0.046172042223029783716239200863589406",
+      "proposed_lower_J_over_8": "0.011544011544011544011544011544011544",
+      "positive_margin": "0.034628030679018239704695189319577862"
+    },
+    {
+      "r": "512",
+      "s": "512.25",
+      "difference": "0.25",
+      "actual_time_cosine_product": "0.045727327130065256448245326441454612",
+      "proposed_lower_J_over_8": "0.011544011544011544011544011544011544",
+      "positive_margin": "0.034183315586053712436701314897443068"
+    },
+    {
+      "r": "512",
+      "s": "512.5",
+      "difference": "0.5",
+      "actual_time_cosine_product": "0.044395548597371326979430555965702919",
+      "proposed_lower_J_over_8": "0.011544011544011544011544011544011544",
+      "positive_margin": "0.032851537053359782967886544421691375"
+    },
+    {
+      "r": "512",
+      "s": "513.0",
+      "difference": "1.0",
+      "actual_time_cosine_product": "0.039272670923697355748028534795691413",
+      "proposed_lower_J_over_8": "0.011544011544011544011544011544011544",
+      "positive_margin": "0.027728659379685811736484523251679869"
+    }
+  ],
+  "literal_quadrature_crosschecks": 2,
+  "radial_shells": [
+    {
+      "j": 0,
+      "radii": [
+        1,
+        2
+      ],
+      "d1_integral_rminus2": "1/2",
+      "d2_integral_rminus1": "log(2)",
+      "d3_integral_r0": "1"
+    },
+    {
+      "j": 1,
+      "radii": [
+        2,
+        4
+      ],
+      "d1_integral_rminus2": "1/4",
+      "d2_integral_rminus1": "log(2)",
+      "d3_integral_r0": "2"
+    },
+    {
+      "j": 2,
+      "radii": [
+        4,
+        8
+      ],
+      "d1_integral_rminus2": "1/8",
+      "d2_integral_rminus1": "log(2)",
+      "d3_integral_r0": "4"
+    },
+    {
+      "j": 3,
+      "radii": [
+        8,
+        16
+      ],
+      "d1_integral_rminus2": "1/16",
+      "d2_integral_rminus1": "log(2)",
+      "d3_integral_r0": "8"
+    },
+    {
+      "j": 4,
+      "radii": [
+        16,
+        32
+      ],
+      "d1_integral_rminus2": "1/32",
+      "d2_integral_rminus1": "log(2)",
+      "d3_integral_r0": "16"
+    },
+    {
+      "j": 5,
+      "radii": [
+        32,
+        64
+      ],
+      "d1_integral_rminus2": "1/64",
+      "d2_integral_rminus1": "log(2)",
+      "d3_integral_r0": "32"
+    },
+    {
+      "j": 6,
+      "radii": [
+        64,
+        128
+      ],
+      "d1_integral_rminus2": "1/128",
+      "d2_integral_rminus1": "log(2)",
+      "d3_integral_r0": "64"
+    }
+  ],
+  "all_assertions_passed": true
+}
