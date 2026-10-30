@@ -17,6 +17,34 @@
 - **Local Lean:** eight standalone seams now contain45finite deductions with local compile/replay/standard-axiom evidence and scoped type/application checks. The latest7support the local flow/source map; its3false controls and exact limits are in lean-progress/local-checks/local-flow-v1/. Analytic SPDE/path inputs remain outsideLean. No official package/companion gate.
 
 
+## Resume checkpoint — 2026-10-30: joint Gaussian tilt contract
+
+- Local/origin/<HUB> were clean and aligned at `6e91493`; focused fetch,
+  ancestry and remote dirty-state checks passed. No existing WIP was changed.
+- Original full upper/sharp goal resumed. Current bounded cycle: freeze the
+  actual-driver joint Gaussian statement, falsify its sign/cost/scaling,
+  obtain statement fidelity review, then prove and independently review it.
+- Frozen proposed statement and explicit obligations:
+  `reviews/2026-10-30-joint-gaussian-tilt/contract-v1.md`.
+  It distinguishes the growing mask radius from the shrinking physical
+  scaling R, specifies a separable driver reconstruction and the actual
+  squared averaged observable, retains the residual, and fixes the raw
+  covariance profile and fast-block phase. NOT proved or accepted.
+- Exact rational MGF checks: four cases PASS, including correlated and
+  residual-variance cases. Wrong plus density fails the two correlated
+  nonconstant controls; independent/constant tests cannot detect that sign.
+  Wrong full-variance cost fails all four. Three interior temporal exponents
+  pass the amplitude cancellation. Script/results/manifest are retained.
+  These checks are not a Gaussian theorem, Lean certificate or moment bound.
+- Todo: independent statement review; countable-coordinate Gaussian identity
+  and null-set-safe driver reconstruction; raw profile C1/tail application;
+  exact observable shift; high-value existing Lean algebra reuse; scientific
+  Opus5.5/HIGH review; then spectral cone/product estimate. The statement
+  review has NOT been dispatched at this checkpoint. No review invented.
+- Accepted science and canonical TeX/PDF unchanged. Lean stays L0/PROPOSED;
+  decision4, source normalization, higher dimensions, sharp constants and
+  whole-paper clearance remain open. No cluster or correspondence action.
+
 ## Round plan
 
 Gate class: whole-paper.
