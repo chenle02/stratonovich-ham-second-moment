@@ -1,0 +1,109 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "notes/finite-gaussian-schatten.md: lines 1-224 (full)",
+    "reviews/2026-10-30-finite-gaussian-schatten/target-v1.md: lines 1-55 (full)",
+    "reviews/2026-10-30-finite-gaussian-schatten/falsification-v1.md: lines 1-20 (full)",
+    "reviews/2026-10-30-finite-gaussian-schatten/worker-honesty-v1.md: lines 1-15 (full)",
+    "reviews/2026-10-30-finite-gaussian-schatten/check-diagnostics.py: lines 1-35 (full)",
+    "reviews/2026-10-30-finite-gaussian-schatten/diagnostics-v1.json: lines 1-178 (full)",
+    "reviews/2026-10-30-finite-gaussian-schatten/check-diagnostics-v2.py: lines 1-36 (full)",
+    "reviews/2026-10-30-finite-gaussian-schatten/diagnostics-v2.json: lines 1-190 (full)",
+    "reviews/2026-10-30-finite-gaussian-schatten/statement-adjudication-v1.md: lines 1-19 (full)",
+    "reviews/2026-10-30-finite-gaussian-schatten/scientific-worker-honesty-v1.md: lines 1-29 (full)",
+    "lean-progress/local-checks/finite-young-v1/StratonovichHAMAudit/FiniteYoung.lean: lines 1-34 (full)",
+    "lean-progress/local-checks/finite-young-v1/Audit.lean: lines 1-4 (full)",
+    "lean-progress/local-checks/finite-young-v1/TypeAudit.lean: lines 1-4 (full)",
+    "lean-progress/local-checks/finite-young-v1/definitions-types-and-axioms.txt: lines 1-27 (full)",
+    "lean-progress/local-checks/finite-young-v1/local-receipt.json: lines 1-75 (full)",
+    "lean-progress/local-checks/finite-young-v1/README.md: lines 1-28 (full)",
+    "lean-progress/local-checks/finite-young-v1/application-bindings.json: lines 1-21 (full)",
+    "lean-progress/local-checks/finite-young-v1/attempt01-failure.json: lines 1-29 (full)",
+    "lean-progress/local-checks/finite-young-v1/version-check.json: lines 1-16 (full)",
+    "lean-progress/local-checks/finite-young-v1/prior-art/decision.md: lines 1-17 (full)",
+    "lean-progress/local-checks/finite-young-v1/prior-art/mathlib-exact-excerpt.txt: lines 1-7 (full)",
+    "lean-progress/local-checks/finite-young-v1/prior-art/mathlib-binding.json: lines 1-11 (full)",
+    "lean-progress/local-checks/finite-young-v1/WrongZero.lean: lines 1-4 (full)",
+    "lean-progress/local-checks/finite-young-v1/WrongRange.lean: lines 1-4 (full)",
+    "lean-progress/local-checks/finite-young-v1/WrongSigned.lean: lines 1-4 (full)",
+    "lean-progress/local-checks/finite-young-v1/negative-controls.txt: lines 1-11 (full)",
+    "lean-progress/local-checks/finite-young-v1/type-audit-custody.json: lines 1-13 (full)",
+    "lean-progress/local-checks/finite-young-v1/attempt01-native-manifest.json: lines 1-53 (full)",
+    "lean-progress/local-checks/finite-young-v1/attempt02-native-manifest.json: lines 1-65 (full)"
+  ],
+  "checks": [
+    {
+      "claim": "C1: Theorem 1 for finite rectangular complex A_k, real independent Gaussians, unnormalized Sp and even p, with dimension-free sqrt(p-1), AVERAGE then MAX, p=2 first equality and zero cases.",
+      "verdict": "PASS",
+      "reason": "Rederived. 2E Tr((X*X)^m) <= (2m-1)^m(Tr Vout^m + Tr Vin^m), and (p-1)^(m/p)=sqrt(p-1). The second inequality follows from (a+b)/2<=max(a,b), max(a,b)^(1/p)=max(a^(1/p),b^(1/p)) and ||V^(1/2)||_Sp^p=Tr V^m for V>=0. At p=2, E Tr X*X=Tr Vin=Tr Vout equals the average, with constant 1. The F=0 branch is immediate because Tr D^m>=0. The constant is dimension-free; only the variance traces depend on size."
+    },
+    {
+      "claim": "C2: Scalar AM-GM (2), natural inequality (3), scalar Holder and probability Jensen (4).",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "f'(t)=theta(1-t^(theta-1)) has the claimed signs and f(1)=0. The t=0 and v=0 cases are correct for 0<theta<1. (3) has equality at q=0 and q=L including zero bases. Zero bases for 0<q<L give LHS 0<=RHS. q<=L justifies the cast of L-q. Holder with theta=1/m closes because 1/m+(m-1)/m=1. (4) holds in both branches, using F=0 implies Z=0 a.s. and integrating (Z/F)^r<=rZ/F+1-r. Note: the Holder sentence says normalize by the power sum, whereas the argument needs the norm, meaning the power sum to the reciprocal exponent. See minor finding 1."
+    },
+    {
+      "claim": "C3: Hermitian spectral identity and (5), including negative eigenvalues, complex b_ij, q=0 and q=L; two-eigenbasis trace Holder (6)-(7).",
+      "verdict": "PASS",
+      "reason": "In Y's eigenbasis, Tr(B Y^q B Y^(L-q))=sum b_ij lambda_j^q b_ji lambda_i^(L-q)=sum |b_ij|^2 lambda_j^q lambda_i^(L-q), which is real. Absolute values handle negative eigenvalues, and (3) applies with x=lambda_j, y=lambda_i. The two weighted sums agree under i<->j with |b_ij|=|b_ji|, and sum_ij |b_ij|^2|lambda_i|^L=Tr(B^2|Y|^L). For (7), d_i=sum_j|U_ij|^2 theta_j, the row sum 1 gives Jensen for each i, and the column sum 1 gives Tr D^m after summing over i. The supporting-line inequality and its s=0 case are correct for m>=2. In (6), (2m-2)*m/(m-1)=2m. No commutativity is used."
+    },
+    {
+      "claim": "C4: Gaussian IBP, product derivative ordering, L=p-2, term count, reality of traces, Holder/Jensen expectation, finiteness, F=0 division, separate m=1 and the constant.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Tr Y^(2m)=sum_k g_k Tr(B_k Y^(2m-1)). IBP plus the noncommutative Leibniz rule gives exactly sum_(q=0)^(2m-2) Tr(B_k Y^q B_k Y^(2m-2-q)), which is 2m-1 ordered terms with L=2m-2. Polynomial integrability and vanishing boundary terms hold. (5) is deterministic and applies at each sample, then summing over k gives (2m-1)Tr(D|Y|^L). Jensen with r=(m-1)/m in (0,1) requires m>=2 and F finite, both of which hold. Dividing by F^((m-1)/m) when F>0 and raising to power m gives (10). m=1 is computed directly from E g_k g_l=delta_kl with no L=0 use. Note: the sample dependence of the eigenbasis, the product-density use of independence and the complex-polynomial case are implicit but harmless. See minor finding 2."
+    },
+    {
+      "claim": "C5: Hermitian dilation, rectangular trace cyclicity, factor 2, Tr D^m, average then max; no hidden commutativity or source hypothesis.",
+      "verdict": "PASS",
+      "reason": "With real g_k, Y=[[0,X],[X*,0]] and the blocks have sizes o and n. B_k^2=diag(A_kA_k*,A_k*A_k), so D=diag(Vout,Vin) and Tr D^m is the sum of the two traces. Y^(2m)=diag((XX*)^m,(X*X)^m). The identity (XX*)^m=X(X*X)^(m-1)X*, with Tr(UV)=Tr(VU) for rectangular U,V, gives the factor 2 for all m>=1 including the empty power at m=1. No source hypothesis or commutation enters."
+    },
+    {
+      "claim": "C6: Row and column N=16 negative controls: exact fourth moment 288, 288>144, MAX 2304, AVERAGE 1224, and scope limited to the same general finite bound.",
+      "verdict": "PASS",
+      "reason": "E(sum g_k^2)^2=3n+n(n-1)=n(n+2)=288, with Eg^2=1 and Eg^4=3 obtained by IBP. For the row, Vout=16 and Vin=I_16, so Tr Vin^2=16 and 9*16=144<288. The column swaps the roles and dropping the input variance gives the same 144. MAX is 9*256=2304 and AVERAGE is 9*(256+16)/2=1224, both >=288. The note explicitly limits the conclusion to this general finite estimate with the stated constant and asserts no wave-specific no-go."
+    },
+    {
+      "claim": "C7: Diagnostics: v1 MAX only, v2 also AVERAGE, tensor Hermite scaling, 12 cases, floating arithmetic not proof, no 16-dimensional simulation or continuum claim.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The code matches the description: 3 families x 4 values of p gives 12 rows, nodes scaled by sqrt(2), weights divided by sqrt(pi), m+1 nodes (exact for coordinate degree <=2m+1 in exact arithmetic), and dps 50. Only v2 asserts the average bound. v1 and v2 row values agree in common fields. Hand exact recomputation confirmed scalar p=2/4/6/8 (5, 59, 1155, 31929), Hermitian p=2/4/6/8 (4.5, 22.375, 167.71875, 1677.0703125), rectangular p=2 (22), rectangular Tr Vin^2=262, Tr Vout^2=200, Wick p=4 moment 592, and the upper-bound arithmetic. Negative controls in the code are integer formulas only. The note and scope strings disclaim proof and continuum use. Scripts were not executed by this reviewer. Note: 1224 appears only in the note's prose. See minor finding 3."
+    },
+    {
+      "claim": "C8: Exact Lean statement, Mathlib use, rpow conversion, application to (5), negative controls, axioms, and custody status.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The source and pp.all output agree: binders are L q:Nat, hL:0<L, hq:q<=L, x y:Real. The conclusion uses Nat powers of abs, Nat subtraction L-q in the exponent, and Nat.cast(L-q)/Nat.cast L as a real weight. This is exactly (3) with the cast form required by the note. The Mathlib excerpt signature matches the argument order used. The rewrite trace (first matching |x|^L, then rpow_mul with nonnegative base, cancellation, rpow_natCast) is uniform and needs no case split at zero bases or endpoints. Application bindings x=lambda_j, y=lambda_i, L=2m-2 with m>=2, and q as derivative index in 0..L match the Section 3 summand. m=1 avoids L=0. Controls by hand: WrongZero 1<=0, WrongRange 8<=6, WrongSigned 4<=-5, all actually false. Recorded errors are unsolved goals with False at the by-token columns I counted, not unknown names, and exit codes are 1. Printed axioms are propext, Classical.choice, Quot.sound. Compile, hashes and replay are author custody, not reviewer execution, and all scope claims stay at N2 only."
+    },
+    {
+      "claim": "C9: Preservation of first replay failure, exact public header, proof successor not a waiver, separate type audit, archive claims, prior-art limits and no new package.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "attempt01-failure records private and server hash mismatches with public olean, ir and ir.sig matching, and asserts no private payload equality. Hashes agree with the 51-entry manifest. The 63-entry attempt02 manifest shows all 5 artifact pairs equal and agrees with the receipt. Current source uses explicit cancellation with no field_simp. The attempt01 source is absent from the packet, but its public olean hash b849 and ir hash 0235 equal the attempt02 values, which corroborates the unchanged public surface. No root cause is asserted. The type audit is separate, and its output hash 3d22 appears for both original and replay. Prior art is explicitly incomplete and makes no absence claim; the decision is Mathlib REUSE with no package or companion. These are author and root custody claims, not reviewer execution. See minor findings 4 and 5."
+    },
+    {
+      "claim": "C10: Boundaries: original goal ACTIVE, actual variance independent and not an input, no infinite Schatten series, path, Young, source cutoff, new moment, source constant, HPC, contact, Skorohod, publication or whole-paper claim.",
+      "verdict": "PASS",
+      "reason": "Note lines 3-5 and 206-224, the target, the two honesty memos, the receipt scope and the bindings consistently make only the finite claim. No proof step uses the actual-wave variance or any continuum object. The note lists series, cutoff, time paths and localization as still required for application, and states the original goal remains ACTIVE. No source-constant, moment, contact, HPC, Skorohod or publication claim appears."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "1. Section 2 line 61 says normalize each sequence by its corresponding positive power sum. The computation requires division by (sum a_i^m)^(1/m) and (sum b_i^(m'))^(1/m'), so that the m-th and m'-th powers each sum to 1. The standard reading makes the proof correct. This is an optional wording tightening.",
+      "2. Sections 3-4 leave three routine facts implicit. (5) and (6) are applied at each fixed sample, with a sample-dependent eigenbasis, but no measurable selection is needed because all final quantities are polynomial or continuous in g. The independence assumption is what supplies the product density behind componentwise IBP and Fubini. Complex-valued polynomials are handled through real and imaginary parts, and P=Tr(B_k Y^(2m-1)) is in fact real.",
+      "3. Section 6 refers to the average-bound check only as 'if supplied' and does not name check-diagnostics-v2.py or diagnostics-v2.json. Neither script computes or asserts the negative-control average 1224; only the note states it. The hand arithmetic is correct and nothing depends on this numerically.",
+      "4. mathlib-binding.json records excerpt_sha256 182204f4..., while both native manifests record mathlib-exact-excerpt.txt as e593a984.... The packet does not state whether these hash different serializations, for example with or without a trailing newline. I did not recompute them. The Lean compile, not the excerpt, is the operative check, so this is an unresolved custody detail rather than a mathematical defect.",
+      "5. Custody cross-links have small gaps. TypeAudit.lean's hash 16b1... appears only in type-audit-custody.json and not in the attempt02 manifest. version-check.json lists release tags without binding v4.35.0 to pin 56a0058. The attempt01 compile transcripts have different hashes for original and replay (5fd3... vs eca6...), and attempt01-failure.json neither states nor denies this; the transcripts themselves are not in the packet. attempt02 compile transcripts have the SHA-256 of empty output.",
+      "6. statement-adjudication-v1.md announces seven minor notes, but its semicolon-separated summary is compressed and does not list seven distinct items unambiguously. The underlying native statement report is not in the packet. This does not affect the full-proof review."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is an AI read-only review. It is not human verification, a novelty audit or a whole-paper certificate, and passing it does not by itself perform any adoption transaction.",
+    "No Lean, Python, hash or archive command was executed; the available tools were read and search only, and only reads were used. Lean compile, audit, replay, type-audit, control exit codes, SHA-256 values and script outputs are author and root custody. Only their mutual consistency across packet files was checked, along with hand evaluation of the false controls, hand tracing of the proof script and hand recomputation of selected diagnostic values.",
+    "The Mathlib library was not read beyond the supplied excerpt. Lemma names and behavior other than geom_mean_le_arith_mean2_weighted (for example Real.rpow_mul, Real.rpow_natCast, mul_div_cancel0, Nat.cast_sub) rest on general knowledge plus the author's recorded clean compile.",
+    "Source revision e59c29b4ca528abbaff4a6fc2e4a8e3bbffea86a could not be checked because the workspace is not a git repository. Byte identity of the packet to that revision is not independently confirmed.",
+    "Not in the packet and therefore unread: the attempt01 Lean source and archive, raw prior-art JSON receipts, compile and audit transcripts, the native statement-gate report, and the separate actual-variance proof. Prior-art completeness was not assessed beyond the packet's own statement that it is incomplete.",
+    "The review covers only the finite note and the finite scalar Lean lemma. It says nothing about actual wave variance, continuum operators, Schatten series, time paths, SPDE moments or the original full goal, which remains ACTIVE."
+  ]
+}

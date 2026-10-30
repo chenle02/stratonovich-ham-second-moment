@@ -1,4 +1,4 @@
-# Standalone finite weighted natural powers (provisional)
+# Standalone finite weighted natural powers (scoped application accepted)
 
 One new public theorem weighted_natural_powers, natural L>0 and q<=L,
 all real x,y. Nat powers/absolute values and REAL-cast weights explicit.
@@ -20,7 +20,8 @@ proofbody changed field_simp to explicit cancellation identities. Fresh
 attempt02 has5matches; serializer nondeterminism root cause NOT asserted.
 No gate weakening, ignored artifact, toolchain/library or source guard change.
 
-LOCAL_DEVELOPMENT_PASS, pending independent exact type/application review.
+LOCAL_DEVELOPMENT_PASS plus independent exact type/application HIGH at
+scientific e59c29b (10checks, exact native format lineage validated).
 Proposed use is scalar trace summand L=2m-2,m>=2,q in0..L, eigenvalues real.
 No formal Gaussian IBP/trace/Schatten/continuum/operator/path/SPDE claim.
 No officialpackage/companion/lease/registry/HPC/Comparator transaction.

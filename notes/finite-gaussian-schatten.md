@@ -1,6 +1,9 @@
 # Finite Gaussian matrix moments with both variance directions
 
-COMPLETE CANDIDATE, not adopted before independent full proof review.
+ACCEPTED internal finite result: native Opus5.5/high full review,
+PASS_WITH_NOTES/HIGH, scientific revision e59c29b; exact format-only
+continuation and source/type/application evidence in the
+2026-10-30-finite-gaussian-schatten packet and adjudication.
 This note is FINITE dimensional. It constructs no actual Gaussian operator,
 Schatten-valued series or path and proves no new SPDE moment asymptotic.
 
@@ -57,8 +60,9 @@ directly. The cast of L-q equals L-q in the reals because q<=L. Thus(3)
 has no hidden extension to q>L or L=0.
 
 For completeness scalar Holder for finite nonnegative sequences with
-exponents m and m/(m-1), m>1, follows from(2). Normalize each sequence by
-its corresponding positive power sum; if either norm is zero the desired
+exponents m and m/(m-1), m>1, follows from(2). Divide the first sequence
+by (sum a_i^m)^(1/m) and the second by
+(sum b_i^(m/(m-1)))^((m-1)/m); if either norm is zero the desired
 inequality is immediate. Apply(2) with theta=1/m to the m-th power of the
 first normalized entry and the m/(m-1)-th power of the second. Summing
 gives the product sum at most1, and undoing the normalization proves
@@ -124,7 +128,9 @@ polynomial moments below are finite: Gaussian density dominates each
 fixed power at infinity. Componentwise integration by parts against the
 one-dimensional standard Gaussian density has zero boundary term for
 polynomials and gives E[g_k P(g)]=E[partial_k P(g)]. Fubini is legitimate
-by absolute polynomial integrability.
+by absolute polynomial integrability. Independence supplies the product
+Gaussian density, and integration by parts for complex polynomials is
+understood through real and imaginary parts.
 
 For m>=2 put F=ETr(Y^(2m))>=0 and L=2m-2. Since Y=sum g_k B_k,
 product differentiation and that Gaussian identity give EXACTLY
@@ -134,7 +140,11 @@ product differentiation and that Gaussian identity give EXACTLY
 Indeed Tr(Y^(2m))=sum_k g_k Tr(B_k Y^(2m-1)), and differentiating the
 2m-1 factors of Y gives the displayed ordered terms, once each. No
 commutations or derivative of a spectral absolute value are involved.
-These traces are real by the eigenbasis expression of Section3.
+These traces are real by the eigenbasis expression of Section3; the
+polynomial Tr(B_k Y^(2m-1)) is also real by conjugation and trace cyclicity.
+All eigenbasis arguments are pointwise at each fixed sample. No measurable
+choice of eigenvectors is needed, since the final trace quantities are
+polynomial or continuous functions of the Gaussian coordinates.
 Equation(5) therefore yields
 
  F <= (2m-1) ETr(D |Y|^(2m-2))
@@ -199,16 +209,18 @@ Hermitian family (the identity member itself commutes), and complex
 rectangular matrices, at p2/4/6/8. Hermite quadrature uses standard-Gaussian
 sqrt2 scaling and1/sqrtpi weights, with orderm+1 motivated by polynomial
 degree. Floating precision50 is not a certified proof of integration
-accuracy. v1 checks the MAX bound only; an average-bound supplementary
-check, if supplied, is still just a finite control. The negative controls
+accuracy. v1 checks the MAX bound only; check-diagnostics-v2.py and
+diagnostics-v2.json also check the AVERAGE bound on the twelve finite rows.
+Those remain finite controls. The negative-control average1224 is hand
+arithmetic in Section5, not a value computed by either script. The negative controls
 are analytic moment prescriptions, not sixteen-dimensional simulations.
 
 The standalone local Lean consumer of pinned Mathlib's weighted AM-GM checks
 ONLY the natural-power/cast inequality(3). Its actual compile, audit,
 controls and replay status must be read from the local receipt. It compiled,
 audited and freshly replayed with all five owned artifacts matching and
-three false-statement controls. Exact type/application fidelity still needs
-the present independent full gate. An earlier private/server byte mismatch
+three false-statement controls. Exact type/application fidelity passed
+the accompanying independent full gate at the scope of (3) and (5). An earlier private/server byte mismatch
 is preserved; the public statement was unchanged in the successful proof
 refactor. No Gaussian
 IBP, Hermitian spectral/trace step, actual continuum variance, Schatten

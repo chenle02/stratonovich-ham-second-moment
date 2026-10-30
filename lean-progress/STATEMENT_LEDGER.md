@@ -108,4 +108,4 @@ remains outside Lean. No companion or canonical package gate.
 
 | Name | Scope | Status |
 |---|---|---|
-| weighted_natural_powers | Natural L>0,q<=L,real x/y, absolute integer powers and realcastweights; exact pinned Mathlib AM-GM reuse | Local compile/audit/owned5artifact replay/3False controls; independent exacttype/application gate pending |
+| weighted_natural_powers | Natural L>0,q<=L,real x/y, absolute integer powers and realcastweights; exact pinned Mathlib AM-GM reuse | Local compile/audit/owned5artifact replay/3False controls; exacttype/application HIGH scientific e59c29b, native format lineage preserved |
