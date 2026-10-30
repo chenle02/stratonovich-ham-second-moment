@@ -4848,3 +4848,11 @@ Rawvalueceiling preproof live at3efedd8: actualfirstpartyOpus5.5/high,
 supporteddoctor/selectedheadroom18short64weekly. Session30497, samehandle
 no restart on observationtimeout. Statement/object/sourceaudit before
 longproof; originalgoalACTIVE. No no-go/sourcecorrection adopted yet.
+
+While rawvaluepreproof runs, two genericlocal scalarlemmas compile/replay:
+strictDelta logarithmicgap and exactNat39^39*21^21>2*30^60 certificate.
+Completepublictypes/standardaxioms,5matchingartifacts/2Falsecontrols;
+initiallocalprojection-argument compilefailure retained, repaired only
+application syntax. Bothnativearchives memberverified. Analyticlinkto
+actualE_eta/cap and source-shapedcriterion stillrequiresproof/fullgate.
+62finite deductions/14seams provisional; no energy/SPDE/companion claim.

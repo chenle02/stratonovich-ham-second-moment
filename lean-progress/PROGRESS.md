@@ -334,3 +334,16 @@ and bothFalsecontrol logs rootrechecked; all nativearchives verified.
 60finite deductions/13localseams now scopedaccepted at their exact gates.
 No formal Sobolev/H1form/Bochner/core/density/supremum/SPDE theorem or
 package/companion/lease/registry/HPC/Comparator transaction. L0/PROPOSED.
+
+## Raw-value scalar seam provisional — 2026-10-30
+
+Two newlocal lemmas exact_gap(Natlargeintegercertificate) andstrict_log_gap
+(actualReal log/strictconvexityscalar) compile/audit/freshreplay cleanly
+at4.35.0/Mathlib56a0058; officialreleaseAPI both4.35.0 rechecked. Complete
+publictypes/actualstandardaxioms,5matchingownedartifacts,2Falsecontrols.
+Initialprojection-namedargs localcompileFAIL retained; routineproofsyntax
+repairbinds existingfunction beforearguments,no statement/gatechange.
+Evidence local-checks/raw-value-ceiling-v1/.62declarations/14localseams
+provisional; exactanalyticapplications remainforindependentscientificgate.
+No formaloccupationenergy/covarianceCS/valueceiling/source/SPDE or package/
+companion/lease/registry/HPC/Comparator transaction. L0/PROPOSEDunchanged.
