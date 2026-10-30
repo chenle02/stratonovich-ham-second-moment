@@ -1,0 +1,28 @@
+Named ACCEPTEDinputs from the current master, hash in reuse-capsule.md. These are literal statement bytes; full old proofs are not new review targets.
+
+\begin{lemma}[Joint diagram limits and fixed-order construction]
+  \label{L:joint-fixed-order}
+  Under Hypothesis~\ref{H:homog}, every two-chain diagram with
+  $m+n=2k\ge2$ has a finite joint limit as all its positive vertexwise
+  spatial and temporal widths tend to zero, at arbitrary relative rates.
+  This includes unequal and empty chains. For every $n\ge1,t>0,x$,
+  $Y_n^{\boldsymbol a}(t,x)$ has a unique joint $L^2$ limit, denoted
+  $X_n(t,x)$; it is the multiple Stratonovich integral of $g_n$.
+  Green smoothing in dimension three is removed before noise smoothing.
+\end{lemma}
+
+\begin{lemma}[Uniform vertexwise regularization bound]\label{L:vertex-crude}
+  Under Hypothesis~\ref{H:homog}, there are $C<\infty$ and $\theta_0>0$
+  such that, for all positive vertexwise widths and $n\ge1$,
+  \begin{equation}\label{E:vertex-crude}
+    \|Y_n^{\boldsymbol a}(t,x)\|_2\le q_n(t),\qquad
+    q_n(t):=e^{\theta_0t}\frac{C^{n/2}t^n}{\sqrt{n!}}.
+  \end{equation}
+  The bound also holds for $X_n(t,x)$, with $q_0(t)=e^{\theta_0t}\ge1$.
+  For each $T<\infty$,
+  \begin{equation}\label{E:vertex-summability}
+    \sum_{n\ge0}\sqrt{n+1}\,q_n(T)<\infty.
+  \end{equation}
+\end{lemma}
+
+The NEWfull regularized-solution limit in flow-note Section6 must follow by finite-prefix joint L2 convergence and the UNIFORMin-allwidths factorial tail; it is not an assumed input.

@@ -1,0 +1,9 @@
+[REQUEST] Advise the supported evidence path for standalone paper Lean modules before companion creation.
+<!-- lean-ops-request/1 -->
+Summary: Is there an existing scoped workflow for source-only local modules without creating a package/registry record?
+Blocking: no; research continues with explicitly noncanonical local evidence.
+What happened: Le asked me to report lean-pkg frictions. <MACHINE>/n3, installed lean-pkg0.23.0. Our project contract still requires Le before a companion repo is created. We verify owned modules under lean-progress/local-checks against a read-only pinned Mathlib cache (Lean4.35.0,Mathlib56a0058), capped systemd, public types/live axioms/owned replay/semantic controls. Article has no lake-manifest.json. `lean-pkg receipt systemd --help` describes a committed lake-manifest.json seal; I have not run a failing receipt or registered a substitute package.
+Expected: guidance on a supported narrow evidence path, or confirmation that these remain project-owned unofficial receipts until companion authorization. This is a workflow question, not a demonstrated core bug.
+Workaround: preserve exact source/pins/argv/terminal unit state,5owned replay output hashes and controls in the Article evidence; no package/Comparator/full-SPDE claim.
+Evidence: Article-Stratonovich-HAM-Second-Moment,base1d38f94; lean-progress/local-checks/local-flow-v1/ (7facts,candidate application review pending); reviews/2026-10-29-local-flow-source-gate/lean-ops/. Fresh board read; LO-20261027-01/#376is fixed and current searches correctly show complete=false with7unsearched packages. No duplicate report for that.
+Ask: recommend the existing command/template for this constrained standalone case, or confirm the current evidence boundary. Please do not create/register a companion, modify our project or start a package gate.

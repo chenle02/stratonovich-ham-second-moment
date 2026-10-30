@@ -178,3 +178,12 @@ exact scopes (normalization control hard-codes its reduced abstract case).
 Gaussian/convolution/HS/source-cutoff/path/box arguments remain informal
 reviewed proofs. All-order/global-or-ulocflow/event/constant/higherdims open.
 L0anddecision4unchanged.
+
+## Local-flow pilot (2026-10-29 local date)
+
+Seven finite mask-order/Schur/source-budget consumers compile/replay with
+standard axioms and3semantic controls. Warning-only unnecessary sequencing
+v1preserved;v2clean, all statement signatures unchanged. All5owned/replay
+compiler output hashes match; binary auxiliary outputs are archived, not
+decoded as text. Analytic/source/type application pending. Existing eight
+InteractionDriver deductions reused unchanged. No new package/companion.

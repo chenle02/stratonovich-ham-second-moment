@@ -1,0 +1,92 @@
+{
+  "status": "LOCAL_VERIFIED_SCALAR_APPLICATION_HIGH",
+  "source_sha256": "a4f0487d911f24eb91cf0dc4bfc4270c65f890632b67e73eebbcf47cdee97fb9",
+  "public_theorems": [
+    "temporal_range",
+    "variance_norm",
+    "gaussian_prefactor",
+    "gaussian_exponent",
+    "holder_parameters",
+    "dyadic_ratio",
+    "box_margin",
+    "box_scale"
+  ],
+  "compile_exit": 0,
+  "audit_exit": 0,
+  "owned_replay_compile_exit": 0,
+  "owned_replay_audit_exit": 0,
+  "transitive_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "semantic_false_controls": 5,
+  "development_history": "dev01 failed only on redundant ring after field_simp solved helper; dev02 clean, all eight statement signatures unchanged. An attempted duplicate setup was refused before overwrite; authoritative terminal state was inspected before v2.",
+  "all_public_statement_signatures_unchanged": true,
+  "pins": [
+    {
+      "name": "mathlib",
+      "revision": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+      "build_root_exists": true
+    },
+    {
+      "name": "plausible",
+      "revision": "dfa4f38190d07c37e315953e08b90fe2d95b3c24",
+      "build_root_exists": true
+    },
+    {
+      "name": "LeanSearchClient",
+      "revision": "d6b4c7be5be75ec4917c873ac50c756dc1436372",
+      "build_root_exists": true
+    },
+    {
+      "name": "importGraph",
+      "revision": "a41f0e9a4dea23188ea9cc1c41ac9f8bbafe0b93",
+      "build_root_exists": true
+    },
+    {
+      "name": "proofwidgets",
+      "revision": "df72b022e558978a1c50264cfc4d7fec86fa8e04",
+      "build_root_exists": true
+    },
+    {
+      "name": "aesop",
+      "revision": "4a174c490d8707121c4a9290800489f105d85e07",
+      "build_root_exists": true
+    },
+    {
+      "name": "Qq",
+      "revision": "dce0ad79c486cb1fb504af04f953c3466b0c6db8",
+      "build_root_exists": true
+    },
+    {
+      "name": "batteries",
+      "revision": "66e469188fe07963e5cf666c7d4433f45b8131c5",
+      "build_root_exists": true
+    },
+    {
+      "name": "Cli",
+      "revision": "c24fe6078c630e89b489bffe59b3e20ac30d12c8",
+      "build_root_exists": false
+    }
+  ],
+  "lean_binary_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+  "owned_olean_sha256": "613e0865774bed5cae836da24d73e571a27559e65bfd5ed75b89e02d49a91736",
+  "replay_olean_sha256": "613e0865774bed5cae836da24d73e571a27559e65bfd5ed75b89e02d49a91736",
+  "source_only_replay_approved_dependency_cache": true,
+  "caps": {
+    "CPUQuota": "200%",
+    "MemoryHigh": "4G",
+    "MemoryMax": "6G",
+    "TasksMax": 64,
+    "RuntimeMaxSec": 180
+  },
+  "no_new_package_lease_registry_donor_write_cluster": true,
+  "canonical_package_Comparator_gate": false,
+  "formal_boundary": "Actual variance/rpow, Gaussian prefactor/exponent and Holder/dyadic/box margins/scaling. All Gaussian/operator/integration/path/convergence/maximum/flow/event inputs outside Lean",
+  "source_commit": "b398b77052718adc8ac4f3439a3c738b504aea86",
+  "type_application_review": "../reviews/2026-10-29-interaction-driver/review-summary.json",
+  "review_scope": "C7of9 checks all8finite types/application; Gaussian/operator/path arguments informal reviewed",
+  "formal_source_unchanged_after_review": true,
+  "hardcoded_normalization_control_not_kernel_definition_control": true
+}

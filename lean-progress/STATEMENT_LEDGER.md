@@ -91,3 +91,15 @@ are outside Lean; this is not a formal SPDE or canonical package gate.
 
 Every Gaussian/HS/path/convergence/max/Young-flow and event/constant input
 remains outside Lean. No companion or canonical package gate.
+
+## Local flow: StratonovichHAMAudit.LocalFlow
+
+| Name | Scope | Status |
+|---|---|---|
+| noise_order | Actual finite mask/Schur/source-budget consumer | Local compile/replay; application pending |
+| schur_row | Actual finite mask/Schur/source-budget consumer | Local compile/replay; application pending |
+| schur_column | Actual finite mask/Schur/source-budget consumer | Local compile/replay; application pending |
+| schur_rescale | Actual finite mask/Schur/source-budget consumer | Local compile/replay; application pending |
+| source_overlap | Actual finite mask/Schur/source-budget consumer | Local compile/replay; application pending |
+| source_white_obstruction | Actual finite mask/Schur/source-budget consumer | Local compile/replay; application pending |
+| source_tail_obstruction | Actual finite mask/Schur/source-budget consumer | Local compile/replay; application pending |

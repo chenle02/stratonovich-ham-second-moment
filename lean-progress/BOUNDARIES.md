@@ -95,3 +95,10 @@ All8public proof sources/statements are unchanged. Gaussian/integration/HS/
 localization/covariance/path/max claims remain informal reviewed arguments,
 not formal SPDE/Youngflow/event or canonical package clearance. The hardcoded
 normalization control is an abstract-number example, not a mixCdefinition test.
+
+Local-flow pilot7finite consumers: noiseOrder range and actual spectral
+exponent; weighted-Schur row/column/homogeneous rescaling; CLO strict source
+budget overlap/white/general tail obstruction. Integrals, multiplier bound,
+phase assembly, Gaussian paths, Young evolution/canonical identification/
+growing-block stability remain informal analytic review obligations. No
+formal SPDE/package/Comparator/newcompanion gate; exact application pending.
