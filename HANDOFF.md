@@ -1,93 +1,98 @@
-Last updated: 2026-10-30 19:45 UTC (Codex)
+Last updated: 2026-10-30 20:21 UTC (Codex)
 
-Original full upper/sharp goal ACTIVE. Rawpositivecontrol VALUE ceiling
-accepted; actualdamped-LOWER-endpoint comparison next, stillunproved.
+Original full upper/sharp goal ACTIVE. Actualdampedlower bridge andwhite
+point accepted; full-rangeOmega/Gamma inequality next, stillunproved.
 
 ## ⏭ Next session: where to stand and what to do
 
-Stand in this repository root. Freeze/falsify the ACTUAL damped-LOWER-
-endpoint comparison in reviews/2026-10-30-raw-value-ceiling/
-next-damped-lower-obligations.md (UNREVIEWEDreconnaissance). First verify
-the proposed temporal Riesz-potential identity and legal X membership;
-the9positive scalar margins did NOTverify that identity. Then audit the
-precise static-control/damped-row/scalar-inequality chain before longproof.
+Stand in this repository root. Freeze/falsify the actual FULL-RANGE
+Omega comparison via the candidate Taylor4/Gamma reduction in
+reviews/2026-10-30-damped-lower-bridge/next-global-omega-obligations.md.
+That reduction and its one-variable inequality are UNREVIEWED, despite
+8positive numericalsamples; do not import them as acceptedlemmas.
 
-Rawpositivecontrol VALUEceiling is now ACCEPTED: scientificad6c188,
-8groups/HIGH,322.118seconds,26texts+4images,adoption49d6672. Read
-notes/raw-positive-value-ceiling.md and its scientificadjudication.
-It limits V_c, NOToriginalQ2. No reviewer/Lean job is live; do not restart
-completed sessions. Original fullsharp/source/all-dimensional goalACTIVE,
-intendedsource normalizationUNKNOWN, sourceLOWERcomparison stillopen.
+The temporal/static/damped bridge and directWHITEPOINTlower are now
+ACCEPTED: scientific8883160,7groups/HIGH,295.426seconds,28texts+2images,
+adoption0c38ba0. Read notes/damped-lower-endpoint-bridge.md plus its
+scientificadjudication. It gives GENERALQ2>=2^mOmegaFa(E_star^O), and
+atwhitealpha1,a1/2 closes Omega>zeta=(2418683125/2415919104)^(1/8)>1.
+No reviewer/Leanjob is live; do not restart completed sessions. Original
+all-range/sharpupper/d2d3/source-normalization goal ACTIVE.
 
 ## Pre-flight checks
 
-1. Read AGENTS.md/PROJECT-GOAL.md and Progress.md,retain fullgoal/decisions.
-   No sourcecorrection/contact/HPC/public release/Skorohod development.
+1. Read AGENTS.md/PROJECT-GOAL.md and current Progress.md; retain fullgoal
+   andstop decisions. No sourcefix/contact/HPC/publicrelease/Skorohod.
 2. Check local/origin/<HUB> refs/dirtyownership,serialize refwrites.
    Substantiveadoption before this HANDOFF-only successor:
-   49d667242d119b232f867d25f40d5ec09c1bec86. Allworkpushed/synced,no foreignWIP.
-3. RawvalueFULLscientificad6c188: actualOpus5.5/high8PASS/HIGH,
-   322.118seconds,26texts+4exactp3/p4PNGs complete,no requiredrepairs.
-   All30bindings/45nativearchive files/executedscalarJSON/Leanreceipts/
-   5artifactpairs andboth11/30fileLeanarchives verified. Sevenoptional
-   findings adjudicated. Onlyheaderstatus changes; proofbody exactad6c188.
-4. Preproof3efedd8:20HIGH/317.273seconds,13texts+4images complete,
-   32nativearchivefiles verified,directvalidJSON. Statementapproval ONLY,
-   not fullproof. All6optional notes applied before longproof.
-5. Acceptednewenergies E_eta are OWN rawkernel/O/kineticeta, realfinite
-   positive,exactinterpolation. ActualsmoothH2ground curve/sharedGaussian
-   covarianceCS/timeCS/T-v optimization give V_c<=U_c(eta). Eta is a
-   kineticparameter, not earlier spectralmargin; U independenteta.
-6. Strictmapgap Fa/F0,eta1/2case,andlegalalpha1/10,a9/10eta1 certificate
-   39^39*21^21>2*30^60 independentlychecked. F0changes DISPLAYparameter
-   only: E_eta stillusesactuala. Ehalf notsourceE/Estar; E1sourceidentity
-   requiresdomain matching. No intendednormalizationfix or sourceconstant.
-7. OriginalQ2>=V2 staysLOWER. Vceiling is neverQ2upper or actualmoment/
-   sourceconjecture counterexample. Only c2haspointconsumer; othercaux.
-   2^mFa(z) in the comparison is OURdisplayedquantity, not a printedp2
-   theorem in source(1.10), which is firstmeanonly. NoFa(Estar)>U claim.
-8. Newscalar exact_gap/strict_log_gap completepublictypes/std3axioms,
-   cleancompile/audit/5ownedreplaymatches/2Falsecontrols. Initiallocal
-   projection/namedargumentcompilefailure retained; proofapplication
-   syntaxonlyfixed. Actualanalyticapplications independentlychecked.
-   RootLean4.35.0/eb6cafb,Mathlibv4.35.0tag->56a0058 andFalsegoals checked.
-   62finite deductions/14seams; no formalenergy/covariance/value/SPDE/
-   packagecompanion certificate. L0/PROPOSED,decision4pending.
-9. Nextprobe9alpha/a pairs at35digits: TWOsourcekernelquadraturesagree
-   1e-15, allcandidate logmarginspositive(~.01358..1.7366). Code/JSON
-   retained next-damped-lower-probe.*,outsideacceptedpacket. Candidate
-   capacityidentity/staticcontrol/rowbound/GLOBALinequality allUNPROVED.
-   No gridproves originalrange. Freeze/falsify/independentaudit required.
-10. Prioroccupationbridge80e47d6 and smoothactualconsumer12c9879 remain
-    accepted. Canonical110-page/60-proofTeX/PDF unchanged,TeXSHA58b092b...;
-    wikiunchanged,no wholepaper/coldread/novelty/circulation clearance.
+   0c38ba0ac1258d80dae8bde97caced7577cef021. Allworkpushed/synced,no foreignWIP.
+3. DampedFULLscientific8883160: actualOpus5.5/high7PASS/HIGH,
+   295.426seconds,28texts+2exactauthorPNGs complete,no requiredrepairs.
+   All30bindings/45nativearchive files/executeddiagnostics/Leanreceipts/
+   5artifactpairs andboth30/30fileLeanarchives verified. Sixminorfindings
+   adjudicated. Onlyopeningstatus changed; proofbody exact8883160.
+4. Preproof92f2e16:8HIGH/269.588seconds,15texts+2images complete,
+   32nativearchive files verified,statementonly. Directvalidreports on
+   BOTHgates,no recovery/retry/confidencechange. Fullproof is separate.
+5. AcceptedBeta/positivebinomialproof gives temporalpotential1 forEVERYs
+   inclendpoints, exactM_a andf_aL1/L2. LegalroughXcontrol fa tensorphi
+   hasconstantmean/costMasp, no roughflow/eigenfunction theorem. Positive
+   Xapproximation actualpointconsumer reused at exactscope.
+6. Sharpstaticspatialratio/E_sp and ACTUALtheta/ell Rayleighcontrols,
+   dampedtime-rowenergyupper/E_star^O, GENERALexplicitOmega pointlower
+   proved. GLOBALOmega>=1 NOTproved. Own E_star^O domainstrongH1meas,
+   finiteintegratedenergy/a.e.mass; sourceinputANDfirst-to-secondlabel
+   matching remainconditional, not a fix/firstmean/Jensen theorem.
+7. Actualwhitealpha1,a1/2,kappa5/4: Q2>=zeta*2^(3/2)Fa(E_star^O),
+   exactzeta>1, allwhiteamplitudes. Gaussianrowbound, GammaCS3/4,
+   pi157/50 and exactNatmargin used, no computedspatialenergy/staticM.
+   This is a verifiedPARTIALactualpointresult, not fullGsharp/allrange.
+8. Three finiteNat/pi publiclemmas exact_margin/pi_cube_certificate/
+   rational_pi_gain withcompletepublictypes/std3axioms,cleancompile/
+   audit/5replaymatches/2Falsecontrols, NEWanalyticapplications checked.
+   Clean2declpilot retained,3declstrengthening addsactualzeta ratio,
+   first2typesidentical. Root4.35.0/eb6cafb/Mathlibv4.35.0tag56a0058 and
+   nativeFalsegoals checked.65deductions/15seams, no formalBeta/Gamma/
+   energy/SPDE/package/companion certificate; L0/PROPOSEDdecision4pending.
+9. Initialpotentialquadrature endpointinfinity preservedcode/WRITTEN
+   metadata, not nativefiletraceback; successorpositivefactor/expm1SAME
+   50digits/tolerance/15cases passes. Interior singularityremoved,
+   endpointalgebraic singularities remainintegrable. Numerics notproof.
+10. NextG4candidate: P4upperexp givesexplicit5Gamma-termB4(a,d),
+    monotonicd<=4-2a/Deltaq<=Delta3 wouldreduceALLd1Omega>=1 to
+    M_a^-1>=B4(a,4-2a)expDelta(3,a),0<a<1. Eight50digitmarginspositive
+    .001.. .99, but reduction/globalinequality UNPROVED/outsidepacket.
+11. RawVceilingad6c188 retained, NOTQ2upper; canonical110-page/60-proof
+    TeX/PDF andwikiunchanged. SourceUNKNOWN normalization/sharpupper/
+    originald2d3/fullpaper/coldread/novelty/circulation remainopen.
 
 ## Concrete deliverables for the next session
 
-- Actual temporalpotential/control/staticspatialenergy/dampedtime-row
-  statement with full normalization/domain dictionary and falsification.
-- Verify or refute capacityformula first,then staticcontrol lower and
-  source-dampedenergy upper,then the sufficient GLOBALscalar inequality.
-- If viable, independentstatement/fullscientific/typeapplication review
-  before any source-lower conclusion. Preserve explicitO-domain and
-  intendednormalization qualifications; fullupper/dimensions stillopen.
+- Precisely frozen actualTaylor4/kernel/Gamma/globalOmega statement,
+  falsification and independentobject/source audit before longproof.
+- Prove/refute the candidate one-variable inequality on ALL0<a<1 with
+  real endpointcontrol, not fromthe8pointgrid. Verify all reduction
+  signs/factors and existingsource/domain/label assumptions.
+- If successful, extend the actuald1lowerendpoint to originalrange with
+  fullscientific/typeapplication review; no claim onsharpupper/d2d3 or
+  normalization/exactlimit until their separate requirements are met.
 
 ## Success criteria for the immediate next step
 
-A precise audited route toward V1>=Fa(E_star^O) (or an exact obstruction)
-using actualcontrols and the dampedkernel. E_star^O is to be explicitly
-defined, not assumedallprintedAd; no sourcefix. Numerical capacity/gap
-recon alone doesnotcount as proof. Theaccepted Vceiling doesnotcompare
-that dampedlower input with V anddoesnotsettle the fullsharp goal.
+A rigorous full-rangeOmega comparison (or a preciseobstruction) moving
+beyond the acceptedwhitepoint. The actualdamped energy/controller/point
+bridge is alreadyproved, so the missingglobal scalar inequality is the
+immediate substantive task. No furtherdensity/homogeneity restatement
+or numericalpositivity presented as completion of the original goal.
 
 ## Anti-success criteria
 
-No Vupper->Q2upper reversal, no methodcap calledactualmomentcounterexample,
-no raw/damped/kineticcoefficient substitution, no b0covariancestaticization,
-no candidatecapacityidentity/globalinequality treated as proved from9points,
-no optimizer/minimax/uniformmovingtest premise withoutproof. No firstmean/
-sourceL/Jensenidentity or sourceauthorcontact, Skorohod,newcompanion/HPC,
-publicwiki/manuscriptrelease/wholepaper/circulation claim.
+No globalOmega theoremfrom8/9samplegrids, no sourceE_star^O=allprintedAd
+orfirstmean/sourceL/Jensen identity, no raw/damped/halfgradient swaps,
+no sourcefirst-to-second-label dictionary assumed from(1.10). No moving
+control/uniformlimit, roughflow, optimizer/minimax shortcut. No new
+Skorohod/sourcefix/contact/companion/HPC orpublicwiki/manuscriptrelease/
+wholepaper/circulation claim. Fullgoal cannotcomplete from onepoint.
 
 ## What the previous sessions produced
 
@@ -763,35 +768,51 @@ Latest checkpoints:
   scalarcandidate margins/two35digitquadratures. Capacityidentity/static
   lower/dampedrow/globalcomparison unproved,outsideacceptedpacket.
 
+- 2026-10-30 dampedlower bridge: target92f2e16/preproof8HIGH/
+  269.588seconds,15texts+2images,directvalidJSON. Fullproof8883160,
+  scientific7PASS/HIGH,295.426seconds,28texts+2images,no requiredrepairs.
+  All30bindings/45nativearchive files/executed15-case+pointJSON/Lean
+  receipts/5replaypairs andboth30/30fileLeanarchives verified. Adoption
+  0c38ba0: exacttemporalBeta/legalXcontrol/staticlower/dampedenergyupper/
+  GENERALexplicitOmega ORIGINALpointcomparison; atactualwhitealpha1,a1/2
+  Q2>=zeta*2^(3/2)Fa(E_star^O), exactzeta>1, anywhiteamplitude.
+  Sixoptionalfindings adjudicated; mathematicalproofbody exact8883160,
+  statusonly. Threefinitepublictypes/applications checked;65localfacts/
+  15seams, no formalBeta/Gamma/energy/SPDE/packageclaim. SourceinputAND
+  first-to-secondlabel matchingconditional, no sourcefix/actualp1/Jensen.
+  Initialnumericalendpointcancellation retained, successorfactorization
+  sameassertions/tolerances. NextTaylor4/G4fullrangecandidate unreviewed;
+  8samplemarginspositive are not a global proof. FullgoalACTIVE.
+
 ## Repo & git state at handoff
 
-Substantive adoption before this HANDOFF-only successor: 49d667242d119b232f867d25f40d5ec09c1bec86.
-Local/origin/<HUB> synchronized there, all mathematical/evidence paths
+Substantive adoption before this HANDOFF-only successor: 0c38ba0ac1258d80dae8bde97caced7577cef021.
+Local/origin/<HUB> synchronized there, all mathematical/evidencepaths
 committed/pushed. No foreign WIP or live reviewer/Lean job.
 Wiki ../SPDEs-wiki/content/projects/stratonovich-ham-second-moment.md exists
-and is unchanged. Intra-roundcheckpoint only; canonicalintegration/fullwiki/
-coldread/roundclose/novelty/wholepaper/circulation remain separate.
+and is unchanged. Intra-roundpartialcheckpoint, no canonicalintegration/
+fullwiki/coldread/roundclose/wholepaper/novelty/circulation clearance.
 
 ## Operating notes
 
-Actualreviewread-only handverification is separate from rootexecuted
-code/hash/archive/sourceimage/commit/tag/version checks. Allnativeattempts
-retained; fullrawvaluepreproof/science directvalidJSON,no recovery/retry.
-Bothformaltype axiomsets standard3,full pp.alltypes andnativecontrols/logs
-retained. Initiallocalcompilefail repaired asproofsyntax,not newstatement
-or relaxedguard. OwnedoutputfirstLEAN_PATH,readonlydonor,no package edits.
+Actualreview handverification separated from rootexecuteddiagnostics/
+sourcehash/sourceimage/nativearchive/git/Lean/tag/version checks. Allnative
+attempts retained. Dampedpreproof/fullscience directvalidJSON,no recovery/
+retry/confidencechange. Nativecontrol logs actualFalse rootrechecked.
+Public3declstrongratio module pluscleanpilot2 retained; guardunchanged.
 
 SupportednativeCLI2.1.304PATH/account<account removed>,last<usage removed>
-atfullsciencelaunch,not a promise of futurequota. Exactimagecoverageverified
-onbothgates, sourceauthorPDFSHA5f7385ca...97b6cunchanged. Ambientamsghook
-notread/used,no externalmessage/source/wiki/sibling/setup/companion/HPC edit.
+atfullsciencelaunch,not futurequotapromise. Exactsourceimagesfullviewed/
+coverageverified; sourceauthorPDFSHA5f7385ca...97b6cunchanged. Ambient
+amsghooknotread/used,no externalmessage. No donor/package/companion/
+lease/registry/HPC/Comparator/setup/source/wiki/sibling/publication edit.
 
 ## Risks to monitor
 
-The newceiling concerns an existing positivecontrolfunctional, notthe
-originalmoment. The dampedsourceLOWERendpoint remains unaddressed; raw
-Ehalf/E1 mapgaps cannot be substituted for it. Nextcapacity/static/damped
-row route has only numericalrecon, globalquantifiers/sourceclass matching
-stillrequired. Intendednormalization UNKNOWN, originalhigherdimensional
-lower/sharpupper and allpaperdecisionpoints remainopen. No completion
-claim from another lower mechanism/no-go alone.
+The acceptedwhitepoint closes one actuallowercomparison, nottheoriginal
+fullsharp problem. NextTaylor4reduction/globalGamma inequality are only
+recon, so don'tuseB4 as an acceptedinput. Sourceintendednormalization,
+all-domain/label matching, sharpupper, originalhigher-dimensional lower
+and conditionalexactlimit stillopen. Retain originalstop/report decisions;
+no prematurecompletion or paused/blockedstatus while meaningfulprogress
+remains available.
