@@ -1,0 +1,164 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "notes/raw-variational-dilation.md: lines 1-247 (complete)",
+    "notes/actual-shifted-event.md: lines 1-335 (complete)",
+    "notes/spectral-ground-family.md: lines 1-138 (complete)",
+    "notes/joint-gaussian-tilt.md: lines 1-318 (complete)",
+    "reviews/2026-10-30-raw-variational-dilation/target-v1.md: lines 1-84 (complete)",
+    "reviews/2026-10-30-raw-variational-dilation/check-diagnostics.py: lines 1-28 (complete)",
+    "reviews/2026-10-30-raw-variational-dilation/diagnostics-v1.json: lines 1-60 (complete)",
+    "reviews/2026-10-30-raw-variational-dilation/local-recon.md: lines 1-27 (complete)",
+    "reviews/2026-10-30-raw-variational-dilation/accepted-full-upper-statement.txt: lines 1-17 (complete)",
+    "reviews/2026-10-30-raw-variational-dilation/accepted-full-upper-custody.json: lines 1-10 (complete)",
+    "reviews/2026-10-30-raw-variational-dilation/accepted-upper-context.txt: lines 1-38 (complete)",
+    "reviews/2026-10-30-raw-variational-dilation/upper-input-verification-v2.json: lines 1-12 (complete)",
+    "reviews/2026-10-30-raw-variational-dilation/source-crosswalk-v1.md: lines 1-25 (complete)",
+    "reviews/2026-10-30-raw-variational-dilation/statement-adjudication-v1.md: lines 1-39 (complete)",
+    "reviews/2026-10-30-raw-variational-dilation/scientific-worker-honesty-v1.md: lines 1-36 (complete)",
+    "reviews/2026-10-30-raw-variational-dilation/lean-release-preflight.json: lines 1-17 (complete)",
+    "reviews/2026-10-28-source-normalization/adjudication-v2.md: lines 1-66 (complete)",
+    "lean-progress/local-checks/raw-variational-v1/StratonovichHAMAudit/RawVariational.lean: lines 1-73 (complete)",
+    "lean-progress/local-checks/raw-variational-v1/Audit.lean: lines 1-11 (complete)",
+    "lean-progress/local-checks/raw-variational-v1/types-and-axioms.txt: lines 1-195 (complete)",
+    "lean-progress/local-checks/raw-variational-v1/STATEMENT-FENCE.md: lines 1-30 (complete)",
+    "lean-progress/local-checks/raw-variational-v1/local-receipt.json: lines 1-70 (complete)",
+    "lean-progress/local-checks/raw-variational-v1/WrongVariance.lean: lines 1-3 (complete)",
+    "lean-progress/local-checks/raw-variational-v1/WrongHalf.lean: lines 1-3 (complete)",
+    "lean-progress/local-checks/raw-variational-v1/WrongLinearLabel.lean: lines 1-3 (complete)",
+    "lean-progress/local-checks/raw-variational-v1/WrongVariance.txt: lines 1-2 (complete)",
+    "lean-progress/local-checks/raw-variational-v1/WrongHalf.txt: lines 1-2 (complete)",
+    "lean-progress/local-checks/raw-variational-v1/WrongLinearLabel.txt: lines 1-2 (complete)",
+    "lean-progress/local-checks/raw-variational-v1/replay-investigation.json: lines 1-54 (complete)",
+    "reviews/2026-10-28-source-normalization/packet-v2/pages/chen-04-upper.png: full image viewed; displays (1.11)-(1.14) and the A_d domain",
+    "Plan file, no read credit: .review/required-sources.json: lines 1-95 (complete)"
+  ],
+  "checks": [
+    {
+      "claim": "C1: C_sep is nonempty with both factors nonnegative, nonzero, smooth and compact, and factorization ambiguity is scalar only",
+      "verdict": "PASS",
+      "reason": "f=b(4t-2) has support [1/4,3/4], inside (0,1), and q=b is a legitimate test. If fq=FQ and f(t0)q(x0)>0, nonnegativity forces F(t0),Q(x0)>0. Evaluating gives Q=q/l and F=lf with l=F(t0)/f(t0)>0, so the algebra at lines 36-38 is correct."
+    },
+    {
+      "claim": "C1: h_psi, I_psi and v_psi are intrinsic, and I_psi uses the actual operator -d2-bU with lambda=sqrt(-inf spectrum)",
+      "verdict": "PASS",
+      "reason": "k_F U_Q=k_f U_q, so the operator family and rates do not depend on the factorization. This agrees with tilt (5) and with shifted-event (1) and (6). Rates are positive and continuous on K_par by spectral-ground (1), (2) and (4), and k_f has compact positive range by shifted-event (5), so 0<I_psi<infinity. v_psi is defined from W(psi) alone."
+    },
+    {
+      "claim": "C1: v_psi=A_f B_q with 0<v_psi<infinity in both white and Riesz cases, with the amplitude retained",
+      "verdict": "PASS",
+      "reason": "The raw covariance |t-s|^-a Gamma (tilt Section 1) and Tonelli give (2). |t-u|<=1 on [0,1] gives k_f>=integral f>0, so A_f>=(integral f)^2>0, and A_f is finite because k_f is bounded. B_q is finite because U_q is bounded and q compact. White gives c_Gamma integral q^2, and Riesz gives a positive double integral because q is positive on an interval. No Fourier constant enters."
+    },
+    {
+      "claim": "C1: the imported upper bound is finite only, for the same original point u, with alpha_0=a",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The exponent (4-alpha-alpha_0)/(3-alpha) equals kappa at alpha_0=a. The d=1 positive Riesz/white family with 0<alpha<=1 lies within the quoted H:homog. R_alpha is finite and positive, and the polynomial prefactor is negligible because kappa>0. No numerical value is consumed. Same-u identity rests on the explicit supplied dictionary, because E:cov, E:expansion and P:mild-construction are not in the packet; this is recorded as a minor finding and limitation."
+    },
+    {
+      "claim": "C2: D_s=s^(3-alpha)psi(t,sx) is an intrinsic bijection of C_sep with D_rD_s=D_(rs), inverse D_(1/s), and a legal fixed test for each s",
+      "verdict": "PASS",
+      "reason": "Direct computation gives r^(3-alpha)s^(3-alpha)psi(t,rsx). Nonnegativity, nonzeroness, smoothness and compact support are preserved, and factor scaling (lf,q/l) maps compatibly. Constants may depend on the fixed s, and the note uses no s(delta) or uniform-in-s event."
+    },
+    {
+      "claim": "C2: the pushforward is s^(alpha-1) and U_(q_s)=s^2 U_q(s.), including white measure, with no density Jacobian or Fourier factor",
+      "verdict": "PASS",
+      "reason": "(T_s)_#Gamma(A)=Gamma(s^-1 A)=s^(alpha-1)Gamma(A) follows from Gamma(sA)=s^(1-alpha)Gamma(A). Then s^(3-alpha)s^(alpha-1)=s^2. A separate Riesz change of variables and the white computation c_Gamma s^2 q(sx) both agree. The direction and exponent are correct."
+    },
+    {
+      "claim": "C3: the sqrt(s) dilation is unitary and bijective on H2, H_(b,q_s)=s^2 T_s H_(b,q) T_s^-1 at fixed b, and the entire spectrum scales by s^2",
+      "verdict": "PASS",
+      "reason": "T_(1/s)T_s=I and the L2 norm is preserved. (T_s g)''=s^2 T_s g'' and (7) give the identity on all of H2. Both operators are the accepted self-adjoint ones, so E1 scales by s^2 and lambda scales by s. T_s p stays positive and normalized and is the simple ground state."
+    },
+    {
+      "claim": "C3: I_(D_s psi)=s I_psi and v_(D_s psi)=s^(4-alpha) v_psi, with Gamma and the model unchanged",
+      "verdict": "PASS",
+      "reason": "k_f is unchanged, so integrating (9) gives (10). A_f times s^(3-alpha) times s^2 times the dx Jacobian 1/s gives s^(4-alpha), and the white case gives s^3. This scales the raw variance, not its square root. Line 132 explicitly disclaims an F-phase isometry and uniform physical constants, and only the Gaussian test changes."
+    },
+    {
+      "claim": "C4: each score at label 2 is bounded by the same finite Q2 and C_up, with no optimizer or sup/time-limit interchange",
+      "verdict": "PASS",
+      "reason": "(4) holds for each fixed psi. C_up comes from a theorem that does not mention tests. Q2 is finite because one test gives a real lower bound and limsup gives the upper bound. Q2>=V_2 follows from Q2 being an upper bound of S_2, or from the e-approximation at lines 198-201 using one fixed test for each e."
+    },
+    {
+      "claim": "C4: real suprema are established before their properties are used, and V_1>0 follows from the fixed s0",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "S_1 is nonempty and bounded above via I_psi>0 and S_2 before V_1 is defined. s0^k=I/v gives s0 I-s0^(k+1)v/2=s0 I/2>0 with the correct half cost and 4-alpha=k+1. The note twice writes 'bounded' where it can only mean bounded above; S_c is in fact unbounded below. The argument is unaffected."
+    },
+    {
+      "claim": "C4: S_c=c^m S_1 exactly, V_c=c^m V_1 with both inequalities, and V_2>2V_1",
+      "verdict": "PASS",
+      "reason": "With s=c^(1/k), cs=s^(k+1)=c^m, so (14) holds for every psi. The bijection D_s gives exact set equality. Finiteness comes from elements of S_c being at most c^m V_1 before V_c is used. The reverse inequality uses least-upper-bound minimality. m=1+1/k>1 and V_1>0 give (16)."
+    },
+    {
+      "claim": "C4: the final sandwich (17) follows",
+      "verdict": "PASS",
+      "reason": "0<V_2 because V_2=2^m V_1 and V_1>0. V_2<=Q2 was shown by fixed tests, Q2<=limsup is trivial, and limsup<infinity comes from the upper input. Q2>=V_2>0 also makes eventual positivity of the second moment consistent."
+    },
+    {
+      "claim": "C5: complete Lean types and applications of dilation_factors and label_score",
+      "verdict": "PASS",
+      "reason": "The pp.all types decode to s^(3-alpha)*s^(alpha-1)=s^2 and s^(3-alpha)*s^2/s=s^(4-alpha) for s>0, which is exactly the exponent arithmetic in (7) and (11) and not the measure transformation. label_score, with c>0 and alpha<3, is the scaled-score identity of (14) at s=c^(1/(3-alpha)); its hypotheses hold because c>0 and alpha<=1. I, v and the supremum are not certified analytically, as the note and fence say."
+    },
+    {
+      "claim": "C5: complete Lean types and applications of positive_score and strict_label_factor",
+      "verdict": "PASS",
+      "reason": "positive_score has hypotheses I>0, v>0, alpha<3 and states the exact expression of (13) with s0=(I/v)^(1/(3-alpha)); actual I,v>0 come from (3) outside Lean. strict_label_factor gives 2<2^((4-alpha)/(3-alpha)), which supports only that factor in (16), not V_1>0, Jensen or a source identity."
+    },
+    {
+      "claim": "C5: standard axioms, False endpoints, retained replay history and local-only receipt",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "All four theorems list exactly propext, Classical.choice and Quot.sound. The Lean source has no sorry, linter disable or <;>. The three controls compute 8=4, 0>0 and 4=2 and log unsolved goal False at the expected columns; they are numeric endpoints, not mutations. The final receipt shows all 5 outputs matching, and the prior server-hash mismatch is retained. The receipt declares local scope. Kernel, replay and first-attempt facts were accepted from packet logs and not re-executed."
+    },
+    {
+      "claim": "C6: the exact upper context and custody are used only for finiteness",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The H:homog excerpt, theorem excerpt, custody and verification JSON are mutually consistent, including the same source SHA and the 6203ab7/current booleans. The current dependency paragraph excludes static coefficient and disputed first-moment inputs and supersedes the historical adjudication-v2 line, as statement-adjudication item 4 records. Only finite limsup is consumed. Hash booleans are supplied attestations, and the checked revision f48a7fe differs from the packet revision 0fd2a05."
+    },
+    {
+      "claim": "C6: source image and boundary fidelity, with no identification of V_c",
+      "verdict": "PASS",
+      "reason": "The image shows E with raw kernel gamma/|s-r|^alpha_0 and penalty 1, and E_star with damped gamma_star^0 and penalty 1/2, on the same A_d. The note and crosswalk describe this correctly and keep the intended normalization UNKNOWN. No repair is made, and no V_1=mean/L_*/E/E_star identification appears. V_2>2V_1 is explicitly not a Jensen improvement, and c is an auxiliary label."
+    },
+    {
+      "claim": "C6: no Skorohod, general optimizer, higher-dimensional, sharp-upper or whole-paper claim",
+      "verdict": "PASS",
+      "reason": "Lines 5-7, 207-208, 222-224 and 245-247 state these exclusions, and the argument uses only d=1 separable fixed tests."
+    },
+    {
+      "claim": "C7: the six diagnostics, their formulas and data are reproducible by inspection, and their limited scope is honest",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "I recomputed all six JSON rows by hand from the script formulas, and all match. These are s=u^(2d), amplitude s^(3-alpha), push s^(alpha-1), variance s^(4-alpha) and the score relation. The script was not executed because no execution tool was available. The boolean JSON fields are guarded by asserts. Controls are weak and disclosed: the wrong-variance control is s^2, 1/s!=1 is nearly vacuous, and there is no wrong-rate or composition test. The note states the diagnostics do not prove analytic claims."
+    },
+    {
+      "claim": "C7: worker concerns and the full original goal are retained",
+      "verdict": "PASS",
+      "reason": "The honesty file, adjudication and note retain candidate status, the required review, the prior Lean attempt, source discrepancy and open sharp/dimensional goals. No concern is silently removed."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Lines 157 and 184 say 'bounded' where the proof uses bounded above. S_c is not bounded below, since the score at D_s psi tends to -infinity as s tends to infinity. Line 156 and the surrounding context make the intended meaning clear, so the supremum argument is valid.",
+      "Line 18 says 'rational powers' where it should say rational functions (or polynomials in 1/(1-x^2) and x) times the exponential. The standard bump smoothness claim is unaffected.",
+      "T_s denotes both the spatial map at line 95 and the L2 unitary at line 114. Symbol b denotes both the bump at line 17 and the coupling in (1). Context disambiguates, but the notation is overloaded.",
+      "Same-solution identity between the canonical expansion solution of T:full-upper and the solution in shifted-event (4) rests on the supplied dictionary. The exact E:cov, E:expansion and P:mild-construction text and the lower-consumer scaling notes are not in the packet.",
+      "The dependency paragraph ends by referring to the 'interval-field upper bound', while the imported label is T:full-upper. Its first sentence refers to the full upper theorem, and the identification is natural, but the excerpt does not display it explicitly. The deduction consumes finiteness only.",
+      "Line 7's phrase 'original full upper/sharp' goal could be misread as conflicting with imported T:full-upper, whose statement says it establishes G:upper. The remaining open item appears to be the sharp constant and dimensional scope.",
+      "The calibration at lines 219-221 calls the exponent the 'expected static moment-power exponent' without a packet citation. It is explicitly non-load-bearing and imports no constant.",
+      "STATEMENT-FENCE's range (13)-(16) could be read as Lean support for (15). The individual entries correctly exclude supremum and class properties, and no Lean theorem proves (15).",
+      "upper-input-verification-v2.json records a current check at f48a7fe, while the review source revision is 0fd2a05. The packet contains no direct hash attestation at 0fd2a05."
+    ],
+    "unverifiable_items_note": []
+  },
+  "required_repairs": [],
+  "limitations": [
+    "No execution tool was available. check-diagnostics.py was recomputed by hand, and the Lean build, kernel checks, axiom output, False outputs and replay hashes were not re-run. The latter are reviewed from packet logs and receipts.",
+    "SHA-256 values for the PNG, Lean source, TeX statement, TeX source and object files were not independently computed. The canonical TeX and first-attempt Lean source are not in the packet, so the claim of exactly two token changes rests on recorded evidence, with matching public-object hashes as support.",
+    "Scoped accepted inputs (actual shifted-event lower bound, ground family, T:full-upper) were inspected for statement and application, and their internals were not re-proved. Their further dependencies, including moving-block-cone, local-causal-young-flow, direct-event, phase-response and the upper proof, are not in the packet.",
+    "The PNG shows no printed page number. Its identification as source page 4 relies on the manifest, crosswalk and local recon. Only that page was viewed, so the source boundary check is limited to it.",
+    "This AI review is not human verification, novelty clearance, whole-paper certification or adoption of any source correction. It is confined to the positive-separable d=1 raw functional in the candidate note."
+  ]
+}

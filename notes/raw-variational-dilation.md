@@ -1,10 +1,13 @@
 # Raw variational dilation of the accepted second-moment lower bound
 
-CANDIDATE, not independently accepted. The proposed statement passed its
-preproof class/fidelity/feasibility audit at6203ab7,12groups/HIGH; this is
-not proof acceptance. V_c below is an auxiliary raw variational label.
-No first-mean, source-constant, optimizer or sharp upper identification is
-claimed. Original full upper/sharp and dimensional goal remains active.
+ACCEPTED at the scoped scientific analytic/type/application gate: actual
+Opus5.5/HIGH,20PASS/PASS_WITH_NOTES groups,280.82seconds,no mandatory
+repairs; scientific source0fd2a05. Evidence and nine optional adjudications
+in reviews/2026-10-30-raw-variational-dilation/scientific-adjudication-v1.md.
+Four finite Lean applications checked. V_c remains an AUXILIARY raw
+positive-separable d1 functional, not a source/first-mean constant.
+The reviewed full upper scale is retained; sharp constants, optimizer/source
+correspondence and original higher-dimensional lower track remain open.
 
 ## 1. Class, representation independence, and exact imported bounds
 
@@ -16,7 +19,7 @@ nonzero and smooth compact, supp f contained in(0,1), q on R.
 The class is nonempty: take the standard smooth bump
 b(x)=exp(-1/(1-x^2)) for |x|<1 and0 otherwise, then f(t)=b(4t-2),q=b.
 All derivatives at its boundary vanish because they are finite sums of
-rational powers times this exponential, so these are legitimate tests.
+rational functions times this exponential, so these are legitimate tests.
 
 Use the raw covariance and actual spectral objects of the accepted
 notes/actual-shifted-event.md and notes/spectral-ground-family.md:
@@ -154,8 +157,7 @@ For c>0 let S_c be the set of real scores cI_psi-v_psi/2, psi in C_sep.
 Each S_c is nonempty by the explicit bump example. Equations (3)-(4)
 show S_2 is bounded above. Also each I_psi-v_psi/2 is <=2I_psi-v_psi/2,
 so S_1 is bounded above by the same C_up. Define the real supremum
-V_1=sup S_1; the real completeness theorem applies to a NONEMPTY bounded
-set, and no optimizer is assumed.
+V_1=sup S_1; the real completeness theorem applies to a NONEMPTY set bounded above, and no optimizer is assumed.
 
 V_1>0. Choose any fixed test with I=I_psi>0,v=v_psi>0 and put
 
@@ -181,7 +183,7 @@ and m in (12) give c s=s^(k+1)=c^m. Consequently, for EVERY test psi,
 
 Because D_s is a bijection of C_sep, S_c is EXACTLY the positive scalar
 multiple c^m S_1. In particular every element of S_c is <=c^m V_1,
-so this nonempty set is bounded and has a well-defined real supremum V_c.
+so this nonempty set is bounded above and has a well-defined real supremum V_c.
 This argument establishes finiteness before using any properties of V_c.
 It also gives V_c<=c^m V_1. Conversely (14) and the upper-bound property
 of V_c imply I_psi-v_psi/2<=V_c/c^m for every psi. Leastness of V_1

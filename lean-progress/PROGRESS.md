@@ -278,3 +278,10 @@ and all4public types match. No gate weakened or linterdisabled. Evidence
 local-checks/raw-variational-v1/. Independent exacttype/application review
 pending. No formal covariance/spectral/supremum/event or package theorem.
 L0/PROPOSED/privatecompanioncreation decision unchanged.
+
+Raw-variational local close: scientific20groups/HIGH at0fd2a05,
+280.82seconds/29texts+1image,no mandatory repairs. All4complete types/
+live standardaxioms and actual exponent/score/positive/strictfactor
+applications independently checked. Formal sources unchanged. Both
+warning/server refusal and clean5output replay retained; local only,
+no formal covariance/spectral/supremum/SPDE or package/companion theorem.
