@@ -1,0 +1,198 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "reviews/2026-10-30-nonseparable-family/target-v2.md lines 1-109 (complete)",
+    "reviews/2026-10-30-nonseparable-family/falsification-v1.md lines 1-45 (complete)",
+    "reviews/2026-10-30-nonseparable-family/check-diagnostics.py lines 1-13 (complete; read, not executed)",
+    "reviews/2026-10-30-nonseparable-family/diagnostics-v1.json lines 1-28 (complete)",
+    "reviews/2026-10-30-nonseparable-family/worker-honesty-v2.md lines 1-15 (complete)",
+    "reviews/2026-10-30-nonseparable-family/accepted-input-map-v2.md lines 1-50 (complete)",
+    "reviews/2026-10-30-nonseparable-family/local-recon.md lines 1-28 (complete)",
+    "notes/joint-gaussian-tilt.md lines 1-319 (complete)",
+    "notes/spectral-ground-family.md lines 1-139 (complete)",
+    "notes/spectral-weighted-projection.md lines 1-204 (complete)",
+    "notes/spectral-complement-transfer.md lines 1-209 (complete)",
+    "notes/local-causal-young-flow.md lines 1-504 (complete)",
+    "reviews/2026-10-30-spectral-phase/teschl-second-edition-custody.json lines 1-25 (complete)",
+    "reviews/2026-10-30-spectral-phase/ground-adjudication-v1.md lines 1-58 (complete)",
+    "reviews/2026-10-30-weighted-projection/adjudication.md lines 1-44 (complete)",
+    "reviews/2026-10-30-complement-transfer/adjudication.md lines 1-57 (complete)",
+    "reviews/2026-10-30-nonseparable-family/statement-adjudication-v1.md lines 1-37 (complete)",
+    "reviews/2026-10-30-nonseparable-family/statement-v1-report.json lines 1-133 (complete)",
+    "notes/nonseparable-profile-family.md lines 1-385 (complete)",
+    "reviews/2026-10-30-nonseparable-family/uniformity-ledger-v1.md lines 1-31 (complete)",
+    "reviews/2026-10-30-nonseparable-family/scientific-worker-honesty-v1.md lines 1-40 (complete)",
+    "reviews/2026-10-30-nonseparable-family/statement-adjudication-v2.md lines 1-47 (complete)",
+    "reviews/2026-10-30-spectral-phase/source-images/teschl2014-title.png (full image viewed)",
+    "reviews/2026-10-30-spectral-phase/source-images/teschl2014-copyright.png (full image viewed)",
+    "reviews/2026-10-30-spectral-phase/source-images/teschl2014-p140.png (full image viewed)",
+    "reviews/2026-10-30-spectral-phase/source-images/teschl2014-p141.png (full image viewed)",
+    "reviews/2026-10-30-spectral-phase/source-images/teschl2014-p200.png (full image viewed)",
+    "reviews/2026-10-30-spectral-phase/source-images/teschl2014-p201.png (full image viewed)",
+    "reviews/2026-10-30-spectral-phase/source-images/teschl2014-p258.png (full image viewed)",
+    "reviews/2026-10-30-spectral-phase/source-images/teschl2014-p273.png (full image viewed)"
+  ],
+  "checks": [
+    {
+      "claim": "C1: The actual object is the general nonnegative nonzero compact psi with the original d1 Riesz/white Gamma and amplitude; covariance is distributional and sigma is an index.",
+      "verdict": "PASS",
+      "reason": "Candidate lines 12-23 match target-v2 lines 9-22 and tilt Section 1. Equation (1) defines h_sigma by convolution, and sigma=0 is not treated as zero potential. Tonelli for nonnegative integrands identifies (1) with tilt (5) at t=sigma, although this step is unwritten (see minor findings)."
+    },
+    {
+      "claim": "C1: q_sigma is legal with common support, q_avg is nonzero, and h_sigma>=U_avg>=0.",
+      "verdict": "PASS",
+      "reason": "For u,sigma in [0,1], the kernel is at least 1 and positive almost everywhere. By continuity of psi(.,x), q_sigma(x)=0 holds exactly when psi(.,x) vanishes identically, which holds exactly when q_avg(x)=0. The positivity sets and supports therefore coincide. Differentiation under the integrable kernel gives smoothness. A positive Radon convolution preserves the order in both the Riesz and white cases."
+    },
+    {
+      "claim": "C1: Uniform C1, time-Lipschitz, tail and smoothness inputs come from the exact general tilt (5)-(6) scope.",
+      "verdict": "PASS",
+      "reason": "Tilt Section 3 assumes only real psi, not separability. It bounds every spatial derivative, gives the time derivative through the kernel over temporal distances at most 1, and proves Lipschitz dependence into C_b^1 and uniform W1,infinity tails. Those are the facts the candidate uses: M, C_h, R_ext and frozen admissibility with zero constant part in local-flow (5.6)."
+    },
+    {
+      "claim": "C1: P_sigma is the actual physical F flow with constants, with no bU substitution or per-q constants.",
+      "verdict": "PASS",
+      "reason": "The time-constant h_sigma satisfies local-flow (5.5)-(5.6). The Young equation with Lipschitz A_h reduces to the Duhamel equation with S and bounded B(h) on F. Autonomy gives the semigroup law through uniqueness. The finite-horizon bound (5.2) depends only on the common W1,infinity bound. No statement from the fixed bU notes is imported as a uniform constant."
+    },
+    {
+      "claim": "C1: The Teschl second-edition sources match their uses.",
+      "verdict": "PASS",
+      "reason": "The title and copyright images show Second Edition, GSM 157, ISBN 978-1-4704-1704-8, copyright 2009, 2014. T10.2 on p258, with L-infinity-infinity defined across pp200-201, covers real n<=3 potentials and gives domain H2, lower boundedness, essential spectrum [0,infinity) and a C_c^infinity core. T10.13 on p273 is conditional on the bottom being an eigenvalue. P140 defines the essential spectrum and the threshold convention. T4.12 on p141 gives max-min, followed by the form-domain sentence."
+    },
+    {
+      "claim": "C2: One common trial gives E1<=-eps and E1>=-M, with M>0 and correct constants.",
+      "verdict": "PASS",
+      "reason": "Since w_R=1 on [-R,R], which contains [-D,D], and h_sigma>=U_avg>=0, the form is at most A/R-m, which is at most -m/2 by R>=2A/m. Dividing by ||w_R||^2=RB gives eps=m/(2RB), independent of sigma. H_sigma>=-M is immediate. A>0 holds because chi is compact and equals 1 on [-1,1]."
+    },
+    {
+      "claim": "C2: The bottom is in the spectrum and is a discrete eigenvalue before conditional positivity is invoked; p_sigma is real, L2-normalized and pointwise strictly positive.",
+      "verdict": "PASS",
+      "reason": "The order in lines 95-99 is correct: Rayleigh via T4.12 with n=1, spectrum, below essential 0, then T10.13. H2 gives C1, the ODE gives C2, and a zero of a nonnegative solution has zero derivative, so ODE uniqueness rules it out. Line 101 gives l<=lambda_sigma<=sqrt(M)."
+    },
+    {
+      "claim": "C2: Common max-min classes give level Lipschitz bounds, with E2 capped at 0 and multiplicity/infinite Riesz states allowed.",
+      "verdict": "PASS",
+      "reason": "U(psi_1,...) in (4.37) is the same set for every sigma because the domain H2 (or form domain H1) is common. The form difference is at most D_(sigma,s), and this survives inf then sup. T4.12 counts multiplicity and sets later levels to the essential infimum. No eigenvector selection is used. E1<E2<=0 follows from simplicity plus isolation."
+    },
+    {
+      "claim": "C2: Compactness gives Delta>0 and exact rate separation; no uniform gap is a premise.",
+      "verdict": "PASS",
+      "reason": "E2-E1 is positive and continuous on [0,1]. Then lambda-mu=(E2-E1)/(lambda+mu) and lambda+mu<=2L_rate, with lambda>=l keeping the denominator positive. This gives d_rate=Delta/(2L_rate), and mu=0 is allowed."
+    },
+    {
+      "claim": "C3: The energy, H2, sup and vanishing bounds at both infinities are uniform.",
+      "verdict": "PASS",
+      "reason": "||p'||^2=int h p^2-lambda^2<=M and ||p''||_2<=lambda^2+M<=2M. The inequality ||g||_inf^2<=2||g||_2||g'||_2, applied to p and p', plus H1 approximation gives uniform bounds and vanishing of p and p' at both ends."
+    },
+    {
+      "claim": "C3: One common exterior R_ext and beta, with unbounded half-line comparison, give uniform p, p', p'' tails.",
+      "verdict": "PASS",
+      "reason": "With beta=l/2 and h<=l^2/2 for |x|>=R_ext, one has p''>=(l^2/2)p>=beta^2 p. The difference w vanishes at R_ext and at infinity and satisfies w''-beta^2 w>=0, so it has no positive maximum. The boundary value is bounded by the uniform sup bound. The ODE gives the p'' tail, and integrating from infinity using p'->0 gives the p' tail with constant C/beta. No Agmon constant is used."
+    },
+    {
+      "claim": "C3: The exact residual sign, gap inverse, positive overlap and H2/lambda continuity hold without assuming eigenfunction continuity.",
+      "verdict": "PASS",
+      "reason": "H_s=H_sigma+h_sigma-h_s gives the residual [E1(sigma)-E1(s)+h_sigma-h_s]p_sigma, of norm at most 2D_(sigma,s). On the complement of p_s the spectrum of H_s-E1(s) is at least E2(s)-E1(s)>=Delta. With b>0, 2(1-b)<=2(1-b^2)=2||Q p_sigma||^2. In the subtracted ODE the coefficient of p_s has sup norm at most 2D_(sigma,s). Also |lambda_sigma-lambda_s|=|E1(sigma)-E1(s)|/(lambda_sigma+lambda_s)<=D_(sigma,s)/(2l)."
+    },
+    {
+      "claim": "C4: The absolute local partition pairings for both entries, their independence and the cutoff tail are correct and uniform.",
+      "verdict": "PASS",
+      "reason": "rho_j p has H1 norm at most C exp(-beta|j|), which controls both the H-1/2 and H1/2 dual uses. Sums are bounded by C||z||_F. Agreement on compact smooth phases plus both constants, then the defining density, gives independence without an E-dense or compact-dense claim. In (10), cell j contributes only if |j|>D-1, and the geometric sum gives C exp(-beta D). The cutoff multiplier is uniform."
+    },
+    {
+      "claim": "C4: The e/ell factor 1/2, reciprocal lambda, Pi^2=Pi, the decaying partner and the e0 entrance are correct.",
+      "verdict": "PASS",
+      "reason": "ell(e)=(1+1)/2=1 and ell(p,-lambda p)=(1-1)/2=0. ell(e0)=(1/2)int p, and 1=int p^2<=||p||_inf int p gives the uniform bound. Velocity is retained in the projection."
+    },
+    {
+      "claim": "C4: Operator-norm continuity of e, ell and Pi holds through a finite core and tail.",
+      "verdict": "PASS",
+      "reason": "For fixed D, finitely many cells are bounded by the H2 difference, while the tail is uniformly at most C exp(-beta D). Lambda and its reciprocal are Lipschitz by (8) and l>0. The product estimate gives Pi continuity. No norm continuity of S is used."
+    },
+    {
+      "claim": "C4: J_phi is the unsquared real linear displacement-only local pairing, with positive infimum on e_sigma.",
+      "verdict": "PASS",
+      "reason": "Line 233 matches target-v2 lines 71-77 exactly. A compact cutoff, a finite expansion as in (4.2) and H1/2--H-1/2 duality give boundedness and cutoff independence. There is no point evaluation and no velocity term. int phi p_sigma>0 by pointwise positivity, it is L2-continuous in sigma, and compactness gives a positive minimum. Dependence on phi is allowed by the target."
+    },
+    {
+      "claim": "C4: Physical forward invariance and commutation (14) hold on actual F with constants.",
+      "verdict": "PASS",
+      "reason": "Compact smooth and constant data have classical bounded-derivative solutions using bounded derivatives of h_sigma and kernel mass tau-u. Picard iterates coincide in F, and distribution testing identifies them with P_sigma (see also weighted adjudication item 1). With p''+h p=lambda^2 p, a''=lambda^2 a, so y=(a+a'/lambda)/2 has y'=lambda y. The dense extension uses bounded ell and P on the compact-plus-constant class. The eigenphase is identified by uniqueness. Both sides of (14) equal exp(lambda tau)e ell."
+    },
+    {
+      "claim": "C5: The common H1 form domain gives B0<=A_sigma<=cB0 with c=1+M, and the generic comparison applies with uniform constants.",
+      "verdict": "PASS",
+      "reason": "A-B0=M-h lies in [0,M], and M<=M B0. The accepted complement Section 2 lemma needs operators >=1 with a common form domain and T<=S. It applies to (B0,A_sigma) and (A_sigma,cB0). Since ||A^(1/4)v||^2=<v,A^(1/2)v>, this gives the stated bounds with c^(1/4) and domain H1/2. Duality gives the H-1/2 side. I rechecked the identity sqrt(x)=(1/pi)int t^(-1/2)x/(x+t)dt."
+    },
+    {
+      "claim": "C5: The full spectral matrix at positive, negative and zero xi has common bounds with no division by mu.",
+      "verdict": "PASS",
+      "reason": "The conjugated entries C, sqrt(xi+c)S, -xi S/sqrt(xi+c), C are correct. For xi>=0, |S|<=min(tau,xi^(-1/2)) bounds the upper entry by sqrt(1+c)(1+tau), and the lower entry is at most 1. For -mu^2<=xi<0, |S|<=tau exp(mu tau), |C|<=exp(mu tau), |xi|<=M and 1<=xi+c<=c. Threshold mu=0 has no negative range."
+    },
+    {
+      "claim": "C5: The L2 complement plus the decaying branch gives (16) with uniform conditioning.",
+      "verdict": "PASS",
+      "reason": "I-Pi on a ground component retains (a-b/lambda)/2 times (p,-lambda p), evolving by exp(-lambda tau). In E_sigma the eigenvalue c-lambda^2 lies in [1,c], and l<=lambda<=L_rate bounds the norm and coefficients uniformly. Q is a contraction in both weighted entries and commutes with A."
+    },
+    {
+      "claim": "C5: The spectral flow is identified with actual physical F through F uniqueness, using the full spectrum for identification.",
+      "verdict": "PASS",
+      "reason": "Data in H2 x H1 use the same matrix under (Av,A^(1/2)w), with lambda replacing mu on the full spectrum. The strong solution satisfies the free Duhamel equation in E and hence in F. B(h) is bounded on F, so Gronwall gives equality. E-density plus the E->F embedding and finite-horizon F bounds extend it to E. There is no E-valuedness assumption and no E-dense-in-F claim, and the Q support is used only for the complement."
+    },
+    {
+      "claim": "C6: Physical finite propagation via Duhamel, the cutoff radius and the linear volume bound hold for arbitrary F including constants.",
+      "verdict": "PASS",
+      "reason": "Picard terms have speed-1 support, and F convergence with distribution testing passes this to the limit. The cutoff equal to 1 on radius tau+4 contains the tau-enlargement of supp chi_j. The expansion through kappa rho_k chi_k has at most C(1+tau) terms with uniform multipliers, and the triangle inequality gives the bound. (1-kappa) times compact-plus-constant data stays in the same class, so the argument covers constants. No E-adjoint is used."
+    },
+    {
+      "claim": "C6: The exact projection correction sign in (17) holds.",
+      "verdict": "PASS",
+      "reason": "chi_j R z-chi_j R(kappa z)=-exp(lambda tau)chi_j e ell(z)+exp(lambda tau)chi_j e ell(kappa z)=exp(lambda tau)chi_j e ell((kappa-1)z), using finite propagation and (14)."
+    },
+    {
+      "claim": "C6: The local p tail, the shifted missing-input dual tail, far cells and the supremum in F give (18).",
+      "verdict": "PASS",
+      "reason": "rho_k(1-kappa) nonzero forces |k-j|>=tau+3, so |k|>=tau+3-|j|. The geometric sum gives C exp(-beta(tau-|j|)_+), including |j|>tau by the full dual bound. |j|+(tau-|j|)_+>=tau gives C exp((lambda-beta)tau). The first term is C(1+tau)^2 exp(mu tau) by (16) and the volume bound. Output membership in F is prior knowledge, and the norm is the supremum over j."
+    },
+    {
+      "claim": "C6: Uniform margins, polynomial absorption and the common eta below inf lambda give (19), with no per-member-to-common leap.",
+      "verdict": "PASS",
+      "reason": "With eta=min(d_rate,beta,l)/2, mu<=lambda-2eta and lambda-beta<=lambda-2eta, and eta<=l/4<inf lambda. (1+tau)^2<=2+2tau^2 and exp(eta tau)>=(eta tau)^2/2 give (1+tau)^2 exp(-eta tau)<=2+4/eta^2. I traced each ledger row to its derivation. All constants come from M, l, L_rate, Delta, beta, uniform tails and the fixed partition."
+    },
+    {
+      "claim": "C7: The actual white witness is scoped as an exact-representation no-go only, and the profile order is deterministic.",
+      "verdict": "PASS",
+      "reason": "I rechecked the substitution, which gives h_0=c(Aq1+Bq2) and h_1=c(Bq1+Aq2), with A>B>0 and determinant c^2(A^2-B^2)q1q2>0. Candidate lines 79-80 and 363-366 disclaim arbitrary-phase covariance monotonicity, optimizer sufficiency and moment conjectures. The diagnostic arithmetic 3, 19159/576, 1/15 is correct by hand and is scoped as finite."
+    },
+    {
+      "claim": "C7: Worker concerns, source caveats, boundaries and open consumers are retained, with no new formal or shell result.",
+      "verdict": "PASS",
+      "reason": "Each worker-honesty concern was checked above. Candidate lines 370-384 keep the moving cone, masked zeta_r h(delta u), freezing, uniform Riesz mask, final block, event, raw cost, optimizer/source, signed profiles, higher dimensions, sharp upper constant and whole-paper/novelty/circulation items open. No Lean/package/HPC/foundation/shell is claimed. Queue and custody caveats remain in local-recon, custody and statement-adjudication-v2. The note makes no Skorohod or contact claim."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Candidate lines 20-29 and 65-67 never write the Tonelli step identifying Gamma*q_sigma in (1) with tilt (5) at t=sigma. It is immediate for nonnegative integrands, and tilt regularity transfers. Stating it would make the imported scope explicit.",
+      "Line 69 calls the time integrand 'nonnegative continuous', but the kernel-weighted integrand can be singular at u=sigma. Read as psi(.,x) with an almost-everywhere positive kernel, the argument is correct.",
+      "Line 249 sets a(tau)=int p u(tau), and the commutation step needs local pairing (9) to equal that integral. Line 195 records agreement only for global E and constants, while solutions from constant data in the Riesz case may be neither. The gap closes at once because chi_j=1 on supp rho_j and the local sum converges absolutely for bounded functions and their local derivatives, but this is unwritten.",
+      "Line 237 cites local-flow (4.2) for an arbitrary compact cutoff, whereas (4.2) is stated for translated bumps. The same finite partition expansion applies. C_phi and inf J_phi depend on phi, which target-v2 allows, though line 60's dependence list does not name phi.",
+      "Lines 244-248 and 300-301 compress the Picard/classical and higher-scale flow identifications. I checked them against weighted adjudication item 1, complement Section 3 and complement adjudication items 1-2. Those arguments are generic for frozen bounded smooth potentials, so this is a density-of-exposition note and not a gap.",
+      "Symbols are overloaded: D (trial radius, free cutoff radius, D_(sigma,s)), chi (trial, chi_j, J_phi cutoff), A/B versus A_sigma/B0/B(h), R versus R_ext/R_sigma(tau), C constant versus C_tau, and b as overlap. Ledger names K1, D_h and C_tail, and target l_rate versus note l, do not match exactly. No equation is affected, but later consumers should keep these distinct.",
+      "alpha+a<2 is automatic under 0<a<1 and 0<alpha<=1, and including l in the eta minimum is redundant since beta=l/2. Both are harmless, as earlier adjudications noted for the same margin.",
+      "Custody's selected statement map lists only T10.2 and T10.13, and its queue field is an old unresolved snapshot. The p140, p141, p200 and p201 roles rest on the supplied images. The candidate cites this directory without restating the caveat, which remains in the packet records."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This review covers S1-S3 for one fixed psi, a and Gamma only, and any later general-positive-profile consumer remains unreviewed. This is an AI review, not human verification, a novelty audit or whole-paper certification.",
+    "Existing general-psi covariance, local F/flow and generic positive-operator arguments were checked for exact hypotheses and application as the contract directs. Their internals were not re-proved.",
+    "No shell was available. check-diagnostics.py was not executed and its arithmetic was checked by hand. Image SHA-256 values, source revision c0a0093 and the revision strings cited in adjudications were not independently recomputed.",
+    "Files cited but outside the packet were not available, including the interaction-driver, phase-response and direct-event notes, spectral-phase target-v2, the tilt and local-flow adjudications, the v2 statement report and the full Teschl PDF. Accepted-status headers were taken as contract inputs.",
+    "Teschl was checked only on the eight supplied page images. Its internal proofs and cross-references to pages outside them were not checked.",
+    "All proof verification was by hand. No numerical or formal checker was run on the analytic estimates, and no Lean or spectral certificate exists for them.",
+    "A session hook reported one queued amsg message. It was not read, being outside the packet with no permitted tool, and played no part in this report."
+  ]
+}

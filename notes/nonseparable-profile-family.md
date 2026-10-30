@@ -1,11 +1,12 @@
 # Uniform spectral and physical-wave bridge for an actual positive profile
 
-CANDIDATE, not independently accepted. Target v2 in
-reviews/2026-10-30-nonseparable-family/ passed the revised preproof audit;
-that is not S1-S3 proof acceptance. The earlier FAIL for an undefined
-observable is retained. This note defines that observable explicitly and
-derives new uniform constants for the actual nonseparable profile family.
-No general optimizer/source constant or higher-dimensional result is claimed.
+ACCEPTED at the scoped scientific analytic/source/application gate: actual
+Opus5.5/HIGH,27PASSgroups,379.661seconds,no required repairs; scientific
+sourcec0a0093. Exact evidence and eight optional clarifications are in
+reviews/2026-10-30-nonseparable-family/scientific-adjudication-v1.md.
+Uniform estimates hold for each FIXED general nonnegative nonzero compact
+psi, not only a separable test. General-test stochastic lower/variational
+consumers and original sharp/source/dimensional goals remain open.
 
 ## 1. Exact objects and imported inputs
 
