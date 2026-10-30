@@ -84,6 +84,13 @@
   All23live/packet/COMMITTEDblob hashes match. No verdict at capture.
   Worker honesty concerns retained; earlier statement v1MEDIUM/v2FAIL
   unchanged. No confidence retry substitutes for this full proof gate.
+- Next spectral obligations are frozen as UNREVIEWED planning in
+  reviews/2026-10-30-joint-gaussian-tilt/spectral-next-contract.md, outside
+  the scientific review workspace. It retains the actual F-phase, both
+  components/constant data, full complementary propagator and entire-product
+  observable obligations, raw profile/cost and original dimensional scope.
+  No spectral/event/rate result is claimed. Scientific session67422 was
+  re-polled live with fresh events; no terminal receipt at this checkpoint.
 - Accepted science and canonical TeX/PDF unchanged. Lean stays L0/PROPOSED;
   decision4, source normalization, higher dimensions, sharp constants and
   whole-paper clearance remain open. No cluster or correspondence action.
