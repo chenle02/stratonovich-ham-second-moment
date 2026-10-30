@@ -1,0 +1,122 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "flow-note.txt: lines 1-485 (complete)",
+    "CLO-selected.txt: lines 1-581 (complete)",
+    "CLO-archive-manifest.json: lines 1-11 (complete)",
+    "CLO-source-custody.json: lines 1-20 (complete)",
+    "clo-2.png, clo-3.png, clo-8.png, clo-9.png, clo-10.png, clo-44.png, clo-45.png, clo-63.png, clo-64.png: each full rendered page image viewed (complete, 9 of 9)",
+    "Friz-Hairer-selected.txt: lines 1-259 and 260-321 (complete, 321 lines)",
+    "Friz-Hairer-custody.json: lines 1-42 (complete)",
+    "FALSE-CONTROL-MAP.md: lines 1-12 (complete)",
+    "Lean-local-receipt.json: lines 1-82 (complete)",
+    "Lean-statement-fence.md: lines 1-13 (complete)",
+    "LocalFlow.lean: lines 1-52 (complete)",
+    "types-and-axioms.txt: lines 1-151 (complete)",
+    "WrongMaskEndpoint.lean: lines 1-5 (complete); WrongMaskEndpoint.txt: lines 1-3 (complete)",
+    "WrongSchurCancellation.lean: lines 1-5 (complete); WrongSchurCancellation.txt: lines 1-3 (complete)",
+    "WrongWhiteWitness.lean: lines 1-5 (complete); WrongWhiteWitness.txt: lines 1-3 (complete)",
+    "ReusedInteractionDriver.lean: lines 1-101 (complete)",
+    "reuse-capsule.md: lines 1-25 (complete)",
+    "reused-Lean-receipt.json: lines 1-93 (complete)",
+    "reused-types-and-axioms.txt: lines 1-237 (complete)",
+    "prior-canonical-inputs.txt: lines 1-29 (complete)",
+    "prior-construction-binding.json: lines 1-26 (complete); prior-construction-summary.json: lines 1-21 (complete)",
+    "prior-driver-binding.json: lines 1-22; prior-driver-note.txt: lines 1-346; prior-driver-summary.json: lines 1-20 (all complete)",
+    "prior-phase-binding.json: lines 1-22; prior-phase-note.txt: lines 1-379; prior-phase-summary.json: lines 1-22 (all complete)",
+    "prior-scaling-binding.json: lines 1-20; prior-scaling-note.txt: lines 1-224; prior-scaling-summary.json: lines 1-22 (all complete)",
+    "reconnaissance.md: lines 1-73 (complete)",
+    "source-map.md: lines 1-17 (complete)",
+    ".review/required-sources.json: lines 1-162 (read plan only, no read credit claimed)"
+  ],
+  "checks": [
+    {
+      "claim": "C1 Source/method fidelity and covariance range",
+      "verdict": "PASS",
+      "reason": "The text extraction and the page images agree for every cited CLO item. These are: the periodic massive wave model (1.1)-(1.8) on pp.2-3, diagonal Phi (1.22), the HS norm (1.23), and Theorem 1.4 with sigma>max(-s,s-1) (1.24) on p.8; the interaction representation and driver (1.26)-(1.34) on pp.9-10; the four entries (4.4), Proposition 4.1 and (4.8)-(4.10) on pp.44-45; and Proposition 6.1 plus the proof of Theorem 1.4, where (4.8) with s0=s is equivalent to (1.24), on pp.63-64. With |phi_n|^2 ~ |n|^(alpha-d), (1.23) is finite iff 2sigma+alpha<0. Over s, max(-s,s-1) has minimum -1/2, at s=1/2. So the two conditions can hold together only if alpha<1. sigma=-(1+alpha)/4 gives -1/2<sigma and 2sigma+alpha=(alpha-1)/2<0. For d1 white, sigma must be below -1/2, which contradicts sigma>-1/2 for every s. At equality each dyadic annulus contributes a constant N^(2sigma+alpha-d)N^d, so the sum diverges. The note claims only that the tail inequalities are compatible. It explicitly declines an all-method no-go and a periodic/whole-line covariance identity, and it transfers nothing about normalization. The custody PDF hash c800120... matches the manifest member. In d1, the full original class (density c|q|^(alpha-1), from the accepted phase note \u00a74) reduces to Riesz 0<alpha<1 or white alpha=1."
+    },
+    {
+      "claim": "C2 Physical-mask Hilbert bound (2.1)-(2.4), scaling, white case, time tensoring, b=1/2 counterexample",
+      "verdict": "PASS",
+      "reason": "(2.1) uses -2b=alpha-1. The conjugated kernel is |zetahat(q-k)||q|^-b|k|^b. With weight p=|q|^-b, the row integral equals ||zetahat||_1 p(q), and the column integral reduces exactly to (2.4). Both match schur_row and schur_column. I checked (2.4) independently. For |k|<=2, the singular part is integrable because 2b<1, and Schwartz decay handles the tail. For |k|>2 and |q|>=|k|/2 the bound is C|k|^-2b. For |q|<|k|/2, |q-k|>=|k|/2 gives C|k|^-2 * C|k|^(1-2b). Times |k|^2b everything stays bounded. The weighted-Schur Cauchy-Schwarz argument gives operator norm at most sqrt(C1C2); density extends it. For zetahat_R(q)=R zetahat(Rq), the substitution z=Rq, y=Rk cancels every power of R in the homogeneous norm and leaves the L1 norm unchanged (schur_rescale is the k-factor identity). For white noise the multiplier is an L2 contraction. The space-time norm is a tensor of the positive temporal spectral density c|tau|^(a-1) with the spatial weight, so applying the spatial bound for a.e. tau and integrating is valid. For b=1/2 with f=zeta'': fhat=O(q^2) gives a finite |q|^-1 norm, while (zeta f)hat(0) is proportional to -int(zeta')^2, which is nonzero. Since zeta f is Schwartz, its |q|^-1 norm is infinite. This lies outside alpha>0 and is not a no-go for the target."
+    },
+    {
+      "claim": "C3 Masked Gaussian processes, (3.1)-(3.3) uniformity, exact support",
+      "verdict": "PASS",
+      "reason": "(3.1) follows from the accepted (V), Var W^rho(g)<=Var W(g) and Var(W-W^rho)(g)<=Var W(g), applied at g=zeta_R f, together with (2.2). Test convergence comes from the accepted source limit at zeta_R f. Every HS(E) ONB coordinate of chi_j[M_R(t)-M_R(s)] is W(zeta_R f_kl), where f_kl is the deterministic test of the unmasked coordinate. So E||.||_HS^2 <= C^2 E||chi_j[M(t)-M(s)]||_HS^2. By spatial stationarity of the RAW field this equals the j=0 value, giving uniformity in j, R and rho without any stationarity of the masked field. The generic common-Gaussian criterion of the accepted driver note \u00a75-6 then gives (3.2)/(3.3). Support: wave propagation of speed 1 on each side gives input-output radius 2u<=2T. Injection only in supp zeta_R, contained in [-2R,2R], gives output in [-2R-T,2R+T]. An input supported outside that interval has S(u)v vanishing on [-2R,2R], so zeta_R S(u)v=0. Support is established for smooth cutoffs and on the test side, then passed through countable HS limits. The E-adjoint is not used."
+    },
+    {
+      "claim": "C4 Banach phase E_uloc, F, free group",
+      "verdict": "PASS",
+      "reason": "Completeness: localized limits w_j agree on overlaps, because compact multipliers are bounded on E. v=sum rho_l w_l is locally finite, and chi_j v=lim chi_j v_n because rho_l chi_l=rho_l. The Cauchy bound then gives sup-norm convergence. Global E embeds via translates of one multiplier, and E-density of compact smooth phases gives membership in F. Separability follows from separability of E plus the two constants. (4.2) uses finitely many l with |l-j|<=B+2. Finite propagation gives chi_j S(t)v=chi_j S(t)psi_j v, so S(t) is bounded on E_uloc uniformly for |t|<=T. Massless constants evolve as (c1+tc2,c2). Strong continuity holds on the generating set and extends to F through the uniform bound. Operator-norm continuity is explicitly not claimed."
+    },
+    {
+      "claim": "C5 Bounded-operator construction (4.3)-(4.6), kappa_R, measurability",
+      "verdict": "PASS",
+      "reason": "The kappa_R definition is independent of kappa_R: (kappa-kappa')v is compactly supported outside the injection interval, so it lies in global E and is annihilated. Constants are therefore handled without assuming global E is dense in F. The output is compactly supported local E, so it lies in F. For |i|<=2R+T+4, ||chi_i[.]v||_E <= ||chi_i[.]||_HS C_B ||v||_uloc; the maximum over a finite set commutes with the Holder supremum, giving (4.4) with C_T independent of R. Using max^p <= sum^p over at most C_T R cells gives (4.5) with R^(1/p). (4.6) follows from the finite maximum of differences together with (3.3). The operator M(t)v=sum_i rho_i chi_i M(t) psi_i v is continuous and linear in the finite family of separable little-Holder HS paths, so strong measurability transfers. The construction is linear, so it applies to raw/cutoff differences on the same coupling."
+    },
+    {
+      "claim": "C6 Gaussian moment growth (4.7) and square-exponential moments",
+      "verdict": "PASS",
+      "reason": "Minkowski in L^(p/2) over ONB coordinates gives ||X||_p <= C sqrt(p)||X||_2 without independence. In the prior dyadic chaining, ||D_n||_p <= C sqrt(p) 2^(n/p) 2^(-nH)(1+n). With gamma fixed and 1/p<=(H-gamma)/2 the exponent margin is at least (H-gamma)/2, so the dyadic series and chaining constants are uniform in p>=p0. A finite maximum costs (C_T R)^(1/p)<=C_T R. Expanding the exponential, E Y^(2n) <= (K sqrt(2n))^(2n), together with n!>=(n/e)^n, gives finite E exp(cY^2) for c<1/(2eK^2). The finitely many low n are bounded by the p0 moment. By (3.1) the bound is uniform over cutoffs and differences. No GaussianBanach theorem, independence or global HS bound is used."
+    },
+    {
+      "claim": "C7 Young consumer (5.1)-(5.4), physical flow, convergence modes",
+      "verdict": "PASS",
+      "reason": "Friz-Hairer (4.3), in held lines 1361-1380, applies with integrator in V=B(F) and integrand u -> (A -> A Y_u) in L(B(F),W). The increment therefore sits on the LEFT. Scaled-norm contraction holds once 2(1+C)[A]ell^theta<=1/4. This gives a local bound of at most 2|Y_s|, C_T(1+K^(1/theta)) intervals, (5.2), and (5.3) by the same estimate applied to differences, for every start time. Only the bounded algebra is used. In the interaction picture u=S(t)u~ with dM=S(-u)B(dW)S(u), so P(t,s)=S(t)U(t,s)S(-s), and the composition law telescopes. Joint strong continuity follows from strong continuity of S and norm continuity of U. Since ||P^rho-P|| <= C_T ||U^rho-U||, convergence holds in probability on bounded-driver events. exp(Cx^(1/theta)) <= C'exp(cx^2) because 1/theta<2, which gives uniform higher moments, uniform integrability and Lp convergence. Measurability follows because the bounded linear conjugation map has separable range. Each physical path is not claimed to lie in C([0,T];B(F))."
+    },
+    {
+      "claim": "C8 Deterministic profiles (5.5)-(5.6)",
+      "verdict": "PASS",
+      "reason": "Multiplication by W^(1,infinity) functions is bounded on H^(1/2) by interpolation and on H^(-1/2) by duality, uniformly on local phases. For v in F: B(h kappa_L) maps into compact global E. B(c) maps compact smooth data to compact smooth data, sends (1,0) to (0,c) and (0,1) to 0, so it preserves F by boundedness. By (5.6), B(h0(1-kappa_L))->0 in operator norm uniformly in t, and (0,h0) lies in F. The admissible class is a closed subspace, so t->B(h(t)) is strongly measurable in B(F). Combined with strong continuity of S, the integral (5.5) is F-valued for each v and Lipschitz in B(F) with C_T sup||h||_W1inf. Stability constants depend only on the norm bound. The Cameron-shift identification is explicitly deferred."
+    },
+    {
+      "claim": "C9 Positive-width solution, Riemann sums, causality, passage to raw",
+      "verdict": "PASS",
+      "reason": "Under the Laplace truncation consistent with the accepted K_eta scaling, K_eta(0)-K_eta(h) <= c h int_0^(1/eta) lambda^a dlambda = O(h). The heat filter gives all spatial spectral moments, and alpha>0 makes q=0 integrable. Gaussian Kolmogorov then gives joint continuity of the masked potential and its x-derivative, so it is bounded on [0,T]xR. The primitive is Lipschitz. Young Riemann sums converge to the Bochner strong integral by uniform continuity of the solution, so the integral equations coincide and Gronwall gives uniqueness. Speed 1 and local coefficient dependence come from Duhamel/Picard support (radius t-s), not from the 2T interaction kernels. They pass to the raw masked flow through a.s. subsequential operator convergence, and compact-test pairings are continuous on F. Only countably many masks, data, tests and times are used."
+    },
+    {
+      "claim": "C10 Canonical observable (6.1), all orders",
+      "verdict": "PASS",
+      "reason": "With wave kernel 1/2 1_{|x|<t}, the nth Picard term is bounded by (|g|M)^n t^(2n)/(2n)!, since int G(r,y)dy=r. So the pathwise series converges on compact cones. The literal L:vertex-crude bound q_n(t)=e^(theta0 t)C^(n/2)t^n/sqrt(n!) holds uniformly in all widths, so sum |g|^n q_n<infinity and pathwise and L2 sums agree. L:joint-fixed-order gives convergence of every finite prefix, and the uniform tails give convergence of the full solution; this is not substituted by summability of the canonical tails alone. Spatial stationarity of the common family makes the L2 error independent of x. The average error is at most ||phi||_1 times that error, with positive-width Fubini. The left side converges through Lp operator convergence and the bounded compact-test functional on F. zeta_R=1 on supp phi+[-t,t] covers the backward cone. Uniqueness of limits gives (6.1). No point evaluation on H^(1/2) and no positivity of samples is used; the averaged-to-point inequality (M) is the consumer."
+    },
+    {
+      "claim": "C11 Growing-cone block stability (7.1)-(7.4)",
+      "verdict": "PASS",
+      "reason": "Pairing delta^(a/2)W(delta u) with tests reproduces the raw law. delta^2V_tt=V_xx+sqrt(delta)WV becomes V_uu=V_xx+delta^((1-a)/2)W_m^delta V, with phase (V,delta V_t). Temporal cutoff eta->eta/delta and spatial widths are unchanged. There are (2c/delta+5) cells times about 1/delta blocks, at most C_c delta^-2 indices. A finite maximum, with box_scale and box_margin, gives (7.2). By (4.4), on {g Z<=eps<=1} the drivers are within C eps of A_hm with norm at most K+C. (5.3) with S bounded gives (7.3). For q>=p0>4/(1-a), delta^((1-a)/2-2/q)<=1 gives (7.4) with C sqrt(q) uniform in delta and rho, hence a uniform square-exponential moment and uniform moments through (5.2). Combined with convergence in probability this gives every finite Lp. Uniformity is stated as a supremum of individual bounds. Concatenation is at fixed delta. Closeness of the full product, spectral growth and limit interchange are explicitly not inferred."
+    },
+    {
+      "claim": "C12 Lean fidelity, reuse and controls",
+      "verdict": "PASS",
+      "reason": "The seven statements in LocalFlow.lean match types-and-axioms.txt literally, and each uses only propext, Classical.choice and Quot.sound. noise_order: 0<alpha<=1 implies 0<=(1-alpha)/2<1/2 and alpha-1=-2b; alpha>0 is needed for the strict bound. schur_row, schur_column and schur_rescale are exactly the positive-|q|,|k|,R row/column/rescale factors. source_overlap is the sourceSigma budget for alpha<1. source_white_obstruction and source_tail_obstruction follow by linarith from (1.24) and the HS tail condition. No hypothesis encodes an integral, flow, event or sharp conclusion. Each control resolves its names and fails on False. noiseOrder 0=1/2 is not <1/2. sourceSigma 1=-1/2 is not >-1/2. 2*3*(1/3)=2 is a hard-coded abstract example, not a physical instantiation. The remaining `constructor <;> linarith` uses are necessary; the semicolon cleanup is consistent with the history. The eight reused statements match their recorded types, hash a4f0487 and pins. The box_margin and box_scale applications in (7.2) are exact. Hashes are recorded rather than re-executed, per contract."
+    },
+    {
+      "claim": "C13 Claim boundary and durable records",
+      "verdict": "PASS",
+      "reason": "Each stated d1 masked, local-flow, path, source, causality, observable and block claim is supported above. Section 8 and the status line leave the following open or unclaimed: Cameron-shift identification, spectral cone/product growth, events and variational lower bounds, the source-constant map, any 1.24 repair, higher dimensions, Skorohod, novelty, circulation, and the canonical 110-page/60-proof and WHITE13/original9 records. The tenth reference ticket is recorded as queued, not ingested. The lean-ops item is labelled a nonblocking operational record. Source coverage is stated as selected passages only."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Section 4 does not say that the partition rho_j consists of integer translates of one fixed function (or has uniform C^k bounds). The uniform E-multiplier bounds in (4.2) and in the completeness argument need this.",
+      "(4.3): psi_j should equal 1 on a neighborhood of the closed 2T-enlargement of supp chi_j, as in the prior driver note. The wave kernel's support |x-y|<=t is closed.",
+      "Section 6 should say that the source sequence uses only the canonical heat/temporal-Laplace widths, without the optional sharp spatial projection L allowed in the driver note. L:vertex-crude and L:joint-fixed-order are stated for those vertexwise widths. Section 6 may choose that sequence because (4.6) holds for any joint limit.",
+      "Section 6 asserts time-increment variance O(|t-s|) for the cutoff noise from the 'finite Laplace range'. It should state the truncated kernel K_eta(h)=c int_0^(1/eta) lambda^(a-1)e^(-lambda h)dlambda that this relies on. The bound follows from it and from the accepted K_eta scaling, but the source pages (2.9)-(2.11) are not in this packet.",
+      "The uniform-in-p margin 1/p<=(H-gamma)/2 in (4.7) is a new elementary step. The reused holder_parameters and dyadic_ratio consumers only prove a positive margin, so (4.7)'s uniformity rests on this informal step.",
+      "The cited 'Friz--Hairer 8.9' label and the Lemma 4.2 statement do not appear in the held extraction, which contains only the proof fragment and Proposition 8.12. The note's own scaled-norm deduction and FH (4.3) suffice, so this concerns citation only.",
+      "Section 8 could also say that CLO's (1.21) s>=s_crit (from (1.20), not supplied here), the massive <grad> symbol, the R_+ fBm normalization and the zero mode phi_0 are not compared or transferred. The note claims only tail-inequality compatibility, so nothing is overclaimed."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is an AI read-only review. It is not human verification, not a novelty or literature audit, and not a full 100-page CLO or publisher/MathSciNet audit.",
+    "I did not recompute any hash (PDF, Lean source, olean/ir/private/server outputs) or re-execute Lean. Kernel correctness and replay parity are taken from the receipts as named inputs, per contract.",
+    "Prior analytic inputs were not re-proved; they are taken as scoped accepted results. These are the driver note b398b77, the phase note 0ae116c, the scaling note 9d77f90, and the canonical lemmas L:joint-fixed-order and L:vertex-crude. prior-construction-binding lists L:vertex-crude among proofs changed after review (minor clarifications, statements reported unchanged). I could not independently confirm that the canonical-input bytes come from the current master 58b092b.",
+    "The CDST/source shared Gaussian construction (2.9)-(2.11) is not in this packet. Its continuous temporal-slice coupling and Laplace-truncation structure are used as named inputs (see minor finding 4).",
+    "Contents of the Lean v1 file and its warnings were not delivered. The '<;> to ;' cleanup history is taken from the receipt."
+  ]
+}

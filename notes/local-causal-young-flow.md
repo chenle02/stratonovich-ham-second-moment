@@ -1,6 +1,9 @@
 # Physical masks, a local phase, and causal Young evolution
 
-Status: CANDIDATE. The new analytic/source/type/application gate is pending.
+Status: ACCEPTED at the scoped analytic/source/type/application gate.
+Scientific source d020a2a9e04f0ef8bcaa74de53cc8a6f76c2fbca; actual Opus5.5/HIGH,
+all13groups PASS,539.525seconds,35texts/9source images, no required repairs.
+See reviews/2026-10-29-local-flow-source-gate/adjudication.md.
 This is an internal bridge for the original sharp-moment problem, not a new
 claim of the operator-Young method. Standard Young machinery is imported
 from Friz--Hairer; Chapouto--Li--Oh already use interaction drivers for waves.
@@ -155,8 +158,10 @@ write chi_j for its integer translates. For distributional phases define
     ||v||_uloc = sup_(j in Z) ||chi_j v||_E.                (4.1)
 
 This defines a Banach space E_uloc of locally E phases. Here are the needed
-assembly details. Fix a smooth partition rho_j with sum_j rho_j=1, supported
-in[j-1,j+1], so chi_j=1there. A Cauchy sequence for(4.1) converges after
+assembly details. Fix a smooth partition rho_j(x)=rho(x-j), with sum_j rho_j=1, supported
+in[j-1,j+1], so chi_j=1there. One construction divides a compact positive
+covering bump by its periodic translate sum. All derivatives of rho_j are
+therefore bounded uniformly in j. A Cauchy sequence for(4.1) converges after
 each chi_j localization in E. Its local distributional limits agree on
 overlaps, since multiplication by test cutoffs is bounded on E. The locally
 finite sum using rho_j assembles one distribution v with those local limits;
@@ -188,7 +193,8 @@ and constant phases evolve by (c1,c2)->(c1+t c2,c2). Strong continuity holds
 on that dense set, hence on F by the uniform bound. This is STRONG, not
 operator-norm continuity of the free group.
 
-Now select psi_j=1on the2T-enlargement of supp chi_j. The support fact in
+Now select psi_j=1on a neighborhood of the CLOSED2T-enlargement of
+supp chi_j, with support in a slightly larger fixed translated interval. The support fact in
 Section3 gives, on global E inputs and then local distributions,
 
     chi_j [M_R(t)-M_R(s)]v
@@ -226,8 +232,11 @@ We also need moment growth for the later nonlinear map. For one local
 HS path, the Gaussian Hilbert inequality has constant C sqrt(p) for p>=2:
 apply Minkowski to the sum of squared Gaussian coordinates and the scalar
 Gaussian moment bound. In the prior dyadic path proof fix theta<gamma<H
-and take p sufficiently large that1/p<=(H-gamma)/2. Its weighted dyadic
-series is then bounded uniformly in p. Thus
+and take p sufficiently large that1/p<=(H-gamma)/2. The actual dyadic
+margin then obeys H-gamma-1/p>=(H-gamma)/2>0. The weighted series is bounded
+by C sum_n(1+n)2^(-n(H-gamma)/2), independently of p. This elementary
+uniform lower bound is analytic algebra here; the reused positive-margin
+Lean lemmas alone do not formalize this uniformity. Thus
 
     ||chi_j M_R||_(Lp Ctheta HS) <= C_T sqrt(p), p>=p0.      (4.7)
 
@@ -241,7 +250,7 @@ No independence between cells, increments or source slices is required.
 ## 5. Apply standard linear Banach Young theory
 
 The imported integration input is the Banach-valued Young estimate from
-Friz--Hairer, Sections1.4--1.5/4.1 and Lemma4.2 (sewing). For a path
+Friz--Hairer, Sections1.4--1.5 and4.1, increment estimate(4.3). For a path
 A in Ctheta([0,T];B(F)),A(0)=0,theta>1/2, it gives
 
     ||integral_s^t dA(u)Y(u) - [A(t)-A(s)]Y(s)||
@@ -266,7 +275,8 @@ initial datum on bounded driver sets. Finite concatenation proves
 Its Ctheta norm on the triangle is bounded on such driver sets as well.
 No smooth bump on an arbitrary Banach space, unbounded-field truncation,
 commutativity or independent-increment hypothesis is used. This is the
-linear case of Friz--Hairer8.3/8.9/Proposition8.12; the local calculation
+linear case discussed around the supplied Friz--Hairer8.3 and
+Proposition8.12 passages; the local calculation
 checks the required bounded-algebra consumer directly.
 
 Apply this with A=M_R (or any fixed scalar multiple). It gives interaction
@@ -318,12 +328,18 @@ must be checked against this class and its Gaussian shift separately.
 
 ## 6. Source compatibility, causality and the actual observable
 
-For positive source widths the masked field zeta_R W^rho is spatially
+For the canonical identification in this section choose ONLYthe source
+heat/temporal-Laplace regularizations, without the optional sharp spatial
+projection. This is an allowed sequence in(4.6); the canonical vertexwise
+lemmas are not being asserted for a sharp spatial projection.
+For these positive source widths the masked field zeta_R W^rho is spatially
 smooth and time continuous on compact sets (finite temporal Laplace range
 and spatial heat). The resulting ordinary wave potential is bounded with
 bounded first spatial derivative. To justify the path property at positive
-widths, the spatial heat gives every finite spectral moment, and the finite
-Laplace range gives time increment variance O(|t-s|). The same estimates
+widths, the spatial heat gives every finite spectral moment. The named
+truncated time kernel is K_eta(h)=Gamma(a)^(-1) integral_0^(1/eta)
+lambda^(a-1)exp(-lambda|h|)dlambda. Since1-exp(-lambda|h|)<=lambda|h|,
+its increment variance is O(|t-s|) at each fixed positive eta. The same estimates
 for spatial derivatives and Gaussian moments yield joint continuity on
 compact sets by Kolmogorov, including the first spatial derivative. Its
 usual strong/mild solution on F is
@@ -466,7 +482,10 @@ satisfies them. This is a comparison of those sufficient stated hypotheses,
 not an impossibility theorem for their methods or other results. Foralpha<1,
 s1/2 and sigma=-(1+alpha)/4 pass the tail inequalities. Original whole-line
 Riesz covariance is NOTsilently identified with a periodic covariance.
-Standard dyadic annuli prove the stated tail summability test; at equality
+No transfer of source condition(1.21), its critical nonlinear Sobolev index,
+the massive frequency symbol, the R_+ fractional-Brownian normalization or
+the zero mode phi_0 is claimed. Standard dyadic annuli prove the stated
+tail summability test; at equality
 every annulus has a positive constant contribution and the sum diverges.
 
 The seven new finite Lean facts cover mask order, Schur powers and these

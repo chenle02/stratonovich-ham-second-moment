@@ -110,3 +110,5 @@ LATEST superseding status:independent mild construction19PASS/HIGH accepted at s
 LATEST:sixth cold NOT CLEAR;source6cdc142. Original hypothesis/object/Jensen statements clarified,new direct norm/tail lemma written in94pages butUNREVIEWED. Two fixed-order construction lemmas still to implement. Quantitative interval/CP/Fock proofs unchanged. Intra-round checkpoint;all six cold reports NOTCLEAR. Still PRIVATE/unpublished.
 
 Private interaction-driver checkpoint added: source b398b77052718adc8ac4f3439a3c738b504aea86,9groups/HIGH. Local d1first-driver Holder/source-cutoff and finite-box result only; all-order flow/event/sharp target open. Exact patch roundtrip/apply verified. Still PRIVATE/unpublished; no queue ticket or canonical write.
+
+Private actual local-flow checkpoint added: source d020a2a9e04f0ef8bcaa74de53cc8a6f76c2fbca,13groups/HIGH. Actual d1masked/local causal flow,canonical average/block stability; spectral productgrowth/event/sharp target open. Exact patch roundtrip/apply verified. Still PRIVATE/unpublished; no queue ticket or canonical write.

@@ -96,10 +96,10 @@ remains outside Lean. No companion or canonical package gate.
 
 | Name | Scope | Status |
 |---|---|---|
-| noise_order | Actual finite mask/Schur/source-budget consumer | Local compile/replay; application pending |
-| schur_row | Actual finite mask/Schur/source-budget consumer | Local compile/replay; application pending |
-| schur_column | Actual finite mask/Schur/source-budget consumer | Local compile/replay; application pending |
-| schur_rescale | Actual finite mask/Schur/source-budget consumer | Local compile/replay; application pending |
-| source_overlap | Actual finite mask/Schur/source-budget consumer | Local compile/replay; application pending |
-| source_white_obstruction | Actual finite mask/Schur/source-budget consumer | Local compile/replay; application pending |
-| source_tail_obstruction | Actual finite mask/Schur/source-budget consumer | Local compile/replay; application pending |
+| noise_order | Actual finite mask/Schur/source-budget consumer | Local compile/replay; exact type/application HIGH atd020a2a |
+| schur_row | Actual finite mask/Schur/source-budget consumer | Local compile/replay; exact type/application HIGH atd020a2a |
+| schur_column | Actual finite mask/Schur/source-budget consumer | Local compile/replay; exact type/application HIGH atd020a2a |
+| schur_rescale | Actual finite mask/Schur/source-budget consumer | Local compile/replay; exact type/application HIGH atd020a2a |
+| source_overlap | Actual finite mask/Schur/source-budget consumer | Local compile/replay; exact type/application HIGH atd020a2a |
+| source_white_obstruction | Actual finite mask/Schur/source-budget consumer | Local compile/replay; exact type/application HIGH atd020a2a |
+| source_tail_obstruction | Actual finite mask/Schur/source-budget consumer | Local compile/replay; exact type/application HIGH atd020a2a |

@@ -187,3 +187,15 @@ v1preserved;v2clean, all statement signatures unchanged. All5owned/replay
 compiler output hashes match; binary auxiliary outputs are archived, not
 decoded as text. Analytic/source/type application pending. Existing eight
 InteractionDriver deductions reused unchanged. No new package/companion.
+
+Local-flow close: all7new finite consumers passed C12of13HIGH atd020a2a;
+8previous InteractionDriver deductions reused with exact types/pins/receipt.
+Formal source unchanged. Uniform-in-p dyadic lower margin remains analytic,
+not supplied by only-positive-margin Lean facts. No formal SPDE/Young/
+canonical-source/event theorem or package gate. L0anddecision4unchanged.
+
+Lean-ops answered6a7b18143738: minimal committed Lake project enables
+source-bound systemd/check receipts without registry; manual evidence stays
+project-owned. Optional migration not performed. Separate exact defaultCLI
+2.1.314read-ledger compatibility friction a73f556e4e30delivered; dry-run only,
+no provider, no gate weakening; current scientific review used2.1.304.

@@ -6,15 +6,15 @@
 
 ## Current state
 
-- **Phase:** local d1 interaction-driver paths and source-cutoff convergence accepted9PASS/HIGH atb398b77. On balanced H^(1/2)xH^(-1/2), localized first-driver increments give Holder exponents1/2<theta<1-a/2 and every finiteLp path-norm cutoff limit; finite-box normalized FIRSTdriver smallness follows. Full flow/event/sharp target remains open; WHITE13/original-class9 unchanged.
+- **Phase:** actual d1masked/local causal Young flow, canonical noise-only averaged observable and growing-block operator stability accepted13PASS/HIGH atd020a2a. Uniform local operator bounds handle data1 and a growing observation cone without a global stationary HS norm. Canonical Cameron-shift, spectral product-growth/event and sharp constants remain open; original higher-dimensional scope retained. WHITE13/original9unchanged.
 - **Review boundaries:** prior92page quantitative/mild source `a7e725e` passed its own19checks/HIGH. The new8check review covers the direct norms, positive spatial Wick-measure limit, arbitrary joint vertex-width construction and their consumers. It does NOT freshly audit every unchanged operator/interval proof. Exact source/delivery/adoption bindings and limitations are in `reviews/2026-10-29-fixed-order-construction/`.
-- **Current artifact:** canonical110-page/60-proof TeX/PDF unchanged. New accepted memo notes/interaction-driver-path.md extends the scoped fixed-time phase/operator/observable result. Eight local Lean deductions support exact prefactor/power/Holder/box applications; Gaussian/operator/path analysis passed its separate9HIGH gate. No new whole-paper clearance is implied.
-- **Open targets:** original full fixed-positive-alpha0 sharp p2 constant in all dimensions/covariances; all-order global-or-uniformly-local physical flow/remainder and source-solution identification, growing cone/data1, nonzero-profile spectral/event growth and source-variational constant map. Next action is the precise source/value crosswalk for the spatial/local bounded-operator interface, reusing held Banach Young theory. Higher-dimensional operators, whole-paper/novelty/circulation, companion decision4, canonical wiki publication and intended normalization remain separate/open.
+- **Current artifact:** canonical110-page/60-proofTeX/PDF unchanged. New accepted memo notes/local-causal-young-flow.md proves the masked/local all-order d1bridge from the accepted first driver. Seven new finite Lean deductions support exact mask/Schur/source-budget applications, with8earlier deductions reused; full analytic/source/flow gate is13HIGH. No whole-paper clearance implied.
+- **Open targets:** full original fixed-positive-a sharp p2 constant in all dimensions/covariances; exact Gaussian tilt/canonical profile identification, deterministic spectral cone/product growth and resulting event/variational bounds, intended source-constant map, original higher-dimensional operators/flows. Next bounded consumer: joint Gaussian tilting of the ACTUALmasked driver and its canonical averaged observable, before a spectral product estimate. Whole-paper/novelty/circulation, companion decision4, canonical wiki publication and intended normalization remain separate/open.
 - **Agent8coordination:** completed at read-only source/statement/ownership level,as requested by Le. Agent8accepted our exact map;three API component fits and stronger-premise gaps are recorded in lean-progress/coordination/2026-10-29-agent8/reuse-adjudication.md. Current coefficient gate sourced5fde707,evidence successorbffd4329;historical SWE receipts remain e5e9558. Source/API/pins checked;no donor-package build/gate/companion/lease/registry transaction. Local Lean pilot is recorded separately. L0/PROPOSED and decision4unchanged.
-- **Authorization:** Le's continuing full goal includes the sharp/lower track. The current wave is bounded local first-driver/path development,with the HIGH review threshold unchanged. It does not redefine the original all-alpha0sharp target,claim novelty or promote a paper. Le now explicitly permits Lean verification;standalone local checks do not create a companion repo. Report/honor PROJECT-GOAL decision points;companion-creation decision4remains pending. No correspondence/public release authorized.
-- **Worker:** Codex/GPT author, paper-dev workflow; historical project handoff to agent #30 on 2026-10-26. Lean remains L0/PROPOSED (`lean-progress/PROGRESS.md`). Nine normal reference requests exist; new edition-custody intake is nonblocking, not source authentication.
+- **Authorization:** Le's continuing full goal includes the sharp/lower track. The current wave is the bounded actual local-flow/sharp-lower consumer,with the HIGH review threshold unchanged. It does not redefine the original all-alpha0sharp target,claim novelty or promote a paper. Le now explicitly permits Lean verification;standalone local checks do not create a companion repo. Report/honor PROJECT-GOAL decision points;companion-creation decision4remains pending. No correspondence/public release authorized.
+- **Worker:** Codex/GPT author, paper-dev workflow; historical project handoff to agent #30 on 2026-10-26. Lean remains L0/PROPOSED (`lean-progress/PROGRESS.md`). Ten normal reference requests exist; new edition-custody intake is nonblocking, not source authentication.
 
-- **Local Lean:** seven standalone seams now contain38finite deductions with local compile/replay/standard-axiom evidence and scoped type/application checks. The latest8support the interaction driver; its5false controls and exact limits are in lean-progress/local-checks/interaction-driver-v1/. Analytic SPDE/path inputs remain outsideLean. No official package/companion gate.
+- **Local Lean:** eight standalone seams now contain45finite deductions with local compile/replay/standard-axiom evidence and scoped type/application checks. The latest7support the local flow/source map; its3false controls and exact limits are in lean-progress/local-checks/local-flow-v1/. Analytic SPDE/path inputs remain outsideLean. No official package/companion gate.
 
 
 ## Round plan
@@ -3867,3 +3867,71 @@ so no duplicatebugreport. Nonblocking supported-standalone-evidence question
 no newcompanionauthorization/publicissue. Own auxiliary-binary exporterror
 was correctly classified as projectscript,not lean-pkgdefect. Durable
 lessons/operational evidence will close with this proof checkpoint.
+
+
+## Physical-mask/local causal flow: scoped acceptance (2026-10-29 local date)
+
+Scientific source d020a2a9e04f0ef8bcaa74de53cc8a6f76c2fbca accepted actual
+first-party Opus5.5/HIGH, all13groups PASS,539.525seconds, no required
+repairs. Terminal serviceexit0,heldHEAD/treeclean before collection,
+committed/current/workspace hashes and native event/report/read-ledger
+bindings verified. Complete35texts/9exact full primary source images.
+Native139/local74/source3members readback; committed-blob verification
+required before ownterminal rawcleanup. Evidence in
+reviews/2026-10-29-local-flow-source-gate/adjudication.md,
+review-summary.json and final-status-binding.json.
+
+Accepted ORIGINALd1class physical-mask noise-Hilbert bound and actual
+separable local phase containingdata1. A MAXIMUMof finitely many local
+HS driver norms controls the B(F)driver uniformly in maskradius. Standard
+Banach Young consumer gives an ALLORDERmasked/local causal evolution and
+allfiniteLp source-cutoff operator DIFFERENCES. Physicalfreegroup is
+stronglycontinuous, not normcontinuous. OrdinarysourcePDEsupport gives
+speed1; interaction-kernel2Tsupport is not incorrectly multiplied into it.
+Canonical uniformvertexwise factorial bounds identify the FULLregularized
+solution and actual noise-only Bochner average, with no point-evaluation
+onH1/2or changed averagedENDtarget. The accepted average inequality still
+transfers an actual lower bound to the ORIGINALpoint second moment.
+
+Actual growing-unit-block flows approach the admitted deterministic-profile
+flows in everyfiniteLp, uniformly in block index and individualsourcewidth
+bounds, no independence. This handles correlated restartstates through
+operator bounds, but does NOTprove closeness/growth of the whole product.
+CanonicalCameron-shift identity, spectralcone/productgrowth, sharp event/
+variational constants and original higherdims remainOPEN. FullgoalACTIVE.
+
+All7newfinite types/application passedC12of13HIGH;8oldInteractionDriver
+deductions reusedexactly. Clean compile/replay/standardaxioms and3semantic
+controls; all5owned compiler output hashesmatch. Warning-onlyfirst run and
+semicoloncleanup retained; all7statements unchanged. AllGaussian/multiplier/
+operator/Young/causality/canonical/block claims are informal reviewed proofs.
+The uniform-p margin is explicit analytic algebra, not supplied by only-
+positive-margin Lean consumers. No new package/companion/lease/registry/
+donor/cluster/Comparator gate; L0/decision4andAgent8ownership unchanged.
+
+All7minor findings adjudicated: uniform translated partition, closed support
+neighborhood, canonicalheat/timeONLYidentificationsequence, explicitKeta,
+uniform-p dyadicmargin, citationceiling and CLOBudget-onlycomparison.
+Everydisplayedformula block and7newLeanproofbytes unchanged after review.
+Rootchecked literalcanonicallemma statements against CURRENT/frozen/prior-
+reviewedf9303edgitblobs exactly. The report's CDST/sourcecoupling label
+slip is not adopted: actual namedcoupling is CURRENTChen(2.9)--(2.11),
+not CDST's narrower wellposedness theorem. No new randomsimulation needed;
+analytical endpoint falsification/semanticcontrols support the boundedwave.
+
+Durable lessons saved. Le's lean-ops directive executed: current0.23.0search
+confirms oldissue376fixed, no duplicatebugreport. Request6a7b18143738answered:
+minimalcommittedembeddedLakeproject permits official-format nongated
+receipts without registry; optionalmigration notperformed, present evidence
+project-owned. Separate exactdefaultCLI2.1.314compatibilitydryrun exits6
+before provider and was reporteda73f556e4e30(delivered); existing task-local
+2.1.304works. No gateweakening/globalsetupchange/publicissue.
+
+New10threference exactticket tk-20261029-194547-codex-stratonovich-local-flow-reference
+terminalPARTIAL: receipt reports all6layerpublications/remoteparity and
+verifydigestPASS/lintclean, but independent scientific ingest review missing.
+Partialstatus preserved; ourselectedCLOsourcegate is not full100pageingest
+audit. No force/duplicate/repair/restart. CLOmethod is prior art; novelty
+unverified. Canonical110page/60proofTeX/PDF,WHITE13/original9unchanged.
+Privatewiki proposalonly/canonicalpage untouched. No source1.24repair,
+Skorohod moment/asymptotic, wholepaper/novelty/circulation clearance.

@@ -102,3 +102,10 @@ budget overlap/white/general tail obstruction. Integrals, multiplier bound,
 phase assembly, Gaussian paths, Young evolution/canonical identification/
 growing-block stability remain informal analytic review obligations. No
 formal SPDE/package/Comparator/newcompanion gate; exact application pending.
+
+Local-flow exact types/application passed C12of13HIGH atd020a2a. Seven
+new finite facts and8reused facts do not formalize Gaussian/integration/
+operator/Young/causality/canonical-L2/flow stability. The uniform-in-p dyadic
+margin is explicit reviewed analytic algebra outside the current Lean scope.
+Official-format nongated receipts via a future embedded Lake project are
+an owner-confirmed option, not current evidence or companion authorization.
