@@ -1,6 +1,8 @@
 # A weighted scalar frequency row under translated spectral growth
 
-COMPLETE CANDIDATE, not adopted before independent full proof review.
+ACCEPTED internal scalar estimate: native Opus5.5/high full review,
+PASS_WITH_NOTES/HIGH, scientific revision e905ad8; see the
+2026-10-30-scalar-frequency-row proof packet and adjudication.
 This is an analytic measure estimate. No actual Gaussian operator variance,
 Schatten norm, time path, Young flow or moment asymptotic is identified.
 
@@ -158,7 +160,9 @@ This proves Corollary 2.
 ## 6. Model use, diagnostics and limits
 
 From the separately accepted spectral-mask-covariance-foundation.md,
-Proposition 2, the actual auxiliary nu_R satisfies the NAMED hypothesis
+Proposition 2 (nonzero Gamma and real nonzero Schwartz mask zeta), let
+L_zeta=||hat zeta||_1 and c_d=(2pi)^(-d/2). The actual auxiliary nu_R
+satisfies the NAMED hypothesis
 (1) with C=c_d^2 L_zeta^2 C_Gamma, uniformly over R>0. That is the full
 input required for this analytic estimate; no physical positivity of the
 inverse auxiliary covariance or stationarity of the actual masked noise

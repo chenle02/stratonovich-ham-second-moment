@@ -5327,3 +5327,23 @@ Ten-text FULL scientific packet frozen, no new temporal theorem adopted
 before full gate. Separate scalarFULL56451 running; scalar not an input.
 Original all-dimensional sharp/source goal ACTIVE, no new Lean/PDE/noise/
 sourcefix/contact/HPC/companion/Skorohod/publication claim.
+
+### Weighted scalar frequency row adopted — 2026-10-30
+
+Full native Opus5.5/high16 checks PASS_WITH_NOTES/HIGH,247.426 seconds,
+12 complete sources, no required repairs. All12 live/frozen/git e905ad8
+bindings and27 native archive members verified before adoption edits;
+actual model/route/coverage/accepted checked. Seven minor notes adjudicated;
+only header and explicit Section6 imported assumptions/L_zeta/c_d definitions
+changed. Analytic proof Sections1-5 unchanged. Foundation scientific/adoption
+ancestry af9b1ad->d967ea5 checked. Genuine initial statement FAIL retained.
+
+ACCEPTED notes/scalar-frequency-row-bound.md: arbitrary positive Radon nu
+with uniform translated ball growth, all xi/h, strictgamma range, three
+alpha scales including critical log, scalar h^(2-a) bound with strictbeta
+above1/2. Actual nu_R import matches own accepted foundation ONLY. No
+identification of scalar row with actual phase variances yet, no operatornorm/
+Schatten/path/Young/source flow/new moment/sourceconstant theorem. Original
+full all-dimensional sharp/source goal ACTIVE. TemporalFULL18104 still
+running; no cross-adoption before its gate. No newLean/official package/
+contact/HPC/Skorohod/TeX/PDF/wiki/public release/whole-paper clearance.

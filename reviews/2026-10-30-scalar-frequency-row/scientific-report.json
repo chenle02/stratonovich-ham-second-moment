@@ -1,0 +1,125 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "notes/scalar-frequency-row-bound.md: lines 1-187 (full file)",
+    "notes/spectral-mask-covariance-foundation.md: lines 1-309 (full file)",
+    "reviews/2026-10-30-scalar-frequency-row/target-v2.md: lines 1-52 (full file)",
+    "reviews/2026-10-30-scalar-frequency-row/falsification-v2.md: lines 1-24 (full file)",
+    "reviews/2026-10-30-scalar-frequency-row/worker-honesty-v2.md: lines 1-19 (full file)",
+    "reviews/2026-10-30-scalar-frequency-row/canonical-model-context.txt: lines 1-39 (full file; the file is itself an excerpt)",
+    "reviews/2026-10-30-scalar-frequency-row/check-diagnostics-v2.py: lines 1-32 (full file)",
+    "reviews/2026-10-30-scalar-frequency-row/diagnostics-v2.json: lines 1-579 (full file)",
+    "reviews/2026-10-30-scalar-frequency-row/check-radial-diagnostics.py: lines 1-18 (full file)",
+    "reviews/2026-10-30-scalar-frequency-row/next-scalar-row-diagnostics.json: lines 1-142 (full file)",
+    "reviews/2026-10-30-scalar-frequency-row/statement-adjudication-v2.md: lines 1-22 (full file)",
+    "reviews/2026-10-30-scalar-frequency-row/scientific-worker-honesty-v1.md: lines 1-22 (full file)",
+    ".review/required-sources.json: lines 1-38 (read plan, no read credit)"
+  ],
+  "checks": [
+    {
+      "claim": "C1a. Hypotheses and target: all xi, all h in (0,1], any positive Radon nu with translated ball growth, and K=K(alpha,a,gamma) free of d,nu,C,h,xi.",
+      "verdict": "PASS",
+      "reason": "The hypotheses, (2), (3) and (4) match target-v2 and the canonical H:homog parameter range with a=alpha_0. The gamma range is nonempty because alpha+a<2 and a>0 force alpha<2. The proof uses only ball masses at radii r>=1. It never uses evenness, homogeneity, density, alpha<d or the value of d."
+    },
+    {
+      "claim": "C1b. Singular-measure and pushforward meaning, the C=0 case, and closed-ball handling.",
+      "verdict": "PASS",
+      "reason": "With nu_xi the law of eta=xi-lambda, nu_xi(B(0,R))=nu(B(xi,R))<=C R^alpha, and no Jacobian is used. The integrand is continuous and nonnegative, so the extended integral is well defined. A closed ball of radius r lies in the open ball of radius r+eps, which gives the limit C r^alpha. If C=0, a countable cover by balls gives nu=0, and (4) reads 0<=0."
+    },
+    {
+      "claim": "C2. Inverse-Bessel near integral: unit ball, shell indices, N=ceil(log_2(5q)), powers, (5) and (6).",
+      "verdict": "PASS",
+      "reason": "Since q>=1, N>=3 and 5q<=2^N<10q, so the unit ball plus shells j=0..N-1 cover |eta|<=5q. Each shell is at most 2^(-j) C 2^((j+1)alpha)=C 2^alpha 2^(j(alpha-1)), which is (5). For alpha<1 the sum is at most 1/(1-2^(alpha-1)). For alpha=1 the sum is N<log_2 q+log_2 5+1. For alpha>1 the sum is at most (10q)^(alpha-1)/(2^(alpha-1)-1), and the leading 1 is absorbed because q^(alpha-1)>=1. All constants depend only on alpha."
+    },
+    {
+      "claim": "C3. Near-phase bound (7), the epsilon and q comparisons, and all three alpha regimes, including resonances and small modes.",
+      "verdict": "PASS",
+      "reason": "Prefactor: <xi>^(2gamma-1)=<xi>^(-epsilon)<=q^(-epsilon) because q<=<xi>. Region: |lambda|<=4q gives |eta|<=5q, and each bracket power is at most 1 because a-1<0, which yields the factor 2 in (7). For alpha<1, q^(-epsilon)<=1. For alpha=1, exp(-epsilon u)(1+u)<=1+1/(e epsilon) holds. For alpha>1 the exponent -epsilon+alpha-1=alpha+2gamma-2 is negative by the gamma range. lambda=0 and lambda=2|xi| both lie in the near region, as do all small modes, and no decay is used there."
+    },
+    {
+      "claim": "C4a. Far-region triangle estimates, both omega terms, bracket direction, denominator and leading constant.",
+      "verdict": "PASS",
+      "reason": "With r>4q>=4|xi|: |eta|>=3r/4, ||eta|-|xi||>=r-2|xi|>=r/2, and |eta|+|xi|>=r/2. Also 1+x^2/4>=(1+x^2)/4 gives <h omega> >= (1/2)<hr>, and the negative exponent gives 2^(1-a)<hr>^(a-1). Two terms times 4/(3r) give (4/3)2^(2-a), as displayed, and <xi>^(-epsilon)<=1. The far region therefore contains no resonance."
+    },
+    {
+      "claim": "C4b. Enlargement to |lambda|>1, the mass-shell bound, S(h) and the floor L.",
+      "verdict": "PASS",
+      "reason": "4q>=4>1 and the integrand is nonnegative, so enlargement is valid. On each shell, r^-1<=2^(-j), the bracket power is decreasing in r, and the centered ball gives mass at most C 2^((j+1)alpha). The far term is therefore at most (4/3)2^(2-a)2^alpha C S(h). L=floor(log_2(1/h))>=0 is valid because h<=1."
+    },
+    {
+      "claim": "C4c. Geometric convergence under alpha+a<2 and inequality (9).",
+      "verdict": "PASS",
+      "reason": "For j>=L+1, <x>^(a-1)<=x^(a-1), so the tail equals h^(a-1) 2^((L+1)(alpha+a-2))/(1-2^(alpha+a-2)). Since 2^(L+1)>1/h and the exponent is negative, 2^((L+1)(alpha+a-2))<h^(2-alpha-a). The product is h^(1-alpha), and the sign and direction are correct."
+    },
+    {
+      "claim": "C4d. Low-frequency sums, all three B_alpha regimes, B_alpha>=1, and the combined dimension-free K.",
+      "verdict": "PASS",
+      "reason": "The low sum is at most 1/(1-2^(alpha-1)) for alpha<1. It equals L+1<=1+log_2(1/h), which is at most (1/ln 2)(1+log(1/h)), for alpha=1. For alpha>1 it is at most 2^(alpha-1)h^(1-alpha)/(2^(alpha-1)-1), using 2^L<=1/h. The tail h^(1-alpha) is at most 1 for alpha<1, equals 1 for alpha=1, and equals B_alpha for alpha>1. B_alpha>=1 holds in all regimes, so the near constant is absorbed. K=K_near+(4/3)2^(2-a)2^alpha K_far depends only on alpha,a,gamma. Proposition 1 holds as stated."
+    },
+    {
+      "claim": "C5. Corollary 2: nonempty strict beta interval, powers of h, critical log absorption, K_beta dependence, endpoint exclusion and scalar-only scope.",
+      "verdict": "PASS",
+      "reason": "Nonemptiness follows from a<1 and alpha+a<2. For alpha<1, 2-a>2beta. For alpha>1, the exponent 2-a+1-alpha=3-a-alpha>2beta. Both use h<=1. For alpha=1, delta=2-a-2beta>0 and h^delta(1+log(1/h))<=1+1/(e delta), so K_beta=K(1+1/(e delta)) in that case. K_beta depends on alpha,a,gamma,beta, and no endpoint is claimed. The note states this is not a Gaussian increment, Schatten or path estimate."
+    },
+    {
+      "claim": "C6a. The imported Proposition 2 supplies actual nu_R with hypothesis (1), with C=c_d^2 L^2 C_Gamma uniformly in R.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The foundation's parameter range is identical. nu_R is positive and Radon, and (5) holds for all y and r>0 uniformly in R. I re-derived the import chain. Tonelli gives nu_R(B(y,r))=c_d^2 L int |k_R(u)| mu(B(y+u,r))du, ||k_R||_1=L, and Proposition 1 gives G_r<=r^alpha M_Gamma/(2 sqrt pi)^d. Hence mu(B)<=e M_Gamma r^alpha/(2 sqrt pi)^d. Note: Section 6 writes L_zeta for the foundation's L and does not restate the standing assumptions that Gamma is nonzero and zeta is real, nonzero and Schwartz. Neither affects validity."
+    },
+    {
+      "claim": "C6b. Inverse auxiliary covariance is not assumed physically positive; actual masked noise is not declared stationary; no PDE or noise replacement.",
+      "verdict": "PASS",
+      "reason": "Section 6 disclaims positivity and stationarity, which is consistent with foundation Section 4 (lines 228-231) and Section 6 (lines 296-299). The proof uses only ball growth. The note makes no statement replacing the noise or the PDE."
+    },
+    {
+      "claim": "C7a. v2 diagnostic really implements (2) in d=1 and explicitly splits the 2q resonance and its 1/h neighbors; C=2/alpha is correct for the full-line densities.",
+      "verdict": "PASS",
+      "reason": "f(r)=r^(alpha-1)(k(q-r)+k(q+r))<q>^(2g) is exactly the full-line integral of (2) for nu=|lambda|^(alpha-1)dlambda. The code includes q, q+-1, 0, 1, 1/h, 4max(1,q), max(0,2q-1/h), 2q and 2q+1/h. I recomputed the node lists for the JSON rows and they match. The symmetric nonincreasing density makes centered balls maximal, so C=2/alpha. The tested parameters satisfy the gamma range and alpha+a<2."
+    },
+    {
+      "claim": "C7b. The 30/50-digit agreement is reported as agreement, not certified accuracy, and long strings are not theorem constants.",
+      "verdict": "PASS",
+      "reason": "The 12 stored relative differences reach about 1.87e-17, below the stated 1e-10 and consistent with the roughly 1.9e-17 in the honesty record. I spot-checked rows 1, 8 and 12 against the stored strings. Hand closed form for xi=0,h=1: J=2 B(1/4,1/2)=10.4882302171684792..., which matches the 50-digit row, while the 30-digit row departs near the 17th significant digit. This confirms the printed tails are not accurate digits and supports the note's non-certification language. J/B and J/(CB) are correctly distinct in the JSON."
+    },
+    {
+      "claim": "C7c. Radial controls: 15 rows at xi=0, angular mass 1, centered mass r^alpha/alpha, alpha=1.25 for d2/3 spectral measures; no nonzero-xi alpha>1, singular or endpoint coverage claimed.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The row count and code match. The factor 2 in f comes from the two brackets at xi=0, not from angular mass. Hand checks: the alpha=0.5 and alpha=1 values at h=1 both equal B(1/4,1/2); the alpha=1 ratios decrease toward the limit 2; the alpha=1.25 ratios increase toward B(1/8,1/8), about 15.66. These are consistent with the sharp scale at xi=0 but prove nothing. The note makes the correct limitation statements. Note: older packet wording persists in falsification-v2 line 18 ('radial d2/3 covariance') and in the JSON scope string ('normalized radial mass alpha'); the primary note's wording is the correct one."
+    },
+    {
+      "claim": "C7d. v1 real FAIL retained, and root custody kept distinct from reviewer execution.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The note, falsification-v2, worker-honesty-v2 and statement-adjudication-v2 consistently record v1 as a genuine FAIL/HIGH caused by the omitted 2q resonance, not relabeled. The v1 code and report are not in the frozen packet, so this was checked only as a consistent attestation, not by inspecting the artifact. Hashes, native-archive counts, timings, the v1-versus-v2 change of about 5.3e-6 and uv execution are likewise root attestations. I did not execute any script. No proof step depends on any of these items."
+    },
+    {
+      "claim": "C8. Original goal stays active; no actual phase-operator variance, Schatten, Young, source-flow, moment, source-constant or new Lean claim; temporal target is not an input.",
+      "verdict": "PASS",
+      "reason": "The note's header and Section 6 list all of these as open or unclaimed, and the original goal is stated as active. The proof cites no temporal, operator or Lean input. scientific-worker-honesty-v1 lines 19-20 state that temporal T1-T3 is not a theorem input, and the proof text confirms this because only (1) is used."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Section 6 uses L_zeta while the foundation uses L=||hat zeta||_1. The renaming is sensible because Section 4 uses L for the floor, but it is not defined in the note.",
+      "Section 6 does not restate the foundation's standing assumptions (Gamma nonzero; zeta real, nonzero, Schwartz). The excluded zero-Gamma case is trivial.",
+      "Some routine absorptions are left implicit: the unit-ball 1<=q^(alpha-1) in (6), base-2 to natural-log conversion with 1+log q, and L+1 against 1+log(1/h). Each is immediate and none changes the statement.",
+      "The foundation header cites scientific revision af9b1ad while target-v2 and worker-honesty-v2 cite d967ea5. The packet does not explain the relation between these revisions. The nu_R import was re-derived here, so the proof does not depend on resolving this.",
+      "Falsification-v2 line 18 still says 'radial d2/3 covariance' and the radial JSON scope says 'normalized radial mass alpha'. Adjudication already flagged both as notation, and the primary note uses the corrected wording.",
+      "Headings call h a 'time scale' and Section 5 a 'scalar time consequence', but no derivation links h to actual temporal increments. Section 6 explicitly disclaims this, so it is wording only.",
+      "The result is deliberately unoptimized: the proof does not use d or alpha<d, and the strict gamma range is needed only partly (epsilon>0 matters for alpha=1). This is an observation, not a defect."
+    ],
+    "overall_note": []
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is an AI review, not human verification, a novelty audit or a whole-paper certificate.",
+    "No script was executed. Numerics were audited by reading the code, recomputing node lists, spot-checking JSON differences and ratios, and hand evaluation of a few Beta-function values. These checks are consistency checks, not certified quadrature.",
+    "Custody claims (git and live/frozen hashes, native archive counts, gate timings, model and route records, execution via uv, existence and immutability of v1 artifacts and reports, the v1-versus-v2 change) were not independently verified. They are root attestations, and the v1 artifacts lie outside the frozen packet.",
+    "canonical-model-context.txt is a 39-line excerpt, so comparison with the canonical model is limited to H:homog, E:cov and the threshold as excerpted.",
+    "The foundation was audited only along the chain used for nu_R ball growth (Proposition 1 and the ball bound in Proposition 2). Its other results are not re-accepted here.",
+    "The verdict covers Sections 1-6 of the scalar note as an analytic measure estimate only. It gives no assessment of any actual operator variance, path, flow, moment or source conclusion."
+  ]
+}
