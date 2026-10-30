@@ -5373,3 +5373,26 @@ lower/sharp upper/source goal remains ACTIVE. No reviewer/Lean job live.
 Canonical TeX/PDF/wiki unchanged, no sourcefix/contact/HPC/Skorohod/official
 companion/public release/whole-paper clearance. Standalone finite-Gaussian
 Schatten target remains UNREVIEWED planning, not an imported theorem.
+
+### Actual two-direction variance target frozen — 2026-10-30
+
+Previous goal turn PROGRESS: three analytic foundations adopted. Current
+clean local/origin/<HUB>7780e01/0:0 revalidated after fetch; advisory
+auditexit0. NEW target D1 actual physically masked SAME-W form on E1/2,
+NO observationchi, correct Sobolev adjoint/complex Fourier reflection and
+full normalized2x2. D2 BOTH finite ON-family variance inequalities uniformR
+with weighted fixedvector, actualauxnorm domination before any stationary
+calculation, exact(2pi)^d c_d² cancellation, criticalLOG/betastrict>1/2.
+D3 limited same-W mean-square column/adjoint-column reconstruction, explicitly
+NOT a randomboundedoperator/HS claim. Oldell_chi relation by actualEadjoint,
+not settingchi1 in a compact-chi theorem.
+
+120fullmatrix snapshots includingzero,12genericSchwartzGaussian FT,3actual
+singulard2 covariance normalizations pass. Finite6input/8output correlated-
+time Gaussian matrix controls check BOTH variances/Bessel and missingconjugate
+negativecontrol; atomicspatialweights NOT Hhomog/no continuumclaim. Working
+precision notcertifiedaccuracy. Unchanged fullmatrix source/type/priorHIGH
+bindings checked, no newLeanmodule or analyticformalization. Fifteen-text
+preproofpacket frozen before longproof. Original all-dimensional lower/
+sharpupper/source goal ACTIVE, no operator/Schatten/path/flow/new moment
+adoption. No sourcefix/contact/HPC/Skorohod/companion/TeX/PDF/wiki edits.
