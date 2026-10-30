@@ -1,0 +1,196 @@
+{
+  "provider": "claude",
+  "started_utc": "2026-10-30T22:43:25.516900+00:00",
+  "workspace": "${HOME}/.local/state/Le-AI-Lab/stratonovich-spectral-mask-scientific-v1/workspace",
+  "source_revision": "af9b1ad02056a08c7274384d27b86fae430bfd39",
+  "input_hashes": {
+    "notes/spectral-mask-covariance-foundation.md": "5916ee21c7581817f773f3dd20f5675169be21fe612d75ef72bee26094caec89",
+    "reviews/2026-10-30-spectral-mask-foundation/canonical-model-context.txt": "a54e4415738a71f9bf2d37c83a6d1c7f50026eb6c03e902af0a485007dbeb06b",
+    "reviews/2026-10-30-spectral-mask-foundation/check-diagnostics.py": "b8dbf645ca3307264e9e9c4edbf58df200300e5b2c91deb401b293b43f9bd7c6",
+    "reviews/2026-10-30-spectral-mask-foundation/diagnostics-v1.json": "ce2f11e7809d0dff12e780c0562ce7e81219fd211afc1d855bf896d55de757e7",
+    "reviews/2026-10-30-spectral-mask-foundation/falsification-v1.md": "4cdc26d718a9be7ea8932faa99d23877a8f57d7afad385cb337563302be2b68e",
+    "reviews/2026-10-30-spectral-mask-foundation/scientific-worker-honesty-v1.md": "9ed7226ff8cf8351b8a1acb78bb37d27a1c2b108a6eb5fe11c07e85d091115f8",
+    "reviews/2026-10-30-spectral-mask-foundation/statement-adjudication-v1.md": "a95134f7942bda20eac59c0879361bf86e5acaa153f3f6e4c84fd3d8e8a248d2",
+    "reviews/2026-10-30-spectral-mask-foundation/target-v1.md": "9aa94602b4d9adfec8311bdfd92a835334c80d33cd9eeabe6a23d55131d1e2ce",
+    "reviews/2026-10-30-spectral-mask-foundation/worker-honesty-v1.md": "c0875c2c06a554e4e60c38abc9800aa194026b01cb8f646ca0f8dbd9b09fd4d0"
+  },
+  "target": "notes/spectral-mask-covariance-foundation.md",
+  "claude_account": "<removed>",
+  "review_contract_sha256": "e70be3fa74b8de6c14fb2ddf0a450ec43365975d4108759c298e555c67c0a33a",
+  "effort_requested": "high",
+  "resumed_from": null,
+  "resume_mode": null,
+  "resume_binding": null,
+  "min_confidence": "high",
+  "scientific_verdict": "PASS_WITH_NOTES",
+  "accepted": true,
+  "report_contract_schema": "subscription-review-report/1",
+  "report_legacy_mode": null,
+  "legacy_resume_binding": null,
+  "diagnostics": [],
+  "required_sources_sha256": "1de21e47e303ad3d66fce33030173e879a351430068fbbba79b877794e8430be",
+  "required_sources_workspace_copy": ".review/required-sources.json",
+  "workspace_preflight": {
+    "schema": "le-ai-lab.review-workspace-preflight/1",
+    "scanned": "review contract (--prompt-file)",
+    "references": {
+      "notes/spectral-mask-covariance-foundation.md": [
+        "notes/spectral-mask-covariance-foundation.md"
+      ]
+    },
+    "waived": [],
+    "missing": [],
+    "required_sources_copy": ".review/required-sources.json"
+  },
+  "runtime_preflight": {
+    "effective_version": "2.1.304",
+    "cli_version": "2.1.304 (Claude Code)",
+    "image_requirements": false,
+    "supported_versions": [
+      "2.1.299",
+      "2.1.300",
+      "2.1.301",
+      "2.1.302",
+      "2.1.303",
+      "2.1.304",
+      "2.1.314"
+    ],
+    "supported": true
+  },
+  "cli_version": "2.1.304 (Claude Code)",
+  "executable": "${HOME}/.local/state/Le-AI-Lab/swe-white-time-resume-20261024/runtime/node_modules/@anthropic-ai/claude-code-linux-x64/claude",
+  "executable_requested": null,
+  "executable_effective": {
+    "path": "${HOME}/.local/state/Le-AI-Lab/swe-white-time-resume-20261024/runtime/node_modules/@anthropic-ai/claude-code-linux-x64/claude",
+    "version": "2.1.304 (Claude Code)"
+  },
+  "read_ledger_format_supported": true,
+  "auth": {
+    "authMethod": "<removed>",
+    "apiProvider": "firstParty",
+    "subscriptionType": "<removed>",
+    "email": "<account email removed>"
+  },
+  "model_requested": "claude-opus-5-5",
+  "command_without_prompt": [
+    "${HOME}/.claude/bin/claude-acct",
+    "run",
+    "<account removed>",
+    "--print",
+    "--model",
+    "claude-opus-5-5",
+    "--effort",
+    "high",
+    "--disable-slash-commands",
+    "--strict-mcp-config",
+    "--mcp-config",
+    "{\"mcpServers\":{}}",
+    "--permission-mode",
+    "dontAsk",
+    "--permission-prompts",
+    "none",
+    "--output-format",
+    "stream-json",
+    "--verbose",
+    "--tools",
+    "Read,Grep,Glob",
+    "--allowedTools",
+    "Read,Grep,Glob",
+    "--agents",
+    "${HOME}/.local/state/Le-AI-Lab/stratonovich-spectral-mask-scientific-v1/claude-reviewer.json",
+    "--agent",
+    "artifact-reviewer",
+    "<stdin: prompt.txt without its final newline>"
+  ],
+  "prompt_transport": "stdin",
+  "prompt_bytes": 5915,
+  "prompt_sha256": "72175a97f840551627c738b81c5b4b251b07e21f86b1f49e6fc9bad92cc30edd",
+  "transport_exit_code": 0,
+  "transport_ok": true,
+  "model_actual": "claude-opus-5-5",
+  "session_id": "32abaffd-4fe8-408f-aca8-d31afa4331f3",
+  "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 36612,
+    "cache_read_input_tokens": 22938,
+    "output_tokens": 37339,
+    "output_tokens_details": {
+      "thinking_tokens": 29646
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 36612,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 36131,
+        "cache_read_input_tokens": 19734,
+        "cache_creation_input_tokens": 20082,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 20082
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "provider_error": false,
+  "terminal_subtype": "success",
+  "tools_actual": [
+    "Read",
+    "Grep",
+    "Glob"
+  ],
+  "actual_route_verified": true,
+  "candidate_hashes_unchanged": true,
+  "raw_report_sha256": "d83a51b3e9d7aca8fc4dde41f70e3885e15a9bac9c1216794a638b8381117c6b",
+  "status": "review-complete",
+  "confidence": "high",
+  "report_interpretation": {
+    "contract_schema": "subscription-review-report/1",
+    "report_schema": "subscription-review-report/1",
+    "legacy_mode": null,
+    "normalized_verdict": "PASS_WITH_NOTES",
+    "normalized_confidence": "high",
+    "normalized_check_verdicts": [
+      "PASS",
+      "PASS",
+      "PASS_WITH_NOTES",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS_WITH_NOTES",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS_WITH_NOTES",
+      "PASS_WITH_NOTES",
+      "PASS"
+    ]
+  },
+  "report_sha256": "0d52ef7ee9b1b856e650cbfa598a5f303b755082e2161ad502d247ad589e723e",
+  "report_text_format": "bare",
+  "report_body_sha256": "d83a51b3e9d7aca8fc4dde41f70e3885e15a9bac9c1216794a638b8381117c6b",
+  "finished_utc": "2026-10-30T22:48:51.650525+00:00",
+  "elapsed_seconds": 326.133,
+  "transport_events_sha256": "87d5ab75958b20668833c4a5c7956f8b85418d9f53fd8f14fc9d4d90c94277b3",
+  "transport_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "read_ledger_sha256": "a431a95f25df5a94987ea045c8de901658e78b6f178da2ca884fc70cfdfc5c91",
+  "coverage_verified": true
+}

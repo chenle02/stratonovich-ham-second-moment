@@ -1,0 +1,140 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "notes/spectral-mask-covariance-foundation.md: lines 1-300 (complete, to EOF, no truncation)",
+    "reviews/2026-10-30-spectral-mask-foundation/target-v1.md: lines 1-54 (complete)",
+    "reviews/2026-10-30-spectral-mask-foundation/falsification-v1.md: lines 1-21 (complete)",
+    "reviews/2026-10-30-spectral-mask-foundation/worker-honesty-v1.md: lines 1-20 (complete)",
+    "reviews/2026-10-30-spectral-mask-foundation/canonical-model-context.txt: lines 1-40 (complete)",
+    "reviews/2026-10-30-spectral-mask-foundation/check-diagnostics.py: lines 1-57 (complete)",
+    "reviews/2026-10-30-spectral-mask-foundation/diagnostics-v1.json: lines 1-195 (complete)",
+    "reviews/2026-10-30-spectral-mask-foundation/statement-adjudication-v1.md: lines 1-26 (complete)",
+    "reviews/2026-10-30-spectral-mask-foundation/scientific-worker-honesty-v1.md: lines 1-25 (complete)",
+    ".review/required-sources.json: lines 1-30 (read plan, complete; earns no read credit)"
+  ],
+  "checks": [
+    {
+      "claim": "C1a: Section 1 matches canonical H:homog in dimensions, threshold, homogeneity, measure class and spectral convention.",
+      "verdict": "PASS",
+      "reason": "The note has d in {1,2,3}, a=alpha_0 in (0,1), alpha+a<2, and 0<alpha<d or alpha=d=1. It also has Gamma(cA)=c^(d-alpha)Gamma(A) and Gamma=int exp(i xi.x) mu(dxi) distributionally, all agreeing with the excerpt. Sanity check: for d=1 and Gamma=delta_0, mu=dxi/(2pi), and (1) reduces to phi(0)=phi(0) by inversion."
+    },
+    {
+      "claim": "C1b: The nonzero assumption and zero boundary are handled honestly, and singular spectra are covered.",
+      "verdict": "PASS",
+      "reason": "H:homog does not state nonzero. The note adds it explicitly and Section 6 says it is excluded only to make M_Gamma>0. For Gamma=0, mu=0 and (2),(3),(5),(6) hold trivially with zero constants. No step uses a density of mu. rho_R is a density of the auxiliary measure only."
+    },
+    {
+      "claim": "C1c: A tempered positive measure integrates Schwartz functions absolutely, by the polynomial mass argument.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Seminorms of phi(x/R) satisfy p_m(phi(./R))<=R^m p_m(phi) for R>=1, so ball mass grows polynomially. Dyadic shells then give integrability of (1+|x|)^(-N) for large N. This is correct for Gamma and mu. Identifying the distribution pairing with the Lebesgue integral on non-compact Schwartz tests (cutoffs plus dominated convergence) is left implicit. It is standard and non-blocking."
+    },
+    {
+      "claim": "C1d: Identity (1) and the unitary Fourier convention are exact and consistent for complex tests.",
+      "verdict": "PASS",
+      "reason": "(1) is the definition of the Fourier transform of the tempered measure mu, extended bilinearly to complex tests. hat f has constant c_d=(2pi)^(-d/2) and sign exp(-i xi.x), and all later constants were rechecked against this."
+    },
+    {
+      "claim": "C2a: Identity (2) holds for all y and r>0 with exact constants, and uses no illegal oscillatory Fubini.",
+      "verdict": "PASS",
+      "reason": "J'(b)=-b J(b)/(2A) was rederived by parts. With A=r^2/4, J=(2 sqrt(pi)/r)exp(-b^2/r^2). Applying (1) to the single test exp(-r^2|x|^2/4)exp(-i y.x) gives (2) directly, and no exchange of two infinite measures is performed."
+    },
+    {
+      "claim": "C2b: The homogeneity pushforward and the bounds in (3) are correct, including C_Gamma.",
+      "verdict": "PASS",
+      "reason": "T(x)=rx gives T_#Gamma(A)=Gamma(A/r)=r^(alpha-d)Gamma(A), hence int exp(-r^2|x|^2/4)dGamma=r^(alpha-d)M_Gamma. So G_r(y)<=r^alpha M_Gamma/(2 sqrt(pi))^d. On open or closed B(y,r) the Gaussian is >=1/e, giving mu(B(y,r))<=e M_Gamma r^alpha/(2 sqrt(pi))^d=C_Gamma r^alpha uniformly in y and r. Hand checks: Gamma=delta_0 in d=1 and delta_x1 tensor Leb_x2 in d=2 satisfy it, with C_Gamma=e/(2 sqrt(pi)) in the latter."
+    },
+    {
+      "claim": "C3a: R scaling, L, and evenness of |k_R| hold for a real, not necessarily even, mask.",
+      "verdict": "PASS",
+      "reason": "k_R(u)=R^d hat zeta(Ru), so ||k_R||_1=L, and L>0 because zeta is nonzero. Real zeta gives k_R(-u)=conj k_R(u), so |k_R| is even. With evenness of mu and xi->-xi, rho_R(-eta)=rho_R(eta)."
+    },
+    {
+      "claim": "C3b: rho_R is finite and continuous, and nu_R is positive, Radon and tempered.",
+      "verdict": "PASS",
+      "reason": "Rapid decay of k_R with the polynomial mass of mu gives finiteness. On compact eta sets (1+|xi-eta|)^(-N)<=C_K(1+|xi|)^(-N), so dominated convergence gives continuity. A continuous nonnegative density yields a positive Radon measure, and temperedness follows from (5) plus dyadic shells. The note correctly says local density bounds need not be uniform in R; the Gaussian example has density proportional to R."
+    },
+    {
+      "claim": "C3c: The Tonelli shifted-center identity and the uniform bound (5) hold with constant c_d^2 L^2 C_Gamma.",
+      "verdict": "PASS",
+      "reason": "For fixed xi and u=xi-eta, eta in B(y,r) iff xi in B(y+u,r), with unit Jacobian. This gives nu_R(B(y,r))=c_d^2 L int |k_R(u)| mu(B(y+u,r))du. Then (3) and int |k_R|=L give (5), uniformly in R, y and r."
+    },
+    {
+      "claim": "C4a: The Hilbert-valued convolution identity with constant c_d holds, with valid integrability and projection limits.",
+      "verdict": "PASS",
+      "reason": "The scalar computation gives hat(fg)=c_d hat f * hat g. Coordinates of H-valued Schwartz functions are scalar Schwartz, and hat(P_n F)=P_n hat F. Pointwise convergence is dominated by |zeta_R| ||F|| on one side and |k_R(xi-eta)| ||hat F(eta)|| on the other. hat F decays rapidly in norm by Bochner differentiation. Continuity in a separable H gives strong measurability."
+    },
+    {
+      "claim": "C4b: Weighted Cauchy-Schwarz and Tonelli give (6) exactly, with real H handled by complexification.",
+      "verdict": "PASS",
+      "reason": "||hat(zeta_R F)||^2<=c_d^2 (int |k_R(xi-eta)| ||hat F(eta)||deta)^2<=c_d^2 L int |k_R(xi-eta)| ||hat F(eta)||^2 deta. Integrating against mu and applying Tonelli gives int ||hat F||^2 rho_R deta exactly. Finiteness follows from temperedness. A real H embeds isometrically in H_C with the usual norm."
+    },
+    {
+      "claim": "C5a: H_a is positive semidefinite via the Laplace and damped-square identities, with the Schur bound and separability correct.",
+      "verdict": "PASS",
+      "reason": "v=lambda|t-s| gives the Laplace identity. int_{-inf}^{min(t,s)} 2 lambda exp(-lambda(t+s-2u))du=exp(-lambda|t-s|) was checked, using t+s-2min(t,s)=|t-s|. Exchanges are absolutely convergent for bounded compact tests. int_0^T |t-s|^-a ds=(t^(1-a)+(T-t)^(1-a))/(1-a)<=2T^(1-a)/(1-a). The Schur bound passes L2-density of a countable family to H_a-density of the completion of the null quotient."
+    },
+    {
+      "claim": "C5b: D is a finite-sum subclass stable under real Schwartz masks, and (7) holds with factor (2pi)^d.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "h(z)=int exp(i xi.z) hat f conj(hat g) dxi and int exp(i xi.z) h dz=(2pi)^d hat f(-xi) conj(hat g(-xi)) were rederived. Applying (1) to Schwartz h and using evenness of mu gives (2pi)^d int hat f conj(hat g) dmu. Summing with <tau_j,tau_k>_a matches ||hat F||^2 in the complexification. Checks: d=1 white noise gives int fg, and the d=2 singular case reproduces (9). zeta_R F stays in D. The note does not spell out why spatially Schwartz tests lie in the canonical completion if W is first defined on compact tests. That follows from continuity of the form in Schwartz seminorms, and the excerpt does not fix a narrower test class, so it is recorded as minor."
+    },
+    {
+      "claim": "C6: The A_R construction, contraction into the same W, and Gaussian limits are correct, with no original-quotient multiplier inference.",
+      "verdict": "PASS",
+      "reason": "N_R is a Hilbert seminorm on real D. Its polarization is real because rho_R is even and hat F(-eta)=conj hat F(eta). (8) makes the linear map F->W(zeta_R F) well defined on the null quotient and contractive, so it extends uniquely into L2(Omega) of the same W. Finite linear combinations of limits are L2 limits of centered Gaussians. Dependence on zeta and R is stated, and no descent to the mu quotient or spatial representative is claimed."
+    },
+    {
+      "claim": "C7: Finite matrices carry the same (2pi)^d; the PSD order and independent-Gaussian Jensen comparison hold for linear images only.",
+      "verdict": "PASS",
+      "reason": "b^T A b=E W(zeta_R sum b_i F_i)^2<=N_R(sum b_i F_i)^2=b^T B b. X+Z has covariance A+(B-A)=B. Conditional Jensen with E Z=0 gives E||X||^p<=E||X+Z||^p for p>=1 and any norm, with finiteness from Gaussian moments. The note excludes nonlinear solutions and assumes no physical positivity of the auxiliary inverse transform."
+    },
+    {
+      "claim": "C8a: The compact-mask example lies in H:homog with correct spectral normalization and is not white noise.",
+      "verdict": "PASS",
+      "reason": "mu=(2pi)^-1 dxi1 delta_0(dxi2) gives int phi(0,x2)dx2 in (1) by inversion in x1. Gamma(cA)=cGamma(A) forces alpha=1, 0<1<2, and 1+a<2 for every a in (0,1). Nonnegativity, evenness, positive definiteness and temperedness all hold."
+    },
+    {
+      "claim": "C8b: The marginal formula (9), V(g)=0, V(zeta g)=J I^2, the plateau construction and the time factor are correct, and no finite C exists.",
+      "verdict": "PASS",
+      "reason": "(9) follows directly and also from (7): 2pi int |hat g(xi1,0)|^2 dxi1 equals int m^2. chi=A/(A+B) tends to 1 at r=1+ and to 0 at r=2-, flat to every order, with A+B>0. int chi''=0 and int chi chi''=-I by parts, so the masked marginal is -I chi(x1)^2 and V=J I^2. J>=2, and I>0 because chi is nonconstant. ||tau||_a^2 is finite and positive for nonzero nonnegative tau. Hence the unmasked variance is 0 while the masked variance is positive, which excludes any finite C and any descent to the quotient."
+    },
+    {
+      "claim": "C9a: Diagnostics match the claimed inventory and independently hand-checked closed forms and values.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The JSON contains 9 singular, 9 Riesz and 4 Gaussian Schwartz cases plus the separate compact plateau. Hand-rederived: the Riesz coefficient 2^-a pi^(-d/2)Gamma((d-a)/2)/Gamma(a/2), the Riesz M, and the Gaussian physical value pi^1.5 R^-4/(4 sqrt2 A^3.5). Also rederived: the equal spectral value, aux density R(2pi)^(-3/2)exp(-R^2 eta2^2/2), and the aux integral. chi' and chi'' in the script are correct. Sample values checked by hand: R=1 and R=2 physical, R=1 and R=8 aux, several singular and Riesz rows, J I^2=28.54. Rough quadrature gave I/2 about 1.64 and K=(J-2)/2 about 0.329, consistent with the JSON. The singular physical/spectral agreement is an algebraic cancellation of closed forms, not independent numerics."
+    },
+    {
+      "claim": "C9b: Exact-zero labels, working precision versus tolerance, and execution custody are stated honestly.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Unmasked zeros are literal strings in the JSON, matching the note, and analytically correct since the marginal integrand is a compact or Gaussian second derivative. The script uses mp.dps=60 and rel_eps 1e-45 for IBP, as the note states. Execution and absence of python -O are root or author custody statements, repeated consistently in the packet but not verifiable here. all_assertions_passed is a hard-coded literal, so it is not itself evidence of non-optimized execution. This reviewer performed hand checks only and did not execute anything. Numerics are explicitly not proofs, and no proof step depends on them."
+    },
+    {
+      "claim": "C10: Scope is respected: original goal active, no operator-norm, Schatten, path, Young, source, new-moment or new-Lean claims, and the scalar plan is not consumed.",
+      "verdict": "PASS",
+      "reason": "The header and Section 6 retain these as open obligations. No proof step uses the next-scalar plan or any source energy or constant identification. target-v1 T1-T3 are all covered, and all nine statement-gate notes in statement-adjudication-v1 are addressed in the proof. Two loose sentences in Section 6 are recorded as minor findings; neither is load-bearing."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Line 287 says Proposition 2 'enlarges the norm of INPUT TESTS'. Read as an order statement this is false, since N_R need not dominate the original norm. In the d=2 example with a Gaussian mask, take hat f(eta)=a(eta1)b(eta2/eps) with a,b real even Schwartz and b(0)=1. The original spatial variance is 2pi||a||^2, independent of eps, while N_R^2<=C_R eps->0. Proposition 3 excludes the reverse domination, so the two norms are incomparable here. 'Replaces' would be accurate. The proof only uses the masked map on A_R and never uses W(F) on A_R, so nothing fails.",
+      "Line 286 says Proposition 3 forbids importing the old d1 estimate 'to all d2/3 covariances', but Proposition 3 is a d=2 example only. It refutes the universal d=2 claim directly. A d=3 instance is not written. The analogue delta_0(dx1) tensor Leb(dx2 dx3), alpha=1, g=chi(x1)chi''(x2)chi(x3), works by the same marginal argument, but the note does not state it. The old d1 estimate itself is outside the packet.",
+      "Lines 173-175 do not state why Schwartz-in-space tests in D lie in the canonical completion if W is initially given on compact tests. Spatial cutoffs converge in Schwartz topology and (7) is continuous in Schwartz seminorms, so this is a one-line remark. The packet excerpt does not fix a narrower test class.",
+      "Section 1 leaves implicit that the tempered pairing on non-compact Schwartz tests coincides with the Lebesgue integral (cutoff plus dominated convergence). This is standard, and the Gaussian tests in Section 2 rely on it.",
+      "(8) writes ||hat F||_H_a where (7) writes the complexified norm, and the expansion ||hat F||^2=sum <tau_j,tau_k>_a hat f_j conj(hat f_k) is not displayed. This is notation only.",
+      "all_assertions_passed in the diagnostics is an unconditional literal, so it would also be written under python -O. The non-optimized-run claim rests only on custody statements. falsification-v1 says 'numerically at 60 digits', which is looser than the note's correct distinction between 60-digit working precision and a 1e-45 tolerance. As I recall mpmath behaviour (the library is not in the packet), almosteq with only rel_eps also sets abs_eps to the same value. That has no practical effect at the IBP magnitude of about 3.28."
+    ],
+    "unresolved": []
+  },
+  "required_repairs": [],
+  "limitations": [
+    "No code was executed: this reviewer had read and search tools only. Diagnostic agreement was checked by hand derivation and sampled arithmetic, not replay, and not every JSON digit was recomputed.",
+    "Root replay, input hashes, the revisions f312877, 094632a and af9b1ad, the previous reviewer's archive and the non-optimized execution claim are custody statements. They cannot be verified from packet contents.",
+    "canonical-model-context.txt is taken as the authoritative excerpt. Its fidelity to the tracked TeX and the source-paper normalization were not checked and are declared open by the packet.",
+    "The note's reference to an old d1 mask estimate and the separate scalar row plan are outside the packet and were not reviewed.",
+    "This is an AI review of Sections 1-6 of this note only. It is not human verification, a novelty audit, or whole-paper clearance."
+  ]
+}

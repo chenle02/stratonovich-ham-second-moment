@@ -1,0 +1,325 @@
+{
+  "schema": "le-ai-lab.review-read-ledger/1",
+  "coverage_verified": true,
+  "claude_code_version": "2.1.304",
+  "events_sha256": "87d5ab75958b20668833c4a5c7956f8b85418d9f53fd8f14fc9d4d90c94277b3",
+  "events_hash_bound_to_receipt": true,
+  "stream_workspace": "${HOME}/.local/state/Le-AI-Lab/stratonovich-spectral-mask-scientific-v1/workspace",
+  "required_sources_sha256": null,
+  "continuation": false,
+  "continuation_credit": null,
+  "proves": "Each credited line was returned, numbered and byte-equal to the frozen workspace file, in a tool_result paired with a Read or line-numbered content-mode Grep call of the hash-bound provider stream.",
+  "does_not_prove": "Attention, understanding, or retention: a credited line may have been skimmed, ignored, or dropped by context compaction before the report was written. Uncredited lines may still have been seen in a form the ledger cannot attribute (previews, unnumbered output, subagents).",
+  "sources": [
+    {
+      "path": "notes/spectral-mask-covariance-foundation.md",
+      "sha256": "5916ee21c7581817f773f3dd20f5675169be21fe612d75ef72bee26094caec89",
+      "total_lines": 299,
+      "required_ranges": [
+        [
+          1,
+          299
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          299
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "reviews/2026-10-30-spectral-mask-foundation/target-v1.md",
+      "sha256": "9aa94602b4d9adfec8311bdfd92a835334c80d33cd9eeabe6a23d55131d1e2ce",
+      "total_lines": 53,
+      "required_ranges": [
+        [
+          1,
+          53
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          53
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "reviews/2026-10-30-spectral-mask-foundation/falsification-v1.md",
+      "sha256": "4cdc26d718a9be7ea8932faa99d23877a8f57d7afad385cb337563302be2b68e",
+      "total_lines": 20,
+      "required_ranges": [
+        [
+          1,
+          20
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          20
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "reviews/2026-10-30-spectral-mask-foundation/worker-honesty-v1.md",
+      "sha256": "c0875c2c06a554e4e60c38abc9800aa194026b01cb8f646ca0f8dbd9b09fd4d0",
+      "total_lines": 19,
+      "required_ranges": [
+        [
+          1,
+          19
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          19
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "reviews/2026-10-30-spectral-mask-foundation/canonical-model-context.txt",
+      "sha256": "a54e4415738a71f9bf2d37c83a6d1c7f50026eb6c03e902af0a485007dbeb06b",
+      "total_lines": 39,
+      "required_ranges": [
+        [
+          1,
+          39
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          39
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "reviews/2026-10-30-spectral-mask-foundation/check-diagnostics.py",
+      "sha256": "b8dbf645ca3307264e9e9c4edbf58df200300e5b2c91deb401b293b43f9bd7c6",
+      "total_lines": 56,
+      "required_ranges": [
+        [
+          1,
+          56
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          56
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "reviews/2026-10-30-spectral-mask-foundation/diagnostics-v1.json",
+      "sha256": "ce2f11e7809d0dff12e780c0562ce7e81219fd211afc1d855bf896d55de757e7",
+      "total_lines": 194,
+      "required_ranges": [
+        [
+          1,
+          194
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          194
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "reviews/2026-10-30-spectral-mask-foundation/statement-adjudication-v1.md",
+      "sha256": "a95134f7942bda20eac59c0879361bf86e5acaa153f3f6e4c84fd3d8e8a248d2",
+      "total_lines": 25,
+      "required_ranges": [
+        [
+          1,
+          25
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          25
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "reviews/2026-10-30-spectral-mask-foundation/scientific-worker-honesty-v1.md",
+      "sha256": "9ed7226ff8cf8351b8a1acb78bb37d27a1c2b108a6eb5fe11c07e85d091115f8",
+      "total_lines": 24,
+      "required_ranges": [
+        [
+          1,
+          24
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          24
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    }
+  ],
+  "tool_calls": [
+    {
+      "id": "toolu_01SgH8kzdDQ89G8sNasVgRRP",
+      "tool": "Read",
+      "source": ".review/required-sources.json",
+      "plan_copy_read": [
+        ".review/required-sources.json"
+      ],
+      "uncredited": "runner-owned plan copy (.review/): never read credit",
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01134BVs3woPjUnbWGpsvswW",
+      "tool": "Read",
+      "source": "notes/spectral-mask-covariance-foundation.md",
+      "credited": {
+        "notes/spectral-mask-covariance-foundation.md": [
+          [
+            1,
+            299
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01GSBdWJc2CGADDcgJREFbfL",
+      "tool": "Read",
+      "source": "reviews/2026-10-30-spectral-mask-foundation/canonical-model-context.txt",
+      "credited": {
+        "reviews/2026-10-30-spectral-mask-foundation/canonical-model-context.txt": [
+          [
+            1,
+            39
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01TrJaXQbjbtPXx897DjSJzU",
+      "tool": "Read",
+      "source": "reviews/2026-10-30-spectral-mask-foundation/check-diagnostics.py",
+      "credited": {
+        "reviews/2026-10-30-spectral-mask-foundation/check-diagnostics.py": [
+          [
+            1,
+            56
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01JQEtmjnD29ikNykuCzuenG",
+      "tool": "Read",
+      "source": "reviews/2026-10-30-spectral-mask-foundation/diagnostics-v1.json",
+      "credited": {
+        "reviews/2026-10-30-spectral-mask-foundation/diagnostics-v1.json": [
+          [
+            1,
+            194
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_015bVozM1MBhALdzpmHdiAHd",
+      "tool": "Read",
+      "source": "reviews/2026-10-30-spectral-mask-foundation/falsification-v1.md",
+      "credited": {
+        "reviews/2026-10-30-spectral-mask-foundation/falsification-v1.md": [
+          [
+            1,
+            20
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01SUXe7ASXrHQUhLiAJ1Ca6g",
+      "tool": "Read",
+      "source": "reviews/2026-10-30-spectral-mask-foundation/scientific-worker-honesty-v1.md",
+      "credited": {
+        "reviews/2026-10-30-spectral-mask-foundation/scientific-worker-honesty-v1.md": [
+          [
+            1,
+            24
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01MQpQEP8eZJEzBw6M2mnV4s",
+      "tool": "Read",
+      "source": "reviews/2026-10-30-spectral-mask-foundation/statement-adjudication-v1.md",
+      "credited": {
+        "reviews/2026-10-30-spectral-mask-foundation/statement-adjudication-v1.md": [
+          [
+            1,
+            25
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_019HmuDcpmkYviVv6U9R9xAp",
+      "tool": "Read",
+      "source": "reviews/2026-10-30-spectral-mask-foundation/target-v1.md",
+      "credited": {
+        "reviews/2026-10-30-spectral-mask-foundation/target-v1.md": [
+          [
+            1,
+            53
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01QuZuLfuH3Jbg7u4TSp94VB",
+      "tool": "Read",
+      "source": "reviews/2026-10-30-spectral-mask-foundation/worker-honesty-v1.md",
+      "credited": {
+        "reviews/2026-10-30-spectral-mask-foundation/worker-honesty-v1.md": [
+          [
+            1,
+            19
+          ]
+        ]
+      },
+      "stream": "attempt"
+    }
+  ],
+  "diagnostics": []
+}

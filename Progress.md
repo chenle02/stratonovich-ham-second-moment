@@ -5235,3 +5235,29 @@ controls computed; alpha1.25radialmodel livesd2/3 notline. Numericprecision
 notcertifiedaccuracy/no allxi bound fromtests. Eighttextspreproof frozen,
 no longproof/adoption yet. Notactualoperatorvariance,notSchatten/path/
 source/Young/moment. Originalall-dimensional sharpgoal remainsACTIVE.
+
+### Spectral and physical-mask covariance foundation adopted — 2026-10-30
+
+Full independent native Opus5.5/high review: 20 checks, PASS_WITH_NOTES,
+high confidence, 326.133 seconds, nine complete texts, no required repairs.
+All nine live/frozen/git af9b1ad bindings and all24 native archive files
+verified before adoption edits; actual model/route/coverage verified.
+Canonical model excerpt and normal-Python diagnostic byte replay checked.
+Six minor findings adjudicated. Correct 'enlarges' to 'replaces': auxiliary
+and original test norms can be incomparable. Clarify actual d2 counterexample
+refutes a universal full-class mask bound; no separate d3 example adopted.
+Add suggested cutoff/pairing explanations. Estimates and parameters unchanged.
+
+Accepted notes/spectral-mask-covariance-foundation.md: all original Gamma
+have uniform translated spectral alpha growth; physical masked LINEAR noise
+is bounded by a positive even auxiliary spectral norm with uniform-R growth,
+with an explicit SAME-W completion and finite linear Gaussian convex-moment
+comparison. Actual compact d2 null-quotient counterexample proves that the
+original-noise multiplier cannot simply be assumed. No replacement PDE/noise,
+operator variance/Schatten/path/Young/source-limit/new moment theorem.
+
+Original all-dimensional lower/sharp-upper/source goal remains ACTIVE.
+Separate scalar row statement review session67937 still running; its input
+ball growth is a named hypothesis, no adopted scalar theorem yet. No new
+Lean claim or official companion. Canonical TeX/PDF/wiki unchanged; no
+correspondence, source normalization repair, Skorohod, HPC or public release.

@@ -1,6 +1,8 @@
 # Spectral growth and a physical-mask linear covariance bound
 
-COMPLETE CANDIDATE, not adopted before independent full proof review.
+ACCEPTED internal covariance foundation: independent Opus5.5/high full
+review, PASS_WITH_NOTES/HIGH, scientific revision af9b1ad; see the
+2026-10-30-spectral-mask-foundation review packet and adjudication.
 This is a raw covariance foundation. It constructs no operator path or
 wave flow and proves no new moment asymptotic. Canonical H:homog and the
 original all-dimensional sharp goal are retained.
@@ -30,7 +32,9 @@ the distribution gives a finite Schwartz seminorm bound on its pairing
 with phi(x/R); that seminorm grows at most polynomially for R>=1.
 Consequently the mass of the ball of radius R grows polynomially. Dyadic
 shells then show integrability of (1+|x|)^(-N) for some N, and of every
-Schwartz function. This applies separately to Gamma and mu.
+Schwartz function. This applies separately to Gamma and mu. Cutoffs
+converge in Schwartz topology, so dominated convergence identifies the
+tempered pairing with the ordinary integral for these measures.
 
 ## 2. Uniform translated spectral growth
 
@@ -172,7 +176,11 @@ Let D consist of finite sums F(t,x)=sum_j tau_j(t)f_j(x), with tau_j as
 above and f_j real Schwartz. These are a subclass of H_a-valued Schwartz
 functions of x, not all such functions. For the original real isonormal
 noise W and its canonical test completion, define W(F) by the physical
-covariance form in the model. It is finite on D. In this convention,
+covariance form in the model. It is finite on D. If W is initially
+given on compact spatial tests, multiply f_j by expanding smooth cutoffs:
+the products converge in Schwartz topology, and the spectral form below
+is continuous in that topology, so D lies in the same noise completion.
+In this convention,
 
  E W(F)^2 = (2pi)^d int ||hat F(xi)||_(H_a complexified)^2 mu(dxi).   (7)
 
@@ -283,9 +291,11 @@ of Propositions 1-3.
 These results apply to every original covariance in H:homog; no density,
 strict spectral positivity or effective dimension assumption was added.
 The zero covariance is trivial and excluded only to make M_Gamma>0.
-Proposition 3 forbids importing the old d1 original-quotient mask estimate
-to all d2/3 covariances. Proposition 2 instead enlarges the norm of INPUT
-TESTS and bounds the actual masked linear noise on its original space.
+Proposition 3 supplies an actual d2 counterexample to a bound claimed
+uniformly over the full d2/3 class; no separate d3 counterexample was
+proved here. Proposition 2 instead REPLACES the norm of INPUT TESTS and
+bounds the actual masked linear noise on its original probability space.
+The auxiliary and original test norms need not dominate one another.
 It neither changes the nonlinear PDE nor establishes an operator norm.
 
 Still needed: actual four-component phase covariance in both operator
