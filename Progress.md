@@ -4397,3 +4397,12 @@ rate. Not independently accepted. Two new finite Lean deductions compile/
 replay with standard3axioms,2False controls and5ownedhashmatches; exact
 finite-prefix extension and normalized-density applications fenced.
 Original fullgoalACTIVE; new scientific analytic/type/application gate next.
+
+Actual event/raw-cost scientific proof gate now live on d5dcd46: actual
+first-party Opus5.5/high,24texts, unchangedHIGHthreshold; session66016/
+native stratonovich-actual-event-scientific-v1. Same launch-local supported
+runtime2.1.304 doctor passed; selected account healthy36percent short/
+60percent weekly. Includes actual operator/probability/scaling applications
+and2finite Lean exact types/application review. Poll samehandle/receipt,
+no restart on observation timeout. No event or lower-rate adoption yet.
+Original fullgoalACTIVE and canonicalTeX/PDF unchanged.
