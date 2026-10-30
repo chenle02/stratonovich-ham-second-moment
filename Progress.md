@@ -4601,3 +4601,11 @@ passed, selectedaccount <usage removed>. Includes actual uniform
 spectral/weighted/J_phi/physicalF complement proof, not just feasibility.
 Poll samehandle/receipt, no timeoutrestart. No S1-S3adoption or general
 positive-profile event/sourceconstant claim yet; original fullgoalACTIVE.
+
+While the actual-family scientific gate runs, the next actual general-test
+consumer obligations are retained as UNREVIEWEDplanning in nonseparable-
+family/next-general-test-consumer.md: verify the cone ARGUMENT for index
+sigma, derive real masked/noisy block errors, event/SAME-Z rawcost, then
+enlarged positive-test V^pos with original point lower. No literal bU
+theorem substitution, no whole-product closeness or source-optimizer
+identification. S1-S3and this consumer still await their proper gates.
