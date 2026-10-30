@@ -1,10 +1,13 @@
 # Moving blocks, positive amplitude and the terminal spatial average
 
-CANDIDATE, not independently accepted. The unchanged mathematical target is
-reviews/2026-10-30-moving-block-cone/target-v1.md. Its independent preproof
-audit found no mathematical defect but required reproducible proxy controls;
-that repair is implemented, with independent recheck still required in the
-full scientific gate. No stochastic event or sharp moment theorem is claimed.
+ACCEPTED at the scoped analytic/type/application gate: actual Opus5.5/HIGH,
+17check groups PASS/PASS_WITH_NOTES,292.758seconds,no required repairs;
+scientific sourceabfdab4. Evidence and eight optional adjudications in
+reviews/2026-10-30-moving-block-cone/scientific-adjudication-v1.md.
+Repaired proxy controls and three finite Lean applications independently
+checked. This is a deterministic perturbation lemma; its random operator
+error premise and stochastic event/moment consumers remain open.
+Original full goal remains active.
 
 ## 1. Actual inputs, observable and theorem
 

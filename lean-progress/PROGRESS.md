@@ -239,3 +239,9 @@ three semantic False controls checked; five owned output hashes match.
 Evidence local-checks/moving-cone-v1/. Analytic operator/cone/field theorem
 not formalized. Independent type/application scientific review pending.
 No package/companion/lease/registry/HPC transaction; L0 remains PROPOSED.
+
+Moving-cone local close: full analytic/type/application review atabfdab4
+passed17groups/HIGH,292.758seconds,24text delivery complete. Three exact
+scalar types and actual applications accepted; all formal source unchanged.
+Raw source/replay/standardaxioms/3numeric False controls retain local-only
+status; no package/Comparator or formal analytic cone/SPDE theorem.

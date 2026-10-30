@@ -1,0 +1,143 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "notes/moving-block-cone.md lines 1-237 (complete)",
+    "notes/spectral-ground-family.md lines 1-139 (complete)",
+    "notes/spectral-weighted-projection.md lines 1-204 (complete)",
+    "notes/spectral-complement-transfer.md lines 1-209 (complete)",
+    "notes/local-causal-young-flow.md lines 1-504 (complete)",
+    "notes/joint-gaussian-tilt.md lines 1-319 (complete)",
+    "reviews/2026-10-30-moving-block-cone/target-v1.md lines 1-84 (complete)",
+    "reviews/2026-10-30-moving-block-cone/diagnostics-v2.json lines 1-734 (complete; all 100 rows)",
+    "reviews/2026-10-30-moving-block-cone/replay-diagnostics.py lines 1-30 (complete)",
+    "reviews/2026-10-30-moving-block-cone/scientific-worker-honesty-v1.md lines 1-35 (complete)",
+    "reviews/2026-10-30-moving-block-cone/statement-adjudication-v1.md lines 1-31 (complete)",
+    "reviews/2026-10-30-moving-block-cone/application-obligations.md lines 1-48 (complete)",
+    "reviews/2026-10-30-moving-block-cone/lean-release-preflight.json lines 1-18 (complete)",
+    "lean-progress/local-checks/moving-cone-v1/StratonovichHAMAudit/MovingCone.lean lines 1-31 (complete)",
+    "lean-progress/local-checks/moving-cone-v1/Audit.lean lines 1-10 (complete)",
+    "lean-progress/local-checks/moving-cone-v1/types-and-axioms.txt lines 1-118 (complete)",
+    "lean-progress/local-checks/moving-cone-v1/STATEMENT-FENCE.md lines 1-27 (complete)",
+    "lean-progress/local-checks/moving-cone-v1/local-receipt.json lines 1-70 (complete)",
+    "lean-progress/local-checks/moving-cone-v1/WrongResidual.lean lines 1-4 (complete)",
+    "lean-progress/local-checks/moving-cone-v1/WrongCone.lean lines 1-4 (complete)",
+    "lean-progress/local-checks/moving-cone-v1/WrongTerminal.lean lines 1-4 (complete)",
+    "lean-progress/local-checks/moving-cone-v1/WrongResidual.txt lines 1-3 (complete)",
+    "lean-progress/local-checks/moving-cone-v1/WrongCone.txt lines 1-3 (complete)",
+    "lean-progress/local-checks/moving-cone-v1/WrongTerminal.txt lines 1-3 (complete)",
+    ".review/required-sources.json lines 1-75 (read plan only; no read credit)"
+  ],
+  "checks": [
+    {
+      "claim": "C1: The note uses the same actual real d1 Riesz/white family, fixed K, and F including constants and both phase entries, and its inputs match accepted scope.",
+      "verdict": "PASS",
+      "reason": "U=Gamma*q with retained amplitude, q>=0 nonzero compact smooth, H_b=-d2-bU and K=[b0,b1] match the ground note lines 12-18. The definitions of e_b, ell_b and Pi_b match weighted (6). The invariance identities match weighted (10)-(12). Uniform bounds and F*/B(F) continuity match weighted lines 108-109 and Section 4. a_*>0 is weighted (7). Input (1) is complement (1) with C_R=max(1,C_eta). F is the closure of compact smooth phases plus both constants, per local-flow Section 4."
+    },
+    {
+      "claim": "C1: J is bounded on actual F and j_*=inf_b J(e_b)>0, with no desired product used as a premise.",
+      "verdict": "PASS",
+      "reason": "Multiplying by kappa is controlled by local-flow (4.2) through the same finite partition expansion, and phi lies in H^-1/2, so |J(z)|<=C||z||_F without point evaluation. p_b is pointwise strictly positive by ground lines 64-69, and phi>=0 of unit mass is positive on an open set, so J(e_b)>0. Continuity of e_b in F (weighted Section 4) and compactness of K give the positive minimum. No product or growth conclusion is assumed anywhere in Section 1."
+    },
+    {
+      "claim": "C2: Budgets (8)-(12) are noncircular, feasible and independent of N, s and the parameter sequence, with exact constants.",
+      "verdict": "PASS",
+      "reason": "theta=min(1,j_*/(16 H C_R)) contains no T, and it gives 16 H C_R theta<=j_*. Integer T exists because eta>0 and the right side of (9) is positive. nu and omega follow from uniform continuity. The five epsilon ratios rho/(2 M_l B), theta/(4 B_Q B), a_*/(2 M_l E0), theta a_*/(8 B_Q E0) and j_*/(8 H B) are all finite and positive, so their minimum works. E0>0 is correct. (13) follows from Q_b r=r and complement (1) for all s>=0, using exp(-eta s)<=1. No exp(CT) terminal constant is used."
+    },
+    {
+      "claim": "C3: The entrance (14)-(15) from physical data e0 is correct.",
+      "verdict": "PASS",
+      "reason": "E=(D_0(T)-P_b(T))e0 has ||E||<=epsilon E0. Invariance gives A1=ell_b(e0)+exp(-lambda_b T)ell_b(E)>=a_*-M_l epsilon E0>=a_*/2. Commutation and Q_b^2=Q_b give exp(-lambda_b T)||Q_b D_0(T)e0||<=q_T B_Q E0+B_Q epsilon E0<=theta a_*/8+theta a_*/8. The ratio is at most theta/2, and ell_b(Q_b z)=0 validates the cone decomposition. Only F norms and F functionals are used, with no global L2 or E shortcut."
+    },
+    {
+      "claim": "C4: Every moving full block (16)-(18) preserves the rebased cone with amplitude factor (1-rho).",
+      "verdict": "PASS",
+      "reason": "||z||<=(M_e+theta)a<=Ba uses theta<=1. Q_c z=Q_b z+(Pi_b-Pi_c)z is an exact identity, so ||Q_c z||<=(theta+nu B)a, and |ell_c(z)-a|<=nu B a. A'>=(1-nu B-M_l epsilon B)a>=(1-rho)a>a/2 uses (10), the first line of (12) and rho<1/2. The residual bound is q_T(theta+nu B)+B_Q epsilon B<=(1/8)(2 theta)+theta/4=theta/2. Then ||Q_c Dz||<=exp(lambda_c T)theta a/2<theta ell_c(Dz). No block norm multiplication, positivity or composition property of D is used; only ||D-P_c(T)||<=epsilon and its action on z are needed."
+    },
+    {
+      "claim": "C5: Terminal (19)-(21) and the induction give (7) with c_*=a_*j_*/4 and the exact (1-rho)^(N-1).",
+      "verdict": "PASS",
+      "reason": "With c=b_N and z in C_(b_(N-1))(theta), ell_c(z)>=(3/4)a>0 and ||Q_c z||<=2 theta a. The eigenmode term has lower bound j_*(3/4)a, whose sign is valid because ell_c(z)>0. The complementary term is at least -H C_R 2 theta a>=-(j_*/8)a, giving (5/8)j_*a. The normalized error is at most H epsilon B a<=(j_*/8)a, giving (j_*/2)a uniformly on s in [0,T], including s=0 with P_c(0)=I. Induction over the N-1 factors (6) from (14) gives ell_(b_(N-1))(z_N)>=(a_*/2)(1-rho)^(N-1)exp(T*sum_(m=0..N-1)lambda_(b_m)). N=1 is the empty induction. Multiplying by (j_*/2)exp(s lambda_(b_N)) gives (7). The operator-error premise (5) stays an explicit hypothesis and is stated to be undischarged."
+    },
+    {
+      "claim": "Statement fidelity: the theorem in the candidate matches target-v1 in quantifiers and conclusions.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The objects, cone definition, order of constants, three conclusions and absence of positivity, independence or semigroup premises all match the target. Line 57 says 'real bounded operators' where the target says 'bounded linear', but the B(F) norm in (5) already forces linearity. See minor findings."
+    },
+    {
+      "claim": "C6: diagnostics-v2 proxy_definition agrees with replay-diagnostics.py and the stored rows.",
+      "verdict": "PASS",
+      "reason": "The script uses initial (1,0), lambda=1+(m mod 2)/100, ell=(v+w/lambda)/2, and the update a e+(z-a e)/16, which is Pi+(I-Pi)/16. Amplitude is ell_(lambda_m)(z_(m+1)). The residual is taken in sup norm against e_lambda, aperture is 1/8, the observable is the first coordinate, and the control is amplitude>=99/100 of the previous value after the first block. The file has exactly 100 rows, m=0..99, with lambda strings alternating '1' and '101/100', which equal str() of the Fractions. All booleans are true."
+    },
+    {
+      "claim": "C6: All 100 stored rows are correct, established by rigorous induction since no execution tool was available.",
+      "verdict": "PASS",
+      "reason": "Write z_(m+1)=a_m e_(lambda_m)+t_(m+1)(1,-lambda_m), with a_0=1/2 and t_1=1/32. With k=lambda_m/lambda_(m+1) in {100/101,101/100}, exact algebra gives a_(m+1)=a_m(1+k)/2+t_(m+1)(1-k)/2 and t_(m+2)=[a_m(1-k)/2+t_(m+1)(1+k)/2]/16. Assume a_m>0 and |t_(m+1)|<=a_m/16. Since |1-k|<=1/100 and 201/202<=(1+k)/2<=201/200, a_(m+1)>=(201/202-1/3200)a_m>=(99/100)a_m>0. Also |t_(m+2)|<=(a_m/16)(1/200+201/3200)<=a_(m+1)/16. Hence the sup-norm residual is at most (101/100)a_m/16<=a_m/8, and the first coordinate is at least (15/16)a_m>0. This holds for all m>=0. Spot values: row 0 has amplitude 1/2 and residual 1/32; row 1 has amplitude 3217/6464 and t_2=217/103424."
+    },
+    {
+      "claim": "C6: The two false-general-implication witnesses are correct, and the proxy is not presented as HAM evidence.",
+      "verdict": "PASS",
+      "reason": "diag(1/2,2)diag(2,1/2)=I, though each factor has sup-operator norm 2, so per-block norm growth does not imply product growth. (0,100) has large phase norm and displacement 0, so norm does not imply a positive observable. scope, disclaimer and note lines 214-217 all limit these to finite proxies. The original C5 repair is therefore independently confirmed, not merely asserted."
+    },
+    {
+      "claim": "C7: The public Lean types and live axioms are exact, with no analytic conclusion relabelled as a kernel proof.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The pp.all display matches the source for all three theorems. All are over genuine Real with standard numerals, and the axioms are propext, Classical.choice and Quot.sound. Each conclusion is a true elementary real inequality, independently checked by hand. Only Mathlib.Tactic is imported and no custom definitions occur. The fence and note say that spectral, flow and operator estimates are not formalized. Compilation evidence is from the supplied receipt and logs, not re-executed here."
+    },
+    {
+      "claim": "C7: The residual_budget application maps q=q_T, d=nu B, e=B_Q epsilon B into (18).",
+      "verdict": "PASS",
+      "reason": "The hypotheses are discharged as follows: theta>=0 from (8), q_T<=1/8 from (9), 0<=nu B<=theta from (10), and B_Q epsilon B<=theta/4 from the second line of (12). The conclusion q(theta+d)+e<=theta/2 is exactly the bracket coefficient in (18)."
+    },
+    {
+      "claim": "C7: The cone_conversion application maps old a>0, normalized new amplitude x and residual y, with rho<1/2, into cone closure.",
+      "verdict": "PASS",
+      "reason": "With x=exp(-lambda_c T)ell_c(Dz) and y=exp(-lambda_c T)||Q_c Dz||, (17) gives (1-rho)a<=x and (18) gives y<=theta a/2. The conclusions 0<x and y<=theta x, multiplied by exp(lambda_c T), are exactly Dz in C_c(theta)."
+    },
+    {
+      "claim": "C7: The terminal_margin application maps j=j_*, K=H C_R, e=H epsilon B and the normalized observable/a into (21).",
+      "verdict": "PASS",
+      "reason": "16 H C_R theta<=j_* is (8), and H epsilon B<=j_*/8 is the last line of (12). y=exp(-lambda_c s)J(D_N(s)z)/a obeys 3j/4-2K theta-e<=y by the pre-budget form of (20) plus the normalized error bound. The conclusion j/2<=y, multiplied by a exp(lambda_c s), is (21)."
+    },
+    {
+      "claim": "C7: The three numerical controls reach real False, and local receipt scope is honest.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The sources are 1/4+1<=1/2, 1/2<=1/4 and 1/2<=1/8, all genuinely false over R. The logs show 'unsolved goals, goal False' at columns 29, 27 and 27, the exact position of 'by' in each file, so these are not API or setup errors. The receipt records exit 1 for each control, exit 0 for compile and audit, and five identical original/replay object hashes. Its status is LOCAL_DEVELOPMENT_PASS and its scope excludes package certification. The controls are numeric endpoints that do not instantiate the theorems."
+    },
+    {
+      "claim": "C8: Honesty and scope are correct, with the whole original goal active and the result only a deterministic perturbation lemma.",
+      "verdict": "PASS",
+      "reason": "Note lines 228-236, target lines 77-83 and honesty lines 14-17 and 30-34 keep open: discharge of (5), slow profile, Riesz mask error, fixed-T unit composition, final horizon, all-block event, retained-residual Gaussian cost, variational optimizer, higher dimensions, source normalization and sharp constants. No spectral foundation, companion, package, publication, novelty or whole-paper clearance is claimed. The candidate is labelled CANDIDATE and application-obligations.md is labelled UNREVIEWED."
+    },
+    {
+      "claim": "C8: Every worker concern in scientific-worker-honesty-v1 has been evaluated.",
+      "verdict": "PASS",
+      "reason": "Each listed item was independently rechecked and holds: budgets, positivity, F with constants, bounded J, compact j_*, aperture before T, normalized complement for all terminal times, rebasing by Pi_b-Pi_c, every block factor, and N=1 and s=0 indexing. No observable growth is inferred from phase norm. The repair is checked directly against diagnostics-v2 and the script."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Line 57 says 'real bounded operators' while target-v1 says 'real bounded linear operators'. This is harmless because (5) uses the B(F) norm; aligning the wording is optional.",
+      "Line 35 takes a general compact kappa, whereas local-flow (4.2) is stated for translated psi_j. Either choose kappa as such a psi_j or repeat the same finite partition expansion. The bound is immediate and this is not a gap.",
+      "The proof gives more than the theorem states: theta, nu, omega, epsilon and c_* do not depend on T, and the conclusion holds for every integer T satisfying (9). A consumer that wants to enlarge T could record this explicitly. It is optional.",
+      "Premise (5) takes a supremum over all m and t, but the proof uses only D_m(T) for m<N and D_N(s). The stronger premise is the agreed target and is not an error. A weaker premise could lighten the final-horizon obligation described in application-obligations.md.",
+      "The three Lean False controls are numeric endpoints and do not instantiate or mutate the theorems. Consistent mappings exist: for example theta=1,q=1/8,d=1,e=1 for the residual; theta=1,a=1,y=1/2,x=1/4 for the cone; and j=1,y=1/8 for the terminal. The fence does not record such mappings. They meet the stated contract but provide no mutation testing.",
+      "replay-diagnostics.py checks the first witness only through the product identity and the second only through the zero first coordinate. It does not compute the factor norm 2 or the phase norm of (0,100). Both are immediate by inspection.",
+      "Note lines 5 and 212 describe the raw preproof report's findings, including its C1-C4 result, but that report is not in the packet. statement-adjudication-v1 corroborates its C5 refusal only secondhand. This acceptance does not rely on the earlier report.",
+      "application-obligations.md is unreviewed planning and carries no proof weight. Its obligations (k positivity, slow variation, mask error, fixed-T telescoping and one chosen terminal-horizon route) were read as open items only, not verified as estimates. Its phrase 'at most T unit intervals plus a partial one' is looser than integer alignment requires, which is harmless."
+    ],
+    "required_repairs": []
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This session had no execution tool, so Lean, the replay script and hash computations were not re-run. Lean evidence rests on the supplied receipt and logs plus hand verification of the three scalar statements. The diagnostics were established by the induction above, not by running the script.",
+    "source_sha256, lean_binary_sha256, the object hashes and the Mathlib pin-to-tag correspondence could not be independently recomputed or confirmed. The receipt was checked for internal consistency only.",
+    "Accepted ground, weighted, complement, local-flow and tilt results were checked as scoped inputs (statements and applications), and their internal proofs were not re-proved, as instructed. Their external source citations and images are outside this packet.",
+    "The raw preproof audit report and diagnostics-v1 are not in the packet, so claims about them were not directly checked.",
+    "This is an AI review of a deterministic perturbation lemma. It is not human verification, a novelty audit, package certification, or clearance of the stochastic application or the whole paper. The original dimensional, sharp and normalization goals remain open.",
+    "Gold-standard self-check: NOT gold standard - this is a read-only review gate with complete reading and hand verification, but no Lean or Python re-execution. To close: re-run the local receipts and replay script at the frozen pin; autonomously doable by a tool-enabled gate."
+  ]
+}
