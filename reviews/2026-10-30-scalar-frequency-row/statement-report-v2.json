@@ -1,0 +1,102 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "reviews/2026-10-30-scalar-frequency-row/target-v2.md: full file, lines 1-52",
+    "reviews/2026-10-30-scalar-frequency-row/falsification-v2.md: full file, lines 1-24",
+    "reviews/2026-10-30-scalar-frequency-row/worker-honesty-v2.md: full file, lines 1-19",
+    "reviews/2026-10-30-scalar-frequency-row/canonical-model-context.txt: full file, lines 1-39 (the file itself is an excerpt)",
+    "reviews/2026-10-30-scalar-frequency-row/check-diagnostics-v2.py: full file, lines 1-32",
+    "reviews/2026-10-30-scalar-frequency-row/diagnostics-v2.json: full file, lines 1-579",
+    "reviews/2026-10-30-scalar-frequency-row/check-radial-diagnostics.py: full file, lines 1-18",
+    "reviews/2026-10-30-scalar-frequency-row/next-scalar-row-diagnostics.json: full file, lines 1-142",
+    "reviews/2026-10-30-scalar-frequency-row/statement-report-v1.json: full file, lines 1-93",
+    "reviews/2026-10-30-scalar-frequency-row/statement-adjudication-v1.md: full file, lines 1-22",
+    ".review/required-sources.json: full read plan, lines 1-32 (no read credit)"
+  ],
+  "checks": [
+    {
+      "claim": "C1 object and hypotheses: J_h is well defined for every xi, every h in (0,1] and every ball-growth Radon measure, and the parameter ranges match H:homog with a=alpha_0.",
+      "verdict": "PASS",
+      "reason": "The integrand is positive and continuous in lambda, so the integral is defined in [0,infinity], and eta=xi-lambda needs no density or Jacobian. Target lines 6-11 match canonical lines 7, 12 and 25-27. The gamma interval is nonempty because alpha+a<2 and a>0 force alpha<2. Riesz densities satisfy the hypothesis, and white noise is the alpha=d=1 case. C=0 forces nu=0."
+    },
+    {
+      "claim": "C1 near region: for |lambda|<=4q with q=max(1,|xi|), dropping the brackets gives a bound uniform in xi and h and at most a constant times C B_alpha(h).",
+      "verdict": "PASS",
+      "reason": "Here |eta|<=5q, and <xi> >= q gives <xi>^(2gamma-1)<=q^(2gamma-1) because 2gamma<1. Using balls centred at xi, the shell sum over |eta|<=5q is at most a constant times C for alpha<1, C(1+log q) for alpha=1, and C q^(alpha-1) for alpha>1. After the weight the powers are q^(2gamma-1), q^(2gamma-1)(1+log q), and q^(2gamma+alpha-2). All are bounded under the stated gamma range, and the log at alpha=1 is absorbed by the strict negative power. B_alpha>=1 on (0,1], so the near term fits the target."
+    },
+    {
+      "claim": "C1 far region: for |lambda|>4q, centred shells give B_alpha(h), with tail summability exactly from alpha+a<2.",
+      "verdict": "PASS",
+      "reason": "|xi|<|lambda|/4 gives 3|lambda|/4<=|eta|<=5|lambda|/4. It also gives ||xi|-|eta||>=|lambda|/2 and |xi|+|eta|>=|lambda|/2. The bracket is decreasing because a<1, and <x/2> >= <x>/2 lets the sum be written with <h2^j>^(a-1). Shells with h2^j<=1 give O(1), O(1+log(1/h)), or O(h^(1-alpha)). Shells with h2^j>1 give h^(a-1) times a geometric series in 2^(j(alpha+a-2)), which is O(h^(1-alpha))<=O(B_alpha). For |lambda|^(alpha-d)dlambda at xi=0, the integral converges iff alpha+a<2, so the word exactly is justified."
+    },
+    {
+      "claim": "C1 uniformity: K can depend only on alpha, a and gamma, and the proposed shell proof remains feasible.",
+      "verdict": "PASS",
+      "reason": "Only ball masses and one-dimensional dyadic series enter, with no covering or volume constant. The constants are geometric ratios in alpha and alpha+a, plus sup_q q^(2gamma-1)(1+log 5q) at alpha=1. The hand exponent audit found no gap and agrees with the v1 audit. This is feasibility only, and target line 38 correctly says that a written proof is still owed."
+    },
+    {
+      "claim": "C2 resonance split: the new code explicitly splits lambda=2|xi| and its width-1/h neighbours, and all relevant d1 features are nodes.",
+      "verdict": "PASS",
+      "reason": "check-diagnostics-v2.py line 19 includes 0, 1, max(0,q-1), q, q+1, 1/h, 4max(1,q), max(0,2q-1/h), 2q and 2q+1/h. In d=1, ||xi|-|eta||=0 only at r=0 and r=2q, and |xi|+|eta|=0 only at q=r=0. The kink and denominator peak sit at r=q. I recomputed all six node sets, and they match the JSON exactly, including 16 for q=8 and 127,128,129 or 128,192 for q=64. Line 17 implements both oscillatory terms, and line 18 implements both signs of lambda."
+    },
+    {
+      "claim": "C2 artifact and narrative correspondence: the counts, parameters, precision pairing, tolerance, C=2/alpha, and raw and normalized ratios are correct as reported.",
+      "verdict": "PASS",
+      "reason": "Each precision has 2x3x2=12 rows, and there are 12 relative differences. The parameters are alpha 0.5 or 1, a=0.5, gamma=0.2, xi 0, 8 or 64, and h 1 or 1/64. All 12 relative differences were hand-recomputed from the row strings and match, with maximum 1.87e-17 and therefore below 1e-10. C=2/alpha is the exact centred maximal mass for these symmetric decreasing densities, giving 4 and 2. All normalized ratios equal raw/C. Raw maximum is 14.2338 and normalized maximum is 5.2441. Field and formatting details such as '4' versus '32.0', and B '1' versus '1.0', match the code's int and mpf paths."
+    },
+    {
+      "claim": "C2 numerical values and status: rows are plausible, and 30/50-digit agreement is not represented as certified accuracy.",
+      "verdict": "PASS",
+      "reason": "Rows for xi=0, h=1 equal 4 times the lemniscate constant, 2B(1/4,1/2). Rows for xi=0, h=1/64 agree with doubled interpolations of the radial table, about 26.71 and 14.23. A rough hand estimate for alpha=1, xi=8, h=1 gives the same order as 2.138. Script line 30, falsification lines 11-12 and worker-honesty line 10 all deny certified accuracy. No uniform bound is inferred from the rows."
+    },
+    {
+      "claim": "C3 radial separation: the 15 xi=0 rows have angular mass 1, alpha=1.25 belongs to d=2 or 3 and not to a line, and no nonzero-xi alpha>1, singular, or endpoint coverage is claimed.",
+      "verdict": "PASS",
+      "reason": "3x5=15 rows are present. The script's factor 2 comes from the two equal oscillatory terms at xi=0, so the radial value 5.2441 is half the d1 full-line value 10.4882. Scales 1, 1+log(1/h) and h^(-1/4) are correct. The value 8.8195 equals Gamma(5/8)Gamma(1/8)/Gamma(3/4). The density |lambda|^(alpha-d) is radially decreasing for alpha<d, so its growth bound is centred. A homogeneous line density with exponent alpha=1.25 would fail translated growth, as stated. All statements in falsification lines 17-21, worker-honesty line 12 and JSON line 578 are true non-claims."
+    },
+    {
+      "claim": "C4 scalar implication: for 1/2<beta<min(1-a/2,(3-a-alpha)/2), h^(2-a)B_alpha(h)<=K_beta h^(2beta), the interval is nonempty, and the critical log is treated correctly.",
+      "verdict": "PASS",
+      "reason": "For alpha<1 this needs 2beta<=2-a. For alpha>1 the exponent is 3-a-alpha, which the min selects. For alpha=1 both caps are 1-a/2, and strictness gives sup h^epsilon(1+log(1/h))<infinity with epsilon=2-a-2beta>0. Nonemptiness is exactly a<1 and alpha+a<2. The alpha=1 endpoint is rightly excluded because the xi=0 row grows like log(1/h)."
+    },
+    {
+      "claim": "C4 non-claims: no operator covariance, path, Schatten, Young, new moment, source constant, or new Lean result is asserted.",
+      "verdict": "PASS",
+      "reason": "Target lines 3-4, 44 and 46-52, falsification line 24, and worker-honesty lines 14-19 limit the result to a scalar measure estimate. They leave the four phase components, E[XX*], E[X*X], temporal modulation, masked same-W compatibility, source tails and localization underived. The foundation d967ea5 is cited only for nu_R applicability, while ball growth remains a named hypothesis."
+    },
+    {
+      "claim": "C5 v1 record: the prior FAIL/HIGH and its required repair are preserved without softening, and the prior mathematical PASS checks are not treated as proof adoption.",
+      "verdict": "PASS",
+      "reason": "statement-report-v1.json in this packet says FAIL/high, has 10 checks, 8 full-source coverage entries and one required repair. Adjudication lines 3 and 7 and falsification lines 3-6 preserve it as a real author diagnostic error, with no confidence change. All mathematical conclusions in this report rest on the fresh hand audit above. The scope of this PASS excludes byte-level custody claims, which are recorded under limitations."
+    },
+    {
+      "claim": "C5 repair and goal status: the v1 repair is complete, optional v1 notes are addressed, and the original all-dimensional sharp goal remains active.",
+      "verdict": "PASS",
+      "reason": "The mandatory v1 repair was a true treatment of lambda=2|xi|. v2 satisfies it by code, regenerated data and corrected narrative. The optional items are also addressed: a=alpha_0, C=2/alpha, raw versus normalized ratios, and the scope of 14.234. Target line 49 and worker-honesty line 17-18 keep the original goal active and state that the scalar proof is unwritten, requiring its own full gate."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Numerical strings print more digits than the runs support. Using the recalled closed form 4 times the lemniscate constant, about 10.48823021716847924185935835956, the 50-digit xi=0, h=1 row is off by about 6e-27 and the 30-digit row by about 6e-17. The existing non-certification disclaimer covers this, but the long strings should not be quoted as accurate.",
+      "No normalized radial constant is recorded. The radial density r^(alpha-1)dr has centred mass r^alpha/alpha, so C=1/alpha. On that basis, the alpha=1.25, h=2^-12 row has J/(CB) about 18.47, with raw ratio 14.77 tending to about 15.66. Neither 14.234 nor 5.24 should be read as an estimate of K. The narrative correctly limits 14.234 to the d1 rows.",
+      "The scope string 'normalized radial mass alpha' in next-scalar-row-diagnostics.json is ambiguous, because the mass is r^alpha/alpha, not alpha.",
+      "Falsification line 18 calls alpha=1.25 a 'radial d2/3 covariance', while the computed object is the radial measure nu. The separation from a line measure is correct, but 'spectral measure' would be more precise.",
+      "The controls use only a=0.5 and gamma=0.2 for nonzero xi. Every behaviour at nonzero xi with alpha>1, for singular nu, or close to a threshold rests solely on the future analytic proof, as falsification lines 20-21 state.",
+      "K_beta also depends on alpha, a and gamma. The target's notation suppresses this, but no mathematical conclusion changes.",
+      "Strict gamma<1/2 or 2gamma+alpha<2 is essential for boundedness only at alpha=1 under this route. The stated range remains valid and is deliberately unoptimized."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is a repaired statement, object, feasibility and diagnostic-custody gate. It is not acceptance of a full proof, human verification, a novelty audit, or whole-paper clearance.",
+    "No scripts were run because this review had read-only file tools. Code was inspected and JSON correspondence, closed forms and interpolations were hand-checked. Nonzero-xi integrals were checked only by rough estimates or internal consistency.",
+    "The v1 files target-v1.md, falsification-v1.md, worker-honesty-v1.md, check-diagnostics.py and diagnostics-v1.json are not in this packet. Claims that they remain unchanged, and that the mathematical target is unchanged from v1, were not directly compared. The v1 report's descriptions and line counts are consistent with those claims.",
+    "The e5cd77d bindings, the 23 native archive hashes, the 275.953 second duration, the native model route, the uv execution and the source revision binding could not be verified from packet contents.",
+    "The accepted foundation d967ea5 is not in the packet. Whether actual nu_R satisfy ball growth, and with what constants, was not assessed. The target's theorem remains conditional on its explicit ball-growth hypothesis.",
+    "The relation of J_h, including its one-sided weight <xi>^(2gamma), to the actual phase operators cannot be established from the packet. The target leaves that derivation open, and no operator-level conclusion follows from this report."
+  ]
+}

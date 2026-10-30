@@ -5294,3 +5294,21 @@ product/sinc or operator control numerically claimed. Initial72 expanded120
 before freeze. Accepted d967ea5 temporal Hilbert excerpt explicitly imported,
 source/excerpt hashes verified; new T1-T3 not covered by that review.
 Seven-text statement packet, no long proof yet. Original full goal ACTIVE.
+
+### Repaired scalar statement accepted; full proof candidate — 2026-10-30
+
+Actual native Opus5.5/high v2 PASS_WITH_NOTES/HIGH,12 checks,257.443 seconds,
+ten complete sources, no required repairs. All ten live/frozen/git c32cf0c
+bindings and25 native archive members verified. Genuine v1 FAIL retained.
+Seven optional precision/normalization/coverage/notation notes adjudicated.
+Root v2 quadratures agree about1.9e-17; v1-to-v2 max change about5.3e-6,
+not certified accuracy. Mathematical target survived; no theorem fromtests.
+
+Complete new notes/scalar-frequency-row-bound.md proves proposed uniform
+weighted scalar row by near translated-ball inverse-Bessel sums and far
+oscillatory dyadic sums; critical log retained. Scalar strictbeta>1/2
+corollary. Twelve-text FULL scientific packet includes own accepted
+covariance foundation for actual uniform nu_R hypothesis matching only.
+No scalar theorem adopted before FULL gate. Temporal statement review61082
+running independently, not a proof input. Original full goal ACTIVE,
+actual two-direction operator variance/Schatten/flow/new moments OPEN.
