@@ -5279,3 +5279,18 @@ repaired statement packet frozen before long proof. Full goal ACTIVE;
 accepted covariance foundation d967ea5 retained, no scalar/operator/path/
 new moment adoption from diagnostics. Native v1 failure not quota/missing
 report and not converted to a pass. No sourcefix/contact/HPC/companion.
+
+### Temporal phase-factor statement frozen — 2026-10-30
+
+While repaired scalar statement gate runs (76691), freeze an independent
+raw-time target: T1 C1-amplitude oscillatory covariance with indicator
+completion, T2 correlated sine/cosine product, T3 continuous low-frequency
+balanced b_r/c_r factors including r=0 and fixed-(1+T)^4 bound. Actual
+operator covariance/spatial constants/BOTH variance directions remain open.
+120 local constant/linear/quadratic controls (a .1/.5/.9, h1/1/8,
+omega0/1/16/64) pass finite checks; exact constant/zero-frequency formula
+asserted. Working precision is not certified integration accuracy. No actual
+product/sinc or operator control numerically claimed. Initial72 expanded120
+before freeze. Accepted d967ea5 temporal Hilbert excerpt explicitly imported,
+source/excerpt hashes verified; new T1-T3 not covered by that review.
+Seven-text statement packet, no long proof yet. Original full goal ACTIVE.

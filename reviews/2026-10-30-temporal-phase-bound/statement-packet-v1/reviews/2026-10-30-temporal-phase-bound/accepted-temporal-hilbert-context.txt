@@ -1,0 +1,24 @@
+Fix T>0. On C_c^infinity(0,T;R) put
+
+ <tau,sigma>_a=int_0^T int_0^T tau(t)sigma(s)|t-s|^-a dt ds.
+
+This positive semidefinite form defines the real Hilbert completion H_a
+of its null quotient. To verify positivity directly, use
+
+ |t-s|^-a = Gamma_E(a)^-1 int_0^infinity lambda^(a-1)
+                                      exp(-lambda|t-s|)dlambda
+
+away from the null diagonal, and
+
+ exp(-lambda|t-s|)=int_{-infinity}^{min(t,s)}
+          2lambda exp(-lambda(t-u))exp(-lambda(s-u))du.
+
+For each lambda the quadratic form is an integral of a square. The
+Laplace identity is the change of variables v=lambda|t-s| in the defining
+Euler Gamma integral. All exchanges for smooth compact tests are valid:
+absolute integrability follows from
+sup_t int_0^T |t-s|^-a ds <= 2T^(1-a)/(1-a), followed by Cauchy-Schwarz
+(or the elementary 2|xy|<=|x|^2+|y|^2 bound). The same estimate gives
+||tau||_a^2 <= 2T^(1-a)/(1-a) ||tau||_2^2. A countable L2-dense family of
+smooth compact tests is therefore H_a-dense, so H_a is separable.
+
