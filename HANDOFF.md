@@ -1,129 +1,86 @@
-Last updated: 2026-10-30 03:23 UTC (<MACHINE>, Codex)
+Last updated: 2026-10-30 14:15 UTC (Codex)
 
-Original full upper/sharp goal ACTIVE. Actual d1masked/local causal flow,
-canonical averaged observable and growing-block stability now reviewed.
-Gaussian tilt, spectral product growth and sharp constants remain open.
+Original full upper/sharp goal ACTIVE. Full upper scale previously reviewed;
+actual d1 Gaussian tilt and fixed-family spectral groundwork now accepted.
+Sharp constant, changing-block product/event and higher dimensions remain open.
 
 ## ⏭ Next session: where to stand and what to do
 
-Freeze and test the JOINTGAUSSIANtilt contract for the ACTUALmasked driver
-and the canonical squared spatial average. Start with the concrete proposed
-contract in reviews/2026-10-29-local-flow-source-gate/next-step.md. This is
-UNREVIEWEDplanning, not accepted Gaussian/Cameron/event work.
+Stand in this repository root. Read Progress.md, then freeze and falsify
+the actual moving-block cone and positive terminal displacement-average
+contract in reviews/2026-10-30-complement-transfer/next-product-contract.md.
+That file is UNREVIEWED planning, not a product theorem.
 
-Use Z=W(psi) for a smooth compact test, v=E Z^2 and the driver covariance
-c_delta=Cov(A_delta,Z). The proposed identity has the MINUSdensity
-exp(-Z/sqrt(delta)-v/(2delta))and a PLUSdriver shift c_delta/sqrt(delta).
-Falsify first on a scalar standard normal/exponential test. A proof through
-finite Gaussian coordinate cylinders and a monotone class on the COUNTABLE
-HScoordinate sigma-field may avoid unnecessary assumptions about a global
-stationary operator or raw-field measurability of every cutoff. Compute the
-actual deterministic profile shift and raw clock/amplitude exactly.
-
-Do not repeat the now accepted physical-mask/local-flow bridge. It handles
-constant data1and the growing cone in d1through actual masked evolution,
-source limits and canonical averages. It does NOTgive growth of the entire
-product of1/delta blocks. After the tilt identity, the main missing estimate
-is a deterministic spectral cone/product bound in the actual local phase,
-including its bounded projection, complementary propagator and initial
-transient. The exact original POINTmoment/fulldimensional target is retained.
-No covariance residual discard, source-constant guess or standalone Skorohod
-moment/asymptotic work. The original full goal remains ACTIVE.
+Do not repeat the accepted Gaussian tilt, ground-state existence/gap,
+weighted projection or complementary-wave bridge. Use their exact actual F
+objects, two phase entries, constant data and fixed-family uniform constants.
+The next proof must propagate a positive growing amplitude through every
+block with actual random operator errors, then control the final fractional
+block and nonnegative smooth displacement average.
 
 ## Pre-flight checks
 
-1. Read Progress.md and notes/local-causal-young-flow.md; evidence in
-   reviews/2026-10-29-local-flow-source-gate/adjudication.md,
-   review-summary.json and final-status-binding.json. Scientificsource
-   d020a2a9e04f0ef8bcaa74de53cc8a6f76c2fbca: actual first-party Opus5.5/HIGH,
-   all13groups PASS,539.525seconds,35texts/9exact full source images,
-   no required repairs, serviceexit0 and complete native read coverage.
-2. Latest substantive adoptionb0d233cdf464c6133be9e903a5d446e1de34d3c9,
-   local/origin/<HUB> clean0/0 before this HANDOFF-only successor.
-   Recheck ancestry/dirty ownership and synchronize refs serially before
-   editing. No live reviewer/Lean job or external mathematical WIP remains.
-3. Accepted d1ORIGINAL-class physical-mask multiplier bound and actual F:
-   separable closure of compact phases PLUSconstants in local E norm,
-   E=H1/2xH-1/2. Actual B(F)driver controlled by MAXlocalHS norms, with
-   constants uniform in mask radius. Constants are not approximated by
-   globalE; kappa_Rgives the action. No global stationary bounded operator.
-4. Accepted ALLORDERmasked/local Young evolution/source compatibility and
-   causality. Physicalfreegroup only stronglycontinuous; source convergence
-   is in the uniform operator DIFFERENCE norm, not norm continuity of each
-   physical family. Speed1comes from ordinary PDE/source limits, not from
-   multiplying radius2Tinteraction kernels. No E-adjoint support shortcut.
-5. Actual noise-only canonical smooth averages are identified by FULL
-   regularized Picard/L2series convergence using UNIFORMvertexwise q_n.
-   The canonical sequence has only heat/time-Laplace widths, no optional
-   sharp spectral projection. Root canonical-input-binding.json checks both
-   literal imported statements CURRENT/frozen/prior-reviewedf9303ed EXACTLY.
-   The old average-to-original-point moment inequality remains the consumer.
-6. Growing unit-block FLOWstability holds in every finiteLp operator
-   difference, with no independence and no entire-product growth conclusion.
-   Profiles satisfy the explicit spatial C1tail-to-constant class(5.6).
-   Uniform source widths means individual probability/moment bounds or any
-   rho(delta), not a pathwise supremum over uncountably many parameters.
-   Gaussian tilt/canonical profile identity and spectral/event/constant
-   consumers remainOPEN. Original higher-dimensional operators/flows open.
-7. Seven NEWfinite Lean consumers passedC12of13HIGH: noiseOrder, Schur
-   row/column/homogeneous rescale, CLOsource-budget overlap/white/tail
-   boundaries. Eight previous InteractionDriver consumers reusedunchanged.
-   Clean compile/types/live standard3axioms/owned replay/3Falsecontrols;
-   all5owned/replay outputs (public/private/server/IR) match. Warning-only
-   first run and semicoloncleanup retained, all7signatures unchanged.
-   Uniform-p dyadic margin is explicit reviewed ANALYTICalgebra, outside
-   these Lean claims. No formalSPDE/package/Comparator/companion gate.
-8. All7minor findings adjudicated; everydisplayedformula and7newformalproof
-   bytes unchanged. Citation ceilings and source-label slip corrected:
-   shared coupling is CURRENTChen(2.9)--(2.11), NOTthe narrower CDSTtheorem.
-   CLO(1.24)regularity budget is separate from any unadopted source repair.
-   Native139/local74/source3archives checked against COMMITTEDblobs and
-   every member AFTERpush/<HUB> parity, then ONLYowned terminal raw
-   directories removed. No donor/cache/other-agent path changed.
-9. Canonical110-page/60-proofTeX/PDF entirely unchanged:
-   TeX58b092b258d4f363f8bfa0a02dcf492dcb9c13e794dbcab440bf7b0529b53b7d;
-   PDFb552a051874ac18920fd32610318404015673e50b1b035f6793bff29618c7e30.
-   WHITE13/original9unchanged. Privatewiki patch exact/canonical projectpage
-   unchanged (baseSHAd10c4f829f74eeea0f91c1a2122204365ff1d0c0f4f1cac373a17ea1db1ddb33).
-   Ten normal reference requests, latestCLOPARTIALreceipt (details below).
-   Lean-ops standalone question answered, compatibilityfriction reported.
-   L0/decision4/Agent8ownership unchanged; no new package/HPC/circulation,
-   intended source-normalization repair or correspondence authorization.
+1. Progress.md is workflow authority. Read AGENTS.md and PROJECT-GOAL.md;
+   retain all original scope/decision points and source-normalization limits.
+2. Recheck local/origin/<HUB> ancestry and dirty ownership before edits;
+   serialize remote-ref writes. Last substantive adoption 131c76889d4533d5fef0ab5b573de8e721f4a62d.
+   No external WIP or live reviewer/Lean job remains at this checkpoint.
+3. Weighted scientific source1242590: Opus5.5/HIGH18PASS,244.922seconds,
+   seven texts complete, no required repairs. Review/adjudication and raw
+   archive in reviews/2026-10-30-weighted-projection/. Proofbody unchanged.
+4. Complement scientific sourceb07d013: Opus5.5/HIGH18PASS,268.893seconds,
+   nine texts complete, no required repairs. Original invalid JSON report
+   preserved; supported unique reversible brace insertion reran all gates
+   and accepted with zero new provider calls. Evidence in
+   reviews/2026-10-30-complement-transfer/. Proofbody unchanged.
+5. Validate applications, rather than treating L2 or phase-norm growth as
+   the product/observable theorem. F includes constants separately; global
+   E is not dense in F. Complement removes only the growing ground branch.
+6. Prior accepted actual Gaussian tilt retains the residual and exact
+   raw profile/cost and original point-moment consumer. No normalization
+   guess or terminal point-evaluation on H1/2.
+7. Runtime2.1.304 is selected on launch-local PATH for account <account removed>;
+   run doctor in that same environment. No global setup modifications.
+8. Canonical TeX/PDF unchanged from2aac968. No LaTeX rebuild was needed.
+   New analytic spectral claims are NOT Lean-certified. L0/PROPOSED and
+   separate companion-creation decision4 unchanged; no cluster job.
 
 ## Concrete deliverables for the next session
 
-- One exact joint-Gaussian tilt statement for the actual masked driver and
-  canonical squared averaged observable. Fix signs, half-cost, coordinate
-  sigma-field, raw covariance/profile and fast-clock amplitude before proof.
-- A scalar falsification check and the smallest high-value Lean exponent/
-  real-power consumers, followed by independent analytic/type review.
-  Generic Gaussian/Young foundations are not the research goal.
-- After that identity, one exact spectral/product micro-contract in F.
-  A valid L2spectral theorem does not automatically bound the complementary
-  propagator/projection on this local phase or control constant data1.
+- Frozen actual two-entry moving-cone/terminal-average statement with
+  falsification controls and independent preproof statement audit.
+- Quantitative entrance, block preservation and final-observable proof
+  using accepted fixed-family spectral estimates and actual flow stability.
+- Independent scientific HIGH gate and full findings adjudication before
+  using a product estimate in a stochastic event or variational bound.
 
 ## Success criteria for the immediate next step
 
-A proved and independently reviewed Gaussian tilt at the actual driver/
-observable consumer, with the retained residual, exact cost and profile;
-or a rigorous obstruction identifying the precise failed application.
-No event growth or sharp constant may be assumed as an input. Preserve the
-full original dimensional/covariance/pointwise sharp objective.
+An exact actual-family contract, passing the named norm-versus-product and
+phase-versus-observable kill tests, with no desired product growth hidden
+in its hypotheses. Then a reviewed complete proof or a recorded obstruction
+at the precise failed step. Preserve the original full sharp/dimensional goal.
 
 ## Anti-success criteria
 
-
-
-No global-HS/volume shortcut, commutation of localization with free evolution,
-primitive-square assumption, uniformC0stability substitution or blind source
-CDSTrestart import. No point-evaluation requirement stronger than the actual
-moment observable needs, and no replacement by an averaged end target.
-No Skorohod second-moment/asymptotic development, source1.24repair,13general
-or15white claim, sourcePDF/All.bib/sibling edit, HPC, new companion/package,
-formal-SPDE/Comparator claim, canonical publication, circulation or unauthorized
-correspondence. No unchanged-confidence retry.
+No block-norm multiplication shortcut, omitted velocity, deleted decaying
+ground partner, lost projection-tail correction, constants put in global L2,
+compact Riesz potential assumption or unsupported full-product closeness.
+No Skorohod result, source1.24repair, All.bib/sourcePDF/sibling edits,
+new companion/package, HPC, novelty, whole-paper/circulation claim or
+unauthorized correspondence. No confidence-only review retry.
 
 ## What the previous sessions produced
+
+2026-10-30 resumption: inherited untracked weighted note preserved exactly,
+frozen1242590 and independently accepted18PASS/HIGH. New actual F
+complementary wave proof frozenb07d013 and accepted18PASS/HIGH after
+reversible syntax-only report recovery; adoption131c768. Local rational
+projection controls and155geometry/cutoff/threshold cases pass. Both proof
+bodies unchanged on adoption; full original/recovery archives checked.
+Next product/observable contract retained as UNREVIEWED planning. Canonical
+TeX/PDF unchanged. No live job, external WIP or new Lean/package claim.
+
 
 Operational shared-package followup2026-10-29(local):188a717records
 Agent8factorial repository's gated7f27788/evidence5393594. All9Leanfile
@@ -709,219 +666,37 @@ Latest checkpoints:
   bounded known-result reconstruction plan is fixed;actual implementation
   of remaining lemmas is NEXT,not another planning/review-only cycle.
 
+
 ## Repo & git state at handoff
 
-Latest operational coordination188a7173376049cae7637933b90416695f9e1167
-records the Agent8factorial successor/source/receipt audit and reuse fences;
-it is synchronized local/origin/<HUB> before this HANDOFF-only successor.
-Mathematical adoption below is unchanged; earlier runtime dispositionbfc76c6
-remains in the cumulative record.
-
-Latest substantive adoptionb0d233cdf464c6133be9e903a5d446e1de34d3c9 pushed
-and synchronized local/origin/<HUB>, clean0/0 before this HANDOFF-only
-successor. Scientificfreeze d020a2a9e04f0ef8bcaa74de53cc8a6f76c2fbca.
-New actual local causal flow/source observable/block stability, complete
-adjudication/native/local/source evidence, durable lessons, lean-ops reports,
-CLOpartial terminal receipt, nextplan and privatewiki proposal committed.
-No current mathematical/review WIP needs an external raw directory.
-Evidence followupf1c0840b54fb to runtime frictiona73f556e4e30is queuedFYI,
-not delivered; owner was waiting forLe. Do not resend. This does not block
-mathematical goal work; supported runtime workaround remains available.
-
-Native139/local74/source3archives were verified against COMMITTEDblobs and
-every member before ONLYowned terminal local-flow compile/source/native/
-launch directories were removed. Earlier clock-filter raw snapshots remain
-at ../../../../.local/state/Le-AI-Lab/stratonovich-clock-filter-local-raw-v1;
-its source/portable evidence are committed. Agent8ownership/source/API map
-and search coverage caveats stay in lean-progress/coordination/. No donor
-checkout/cache changed. Revalidate actual addresses/toolchains for reuse.
+Article substantive checkpoint: 131c76889d4533d5fef0ab5b573de8e721f4a62d. Local/origin/<HUB>
+were synchronized there before this HANDOFF-only successor. All substantive
+changes are committed and pushed. No foreign dirty paths remain.
+Wiki project page ../SPDEs-wiki/content/projects/stratonovich-ham-second-moment.md
+exists and was not edited. This session is an intra-round scientific
+checkpoint, not the full wiki/cold-read/round-close protocol.
+No sibling or private Lean companion repository was created or changed.
 
 ## Operating notes
 
-Latest Agent8package update (188a717): registry <PRIVATE-PACKAGE>,
-repositorychenle02/<PRIVATE-PACKAGE>, gated
-7f27788e602c190244a95b9e8e5aafd9293871f1/evidence
-53935943702decd7507c143d251bc71bb7db5ce9. All9Leanfiles EXACTLYmatch old
-d5fde707/75d9781, build/claim/comparator/coverage/bindingmetadata and full
-pins unchanged; only permitted derived formalization/docs/evidence differ.
-OFFLINEreceipt20PASS/runsLeanfalse/networkfalse checked here, no duplicate
-native/replay/Comparator. Strictsafety0owner-reported; registryPRIVATE seen,
-no liveGitHubprivacy audit. EarlierMEDIUMmathematicalreview notupgraded.
-Sum_rpow exactpremises, SELFpairs versuspermutations, limsupnu1/K0gaps and
-L0/PROPOSED/read-onlyboundary unchanged. Old Mathlib donor cache untouched.
-See lean-progress/coordination/2026-10-29-agent8/factorial-successor/.
-Acknowledgment3e02fd4eb459queuedFYI,notdelivered; do not resend.
+Exact receipts/reports/read ledgers and original native archives live under
+the two new review directories. Complement recovered receipt is distinct
+from the invalid original; do not relabel the original receipt as accepted.
+The read-only check-diagnostics.py reproducer was added AFTER review; the
+reviewer recomputed the stored rational controls by hand. It does not
+certify ODE/spectral/Sobolev/flow mathematics. All optional findings have
+explicit adjudications. Retain these qualifications in downstream uses.
 
-
-Runtime compatibility owner answer is now RECORDED/ANSWERED (bfc76c6):
-2.1.314refusal is expected fail-closed behavior, not a defect. Keep the
-retained2.1.304per-launch PATH pin and same-environment doctor. The completed
-13HIGHreview remains valid. Real2.1.314text/image fixture capture and adapter
-work are withlean-ops andLe; proposed,not approved/implemented in the reply.
-No provider calls, allowlist/runtime/auth/globalPATH edits made here.
-See lean-ops/runtime-owner-response.md in the current review directory.
-Acknowledgmentf2b74900eed2is queuedFYI,not delivered(ownerwaitingLe); do
-not resend. Previous report/pending snapshots below are historical, retained.
-
-
-New durable operational state2026-10-29/30UTC:
-- Le explicitly requests durable lessons and lean-opsfriction reporting.
-  See reviews/2026-10-29-local-flow-source-gate/lessons.md and lean-ops/.
-- @lean-ops fresh-resolved <MACHINE>/n33-lean-pkg. Thread6a7b18143738answered:
-  receipt systemd/receipt check/offline coverage need no registry, but
-  require minimal committed Lake metadata for the owned source. These are
-  source-bound nongated receipts; register/gate/page/Palomar/comparator
-  registry path waits for companion approval. Optional embedded migration
-  notperformed; incoming advice grants no new package/companion authority.
-- Separate a73f556e4e30reported defaultCLI2.1.314unsupported read ledger;
-  exact dryrunexit6blocked-runtime-preflight before provider. The guard is
-  working, not an acceptance bug. Task-local supported2.1.304works. Evidence
-  committed atb0d233c under lean-ops/runtime-preflight-receipt.json and
-  default-runtime-preflight-argv.json. Do not weaken coverage or change
-  global runtime/PATH/auth; any future compatibility advice is nonblocking.
-- Current lean-pkg0.23.0correctly gives completefalse with7unsearched local
-  checkouts. Historicalissue376is FIXED; do not re-file or infer absence.
-- Tenth exact reference ticket
-  tk-20261029-194547-codex-stratonovich-local-flow-reference,
-  canonicalchapouto.li.ea:26:fourier, arXiv2607.07618v1. ReceiptPARTIAL:
-  all6publication/remoteparity anddigestPASS/lintclean reported, independent
-  scientific ingest review unavailable. SourcePDFc800120be765c6de799e299b79bfa218c7e8b079c622a7303223f40976ece9d6.
-  Our13HIGHgate reads SELECTED9source pages/interfaces, not a full100page
-  paper/ingest/novelty audit. No force/repair/requeue/servicerestart.
-
-
-
-
-
-
-
-
-Original overall goal remains ACTIVE without a token budget. Do not declare
-completion of the project from the nonsharp upper result. Intended source
-first-moment normalization remains unknown; its scoped printed contradiction
-was independently accepted,but no correction is adopted. All numerical L_star
-calibrations carry explicit premises. New upper bound uses no such constant.
-
-Primary author PDF SHA256:
-5f7385ca451e643a1f3ff31835e4ee52b2708b5d2e3652eec3fb5d3958b97b6c.
-CP arXiv1702.00668v1 SHA256:
-0e33b65b3fab07632364111290e380b0696d7ace8168c9b834028de57d943c53.
-Use this source version's numbering and title,not the journal's different title.
-
-Actual wiki-first CLI recon and synthesized-page reading were performed.
-Seven historical queue IDs are retained without prefix matching:
-- tk-20261028-081542-codex-stratonovich-covariance-recon
-- tk-20261028-081544-codex-stratonovich-covariance-recon
-- tk-20261028-081547-codex-stratonovich-covariance-recon
-- tk-20261028-081549-codex-stratonovich-covariance-recon
-- tk-20261028-110644-codex-stratonovich-phase-recon
-- tk-20261028-110645-codex-stratonovich-phase-recon
-- tk-20261028-110645-codex-stratonovich-phase-recon-2
-Normal reference authorization does not authorize project publication or
-messages to Le/coauthors/the source author. No such message was sent.
-
-Launch-local PATH selects the supported existing Claude2.1.304 binary under
-.local/state/Le-AI-Lab/swe-white-time-resume-20261024/runtime/node_modules/
-@anthropic-ai/claude-code-linux-x64. No persistent system/auth/provider changes.
-Future system/dotfile/Neovim setup belongs to Agent21;resolve via amsg. Last
-actual Agent21lookup was UNREGISTERED;do not substitute another agent.
-
-For vifm PDF opening without DISPLAY,use the existing desktop helper:
-:!<HOME>/mydotfiles/bin/wm pdf %c --no-name
-The current full-upper theorem is on page91;new lower propositions are on
-pages98--99;type/static-continuity results are onpages102--103. The new
-clock section starts onpage103 of the110page PDF. The intentionally open viewer
-was previously placed on <MACHINE> tag4;no persistent display setup was changed.
-
-Eighth,NONBLOCKING future ticket(exact remote id verified):
-- tk-20261029-054257-codex-stratonovich-future-reference
-  gaudreau-lamarre.ghosal.ea:23:moment,DOI10.1090/tran/8978,
-  arxiv2206.13622v2. Future regularization/large-time PAM methodology only;
-  no wave theorem transfer. Metadata/abstract screened,not full proof read.
-  Guard rejects the new-metadata key prediction;existing-citekey-only intake
-  preserves the already-held published identity. Do not force or duplicate.
-  The normal reference request follows Le's standing enqueue directive;
-  it does not authorize project-status publication or source-author messages.
-
-Ninth,NONBLOCKING correct-edition custody request(exact remote id verified):
-- tk-20261029-071443-codex-stratonovich-edition-custody
-  kallenberg:02:foundations,SecondEdition2002,DOI10.1007/978-1-4757-4015-8.
-  The heldPDF is actuallyThirdEdition,not a valid2002theorem source. Same
-  hash on both hosts. Preserve it;normal queue must authenticate trueSecond
-  or return honest source ceiling. No force/repair override or 6repo direct
-  edits. Pending intake is not authentication;prove the basic criterion
-  directly if needed. Normal reference authorization remains separate from
-  project-status publication or external author/coauthor correspondence.
-
-
-Lean local verification does not reopen companion creation. Reuse exact pins
-and check recorded public types/premises. Measurable Integrable is stronger
-than a formal finite integral value;do not exploit Bochner junk values. The
-nonzero measure is needed for strictness. Reviewer v1wrong-target/v2unsupported
-CLI preflights have no scientific verdict;v3used supported existing2.1.304.
-No global runtime/dotfile/provider change was made.
-
-
-For long native review jobs,use a persistent user service in background.slice,
-with explicit subscription-review-cli executable,pinned supported ClaudePATH,
-and doctor INSIDEthe service before provider launch. Foreground unifiedexec
-can lose the driver while the provider remainslive. Confirm actual process/
-service terminal state and receipt;do not restart merely on observationtimeout,
-forge an exit0or count a detached favorable report as a cleared review.
-The current v5archive preserves its exact working launch/collector template.
-
-New research note notes/degree-four-clock-probe.md is terminal-readable;it
-contains the9termcomparison not yet integrated into the canonical PDF.
-Do not rebuild/alter that PDF merely to refresh its timestamp. Its source
-and all60proofs are unchanged in this round.
-
-
-Newterminalnotereviewexplicitlychecked5Leanpublictypesasinputs,leavingthe
-physical/clock/positive-mixtureidentificationsinformal. Do not equate a
-compilerreceiptwith the modelapplication. Thepositive47termconsumerincludes
-itsdenominatorsandsqrt. SourceA=scomponentcaseandlambda0endpointareexplicit.
-Tinycomponentquadraturefailedrelativeprecisionat~1e-261;factoringanexact
-commonexponentialfixeditwithoutloosening1e-45. Bothscripts/driversretained.
-The terminalproofisnotes/terminal-cross-comparison.md,notinthecanonicalPDF.
-
-
-The middle proof is notes/middle-cross-comparison.md. Its exact source/type/
-application boundaries, retained failures, negative controls, final binding
-and durable lessons are in reviews/2026-10-29-middle-cross/. Do not reprove
-its kernel-certified300-term identity by LLM or infer SPDE formalization from
-it. Its positive survival integral is kept combined through the apparent
-pole; signed pieces are not separately fractionally averaged. The erased
-root shift is a proved shortcut no-go, not a counterexample to J<=I.
-
-
-Projection-residual proof: notes/projection-residual-obstruction.md. Its exact
-source addendum, six-check primary and nine-check focused source/limit gates
-are in reviews/2026-10-29-projection-residual-screen/. Do not collapse them
-into a single fresh15-check whole-proof review. The full fixed-order parent
-construction remains a named prior input, not a freshly audited110-page proof.
-Root checked source/rendering/hash and archive provenance; reviewers did not
-execute Lean or independently recompute those hashes. The next direct-event
-plan is not a proved wave stability theorem or a new source correspondence.
-
-
-Direct-event proof is notes/direct-event-calibration.md; source/evidence and
-scope binding live in reviews/2026-10-29-direct-event-calibration/. Exact
-full-class scaling and scalar degree0calibration are distinct results.
-Do not promote the latter to the rough model or call the former a sharp
-bound. Formula(H) is an unproved event micro-contract, not a conditional
-formal theorem claiming the target. The next held Balan--Tudor read is
-selected additive-position coverage; no velocity-phase result has been
-checked. Its source path/hash and precise next test are in next-step.md.
-
-
-Phase-response proof: notes/phase-response-test.md, with exact scope/evidence
-in reviews/2026-10-29-phase-response/. Do not equate its localized first
-operator with an all-order flow, or its balanced phase with bounded point
-evaluation. The averaged-observable inequality is what retains the ORIGINAL
-point moment target. The next driver/path/Young/cone/event plan is explicitly
-unreviewed. Before a major flow theorem, check existing primary operator-valued
-Young wave constructions; the heldCDSTgap is not novelty evidence.
+Prior Gaussian scientifice51432c, ground scientific45e1b13, weighted1242590,
+complementb07d013 are different scoped evidence identities. None is
+whole-paper/novelty/human/publication clearance.
 
 ## Risks to monitor
 
-[held back: collaborators' unpublished work]
+Moving-profile cones need actual parameter continuity and random-error
+stability, not merely each frozen block's spectral gap. The entrance and
+final fractional block require positive terminal displacement control.
+Riesz masks need a separate W1infinity perturbation estimate. A separable
+positive tilt is only a lower subclass, not the full variational optimizer.
+Original higher dimensions, sharp upper/lower constant and intended source
+normalization remain open. Respect original stop/report decision points.
