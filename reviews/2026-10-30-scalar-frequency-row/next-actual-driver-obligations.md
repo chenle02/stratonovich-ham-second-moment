@@ -63,3 +63,18 @@ Check all signs, Fourier normalization and TWO variance directions against
 actual matrix multiplication before using. For r<=1, b_r=t<r>int_0^1
 cos(vrt)dv; for r>=1 use the bounded coefficient <r>/r and the sine.
 No actual operator theorem or new formal certificate is claimed here.
+
+Possible self-contained finite Gaussian Schatten target (UNREVIEWED):
+For finite rectangular complex matrices A_k, real independent standard
+Gaussians g_k, even p=2m>=2, test
+ (E||sum g_k A_k||_Sp^p)^(1/p)
+ <=sqrt(p-1) max(||(sum A_k A_k*)^1/2||_Sp,
+                 ||(sum A_k* A_k)^1/2||_Sp).
+Freeze/falsify on noncommuting/negative-spectrum/rectangular cases first.
+An elementary Gaussian integration-by-parts recursion for Hermitian blocks
+[0,A;A*,0], spectral-basis weighted AM-GM and finite trace Holder may avoid
+importing an external noncommutative theorem. This is only a proposed route;
+all finite inequality/IBP and infinite-dimensional passage need independent
+proof gates. It does not yet supply compact localization, variance matching,
+Gaussian operator convergence or time paths. No finite matrix proxy is
+claimed as an actual continuum operator estimate.

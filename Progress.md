@@ -5312,3 +5312,18 @@ covariance foundation for actual uniform nu_R hypothesis matching only.
 No scalar theorem adopted before FULL gate. Temporal statement review61082
 running independently, not a proof input. Original full goal ACTIVE,
 actual two-direction operator variance/Schatten/flow/new moments OPEN.
+
+### Temporal statement accepted and full candidate — 2026-10-30
+
+Actual native Opus5.5/high15 checks PASS_WITH_NOTES/HIGH,219.304 seconds,
+seven complete sources/no required repairs. All seven live/frozen/git
+b6861b8 bindings and22 native archive members verified; actual model,
+route/coverage/accepted checked. Five optional scope/complexification/
+Bochner/constant/diagnostic notes explicit in new full proof candidate
+notes/temporal-phase-bound.md. New lag-IBP estimate C0=16/(1-a), correlated
+four-mode product and continuous low-frequency factors with C1=4*3^(1-a)C0,
+fixed(1+T)^4. No actual spatial kernel/variance matching implied.
+Ten-text FULL scientific packet frozen, no new temporal theorem adopted
+before full gate. Separate scalarFULL56451 running; scalar not an input.
+Original all-dimensional sharp/source goal ACTIVE, no new Lean/PDE/noise/
+sourcefix/contact/HPC/companion/Skorohod/publication claim.

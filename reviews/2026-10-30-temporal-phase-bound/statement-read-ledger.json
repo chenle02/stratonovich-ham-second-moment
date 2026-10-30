@@ -1,0 +1,277 @@
+{
+  "schema": "le-ai-lab.review-read-ledger/1",
+  "coverage_verified": true,
+  "claude_code_version": "2.1.304",
+  "events_sha256": "cf86d1bebd667670e10c1d1b511e910afcd70087abda5321d25134f45c20b11d",
+  "events_hash_bound_to_receipt": true,
+  "stream_workspace": "${HOME}/.local/state/Le-AI-Lab/stratonovich-temporal-phase-statement-v1/workspace",
+  "required_sources_sha256": null,
+  "continuation": false,
+  "continuation_credit": null,
+  "proves": "Each credited line was returned, numbered and byte-equal to the frozen workspace file, in a tool_result paired with a Read or line-numbered content-mode Grep call of the hash-bound provider stream.",
+  "does_not_prove": "Attention, understanding, or retention: a credited line may have been skimmed, ignored, or dropped by context compaction before the report was written. Uncredited lines may still have been seen in a form the ledger cannot attribute (previews, unnumbered output, subagents).",
+  "sources": [
+    {
+      "path": "reviews/2026-10-30-temporal-phase-bound/target-v1.md",
+      "sha256": "47d1e5cd60cfd16d7091511708a4d09d939a4d016d32ec5e28d308ba316e8f6c",
+      "total_lines": 52,
+      "required_ranges": [
+        [
+          1,
+          52
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          52
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "reviews/2026-10-30-temporal-phase-bound/falsification-v1.md",
+      "sha256": "2f592402cf244b43195ad5b889edb0161211f8dbc7f67d0e2b77cf414929594f",
+      "total_lines": 18,
+      "required_ranges": [
+        [
+          1,
+          18
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          18
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "reviews/2026-10-30-temporal-phase-bound/worker-honesty-v1.md",
+      "sha256": "3ca334208c7340bbb9249c7fde3247ff85356b2da317e8bb98256aedaf6d389a",
+      "total_lines": 12,
+      "required_ranges": [
+        [
+          1,
+          12
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          12
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "reviews/2026-10-30-temporal-phase-bound/accepted-temporal-hilbert-context.txt",
+      "sha256": "79ea4755a49c2d45247422d19aec564dafb22a3ee7a5a5534b90f2242ae6664e",
+      "total_lines": 24,
+      "required_ranges": [
+        [
+          1,
+          24
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          24
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "reviews/2026-10-30-temporal-phase-bound/accepted-context-binding.json",
+      "sha256": "93a15859877b6ad50262c9b226452a7afdecb37e09f1cc0b0d8d5d3401bbb459",
+      "total_lines": 10,
+      "required_ranges": [
+        [
+          1,
+          10
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          10
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "reviews/2026-10-30-temporal-phase-bound/check-diagnostics.py",
+      "sha256": "935961df3b0be2c1a44e47cc2d17e514ae6695e3406e1116c11e6a152cee89bf",
+      "total_lines": 29,
+      "required_ranges": [
+        [
+          1,
+          29
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          29
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "reviews/2026-10-30-temporal-phase-bound/diagnostics-v1.json",
+      "sha256": "f8698ccb3db3dc67a0cbe02cf878af3a2983636b296ef04034a249b54685e4c2",
+      "total_lines": 1207,
+      "required_ranges": [
+        [
+          1,
+          1207
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          1207
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    }
+  ],
+  "tool_calls": [
+    {
+      "id": "toolu_01SBtFTCCqXC5SfvynJVRsPM",
+      "tool": "Read",
+      "source": ".review/required-sources.json",
+      "plan_copy_read": [
+        ".review/required-sources.json"
+      ],
+      "uncredited": "runner-owned plan copy (.review/): never read credit",
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01DX1Uk1wuy8x8nX64aSp8zG",
+      "tool": "Read",
+      "source": "reviews/2026-10-30-temporal-phase-bound/target-v1.md",
+      "credited": {
+        "reviews/2026-10-30-temporal-phase-bound/target-v1.md": [
+          [
+            1,
+            52
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01NYFDsfjHE4S7XK9DXoY9cH",
+      "tool": "Read",
+      "source": "reviews/2026-10-30-temporal-phase-bound/accepted-context-binding.json",
+      "credited": {
+        "reviews/2026-10-30-temporal-phase-bound/accepted-context-binding.json": [
+          [
+            1,
+            10
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01QuYMrrmd8yjwL3a6kFYLYy",
+      "tool": "Read",
+      "source": "reviews/2026-10-30-temporal-phase-bound/accepted-temporal-hilbert-context.txt",
+      "credited": {
+        "reviews/2026-10-30-temporal-phase-bound/accepted-temporal-hilbert-context.txt": [
+          [
+            1,
+            24
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01YNdx3eMBaa2vuCGw8eYM4v",
+      "tool": "Read",
+      "source": "reviews/2026-10-30-temporal-phase-bound/check-diagnostics.py",
+      "credited": {
+        "reviews/2026-10-30-temporal-phase-bound/check-diagnostics.py": [
+          [
+            1,
+            29
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01WtvWprQsfVfFgCUALBdKyx",
+      "tool": "Read",
+      "source": "reviews/2026-10-30-temporal-phase-bound/diagnostics-v1.json",
+      "credited": {
+        "reviews/2026-10-30-temporal-phase-bound/diagnostics-v1.json": [
+          [
+            1,
+            1207
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01R7tFf99JSwWt52uAbTsV1L",
+      "tool": "Read",
+      "source": "reviews/2026-10-30-temporal-phase-bound/falsification-v1.md",
+      "credited": {
+        "reviews/2026-10-30-temporal-phase-bound/falsification-v1.md": [
+          [
+            1,
+            18
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_012Fb4WHsB4YVZi23iEC1mnw",
+      "tool": "Read",
+      "source": "reviews/2026-10-30-temporal-phase-bound/worker-honesty-v1.md",
+      "credited": {
+        "reviews/2026-10-30-temporal-phase-bound/worker-honesty-v1.md": [
+          [
+            1,
+            12
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01MbJ7bYJeFP8NcPS6wV7Skb",
+      "tool": "Grep",
+      "uncredited": "Grep output_mode 'count' returns no source text",
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01Dh1UP8GDu1ASfXa3DgKJpW",
+      "tool": "Grep",
+      "uncredited": "Grep output_mode 'count' returns no source text",
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_0176WTE62DmsjCPrNNxU64LG",
+      "tool": "Grep",
+      "uncredited": "Grep output_mode 'count' returns no source text",
+      "stream": "attempt"
+    }
+  ],
+  "diagnostics": []
+}

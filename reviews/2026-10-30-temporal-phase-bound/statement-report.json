@@ -1,0 +1,111 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "reviews/2026-10-30-temporal-phase-bound/target-v1.md: full, lines 1-52",
+    "reviews/2026-10-30-temporal-phase-bound/falsification-v1.md: full, lines 1-18",
+    "reviews/2026-10-30-temporal-phase-bound/worker-honesty-v1.md: full, lines 1-12",
+    "reviews/2026-10-30-temporal-phase-bound/accepted-temporal-hilbert-context.txt: full, lines 1-24",
+    "reviews/2026-10-30-temporal-phase-bound/accepted-context-binding.json: full, lines 1-10",
+    "reviews/2026-10-30-temporal-phase-bound/check-diagnostics.py: full, lines 1-29",
+    "reviews/2026-10-30-temporal-phase-bound/diagnostics-v1.json: full, lines 1-1207",
+    "Read-plan file .review/required-sources.json: full, lines 1-23 (not a packet source)"
+  ],
+  "checks": [
+    {
+      "claim": "C1: raw complexified H_a object and admission of 1_I A through L2 approximation are well posed for every finite T and I=[s,s+h] in [0,T]",
+      "verdict": "PASS",
+      "reason": "The excerpt's Laplace identity, square representation and Schur bound hold on hand check. The Schur constant 2T^(1-a)/(1-a) gives L2 continuity, so the bounded function 1_I A e^{i omega t} is admitted and its norm equals the absolutely convergent double integral. The complex norm is ||Re f||^2+||Im f||^2 because the imaginary cross term cancels by kernel symmetry. No derivative of the zero extension is used; only A' on I enters."
+    },
+    {
+      "claim": "C1: C_a in T1 is independent of T, s, h, A and omega",
+      "verdict": "PASS",
+      "reason": "The T-dependent Schur constant is used only to admit the object. The bound is computed from the limiting double integral on I, which involves only h, M, D and h*omega. Hand check gives a finite constant depending only on a, of order 1/(1-a). Dependence on s enters only through M and D. Any real omega is allowed because the bracket is even."
+    },
+    {
+      "claim": "C2: lag identity, signs and autocorrelation bounds in T1",
+      "verdict": "PASS",
+      "reason": "With v=t-u>0, the form is int_0^h v^-a e^{i omega v} c(v) dv plus its conjugate, which equals 2Re of that integral, using the target's c. Leibniz gives c'(v)=-A(s+h)conj A(s+h-v)+int_s^(s+h-v) A'(u+v)conj A(u)du. Hence |c|<=(h-v)M^2<=hM^2, |c'|<=M^2+hMD and c(h)=0, all as stated."
+    },
+    {
+      "claim": "C2: scale h^(2-a), factor (M+hD)^2 and exponent a-1 follow from the proposed split",
+      "verdict": "PASS",
+      "reason": "Set v=hy, C(y)=c(hy)/h and Omega=omega h. This gives prefactor h^(2-a), |C|<=M^2, |C'|<=M^2+hMD and C(1)=0. For |Omega|<=1 the integral is bounded by M^2/(1-a), and the bracket is bounded below by 2^((a-1)/2). For |Omega|>1, the part on [0,1/|Omega|] gives M^2|Omega|^(a-1)/(1-a). The boundary term at 1/|Omega| and the a y^(-a-1) term each give at most M^2|Omega|^(a-1). The C' term gives (M^2+hMD)/((1-a)|Omega|), which is at most (M^2+hMD)|Omega|^(a-1)/(1-a) because |Omega|>1. Finally M^2+hMD<=(M+hD)^2. The hand check shows no false exponent, and h<=1 is not needed for T1."
+    },
+    {
+      "claim": "C3: T2 follows from a signed exponential product and the Hilbert triangle/Cauchy-Schwarz inequality, without an independence claim",
+      "verdict": "PASS",
+      "reason": "Each product P_r Q_rho expands into four exponentials with frequencies +-(r+rho) and +-(r-rho), each with coefficient of modulus 1/4. Writing X and Y for the T1 norm bounds at frequencies r-rho and r+rho, the triangle inequality gives norm<=(X+Y)/2, and then norm^2<=(X^2+Y^2)/2. This retains the sum of both brackets and treats every coefficient phase and cross-correlation by a worst-case bound. Negative frequencies are covered by T1. The target explicitly disclaims cross-frequency independence."
+    },
+    {
+      "claim": "C4: b_0=t is the continuous value and the low-r cosine-average identity holds, including r=0",
+      "verdict": "PASS",
+      "reason": "int_0^1 cos(vrt)dv=sin(rt)/(rt) for rt nonzero, so t<r>int_0^1 cos(vrt)dv=<r>sin(rt)/r. At r=0 it gives t, which is also the r to 0 limit. No division by a tiny r occurs and no low mode is deleted."
+    },
+    {
+      "claim": "C4: high-r bounded coefficient, low/high cases and frequency-shift comparability with h<=1",
+      "verdict": "PASS",
+      "reason": "For r>=1, <r>/r<=sqrt2. For r<=1, <r><=sqrt2 and the averaged frequency vr lies in [0,r]. In mixed and double-low cases the shift of r-+rho is at most 2, so the h-scaled shift is at most 2 when h<=1. Peetre's inequality gives termwise bracket comparability with factor at most (sqrt10)^(1-a), uniformly in v, w, r and rho. L2 continuity of v to the integrand gives the H_a-valued normalized average and Minkowski inequality."
+    },
+    {
+      "claim": "C4: amplitudes A=1,t,t^2 make (1+T)^4 feasible in T3",
+      "verdict": "PASS",
+      "reason": "Since s>=0 and s+h<=T, A=1 gives M+hD=1. A=t gives M+hD<=T+h<=1+T. A=t^2 gives M<=T^2 and D<=2T, so M+hD<=T^2+2T<=(1+T)^2. Squaring gives at most (1+T)^4 in every case. All 3x3 regime combinations of c, high b and low b are covered, including r=rho=0, where the integrand is t^2."
+    },
+    {
+      "claim": "C4: T3 is scoped as a temporal factor estimate and not as a spatial operator covariance theorem",
+      "verdict": "PASS",
+      "reason": "Target lines 44-46 and 49-50 explicitly leave open the normalized 2x2 kernel and signs, the spatial Fourier constants, both operator variances, and the Gaussian operator, path, Schatten, Young, source-cutoff and moment results. T3 is proved only for the factor family it defines explicitly."
+    },
+    {
+      "claim": "C5: 120 rows and the stated expansion from 72",
+      "verdict": "PASS",
+      "reason": "The grid 3x2x4x5 gives 120, and a count finds 120 amplitude rows, of which 24 are constant and 48 are quadratic, leaving 48 linear. The earlier grid with constant and two linear rows gives 3x2x4x3=72, which matches the arithmetic in the falsification note. The historical sequence and the statement that no failed run was discarded are worker statements and are not independently verifiable."
+    },
+    {
+      "claim": "C5: exact constant identity, polynomial autocorrelations, lag substitution and candidate scale in the script",
+      "verdict": "PASS",
+      "reason": "The linear and quadratic autocorrelation formulas were re-expanded by hand and match c(v) for A=t and A=t^2. With b=1/(1-a), the substitution v=h z^b gives v^-a dv=h^(1-a) b dz. The M and D formulas match, e.g. scales 4, 16, 9 and 225 at h=1. Spot values agree with exact or asymptotic hand calculations: omega=0 constant rows match 2/((1-a)(2-a)); a=.5 linear S=0 gives .7619; a=.5 omega=1 gives 2.5557; a=.5 omega=64 gives about .315; a=.9 omega=64 gives about 12.40; a=.1 omega=64 gives about .0084. Row ratios stayed within the a-dependent constants found by hand check."
+    },
+    {
+      "claim": "C5: numerical status and scope are reported honestly",
+      "verdict": "PASS",
+      "reason": "The script and JSON state working precision 40 and 'not certified quadrature accuracy'. Falsification-v1 disclaims arbitrary complex amplitudes, negative omega, product phase norms, small-frequency sinc and operator variance, and states that finite rows do not prove the all-frequency bound. The code computes none of these, so no such coverage is falsely claimed."
+    },
+    {
+      "claim": "C6: accepted context is an explicit own import only, and new T1-T3 are not covered by the old review",
+      "verdict": "PASS",
+      "reason": "The excerpt's start and end-exclusive markers match the binding. Worker-honesty and the binding both name d967ea5 and restrict the import to Section 4 positivity and L2 continuity. The binding records new_T1_T3_not_covered_by_old_review=true, and the target labels T1-T3 UNREVIEWED and proposed. The modulation, product and sinc arguments do not rely on the older review beyond admitting the object."
+    },
+    {
+      "claim": "C6: original goal stays active with no scalar-row dependency or scope escalation",
+      "verdict": "PASS",
+      "reason": "The hand derivation of T1-T3 uses no scalar-row result, consistent with target line 48-49 and worker-honesty. The target keeps the original goal active and disclaims source repair, Skorohod, contact, HPC, new Lean, companion, public release and whole-paper clearance. Falsification-v1 and worker-honesty add no contrary claim. Schatten, path, Young and new moment results are disclaimed at target line 49-50."
+    },
+    {
+      "claim": "Overall: T1-T3 contain no false quantifier, exponent or missing object at statement level, and the sketched routes are feasible",
+      "verdict": "PASS",
+      "reason": "All three bounds were derived independently by hand along the proposed routes, including endpoint and sign checks. No counterexample arose. This is a statement and feasibility verdict; it does not replace the required full-proof gate."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "T2 and T3 do not explicitly restate that C_a depends only on a, and so is uniform in r, rho, T, s, h, A and the choice of F and G. The phrase 'C_a can be increased once' implies this. Stating it in the long-proof version would remove any ambiguity.",
+      "The label 'Actual balanced interaction factors' cannot be checked against the source kernel because the source definition is not in the packet. T3 is mathematically self-contained for the family it defines and disclaims the 2x2 kernel. Any later use must verify the factor set and time argument. If the kernel also contains a factor such as r sin(rt)/<r>, or uses shifted time, T3 as written does not literally name it. T2 would handle a bounded-coefficient sin factor, but this is a later matching obligation.",
+      "The complexification and indicator admission are small new steps beyond the real-form excerpt. They are immediate from Schur continuity and kernel symmetry, and the long proof should write them out. The same applies to H_a-valued measurability of the normalized averages in T3.",
+      "Target line 51 says 'all-dimensional sharp/source goal', while worker-honesty says 'd2/3 driver/moment/sharpupper/source work'. Both keep the goal open and the packet does not reconcile the wording, but this affects no T1-T3 claim.",
+      "The diagnostics use real amplitudes, nonnegative omega and scaled frequencies h*omega of at most 64. They do not stress complex amplitudes, the product or the sinc step. This is already disclosed and is not a defect. The evidence for T1-T3 comes from analysis, not from these rows."
+    ],
+    "note": []
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is an AI statement-gate review, not human verification, a novelty audit, a full-proof certification or a whole-paper certificate. T1-T3 still require their separate long-proof gate.",
+    "No execution tool was available, so check-diagnostics.py was not rerun. The 120 stored rows were read in full and counted; the formulas and selected values were hand-checked, not every row recomputed.",
+    "The SHA-256 values in the binding, source revisions d967ea5 and b6861b8, and the source note were not independently verifiable from the packet. The excerpt mathematics was checked directly, but its identity with the accepted source section rests on the binding.",
+    "The scalar row, the source kernel and the operator variances are outside the packet and were not assessed. The worker's run history, including 'no failed run discarded', is unverifiable."
+  ]
+}
