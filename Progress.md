@@ -4720,3 +4720,24 @@ and source correspondence, not another auxiliary scaling restatement.
 Original intendedsource normalization, sharp upper and higherdimensions
 remain open/fullgoalACTIVE. No canonicalTeX/PDF/wiki/contact edits or
 whole-paper/cold-read/novelty/circulation clearance.
+
+## Positive occupation-control approximation target — 2026-10-30
+
+Previousgoalturn PROGRESS: actualgeneralpositive smooth stochastic/
+variational consumer adopted atdaf8f51 after24HIGHchecks. Currentclean
+local/origin/<HUB>70515b2/0:0 verified; advisoryaudit30stimeout,
+mandatory focusedchecks passed. Fullgoal retained ACTIVE.
+
+Next proposedclass X=L2(time;L1intersectL2space),actualrawconvolution/
+WHOLEH1Rayleighrate, positivecost/rateapproximation and equality of raw
+positivecontrol supremum, with finiteenergyoccupationrho=g² inclusion.
+No longproof yet; independentstatement/class/source audit beforeproof.
+Falsification uncovered genuine wrongtopology: legalRiesz a=alpha1/2,
+psi_n=n^-5*1t(0,1)*1x(0,n8) has spacetimeL2²=n^-2 butv=(64/9)n².
+L2-only covariancecontinuity withgrowingsupport FAILS; X controls mass.
+Fiveexactspreadingcases andsixwhitecutoff/renormalization controls pass,
+finitearithmetic only, not density/spectral/SPDE proof. Failure retained.
+Target/falsification/code/JSON/localrecon and13textpacket frozen in
+reviews/2026-10-30-occupation-approximation/. Roughrate is variational,
+not an H2roughoperator/eigenflow or a countableproxywithoutcoreequality.
+No sourcevalue/normalizationfix, firstmean/Jensen/signed/companion claim.
