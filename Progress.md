@@ -6,6 +6,7 @@
 
 ## Current state
 
+- **Live actuald2/3HS preproof:** fullspace/smoothmaskedmean/EsFourierkernel/Gaussiancovariance obstruction target atd5c4663; actualOpus5.5/high,15texts+2images,session46516/native stratonovich-dimensional-hs-statement-v1. No no-goadopted; no originalmoment/Gupperfailure or replacementnorm claimed. Poll samehandle.
 - **Latest GLOBALd1lower:** Omega>1 andexplicitgainV(a/2)^(-1/k) ORIGINALpointlower(18) forALLadmissibled1Riesz/whitea/alpha/amplitudes, withown E_star^O, accepted7groups/HIGH atee188ab (447.816seconds,31texts+2images). EntireactualGamma/kernel/rationalproof and4finitecompleteQ/D/Vtype/applications checked. This closes d1LOWERcomparison only; source/domain/label/intendednormalization, sharpupper andd2d3 remainOPEN. NEXT: freeze/falsify actualhigher-dimensional firstdriver/flow norms, preservingoriginalcovarianceclass andsource-independentretainedGupper.
 - **Latest actual damped lower result:** temporalBeta/legalX/staticlower/dampedenergy GENERALOmega pointcomparison and whitealpha1,a1/2 directpoint theorem(16), exactzeta=(2418683125/2415919104)^(1/8)>1, accepted7groups/HIGH at8883160 (295.426seconds,28texts+2images). OwnE_star^O explicitmeaningfuldomain; source/domain/label matching and normalization unadopted. Threefinite scalar applications checked. GlobalOmega nowclosed atee188ab; NEXToriginalhigher-dimensional/sharpupper work. Sharpupper/originald2d3/exactlimit/fullgoal remainOPEN.
 - **Latest raw value comparison:** actual positive-control variational VALUE ceiling in own raw occupation energy E_eta, with strict displayed-map gaps ateta1/2 and legalalpha1/10,a9/10eta1, accepted8groups/HIGH atad6c188 (322.118seconds,26texts+4images). Actual moment Q2 still has only LOWERQ2>=V2 from thismechanism; no Q2 upper/sourceconstantidentity. Two scalar applications checked. Dampedbridge/whitepoint now accepted at8883160; NEXTglobalOmega comparison. Original9pointrecon doesnotprove fullrange. Original sharpupper/all-dimensions/intendednormalization remainopen.
@@ -5124,3 +5125,9 @@ kernels source/fulltypes/priorHIGHfidelity boundunchanged; NEWanalytic
 applications requiregate. Independentpreproof15texts+2exactsourceimages
 beforelongproof. Newtopology/flow/d2d3lower/sharpupper/sourceissues OPEN.
 No sourcefix/contact/Skorohod/newcompanion/HPC/publicrelease.
+
+ActualdimensionalHSpreproof live atd5c4663: actualfirstpartyOpus5.5/high,
+15texts+2sourceimages,all17live/frozen/gitbindings checked,supporteddoctor/
+selectedheadroom37short72weekly. Session46516/samehandle,norestart on
+observationtimeout. Longproofafterstatement/objects/sourcegate,notbefore.
+OriginalgoalACTIVE,all-dimensional lower/sharpupper stillOPEN.
