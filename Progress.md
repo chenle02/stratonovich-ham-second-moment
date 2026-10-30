@@ -4666,3 +4666,19 @@ hashes matched; supportedlaunch-localdoctor/selectedheadroom7short62weekly.
 No proof/adoption of T1-T3or general-test point lower yet. Ninekernel
 internals unchanged; NEWanalytic/typeapplication interface stillrequires
 independentgate. Poll samehandle/receipt, no timeoutrestart. GoalACTIVE.
+
+### General-positive consumer preproof and candidate — 2026-10-30
+
+ActualOpus5.5/high16groups,HIGH,328.136seconds,28texts complete,
+PASS_WITH_NOTES,no required repairs. All28live/frozen/git14fe727 input
+hashes and every native archive member verified; eight optional findings
+adjudicated. Statement/objects/feasibility only, NOTproof acceptance.
+
+New notes/general-positive-consumer.md gives candidate full indexed-cone
+argument, actual general-profile/noisy unit-to-fixedB error discharge,
+last-prefix extension/event, SAME-Z/rawhalfvariance originalpoint lower,
+and enlarged C_pos real variational homogeneity/class inclusion.
+All nine old finite kernels unchanged; exact NEWanalytic/typeapplication
+hypotheses spelled out, no new compile/formalSPDE claim. CanonicalTeX/PDF
+unchanged. Full scientific gate next; original fullgoal ACTIVE and lower
+class not enlarged as accepted mathematics before that gate.

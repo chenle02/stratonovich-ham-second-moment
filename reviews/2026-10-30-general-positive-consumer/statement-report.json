@@ -1,0 +1,141 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "reviews/2026-10-30-general-positive-consumer/target-v1.md: lines 1-132 (complete)",
+    "reviews/2026-10-30-general-positive-consumer/worker-honesty-v1.md: lines 1-26 (complete)",
+    "reviews/2026-10-30-general-positive-consumer/check-diagnostics.py: lines 1-50 (complete)",
+    "reviews/2026-10-30-general-positive-consumer/diagnostics-v1.json: lines 1-131 (complete)",
+    "reviews/2026-10-30-general-positive-consumer/canonical-model-upper-context.txt: lines 1-86 (complete)",
+    "reviews/2026-10-30-general-positive-consumer/canonical-source-custody.json: lines 1-34 (complete)",
+    "reviews/2026-10-30-general-positive-consumer/reuse-routing-v1.md: lines 1-34 (complete)",
+    "reviews/2026-10-30-general-positive-consumer/reuse-bindings-v1.json: lines 1-127 (complete)",
+    "reviews/2026-10-30-general-positive-consumer/accepted-input-map.md: lines 1-42 (complete)",
+    "reviews/2026-10-30-general-positive-consumer/local-recon.md: lines 1-19 (complete)",
+    "notes/nonseparable-profile-family.md: lines 1-385 (complete)",
+    "notes/local-causal-young-flow.md: lines 1-503 (complete)",
+    "notes/joint-gaussian-tilt.md: lines 1-318 (complete)",
+    "notes/moving-block-cone.md: lines 1-239 (complete)",
+    "notes/actual-shifted-event.md: lines 1-335 (complete)",
+    "notes/raw-variational-dilation.md: lines 1-249 (complete)",
+    "notes/direct-event-calibration.md: lines 1-223 (complete)",
+    "notes/phase-response-test.md: lines 1-378 (complete)",
+    "reviews/2026-10-30-nonseparable-family/scientific-adjudication-v1.md: lines 1-72 (complete)",
+    "lean-progress/local-checks/moving-cone-v1/StratonovichHAMAudit/MovingCone.lean: lines 1-30 (complete)",
+    "lean-progress/local-checks/moving-cone-v1/types-and-axioms.txt: lines 1-117 (complete)",
+    "lean-progress/local-checks/moving-cone-v1/local-receipt.json: lines 1-69 (complete)",
+    "lean-progress/local-checks/actual-event-v1/StratonovichHAMAudit/ActualEvent.lean: lines 1-35 (complete)",
+    "lean-progress/local-checks/actual-event-v1/types-and-axioms.txt: lines 1-49 (complete)",
+    "lean-progress/local-checks/actual-event-v1/local-receipt.json: lines 1-68 (complete)",
+    "lean-progress/local-checks/raw-variational-v1/StratonovichHAMAudit/RawVariational.lean: lines 1-73 (complete)",
+    "lean-progress/local-checks/raw-variational-v1/types-and-axioms.txt: lines 1-195 (complete)",
+    "lean-progress/local-checks/raw-variational-v1/local-receipt.json: lines 1-70 (complete)"
+  ],
+  "checks": [
+    {
+      "claim": "C1: Model, profile, operators and phase space are the actual accepted objects, including index sigma=0.",
+      "verdict": "PASS",
+      "reason": "Target lines 10-27 match family note (1), (4), (11) and F as defined in local-flow Section 4. Psi is general, nonnegative, nonzero and compact, with no tensor restriction. The profile h_sigma is the nonlocal convolution, equal to tilt (5) at t=sigma by adjudication item 1, so it is neither psi(sigma,.) nor a pointwise Gaussian evaluation. Sigma is an index, and h_0>=U_avg gives lambda_0>=l>0 by (2)-(4). The amplitude of Gamma is retained, and constants are in F."
+    },
+    {
+      "claim": "C1: J_phi is the unsquared real linear first-entry pairing, velocity stays in the phase, and I_psi, v_psi, Z and the class are fixed before delta.",
+      "verdict": "PASS",
+      "reason": "Lines 29-33 match family (13) and moving-cone Section 1. J_phi ignores w, while e_sigma, ell_sigma and Pi_sigma retain velocity and 1/lambda. I_psi is well defined because lambda is Lipschitz by (8). Line 33 fixes all data before delta."
+    },
+    {
+      "claim": "C2: T1 is a re-established indexed-family norm argument, not the literal old bU theorem at b=sigma.",
+      "verdict": "PASS",
+      "reason": "Lines 38-40 and 60-63 forbid the substitution. Every quantity the old proof used has an actual counterpart. C_R>=1 and eta come from (19). lambda>=l comes from (4). Commutation comes from (14). Uniform bounds and F, F* and B(F) continuity on compact [0,1] come from (11) and the following text. The constant a_* comes from (12), and j_* comes from the positivity and continuity below (13). The old proof uses only these inputs."
+    },
+    {
+      "claim": "C2: T1 quantifiers are correct, with theta before integer B and constants independent of N, s and the index sequence, and all index-0, N=1 and s=0 cases covered.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The order rho, then theta, then B, then nu and omega, then epsilon reproduces budgets (8)-(12), and (8) contains no B. Sequences may start at sigma_0=0. N=1 gives the empty induction with (1-rho)^0. s=0 is covered without assuming D_N(0)=I. No positivity, composition, independence or desired growth of D is assumed. Note: the premise is written max_(m,t) over a continuum, where the maximum need not be attained; it should read sup, as in old (5). See minor findings."
+    },
+    {
+      "claim": "C2: The three MovingCone kernel lemmas can map exactly to the T1 budgets.",
+      "verdict": "PASS",
+      "reason": "I checked each lemma by hand. residual_budget with q=q_B, d=nu*M_z, e=M_Q*epsilon*M_z yields the (1/8)(2 theta)+theta/4=theta/2 bracket in (18). cone_conversion with a>0 and rho<1/2 yields x>0 and y<=theta*x as in (17)-(18). terminal_margin with j=j_*, K=||J||C_R, e=||J||epsilon*M_z yields j/2<=y as in (20)-(21). Each hypothesis is discharged by the corresponding budget line."
+    },
+    {
+      "claim": "C3: The T1 error premise can be discharged from accepted inputs, not retained as an assumption.",
+      "verdict": "PASS",
+      "reason": "Lines 76-87 require a proof. Accepted (7.2) gives the all-unit driver maximum without independence. (7.3) accepts arbitrary admissible deterministic bases, and (5.5)-(5.6) allow time dependence. h_sigma is admissible by tilt (6). The masked and capped h have a common W1infinity bound uniform in r>=1. Slow error is O(delta B) by the Cb1 Lipschitz bound in (6). The mask defect sup_sigma||(zeta_r-1)h_sigma||_W1inf tends to 0 by the uniform tail in (6) plus ||zeta_r'||<=C/r. Primitive difference plus (5.3) gives deterministic-to-frozen error. Fixed integer B gives a finite ordered product with B A^B constants."
+    },
+    {
+      "claim": "C3: Physical reset, unit phase, time scale, padding, capped profile and final extension are correct.",
+      "verdict": "PASS",
+      "reason": "Fast-time units reset at integers, with W^delta(m+u,x)=W_m^delta(u,x), so no norm of S at large start times enters. sigma_m=delta mB lies in [0,1], and sigma_N<=1. The padding claim is correct: starts through ceil(L) reach ceil(L)+1<L+2. Capping keeps the range and the bound, and padded units are auxiliary. The extension D_N(t)=P_(sigma_N)(t-s)D_N(s) has error P(t-s)[D_N(s)-P(s)], bounded using the uniform finite-horizon bound stated in family Section 1, and leaves observed D_N(s) unchanged. No new B-long noise and no whole-product closeness or independence is used."
+    },
+    {
+      "claim": "C4: The actual event and its budgets are feasible.",
+      "verdict": "PASS",
+      "reason": "The retained potential in line 74 is exactly the translated flow in tilt (13). With e given, one chooses rho(e), then B and epsilon_op, then small delta. The Riemann weights in (18) sum to 1 for lambda_(delta mB), including the partial interval, and lambda is continuous by (8). delta(N-1)log(1-rho)>=log(1-rho) because B>=1. delta log c_* tends to 0. The entrance uses the constant-data positivity (12)."
+    },
+    {
+      "claim": "C4: Same-Z cost, nonnegative restriction and original-point mapping are correct for general psi.",
+      "verdict": "PASS",
+      "reason": "I rederived the sign, shift and half-variance: s=1/sqrt(delta) gives sqrt(delta)W+h and density exp(-Z/sqrt(delta)-v/(2 delta)), matching (10) and (13). Tilt Section 1 takes any real psi in C_c^infinity((0,1)xR), and 'separable' in its Section 2 refers to the Banach driver input, not to a tensor psi. Chebyshev on the fixed v gives the moderate event, and restriction uses the nonnegative square. The penalty delta^(1/4) tends to 0, so the rate is 2I_psi-v_psi/2. Tilt (14), with delta=t^-kappa and R=t delta, carries no R^d loss because phi has unit mass. No signed first-mean restriction or source constant is involved."
+    },
+    {
+      "claim": "C5: v_psi formula, finiteness, positivity and I_psi>0 are correct for the actual class.",
+      "verdict": "PASS",
+      "reason": "By Tonelli, E Z^2 equals the integral of psi against h. h is bounded by (6), so v is finite. Since |sigma-u|<=1, h_sigma>=U_avg, so v>=integral q_avg*(Gamma*q_avg)>0 in both the Riesz and white cases. I_psi>=l>0 follows from (4)."
+    },
+    {
+      "claim": "C5: D_s is an intrinsic bijection of the class with the degrees 2, 1, 4-alpha for nonseparable psi.",
+      "verdict": "PASS",
+      "reason": "D_r D_s=D_(rs) preserves the class, and D_(1/s) is the inverse. The Radon pushforward gives Gamma*(psi(u,s.))(x)=s^(alpha-1)(Gamma*psi(u,.))(sx), hence h^(Ds)_sigma(x)=s^2 h_sigma(sx) at each sigma with no tensor factorization. Unitary conjugation gives lambda scaled by s and I by s. The dx Jacobian gives v scaled by s^(3-alpha+2-1)=s^(4-alpha), which is raw variance, not a standard deviation or noise covariance replacement."
+    },
+    {
+      "claim": "C5: Supremum, label homogeneity and V_2^pos>=V_2^sep have matched hypotheses, with no forbidden claim.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Nonemptiness comes from C_sep inside C_pos. S_2 is bounded by the finite upper rate, which is test-independent because psi changes only the mean test, and S_1 is bounded because I>0. Dilation at s=c^(1/k) gives S_c=c^m S_1 with m=(4-alpha)/(3-alpha). The s0 dilate gives V_1>0. On products h_sigma=k_f(sigma)U_q, so lambda_sigma=lambda_(k_f(sigma),q) and the intrinsic I and v equal the old ones. The ordering Q2>=V_2 uses each fixed test separately, with no interchange. Line 119 disclaims the Jensen, source L, first-mean and moment-order readings, and no strict value gap is claimed. Note: V_2^sep is not defined in the target; see minor findings."
+    },
+    {
+      "claim": "C6: The nine unchanged Lean internals have exact types, sources, receipts and honest scope.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Printed pp.all types match each of the nine source statements on inspection. All live axioms are propext, Classical.choice and Quot.sound. Each conclusion holds under its stated hypotheses, by my reasoning. Binding SHA strings equal receipt SHA strings for all three modules. Original and replay hashes are identical for the five outputs of each module, compile and audit exits are 0, and False controls exit 1. Receipts are scoped as LOCAL_DEVELOPMENT_PASS with no operator, probability or package theorem. I did not recompute hashes or replay Lean."
+    },
+    {
+      "claim": "C6: New applications remain analytic boundaries, and label, recurrence and penalty uses are correctly limited.",
+      "verdict": "PASS",
+      "reason": "Routing lines 16-21 and target lines 126-128 keep all actual hypotheses for the science gate, with no waiver and no new companion. finite_error_accumulation has an all-n hypothesis that is discharged only by identity extension of both sequences (A>=1, difference 0<=e), and its norm recurrence is analytic. moderate_penalty is only delta*(delta^(-1/4)/sqrt(delta))=delta^(1/4). label_score and positive_score need c>0 or I,v>0 and alpha<3, which actual positivity and alpha<=1 supply."
+    },
+    {
+      "claim": "C7: Diagnostics are fully specified, the JSON matches the code, and the scope is honest.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The script hard-codes all data. Rows are 5 N values times 3 partials, giving 15, starting from m=0, sigma=0, lambda=1. I traced the first step by hand: z=(1/2+1/128, 1/2-1/128-1e-6), a=0.4999995>=49/100, residual about 0.00781<=a/8. Lambda changes are at most 0.002, so the asserted decay and amplitude bounds are plausible for later steps, and the error is signed and affects both entries. I recomputed the covariance exactly: h=[[19,27],[18,19]], v=146=quadratic form, wrong L2=1775, q_avg=(4,3), U_avg=(11,13), lower bound 83, rank-1 replacement v1=581/4. All JSON values match. The script and JSON state these are finite algebra only, and I infer no analytic claim or optimizer gap. The script was not executed; the N=100 asserts were checked by scale argument, not by exact iteration."
+    },
+    {
+      "claim": "C8: All open goals stay open, and no named input restates a conclusion or omits a needed actual object, class or quantifier.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Lines 124-132 keep source, optimizer, signed, normalization, sharp upper, higher-dimensional and whole-paper goals open, and exclude Skorohod, source correction, contact, HPC and novelty claims. No import contains the event or variational conclusion; family S1-S3 and the adjudication explicitly exclude them. The canonical capsule line ranges agree with the custody JSON and the upper theorem gives only a finite rate. Note: the short import list omits some items that the later proof must cite; see minor findings. These are not statement gaps because the items exist in the accepted notes."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "T1 premise line 49 writes max_(m,t) over t in [0,B]. D_m is an arbitrary bounded family, and physical paths are only strongly continuous, so the maximum need not be attained. The later text should use sup, as old (5) does. Every T2 estimate is already a sup bound, so nothing mathematical changes.",
+      "The import list at lines 35-37 is narrower than T2 needs. The later proof should also cite local-flow (5.2) for the deterministic bound A, local-flow (4.4) for the driver-to-B(F) reduction, tilt (1), (7), (9), (12) for the flow and measurability, and tilt Section 5 lines 296-301 for unit-block identification. All exist at accepted scope.",
+      "T2 does not write D_m(t)=mathcalP_delta^psi(mB+t,mB) for m<N, or the identity Y_delta=J_phi(D_N(s)D_(N-1)(B)...D_0(B)e0). The z recursion index range m<N and the restriction to small delta for N>=1 and delta B<=omega are also implicit. Stating these would remove ambiguity.",
+      "The order e, then rho(e), then B, epsilon_op and omega, then small delta is implicit in T2. Dependence of T1 constants on the fixed psi and phi is carried only by line 33. No uniformity across tests is claimed, and stating the order at T2 would help.",
+      "V_2^sep is used at line 115 without a local definition. It should be identified with V_2 over C_sep in notes/raw-variational-dilation.md.",
+      "Routing line 25 uses K=||J||C_R, while the old proof uses H=max(1,||J||). Either works if used consistently. Routing lines 29-30 attribute I,v>0 hypotheses to all four RawVariational lemmas, though dilation_factors needs only s>0 and strict_label_factor only alpha<3. This is harmless over-grouping.",
+      "The cone diagnostic has no negative mutation case, and its positive_terminal and direct_covariance_matches fields are hard-coded after asserts, so their force comes from the asserts. The covariance section does have wrong-object controls. The diagnostic is still adequate for its limited scope.",
+      "The body of notes/nonseparable-profile-family.md lines 371-376 still says review is required before adoption, while the header and adjudication record acceptance. The adjudication explains that only the opening status changed, so this does not affect use of S1-S3."
+    ],
+    "notes_on_scope": []
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is a statement, object, class, application and feasibility audit of proposed T1-T3. T1-T3 remain unproved and unreviewed as proofs, and this report does not accept them. Changed analytic applications still need later full proof review.",
+    "Accepted inputs were checked for exact statement and application, not re-proved, as the contract scopes them.",
+    "No execution tool was available, so nothing was run. check-diagnostics.py, Lean replay and SHA-256 hashes were not executed or recomputed. Diagnostic values were recomputed by hand for covariance and traced by hand or by scale argument for the cone, and hash agreement is string comparison only.",
+    "Prior review receipts and reports named in reuse-bindings-v1.json, other notes such as spectral-complement-transfer.md, and the Teschl images are outside the packet. Prior fidelity checks were read only as retained in the bindings. Git reachability and source revision 14fe727 could not be verified, because the workspace is not a git repository.",
+    "An ambient hook announced a queued amsg message. It was not read, is outside the packet, and contributed no evidence.",
+    "An AI review is not human verification, a novelty audit, or whole-paper or circulation clearance."
+  ]
+}

@@ -1,0 +1,27 @@
+\begin{proposition}[Jensen lower bound]\label{P:Jensen}
+  Under Hypothesis~\ref{H:homog}, $\E u(t,x)\ge1$ and
+  $\E u^2(t,x)\ge(\E u(t,x))^2$. Consequently, for every real $\ell$,
+  \[
+    \liminf_{t\to\infty}t^{-\kappa}\log\E u(t,x)\ge\ell
+    \quad\Longrightarrow\quad
+    \liminf_{t\to\infty}t^{-\kappa}\log\E u^2(t,x)\ge2\ell.
+  \]
+  The specialization $\ell=L_*$ is conditional on the intended
+  first-moment lower bound with that constant. It is not an unconditional
+  adoption of the printed normalization in Theorem~\ref{T:first}.
+\end{proposition}
+
+\begin{proof}
+  For each fixed $t,x$, Lemma~\ref{L:vertex-crude} below gives
+  $\sum_n\|X_n(t,x)\|_2<\infty$; its proof does not use the present
+  proposition. Thus, $\sum_n\E|X_n(t,x)|<\infty$, and the mean of
+  the canonical series is the sum of its means.
+  By \eqref{E:expansion} and \cite{chen:author2026:time-dependency}*{(2.20)--(2.21)},
+  $\E u(t,x)=\sum_{n\ge0}\E S_{2n}(g_{2n}(\cdot,t,x))\ge1$, since every term is
+  a pairing integral of a nonnegative integrand and $S_0=1$. By the
+  Cauchy--Schwarz inequality, $\E u^2(t,x)\ge(\E u(t,x))^2$, so
+  $t^{-\kappa}\log\E u^2(t,x)\ge2\,t^{-\kappa}\log\E u(t,x)$.
+  Taking lower limits proves the implication for every valid $\ell$.
+  Substituting $L_*$ requires its stated first-moment premise.
+  This proves Proposition~\ref{P:Jensen}.
+\end{proof}

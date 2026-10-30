@@ -1,0 +1,127 @@
+{
+  "gate_class": "whole-paper",
+  "routing": "PARTIAL analytic proof and BOUNDARY_REVIEW for changed applications; no whole-goal/consumer review waiver",
+  "current_proof_source_changes": false,
+  "rows": [
+    {
+      "module": "lean-progress/local-checks/moving-cone-v1/StratonovichHAMAudit/MovingCone.lean",
+      "scientific_source": "abfdab4",
+      "local_receipt": "lean-progress/local-checks/moving-cone-v1/local-receipt.json",
+      "types_path": "lean-progress/local-checks/moving-cone-v1/types-and-axioms.txt",
+      "review_receipt": "reviews/2026-10-30-moving-block-cone/scientific-receipt.json",
+      "review_report": "reviews/2026-10-30-moving-block-cone/scientific-report.json",
+      "source_sha256": "5cb66155a2da41180bd3faa93bceccf5280f5a208a5827892352cb3da59eb737",
+      "declarations": [
+        "residual_budget",
+        "cone_conversion",
+        "terminal_margin"
+      ],
+      "same_scientific_source_and_complete_types": true,
+      "scientific_source_reachable_from_fetched_origin": true,
+      "replay5outputs_match": true,
+      "independent_family": "Anthropic Opus5.5 vs OpenAI author",
+      "prior_fidelity_checks": [
+        {
+          "claim": "C7: The public Lean types and live axioms are exact, with no analytic conclusion relabelled as a kernel proof.",
+          "verdict": "PASS_WITH_NOTES",
+          "reason": "The pp.all display matches the source for all three theorems. All are over genuine Real with standard numerals, and the axioms are propext, Classical.choice and Quot.sound. Each conclusion is a true elementary real inequality, independently checked by hand. Only Mathlib.Tactic is imported and no custom definitions occur. The fence and note say that spectral, flow and operator estimates are not formalized. Compilation evidence is from the supplied receipt and logs, not re-executed here."
+        },
+        {
+          "claim": "C7: The residual_budget application maps q=q_T, d=nu B, e=B_Q epsilon B into (18).",
+          "verdict": "PASS",
+          "reason": "The hypotheses are discharged as follows: theta>=0 from (8), q_T<=1/8 from (9), 0<=nu B<=theta from (10), and B_Q epsilon B<=theta/4 from the second line of (12). The conclusion q(theta+d)+e<=theta/2 is exactly the bracket coefficient in (18)."
+        },
+        {
+          "claim": "C7: The cone_conversion application maps old a>0, normalized new amplitude x and residual y, with rho<1/2, into cone closure.",
+          "verdict": "PASS",
+          "reason": "With x=exp(-lambda_c T)ell_c(Dz) and y=exp(-lambda_c T)||Q_c Dz||, (17) gives (1-rho)a<=x and (18) gives y<=theta a/2. The conclusions 0<x and y<=theta x, multiplied by exp(lambda_c T), are exactly Dz in C_c(theta)."
+        },
+        {
+          "claim": "C7: The terminal_margin application maps j=j_*, K=H C_R, e=H epsilon B and the normalized observable/a into (21).",
+          "verdict": "PASS",
+          "reason": "16 H C_R theta<=j_* is (8), and H epsilon B<=j_*/8 is the last line of (12). y=exp(-lambda_c s)J(D_N(s)z)/a obeys 3j/4-2K theta-e<=y by the pre-budget form of (20) plus the normalized error bound. The conclusion j/2<=y, multiplied by a exp(lambda_c s), is (21)."
+        },
+        {
+          "claim": "C7: The three numerical controls reach real False, and local receipt scope is honest.",
+          "verdict": "PASS_WITH_NOTES",
+          "reason": "The sources are 1/4+1<=1/2, 1/2<=1/4 and 1/2<=1/8, all genuinely false over R. The logs show 'unsolved goals, goal False' at columns 29, 27 and 27, the exact position of 'by' in each file, so these are not API or setup errors. The receipt records exit 1 for each control, exit 0 for compile and audit, and five identical original/replay object hashes. Its status is LOCAL_DEVELOPMENT_PASS and its scope excludes package certification. The controls are numeric endpoints that do not instantiate the theorems."
+        }
+      ]
+    },
+    {
+      "module": "lean-progress/local-checks/actual-event-v1/StratonovichHAMAudit/ActualEvent.lean",
+      "scientific_source": "d5dcd46",
+      "local_receipt": "lean-progress/local-checks/actual-event-v1/local-receipt.json",
+      "types_path": "lean-progress/local-checks/actual-event-v1/types-and-axioms.txt",
+      "review_receipt": "reviews/2026-10-30-actual-shifted-event/scientific-receipt.json",
+      "review_report": "reviews/2026-10-30-actual-shifted-event/scientific-report.json",
+      "source_sha256": "f99c9e76e56ed47804a1774b598e03649a79b5f047d9c648675ff7d5ee73e4d1",
+      "declarations": [
+        "finite_error_accumulation",
+        "moderate_penalty"
+      ],
+      "same_scientific_source_and_complete_types": true,
+      "scientific_source_reachable_from_fetched_origin": true,
+      "replay5outputs_match": true,
+      "independent_family": "Anthropic Opus5.5 vs OpenAI author",
+      "prior_fidelity_checks": [
+        {
+          "claim": "C7 finite_error_accumulation: complete type, live axioms and application.",
+          "verdict": "PASS_WITH_NOTES",
+          "reason": "The source and printed pp.all type agree: C>=1, e>=0, d 0<=0, for all n d(n+1)<=C*d n+C^n*e, concluding d n<=n*C^n*e. Axioms are propext, Classical.choice and Quot.sound. The induction is mathematically correct. In the application, identity extension keeps factor norms <=A (A>=1) and differences 0<=e_delta for all indices, so the all-n hypothesis is legitimately discharged. d_0=0 and the recurrence comes from A_n(P_n-Q_n)+(A_n-B_n)Q_n with frozen prefix <=A^n, derived analytically and labelled so. It supports only the loose bound in (13), not identity (12), and the note and fence both say so."
+        },
+        {
+          "claim": "C7 moderate_penalty: type, axioms and application.",
+          "verdict": "PASS",
+          "reason": "The type is delta*(delta^(-1/4)/sqrt delta)=delta^(1/4) for delta>0, with the same three axioms. The exponent arithmetic 1-1/4-1/2=1/4 is correct. It is exactly the normalized bound on |Z|/sqrt(delta) at threshold delta^(-1/4) used in (20)-(21). No Chebyshev, Gaussian or limit content is claimed."
+        },
+        {
+          "claim": "C7 finite controls, logs, receipt and scope.",
+          "verdict": "PASS_WITH_NOTES",
+          "reason": "Both control numerics are correct: d(n)=n with C=e=1 satisfies the recurrence but claims 1<=0, and (1/16)*(2/(1/4))=1/2, not 1. The logged error columns 2:23 and 2:36 match the source positions of the by keyword, and both logs reach False. Exit codes are 0,0,1,1,0,0, and the five replay object hashes are pairwise identical across original and replay. Status is LOCAL_DEVELOPMENT_PASS with explicit no-operator, no-probability, no-event and no-package scope. No formal Gaussian, flow or event claim appears anywhere. Hashes and kernel runs were inspected as recorded, not re-executed."
+        }
+      ]
+    },
+    {
+      "module": "lean-progress/local-checks/raw-variational-v1/StratonovichHAMAudit/RawVariational.lean",
+      "scientific_source": "0fd2a05",
+      "local_receipt": "lean-progress/local-checks/raw-variational-v1/local-receipt.json",
+      "types_path": "lean-progress/local-checks/raw-variational-v1/types-and-axioms.txt",
+      "review_receipt": "reviews/2026-10-30-raw-variational-dilation/scientific-receipt.json",
+      "review_report": "reviews/2026-10-30-raw-variational-dilation/scientific-report.json",
+      "source_sha256": "d808b3cd3b87f116fd6df6f98d7034145ed8b15e74cfdfea3d541a6028fcc403",
+      "declarations": [
+        "dilation_factors",
+        "label_score",
+        "positive_score",
+        "strict_label_factor"
+      ],
+      "same_scientific_source_and_complete_types": true,
+      "scientific_source_reachable_from_fetched_origin": true,
+      "replay5outputs_match": true,
+      "independent_family": "Anthropic Opus5.5 vs OpenAI author",
+      "prior_fidelity_checks": [
+        {
+          "claim": "C5: complete Lean types and applications of dilation_factors and label_score",
+          "verdict": "PASS",
+          "reason": "The pp.all types decode to s^(3-alpha)*s^(alpha-1)=s^2 and s^(3-alpha)*s^2/s=s^(4-alpha) for s>0, which is exactly the exponent arithmetic in (7) and (11) and not the measure transformation. label_score, with c>0 and alpha<3, is the scaled-score identity of (14) at s=c^(1/(3-alpha)); its hypotheses hold because c>0 and alpha<=1. I, v and the supremum are not certified analytically, as the note and fence say."
+        },
+        {
+          "claim": "C5: complete Lean types and applications of positive_score and strict_label_factor",
+          "verdict": "PASS",
+          "reason": "positive_score has hypotheses I>0, v>0, alpha<3 and states the exact expression of (13) with s0=(I/v)^(1/(3-alpha)); actual I,v>0 come from (3) outside Lean. strict_label_factor gives 2<2^((4-alpha)/(3-alpha)), which supports only that factor in (16), not V_1>0, Jensen or a source identity."
+        },
+        {
+          "claim": "C7: the six diagnostics, their formulas and data are reproducible by inspection, and their limited scope is honest",
+          "verdict": "PASS_WITH_NOTES",
+          "reason": "I recomputed all six JSON rows by hand from the script formulas, and all match. These are s=u^(2d), amplitude s^(3-alpha), push s^(alpha-1), variance s^(4-alpha) and the score relation. The script was not executed because no execution tool was available. The boolean JSON fields are guarded by asserts. Controls are weak and disclosed: the wrong-variance control is s^2, 1/s!=1 is nearly vacuous, and there is no wrong-rate or composition test. The note states the diagnostics do not prove analytic claims."
+        },
+        {
+          "claim": "C7: worker concerns and the full original goal are retained",
+          "verdict": "PASS",
+          "reason": "The honesty file, adjudication and note retain candidate status, the required review, the prior Lean attempt, source discrepancy and open sharp/dimensional goals. No concern is silently removed."
+        }
+      ]
+    }
+  ]
+}
