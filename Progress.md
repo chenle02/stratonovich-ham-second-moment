@@ -5428,3 +5428,28 @@ fullgate. Independent finiteGaussian statement19checks/HIGH207.904s,
 5texts/20nativefiles accepted, not input toactualvarianceproof. ProposedN2
 localfiniteLeanseam not provedyet. FulloriginalgoalACTIVE, no sourcefix/
 contact/HPC/Skorohod/companion/TeX/PDF/wiki/publication transaction.
+
+### Actual masked BOTH variance directions adopted — 2026-10-30
+
+Full native Opus5.5/high9checks PASS_WITH_NOTES/HIGH416.904s,
+all20texts complete/no requiredrepairs. All20live/frozen/git227d4bc bindings
+and35nativearchive members verified before adoption edits; actualmodel/
+route/coverage/accepted checked. Ten minor notes adjudicated explicitly:
+sesquilinearity, Schwartzfixedvector, masked-mu approximation, Besselkernel
+measurability, t range, oldchi plateau/scope, ONbasis Parseval, absence of
+operatorinference and notation/closedform diagnostic limits. No estimate,
+constant, phaseentry, parameter or Bessel/reflection algebra changed.
+
+ACCEPTED notes/actual-two-variance-forms.md: alloriginalGamma/d1/2/3,
+actual physicallymasked SAME-W forms, fullnormalized2x2includingzero,
+complex/indicatorcompletion, BOTHfinitefamily variances uniformR and
+negative-Sobolevweighted fixedvector, criticalLOG/strictbeta>1/2 factor,
+real mean-squarecolumn/adjoint-column maps intoL2OmegaE. Physicalmasked
+noise notstationary, no originalquotientmaskbound, no nonlinearPDEcomparison.
+No randomboundedoperator/HS/Schatten/path/Young/sourcecutoff/newmoment or
+sourceconstant theorem. Original full all-dimensional sharp/source goalACTIVE.
+Independent finiteGaussian matrix proof/one localFiniteYoung consumer now
+completecandidate/localcompiled but stillawaitfulltype/application gate;
+firstownedartifactreplay mismatch preserved, explicitcancellation proof
+successor matchesall5artifacts with3Falsecontrols. No officialpackage/HPC/
+contact/Skorohod/sourcefix/TeX/PDF/wiki/publication transaction.

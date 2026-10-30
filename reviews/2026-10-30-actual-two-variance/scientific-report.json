@@ -1,0 +1,101 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "reviews/2026-10-30-actual-two-variance/target-v1.md: lines 1-80, whole file",
+    "reviews/2026-10-30-actual-two-variance/falsification-v1.md: lines 1-34, whole file",
+    "reviews/2026-10-30-actual-two-variance/worker-honesty-v1.md: lines 1-23, whole file",
+    "reviews/2026-10-30-actual-two-variance/check-diagnostics.py: lines 1-96, whole file",
+    "reviews/2026-10-30-actual-two-variance/diagnostics-v1.json: lines 1-839, whole file",
+    "reviews/2026-10-30-actual-two-variance/prior-bindings-v1.json: lines 1-17, whole file",
+    "reviews/2026-10-30-actual-two-variance/canonical-model-context.txt: lines 1-39, whole file",
+    "notes/spectral-mask-covariance-foundation.md: lines 1-309, whole file",
+    "notes/scalar-frequency-row-bound.md: lines 1-191, whole file",
+    "notes/temporal-phase-bound.md: lines 1-192, whole file",
+    "notes/higher-dimensional-hs-obstruction.md: lines 1-348, whole file",
+    "lean-progress/local-checks/dimensional-matrix-v1/StratonovichHAMAudit/DimensionalMatrix.lean: lines 1-23, whole file",
+    "lean-progress/local-checks/dimensional-matrix-v1/definitions-types-and-axioms.txt: lines 1-242, whole file",
+    "lean-progress/local-checks/dimensional-matrix-v1/local-receipt.json: lines 1-67, whole file",
+    "reviews/2026-10-30-higher-dimensional-hs/scientific-report.json: lines 1-99, whole file",
+    "notes/actual-two-variance-forms.md: lines 1-398, whole file",
+    "reviews/2026-10-30-actual-two-variance/statement-adjudication-v1.md: lines 1-32, whole file",
+    "reviews/2026-10-30-actual-two-variance/check-diagnostics-v2.py: lines 1-98, whole file",
+    "reviews/2026-10-30-actual-two-variance/diagnostics-v2.json: lines 1-844, whole file",
+    "reviews/2026-10-30-actual-two-variance/scientific-worker-honesty-v1.md: lines 1-27, whole file",
+    ".review/required-sources.json: lines 1-62, whole file (read plan only, no read credit)"
+  ],
+  "checks": [
+    {
+      "claim": "C1: The form uses actual d=1,2,3, the original Gamma and threshold, E_s with both components, complex W_C and no observation chi. Fixed compact raw admission, Schur and smooth indicator approximation are proved for all d and finite T without extrapolating the old d2/3 scope. Auxiliary tensor approximation uses L2 Schwartz seminorms, Fourier decay and temperedness, with consistent raw and auxiliary completion. R-dependent admission is not used in the uniform estimate.",
+      "verdict": "PASS",
+      "reason": "Lines 9-13 match canonical H:homog and E:cov; nonzero Gamma is the stated exclusion of a trivial case. (1) has no chi. J is unitary from E_(1/2) to L2(C^2). The cosine and sine-quotient multipliers are smooth functions of |xi|^2 with polynomially bounded derivatives, uniformly on compact t, so v_z and G_w are continuous into Schwartz space. On fixed K, only y in K-K contributes, the x integral is at most |K| times the suprema, and Gamma(K-K) is finite. Time Schur then bounds the form by L2-in-time sup norms, and interior smooth cutoffs give raw membership for every allowed d and T. Partition freezing, replacement of cell indicators and diagonalization give F_n in D+iD converging in L2-in-time seminorms. Spatial integration by parts gives ||hat(F_n-F)(xi)||_L2(0,T)<=epsilon_n<xi>^-N. Temperedness plus Schur give convergence in both spectral norms, and the sup seminorm gives raw convergence after masking, so the limits agree. The R-dependent constant is used only qualitatively; the bound (15) contains no R."
+    },
+    {
+      "claim": "C2: Complex cross-odd cancellation holds under even mu and even nu_R, with H_a complexification. Formula (5) holds for actual masked variance with (2pi)^d. No bound on the original quotient mask, no masked stationarity and no PDE replacement is used.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "For real tensors, hat f(-xi)=conj(hat f(xi)) in the complexified H_a, so A(-xi)=conj(A(xi)) and Im A is odd. Since ||hat f+i hat g||^2=||hat f||^2+||hat g||^2+2 Im A, integration against an even measure removes the cross term. This matches E|W_C|^2=EW(f)^2+EW(g)^2 exactly, in both the mu equality and the nu_R inequality, because zeta is real. Foundation (7)-(8) carry (2pi)^d, and (6) reproduces foundation (4)-(5) with C_nu=c_d^2 L^2 C_Gamma, uniformly in R. Lines 147-150 correctly exclude stationarity and any auxiliary field. Note: passing the first equality of (5) to indicator tests needs mu-norm convergence of the MASKED differences. Line 115 states convergence only for unmasked differences, but the same decay proof applies to zeta_R(F_n-F) with an R-dependent constant, so this is not a gap in truth."
+    },
+    {
+      "claim": "C3: The exact Sobolev adjoint G and potential-class strong pairing hold, source-width W^rho is distinguished from raw ell, and no limit is claimed. The Dchi^*E formula and the old ell literal scope (d2/3, R>=1, T<=1, I=(0,T), real phases) hold, and outside that scope the algebra is newly derived.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "I recomputed the pairing. S(-t)(0,f)=(-sin(t|D|)f/|D|,cos(t|D|)f), and with E weights Lambda, Lambda^-1, moving the real even multipliers onto w gives <f,G_w>_L2, which is (7). The class of b gives boundedness on E_s by Peetre and Schwartz convolution, and the strong integral exists. The adjoint is Dchi^*E w=(Lambda^(-2s)chi Lambda^(2s)w1,Lambda^(2-2s)chi Lambda^(2s-2)w2), as displayed. It maps Schwartz to Schwartz, and substitution into G gives old (12) at s=1/2. Line 171 keeps W_C^rho(zeta_R F) separate from raw ell and infers no convergence. Note: old ell_chi is defined only for chi equal to 1 on B_(2R+T+1), a condition not repeated at lines 183-185. The algebraic identity is unaffected."
+    },
+    {
+      "claim": "C4: All four normalized K entries, signs and Bessel weights are correct, at exactly the same absolute time, and full-matrix reuse matches all parameters and hypotheses. Continuous zero sinc is used, not Lean division by zero. The product Fourier -lambda reflection, c_d, the Bochner H_a identity and the (2pi)^d c_d^2 cancellation hold.",
+      "verdict": "PASS",
+      "reason": "Direct substitution gives (8) from U and V, and the product gives (9) entrywise with the same t in both factors. I independently multiplied J_xi S(-t,xi) coupling S(t,eta) J_eta^-1 and obtained (9). The Lean theorem's backward, coupling and forward definitions in both the source and the complete-types file match the stated cp, sp, p, cq, sq, q instantiation. It has no hypotheses, depends on the standard axioms only and carries no analytic content, as the note says. At r=0 or rho=0 the note uses physical sinc, and the both-zero matrix [[-t,-t^2],[1,t]] is correct. Inserting Fourier inversion gives hat(v conj G)(-lambda)=c_d int hat v(eta) conj(hat G(eta+lambda)) deta, which is (10). The Bochner form follows from pointwise integration in L2(0,T) plus the continuous map into H_a. Evenness of nu_R and (2pi)^d c_d^2=1 give (11)."
+    },
+    {
+      "claim": "C5: The Hilbert-valued finite Bessel inequality and conjugated-family version are proved, the kernel classes are true L2 for each lambda, nonnegative Tonelli and extended integrals replace illegal oscillatory Fubini, and genuine Cauchy-Schwarz handles correlated phases.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The coefficient of a_k along f_m is the L2(C^2) inner product of g^m with conj(u_k), and conj(u_k) is orthonormal, so scalar Bessel plus summation over m gives (12); the conjugated version is symmetric. Bounds: |c_r|<=1, and |b_r|<=sqrt(2)max(1,T) for t in [0,T] from the high and low regimes. With Schur and the Schwartz shifts U, V this gives L2(R^d;H_a) for each lambda. Lambda integration involves only nonnegative jointly continuous integrands, and the Bessel left side is continuous in lambda. No independence is used; the factor 2 comes from Cauchy-Schwarz over two components. Note: strong measurability of g and f into H_a is not stated. It follows from joint continuity and boundedness of K into L2(0,T), followed by the bounded map into H_a."
+    },
+    {
+      "claim": "C6: Input and reverse variance are each derived separately, with the exact four-phase factor 4 and correct lambda and Lebesgue changes. Actual evenness of nu and symmetry of Phi are used, all scalar and temporal hypotheses match, the negative Sobolev norm is fixed, the bound is uniform over all R, families and h, and critical log and strict beta>1/2 are handled.",
+      "verdict": "PASS",
+      "reason": "(13): the prefactor (<xi><eta>)^-1 factors out and each entry is a sign times F_r G_rho, so Proposition 3 gives A_T with C1=4*3^(1-a)*16/(1-a). (14): with eta=xi-lambda this is exactly J_h in scalar (2), and the hypotheses are the positive Radon ball bound (6) and the same gamma and alpha+a<2. Input direction: Sum_j||g_j||^2<=2*Sum_ij|V_i|^2||1_I K_ij||^2<=4A_T h^(2-a)Phi Sum_i|V_i|^2. The change xi=eta+lambda and (14) give C_T=4A_T K C_nu with the weight <xi>^-2gamma on V=Jz. Output direction: the change eta=xi-lambda, the conjugated (12) and the same factor 4 give the row Phi(eta+lambda,eta) at fixed eta. Reflecting with even nu_R and using Phi symmetry gives Phi(eta,eta-lambda), and (14) applies with the weight on U=Jz. All constants are independent of R, I and family size. The power and log estimate from Corollary 2's proof gives beta for alpha<1, alpha>1 and strictly for alpha=1, and the interval is nonempty. Scaling sanity: the mean bound ||A_h z||_E^2<=C||z||^2_(E_(s-gamma)) implied through a correlated Z is consistent with the order -1 near-diagonal kernel for gamma<1/2."
+    },
+    {
+      "claim": "C7: Actual SAME-W mean-square columns are built through a fixed real Schwartz basis, with L2 tails, linearity and extension to the weaker E_(s-gamma) index. Fixed-pair identities follow from singleton bounds without projection independence, and basis independence and Gaussian finite joint limits hold. The result is NOT a random bounded operator, HS or a common uncountable null set.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Gram-Schmidt on a countable E_s-dense real Schwartz set stays Schwartz and is complex orthonormal, since the real E_s product is real. Finite subfamily bounds and orthogonality give L2(Omega;E_s) convergence, with Fatou-free norm limits. <m_N z,w>=ell(z,w_N) follows from conjugate linearity. Singleton (3) on (w-w_N)/||w-w_N|| and singleton (2) on (z-z_N)/||z-z_N|| give the two identities in (4) with the correct direction. Limits stay in the closed Gaussian span of the same W, so finite families are jointly centered Gaussian. Pairing against a countable family plus a countable union of null sets gives basis independence. Lines 365-369 keep the scope, and compatibility with old (8) holds since columns bounded on E_(s-gamma) do not yield a finite trace over an E_s basis. Note: the Parseval wording at line 356 literally requires the orthonormal basis, or density replacing Parseval. The phrase not elements of L2(Omega;B(E_s)) or HS at lines 365-366 is a type and non-inference statement, not a negative theorem; d=1 has a separate accepted driver."
+    },
+    {
+      "claim": "C8: Diagnostics v1 and v2 are accurately described: real kernel, frequency, Fourier and covariance controls versus finite atomic NOT H:homog algebra, both complex negative controls, PSD and Bessel residuals, uncertified precision, and a closed-form marginal rather than a numeric integral. Root custody is distinct from read-only review.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "By reading: 6x4x5=120 snapshots, and the direct matrix is J S(-t) coupling S(t) J^-1 with continuous sinc. There are 3x4=12 Fourier cases. By hand, d=1 rows with multipliers -2 and 0 give about .4735 and .6182, as in the JSON. Hand calculation for the three singular covariances gives pi^(3/2)/sqrt(2)*exp(-y^2/2), about 3.937, .5329 and 3.4747, equal to the (2pi)^2 spectral form with mu=(2pi)^-1 Leb tensor delta_0, and the code's direct value is closed form. The cell Gram formula is the exact double antiderivative of |t-s|^-a. Basis sums equal w^H Vout w and z^H Vin z algebraically, and trace equality follows from symmetric Ct. Only v2 has the output negative control, PSD minima and residuals. Arithmetic checks: 102.2979-49.2896=53.0083 and 215.9540-16.5275=199.4264, as recorded. Weights 1/(1+lambda^2) are atomic and disclaimed. scientific-worker-honesty line 17-18 separates root execution from reviewer analysis. Note: falsification-v1 line 15 retains the phrase by direct marginal, which statement adjudication item 7 and the note's Section 7 correct. Execution and hashes are recorded evidence only."
+    },
+    {
+      "claim": "C9: No actual operator norm, Schatten, path, Young, source-cutoff, canonical data, new moment, source energy, new Lean, HPC, contact, companion, Skorohod or whole-paper claim is made, and the original full goal stays active.",
+      "verdict": "PASS",
+      "reason": "Lines 4-5, 68-69, 149-150, 171-172, 227-228, 365-369 and 386-398 state these boundaries. No proof step derives any excluded object: Sections 2-6 produce only second-moment linear forms and L2(Omega;E_s) columns. Old notes are cited within their named scopes, and prior-bindings scope lines agree with the inputs actually used. The target's D1-D3 are delivered without widening, and the higher-dimensional HS negative result remains untouched."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Target D1 asks for sesquilinearity of ell_R, which the note never states as a proved item; it is used implicitly at lines 340 and 344. It is immediate: v_z is linear in z, G_w is linear in w through real multipliers, the conjugate in (1) gives conjugate linearity, and W_C(iF)=iW_C(F) follows directly from W_C(F)=W(Re F)+iW(Im F).",
+      "Proposition 1 leaves the class of the fixed z implicit. Reading it from line 33, it is a Schwartz phase. The extension to E_(s-gamma) occurs only for the real maps in Proposition 2.",
+      "Lines 115-120 state spectral convergence for unmasked F_n-F, while the first equality of (5) at the indicator level needs the mu integral of the masked difference. The same decay argument with an R-dependent constant, or foundation (6), supplies it; line 130 only gestures at this.",
+      "Strong measurability of the H_a-valued g_j^lambda and f_i^lambda is not written out in Section 4. It follows from joint continuity and boundedness of K into L2(0,T).",
+      "Line 248 says for all r,t where t in [0,T] is meant, since the bound depends on T.",
+      "Lines 182-185 omit that old ell_chi requires chi=1 on B_(2R+T+1). The displayed adjoint algebra holds for every real compact smooth chi, but the old name applies only under this plateau.",
+      "Line 356 invokes Parseval on a dense family; either use the orthonormal basis or replace Parseval with density after a countable null-set union.",
+      "Lines 365-366 could be misread as a negative theorem about d=1 or about all L2 operator realizations. Only the absence of an inference is proved in this note.",
+      "Notation is overloaded despite statement-adjudication item 9: b (potential and sine factor b_r), rho (|eta| and source width W^rho), K (compact set, phase kernel, K_scalar), H (test and Hilbert space) and (R) (real space versus radius R). No formula becomes wrong, but reader disambiguation is required.",
+      "falsification-v1.md line 15 still says by direct marginal, while Section 7 and the adjudication correctly state this is an analytic closed form. The corrected wording governs."
+    ],
+    "required_repairs": []
+  },
+  "required_repairs": [],
+  "limitations": [
+    "Read-only hand review. I did not execute Python, mpmath or Lean, compute any SHA, or check git ancestry, so all execution, receipt, replay, parity, model-route and hash statements, including source revision 227d4bc1ac3bd406fd60ab357b2944bca6109c91, are recorded evidence only. The workspace is not a git repository.",
+    "Accepted inputs were read in full and their steps used here were re-traced by hand (Fourier mask inequality and ball growth, scalar row near and far estimates, temporal Propositions 1-3). This is not a fresh formal certificate of those notes, and their cited review reports other than the HS report are not in the packet.",
+    "Standard facts (Bochner integration, Sobolev density, finite Bessel, Gaussian L2 closure, Peetre, separable Hilbert space expansions) were checked as applied, not formalized. The Lean theorem certifies only a finite symbolic matrix identity.",
+    "The canonical model context is a short excerpt, lines 1-39 of the supplied file. The raw test class was read together with the foundation and old HS covariance statements. The canonical TeX and PDF themselves are not in this packet.",
+    "A harness notice about one queued amsg message appeared during this review. It was not read, because it lies outside the frozen packet and review contract.",
+    "This is an AI scientific review of the scoped candidate, not human verification, a novelty audit or a whole-paper certificate. It does not establish any operator, Schatten, path, Young, source-limit or moment result, and the original full goal remains active."
+  ]
+}

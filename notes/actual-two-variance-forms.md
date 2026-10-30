@@ -1,6 +1,8 @@
 # Actual masked wave forms and both mean-square variance directions
 
-COMPLETE CANDIDATE, not adopted before independent full proof review.
+ACCEPTED internal actual-variance result: native Opus5.5/high full review,
+PASS_WITH_NOTES/HIGH, scientific revision227d4bc; see the
+2026-10-30-actual-two-variance proof packet and adjudication.
 The forms below use the SAME original W. No random bounded operator,
 Schatten path, source limit, Young flow or new moment asymptotic is claimed.
 
@@ -37,14 +39,18 @@ For Schwartz phases z,w put
  F_z,w(t,x)=1_I(t) v_z(t,x)conj(G_w(t,x)),
  ell_R(I;z,w)=W_C(zeta_R F_z,w).                                   (1)
 
-Admission in the actual completion is proved below. Define
+Admission in the actual completion is proved below. The admitted form is
+linear in z and conjugate linear in w: v_z and G_w are linear, and the
+conjugate in (1) gives the second assertion since W_C(iF)=iW_C(F) directly
+from its definition. Define
 
  0<gamma<min(1/2,(2-alpha)/2),
  B_alpha(h)=1 if alpha<1; 1+log(1/h) if alpha=1; h^(1-alpha) if alpha>1.
 
 **Proposition 1.** There is finite C_T, depending on the fixed model,
 mask,a,alpha,gamma,T but not R,I,the family or its size, such that every
-finite complex E_s-orthonormal Schwartz phase family {e_k} satisfies
+finite complex E_s-orthonormal Schwartz phase family {e_k} and every
+Schwartz phase z satisfy
 
  sum_k E|ell_R(I;e_k,z)|^2
        <=C_T h^(2-a)B_alpha(h)||z||_(E_(s-gamma))^2,                 (2)
@@ -116,7 +122,11 @@ makes the same estimate with L2 temporal seminorms. Since mu and nu_R are
 tempered, choose N so their integrals of <xi>^(-2N) are finite. The Schur
 bound for the temporal Hilbert H_a then gives convergence in both spectral
 H_a norms. After masking, the fixed-K estimate above gives convergence in
-the raw noise completion. Thus the auxiliary extension and actual W limit
+the raw noise completion. Multiplication by the fixed Schwartz mask
+zeta_R also preserves the L2 Schwartz-seminorm convergence, with constants
+allowed to depend on R here. The same Fourier decay argument therefore
+gives convergence of the MASKED difference in the mu spectral norm too,
+as required for the equality in (5). Thus the auxiliary extension and actual W limit
 agree for (1); no original-noise-quotient multiplier theorem is used.
 
 The complex extension needs a normalization check. For real tensor tests
@@ -181,7 +191,7 @@ It is generally not Dchi. Formula(7) applied with Dchi^*E w yields the
 localized test with chi INSIDE the two Bessel-weighted arguments of G.
 Thus ell_R(I;z,Dchi^*E w) is the correctly observed form. In the OLD
 accepted HS note's literal scope d2/3,real phases,R>=1,I=(0,T),T<=1,
-s=1/2, this equals its named ell_chi (endpoints do not affect the noise
+s=1/2 and chi=1 on B_(2R+T+1), this equals its named ell_chi (endpoints do not affect the noise
 norm). Outside that scope the displayed identity is derived here, not
 imported by putting chi=1 in a compact-chi theorem.
 
@@ -245,9 +255,12 @@ integrals exist by L2 Cauchy-Schwarz. No independence of Gaussian forms
 or phase components occurs here.
 
 For each fixed lambda the kernels used in this argument lie in this L2
-class. Indeed |c_r|<=1 and |b_r|<=sqrt(2)max(1,T) for all r,t, by the
+class. Indeed |c_r|<=1 and |b_r|<=sqrt(2)max(1,T) for all r>=0 and t in[0,T], by the
 high/low sine bounds. Thus the H_a norms of 1_I K_ij are uniformly bounded
-on fixed T. Multiplication by the shifted Schwartz U or V yields an L2
+on fixed T, with t in[0,T]. These kernels are jointly continuous into
+L2(0,T), hence into H_a by Schur, in their frequency parameters. Together
+with continuous U,V and separability this gives the strong measurability
+needed for the integrals. Multiplication by the shifted Schwartz U or V yields an L2
 function in eta or xi. Subsequent integrations in lambda are of
 nonnegative quantities; they may initially be extended values, whose
 finiteness is proved next.
@@ -352,8 +365,8 @@ This tends to zero. It proves the first equality in(4). For the second,
 project z instead and use a singleton instance of(2) to control
 ell_R(I;z-z_N,w). Thus both identities hold in L2 for every fixed real
 Schwartz pair. They also show basis independence of the limits: the
-difference of two constructions has zero pairing with a countable dense
-Schwartz family, hence zero L2 norm by Parseval.
+difference of two constructions has zero pairing with a fixed countable
+Schwartz orthonormal basis, hence zero L2 norm by Parseval.
 
 Each fixed-vector limit is centered Gaussian: continuous linear
 functionals and finite linear combinations are L2 limits of centered
@@ -362,8 +375,9 @@ converge to the Gaussian one. The same argument after the E_(s-gamma)
 input extension proves the assertion for arbitrary fixed inputs and finite
 families of values from m and n. This proves Proposition 2.
 
-These are deterministic maps INTO L2(Omega;E_s), not elements of
-L2(Omega;B(E_s)) or HS(E_s). No common null set for every input, bounded
+The scope of this construction is deterministic maps INTO L2(Omega;E_s).
+It makes no assertion of an L2(Omega;B(E_s)) or HS(E_s) realization.
+No common null set for every input, bounded
 sample operator, norm continuity in time, Schatten sum or source-limit
 statement is inferred. This is compatible with the accepted physically
 masked SAME-W L2HS obstruction in d2/3.
