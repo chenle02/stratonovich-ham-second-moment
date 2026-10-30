@@ -1,0 +1,182 @@
+{
+  "provider": "claude",
+  "started_utc": "2026-10-30T04:32:14.934614+00:00",
+  "workspace": "${HOME}/.local/state/Le-AI-Lab/stratonovich-tilt-statement-v1/workspace",
+  "source_revision": "0586399",
+  "input_hashes": {
+    "notes/direct-event-calibration.md": "41091a143e7fb7f6081aadd2475751cf115a3f5ef318965d97ccc72277f79720",
+    "notes/interaction-driver-path.md": "d3df482028572f1f71f8b5055582265677284a537575952a41cd3ea121f88e8c",
+    "notes/local-causal-young-flow.md": "f482da909ce87e4789b09302a25c5e2a56e3e3cecddee59f5b22e6a0e04111b4",
+    "notes/phase-response-test.md": "4cb9b52e7868ab6bc69023b9c1bd1dc4485654c189baa5e9cfa31204f660127f",
+    "reviews/2026-10-30-joint-gaussian-tilt/contract-v1.md": "7864906dc5b835ec83b8bdae7056d3ee9bc4c46fac9385258db2e2ba25aa8ccc"
+  },
+  "target": "reviews/2026-10-30-joint-gaussian-tilt/contract-v1.md",
+  "claude_account": "<removed>",
+  "review_contract_sha256": "a7e071995433ca392c54727268089011b9ec66070513cb75ff867a157413f3f4",
+  "effort_requested": "high",
+  "resumed_from": null,
+  "resume_mode": null,
+  "resume_binding": null,
+  "min_confidence": "high",
+  "scientific_verdict": "PASS_WITH_NOTES",
+  "accepted": false,
+  "report_contract_schema": "subscription-review-report/1",
+  "report_legacy_mode": null,
+  "legacy_resume_binding": null,
+  "diagnostics": [
+    {
+      "code": "confidence-disposition",
+      "path": "",
+      "message": "valid report below requested confidence threshold"
+    }
+  ],
+  "required_sources_sha256": "848d26fbb33eb949ce5abebb41f1b0de0846039083e3ec1fbf6e90f04c2ece96",
+  "required_sources_workspace_copy": ".review/required-sources.json",
+  "workspace_preflight": {
+    "schema": "le-ai-lab.review-workspace-preflight/1",
+    "scanned": "review contract (--prompt-file)",
+    "references": {
+      "reviews/2026-10-30-joint-gaussian-tilt/contract-v1.md": [
+        "reviews/2026-10-30-joint-gaussian-tilt/contract-v1.md"
+      ]
+    },
+    "waived": [],
+    "missing": [],
+    "required_sources_copy": ".review/required-sources.json"
+  },
+  "runtime_preflight": {
+    "effective_version": "2.1.304",
+    "cli_version": "2.1.304 (Claude Code)",
+    "image_requirements": false,
+    "supported_versions": [
+      "2.1.299",
+      "2.1.300",
+      "2.1.301",
+      "2.1.302",
+      "2.1.303",
+      "2.1.304"
+    ],
+    "supported": true
+  },
+  "cli_version": "2.1.304 (Claude Code)",
+  "executable": "${HOME}/.local/state/Le-AI-Lab/swe-white-time-resume-20261024/runtime/node_modules/@anthropic-ai/claude-code-linux-x64/claude",
+  "executable_requested": null,
+  "executable_effective": {
+    "path": "${HOME}/.local/state/Le-AI-Lab/swe-white-time-resume-20261024/runtime/node_modules/@anthropic-ai/claude-code-linux-x64/claude",
+    "version": "2.1.304 (Claude Code)"
+  },
+  "read_ledger_format_supported": true,
+  "auth": {
+    "authMethod": "<removed>",
+    "apiProvider": "firstParty",
+    "subscriptionType": "<removed>",
+    "email": "<account email removed>"
+  },
+  "model_requested": "claude-opus-5-5",
+  "command_without_prompt": [
+    "${HOME}/.claude/bin/claude-acct",
+    "run",
+    "<account removed>",
+    "--print",
+    "--model",
+    "claude-opus-5-5",
+    "--effort",
+    "high",
+    "--disable-slash-commands",
+    "--strict-mcp-config",
+    "--mcp-config",
+    "{\"mcpServers\":{}}",
+    "--permission-mode",
+    "dontAsk",
+    "--permission-prompts",
+    "none",
+    "--output-format",
+    "stream-json",
+    "--verbose",
+    "--tools",
+    "Read,Grep,Glob",
+    "--allowedTools",
+    "Read,Grep,Glob",
+    "--agents",
+    "${HOME}/.local/state/Le-AI-Lab/stratonovich-tilt-statement-v1/claude-reviewer.json",
+    "--agent",
+    "artifact-reviewer",
+    "<stdin: prompt.txt without its final newline>"
+  ],
+  "prompt_transport": "stdin",
+  "prompt_bytes": 5330,
+  "prompt_sha256": "a585065aa90dbeae9ff2e3a8d7cf8fb508954222ae9abe7eaedec2ebdb251f2d",
+  "transport_exit_code": 0,
+  "transport_ok": true,
+  "model_actual": "claude-opus-5-5",
+  "session_id": "d677bd8e-0433-4032-b6c7-3913bdf35446",
+  "usage": {
+    "input_tokens": 6,
+    "cache_creation_input_tokens": 58438,
+    "cache_read_input_tokens": 41883,
+    "output_tokens": 29473,
+    "output_tokens_details": {
+      "thinking_tokens": 24410
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 58438,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 28832,
+        "cache_read_input_tokens": 22599,
+        "cache_creation_input_tokens": 35839,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 35839
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "provider_error": false,
+  "terminal_subtype": "success",
+  "tools_actual": [
+    "Read",
+    "Grep",
+    "Glob"
+  ],
+  "actual_route_verified": true,
+  "candidate_hashes_unchanged": true,
+  "raw_report_sha256": "8249c09267878737abce7873967c85bc84f2aeb9cbf7e36b2f5f5f1c88b65012",
+  "status": "review-complete",
+  "confidence": "medium",
+  "report_interpretation": {
+    "contract_schema": "subscription-review-report/1",
+    "report_schema": "subscription-review-report/1",
+    "legacy_mode": null,
+    "normalized_verdict": "PASS_WITH_NOTES",
+    "normalized_confidence": "medium",
+    "normalized_check_verdicts": [
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS"
+    ]
+  },
+  "report_sha256": "48d72948b3b59e9b2c8bd7a2f8496f03d95113682beca09bb582335ef28681ef",
+  "report_text_format": "fenced-json",
+  "report_body_sha256": "80d354e0338b9a22657c94c46bdb81b5328fe389011450c80bfc661b14d1e451",
+  "finished_utc": "2026-10-30T04:37:14.974993+00:00",
+  "elapsed_seconds": 300.04,
+  "transport_events_sha256": "ca4d8b6c9e9098cda794826776fdc02a9acf0fff5a42a8e65c3b650473d83c08",
+  "transport_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "read_ledger_sha256": "83fe7aa41170c86708513e0a9f907e97e89748084861f3d7d80a3073443616d0",
+  "coverage_verified": true
+}

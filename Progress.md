@@ -41,10 +41,15 @@
   exact observable shift; high-value existing Lean algebra reuse; scientific
   Opus5.5/HIGH review; then spectral cone/product estimate. The statement
   review was launched on frozen source `0586399` using actual Opus5.5/high
-  subscription runtime2.1.304 and account <account removed>. Session3915 is live at
-  capture; exact launch binding is in statement-launch-v1.json. Poll the
-  same native state for a terminal report; do not restart on an observation
-  timeout. No verdict yet; no review invented.
+  subscription runtime2.1.304 and account <account removed>. Session3915 terminated: all5PASS/MEDIUM, accepted=false at unchanged
+  HIGH threshold;300.04seconds, complete native read coverage and exact
+  hashes verified. Report/receipt/ledger and20member native archive retained.
+  All5optional findings adjudicated in statement-adjudication-v1.md.
+  A substantive v2 names the full separable HS path-product domain and
+  explicit Phi(x)=sum rho_j x_j K assembly, plus Bochner covariance/strong
+  integral, cone radius and downstream obligations. This is a new exact
+  consumer to review, not an unchanged-confidence retry. It is NOT proved
+  or accepted; no Gaussian/flow/constant claim is upgraded.
 - Local wiki search/cite and synthesized concept/model reads are recorded in
   local-recon.json. REFRAME as standard Gaussian tilting applied to the
   actual flow; no theorem/method novelty or full literature gate claimed.

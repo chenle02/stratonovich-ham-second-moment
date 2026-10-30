@@ -1,0 +1,59 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "medium",
+  "source_coverage": [
+    ".review/required-sources.json lines 1-18 (read plan only; earns no read credit)",
+    "reviews/2026-10-30-joint-gaussian-tilt/contract-v1.md lines 1-127 (complete)",
+    "notes/local-causal-young-flow.md lines 1-504 (complete)",
+    "notes/interaction-driver-path.md lines 1-346 (complete)",
+    "notes/direct-event-calibration.md lines 1-224 (complete)",
+    "notes/phase-response-test.md lines 1-379 (complete)"
+  ],
+  "checks": [
+    {
+      "claim": "C1. The objects are the same actual ones: d1 original homogeneous Gamma, raw |t-s|^-a with no fBm factor, one common Gaussian family for the raw masked driver and for Z=W(psi), and no assumption that the cutoffs span W alone. Joint Gaussianity is justified by the accepted construction.",
+      "verdict": "PASS",
+      "reason": "Contract L10-16 matches local-flow L15-17 and driver note L11-16 (raw covariance, nonzero original Gamma, 0<alpha<=1). L15-16 matches driver note L216-217 and L230-231 ('no claim that every cutoff field is measurable with respect to the raw field alone'). The accepted driver note says the raw localized HS coordinates are 'literal deterministic Gaussian noise tests first, and extend in the noise Hilbert closure' (L235-238). The mask is linear: W_R(f)=W(zeta_R f) (local-flow L114). W^delta is a linear time rescaling of W (local-flow L416, driver L309). The increments use the same W shifted (driver L177-181). So every driver coordinate lies in the closed first-chaos span of the raw W, as Z does, and L2 limits of centred jointly Gaussian families stay jointly Gaussian. The H\u00f6lder versions agree a.s. with these L2 values at each fixed time (driver L280-281), and the B(F) assembly is linear over finitely many HS paths (local-flow L209-220). Obligation 1 is therefore a routine verification inside the accepted construction, not a new construction. The contract also correctly warns that covariance contraction alone does not fix the coupling (L76-77)."
+    },
+    {
+      "claim": "C2. Clock, amplitude, mask, time Jacobian, covariance primitive, block profile and phase are exact.",
+      "verdict": "PASS",
+      "reason": "I recomputed each item. (i) Law of W^delta: delta^a |delta(u-u')|^-a Gamma = |u-u'|^-a Gamma. This is the raw law, matching local-flow (7.1) L416-419 and driver (B0). In distributional form, W^delta(f)=delta^(a/2-1) W(f(./delta,.)) gives the same variance, so no hidden Jacobian. (ii) Fast time t=delta u turns delta^2 V_tt=Delta V+sqrt(delta) W V (direct-event (W) L21-25) into V_uu=Delta V+delta^((1-a)/2) W^delta V. So g_delta=delta^((1-a)/2) and the horizon is L=1/delta, consistent with driver L322-325. (iii) Cov(W(delta q,x),W(psi))=h(delta q,x) with the raw kernel. With the mask, Cov(W(zeta f),W(psi))=<zeta f,h>, so C_delta(u)=g_delta delta^(a/2) \u222b_0^u S(-q)B(zeta h(delta q))S(q)dq. Doing the substitution in pairing form also gives no extra Jacobian. The exponent sum (1-a)/2+a/2-1/2=0 is correct (contract L56). (iv) The mask radius r_delta=c/delta is kept separate from the physical R=T delta (contract L20-21 vs direct-event (S) L14-15). This matches local-flow R_delta=c/delta (L413). The backward cone from u=L has radius 1/delta+O(1), so a fixed c>1+sup|supp phi| suffices. (v) Global time m+u gives h(delta(m+u))=h(m delta+delta u), matching local-flow (7.1). The phase (V, partial_u V)=(V, delta V_t) matches local-flow L432-434 and driver L324-325. The final fractional block is kept (contract L96)."
+    },
+    {
+      "claim": "C3. The tilt sign and half-cost are right, and the countable-coordinate law target holds for every nonnegative Borel J, with degenerate covariance allowed, a separable/little-H\u00f6lder support, null-set-safe reconstruction and the actual B(F) driver. No hidden stronger topology or circular premise.",
+      "verdict": "PASS",
+      "reason": "Cameron-Martin with lambda=-1/sqrt(delta): E[exp(lambda Z - lambda^2 v/2) J(X + c/sqrt(delta))] = E J(X + c/sqrt(delta) + lambda c) = E J(X). This is exactly (T) (L62-64), with half-cost v/(2 delta). The law of A_delta is carried by a separable set: A_delta is a continuous linear image Phi of finitely many separable HS path versions (local-flow L216-220, driver L289-290). It is therefore Borel measurable even into the non-separable C^theta([0,L];B(F)), and (T) for all nonnegative Borel J on that space does not need a stronger topology. J_delta is continuous: the Young map is locally Lipschitz (local-flow (5.3)) and the phi-average is a bounded functional on F (L384-385). The contract correctly refuses to assume that the B(F) H\u00f6lder space is separable (L33-34). The shift C_delta/sqrt(delta) is a Cameron-Martin vector of the law and is Lipschitz in B(F) by (5.5) (L309-310), so it stays in the little-H\u00f6lder class for theta<1. Because the tilted measure is equivalent to P, version null sets are harmless once the reconstruction is shown to be linear on its domain. That is listed as obligation 2, and degeneracy is explicitly permitted. Nothing in the target assumes (T) or its conclusion: obligations 1-3 (L74-87) are open proof obligations, not circular premises."
+    },
+    {
+      "claim": "C4. Observable and profile: F contains (1,0); the terminal displacement is paired with nonnegative unit-mass smooth compact phi; only the noise-only canonical identification is used; the nonzero profile is the retained residual plus mask. The smooth compact psi profile is admissible under (5.6), and the original point-moment target is preserved.",
+      "verdict": "PASS",
+      "reason": "(1,0) is in F (local-flow L171-173). P(L,0)(1,0)=S(L)U(L,0)(1,0) matches (5.4) and contract L36-37. The noise-only identification is (6.1) at fixed g (L374-402) together with Section 7 L464-468. Inequality (M) (phase-response L302-336) gives E J_delta(A_delta) <= E u(T,0)^2 with no R^d loss, so the original point-moment target is preserved. Admissibility: h=(|.|^-a *_t)(Gamma *_x)psi with psi in C_c^infinity. Putting derivatives on psi, h is C^infinity and bounded with bounded derivatives on t in [0,1]. Its t-dependence is Lipschitz into C_b^1, hence strongly measurable. Its Riesz tails are |x|^-alpha with derivative tails |x|^(-alpha-1); for white space h has compact x-support. So (5.6) holds with c=0, and after masking zeta_{r_delta} h is compactly supported with a uniform W^{1,infinity} bound for r_delta>=1. The shifted driver is A_delta + A_h with A_h as in (5.5), as local-flow L324 permits ('Apply the same argument to A_h+g M_R'). Contract L66-70 explicitly keeps the residual and rules out residual discard. The Cameron-shift identification that local-flow leaves open (L406-408, L498) is bypassed honestly: J_delta is defined on the driver, so the tilt acts at driver level and only the zero-profile canonical identification is used. Higher dimensions are kept open (contract L6, L124; local-flow L500)."
+    },
+    {
+      "claim": "C5. The inputs are non-vacuous for actual nonzero Riesz or white covariance in the stated range; no spectral, event or sharp result is assumed; no covariance monotonicity or source-normalization repair is used. The target is a sound bounded consumer.",
+      "verdict": "PASS",
+      "reason": "In d1, 0<alpha<=1 with a<1 makes alpha+a<2 automatic. A nonzero Gamma has spectral density c|q|^(alpha-1), c>0 (phase-response L178-181), so v=E Z^2>0 for every nonzero psi and (T) is a non-trivial identity. All named inputs (driver, mask bound (2.2) for alpha<1 and contraction for alpha=1, Young flow, (6.1), (M)) cover this whole range. The contract claims no event rate, no 2 Lambda(h)-v/2 bound, no sharp constant and no normalization repair (L122-126). No Loewner or covariance ordering is invoked (L69). (T) is the standard change-of-measure step towards the micro-contract 2Lambda(h)-I(h) with I=v/2 (direct-event (H) L213-218), and it correctly names spectral cone/product growth as the next gap. This review does not clear novelty, the source theorems, the Gaussian proof, Lean or the whole paper."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Contract L32-33 asks for 'a separable little-Holder version'. The little-H\u00f6lder space of B(F)-valued paths is itself non-separable, since B(F) is. Optional clarification: the version takes values in a closed separable subset, for example the closure of Phi(product of separable HS little-H\u00f6lder spaces) plus the Cameron-Martin directions, and 'constructed driver space' (L60) should name that set or the full C^theta_0([0,L];B(F)) with its norm Borel sigma-algebra.",
+      "Contract L51-53: C_delta(u)/sqrt(delta) involves the free group S, which is not norm continuous on F (local-flow L193-194, L288-291). Optional: state that the q-integral is the strong integral of (5.5), and that Cov(A_delta(u),Z) means the Bochner mean E[A_delta(u) Z] in B(F) (separable range) or the coordinatewise covariance.",
+      "Contract L92 ('The temporal singularity is locally integrable, not bounded pointwise') refers to the kernel |t-s|^-a. After convolution with smooth compact psi, h is smooth and bounded on [0,1]. Optional rewording so h itself is not suggested to be pointwise unbounded.",
+      "Downstream, not needed for (T): causal mask independence for the profile-shifted flow (local-flow Section 6 shows it for regularized smooth-potential flows and identifies only the zero-profile observable), and the passage from the psi-generated profile class to the variational optimizer and intended constant. Both will be needed when the sharp lower bound is assembled. The contract's exclusion list covers the latter only implicitly ('intended source constant map' is open in local-flow L499-500).",
+      "Contract L20: 'c large enough' could state the explicit sufficient condition c >= 1 + sup{|x|: x in supp phi}, which also gives r_delta >= 1 for the uniform mask bounds (local-flow L18-20, L92-94)."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is a statement-fidelity review only: no proof of (T) or of obligations 1-5, and no fresh certification of the accepted named inputs, which were taken as scoped and accepted per the task.",
+    "check_contract.py (contract L101-107), Progress.md (L6), the cited adjudication files, the Lean seams and the source revision 0586399 are not in the frozen packet and were not inspected. The described scalar MGF probes are plausible, but I did not verify them.",
+    "The commit hashes and adoption references in the note headers were taken at face value. No git or repository state was checked, per instructions.",
+    "The constants were recomputed by hand during this review (scaling law of W^delta, Jacobian, amplitude cancellation, Cameron-Martin sign and half-cost, admissibility of h). No machine check was run.",
+    "This is an AI review, not human verification, and not a novelty, source-theorem, Gaussian-proof, Lean or whole-paper clearance."
+  ]
+}
