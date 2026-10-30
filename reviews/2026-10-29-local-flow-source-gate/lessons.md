@@ -56,3 +56,11 @@ finding adjudicated. Uniform vertexwise regularization bounds, physical
 strong-vs-norm topology and the canonical heat/time-only identification
 sequence are durable application boundaries. The proposed Gaussian tilt
 and spectral/product consumer remain unreviewed next-step work.
+
+14. Close a reported compatibility friction with the owner classification.
+    The2.1.314refusal is expected fail-closed behavior, not a core defect.
+    Runtime support requires real text/image stream fixtures; a version
+    string or successful provider call cannot justify relaxing read credit.
+    Keep the launch-local supported pin and same-environment doctor. The
+    owner proposes adapter calls to Le; do not duplicate that work or infer
+    approval. Existing source-bound2.1.304reviews retain their validity.
