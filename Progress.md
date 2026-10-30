@@ -4196,3 +4196,26 @@ closed. Next open: weighted eigenfunction/derivative/localdual bounds and
 fractionalSobolev-to-Fwave complement, before wholeproduct/observable/event/
 sharpconstant. No livereviewer remains; original fullgoalACTIVE. Canonical
 TeX/PDF/source-normalization/higherdimensional/companiondecision unchanged.
+
+
+## Resumption: weighted projection subaim — 2026-10-30
+
+Gate class: whole-paper.
+Gate scope: unchanged original upper/sharp goal; this bounded internal step
+addresses weighted ground tails and actual F projection/invariance only.
+Mandatory protocols: AGENTS.md/PROJECT-GOAL.md; independent Opus5.5/HIGH
+for new analytic arguments; whole-paper/circulation gates remain separate.
+
+Todo: preserve/audit inherited draft; freeze full proof/context; independent
+scientific review; adjudicate all findings; commit/push/sync checkpoint.
+Next after acceptance: fractional Sobolev complementary wave bound and F
+transfer, then entire product and terminal observable. No new target waived.
+
+Focused local/origin/<HUB> checks agree at2aac968; remote clean. Advisory
+workspace audit timed out. Sole local WIP was the untracked weighted note;
+its exact bytes preserved in reviews/2026-10-30-weighted-projection/.
+Root read/audit and rational projection controls pass; analytic acceptance
+not claimed. Frozen prior S1 statement covers this unchanged subaim.
+Review routing NORMAL_REVIEW: no Lean certificate covers ODE/duality/wave
+claims; exact analytic exclusion recorded in worker honesty. No new Lean
+package, companion, source import, source-normalization or novelty claim.
