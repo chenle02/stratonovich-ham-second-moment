@@ -1,10 +1,13 @@
 # A global one-dimensional damped lower-endpoint bound
 
-CANDIDATE PROOF, not adopted. Preproof6aa03b9 passed17groups/HIGH,
-472.565seconds,15texts+2sourceimages,no requiredrepairs. Fullscientific
-analytic/source/type/application review REQUIRED. This targets every
-admissible d1 parameter, while originald2/d3,sharpupper,conditionalexact
-limit and intendedsource/domain/label interpretation remainOPEN.
+ACCEPTED at the scoped scientific analytic/source/type/application gate:
+actualOpus5.5/HIGH,7PASSgroups,447.816seconds,31texts+2sourceimages,
+no requiredrepairs; scientificsourceee188ab. Exact evidence and five
+optional clarifications in reviews/2026-10-30-global-omega/
+scientific-adjudication-v1.md. The actuald1lower comparison holds across
+allstatedparameters with explicitgain>1 andown E_star^O. Originald2/d3,
+sharpupper,conditionalexactlimit andintendedsource/domain/label
+interpretation remainOPEN; fulloriginalgoalACTIVE.
 
 ## 1. Actual statement and scoped imports
 

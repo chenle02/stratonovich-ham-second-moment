@@ -1,0 +1,99 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "notes/global-d1-damped-lower.md lines 1-342 (complete)",
+    "reviews/2026-10-30-global-omega/target-v1.md lines 1-108 (complete)",
+    "reviews/2026-10-30-global-omega/worker-honesty-v1.md lines 1-30 (complete)",
+    "reviews/2026-10-30-global-omega/falsification-v1.md lines 1-22 (complete)",
+    "reviews/2026-10-30-global-omega/build-certificates.py lines 1-34 (complete)",
+    "reviews/2026-10-30-global-omega/certificates-v1.json lines 1-108 (complete)",
+    "reviews/2026-10-30-global-omega/check-envelope.py lines 1-25 (complete)",
+    "reviews/2026-10-30-global-omega/envelope-diagnostics-v1.json lines 1-54 (complete)",
+    "reviews/2026-10-30-global-omega/source-context-v1.json lines 1-17 (complete)",
+    "reviews/2026-10-30-global-omega/local-recon-v1.md lines 1-21 (complete)",
+    "reviews/2026-10-30-global-omega/statement-adjudication-v1.md lines 1-35 (complete)",
+    "reviews/2026-10-30-global-omega/scientific-worker-honesty-v1.md lines 1-39 (complete)",
+    "reviews/2026-10-30-global-omega/check-envelope-v2.py lines 1-35 (complete)",
+    "reviews/2026-10-30-global-omega/envelope-diagnostics-v2.json lines 1-127 (complete)",
+    "reviews/2026-10-30-global-omega/generate-lean.py lines 1-88 (complete)",
+    "reviews/2026-10-30-global-omega/pi-library-context-v1.txt lines 1-15 (complete)",
+    "notes/damped-lower-endpoint-bridge.md lines 1-347 (complete)",
+    "reviews/2026-10-30-damped-lower-bridge/scientific-adjudication-v1.md lines 1-60 (complete)",
+    "notes/raw-positive-value-ceiling.md lines 1-348 (complete)",
+    "notes/occupation-control-approximation.md lines 1-364 (complete)",
+    "notes/general-positive-consumer.md lines 1-477 (complete)",
+    "reviews/2026-10-28-source-normalization/adjudication-v2.md lines 1-66 (complete)",
+    "reviews/2026-10-28-source-normalization/packet-v2/pages/chen-03-lower.png (full image viewed)",
+    "reviews/2026-10-28-source-normalization/packet-v2/pages/chen-04-upper.png (full image viewed)",
+    "lean-progress/local-checks/global-omega-v1/StratonovichHAMAudit/GlobalOmega.lean lines 1-144 (complete)",
+    "lean-progress/local-checks/global-omega-v1/Audit.lean lines 1-14 (complete)",
+    "lean-progress/local-checks/global-omega-v1/WrongOrigin.lean lines 1-3 (complete)",
+    "lean-progress/local-checks/global-omega-v1/WeakEnvelope.lean lines 1-5 (complete)",
+    "lean-progress/local-checks/global-omega-v1/definitions-types-and-axioms.txt lines 1-456 (complete)",
+    "lean-progress/local-checks/global-omega-v1/local-receipt.json lines 1-68 (complete)",
+    "lean-progress/local-checks/global-omega-v1/README.md lines 1-26 (complete)",
+    "lean-progress/local-checks/global-omega-v1/archive-verification.json lines 1-13 (complete)",
+    "lean-progress/local-checks/global-omega-v1/version-check.json lines 1-16 (complete)",
+    ".review/required-sources.json lines 1-107 (read plan only; earns no read credit)"
+  ],
+  "checks": [
+    {
+      "claim": "C1: Objects and scope. The note uses the actual original d1 Riesz or white model, the stated a/alpha domain, q/k/m/d/x, the same canonical Q2/kappa, and the accepted bridge point inequality (1). Its O, damped E_star^O, F map, M_a, R_star, Delta and Omega are exact. The claim covers all d1 parameters, with (1) as the only stochastic input and no p1 premise or source fix.",
+      "verdict": "PASS",
+      "reason": "Definitions match bridge (1), (4), (9) and (11) character for character: M_a, K_star with d=q-2a, R_star, Delta, Omega and kappa=(4-alpha-a)/k. The domain gives x in (0,1/2), q in [3,4), k in [2,3) and d>1. E_star^O and K_star are never altered; only the scalar bound on R_star moves d to its envelope. The p3 image shows (1.10) as a first-mean statement in E u(t,x), with map (3-alpha)((4-alpha-2a)^((4-alpha-2a)/2)/(2^3(4-alpha-a)^(4-alpha-a))(2E/(2-alpha))^((2-alpha)/2))^(1/(3-alpha)). That equals F_a. The p4 image shows the 1/2 gradient penalty in (1.12) and the kernel exp(-(lambda+lambda^2/(2(4-alpha-2a)))|u|)lambda^(a-1)/Gamma(a) in (1.13), which equals K_star. The factor 2^m is correctly labeled as the auxiliary c=2 consumer. Domain and label qualifications are retained, including the every-slice A_d versus a.e. O distinction."
+    },
+    {
+      "claim": "C2: The P4 majorant, B4, monotonicity in d, the Delta derivative and reduction (4).",
+      "verdict": "PASS",
+      "reason": "The Taylor remainder has the stated sign: f^(5)(t)=-exp(-t), so exp(-z)=P4(z)-(1/24)int_0^z exp(-t)(z-t)^4dt and P4>=exp(-z)>0. The Gaussian integral (1/2)Gamma((a+j)/2)(2d/u)^((a+j)/2) was rederived. The u exponent is j-(a+j)/2=(j-a)/2>-1, so each term is absolutely integrable. With the prefactor 2 from R_star, (2d)^((a+j)/2)*2^(-(j-a)/2)=2^a d^((a+j)/2) and int_0^(1/2)u^((j-a)/2)du=2^(-(j-a)/2)/(j+2-a), which reproduces every coefficient, factorial and power in B4. Monotonicity comes from the positive double integral, with exp(-u lambda^2/(2d)) increasing in d and d<=4-2a. partial_q Delta=(1/2)log[q(q-2a)/(q-a)^2]<0 was rederived, and q-2a>=1 on the domain. Inequality (4) has the correct direction, Ceff=M_a^-1 is actual, and the q=4 envelope is only a scalar parameter bound, not an alpha=0 SPDE."
+    },
+    {
+      "claim": "C3: Elementary Gamma bounds (5)-(9) use exact constants, with no numerical Gamma value, Euler constant or reflection formula.",
+      "verdict": "PASS",
+      "reason": "Duplication: Beta(s,s)=2^(1-2s)Beta(1/2,s) leads to (5). e: 8/3+5/96=87/32<11/4. pi: 177^2/10^4=3.1329<3.14, and the excerpt gives pi_gt_d2 at the pinned revision. log4: the partial sum over denominator 375000 is 1515832/375000=189479/46875>4. Log moment: 1-1/4+1/18-1/96+1/600=5737/7200 (7200-1800+400-75+12). The IBP gives E1(1). The reciprocal identity was checked algebraically (the numerator over 4X reduces to 4). int|y-1|dmu=2/e, and Cauchy-Schwarz gives >=2/e^2, so E1(1)>=1/(2e)+1/(2e^3)>242/1331+32/1331=274/1331>1/5. Then Gamma'(1)>-4297/7200>-3/5 and the tangent bound gives Gamma(1+x)>=g. T(x)=Beta(1/2+x,1/2)/sqrt(pi) is convex with T(0)=sqrt(pi). Log-differentiating duplication at s=1/2+x gives psi(1/2)=psi(1)-2log2, so T'(0)=-2sqrt(pi)log2 with Gamma'(1) cancelling. T>=sqrt(pi)(1-xlog4)>=L uses 1-7x/5>0. Cauchy-Schwarz at 3/2 plus recurrence gives pi/(1-4x^2). 1-x-g^2=x(5-9x)/25 and (1-x)^x<=exp(-x^2)<=P have the correct directions. All bases are positive."
+    },
+    {
+      "claim": "C4: Exact Gamma identity (10), bracket positivity, the prefactor and Delta bounds, and actual ratio <= V (13)-(14).",
+      "verdict": "PASS",
+      "reason": "With d0=4(1-x), each term was recomputed. j=0 gives 1/(2(1-x)). j=2 gives x(1-x)/(2-x). j=4 gives x(x+1)(1-x)^2/(3(3-x)). j=1 gives -2sqrt(1-x)Gamma(1/2+x)/(3-2x). j=3 gives -2sqrt(1-x)Gamma(1/2+x)(2x+1)(1-x)/(3(5-2x)). Using 2^(2x)4^x=2^(4x), duplication at x and at x+1/2, and Gamma(1/2+x)/Gamma(x)=xT(x), the powers of 2 collapse to 2^1, which is exactly (10). The original bracket is positive because B4 and the prefactor are positive. Since sqrt(1-x)>=g>0, T>=L>0 and Cx>0, H is at least the bracket, so H>0. Inequality (11) multiplies only positive factors. The symmetric Taylor identity with radius 2x and f''<=1/(3-4x) gives 0<Delta<=2x^2/(3-4x)=z<1. Then 3-4x-2x^2>=3-5x>=1/2 and exp(z)<=1/(1-z) give (12). The bound is on the actual positive ratio, with correct upper directions and no proxy."
+    },
+    {
+      "claim": "C5: Rational core and Lean. D(1-V)=xQ for all 16 coefficients; two 16-term certificates; D>0, V<1 and V>0 analytically; four public Lean lemmas with complete types and definitions.",
+      "verdict": "PASS",
+      "reason": "Full hand expansion was done. N_E=18+7x-49x^2+34x^3+2x^4-8x^5+2x^6, N_C=18-5x-8x^2+4x^3. N_H=625N_E(3-2x)(5-2x)-177x(5-3x)(5-7x)N_C(1-x)(2-x)(3-x), which reproduces the JSON degree-9 factor exactly. D=750(1350-6525x+12099x^2-10717x^3+4109x^4+210x^5-734x^6+232x^7-24x^8). Convolving with (2-2x^2+x^4)(1-4x^2)(3-4x) gives a zero constant term and all 16 Q coefficients exactly. Certificate tables agree digit by digit across the note, JSON and Lean source. By exact hand arithmetic, A0-A4, A14, A15=B0, B1 and B15 match, along with sum A_i=2^15(4^15Q(1/8)-1), sum (-1)^iA_i=237888, sum B_i=2^15(4^15Q(3/8)-1) and sum (-1)^iB_i=237888. All coefficients are positive, the substitutions cover [0,1/4] and [1/4,1/2], and Q>=4^-15. Q(1/2)=39375=2D(1/2) is consistent. V>0 comes from the analytic chain. The pp.all definitions are concrete Real numerals and match Q, D and V (13) with the correct parse. Public types are as claimed and the listed axioms are the standard three. The Lean proofs use explicit ring and positivity steps with no assumed positivity. The scope is the finite core only."
+    },
+    {
+      "claim": "C6: All-d1 consequence (18). V<1 gives Omega>=V^(-1/k)>1 and the strict point bound, with correct constants and no overclaim.",
+      "verdict": "PASS",
+      "reason": "(4), (14) and (17) give 0<R_star expDelta/M_a^-1<=V<1. Reciprocal and the positive power 1/k preserve direction, so Omega>=V^(-1/k)>1. Substituting into bridge (11) with F_a(E_star^O)>0 gives (2) and (18), with 2^m=2^((4-alpha)/(3-alpha)), kappa and amplitude retained inside E_star^O. V(0)=1 was confirmed directly, so no uniform gain is claimed at a=0. No optimizer, minimax exchange, moving test, rough flow, signed restriction, first-mean, Jensen or normalization input is used. The source reading remains conditional on both the domain and label dictionaries, per bridge adjudication item 1. A consistency check against the raw ceiling and bridge (8) shows no contradiction. Sharp upper, d2/d3, exact limit and whole-paper claims are not asserted."
+    },
+    {
+      "claim": "C7: Tools and evidence as recorded, including Lean pins, axioms, artifact pairs, False controls, the preserved failure, refusals, v1 versus v2 diagnostics, and unchanged-scope statements.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "This check confirms only that the records are mutually consistent; nothing was executed or hashed. The receipt shows 5 identical original/replay artifact pairs, exit 0 for compile, audit and replay, and exit 1 for both controls. The axiom listing is standard. The pins are v4.35.0 and Mathlib 56a0058. Generator output text matches GlobalOmega.lean and Audit.lean by reading. WrongOrigin targets V(0)=1 and WeakEnvelope targets V/P at 1/10, whose JSON value is below zero for 1-weak, so both are mathematically false statements. The failure and the corrective nonzero facts are recorded consistently. The weak-envelope and whole-interval refusals are correctly treated as non-counterexamples; index 6=-2340641/29120 was reproduced by hand. v1 prose overstatement is preserved and adjudicated: v1 code lacks the sqrt and final exp asserts, and v2 adds both plus seven margin fields over the same 60 digits and 8 cases, with all margins positive and rows matching v1. The artifacts contain no contradicting claim of source, wiki, HPC or circulation changes, but absence of such actions cannot be independently verified here."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Note line 41 says V is defined in Section 5, but V is defined in Section 4, equation (13); Section 5 proves the rational bound. This is a cross-reference slip with no mathematical effect.",
+      "Section 2 lines 55-57 describe integrating over lambda and u and say the integral bounds R_star, omitting the prefactor 2 from R_star=2int_0^(1/2)K_star. Formula (3) correctly includes that factor, so only the wording is imprecise.",
+      "Line 148 states domination near t=0 only. Differentiation under the T integral also uses integrability of (1-t)^(-1/2) near t=1, and the tangent step only needs |x|<=1/4. This is routine but implicit.",
+      "Integrating the reciprocal identity at line 136 uses integrability of (X-2)/4 and (X-2)^2/(4X) under mu and the fact int(y-1)dmu=0. These are immediate from the stated moments but are not displayed.",
+      "The excerpt in pi-library-context shows theorem pi_gt_d2 without its enclosing namespace. The name Real.pi_gt_d2 relies on the note and accepted bridge. The new step sqrt(pi)>177/100 is elementary hand arithmetic and is not part of GlobalOmega.lean, consistent with the stated Lean scope."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This reviewer had read-only tools. It executed no Lean, Sympy, mpmath or hash computation, and it makes no execution, replay, hash, archive or version verification claim. Those remain recorded root or receipt evidence.",
+    "Hand arithmetic fully verified the D, N_H and Q expansion. Not every interior certificate coefficient was recomputed separately: A5-A13 and B2-B14 are covered by digit agreement across artifacts, exact sum and alternating-sum functionals, and the recorded Lean ring proof with its build-certificates assert.",
+    "Native compile logs, False-control outputs, attempt archives and the source PDF are not in the frozen packet. The failure-at-False and archive member counts are taken as recorded.",
+    "The stated source revision cannot be confirmed by reading because the workspace is not a git repository and no hashes were computed.",
+    "Accepted bridge, occupation, raw-value and consumer results were read and their applications inspected, but they were not re-proved, per the review scope.",
+    "This is an AI review. It is not human verification, a novelty audit, whole-paper clearance or source-normalization resolution. Original d2/d3, sharp upper, exact limit and intended source domain and label questions remain open, and the original goal remains active.",
+    "The ambient message-queue hook notice was neither read nor used."
+  ]
+}
