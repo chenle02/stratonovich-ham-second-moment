@@ -4296,3 +4296,9 @@ scoped tests; not actual HAM product evidence. Key candidate mechanism:
 choose aperture using the accepted normalized complement bound for ALL
 terminal times, before choosing large T, avoiding circular aperture/T
 choices. No cone/product proof or scientific acceptance yet.
+
+Independent moving-cone preproof audit live at frozenba836d6: actual
+first-party Opus5.5/high,8required texts, unchangedHIGHthreshold;
+session34194/native stratonovich-moving-cone-statement-v1. Poll same
+handle/receipt, no restart on observation timeout. No statement verdict
+or cone proof at this capture. Active goal remains unchanged/full.
