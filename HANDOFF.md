@@ -1,76 +1,101 @@
-Last updated: 2026-10-30 14:15 UTC (Codex)
+Last updated: 2026-10-30 15:30 UTC (Codex)
 
-Original full upper/sharp goal ACTIVE. Full upper scale previously reviewed;
-actual d1 Gaussian tilt and fixed-family spectral groundwork now accepted.
-Sharp constant, changing-block product/event and higher dimensions remain open.
+Original full upper/sharp goal ACTIVE. Actual d1 retained-residual event
+and raw-cost original point second-moment lower bound are now accepted
+for every FIXED positive separable test. Source constants/optimizer class,
+original higher dimensions and sharp upper/lower identification remain open.
 
 ## ⏭ Next session: where to stand and what to do
 
-Stand in this repository root. Read Progress.md, then freeze and falsify
-the actual moving-block cone and positive terminal displacement-average
-contract in reviews/2026-10-30-complement-transfer/next-product-contract.md.
-That file is UNREVIEWED planning, not a product theorem.
+Stand in this repository root. Read Progress.md and poll the SAME live
+raw-variational statement audit: session4799/native directory relative
+to home .local/state/Le-AI-Lab/stratonovich-raw-variational-statement-v1.
+Frozen source6203ab7,12texts+1primary source image, actual Opus5.5/HIGH.
+Use launch record in reviews/2026-10-30-raw-variational-dilation/.
+An observation timeout is not terminal and does not justify a restart.
 
-Do not repeat the accepted Gaussian tilt, ground-state existence/gap,
-weighted projection or complementary-wave bridge. Use their exact actual F
-objects, two phase entries, constant data and fixed-family uniform constants.
-The next proof must propagate a positive growing amplitude through every
-block with actual random operator errors, then control the final fractional
-block and nonnegative smooth displacement average.
+After its terminal report, adjudicate every finding and prove the actual
+test-class/spatial-dilation/raw-variance/rate and supremum theorem in
+target-v1.md. It is still PROPOSED, not accepted or proved. Do not
+repeat the accepted event/cone/spectral/tilt chain. Keep V1 an auxiliary
+raw variational quantity, distinct from first-mean asymptotics and source
+E/E_star/L_*. No normalization repair or new source constant is adopted.
 
 ## Pre-flight checks
 
-1. Progress.md is workflow authority. Read AGENTS.md and PROJECT-GOAL.md;
-   retain all original scope/decision points and source-normalization limits.
-2. Recheck local/origin/<HUB> ancestry and dirty ownership before edits;
-   serialize remote-ref writes. Last substantive adoption 131c76889d4533d5fef0ab5b573de8e721f4a62d.
-   No external WIP or live reviewer/Lean job remains at this checkpoint.
-3. Weighted scientific source1242590: Opus5.5/HIGH18PASS,244.922seconds,
-   seven texts complete, no required repairs. Review/adjudication and raw
-   archive in reviews/2026-10-30-weighted-projection/. Proofbody unchanged.
-4. Complement scientific sourceb07d013: Opus5.5/HIGH18PASS,268.893seconds,
-   nine texts complete, no required repairs. Original invalid JSON report
-   preserved; supported unique reversible brace insertion reran all gates
-   and accepted with zero new provider calls. Evidence in
-   reviews/2026-10-30-complement-transfer/. Proofbody unchanged.
-5. Validate applications, rather than treating L2 or phase-norm growth as
-   the product/observable theorem. F includes constants separately; global
-   E is not dense in F. Complement removes only the growing ground branch.
-6. Prior accepted actual Gaussian tilt retains the residual and exact
-   raw profile/cost and original point-moment consumer. No normalization
-   guess or terminal point-evaluation on H1/2.
-7. Runtime2.1.304 is selected on launch-local PATH for account <account removed>;
-   run doctor in that same environment. No global setup modifications.
-8. Canonical TeX/PDF unchanged from2aac968. No LaTeX rebuild was needed.
-   New analytic spectral claims are NOT Lean-certified. L0/PROPOSED and
-   separate companion-creation decision4 unchanged; no cluster job.
+1. Read AGENTS.md/PROJECT-GOAL.md and current Progress.md authority.
+   Preserve original all-dimensional upper/sharp objective and decisions.
+2. Recheck local/origin/<HUB> refs and dirty ownership, serializing
+   ref writes. Current substantive HEAD before this HANDOFF-only successor:
+   24730a605a5b687aa43be738808bae9b03d40e3d. No foreign WIP was present.
+3. Actual scientific sourced5dcd46, adoption28cc01e:18groups/HIGH,
+   379.671seconds,24texts complete, no required repairs. All current/
+   frozen/committed/native bindings checked. Evidence and six optional
+   adjudications in reviews/2026-10-30-actual-shifted-event/.
+4. Moving cone scientificabfdab4:17groups/HIGH,292.758seconds,24texts.
+   Weighted1242590, complementb07d013 and tilt e51432c stay scoped
+   accepted inputs. Two most recent finite kernels add all-n scalar error
+   budget and normalized moderate-density power identity. Raw field,
+   probability and spectral claims are NOT Lean-certified.
+5. New raw variational target uses exact covariance Radon homogeneity,
+   test amplitude s^(3-alpha), L2 unitary sqrt(s), and source/class
+   crosswalk. Six exact finite algebra controls pass; they do not prove
+   measure or spectral changes of variables. Fixed scales only before
+   the time limit; no s(delta) or uniform event estimate is assumed.
+6. The upper-rate input is an EXACT excerpt of canonical T:full-upper,
+   with custody. It is not a new TeX edit or first-mean source constant.
+   Canonical110-pageTeX/PDF unchanged. Raw score finiteness should use
+   actual lower plus SAMEmodel finite upper; no optimizer assumed.
+7. Source p4 literal gradient penalties1 and1/2 and kernel discrepancy
+   remain unresolved; retained HIGH source-normalization adjudication
+   was re-read. Wiki search/cite/synthesis and p4visual reads are in
+   local-recon.md/source-crosswalk-v1.md. Static white numerical warning
+   also remains; no published numerical static constant imported.
+8. Selected first-party account <account removed> was healthy at last launch37percent
+   short/60percent weekly. Runtime2.1.304 is launch-local PATH only.
+   Doctor in the same environment; no global setup edits.
 
 ## Concrete deliverables for the next session
 
-- Frozen actual two-entry moving-cone/terminal-average statement with
-  falsification controls and independent preproof statement audit.
-- Quantitative entrance, block preservation and final-observable proof
-  using accepted fixed-family spectral estimates and actual flow stability.
-- Independent scientific HIGH gate and full findings adjudication before
-  using a product estimate in a stochastic event or variational bound.
+- Terminal statement audit record and finding adjudication, with exact
+  source delivery/hash bindings; no confidence-only retry.
+- Complete test-class inverse map, Radon covariance scaling, unitary
+  eigenrate scaling and raw quadratic variance proof, then a well-defined
+  finite positive raw variational supremum and scalar-label homogeneity.
+- High-value scalar Lean checks and full independent analytic/type/
+  application scientific gate before using the raw variational result.
 
 ## Success criteria for the immediate next step
 
-An exact actual-family contract, passing the named norm-versus-product and
-phase-versus-observable kill tests, with no desired product growth hidden
-in its hypotheses. Then a reviewed complete proof or a recorded obstruction
-at the precise failed step. Preserve the original full sharp/dimensional goal.
+A complete independent preproof audit, followed by a self-contained and
+reviewed raw dilation/supremum theorem or a precise obstruction. Preserve
+fixed-scale quantifiers and source/class distinctions. The full sharp
+constant is not closed by the expected scalar-label homogeneity alone.
 
 ## Anti-success criteria
 
-No block-norm multiplication shortcut, omitted velocity, deleted decaying
-ground partner, lost projection-tail correction, constants put in global L2,
-compact Riesz potential assumption or unsupported full-product closeness.
-No Skorohod result, source1.24repair, All.bib/sourcePDF/sibling edits,
-new companion/package, HPC, novelty, whole-paper/circulation claim or
-unauthorized correspondence. No confidence-only review retry.
+No V1=actual first mean or L_* assumption, no claim that V2>2V1 beats
+actual Jensen, no unsquared variance scaling, no lost L2 normalization,
+wrong covariance Jacobian, guessed kinetic factor, omitted inverse map,
+source repair or silent nonseparable/higher-dimensional extension.
+No Skorohod development, source1.24repair, sibling/refdb/sourcePDF edit,
+new companion/package/HPC/circulation/correspondence or novelty claim.
+No replacing original full goal by the currently accepted d1 subclass.
 
 ## What the previous sessions produced
+
+2026-10-30 continued goal: accepted actual common-residual positive-average
+event and original point-moment raw lower2I_psi-v_psi/2 at scientific
+d5dcd46/adoption28cc01e,18groups/HIGH. Unit errors, fixed-integer block
+composition, final deterministic extension, cone/loss/Riemann budgets,
+SAME-Z moderate event and raw half cost fully reviewed. Two finite local
+Lean facts compile/replay with standard3axioms/2numericFalse controls;
+all5owned outputs match. Canonical TeX/PDF unchanged.
+
+Raw variational target frozen6203ab7,6exact controls and local wiki/source
+recon retained; statement review currently live at session4799, no verdict.
+Full original goal remains ACTIVE; no contact, public release or companion.
+
 
 2026-10-30 resumption: inherited untracked weighted note preserved exactly,
 frozen1242590 and independently accepted18PASS/HIGH. New actual F
@@ -667,36 +692,37 @@ Latest checkpoints:
   of remaining lemmas is NEXT,not another planning/review-only cycle.
 
 
+
 ## Repo & git state at handoff
 
-Article substantive checkpoint: 131c76889d4533d5fef0ab5b573de8e721f4a62d. Local/origin/<HUB>
-were synchronized there before this HANDOFF-only successor. All substantive
-changes are committed and pushed. No foreign dirty paths remain.
-Wiki project page ../SPDEs-wiki/content/projects/stratonovich-ham-second-moment.md
-exists and was not edited. This session is an intra-round scientific
-checkpoint, not the full wiki/cold-read/round-close protocol.
-No sibling or private Lean companion repository was created or changed.
+Article checkpoint before this handoff successor: 24730a605a5b687aa43be738808bae9b03d40e3d.
+Local/origin/<HUB> synchronized there; substantive work committed and
+pushed, no foreign dirty paths. One native statement reviewer is live as
+listed above; do not duplicate it. All prior scientific reviews terminal.
+Wiki ../SPDEs-wiki/content/projects/stratonovich-ham-second-moment.md exists
+and is unchanged. This is an intra-round checkpoint, not completed full
+wiki/cold-read/round-close or whole-paper/circulation clearance.
 
 ## Operating notes
 
-Exact receipts/reports/read ledgers and original native archives live under
-the two new review directories. Complement recovered receipt is distinct
-from the invalid original; do not relabel the original receipt as accepted.
-The read-only check-diagnostics.py reproducer was added AFTER review; the
-reviewer recomputed the stored rational controls by hand. It does not
-certify ODE/spectral/Sobolev/flow mathematics. All optional findings have
-explicit adjudications. Retain these qualifications in downstream uses.
+Native reports/receipts/ledgers/archives and every optional adjudication
+live under the dated review directories. Complete proofbodies and finite
+Lean sources stayed unchanged on scientific adoption; status openings only
+changed. Local execution evidence and read-only AI mathematical review
+are separate.54finite local deductions now exist, no official companion.
+L0/PROPOSED and separate creation decision4 remain pending.
 
-Prior Gaussian scientifice51432c, ground scientific45e1b13, weighted1242590,
-complementb07d013 are different scoped evidence identities. None is
-whole-paper/novelty/human/publication clearance.
+Raw variational statement packet has12texts/1exactsourcePNG. Read its
+manifest and launch record; no new source images or unknown editions are
+needed. The earlier source-normalization discrepancy has an exact HIGH
+audit; it is not permission to select a correction.
 
 ## Risks to monitor
 
-Moving-profile cones need actual parameter continuity and random-error
-stability, not merely each frozen block's spectral gap. The entrance and
-final fractional block require positive terminal displacement control.
-Riesz masks need a separate W1infinity perturbation estimate. A separable
-positive tilt is only a lower subclass, not the full variational optimizer.
-Original higher dimensions, sharp upper/lower constant and intended source
-normalization remain open. Respect original stop/report decision points.
+Source normalization and optimizer identification remain substantive.
+Positive separable tests are a lower subclass; spatial dilation preserves
+that subclass but does not enlarge it. Actual first-mean and auxiliary
+coefficient1 variational values are distinct. Original higher-dimensional
+local-flow/spectral consumers and the sharp upper constant remain open.
+Stop/report at PROJECT-GOAL decisions and never claim completion from
+a passing scoped proof or a literal source discrepancy.
