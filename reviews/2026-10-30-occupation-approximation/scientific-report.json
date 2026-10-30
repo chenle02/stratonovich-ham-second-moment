@@ -1,0 +1,97 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    ".review/required-sources.json lines 1-77 (read plan only, no read credit)",
+    "notes/occupation-control-approximation.md lines 1-361 (complete)",
+    "reviews/2026-10-30-occupation-approximation/target-v1.md lines 1-119 (complete)",
+    "reviews/2026-10-30-occupation-approximation/worker-honesty-v1.md lines 1-40 (complete)",
+    "reviews/2026-10-30-occupation-approximation/check-diagnostics.py lines 1-27 (complete)",
+    "reviews/2026-10-30-occupation-approximation/diagnostics-v1.json lines 1-90 (complete)",
+    "reviews/2026-10-30-occupation-approximation/falsification-v1.md lines 1-31 (complete)",
+    "reviews/2026-10-30-occupation-approximation/local-recon-v1.md lines 1-29 (complete)",
+    "notes/general-positive-consumer.md lines 1-477 (complete)",
+    "notes/nonseparable-profile-family.md lines 1-385 (complete)",
+    "reviews/2026-10-30-general-positive-consumer/scientific-adjudication-v1.md lines 1-73 (complete)",
+    "reviews/2026-10-30-nonseparable-family/scientific-adjudication-v1.md lines 1-72 (complete)",
+    "reviews/2026-10-30-general-positive-consumer/canonical-model-upper-context.txt lines 1-86 (complete)",
+    "reviews/2026-10-30-general-positive-consumer/canonical-source-custody.json lines 1-34 (complete)",
+    "reviews/2026-10-28-source-normalization/adjudication-v2.md lines 1-66 (complete)",
+    "reviews/2026-10-30-occupation-approximation/statement-adjudication-v1.md lines 1-34 (complete)",
+    "reviews/2026-10-30-occupation-approximation/scientific-worker-honesty-v1.md lines 1-43 (complete)",
+    "lean-progress/local-checks/occupation-form-v1/StratonovichHAMAudit/OccupationForm.lean lines 1-23 (complete)",
+    "lean-progress/local-checks/occupation-form-v1/Audit.lean lines 1-7 (complete)",
+    "lean-progress/local-checks/occupation-form-v1/WrongBudget.lean lines 1-4 (complete)",
+    "lean-progress/local-checks/occupation-form-v1/WrongShift.lean lines 1-4 (complete)",
+    "lean-progress/local-checks/occupation-form-v1/types-and-axioms.txt lines 1-77 (complete)",
+    "lean-progress/local-checks/occupation-form-v1/local-receipt.json lines 1-68 (complete)",
+    "lean-progress/local-checks/occupation-form-v1/README.md lines 1-30 (complete)",
+    "lean-progress/local-checks/occupation-form-v1/archive-verification.json lines 1-13 (complete)",
+    "lean-progress/local-checks/occupation-form-v1/version-check.json lines 1-13 (complete)"
+  ],
+  "checks": [
+    {
+      "claim": "C1: actual model, class B and X, representatives, and scoped inputs",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The note uses the real d1 Riesz kernel c_Gamma|x|^-alpha dx for 0<alpha<1 and the white kernel c_Gamma delta_0 at alpha=1, with amplitude kept. This agrees with H:homog at d=1, since scale homogeneity excludes |x|^-1 dx as a Radon measure. kappa=(4-alpha-a)/(3-alpha) and Q2 match consumer (24). B with the sum norm is complete because Cauchy sequences have L1 and L2 limits that agree locally in measure. B is separable because it embeds as a closed diagonal in L1xL2. Joint representatives exist: the simple-function subsequence converges in B for a.e. t and a.e. on boxes, using the global spacetime L1 bound. Null-set independence follows from Fubini and the norm estimates. The stochastic input is exactly the fixed-smooth-test bound (24) with finite Q2 and V_c^pos from (31)-(32), for the same canonical u. Rayleigh identification is imported separately from family (3)-(4) and T4.12. No source constant or rough-flow premise enters. Note: consumer (25) and the S_c^pos definition are also cited, but only as deterministic definitions and identities (see minor findings)."
+    },
+    {
+      "claim": "C2: time Schur bound, q in X, spatial split, bilinear cost, v formula, positivity, continuity",
+      "verdict": "PASS",
+      "reason": "Integration gives int_0^1 K(s,t)dt=[s^(1-a)+(1-s)^(1-a)]/(1-a), with maximum 2^a/(1-a) at s=1/2 by concavity and symmetry. Cauchy-Schwarz and Fubini give (1). (1) applied to ||psi(t)||B gives absolutely convergent Bochner integrals for a.e. sigma and (2). Measurability follows from simple functions, whose coefficients are measurable in sigma. K>=1 on the unit square gives q_sigma>=q_avg, and q_avg is nonzero with positive finite mass. C_near=2c_Gamma/(1-alpha) and C_far=c_Gamma are correct, and (3) follows from Minkowski and the absolute integral. The far convolution tends to 0 by L1 approximation with bounded-support functions and kernel decay. White uses h=c_Gamma q in L2 with no far term. (4) follows from Cauchy-Schwarz, Hoelder and the split. (5) follows from applying Schur to the L2-L2 and L1-L1 components separately, then using ||f||1,||f||2<=||f||B. Tonelli gives exactly v=int int psi h. Positivity holds because K>=1 gives v>=int q_avg(Gamma*q_avg), which is positive in both the Riesz and white cases without continuity. (7) is bilinear polarization. Gamma, variance and Fourier conventions are unchanged."
+    },
+    {
+      "claim": "C3: H1 facts, potential bound, closed form, actual Rayleigh rate, core equality, positivity, smooth matching",
+      "verdict": "PASS",
+      "reason": "Density of compact smooth functions and the continuous representative with ||f||inf^2<=2||f||2||f'||2 are established. ||f||inf<=D+N and ||f||4^2<=DN+N^2 follow from it. (8) is correct: P<=A(DN+N^2)+bN^2, and the square (2eps D-AN)^2/(4eps) gives the bound for every eps>0. The form is continuous on whole H1 through the near and far pairing bounds. With eps=1/2 and C=A+A^2/2+b, (10) holds in both directions, using P>=0 and C+1>=1, so the form is closed. The fixed countable set is normalized compact smooth, dense only in the L2 unit sphere, and the note says so. Continuity of the form gives exact equality (12), so measurability concerns the actual rate (11). lambda^2<=C gives (13), which is integrable because A and b lie in L2(0,1). The plateau trial uses only h_sigma>=U_avg and finite positive local mass of U_avg. It gives a(w_R,w_R)<=A_chi/R-m<=-m/2 and the uniform rate sqrt(m/(2RB_chi)), with no bounded or continuous U_avg. On C_pos, real positive p_sigma attains the complex H1 bottom, so the real Rayleigh infimum equals E1. E1<0 deactivates max(0,.), so (11) equals the accepted lambda_sigma and I equals its integral. No rough H2, self-adjoint representation, eigenfunction or flow claim is made."
+    },
+    {
+      "claim": "C4: positive approximation and integrated-rate control",
+      "verdict": "PASS",
+      "reason": "Cap, spatial cutoff and interior-time cutoff give 0<=psi-psi^n<=psi. Dominated convergence applies in L1 and L2 for a.e. t and then in time, with dominating function ||psi(t)||B. Nonnegative product mollification with radius below 1/(2n) keeps time support inside [1/(2n),1-1/(2n)] and a fixed compact spatial interval. Mass is preserved, so the mollification is nonzero and lies in C_pos. Common support gives ||f(t)||1<=sqrt(length)||f(t)||2, so spacetime L2 convergence controls both X components. The radius is chosen for error below 1/n, which gives (14) with (7). No renormalization occurs. L_j is bounded on B: the near coefficient is in L2 and the far coefficient is bounded by C_far||f_j||2^2. Evenness and Fubini give (15). Schur (1) gives L2(sigma) convergence of pairings for each j. The subsequence with error <=2^-k for j<=k gives a.e. convergence for each j by summing squares, on a common full-measure set. Then the countable supremum, (12) and continuity of the square root give liminf lambda_nk>=lambda_psi. Nonnegative Fatou gives (APPROX) for the actual integrated rate. No uncountable exchange, uniform test noise or n(delta) occurs."
+    },
+    {
+      "claim": "C5: POINT and SUP",
+      "verdict": "PASS",
+      "reason": "POINT: each fixed psi_n is a smooth test with the actual score matching consumer (24), so Q2>=2I_n-v_n/2 for the same Q2. Taking the lower limit with v_n->v and (APPROX) gives POINT, with no rough random variable. SUP: for all c>0, S_c^X is a nonempty set of real numbers. Each score is <=liminf(cI_n-v_n/2)<=V_c^pos, which bounds it above before the supremum is taken. The reverse inequality uses C_pos inclusion and exact matching. No optimizer or supremum/time interchange is used. Label homogeneity is transferred only as equality of already defined values, and density is proved rather than replaced by scaling."
+    },
+    {
+      "claim": "C6: occupation class O and its inclusion in X_pos",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "O is explicit: real strongly measurable H1-valued g, normalized a.e., with finite T_g. The two square-map estimates are correct and give continuity H1->B, so rho_g is strongly measurable. ||rho(t)||1=1 and ||rho(t)||2^2<=2||g'(t)||2. (1+y)^2<=2+2y^2 and Cauchy-Schwarz on the unit interval give ||rho||X^2<=2+4sqrt(T_g). Multiplication by bounded measurable nonnegative w keeps a measurable class with the stated norm bound, and nonzero is a hypothesis. No normalization at zero times occurs. Boundaries are retained: no claim for every printed Ad, no source energy or optimizer, no first mean. Raw versus damped kernels and gradient 1 versus 1/2 stay distinct, and intended normalization stays UNKNOWN. Note: the 1 versus 1/2 detail is not stated in the source excerpts of this packet (see limitations), and the time argument of w is left implicit."
+    },
+    {
+      "claim": "C7: Lean types, axioms, controls and receipts",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Printed types of potential_budget and shifted_coercivity match the source statements exactly and show universe level 0 throughout. Axioms print as propext, Classical.choice and Quot.sound. Both statements are true by hand: the first by the square identity with eps>0, the second because RHS-LHS>=N^2/2 under hbound. The application to (8) has A=A_sigma, D=||f'||2, N=||f||2, heps=eps>0, then adds b N^2. The application to (10) has P=P_sigma(f), C=C_sigma, and hbound is (8) at eps=1/2. These premises are discharged analytically, not by the kernel. The recorded receipt has compile and audit exit 0, replay exit 0 and five equal hash pairs. The controls are recorded with exit 1, and by hand their instances are genuinely false: 4<=3 at A=2,D=N=eps=1 and 1/2<=-1 at D=0,N=1,P=C=2. Mathlib is pinned at 56a0058. Lean 4.35.0 appears in README and version-check, not as a tag string in the receipt. The server warning refusal, the universe parser failure and the missing-receipt successor are preserved explicitly. No formal Sobolev, form, Bochner, density or SPDE credit is claimed. All of this evidence is inspected as recorded, without execution or hash validation."
+    },
+    {
+      "claim": "C8: diagnostics, preproof clarifications and scope boundaries",
+      "verdict": "PASS",
+      "reason": "Script and JSON values agree by hand. Spreading Riesz: interval energy (8/3)length^(3/2), L2 squared n^-2, mass n^3, v=(64/9)n^2, with 1, 256/9, 64, 1600/9 and 6400/9 correct for the five cases. White: raw cost (8/3)(n/(n+1))^3 and renormalized cost (8/3)(n+1)/n, correct for all six cases with limit 8/3. Both are presented as wrong-topology or normalization controls, not physical or optimizer counterexamples. All eight preproof clarifications are addressed in the proof, and the far tail is proved but not used for any rough spectral inference. Boundaries are retained: source optimizer and value map UNKNOWN or open, V1 not the actual first mean or source L/E/E_star, no strict Jensen improvement, no signed control, no sharp upper, no higher dimensions, no whole-paper claim, no Skorohod, source fix, companion, HPC, contact, novelty or circulation claim. The original full goal stays active."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Section 1 names consumer (24),(31)-(32) as scoped inputs, while Section 3 also cites consumer (25) and Section 5 uses the S_c^pos definition. These are deterministic identities and definitions that give (24) its meaning, not extra stochastic premises, so a one-line cross-reference could make the import list literal.",
+      "Section 4 does not say why psi^n stays strongly measurable. The map z->min(z,n)1_{|x|<=n} is 1-Lipschitz on B, so composing it with psi and the time indicator suffices.",
+      "The inclusion of C_pos in X_pos is used without a written argument. It is immediate from continuity of compactly supported smooth functions into B.",
+      "Section 6 writes w without its argument, whereas target-v1 has w(s). The stated norm bound and class membership hold for a time weight. A jointly measurable spacetime weight would also work via separability of B, but the intended reading could be stated.",
+      "The README describes the intended far bound as ||h_far||infinity, whereas the proof uses the larger measurable b_sigma=C_far||q_sigma||1. The proof's choice is valid and is the one that gives measurability and L2(0,1) control. This is only a wording difference between the local README and the note.",
+      "The Lean version 4.35.0 is recorded in README and version-check, while local-receipt.json carries the Mathlib revision and the Lean binary hash without a version tag string. WrongBudget and WrongShift are numeric instances showing the mutated inequalities false, not mutated theorem statements. README's claim that they fail at actual False, rather than from API errors, rests on archives outside this packet.",
+      "The far-convolution decay is proved in Section 2 but not used later. Clarification 8 permits this, and the note makes no inference from it, though it does not say explicitly that the property is unnecessary for the density route."
+    ],
+    "notes": []
+  },
+  "required_repairs": [],
+  "limitations": [
+    "All proof checks were done by hand reading. No Lean, Python or other code was executed, and no hash, archive member, version query, compile or replay was recomputed or validated. Receipts and diagnostics outputs are assessed as recorded, apart from the hand arithmetic reported above.",
+    "The source revision 80e47d68229f8dc2e94e236f64103a2f61cc94c6 could not be checked because the workspace is not a git repository.",
+    "Accepted inputs (consumer (24),(31)-(32) and the family (3)-(4)/T4.12 smooth Rayleigh input) were checked for exact matching and scope, as instructed, and not re-proved. The conclusions inherit them.",
+    "The source's raw versus damped kernels and gradient penalties 1 versus 1/2 appear in this packet only through the note and secondary audit records, not as source excerpts. They could not be independently confirmed here, but they are used only as non-assertion boundaries.",
+    "This AI review is not human verification, a novelty audit, whole-paper certification or circulation clearance. The original full sharp/source/all-dimensional goal remains active and is not assessed as achieved. An ambient hook announced a queued amsg message; it was not read and contributed no evidence."
+  ]
+}

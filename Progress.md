@@ -6,8 +6,8 @@
 
 ## Current state
 
-- **Live occupation proof review:** complete X-class approximation/closed-form/rate/cost/occupation-density consumer at80e47d6; actual Opus5.5/high,25texts,session96093/native stratonovich-occupation-scientific-v1. Preproof7HIGH accepted statement only; density/point/sup conclusions remain unadopted. Poll same handle/receipt.
-- **Latest general-positive consumer:** actual d1 general-positive compact psi cone/noisy event/SAME-Z raw half-cost original-point lower and enlarged V_c^pos accepted24groups/HIGH at12c9879 (462.611seconds,34texts). All nine unchanged finite-kernel NEWapplications checked. Q2>=V2pos>=V2sep with exact auxiliary homogeneity; no source/firstmean/Jensen-improvement claim. NEXT: positive occupation-profile approximation and source correspondence, retaining sharp upper/higher dimensions/intended normalization.
+- **Latest occupation bridge:** actual positive X=L2(time;L1 intersect L2 space) covariance/closed-H1-form/measurable-Rayleigh-rate approximation, original-point lower and exact smooth/X score-supremum equality accepted8groups/HIGH at80e47d6 (272.897seconds,25texts). Includes actual finite-energy occupation densities g² and bounded nonnegative timeweights. Two new scalar form-budget applications checked. NEXT: raw variational VALUE/source/clock comparison; intended normalization/sharp upper/higher dimensions remain open.
+- **Latest general-positive consumer:** actual d1 general-positive compact psi cone/noisy event/SAME-Z raw half-cost original-point lower and enlarged V_c^pos accepted24groups/HIGH at12c9879 (462.611seconds,34texts). All nine unchanged finite-kernel NEWapplications checked. Q2>=V2pos>=V2sep with exact auxiliary homogeneity; no source/firstmean/Jensen-improvement claim. Occupation-profile approximation now accepted at80e47d6; NEXT raw value/source/clock comparison, retaining sharp upper/higher dimensions/intended normalization.
 - **Latest general-profile bridge:** actual d1 general-positive-psi covariance family S1-S3 (uniform ground/gap, weighted actual F projection and physical complement) accepted27PASS/HIGH atc0a0093. Original undefined-J_phi preproof FAIL is preserved and repaired. General-test stochastic event/raw lower/variational consumer now scoped accepted at12c9879; source constants and original higher dimensions remain open.
 - **Latest raw variational consumer:** positive-separable d1 raw V_c finite/positive, exact auxiliary-label homogeneity and Q2>=V2 accepted20groups/HIGH at0fd2a05. Four finite Lean applications checked. V1 is not actual first mean/source L; this is not a Jensen improvement or sharp source constant. Next: nonseparable optimizer class and source correspondence, with original dimensions/sharp upper open.
 - **Latest actual lower consumer:** retained-residual d1 positive-average event and raw-cost original point second-moment lower rate >=2I_psi-v_psi/2 for EACH fixed positive separable test accepted18groups/HIGH atd5dcd46. Exact2finite Lean applications checked. Next: raw variational dilation/optimizer class/source correspondence; full sharp/all-dimensional normalization targets open.
@@ -19,12 +19,12 @@
 - **Phase:** actual d1masked/local causal Young flow, canonical noise-only averaged observable and growing-block operator stability accepted13PASS/HIGH atd020a2a. Uniform local operator bounds handle data1 and a growing observation cone without a global stationary HS norm. Later actual d1 tilt/spectral/cone/event consumers are scoped accepted for positive separable tests; raw variational/source/sharp and original higher-dimensional scope remain open. WHITE13/original9unchanged.
 - **Review boundaries:** prior92page quantitative/mild source `a7e725e` passed its own19checks/HIGH. The new8check review covers the direct norms, positive spatial Wick-measure limit, arbitrary joint vertex-width construction and their consumers. It does NOT freshly audit every unchanged operator/interval proof. Exact source/delivery/adoption bindings and limitations are in `reviews/2026-10-29-fixed-order-construction/`.
 - **Current artifact:** canonical110-page/60-proofTeX/PDF unchanged. Accepted internal memos now cover actual Gaussian tilt, ground/gap, weighted projection, complementary wave bound, moving cone and actual positive-separable event/raw-cost lower bound. Raw variational dilation/supremum and actual lower consumer now scoped accepted for the general-positive d1 class at12c9879; no manuscript integration or whole-paper clearance is implied.
-- **Open targets:** original fixed-positive-a sharp p2 constant in all admissible dimensions/covariances. Next is positive occupation-profile approximation and optimizer/source correspondence after accepted general-positive-test consumer12c9879. Raw positive-separable dilation/supremum remains scoped accepted. Original higher-dimensional operators/flows, sharp upper constant and intended source normalization remain open. The d1 positive-separable spectral/cone/event/cost chain is accepted. Whole-paper/novelty/circulation, companion decision4 and canonical wiki/manuscript integration remain separate/open.
+- **Open targets:** original fixed-positive-a sharp p2 constant in all admissible dimensions/covariances. Occupation-profile approximation is accepted at80e47d6; next is raw value/clock and optimizer/source correspondence. Raw positive-separable dilation/supremum remains scoped accepted. Original higher-dimensional operators/flows, sharp upper constant and intended source normalization remain open. The d1 positive-separable spectral/cone/event/cost chain is accepted. Whole-paper/novelty/circulation, companion decision4 and canonical wiki/manuscript integration remain separate/open.
 - **Agent8coordination:** completed at read-only source/statement/ownership level,as requested by Le. Agent8accepted our exact map;three API component fits and stronger-premise gaps are recorded in lean-progress/coordination/2026-10-29-agent8/reuse-adjudication.md. Current <PRIVATE-PACKAGE> (<PRIVATE-PACKAGE>) gated7f27788/evidence5393594: read-only source/pins and offline20PASSreceiptbinding verified; all9Leanfiles unchanged fromd5fde707/75d9781. PriorMEDIUMmathematicalreview is not upgraded; historicalSWEreceipts remain e5e9558. Source/API/pins checked;no donor-package build/gate/companion/lease/registry transaction. Local Lean pilot is recorded separately. L0/PROPOSED and decision4unchanged.
 - **Authorization:** Le's continuing full goal includes the sharp/lower track. The current wave is the bounded actual local-flow/sharp-lower consumer,with the HIGH review threshold unchanged. It does not redefine the original all-alpha0sharp target,claim novelty or promote a paper. Le now explicitly permits Lean verification;standalone local checks do not create a companion repo. Report/honor PROJECT-GOAL decision points;companion-creation decision4remains pending. No correspondence/public release authorized.
 - **Worker:** Codex/GPT author, paper-dev workflow; historical project handoff to agent #30 on 2026-10-26. Lean remains L0/PROPOSED (`lean-progress/PROGRESS.md`). Ten normal reference requests exist; new edition-custody intake is nonblocking, not source authentication.
 
-- **Local Lean:** twelve standalone seams contain58finite deductions with local compile/replay/standard-axiom evidence. Latest4raw variational identities have clean source/replay and3numericFalse controls; their exact type/application gate passed20groups/HIGH with the analytic proof. Earlier scoped reviews retain their own exact boundaries. Analytic SPDE, measure, spectral and supremum arguments remain outside these kernel checks. No official package/companion gate.
+- **Local Lean:** thirteen standalone seams contain60finite deductions with local compile/replay/standard-axiom evidence. Latest4raw variational identities have clean source/replay and3numericFalse controls; their exact type/application gate passed20groups/HIGH with the analytic proof. Earlier scoped reviews retain their own exact boundaries. Analytic SPDE, measure, spectral and supremum arguments remain outside these kernel checks. No official package/companion gate.
 
 
 ## Resume checkpoint — 2026-10-30: joint Gaussian tilt contract
@@ -4796,3 +4796,28 @@ occupation-Rayleigh selection, Gaussiancontrol elimination, clockweights
 or minimax step needs its own precise frozenclaim/falsification/proof.
 No intsqrt ->sqrtint shortcut, timeconstant rate, optimizerattainment or
 normalizationfix is adopted. Not part of running25textproofpacket.
+
+### Occupation-control approximation adoption — 2026-10-30
+
+ActualOpus5.5/high8PASS/HIGH,272.897seconds,25texts complete,no mandatory
+repairs. All25live/frozen/git80e47d6 inputs,40nativearchive members,
+executedproxyJSON/two localLean receipts/fiveartifacts and both29/30file
+Leanarchives verified. Sevenoptional findings adjudicated, including
+actualmeasurabletruncation, C_pos inclusion,timeweightw, b_sigma larger
+thanfar-norm, nativeversion/Falsecontrol distinction. Only openingstatus
+changed; mathematicalproofbody exact80e47d6. Earlierpreproof recovered
+onebrace, thisfullscience directvalidJSON; identitiespreserved separately.
+
+ACCEPTED actualX costcontinuity, WHOLEH1closedform/genuineRayleighcore,
+positivefinitemeasurablerate and actualpositiveapproximation preserving
+rawcost/one-sidedintegratedrate. Originalcanonicalpoint lower extends to
+X_pos and its REALscore suprema equal existing smoothV_c^pos. StrongH1
+finiteenergyoccupationg² and boundednonnegativetimeweights included.
+No rough stochastic evolution/operatorH2/eigenfunction theorem inferred.
+Two newfiniteformbudgets actualtype/applications scopedaccepted;60local
+finite declarations/13seams, no officialcompanion/package gate. Both
+serverwarning replayrefusal and rootuniverse-parser/missingreceiptrepair
+retained. No reviewer/Lean job remains live. CanonicalTeX/PDF unchanged.
+Next realgap rawVALUE/clock/sourcecomparison, not more homogeneity/density.
+Original intendednormalization/sharpupper/higherdimensions/wholepaper/
+coldread/novelty/circulation remain open; fullgoalACTIVE.

@@ -324,3 +324,13 @@ archives allmembers verified. Evidence local-checks/occupation-form-v1/.
 60finite declarations/13localseams now provisional, no form/Sobolev/density/
 Bochner/rate/SPDE certificate. Actual newapplication review stillREQUIRED;
 no package/companion/lease/registry/donor/HPC/Comparator transaction.
+
+
+Occupation-form application close: scientific80e47d6,8groups/HIGH,
+272.897seconds,25texts,no requiredrepairs. Both complete publictypes,
+standardaxioms and actual(8)/(10) formbudget applications independently
+checked, including analyticpremises. Nativebinaryversion4.35.0/commiteb6cafb
+and bothFalsecontrol logs rootrechecked; all nativearchives verified.
+60finite deductions/13localseams now scopedaccepted at their exact gates.
+No formal Sobolev/H1form/Bochner/core/density/supremum/SPDE theorem or
+package/companion/lease/registry/HPC/Comparator transaction. L0/PROPOSED.

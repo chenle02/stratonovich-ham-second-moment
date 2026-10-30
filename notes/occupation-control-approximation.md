@@ -1,10 +1,13 @@
 # Positive occupation controls and exact smooth-test approximation
 
-CANDIDATE PROOF, not adopted. Preproof8f60730 passed7groups/HIGH at
-266.316seconds with no required repairs; one missing report brace was
-recovered by the supported byte-reversible tool,zero provider calls.
-Full scientific analytic/type/application review is REQUIRED. Original
-sharp/source/all-dimensional goal remains active.
+ACCEPTED at the scoped scientific analytic/type/application gate: actual
+Opus5.5/HIGH,8PASS/PASS_WITH_NOTES groups,272.897seconds,no requiredrepairs;
+scientific source80e47d6. Exact evidence and seven optional clarifications
+in reviews/2026-10-30-occupation-approximation/scientific-adjudication-v1.md.
+Positive rough-control approximation, original-point lower and equality
+of raw variational suprema hold in the stated X class, which includes
+finite-energy occupation densities. Original sharp/source/dimensional
+goal and intended normalization remain open.
 
 ## 1. Actual model, functional class and accepted inputs
 
