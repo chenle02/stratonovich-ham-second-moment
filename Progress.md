@@ -6,6 +6,7 @@
 
 ## Current state
 
+- **Live GLOBALd1Omega preproof:** full-rangeGamma/elementaryrational-envelope target at6aa03b9; actualOpus5.5/high,15texts+2images,session24608/native stratonovich-global-omega-statement-v1. No globaltheoremadopted yet. Originalall-dimensional/sharpupper/sourcegates open; poll samehandle.
 - **Latest actual damped lower result:** temporalBeta/legalX/staticlower/dampedenergy GENERALOmega pointcomparison and whitealpha1,a1/2 directpoint theorem(16), exactzeta=(2418683125/2415919104)^(1/8)>1, accepted7groups/HIGH at8883160 (295.426seconds,28texts+2images). OwnE_star^O explicitmeaningfuldomain; source/domain/label matching and normalization unadopted. Threefinite scalar applications checked. NEXT: freeze/falsify candidate full-range Taylor4/Gamma inequality for globalOmega>=1; current8samples/reduction unreviewed. Sharpupper/originald2d3/exactlimit/fullgoal remainOPEN.
 - **Latest raw value comparison:** actual positive-control variational VALUE ceiling in own raw occupation energy E_eta, with strict displayed-map gaps ateta1/2 and legalalpha1/10,a9/10eta1, accepted8groups/HIGH atad6c188 (322.118seconds,26texts+4images). Actual moment Q2 still has only LOWERQ2>=V2 from thismechanism; no Q2 upper/sourceconstantidentity. Two scalar applications checked. Dampedbridge/whitepoint now accepted at8883160; NEXTglobalOmega comparison. Original9pointrecon doesnotprove fullrange. Original sharpupper/all-dimensions/intendednormalization remainopen.
 - **Latest occupation bridge:** actual positive X=L2(time;L1 intersect L2 space) covariance/closed-H1-form/measurable-Rayleigh-rate approximation, original-point lower and exact smooth/X score-supremum equality accepted8groups/HIGH at80e47d6 (272.897seconds,25texts). Includes actual finite-energy occupation densities g² and bounded nonnegative timeweights. Two new scalar form-budget applications checked. RawVALUE ceiling now accepted atad6c188; NEXTdamped-lower-endpoint comparison. Intended normalization/sharp upper/higher dimensions remain open.
@@ -5026,3 +5027,9 @@ Frozen15texts+2sourceimages forindependentpreproof; no longproofwritten,
 no actualglobalOmega/pointloweradoption until propergates. Sharpupper/
 d2d3/source/domain/label/exactlimit/wholepaper remainOPEN. No newreference/
 sourcefix/contact/companion/HPC/Skorohod/publicrelease.
+
+GlobalOmega preprooflive at6aa03b9: actualfirstpartyOpus5.5/high,
+15texts+2sourceimages,all17live/frozen/gitbindings checked,supporteddoctor/
+selectedheadroom0short66weekly. Session24608/samehandle,norestart on
+observationtimeout. Longanalyticproof awaitsproperstatement/sourcegate.
+FinitepolynomialLeanwork provisional/outsidepreproofpacket. GoalACTIVE.
