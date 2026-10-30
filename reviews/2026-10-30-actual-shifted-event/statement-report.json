@@ -1,0 +1,111 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "reviews/2026-10-30-actual-shifted-event/target-v1.md: lines 1-96 (complete)",
+    "reviews/2026-10-30-actual-shifted-event/worker-honesty-v1.md: lines 1-20 (complete)",
+    "reviews/2026-10-30-actual-shifted-event/check-diagnostics.py: lines 1-41 (complete)",
+    "reviews/2026-10-30-actual-shifted-event/diagnostics-v1.json: lines 1-10 (complete)",
+    "notes/moving-block-cone.md: lines 1-240 (complete)",
+    "notes/spectral-ground-family.md: lines 1-139 (complete)",
+    "notes/spectral-weighted-projection.md: lines 1-204 (complete)",
+    "notes/spectral-complement-transfer.md: lines 1-209 (complete)",
+    "notes/local-causal-young-flow.md: lines 1-504 (complete)",
+    "notes/joint-gaussian-tilt.md: lines 1-319 (complete)",
+    "notes/direct-event-calibration.md: lines 1-224 (complete)",
+    "notes/phase-response-test.md: lines 1-379 (complete)"
+  ],
+  "checks": [
+    {
+      "claim": "C1: The objects are the actual original d1 ones: raw covariance and amplitude, common W and Z, F with both entries and constants, and separable psi with raw k, U, v.",
+      "verdict": "PASS",
+      "reason": "For psi=f(t)q(x), tilt equation (5) factors exactly as h(t,x)=k(t)U(x), with k(t)=integral_0^1 |t-s|^-a f(s)ds and U=Gamma*q, amplitude retained. v=E Z^2 is the raw variance. W, Z, g=delta^((1-a)/2), W^delta, L=1/delta, r=c/delta and c>=1+M match tilt Sections 1-3. F matches local-flow Section 4 and the cone note. e_b, ell_b and Pi_b keep both phase entries and the factor 1/2, as in weighted-projection (6)."
+    },
+    {
+      "claim": "C1: A positive compact K can be derived from the actual k, not from an assumed time profile.",
+      "verdict": "PASS",
+      "reason": "f>=0 is nonzero and the kernel is strictly positive, so k>0 on all of [0,1], including t=0, despite supp f lying inside (0,1). Tilt (6) gives Lipschitz regularity of h, and hence of k because U is nonzero in C_b^1. So k([0,1]) is a compact subset of (0,infinity). Any compact positive interval containing it is a legal fixed K for the three spectral notes and the cone theorem."
+    },
+    {
+      "claim": "C1: Y_delta, the retained potential and J_delta^h match accepted tilt (12)-(13).",
+      "verdict": "PASS",
+      "reason": "Translating by s=1/sqrt(delta) gives driver A+H_delta and potential g zeta_r W^delta + zeta_r k(delta u)U. This is the tilt Section 5 potential after factorization. The fast-time equation V_uu=V_xx+(...)V has the attractive sign matching H_b=-d^2-bU and growth rate lambda_b. Y_delta is ell_phi applied to S(L)U_(Phi(X+sb))(L,0)e0, a continuous signed function of X, and Y_delta^2=J_delta^h exactly."
+    },
+    {
+      "claim": "C2: Target A is actual-field growth, and the cone premise (5) can plausibly be discharged from accepted all-unit-block control without assuming growth.",
+      "verdict": "PASS",
+      "reason": "Local-flow (7.2)-(7.3) bound every unit-block difference on the single event {g_delta Z_delta<=epsilon'}, for an all-block maximum with no independence, using R=c/delta. Its probability tends to 1 because (1-a)/2>0. The cone theorem fixes theta, T, omega and epsilon from the family, phi and rho only. A fixed-T telescope with uniform (5.2) flow bounds then has a constant depending only on T and the W1infinity bound, so epsilon' can be chosen before delta. The event-level bound is deterministic on a measurable event, so no pathwise measurability problem arises. The target explicitly forbids assuming block error or product growth, so there is no circularity."
+    },
+    {
+      "claim": "C2: Physical time shifts, the operator-difference topology, deterministic freezing and the Riesz mask defect are correct and feasible.",
+      "verdict": "PASS",
+      "reason": "Conjugating the block driver by S(m) gives P(m+t,m+s)=S(t)U_m(t,s)S(-s), consistent with W^delta density delta^(a/2)W(delta u,x) and tilt Section 5 last paragraph. Premise (5) and (7.3) use norms of operator differences only, so norm continuity of S is not needed. Freezing uses a potential difference of size at most Lip(k)*delta*T*||U||_W1infinity plus k*||(1-zeta_r)U||_W1infinity. The second term is O(r^-alpha) for fixed alpha>0 by tilt (6) and is eventually zero for white noise, so it is small but not identically zero for Riesz, as the target says. Local-flow Section 5 allows both profiles, with stability constant depending only on the norm bound."
+    },
+    {
+      "claim": "C3: The terminal decomposition and extension are valid, and the value used at s is the actual operator.",
+      "verdict": "PASS",
+      "reason": "N=floor(L/T)>=1 once delta<=1/T. The extension gives D_N(t)-P_(b_N)(t)=P_(b_N)(t-s)[D_N(s)-P_(b_N)(s)] for s<t<=T, by the autonomous composition law. The error is at most sup_(tau<=T)||P_b(tau)|| times the endpoint error, and that sup is finite and uniform on K by (5.2). The cone theorem needs only bounded operators, with no continuity or semigroup property of D. Applying (7) at this s gives J(D_N(s)z_N)=Y_delta, and all z_m and D_m(T) with m<N use time at most NT<=L."
+    },
+    {
+      "claim": "C3: The last-unit profile k(min(delta u,1)) agrees with the actual profile on the horizon and keeps the same K, without an improper use of noise beyond L.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "For u<=L, min(delta u,1)=delta u, so the profiles agree. The range stays in k([0,1]), inside K, and the extension is Lipschitz in time into C_b^1, hence admissible. The operators at times <=s depend only on noise up to L. However, the accepted (7.1)-(7.3) maximum runs to m=ceil(1/delta) with full unit blocks. Its event therefore does bound cells past L unless restricted. That is explicit accepted scope and harmless, but the target wording 'no estimate for the noise beyond L is silently used' should not be read as saying the accepted event avoids those cells. See minor finding 1."
+    },
+    {
+      "claim": "C3: Adjacent b closeness and the Riemann, per-block-loss and prefactor budgets are feasible uniformly in N.",
+      "verdict": "PASS",
+      "reason": "|b_(m+1)-b_m|<=Lip(k) delta T<=omega for small delta. delta[T sum_(m<N) lambda(k(delta m T))+s lambda(k(delta N T))] is a tagged Riemann sum of mesh <=delta T for the continuous function lambda composed with k, so it tends to I_psi. The per-block loss is delta(N-1)|log(1-rho)|<=|log(1-rho)|/T, which is small with rho. delta log c_* tends to 0. Cone constants do not depend on N or s, so choosing rho from epsilon, then T, omega and the cone epsilon, then delta, is consistent."
+    },
+    {
+      "claim": "C4: Target B follows the required route from A and accepted (13)-(14), with the minus density, the exact v/2, and no independence.",
+      "verdict": "PASS",
+      "reason": "P(A event intersected with |Z|<=delta^-1/4) tends to 1 by the union bound and Chebyshev. On the intersection the density is at least exp(-delta^(-3/4)-v/(2delta)) and J_delta^h>=exp(2(I_psi-epsilon)/delta). Multiplying by delta gives 2I_psi-2epsilon-v/2-delta^(1/4)+o(1). The expectation is under the original P with the same Z, so no change-of-measure confusion arises. Sign and cost match tilt (10) and (13)."
+    },
+    {
+      "claim": "C4: The mapping delta=t^-kappa and the original point moment match the accepted inputs without an unproved normalization or first-moment constant.",
+      "verdict": "PASS",
+      "reason": "kappa=(4-alpha-a)/(3-alpha), delta=T^-kappa and R=T delta match direct-event (S)-(M) and phase-response Section 5. Tilt (14) gives E J_delta(X)<=E|u(T,0)|^2 with no R^d loss for unit-mass phi. T^-kappa log E|u|^2 is therefore bounded below by delta log E J_delta. Raw time normalization is kept, and the target explicitly denies any source-constant or first-moment input."
+    },
+    {
+      "claim": "C5: The finite controls are specified in the packet, and their recorded data can be reproduced.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The script is self-contained with standard-library Fractions and json. Hand derivation gives 37*5-1=184 floor cases and partial counts 0+18+25+27+28=98. There is 1 telescope witness, and it is a valid telescoping identity with A0A1 != A1A0. There are 20 Bernoulli cases with (1+1/n)^n-1>=1, and 4 density-scale cases with delta*n*n^2=1/n=delta^(1/4). The rate assertion holds because the monotone h=1+t^2 has left-Riemann error at most T delta, which is <=2T delta. The JSON matches these counts and keys. No execution tool was available, so this is a hand replay rather than an execution."
+    },
+    {
+      "claim": "C5: Proxy evidence is not mislabeled as stochastic or operator proof.",
+      "verdict": "PASS",
+      "reason": "The script scope and JSON say 'Exact finite witnesses only; no stochastic/operator theorem'. Worker-honesty states the controls are finite falsification controls, not evidence proving A or B."
+    },
+    {
+      "claim": "C6: Quantifiers and scope are correct, with no smuggled optimizer, source constant, higher-dimensional or sharp claim.",
+      "verdict": "PASS",
+      "reason": "All parameters, test and family are fixed before delta. A holds for every epsilon. B is for each fixed positive separable psi in the d1 subclass. The fences keep general optimizer approximation, E_*, E, L_*, sharp upper constant, all-dimensional and normalization objectives separate and open. Nothing claims a new theorem, novelty, whole-paper clearance, or package/HPC/correspondence action."
+    },
+    {
+      "claim": "C6: Existing finite Lean claims are not represented as analytic probability or flow proofs.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The target explicitly says analytic probability, Young/source/operator and variational inputs are not formalized by those seams. The cone scalar budgets and physical scaling seams are documented in the packet. The joint-tilt note, however, describes only finite sign/cost probes and denies a formal Gaussian Lean result, so any Lean status for a Gaussian sign/cost seam cannot be confirmed here. See minor finding 2."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "1. Line 64-65 says no estimate for noise beyond L is silently used, but accepted Z_delta in local-flow (7.1)-(7.3) has m up to ceil(1/delta) on full unit blocks. A later proof should either restrict the final-unit driver maximum to times <=L or openly cite the accepted beyond-L cells. Either route appears mathematically harmless.",
+      "2. Line 92 groups 'Gaussian sign/cost' with reusable existing seams under formal triage, while the packet shows only finite probes for it and denies a formal Gaussian Lean result. The wording should not be read as a Lean-certified Gaussian seam.",
+      "3. Line 11 distributes 'nonzero nonnegative' across f and q only by grammar. The spectral family requires q>=0 nonzero, so this reading is the required one, and writing it explicitly would remove the ambiguity.",
+      "4. The terminal extension relies on P_b(t)=P_b(t-s)P_b(s). This follows from the composition law and the autonomous potential, and a later proof should state it. The block-shift conjugation P(m+t,m+s)=S(t)U_m(t,s)S(-s) is likewise only indicated by 'actual composition' and the accepted block identification.",
+      "5. The telescope witness uses identity B matrices, so it tests A ordering but cannot detect misordered B factors. It is a single low-power finite falsification control, which suits its stated scope but adds little.",
+      "6. Letter reuse could confuse later text: K is both the compact interval and the local-flow W1infinity bound, M is both support radius and ||U||_infinity in other notes, and T is both block length and physical time in the accepted notes."
+    ],
+    "major_note": []
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is a statement, object-fidelity and feasibility audit. It is not a proof of A or B, proof acceptance, human verification or a novelty audit.",
+    "Accepted local-flow, Gaussian tilt, spectral and moving-cone results were used as scoped inputs, and their internals were not re-proved. Named dependencies outside the packet, such as notes/interaction-driver-path.md and the canonical vertex lemmas, were not read.",
+    "check-diagnostics.py was traced by hand because no execution tool was available. Counts and assertions were derived mathematically, not obtained from a run.",
+    "Feasibility conclusions identify a consistent route from the accepted statements. Full written proofs of A and B remain to be developed and reviewed."
+  ]
+}

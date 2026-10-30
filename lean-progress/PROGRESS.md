@@ -245,3 +245,15 @@ passed17groups/HIGH,292.758seconds,24text delivery complete. Three exact
 scalar types and actual applications accepted; all formal source unchanged.
 Raw source/replay/standardaxioms/3numeric False controls retain local-only
 status; no package/Comparator or formal analytic cone/SPDE theorem.
+
+
+## Actual event local arithmetic (2026-10-30)
+
+Two actual consumers compile/replay cleanly on pinned latest stable4.35.0:
+finite scalar error accumulation for alln and normalized moderate-density
+real-power identity. Exact public types/live standard3axioms and2numeric
+False controls checked; all5owned outputs match. Evidence in
+local-checks/actual-event-v1/. Operator recurrence uses finite identity
+extension; its analytic derivation and all probability/source/flow inputs
+remain outsideLean. Independent exacttype/application review pending.
+No package/companion/lease/registry/HPC; L0 remains PROPOSED.

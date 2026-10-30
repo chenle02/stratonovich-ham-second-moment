@@ -19,7 +19,7 @@
 - **Authorization:** Le's continuing full goal includes the sharp/lower track. The current wave is the bounded actual local-flow/sharp-lower consumer,with the HIGH review threshold unchanged. It does not redefine the original all-alpha0sharp target,claim novelty or promote a paper. Le now explicitly permits Lean verification;standalone local checks do not create a companion repo. Report/honor PROJECT-GOAL decision points;companion-creation decision4remains pending. No correspondence/public release authorized.
 - **Worker:** Codex/GPT author, paper-dev workflow; historical project handoff to agent #30 on 2026-10-26. Lean remains L0/PROPOSED (`lean-progress/PROGRESS.md`). Ten normal reference requests exist; new edition-custody intake is nonblocking, not source authentication.
 
-- **Local Lean:** ten standalone seams now contain52finite deductions with local compile/replay/standard-axiom evidence and scoped type/application checks. The latest7support the local flow/source map; its3false controls and exact limits are in lean-progress/local-checks/local-flow-v1/. Analytic SPDE/path inputs remain outsideLean. No official package/companion gate.
+- **Local Lean:** eleven standalone seams now contain54finite deductions with local compile/replay/standard-axiom evidence and scoped type/application checks. The latest7support the local flow/source map; its3false controls and exact limits are in lean-progress/local-checks/local-flow-v1/. Analytic SPDE/path inputs remain outsideLean. No official package/companion gate.
 
 
 ## Resume checkpoint — 2026-10-30: joint Gaussian tilt contract
@@ -4375,3 +4375,25 @@ first-party Opus5.5/high,12texts,unchangedHIGHthreshold; session39201/native
 stratonovich-actual-event-statement-v1. Poll samehandle/receipt; no restart
 on observation timeout. New signed-average event/raw-cost lower-rate
 statement NOT proved or accepted at this capture. Fullgoal remainsACTIVE.
+
+Actual event/cost preproof audit terminal: actualOpus5.5/high14groups
+PASS/PASS_WITH_NOTES,HIGH,315.346seconds,12texts complete,no mandatory
+repairs. All12live/frozen/committed hashes and native archive verified.
+Six optional findings adjudicated: OPENLY retain accepted full-unit
+beyond-L padding; final fixed-B block extends deterministically only;
+explicit positive/nonzero f ANDq; physical reset/autonomous composition;
+weak finite telescope witness not generalproof; distinguish symbols.
+Statement audit accepted only; event/moment PROOF remains required and
+will get its own full scientific gate. FullgoalACTIVE.
+
+
+Actual event/cost candidate notes/actual-shifted-event.md now proves
+positive k/frozen family, actual unit error from accepted full-unit maximum
+(with its <2unit padding OPENLY cited), deterministic mask/freezing, fixed
+integer-B telescope, final deterministic extension, measurable all-block
+event and positive signed-average growth; SAME-Z moderate event then
+retained-residual Gaussian identity gives candidate2I_psi-v/2 point lower
+rate. Not independently accepted. Two new finite Lean deductions compile/
+replay with standard3axioms,2False controls and5ownedhashmatches; exact
+finite-prefix extension and normalized-density applications fenced.
+Original fullgoalACTIVE; new scientific analytic/type/application gate next.
