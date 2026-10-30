@@ -4087,3 +4087,17 @@ Next: inspect matched primary-source Schrodinger/wave inputs and the F
 transfer gap, then independent statement fidelity review BEFORE proof work.
 No novelty, source theorem, spectral/event/rate, new Lean/package claim.
 Original full goalACTIVE; canonical TeX/PDF and accepted tilt proof unchanged.
+
+
+### Spectral primary-source recon — 2026-10-30
+
+Selected held Simon1982 original PDF pp448-449,497-499 read; exact excerpts
+and custody/hash in reviews/2026-10-30-spectral-phase/. C.3.5 supplies an
+existing-eigenfunction decay lead, with kinetic normalization -Delta/2.
+Mapping H=H_b/2,E=-lambda_b^2/2 yields beta<lambda_b IF essential threshold0
+is separately proved. Existence, uniform family gap/decay/derivatives,
+Sobolev wave calculus and F-complement transfer are not supplied. No full-
+paper/visual-formula/source gate or novelty clearance claimed. Prospective
+two-region cutoff mechanism recorded UNPROVED; no spectral theorem added.
+Next: visually check source formulas/Kato hypotheses and matched existence/
+wave inputs, then independent target-fidelity review. Original goalACTIVE.
