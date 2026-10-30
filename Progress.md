@@ -5206,3 +5206,19 @@ compactcounterexample retained. No operator/path/Schatten/flow/momentresult.
 Frozen6-textpreproof target beforelongproof; no newLeansemantics claimed.
 Originalall-dimensional sharpgoalACTIVE,sourceissuesunchanged,no contact/
 HPC/companion/Skorohod/wiki/source/PDF/TeX edits. Fullproofgate required.
+
+### Spectral/mask statement gate and full candidate — 2026-10-30
+
+ActualnativeOpus5.5/high17checks PASS_WITH_NOTES/HIGH524.085seconds,
+all6texts complete,no requiredrepairs. Sixlive/frozen/gitf312877 bindings,
+21nativearchivefiles/actualroute/coverage/receipt and094632a ancestry
+verified,normalPython diagnosticBYTEreplay clean. Nineoptionalnotes
+adjudicated: Gaussianleftkernel,complexification,(2pi)^d bothmatrices,
+finite-temporal-subclass,explicitauxcompletion,compacttau,analyticzero
+labels,60digitworking/1e-45tolerance,explicitnoncompactGaussianmask.
+StatementONLY,notproofadoption. Newcompletecandidate proves T1-T3 plus
+actualsame-Wauxcompletion/finiteLINEARGaussianconvexmomentcomparison.
+Nine-textFULLgate next; no theoremadoptionbeforeit. Nextscalarrowplan/
+15xi0numericcases outsidepacketUNREVIEWED,includingcriticalalpha1log.
+No operator/path/Young/sourcecutoff/d2d3moment/sharpupper/sourcefix result.
+OriginalgoalACTIVE,canonicalTeX/PDF unchanged,no contact/HPC/companion.

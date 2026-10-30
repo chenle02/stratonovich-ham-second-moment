@@ -1,0 +1,190 @@
+{
+  "provider": "claude",
+  "started_utc": "2026-10-30T22:32:18.581837+00:00",
+  "workspace": "${HOME}/.local/state/Le-AI-Lab/stratonovich-spectral-mask-statement-v1/workspace",
+  "source_revision": "f3128779e7915a212ef07734b83251b0bcc00044",
+  "input_hashes": {
+    "reviews/2026-10-30-spectral-mask-foundation/canonical-model-context.txt": "a54e4415738a71f9bf2d37c83a6d1c7f50026eb6c03e902af0a485007dbeb06b",
+    "reviews/2026-10-30-spectral-mask-foundation/check-diagnostics.py": "b8dbf645ca3307264e9e9c4edbf58df200300e5b2c91deb401b293b43f9bd7c6",
+    "reviews/2026-10-30-spectral-mask-foundation/diagnostics-v1.json": "ce2f11e7809d0dff12e780c0562ce7e81219fd211afc1d855bf896d55de757e7",
+    "reviews/2026-10-30-spectral-mask-foundation/falsification-v1.md": "4cdc26d718a9be7ea8932faa99d23877a8f57d7afad385cb337563302be2b68e",
+    "reviews/2026-10-30-spectral-mask-foundation/target-v1.md": "9aa94602b4d9adfec8311bdfd92a835334c80d33cd9eeabe6a23d55131d1e2ce",
+    "reviews/2026-10-30-spectral-mask-foundation/worker-honesty-v1.md": "c0875c2c06a554e4e60c38abc9800aa194026b01cb8f646ca0f8dbd9b09fd4d0"
+  },
+  "target": "reviews/2026-10-30-spectral-mask-foundation/target-v1.md",
+  "claude_account": "<removed>",
+  "review_contract_sha256": "25cfe1b62515ef896d32f8e951e0978078faffb74dda8627933ae6ca284566ef",
+  "effort_requested": "high",
+  "resumed_from": null,
+  "resume_mode": null,
+  "resume_binding": null,
+  "min_confidence": "high",
+  "scientific_verdict": "PASS_WITH_NOTES",
+  "accepted": true,
+  "report_contract_schema": "subscription-review-report/1",
+  "report_legacy_mode": null,
+  "legacy_resume_binding": null,
+  "diagnostics": [],
+  "required_sources_sha256": "5fffc538fcf76efc38e7c9a15fcad4681df91d8a8a1086970f4f320b98c7f78e",
+  "required_sources_workspace_copy": ".review/required-sources.json",
+  "workspace_preflight": {
+    "schema": "le-ai-lab.review-workspace-preflight/1",
+    "scanned": "review contract (--prompt-file)",
+    "references": {
+      "target-v1.md": [
+        "reviews/2026-10-30-spectral-mask-foundation/target-v1.md"
+      ]
+    },
+    "waived": [],
+    "missing": [],
+    "required_sources_copy": ".review/required-sources.json"
+  },
+  "runtime_preflight": {
+    "effective_version": "2.1.304",
+    "cli_version": "2.1.304 (Claude Code)",
+    "image_requirements": false,
+    "supported_versions": [
+      "2.1.299",
+      "2.1.300",
+      "2.1.301",
+      "2.1.302",
+      "2.1.303",
+      "2.1.304",
+      "2.1.314"
+    ],
+    "supported": true
+  },
+  "cli_version": "2.1.304 (Claude Code)",
+  "executable": "${HOME}/.local/state/Le-AI-Lab/swe-white-time-resume-20261024/runtime/node_modules/@anthropic-ai/claude-code-linux-x64/claude",
+  "executable_requested": null,
+  "executable_effective": {
+    "path": "${HOME}/.local/state/Le-AI-Lab/swe-white-time-resume-20261024/runtime/node_modules/@anthropic-ai/claude-code-linux-x64/claude",
+    "version": "2.1.304 (Claude Code)"
+  },
+  "read_ledger_format_supported": true,
+  "auth": {
+    "authMethod": "<removed>",
+    "apiProvider": "firstParty",
+    "subscriptionType": "<removed>",
+    "email": "<account email removed>"
+  },
+  "model_requested": "claude-opus-5-5",
+  "command_without_prompt": [
+    "${HOME}/.claude/bin/claude-acct",
+    "run",
+    "<account removed>",
+    "--print",
+    "--model",
+    "claude-opus-5-5",
+    "--effort",
+    "high",
+    "--disable-slash-commands",
+    "--strict-mcp-config",
+    "--mcp-config",
+    "{\"mcpServers\":{}}",
+    "--permission-mode",
+    "dontAsk",
+    "--permission-prompts",
+    "none",
+    "--output-format",
+    "stream-json",
+    "--verbose",
+    "--tools",
+    "Read,Grep,Glob",
+    "--allowedTools",
+    "Read,Grep,Glob",
+    "--agents",
+    "${HOME}/.local/state/Le-AI-Lab/stratonovich-spectral-mask-statement-v1/claude-reviewer.json",
+    "--agent",
+    "artifact-reviewer",
+    "<stdin: prompt.txt without its final newline>"
+  ],
+  "prompt_transport": "stdin",
+  "prompt_bytes": 4442,
+  "prompt_sha256": "35acc9dbfd8d40fe2b39aa596ce54b7369f0f90088eeb170224ab45b442624b6",
+  "transport_exit_code": 0,
+  "transport_ok": true,
+  "model_actual": "claude-opus-5-5",
+  "session_id": "b0b8b98a-8c64-44db-b0b0-b43f7fd87c53",
+  "usage": {
+    "input_tokens": 6,
+    "cache_creation_input_tokens": 27121,
+    "cache_read_input_tokens": 52676,
+    "output_tokens": 32033,
+    "output_tokens_details": {
+      "thinking_tokens": 25597
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 27121,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 31190,
+        "cache_read_input_tokens": 30325,
+        "cache_creation_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "provider_error": false,
+  "terminal_subtype": "success",
+  "tools_actual": [
+    "Read",
+    "Grep",
+    "Glob"
+  ],
+  "actual_route_verified": true,
+  "candidate_hashes_unchanged": true,
+  "raw_report_sha256": "4da744ac17192b7b8932864a37edf7a480657382931fbf014b7edd8ca1fd0a17",
+  "status": "review-complete",
+  "confidence": "high",
+  "report_interpretation": {
+    "contract_schema": "subscription-review-report/1",
+    "report_schema": "subscription-review-report/1",
+    "legacy_mode": null,
+    "normalized_verdict": "PASS_WITH_NOTES",
+    "normalized_confidence": "high",
+    "normalized_check_verdicts": [
+      "PASS_WITH_NOTES",
+      "PASS",
+      "PASS_WITH_NOTES",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS_WITH_NOTES",
+      "PASS",
+      "PASS_WITH_NOTES",
+      "PASS_WITH_NOTES",
+      "PASS_WITH_NOTES",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS_WITH_NOTES",
+      "PASS"
+    ]
+  },
+  "report_sha256": "84c579c13fca066367e8cbe57b1dfdda613d9ffbcabef8e9fe3ced209a77e804",
+  "report_text_format": "bare",
+  "report_body_sha256": "4da744ac17192b7b8932864a37edf7a480657382931fbf014b7edd8ca1fd0a17",
+  "finished_utc": "2026-10-30T22:41:02.667520+00:00",
+  "elapsed_seconds": 524.085,
+  "transport_events_sha256": "1691a836d7d82daa8be9305fedb583f98b3bb822d254b02075bc692103853549",
+  "transport_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "read_ledger_sha256": "4e5d5edaa21dcd6d25dd8f0dc06d392a467169b59e2cd4e31700ac52b80a8fc5",
+  "coverage_verified": true
+}

@@ -1,0 +1,125 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "reviews/2026-10-30-spectral-mask-foundation/target-v1.md: lines 1-53 (complete)",
+    "reviews/2026-10-30-spectral-mask-foundation/falsification-v1.md: lines 1-20 (complete)",
+    "reviews/2026-10-30-spectral-mask-foundation/worker-honesty-v1.md: lines 1-19 (complete)",
+    "reviews/2026-10-30-spectral-mask-foundation/canonical-model-context.txt: lines 1-39 (complete)",
+    "reviews/2026-10-30-spectral-mask-foundation/check-diagnostics.py: lines 1-56 (complete)",
+    "reviews/2026-10-30-spectral-mask-foundation/diagnostics-v1.json: lines 1-194 (complete)",
+    ".review/required-sources.json: lines 1-20 (complete; read plan only, earns no read credit)"
+  ],
+  "checks": [
+    {
+      "claim": "C1 scope: the target's hypotheses match canonical H:homog (d=1,2,3; a=alpha_0 in (0,1); alpha+a<2; 0<alpha<d or alpha=d=1; nonnegative even positive-definite tempered Radon Gamma; positive even tempered spectral mu; distributional convention; homogeneity exponent d-alpha).",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "This agrees with canonical-model-context.txt lines 11-30. 'Gamma nonzero' is an added restriction, but it is harmless and is exactly what M_Gamma>0 needs. Target line 7 omits 'tempered' for mu, but 'Use canonical H:homog' imports it, so there is no scope change."
+    },
+    {
+      "claim": "T1: M_Gamma is finite and positive.",
+      "verdict": "PASS",
+      "reason": "Radon plus homogeneity gives Gamma(B(0,2^k)) <= 2^(k(d-alpha)) Gamma(B(0,1)), so the Gaussian integral converges. Positivity follows from Gamma nonzero, Gamma>=0 and a strictly positive integrand."
+    },
+    {
+      "claim": "T1: Gaussian dual identity, sign and constants.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Take the Schwartz test phi(x)=exp(-r^2|x|^2/4)exp(-i y.x). In the stated convention, int exp(i xi.x)phi(x)dx=(2sqrt(pi)/r)^d exp(-|xi-y|^2/r^2). Hence int exp(-|xi-y|^2/r^2)mu(dxi)=(r/(2sqrt(pi)))^d int phi dGamma, which is exactly the displayed G_r. Only the definition of the tempered-distribution pairing is used, with no Fubini over infinite spectral mass. Complex phi follows by linearity. The target never writes the left-hand kernel; see the minor finding."
+    },
+    {
+      "claim": "T1: homogeneity bound 0<=G_r(y)<=r^alpha M_Gamma/(2sqrt(pi))^d.",
+      "verdict": "PASS",
+      "reason": "G_r>=0 because mu>=0 and the kernel is positive. The upper bound uses Gamma>=0 and |exp(-i y.x)|=1. The pushforward of Gamma under x->r x is r^(alpha-d)Gamma, so int exp(-r^2|x|^2/4)dGamma=r^(alpha-d)M_Gamma. Multiplying by (r/(2sqrt(pi)))^d gives the stated power and constant."
+    },
+    {
+      "claim": "T1: translated ball bound with C_Gamma=e M_Gamma/(2sqrt(pi))^d for all centers and radii, including singular measures and invariant directions.",
+      "verdict": "PASS",
+      "reason": "On B(y,r) the kernel is at least e^-1, so mu(B(y,r))<=e G_r(y). No density or non-degeneracy is used. Controls: for delta_x1 tensor Leb_x2, M=2sqrt(pi) and C=e/(2sqrt(pi)), and the exact ball mass sqrt((r^2-y2^2)_+)/pi obeys the bound. For Gamma=delta_0 (alpha=d=1), M=1 and G_r=r/(2sqrt(pi))."
+    },
+    {
+      "claim": "T2: auxiliary measure nu_R is positive, even, Radon and tempered, with L invariant under scaling.",
+      "verdict": "PASS",
+      "reason": "The transform of zeta_R is R^d hat zeta(R xi), so L is invariant. The density is finite and continuous because a Schwartz function is integrated against tempered mu. It is even because a real zeta gives |hat zeta| even and mu is even. Evenness of zeta is not needed. It is nonzero since mu and hat zeta_R are nonzero. Temperedness follows from the ball bound."
+    },
+    {
+      "claim": "T2: uniform growth nu_R(B(y,r))<=c_d^2 L^2 C_Gamma r^alpha.",
+      "verdict": "PASS",
+      "reason": "Tonelli gives nu_R(B(y,r))=c_d^2 L int |hat zeta_R(u)| mu(B(y+u,r))du. T1 then yields the constant, with no R dependence beyond the invariant L. The translated, not merely centered, T1 bound is essential here and is available."
+    },
+    {
+      "claim": "T2: Hilbert-valued inequality and constant c_d^2 L.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "In the unitary convention, hat(zeta_R F)=c_d (hat zeta_R * hat F). Bochner norm inequality plus Cauchy-Schwarz with weight |hat zeta_R| gives the pointwise bound c_d^2 L int |hat zeta_R(xi-eta)| ||hat F(eta)||^2 d eta. Tonelli against mu gives exactly the stated inequality with no spare constant. For real H, the transform needs the complexification, which the target leaves implicit (minor finding)."
+    },
+    {
+      "claim": "T2: actual physical variance is (2pi)^d times the spectral H_a norm.",
+      "verdict": "PASS",
+      "reason": "For Schwartz f_j,f_k, int int f_j(x)f_k(y)Gamma(x-y)=<Gamma,f_j*f_k~>, and the pairing gives (2pi)^d int hat f_j(-xi)conj(hat f_k(-xi))mu(dxi). Evenness of mu removes the reflection. Summing with <tau_j,tau_k>_a gives E[W(F)^2]=(2pi)^d int ||hat F(xi)||^2_{H_a} mu(dxi). Controls: the delta tensor Leb direct and spectral evaluations both equal J I^2 for the compact example, and the Gaussian-mask closed forms also agree."
+    },
+    {
+      "claim": "T2: temporal raw-kernel Hilbert space H_a.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "For a in (0,1), |t-s|^-a is locally integrable and positive definite, so C_c^infinity(0,T) tests generate a separable pre-Hilbert space, and spatial masking acts only on f_j. The word 'equivalently' identifies finite sums with the finite-rank subclass only, not all H_a-valued Schwartz functions (minor finding). The inequality holds on both classes, so nothing fails."
+    },
+    {
+      "claim": "T2: completion is legitimate and no bounded multiplier on the original mu quotient is asserted.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The inequality makes the mask map on tests Lipschitz from the nu_R seminorm to the actual norm. It therefore annihilates nu_R-null tests and extends by continuity from the auxiliary completion. Directly, convolution with hat zeta_R is also defined mu-a.e. on L^2(nu_R;H), even where the density vanishes on an open set. The target explicitly excludes the original quotient, consistent with T3. The completion's exact specification is deferred to the proof stage, and the completion depends on R and zeta; this is permitted by the target's wording."
+    },
+    {
+      "claim": "T2: optional covariance-matrix order and convex moments for linear images only; auxiliary inverse transform not assumed nonnegative.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Applying the inequality to linear combinations gives the Loewner order A<=B in the stated direction, provided the auxiliary covariance carries the same (2pi)^d factor. The Gaussian comparison uses Y=X+Z with independent Z~N(0,B-A) and Jensen, which is valid for convex functions such as norm powers with p>=1. The inverse transform of nu_R is the formal product c_d^2 L k_R Gamma, with k_R the transform of |hat zeta_R|, and k_R may change sign, so the caveat is correct. Nonlinear solutions are explicitly excluded."
+    },
+    {
+      "claim": "T3: delta_x1 tensor Leb_x2 with mu=(2pi)^-1 Leb_xi1 tensor delta_0 is admissible with alpha=1, is not d=2 white noise and is not a torus model.",
+      "verdict": "PASS",
+      "reason": "Gamma(cA)=c Gamma(A) gives d-alpha=1, so alpha=1 lies in (0,2), and 1+a<2 holds for every a in (0,1). The measure is nonnegative, even, tempered and positive definite. The spectral identity holds distributionally in the stated convention. White noise in d=2 would have alpha=2."
+    },
+    {
+      "claim": "T3: unmasked variance 0, masked variance J I^2>0, and no finite original-noise mask bound.",
+      "verdict": "PASS",
+      "reason": "For this Gamma, V(g)=int (int g dx2)^2 dx1. With g=chi(x1)chi''(x2), the compact support gives int chi''=0, so V=0. With g=chi^2(x1) chi(x2)chi''(x2), integration by parts gives marginal -I chi^2(x1), so V=J I^2. I>0 is forced because chi falls from 1 to 0, and J>=2. Tensoring with tau multiplies both by ||tau||_a^2>0, so 0 cannot bound a positive quantity for any finite constant. The test and mask are real C_c^infinity on R^2, hence also admissible Schwartz masks for T2, with no contradiction since the auxiliary norm sees xi2 nonzero."
+    },
+    {
+      "claim": "C4: script algebra and JSON values for the singular, Riesz and Gaussian-mask controls.",
+      "verdict": "PASS",
+      "reason": "By hand I re-derived the singular ball mass and the spectral and physical Gaussians. I also re-derived the Riesz coefficient 2^-a pi^(-d/2) Gamma((d-a)/2)/Gamma(a/2), M, the radial spectral value and the ball mass. For the mask exp(-|x|^2/(2R^2)) I re-derived A, the physical and spectral closed forms, the auxiliary density R(2pi)^(-3/2)exp(-R^2 eta2^2/2) and b=1+R^2/2. Sampled JSON values match: the singular cases at r=0.25, 1 and 3; Riesz d=1 r=1, d=2 r=1 and d=3 r=1; Gaussian R=1 physical 0.98435 and aux 2.14325. The aux/actual trend toward 3 as R grows also matches. Case counts 9/9/4 match. The scripts were not executed by this reviewer."
+    },
+    {
+      "claim": "C4: compact plateau control and Schwartz-versus-compact separation.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The chi formula and its first and second derivative formulas are correct, and the even-symmetry reductions for I, J and the IBP integral are correct. The JSON gives IBP=-I, and J I^2=28.5403 follows arithmetically from I=3.27654 and J=2.65845. The Gaussian mask is correctly labeled non-compact and kept separate from the compact counterexample. The original-variance zeros appear only as literal strings, not computed values (minor finding), but they are analytically correct."
+    },
+    {
+      "claim": "C5: scope and honesty. The original all-dimensional, sharp and source goal is not replaced, and no prohibited conclusion or new Lean coverage is asserted.",
+      "verdict": "PASS",
+      "reason": "target-v1.md lines 48-53 exclude Schatten and operator norms, path regularity, Young flow, source cutoff convergence, constant-data solutions, the d=2/3 lower bound and sharp upper conclusions, and keep the full goal active. The original-noise quotient bound is excluded on lines 27-28 and refuted in T3. Nonlinear moment order is excluded on line 38. falsification-v1.md lines 15-20 deny that the numerics are proof and deny Lean coverage. worker-honesty-v1.md line 19 calls the target a bounded foundation, not a substitute for the goal."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "T1 never writes the left-hand kernel of 'the finite Gaussian spectral integral'. The right-hand side and Fourier inversion force it uniquely to be exp(-|xi-y|^2/r^2), and the script's singular and Riesz values agree. This verdict uses that forced reading, and a later revision could state it explicitly.",
+      "T2 allows a real H, but hat F then takes values in the complexification; the norm convention is implicit.",
+      "The 'auxiliary covariance matrix' in T2 is unnormalized in the text. The stated Loewner order requires the auxiliary covariance to carry the same (2pi)^d factor as the physical one, as the script's aux value does; the bare spectral integral would not give the order in general.",
+      "'Equivalently finite sums' in T2 should be read as the finite-rank subclass of H_a-valued Schwartz functions, not as equality of classes.",
+      "The auxiliary completion is promised as 'clearly specified' but is not specified in target-v1.md. A legitimate construction exists, so this is a proof-stage check, and that completion depends on R and zeta.",
+      "T3 says 'nonzero nonnegative smooth temporal tau' without restating compact support in (0,T). The conclusion holds either way because a<1; nonnegativity is sufficient but not necessary given strict positive definiteness of the kernel.",
+      "falsification-v1.md line 13 says the plateau test 'checks' the exact marginal-zero mechanism, but the script stores original variance as a literal string and never evaluates int chi''. Only the integration-by-parts identity is numerically asserted. The Gaussian original-variance entries are likewise literal. The analytic zeros are correct.",
+      "'Numerically at 60 digits' describes working precision; the integration-by-parts assertion tolerance is rel_eps 1e-45. all_assertions_passed is a hard-coded literal reached only when asserts run, so it would not reflect checks under python -O.",
+      "The Gaussian mask in the script is identifiable only by reconstruction (A=(1+R^-2)/2 implies exp(-|x|^2/(2R^2))); neither the script nor falsification-v1.md names it explicitly."
+    ],
+    "major_notes_absent": []
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is a statement, object, normalization and feasibility audit of T1-T3 only. Complete independent proof review remains required, as target-v1.md itself says, and this report is not a whole-paper certificate.",
+    "An AI review is not human verification or a novelty audit.",
+    "No tests were executed: check-diagnostics.py was not run by this reviewer, and diagnostics-v1.json was checked by analytic re-derivation and hand evaluation of sampled entries, not exhaustive recomputation.",
+    "Custody claims in worker-honesty-v1.md (commit 094632a, the <HUB>/origin parity, the wiki reads, and that canonical-model-context.txt is an exact excerpt of lines 125-163) are not independently verifiable from the packet. The excerpt's 39-line length is consistent with that range. The relation of 094632a to the supplied source revision f3128779e7915a212ef07734b83251b0bcc00044 could not be checked.",
+    "The compact-plateau numeric values I and J were checked for internal consistency and plausibility, not recomputed to quoted precision."
+  ]
+}

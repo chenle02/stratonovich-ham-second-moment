@@ -1,0 +1,226 @@
+{
+  "schema": "le-ai-lab.review-read-ledger/1",
+  "coverage_verified": true,
+  "claude_code_version": "2.1.304",
+  "events_sha256": "1691a836d7d82daa8be9305fedb583f98b3bb822d254b02075bc692103853549",
+  "events_hash_bound_to_receipt": true,
+  "stream_workspace": "${HOME}/.local/state/Le-AI-Lab/stratonovich-spectral-mask-statement-v1/workspace",
+  "required_sources_sha256": null,
+  "continuation": false,
+  "continuation_credit": null,
+  "proves": "Each credited line was returned, numbered and byte-equal to the frozen workspace file, in a tool_result paired with a Read or line-numbered content-mode Grep call of the hash-bound provider stream.",
+  "does_not_prove": "Attention, understanding, or retention: a credited line may have been skimmed, ignored, or dropped by context compaction before the report was written. Uncredited lines may still have been seen in a form the ledger cannot attribute (previews, unnumbered output, subagents).",
+  "sources": [
+    {
+      "path": "reviews/2026-10-30-spectral-mask-foundation/target-v1.md",
+      "sha256": "9aa94602b4d9adfec8311bdfd92a835334c80d33cd9eeabe6a23d55131d1e2ce",
+      "total_lines": 53,
+      "required_ranges": [
+        [
+          1,
+          53
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          53
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "reviews/2026-10-30-spectral-mask-foundation/falsification-v1.md",
+      "sha256": "4cdc26d718a9be7ea8932faa99d23877a8f57d7afad385cb337563302be2b68e",
+      "total_lines": 20,
+      "required_ranges": [
+        [
+          1,
+          20
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          20
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "reviews/2026-10-30-spectral-mask-foundation/worker-honesty-v1.md",
+      "sha256": "c0875c2c06a554e4e60c38abc9800aa194026b01cb8f646ca0f8dbd9b09fd4d0",
+      "total_lines": 19,
+      "required_ranges": [
+        [
+          1,
+          19
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          19
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "reviews/2026-10-30-spectral-mask-foundation/canonical-model-context.txt",
+      "sha256": "a54e4415738a71f9bf2d37c83a6d1c7f50026eb6c03e902af0a485007dbeb06b",
+      "total_lines": 39,
+      "required_ranges": [
+        [
+          1,
+          39
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          39
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "reviews/2026-10-30-spectral-mask-foundation/check-diagnostics.py",
+      "sha256": "b8dbf645ca3307264e9e9c4edbf58df200300e5b2c91deb401b293b43f9bd7c6",
+      "total_lines": 56,
+      "required_ranges": [
+        [
+          1,
+          56
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          56
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "reviews/2026-10-30-spectral-mask-foundation/diagnostics-v1.json",
+      "sha256": "ce2f11e7809d0dff12e780c0562ce7e81219fd211afc1d855bf896d55de757e7",
+      "total_lines": 194,
+      "required_ranges": [
+        [
+          1,
+          194
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          194
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    }
+  ],
+  "tool_calls": [
+    {
+      "id": "toolu_01MZDk747J6wnnYbh7V7JQ23",
+      "tool": "Read",
+      "source": ".review/required-sources.json",
+      "plan_copy_read": [
+        ".review/required-sources.json"
+      ],
+      "uncredited": "runner-owned plan copy (.review/): never read credit",
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_011FwhvpcYghtkE84KYiBi7q",
+      "tool": "Read",
+      "source": "reviews/2026-10-30-spectral-mask-foundation/target-v1.md",
+      "credited": {
+        "reviews/2026-10-30-spectral-mask-foundation/target-v1.md": [
+          [
+            1,
+            53
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01UNpjTnVUz6255QMFCBXF6r",
+      "tool": "Read",
+      "source": "reviews/2026-10-30-spectral-mask-foundation/canonical-model-context.txt",
+      "credited": {
+        "reviews/2026-10-30-spectral-mask-foundation/canonical-model-context.txt": [
+          [
+            1,
+            39
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_019YRgZ1ErvUwPgLnbB9715b",
+      "tool": "Read",
+      "source": "reviews/2026-10-30-spectral-mask-foundation/check-diagnostics.py",
+      "credited": {
+        "reviews/2026-10-30-spectral-mask-foundation/check-diagnostics.py": [
+          [
+            1,
+            56
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_014nfaCfMHAgzXtbntry6m7V",
+      "tool": "Read",
+      "source": "reviews/2026-10-30-spectral-mask-foundation/diagnostics-v1.json",
+      "credited": {
+        "reviews/2026-10-30-spectral-mask-foundation/diagnostics-v1.json": [
+          [
+            1,
+            194
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_011YoyACuJ9kQZYLJuduxXV5",
+      "tool": "Read",
+      "source": "reviews/2026-10-30-spectral-mask-foundation/falsification-v1.md",
+      "credited": {
+        "reviews/2026-10-30-spectral-mask-foundation/falsification-v1.md": [
+          [
+            1,
+            20
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_011wy7EDzbSnVw9s6VYqpCte",
+      "tool": "Read",
+      "source": "reviews/2026-10-30-spectral-mask-foundation/worker-honesty-v1.md",
+      "credited": {
+        "reviews/2026-10-30-spectral-mask-foundation/worker-honesty-v1.md": [
+          [
+            1,
+            19
+          ]
+        ]
+      },
+      "stream": "attempt"
+    }
+  ],
+  "diagnostics": []
+}
