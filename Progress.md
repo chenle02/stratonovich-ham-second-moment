@@ -4350,3 +4350,22 @@ prove high-probability positive average and Gaussian-cost moment lower
 rate. No stochastic event/variational/sharp theorem yet. Original fullgoal
 ACTIVE; canonicalTeX/PDF/source-normalization/higherdimensions unchanged.
 No live reviewer remains at this adoption capture.
+
+
+## Actual shifted-flow event/cost statement freeze — 2026-10-30
+
+New target reviews/2026-10-30-actual-shifted-event/target-v1.md asks
+actual retained-residual positive-average growth with probability->1 and
+raw-cost point-moment lower rate2I_psi-v/2 for EACHfixedpositive separable
+psi. It does not identify original source variational/sharp constants.
+Must discharge actual all-block error, deterministic freezing, Riesz mask
+defect, fixed-integer-T composition and final fractional extension; then
+same-Z moderate event and accepted Gaussian/point consumer.
+
+Falsification first: complete exact script184floor cases/98partial cases,
+noncommuting ordered telescope,20small-unit-error-not-full-closeness
+examples and4moderate-density scalings PASS. These are finite controls,
+not actual stochastic proof. Packet has exact generator, no C5omission.
+Todo: independent preproof object/statement audit; actual analytic proof;
+value-ranked existing Lean reuse; scientific HIGHgate; then optimizer/
+source constant map and original dimensions. Original fullgoalACTIVE.
