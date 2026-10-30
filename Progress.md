@@ -6,7 +6,6 @@
 
 ## Current state
 
-- **Live raw-value ceiling preproof:** proposed own raw E_eta occupation-energy/actual smooth-ground ceiling for V_c and strict displayed-map gap at3efedd8; actual Opus5.5/high,13texts+4images,session30497/native stratonovich-value-ceiling-statement-v1. No value-ceiling proof adopted; V upper is not Q2 upper. Poll same handle/receipt.
 - **Latest occupation bridge:** actual positive X=L2(time;L1 intersect L2 space) covariance/closed-H1-form/measurable-Rayleigh-rate approximation, original-point lower and exact smooth/X score-supremum equality accepted8groups/HIGH at80e47d6 (272.897seconds,25texts). Includes actual finite-energy occupation densities g² and bounded nonnegative timeweights. Two new scalar form-budget applications checked. NEXT: raw variational VALUE/source/clock comparison; intended normalization/sharp upper/higher dimensions remain open.
 - **Latest general-positive consumer:** actual d1 general-positive compact psi cone/noisy event/SAME-Z raw half-cost original-point lower and enlarged V_c^pos accepted24groups/HIGH at12c9879 (462.611seconds,34texts). All nine unchanged finite-kernel NEWapplications checked. Q2>=V2pos>=V2sep with exact auxiliary homogeneity; no source/firstmean/Jensen-improvement claim. Occupation-profile approximation now accepted at80e47d6; NEXT raw value/source/clock comparison, retaining sharp upper/higher dimensions/intended normalization.
 - **Latest general-profile bridge:** actual d1 general-positive-psi covariance family S1-S3 (uniform ground/gap, weighted actual F projection and physical complement) accepted27PASS/HIGH atc0a0093. Original undefined-J_phi preproof FAIL is preserved and repaired. General-test stochastic event/raw lower/variational consumer now scoped accepted at12c9879; source constants and original higher dimensions remain open.
@@ -4856,3 +4855,20 @@ initiallocalprojection-argument compilefailure retained, repaired only
 application syntax. Bothnativearchives memberverified. Analyticlinkto
 actualE_eta/cap and source-shapedcriterion stillrequiresproof/fullgate.
 62finite deductions/14seams provisional; no energy/SPDE/companion claim.
+
+### Rawvalue preproof and candidate proof — 2026-10-30
+
+ActualOpus5.5/high20PASS/HIGH,317.273seconds,13texts+4images complete,
+no requiredrepairs. All17live/frozen/git3efedd8 inputs,32nativearchive
+members and executedscalarJSON verified. Sixoptional findings adjudicated;
+statement/source/feasibility acceptance ONLY, not proof. No recovery/retry.
+
+Newnotes/raw-positive-value-ceiling.md completecandidate: actualrawOenergy
+finitepositive/sharpinterpolation, actualsmoothH2ground consumer/common
+GaussianCS/timeCS, exactT/v optimization/halfcost ceilingV_c<=U_c(eta),
+strictdisplaymapgap and legalexactintegercriterion. Eta-1/2 andlegal
+eta1 cases limitacceptedpositivecontrolrawscoresONLY. No originalQ2upper,
+sourceconstantidentity, correction/Estarcomparison or actualmomentno-go.
+62finite scalarlemmas/14seams provisional, new2exacttype/applications in
+FULL26text+4image scientificpacket. Mathematicalceiling notadopted until
+properfullgate. Fulloriginalsharp/source/dimensional goal ACTIVE.

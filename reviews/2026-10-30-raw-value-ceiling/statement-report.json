@@ -1,0 +1,148 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "reviews/2026-10-30-raw-value-ceiling/target-v1.md lines 1-129 (complete)",
+    "reviews/2026-10-30-raw-value-ceiling/worker-honesty-v1.md lines 1-33 (complete)",
+    "reviews/2026-10-30-raw-value-ceiling/check-diagnostics.py lines 1-50 (complete)",
+    "reviews/2026-10-30-raw-value-ceiling/diagnostics-v1.json lines 1-119 (complete)",
+    "reviews/2026-10-30-raw-value-ceiling/falsification-v1.md lines 1-26 (complete)",
+    "reviews/2026-10-30-raw-value-ceiling/source-and-recon-v1.md lines 1-34 (complete)",
+    "reviews/2026-10-30-raw-value-ceiling/source-custody-v1.json lines 1-33 (complete)",
+    "notes/occupation-control-approximation.md lines 1-365 (complete)",
+    "reviews/2026-10-30-occupation-approximation/scientific-adjudication-v1.md lines 1-64 (complete)",
+    "notes/general-positive-consumer.md lines 1-478 (complete)",
+    "notes/nonseparable-profile-family.md lines 1-386 (complete)",
+    "reviews/2026-10-30-nonseparable-family/scientific-adjudication-v1.md lines 1-73 (complete)",
+    "reviews/2026-10-28-source-normalization/adjudication-v2.md lines 1-67 (complete)",
+    "reviews/2026-10-28-source-normalization/packet-v2/pages/chen-03-upper.png (full image view)",
+    "reviews/2026-10-28-source-normalization/packet-v2/pages/chen-03-lower.png (full image view)",
+    "reviews/2026-10-28-source-normalization/packet-v2/pages/chen-04-upper.png (full image view)",
+    "reviews/2026-10-28-source-normalization/packet-v2/pages/chen-04-lower.png (full image view)",
+    ".review/required-sources.json lines 1-66 (read plan; no read credit claimed)"
+  ],
+  "checks": [
+    {
+      "claim": "C1 fixed objects: the d1 Riesz/white model, a/alpha domain, X, O, rho_g, v, I and V_c^pos match the accepted notes; E_eta is a new raw-kernel object with kinetic eta",
+      "verdict": "PASS",
+      "reason": "O in target lines 20-21 matches occupation note Section 6. A(g)=v_(rho_g) is defined because (OCC) places rho_g in X_pos. V_c^pos over X_pos equals its C_pos value by (SUP). E_eta keeps K=|s-t|^-a and the actual Gamma. It is explicitly separated from source E, E_star and static M, consistent with images (1.11)-(1.13)."
+    },
+    {
+      "claim": "C1 finiteness and positivity: 0<T<infinity, 0<A<infinity, A<=C T^(alpha/2), and finite positive E_eta and C_occ",
+      "verdict": "PASS",
+      "reason": "Hand derivation. T>0 because a nonzero constant is not in L2. For Riesz, split at radius R: near L1 mass 2c_Gamma R^(1-alpha)/(1-alpha), far bound c_Gamma R^-alpha. With ||rho(t)||_2^2<=2||g'(t)||_2 and Schur (1), A<=K0 c_Gamma[(4/(1-alpha))R^(1-alpha)T^(1/2)+R^-alpha]. Taking R=T^(-1/2) gives A<=K0 c_Gamma(4/(1-alpha)+1)T^(alpha/2). For white, spatial CS and Schur give A<=2 K0 c_Gamma T^(1/2). The constants depend only on a, Gamma and alpha. E_eta<infinity because alpha/2<1; E_eta>0 by small-s dilation since alpha<2."
+    },
+    {
+      "claim": "C1 occupation dilation: S_s is a bijection of O with A degree alpha and T degree 2, distinct from raw D_s",
+      "verdict": "PASS",
+      "reason": "T_s f=sqrt(s)f(s.) is an H1 isomorphism and L2 unitary with inverse T_(1/s), so strong measurability and normalization are preserved. The Radon relation Gamma(A/s)=s^(alpha-1)Gamma(A) gives A(S_s g)=s^alpha A(g), including white directly (s^1). T scales by s^2. D_s has the different prefactor s^(3-alpha) and acts on Gaussian tests. Consumer (26)-(28) confirms I degree 1 and v degree 4-alpha."
+    },
+    {
+      "claim": "C1 (GN): the exact C_occ formula and E_eta=eta^(-alpha/(2-alpha))E_1, proved in both sup directions with no optimizer or minimax",
+      "verdict": "PASS",
+      "reason": "Since S_s is a bijection, E_eta=sup_g sup_s. The inner scalar maximum is ((2-alpha)/alpha)eta^(-alpha/(2-alpha))(alpha/2)^(2/(2-alpha))R(g)^(2/(2-alpha)), with R=A/T^(alpha/2). This is increasing in R, so taking sup_g gives the same expression at C_occ with no attained g. Inverting gives C_occ=(alpha E_eta/(2-alpha))^((2-alpha)/2)(2/alpha)eta^(alpha/2), identical to target (GN). The eta scaling also follows."
+    },
+    {
+      "claim": "C2 smooth ground curve and (G)",
+      "verdict": "PASS",
+      "reason": "Nonseparable (4) and (8) give real positive normalized p_sigma, Lipschitz in H2 from (5) and D_(sigma,s)<=C_h|sigma-s|. Hence g is strongly H1-measurable with T<infinity, and g lies in O. The ODE and ground-energy line in note Section 3 give lambda^2+||p'||^2=int h p^2 with kinetic coefficient 1. Tonelli, evenness of Gamma and symmetry of K give int_0^1 int h_sigma p_sigma^2=B_Gamma(psi,rho_g). Occupation Section 3 identifies lambda with the whole-H1 rate on C_pos."
+    },
+    {
+      "claim": "C2 covariance Cauchy-Schwarz on actual X pairings",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The route is sound. Apply CS to common-Gaussian pairings at smooth positive inputs, then use (14) approximants of rho_g (and psi if needed), bilinear continuity (5) and cost convergence (7)/(14) to pass to B_Gamma(psi,rho_g)^2<=v_psi A(g). It does not rest on kernel positivity alone. Note: joint-gaussian-tilt.md is not in the packet, so the cross-covariance E[W(psi)W(chi)]=B_Gamma(psi,chi) for two distinct tests is visible only through consumer (1) and (25) and nonseparable (1). The long proof must cite it exactly."
+    },
+    {
+      "claim": "C2 (B): one-sided time CS and the factor sqrt(v C_occ) T^(alpha/4)",
+      "verdict": "PASS",
+      "reason": "Jensen on the unit interval gives I^2<=int lambda^2, used only one-sidedly as the target states. Then I^2+T<=B_Gamma(psi,rho_g)<=sqrt(v)sqrt(A)<=sqrt(v C_occ)T^(alpha/4). The exponent is half of alpha/2, as displayed."
+    },
+    {
+      "claim": "C2 (U): scalar T and v optimization with raw half-variance gives U_c=c^m(2eta)^(alpha/(2k))F_0(E_eta), independent of eta",
+      "verdict": "PASS",
+      "reason": "Hand derivation with beta=alpha/4. T->D T^beta-T is strictly concave, with maximum (q/4)(alpha/4)^(alpha/q)D^(4/q). So I<=A_0 v^(1/q), where A_0=sqrt(q/4)(alpha/4)^(alpha/(2q))C_occ^(1/q). v->cA_0 v^(1/q)-v/2 is concave, with maximizer (2cA_0/q)^(q/k) and maximum (k/2)(2cA_0/q)^(q/k). Substituting (GN), (2/q)^q(q/4)^(q/2)=q^(-q/2), (alpha/4)^(alpha/2)(2eta/alpha)^(alpha/2)=(eta/2)^(alpha/2) and (1/2)^k=2^(alpha-3) gives exactly k c^m[(2eta)^(alpha/2)q^(-q/2)Z/8]^(1/k), where Z=(2E/(2-alpha))^((2-alpha)/2). This equals (U). Eta cancels under (GN). The scale test I->sI, v->s^q v is consistent."
+    },
+    {
+      "claim": "C2 extension and b=0 scope: via existing SUP, with no rough ground or eigenflow; b=0 is display only",
+      "verdict": "PASS",
+      "reason": "The ceiling is proved for each psi in C_pos and T is eliminated before taking the sup, so psi-dependence in g disappears. (SUP) transfers the same real value to X_pos with no rough eigenfunction or flow. E_eta in F_0 retains actual a; no static covariance or a->0 limit is used."
+    },
+    {
+      "claim": "C3 map: F_b algebra matches author p3 (1.10) with b=alpha0=a, and inputs are own E_eta rather than a source identity",
+      "verdict": "PASS",
+      "reason": "Image chen-03-lower shows (3-alpha)((4-alpha-2alpha0)^((4-alpha-2alpha0)/2)/(2^3(4-alpha-alpha0)^(4-alpha-alpha0))(2E/(2-alpha))^((2-alpha)/2))^(1/(3-alpha)), identical to F_b with 8=2^3. The target identifies only the map, not the input."
+    },
+    {
+      "claim": "C3 (D): strict convexity gap and Fa/F0=exp(Delta/k)",
+      "verdict": "PASS",
+      "reason": "q>=3 and 2a<2 give q-2a>1 and q-a>0. Delta is the midpoint gap of x log x between q and q-2a, hence >0 for 0<a<1. F_a^k/F_0^k=exp(Delta), with z-dependence cancelling for every z>0."
+    },
+    {
+      "claim": "C3 (Nhalf) and general criterion Delta>(alpha/2)log(2eta)",
+      "verdict": "PASS",
+      "reason": "At eta=1/2 the kinetic factor is 1, and E_(1/2)>0 gives strictness. In general F_a(E_eta)/[(2eta)^(alpha/(2k))F_0(E_eta)]=exp((Delta-(alpha/2)log(2eta))/k), so the criterion is exact. It holds automatically for eta<=1/2. The target carries no implied source correction: E_(1/2) is not identified with source E (penalty 1) or E_star (damped kernel), consistent with images (1.11)-(1.12)."
+    },
+    {
+      "claim": "C3 (N1): exact certificate at alpha=1/10, a=9/10, eta=1",
+      "verdict": "PASS",
+      "reason": "The parameters are legal Riesz values (alpha+a=1). q=39/10, q-2a=21/10, q-a=3, so 20Delta=39 log(39/10)+21 log(21/10)-60 log 3. Then 20Delta>log 2 iff 39^39*21^21>2*10^60*3^60=2*30^60. The equivalence is correct. A hand estimate gives 20Delta about 2.742 against log 2 about 0.693, and log10 of the sides about 89.818 and 88.928. Independent of amplitude and c, since Delta contains neither and E_1>0 cancels."
+    },
+    {
+      "claim": "C3 source boundary: p4 raw/penalty 1 versus damped/penalty 1/2, incomplete Ad domain, UNKNOWN normalization preserved",
+      "verdict": "PASS",
+      "reason": "Image chen-04-upper confirms (1.11) raw kernel with penalty 1, (1.12) gamma_star^0 with penalty 1/2, and Ad printed slice-wise only. Image chen-04-lower states a prediction of the limit, not a theorem. Target lines 111-118, source-and-recon and adjudication-v2 assert no E_(1/2)=E or E_star, no all-printed-Ad=O, no F_a(E_star)>ceiling and no correction."
+    },
+    {
+      "claim": "C4 diagnostics fully specified, with code and JSON matching by hand",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Own read-only reasoning: the six tuples, 80-digit setting and formulas in the script match the target, and the JSON labels match. I recomputed by hand, to about 4-5 figures, M, v*k/2=direct score=closed ceiling, F0, Delta, Fa/F0 and the mutation ratio 2^(-1/k) across cases, and all agree. The exact integers are consistent in leading digits, size, final digits and subtraction alignment. Author execution: the assertions and the exact integer comparison are author-run claims, and I did not execute them. Note: 'direct nested optimization' is evaluation at analytic stationary points plus sampled neighbours, not a numerical search, and the source says it is no global proof. Concavity gives the global statement by hand."
+    },
+    {
+      "claim": "C4 mutation controls and exact certificate semantics",
+      "verdict": "PASS",
+      "reason": "The full-variance mutation gives factor 2^(-1/k), confirmed algebraically and against JSON. Kinetic-factor omission is detected only at eta!=1/2, and the blindness at 1/2 is disclosed. The exact decision is the Python-integer comparison at script lines 13-15. The mp gap assertion at line 46 is an additional floating check, not the certificate."
+    },
+    {
+      "claim": "C4 scope and missing-object audit",
+      "verdict": "PASS",
+      "reason": "The script and falsification note evaluate scalars with arbitrary E inputs, not actual energy, SPDE, ground-state or optimizer values. My audit found no missing object or quantifier that prevents a long proof. The order is psi fixed, g=g_psi, T eliminated, C_occ universal, sup over psi, then SUP. Remaining obligations are ordinary ones already named in the target."
+    },
+    {
+      "claim": "C5 claim scope: Q2>=V2 stays lower, ceiling limits mechanism only, and no Q2 upper or moment counterexample",
+      "verdict": "PASS",
+      "reason": "Target lines 3-7, 18 and 120-126, worker-honesty and source-and-recon all state this. Logically, V_2<=U_2 with Q2>=V_2 gives no upper bound on Q2. The limitation of the mechanism is correctly restricted to where Nhalf or N1 applies."
+    },
+    {
+      "claim": "C5 no kill of Theorem 3.1 G:upper route, source two-sided or all-dimensional goal",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The non-implication holds by logic alone, because a ceiling on a lower-bound functional has no bearing on an upper-bound argument. Note: the text of Theorem 3.1 is not in the packet, so this concerns the non-implication only, not that route's validity."
+    },
+    {
+      "claim": "C5 exclusions and pre-proof status",
+      "verdict": "PASS",
+      "reason": "No actual first-mean, source L, Jensen improvement, signed optimizer, attainment, minimax, clock equality or new rough flow is used or claimed. No new Lean proof, source correction, companion, HPC, Skorohod, contact, novelty or circulation claim appears in target lines 127-128, worker-honesty lines 28-32 or source-and-recon line 33. The target is labelled PROPOSED and unproved. This statement audit is not acceptance of a full proof."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Script line 40 comments 'derivative signs', but only sampled neighbours are compared. Line 44 uses the closed inner maximum at sampled v rather than re-maximizing T. The word 'independently' in falsification line 3 should be read narrowly.",
+      "joint-gaussian-tilt.md is not in the frozen packet, so the long proof should cite the exact cross-covariance statement for two distinct smooth positive tests rather than rely on the 'distributional shorthand' in nonseparable (1).",
+      "The accepted fixed-radius split (3) yields only C(T^(1/2)+1). The homogeneous bound needs the radius-dependent split R=T^(-1/2) or a dilation normalization. The target names localradius, but the proof must not cite (3) unchanged for the constant.",
+      "Notation collisions with accepted notes should be disambiguated in the long proof: q versus q_sigma, k versus k_far, m versus local mass, T versus T_g and unitary T_s, A(g) versus A_sigma and script A, kinetic eta versus the spectral margin eta in (2)/(19), Delta versus the spectral gap, F_b versus phase space F, script M versus disputed static M.",
+      "The gap criterion can be stated as an exact equivalence with the eta<=1/2 automatic case noted. The insufficiency sentence at target line 123 could say explicitly that c=2 is the label consuming Q2, other c being auxiliary.",
+      "O uses almost-every-t normalization while printed Ad says every s. This is already retained as non-identification, and the note is optional."
+    ],
+    "optional_note": "none"
+  },
+  "required_repairs": [],
+  "limitations": [
+    "Read-only review: I did not execute the script, verify JSON by running code, compute hashes or inspect image pixel dimensions. Numeric agreement is hand-level only, and exact integer execution remains the author's claim, supported here by algebraic equivalence and hand log estimates.",
+    "Author statements on git cleanliness, wiki CLI, PDF SHA, root image viewing and prior gate receipts could not be independently verified from packet text.",
+    "Accepted occupation, general-positive and family inputs were treated as scoped inputs. Only their new applications were inspected. joint-gaussian-tilt.md, local-causal-young-flow.md, Theorem 3.1 and the full source paper are not in the packet.",
+    "No long proof exists. PASS_WITH_NOTES concerns the statement, objects, class, source and feasibility audit only. It is not human verification, novelty audit, whole-paper certificate or full-proof acceptance.",
+    "An ambient hook announced a queued amsg message. It is outside the packet, was not read and contributed no evidence."
+  ]
+}
