@@ -207,3 +207,18 @@ evidence5393594checkedread-only; all9Lean files identical to oldd5fde707/
 execution in that parser, no confidence upgrade of earlierMEDIUMmathreview,
 no change to owned45deductions/L0/PROPOSED or package creation decision4.
 See coordination/2026-10-29-agent8/factorial-successor/.
+
+
+## Joint-tilt local pilot (2026-10-30)
+
+Four new finite algebra consumers in local-checks/joint-tilt-v1: Gaussian-MGF
+exponent cancellation, wrong-sign and wrong-cost errors, and actual positive-
+delta real-power amplitude quotient. No Gaussian MGF/measure/flow theorem.
+Clean original/replay compilation, exact public types and standard3axioms;
+five owned output hashes match;3altered numerical statements reduce to False.
+Raw41member archive hash/member verified. Independent type/application review
+PENDING with the full candidate scientific tilt consumer. Prior45deductions
+retain their exact earlier gates; total49local finite deductions, not49accepted
+new claims. Official latest stable Lean4.35.0/Mathlibv4.35.0 pin56a0058 checked
+against the existing read-only donor; no dependency migration or donor write.
+L0/PROPOSED, companion decision4 and all package/registry gates unchanged.

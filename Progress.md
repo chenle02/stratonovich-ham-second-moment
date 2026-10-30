@@ -66,6 +66,20 @@
 - New exact sparse-polynomial check verifies the scalar exponent cancellation
   universally over rational polynomial coefficients, with wrong-sign and
   wrong-cost error controls. This is testing, not a Gaussian/Lean theorem.
+- Full candidate written in notes/joint-gaussian-tilt.md: explicit full-product
+  assembly on F including constant data; raw profile regularity/covariance;
+  finite Gaussian completion-of-squares and countable Borel-law extension;
+  actual retained-residual squared average and original point-moment link.
+  It is NOT independently accepted. No spectral/event/sharp result assumed.
+- Four new local finite Lean deductions compile/replay cleanly; public
+  types/standard3axioms, five owned output hash matches and3False controls
+  checked. Raw41member archive retained. Official latest stable Lean/Mathlib
+  both4.35.0 and Mathlib56a0058match existing read-only pins. Local only;
+  no package or Gaussian/flow theorem. Independent type/application pending.
+- Next action: freeze and dispatch the full scientific statement/analytic/
+  type/application gate. Worker honesty concerns are retained; both prior
+  medium/failed statement reviews remain unchanged. No extra statement
+  confidence retry substitutes for the required full proof gate.
 - Accepted science and canonical TeX/PDF unchanged. Lean stays L0/PROPOSED;
   decision4, source normalization, higher dimensions, sharp constants and
   whole-paper clearance remain open. No cluster or correspondence action.
