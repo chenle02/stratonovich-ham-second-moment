@@ -1,0 +1,95 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "reviews/2026-10-30-all-alpha-damped-ratio/target-v3.md: lines 1-94, complete to EOF",
+    "reviews/2026-10-30-all-alpha-damped-ratio/falsification-v1.md: lines 1-19, complete to EOF",
+    "reviews/2026-10-30-all-alpha-damped-ratio/check-diagnostics.py: lines 1-45, complete to EOF",
+    "reviews/2026-10-30-all-alpha-damped-ratio/diagnostics-v1.json: lines 1-282, complete to EOF",
+    "reviews/2026-10-30-all-alpha-damped-ratio/input-bindings-v2.json: lines 1-21, complete to EOF",
+    "reviews/2026-10-30-all-alpha-damped-ratio/finite-fence-v1.md: lines 1-30, complete to EOF",
+    "reviews/2026-10-30-all-alpha-damped-ratio/finite-controls-v1.json: lines 1-29, complete to EOF",
+    "reviews/2026-10-30-all-alpha-damped-ratio/prior-art-v1.md: lines 1-26, complete to EOF",
+    "reviews/2026-10-30-all-alpha-damped-ratio/worker-honesty-v2.md: lines 1-28, complete to EOF",
+    "notes/global-d1-damped-lower.md: lines 1-345, complete to EOF",
+    "reviews/2026-10-30-global-omega/scientific-adjudication-v1.md: lines 1-62, complete to EOF",
+    "notes/all-dimensional-static-occupation-bridge.md: lines 1-404, complete to EOF",
+    "reviews/2026-10-31-all-dimensional-static-occupation/scientific-adjudication-v1.md: lines 1-47, complete to EOF",
+    "lean-progress/local-checks/global-omega-v1/StratonovichHAMAudit/GlobalOmega.lean: lines 1-144, complete to EOF",
+    "lean-progress/local-checks/global-omega-v1/definitions-types-and-axioms.txt: lines 1-456, complete to EOF",
+    ".review/required-sources.json: lines 1-47, complete (read plan, no read credit)"
+  ],
+  "checks": [
+    {
+      "claim": "C1 joint-density setup: R(a,D) is positive and finite for 0<a<1, D>0, and normalizes a positive density on (0,1/2)x(0,infinity); x=E[u lambda] and y=E[u lambda^2]/D are finite; lambda-IBP gives x+y=a; CS gives x^2<=D*y/2; differentiation gives partial_D log R=y/(2D).",
+      "verdict": "PASS",
+      "reason": "Hand check. Normalizer Z=Gamma_E(a)R/2 is finite because K_star(u)<=u^-a with a<1. u*int lambda^a exp(-u lambda)dlambda is proportional to u^-a, so x is finite. u*int lambda^(a+1) exp(-u lambda^2/(2D))dlambda is proportional to u^(-a/2), so y is finite. For fixed u>0, lambda^a exp(-u c(lambda)) vanishes at both endpoints since a>0 and decay is Gaussian, and c'=1+lambda/D gives a*E[1]=E[u lambda]+E[u lambda^2]/D, so x+y=a. CS gives x^2<=E[u]E[u lambda^2]<=(1/2)Dy. The D-derivative of exp(-u lambda^2/(2D)) gives E[u lambda^2]/(2D^2)=y/(2D), dominated on compact [D0,D1] by the same u^(-a/2) integrable bound. D is scalar throughout and the spatial Gamma amplitude is not touched. The target correctly leaves these as analytic obligations, and no obstruction was found."
+    },
+    {
+      "claim": "C2 D1: x+y=a and x^2<=D*y/2 give y>=2a^2/(D+4a); with partial_q Delta=-(1/2)log(1+a^2/[D(D+2a)]) and log(1+z)<=z, this gives d_q log J_a>=a^2/[2(D+4a)(D+2a)]>0 for all q>2a.",
+      "verdict": "PASS",
+      "reason": "(a-y)^2<=Dy/2 gives a^2<=y(2a+D/2)-y^2<=y(2a+D/2), so y>=2a^2/(D+4a); y^2>=0 is the dropped term and x>=0 is not needed. Entropy: partial_q Delta=(1/2)log[q(q-2a)/(q-a)^2], with q(q-2a)=D(D+2a) and (q-a)^2=D(D+2a)+a^2, which gives the stated formula with the correct half and sign. Total: a^2/(D(D+4a))-a^2/(2D(D+2a))=a^2/[2(D+4a)(D+2a)] exactly, positive for a,D>0. Domain q>2a is exactly D>0; q-a>0 and q>0 are then automatic. No term, half, denominator or domain is missing."
+    },
+    {
+      "claim": "C3 D2: for actual alpha in (0,2-a), q=4-alpha in (2+a,4), k=3-alpha>0, J monotonicity to q=4 plus Delta(4,a)<=Delta(3,a), R(a,4-2a)<=B4(a,4-2a) and old scalar (14) give 0<M_a J_a(q)<=V(a/2), without assuming q>=3.",
+      "verdict": "PASS",
+      "reason": "[q,4] lies in q>2a since q>2+a>2a, so D1 gives J_a(q)<J_a(4)=R(a,4-2a)expDelta(4,a). Old (3) is stated at any d>0, so it applies at d0=4-2a, which corresponds to the auxiliary q=4 with no alpha=0 noise model. Delta is decreasing on [3,4] with 3>2a, so Delta(4,a)<=Delta(3,a). B4>0 by its positive integral. Old (14) depends only on a, and all a in (0,1) are covered. Ceff=M_a^-1 in the old note, so the target's form of (14) is the same inequality. M_a>0 for 0<a<1. q<3 occurs at alpha>1 and is carried only by J monotonicity. k>1 actually holds. I re-derived the B4 coefficients from the double integral and spot-checked a=.5: B4(.5,3)/Ceff is about .744, Delta(3,.5) is about .050, product about .78 <= V(.25), about .988."
+    },
+    {
+      "claim": "C4: V is literally GlobalOmega.envelopeRational and note (13); rational_lt_one has hypotheses 0<x, x<=1/2 and is applied at x=a/2; old scalar inputs match after renaming d to D; the old stochastic d1 consumer is not promoted.",
+      "verdict": "PASS",
+      "reason": "Compared token by token: P=1-x^2+x^4/2, g=1-3x/5, L=(177/100)(1-7x/5), E, C, H and (3-4x)/(3-4x-2x^2) match note (13), the Lean source lines 14-18 and the pp.all tree in definitions-types-and-axioms.txt lines 198-390. There are no casts, and the only real-valued argument is x. The Q and D polynomials and all A_i, B_i rows match between note and Lean. Printed type of rational_lt_one is (x:Real)(hx:0<x)(hh:x<=1/2):envelopeRational x<1, with standard axioms only. x=a/2 discharges both guards from 0<a<1. M_a, Delta, K_star and R_star formulas are identical in the old note, the bridge and the target. The target uses only scalar results and explicitly refuses the d1 consumer."
+    },
+    {
+      "claim": "C5: accepted all-Gamma full strong-H1 point consumer (26) has the same a, alpha, D, M_a, R_star, Delta, F_a and Omega with half-gradient penalty; positivity and real powers yield Q2>=2^m V^(-1/k)F_a(E_star^O)>2^m F_a(E_star^O), conditionally on the scalar gates.",
+      "verdict": "PASS",
+      "reason": "Bridge (3), (19), (20), (25) match target definitions with D=q-2a, and R=2 int_0^(1/2) K_star by Tonelli. Omega in target D2 is exactly bridge (25). Bridge (22) has -T/2 with T=int b(g_s), retaining actual Gamma amplitude. Bridge q, k, m and D ranges equal the target's. Every original-model alpha lies in (0,2-a), so scalar D2 covers all model parameters. t->t^(-1/k) is decreasing on t>0 and k>0, so 0<M_a J<=V<1 gives Omega>=V^(-1/k)>1. E_star^O is in (0,infinity), F_0>0 since 2-alpha>0, and exp(Delta/k)>0, so multiplying (26) preserves the inequality and strictness. No p1, source label, Jensen, exact limit, sharp upper or domain repair enters. The bridge itself claimed only Omega>0, and the target states the conditional status."
+    },
+    {
+      "claim": "C6: two proposed finite headers moment_lower and rational_gap have correct quantifiers and guards, serve the actual consumers, and the falsifiers bite; nothing is claimed compiled.",
+      "verdict": "PASS",
+      "reason": "Both headers are mathematically true as stated. In moment_lower, ha and hD make D+4a>0, and substituting x=a-y into 2x^2<=Dy gives 2a^2<=y(D+4a)-2y^2. rational_gap's identity holds exactly, and its two terms are precisely the consumer's a^2/(D(D+4a)) and a^2/(2D(D+2a)). Lean parsing is unambiguous: (2*a^2)/(D+4*a), (D*y)/2, and = binds tighter than the conjunction. Controls recomputed by hand: positive case holds with target 1/12; lost-half (43/100,7/100) has x^2=.1849<=Dy=.28 but y<1/12; weakened mean (0,0) has x+y<=a and hcs but fails the target; gap 1/240, doubled 1/120; a=0 not strict. The fence states no body, compiler, kernel or count exists, and that rational_gap is not a derivative or Gaussian theorem."
+    },
+    {
+      "claim": "C7: the old 20+9 diagnostics map to the new J naming, include q outside the model, have no error certificate, and support no all-parameter or point theorem; byte bindings are root checks.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The script's log_F_q_derivative equals d_q log J_a under the target formulas, with logRd=Eul2/(2D^2) and deltaPrime as in target. E_u_lambda is x; E_u_lambda_squared is raw E[u lambda^2]=D*y, not y. ratio=M*R*exp(Delta) and gain=ratio^(-1/(q-1)) match D2. fg, the x^(1/a) substitution and normalization are correct by reading. Rows recomputed by hand: a=.5,D=1; a=.99,D=.1; a=.01,D=.1 reproduce the derivative. The 9 alpha>1 rows have alpha+a<2, ratios .1729 to .9789, gains 1.012 to 2.518, and ratio increases with q within each a, consistent with D1. Limitations are disclosed in target, falsification and honesty records. Hash equality was not recomputed by this read-only reviewer and is left to root as the contract states."
+    },
+    {
+      "claim": "C8: direct Mathlib reuse, bounded incomplete search, no absence claim, no competing foundation, package, companion or external disclosure of private goals.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "prior-art-v1.md states an incomplete search, names unqueried services, makes no absence claim and proposes no library or package. The algebra of both headers needs only field and order normalization plus sq_nonneg-level facts, per my derivation in C2 and C6, so the plan is feasible. The Mathlib pin matches the old adjudication. The named file:line locations and raw query snapshots are not in the packet, so those record items rest on the worker's statement and on the later local compile gate."
+    },
+    {
+      "claim": "C9: honest scope: no contact, Skorohod, HPC, source fix, TeX, PDF, wiki, publication or goal completion; matching sharp upper, intended dictionary and conditional exact limit stay open.",
+      "verdict": "PASS",
+      "reason": "target-v3 lines 3-7, 61-66 and 87-94, falsification lines 13-19, worker-honesty lines 21-28, and both adjudications agree. Original goal stays ACTIVE and nothing here is claimed adopted. Prior-acceptance metadata in the target (scientific 249e2c4, adoption aa4a016, 18 checks, 366.614 seconds, unmasked adoption 94d85ca) agrees with the bridge note and the worker record."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Import wording: target line 42 says Import ONLY (14),(17), but the argument also uses old (3) for R<=B4 and (13) for V; input-bindings-v2.json lists (3),(13),(14),(17). Mathematically harmless; the full proof should cite (3) explicitly.",
+      "Notation collisions to keep separate in the later proof: moment x versus rational argument x=a/2; J_a(q) versus occupation functional J(g) in bridge (21); scalar D versus old polynomial D(x)/envelopeDenom; R(a,D) versus spatial ratio R(g); the integration variable u versus bridge u=alpha/q and the script's uu. The x collision is the most error-prone because moment_lower and rational_lt_one both use x.",
+      "Diagnostic field E_u_lambda_squared is D*y, not the target's y. The mapping is correct in the code but easy to misread.",
+      "Diagnostic coverage is narrower than the word some suggests: only 5 of 20 derivative rows have q in the model interval (2+a,4), and 15 lie outside. No diagnostic evaluates V(a/2), J_a(4) or the comparison M_a J_a(q)<=V(a/2). My hand values at a=.1,.5,.9 are consistent with the comparison but are not certified.",
+      "finite-fence-v1.md line 22 calls a temporal alpha0, while old note line 86 uses alpha0 for a spatial alpha=0 noise model. This is a label ambiguity only; no source-label identification should be inferred from it.",
+      "Target line 89 uses m without defining it; the consumer's m=q/k from the bridge is the intended value. Target k>0 is correct but weaker than the available k>1.",
+      "The scalar D2 range 0<alpha<2-a is a superset of original-model parameters (for example d=1 excludes alpha>1). This is harmless for the application, but the point theorem must keep the original model hypotheses alpha<d or alpha=d=1.",
+      "finite-controls-v1.json has no generator in the packet and the raw search snapshots are not in the packet. All control values were re-verified by hand; the search record could not be.",
+      "Optional proof obligation, not a blocker: prove normalization, positivity and finiteness of Z; perform lambda-IBP at fixed u>0 and then apply Fubini with each term separately absolutely integrable; state the D-derivative domination on compact D intervals; handle the excluded null set u=0.",
+      "Optional proof obligation, not a blocker: compile the two finite headers locally with complete types, axioms, replay and negative controls before any count; review the full proof and application gate before adopting Omega>1."
+    ],
+    "note_scope": []
+  },
+  "required_repairs": [],
+  "limitations": [
+    "Statement, feasibility, source, type and planned-application gate only. This is not a full analytic proof clearance, kernel run, novelty audit, whole-paper certificate or human verification.",
+    "Reviewer tools were read-only and executed nothing: no Python, Lean or hashing. Byte bindings and SHA values are root checks and were not recomputed; prior frozen packet copies and historical target-v1/v2 are not in the packet.",
+    "Old accepted scalar results (3), (14), (17) were used as accepted inputs. I re-derived the B4 coefficients and the Delta bound and spot-checked (15), V and (14) at sample parameters, but did not re-prove the full Gamma estimates or expand the 15th-degree certificate.",
+    "Hand numerics are approximate calibrations. No all-parameter claim rests on them; the D1 and D2 implications were checked algebraically.",
+    "Mathlib file and line citations in prior-art-v1.md could not be verified from the packet, and the reuse search is incomplete by its own statement. No absence claim is made."
+  ]
+}
