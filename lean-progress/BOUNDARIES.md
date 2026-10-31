@@ -324,3 +324,21 @@ finite time/infinite spatial rank; no finite Gaussian density or timeblock
 independence. No expectednorm/stochastic exponential/growingR pointupper,
 source normalization/sharpconstant/exactlimit result follows. Companion
 creation decision4/privatepackage/registry/lease/HPC unchanged and pending.
+
+## FP-GROWING-CONE-POINT: original point moment to actual E-flow reduction
+
+Scientific4c6d63e,13checks/HIGH377.833s,FULL analytic/source/type/actual-
+application gate. Four old DirectEvent real-power facts used under actual
+Tdelta>0,alpha<3,a<1,complete source/publictype fixture. Inverse Tdelta
+parametrization is ANALYTIC,not included in those facts. No new compiler/
+module/theorem/count:74facts20seams/L0 unchanged.
+
+Actual E/F restriction/source tails,compact-data higherSobolev phase/scalar
+identification,full-distribution free propagation of TOTAL data,d3positive
+Greenmeasure/Fubini,cone Volterra uniqueness,stationary square-average,
+actual L2(D) raw versus canonical pointmoment limits,source/oldlaw scaling,
+polynomialdata/log/limsup and zeroGamma freecase are reviewed INFORMAL
+analytic arguments. Scalar kernel facts do not formalize them. No raw
+pointtrace/F3reverse,uniform-sourcecutoffindelta,growingR operatorrate,
+sharpconstant/source normalization/exactlimit follows. Official companion
+and package/registry/lease/HPC/private/publication gates unchanged.

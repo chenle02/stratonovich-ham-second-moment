@@ -1,11 +1,12 @@
 # Growing-cone transfer from the original point moment to the actual E flow
 
-UNREVIEWED COMPLETE PROOF CANDIDATE. The GC1-GC3 statement/source/old-finite-
-application gate passed Opus5.5/HIGH at frozen c7d0e57 (12 checks,354.91s),
-with all eight optional findings adjudicated at dcdc431. This note supplies
-those remaining proofs. It still needs its own FULL independent scientific
-source/type/actual-application gate. No growing-R stochastic upper or sharp
-constant is claimed. The full original all-model objective remains ACTIVE.
+ACCEPTED at the scoped FULL analytic/source/type/actual-application gate:
+scientific4c6d63e,actualOpus5.5/HIGH,13checksPASS,377.833seconds,no required
+repairs. All22input bindings and complete native archive verified before
+six optional clarifications,adjudicated in
+reviews/2026-10-31-growing-cone-point-transfer/scientific-adjudication-v1.md.
+Frozen proof/report preserved unchanged there. Exact transfer reduction only;
+the growingR stochastic upper/sharpconstant/source goal remains OPEN.
 
 ## 1. Original model, geometry and exact new claim
 
@@ -49,10 +50,11 @@ where the accepted raw pullback is an isometry. Let M_E be the actual
 masked E FIRST interaction driver M_R(W_fast) on[0,L], and D_E=g M_E.
 The actual E Young evolution is U_E, with physical flow
  P_E(t,s)=S_E(t)U_E(t,s)S_E(-s),P_delta=P_E(L,0).             (2)
-This is a B(E)-driver construction. The F-to-E column extension called
-A_E=M_E L_chi in the fixed-mask note is a DIFFERENT operator. Our E driver
-is M_E; equivalently it is the restriction i^-1 A_F i. No new spectral
-flow or raw point trace defines P_delta.
+This is a B(E)-driver construction. The F-to-E column extension in the fixed-mask note uses an auxiliary
+L_(tildepsi),where tildepsi=1 near its larger localization chi; it is NOT
+the datum psi=eta_R. Our E Young driver is D_E=g M_E. With amplitude g
+the actual F driver satisfies i^-1 A_F i=D_E. No new spectral flow or
+raw point trace defines P_delta.
 
 We prove the EXACT point-moment identity and upper reduction
  E|u_Gamma(T_delta,0)|^2
@@ -126,6 +128,20 @@ of the actual first-driver paths. Its bounded physical conjugation and
 restriction preserve strong measurability into their separable image, even
 though all B(E) need not be separable and S_E is not norm continuous.
 The operator norm and the E/L2(D) evaluations used below are measurable.
+We instantiate GL with this SAME admissible theta. If two admissible
+exponents are compared,the actual driver versions agree on literal rows
+and rational times,then as paths; both Young solutions belong to a common
+lower admissible Holder class,where uniqueness identifies them.
+
+GL's supported-noise hypothesis is also exact. A fast row up to L has
+slow pullback supported in[0,delta L]=[0,1]. Smooth interior approximations
+to endpoint indicators converge in the raw covariance norm,because a<1
+and the masked spatial support is compact with finite Radon covariance
+mass. Thus its completion belongs to the closed H_I. The same holds for
+the genuine F constant columns. Countable dense state/rational-time Gaussian
+coordinates identify the first paths with the construction from W restricted
+to H_I,and the Young map adds no noise. The present endpoint is therefore
+GL's actual given-noise flow,not merely an equal-law substitute.
 GL FINITENESS applies to the single finite pair (delta,R=L+2), and (5) gives
             0<E||P_delta||B(E)^2<infinity.                  (6)
 The strict positivity follows from invertibility on nonzero E. GL's fixed-R
@@ -146,7 +162,16 @@ The jointly Gaussian families retain W_fast as an actual variable, not an
 equal-law replacement. Generic Gaussian transfer on[0,L] gives
  M_R(Y_fast)->M_R(W_fast) in every finite Lp Ctheta(B(E)),    (9)
 for admissible theta>1/2. Multiplication by the fixed g and the bounded F
-extension transfer(9) to the drivers used in Section2. The source Young/
+extension transfer(9) to the drivers used in Section2. More explicitly,
+Gaussian transfer with covariance bound1 and the accepted raw-driver
+sqrt(p) moments give uniform-in-rho sqrt(p) first-path moments at this
+FIXED delta,R,L,also after g and the bounded F extension. The elementary
+moment-series argument gives uniform square-exponential path norms.
+The accepted Young bound has growth exp(C(1+||A||)^(1/theta)),with
+1/theta<2. Local-Lipschitz convergence on bounded driver balls first gives
+probability convergence; those exponential tails give all finite moments
+and uniform integrability,exactly as in fixed-mask Y3. Thus its upgrade
+applies to this actual fast pullback family as well. The source Young/
 physical E flows, denoted P_E^rho, therefore satisfy
  E sup_(s<=t<=L)||P_E^rho(t,s)-P_E(t,s)||B(E)^2 ->0.          (10)
 Here rho=(epsilon,tau); arbitrary joint rates are allowed. Radius/horizon,
@@ -247,7 +272,10 @@ g Y_fast and data(1,0). Accepted F Sections1,4 applied through (11) supply
 its locally continuous,jointly measurable scalar mild version, agreeing
 at every fixed point with its L2 Picard sum. We do not place this global
 unmasked field in E or F. Spatial stationarity and a finite Q_L bound hold
-by the same source law; fixed parameters may affect Q_L.
+by the same source law; fixed parameters may affect Q_L. Its pathwise
+compact-cone Picard construction needs only continuity and boundedness
+of the realized field there. Its L2 point identification and stationarity
+use only the law (11),not a particular retaining-family representation.
 
 The TOTAL free initial difference between v_rho and u_rho^full is
 (psi-1,0). It belongs to E plus constants: (psi,0)+(-1,0). Although neither
@@ -306,7 +334,10 @@ moments (18) proves the exact identity
                   =v_d^-1 E||pr1 P_delta z||L2(D)^2.         (21)
 No canonical point value is identified with a raw E point trace.
 
-We recall the exact original point-law normalization. By the accepted
+We use the following IMPORTED consequence of the accepted canonical
+calibration and raw-block Section8; the time-change paragraph recalls
+that input's normalization rather than independently re-proving the
+canonical-series scaling. We recall the exact original point-law normalization. By the accepted
 calibration, with delta=T^-kappa and r_T=T delta, V_delta(t,x) has the
 canonical law of u_Gamma(Tt,r_T x) and equation
  delta^2 V_tt=Delta V+sqrt(delta) W V,data(1,0).
@@ -393,7 +424,6 @@ unchanged. Calibration scripts were retained, not rerun; their fragile
 floating exact-equality guard supplies no proof premise or enclosure.
 
 The missing growingR stochastic operator upper and intended author energy/
-normalization dictionary remain open. This note proves a candidate transfer
-REDUCTION only, pending FULL independent review, not the original sharp
-upper or conditional exact limit. No TeX/PDF/wiki/bib/sourcePDF/sibling/
+normalization dictionary remain open. This note proves the scoped independently reviewed transfer
+REDUCTION only,not the original sharp upper or conditional exact limit. No TeX/PDF/wiki/bib/sourcePDF/sibling/
 Skorohod/contact/HPC/companion or publication action is taken here.
