@@ -1,0 +1,68 @@
+{
+  "scope": "4exact finite Gaussian seen-space/linear variational cases and symbolic Rayleigh tail primitive; CAS algebra not Lean or infinite-dimensional proof",
+  "cases": [
+    {
+      "case": "identity",
+      "covariance_rank": 2,
+      "raw_dimension": 2,
+      "linear_MGF_rate_exact": "5/2",
+      "optimal_control_score_exact": "5/2",
+      "same_image_exact": [
+        "1",
+        "2"
+      ],
+      "minimum_seen_preimage_norm_squared": "5",
+      "full_raw_preimage_norm_squared": "5",
+      "unused_raw_norm_squared": "0",
+      "wrong_full_norm_depends_on_unused_direction": false
+    },
+    {
+      "case": "unused_coordinate",
+      "covariance_rank": 2,
+      "raw_dimension": 3,
+      "linear_MGF_rate_exact": "1",
+      "optimal_control_score_exact": "1",
+      "same_image_exact": [
+        "1",
+        "4"
+      ],
+      "minimum_seen_preimage_norm_squared": "5",
+      "full_raw_preimage_norm_squared": "14",
+      "unused_raw_norm_squared": "9",
+      "wrong_full_norm_depends_on_unused_direction": true
+    },
+    {
+      "case": "rank_one",
+      "covariance_rank": 1,
+      "raw_dimension": 3,
+      "linear_MGF_rate_exact": "9/2",
+      "optimal_control_score_exact": "9/2",
+      "same_image_exact": [
+        "11/5",
+        "22/5"
+      ],
+      "minimum_seen_preimage_norm_squared": "121/25",
+      "full_raw_preimage_norm_squared": "14",
+      "unused_raw_norm_squared": "229/25",
+      "wrong_full_norm_depends_on_unused_direction": true
+    },
+    {
+      "case": "zero",
+      "covariance_rank": 0,
+      "raw_dimension": 3,
+      "linear_MGF_rate_exact": "0",
+      "optimal_control_score_exact": "0",
+      "same_image_exact": [
+        "0",
+        "0"
+      ],
+      "minimum_seen_preimage_norm_squared": "0",
+      "full_raw_preimage_norm_squared": "14",
+      "unused_raw_norm_squared": "14",
+      "wrong_full_norm_depends_on_unused_direction": true
+    }
+  ],
+  "tail_integral_exact": "4*exp(-M**2/(8*delta))",
+  "combined_cutoff_tail_exact": "4*exp(-M**2/(4*delta))",
+  "sympy_version": "1.14.0"
+}

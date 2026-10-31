@@ -7834,3 +7834,23 @@ Skorohod/sourcefix/TeX/PDF/wiki/bib/publication, NoRoute/pushpending.
 - Existing numerical-gate skill updated for unroundedprecision comparison
   and typedcarriersemantics,pushed canonicalLab67c96801; allvalidation/
   generator/runtimebytes/strictbudget checks pass. No duplicate skill.
+
+## BT complete analytic proof frozen for FULL gate — 2026-10-31
+
+- Complete new BT1-BT3 proof written AFTER statement acceptance: closed
+  compact control tubes/least radius/Borel geometry, exact seen-CM scale,
+  monotone-jump Rayleigh comparison, zero-law case; actual original E tuple
+  first-chaos/support/Radon/measurable-norm realization and compact mean;
+  noise-only restart/SP endpoint identity, uniform coarse Young envelope,
+  exact old scalar tail application and raw half-action supremum.
+- UNREVIEWED candidate: no adoption from statement feasibility. FULL native
+  Opus5.5/HIGH proof/source/type/actual-application gate required. Packet
+  includes full raw diagnostic JSON plus lossless carrier, all six statement
+  findings and both PRIMARY images. No new numeric/CAS/Lean run or count.
+- Timely durable lesson follow-up pushed canonical Lab bdf09d4a: separate
+  tautological positive calibrations from falsification and count distinct
+  configurations instead of duplicate/zero rows. Description, skill gate,
+  projections, generator and strict budget passed; Lab clean/tracking0/0.
+- Sharp uniform E spectral/product envelope, signed-positive comparison,
+  source normalization/intended constants and exact limit remain OPEN.
+  Original all-model goal ACTIVE; canonical TeX/PDF unchanged.
