@@ -8080,3 +8080,8 @@ Skorohod/sourcefix/TeX/PDF/wiki/bib/publication, NoRoute/pushpending.
   accepted74facts20seams/L0 unchanged. No officialcompanion/package/lease/
   registry/HPC inferred. FullPGanalyticproof stillUNREVIEWED. Old12case
   numericsnotrerun; no novelty/sourceconstant/PDE/wholepaperclaim.
+- PGfullanalytic/source/type/application packet nowfrozen withcomplete
+  localkerneltypes/axioms/actualcalls/privateconsumer/capsule/guardmap and
+  Gitblob-source bridge. Kernelproofcorrectness deduplicated; ALLanalytic
+  min/attainment/realization/infmax andactualPGguardfit needFULLHIGHreview.
+  Fourprovisionalfacts notpromotedfromrawcompilealone; no physicaltheorem.

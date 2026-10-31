@@ -1,0 +1,191 @@
+{
+  "provider": "claude",
+  "started_utc": "2026-10-31T21:31:41.366984+00:00",
+  "workspace": "../../../../.local/state/Le-AI-Lab/stratonovich-positive-gram-statement-v0/workspace",
+  "source_revision": "e9fbfef5927bbaf90f1617c93db5be64ca6723e4",
+  "input_hashes": {
+    "reviews/2026-10-31-positive-gram-variational/check-finite-score-v0.py": "2cc9af0912c5d45d0f1bd54b0da17f75d060735660e3d8cfea5ed1b1484cfc8c",
+    "reviews/2026-10-31-positive-gram-variational/finite-score-screen-v0.json": "2ddae8daabc6a6b8046629bd7241b9b43dbdfb5bc0b39ea5ab0ce8eb959d6531",
+    "reviews/2026-10-31-positive-gram-variational/screen-note-v0.md": "5c302a11cd56a284ee5cfb5a0ebb6c3a97da1c6d587a9b6d3b675f883616b482",
+    "reviews/2026-10-31-positive-gram-variational/statement-prompt-v0.md": "6074627875db81882883459994c5e897b9a72f4a1232a356e62d6f5e28d0f54b",
+    "reviews/2026-10-31-positive-gram-variational/statement-source-crosswalk-v0.md": "8f5a6c21651a91f3cdc9861a66d49c016e044d8f5689e0af1648f895daabf779",
+    "reviews/2026-10-31-positive-gram-variational/target-freeze-v0.json": "158dbf44f675ac1647283e9ce76270a60d982cd1128460acbf081a158c151bdd",
+    "reviews/2026-10-31-positive-gram-variational/target-v0.md": "5ab5dac4953575e459f6e810f6f7c73c7f8d6bb9f3ae423321c27aae6bc6b06f",
+    "reviews/2026-10-31-upper-residual-exponential/mathlib-young-custody-v1.json": "a3c58226db19919f822567102bc1922d0555d8fcc706ffda33a436ccc87f2396",
+    "reviews/2026-10-31-upper-residual-exponential/mathlib-young-type-v1.txt": "a97184a5b0264753cd3877c3ae84d237939e5a26e33561439ab061e99ffef289"
+  },
+  "target": "reviews/2026-10-31-positive-gram-variational/target-v0.md",
+  "claude_account": "<removed>",
+  "review_contract_sha256": "6074627875db81882883459994c5e897b9a72f4a1232a356e62d6f5e28d0f54b",
+  "effort_requested": "high",
+  "resumed_from": null,
+  "resume_mode": null,
+  "resume_binding": null,
+  "min_confidence": "high",
+  "scientific_verdict": "PASS_WITH_NOTES",
+  "accepted": true,
+  "report_contract_schema": "subscription-review-report/1",
+  "report_legacy_mode": null,
+  "legacy_resume_binding": null,
+  "diagnostics": [],
+  "required_sources_sha256": "6ae718f95dbf1fc0c6458c3c8f33aa6b8d993334875b9360310c99aa2adf3566",
+  "required_sources_workspace_copy": ".review/required-sources.json",
+  "workspace_preflight": {
+    "schema": "le-ai-lab.review-workspace-preflight/1",
+    "scanned": "review contract (--prompt-file)",
+    "references": {
+      "reviews/2026-10-31-positive-gram-variational/target-v0.md": [
+        "reviews/2026-10-31-positive-gram-variational/target-v0.md"
+      ]
+    },
+    "waived": [],
+    "missing": [],
+    "required_sources_copy": ".review/required-sources.json"
+  },
+  "runtime_preflight": {
+    "effective_version": "2.1.304",
+    "cli_version": "2.1.304 (Claude Code)",
+    "image_requirements": false,
+    "supported_versions": [
+      "2.1.299",
+      "2.1.300",
+      "2.1.301",
+      "2.1.302",
+      "2.1.303",
+      "2.1.304",
+      "2.1.314"
+    ],
+    "supported": true
+  },
+  "cli_version": "2.1.304 (Claude Code)",
+  "executable": "../../../../.local/state/Le-AI-Lab/swe-white-time-resume-20261024/runtime/node_modules/@anthropic-ai/claude-code-linux-x64/claude",
+  "executable_requested": null,
+  "executable_effective": {
+    "path": "../../../../.local/state/Le-AI-Lab/swe-white-time-resume-20261024/runtime/node_modules/@anthropic-ai/claude-code-linux-x64/claude",
+    "version": "2.1.304 (Claude Code)"
+  },
+  "read_ledger_format_supported": true,
+  "auth": {
+    "authMethod": "<removed>",
+    "apiProvider": "firstParty",
+    "subscriptionType": "<removed>",
+    "email": "<account email removed>"
+  },
+  "model_requested": "claude-opus-5-5",
+  "command_without_prompt": [
+    "../../../../.claude/bin/claude-acct",
+    "run",
+    "<account A>",
+    "--print",
+    "--model",
+    "claude-opus-5-5",
+    "--effort",
+    "high",
+    "--disable-slash-commands",
+    "--strict-mcp-config",
+    "--mcp-config",
+    "{\"mcpServers\":{}}",
+    "--permission-mode",
+    "dontAsk",
+    "--permission-prompts",
+    "none",
+    "--output-format",
+    "stream-json",
+    "--verbose",
+    "--tools",
+    "Read,Grep,Glob",
+    "--allowedTools",
+    "Read,Grep,Glob",
+    "--agents",
+    "../../../../.local/state/Le-AI-Lab/stratonovich-positive-gram-statement-v0/claude-reviewer.json",
+    "--agent",
+    "artifact-reviewer",
+    "<stdin: prompt.txt without its final newline>"
+  ],
+  "prompt_transport": "stdin",
+  "prompt_bytes": 5259,
+  "prompt_sha256": "5f99660de4866bec4abcada5029b26679b0dc9e82ab9df31c2536acbda75b49c",
+  "transport_exit_code": 0,
+  "transport_ok": true,
+  "model_actual": "claude-opus-5-5",
+  "session_id": "ec2e2d06-48b4-415d-84eb-bd363ffc25d3",
+  "usage": {
+    "input_tokens": 6,
+    "cache_creation_input_tokens": 38082,
+    "cache_read_input_tokens": 44329,
+    "output_tokens": 22895,
+    "output_tokens_details": {
+      "thinking_tokens": 16538
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 38082,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 21696,
+        "cache_read_input_tokens": 21507,
+        "cache_creation_input_tokens": 19779,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 19779
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "provider_error": false,
+  "terminal_subtype": "success",
+  "tools_actual": [
+    "Read",
+    "Grep",
+    "Glob"
+  ],
+  "actual_route_verified": true,
+  "candidate_hashes_unchanged": true,
+  "raw_report_sha256": "bf7fb1d2615a431a4eca2713f7edb01bff8ef84ae5501ab9f745527cfcdb7298",
+  "status": "review-complete",
+  "confidence": "high",
+  "report_interpretation": {
+    "contract_schema": "subscription-review-report/1",
+    "report_schema": "subscription-review-report/1",
+    "legacy_mode": null,
+    "normalized_verdict": "PASS_WITH_NOTES",
+    "normalized_confidence": "high",
+    "normalized_check_verdicts": [
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS"
+    ]
+  },
+  "report_sha256": "cb4498f5816a769abcdcfcdefa892427fbd9428483bcd2e9485cfeaa7ddd801d",
+  "report_text_format": "bare",
+  "report_body_sha256": "bf7fb1d2615a431a4eca2713f7edb01bff8ef84ae5501ab9f745527cfcdb7298",
+  "finished_utc": "2026-10-31T21:35:26.898934+00:00",
+  "elapsed_seconds": 225.532,
+  "transport_events_sha256": "ce49e93e0eeec9f2ee00dec0dab82ac3753311b143f4c260bd71607d8117d7f6",
+  "transport_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "read_ledger_sha256": "19ad3c231b6199e13896bec816e555ece2751a4788313515010a92a564e8001a",
+  "coverage_verified": true
+}
