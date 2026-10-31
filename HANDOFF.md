@@ -1,149 +1,108 @@
-Last updated: 2026-10-31 07:12 UTC (Codex)
+Last updated: 2026-10-31 07:53 UTC (Codex)
 
-Full original upper/sharp goal ACTIVE. Raw block/event statement recovered
-HIGH; complete NEW-F actual event/cost/original-point proof next.
+Full original upper/sharp goal ACTIVE. All-dimensional RAW point lower
+now accepted; independent statement gate for variational unmasking next.
 
 ## ⏭ Next session: where to stand and what to do
 
-Stand in this original root (loader entry point), then enter ACTIVE isolated
-worktree ${HOME}/.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave,
-branch research/fixed-mask-young-20261031, CLEAN committed HEAD
-c0daf794007ad0d9e6db9a470d6803a5a613f4c9.
-Its Progress.md is current mathematical/workflow authority for the wave;
-inherited isolated HANDOFF is stale. No root-master integration/push yet.
+Start in this original root (loader entry), then enter ACTIVE isolated
+worktree ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave, branch
+research/fixed-mask-young-20261031, CLEAN committed HEAD
+64d93986b7ed7160c9da51cecbb62f23ef180a24.
+Its Progress.md is the mathematical/workflow authority for this wave;
+its inherited HANDOFF is stale. No root-master integration or push yet.
 
-FIRST write the complete A1-A6 proof from
-reviews/2026-10-31-raw-block-event/target-v1.md and its
-statement-adjudication-v1.md. Statement gate is now ACCEPTED/HIGH10checks
-by supported one-closer syntax recovery, originalread474.035s,21bindings/
-35original+4recoveryfiles verified. No new provider/restart/confidencewaiver.
-The original11445 is TERMINAL invalid-report/acceptedfalse; recovered
-receipt is review-complete-recovered/acceptedtrue/HIGH. Do not relaunch it.
+FIRST prepare and run the independent STATEMENT gate on U1-U4 in
+reviews/2026-10-31-unmasked-variational-target/target-v1.md, together with
+falsification-v0.md. The raw lower theorem is now an ACCEPTED input,
+notes/raw-block-event-lower.md, adoptionc426e5a. Do not rewrite it or
+repeat the terminal review. No long U1-U4 proof before its statement gate.
 
-Proof must re-establish NEWFcone/positiveO_phi, actualsameW/Zblock covariance,
-operator-norm little-Holder Borel/Gaussian law, scaled-max high-moment series,
-actualrestart/source/canonicalaverage and original-point event/cost rate.
-Critical proof routes: induced source/error convergence under actual raw
-Hilbert time isometries and raw interaction cocycle; F3 amplitude via
-Gamma_delta=g_delta²Gamma at FIXED delta; Gaussian cost still ORIGINAL
-slowPsi/Z/v; M_delta includes g_delta, handle high moments FIRST then low.
-No long proof or new moment lower theorem written/adopted yet. After proof,
-freeze a FULL independent analytic/source/type/application gate before adoption.
+U1-U4 propose global bounded means, monotone compact-mask Rayleigh rates
+to the UNMASKED spectral bottom, per-test point lower after mask removal,
+and auxiliary S_c=c^((4-alpha)/(3-alpha))S_1 across ALL original Gamma.
+The unmasked bottom need NOT be an L2 eigenvalue: d2 invariant-direction
+Gamma diagnostic rejects that stronger claim. Only compact masks use the
+accepted ground/gap/cone. No d1 rough X theorem may be silently promoted.
+S_1 is not an actual first mean or identified source constant.
 
-Ground/full-F wave theorem ab6596f and Young/average5969da5 are accepted.
-All old review processes TERMINAL; no live reviewer/Lean job. <HUB>
-still No route to host, last verified remote604c60f; preserve both pending
-lines, no fresh parity/push/integration. Full original sharp/source goal ACTIVE.
+Original scientific88012 TERMINAL, full12PASS/HIGH516.106seconds,
+PASS_WITH_NOTES/no requiredrepairs at sourced4d876e. All27 input bindings
+and42native files checked/archived; report/correspondence/readcoverage
+validated. Seven optional notes clarified, including B-dependent U and
+point-limit order before e_rate->0. Do not relaunch terminal processes.
+Full sharp upper/source dictionary/exact-limit objective remains open.
 
 ## Pre-flight checks
 
-1. Read AGENTS.md, PROJECT-GOAL.md and ROOT plus ACTIVE-WORKTREE Progress.md.
-   Full original all-dimensional sharp/source scope intact; no goal completion.
-   Companion L0/PROPOSED and decision4 unchanged; no official private package.
-2. Check local/root and isolated ownership/status plus serial refs. Isolated
-   HEADf8d62ce CLEAN, root handoffs/prior0accd3d pending separately. Last
-   verified remote604c60f; network No route. No dropping/resetting either
-   line or foreign WIP. All review processes now terminal, no new providers.
-3. Accepted source operator convergence da9d464/fa1e54f,10HIGH388.736s,
-   23inputs/38files; SAMErawW/fixedbasis, retaining common source coupling,
-   MAXdelta/SUMepsilon. No time convolution/source-own-CM reconstruction.
-4. Accepted fixed-mask moment transfer604c60f/0accd3d,9HIGH756.999s,
-   18inputs/33files, all mixed positive displacement diagrams/source average
-   comparison and canonical unmasked full moment limit. Its F3 masked-L2
-   premise is closed by new accepted Young interface, not assumed forever.
-5. Accepted actual phase/Young/average8ad5094/5969da5,13HIGH283.696s,
-   26inputs/41files. F=E+R², actual two constant columns, whole-data finite
-   propagation, actual source PDE and W-measurable raw average, fixedR/T.
-   V1 MEDIUM/acceptedfalse retained; never a confidence waiver/retry vote.
-6. NEW accepted notes/compact-mean-ground-family.md:
-   scientificbfbd47285f1fe028631c00b82143cf433f40efa6,
-   adoptionab6596f5f8176adc9da47040063a2fa2b497d2e0,
-   FULL10HIGH359.291s,28texts+6images/34bindings/49files. Real compact
-   indexed V_sigma, common H1 trial, ground/gap/pH2 continuity, actual
-   fractional GLOBAL-E physical wave and FULL-F constant forcing projection/
-   complement, positive entrance/O_phi margins, parameter bound. ALL original
-   positive Psi supplies the common trial after a finite larger mask with
-   Psi/Z/v/Rayleigh score unchanged. No pL1/tail/d1-ODE assumption.
-7. Nine optional notes addressed: direct spectral-core form domain; forcing
-   Fubini; free H1xL2 generator; horizon consistency; nonzero qavg; typo;
-   decaying projection; real calculus; downstream NEWF cone must be redone.
-   Preproof family8HIGH284.794s/31bindings/46files and scalar12HIGH218.396s/
-   23bindings/38files remain separate. No new moment lower asymptotic yet.
-8. Next actual raw block controls (d1-white first-chaos/completion tests):
-   time-Jacobian sqrt(delta), joint covariance/MGF sameZ, wrong independentZ/
-   wrongJacobian/diagonal-only cost rejected.40/65working digits are not
-   error certificates; no point trace on F or full operator shift theorem.
-9. Exact old direct-event-calibration(S)-(M) applies ALL original covariance
-   measures: delta=T^-kappa, r_T=Tdelta, semiscalar noise sqrt(delta).
-   Distinguish r_T from fixed maskR; restart full FAST velocity delta V_t.
-10.71finitefacts/18seams/L0 unchanged; FP-YOUNG and FP-GROUND-FAMILY are
-    named INFORMAL analytic boundaries, not Lean declarations. Reuse finite
-    cone lemmas only at checked exact new consumers, no hollow formalization.
-11.Canonical TeX/PDF/wiki unchanged; TeX SHA256
+1. Read AGENTS.md, PROJECT-GOAL.md and this plus ACTIVE Progress.md.
+   Original all-dimensional scope/companion decision4 remain intact.
+2. Check root and active statuses/ownership. Current root before this
+   HANDOFF-only successor is556db27640f8b9d0755ebf0c88bbb1c92a2b91db.
+   Active HEAD64d9398 has proof/adoption/next target and Lean ledger only.
+   Preserve both pending lines and foreign WIP; no reset or blind merge.
+3. Serial origin/<HUB> audit: last verified remote is
+   604c60f2f8dc6d1a7635b9af224bbb6e5751d379. Fetch/push failed NoRoute
+   this turn. No fresh parity/sync/integration; no live Git job at save.
+4. Accepted raw theorem is EACH original smooth positive Psi/fixed eligible
+   R: original Q2>=2 int lambda_(R,s)ds-v_Psi/2, all original d1/2/3
+   Hhomog Gamma. Cost uses original slow W/Psi/Z/v. No optimized energy.
+5. Accepted dependencies: actual operator driver93d71e4/e8811b3;
+   source convergence da9d464/fa1e54f; moment transfer604c60f/0accd3d;
+   fixed-mask Young8ad5094/5969da5; compact mean familybfbd472/ab6596f.
+   Their exact scopes and preserved raw regularization remain authority.
+6. Full raw review receipt/report/adjudication/manifest live under
+   reviews/2026-10-31-raw-block-event/. Native directory is
+   ../../../../.local/state/Le-AI-Lab/stratonovich-raw-block-event-scientific-v1.
+   Frozen scientific sourced4d876e and raw report unchanged; new live
+   proof adds only seven adjudicated optional clarifications.
+7. Native original88012 now TERMINAL accepted/HIGH. Older statement11445
+   is TERMINAL invalid/false, with separately accepted canonical recovery;
+   never infer it became valid or relaunch it. All old reviewers terminal.
+8. Lean source/public-type bindings for MovingCone3/JointTilt4/ActualEvent2
+   are unchanged. Complete actual new guard applications passed full gate.
+   No new compiler/replay run:71facts18seams/L0 PROPOSED unchanged.
+   lean-progress/PROGRESS.md and BOUNDARIES.md record FP-RAW-EVENT as
+   an INFORMAL analytic boundary, not a Lean Gaussian/SPDE declaration.
+9. Canonical TeX/PDF unchanged. TeX SHA256 is
    58b092b258d4f363f8bfa0a02dcf492dcb9c13e794dbcab440bf7b0529b53b7d.
-   Full Gupper/GLOBALd1 lower retained. Source-energy dictionary, all-alpha
-   variational bridge, sharp upper and conditional exact limit still OPEN.
-12.Next finite reuse readiness is READ-ONLY, not new application acceptance:
-   raw-block-event/lean-reuse-readiness-v0.json binds MovingCone3,JointTilt4,
-   ActualEvent2 source and full type/axiom bytes to prior-reviewed frozen
-   packets. Six exact SHA matches, no new compiler/replay run. Future proof
-   must discharge each new analytic guard and get actual application review.
-   No duplicate lemmas or count increase just to pad formalization.
-13.New A1-A6 target sourcecad9da9,21TEXTS, statement original11445 terminal
-   invalid-report after474.035s dueONE omitted closing brace. Original is
-   retained acceptedfalse. Canonical recover-report dryrun/actual unique }
-   insertion atbyte11692,107key/value tokens unchanged, exact byte reversal,
-   ZEROprovider calls. Recovered10HIGH/no requiredrepairs, all21live/frozen/
-   git/nativebindings and35original+4recovery members checked. Full canonical
-   validate_recovered_attempt plus correspondence/readcoverage with
-   allow_recovered=True pass. Native recovery directory is
-   ${HOME}/.local/state/Le-AI-Lab/stratonovich-raw-block-event-statement-recovered-v1;
-   original directory ends statement-v1. Both raw/recovered archives/plain
-   bodies/receipts/RECOVERY metadata are committed; no handwritten edit.
-14.Seven notes/proof routes are in statement-adjudication-v1.md. In particular
-   Gamma_delta amplitude comparison does NOT change original slow CMcost;
-   raw/time-shifted source compatibility must be DERIVED with isometries,
-   not assumed from covariance alone. M_delta=max||X|| already includesg.
-   New K(F) norm-Borel proof needs dense rational UNIT COMBINATIONS, not
-   HS sum squares or maxindividualmatrixentries. No source/large-time swap.
+   No wiki content/bib/source PDF edit, whole-paper or circulation clearance.
+10.U1-U4 are FROZEN UNREVIEWED at43717b4; first run the statement gate.
+   Original all-alpha-damped-ratio target is also unreviewed and separate.
+   Correct parameter scalings cannot identify the intended source labels.
 
 ## Concrete deliverables for the next session
 
-- Complete self-contained NEW A1-A6 proof, keeping actual sameW/Z, raw
-  field Jacobian, both FAST phase entries and canonical source identities.
-- Reuse nine old finite facts ONLY at checked exact new guards; no new
-  compiler/application acceptance is implied by the source-hash audit.
-- Freeze proof packet and obtain independent FULL review before adopting
-  Q2>=2intlambda_R-v/2. Statement recovery is not a proof certificate.
-- Then variational unmasking/all-alpha/source-energy map and sharp upper;
-  do not infer actual p1/source L_* just from formal p-scaling.
-- Restore remote push/sync/integration after serial refs/ownership audit,
-  preserving original scientific revisions and both pending lines.
+- A frozen U1-U4 statement packet with exact accepted input scopes and
+  source hashes, full prior finite public types only if actually reused.
+- Independent Opus5.5/HIGH statement verdict and complete adjudication;
+  only then a self-contained unmasking/dilation proof and FULL proof gate.
+- Retain the invariant-direction falsification and all original covariances;
+  no unmasked ground projection or silent d1 function-class extension.
+- Preserve full upper/sharp goal and separate source-energy/occupation,
+  all-alpha scalar bridge and sharp-upper work after this step.
+- Restore serial push/sync/integration only after reachable ownership/ref
+  audit, preserving both root and isolated histories.
 
 ## Success criteria for the immediate next step
 
-The FULL written proof derives the actual new-F cone/product and positive
-terminal average, operator-norm Gaussian input and coupled mean covariance,
-correct sameZ negative half-cost law, actual local/global restart and source
-average, and probability->one event yielding ORIGINAL point lower rate.
-Explicitly handle scaled maximum high-moment Gaussian series and low-moment
-Lyapunov, unit-amplitude comparison at covarianceGamma_delta, and actual
-induced-source convergence under time isometry. Existing statement HIGH
-recovery only permits proof investment, not theorem adoption. No original
-raw cost/Psi/test class may change to make the proof easier.
+An independently reviewed exact U1-U4 statement decides whether the
+proposed global-mean/minmax/dilation route is sound in the FULL original
+covariance class. Any required repairs block proof investment. The accepted
+raw point theorem is used with fixed Psi/R before mask limits; no claim
+of uniform Gaussian events in R or exchange of source/time limits.
+Formal score homogeneity must remain distinct from actual p1/source values.
 
 ## Anti-success criteria
 
-No arbitrary-phase/velocity covariance monotonicity or PSD order: both
-negative controls are genuine in an admissible d2 model. Use only the
-restricted positive displacement diagram theorem. No point Sobolev
-evaluation, initialconstant in global E, original-noise quotient mask
-multiplier, time convolution, full heat-residual independence, minimal-raw-
-span cutoff measurability, Sp-valued Holder path or block independence.
-Compact positive potentials need not bind at every strength in d3; supply
-an explicit common negative trial. Preserve displacement AND velocity.
-No easier replacement model, source energy repair, Skorohod/contact/HPC/
-companion/publication or premature completion of the full sharp goal.
+No unmasked isolated ground/decay assumption, angular-density restriction,
+point Sobolev evaluation, scalar phase restart or block independence.
+No covariance monotonicity for arbitrary wave phases/velocities; only the
+accepted positive displacement diagram comparison. No raw-noise quotient
+mask multiplier, HS path replacement or unscaled-max exponential bound.
+No source normalization repair, source L_* identity, actual p1 theorem
+from S_1, Skorohod advance, contact/HPC/companion/publication or premature
+completion. A local scientific gate does not close the wiki/push round.
 
 ## What the previous sessions produced
 
@@ -1098,78 +1057,69 @@ operator-norm countable-coordinate Borel; sup measurability; symbol roles;
 old HSsource Section2 outside excerpt is not an import. No actual new lower
 moment theorem yet; COMPLETE A1-A6 proof is now immediate next work.
 
+
+2026-10-31 raw block/event full proof: scientificd4d876e, adoptionc426e5a,
+12PASS/HIGH516.106seconds/no requiredrepairs,27fullTEXT input bindings and
+42native archive members verified. Complete actual new-F cone/positive
+terminal average, SAME-W/Z Banach Gaussian tilt, scaled-max moments,
+source/Young restart, Gamma_delta-correct moment comparison and positive
+event/cost yield all-original-dimensional point lower Q2>=2intlambda_R-v/2.
+Seven optional findings clarified and adjudicated. Existing nine finite
+applications pass exact-public-type review;71facts18seams/L0 unchanged.
+Lean ledgers updated64d9398 with informal FP-RAW-EVENT boundary.
+Next U1-U4 unmasking/dilation target and invariant-direction negative
+screen frozen43717b4, UNREVIEWED/no long proof. All canonical TeX/PDF/wiki
+unchanged; source-energy/sharp-upper/exact-limit/fullgoal remain open.
+
 ## Repo & git state at handoff
 
 Root master before this HANDOFF-only successor:
-c3571c2b1cb906349a83679d99ee10e4b8fc87e8, pending prior0accd3d and operational handoffs.
-Last verified remote604c60f2f8dc6d1a7635b9af224bbb6e5751d379. <HUB>
-No route to host; no fresh parity, push/sync or integration claimed.
+556db27640f8b9d0755ebf0c88bbb1c92a2b91db, prior0accd3d plus operational
+handoffs pending separately. Last verified remote604c60f2f8dc6d1a7635b9af224bbb6e5751d379.
+NoRoute prevents fetch/push; no fresh parity/sync/master integration.
 
 ACTIVE isolated research/fixed-mask-young-20261031 CLEAN HEAD
-c0daf794007ad0d9e6db9a470d6803a5a613f4c9, worktree
-${HOME}/.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave.
-All owned artifacts committed; no foreign WIP or live review/Lean job.
-Original raw statement11445 TERMINAL invalid-report/acceptedfalse, supported
-recovery acceptedHIGH in statement-recovered-v1; both exact evidence sets
-committed. Old ground61985/family71921/scalar11790 and Young91665/29576/98785
-all TERMINAL. Do not relaunch any of them. Root HANDOFF is loader entry point;
-active-worktree Progress.md carries the new wave, inherited HANDOFF stale.
-Wiki ../SPDEs-wiki/content/projects/stratonovich-ham-second-moment.md exists,
-unchanged; no human/novelty/whole-paper/circulation certificate.
+64d93986b7ed7160c9da51cecbb62f23ef180a24, path
+../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave.
+All owned artifacts committed. No live reviewer/Lean/Git job or foreign WIP.
+Scientific88012 TERMINAL accepted/HIGH; exact native path above. Frozen
+source d4d876e retained independently of post-review clarifications.
+Wiki ../SPDEs-wiki/content/projects/stratonovich-ham-second-moment.md exists
+and is unchanged. Root HANDOFF is loader entry; isolated inherited one stale.
 
 ## Operating notes
 
-Root compiler/script/hash/archive/Git evidence differs from read-only AI
-verification. Native Opus5.5/high/HIGHthreshold/CLI2.1.304 identity and full
-required-read coverage validated for all closed gates. Do not relaunch
-terminal processes. Earlier Young MEDIUM record and scalar-family scope
-limitation are preserved, not waived or silently turned into theorems.
+Use actual F=E+R2 and both FAST phase entries. Constants are genuine extra
+coordinates; E alone is not dense in F. Fixed-mask comparison is a moment
+INEQUALITY; R is not the growing physical scaling r_T=Tdelta. Original
+slow cost/Psi remain unchanged when recognizing fast Gamma_delta.
 
-Actual phase is F=E plus constants; O_phi includes c1 and actual e0 has
-coordinate norm1. Keep both displacement and FAST velocity at restarts.
-Ground projection has its constant-forcing functional, not a naked globalE
-projection. No original-noise quotient mask multiplier, HS assumption,
-pL1/weighted-tail hypothesis, norm-continuous free group or RNP is needed.
+For U1 test the GLOBAL Gaussian-convolution bound for the positive tempered
+spectral measure. Accepted mean smoothness is LOCAL; global bounds are new
+obligations. U2 uses only Rayleigh bottoms for unmasked H_s. A monotone
+mask supremum is taken AFTER each fixed-mask time lower, never R(delta).
+U3 uses Radon homogeneity and moving mask R/r. U4 uses SAME canonical
+upper finiteness to bound auxiliary scores, not firstmean/source values.
 
-All positive Psi means integrate the whole time test. Actual mean is smooth
-on a neighborhood of[0,1]; the last full block may use that extension for
-bounds while the observation uses only the terminal remainder. No spectral
-ground outside index[0,1] is automatically assumed. No block independence
-or nonlinear shifted covariance order. Old scalar all-alpha-damped ratio
-target remains UNREVIEWED and needs its own gate; no new lower constant.
-Existing finite source/type hashes were checked for nine prospective reuse
-facts; this is not a new kernel execution or formal SPDE certificate.
-The new statement/proof must state their exact actual consumers, not just
-copy the old d1 application labels.71facts/18seams remains unchanged.
-Recovery validation: validate_recovered_attempt returns the recovered receipt,
-original attempt path and RECOVERY metadata SHA; parse report-body.txt as
-JSON, not that SHA. Then validate_correspondence_receipt with allow_recovered
-and original read-ledger. Canonical helper rechecks unique byte-reversible
-operation and ordinary acceptance. Never hand-fix a report or treat the
-original invalid receipt as accepted. Full proof review still mandatory.
+Native review validation and root hash/archive verification are distinct
+from AI read-only checks. Prior MEDIUM, invalid-report and exact syntax
+recovery evidence stays preserved. Do not restart a live handle on timeout,
+hand-fix reviewer JSON, lower thresholds or treat a failed call as review.
+No new official companion without PROJECT-GOAL decision4 approval.
 
 ## Risks to monitor
 
-Network sync remains pending, not a mathematical impasse. Recheck serial
-refs/reachability before push/integration; preserve both lines and foreign
-WIP. No destructive Git/network workaround or fresh parity claim.
+Source normalization/domain/label dictionary and matching sharp upper are
+still genuine research gaps. The exact limit remains conditional on the
+source variational gap/intended normalization. A raw lower functional
+or auxiliary scaling identity does not achieve the full goal.
 
-The deterministic ground/mean family is ACCEPTED, but NEW-F cone/products,
-actual sameW/Z Gaussian shift/event/cost and original point lower rate are
-NOT. Completion/point-first-chaos benchmarks are not a bounded raw point
-functional on F or a proof for all covariances. No independent-block cost,
-missing time Jacobian, scalar solution-moment multiplication or implicit
-source/large-time limit exchange. Keep original Psi/raw variance fixed.
+Full proof acceptance now closes the prior NEW-F raw shift/event gap,
+but U1-U4 and later rough occupation/all-alpha energy bridges remain open.
+The d2 invariant-direction model must stay in scope. No unmasked ground
+state, d1 classification or unreviewed X continuity can be assumed.
 
-Variational unmasking/all-alpha/source energy dictionary/sharp upper and
-conditional exact limit remain OPEN; a formal p-scaling does not prove an
-actual p1 lower or identify source L_*.71facts18seams/L0 unchanged. No new
-private companion/HPC/contact/Skorohod/source correction/TeX/PDF/wiki/
-publication. Original full goal remains ACTIVE, not complete or blocked.
-The recovered statement is validHIGH but NOT a proof/theorem. Old source
-extension compatibility cannot be asserted from law only: prove induced
-source contractions/test convergence under actual pullbacks and raw restart.
-Comparison atGamma_delta is only a representation of noise-only fast law,
-not a changed original Gaussian tilt/cost. Uniform max exponential moments
-for the UNSCALED driver maximum are false in general; keep g_delta inside
-M_delta and split high/low moments. Do not copy HS norm formulas to K(F).
+Network sync remains pending, not a mathematical impasse. Do not claim
+round-close, fresh parity or publication readiness while wiki/remote and
+whole-paper gates remain open. Full original goal ACTIVE, not complete
+or blocked. No contacts/Skorohod/source repair/HPC/companion/publication.
