@@ -1,22 +1,29 @@
-Last updated: 2026-10-31 03:23 UTC (Codex)
+Last updated: 2026-10-31 03:36 UTC (Codex)
 
-Original full upper/sharp goal ACTIVE. Source convergence and fixed-mask
-displacement moment comparison accepted; masked raw Young average next.
+Original full upper/sharp goal ACTIVE. Accepted fixed-mask comparison;
+new E-plus-constants Young target isolated, statement review live.
 
 ## ⏭ Next session: where to stand and what to do
 
-Stand in this repository root. First restore the pending push/sync when
-<HUB> becomes reachable: substantive adoption0accd3d is LOCAL ONLY;
-last verified origin/<HUB>604c60f. Last push and follow-up SSH both
-failed with No route to host. Do not claim parity from stale tracking refs.
+Stand in this repository root, then inspect the ACTIVE isolated worktree:
+${HOME}/.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave
+branch research/fixed-mask-young-20261031, frozen target2a46ec2.
+Its Progress.md records the new candidate workflow; original accepted
+mathematics remains the same as root Progress.md. The direct E plus two
+constant phases replaces the earlier UNREVIEWED uniformly-local proposal.
+No noise/model/data or full sharp objective is narrowed.
 
-After sync, freeze/falsify the fixed-mask all-dimensional Young/local-phase
-and source-solution identification target from
-reviews/2026-10-30-fixed-mask-moment/next-flow-obligations.md (UNREVIEWED plan).
-The masked average L2 limit is still the EXPLICIT premise of accepted F3;
-construct it on a phase containing initial(1,0). No new long proof before
-statement gate. Both source-driver convergence and F1-F3 comparison are now
-accepted; do not repeat them. No live reviewer or Lean process.
+FIRST inspect/poll the EXISTING native statement review original exec91665:
+${HOME}/.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-statement-v1.
+The last direct poll confirmed it live; no verdict at this handoff capture.
+Inspect its receipt/report if terminal; never relaunch solely on an
+observation timeout. After an accepted statement gate, write and independently
+review the exact Y1-Y4 proof before adoption. No new analytic proof yet.
+
+<HUB> is still unreachable No route to host. Root master retains
+0accd3d/1a531db plus this operational successor; isolated branch push also
+failed. Last verified remote604c60f; no fresh parity/master integration
+claimed. Restore serial push/sync when reachable, preserving all branches.
 
 ## Pre-flight checks
 
@@ -50,29 +57,36 @@ accepted; do not repeat them. No live reviewer or Lean process.
    58b092b258d4f363f8bfa0a02dcf492dcb9c13e794dbcab440bf7b0529b53b7d.
    Full Gupper/GLOBALd1 lower retained,71finitefacts/18seams/L0 unchanged.
    No new Lean/package/lease/registry/HPC/contact/Skorohod/source repair.
+8. New isolated phase target Y1-Y4 uses F=E directsum R². Read target and
+   exact finite controls in reviews/2026-10-31-fixed-mask-young/ on the
+   isolated branch. Constants are CLOSED additional coordinates, not dense
+   E limits. Keep both actual constant-response columns. C0-only driver
+   convergence is insufficient; actual Ctheta convergence is available.
+9. Existing native statement process91665 was confirmed live. This is
+   source2a46ec21b0cd19c53e4ff2a8adfe70ad280a7536, twelveTEXTinputs,
+   actual Opus5.5/high/HIGHthreshold. No new full-proof or verdict claim.
+   Retain native artifact directory and original handle; no duplicate run.
 
 ## Concrete deliverables for the next session
 
-- A frozen fixed-noise-mask operator extension to a separable local phase F
-  containing constants, with source convergence and ordinary source identity.
-- A precise Banach Young/source limit and positive terminal-average consumer,
-  proving the masked L2-limit premise of accepted F3 before using it.
-- Subsequently compact mean potentials: explicit common negative Rayleigh
-  trial before d3 gap/ground claims, weighted projection/complement estimates,
-  full-phase cone/product and actual raw Gaussian shift/event/cost.
-- Secondary all-alpha-damped-ratio target remains UNREVIEWED; old d1 moment
-  consumer is not extended just by a scalar calculation.
+- Resolve the EXISTING isolated target statement gate, adjudicating every
+  finding and preserving its original result. No new proof until accepted.
+- Prove exact Y1-Y4 E-plus-constants driver/source/Young/average consumer,
+  get its full independent gate, and apply F3 only after its L2 premise holds.
+- Restore remote sync and integrate isolated mathematical commits after
+  inspecting serial refs/ownership. Do not drop pending master/handoff work.
+- Subsequent compact deterministic mean/gap/full-phase cone/raw event-cost,
+  all-alpha lower bridge, sharp upper and source energy dictionary remain.
 
 ## Success criteria for the immediate next step
 
-Construct the actual masked raw average on the SAME raw W by source limits
-of an all-dimensional Young flow on a phase containing(1,0). Accepted raw
-M_E has physical compact input/output localization; try bounded maps
-Dpsi:F->E and E->F for FIXED mask/horizon. Prove cutoff independence and
-source/classical identity, without pretending global E is dense in F.
-Gaussian driver moments plus theta>1/2 must control nonlinear stability
-and all-finite-Lp convergence. Independent statement/full gates required.
-Then F3 gives the original unmasked point-moment bound at fixed time.
+The statement gate accepts exact F=E+two constants for the SAME fixed-mask
+PDE, including both response columns, source first-response identity on
+constants, standard Banach Young stability/moments and the actual W-measurable
+masked average. Then write its full proof and get independent analytic/
+source/application review. The accepted F3 conditional premise is not closed
+by finite controls or a statement verdict. No global E density or original
+noise-Hilbert multiplier may be used to fake the constant response.
 
 ## Anti-success criteria
 
@@ -898,18 +912,39 @@ new lower rate/sharp upper/source-energy theorem follows. Push of adoption
 failed: <HUB> No route to host, confirmed by follow-up SSH. Work secure
 locally; remote sync pending. Full original goal ACTIVE.
 
+2026-10-31 continuation: root still clean at1a531db; <HUB> SSH and
+isolated-branch push both failed No route to host. Created isolated Git
+worktree on research/fixed-mask-young-20261031 (NOT a Lean companion).
+Frozen source2a46ec21b0cd19c53e4ff2a8adfe70ad280a7536 includes exact Y1-Y4
+on E plus constants, explicit physical cutoff columns/source PDE/Young/
+masked-average obligations. Exact rational cutoff/constant/left-order
+controls and five C0-only loop negative controls pass; reused actual d2
+finite first-order response witness retained with custody. Twelve text
+statement packet; original native exec91665 confirmed live, no verdict yet.
+Held Friz--Hairer source rehashed to prior5d00d79b; known-method application
+REFRAME, not independent novelty. No long proof, new Lean count or main
+moment lower/upper constant claim. Isolated untracked launch metadata is
+owned WIP, not foreign work. Root handoff points to its exact location.
+
 ## Repo & git state at handoff
 
-Substantive checkpoint before this HANDOFF-only successor:
-0accd3db751435e17a333a3122bf878bb8084568, LOCAL ONLY.
-Last verified remote/synchronized checkpoint:
-604c60f2f8dc6d1a7635b9af224bbb6e5751d379.
-Push and follow-up SSH failed with No route to host. Origin tracking is
-stale until network returns; no fresh remote parity claimed. All substantive
-work committed, no foreign WIP, no live reviewer/Lean job. Handoff successor
-also needs push. Wiki project page
-../SPDEs-wiki/content/projects/stratonovich-ham-second-moment.md exists,
-unchanged. No whole-paper/cold-reader/novelty/circulation clearance.
+Root substantive adoption0accd3db751435e17a333a3122bf878bb8084568 and
+handoff1a531db0336c71dc81b77ee4e4c34ab4345f0e74 are LOCAL ONLY; this root
+HANDOFF-only successor also pending push. Last verified remote checkpoint
+604c60f2f8dc6d1a7635b9af224bbb6e5751d379. <HUB> No route to host;
+no fresh parity claimed. Root otherwise clean, no foreign WIP.
+
+ACTIVE isolated branch research/fixed-mask-young-20261031, committed target
+2a46ec21b0cd19c53e4ff2a8adfe70ad280a7536, worktree
+${HOME}/.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave.
+Its owned untracked path at capture:
+reviews/2026-10-31-fixed-mask-young/statement-launch-v1.json.
+Native review exec91665 live at last poll, directory
+${HOME}/.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-statement-v1.
+No master integration/push for this wave. Preserve exact worktree/native
+paths; the literal root HANDOFF remains the entry point.
+Wiki project page ../SPDEs-wiki/content/projects/stratonovich-ham-second-moment.md
+exists, unchanged. No whole-paper/novelty/circulation clearance.
 
 ## Operating notes
 
@@ -942,3 +977,8 @@ actual Gaussian event/cost, all-alpha variational lower and sharp upper
 constant/source normalization remain OPEN. H1/2 never supplies point
 Sobolev evaluation here. No cutoff/large-time limit interchange or independent
 time-block assumption. Full original goal remains ACTIVE, not complete.
+The new direct-sum F is a TARGET, not yet accepted analytic construction.
+Its finite marker model cannot prove continuum constants lie outside E.
+No global E density, zeroed constant columns or C0-only Young stability.
+Future spectral/complement estimates on this F need exact revalidation;
+the prior d1 uniformly-local proof is not silently a theorem on the new phase.
