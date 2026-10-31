@@ -36,10 +36,14 @@
  327.286s,28bindings/43native members verified. Actual rough signed full-F
  flow has exact spectral rate and polynomial K/t bound; beta continuity
  and compact mean-field Bochner averaging accepted. FixedR interface only.
-- **Immediate next:** freeze/falsify B1-B3 actual mean block-product upper,
- including polynomially growing control balls, explicit B/K budgets and
- true last remainder. V1 temporal-range FAIL retained; exact2<r<2/a.
- Growing-cone/source gaps retained.
+- **New accepted mean-product upper:** scientificb1d8e5b,21checks/HIGH
+ 232.556s,17bindings/32native members verified. Exact physical blocks,
+ polynomial B/K budgets and integrated spectral rate on EVERY polynomial
+ control radius, fixedR and delta-beforeB only.
+- **Immediate next:** freeze/falsify actual fixed-mask Gaussian operator
+ upper using finite-head bulk/tails/action, existing rawrestart and exact
+ limit order. No original POINT/growingcone/sourceconstant upper yet.
+ V1 temporal-range FAIL retained; exact2<r<2/a.
 - **Still open:** intended author-energy/domain/normalization dictionary,
   matching sharp upper constant and conditional exact limit. Original full
   goal ACTIVE; no whole-paper/circulation/wiki/master integration clearance.
@@ -7120,3 +7124,23 @@ operator moment consumer: exact rawrestart/head split, polynomial bulk/
 tail/action budgets and own all-signed-control score. UNREVIEWED planning,
 not a Gaussian/point upper or source constant theorem. All fullgoal gaps
 and strict2<r<2/a retained; no additional proof assumed before current gate.
+
+### B1-B3 actual mean-product upper accepted — 2026-10-31
+
+Original68080 TERMINAL,21checks PASS/HIGH232.556seconds,no requiredrepairs.
+Canonical report/pass/correspondence/readcoverage pass;17live/frozen/Git/
+native bindings and all32native archive members verified. No recovery/
+restart/waiver. Adopt actual fullF mean-product upper on EVERY polynomial
+CM radiusM0B^m, explicit4B/32/C_theta B budgets, good signed spectral
+rate/freezing/error, bad r-budget, true short/emptylast and strict s
+threshold with delta-beforeB limit. Seven optional notes clarified only;
+frozen proof/report unchanged. Existing finitepowermean actualr/rnu guards
+accepted, no new kernel/count73facts19seams/L0, analysis INFORMAL.
+
+Accepted raw-block Section7 fixedMASK noise-only restart fit is checked:
+currentfullblock=head+residual, not residualalone. This is NOT a Gaussian
+bulk/tail/action upper or an original POINT transfer; F3 never reversed.
+Next UNREVIEWED Gaussian-upper contract, original growingcone/variational/
+sourceconstant/normalization/exactlimit tasks remainOPEN; fullgoalACTIVE.
+No contact/Skorohod/HPC/sourcefix/companion/TeX/PDF/wiki/bib/publication;
+NoRoute/localisolated/pushpending/no fresh parity/master merge.

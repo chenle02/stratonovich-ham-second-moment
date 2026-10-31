@@ -1,9 +1,12 @@
 # Actual mean-block products with polynomially growing control balls
 
-FULL PROOF CANDIDATE, NOT ADOPTED. Statement gated6ef042 passed
-16checks/HIGH234.987seconds,no requiredrepairs. A NEW FULL analytic/source/
-type/actual-application gate is required. FixedR mean-product upper only,
-not an original point/sharp-source theorem. Full original goalACTIVE.
+ACCEPTED at the scoped FULL analytic/source/type/application gate:
+scientificb1d8e5b,21checks/HIGH232.556seconds,no requiredrepairs.
+Seven optional clarity notes adjudicated in
+reviews/2026-10-31-upper-mean-block-product/scientific-adjudication-v1.md.
+Frozen proof/report unchanged. Statement2135264/d6ef042 passed separately.
+FixedR mean-product upper only, not original point/sharp-source theorem.
+Full original goalACTIVE.
 
 ## 1. Exact statement, objects and accepted inputs
 
@@ -48,7 +51,9 @@ Rate(Phi)=int_I lambda(T Phi(s))ds is the S4 scalar functional.
 **B1.** We can take
  G_B<=4B, C_B<=32B^(3-1/r), C_B B^(1/r)>=B,
  log||S_F(ell)U_D(ell)||<=C_theta B(1+(||D||theta)^nu),        (1)
-for0<=ell<=B,D(0)=0, with C_theta independent of B,D,R,Gamma,d.
+for0<=ell<=B and D a zero-started Ctheta([0,B];B(F)) path, with C_theta
+independent of B,D,R,Gamma,d. Local last-block paths use their stopped
+constant extensions to[0,B]. These are sufficient, not optimal, constants.
 
 **B2.** With C=C_theta32^r,
 
@@ -167,7 +172,7 @@ No equality of noncommuting frozen and unfrozen evolutions, no covariance
 ordering or positive mean potential has been used. This is a signed static
 upper with exact lambda, including zero rate and no ground-state gap.
 Since L_BK>=0 and delta N<=1/B, the good prefactors sum to at mostL_BK/B.
-The nonnegative rates obey
+On each FULL cell |I_m|=delta B. The nonnegative rates therefore obey
 
  delta sum_good B lambda(barM_m)
    <=int_I lambda(barW_delta)
@@ -246,7 +251,8 @@ No prescribed diagonal B_delta or M_delta follows from this iterated result.
 ## 7. Evidence and scope of the actual consumer
 
 At Phi0, P_m^0=S_F(ell_m), Rate0=0. Along delta=1/(NB),N>=2, the empty
-last cell contributes1, and the delta-normalized full product rate is
+last cell contributes the factor1 (log contribution0), and the
+delta-normalized full product rate is
 log||S_F(B)||/B, at least log||tau(B)||/B>0. Tau is the ACTUAL invariant
 constant sector with norm2=(sqrt(B²+4)+B)/2. This lower calibration is
 consistent with(2), since ||tau(B)||<=1+B; it shows why removing all
@@ -271,9 +277,11 @@ scale are untouched, and no Skorohod theorem is developed.
 
 The target is an actual deterministic MEAN operator product. To use it in
 a moment upper still requires Gaussian head bulk/tails/action optimization
-and the correct upper transfer to the original point model. The existing
-raw-block-event-lower Section7 supplies a fixed-mask raw restart input for
-a later exact consumer fit; it does not reverse F3 or handle growing masks.
+and the correct upper transfer to the original point model. The accepted raw-block-event-lower Section7 supplies a fixed-mask raw
+restart input: its FULL noise-only block is current E2(5)'s
+H_m(Phi_delta,J)+X_(m,J)^residual, not the residual alone. The exact map is
+recorded in restart-reuse-screen-v1.md and checked in this review for fit;
+it gives no upper F3 direction or growing-mask estimate.
 Growing original cone/localization/entropy, original POINT upper, intended
 source constants/normalization and conditional exact limit remain OPEN.
 The white fixed-finite-smooth-projection uniformR guard stands. No point
