@@ -15,15 +15,19 @@
   alpha>1 and FULL real H1/strong-H1 occupation class; physical covariance
   extension and energy comparison give original Q2>=2^m Omega F_a(E_star^O),
   Omega>0. E_star^O has the explicit OWN finite-energy half-gradient domain.
-- **Immediate next:** independently statement-review refreshed all-alpha
-  scalar target-v3 in reviews/2026-10-30-all-alpha-damped-ratio/, preserving
-  old V/kernel evidence and exact guards, BEFORE long proof. Omega>1 in the
-  full original range is still unreviewed. No source-energy identity from it.
+- **New accepted full-range gain:** scientificed2e5f5,10checks/HIGH318.460s,
+ 29input bindings/44native members verified. The original all-Gamma point
+ lower is Q2>=2^m V(a/2)^(-1/k)F_a(E_star^O)>2^mF_a(E_star^O).
+ This retains the explicit OWN full-H1 energy/domain, no author identity.
+- **Immediate next:** bounded falsification/recon for a sharp-upper route;
+ preserve the failed two-clock comparison and do not use fixed-mask lower
+ comparison in the reverse direction. No long proof before statement gate.
 - **Still open:** intended author-energy/domain/normalization dictionary,
   matching sharp upper constant and conditional exact limit. Original full
   goal ACTIVE; no whole-paper/circulation/wiki/master integration clearance.
-- **Lean:**71finitefacts18local seams/L0 PROPOSED; one OLD entropy application
-  checked in the new full gate. No new kernel run/module/package/companion.
+- **Lean:**73finitefacts19local seams/L0 PROPOSED; two new scalar facts
+  have clean local types/axioms/replay/4False controls and accepted actual
+  applications. No official package/companion or formal analytic/SPDE claim.
 - **Git:** isolated research branch; origin/<HUB> NoRoute. Last verified
   remote604c60f, no fresh parity/push/sync/master merge. Preserve both lines.
 
@@ -6571,3 +6575,28 @@ uncovered integral/derivative/point steps need independent FULL review.
 official package/companion. Original source-domain/sharpupper/exactgoal
 ACTIVE/OPEN. NoRoute/local isolated/no parity/master integration; no
 contact/Skorohod/HPC/sourcefix/TeX/PDF/wiki/publication/wholepaper claim.
+
+### All-alpha gain and TWO new finite applications accepted — 2026-10-31 UTC
+
+Original58486 TERMINAL, full10checks PASS/PASS_WITH_NOTES/HIGH318.460s,
+no requiredrepairs. Canonical report/pass/correspondence/readcoverage pass;
+29live/frozen/Git/native bindings and all44native archive members
+verified. No recovery/restart/waiver. Adopt all-alpha-damped-lower.md:
+Jmonotone ALLq>2a, oldV unchanged, ORIGINAL all-Gamma/full-O point gain
+Q2>=2^mV(a/2)^(-1/k)F_a(E_star^O)>2^mF_a(E_star^O).
+Intended source-domain/normalization/firstmean identity is NOT adopted.
+
+Seven optional clarity notes adjudicated: E[s]finite; fullintegrand D
+bound; old-vs-new equation numbers; spatial alpha label; V0=1/no uniform
+near-static gain; upper status citation; historical precompile records.
+No new estimate/scope; frozen proof/report unchanged. Newmoment/rational
+COMPLETE types/ACTUAL guards and oldV reuse pass. Root runtime/fence/
+5artifactpairs/4False controls/22failed+41clean archive evidence verified.
+Promote73finitefacts19seams now, L0 PROPOSED/officialcompanion unchanged.
+All integral/probability/derivative/point conclusions remain ANALYTIC.
+
+Next matching-upper falsification/recon, not a new narrowed goal. Source
+literal normalization discrepancy remains unresolved; no repair adopted.
+Full original goalACTIVE; sharpupper/intendeddictionary/exactlimit OPEN.
+No contact/Skorohod/HPC/sourcefix/TeX/PDF/wiki/publication/wholepaper claim.
+NoRoute/localisolated/no freshparity/masterintegration.

@@ -1,13 +1,15 @@
 # The damped lower comparison on the entire original parameter range
 
-COMPLETE PROOF CANDIDATE. The statement/finite-header gate passed at
-source8dd0227,9checks/HIGH294.503s. Two new scalar facts have local clean
-compile/type/axiom/replay/control evidence; their actual applications and
-the analytic proof still require FULL independent review. Full goal ACTIVE.
+ACCEPTED at the scoped FULL analytic/source/type/application gate:
+Opus5.5/HIGH,10checks PASS/PASS_WITH_NOTES,318.460s, no required repairs,
+scientific sourceed2e5f5. Two new scalar facts have local clean compile,
+complete type/axiom audit, replay/controls and accepted actual applications.
+Seven optional clarifications are in the scientific adjudication. Frozen
+proof/report unchanged. Original full sharp/source goal remains ACTIVE.
 
 ## 1. Exact scalar definitions and accepted inputs
 
-Fix 0<a<1, the TEMPORAL exponent. For a SCALAR damping D>0 put
+Fix 0<a<1, the TEMPORAL exponent; alpha below is the SPATIAL exponent. For a SCALAR damping D>0 put
 
  R(a,D)=2/Gamma_E(a) int_(s=0)^(1/2) int_(lambda=0)^infinity
                   lambda^(a-1)exp[-s(lambda+lambda²/(2D))]dlambda ds,
@@ -59,6 +61,8 @@ Other OWN accepted scalar inputs, EXACT pinpoints:
 
 The new local AllAlphaMoment.moment_lower and rational_gap have exact
 fenced types; their actual analytic guards are supplied in Sections2-3.
+Equation numbers introduced by old/that note refer to that named input;
+unqualified equation numbers below refer to this note.
 They are only scalar deductions, not formal Gaussian/integral theorems.
 
 ## 2. Normalization, finite moments and the actual derivative
@@ -74,7 +78,8 @@ For s>0,j>=0, the substitution v=s lambda²/(2D) gives
 
 Multiply by s^ell and integrate s over(0,1/2). This is finite whenever
 ell-(a+j)/2>-1. We need only (j,ell)=(0,0),(1,1),(2,1); all satisfy this
-because0<a<1. Dropping e^(-s lambda)<=1 therefore bounds Z_mass and the
+because0<a<1. The additional E_D[s] used in Cauchy-Schwarz is trivially
+finite and <=1/2 on its support. Dropping e^(-s lambda)<=1 bounds Z_mass and the
 two first-moment integrals below by finite constants. On any compact
 D interval [D_-,D_+] contained in(0,infinity), the SAME bounds with D_+
 dominate uniformly. Euler Gamma's positive-argument integral is finite
@@ -111,7 +116,8 @@ AllAlphaMoment.moment_lower with x=m1,y=m2 and the ACTUAL guards a>0,D>0,
 
 For differentiation, the D-derivative of the density's unnormalized
 exponential factor is s lambda²/(2D²) times itself. On [D_-,D_+] its
-absolute derivative is bounded by D_-^(-2)/2 times
+full unnormalized integrand derivative (including lambda^(a-1)) is
+bounded in absolute value by D_-^(-2)/2 times
 s lambda^(a+1)exp(-s lambda²/(2D_+)). This is integrable by(5).
 Dominated differentiation and continuity therefore prove R is C1 in D,
 with
@@ -180,7 +186,9 @@ of J up to4, and compared Delta at4 and3. We NEVER asserted q>=3 or
 Delta(q,a)<=Delta(3,a) at such a q.
 
 Since t->t^(-1/k) decreases for t>0 and k>0, (13) gives precisely(3),
-including V(r_a)^(-1/k)>1 because0<V(r_a)<1. This proves D2.
+including V(r_a)^(-1/k)>1 because0<V(r_a)<1. The literal V(0)=1,
+so no certificate gain uniformly separated from1 as a tends to0 is claimed.
+This does not assert a limit of the exact Omega or the energies. This proves D2.
 
 ## 5. Actual original point consequence in the SAME own energy
 
@@ -204,9 +212,11 @@ They have local clean compile, separate full pp.all types/standard-axiom
 audits,5matching artifacts in fresh owned replay and4semantic False controls.
 The first compiled attempt failed the WARNING gate on a redundant tactic;
 its22native files are preserved. The clean successor has41native files,
-changes proof body only and disables no linter. Source/type/application
-review is still required before accepting new facts into the count.
-71acceptedfacts18seams plus2provisional facts is the current pre-review state.
+changes proof body only and disables no linter. The FULL gate checked statement fidelity and actual applications;
+there are now73accepted finitefacts in19local seams, still L0 PROPOSED.
+The frozen pre-compilation input-bindings/fence and original local receipt
+retain their historical pending language; the current application summary
+and Lean ledger record their later acceptance.
 No formal integral/probability/derivative/SPDE theorem is claimed.
 
 The unchanged old V kernel is not recompiled or re-proved; actual formula,
@@ -224,7 +234,8 @@ V(a/2),J_a(4),M_aJ<=V comparison, occupation energy or actual SPDE moment
 was evaluated. Exact finite fixtures have a reproducible separate generator.
 None of these numerical controls substitutes for Sections2-5.
 
-The original correct-scale upper is retained, and kappa's static exponent
+As recorded in Progress.md, the original correct-scale upper is retained;
+this is a status citation and not a premise of(14). Kappa's static exponent
 limit is unchanged. Separate valid Jensen bounds may be combined with(14)
 by a maximum; (14) itself does not identify a firstmean rate or source L_*.
 The strict gain is in our own full-H1 finite-energy half-gradient domain.
