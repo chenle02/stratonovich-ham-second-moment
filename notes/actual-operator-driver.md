@@ -1,6 +1,8 @@
 # Actual masked operator driver on the balanced wave phase
 
-COMPLETE CANDIDATE, not adopted before independent full proof review.
+ACCEPTED internal actual operator-path result: native Opus5.5/high full
+review, PASS_WITH_NOTES/HIGH, scientific93d71e4; see the
+2026-10-30-actual-operator-driver packet and adjudication.
 This constructs a LOCAL physically masked first Gaussian operator path on
 the SAME original W, in every admissible dimension and covariance class.
 It proves no source-cutoff convergence, Young flow, canonical solution
@@ -30,7 +32,8 @@ and zeta_R(x)=zeta(x/R), R>0. Fix T>0.
 OWN accepted inputs are precisely:
 - actual-two-variance-forms.md Propositions1-2 and Sections2-3: actual
   physically masked forms ell_R, their Sobolev adjoint and BOTH uniform
-  finite-family variance bounds, and real mean-square columns m,n;
+  finite-family variance bounds, real mean-square columns m,n and the
+  Schwartz phase basis/density construction of its Section6;
 - compact-sobolev-cutoff.md Propositions1-3, Corollary4 and their proofs:
   actual whole-space compact cutoffs, correctly adjointed two envelopes,
   positive-order minmax, and finite Gaussian OPERATOR moments;
@@ -423,8 +426,12 @@ orthogonal projections of ell_R onto g_1,...,g_N. Completeness of the
 basis gives L2 convergence to that ACTUAL raw Gaussian form. Operator-
 norm L2 convergence gives convergence to <X_R(I)z,w> as well. The two
 limits coincide. This is SAME-W compatibility, not an equal-law substitute.
-Intervals of length>1 are handled by finite unit partitions and additivity;
-this defines the corresponding X_R(0,t) and raw form consistently.
+Intervals of length>1 are handled by finite unit partitions and additivity.
+Their indicators sum to the long-interval indicator except at finitely many
+endpoints, which have zero raw norm. The common fixed-support completion
+and linearity of W_C therefore identify the summed raw forms with the
+long-interval raw test itself. Strong-integral additivity gives the same
+identity for each X_N, hence also its operator limit.
 
 ## 9. Actual time-path convergence, including measurability
 
@@ -481,19 +488,25 @@ separable Banach space. The same elementary Lp Cauchy construction used
 in Section8 applies in this span and gives a strongly measurable C^theta
 limit M_R on the SAME probability space. An almost surely C^theta-convergent
 subsequence converges uniformly in operator norm. All finite paths have
-compact values by Section7, so M_R has compact values at every time on
-that single path set. This proves(2). Evaluation at any fixed time agrees
+compact values on short intervals by Section7; for t>1, finite unit-interval
+sums give compact X_N(0,t) as well. Therefore so M_R has compact values at every time on
+that single path set. This proves(2). The limits obtained for different p agree by uniqueness
+of convergence in probability in the path norm, as in Section8.
+Evaluation at any fixed time agrees
 with Section8; (3) follows. The complexified version is obtained from the
 four real pair identities and is sesquilinear as stated.
 
 The finite paths are Gaussian linear combinations of deterministic paths.
 Every continuous linear functional on their closed path span therefore
 converges in L2 to a centered Gaussian. This proves the asserted Gaussian
-path property. If a different smooth test basis is used on the SAME W,
+path property. The construction used only compact smooth representatives, orthonormality
+and completeness, so it applies to any such test basis. If a different
+one is used on the SAME W,
 compare matrix coefficients on a fixed countable dense Schwartz phase
 collection and rational times. Both versions equal the same raw forms.
 A countable null-set union, phase density and path continuity imply equality
-of the two operator paths up to a version. There is no uncountable
+of the two operator paths on one probability-one set for all times
+(indistinguishability). There is no uncountable
 compatibility assumption or independent time-increment argument.
 
 ## 10. Gaussian growth of the local path norm
@@ -528,8 +541,10 @@ for some nonzero noise directions are allowed; no all-nonzero CM claim.
 Four finite diagonal tail controls are only calibrations. Working precision
 is not certified accuracy; none of these proves an operator or path bound.
 
-The compact envelope in(21) is essential. On the actual whole-space Hilbert
-space choose disjoint translated compact smooth normalized states e_j.
+The compact envelope in(21) is essential. On H0=L2(R^d;R^2), the actual whole-space NORMALIZED coordinates, choose
+disjoint translated compact smooth normalized states e_j. They are
+orthonormal there; their unitary E representatives need not have disjoint
+physical supports.
 Rank-one projections onto e_j tend weakly to0 but keep operator/Schatten
 norm1 and are dominated only by noncompact I. Gaussian diagonal sums
 sum g_j e_j tensor e_j have variance at most I and mean-square column

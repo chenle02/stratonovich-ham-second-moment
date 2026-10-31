@@ -1,0 +1,103 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "reviews/2026-10-30-actual-operator-driver/target-v1.md: lines 1-122 (full)",
+    "reviews/2026-10-30-actual-operator-driver/falsification-v1.md: lines 1-31 (full)",
+    "reviews/2026-10-30-actual-operator-driver/worker-honesty-v1.md: lines 1-19 (full)",
+    "reviews/2026-10-30-actual-operator-driver/check-diagnostics.py: lines 1-55 (full)",
+    "reviews/2026-10-30-actual-operator-driver/diagnostics-v1.json: lines 1-234 (full)",
+    "reviews/2026-10-30-actual-operator-driver/canonical-model-context.txt: lines 1-39 (full)",
+    "notes/actual-two-variance-forms.md: lines 1-412 (full)",
+    "notes/compact-sobolev-cutoff.md: lines 1-388 (full)",
+    "notes/finite-gaussian-schatten.md: lines 1-236 (full)",
+    "notes/higher-dimensional-hs-obstruction.md: lines 1-348 (full)",
+    "notes/spectral-mask-covariance-foundation.md: lines 1-309 (full)",
+    "notes/actual-operator-driver.md: lines 1-550 (full)",
+    "reviews/2026-10-30-actual-operator-driver/statement-adjudication-v1.md: lines 1-31 (full)",
+    "reviews/2026-10-30-actual-operator-driver/scientific-worker-honesty-v1.md: lines 1-25 (full)",
+    ".review/required-sources.json: lines 1-44 (read plan only; earns no read credit)"
+  ],
+  "checks": [
+    {
+      "claim": "C1: actual H_W, separability, signed strict temporal positivity, infinite dimension, Gram-Schmidt representatives and independent g_j (Section 2).",
+      "verdict": "PASS",
+      "reason": "Bound (5) is correct: y is confined to K-K, the spatial factor is |K|Gamma(K-K) times the two suprema, and the temporal Schur constant 2L^(1-a)/(1-a) is valid though not sharp. It needs only local Radon mass, covers d=1,2,3 and raw non-injective tests, and turns countable uniform density with supports in a slightly larger box into H_W density. Q_sp>=|B_(L+1)|Gamma(B_L)>0 holds because x in B_(L+1) and y in B_L give |x-y|<=2L+1. I recomputed (6): the integral over u<min(t,s) of 2 lambda exp(-lambda(t-u))exp(-lambda(s-u)) equals exp(-lambda|t-s|), and the Euler identity gives the factor Gamma_E(a)^-1. Absolute integrability of the signed integrand holds. The new Volterra step is correct: v'=lambda v-tau, and v=0 a.e. with v continuous forces tau=0. Linear independence of the tau tensor q family then gives infinite dimension. Gram-Schmidt in the null quotient keeps finite linear combinations of smooth compact tests, and the isonormal property gives independent standard Gaussians."
+    },
+    {
+      "claim": "C2: H_j,R regularity, mask after convolution, null-representative independence on t>=0, and the covariance identity (8) with its indicator extension (Section 3).",
+      "verdict": "PASS",
+      "reason": "With v=t-u and a zero-extended test, all mixed derivatives move onto f_j under dominated integration, using compact y and v ranges, finite Gamma mass and locally integrable |v|^-a. No negative-time noise is introduced. The B_(2R) support and bounded derivatives on finite time compacts follow. Identity (8) follows from the raw covariance by absolute Fubini. The indicator extension is valid: the left side converges by L2 continuity in the raw completion, and the right side by boundedness of the unmasked convolution on the masked support together with L2-time supnorm convergence on a common spatial support. The variance note Section 2 supplies these approximants. Representative independence follows from the positive-time distribution identity and continuity at t=0, and is asserted only on t>=0."
+    },
+    {
+      "claim": "C3: Sobolev gain, E_s adjoint duality, statewise Lipschitz primitive, finite propagation, both localizations and the same-W pairing (13) (Section 4).",
+      "verdict": "PASS",
+      "reason": "The weighted entries of S(t) on E_r are as stated for every real r. B(h):E_r->E_(r+1) is correct, because the second entry only needs hu in H^r. The statewise integrand is continuous in E_(r+1) since multiplication by H_j,R(t) is operator-norm continuous in t, and operator-norm continuity of S is not used. Bound (10) and the Lipschitz primitive follow. The dual of E_r under the E_s pairing is E_(2s-r), so (11) is exact and gain one holds at all indices. A_j and its adjoint map E_(s-gamma) into E because gamma<1. The energy flux argument covers velocity, gradient and displacement, forward and backward, in d=1,2,3, and density extends it to negative indices. The output support B_(2R+T) and the zero displacement on B_(2R) for inputs vanishing on B_(2R+T+1) give both identities in (12). Equation (13) follows from variance note (7) with b=H_j,R, time integration and (8). No operator realization is postulated."
+    },
+    {
+      "claim": "C4: finite Gaussian projection (14) and BOTH variance operators (15)-(16), with real-to-complex extension.",
+      "verdict": "PASS",
+      "reason": "Equation (13) makes the coefficients exact orthogonal projection coefficients, which gives (14). Each direction follows separately: (15) uses (14), Parseval, monotone convergence and variance inequality (2), while the input direction uses inequality (3). The J0 forms are exactly Vout_N,Vin_N<=b_I D_gamma^2, since ||w||_(E_(s-gamma))=||D_gamma J0 w||. The constant is the accepted C_T, uniform in N,R,I, and no j-dependent norm sum enters. The complex extension is correct: real and imaginary norms split, a_j complexify isometrically, and the matrix form is linear and conjugate linear as stated."
+    },
+    {
+      "claim": "C5: true first-chaos columns, Parseval, rough-input extension, Riesz limits, strong tails, both localizations and weighted bounds (Section 6).",
+      "verdict": "PASS",
+      "reason": "Coordinates of m(z) are W(zeta_R F) with raw tests, so first-chaos membership comes from the linear test representation. Scalar Parseval in the chaos, Parseval in E and Tonelli give (17). The tail identity gives the L2(Omega;E) expansion, and n(w) follows in the same way via the adjoint. The rough-input extension is a valid three-epsilon argument using the uniform finite bound and the continuous column maps. Riesz operators exist, partial sums increase to them, and ||T_N v||^2<=||T_N||<T_N v,v> gives strong tail convergence. Vout=Pchi Vout Pchi* and Vin=Pchi* Vin Pchi follow from a_j=Pchi a_j=a_j Pchi, without assuming Pchi selfadjoint. Positive congruence gives (18)."
+    },
+    {
+      "claim": "C6: actual family matches compact-cutoff Propositions 2-3 and Corollary 4; beta bound and uniform high-q sqrt(q) (first part of Section 7).",
+      "verdict": "PASS",
+      "reason": "All hypotheses of Proposition 3 and Corollary 4 are derived: complexified bounded operators, Pchi Z=Z=Z Pchi, both variance bounds with C=b_I, and real independent Gaussians. Equation (19) is exactly (7) with sqrt(C)=sqrt(C_T)h^(1-a/2)B_alpha^(1/2). The S_p monotonicity proof is correct for unnormalized norms. The implication holds in all three alpha regimes: alpha<1 uses beta<1-a/2; alpha=1 uses strict beta to absorb the logarithm; alpha>1 uses beta<(3-a-alpha)/2. The note says implied, not equivalent. The sqrt(q) bound uses sqrt(q-1)<=sqrt(q) and the fixed q0 norm. The R,T dependence through chi is disclosed and no uniform-R path claim is made."
+    },
+    {
+      "claim": "C7: compact-domination lemma (21), retained two-variance inequality (22) and the tail L^q(B(E)) Cauchy property (rest of Section 7).",
+      "verdict": "PASS",
+      "reason": "Lemma (21) is correct as proved. For unit x, <T_N x,x><=2||Q T_N Q||+2 epsilon, using the positive form Cauchy-Schwarz and T_N<=B on (1-Q)x. Weak convergence on the finite block gives norm convergence. Minmax gives lambda_j(T_N)<=lambda_j(B), and dominated summation gives the trace limit. A^m<=B^m is not used. Inequality (22) is a genuine new application of finite Theorem 1's first inequality: the compressed variance is <=Q Vout Q, compression minmax applies, operator-norm convergence holds for compact sums, singular values are Lipschitz, Fatou applies twice, and the average of the two trace powers is retained. For j in (N,M], V_(N,M)<=T_N gives uniform tail control, and op norm<=S_q gives L^q(B(E)) Cauchy. Arbitrary finite B(E) moments come from larger even q, with no false Schatten embedding."
+    },
+    {
+      "claim": "C8: same-W fixed-interval limit, measurability, compactness, Schatten moments and fixed-pair compatibility (Section 8).",
+      "verdict": "PASS",
+      "reason": "The summable-subsequence construction proves a.s. and L^q convergence in the separable closed span without Banach martingale or infinite-series input. Limits at different q agree via convergence in probability. Compactness follows from a.s. operator-norm limits of compact operators. Singular-value Fatou and (19) give S_q moments only at admissible even q. Matrix coefficients are orthogonal projections of ell_R, and ell_R lies in the closed first chaos, so completeness gives L2 convergence. Operator-norm L2 convergence identifies the same limit, with no equal-law substitute. Additivity handles long intervals consistently with raw linearity."
+    },
+    {
+      "claim": "C9: actual L^p C^theta time convergence, dyadic bound, finite grid, interpolation, measurability, compact values at all times, Gaussianity and basis independence (Section 9).",
+      "verdict": "PASS",
+      "reason": "The maximum bound uses only a union sum (no independence). The geometric ratio 2^(-(beta-eta-1/q0)) is uniform in q>=q0, and finitely many coarse levels are bounded by unit partitions, giving (23). The dyadic-to-Holder lemma is correct: at scale T2^-n, adjacent grid points contribute at most 2D_n, and endpoint corrections sum to the tail, which is at most 2^(-n eta) times the weighted sum. The finite-grid and uniform C^eta argument gives supnorm L^q Cauchy. Interpolation (24) with exponents 1-theta/eta and theta/eta is correct, and scalar Holder gives C^theta Cauchy in L^p. This is actual convergence, not a uniform bound alone. The closed span of countably many Lipschitz deterministic paths gives measurability. Uniform convergence along a subsequence gives compact values at all times on one path set. Fixed-time evaluation and (3), Gaussian functionals, and countable rational basis comparison plus continuity are all correct."
+    },
+    {
+      "claim": "C10: uniform sqrt(p) path moments and exponential integrability (Section 10).",
+      "verdict": "PASS",
+      "reason": "For the smallest even q>=max(p,q0), q<=p+q0+2<=(q0+3)p since p>=1, and Lyapunov gives the first bound in (4). m!>=(m/e)^m follows from the log integral. The series term is at most c^m C1^(2m)(2m)^m(e/m)^m=(2e c C1^2)^m, so any c<1/(2e C1^2) works. No Fernique input is used. The constant comes from C_T and Kchi, not from individual basis coefficients, and is basis independent."
+    },
+    {
+      "claim": "C11: controls, boundary counterexample, scope matching of own inputs, and no overclaim (Section 11 and packet honesty files).",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Script semantics match the note: 3 values of a times 7 times gives 21 controls with one unnormalized test on [1,2], and the substitution v=ell z^(1/(1-a)) is correct. The JSON maximum absolute difference is about 1.49e-9, below the 1e-5 tolerance. I recomputed by hand Q=3, the correct mask values 3, 1.5, 0, the constant wrong factor I2 at x1=0, and I2 Q^2 matching the reported value. The finite 256 tails are calibrations. The boundary sup|g_j| argument is correct, outside compact localization, and consistent with the HS obstruction: admissibility needs q gamma>d with gamma<1/2, so q>2d and q=2 is excluded. Own inputs match their scopes: the two-variance Propositions 1-2 and pairing (7), compact Propositions 1-3 and Corollary 4, finite Theorem 1, and the temporal Laplace form. Each new application is proved. No new Lean, source-limit, Young, canonical-data, u-moment, HPC, contact, Skorohod, publication or whole-paper claim appears, and the original goal stays ACTIVE. The nine statement-gate notes are all addressed. The note status comes from the minor wording point on disjoint states."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Section 11 says disjoint translated states are normalized on 'the actual whole-space Hilbert space' without naming it. Disjoint supports give orthogonality in L2(R^d;R^2)=H0 coordinates, but not directly in E physical coordinates, because the Bessel weights are nonlocal. The counterexample is correct when read in H0 coordinates, as an orthonormal sequence.",
+      "Section 9 cites Section 7 for compact finite-path values at all times, but Section 7 treats intervals of length at most 1. Times t>1 need the immediate finite-sum step over unit intervals.",
+      "Section 9 does not restate that the path limits obtained for different p coincide. This follows at once from convergence in probability, as in Section 8.",
+      "Basis independence is called 'up to a version', but the argument proves more: the two paths agree on one almost-sure set for all times (indistinguishability).",
+      "Lines 61-62 and 426-427 assert the equivalence of additive partitions and the raw completion for long intervals without displaying it. It follows from linearity of W_C on the indicator decomposition, with endpoints null.",
+      "The theorem states existence of one basis, but the proof applies to any smooth compact-test orthonormal basis of H_W. The basis-independence paragraph tacitly uses this.",
+      "The real Schwartz orthonormal basis and density of Schwartz phases come from Section 6 of the variance note. The list of own inputs reaches these through Proposition 2 rather than naming them.",
+      "higher-dimensional-hs-obstruction.md lines 346-347 retain a stale 'review REQUIRED' line alongside its accepted header. statement-adjudication note 9 already records this, and the new proof does not use that note as an input to any estimate."
+    ],
+    "major_placeholder_removed": []
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is an AI review, not human verification or a novelty audit, and it is not a whole-paper certificate.",
+    "No execution tool was available or used. check-diagnostics.py was not run; I checked its logic by reading it, compared it with diagnostics-v1.json, and recomputed selected values by hand. Numerics remain uncertified and prove no operator or path bound.",
+    "Accepted inputs were read in full and their statements and scope matched against each application, with key formulas spot-checked, but they were not independently re-proved in this review. Their accepted status rests on their headers.",
+    "scalar-frequency-row-bound.md and temporal-phase-bound.md are not in the packet. They enter only transitively through accepted variance Proposition 1 and were not read.",
+    "Provenance was not verified: source revision 93d71e472325542e3ea826078b52731a7b03e9db, the hashes, the commit-role reconciliation and the earlier review receipts could not be checked, because the workspace is not a git repository and this review was restricted to reading the packet.",
+    "The PASS_WITH_NOTES verdict covers only the local masked first-driver theorem in Sections 1-11. It does not establish source-cutoff convergence, Young flow, canonical data, solution moments or sharp constants, and the original full goal remains ACTIVE."
+  ]
+}
