@@ -32,10 +32,10 @@
  388.122s,22bindings/37native members verified. E1-E4 preserve deterministic
  physical growth, control residual error uniformly on a fixed CM ball and
  justify actual Gaussian-head conditioning, FIXED R,M only.
-- **Immediate next:** inspect original corrected S1-S4 statement review
- session56325/native stratonovich-upper-static-statement-v2 on8ff270a.
- V1 rejected its overbroad temporal r>2; v2 restores exact2<r<2/a and adds
- primary spectral calculus. No long proof or static theorem adopted yet.
+- **Immediate next:** inspect original FULL S1-S4 review session51268/native
+ stratonovich-upper-static-scientific-v1 on404354a. Corrected statement
+ passed16HIGH; complete proof is CANDIDATE pending full gate. V1 rangeFAIL
+ preserved, explicit2<r<2/a. No static theorem adopted yet.
  Growing-cone/source gaps retained.
 - **Still open:** intended author-energy/domain/normalization dictionary,
   matching sharp upper constant and conditional exact limit. Original full
@@ -7021,3 +7021,10 @@ type/actual1/2-power guards supplied, no new source/compiler/kernel/count
 73facts19seams/L0. Original sharp/source goalACTIVE, all point/growingcone/
 product/actiontail/normalization gaps retained. No contact/Skorohod/HPC/
 sourcefix/companion/TeX/PDF/wiki/bib/publication, NoRoute/localisolated.
+
+FULL S1-S4 review launched original51268 on404354a,28inputs/7PRIMARY images
+bound live/frozen/Git; candidate not adopted. Same handle/native receipt
+must be inspected; no restart on timeout. Corrected statement56325 is now
+TERMINAL acceptedHIGH224.59s, original60045 TERMINAL FAIL/HIGH397.759s.
+Both dispositions retained. Full original goalACTIVE, no new upper/point/
+sourceconstant claim before full review. NoRoute/localisolated/pushpending.
