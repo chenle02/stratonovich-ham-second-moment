@@ -7519,7 +7519,7 @@ Skorohod/sourcefix/TeX/PDF/wiki/bib/publication, NoRoute/pushpending.
   M_half needed downstream; frozen target shorthand corrected by operative
   proof's explicit P_full=i P_ret i*,Q_full=I-P_full; explicit minimum seen
   Cameron norm; unpacketized wiki recon excluded from scientific coverage.
-  Five proof wording clarifications only, no bound/hypothesis replaced.
+  Four proof wording clarifications only, no bound/hypothesis replaced.
 - Scoped ACCEPTANCE: LINEAR all-originalGamma/d1/2/3 uniformR>=1 physical
   mean, translation/heat/truefrequency/time tensor regulator and ACTUAL
   same-W weighted block Cameron embedding. This is not the stochastic
