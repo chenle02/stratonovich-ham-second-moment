@@ -1,0 +1,117 @@
+{
+  "scope": "Floating consistency, not certified quadrature/error/eigenvalue or continuum theorem. q and its original raw spatial covariance cost remain FIXED at all trial scales.",
+  "model": "Original admissible d3 Gamma=delta_x1 tensorLeb_x2 tensorLeb_x3,alpha1,a=.5.",
+  "fixed_profile": "q=g0\u00b2, g0=product normalized h(xj), h=exp(-1/(1-x\u00b2)) on(-1,1). q does NOT change with L.",
+  "broad_trial": "psi_L=L^(-3/2)g0(x/L); U_L=m_(2L)*(Gamma*q), with m=1 on both support psi_L and support g0. Gamma*q=phi(x1)\u00b2.",
+  "exact_integral_definition": "Dtrial=D0/L\u00b2; Vtrial=(1/L)int phi(x)\u00b2 phi(x/L)\u00b2 dx. int U_L*g0\u00b2=Q0 is unchanged, while b=.1 is FIXED. Only mask/trial widen.",
+  "point": "Wide tests can make energy negative for this family of enlarged masks without changing q/cost. This is NOT all-strength binding of a single fixed compact potential.",
+  "runs": [
+    {
+      "working_digits": 35,
+      "rows": [
+        {
+          "trial_scale": 1,
+          "mask_R": 2,
+          "fixed_original_Q": "0.7937999006570637592525944468",
+          "potential_trial": "0.7937999006570637592525944468",
+          "kinetic_trial": "9.232827393695331463329605328",
+          "energy_at_FIXED_b_point1": "9.153447403629625087404345884"
+        },
+        {
+          "trial_scale": 4,
+          "mask_R": 8,
+          "fixed_original_Q": "0.7937999006570637592525944468",
+          "potential_trial": "0.2505732844385891340013170723",
+          "kinetic_trial": "0.577051712105958216458100333",
+          "energy_at_FIXED_b_point1": "0.5519943836620993030579686258"
+        },
+        {
+          "trial_scale": 16,
+          "mask_R": 32,
+          "fixed_original_Q": "0.7937999006570637592525944468",
+          "potential_trial": "0.06349918809356228532264899447",
+          "kinetic_trial": "0.03606573200662238852863127081",
+          "energy_at_FIXED_b_point1": "0.02971581319726615999636637137"
+        },
+        {
+          "trial_scale": 64,
+          "mask_R": 128,
+          "fixed_original_Q": "0.7937999006570637592525944468",
+          "potential_trial": "0.01588817167219557766122691981",
+          "kinetic_trial": "0.002254108250413899283039454426",
+          "energy_at_FIXED_b_point1": "0.0006652910831943415169167624453"
+        },
+        {
+          "trial_scale": 256,
+          "mask_R": 512,
+          "fixed_original_Q": "0.7937999006570637592525944468",
+          "potential_trial": "0.003972251897039346952627221336",
+          "kinetic_trial": "0.0001408817656508687051899659016",
+          "energy_at_FIXED_b_point1": "-0.000256343424053065990072756232"
+        },
+        {
+          "trial_scale": 1024,
+          "mask_R": 2048,
+          "fixed_original_Q": "0.7937999006570637592525944468",
+          "potential_trial": "0.0009930662395565688284611655091",
+          "kinetic_trial": "0.000008805110353179294074372868851",
+          "energy_at_FIXED_b_point1": "-0.00009050151360247758877174368205"
+        }
+      ]
+    },
+    {
+      "working_digits": 60,
+      "rows": [
+        {
+          "trial_scale": 1,
+          "mask_R": 2,
+          "fixed_original_Q": "0.7937999006570637592525944468",
+          "potential_trial": "0.7937999006570637592525944468",
+          "kinetic_trial": "9.232827393695331463329605328",
+          "energy_at_FIXED_b_point1": "9.153447403629625087404345884"
+        },
+        {
+          "trial_scale": 4,
+          "mask_R": 8,
+          "fixed_original_Q": "0.7937999006570637592525944468",
+          "potential_trial": "0.2505732844385891340013170723",
+          "kinetic_trial": "0.577051712105958216458100333",
+          "energy_at_FIXED_b_point1": "0.5519943836620993030579686258"
+        },
+        {
+          "trial_scale": 16,
+          "mask_R": 32,
+          "fixed_original_Q": "0.7937999006570637592525944468",
+          "potential_trial": "0.06349918809356228532264899447",
+          "kinetic_trial": "0.03606573200662238852863127081",
+          "energy_at_FIXED_b_point1": "0.02971581319726615999636637137"
+        },
+        {
+          "trial_scale": 64,
+          "mask_R": 128,
+          "fixed_original_Q": "0.7937999006570637592525944468",
+          "potential_trial": "0.01588817167219557766122691981",
+          "kinetic_trial": "0.002254108250413899283039454426",
+          "energy_at_FIXED_b_point1": "0.0006652910831943415169167624453"
+        },
+        {
+          "trial_scale": 256,
+          "mask_R": 512,
+          "fixed_original_Q": "0.7937999006570637592525944468",
+          "potential_trial": "0.003972251897039346952627221336",
+          "kinetic_trial": "0.0001408817656508687051899659016",
+          "energy_at_FIXED_b_point1": "-0.000256343424053065990072756232"
+        },
+        {
+          "trial_scale": 1024,
+          "mask_R": 2048,
+          "fixed_original_Q": "0.7937999006570637592525944468",
+          "potential_trial": "0.0009930662395565688284611655091",
+          "kinetic_trial": "0.000008805110353179294074372868851",
+          "energy_at_FIXED_b_point1": "-0.00009050151360247758877174368205"
+        }
+      ]
+    }
+  ],
+  "agreement": "35/60 working-digit printed values agree within1e-25; not a certified error estimate."
+}

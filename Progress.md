@@ -5988,3 +5988,27 @@ scales; energyturnsnegative forwide trials,35/60working-digitconsistency.
 No quadratureerror/eigenvaluecertificate orcontinuumproof. Previousq-
 rescalingcontrol keptwithlimitedscope. No newtheorem/Lean/package/contact/
 HPC/Skorohod/sourcefix/TeX/PDF/wiki/publication. OriginalfullgoalACTIVE.
+
+### Coherent compact-mean ground/full-phase target frozen — 2026-10-31 UTC
+
+G1-G5 frozen BEFORElongproof: realcompactU>=0/commonnegativeH1trial,
+uniformground/maxmingap/L2-H2continuity; actualglobalEspectralwave
+complement retainingdecayinggroundbranch; FULLFconstant-forcingprojection/
+entrance/terminalpositivity; polynomialfullFcomplement/normalizedgap and
+paramcontinuity; ACTUALfixedoriginalq/profile/score andlarger-maskcommon
+trialforallpositiveb0 underalpha<2. This doesNOTbindallstrengthsforone
+fixedcompactd3U, changeGaussianq/cost, orassumepL1/weightedtails.
+
+SeventeenTEXTS+sixFULLprimaryimages frozen forstatementgate. ExactTeschl
+SECONDsource/title/copyright/p140/141/258/273 viewed; PDFee2cfd1c rehashed.
+T10.2,T10.13conditional,T4.12formdomain maps explicit. Oldd1globalEproof
+METHODONLY, reproof required onRd. FullnewFYoungimportaccepted8ad5094/
+5969da5. PositiveWick/rawaveragebridge retained. SixscaleFIXEDq/b trial
+controls, originalq-rescalingcontrol limitedscope,36/432exactconstant
+projectionresidualchecks; no continuum/eigenvalue/accuracycertificate.
+
+REFRAME knownspectralapplication, noindependentnovelty/fullbook claim.
+Newground/complement NOTproved/adopted; no randomerrors/product/eventcost/
+sharpconstant. Isolatedlocalbranch/networkpending,no freshremoteparity or
+masterintegration. FulloriginalgoalACTIVE;71facts18seams/L0 unchanged,no
+newLean/companion/HPC/contact/Skorohod/sourcefix/TeX/PDF/wiki/publication.
