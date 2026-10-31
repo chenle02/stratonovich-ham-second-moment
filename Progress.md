@@ -6954,3 +6954,9 @@ no long proof before gate. Full original sharp/source objectiveACTIVE; all
 original-point/growingcone/product/normalization gaps retained. No contact/
 Skorohod/HPC/sourcefix/companion/TeX/PDF/wiki/bib/publication. Freshfetch/
 <HUB>SSH NoRoute, isolated local/pushpending/no parity/master merge.
+
+S1-S4 statement review launched original60045 onf29e000;19inputs/5PRIMARY
+images bound live/frozen/Git. Same handle, no restart on timeout. Outside
+packet, block-product-next-target-v0.md records the exact intended consumer
+of the polynomial static budget and candidate B/K/last-block bookkeeping.
+UNREVIEWED planning only; no deterministic product/Gaussian-tail/point upper.
