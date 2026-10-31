@@ -1,13 +1,19 @@
 # Nonlinear block comparison with the deterministic physical growth retained
 
-FULL PROOF CANDIDATE, NOT ADOPTED. E1-E4 statement gatecf0cf05 passed
-19checks/HIGH383.16seconds, no required repairs. A NEW FULL independent
-analytic/source/type/actual-application gate is required. FixedR nonlinear
-operator control only, not the original point-moment sharp upper. The full
-all-dimensional/source completion contract remains ACTIVE.
+ACCEPTED at the scoped FULL analytic/source/type/application gate:
+scientificcdf2056,24checks/HIGH388.122seconds, no required repairs.
+Six optional clarity notes adjudicated in
+reviews/2026-10-31-upper-young-perturbation/scientific-adjudication-v1.md.
+Frozen proof/report unchanged. FixedR nonlinear operator control only,
+not the original point-moment sharp upper. The full all-dimensional/source
+completion contract remains ACTIVE.
 
 ## 1. Exact statements and direct inputs
 
+Local notation distinguishes the raw Hilbert space H from a path H by
+its domain, the radius R from the inverse path R in Section3 and the
+scalar R_delta,J by context. G_B is the free-group norm; C_B the accepted
+primitive constant; c_B the new crude bad-block cost. These are distinct.
 Write ||D||theta=sup_t||D(t)||+[D]_theta for operator paths. All spaces
 and noises are real. First let F be any nonzero Banach space and use its
 induced norm on B(F). Fix B>=1,1/2<theta<1,nu=1/theta. For a path D starting
@@ -68,7 +74,8 @@ For zero-started paths x_m in B0 with pi_C x_m=0 put
 **E2.** If ||Phi||H<=M, then ||H_m(Phi)||theta<=a_m,
 delta sum a_m^r<=D_M, and ||P_m^0(Phi)||>=1. For K>=1 there are constants
 c_B depending on theta,B (and the fixed free group), INDEPENDENT OF K,
-and C_K depending on theta,B,K, all independent of J,delta,Phi,M, such that
+and C_K depending on theta,B,K and the same fixed free group, all independent of
+J,delta,Phi,M, such that
 
  log max(1,z(Phi,x))
  <=C_K sum_m(v_m+v_m^nu)+c_B sum_(a_m>K)(1+a_m^nu),
@@ -199,15 +206,20 @@ Since the I_m partition I up to endpoints,
 
  delta sum_m a_m^r=C_B^r||T Phi||Lr(I)^r<=D_M.                (14)
 
-This is an averaged budget only; individual a_m may diverge. It is uniform
-in J because ||P_J Phi||<=||Phi||, not because each projected coefficient
-is uniformly bounded as J increases.
+This is an averaged budget for arbitrary Phi; individual a_m may diverge.
+There is no J in (14). For the random head below, boundedness is imposed
+only by the explicit cutoff ||Phi_delta,J||<=M, not by writing it as the
+projection of an already bounded raw vector.
 
 To prove (5), split every literal fast noise test on the GIVEN W as
  W(T_(delta,m)f)=W(P_J T_(delta,m)f)+W(Q_J T_(delta,m)f).
 Accepted Gaussian transfer is linear for these jointly Gaussian noises;
 its finite sums and their Lp path limits preserve this identity, including
-the bounded F extension. The first term is a finite raw Gaussian head.
+the bounded F extension. The first term is a finite raw Gaussian head:
+for every path statistic ell its value is W(P_J k_ell), a finite sum in
+the W(e_j). Also E[X_m W(e_j)]=0 because every residual coefficient has
+Q_J before its raw test. Thus the head coefficients equal the full
+coefficients, and no residual-head covariance is left.
 Its coefficient for W(e_j), after multiplication by g_delta, is the actual
 Bochner covariance E[g_delta A_m(W) W(e_j)]. By C3 (12) at residual rank0
 that coefficient is sqrt(delta)H_m(e_j). Hence the head is exactly
@@ -228,8 +240,9 @@ pi_C U_(H_m)=pi_C. Consequently
 
 The constant-displacement input e_disp=(0_E,1,0) has norm1 in F; its output
 constant coordinate remains(1,0), of norm1. Orthogonality of the direct sum
-gives ||P_m^0||>=1, even when ell_m0 and P_m^0=I. This uses BOTH actual
-constant columns and their free evolution, not false density of E in F.
+gives ||P_m^0||>=1, even when ell_m0 and P_m^0=I. This lower bound uses the displacement column. Both actual constant
+columns and their free evolution are retained in F and in H_m; no density
+of E in F is assumed.
 The actual residual X_m starts at0 and has pi_C X_m=0 by closedness of the
 F extension's range. This latter property is compatible with the arbitrary
 x_m class, although only the mean property was needed for the denominator.
@@ -275,7 +288,8 @@ locally Lipschitz in the driver on bounded balls, hence continuous. The
 endpoint multiplication and operator norm are continuous, and every
 denominator in (3) is at least1. Thus
  (Phi,x)->max(1,z(Phi,x))^q
-is jointly continuous on H times the zero-started closed subspace of B0^n
+is jointly continuous on the SEPARABLE supported Hilbert space H times
+the zero-started closed subspace of the SEPARABLE finite product B0^n
 with pi_C x_m=0. Extending its definition to arbitrary zero-started B0
 residuals uses exactly the same formulas (no residual range property is
 needed for the denominator). Strong measurability of the actual tuple

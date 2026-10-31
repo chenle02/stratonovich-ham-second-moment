@@ -28,9 +28,13 @@
  24bindings/39native members verified. Actual fixedR DRIVER norm has the
  finite-delta exponential bound and vanishing iterated inverse-delta rate.
  No nonlinear/point/sharp upper follows; sufficient constant only.
-- **Immediate next:** freeze/falsify the actual multiplicative Young
- perturbation estimate with a linear plus nu-power cost, rank-uniform good/
- bad mean-block budgets and preserved physical deterministic growth.
+- **New accepted nonlinear comparison:** scientificcdf2056,24checks/HIGH
+ 388.122s,22bindings/37native members verified. E1-E4 preserve deterministic
+ physical growth, control residual error uniformly on a fixed CM ball and
+ justify actual Gaussian-head conditioning, FIXED R,M only.
+- **Immediate next:** freeze/falsify the signed rough-potential spectral
+ upper with zero spectral bottom allowed, polynomial time factor and
+ actual full F physical identity. Growing-cone/source gaps retained.
 - **Still open:** intended author-energy/domain/normalization dictionary,
   matching sharp upper constant and conditional exact limit. Original full
   goal ACTIVE; no whole-paper/circulation/wiki/master integration clearance.
@@ -6903,3 +6907,23 @@ signed-potential spectral upper obligations: rough multiplier/form closure,
 full-spectrum lambda0 allowance, physical F flow including both constants,
 polynomial prefactor and spectral-bottom continuity. UNREVIEWED planning,
 not proof or import of the positive-family ground/gap result. No new result.
+
+### E1-E4 nonlinear residual comparison accepted — 2026-10-31 UTC
+
+Original56598 TERMINAL,24checks PASS/HIGH388.122seconds,no requiredrepairs.
+Canonical report/pass/correspondence/readcoverage pass;22live/frozen/Git/
+native bindings and all37native archive members verified,3PRIMARY images.
+No recovery/restart/waiver. Adopt E1-E4 fixedR/M actual nonlinear driver
+comparison: physical deterministic endpoint, dimension-free refined Young
+cost/inverse/conjugation, real raw head/tuple/both constants, rank-uniform
+mean-good/bad budgets, residual exponential rate and Gaussian freezing.
+All6optional notes clarified only; frozen proof/report unchanged.
+Existing powermean complete type/actual p/nu application accepted, no new
+kernel/count73facts19seams/L0. All analytic results remain informal.
+
+Next UNREVIEWED signed static spectral screen; mean-action tail/M-infinity,
+actual global ordered restart, signed spectral/time-freezing/variational
+upper, growingcone/originalPOINT/sourceconstant/normalization/exactlimit
+remain OPEN. Full original goalACTIVE, not replaced by fixedR/M result.
+No contact/Skorohod/HPC/sourcefix/companion/TeX/PDF/wiki/bib/publication or
+wholepaper clearance. NoRoute/localisolated/pushpending/no fresh parity.
