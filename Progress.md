@@ -8085,3 +8085,11 @@ Skorohod/sourcefix/TeX/PDF/wiki/bib/publication, NoRoute/pushpending.
   Gitblob-source bridge. Kernelproofcorrectness deduplicated; ALLanalytic
   min/attainment/realization/infmax andactualPGguardfit needFULLHIGHreview.
   Fourprovisionalfacts notpromotedfromrawcompilealone; no physicaltheorem.
+- ActualLOWERclass sourceaudit completed whilePGFULLreviewruns: accepted
+  unmasked61ac2a3 Section1C_pos includesALLnonnegative smoothcompact
+  spacetime tests/nonseparable,ALLoriginalGamma/d1/2/3; rawblockeventd4d876e
+  matcheshalfvariance cost. No classupgrade neededforfiniteSMOOTHpositive
+  sums. D1roughXapproximationnotassumedall-dimensional. Newphysicaldesign
+  pinsrawlabelU2 rownormalization,noncircularremaskedfrozenrate normbound,
+  L2time->H_tpositivesmoothing andmasked<=unmaskedpositiveformcomparison.
+  Allnewcomparison/exactlimit links UNPROVED; ownS_2notauthorconstants.
