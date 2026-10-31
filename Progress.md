@@ -6895,3 +6895,11 @@ p/nu guards written; no new kernel/module/count73facts19seams/L0. All
 Mtail/globalrestart/signedspectrum/growingcone/point/source gaps explicit.
 No contact/HPC/Skorohod/sourcefix/companion/TeX/PDF/wiki/bib/promotion;
 NoRoute/localisolated/pushpending.
+
+E1-E4 FULL review launched original56598 oncdf2056;22inputs/3PRIMARY images
+bound live/frozen/Git. Original handle retained, no restart on timeout.
+Outside that packet, static-next-screen-v0.md records the next actual
+signed-potential spectral upper obligations: rough multiplier/form closure,
+full-spectrum lambda0 allowance, physical F flow including both constants,
+polynomial prefactor and spectral-bottom continuity. UNREVIEWED planning,
+not proof or import of the positive-family ground/gap result. No new result.
