@@ -342,3 +342,20 @@ analytic arguments. Scalar kernel facts do not formalize them. No raw
 pointtrace/F3reverse,uniform-sourcecutoffindelta,growingR operatorrate,
 sharpconstant/source normalization/exactlimit follows. Official companion
 and package/registry/lease/HPC/private/publication gates unchanged.
+
+## FP-RADIUS-STOCHASTIC-ANCHOR: E first-driver mean on growing masks
+
+Scientific8cf62b0,21checks/HIGH335.64s,FULL analytic/source/application gate.
+No new finite kernel/source/type/compile/fact count:74facts20seams/L0.
+The finite Gaussian/Schatten input is reused THROUGH its alreadyaccepted
+actualoperator Eq19 application,not a new formal matrix certificate.
+
+Uniform rescaled weighted Schur/recovery maps,whole-space singular-value
+factorization/diagonaltrace,actual BOTH variancebounds,fixedQ evenmoment/
+chaining,pathlimits,Gaussiancontraction/givenW projectedblocks,weighted
+expectation and positivedecay power are reviewed INFORMAL analysis. CAS
+parameter/multiplicity checks are not Lean. Auxiliary diagonal values are
+not Kout singular values; float remainder evaluations not certified.
+Budget is E DRIVER norm only,not F constantcolumn or solutionnorm. No
+stochastic exponential/nonlinear/pointupper/source-normalization/exactlimit
+or companion/privatepackage/registry/lease/HPC/publication clearance.

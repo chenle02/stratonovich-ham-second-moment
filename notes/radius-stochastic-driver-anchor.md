@@ -1,13 +1,13 @@
 # Radius-explicit stochastic first-driver moments and a growing-mask mean anchor
 
-UNREVIEWED COMPLETE CANDIDATE. SA1-SA3 were frozen and tested before this
-proof, in reviews/2026-10-31-radius-stochastic-anchor/. Earlier review debt
-was cleared by the completed/adjudicated GC statement and U full gates.
-This proof uses neither the GC transfer nor the U Cameron estimate: its
-inputs are the already accepted cutoff, actual variance/driver and Gaussian-
-transfer constructions. It needs its own FULL independent source/type/
-actual-application gate. No growing-R moment exponential or sharp-point
-upper is claimed. The full original all-model objective stays ACTIVE.
+ACCEPTED at the scoped FULL analytic/source/actual-application gate:
+scientific8cf62b0,actualOpus5.5/HIGH,21checksPASS,335.64seconds,no required
+repairs. All18input bindings/native archive verified before optional clarity.
+Six findings adjudicated in
+reviews/2026-10-31-radius-stochastic-anchor/scientific-adjudication-v1.md.
+Frozen proof/report preserved unchanged there. Expected FIRST-DRIVER norm
+on E only; no F constant-column,concentration or sharp-point theorem.
+The full original all-model goal remains ACTIVE.
 
 ## 1. Model, exact assertions and accepted inputs
 
@@ -29,7 +29,8 @@ For the final growing-mask application additionally choose
                          Q>2d/(1-a).                       (2)
 All three conditions are possible: their finite lower thresholds have a
 finite maximum, and arbitrarily large even integers exist. Constants may
-depend on Q and all fixed parameters, including B, but NEVER on R>=1,
+depend on Q and all fixed parameters, including B and the fixed auxiliary chi0,psi0 profiles of Section2,
+but NEVER on R>=1,
 noise basis size, a moment v below, or a deterministic raw residual
 projection. Q is chosen before delta tends to zero; no endpoint uniformity
 as a tends to1 or alpha+a tends to2 is asserted.
@@ -160,7 +161,8 @@ its bound (3). Accepted A's actual adjoint identities give
 because D_gamma commutes with swap. Thus input and output envelopes have
 the same norm and (3) follows. P_chi is not declared selfadjoint or a
 projection. No unsupported positive-operator-power order is used.
-This proves SA1 for the exact whole-space cutoff envelopes.
+This proves SA1 for the exact whole-space cutoff envelopes. In the
+stated gamma range,qgamma>d implies q>2d,so no q=2/HS claim occurs.
 
 ## 4. Radius-explicit moments of the ACTUAL first driver
 
@@ -273,18 +275,19 @@ and the factor (2/B)^(1/p) remain explicit; a maximum over blocks is not
 substituted for this averaged Banach norm. This is SA3 for any R>=1.
 
 Now put R_delta=delta^-1+2<=3/delta. With Q fixed to satisfy (2),
- zeta=(1-a)/2-d/Q>0.
+ e_anchor=(1-a)/2-d/Q>0.
 Indeed Q>2d/(1-a),with positive Q and1-a,is equivalent to
 Q(1-a)>2d. Dividing by2Q proves the strict positive difference. Hence
- 2E Z_delta<=2(2/B)^(1/p)C_(Q,B)sqrt(p)3^(d/Q)delta^zeta->0. (20)
+ 2E Z_delta<=2(2/B)^(1/p)C_(Q,B)sqrt(p)3^(d/Q)delta^e_anchor->0. (20)
 The power bound is at every fixed B,p,model,Q. In particular it is uniform
-in the deterministic raw projection,including the infinite-spatial-rank
-projection from the separate accepted Cameron estimate. No bound uniform
+in the deterministic raw projection,including infinite rank. Any named
+projection's orthogonality and its separate Cameron budget must be checked
+in that consumer; no particular unpacketized projection is an input here. No bound uniform
 in Q,a->1,B->infinity or random projections is claimed.
 
 ## 7. Evidence boundary and the remaining original goal
 
-This is a complete UNREVIEWED analytic candidate for SA1-SA3. Its use of
+This is a scoped independently accepted analytic proof of SA1-SA3. Its use of
 accepted fixed-R constructions is explicit: variance was already uniformR;
 the cutoff envelope and finite-N/time-chain constants have now been tracked.
 The torus diagonal was only the middle factor of an exact whole-space
@@ -308,7 +311,12 @@ The accepted finite Gaussian/Schatten theorem is reused through its already
 reviewed actual operator application,not promoted to a new formal result.
 74acceptedfinitefacts20seams/L0 PROPOSED and companion decision4 unchanged.
 
-Equation(20) supplies only the missing EXPECTED norm anchor. It does not
+Equation(20) supplies only the EXPECTED E-norm anchor. It is NOT an F
+norm estimate with constant data columns and cannot be inserted into the
+old F tuple concentration/product proof without a new exact argument.
+The substitution R_delta here is numerical; cone coverage and source/mask
+transfer are separate statements,proved in the accepted GC note rather
+than by this norm estimate. It does not
 itself supply a uniform Cameron bound or Gaussian concentration/exponential
 estimate; that is a separate theorem using both budgets with its own gate.
 There is no infinite retained-head Gaussian integration,localization/entropy,
