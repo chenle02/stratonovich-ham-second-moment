@@ -413,3 +413,21 @@ PRIMARY Teschl/Young imports remain imports. No unproved uniform spatial
 compactness/noncompactness of a composite E family; tensor no-go only.
 SharpRayleighsignedscoreconsumer,signedpositive/sourceconstants/exactlimit
 remainOPEN; no new officialcompanion/package/registry/lease/HPC/publicgate.
+
+## FP-RAYLEIGH-SIGNED-MOMENT: actual all-model point upper by own score
+
+Scientific939d697,19checks/HIGH367.538s,FULL analytic/source/type/original-
+momentapplicationgate. OldGaussianTail guardsM>0,rho>=M,C=A1B3nu>=0,
+1<nu<2,4C<=M^(2-nu); completepublictype/axioms/sourceunchanged. OldHolder
+p/nu>=1,r/nu>1,norm^nu>=0,n>=2,delta>0; AMGMhalfweights/q^2/(2Cmean)^2
+nonnegative. No newkernel/compiler/count74facts20seams/L0.
+
+ActualsameendpointforallB/CMRayleighlaw/SAanchor/E-onlycoarseconstants,
+deterministicfulltubeerror/e_Blimit,scorecoercivity/bulk/tailintegration/
+normalizers/limsup/limitorder,GCsource-firstallchains/point/kappascale/
+stationarity/zerolaw are reviewed INFORMAL analysis. No Gaussian,integral,
+operatororSPDE theoremLean-certifiedbythis scalarfixture reuse.
+OwnSIGNEDscoreupper isnot intendedauthorconstant/positive-score/lower-match/
+exactlimit. IndependentPGfiniteproposal/sourcefit suppliesnopremise; its
+finitecoreformalization remainsfuturework. Officialcompaniondecision4and
+package/registry/lease/HPC/publication gates unchanged.

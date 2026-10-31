@@ -1,12 +1,14 @@
 # Actual growing-mask moment upper bounded by the own signed raw score
 
-UNREVIEWED COMPLETE PROOF CANDIDATE. UR1-UR4 statement/source/type gate
-3e8c036/adoptionf9b05fc passed actualOpus5.5/HIGH,17checks,1321.599s,
-no requiredrepairs. All8notes adjudicated BEFORE this proof. Original same
-attempt returned after providerretry,not a manually restarted review.
-This NEW moment proof requires its OWN FULL independent gate before use.
-It does not identify source constants,positive scores or an exactlimit.
-Original all-Gamma/d1/2/3 sharp/source goal remains ACTIVE.
+ACCEPTED at the scoped FULL analytic/source/type/original-moment gate:
+scientific939d697,actualOpus5.5/HIGH,19checksPASS,367.538seconds,no required
+repairs. All43five-way bindings and58nativearchive members verified BEFORE
+optional clarity edits; all7minor findings adjudicated in
+reviews/2026-10-31-rayleigh-signed-moment/scientific-adjudication-v1.md.
+Frozen packet proof/report unchanged. Statement3e8c036/adoptionf9b05fc
+passed17HIGH1321.599s separately. This is the original point upper by an
+OWN signed raw variational score,not an intended source constant or exact
+limit. Original all-Gamma/d1/2/3 sharp/source goal remains ACTIVE.
 
 ## 1. Original model,fixed choices and the same physical endpoint
 
@@ -75,6 +77,8 @@ Let mathcalT_R:H_I->Lr(I;K(E)),I=(0,1),be the actual completed E mean,
 ||mathcalT_R||<=C_mean. From OWN US1/US2,its integrated signed spectral
 rate is Rate_R(Phi)>=0,continuous,and
  Rate_R(0)=0, Rate_R(Phi)<=1+C_mean||Phi||HI.
+Indeed mathcalT_R 0=0 and q_0(f)=||grad f||2^2>=0; US1's beta(0)<=0
+then forces beta(0)=lambda(0)=0.
 Define the OWN score and its moving limsup by
  S_R=sup_(Phi in H_I)[2Rate_R(Phi)-||Phi||HI^2/2],
                      V_upper=limsup_(delta->0)S_(R_delta). (3)
@@ -159,8 +163,8 @@ b_delta,B meets OWN US4b(33)'s fixed-B vanishing-residual hypothesis.
 That result is uniform R and uses the actual mean/SP denominator and
 arbitrary fulltuple residuals. Its exact polynomial radius condition is
 US3's s_threshold>r(3+kappa_ball)/(r-nu),each fixed B before delta.
-Thus,for the untruncated supremum T_delta,B in(9),
- limsup_(integer B->infinity)limsup_(delta->0)T_delta,B<=0.
+Thus,for the untruncated supremum SupErr_delta,B in(9),
+ limsup_(integer B->infinity)limsup_(delta->0)SupErr_delta,B<=0.
 The untruncated supremum is itself>=0: Phi=x=0 is allowed,Rate_R(0)=0
 and F>=0. Max with0 is therefore harmless. Equation(8)
 and(2) bound limsup_delta E at each fixed B,so
@@ -242,21 +246,24 @@ From accepted GC(3),(21)-(25),with kappa_scale=(4-alpha-a)/(3-alpha)>1,
 T_delta=delta^(-1/kappa_scale),psi=eta_root(x/R_delta),
  E|u_Gamma(T_delta,0)|^2
  <=v_d^-1||psi||Hhalf^2 M_delta
- <=A_delta M_delta,
- A_delta=v_d^-1 C_eta R_delta^d,
+ <=DataPref_delta M_delta,
+ DataPref_delta=v_d^-1 C_eta R_delta^d,
  C_eta=||eta_root||2^2+||grad eta_root||2^2>0.
 GC proves this through the actual full-source point limit and E/F/cone/
 compact-data identification,not a raw Sobolev point trace or reversed F3.
 All source limits are taken FIRST at each fixed delta; all mixed,unequal,
 self and empty Stratonovich chains are retained.
 
-GC(24)-(25) gives delta log A_delta->0. Explicitly
- delta log A_delta=delta log(C_eta/v_d)
+GC(24)-(25) gives delta log DataPref_delta->0. Explicitly
+ delta log DataPref_delta=delta log(C_eta/v_d)
                    +d delta[log(1+2delta)-logdelta]->0.
-Because alpha<2<3 and a<1,kappa_scale>1. The inverse map delta=T^-kappa_scale
-is a decreasing bijection(0,1)->(1,infinity),with T^-kappa_scale=delta.
+Because alpha<2<3 and a<1,kappa_scale>1. The map delta->T_delta=delta^(-1/kappa_scale)
+is a decreasing bijection(0,1)->(1,infinity). Its inverse is
+T->delta=T^-kappa_scale from(1,infinity)to(0,1),so T^-kappa_scale=delta.
 GC Section6 also gives the original point second moment>=1 by its full-
-chain/source argument. Its logarithm is defined and finite by this bound.
+chain/source argument. This imports the nonnegative expansion/unit empty
+term through GC; only strict positivity is used here. Its logarithm is
+therefore defined and finite by this bound.
 Take logs,then normalized limsup and(17):
  limsup_(T->infinity)T^-kappa_scale log E|u_Gamma(T,0)|^2
                                  <=V_upper<=2+2C_mean^2.   (18)
@@ -268,7 +275,8 @@ bounds remain unchanged; (18) is an OWN signed-score upper,not source L^*.
 
 ## 8. Zero covariance,evidence and original scope
 
-If Gamma=0,actualnoise/means vanish,H_I={0},Rate_R=0,S_R=V_upper=0.
+If Gamma=0,set C_mean=0 directly,without invoking U's nonzero-noise
+estimate. Actualnoise/means vanish,H_I={0},Rate_R=0,S_R=V_upper=0.
 Canonical u=1. P_delta=S_E(delta^-1),whose norm is>=1 and <=C(1+delta^-1)
 by GC Section8/SP's free symplectic baseline. Therefore
  0<=delta log M_delta<=2delta log[C(1+delta^-1)]->0.
@@ -286,7 +294,7 @@ cutoffconfigs,12arrayrows/11configs are not PDE/AWS evidence or statistical
 samples/enclosures. Oldtailfixture is unchanged and REUSED,NOT rerun.
 
 All Gaussian/integral/limsup/Young/operator/source/point claims remain
-INFORMAL analysis requiring this note's FULL independent gate. Old local
+reviewed INFORMAL analysis,not formalized by this note's FULL gate. Old local
 GaussianTail and generalMathlibHolder/AMGM publictypes/axioms used only at
 stated guards; no newkernel/compiler/count74facts20seams/L0 or official
 companion. SelectedPRIMARY11.6 import belongs to acceptedBT,not proved here.

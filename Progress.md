@@ -8033,3 +8033,27 @@ Skorohod/sourcefix/TeX/PDF/wiki/bib/publication, NoRoute/pushpending.
   optimizedentrywiseGrammonotonicity still UNPROVED/notphysicalapplication.
 - URfulloriginalmomentproof31357 isindependentLIVEgate,PG notpremise.
   Originalsharp/sourcemathgoalACTIVE; nonewsourcefix/contact/publicaction.
+
+## UR FULL original point signed-score upper accepted — 2026-10-31
+
+- Scientific939d697,original31357 TERMINAL0,actualOpus5.5/HIGH,19checksPASS,
+  PASS_WITH_NOTES,no requiredrepairs,367.538s. Canonical parse/pass/report-
+  correspondence/fullcoverage including2images validated;43five-waybindings
+  BEFOREoptionalclarity;58nativearchive members readbackhashed; rawreport
+  unchanged,no model/threshold/retrywaiver.
+- All7minorfindings adjudicated: correctinversemapdirection,Rate0one-line
+  proof,zeroGammaCmean0,pointpositivityupstreamscope,names,frozenoldcrosswalk
+  errorsreadwithadjudication,rootversusreviewerhash/operationalverification.
+- NEWreviewedactualORIGINALpointsecondmomentupper atkappascale<=V_upper,
+  V_upper=limsup_delta ownSIGNEDrawS_Rdelta,0<=V_upper<=2+2Cmean^2.
+  ALLoriginalGamma/amplitudes/d1/2/3/white/subcriticalkept; sameglobalmoment
+  for everyB,exacthalfaction/normalizers anddeltafirstBouter. Coarseceiling
+  fixedauxchoice-dependent. No authorconstant/positive-score/p1identity/
+  lower-match/exactlimit. OriginalfullgoalACTIVEandINCOMPLETE.
+- PG sourcegate15HIGHacceptedonlyFIT; fullfinitepositivecone/entrywiseGram
+  proof and actualoccupation/time/mask/lowerclass application next. Lean
+  finitecore worthrevisiting,nonewpackageorcompanionapprovalinferred.
+ 74facts20seams/L0 unchanged,nonewcompiler. OriginalTeX/PDFunchanged.
+- BothUR58076/31357 andPG55388 originalnativehandles nowTERMINAL0; no live
+  review torestart/poll. <HUB>NoRoute/newcommitslocal. No contact/HPC/
+  sourcefix/Skorohod/companion/wiki/bib/publication action.

@@ -630,3 +630,21 @@ then added newGaussian entry1fact. Currentmirror20entries74facts. Oldproofs
 unchanged, no new compile/review of old25facts claimed. See local-checks/
 gaussian-tail-v1/mirror-reconciliation-inputs.json and-summary.json.
 L0/PROPOSED and officialcompaniondecision4 unchanged.
+
+## UR original point signed-score upper: exact old-finite reuse — 2026-10-31
+
+Scientific939d697,FULL19checks/HIGH367.538s,no requiredrepairs. Actual
+GaussianTail densitycutoff application M>0,rho>=M,C=A1B^(3nu)>=0,nuin(1,2),
+4C<=M^(2-nu); Holder p/nu>=1,r/nu>1 and AMGMhalfweights/squaredbases
+checked withcompleteoldtypes/axioms. Source/declarations unchanged; no new
+compiler/kernel/fact.74acceptedfinitefacts20seams/L0 remain unchanged.
+FP-RAYLEIGH-SIGNED-MOMENT records allGaussian/integral/limsup/operator/GC
+source-point assertions as reviewed INFORMALanalysis,not formalverification.
+
+Next worthwhilefinite seam proposed,NOT built/promoted: PGactive-branch
+scalar2ell sqrt(t)<=ell^2/w+w*t,finiteHilbertcompleted-square upper,Gram
+normsquareidentity andpositive-weightentrywisequadraticcomparison. PGsource
+fit15HIGH225.532s accepted onlystatements; fullproof/actualapplication gate
+stillpending. Searchregistry/cachedMathlib beforebuilding,freezeexactpublic
+types/guards,localcompile/replay/axiom/negativecontrols ifdeveloped. No new
+officialpackage/companion/lease/registry/HPC authority; decision4 pending.
