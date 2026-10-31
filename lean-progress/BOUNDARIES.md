@@ -377,3 +377,21 @@ No infinite-dim surjectivity fromP*JP=J alone or uniformdirectionbudget.
 Future E-product/tube application,stochastic/growingR/sharp/source/exactlimit
 remain separate;companion/privatepackage/registry/lease/HPC/publication gates
 unchanged. No operator/SPDE theorem has been Lean-certified by this review.
+
+## FP-BORELL-TUBE: actual E Gaussian tubes and Rayleigh transfer
+
+Scientifica1c90c7,20checks/HIGH508.072s,FULL analytic/source/type/actual-
+application gate. Old GaussianTail.cutoff_density_split reused at r>=M>0,
+C>=0,1<nu<2,4C<=M^(2-nu); complete source/type/axioms unchanged. Mathlib
+powermean reused at p/nu>=1 and r_t/nu>1,norm^nu>=0,n>=2,delta>0.
+No new declaration/compiler/factcount:74facts20seams/L0 unchanged.
+
+Weakball/compactimage/closedtube/attainedradius,Borel and exactseen-CM
+geometry,PRIMARY11.6import,layercake/jumps/Rayleigh,zero-law,actualE
+firstchaos/support/Radon/measurablenorm/AWS,compactmean,genericYoung
+functional,restart/SP/GC composition,coarseweightedbudgets,tailintegration
+and raw halfaction supremum are reviewed INFORMAL analysis. Scalar kernel
+certifies no Gaussian measure,integral,operator or SPDE theorem. Sharp
+uniformE spectral/product envelope,signed-positive/sourceconstants and
+exactlimit remainOPEN; companion/privatepackage/registry/HPC/public gates
+unchanged. No formal-count inflation from this analytic application.
