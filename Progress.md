@@ -48,9 +48,9 @@
  statement gate on frozen c7d0e57 when provider capacity returns. Original
  supported review63674 is TERMINAL quota, no report/coverage/acceptance.
  GC1-GC3 remain UNPROVED; compact data/source limits/average-of-SQUARES
- controls and18input bindings retained. SP1-SP3 E symplectic baseline
- frozen/falsified independently, also UNPROVED; v2 exact same-source
- completed-mean map and16text packet prepared, NOT dispatched. GrowingR operator bound
+ controls and18input bindings retained. SP1-SP4 E symplectic baseline
+ frozen/falsified independently, also UNPROVED; v3 same-source completed
+ mean and exact block-adjoint direction,22text packet NOT dispatched. GrowingR operator bound
  and source normalization remainOPEN; exactr<2/a.
 - **Still open:** intended author-energy/domain/normalization dictionary,
   matching sharp upper constant and conditional exact limit. Original full
@@ -7339,3 +7339,31 @@ Skorohod/sourcefix/TeX/PDF/wiki/bib/publication, NoRoute/pushpending.
 - No unchanged numeric rerun/new Leanfact/count or candidate proof. Both
   GC/SP actual statement and FULL gates pending;74facts20seams/L0 unchanged.
   Full original growingR Gaussian/operator/source sharp goal ACTIVE/OPEN.
+
+## Exact E block-mean application proposed — 2026-10-31
+
+- SPv2 source/covariance map committed e533f87. V3 adds the explicit
+  SP4 deterministic block application instead of leaving it future-only:
+  fast phi_m=delta^(-a/2)T_m^*Phi, adjoint of the accepted slow/fast raw
+  isometry. Orthogonal slow residual has zero covariance with the actual
+  fast first driver. C3 J=0 scaled covariance sqrt(delta)H_m must FIRST be
+  divided by g_delta to obtain unscaled delta^(a/2)H_m. New proposed exact
+  driver match yields the pure mean E endpoint denominator via SP2-SP3.
+  All steps still require independent statement and FULL proof gates.
+- Norm phi_m<=delta^(-a/2)||Phi|| is finite perdelta, NOT uniform. True
+  endpoint ell_m and empty-block identity retained. Actual E/F restriction
+  and completed Lr mean must be checked, not law-only means or raw time
+  indicator multiplication. No growingR stochastic upper follows.
+- Nine exact finite Gaussian-coordinate/isometry/amplitude cases pass;
+  six nonzero cases detect each wrong factor, three zero-signal controls
+  do not. Generic finite isometry is auxiliary, not original fractional
+  covariance/PDE evidence. Earlier Bessel diagnostics not rerun.
+- Existing JointTilt.shifted_amplitude complete source/type/axiom bytes
+  equal scientifice51432c; exact new SP4 scalar application planned at
+  delta>0,a=alpha_0 with positive sqrt(delta)/g_delta. No new Lean source,
+  compile/kernel/count;74facts20seams/L0 unchanged. Analytic source/raw/
+  adjoint/conservation steps are outside this kernel.
+- Twenty-two exact current source/target/evaluator/full finite-type texts
+  frozen in SP statement-packet-v3; v2 remains preserved as earlier
+  undispatched scope. No review retry before quota reset. GC review remains
+  first. Full original all-model/source sharp target ACTIVE and incomplete.
