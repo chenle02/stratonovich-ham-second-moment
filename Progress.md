@@ -6690,3 +6690,27 @@ Bochner/finitepower proof obligations. Globalization guard separate/unreviewed.
 Next full C1-C3 proof, then FULL independent gate.73facts19seams/L0 unchanged;
 no kernel/package/HPC/contact/Skorohod/sourcefix/TeX/PDF/wiki/publication.
 Original full goalACTIVE, growingcone/upperpoint/sourceconstant gapsOPEN.
+
+### Complete C1-C3/negative guard proof candidate frozen — 2026-10-31 UTC
+
+After accepted statementc6e63d7, write notes/upper-cameron-compactness.md:
+physical fractional covariance products via real radial bands/absolute
+series/Tonelli/PSD; compact raw spatial CAMERON map on actualF; tensor
+identification/timeK square-root unitary/scalar and dimension-free vector
+mean compactness; actual restricted given-W residual covariance with BOTH
+constants/lastpartial/Bochner conjugation; exact(delta sum)^1/p Cameron
+norm <=C_B(2/B)^(1/p-1/r)sqrt(delta)epsilon_J. No instantaneous Gaussian
+field/HS/raw quotient multiplier. FixedR, not original point upper.
+
+Section9 includes exact white translated-control proof AGAINST uniformR
+fixed-projection extension; not fixedR C1-C3 or whole upper-goal no-go.
+Seven statement notes discharged, all analytic proof/application claims
+CANDIDATE before FULL gate. Frozen 26completeTEXT inputs, missing v0
+scalar files now supplied. Existing Mathlib finite powermean actual guards
+written, no new kernel/module/count;73facts19seams/L0 unchanged.
+
+Next NEW independent FULL analytic/source/type/application gate. Friz-Hairer
+is futureconcentration only; exponential residual/nonlinear/growingcone/
+originalPOINTupper/sourceconstant/exactlimit stillOPEN. Full goalACTIVE,
+NoRoute/localisolated/no parity/master merge, no contact/Skorohod/HPC/
+sourcefix/TeX/PDF/wiki/bib/privatecompanion/publication/wholepaper claim.
