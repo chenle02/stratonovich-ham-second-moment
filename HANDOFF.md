@@ -53,7 +53,7 @@ scalar/fixed-mask replacement or declared complete.
 1. Read AGENTS.md, PROJECT-GOAL.md and ROOT/ACTIVE Progress.md. Current
    synopsis is authoritative; older opening summaries explicitly historical.
 2. Check root/isolated ownership/status. Root before this HANDOFF-only
-   successor8621ee368e055d21b8e8ce75211414280229aa5c; isolated378e539.
+   successor8621ee368e055d21b8e8ce75211414280229aa5c; isolatedd985db1.
    Preserve both pending lines/foreign WIP. No reset/drop/blind integration.
 3. Serial remote audit: last VERIFIED origin/<HUB>
    604c60f2f8dc6d1a7635b9af224bbb6e5751d379. Focused SSH/fetch/push
