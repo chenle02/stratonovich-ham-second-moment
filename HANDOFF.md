@@ -1,123 +1,125 @@
-Last updated: 2026-10-31 08:16 UTC (Codex)
+Last updated: 2026-10-31 08:52 UTC (Codex)
 
-Full original upper/sharp goal ACTIVE. All-dimensional unmasked variational
-lower now accepted; static/full occupation-energy bridge next.
+Full original upper/sharp goal ACTIVE. All-dimensional full-H1 occupation
+energy point lower accepted; all-alpha scalar Omega>1 statement gate next.
 
 ## ⏭ Next session: where to stand and what to do
 
 Start in this original root (loader entry), then enter ACTIVE isolated
 worktree ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave, branch
 research/fixed-mask-young-20261031, CLEAN committed HEAD
-8508b9d268e58dc420ca01e7128816bb33d0ddbd.
+c17e2bd7718de239b6ce6f0df33165d68f8f91d4.
 Its Progress.md is current mathematical/workflow authority; its inherited
-HANDOFF is stale. No root-master integration/push yet.
+HANDOFF is stale. No root-master payload integration/push yet.
 
-FIRST run PRE-PROOF FALSIFICATION of B1-B5 in
-reviews/2026-10-31-all-dimensional-static-occupation/target-v2.md.
-Then freeze the exact statement/source/type packet for independent
-Opus5.5/HIGH statement gate BEFORE long proof. B1-B5 is still UNREVIEWED.
-Use actual d1 white, d2 invariant-direction and admissible alpha>1 controls;
-check temporal truncation normalization, spatial optimization constants,
-occupation-vs-test scaling and physical cross-integral continuity.
+FIRST prepare the independent STATEMENT packet for
+reviews/2026-10-30-all-alpha-damped-ratio/target-v3.md. Include literal
+old V definition/analytic bounds in global-d1-damped-lower.md Sections2-5,
+GlobalOmega FULL source/public types and old controls with honest limits.
+Preserve old frozen v1 packet and v2 history. No long proof before gate.
+Scalar J_a(q) is distinct from energy F_a(z); D=q-2a is NOT dimension.
+The critical new region has q<3 when alpha>1; do not reuse q>=3 there.
 
-The new accepted input is notes/unmasked-variational-lower.md,
-scientific61ac2a3/adoption94d85ca: FULL11checks/HIGH303.405seconds,
-no requiredrepairs. ALL original Gamma/d1/2/3 and all positive smooth tests,
-unmasked Rayleigh bottom via monotone masks, original-point Q2>=2I-v/2,
-and positive finite S_c=c^((4-alpha)/(3-alpha))S1, Q2>=2^mS1.
-S1 is NOT an actual firstmean or identified author constant. No unmasked
-L2 ground/decay/gap is assumed. Three old finite scalar applications passed.
+Current accepted prerequisite: notes/all-dimensional-static-occupation-
+bridge.md, scientific249e2c4/adoptionaa4a016, FULL18checks/HIGH366.614s,
+no requiredrepairs,18input bindings/33native archive members verified.
+All original Gamma/d1/2/3/alpha>1 and FULL real H1/strong-H1 occupation
+class: physical covariance extension/density/measurability and own energy
+comparison give ORIGINAL Q2>=2^m Omega F_a(E_star^O), Omega>0.
+E_star^O has explicit finite-energy half-gradient domain; no source label
+or actual firstmean is identified. Full upper remains reviewed/unchanged.
 
-B1-B5 proposes smooth TIME truncations of the scalar equilibrium profile,
-static controls, spatial Rsp finiteness from independent S1 finiteness,
-actual physical H1 covariance continuity and FULL strong-H1 damped energy,
-then an own Omega>0 lower comparison. Do not promote old d1 rough X or
-assume the desired GN inequality in its own proof. Fatou alone is one-sided.
-Separate all-alpha Omega>1 target remains unreviewed. Source-energy/domain
-normalization, sharp upper and conditional exact limit remain OPEN.
+Proposed scalar target could give Omega>=V(a/2)^(-1/k)>1 throughout the
+original range, using unchanged rational certificate after proving new
+monotonicity. This is UNREVIEWED, not an adopted consequence. Potential
+useful standalone finite seams are moment lower-bound and rational-gap
+algebra, ONLY after statement/reuse search/local type/compile/replay/
+negative-control/application gates. No new code/count/package now.
 
-Original statement83130 and full80720 are TERMINAL accepted/HIGH.
-No live reviewer/Git/Lean job. <HUB> still NoRoute; preserve both
-pending histories. No fresh parity/master integration or round-close.
+Original statement71690 and full51631 are TERMINAL accepted/HIGH. No live
+reviewer/Lean/Git job. <HUB> NoRoute; preserve both pending histories.
+Original sharp upper/intended source-domain/normalization/exact limit OPEN.
 
 ## Pre-flight checks
 
 1. Read AGENTS.md, PROJECT-GOAL.md and ROOT plus ACTIVE Progress.md.
-   Full original all-dimensional sharp/source goal and decision4 intact.
-2. Check root/isolated ownership and status. Root before this HANDOFF-only
-   successor is4eb4519d647e40040ee08eee8f176fbd70627d73. Active HEAD8508b9d
-   includes reviewed unmasked lower and updated Lean boundaries/next target.
-   No destructive reset/drop of either pending line or foreign WIP.
-3. Serial remote audit: last VERIFIED origin/<HUB> is
-   604c60f2f8dc6d1a7635b9af224bbb6e5751d379. Fetch/push again NoRoute
-   this turn. No fresh parity/push/sync/integration, all Git handles terminal.
-4. Accepted full raw point lower sourced4d876e/adoptionc426e5a,
-   12PASS/HIGH516.106seconds,27inputs/42native members verified.
-   It keeps SAME raw W/Psi/Z/cost, both FAST phase entries, Gamma_delta
-   amplitude-correct F3, fixed-mask INEQUALITY and source/time order.
-5. New U1-U4 statement source723fbeb/adjudication0433741,
-   13checks/HIGH309.866seconds,14inputs/29native members; FULL proof
-   source61ac2a3/adoption94d85ca,11checks/HIGH303.405seconds,
-   17inputs/32native members. Canonical report/pass/correspondence and
-   readcoverage checked; all live/frozen/Git/native hashes BEFORE optional
-   clarification and every archive member verified. Both raw reports and
-   frozen packets unchanged, no format recovery/providerrestart/waiver.
-6. Seven full-proof notes clarified: local symbols; Gaussian even Fourier
-   pairing; explicit upper prefactor; exact variance positivity input;
-   common compact trial/plateau ordering; SAME-model custody pointers;
-   unnecessary source name removed. No new estimate/scope after review.
-7. Ground, Young, source driver and moment-transfer accepted inputs retain
-   exact scopes. New unmasked operator uses a direct bounded-perturbation/
-   spectral form proof, not compact essential-spectrum theorem.
-8. THREE old RawVariational scalar consumers have accepted exact new guards.
-   Two prior/current source/type SHA pairs rechecked. No new kernel/replay
-   run or fact count; d1 dilation_factors is not an all-dimensional proof.
-   71facts18seams/L0 PROPOSED/companion decision4 unchanged. Lean ledgers
-   record FP-UNMASKED as INFORMAL analytic boundary, not formal SPDE.
-9. Canonical TeX/PDF unchanged, TeX SHA256
+   Its current-state synopsis is now refreshed; old bullets are explicitly
+   historical and no longer the current frontier. Full original scope intact.
+2. Check root and isolated ownership/status. Root before this HANDOFF-only
+   successor is1b6c76d5fb63543fc8b315ad42f28ba752cea80e. Isolated HEAD
+   c17e2bd includes all current proof/receipt/next-target/Lean ledger files.
+   Preserve both lines and foreign WIP; no reset/drop/blind merge.
+3. Serial origin/<HUB> audit: last VERIFIED remote
+   604c60f2f8dc6d1a7635b9af224bbb6e5751d379. Fetch/focused SSH/push
+   again NoRoute. No fresh parity/push/sync/master integration. No live Git.
+4. Accepted B1-B5 statement source20d8eda/adjudicationc692917,
+   9checks/HIGH394.808s,13inputs/28native members. FULL proof249e2c4/
+   adoptionaa4a016,18checks/HIGH366.614s,18inputs/33native members.
+   Canonical report/pass/correspondence/readcoverage and all live/frozen/
+   Git/native input hashes plus every archive member verified. No syntax
+   recovery/providerrestart/waiver. Frozen proof/raw report unchanged.
+5. Nine optional full notes clarified: section pointer, nonconsumed numeric
+   gap, Borel/null versions, pairing symmetry/even Gamma, origin-centered
+   ball, b measurability/strong rep, C4 symbol, no energy/kernel numerics,
+   static calibration ONLY exponent/factor. No new estimate/scope.
+6. Root executed diagnostics:12temporal cases,6spatial models,9H1 Gaussian
+   continuity probes; white/invariant plus d2/d3alpha1.5,a.25, compact
+   white/invariant bumps.50/80digits algebra;GL256/512 differences not
+   certified errors. No K_star/R_star/Omega/E_star^O numerical evaluation,
+   full four-linear/d3 continuity/amplitude sweep or actual SPDE moment.
+7. New proof's PHYSICAL two-point integrals precede rough signed forms;
+   smooth PSD/squared approximants/Fatou cross bound/absolute C4 continuity
+   supply full H1 density and actual covariance CS. No d1 X or global H1
+   supremum embedding. R0 finiteness comes from independent finiteS1,
+   not the desired GN estimate as its own premise. Full O class retained.
+8. One OLD RawValueCeiling.strict_log_gap has accepted actual a>0,D>0
+   guard application; two prior/current source/public-type bindings match.
+   No new kernel/replay/count/module.71facts18seams/L0 PROPOSED and
+   companion decision4 unchanged. Lean boundary FP-STATIC-OCCUPATION
+   is INFORMAL analytic, not a formal Sobolev/Gaussian/SPDE declaration.
+9. Accepted prerequisites: unmasked61ac2a3/94d85ca, rawd4d876e/c426e5a,
+   groundbfbd472/ab6596f, Young8ad5094/5969da5 and earlier source/moment
+   transfer retain their scopes. No unmasked isolated ground assumption.
+10.Canonical TeX/PDF unchanged, TeX SHA256
    58b092b258d4f363f8bfa0a02dcf492dcb9c13e794dbcab440bf7b0529b53b7d.
-   B1-B5/domain/source comparison and sharp upper are not in that manuscript.
-   No wiki/bib/source-PDF edit or whole-paper/circulation clearance.
-10.All old reviewer processes terminal. Current exact native paths:
-   statement ../../../../.local/state/Le-AI-Lab/stratonovich-unmasked-variational-statement-v1
-   full ../../../../.local/state/Le-AI-Lab/stratonovich-unmasked-variational-scientific-v1
-   Do not relaunch them. Historical raw statement11445 remains invalidfalse
-   with separately accepted canonical recovery; its invalid receipt is never
-   retroactively accepted. Earlier MEDIUM/failed gates remain preserved.
+   No wiki/bib/sourcePDF/Skorohod edit or whole-paper/circulation clearance.
+11.Exact current native directories, relative to ROOT:
+   ../../../../.local/state/Le-AI-Lab/stratonovich-static-occupation-statement-v1
+   ../../../../.local/state/Le-AI-Lab/stratonovich-static-occupation-scientific-v1
+   Both original handles TERMINAL; never relaunch. Earlier MEDIUM/invalid
+   and supported recovery evidence remain preserved at original scopes.
 
 ## Concrete deliverables for the next session
 
-- Actual B1-B5 falsification records covering white/invariant/alpha>1,
-  temporal smooth truncations and physical covariance-continuity guard.
-- A frozen complete statement/source/type packet and independent statement
-  verdict, every finding adjudicated BEFORE full proof investment.
-- Full original Gamma/H1 occupation class retained. New spatial finiteness
-  route must audit independence of S1 upper from the desired GN bound.
-- Reuse finite optimization facts only at exact actual public-type guards;
-  no hollow new module or claim of formal Gaussian/analytic verification.
-- Keep separate all-alpha scalar review, intended source/domain dictionary,
-  matching sharp upper and conditional exact limit as open full-goal work.
+- Exact scalar statement/source/type packet with renamed J_a(q), original
+  D/q/alpha guards, literal V/kernel formula and actual old diagnostic scope.
+- Independent statement verdict/adjudication BEFORE new proof. Then full
+  integral normalization/differentiation/IBP/endpoints/CS proof and exact
+  new kernel applications, not a numerical or old d1 inference.
+- Value-ranked local finite moment/rational seams only if useful; first
+  search/reuse, then compiler/type/axiom/replay/false-controls and actual
+  application gate. No official private companion creation.
+- Preserve full all-Gamma point consumer, own energy/source distinction,
+  intended domain/normalization/sharp upper and conditional exact target.
 
 ## Success criteria for the immediate next step
 
-A meaningful pre-proof test and independently reviewed exact B1-B5 statement
-settle feasibility of the proposed STATIC/FULL-H1 occupation bridge in the
-original covariance class. No theorem promotion on planning/reconnaissance.
-All temporal-control approximants are actual smooth tests, and physical H1
-pairings must be identified rather than inferred from one-sided Fatou.
-No firstmean/source constant or Omega>1 without its own accepted consumer.
+The independent statement gate checks the new scalar monotonicity route
+on q>2a and its actual q=4-alpha range, including q<3. Exact old rational
+V and complete public types match the analytic consumer at x=a/2.
+Any required repairs block proof investment. Gaussian integrals/IBP/point
+applications remain explicit analytic obligations, not finite certificates.
 
 ## Anti-success criteria
 
-No unmasked isolated ground/eigenprojection/decay or angular-density
-restriction, d1 global H1 supremum embedding or near/far X split in d2/3.
-No use of a desired spatial GN estimate as its own finiteness premise.
-No covariance monotonicity for arbitrary phases/velocities, scalar phase
-restart, independent blocks, raw-noise quotient mask multiplier or HS path
-replacement. Source/time limits stay fixed before large-time asymptotics.
-No source normalization repair, actual p1 from S1, sharp-goal completion,
-Skorohod advance, contacts/HPC/companion/publication. Local scientific
-adoption does not close remote/wiki/whole-paper gates.
+No assumption q>=3 atalpha>1, no scalar D interpreted as dimension, no
+energy F_a(z) confused with scalar J_a(q), no dropping moment terms or
+normalization/half factors. No old d1 HS/X/point theorem promoted to new
+classes. No formal probability/integration claim from scalar Lean facts,
+no new count/module before actual evidence, no unapproved companion.
+No source-energy/domain reading selected, actual firstmean from S1,
+matching upper/exactlimit claimed, source repair/contacts/Skorohod/HPC/
+TeX/PDF/wiki/publication. Local scientific gate is not remote/wiki round-close.
 
 ## What the previous sessions produced
 
@@ -1099,53 +1101,69 @@ bridge target frozen8bd4f37 and status refreshedtarget-v2 at8508b9d,
 UNREVIEWED/no long proof. Source-energy/normalization/sharp-upper/exact
 limit remain open. Canonical TeX/PDF/wiki unchanged; no correspondence.
 
+
+2026-10-31 full all-dimensional static/occupation bridge close:
+statement20d8eda/c692917,9checks/HIGH394.808s,13inputs/28native members;
+full249e2c4/adoptionaa4a016,18checks/HIGH366.614s,18inputs/33native members
+verified. Actual controls, physical FULL-H1 covariance/density/CS, FULL
+measurable occupation energy and original Q2>=2^m Omega F_a(E_star^O),
+Omega>0 accepted. Nine optional clarity notes adjudicated. Diagnostic
+scope remains floating consistency; no kernel/energy/SPDE numerics.
+One OLD entropy fact actual application accepted;71facts18seams/L0 unchanged,
+FP-STATIC-OCCUPATION ledger8737df7. Current Progress synopsis refreshed,
+historical summaries preserved; final next-target pointer c17e2bd.
+All-alpha target-v3 has accepted B1-B5 premise but scalar Omega>1 still
+UNREVIEWED. No canonical TeX/PDF/wiki/source correction or correspondence.
+Full sharp upper/intended energy/domain/exactlimit remain OPEN.
+
 ## Repo & git state at handoff
 
 Root master before this HANDOFF-only successor:
-4eb4519d647e40040ee08eee8f176fbd70627d73, prior0accd3d plus operational
+1b6c76d5fb63543fc8b315ad42f28ba752cea80e, prior0accd3d plus operational
 handoffs pending separately. Last VERIFIED remote
-604c60f2f8dc6d1a7635b9af224bbb6e5751d379. NoRoute on fetch/push;
+604c60f2f8dc6d1a7635b9af224bbb6e5751d379. NoRoute on fetch/SSH/push,
 no fresh parity/sync/master merge claimed.
 
 ACTIVE isolated research/fixed-mask-young-20261031 CLEAN HEAD
-8508b9d268e58dc420ca01e7128816bb33d0ddbd, path
+c17e2bd7718de239b6ce6f0df33165d68f8f91d4, path
 ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave.
-All owned payload committed. No foreign WIP or live reviewer/Lean/Git job.
-Statement83130/full80720 TERMINAL; native paths in preflight above.
-Frozen source61ac2a3 and report unchanged. Root HANDOFF is loader entry;
-isolated inherited HANDOFF stale. Wiki
+All owned payload committed; no foreign WIP/live reviewer/Lean/Git job.
+Statement71690/full51631 TERMINAL. Frozen249e2c4/report unchanged.
+Root HANDOFF is loader entry; isolated inherited HANDOFF stale. Wiki
 ../SPDEs-wiki/content/projects/stratonovich-ham-second-moment.md exists,
-unchanged. Local reviewed science, no whole-paper/publication clearance.
+unchanged. Scientific internal adoption, not whole-paper/publication clearance.
 
 ## Operating notes
 
-Keep test dilation D_r Psi=r^(d+2-alpha)Psi(t,r x) distinct from occupation
-unitary U_ell g=ell^(d/2)g(ell x). Costs/rates scale r^(4-alpha)/r for
-D_r, while A_sp/b scale ell^alpha/ell² for U_ell. Raw Gaussian cost and
-original covariance amplitude never change during a fixed-test lower.
+In the scalar route, normalize the ACTUAL positive joint(u,lambda) density
+before expectations, carry x=E[u lambda] and y=E[u lambda²]/D together,
+and justify finiteness/differentiation/IBP endpoints for0<a<1,D>0.
+The finite polynomial/rational facts cannot establish those premises.
+The old V bound uses only a; its proof/type/formula must be matched exactly
+before reusing x=a/2. Do not change the certificate to make alpha>1 fit.
 
-For the next bridge, the scalar equilibrium identity is accepted but its
-new all-dimensional smooth temporal approximation still needs proof. Full
-H1 physical covariance/density and strong-H1 occupation interaction are
-new obligations. Exact covariance completion alone does not identify the
-physical nonnegative double integral; Fatou alone gives only one direction.
-No source energy domain reading/normalization is silently selected.
+Source energy in the accepted bridge uses literal half-gradient penalty
+and FULL strong-H1/a.e.unit/finite-integrated-energy O. Source definition
+and normalization dictionary remains unresolved. S1 is auxiliary, never
+an actual firstmean. Scalar improvement alone cannot prove matching upper.
 
-[held back: collaborators' unpublished work]
+Native AI review, root hash/archive/runtime evidence and Lean kernel checks
+have separate scopes. No new kernel run this turn. Official companion
+creation decision4 remains gated; meaningful standalone finite checks are
+authorized separately. Respect all existing PROJECT-GOAL decision points.
 
 ## Risks to monitor
 
-The intrinsic S1 lower value is now rigorously reviewed in the original
-class but NOT identified with author L_* or an actual firstmean. Matching
-sharp upper and intended source-energy/domain normalization remain genuine
-research gaps. Exact limit remains conditional on the source gap.
+Original goal remains ACTIVE; Omega>1 over the whole range, intended
+source energy/domain normalization, matching sharp upper and conditional
+exact limit are not completed. No firstmean/p2 source label substitution.
+Current own-energy lower is reviewed; the next scalar target is only planned.
 
-B1-B5 is only a next target; no Rsp/H1/occupation theorem adopted. Keep
-alpha>1 and invariant-direction covariances in all new statements. The
-separate all-alpha-damped-ratio target also needs its own independent gates.
-Do not relabel those plans as completed work.
+Do not trust historical opening bullets as current status: they now sit
+under Historical checkpoint summaries. Use current synopsis and latest
+adjudication. Preserve every failed/invalid/MEDIUM review as such.
 
-Network sync remains pending, not mathematical impasse. Preserve original
-and isolated lines; no destructive network/Git workaround or fresh parity
-claim. Full original goal ACTIVE, not complete or blocked. No contacts,
-Skorohod/source repair/HPC/privatecompanion/publication/whole-paper claim.
+Network sync remains pending, not mathematical impasse. Preserve both
+pending histories and foreign work, no destructive network/Git workaround
+or fresh parity claim. No contacts/source correction/Skorohod/HPC/private
+companion/publication/whole-paper certificate. Goal not complete/blocked.
