@@ -7875,3 +7875,30 @@ Skorohod/sourcefix/TeX/PDF/wiki/bib/publication, NoRoute/pushpending.
   later readonly retry NoRoute. Newresearchwork local; lastverified remote
   research6937719/root611c005,not current parity. No resets/foreign edits.
   OriginalgoalACTIVE; no TeX/PDF/source/bib/wiki/contact/HPC/publicaction.
+
+## US1-US4 uniform-E target frozen and screened before proof — 2026-10-31
+
+- Previous goalturn PROGRESS: BT full20HIGH accepted at exact scope. Fresh
+  active/root clean preflight; originfetch/<HUB>readonly NoRoute. Work
+  remains on new owned isolated research paths; no remote parity claim.
+- ExactUS1-US4 statements byte-frozen BEFORE tests: E-only signed rough
+  form/staticflow/bottom constants; scalar-time tensor uniform averaging;
+  full/good/bad/truepartial meanproduct on polynomial balls; arbitrary
+  small-residual comparison with actual SP mean denominator/iteratedlimits.
+  FixedR Eclosure/F-lift reconstruction constants forbidden in uniformbounds.
+- One local150raw static evaluator rows,145configs,30t0rows/116distinct
+  nonzerotime; independentexpm/SVD versus spectral at40/80digits. Actual
+  unrounded logprecision change2.12672e-39,formula1.22126e-38,not enclosure.
+  Omittedprefactor fails7raw/6configs,zerorate11/11. Exact stablequarter
+  oscillators give norm2 despiteindividualrate0; displacementproductwrong;
+  strictnoncommuting normgap.36exactrational truepartial/emptyclock cases.
+  Finitemode comparators/calibration,notactualPDE or uniformanalyticproof.
+- Statement/source/type gate packet includes exactoldS/B/E/U/SP applications,
+  Teschl/Young primarytexts+10images and fulloldMathlibtypes/axioms/custody.
+  Full proof still UNWRITTEN; no acceptance from finite tests or oldF gates.
+  SharpRayleighscore/signed-positive/sourceconstants/exactlimit OPEN.
+  No newLean/compiler/count74facts20seams/L0,TeX/PDF/wiki/bib/HPC/contact.
+- Exact inherited PRIMARY excerpt copies retain original whitespace/EOF
+  bytes; separately verified byteequal acceptedGit f6bc184. Scoped whitespace
+  check excludes ONLY those2exactcopies; all other newpaths pass. No source
+  normalization/hash alteration to satisfy formatting. Receipt retained.
