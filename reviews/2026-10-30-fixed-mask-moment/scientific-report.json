@@ -1,0 +1,95 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "reviews/2026-10-30-fixed-mask-moment/target-v1.md: complete, lines 1-103",
+    "reviews/2026-10-30-fixed-mask-moment/falsification-v1.md: complete, lines 1-40",
+    "reviews/2026-10-30-fixed-mask-moment/source-crosswalk-v1.md: complete, lines 1-43",
+    "reviews/2026-10-30-fixed-mask-moment/worker-honesty-v1.md: complete, lines 1-30",
+    "reviews/2026-10-30-fixed-mask-moment/check-low-orders.py: complete, lines 1-106",
+    "reviews/2026-10-30-fixed-mask-moment/low-orders-v1.json: complete, lines 1-936",
+    "reviews/2026-10-30-fixed-mask-moment/canonical-input-excerpts.txt: complete, lines 1-276",
+    "notes/source-operator-convergence.md: complete, lines 1-476",
+    "reviews/2026-10-30-fixed-mask-moment/pages/author-07.png: full image",
+    "reviews/2026-10-30-fixed-mask-moment/pages/author-10.png: full image",
+    "reviews/2026-10-30-fixed-mask-moment/pages/author-12.png: full image",
+    "notes/fixed-mask-moment-transfer.md: complete, lines 1-228",
+    "reviews/2026-10-30-fixed-mask-moment/statement-adjudication-v1.md: complete, lines 1-32",
+    "reviews/2026-10-30-fixed-mask-moment/scientific-worker-honesty-v1.md: complete, lines 1-30",
+    "reviews/2026-10-30-fixed-mask-moment/check-low-orders-v2.py: complete, lines 1-115",
+    "reviews/2026-10-30-fixed-mask-moment/low-orders-v2.json: complete, lines 1-936",
+    "reviews/2026-10-30-fixed-mask-moment/source-crosswalk-v2.md: complete, lines 1-45",
+    "reviews/2026-10-30-fixed-mask-moment/canonical-terminal-construction.txt: complete, lines 1-77"
+  ],
+  "checks": [
+    {
+      "claim": "C1: the note uses the exact original H:homog class, data (1,0), the same actual source covariance, nonnegative Radon positivity rather than PSD alone, and an auxiliary J allowance without W-determination.",
+      "verdict": "PASS",
+      "reason": "Note lines 9-15 match excerpt lines 135-154: d=1,2,3, a in (0,1), alpha+a<2, 0<alpha<d or alpha=d=1, nonnegative even positive-definite tempered Radon Gamma. This admits singular and invariant-direction measures. Equation (2) is source (5) at equal parameters, giving K_delta(s-r)Gamma_(2epsilon)(z-w). Nonnegativity follows from Gamma>=0, the positive heat kernel and K_delta>=0. The bound c_rho=K_delta(0)Gamma_(2epsilon)(0) agrees with the squared norm of source vector (16). Note lines 13-15 allow auxiliary dependence, matching source lines 251-254."
+    },
+    {
+      "claim": "C2: the chain measures are actual, unsmoothed and positive, with unit-wave pushforward measurability, mass t^(2n)/(2n)!, a Bochner L2 construction from uniform finite Gaussian product moments, and justified Fubini.",
+      "verdict": "PASS",
+      "reason": "Scaling (2.6) gives G(r,dz)=r times the pushforward under z->rz of the unit-time probability measure, and (2.5) gives mass 1 at r=1 in d=1,2,3. Author (2.15) has exactly n Green factors, so f_n(t)=int_0^t(t-s)f_(n-1)(s)ds with f_0=1, which yields t^(2n)/(2n)!. Holder plus scalar Gaussian moments bounds odd absolute products and the 2n factors in the L2 norm of an n-fold product, using only N and c_rho. L2 continuity of the source gives strong measurability, and finite mass gives Bochner integrability. Expectation of a product of two chain integrals then interchanges by ordinary Fubini."
+    },
+    {
+      "claim": "C3: the canonical Green-before-noise identification is explicit, and the import of q_n matches the actual Picard integral without a global sample bound over heat tails.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "At fixed times, product heat-mollified Green measures converge weakly in increment variables with unchanged masses. Covariance products are bounded and continuous because Gamma_(2epsilon) is smooth and bounded. The time majorant is c_rho^l times the chain mass integrands, integrable by (1). Square and cross moments converge to one diagram sum, so ||A_eta-A||_2^2->0. The smoothed integrals use only uniform Gaussian moments, so no sample supremum over heat tails enters. This mirrors excerpt lines 920-924. Edge widths match excerpt lines 1053-1054 and 1065-1067, so the second moment of X_(rho,n) is bounded by q_n^2. The notes concern the definitions of Y_n^a and the Green regularization, which are absent from the packet, and they do not change the conclusion."
+    },
+    {
+      "claim": "C4: the full Wick pair-partition argument gives F1 for all n,k,t,x,y, with a mask product over every vertex independent of pairing, including self, unequal and empty chains, odd zero, finiteness and the diagonal norm bound.",
+      "verdict": "PASS",
+      "reason": "Wick (2.19) applies to the jointly Gaussian vertices of both chains. Odd total order vanishes on both sides. Each even term (3) is a nonnegative integrand against positive measures, finite by (1)-(2). Masking multiplies the integrand by the product of m(z_i) over all 2l vertices, a factor in [0,1] that does not depend on D. Termwise comparison and summation over D therefore give F1, including n=0 or k=0, and n=k=0 equals 1. Setting x=y and k=n gives (5) from the unmasked q_n bound, and q_0>=1 covers order zero. Lines 115-117 correctly disclaim PSD ordering, samplewise ordering and signed-kernel monotonicity."
+    },
+    {
+      "claim": "C5: ordinary source solutions are obtained from pathwise bounded compact cones, with factorial uniform convergence, continuity, uniqueness, L2 subsequence identification and a per-fixed-rho continuous version, without sample positivity or global supremum moments.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Backward cones of compact sets are compact and backward-closed, so the sample bound M is finite and (6) follows from support and mass. Rescaling time to the unit simplex and using the unit-wave representation gives term continuity by dominated convergence. Summing the Volterra recursion gives the mild equation with free displacement 1 and zero initial velocity, matching (2.1). Iterating the difference equation gives B M^n T^(2n)/(2n)!->0, hence uniqueness. Lines 143-145 keep versions per fixed rho, consistent with source lines 388-389. The per-term equality of the Bochner and pathwise integrals is only implicit. It follows in one line by testing against bounded random variables with Fubini, so it is a minor note."
+    },
+    {
+      "claim": "C6: the full mixed series is absolutely L1-summable, (8) follows, only the unmasked solution is stationary, (9) follows, and the Bochner average with double Fubini gives (10) for phi>=0 without Sobolev point evaluation or velocity ordering.",
+      "verdict": "PASS",
+      "reason": "Cauchy-Schwarz with q_n gives (7), bounded by Q_t^2. L2 partial-sum convergence gives L1 product convergence, and termwise F1 then gives (8). Stationarity comes from the law of (2) and translation covariance of the Picard integrals, and is not asserted for the masked solution. Cauchy-Schwarz then gives (9). Joint measurability of the continuous versions and the uniform L2 bound give the Bochner average, which can be read through L2(KxOmega) or L2 continuity. Absolute Fubini holds with majorant ||phi||_1^2 Q_t^2. Multiplying by phi(x)phi(y)>=0 and integrating gives (10) with the correct constant. No point Sobolev evaluation or velocity comparison is used."
+    },
+    {
+      "claim": "C7: the full unmasked point-moment limit (11) is newly written from named fixed-order diagram limits and the exact edge convention, and conditional F3 follows with exact masked L2 assumption, norm limit (12), and fixed t before asymptotics.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "L:joint-fixed-order gives every diagram limit at arbitrary relative rates, and common widths are a restriction of vertexwise widths. Green smoothing is removed first and empty chains are included. For (11), the prelimit term and the canonical term are each bounded by q_n q_k, using the uniform lemma and line 1040, with summable double majorant Q_t^2. The finite-square plus tail argument and P:mixed therefore give the limit. The argument uses second moments under the exact source law, not a pathwise identity with W. The difference-of-squares estimate is correct, so (10) and (11) give (12) along any admissible rate or sequence. The masked L2 limit stays an explicit assumption, and no Young premise appears. The reversal and pairing bijection between terminal-form (3) and the initial-chain diagrams is left to imported lines 463-482 and 942-945. This is sum-invariant and only a minor note."
+    },
+    {
+      "claim": "C8: all seven statement notes are addressed, the historical crosswalk error is retained in v1 and corrected in v2, v1 code is retained with stricter v2 controls, and the 100 finite d2 rows with 48 odd rows carry no continuum certificate.",
+      "verdict": "PASS",
+      "reason": "Item 1 is addressed by note Section 5 and crosswalk v2 lines 37 and 45, with v1 line 37 retained. Item 2 is addressed by Section 2 and the added terminal excerpt. Item 3 is addressed by lines 143-145. Item 4 is addressed by v2 code line 84, where 48 nontrivial even rows are asserted strict. Item 5 is addressed by v2 code lines 88-102. Item 6 is addressed by crosswalk v2 line 32 citing p7 (2.1) and p10. Item 7 is addressed by note lines 13-15 and 207-209. Reading the code shows the model is admissible: alpha=1, a=.5, Gamma_(2epsilon)(0)=1/sqrt(4 pi epsilon), the K formula is correct, the Wick recursion is correct, and nodes lie strictly inside light cones. The counts 100 and 48 are arithmetically correct. By hand, row x=y=0, n=k=1 reproduces approximately .008326, the x=y=.05 ratio is exactly .5625, the difference eigenvalues are -c/4 and c, and the signed masked variance is c/4. The scope text states no continuum error or accuracy certificate."
+    },
+    {
+      "claim": "C9: source pinpoints, photos, accepted imports, canonical excerpts and application boundaries are accurate, and no excluded claim is made.",
+      "verdict": "PASS",
+      "reason": "The images confirm p7 (2.1)-(2.6), p10 (2.13)-(2.17) with S_0=1, and p12 (2.19)-(2.22) with all pair partitions and odd zero. Named q_n, P:mixed, L:joint-fixed-order, H:homog and source Theorem 2 content matches the supplied excerpts and accepted note. Sections 5-6 and the honesty files make no claim of independent novelty, masked raw limit existence, Young identification, local phase, ground state, d2/d3 lower bound, sharp upper constant, source-energy repair, Lean upgrade, companion, HPC, contact, Skorohod work, TeX/PDF/wiki change, publication clearance or goal completion. The original goal stays ACTIVE."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Note lines 141-143 identify the L2 partial sums with the pathwise partial sums without stating that each Bochner term equals its pathwise integral almost surely. This is a one-line Fubini consequence of the integrability in Section 2, and stating it would be clearer.",
+      "Note lines 178-183 do not write out the terminal-chain reversal and pairing involution connecting (3) to the initial-chain diagrams of L:joint-fixed-order. The imported P:mixed lines 463-482 and lemma lines 942-945 supply it, at common terminal (t,0).",
+      "Note line 79 attributes boundedness and continuity to (2). Equation (2) as displayed gives positivity and the bound, while spatial continuity comes from smoothness of Gamma_(2epsilon) in source note (15).",
+      "Note line 74 says the unmasked integral is exactly the canonical regularized Y_n. Given the auxiliary coupling, this is safest read as identity of source law and moments, which is all the note uses and is consistent with lines 184-185.",
+      "The packet excerpts do not include the definitions of Y_n^a and gamma^0_delta, or the canonical Green regularization on author pp.13-14. The edge convention is inferred from excerpt lines 881 and 1053-1067. The note's heat mollifier is harmless because any positive unit-mass approximate identity gives the same unsmoothed diagram limit, but the exact canonical kernel was not directly compared.",
+      "Note lines 165-166 compress strong measurability into 'separable Bochner integration'. The conclusion is correct via L2(KxOmega) or L2 continuity, and an explicit phrase would help.",
+      "Note Section 1 pinpoints the author's chain convention at p10 but does not itself cite p7 (2.1) for the data. That pinpoint appears in crosswalk v2 line 32, so the statement note is addressed in the supporting file."
+    ],
+    "major_notes": []
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is an AI review, not human verification, a novelty audit or a whole-paper certificate. Acceptance is scoped to the frozen note and its named imports.",
+    "L:joint-fixed-order, L:vertex-crude, P:mixed, author Theorem 3.1 and source-operator Theorem 2 were treated as named accepted imports. Their statements were checked against the supplied text, but their dependencies were not re-certified, and Theorem 3.1, Lemma L:spatial-wick-measures and author pages 5, 6, 8, 9 and 13-15 are not in the packet.",
+    "Excerpts could not be compared with the original canonical TeX, which is outside the packet, so excerpt exactness is taken from the frozen files.",
+    "No execution tool was available. The Python scripts were audited by reading, one numerical row and the closed-form controls were checked by hand, and root execution of the scripts was not reproduced. Whether the JSON files came from those exact scripts is unverified, and those diagnostics are not proof evidence.",
+    "Image SHA-256 values, the PDF hash, the source revision, git and parity claims, and prior-review timing and archive receipts could not be independently recomputed. The wiki reconnaissance described in the crosswalks is also not in the packet.",
+    "A harness hook announced a queued amsg message. It was not read because it is outside the frozen packet and the review contract."
+  ]
+}

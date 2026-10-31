@@ -5787,3 +5787,34 @@ until independentfullgate. Fixedmask compactmean/Young/groundgap/cone/raw
 cost/allalpha lowerbridge/sharpupper/sourceenergy remainOPEN. Fullgoal
 ACTIVE,71facts18seams unchanged; no newLean/companion/HPC/contact/Skorohod/
 sourcefix/TeX/PDF/wiki/publication.
+
+### Fixed-mask displacement-moment transfer adopted — 2026-10-30
+
+Full native Opus5.5/high ninechecks PASS_WITH_NOTES/HIGH756.999s,15texts/
+three full sourceimages; no requiredrepairs. All18live/frozen/git604c60f/
+nativeworkspace hashes and33nativearchive members verified before adoption
+edits. Root canonicalreport/passing/correspondence/requiredreadcoverage
+checks pass. Original33865terminalresult/directvalidJSON/no retry/recovery/
+confidencechange. Seven minor clarifications adjudicated: Bochner/pathwise
+Fubini, terminalreversal/pairinginvolution, heatcontinuity, source-lawrather
+than arbitraryauxiliaryvariable identity, exactOWNGreenconvention, L2
+continuity/Bochner averages andsourceinitialdata. Postreview exactcanonical
+definition excerpt separatelyretained; not falsely countedreviewerinput.
+
+ACCEPTED notes/fixed-mask-moment-transfer.md ALLoriginald1/2/3covariances:
+positive physicalnoise mask0<=m<=1 AFTERsmoothing decreases EVERYmixed
+displacement diagram including unequal/emptychains/selfpairings; q_nnorm
+bounds andordinarysourcePDEidentity, fulltwo-point moment order andpositive
+Bochneraverage-to-stationarypoint comparison. NEW unmaskedfullsourcepoint
+moment limit derived fromacceptedfixedorderdiagrams andq_n doubletails.
+CONDITIONAL rawmaskedaverage moment transfer if itsL2 limit exists; not
+existence/Youngidentity. PSD/signedobservable order explicitlyfailsinactual
+admissibled2model; no arbitraryphase/velocity monotonicity inferred.
+
+NextfixedmaskYoung/source/constant-initialdata identification must construct
+the maskedrawaverage. ThencompactmeancommonnegativeRayleightrial/gap/
+fullphasecone/rawshift-event-cost andallalpha variational comparison remain,
+alongwithsharpupper andsourceenergy dictionary. See scopednext-flow-
+obligations; d3 compactpotential alone doesNOTgiveboundstateatallstrengths.
+FullgoalACTIVE,71facts18seamsunchanged; no Leanupgrade/companion/HPC/contact/
+Skorohod/sourcefix/TeX/PDF/wiki/publication/wholepaper clearance.

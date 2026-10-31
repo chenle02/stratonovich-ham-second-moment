@@ -1,6 +1,9 @@
 # Fixed noise masks and displacement-moment transfer
 
-COMPLETE CANDIDATE: not adopted before independent full proof review.
+ACCEPTED after independent full proof review: Opus5.5/HIGH, nine checks,
+PASS_WITH_NOTES, no required repairs. Frozen scientific revision604c60f;
+seven minor clarifications adjudicated in the review directory. No estimate
+or proof mechanism was replaced on adoption.
 This is an internal positive-Wick consumer, not a new comparison method.
 The original all-dimensional sharp second-moment goal remains ACTIVE.
 
@@ -17,6 +20,7 @@ and its continuous-time, spatially smooth version for each fixed rho enter.
 Named accepted inputs, not re-proved:
 - Author p7 (2.3)-(2.5): positive displacement Green measures G_d(r,dz),
   supported in |z|<=r with mass r. In d3 these are sphere measures.
+  The mild form (2.1) on that page supplies data(1,0), with p10 X_0=1.
 - Author p10 (2.13)-(2.16): ordered chain convention with X_0=1;
   p12 (2.19): finite Gaussian Wick formula, ALL pair partitions and odd zero.
 - OWN canonical notes L:joint-fixed-order: arbitrary joint vertexwise noise
@@ -71,12 +75,16 @@ against nu_n is a legitimate Bochner L2 integral. Source continuity gives
 the needed strong measurability. This constructs X_(rho,n)^m and its
 unmasked version and justifies stochastic Fubini for any two finite chains.
 
-The unmasked integral is exactly the canonical regularized Y_n at common
-noise widths, including the Green-before-noise convention. To check this
+The unmasked integral has the source law and all mixed moments of canonical
+regularized Y_n at common noise widths, including the Green-before-noise
+convention. If canonical regularized variables are realized using this
+same field, they are the same integrals; no identity between previously
+chosen auxiliary realizations is needed. To check the Green convention
 in d3, first mollify each Green measure by a positive heat approximate
 identity. At fixed times, these finite positive spatial measures converge
 weakly, with their masses unchanged. Every Wick covariance product at fixed
-rho is bounded and continuous in all spatial vertices, by (2). The same
+rho is bounded by (2) and spatially continuous by heat smoothness of
+Gamma_(2epsilon), proved in the accepted source note (15). The same
 holds for mixed moments of smoothed and unsmoothed chain integrals. Their
 spatial integrals therefore converge. For time integration, (2) times the
 finite chain mass integrands is an integrable majorant, by (1). Both square
@@ -97,7 +105,10 @@ unmasked contribution
         int product_({i,j} in D) C_rho(s_i,z_i;s_j,z_j)
                                    d(nu_n^(t,x) tensor nu_k^(t,y)). (3)
 
-It is nonnegative and finite by (1)-(2). For the masked contribution the
+It is nonnegative and finite by (1)-(2). Spatial continuity used above
+comes from smoothness of Gamma_(2epsilon), as proved in the accepted source
+note (15), and temporal continuity from finite Laplace truncation.
+For the masked contribution the
 integrand acquires exactly
 
                        product_(i=1,...,2l) m(z_i).               (4)
@@ -138,7 +149,10 @@ Volterra recursion is justified by (6) and gives the ordinary mild equation
 with free displacement1 and zero initial velocity. Uniqueness among locally
 continuous mild solutions follows by iterating the difference equation on
 the same finite cone: if its supremum is B, the difference is at most
-B M^n T^(2n)/(2n)! for every n, hence zero. The L2 partial-sum limit and
+B M^n T^(2n)/(2n)! for every n, hence zero. Each Bochner term agrees almost
+surely at a fixed terminal point with its pathwise chain integral, by
+ordinary Fubini and the absolute integrability established in Section2.
+Take their countable intersection over orders at that point. The L2 partial-sum limit and
 this pathwise limit coincide almost surely at each fixed(t,x), by an almost
 sure subsequence of L2 convergence. These continuous solution versions may
 be used simultaneously for all(t,x) at this fixed rho; no common null set
@@ -162,8 +176,11 @@ L2 limits. It is not asserted for u_rho^m. Cauchy--Schwarz now gives
        E[u_rho(t,x)u_rho(t,y)]<=E|u_rho(t,0)|^2.                 (9)
 
 Let phi>=0 be smooth compactly supported. The locally continuous versions
-are jointly measurable; their uniform pointwise L2 bound Q_t and separable
-Bochner integration give actual L2 averages. Their second moment is the
+are jointly measurable. Their L2 continuity in x follows first for each
+finite Bochner term from Gaussian increment continuity on compact cones,
+then for the sums by the uniform q_n tails. Thus x maps continuously into
+L2, with separable image and bound Q_t, giving actual Bochner L2 averages.
+Their second moment is the
 double phi-weighted integral of the two-point expectation: absolute Fubini
 is justified by ||phi||_1^2 Q_t^2. Multiply (8)-(9) by phi(x)phi(y) and
 integrate to obtain
@@ -176,7 +193,12 @@ The proof uses no point Sobolev evaluation in any dimension. It proves F2.
 ## 5. New full unmasked moment limit and conditional transfer
 
 Fix t. At every fixed n,k, the exact common-rho source covariance in (2)
-matches the canonical vertexwise source convention. Section2 supplies the
+matches the canonical vertexwise source convention. At terminal(t,0),
+reverse each chain by s'_j=t-s_(n+1-j), z'_j=-z_(n+1-j), with the analogous
+map for the other chain. Even covariances absorb the reversed differences;
+relabeling vertices induces the pairing bijection D->{{r(i),r(j)}:{i,j}in D}.
+This is precisely the initial-chain convention of OWN P:mixed and
+L:joint-fixed-order, including an empty chain. Section2 supplies the
 Green-before-noise identification. By OWN L:joint-fixed-order, each even
 diagram tends to its finite canonical limit as epsilon,delta->0 at arbitrary
 relative rates. Odd mixed moments remain zero. Hence the finite sum at
