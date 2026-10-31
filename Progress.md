@@ -68,8 +68,10 @@
  FULL actual application gates. Nine missing old state-mirror entries
  restored from authority/reviewed sourcebytes, no proof changes. No formal
  probability/SPDE or officialcompanion/package claim.
-- **Git:** isolated research branch; origin/<HUB> NoRoute. Last verified
-  remote604c60f, no fresh parity/push/sync/master merge. Preserve both lines.
+- **Git:** network recovered; research99pending commits pushed and tracking
+  0/0 at34e4b24; root29pending operational/adoption commits pushedmaster
+  35a21c4,<HUB> fetch/pull clean HEAD=origin/master35a21c4. New owned
+  units now pushed atomically. No research-wave/master merge; preserve both lines.
 
 ## Historical checkpoint summaries
 
@@ -7535,3 +7537,34 @@ Skorohod/sourcefix/TeX/PDF/wiki/bib/publication, NoRoute/pushpending.
   stochastic/growingR/signedpositive/source normalization/sharp/exactlimit
   targets ACTIVE/OPEN. Canonical timely lessons separately pushedcee8605b;
   research origin/<HUB> NoRoute preserved, no false parity claim.
+
+## GC1-GC3 complete proof freeze and network recovery — 2026-10-31
+
+- Previous goal turn PROGRESS: canonical timely lessons and actual recovered
+  GCstatement/Ufull independent gates completed. Current clean active34e4b24.
+  Fresh origin fetch and focused <HUB> SSH CHANGED from NoRoute to
+  success; <HUB> clean604c60f. Research99pending commits pushed to
+  research/fixed-mask-young-20261031,tracking0/0; root29pending operational/
+  F-adoption commits pushedmaster35a21c4. Required serialized <HUB>
+  fetch/pull succeeded,HEAD=origin/master35a21c4,clean, researchref34e4b24.
+  This is branch durability/sync, NOT integration of research waves to master.
+- Complete UNREVIEWED proof in notes/growing-cone-point-upper-transfer.md
+  after accepted GCstatement/source gatec7d0e57/dcdc431. All8optional notes
+  addressed: actual E driver,mandatory E/Frestriction,same-law source clause,
+  Bessel convention,inversepowers analytic,zeroGamma,source-only higherk,
+  no dependence on fragile retained numerical equality guard.
+- New compact-source Ek phase/scalar identification with integerk>d/2+1,
+  factorial Picard uniqueness and Fourier continuity; TOTAL free initial
+  difference(psi-1,0),derivativeinitialkernel/d3Greenmeasure,local cone
+  Volterra equality,stationary average-of-SQUARES and separate actual raw
+  L2(D)/canonical pointmoment limits. Exact oldcanonical law map preserves
+  allmixed/self/empty diagrams; polynomial data cost vanishes at targetscale.
+- This is an exact transfer REDUCTION candidate,not growingR operator rate
+  or sharpconstant. No U/SP/SA candidate used as input. Full frozen22text
+  source/type/actualapplication packet ready for required Opus5.5/HIGH gate.
+  No new numeric/Lean run/count;74facts20seams/L0. New inverseparametrization
+  explicitly analytic,not among old4kernel facts. Allsource limits first.
+- Original growingR stochastic norm/expectednorm anchor,signedpositive/
+  intended source normalization/sharp/exactlimit remainOPEN; fullgoalACTIVE.
+  No manuscript/TeX/PDF/wiki/bib/sourcePDF/sibling/Skorohod/contact/HPC/
+  companion/publication action. No full proof acceptance before review.
