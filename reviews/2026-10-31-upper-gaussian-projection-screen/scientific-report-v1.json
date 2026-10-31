@@ -1,0 +1,120 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "notes/upper-cameron-compactness.md: lines 1-486 (complete)",
+    "reviews/2026-10-31-upper-gaussian-projection-screen/target-v2.md: lines 1-100 (complete)",
+    "reviews/2026-10-31-upper-gaussian-projection-screen/target-v0.md: lines 1-77 (complete)",
+    "reviews/2026-10-31-upper-gaussian-projection-screen/check-operator-cm-v1.py: lines 1-74 (complete; read, not executed)",
+    "reviews/2026-10-31-upper-gaussian-projection-screen/operator-cm-controls-v1.json: lines 1-985 (complete)",
+    "reviews/2026-10-31-upper-gaussian-projection-screen/falsification-v1.md: lines 1-85 (complete)",
+    "reviews/2026-10-31-upper-gaussian-projection-screen/source-crosswalk-v1.md: lines 1-58 (complete)",
+    "reviews/2026-10-31-upper-gaussian-projection-screen/worker-honesty-v1.md: lines 1-35 (complete)",
+    "reviews/2026-10-31-upper-gaussian-projection-screen/wiki-recon-v1.json: lines 1-210 (complete)",
+    "reviews/2026-10-31-upper-gaussian-projection-screen/primary-friz-hairer-excerpt-v1.txt: lines 1-53 (complete)",
+    "reviews/2026-10-31-upper-gaussian-projection-screen/primary-friz-hairer-custody-v1.json: lines 1-23 (complete)",
+    "reviews/2026-10-31-upper-gaussian-projection-screen/mathlib-finite-holder-type-v1.txt: lines 1-18 (complete)",
+    "reviews/2026-10-31-upper-gaussian-projection-screen/mathlib-finite-holder-audit-v1.lean: lines 1-5 (complete; read, not executed)",
+    "reviews/2026-10-31-upper-gaussian-projection-screen/mathlib-finite-holder-custody-v1.json: lines 1-8 (complete)",
+    "notes/all-dimensional-static-occupation-bridge.md: lines 1-404 (complete)",
+    "notes/compact-sobolev-cutoff.md: lines 1-388 (complete)",
+    "notes/actual-operator-driver.md: lines 1-565 (complete)",
+    "notes/source-operator-convergence.md: lines 1-476 (complete)",
+    "notes/fixed-mask-young-constant-phase.md: lines 1-433 (complete)",
+    "notes/raw-block-event-lower.md: lines 1-610 (complete)",
+    "notes/damped-lower-endpoint-bridge.md: lines 1-347 (complete)",
+    "reviews/2026-10-31-upper-gaussian-projection-screen/statement-adjudication-v1.md: lines 1-37 (complete)",
+    "reviews/2026-10-31-upper-gaussian-projection-screen/scientific-worker-honesty-v1.md: lines 1-43 (complete)",
+    "reviews/2026-10-31-upper-gaussian-projection-screen/globalization-guard-v0.md: lines 1-45 (complete)",
+    "reviews/2026-10-31-upper-gaussian-projection-screen/check-scalar-blocks.py: lines 1-27 (complete; read, not executed)",
+    "reviews/2026-10-31-upper-gaussian-projection-screen/scalar-blocks-v0.json: lines 1-124 (complete)"
+  ],
+  "checks": [
+    {
+      "claim": "C1: model, conventions, mask, phase and restricted noise space",
+      "verdict": "PASS",
+      "reason": "The full Gamma class (d=1,2,3; alpha<d or alpha=d=1; 0<a<1; alpha+a<2) matches the accepted notes, and alpha<2 makes the s range nonempty. m_R=eta_R^2 enters the driver once; (5) correctly factors it as (eta_R z1+c1 eta_R)(eta_R w'). F=E plus R^2 with constants outside E, and the dual pairing through Lambda^-1 gives <(0,g),w>_F=int g Lambda^-1 w2 with ||Lambda^-1 w2||_H1/2=||w2||_H-1/2. H embeds isometrically and closed in the given H_W, and W is restricted rather than replaced. No indicator multiplier on the noise quotient is used."
+    },
+    {
+      "claim": "C2: Section 2 H1 products, band decomposition, fractional product and physical identity",
+      "verdict": "PASS",
+      "reason": "H1 products are Cauchy in H_sp via (1) with f1=f3=u, f2=f4=v, and the limit pairings follow from accepted joint H1 continuity. Radial sharp bands preserve realness and give f_j in H1. N(f_j)<=2^(j alpha/4)||f_j||2 holds including j=0. Weighted Cauchy-Schwarz gives (2) because s>alpha/4, with band constant 2^s and series sum 2^(-2j(s-alpha/4)). The a.e. absolute L2 series, fourfold Tonelli under positive sigma-finite dx Gamma(dy) and the null-set transfer at both positions yield (3). Absolute H_sp convergence yields (4). The physical pairing identity holds by the same absolute calculation, and density and uniqueness are correct. No d1 split, global Linfinity embedding or density of Gamma is used."
+    },
+    {
+      "claim": "C3: Section 3 compact T_sp on exact F",
+      "verdict": "PASS",
+      "reason": "Gamma*q is locally smooth with finite local Gamma mass. Identity (5), including the Lambda^-1 weight, evenness of Gamma and c1 eta_R, was recomputed. The accepted cutoff is used at sigma=s,gamma=1/2-s (positive since s<1/2) and at sigma=-1/2,gamma=1, within its stated scope. The product family is compact in H_sp as the continuous bilinear image of compact sets, so T_sp extends to the quotient and kills nulls. Compact values follow from the closed range in K(F). Compactness of the map follows from (6) by self-adjoint Q_n, uniform tails on the compact L and finite-rank T_sp Q_n. No raw noise mask multiplier, instantaneous Gaussian multiplier, HS field or periodic state occurs."
+    },
+    {
+      "claim": "C4: Section 4 tensor identification and supported projections",
+      "verdict": "PASS",
+      "reason": "The factorized covariance gives an isometry on separated tests after both null quotients. The uniform-error bound e^2|A|Gamma(A-A)int_I int_I|s-t|^-a is correct and gives density with compact support inside I x R^d, hence H=H_t tensor H_sp and separability. Gram-Schmidt on smooth tests gives a supported complete ONbasis. The finite formula extends P_J to an orthogonal projection on H_W, since the basis stays orthonormal under the isometric inclusion."
+    },
+    {
+      "claim": "C5: Section 5 scalar operator, Young bound, compactness and trace guard",
+      "verdict": "PASS",
+      "reason": "The Schur, Gamma-representation and Fubini steps are justified. The form 2 lambda/(lambda^2+xi^2) with unitary Fourier transform is correct, and strict positivity holds. The Schur truncation bound 2 eps^(1-a)/(1-a) is correct, and truncations are explicitly not used as covariances, so K and K^1/2 are compact. iota is an actual unitary H_t->L2(I), and C_t=K^1/2 iota is a deterministic construction. The Young factor split and exponents were verified; the conditions a r/2<1 and 1/(r/2)+1/r'=1+1/r hold. Duality (9) and interpolation with r<r2<2/a hold. The trace identity C_a N^a with C_a=2/((1-a)(2-a)) was recomputed. The guard denies HS only for the map (7) and makes no claim about K itself."
+    },
+    {
+      "claim": "C6: Section 6 vector bound, compact T and epsilon_J",
+      "verdict": "PASS",
+      "reason": "The constant in (10) is the scalar C_(a,r), independent of tensor dimension. Duality is explicit with a finite-dimensional direction approximated in Lr', and Bochner completion uses density only, with no RNP or Pettis input. U maps into raw H_sp labels and T_sp applies the covariance once. The physical mean on general smooth tests is identified by uniform approximation with the accepted ||V||infinity+||V||2 bound. T is compact because T_n is finite spatial rank composed with compact C_t coordinates and T_n->T in norm. The weak-null plus compactness argument gives epsilon_J->0."
+    },
+    {
+      "claim": "C7: Section 7 residual drivers, covariance, operator integrals and Cameron identification",
+      "verdict": "PASS",
+      "reason": "The T_(delta,m) isometry factor delta^(a-2)delta^2 delta^-a=1 is correct, and Y_(m,J) is a variance-contracting linear functional of the given W, so accepted Theorem 1 applies within scope. The covariance computation delta^(a/2) and g_delta delta^(a/2)=sqrt(delta) was recomputed for signed tests, with zero Gaussian input from positivity. The partition and last partial block are correct. Observed rows lie in closed H, and transfer through the H projection gives the same observed path. (12) includes both constant columns through the S_F triangular block. Strong continuity of S_F and its adjoint, the Fourier matrix, and norm-continuous compact conjugation are correct, with no operator-norm continuity of S_F. Density extends the identity, and ker L=H_seen^perp identifies the completed Cameron operator on the first-chaos quotient."
+    },
+    {
+      "claim": "C8: Sections 7-8 exponents, Holder estimate, exact norm and Mathlib application",
+      "verdict": "PASS",
+      "reason": "The ranges 1/2<theta<min(1-a/2,(3-a-alpha)/2), 1/(1-theta)<r<2/a, 1/theta<=p<2 are nonempty and force p<2<r. (13) was recomputed: sup factor B^(1-1/r), seminorm factor B^(1-1/r-theta), and factor delta^(-1/r). The primitive lies in closed B0 by simple-field approximation since 1-1/r>theta. The Mathlib type matches the use: 1<=kappa=r/p, f_m=t_m^p>=0 on Finset of card N+1, with (t^p)^(r/p)=t^r including t=0 since p,r>0. Taking the 1/r power gives n^(1/p-1/r). n<=2/(delta B) follows from delta B<1. The delta bookkeeping sqrt(delta)delta^(-1/r)delta^(1/p)n^(1/p-1/r)=sqrt(delta)(delta n)^(1/p-1/r) and (15) hold, with C_B(2/B)^(1/p-1/r)sqrt(delta)epsilon_J uniform in delta and R only through epsilon_J. Fixed-delta transfer is used only for identification, not for the uniform tail."
+    },
+    {
+      "claim": "C9: Section 9 negative white translated-control guard",
+      "verdict": "PASS",
+      "reason": "White d=alpha=1 is admissible for all 0<a<1. f_a is in L2 because a>0, K f_a=1 at every s, and ||f_a||_Ht^2=M_a by accepted Section 2; the formula also agrees with the classical Riesz equilibrium constant pi/cos(pi a/2). Phi_n is a unit vector. Spatial disjointness gives <Phi_n,e_j>=0 exactly, hence P_J Phi_n=0. e_disp and w_n have norm 1, and the pairing equals int(q_n/sqrt(M_a))(q_n/||q||_H1/2)=1/[sqrt(M_a)||q||_H1/2]>0 for all s. The L^r(K(F)) lower bound over the unit-measure I follows for every J. Only uniform-in-R tails with fixed projections are refuted; fixed-R C1-C3 and the full upper remain unaffected. The note matches globalization-guard-v0 up to triple versus four-entry notation."
+    },
+    {
+      "claim": "C10: seven statement findings discharged and diagnostics honestly limited",
+      "verdict": "PASS",
+      "reason": "All seven adjudication items appear in the proof: root and mask once; exact norm and B constants; integer B, supported basis and residual; direct-input scope; v0 files now supplied and not consumed as premises; control duplication; explicit obligations. The 24 rows include 8 zero-horizon rows. Wrong-Jacobian and missing-velocity entries are the same delta ratio on column 1. Counts of 5/36/36/12 were confirmed, along with max discrepancy about 3.05e-12 and H1/2 degree difference about 5.15e-14. Selected rows are presented as lower witnesses, and sampled formulas in the controls and scalar JSON agree with hand evaluation. None is used as proof."
+    },
+    {
+      "claim": "C11: scope exclusions and source boundaries",
+      "verdict": "PASS",
+      "reason": "The note makes no Gaussian concentration, exponential residual, nonlinear Young-product, full original point upper, growing-cone or source-constant claim, and (15) is correctly limited. The Friz-Hairer excerpt and custody match the text as future-only material and are not premises. There is no F3 reversal, two-clock ansatz, heat-residual independence, Skorohod, contact, HPC, source repair, TeX/PDF/wiki/bib or companion claim, and no publication, whole-paper, novelty or human clearance. The original goal is stated ACTIVE. Kernel and count claims are unchanged and no new theorem is claimed."
+    },
+    {
+      "claim": "Accepted inputs used only at stated scopes",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Each named input was checked against its source note: static bridge (11)-(16), cutoff Proposition 1, Gaussian transfer Theorem 1, F/S_F/B(V) and the raw pullback, and scalar equilibrium. The extensions the note needs are supplied or are immediate termwise consequences of those accepted proofs, as recorded in the minor findings. Upstream proofs were not recertified, as instructed."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Optional notation: H_I appears at lines 324, 331, 333 and 392, but Section 1 defines only H. It is the same closed subspace, and one equating sentence would help.",
+      "Optional wording: line 89 attributes the constant to a low band. The factor 2^s actually comes from the dyadic lower edge on j>=1, while the low block has factor 1. The estimate itself is correct.",
+      "Optional clarification: the F extension for the residual noise Y_(m,J) relies on the Dchi identities passing termwise to M_Y, as in fixed-mask Section 3 and raw-block Section 7. Those notes state the raw/source and generic transfer cases. The step is immediate, but the note only says genuine F extension.",
+      "Optional clarification: the accepted driver writes zeta_R(x)=zeta(x/R). At fixed R, m_R fits with zeta(y)=m_R(Ry), but this is not stated.",
+      "Optional clarification: the epsilon_J contradiction at line 294 should say along a subsequence, or note that epsilon_J is nonincreasing. The argument is otherwise complete.",
+      "Optional clarification: lines 331-333 and 391-392 are terse on why every continuous linear statistic is W(k_l) with k_l in H. The raw finite-sum coefficients need not lie in H before projection. The projected-transfer equivalence stated there does close this, and one explicit sentence would help.",
+      "Optional wording: line 319 says Cbeta bounds, while accepted Theorem 1 is displayed at theta. The proof needs only the chosen theta, or the theorem read at another admissible exponent.",
+      "Optional wording: the Section 9 heading says fixed radius is essential. The body correctly limits the result to d1 white with fixed smooth-compact projections and to uniform-in-R tails. The heading is broader than the result.",
+      "Optional wording: compact-cutoff operators are applied on real spaces. Real invariance of the even Bessel multipliers and real chi is immediate but not stated.",
+      "Optional readability: B denotes the covariance form, the multiplier, the block length and an input label, and T and Q are also overloaded. Context resolves each use."
+    ],
+    "note": []
+  },
+  "required_repairs": [],
+  "limitations": [
+    "No execution tool was available, so check-operator-cm-v1.py, check-scalar-blocks.py and the Lean audit were read but not rerun. Diagnostics were checked by code reading, counts and sampled hand evaluation only, and they are not proof premises.",
+    "The Lean #check/#print output, pin and hashes are accepted as supplied custody. Only fidelity of the stated type to the application was checked, which is what the contract requires for the existing kernel fact.",
+    "Named accepted inputs were trusted at their stated scopes and were not recertified. Their adoption and scientific hashes, including those not contained in the packet, were not independently verified.",
+    "Primary Friz-Hairer pages were checked only through the supplied excerpt and custody, and they are not premises of C1-C3.",
+    "This is an AI analytic review of a scoped candidate. It is not human verification, a novelty audit, or a whole-paper, full-upper or original-goal certificate."
+  ]
+}

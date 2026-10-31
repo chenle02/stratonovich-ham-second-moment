@@ -1,9 +1,11 @@
 # Fractional covariance products and averaged Cameron block bounds
 
-COMPLETE PROOF CANDIDATE, not adopted before FULL independent review.
-C1-C3 statement gate source0342ce4 passed22checks/HIGH569.515s;
-its seven notes are proof obligations, not a proof/upper certificate.
-Original sharp/source goal remains ACTIVE.
+ACCEPTED at the scoped FULL analytic/source/type/application gate:
+Opus5.5/HIGH,12checks PASS/PASS_WITH_NOTES,523.772seconds, no required
+repairs, scientific sourcee0a6f3e. Ten optional clarifications are in
+reviews/2026-10-31-upper-gaussian-projection-screen/scientific-adjudication-v1.md.
+Frozen proof/report unchanged. This is NOT an original sharp-upper theorem;
+full original sharp/source goal remains ACTIVE.
 
 ## 1. Exact objects, spaces and direct accepted inputs
 
@@ -22,7 +24,8 @@ with this inner product. H_t is the analogous completion of C_c^infinity(I),
 I=(0,1), with K_a(s,t)=|s-t|^-a. H is the ACTUAL completion of tests supported
 in I x R^d, with product covariance K_a Gamma. It embeds isometrically as
 a CLOSED subspace of the given positive-time raw H_W; W below is the GIVEN
-isonormal process restricted to H. This is not physical multiplication of
+isonormal process restricted to H. We also write H_I=H below.
+This is not physical multiplication of
 raw H_W elements by 1_I, and disjoint time supports are not independent.
 
 Here and below B for rough products is a physical integral only after
@@ -44,7 +47,8 @@ A. all-dimensional-static-occupation-bridge.md Section4(11)-(16),
 B. compact-sobolev-cutoff.md Proposition1/Sections2-3: multiplication by
    smooth compact eta is bounded H^s->H^s for every real s, and compact
    H^(sigma+gamma)->H^sigma for gamma>0. This is the full R^d result,
-   with no periodic STATE replacement. We use sigma=s,gamma=1/2-s and
+   with no periodic STATE replacement. Real chi and even real Bessel
+weights preserve the real subspaces, so the same compactness applies. We use sigma=s,gamma=1/2-s and
    sigma=-1/2,gamma=1 below, with the exact stated domains.
 C. actual-operator-driver.md and source-operator-convergence.md Theorem1:
    GIVEN-W linear Gaussian first drivers, literal completed noise matrix
@@ -57,10 +61,14 @@ C. actual-operator-driver.md and source-operator-convergence.md Theorem1:
 
 Fix a real even eta_R in C_c^infinity,0<=eta_R<=1, equal1 on B_R and
 supported in the closed B_(2R). The PHYSICAL driver mask is m_R=eta_R².
+If its notation requires zeta_R(x)=zeta(x/R), at this fixed R take
+zeta(y)=m_R(Ry); it satisfies the accepted base-mask conditions.
 Every call to an accepted theorem takes ITS mask argument equal to m_R;
 the root eta_R is only a state-factorization device. It is never squared
 again as a noise mask. R is fixed throughout the positive result.
 
+The locally defined symbols B(f,h), B(V) and integer B denote respectively
+covariance form, multiplier and block length; their domains distinguish them.
 The claims proved below are compact T_sp:H_sp->K(F), compact
 T:H->L^r(I;K(F)) for2<r<2/a, and an averaged Cameron-operator bound for
 actual residual block drivers. K(F) always has the OPERATOR norm. No
@@ -87,7 +95,8 @@ Frequency support gives
 
 where weighted Cauchy-Schwarz uses the summable series
 sum_j 2^(-2j(s-alpha/4)). The weighted l2 sum is bounded by the H^s norm
-up to a fixed low-band constant. Also sum_j||f_j||2<infinity because s>0.
+up to a factor2^s from the j>=1 lower band edges; the low block has
+factor1. Also sum_j||f_j||2<infinity because s>0.
 Thus sum_j|f_j| belongs to L2 by Minkowski/monotone convergence and the
 series is absolutely convergent Lebesgue-a.e., with sum f.
 
@@ -291,7 +300,8 @@ For the supported raw projections P_J of Section4, put
                  epsilon_J=||T(I-P_J)||H->Lr(K(F)).          (11)
 
 It tends to0. To verify this without assuming norm convergence of P_J,
-suppose unit v_J have ||T(I-P_J)v_J|| bounded below. The vectors
+if it failed choose a subsequence J and unit v_J with
+||T(I-P_J)v_J|| bounded below. The vectors
 u_J=(I-P_J)v_J tend weakly to0, since for every fixed h,
 |<u_J,h>|<=||(I-P_J)h||->0. Compact T gives a norm-convergent subsequence
 of T u_J; every continuous linear observable has weak limit0, so its norm
@@ -313,11 +323,13 @@ linear noise on fast tests by
 
 It has covariance bounded by the original raw test norm. Apply accepted
 Gaussian transfer C, with its mask argument m_R, then its genuine F
-extension, to get X_(m,J)=g_delta A_(m_R)(Y_(m,J)). Observe it only on
+extension: the Dchi identities used for the raw extension pass termwise
+to each transferred finite coefficient sum and then to its path limit, to get X_(m,J)=g_delta A_(m_R)(Y_(m,J)). Observe it only on
 [0,ell_m] and extend its INTERACTION primitive constantly to[0,B].
 For ell_m=0 this is the zero path. Transfer and stopping preserve compact
-values and Cbeta bounds. With theta<beta in the accepted driver range,
-these are actual centered Gaussian paths in the separable little-Holder
+values and Cbeta bounds. Choose theta<beta<beta2 below the accepted upper Holder threshold, and
+read the driver theorem at exponent beta with auxiliary beta2.
+These are actual centered Gaussian paths in the separable little-Holder
 space B0=h0theta([0,B];K(F)). The joint law is coupled on the GIVEN W,
 not an independent noise replacement.
 
@@ -388,8 +400,10 @@ F states and rational times to full operator paths by continuity; norm
 Borel coordinates use dense UNIT combinations, not largest matrix entries.
 Thus(12) is the ACTUAL completed Cameron covariance operator of the given
 residual Gaussian tuple. More explicitly, every continuous linear
-statistic l(X) is W(k_l) with k_l in H, by Gaussian transfer and the
-H_I-supported matrix kernels. Let H_seen be the closed span of these k_l.
+statistic l(X) is W(k_l) with k_l in H. Use the projected-transfer
+series just described: its coefficients lie in H_I, and W(H_I) is closed
+in scalar L2, so its scalar limits have that property. The original
+unprojected coefficient tests were not assumed individually supported. Let H_seen be the closed span of these k_l.
 Then l(L Phi)=<k_l,Phi>, so ker L=H_seen^perp. The first-chaos definition
 of Gaussian Cameron directions gives L(H_seen) with norm ||Phi||H;
 extra raw directions are quotiented by orthogonal projection onto H_seen.
@@ -424,7 +438,7 @@ C1-C3's functional-analytic and stochastic identification steps are ANALYTIC.
 No Gaussian concentration, nonlinear Young-product or moment upper follows
 from(15) alone.
 
-## 9. Fixed radius is essential; scope and verification boundary
+## 9. White controls obstruct uniform-R fixed smooth projections; scope
 
 Here is a precise negative guard against an automatic growing-mask upgrade.
 Take the admissible d1 white Gamma=delta0,alpha1, any0<a<1. From the ACCEPTED
