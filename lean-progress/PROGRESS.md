@@ -522,3 +522,18 @@ Successor changes proof body only, exact headers match. No linter disabled.
 type/application gate. Source local-checks/all-alpha-moment-v1/; Gaussian
 normalization/integral/IBP/CS/derivative and actual point consumer ANALYTIC.
 No official package/companion/lease/registry/HPC transaction, L0 PROPOSED.
+
+## All-alpha two finite applications accepted — 2026-10-31
+
+Scientificed2e5f5/adoptionb5628d5,10checks/HIGH318.460s/no requiredrepairs.
+Full public types and ACTUAL moment m1/m2/rational-gap guards passed
+fidelity/application gate. Both new public source bodies/headers unchanged
+from clean local compiler/axiom/replay evidence. Initial warning-gateFAIL
+22files and clean successor41files retained;5artifactpairs/4False controls.
+Old V source/complete definitions/types/application reused unchanged.
+
+Promote two provisional facts:73acceptedfinitefacts/19local seams.
+L0 PROPOSED and official companion decision4 unchanged. Local state mirror
+updated together; see local-checks/all-alpha-moment-v1/application-summary.json.
+No formal Gaussian/integral/derivative/SPDE theorem, official package/lease/
+registry/HPC gate. Next sharp-upper work is a new analytic research screen.

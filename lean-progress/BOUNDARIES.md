@@ -196,3 +196,12 @@ point applications remain informal analytic obligations. Local clean types/
 axioms/replay/4False controls pass, FULL application review pending. No
 formal Gaussian/integral/SPDE theorem; accepted count remains71/18 plus2
 provisional facts. L0 PROPOSED/no official package/companion/HPC unchanged.
+
+AllAlphaMoment application close (2026-10-31),scientificed2e5f5/adoptionb5628d5:
+TWO new exact scalar moment/rational public types and their actual analytic
+guards accepted. No source body/axiom change or new kernel run after clean
+replay. Normalized measure/moments/IBP/CS and D differentiation/Jmonotonicity/
+old V/own-energy point consumer are reviewed INFORMAL analytic steps.
+Full all-Gamma gain accepted in OWN domain only; intended author-domain/
+normalization, sharp upper/exact limit OPEN.73facts19seams/L0 PROPOSED;
+no formal probability/SPDE or official package/companion/HPC claim.
