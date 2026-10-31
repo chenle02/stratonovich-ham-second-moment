@@ -1,0 +1,325 @@
+{
+  "schema": "le-ai-lab.review-read-ledger/1",
+  "coverage_verified": true,
+  "claude_code_version": "2.1.304",
+  "events_sha256": "ce49e93e0eeec9f2ee00dec0dab82ac3753311b143f4c260bd71607d8117d7f6",
+  "events_hash_bound_to_receipt": true,
+  "stream_workspace": "../../../../.local/state/Le-AI-Lab/stratonovich-positive-gram-statement-v0/workspace",
+  "required_sources_sha256": null,
+  "continuation": false,
+  "continuation_credit": null,
+  "proves": "Each credited line was returned, numbered and byte-equal to the frozen workspace file, in a tool_result paired with a Read or line-numbered content-mode Grep call of the hash-bound provider stream.",
+  "does_not_prove": "Attention, understanding, or retention: a credited line may have been skimmed, ignored, or dropped by context compaction before the report was written. Uncredited lines may still have been seen in a form the ledger cannot attribute (previews, unnumbered output, subagents).",
+  "sources": [
+    {
+      "path": "reviews/2026-10-31-positive-gram-variational/target-v0.md",
+      "sha256": "5ab5dac4953575e459f6e810f6f7c73c7f8d6bb9f3ae423321c27aae6bc6b06f",
+      "total_lines": 40,
+      "required_ranges": [
+        [
+          1,
+          40
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          40
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "reviews/2026-10-31-positive-gram-variational/target-freeze-v0.json",
+      "sha256": "158dbf44f675ac1647283e9ce76270a60d982cd1128460acbf081a158c151bdd",
+      "total_lines": 7,
+      "required_ranges": [
+        [
+          1,
+          7
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          7
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "reviews/2026-10-31-positive-gram-variational/check-finite-score-v0.py",
+      "sha256": "2cc9af0912c5d45d0f1bd54b0da17f75d060735660e3d8cfea5ed1b1484cfc8c",
+      "total_lines": 77,
+      "required_ranges": [
+        [
+          1,
+          77
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          77
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "reviews/2026-10-31-positive-gram-variational/finite-score-screen-v0.json",
+      "sha256": "2ddae8daabc6a6b8046629bd7241b9b43dbdfb5bc0b39ea5ab0ce8eb959d6531",
+      "total_lines": 898,
+      "required_ranges": [
+        [
+          1,
+          898
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          898
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "reviews/2026-10-31-positive-gram-variational/screen-note-v0.md",
+      "sha256": "5c302a11cd56a284ee5cfb5a0ebb6c3a97da1c6d587a9b6d3b675f883616b482",
+      "total_lines": 37,
+      "required_ranges": [
+        [
+          1,
+          37
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          37
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "reviews/2026-10-31-positive-gram-variational/statement-source-crosswalk-v0.md",
+      "sha256": "8f5a6c21651a91f3cdc9861a66d49c016e044d8f5689e0af1648f895daabf779",
+      "total_lines": 45,
+      "required_ranges": [
+        [
+          1,
+          45
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          45
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "reviews/2026-10-31-positive-gram-variational/statement-prompt-v0.md",
+      "sha256": "6074627875db81882883459994c5e897b9a72f4a1232a356e62d6f5e28d0f54b",
+      "total_lines": 33,
+      "required_ranges": [
+        [
+          1,
+          33
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          33
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "reviews/2026-10-31-upper-residual-exponential/mathlib-young-type-v1.txt",
+      "sha256": "a97184a5b0264753cd3877c3ae84d237939e5a26e33561439ab061e99ffef289",
+      "total_lines": 16,
+      "required_ranges": [
+        [
+          1,
+          16
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          16
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    },
+    {
+      "path": "reviews/2026-10-31-upper-residual-exponential/mathlib-young-custody-v1.json",
+      "sha256": "a3c58226db19919f822567102bc1922d0555d8fcc706ffda33a436ccc87f2396",
+      "total_lines": 8,
+      "required_ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    }
+  ],
+  "tool_calls": [
+    {
+      "id": "toolu_0116NBvztqk82y1SY4UNNA69",
+      "tool": "Read",
+      "source": ".review/required-sources.json",
+      "plan_copy_read": [
+        ".review/required-sources.json"
+      ],
+      "uncredited": "runner-owned plan copy (.review/): never read credit",
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01WkBwkY2nwKaE7YnCV8CpHp",
+      "tool": "Read",
+      "source": "reviews/2026-10-31-positive-gram-variational/target-v0.md",
+      "credited": {
+        "reviews/2026-10-31-positive-gram-variational/target-v0.md": [
+          [
+            1,
+            40
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_018bbWAi5k9d4uVNQLJicQnS",
+      "tool": "Read",
+      "source": "reviews/2026-10-31-positive-gram-variational/target-freeze-v0.json",
+      "credited": {
+        "reviews/2026-10-31-positive-gram-variational/target-freeze-v0.json": [
+          [
+            1,
+            7
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01PuDFPtj43MdEgV6HTxsaTR",
+      "tool": "Read",
+      "source": "reviews/2026-10-31-positive-gram-variational/check-finite-score-v0.py",
+      "credited": {
+        "reviews/2026-10-31-positive-gram-variational/check-finite-score-v0.py": [
+          [
+            1,
+            77
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_0152iE1tmdzCfavqfrXNpPBx",
+      "tool": "Read",
+      "source": "reviews/2026-10-31-positive-gram-variational/finite-score-screen-v0.json",
+      "credited": {
+        "reviews/2026-10-31-positive-gram-variational/finite-score-screen-v0.json": [
+          [
+            1,
+            898
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_013T6BriXErH8j3c5xvKAQ84",
+      "tool": "Read",
+      "source": "reviews/2026-10-31-positive-gram-variational/screen-note-v0.md",
+      "credited": {
+        "reviews/2026-10-31-positive-gram-variational/screen-note-v0.md": [
+          [
+            1,
+            37
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01KiXaN5Eq58yhAdJotK1Neo",
+      "tool": "Read",
+      "source": "reviews/2026-10-31-positive-gram-variational/statement-source-crosswalk-v0.md",
+      "credited": {
+        "reviews/2026-10-31-positive-gram-variational/statement-source-crosswalk-v0.md": [
+          [
+            1,
+            45
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_019et7qivFfQCzox9vR76xXu",
+      "tool": "Read",
+      "source": "reviews/2026-10-31-positive-gram-variational/statement-prompt-v0.md",
+      "credited": {
+        "reviews/2026-10-31-positive-gram-variational/statement-prompt-v0.md": [
+          [
+            1,
+            33
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_017XBmFhTLRyYdmxPPgsy3xD",
+      "tool": "Read",
+      "source": "reviews/2026-10-31-upper-residual-exponential/mathlib-young-type-v1.txt",
+      "credited": {
+        "reviews/2026-10-31-upper-residual-exponential/mathlib-young-type-v1.txt": [
+          [
+            1,
+            16
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01V1kgfo7QDBUxrRqL56SNSq",
+      "tool": "Read",
+      "source": "reviews/2026-10-31-upper-residual-exponential/mathlib-young-custody-v1.json",
+      "credited": {
+        "reviews/2026-10-31-upper-residual-exponential/mathlib-young-custody-v1.json": [
+          [
+            1,
+            8
+          ]
+        ]
+      },
+      "stream": "attempt"
+    }
+  ],
+  "diagnostics": []
+}
