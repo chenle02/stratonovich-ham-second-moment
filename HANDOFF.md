@@ -1,38 +1,36 @@
-Last updated: 2026-10-31 04:31 UTC (Codex)
+Last updated: 2026-10-31 04:46 UTC (Codex)
 
-Full original upper/sharp goal ACTIVE. Coherent compact-mean/full-phase
-statement frozen; original independent review live at last observation.
+Original full upper/sharp goal ACTIVE. Compact-family ground target frozen
+to retain full positive tilt class; original v2 review live at last poll.
 
 ## ⏭ Next session: where to stand and what to do
 
 Stand in this repository root, then enter ACTIVE isolated worktree:
 ${HOME}/.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave
 branch research/fixed-mask-young-20261031, committed HEAD
- a97b9008249190a1baca45be7cd0b042f278ec68.
-Its Progress.md is the current authority for this candidate wave; root
-retains prior accepted mathematics/operational handoffs, not integration.
+715b6b2cd77a49d542e688c5d957244dd937b16d.
+Its Progress.md is the current candidate-wave authority; root retains
+prior accepted math/operational handoffs, not integration.
 
-FIRST inspect/poll EXISTING compact-mean G1-G5 STATEMENT review original
-exec11790, native directory
-${HOME}/.local/state/Le-AI-Lab/stratonovich-compact-mean-ground-statement-v1.
+FIRST inspect/poll EXISTING COMPACT-FAMILY statement v2 original exec71921:
+${HOME}/.local/state/Le-AI-Lab/stratonovich-compact-mean-ground-statement-v2.
 Last actual poll returned RUNNING; inspect receipt/report for completion.
-Do NOT relaunch merely because an observation expires. This is sourcea97b900,
-17TEXTS+6FULLprimaryimages, HIGHthreshold unchanged. Validate terminal model,
-bindings/readcoverage/archives, adjudicate findings, then ONLY AFTER accepted
-statement gate begin the self-contained G1-G5 proof and its full review.
+Never relaunch solely on timeout. This is source715b6b2,25TEXTS+6FULLimages,
+HIGHthreshold unchanged. Validate original terminal bindings/model/read
+coverage/native archive and adjudicate findings BEFORE proof.
 
-Exact target in reviews/2026-10-31-compact-mean-ground/target-v1.md includes:
-common-negative-trial/ground-family, actual global-E and FULL-F complement,
-constant-forcing projection/positive entrance/test average, and a FIXED
-ORIGINAL q Gaussian profile common trial obtained by a wider mask/trial.
-The last part preserves q/raw cost and full Rayleigh score; it must not be
-replaced by changing q to force binding. No ground/complement theorem yet.
+Use target-v2.md F1-F4, NOT a scalar-only long proof. The original positive
+tilt class is GENERAL Psi(t,x), so actual compact means form an indexed
+family V_sigma=m_R int Ka Gamma*Psi. The same original Psi/raw cost stays
+fixed while a larger mask/common trial supplies negativity. The strengthened
+potential-family target is needed to retain the full known class.
+Scalar v1 original11790 is TERMINAL accepted12HIGH218.396s,23bindings/
+38files verified, special-case STATEMENT ONLY. No scalar long proof began.
+All old Young reviewers91665/29576/98785 also TERMINAL. Accepted Young and
+raw masked average5969da5 remain retained. No new ground theorem yet.
 
-The Young/actual masked average interface is accepted scientific8ad5094/
-adoption5969da5. Its v1 MEDIUM rejected disposition is retained; all old
-Young reviewers91665/29576/98785 TERMINAL, no reruns. Original full sharp
-source goal ACTIVE. <HUB> remains No route to host, last verified remote
-604c60f; no push/parity/integration claimed. Preserve both pending lines.
+<HUB> still No route to host; last verified remote604c60f. No push,
+fresh parity or root-master integration. Preserve both pending lines.
 
 ## Pre-flight checks
 
@@ -88,31 +86,41 @@ source goal ACTIVE. <HUB> remains No route to host, last verified remote
     can beat L^-2 kinetic when alpha<2; this is a PROPOSED exact proof
     route and consistency test, not yet accepted. Earlier actual-trial-v0
     changed q with scale and is not evidence for the stronger quantifier.
+12. SCALAR ground statement11790 is now TERMINAL PASS_WITH_NOTES/HIGH,
+    12checks218.396s,23bindings/38nativefiles verified; seven notes adjudicated.
+    Scope audit of OWN general-positive-consumer.md (1) found bU-only target
+    insufficient as the sole full-class consumer, not mathematically false.
+    No long scalar proof began. Target-v2 strengthens before proof to compact
+    families/actual ALLpositivePsi means and unchanged raw variance/cost.
+13. New COMPACT-FAMILY statement71921 is the ONLY live reviewer at last poll,
+    source715b6b2,25texts+6images. All31livehashes unchanged. Original exec/
+    native dir recorded; no rerun after observation timeout. Old scalar
+    report/receipt, exact d1 class/cone METHOD and scope fences are inputs.
 
 ## Concrete deliverables for the next session
 
-- Resolve EXISTING statement11790, preserving its original result. Verify
-  model/coverage/bindings/native archive, adjudicate every finding, and
-  repair frozen statements transparently if needed. No long proof before pass.
-- After pass prove G1-G5 with actual constant forcing, spectral-zero handling,
-  physical E/F flow identification and ORIGINAL fixed-q/raw-cost common trial.
-  Get a NEW full independent proof gate before adoption.
-- Consider worthwhile typed finite block/projection consumers with local
-  Lean only after statement stabilization;71facts/18seams/L0 unchanged.
-- Then actual growing-block errors/products/raw shifted Gaussian event-cost,
-  all-alpha variational lower, sharp upper and source-energy dictionary.
-- Restore remote push/sync/integration when reachable, after serial refs/
-  ownership audit; preserve all pending source revisions and handoffs.
+- Resolve EXISTING compact-FAMILY statement71921 and adjudicate/validate
+  its original result. Scalar statement11790 is already terminal; no rerun.
+- AFTER the strengthened statement passes, write the complete F1-F4 proof:
+  uniform spectra/fractional globalE, fullF constant-forcing projection and
+  complement, actual general positive Psi compact-family/common trial.
+  Get a NEW FULL proof gate before adoption. Do not settle for product tilts.
+- Consider worthwhile typed finite block/projection consumers after statement
+  stabilization, using authorized local Lean only;71facts/18seams/L0 unchanged.
+- Then actual growing-block error/product/raw shifted Gaussian event-cost,
+  all-alpha variational lower; sharp upper/source dictionary remain open.
+- Restore remote sync/integration after serial refs/ownership audit; preserve
+  all pending source revisions and root operational handoffs.
 
 ## Success criteria for the immediate next step
 
-The exact G1-G5 STATEMENT review passes at requested confidence, with all
-findings adjudicated and source/parameter/model matches retained. Its common
-trial must work for FIXED original q by choosing a finite larger mask/test,
-so the raw Gaussian cost and tested Rayleigh score are preserved. Full-F
-projection must retain constants; L2 spectral gap alone does not give the
-fractional/global-E/full-F norm bound. No pL1/weighted-tail/d1-ODE hypothesis
-may be assumed silently. Only after the statement gate develop the proof.
+The strengthened FAMILY statement gate accepts F1-F4 at requested confidence,
+with all findings/source/model matches adjudicated. Preserve the ENTIRE known
+positive Psi(t,x) class, not just f(t)q(x). Actual h_sigma integrates the
+whole time test: h_0 need not vanish even when Psi(0,.)=0. Common wide trial
+must hold for every index and keep original Psi/raw cost fixed. Ground
+constant forcing/fractional/fullF norm bounds remain actual proof obligations;
+statement acceptance and finite matrices are not the theorem.
 
 ## Anti-success criteria
 
@@ -1008,26 +1016,44 @@ last observation;23live hashes unchanged. Owned external launch metadata
 preserved below. No new analytic proof or ground theorem adopted. All Young
 and original Gupper/d1 results retained; no new Lean count or main constant.
 
+2026-10-31 scalar gate close and scope strengthening: original11790 accepted
+12HIGH218.396s,17texts+6fullimages,no requiredrepairs. All23bindings and
+38nativearchive members verified, rootcanonical coverage/receipt checks pass.
+Seven notes: rate/scale L collision,4.13 beside4.12, nonsharppoly3, exact
+432differential+108initial checks, productbump not positive plateau on ALLB1,
+Gamma charged-ball argument, downstream cone outside first packet. Statement
+ONLY; no ground proof adopted. Source audit of general-positive-consumer.md
+revealed general positive Psi class beyond bU, so no long scalar-only proof
+was begun. Valid v1 preserved as special case, not refuted or promoted.
+
+Frozen strengthened target715b6b2 F1-F4: compact V_sigma families on EXACT
+acceptedF, common negative trial, uniform ground/H2/gap, actualglobalE and
+fullF complement/projection, ALLpositive original Psi CM mean/q_avg/rawvariance
+and common large-mask trial without changingPsi/cost. Exact old d1 class/
+indexed-cone METHOD supplied; no old theorem scope promoted. 25texts+6images,
+original native v2 exec71921 confirmed RUNNING at last poll,31livehashes
+unchanged; no verdict/proofadoption. No new Lean/count/main constant. Owned
+external launch metadata preserved below. All work still local/isolated.
+
 ## Repo & git state at handoff
 
 Root master before this HANDOFF-only successor:
-54dd251155d2ad270d15a624c7618ec53450c5c0, pending0accd3d and operational handoffs.
+6642a346345c89f0a52237e662c93b6a0a602151, pending older0accd3d and operational handoffs.
 Last verified remote604c60f2f8dc6d1a7635b9af224bbb6e5751d379; <HUB>
-No route to host. No fresh parity, push/sync or integration claimed.
+No route to host. No fresh parity, push/sync or master integration.
 
 ACTIVE isolated research/fixed-mask-young-20261031 HEAD
- a97b9008249190a1baca45be7cd0b042f278ec68, worktree
+715b6b2cd77a49d542e688c5d957244dd937b16d, worktree
 ${HOME}/.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave.
-Accepted Young adoption5969da5 is an ancestor; new ground target only FROZEN.
-Owned untracked path at capture:
-reviews/2026-10-31-compact-mean-ground/statement-launch-v1.json.
-STATEMENT original11790 returned RUNNING at last poll, native directory
-${HOME}/.local/state/Le-AI-Lab/stratonovich-compact-mean-ground-statement-v1.
-Read its terminal receipt if now complete; no duplicate launch. Old Young
-processes91665/29576/98785 TERMINAL; no live Lean job or foreign WIP.
-Wiki ../SPDEs-wiki/content/projects/stratonovich-ham-second-moment.md exists,
-unchanged; root HANDOFF remains loader entry point. No whole-paper/novelty/
-human/circulation clearance.
+Accepted Young5969da5 is an ancestor; ground FAMILY target only frozen.
+Owned untracked artifact at capture:
+reviews/2026-10-31-compact-mean-ground/statement-launch-v2.json.
+ONLY live review at last poll: original71921, native directory
+${HOME}/.local/state/Le-AI-Lab/stratonovich-compact-mean-ground-statement-v2.
+Scalar11790 and Young91665/29576/98785 TERMINAL; no new Lean job/foreignWIP.
+Root HANDOFF remains loader entry point. Wiki
+../SPDEs-wiki/content/projects/stratonovich-ham-second-moment.md exists,
+unchanged; no whole-paper/human/novelty/circulation clearance.
 
 ## Operating notes
 
@@ -1052,6 +1078,12 @@ Teschl10.13 requires an existing ground eigenvalue; the common trial and
 essential threshold0 must establish this first. Old d1 global-E calculation
 is only a method comparator. Do not relaunch new statement11790 after an
 observation timeout; use the original process/authoritative terminal files.
+The next proof uses target-v2 compact families; old target-v1 scalar bU
+is a valid special case only. The actual positive CM mean h_sigma is an
+index family from ALLPsi, not Psi(sigma,.) or a coupling evaluated at0.
+Differentiate the compact time test after zero extension to establish mean
+smoothness, not a nonintegrable derivative of |.|^-a. No nonlinear raw
+shift/event identity is inferred from the linear mean formula alone.
 
 ## Risks to monitor
 
@@ -1076,3 +1108,8 @@ allowed, altering the original Gaussian tilt to make a gap is not a proof
 of the stronger G5 assertion. No all-strength binding for one fixed compact
 potential is claimed. Diagnostic quadrature is not a rigorous error or
 eigenvalue certificate; finite matrices are not continuum spectral proofs.
+Scalar-only scope would lose the already known nonseparable positive tilt
+class. This was caught BEFORE long proof; preserve target-v2 family/cost
+quantifiers. Actual mean positivity at index0 comes from the whole time
+integral, not a nonzero initial time-test value. No hypothetical scalar
+success can be stamped as the full-class lower goal.
