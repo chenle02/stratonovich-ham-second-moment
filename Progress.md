@@ -6,6 +6,32 @@
 
 ## Current state
 
+- **Accepted frontier (2026-10-31):** the correct-scale full upper remains
+  reviewed and unchanged. The original all-dimensional raw point lower,
+  unmasked Rayleigh limit and positive finite intrinsic score scaling are
+  accepted at c426e5a and94d85ca.
+- **New accepted occupation bridge:** scientific249e2c4,18checks/HIGH366.614s,
+  all18input bindings/33native files verified. ALL original Gamma/d1/2/3,
+  alpha>1 and FULL real H1/strong-H1 occupation class; physical covariance
+  extension and energy comparison give original Q2>=2^m Omega F_a(E_star^O),
+  Omega>0. E_star^O has the explicit OWN finite-energy half-gradient domain.
+- **Immediate next:** independently statement-review refreshed all-alpha
+  scalar target-v2 in reviews/2026-10-30-all-alpha-damped-ratio/, preserving
+  old V/kernel evidence and exact guards, BEFORE long proof. Omega>1 in the
+  full original range is still unreviewed. No source-energy identity from it.
+- **Still open:** intended author-energy/domain/normalization dictionary,
+  matching sharp upper constant and conditional exact limit. Original full
+  goal ACTIVE; no whole-paper/circulation/wiki/master integration clearance.
+- **Lean:**71finitefacts18local seams/L0 PROPOSED; one OLD entropy application
+  checked in the new full gate. No new kernel run/module/package/companion.
+- **Git:** isolated research branch; origin/<HUB> NoRoute. Last verified
+  remote604c60f, no fresh parity/push/sync/master merge. Preserve both lines.
+
+## Historical checkpoint summaries
+
+The following bullets retain prior checkpoint status and next steps; they
+are historical. Use the current frontier above and dated entries below.
+
 - **Latest actualdimensional methodtest:** physicallyMASKED SAME-W L²HS(E_s,E_s) firstdriver reconstruction in d2/3 ruledout forEVERYs byactualcompactGaussianmean/FourierUV/covariance proof, accepted8groups/HIGH at0743b2d (407.368seconds,26texts+2images). Not an unmasked/law-only/moment/solution/Gupper no-go. Onefullmatrixtype+2OLDscalarNEWapplications checked. NEXT: freeze/falsify actualuniformspectralballgrowth and auxiliarymaskvariance domination for a larger driverclass; Schatten/flow claims remainUNPROVED. Originalall-dimensional lower/sharpupper/source issues open.
 - **Latest GLOBALd1lower:** Omega>1 andexplicitgainV(a/2)^(-1/k) ORIGINALpointlower(18) forALLadmissibled1Riesz/whitea/alpha/amplitudes, withown E_star^O, accepted7groups/HIGH atee188ab (447.816seconds,31texts+2images). EntireactualGamma/kernel/rationalproof and4finitecompleteQ/D/Vtype/applications checked. This closes d1LOWERcomparison only; source/domain/label/intendednormalization, sharpupper andd2d3 remainOPEN. MaskedHS extension nowrefuted at0743b2d; NEXTactualspectral/mask/operatornorm bounds preservingoriginalclass.
 - **Latest actual damped lower result:** temporalBeta/legalX/staticlower/dampedenergy GENERALOmega pointcomparison and whitealpha1,a1/2 directpoint theorem(16), exactzeta=(2418683125/2415919104)^(1/8)>1, accepted7groups/HIGH at8883160 (295.426seconds,28texts+2images). OwnE_star^O explicitmeaningfuldomain; source/domain/label matching and normalization unadopted. Threefinite scalar applications checked. GlobalOmega nowclosed atee188ab; NEXToriginalhigher-dimensional/sharpupper work. Sharpupper/originald2d3/exactlimit/fullgoal remainOPEN.
@@ -6446,3 +6472,28 @@ module/package now. GlobalOmega.rational_lt_one remains exact reuse at
 x=a/2 after source/type/formula audit. Next independent statement gate
 before long scalar proof. Original all-Gamma sharp/source/fullgoal ACTIVE;
 Omega>1/point consequence stillUNREVIEWED, no source-domain identity.
+
+### All-dimensional static/full occupation point bridge accepted — 2026-10-31 UTC
+
+Original51631 TERMINAL,full18checks PASS/PASS_WITH_NOTES/HIGH366.614s,
+no requiredrepairs. Canonical report/pass/correspondence/readcoverage pass;
+18live/frozen/Git/native input bindings and all33native archive members
+verified. No recovery/restart/waiver. Adopt notes/all-dimensional-static-
+occupation-bridge.md: ALL original Gamma/dimensions/alpha>1, actual smooth
+controls, physical FULL-H1 four-linear covariance/density and FULL strong-H1
+occupation energy, original Q2>=2^m Omega F_a(E_star^O), Omega>0.
+
+Nine optional notes clarified: section pointer; nonconsumed numerical gap;
+Borel/null versions; pairing symmetry; origin ball; b measurability/strong
+representative; C4 symbol; no energy/kernel numerical evaluation; static
+calibration only exponent/factor. No new estimate/scope; frozen proof/report
+unchanged. One OLD entropy complete type/actual guards pass, no new kernel/
+count/module.71facts18seams/L0 unchanged. Current-state synopsis refreshed;
+older summary bullets preserved explicitly as history, no dropped record.
+
+Next all-alpha scalar target-v2 is FROZEN UNREVIEWED, not Omega>1 proof.
+Preserve exact V/old kernel, get statement gate, then proof/meaningful local
+finite seams/full application review. Intended source-domain/normalization,
+sharpupper/exactlimit/fullgoal remainOPEN. No contact/Skorohod/HPC/sourcefix/
+TeX/PDF/wiki/publication/privatecompanion. NoRoute/localisolated/no fresh
+parity/masterintegration. Full original goalACTIVE, not complete/blocked.

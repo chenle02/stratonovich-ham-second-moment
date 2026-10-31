@@ -1,0 +1,141 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "reviews/2026-10-31-all-dimensional-static-occupation/target-v3.md lines 1-113 (complete)",
+    "reviews/2026-10-31-all-dimensional-static-occupation/check-diagnostics-v1.py lines 1-136 (complete)",
+    "reviews/2026-10-31-all-dimensional-static-occupation/diagnostics-v1.json lines 1-568 (complete)",
+    "reviews/2026-10-31-all-dimensional-static-occupation/falsification-v1.md lines 1-59 (complete)",
+    "reviews/2026-10-31-all-dimensional-static-occupation/source-crosswalk-v1.md lines 1-39 (complete)",
+    "reviews/2026-10-31-all-dimensional-static-occupation/lean-reuse-v1.json lines 1-20 (complete)",
+    "reviews/2026-10-31-all-dimensional-static-occupation/worker-honesty-v1.md lines 1-31 (complete)",
+    "notes/unmasked-variational-lower.md lines 1-378 (complete)",
+    "reviews/2026-10-31-unmasked-variational-target/scientific-adjudication-v1.md lines 1-46 (complete)",
+    "notes/damped-lower-endpoint-bridge.md lines 1-347 (complete)",
+    "reviews/2026-10-30-damped-lower-bridge/scientific-adjudication-v1.md lines 1-60 (complete)",
+    "lean-progress/local-checks/raw-value-ceiling-v1/StratonovichHAMAudit/RawValueCeiling.lean lines 1-27 (complete)",
+    "lean-progress/local-checks/raw-value-ceiling-v1/types-and-axioms.txt lines 1-58 (complete)",
+    "notes/all-dimensional-static-occupation-bridge.md lines 1-394 (complete)",
+    "reviews/2026-10-31-all-dimensional-static-occupation/statement-adjudication-v1.md lines 1-48 (complete)",
+    "reviews/2026-10-31-all-dimensional-static-occupation/scientific-worker-honesty-v1.md lines 1-36 (complete)",
+    "reviews/2026-10-31-all-dimensional-static-occupation/upper-dependency-v1.txt lines 1-74 (complete; excerpt of canonical TeX lines 161-234)",
+    "reviews/2026-10-31-all-dimensional-static-occupation/upper-dependency-custody-v1.json lines 1-8 (complete)",
+    ".review/required-sources.json lines 1-56 (read-plan, complete; no read credit)"
+  ],
+  "checks": [
+    {
+      "claim": "C1: full original H:homog class, all d=1,2,3, actual amplitude, alpha>1 and white cases, threshold, and derived parameters; same Q2, S_1 and canonical solution; no p1/source/Jensen/sharp-upper identification.",
+      "verdict": "PASS",
+      "reason": "Lines 10-17 keep the original class. Rechecked: a>0 and alpha+a<2 give alpha<2-a<2; k=3-alpha>1; q=k+1>2; m=q/k>1; D=q-2a=4-alpha-2a>2-a>0. These precede every division and real power. Equation (2) matches accepted input I (3)-(4) and Section 6 at c=1, with kappa=(4-alpha-a)/(3-alpha). S_1 stays auxiliary, and the disclaimers at lines 49-51, 351-353 and 382-394 are consistent."
+    },
+    {
+      "claim": "C2: physical two-point integral on a sigma-finite measure, null-set and representative independence, a.e. convergence under shifts for singular Gamma, and no 0-times-infinity convolution.",
+      "verdict": "PASS",
+      "reason": "nu=dx tensor Gamma is sigma-finite because Gamma is Radon. Tonelli gives nu{x in N}=Gamma-integral of Leb(N)=0 when N is a Borel null set. It also gives nu{x-y in N}=0 because Leb(N+y)=0 for each y. This covers delta and invariant-direction Gamma, and it passes a.e. convergence to both positions. Every rough pairing, including J(g) and the level-set lower bound, stays in form (1). U_z is used only for smooth compact z."
+    },
+    {
+      "claim": "C3: Section 2 gives bounded U_z and positive finite lambda_z(c) for all c>0, Rayleigh Lipschitz and floor bounds, actual cutoffs for n>=4, k_n limits, and rate and raw-cost limits after each fixed-test lower bound.",
+      "verdict": "PASS",
+      "reason": "Psi=c f z/k_f(s0) is in C_pos and has h_(s0)=cU_z, so input I (11)-(12) gives boundedness and positivity. The square is |c-c'| ||U_z||_inf Lipschitz, and U_z>=0 gives monotonicity and the floor. f_n is supported in [1/(2n),1-1/(2n)], is zero at n=1 and nonzero at n>=4, and increases to f_a because chi is nonincreasing. Monotone convergence and (3) give k_n(s) increasing to 1 at every s, including endpoints. Since |s-t|^-a>=1, int f_4<=k_n<=1. h_s=k_n(s)U_z gives I_(Psi_n)=int lambda_z(k_n(s))ds, which converges to lambda_z(1) by domination. v_(Psi_n)=B(z,z)int f_n k_n converges to M_a B(z,z) because f_n k_n increases to f_a. B(z,z) is finite and positive because the autocorrelation is continuous and compact, and scaling makes Gamma charge every ball centered at 0. Inequality (6) is a limit of fixed-test numerical inequalities, and no monotone score difference is assumed."
+    },
+    {
+      "claim": "C3 scalar input: only the exact equilibrium identity and mass are imported from the damped bridge.",
+      "verdict": "PASS",
+      "reason": "Line 55 and (3) match damped Section 2 with r=(1-a)/2, 1-r=(1+a)/2. The identity's proof depends only on 0<a<1. The X-control paragraph (damped lines 107-120) is not imported, and K_star facts are re-derived in Section 5."
+    },
+    {
+      "claim": "C4: Section 3 positive A,b, Radon occupation scaling, feasible parameters, radicand and cost, scalar maximum constants, and uniform R0 without a GN or H1 premise.",
+      "verdict": "PASS",
+      "reason": "Radon pushforward gives ell^(alpha-d). With ell^(2d) from the densities and ell^(-d) from dx, A_sp(U_ell g)=ell^alpha A; also b scales by ell^2. Choices (8) give radicand L^2. Cost is theta^2 ell^alpha A=(1+u)^2 L^q/(R u^(alpha/2)), so C is correct. The maximum is at L^k=1/(qC) with value (k/q)(qC)^(-1/k)=k[1/(q^q C)]^(1/k). With 1+u=4/q, 1/C=R alpha^(alpha/2)q^(q/2)/(8M_a), so 1/(q^q C)=R alpha^(alpha/2)/(8M_a q^(q/2)), which confirms (10). Inverting gives R<=8M_a q^(q/2)(S_1/k)^k/alpha^(alpha/2). Signed real g is allowed because z uses g^2. White-point check by hand: R=0.56419, M_a=0.38138 give 0.37729, matching the JSON."
+    },
+    {
+      "claim": "C4 noncircularity: prior S_1 finiteness is independent of the new spatial bound at the accepted dependency boundary.",
+      "verdict": "PASS",
+      "reason": "Input I gets finiteness from T:full-upper through C_up (lines 63-78, 321-327). The excerpt (TeX 161-234) says the full upper uses construction and interval estimates, and that no disputed first-moment constant or auxiliary static coefficient theorem enters. R0 is derived after S_1 and is never fed back. This was audited at the excerpt boundary only, as custody specifies; the full upper proof was not re-reviewed."
+    },
+    {
+      "claim": "C5: smooth signed covariance positivity and CS in the exact Fourier convention; bound (11)-(13) for N(f).",
+      "verdict": "PASS",
+      "reason": "With C(y)=int Q(x)Q(x-y)dx, the integral int exp(i xi.y)C(y)dy equals Qhat(xi) times conj Qhat(xi), with no 2pi factor, matching convention (1) and input I (6). Rapid decay and tempered mu give finiteness. Scaling gives A_sp(f)=||f||^4 A_sp(f/||f||)<=R0||f||^(4-alpha)||grad f||^alpha=R0 N(f)^4. N<=||f||_H1 is a weighted geometric mean with exponents summing to 1. Evenness gives symmetry for CS."
+    },
+    {
+      "claim": "C5: H1 density and separability, and Fatou cross-square bound through squared signed smooth approximants.",
+      "verdict": "PASS",
+      "reason": "Cutoff and mollification are proved in every dimension, with no d1 split. The squared approximants f_n^2 and h_n^2 are already nonnegative smooth tests, so (13) applies directly with no modulus step. Convergence holds nu-a.e. at both positions, and Fatou plus H1 continuity of N gives (14) with the same R0. No equality or continuity is inferred from Fatou alone."
+    },
+    {
+      "claim": "C5: absolute signed four-linear bound, continuity, representative independence, and physical PSD/CS by smooth limits.",
+      "verdict": "PASS",
+      "reason": "CS on positive nu with the grouping f1(x)f3(x-y), f2(x)f4(x-y) gives sqrt(B(f1^2,f3^2)B(f2^2,f4^2))<=R0 product N(f_j). This is an actual absolutely convergent integral. Multilinearity and telescoping give joint continuity of T, so B(f^2,h^2)=T(f,f,h,h) is continuous. PSD for f_i^2 and (16) pass to H1 from actual smooth squares. No abstract completion, global L-infinity embedding, or d1 density split occurs."
+    },
+    {
+      "claim": "C5: smooth/full ratio equality, normalized approximation, positivity of A and b, exact energy maximum, and F_0 relation.",
+      "verdict": "PASS",
+      "reason": "R_sp=R0 follows from (14) and inclusion. Normalized approximants converge in H1 and b>0, so ratios converge. A_sp(f)>=c^4 B(1_E,1_E)>0 by the level-set argument, a nonnegative lower bound that does not need 1_E in H1. ell^(2-alpha)=alpha A/b gives ((2-alpha)/2)alpha^(alpha/(2-alpha))R^(2/(2-alpha)), so (17) is correct. Then R alpha^(alpha/2)=(2E/(2-alpha))^((2-alpha)/2) gives (18) exactly. White check: E=0.159155 gives F_0=0.2330, and times M_a^(-1/2)=1.6193 gives 0.3773."
+    },
+    {
+      "claim": "C6: K_star positivity and integrability, exact row maximum, D scalar, diagonal-null convention.",
+      "verdict": "PASS",
+      "reason": "The bound K_star<=|u|^-a follows from dropping only the quadratic term and using the Gamma integral. K_star is decreasing on u>0 and infinite only on the time diagonal, a product-null set. The row is Phi(s)+Phi(1-s)<=2Phi(1/2) by concavity, with equality at 1/2. D>0 is used only as a scalar."
+    },
+    {
+      "claim": "C6: full O class, Bochner approximants, joint representatives, measurable physical pairing, null-time independence, Tonelli.",
+      "verdict": "PASS",
+      "reason": "Normalization and T<infinity give L2(time;H1). Simple approximants with a summable subsequence give a spacetime limit agreeing with g_s for a.e. s. Composing the strongly measurable pair (g_s,g_t) with the continuous map from (15) gives measurability in (s,t), and this agrees a.e. with the actual double integral. Null times give a product-null set. All integrands are nonnegative. The class is not restricted to smooth or compact fields."
+    },
+    {
+      "claim": "C6: covariance CS, Schur, and concavity bound; positive finite own energy; explicit ratio not claimed optimal.",
+      "verdict": "PASS",
+      "reason": "For unit g, N(g)^2=b^(alpha/4), so B<=R_sp F(s)F(t). AM-GM and row R_star give J<=R_star R_sp int F^2, and Jensen on (0,1) with alpha/2<1 gives int F^2<=T^(alpha/2). The scalar maximum with P=R_star R_sp equals R_star^(2/(2-alpha))E_sp. The constant-in-time dilated bump gives J0 ell^alpha A-ell^2 b/2>0 for small ell, using alpha<2. Line 326 explicitly disclaims optimality and attainment."
+    },
+    {
+      "claim": "C7: F_0 homogeneity and monotonicity, point lower, exact Delta/F_a/Omega factors, and strict_log_gap guards and type.",
+      "verdict": "PASS",
+      "reason": "F_0 has degree (2-alpha)/(2k), so (23) gives F_0(E_star^O)<=R_star^(1/k)F_0(E_sp), and (24) follows. Omega F_a cancels exp(Delta/k) exactly, giving (26). The Lean type at lines 12-14 and in types-and-axioms has guards 0<a and 0<q-2*a with the same Delta expression, and standard axioms. Actual q=4-alpha and D>0 discharge them. Only Omega>0 is claimed. No integer, white-pi, d1-Omega or all-alpha result is promoted."
+    },
+    {
+      "claim": "C8: all ten statement notes addressed.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Notes 1-7, 9 and 10 are addressed in the proof note (lines 11-17, 87-96, 139-150, 19-31, 170-185, 204, 229-235, 326, 353, 373-380). Note 8 is addressed only in scientific-worker-honesty-v1.md, and the proof does not use that number. I confirmed from the JSON that the largest raw-cost difference is 7.50069e-7 at a=.25, n=16. Frozen falsification-v1.md still prints 7.51e-7, as the adjudication permits."
+    },
+    {
+      "claim": "C8: diagnostic scope limits are stated accurately.",
+      "verdict": "PASS",
+      "reason": "The script and JSON confirm these limits. Gaussians are H1 and not compact. Compact bump inputs are double-precision strings. Negative ratios are closed-form and not evaluator-propagated. Continuity covers only d1/d2 same-family square differences, with no d3 or off-diagonal four-linear case and no amplitude sweep. There is no error certificate, eigenvalue, SPDE moment or Lean kernel run. Quoted temporal costs and M_a values match the JSON. The proof does not use the diagnostics as premises."
+    },
+    {
+      "claim": "C9: all proof steps beyond listed claims; no hidden noncompact ground state, covariance monotonicity, rough SPDE, or source/time limit exchange.",
+      "verdict": "PASS",
+      "reason": "A line-by-line review found no mathematical gap. Only Rayleigh bottoms are used. The only monotonicity is in c, f_n and k_n, none of it score or covariance monotonicity. K_star<=|u|^-a is used only for local integrability. All SPDE content enters through accepted S_1 and Q2. Later limits are numerical sup/limit operations on real inequalities, independent of time T."
+    },
+    {
+      "claim": "C10: honest boundary and no out-of-scope claims.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Lines 382-394 keep static, Jensen, Skorohod, source-domain, sharp-upper and full-goal items open and claim no kernel, count, module, publication or whole-paper certificate. Line 366 relies on byte bindings recorded in lean-reuse-v1.json, which this reviewer did not recompute. Line 66 has a wrong section pointer, recorded as a minor finding."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Line 66 says the strict_log_gap B5 application is in Section7. The application is in Section 6 (lines 343-344), and line 366 points correctly. This is a cross-reference slip with no mathematical effect.",
+      "Statement note 8 (7.50069e-7) does not appear in the proof note, only in scientific-worker-honesty-v1.md. Optional: state in the proof note that the figure is not consumed.",
+      "Lines 27-31: with a merely Lebesgue-measurable h, h(x-y) is measurable only for the nu-completion. Optional: say explicitly to choose Borel representatives or a Borel null superset. The null-set argument given already covers this.",
+      "Line 179: covariance CS through the quadratic polynomial uses B(Q,P)=B(P,Q), which comes from evenness of Gamma. Optional: state this explicitly.",
+      "Lines 109-110: the ball of positive mass must be centered at 0. This is available since R^d is the union of the balls B(0,n). Optional wording.",
+      "Lines 284-289: measurability of s->b(g_s) and modification on the null set where g is not separably valued are implicit. Both are routine for strong measurability. Optional wording.",
+      "Symbol overloads, all locally disambiguated but open to clearer naming: T (time horizon, four-linear form, integrated energy); U (U_z potential, U_ell dilation); c0 (generic, then int f_4); u (alpha/q, time lag); z (test, pushforward variable, F_0 argument); k (3-alpha, k_n, k_f).",
+      "Lines 373-380 do not state that K_star, R_star, Omega and E_star^O were never numerically evaluated. The script contains no such evaluation. Optional addition to the scope statement.",
+      "Lines 382-383: the 'static scale as a tends to 0' claim concerns only kappa and the factor 2^m. No a->0 limit of M_a, R_star, Omega or the energies is proved. Optional: say this explicitly."
+    ],
+    "required_repairs": []
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is an AI hand review, not human verification, novelty audit, whole-paper certificate, or formal proof. No code, kernel or numerical check was executed by this reviewer. Algebra was rechecked by hand, with spot comparisons to the frozen JSON.",
+    "SHA-256 and prior-byte bindings in lean-reuse-v1.json and upper-dependency-custody-v1.json, and the source revision 249e2c40e9df17cd5577295f5e51f9274b1f2eb2, were not recomputed. The referenced prior frozen packets and the canonical TeX beyond the excerpt are outside this packet.",
+    "Accepted inputs were trusted only at their exact scopes: unmasked-variational-lower Sections 1-6, damped bridge Section 2 scalar identity and mass, and old strict_log_gap. Their own dependencies, including compact-mean-ground-family, raw-block-event-lower and T:full-upper, were not recertified.",
+    "The noncircularity audit is limited to the supplied TeX lines 161-234 and input I's statements about its upper input. Internal contents of the upper proof were not inspected."
+  ]
+}

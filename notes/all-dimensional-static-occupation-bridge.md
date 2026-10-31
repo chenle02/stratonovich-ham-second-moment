@@ -1,9 +1,10 @@
 # Static controls and full occupation energy in every original dimension
 
-COMPLETE PROOF CANDIDATE, not adopted before independent FULL review.
-B1-B5 statement gate passed at source20d8eda,9checks/HIGH394.808seconds,
-no required repairs. Its ten notes are proof obligations, not proof clearance.
-Full original sharp/source goal stays ACTIVE.
+ACCEPTED at the scoped FULL analytic/source/type/application gate:
+Opus5.5/HIGH,18checks PASS/PASS_WITH_NOTES,366.614seconds, no required
+repairs, scientific source249e2c4. Nine optional clarifications are recorded
+in reviews/2026-10-31-all-dimensional-static-occupation/scientific-adjudication-v1.md.
+Frozen proof/report unchanged. Original full sharp/source goal stays ACTIVE.
 
 ## 1. Exact model, physical pairings and named inputs
 
@@ -23,8 +24,9 @@ Define the positive sigma-finite two-point measure
 
 Initially (1) is an extended nonnegative integral when f,h>=0. For signed
 inputs it is used ONLY after absolute convergence is proved. It is NOT
-multiplication by a possibly infinite a.e. convolution. Choose finite
-Lebesgue representatives. If N is Lebesgue null, the sets x in N and
+multiplication by a possibly infinite a.e. convolution. Choose finite BOREL representatives of Lebesgue classes. For an arbitrary
+Lebesgue version, use a Borel null superset for the following argument;
+its shifted version is then measurable in the nu-completion. If N is Lebesgue null, the sets x in N and
 x-y in N have nu-measure zero: integrate their indicators first in x
 for each y, then against sigma-finite Gamma. Thus (1), when defined,
 does not depend on the chosen representatives. The same observation
@@ -62,7 +64,7 @@ II. damped-lower-endpoint-bridge.md Section2, scientific8883160: ONLY the
    NOT imported. Kernel-row/calculus facts below are re-derived.
 III. RawValueCeiling.strict_log_gap with its COMPLETE public type: the
    OLD finite fact takes q,a with a>0 and q-2a>0 and gives Delta(q,a)>0.
-   Its actual B5 application is in Section7. No new kernel run.
+   Its actual B5 application is in Section6. No new kernel run.
 
 The old d1 spatial optimization proof is a method comparator only.
 We prove the actual smooth controls, full physical H1 extension, occupation
@@ -107,7 +109,8 @@ v_(Psi_n)=B(z,z)int_0^1 f_n(s)k_n(s)ds. Since f_n k_n increases to f_a,
 it converges to M_a B(z,z). Here B(z,z) is finite and positive: the spatial
 smooth autocorrelation is compact, continuous and strictly positive near0,
 and Gamma charges every ball centered at0. The latter follows by scaling
-one ball of positive mass, using nonzero Gamma and its Radon homogeneity.
+one ORIGIN-CENTERED ball B(0,n) of positive mass (these exhaust R^d),
+then its Radon homogeneity.
 Taking the limit of the EACH-FIXED-n real score inequalities in(2) yields
 
                     S_1>=lambda_z(1)-M_a B(z,z)/2.           (6)
@@ -177,7 +180,8 @@ Indeed pair Gamma with the smooth compact correlation int Q(x)Q(x-y)dx;
 its Fourier integral in the stated convention is |Qhat|². The spectral
 integral is finite by rapid decay and tempered mu. Formula(12), or the
 quadratic polynomial for Q+tP, gives covariance Cauchy-Schwarz for all
-smooth signed Q,P. In particular
+smooth signed Q,P. Here B(Q,P)=B(P,Q): change (x,y) to(x-y,-y)
+and use evenness of Gamma. In particular
 
  0<=B(f²,h²)<=sqrt(A_sp(f)A_sp(h))<=R0 N(f)²N(h)²             (13)
 
@@ -211,7 +215,7 @@ The two squared integrals are finite by(14). Thus
    <=sqrt(B(f1²,f3²)B(f2²,f4²))<=R0 product_(j=1..4)N(fj).    (15)
 
 This proves ABSOLUTE convergence of the actual signed four-linear form
-T(f1,f2,f3,f4)=B(f1 f2,f3 f4), with |T| bounded by R0 times the product
+C4(f1,f2,f3,f4)=B(f1 f2,f3 f4), with |C4| bounded by R0 times the product
 of H1 norms. It is consequently jointly continuous: expand a difference
 by changing one argument at a time, and apply this bound to each of the
 four terms. Representative independence was already checked in(1).
@@ -284,7 +288,9 @@ attainment or optimality for a time-dependent occupation profile.
 Let O be the FULL class of real strongly H1-measurable g:(0,1)->H1,
 ||g_s||2=1 a.e., T(g)=int_0^1 b(g_s)ds<infinity. Then
 int ||g_s||H1² ds=1+T(g), so it is an L2-in-time H1 field. Choose a fixed
-unit compact bump on exceptional null times. Joint measurable spatial
+unit compact bump on exceptional null times, using a strongly measurable
+separably valued representative. The map s->b(g_s) is measurable because
+the squared gradient norm is continuous on H1. Joint measurable spatial
 representatives exist: approximate the Bochner field by simple H1-valued
 functions in L2(time;H1), choose measurable spatial representatives for
 their finitely/countably many values, and a subsequence summable in the
@@ -378,9 +384,13 @@ inputs, while GL256/512 differences are not certified error. Negative
 controls were closed-form WRONG-normalization ratios, not propagated
 through the evaluator. No off-diagonal four-linear, d3 continuity or
 amplitude sweep, eigenvalue or actual SPDE moment was computed.
+K_star,R_star,Omega and E_star^O were NOT numerically evaluated. The
+7.50069e-7 two-degree temporal difference is not used in any proof bound.
 
 The exponent kappa and p2 factor in(2),(26) retain the required static
-scale as a tends to0. No optimized static numeric constant is asserted.
+scale as a tends to0. This concerns ONLY kappa and the factor2^m;
+no limit of M_a,R_star,Omega or the energies is proved here. No optimized
+static numeric constant is asserted.
 Separate Jensen bounds, with any source-normalization premise they require,
 remain available and may be combined with(26) by a maximum. We do not
 replace a p1 theorem or equate Stratonovich and Skorohod constants.
