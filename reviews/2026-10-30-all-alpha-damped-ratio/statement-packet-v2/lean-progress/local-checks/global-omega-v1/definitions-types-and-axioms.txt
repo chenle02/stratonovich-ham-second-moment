@@ -1,0 +1,456 @@
+def StratonovichHAMAudit.GlobalOmega.envelopePolynomial : (x : Real) → Real :=
+fun (x : Real) =>
+  @HAdd.hAdd.{0, 0, 0} Real Real Real (@instHAdd.{0} Real Real.instAdd)
+    (@HAdd.hAdd.{0, 0, 0} Real Real Real (@instHAdd.{0} Real Real.instAdd)
+      (@HSub.hSub.{0, 0, 0} Real Real Real (@instHSub.{0} Real Real.instSub)
+        (@HAdd.hAdd.{0, 0, 0} Real Real Real (@instHAdd.{0} Real Real.instAdd)
+          (@HSub.hSub.{0, 0, 0} Real Real Real (@instHSub.{0} Real Real.instSub)
+            (@HAdd.hAdd.{0, 0, 0} Real Real Real (@instHAdd.{0} Real Real.instAdd)
+              (@HAdd.hAdd.{0, 0, 0} Real Real Real (@instHAdd.{0} Real Real.instAdd)
+                (@HSub.hSub.{0, 0, 0} Real Real Real (@instHSub.{0} Real Real.instSub)
+                  (@HAdd.hAdd.{0, 0, 0} Real Real Real (@instHAdd.{0} Real Real.instAdd)
+                    (@HAdd.hAdd.{0, 0, 0} Real Real Real (@instHAdd.{0} Real Real.instAdd)
+                      (@HSub.hSub.{0, 0, 0} Real Real Real (@instHSub.{0} Real Real.instSub)
+                        (@HAdd.hAdd.{0, 0, 0} Real Real Real (@instHAdd.{0} Real Real.instAdd)
+                          (@HAdd.hAdd.{0, 0, 0} Real Real Real (@instHAdd.{0} Real Real.instAdd)
+                            (@HSub.hSub.{0, 0, 0} Real Real Real (@instHSub.{0} Real Real.instSub)
+                              (@HAdd.hAdd.{0, 0, 0} Real Real Real (@instHAdd.{0} Real Real.instAdd)
+                                (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+                                  (@Neg.neg.{0} Real Real.instNeg
+                                    (@OfNat.ofNat.{0} Real (nat_lit 237888)
+                                      (@instOfNatAtLeastTwo.{0} Real (nat_lit 237888) Real.instNatCast
+                                        StratonovichHAMAudit.GlobalOmega.envelopePolynomial._proof_1)))
+                                  (@HPow.hPow.{0, 0, 0} Real Nat Real
+                                    (@instHPow.{0, 0} Real Nat
+                                      (@NPow.toPow.{0} Real (@Monoid.toNPow.{0} Real Real.instMonoid)))
+                                    x (@OfNat.ofNat.{0} Nat (nat_lit 15) (instOfNatNat (nat_lit 15)))))
+                                (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+                                  (@OfNat.ofNat.{0} Real (nat_lit 2567920)
+                                    (@instOfNatAtLeastTwo.{0} Real (nat_lit 2567920) Real.instNatCast
+                                      StratonovichHAMAudit.GlobalOmega.envelopePolynomial._proof_2))
+                                  (@HPow.hPow.{0, 0, 0} Real Nat Real
+                                    (@instHPow.{0, 0} Real Nat
+                                      (@NPow.toPow.{0} Real (@Monoid.toNPow.{0} Real Real.instMonoid)))
+                                    x (@OfNat.ofNat.{0} Nat (nat_lit 14) (instOfNatNat (nat_lit 14))))))
+                              (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+                                (@OfNat.ofNat.{0} Real (nat_lit 10605344)
+                                  (@instOfNatAtLeastTwo.{0} Real (nat_lit 10605344) Real.instNatCast
+                                    StratonovichHAMAudit.GlobalOmega.envelopePolynomial._proof_3))
+                                (@HPow.hPow.{0, 0, 0} Real Nat Real
+                                  (@instHPow.{0, 0} Real Nat
+                                    (@NPow.toPow.{0} Real (@Monoid.toNPow.{0} Real Real.instMonoid)))
+                                  x (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))))))
+                            (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+                              (@OfNat.ofNat.{0} Real (nat_lit 17964536)
+                                (@instOfNatAtLeastTwo.{0} Real (nat_lit 17964536) Real.instNatCast
+                                  StratonovichHAMAudit.GlobalOmega.envelopePolynomial._proof_4))
+                              (@HPow.hPow.{0, 0, 0} Real Nat Real
+                                (@instHPow.{0, 0} Real Nat
+                                  (@NPow.toPow.{0} Real (@Monoid.toNPow.{0} Real Real.instMonoid)))
+                                x (@OfNat.ofNat.{0} Nat (nat_lit 12) (instOfNatNat (nat_lit 12))))))
+                          (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+                            (@OfNat.ofNat.{0} Real (nat_lit 3700636)
+                              (@instOfNatAtLeastTwo.{0} Real (nat_lit 3700636) Real.instNatCast
+                                StratonovichHAMAudit.GlobalOmega.envelopePolynomial._proof_5))
+                            (@HPow.hPow.{0, 0, 0} Real Nat Real
+                              (@instHPow.{0, 0} Real Nat
+                                (@NPow.toPow.{0} Real (@Monoid.toNPow.{0} Real Real.instMonoid)))
+                              x (@OfNat.ofNat.{0} Nat (nat_lit 11) (instOfNatNat (nat_lit 11))))))
+                        (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+                          (@OfNat.ofNat.{0} Real (nat_lit 59045877)
+                            (@instOfNatAtLeastTwo.{0} Real (nat_lit 59045877) Real.instNatCast
+                              StratonovichHAMAudit.GlobalOmega.envelopePolynomial._proof_6))
+                          (@HPow.hPow.{0, 0, 0} Real Nat Real
+                            (@instHPow.{0, 0} Real Nat (@NPow.toPow.{0} Real (@Monoid.toNPow.{0} Real Real.instMonoid)))
+                            x (@OfNat.ofNat.{0} Nat (nat_lit 10) (instOfNatNat (nat_lit 10))))))
+                      (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+                        (@OfNat.ofNat.{0} Real (nat_lit 66291248)
+                          (@instOfNatAtLeastTwo.{0} Real (nat_lit 66291248) Real.instNatCast
+                            StratonovichHAMAudit.GlobalOmega.envelopePolynomial._proof_7))
+                        (@HPow.hPow.{0, 0, 0} Real Nat Real
+                          (@instHPow.{0, 0} Real Nat (@NPow.toPow.{0} Real (@Monoid.toNPow.{0} Real Real.instMonoid))) x
+                          (@OfNat.ofNat.{0} Nat (nat_lit 9) (instOfNatNat (nat_lit 9))))))
+                    (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+                      (@OfNat.ofNat.{0} Real (nat_lit 36266494)
+                        (@instOfNatAtLeastTwo.{0} Real (nat_lit 36266494) Real.instNatCast
+                          StratonovichHAMAudit.GlobalOmega.envelopePolynomial._proof_8))
+                      (@HPow.hPow.{0, 0, 0} Real Nat Real
+                        (@instHPow.{0, 0} Real Nat (@NPow.toPow.{0} Real (@Monoid.toNPow.{0} Real Real.instMonoid))) x
+                        (@OfNat.ofNat.{0} Nat (nat_lit 8) (instOfNatNat (nat_lit 8))))))
+                  (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+                    (@OfNat.ofNat.{0} Real (nat_lit 125535292)
+                      (@instOfNatAtLeastTwo.{0} Real (nat_lit 125535292) Real.instNatCast
+                        StratonovichHAMAudit.GlobalOmega.envelopePolynomial._proof_9))
+                    (@HPow.hPow.{0, 0, 0} Real Nat Real
+                      (@instHPow.{0, 0} Real Nat (@NPow.toPow.{0} Real (@Monoid.toNPow.{0} Real Real.instMonoid))) x
+                      (@OfNat.ofNat.{0} Nat (nat_lit 7) (instOfNatNat (nat_lit 7))))))
+                (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+                  (@OfNat.ofNat.{0} Real (nat_lit 58424029)
+                    (@instOfNatAtLeastTwo.{0} Real (nat_lit 58424029) Real.instNatCast
+                      StratonovichHAMAudit.GlobalOmega.envelopePolynomial._proof_10))
+                  (@HPow.hPow.{0, 0, 0} Real Nat Real
+                    (@instHPow.{0, 0} Real Nat (@NPow.toPow.{0} Real (@Monoid.toNPow.{0} Real Real.instMonoid))) x
+                    (@OfNat.ofNat.{0} Nat (nat_lit 6) (instOfNatNat (nat_lit 6))))))
+              (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+                (@OfNat.ofNat.{0} Real (nat_lit 68792033)
+                  (@instOfNatAtLeastTwo.{0} Real (nat_lit 68792033) Real.instNatCast
+                    StratonovichHAMAudit.GlobalOmega.envelopePolynomial._proof_11))
+                (@HPow.hPow.{0, 0, 0} Real Nat Real
+                  (@instHPow.{0, 0} Real Nat (@NPow.toPow.{0} Real (@Monoid.toNPow.{0} Real Real.instMonoid))) x
+                  (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5))))))
+            (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+              (@OfNat.ofNat.{0} Real (nat_lit 94022217)
+                (@instOfNatAtLeastTwo.{0} Real (nat_lit 94022217) Real.instNatCast
+                  StratonovichHAMAudit.GlobalOmega.envelopePolynomial._proof_12))
+              (@HPow.hPow.{0, 0, 0} Real Nat Real
+                (@instHPow.{0, 0} Real Nat (@NPow.toPow.{0} Real (@Monoid.toNPow.{0} Real Real.instMonoid))) x
+                (@OfNat.ofNat.{0} Nat (nat_lit 4) (instOfNatNat (nat_lit 4))))))
+          (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+            (@OfNat.ofNat.{0} Real (nat_lit 42981706)
+              (@instOfNatAtLeastTwo.{0} Real (nat_lit 42981706) Real.instNatCast
+                StratonovichHAMAudit.GlobalOmega.envelopePolynomial._proof_13))
+            (@HPow.hPow.{0, 0, 0} Real Nat Real
+              (@instHPow.{0, 0} Real Nat (@NPow.toPow.{0} Real (@Monoid.toNPow.{0} Real Real.instMonoid))) x
+              (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3))))))
+        (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+          (@OfNat.ofNat.{0} Real (nat_lit 8102234)
+            (@instOfNatAtLeastTwo.{0} Real (nat_lit 8102234) Real.instNatCast
+              StratonovichHAMAudit.GlobalOmega.envelopePolynomial._proof_14))
+          (@HPow.hPow.{0, 0, 0} Real Nat Real
+            (@instHPow.{0, 0} Real Nat (@NPow.toPow.{0} Real (@Monoid.toNPow.{0} Real Real.instMonoid))) x
+            (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))))
+      (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+        (@OfNat.ofNat.{0} Real (nat_lit 516600)
+          (@instOfNatAtLeastTwo.{0} Real (nat_lit 516600) Real.instNatCast
+            StratonovichHAMAudit.GlobalOmega.envelopePolynomial._proof_15))
+        x))
+    (@OfNat.ofNat.{0} Real (nat_lit 9900)
+      (@instOfNatAtLeastTwo.{0} Real (nat_lit 9900) Real.instNatCast
+        StratonovichHAMAudit.GlobalOmega.envelopePolynomial._proof_16))
+def StratonovichHAMAudit.GlobalOmega.envelopeDenom : (x : Real) → Real :=
+fun (x : Real) =>
+  @HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+    (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+      (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+        (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+          (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+            (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+              (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+                (@OfNat.ofNat.{0} Real (nat_lit 750)
+                  (@instOfNatAtLeastTwo.{0} Real (nat_lit 750) Real.instNatCast
+                    StratonovichHAMAudit.GlobalOmega.envelopeDenom._proof_1))
+                (@HSub.hSub.{0, 0, 0} Real Real Real (@instHSub.{0} Real Real.instSub)
+                  (@OfNat.ofNat.{0} Real (nat_lit 3)
+                    (@instOfNatAtLeastTwo.{0} Real (nat_lit 3) Real.instNatCast
+                      StratonovichHAMAudit.GlobalOmega.envelopeDenom._proof_2))
+                  x))
+              (@HSub.hSub.{0, 0, 0} Real Real Real (@instHSub.{0} Real Real.instSub)
+                (@OfNat.ofNat.{0} Real (nat_lit 2)
+                  (@instOfNatAtLeastTwo.{0} Real (nat_lit 2) Real.instNatCast
+                    StratonovichHAMAudit.GlobalOmega.envelopeDenom._proof_3))
+                x))
+            (@HSub.hSub.{0, 0, 0} Real Real Real (@instHSub.{0} Real Real.instSub)
+              (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne)) x))
+          (@HSub.hSub.{0, 0, 0} Real Real Real (@instHSub.{0} Real Real.instSub)
+            (@OfNat.ofNat.{0} Real (nat_lit 5)
+              (@instOfNatAtLeastTwo.{0} Real (nat_lit 5) Real.instNatCast
+                StratonovichHAMAudit.GlobalOmega.envelopeDenom._proof_4))
+            (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+              (@OfNat.ofNat.{0} Real (nat_lit 2)
+                (@instOfNatAtLeastTwo.{0} Real (nat_lit 2) Real.instNatCast
+                  StratonovichHAMAudit.GlobalOmega.envelopeDenom._proof_3))
+              x)))
+        (@HSub.hSub.{0, 0, 0} Real Real Real (@instHSub.{0} Real Real.instSub)
+          (@OfNat.ofNat.{0} Real (nat_lit 3)
+            (@instOfNatAtLeastTwo.{0} Real (nat_lit 3) Real.instNatCast
+              StratonovichHAMAudit.GlobalOmega.envelopeDenom._proof_2))
+          (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+            (@OfNat.ofNat.{0} Real (nat_lit 2)
+              (@instOfNatAtLeastTwo.{0} Real (nat_lit 2) Real.instNatCast
+                StratonovichHAMAudit.GlobalOmega.envelopeDenom._proof_3))
+            x)))
+      (@HSub.hSub.{0, 0, 0} Real Real Real (@instHSub.{0} Real Real.instSub)
+        (@OfNat.ofNat.{0} Real (nat_lit 5)
+          (@instOfNatAtLeastTwo.{0} Real (nat_lit 5) Real.instNatCast
+            StratonovichHAMAudit.GlobalOmega.envelopeDenom._proof_4))
+        (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+          (@OfNat.ofNat.{0} Real (nat_lit 3)
+            (@instOfNatAtLeastTwo.{0} Real (nat_lit 3) Real.instNatCast
+              StratonovichHAMAudit.GlobalOmega.envelopeDenom._proof_2))
+          x)))
+    (@HSub.hSub.{0, 0, 0} Real Real Real (@instHSub.{0} Real Real.instSub)
+      (@HSub.hSub.{0, 0, 0} Real Real Real (@instHSub.{0} Real Real.instSub)
+        (@OfNat.ofNat.{0} Real (nat_lit 3)
+          (@instOfNatAtLeastTwo.{0} Real (nat_lit 3) Real.instNatCast
+            StratonovichHAMAudit.GlobalOmega.envelopeDenom._proof_2))
+        (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+          (@OfNat.ofNat.{0} Real (nat_lit 4)
+            (@instOfNatAtLeastTwo.{0} Real (nat_lit 4) Real.instNatCast
+              StratonovichHAMAudit.GlobalOmega.envelopeDenom._proof_5))
+          x))
+      (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+        (@OfNat.ofNat.{0} Real (nat_lit 2)
+          (@instOfNatAtLeastTwo.{0} Real (nat_lit 2) Real.instNatCast
+            StratonovichHAMAudit.GlobalOmega.envelopeDenom._proof_3))
+        (@HPow.hPow.{0, 0, 0} Real Nat Real
+          (@instHPow.{0, 0} Real Nat (@NPow.toPow.{0} Real (@Monoid.toNPow.{0} Real Real.instMonoid))) x
+          (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))))
+def StratonovichHAMAudit.GlobalOmega.envelopeRational : (x : Real) → Real :=
+fun (x : Real) =>
+  @HDiv.hDiv.{0, 0, 0} Real Real Real (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+    (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+      (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+        (@HDiv.hDiv.{0, 0, 0} Real Real Real (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+          (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+            (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+              (@OfNat.ofNat.{0} Real (nat_lit 2)
+                (@instOfNatAtLeastTwo.{0} Real (nat_lit 2) Real.instNatCast
+                  StratonovichHAMAudit.GlobalOmega.envelopeDenom._proof_3))
+              (@HAdd.hAdd.{0, 0, 0} Real Real Real (@instHAdd.{0} Real Real.instAdd)
+                (@HSub.hSub.{0, 0, 0} Real Real Real (@instHSub.{0} Real Real.instSub)
+                  (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne))
+                  (@HPow.hPow.{0, 0, 0} Real Nat Real
+                    (@instHPow.{0, 0} Real Nat (@NPow.toPow.{0} Real (@Monoid.toNPow.{0} Real Real.instMonoid))) x
+                    (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))
+                (@HDiv.hDiv.{0, 0, 0} Real Real Real
+                  (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+                  (@HPow.hPow.{0, 0, 0} Real Nat Real
+                    (@instHPow.{0, 0} Real Nat (@NPow.toPow.{0} Real (@Monoid.toNPow.{0} Real Real.instMonoid))) x
+                    (@OfNat.ofNat.{0} Nat (nat_lit 4) (instOfNatNat (nat_lit 4))))
+                  (@OfNat.ofNat.{0} Real (nat_lit 2)
+                    (@instOfNatAtLeastTwo.{0} Real (nat_lit 2) Real.instNatCast
+                      StratonovichHAMAudit.GlobalOmega.envelopeDenom._proof_3)))))
+            (@HSub.hSub.{0, 0, 0} Real Real Real (@instHSub.{0} Real Real.instSub)
+              (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne))
+              (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+                (@OfNat.ofNat.{0} Real (nat_lit 4)
+                  (@instOfNatAtLeastTwo.{0} Real (nat_lit 4) Real.instNatCast
+                    StratonovichHAMAudit.GlobalOmega.envelopeDenom._proof_5))
+                (@HPow.hPow.{0, 0, 0} Real Nat Real
+                  (@instHPow.{0, 0} Real Nat (@NPow.toPow.{0} Real (@Monoid.toNPow.{0} Real Real.instMonoid))) x
+                  (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))))
+          (@HSub.hSub.{0, 0, 0} Real Real Real (@instHSub.{0} Real Real.instSub)
+            (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne))
+            (@HDiv.hDiv.{0, 0, 0} Real Real Real
+              (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+              (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+                (@OfNat.ofNat.{0} Real (nat_lit 3)
+                  (@instOfNatAtLeastTwo.{0} Real (nat_lit 3) Real.instNatCast
+                    StratonovichHAMAudit.GlobalOmega.envelopeDenom._proof_2))
+                x)
+              (@OfNat.ofNat.{0} Real (nat_lit 5)
+                (@instOfNatAtLeastTwo.{0} Real (nat_lit 5) Real.instNatCast
+                  StratonovichHAMAudit.GlobalOmega.envelopeDenom._proof_4)))))
+        (@HSub.hSub.{0, 0, 0} Real Real Real (@instHSub.{0} Real Real.instSub)
+          (@HAdd.hAdd.{0, 0, 0} Real Real Real (@instHAdd.{0} Real Real.instAdd)
+            (@HAdd.hAdd.{0, 0, 0} Real Real Real (@instHAdd.{0} Real Real.instAdd)
+              (@HDiv.hDiv.{0, 0, 0} Real Real Real
+                (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+                (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne))
+                (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+                  (@OfNat.ofNat.{0} Real (nat_lit 2)
+                    (@instOfNatAtLeastTwo.{0} Real (nat_lit 2) Real.instNatCast
+                      StratonovichHAMAudit.GlobalOmega.envelopeDenom._proof_3))
+                  (@HSub.hSub.{0, 0, 0} Real Real Real (@instHSub.{0} Real Real.instSub)
+                    (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne)) x)))
+              (@HDiv.hDiv.{0, 0, 0} Real Real Real
+                (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+                (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul) x
+                  (@HSub.hSub.{0, 0, 0} Real Real Real (@instHSub.{0} Real Real.instSub)
+                    (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne)) x))
+                (@HSub.hSub.{0, 0, 0} Real Real Real (@instHSub.{0} Real Real.instSub)
+                  (@OfNat.ofNat.{0} Real (nat_lit 2)
+                    (@instOfNatAtLeastTwo.{0} Real (nat_lit 2) Real.instNatCast
+                      StratonovichHAMAudit.GlobalOmega.envelopeDenom._proof_3))
+                  x)))
+            (@HDiv.hDiv.{0, 0, 0} Real Real Real
+              (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+              (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+                (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul) x
+                  (@HAdd.hAdd.{0, 0, 0} Real Real Real (@instHAdd.{0} Real Real.instAdd) x
+                    (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne))))
+                (@HPow.hPow.{0, 0, 0} Real Nat Real
+                  (@instHPow.{0, 0} Real Nat (@NPow.toPow.{0} Real (@Monoid.toNPow.{0} Real Real.instMonoid)))
+                  (@HSub.hSub.{0, 0, 0} Real Real Real (@instHSub.{0} Real Real.instSub)
+                    (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne)) x)
+                  (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))
+              (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+                (@OfNat.ofNat.{0} Real (nat_lit 3)
+                  (@instOfNatAtLeastTwo.{0} Real (nat_lit 3) Real.instNatCast
+                    StratonovichHAMAudit.GlobalOmega.envelopeDenom._proof_2))
+                (@HSub.hSub.{0, 0, 0} Real Real Real (@instHSub.{0} Real Real.instSub)
+                  (@OfNat.ofNat.{0} Real (nat_lit 3)
+                    (@instOfNatAtLeastTwo.{0} Real (nat_lit 3) Real.instNatCast
+                      StratonovichHAMAudit.GlobalOmega.envelopeDenom._proof_2))
+                  x))))
+          (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+            (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+              (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+                (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+                  (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+                    (@OfNat.ofNat.{0} Real (nat_lit 2)
+                      (@instOfNatAtLeastTwo.{0} Real (nat_lit 2) Real.instNatCast
+                        StratonovichHAMAudit.GlobalOmega.envelopeDenom._proof_3))
+                    (@HSub.hSub.{0, 0, 0} Real Real Real (@instHSub.{0} Real Real.instSub)
+                      (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne))
+                      (@HDiv.hDiv.{0, 0, 0} Real Real Real
+                        (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+                        (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+                          (@OfNat.ofNat.{0} Real (nat_lit 3)
+                            (@instOfNatAtLeastTwo.{0} Real (nat_lit 3) Real.instNatCast
+                              StratonovichHAMAudit.GlobalOmega.envelopeDenom._proof_2))
+                          x)
+                        (@OfNat.ofNat.{0} Real (nat_lit 5)
+                          (@instOfNatAtLeastTwo.{0} Real (nat_lit 5) Real.instNatCast
+                            StratonovichHAMAudit.GlobalOmega.envelopeDenom._proof_4)))))
+                  (@HAdd.hAdd.{0, 0, 0} Real Real Real (@instHAdd.{0} Real Real.instAdd)
+                    (@HDiv.hDiv.{0, 0, 0} Real Real Real
+                      (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+                      (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne))
+                      (@HSub.hSub.{0, 0, 0} Real Real Real (@instHSub.{0} Real Real.instSub)
+                        (@OfNat.ofNat.{0} Real (nat_lit 3)
+                          (@instOfNatAtLeastTwo.{0} Real (nat_lit 3) Real.instNatCast
+                            StratonovichHAMAudit.GlobalOmega.envelopeDenom._proof_2))
+                        (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+                          (@OfNat.ofNat.{0} Real (nat_lit 2)
+                            (@instOfNatAtLeastTwo.{0} Real (nat_lit 2) Real.instNatCast
+                              StratonovichHAMAudit.GlobalOmega.envelopeDenom._proof_3))
+                          x)))
+                    (@HDiv.hDiv.{0, 0, 0} Real Real Real
+                      (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+                      (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+                        (@HAdd.hAdd.{0, 0, 0} Real Real Real (@instHAdd.{0} Real Real.instAdd)
+                          (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+                            (@OfNat.ofNat.{0} Real (nat_lit 2)
+                              (@instOfNatAtLeastTwo.{0} Real (nat_lit 2) Real.instNatCast
+                                StratonovichHAMAudit.GlobalOmega.envelopeDenom._proof_3))
+                            x)
+                          (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne)))
+                        (@HSub.hSub.{0, 0, 0} Real Real Real (@instHSub.{0} Real Real.instSub)
+                          (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne)) x))
+                      (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+                        (@OfNat.ofNat.{0} Real (nat_lit 3)
+                          (@instOfNatAtLeastTwo.{0} Real (nat_lit 3) Real.instNatCast
+                            StratonovichHAMAudit.GlobalOmega.envelopeDenom._proof_2))
+                        (@HSub.hSub.{0, 0, 0} Real Real Real (@instHSub.{0} Real Real.instSub)
+                          (@OfNat.ofNat.{0} Real (nat_lit 5)
+                            (@instOfNatAtLeastTwo.{0} Real (nat_lit 5) Real.instNatCast
+                              StratonovichHAMAudit.GlobalOmega.envelopeDenom._proof_4))
+                          (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+                            (@OfNat.ofNat.{0} Real (nat_lit 2)
+                              (@instOfNatAtLeastTwo.{0} Real (nat_lit 2) Real.instNatCast
+                                StratonovichHAMAudit.GlobalOmega.envelopeDenom._proof_3))
+                            x))))))
+                x)
+              (@HDiv.hDiv.{0, 0, 0} Real Real Real
+                (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+                (@OfNat.ofNat.{0} Real (nat_lit 177)
+                  (@instOfNatAtLeastTwo.{0} Real (nat_lit 177) Real.instNatCast
+                    StratonovichHAMAudit.GlobalOmega.envelopeRational._proof_1))
+                (@OfNat.ofNat.{0} Real (nat_lit 100)
+                  (@instOfNatAtLeastTwo.{0} Real (nat_lit 100) Real.instNatCast
+                    StratonovichHAMAudit.GlobalOmega.envelopeRational._proof_2))))
+            (@HSub.hSub.{0, 0, 0} Real Real Real (@instHSub.{0} Real Real.instSub)
+              (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne))
+              (@HDiv.hDiv.{0, 0, 0} Real Real Real
+                (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+                (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+                  (@OfNat.ofNat.{0} Real (nat_lit 7)
+                    (@instOfNatAtLeastTwo.{0} Real (nat_lit 7) Real.instNatCast
+                      StratonovichHAMAudit.GlobalOmega.envelopeRational._proof_3))
+                  x)
+                (@OfNat.ofNat.{0} Real (nat_lit 5)
+                  (@instOfNatAtLeastTwo.{0} Real (nat_lit 5) Real.instNatCast
+                    StratonovichHAMAudit.GlobalOmega.envelopeDenom._proof_4)))))))
+      (@HSub.hSub.{0, 0, 0} Real Real Real (@instHSub.{0} Real Real.instSub)
+        (@OfNat.ofNat.{0} Real (nat_lit 3)
+          (@instOfNatAtLeastTwo.{0} Real (nat_lit 3) Real.instNatCast
+            StratonovichHAMAudit.GlobalOmega.envelopeDenom._proof_2))
+        (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+          (@OfNat.ofNat.{0} Real (nat_lit 4)
+            (@instOfNatAtLeastTwo.{0} Real (nat_lit 4) Real.instNatCast
+              StratonovichHAMAudit.GlobalOmega.envelopeDenom._proof_5))
+          x)))
+    (@HSub.hSub.{0, 0, 0} Real Real Real (@instHSub.{0} Real Real.instSub)
+      (@HSub.hSub.{0, 0, 0} Real Real Real (@instHSub.{0} Real Real.instSub)
+        (@OfNat.ofNat.{0} Real (nat_lit 3)
+          (@instOfNatAtLeastTwo.{0} Real (nat_lit 3) Real.instNatCast
+            StratonovichHAMAudit.GlobalOmega.envelopeDenom._proof_2))
+        (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+          (@OfNat.ofNat.{0} Real (nat_lit 4)
+            (@instOfNatAtLeastTwo.{0} Real (nat_lit 4) Real.instNatCast
+              StratonovichHAMAudit.GlobalOmega.envelopeDenom._proof_5))
+          x))
+      (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+        (@OfNat.ofNat.{0} Real (nat_lit 2)
+          (@instOfNatAtLeastTwo.{0} Real (nat_lit 2) Real.instNatCast
+            StratonovichHAMAudit.GlobalOmega.envelopeDenom._proof_3))
+        (@HPow.hPow.{0, 0, 0} Real Nat Real
+          (@instHPow.{0, 0} Real Nat (@NPow.toPow.{0} Real (@Monoid.toNPow.{0} Real Real.instMonoid))) x
+          (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))))
+StratonovichHAMAudit.GlobalOmega.left_certificate (t : Real)
+  (ht0 : @LE.le.{0} Real Real.instLE (@OfNat.ofNat.{0} Real (nat_lit 0) (@Zero.toOfNat0.{0} Real Real.instZero)) t)
+  (ht1 : @LE.le.{0} Real Real.instLE t (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne))) :
+  @LE.le.{0} Real Real.instLE (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne))
+    (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+      (@HPow.hPow.{0, 0, 0} Real Nat Real
+        (@instHPow.{0, 0} Real Nat (@NPow.toPow.{0} Real (@Monoid.toNPow.{0} Real Real.instMonoid)))
+        (@OfNat.ofNat.{0} Real (nat_lit 4)
+          (@instOfNatAtLeastTwo.{0} Real (nat_lit 4) Real.instNatCast
+            (@Nat.instAtLeastTwoHAddOfNat (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))
+              (@Nat.instNeZeroSucc (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))))
+        (@OfNat.ofNat.{0} Nat (nat_lit 15) (instOfNatNat (nat_lit 15))))
+      (StratonovichHAMAudit.GlobalOmega.envelopePolynomial
+        (@HDiv.hDiv.{0, 0, 0} Real Real Real (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid)) t
+          (@OfNat.ofNat.{0} Real (nat_lit 4)
+            (@instOfNatAtLeastTwo.{0} Real (nat_lit 4) Real.instNatCast
+              (@Nat.instAtLeastTwoHAddOfNat (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))
+                (@Nat.instNeZeroSucc (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))))))))
+'StratonovichHAMAudit.GlobalOmega.left_certificate' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+StratonovichHAMAudit.GlobalOmega.right_certificate (t : Real)
+  (ht0 : @LE.le.{0} Real Real.instLE (@OfNat.ofNat.{0} Real (nat_lit 0) (@Zero.toOfNat0.{0} Real Real.instZero)) t)
+  (ht1 : @LE.le.{0} Real Real.instLE t (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne))) :
+  @LE.le.{0} Real Real.instLE (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne))
+    (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+      (@HPow.hPow.{0, 0, 0} Real Nat Real
+        (@instHPow.{0, 0} Real Nat (@NPow.toPow.{0} Real (@Monoid.toNPow.{0} Real Real.instMonoid)))
+        (@OfNat.ofNat.{0} Real (nat_lit 4)
+          (@instOfNatAtLeastTwo.{0} Real (nat_lit 4) Real.instNatCast
+            (@Nat.instAtLeastTwoHAddOfNat (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))
+              (@Nat.instNeZeroSucc (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))))
+        (@OfNat.ofNat.{0} Nat (nat_lit 15) (instOfNatNat (nat_lit 15))))
+      (StratonovichHAMAudit.GlobalOmega.envelopePolynomial
+        (@HDiv.hDiv.{0, 0, 0} Real Real Real (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+          (@HAdd.hAdd.{0, 0, 0} Real Real Real (@instHAdd.{0} Real Real.instAdd)
+            (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne)) t)
+          (@OfNat.ofNat.{0} Real (nat_lit 4)
+            (@instOfNatAtLeastTwo.{0} Real (nat_lit 4) Real.instNatCast
+              (@Nat.instAtLeastTwoHAddOfNat (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))
+                (@Nat.instNeZeroSucc (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))))))))
+'StratonovichHAMAudit.GlobalOmega.right_certificate' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+StratonovichHAMAudit.GlobalOmega.polynomial_pos (x : Real)
+  (hx0 : @LE.le.{0} Real Real.instLE (@OfNat.ofNat.{0} Real (nat_lit 0) (@Zero.toOfNat0.{0} Real Real.instZero)) x)
+  (hx1 :
+    @LE.le.{0} Real Real.instLE x
+      (@HDiv.hDiv.{0, 0, 0} Real Real Real (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+        (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne))
+        (@OfNat.ofNat.{0} Real (nat_lit 2)
+          (@instOfNatAtLeastTwo.{0} Real (nat_lit 2) Real.instNatCast
+            (@Nat.instAtLeastTwoHAddOfNat (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))
+              (@Nat.instNeZeroSucc (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0))))))))) :
+  @LT.lt.{0} Real Real.instLT (@OfNat.ofNat.{0} Real (nat_lit 0) (@Zero.toOfNat0.{0} Real Real.instZero))
+    (StratonovichHAMAudit.GlobalOmega.envelopePolynomial x)
+'StratonovichHAMAudit.GlobalOmega.polynomial_pos' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+StratonovichHAMAudit.GlobalOmega.rational_lt_one (x : Real)
+  (hx : @LT.lt.{0} Real Real.instLT (@OfNat.ofNat.{0} Real (nat_lit 0) (@Zero.toOfNat0.{0} Real Real.instZero)) x)
+  (hh :
+    @LE.le.{0} Real Real.instLE x
+      (@HDiv.hDiv.{0, 0, 0} Real Real Real (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+        (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne))
+        (@OfNat.ofNat.{0} Real (nat_lit 2)
+          (@instOfNatAtLeastTwo.{0} Real (nat_lit 2) Real.instNatCast
+            (@Nat.instAtLeastTwoHAddOfNat (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))
+              (@Nat.instNeZeroSucc (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0))))))))) :
+  @LT.lt.{0} Real Real.instLT (StratonovichHAMAudit.GlobalOmega.envelopeRational x)
+    (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne))
+'StratonovichHAMAudit.GlobalOmega.rational_lt_one' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
