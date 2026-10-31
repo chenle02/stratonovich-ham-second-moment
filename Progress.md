@@ -6927,3 +6927,30 @@ upper, growingcone/originalPOINT/sourceconstant/normalization/exactlimit
 remain OPEN. Full original goalACTIVE, not replaced by fixedR/M result.
 No contact/Skorohod/HPC/sourcefix/companion/TeX/PDF/wiki/bib/publication or
 wholepaper clearance. NoRoute/localisolated/pushpending/no fresh parity.
+
+### S1-S4 signed rough static upper statement packet frozen — 2026-10-31
+
+Previous goal turn PROGRESS: E1-E4 acceptedb480aca/149b0e2, not a point upper.
+New target fixed before recon: actual signed multiplier-norm closure/form/
+SA/quarter-power/fullF spectral upper with explicit polynomial K/t budget,
+zero bottom/no eigenstate, quantitative beta/sqrt continuity, actual compact
+mean Bochner averages and uniformL1 rate interface. Statements ONLY.
+
+Fresh wiki CLI search/cite+syntheses distinguish noise spectra/Markov forms
+from signed static wave forms. Teschl SECOND primary2.14p81/3.6p109 and
+closedness definitionsp80 rendered/viewed; existing title/copyright viewed,
+5PRIMARY images required. Exact sourcePDF SHA retained. Existing queued
+ticket tk-20261030-010856-codex-stratonovich-spectral retained, no duplicate/
+ingestion claim. REFRAME known-method application; noveltyUNVERIFIED.
+
+60scalar spectral fibers40/70digits,10h0Jordan evaluator calibrations,
+all t0norm1,12exact form and4sqrt guards; full Euclidean matrixnorm, not
+actual CM/operator/SPDE or certified enclosure. Free-velocity and1_Q guards
+analytic, not numerical. Existing weightedAMGM complete type planned for
+actual1/2 weights/positive powers, no new kernel/count73facts19seams/L0.
+
+Frozen19inputs (14TEXT+5PRIMARY images); independent statement gate NEXT,
+no long proof before gate. Full original sharp/source objectiveACTIVE; all
+original-point/growingcone/product/normalization gaps retained. No contact/
+Skorohod/HPC/sourcefix/companion/TeX/PDF/wiki/bib/publication. Freshfetch/
+<HUB>SSH NoRoute, isolated local/pushpending/no parity/master merge.
