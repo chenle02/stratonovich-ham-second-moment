@@ -7596,3 +7596,30 @@ Skorohod/sourcefix/TeX/PDF/wiki/bib/publication, NoRoute/pushpending.
   this reviewer ran,using accepted variance/cutoff/driver inputs ONLY;
   its target/falsification frozen beforehand and requires own FULL gate.
   No accepted expectednorm/concentration yet. Full original goal ACTIVE.
+
+## SA1-SA3 complete actual stochastic-anchor candidate frozen — 2026-10-31
+
+- After actual Ufull and GCstatement review debt was cleared, SA mathematical
+  target unchangedv3 proceeds to proof; GCfull also completed/adjudicated
+  while drafting. The new proof depends on ACCEPTED cutoff/variance/driver/
+  Gaussian-transfer/isometry inputs ONLY,not on GC/U/SP estimates.
+- notes/radius-stochastic-driver-anchor.md gives UNREVIEWED complete SA1-SA3:
+  rescaled exact whole-space factorization L=2pi*rho,actual weighted Schur
+  row/column constants rho^-d/2,rho^d/2 cancel for positive/negativeindices;
+  diagonaltrace volume rho^d and rankapproximation bound yield actual
+  two-envelope Schattennorm rho^(d/q),not periodicstate/diagonal=K assertion.
+- Accepted two-variance constants alreadyuniformR. New fixedEVENQ envelope
+  plus actual finiteGaussian bound/S_q<=S_Q,dyadic timegap and SAME-W fixedR
+  pathlimit give allfinite moment sqrt(v)R^(d/Q). Covariance contractions
+  cover arbitrarydeterministic/infinite raw projections,correlated blocks.
+  Exact deltaweighted expectation/stop/emptyblock yields EZdelta<=C gdelta
+  R^(d/Q),hencebdelta->0 onRdelta ifQ>2d/(1-a). Allthree Qconditionsexplicit;
+  constants need not be uniformQ/a1/Binfty. No stochastic exponential yet.
+- Prior18lattice/3exactmode/9parameter diagnostics retained,not rerun. They
+  measure only auxiliary diagonal/scalar feasibility,not actual K norm or
+  SPDE expectation. Outer-factoruniformity is proved analytically. No new
+  Lean compiler/theorem/count,allstepsanalytic,74facts20seams/L0 unchanged.
+- FULL18text source/actualapplication packet frozen for mandatory Opus5.5/
+  HIGH review. No SA proof adoption before gate. ZeroGamma stochastic
+  case zero directly. CoregrowingR/infinitehead/localization/signedpositive/
+  authornormalization/sharp/exactlimit remainOPEN,fullgoalACTIVE.
