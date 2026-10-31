@@ -1,126 +1,114 @@
-Last updated: 2026-10-31 04:46 UTC (Codex)
+Last updated: 2026-10-31 05:44 UTC (Codex)
 
-Original full upper/sharp goal ACTIVE. Compact-family ground target frozen
-to retain full positive tilt class; original v2 review live at last poll.
+Original full upper/sharp goal ACTIVE. Full positive-family ground/wave gap
+accepted; NEW-F coupled raw block/cone/event-cost target next.
 
 ## ⏭ Next session: where to stand and what to do
 
-Stand in this repository root, then enter ACTIVE isolated worktree:
+Stand in this original repository root (the loader entry point), then enter
+ACTIVE isolated worktree:
 ${HOME}/.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave
-branch research/fixed-mask-young-20261031, committed HEAD
-715b6b2cd77a49d542e688c5d957244dd937b16d.
-Its Progress.md is the current candidate-wave authority; root retains
-prior accepted math/operational handoffs, not integration.
+branch research/fixed-mask-young-20261031, committed CLEAN HEAD
+f8d62cea9f5424605d9fc113bb4b86d8012cac4d.
+Its Progress.md is current candidate-wave authority; its inherited HANDOFF
+is stale, so use THIS original-root HANDOFF. No master integration/push yet.
 
-FIRST inspect/poll EXISTING COMPACT-FAMILY statement v2 original exec71921:
-${HOME}/.local/state/Le-AI-Lab/stratonovich-compact-mean-ground-statement-v2.
-Last actual poll returned RUNNING; inspect receipt/report for completion.
-Never relaunch solely on timeout. This is source715b6b2,25TEXTS+6FULLimages,
-HIGHthreshold unchanged. Validate original terminal bindings/model/read
-coverage/native archive and adjudicate findings BEFORE proof.
+FIRST freeze and falsify the NEW-F indexed-cone / actual raw Gaussian block-
+array / same-Z shift / event-cost target from
+reviews/2026-10-31-compact-mean-ground/next-raw-block-event-obligations.md
+(UNREVIEWED PLAN) and actual coupled controls in
+reviews/2026-10-31-raw-block-event/falsification-scope-v0.md.
+Retain full positive Psi class, actual e0=(0,1,0), O_phi and both entries.
+Get its independent statement gate BEFORE long proof. Do not just assert
+old d1 uniformly-local cone applies to new F.
 
-Use target-v2.md F1-F4, NOT a scalar-only long proof. The original positive
-tilt class is GENERAL Psi(t,x), so actual compact means form an indexed
-family V_sigma=m_R int Ka Gamma*Psi. The same original Psi/raw cost stays
-fixed while a larger mask/common trial supplies negativity. The strengthened
-potential-family target is needed to retain the full known class.
-Scalar v1 original11790 is TERMINAL accepted12HIGH218.396s,23bindings/
-38files verified, special-case STATEMENT ONLY. No scalar long proof began.
-All old Young reviewers91665/29576/98785 also TERMINAL. Accepted Young and
-raw masked average5969da5 remain retained. No new ground theorem yet.
+NEW compact-family ground/projection/complement theorem is ACCEPTED:
+scientificbfbd472/localadoptionab6596f,10HIGH359.291s,34bindings/49nativefiles
+verified before9minor clarifications. Uniform actual full-F gap/margins and
+fixed-original-Psi common trial are now inputs, not unfinished proof work.
+Old statement71921/11790 and FULL61985 all TERMINAL; do not relaunch. Old
+Young reviewers91665/29576/98785 also TERMINAL. No live review or Lean job.
 
-<HUB> still No route to host; last verified remote604c60f. No push,
-fresh parity or root-master integration. Preserve both pending lines.
+<HUB> remains No route to host, last verified remote604c60f. Preserve
+both pending root/isolated lines; no fresh parity/push/sync/integration claim.
+Original full upper/sharp/source goal remains ACTIVE.
 
 ## Pre-flight checks
 
-1. Read AGENTS.md, PROJECT-GOAL.md, ROOT and ACTIVE-WORKTREE Progress.md.
-   Full original sharp/source goal ACTIVE; do not shrink to this interface.
-   Companion still L0/PROPOSED, separate decision4 authorization required.
-2. Check local ownership/status and serial refs. Last verified remote604c60f;
-   root oldadoption0accd3d and operational handoffs are LOCAL ONLY. Active
-   isolated branch starts from root1a531db and is now01519d8. No foreign WIP
-   at checkpoint; no reset/drop of either pending line. No live review job.
-3. Source driver accepted scientificda9d464/adoptionfa1e54f,10HIGH388.736s,
-   23inputs/38nativefiles; fixed RAW basis/correlated Gaussian transfer,
-   retaining OU extension, exact MAXdelta/SUMepsilon law and source operator
-   convergence. No source-CM reconstruction or time convolution needed.
-4. Fixed-mask moment comparison accepted scientific604c60f/adoption0accd3d,
-   9HIGH756.999s,18inputs/33files. F1/F2 positive displacement diagrams,
-   source solution/averages and canonical unmasked full moment limit; F3
-   conditional consumer. Its masked-limit premise is now actually CLOSED
-   by the new accepted phase/Young theorem below, not assumed forever.
-5. New phase theorem notes/fixed-mask-young-constant-phase.md on ACTIVE branch:
-   scientific8ad5094/adoption5969da5aefbb1a288f7327962e3dbece56a79a55.
-   V2 FULL13HIGH283.696s,26bindings/41nativefiles verified before minor
-   clarification edits. Even[0,1]mask, F=E+R², both actual constant columns,
-   cancelling-data free propagation, actual source strong response, complete
-   Young stability/patching and Picard/Fubini identities, actual W-measurable
-   masked average and original point-moment comparison. Optional compact
-   real CtCc-infinity base, NOT raw CM shift or moment lower growth.
-6. V1 FULL19checks322.212s PASS_WITH_NOTES/MEDIUM acceptedfalse at HIGH,
-   19bindings/34files retained. Two written arguments expanded, never an
-   identical-input vote retry or lowered threshold. V2 thirteen checks and
-   seven optional clarifications adjudicated. Statement15HIGH414.046s
-   separate; all three original native processes terminal.
-7. Square-exponential bounds, Bochner vs pathwise test identities and all
-   source limits at FIXED mask/horizon; no point Sobolev evaluation in E.
-   New FP-YOUNG analytic boundary is NOT a Lean declaration.71facts/18seams
-   remain scoped/L0; no new package/lease/registry/HPC/companion claim.
-8. New compact-ground controls are UNREVIEWED preparatory evidence only.
-   Teschl SECOND edition source rehashed ee2cfd1c..., pp258/273 re-viewed:
-   existence needs a common negative trial BEFORE conditional positivity/
-   simplicity. No automatic binding of every fixed d3 compact potential.
-9. Canonical TeX/PDF/wiki unchanged; TeX SHA256
+1. Read AGENTS.md, PROJECT-GOAL.md and ROOT plus ACTIVE-WORKTREE Progress.md.
+   Full original all-dimensional sharp/source scope intact; no goal completion.
+   Companion L0/PROPOSED and decision4 unchanged; no official private package.
+2. Check local/root and isolated ownership/status plus serial refs. Isolated
+   HEADf8d62ce CLEAN, root handoffs/prior0accd3d pending separately. Last
+   verified remote604c60f; network No route. No dropping/resetting either
+   line or foreign WIP. All review processes now terminal, no new providers.
+3. Accepted source operator convergence da9d464/fa1e54f,10HIGH388.736s,
+   23inputs/38files; SAMErawW/fixedbasis, retaining common source coupling,
+   MAXdelta/SUMepsilon. No time convolution/source-own-CM reconstruction.
+4. Accepted fixed-mask moment transfer604c60f/0accd3d,9HIGH756.999s,
+   18inputs/33files, all mixed positive displacement diagrams/source average
+   comparison and canonical unmasked full moment limit. Its F3 masked-L2
+   premise is closed by new accepted Young interface, not assumed forever.
+5. Accepted actual phase/Young/average8ad5094/5969da5,13HIGH283.696s,
+   26inputs/41files. F=E+R², actual two constant columns, whole-data finite
+   propagation, actual source PDE and W-measurable raw average, fixedR/T.
+   V1 MEDIUM/acceptedfalse retained; never a confidence waiver/retry vote.
+6. NEW accepted notes/compact-mean-ground-family.md:
+   scientificbfbd47285f1fe028631c00b82143cf433f40efa6,
+   adoptionab6596f5f8176adc9da47040063a2fa2b497d2e0,
+   FULL10HIGH359.291s,28texts+6images/34bindings/49files. Real compact
+   indexed V_sigma, common H1 trial, ground/gap/pH2 continuity, actual
+   fractional GLOBAL-E physical wave and FULL-F constant forcing projection/
+   complement, positive entrance/O_phi margins, parameter bound. ALL original
+   positive Psi supplies the common trial after a finite larger mask with
+   Psi/Z/v/Rayleigh score unchanged. No pL1/tail/d1-ODE assumption.
+7. Nine optional notes addressed: direct spectral-core form domain; forcing
+   Fubini; free H1xL2 generator; horizon consistency; nonzero qavg; typo;
+   decaying projection; real calculus; downstream NEWF cone must be redone.
+   Preproof family8HIGH284.794s/31bindings/46files and scalar12HIGH218.396s/
+   23bindings/38files remain separate. No new moment lower asymptotic yet.
+8. Next actual raw block controls (d1-white first-chaos/completion tests):
+   time-Jacobian sqrt(delta), joint covariance/MGF sameZ, wrong independentZ/
+   wrongJacobian/diagonal-only cost rejected.40/65working digits are not
+   error certificates; no point trace on F or full operator shift theorem.
+9. Exact old direct-event-calibration(S)-(M) applies ALL original covariance
+   measures: delta=T^-kappa, r_T=Tdelta, semiscalar noise sqrt(delta).
+   Distinguish r_T from fixed maskR; restart full FAST velocity delta V_t.
+10.71finitefacts/18seams/L0 unchanged; FP-YOUNG and FP-GROUND-FAMILY are
+    named INFORMAL analytic boundaries, not Lean declarations. Reuse finite
+    cone lemmas only at checked exact new consumers, no hollow formalization.
+11.Canonical TeX/PDF/wiki unchanged; TeX SHA256
    58b092b258d4f363f8bfa0a02dcf492dcb9c13e794dbcab440bf7b0529b53b7d.
-   Full reviewed Gupper/GLOBALd1 lower retained; sharp upper/source intended
-   normalization/conditional exact limit still OPEN. No source fix/contact/
-   Skorohod/HPC/publication or whole-paper clearance.
-10. New G1-G5 target sourcea97b900,17texts+6FULLimages is FROZEN before
-    long proof. Actual native statement11790 live at last poll; output dir
-    stratonovich-compact-mean-ground-statement-v1. All23live input hashes
-    rechecked unchanged. Root/source book hash ee2cfd1c..., SECOND edition,
-    full title/copyright/p140/141/258/273 viewed; no full-book audit.
-11. NEW fixed-profile-binding-target-v0 and fixed-profile-trial-v0 keep q
-    AND b=.1 fixed at SIX trial/mask scales. Broad L^-alpha potential mass
-    can beat L^-2 kinetic when alpha<2; this is a PROPOSED exact proof
-    route and consistency test, not yet accepted. Earlier actual-trial-v0
-    changed q with scale and is not evidence for the stronger quantifier.
-12. SCALAR ground statement11790 is now TERMINAL PASS_WITH_NOTES/HIGH,
-    12checks218.396s,23bindings/38nativefiles verified; seven notes adjudicated.
-    Scope audit of OWN general-positive-consumer.md (1) found bU-only target
-    insufficient as the sole full-class consumer, not mathematically false.
-    No long scalar proof began. Target-v2 strengthens before proof to compact
-    families/actual ALLpositivePsi means and unchanged raw variance/cost.
-13. New COMPACT-FAMILY statement71921 is the ONLY live reviewer at last poll,
-    source715b6b2,25texts+6images. All31livehashes unchanged. Original exec/
-    native dir recorded; no rerun after observation timeout. Old scalar
-    report/receipt, exact d1 class/cone METHOD and scope fences are inputs.
+   Full Gupper/GLOBALd1 lower retained. Source-energy dictionary, all-alpha
+   variational bridge, sharp upper and conditional exact limit still OPEN.
 
 ## Concrete deliverables for the next session
 
-- Resolve EXISTING compact-FAMILY statement71921 and adjudicate/validate
-  its original result. Scalar statement11790 is already terminal; no rerun.
-- AFTER the strengthened statement passes, write the complete F1-F4 proof:
-  uniform spectra/fractional globalE, fullF constant-forcing projection and
-  complement, actual general positive Psi compact-family/common trial.
-  Get a NEW FULL proof gate before adoption. Do not settle for product tilts.
-- Consider worthwhile typed finite block/projection consumers after statement
-  stabilization, using authorized local Lean only;71facts/18seams/L0 unchanged.
-- Then actual growing-block error/product/raw shifted Gaussian event-cost,
-  all-alpha variational lower; sharp upper/source dictionary remain open.
-- Restore remote sync/integration after serial refs/ownership audit; preserve
-  all pending source revisions and root operational handoffs.
+- Frozen precise NEW-F cone/raw-block/coupled-Gaussian/shift/event-cost
+  target with model-specific falsification, then independent statement gate.
+- Re-establish indexed cone/products/terminal average on actual new F,
+  e0 and O_phi; old d1 algebra is a method, not a theorem automatically
+  on new objects. Check finite Lean reuse at exact consumers if worthwhile.
+- Derive actual SAMErawW/Z Banach-array covariance and rank-one Gaussian
+  shift identity; actual source restart/Young/canonical comparison, uniform
+  block errors (not independent blocks), moderateZ event and point lower.
+- Preserve full positive Psi/raw cost. Only then variational unmasking/
+  all-alpha lower/source dictionary and sharp upper work. No scalar moment
+  multiplication, shifted nonlinear covariance order or limit interchange.
+- Restore serial remote sync/integration when reachable, preserving original
+  scientific revisions and pending root handoffs/isolated source commits.
 
 ## Success criteria for the immediate next step
 
-The strengthened FAMILY statement gate accepts F1-F4 at requested confidence,
-with all findings/source/model matches adjudicated. Preserve the ENTIRE known
-positive Psi(t,x) class, not just f(t)q(x). Actual h_sigma integrates the
-whole time test: h_0 need not vanish even when Psi(0,.)=0. Common wide trial
-must hold for every index and keep original Psi/raw cost fixed. Ground
-constant forcing/fractional/fullF norm bounds remain actual proof obligations;
-statement acceptance and finite matrices are not the theorem.
+Next statement must DERIVE actual raw block identities and NEW-F cone
+inputs, not just assume them as the desired lower result. Coupled blocks
+and Z must be from the same given W; the delta^-1/2 test Jacobian gives
+Cov(X_delta,m,Z)=sqrt(delta) times the actual mean-profile primitive.
+The proposed Gaussian cost is v/(2delta), not a sum of independent-cell
+costs. Actual noisy product must identify the raw masked average before
+using F3 and the exact scaling. The eventual score2intlambda-v/2 remains
+UNPROVED, and source L_* or actual p1 constants are not asserted by merely
+scaling a formal variational score.
 
 ## Anti-success criteria
 
@@ -1035,81 +1023,85 @@ original native v2 exec71921 confirmed RUNNING at last poll,31livehashes
 unchanged; no verdict/proofadoption. No new Lean/count/main constant. Owned
 external launch metadata preserved below. All work still local/isolated.
 
+2026-10-31 full family close: sourcebfbd472/adoptionab6596f, nativeFULL61985
+TERMINAL10HIGH359.291s,no requiredrepairs. All34live/frozen/git/native
+bindings and49nativearchive members verified BEFORE9optional clarifications.
+Self-contained common-H1 form via spectral-core completion, ground before
+conditional positivity, parameter pH2 continuity/gaps, fractional GLOBAL-E
+physical wave incl threshold0/decaying mode, FULLF constant forcing and
+subtracted response, uniform complement/positive entrance+test, actual ALL
+positivePsi mean/variance and fixed-cost broad trial accepted. Actual lambda
+Lipschitz only after finiteR/negative trial. No new moment asymptotic or
+source normalization. FP-GROUND-FAMILY analytic boundary, not Lean proof.
+
+8dc6048 retains UNREVIEWED next-raw-block-event-obligations: exact allclass
+calibration, coupled Gaussian array/marginals/sqrt(delta) mean covariance,
+rank-one sameZ identity, NEWF full cone/error/product/terminal remainder,
+moderatingZ and proposed2intlambda-v/2 target. Old new-phase mismatch kept
+explicit; no random event/cost proof adopted.
+
+f8d62ce retains preparatory ACTUAL originald1-white a.5 four-block Gaussian
+completion/point-FIRST-response tests. Covariance integral evaluator K0
+calibrated, slow/fast Jacobian agree, jointPSD consistency, sameZ Gaussian
+MGF passes; wrong independentZ/missingJacobian/diagonal-onlycost rejected.
+40/65-working-digit agreement not certified accuracy or operator/event
+proof; smooth completion/averaging scope explicitly bounded. No new Lean
+facts/count or main lower/sharp constant. All work still local/isolated.
+
 ## Repo & git state at handoff
 
 Root master before this HANDOFF-only successor:
-6642a346345c89f0a52237e662c93b6a0a602151, pending older0accd3d and operational handoffs.
+af63cfabbca5a1335ce547aca9fc5ece61ee49e9, pending earlier0accd3d and operational handoffs.
 Last verified remote604c60f2f8dc6d1a7635b9af224bbb6e5751d379; <HUB>
-No route to host. No fresh parity, push/sync or master integration.
+No route to host, no fresh parity/push/sync/integration claimed.
 
-ACTIVE isolated research/fixed-mask-young-20261031 HEAD
-715b6b2cd77a49d542e688c5d957244dd937b16d, worktree
+ACTIVE isolated research/fixed-mask-young-20261031 CLEAN HEAD
+f8d62cea9f5424605d9fc113bb4b86d8012cac4d, worktree
 ${HOME}/.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave.
-Accepted Young5969da5 is an ancestor; ground FAMILY target only frozen.
-Owned untracked artifact at capture:
-reviews/2026-10-31-compact-mean-ground/statement-launch-v2.json.
-ONLY live review at last poll: original71921, native directory
-${HOME}/.local/state/Le-AI-Lab/stratonovich-compact-mean-ground-statement-v2.
-Scalar11790 and Young91665/29576/98785 TERMINAL; no new Lean job/foreignWIP.
-Root HANDOFF remains loader entry point. Wiki
-../SPDEs-wiki/content/projects/stratonovich-ham-second-moment.md exists,
-unchanged; no whole-paper/human/novelty/circulation clearance.
+Accepted ground adoptionab6596f and Young5969da5 are ancestors. Next plan/
+controls are separate UNREVIEWED artifacts, all owned files committed.
+No live review/Lean process; original61985/71921/11790 and oldYoung91665/
+29576/98785 all TERMINAL. No foreign WIP, no master integration of isolated
+math. Root HANDOFF is loader entry point; inherited isolated HANDOFF stale.
+Wiki ../SPDEs-wiki/content/projects/stratonovich-ham-second-moment.md exists,
+unchanged. No whole-paper/human/novelty/circulation clearance.
 
 ## Operating notes
 
-Root script/hash/archive/git evidence is distinct from read-only AI review.
-CLI2.1.304 actual Opus5.5/high/HIGHthreshold, full read coverage validated.
-Never relaunch terminal source/statement/full reviews. V1 MEDIUM and v2 HIGH
-both retained; revisions are scientific proof expansions, not format-only
-recovery. Older finite-Gaussian format recovery remains its separate history.
+Root compiler/script/hash/archive/Git evidence differs from read-only AI
+verification. Native Opus5.5/high/HIGHthreshold/CLI2.1.304 identity and full
+required-read coverage validated for all closed gates. Do not relaunch
+terminal processes. Earlier Young MEDIUM record and scalar-family scope
+limitation are preserved, not waived or silently turned into theorems.
 
-Actual fixed-mask raw average is W-measurable; source family may use auxiliary
-Gaussian J. Both constant columns are required. Young uniqueness is Ctheta,
-free group only strongly continuous, source strong integrals need no RNP.
-F=E+R² is the accepted phase here; constants are not global Sobolev vectors.
-Different-phase ground projections/complement estimates remain NEW work.
+Actual phase is F=E plus constants; O_phi includes c1 and actual e0 has
+coordinate norm1. Keep both displacement and FAST velocity at restarts.
+Ground projection has its constant-forcing functional, not a naked globalE
+projection. No original-noise quotient mask multiplier, HS assumption,
+pL1/weighted-tail hypothesis, norm-continuous free group or RNP is needed.
 
-All-alpha-damped-ratio remains an unreviewed later target; scalar D is not
-physicaldimension. Do not modify old V certificate or infer an alpha>1
-moment lower consumer from a scalar calculation. No amsg/contact/setup/HPC,
-official package, source normalization repair or publication transaction.
-New compact-ground review is a statement gate, not a proof gate. Imported
-Teschl10.13 requires an existing ground eigenvalue; the common trial and
-essential threshold0 must establish this first. Old d1 global-E calculation
-is only a method comparator. Do not relaunch new statement11790 after an
-observation timeout; use the original process/authoritative terminal files.
-The next proof uses target-v2 compact families; old target-v1 scalar bU
-is a valid special case only. The actual positive CM mean h_sigma is an
-index family from ALLPsi, not Psi(sigma,.) or a coupling evaluated at0.
-Differentiate the compact time test after zero extension to establish mean
-smoothness, not a nonintegrable derivative of |.|^-a. No nonlinear raw
-shift/event identity is inferred from the linear mean formula alone.
+All positive Psi means integrate the whole time test. Actual mean is smooth
+on a neighborhood of[0,1]; the last full block may use that extension for
+bounds while the observation uses only the terminal remainder. No spectral
+ground outside index[0,1] is automatically assumed. No block independence
+or nonlinear shifted covariance order. Old scalar all-alpha-damped ratio
+target remains UNREVIEWED and needs its own gate; no new lower constant.
 
 ## Risks to monitor
 
-Network sync/integration pending, not a mathematical impasse. Recheck
-reachability and serial refs before push; preserve both lines and foreign
-WIP. No destructive network/Git workaround or fresh parity claim.
+Network sync remains pending, not a mathematical impasse. Recheck serial
+refs/reachability before push/integration; preserve both lines and foreign
+WIP. No destructive Git/network workaround or fresh parity claim.
 
-The new E-plus-constants Young interface and tested raw-average transfer
-are ACCEPTED, but the next compact-mean ground/projection/complement route
-and controls are UNREVIEWED. Require a common negative trial in d3 and
-retain the constant forcing in the left eigenfunctional. No absent pL1
-or weighted-tail hypothesis may be silently imported; specify exact inputs.
-No scalar moment multiplication or arbitrary-phase covariance order.
+The deterministic ground/mean family is ACCEPTED, but NEW-F cone/products,
+actual sameW/Z Gaussian shift/event/cost and original point lower rate are
+NOT. Completion/point-first-chaos benchmarks are not a bounded raw point
+functional on F or a proof for all covariances. No independent-block cost,
+missing time Jacobian, scalar solution-moment multiplication or implicit
+source/large-time limit exchange. Keep original Psi/raw variance fixed.
 
-Full growing product/raw event-cost/all-alpha lower, sharp upper constant,
-source normalization/domain/label and conditional exact limit remain OPEN.
-No source/large-time limit interchange.71facts18seams/L0 unchanged; no
-companion/HPC/contact/Skorohod/source repair/TeX/PDF/wiki/publication.
-Original full goal remains ACTIVE, not complete or blocked.
-Fixed-q quantifiers are load-bearing: enlarging the existence mask/trial is
-allowed, altering the original Gaussian tilt to make a gap is not a proof
-of the stronger G5 assertion. No all-strength binding for one fixed compact
-potential is claimed. Diagnostic quadrature is not a rigorous error or
-eigenvalue certificate; finite matrices are not continuum spectral proofs.
-Scalar-only scope would lose the already known nonseparable positive tilt
-class. This was caught BEFORE long proof; preserve target-v2 family/cost
-quantifiers. Actual mean positivity at index0 comes from the whole time
-integral, not a nonzero initial time-test value. No hypothetical scalar
-success can be stamped as the full-class lower goal.
+Variational unmasking/all-alpha/source energy dictionary/sharp upper and
+conditional exact limit remain OPEN; a formal p-scaling does not prove an
+actual p1 lower or identify source L_*.71facts18seams/L0 unchanged. No new
+private companion/HPC/contact/Skorohod/source correction/TeX/PDF/wiki/
+publication. Original full goal remains ACTIVE, not complete or blocked.
