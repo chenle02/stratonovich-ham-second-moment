@@ -1,9 +1,10 @@
 # Fixed-mask Young evolution on Sobolev phases plus constants
 
-REVISED COMPLETE CANDIDATE, not adopted before independent full proof review.
-Scientific v1 returned PASS_WITH_NOTES/MEDIUM, below the required HIGH gate;
-its receipt/report and original frozen proof are retained. This revision
-expands the two compressed arguments identified by that review.
+ACCEPTED after full scientific v2 review: Opus5.5/HIGH, thirteen checks,
+PASS_WITH_NOTES, no required repairs; scientific source8ad5094. See full
+adjudication in reviews/2026-10-31-fixed-mask-young/. Scientific v1 was
+PASS_WITH_NOTES/MEDIUM and not accepted; that disposition, report and frozen
+proof remain retained. The HIGH threshold was unchanged.
 This applies known Banach Young calculus to the SAME masked source equation.
 Full original all-dimensional sharp second-moment goal remains ACTIVE.
 
@@ -84,6 +85,19 @@ actual distributional free wave. For t>0 its kernel matrix is
 
              [[partial_t G_t, G_t],[Delta G_t, partial_t G_t]].
 
+This matches the Fourier group on E directly. In the unitary convention
+c_d=(2pi)^(-d/2), the actual Green measure has
+hatG_t=c_d sin(t|xi|)/|xi|, so convolution by G_t has multiplier
+sin(t|xi|)/|xi|. This is the Green transform in the named source convention
+(author(2.3),p7). Distributional time differentiation and Delta give the
+other multipliers cos(t|xi|) and -|xi|sin(t|xi|). Hence the matrix agrees
+with S_E on Schwartz phases. Compact-distribution convolution is continuous
+on tempered distributions: its transpose takes a Schwartz test to its
+convolution with the reflected compact distribution, continuously in all
+Schwartz seminorms. Sobolev approximation of E inputs by Schwartz inputs
+and continuity of S_E on E therefore extend this equality to E. Constants
+are then handled by the kernel masses, giving the same operator on F.
+
 Every entry is a compactly supported distribution in the closed ball of
 radius t, including in d3. On constants the entries have masses1,t,0,1,
 giving exactly(1); time reversal gives negative t. Compact-support
@@ -107,6 +121,10 @@ Their Ctheta operator-norm limits therefore satisfy, simultaneously in t,
 and likewise M_E^rho for each fixed rho. Take a common path set using a
 uniformly convergent subsequence, or rational times and path continuity.
 No uncountable-rho path set is asserted.
+For clarity, the accepted source Theorem1 specialized to Y=Y_rho constructs
+M_E^rho as the Lp path limit of sum_(j<=N)Y_rho(f_j)A_j. Its Theorem2 then
+identifies this limit with the ordinary source primitive. These are the
+same raw deterministic coefficients used in passing(2) to the source.
 
 For psi compact smooth equal1 on a neighborhood of supp chi define
 
@@ -174,7 +192,8 @@ Thus, with c_theta=2max(1,C_theta),
 
  N_ell(I_D(V))<=c_theta[D]_theta ell^theta N_ell(V).           (6a)
 
-The same estimate holds for I_(D-D')(V). Choose a driver ball K>=1 and
+The same estimate holds for I_(D-D')(V). Assume explicitly that
+[D]_theta<=K and [D']_theta<=K when comparing drivers. Choose K>=1 and
 ell>0 with c_theta K ell^theta<=1/4. On the complete affine Ctheta space
 of paths with fixed value V_a, V->V_a+I_D(V) preserves that value and
 is a contraction of ratio at most1/4. Its unique solution has
@@ -287,6 +306,10 @@ sup_t||W_n(t)||F<=C_T^(n+1) B_T^n T^n/n!, where
 B_T=sup||B(b(r))||B(F,E) is finite on this fixed source event. The series
 converges in Ct(F) to the ordinary phase, hence its displacement converges
 as a distribution.
+Indeed the Duhamel integral map on Ct(F) has norm at most C_T B_T T;
+uniform convergence permits summing(9a) inside it. The sum solves the
+same Duhamel equation with initial e0, so its identification with the
+ordinary phase follows from the uniqueness proved above.
 
 We identify each displacement explicitly. Let X_0(t,x)=1 and set
 X_n(t)=int_0^t G_(t-r)*(b(r)X_(n-1)(r))dr as the scalar Green recursion.
@@ -343,6 +366,14 @@ uniformly in x and joint measurability. Therefore
 E int |phi(x)u_rho^m(t,x)|dx<=Q_t||phi||1<infinity. Scalar Fubini and
 approximation by simple integrands identify the ordinary spatial integral
 with the Bochner L2 integral, whose norm is at most Q_t||phi||1.
+More explicitly, call that Bochner integral B_phi and the ordinary spatial
+integral C_phi. Weighted Cauchy--Schwarz gives
+E|C_phi|²<=||phi||1 int |phi(x)|E|u_rho^m(t,x)|²dx<=Q_t²||phi||1².
+For every bounded random variable Xi, the continuous L2 functional
+V->E[Xi V] commutes with the Bochner integral. Scalar absolute Fubini
+therefore gives E[Xi B_phi]=int phi E[Xi u_rho^m]=E[Xi C_phi]. Taking
+Xi=sign(B_phi-C_phi) proves equality almost surely. Thus both constructions
+give the same L2 variable without an unproved pathwise/Bochner identification.
 The all-finite-Lp uniform operator-difference convergence of Section5 gives
 
  int phi(x)u_rho^m(t,x)dx -> Z_m(t,phi) in every finite Lp,      (11)
@@ -373,6 +404,12 @@ C_T sup_r(||h(r)||infinity+||h(r)||2), in particular bounded by the displayed
 W1infinity-plus-L2 budget of the target. Replace A by A_h+gA. Equations(6)-(9)
 still apply; the deterministic bounded primitive and bounded g preserve
 uniform square-exponential driver bounds after a deterministic shift.
+Explicitly, if ||A_h||Ctheta<=H, |g|<=G and X=||A||Ctheta, then
+||A_h+gA||Ctheta<=H+GX. If E exp(cX²) is uniformly finite, choose
+c'<=c/(2(1+G²)); then
+E exp(c'||A_h+gA||²)<=exp(2c'H²) E exp(2c'G²X²) is uniformly finite.
+Alternatively (7) and q=1/theta<2 give, for every fixed p,
+pC(1+H+Gx)^q<=cx²+C_(p,H,G,c), proving all evolution moments directly.
 The same probability/uniform-integrability argument proves all-finite-Lp
 source convergence, with constants uniform on bounded displayed budgets.
 The strong-integral and source Picard arguments apply to h+g mY_rho, using

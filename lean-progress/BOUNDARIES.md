@@ -124,3 +124,14 @@ scalar trace summands atL=2m-2,m>=2,q0..L and real eigenvalues, withm1
 separate. No formal Gaussian IBP/trace/dilation/continuum/operator/path
 claim; those finiteanalytic proof steps passed independent review outside
 Lean.71finitefacts/18local-seams does not create an official companion.
+
+Named informal interface FP-YOUNG (not a Lean declaration),2026-10-31:
+notes/fixed-mask-young-constant-phase.md, scientific8ad5094, full v2
+13checks/HIGH283.696s, constructs the actual fixed-mask Gaussian driver on
+E plus two constants, source/Young evolution and W-measurable tested average
+closing accepted F3's L2 premise, all admissible original dimensions and
+covariances. Its Sobolev/distribution/propagation/Gaussian/Young/Bochner/
+source identities are ANALYTIC, not formalized by the existing finite facts.
+Finite exact rational matrix/loop controls are not Lean certificates or
+continuum proofs. No new Lean consumer,verified-fact count,officialpackage/
+companion/lease/registry/HPC gate follows.71facts/18localseams/L0 unchanged.
