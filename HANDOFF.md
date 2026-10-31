@@ -1,4 +1,4 @@
-Last updated: 2026-10-31 09:35 UTC (Codex)
+Last updated: 2026-10-31 09:45 UTC (Codex)
 
 Full original upper/sharp goal ACTIVE. Full-range own-energy lower gain
 accepted; bounded Gaussian-projection sharp-upper opening screen next.
@@ -8,16 +8,20 @@ accepted; bounded Gaussian-projection sharp-upper opening screen next.
 Start in this original root (loader entry), then enter ACTIVE isolated
 worktree ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave, branch
 research/fixed-mask-young-20261031, CLEAN committed HEAD
-378e53973ce675b239a64265f22b416b666be78e.
+d985db1f94827b0492113ef9f160052b73034f57.
 Its Progress.md is current mathematical/workflow authority; inherited
 isolated HANDOFF is stale. Root master payload integration/push still pending.
 
 FIRST perform the local wiki CLI search/cite plus synthesized-page/held
 primary-source crosswalk for the PRE-PROOF upper question in
-reviews/2026-10-31-upper-gaussian-projection-screen/target-v0.md.
+reviews/2026-10-31-upper-gaussian-projection-screen/target-v1.md.
 Then falsify the precise U-CM averaged-operator Cameron norm claim on
 simple actual controls before an independent statement gate/long proof.
-No new operator, concentration or original sharp-upper theorem exists.
+C1-C3 in v1 propose spatial H^s covariance products/local compactness,
+Hilbert-valued temporal mean compactness and the exact averaged CM bound.
+Time raw H here must be restricted to tests on(0,1) for the proposed tensor
+identification; blocks use the true last partial horizon. No new operator,
+concentration or original sharp-upper theorem exists.
 
 The new accepted lower is notes/all-alpha-damped-lower.md,
 scientificed2e5f5/adoptionb5628d5:10checks/HIGH318.460s,no requiredrepairs.
@@ -49,7 +53,7 @@ scalar/fixed-mask replacement or declared complete.
 1. Read AGENTS.md, PROJECT-GOAL.md and ROOT/ACTIVE Progress.md. Current
    synopsis is authoritative; older opening summaries explicitly historical.
 2. Check root/isolated ownership/status. Root before this HANDOFF-only
-   successor5dc4fab01ddeef6d643898050709a7e27047243f; isolated378e539.
+   successor8621ee368e055d21b8e8ce75211414280229aa5c; isolated378e539.
    Preserve both pending lines/foreign WIP. No reset/drop/blind integration.
 3. Serial remote audit: last VERIFIED origin/<HUB>
    604c60f2f8dc6d1a7635b9af224bbb6e5751d379. Focused SSH/fetch/push
@@ -91,7 +95,7 @@ scalar/fixed-mask replacement or declared complete.
    lean-v1/lean-v2; exact full evidence also in project local-check archives.
    Do not relaunch terminal jobs; older failed/MEDIUM/recovery records retain
    their exact historical scopes.
-11.Upper screena5c9713 is PRE-PROOF only. Its helper/data use a fixed spatial
+11.Upper screena5c9713/v0 and refinedd985db1/v1 are PRE-PROOF only. Its helper/data use a fixed spatial
    test of variance3/2, not a change in original Gamma. Floating covariance
    controls are not operator/SPDE/concentration/error certificates.
 
@@ -1143,16 +1147,23 @@ enumeration; PRE-PROOF/no operator or upper claim. Full original source
 normalization/domain/matching sharp upper/exactlimit remain OPEN.
 Canonical TeX/PDF/wiki unchanged, no source repair or correspondence.
 
+2026-10-31 upper next-step refinementd985db1: target-v1 states proposed
+C1-C3 covariance product/spatial compactness, temporal/Hilbert-valued mean
+compactness and actual projection/fast-pullback averaged norm. All are
+UNREVIEWED with explicit r/p/theta ranges and no instantaneous Gaussian
+multiplier inference. Scalar v0 calibration and all current upper/cone/
+point/source gaps preserved. No new accepted result/count/package.
+
 ## Repo & git state at handoff
 
 Root master before this HANDOFF-only successor:
-5dc4fab01ddeef6d643898050709a7e27047243f, prior0accd3d plus operational
+8621ee368e055d21b8e8ce75211414280229aa5c, prior0accd3d plus operational
 handoffs pending separately. Last VERIFIED remote
 604c60f2f8dc6d1a7635b9af224bbb6e5751d379; NoRoute prevents fetch/push,
 no fresh parity/sync/master merge claimed.
 
 ACTIVE isolated research/fixed-mask-young-20261031 CLEAN HEAD
-378e53973ce675b239a64265f22b416b666be78e, path
+d985db1f94827b0492113ef9f160052b73034f57, path
 ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave.
 All payload owned/committed; no foreign WIP/live reviewer/Lean/Git job.
 Full reviewer58486 terminalacceptedHIGH. Frozened2e5f5 proof/report remain.
