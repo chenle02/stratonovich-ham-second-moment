@@ -7004,3 +7004,20 @@ quarterpower/actual rate proofs. No static theorem adopted. Complete proof
 NEXT, then NEW FULL gate.73facts19seams/L0 unchanged, full original goal
 ACTIVE. No contact/Skorohod/HPC/sourcefix/companion/TeX/PDF/wiki/bib/promotion;
 NoRoute/localisolated/pushpending/no fresh parity/master merge.
+
+### Complete S1-S4 signed rough static proof candidate frozen — 2026-10-31
+
+After corrected statementa4085ce, notes/upper-signed-static.md supplies
+actual multiplier closure/form/SA/quarterpower, beta=spectralbottom and
+quantitative continuity, full weighted spectral matrix with explicit16
+polynomial budget/EXACT lambda, true rough physical E/F identification
+through dense graph data (no H2 or unproved3/4-domain), both constants,
+actual compact mean Bochner averages and direct rate continuity. All8v2
+notes addressed; priorv1FAIL and temporal bubble guard retained. Full proof
+is CANDIDATE, not a static/operator/point theorem before NEW FULL gate.
+
+Frozen28inputs (21TEXT+7PRIMARY images). Existing REAL weightedAMGM
+type/actual1/2-power guards supplied, no new source/compiler/kernel/count
+73facts19seams/L0. Original sharp/source goalACTIVE, all point/growingcone/
+product/actiontail/normalization gaps retained. No contact/Skorohod/HPC/
+sourcefix/companion/TeX/PDF/wiki/bib/publication, NoRoute/localisolated.
