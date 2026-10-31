@@ -6992,3 +6992,15 @@ handle polled stillRUNNING at13:13:43UTC; no restart or verdict inference.
 Next inspect same handle/native receipt, then canonical validation/archive/
 adjudication before a complete proof. V1 scientificFAIL preserved, no
 static upper, source normalization or whole-goal completion claimed.
+
+### Corrected S1-S4 statement gate accepted — 2026-10-31 UTC
+
+Original56325 TERMINAL,16checks PASS/HIGH224.59seconds,no requiredrepairs.
+Canonical report/pass/correspondence/readcoverage pass,ALL7PRIMARY images;
+25live/frozen/Git/native bindings and40native archive members verified.
+V1 FAIL/HIGH retained, corrected exact2<r<2/a, no confidence-only retry or
+waiver. All8minor notes adjudicated for full beta-spectrum/rough physical/
+quarterpower/actual rate proofs. No static theorem adopted. Complete proof
+NEXT, then NEW FULL gate.73facts19seams/L0 unchanged, full original goal
+ACTIVE. No contact/Skorohod/HPC/sourcefix/companion/TeX/PDF/wiki/bib/promotion;
+NoRoute/localisolated/pushpending/no fresh parity/master merge.
