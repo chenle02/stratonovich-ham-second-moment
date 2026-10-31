@@ -40,10 +40,11 @@
  232.556s,17bindings/32native members verified. Exact physical blocks,
  polynomial B/K budgets and integrated spectral rate on EVERY polynomial
  control radius, fixedR and delta-beforeB only.
-- **Immediate next:** freeze/falsify actual fixed-mask Gaussian operator
- upper using finite-head bulk/tails/action, existing rawrestart and exact
- limit order. No original POINT/growingcone/sourceconstant upper yet.
- V1 temporal-range FAIL retained; exact2<r<2/a.
+- **Immediate next:** inspect original FULL GL review24498/native
+ stratonovich-upper-gaussian-scientific-v1 on180bf1a. Complete fixedR
+ Gaussian operator upper and1localfinite-tail fact are CANDIDATE pending
+ FULL analytic/type/application gate; statement12HIGH passed separately.
+ No original POINT/growingcone/sourceconstant upper yet; exactr<2/a.
 - **Still open:** intended author-energy/domain/normalization dictionary,
   matching sharp upper constant and conditional exact limit. Original full
   goal ACTIVE; no whole-paper/circulation/wiki/master integration clearance.
@@ -7218,3 +7219,11 @@ Frozen43complete TEXT bindings. Numerical/scalar priorart/primary scopes
 explicit, no new kernelcountpromotion. Full original goalACTIVE; growing
 cone/POINT/sourceconstants/exactlimit OPEN. No contact/Skorohod/HPC/sourcefix/
 companion/TeX/PDF/wiki/bib/publication, NoRoute/localisolated/pushpending.
+
+GL FULL review launched original24498 on180bf1a,43TEXT bindings verified
+live/frozen/Git. Same original handle/native receipt, no restart on timeout.
+Statement51356 TERMINAL accepted12HIGH360.315s; full proof has no verdict
+at capture. Newfinite1fact provisional,73accepted/19seams unchanged until
+FULLapplication passes. Asked closeness: full original sharp-point goal
+NOT near certified completion; growing-cone transfer and intendedsource
+normalization remain substantial OPEN gaps. GoalACTIVE, no shrink/pause.
