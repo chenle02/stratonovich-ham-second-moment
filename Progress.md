@@ -6430,3 +6430,19 @@ One OLD entropy fact/actual guards, no kernel/replay/count/module/package.
 Omega>1/intended source-domain/sharpupper/exactlimit/fullgoal OPEN. No
 contact/Skorohod/HPC/sourcefix/TeX/PDF/wiki/publication. NoRoute/localisolated/
 no parity/master integration. Next NEW full native Opus5.5/HIGH proof gate.
+
+### Next all-alpha scalar target refreshed, not proved — 2026-10-31 UTC
+
+During confirmed-live full occupation review51631 atsource249e2c4, preserve
+old all-alpha target/diagnostics/packet and freeze target-v2 with SCALAR
+J_a(q) name distinct from energy F_a(z). Old universal V certificate unchanged.
+New application would use all-dimensional B1-B5 if its pending full gate
+passes; no promotion of old d1 X/HS or unreviewed Omega theorem.
+
+Proposed valuable finite triage: joint-moment lower bound and rational gap
+algebra, with exact positive guards, only AFTER statement/reuse search and
+standalone local type/compile/replay controls. No new code/kernel/count/
+module/package now. GlobalOmega.rational_lt_one remains exact reuse at
+x=a/2 after source/type/formula audit. Next independent statement gate
+before long scalar proof. Original all-Gamma sharp/source/fullgoal ACTIVE;
+Omega>1/point consequence stillUNREVIEWED, no source-domain identity.
