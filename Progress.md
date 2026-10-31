@@ -7199,3 +7199,22 @@ match. Native archive/member readback PASS. No donor/source/dependency
 build or pin drift; Cli lacks unused builtlib, corrected type-preflight
 path list before any proofcompile.73acceptedfacts19seams plus1PROVISIONAL,
 actual GLcutoff/half-density/application remains NEW FULL review obligation.
+
+### Complete GL1-GL3 Gaussian operator proof candidate frozen — 2026-10-31
+
+After statemente5f71b5/localfinite2ec5f3c, notes/upper-gaussian-operator.md
+supplies actual NOISE-ONLY globalrestart/BJindependence, headlawhalf-action,
+Borelnorm/baseline/finiteness, ownALLsignedscorecoercivity, explicitcoarse
+A0/A1/eta_B, conditionalbulk, actualcutoff/densitysplit/2^J tail anddelta-
+thenJ-thenB upper. All9statementnotesaddressed. CANDIDATE, not operator/
+point/sourceconstant theorem before NEW FULL scientific/type/application.
+
+One newfinitefencedkernel localtype/axioms/5replaypairs/3false controls
+passed; actual C=A1B3nu,M_B,headnorm/cutoff proofs written, allanalytic
+Gaussian/conditional/limit/SPDE obligations remainoutsidekernel.73accepted/
+19seams plus1PROVISIONAL, officialcompaniondecision4 unchanged.
+
+Frozen43complete TEXT bindings. Numerical/scalar priorart/primary scopes
+explicit, no new kernelcountpromotion. Full original goalACTIVE; growing
+cone/POINT/sourceconstants/exactlimit OPEN. No contact/Skorohod/HPC/sourcefix/
+companion/TeX/PDF/wiki/bib/publication, NoRoute/localisolated/pushpending.
