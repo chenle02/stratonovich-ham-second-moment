@@ -1,12 +1,13 @@
 # Uniform E signed spectral rates, mean products and arbitrary small residuals
 
-UNREVIEWED COMPLETE PROOF CANDIDATE. US1-US4 statement/source/type gate
-43ff384/adoptionda79a8d passed actualOpus5.5/HIGH,19checks,607.619s,
-no requiredrepairs. All10notes adjudicated before this proof,including
-correction of the reviewer's balanced-mode observation. This note requires
-its OWN FULL independent proof/source/type/application gate before use.
-Original all-Gamma/d1/2/3 sharp/source goal ACTIVE. No sharp-score Rayleigh
-application,signed-positive comparison,source constant or exactlimit here.
+ACCEPTED at the scoped FULL analytic/source/type/actual-E application gate:
+scientifica14c6bb,actualOpus5.5/HIGH,27checksPASS,519.949seconds,no required
+repairs. All51five-way input bindings and66nativearchive members verified
+BEFORE optional clarity edits. All6minor findings adjudicated in
+reviews/2026-10-31-uniform-e-spectral-product/scientific-adjudication-v1.md.
+Frozen proof/report unchanged. Statement43ff384/adoptionda79a8d passed
+separately19HIGH607.619s. Uniform E spectral/product tool only; original
+all-model sharp/source goal ACTIVE. No signed-score moment upper yet.
 
 ## 1. Exact objects and imported inputs
 
@@ -18,10 +19,18 @@ with real Hilbert norms and closed isometric inclusion i:E->F. For each
 finite R>=1 use m_R=eta_root(x/R)^2 ONCE,after source smoothing,where the
 accepted real even compact smooth root profile is fixed. All velocities
 are retained. H_I=H_t tensor H_sp is the supported slow raw completion,
-not a raw time-indicator multiplier. Choose once
+not a raw time-indicator multiplier. Write j_I:H_I->H_W for its isometric
+inclusion into the full positive-time raw Hilbert space. Choose once
  1/2<theta<min(1-a/2,(3-a-alpha)/2), nu=1/theta,
  1/(1-theta)<r<2/a, nu<=p<2<r.
 In particular 1<nu<2<r and 1-1/r>theta. The strict gaps are nonempty.
+For the SP import choose 0<gamma_SP<min(1/2,(2-alpha)/2) and
+ theta<beta_SP<min(1-a/2,(3-a-alpha)/2),possible in these strict gaps.
+For Gamma=0,H_sp=H_I={0},mathcalV_E,R={0},H_V=-Delta,beta=lambda=Rate=0,
+Pmean_m=S_E(ell_m). Read M_0=C_mean=0; all mean bounds are direct zero
+identities and SP Section8 supplies the free baseline. This case needs no
+extension of U/C3's nonzero-noise imports. Generic residual estimates still
+act on the nonzero phase E.
 
 Direct OWN accepted imports,checked below for the new applications:
 - C3 (upper-cameron-compactness.md Sections3-7): actual compact masked
@@ -95,7 +104,10 @@ Complexify the Hilbert spaces. The complex norm of M equals its real
 norm: sum the squared real/imaginary input and output norms. The symmetric
 real pairing becomes Hermitian,whose diagonal splits into its real and
 imaginary diagonal values. Thus (4) and all following constants hold in
-the complexification. Real restrictions commute with conjugation by
+the complexification. Real and complex unit form infima agree: the complex
+diagonal divided by its squared norm is a convex combination of the real
+normalized diagonal values,omitting zero parts; reverse inequality follows
+by restricting to real vectors. Real restrictions commute with conjugation by
 uniqueness of forms/resolvents/calculus. No additional complex norm cost.
 
 ## 3. E-only form,quarter phase and exact spectral rate
@@ -136,7 +148,8 @@ when v!=0. Completion gives exactly Hminus-half. Hence,with
  M_K^2=sqrt(3(1+K^2))<=2(1+K).                            (8)
 The inverse lower constants are dominated by M_K because K>=1.
 
-For unit L2 u, (5) gives q_V(u)>=z^2-1-Kz>=-K^2. Conversely take a
+For unit L2 u,we have b=1 and z=||u||H1>=1. Then (5) gives
+q_V(u)>=z^2-1-Kz>=-K^2. Conversely take a
 unit compact smooth bump,dilate it by a large scale and translate its
 ENTIRE support outside supp m_R. Potential pairing0,kinetic energy->0.
 Thus beta(V)=inf_unit_H1 q_V satisfies -K^2<=beta<=0,uniformly in value
@@ -150,17 +163,20 @@ Such support is nonempty since scalar spectral measures of unit vectors
 have mass1. This verifies inf spectrum H_V=beta. Put lambda=sqrt(-beta)
 <=K; every spectral h has h+c>=2. No eigenstate,gap or positive lambda.
 
-Define C_t(h),S_t(h) by cos(t sqrt h),sin(t sqrt h)/sqrt h for h>0;
+Define Cos_t(h),Sin_t(h) by cos(t sqrt h),sin(t sqrt h)/sqrt h for h>0;
 by1,t at h=0; by cosh(t sqrt(-h)),sinh(t sqrt(-h))/sqrt(-h) for h<0.
 Under the E_A isometry the spectral wave matrix is
- [C_t(h), sqrt(h+c)S_t(h);
-  -hS_t(h)/sqrt(h+c), C_t(h)].                            (9)
-For h>=0,|C_t|<=1,|S_t|<=min(t,h^-1/2),upper offdiagonal<=1+sqrt(c)t,
+ [Cos_t(h), sqrt(h+c)Sin_t(h);
+  -hSin_t(h)/sqrt(h+c), Cos_t(h)].                            (9)
+For h>=0,|Cos_t|<=1,|Sin_t|<=min(t,h^-1/2),upper offdiagonal<=1+sqrt(c)t,
 lower<=1,with continuous value sqrt(c)t,0 at h=0. For beta<=h<0,
-|C_t|<=exp(lambda t),|S_t|<=t exp(lambda t),upper<=sqrt(c)t exp(lambda t),
+|Cos_t|<=exp(lambda t),|Sin_t|<=t exp(lambda t),upper<=sqrt(c)t exp(lambda t),
 lower=sqrt(|h|)sinh(t sqrt(|h|))/sqrt(h+c)<=K exp(lambda t).
 Since sqrt(c)<=2K,each entry is <=2(1+K)(1+t)exp(lambda t). PRIMARY3.1
-bounds each operator entry; a2x2 block matrix has norm<=twice that bound.
+bounds each operator entry; before that application all entries in(9)
+are set0 OFF THE CLOSED SPECTRAL SUPPORT. This produces bounded Borel
+functions on all of R without changing their spectral operators. A2x2
+block matrix has norm<=twice the entry bound.
 Combining(8),
        ||P_V^E(t)||B(E)<=8(1+K)^2(1+t)exp(lambda(V)t).       (10)
 Dominated spectral convergence and scalar addition formulas give a
@@ -177,7 +193,7 @@ their integral is Lipschitz. Thus the generic Young equation equals the
 ordinary bounded-interaction equation,as required by that imported
 Duhamel/core identification. Its generator's form is EXACTLY q_V above,
 so PRIMARY2.14 uniqueness identifies H_V,independently of the old shift
-chosen using ||L_F||. The spectral scalar functions C_t,S_t depend H_V,
+chosen using ||L_F||. The spectral scalar functions Cos_t,Sin_t depend H_V,
 not the auxiliary shift; on dense spectral-cutoff data the old/new groups
 coincide,and boundedness extends equality to E. No old quantitative F
 bound is transferred. All constants in (5)-(10) use k_E alone; chi_R and
@@ -225,8 +241,10 @@ W=mathcalT_R Phi,barW=A_delta^K(E)W,||Phi||<=M,Z=C_mean M,
  ||W||Lr,||barW||Lr<=Z,
  ||barW-W||Lr<=M_0 M omega_delta=:Omega_delta(M)->0         (14)
 uniform R>=1. Averages stay in the same closed E class. There is no claim
-that (C_t tensor Id) or the spatial family is compact; the accepted U
-orthonormal spatial sequence refutes precisely that stronger claim.
+that the tensor map is compact: when C_t!=0 and H_sp is infinite dimensional,
+the accepted U orthonormal spatial sequence refutes tensor compactness.
+No conclusion about compactness of the composite spatial family is drawn;
+indeed each fixed-R completed mean is compact by C2. Only(12)-(14) are used.
 
 Equation(11),pointwise with K(s)=max(1,||W1(s)||,||W2(s)||),and scalar
 Cauchy-Schwarz yield
@@ -275,7 +293,7 @@ have norm>=1 by OWN SP4. Here is the exact fit: U Sections2/6 constructs
 J_R and (1) as the E restriction i^*mathcalT_F i of C3's completed field.
 SP Section7 (19)-(23) uses that SAME compression and the SAME physical mask
 eta_root(x/R)^2 after smoothing. At each fixed delta its fast direction
-phi_m=delta^-a/2 T_m^*Phi is a finite raw vector,identifying this primitive
+phi_m=delta^-a/2 T_m^*j_I Phi is a finite raw vector,identifying this primitive
 up to ell_m and then constant stopping. Its norm is NOT a uniform cost.
 SP's c=0 pure-mean symplectic identity therefore gives
              ||Pmean_m||>=1, every R,Phi,delta,m.          (20)
@@ -358,7 +376,8 @@ prescribed diagonal B_delta,M_delta follows.
 
 At each fixed R,B,delta,the mean primitive is a bounded linear map of
 Phi into a separable finite product of little-Holder K(E) spaces. Young
-endpoints are locally Lipschitz; their norms are positive,so their logs
+endpoints are locally Lipschitz (OWN fixed-mask Section4(6a)-(6b),SP Section5);
+their norms are positive,so their logs
 are continuous. Rate is continuous by(15). All deterministic suprema on
 closed control balls are finite by (18)-(19) and are suprema of Borel
 continuous functions of Phi. Separability gives a countable dense subset
@@ -373,7 +392,7 @@ Let x_m be ANY zero-start little-theta-Holder compact-operator paths on
 [0,B],v_m=||x_m||theta,Y=(delta sum v_m^p)^(1/p). No Hamiltonian,Gaussian
 or Cameron condition. Define Ppert_m=S_E(ell_m)U_(H_m+x_m)(ell_m).
 Free/Young evolutions are invertible (OWN E1 Section2),so all endpoint
-norms are positive. Put z=product_m ||Ppert_m||/||Pmean_m||.
+norms are positive. Put z_ratio=product_m ||Ppert_m||/||Pmean_m||.
 
 For any fixed Kres>=1,on ALL cells with a_m<=Kres,(2) gives logratio
 <=C(theta,B,Kres)(v_m+v_m^nu),with the actual physical left endpoint.
@@ -382,25 +401,25 @@ On bad cells a_m>Kres,use(19),convexity
 The logratio is then <=c_B(1+a_m^nu+v_m^nu),with c_B positive independent
 Kres,R,delta,Phi,M. Increase C_Kres to dominate both c_B and the good
 constant. Summation and(21) imply,with a NONNEGATIVE right side,
- log max(1,z)<=C_Kres sum(v_m+v_m^nu)
+ log max(1,z_ratio)<=C_Kres sum(v_m+v_m^nu)
                 +c_B sum_(a_m>Kres)(1+a_m^nu).
-Here logmax follows because logz is bounded by that nonnegative number.
+Here logmax follows because log(z_ratio) is bounded by that nonnegative number.
 The bad sum is <=D_M/delta*(Kres^-r+Kres^(nu-r)).
 Apply the same complete finite powermean type at exponents p>=1,p/nu>=1
 and values v_m,v_m^nu>=0. After positive powers,
  delta sum v_m<=(2/B)^(1-1/p)Y,
  delta sum v_m^nu<=(2/B)^(1-nu/p)Y^nu.
 Equality p=nu and zero entries cause no singular powers. Consequently
- delta log max(1,z)
+ delta log max(1,z_ratio)
  <=C_Kres[(2/B)^(1-1/p)Y+(2/B)^(1-nu/p)Y^nu]
           +c_B D_M(Kres^-r+Kres^(nu-r)).                  (31)
 All constants uniformR; this proves US4a with SP mean denominator only.
 
 Let Aprod=product_m||Pmean_m||>=1. Submultiplicativity gives
- ||Ppert_N...Ppert_0||<=Aprod*z,
- max(1,||ordered product||)<=Aprod*max(1,z).
+ ||Ppert_N...Ppert_0||<=Aprod*z_ratio,
+ max(1,||ordered product||)<=Aprod*max(1,z_ratio).
 Thus,with F=2delta logmax(1,||ordered product||),
-       F-2delta sum log||Pmean_m||<=2delta logmax(1,z).     (32)
+       F-2delta sum log||Pmean_m||<=2delta logmax(1,z_ratio).     (32)
 This is an inequality,not operator commutation or scalar displacement
 multiplication. F is defined continuously on ALL tuples by generic Young,
 including nonphysical residuals; it is not an a.s.-only solution map.
@@ -437,7 +456,7 @@ operator/limit claims remain INFORMAL analysis,not Lean. Old full Mathlib
 AMGM/powermean types reused with their actual guards; no new kernel/source/
 compiler/factcount74facts20seams/L0. Historical upstream counts not rewritten.
 
-This is a complete UNREVIEWED uniform E spectral/product proof,not a sharp
+This is an independently reviewed uniform E spectral/product proof,not a sharp
 moment theorem. BT Rayleigh signed-score integration and its explicit
 bulk/tail/normalizer limits,signed-positive variational/mask removal,
 intended source normalization/constants and conditional exact limit remain

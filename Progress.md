@@ -7922,3 +7922,26 @@ Skorohod/sourcefix/TeX/PDF/wiki/bib/publication, NoRoute/pushpending.
 ## US complete uniform-E proof frozen for FULL gate — 2026-10-31
 
 [held back: AI account details]
+
+## US1-US4 FULL uniform-E proof accepted — 2026-10-31
+
+- Scientifica14c6bb,original4664 TERMINAL0,actualOpus5.5/HIGH,27checksPASS,
+  PASS_WITH_NOTES,no requiredrepairs,519.949s. Canonical parse/pass/report-
+  correspondence/fullcoverage including10PRIMARYimages validated. All51
+  five-waybindings beforeoptionalclarity;66nativearchive members readback
+  hashchecked; rawreportunchanged,no model/threshold/confidenceretry.
+- All6minor findings adjudicated/clarified: explicitz>=1,spectralfunctions0
+  offsupport/realcomplexforminfima,zeroΓdirectreduction,tensor-onlyno-go
+  language,SPauxiliarygaps/supportedinclusion/Youngpinpoint,naming. Fullgate
+  independently confirmed rootcorrection ofstatementreviewer'sQ2 error.
+- Accepted INFORMAL exact E-only spectral/staticactualidentity,uniformtime
+  averaging/rates,uniformmeanproducts/polynomialballs/truepartial,arbitrary
+  residual/max1orderedproduct/iteratedlimits. SharpRayleighsignedscore
+  momentupper and signedpositive/sourceconstants/exactlimit remainOPEN.
+- Timely existing skill lesson Lab00264bba pushed: retain precision-specific
+  maxima/case identities or percase residuals,not onlyaggregate. Validation/
+  generator/projections/strictbudget and3runtimebyteparity PASS; Labclean0/0.
+  No newnumeric/CAS/Lean/compiler/count74facts20seams/L0.
+- Fresh<plan removed>route actualverified. SpentTeamREADYfailure retainedNONreview;
+  applicationlesson inspectquotaoutput BEFORE dependentprobe/accountchoice.
+  <HUB>NoRoute,newresearchworkLOCAL; originalallmodelgoalACTIVE.

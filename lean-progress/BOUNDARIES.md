@@ -395,3 +395,21 @@ certifies no Gaussian measure,integral,operator or SPDE theorem. Sharp
 uniformE spectral/product envelope,signed-positive/sourceconstants and
 exactlimit remainOPEN; companion/privatepackage/registry/HPC/public gates
 unchanged. No formal-count inflation from this analytic application.
+
+## FP-UNIFORM-E-SPECTRAL-PRODUCT: signed rates,products and residuals
+
+Scientifica14c6bb,27checks/HIGH519.949s,FULL analytic/source/type/actual-E
+application gate. OldMathlibAMGM weights1/2,nonnegativesquaredbases,sum1;
+oldpowermean exponentsr,r/nu,p,p/nu>=1,nonnegativevalues,n>=2,delta>0 and
+positivepowers reused withcompletepublictypes/axioms. No newkernel/source/
+compiler/factcount74facts20seams/L0. Numerical/CAS are not formal proofs.
+
+Eclosure/reconstruction/fixedRFactualidentity,complexform/representation,
+quarter-orderresolvent/spectralnorm/bottomcontinuity,completedscalar-time
+Bochneraveraging/tensor/rateuniformity,Efree/primitive/Youngbounds,actualSP
+meanfit/fullgoodbad/truepartial/polynomialballs,arbitraryresidual/max1
+orderedproduct/iteratedlimits/supmeasurability are reviewed INFORMAL analysis.
+PRIMARY Teschl/Young imports remain imports. No unproved uniform spatial
+compactness/noncompactness of a composite E family; tensor no-go only.
+SharpRayleighsignedscoreconsumer,signedpositive/sourceconstants/exactlimit
+remainOPEN; no new officialcompanion/package/registry/lease/HPC/publicgate.
