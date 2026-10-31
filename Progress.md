@@ -6222,3 +6222,22 @@ All original covariance classes/dimensions and positive Psi retained.
 This is NOT proof adoption or source-energy/sharp-constant identification.
 
 [held back: AI account details]
+
+### Next unmasked variational target frozen, not proved — 2026-10-31 UTC
+
+While original full raw-block review88012 is live at sourced4d876e,
+freeze ONLY proposed U1-U4 in reviews/2026-10-31-unmasked-variational-target/:
+global bounded mean, monotone compact-mask Rayleigh rates to unmasked
+bottom, conditional original-point lower, all-dimensional Radon dilation
+and auxiliary S_c=c^((4-alpha)/(3-alpha))S_1. No long proof/adoption before
+independent statement gate, and raw point theorem remains prerequisite.
+
+Falsification-v0 explicitly tests admissible d2 Gamma=delta_(x1)tensorLeb_(x2):
+mean independent of x2, bottom approached by long normalized tubes, no L2
+bottom eigenvector. This screens OUT unmasked decay/isolated-ground claims;
+only compact masks may use the accepted projection/gap/cone. Elementary
+white/invariant covariance Jacobian and moving-mask controls recorded.
+Not an independently accepted new no-go theorem or covariance-class reduction.
+No d1 rough X/Sobolev supremum theorem promoted, no actual p1/source-energy
+identity from auxiliary scaling. No new Lean/kernel/count/package, HPC,
+contact/Skorohod/sourcefix/TeX/PDF/wiki/publication or fullgoal completion.
