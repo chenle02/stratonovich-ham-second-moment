@@ -7256,3 +7256,25 @@ unchanged; no package/registry/lease/HPC/publicrelease. Original growingcone/
 POINT/signedpositive/sourceconstants/normalization/exactlimit remain major
 OPEN gaps; fullgoalACTIVE and not near certifiedcompletion. No contact/
 Skorohod/sourcefix/TeX/PDF/wiki/bib/publication, NoRoute/pushpending.
+
+## Growing-cone point upper transfer — statement freeze 2026-10-31
+
+- Previous goal turn was a status-only NO PROGRESS turn. Revalidated the
+  authority and resumed GC1-GC3, the original-point upper-transfer component.
+- Frozen proposed exact source-cone identity, spatial average-of-SQUARES,
+  actual E raw limit and polynomial compact-data budget in
+  reviews/2026-10-31-growing-cone-point-transfer/target-v1.md. This reduces
+  the original point upper to a still-UNPROVED growingR E operator upper.
+- Actual d1 free/source-pulse, deterministic heat-mask, auxiliary stationary
+  harmonic-observable and d1/2/3 data-scaling diagnostics retained. No raw
+  stochastic/operator or certified-numerical claim. Full accepted F(11)
+  point second-moment limit and actual fast-source law crosswalk checked;
+  compact-data scalar source identification is a NEW proof obligation.
+- Eighteen exact input texts frozen for independent pre-proof statement,
+  source and old finite-type/application review; no new Lean declarations,
+  official companion or count change (74facts20seams/L0 PROPOSED).
+- Fresh fetch and focused <HUB> SSH both terminal255 NoRoute. Last
+  verified remote604c60f; preserve isolated/root histories, no fresh parity.
+  No manuscript/wiki/TeX/PDF/bib integration or full round-close claim.
+- Original all-model sharp upper/source normalization/exact limit remain
+  OPEN; full objective ACTIVE. Statement and FULL scientific gates pending.
