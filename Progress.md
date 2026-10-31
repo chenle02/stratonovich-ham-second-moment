@@ -5849,3 +5849,35 @@ not independentnovelty or analytic-semigroupwave theorem. Scopeoriginal
 allcovariances/d1/2/3/fullsharp goalACTIVE. No newlongproof/Leanupgrade;
 71facts18seams/L0 unchanged, no companion/HPC/contact/Skorohod/sourcefix/
 TeX/PDF/wiki/publication.
+
+### E-plus-constants Young statement accepted; full proof candidate — 2026-10-31 UTC
+
+Native Opus5.5/high fifteenchecks PASS_WITH_NOTES/HIGH414.046s,12TEXTS;
+no requiredrepairs. All12live/frozen/git2a46ec2/nativeworkspacebindings and
+27nativearchive members verified beforeproof. Root canonicalreport/passing/
+correspondence/requiredreadcoverage pass. Original91665terminalresult,
+directvalidJSON/no relaunch/recovery/confidencechange. Thirteen minor notes
+adjudicated: maskshape/support, allfixeddependencies/gamma, sqrtp->squareexp,
+CtCc-infinity(K) deterministicbase, uniqueCtheta class, physicalconstant
+transport, totalphasecancellation/propagation, actualsourceidentity/Picard
+matching, explicitdiagnosticgrid/droppedcolumncontrols, borrowedwitness
+limits, sevenanalyticgroups andprioracceptancecustody.
+
+NEW COMPLETE CANDIDATE notes/fixed-mask-young-constant-phase.md: F=E+R²
+completeinjectivedistributionphase/constantsoutsideglobalSobolev, fullfree
+group/propagationincllocallycancellingdata, boundedphysicalcutoff/actual
+constantcolumns/sourceconvergence andordinaryfirstresponseonF; standard
+BanachYoungleftflow/range/constantcoordinateidentity, Gaussianmoments/UI/
+measurablesourceoperatorconvergence; sourcePicardphasematchingbydistribution
+limitsratherthanpointSobolevtrace; W-measurablerawmaskedaverageandclosing
+EXACTacceptedF3L2premise; optionalrealcompactCtCc-infinitybase, NOrawCM
+shift presumed. Allclaims CANDIDATE pending fullgate, not yetadopted.
+
+V2 finitecode derivesactualtimegrid/seminormbound andexplicitwrongdropped
+columns; rootexecutedv1/v2, historicalv1retained. NineteenTEXTscientific
+packetfrozen. Work isolatedbranch/notintegrated/notpushed; <HUB>still
+unreachable,lastverifiedremote604c60f. Root master99e596f containspending
+prioradoption/handoffs, no freshparityclaim. FulloriginalgoalACTIVE; no new
+Leanclaim/countupgrade,71facts18seams/L0 unchanged. Groundgap/complement
+onTHISF/rawshift-event-cost/d2d3lower/sharpupper/sourceenergy remainOPEN.
+No companion/HPC/contact/Skorohod/sourcefix/TeX/PDF/wiki/publication.
