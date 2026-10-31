@@ -6743,3 +6743,15 @@ controls pending independent statement/full gate. It is NOT a nonlinear/
 original point upper. Full original source/sharpupper/exactgoal ACTIVE/OPEN;
 no contact/Skorohod/HPC/sourcefix/TeX/PDF/wiki/bib/companion/publication or
 wholepaper clearance. NoRoute/localisolated/no fresh parity/master merge.
+
+### Next residual-exponential DRIVER target refreshed with accepted premise
+
+C1-C3 now acceptedda1e1f7, so target-v1 in upper-residual-exponential
+supersedes historical candidate wording only. The norm-exponential claim
+itself remains FROZEN UNREVIEWED. Root rank-one Gaussian evaluator ran18
+cases at40/60digits, with nu1 exact Gaussian calibration; no rigorous error
+or operator/SPDE estimate inferred. Proposed positive constant A_nu and
+zero-CM/anchor/measurability/tail integration need independent statement
+then full proof/application gates. No nonlinear-product/growingcone/original
+point upper from it.73facts19seams/L0 unchanged, no new kernel/package/
+HPC/contact/Skorohod/sourcefix/TeX/PDF/wiki/bib/publication. Full goalACTIVE.

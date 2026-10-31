@@ -537,3 +537,19 @@ L0 PROPOSED and official companion decision4 unchanged. Local state mirror
 updated together; see local-checks/all-alpha-moment-v1/application-summary.json.
 No formal Gaussian/integral/derivative/SPDE theorem, official package/lease/
 registry/HPC gate. Next sharp-upper work is a new analytic research screen.
+
+## Existing finite powermean: Cameron-block application accepted — 2026-10-31
+
+Scientifice0a6f3e/adoptionda1e1f7,12checks/HIGH523.772s/no requiredrepairs.
+Pinned Mathlib Real.rpow_sum_le_const_mul_sum_rpow_of_nonneg COMPLETE
+public TYPE/standardaxioms audited read-only; actual C3 substitution
+kappa=r/p>1,f_m=t_m^p>=0, nonempty cardinality/power-zero/delta bookkeeping
+checked in FULL application gate. No new local theorem, compiled formal
+operator consumer, donor/package build or fact count:73facts19seams/L0.
+
+C1 fractional physical covariance, actual-F compact CM map, tensor/time
+mean compactness and averaged sqrt(delta)epsilon_J bound remain reviewed
+INFORMAL analytic interfaces. Exact white guard excludes ONLY uniformR
+fixed smooth-projection tails. See FP-CAMERON in BOUNDARIES.md. Future
+residual-exponential DRIVER norm estimate still UNREVIEWED, not SPDE upper.
+Official companion decision4/registry/lease/HPC unchanged.
