@@ -1,36 +1,38 @@
-Last updated: 2026-10-31 04:15 UTC (Codex)
+Last updated: 2026-10-31 04:31 UTC (Codex)
 
-Original full upper/sharp goal ACTIVE. All-dimensional masked Young average
-accepted on isolated branch; compact-ground/projection target next.
+Full original upper/sharp goal ACTIVE. Coherent compact-mean/full-phase
+statement frozen; original independent review live at last observation.
 
 ## ⏭ Next session: where to stand and what to do
 
-Stand in this repository root, then enter the ACTIVE isolated worktree:
+Stand in this repository root, then enter ACTIVE isolated worktree:
 ${HOME}/.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave
-branch research/fixed-mask-young-20261031, HEAD
-01519d8c135818842388fa3175c64951075310cc.
-Its Progress.md is the current mathematical/workflow authority for this
-wave. Root master contains the prior accepted mathematics and operational
-handoffs only; isolated math is not yet integrated or pushed.
+branch research/fixed-mask-young-20261031, committed HEAD
+ a97b9008249190a1baca45be7cd0b042f278ec68.
+Its Progress.md is the current authority for this candidate wave; root
+retains prior accepted mathematics/operational handoffs, not integration.
 
-FIRST freeze a coherent compact-mean/common-negative-Rayleigh-trial/
-ground-family/full-F-projection-and-complement STATEMENT target from
-reviews/2026-10-31-fixed-mask-young/next-compact-ground-obligations.md and
-reviews/2026-10-31-compact-mean-ground/preparatory-controls-v0.md.
-The36exact projection cases/432 residual identities and actual admissible
-d3 trial controls are preparatory, UNREVIEWED, not the new theorem. Get
-its independent statement gate BEFORE long proof. Retain full phase/data
-and original raw Gaussian cost; the constant-forcing projection is essential.
+FIRST inspect/poll EXISTING compact-mean G1-G5 STATEMENT review original
+exec11790, native directory
+${HOME}/.local/state/Le-AI-Lab/stratonovich-compact-mean-ground-statement-v1.
+Last actual poll returned RUNNING; inspect receipt/report for completion.
+Do NOT relaunch merely because an observation expires. This is sourcea97b900,
+17TEXTS+6FULLprimaryimages, HIGHthreshold unchanged. Validate terminal model,
+bindings/readcoverage/archives, adjudicate findings, then ONLY AFTER accepted
+statement gate begin the self-contained G1-G5 proof and its full review.
 
-Young interface is now ACCEPTED: scientific8ad5094/localadoption5969da5,
-Opus5.5/HIGH13checks283.696s,26inputs/41nativefiles verified. The EXACT
-masked-average L2 premise of F3 is CLOSED for all original d1/2/3 covariances.
-The v1 MEDIUM/acceptedfalse result is retained, not waived. ALL reviewers
-91665(statement),29576(v1),98785(v2) are TERMINAL; do not relaunch them.
+Exact target in reviews/2026-10-31-compact-mean-ground/target-v1.md includes:
+common-negative-trial/ground-family, actual global-E and FULL-F complement,
+constant-forcing projection/positive entrance/test average, and a FIXED
+ORIGINAL q Gaussian profile common trial obtained by a wider mask/trial.
+The last part preserves q/raw cost and full Rayleigh score; it must not be
+replaced by changing q to force binding. No ground/complement theorem yet.
 
-<HUB> is still unreachable No route to host. Last verified remote604c60f.
-Preserve pending root/isolated lines and restore serial refs/push/sync/
-integration once reachable; no fresh parity or completed remote sync claimed.
+The Young/actual masked average interface is accepted scientific8ad5094/
+adoption5969da5. Its v1 MEDIUM rejected disposition is retained; all old
+Young reviewers91665/29576/98785 TERMINAL, no reruns. Original full sharp
+source goal ACTIVE. <HUB> remains No route to host, last verified remote
+604c60f; no push/parity/integration claimed. Preserve both pending lines.
 
 ## Pre-flight checks
 
@@ -76,30 +78,41 @@ integration once reachable; no fresh parity or completed remote sync claimed.
    Full reviewed Gupper/GLOBALd1 lower retained; sharp upper/source intended
    normalization/conditional exact limit still OPEN. No source fix/contact/
    Skorohod/HPC/publication or whole-paper clearance.
+10. New G1-G5 target sourcea97b900,17texts+6FULLimages is FROZEN before
+    long proof. Actual native statement11790 live at last poll; output dir
+    stratonovich-compact-mean-ground-statement-v1. All23live input hashes
+    rechecked unchanged. Root/source book hash ee2cfd1c..., SECOND edition,
+    full title/copyright/p140/141/258/273 viewed; no full-book audit.
+11. NEW fixed-profile-binding-target-v0 and fixed-profile-trial-v0 keep q
+    AND b=.1 fixed at SIX trial/mask scales. Broad L^-alpha potential mass
+    can beat L^-2 kinetic when alpha<2; this is a PROPOSED exact proof
+    route and consistency test, not yet accepted. Earlier actual-trial-v0
+    changed q with scale and is not evidence for the stronger quantifier.
 
 ## Concrete deliverables for the next session
 
-- Frozen common-negative-trial/compact-ground/full-phase-projection-and-
-  complement target at actual F=E+R², with exact source map and falsification.
-- Independent statement gate, THEN self-contained proof and full cross-
-  family review. Do not silently transfer old d1 uniformly-local bounds.
-- Actual masked profile m(Gamma*g²) must preserve the FULL raw Rayleigh
-  score on supp g; keep original CM cost. Show entrance/terminal positivity.
-- Then moving-block full-phase growth and actual raw shifted Gaussian event/
-  cost, all-alpha variational bridge; sharp upper/source dictionary remain.
-- Restore remote sync and integrate isolated math after serial refs/ownership
-  audit. Do not discard pending root handoff commits or foreign changes.
+- Resolve EXISTING statement11790, preserving its original result. Verify
+  model/coverage/bindings/native archive, adjudicate every finding, and
+  repair frozen statements transparently if needed. No long proof before pass.
+- After pass prove G1-G5 with actual constant forcing, spectral-zero handling,
+  physical E/F flow identification and ORIGINAL fixed-q/raw-cost common trial.
+  Get a NEW full independent proof gate before adoption.
+- Consider worthwhile typed finite block/projection consumers with local
+  Lean only after statement stabilization;71facts/18seams/L0 unchanged.
+- Then actual growing-block errors/products/raw shifted Gaussian event-cost,
+  all-alpha variational lower, sharp upper and source-energy dictionary.
+- Restore remote push/sync/integration when reachable, after serial refs/
+  ownership audit; preserve all pending source revisions and handoffs.
 
 ## Success criteria for the immediate next step
 
-The next STATEMENT gate correctly specifies compact nonnegative U, b on a
-positive compact interval, explicit common negative Rayleigh trial, simple
-positive ground/rate gap and the FULL-F left functional including constant
-forcing. Verify the projection and complementary physical-wave estimate
-with displacement AND velocity, and positive initial/terminal functionals.
-Only after statement acceptance prove it. The old global-E argument can
-be adapted to R^d, but old d1 uniformly-local scope is not already this
-new result. Do not infer a new moment lower rate from finite controls.
+The exact G1-G5 STATEMENT review passes at requested confidence, with all
+findings adjudicated and source/parameter/model matches retained. Its common
+trial must work for FIXED original q by choosing a finite larger mask/test,
+so the raw Gaussian cost and tested Rayleigh score are preserved. Full-F
+projection must retain constants; L2 spectral gap alone does not give the
+fractional/global-E/full-F norm bound. No pL1/weighted-tail/d1-ODE hypothesis
+may be assumed silently. Only after the statement gate develop the proof.
 
 ## Anti-success criteria
 
@@ -979,24 +992,42 @@ still absent and prior exact reference-ticket retained. This is preparation
 for next frozen statement gate, not a new ground/complement theorem.
 All work remains isolated/local; branchpush still No route to host.
 
+2026-10-31 next-ground progress: 3c0a213 adds a stronger UNREVIEWED fixed-q
+binding subtarget and actual d3 six-scale control with q AND b=.1 FIXED.
+Only trial/mask widen, keeping original CM profile/cost. Proposed homogeneous
+ball lower bound C_G L^-alpha beats Dpsi L^-2 for alpha<2, with finite mask
+chosen before time/source asymptotics. This avoids a change of optimizing q.
+
+Frozen coherent G1-G5 sourcea97b900: actual compact potential/common negative
+trial; uniform ground/gap/H2 continuity; fractional/global-E physical wave;
+FULL-F constant-forcing projection/entrance/test positivity/complement;
+actual original profile and FIXED-q common trial. 17texts+6fullTeschlimages,
+exact source/custody/method-vs-new-consumer crosswalk, all falsification scope
+limits. Original native statement exec11790 confirmed live, no verdict at
+last observation;23live hashes unchanged. Owned external launch metadata
+preserved below. No new analytic proof or ground theorem adopted. All Young
+and original Gupper/d1 results retained; no new Lean count or main constant.
+
 ## Repo & git state at handoff
 
 Root master before this HANDOFF-only successor:
-8505cb68a799e0ba1b721926393eb282c38dbcb3, pending prior0accd3d adoption and operational handoffs.
+54dd251155d2ad270d15a624c7618ec53450c5c0, pending0accd3d and operational handoffs.
 Last verified remote604c60f2f8dc6d1a7635b9af224bbb6e5751d379; <HUB>
-No route to host. No fresh parity, root push or remote sync claimed.
-Root otherwise clean; no foreign WIP.
+No route to host. No fresh parity, push/sync or integration claimed.
 
-ACTIVE isolated research/fixed-mask-young-20261031:
-01519d8c135818842388fa3175c64951075310cc, with accepted Young adoption
-5969da5aefbb1a288f7327962e3dbece56a79a55 and separate preparatory controls.
-Worktree ${HOME}/.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave
-is CLEAN, all owned artifacts committed. No master integration or push.
-Native statement91665 and FULLv1 29576/FULLv2 98785 all TERMINAL. V1 is
-MEDIUM/notadopted; V2 acceptedHIGH. No live Lean job. Literal root HANDOFF
-is the loader entry point and points to the active-worktree authority.
+ACTIVE isolated research/fixed-mask-young-20261031 HEAD
+ a97b9008249190a1baca45be7cd0b042f278ec68, worktree
+${HOME}/.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave.
+Accepted Young adoption5969da5 is an ancestor; new ground target only FROZEN.
+Owned untracked path at capture:
+reviews/2026-10-31-compact-mean-ground/statement-launch-v1.json.
+STATEMENT original11790 returned RUNNING at last poll, native directory
+${HOME}/.local/state/Le-AI-Lab/stratonovich-compact-mean-ground-statement-v1.
+Read its terminal receipt if now complete; no duplicate launch. Old Young
+processes91665/29576/98785 TERMINAL; no live Lean job or foreign WIP.
 Wiki ../SPDEs-wiki/content/projects/stratonovich-ham-second-moment.md exists,
-unchanged. No whole-paper/human/novelty/circulation clearance.
+unchanged; root HANDOFF remains loader entry point. No whole-paper/novelty/
+human/circulation clearance.
 
 ## Operating notes
 
@@ -1016,6 +1047,11 @@ All-alpha-damped-ratio remains an unreviewed later target; scalar D is not
 physicaldimension. Do not modify old V certificate or infer an alpha>1
 moment lower consumer from a scalar calculation. No amsg/contact/setup/HPC,
 official package, source normalization repair or publication transaction.
+New compact-ground review is a statement gate, not a proof gate. Imported
+Teschl10.13 requires an existing ground eigenvalue; the common trial and
+essential threshold0 must establish this first. Old d1 global-E calculation
+is only a method comparator. Do not relaunch new statement11790 after an
+observation timeout; use the original process/authoritative terminal files.
 
 ## Risks to monitor
 
@@ -1035,3 +1071,8 @@ source normalization/domain/label and conditional exact limit remain OPEN.
 No source/large-time limit interchange.71facts18seams/L0 unchanged; no
 companion/HPC/contact/Skorohod/source repair/TeX/PDF/wiki/publication.
 Original full goal remains ACTIVE, not complete or blocked.
+Fixed-q quantifiers are load-bearing: enlarging the existence mask/trial is
+allowed, altering the original Gaussian tilt to make a gap is not a proof
+of the stronger G5 assertion. No all-strength binding for one fixed compact
+potential is claimed. Diagnostic quadrature is not a rigorous error or
+eigenvalue certificate; finite matrices are not continuum spectral proofs.
