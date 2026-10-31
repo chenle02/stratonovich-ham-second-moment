@@ -5970,3 +5970,21 @@ groundfamily/fullFprojection/complementtarget, falsify/getstatementgate
 BEFOREproof. See preparatory-controls-v0 and next-compact-ground-obligations.
 No newLean/companion/HPC/contact/sourcefix/Skorohod/TeX/PDF/wiki/publication;
 fulloriginalgoalACTIVE. Allworklocalisolated/networkpushpending.
+
+### Fixed ORIGINAL tilt, broad common trial proposed — 2026-10-31 UTC
+
+UNREVIEWED subtarget strengthens previousexample: for fixednonzeroGamma
+andfixedq=g², givenb0>0 choosebroader normalizedtrialpsi_L andmaskR>=2L,
+keepingq/rawCMcost unchanged. Proposedhomogeneousballmasslowerbound
+int m_R(Gamma*q)psi_L² >=c0²2^(alpha-d)Gamma(B1)L^-alpha intq;
+kineticDpsi L^-2. Sincealpha<2, sufficientfiniteL givescommonnegative
+Rayleightrialforallb>=b0. This doesNOTsayfixedcompactUbindsallstrengths,
+nor change optimizingGaussianprofile to forcebinding. Exactformula and
+sourcegeometric/positivity obligations retained in fixed-profile-binding-
+target-v0. Stillneeds frozenstatementgate beforeproof/adoption.
+
+NEWactuald3singularGamma control holdsqANDb=.1fixed acrosssixtrial/mask
+scales; energyturnsnegative forwide trials,35/60working-digitconsistency.
+No quadratureerror/eigenvaluecertificate orcontinuumproof. Previousq-
+rescalingcontrol keptwithlimitedscope. No newtheorem/Lean/package/contact/
+HPC/Skorohod/sourcefix/TeX/PDF/wiki/publication. OriginalfullgoalACTIVE.
