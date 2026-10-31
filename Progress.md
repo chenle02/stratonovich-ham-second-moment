@@ -32,9 +32,11 @@
  388.122s,22bindings/37native members verified. E1-E4 preserve deterministic
  physical growth, control residual error uniformly on a fixed CM ball and
  justify actual Gaussian-head conditioning, FIXED R,M only.
-- **Immediate next:** freeze/falsify the signed rough-potential spectral
- upper with zero spectral bottom allowed, polynomial time factor and
- actual full F physical identity. Growing-cone/source gaps retained.
+- **Immediate next:** inspect original corrected S1-S4 statement review
+ session56325/native stratonovich-upper-static-statement-v2 on8ff270a.
+ V1 rejected its overbroad temporal r>2; v2 restores exact2<r<2/a and adds
+ primary spectral calculus. No long proof or static theorem adopted yet.
+ Growing-cone/source gaps retained.
 - **Still open:** intended author-energy/domain/normalization dictionary,
   matching sharp upper constant and conditional exact limit. Original full
   goal ACTIVE; no whole-paper/circulation/wiki/master integration clearance.
@@ -6983,3 +6985,10 @@ images), full failed report/adjudication and exact temporal exponent
 controls supplied. Source3.1-3.2 primary content added, no unseen spectral
 functional-calculus import. New independent statement gate NEXT, no proof
 or static theorem adopted. Full original goalACTIVE.
+
+Corrected S1-S4 native statement-v2 launched original56325 on8ff270a,
+25inputs/7PRIMARY images with live/frozen/Git bindings verified. Original
+handle polled stillRUNNING at13:13:43UTC; no restart or verdict inference.
+Next inspect same handle/native receipt, then canonical validation/archive/
+adjudication before a complete proof. V1 scientificFAIL preserved, no
+static upper, source normalization or whole-goal completion claimed.
