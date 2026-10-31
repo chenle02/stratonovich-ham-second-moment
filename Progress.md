@@ -7191,3 +7191,11 @@ rawrestart-only/scorecoercivity/tailquantifiers and controlscope. New finite
 cutoff header unchanged, no proof/compiler/count promotion yet. Full
 analytic proof/localfiniteseam NEXT, then NEW FULL gate.73facts19seams/L0,
 original full sharp/source goalACTIVE, no fixedR operator upper adopted.
+
+New local Gaussian cutoff-density kernel PROVISIONAL: exact fencedheader
+unchanged, first sourcecompile PASS, complete publictype/std3axioms audit,
+3falsevariants rejected for unsolvedFalse, fresh owned replay5artifactpairs
+match. Native archive/member readback PASS. No donor/source/dependency
+build or pin drift; Cli lacks unused builtlib, corrected type-preflight
+path list before any proofcompile.73acceptedfacts19seams plus1PROVISIONAL,
+actual GLcutoff/half-density/application remains NEW FULL review obligation.

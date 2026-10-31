@@ -594,3 +594,13 @@ and positive-zero guards; no new source/compiler/kernel/count73facts19seams/
 L0. FP-MEAN-PRODUCT boundary distinguishes actual polynomial-control-ball
 mean-product upper INFORMAL analysis from the scalar finite formal input.
 Original sharp-point/source gaps and companion decision4 stayOPEN.
+
+## Gaussian cutoff-density local seam — PROVISIONAL 2026-10-31
+
+Exact public header fenced before proof; GLstatement12HIGH360.315s passed.
+Local source/types/standardaxioms/fresh replay5pairs/3falsevariants PASS.
+New singlefinite scalar inequality pending FULL actual GLapplication gate;
+73acceptedfacts19seams plus1PROVISIONALfact/newseam, no promotion yet.
+Source lean-progress/local-checks/gaussian-tail-v1/. No formal Gaussian/
+integration/conditional law/operator/SPDE, official package/lease/registry/
+HPC gate; companionL0/decision4 unchanged.
