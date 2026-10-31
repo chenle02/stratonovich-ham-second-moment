@@ -1,0 +1,12 @@
+StratonovichHAMAudit.JointTilt.tilt_exponent : ∀ (r s c v w : ℝ),
+  -s ^ 2 * v / 2 + r * s * c + (r ^ 2 * w - 2 * r * s * c + s ^ 2 * v) / 2 = r ^ 2 * w / 2
+StratonovichHAMAudit.JointTilt.wrong_sign_error : ∀ (r s c v w : ℝ),
+  -s ^ 2 * v / 2 + r * s * c + (r ^ 2 * w + 2 * r * s * c + s ^ 2 * v) / 2 - r ^ 2 * w / 2 = 2 * r * s * c
+StratonovichHAMAudit.JointTilt.wrong_cost_error : ∀ (r s c v w : ℝ),
+  -s ^ 2 * v + r * s * c + (r ^ 2 * w - 2 * r * s * c + s ^ 2 * v) / 2 - r ^ 2 * w / 2 = -s ^ 2 * v / 2
+StratonovichHAMAudit.JointTilt.shifted_amplitude : ∀ (delta a : ℝ),
+  0 < delta → delta ^ ((1 - a) / 2) * delta ^ (a / 2) / √delta = 1
+'StratonovichHAMAudit.JointTilt.tilt_exponent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StratonovichHAMAudit.JointTilt.wrong_sign_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StratonovichHAMAudit.JointTilt.wrong_cost_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StratonovichHAMAudit.JointTilt.shifted_amplitude' depends on axioms: [propext, Classical.choice, Quot.sound]

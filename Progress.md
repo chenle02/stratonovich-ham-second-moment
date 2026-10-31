@@ -7682,3 +7682,30 @@ Skorohod/sourcefix/TeX/PDF/wiki/bib/publication, NoRoute/pushpending.
   nonlinear-product upper. No raw/family/source/finitekernel reproof by
   this feasibility gate.74facts20seams/L0 no newkernel/compiler. Complete
   SP proof and its FULL review is next; no actualjobcurrentlyrunning.
+
+## SP1-SP4 complete actual E baseline proof candidate frozen — 2026-10-31
+
+- After accepted statement240f907/179e629,complete UNREVIEWED proof in
+  notes/e-phase-symplectic-baseline.md. All11statement notes addressed.
+  Correct boundedSobolev symplectic form/freeFourierintegral/zeroquotient,
+  sourceB(b) realduality omega-skew and boundedstrong interactionODE
+  conservation; unboundedfreegenerator never differentiated on roughE.
+- Actual completed covariance D_Phi,sourceGvectorcrosscovhPhi,ordinary
+  primitive/indicator/Fubini; noncentered Gaussian+detmean budgets and
+  allfiniteLpYoungconvergence; source/raw boundedformidentity via uniform
+  triangle a.s.subsequence. Actual E/Fsource/meanrestriction and Young/
+  free inverse; no infinitedim surjectivity fromP*JP=J alone.
+- Exact SP4 fullslowH_W/closedH_I/zeroextendedrawisometry/adjointdirection,
+  chosen retainingW_msource,completedmeanEcompression. C3rankzero SAME-W
+  scaled/unscaled covariance andoldscalaramplitude; orthogonalslowresidual
+  covariancezero identifies Dphi=H_E ONLYuptoell,stoppedidentityafterward.
+  Trueendpointpuremean norm>=1,emptyblockI,pointwiseδRdirectionmayblow.
+- FULL30text proof/source/oldtype/ACTUALblockapplicationpacket frozen for
+  required Opus5.5/HIGH gate. No proof acceptance yet,nonewLean/compiler/
+  count74facts20seams/L0. Old1free+3nonzero/v1weightfail/finitebookkeeping
+  diagnostics retained,notrerun or premises. No U/GC/SA theoreminput.
+- Accepted GCpointtransfer/Ucontrol/SAexpectedEanchor remain their exact
+  separate scopes; no growingR exponential/nonlinear/sharp/sourceconstant
+  theorem inferred. ConditionalBorellroute plan unreviewed,not premise.
+  Full original goalACTIVE; branchpush/<HUB>sync recovered,no master
+  researchmath integration/circulation/TeX/PDF/wiki/bib/HPC/companion/contact.
