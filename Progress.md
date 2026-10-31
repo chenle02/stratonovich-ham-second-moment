@@ -7968,3 +7968,20 @@ Skorohod/sourcefix/TeX/PDF/wiki/bib/publication, NoRoute/pushpending.
 - Fullsignedpositive/maskremoval,intendedsourceenergy/normalization/constants
   and conditionalexactlimit remainOPEN. No sourcefix/Skorohod/contact/HPC/
   companion/TeX/PDF/wiki/bib/sibling/publication action.
+
+## Independent PG finite variational screen during verified UR wait — 2026-10-31
+
+- UR nativeoriginal58076 remainsLIVE,no scientificverdict. Its log went
+  quiet,then emittedsame-session api_retry attempt1/max9. Notrestarted,
+  no vote/confidence inferred. FrozenURpayload3e8c036 unchanged.
+- Independent future signed-positive proposal PG1-PG2 byte-frozen BEFORE
+  one local12case SciPy/mpmathscreen. Active-subsetpositiveweightdual vs
+  directrawPhi heuristicglobaloptimization,50/80precision/gradientsretained.
+ 2deliberateobjective duplicatescheckzerolabels,notextraindependentevidence.
+- Maxscoreprecision2.57506e-51;maxheuristicgap4.88498e-15. Full-active-only
+  shortcutfails3cases; empty/selectedsubsetsessential. EntrywiseGramI2 to
+  overlapD increasescandidate3->3.43414 despiteD-Iindefinite. Raw/primal
+  candidateequality iscalibration,notglobalduality proof. No enclosure.
+- PG isUNREVIEWED,not URpremise oractualPDE/sourceconstant result. Needs
+  ownstatement/proof/applicationgates beforeuse. No newLean/compiler/count
+  or sourcefix/Skorohod/contact/HPC/companion/TeX/PDF/wiki/bib/publicaction.
