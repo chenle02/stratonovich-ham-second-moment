@@ -6369,3 +6369,26 @@ gate BEFORE proof. Separate all-alpha scalar target still unreviewed.
 Original sharp upper/intended source dictionary/exact limit OPEN. No new
 TeX/PDF/wiki/sourcefix/Skorohod/HPC/contact/companion/publication or fullgoal
 completion. NoRoute persists; local isolated, no fresh parity/integration.
+
+### Static/full occupation B1-B5 pre-proof controls and statement freeze — 2026-10-31 UTC
+
+Previous turn PROGRESS: all-dimensional unmasked S1 lower accepted94d85ca,
+Lean boundary8508b9d. Clean active state revalidated; no old live reviewer.
+Actual local check-diagnostics-v1 executed12temporal cases,6spatial models,
+9H1 covariance-continuity probes: white/invariant and d2/d3alpha1.5,a.25,
+plus compact white/invariant bumps.50/80working precision,GL256/512; max
+raw temporal cost difference7.51e-7 is consistency NOT certified error.
+Wrong cost-degree/kinetic-half/fBm normalization controls rejected. No full
+H1, spectrum or solution-moment proof from these finite diagnostics.
+
+Target-v3 explicitly includes actual physical four-linear H1 bound as NEW
+obligation; Fatou-only equality and d1 X/global supremum are excluded.
+B1 smooth time controls, B2 Rsp finiteness from independent finiteS1,
+B3 physical H1 density, B4 FULL occupation class and B5 ownOmega>0 point
+comparison. No long proof or theorem adoption before statement gate.
+Frozen 13completeTEXT input packet with exact accepted scalar/d1/new
+scope crosswalk. One OLD strict_log_gap consumer has complete types/two
+prior source/type bindings; no kernel/replay/count/module/package change.
+Original full source/sharpupper/exactgoal ACTIVE; NoRoute/localisolated/
+no parity/master integration. No contact/Skorohod/HPC/TeX/PDF/wiki/sourcefix/
+publication. Independent Opus5.5/HIGH statement gate NEXT.
