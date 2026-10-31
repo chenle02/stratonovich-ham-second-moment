@@ -490,3 +490,20 @@ The resulting unmasked point lower and positive finite intrinsic S_c=c^mS1
 are ANALYTIC, including covariance/spectral/form/mask/canonical/supremum
 steps. FP-UNMASKED in BOUNDARIES.md records this. B1-B5 static/full-H1
 occupation target is frozen UNREVIEWED and introduces no new formal claim.
+
+## Full occupation bridge: old entropy application accepted — 2026-10-31
+
+Scientific249e2c4/adoptionaa4a016,18checks/HIGH366.614seconds/no required
+repairs, all18inputs33native files verified. RawValueCeiling.strict_log_gap
+complete public type and actual a>0,q-2a=D>0 guards checked in Section6.
+Two prior/current source/type byte bindings unchanged; no new kernel/
+compiler/replay/module or fact count.71facts18seams/L0 PROPOSED unchanged.
+
+New physical two-point covariance extension, absolute signed four-linear
+H1 bound, density/CS, full strongly-H1 measurable occupation energy and
+original point comparison are reviewed INFORMAL analytic claims. See
+FP-STATIC-OCCUPATION in BOUNDARIES.md; no formal Sobolev/SPDE theorem.
+Next scalar target is unreviewed. Two potential new finite moment/rational
+seams are only proposed, not Lean declarations; statement/reuse/compiler/
+replay/negative-controls/application gates precede any count change.
+No official package/companion/lease/registry/HPC transaction.

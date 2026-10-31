@@ -175,3 +175,15 @@ SPDE proof, and no actual p1 or source-energy value identification from S1.
 B1-B5 occupation/energy bridge and the all-alpha scalar target are still
 unreviewed; sharp upper/exact limit open.71facts18seams/L0 unchanged, no
 package/companion/lease/registry/HPC/publication gate.
+
+Named informal interface FP-STATIC-OCCUPATION (not a Lean declaration),
+2026-10-31: notes/all-dimensional-static-occupation-bridge.md,
+scientific249e2c4/adoptionaa4a016,18checks/HIGH366.614s. All original
+Gamma/d1/2/3/alpha>1, actual smooth controls, full real H1 physical covariance
+four-linear extension/density, measurable full occupation energy and
+original Q2>=2^m Omega F_a(E_star^O), Omega>0, are ANALYTIC. One unchanged
+old entropy fact verifies only Delta>0 with its two scalar guards.
+No new kernel run/count/formal physical-integral or source constant claim.
+Omega>1, intended source-domain/normalization, sharp upper and exact limit
+remain open outside previously accepted scopes.71facts18seams/L0 unchanged;
+no official package/companion/lease/registry/HPC/publication gate.
