@@ -6121,3 +6121,18 @@ momentproducts, fieldpointnoise, covariancephaseorder or source/large-time
 interchange. Proposedscore2intlambda-v/2 remainsUNPROVED target; source
 energy/allalphavariational/sharpupper stillseparate. FullgoalACTIVE,no
 newLean/companion/HPC/contact/Skorohod/sourcefix/TeX/PDF/wiki/publication.
+
+### Actual coupled raw-block controls prepared — 2026-10-31 UTC
+
+NEXTwave UNREVIEWEDfalsification only. Originald1Gamma=delta0/alpha1/a.5,
+delta1/4/fourrawfirst-chaospoint-wave kernels andoneSAMEZ completiontest.
+ActualcovarianceevaluatorK0 checkedagainstclosedconstant, slowtestvsfast
+sqrt(delta)crosscov agrees, jointPSD numericalconsistency, finiteGaussian
+MGF sameZidentity pass. WrongindependentZ/missingJacobian/diagonalonly
+cost eachrejected. OffdiagonalKa retained.40/65workingdigits agree, no
+rigorouserror/accuracycertificate. Completion/pointfirstresponse controls
+NOTliteralCc-infinityPsi/boundedpointtraceonF/fulloperatorpath evidence;
+strictsmoothapproximationsandfullcouplingneedtheactualnextproof. No new
+CMshift/blockerror/cone/event/lowerasymptotic theorem yet. Scope/runner/data
+retainedunder2026-10-31-raw-block-event. FullgoalACTIVE;71facts18seams/L0
+unchanged,no companion/HPC/contact/Skorohod/sourcefix/TeX/PDF/wiki/release.
