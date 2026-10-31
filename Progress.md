@@ -5526,3 +5526,23 @@ Eight-text statementpacket frozen BEFORElongproof. No newLeanmodule or
 71facts/18seams upgrade, no sourceCM/series/path/Young/newmoment adoption.
 Originalall-dimensional sharp/source goalACTIVE, no contact/HPC/Skorohod/
 companion/sourcefix/TeX/PDF/wiki/publication transaction.
+
+### Compact-cutoff statement accepted; full proof candidate — 2026-10-30
+
+Actual native Opus5.5/high13checks PASS_WITH_NOTES/HIGH283.176s,
+8completeinputs/no requiredrepairs. All8live/frozen/git649b089 and23native
+archive members verified; actualroute/model/coverage checked. Six minor
+notes adjudicated, including v1psi not1 on a neighborhood. Newv2psi=chi(x/3)
+insideL14 box literally satisfies target, N64error9.1e-10, notcertifiedaccuracy;
+v1 preserved. Qn convergence explicitSTRONG; finitecontrols algebraonly.
+
+Complete new notes/compact-sobolev-cutoff.md proves actualwhole-space
+compact K_sigma,gamma for allrealSobolevindices, exactauxiliaryfactorization/
+negativeindices/Fourierconstants, singularvalues j^-gamma/d; balancedadjoint
+swap/two envelopes, positivecompactorder andconditionalfiniteZvariance
+reduction, finiteGaussianOPERATORmoment viafiniteMATRIXcompression/Fatou.
+Nonzero actualwhole-space rankonewitness requireschi plateau, notallchi.
+No torusstate/model substitute, no A^m<=B^m, no actualCMfamily/series/path/
+Young/sourcecutoff/newmoment inference. Thirteen-text FULLscientificpacket
+frozen; no newanalytic adoption before fullgate.71localfacts/18seams unchanged,
+originalfullgoalACTIVE,no sourcefix/contact/HPC/Skorohod/companion/TeX/PDF/wiki.

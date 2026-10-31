@@ -1,0 +1,104 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "reviews/2026-10-30-compact-sobolev-cutoff/target-v1.md: lines 1-90 (full)",
+    "reviews/2026-10-30-compact-sobolev-cutoff/falsification-v1.md: lines 1-35 (full)",
+    "reviews/2026-10-30-compact-sobolev-cutoff/worker-honesty-v1.md: lines 1-19 (full)",
+    "reviews/2026-10-30-compact-sobolev-cutoff/check-diagnostics.py: lines 1-85 (full)",
+    "reviews/2026-10-30-compact-sobolev-cutoff/diagnostics-v1.json: lines 1-377 (full)",
+    "reviews/2026-10-30-compact-sobolev-cutoff/canonical-model-context.txt: lines 1-39 (full; the file itself is an excerpt)",
+    "notes/actual-two-variance-forms.md: lines 1-412 (full)",
+    "notes/finite-gaussian-schatten.md: lines 1-236 (full)",
+    ".review/required-sources.json: lines 1-26 (read plan, no read credit)"
+  ],
+  "checks": [
+    {
+      "claim": "C1 scalar: for real chi in C_c^infinity, real sigma and gamma>0, K=Lambda^sigma chi Lambda^(-sigma-gamma) extends uniquely to a compact L2 operator with unnormalized s_j<=C j^(-gamma/d), and K is in S_p for p>=1, p gamma>d.",
+      "verdict": "PASS",
+      "reason": "The operator maps Schwartz functions to Schwartz functions and Schwartz space is dense, so the extension is unique. With u=Lambda^(-sigma-gamma)w, K=Lambda^sigma E_chi I_gamma P_psi Lambda^(-sigma-gamma), so s_j(K)<=||E_sigma|| ||P_(sigma+gamma)|| s_j(I_gamma). Summability of j^(-p gamma/d) holds exactly when p gamma>d. The stated constant dependence on d, chi, sigma, gamma and the box is the correct quantifier order. No false uniformity is claimed."
+    },
+    {
+      "claim": "C1 auxiliary normalization: on L2(Q,dx), e_k=L^(-d/2)exp(i kappa_k.x), with P_r(k,xi)=L^(-d/2)(<kappa_k>/<xi>)^r psihat(kappa_k-xi) and E_r(xi,k)=L^(-d/2)(<xi>/<kappa_k>)^r chihat(xi-kappa_k), and no extra c_d.",
+      "verdict": "PASS",
+      "reason": "Re-derived by hand. (P u)_k=L^(-d/2)(2pi)^(d/2) hat(psi u)(kappa_k), and hat(psi u)=c_d psihat*uhat, so (2pi)^(d/2)c_d=1 removes c_d. hat(chi e^(i kappa.x))(xi)=chihat(xi-kappa) gives E with factor L^(-d/2). Formally replacing the lattice sum by an integral in the composition recovers the whole-space kernel c_d chihat(xi-eta), which is consistent. The script's coefficient and reconstruction formulas match these conventions."
+    },
+    {
+      "claim": "C1 negative indices and mixed Schur: boundedness of P_psi: H^r(Rd)->H^r(T_L) and E_chi: H^r(T_L)->H^r(Rd) for every real r, with distributional meaning and uniform lattice sum.",
+      "verdict": "PASS",
+      "reason": "Peetre gives (<x>/<y>)^r<=2^(|r|/2)<x-y>^|r| for all real r. Rapid decay of psihat and chihat then gives finite sup_xi sum_k and sup_k integral, which is the mixed counting/Lebesgue Schur test with box-dependent constants. For negative r, psi u is a compactly supported distribution and the coefficient integral converges by Cauchy-Schwarz. The periodic series converges in S', and multiplying by chi is legitimate. The target correctly assigns these verifications to the later proof gate."
+    },
+    {
+      "claim": "C1 exact recovery: E_chi I_gamma P_psi u=chi u on H^(sigma+gamma)(Rd), on Rd rather than only on a torus. The diagonal auxiliary values are not a free-wave or torus state.",
+      "verdict": "PASS",
+      "reason": "Translates by Ln, n nonzero, of supp psi miss Q, which contains supp chi. Hence chi times the periodization equals chi psi u, and chi psi=chi as smooth functions, so the product equals chi u, including for distributions. I_gamma is a diagonal auxiliary embedding only, and lines 29-31 restrict it to that role. The whole-space cutoff chi and Sobolev phases are retained throughout."
+    },
+    {
+      "claim": "C1 missing-cutoff control: Lambda^-gamma alone is noncompact, and chi=1 is excluded.",
+      "verdict": "PASS",
+      "reason": "Translation commutes with the multiplier and preserves the norm. The inner product of translated images is the Fourier transform of the L1 density <xi>^(-2gamma)|ghat|^2, which tends to 0 by Riemann-Lebesgue, so there is no convergent subsequence. No endpoint necessity at p gamma=d is claimed."
+    },
+    {
+      "claim": "C2: J0 versus prior J, P_chi=diag(A_1/2,A_-1/2), A_sigma*=A_-sigma for real not-necessarily-even chi, P_chi*=U P_chi U, P_chi not a projection or selfadjoint, Kout and Kin compact with equal S_p norms, and the two variance envelopes.",
+      "verdict": "PASS",
+      "reason": "J=(F direct-sum F)J0 is a unitary change matching the note's J. A_sigma is bounded by the Peetre Schur test with whole-space kernel constant c_d. Its adjoint is Lambda^(-sigma) conj(chi) Lambda^sigma, which needs real chi but not even chi. Conjugating the note's E_s adjoint of D_chi by J0 yields diag(A_-1/2,A_1/2)=P_chi*, so C2 agrees with accepted note section 3. A_sigma Lambda^-gamma=K_(sigma,gamma), so Kout=diag(K_1/2,K_-1/2) and Kin=U Kout U, using that U commutes with D_gamma. Block S_p^p norms add. B_out=Kout Kout* and B_in=Kin Kin* have the correct adjoint placement. Tr(KK*)^(p/2)=||K||_p^p, so both trace powers equal ||Kout||_p^p. For nonzero compactly supported chi, [Lambda,chi] is nonzero, so P_chi is genuinely non-selfadjoint."
+    },
+    {
+      "claim": "C3 conditional reduction: from P Z=Z=Z P and the two D_gamma^2 bounds follow Vout<=C B_out, Vin<=C B_in, compactness, S_(p/2) and S_p membership, and the trace-power bounds, without A<=B implying A^m<=B^m.",
+      "verdict": "PASS",
+      "reason": "Vout=P Vout P* follows from P Z=Z, and Vin=P* Vin P follows from Z P=Z, so positive congruence gives both inequalities in the correct direction. Min-max gives lambda_j(Vout)<=C lambda_j(B_out) and likewise for Vin. This gives compactness and the trace powers, with constant C^(p/2)||Kout||_p^p using the C2 equality. Z_l Z_l*<=Vout gives s_j(Z_l)^2<=lambda_j(Vout), so each Z_l is in S_p. The hypotheses match the operator meaning of Proposition 1 in the accepted note, since E T T* and E T* T correspond to (2) and (3) respectively, but the target correctly does not assume any actual family satisfies them."
+    },
+    {
+      "claim": "C3 witness: Z=vtilde tensor wtilde* with compact v,f inside chi=1 is a nonzero whole-space family satisfying all hypotheses, with the correct adjoint covector.",
+      "verdict": "PASS",
+      "reason": "P vtilde=(Lambda^1/2 chi v,0)=vtilde, and P* wtilde=(Lambda^-1/2 chi f,0)=wtilde. Hence P Z=Z, and Z P h=<P h,wtilde>vtilde=<h,P* wtilde>vtilde=Z h. Vout=||wtilde||^2 vtilde tensor vtilde*, and |<h,vtilde>|^2<=||D_gamma h||^2 ||Lambda^(gamma+1/2)v||^2. Vin similarly uses ||Lambda^(gamma-1/2)f||. So a finite C exists, and vtilde, wtilde and Z are nonzero whole-space objects. This is not a CM or source identification, and the target says so. The witness requires chi with a plateau on an open set, as line 57 acknowledges."
+    },
+    {
+      "claim": "C4: for even p=2m with p gamma>d, (E||X||_Sp^p)^(1/p)<=sqrt(p-1) sqrt(C)||Kout||_Sp through finite-rank compressions and Fatou, with no circular Sp-Bochner, martingale or Gaussian operator assumption.",
+      "verdict": "PASS",
+      "reason": "Accepted Theorem 1 applies to matrices A_l=Q Z_l Q on ran Q. Sum A_l A_l*=Q(sum Z_l Q Z_l*)Q<=Q Vout Q, and sum A_l* A_l<=Q Vin Q; the output and input directions are in the right order. Eigenvalue domination gives Tr(variance)^m<=Tr V^m<=C^m||Kout||_p^p. The average of the two traces has the same bound, and the p-th root gives exactly sqrt(p-1) sqrt(C)||Kout||_p, also when C=0. Each sample X is compact, so Q_n X Q_n->X in norm. s_j is 1-Lipschitz in operator norm. Fatou in j and then in Omega transfers the bound. X depends continuously on the finite Gaussian vector, so the extended-valued norm is measurable. The sum is finite, and only finite matrices enter the accepted theorem."
+    },
+    {
+      "claim": "C4 scope fit with the accepted finite note.",
+      "verdict": "PASS",
+      "reason": "Theorem 1 covers complex rectangular matrices, real independent standard Gaussians, unnormalized traces and p=2m including m=1. The target applies it only after compression and describes the extension as new. The note's arithmetic for the negative controls (288, 144, 2304, 1224) was rechecked and is correct."
+    },
+    {
+      "claim": "C5: code and JSON contain 16 Fourier recoveries, 150 Peetre controls, 13 auxiliary diagonal checks, finite adjoint algebra and an uncut translation negative control, with trivial zeros and even-chi limitation disclosed and no continuum SVD or certified accuracy claim.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Counts were confirmed by reading code and JSON: 4x4 recoveries, of which the four at x=2.5 are trivially zero; 6x25 Peetre cases with negative r included; lattice rows 3+5+5=13. Spot recomputation agrees with JSON at chi(1.5)=1/2, expected value real part 0.0808, r=.5 Peetre maximum 0.8944 at (x,y)=(-1,-.5), lattice values 0.9593 and 0.7421, upper value 1.3357, and squared distance 2.8603. The script's chihat uses cosine only, so the adjoint check is even-chi only, as disclosed. The proposed envelope constant max(3,2L/pi)^gamma also holds by a hand sup-box count for all d, although the target does not rely on it. The notes concern minor cutoff and wording mismatches listed under findings. The script was not re-executed."
+    },
+    {
+      "claim": "C6: original full goal stays active, and there is no actual source or CM family, series, path, Young flow, new moment, source identity, Lean upgrade, HPC, contact, companion, Skorohod or whole-paper claim.",
+      "verdict": "PASS",
+      "reason": "Target lines 85-90, falsification lines 27-35, honesty lines 7-19 and both notes' closing sections carry these exclusions. Nothing in C1-C4 relies on any of them. The target's actual-model link is explicitly conditional, and a full proof gate is required before adoption."
+    },
+    {
+      "claim": "Regime feasibility against the accepted variance range.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Proposition 1 requires 0<gamma<min(1/2,(2-alpha)/2), so p gamma>d forces p>2d: even p>=4 in d=1, p>=6 in d=2, p>=8 in d=3, and possibly larger when alpha is near 2. A valid even p always exists. The p=2 case of C4 is true but cannot be reached with these gamma, which is compatible with the note's L2HS obstruction scope. C1-C4 are stated for general gamma>0 and do not assert otherwise."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "The diagnostics cutoff psi=chi(x/2) equals 1 exactly on [-2,2]=supp chi, not on a neighborhood of supp chi as target line 17 requires. The script comment and falsification text correctly say only psi=1 on the support. Exact recovery needs only chi(psi-1)=0, so no conclusion changes, but the numeric control does not literally instantiate the target's cutoff class.",
+      "C4 line 62 says finiteness proves membership almost surely. Under C3 every Z_l is already in S_p, so the finite sum X is in S_p for every outcome by the triangle inequality. The statement is true but weaker than what is available. The extended-valued route remains valid.",
+      "C4 line 65 writes Q_n->I. This must be read as strong convergence, since norm convergence is impossible for finite-rank Q_n on infinite-dimensional H. The later proof should say this and should state measurability of the extended-valued S_p norm, which follows from continuity in the finite Gaussian vector.",
+      "The rank-one witness shows satisfiability only for chi with a plateau on an open set. If |chi|<1 everywhere, then (1-chi)v=0 forces trivial fixed vectors in both blocks, so C3's hypotheses force Z_l=0. C3 is still true but vacuous for such chi, and line 57's 'if desired' should not be read as giving nonzero witnesses for every chi.",
+      "Swap, envelope and eigenvalue checks in the script are exact permutation algebra on a five-node sample, as the 0.0 eigenvalue error reflects. They catch adjoint or coding mistakes but are not independent analytic evidence. The packet discloses them as finite algebra.",
+      "Falsification line 8 says the largest N=64 error is about 3.5e-8, while the JSON maximum is 3.4252e-8. The JSON scope string says '15 or fewer' diagonal checks, while the actual count is 13. Both are loose wording with no scientific effect."
+    ],
+    "major_notes": []
+  },
+  "required_repairs": [],
+  "limitations": [
+    "No shell tool was available, so check-diagnostics.py was not re-executed and byte-for-byte generation of diagnostics-v1.json was not confirmed. C5 rests on reading the code and JSON plus hand spot checks.",
+    "The upstream acceptance records for the two notes are not in the packet. Their accepted status is taken from the note headers and honesty file, not independently confirmed, though the theorem scope and key arithmetic were read.",
+    "worker-honesty-v1.md cites 9648c95, while the supplied source revision is 649b0897a65268af5e8d3ab06f28608d58ec31d0. The packet has no git history, so I could not determine their relationship or verify the revision.",
+    "canonical-model-context.txt is a short excerpt beginning mid-display and ending mid-sentence, so the broader manuscript context was not reviewed.",
+    "This is a statement, object, regime and feasibility gate. Hand derivations here do not replace the mandatory full proof gate for C1-C4. They do not constitute human verification, a novelty audit or any whole-paper certificate."
+  ]
+}
