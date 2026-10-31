@@ -5818,3 +5818,34 @@ alongwithsharpupper andsourceenergy dictionary. See scopednext-flow-
 obligations; d3 compactpotential alone doesNOTgiveboundstateatallstrengths.
 FullgoalACTIVE,71facts18seamsunchanged; no Leanupgrade/companion/HPC/contact/
 Skorohod/sourcefix/TeX/PDF/wiki/publication/wholepaper clearance.
+
+### Fixed-mask E-plus-constants Young target frozen — 2026-10-31 UTC
+
+Previous goal turn PROGRESS: reviewed F1-F3 comparison adopted0accd3d.
+<HUB> still unreachable No route to host; rootmaster1a531db retains
+two pending commits, lastverifiedremote604c60f, no freshparity claimed.
+Newwave isolatedlocalworktree branch research/fixed-mask-young-20261031;
+no masterintegration/push or mathematicalblock inferredfromnetwork failure.
+
+NEW Y1-Y4 target replaces UNREVIEWED uniformlylocalplan by exact F=E+R²,
+including bothconstants, for SAMEfixedmaskoriginalnoise/PDE/data1,0.
+Physicalsourceforces landinE, constantcoordinates explicit. Required proof:
+constantsexcludedfromglobalSobolev/closedphase/directfreegroup, actual
+cutoffextensionwithNONZEROconstantcolumns, actualsourcefirstresponse onF,
+standardBanachYoung/stability/uniformGaussianmoments, sourcePDEidentity
+andW-measurablemaskedrawaverage closingEXACTacceptedF3 L2premise. Optional
+compactdeterministicbase included, no rawCMshift orblockgrowth asserted.
+
+Exactrational cutoff/constantcolumns/leftorder controls pass. Five k²loop
+negativecontrols showC0driver convergence cannotreplaceCtheta; endpoint
+I-AB persists, theta3/4seminorm diverges. Abstractfinitecoordinates NOT
+continuumconstant-exclusion proof; actuald2sourcefirstordernonzero finite
+quadrature witness reused withexactcustody. No continuumerrorcertificate.
+Twelve TEXTinputs frozen forpreproofstatementreview.
+
+WikiCLI search/cite and selectedFriz-Hairer chaptersynthesis read; held
+sourcehash5d00d79b matched priorcustody. REFRAME asknownYoungapplication,
+not independentnovelty or analytic-semigroupwave theorem. Scopeoriginal
+allcovariances/d1/2/3/fullsharp goalACTIVE. No newlongproof/Leanupgrade;
+71facts18seams/L0 unchanged, no companion/HPC/contact/Skorohod/sourcefix/
+TeX/PDF/wiki/publication.
