@@ -6879,3 +6879,19 @@ actual correlated residual, both constants, physical endpoint and rank-
 uniformity retained.73facts19seams/L0 unchanged; original full sharp/source
 objectiveACTIVE, no point/growingcone/Mtail/signed-spectrum result. NoRoute/
 localisolated/pushpending; no contact/HPC/Skorohod/sourcefix/companion.
+
+### Complete E1-E4 nonlinear residual comparison proof candidate frozen
+
+After statementcf0cf05, notes/upper-young-perturbation.md supplies refined
+Young growth with zero cost at0, uniform inverse/Holder and explicit2theta
+noncommuting product/conjugation proof, actual raw head/tuple decomposition,
+BOTH constants/physical baseline, rank-uniform good/bad budgets, fixedM
+uniform nonlinear residual exponential rate and Borel Gaussian freezing.
+All13statement notes addressed. Full proof/application gate REQUIRED.
+No nonlinear theorem adopted before it; original full sharp/sourceACTIVE.
+
+Frozen22inputs (19TEXT+3PRIMARY images), existing finite powermean actual
+p/nu guards written; no new kernel/module/count73facts19seams/L0. All
+Mtail/globalrestart/signedspectrum/growingcone/point/source gaps explicit.
+No contact/HPC/Skorohod/sourcefix/companion/TeX/PDF/wiki/bib/promotion;
+NoRoute/localisolated/pushpending.

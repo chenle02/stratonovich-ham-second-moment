@@ -1,0 +1,18 @@
+Real.rpow_sum_le_const_mul_sum_rpow_of_nonneg.{u} {ι : Type u} (s : Finset.{u} ι) {f : ι → Real} {p : Real}
+  (hp : @LE.le.{0} Real Real.instLE (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne)) p)
+  (hf :
+    ∀ (i : ι),
+      @Membership.mem.{u, u} ι (Finset.{u} ι)
+          (@SetLike.instMembership.{u, u} (Finset.{u} ι) ι (@Finset.instSetLike.{u} ι)) s i →
+        @LE.le.{0} Real Real.instLE (@OfNat.ofNat.{0} Real (nat_lit 0) (@Zero.toOfNat0.{0} Real Real.instZero)) (f i)) :
+  @LE.le.{0} Real Real.instLE
+    (@HPow.hPow.{0, 0, 0} Real Real Real (@instHPow.{0, 0} Real Real Real.instPow)
+      (@Finset.sum.{u, 0} ι Real Real.instAddCommMonoid s fun (i : ι) => f i) p)
+    (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+      (@HPow.hPow.{0, 0, 0} Real Real Real (@instHPow.{0, 0} Real Real Real.instPow)
+        (@Nat.cast.{0} Real Real.instNatCast (@Finset.card.{u} ι s))
+        (@HSub.hSub.{0, 0, 0} Real Real Real (@instHSub.{0} Real Real.instSub) p
+          (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne))))
+      (@Finset.sum.{u, 0} ι Real Real.instAddCommMonoid s fun (i : ι) =>
+        @HPow.hPow.{0, 0, 0} Real Real Real (@instHPow.{0, 0} Real Real Real.instPow) (f i) p))
+'Real.rpow_sum_le_const_mul_sum_rpow_of_nonneg' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
