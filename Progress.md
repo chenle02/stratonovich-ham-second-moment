@@ -49,10 +49,11 @@
   verified before6optional clarity notes. Exact source-cone/L2-square/raw
   identity and original point-to-growingE norm reduction,polynomialdata
   cost,allmodels/zeroGamma. This does NOT give the growingR operator rate.
-- **Immediate next:** complete SA1-SA3 stochastic expectednorm anchor
-  from accepted cutoff/variance/driver inputs. SA FULL source/application gate completed21PASS/HIGH335.64s at8cf62b0;
-  adopt after all6optional findings/rootbindings adjudicated below.
-  SP1-SP4 baseline remains frozen/undispatched. Source normalization OPEN.
+- **Immediate next:** complete SP1-SP4 actual E symplectic baseline proof
+  after accepted240f907 statement/source/type/application gate20PASS/HIGH
+  413.721s; all11optional findings adjudicated. Its FULL proof gate remains
+  mandatory. Then screen conditional Borell-tube upper route with its own
+  primary/source/falsification gate; no operatorupper claimed yet.
 - **New accepted uniformR E Cameron/regulator:** scientificf54e92b,
   21checks/HIGH348.303s,no requiredrepairs;21input bindings/native archive
   verified before6optional clarity notes. Actual all-model uniformR means,
@@ -7663,3 +7664,21 @@ Skorohod/sourcefix/TeX/PDF/wiki/bib/publication, NoRoute/pushpending.
   sharp/exactlimit remainsOPEN; fullgoalACTIVE. Researchbranch pushes and
   serialized<HUB>fetch/pull recovered; no researchmath/mastermerge,
   whole-paper/wiki/TeX/PDF/bib/contact/HPC/companion/publication action.
+
+## SP1-SP4 independent statement gate accepted — 2026-10-31
+
+- Original58631 TERMINAL0,actualOpus5.5/HIGH,20checksPASS,
+  PASS_WITH_NOTES,no requiredrepairs,413.721s,frozen240f907. Canonical
+  report/pass/correspondence/fullcoverage and22five-way sourcebindings
+  verified;complete nativearchive eachmember readbackhash checked. Raw
+  report unchanged,verified configuredMax account/model/HIGH thresholdsame.
+- All11optional findings adjudicated in statement-adjudication-v3.md:
+  exactB/delta/horizon/R parameters; covarianceonlyuptoell thenstopping;
+  positive-time slowH_W/zeroextension; meanE compression/rangeiE;
+  chosen retainingfastsource; distinctoperatornames;1free+3nonzero matrix
+  cases; finitebookkeepingnotanalyticproof; oldnotehistoricalcountscope;
+  append-onlyv3history;6loadbearing FULLproof obligations stillrequired.
+- Statement/source/type/application FIT only,not symplecticproof or an E
+  nonlinear-product upper. No raw/family/source/finitekernel reproof by
+  this feasibility gate.74facts20seams/L0 no newkernel/compiler. Complete
+  SP proof and its FULL review is next; no actualjobcurrentlyrunning.

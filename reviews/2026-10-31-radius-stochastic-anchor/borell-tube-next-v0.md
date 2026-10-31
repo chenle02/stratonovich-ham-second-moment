@@ -2,8 +2,8 @@
 
 UNREVIEWED RESEARCH PLAN ONLY. No new lemma, Gaussian Laplace bound,
 operator upper, variational comparison or sharp constant is proved here.
-SA expectednorm FULL gate and SP statement/FULL baseline gates remain
-pending. Do not build a proof on their candidates before those gates.
+SA expectednorm FULL gate is now accepted; SP statement gate is accepted
+but its FULL baseline proof gate remains pending. Do not build a proof on their candidates before those gates.
 This does not replace or shrink the original all-model sharp-point goal.
 
 ## Source already held and read
