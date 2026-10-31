@@ -1,29 +1,35 @@
-Last updated: 2026-10-31 03:36 UTC (Codex)
+Last updated: 2026-10-31 03:50 UTC (Codex)
 
-Original full upper/sharp goal ACTIVE. Accepted fixed-mask comparison;
-new E-plus-constants Young target isolated, statement review live.
+Full original upper/sharp goal ACTIVE. E-plus-constants complete candidate
+is isolated; FULL independent review live, statement gate accepted.
 
 ## ⏭ Next session: where to stand and what to do
 
-Stand in this repository root, then inspect the ACTIVE isolated worktree:
+Stand in this repository root, then inspect ACTIVE isolated worktree:
 ${HOME}/.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave
-branch research/fixed-mask-young-20261031, frozen target2a46ec2.
-Its Progress.md records the new candidate workflow; original accepted
-mathematics remains the same as root Progress.md. The direct E plus two
-constant phases replaces the earlier UNREVIEWED uniformly-local proposal.
-No noise/model/data or full sharp objective is narrowed.
+branch research/fixed-mask-young-20261031. Full scientific proof candidate
+is committed at761a7f8d521d244997fc5a42f67c52621fa08418; NOT adopted.
+Its Progress.md is the candidate workflow authority; accepted mathematics
+in root remains unchanged. Target2a46ec2 preproof gate is now ACCEPTED:
+Opus5.5/HIGH15checks414.046s,12inputs/27nativefiles, no required repairs.
 
-FIRST inspect/poll the EXISTING native statement review original exec91665:
-${HOME}/.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-statement-v1.
-The last direct poll confirmed it live; no verdict at this handoff capture.
-Inspect its receipt/report if terminal; never relaunch solely on an
-observation timeout. After an accepted statement gate, write and independently
-review the exact Y1-Y4 proof before adoption. No new analytic proof yet.
+FIRST inspect/poll the EXISTING FULL scientific review original exec29576:
+${HOME}/.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-scientific-v1.
+The last direct poll confirmed it live; no full proof verdict at capture.
+Inspect receipt/report if terminal; never relaunch solely on observation
+timeout. Validate all19 input bindings/actualmodel/readcoverage and every
+native archive member before adoption. Adjudicate all findings. Statement
+original91665 is TERMINAL, do not relaunch it.
 
-<HUB> is still unreachable No route to host. Root master retains
-0accd3d/1a531db plus this operational successor; isolated branch push also
-failed. Last verified remote604c60f; no fresh parity/master integration
-claimed. Restore serial push/sync when reachable, preserving all branches.
+The complete candidate constructs F=E plus two constants, actual cutoff
+columns/source first response, standard Young flow, Gaussian/source Lp
+convergence, actual source PDE by Picard/distribution matching, and a
+W-measurable raw average closing accepted F3. Those claims remain candidates
+until FULL gate passes. It changes no noise/model/data or full sharp goal.
+
+<HUB> remains unreachable No route to host; pushes of master and
+isolated branch failed. Last verified remote604c60f. Preserve both pending
+lines, then restore serial refs/push/sync/integration once reachable.
 
 ## Pre-flight checks
 
@@ -57,36 +63,42 @@ claimed. Restore serial push/sync when reachable, preserving all branches.
    58b092b258d4f363f8bfa0a02dcf492dcb9c13e794dbcab440bf7b0529b53b7d.
    Full Gupper/GLOBALd1 lower retained,71finitefacts/18seams/L0 unchanged.
    No new Lean/package/lease/registry/HPC/contact/Skorohod/source repair.
-8. New isolated phase target Y1-Y4 uses F=E directsum R². Read target and
+8. New isolated phase target/full candidate Y1-Y4 uses F=E directsum R². Read target and
    exact finite controls in reviews/2026-10-31-fixed-mask-young/ on the
    isolated branch. Constants are CLOSED additional coordinates, not dense
    E limits. Keep both actual constant-response columns. C0-only driver
    convergence is insufficient; actual Ctheta convergence is available.
-9. Existing native statement process91665 was confirmed live. This is
-   source2a46ec21b0cd19c53e4ff2a8adfe70ad280a7536, twelveTEXTinputs,
-   actual Opus5.5/high/HIGHthreshold. No new full-proof or verdict claim.
-   Retain native artifact directory and original handle; no duplicate run.
+9. Statement91665 is TERMINAL PASS_WITH_NOTES/HIGH15checks414.046s;
+   all12bindings/27nativefiles validated. Thirteen minor notes addressed
+   in full candidate761a7f8; v2 code adds explicit time grid/derived bound
+   and wrong dropped-column matrices. Both versions executed.
+10. Existing FULL review29576 confirmed live. It targets scientific761a7f8,
+    nineteenTEXTinputs, actual Opus5.5/high/HIGHthreshold. No full verdict or
+    adoption yet. Keep original handle/native dir; no duplicate run.
 
 ## Concrete deliverables for the next session
 
-- Resolve the EXISTING isolated target statement gate, adjudicating every
-  finding and preserving its original result. No new proof until accepted.
-- Prove exact Y1-Y4 E-plus-constants driver/source/Young/average consumer,
-  get its full independent gate, and apply F3 only after its L2 premise holds.
-- Restore remote sync and integrate isolated mathematical commits after
-  inspecting serial refs/ownership. Do not drop pending master/handoff work.
-- Subsequent compact deterministic mean/gap/full-phase cone/raw event-cost,
-  all-alpha lower bridge, sharp upper and source energy dictionary remain.
+- Resolve EXISTING FULL scientific review29576, preserving its original
+  terminal result, validating bindings/coverage/archive and adjudicating
+  every finding before adopting the candidate.
+- If accepted, consider worthwhile typed finite projection/range consumers;
+  existing71facts/18seams/L0 unchanged. No generic Lean foundation project.
+- Then compact deterministic mean negative trial/gap, full-phase spectral
+  projection/complement on THISF, actual raw shift/event/cost and growing
+  product. Sharp upper/source dictionary remain full-goal obligations.
+- Restore remote sync/integrate isolated math after serial refs/ownership
+  audit. Do not discard pending master/handoff commits or foreign work.
 
 ## Success criteria for the immediate next step
 
-The statement gate accepts exact F=E+two constants for the SAME fixed-mask
-PDE, including both response columns, source first-response identity on
-constants, standard Banach Young stability/moments and the actual W-measurable
-masked average. Then write its full proof and get independent analytic/
-source/application review. The accepted F3 conditional premise is not closed
-by finite controls or a statement verdict. No global E density or original
-noise-Hilbert multiplier may be used to fake the constant response.
+Full proof review accepts the exact candidate761a7f8, all findings
+adjudicated, original model/data/classes retained. It must verify the
+actual constant columns, cancelling-data propagation, source strong
+integral and Picard identities, Gaussian/Young/source convergence and
+W-measurable masked average. Only then claim accepted F3's L2 premise
+closed. Finite controls and the accepted statement gate alone do not close
+it. No global E density, original noise-Hilbert multiplier or low-Sobolev
+point trace may be used.
 
 ## Anti-success criteria
 
@@ -926,25 +938,42 @@ REFRAME, not independent novelty. No long proof, new Lean count or main
 moment lower/upper constant claim. Isolated untracked launch metadata is
 owned WIP, not foreign work. Root handoff points to its exact location.
 
+2026-10-31 further checkpoint: isolated target2a46ec2 accepted by original
+native91665, Opus5.5/HIGH15checks414.046s,no requiredrepairs. All12input
+bindings/27nativearchive members verified before full proof. Thirteen
+minor notes addressed in COMPLETE CANDIDATE
+notes/fixed-mask-young-constant-phase.md, scientific761a7f8: exact phase/
+constant exclusion/whole-data finite propagation, actual source response
+columns and cutoff independence, standard Young/range/moments/source flow,
+ordinary Picard/distribution identification, actual W-measurable raw average
+and conditional F3 application. Optional real compact CtCc-infinity base.
+V2 rational controls add explicit grid/derived seminorm and dropped-column
+models; executed, v1 retained. Prior Young acceptance/source custody added.
+Nineteen-text FULLscientific packet; original exec29576 confirmed live,
+no verdict/adoption. All19live/frozen/git bindings rechecked. Branchpush
+failed again No route to host. Owned isolated WIP scientific-launch-v1.json
+preserved by exact path below; no new Lean count or main asymptotic claim.
+
 ## Repo & git state at handoff
 
-Root substantive adoption0accd3db751435e17a333a3122bf878bb8084568 and
-handoff1a531db0336c71dc81b77ee4e4c34ab4345f0e74 are LOCAL ONLY; this root
-HANDOFF-only successor also pending push. Last verified remote checkpoint
+Root master before this HANDOFF-only successor:
+99e596f84189c00700edaacd09c945a22e971520, pending earlier
+0accd3d adoption and operational handoffs. Last verified remote checkpoint
 604c60f2f8dc6d1a7635b9af224bbb6e5751d379. <HUB> No route to host;
 no fresh parity claimed. Root otherwise clean, no foreign WIP.
 
-ACTIVE isolated branch research/fixed-mask-young-20261031, committed target
-2a46ec21b0cd19c53e4ff2a8adfe70ad280a7536, worktree
-${HOME}/.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave.
-Its owned untracked path at capture:
-reviews/2026-10-31-fixed-mask-young/statement-launch-v1.json.
-Native review exec91665 live at last poll, directory
-${HOME}/.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-statement-v1.
-No master integration/push for this wave. Preserve exact worktree/native
-paths; the literal root HANDOFF remains the entry point.
-Wiki project page ../SPDEs-wiki/content/projects/stratonovich-ham-second-moment.md
-exists, unchanged. No whole-paper/novelty/circulation clearance.
+ACTIVE isolated branch research/fixed-mask-young-20261031:
+761a7f8d521d244997fc5a42f67c52621fa08418, complete scientific candidate,
+worktree ${HOME}/.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave.
+Owned untracked path at capture:
+reviews/2026-10-31-fixed-mask-young/scientific-launch-v1.json.
+FULL native exec29576 live at last poll, directory
+${HOME}/.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-scientific-v1.
+Statement91665 terminal result fully retained, not a live job. No new Lean
+job. No master integration/push of isolated wave. Preserve exact native/
+worktree paths; literal root HANDOFF remains the loader entry point.
+Wiki ../SPDEs-wiki/content/projects/stratonovich-ham-second-moment.md exists,
+unchanged. No whole-paper/novelty/circulation clearance.
 
 ## Operating notes
 
@@ -977,7 +1006,7 @@ actual Gaussian event/cost, all-alpha variational lower and sharp upper
 constant/source normalization remain OPEN. H1/2 never supplies point
 Sobolev evaluation here. No cutoff/large-time limit interchange or independent
 time-block assumption. Full original goal remains ACTIVE, not complete.
-The new direct-sum F is a TARGET, not yet accepted analytic construction.
+The new direct-sum F is a full CANDIDATE, not yet accepted analytic construction.
 Its finite marker model cannot prove continuum constants lie outside E.
 No global E density, zeroed constant columns or C0-only Young stability.
 Future spectral/complement estimates on this F need exact revalidation;
