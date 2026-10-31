@@ -7902,3 +7902,19 @@ Skorohod/sourcefix/TeX/PDF/wiki/bib/publication, NoRoute/pushpending.
   bytes; separately verified byteequal acceptedGit f6bc184. Scoped whitespace
   check excludes ONLY those2exactcopies; all other newpaths pass. No source
   normalization/hash alteration to satisfy formatting. Receipt retained.
+
+## US statement/source/type gate accepted — 2026-10-31
+
+- Frozen43ff384,original73068 TERMINAL0,actualOpus5.5/HIGH,19checksPASS,
+  PASS_WITH_NOTES,no requiredrepairs,607.619s. Canonical parse/pass/report-
+  correspondence/fullcoverage including10PRIMARYimages validated. All42
+  five-way bindings verified BEFORE newproof/clarifications; nativearchive
+  every member readback-hash checked. Rawreport unchanged.
+- All10minor notes adjudicated. Accept names/typedLr/SPmeanmatch/fixedRlift/
+  completedaveraging/proofduties/zero-guard distinction/provenance/countscope.
+  Reject reviewer8: Q2upperentry1/2 is b/sqrt(h),not b; k0,b1,V-4,h4,tpi/4
+  realizesexactbalancedfiniteQ2. Still notactualmaskedPDE/slowCM control.
+- 40digitformula maximum isaggregate only;80digit rows/percase precision
+  differences retained,not complete40digitresidual rows. Honest limitation,
+  no fabricated values or unchanged rerun. New fullproof still required.
+  Original sharp/allmodel goalACTIVE; no newkernel/compiler/count or TeX.
