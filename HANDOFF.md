@@ -1,135 +1,111 @@
-Last updated: 2026-10-31 11:33 UTC (Codex)
+Last updated: 2026-10-31 12:14 UTC (Codex)
 
-Full original upper/sharp goal ACTIVE. Fixed-R averaged Cameron bound and
-precise uniform-R obstruction accepted; residual DRIVER norm exponential
-gate next. No sharp point upper or intended source-constant identity yet.
+Full original upper/sharp goal ACTIVE. Actual fixedR residual driver-norm
+exponential estimate now independently accepted; nonlinear multiplicative
+Young-perturbation statement screen next. Original point sharp upper and
+intended source-constant correspondence remain OPEN.
 
 ## ⏭ Next session: where to stand and what to do
 
 Start in this original root (loader entry), then enter ACTIVE isolated
-worktree ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave, branch
-research/fixed-mask-young-20261031, CLEAN committed HEAD
-2d12ca9f477e680225a102a05e696752ccb28ae0.
-Its Progress.md is current workflow/math authority; inherited isolated
-HANDOFF is stale. No root-master payload integration/push yet.
+worktree ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave,
+branch research/fixed-mask-young-20261031, CLEAN committed HEAD
+864d6d980ff250a29fc51718f610a4868252373b.
+Its Progress.md is the current workflow/math authority; inherited isolated
+HANDOFF is stale. No rootmaster payload integration or push succeeded.
 
-FIRST prepare/run the independent STATEMENT gate for
-reviews/2026-10-31-upper-residual-exponential/target-v2.md.
-Use actual accepted C3/transfer moment bounds, the exact norm/CM quotient/
-Gaussian-law support and Friz-Hairer PRIMARY Theorem11.7/Example11.8.
-The18rank-one controls are only floating calibration. No long proof before
-the statement gate. This is a DRIVER NORM estimate, not a solution upper.
+FIRST freeze/falsify the exact E1 multiplicative Young-perturbation
+statement outlined in
+reviews/2026-10-31-upper-residual-exponential/nonlinear-next-screen-v0.md.
+Preserve actual deterministic physical endpoint growth, a LINEAR plus
+nu-power perturbation cost, rank-uniform constants and the full F phase.
+The eight exact scalar controls already refute pure-nu cost and false
+uniform maximum-block bounds. Planning screen is UNREVIEWED, not a theorem.
+Obtain the required independent statement gate before long proof.
 
-New accepted input: notes/upper-cameron-compactness.md,
-scientifice0a6f3e/adoptionda1e1f7,12checks/HIGH523.772s,no requiredrepairs,
-26input bindings/41native archive members verified. ALL original Gamma/
-dimensions, physical fractional products and compact mean maps on ACTUAL F,
-restricted raw tensor/time mean compactness, given-W residual CM identity,
-exact(delta sum||.||^p)^(1/p) bound
- C_B(2/B)^(1/p-1/r)sqrt(delta)epsilon_J, epsilon_J->0, FIXED R,B.
-
-Also accepted: white translated unit CM controls defeat ONLY
-sup_R||T_R(I-PJ)||->0 for FIXED finite smooth compact raw projections.
-Not fixed-R C1-C3, not all projections/localization and not whole upper goal.
-Growing original cone/POINT upper, nonlinear products/signed controls and
-intended source constants remain OPEN. Never reverse fixed-mask F3.
-
-All original statement77668/full5538 processes TERMINAL accepted/HIGH.
-73finitefacts19local seams/L0 PROPOSED unchanged; only an EXISTING Mathlib
-finite powermean was type-audited/reused with accepted actual guards.
-No new kernel theorem/export/package/companion/cluster. <HUB> NoRoute;
-preserve both pending histories, no fresh parity/master integration.
+New accepted input notes/upper-residual-exponential.md:
+scientific8b16bb7/adoption0dce26f,20checks/HIGH324.742s,no requiredrepairs,
+24input bindings/39native archive members verified; actual all-Gamma/
+d1/2/3 fixedR driver norm, true Gaussian support/CM/AWS, PRIMARY11.7 tail,
+finite-delta bound with prefactor2 and vanishing iterated inverse-delta rate.
+This is NOT a nonlinear or original point-moment sharp upper.
+All statement62784/full75891 review handles TERMINAL accepted/HIGH.
 
 ## Pre-flight checks
 
-1. Read AGENTS.md, PROJECT-GOAL.md and ROOT/ACTIVE Progress.md. Current
-   synopsis authoritative, historical bullets retained. Full original
-   all-dimensional sharp/source objective not narrowed to a fixed mask.
-2. Check root/isolated status and ownership. Root before this HANDOFF-only
-   successor922fae3ce332e21f19fa38e7accc2b90a1c1a886; active exact HEAD
-   above. Both pending lines preserved, no foreign WIP/reset/blind merge.
+1. Read AGENTS.md, PROJECT-GOAL.md and ACTIVE Progress.md. Preserve full
+   original all-dimensional sharp/source objective and decision points.
+2. Root before this HANDOFF-only successor ca4baf566835a43c00ba03f27221cc6253e1714c; active exact HEAD
+   above. Check ownership/status first; no foreign WIP/reset/blind merge.
 3. Serial origin/<HUB> audit: last VERIFIED remote
-   604c60f2f8dc6d1a7635b9af224bbb6e5751d379. Fetch/push again NoRoute.
-   No fresh parity/sync/master merge; all Git sessions terminal at save.
-4. C1-C3 statement0342ce4/c6e63d7,22checks/HIGH569.515s,
-   20inputs35native members. FULL e0a6f3e/da1e1f7,
-   12checks/HIGH523.772s,26inputs41native members. Canonical report/
-   pass/correspondence/readcoverage and all live/frozen/Git/native input
-   hashes BEFORE clarity edits checked, every archive member verified.
-   No recovery/restart/confidence waiver; frozen proof/report unchanged.
-5. Ten optional notes clarified without new estimate: H_I=H alias;
-   annular2^s/lowblock1; transferred F identities; fixedR base mask;
-   subsequence; projected-transfer scalar stats; beta/beta2; narrow guard
-   title; real invariance; local symbol domains. No unseen source assumed.
-6. Inputs: old full-Gamma physical H1 covariance/absolute form and exact
-   whole-space compact cutoff. C1 new H^s uses real radial bands, absolute
-   series/Tonelli and actual product completion. Time mean uses positive
-   compact K/square-root unitary without traceclass; vector constants
-   dimensionfree, spatial finite rank needed for compact tensor mean.
-7. C3 retains GIVEN W and supported raw H_I=(0,1) test completion, actual
-   m_R=eta_R² ONCE, BOTH constants, true lastpartial, compact Bochner
-   conjugation/strong group+adjoint, actual first-chaos quotient. Exact
-   delta-weighted norm/cardinality/positive powers, not max or deltaB norm.
-8. Existing pinned Mathlib finite powermean COMPLETE type/standardaxioms
-   read-only audit and actual r/p,t_m^p substitution pass. No new local
-   theorem/compiled formal operator consumer/count.73facts19seams/L0,
-   FP-CAMERON is INFORMAL analytic boundary, not a Lean declaration.
-9. Root controls:24bounded F-coordinate rows with8trivial zero horizons,
-   5selectedfrequency LOWER witnesses,36spatial/36time scales/12trace
-   guards. Wrong-fastvelocity and wrongJacobian share one ratio on col1.
-   No full op/Ctheta/projection-tail norm or error certificate. No traceclass
-   raw-L2 Gaussian or instantaneous Gaussian multiplier.18new scalar
-   Gaussian moment controls40/60digits/nu1 exact calibration, not operator.
-10.Primary Friz-Hairer2020 book alreadycorpus/bib. Printed190-191=
-   physicalPDF200-201, Theorems11.6/11.7/Example11.8 text+renders viewed.
-   SourcePDFSHA d7ba220ed75d6220af13ca964e763365da954ac2fdf8bc4e9d76b7aa32a6b170.
-   Use this EXACT future norm-tail source, not finite-d rough-path11.5.
-   If asking a reviewer to verify primary formulas, supply both rendered
-   pages as required image inputs/custody; C1-C3 review read text only
-   because concentration was not a premise. Address AWS/measurability.
-11.Canonical TeX/PDF unchanged; TeX SHA
+   604c60f2f8dc6d1a7635b9af224bbb6e5751d379. Fetch/SSH/push again NoRoute.
+   No fresh parity/sync/master integration; preserve both pending histories.
+4. D1 statement22f7bb9/040ec42:9checks/HIGH320.664s,21bindings/36native files.
+   FULL8b16bb7/0dce26f:20checks/HIGH324.742s,24bindings/39native files.
+   Canonical report/pass/correspondence/readcoverage and BOTH PRIMARY images
+   pass. All live/frozen/Git/native hashes BEFORE clarity edits verified,
+   every archive member rehashed. No recovery/restart/confidence waiver.
+5. Five full-review notes clarified only: zero-case finite-delta wording;
+   P_n/P_seen and local notation; nu1.8 loose bound; primary image/excerpt
+   scope; interval nonemptiness. Frozen proof/report unchanged.
+6. Gaussian law is ACTUAL correlated given-W tuple in separable B0^n,
+   with exact(delta sum)^1/p norm. True CM quotient from supported H_I,
+   no raw H/L2 Gaussian. Bochner conditional expectation/simple density,
+   measurable-norm and compact-enlargement arguments are INFORMAL analysis.
+7. Primary Friz-Hairer2020 printed190-191/physicalPDF200-201 already held;
+   both images were supplied and read. SourcePDF SHA
+   d7ba220ed75d6220af13ca964e763365da954ac2fdf8bc4e9d76b7aa32a6b170.
+   Theorem11.7 is imported directly with all-x/h norm shift, positive
+   sigma/anchor and separately handled zero cases; no rough-path11.9 input.
+8. Existing Mathlib REAL weightedAMGM complete type/axioms audited locally,
+   actual positive real weights/bases/zero guards passed FULL application.
+   No new theorem/module/count:73finitefacts19seams/L0 PROPOSED. See
+   FP-RESIDUAL-EXP in lean-progress/BOUNDARIES.md and ledger864d6d9.
+9. Numerical scope:18old scalar integrals40/60digits/nu1 exact calibration;
+   18bound/3wrong-scale and analytic endpoint/power controls. No certified
+   enclosure/operator/SPDE computation. Eight NEXT scalar controls are
+   exact rational deterministic diagnostics, not realizable CM examples.
+10.Canonical TeX/PDF unchanged; TeX SHA
    58b092b258d4f363f8bfa0a02dcf492dcb9c13e794dbcab440bf7b0529b53b7d.
-   Active All.bib symlink unresolved; canonical refdb key checked read-only,
-   no repair/edit. No wiki/sourcePDF/bib/Skorohod or manuscript integration.
-12.Exact current native paths relative to ROOT:
-   ../../../../.local/state/Le-AI-Lab/stratonovich-upper-cm-statement-v1
-   ../../../../.local/state/Le-AI-Lab/stratonovich-upper-cm-scientific-v1
-   Both original handles terminal. No new running review/Lean job. Keep
-   historical failed/MEDIUM/recovered records at their exact scopes.
+   Active All.bib symlink unresolved; canonical refdb read-only key checked.
+   No wiki/sourcePDF/bib/Skorohod or manuscript integration.
+11.Exact native paths relative to ROOT:
+   ../../../../.local/state/Le-AI-Lab/stratonovich-upper-residual-statement-v1
+   ../../../../.local/state/Le-AI-Lab/stratonovich-upper-residual-scientific-v1
+   Both original handles terminal; no running review/Lean/Git job at save.
 
 ## Concrete deliverables for the next session
 
-- A frozen norm-exponential statement/source/type packet with actual
-  Gaussian law/CM quotient/shift inequality, small mean and zero cases,
-  exact PRIMARY tail theorem and18scalar calibration limits.
-- Independent statement gate BEFORE a complete norm-tail integration proof;
-  then FULL analytic/source/type/application review before adoption.
-- Preserve order of limits and FIXED R. A norm exponential estimate cannot
-  silently control nonlinear Young products or the original growing cone.
-- Keep accepted strong lower/upper-scale proof, original Gamma/diagrams,
-  point/source-normalization objective and companion decision4 intact.
+- An exact E1 statement/actual application packet, based on existing Young
+  Section4, which retains the deterministic endpoint factor and needed
+  linear residual term and has constants independent of rank J.
+- Falsification and independent statement review before long proof; then
+  full proof/application gate before any nonlinear adoption.
+- Preserve mean-good/bad Lr budgets, nu<=p<r, explicit error/limit order,
+  actual full-phase products and original growing-cone/source obligations.
+- Keep accepted strong lower/correct-scale upper and original Gamma,
+  Stratonovich diagrams/source normalization/companion decision4 intact.
 
 ## Success criteria for the immediate next step
 
-The statement gate verifies the proposed1/delta norm exponential bound
-with nu=1/theta<2, actual CM sigma<=C0sqrt(delta)epsilon_J, legitimate
-Radon Banach law/support, Markov anchor and norm-shift hypothesis. Zero
-mean/zero CM cases, measurable enlargement/outer-measure convention,
-nonnegative tail integration and constants are explicit. No new operator/
-nonlinear/point upper claim beyond the stated norm result.
+A well-posed independently checked nonlinear perturbation statement with
+actual Young conjugation/inverse/associativity hypotheses, deterministic
+endpoint growth retained, linear+nu perturbation costs, and rank-uniform
+constants on bounded mean blocks. No hidden C(J,M)epsilon_J^c inference.
+This remains separate from signed-potential spectral upper, growing cone,
+original POINT upper and intended source constants.
 
 ## Anti-success criteria
 
-No raw instantaneous Gaussian in L2/HS multiplier, scalar time compactness
-tensor infinite identity, noise-quotient mask multiplier, max-entry operator
-norm, E alone denseF, ignored constant velocity or clipped block clock.
-No uniformR finite-projection tail after the accepted white counter.
-No independent-block/heat-source-error assumption, F3 reversal, refuted
-naive two-clock identity, ordinary Laplace transform of superexponential
-full moment or fixed-mask model replacing original POINT upper.
-No intended source normalization repair, actual p1 from S1, sharp/exact
-completion, Skorohod/contact/HPC/companion/publication or premature kernel
-claim. Local scientific gate is not remote/wiki/whole-paper clearance.
+No pure-nu local cost without linear term/slack; no uniform block maximum
+from a global Lr budget; no shrinking epsilon_J defeating arbitrary J-growth.
+No uniformR fixed finite smooth projection tails after accepted white guard.
+No raw instantaneous Gaussian/L2/HS field, noise-quotient mask multiplier,
+ignored constant velocity, independent time-block/heat-error assumption,
+F3 reversal, point Sobolev trace or fixed-mask model replacing original.
+No author-normalization repair, own-energy identity with actual p1,
+sharp/exact/fullgoal completion, Skorohod/contact/HPC/companion/publication.
+Local scientific gate is not remote/wiki/whole-paper/circulation clearance.
 
 ## What the previous sessions produced
 
@@ -1164,64 +1140,66 @@ active final2d12ca9. Primary Friz-HairerPDF200-201 viewed/custody retained;
 no concentration applied yet. No canonical TeX/PDF/wiki/bib/source repair,
 contact or full point upper. Original source/sharpupper/exactlimit OPEN.
 
+2026-10-31 residual exponential close: statement22f7bb9/adoption040ec42,
+9checks/HIGH320.664s,21bindings36native files; full8b16bb7/adoption0dce26f,
+20checks/HIGH324.742s,24bindings39native files verified with BOTH primary
+images. Complete actual Gaussian law/CM/AWS/support/measurable enlargement,
+zero cases, PRIMARY11.7, Rayleigh integration/prefactor2, realAMGM guards
+and fixedR inverse-delta exponential rate accepted. Five optional notes
+clarified, frozen proof/report unchanged. No new kernel/count;73facts19seams,
+FP-RESIDUAL-EXP ledger864d6d9. Next nonlinear screen9bf4213 and eight exact
+scalar diagnostics are UNREVIEWED; pure-nu cost and max-block shortcuts
+refuted only in stated scalar scope. Canonical TeX/PDF/wiki unchanged;
+source/sharp/point/fullgoal stillOPEN. All jobs terminal, pushNoRoute.
+
 ## Repo & git state at handoff
 
 Root master before this HANDOFF-only successor:
-922fae3ce332e21f19fa38e7accc2b90a1c1a886, prior0accd3d plus operational
-handoffs pending separately. Last VERIFIED remote
-604c60f2f8dc6d1a7635b9af224bbb6e5751d379; NoRoute prevents fetch/push,
-no fresh parity/sync/master merge claimed.
-
+ca4baf566835a43c00ba03f27221cc6253e1714c, prior0accd3d plus operational handoffs pending separately.
+Last VERIFIED remote604c60f2f8dc6d1a7635b9af224bbb6e5751d379.
+NoRoute prevents fetch/SSH/push; no fresh parity/sync/master merge claimed.
 ACTIVE isolated research/fixed-mask-young-20261031 CLEAN HEAD
-2d12ca9f477e680225a102a05e696752ccb28ae0, path
+864d6d980ff250a29fc51718f610a4868252373b at
 ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave.
-All owned payload committed, no foreign WIP/live reviewer/Git/Lean job.
-Native full5538 terminalacceptedHIGH, frozen e0a6f3e/proof/report unchanged.
-Root HANDOFF loader entry, isolated inherited HANDOFF stale. Wiki
+All owned payload committed; no foreign WIP or running review/Git/Lean job.
+Root HANDOFF is loader entry; inherited isolated HANDOFF stale. Wiki
 ../SPDEs-wiki/content/projects/stratonovich-ham-second-moment.md exists,
 unchanged. Internal reviewed science, no whole-paper/publication clearance.
 
 ## Operating notes
 
-For the next source application, the ambient Gaussian is the EXISTING
-separable Banach tuple of little-Holder K(F) paths, not raw spacetime noise
-as a function. C3 identifies the CM image/quotient via first chaos. Verify
-its closed support/abstract-Wiener and norm-shift/measurability conditions
-before invoking primary11.7. Norm triangle is not a nonlinear solution
-translation theorem. Exponential moment with nu<2 is not a point-moment
-upper without further actual Young/product/growing-cone work.
+Existing Young Section4 gives local calculus, invertibility and crude
+exponential bounds. It does not yet prove the proposed multiplicative
+comparison preserving the deterministic endpoint norm. Exact Young
+variation-of-constants on F and uniform mean-good/bad budgets are the next
+screen; both displacement and velocity are needed for products.
+D1 permits each fixed eta, not uncontrolled J-dependent coefficients.
+A tunable linear-term slack requires an explicit order of limits.
 
-The precise white guard rules out fixed smooth finite projections uniform
-in mask radius. It does not rule out localized/translation-dependent
-projections with entropy estimates or translation-invariant frequency
-truncation of infinite spatial rank. These are unproved future questions.
-Compact E initial data matching constants inside the backward cone could
-avoid global F-column volume losses, but needs source/finite-propagation/
-point-moment proof. No such global upper is assumed.
+FixedR mean compactness and D1 do not solve the growing cone. The accepted
+white guard rules out fixed finite smooth projections uniform in mask
+radius; localized/translated projection entropy or frequency truncation
+remain questions. Compact E initial data matching constants in the cone
+needs source/finite-propagation/point-average proof, not reverse F3.
 
-Intended source definition/normalization is UNKNOWN; existing source audit
-reviews/2026-10-28-source-normalization/adjudication-v2.md records a literal
+Intended source normalization is UNKNOWN; see
+reviews/2026-10-28-source-normalization/adjudication-v2.md for the literal
 printed-interval discrepancy under a meaningful finite-energy reading.
-No repair or separate(1.24)proposal adopted. Continue independent true upper
-work while retaining ORIGINAL sharp/source target, not calling own energy
-bounds its completion. No author correspondence authorized.
-
-Root hash/runtime/archive evidence, AI source/application review and Lean
-kernel facts have separate scopes. Official companion decision4 gated,
-standalone checks separately authorized; no new package or cluster here.
+No repair or separate(1.24)proposal adopted. Continue true upper work
+without equating own variational energy with intended author constants.
+Root runtime/hash/archive evidence, AI review and Lean kernel facts have
+separate scopes. Official companion decision4 pending; standalone local
+checks authorized. No human correspondence or cluster use authorized.
 
 ## Risks to monitor
 
-C1-C3 solve an upper-method norm problem for a FIXED physical mask only.
-The next norm exponential target is UNREVIEWED. Nonlinear product stability,
-signed controls/variational comparison, growing original cone/POINT upper,
+Accepted D1 is fixed-mask DRIVER control. Nonlinear product stability,
+signed-control variational upper, growing original cone/POINT upper,
 intended author constants and conditional exact limit remain real gaps.
-No numerical covariance row or own-energy lower fills them automatically.
-
-Keep original parameter/covariance class, raw noise conventions, constants,
-self/unequal/empty Stratonovich diagrams and source/time-limit order. No
-Hilbert traceclass/raw mask/independence shortcuts or false reverse F3.
+Keep original parameter/covariance class, actual amplitudes/constants,
+self/unequal/empty Stratonovich diagrams and source/time-limit order.
+No wrong independence, traceclass field or false reverse comparison.
 Network sync remains pending, not mathematical impasse. Preserve both
-histories/foreign WIP, no destructive workaround or fresh parity claim.
-Full original goal ACTIVE, not complete or blocked. No contacts/Skorohod/
-source correction/HPC/privatecompanion/publication/whole-paper certificate.
+histories/foreign WIP; no destructive workaround or fresh parity claim.
+Full original goal ACTIVE, not complete or blocked. No contact/Skorohod/
+sourcefix/HPC/privatecompanion/publication/whole-paper certificate.
