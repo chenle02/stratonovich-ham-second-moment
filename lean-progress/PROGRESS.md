@@ -553,3 +553,16 @@ INFORMAL analytic interfaces. Exact white guard excludes ONLY uniformR
 fixed smooth-projection tails. See FP-CAMERON in BOUNDARIES.md. Future
 residual-exponential DRIVER norm estimate still UNREVIEWED, not SPDE upper.
 Official companion decision4/registry/lease/HPC unchanged.
+
+## Existing real weightedAMGM: residual-norm application accepted — 2026-10-31
+
+Scientific8b16bb7/adoption0dce26f,20checks/HIGH324.742seconds. Existing pinned
+Real.geom_mean_le_arith_mean2_weighted COMPLETE public type/standard axioms
+locally audited read-only; actual real weights/bases/positive-denominator/
+zero/rpow application passed FULL analytic/source/type/application review.
+No new compiled local theorem/module/export/count;73facts19seams/L0.
+
+FP-RESIDUAL-EXP in BOUNDARIES.md records the actual fixedR Gaussian norm
+exponential estimate as INFORMAL analysis, not a formally verified SPDE
+upper. Original nonlinear/growing-cone/point/sharp/source gaps stay open;
+official companion decision4 unchanged. No donor/package/registry/lease/HPC.

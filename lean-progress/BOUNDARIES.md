@@ -216,3 +216,20 @@ inequality; its actual r/p guard application accepted, no new kernel claim.
 White translated-control uniformR guard also ANALYTIC at its precise scope.
 No full original upper/nonlinear/point/concentration/energy-constant theorem
 from this interface.73facts19seams/L0 PROPOSED/no officialcompanion unchanged.
+
+## FP-RESIDUAL-EXP: actual fixed-mask Gaussian norm exponential interface
+
+Scientific8b16bb7/adoption0dce26f,20checks/HIGH324.742seconds. The complete
+public type/standard-axiom evidence for existing Mathlib
+Real.geom_mean_le_arith_mean2_weighted and actual Section5 weights
+nu/2,(2-nu)/2, nonnegative bases, positive denominators and zero/rpow guards
+passed the FULL application gate. No new local theorem or formal analytic
+consumer;73facts19seams/L0 unchanged.
+
+Gaussian law/Bochner conditional regression/CM quotient/AWS measurable norm/
+support/compact enlargement, PRIMARY Borell-Fernique application, Rayleigh
+integration and fixedR iterated inverse-delta exponential rate remain
+reviewed INFORMAL analytic arguments in notes/upper-residual-exponential.md.
+They are not consequences formalized by a real AMGM kernel. Nonlinear Young
+product/growing-cone/original point sharp upper/source normalization/exact
+limit remain open. No official companion/package/registry/lease/HPC action.
