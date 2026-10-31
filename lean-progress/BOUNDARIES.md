@@ -233,3 +233,19 @@ reviewed INFORMAL analytic arguments in notes/upper-residual-exponential.md.
 They are not consequences formalized by a real AMGM kernel. Nonlinear Young
 product/growing-cone/original point sharp upper/source normalization/exact
 limit remain open. No official companion/package/registry/lease/HPC action.
+
+## FP-YOUNG-RESIDUAL: fixed-mask nonlinear error on bounded control balls
+
+Scientificcdf2056/adoptionb480aca,24checks/HIGH388.122seconds. Existing
+Mathlib Real.rpow_sum_le_const_mul_sum_rpow_of_nonneg COMPLETE printed
+type and ACTUAL finite application kappa=p/nu>=1,f_m=v_m^nu>=0,n>=1,
+positive real powers/zero bases/nu=p equality passed FULL application review.
+No new local theorem/module/export/compiler run or count:73facts19seams/L0.
+
+Refined nonlinear Young growth/inverse/conjugation/2theta product rule,
+actual raw head/tuple/both constants, rank-uniform good/bad Lr budgets,
+fixedR/M nonlinear residual exponential negligibility and Borel Gaussian
+freezing are reviewed INFORMAL analytic interfaces, not formalized by the
+finite powermean. No global restart/M-tail/signed-spectrum/growingcone/
+original-point sharp upper, source-normalization/exactlimit theorem follows.
+Official companion decision4 unchanged; no package/registry/lease/HPC.

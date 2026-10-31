@@ -1,8 +1,9 @@
 # Next deterministic spectral upper: candidate screen, no theorem
 
 UNREVIEWED PLANNING ONLY, outside the frozen E1-E4 full-review packet.
-Original sharp/source goal ACTIVE. E1-E4 full review still pending at
-scientificcdf2056. This note proves no static/point or variational upper.
+Original sharp/source goal ACTIVE. E1-E4 now ACCEPTED at scientificcdf2056/
+adoptionb480aca,24checks/HIGH388.122s. This planning screen proves no
+static/point or variational upper.
 
 The nonlinear residual comparison leaves a product of DETERMINISTIC physical
 block norms. The next useful input must allow SIGNED mean potentials and

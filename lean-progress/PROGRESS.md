@@ -566,3 +566,12 @@ FP-RESIDUAL-EXP in BOUNDARIES.md records the actual fixedR Gaussian norm
 exponential estimate as INFORMAL analysis, not a formally verified SPDE
 upper. Original nonlinear/growing-cone/point/sharp/source gaps stay open;
 official companion decision4 unchanged. No donor/package/registry/lease/HPC.
+
+## Existing powermean: nonlinear residual application accepted — 2026-10-31
+
+Scientificcdf2056/adoptionb480aca,24checks/HIGH388.122seconds. Exact complete
+Mathlib powermean type and actual kappa=p/nu,f=v^nu,n>=1 positive powers/
+zero guards/nu=p equality accepted. No new source/compiler/kernel count:
+73facts19seams/L0. FP-YOUNG-RESIDUAL in BOUNDARIES.md distinguishes the
+new actual fixedR/M nonlinear E1-E4 analysis from the finite formal input.
+Original sharp-point/growing-cone/source gaps and companion decision4 open.
