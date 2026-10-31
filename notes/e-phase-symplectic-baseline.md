@@ -1,11 +1,12 @@
 # Actual E symplectic evolution and deterministic block-mean norm baseline
 
-UNREVIEWED COMPLETE PROOF CANDIDATE. SP1-SP4 statement/source/old-scalar-
-application gate passed Opus5.5/HIGH at frozen240f907 (20checks,413.721s),
-with all11optional findings adjudicated at179e629. This note supplies the
-full proofs and exact block application. It needs its own FULL independent
-gate before adoption. Norm>=1 is not a growingR upper or sharp constant.
-The original all-model sharp-point/source goal remains ACTIVE.
+ACCEPTED at the scoped FULL analytic/source/oldscalar-type/actual-block-
+application gate:scientificd64978d,actualOpus5.5/HIGH,21checksPASS,
+379.264seconds,no requiredrepairs. All30input bindings/native archive
+verified before optional clarity edits. Nine findings adjudicated in
+reviews/2026-10-31-growing-cone-symplectic/scientific-adjudication-v1.md.
+Frozen proof/report preserved unchanged there. Fixed-parameter E norm
+baseline only;no growingR upper or sharpconstant. Original goal ACTIVE.
 
 ## 1. Model, distinct objects and exact new claims
 
@@ -155,7 +156,10 @@ NONCENTERED. The physical mask appears ONCE in both terms.
 
 ## 4. Ordinary source conservation by the bounded interaction equation
 
-Fix positive rho and its probability-one Ct spatially smooth source event.
+Fix positive rho and intersect its probability-one Ct spatially smooth
+coefficient event with the sourceTheorem2 event identifying M_rho with its
+ordinary primitive for ALLtimes/states. Both events are for this fixedrho;
+we work on their single probability-one intersection.
 b=b_rho has a common compact support and is continuous in sup norm,with
 finite uniform sample bound on[0,T]. The interaction coefficient
              C_b(r)=S_E(-r)B(b(r))S_E(r)
@@ -179,7 +183,7 @@ The original free generator was never differentiated on a rough E state.
 Since omega is a bounded bilinear form,differentiate
 omega(U_rho(t,s)e,U_rho(t,s)f). Equation(12) gives derivativezero,hence
  omega(U_rho(t,s)e,U_rho(t,s)f)=omega(e,f).
-The argument is pathwise on the same coefficient-regularity event for ALL
+The argument is pathwise on the same intersection event for ALL
 states and time pairs: bounded ordinary evolution is defined there on all
 E; it is not an uncountable intersection of exceptional state events.
 Free conjugation using(5) now gives
@@ -208,7 +212,12 @@ rho,so uniform integrability upgrades to all finite Lp convergence of the
 interaction evolutions in the UNIFORM time-triangle operator-difference
 norm. Multiplication by the bounded free groups gives the same physical
 difference convergence. No operator-norm continuity of the physical free
-group itself is being asserted.
+group itself is being asserted. The Young estimates use bounded
+multiplication of norm1 on B(E),so the Banach arguments on F apply directly
+on E without a dimension cost. The uniform physical difference is the
+image of the interaction difference under the bounded linear map
+V(t,s)->S_E(t)V(t,s)S_E(-s) into bounded triangle families with supnorm.
+Its separable strongly measurable image gives measurability of that norm.
 
 For completeness the E/F restriction also holds for these mean shifts.
 The accepted F driver extension has A_F i=i M,and its source counterpart
@@ -246,7 +255,11 @@ infinite-dimensional Hilbert space. It follows instead from the actual
 Young evolution: on short contraction pieces ||U-I||<=1/3,the Neumann
 series gives an inverse; finite products and S_E inverses give P_D inverse.
 This proves SP3,with no eigenstate,determinant of the full phase,positivity,
-spatial point trace or uniform growingR moment assertion.
+spatial point trace or uniform growingR moment assertion. Explicitly,at
+any fixed0<delta<1 take reference W_fast=W composed with T_(delta,0),
+R=1/delta+2,T=1/delta,c=g_delta,Phi=0 (or any fixed fast-raw direction).
+This gives the actual growing-cone E-flow norm baseline pointwise in delta,
+with no uniform moment or source bound.
 
 ## 7. Exact slow/fast completed block-mean application
 
@@ -283,7 +296,9 @@ in closed iE,as in accepted C3. Define its ACTUAL E compression
 The compression is bounded linear,so strong measurability and Lr bounds
 pass to E. Choose accepted C3 exponents
  1/(1-theta)<r<2/a,1/theta<=p<2<r,
-which exist because theta<1-a/2. Constant columns are inactive on iE inputs;
+which exist because theta<1-a/2 and theta>1/2: the latter gives
+1/theta<2 and1/(1-theta)>2. p only instantiates the complete accepted C3
+parameter package and has no further role here. Constant columns are inactive on iE inputs;
 they were NOT discarded in forming the original F driver or mean.
 Define the stopped E primitive on[0,B]
  H_(m,E)(Phi)(u)=int_0^min(u,ell_m)
@@ -296,7 +311,9 @@ affine time pullback preserves null sets. No point potential is presumed.
 Accepted C3(12) at RAW PROJECTION RANK ZERO (not J_symp=0) gives on F
  E[g_delta A_(F,m)(u)Z_slow]=sqrt(delta)H_(m,F)(Phi)(u),
              g_delta=delta^((1-a)/2),0<=u<=ell_m.           (20)
-Compress through i,using A_(F,m)i=i M_m,S_F i=i S_E and(18). Bochner
+Compress through i,using A_(F,m)i=i M_m,S_F i=i S_E and(18). The
+mean integrand and its primitive have range in iE,which S_F preserves;
+this supplies the right-side compression as well. Bochner
 covariance commutes with this bounded compression. The complete old scalar
 JointTilt.shifted_amplitude,delta>0,g_delta>0,sqrt(delta)>0,gives
  g_delta delta^(a/2)=sqrt(delta).
@@ -342,12 +359,14 @@ source G-vector/primitive,Gaussian/Bochner limits,Young convergence,
 Cameron means or raw adjoint projection. The finite symplectic evaluator
 has one free and three nonzero signed-potential cases; v1 wrong Bessel
 force weight remains preserved and v2 corrects the physical similarity.
+All three false guards (velocity deletion,nonsymmetric force,identical
+phase weights) remain finite algebra diagnostics only.
 The block-direction tests check finite adjoint/scalar bookkeeping only;
 their mean identity by definition is not used to prove(21)-(22).
 No new Lean theorem/compiler/count:74facts20seams/L0 PROPOSED unchanged.
 
-This is a COMPLETE UNREVIEWED proof of the norm baseline and exact block
-mean application only. It makes no stochastic growingR/operator upper,
+This is a scoped independently accepted proof of the norm baseline and
+exact block mean application only. It makes no stochastic growingR/operator upper,
 nonlinear-product ratio,pointsharp/source-energy/normalization/exactlimit,
 novelty,human or whole-paper claim. No contact,Skorohod development,HPC,
 companion,TeX/PDF/wiki/bib/sourcePDF/sibling/publication action.

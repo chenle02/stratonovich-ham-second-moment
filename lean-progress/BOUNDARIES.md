@@ -359,3 +359,21 @@ not Kout singular values; float remainder evaluations not certified.
 Budget is E DRIVER norm only,not F constantcolumn or solutionnorm. No
 stochastic exponential/nonlinear/pointupper/source-normalization/exactlimit
 or companion/privatepackage/registry/lease/HPC/publication clearance.
+
+## FP-E-SYMPLECTIC: actual source/raw/mean form and block norm baseline
+
+Scientificd64978d,21checks/HIGH379.264s,FULL source/oldscalar-type/actual-
+application gate. JointTilt.shifted_amplitude used at delta>0 with positive
+sqrt/g before unscaling SAME-W covariance. Complete source/type/axiom
+fixture unchanged;no new compiler/theorem/module/count74facts20seams/L0.
+
+Bounded Hhalf/Hminus duality/free Fourier/symplecticform,actual G-source
+covariancemean primitive,noncentered allLpYoung convergence,E/F restriction,
+boundedinteraction ODE/limit conservation and actual inverse are reviewed
+INFORMAL analysis. SP4 rawtimeisometryadjoint,orthogonal slowresidual,
+E-compressed completedmean,partial/empty stoppedidentity and normbaseline
+are analytic too;finite matrix/bookkeeping tests do not formalize them.
+No infinite-dim surjectivity fromP*JP=J alone or uniformdirectionbudget.
+Future E-product/tube application,stochastic/growingR/sharp/source/exactlimit
+remain separate;companion/privatepackage/registry/lease/HPC/publication gates
+unchanged. No operator/SPDE theorem has been Lean-certified by this review.

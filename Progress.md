@@ -49,11 +49,14 @@
   verified before6optional clarity notes. Exact source-cone/L2-square/raw
   identity and original point-to-growingE norm reduction,polynomialdata
   cost,allmodels/zeroGamma. This does NOT give the growingR operator rate.
-- **Immediate next:** complete SP1-SP4 actual E symplectic baseline proof
-  after accepted240f907 statement/source/type/application gate20PASS/HIGH
-  413.721s; all11optional findings adjudicated. Its FULL proof gate remains
-  mandatory. Then screen conditional Borell-tube upper route with its own
-  primary/source/falsification gate; no operatorupper claimed yet.
+- **New accepted E symplectic baseline:** scientificd64978d,
+  21checks/HIGH379.264s,no repairs;30five-way bindings/native archive
+  verified. Actual source/raw/mean form preservation,norm>=1,exact completed
+  blockmean fastdirection/trueendpoint baseline. Fixedparams,notuniformbudget.
+- **Immediate next:** freeze/falsify the conditional Borell-tube transfer
+  on the ACTUAL E Gaussian block law,primary11.6/AWS/measurabletubes/halfaction
+  and Rayleighintegration. Obtain its own source/statement gate before proof.
+  No nonlinear growingR upper,variational/source-normalization conclusion yet.
 - **New accepted uniformR E Cameron/regulator:** scientificf54e92b,
   21checks/HIGH348.303s,no requiredrepairs;21input bindings/native archive
   verified before6optional clarity notes. Actual all-model uniformR means,
@@ -7709,3 +7712,29 @@ Skorohod/sourcefix/TeX/PDF/wiki/bib/publication, NoRoute/pushpending.
   theorem inferred. ConditionalBorellroute plan unreviewed,not premise.
   Full original goalACTIVE; branchpush/<HUB>sync recovered,no master
   researchmath integration/circulation/TeX/PDF/wiki/bib/HPC/companion/contact.
+
+## SP1-SP4 FULL actual E baseline gate accepted — 2026-10-31
+
+- Original2346 TERMINAL0,actualOpus5.5/HIGH,21checksPASS,
+  PASS_WITH_NOTES,no requiredrepairs,379.264s,scientificd64978d. Canonical
+  report/pass/correspondence/fullcoverage and30live/packet/Git/nativeworkspace/
+  receipt-SHA bindings verified BEFORE optionalclarity. Complete native
+  archive eachmember readback-hash verified;rawreport unchanged,route/thresholdsame.
+- Nineoptional findings adjudicated: sourceevent includesordinaryprimitive
+  identity;explicitRdelta/Tdelta/gdelta/Wfastinstance; EYoungdimensionfree/
+  uniformphysicaldifference measurableboundedmap; meanrangeiE/rightcompression;
+  harmlessredundantindicatorapprox; theta>.5/r/p package; domains disambiguate
+  conventionalnotations;3finitefalseguards retained; rootformalcountlimitation.
+  Six optional proof-clarity edits,no estimate/hypothesis replaced.
+- Accepted actual all-model E source/raw/completedmean symplectic identity,
+  norm>=1 and actualinverse; exact slowmean/fastdirection covariance/stopping
+  and trueendpoint baseline. No uniformPhi/delta/R moment budget or nonlinear
+  ratio/upper theorem. Future E tube/productconsumer still needs its own gate.
+- FP-E-SYMPLECTIC boundary;oldscalaramplitudeonly,no newLean/compiler/count
+ 74facts20seams/L0. Modelread types/outputs,rootbytechecksseparate;no numeric
+  reruns,human/novelty/whole-paper/circulation/companion clearance. All native
+  reviewers nowTERMINAL,no actual joblive. Full original goalACTIVE.
+- Next conditionalBorelltube plan remainsUNREVIEWED; firstfreeze/falsify exact
+  abstract/currentE-law/source/Rayleighhalfaction component and get own gate.
+  Accepted Umean/SAmeananchor/GCpointtransfer/SPbaseline provide ingredients,
+  not the nonlinear uniformR spectralproduct or author energy dictionary.
