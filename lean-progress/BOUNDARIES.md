@@ -135,3 +135,15 @@ source identities are ANALYTIC, not formalized by the existing finite facts.
 Finite exact rational matrix/loop controls are not Lean certificates or
 continuum proofs. No new Lean consumer,verified-fact count,officialpackage/
 companion/lease/registry/HPC gate follows.71facts/18localseams/L0 unchanged.
+
+Named informal interface FP-GROUND-FAMILY (not a Lean declaration),2026-10-31:
+notes/compact-mean-ground-family.md, scientificbfbd472, full10HIGH359.291s,
+provides the all-dimensional compact-potential uniform ground/gap, actual
+fractional global-E wave and full-F constant-forcing projection/complement,
+with a common negative trial for ALL positive raw Psi without changing its
+Gaussian cost. These spectral/form/continuum/profile conclusions are reviewed
+ANALYTIC inputs, not formalized by existing finite facts.36 exact rational
+corner models/432 differential/108initial controls are not Lean or continuum
+certificates. NEW-F cone, stochastic shift/event/cost and sharp constants
+remain later obligations.71facts/18localseams/L0 unchanged; no package/
+companion/registry/lease/HPC/formal-ground theorem claim.

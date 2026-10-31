@@ -1,0 +1,117 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "notes/compact-mean-ground-family.md lines 1-416 (complete, primary target Sections 1-9)",
+    "reviews/2026-10-31-compact-mean-ground/target-v1.md lines 1-153 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/falsification-v1.md lines 1-48 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/source-crosswalk-v1.md lines 1-42 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/worker-honesty-v1.md lines 1-31 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/check-constant-projection.py lines 1-56 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/constant-projection-v0.json lines 1-306 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/check-actual-trial.py lines 1-37 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/actual-trial-v0.json lines 1-73 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/check-fixed-profile-trial.py lines 1-36 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/fixed-profile-trial-v0.json lines 1-118 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/fixed-profile-binding-target-v0.md lines 1-47 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/old-global-E-method.txt lines 1-122 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/old-global-E-custody.json lines 1-12 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/original-model.txt lines 1-32 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/original-model-custody.json lines 1-9 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/primary-source-custody-v1.json lines 1-24 (complete)",
+    "notes/fixed-mask-young-constant-phase.md lines 1-434 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/pages/teschl2014-title.png (full image viewed)",
+    "reviews/2026-10-31-compact-mean-ground/pages/teschl2014-copyright.png (full image viewed)",
+    "reviews/2026-10-31-compact-mean-ground/pages/teschl2014-p140.png (full image viewed)",
+    "reviews/2026-10-31-compact-mean-ground/pages/teschl2014-p141.png (full image viewed)",
+    "reviews/2026-10-31-compact-mean-ground/pages/teschl2014-p258.png (full image viewed)",
+    "reviews/2026-10-31-compact-mean-ground/pages/teschl2014-p273.png (full image viewed)",
+    "reviews/2026-10-31-compact-mean-ground/target-v2.md lines 1-143 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/scope-positive-family-v2.md lines 1-36 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/worker-honesty-v2.md lines 1-33 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/statement-adjudication-v1.md lines 1-35 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/statement-report-v1.json lines 1-114 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/statement-receipt-v1.json lines 1-195 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/old-positive-family-inputs.txt lines 1-187 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/old-positive-family-custody.json lines 1-16 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/statement-adjudication-v2.md lines 1-34 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/scientific-worker-honesty-v1.md lines 1-40 (complete)"
+  ],
+  "checks": [
+    {
+      "claim": "C1: Section 2 handles the generic family in d=1,2,3 with a common unit H1 negative trial. It covers the source map, the common H1 closed coercive form and PDE domain identification, a negative bottom before conditional Teschl 10.13, E1/E2 with threshold 0, the max-min Lipschitz bound (4), the gap Delta>0 and the rate gap (5) including mu=0.",
+      "verdict": "PASS",
+      "reason": "Source map: the images confirm Teschl 2nd ed. GSM157. Thm 10.2 (p258) gives the H2 domain, self-adjointness, lower bound, sigma_ess=[0,inf) and the C_c^inf core for V=-V_sigma, which is real and bounded. Thm 10.13 (p273) is conditional ('If E0=min sigma(H) is an eigenvalue'). Thm 4.12 (p141) allows the form domain and uses inf sigma_ess once eigenvalues run out. Cor 4.13 is on the same page. Form: with c=1+M we have 1<=c-V<=c, so q+c||.||^2 lies between ||u||_H1^2 and c||u||_H1^2. The Riesz plus elliptic H2 regularity argument is valid. Bottom: q>=-M for unit u, and the trial gives E1<=-eps<0=inf sigma_ess. So E1 is an isolated eigenvalue of finite multiplicity before 10.13 is applied, which is the correct order. E2 is either the next eigenvalue (distinct by simplicity) or the threshold 0, so E1<E2<=0. The bound |q_sigma-q_tau|<=dV on unit vectors passes through the inf and sup in 4.12, and this covers threshold crossings. lambda-mu=(E2-E1)/(lambda+mu)>=Delta/(2 sqrt M) because mu<=lambda<=sqrt M. There is no division by mu."
+    },
+    {
+      "claim": "C2: L2 continuity of the positive ground state (6) via Rayleigh/orthogonal energy gap with a>0, then H2 continuity via eigen-equation (7); real choice and uniform bounds.",
+      "verdict": "PASS",
+      "reason": "Hand-checked. First, q_sigma(p_tau)<=E1(tau)+dV<=E1(sigma)+2dV. The cross term vanishes because p_sigma is an eigenfunction. The spectral support of r (orthogonal to p_sigma) lies in [E2,inf), because below E2 the only spectrum is the simple E1. This gives q_sigma(p_tau)>=E1+(E2-E1)||r||^2, using a^2+||r||^2=1. Next, a=<p_tau,p_sigma> is positive since both functions are positive a.e., and a<=1 by Cauchy-Schwarz. Then ||p_tau-p_sigma||^2=2(1-a)<=2(1-a^2)=2||r||^2<=4dV/Delta. Finally, (1-Delta)p=(1-lambda^2+V)p is correct since -Delta p=(E1+V)p. The right side is L2-continuous and bounded by 1+2M, and the Bessel inverse is an isometry from L2 onto H2. The real representative is fixed by simplicity, conjugation invariance and positivity."
+    },
+    {
+      "claim": "C3: fractional global-E identification (8)-(10), covering resolvent variational order, the scalar integral with Tonelli square root and domain inclusions, H^{1/2} quarter-domain, H^{-1/2} dual completion, no hidden n-dependence and no invalid power monotonicity.",
+      "verdict": "PASS",
+      "reason": "Order: B<=A<=cB on H1 holds because 1<=c-V<=c and c>=1. The resolvent quadratic form is the supremum over the common form domain of 2Re<f,u>-q_T(u)-t||u||^2, so T<=S implies (T+t)^-1>=(S+t)^-1. Integral: substituting t=x r^2 gives (1/pi) * 2 sqrt(x) * (pi/2) = sqrt(x), which is correct. Tonelli on spectral measures, with values in [0,inf], gives T^{1/2}<=S^{1/2} as forms, including D(S^{1/4}) contained in D(T^{1/4}). Hence ||B^{1/4}u||<=||A^{1/4}u||<=c^{1/4}||B^{1/4}u||, and B^{1/4} is the H^{1/2} Bessel norm. Duality: for z in L2, the dual norm equals ||A^{-1/4}z||, attained at u proportional to A^{-1/2}z. Completion then gives an equivalent H^{-1/2} norm with constants c^{-1/4} and 1. The argument is dimension-free, and only the proved square-root form comparison is used."
+    },
+    {
+      "claim": "C4: spectral wave calculus (11) on the Q^sp phase, including h=0 and mu=0 and all four weighted entries. The decaying ground branch is retained and Pi^E norms are bounded via c-lambda^2 and l, Lambda. The spectral flow is identified with the physical P^E through H2xH1, the strong-generator derivative, Duhamel plus Gronwall uniqueness, and density in global E only.",
+      "verdict": "PASS",
+      "reason": "Weighted entries: C_t, sqrt(h+c)S_t, -hS_t/sqrt(h+c), C_t. For h>=0: |S_t|<=min(t,h^-1/2), the upper entry is at most sqrt(1+c)max(t,1), and the lower entry is at most 1. For -mu^2<=h<0: cosh<=e^{mu t}, sinh(ts)/s is the integral of cosh(rs) over [0,t] and so at most t e^{mu t}, |h|<=M and 1<=h+c<=c. These bounds hold at mu=0. Ground phase: (p,lambda p) gives 1 under ell^E, and (p,-lambda p) gives 0. Norm of e^E in E_sigma: Ap=(c-lambda^2)p with 1<=c-lambda^2<=c and lambda>=l. I verified (13) by direct cosh/sinh computation. Graph-level equivalence: ||Au|| and ||(1-Delta)u|| differ by at most M||u||, and A>=1, so the H2xH1 regularity is valid. Differentiating S_E(-t)X(t) gives the force (0,V u). Uniqueness holds because V maps H^{1/2} to L2 to H^{-1/2} with bound M. Density of C_c^inf x C_c^inf in E, with fixed-horizon bounds, extends equality to E. No density of E in F is used. The physical P^E rests on the named accepted base (fixed-mask note Sections 5 and 7, with (8) keeping iE invariant)."
+    },
+    {
+      "claim": "C5: full-F physical block (14) with C(t) and the actual D_sigma forcing; functional (15)-(17) with finite positive f=int Vp/(2lambda) and no p in L1; two-sided commutation, normalization, parameter continuity, and positive uniform margins for e0 and O_phi.",
+      "verdict": "PASS",
+      "reason": "Block (14): the constant block follows from accepted (8) and S_F. The E component is the variation-of-constants solution of Y=S_E e+int S_E(t-r)[B^E Y+D C(r)c]. I checked by Fubini that P^E plus the forcing integral solves this. That step is stated but not displayed (see minor). Uniqueness then follows from (2). Constant functional: f is finite by L2 Cauchy-Schwarz, and positive because V is nonzero (from (1)) and continuous, V>=0 and p>0 a.e. ell^E(0,Vc1)=f c1, so the generator conditions give alpha=f/lambda and beta=f/lambda^2. The two integrals in (16) evaluate correctly, and the finite part combines with the tail to give ell P(t)=e^{lambda t}ell. Also ell(e_sigma)=1, P(t)e_sigma=e^{lambda t}e_sigma, ell(e0)=f/lambda>0 and O_phi(e_sigma)=int phi p>0. All are continuous in sigma, so compactness of I gives uniform minima. Positivity is used only a.e. inside integrals. The finite rational control matches: entrance beta/(2lambda^2) and wrong-projection defect beta/(2lambda)."
+    },
+    {
+      "claim": "C6: complement decomposition (18) with subtraction of the growing response to constant forcing; the t+t^2+t^3/6 integral; the (1+t)^3 e^{mu t} bound and eta<d0; the statewise Duhamel difference and Gronwall parameter bound (20) with measurable operator norm, with no operator-norm time continuity and no B(F)-valued RNP.",
+      "verdict": "PASS",
+      "reason": "(18): Q(e,c)=(Q^E e-ell^C(c)e^E,c). Splitting D=Q^E D+e^E ell^E D and using (16), the e^E pieces combine to -e^E ell^C(C(t)c). This is exact. ||Q^E D C(r)||<=C(1+r), and the integrand is (1+t)+tr-r^2, whose integral is t+t^2+t^3/6. The remaining terms are bounded by C(1+t)e^{mu t}||e|| and C(1+t)|c|. With mu>=0 this gives (19). Since lambda-mu>=d0, any eta<d0 (and so eta<inf lambda) works. (20): the difference identity S_F B_sigma D + S_F(B_sigma-B_tau)P_tau is correct, and d_st follows from linearity in (2). The operator norm is a countable supremum over a dense subset of the unit sphere of continuous functions, so it is lower semicontinuous and measurable. Scalar Gronwall is therefore valid. No operator-norm derivative is used."
+    },
+    {
+      "claim": "C7: for the actual original positive Psi (not only products): mean/covariance identity (21), finite raw variance (22) via local compact Gamma mass and a<1, Gamma(B1)>0 by homogeneity, positive correlation Q, v>=Q and h>=Gamma*q_avg for all sigma including 0, no global decay assumption, smooth mean (24) by differentiating the zero-extended test, mask applied after convolution, and no masked covariance replacing the raw cost.",
+      "verdict": "PASS",
+      "reason": "The original model is Cov=|s-t|^{-a}Gamma, and h_s pairs with it by absolute Fubini on compact sets. Finiteness: for x and x-z in B_A we get |z|<=2A, so the spatial integral is at most ||Psi||^2|B_A|Gamma(B_2A). The time integral of |sigma-u|^-a over the unit square is 2/((1-a)(2-a)), which I verified. Positivity: Gamma(B1)=r^{alpha-d}Gamma(B_r) follows from Gamma(cA)=c^{d-alpha}Gamma(A), and this also holds at the white endpoint alpha=d=1. Q_z is continuous with Q_0>0, so Q(q_avg)>=(Q_0/2)Gamma(B_rho)>0. Since |sigma-u|^-a>=1 on [0,1]^2, positive Tonelli gives h_sigma>=Gamma*q_avg, and v>=int q_avg(Gamma*q_avg)=Q. Smoothness: after the substitution u=s-r, derivatives fall on Psi. The r and z ranges are bounded, and |r|^-a is integrable, so dominated differentiation is valid. Lipschitz continuity of V_sigma=m_R h_sigma in sup and L2 norms follows for fixed R. Z and v are fixed before the mask is chosen."
+    },
+    {
+      "claim": "C8: common wide unit trial (25)-(26): plateau psi supported in B2 with psi>=c0 on B1, L>=2A, R>=2L, shifted-ball inclusion, Tonelli, Gamma mass, C_G constant and alpha<2, with Psi, Z and v fixed. Positive lambda and the Lipschitz rate (27) are defined only after R and eps_R are fixed. Additional tests keep their Rayleigh scores; the mask is chosen per test.",
+      "verdict": "PASS",
+      "reason": "psi_L^2>=c0^2 L^-d on B_L, and m_R=1 on supp psi_L (inside B_2L, inside B_R), so V=h there. Tonelli gives int_{B_L}Gamma*q=int q(y)Gamma(B_L-y)dy. For |y|<=A<=L/2, B_{L/2} lies inside B_L-y, and Gamma(B_{L/2})=(L/2)^{d-alpha}Gamma(B1). So C_G=c0^2 2^{alpha-d}Gamma(B1)int q_avg, which is exact. alpha<2 follows from alpha+a<2 with a>0, so a finite L gives eps_R>0 for every sigma. The order is right: R is fixed first, then the generic theorem gives lambda>=sqrt(eps_R), and only then (4) gives |lambda_sigma-lambda_tau|<=dV/(2sqrt(eps_R)). lambda_0>0 because h_0>=Gamma*q_avg. Enlarging the mask leaves (26) and int h g^2 unchanged on covered supports. No uniform mask over a class of tests and no interchange of limits is asserted."
+    },
+    {
+      "claim": "C9: all six family-statement notes are addressed. The old scalar review and context are not treated as full-scope proof. Mapping to the existing indexed-cone deterministic hypotheses is distinguished from random errors, products, CM shift/event cost and lower/sharp constants. Source custody, control scope and the floating-point disclaimer are honest.",
+      "verdict": "PASS",
+      "reason": "Notes 1-6 of statement-adjudication-v2 appear in the candidate. Order of R before lambda: Sections 7-8. Displayed v_Psi: (22). Per-test mask: Section 8. Continuous versus Lipschitz rates: Section 8. Scalar bU special case: Section 1. a.e. positivity: Sections 1 and 5. The outputs (17), (19) with eta, continuity of e, ell and Pi, Lipschitz bounded lambda, inf ell(e0)>0 and inf O_phi(e_sigma)>0 match the hypothesis list of old cone (2). This is framed conditionally ('would provide'), and the old d1 cone is stated to be a comparator only. Section 9 lists everything still required. Custody: six exact images, selected pages, not a full-book audit. Controls: 36 cases with 432 differential and 108 initial checks, which I recounted from the script loops. The product bump is not a plateau on B1. 35/60-digit agreement is called consistency, not accuracy. All of these are stated."
+    },
+    {
+      "claim": "C10: honest scope. Isolated local work, network pending, no parity or master integration. Original goal ACTIVE. 71 facts / 18 seams / L0 unchanged. No new Lean/companion/HPC/contact/Skorohod/source-fix/TeX/PDF/wiki/novelty/publication/whole-paper claim.",
+      "verdict": "PASS",
+      "reason": "Candidate Section 9 and scientific-worker-honesty-v1 state all of these limits. The honesty note records the isolated local branch, <HUB> unreachable, no push, master integration or fresh parity, and no new Lean count. I found no overclaim in the candidate text."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Section 5 asserts that formula (14) solves the full-F Duhamel equation 'by variation of constants', but does not display the Fubini rearrangement. That rearrangement shows P^E(t)e plus the integral of P^E(t-r)g(r) dr satisfies Y=S_E e+int S_E(t-r)(B^E Y+g). I checked the identity and it holds; writing out the one-line computation would close the step on the page.",
+      "Section 2 identifies the form domain of H_sigma with H1 via Riesz plus elliptic regularity. It implicitly uses the standard form/operator correspondence (Kato representation theorem: D((H+c)^{1/2}) equals the closed-form domain, with H2 a core). This is standard but is not named as an import.",
+      "Section 4 uses the free wave group on H1xL2, with generator domain H2xH1, for the product-rule differentiation. Only S_E on E is an accepted named input; the H1xL2 restriction follows from the same Fourier multipliers but is not stated.",
+      "The accepted physical flow is constructed on a fixed horizon T, while (12), (13), (17) and (19) are asserted for all t>=0. Consistency across horizons follows from Duhamel uniqueness, but is left implicit.",
+      "Section 7 uses Q_0=||q_avg||_2^2>0 and int q_avg>0 without saying why q_avg is nonzero. This is immediate from int q_avg=int int Psi>0 for nonnegative nonzero Psi.",
+      "Section 7 wording: 'No global decay or translation bound on Gamma*h is used' should presumably say 'on h_sigma' or 'on Gamma*Psi'.",
+      "Section 4 only says the decaying-branch projection is uniformly bounded. Its explicit formula (<p,u>-<p,z>/lambda)/2 times (p,-lambda p) is not displayed. It is easy to verify.",
+      "Real-subspace restriction of the complex functional calculus is only implied by the conjugation remark in Section 2. C_t and S_t are real even functions of a real operator, so they preserve real phases; one sentence would make this explicit.",
+      "Section 9 says F1-F4 'would provide the exact deterministic indexed-family cone inputs on the ACCEPTED F'. The cone proof itself was done on the old uniformly-local d1 F, with e0=(1,0) and J without the c1 term. Re-establishing the cone on the new F, with O_phi and e0=(0,1,0), remains a downstream obligation. The candidate frames this conditionally and correctly."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is an AI read-only review, not human verification, novelty audit or whole-paper certification. It covers the deterministic candidate Sections 1-9 only.",
+    "Only the six Teschl page images were viewed. Lemmas cited inside Teschl's proofs (7.19, 7.21, 6.31, 6.36, 2.20) and the book's meaning of 'strictly positive' (taken as a.e.) were not audited.",
+    "The accepted fixed-mask-young-constant-phase.md was read in full as a named import, but its own dependencies (actual-operator-driver.md, source-operator-convergence.md, fixed-mask-moment-transfer.md, Friz-Hairer) were not re-certified. The Duhamel characterization of the deterministic base flow with h=V_sigma, g=0 is taken from its Sections 5 and 7.",
+    "The family statement-gate v2 report JSON (eight checks, 284.794s) is not in the packet; only its adjudication summary was available.",
+    "The Python controls were audited by reading and spot-checked by hand formulas (entrance beta/(2 lambda^2), defect beta/(2 lambda), the 432/108 counts). They were not re-executed (no shell). Floating-point quadrature outputs were not independently recomputed.",
+    "Compatibility of F1-F4 with a cone argument on the new E-plus-constants F was not verified, beyond matching the hypothesis list in old-positive-family-inputs.txt lines 37-48. The cone on the new F is not part of this candidate."
+  ]
+}

@@ -1,6 +1,8 @@
 # Compact mean families: ground state and complementary full wave
 
-COMPLETE CANDIDATE, not adopted before independent full proof review.
+ACCEPTED after independent full proof review: Opus5.5/HIGH ten checks,
+PASS_WITH_NOTES359.291s, no required repairs; scientific sourcebfbd472.
+See reviews/2026-10-31-compact-mean-ground/scientific-adjudication-v1.md.
 This proves the deterministic compact-family consumer proposed in target-v2,
 not a random event, moment asymptotic or independently new spectral method.
 The original all-dimensional sharp second-moment goal remains ACTIVE.
@@ -29,6 +31,12 @@ not an input or conclusion here. The scalar special case V_sigma=b(sigma)U
 requires continuous b in[b0,b1] and the v1 trial; it does not replace this
 full family target. Define H_sigma=-Delta-V_sigma on H2.
 
+The accepted deterministic construction is available on each finite horizon.
+Uniqueness of its Ct(F) Duhamel solution makes these constructions identical
+on overlapping horizons. Integer horizons define P_sigma(t) for all t>=0;
+time homogeneity and uniqueness give composition. Thus the all-time bounds
+below assume no new uniform-in-horizon construction or stochastic limit.
+
 Imported source statements, not proved here, are Teschl2014 SECOND edition:
 Theorem10.2,p258: real bounded compact potentials in R^d here give
 self-adjoint H2 operator, bounded below, essential spectrum[0,infinity),
@@ -48,15 +56,19 @@ author energy normalization is assumed.
 ## 2. Ground existence, uniform gap and H2 continuity
 
 The source10.2 applies since each -V_sigma is real smooth compact, hence
-L2 in the dimensions here. Its quadratic form on H1 is
-q_sigma(u)=||grad u||2²-int V_sigma|u|². To check the common form domain,
-shift by c=1+M. On H1 its positive form is bounded above/below by c and1
-times the usual H1 norm squared. It is therefore closed. Hilbert Riesz
-representation in this coercive form norm gives the associated weak
-equation (-Delta+c-V_sigma)u=f; for f in L2 it implies
--Delta u=f-(c-V_sigma)u in L2, so Fourier elliptic regularity gives u in H2.
-Conversely H2 integration by parts gives that equation. Thus this is the
-form of H_sigma+c, and the common form domain is indeed H1.
+L2 in the dimensions here. Its quadratic expression is
+q_sigma(u)=||grad u||2²-int V_sigma|u|². Here is a direct check of the
+common form domain without leaving a form/operator correspondence implicit.
+Shift by c=1+M, so the self-adjoint A_sigma=H_sigma+c on H2 satisfies A>=1.
+For u in H2, integration by parts and the spectral theorem give
+||A_sigma^(1/2)u||2²=q_sigma(u)+c||u||2², between1 and c times ||u||H1².
+H2 is a core for this half-power form norm: for u in D(A_sigma^(1/2)),
+the spectral cutoffs 1_[1,n](A_sigma)u belong to D(A_sigma)=H2 and converge
+in that norm by spectral dominated convergence. H2 is also dense in H1,
+for example by Fourier cutoffs. Its completion in the displayed equivalent
+norms is therefore simultaneously H1 and D(A_sigma^(1/2)). Both completions
+embed in L2 with the same limit, since their norms dominate L2. Thus they
+agree as subspaces, and the common form domain is H1 with the stated form.
 
 For unit u, q_sigma(u)>=-M. The trial(1) and the form max-min principle give
 
@@ -151,6 +163,11 @@ S_t(h)=sinh(t sqrt(-h))/sqrt(-h) when h<0. The spectral wave matrix is
             [[C_t(H_sigma),S_t(H_sigma)],
              [-H_sigma S_t(H_sigma),C_t(H_sigma)]].           (11)
 
+Real potentials commute with complex conjugation, as do their resolvents
+and spectral resolutions. The real functions C_t,S_t and positive A powers
+therefore preserve real phases. The complex functional calculus restricts
+to the actual real spaces used here.
+
 Let Q_sigma^sp=I-|p_sigma><p_sigma| on L2. It commutes with H_sigma,A_sigma
 and extends contractively on both entries of(10). On its spectral support
 h>=E2=-mu_sigma², the isometry in(10) turns(11) into scalar matrix entries
@@ -168,8 +185,11 @@ projection is
  ell_sigma^E(u,z)=(<p_sigma,u>+<p_sigma,z>/lambda_sigma)/2,
  e_sigma^E=(p_sigma,lambda_sigma p_sigma), Pi_sigma^E=e_sigma^E ell_sigma^E.
 
-The complementary ground branch decays as exp(-lambda_sigma t). Its two
-branch projection norms in(10) are uniformly bounded because l<=lambda<=Lambda
+The complementary ground branch decays as exp(-lambda_sigma t). The two
+ground projections are Pi_sigma^E and
+(p_sigma,-lambda_sigma p_sigma)(<p_sigma,u>-<p_sigma,z>/lambda_sigma)/2.
+Their sum is the spatial ground projection on both entries. Their
+projection norms in(10) are uniformly bounded because l<=lambda<=Lambda
 and1<=c-lambda²<=c. Combining it with the Q^sp phase gives
 
  ||P_sigma^E(t)(I-Pi_sigma^E)||B(E)<=C(1+t)exp(mu_sigma t).     (12)
@@ -181,8 +201,14 @@ norms: the H1 equivalence is(8), and ||A u||2 and||(1-Delta)u||2 are uniformly
 equivalent since their difference is bounded by M||u||2 and A>=1.
 Spectral cutoffs give u_t=z in H1 and z_t=-H_sigma u in L2, with continuous
 derivatives at those levels. For compact smooth initial data, differentiating
-S_E(-t)(u(t),z(t)) in H1 x L2 gives the free Duhamel formula with force
+S_0(-t)(u(t),z(t)) in H1 x L2 gives the free Duhamel formula with force
 (0,V_sigma u); all terms exist in the strong generator domain H2 x H1.
+Here S_0 is the same free wave acting on H1 x L2. Its Fourier matrix after
+the isometry (u,z)->((1-Delta)^(1/2)u,z) has the same weighted entries as
+before, bounded by C(1+T) on a finite horizon; dominated Fourier convergence
+gives strong continuity. Its generator (z,Delta u) has domain H2 x H1,
+as is checked directly by those Fourier multipliers. This supplies the
+higher-level free group used in the product-rule differentiation.
 It also holds in E. Uniqueness there follows by Picard/Gronwall because
 u->V_sigma u maps H1/2 into L2 and then H-1/2 with bound M.
 Therefore the spectral solution equals the named ordinary physical flow
@@ -212,6 +238,20 @@ block is fixed, and variation of constants on the E component accounts
 for its forcing. Uniqueness from(2) identifies the two. Uniform finite-
 horizon bounds follow from the free-group bound and Gronwall; all V_sigma
 have uniformly bounded infinity and L2 norms on common K_x.
+
+Explicitly, for any continuous E force g and B_sigma^E(u,z)=(0,V_sigma u),
+substitute the free-Duhamel formula for P_sigma^E(t-r)g(r) into its time
+integral. Strong E-valued Fubini gives
+
+ int_0^t int_r^t S_E(t-s)B_sigma^E P_sigma^E(s-r)g(r)ds dr
+ =int_0^t S_E(t-s)B_sigma^E [int_0^s P_sigma^E(s-r)g(r)dr]ds.
+
+All norms are bounded on this finite triangle, so the interchange is
+absolute in E. Adding the P_sigma^E(t)e term shows Y=P_sigma^E(t)e+
+int_0^t P_sigma^E(t-r)g(r)dr satisfies
+Y=S_E(t)e+int_0^t S_E(t-s)(B_sigma^E Y(s)+g(s))ds.
+Take g(s)=D_sigma C(s)c; with the constant block C(t)c this is precisely
+the F Duhamel equation, proving the variation-of-constants assertion.
 
 Set
 
@@ -319,8 +359,10 @@ The exact raw variance is
 It is finite: the spatial covariance product is at most
 ||Psi||infinity² |B_A| Gamma(closed B_(2A)), while
 int_0^1 int_0^1|sigma-u|^-a du dsigma=2/((1-a)(2-a)). No global decay or
-translation bound on Gamma*h is used; compactness of Psi suffices.
+translation bound on h_sigma is used; compactness of Psi suffices.
 
+Also int q_avg=int int Psi>0, since a nonnegative nonzero smooth Psi is
+positive on an open set of positive measure. Thus q_avg is nonzero.
 Nonzero Gamma charges some B_r. By homogeneity,
 Gamma(B1)=r^(alpha-d)Gamma(B_r)>0, finite by local finiteness. Hence every
 Gamma(B_rho)>0. The smooth compact nonnegative correlation
@@ -400,10 +442,11 @@ This proves the actual-profile assertions F4.
 ## 9. Completion boundary of this candidate
 
 The full positive time-dependent tilt class was retained, not replaced by
-products. F1-F4 would provide the exact deterministic indexed-family cone
-inputs on the ACCEPTED F=E plus constants, including positive original
-entrance/tested displacement and both phase entries. The old d1 cone proof
-is a method/application comparator, not a new all-dimensional random event.
+products. F1-F4 provide the ground/projection/norm estimates that a NEW
+indexed-family cone proof must consume on F=E plus constants, with original
+e0=(0,1,0), O_phi and both phase entries. The old d1 uniformly-local cone
+proof must be re-established at these exact new objects before it is used;
+it is a method comparator, not an already proved new-F product or random event.
 
 Still required: actual growing-block operator errors and products, raw
 Cameron shift/event/same-Z cost, all-alpha variational lower comparison,
