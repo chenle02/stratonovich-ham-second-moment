@@ -6863,3 +6863,19 @@ controls preserved. Existing finite Holder type reused, no new kernel/count.
 Frozen19 inputs (16TEXT+3PRIMARY images); statement/source/type/application
 gate NEXT. No contact/Skorohod/HPC/sourcefix/companion/TeX/PDF/wiki/bib/
 publication. Freshfetch/<HUB>SSH NoRoute, localisolated/pushpending.
+
+### E1-E4 statement gate accepted before full proof — 2026-10-31 UTC
+
+Original50303 TERMINAL,19checks PASS/HIGH383.16seconds,no requiredrepairs.
+Canonical report/pass/correspondence/readcoverage pass, all3PRIMARY images;
+19live/frozen/Git/native bindings and34native archive members verified.
+No recovery/restart/waiver. All13minor entries adjudicated: precise full
+fast driver/zero-start/head indexing, K-independent bad cost, Borel
+integrand vs expectation, scalar-control scope, sewing/inverse/tuple/
+conditioning proof obligations and fixedM boundary. Frozen target unchanged.
+
+Full E1-E4 proof NEXT, not yet a nonlinear theorem. Sup outside expectation,
+actual correlated residual, both constants, physical endpoint and rank-
+uniformity retained.73facts19seams/L0 unchanged; original full sharp/source
+objectiveACTIVE, no point/growingcone/Mtail/signed-spectrum result. NoRoute/
+localisolated/pushpending; no contact/HPC/Skorohod/sourcefix/companion.
