@@ -6136,3 +6136,17 @@ strictsmoothapproximationsandfullcouplingneedtheactualnextproof. No new
 CMshift/blockerror/cone/event/lowerasymptotic theorem yet. Scope/runner/data
 retainedunder2026-10-31-raw-block-event. FullgoalACTIVE;71facts18seams/L0
 unchanged,no companion/HPC/contact/Skorohod/sourcefix/TeX/PDF/wiki/release.
+
+### Next cone/event finite reuse readiness — 2026-10-31 UTC
+
+Read-only candidateNEWconsumer audit foundnineOLD facts inMovingCone3,
+JointTilt4,ActualEvent2. ALLthreecurrentsourcesandcompleteprintedtype/
+axiomfiles areBYTEIDENTICALtoexactprior-reviewedfrozenpackets (sixbindings
+SHAchecked). MappedactualnewFcone scalarbudgets, covariance sqrt(delta)
+amplitude, Gaussian sign/half-cost andmoderateZpenalty; optionalfixed-delta
+productrecurrencekeepsall-nidentityextensionguard. Source/typebinding
+receiptinraw-block-event/lean-reuse-readiness-v0.json. No newcompiler/replay
+run or actualapplicationacceptance yet; futurefullproofgate mustcheckEVERY
+newanalyticguard/typeconsumer. No hollow duplicatelemmas/countpadding or
+formalGaussian/Young/SPDE claim.71facts18seams/L0 unchanged; no package/
+companion/HPC/registry/contact/sourcefix/Skorohod/TeX/PDF/wiki/publication.
