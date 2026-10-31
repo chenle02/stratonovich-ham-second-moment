@@ -1,4 +1,4 @@
-Last updated: 2026-10-31 16:08 UTC (Codex)
+Last updated: 2026-10-31 16:18 UTC (Codex)
 
 Full original upper/sharp goal ACTIVE. Growing-cone transfer and phase
 baseline frozen/falsified, still UNPROVED. Required native statement
@@ -9,7 +9,7 @@ review terminal provider quota; no reviewer running or gate acceptance.
 Enter ACTIVE isolated worktree
 ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave,
 branch research/fixed-mask-young-20261031, clean committed HEAD
-1aaaefb3fb239bfbf0e9240ef2f987a67bec632f. Its Progress.md is authority; root math and
+240f90772131c68fb5fd7ea22ba2bc9d9645cd5d. Its Progress.md is authority; root math and
 inherited isolated HANDOFF are stale. Preserve both pending histories.
 
 FIRST complete the independent GC1-GC3 statement/source/old finite-type
@@ -21,14 +21,17 @@ handle or retry before capacity changes. No model/account/threshold waiver.
 Target and18input packet under
 reviews/2026-10-31-growing-cone-point-transfer. Need statement gate BEFORE
 long proof, then FULL proof/source/actual-application gate before adoption.
-GC1-GC3 and separate SP1-SP3 baseline remain UNPROVED. No live reviewer,
+GC1-GC3 and separate SP1-SP4 baseline remain UNPROVED. SP latest v3
+adds exact same-source completed mean and fast block-adjoint application;
+22text packet frozen240f907, live/packet/Git bindings verified, NOT
+dispatched. Earlier v2 packet preserved. No source proof/acceptance yet. No live reviewer,
 Lean, Git or HPC process at handoff. Full original goal ACTIVE.
 
 ## Pre-flight checks
 
 1. Read AGENTS.md, PROJECT-GOAL.md and ACTIVE Progress.md. Preserve original
    all-model sharp/source target and every decision point.
-2. Root before this HANDOFF-only successor: 6d116e71cf28ca57975d2db8ed9105ffd4c926dc.
+2. Root before this HANDOFF-only successor: 8b9af1c8dd5304b95c94e6749436aacebd55676d.
    Active HEAD above; both clean before handoff. No foreign WIP found.
 3. Fresh serial fetch/focused <HUB> SSH and each push terminalNoRoute.
    Last VERIFIED remote604c60f2f8dc6d1a7635b9af224bbb6e5751d379.
@@ -55,12 +58,20 @@ Lean, Git or HPC process at handoff. Full original goal ACTIVE.
    3Gaussianharmonictoy,12datalog rows. No actual CM/stochasticoperator
    bound or certified enclosure. Old DirectEvent source/types unchanged;
    no new Lean count,74facts20seams/L0 PROPOSED, decision4pending.
-8. Independent SP1-SP3 baseline screen in
+8. Independent SP1-SP4 baseline screen and current v3 packet in
    reviews/2026-10-31-growing-cone-symplectic. V1 Hamiltonian matrices valid
    but physical Bessel force weights wrong; preserve/adjudicate. V2 has
    exact physical-generator similarity,4exact symplectic/determinant
    products and3false guards. Approximate60digit norms diagnostic only,
    no PDE discretization, raw flow proof or independent acceptance.
+   V3 exact block direction delta^(-a/2)T_m^*Phi; C3 scaled covariance
+   sqrt(delta)H_m versus unscaled delta^(a/2)H_m. Nine exact generic
+   Gaussian-isometry cases;6nonzero cases detect wrong factors,3zero
+   controls do not. Direction norm can grow in delta, no uniform budget.
+   Source mean h=E[W(Phi)Y_rho], source cY+h NONCENTERED; retain uniform
+   deterministic shift budget. Complete old JointTilt source/type bytes
+   equal e51432c, only scalar amplitude application, no new kernel/count.
+   Twenty-two live/packet/Git bindings pass at240f907, NOT dispatched.
 9. GL fixedR upper accepted scientific180bf1a/adoption2320fd8,
    18HIGH335.531s,43bindings58native. FINITENESS each fixed chosenR is
    reusable; fixedR asymptotic score is NOT a growingR upper. Source
@@ -73,8 +84,11 @@ Lean, Git or HPC process at handoff. Full original goal ACTIVE.
 - Independent GC1-GC3 statement/source/type gate when capacity permits;
   no report acceptance on quota or missing coverage. Then full written
   compact-datum/source-cone/raw-limit proof and independent FULL gate.
-- SP1-SP3 source/application crosswalk may proceed independently before
-  provider reset. It still needs exact statement/source and FULL gates.
+- SP1-SP4 exact source/application packetv3 now ready at240f907: shifted
+  covariance means, bounded interaction conservation route, block direction
+  delta^(-a/2)T_m^*Phi and scaled/unscaled covariance factors. Obtain its
+  statement/source/type/actual-application gate then FULL gate. No early
+  quota retry or claim that a compatible generic theorem proves the block map.
 - Preserve original growingR stochastic bound and signed-positive/source
   normalization gaps; no narrowing to fixedR helper completion.
 
@@ -1230,12 +1244,25 @@ No PDE/flow proof, new Leanfact/count or source constant claimed. All owned
 payload committed; original goal ACTIVE, provider review and <HUB>
 network pending; no TeX/PDF/wiki/bib/contact/HPC/companion/publication action.
 
+2026-10-31 E symplectic source and exact block application refinement:
+e533f87 freezes SPv2 actual Bochner same-W covariance mean/source map;
+240f907 adds SP4 explicit fast direction delta^(-a/2)T_m^*Phi and accepted
+C3 scaled/unscaled covariance normalization. Bounded interaction equation
+is the planned conservation route, avoiding unbounded generator derivative.
+Nine exact finite Gaussian-isometry cases pass;6nonzero cases detect both
+wrong factors,3zero controls calibrate no signal. Complete old JointTilt
+source/types byte-equal accepted e51432c; no new compiler/count. SPv3
+22texts live/packet/Git bound, no reviewer dispatch before quota reset.
+GC/SP still UNPROVED, provider quota not review, original all-model sharp
+source goal ACTIVE. Accepted notes/TeX/PDF/Lean source/count ledgers unchanged.
+All owned payload committed, pushes NoRoute, no correspondence/HPC/companion.
+
 ## Repo & git state at handoff
 
 Root master before this HANDOFF-only successor:
-6d116e71cf28ca57975d2db8ed9105ffd4c926dc. Prior root operational history preserved separately.
+8b9af1c8dd5304b95c94e6749436aacebd55676d. Prior root operational history preserved separately.
 ACTIVE isolated research/fixed-mask-young-20261031 CLEAN committed HEAD
-1aaaefb3fb239bfbf0e9240ef2f987a67bec632f at
+240f90772131c68fb5fd7ea22ba2bc9d9645cd5d at
 ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave.
 All owned payload committed; no foreign WIP or running processes found.
 Last VERIFIED remote604c60f2f8dc6d1a7635b9af224bbb6e5751d379.
