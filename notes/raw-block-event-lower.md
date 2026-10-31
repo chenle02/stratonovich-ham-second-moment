@@ -1,9 +1,11 @@
 # Actual coupled raw blocks, positive cone growth and point lower rate
 
-COMPLETE PROOF CANDIDATE; not adopted before independent full proof review.
-The statement gate A1-A6 passed HIGH after supported byte-reversible report
-syntax recovery, sourcecad9da9. That gate is not proof acceptance.
-Full original all-dimensional sharp/source goal remains ACTIVE.
+ACCEPTED at the scoped full analytic/source/type/application gate:
+Opus5.5/HIGH, twelve PASS checks, PASS_WITH_NOTES, no required repairs,
+516.106 seconds at source d4d876e. Exact evidence and seven optional
+clarifications are in reviews/2026-10-31-raw-block-event/.
+The frozen scientific candidate is retained unchanged. The statement gate
+was separate. Full original all-dimensional sharp/source goal remains ACTIVE.
 
 ## 1. Exact theorem, spaces and named inputs
 
@@ -163,7 +165,7 @@ We prove the exact path-space statement. For real s put
 dQ_s/dP=exp(-sZ-s²v/2). Completing the square for the real N(0,v) density
 gives total mass1; the density is positive/finite, so Q_s and P are equivalent.
 For finitely many real continuous coordinates l of X, (l(X),Z) has a
-finite centered Gaussian law and can be written as (T G,z.G), where G is
+finite centered Gaussian law, equal IN LAW to (T G,z.G), where G is
 a finite standard normal vector. A covariance square root supplies this
 even if the joint covariance is singular; no covariance inverse is used.
 Then Tz=l(b), |z|²=v. Substitution G'=G+s z in its ordinary normal density
@@ -236,12 +238,14 @@ This is not asserted for the UNSCALED maximum M_delta/g_delta.
 Let H_m^stat be the deterministic primitive of constant V_(s_m). Accepted
 compact-base bounds and mean smoothness on[0,2] imply
 
- sup_m||H_m||Ctheta<=H0<infinity,
+ sup_m max(||H_m||Ctheta,||H_m^stat||Ctheta)<=H0<infinity,
  sup_m||H_m-H_m^stat||Ctheta<=C_(Psi,R,B)delta.                (11)
 
 Indeed ||V_(s_m+delta r)-V_(s_m)||infinity+||.||2<=C delta B for r<=B;
 integrating bounded free groups gives a Lipschitz primitive difference,
-hence its Ctheta bound on this fixed B. Strong state integrals suffice.
+hence its Ctheta bound on this fixed B. The static primitive uses the same
+supremum over s<=2 of ||V_s||infinity+||V_s||2, so the same H0 bounds it.
+Strong state integrals suffice.
 On {M_delta<=1}, the accepted local Lipschitz Young estimate on the fixed
 driver ball H0+1, followed by the bounded S_F(u), gives
 
@@ -268,19 +272,19 @@ arguments up to2 in(11) require no spectral statement outside I.
 ## 6. New-F indexed cone, every full block and terminal remainder
 
 We re-establish the actual cone on F, not import the old d1 space. From
-the accepted family fix C_gap>=1,eta>0 so
-||exp(-lambda_s t)P_s(t)Q_s||<=C_gap exp(-eta t), all s in I,t>=0.
+the accepted family fix C_gap>=1,eta_gap>0 so
+||exp(-lambda_s t)P_s(t)Q_s||<=C_gap exp(-eta_gap t), all s in I,t>=0.
 Let
 
  a_*=inf_I ell_s(e0)>0, j_*=inf_I O_phi(e_s)>0,
  M_e=max(1,sup||e_s||), M_l=max(1,sup||ell_s||),
  M_P=max(1,sup||Pi_s||), M_Q=1+M_P, M_z=M_e+1,
- E0=||e0||=1, H=max(1,||O_phi||).
+ E0=||e0||=1, H_obs=max(1,||O_phi||).
 
 Fix 0<rho<1/2. Choose FIRST vartheta=min(1,j_*/(16H C_gap))>0.
 Next choose INTEGER B>=1 large enough that
 
- q_B=C_gap exp(-eta B)<=min(1/8,vartheta a_*/(8M_Q E0)).        (14)
+ q_B=C_gap exp(-eta_gap B)<=min(1/8,vartheta a_*/(8M_Q E0)).        (14)
 
 Choose nu>0 with nu M_z<=min(rho/2,vartheta,1/4). Uniform continuity of
 ell,Pi on compact I supplies omega>0 so adjacent distance<=omega gives
@@ -289,7 +293,7 @@ Finally choose epsilon_op>0 satisfying all five positive budgets
 
  M_l epsilon_op M_z<=rho/2, M_Q epsilon_op M_z<=vartheta/4,
  M_l epsilon_op E0<=a_*/2, M_Q epsilon_op E0<=vartheta a_*/8,
- H epsilon_op M_z<=j_*/8.                                   (15)
+ H_obs epsilon_op M_z<=j_*/8.                                   (15)
 
 The minimum of the five ratios is positive. Aperture was chosen BEFORE B,
 using the normalized complementary estimate, never an exp(CB) terminal norm.
@@ -333,9 +337,9 @@ complementary estimate yield
 
  exp(-lambda_c u)O_phi(P_c(u)z)/A>=3j_*/4-2H C_gap vartheta.
 
-The perturbation changes this by at most H epsilon_op M_z. Apply the
-unchanged MovingCone.terminal_margin with j=j_*,K=H C_gap,
-e=H epsilon_op M_z and y=exp(-lambda_c u)O_phi(D_N(u)z)/A;
+The perturbation changes this by at most H_obs epsilon_op M_z. Apply the
+unchanged MovingCone.terminal_margin with j=j_*,K=H_obs C_gap,
+e=H_obs epsilon_op M_z and y=exp(-lambda_c u)O_phi(D_N(u)z)/A;
 its 16K vartheta<=j and e<=j/8 guards follow from the choices. It gives
 O_phi(D_N(u)z)>=(j_*/2)exp(lambda_c u)A>0. Induct(17) after entrance:
 
@@ -427,8 +431,9 @@ ActualEvent.finite_error_accumulation then gives
                    d(N+1)<=(N+1)C^(N+1)e_src.                (23)
 
 By Holder its L2 norm tends to0: the L^(4(N+1)) moment of C is uniformly
-finite at fixed delta,N, while ||e_src||L4->0. This is ONLY a fixed-delta
-source-product estimate, not closeness of a whole growing stochastic
+finite at fixed delta,N, while ||e_src||L4->0. This explicit recurrence is optional: global driver convergence and the
+accepted source/Young interface also give the same L2 premise directly.
+It is ONLY a fixed-delta source-product estimate, not closeness of a whole growing stochastic
 product to its deterministic product as delta->0. Source shifted products
 may use the FIXED raw mean V plus regularized noise; no finite-source
 Cameron translation with the wrong regularized mean is assumed. Only the
@@ -538,16 +543,24 @@ The SQUARE integrand in(24) is nonnegative. Restrict it to E_delta; there
 For small delta, p_delta>=1/2 and delta log p_delta->0. The unchanged
 ActualEvent.moderate_penalty, with delta>0, verifies
 delta*(delta^(-1/4)/sqrt(delta))=delta^(1/4)->0. Multiply logarithms in(28)
-by delta, take lower limits and then e_rate down0. We obtain
+by delta and take lower limits at FIXED e_rate and its associated B:
 
-                 liminf_(delta->0)delta log E U_delta²>=2I_R-v/2. (29)
+ liminf_(delta->0)delta log E U_(delta,B)²>=2I_R-2e_rate-v/2.    (29)
 
-By(26) and the bijection delta=T^(-kappa), kappa>0, all sufficiently small
-delta correspond to all sufficiently large T. This proves(1) for EACH
+Here U_(delta,B) makes the chosen block size explicit; (24)-(28) use this
+same variable. By(26), the B-INDEPENDENT original point rate Q2 is at
+least the right side of(29) for EACH fixed e_rate. Only NOW let e_rate
+down0. Thus no limit involving a B-dependent variable is silently reused.
+The bijection delta=T^(-kappa), kappa>0, covers all sufficiently large T.
+This proves(1) for EACH
 fixed original positive Psi and eligible finite R. A later supremum over
 tests/masks follows per-test inequalities; no uniform mask or exchange
 of source/time limits was used. By canonical spatial stationarity the
-point0 can be replaced by any fixed original x. This proves A1-A6.
+point0 can be replaced by any fixed original x: at every positive source
+cutoff, translating all spatial vertices preserves the noise law, wave
+kernels and constant initial data. The named fixed-order L2 limits and
+absolute series limit preserve equality of these point second moments.
+This is the stationarity assertion used here. This proves A1-A6.
 
 ## 10. Exact finite reuse and remaining original goal
 
@@ -585,10 +598,13 @@ No Skorohod/source repair/contacts/HPC/package/companion/TeX/PDF/wiki/
 publication or whole-paper clearance. Original full goal remains ACTIVE.
 
 Calibration scope: kappa tends to (4-alpha)/(3-alpha) as a tends to0,
-the required time-independent scale. This per-test lower functional does
-not claim convergence to the optimized Chen--Hu constant. The previously
-proved Jensen lower bound remains independently available; a particular
-unoptimized test score need not exceed it, and the two lower bounds may
-be combined by taking their maximum. No p1 theorem is replaced here, and
-no comparison equality with the distinct Skorohod model is inferred.
-Those sharp-constant calibrations remain obligations for later promotion.
+the required time-independent scale (canonical notes, R:full-upper-boundary).
+No optimized static constant is asserted. The separate Jensen inequality
+E u²>=(E u)² and its rate implication are proved in the canonical notes,
+P:Jensen, with numerical L_* specialization explicitly conditional on its
+intended first-mean premise. See calibration-context-v1.txt for the exact
+unchanged excerpt. A particular unoptimized test score need not exceed an
+independently valid Jensen rate; both lower bounds may be combined by their
+maximum. No p1 theorem is replaced, and no equality with the distinct
+Skorohod model is inferred. Sharp-constant calibrations remain obligations
+for later promotion.

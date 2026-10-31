@@ -6241,3 +6241,31 @@ Not an independently accepted new no-go theorem or covariance-class reduction.
 No d1 rough X/Sobolev supremum theorem promoted, no actual p1/source-energy
 identity from auxiliary scaling. No new Lean/kernel/count/package, HPC,
 contact/Skorohod/sourcefix/TeX/PDF/wiki/publication or fullgoal completion.
+
+### Actual all-dimensional raw block/event point lower accepted — 2026-10-31 UTC
+
+Original88012 TERMINAL at sourced4d876e, full12PASS/HIGH516.106seconds,
+PASS_WITH_NOTES/no requiredrepairs. Canonical report/pass/correspondence/
+readcoverage validated; all27live/frozen/Git/native input SHA bindings and
+all42native archive members verified. No recovery/providerrestart/
+thresholdwaiver. Adopt notes/raw-block-event-lower.md: EACH original positive
+smooth Psi/fixedeligibleR yields original-point Q2>=2 intlambda_(R,s)-v/2,
+ALL original d1/2/3 covariance measures, including invariant directions.
+
+Seven optional notes adjudicated: explicit B-dependent U and point-limit
+order BEFORE e_rate->0; distinct observation/gap symbols; finite Gaussian
+representation IN LAW; static primitive included in H0; exact canonical
+Jensen citation with conditional numerical specialization; vertex-translation
+stationarity explanation; optional fixed-delta product recurrence role.
+No new estimate/scope or reviewer-authored replacement proof. Original
+frozen scientific candidate and raw report unchanged. Nine OLD finite
+complete types/actual new guards pass; six root source/type bindings match,
+no new kernel run/count.71facts18seams/L0 and informal analytic boundaries
+unchanged. Full Gupper retained; no TeX/PDF/wiki/sourcefix/Skorohod/HPC/
+companion/contacts/publication or wholepaper clearance.
+
+Next: independently statement-review frozen U1-U4 unmasking/auxiliary-score
+target before long proof. Raw-lower theorem is now its accepted input;
+source-energy/occupation/all-alpha bridge, sharp upper and conditional
+exact limit remain OPEN. Full original goal ACTIVE. Network NoRoute, no
+fresh parity/push/masterintegration; scientific adoption is local only.
