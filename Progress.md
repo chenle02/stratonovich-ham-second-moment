@@ -49,7 +49,8 @@
  supported review63674 is TERMINAL quota, no report/coverage/acceptance.
  GC1-GC3 remain UNPROVED; compact data/source limits/average-of-SQUARES
  controls and18input bindings retained. SP1-SP3 E symplectic baseline
- frozen/falsified independently, also UNPROVED. GrowingR operator bound
+ frozen/falsified independently, also UNPROVED; v2 exact same-source
+ completed-mean map and16text packet prepared, NOT dispatched. GrowingR operator bound
  and source normalization remainOPEN; exactr<2/a.
 - **Still open:** intended author-energy/domain/normalization dictionary,
   matching sharp upper constant and conditional exact limit. Original full
@@ -7308,3 +7309,33 @@ Skorohod/sourcefix/TeX/PDF/wiki/bib/publication, NoRoute/pushpending.
 - Original sharp/source objective ACTIVE. No review pass, proof adoption,
   package/companion, source repair, TeX/PDF/wiki/bib/publication or HPC action.
   GrowingR Gaussian estimates remain the principal analytic obstacle.
+
+## Growing-cone E pairing source/application refinement — 2026-10-31
+
+- Previous goal turn PROGRESS, not verified wait: GC target/control freeze,
+  terminal quota receipt and corrected SP calibration committed1aaaefb.
+  Current preflight clean. Fresh serial fetch/focused <HUB> SSH remain
+  terminal255 NoRoute; current clock precedes provider reset19:10UTC.
+  No review retry, live-wait claim, fallback/account/threshold change.
+- SPv1 shifted-flow phrase was under-specified. target-v2 now defines
+  exact D_Phi=E[W(Phi)M_R(W)] and retaining source D_Phi,rho with source
+  field E[W(Phi)Y_rho(t,x)] for arbitrary fixed raw-H Phi. The same actual
+  coupling and source primitive must be verified, allGamma/d1/2/3.
+  cY_rho+h_Phi,rho is NONCENTERED; source convergence/moment argument must
+  retain a uniform deterministic shift budget, not assume centered laws.
+- Source/application audit identifies a bounded interaction-equation
+  conservation route: free-wave pairing and source multiplication symmetry
+  followed by bounded strong-state ODE. This avoids unbounded generator
+  differentiation/higher raw regularity. These are proposed proof obligations,
+  not a new proof or accepted SP result. Infinite-dimensional surjectivity
+  remains separate from P*JP=J; actual Young inverse is the input.
+- Sixteen exact source/target/evaluator texts frozen in SP statement-packet-v2
+  with separate supported path-only read plan and SHA manifest; NOT dispatched
+  before provider capacity returns. GC statement gate remains first.
+- Wiki CLI search/cite and synthesized static-vs-Stratonovich/dispersive
+  boundary reads retained. No static-source exponent, Itô mass theorem,
+  external primary result or d1 HS assembly imported into this all-dimensional
+  wave-phase application. No missing helpful reference identified/intake.
+- No unchanged numeric rerun/new Leanfact/count or candidate proof. Both
+  GC/SP actual statement and FULL gates pending;74facts20seams/L0 unchanged.
+  Full original growingR Gaussian/operator/source sharp goal ACTIVE/OPEN.
