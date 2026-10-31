@@ -5637,3 +5637,21 @@ coupling (not temporalconvolution), then actualYoung/source/canonicaldata/
 growingcone/d2d3lower/sharpupper/sourceconstant work remainsOPEN. Full
 originalgoalACTIVE,71facts/18seams unchanged. No newLean/companion/HPC/
 contact/Skorohod/sourcefix/TeX/PDF/wiki/publication/wholepaper clearance.
+
+### Future all-alpha damped-ratio falsification target — 2026-10-30
+
+Outside actualoperator proofpackets,20scalar derivative/IBP/CS controls and
+9strictalpha>1 admissibleparameter ratios PASS (M R expDelta .173-.979),
+notcertifiedaccuracy/no momenttheorem. Proposed NEW D1 monotonicity of
+F_a(q)=R(a,q-2a)expDelta(q,a), with derivative lower a²/[2(D+4a)(D+2a)]>0,
+from positivejointdensity moments/lambdaIBP/CS. Proposed D2 would reuse the
+OLD V(a/2)<1 certificate for all0<alpha<2-a without changing V, by monotone
+F(q)<=F(4) and Delta4<=Delta3. D isSCALAR, notphysicaldimension.
+
+Eleven-source futurestatement packet frozen in all-alpha-damped-ratio,
+UNREVIEWED/no longproof ornewscalaradoption. Old GlobalOmega source/fulltypes/
+receipt boundunchanged, no71facts18seams countincrease. Accepted actuald1
+pointconsumer is NOTextended bythis. No actuald2d3lower/energy/domain/source
+normalization/Young/exactlimit claim. Mainimmediate nextwork canonical
+source-driver convergence; this scalar target is a laterlower-bridge option.
+No contact/HPC/Skorohod/companion/TeX/PDF/wiki/publication transaction.
