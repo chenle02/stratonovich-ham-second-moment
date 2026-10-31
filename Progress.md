@@ -6308,3 +6308,21 @@ SEPARABLE Riesz/white. Next full written U1-U4 proof then FULL independent
 analytic/source/type/application gate.71facts18seams/L0 unchanged; no new
 package/HPC/contact/Skorohod/sourcefix/TeX/PDF/wiki/publication. Full original
 goal ACTIVE, sharp upper/intended energy/exact limit OPEN; NoRoute persists.
+
+### Full U1-U4 unmasked variational proof candidate frozen — 2026-10-31 UTC
+
+After accepted statement0433741, full notes/unmasked-variational-lower.md
+written: exact tempered Gaussian pairing/global means, direct unmasked
+selfadjoint/H1 form and negative Rayleigh rate, monotone masks/uniform
+minmax limit, original-point numerical supremum, arbitrary-d Radon/cost/
+unitary dilation and positive finite own S_c=c^m S_1. All nine statement
+notes addressed; no unmasked ground/noise evolution/d1 rough-X promotion.
+Candidate only, no theorem adoption before full independent gate.
+
+Frozen full scientific packet 17completeTEXT inputs. THREE unchanged
+OLD finite scalar consumers have exact type guards, no new kernel/replay/
+count/module/companion. S1 not actualfirstmean/author Lstar; original
+source-energy/occupation/all-alpha/sharpupper/exactlimit objectives OPEN.
+No TeX/PDF/wiki/Skorohod/sourcefix/contact/HPC/publication. Full goalACTIVE,
+networkNoRoute/localisolated/no freshparity/masterintegration. Next NEW
+native Opus5.5/HIGH full analytic/source/type/application review.
