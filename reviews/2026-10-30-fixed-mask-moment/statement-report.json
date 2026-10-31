@@ -1,0 +1,89 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "reviews/2026-10-30-fixed-mask-moment/target-v1.md: full, lines 1-104",
+    "reviews/2026-10-30-fixed-mask-moment/falsification-v1.md: full, lines 1-41",
+    "reviews/2026-10-30-fixed-mask-moment/source-crosswalk-v1.md: full, lines 1-44",
+    "reviews/2026-10-30-fixed-mask-moment/worker-honesty-v1.md: full, lines 1-31",
+    "reviews/2026-10-30-fixed-mask-moment/check-low-orders.py: full, lines 1-107",
+    "reviews/2026-10-30-fixed-mask-moment/low-orders-v1.json: full, lines 1-937 (all 100 rows)",
+    "reviews/2026-10-30-fixed-mask-moment/canonical-input-excerpts.txt: full, lines 1-277",
+    "notes/source-operator-convergence.md: full, lines 1-477",
+    "reviews/2026-10-30-fixed-mask-moment/pages/author-07.png: full image",
+    "reviews/2026-10-30-fixed-mask-moment/pages/author-10.png: full image",
+    "reviews/2026-10-30-fixed-mask-moment/pages/author-12.png: full image",
+    ".review/required-sources.json: full, lines 1-45 (read plan only, no read credit)"
+  ],
+  "checks": [
+    {
+      "claim": "C1: The target uses the original full H:homog class, data (1,0), the actual source field, and a physical mask applied after smoothing. Pointwise covariance nonnegativity comes from a nonnegative Radon Gamma.",
+      "verdict": "PASS",
+      "reason": "Target lines 6-9 match canonical H:homog (excerpt lines 135-154): d=1,2,3; a in (0,1); 0<alpha<d or alpha=d=1; alpha+a<2; nonnegative even positive-definite tempered Radon Gamma. Target line 14 is notes (5) at equal widths. K_delta>0 because it is a Laplace integral, and Gamma_(2epsilon)=p_(2epsilon)*Gamma>=0 because a positive heat kernel is integrated against a nonnegative measure, so PSD alone is not the source of the sign (crosswalk lines 39-40). Notes Sections 5-6 supply the jointly continuous, spatially smooth version per fixed rho, without using a density, so singular and invariant-direction Gamma are covered. The coefficient m(x)Y_rho sits after smoothing, and no multiplier on the raw noise quotient is presumed."
+    },
+    {
+      "claim": "C2: F1 holds for all n,k, including unequal and empty chains, self-pairings, and arbitrary terminal x,y, with finite integrals and unsmoothed d3 sphere measures.",
+      "verdict": "PASS",
+      "reason": "Independently verified. At fixed rho, |C_rho|<=K_delta(0)Gamma_(2epsilon)(0) by Cauchy-Schwarz, and the iterated Green measures are positive with total masses controlled by (2.4). Gaussian moments are uniformly bounded, so Fubini applies to the pathwise iterated integrals of the continuous version. Isserlis then gives zero at odd total order and, at even order, the finite sum over all pair partitions of the n+k vertices, self-pairings included. Each diagram integrand is a positive Green measure times a nonnegative C_rho product times prod m(x_v), and that mask product depends only on the vertices, not the pairing. Since 0<=prod m<=1, both inequalities hold diagram by diagram. In d3 the integrals are successive sphere integrals of continuous functions, so no density is needed. The t=0 and empty-chain cases are trivial."
+    },
+    {
+      "claim": "C3: F2 gives absolute L2 convergence with the same q_n, and the sums identify with ordinary mild solutions without global supremum moments or sample positivity.",
+      "verdict": "PASS",
+      "reason": "F1 at x=y,k=n gives ||X^m_(rho,n)(t,x)||_2<=||X_(rho,n)(t,x)||_2<=q_n(t), uniformly in rho and x, by L:vertex-crude with q_0>=1. Summability of q_n follows from E:vertex-summability. For identification, let B be the supremum of |Y_rho| on a compact backward cone. Green mass t-s and induction give the pathwise majorant |X_n|<=B^n t^(2n)/(2n)!, so the series converges uniformly on the cone to a continuous mild solution, and Gronwall on cones gives uniqueness among locally bounded solutions. An L2-convergent subsequence of partial sums identifies the L2 sum with the pathwise sum on the fixed-rho full-measure set. Only cone-local boundedness is used. No sample positivity is claimed (target lines 62-63 and 91)."
+    },
+    {
+      "claim": "C4: F2a and F2b are correct, using nonnegative diagrams, L2 products, Bochner positive averaging, and only unmasked stationarity plus Cauchy-Schwarz.",
+      "verdict": "PASS",
+      "reason": "Finite partial-sum products converge in L1 by L2 convergence, and the double series is dominated by q_n q_k, so F1 sums to F2a in any order. Each diagram is continuous in x,y, by the sphere or ball parametrization and bounded continuous integrands, so the two-point function is continuous and x->u(t,x) is L2 continuous. With the uniform L2 bound and phi in L1, this gives the Bochner integral, which agrees with the pathwise integral by Fubini. Inner-product continuity then gives the double integral of phi(x)phi(y)E[u^m u^m], which F2a bounds by the unmasked double integral because phi>=0. Unmasked stationarity follows from the translation-invariant covariance and data, and Cauchy-Schwarz gives ||phi||_1^2 E|u_rho(t,0)|^2. No point Sobolev evaluation or signed or velocity ordering is used. The target asserts Bochner existence without displaying this route, but the route closes."
+    },
+    {
+      "claim": "C5: F3 follows, with the unmasked limit derived from canonical inputs and the masked L2 limit kept as an explicit assumption.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "At common widths the source law matches the canonical edge covariances (excerpt lines 1053-1054 and 1065-1067; notes (5)). L:joint-fixed-order gives every diagram limit at arbitrary relative rates, including unequal and empty chains, with Green-before-noise in d3. E:mixed-moment and E:full-second identify the limiting sum, whose construction is noncircular per excerpt lines 484-497. Dominated convergence with q_n q_k gives lim E|u_rho(t,0)|^2=E|u(t,0)|^2 using only single-rho laws, so no pathwise identification is needed. If the averages converge in L2 to A_m, their second moments converge, and F2b gives F3 along the net or the specified sequence. Lines 73-86 keep existence, Young identification, local phase, and rates as non-conclusions. Note: crosswalk line 37 calls this an accepted moment limit, while the accepted notes (lines 8-10 and 471-472) list the transfer as open. It is a correct new derivation from accepted ingredients and must be written out in the proof."
+    },
+    {
+      "claim": "C6: The finite check algorithm and its negative controls match their description and scope.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Line audit: Gamma=delta_x1 tensor Leb_x2 is admissible with alpha=1 and a=.5. heat_zero=1/sqrt(4 pi epsilon) equals Gamma_(2epsilon)(0). kappa matches K_delta at v=0 and v!=0 via the lower incomplete gamma function. The G2 constant and cone condition are correct, with minimum dt .2 exceeding maximum |dx| .1. Coincident Gaussians at x1=0 are legitimate because the covariance has no x2 dependence, so the variance of their difference is 0. Chains have the n Green factors of (2.15), are oriented earliest to terminal, end in data 1, and carry the mask on vertices only. The Isserlis recursion includes self-pairings. The JSON has 4x25=100 rows, 48 of them odd and zero; the row symmetries hold, and masked<=full in every row. All even rows other than (0,0) have ratio below 1. I reproduced by hand: (x=y=.05,n=k=1) full about .0079244 versus JSON .0079245, with ratio exactly .5625=((1+.5)/2)^2; and (x=y=.05,n=0,k=2) full about .0048976 versus JSON .0048976. The PSD difference c[[0,1/2],[1/2,3/4]] has eigenvalues -c/4 and c. The signed observable has raw variance 0 and masked variance c/4. Neither is claimed as a velocity counterexample, and no continuum certification is claimed. Note: the strict-decrease claim is evidenced by the JSON rows, not asserted per row by the script, and the negative controls use analytic literals."
+    },
+    {
+      "claim": "C7: Source pinpoints, q_n import boundaries, and the method and novelty statements are accurate.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Page images confirm p7 (2.3)-(2.5), including mass t and the d3 sphere measure; p10 (2.13)-(2.16), including the formal or heuristic framing the crosswalk reports and the chain orientation; and p12 (2.19)-(2.21), covering all pair partitions and odd zero. The q_n and fixed-order inputs are named as own accepted inputs with their stated hypotheses. The crosswalk and target disclaim independent novelty, call the method familiar Wick positivity, and import no first-mean, energy, exact-limit, Appendix, or Skorohod result. Note: the label on crosswalk line 37 is the status issue recorded under C5. The canonical file and pinned PDF are not in the packet, so exactness of the excerpts and the PDF SHA were not independently checkable."
+    },
+    {
+      "claim": "C8: Downstream use remains conditional, and open obligations are not presented as results.",
+      "verdict": "PASS",
+      "reason": "Target lines 82-86 and 102-103 and worker-honesty lines 14-20 leave open the masked-limit and Young identification, the local phase containing constant 1, the gap, full-phase cone, growing products, raw shift and cost, and rates and constants. The compactification benefit is phrased only as may or could. The notes state that datum (1,0) is not in global E. No new moment lower bound or goal completion is asserted, and the full goal is retained as active."
+    },
+    {
+      "claim": "Statement gate overall: F1-F3 are correct as stated under H:homog, and a long proof is feasible with the named inputs.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "No counterexample, wrong constant, missing hypothesis, or failed implication was found. Every step is either elementary positivity or Gaussian calculus at fixed rho, or a named accepted input. This is a statement-level audit, not a proof certificate."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Crosswalk line 37 says accepted full-solution moment limit, but the accepted notes (lines 8-10 and 471-472) list source/canonical solution moment transfer as open. Target lines 67-71 correctly present it as implied by accepted ingredients. The derivation closes by diagram limits plus q_n q_k domination, and it should be written out rather than cited as already accepted.",
+      "The packet excerpts do not contain the definition of the canonical Y_n^a or the terminal Green-limit construction. Matching the target's pathwise X_(rho,n) to it is checkable at the moment level, using the edge covariances and weak convergence of Green measures against bounded continuous integrands. The long proof should state this identification explicitly, especially in d3.",
+      "Optional wording: target line 27 leaves rho implicit, and pointwise almost surely at line 44 does not say whether one null set serves all (t,x). A simultaneous statement is available for each fixed rho on the regularity event, and no common null set across rho is needed or available (notes lines 92-93 and 439-440).",
+      "Script line 84 asserts strict decrease only for some row, so the falsification claim that even nontrivial rows strictly decrease rests on inspection of the JSON rows. The JSON does support it.",
+      "The PSD and signed negative controls in script lines 88 and 92 are hand-entered analytic literals, so their assertions do not derive them from the covariance and mask code. Their values were verified by hand here and are correct.",
+      "Optional source mapping: crosswalk line 32 pins data (1,0) to p10. The clearest included pin for displacement 1 with no velocity term is the mild form (2.1) on p7 together with S_0=1 on p10; source (1.1) is not in the packet.",
+      "Optional downstream caution: notes lines 251-254 allow the cutoff family to depend on auxiliary J. F3 is unaffected because A_m may be any random variable, but a later identification with a W-measurable Young flow cannot be presumed."
+    ],
+    "required_repairs": []
+  },
+  "required_repairs": [],
+  "limitations": [
+    "Review used read and search tools only. The script was not executed and SHA256 values were not recomputed. The script was audited line by line, all 100 JSON rows were inspected, and two nontrivial rows plus the PSD and signed controls were reproduced by hand.",
+    "The canonical source file, the pinned PDF, and source pages 5, 6, 8, and 9 are outside the packet. Excerpt exactness, the PDF hash, revision claims (6fd29704, da9d464, fa1e54f), and parity claims were not independently verified.",
+    "L:vertex-crude, L:joint-fixed-order, P:mixed, and notes Theorem 2 were treated as named accepted inputs. Their excerpted proofs were read for fit to this use but not re-certified; supporting lemmas such as L:damped-homogeneous-norms and imported Theorem 3.1 are not in the packet.",
+    "This is a statement gate, not a full proof certificate. The F1-F3 proofs have not been written, and feasibility was checked by reviewer-level argument. Finite controls provide no continuum error certification.",
+    "An AI review is not human verification or a novelty audit. Independent novelty remains unverified.",
+    "Gold-standard self-check: NOT gold standard. This is a statement-level review only. To close: complete and independently review the full F1-F3 proof, and execute the script in the frozen environment. These steps are autonomously doable, outside this review's scope."
+  ]
+}

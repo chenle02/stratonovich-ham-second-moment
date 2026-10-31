@@ -5762,3 +5762,28 @@ Potential fixedmask compactmean route is UNREVIEWED planning, no Young/
 canonicalmaskedflow/groundgap/cone/rawcost/d2d3lower/sharpupper claim.
 71 facts/18 seams unchanged, originalfullgoalACTIVE; no newLean/companion/
 HPC/contact/Skorohod/sourcefix/TeX/PDF/wiki/publication.
+
+### Fixed-mask statement accepted; full proof candidate — 2026-10-30
+
+Native Opus5.5/high ninechecks PASS_WITH_NOTES/HIGH352.974s, eighttexts/
+threefullimages; no requiredrepairs. All11live/frozen/git6fd2970/native
+workspacebindings and26nativearchive members checked. Rootcanonical
+report/passing/correspondence/requiredreadcoverage pass. Original42618
+terminalresult, no retry/recovery/confidencechange. Seven minor findings
+adjudicated: fullsource momentlimit is NEWconsumer ratherthan already
+accepted; explicit Green-before-noise matching; perrho versions; strictall
+even controlrows; matrix-derived negativecontrols; initialdata pinpoint;
+auxiliaryJ dependence. Historicalv1 retained, correctedv2 files separate.
+
+Complete new candidate notes/fixed-mask-moment-transfer.md proves actual
+positivechain measures/finiteGaussianFubini, boundedcontinuous-covariance
+Greenlimit matching, every mixedWickcomparison inclself/unequal/emptychains,
+uniform q_n and sourceclassicalmildidentity oncompactcones, absolutefull
+series/twopoint/positiveBochneraverage comparison, NEW fullunmasked source
+pointmomentlimit fromfinite-square/q_n tails, CONDITIONAL rawmasked tested
+moment transfer. No maskedraw L2 existence orYoungidentity presumed.
+Fifteen texts/three sourceimages scientificpacket frozen, no proofadoption
+until independentfullgate. Fixedmask compactmean/Young/groundgap/cone/raw
+cost/allalpha lowerbridge/sharpupper/sourceenergy remainOPEN. Fullgoal
+ACTIVE,71facts18seams unchanged; no newLean/companion/HPC/contact/Skorohod/
+sourcefix/TeX/PDF/wiki/publication.
