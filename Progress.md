@@ -6960,3 +6960,20 @@ images bound live/frozen/Git. Same handle, no restart on timeout. Outside
 packet, block-product-next-target-v0.md records the exact intended consumer
 of the polynomial static budget and candidate B/K/last-block bookkeeping.
 UNREVIEWED planning only; no deterministic product/Gaussian-tail/point upper.
+
+### S1-S4 v1 statement FAIL retained; temporal range repaired — 2026-10-31
+
+Original60045 TERMINAL,FAIL/HIGH397.759s,one mandatory S4 range repair;
+18other checks nonfailed. Canonical correspondence/readcoverage pass,
+19bindings/34native members verified. No recovery/restart/waiver/adoption.
+V1 said r>2 instead of accepted2<r<2/a. Root time-bubble calculation
+confirms exponent1/r-a/2: unbounded above endpoint, noncompact at endpoint
+via weak0/unit raw norm/local lower profile. No endpoint boundedness claim.
+Exact a.5 scaling-factor controls are not profile/operator/SPDE numerics.
+This is a rejected auxiliary quantifier, not an original sharp-goal no-go.
+
+Target-v2 restores EXACT accepted C3 temporal range (all original models),
+explicit deltaB->0/notation, new primary3.1-3.2 content and actual AMGM
+notation. All10minor findings adjudicated; no unproved roughH2 or3/4-domain
+claim adopted. NEW frozen statement review needed before long proof.
+73facts19seams/L0 and original goalACTIVE, no new static/operator theorem.
