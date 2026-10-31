@@ -1,105 +1,72 @@
-Last updated: 2026-10-31 20:49 UTC (Codex)
+Last updated: 2026-10-31 22:01 UTC (Codex)
 
-Full original all-model sharp/source goal ACTIVE. Uniform E spectral/product
-tool accepted; signed-score moment and sharp/source constants stillOPEN.
+Full original all-model sharp/source goal ACTIVE. Original point upper by
+own signed raw score accepted; positive/sourceconstant match remainsOPEN.
 
 ## ⏭ Next session: where to stand and what to do
 
 Enter ACTIVE independent research checkout
 ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave,
 branch research/fixed-mask-young-20261031,clean LOCAL HEAD
-1fa35fb822fbcfc650bfa2c805b6cc74d429e45d. Its Progress.md is authoritative;
-root master mathematics and the isolated checkout's inherited HANDOFF are
-historical. New work is6ahead/0 against lastfetched origin6937719.
+3c31d1d0ee4273dc60037f18be986faf391722f5. Its Progress.md is authoritative;
+root master math and isolated checkout's inherited HANDOFF are historical.
+Research14ahead/0 against lastfetched origin6937719; <HUB> unavailable.
 
-FIRST freeze and falsify ONE exact signed-score Rayleigh moment consumer,
-using reviews/2026-10-31-uniform-e-spectral-product/rayleigh-consumer-next-v0.md
-as an UNREVIEWED design only. Its old live-review status is historical:
-US1-US4 fullproof is NOW ACCEPTED,scientifica14c6bb/adoption1fa35fb,
-27checksHIGH519.949s,no requiredrepairs. Target the SAME actual growing-mask
-endpoint and own raw half-action score S_R,with explicit bulk/tail/delta-log
-normalizer limits and GC's originalpoint polynomialprefactor. Do not promote
-this plan to a theorem or infer intended source L^* constants.
+FIRST complete the FULL PG1-PG2 finite active-subset/positive-cone/entrywise
+Gram proof at its accepted STATEMENT scope. Read
+reviews/2026-10-31-positive-gram-variational/target-v0.md and
+statement-adjudication-v0.md. Sourcegate e9fbfef/adoption33751ad accepted
+15checksHIGH225.532s,all9notesadjudicated; no completedPGproof or actual
+physicalapplication yet. Revisit the worthwhile finite algebra seam named
+in lean-progress/PROGRESS.md: search existingregistry/Mathlib,freeze exact
+publictypes/guards and use only authorizedlocalchecks ifbuilt. Do not create
+an officialcompanion/package/remote by inference from this permission.
 
-NEW accepted tool notes/uniform-e-spectral-products.md: E-only signed
-rough static spectral norms/bottom,uniform scalar-time tensor averaging,
-full/good/bad/truepartial meanproducts on polynomialballs,arbitrary residual
-with SP mean denominator and ordered max1/iteratedlimits. All6FULL minor
-notes adjudicated;51five-way bindings/66nativearchive members verified before
-optional clarity. Statement43ff384/adoptionda79a8d separately19HIGH607.619s.
-BT transfer remains accepted20HIGH508.072s. Original sharp/source goalOPEN.
+NEW ACCEPTED mainresult notes/rayleigh-signed-moment-upper.md:
+scientific939d697/adoption691a4f0,FULL19checksHIGH367.538s,no requiredrepairs,
+all7minor notesadjudicated. ORIGINALpointsecondmoment at kappascale is
+bounded above by V_upper=limsup_delta OWN signedraw S_(R_delta),finite.
+43five-waybindings/58archive members verified beforeoptionalclarity. This
+is not intendedauthorL^*,a positivecontrolscore,matchinglower or exactlimit.
+
+After PGfullproof/gate,physical-application-next-v0.md is an UNREVIEWED
+research design only. It explicitly requires reading the ACTUAL accepted
+positive-controlLOWER class before any signed-positive match. Fullspatial
+class need not mean finite sums of time-varying spatialprofiles. Original
+sourceconstant normalization and allGamma/d1/2/3 sharpgoal remainOPEN.
 
 ## Pre-flight checks
 
-1. Read AGENTS.md,PROJECT-GOAL.md and ACTIVE Progress.md. Preserve original
-   ALLGamma/amplitudes/d1/2/3/white/subcritical scope and every decision point.
-2. Root before this dedicated HANDOFF-only successor dede798 was clean,
-   locally1ahead/0. Research1fa35fb clean,6ahead/0 against lastfetched6937719.
-   Originfetch/push/<HUB> LAN fail NoRoute. Existing configured public
-   route <HUB> was also tried with strictknownhost checking:
-   Connectionrefused. No SSH/dotfile/system edits or new routing assumptions.
-3. Last actual <HUB> parity remains canonicalmaster611c005,researchclone
-   6937719. Both newroot and6researchcommits may be unpushed. When reachable,
-   fetch/racecheck,push,then canonicalpull AND independentresearchclone FF;
-   verify actual HEADs,not only fetchedrefs. Preserve remote dirt/history.
-4. Independent research clones are outside Dropbox at the same home-relative
-   state path on bothhosts. Never use Dropbox-linked worktree metadata or
-   merge research into master as operational cleanup.
-5. US fullsource a14c6bb,adoption1fa35fb: canonical report/pass/correspondence/
-   fullcoverage validated including10PRIMARYimages,all51inputbindings before
-   clarity,66nativearchive member hashes checked,rawreport unchanged.
-   All6minor findings adjudicated: z>=1,spectralfunctions0offsupport/realcomplex,
-   zeroGamma directcase,tensor-only no-go wording,SPauxgaps/supportedinclusion,
-   names. FixedR F lift constants occur ONLY in actual-flow identification.
-6. US statement43ff384/adoptionda79a8d:42bindings/57archive members;all10notes
-   adjudicated. Root rejected erroneous reviewer8: Q2=[0,1/2;-2,0] comes from
-   k0,b1,V-4,h4,tpi/4. FULL gate independently confirmed the correction. It
-   remains a finite comparator,not an actual compact masked PDE/control.
-7. U/GC/SA/SP/BT prior exact components remain accepted. E budgets are not
-   F constant-column budgets. No raw point trace/independent blocks/raw-H
-   Gaussian or sum of fast SP costs. No uniform spatial composite compactness
-   theorem or no-go follows from U's tensor orthonormal sequence.
-8. Allnative handles73068(statement),4664(FULL) TERMINAL0; no live oldreview
-   to restart/poll. Teamavailabilityv1 failed sessionlimit and is NONreview.
-   Selectedexisting <account A> freshdoctor <plan removed>/expectedGmail,
-   actualOpus5.5/HIGH served FULL. Inspect fresh QUOTA OUTPUT before selecting
-   account/doctor/READY: batching a spent slot's quota display and probe caused
-   one avoidable failed probe. No model/provider/threshold/credential waiver.
-9. Current canonical skill lesson00264bba pushed/validated/synced: retain
-   perprecision residual maxima AND exactcase identities,or percase residuals.
-   Description473/1024/headline45,skillgate/indexgeneration/projections/check/
-   strictbudget/ClaudeOpenCodeCodexbyteparity PASS; Labclean/tracking0/0.
-   Original40digitformula maximum isaggregateonly;80digitrows/percase logdiff
-   retained. Honest limitation,no fabricated values or unchanged rerun.
-10.74facts20seams/L0 unchanged,no newLean/compiler. FullMathlibAMGM/powermean
-   types/axioms reused with actualguards. FP-UNIFORM-E-SPECTRAL-PRODUCT boundary
-   records all infinite/form/Young/limit analysis as INFORMAL. Companion4pending.
+[held back: private network details]
 
 ## Concrete deliverables for the next session
 
-- Exact frozen Rayleigh signed-score statement/source/type/falsification
-  contract before long proof,using accepted BT and US at their actual scopes.
-- Explicit growing-mask R_delta=delta^-1+2,actual same endpoint for every B,
-  bulk/tail prefactors and raw half-action,proper delta then B order.
-- Safe sync of pending research/root commits and actual <HUB> parity
-  when reachable; no resets,foreign WIP loss or config edits.
+- Complete self-contained PG1-PG2 proof at its broad realHilbert/nonnegative
+  Gram/singular/zero/empty scope,and isolate worthwhile finite kernel types.
+- Exactlocalformal evidence ifdeveloped,with search-before-build,guard/type/
+  axiom/replay/negativecontrols; own FULL independent PG gate beforeadoption.
+- Physicaloccupation application onlyafterseparate actualH_I/time/mask/
+  positiveLOWERclass sourcefit. Preserve originalauthorconstant contract.
+- Restore pendingresearch/root sync andactual<HUB> HEADparity whenup.
 
 ## Success criteria for the immediate next step
 
-A coherent target for limsup_delta delta log E||P_delta,E^(R_delta)||^2
-<=limsup_delta S_(R_delta),where S_R is the OWN all-signed raw score. Tests
-must expose wrong half-action,Rayleightail/frontconstant/normalizer and
-limit-order claims. Source/statement review required before full proof.
-Retain separate signed-positive/mask-removal/source dictionary obligations.
+Full PGproof closes allO1-O6 without assuming globalconcavity of the
+positive-partprimal,an inverseGram or strictlypositivecross entries. Correct
+halfaction constants,positive dualweights,maxactiveincludingempty and
+entrywise(notLoewner) comparison. Any kernelcertificate has an exact
+conditionaltype/application fence; analyticmin/attainment not silently
+formalized. FULLmodel-independentproof/source gate remains mandatory.
 
 ## Anti-success criteria
 
-No easy squared-Lr norm constant substituted for the spectral score;
-no unstated infinite-dimensional density or diagonal limit; no dropped
-polynomialdata/normalizer/tail terms. No arbitrary-phase covarianceordering,
-source energy repair,p1 auxiliarylabel identity,Skorohod work,contact,HPC,
-companion/publicrelease. No completed theorem inferred from a plan or
-statement gate,availabilityprobe,localcommit,old/fetched remote reference.
+No full-active-only formula,missingempty/zerolabel branch or arbitraryA
+calledglobaloptimizer. No numericglobaloptimality/enclosure/statistical
+confidence. No PGpremise retroactively insertedinto acceptedURproof.
+No actualsigned-positive/PDE match from a finite lemma withoutH_I/time/
+normalization/lowerclass gates. OwnV_upperdoes not replace intendedL_*/L^*
+constants or originalgoal. No sourceenergyrepair,p1labelidentity,Skorohod/
+contact/HPC/companion/publicaction or currentremoteparity claim.
 
 ## What the previous sessions produced
 
@@ -1329,52 +1296,70 @@ TeX/PDF/wiki/bib/sourcefix/publication.
   successor pending. Next exact signed-score Rayleigh consumer UNPROVED;
   originalall-model sharp/sourcegoal ACTIVE.
 
+- 2026-10-31: UR1-UR4 ORIGINALpointupperbyownSIGNEDrawscore accepted:
+  scientific939d697/adoption691a4f0,FULL19HIGH367.538s,no requiredrepairs;
+ 43five-waybindings/58archive members,all7minorfindingsadjudicated. Source
+  gate3e8c036/f9b05fc17HIGH1321.599s completedSAMEattemptafterproviderretry,
+ 34bindings/49members. No restart or duplicatevote. Newproofnotes/
+  rayleigh-signed-moment-upper.md,Progress andFP/LeanProgressboundaries.
+  IndependentPG12case/10objectivefinite screen andsourcegatee9fbfef/
+ 33751ad15HIGH225.532s acceptedFITonly,9bindings/24members,all9notes
+  adjudicated. PGfullproof/finiteformalcore/actualphysicalapplicationOPEN.
+  Physicaldesign3c31d1d unreviewed,nopremisetoUR. No newcompiler/factcount;
+ 74/20/L0 unchanged. Allnewresearchcommitslocal,14ahead; rootnextsuccessor
+  pending. Originalallmodelsharp/sourcegoalACTIVE,notredefinedasownscore.
+
 ## Repo & git state at handoff
 
 Root before this dedicated HANDOFF-only successor:
-dede79849ad4396b14f70ad590cee46f0be65d5b,master,clean,1ahead/0 against
-lastfetched origin/master611c005. This successor also needs push if host
-remains unreachable. Research clean LOCAL
-1fa35fb822fbcfc650bfa2c805b6cc74d429e45d,6ahead/0 against lastfetched
-origin/research/fixed-mask-young-20261031=6937719. New thisturn research
-43ff384(statementfreeze),da79a8d(statementadopt),a14c6bb(fullfreeze),
-1fa35fb(fulladopt); previous a1c90c7/f6bc184 also pending. Every push failed.
+c55769db3d1733106a488af0aa57c0346fe7637e,master,clean,2ahead/0 against
+lastfetchedorigin/master611c005. This successor also needs push if host
+remains unreachable. Active research clean LOCAL
+3c31d1d0ee4273dc60037f18be986faf391722f5,14ahead/0 against lastfetched
+origin/research/fixed-mask-young-20261031=6937719.
 
-Last actual <HUB> canonicalmaster611c005/researchclone6937719 are
-HISTORICAL parity points. LANNoRoute and strictDDNSConnectionrefused tested;
-no config changed. Preserve pending commits; fresh remote audit on recovery.
-Lab canonical00264bba48f0f48c6b4fe68bc5e66066b03c6eb7 pushed/clean0/0;
-no claim of <HUB>Lab whole-fleet parity.
-Canonical TeX SHA58b092b258d4f363f8bfa0a02dcf492dcb9c13e794dbcab440bf7b0529b53b7d
-and trackedPDF unchanged; no .tex build for Markdown-only work. Research
-payload not merged into master/wiki/circulation document. Private origin
-remains the same <HUB> bare repository.
+Thisturn research3e8c036(URstatementfreeze),8630bed(PGscreen),e9fbfef(PG
+statementfreeze),f9b05fc(URstatementadopt),939d697(URfullfreeze),33751ad(PG
+statementadopt),691a4f0(URfulladopt),3c31d1d(physicaldesignonly). Earlier6
+pendingresearchcommits preserved. EverypushfailedNoRoute; noforce/reset.
+Lastactual<HUB>master611c005/researchclone6937719 remainhistorical.
+
+CanonicalTeXSHA58b092b258d4f363f8bfa0a02dcf492dcb9c13e794dbcab440bf7b0529b53b7d
+andtrackedPDFunchanged; Markdown-onlywave,noTeXbuildrequired. No research
+payloadmergedintorootmaster/wiki/circulationdocument. Lab00264bba was
+pushedclean0/0,lastchecked; no wholefleet<HUB>Lab parityclaim. Origin
+remains the private <HUB> bare repository.
 
 ## Operating notes
 
-Full original goal ACTIVE,no budget or completion date/scope shrink.
-Use nativefirst-party Opus5.5/HIGH frozen-packet independent reviews,
-adjudicate all findings; final cold reader and human/wholepaper gates remain.
-User asks timely lessons: existing canonical skills updated at stable evidence,
-validated/synced/pushed; avoid duplicate skills and workflow-only churn.
-Stage own paths,atomic units,push then safe canonical+isolated GW sync when
-reachable. New sources/claims require exact fidelity,not reviewer authority
-alone. Do not adopt a reviewer error; preserve report and prove disposition.
-No email/Telegram/amsg or other correspondence is authorized.
+Full originalgoalACTIVE,no budget/completiondate/scope shrink. Neworiginal
+point signed-score upperaccepted asresearch,notwholepaper/human/novelty/
+publicationclearance. Finalcoldreader/TeXintegration/sourceconstant gates
+remain. Keep allcoupledparameter/normalization/imported-scope boundaries.
+MandatorynativeOpus5.5/HIGH remains; no fallback or vote retry. Quiet log
+is notterminal: pollactualsamehandle/inspectauthoritativestate,allowprovider
+retry. No verdict untilcanonicalreport/coveragevalidation. Independent
+mathscreencanadvancewithoutassuming thewaiting claim; keepgatesseparate.
+Capturetimelylessons atstableevidence,updateexistingskillswhennewreusable
+rule,notduplicateexistingrules. Mathspecificunreviewedplansstayresearchnotes.
+Stage ownpaths/atomiccommits,safepushandcanonical+isolatedGWsyncwhenup.
+No email/Telegram/amsg or source-author correspondence authorized.
 
 ## Risks to monitor
 
-The original source-internal normalization discrepancy remains unresolved.
-Author version p1 gives two-sided bounds,not arXiv-v1 exactlimit. Own full-
-kinetic/half-action score is not identified with intended authorL^*.
+Intendedsourceenergy/domain/normalization discrepancy unresolved; author
+versionp1two-sided,not arXiv-v1 exactclaim. Ownsignedrawhalfaction/fullkinetic
+score isnot identifiedwith intendedauthorL^*. Originalsharp p2 constants
+andconditionalexactlimit remain required andopen.
 
-US now supplies uniform E deterministic ingredients; it does not itself
-prove the Rayleigh signed-score moment upper. BT/US composition still needs
-explicit bulk/tail/normalizer/iteratedlimit argument. Signed-positive
-variational/mask removal and source dictionary remain distinct hard steps.
+PGiscurrentlyonlysourcefit/screen. Physicaldesign proposes an entrywiseGram
+comparison,noncircularcontrolnorm bound viaremaskingfiniteprofiles,and
+positivepotentialeventualmaskdomination. NONE iscertifiedbyUR/PGstatement.
+ReadactualacceptedLOWERclassbeforematching finite positiveconiccontrols;
+fullspatialclass maystillbeonespatialshape tensor a temporalprofile.
+No unmaskedrandomoperator/eigenstate or arbitrary-phasecovarianceordering.
 
-Primaryselectedpage/DOI metadata provenance and numerical aggregate-only
-limits remain explicit. Tensor noncompactness is not a new E composite
-no-go. Scalar formal types certify none of the operator/SPDE assertions.
-<HUB> unavailability is operational,not a mathematical no-go or reason
-to drop the goal. Pending commits are safe locally but not remote-synced.
+AllURintegral/operator/source-point/limitsteps remainreviewedINFORMAL
+analysis,notLeanfromscalarfixtures. Finiteformalcoreproposed,nocompanion
+created; decision4pending. <HUB>NoRoute isoperational,notmathno-go or
+reason todropgoal. Commits safe locally but notremote-synced.
