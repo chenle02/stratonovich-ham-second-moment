@@ -7738,3 +7738,23 @@ Skorohod/sourcefix/TeX/PDF/wiki/bib/publication, NoRoute/pushpending.
   abstract/currentE-law/source/Rayleighhalfaction component and get own gate.
   Accepted Umean/SAmeananchor/GCpointtransfer/SPbaseline provide ingredients,
   not the nonlinear uniformR spectralproduct or author energy dictionary.
+
+## Timely consumer lessons and next-route scope — 2026-10-31
+
+- Canonical existing asymptotic-interface and focused-subscription skills
+  further amended/pushed Lab310603864efd16be1370b8cb24a22b8d35b87d75.
+ 2/2skill/description/frontmatterchecks,generatedsearch,projectionbyte
+  equality andstrictCodexbudget pass,localorigin0/0clean. New lessons:
+  expected/Cameron budgets include E-versus-F phase/data columns; don't
+  promote reviewer F-growth heuristics; inspect weekly aswellas5hstatus;
+  existing token-stale profiles are unknown,not knownspent,and can undergo
+  authorized actualdoctor/oneboundedprobe recovery. No duplicate skills.
+  <HUB>Lab has a separate pending telemetry history; no fleetparity
+  claim or foreigncommit rewrite. Article<HUB>sync separatelyverified.
+- ConditionalBorell-tube-next-v0 remainsUNREVIEWED,with primary11.6,
+  measurablemean-radius tube/AWS/halfaction/Rayleighintegral obligations.
+  Added finite positive-occupation Gram/active-set dual IDEA and exact
+  warning: entrywise Gram comparison is not arbitrary-phase wavecovariance;
+  finite-time Jensen/grid doesnotidentify integratedrate without uniform
+  control-norm/time approximation. No auxiliarylabelscore=p1 claim or
+  author energy repair. No proof/upperresult adopted from this plan.

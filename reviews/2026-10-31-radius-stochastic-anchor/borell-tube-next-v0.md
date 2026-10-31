@@ -105,3 +105,54 @@ Get a scoped independent source/statement/falsification gate before proof.
 This plan is outside the current SA and SP packets and supplies no premise.
 No Skorohod development/contact/HPC/companion/sourcefix/TeX/PDF/wiki/bib/
 publication action. Original source normalization/sharp/exactlimit OPEN.
+
+## Later finite-profile variational idea, also UNREVIEWED
+
+This is a second proposal to screen only after the operator-upper mechanism.
+It is NOT an adopted comparison and supplies no premise above.
+For finite nonnegative occupation labels k_i in the RAW Hilbert space,
+nonnegative Gram entries C_ij=<k_i,k_j>,kinetic costs b_i>=0 and weights
+ell_i>0,consider
+ sup_phi [2sum_i ell_i sqrt((<phi,k_i>-b_i)_+)-||phi||^2/2].
+The proposed reduction is a maximum over active subsets A,including the
+empty subset with value0,of the candidate dual value
+ inf_(w_i>0,i inA)
+       [sum_i ell_i^2/w_i-sum_i w_i b_i+(1/2)sum_(i,j)w_i C_ij w_j].
+No covariance inverse is used; Gram matrices may be singular.
+
+A possible proof mechanism,NOT a completed proof: project phi onto the
+finite label span; on a chosen active subset impose <phi,k_i>>=b_i.
+If each retained C_ii>0 and C_ij>=0,the positive sum of labels gives strict
+feasibility. An active boundary might be excluded by a small positive
+label perturbation (square-root gain versus linear quadratic-cost change).
+An interior maximizer would satisfy phi=sum w_i k_i with positive
+w_i=ell_i/sqrt(<phi,k_i>-b_i),and scalar AMGM would give the dual equality.
+Every existence,boundary,active-subset and interchange step needs a proof
+and exact small-matrix falsification before use. Zero labels must be
+handled separately,not divided by their zero Gram diagonal.
+
+If that equality is correct,entrywise increase of a NONNEGATIVE Gram matrix
+would increase the dual expression for every positive w and hence its
+infimum/max-over-subsets. This concerns an OPTIMIZED DETERMINISTIC occupation
+score,NOT monotonicity of arbitrary-phase wave covariance. Physical labels
+would be k_i=(1_Ii/|I_i|)m_R f_i^2 with real smooth compact unit-L2 f_i,
+b_i=||grad f_i||2^2 (FULL kinetic cost),ell_i=|I_i|. Nonnegative temporal
+K and physical Gamma suggest masked entries <=unmasked entries. All actual
+H-membership,covariance normalizations and strict/nonzero cases need gates.
+
+The infinite-time/Rayleigh consumer is the dangerous part: Jensen or a
+finite grid is not the original integrated rate. Optimizers change with
+the grid. A proposed way forward is uniform scalar-time approximation via
+U3 tensor bounds,coercivity giving a control-norm bound independent of the
+grid,and density of smooth positive occupation controls for the existing
+LOWER class. The corresponding unmasked deterministic E mean operator
+would need its own bounded construction (global H^s product),not an
+unmasked Gaussian operator or instantaneous random field. Do not infer
+uniformity from pointwise time averaging or fixed-profile convergence.
+
+An auxiliary label-one variational score is NOT the actual first moment.
+Do not use p1 lower/upper constants to identify it without a separate proof;
+p1 samples need not be nonnegative,and the p2 rare-event square argument
+does not automatically apply to a signed first mean. The intended author
+energy/domain/normalization dictionary remains unresolved; no half-kinetic
+repair or sourceL identity is chosen here. No Skorohod advance is developed.
