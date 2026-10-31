@@ -1,13 +1,16 @@
 # Fixed-mask Young evolution on Sobolev phases plus constants
 
-COMPLETE CANDIDATE, not adopted before independent full proof review.
+REVISED COMPLETE CANDIDATE, not adopted before independent full proof review.
+Scientific v1 returned PASS_WITH_NOTES/MEDIUM, below the required HIGH gate;
+its receipt/report and original frozen proof are retained. This revision
+expands the two compressed arguments identified by that review.
 This applies known Banach Young calculus to the SAME masked source equation.
 Full original all-dimensional sharp second-moment goal remains ACTIVE.
 
 ## 1. Scope, named inputs and the exact new consumer
 
 Use original H:homog, d=1,2,3; a in(0,1); alpha+a<2;
-0<alpha<d or alpha=d=1. Choose the freely specified real smooth mask
+0<alpha<d or alpha=d=1. Choose the freely specified real EVEN smooth mask
 m=zeta_R with values in[0,1], equal1 on B_R and supported in the closed
 ball of radius2R. Fix R,T>0 and
 
@@ -88,9 +91,8 @@ distribution convolution also defines this matrix on E plus constants.
 Consequently full-phase finite propagation holds for the TOTAL data e+c,
 even when e and c cancel locally: if e+c vanishes on the enlarged initial
 region, convolution against each translated compact kernel vanishes in
-the smaller cone. One cannot check the two summands separately. Equivalently
-localize constants with a cutoff equal1 on the enlarged region and use the
-constant kernel masses for the remainder. No operator-norm continuity of
+the smaller cone. One cannot check the two summands separately.
+No operator-norm continuity of
 S_E or S_F is claimed. This proves Y1.
 
 ## 3. Actual driver extension, including both constant columns
@@ -159,21 +161,61 @@ LEFT composition has estimate
  ||int_s^t dD(r)V(r)-D(s,t)V(s)||
            <=C_theta [D]_theta [V]_theta |t-s|^(2theta).         (6)
 
-On an interval length ell use sup||V||+ell^theta[V]_theta and fixed initial
-value. The integral map is a contraction on paths with that initial value
-when C_theta[D]_theta ell^theta<=1/4 (enlarge the constant if needed).
-It gives a unique Ctheta solution U_D(t,s) of I+int_s^t dD U_D. The local
-norm is at most2 times the initial norm. Cover any subinterval by at most
-C_T(1+||D||Ctheta^(1/theta)) such pieces. Patching and uniqueness give the
+Here are the full local and patching estimates. On an interval [a,a+ell]
+write N_ell(V)=sup||V||+ell^theta[V]_theta, and I_D(V)(t)=int_a^t dD V.
+Equation(6), applied to every subinterval [u,t], implies
+
+ sup||I_D(V)|| <= [D]_theta ell^theta sup||V||
+                         +C_theta[D]_theta ell^(2theta)[V]_theta,
+ [I_D(V)]_theta <=[D]_theta sup||V||
+                         +C_theta[D]_theta ell^theta[V]_theta.
+
+Thus, with c_theta=2max(1,C_theta),
+
+ N_ell(I_D(V))<=c_theta[D]_theta ell^theta N_ell(V).           (6a)
+
+The same estimate holds for I_(D-D')(V). Choose a driver ball K>=1 and
+ell>0 with c_theta K ell^theta<=1/4. On the complete affine Ctheta space
+of paths with fixed value V_a, V->V_a+I_D(V) preserves that value and
+is a contraction of ratio at most1/4. Its unique solution has
+N_ell(V)<=(4/3)||V_a||<=2||V_a||. This also proves uniqueness without
+a nonlinear bounded-vector-field restriction.
+
+For solutions V,V' driven by D,D' on this piece, put delta=||D-D'||Ctheta
+and W=V-V'. Subtract their equations before estimating:
+
+ W=W_a+I_D(W)+I_(D-D')(V').
+
+By(6a) and absorption of the factor1/4,
+
+ N_ell(W)<=2||W_a||+2c_theta ell^theta delta N_ell(V').        (6b)
+
+Cover [s,T] by n<=n_(K,T) pieces of lengths at most ell. On piece j, the
+second solution with initial norm B has local norm at most2^(j+1)B.
+If E_j is the difference norm at the jth left endpoint, (6b) gives
+
+ E_(j+1)<=2E_j+2^(j+2)c_theta ell^theta delta B,
+ E_j<=2^j E_0+j*2^(j+1)c_theta ell^theta delta B.
+
+The second line follows by induction, and (6b) gives the same kind of bound
+inside each piece. Short final pieces only reduce ell^theta. For evolution
+operators both initial values are I, so E_0=0 and B=1. The bound is uniform
+in the starting s and terminal t because n_(K,T) is uniform. This proves
+the claimed locally Lipschitz map into the full uniform time-triangle norm,
+including initial-difference propagation between pieces.
+
+Without restricting a driver to a prescribed K, choose ell with K replaced
+by1+||D||Ctheta. At most C_T(1+||D||Ctheta^(1/theta)) pieces suffice. Each
+piece multiplies the initial bound by at most2. Patching and uniqueness give the
 composition law and the uniform bound
 
  sup_(s<=t<=T)||U_D(t,s)||
        <= C_T exp(C_T(1+||D||Ctheta)^(1/theta)).                 (7)
 
-The same local estimate for differences, on a common partition for drivers
-in a bounded Ctheta ball, proves local Lipschitz dependence into the uniform
-norm on the time triangle. Small local increments can be made within1/2
-of I, hence invertible by a Neumann series; their products are invertible.
+The composition law follows from uniqueness and linearity under right
+multiplication by the preceding evolution. On a small piece, (6a) gives
+||U_D-I||sup<=1/3<1/2, so the local operators are invertible by a Neumann
+series; their products are invertible.
 The formula U_D(t,s)=U_D(t,0)U_D(s,0)^(-1) then gives joint operator-norm
 continuity in(s,t). Uniqueness here is in the Ctheta Young class. These
 are standard consequences of(6), not an invocation of a bounded nonlinear
@@ -216,6 +258,11 @@ that each physical operator family is operator-norm continuous. Strong
 measurability of its uniform differences follows from the bounded linear
 map V(t,s)->S_F(t)V(t,s)S_F(-s) into the bounded-family supremum-norm space.
 
+Moreover P_A(t,s)z-S_F(t-s)z belongs to iE: write it as
+S_F(t)(U_A(t,s)-I)S_F(-s)z and use(8) and S_F(t)iE=iE. In particular
+the actual raw and source phases starting from e0 differ from the free
+constant phase e0 by a global E phase on every fixed horizon.
+
 For fixed rho, (5) identifies the driver primitive. Young Riemann sums on
 a state give
 
@@ -231,40 +278,77 @@ Ct(F) solution follows by the bounded-coefficient Picard argument (or
 Gronwall), since S_F is strongly continuous and bounded on the horizon.
 No operator-norm derivative of S_F or B(F)-valued density is assumed.
 
-For initial e0, identify its displacement with u_rho^m as follows. Iterate
-the ordinary full-phase Duhamel equation. The nth phase term has norm
-at most C_T^(n+1) B_T^n T^n/n!, with B_T=sup||B(b(r))||B(F,E), finite
-on this fixed source event. Its displacement is exactly the nth ordered
-Green-chain term X_(rho,n)^m, by the wave kernel convention. The phase
-series converges in Ct(F), hence distributionally. Its displacement series
-also converges locally uniformly to the actual continuous scalar mild
-solution u_rho^m by accepted F2's compact-cone factorial bound. Distribution
-limits agree. This identifies the displacement of P_(A^rho)(t,0)e0 with
-u_rho^m as a distribution and its continuous source version. In particular
-their smooth spatial averages agree. No point trace of H^(1/2) is used,
-and no global bound on an unmasked Gaussian field is assumed.
+For initial e0, define the full-phase Picard terms W_0(t)=e0 and
+
+ W_n(t)=int_0^t S_F(t-r)iB(b(r))W_(n-1)(r)dr, n>=1.           (9a)
+
+Induction and the simplex mass T^n/n! give
+sup_t||W_n(t)||F<=C_T^(n+1) B_T^n T^n/n!, where
+B_T=sup||B(b(r))||B(F,E) is finite on this fixed source event. The series
+converges in Ct(F) to the ordinary phase, hence its displacement converges
+as a distribution.
+
+We identify each displacement explicitly. Let X_0(t,x)=1 and set
+X_n(t)=int_0^t G_(t-r)*(b(r)X_(n-1)(r))dr as the scalar Green recursion.
+These are exactly the ordered finite-chain integrals of F2. At fixed rho,
+each finite n has Ct, spatially smooth versions: spatial derivatives may
+be placed on the smooth compact factor b(r)X_(n-1)(r) under convolution.
+The finite measure mass t-r bounds each such derivative integral on compact
+horizons. Weak continuity of the rescaled unit-wave measures gives time
+continuity. This is an induction starting with X_0=1, and uses only finitely
+many bounded derivatives of b for each fixed derivative order and n.
+
+At n=0, the displacement of W_0 is X_0. Suppose equality as distributions
+is known at n-1. Multiplication by smooth b(r) then identifies B(b(r))W_(n-1)
+with (0,f_r), f_r=b(r)X_(n-1)(r), a smooth compact spatial function. The
+displacement of S_F(t-r)i(0,f_r) is G_(t-r)*f_r. For any compact smooth
+test eta, continuous testing of the E-valued Bochner integral (9a) gives
+
+ <[W_n(t)]_1,eta>
+   =int_0^t int f_r(y) int G_(t-r)(dz) eta(y+z)dy dr
+   =<X_n(t),eta>.                                            (9b)
+
+The interchange is absolute: its integrand is bounded by
+||eta||infinity ||f_r||1 (t-r); the L1 norms are bounded on[0,T] because
+f_r is continuous with one compact support. The same positive-measure
+Fubini applies to d3 sphere measures, without introducing a density.
+This proves the induction for every n. Iteration of the scalar recursion
+shows X_n=X_(rho,n)^m with the exact chronological order and all physical
+mask factors; this is not an inference from the word 'convention'.
+
+Accepted F2's compact-cone factorial bound makes the scalar sum locally
+uniform, with limit u_rho^m. The phase sum converges in F and hence in
+distributions; by(9b) their displacement distribution limits agree.
+Thus P_(A^rho)(t,0)e0 has displacement u_rho^m as a distribution and its
+continuous source version. No low-Sobolev point trace or global bound on
+an unmasked Gaussian field is assumed.
 
 ## 6. Construct the raw average and close the exact F3 premise
 
 Fix phi>=0 real smooth compact, integral1. Define
 
- J_phi(e,c1,c2)=<e1,phi>+c1,
- Z_m(t,phi)=J_phi P_A(t,0)e0.                                   (10)
+ O_phi(e,c1,c2)=<e1,phi>+c1,
+ Z_m(t,phi)=O_phi P_A(t,0)e0.                                   (10)
 
-Sobolev duality gives ||J_phi||<=sqrt(||phi||H(-1/2)^2+1). Here Z_m is the observable called A_m in the frozen target. The raw variable
+Sobolev duality gives ||O_phi||<=sqrt(||phi||H(-1/2)^2+1). Here O_phi is J_phi of the frozen target, and Z_m is its A_m observable.
+The raw variable
 in(10) is W-measurable, since the raw driver is W-measurable and the Young
 and deterministic maps are continuous/measurable as above. It does not
 depend on an auxiliary J used to realize source cutoffs.
 
-The source averages equal J_phi P_(A^rho)(t,0)e0 by Section5. This is also
+The source averages equal O_phi P_(A^rho)(t,0)e0 by Section5. This is also
 the Bochner L2 average in F2: that average is represented by the same
-pathwise spatial integral, by F2's measurability and absolute Fubini bounds.
+pathwise spatial integral. Explicitly, F2 gives ||u_rho^m(t,x)||L2<=Q_t
+uniformly in x and joint measurability. Therefore
+E int |phi(x)u_rho^m(t,x)|dx<=Q_t||phi||1<infinity. Scalar Fubini and
+approximation by simple integrands identify the ordinary spatial integral
+with the Bochner L2 integral, whose norm is at most Q_t||phi||1.
 The all-finite-Lp uniform operator-difference convergence of Section5 gives
 
  int phi(x)u_rho^m(t,x)dx -> Z_m(t,phi) in every finite Lp,      (11)
 
 at arbitrary relative source cutoff rates. Bound the difference by
-||J_phi|| ||e0|| times the uniform physical operator difference. Thus in
+||O_phi|| ||e0|| times the uniform physical operator difference. Thus in
 particular the EXACT assumed L2 premise of accepted F3 is now established,
 on the actual retaining source space. F3 yields
 
