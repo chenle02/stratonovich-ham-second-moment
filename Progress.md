@@ -5504,3 +5504,25 @@ No actualSchattenseries/operatorpath/sourcecutoff/Young/canonicaldata/new
 moment/sourceconstant theorem. Original full all-dimensional sharp/source
 goal ACTIVE. No live reviewer/Leanjob, no officialcompanion/lease/registry/
 HPC/contact/Skorohod/TeX/PDF/wiki/publication orwhole-paper clearance.
+
+### Whole-space compact cutoff target frozen — 2026-10-30
+
+Previousgoalturn PROGRESS; currentcleanlocal/origin/<HUB>9648c95/0:0
+revalidated afterfetch, advisoryauditexit0. NEW C1 allrealSobolev compact
+cutoff K=Lambda^sigma chi Lambda^(-sigma-gamma), singularvaluesj^-gamma/d,
+auxiliaryperiodicfactorization with exactwhole-space recovery/negativeindices/
+actualFourierconstants. C2 balancedphase actualadjointswap and BOTHcompact
+envelopes, notPselfadjoint. C3 conditionalfiniteoperator compactvariance
+reduction/nonzeroWHOLE-SPACE rankonewitness, no actualCMmatching assumed.
+C4 finiteGaussianOPERATORmoment fromacceptedfiniteMATRIXtheorem viafinite-
+rankcompression/Fatou, no infiniteGaussianseries/path assumed.
+
+16actualcompact Fourierrecoveries (12nonzero/4supportzeros),150Peetre
+controls, finitefull-space Fourierkerneladjoint/swap/two-envelope algebra,
+13AUXdiagonal and3uncuttranslation controls PASS. N64maxerror3.5e-8,
+notcertifiedaccuracy orcontinuum singular-value proof. TorusONLYauxiliary,
+chi1 uncut is a negative boundarycase, nonevenchi analyticnotnumerictest.
+Eight-text statementpacket frozen BEFORElongproof. No newLeanmodule or
+71facts/18seams upgrade, no sourceCM/series/path/Young/newmoment adoption.
+Originalall-dimensional sharp/source goalACTIVE, no contact/HPC/Skorohod/
+companion/sourcefix/TeX/PDF/wiki/publication transaction.
