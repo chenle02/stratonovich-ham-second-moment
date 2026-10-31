@@ -7778,3 +7778,35 @@ Skorohod/sourcefix/TeX/PDF/wiki/bib/publication, NoRoute/pushpending.
   Borell-tube/Rayleigh transfer. Primary11.6read; no newupper theorem from
   unreviewed routeplan or finite-profile comparisonidea. Accepted GC/U/SA/SP
   scopes and source-normalization/sharp/exactlimit gaps remain explicit.
+
+## BT1-BT3 exact tube/Rayleigh target and tests frozen — 2026-10-31
+
+- Previous goal turn PROGRESS: GC/U/SA/SP exact components accepted and
+  actual research/root/GW parity recovered. Fresh focused preflight clean,
+  branchtracking0/0,<HUB>isolatedHEAD21984e2. New own BT directory only.
+- Target frozen BEFORE tests: abstract actualCM L=sqrt(delta)K,closed raw
+  meanballs/least-radius geometry,PRIMARYBorell11.6->Rayleigh integral;
+  ACTUAL E full-noise tuple/support/AWS/compactmean/restart/wavefunctional
+  eligibility and coarseYoung envelope; oldscalar tail4exp((A-M²/4)/delta)
+  and rawcontrol half-action sup identity. No sharp spectral envelope,
+  signedpositive/source dictionary or finalupper theorem asserted.
+- 36directfiniteGaussian MGF/Rayleigh cases at35/70digits;48scalar tail
+  formulas;10polynomial/exponential-cell formulas. WrongCM scaling fails
+  10moment/14tail rows; normalized doubled-action law fails8moment rows.
+ 4exact finite seen-space/kernel/linearobjective cases and symbolic tail
+  primitive4 checked. These are NOT AWS/PDE simulations or proof/enclosures.
+- V1 compared rounded28digit displays and reportedzero precisionchange;
+  preserved/adjudicated. V2 actualunrounded comparisonmax6.42816e-37,
+  still notcertified. Changedmeasurement/directwrong-action guard justified
+  rerun;no unchanged favorable retry. Zero signals labeled. JSONdelivery
+  typedroundtrip-identical105lines/max1010chars,no numbersomitted;
+  rawanddeliverydifferentbytes independentlyhashed,originalsretained.
+- Fresh carrier hashes preserve PRIMARYprinted190-191renders/excerpt;
+  originalheldPDF/TeXidentity importedfromacceptedcustody,notfreshlyrehashed.
+  OldGaussianTail/fullMathlibHolder source/type/custodybytes match accepted
+ 180bf1a/e0a6f3e. Actualnewtail/weightedHolder guards specified,all Gaussian/
+  tube/primitive/order/application steps ANALYTIC,no newcompile/factcount.
+- Statement/source gate frozen30texts+2PRIMARYimages,requiredOpus5.5/HIGH
+  beforelongproof. No BT proof/adoption yet; full all-model goal ACTIVE.
+  Expectednorm/CM spaces E ONLY; no F constantcolumn substitution or raw
+  H-valued Gaussian. No TeX/PDF/wiki/bib/contact/HPC/companion/publication.
