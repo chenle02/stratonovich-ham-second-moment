@@ -1,15 +1,16 @@
 # Finite signed occupation scores and entrywise Gram comparison
 
-UNREVIEWED COMPLETE PROOF CANDIDATE. PG1-PG2 statement/source/type gate
-scientifice9fbfef/adoption33751ad passed actualOpus5.5/HIGH,15checks,
-225.532seconds,no requiredrepairs. All9notes adjudicated before this proof.
-This note requires its OWN FULL proof/source/type/application gate. Four
-public finite algebraic certificates and a private integrated active-branch
-consumer passed local source/type/live-axiom/replay/negative controls in
-lean-progress/local-checks/positive-gram-v1/. They remain PROVISIONAL for
-paper application; analytic PG1-PG2 is not a kernel theorem. No actual
-H_I/mask/time/lower-control/sourceconstant application is asserted. In particular this note is NOT a premise of the accepted UR upper.
-Original all-model sharp/source goal ACTIVE,not replaced by this finite lemma.
+ACCEPTED at the scoped FULL analytic/source/type/finite-application gate:
+scientific4e2219d,actualOpus5.5/HIGH,26checksPASS,305.393seconds,no required
+repairs. All48five-way input bindings and63nativearchive members verified
+BEFORE optional clarity edits; all7minor findings adjudicated in
+reviews/2026-10-31-positive-gram-variational/scientific-adjudication-v1.md.
+Frozen packet proof/report unchanged. Four public finite algebraic facts
+and a private integrated active-branch consumer passed local source/type/
+axiom/replay/control and exact PG-application fidelity; evidence in
+lean-progress/local-checks/positive-gram-v1/. Whole PG1-PG2 optimization
+remains reviewed INFORMAL analysis,not a kernel theorem or a physical
+application. Original all-model sharp/source goal remains ACTIVE.
 
 ## 1. Exact statement and conventions
 
@@ -51,10 +52,12 @@ Indeed sqrt(w)>0,sqrt(wt)=sqrt(w)sqrt(t),and
  0<=(ell/sqrt(w)-sqrt(wt))^2=ell^2/w+w t-2ell sqrt(t).
 The square-root identities hold also at t=0. For ell>0,t>0,equality holds
 when w=ell/sqrt(t),equivalently t=ell^2/w^2.
-The already supplied general Mathlib weightedAMGM type also gives(1),at
-weights1/2,1/2,bases ell^2/w,w*t>=0,after the displayed nonnegative-root
-identities. Its recorded older nu-weights are provenance only. The new
-local scalar_sqrt_dual instead proves(1) directly using
+For comparison only,the older Mathlib weightedAMGM type atweights1/2 and
+bases ell^2/w,w*t gives |ell|sqrt(t) below their arithmetic mean: use
+sqrt(ell^2)=|ell| and x^(1/2)=sqrt(x) for nonnegative x. Since
+ell sqrt(t)<=|ell|sqrt(t),this also implies(1). This alternative is UNUSED;
+the recorded older nu-weights remain provenance only. The actual local
+scalar_sqrt_dual proves(1) directly using
 (w sqrt(t))^2=w^2 t and positive cancellation. Its complete printed type
 allows any real ell,with w>0 and t>=0 (including t=0); PG's ell>0 is stronger.
 No certificate is inferred merely from the older AMGM printout.
@@ -85,7 +88,7 @@ Every w with D_A(w)<=d0 satisfies,coordinate by coordinate,
                 ell_i^2/L_A<=w_i<=sqrt(4L_A/c_i).          (5)
 The box is compact and entirely inside the open positive orthant. The
 sublevel set is nonempty (it contains w0) and closed in that box because
-D_A is continuous there. A sequence approaching its infimum has a
+D_A is continuous there. A minimizing sequence taken INSIDE this sublevel set has a
 convergent subsequence in the box; its limit stays positive and continuity
 attains the infimum. Points outside the sublevel have value>d0,so this
 is a GLOBAL minimum on all positive w. In particular d_A is finite.
@@ -139,7 +142,7 @@ This remains valid if d_A is negative. It does NOT claim all outside labels
 are inactive for an arbitrary branch. Taking the largest of finitely many
 values and using(7) proves PG1.
 
-Choose a maximizing subset. If it is empty,Phi0 achieves S0. If it is
+Choose a maximizing subset. If it is empty,Phi=0 achieves S=0. If it is
 nonempty,(7)-(8) force F(Phi_A)=S=d_A,so the constructed positive conic
 combination is a global maximizer. There can then be no strictly positive
 outside contribution,but this is a CONSEQUENCE,not a premise. Ties between
@@ -211,14 +214,15 @@ Thus d_A^C<=d_A^D,by taking infima of these pointwise ordered functions.
 PG1 and the larger eligible family for D give
  S(C)=max_(A subsetJ_C)d_A^C<=max_(A subsetJ_D)d_A^D=S(D).
 This proves PG2 even when zero labels become nonzero. For example C=[0],
-D=[1],ell1,b0 gives0 versus3/2; this is an analytic example,not an added
+D=[1],ell=1,b=0 gives0 versus3/2; this is an analytic example,not an added
 numeric comparison pair. If J_C is empty,its maximum is0 and S(D)>=0.
 
 No Loewner order is needed in(10); positivity of w_i w_j is what matters.
 For C=I2,D=[1,1/2;1/2,1],D-C has eigenvectors(1,1),(1,-1) with eigenvalues
-1/2,-1/2. Both C,D are PSD/nonnegative. With ell1,b0,their scores are3
-and3*(3/2)^(1/3),respectively. In the second case the unique dualminimizer
-is symmetric,w1=w2=w,w^3=2/3,and D(w)=2/w+(3/2)w^2=3/w; individual
+1/2,-1/2. Both C,D are PSD/nonnegative. With ell_1=ell_2=1 and b_1=b_2=0,their scores are3
+and3*(3/2)^(1/3),respectively. In the second case swapping the two coordinates preserves the dual;
+uniqueness therefore forces its minimizer to be symmetric. Hence
+w1=w2=w,w^3=2/3,and D_full(w)=2/w+(3/2)w^2=3/w; individual
 branches have value3/2,so the full branch wins. This concerns optimized
 finite scores only,not arbitrary covariance or physical wave comparisons.
 
@@ -238,11 +242,11 @@ replay/4arithmeticFalse controls,with6actualtargetcalls and a private exact
 PGbranchconsumer. Fiveartifactpairs are byteidentical; fourpublicheaders
 neverchanged. Two early proof/API failures and an auditwarning run are
 preserved,with no linterdisabled. Current74acceptedfacts20seams remain;
-4newpublicfacts/newlocal seam are PROVISIONAL pending this FULL application
-review. Privateintegrationcheck is not a fifthpublicfact. No newpackage,
+4newpublicfacts/newlocal seam passed this FULL applicationfidelity gate.
+Privateintegrationcheck is not a fifthpublicfact. No newpackage,
 officialcompanion,registry/lease/HPC gate. Analytic dualcoercivity/interiormin/
 calculus/attainment/realization and wholePG1-PG2 remain unformalized.
-The entire new note still needs its FULL independent proof/application gate.
+The full analytic proof/application gate accepted exactly the stated scope.
 
 This is not an actual H_I/timeoccupation/mask-removal/positiveLOWERclass
 application. Those need new exactsource and proof gates,as the separate

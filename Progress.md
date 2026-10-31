@@ -8093,3 +8093,26 @@ Skorohod/sourcefix/TeX/PDF/wiki/bib/publication, NoRoute/pushpending.
   pinsrawlabelU2 rownormalization,noncircularremaskedfrozenrate normbound,
   L2time->H_tpositivesmoothing andmasked<=unmaskedpositiveformcomparison.
   Allnewcomparison/exactlimit links UNPROVED; ownS_2notauthorconstants.
+
+## PG1-PG2 FULL finite proof/application accepted — 2026-10-31
+
+- Scientific4e2219d,original4340 TERMINAL0,actualOpus5.5/HIGH,26checksPASS,
+  PASS_WITH_NOTES,no requiredrepairs,305.393s. Canonical parse/pass/report-
+  correspondence/fullcoverage passed.48five-waybindings BEFOREclarity/
+  promotion;63nativearchive members readbackhashed,rawreportunchanged.
+- All7optionalfindings adjudicated: AMGMabsellunusedalternative,explicit
+  notation,swap+uniquenessforsymmetricexample,minimizingsequenceinsublevel,
+  compiledFin1/2vsroutineA-reindexingcoverage,used-APIexactpinexcerpt(not
+  newcompile),outsidephysicalplan/adoptionmetadata notpremises. No repairs.
+- Kernelcorrectnessdeduplicated,actualtype/definition/PGguardfit accepted;
+ 4unchangedpublicfacts promoted:78acceptedfinitefacts21localseams. Mirror
+  preserves20oldentries74facts,addsone4factentry. Privateconsumer not5thfact.
+  No compile/numericreplay foroptionalclarity. WholePGdualminimum/attainment/
+  Gramrealization/entryinfmax acceptedINFORMALanalyticproof,notkernelPG/PDE.
+- Newfinite signed-scorepositivecone/active-subset formula andentrywiseGram
+  comparison holdforarbitraryrealHilbert/finite/zero/singular/nonnegative
+  Grams,ell>0,b>=0. ACTUALoccupation/time/mask/lowerclass/sourceconstants
+  applicationstillOPEN. AcceptedlowerclassALLsmoothpositivenonseparable
+  spacetimecontrols/allΓdims verifiedasinput; NEWphysicalcomparisonunproved.
+  OriginalallmodelsharpgoalACTIVE; no sourcefix/p1identity/Skorohod/contact/
+  HPC/companion/publicaction. Allnativejobs nowterminal; <HUB>NoRoute.

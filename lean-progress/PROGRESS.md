@@ -671,3 +671,17 @@ FULLPGsource/type/actualapplicationfidelity. Privateconsumer is integration
 evidence,notfifthpublicfact. PG1-PG2min/existence/attainment/Gramrealization
 and actualPDEoccupationapplication are ANALYTIC/opengates,notformalized.
 OfficialcompanionL0/decision4unchanged; no officiallease/registry/HPC gate.
+
+## Positive-Gram actual finite application accepted — 2026-10-31
+
+Scientific4e2219d,FULL26checks/HIGH305.393s,no requiredrepairs. Complete
+publictypes/std3axioms andACTUALPGguardapplications accepted; source/headers/
+compiledproofs unchanged. No subjectivekernelproofscore requested; analytic
+dualbarrier/minimum/calculus/attainment/realizationcheckedseparately.
+Promote4PROVISIONALpublicfacts/newlocal seam:78acceptedfinitefacts21seams.
+Privateintegratedconsumer remainsintegrationevidence,notfifthpublicfact.
+Derivedmirror appends1entry4facts,preserves20oldentries74facts exactly;
+officialL0/PROPOSED/candidateNone/lease/registry/HPC/companiondecision4stay.
+No compile/replay/numericrerun forclarity/promotion. Rawpre-appreceipt/status
+preserved,application-summary-v1 current. Kernelcertifiesfiniteconditional
+algebraONLY,notwholePGanalyticoptimization oractualoccupation/PDEapplication.

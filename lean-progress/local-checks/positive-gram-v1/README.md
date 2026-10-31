@@ -1,3 +1,14 @@
+# Local positive-Gram finite algebra seam — ACCEPTED exact application
+
+FULL scientific4e2219d,26checks/HIGH305.393s accepted complete exacttypes
+and actualPGapplications. Fourpublicsource/headers/compiledproofs unchanged;
+application-summary-v1.json is current. Kernel correctness supplied bylocal
+verification,not a modelproofvote. Fourprovisionalfacts promoted:78accepted
+finitefacts21local seams. WholePGanalyticminimum/attainment andanyphysical
+application remainoutsidekernel. No newofficialcompanion/package/gate.
+
+Historical pre-application record follows unchanged:
+
 # Local positive-Gram finite algebra seam — PROVISIONAL
 
 Four public certificates plus a private exact active-branch consumer passed

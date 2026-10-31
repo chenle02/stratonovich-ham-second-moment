@@ -443,3 +443,13 @@ Gramnonnegative/PSD/nonzerodiagonal eligibleA,strictactive->ht>=0 anddual
 minimizer->hw>0 remainanalyticapplications toreview. No minimum,global
 scoreequality,conicoptimizer,Gramrealization,inf/maxorder orphysicalmodel
 fromthiskernelreceipt. Fourprovisionalfacts only,accepted74/20 unchanged.
+
+## FP-POSITIVE-GRAM-CLOSE: exact4finite applications accepted
+
+Scientific4e2219d,FULL26HIGH305.393s acceptedinitialtype/definition/PG
+applicationfidelity. Fourunchangedpublicproofs+privateintegratedconsumer
+alreadysource/type/std3/replay/controlverified; promote4facts to78/21.
+Analyticdualcoercivity/finitecompactness/Fermat/strictconvexity/globalPG
+attainment/Gramrealization/infmax remainINFORMALanalysis. No actualH_I/
+time/mask/signed-positive/lower/sourceconstant/PDE result fromthiskernel.
+Officialcompanion andpackage/lease/registry/HPC/publicgates unchanged.

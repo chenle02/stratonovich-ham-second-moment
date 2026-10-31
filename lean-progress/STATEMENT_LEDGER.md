@@ -132,3 +132,18 @@ reviewed scientificGitblobs. No new proof/build/promotion in this inventory.
 | Name | Scope | Status |
 |---|---|---|
 | cutoff_density_split | REAL M>0,x>=M,C>=0,1<nu<2,4C<=M^(2-nu) implies Cx^nu-x²/2<=-M²/8-x²/8; no Gaussian measure or operator assertion | Local clean source/type/stdaxioms/5pairreplay/3falsevariants; COMPLETE actualGLtail application HIGH scientific180bf1a |
+
+## Positive-Gram finite core: StratonovichHAMAudit.PositiveGram
+
+| Public name | Exact application/boundary | Status |
+|---|---|---|
+| scalar_sqrt_dual | Realell,w>0,t>=0; exact2ell sqrt(t)<=ell^2/w+w*t,includingt0 | Localtypes/std3/replay/Falsecontrols; PGapplication26HIGH |
+| gram_norm_square | Finiteindex,realinnerproductspace,anysignedweights; exactnormsum^2=doubleGram | Sameexactgate |
+| active_upper_bound | Finiteactiveindex,positivew,nonnegativeinner(Phi,k)-b; halfnormcost; no minimum/selection | Sameexactgate |
+| half_weighted_entrywise_mono | Finiteindex,w>=0,Cij<=Dij; halfquadraticorder,noPSDdifference | Sameexactgate |
+
+PrivateAudit.active_consumer integratesactiveupper+GramidentitytotheEXACT
+conditionalPGbranchD_A bound; integrationevidence,notfifthpublicfact.
+Scientific4e2219d,FULL26HIGH305.393s checksactualguards/type/application
+anduncoveredPGanalyticproof. WholePGminimum/attainment/realization/PDE
+notLean-certified. Source/types/receipts inlocal-checks/positive-gram-v1/.
