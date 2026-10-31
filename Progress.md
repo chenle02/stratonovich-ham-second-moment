@@ -6269,3 +6269,23 @@ target before long proof. Raw-lower theorem is now its accepted input;
 source-energy/occupation/all-alpha bridge, sharp upper and conditional
 exact limit remain OPEN. Full original goal ACTIVE. Network NoRoute, no
 fresh parity/push/masterintegration; scientific adoption is local only.
+
+### All-dimensional U1-U4 statement packet frozen — 2026-10-31 UTC
+
+Previous turn PROGRESS: reviewed raw point lower adoptedc426e5a; actual
+new finite applications recorded64d9398. Revalidated clean worktree and
+terminal gate; no live old reviewer. New target-v2 supersedes historical
+candidate wording without changing U1-U4: global bounded raw mean,
+monotone compact-mask Rayleigh bottom, all-dimensional Radon dilation,
+positive finite auxiliary S_c=c^m S_1 and Q2>=2^m S_1. No long proof yet.
+Invariant-direction/white/fixed-mask diagnostic retained; no unmasked
+L2 ground/gap/decay or d1 rough-X promotion. Source-energy and sharp upper
+remain separate. Frozen statement packet 14completeTEXT inputs.
+
+Lean search found THREE existing dimension-free scalar consumers. Exact
+two prior/current source/type bindings match; the fourth d1-specific
+Jacobian lemma is NOT promoted. No kernel/replay/count/package transaction.
+Canonical upper source/excerpt custody rechecked current/6203ab7; only
+finite SAME-model rate imported. Opus5.5/HIGH native doctor successful;
+independent statement gate next, not theorem adoption. <HUB> NoRoute,
+isolated local/no fresh parity/integration, full original goal ACTIVE.
