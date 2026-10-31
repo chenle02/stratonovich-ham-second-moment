@@ -8006,3 +8006,15 @@ Skorohod/sourcefix/TeX/PDF/wiki/bib/publication, NoRoute/pushpending.
   exampleconstantsnotactualmodelA1. Fullproof still requiredbeforeuse.
 - PGsourcegate independentpending,not URpremise. Alloldacceptedmathematics
   retained; no newkernel/compiler/count or authorconstant/sourcefix claim.
+
+## UR complete signed-score original-moment proof prepared for FULL gate — 2026-10-31
+
+- AFTER sourcegate17HIGH/all8adjudications,completeURproof written: actual
+  sameglobalP_delta forallB,ownrawhalfacS_R; quantifiedpolynomialE-only
+  envelopeA0/A1/eta_B; fulltuplee_B->0; exactbulk/tail/lognormalizers;
+  deltafirst/Bouter on sameM_delta; originalpointGC/allchains/stationarity/
+  kappascale/zeroΓ. Fixeds_sp/rceilingchoice-dependence explicit.
+- UNREVIEWED NEWproof requiresOWNFULLOpus5.5/HIGH gate. No borrowedproof
+  statusfromBT/US/sourcefit,nor PGproposal/gatepremise. Perprecisionfinite
+  diagnosticsnotPDEproof; no newLean/compiler/count74/20/L0. Alloriginal
+  sourceintendedconstants/signedpositive/maskremoval/exactlimit remainOPEN.
