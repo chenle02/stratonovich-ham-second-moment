@@ -585,3 +585,12 @@ count73facts19seams/L0. FP-SIGNED-STATIC in BOUNDARIES.md records all rough
 form/spectral/physical-flow/mean claims as INFORMAL analysis. V1 temporal
 rangeFAIL/HIGH retained, corrected2<r<2/a. Original sharp-point/source and
 companion decision4 remain OPEN. No package/registry/lease/HPC transaction.
+
+## Existing powermean: physical mean-product upper application — 2026-10-31
+
+Scientificb1d8e5b/adoption2a22cc2,21checks/HIGH232.556seconds. COMPLETE
+powermean type reused with actualr/rnu exponents, nonnegative data/cardinal
+and positive-zero guards; no new source/compiler/kernel/count73facts19seams/
+L0. FP-MEAN-PRODUCT boundary distinguishes actual polynomial-control-ball
+mean-product upper INFORMAL analysis from the scalar finite formal input.
+Original sharp-point/source gaps and companion decision4 stayOPEN.

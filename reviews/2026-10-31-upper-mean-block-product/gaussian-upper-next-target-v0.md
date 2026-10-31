@@ -1,10 +1,10 @@
 # Next fixed-mask Gaussian operator upper: proposed consumer only
 
-UNREVIEWED PLANNING, outside the B1-B3 full-review packet. B1-B3 full proof
-is still CANDIDATE atb1d8e5b/original68080. No Gaussian-action/upper moment
+UNREVIEWED PLANNING, outside the B1-B3 full-review packet. B1-B3 now ACCEPTED scientificb1d8e5b/adoption2a22cc2,21HIGH232.556s,
+17bindings32native members verified. No Gaussian-action/upper moment
 result supplied here. Original full sharp/source goal ACTIVE.
 
-Intended exact next claim, AFTER the current gate is adjudicated:
+Intended exact next claim, to freeze/falsify after the accepted block-product gate:
 For fixedR, let P_delta^R be the actual global raw physical Young flow
 at fast horizon1/delta, driven by g_delta A_R(W_fast), g_delta=delta^((1-a)/2).
 Use the accepted raw-block Section7 restart and current E2 fullhead+residual
@@ -62,7 +62,7 @@ No proof is claimed by these calculations. Statement/falsification/source/
 type gates still required. Scalar Gaussian action/sign/half-cost and tail
 prefactors need an exact evaluator calibration; finite-J entropy must not
 be silently sent to infinity before delta. The accepted B3 polynomial-ball
-scope is designed for this question, if it passes the current FULL gate.
+scope is designed for this question, now accepted, but the Gaussian consumer still needs its own gates.
 
 Existing fixed-mask restart does not transfer an UPPER to the original
 unmasked point moment: F3 only has masked average<=originalpoint. A future

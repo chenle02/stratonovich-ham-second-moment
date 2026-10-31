@@ -268,3 +268,21 @@ prior overbroad-r FAIL and root bubble guard preserved. No roughH2 or exact
 3/4-domain identity assumed. Original product/actiontail/globalrestart/
 growingcone/POINT/sourceconstant/normalization/exactlimit remain OPEN.
 No official companion/package/registry/lease/HPC action; decision4 pending.
+
+## FP-MEAN-PRODUCT: actual physical block upper on polynomial control balls
+
+Scientificb1d8e5b/adoption2a22cc2,21checks/HIGH232.556seconds. Existing
+Real.rpow_sum_le_const_mul_sum_rpow_of_nonneg COMPLETE printed type and
+ACTUAL exponentr onf=e, exponentr/nu onf=e^nu, nonnegative values,n>=1,
+positive reciprocal powers and zero guards passed FULL application review.
+No new source/compiler/kernel/module/count:73facts19seams/L0 unchanged.
+
+Explicit free/primitive/Young polynomialB budgets, actual signed frozen
+physical endpoint, compact-field error convergence, mean-good/bad/true-last
+bounds, deterministic continuous supremum and delta-beforeB product upper
+on EVERY polynomial radiusM0B^m are reviewed INFORMAL analytic interfaces.
+No formal Bochner/spectral/Young/operator/SPDE result from finite powermean.
+Existing fixed-mask rawrestart fit checked (fullblock=head+residual), not
+new point-upper transfer. Gaussian bulk/tails/action, growingcone/POINT/
+sourceconstants/normalization/exactlimit remainOPEN. Official companion
+and package/registry/lease/HPC action not taken; decision4 pending.
