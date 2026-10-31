@@ -1,0 +1,199 @@
+{
+  "provider": "claude",
+  "started_utc": "2026-10-31T00:15:00.757835+00:00",
+  "workspace": "${HOME}/.local/state/Le-AI-Lab/stratonovich-compact-sobolev-scientific-v1/workspace",
+  "source_revision": "6718a16807b095d87cfebd3898977bd46ca3cbbd",
+  "input_hashes": {
+    "notes/actual-two-variance-forms.md": "4612e97d4b8e35af8a30d14592cf022159ace3072f75d2e2e5c685fb9fa03e9a",
+    "notes/compact-sobolev-cutoff.md": "389d5b25106040ba339447ce98a20200bc1d61bc54f7902f6abb224896b72b6a",
+    "notes/finite-gaussian-schatten.md": "76e1e1583ea9de2356247358b2624f2a9890d5733efb6c9f48b1e6c05bf80b35",
+    "reviews/2026-10-30-compact-sobolev-cutoff/canonical-model-context.txt": "a54e4415738a71f9bf2d37c83a6d1c7f50026eb6c03e902af0a485007dbeb06b",
+    "reviews/2026-10-30-compact-sobolev-cutoff/check-diagnostics-v2.py": "214b5f69e9ce582b474c4a8ffb5cd388e4a8a2b32a98addbabad3b2816526e6d",
+    "reviews/2026-10-30-compact-sobolev-cutoff/check-diagnostics.py": "b8facbd62227a4dce6f0e0792f908ca74d67363eddbfafb3640c005604068be5",
+    "reviews/2026-10-30-compact-sobolev-cutoff/diagnostics-v1.json": "adfb20c62caa7f5cf57a084e92d1e98085168643b0fde67d3037ba92d966ecab",
+    "reviews/2026-10-30-compact-sobolev-cutoff/diagnostics-v2.json": "b02c4a64fd31230d84c2e9c5586739855df8cc701615abfce623f406778236df",
+    "reviews/2026-10-30-compact-sobolev-cutoff/falsification-v1.md": "613cad68eeb1aad814a019be52cf9590364f570c0fe28ec21594a19c995c1029",
+    "reviews/2026-10-30-compact-sobolev-cutoff/scientific-worker-honesty-v1.md": "4d51f821693b3cd7b54cc1d832d8dea1e511463cd78e99642a9fadcff056cc06",
+    "reviews/2026-10-30-compact-sobolev-cutoff/statement-adjudication-v1.md": "86008f933deb059b2b747a082004116d665f644ec13ab06582c05508ee87ae1e",
+    "reviews/2026-10-30-compact-sobolev-cutoff/target-v1.md": "b1ff718196b01deddc6ee6bee2566a8b9fb7eef711b9eba5ffd426e2629e0554",
+    "reviews/2026-10-30-compact-sobolev-cutoff/worker-honesty-v1.md": "def3ccdfc8562a91387449e730eb8dfffbda6a4968a34d50d45a3006a20cea76"
+  },
+  "target": "notes/compact-sobolev-cutoff.md",
+  "claude_account": "<removed>",
+  "review_contract_sha256": "c86e780c0156aa6731ee695ebf40adff3f5c3cf844fded00ee71f184a79775a5",
+  "effort_requested": "high",
+  "resumed_from": null,
+  "resume_mode": null,
+  "resume_binding": null,
+  "min_confidence": "high",
+  "scientific_verdict": "PASS_WITH_NOTES",
+  "accepted": true,
+  "report_contract_schema": "subscription-review-report/1",
+  "report_legacy_mode": null,
+  "legacy_resume_binding": null,
+  "diagnostics": [],
+  "required_sources_sha256": "da57c9413bc0a4df0832f42685552ea388fa54eecca090fde4179cca55f525fb",
+  "required_sources_workspace_copy": ".review/required-sources.json",
+  "workspace_preflight": {
+    "schema": "le-ai-lab.review-workspace-preflight/1",
+    "scanned": "review contract (--prompt-file)",
+    "references": {
+      "notes/compact-sobolev-cutoff.md": [
+        "notes/compact-sobolev-cutoff.md"
+      ]
+    },
+    "waived": [],
+    "missing": [],
+    "required_sources_copy": ".review/required-sources.json"
+  },
+  "runtime_preflight": {
+    "effective_version": "2.1.304",
+    "cli_version": "2.1.304 (Claude Code)",
+    "image_requirements": false,
+    "supported_versions": [
+      "2.1.299",
+      "2.1.300",
+      "2.1.301",
+      "2.1.302",
+      "2.1.303",
+      "2.1.304",
+      "2.1.314"
+    ],
+    "supported": true
+  },
+  "cli_version": "2.1.304 (Claude Code)",
+  "executable": "${HOME}/.local/state/Le-AI-Lab/swe-white-time-resume-20261024/runtime/node_modules/@anthropic-ai/claude-code-linux-x64/claude",
+  "executable_requested": null,
+  "executable_effective": {
+    "path": "${HOME}/.local/state/Le-AI-Lab/swe-white-time-resume-20261024/runtime/node_modules/@anthropic-ai/claude-code-linux-x64/claude",
+    "version": "2.1.304 (Claude Code)"
+  },
+  "read_ledger_format_supported": true,
+  "auth": {
+    "authMethod": "<removed>",
+    "apiProvider": "firstParty",
+    "subscriptionType": "<removed>",
+    "email": "<account email removed>"
+  },
+  "model_requested": "claude-opus-5-5",
+  "command_without_prompt": [
+    "${HOME}/.claude/bin/claude-acct",
+    "run",
+    "<account removed>",
+    "--print",
+    "--model",
+    "claude-opus-5-5",
+    "--effort",
+    "high",
+    "--disable-slash-commands",
+    "--strict-mcp-config",
+    "--mcp-config",
+    "{\"mcpServers\":{}}",
+    "--permission-mode",
+    "dontAsk",
+    "--permission-prompts",
+    "none",
+    "--output-format",
+    "stream-json",
+    "--verbose",
+    "--tools",
+    "Read,Grep,Glob",
+    "--allowedTools",
+    "Read,Grep,Glob",
+    "--agents",
+    "${HOME}/.local/state/Le-AI-Lab/stratonovich-compact-sobolev-scientific-v1/claude-reviewer.json",
+    "--agent",
+    "artifact-reviewer",
+    "<stdin: prompt.txt without its final newline>"
+  ],
+  "prompt_transport": "stdin",
+  "prompt_bytes": 5890,
+  "prompt_sha256": "ecdb2aedcae75c72b4d85ce6a36e43960cfa0759c488ee65926ab6bc3ce8172d",
+  "transport_exit_code": 0,
+  "transport_ok": true,
+  "model_actual": "claude-opus-5-5",
+  "session_id": "b32a810b-6c9a-4c3b-8e94-9a9d391d462b",
+  "usage": {
+    "input_tokens": 6,
+    "cache_creation_input_tokens": 67549,
+    "cache_read_input_tokens": 69446,
+    "output_tokens": 32345,
+    "output_tokens_details": {
+      "thinking_tokens": 24775
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 67549,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 30637,
+        "cache_read_input_tokens": 46213,
+        "cache_creation_input_tokens": 24540,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 24540
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "provider_error": false,
+  "terminal_subtype": "success",
+  "tools_actual": [
+    "Read",
+    "Grep",
+    "Glob"
+  ],
+  "actual_route_verified": true,
+  "candidate_hashes_unchanged": true,
+  "raw_report_sha256": "5025a5464c9bb28a8bb8ead32c129e098deb510959d6a8b64435fe8ad4de9ccd",
+  "status": "review-complete",
+  "confidence": "high",
+  "report_interpretation": {
+    "contract_schema": "subscription-review-report/1",
+    "report_schema": "subscription-review-report/1",
+    "legacy_mode": null,
+    "normalized_verdict": "PASS_WITH_NOTES",
+    "normalized_confidence": "high",
+    "normalized_check_verdicts": [
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS_WITH_NOTES",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS_WITH_NOTES",
+      "PASS"
+    ]
+  },
+  "report_sha256": "17aa57acfb8ea7dfb0055fe6bf6231a5186c6e4c90c891677ac0a2c340d60fad",
+  "report_text_format": "bare",
+  "report_body_sha256": "5025a5464c9bb28a8bb8ead32c129e098deb510959d6a8b64435fe8ad4de9ccd",
+  "finished_utc": "2026-10-31T00:19:46.124402+00:00",
+  "elapsed_seconds": 285.366,
+  "transport_events_sha256": "6ce1d7b4040c6a6c53d257d47e30ef726653156476c894e291b57ea38dead30b",
+  "transport_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "read_ledger_sha256": "0788cadf4a3c84718ac77c65cd2fa61d1118247757ec65dac9c179b8a484f14c",
+  "coverage_verified": true
+}

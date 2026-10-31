@@ -1,6 +1,8 @@
 # Whole-space compact Sobolev cutoffs and finite Gaussian operator sums
 
-COMPLETE CANDIDATE, not adopted before independent full proof review.
+ACCEPTED internal compact-cutoff and finite-operator result: native
+Opus5.5/high full review, PASS_WITH_NOTES/HIGH, scientific6718a16;
+see the2026-10-30-compact-sobolev-cutoff packet and adjudication.
 The spatial state stays on R^d. A periodic box is used only to factor a
 compactly supported multiplication operator, with exact recovery below.
 This note constructs no actual source family, infinite Gaussian series,
@@ -42,7 +44,7 @@ entries, and set
 
 **Proposition 2.** Pchi is bounded. If U(v,w)=(w,v), then Pchi*=U Pchi U,
 Kin=U Kout U, and Kout,Kin are compact. For p>=1,p gamma>d they have equal
-S_p norms. For p>=2 define
+S_p norms. For p>=2 with p gamma>d define
 
  B_out=Pchi D_gamma^2 Pchi*=Kout Kout*,
  B_in =Pchi* D_gamma^2 Pchi=Kin Kin*.
@@ -149,6 +151,7 @@ for EVERY real r,
  Ppsi:H^r(R^d)->H^r(T_L),       Echi:H^r(T_L)->H^r(R^d)             (14)
 
 bounded. All constants can depend on the fixed cube and cutoffs.
+Fix one such pair L,psi for chi; the constant in (2) uses these choices.
 
 Schwartz functions are dense in H^r(R^d), by smooth compact approximation
 of the weighted Fourier L2 function; torus polynomials are dense by their
@@ -230,7 +233,7 @@ The physical J0 coordinates give
 Since U commutes with D_gamma, Kin=U Kout U. The two blocks of Kout are
 K_(1/2,gamma) and K_(-1/2,gamma), so Proposition1 proves compactness and
 S_p membership. The spectrum of the squared absolute value of a block
-diagonal compact operator is the union of its block spectra, giving
+diagonal compact operator is the multiset union, with multiplicity, of its block spectra, giving
 
  ||Kout||_Sp^p=||K_(1/2,gamma)||_Sp^p+||K_(-1/2,gamma)||_Sp^p.
 
@@ -320,7 +323,7 @@ X is operator-norm continuous, each singular value is continuous, and
 the norm power is their nonnegative measurable sum. A second scalar Fatou
 in probability and(21) prove(7). In particular this extended norm is
 finite almost surely. No assumed S_p-Bochner convergence or infinite-
-series theorem entered this argument. Under C3, finite sums are also in
+series theorem entered this argument. Under Proposition3, finite sums are also in
 S_p by its usual vector-space property, but the proof did not need to
 assume that membership in order to obtain the uniform moment estimate.
 This proves Corollary4.
@@ -345,7 +348,7 @@ max(||wtilde||^2||D_gamma^-1 vtilde||^2,
     ||vtilde||^2||D_gamma^-1 wtilde||^2). This is a genuine nonzero
 whole-space witness with the Sobolev adjoint covector. It does not identify
 an actual Cameron-Martin/source family. Without a plateau such a witness
-need not exist; C3 remains a conditional assertion, possibly trivial.
+need not exist; Proposition3 remains a conditional assertion, possibly trivial.
 
 Conversely the uncut operator Lambda^-gamma on L2(R^d) is noncompact.
 Take f with Gaussian Fourier transform and g=Lambda^-gamma f, nonzero

@@ -1,0 +1,138 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "notes/compact-sobolev-cutoff.md: lines 1-385 (full)",
+    "notes/actual-two-variance-forms.md: lines 1-412 (full)",
+    "notes/finite-gaussian-schatten.md: lines 1-236 (full)",
+    "reviews/2026-10-30-compact-sobolev-cutoff/target-v1.md: lines 1-90 (full)",
+    "reviews/2026-10-30-compact-sobolev-cutoff/falsification-v1.md: lines 1-35 (full)",
+    "reviews/2026-10-30-compact-sobolev-cutoff/worker-honesty-v1.md: lines 1-19 (full)",
+    "reviews/2026-10-30-compact-sobolev-cutoff/check-diagnostics.py: lines 1-85 (full)",
+    "reviews/2026-10-30-compact-sobolev-cutoff/diagnostics-v1.json: lines 1-377 (full)",
+    "reviews/2026-10-30-compact-sobolev-cutoff/canonical-model-context.txt: lines 1-39 (full; the file itself is an excerpt)",
+    "reviews/2026-10-30-compact-sobolev-cutoff/statement-adjudication-v1.md: lines 1-21 (full)",
+    "reviews/2026-10-30-compact-sobolev-cutoff/check-diagnostics-v2.py: lines 1-85 (full)",
+    "reviews/2026-10-30-compact-sobolev-cutoff/diagnostics-v2.json: lines 1-377 (full)",
+    "reviews/2026-10-30-compact-sobolev-cutoff/scientific-worker-honesty-v1.md: lines 1-24 (full)",
+    "Read plan only, no read credit: .review/required-sources.json: lines 1-41 (full)"
+  ],
+  "checks": [
+    {
+      "claim": "C1a. The setting is the actual R^d spatial state for d=1,2,3 with all real indices, unitary Fourier transform and Lambda as a norm multiplier only.",
+      "verdict": "PASS",
+      "reason": "Sections 1-3 keep the operator on L2(R^d). The norm ||<xi>^r hat f||_2 is used for every real r. Line 14 keeps the wave massless. J=(F directsum F)J0 agrees with Section 1 of the accepted actual-variance note and is unitary. Nothing in the argument is limited to d<=3 or to a sign of sigma."
+    },
+    {
+      "claim": "C1b. The Peetre bound (8) holds with constant 2^(|r|/2) for both signs of r.",
+      "verdict": "PASS",
+      "reason": "Rechecked: 1+|x|^2 <= 2(1+|y|^2)(1+|x-y|^2). The case r<0 follows by swapping x and y. The rapid decay of <z>^|r||hat phi(z)| uses only integration by parts on the smooth compact phi, and no smoothness of the absolute value is used."
+    },
+    {
+      "claim": "C1c. The uniform lattice sum (9) and the mixed counting/Lebesgue Schur bound sqrt(M1 M2) are valid.",
+      "verdict": "PASS",
+      "reason": "For a centered y, |y-ak|>=a|k|/2 when |k|>=sqrt(d), so <y-ak> >= min(1,a/2)<k>. Dyadic shells give a convergent sum for N>d. Weighted Cauchy-Schwarz and Tonelli give the Schur bound on either measure pairing. Rows of (12) and (13) are the L1 integral of a rapidly decreasing function, and columns are its translated lattice sum, or the reverse depending on the kernel."
+    },
+    {
+      "claim": "C2a. The torus kernels (11)-(13) have exact constants L^(-d/2) with no extra c_d.",
+      "verdict": "PASS",
+      "reason": "Recomputed. For (11), the int psi e^(-izx) dx factor equals c_d^-1 psihat(z), which cancels c_d from inversion of u, and Fubini is trivial for Schwartz u. For (13), c_d int chi e_k e^(-i xi x) dx = L^(-d/2) chihat(xi-kappa_k). The Bessel normalizations give the ratio powers in (12)-(13) with the stated signs."
+    },
+    {
+      "claim": "C2b. The bounded extensions (14), density and distributional meanings hold, with no raw sampling of rough Fourier data.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Density of Schwartz functions and torus polynomials is correct. Extended Ppsi coefficients are pairings of u with psi exp(-i kappa.x), and extended Echi is chi times a periodic distribution. Both agree with the bounded extensions by testing. The note's treatment at lines 156-159 is terse but complete at this elementary level."
+    },
+    {
+      "claim": "C2c. Literal periodization has no alias on supp chi, and Echi I_gamma Ppsi=chi holds on all of H^(sigma+gamma)(R^d).",
+      "verdict": "PASS",
+      "reason": "psi is compact in the open cube, so the periodized translates are disjoint from Q_L and from each other. chi vanishes outside Q_L, so the Schwartz identity (15) is exact: chi psi u=chi u. Smooth convergence of the Fourier series justifies using the polynomial-defined Echi on the smooth periodic function. Both sides are bounded H^(sigma+gamma)->H^sigma, so density extends the identity, including negative indices. Hence (16) holds."
+    },
+    {
+      "claim": "C3a. The tail bound, cube choice, rank count and constants in (17)-(18) are correct.",
+      "verdict": "PASS",
+      "reason": "|k|_2>=|k|_inf>=n+1 gives (17). With n=floor(j^(1/d)/4), (2n+1)^d<=(j^(1/d)/2+1)^d<j because j^(1/d)>=3. Also n+1>j^(1/d)/4 gives (2pi(n+1)/L)^(-gamma)<=(2L/pi)^gamma j^(-gamma/d). The outer Bessel maps are unitary. ||I_gamma||<=1 gives ||K||<=M. For j<3^d, 3^gamma j^(-gamma/d)>1, so C=M max(3^gamma,(2L/pi)^gamma) is valid."
+    },
+    {
+      "claim": "C3b. The rank-approximation singular-value bound, compactness and S_p membership hold for p gamma>d, with no torus substitution or endpoint necessity claim.",
+      "verdict": "PASS",
+      "reason": "The kernel-vector argument in the span of the first j right singular vectors is correct. A norm limit of finite-rank operators is compact. The integral test gives S_p membership. The diagonal is used only as a factor of (16), never as a freewave spectrum or state. Line 359 explicitly disclaims endpoint necessity."
+    },
+    {
+      "claim": "C4a. A_sigma is bounded, and A_sigma*=A_-sigma holds for real, not necessarily even, chi.",
+      "verdict": "PASS",
+      "reason": "The kernel c_d(<xi>/<eta>)^sigma chihat(xi-eta) satisfies the Lebesgue Schur bound. L2 duality on Schwartz functions plus density gives the Hilbert adjoint. The kernel check uses chihat(-z)=conj chihat(z) only, so evenness is not needed."
+    },
+    {
+      "claim": "C4b. Pchi=diag(A_(1/2),A_(-1/2)), Pchi*=U Pchi U, and Pchi is not assumed selfadjoint or a projection.",
+      "verdict": "PASS",
+      "reason": "Direct composition of J0, Dchi and J0^-1 gives the diagonal. It also agrees with the accepted Dchi^*E formula at s=1/2 after conjugation by J0, which yields diag(A_(-1/2),A_(1/2)). Pchi is never treated as selfadjoint or idempotent, and the finite-sample control's nonselfadjoint discrepancy is consistent with this."
+    },
+    {
+      "claim": "C4c. Kin=U Kout U, the two blocks, equal norms, correct envelopes, spectrum transfer and trace powers (4) hold.",
+      "verdict": "PASS",
+      "reason": "U commutes with D_gamma. The blocks of Kout are K_(1/2,gamma) and K_(-1/2,gamma) on Schwartz inputs and hence by extension. Kout Kout* and Kin Kin* expand to B_out and B_in. Eigenspaces transfer isometrically between K*K and KK* at positive eigenvalues, and block singular values combine as a multiset."
+    },
+    {
+      "claim": "C5a. The compact positive-order lemma, minmax domination and trace-power comparison are valid without any false A^m<=B^m step.",
+      "verdict": "PASS",
+      "reason": "||(1-Q_n)A^(1/2)||^2=||(1-Q_n)A(1-Q_n)||<=||(1-Q_n)B(1-Q_n)||->0 gives compact A. The minmax proof by a j-dimensional eigenspan and by intersection with the complement of the first j-1 eigenvectors is correct. Summing scalar powers gives Tr A^t<=Tr B^t, and no operator-power order is used."
+    },
+    {
+      "claim": "C5b. Conditional localization, congruence, both variance bounds, compact S_p membership of each Z_l and the C=0 case hold.",
+      "verdict": "PASS",
+      "reason": "Pchi Z=Z gives Vout=Pchi Vout Pchi*<=C B_out. Z=Z Pchi gives Vin=Pchi* Vin Pchi<=C B_in. Equations (19) and (4) give (6). Z Z*<=Vout gives compact Z through spectral tails and s_j(Z)^2<=lambda_j(Vout), hence ||Z||_Sp^p<=Tr Vout^(p/2). C=0 forces all Z_l=0."
+    },
+    {
+      "claim": "C6a. The whole-space rank-one witness is nonzero, compact inside the plateau, uses the correct dual Sobolev covector and is limited to plateau chi.",
+      "verdict": "PASS",
+      "reason": "Pchi vtilde=(Lambda^(1/2)chi v,0)=vtilde and Pchi* wtilde=(Lambda^(-1/2)chi f,0)=wtilde. Therefore both localizations of Z hold. Z Z* and Z* Z are as stated. The weighted bound |<x,a>|<=||D_gamma x|| ||D_gamma^-1 a|| gives (5) with the displayed max constant. wtilde corresponds to the physical E pairing with f. No source family is claimed, and the non-plateau wording need-not-exist is correctly cautious."
+    },
+    {
+      "claim": "C6b. The uncut Lambda^-gamma negative control is analytic: translations plus decaying autocorrelation.",
+      "verdict": "PASS",
+      "reason": "g has Fourier transform <xi>^-gamma times a Gaussian and is Schwartz. Bessel multipliers commute with translation. The autocorrelation is the Fourier transform of the Schwartz function |hat g|^2 and decays. A large spacing gives pairwise squared distance at least ||g||^2 from a bounded input set, so there is no Cauchy subsequence. Finite gaps are not the proof."
+    },
+    {
+      "claim": "C7a. The finite matrix theorem N1 is used only on finite Q_n compressions, with strong Q_n convergence, correct congruences and minmax, and no factor 2.",
+      "verdict": "PASS",
+      "reason": "The accepted theorem was reread and its proof chain and Section 5 arithmetic rechecked; its average-of-traces form is correct. In (20) the difference is the positive sum Q_n Z_l(1-Q_n)Z_l* Q_n, and the input side is analogous. lambda_j(Q_n V Q_n)<=lambda_j(V) follows by restricted Rayleigh subspaces. The same real Gaussians and even p=2m are used. Bounding both traces by a common bound before averaging gives (21) exactly."
+    },
+    {
+      "claim": "C7b. The operator-norm limit for compact X, singular-value Lipschitz bound, extended-norm measurability and two Fatou steps give (7).",
+      "verdict": "PASS",
+      "reason": "Q_n F Q_n->F in norm for finite-rank F, and projection norms are at most 1, so Q_n X Q_n->X for compact X while Q_n need not converge in norm. The inf-sup formula gives the Lipschitz bound. The Gaussian coordinate map to X is norm continuous, so each s_j and the nonnegative sum are measurable. Fatou in j and then in Omega gives (7). No S_p-Bochner limit or infinite series is used."
+    },
+    {
+      "claim": "C8. Numeric controls are accurately described: classes, counts, v1 versus wider-psi L14 v2, trivial zeros, even chi only, finite-grid algebra, auxiliary diagonal, no certified accuracy and no continuum proof.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Static reading confirms: 16 recoveries, of which 4 at x=2.5 are zero; 150 Peetre controls from 6 r values times 25; 13 lattice rows from 3+5+5; 5 frequency nodes with even-chi quadrature; 3 translation gaps; precision 40. v1 has psi=1 on [-2,2], exactly supp chi, in L=10. v2 has psi=1 on [-3,3] with support [-6,6] in L=14. Recorded maximum N=64 errors are 3.425e-8 and 9.098e-10. Hand samples of the recovery targets and of the d=1 L=14 diagonal values match. Scripts were not re-executed; the note correctly assigns them no proof role."
+    },
+    {
+      "claim": "C9. Input scopes and new applications are exact, and no out-of-scope claim is made; the original goal remains ACTIVE.",
+      "verdict": "PASS",
+      "reason": "The only imported research theorem is finite-gaussian-schatten Theorem 1, applied to finite complex matrices with even p. Actual-variance material contributes coordinates and adjoint context only, not an input to any proposition. The note and packet disclaim actual CM family, tails, series, paths, Young flow, source cutoff, canonical data, new moment, source constant, Lean upgrade, companion, HPC, contact, Skorohod, publication and whole-paper clearance, and keep the original goal active."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Lines 323 and 348 use the label C3, which belongs to target-v1.md. The note's own label is Proposition 3. The meaning is recoverable, and the optional clarification is to use the note's numbering.",
+      "Proposition 2 and (4) leave p gamma>d implicit in the p>=2 sentence. The trace identity also holds as an extended-valued identity, so nothing fails, but finiteness requires that condition.",
+      "Lines 232-235 say the block spectra form a union. This must be read as a multiset union with multiplicity for the S_p sum formula, which is the evident intent.",
+      "Line 71's phrase that physical observation cutoffs have a plateau is contextual. Its visible support is the scoped chi=1 on B_(2R+T+1) in the actual-variance note. No theorem depends on this remark.",
+      "Diagnostics bookkeeping: both scripts assert psi=1 only at integer nodes, so the v2 plateau neighborhood is analytic from the cutoff formula, not a script test. The v1 JSON scope string says 15 or fewer while the actual diagonal count is 13, which is corrected in v2. falsification-v1 says about 3.5e-8 while the recorded v1 maximum is 3.4252e-8; the proof note quotes neither number. None of these affects any analytic claim.",
+      "Constants in Proposition 1 implicitly depend on the fixed L and psi, as permitted by target-v1.md and stated at line 151. The subscript C_(chi,sigma,gamma,d) is meaningful only after those choices are fixed by chi."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This AI review is a hand-analytic independent check of the frozen packet. It is not human verification, a novelty audit, formal verification or a whole-paper certificate.",
+    "No execution tool was used: check-diagnostics.py and check-diagnostics-v2.py were read statically and not rerun, and the JSON outputs were only hand-sampled. They carry no proof weight in the note.",
+    "Source revision 6718a16807b095d87cfebd3898977bd46ca3cbbd and the packet's custody, hash, native-archive, model-route and prior-gate statements could not be independently verified, because the workspace is not a git repository and the check was limited to reading the listed files.",
+    "Accepted status of the two input notes was taken from the packet as a scope label. Theorem 1 of the finite note was rechecked by reading its proof, while the actual-variance estimates were not needed as inputs and were checked only for coordinate and adjoint consistency.",
+    "The conditional Proposition 3 and Corollary 4 are verified only under hypotheses (5). Whether any actual Cameron-Martin or source family satisfies those hypotheses is outside the note and was not assessed."
+  ]
+}

@@ -5546,3 +5546,25 @@ No torusstate/model substitute, no A^m<=B^m, no actualCMfamily/series/path/
 Young/sourcecutoff/newmoment inference. Thirteen-text FULLscientificpacket
 frozen; no newanalytic adoption before fullgate.71localfacts/18seams unchanged,
 originalfullgoalACTIVE,no sourcefix/contact/HPC/Skorohod/companion/TeX/PDF/wiki.
+
+### Whole-space compact cutoff and finite-operator moment adopted — 2026-10-30
+
+Full native Opus5.5/high19checks PASS_WITH_NOTES/HIGH285.366s,
+13completeinputs/no requiredrepairs. All13live/frozen/git6718a16 bindings
+and28nativearchive members verified before adoption edits; rootcanonical
+report/correspondence/readcoverage checks pass. Six minor conditions/labels/
+constant/diagnostic notes adjudicated, no estimates or exactRd recovery
+changed. Direct validJSON, no formatrecovery/retry/confidencechange.
+
+ACCEPTED notes/compact-sobolev-cutoff.md: allrealindices whole-spacecompact
+K_sigma,gamma, exactauxiliarybox Fourierfactorization/negativeindices,
+s_j<=Cj^-gamma/d, balancedadjointswap andBOTHcompactenvelopes, conditional
+finiteZvariance tracepowers viaMINMAX, finiteGaussianOPERATORmoment from
+finiteMATRIXcompression/Fatou. No torusstate/model substitution, nofalse
+A^m<=B^m. Nonzeroactualwhole-space rankonewitness onlyunderchi plateau.
+
+Nextactualtest-noisebasis/CMcoefficient smoothing/gain/finitepropagation and
+uniformfiniteprojection variance matching remain OPEN, as do compacttail/
+Gaussianseries/timepath/Young/source/canonicaldata/newmoment/sourceconstant.
+Original full all-dimensional sharp/source goal ACTIVE,71facts/18seams
+unchanged. No newLean/companion/HPC/contact/Skorohod/sourcefix/TeX/PDF/wiki.
