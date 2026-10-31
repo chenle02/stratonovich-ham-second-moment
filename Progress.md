@@ -6755,3 +6755,9 @@ zero-CM/anchor/measurability/tail integration need independent statement
 then full proof/application gates. No nonlinear-product/growingcone/original
 point upper from it.73facts19seams/L0 unchanged, no new kernel/package/
 HPC/contact/Skorohod/sourcefix/TeX/PDF/wiki/bib/publication. Full goalACTIVE.
+
+Residual-exponential target-v2 adds explicit actual Gaussian-law support/
+CM quotient/abstract-Wiener/measurability/zero-case obligations before
+statement gate. Rank-one18controls unchanged, no rerun or theorem from
+them. C1-C3 native35+41archive members reverified and canonical TeX SHA
+unchanged. Source/point-upper/fullgoal stillOPEN; no new kernel/count.
