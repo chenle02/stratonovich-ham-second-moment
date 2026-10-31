@@ -1,6 +1,10 @@
 # Canonical source convergence in the masked operator-driver norm
 
-COMPLETE CANDIDATE, not adopted before independent full proof review.
+ACCEPTED after independent Opus5.5/HIGH full proof review: ten checks,
+PASS_WITH_NOTES, no required repairs. See the scientific adjudication in
+reviews/2026-10-30-source-operator-convergence/. The frozen scientific
+candidate is retained at revision da9d464; the changes below clarify the
+five minor findings without replacing an estimate or construction.
 This concerns LINEAR Gaussian first drivers. It proves no nonlinear Young
 flow, canonical-solution identity, pointwise Sobolev evaluation or new
 solution-moment asymptotic.
@@ -224,6 +228,15 @@ by smooth time partitions on a compact test support, so Phi extends as
 an isometry with CLOSED range. The coordinate r is an auxiliary integral
 variable, not a newly assigned value of raw negative-time noise.
 
+For a general smooth compact F, (12) also represents this extension almost
+everywhere. Indeed choose finite smooth tensor approximants F_n on one
+fixed support, converging uniformly there. The physical covariance form
+against the tempered Radon Gamma bounds their spatial H_Gamma errors
+uniformly in time by a constant times their uniform errors. For fixed
+lambda,r, the time integral in (12) therefore converges in H_Gamma.
+Meanwhile Phi F_n converges in G by the isometry; a subsequence converges
+almost everywhere as H_Gamma-valued functions. Its two limits coincide.
+
 Let P be orthogonal projection in G onto Phi H. On a product extension
 of the original probability space, take an independent isonormal J on
 (Phi H)perp, built from a finite/countable ONbasis and independent standard
@@ -236,6 +249,9 @@ h in H, I(Phi h)=W(h) in L2, with the actual original variable retained
 by pullback. Thus this is stronger than the author's page9 law-only
 redefinition, and is proved here rather than attributed to that paragraph.
 It need not put every cutoff into the minimal raw-W Gaussian span.
+In particular this is existence of a retaining coupling: the cutoff
+family can depend on the auxiliary J and is not asserted to be determined
+by W alone.
 For the countable fixed basis f_j, the equalities hold on one common
 probability-one set. The raw finite operator paths in (1), and hence their
 Lp limits, are exactly the pullbacks of the already constructed raw paths.
@@ -278,7 +294,10 @@ convention as well as the function case. It also fixes the heat normalization
 from source(1.20). No source energy or conjectured moment constant is used.
 
 For a smooth compact spacetime test F, the Bochner G integral of F(t,x)v
-exists, and equals Q_rho Phi F: integrate the heat translates in x to
+exists, and equals Q_rho Phi F. Strong measurability of v follows from
+its G-norm continuity, obtained directly from (5) by the increment
+calculation (17) below with b=0; this calculation uses no test integration.
+Its norm is bounded on each compact parameter set. Integrate the heat translates in x to
 obtain C_epsilon F(t,.), then the time factor in(12). Applying the bounded
 linear map I:G->L2(Omega) proves that mean-square pointfield test integration
 is Y_rho(F) of(14). Matrix tests with indicators follow by raw completion
@@ -347,7 +366,8 @@ binary refinement, with at most a fixed number of adjacent edges per
 coordinate at each scale, constructs a continuous extension from dyadic
 points. Its value at any fixed parameter point agrees with the given
 Gaussian field in L2, by(17). Thus it is a modification. Exhaust countably
-many compact rectangles and all multiindices to obtain jointly continuous
+many nested compact rectangles exhausting the parameter domain, and all
+multiindices, to obtain jointly continuous
 versions for all Z_b, for this fixed rho. On overlaps the versions agree
 on countably many dense points, hence everywhere by continuity; thus they
 patch consistently.

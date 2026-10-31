@@ -1,0 +1,103 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "reviews/2026-10-30-source-operator-convergence/target-v1.md lines 1-104 (full)",
+    "reviews/2026-10-30-source-operator-convergence/falsification-v1.md lines 1-33 (full)",
+    "reviews/2026-10-30-source-operator-convergence/worker-honesty-v1.md lines 1-24 (full)",
+    "reviews/2026-10-30-source-operator-convergence/source-crosswalk-v1.md lines 1-24 (full)",
+    "reviews/2026-10-30-source-operator-convergence/source-custody-v1.json lines 1-38 (full)",
+    "reviews/2026-10-30-source-operator-convergence/check-diagnostics.py lines 1-50 (full)",
+    "reviews/2026-10-30-source-operator-convergence/diagnostics-v1.json lines 1-323 (full)",
+    "reviews/2026-10-30-source-operator-convergence/check-correlated-comparison.py lines 1-42 (full)",
+    "reviews/2026-10-30-source-operator-convergence/correlated-diagnostics-v1.json lines 1-200 (full)",
+    "reviews/2026-10-30-source-operator-convergence/canonical-model-context.txt lines 1-40 (full)",
+    "notes/actual-operator-driver.md lines 1-566 (full)",
+    "notes/actual-two-variance-forms.md lines 1-413 (full)",
+    "notes/spectral-mask-covariance-foundation.md lines 1-310 (full)",
+    "notes/interaction-driver-path.md lines 1-346 (full)",
+    "reviews/2026-10-30-source-operator-convergence/pages/author-05.png (full image)",
+    "reviews/2026-10-30-source-operator-convergence/pages/author-06.png (full image)",
+    "reviews/2026-10-30-source-operator-convergence/pages/author-08.png (full image)",
+    "reviews/2026-10-30-source-operator-convergence/pages/author-09.png (full image)",
+    "notes/source-operator-convergence.md lines 1-457 (full)",
+    "reviews/2026-10-30-source-operator-convergence/statement-adjudication-v1.md lines 1-32 (full)",
+    "reviews/2026-10-30-source-operator-convergence/scientific-worker-honesty-v1.md lines 1-32 (full)",
+    "reviews/2026-10-30-source-operator-convergence/source-custody-v2.json lines 1-39 (full)",
+    "reviews/2026-10-30-source-operator-convergence/duplicate-launch-refusal-v1.json lines 1-11 (full)",
+    ".review/required-sources.json lines 1-84 (read plan, full; earns no read credit)"
+  ],
+  "checks": [
+    {
+      "claim": "C1: Generic Gaussian transfer, Theorem 1 estimates (3), and Section 2 inequality (8), with raw f_j and A_j retained and Y(f_j) correlated.",
+      "verdict": "PASS",
+      "reason": "Conditional Jensen for the convex continuous seminorm power is valid with independent Z of covariance C I-C_N. The vector xi+Z has the law of sqrt(C) times a standard vector, and Z is used only for the inequality. Cov Y(f_i),Y(f_j)<=C I follows from the variance bound on real combinations of orthonormal f_j. The block inequality on j=N+1..M, with W(f_j) standard, gives the Cauchy property from (1). Letting M tend to infinity gives both lines of (3), the second by taking N=0. The limit lies in the separable closed span of the Lipschitz paths A_j(.) on the space of Y. The subsequence construction gives strong measurability, compact values at all times on one path set, and agreement across p. Gaussianity follows from L2 limits of finite Gaussian combinations."
+    },
+    {
+      "claim": "C2: Literal raw h_R matrix identity, projection Y(P_N h), complexification, basis independence, linearity, and stability of the error at arbitrary relative rates.",
+      "verdict": "PASS",
+      "reason": "Identity (9) is exactly operator-note (13) with g_j=W(f_j), together with long-interval additivity. Hence sum_j<=N Y(f_j)<h,f_j>_H=Y(P_N h), which converges to Y(h) in L2 by the extended variance bound, and operator-path convergence gives (4). No filter is commuted through the mask or a wave group. Two bases agree through dense Schwartz pairs at rational times, phase density, and path continuity. Linearity holds for jointly Gaussian noises because the finite sums are linear and pass to Lp limits. Stability uses the tail bound (10), uniform in n, plus the finite part bounded by sqrt(s_N(n))||M_N|| through (8), with covariance at most trace times I. This split needs no rate relation and works for nets. M_Dn=M_R-M_Yn follows from linearity. No nonlinear wave ordering is used."
+    },
+    {
+      "claim": "C3: H_Gamma null quotient and (2pi)^d spectral form, Schwartz inclusion, heat C_epsilon properties, real structure, and separable G.",
+      "verdict": "PASS",
+      "reason": "With h(y)=int f(x)g(x-y)dx, form (11) matches foundation Section 4 including (2pi)^d. Evenness of mu makes it real on real tests. Schwartz functions enter through expanding cutoffs, since the correlation converges in Schwartz topology against tempered Gamma. In the unitary convention, hat(p_epsilon*f)=exp(-epsilon|xi|^2/2) hat f. Therefore C_epsilon and I-C_epsilon are positive selfadjoint contractions, and C_epsilon tends strongly to I by domination and density. Heat preserves Schwartz functions, so it acts on the completion. No physical mask multiplier is asserted on the quotient, consistent with foundation Proposition 3. G is separable because the fiber is separable and the base is sigma-finite."
+    },
+    {
+      "claim": "C4: Phi isometry, Gaussian extension I retaining given W, and raw M pullback.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The OU integral evaluates to exp(-lambda|t-u|), and nu_a with (1.21) gives |t-u|^-a. Absolute integrability reduces to |tau(t)sigma(u)||t-u|^-a with a<1, with fixed finite spatial inner products. Time partitions give density of tensors on a fixed compact support, so Phi has closed range. In (13), I is isonormal by orthogonality and independence, and I(Phi h)=W(h) holds on the product extension with the original variable pulled back. Raw M_R is retained exactly, and no raw-minimal-span or law-only claim is made. The variable r is auxiliary only. See the minor finding on the pointwise formula (12) for non-tensor smooth F."
+    },
+    {
+      "claim": "C5: Point vector v, exact covariance (5), and test-integral identification Q_rho Phi F on the actual space.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "||v||^2=K_delta(0)Gamma_2epsilon(0) is finite. The two-vector product has lambda range up to 1/(delta max delta'), r integral exp(-lambda|t-s|), and spatial factor Gamma_(epsilon+epsilon')(x-y) with the c_d^2 and (2pi)^d factors cancelling. This matches (2.9), (2.11), (1.20), and (1.21) on the viewed pages. (15) uses the single-test distribution identity, so there is no oscillatory Fubini. The Radon extension is correctly labelled new, and no raw point noise is defined. Bochner integration of F v gives Q_rho Phi F, and I gives Y_rho(F). Indicator tests follow by fixed-support L1 and raw-norm limits. The same minor finding on (12) for non-tensor F applies here."
+    },
+    {
+      "claim": "C6: Variance contractions, correlated full residual, strong Q_rho to I at arbitrary rates, Lp(Btheta) source convergence (6), and uniform Gaussian moments.",
+      "verdict": "PASS",
+      "reason": "1-Q=(1-P)+P(1-C) is an orthogonal split, and 1-C is a contraction commuting with P, so the error norm is at most ||g||. Also 1-CP=(1-C)+C(1-P) gives the rate-free limit. The cross term <Qg,(1-Q)g> does not vanish in general, and independence is correctly limited to disjoint lambda ranges. Theorem 1 with C=1 gives ||M_Drho||<=||M_R-M_N||+sqrt(s_N(rho))||M_N||, hence true convergence in every finite Lp(Btheta), not merely bounds. The moment comparison transfers the sqrt(p) bound, and the even-moment series gives uniform exponential bounds at fixed R,T. No large-time interchange or uncountable common version is asserted."
+    },
+    {
+      "claim": "C7: Actual C_t C_infinity_x regularity per fixed rho, with derivatives identified.",
+      "verdict": "PASS",
+      "reason": "G-differentiation of (16) has squared norm K_delta(0) int xi^(2b)exp(-epsilon|xi|^2)mu(dxi), and the next moment dominates difference quotients. (17) follows from 2[K_delta(0)-K_delta(h)] with 1-exp(-lambda h)<=lambda h and the Lipschitz spatial phase. It is derived from (5), and the p8 gamma_epsilon index mismatch against (2.9) is confirmed on the image and not copied. The dyadic count with m=d+1, maximum-edge exponent 1/2-m/q, and Gaussian moments gives continuity. The G fundamental theorem on rational parameters plus joint continuity gives partial_i Z_b=Z_(b+e_i) pathwise. Time regularity is only continuity, and no C-infinity-in-time claim is made."
+    },
+    {
+      "claim": "C8: Ordinary first response (7), formula (19), and indistinguishable identification with M_R^rho on the same space.",
+      "verdict": "PASS",
+      "reason": "Spatial smoothness and time continuity in every C^k norm give a statewise strongly continuous integrand E_r to E_(r+1) and a Lipschitz B(E) path, with no operator-norm continuity of S. S(-u)(0,f)=(-sin(u|D|)f/|D|,cos(u|D|)f) with Bessel weights Lambda and Lambda^-1 gives (19) at fixed u, and the older C-infinity-time statement is not cited. Riemann sums converge pathwise and in L2 for smooth tests. Indicator approximation has both L1 and raw-norm limits. Together with (4), this gives (20) as an L2 identity on the common space. Dense pairs at rational times and path continuity give indistinguishability. The mask stays after smoothing because heat is selfadjoint in the pairing. No Young or nonlinear solution identity is claimed."
+    },
+    {
+      "claim": "C9: Source photos, custody, duplicate-launch record, and finite diagnostics as described.",
+      "verdict": "PASS",
+      "reason": "All four images show (1.20), (1.21), (2.9), (2.11), the page 8 display mismatch, and the page 9 law-only redefinition as described. The required-source hashes match both custody files as strings. v1 keeps the stale stationary label, and v2 records the raw-basis route. The refusal JSON and honesty notes agree on exit 4, no second provider launch, and use of the original handle. I read the code and recomputed by hand: the v1 and v2 determinants; the raw fourth moment 49; the correlated moment 49s^2+32c^2+60sc=7.1025; the wrong value 5.588; a test-variance row; and a cross covariance. Each agrees with the JSON, and the 24 and 24 row counts are confirmed. Section 8 correctly limits these to the d1 and singular d2 models and completion tests, with finite S4 only and uncertified precision. No continuum proof is drawn from them."
+    },
+    {
+      "claim": "C10: Scope, original model retained, and no out-of-scope upgrade.",
+      "verdict": "PASS",
+      "reason": "Sections 1 and 8 retain d=1,2,3, the canonical homogeneous Gamma, a in (0,1), alpha+a<2, and the threshold cases, with parameters identical to operator-note (1). All nine statement-gate notes are honored explicitly. There is no Lean upgrade, canonical initial datum (1,0), Sobolev point evaluation (including d1), u-moment, sharp constant, source energy or exact limit, Skorohod, HPC, contact, companion, TeX, PDF, wiki, publication, or whole-paper claim. The original full goal remains ACTIVE."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Section 4 proves the Phi isometry on tensors and extends by density. Section 5 then uses the pointwise formula (12) on general smooth compact F without stating that it equals the extension. This is a one-line routine omission and is disclosed rather than silently accepted. Fixed-support uniform tensor approximants make the right side of (12) converge pointwise in H_Gamma while Phi F_n converges in G, so the two agree almost everywhere. The Bochner computation needs nothing further.",
+      "The Section 5 Bochner integral needs strong measurability of (t,x)->v in G, which follows from (5) and (17) with b=0. That estimate is displayed later in Section 6. The dependence is not circular, only an order of presentation.",
+      "Section 6 patches versions on overlaps of rectangles. This should be read with a nested exhaustion so that overlaps have dense points. Optional wording only.",
+      "The cutoff family depends on the chosen auxiliary J off Phi H, so Theorem 2 is an existence statement for a retaining coupling rather than a canonical function of W. The note does not claim otherwise and does disclaim minimal-span measurability. Downstream use should not treat the family as W-determined.",
+      "The letter P is used for three objects: P_N, the range projection P, and P_delta. The Theorem 1 uniform D_n bound is also implied by the Y_n bound. Both points are cosmetic."
+    ],
+    "required_repairs": []
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is an AI read-only review, not human verification, a novelty audit, or whole-paper certification.",
+    "Named accepted inputs (the raw operator-path theorem and its estimates, the two-variance results, and the foundation Section 4 results) were checked for exact statement and fit against the packet notes. They were not re-proved from sources outside the packet, such as compact-sobolev-cutoff.md and finite-gaussian-schatten.md, and their earlier review reports are also absent.",
+    "The available tools are read-only, so diagnostic scripts were not executed and PNG, PDF, and source-revision hashes were not recomputed. Hash agreement is string agreement between the read plan and the custody files. Selected numeric values were recomputed by hand. Pinned PDF identity, revision da9d46428b294ac923718218e7d78c2125485117, and native session events are accepted only as recorded in the packet.",
+    "Only source pages 5, 6, 8, and 9 were viewed. No claim is made about the rest of the source paper.",
+    "The result covers linear first drivers at fixed R,T and admissible exponents only. The original full goal remains ACTIVE and open."
+  ]
+}
