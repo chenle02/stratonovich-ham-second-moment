@@ -489,8 +489,8 @@ in Section8 applies in this span and gives a strongly measurable C^theta
 limit M_R on the SAME probability space. An almost surely C^theta-convergent
 subsequence converges uniformly in operator norm. All finite paths have
 compact values on short intervals by Section7; for t>1, finite unit-interval
-sums give compact X_N(0,t) as well. Therefore so M_R has compact values at every time on
-that single path set. This proves(2). The limits obtained for different p agree by uniqueness
+sums give compact X_N(0,t) as well. Therefore M_R has compact values at every time on that single
+path set. This proves(2). The limits obtained for different p agree by uniqueness
 of convergence in probability in the path norm, as in Section8.
 Evaluation at any fixed time agrees
 with Section8; (3) follows. The complexified version is obtained from the
