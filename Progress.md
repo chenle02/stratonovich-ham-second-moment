@@ -5736,3 +5736,29 @@ pointwise source covariance, never arbitrary phase covariance monotonicity.
 Higher-dimensional lower bounds, sharp upper constant and source-energy
 normalization remain OPEN. Full goal ACTIVE,71 facts/18 seams unchanged;
 no companion/contact/HPC/Skorohod/sourcefix/TeX/PDF/wiki/publication.
+
+### Fixed-mask displacement-moment target frozen — 2026-10-30
+
+Previous goal turn PROGRESS: source convergence adopted fa1e54f and synced.
+Clean focused preflight local/origin/<HUB>0:0 revalidated. New F1 ALL
+mixed-order displacement diagrams with physical mask0<=m<=1 AFTERsource
+smoothing; F2 ordinary source solutions and positive-average moment order;
+F3 CONDITIONAL raw tested-observable transfer if masked averages convergeL2.
+Uses nonnegative pointwise source covariance and positive d1/2/3 Green
+measures, not PSD covariance order or arbitrary-phase monotonicity.
+
+100 finite positive-chain mixed moments, orders0..4 each/total<=8, pass;
+48 odd-zero rows, unequal/empty/selfpairings retained. Actual admissible
+d2 invariant-direction source covariance. PSD/signed-observable order
+negative controls PASS; no continuum quadrature-error or certifiedaccuracy
+claim. Eight texts/three full primarysource images frozen for statement gate
+BEFORE longproof. Existing owncanonical q_n/fixedorder inputs pinpointed.
+
+Wiki CLI search/cite and synthesized boundary pages read; sourcep7/10/12
+fully rendered/viewed. REFRAME as familiar positiveWick internalconsumer,
+not independently novel theorem; no external index/citation-chain audit or
+novelty clearance. Primarysource and exact consumer crosswalk retained.
+Potential fixedmask compactmean route is UNREVIEWED planning, no Young/
+canonicalmaskedflow/groundgap/cone/rawcost/d2d3lower/sharpupper claim.
+71 facts/18 seams unchanged, originalfullgoalACTIVE; no newLean/companion/
+HPC/contact/Skorohod/sourcefix/TeX/PDF/wiki/publication.
