@@ -1,104 +1,105 @@
-Last updated: 2026-10-31 03:50 UTC (Codex)
+Last updated: 2026-10-31 04:15 UTC (Codex)
 
-Full original upper/sharp goal ACTIVE. E-plus-constants complete candidate
-is isolated; FULL independent review live, statement gate accepted.
+Original full upper/sharp goal ACTIVE. All-dimensional masked Young average
+accepted on isolated branch; compact-ground/projection target next.
 
 ## ⏭ Next session: where to stand and what to do
 
-Stand in this repository root, then inspect ACTIVE isolated worktree:
+Stand in this repository root, then enter the ACTIVE isolated worktree:
 ${HOME}/.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave
-branch research/fixed-mask-young-20261031. Full scientific proof candidate
-is committed at761a7f8d521d244997fc5a42f67c52621fa08418; NOT adopted.
-Its Progress.md is the candidate workflow authority; accepted mathematics
-in root remains unchanged. Target2a46ec2 preproof gate is now ACCEPTED:
-Opus5.5/HIGH15checks414.046s,12inputs/27nativefiles, no required repairs.
+branch research/fixed-mask-young-20261031, HEAD
+01519d8c135818842388fa3175c64951075310cc.
+Its Progress.md is the current mathematical/workflow authority for this
+wave. Root master contains the prior accepted mathematics and operational
+handoffs only; isolated math is not yet integrated or pushed.
 
-FIRST inspect/poll the EXISTING FULL scientific review original exec29576:
-${HOME}/.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-scientific-v1.
-The last direct poll confirmed it live; no full proof verdict at capture.
-Inspect receipt/report if terminal; never relaunch solely on observation
-timeout. Validate all19 input bindings/actualmodel/readcoverage and every
-native archive member before adoption. Adjudicate all findings. Statement
-original91665 is TERMINAL, do not relaunch it.
+FIRST freeze a coherent compact-mean/common-negative-Rayleigh-trial/
+ground-family/full-F-projection-and-complement STATEMENT target from
+reviews/2026-10-31-fixed-mask-young/next-compact-ground-obligations.md and
+reviews/2026-10-31-compact-mean-ground/preparatory-controls-v0.md.
+The36exact projection cases/432 residual identities and actual admissible
+d3 trial controls are preparatory, UNREVIEWED, not the new theorem. Get
+its independent statement gate BEFORE long proof. Retain full phase/data
+and original raw Gaussian cost; the constant-forcing projection is essential.
 
-The complete candidate constructs F=E plus two constants, actual cutoff
-columns/source first response, standard Young flow, Gaussian/source Lp
-convergence, actual source PDE by Picard/distribution matching, and a
-W-measurable raw average closing accepted F3. Those claims remain candidates
-until FULL gate passes. It changes no noise/model/data or full sharp goal.
+Young interface is now ACCEPTED: scientific8ad5094/localadoption5969da5,
+Opus5.5/HIGH13checks283.696s,26inputs/41nativefiles verified. The EXACT
+masked-average L2 premise of F3 is CLOSED for all original d1/2/3 covariances.
+The v1 MEDIUM/acceptedfalse result is retained, not waived. ALL reviewers
+91665(statement),29576(v1),98785(v2) are TERMINAL; do not relaunch them.
 
-<HUB> remains unreachable No route to host; pushes of master and
-isolated branch failed. Last verified remote604c60f. Preserve both pending
-lines, then restore serial refs/push/sync/integration once reachable.
+<HUB> is still unreachable No route to host. Last verified remote604c60f.
+Preserve pending root/isolated lines and restore serial refs/push/sync/
+integration once reachable; no fresh parity or completed remote sync claimed.
 
 ## Pre-flight checks
 
-1. Read AGENTS.md, PROJECT-GOAL.md and current Progress.md. Full original
-   sharp/source goal ACTIVE; mathematics authority Progress.md, Lean authority
-   lean-progress/PROGRESS.md, official companion still separately gated.
-2. Check local ownership/status and serial local/origin/<HUB> refs.
-   Substantive adoption0accd3db751435e17a333a3122bf878bb8084568 was committed
-   after network failed; root handoff successor is also pending push. Last
-   verified remote604c60f2f8dc6d1a7635b9af224bbb6e5751d379. Do not reset WIP.
-3. Accepted source-operator-convergence.md: scientific da9d464/adoptionfa1e54f,
-   ten HIGH checks388.736s,23inputs/38nativefiles. Fixed RAW basis/correlated
-   Gaussian transfer, retaining OU extension, exact MAXdelta/SUMepsilon law,
-   all-finite-Lp Ctheta source convergence, ordinary linear first response.
-   This closes the older source-CM reconstruction plan; no such rebuild needed.
-4. Accepted fixed-mask-moment-transfer.md: scientific604c60f/local adoption
-   0accd3d, nine HIGH checks756.999s,18inputs/33nativefiles. F1 all mixed
-   positive displacement diagrams; F2 ordinary source solutions/two-point/
-   positive-average order; NEW full unmasked canonical moment limit; F3
-   CONDITIONAL on masked-average L2 convergence. Full adjudication records
-   seven minor clarifications. Direct valid JSON/no recovery or relaunch.
-5. Preproof fixed-mask nine HIGH checks352.974s,11inputs/26nativefiles.
-   Both v1/v2 diagnostics executed:100mixed-order controls/48odd-zero rows,
-   actual singular d2 model, PSD/signed negative controls. These are finite
-   mechanism checks, not continuum quadrature/accuracy certificates.
-6. Inspect exact prior F construction/Young inputs in
-   notes/local-causal-young-flow.md Sections4-6 as d1-only accepted input.
-   New actual operator paths and source convergence are all-dimensional;
-   do not import its d1 noise-Hilbert mask multiplier to the full class.
-7. Canonical TeX/PDF/wiki unchanged; TeX SHA256
+1. Read AGENTS.md, PROJECT-GOAL.md, ROOT and ACTIVE-WORKTREE Progress.md.
+   Full original sharp/source goal ACTIVE; do not shrink to this interface.
+   Companion still L0/PROPOSED, separate decision4 authorization required.
+2. Check local ownership/status and serial refs. Last verified remote604c60f;
+   root oldadoption0accd3d and operational handoffs are LOCAL ONLY. Active
+   isolated branch starts from root1a531db and is now01519d8. No foreign WIP
+   at checkpoint; no reset/drop of either pending line. No live review job.
+3. Source driver accepted scientificda9d464/adoptionfa1e54f,10HIGH388.736s,
+   23inputs/38nativefiles; fixed RAW basis/correlated Gaussian transfer,
+   retaining OU extension, exact MAXdelta/SUMepsilon law and source operator
+   convergence. No source-CM reconstruction or time convolution needed.
+4. Fixed-mask moment comparison accepted scientific604c60f/adoption0accd3d,
+   9HIGH756.999s,18inputs/33files. F1/F2 positive displacement diagrams,
+   source solution/averages and canonical unmasked full moment limit; F3
+   conditional consumer. Its masked-limit premise is now actually CLOSED
+   by the new accepted phase/Young theorem below, not assumed forever.
+5. New phase theorem notes/fixed-mask-young-constant-phase.md on ACTIVE branch:
+   scientific8ad5094/adoption5969da5aefbb1a288f7327962e3dbece56a79a55.
+   V2 FULL13HIGH283.696s,26bindings/41nativefiles verified before minor
+   clarification edits. Even[0,1]mask, F=E+R², both actual constant columns,
+   cancelling-data free propagation, actual source strong response, complete
+   Young stability/patching and Picard/Fubini identities, actual W-measurable
+   masked average and original point-moment comparison. Optional compact
+   real CtCc-infinity base, NOT raw CM shift or moment lower growth.
+6. V1 FULL19checks322.212s PASS_WITH_NOTES/MEDIUM acceptedfalse at HIGH,
+   19bindings/34files retained. Two written arguments expanded, never an
+   identical-input vote retry or lowered threshold. V2 thirteen checks and
+   seven optional clarifications adjudicated. Statement15HIGH414.046s
+   separate; all three original native processes terminal.
+7. Square-exponential bounds, Bochner vs pathwise test identities and all
+   source limits at FIXED mask/horizon; no point Sobolev evaluation in E.
+   New FP-YOUNG analytic boundary is NOT a Lean declaration.71facts/18seams
+   remain scoped/L0; no new package/lease/registry/HPC/companion claim.
+8. New compact-ground controls are UNREVIEWED preparatory evidence only.
+   Teschl SECOND edition source rehashed ee2cfd1c..., pp258/273 re-viewed:
+   existence needs a common negative trial BEFORE conditional positivity/
+   simplicity. No automatic binding of every fixed d3 compact potential.
+9. Canonical TeX/PDF/wiki unchanged; TeX SHA256
    58b092b258d4f363f8bfa0a02dcf492dcb9c13e794dbcab440bf7b0529b53b7d.
-   Full Gupper/GLOBALd1 lower retained,71finitefacts/18seams/L0 unchanged.
-   No new Lean/package/lease/registry/HPC/contact/Skorohod/source repair.
-8. New isolated phase target/full candidate Y1-Y4 uses F=E directsum R². Read target and
-   exact finite controls in reviews/2026-10-31-fixed-mask-young/ on the
-   isolated branch. Constants are CLOSED additional coordinates, not dense
-   E limits. Keep both actual constant-response columns. C0-only driver
-   convergence is insufficient; actual Ctheta convergence is available.
-9. Statement91665 is TERMINAL PASS_WITH_NOTES/HIGH15checks414.046s;
-   all12bindings/27nativefiles validated. Thirteen minor notes addressed
-   in full candidate761a7f8; v2 code adds explicit time grid/derived bound
-   and wrong dropped-column matrices. Both versions executed.
-10. Existing FULL review29576 confirmed live. It targets scientific761a7f8,
-    nineteenTEXTinputs, actual Opus5.5/high/HIGHthreshold. No full verdict or
-    adoption yet. Keep original handle/native dir; no duplicate run.
+   Full reviewed Gupper/GLOBALd1 lower retained; sharp upper/source intended
+   normalization/conditional exact limit still OPEN. No source fix/contact/
+   Skorohod/HPC/publication or whole-paper clearance.
 
 ## Concrete deliverables for the next session
 
-- Resolve EXISTING FULL scientific review29576, preserving its original
-  terminal result, validating bindings/coverage/archive and adjudicating
-  every finding before adopting the candidate.
-- If accepted, consider worthwhile typed finite projection/range consumers;
-  existing71facts/18seams/L0 unchanged. No generic Lean foundation project.
-- Then compact deterministic mean negative trial/gap, full-phase spectral
-  projection/complement on THISF, actual raw shift/event/cost and growing
-  product. Sharp upper/source dictionary remain full-goal obligations.
-- Restore remote sync/integrate isolated math after serial refs/ownership
-  audit. Do not discard pending master/handoff commits or foreign work.
+- Frozen common-negative-trial/compact-ground/full-phase-projection-and-
+  complement target at actual F=E+R², with exact source map and falsification.
+- Independent statement gate, THEN self-contained proof and full cross-
+  family review. Do not silently transfer old d1 uniformly-local bounds.
+- Actual masked profile m(Gamma*g²) must preserve the FULL raw Rayleigh
+  score on supp g; keep original CM cost. Show entrance/terminal positivity.
+- Then moving-block full-phase growth and actual raw shifted Gaussian event/
+  cost, all-alpha variational bridge; sharp upper/source dictionary remain.
+- Restore remote sync and integrate isolated math after serial refs/ownership
+  audit. Do not discard pending root handoff commits or foreign changes.
 
 ## Success criteria for the immediate next step
 
-Full proof review accepts the exact candidate761a7f8, all findings
-adjudicated, original model/data/classes retained. It must verify the
-actual constant columns, cancelling-data propagation, source strong
-integral and Picard identities, Gaussian/Young/source convergence and
-W-measurable masked average. Only then claim accepted F3's L2 premise
-closed. Finite controls and the accepted statement gate alone do not close
-it. No global E density, original noise-Hilbert multiplier or low-Sobolev
-point trace may be used.
+The next STATEMENT gate correctly specifies compact nonnegative U, b on a
+positive compact interval, explicit common negative Rayleigh trial, simple
+positive ground/rate gap and the FULL-F left functional including constant
+forcing. Verify the projection and complementary physical-wave estimate
+with displacement AND velocity, and positive initial/terminal functionals.
+Only after statement acceptance prove it. The old global-E argument can
+be adapted to R^d, but old d1 uniformly-local scope is not already this
+new result. Do not infer a new moment lower rate from finite controls.
 
 ## Anti-success criteria
 
@@ -954,60 +955,83 @@ no verdict/adoption. All19live/frozen/git bindings rechecked. Branchpush
 failed again No route to host. Owned isolated WIP scientific-launch-v1.json
 preserved by exact path below; no new Lean count or main asymptotic claim.
 
+2026-10-31 Young close: original FULLv1 source761a7f8 returned19checks/
+MEDIUM322.212s acceptedfalse at unchangedHIGH. All19bindings/34nativefiles
+retained. Expanded source8ad5094 writes Young(6a)/(6b)/patch-error induction
+and phase-Picard tested positive-Green Fubini(9a)/(9b), restores even mask,
+explicit E remainder/Bochner identity, renames O_phi. V3 wrong dropped-
+column EVOLUTIONS differ on both constants/five loop endpoints. Original
+v2 full98785 passed13HIGH283.696s,26bindings/41nativefiles verified before
+seven optional clarifications. Local adoption5969da5 accepts actual phase/
+source/Young evolution and W-measurable raw average, closing F3's precise
+L2 premise ALL original admissible dimensions/covariances. V1 rejection
+not waived. Capture metadata race2.443062s corrected BEFORE commit to
+COMPLETED_AT_CAPTURE from receipt, with explicit correction history.
+No live reviewer. No new lower growth rate/sharp upper/source energy claim.
+
+Further isolated01519d8 retains UNREVIEWED next-ground controls:36 exact
+constant-forcing projection cases/432 residual identities; wrong omitted
+constant term fails commutation/entrance. Actual original d3 singular
+Gamma=delta_x1 tensorLeb_x2 tensorLeb_x3 product-bump trial, three scales,
+35/60-working-digit consistency; no quadrature/eigenvalue certificate.
+Held Teschl SECOND PDF rehashed ee2cfd1c..., pp258/273 re-viewed, wiki cite
+still absent and prior exact reference-ticket retained. This is preparation
+for next frozen statement gate, not a new ground/complement theorem.
+All work remains isolated/local; branchpush still No route to host.
+
 ## Repo & git state at handoff
 
 Root master before this HANDOFF-only successor:
-99e596f84189c00700edaacd09c945a22e971520, pending earlier
-0accd3d adoption and operational handoffs. Last verified remote checkpoint
-604c60f2f8dc6d1a7635b9af224bbb6e5751d379. <HUB> No route to host;
-no fresh parity claimed. Root otherwise clean, no foreign WIP.
+8505cb68a799e0ba1b721926393eb282c38dbcb3, pending prior0accd3d adoption and operational handoffs.
+Last verified remote604c60f2f8dc6d1a7635b9af224bbb6e5751d379; <HUB>
+No route to host. No fresh parity, root push or remote sync claimed.
+Root otherwise clean; no foreign WIP.
 
-ACTIVE isolated branch research/fixed-mask-young-20261031:
-761a7f8d521d244997fc5a42f67c52621fa08418, complete scientific candidate,
-worktree ${HOME}/.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave.
-Owned untracked path at capture:
-reviews/2026-10-31-fixed-mask-young/scientific-launch-v1.json.
-FULL native exec29576 live at last poll, directory
-${HOME}/.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-scientific-v1.
-Statement91665 terminal result fully retained, not a live job. No new Lean
-job. No master integration/push of isolated wave. Preserve exact native/
-worktree paths; literal root HANDOFF remains the loader entry point.
+ACTIVE isolated research/fixed-mask-young-20261031:
+01519d8c135818842388fa3175c64951075310cc, with accepted Young adoption
+5969da5aefbb1a288f7327962e3dbece56a79a55 and separate preparatory controls.
+Worktree ${HOME}/.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave
+is CLEAN, all owned artifacts committed. No master integration or push.
+Native statement91665 and FULLv1 29576/FULLv2 98785 all TERMINAL. V1 is
+MEDIUM/notadopted; V2 acceptedHIGH. No live Lean job. Literal root HANDOFF
+is the loader entry point and points to the active-worktree authority.
 Wiki ../SPDEs-wiki/content/projects/stratonovich-ham-second-moment.md exists,
-unchanged. No whole-paper/novelty/circulation clearance.
+unchanged. No whole-paper/human/novelty/circulation clearance.
 
 ## Operating notes
 
-Root compiler/hash/archive/git/script execution evidence is separate from
-read-only AI verification. Native Opus5.5/high CLI2.1.304 actual route and
-required-read coverage verified for both new gates. Original native full
-review handle33865 terminal; statement42618 terminal. Never relaunch them.
-Historical RUNNING_AT_CAPTURE files are superseded by terminal receipts.
-Older finite-Gaussian format-only recovery history remains preserved.
+Root script/hash/archive/git evidence is distinct from read-only AI review.
+CLI2.1.304 actual Opus5.5/high/HIGHthreshold, full read coverage validated.
+Never relaunch terminal source/statement/full reviews. V1 MEDIUM and v2 HIGH
+both retained; revisions are scientific proof expansions, not format-only
+recovery. Older finite-Gaussian format recovery remains its separate history.
 
-Source cutoff depends on possible auxiliary J but retains raw W. F3 makes
-no W-measurability assumption for A; next Young construction must establish
-its own raw-W identity. Fixed physical mask stays AFTER source smoothing.
-Local phase containing constants and free-wave STRONG continuity suffice;
-no operator-norm continuity of the free wave group is presumed.
+Actual fixed-mask raw average is W-measurable; source family may use auxiliary
+Gaussian J. Both constant columns are required. Young uniqueness is Ctheta,
+free group only strongly continuous, source strong integrals need no RNP.
+F=E+R² is the accepted phase here; constants are not global Sobolev vectors.
+Different-phase ground projections/complement estimates remain NEW work.
 
-All-alpha-damped-ratio remains an unreviewed later target, scalar D not
-physicaldimension; do not modify OLD V certificate or infer new moment
-consumer. No amsg/contact/setup/HPC, official package or source fix.
+All-alpha-damped-ratio remains an unreviewed later target; scalar D is not
+physicaldimension. Do not modify old V certificate or infer an alpha>1
+moment lower consumer from a scalar calculation. No amsg/contact/setup/HPC,
+official package, source normalization repair or publication transaction.
 
 ## Risks to monitor
 
-Network sync pending, not a mathematical blocker or goal completion.
-Recheck reachability and serial refs before next edit/push. No destructive
-network/Git workaround. Preserve pending commits and external WIP by path.
+Network sync/integration pending, not a mathematical impasse. Recheck
+reachability and serial refs before push; preserve both lines and foreign
+WIP. No destructive network/Git workaround or fresh parity claim.
 
-Masked raw-average existence/Young identity, higher-dimensional compact
-mean common trial/gap, weighted projection/complement, full-phase product,
-actual Gaussian event/cost, all-alpha variational lower and sharp upper
-constant/source normalization remain OPEN. H1/2 never supplies point
-Sobolev evaluation here. No cutoff/large-time limit interchange or independent
-time-block assumption. Full original goal remains ACTIVE, not complete.
-The new direct-sum F is a full CANDIDATE, not yet accepted analytic construction.
-Its finite marker model cannot prove continuum constants lie outside E.
-No global E density, zeroed constant columns or C0-only Young stability.
-Future spectral/complement estimates on this F need exact revalidation;
-the prior d1 uniformly-local proof is not silently a theorem on the new phase.
+The new E-plus-constants Young interface and tested raw-average transfer
+are ACCEPTED, but the next compact-mean ground/projection/complement route
+and controls are UNREVIEWED. Require a common negative trial in d3 and
+retain the constant forcing in the left eigenfunctional. No absent pL1
+or weighted-tail hypothesis may be silently imported; specify exact inputs.
+No scalar moment multiplication or arbitrary-phase covariance order.
+
+Full growing product/raw event-cost/all-alpha lower, sharp upper constant,
+source normalization/domain/label and conditional exact limit remain OPEN.
+No source/large-time limit interchange.71facts18seams/L0 unchanged; no
+companion/HPC/contact/Skorohod/source repair/TeX/PDF/wiki/publication.
+Original full goal remains ACTIVE, not complete or blocked.
