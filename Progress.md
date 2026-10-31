@@ -24,9 +24,13 @@
  compactness and actual averaged Cameron norm <=C sqrt(delta)epsilon_J
  are accepted. White translated controls refute only uniformR tails for
  fixed smooth projections; no whole upper no-go or point upper follows.
-- **Immediate next:** independent statement/full gate for residual DRIVER
- norm exponential estimate at speed1/delta, using actual C3 and held
- Friz-Hairer. Preserve growing-cone/nonlinear/point/source gaps explicitly.
+- **New accepted residual estimate:** scientific8b16bb7,20checks/HIGH324.742s,
+ 24bindings/39native members verified. Actual fixedR DRIVER norm has the
+ finite-delta exponential bound and vanishing iterated inverse-delta rate.
+ No nonlinear/point/sharp upper follows; sufficient constant only.
+- **Immediate next:** freeze/falsify the actual multiplicative Young
+ perturbation estimate with a linear plus nu-power cost, rank-uniform good/
+ bad mean-block budgets and preserved physical deterministic growth.
 - **Still open:** intended author-energy/domain/normalization dictionary,
   matching sharp upper constant and conditional exact limit. Original full
   goal ACTIVE; no whole-paper/circulation/wiki/master integration clearance.
@@ -6819,3 +6823,22 @@ r4/nu1.5 budgets verify maximum amplitude can diverge with unit averaged
 budget. Rational arithmetic only, no actual CM/operator/SPDE assertion.
 Retain linear cost or explicit tunable slack in a future frozen statement;
 no extra computation or change to the running D1 proof packet.
+
+### D1 actual residual exponential estimate accepted — 2026-10-31 UTC
+
+Original75891 TERMINAL,20checks PASS/HIGH324.742s,no requiredrepairs.
+Canonical report/pass/correspondence/readcoverage pass;24live/frozen/Git/
+native bindings and all39native archive members verified, BOTH PRIMARY
+images read. No recovery/restart/waiver. Adopt fixedR all-original-Gamma
+DRIVER norm finite-delta bound and vanishing iterated inverse-delta rate.
+Actual Gaussian support/firstchaos CM/AWS/measurable enlargement, zero
+cases, PRIMARY11.7, Rayleigh integration/prefactor2 and existing REAL
+weightedAMGM actual guards accepted. Five optional clarity notes applied;
+frozen proof/report unchanged. No new local kernel/count:73facts19seams/L0.
+
+Next nonlinear screen retains rank-uniformity, required linear residual
+cost/slack, actual full-phase products and Lr control budgets. No nonlinear/
+growing-cone/POINT/sharp-upper/sourceconstant/exactlimit theorem follows.
+Full original goalACTIVE; canonicalTeX/PDF unchanged. No contact/Skorohod/
+HPC/sourcefix/companion/wiki/bib/publication/wholepaper clearance. NoRoute,
+localisolated/pushpending/no fresh parity or rootmaster integration.
