@@ -6977,3 +6977,9 @@ explicit deltaB->0/notation, new primary3.1-3.2 content and actual AMGM
 notation. All10minor findings adjudicated; no unproved roughH2 or3/4-domain
 claim adopted. NEW frozen statement review needed before long proof.
 73facts19seams/L0 and original goalACTIVE, no new static/operator theorem.
+
+Corrected S1-S4 statement-v2 frozen: 25bindings (18TEXT+7PRIMARY
+images), full failed report/adjudication and exact temporal exponent
+controls supplied. Source3.1-3.2 primary content added, no unseen spectral
+functional-calculus import. New independent statement gate NEXT, no proof
+or static theorem adopted. Full original goalACTIVE.
