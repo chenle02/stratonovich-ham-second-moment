@@ -7054,3 +7054,25 @@ mean-actiontails/globalrestart/product/variational/growingcone/POINT/source
 constants/normalization/exactlimit all remainOPEN; fullgoalACTIVE. No contact/
 Skorohod/HPC/sourcefix/companion/TeX/PDF/wiki/bib/publication or wholepaper
 clearance. NoRoute/localisolated/pushpending/no fresh parity/master merge.
+
+### B1-B3 actual mean-block product statement packet frozen — 2026-10-31
+
+Prerequisite S1-S4 accepted7c91352,staticanalyticboundarydf9388b. New target
+B1-B3 includes explicit polynomialB primitive/crudeYoung budgets, physical
+signed frozen-block comparison, mean-good/bad/last estimates and largeB
+product rate for EVERY polynomial CM radiusM0 B^m. No long proof before
+OWN independent statement gate; accepted static/Young results are premises,
+not automatic new product/point upper. Strict r<2/a retained.
+
+Fresh wiki CLI search/cite+synthesized Young/wave-regime boundary reads;
+REFRAME known-method application, no new primary theorem/reference/novelty
+claim. Controls executed7actual free-sector40/70,12exactclock,16specific
+threshold,4worstlast exponent,11toy phase cases. Actual free sector catches
+fixedB prefactor;9interior toy cases refute exactfreezing/order reversal.
+No certified enclosure/actualCM/generalF/SPDE proof from these controls.
+
+Frozen12complete TEXT inputs; independent statement gate NEXT. Existing
+finitepowermean actualr/rnu guards planned, no new kernel/count73facts19seams/
+L0. Original full sharp/source goalACTIVE; actiontails/globalrestart/growing
+cone/POINT/sourceconstants/exactlimit OPEN. No contact/Skorohod/HPC/sourcefix/
+companion/TeX/PDF/wiki/bib/publication; NoRoute/localisolated/pushpending.
