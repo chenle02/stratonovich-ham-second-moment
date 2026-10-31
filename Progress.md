@@ -16,7 +16,7 @@
   extension and energy comparison give original Q2>=2^m Omega F_a(E_star^O),
   Omega>0. E_star^O has the explicit OWN finite-energy half-gradient domain.
 - **Immediate next:** independently statement-review refreshed all-alpha
-  scalar target-v2 in reviews/2026-10-30-all-alpha-damped-ratio/, preserving
+  scalar target-v3 in reviews/2026-10-30-all-alpha-damped-ratio/, preserving
   old V/kernel evidence and exact guards, BEFORE long proof. Omega>1 in the
   full original range is still unreviewed. No source-energy identity from it.
 - **Still open:** intended author-energy/domain/normalization dictionary,
