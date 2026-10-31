@@ -6805,3 +6805,17 @@ no exponential norm theorem or nonlinear/point upper adopted yet.
 24frozen inputs (22TEXT+2PRIMARY images), honest numerical/Lean boundaries;
 73facts19seams/L0 unchanged. No new package/HPC/contact/Skorohod/sourcefix/
 TeX/PDF/wiki/bib/promotion. Original full goalACTIVE, NoRoute/pushpending.
+
+D1 full review launched on8b16bb7, original75891;24inputs/2primary images
+bound live/frozen/Git. Same native handle retained, no restart on timeout.
+While it runs, nonlinear-next-screen-v0.md records an important open
+uniformity obligation: C(J,M)epsilon_J^c need not vanish. A mean-good/bad
+block route must use uniform CM-ball Lr budgets (nu<r), not false uniform
+per-block mean bounds. No new nonlinear statement/proof adopted.
+
+Next-screen falsification executed:4exact scalar commuting-ODE tests refute
+pure-nu perturbation cost without linear term/slack;4exact rare-block
+r4/nu1.5 budgets verify maximum amplitude can diverge with unit averaged
+budget. Rational arithmetic only, no actual CM/operator/SPDE assertion.
+Retain linear cost or explicit tunable slack in a future frozen statement;
+no extra computation or change to the running D1 proof packet.
