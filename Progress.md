@@ -6552,3 +6552,22 @@ boundaries updated together, L0 PROPOSED/no official companion/package/
 lease/registry/HPC. No normalization/IBP/derivative/SPDE formalization.
 Next full analytic all-alpha proof and gate. Full original goalACTIVE,
 NoRoute/local isolated, source dictionary/sharpupper/exactlimit OPEN.
+
+### Complete all-alpha proof candidate frozen with local finite evidence
+
+After accepted statement8f94a1c and finite locald3cf9f1, complete
+notes/all-alpha-damped-lower.md written: positive finite normalized mass,
+compact-D dominated derivative, fixed-sIBP/Fubini and joint CS, actual
+new moment/rational guards, Jmonotonicity ALLq>2a, exactoldV a/2 consumer
+and ORIGINAL all-Gamma point gain in OWN full-H1 energy. No theorem
+adoption before FULL gate. Ten statement obligations addressed, exact
+fixture generator replays frozenJSON bytes. No olddiagnostic rerun.
+
+Frozen 29completeTEXT full inputs with NEW two finite sources/public
+types/audit/receipt/4False controls and OLD V complete definitions/types.
+Kernel algebra is not re-voted; new actual fidelity/application and all
+uncovered integral/derivative/point steps need independent FULL review.
+71acceptedfacts18seams plus2provisional remains, no formal analytic/SPDE/
+official package/companion. Original source-domain/sharpupper/exactgoal
+ACTIVE/OPEN. NoRoute/local isolated/no parity/master integration; no
+contact/Skorohod/HPC/sourcefix/TeX/PDF/wiki/publication/wholepaper claim.
