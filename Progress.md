@@ -8057,3 +8057,8 @@ Skorohod/sourcefix/TeX/PDF/wiki/bib/publication, NoRoute/pushpending.
 - BothUR58076/31357 andPG55388 originalnativehandles nowTERMINAL0; no live
   review torestart/poll. <HUB>NoRoute/newcommitslocal. No contact/HPC/
   sourcefix/Skorohod/companion/wiki/bib/publication action.
+- Bounded UNREVIEWED physicalcomparison design retained in PGdirectory:
+  actualtime-occupationlabels/entrywiseGram,noncircularnormcoercivity via
+  remaskingfiniteprofiles,uniformtimeaveraging,explicitactualLOWERclass
+  check andpositivepotentialeventualmaskdomination. No theoremfromplan;
+  ownscoredoesnotreplaceoriginalsourceconstants/completioncontract.
