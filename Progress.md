@@ -6761,3 +6761,20 @@ CM quotient/abstract-Wiener/measurability/zero-case obligations before
 statement gate. Rank-one18controls unchanged, no rerun or theorem from
 them. C1-C3 native35+41archive members reverified and canonical TeX SHA
 unchanged. Source/point-upper/fullgoal stillOPEN; no new kernel/count.
+
+### D1 residual-norm statement/source/image packet frozen — 2026-10-31 UTC
+
+Previous turn PROGRESS C1-C3 acceptedda1e1f7, current2d12ca9 revalidated.
+Frozen target-v3 includes finite-delta bound/prefactor/limits, actual law/
+CM quotient/AWS/support/shift/anchor/zero/measurability and full PRIMARY
+Borell/Fernique hypotheses.19completeTEXT+2PRIMARY images supplied.
+Existing18rank-one integrals preserved/no rerun; new18arithmetic bound,
+3wrong-CM-scale Gaussian and exact endpoint/power controls pass. Numeric
+consistency not rigorous error or an operator/SPDE theorem.
+
+Pinned existing Mathlib REAL weightedAMGM completeTYPE/axioms audited;
+no new theorem/module/count, old naturalL consumer not stretched to realnu.
+No long proof/adoption before independent statement gate.73facts19seams/L0,
+no officialpackage/companion/HPC/contact/Skorohod/sourcefix/TeX/PDF/wiki/bib/
+publication. Original full sharp/point/source goal ACTIVE/OPEN. NoRoute/
+localisolated/no fresh parity/master integration. Native statement NEXT.
