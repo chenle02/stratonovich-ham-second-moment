@@ -56,7 +56,7 @@ scalar/fixed-mask replacement or declared complete.
    again NoRoute. No fresh parity/push/sync/master merge; no live Git job.
 4. All-alpha statement source8dd0227/adjudication8f94a1c,
    9checks/HIGH294.503s,15bindings/30native members. FULL proof
-   sourced2e5f5 (exact ed2e5f57d13e263a1049bc6cc73ff5d38b75fe63),
+   sourceed2e5f5 (exact ed2e5f57d13e263a1049bc6cc73ff5d38b75fe63),
    adoptionb5628d5,10checks/HIGH318.460s,29bindings/44native members.
    Canonical report/pass/correspondence/readcoverage and all live/frozen/
    Git/native hashes BEFORE optional clarifications checked. Every native
