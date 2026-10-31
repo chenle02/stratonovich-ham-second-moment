@@ -5949,3 +5949,24 @@ boundary addedwithoutformalLeanclaim. Next compactmeancommonnegative
 trial/groundgap/fullFprojection-complement, growingcone/products andraw
 Gaussianevent-cost. No companion/HPC/contact/Skorohod/sourcefix/TeX/PDF/wiki/
 publication orwholepaperclearance.
+
+### Next compact-mean ground controls retained — 2026-10-31 UTC
+
+OUTSIDE acceptedYoungpackets, preparatoryUNREVIEWED research only.
+36 exactrational fullwave+constant-forcing projection cases and432 residual
+identities PASS; droppingconstantfunctional failscommutation and loses
+positiveentrance. No continuumground/gap/complement theorem frommatrices.
+Actualadmissibled3 Gamma=delta_x1 tensorLeb_x2 tensorLeb_x3,alpha1,a.5:
+compactnormalizedproductbump/controlmask1onsupport yields unchangedfull
+rawquadratictrialscore. Three scales/35vs60workingdigits agree; no error
+enclosure/eigenvaluecalculation/accuracycertificate. Changingpotentialwith
+scale is NOclaim ofall-strengthbindingforfixedcompactd3potential.
+
+Teschl2014SECONDheldPDF rehashed ee2cfd1c..., fullrenderedp258/273re-viewed;
+T10.2 andconditionalT10.13 coverRn andneedactualnegativebottom first.
+WikiCLIsearch/citeTeschlabsent; prior exactreference-ticket retained/no
+duplicatequeueing oringestionclaim. Prepare coherent commonnegative-trial/
+groundfamily/fullFprojection/complementtarget, falsify/getstatementgate
+BEFOREproof. See preparatory-controls-v0 and next-compact-ground-obligations.
+No newLean/companion/HPC/contact/sourcefix/Skorohod/TeX/PDF/wiki/publication;
+fulloriginalgoalACTIVE. Allworklocalisolated/networkpushpending.
