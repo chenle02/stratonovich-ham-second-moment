@@ -5568,3 +5568,23 @@ uniformfiniteprojection variance matching remain OPEN, as do compacttail/
 Gaussianseries/timepath/Young/source/canonicaldata/newmoment/sourceconstant.
 Original full all-dimensional sharp/source goal ACTIVE,71facts/18seams
 unchanged. No newLean/companion/HPC/contact/Skorohod/sourcefix/TeX/PDF/wiki.
+
+### Actual noise-basis/operator-path target frozen — 2026-10-30
+
+After compact9f2e4d8 adoption, NEW M1-M8 frozen beforelongproof:
+actualnullquotient smoothpositive-time testONbasis, SAME-W CMcoefficients
+maskAFTERconvolution, allindexgain1/actualadjoint/fullphasefiniteprop;
+finiteGaussianprojection variance matching; actualfirstchaos columns/
+strongvariance tails; compacthypotheses ->actualfiniteSpmoments; compact-
+domination tailtrace proof ->boundedOPseries; actualCtheta(B(E)) LPpath
+convergence withcompactvalues, notSp-path; sqrtp/exponential LOCALdriver
+normmoments. No sourceepsilon/delta/Young/canonicaldata/u-moment identification.
+
+21actualsmoothcompact timeconvolution/derivativecontrols, actualsingulard2
+maskorder and4finite256compact-tail controls PASS. Noncompact-envelope
+Gaussiandiagonal counterexample is outsideactualmaskedhypotheses and guards
+against inferring sampleoperators from mean-squarecolumns alone. Nullraw
+and zero maskedCMdirections allowed, no finite/periodic replacementnoise.
+Eleven-text statementpacket frozen; no actualnewOPpath adoptedbeforeproof/
+fullgate. Originalall-dimensional sharp/source goal ACTIVE,71facts/18seams
+unchanged, no contact/HPC/Skorohod/companion/sourcefix/TeX/PDF/wiki/publication.
