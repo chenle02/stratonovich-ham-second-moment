@@ -1,0 +1,112 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "reviews/2026-10-30-source-operator-convergence/target-v1.md: full, lines 1-103",
+    "reviews/2026-10-30-source-operator-convergence/falsification-v1.md: full, lines 1-32",
+    "reviews/2026-10-30-source-operator-convergence/worker-honesty-v1.md: full, lines 1-23",
+    "reviews/2026-10-30-source-operator-convergence/source-crosswalk-v1.md: full, lines 1-23",
+    "reviews/2026-10-30-source-operator-convergence/source-custody-v1.json: full, lines 1-37",
+    "reviews/2026-10-30-source-operator-convergence/check-diagnostics.py: full, lines 1-49",
+    "reviews/2026-10-30-source-operator-convergence/diagnostics-v1.json: full, lines 1-322",
+    "reviews/2026-10-30-source-operator-convergence/check-correlated-comparison.py: full, lines 1-41",
+    "reviews/2026-10-30-source-operator-convergence/correlated-diagnostics-v1.json: full, lines 1-199",
+    "reviews/2026-10-30-source-operator-convergence/canonical-model-context.txt: full, lines 1-39",
+    "notes/actual-operator-driver.md: full, lines 1-565",
+    "notes/actual-two-variance-forms.md: full, lines 1-412",
+    "notes/spectral-mask-covariance-foundation.md: full, lines 1-309",
+    "notes/interaction-driver-path.md: full, lines 1-345",
+    "reviews/2026-10-30-source-operator-convergence/pages/author-05.png: full image viewed",
+    "reviews/2026-10-30-source-operator-convergence/pages/author-06.png: full image viewed",
+    "reviews/2026-10-30-source-operator-convergence/pages/author-08.png: full image viewed",
+    "reviews/2026-10-30-source-operator-convergence/pages/author-09.png: full image viewed",
+    ".review/required-sources.json: read as the read plan only, lines 1-68"
+  ],
+  "checks": [
+    {
+      "claim": "C1a. S0 uses a fixed raw ON basis f_j and raw coefficients A_j, allows correlated Y(f_j), and obtains the tail comparison from finite Gaussian covariance comparison plus scalar Jensen on a Banach path linear image.",
+      "verdict": "PASS",
+      "reason": "Orthonormality and Var Y(F)<=C||F||_H^2 give Cov(Y(f_j))_{N<j<=M}<=C I for every block, with no independence used. Add an independent Gaussian Z of covariance C I minus this matrix. Then Y+Z has the law of sqrt(C) times the W coordinates, and Jensen applied to the convex finite function c->||sum c_j A_j||_Btheta^p gives the block comparison for p>=1. Each A_j is Lipschitz in B(E) by operator-driver (10), so this function is finite and measurable. Passing to the limit with the accepted Cauchy property of M_W,N gives both displayed sqrt(C) bounds. This assumes neither that covariance domination implies smooth Y-Cameron-Martin means nor any infinite Gaussian comparison theorem."
+    },
+    {
+      "claim": "C1b. The S0 limit has measurability in the closed separable span, compact values, the matrix identity with the literal raw test, linearity and basis independence.",
+      "verdict": "PASS",
+      "reason": "The partial sums lie in the countable span of deterministic Lipschitz paths, and the subsequence construction of operator-driver Sections 8-9 applies. Compact values pass to the operator-norm limit. By (13), <A_j(t)z,w>_E=<h_R,f_j>_H, so <M_Y,N(t)z,w>=Y(P_N h_R). The domination bound and completeness of the basis give convergence to Y(h_R), so the identity follows at the stated scope without any noise-filter commutation. Basis independence follows from matrix forms on countable dense pairs and rational times plus path continuity. Linearity holds at partial-sum level for jointly Gaussian families. Path-norm bounds follow from sqrt(C) times accepted (4)."
+    },
+    {
+      "claim": "C1c. The stability statement holds through a uniform tail bound and finite raw-basis coordinate convergence, without a source-CM reproof or a nonlinear order.",
+      "verdict": "PASS",
+      "reason": "Linearity gives M_W-M_Yn=M_{W-Yn}. Split at N: the tail is at most sqrt(C_E)||M_W-M_W,N||_Lp uniformly in n, and the head is at most sum_{j<=N}||(W-Y_n)(f_j)||_p ||A_j||_Btheta. The head vanishes for fixed N because each f_j is a smooth compact raw test and Gaussian L2 convergence upgrades to Lp. Taking n to infinity and then N to infinity proves the claim. The target fences this as a linear-driver covariance order only."
+    },
+    {
+      "claim": "C2a. The given-W coupling through G, Phi, the isometry, the auxiliary variable r and the isonormal extension is well posed and retains W.",
+      "verdict": "PASS",
+      "reason": "Direct computation gives int_{r<=min(t,s)} 2lambda exp(-lambda(t+s-2r))dr=exp(-lambda|t-s|). Integrating against nu_a gives |t-s|^-a by source (1.21). Together with B_Gamma this yields ||Phi F||_G=||F||_H, with absolute integrability on compact support and null classes handled by the isometry. PhiH is closed. Setting I=W circ Phi^-1 on PhiH plus an independent isonormal field on (PhiH)^perp on a product space keeps I(PhiF)=W(F), so this is a pathwise extension and not a law replacement. The variable r is explicitly auxiliary and no negative-time noise is created. For r<0, PhiF(lambda,r)=exp(lambda r)PhiF(lambda,0), so the complement is generally nontrivial and in fact infinite-dimensional; the target's possibly enlarged space is the correct wording."
+    },
+    {
+      "claim": "C2b. The spatial normalization, heat multiplier and operator structure of C_epsilon, P_delta and Q_rho are correct.",
+      "verdict": "PASS",
+      "reason": "With unitary hat and Gamma=int exp(i xi.x)mu(dxi), foundation (7) gives (2pi)^d int fhat conj(ghat)dmu. As a check, d=1 with Gamma=delta_0 has mu=dxi/(2pi) and returns ||f||_2^2. Source (1.20) gives multiplier exp(-epsilon|xi|^2/2), which is real and even, so it preserves the real structure and descends to the null quotient. P_delta is a projection acting in lambda and commutes with the fiberwise heat operator. Q_rho is selfadjoint with spectrum in [0,1] and Q-Q^2=(C-C^2)P is generally nonzero, so Q is not a projection. The target treats it that way by retaining the cross-covariance."
+    },
+    {
+      "claim": "C3a. The dictionary agrees exactly with source images p5 (1.20), p6 (1.21) and pp8-9 (2.9)-(2.11).",
+      "verdict": "PASS",
+      "reason": "The images confirm p(t,x)=(2pi t)^(-d/2)exp(-|x|^2/(2t)); |u|^-alpha0=Gamma(alpha0)^-1 int_0^infinity exp(-lambda|u|)lambda^(alpha0-1)dlambda; upper limit delta^-1 in (2.9) with gamma_2epsilon; gamma_epsilon=p(epsilon,.)*gamma; and (2.11) with gamma^0 at delta vee delta-tilde and gamma at epsilon+epsilon-tilde. Only (1.21) is taken from p6, and conjecture (1.22) is not imported. The source construction is explicitly not the temporal convolution, as the target states."
+    },
+    {
+      "claim": "C3b. The point vector v has finite norm, reproduces the actual source joint family, integrates against tests to Y_rho(F), and does not define raw point noise; given-W retention and the Radon extension are marked as new.",
+      "verdict": "PASS",
+      "reason": "||v||^2=(delta^-a/(a Gamma_E(a)))Gamma_2epsilon(0), which is finite since Gamma is tempered and p_epsilon(x-.) is Schwartz. The inner product of two such vectors factors as K_max(delta,delta')(t-s)B_Gamma(p_e(x-.),p_e'(y-.)), and the second factor equals Gamma_(e+e')(x-y), which is exactly (2.11). Fubini in G gives int int F(t,x)v dt dx=Q_rho PhiF, using evenness of p. Page 9 says only that W can be redefined without changing its distribution, so the fixed-W strong coupling is correctly declared new, as is the Radon measure implementation. Line 70 excludes raw point evaluation."
+    },
+    {
+      "claim": "C4. Both variance contractions and strong test error hold at arbitrary relative rates; independence is restricted to disjoint lambda slabs; the full heat error is generally correlated with the source; no minimal-span measurability or state-filter commutation is assumed.",
+      "verdict": "PASS",
+      "reason": "0<=Q<=1 gives ||QPhiF||^2<=||PhiF||^2 and ||(1-Q)PhiF||^2<=||PhiF||^2. Also ||(1-C_e P_d)x||<=||(1-P_d)x||+||(1-C_e)x|| tends to 0 at any relative rate, by monotone slabs and dominated multipliers. Cov(Y_rho,D_rho)=<(C-C^2)P_d PhiF,PhiF> is nonnegative and generally nonzero, while only W-W_delta is orthogonal to W_delta. Lines 75-78 and 28-29 state these fences. Foundation Proposition 3, which says compact masks do not descend to the original quotient, is respected: S0 and S3 evaluate Y on the literal raw test h_R and never apply a mask as a map on H."
+    },
+    {
+      "claim": "C5. The S0 application yields source and residual paths on the common space with the raw path by pullback, for all finite p and the full original theta range, with uniform local Gaussian moments and no unsupported source-CM or source-basis assumption.",
+      "verdict": "PASS",
+      "reason": "Y=Y_rho and Y=D_rho each have C=1, so M_R^rho and the residual M_{D_rho}=M_R-M_R^rho satisfy the Lp(Btheta) bounds uniformly in rho for all p>=1 and every admissible theta in the accepted range 1/2<theta<beta. The accepted sqrt(p) bound gives uniform moments, and the moment-to-exponential argument of operator-driver Section 10 gives uniform exponential bounds. The raw path is a function of g_j=W(f_j), and it and those variables pull back to the product space unchanged. The source's own ON basis and Cameron-Martin smoothness are not used. Constants stay at fixed R,T, with no uniform-R claim or limit interchange."
+    },
+    {
+      "claim": "C6. The actual heat-plus-lambda field has time continuity and all continuous spatial derivatives, and the ordinary linear first response agrees indistinguishably with the constructed path.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "K_delta(0)-K_delta(t)<=|t| int_0^(1/delta)lambda nu_a(dlambda), which is finite. All mu moments of exp(-epsilon|xi|^2) are finite since mu is tempered, so derivative fields have Gaussian increments bounded by C(|t-s|+|x-y|^2) on compact sets, and Kolmogorov applies. zeta_R Y_rho(u,.) is then compactly supported, continuous in u in every C^k, and gives a bounded B on E, so the strong integral has a B(E)-Lipschitz primitive. The Sobolev-adjoint identity (7) is a fixed-time statement, so pathwise application gives <int S(-u)B(b)S(u)z du,w>=int int b v_z conj(G_w). Gaussian Fubini identifies this with Y_rho(h_R), and S0 identifies M_R^rho with the same quantity. Countable dense pairs, rational times and continuity then give indistinguishability. The target labels this as new proof work and as a linear response only, not a source-Young or canonical solution identity. See the minor finding on the time-smooth deterministic b hypothesis of (7)."
+    },
+    {
+      "claim": "C7. Diagnostics match their stated finite scope: the 5-point matrix, 2 wrong-parameter PSD failures, 24 coupled profiles, the rotated 2-test covariance, the finite S4 comparison and positive error-source cross-covariances; completion tests, non-certified accuracy and finite versus continuum are kept distinct.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The code formulas match the analytic definitions: kap, the ou_norm integral and its substitution, S0, Sc, Se, and residual=(raw-tc)S0+tc(S0-2Sc+Se). I recomputed by hand raw=4.7265 and raw=11.3437; tc approximately 1.323; source variance 1.9154; correct and wrong determinants 5.066/-10.13 and 0.5066/-2.533; v1=0.40524, v2=0.27016, off-diagonal 0.06754. The fourth moments follow in closed form from 49 sigma^4+32 rho^2+60 sigma^2 rho, with sigma^2 the common coordinate variance and rho the off-diagonal covariance, giving 49, 7.1025 and 5.588. Sample Cov(Y,D)=0.04265 also matches. The JSON has 24 rows in each list, and the recorded values satisfy the source and residual order assertions. Text and JSON clearly say the indicator time and Gaussian space tests are in the raw completion and not the literal Cc-smooth basis, that working precision is not certified accuracy, and that no driver path is computed. Not executed; see limitations. The orthogonal-slice versus cross-formula equality is an algebraic identity once tc is fixed, so it guards transcription only."
+    },
+    {
+      "claim": "C8. The original all-dimensional sharp goal stays active and the scope fences hold: no first-mean, source-energy or conjecture import; no nonlinear flow, new u-moment or Lean upgrade; no companion, HPC, contact, Skorohod, TeX, PDF, wiki, publication or whole-paper claim.",
+      "verdict": "PASS",
+      "reason": "Target lines 3-4 and 97-103, falsification lines 31-32, worker-honesty lines 21-23 and custody not_claimed all carry these fences consistently. S0-S4 make no claim about u, about Young flow, or about source normalization. Canonical data, growing cones, d2/d3 lower bounds and sharp upper constants are listed as open."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "source-custody-v1.json still lists new_proof_obligations entry 'generic stationary tempered covariance driver', while target S0 and worker-honesty state that the generic transfer needs no stationarity and replaces the earlier route. The label appears stale; it does not change a statement.",
+      "Foundation Section 4 states its finite comparison for a norm on R^m. Here c->||sum c_j A_j||_Btheta can be only a seminorm, since A_j may vanish or be dependent (operator-driver Section 11 allows zero masked means). The target correctly says convex function; the long proof should use convexity and not cite the norm wording literally.",
+      "Identity (7) of actual-two-variance-forms is introduced for deterministic b smooth on [0,T]xR^d, whereas zeta_R Y_rho is only continuous in time because K_delta has a kink at 0. The identity is fixed-time, so it should apply pathwise, but S4's proof should state that scope explicitly and not cite (7) as stated.",
+      "Source p8 has an index mismatch relative to (2.9): (2.8) uses gamma_epsilon and the increment display uses gamma_epsilon(0) and gamma_epsilon(x-y), while the covariance has gamma_2epsilon. Target and crosswalk correctly use Gamma_2epsilon, and the long proof should derive its own increments and not copy that display.",
+      "S0 states stability for sequences Y_n while S3 applies it to the two-parameter family rho=(epsilon,delta). This is immediate through arbitrary sequences or directly from the same splitting, as the target's arbitrary-rate claim intends.",
+      "The pointfield version and S4 indistinguishability are per fixed rho. The packet should not be read as claiming one version simultaneously for all uncountably many rho; S4's wording does not claim that, and it is worth retaining in the proof.",
+      "Target line 27 states the matrix identity without naming the pair class. The proof should take real Schwartz pairs, or complexify Y as in operator-driver (3).",
+      "Target line 40 does not name the Fourier convention; the (2pi)^d is correct for the unitary transform and the convention of the foundation note.",
+      "Target line 101 and operator-driver Section 11 fence out E1/2 point evaluation in d2/3. H^(1/2)(R) also fails to embed in bounded functions in d1, so no reader should infer d1 point evaluation from that wording."
+    ],
+    "notes": []
+  },
+  "required_repairs": [],
+  "limitations": [
+    "Statement, object, source, parameter and feasibility gate only. S0-S4 are checked by independent derivation of formulas and proof feasibility; no complete long proof exists in the packet, and this report is not acceptance of one.",
+    "This reviewer had no execution tool: the two scripts were not run, and 'assertions pass under normal uv Python' is not independently reproduced. Their logic was read in full, and the stated values were checked by hand on a sample plus the closed-form moment formula.",
+    "Image SHA-256 values and the PDF hash could not be recomputed. The required-sources image hashes match source-custody string for string. The source PDF, the 64-page count, byte identity with prior renders and source revision 29604bd are not checkable from the packet. Source verification rests on the four rendered page images, which were legible in full.",
+    "Accepted notes are used at their recorded accepted status; compact-sobolev-cutoff.md, finite-gaussian-schatten.md and other upstream inputs named in them are not in the packet and were not re-reviewed. Upstream correctness of the raw path theorem is therefore an inherited assumption.",
+    "Neither a human verification nor a novelty audit nor a whole-paper certificate. No new source operator theorem is established by this gate."
+  ]
+}
