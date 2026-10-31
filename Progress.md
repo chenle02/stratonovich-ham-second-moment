@@ -6043,3 +6043,32 @@ tilts. No newground/complement prooforlower/sharpconstant. Networkstill
 NoRoute,isolated/localonly,nofreshparity/integration.71facts18seams/L0
 unchanged,noLeanupgrade/companion/HPC/contact/Skorohod/sourcefix/TeX/PDF/wiki/
 publication/wholepaperclearance.
+
+### Compact-family statement accepted; complete proof candidate — 2026-10-31 UTC
+
+Original71921TERMINAL family8HIGH284.794s PASS_WITH_NOTES,25completeTEXTS+
+sixFULLimages/no requiredrepairs. All31live/frozen/git715b6b2/native
+bindings and46nativearchive members verified BEFOREproof. Rootcanonical
+report/passing/correspondence/requiredreadcoverage pass. DirectvalidJSON/
+no retry/recovery/confidencechange. Scalarv1separatelyretained, no narrow
+longproof begun. Sixminor noteshandled: chooseR/commonnegativefirstTHEN
+lambdaLip; explicitvPsi formula/localfiniteness; pertestmask/suporder;
+generic-continuityvsactual-Lipschitz; scalar-specialcaseguards; a.e positivity.
+
+NEWCOMPLETE CANDIDATE notes/compact-mean-ground-family.md provesclosed
+commonH1form/negativebottomBEFOREconditionalpositiveground,uniformlevels/
+gap/positivepL2-H2continuity; fractionalgraphdualityandactualGLOBAL_E
+spectralwaveinclthreshold0/decayinggroundbranch; actualfullFconstant
+forcingprojection/commutation/uniformentrance+testpositivity; exact
+subtractedforcingresidual/fullFpoly3-normalizedgap andparameterbound;
+ALLpositivePsi mean/rawvariance/localGammabounds/smoothnessbytestderivatives;
+commonwideunittrial withoutchangingPsi/rawcost; correctlambdaLipafterR
+andpertestlimitorder. No pL1/tail/d1ODE/sourceconstant assumptions.
+
+Twenty-eightTEXTS+sixFULLimages scientificpacket frozen BEFOREfullgate.
+No newgroundtheoremadopted yet, no randomgrowingproducts/CMshift-eventcost/
+all-d lowergrowth/sharpupper orsourceenergymap. Existing71facts18seams/L0
+unchanged; new spectral/integral steps analytic, notformalizedbyoldfinite
+facts/Fractioncontrols. Workisolated/local, no freshremoteparity/push/
+masterintegration; <HUB>stillNoRoute. FulloriginalgoalACTIVE,no new
+Lean/companion/HPC/contact/Skorohod/sourcefix/TeX/PDF/wiki/publication.
