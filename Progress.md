@@ -53,10 +53,11 @@
   21checks/HIGH379.264s,no repairs;30five-way bindings/native archive
   verified. Actual source/raw/mean form preservation,norm>=1,exact completed
   blockmean fastdirection/trueendpoint baseline. Fixedparams,notuniformbudget.
-- **Immediate next:** freeze/falsify the conditional Borell-tube transfer
-  on the ACTUAL E Gaussian block law,primary11.6/AWS/measurabletubes/halfaction
-  and Rayleighintegration. Obtain its own source/statement gate before proof.
-  No nonlinear growingR upper,variational/source-normalization conclusion yet.
+- **Immediate next:** write the COMPLETE BT1-BT3 Gaussian tube/Rayleigh
+  transfer proof after accepted15f8a97 statement/source gate16PASS/HIGH
+  417.61s,including2primaryimages/32bindings. All6notes adjudicated,especially
+  calibrationvsfalsification/effectivecasecounts. FULL proof gate still
+  required; no sharp spectral/product/variational/source conclusion yet.
 - **New accepted uniformR E Cameron/regulator:** scientificf54e92b,
   21checks/HIGH348.303s,no requiredrepairs;21input bindings/native archive
   verified before6optional clarity notes. Actual all-model uniformR means,
@@ -7810,3 +7811,26 @@ Skorohod/sourcefix/TeX/PDF/wiki/bib/publication, NoRoute/pushpending.
   beforelongproof. No BT proof/adoption yet; full all-model goal ACTIVE.
   Expectednorm/CM spaces E ONLY; no F constantcolumn substitution or raw
   H-valued Gaussian. No TeX/PDF/wiki/bib/contact/HPC/companion/publication.
+
+## BT statement/source gate completed — 2026-10-31
+
+- Original22469 TERMINAL0,actualOpus5.5/HIGH,16checksPASS,
+  PASS_WITH_NOTES,no requiredrepairs,417.61s atfrozen15f8a97. Canonical
+  report/pass/correspondence/fullcoverage validated including2PRIMARYimages;
+ 32five-way live/packet/Git/nativeworkspace/receipt bindings checked BEFORE
+  proof/clarification. Complete nativearchive eachmember readback verified.
+  Rawreport unchanged; no model/threshold waiver or confidence retry.
+- All6optional findings adjudicated: correct linearMGF boundtautological,
+  positivecalibrationonly; countsduplicates/zero signals notindependent
+  evidence; proofnames/types separated; coarsequantifieralldeltaexplicit;
+  SAauxexponents/Q compatiblewiththeta; exactcellformulauseslog(2n).
+  Derivedaudit8distinctnonzero momentcases,16delta/r pairs/12normalized
+  correcttailradii anddistinctnegativecontrolfailures5/4/7. No rerun.
+- This is STATEMENT/source/oldfinite application FIT only; complete BT
+  geometry/AWS/actualwaveeligibility/coarse/tail proof remains to be written,
+  then FULL reviewed. No sharp spectral/product envelope or sourceconstant
+  inferred. All previous mathematical gates remain exactcomponentsonly.
+ 74facts20seams/L0 no newkernel/compiler; allnativejobs nowterminal.
+- Existing numerical-gate skill updated for unroundedprecision comparison
+  and typedcarriersemantics,pushed canonicalLab67c96801; allvalidation/
+  generator/runtimebytes/strictbudget checks pass. No duplicate skill.
