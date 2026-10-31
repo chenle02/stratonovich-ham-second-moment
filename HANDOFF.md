@@ -1,127 +1,136 @@
-Last updated: 2026-10-31 14:03 UTC (Codex)
+Last updated: 2026-10-31 15:14 UTC (Codex)
 
-Full original upper/sharp goal ACTIVE. S1-S4 signed rough static upper and
-B1-B3 actual mean-product upper both independently accepted. Actual fixed-
-mask Gaussian operator second-moment statement/falsification screen next.
-Original growing-cone/POINT/source constants and exact limit remain OPEN.
+Full original upper/sharp goal ACTIVE. Complete GL1-GL3 fixedR Gaussian
+operator upper plus1local finite-tail fact are CANDIDATE under ORIGINAL
+FULL review24498. No operator or finite-count promotion yet. Original
+POINT/growing-cone/source normalization/exactlimit remain substantial gaps.
 
 ## ⏭ Next session: where to stand and what to do
 
 Start in this original root (loader entry), then enter ACTIVE isolated
 worktree ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave,
 branch research/fixed-mask-young-20261031, CLEAN committed HEAD
-9d7ca41c6a5ee4ab38ff1621e9f9b0bb86af9da0.
-Its Progress.md is workflow/math authority; inherited isolated HANDOFF and
-rootmaster math state are stale. No rootmaster payload integration/push yet.
+dac8dc9bbe4a22ebe01cc17f85d865b28645e5c5.
+Its Progress.md is workflow/math authority; rootmaster math and inherited
+isolated HANDOFF stale. No rootmaster payload integration/push succeeded.
 
-FIRST freeze/falsify the exact fixed-mask Gaussian operator upper statement
-outlined in
-reviews/2026-10-31-upper-mean-block-product/gaussian-upper-next-target-v0.md.
-It is UNREVIEWED planning. Use actual SAME-W fullhead+residual, accepted
-fixed-mask restart, finite-J Gaussian action/bulk/tail normalization, not
-an H-valued standard Gaussian. Obtain OWN independent statement gate BEFORE
-long proof. FixedR operator upper is not the original unmasked POINT upper.
+FIRST inspect ORIGINAL FULL review session24498/native directory
+../../../../.local/state/Le-AI-Lab/stratonovich-upper-gaussian-scientific-v1.
+Frozen source180bf1ae8d2de8cc1cae542d8ee4370afba0bb84,
+43completeTEXT inputs. Lastpoll15:13:27UTC confirmed RUNNING. Poll SAME
+handle; if missing inspect native receipt/process state. Observation timeout
+is NOT terminal and never justifies a new reviewer attempt.
 
-New accepted B1-B3 input notes/upper-mean-block-product.md:
-scientificb1d8e5b/adoption2a22cc2,21checks/HIGH232.556s,no requiredrepairs,
-17bindings32native members verified. Explicit4B/32/C_theta B budgets,
-physical signed frozen endpoint, uniform errors/good/bad/true-last control,
-largeB mean-product rate on EVERY polynomial CM radiusM0B^m, threshold
-s>r(3+m)/(r-nu), delta-beforeB. No arbitrary diagonal/growingR claim.
-New S1-S4 notes/upper-signed-static.md accepted404354a/7c91352,
-25HIGH327.286s,28bindings43native members. Exactlambda/polynomial bound,
-rough physical E/F identity/bothconstants and actual rate averaging.
-All review handles TERMINAL. No running reviewer/Lean/Git/HPC job.
+Current candidate notes/upper-gaussian-operator.md: actual noise-only
+source/raw restart on SAMEW, auxiliaryB/J independence, variance-delta
+finitehead/half-action, Borel compact Young image/baseline/finiteness,
+ownALLsignedscore, explicitcoarse/bulk/tail/2^J bounds anddelta->J->B upper.
+This is a FIXEDR OPERATOR secondmoment, not original unmaskedPOINT/sharpL^*.
+Correct statement3e8f791/e5f71b5 already passed12HIGH360.315s, no repairs;
+23bindings38native files verified. FULL proof/type/application verdict pending.
+
+One NEW finite cutoff_density_split theorem is local-PROVISIONAL,
+sourcehash521a209c3dce14b35e9d71b26267f24b0a7e4e050f1955306b8c666646582649.
+Exactheader unchanged, firstcompile/std3axioms/type audit/5replaypairs/
+3falsevariants PASS,28native members verified. Counts73acceptedfacts19seams
+PLUS1provisional fact/newseam; only promote74/20 AFTER FULL type/application
+passes. If fullFAIL, repair exactfindings/headerscope, no waiver/retry vote.
 
 ## Pre-flight checks
 
-1. Read AGENTS.md, PROJECT-GOAL.md and ACTIVE Progress.md. Original all-
-   dimensional sharp/source objective and decision points unchanged.
-2. Root before this HANDOFF-only successor 43972d020dd3b6b0a8dbe31cf4b3e25dce9a10b9; active exact HEAD
-   above. Check ownership/status; preserve both pending histories/foreignWIP.
+1. Read AGENTS.md, PROJECT-GOAL.md and ACTIVE Progress.md. Preserve original
+   all-dimensional sharp/source objective and every decision point.
+2. Root before this HANDOFF-only successor 64e6fb03f818416b04ed1a32d2b86fbd822b5a22; active exact HEAD
+   above. Check ownership/status; preserve both pending lines/foreignWIP.
 3. Serial origin/<HUB> audit: last VERIFIED remote
-   604c60f2f8dc6d1a7635b9af224bbb6e5751d379. Freshfetch/SSH/push NoRoute.
+   604c60f2f8dc6d1a7635b9af224bbb6e5751d379. Fetch/SSH/push again NoRoute.
    No fresh parity/sync/master merge/wiki/whole-paper round close.
-4. S1-S4 FULL original51268 TERMINAL,scientific404354a/adoption7c91352,
-   25checks/HIGH327.286s,28live/frozen/Git/native bindings and43native
-   archive members verified.7PRIMARY images read. Seven optional notes
-   clarified only, frozen proof/report unchanged, no recovery/restart/waiver.
-5. Earlier S1-S4 statementv1f29e000 original60045 FAIL/HIGH397.759s for
-   overbroad r>2 remains preserved,19bindings34native. Corrected8ff270a/
-   a4085ce original56325 passed16HIGH224.59s,25bindings40native. All current
-   bounds retain exact1/(1-theta)<r<2/a as applicable. No endpoint boundedness
-   theorem or unproved D(A^.75) identity adopted.
-6. B1-B3 statement2135264/d6ef042 original90849:16HIGH234.987s,
-   12bindings27native. FULLb1d8e5b/2a22cc2 original68080:
-   21HIGH232.556s,17bindings32native. Canonical report/pass/correspondence/
-   readcoverage and every input/archive member verified. No requiredrepairs,
-   recovery/restart/waiver. Seven optional clarity notes applied only.
-7. B1-B3 uses the actual full physical phase: frozen primitive stopped at
-   true ell_m and constantly extended, good fullcountdeltaN<=1/B, signed
-   static exactlambda, actual r-budget bad blocks, lastpartial directbound
-   delta^(1-nu/r). All small errors vanish at FIXEDB/K/M before largeB.
-8. RadiusM_B is fixed EACH B, not compactness on unbounded balls. Both
-   powers r(3+m)-sr andr(3+m)+s(nu-r) negative at accepted threshold. Log
-   prefactor/B vanishes for polynomialK. No random supremum or diagonal.
-9. Existing raw-block-event-lower.md Section7(19)-(23) already proves
-   FIXED-MASK noise-only actual source/Young restart. FullB review checked
-   exact fit: its fullX_m equals currentE2 H_m(Phi_delta,J)+X_m^residual.
-   Do not re-prove the lowercone or use residual-only restart. Growing-cone/
-   originalPOINT upper transfer stillOPEN; F3 cannot be reversed.
-10.Controls:7actual free constant-sector40/70/Jordan (only a lowersector
-   calibration),12exactclocks,16specific thresholdrows,4worstlast exponents,
-   11toy scalarwave cases9interior+2endpoint. InducedEuclidean norm,
-   entry(1,1) primitive gap negative/(2,2) opposite. No certified enclosure/
-   actualCM/generalF/SPDE computation. Prior static60fibres and range
-   bubble guards retained at their precise scopes.
-11.Existing Mathlib COMPLETE powermean type/actualr andrnu exponents,
-   nonnegative/cardinality/positive-zero guards passed FULL application.
-   No new compiler/source/kernel/count73facts19seams/L0. New informal
-   FP-SIGNED-STATIC and FP-MEAN-PRODUCT boundaries/ledger9d7ca41.
-   Official companion decision4 pending; no package/registry/lease/HPC.
-12.Current native paths relativeROOT:
-   ../../../../.local/state/Le-AI-Lab/stratonovich-upper-static-scientific-v1
-   ../../../../.local/state/Le-AI-Lab/stratonovich-upper-product-statement-v1
-   ../../../../.local/state/Le-AI-Lab/stratonovich-upper-product-scientific-v1
-   All original handles terminal; no review needs restart.
-13.Canonical TeX/PDF unchanged; TeX SHA
+4. GL statement original51356 TERMINAL,12groupedchecks PASS/HIGH360.315s,
+   source3e8f791/adoptione5f71b5,23bindings38native members verified,
+   canonical report/pass/correspondence/readcoverage pass.9minor notes
+   adjudicated. No recovery/restart/waiver. Fulloriginal24498 running.
+5. FULL43live/frozen/Git/native workspace input bindings checked at launch.
+   After terminal result, validate canonical report/pass/correspondence/
+   readcoverage, rehash ALLinputs BEFORE clarity edits, archive EVERY native
+   member and read back each. Count actual members, never guess58.
+6. The finite local module lives in
+   lean-progress/local-checks/gaussian-tail-v1/StratonovichHAMAudit/GaussianTail.lean.
+   Header frozen in STATEMENT-FENCE.txt and GL finite-statement-header-v1.txt.
+   M>0,x>=M,C>=0,1<nu<2,4C<=M^(2-nu) gives
+   Cx^nu-x²/2<=-M²/8-x²/8. No absorption conclusion assumed as a premise.
+7. Actual finite application C=A1B^(3nu),M=M_B,x=headnorm on tail; cutoff
+   eventualB and delta>0 Gaussian integration remain ANALYTIC. Audit is
+   completeppall type/std3axioms, two validboundary/zeroC examples, false
+   MissingCutoff/Oversplit/WrongNormOrder exit1 with unsolvedFalse, fresh
+   owned replay5artifactpairs identical, localnative28members rehashed.
+8. Lean4.35.0 binarySHA
+   bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38,
+   Mathlib56a005855ea17e0b0958f73ec801ae140b0a1679.9pinned source/index
+   clean;8existingbuiltlib paths used (Cli lacks unneededlib). Initial
+   preflight assertion about all9libs occurred BEFORELean and is documented;
+   proof source itself compiled firsttry, no source/cache/dependency build.
+   Rawruntime ../../../../.local/state/Le-AI-Lab/stratonovich-gaussian-tail-local-v1.
+9. No new package/lease/registry/HPC or officialcompanion. Local standalone
+   checks authorized, companionL0/decision4 unchanged. Offline registry
+   searches incomplete;12metadata leads inspected and closest source types
+   read, REUSE Mathlib primitives. No donor imports/builds/copy or absence/
+   novelty claim. OldJointTilt4source/types byte-equalreviewede51432c.
+10.GL coarse constants A0=4Ctheta,A1 andeta_B explicit; distinct from
+   D1CM C0. Radial calibration C=0 is weight0, not A0. Full proof writes
+   2entrynu powermean, meanrnu/residualpnu, exactpnu equality/zero guards.
+   ALL eta_B fixedB independentJ; no localE1constant on unbounded head.
+11.Bulk uses E4q2 with R supOUTSIDEexpectation anddeterministic E_delta;
+   finitehead density exp(-||Phi||²/(2delta)) andballvolume. Tail keeps
+   2^J until delta at FIXEDJ. Cutoff m>3nu/(2-nu), B3 s>r(3+m)/(r-nu),
+   sameONEleftendpoint independentB/J. No diagonal/unbounded-ballcompactness.
+12.Controls18radial40/70 with6exactweight0chi calibrations,4Gaussian
+   normalizer integrals recover2^J,9exactaction maxima vsANALYTICMGFformula
+   (not a new MGF integral),8polyratio restatements M0=512,4entropy guards.
+   No certified enclosure/CM/profile/operator/SPDE computation. Provisional
+   M0 label corrected beforefreeze, no inflated independent count.
+13.Accepted B1-B3b1d8e5b/2a22cc2,21HIGH232.556s,17bindings32native;
+   S1-S4404354a/7c91352,25HIGH327.286s,28bindings43native, retained.
+   Existing fixedmask NOISE-ONLY rawrestart fit from raw-blockSection7:
+   fullblock=head+residual, not residualalone. No positivePsi/ground-family
+   or finite-source wrongCMshift assumption, F3 never reversed.
+14.CanonicalTeX/PDF unchanged; TeX SHA
    58b092b258d4f363f8bfa0a02dcf492dcb9c13e794dbcab440bf7b0529b53b7d.
-   Active All.bib symlink unresolved; canonical refdb keys read-only checked.
-   Selected Teschl SECOND/Friz sources and existing queued spectral ticket
-   retained; no duplicate/full-ingestion/novelty claim or six-repo edit.
+   Active All.bib symlink unresolved, canonical refdb keys read-only checked.
+   No sourcePDF/bib/wiki/sibling/Skorohod edit. ONE runningFULL review only.
 
 ## Concrete deliverables for the next session
 
-- Exact GL1-GL3 fixed-mask operator moment target with same-W global
-  noise/head/residual objects, own all-signed-control score, finite-J
-  Gaussian normalization/half-action and clear bulk/tail/limit order.
-- Calibrated finite Gaussian radial/action-tail checks, including J
-  dependence and missing/wrong half-cost signs. No H-valued Gaussian or
-  silent J-infinity before delta. Independent statement gate before proof.
-- Reuse accepted rawrestart/E2-E4/D1/B1-B3, then NEW FULL gate before any
-  Gaussian operator upper. All original growingcone/POINT/source gaps kept.
-- Keep original correct-scale upper/strong lower/model amplitudes/diagrams,
-  source-normalization decision and companion decision4 unchanged.
+- Authentic canonically validated FULL GL/source/type/actual-kernel report,
+  exact archive/allbindings, every finding adjudicated BEFORE adoption.
+- IfPASS/HIGH/no repairs, adopt ONLY fixedR operator upper, promote the one
+  finite fact to74accepted/20seams with provisional/localmirror ledgers
+  updated; sourceheaders/body unchanged. No officialpackage/companion gate.
+- IfFAIL, preserve report and repair precise findings; no confidence-only
+  retry or manual JSON repair outside canonical supported protocol.
+- After GL disposition, freeze/falsify ONE original growing-cone step,
+  starting from source/finitepropagation upper transfer using compact E
+  initial data and spatial average-of-SQUARES, or the E symplectic baseline.
+  growing-cone-route-v0.md is UNREVIEWED and its10ideas are not premises.
 
 ## Success criteria for the immediate next step
 
-A correct frozen Gaussian operator-upper statement on the ACTUAL fixedR
-raw Young flow, with the full noise-only block=head+residual, explicit
-finite-head density/action, polynomial cutoff and negative tail budget.
-Score uses own definition2Rate-||Phi||²/2, not authorL^* or a first moment.
-No pointwise/source/growingR upper is inferred from a fixed-mask norm.
+A real FULL scientific/source/type/application verdict on180bf1a with
+all43inputs/native/archive hashes and finite source/header/stdaxiom/replay
+bindings checked. Promote only the exact fixedR result/finitefact it passes.
+No originalPOINT/Gsharp/sourceenergy/firstmean identity inferred from it.
 
 ## Anti-success criteria
 
-No originalPOINT upper by reversingF3, square-of-average as average-of-
-squares, point Sobolev trace or fixedR model substitution. No growingR
-fixed finite smooth projection tail after accepted white guard. No raw
-H/L2-valued standard Gaussian/traceclass field, independent timeblocks or
-heaterrors, rank-dependent error guessed small from epsilon_J alone.
-No lost half action, J-dependent Gaussian prefactor dropped before delta,
-unbounded-ball compactness or arbitrary diagonal. No ignored velocity/
-clipped lastblock. No source-normalization repair, Skorohod/contact/HPC/
-companion/publication or premature whole-goal completion.
+No abstractH/L2-valued standard Gaussian or infinite-dimensional density,
+unbounded BanachLDP imported without hypotheses, raw Gaussian norm field,
+rank prefactor dropped beforedelta, J-dependenteta, arbitrarydiagonal or
+unbounded-ballcompactness. No absorption conclusion as formalhypothesis,
+header weakening or provisionalfinite-count promotion beforeappgate.
+No residual-only restart, source-law-only replacement, ignoredvelocity/
+clipped remainder, independent timeblocks/heaterrors, F3reverse, pointtrace,
+square-of-average as average-of-SQUARES or fixedR replacing originalgoal.
+No uniformR fixed finite smooth projection tail after white counter.
+No source-normalization repair, Skorohod/contact/HPC/companion/publication.
 
 ## What the previous sessions produced
 
@@ -1213,53 +1222,72 @@ upper planning refreshed48be7f8/9d7ca41 UNREVIEWED. All jobs terminal;
 NoRoute/pushpending, original full sharp/source goalACTIVE. No TeX/PDF/wiki,
 source repair, contact, Skorohod, HPC or companion/publication action.
 
+2026-10-31 GL Gaussian operator currentcycle: exact3e8f791 statement and
+scalar finiteheader frozen/falsified,12groupedchecks/HIGH360.315s accepted
+ate5f71b5;23bindings38native members verified. Local cutoff_density_split
+compiled firsttry at fixedheader, completeppall/std3axioms,3falsevariants
+rejected,5replaypairs and28native members verified, source2ec5f3c;
+73accepted/19seams plus1PROVISIONAL, no package/companion. Full actual GL
+proof180bf1a now candidate with SAME-W noise-only restart, BJindependence,
+finiteheadhalfaction, Borel/finiteness/coercivescore, exactcoarse/bulk/tail2^J
+anddelta->J->B operatorupper. FULL original24498 RUNNING at15:13:27,
+43inputs frozen/launchbound, no verdict/adoption yet. Currentauthority/
+launchdac8dc9. Growing-cone route20afc3a is UNREVIEWED, no premise. Userasked
+closeness: full sharp-point goal not yet near certified completion; major
+growing-cone/source-normalization gaps honestly reported. TeX/PDF/wiki
+unchanged, NoRoute/pushpending, fullgoalACTIVE, no contact/HPC/sourcefix.
+
 ## Repo & git state at handoff
 
 Root master before this HANDOFF-only successor:
-43972d020dd3b6b0a8dbe31cf4b3e25dce9a10b9; prior0accd3d plus operational handoffs pending separately.
+64e6fb03f818416b04ed1a32d2b86fbd822b5a22; prior0accd3d plus operational handoffs pending separately.
 Last VERIFIED remote604c60f2f8dc6d1a7635b9af224bbb6e5751d379.
 NoRoute prevents fetch/SSH/push, no fresh parity/sync/master merge claimed.
 ACTIVE isolated research/fixed-mask-young-20261031 CLEAN HEAD
-9d7ca41c6a5ee4ab38ff1621e9f9b0bb86af9da0 at
+dac8dc9bbe4a22ebe01cc17f85d865b28645e5c5 at
 ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave.
-All owned payload committed; no foreign WIP/reviewer/Lean/Git/HPC process.
-Root HANDOFF loader entry; inherited isolated HANDOFF/rootmaster math stale.
-Wiki ../SPDEs-wiki/content/projects/stratonovich-ham-second-moment.md exists,
+All owned payload committed. ONE FULL native review24498 RUNNING atcapture,
+source180bf1a, path
+../../../../.local/state/Le-AI-Lab/stratonovich-upper-gaussian-scientific-v1.
+No foreignWIP/Lean/Git/HPC process. Root HANDOFF loader entry; inherited
+isolated HANDOFF/rootmaster math stale. Wiki
+../SPDEs-wiki/content/projects/stratonovich-ham-second-moment.md exists,
 unchanged. No wholepaper/circulation/publication clearance.
 
 ## Operating notes
 
-Next Gaussian planning proposes M_B=M0B^m with m>3nu/(2-nu) for a tail
-cutoff, combined with accepted B3 s>r(3+m)/(r-nu). These GL tail formulas
-are UNREVIEWED. The factor2^J in a possible finite-J tail integral must
-remain until delta->0 at FIXEDJ, then J, thenB. No rank-dependent eta:
-D1 only removes each fixed residual coefficient in its iterated limit.
-Use actual Q_J/head independence, not independence across physical blocks.
+GL scoreS_R_all is OWN supALLsigned rawH controls2Rate-||Phi||²/2. It is
+not authorL^*, actualp1 or acceptedpositive lower-score equality. The tail
+uses explicitcoarse growth, NOT E1 localconstants at unboundedhead norm.
+Global endpoint itself has noB/J, essential for iterated upperbounds.
+ZeroGamma separatefreeJ0case. Actualsource limits fixed-delta beforedelta.
 
-The accepted fixed-mask rawrestart is separate from the unresolved upper
-transfer to the original unmasked point. Later source stationarity,
-spatial average-of-SQUARES and finite propagation on a growing cone may be
-needed. Do not replace them by bounded O_phi square or F3 reverse. Growing
-R compactness/localization/entropy remains the substantive later issue.
+Remaining originalPOINT work is substantial. Proposed upper transfer must
+use a mask covering the entire growing backward cone and compact E data
+matching(1,0), stationarity/average-of-SQUARES and fixed-delta source limits,
+not pointSobolev traces or F3reverse. The routefile's E symplectic baseline,
+uniformRtime/frequency regulators, quantitativeSchatten normanchors and
+localIMS Gaussian Laplace questions are UNPROVED; no tensorcompactness or
+finite-head density for an infinite spatial head may be assumed. Screen
+one coherent component with primary/source/falsification gates first.
 
-Intended source normalization/domain is UNKNOWN; see
-reviews/2026-10-28-source-normalization/adjudication-v2.md. Literal printed
-interval discrepancy under meaningful finite-energy reading remains. No
-repair or separate(1.24)proposal adopted. Own variational lower/signed
-operator score not identified with intended author constants or actualp1.
+Intended author normalization/domain UNKNOWN; see
+reviews/2026-10-28-source-normalization/adjudication-v2.md. Literalprinted
+interval discrepancy remains; no repair or separate(1.24)proposal adopted.
 No author correspondence authorized. Runtime/hash/archive evidence, AI
-review and Lean kernels have separate scopes. Official companion decision4
-pending; standalone local checks authorized. No cluster/publication.
+review and Lean kernel facts have separate scopes. Companiondecision4
+pending; authorizedstandalone local checks do not create a companion.
 
 ## Risks to monitor
 
-Current Gaussian-upper outline is UNREVIEWED. Actiontails/Laplace/
-variational optimization, growingcone/localization/entropy/POINT upper,
-intended source constants/normalization/exactlimit remain real gaps.
-FixedR static/mean-product results do not bypass the white uniformR guard.
-Preserve original model/covariance amplitudes, both phase components,
-self/unequal/empty Stratonovich diagrams and source/time-limit order.
-Network sync remains pending, not mathematical impasse. Preserve both
-histories/foreignWIP, no destructive workaround or fresh parity claim.
-Full original goalACTIVE, not complete or blocked. No contact/Skorohod/
-sourcefix/HPC/companion/publication/whole-paper certificate.
+Current GL completeproof andnewfinite application are CANDIDATE underFULL
+review; status cannot be inferred from a launch/statefile. Original
+POINT/growingcone/localization/entropy/signedpositive-score/sourceconstant/
+normalization/exactlimit remainOPEN even if GLpasses. No completiondate
+promised. Preserve originalGamma/amplitudes, bothcomponents, self/unequal/
+emptyStratonovich diagrams and source/time-limit order. WhiteuniformR
+fixedsmoothprojection obstruction retained, not a whole-goal no-go.
+Network sync pending, not mathematicalimpasse. Preserve bothhistories/
+foreignWIP, no destructiveworkaround or freshparityclaim. GoalACTIVE,
+not complete/paused/blocked. No contact/Skorohod/sourcefix/HPC/companion/
+publication/whole-paper certificate.
