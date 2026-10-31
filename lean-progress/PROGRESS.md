@@ -507,3 +507,18 @@ Next scalar target is unreviewed. Two potential new finite moment/rational
 seams are only proposed, not Lean declarations; statement/reuse/compiler/
 replay/negative-controls/application gates precede any count change.
 No official package/companion/lease/registry/HPC transaction.
+
+## All-alpha finite moment/rational pilot — local application pending
+
+Two independently fenced public scalar headers compiled/audited at pinned
+4.35.0/Mathlib56a0058, fresh owned replay5matching artifacts, full pp.all
+types/standard axioms identical and4semantic False controls. Exact prior
+search is bounded/incomplete; reuse existing field/order/tactic primitives,
+no absence or competing-library claim. Initial compiled attempt FAILED the
+warning gate on redundant sequence focus; both full attempts preserved.
+Successor changes proof body only, exact headers match. No linter disabled.
+
+71acceptedfacts18seams remain, plus2PROVISIONAL facts pending FULL actual
+type/application gate. Source local-checks/all-alpha-moment-v1/; Gaussian
+normalization/integral/IBP/CS/derivative and actual point consumer ANALYTIC.
+No official package/companion/lease/registry/HPC transaction, L0 PROPOSED.

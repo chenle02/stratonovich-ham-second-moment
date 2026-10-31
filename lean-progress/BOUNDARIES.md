@@ -187,3 +187,12 @@ No new kernel run/count/formal physical-integral or source constant claim.
 Omega>1, intended source-domain/normalization, sharp upper and exact limit
 remain open outside previously accepted scopes.71facts18seams/L0 unchanged;
 no official package/companion/lease/registry/HPC/publication gate.
+
+AllAlphaMoment provisional finite seam (2026-10-31): moment_lower and
+rational_gap verify ONLY the exact scalar mean/CS budget and positive
+rational derivative-gap algebra. Normalized joint density/finiteness/IBP/
+CS expectation premises and differentiation/J monotonicity/old V/actual
+point applications remain informal analytic obligations. Local clean types/
+axioms/replay/4False controls pass, FULL application review pending. No
+formal Gaussian/integral/SPDE theorem; accepted count remains71/18 plus2
+provisional facts. L0 PROPOSED/no official package/companion/HPC unchanged.

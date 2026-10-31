@@ -1,0 +1,76 @@
+{
+  "status": "LOCAL_COMPILE_AUDIT_REPLAY_CONTROLS_PASS_PENDING_APPLICATION",
+  "results": {
+    "original_compile": 0,
+    "original_audit": 0,
+    "LostHalf": 1,
+    "MissingMean": 1,
+    "WrongGap": 1,
+    "ZeroA": 1,
+    "replay_compile": 0,
+    "replay_audit": 0
+  },
+  "source_sha256": "86dfa962b850ab4f7b3d0081a037b420111a84c1c55db09fe762a927b1cc57e6",
+  "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "lean_binary_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+  "pins": [
+    {
+      "name": "mathlib",
+      "revision": "56a005855ea17e0b0958f73ec801ae140b0a1679"
+    },
+    {
+      "name": "plausible",
+      "revision": "dfa4f38190d07c37e315953e08b90fe2d95b3c24"
+    },
+    {
+      "name": "LeanSearchClient",
+      "revision": "d6b4c7be5be75ec4917c873ac50c756dc1436372"
+    },
+    {
+      "name": "importGraph",
+      "revision": "a41f0e9a4dea23188ea9cc1c41ac9f8bbafe0b93"
+    },
+    {
+      "name": "proofwidgets",
+      "revision": "df72b022e558978a1c50264cfc4d7fec86fa8e04"
+    },
+    {
+      "name": "aesop",
+      "revision": "4a174c490d8707121c4a9290800489f105d85e07"
+    },
+    {
+      "name": "Qq",
+      "revision": "dce0ad79c486cb1fb504af04f953c3466b0c6db8"
+    },
+    {
+      "name": "batteries",
+      "revision": "66e469188fe07963e5cf666c7d4433f45b8131c5"
+    },
+    {
+      "name": "Cli",
+      "revision": "c24fe6078c630e89b489bffe59b3e20ac30d12c8"
+    }
+  ],
+  "read_only_dependency_hashes": {
+    "lake-manifest.json": "baaec4d3288a0b2553e70ca5e261f52fce9e91270b294127cf5617ed2b89a0fc",
+    "lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    ".lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic.olean": "589150e06f904bce5b615763147d60460598bee3ed3c5307ea6f7217d1944ce2"
+  },
+  "replay_object_hashes": {
+    "original": {
+      "AllAlphaMoment.olean.server": "abd0135a54a73d8d8f91c030657ede15f193486c57d34e545a2465fd55ea9657",
+      "AllAlphaMoment.olean": "4b1773f209af71d33fef16a04ba4da494d79098f6ceea292f25207cf253191af",
+      "AllAlphaMoment.ir": "1c66d133ed4b89a2faada6d99916b4d4d4e00b1680092b760a6d59bd0c0dcd30",
+      "AllAlphaMoment.olean.private": "d63dff45abbe3d9840d6b95edd7ce5cea0ec191f0a91a25c29b1d1e727e4b963",
+      "AllAlphaMoment.ir.sig": "1462976738a27177bf1115f31b0de3d54d4745a32ebe988023977f0506fb4a14"
+    },
+    "replay": {
+      "AllAlphaMoment.olean.server": "abd0135a54a73d8d8f91c030657ede15f193486c57d34e545a2465fd55ea9657",
+      "AllAlphaMoment.olean": "4b1773f209af71d33fef16a04ba4da494d79098f6ceea292f25207cf253191af",
+      "AllAlphaMoment.ir": "1c66d133ed4b89a2faada6d99916b4d4d4e00b1680092b760a6d59bd0c0dcd30",
+      "AllAlphaMoment.olean.private": "d63dff45abbe3d9840d6b95edd7ce5cea0ec191f0a91a25c29b1d1e727e4b963",
+      "AllAlphaMoment.ir.sig": "1462976738a27177bf1115f31b0de3d54d4745a32ebe988023977f0506fb4a14"
+    }
+  },
+  "scope": "Two finite scalar real inequalities only; complete public types/standard axioms/fresh owned replay/4semantic false controls. No integral/probability/derivative/SPDE/kernel-source application or official package gate. Frozen read-only dependency cache, no rebuild/latest-version claim."
+}
