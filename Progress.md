@@ -6842,3 +6842,24 @@ growing-cone/POINT/sharp-upper/sourceconstant/exactlimit theorem follows.
 Full original goalACTIVE; canonicalTeX/PDF unchanged. No contact/Skorohod/
 HPC/sourcefix/companion/wiki/bib/publication/wholepaper clearance. NoRoute,
 localisolated/pushpending/no fresh parity or rootmaster integration.
+
+### E1-E4 actual nonlinear residual statement packet frozen — 2026-10-31
+
+Previous goal turn PROGRESS: D1 actual fixedR exponential theorem accepted,
+0dce26f/864d6d9. Full original sharp/source goalACTIVE. New E1-E4 target
+includes exact multiplicative LEFT Young perturbation with physical endpoint,
+rank-uniform mean-good/bad Lr budgets, actual retained-head decomposition,
+uniform CM-ball residual exponential rate and orthogonal-head conditioning.
+Statements ONLY; no long proof before independent statement gate.
+
+Fresh wiki CLI search/cite (existing .venv) and synthesized chapter4/concept
+reads; held primary printed13/61-62 rendered/viewed, exact4.1-4.3 and Banach
+infinite-dimensional context. REFRAME known-calculus application, not novelty.
+15exact nilpotent rows/45left-multiplier checks;6nontrivial cases reject BOTH
+wrong conjugation/product orders,9zero rows only controls. Full induced
+linfinity norm, not largest entry, no actual wave/CM proof. Inherited8scalar
+controls preserved. Existing finite Holder type reused, no new kernel/count.
+
+Frozen19 inputs (16TEXT+3PRIMARY images); statement/source/type/application
+gate NEXT. No contact/Skorohod/HPC/sourcefix/companion/TeX/PDF/wiki/bib/
+publication. Freshfetch/<HUB>SSH NoRoute, localisolated/pushpending.
