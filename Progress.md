@@ -6620,3 +6620,20 @@ direction, signed controls, variational/source dictionary remain obligations.
 Full original all-Gamma sharp objective unchanged, not replaced by a fixed
 mask/scalar proxy. No new kernel/count/package/HPC/contact/Skorohod/sourcefix/
 TeX/PDF/wiki/publication. Application-summary review path normalized to repo.
+
+### Upper U-CM route sharpened to proposed C1-C3, not proved
+
+Freeze target-v1 in upper-gaussian-projection-screen, preserving v0 and9
+actual scalar controls. Proposed spatial route starts from ACCEPTED physical
+H1 covariance product bound, dyadic H^s_sp (alpha/4<s_sp<1/2), localized
+Rellich and compact CAMERON multiplier map, not an instantaneous Gaussian
+field. Proposed temporal compactness uses covariance/Young convolution and
+L2-square-root/interpolation; vector-valued/tensor/density obligations explicit.
+Exact proposed exponents1/(1-theta)<r<2/a,1/theta<=p<2; literal slow-noise
+projection/fast-pullback covariance should yield sqrt(delta)*epsilon_J.
+
+All C1-C3 UNREVIEWED; no long proof or new operator/upper theorem. First
+wiki/synthesis/held-primary-source crosswalk, actual control falsification
+and independent statement gate. Full original Gamma/point-upper/cone/
+nonlinear/source/time obligations and intended dictionary remain. No new
+kernel/count/package/HPC/contact/Skorohod/sourcefix/TeX/PDF/wiki/publication.
