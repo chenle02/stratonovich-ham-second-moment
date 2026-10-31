@@ -1,126 +1,88 @@
-Last updated: 2026-10-31 18:44 UTC (Codex)
+Last updated: 2026-10-31 20:08 UTC (Codex)
 
-Full original all-model sharp/source goal ACTIVE. GC point-transfer,SA
-expected E-noise anchor and SP symplecticbaseline now independently
-accepted; nonlinear uniformR moment and sharp/source constants stillOPEN.
+Full original all-model sharp/source goal ACTIVE. BT transfer accepted;
+sharp uniform spectral/product and source constants remain OPEN.
 
 ## ⏭ Next session: where to stand and what to do
 
-Enter ACTIVE isolated research checkout
+Enter the ACTIVE independent research checkout
 ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave,
-branch research/fixed-mask-young-20261031,CLEAN pushed HEAD
-21984e220895e2ec69d8e8a2336f4e4747fe11f0. Its Progress.md is the current authority; rootmaster math
-and the isolated checkout's inherited HANDOFF are historical. A CLEAN
-independent <HUB> clone now exists at the SAME home-relative location,
-with actual research HEAD/tracking parity; canonical master is preserved.
+branch research/fixed-mask-young-20261031,clean LOCAL HEAD
+f6bc1842130296851029832c90559f47f8610403. Its Progress.md is authoritative;
+root master math and inherited research HANDOFF are historical.
 
-FIRST freeze and falsify ONE exact Borell-tube/Rayleigh transfer statement
-for the ACTUAL E Gaussian block law. Read unreviewed conditional plan
-reviews/2026-10-31-radius-stochastic-anchor/borell-tube-next-v0.md.
-Keep covariance map L_delta=sqrt(delta)H_delta,baseball b_delta=2E||X||,
-true CM seen-space norm,measurable closed enlargements and halfaction
-r^2/(2delta) explicit. Test scalar Gaussian MGF,wrong CM scaling,
-degenerate directions,and polynomial versus exponential Gaussian cells.
-Primary Friz-Hairer11.6 printed190 already text/visually read; this NEW
-application still needs its OWN source/statement gate before long proof.
-Do not promote the finite-profile active-set idea or deterministic uniformE
-spectral/product envelope from that plan without proof and review.
+FIRST freeze and falsify ONE exact uniform-E signed spectral/product
+interface, using the explicitly UNREVIEWED bounded design
+reviews/2026-10-31-borell-tube-transfer/uniform-e-spectral-next-v0.md.
+Focus E multiplier constants, scalar-time averaging tensor bound, actual
+SP mean denominator and true last-block estimates. Do not promote old
+fixed-R F constants to uniform-R E constants without the new application
+proof/source gate. Obtain scoped statement/source review before long proof.
 
-NEW ACCEPTED direct ingredients:
-GC scientific4c6d63e/adoption8b3dd25:13PASS/HIGH377.833s,22bindings37native.
-SA scientific8cf62b0/adoption1c9a962:21PASS/HIGH335.64s,18bindings33native.
-SP scientificd64978d/adoption9ad7993:21PASS/HIGH379.264s,30bindings45native.
-Each has no requiredrepairs,complete canonical report/coverage validation,
-every archive member hash checked and optional findings adjudicated.
-U scientificf54e92b/adoption86c2684 remains accepted21HIGH348.303s.
-All native review/Git/compute/Lean handles TERMINAL; no live wait/restart.
-Full original all-model sharp/source goal ACTIVE and INCOMPLETE.
+BT1-BT3 is now ACCEPTED: scientifica1c90c7/adoptionf6bc184,actual
+Opus5.5/HIGH,20checksPASS,508.072s,no requiredrepairs. All4minor findings
+adjudicated;43five-way bindings and58nativearchive members verified before
+optional clarity edits. Exact Gaussian-input transfer/coarse bound only.
+Sharp uniform spectral envelope,signed-positive optimization,intended source
+normalization/constants and conditional exact limit remain OPEN.
 
 ## Pre-flight checks
 
-1. Read AGENTS.md,PROJECT-GOAL.md and ACTIVE Progress.md. Preserve original
-   allGamma/d1/2/3/amplitude sharp constants,source normalization and every
-   decision point. No correspondence/Skorohod/HPC/public release.
-2. Root before this HANDOFF-only successor 35a21c4127b013a2c67da7641ad804b8b4efd159.
-   Active pushed HEAD above. Inspect local/remote dirty states and preserve
-   both histories/foreign WIP; no research/master merge is claimed.
-3. <HUB> network recovered. All99pending research and29pending root
-   commits were pushed,then every new unit atomically. Canonical<HUB>
-   master35a21c4 matched origin/master clean before this handoff successor.
-   Isolated research clone was created from privatebareorigin after path/
-   disk checks (1.4T free); actual local/<HUB> research HEAD parity and
-   0/0 verified at21984e2. Receipt <HUB>-research-sync-v1.json records
-   the preceding a7dab45 checkpoint. After later branchpush,fetch/FF the
-   CLEAN remote research clone too; never overwrite future dirty work.
-4. Current GC proof notes/growing-cone-point-upper-transfer.md: exact
-   original pointmoment=expected raw E spatialL2square/v_d,source cone/
-   compactdata identification,mandatory E/F restriction,fullsource F(11),
-   actualfastlaw/canonicalscale and polynomialdata reduction. NOT growingR
-   normrate/sharpconstant. All6FULL/8statement notes adjudicated. No F3reverse.
-5. Current SA notes/radius-stochastic-driver-anchor.md: actual whole-space
-   envelope radius^(d/q),sameW E firstdriver allmoments sqrt(v)R^(d/Q),
-   correlated weighted-block expectednorm->0 with Q fixed and allthree
-   ideal/timegap/anchor conditions. E ONLY,not F constantdata columns.
-   Reviewer's F-column R^d/2 heuristic is NOT an adopted no-go theorem.
-   All6FULL findings adjudicated,no numeric/Lean rerun or count increment.
-6. Current SP notes/e-phase-symplectic-baseline.md: actual E source/raw/
-   completedmean symplecticform,norm>=1,actualYoung/freeinverse. Exact
-   fastdirection delta^-a/2 T_m*Phi matches completedslowmean ONLYuptoell,
-   thenstopping; truepartial/emptyendpoint. All9FULL/11statement findings
-   adjudicated. No controlnormuniformdelta or nonlinearratio theorem.
-7. U notes/uniform-e-cameron-regulator.md: uniformR E mean,translation/
-   heat/TRUEfrequency/time tensor tails and actual weighted Cameronembedding.
-   Infinite spatial retainedrank,not finitehead density; exact fullsource
-   projection i_I P_ret i_I*,not raw time-indicator multiplication.
-8. Friz-Hairer2020 citekey/DOI/bookPDF/TeX/render hashes already pinned in
-   upper-gaussian-projection-screen and residual-exponential reviews. New
-   tube route uses PRIMARY11.6,not merely normFernique11.7. Footnote on
-   measurable enlargements cannot be ignored. No new reference/bib intake.
-9. All native originals80328/94645/58631/2346 are TERMINAL accepted at their
-   respective scopes. Original quota63674/pre-provider picker stops remain
-   nonreviews. Archives/receipts/readledgers committed; no oldhandle polling.
-10.Fresh account selection each dispatch: one familiar alias changed actual
-   identity,then original slot WEEK100 despite5h0/statusok. Existing <plan removed> profile passed actualdoctor/READY and mandatorysame-model reviews.
-   Standing authorized configured-account recovery; never use a spent
-   window or infer identity by alias. No newaccount/credentialcopy/API/model/
-   threshold waiver. Verify hostnativeCLI/firstParty/auth before future call.
-11.74acceptedfinitefacts20seams/L0 PROPOSED unchanged. New GC/SA/SP are
-   reviewed INFORMAL analysis; FP boundaries appended. Complete oldscalar
-   source/type applications only,no newcompiler/Leanpackage/lease/registry/
-   cluster. Companion decision4 stillpending. Canonical TeX/PDF unchanged.
-12.Timely canonical lessons pushed Labcee8605b then31060386,localorigin0/0
-   clean; validation/generatedsearch/ClaudeOpenCodeCodexbytes/strictbudget
-   pass. <HUB>Lab has separate pendingtelemetry history,not rewritten;
-   no whole-fleet parity claim. No duplicate skills needed for same lessons.
+1. Read AGENTS.md,PROJECT-GOAL.md and ACTIVE Progress.md. Preserve ALLGamma,
+   dimensions1/2/3,amplitudes and original sharp/source goal and decisions.
+2. <HUB> became unreachable AFTER previous parity. Research is2ahead/0
+   against the last fetched origin6937719; new freeze/adoption pushes failed
+   NoRoute. Root before this HANDOFF-only successor611c005 was clean. Do
+   not infer current remote state from old tracking refs. Retry safe push
+   and canonical+independent research-clone sync when host returns; preserve
+   any remote dirt/history. No reset,drop or automatic research/master merge.
+3. <HUB> independent research clone is at the same home-relative state
+   path. Last verified actual researchHEAD6937719,canonicalmaster611c005.
+   Do not use Dropbox-linked worktree metadata across hosts.
+4. BT proof notes/borell-tube-rayleigh-transfer.md and full adjudication are
+   accepted only at their written scope. PRIMARY Friz-Hairer2020 Theorem11.6
+   printed190,closed seen-CM ball/exact sqrt(delta)mean; both original page
+   renders included/viewed. Fixed-delta compactness is not uniform-R compactness.
+5. U uniform E mean/time tensor,GC originalpoint transfer,SA expected E-driver
+   anchor and SP actual symplectic/norm baseline remain accepted direct inputs.
+   E budgets do not control F constant columns. No raw point trace.
+6. Native43370 FULL and22469 statement TERMINAL0. Never poll/restart them.
+   Fresh configured-account doctor plus actual same-model availability each
+   future launch; no quota/identity inference from alias or 5h-only status.
+   Current attempt observed <account removed> via <account removed>,
+   actualOpus5.5/HIGH; old profiles/identities are historical,not guarantees.
+7. No new numeric/CAS/Lean/compiler this proof.74facts20seams/L0 unchanged.
+   Old scalar GaussianTail and finite Holder full public types reused with
+   exact guards; Gaussian/AWS/operator steps are reviewed INFORMAL analysis.
+8. Canonical skill lessons pushedLab67c96801/bdf09d4a: compare before rounding,
+   calibration versus falsification,distinct configurations not duplicate
+   rows. Description/skill/projection/generator/strictbudget checks pass;
+   Lab locally clean/tracking0/0. No whole-fleet <HUB>Lab parity claim.
 
 ## Concrete deliverables for the next session
 
-- ONE exact conditional Gaussian-tube/Rayleigh transfer target with source
-  Friz-Hairer11.6,actual E law/CM scaling/closedset measurability and scalar
-  falsification before proof; its independent gate is the immediate task.
-- Then a radius-uniform deterministic E spectral/product envelope is a NEW
-  obligation; old F/fixedR results are not automatically that theorem.
-- Keep original signed-positive variational/source dictionary/sharp/exactlimit
-  gaps and all decision points explicit. No easier fixedR replacement goal.
+- Exact uniform-E target/falsification contract and source/type crosswalk,
+  before a long successor proof. Distinguish static form/flow E application,
+  scalar-time averaging,mean product and arbitrary residual comparisons.
+- Preserve accepted BT proof/report/archives and all four dispositions.
+- Restore research/root push and actual <HUB> HEAD parity when reachable,
+  preserving independent clone and canonical master roles.
 
 ## Success criteria for the immediate next step
 
-A reviewer-grounded conditional transfer from the actual E Gaussian block
-law to a one-dimensional control-radius integral with HALF raw Gaussian
-action and the correct delta normalization. It must retain measurability,
-coarse tail coercivity and mean error. No nonlinear uniformR/sharp/source
-constant conclusion is established by the unreviewed plan alone.
+One coherent target with explicit original-model parameters, E-only norms,
+uniform-R quantifiers, true partial/empty clocks, both velocities and limit
+order; falsification tests capable of rejecting wrong claims. Source and
+statement gate required before proof. No claim of sharp constants yet.
 
 ## Anti-success criteria
 
-No new proof from an unreviewed route,no Gaussian H-valued variable or
-finite density on an infinite head,no outer-measure/compactness shortcut,
-no wrong sqrt(delta) mean shift or lost halfaction. No F budget inferred
-from E,constantdata substituted for compactEdata,pointtrace/F3reverse,
-scalarblockmoment multiplication,independent temporal blocks or arbitrary-
-phase covariance monotonicity. No p1 identity from auxiliary labelscore,
-source-energy/1.24 repair,Skorohod/contact/HPC/companion/publication or
-premature whole-goal completion. Keep every failed/old review immutable.
+No fixed-R F theorem silently relabeled uniform-R E; no uniform spatial
+compactness from scalar-time compactness; no independent blocks or sum of
+fast SP costs; no small residual assumed Hamiltonian; no max over block
+norms from an averaged budget. No source energy repair, p1 auxiliary-label
+identity,Skorohod work,contact,HPC,companion/public release. No current parity
+or passed proof gate inferred from an availability probe or local commit.
 
 ## What the previous sessions produced
 
@@ -1329,53 +1291,54 @@ no F-growth heuristic adopted,no p1labelscore identity,source normalization
 stillOPEN. Full original goalACTIVE,no livejobs/contact/HPC/companion/
 TeX/PDF/wiki/bib/sourcefix/publication.
 
+- 2026-10-31: BT statement15f8a97/adoption6937719 and COMPLETE proof
+  scientifica1c90c7/adoptionf6bc184 accepted at exact scopes. FULL20HIGH,
+  508.072s,no requiredrepairs;43five-way bindings,58archive members verified;
+  all4minor notes adjudicated. New notes/borell-tube-rayleigh-transfer.md,
+  Progress.md and FP-BORELL-TUBE boundary retained. Uniform-E successor
+  design only,not theorem. Durable existing numerical skill updates
+  Lab67c96801/bdf09d4a pushed/validated/synced. <HUB> became unreachable,
+  new research commits locally safe but2ahead; original sharp/source goalOPEN.
+
 ## Repo & git state at handoff
 
-Root master before this HANDOFF-only successor:
-35a21c4127b013a2c67da7641ad804b8b4efd159. Root canonicalmaster/<HUB>master were clean and at
-origin parity; research waves are stored separately,not merged to master.
-ACTIVE local research/fixed-mask-young-20261031 CLEAN pushed HEAD
-21984e220895e2ec69d8e8a2336f4e4747fe11f0 at
-../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave.
-Independent <HUB> research clone at the same home-relative path is
-CLEAN at actual sameHEAD/tracking0/0. Canonical<HUB>master remains
-separate; after this handoffpush it is fetched/pulled and paritychecked.
-No foreignWIP/running reviewer/Lean/compute/Git/HPC job at capture.
-Wiki ../SPDEs-wiki/content/projects/stratonovich-ham-second-moment.md exists,
-unchanged; no whole-paper/circulation/novelty/publication clearance.
+Root before this dedicated HANDOFF-only successor:
+611c005900b57c39f966a18329eb24aa629ff9b6,master,clean. Latest research
+f6bc1842130296851029832c90559f47f8610403,clean,LOCAL2ahead/0 against last
+fetched origin/research/fixed-mask-young-20261031=6937719. Freezea1c90c7 and
+adoptionf6bc184 push attempts failed NoRoute. This root successor also needs
+push if host remains unreachable; do not claim it synchronized.
+
+Last actual <HUB> parity: canonicalmaster611c005 and independent
+research clone6937719. New attempt archive and exact source bindings are
+locally committed. Canonical TeX SHA58b092b258d4f363f8bfa0a02dcf492dcb9c13e794dbcab440bf7b0529b53b7d
+unchanged,trackedPDF unchanged; no .tex build needed for Markdown-only work.
+Private origin remains <HUB> bare repository. No math payload merged
+into root master, wiki or a circulation document.
 
 ## Operating notes
 
-Model reviews and Lean kernel receipts have separate scopes. GC/U/SA/SP
-are accepted internal analytic components; source constants and the final
-uniformR operator moment have NOT been proved. Final DeepSeek cold read,
-manuscript/PDF/wiki integration and human clearance remain separate.
-
-For new scientific dispatch,use fresh actual doctor and authorized configured
-capacity,requiredOpus5.5/HIGH/frozenpacket/newimmutableoutput. If a picker
-cannot read oldprofiles,record that preflight; do not pass empty/best literal
-or use a knownspent account. Only verified existing-account recovery is
-standingauthorized; no API/provider/model fallback or setup edit. Oldnative
-expanded directories were on the original host; COMPLETE tracked archives
-are the cross-host evidence. Do not replay completed reviews for a better vote.
-
-Keep the source normalization/domain discrepancy and arXiv-version trap:
-read sources/SOURCE-MANIFEST.md and source-normalization adjudication. Author
-version has two-sided p1 bounds; no arXivv1 exact theorem or unadopted1.24
-proposal is an input. Ownsignedscore/labelone is not authorL* or actualp1.
-All.bib trackedlink remains read-only; isolated-location link may be unresolved,
-use canonical refdb as read-only input and add no speculative bibliography.
+Full original goal ACTIVE; no budget, no completion date or scope shrink.
+Use nativefirst-party Opus5.5/HIGH frozen-packet reviews,adjudicate every
+finding, preserve failed attempts. Final independent cold reader required
+for circulation; component acceptance is not whole-paper clearance.
+User asks timely durable lessons: update existing canonical skills promptly
+at stable evidence,validate/sync/push; avoid duplicate skills/workflow churn.
+Research edits stay outside Dropbox in the independent checkout. Use own
+path allowlists,atomic commits,then safe push/canonical+isolated GW sync.
+No messages/email/Telegram/amsg or source correspondence are authorized.
 
 ## Risks to monitor
 
-Original nonlinear uniformR operator upper,sharp variational comparison,
-intended author energy/domain/normalization and conditional exactlimit remain
-OPEN. Borell enlargement may avoid finitehead density only if all actual-law,
-deterministic-envelope and tail/application obligations are proved and gated.
-Finite-profile positive-Gram comparison is an IDEA ONLY; variable optimized
-controls require uniform time approximation,not fixed-profile convergence.
+Original source-internal normalization discrepancy remains unresolved;
+author version gives two-sided p1 bounds,not the arXiv-v1 exact claim. Do
+not identify own full-kinetic/half-action scores with intended author L*.
 
-Source/liveaccount identity may change by alias; network recovery is current
-evidence,not a future guarantee. Reaudit remote dirt before every fetch/FF,
-never reset/drop another writer's work. GoalACTIVE,not complete/paused/blocked.
-No completion date promised and no correspondence/publicrelease authorized.
+BT gives a coarse finite Rayleigh integral with exact raw half action. It
+does not supply the sharp integrated spectral envelope or signed-positive
+variational equality/mask removal. Scalar kernel/CAS/finite diagnostics
+certify none of the infinite-dimensional analytic assertions.
+
+<HUB> NoRoute is operational,not a mathematical impossibility or a
+reason to reset scope. Both new research commits and root handoff may be
+unpushed; retain explicit paths and verify actual remote HEAD on recovery.
