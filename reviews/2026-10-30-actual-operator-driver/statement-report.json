@@ -1,0 +1,100 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "reviews/2026-10-30-actual-operator-driver/target-v1.md: full, lines 1-122",
+    "reviews/2026-10-30-actual-operator-driver/falsification-v1.md: full, lines 1-31",
+    "reviews/2026-10-30-actual-operator-driver/worker-honesty-v1.md: full, lines 1-19",
+    "reviews/2026-10-30-actual-operator-driver/check-diagnostics.py: full, lines 1-55",
+    "reviews/2026-10-30-actual-operator-driver/diagnostics-v1.json: full, lines 1-234",
+    "reviews/2026-10-30-actual-operator-driver/canonical-model-context.txt: full, lines 1-39",
+    "notes/actual-two-variance-forms.md: full, lines 1-412",
+    "notes/compact-sobolev-cutoff.md: full, lines 1-388",
+    "notes/finite-gaussian-schatten.md: full, lines 1-236",
+    "notes/higher-dimensional-hs-obstruction.md: full, lines 1-348",
+    "notes/spectral-mask-covariance-foundation.md: full, lines 1-309",
+    ".review/required-sources.json: read as the read plan, lines 1-35 (no read credit)"
+  ],
+  "checks": [
+    {
+      "claim": "C1 / M1: actual raw test-null quotient, separability, infinite orthonormal basis with compact smooth positive-time representatives, satisfiable nonzero regime, no injectivity assumption",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The fixed-support covariance bound (two-variance Section 2; HS note eq. 14) dominates the noise norm by the supremum norm on each compact support, so an exhaustion gives a countable dense test set. Gram-Schmidt on finite linear combinations keeps real C_c^infinity representatives, and discarding zero residuals handles null tests such as those in foundation Proposition 3. For nonzero Gamma, a nonnegative q with q>=1 on B_(2L+1) gives int q(Gamma*q)>=|B_(L+1)|Gamma(B_L)>0, and this argument also works in d=1. B_W(tau tensor q, sigma tensor q) factors as <tau,sigma>_a times that positive constant. Strict positivity of the Riesz form on signed nonzero tau then gives infinite dimension. Strict positivity is true, by the Laplace-square representation or the Fourier density |lambda|^(a-1). The accepted notes prove only semidefiniteness plus positivity for nonnegative tau, so it remains a new proof obligation (see minor findings). Orthonormal jointly Gaussian g_j are independent standard Gaussians."
+    },
+    {
+      "claim": "C2 / M2: actual H_j,R, time-zero extension, smoothness, gain of one derivative for all r, adjoint duality, two-phase localization, Lipschitz primitive, exact E[g_j ell] pairing",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The zero extension of f_j lies in C_c^infinity(R x R^d), so |.|^-a convolution is smooth with derivatives moved onto the test. Local finiteness of Gamma licenses spatial differentiation for x in compact sets. The zeta_R factor comes after convolution, which matches HS note Section 6. If f is null, Cauchy-Schwarz makes the CM function vanish on t>0, and continuity extends this to t=0, so A_j on [0,T] is independent of the representative. B(b):E_r->E_(r+1) is bounded for compact smooth b and every real r, since bu lies in H^r, and S(t) is bounded on each E_r for finite time. Hence the gain holds and ||A_j(s,t)||_(E_r->E_(r+1))<=C|t-s| without norm continuity of S. By duality of E_r with E_(2s-r) under the E_s pairing, A^*E maps E_(2s-r-1)->E_(2s-r), which is also a gain of one. Finite propagation with chi=1 on B_(2R+T+1) gives Dchi A_j=A_j=A_j Dchi for both phase entries, in every d in {1,2,3}. Applying B_W with G=f_j and two-variance eq. (7) to b=H_j,R gives E[g_j ell_R(I;z,w)]=<A_j(I)z,w>_E, with the correct linear/conjugate-linear slots. No constant is missing, because the covariance has no prefactor."
+    },
+    {
+      "claim": "C3 / M3: finite truncations are exact Gaussian projections of the source-basis family, not canonical mollifiers, with both variance bounds uniform in N,R,I",
+      "verdict": "PASS",
+      "reason": "The orthogonal projection of ell onto g_1..g_N is sum_(j<=N)<A_j z,w>g_j, which is the matrix form of X_N, and the target explicitly denies any epsilon/delta identification. Bessel in the g_j, followed by Proposition 1, gives the two bounds. <Vout_N w,w>=sum_j sum_k|<A_j e_k,w>|^2<=sum_k E|ell(e_k,w)|^2<=C||w||^2_(E_(s-gamma)), by eq. (2). <Vin_N z,z> follows the same way from eq. (3). ||z||_(E_(s-gamma))=||D_gamma J0 z|| converts these into the displayed form with a_j=J0 A_j J0^-1. J0 is unitary, so a_j^*=J0 A_j^*E J0^-1. Bessel holds for complex Y with real g_j. J0 and the a_j commute with conjugation, so complexified norms are unchanged. Uniformity follows from eq. (15) and uniform eq. (6) in the accepted note, with no sum of individual j-norms."
+    },
+    {
+      "claim": "C4 / M4: first-chaos membership, column-basis expansions, rough-input extension, bounded strong variance sums and tails, no operator inferred from columns",
+      "verdict": "PASS",
+      "reason": "ell_R is W_C of an element of the actual completion, so it lies in the closed complexified first chaos, and its expansion in the complete orthonormal g_j has coefficients <A_j z,w>. Coordinatewise this gives m(z) and n(w) in first chaos tensor E, with E[g_j m(z)]=A_j z and E[g_j n(w)]=A_j^*E w. Because gamma<1, gain of one sends E_(s-gamma) into E_s, and the L2(Omega;E) bounds pass both sides to the limit by density. Vout_N and Vin_N increase monotonically and are bounded by C D_gamma^2, so strong limits exist and tails tend to 0 strongly. The tails keep the weighted bound and the congruences T_out=Pchi T_out Pchi^*, T_in=Pchi^* T_in Pchi. The target explicitly refuses a sample-bounded conclusion at this stage, and its translated-diagonal counterexample is valid."
+    },
+    {
+      "claim": "C5 / M5: actual finite coefficients match accepted Corollary 4, with correct p, gamma, adjoints, constant, R-dependence and S_p monotonicity",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Z_l=a_j on H satisfies eq. (5) of the compact note with C=C_T h^(2-a)B_alpha(h). Kchi=Pchi D_gamma is exactly Kout, and J0 unitarity transfers S_p(E) to S_p(H). Corollary 4 therefore gives sqrt(p-1)sqrt(C_T)h^(1-a/2)B_alpha^(1/2)||Kchi||_Sp for even p with p gamma>d. The compact norm depends on chi, hence on R and T, and this dependence is explicitly allowed. The bound ||K||_Sq<=||K||_Sp0 for q>=p0 is ell^p monotonicity. The beta range is nonempty exactly because a<1 and alpha+a<2, and strictness absorbs the log at alpha=1. The word 'Equivalent' for the beta bound is only a one-way implication (see minor findings)."
+    },
+    {
+      "claim": "C6 / M6: compact-domination lemma, tail trace powers, Lp operator Cauchy, same-W compact limit, fixed-pair compatibility, no circular series theorem",
+      "verdict": "PASS",
+      "reason": "The lemma is true. Take Q a finite spectral projection of B with ||(1-Q)B(1-Q)||<=eps. Weak convergence gives ||QT_NQ||->0, while (1-Q)T_N(1-Q)<=eps. Positive Cauchy-Schwarz controls the off-diagonal block by sqrt(eps)*sqrt(||QT_NQ||). Hence ||T_N||->0. Minmax gives lambda_k(T_N)<=lambda_k(B), so dominated summation gives Tr T_N^m->0, and no order on powers is used. The target correctly notes that the Corollary 4 constant alone does not tend to zero and retains trace powers instead. Theorem 1 applied to compressions of the block N<j<=M, with compact-note eq. (20), Fatou and block variance <=T_>N, gives E||X_M-X_N||_Sp^p<=(p-1)^(p/2)max(Tr T_out,>N^(p/2),Tr T_in,>N^(p/2)). This dominates the Lp(B(E)) Cauchy property. The limit lies in the separable closed span of compact a_j(I), so samples are compact. Pairings converge to raw ell by the projection identity. No infinite Gaussian series theorem, martingale theorem or Sp-Bochner input is used."
+    },
+    {
+      "claim": "C7 / M7: C^theta operator path and Lp convergence by uniform higher Holder, finite grid and interpolation; parameters, partitions, measurability, basis independence",
+      "verdict": "PASS",
+      "reason": "Even q with q gamma>d and q(beta-theta')>1 exists for theta<theta'<beta. Chaining on Lipschitz X_N gives uniform C^theta' moments without any time-independence assumption. Fixed-time Lp Cauchy from M6, a finite grid and the uniform C^theta' bound give sup-norm Cauchy. ||f||_(C^theta)<=||f||_(C^0)^(1-theta/theta')||f||_(C^theta')^(theta/theta') plus Holder in Omega gives C^theta Cauchy for every finite p. Increments with h<=1 cover all sub-unit pairs in [0,T], and additivity of A_j handles t>1. The X_N lie in the separable closed span of the Lipschitz paths a_j(0,.), which resolves Bochner measurability even though the ambient space may be nonseparable. Basis independence follows from countable dense pairs, rational times and norm continuity. No Sp-valued path, adapted projection or independent-increment claim is made."
+    },
+    {
+      "claim": "C8 / M8: uniform sqrt(p) path moments, dyadic denominator, S_p embedding index and elementary exponential series, localized masked driver only",
+      "verdict": "PASS",
+      "reason": "For q>=q0 with q0(beta-theta)>1, the level-n maximum contributes sqrt(q)C 2^(n(theta+1/q-beta)). The denominator 1-2^-(beta-theta-1/q) is uniformly bounded because 1/q<=1/q0, and ||K||_Sq<=||K||_Sq0 keeps the compact factor fixed. Lower p follow by Lyapunov, and the limit bound by Fatou. E||M||^(2k)<=(C^2 2k)^k together with k!>=(k/e)^k makes the exponential series converge for small c, so no Fernique input is needed. The target scopes this as a local masked first-driver norm with C depending on R,T,theta, and it denies any u-moment, asymptotic or canonical-source consequence."
+    },
+    {
+      "claim": "C9: 21 actual time controls, actual singular d2 mask order, finite 256 tail and boundary noncompact Gaussian no-go are correctly scoped, with no false numerical coverage",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The JSON has 21 rows (3 values of a times 7 of t), and its maximum absolute difference, about 1.49e-9, is below the 1e-5 tolerance. The script's substitution with b=1/(1-a) and its derivative formula are algebraically correct. Hand recomputation agrees with Q=3, the correct mask values 3, 1.5 and 0, I2*Q^2=25.3027, the tail norms 1, 1/25, 1/289 and 1/4225, and the N=0 S2 power near zeta(4) minus 2e-8. The rough estimate at a=0.1, t=0 and t=1.5 also agrees. The mask-order control, including x1-shift-5 zero masked mean, is correct analytically for Gamma=delta_x1 tensor Leb_x2. The target, falsification note and script scope all deny original-operator, path, all-order, source or u-moment numerical coverage, and the translated-diagonal no-go is labelled as outside the actual model. The script was not re-executed because this review has no execution tool; see limitations."
+    },
+    {
+      "claim": "C10: original full-dimensional sharp/source goal stays active with no scope upgrade",
+      "verdict": "PASS",
+      "reason": "Target lines 116-122 and worker-honesty lines 11-19 retain canonical H:homog, all d in {1,2,3}, and the original all-dimensional sharp/source goal. They deny periodic-state replacement, canonical data, source fixes, Lean upgrades, companion, HPC, contact, Skorohod, publication and whole-paper claims. The proposal does not conflict with the old HS no-go: Tr Vout is infinite in d=2,3 under the same estimates, while the target only asserts S_p with p>d/gamma>2d. The old d2/3, T<=1 scope is not imported."
+    },
+    {
+      "claim": "Global: no false quantifier, circular hypothesis or wrong object found in M1-M8 before the long proof",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The dependency chain is acyclic: M1 to M2 to M3 and M4, then M5, M6, M7 and M8, using only accepted Propositions 1-2, compact Propositions 2-3 with Corollary 4, and finite Theorem 1. The objects match the accepted forms: mask after convolution, no observation cutoff in ell_R, massless wave, Bessel norms and E_s adjoint. Every step survived an independent derivation sketch. These are statement-level checks, not a proof of M1-M8, which the target itself leaves to a later full gate."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "M5 calls the strict-beta estimate 'Equivalent'. It is only implied by the h^(2-a)B_alpha bound (h^(2-a)B_alpha<=C h^(2beta)), not equivalent, and the later proof should say so.",
+      "M2 leaves 'appropriate operatornorm' and 'corresponding Sobolevscale' unspecified. The correct forms are E_r->E_(r+1) for the primitive, and E_(2s-r-1)->E_(2s-r) for the E_s adjoint, using the E_s duality of E_r with E_(2s-r). The E_r scale itself is only implicit in the target.",
+      "M1 needs strict positivity of the temporal Riesz form on signed nonzero tau. The accepted foundation gives only semidefiniteness and positivity for nonnegative tau, so this new fact must be proved rather than cited.",
+      "M2's SAME-W identity must be extended from smooth tests to the indicator-in-time element zeta_R F_z,w by continuity of F->E[W(F)g_j] and of the right side under the fixed-support L2-time approximation. The target's 'covariance/Fubini' wording should include this approximation.",
+      "M2's null-representative independence is meaningful on t>=0, by vanishing on t>0 plus continuity. The zero-extended CM function may differ for negative t, which is harmless but should be stated.",
+      "M4 quantifies over all z,w in E_(s-gamma), while accepted Proposition 2 is on real phases. The complexified columns must be fixed explicitly: m and n are complex-linear, and ell is conjugate-linear in w.",
+      "M6's fixed-I S_p moments apply only for p with p gamma>d, derived from even moments. Lower p in Lp(B(E)) follow by Lyapunov. The target's 'all finite p>=1' clause should keep the two norms separate.",
+      "Provenance discrepancy: worker-honesty-v1.md cites revisions 9bfb907, e348748 and 9f2e4d8, while the note headers cite scientific revisions 227d4bc, e59c29b and 6718a16. These may be different commit roles, but the packet does not reconcile them. The mathematics reviewed here does not depend on the hashes.",
+      "Stale status in an input: HS note line 346 still says full review is required before adoption, while its header says accepted. M1-M8 do not rely on the no-go as a premise, so this is only a provenance note."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is a statement, object, parameter, source and feasibility audit, not a proof of M1-M8. All of M1-M8 still need the full analytic/source/application gate that the target itself requires.",
+    "check-diagnostics.py was not executed because this review has no execution tool. Numerical checks were limited to reading the code and JSON and hand-recomputing selected closed-form values. No certified quadrature accuracy is asserted.",
+    "scalar-frequency-row-bound.md, temporal-phase-bound.md, the adjudications, the Lean receipts and the review packets named in the note headers are not in the frozen packet. Accepted status and those upstream inputs were taken from the notes' own headers and proofs, not independently verified.",
+    "canonical-model-context.txt is an excerpt beginning at \\end{equation}, so the displayed SPDE itself is absent. Sign and initial-data conventions for B and the equation were taken from the accepted notes.",
+    "No source revision or git history check was performed. Revision edf6ae06b62d0f23d1727bc2a3d88b4ca96fdf75 was not independently confirmed from the non-git workspace.",
+    "This AI review is not human verification, a novelty audit or whole-paper certification."
+  ]
+}

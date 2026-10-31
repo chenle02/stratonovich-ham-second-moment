@@ -5588,3 +5588,25 @@ and zero maskedCMdirections allowed, no finite/periodic replacementnoise.
 Eleven-text statementpacket frozen; no actualnewOPpath adoptedbeforeproof/
 fullgate. Originalall-dimensional sharp/source goal ACTIVE,71facts/18seams
 unchanged, no contact/HPC/Skorohod/companion/sourcefix/TeX/PDF/wiki/publication.
+
+### Actual operator-driver statement accepted; full proof candidate — 2026-10-30
+
+Actual native Opus5.5/high11checks PASS_WITH_NOTES/HIGH356.356s,
+11completeinputs/no requiredrepairs. All11live/frozen/gitedf6ae0 and26native
+archive members verified; rootcanonical correspondence/readcoverage/report
+checks pass. Nine minor notes adjudicated: impliedbeta, exactduality scales,
+signedstrict timepositivity, indicatorcovariancepass, positive-time nullrep,
+realcomplexcolumns, admissibleevenSq vsallfiniteLpOP, commitroles/oldscope.
+
+Complete new notes/actual-operator-driver.md derives actualsmoothnoisebasis,
+SAME-W CMmeans/maskorder/allindexgain/localization, BOTHfiniteprojected
+variances, firstchaoscolumns/strongtails, compactdomination traceconvergence,
+finiteMATRIX-to-OPretainedtrace moment, actualGaussianboundedOPseries and
+LpCtheta pathconvergence viafinitegrid/interpolation, Gaussianpath moments/
+exponentialnorm. No operator/series/path premise assumed as conclusion,
+no independenttimeincrements or timeconvolution sourcecutoff. Allclaims
+CANDIDATE pending FULL gate, not yet adopted. Fourteen-text scientificpacket
+frozen. FixedIidealindices explicitly EVENqwithqgamma>d; arbitrary finite
+p pertains toB(E) andCtheta norm, not smallerSpclasses. Sourceepsilon/delta/
+Young/canonicaldata/u-moment/sourceconstants remainOPEN.71facts/18seams
+unchanged, original fullgoalACTIVE, no contact/HPC/Skorohod/companion/TeX/PDF/wiki.
