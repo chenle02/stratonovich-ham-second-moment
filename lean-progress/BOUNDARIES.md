@@ -305,3 +305,22 @@ The result is fixedR operator upper by OWNALLsignedscore, not original
 POINT, authorL^*, firstmean or signed-positive score identity. Growingcone/
 source normalization/exactlimit remainOPEN. OfficialcompanionL0/decision4
 unchanged; no package/registry/lease/HPC/publication gate.
+
+## FP-UNIFORM-E-CAMERON: radius-uniform actual linear regulator bounds
+
+Scientificf54e92b,21checks/HIGH348.303s,actual full type/application gate.
+Existing JointTilt.shifted_amplitude and complete Mathlib REAL finite
+powermean type were used with delta>0,positiveg/sqrt,exponentr/p>1,
+f_m=a_m^p>=0,n>=2,zero terms/positive powers. Source/type/custody byte
+bindings verified. No new compiler/module/theorem/count:74facts20seams/L0.
+
+Actual physical fractional products, uniform cutoffs, H_sp translations/
+heat/closed spectral-image projections, Gaussian Hilbert moment/tensor
+limits, compact scalar time tails, actual SAME-W projected block drivers,
+E/F restriction, Bochner covariance, weighted tuple norm and infinite-rank
+Cameron identification are reviewed INFORMAL analytic arguments. They are
+not formalized by the two scalar kernel facts. The retained projection is
+finite time/infinite spatial rank; no finite Gaussian density or timeblock
+independence. No expectednorm/stochastic exponential/growingR pointupper,
+source normalization/sharpconstant/exactlimit result follows. Companion
+creation decision4/privatepackage/registry/lease/HPC unchanged and pending.
