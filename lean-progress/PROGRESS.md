@@ -474,3 +474,19 @@ Young/source restart, continuum cone hypotheses and original point moment
 identification remain reviewed INFORMAL analytic inputs, not consequences
 formalized in Lean. See FP-RAW-EVENT in BOUNDARIES.md. The next U1-U4
 unmasking/dilation target is frozen UNREVIEWED, not a new formal consumer.
+
+## Old scalar score applications: all-dimensional consumer accepted — 2026-10-31
+
+Full U1-U4 scientific61ac2a3/adoption94d85ca,11checks/HIGH303.405s,
+no required repairs. Exact application of RawVariational.positive_score,
+label_score and strict_label_factor reviewed against complete public types.
+Positive-score I/v guard comes from actual unmasked rate and accepted raw
+variance; label_score requires only c>0,alpha<3. The d1 dilation_factors
+is NOT promoted as an all-dimensional Radon proof. Two source/type bindings
+to the old reviewed packet unchanged; no new kernel/compiler/replay run.
+71finitefacts18seams/L0 PROPOSED/companion decision4 unchanged.
+
+The resulting unmasked point lower and positive finite intrinsic S_c=c^mS1
+are ANALYTIC, including covariance/spectral/form/mask/canonical/supremum
+steps. FP-UNMASKED in BOUNDARIES.md records this. B1-B5 static/full-H1
+occupation target is frozen UNREVIEWED and introduces no new formal claim.

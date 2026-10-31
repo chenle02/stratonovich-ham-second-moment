@@ -162,3 +162,16 @@ This closes the informal new-F cone/event obligations left open above;
 unmasking/occupation optimization/source-energy identification/sharp upper
 and exact limit remain open.71facts/18seams/L0 unchanged; no official
 package/companion/lease/registry/HPC or formal Gaussian/SPDE theorem.
+
+Named informal interface FP-UNMASKED (not a Lean declaration),2026-10-31:
+notes/unmasked-variational-lower.md, scientific61ac2a3/adoption94d85ca,
+full11checks/HIGH303.405s. Global bounded mean, direct bounded-potential
+selfadjoint/H1 form correspondence, monotone compact-mask Rayleigh limit,
+all-dimensional Radon/unitary dilation, original point lower and positive
+finite intrinsic score suprema remain reviewed INFORMAL analytic claims.
+Three old scalar score facts have checked exact actual guard applications;
+no new kernel run/count. No formal Gaussian/Sobolev/spectral/measure-limit/
+SPDE proof, and no actual p1 or source-energy value identification from S1.
+B1-B5 occupation/energy bridge and the all-alpha scalar target are still
+unreviewed; sharp upper/exact limit open.71facts18seams/L0 unchanged, no
+package/companion/lease/registry/HPC/publication gate.
