@@ -1,9 +1,11 @@
 # Unmasked Rayleigh rates and an intrinsic all-dimensional lower functional
 
-COMPLETE PROOF CANDIDATE, not adopted before FULL independent proof review.
-U1-U4 statement gate accepted at source723fbeb,13checks/HIGH309.866seconds;
-its nine optional proof obligations are addressed below. The statement gate
-is not a proof certificate. Original sharp/source goal remains ACTIVE.
+ACCEPTED at the scoped full analytic/source/type/application gate:
+Opus5.5/HIGH,11checks PASS/PASS_WITH_NOTES,303.405seconds, no required
+repairs, scientific source61ac2a3. Seven optional clarifications are recorded
+in reviews/2026-10-31-unmasked-variational-target/scientific-adjudication-v1.md.
+Frozen proof/report bytes remain unchanged. The earlier statement gate was
+separate. Original sharp/source goal remains ACTIVE.
 
 ## 1. Exact class, conclusions and accepted inputs
 
@@ -64,11 +66,16 @@ C. Canonical T:full-upper, its exact statement/context/custody in the
 
  E|u(T,0)|²<=e(T+2)^d exp(C_up T^kappa), T>=1, C_up<infinity.       (5)
 
-   log(e(T+2)^d)/T^kappa->0: log T=o(T^epsilon) for every epsilon>0,
-   for example integrate x^(epsilon-1) to bound log T. Thus limsup of
+   log(e(T+2)^d)/T^kappa->0: choose epsilon=kappa/2>0 and integrate
+   x^(epsilon-1) to get log T<=(T^epsilon-1)/epsilon, T>=1.
+   Also log(T+2)<=log T+log3. Division by T^kappa gives the claimed
+   limit. Thus limsup of
    T^-kappa log E|u(T,0)|²<=C_up. This is the SAME original canonical
    solution as B, not the old d1 consumer mentioned in historical context.
-   Only finiteness is imported; no first-mean/static numeric constant.
+   Exact all-dimensional identity pointers are upper-custody-v1.json
+   and raw-block-event-lower.md Sections1,8, not the old d1 historical
+   context consumer. Only finiteness is imported; no first-mean/static
+   numeric constant.
 D. RawVariational.label_score,positive_score,strict_label_factor, with
    COMPLETE public types in the packet, are OLD scalar finite facts.
    Their exact new guards/consumers are in Section7. No new kernel run.
@@ -99,7 +106,9 @@ To justify it, pair the classical convolution with a Schwartz test phi.
 Fubini is absolutely justified by the Gaussian and polynomial weights;
 (1) applied to p_e*phi gives the right-hand distributional pairing, because
 int p_e(y)exp(-i xi.y)dy=exp(-e|xi|²/2). Thus there is no extra Fourier
-normalization factor. The mu Gaussian integral is absolutely finite and
+normalization factor: p_e is even, so its integrals against exp(+i xi.y)
+and exp(-i xi.y) coincide, and int p_e(x-y)phi(x)dx=(p_e*phi)(y).
+The mu Gaussian integral is absolutely finite and
 its Fourier integral is continuous by dominated convergence. The classical
 convolution is also continuous, so distributional equality gives equality
 at EVERY x. The left side is nonnegative because Gamma is. Evenness of
@@ -157,10 +166,10 @@ On H2, the quadratic expression is
  q_s(f)=||grad f||2²-int h_s|f|², bounded below by -M||f||2².
 Here is the whole H1 form-domain check, using the ordinary spectral theorem
 as in accepted compact-family Section2, with no compactness assumption.
-Set c=1+M and J_s=H_s+c>=1. For f in H2, integration by parts gives
+Set c_shift=1+M and J_s=H_s+c_shift>=1. For f in H2, integration by parts gives
 
- ||J_s^(1/2)f||2²=q_s(f)+c||f||2²,
- ||f||H1²<=q_s(f)+c||f||2²<=c||f||H1².                       (10)
+ ||J_s^(1/2)f||2²=q_s(f)+c_shift||f||2²,
+ ||f||H1²<=q_s(f)+c_shift||f||2²<=c_shift||f||H1².                       (10)
 
 For f in D(J_s^(1/2)), spectral cutoffs 1_[1,n](J_s)f belong to H2
 and converge in the half-power norm. Thus H2=D(J_s) is a core for the
@@ -182,9 +191,13 @@ for compact masks. Accordingly write the positive rate using REAL tests:
                      (int h_s f²-||grad f||2²)=-E_s.          (11)
 
 Choose the accepted common negative trial from A for this ORIGINAL Psi:
-one real unit w in H1, epsilon0>0 and finite plateau mask m_(R0) obey
+one real unit compactly supported w in H1, epsilon0>0 and a finite
+plateau mask m_(R0) obey
 ||grad w||2²-int m_(R0)h_s w²<=-epsilon0 for every s in I.
-Since 0<=m_(R0)<=1 and h_s>=0, the unmasked form on the same w is no larger.
+Here the cited trial has support in B_(2L); choose R0>=2L. Any plateau
+mask equal1 on B_(R0), including the radial family defined in Section4,
+agrees with the unmasked potential on supp w. Also 0<=m_(R0)<=1 and
+h_s>=0, so the unmasked form on the same w is no larger.
 Thus -M<=E_s<=-epsilon0<0 uniformly. In particular M>=epsilon0>0 and
 lambda_s lies in[sqrt(epsilon0),sqrt(M)]. Taking the same unit infima in
 |q_s(f)-q_t(f)|<=||h_s-h_t||infinity gives
@@ -280,16 +293,16 @@ This proves U3 without invoking the old d1 dilation_factors theorem.
 ## 6. Positive finite auxiliary scores and the p2 factor
 
 From the original threshold, alpha<2<3, k=3-alpha>0, q=4-alpha=k+1>1,
-and m=q/k>1. Fix any Psi0 in C_pos from Section1. Its I=I_Psi0 and
-v=v_Psi0 are positive finite, the latter by accepted compact-family raw
+and m=q/k>1. Fix any Psi0 in C_pos from Section1. Its I0=I_Psi0 and
+v0=v_Psi0 are positive finite, the latter by accepted compact-family raw
 variance assertion. Choose the EXACT positive radius
 
- r0=(I/v)^(1/k)>0.
+ r0=(I0/v0)^(1/k)>0.
 
 It is not assumed less than1. The unchanged RawVariational.positive_score
-with hI:I>0,hv:v>0,ha:alpha<3 gives
+with hI:I0>0,hv:v0>0,ha:alpha<3 gives
 
- I_(D_r0 Psi0)-v_(D_r0 Psi0)/2=r0 I-r0^q v/2>0.              (18)
+ I_(D_r0 Psi0)-v_(D_r0 Psi0)/2=r0 I0-r0^q v0/2>0.              (18)
 
 Thus the set of label1 scores contains a positive real value, supplied by
 an ACTUAL smooth positive test, not a formal scaling parameter.
@@ -330,7 +343,9 @@ lean-reuse-v1.json, matched to the old reviewed packet. Three OLD facts
 are consumed here: positive_score in(18) with I,v>0 and alpha<3;
 label_score in(19) with c>0 and alpha<3, and arbitrary REAL I,v;
 strict_label_factor with alpha<3 after(19). All guards follow explicitly
-from the original threshold, (2),(11)-(12) and c>0. No new Lean run,
+from the original threshold, (11)-(12), compact-family (22)-(23)
+for v_Psi>0, and c>0. In(18) the generic Lean I,v are instantiated
+with I0=I_Psi0 and v0=v_Psi0; in(19) with I_Psi,v_Psi. No new Lean run,
 replay or count:71facts18local seams/L0 PROPOSED unchanged. The d1-specific
 dilation_factors is NOT an all-dimensional Radon/Jacobian proof; (14)-(17)
 are analytic. Gaussian smoothing, spectral calculus, form domain/core,
@@ -353,7 +368,7 @@ fixed-R scaling. Replacement of S_1 by an actual firstmean is an EXCLUDED
 logical inference, not a numerically falsified identity in this model.
 
 The exponent kappa has the required static limit (4-alpha)/(3-alpha) as
-a tends to0. No optimized Chen--Hu constant is asserted. Canonical P:Jensen
+a tends to0. No optimized static constant is asserted. Canonical P:Jensen
 and its conditional numerical specialization remain separate valid inputs;
 any independently established lower rate can be combined with(4) by a
 maximum. We do not change a p1 statement or identify a Skorohod constant.

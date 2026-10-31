@@ -6343,3 +6343,29 @@ continuity, global H1 supremum embedding and d1 near/far density split are
 explicitly excluded. No source-energy identity or Omega>1 until separate
 all-alpha scalar gate; sharp upper/source dictionary/fullgoal stillOPEN.
 No new kernel/count/package/HPC/contact/Skorohod/TeX/PDF/wiki/publication.
+
+### All-dimensional unmasked variational point lower accepted — 2026-10-31 UTC
+
+Original80720 TERMINAL atsource61ac2a3, full11checks PASS/PASS_WITH_NOTES/
+HIGH303.405seconds/no requiredrepairs. Canonical report/pass/correspondence/
+readcoverage validated;17live/frozen/Git/native input bindings and all
+32native archive members verified. No recovery/providerrestart/
+thresholdwaiver. Adopt notes/unmasked-variational-lower.md: ALL original
+Gamma/d1/2/3/all positive smooth tests, unmasked Rayleigh rate via monotone
+mask limit and SAME original Q2>=2I_Psi-v/2, positive finite auxiliary
+S_c=c^m S1 and Q2>=2^m S1. S1 NOT actual p1 or identified source Lstar.
+
+Seven optional notes adjudicated: local symbol clarity, even Gaussian
+Fourier pairing, explicit upper prefactor limit, exact v-positive input,
+compact trial/plateau ordering, same-model custody pointers, redundant
+source name removed. No new estimate/scope, frozen proof/report unchanged.
+Three OLD scalar public types/actual guards pass; no new kernel/replay/
+count/module.71facts18seams/L0 unchanged; analytic boundary remains informal.
+
+Next B1-B5 target is FROZEN UNREVIEWED: actual temporal smooth truncations,
+static controls, spatial covariance/H1 density and FULL damped occupation
+energy before source/constant comparison. Get falsification and statement
+gate BEFORE proof. Separate all-alpha scalar target still unreviewed.
+Original sharp upper/intended source dictionary/exact limit OPEN. No new
+TeX/PDF/wiki/sourcefix/Skorohod/HPC/contact/companion/publication or fullgoal
+completion. NoRoute persists; local isolated, no fresh parity/integration.
