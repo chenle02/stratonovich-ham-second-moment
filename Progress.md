@@ -6392,3 +6392,22 @@ prior source/type bindings; no kernel/replay/count/module/package change.
 Original full source/sharpupper/exactgoal ACTIVE; NoRoute/localisolated/
 no parity/master integration. No contact/Skorohod/HPC/TeX/PDF/wiki/sourcefix/
 publication. Independent Opus5.5/HIGH statement gate NEXT.
+
+### B1-B5 statement gate accepted before proof — 2026-10-31 UTC
+
+Original71690 TERMINAL,9checks PASS/PASS_WITH_NOTES/HIGH394.808seconds,
+no requiredrepairs. Canonical report/pass/correspondence/readcoverage pass;
+all13live/frozen/Git/native bindings and all28native archive members
+verified.8508b9d->20d8eda ancestry checked. No recovery/restart/waiver.
+This permits proof investment ONLY, not an energy or point theorem.
+
+Ten findings recorded: nonnegative/nonzero/n>=4; Fatou ratio vs continuity;
+explicit feasible u/ell/theta/L; two-point physical pairing/H1 zero case;
+smooth PSD/positive square approximants/absolute four-linear extension and
+joint measurability; explicit comparison not attained optimum; diagnostic
+negative ratios/algebra-only precisions and missing sweeps;7.50e-7 wording;
+old Omega references NOT inputs; full original parameter/positive-power
+range. Full written proof and FULL independent application gate NEXT.
+71facts18seams/L0 unchanged, no kernel/count/companion/HPC/contact/
+Skorohod/sourcefix/TeX/PDF/wiki/publication. Original full goal ACTIVE,
+sharpupper/intendeddictionary/exactlimit OPEN; NoRoute/local isolated.
