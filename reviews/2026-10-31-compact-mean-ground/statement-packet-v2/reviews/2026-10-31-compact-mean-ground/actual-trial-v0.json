@@ -1,0 +1,72 @@
+{
+  "scope": "Floating consistency checks of explicit integral definitions and exact Rayleigh scaling identity, no rigorous quadrature enclosure/eigenvalue calculation/source theorem/certified accuracy.",
+  "actual_model": "d=3, Gamma=delta_x1 tensor Leb_x2 tensor Leb_x3, alpha=1, a=.5 (alpha+a<2).",
+  "test": "h(x)=exp(-1/(1-x\u00b2)) on |x|<1, else0; phi=h/sqrt(int h\u00b2); g(x)=product_j phi(x_j), ||g||2=1.",
+  "mask": "Choose actual even [0,1] zeta_R with R=2, so m=1 on supp g and compact. For scale L use R=2L.",
+  "actual_mean": "Gamma*g\u00b2=phi(x1)\u00b2, independent of x2,x3; U=m(Gamma*g\u00b2) is compact. int U g\u00b2=int phi^4=Q; D=3int|phi-prime|\u00b2.",
+  "algebraic_identity": "b0=2D/Q gives D-b0Q=-D; for all b>=b0 the trial is negative. At scale L, D_L=D/L\u00b2,Q_L=Q/L,b0_L=b0/L. Positivity/normalization and scaling are analytic obligations; quadrature numbers alone are not proof.",
+  "weak_potential_warning": "This changes the test profile and its potential with L. It does not assert every fixed compact attractive d3 potential binds at every strength.",
+  "runs": [
+    {
+      "dps": 35,
+      "normalizer": "0.133086120844994271556947327955",
+      "D": "9.23282739369533146332960532846",
+      "Q": "0.793799900657063759252594446802",
+      "b0": "23.2623546212412129935510150666",
+      "scaled_rows": [
+        {
+          "spatial_scale": 1,
+          "D": "9.232827393695331463329605328",
+          "Q": "0.7937999006570637592525944468",
+          "b0": "23.26235462124121299355101507",
+          "trial_energy_at_b0": "-9.232827393695331463329605328"
+        },
+        {
+          "spatial_scale": 2,
+          "D": "2.308206848423832865832401332",
+          "Q": "0.3968999503285318796262972234",
+          "b0": "11.63117731062060649677550753",
+          "trial_energy_at_b0": "-2.308206848423832865832401332"
+        },
+        {
+          "spatial_scale": 4,
+          "D": "0.577051712105958216458100333",
+          "Q": "0.1984499751642659398131486117",
+          "b0": "5.815588655310303248387753767",
+          "trial_energy_at_b0": "-0.577051712105958216458100333"
+        }
+      ]
+    },
+    {
+      "dps": 60,
+      "normalizer": "0.133086120844994271556947327955",
+      "D": "9.23282739369533146332960532846",
+      "Q": "0.793799900657063759252594446802",
+      "b0": "23.2623546212412129935510150666",
+      "scaled_rows": [
+        {
+          "spatial_scale": 1,
+          "D": "9.232827393695331463329605328",
+          "Q": "0.7937999006570637592525944468",
+          "b0": "23.26235462124121299355101507",
+          "trial_energy_at_b0": "-9.232827393695331463329605328"
+        },
+        {
+          "spatial_scale": 2,
+          "D": "2.308206848423832865832401332",
+          "Q": "0.3968999503285318796262972234",
+          "b0": "11.63117731062060649677550753",
+          "trial_energy_at_b0": "-2.308206848423832865832401332"
+        },
+        {
+          "spatial_scale": 4,
+          "D": "0.577051712105958216458100333",
+          "Q": "0.1984499751642659398131486117",
+          "b0": "5.815588655310303248387753767",
+          "trial_energy_at_b0": "-0.577051712105958216458100333"
+        }
+      ]
+    }
+  ],
+  "precision_agreement": "Printed values agree within1e-27; this is working-precision consistency, not a certified error bound."
+}
