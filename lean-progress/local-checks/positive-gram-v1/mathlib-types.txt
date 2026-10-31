@@ -1,0 +1,257 @@
+@norm_sub_sq_real.{u_1} : ∀ {F : Type u_1} [inst : SeminormedAddCommGroup.{u_1} F]
+  [inst_1 : @InnerProductSpace.{0, u_1} Real F Real.instRCLike inst] (x y : F),
+  @Eq.{1} Real
+    (@HPow.hPow.{0, 0, 0} Real Nat Real
+      (@instHPow.{0, 0} Real Nat (@NPow.toPow.{0} Real (@Monoid.toNPow.{0} Real Real.instMonoid)))
+      (@Norm.norm.{u_1} F (@SeminormedAddCommGroup.toNorm.{u_1} F inst)
+        (@HSub.hSub.{u_1, u_1, u_1} F F F
+          (@instHSub.{u_1} F
+            (@SubNegMonoid.toSub.{u_1} F
+              (@AddGroup.toSubNegMonoid.{u_1} F
+                (@AddCommGroup.toAddGroup.{u_1} F (@SeminormedAddCommGroup.toAddCommGroup.{u_1} F inst)))))
+          x y))
+      (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))
+    (@HAdd.hAdd.{0, 0, 0} Real Real Real (@instHAdd.{0} Real Real.instAdd)
+      (@HSub.hSub.{0, 0, 0} Real Real Real (@instHSub.{0} Real Real.instSub)
+        (@HPow.hPow.{0, 0, 0} Real Nat Real
+          (@instHPow.{0, 0} Real Nat (@NPow.toPow.{0} Real (@Monoid.toNPow.{0} Real Real.instMonoid)))
+          (@Norm.norm.{u_1} F (@SeminormedAddCommGroup.toNorm.{u_1} F inst) x)
+          (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))
+        (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+          (@OfNat.ofNat.{0} Real (nat_lit 2)
+            (@instOfNatAtLeastTwo.{0} Real (nat_lit 2) Real.instNatCast
+              (@Nat.instAtLeastTwoHAddOfNat (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))
+                (@Nat.instNeZeroSucc (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))))))
+          (@Inner.inner.{0, u_1} Real F (@InnerProductSpace.toInner.{0, u_1} Real F Real.instRCLike inst inst_1) x y)))
+      (@HPow.hPow.{0, 0, 0} Real Nat Real
+        (@instHPow.{0, 0} Real Nat (@NPow.toPow.{0} Real (@Monoid.toNPow.{0} Real Real.instMonoid)))
+        (@Norm.norm.{u_1} F (@SeminormedAddCommGroup.toNorm.{u_1} F inst) y)
+        (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))
+@real_inner_self_eq_norm_sq.{u_1} : ∀ {F : Type u_1} [inst : SeminormedAddCommGroup.{u_1} F]
+  [inst_1 : @InnerProductSpace.{0, u_1} Real F Real.instRCLike inst] (x : F),
+  @Eq.{1} Real
+    (@Inner.inner.{0, u_1} Real F (@InnerProductSpace.toInner.{0, u_1} Real F Real.instRCLike inst inst_1) x x)
+    (@HPow.hPow.{0, 0, 0} Real Nat Real
+      (@instHPow.{0, 0} Real Nat (@NPow.toPow.{0} Real (@Monoid.toNPow.{0} Real Real.instMonoid)))
+      (@Norm.norm.{u_1} F (@SeminormedAddCommGroup.toNorm.{u_1} F inst) x)
+      (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))
+@inner_sum.{u_1, u_2,
+    u_3} : ∀ {𝕜 : Type u_1} {E : Type u_2} [inst : RCLike.{u_1} 𝕜] [inst_1 : SeminormedAddCommGroup.{u_2} E]
+  [inst_2 : @InnerProductSpace.{u_1, u_2} 𝕜 E inst inst_1] {ι : Type u_3} (s : Finset.{u_3} ι) (f : ι → E) (x : E),
+  @Eq.{u_1 + 1} 𝕜
+    (@Inner.inner.{u_1, u_2} 𝕜 E (@InnerProductSpace.toInner.{u_1, u_2} 𝕜 E inst inst_1 inst_2) x
+      (@Finset.sum.{u_3, u_2} ι E
+        (@AddCommGroup.toAddCommMonoid.{u_2} E (@SeminormedAddCommGroup.toAddCommGroup.{u_2} E inst_1)) s fun (i : ι) =>
+        f i))
+    (@Finset.sum.{u_3, u_1} ι 𝕜
+      (@Semiring.toAddCommMonoid.{u_1} 𝕜
+        (@CommSemiring.toSemiring.{u_1} 𝕜
+          (@Semifield.toCommSemiring.{u_1} 𝕜
+            (@Field.toSemifield.{u_1} 𝕜
+              (@NormedField.toField.{u_1} 𝕜
+                (@DenselyNormedField.toNormedField.{u_1} 𝕜 (@RCLike.toDenselyNormedField.{u_1} 𝕜 inst)))))))
+      s fun (i : ι) =>
+      @Inner.inner.{u_1, u_2} 𝕜 E (@InnerProductSpace.toInner.{u_1, u_2} 𝕜 E inst inst_1 inst_2) x (f i))
+@sum_inner.{u_1, u_2,
+    u_3} : ∀ {𝕜 : Type u_1} {E : Type u_2} [inst : RCLike.{u_1} 𝕜] [inst_1 : SeminormedAddCommGroup.{u_2} E]
+  [inst_2 : @InnerProductSpace.{u_1, u_2} 𝕜 E inst inst_1] {ι : Type u_3} (s : Finset.{u_3} ι) (f : ι → E) (x : E),
+  @Eq.{u_1 + 1} 𝕜
+    (@Inner.inner.{u_1, u_2} 𝕜 E (@InnerProductSpace.toInner.{u_1, u_2} 𝕜 E inst inst_1 inst_2)
+      (@Finset.sum.{u_3, u_2} ι E
+        (@AddCommGroup.toAddCommMonoid.{u_2} E (@SeminormedAddCommGroup.toAddCommGroup.{u_2} E inst_1)) s fun (i : ι) =>
+        f i)
+      x)
+    (@Finset.sum.{u_3, u_1} ι 𝕜
+      (@Semiring.toAddCommMonoid.{u_1} 𝕜
+        (@CommSemiring.toSemiring.{u_1} 𝕜
+          (@Semifield.toCommSemiring.{u_1} 𝕜
+            (@Field.toSemifield.{u_1} 𝕜
+              (@NormedField.toField.{u_1} 𝕜
+                (@DenselyNormedField.toNormedField.{u_1} 𝕜 (@RCLike.toDenselyNormedField.{u_1} 𝕜 inst)))))))
+      s fun (i : ι) =>
+      @Inner.inner.{u_1, u_2} 𝕜 E (@InnerProductSpace.toInner.{u_1, u_2} 𝕜 E inst inst_1 inst_2) (f i) x)
+@inner_smul_left.{u_1,
+    u_2} : ∀ {𝕜 : Type u_1} {E : Type u_2} [inst : RCLike.{u_1} 𝕜] [inst_1 : SeminormedAddCommGroup.{u_2} E]
+  [inst_2 : @InnerProductSpace.{u_1, u_2} 𝕜 E inst inst_1] (x y : E) (r : 𝕜),
+  @Eq.{u_1 + 1} 𝕜
+    (@Inner.inner.{u_1, u_2} 𝕜 E (@InnerProductSpace.toInner.{u_1, u_2} 𝕜 E inst inst_1 inst_2)
+      (@HSMul.hSMul.{u_1, u_2, u_2} 𝕜 E E
+        (@instHSMul.{u_1, u_2} 𝕜 E
+          (@SMulZeroClass.toSMul.{u_1, u_2} 𝕜 E
+            (@AddZero.toZero.{u_2} E
+              (@AddZeroClass.toAddZero.{u_2} E
+                (@AddMonoid.toAddZeroClass.{u_2} E
+                  (@SubNegMonoid.toAddMonoid.{u_2} E
+                    (@AddGroup.toSubNegMonoid.{u_2} E
+                      (@AddCommGroup.toAddGroup.{u_2} E (@SeminormedAddCommGroup.toAddCommGroup.{u_2} E inst_1)))))))
+            (@DistribSMul.toSMulZeroClass.{u_1, u_2} 𝕜 E
+              (@AddMonoid.toAddZeroClass.{u_2} E
+                (@SubNegMonoid.toAddMonoid.{u_2} E
+                  (@AddGroup.toSubNegMonoid.{u_2} E
+                    (@AddCommGroup.toAddGroup.{u_2} E (@SeminormedAddCommGroup.toAddCommGroup.{u_2} E inst_1)))))
+              (@DistribMulAction.toDistribSMul.{u_1, u_2} 𝕜 E
+                (@Semiring.toMonoid.{u_1} 𝕜
+                  (@CommSemiring.toSemiring.{u_1} 𝕜
+                    (@Semifield.toCommSemiring.{u_1} 𝕜
+                      (@Field.toSemifield.{u_1} 𝕜
+                        (@NormedField.toField.{u_1} 𝕜
+                          (@DenselyNormedField.toNormedField.{u_1} 𝕜 (@RCLike.toDenselyNormedField.{u_1} 𝕜 inst)))))))
+                (@SubNegMonoid.toAddMonoid.{u_2} E
+                  (@AddGroup.toSubNegMonoid.{u_2} E
+                    (@AddCommGroup.toAddGroup.{u_2} E (@SeminormedAddCommGroup.toAddCommGroup.{u_2} E inst_1))))
+                (@Module.toDistribMulAction.{u_1, u_2} 𝕜 E
+                  (@CommSemiring.toSemiring.{u_1} 𝕜
+                    (@Semifield.toCommSemiring.{u_1} 𝕜
+                      (@Field.toSemifield.{u_1} 𝕜
+                        (@NormedField.toField.{u_1} 𝕜
+                          (@DenselyNormedField.toNormedField.{u_1} 𝕜 (@RCLike.toDenselyNormedField.{u_1} 𝕜 inst))))))
+                  (@AddCommGroup.toAddCommMonoid.{u_2} E (@SeminormedAddCommGroup.toAddCommGroup.{u_2} E inst_1))
+                  (@NormedSpace.toModule.{u_1, u_2} 𝕜 E
+                    (@DenselyNormedField.toNormedField.{u_1} 𝕜 (@RCLike.toDenselyNormedField.{u_1} 𝕜 inst)) inst_1
+                    (@InnerProductSpace.toNormedSpace.{u_1, u_2} 𝕜 E inst inst_1 inst_2)))))))
+        r x)
+      y)
+    (@HMul.hMul.{u_1, u_1, u_1} 𝕜 𝕜 𝕜
+      (@instHMul.{u_1} 𝕜
+        (@Distrib.toMul.{u_1} 𝕜
+          (@instDistribOfSemiring.{u_1} 𝕜
+            (@CommSemiring.toSemiring.{u_1} 𝕜
+              (@Semifield.toCommSemiring.{u_1} 𝕜
+                (@Field.toSemifield.{u_1} 𝕜
+                  (@NormedField.toField.{u_1} 𝕜
+                    (@DenselyNormedField.toNormedField.{u_1} 𝕜 (@RCLike.toDenselyNormedField.{u_1} 𝕜 inst)))))))))
+      (@DFunLike.coe.{u_1 + 1, u_1 + 1, u_1 + 1}
+        (@RingHom.{u_1, u_1} 𝕜 𝕜
+          (@Semiring.toNonAssocSemiring.{u_1} 𝕜
+            (@CommSemiring.toSemiring.{u_1} 𝕜
+              (@Semifield.toCommSemiring.{u_1} 𝕜
+                (@Field.toSemifield.{u_1} 𝕜
+                  (@NormedField.toField.{u_1} 𝕜
+                    (@DenselyNormedField.toNormedField.{u_1} 𝕜 (@RCLike.toDenselyNormedField.{u_1} 𝕜 inst)))))))
+          (@Semiring.toNonAssocSemiring.{u_1} 𝕜
+            (@CommSemiring.toSemiring.{u_1} 𝕜
+              (@Semifield.toCommSemiring.{u_1} 𝕜
+                (@Field.toSemifield.{u_1} 𝕜
+                  (@NormedField.toField.{u_1} 𝕜
+                    (@DenselyNormedField.toNormedField.{u_1} 𝕜 (@RCLike.toDenselyNormedField.{u_1} 𝕜 inst))))))))
+        𝕜 (fun (x : 𝕜) => 𝕜)
+        (@RingHom.instFunLike.{u_1, u_1} 𝕜 𝕜
+          (@Semiring.toNonAssocSemiring.{u_1} 𝕜
+            (@CommSemiring.toSemiring.{u_1} 𝕜
+              (@Semifield.toCommSemiring.{u_1} 𝕜
+                (@Field.toSemifield.{u_1} 𝕜
+                  (@NormedField.toField.{u_1} 𝕜
+                    (@DenselyNormedField.toNormedField.{u_1} 𝕜 (@RCLike.toDenselyNormedField.{u_1} 𝕜 inst)))))))
+          (@Semiring.toNonAssocSemiring.{u_1} 𝕜
+            (@CommSemiring.toSemiring.{u_1} 𝕜
+              (@Semifield.toCommSemiring.{u_1} 𝕜
+                (@Field.toSemifield.{u_1} 𝕜
+                  (@NormedField.toField.{u_1} 𝕜
+                    (@DenselyNormedField.toNormedField.{u_1} 𝕜 (@RCLike.toDenselyNormedField.{u_1} 𝕜 inst))))))))
+        (@starRingEnd.{u_1} 𝕜
+          (@Semifield.toCommSemiring.{u_1} 𝕜
+            (@Field.toSemifield.{u_1} 𝕜
+              (@NormedField.toField.{u_1} 𝕜
+                (@DenselyNormedField.toNormedField.{u_1} 𝕜 (@RCLike.toDenselyNormedField.{u_1} 𝕜 inst)))))
+          (@RCLike.toStarRing.{u_1} 𝕜 inst))
+        r)
+      (@Inner.inner.{u_1, u_2} 𝕜 E (@InnerProductSpace.toInner.{u_1, u_2} 𝕜 E inst inst_1 inst_2) x y))
+@inner_smul_right.{u_1,
+    u_2} : ∀ {𝕜 : Type u_1} {E : Type u_2} [inst : RCLike.{u_1} 𝕜] [inst_1 : SeminormedAddCommGroup.{u_2} E]
+  [inst_2 : @InnerProductSpace.{u_1, u_2} 𝕜 E inst inst_1] (x y : E) (r : 𝕜),
+  @Eq.{u_1 + 1} 𝕜
+    (@Inner.inner.{u_1, u_2} 𝕜 E (@InnerProductSpace.toInner.{u_1, u_2} 𝕜 E inst inst_1 inst_2) x
+      (@HSMul.hSMul.{u_1, u_2, u_2} 𝕜 E E
+        (@instHSMul.{u_1, u_2} 𝕜 E
+          (@SMulZeroClass.toSMul.{u_1, u_2} 𝕜 E
+            (@AddZero.toZero.{u_2} E
+              (@AddZeroClass.toAddZero.{u_2} E
+                (@AddMonoid.toAddZeroClass.{u_2} E
+                  (@SubNegMonoid.toAddMonoid.{u_2} E
+                    (@AddGroup.toSubNegMonoid.{u_2} E
+                      (@AddCommGroup.toAddGroup.{u_2} E (@SeminormedAddCommGroup.toAddCommGroup.{u_2} E inst_1)))))))
+            (@DistribSMul.toSMulZeroClass.{u_1, u_2} 𝕜 E
+              (@AddMonoid.toAddZeroClass.{u_2} E
+                (@SubNegMonoid.toAddMonoid.{u_2} E
+                  (@AddGroup.toSubNegMonoid.{u_2} E
+                    (@AddCommGroup.toAddGroup.{u_2} E (@SeminormedAddCommGroup.toAddCommGroup.{u_2} E inst_1)))))
+              (@DistribMulAction.toDistribSMul.{u_1, u_2} 𝕜 E
+                (@Semiring.toMonoid.{u_1} 𝕜
+                  (@CommSemiring.toSemiring.{u_1} 𝕜
+                    (@Semifield.toCommSemiring.{u_1} 𝕜
+                      (@Field.toSemifield.{u_1} 𝕜
+                        (@NormedField.toField.{u_1} 𝕜
+                          (@DenselyNormedField.toNormedField.{u_1} 𝕜 (@RCLike.toDenselyNormedField.{u_1} 𝕜 inst)))))))
+                (@SubNegMonoid.toAddMonoid.{u_2} E
+                  (@AddGroup.toSubNegMonoid.{u_2} E
+                    (@AddCommGroup.toAddGroup.{u_2} E (@SeminormedAddCommGroup.toAddCommGroup.{u_2} E inst_1))))
+                (@Module.toDistribMulAction.{u_1, u_2} 𝕜 E
+                  (@CommSemiring.toSemiring.{u_1} 𝕜
+                    (@Semifield.toCommSemiring.{u_1} 𝕜
+                      (@Field.toSemifield.{u_1} 𝕜
+                        (@NormedField.toField.{u_1} 𝕜
+                          (@DenselyNormedField.toNormedField.{u_1} 𝕜 (@RCLike.toDenselyNormedField.{u_1} 𝕜 inst))))))
+                  (@AddCommGroup.toAddCommMonoid.{u_2} E (@SeminormedAddCommGroup.toAddCommGroup.{u_2} E inst_1))
+                  (@NormedSpace.toModule.{u_1, u_2} 𝕜 E
+                    (@DenselyNormedField.toNormedField.{u_1} 𝕜 (@RCLike.toDenselyNormedField.{u_1} 𝕜 inst)) inst_1
+                    (@InnerProductSpace.toNormedSpace.{u_1, u_2} 𝕜 E inst inst_1 inst_2)))))))
+        r y))
+    (@HMul.hMul.{u_1, u_1, u_1} 𝕜 𝕜 𝕜
+      (@instHMul.{u_1} 𝕜
+        (@Distrib.toMul.{u_1} 𝕜
+          (@instDistribOfSemiring.{u_1} 𝕜
+            (@CommSemiring.toSemiring.{u_1} 𝕜
+              (@Semifield.toCommSemiring.{u_1} 𝕜
+                (@Field.toSemifield.{u_1} 𝕜
+                  (@NormedField.toField.{u_1} 𝕜
+                    (@DenselyNormedField.toNormedField.{u_1} 𝕜 (@RCLike.toDenselyNormedField.{u_1} 𝕜 inst)))))))))
+      r (@Inner.inner.{u_1, u_2} 𝕜 E (@InnerProductSpace.toInner.{u_1, u_2} 𝕜 E inst inst_1 inst_2) x y))
+@Real.sq_sqrt : ∀ {x : Real}
+  (h : @LE.le.{0} Real Real.instLE (@OfNat.ofNat.{0} Real (nat_lit 0) (@Zero.toOfNat0.{0} Real Real.instZero)) x),
+  @Eq.{1} Real
+    (@HPow.hPow.{0, 0, 0} Real Nat Real
+      (@instHPow.{0, 0} Real Nat (@NPow.toPow.{0} Real (@Monoid.toNPow.{0} Real Real.instMonoid))) (Real.sqrt x)
+      (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))
+    x
+@div_mul_cancel₀.{u_1} : ∀ {G₀ : Type u_1} [inst : GroupWithZero.{u_1} G₀] {b : G₀} (a : G₀)
+  (h :
+    @Ne.{u_1 + 1} G₀ b
+      (@OfNat.ofNat.{u_1} G₀ (nat_lit 0)
+        (@Zero.toOfNat0.{u_1} G₀
+          (@MulZeroClass.toZero.{u_1} G₀
+            (@MulZeroOneClass.toMulZeroClass.{u_1} G₀
+              (@MonoidWithZero.toMulZeroOneClass.{u_1} G₀ (@GroupWithZero.toMonoidWithZero.{u_1} G₀ inst))))))),
+  @Eq.{u_1 + 1} G₀
+    (@HMul.hMul.{u_1, u_1, u_1} G₀ G₀ G₀
+      (@instHMul.{u_1} G₀
+        (@MulZeroClass.toMul.{u_1} G₀
+          (@MulZeroOneClass.toMulZeroClass.{u_1} G₀
+            (@MonoidWithZero.toMulZeroOneClass.{u_1} G₀ (@GroupWithZero.toMonoidWithZero.{u_1} G₀ inst)))))
+      (@HDiv.hDiv.{u_1, u_1, u_1} G₀ G₀ G₀
+        (@instHDiv.{u_1} G₀ (@DivInvMonoid.toDiv.{u_1} G₀ (@GroupWithZero.toDivInvMonoid.{u_1} G₀ inst))) a b)
+      b)
+    a
+@mul_le_mul_right.{u_1} : ∀ {α : Type u_1} {b c : α} [inst : Mul.{u_1} α] [inst_1 : LE.{u_1} α]
+  [@MulLeftMono.{u_1} α inst inst_1] (bc : @LE.le.{u_1} α inst_1 b c) (a : α),
+  @LE.le.{u_1} α inst_1 (@HMul.hMul.{u_1, u_1, u_1} α α α (@instHMul.{u_1} α inst) a b)
+    (@HMul.hMul.{u_1, u_1, u_1} α α α (@instHMul.{u_1} α inst) a c)
+@Fin.sum_univ_two.{u_1} : ∀ {M : Type u_1} [inst : AddCommMonoid.{u_1} M]
+  (f : Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) → M),
+  @Eq.{u_1 + 1} M
+    (@Finset.sum.{0, u_1} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) M inst
+      (@Finset.univ.{0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))
+        (Fin.fintype (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))
+      fun (i : Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) => f i)
+    (@HAdd.hAdd.{u_1, u_1, u_1} M M M
+      (@instHAdd.{u_1} M
+        (@AddZero.toAdd.{u_1} M
+          (@AddZeroClass.toAddZero.{u_1} M
+            (@AddMonoid.toAddZeroClass.{u_1} M (@AddCommMonoid.toAddMonoid.{u_1} M inst)))))
+      (f
+        (@OfNat.ofNat.{0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) (nat_lit 0)
+          (@Fin.instOfNat (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))
+            (@Nat.instNeZeroSucc (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))) (nat_lit 0))))
+      (f
+        (@OfNat.ofNat.{0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) (nat_lit 1)
+          (@Fin.instOfNat (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))
+            (@Nat.instNeZeroSucc (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))) (nat_lit 1)))))

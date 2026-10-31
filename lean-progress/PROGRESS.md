@@ -648,3 +648,26 @@ fit15HIGH225.532s accepted onlystatements; fullproof/actualapplication gate
 stillpending. Searchregistry/cachedMathlib beforebuilding,freezeexactpublic
 types/guards,localcompile/replay/axiom/negativecontrols ifdeveloped. No new
 officialpackage/companion/lease/registry/HPC authority; decision4 pending.
+
+## Positive-Gram local finite seam — PROVISIONAL 2026-10-31
+
+Fourpublicheaders fencedbeforeproof: scalar_sqrt_dual,gram_norm_square,
+active_upper_bound,half_weighted_entrywise_mono. Completepublictypes/std3
+axioms,6actualcalls andprivateexactPGbranchconsumer PASS. Freshsource-only
+ownedreplay5artifactpairs identical;4standaloneFalse variants rejected at
+False(notAPI/importfailure). TwoearlylocalAPI/rewritefailuresandoldunused
+ auditbinderwarnings retained; no statement/linterweakening. Finalchecks0
+errors/warnings. Currentofficialstable4.35/Mathlib56a0058 independently
+verified;9selectedsourceHEADs/indexclean,8Mathlib-onlycachelibraries. No
+privateWalsh/Rough libraryadoption,donor/dependencybuild or newpackage.
+
+Perunit2CPU,4GiBhigh/6GiBmax,64tasks,proof-j1/asyncfalse;max2concurrent
+units. Complete117membernativearchive readbackhashed. Rawsearchcoverage
+incomplete(7nocheckoutpackages); typedLoogle/actualpinRG/APIchecks retained,
+notabsence. ReuseMathlibprimitives/onlyconsumerwrappers,notnewlibrary.
+
+74acceptedfacts20seams PLUS4PROVISIONALpublicfacts/newlocalseam awaiting
+FULLPGsource/type/actualapplicationfidelity. Privateconsumer is integration
+evidence,notfifthpublicfact. PG1-PG2min/existence/attainment/Gramrealization
+and actualPDEoccupationapplication are ANALYTIC/opengates,notformalized.
+OfficialcompanionL0/decision4unchanged; no officiallease/registry/HPC gate.

@@ -1,0 +1,311 @@
+{
+  "cache": {
+    "root": "default",
+    "writes": []
+  },
+  "complete": false,
+  "coverage": null,
+  "date": "2026-10-31",
+  "loogle_query": "Real.sqrt",
+  "offline": false,
+  "ok": true,
+  "package": null,
+  "route": "natural-language",
+  "searched": 1,
+  "skipped_sources": [
+    "registry",
+    "index",
+    "leansearch",
+    "reservoir",
+    "palomar",
+    "github"
+  ],
+  "sources": [
+    {
+      "cache_writes": [],
+      "cap_limit": null,
+      "capped": [],
+      "hits": [],
+      "incomplete": null,
+      "partial": [],
+      "reason": "not selected",
+      "revision": null,
+      "route": "natural-language",
+      "source": "registry",
+      "state": "skipped",
+      "total": null
+    },
+    {
+      "cache_writes": [],
+      "cap_limit": null,
+      "capped": [],
+      "hits": [],
+      "incomplete": null,
+      "partial": [],
+      "reason": "not selected",
+      "revision": null,
+      "route": "natural-language",
+      "source": "index",
+      "state": "skipped",
+      "total": null
+    },
+    {
+      "cache_writes": [],
+      "cap_limit": 20,
+      "capped": [
+        "results"
+      ],
+      "hits": [
+        {
+          "extra": {
+            "module": "Mathlib.Analysis.Real.Sqrt",
+            "type": "(x : \u211d) : \u211d"
+          },
+          "name": "Real.sqrt",
+          "summary": "The square root of a real number. This returns 0 for negative inputs. This has notation `\u221ax`. Note that `\u221ax\u207b\u00b9` is parsed as `\u221a(x\u207b\u00b9)`.",
+          "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Real.sqrt#doc"
+        },
+        {
+          "extra": {
+            "module": "Mathlib.Analysis.Real.Sqrt",
+            "type": ": Monotone Real.sqrt"
+          },
+          "name": "Real.sqrt_monotone",
+          "summary": ": Monotone Real.sqrt",
+          "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Real.sqrt_monotone#doc"
+        },
+        {
+          "extra": {
+            "module": "Mathlib.Analysis.Real.Sqrt",
+            "type": "(x : \u211d) : 0 \u2264 \u221ax"
+          },
+          "name": "Real.sqrt_nonneg",
+          "summary": "(x : \u211d) : 0 \u2264 \u221ax",
+          "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Real.sqrt_nonneg#doc"
+        },
+        {
+          "extra": {
+            "module": "Mathlib.Analysis.Real.Sqrt",
+            "type": ": Filter.Tendsto (fun x => \u221ax) Filter.atTop Filter.atTop"
+          },
+          "name": "Real.tendsto_sqrt_atTop",
+          "summary": ": Filter.Tendsto (fun x => \u221ax) Filter.atTop Filter.atTop",
+          "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Real.tendsto_sqrt_atTop#doc"
+        },
+        {
+          "extra": {
+            "module": "Mathlib.Analysis.Real.Sqrt",
+            "type": "(x : \u211d) : \u221ax\u207b\u00b9 = (\u221ax)\u207b\u00b9"
+          },
+          "name": "Real.sqrt_inv",
+          "summary": "(x : \u211d) : \u221ax\u207b\u00b9 = (\u221ax)\u207b\u00b9",
+          "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Real.sqrt_inv#doc"
+        },
+        {
+          "extra": {
+            "module": "Mathlib.Analysis.Real.Sqrt",
+            "type": "{a : \u2115} : \u2191a.sqrt \u2264 \u221a\u2191a"
+          },
+          "name": "Real.nat_sqrt_le_real_sqrt",
+          "summary": "The natural square root is at most the real square root",
+          "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Real.nat_sqrt_le_real_sqrt#doc"
+        },
+        {
+          "extra": {
+            "module": "Mathlib.Analysis.Real.Sqrt",
+            "type": "{x y : \u211d} (h : x \u2264 y) : \u221ax \u2264 \u221ay"
+          },
+          "name": "Real.sqrt_le_sqrt",
+          "summary": "{x y : \u211d} (h : x \u2264 y) : \u221ax \u2264 \u221ay",
+          "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Real.sqrt_le_sqrt#doc"
+        },
+        {
+          "extra": {
+            "module": "Mathlib.Analysis.Real.Sqrt",
+            "type": ": Filter.comap (fun x => \u221ax) Filter.atTop = Filter.atTop"
+          },
+          "name": "Real.comap_sqrt_atTop",
+          "summary": ": Filter.comap (fun x => \u221ax) Filter.atTop = Filter.atTop",
+          "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Real.comap_sqrt_atTop#doc"
+        },
+        {
+          "extra": {
+            "module": "Mathlib.Analysis.Real.Sqrt",
+            "type": ": Filter.map (fun x => \u221ax) Filter.atTop = Filter.atTop"
+          },
+          "name": "Real.map_sqrt_atTop",
+          "summary": ": Filter.map (fun x => \u221ax) Filter.atTop = Filter.atTop",
+          "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Real.map_sqrt_atTop#doc"
+        },
+        {
+          "extra": {
+            "module": "Mathlib.Analysis.Real.Sqrt",
+            "type": ": \u221a1 = 1"
+          },
+          "name": "Real.sqrt_one",
+          "summary": ": \u221a1 = 1",
+          "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Real.sqrt_one#doc"
+        },
+        {
+          "extra": {
+            "module": "Mathlib.Analysis.Real.Sqrt",
+            "type": ": \u221a0 = 0"
+          },
+          "name": "Real.sqrt_zero",
+          "summary": ": \u221a0 = 0",
+          "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Real.sqrt_zero#doc"
+        },
+        {
+          "extra": {
+            "module": "Mathlib.Analysis.Real.Sqrt",
+            "type": ": StrictMonoOn Real.sqrt (Set.Ici 0)"
+          },
+          "name": "Real.strictMonoOn_sqrt",
+          "summary": ": StrictMonoOn Real.sqrt (Set.Ici 0)",
+          "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Real.strictMonoOn_sqrt#doc"
+        },
+        {
+          "extra": {
+            "module": "Mathlib.Analysis.Real.Sqrt",
+            "type": ": Continuous fun x => \u221ax"
+          },
+          "name": "Real.continuous_sqrt",
+          "summary": ": Continuous fun x => \u221ax",
+          "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Real.continuous_sqrt#doc"
+        },
+        {
+          "extra": {
+            "module": "Mathlib.Analysis.Real.Sqrt",
+            "type": "{x : \u211d} : x / \u221ax = \u221ax"
+          },
+          "name": "Real.div_sqrt",
+          "summary": "{x : \u211d} : x / \u221ax = \u221ax",
+          "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Real.div_sqrt#doc"
+        },
+        {
+          "extra": {
+            "module": "Mathlib.Analysis.Real.Sqrt",
+            "type": "{a : \u2115} : \u230a\u221a\u2191a\u230b = \u2191a.sqrt"
+          },
+          "name": "Real.floor_real_sqrt_eq_nat_sqrt",
+          "summary": "The floor of the real square root is the same as the natural square root.",
+          "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Real.floor_real_sqrt_eq_nat_sqrt#doc"
+        },
+        {
+          "extra": {
+            "module": "Mathlib.Analysis.Real.Sqrt",
+            "type": "{x : \u211d} : x \u2264 \u221ax \u2194 x \u2264 1"
+          },
+          "name": "Real.le_sqrt_self_iff",
+          "summary": "{x : \u211d} : x \u2264 \u221ax \u2194 x \u2264 1",
+          "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Real.le_sqrt_self_iff#doc"
+        },
+        {
+          "extra": {
+            "module": "Mathlib.Analysis.Real.Sqrt",
+            "type": "{x : \u211d} : \u221ax < x \u2194 1 < x"
+          },
+          "name": "Real.sqrt_lt_self_iff",
+          "summary": "{x : \u211d} : \u221ax < x \u2194 1 < x",
+          "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Real.sqrt_lt_self_iff#doc"
+        },
+        {
+          "extra": {
+            "module": "Mathlib.Analysis.Real.Sqrt",
+            "type": "(x : \u211d) : \u221a(x * x) = |x|"
+          },
+          "name": "Real.sqrt_mul_self_eq_abs",
+          "summary": "(x : \u211d) : \u221a(x * x) = |x|",
+          "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Real.sqrt_mul_self_eq_abs#doc"
+        },
+        {
+          "extra": {
+            "module": "Mathlib.Analysis.Real.Sqrt",
+            "type": "{a : \u2115} : \u230a\u221a\u2191a\u230b\u208a = a.sqrt"
+          },
+          "name": "Real.nat_floor_real_sqrt_eq_nat_sqrt",
+          "summary": "The natural floor of the real square root is the same as the natural square root.",
+          "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Real.nat_floor_real_sqrt_eq_nat_sqrt#doc"
+        },
+        {
+          "extra": {
+            "module": "Mathlib.Analysis.Real.Sqrt",
+            "type": "{x : \u211d} : \u221ax / x = (\u221ax)\u207b\u00b9"
+          },
+          "name": "Real.sqrt_div_self",
+          "summary": "{x : \u211d} : \u221ax / x = (\u221ax)\u207b\u00b9",
+          "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Real.sqrt_div_self#doc"
+        }
+      ],
+      "incomplete": null,
+      "partial": [],
+      "reason": null,
+      "revision": "live (Mathlib master)",
+      "route": "natural-language",
+      "source": "loogle",
+      "state": "ok",
+      "total": 389
+    },
+    {
+      "cache_writes": [],
+      "cap_limit": null,
+      "capped": [],
+      "hits": [],
+      "incomplete": null,
+      "partial": [],
+      "reason": "not selected",
+      "revision": null,
+      "route": "natural-language",
+      "source": "leansearch",
+      "state": "skipped",
+      "total": null
+    },
+    {
+      "cache_writes": [],
+      "cap_limit": null,
+      "capped": [],
+      "hits": [],
+      "incomplete": null,
+      "partial": [],
+      "reason": "not selected",
+      "revision": null,
+      "route": "natural-language",
+      "source": "reservoir",
+      "state": "skipped",
+      "total": null
+    },
+    {
+      "cache_writes": [],
+      "cap_limit": null,
+      "capped": [],
+      "hits": [],
+      "incomplete": null,
+      "partial": [],
+      "reason": "not selected",
+      "revision": null,
+      "route": "natural-language",
+      "source": "palomar",
+      "state": "skipped",
+      "total": null
+    },
+    {
+      "cache_writes": [],
+      "cap_limit": null,
+      "capped": [],
+      "hits": [],
+      "incomplete": null,
+      "partial": [],
+      "reason": "not selected",
+      "revision": null,
+      "route": "natural-language",
+      "source": "github",
+      "state": "skipped",
+      "total": null
+    }
+  ],
+  "term": "sqrt",
+  "total_hits": 20,
+  "truncated_sources": [
+    "loogle"
+  ]
+}

@@ -1,0 +1,20 @@
+theorem scalar_sqrt_dual (ell w t : ℝ) (hw : 0 < w) (ht : 0 ≤ t) :
+    2 * ell * Real.sqrt t ≤ ell ^ 2 / w + w * t :=
+
+theorem gram_norm_square {ι : Type u} {H : Type v} [Fintype ι]
+    [NormedAddCommGroup H] [InnerProductSpace ℝ H] (k : ι → H) (w : ι → ℝ) :
+    ‖∑ i, w i • k i‖ ^ 2 =
+      ∑ i, ∑ j, w i * inner ℝ (k i) (k j) * w j :=
+
+theorem active_upper_bound {ι : Type u} {H : Type v} [Fintype ι]
+    [NormedAddCommGroup H] [InnerProductSpace ℝ H]
+    (Phi : H) (k : ι → H) (ell b w : ι → ℝ)
+    (hw : ∀ i, 0 < w i) (ht : ∀ i, 0 ≤ inner ℝ Phi (k i) - b i) :
+    2 * (∑ i, ell i * Real.sqrt (inner ℝ Phi (k i) - b i)) - ‖Phi‖ ^ 2 / 2 ≤
+      (∑ i, ell i ^ 2 / w i) - (∑ i, b i * w i) + ‖∑ i, w i • k i‖ ^ 2 / 2 :=
+
+theorem half_weighted_entrywise_mono {ι : Type u} [Fintype ι]
+    (C D : ι → ι → ℝ) (w : ι → ℝ)
+    (hw : ∀ i, 0 ≤ w i) (hCD : ∀ i j, C i j ≤ D i j) :
+    (1 / 2 : ℝ) * (∑ i, ∑ j, w i * C i j * w j) ≤
+      (1 / 2 : ℝ) * (∑ i, ∑ j, w i * D i j * w j) :=

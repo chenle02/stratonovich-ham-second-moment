@@ -431,3 +431,15 @@ OwnSIGNEDscoreupper isnot intendedauthorconstant/positive-score/lower-match/
 exactlimit. IndependentPGfiniteproposal/sourcefit suppliesnopremise; its
 finitecoreformalization remainsfuturework. Officialcompaniondecision4and
 package/registry/lease/HPC/publication gates unchanged.
+
+## FP-POSITIVE-GRAM-PROVISIONAL: conditional finite algebra,not score theorem
+
+Local4publiccertificates+privateintegratedconsumer passed source/type/std3
+axiom/ownedsource-onlyreplay/falsecontrols at currentLean4.35/Mathlib56a0058.
+Exactguards: scalarw>0,t>=0,ellreal; finiteGramidentityanysignedweights and
+realinnerproductspace; activebranchhw_i>0,ht_i>=0; halfweightedentryorder
+w_i>=0,Cij<=Dij. No inverse orPSDdifference. PaperPGextraell>0,b>=0,
+Gramnonnegative/PSD/nonzerodiagonal eligibleA,strictactive->ht>=0 anddual
+minimizer->hw>0 remainanalyticapplications toreview. No minimum,global
+scoreequality,conicoptimizer,Gramrealization,inf/maxorder orphysicalmodel
+fromthiskernelreceipt. Fourprovisionalfacts only,accepted74/20 unchanged.
