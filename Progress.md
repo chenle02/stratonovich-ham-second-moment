@@ -7076,3 +7076,11 @@ finitepowermean actualr/rnu guards planned, no new kernel/count73facts19seams/
 L0. Original full sharp/source goalACTIVE; actiontails/globalrestart/growing
 cone/POINT/sourceconstants/exactlimit OPEN. No contact/Skorohod/HPC/sourcefix/
 companion/TeX/PDF/wiki/bib/publication; NoRoute/localisolated/pushpending.
+
+B1-B3 statement review launched original90849 on2135264,12TEXT bindings
+verified live/frozen/Git. Samehandle, no restart on timeout. Outside packet,
+restart-reuse-screen-v1.md audits EXISTING raw-block Section7(19)-(23):
+fixed-mask noise-only restart is already proved, while growing-cone/POINT
+upper remains OPEN. Later Gaussian-head consumer should reuse that accepted
+identity with fullhead+residual E2(5), not re-prove lowercones or reverseF3.
+This is a source/application screen, not adoption of a new upper transfer.
