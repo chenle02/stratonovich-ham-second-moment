@@ -52,6 +52,11 @@
  frozen/falsified independently, also UNPROVED; v3 same-source completed
  mean and exact block-adjoint direction,22text packet NOT dispatched. GrowingR operator bound
  and source normalization remainOPEN; exactr<2/a.
+- **New UNREVIEWED candidate:** uniform-e-cameron-regulator.md U1-U5
+  drafts uniformR E mean/translation-heat/frequency/time tensor tails and
+  the ACTUAL residual block Cameron norm via infinite-spatial-rank TRUE
+  projection. Frozen/falsified before proof; FULL22text packet NOT dispatched.
+  No stochastic expectednorm/growingR exponential or sharp upper follows.
 - **Still open:** intended author-energy/domain/normalization dictionary,
   matching sharp upper constant and conditional exact limit. Original full
   goal ACTIVE; no whole-paper/circulation/wiki/master integration clearance.
@@ -7367,3 +7372,51 @@ Skorohod/sourcefix/TeX/PDF/wiki/bib/publication, NoRoute/pushpending.
   frozen in SP statement-packet-v3; v2 remains preserved as earlier
   undispatched scope. No review retry before quota reset. GC review remains
   first. Full original all-model/source sharp target ACTIVE and incomplete.
+
+## UniformR E Cameron/regulator proof candidate — 2026-10-31
+
+- Previous goal turn PROGRESS: SPv3 exact source/block application packet
+  at240f907. Current source audit starts from ACCEPTED C1-C3/source transfer/
+  raw-isometry inputs; neither pending GC nor pending SP is a premise.
+  Fresh origin fetch and focused <HUB> SSH both255NoRoute. Original
+  GC63674 remains TERMINAL quota/no report; current clock before reset19:10UTC.
+- New U1-U5 target frozen before numeric tests. V2 makes direct E free
+  G_B<=3B,C_B<=18B^(3-1/r) and exact (2/B)^(1/p-1/r) blockweight explicit.
+  Complete UNREVIEWED proof in notes/uniform-e-cameron-regulator.md:
+  radius-independent cutoff FourierL1 norm; actual physical product and
+  translation/heat tail; TRUE spectral projection preserving the CLOSED
+  covariance image including singular/boundary mass; Hilbert-valued scalar
+  time-tail extension with Gaussian constant1; actual projected raw residual
+  and weighted Cameron embedding bound, uniformR>=1, alloriginalGamma/d.
+- This is ONE proof-draft round, not accepted/new scientific clearance.
+  Gateclass ORDINARY RESEARCH, missing independent evidence ->full route;
+  no certification waiver. Source/fidelity/actualapplication and finite-type
+  routing in source-crosswalk-v1.md; freeze FULL22text packet for required
+  actual Opus5.5/HIGH review, NOT dispatched before provider capacity returns.
+  All findings must be adjudicated before adoption/substantial successor.
+  Separate GC/SP pre-proof gates remain unchanged; no new review report.
+- Actual lawful d1white spatial rows:24values,12two-resolution pairs,
+  2unmaskedGaussian calibrations. Largest tail-calibration relative error
+  .00364174 ->.000712837; max maskedtail resolution change .000126456.
+  Whole-space H1/2 state norm integrated35/65digits; threshold cells/Nyquist
+  and discretization errors NOT certified. Tests are selected rows, not
+  operator supremum/allGamma or stochastic driver expectation estimates.
+- Exactr4 finite tensor diagnostics:24normcases,3Gaussianmoment algebra,
+  3COMPUTED spatial-separation guards. Separation evaluator was corrected
+  to compute its distances and rerun; no hardcoded-output calibration.
+  Dimension-dependent upper might be valid but too loose, not refuted.
+- Four old scalar source/type/custody byte bindings verified at accepted
+  e51432c/e0a6f3e. JointTilt amplitude and full Mathlib powermean type/actual
+  guard substitution only; no new Lean compiler/source/kernel/count.
+  All spatial/tensor/Gaussian/Cameron steps analytic,74facts20seams/L0.
+- Crucial remaining gap: uniformR Cameron norm DOES NOT supply an expected
+  residual driver-norm anchor. Existing fixedR concentration cannot yet be
+  used on growingR. Retained head has infinite spatial rank, no finite
+  Gaussian density/integration. GC pointtransfer, SPbaseline, stochastic
+  anchors/localization/entropy/signed-positive score/source normalization/
+  sharpconstant/exactlimit stillOPEN; original full goal ACTIVE.
+- Wiki CLI search/cite and synthesized spatial/Gaussian-noise boundary reads
+  retained; own covariance normalization kept, no Walsh/timewhite theorem
+  imported. No new missing helpful reference identified/intake or external
+  theorem. No TeX/PDF/wiki/bib/sourcePDF/sibling/Skorohod/contact/HPC/
+  companion/publication change. No whole-paper or round-close clearance.
