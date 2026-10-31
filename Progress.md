@@ -6662,3 +6662,16 @@ fact/application; wrong-form coefficient wrapper excluded. No new Lean
 scaffold/count/package. Next independent statement gate BEFORE long proof.
 Full original sharpupper/point/source scope ACTIVE, no narrower replacement.
 No contact/Skorohod/HPC/sourcefix/TeX/PDF/wiki/bib/companion/publication.
+
+### Upper growing-mask projection counter-control retained, unreviewed
+
+During confirmed-live fixed-R C1-C3 statement review77668, save separate
+globalization-guard-v0: actual d1white unit raw CM controls
+f_a tensor translated q_n/sqrt(M_a) escape any FIXED finite smooth compact
+raw projection. A growing mask can contain each q_n, and a bounded F
+velocity-dual coefficient remains1/(sqrt(M_a)||q||H1/2). This challenges
+uniform-in-R mean-map projection tails, NOT fixed-R C1-C3 or the sharp
+upper goal. Exact proof candidate needs FULL review before adopted no-go.
+No assumption that fixed-mask F3 reverses or upper unmasking is automatic.
+No current review input mutated, no new kernel/count/package/contact/HPC/
+Skorohod/sourcefix/TeX/PDF/wiki/publication. Full original goalACTIVE.
