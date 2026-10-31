@@ -45,8 +45,9 @@
  fixedR second operator moment has upper rate OWNsupALLsigned(2Rate-half
  raw action), with correct bulk/tail anddelta->J->B limits. Not POINT/L^*.
 - **Immediate next:** complete the independent GC1-GC3 growing-cone
- statement gate on frozen c7d0e57 when provider capacity returns. Original
- supported review63674 is TERMINAL quota, no report/coverage/acceptance.
+ statement gate on frozen c7d0e57. Fresh authorized-account doctor and
+ actual same-model firstParty READY probe recovered capacity; old supported
+ review63674 remains TERMINAL quota, no report/coverage/acceptance.
  GC1-GC3 remain UNPROVED; compact data/source limits/average-of-SQUARES
  controls and18input bindings retained. SP1-SP4 E symplectic baseline
  frozen/falsified independently, also UNPROVED; v3 same-source completed
@@ -7420,3 +7421,24 @@ Skorohod/sourcefix/TeX/PDF/wiki/bib/publication, NoRoute/pushpending.
   imported. No new missing helpful reference identified/intake or external
   theorem. No TeX/PDF/wiki/bib/sourcePDF/sibling/Skorohod/contact/HPC/
   companion/publication change. No whole-paper or round-close clearance.
+
+## Timely retrospective exposes authorized account recovery — 2026-10-31
+
+- Le requested durable lessons now. Reviewing canonical authority exposed
+  an existing rule the worker had failed to retrieve: configured Claude
+  <plan removed> recovery IS authorized. Prior fixed-slot/no-early-
+  retry notes were worker assumptions, not a PI prohibition. Preserve them
+  as history, but do not keep imposing that invented restriction.
+- claude-acct best currently selects <account removed>; fresh native doctor pins
+  runtime2.1.304/<plan removed> and observed identity. Quota-helper
+  identity differs from doctor, so no alias-based identity/quota inference.
+  One bounded no-tools same-model probe exited0,is_error=false,READY,
+  actualclaude-opus-5-5/firstParty. Exact records retained under GC review.
+  This is VERIFIED availability change, not an unchanged confidence retry
+  or mathematical review. No account creation/credential copy/setup change.
+- New immutable GC statement review may proceed on unchanged c7d0e57
+  packet/HIGH threshold. Oldterminal63674 quota and missing report remain.
+- Canonical existing lessons will be amended and synchronized, not duplicated.
+  Count review debt across preparatory/statement/candidate cycles as well as
+  proof drafts; do not reset it by renaming rounds. SA target/lattice/parameter
+  diagnostics retained UNPROVED; no further proof draft until required review.
