@@ -6675,3 +6675,18 @@ upper goal. Exact proof candidate needs FULL review before adopted no-go.
 No assumption that fixed-mask F3 reverses or upper unmasking is automatic.
 No current review input mutated, no new kernel/count/package/contact/HPC/
 Skorohod/sourcefix/TeX/PDF/wiki/publication. Full original goalACTIVE.
+
+### C1-C3 statement gate accepted before long proof — 2026-10-31 UTC
+
+Original77668 TERMINAL,22checks PASS/PASS_WITH_NOTES/HIGH569.515s,
+no requiredrepairs. Canonical report/pass/correspondence/readcoverage pass;
+20live/frozen/Git/native hashes and all35native archive members
+verified. No recovery/restart/waiver. Proof investment only, NOT an upper
+or compactness theorem. Seven findings recorded: mask-root distinction,
+exactdelta-lp norm/Bconstants; fullsupportedONbasis/residual; direct-only
+source coverage; v0 controls notprovider-read; wrongcontrolduplication and
+8trivial rows; complete analytic density/PSD/compactness/tensor/Cameron/
+Bochner/finitepower proof obligations. Globalization guard separate/unreviewed.
+Next full C1-C3 proof, then FULL independent gate.73facts19seams/L0 unchanged;
+no kernel/package/HPC/contact/Skorohod/sourcefix/TeX/PDF/wiki/publication.
+Original full goalACTIVE, growingcone/upperpoint/sourceconstant gapsOPEN.
