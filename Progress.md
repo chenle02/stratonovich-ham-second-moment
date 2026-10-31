@@ -7084,3 +7084,14 @@ fixed-mask noise-only restart is already proved, while growing-cone/POINT
 upper remains OPEN. Later Gaussian-head consumer should reuse that accepted
 identity with fullhead+residual E2(5), not re-prove lowercones or reverseF3.
 This is a source/application screen, not adoption of a new upper transfer.
+
+### B1-B3 statement gate accepted before proof — 2026-10-31
+
+Original90849 TERMINAL,16checks PASS/HIGH234.987seconds,no requiredrepairs.
+Canonical report/pass/correspondence/readcoverage pass;12live/frozen/Git/
+native bindings and27native archive members verified. No restart/recovery/
+waiver. All6minor notes adjudicated: named toy(1,1) vs opposite(2,2), explicit
+4/32/C_theta budgets, stopped frozen primitive, full norm, free-sector scope
+and sufficientK prefactor. Frozen statement/script/results unchanged;
+evidence wording clarified only. Full B1-B3 proof NEXT, not yet adopted.
+73facts19seams/L0 unchanged, full original sharp/source goalACTIVE.

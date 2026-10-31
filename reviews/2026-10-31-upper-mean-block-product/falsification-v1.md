@@ -23,7 +23,8 @@ Root executed check-block-budget-v1.py locally with uv/mpmath:
  endpoint controls) compare the correct LEFT ordered physical matrix,
  reversed order, and evolution with the averaged potential. All9interior
  flow gaps are positive. Exact interaction-primitive endpoint gaps are
- -B²xi(1-xi)/2 on the diagonal and -B³(xi-xi³)/3 on the upper entry.
+ -B²xi(1-xi)/2 on the(1,1) entry (opposite sign on(2,2)) and -B³(xi-xi³)/3 on the
+ (1,2) entry.
  These reject exact finite-scale equality/order reversal; they do NOT
  measure the full Holder norm or actual compact spatial/CM/F operator.
  Floating toy gaps at70digits have no certified error enclosure. Matrix
