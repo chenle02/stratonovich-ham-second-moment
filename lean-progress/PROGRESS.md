@@ -18,6 +18,13 @@
   pilot now has three elaborated statements and an owned-source replay.
   Exact type/application review passed4checks/HIGH;no official package gate is claimed.
 
+- **Standalone local checks (current):**74acceptedfinitefacts20local seams.
+  LatestGaussian cutoff-density split passed FULL exacttype/application
+  review18HIGH335.531s atscientific180bf1a. Probability/operator/SPDE
+  analysis remains informal; no officialpackage/companion gate. State
+  mirror reconciled from this authority; prior nine omitted entries were
+  already accepted, not newly proved or reclassified.
+
 ## Planned waves (strategy in ROADMAP.md)
 
 | Wave | Target | Opens when |
@@ -604,3 +611,22 @@ New singlefinite scalar inequality pending FULL actual GLapplication gate;
 Source lean-progress/local-checks/gaussian-tail-v1/. No formal Gaussian/
 integration/conditional law/operator/SPDE, official package/lease/registry/
 HPC gate; companionL0/decision4 unchanged.
+
+## Gaussian cutoff-density actual application accepted — 2026-10-31
+
+Scientific180bf1a,18groupedchecks/HIGH335.531seconds,no requiredrepairs.
+COMPLETE publictype and EXACT application C=A1B3nu,M=M_B,x=headnorm,
+positive cutoff/modelguards checked. Sourceheader/body unchanged, std3axioms,
+5ownedreplaypairs,3standalonefalse numeric variants (not theorem calls) and
+2valid actual theorem instantiations. Native28members reverified withpost-
+cache/source/indexclean pins. Promote ONE previously provisionalfinitefact:
+74acceptedfinitefacts20local seams. No Gaussian/conditional/integral/
+operator/SPDE formalization, officialpackage/companion/lease/registry/HPC.
+
+Machine mirror reconciliation: before10entries48facts while authoritative
+ledger already19/73. Restored9accepted entries25facts, each publicsource
+byte-equal its scientificGitblob and HIGH application close in this file;
+then added newGaussian entry1fact. Currentmirror20entries74facts. Oldproofs
+unchanged, no new compile/review of old25facts claimed. See local-checks/
+gaussian-tail-v1/mirror-reconciliation-inputs.json and-summary.json.
+L0/PROPOSED and officialcompaniondecision4 unchanged.

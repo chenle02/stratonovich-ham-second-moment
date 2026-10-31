@@ -109,3 +109,26 @@ remains outside Lean. No companion or canonical package gate.
 | Name | Scope | Status |
 |---|---|---|
 | weighted_natural_powers | Natural L>0,q<=L,real x/y, absolute integer powers and realcastweights; exact pinned Mathlib AM-GM reuse | Local compile/audit/owned5artifact replay/3False controls; exacttype/application HIGH scientific e59c29b, native format lineage preserved |
+
+## Reconciled already-accepted local entries (state mirror only)
+
+These25facts were already accepted in PROGRESS.md; sources checked equal
+reviewed scientificGitblobs. No new proof/build/promotion in this inventory.
+
+| Local seam | Public finite facts | Scientific application source |
+|---|---|---|
+| joint-tilt-v1 | 4 | e51432c |
+| moving-cone-v1 | 3 | abfdab4 |
+| actual-event-v1 | 2 | d5dcd46 |
+| raw-variational-v1 | 4 | 0fd2a05 |
+| occupation-form-v1 | 2 | 80e47d6 |
+| raw-value-ceiling-v1 | 2 | ad6c188 |
+| damped-lower-v1 | 3 | 8883160 |
+| global-omega-v1 | 4 | ee188ab |
+| dimensional-matrix-v1 | 1 | 0743b2d |
+
+## Gaussian density split: StratonovichHAMAudit.GaussianTail
+
+| Name | Scope | Status |
+|---|---|---|
+| cutoff_density_split | REAL M>0,x>=M,C>=0,1<nu<2,4C<=M^(2-nu) implies Cx^nu-x²/2<=-M²/8-x²/8; no Gaussian measure or operator assertion | Local clean source/type/stdaxioms/5pairreplay/3falsevariants; COMPLETE actualGLtail application HIGH scientific180bf1a |

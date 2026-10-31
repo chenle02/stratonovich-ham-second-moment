@@ -286,3 +286,22 @@ Existing fixed-mask rawrestart fit checked (fullblock=head+residual), not
 new point-upper transfer. Gaussian bulk/tails/action, growingcone/POINT/
 sourceconstants/normalization/exactlimit remainOPEN. Official companion
 and package/registry/lease/HPC action not taken; decision4 pending.
+
+## FP-GAUSSIAN-OPERATOR: actual fixedR second operator-moment upper
+
+Scientific180bf1a,18groupedchecks/HIGH335.531seconds. New singlefinite
+StratonovichHAMAudit.GaussianTail.cutoff_density_split is kernel-checked:
+M>0,x>=M,C>=0,1<nu<2,4C<=M^(2-nu) derives Cx^nu-x²/2<=-M²/8-x²/8.
+Exactactualtail C=A1B3nu,M_B,headnorm/cutoff hypotheses passed FULLapplication.
+No desiredabsorptionconclusion is assumed. Std3axioms/5replaypairs,
+3standalonefalsevariants and2validtheoremcalls; no source/headerchange.
+74acceptedfinitefacts20local seams after thisONEpromotion.
+
+ActualsameW rawsource/globalrestart, finitehead Gaussian density/halfaction,
+Q_J independence, Boreloperator norm, conditionalbulk, eventualcutoff,
+Gaussianintegral2^J, scoresup/coercivity anddelta/J/B moments/limits are
+reviewed INFORMAL analytic arguments, not formalized by the scalar lemma.
+The result is fixedR operator upper by OWNALLsignedscore, not original
+POINT, authorL^*, firstmean or signed-positive score identity. Growingcone/
+source normalization/exactlimit remainOPEN. OfficialcompanionL0/decision4
+unchanged; no package/registry/lease/HPC/publication gate.

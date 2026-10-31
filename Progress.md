@@ -40,17 +40,22 @@
  232.556s,17bindings/32native members verified. Exact physical blocks,
  polynomial B/K budgets and integrated spectral rate on EVERY polynomial
  control radius, fixedR and delta-beforeB only.
-- **Immediate next:** inspect original FULL GL review24498/native
- stratonovich-upper-gaussian-scientific-v1 on180bf1a. Complete fixedR
- Gaussian operator upper and1localfinite-tail fact are CANDIDATE pending
- FULL analytic/type/application gate; statement12HIGH passed separately.
- No original POINT/growingcone/sourceconstant upper yet; exactr<2/a.
+- **New accepted Gaussian operator upper:** scientific180bf1a,
+ 18groupedchecks/HIGH335.531s,43bindings/58native members verified. Actual
+ fixedR second operator moment has upper rate OWNsupALLsigned(2Rate-half
+ raw action), with correct bulk/tail anddelta->J->B limits. Not POINT/L^*.
+- **Immediate next:** freeze/falsify ONE original growing-cone source/E-phase
+ upper-transfer component (compactinitial data, spatial average-of-SQUARES,
+ finiteprop/source limits), then uniformR analysis. The large route is
+ UNREVIEWED, not a premise. Source normalization remainsOPEN; exactr<2/a.
 - **Still open:** intended author-energy/domain/normalization dictionary,
   matching sharp upper constant and conditional exact limit. Original full
   goal ACTIVE; no whole-paper/circulation/wiki/master integration clearance.
-- **Lean:**73finitefacts19local seams/L0 PROPOSED; two new scalar facts
-  have clean local types/axioms/replay/4False controls and accepted actual
-  applications. No official package/companion or formal analytic/SPDE claim.
+- **Lean:**74acceptedfinitefacts20local seams/L0 PROPOSED. New scalar
+ cutoff-density split passed local/stdaxiom/5replaypair/3falsevariant and
+ FULL actual application gates. Nine missing old state-mirror entries
+ restored from authority/reviewed sourcebytes, no proof changes. No formal
+ probability/SPDE or officialcompanion/package claim.
 - **Git:** isolated research branch; origin/<HUB> NoRoute. Last verified
   remote604c60f, no fresh parity/push/sync/master merge. Preserve both lines.
 
@@ -7227,3 +7232,27 @@ at capture. Newfinite1fact provisional,73accepted/19seams unchanged until
 FULLapplication passes. Asked closeness: full original sharp-point goal
 NOT near certified completion; growing-cone transfer and intendedsource
 normalization remain substantial OPEN gaps. GoalACTIVE, no shrink/pause.
+
+### GL1-GL3 actual fixedR Gaussian operator upper accepted — 2026-10-31
+
+Original24498 TERMINAL,18groupedchecks PASS/HIGH335.531seconds,no repairs.
+Canonical report/pass/correspondence/readcoverage pass;43live/frozen/Git/
+native bindings and58native archive members verified BEFORE clarity edits.
+Local finite archive28members/source/header/stdaxioms/5replaypairs andpost-
+cache/source/indexclean pins reverified. No recovery/restart/waiver.
+Adopt actualfixedR fullF operator second-moment upper by OWNALLsigned
+control score, source/rawrestart sameendpointindependentB/J, finitehead
+halfaction/actualconditionalbulk, explicitcoarse/densitysplit2^J tail and
+correctdelta->J->B limits. All5optional notes clarified, frozenproof/report
+and publicLean source unchanged. No originalPOINT/sourceconstant theorem.
+
+ONE finite public cutoff-density split actualcomplete type/hypothesis/map
+passed:73previousfacts19seams +1 =>74facts20local seams. Analytic Gaussian/
+operator/source/conditional/limit/SPDE claims remain INFORMAL. State mirror
+was10entries48facts;9missing previouslyaccepted entries25facts restored
+from authority andcurrentsource==reviewedGitblob checks, THEN newfact added.
+No old proof rewrite/recompile/promotion. OfficialcompanionL0/decision4
+unchanged; no package/registry/lease/HPC/publicrelease. Original growingcone/
+POINT/signedpositive/sourceconstants/normalization/exactlimit remain major
+OPEN gaps; fullgoalACTIVE and not near certifiedcompletion. No contact/
+Skorohod/sourcefix/TeX/PDF/wiki/bib/publication, NoRoute/pushpending.

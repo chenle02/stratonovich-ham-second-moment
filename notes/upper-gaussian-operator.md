@@ -1,11 +1,12 @@
 # Actual Gaussian operator upper on a fixed spatial mask
 
-FULL PROOF CANDIDATE, NOT ADOPTED. Statement3e8f791/e5f71b5 passed
-12groupedchecks/HIGH360.315seconds,no requiredrepairs. One finite scalar
-cutoff lemma has local source/type/axiom/replay/control evidence, but its
-ACTUAL application and this complete analytic proof need a NEW FULL gate.
-FixedR operator second-moment upper only, not the original point/sharp-source
-result. Full original all-model objective remains ACTIVE.
+ACCEPTED at the scoped FULL analytic/source/type/actual-application gate:
+scientific180bf1a,18groupedchecks/HIGH335.531seconds,no requiredrepairs.
+Five optional clarity notes adjudicated in
+reviews/2026-10-31-upper-gaussian-operator/scientific-adjudication-v1.md.
+Frozen proof/report unchanged. One finite tail fact also passed its exact
+FULL type/application gate. FixedR OPERATOR second-moment upper only;
+original unmasked point/sharp-source goal remains ACTIVE/OPEN.
 
 ## 1. Objects, exact claim and direct accepted inputs
 
@@ -30,6 +31,7 @@ Direct OWN accepted inputs, not broadly recertified:
   projections P_J,Q_J, compact T:H->Lr(I;K(F)), actual covariance/head paths.
 - D1, upper-residual-exponential.md: actual residual norm Y_delta,J and
   G_delta,J(B,eta)=E exp(eta Y_delta,J^nu/delta)<infinity, for every eta>0;
+  this is a scalar expectation, distinct from E4's head vector G or G_B;
   lim_(J->infinity)limsup_(delta->0)delta log G_delta,J(B,eta)=0 at FIXEDB.
 - E1-E4, upper-young-perturbation.md: physical fullhead+residual identity,
   joint Borel maps, Q_J/head independence, conditional ratio at q2 with
@@ -126,7 +128,7 @@ Finiteness is proved in Section4, before asymptotic arguments.
 ## 3. Score coercivity and the finite scalar tail lemma
 
 Rate(0)=0 because lambda(0)=0, so S_R_all>=0. On the unit slow interval,
-L1<=Lr and S2's growth bound give
+L1<=Lr and S4's growth bound (from S2's lambda<=K) give
  Rate(Phi)<=1+||T Phi||L1<=1+||T||||Phi||H.
 For q=||Phi||H and t0=||T||,
  2Rate(Phi)-q²/2<=2+2t0q-q²/2
@@ -186,13 +188,13 @@ coefficient C0. In particular A1>=0 (possibly0) and eta_B>0, and none of
 these coefficients depends on J,delta or an unbounded head realization.
 Only the crude global B1 bound was used, not local E1 constants.
 
-Take B1,J0 and Phi0. Then (3)-(4),(10), submultiplicativity and D1 imply
+Take B=1, J=0 and Phi=0. Then (3)-(4),(10), submultiplicativity and D1 imply
  E||P_delta^R||²<=exp(A0/delta)G_delta,0(1,eta_1)<infinity
 for EVERY delta in(0,1). Combined with Section2 this completes GL1.
 
 ## 5. Bulk head: actual conditioning and finite-dimensional integration
 
-For B,M fixed let E_delta(B,M) be the positive part of the deterministic
+For B,M fixed let Err_delta(B,M) (target E_delta(B,M)) be the positive part of the deterministic
 supremum of delta sum log||P_m^0(Phi)||-Rate(Phi) over||Phi||<=M. It is
 finite by the B1/mean budgets. The underlying functions are continuous in
 Phi (bounded primitives, continuous Young maps, baseline norms>=1 and S4
@@ -203,15 +205,15 @@ Let R_delta,J(B,M) denote E3 at q2, with supremum OUTSIDE expectation. From
 (3)-(4), the actual norm is bounded by max(1,z) times the product of mean
 physical norms. Apply E4's Borel freezing/conditional inequality given the
 finite head. On its ball, the square of that mean product is at most
-exp((2Rate(Phi)+2E_delta)/delta). Thus for J>=1, with b_J(M) the ordinary
+exp((2Rate(Phi)+2Err_delta)/delta). Thus for J>=1, with b_J(M) the ordinary
 Euclidean ball volume,
 
  Bulk_delta,J(B,M):=E[1_(||Phi_delta,J||<=M)||P_delta^R||²]
  <=R_delta,J(B,M)(2pi delta)^(-J/2)
    int_(|phi|<=M) exp((2Rate(sum phi_j e_j)-|phi|²/2
-                                      +2E_delta(B,M))/delta)dphi
+                                      +2Err_delta(B,M))/delta)dphi
  <=R_delta,J(B,M)(2pi delta)^(-J/2)b_J(M)
-                       exp((S_R_all+2E_delta(B,M))/delta). (11)
+                       exp((S_R_all+2Err_delta(B,M))/delta). (11)
 
 The joint integrand is Borel by E4 and the mean flow continuity, and the
 conditional version is its one Borel integral against the independent
@@ -267,7 +269,7 @@ Let L_R=limsup_(delta->0)delta log E||P_delta^R||² in[0,infinity]. For each
 fixed largeB choose the radius M_B above and a threshold s satisfying
 s>r(3+m)/(r-nu), as required by B3. The quantitative B2 bound with K_B=B^s
 provides nonnegative epsilon_B->0 such that
- limsup_(delta->0)E_delta(B,M_B)<=epsilon_B.                 (14)
+ limsup_(delta->0)Err_delta(B,M_B)<=epsilon_B.                 (14)
 Each radius is FIXED for that inner delta limit; no compactness on unbounded
 balls or simultaneous B_delta limit is involved.
 
@@ -282,7 +284,9 @@ so the bounds imply
  r_J(B)=limsup_delta delta log R_delta,J(B,M_B),
  d_J(B)=limsup_delta delta log G_delta,J(B,eta_B).           (15)
 
-Both are finite nonnegative upper rates, with limits0 as J->infinity by
+Finiteness at each fixedJ follows from upper-young-perturbation.md
+Section6(19) and D1(3)-(4). They are nonnegative upper rates, with limits0
+as J->infinity by
 E3 and D1. Crucially M_B,eta_B are fixed during that rank limit. P_delta^R,
 and hence L_R, has no J or B in its definition. It is the SAME left side
 for every bound in(15), not a family changed along an auxiliary sequence.
@@ -295,7 +299,7 @@ This proves GL3 for nonzero Gamma, with order delta, thenJ, thenB.
 
 For Gamma0 the driver/H/T vanish, S_R_all=0 and P=S_F(1/delta). The
 constant sector still gives norm>=1. Taking the integer ceil(1/delta) in
-B1 bounds the norm by8/delta, hence normalized log second moment tends to0.
+B1's FREE-GROUP estimate G_B<=4B bounds the norm by8/delta, hence normalized log second moment tends to0.
 Only J0 is used, and (2) follows without a nontrivial Gaussian density.
 This proves Claim GL in all stated cases.
 
@@ -307,8 +311,8 @@ numeric variants rejected and5fresh owned replay artifact pairs identical.
 It proves ONLY(7). Actual cutoff derivation, half-action density, Gaussian
 normalizer, conditioning, source restart, Bochner/operator/spectral limits
 remain INFORMAL analytic arguments supplied above, pending FULL gate.
-Until that application gate, counts remain73acceptedfacts19seams plus one
-PROVISIONAL finite fact/seam. No official companion/package/lease/HPC.
+That exact application gate has passed:74acceptedfinitefacts20local seams,
+including this one scalar inequality, with all analytic boundaries retained. No official companion/package/lease/HPC.
 
 Falsification preceded proof:18radial tails40/70digits with6weightC=0 chi
 calibrations (not coarseA0=4C_theta),4Gaussian normalizer integrals,9exact

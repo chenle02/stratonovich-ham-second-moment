@@ -1,6 +1,7 @@
-# Planned exact GL tail application
+# Accepted exact GL tail application
 
-PROVISIONAL; full proof/application review pending.
+FULL scientific180bf1a,18HIGH335.531s accepted the complete exacttype
+and this actualhypothesis/application map. Publicsource unchanged.
 M=M_B>0 from M0>0,B>=1; x=||Phi_delta,J|| on {x>M_B} gives M<=x;
 C=A1 B^(3nu)>=0; nu=1/theta in(1,2); eventual polynomial cutoff condition
 4C<=M_B^(2-nu). These are the actual fenced public hypotheses.
