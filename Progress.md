@@ -6208,3 +6208,17 @@ withcompletepublictypes.71facts18seams/L0 unchanged. FulloriginalgoalACTIVE,
 networkNoRoute/localisolated/nofreshparity/integration,no companion/HPC/
 contact/Skorohod/sourcefix/TeX/PDF/wiki/publication; sharpupper/dictionary
 stillopen.
+
+### Full raw block/event proof candidate frozen — 2026-10-31 UTC
+
+Previous goal turn was status-only NO PROGRESS; current state revalidated.
+Candidate notes/raw-block-event-lower.md now supplies all A1-A6 arguments:
+actual common-W pullbacks and Banach Gaussian shift; compact operator norm
+Borel space; scaled-max high-degree Gaussian estimates and Young UI;
+new-F entrance/rebase/terminal-positive cone; actual induced retaining
+source restart; fixed-delta product limits; amplitude-correct F3 and exact
+canonical calibration; positive event and original SAME-Z half-cost.
+All original covariance classes/dimensions and positive Psi retained.
+This is NOT proof adoption or source-energy/sharp-constant identification.
+
+[held back: AI account details]
