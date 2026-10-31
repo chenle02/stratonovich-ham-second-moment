@@ -6637,3 +6637,28 @@ wiki/synthesis/held-primary-source crosswalk, actual control falsification
 and independent statement gate. Full original Gamma/point-upper/cone/
 nonlinear/source/time obligations and intended dictionary remain. No new
 kernel/count/package/HPC/contact/Skorohod/sourcefix/TeX/PDF/wiki/publication.
+
+### Upper C1-C3 actual recon/falsification and statement freeze — 2026-10-31 UTC
+
+Previous turn PROGRESS all-alpha lower b5628d5/73facts19seams. Currentclean
+d985db1 revalidated; NoRoute remote persists. Actual wiki CLI search/cite,
+Cameron/AWS/weighted-Sobolev/Friz-HairerCh11 syntheses read, then held primary
+11.6/11.7/Example11.8 text and renderedPDF200-201 viewed. Concentration is
+FUTURE only, no C1-C3 input. Book alreadycorpus/bib, no new queue ticket.
+
+New controls:24actual bounded F-row covariances/bothconstant columns/true
+lastpartial (max discrepancy3.05e-12),5actual selected frequency entries,
+36spatial/36temporal concentration scales/12trace guards. Selected entries
+are LOWER witnesses; no full op/Ctheta/projection tail/compactness proof.
+Endpoint r>=2/a, infinite-vector time-only compactness and raw-L2 traceclass
+weakenings rejected; original strict targets survive these controls only.
+Floating consistency not certified error. No instantaneous Gaussian operator.
+
+C1-C3 target-v2 restricts actual H to timeI01 and explicitly needs physical
+fractional product/null/tensor/compactness and actual same-W Cameron norms.
+Frozen 20completeTEXT statement packet with all accepted inputs. Existing
+Mathlib finite powermean completeTYPE/standardaxioms audited, not a new
+fact/application; wrong-form coefficient wrapper excluded. No new Lean
+scaffold/count/package. Next independent statement gate BEFORE long proof.
+Full original sharpupper/point/source scope ACTIVE, no narrower replacement.
+No contact/Skorohod/HPC/sourcefix/TeX/PDF/wiki/bib/companion/publication.
