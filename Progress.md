@@ -6326,3 +6326,20 @@ source-energy/occupation/all-alpha/sharpupper/exactlimit objectives OPEN.
 No TeX/PDF/wiki/Skorohod/sourcefix/contact/HPC/publication. Full goalACTIVE,
 networkNoRoute/localisolated/no freshparity/masterintegration. Next NEW
 native Opus5.5/HIGH full analytic/source/type/application review.
+
+### Future all-dimensional static/occupation bridge target frozen — 2026-10-31 UTC
+
+During confirmed-live full U1-U4 review80720, freeze ONLY B1-B5 target in
+reviews/2026-10-31-all-dimensional-static-occupation/target-v1.md. Candidate
+route avoids promoting the whole d1 rough-X theorem: smooth TIME test
+truncations of the known equilibrium profile, actual static controls,
+Rsp finiteness from independent S1 upper bound, physical H1 covariance
+continuity/density, full strong-H1 damped occupation energy, and own
+Omega>0 point comparison. No long proof/adoption; exact falsification and
+independent statement gate pending. New U1-U4 theorem remains prerequisite.
+
+All original Gamma/dimensions/alpha>1 and full O class retained. Fatou-only
+continuity, global H1 supremum embedding and d1 near/far density split are
+explicitly excluded. No source-energy identity or Omega>1 until separate
+all-alpha scalar gate; sharp upper/source dictionary/fullgoal stillOPEN.
+No new kernel/count/package/HPC/contact/Skorohod/TeX/PDF/wiki/publication.
