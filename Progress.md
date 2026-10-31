@@ -6106,3 +6106,18 @@ boundary recordedwithoutLeanproofclaim.71facts18seams/L0 unchanged.
 Workisolated/local, <HUB>unreachable/nopush/freshparity/integration;
 fulloriginalgoalACTIVE,no companion/HPC/contact/Skorohod/sourcefix/TeX/PDF/
 wiki/publication/wholepaperclearance.
+
+### Next raw block/cone/event obligations retained — 2026-10-31 UTC
+
+UNREVIEWED planning only, next-raw-block-event-obligations.md. Re-establish
+indexedconeonnewF/O_phi/e0 thenactualSAMErawW/Z jointGaussianblockarray,
+fastvelocity(V,deltaV_t), g_delta=delta^((1-a)/2), exactmean covariance
+Cov(X_delta,m,Z)=sqrt(delta)actualprofileprimitive (mustprove), Gaussian
+rank-one-shift identity andsameZcostv/(2delta), finite-time/source product
+compatibility. N~delta^-1 maximum/no independence, positivegroundproduct/
+terminalaverage, moderatingZ andoriginalpointtransfer byF3+exactaccepted
+fullclasscalibration. No hypotheticaloldconeautomatictransfer, scalar
+momentproducts, fieldpointnoise, covariancephaseorder or source/large-time
+interchange. Proposedscore2intlambda-v/2 remainsUNPROVED target; source
+energy/allalphavariational/sharpupper stillseparate. FullgoalACTIVE,no
+newLean/companion/HPC/contact/Skorohod/sourcefix/TeX/PDF/wiki/publication.
