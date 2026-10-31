@@ -55,7 +55,7 @@
 - **New UNREVIEWED candidate:** uniform-e-cameron-regulator.md U1-U5
   drafts uniformR E mean/translation-heat/frequency/time tensor tails and
   the ACTUAL residual block Cameron norm via infinite-spatial-rank TRUE
-  projection. Frozen/falsified before proof; FULL22text packet NOT dispatched.
+  projection. Frozen/falsified before proof; FULL21text packet NOT dispatched.
   No stochastic expectednorm/growingR exponential or sharp upper follows.
 - **Still open:** intended author-energy/domain/normalization dictionary,
   matching sharp upper constant and conditional exact limit. Original full
@@ -7391,7 +7391,7 @@ Skorohod/sourcefix/TeX/PDF/wiki/bib/publication, NoRoute/pushpending.
 - This is ONE proof-draft round, not accepted/new scientific clearance.
   Gateclass ORDINARY RESEARCH, missing independent evidence ->full route;
   no certification waiver. Source/fidelity/actualapplication and finite-type
-  routing in source-crosswalk-v1.md; freeze FULL22text packet for required
+  routing in source-crosswalk-v1.md; freeze FULL21text packet for required
   actual Opus5.5/HIGH review, NOT dispatched before provider capacity returns.
   All findings must be adjudicated before adoption/substantial successor.
   Separate GC/SP pre-proof gates remain unchanged; no new review report.
