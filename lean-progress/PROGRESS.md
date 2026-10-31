@@ -575,3 +575,13 @@ zero guards/nu=p equality accepted. No new source/compiler/kernel count:
 73facts19seams/L0. FP-YOUNG-RESIDUAL in BOUNDARIES.md distinguishes the
 new actual fixedR/M nonlinear E1-E4 analysis from the finite formal input.
 Original sharp-point/growing-cone/source gaps and companion decision4 open.
+
+## Existing AMGM: signed rough static form application accepted — 2026-10-31
+
+Scientific404354a/adoption7c91352,25checks/HIGH327.286seconds. Existing full
+REAL weightedAMGM type with actual weights1/2,basesz²,(Kb)² and norm/zero/
+real-power guards passed FULL application. No new source/compiler/kernel
+count73facts19seams/L0. FP-SIGNED-STATIC in BOUNDARIES.md records all rough
+form/spectral/physical-flow/mean claims as INFORMAL analysis. V1 temporal
+rangeFAIL/HIGH retained, corrected2<r<2/a. Original sharp-point/source and
+companion decision4 remain OPEN. No package/registry/lease/HPC transaction.

@@ -1,11 +1,13 @@
 # Next actual deterministic block-product upper: unreviewed planning
 
-OUTSIDE current S1-S4 frozen statement packet. No proof/adoption. S1-S4
-remain pending statement/full gates. Full original sharp/source goalACTIVE.
+OUTSIDE current S1-S4 frozen statement packet. No proof/adoption. S1-S4 now ACCEPTED scientific404354a/adoption7c91352; the proposed
+product remains UNREVIEWED. Full original sharp/source goalACTIVE.
 This records the intended consumer of the polynomial static estimate,
 not a replacement of the original growing-cone point problem.
 
-A possible next exact target, AFTER S1-S4 are accepted:
+Historical fixed-radius proposal; expanded target-v1 in the new
+upper-mean-block-product directory includes polynomial CM radii.
+A possible next exact target:
 for fixedR and CM radius M, actual mean block paths H_m(Phi) from E2,
 
  limsup_(integer B->infinity) limsup_(delta->0)

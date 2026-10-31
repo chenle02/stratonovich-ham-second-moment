@@ -249,3 +249,22 @@ freezing are reviewed INFORMAL analytic interfaces, not formalized by the
 finite powermean. No global restart/M-tail/signed-spectrum/growingcone/
 original-point sharp upper, source-normalization/exactlimit theorem follows.
 Official companion decision4 unchanged; no package/registry/lease/HPC.
+
+## FP-SIGNED-STATIC: rough signed spectral/physical wave and rate interface
+
+Scientific404354a/adoption7c91352,25checks/HIGH327.286seconds. Existing
+Mathlib REAL weightedAMGM COMPLETE printed type and actual1/2 weights,
+basesz²,(Kb)², nonnegative norms/positive real powers/zero guards passed
+FULL application review. General type reused, not the older custody's
+nu-weight substitution. No new compiler/module/theorem/count:73facts19seams/L0.
+
+Multiplier-norm closure/physical distribution, Hermitian closed H1 form,
+PRIMARY self-adjoint representation/spectral calculus, quarter-power norms,
+actual rough physical E/F wave identity including both constants, exact
+lambda/polynomial norm bound, beta continuity and actual compact-field
+Bochner rate averaging are reviewed INFORMAL analytic arguments. They are
+not formally verified by a scalar AMGM kernel. Explicit strict2<r<2/a;
+prior overbroad-r FAIL and root bubble guard preserved. No roughH2 or exact
+3/4-domain identity assumed. Original product/actiontail/globalrestart/
+growingcone/POINT/sourceconstant/normalization/exactlimit remain OPEN.
+No official companion/package/registry/lease/HPC action; decision4 pending.
