@@ -76,10 +76,12 @@
  FULL actual application gates. Nine missing old state-mirror entries
  restored from authority/reviewed sourcebytes, no proof changes. No formal
  probability/SPDE or officialcompanion/package claim.
-- **Git:** network recovered; research99pending commits pushed and tracking
-  0/0 at34e4b24; root29pending operational/adoption commits pushedmaster
-  35a21c4,<HUB> fetch/pull clean HEAD=origin/master35a21c4. New owned
-  units now pushed atomically. No research-wave/master merge; preserve both lines.
+- **Git:** network recovered; all owned research units pushed to the
+  private research branch. <HUB> canonicalmaster and rootmaster align;
+  a CLEAN isolated <HUB> research clone now has actual HEAD parity,
+  tracking0/0,with the local research checkout. No research/master merge.
+  Exact checkpoint receipt in growing-cone-point-transfer review directory.
+
 
 ## Historical checkpoint summaries
 
@@ -7758,3 +7760,21 @@ Skorohod/sourcefix/TeX/PDF/wiki/bib/publication, NoRoute/pushpending.
   finite-time Jensen/grid doesnotidentify integratedrate without uniform
   control-norm/time approximation. No auxiliarylabelscore=p1 claim or
   author energy repair. No proof/upperresult adopted from this plan.
+
+## Checked-out research parity and durable checkpoint — 2026-10-31
+
+- <HUB> has1.4T free underhome; target isolated research checkout absent,
+  canonicalmasterclean35a21c4. Created an INDEPENDENT clone outsideDropbox
+  at the same home-relative research location as local,branchresearch/
+  fixed-mask-young-20261031,fromprivatebareorigin. No shared/Dropbox-linked
+  worktree metadata,reset,foreignWIP or mastercheckout mutation.
+- Actual remote/local research HEAD=a7dab45 atcheckpoint,cleantracking0/0;
+  canonical<HUB>HEAD=origin/master35a21c4,clean. Exact fresh SSH/Python
+  Gitreceipt retained <HUB>-research-sync-v1.json. Metadata successor
+  will be pushed and remote research clone FF-updated after its fetch;
+  preserve any future remote dirt and refuse automatic overwrites.
+- Full original goal remainsACTIVE/incomplete. All native reviewers/compute
+  nowterminal. Next ONE source/falsification gate is actual E Gaussian
+  Borell-tube/Rayleigh transfer. Primary11.6read; no newupper theorem from
+  unreviewed routeplan or finite-profile comparisonidea. Accepted GC/U/SA/SP
+  scopes and source-normalization/sharp/exactlimit gaps remain explicit.
