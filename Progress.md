@@ -6792,3 +6792,16 @@ Source22f7bb9 unchanged. This is only a statement gate; full proof next.
 73facts19seams/L0 unchanged, full original goalACTIVE. Fresh fetch/focused
 <HUB> SSH failed NoRoute; isolated work preserved, no parity/master/
 wiki/wholepaper clearance. No contact/HPC/Skorohod/sourcefix/companion.
+
+### Complete D1 driver-norm exponential proof candidate frozen — 2026-10-31
+
+After accepted statement040ec42, notes/upper-residual-exponential.md now
+contains the full actual-law/Bochner conditional-regression/CM quotient/
+support/measurable-norm/compact-ball construction, PRIMARY Theorem11.7
+application with zero cases and ALL shifts, Rayleigh tail integration with
+prefactor2, exact REAL weightedAMGM application and fixedR iterated limits.
+All9statement notes addressed. NEW FULL proof/application gate required;
+no exponential norm theorem or nonlinear/point upper adopted yet.
+24frozen inputs (22TEXT+2PRIMARY images), honest numerical/Lean boundaries;
+73facts19seams/L0 unchanged. No new package/HPC/contact/Skorohod/sourcefix/
+TeX/PDF/wiki/bib/promotion. Original full goalACTIVE, NoRoute/pushpending.
