@@ -45,7 +45,7 @@
  fixedR second operator moment has upper rate OWNsupALLsigned(2Rate-half
  raw action), with correct bulk/tail anddelta->J->B limits. Not POINT/L^*.
 - **Immediate next:** complete the independent GC1-GC3 growing-cone
- statement gate on frozen c7d0e57. Fresh authorized-account doctor and
+ statement gate RUNNING original54154 on frozen c7d0e57. Fresh authorized-account doctor and
  actual same-model firstParty READY probe recovered capacity; old supported
  review63674 remains TERMINAL quota, no report/coverage/acceptance.
  GC1-GC3 remain UNPROVED; compact data/source limits/average-of-SQUARES
@@ -56,7 +56,7 @@
 - **New UNREVIEWED candidate:** uniform-e-cameron-regulator.md U1-U5
   drafts uniformR E mean/translation-heat/frequency/time tensor tails and
   the ACTUAL residual block Cameron norm via infinite-spatial-rank TRUE
-  projection. Frozen/falsified before proof; FULL21text packet NOT dispatched.
+  projection. Frozen/falsified before proof; FULL21text review RUNNING original23374.
   No stochastic expectednorm/growingR exponential or sharp upper follows.
 - **Still open:** intended author-energy/domain/normalization dictionary,
   matching sharp upper constant and conditional exact limit. Original full
@@ -7442,3 +7442,40 @@ Skorohod/sourcefix/TeX/PDF/wiki/bib/publication, NoRoute/pushpending.
   Count review debt across preparatory/statement/candidate cycles as well as
   proof drafts; do not reset it by renaming rounds. SA target/lattice/parameter
   diagnostics retained UNPROVED; no further proof draft until required review.
+
+## Durable lessons promoted and required reviewers resumed — 2026-10-31
+
+- Le requested timely durable learning. Updated THREE EXISTING canonical
+  skills (no duplicate): paper-dev-review-layers-are-mandatory,
+  focused-subscription-cli-review,asymptotic-interface-audit-before-proof-route.
+  Lab cee8605bb0d1fea1cf27c4c22a4fc4c20f55635c committed/pushed; origin0/0,
+  clean. Description/frontmatter3/3 gates, whole-catalog sync check, generated
+  canonical search, projection sync and strict Codex budget allpass. Exact
+  canonical/Claude/OpenCode/Codex bytes match for all3. Lessons: retrieve
+  authorized account recovery, do not transfer identity/quota by stalealias,
+  do not reset review debt by renaming prep/candidate cycles, isolate each
+  moving-radius factor and separate Cameron norm from expectednorm.
+- Research continuation: GC original54154 is LIVE at last poll, source
+  c7d0e57,18unchanged inputs, SAME Opus5.5/HIGH, new recovered-account native
+  directory. U FULL original23374 LIVE, sourcef54e92b,21inputs, same mandatory
+  route/threshold. Both actual handles polled; no verdict or acceptance yet.
+  Old63674 quota remains terminal/non-review. No restart on observation
+  timeout; poll these same handles. Fresh verified availability supersedes
+  the author's invented old-slot reset restriction without changing science.
+- SA1-SA3 expectednorm target and diagnostics are frozen under radius-
+  stochastic-anchor; NO PROOF DRAFT. Accepted two-variance bounds already
+  uniformR; only compact envelope needs radius-explicit upgrade. Proposed
+  fixed even Q must satisfy ideal, time-Hölder and anchor-decay inequalities.
+ 18auxiliary diagonal sums/3exactmode calibrations/9exactparameter cases
+  retained;6cases refute the insufficient Qgamma-only choice, not the route.
+  These are factor/scalar diagnostics, not whole-space norm or SPDE numerics.
+- Review debt conservatively includes changed scientific preparation,
+  statement and application cycles, not only finished proofs. Earlier SA
+  targetv1 wording counted only proof drafts; preserve as an application
+  error, correctedv2. No further mathematical proof cycle until mandatory
+  reviewer layer completes and findings are adjudicated. No candidate
+  U/GC/SP theorem adopted or used as an accepted premise.
+- Full all-model sharp/source goal ACTIVE. Research origin/<HUB> still
+  NoRoute; Lab skill origin push succeeded and is separately verified.
+  No false cross-repo parity claim. No contact/HPC/companion/TeX/PDF/wiki/bib/
+  source repair or publication action.74facts20seams/L0 unchanged.
