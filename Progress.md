@@ -7945,3 +7945,26 @@ Skorohod/sourcefix/TeX/PDF/wiki/bib/publication, NoRoute/pushpending.
 - Fresh<plan removed>route actualverified. SpentTeamREADYfailure retainedNONreview;
   applicationlesson inspectquotaoutput BEFORE dependentprobe/accountchoice.
   <HUB>NoRoute,newresearchworkLOCAL; originalallmodelgoalACTIVE.
+
+## UR1-UR4 signed-score moment target frozen and screened — 2026-10-31
+
+- Previousgoalturn PROGRESS: US full27HIGH accepted. Fresh activecheckout
+  clean1fa35fb; originfetch/<HUB>readonly NoRoute. Work remainsnewowned
+  isolatedpaths; no currentsync/parity claim. Originalfullgoalunchanged.
+- ExactUR1-4 byte-frozen BEFORE diagnostics: sameactualGCendpoint forallB,
+  ownmoving rawhalfac signedscore; polynomial coarseA0/A1/eta_B viaUS;
+  fulltubeerrorUS4b; finitebulkM^2/(2delta)+tail4/quarter; explicitdelta-log
+  normalizers/limsupmovingS thenBouter; originalpointGCconsumer/allchains.
+- One local18quadratureconfigs40/80,4zero calibrations;14wrongfiniteLaplace
+  upperclaims/3wronglower-subsequence bounds refuted. Unroundednormalizedlog
+  precisionmax1.94853e-41; perprecisionformularesiduals/maximizingcases
+  retained (40:2.11212e-35,80:6.45035e-75,oscillatinglow2). Power3/2 has
+  precisionconsistencyonly,notclosedformulaerror/enclosure/PDEsimulation.
+- 48exactcutoffconfigs include16zeroA1trivial,eventualconstants/exponent
+  checked;12arrayrows11uniqueconfigs refuteunjustifieddiagonalization.
+ 4wrongnormalizerrows reuse4zeroprofiles,notnewindependentexperiments.
+  OldBTfront4/quarter/kernel fixture reusednotrerun. No newLean/compiler/
+  count74facts20seams/L0. Statement/source gate BEFOREfullproof required.
+- Fullsignedpositive/maskremoval,intendedsourceenergy/normalization/constants
+  and conditionalexactlimit remainOPEN. No sourcefix/Skorohod/contact/HPC/
+  companion/TeX/PDF/wiki/bib/sibling/publication action.
