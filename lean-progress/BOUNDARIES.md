@@ -147,3 +147,18 @@ corner models/432 differential/108initial controls are not Lean or continuum
 certificates. NEW-F cone, stochastic shift/event/cost and sharp constants
 remain later obligations.71facts/18localseams/L0 unchanged; no package/
 companion/registry/lease/HPC/formal-ground theorem claim.
+
+Named informal interface FP-RAW-EVENT (not a Lean declaration),2026-10-31:
+notes/raw-block-event-lower.md, scientificd4d876e/adoptionc426e5a,
+full12PASS/HIGH516.106s. Actual new-F positive cone, SAME-W/Z Gaussian
+shift, induced source/Young restart and positive event/cost yield the
+original all-dimensional per-test point lower Q2>=2 intlambda_R-v/2.
+The nine old finite facts check only scalar margins, Gaussian sign/half-cost
+algebra, amplitude powers, fixed-delta product error recurrence and moderate
+penalty. Their complete public types/new guard maps passed application
+review; no new kernel run/count is claimed. All probabilistic, operator,
+Sobolev, source-limit, spectral and SPDE premises remain ANALYTIC.
+This closes the informal new-F cone/event obligations left open above;
+unmasking/occupation optimization/source-energy identification/sharp upper
+and exact limit remain open.71facts/18seams/L0 unchanged; no official
+package/companion/lease/registry/HPC or formal Gaussian/SPDE theorem.

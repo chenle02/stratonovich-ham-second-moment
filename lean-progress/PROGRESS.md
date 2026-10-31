@@ -457,3 +457,20 @@ for oneblankline excerpt trimming, extra separateTypeAudit, officialtagpin
 and path-only warninglog difference.71finitefacts/18seams scopedaccepted.
 FiniteGaussian/trace proof is analytic, NOTformalized byN2. L0/PROPOSED,
 decision4/no officialpackage/companion/lease/registry/HPC unchanged.
+
+## Existing finite facts: all-dimensional raw-event applications accepted — 2026-10-31
+
+Full analytic/source/type/application gate at scientific d4d876e, adoption
+c426e5a:12PASS/HIGH516.106s, no required repairs. Evidence in
+../reviews/2026-10-31-raw-block-event/scientific-adjudication-v1.md.
+New actual consumers of MovingCone3, JointTilt4 and ActualEvent2 were
+checked against COMPLETE public types and their actual guards. The root
+recomputed six unchanged source/public-type bindings to prior-reviewed
+packets; no new Lean/compiler/replay execution or new fact is claimed.
+
+Counts remain71finitefacts/18local seams. L0 PROPOSED and companion
+creation decision4 unchanged. Gaussian Banach law, compact operator paths,
+Young/source restart, continuum cone hypotheses and original point moment
+identification remain reviewed INFORMAL analytic inputs, not consequences
+formalized in Lean. See FP-RAW-EVENT in BOUNDARIES.md. The next U1-U4
+unmasking/dilation target is frozen UNREVIEWED, not a new formal consumer.
