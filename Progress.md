@@ -7095,3 +7095,20 @@ waiver. All6minor notes adjudicated: named toy(1,1) vs opposite(2,2), explicit
 and sufficientK prefactor. Frozen statement/script/results unchanged;
 evidence wording clarified only. Full B1-B3 proof NEXT, not yet adopted.
 73facts19seams/L0 unchanged, full original sharp/source goalACTIVE.
+
+### Complete actual mean-product upper proof candidate frozen — 2026-10-31
+
+After statementd6ef042, notes/upper-mean-block-product.md supplies explicit
+4B/32/C_theta B budgets, actual signed physical freezer/Young errors,
+mean-good/bad/true-last estimates, finite continuous/Borel deterministic
+sup and largeB product rate for EVERY polynomial control radiusM0B^m.
+Full norm and velocity retained, strict r<2/a, explicit s threshold and
+delta-beforeB order. All6statement notes addressed. CANDIDATE before NEW
+FULL analytic/source/type/application gate, no product/point theorem yet.
+
+Frozen17complete TEXT inputs including scoped EXISTING rawrestart fit;
+accepted S1-S4/C3/E1-E4 premises not broadly recertified. Existing powermean
+actualr/rnu guards written, no new kernel/count73facts19seams/L0. All
+actiontail/variational/growingcone/POINT/source gaps retained; fullgoalACTIVE.
+No contact/Skorohod/HPC/sourcefix/companion/TeX/PDF/wiki/bib/publication,
+NoRoute/localisolated/pushpending.
