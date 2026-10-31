@@ -1,10 +1,12 @@
 # Signed rough static potentials: exact spectral rate and actual wave phase
 
-FULL PROOF CANDIDATE, NOT ADOPTED. Corrected S1-S4 statement gatea4085ce:
-16checks/HIGH224.59seconds, no required repairs. V1's overbroad temporal
-r-range was rejected and remains preserved; the actual range is2<r<2/a.
-A NEW FULL analytic/source/type/application review is required. FixedR
-static/rate interface only; original sharp-point/source goal remains ACTIVE.
+ACCEPTED at the scoped FULL analytic/source/type/application gate:
+scientific404354a,25checks/HIGH327.286seconds,no required repairs.
+Seven optional clarity notes adjudicated in
+reviews/2026-10-31-upper-signed-static/scientific-adjudication-v1.md.
+Frozen proof/report unchanged. V1 temporal-range FAIL remains preserved;
+actual range2<r<2/a. FixedR static/rate interface only, not the original
+point sharp upper; full sharp/source goal ACTIVE.
 
 ## 1. Objects, statements and named inputs
 
@@ -116,6 +118,8 @@ weights summing to1. Take weights1/2,1/2 and bases z²,(Kb)². Their weighted
 product is z(Kb), including zero norms since all powers are positive, and
 their weighted sum is the last expression in(7). K,b,z>=0, so every guard
 fits the previously audited complete public type; no new Lean theorem.
+Its custody scope describes an older nu-weight plan; the GENERAL printed
+type, rather than that older substitution, is what is reused here.
 Fourier interpolation and all analytic form claims remain outside Lean.
 
 Now q_V=z²-b²-v_V(u,u). With c=2+K², (7) yields
@@ -129,6 +133,8 @@ to the complete H1 norm. H1 is dense in L2, so the form is CLOSED in the
 primary p80 definition. Import Theorem2.14 with these verified hypotheses:
 it gives H_V, independently of which admissible K/shift was used. Theorem3.6
 and(3.53), applied after the shift A>=1, give D(A^.5)=H1 and (1).
+Here A>=1 is its form lower bound; the spectral-support argument in
+Section3 also explains its equivalent operator/spectrum interpretation.
 
 ## 3. Quarter-power phase and the actual spectral bottom
 
@@ -172,8 +178,11 @@ real/imaginary diagonals. The spectral formula(3.52)-(3.53) identifies beta
 with the spectral bottom: spectral support lies above the form lower bound,
 otherwise a bounded spectral slice below it gives a unit form test violating
 that bound. Conversely the form integral is bounded below by the spectral
-infimum. The spectrum is bounded below and nonempty, so these two bounds
-give equality. No eigenstate or essential-spectrum theorem is used.
+infimum. The spectrum is nonempty directly from its projection-valued measure:
+a unit vector has scalar measure of total mass1 and hence a support point;
+normalized projections onto arbitrarily small bounded neighborhoods give
+approximate eigenvectors there, excluding a bounded inverse. The bounded
+below spectrum and the two form bounds therefore give equality. No eigenstate or essential-spectrum theorem is used.
 Thus lambda=sqrt(-beta)<=K, and every spectral h obeys h>=beta and h+c>=2.
 
 ## 4. Full spectral wave and an explicit polynomial budget
@@ -222,7 +231,9 @@ distribution equation bounds ||u||H3/2 by a constant times
 For completeness the free E generator is
  A0(u,v)=(v,Delta u), D(A0)=H3/2 x H1/2.
 Fourier difference quotients on this domain give the derivative of S_E(t)
-in E. Conversely any strong generator derivative has these distributional
+in E: after a frequency cutoff differentiate the scalar free-wave matrix,
+and dominate its derivative by the H3/2xH1/2 graph norm before removing
+the cutoff. Conversely any strong generator derivative has these distributional
 components; v must lie in H1/2 and Delta u in H-1/2, which together with
 u in H1/2 implies u in H3/2. This proves the domain statement with no
 operator-norm differentiability of S_E.
@@ -231,7 +242,10 @@ Start spectral data in D(A)xD(A^.5)=D(H_V)xH1. By the graph-level estimates
 following(12) its trajectory is continuous at that graph level and C1 in
 H1xL2, with derivatives u_t=v, v_t=-H_Vu. One verifies this first on bounded
 spectral cutoffs, differentiating scalar functions, then passes to the graph
-norms by spectral dominated convergence and primary3.2. The embedding above
+norms by spectral dominated convergence and primary3.2. The cutoffs
+1_[1,n](A) approximate graph data uniformly on each finite time horizon,
+using the same weighted entry bounds in(11)-(12) at those graph levels.
+The embedding above
 gives continuity in D(A0), and the distributional equation gives
  z_t=A0 z+L_E z in E, L_E=L restricted to E.
 Thus the strong-group chain rule (difference quotients on D(A0)) yields
@@ -262,7 +276,12 @@ The constant coordinates are tau(t)c. For initial (e,c) the E component is
 
  P_V^E(t)e+int_0^t P_V^E(t-s)(0,V(c1+s c2))ds.               (14)
 
-This solves the full Duhamel system by uniqueness; no constants are placed
+The strong E-valued Fubini calculation in
+compact-mean-ground-family.md Section5(14) applies here with bounded L_E:
+substitute the E free-Duhamel formula under the forcing integral and
+interchange the finite time triangle, whose E norms are absolutely bounded.
+Thus (14) solves the full Duhamel system, and uniqueness identifies it.
+No constants are placed
 in L2, and no density of E in F is used. The forcing norm is at most
 K(1+s)|c|. Apply(12), use lambda>=0 and
 int_0^t(1+t-s)(1+s)ds<=t(1+t)²<=(1+t)^3. The constant block has norm<=1+t.
@@ -322,8 +341,8 @@ functional Rate is distinct from the phase F and the compact operator class.
 Let A_Pi be Bochner averaging on a finite interval partition Pi, skipping
 empty intervals. Averages stay in mathcalV_R, by closed linearity and simple
 Bochner approximation. Jensen gives ||A_Pi M||Lr<=||M||Lr. For continuous
-K(F)-valued M, its averaged error is at most its uniform modulus of
-continuity at mesh(Pi), so tends to0. Such continuous fields are dense in
+K(F)-valued M on the CLOSED interval[0,1], its averaged error is at most its uniform modulus of
+continuity at mesh(Pi), so tends to0. Such closed-interval continuous fields are dense in
 Bochner Lr: approximate by finite-valued simple functions, then approximate
 the scalar indicator sets by continuous functions in Lr on I. The contraction
 then gives strong convergence A_Pi M->M for every Lr field as mesh->0.

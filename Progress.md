@@ -32,10 +32,13 @@
  388.122s,22bindings/37native members verified. E1-E4 preserve deterministic
  physical growth, control residual error uniformly on a fixed CM ball and
  justify actual Gaussian-head conditioning, FIXED R,M only.
-- **Immediate next:** inspect original FULL S1-S4 review session51268/native
- stratonovich-upper-static-scientific-v1 on404354a. Corrected statement
- passed16HIGH; complete proof is CANDIDATE pending full gate. V1 rangeFAIL
- preserved, explicit2<r<2/a. No static theorem adopted yet.
+- **New accepted signed static upper:** scientific404354a,25checks/HIGH
+ 327.286s,28bindings/43native members verified. Actual rough signed full-F
+ flow has exact spectral rate and polynomial K/t bound; beta continuity
+ and compact mean-field Bochner averaging accepted. FixedR interface only.
+- **Immediate next:** freeze/falsify B1-B3 actual mean block-product upper,
+ including polynomially growing control balls, explicit B/K budgets and
+ true last remainder. V1 temporal-range FAIL retained; exact2<r<2/a.
  Growing-cone/source gaps retained.
 - **Still open:** intended author-energy/domain/normalization dictionary,
   matching sharp upper constant and conditional exact limit. Original full
@@ -7028,3 +7031,26 @@ must be inspected; no restart on timeout. Corrected statement56325 is now
 TERMINAL acceptedHIGH224.59s, original60045 TERMINAL FAIL/HIGH397.759s.
 Both dispositions retained. Full original goalACTIVE, no new upper/point/
 sourceconstant claim before full review. NoRoute/localisolated/pushpending.
+
+### S1-S4 signed rough static/rate interface accepted — 2026-10-31
+
+Previous goal turn PROGRESS: complete candidate/source packet and original
+FULL review launched; now original51268 TERMINAL accepted.25checks PASS/
+HIGH327.286seconds,no requiredrepairs. Canonical report/pass/correspondence/
+readcoverage pass,ALL7PRIMARY images;28live/frozen/Git/native bindings and
+all43native archive members verified. No recovery/restart/waiver; earlier
+v1rangeFAIL/HIGH preserved, strict2<r<2/a unchanged.
+
+Adopt actual signed rough multiplier/form/SA/quarterpowers, beta=spectral
+bottom/continuity, full wave EXACTlambda/polynomial16 bound, rough physical
+E/F identity/bothconstants, actual compact-field Bochner rate convergence.
+Seven optional clarity notes applied only, frozen proof/report unchanged.
+Existing REAL weightedAMGM complete type/actual1/2 guard application passes;
+no new kernel/count73facts19seams/L0, all analytic statements informal.
+
+Next B1-B3 target includes polynomially growing M_B balls to support later
+Gaussian-tail work. It is unreviewed, not a product/point theorem. Original
+mean-actiontails/globalrestart/product/variational/growingcone/POINT/source
+constants/normalization/exactlimit all remainOPEN; fullgoalACTIVE. No contact/
+Skorohod/HPC/sourcefix/companion/TeX/PDF/wiki/bib/publication or wholepaper
+clearance. NoRoute/localisolated/pushpending/no fresh parity/master merge.
