@@ -6289,3 +6289,22 @@ Canonical upper source/excerpt custody rechecked current/6203ab7; only
 finite SAME-model rate imported. Opus5.5/HIGH native doctor successful;
 independent statement gate next, not theorem adoption. <HUB> NoRoute,
 isolated local/no fresh parity/integration, full original goal ACTIVE.
+
+### U1-U4 statement gate accepted before proof — 2026-10-31 UTC
+
+Original83130 TERMINAL,13checks PASS/PASS_WITH_NOTES/HIGH309.866seconds,
+no requiredrepairs. Canonical report/pass/correspondence/readcoverage pass;
+14live/frozen/Git/native bindings and all29native archive members
+verified. Parent64d9398->723fbeb custody relation checked by root. No format
+recovery/providerrestart/confidence waiver. Statement acceptance permits
+proof investment ONLY, not a new theorem or moment-constant promotion.
+
+Nine proof obligations recorded: exact Gaussian Fourier pairing; 1d long
+plateau diagnostic; arbitrary-d Radon factor and firstmean scope; explicit
+SAME canonical upper/prefactor/alpha0 dictionary; exact positive_score
+radius without smallness claim; label_score only actual guards; positive
+class bump; real/complex form equality; old comparator restricted to d1
+SEPARABLE Riesz/white. Next full written U1-U4 proof then FULL independent
+analytic/source/type/application gate.71facts18seams/L0 unchanged; no new
+package/HPC/contact/Skorohod/sourcefix/TeX/PDF/wiki/publication. Full original
+goal ACTIVE, sharp upper/intended energy/exact limit OPEN; NoRoute persists.
