@@ -159,3 +159,32 @@ replacingONLYGLfinitenessparagraph. Exactcandidate/guards in
 reviews/2026-11-01-tube-transfer-tex-integration/gc-finiteness-audit-v2.md.
 ThisisUNREVIEWEDasGCapplication, notanadoptedpruningorclosurecertificate.
 Keepallhistoricalproofs/reviews andvalidatewholeGCsourcebeforeanyremoval.
+
+
+## 2026-11-01 accepted GC interface replacement
+
+The prior conservative table and candidate audits above remain historical.
+Scientific3ac97c4 now integrates GC and UR with nine complete proofs;
+actualOpus5.5/HIGH29namedchecks accepted through the separately recorded
+canonical syntax-only recovered receipt. GC02 specifically verifies the
+NEW BT-to-GC fixed-delta application. This is application acceptance, not
+merely an accepted theorem awaiting correspondence.
+
+Author interface audit after that gate: effective GC inputs are FM/FY/SC
+for E/F restriction and source moments/UI, DS/RB for canonical LAW scaling,
+and BT with SP for same-actual-endpoint finite positive E second moment.
+BT's actual endpoint/noise-only restart is already internal via RB, and
+its generic first-chaos/Wiener realization is completely written there.
+US uses only the generic E1 endpoint-preserving perturbation, not EA's
+fixed-mask conditional/exponential consumer. Literal current BT/US/GC/UR
+TeX contains no invocation of GLF/MB/EA/D1 model-specific theorems.
+
+Therefore the OLD GL finiteness input and its GLF/MB/EA/D1 model-specific
+ancestor branch are not required for this CURRENT integrated path to UR
+or its declared subsequent PB/OC/WS consumers. GR's needed restart is
+retained through its complete internal RB proof; D1's generic method is
+not an assumed norm/Fernique theorem. No historical source, review, failed
+attempt or earlier graph row is deleted or retroactively relabelled.
+This does not certify every deeper analytic ancestor or whole-paper
+closure. The adopted evidence, actual guard fit and limits are in
+reviews/2026-11-01-point-upper-tex-integration/adjudication-v1.md.

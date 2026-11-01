@@ -183,8 +183,17 @@
   accepted/coverageTRUE;58fivewayinputs/37texts/21exactPNGs/73rawfiles
   verified.7proofs,230pagesclean,177priorunchanged. Uniform E spectral/
   averaging/products/polynomialballs/ANY residual envelope, notpointupper.
-- **Immediate next:** jointly integrate original point transfer GC and
-  signed-score moment upper UR, thenPG/PB/OC/WS/fullargument/finalgates.
+- **Accepted GC/UR TeX integration:** scientific3ac97c4, actualOpus5.5/HIGH,
+  29namedchecks593.249seconds,no requiredrepairs. Native47752TERMINAL3
+  original invalidJSONrefusal preserved; canonical UNIQUE one-brace
+  byte-reversible recovery/no provider calls passed ALLgates.72fiveway
+  bindings/59fulltexts/13exactPNGs/90raworiginal+recoverymembers verified.
+  Nineproofs/238pagesclean/184priorunchanged. Actual BT-to-GC finiteness,
+  source-first originalpoint transfer and same-moment moving signedupper.
+  Notyet positive-score/exactlimit from these sections alone.
+- **Immediate next:** integrate full finite PG1-PG2 and physical PB0-PB5
+  into TeX, thenOC/WS/fullargument/finalgates. Frozen target in
+  reviews/2026-11-01-positive-score-tex-integration/target-v1.md.
   Keep the frozen PB/OC/WS result set and full original model scope. The
   import interfaces are mapped; avoid repeating that inventory as a new round.
   Continue consolidating complete proofs into TeX/PDF, with clean builds
@@ -213,7 +222,7 @@
  rerun for promotion, new package/companion/lease/registry/HPC action.
 - **Git:** current mathematical work is in the isolated private research
   clone, branchresearch/fixed-mask-young-20261031. Latest result source
-  is95d7515; latest accepted TeX integration source5e36bcb, with subsequent
+  is95d7515; latest accepted TeX integration source3ac97c4, with subsequent
   adoption records separate.
   Fresh fetch/push failed with <HUB>NoRoute. Prior <HUB> parity
   receipts are historical, not evidence of current synchronization.
@@ -9755,3 +9764,56 @@ Conservative GLF/MB/EA/D1 dependency graph stays until NEW GC consumer gate.
 Then PG/PB/OC/WS/fullargument/coldread/lit/wiki/privateparity remain OPEN.
 No source repair/forced Chen constant/contact/HPC/companion/Skorohod/sibling
 scientific edit/publication. <HUB> NoRoute; no current parity claimed.
+
+
+## 2026-11-01 — full original point transfer and signed upper integrated
+
+Scientific3ac97c4953b1f0901afd2788ccfc16e80cecf437;9completeproofs,
+238pagesclean/0errors/undefined/overfull;184priorproofbodiesunchanged.
+ActualfirstPartyOpus5.5/HIGH29namedchecks (25PASS,4notes),593.249seconds,
+no requiredrepairs. Native47752TERMINAL3 original invalid-report refusal
+preserved although sciencePASS_WITH_NOTES/HIGH andcoverageTRUE.
+Canonicalrecover-report found ONEdistinct valid report byONEclosingbrace
+atbyte28011, reversible/zero provider calls. Separate recovered receipt
+accepted afterALLordinarygates; originalreceipt is STILLREFUSED.
+Canonicalparse/pass/correspondence/fullcoverage inclallow_recoveredPASS.
+All29requirednamedobligations presentexactlyonce.72fivewaylive/packet/Git/
+nativeworkspace/finalreceiptbindings verified BEFOREadoption.59fulltexts+
+13typedexactPNGs delivered;90rawarchive members (86original+4recovery)
+SHAreadbackverified. Rawreportunchanged; no scientificretry/model/threshold/
+authwaiver. No finalsource/PDFedit. Sevenminorfindings fullyadjudicated in
+reviews/2026-11-01-point-upper-tex-integration/adjudication-v1.md.
+
+Accepted actualsame-noiseBTB1finitepositiveEsecondmoment NEWGCapplication,
+separate actualsource sqrtp/squareexp/Young/UI/restriction/ordinaryidentity,
+source-onlyEkregularity/fullGreenMEASURES/TOTALdatumcausalcone/factorial
+uniqueness/average OF SQUARES/separate E+FULLpointmoments, importedcanonical
+LAWscaling/allmixed-unequal-self-emptychains/polynomialdatacost/bijection/
+originalfixedx. UR originalrawhalfaction/ownmovingscore, quantitativeE-only
+B^(3nu)envelope, uniformdeterministicerror ANYpolynomialballs, actualCM/
+Rayleighbulk+tail4/M²quarter/ALLguards+normalizers, SAME momentforallB,
+delta FIRSTthenB, zeroGamma direct. ALLoriginalGamma/amplitudes/d1/2/3/
+white/subcritical retained. Notpositive-score/actualp1/authorL/exactlimit
+fromGC/URalone. Existingfinite source/types/guards ONLY;80facts22seams/
+L0PROPOSED/decision4unchanged,no compiler/fact.
+
+Accepted application lets author audit CURRENTimportinterfaces: replace
+GC's GL-onlyfinitenessinput by BT/SP; keep separate FM/FY/SC andDS/RB.
+BTgenericAWSandRBrestart internal, USusesE1only. The oldGLF/MB/EA/D1
+model-specific branch is not needed in the current integrated upper path;
+history preserved, no fullclosureclaim. Detail appended to proof-imports.
+
+Finalpresentationdebts: explicit sourcecutofflimit/integralbounds,
+ordinaryYoung parentpointer, single-sourcelaw covariance-to-Bochner-moment
+sentence, envelope ALLR andclockquantifiers, fixedxstationaritypointer,
+inheritedBTfootnote/notation/summary/bibcosmetics. Old diagnostics read,
+notrun/no enclosure. New contextEOFblank caught BEFOREfreeze and newcopy/
+packet/hash normalized; oldoriginals unchanged. Existingrule applied.
+
+Next FULL PG/PB target frozen BEFOREtranslation: finiteanalyticoptimization
+plus actualrawlabel/Gram/positive smoothing/noncircularnorm/cutoffremoval/
+ORIGINALintrinsiclimit, allmodelscope. ThenOC/WS/calibrations/fullargument/
+finalcoldread/lit/wiki/privateparity. Scoped AI gate only, nothuman/novelty/
+wholepaper/goalcompletion. SourcepushNoRoute; no contact/HPC/companion/
+Skorohod/siblingscientificedit/publication. FullgoalACTIVE, actualconstant
+revisionpreserved. Learned-session canonicalupdates atLe-AI-Labded76cc1.
