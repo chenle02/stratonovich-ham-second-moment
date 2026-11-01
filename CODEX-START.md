@@ -1,5 +1,10 @@
 # Launching the Codex run
 
+Le revised the constant target on2026-10-31: derive the actual value from
+the computation; matching Chen's guessed constants is not required.
+`PROJECT-GOAL.md` and active `Progress.md` control current work. The G0
+launch text below is historical and must not reopen completed rounds.
+
 > Superseded for the current hand-off by `HANDOFF.md` (agent #30, 2026-10-26),
 > which adds the lean-pkg track. This prompt remains valid for a fresh session.
 

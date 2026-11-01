@@ -7,7 +7,9 @@ optional clarity/adoption. All8minor findings adjudicated in
 reviews/2026-10-31-physical-score-comparison/scientific-adjudication-v1.md.
 Frozen proof/report unchanged. This identifies the original point limit by
 an INTRINSIC positive-control value for all original models, not author
-L_*/L^* or actual p1. Original sharp/source goal remains ACTIVE.
+L_*/L^* or actual p1. Le's later2026-10-31 instruction makes the derived
+constant the goal; agreement with Chen is now a comparison only. Final
+integration/verification requirements remain OPEN.
 
 ## 1. Exact model, inputs and conclusions
 
@@ -341,6 +343,7 @@ No source lower-constant comparison F_a(E_star) follows: its damped
 temporal kernel matters. The reviewed literal source-normalization
 discrepancy remains; the intended correction and exact domain dictionary
 are UNKNOWN. No energy, coefficient, source PDF, goal definition or
-conjecture is repaired on the author's behalf. Original sharp/source goal
-stays ACTIVE. No novelty, human, whole-paper, publication, correspondence,
+conjecture is repaired on the author's behalf. The derived-constant goal
+stays ACTIVE; matching this prediction is no longer required by Le.
+No novelty, human, whole-paper, publication, correspondence,
 HPC, official companion, or manuscript-integration clearance is asserted.

@@ -6,6 +6,14 @@
 
 ## Current state
 
+- **Le's current objective (2026-10-31):** derive the ACTUAL asymptotic
+  constant, whatever the computation yields. Matching Chen's guessed
+  constants is NO LONGER a completion requirement. This is Le's explicit
+  revision, not a reduced target chosen by the agent. All original model,
+  dimension/covariance and verification/scope requirements remain. The
+  unchanged goal-service text and older dated records retain former wording;
+  current PROJECT-GOAL.md and this instruction supersede that requirement.
+
 - **Accepted frontier (2026-10-31):** the correct-scale full upper remains
   reviewed and unchanged. The original all-dimensional raw point lower,
   unmasked Rayleigh limit and positive finite intrinsic score scaling are
@@ -75,11 +83,12 @@
   oractualp1. All8minorfindingsadjudicated. D1Riesz/white oldmechanism
   ceiling now supplies anactualmoment-value ceiling throughPB5.
 - **Immediate next:** freeze/falsify anALL-original-model positive-score
-  ceiling using the accepted full-H1 occupation estimate. Avoid importing
+  ceiling using the accepted full-H1 occupation estimate (OC FIT nowpassed
+  17HIGH368.062s; fullproofnext). Avoid importing
   d1 groundeigenstates into higherdimensions; approximateRayleighprofiles
-  must be genuine measurable unit-H1 occupations. Then compare resulting
-  source-shaped maps with the REQUIRED original energy/domain/normalization
-  dictionary, which remainsOPEN. Original sharpgoal remainsACTIVE.
+  must be genuine measurable unit-H1 occupations. Derive and simplify bounds
+  for OUR constant. Chen's source-shaped maps and energy dictionary are
+  optional comparisons under Le's revision, not a required answer.
 - **New accepted uniformR E Cameron/regulator:** scientificf54e92b,
   21checks/HIGH348.303s,no requiredrepairs;21input bindings/native archive
   verified before6optional clarity notes. Actual all-model uniformR means,
@@ -91,9 +100,11 @@
   verified. Actual cutoff envelopeR^(d/q),sameW first-driver sqrt(v)R^(d/Q)
   and expected weighted blocknorm->0 on growingR for fixed sufficiently
   largeQ. E ONLY;not F constantcolumns,concentration or sharp-point upper.
-- **Still open:** intended author-energy/domain/normalization dictionary,
-  matching sharp upper constant and conditional exact limit. Original full
-  goal ACTIVE; no whole-paper/circulation/wiki/master integration clearance.
+- **Still open:** simplification and verified bounds for our derived
+  constant, manuscript integration, whole-paper/cold-read verification and
+  synchronization. Chen's energy/domain/normalization dictionary remains
+  a comparison question, NOT a completion blocker under Le's revision.
+  Full all-model derived-constant goal ACTIVE; no circulation clearance.
 - **Lean:**78acceptedfinitefacts21local seams/L0 PROPOSED. Four PG finite
  algebra facts and their exact finite applications accepted at687b958;
  analytic optimization and physical comparison remain outside the kernel.
@@ -8260,3 +8271,25 @@ Skorohod/sourcefix/TeX/PDF/wiki/bib/publication, NoRoute/pushpending.
 ## OC all-model occupation ceiling target frozen — 2026-10-31
 
 [held back: collaborators' unpublished work]
+
+## Le revises constant objective: derive the answer, do not force Chen — 2026-10-31
+
+Le's exact instruction in this thread:
+> Chen's requested sharp constants might not be the right one, but he has his good intuition to guess those. But we should not force us to get those constants. We should derive the contants, whatever they come out of our computation.
+
+- Userrevision supersedes matching2^mL_*/L^* and the conditional guessed
+  upper endpoint as completion requirements. UpdatedPROJECT-GOAL/AGENTS/
+  README/launchwarning; all originalmodels/exponent/review/calibration/
+  scope/decision-point constraints remain. No change to held source PDFs,
+  old proof packets, or the unadopted1.24proposal.
+- The actual constant C2=S_2^pos is ALREADYderived at the reviewed internal
+  mathematical level, viaPB0-PB5. This is an exact fullyspecifiedvariational
+  characterization, not a genericnonsharpC. Further computation/simplification
+  and bounds should follow that formula; do not tune definitions to a guess.
+- Integration/finalwhole-paper/cold-read/synchronization requirements are
+  stillopen. No goalcompletionclaim, newcompanioncreation, correspondence,
+  publicrelease or Skorohoddevelopment is authorized/inferred by thisrevision.
+- PBcheckpointwasreportedtoLe; his response gives the above direction for
+  continuingthederivedconstantwork. Earlier dated source-match blockers
+  remainhistory, not current workflow requirements. Goalserviceolderwording
+  must not override this later explicit user instruction.

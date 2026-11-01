@@ -6,17 +6,22 @@ t^{(4−α−α₀)/(3−α)} and the sharp p = 2 constant, building on X. Chen,
 *Time-dependency in hyperbolic Anderson models: Stratonovich regime*
 (author version, submitted to AAP; arXiv:2510.01412).
 
-**Status (2026-10-29):** the preceding quantitative upper-bound and mild
-construction passed 19 source-bound checks at high confidence. The sixth
-cold read remains NOT CLEAR and requests a proof-level fixed-order-input
-check plus explicit hypothesis/object statements.
+**Goal revised by Le (2026-10-31):** derive the actual asymptotic constant,
+whatever the computation gives. Chen's conjectured constants remain a
+comparison rather than a required answer. See [PROJECT-GOAL.md](PROJECT-GOAL.md).
 
-The current [94-page revision](notes/notes_stratonovich_ham_second_moment.pdf)
-makes the original covariance class and canonical solution explicit and adds
-a direct norm-and-tail lemma. That new lemma is unreviewed; the spatial
-Wick-measure and joint-limit construction lemmas remain to implement.
-The full upper statement is Theorem 13.8 on page 89. See `Progress.md` and
-`HANDOFF.md`. The sharp constant and private Lean companion remain open.
+**Current internal result (2026-10-31):** the correct-scale full upper is
+retained. An independently reviewed proof now identifies the original
+second-moment limit for all admissible dimensions/covariances by an explicit
+intrinsic positive-control variational constant. Scientific source40ec9a9
+passed19checks/HIGH; see the [proof](notes/physical-signed-positive-score-comparison.md).
+
+Further constant simplification and bounds are in progress. The tracked
+[TeX/PDF notes](notes/notes_stratonovich_ham_second_moment.pdf) are the earlier
+baseline; the new result has not yet been integrated there. Earlier failed
+cold-read records remain preserved, and no whole-paper or circulation
+clearance is implied. The official private Lean companion remains separately
+gated. Use `Progress.md` and the root loader `HANDOFF.md` for the active checkout.
 
 ## Start here
 
