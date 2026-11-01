@@ -481,3 +481,15 @@ The optional stronger FIT-reviewer sign lemma was not adopted. Le's later
 goal is the actual computed constant; Chen agreement is not a requirement.
 Counts78/21 and officialcompanion decision4 remain unchanged. The proposed
 white-CDF scalar seams are future work, not a new formal claim here.
+
+## WS-WHITE-CDF-PROVISIONAL: exact finite normalization only
+
+Two publicconditionalREALproofs pass localsource/types/std3/replay/negative
+controls at4.35.0/Mathlib56a0058. cdf_square_bound assumes FORALLREALz
+nonnegativeb-2zA+z²/3 and derives3A²<=b. energy_upper assumesh3andderives
+cA-b/2<=c²/6 forallrealc,A,b. Privatecompositionisnotthirdpublicfact.
+ACTUALanalyticCDFidentitymustsupplyh;physicalcδcovariance,unitH1mass,
+weakderivatives/ACrepresentative,endpoints,integrability/IBP,soliton
+attainment,energy/R_spidentification,coefficientGammafunctionsandmoment
+transferremainoutsidekernel. TwofactspendinginitialWSapplicationreview;
+acceptedcounts78/21unchanged. No officialcompanion/package/clusterclaim.

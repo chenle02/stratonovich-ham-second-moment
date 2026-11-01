@@ -8369,3 +8369,39 @@ Le's exact instruction in this thread:
   whiteenergyuppercA-b/2<=c²/6. Typesmustbefencedbeforeproof andexisting
   Mathlib/registrysearchedfirst. No code/compiler/fact/packageclaimedhere.
   Current78facts21seams/L0unchanged. AllownedAI/localcomputejobs nowterminal.
+
+## WS finite normalization seam checked; analytic FIT next — 2026-10-31
+
+- Previousgoalturn PROGRESS:Le'sderived-constantrevisionpreserved,PB/OC
+  acceptedandWSexacttarget/profilediagnosticsfrozen. Currentmodels/rigorgates
+  unchanged;do not restoreobsoletegoal-servicematchChenrequirement.
+- Two completeREALconditionalheadersfrozenBEFORELeanproofin
+  lean-progress/local-checks/white-cdf-v1/. Source4d3f8ee4...100cbcd:
+  forallz quadraticnonnegative ->3A²<=b; h3->cA-b/2<=c²/6. Bothpublic
+  proofscompileFIRSTtry0errors/warnings. Privateactualconsumercomposesboth,
+  plusactualgroundcallsatA=b1/3,c1. NOTaformalH1/CDF/GN/PDEtheorem.
+- FreshOWNsource-onlyreplay5objectpairsandauditstdoutIDENTICAL;3complete
+  axiom inventoriesallstd3. Twofalseendpointvariantsrejectwrong4A²and1/12
+  energywithSOLEexactarithmeticFalse,notAPI/importerrors.53rawnativearchive
+  membersreadbackhashed. Source/headersunchanged.2publicfactsPROVISIONAL,
+  accepted78/21+mirrorunchangeduntilactualWSfidelity/applicationgates.
+- OfficialcurrentstableLean/Mathlib4.35.0 and56a0058verified;9selected
+  dependencyHEADs/indexcleanbefore/after,8officiallibdirs,privateWalsh/Rough
+  libsEXCLUDED. No donordependencybuild. PerunitCPU200%,memory4/6GiB,
+  Tasks64,proof-j1/asyncfalse,max2parallel;actualinsideunitpropertiesverified.
+  ProcessRSSabout1.8GiB,notthesmallerchargedshared-cachecgroupnumber.
+- Search2phrasings/7sources,Looglepublicsq_nonnegandpinnedMathlibtype;
+  incompleteregistry7nocheckoutsnotabsence. Earlysummarywronglyreadmissing
+  matcheskey;correctedbyactualper-sourcehits. Mathlibsq_nonneg/tacticsreused,
+  no newlibrary/package. PalomarhitupstreamREADME3DCoulomb/nonsharpRumin,
+  notour1Dsharpnormalization;entrydirect403retained,nofalsefullauditclaim.
+- InitialinlineaxiomguardcouldmissunknownnamesalthoughACTUALStd3outputs
+  manuallyreadclean. ReplacedBEFOREpromotionbycomplete-list/exactFalse
+  parserwith14rejectedadversarialmutations. Existingruleapplicationrepair,
+  notnewmathclaim;no proof rerun. Initialreceipt/nativebytespreserved.
+- WS1-WS3newsourcecrosswalk/27requiredtexts163026bytesfrozenforanalytic+
+  initialkernelapplicationFIT. FULLH1CDF/IBP/endpoints/sechattainment,
+  physicalδnormalization,coefficientsubstitutionandGammaCSstillUNPROVED.
+  DecisiondelimitedREFRAMEinternalcalibration/evaluation;noveltyUNVERIFIED.
+  Freshknown<plan removed>headroom/firstPartydoctor/sameactualOpusREADYpassed.
+  No model/threshold/credentialfallback,sourcecorrection,Skorohod/HPC/companion.
