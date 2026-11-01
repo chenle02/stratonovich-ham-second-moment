@@ -708,3 +708,12 @@ deductions are reused unchanged; no newly compiled theorem, new formal fact,
 seam or officialpackagegate.78facts/21seams/L0PROPOSED unchanged. New raw
 membership/time/mean,Rayleigh/smoothing/optimizationlimits andmomentassembly
 remain analytic boundaries. Fullsource/novelty/wholepaper/coldreadopen.
+
+## OC derived bounds accepted, same kernel boundary — 2026-10-31
+
+Scientific25cc688FULL18HIGH302.195s accepts the actualall-model occupation
+ceiling and commonspatialenergy bracket. Oldstrict_log_gap reused at its
+exacta>0,q-2a>0 type,includingq<3. No newkerneltheorem/compiler/seam/fact
+or officialpackagegate.78facts21seams/L0PROPOSED remainunchanged. Actual
+roughsquarecompletion,physicalpairing,time/mass/near-selection,scalar
+globaloptimization andmomenttransferare reviewedINFORMALmathematics.

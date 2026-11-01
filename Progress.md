@@ -82,13 +82,16 @@
   This is an OWN positive-control variational value,not authorL_*/L^*
   oractualp1. All8minorfindingsadjudicated. D1Riesz/white oldmechanism
   ceiling now supplies anactualmoment-value ceiling throughPB5.
-- **Immediate next:** freeze/falsify anALL-original-model positive-score
-  ceiling using the accepted full-H1 occupation estimate (OC FIT nowpassed
-  17HIGH368.062s; fullproofnext). Avoid importing
-  d1 groundeigenstates into higherdimensions; approximateRayleighprofiles
-  must be genuine measurable unit-H1 occupations. Derive and simplify bounds
-  for OUR constant. Chen's source-shaped maps and energy dictionary are
-  optional comparisons under Le's revision, not a required answer.
+- **Accepted derived bounds:** scientific25cc688,18PASS/HIGH302.195s,
+  no requiredrepairs;26five-waybindings/41native members readbackverified
+  beforeclarity. All originalmodels have the reviewed occupation ceiling
+  and common spatial-energy bracket fromOC(18). These bounds are not
+  asserted sharp or equal to the exact PB variational constant.
+- **Immediate next:** independently verify the frozen white spatial
+  evaluation WS1-WS3, target in reviews/2026-10-31-white-spatial-evaluation/.
+  CDF square identity should compute actual R_sp/E_sp and explicit bounds
+  for C2. Keep all-model PB/OC scope; this is an example, not a narrowed goal.
+  Then consolidate the derived constant and proofs for final verification.
 - **New accepted uniformR E Cameron/regulator:** scientificf54e92b,
   21checks/HIGH348.303s,no requiredrepairs;21input bindings/native archive
   verified before6optional clarity notes. Actual all-model uniformR means,
@@ -8322,3 +8325,23 @@ Le's exact instruction in this thread:
   updatednotduplicated.550/1024headline45/gates/projections/byteparity/
   strictbudgetPASS;actualFFTqueryrank2. SharedLabhaslaterforeigncommits,
   trackedclean0/0atlastcheck;ourskillunitremainspushed. No foreignWIPtouched.
+
+## OC complete derived-bound proof accepted — 2026-10-31
+
+- Existing46705TERMINAL0: actualOpus5.5/HIGH,18PASSchecks302.195s,
+  PASS_WITH_NOTES,no requiredrepairs. Canonicalparse/pass/correspondence/
+  fullcoveragePASS;26five-waybindings BEFOREclarity;41rawnativearchive
+  membersreadbackSHAverified,rawreportunchanged. All7notesadjudicated.
+- Actualall-model C2 nowhas reviewed rawoccupation ceiling and common
+  SPATIALenergy bracket 2^m M_a^(-1/k)F0(E_sp)<=C2<=2^m K0^(1/k)F0(E_sp).
+  No groundeigenstate/pointwiseH1supremum embedding in d2/3; actualrough
+  physicalC4->H_sp/rawcovariances/measurableRayleighconstructionchecked.
+  No equalityofceilingwithC2,actualp1,sourceconstantorattainmentclaim.
+- Optionalpositivewitnessretainedoldraw(19);explicitULcontinuity/Borelcells;
+  mixeddisplayclarity;formalstatementsatTeXintegration;Gamma0E_sp/E_star0
+  separatelydilated;harmlessA0/v0;PBmetadata353->358Gitdiffretained. No
+  requiredproofrepair/rerun. FITOpusuniformeta1lemma stillNOTadopted/used.
+- Le'srevisedgoal controls:deriveouractualconstant,notforceChen's guesses.
+  MathematicscoreexactvariationalC2 andall-modelboundsareacceptedinternally.
+  Integration/build/wholepaper/finalcoldread/wiki/sync remainunfinished.
+  No newformalproof/count;78facts21seams/L0/companiondecision4unchanged.

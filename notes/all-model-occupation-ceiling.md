@@ -1,9 +1,12 @@
 # Derived occupation bounds for the intrinsic second-moment constant
 
-AUTHOR PROOF, UNREVIEWED. OC1-OC4 FIT passed17HIGHchecks atb2942ef,
-368.062seconds; that did NOT accept this new proof. The full proof/application
-gate is required. Le's2026-10-31 instruction is to derive the constant from
-the model; matching Chen's predictions is not a completion requirement.
+ACCEPTED at the scoped FULL analytic/application gate: scientific25cc688,
+actualOpus5.5/HIGH,18checksPASS,302.195seconds,no requiredrepairs.
+All26five-waybindings and41rawnativearchive members verified BEFORE
+optionalclarity/adoption; all7notesadjudicated in
+reviews/2026-10-31-all-model-occupation-ceiling/scientific-adjudication-v1.md.
+Frozenproof/report unchanged. Le's2026-10-31 instruction is to derive the
+constant from the model; matching Chen's predictions is not required.
 
 ## 1. Exact model, prior inputs and the derived constant
 
@@ -69,7 +72,9 @@ Here b is a DISPLAY parameter; F_0 does not change the actual temporal a.
 Gamma=0 is separate: raw norms, h, I, S_c and C2 vanish. In(1), A=0,
 C_occ=0. Every unit H1 profile has positive gradient energy, but dilating
 a fixed unit compact profile by ell^(d/2)g(ell x), ell->0, makes T->0.
-Thus sup(-eta T)=0, so E_eta^O=0. With F_b(0)=0 all non-strict bounds
+Thus sup(-eta T)=0, so E_eta^O=0. Similarly E_sp=sup(-b/2)=0 and the
+damped occupation energy E_star^O=sup(-T/2)=0 by that dilation, separately
+from all nonzero-noise imports. With F_b(0)=0 all non-strict bounds
 below are zero identities. Strict ratios are asserted only for Gamma!=0.
 Assume Gamma!=0 henceforth.
 
@@ -123,7 +128,7 @@ H_sp norms against K, integrable by Schur and L2 Cauchy-Schwarz. Equation
 therefore identify
 
  <Psi,rho_g>HI=int_I int_Rd h_Psi,s(x)g_s(x)² dxds,
-             <=sqrt(v_Psi A(g)).                       (8)
+ <Psi,rho_g>HI<=sqrt(v_Psi A(g)).                        (8)
 
 The latter is the ACTUAL raw Hilbert Cauchy-Schwarz inequality, using
 PB0's ||Psi||²=v_Psi and(6). No unmasked potential or stochastic flow
@@ -180,11 +185,11 @@ an H1 approximation to a unit vector has L2 norms tending to1, so its
 normalized approximation converges in H1 as well. All b_j=||grad f_j||2²
 are finite. The bounded-potential form is H1-continuous, hence UL gives
 lambda_Psi(s)²=sup_j R_j(s), R_j(s)=int h_Psi,s f_j²-b_j.
-These functions and lambda² are measurable by the accepted mean/rate
-properties and bounded-potential integration. For eps>0 put
+UL(9),(12) give continuity of these functions and lambda²; in particular
+they are measurable. For eps>0 put
  U_j={s:R_j(s)>lambda_Psi(s)²-eps},
  A_1=U_1, A_j=U_j minus union_(i<j)U_i.
-The U_j cover I up to any canonical null set. The FIRST-INDEX cells A_j
+The U_j cover every s in I for these canonical versions. The FIRST-INDEX cells A_j
 are Borel, not necessarily open, and form a disjoint partition. On any
 remaining null set choose one fixed unit compact profile.
 
@@ -305,5 +310,6 @@ actual singular-Radon covariance membership, all limits and global scalar
 optimizations are justified analytically above, not by those rows. All old
 finite kernel proof internals are reused unchanged; no new formal theorem,
 compiler, package or companion. Every NEW analytic assertion in this note
-still awaits its OWN full independent proof/application gate. No novelty,
+passed its OWN full independent proof/application gate as recorded above.
+No novelty,
 human/whole-paper/cold-read/public/correspondence/companion/HPC clearance.

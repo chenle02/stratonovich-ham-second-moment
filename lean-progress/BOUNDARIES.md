@@ -468,3 +468,16 @@ PG finite deductions and scalar upper inputs are unchanged and reused only
 at their existing types; actual guard fit has independent analytic review.
 Counts remain78facts/21seams, officialL0PROPOSED/decision4 unchanged.
 Author L_*/L^*/actualp1 and intended normalization are not identified.
+
+## OC-DERIVED-BOUNDS: full-model analytic ceiling, unchanged scalar reuse
+
+Scientific25cc688,FULL18HIGH302.195s accepts the all-model occupation
+ceiling and common spatial-energy bracket for the actual C2. Strict-log
+gap uses the unchanged old type at a>0,q-2a>0; no q>=3 assumption and no
+new compiler/fact/count. H1-to-H_sp square completion, physical raw/mixed
+covariance identities, measurability/countable selection, energy supremum
+and all scalar global extrema remain analytic, not kernel-certified.
+The optional stronger FIT-reviewer sign lemma was not adopted. Le's later
+goal is the actual computed constant; Chen agreement is not a requirement.
+Counts78/21 and officialcompanion decision4 remain unchanged. The proposed
+white-CDF scalar seams are future work, not a new formal claim here.
