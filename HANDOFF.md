@@ -1,14 +1,14 @@
-Last updated: 2026-11-01 14:04 UTC (Codex)
+Last updated: 2026-11-01 14:31 UTC (Codex)
 
 LATEST USER DIRECTION: derive the actual constants, whatever computation yields.
 Chen matching is not a completion requirement.
 
 ## ⏭ Next session: where to stand and what to do
 
-FIRST integrate the full finite Gram optimization PG1-PG2 and physical
-positive-score comparison PB0-PB5 into TeX in ACTIVE
+FIRST integrate the full occupation bounds OC and white spatial evaluation
+WS into TeX in ACTIVE
 ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave,
-branch research/fixed-mask-young-20261031, clean local HEAD c3f4485.
+branch research/fixed-mask-young-20261031, clean local HEAD 7bbc946.
 Read its PROJECT-GOAL.md, AGENTS.md, Progress.md and
 notes/derived-constant-integration-plan.md and derived-constant-proof-imports.md
 in its notes directory. Root mathematical files and
@@ -104,10 +104,21 @@ atbyte28011/zero providercalls acceptedafterALLgates.72fivewaybindings/
 238pagesclean,184priorunchanged. Actual BT-to-GC finiteness substitution,
 source-first/full-chain ORIGINALpointtransfer and SAMEforallB signedupper
 nowintegrated; notyet positive-score/exactlimit fromthesesectionsalone.
-Read the NEXT target in
+The completed PG/PB target remains in
 reviews/2026-11-01-positive-score-tex-integration/target-v1.md in ACTIVE.
 Oldmodel-specific GLF/MB/EA/D1 branch notneededforCURRENTintegratedpath;
 source/reviewhistory retained, proof-importinterfaceaudit appended.
+PG/PB now ACCEPTED: scientifica880288,adoption7bbc946,
+30namedchecks/HIGH455.588seconds,no requiredrepairs. Native16142TERMINAL0
+review-complete accepted/coverageTRUE;63fivewayinputs/50fulltexts/13exactPNGs/
+78rawmembersreadbackverified.11newproofs,247pagesclean,193priorunchanged.
+Original ALL-model intrinsic pointlimitC2=Spos2=2^mSpos1 nowintegrated,
+Spos1auxiliarynotactualp1/authorL. No recovery/retry/waiver/sourcePDFedit.
+All9minorfindingsadjudicated forfinalpresentation, notrequiredrepairs.
+Read NEXT target in
+reviews/2026-11-01-occupation-white-tex-integration/target-v1.md in ACTIVE.
+OC/WS/fullpresentation/calibrations/wholeargument/finalcoldread/lit/wiki/
+privateparity remainOPEN. This scopedgate doesnotcomplete thefullgoal.
 No owned reviewer or computation remains live.
 
 ## Pre-flight checks
@@ -208,32 +219,35 @@ No owned reviewer or computation remains live.
 
 ## Concrete deliverables for the next session
 
-- Follow the FULL PG/PB pretranslation target in ACTIVE:
-  reviews/2026-11-01-positive-score-tex-integration/target-v1.md.
-- Complete PG1-PG2 finite analytic optimization, active-set/empty/zero/
-  singular cases, dual coercivity/attainment and entrywise Gram comparison;
-  reuse four unchanged finite Lean facts at exact types/actual guards.
-- Complete PB0-PB5 actual H_I inclusion/raw label identity/Gram fit,
-  noncircular uniform optimizer norm BEFORE averaging, positive smoothing,
-  signed-positive score match, nonmonotone-family cutoff removal, and SAME
-  original point limit with full variational domain/halfaction/amplitude.
-- Preserve all original models/dimensions/data/zero. Spos1 is auxiliary,
-  not actualp1/ChenL. Old canonical upper independently supplies finiteness.
-- Source Sections1-7 and all adopted clarifications apply. PB Section8
-  oldd1 ceiling remains comparison context, not an all-dimensional premise.
-- CleanTeX/PDF and fullfresh actualOpus5.5HIGH source/proof/application
-  review, exact source/typedmedia gates, findings adjudicated.
-- ThenOC/WS/calibrations/fullargument/finalcoldread/lit/wiki/privateparity.
+- Follow FULL OC/WS pretranslation target in ACTIVE:
+  reviews/2026-11-01-occupation-white-tex-integration/target-v1.md.
+- OC full-H1 physical-to-raw square map, complete occupation class and
+  covariance identities, noncircular finite occupation energy/dilation,
+  first-index BOREL Rayleigh near-occupations, TWO global scalar maxima
+  with raw HALFcost, actual all-model ceiling and common spatial-energy
+  bracket. Preserve actual temporal a inside F0; no q>=3 restriction.
+- WS fullrealunitH1 CDF-square argument/integrability/endpoints,
+  sech attainment and exact white spatial energy, actual covariance MASS
+  versus noise amplitude, parent coefficient substitution and Gamma
+  relative-width proof. Bounds are not an exact numerical C2 evaluation.
+- Gamma0 direct spreading/free/zero energies and scores. All original
+  models remain covered; white is an example, not reduced scope.
+- Existing RawValueCeiling/WhiteCDF finite sources/types/guards reused;
+  80facts22seams/L0PROPOSED unchanged, no companion withoutdecision4.
+- CleanTeX/PDF, final visual/source correspondence, fullfresh actual
+  Opus5.5HIGH proof/application review and everyfinding adjudicated.
+- Then apply accumulated presentation debts, explicit calibrations and
+  complete whole-argument/finalcoldread/lit/wiki/privateparity gates.
   No sourcefix/contact/HPC/companion/Skorohod/sibling/publication action.
 
 ## Success criteria for the immediate next step
 
-Complete internal PG/PB proofs connecting the actual signed raw score to
-ALL smooth nonnegative nonseparable controls and proving the ORIGINAL
-point-moment limit with its complete intrinsic variational constant. Full
-model/amplitude/zero scope, noncircular dependencies, exact finite guards,
-cleanPDF and required independent HIGH source/application review. Do not
-claim goal completion before OC/WS and the whole-argument/final gates.
+Complete internal OC/WS proofs of the actual all-model occupation ceiling,
+common spatial-energy bracket, full-H1 white energy evaluation and resulting
+moment bounds, retaining exact covariance/kinetic/half-action conventions.
+Full original scope and zero cases, cleanPDF and required independent HIGH
+source/application gate. No sharpness claim for ceiling endpoints and no
+numeric enclosure from diagnostics. Whole-argument and final gates remain.
 
 ## Anti-success criteria
 
@@ -1869,17 +1883,33 @@ uniformEbudget; trackB-growth/actualfinalcell andlimitorder precisely.
   uniformity/consumer boundaries, obligation-based progress and Lean value/
   friction attribution. Lablocal/GitHub0/0; <HUB>parity unverified.
 
+
+- 2026-11-01 PG/PB integration: scientifica880288/adoption7bbc946,
+  11proofs/247pagesclean/193priorunchanged. ActualOpus5.5HIGH30namedchecks,
+  455.588seconds,no requiredrepairs. Native16142TERMINAL0 accepted/coverage
+  TRUE;63fivewayinputs/50texts/13exactPNGs/78rawarchive members verified.
+  Complete finiteanalyticoptimization/Gram comparison and ACTUAL raw
+  physical application prove ORIGINAL ALL-model intrinsic pointlimit
+  C2=Spos2=2^mSpos1, fullpositive nonseparable control domain, original
+  covariance amplitude/fullgradient kinetic/varianceHALF. Notactualp1/
+  ChenL orsourceenergyrepair. All9optionalclarity/notation/status findings
+  adjudicated; no finalsource/PDFedit. ExistingfourfinitePGfacts reused
+  atactualguards,80facts22seams/L0 unchanged,no compiler/newfact.
+  OC/WS nexttarget frozen beforetranslation; no proofcode yet. Then
+  presentation/calibrations/wholeargument/finalcoldread/lit/wiki/private
+  parity. Source/adoptionpushesNoRoute; this scopedgate isnotgoalcompletion.
+
 ## Repo & git state at handoff
 
-Before this HANDOFF-only successor rootmasterHEAD332f251.
-Active research cleanHEADc3f44850bd95d4ca45dd348ffd4cfcc9af89e267,
-scientificsourcefreeze3ac97c4953b1f0901afd2788ccfc16e80cecf437.
-Privateorigin remains <HUB> bare; freshrootfetch/focused<HUB>read
-and source/adoptionpushes failedSSHNoRoute, no synchronization/HEADparity
-claimed. Last-fetchedroot611c005/research6937719 remain HISTORICAL.
-No implicit research/mastermerge. Science stays isolatedACTIVE;
-rootHANDOFF is loader, not mathauthority. Le-AI-Lab lessoncommitded76cc1
-is pushed/GitHub0/0; that is not Article or <HUB> synchronization.
+Before this HANDOFF-only successor rootmasterHEAD8889c0d.
+Active research cleanHEAD7bbc9465b6bfa3ad0525cd27cb1e2e2bf9206800,
+scientificsourcefreezea880288423d7824b0ca902b0e3a83b57f9086558.
+Privateorigin remains <HUB> bare; freshrootfetch andsource/adoption
+pushes failedSSHNoRoute. No current synchronization/HEADparity claimed.
+Last-fetchedroot611c005/research6937719 remain HISTORICAL. No implicit
+research/mastermerge. Science stays isolatedACTIVE; rootHANDOFF isloader,
+notmathauthority. Le-AI-Lablessoncommitded76cc1 is pushed/GitHub0/0;
+that is notArticleor<HUB> synchronization.
 
 ## Operating notes
 
