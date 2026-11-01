@@ -9170,3 +9170,27 @@ rough-control/d1 stochastic, GI numeric/d1 or BSection6 scalar comparison
 promoted. Physical H1 four-linear continuity/full occupation class must
 follow spatial finiteness, not assume an embedding in d2/3. Private push
 NoRoute; whole-paper/cold-read/wiki/remote parity open. Goal ACTIVE.
+
+
+### Temporal equilibrium / physical spatial-occupation TeX candidate frozen
+
+Added notes/integrated_temporal_equilibrium.tex (2proofs) and
+notes/integrated_spatial_occupation.tex (7proofs). All132prior proof bodies
+unchanged by author execution. Exact TE throughEq4/GI duplicationEq5 and
+B1-B4 scopes translated; no old d1 stochastic/rough-control, numeric
+envelope or BSection6 comparison promoted. Actual smooth controls yield
+finite spatial ratio BEFORE physical full-H1/Fourier/Fatou/absolute-four-
+linear continuity; full strong-H1 occupation class and exact kernel row
+retained. No optimizer/energy-equality/numerical/source-constant claim.
+
+Clean189-page build:0errors/undefined references/citations/overfull boxes.
+All9new/context/bibliography pages181-189 inspected. Two pre-freeze
+overflows repaired by Gamma aligned rows/displayed raw cost. Raw literal
+patch/C0/proof-end/unique-label gates PASS. Exact selected source slices
+with full-file/range/SHA custody, not a full excluded-source read claim.
+Frozen30input packet:20full required texts/9typed PNGs; media preflight
+PASS. Fresh Le Max93%weekly/shortunknown, firstParty claude.ai doctor and
+actualOpus5.5READY verified. Full independent integration gate PENDING.
+No new finite application/kernel vote/compiler/fact/package/companion/HPC
+action;80facts22seams unchanged. Goal ACTIVE; actual Cameron/upper/PB/OC/
+WS assembly and final whole-paper/cold-read/wiki/delivery remain open.
