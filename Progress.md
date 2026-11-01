@@ -203,11 +203,16 @@
   bindings, 53 texts/11 exact PNGs/79 native archive members verified.
   Nine proofs, clean 254 pages, 204 earlier bodies unchanged. The planned
   mathematical result set is integrated at scoped gates, not goal closure.
-- **Immediate next:** reconcile the consolidated manuscript and all final
-  presentation commitments, then run fresh whole-argument and final cold
-  reviews. Use reviews/2026-11-01-final-consolidation/target-v2.md and its
-  debt-inventory-v2.json. Calibration/source/wiki/private-delivery gates
-  remain open.
+- **Consolidated candidate:** scientific 4a65c79, clean 258 pages and all
+  213 proof blocks. Author reconciled the 140 numbered presentation records;
+  no inherited whole-paper acceptance is claimed for changed bytes.
+- **Immediate next:** monitor the existing fresh whole-argument review,
+  native session 44594, source 4a65c79, output in the sibling state directory
+  stratonovich-whole-argument-review-v1/native. It was confirmed LIVE at
+  capture; do not restart on an observation timeout. At terminal state,
+  validate actual model/route/report/coverage and all 63 named obligations,
+  bind every input and adjudicate findings. Then obtain the required fresh
+  independent cold read. Calibration/source/wiki/private delivery remain.
   Keep the frozen PB/OC/WS result set and full original model scope. The
   import interfaces are mapped; avoid repeating that inventory as a new round.
   Continue consolidating complete proofs into TeX/PDF, with clean builds
@@ -10085,3 +10090,32 @@ Le requested the current manuscript on Awesome tag8. The current active
 and placement were verified; unrelated viewers were preserved. No desktop
 configuration or system setup was changed. The displayed PDF is this
 consolidated candidate, not the older root-checkout scientific files.
+
+
+## 2026-11-01 — fresh whole-argument review dispatched
+
+Frozen source 4a65c79d9d4b5c6a7e0cb712a88f1a973cc9c3fd contains the complete
+consolidation, paired clean 258-page PDF, proof/body and presentation audits,
+all page renders, selected primary pages and the fresh full review packet.
+Post-hook verification matched all 401 live/packet/committed Git identities.
+Media classification passed for 57 texts and 344 exact PNGs. Native dry-run
+passed with no missing or waived paths. The source push failed NoRoute;
+no current <HUB> parity is claimed.
+
+A fresh first-party Opus 5.5/HIGH whole-argument attempt is actually running
+under native session 44594, with the source frozen above and timeout3600.
+The existing handle was polled and confirmed LIVE; no terminal receipt is
+present at capture. Output: sibling state directory
+../stratonovich-whole-argument-review-v1/native from the active repository.
+This is a verified running review, not scientific acceptance. Its requested
+scope covers all 44 sections and 213 proof blocks, coupled global uses,
+all 258 final manuscript images and 86 selected primary/edition images.
+Required report obligations total63 (SEC01-44, GLOBAL01-12, SOURCE01-04,
+KERNEL01, VISUAL01, STATUS01). Prior local votes are not proof premises.
+
+Do not change TeX, PDF, packet inputs or finite evidence while this review
+is live. Poll this same handle; observation timeouts are not termination.
+At actual terminal state validate the canonical report/receipt and full read
+ledger, actual model/route/source bindings, all named checks and archive
+readback before any adoption. The final independent cold read and private
+wiki/delivery convergence remain required. Goal completion is unproven.
