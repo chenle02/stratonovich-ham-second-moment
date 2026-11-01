@@ -23,9 +23,10 @@ variational value; interval endpoints are bounds, not its evaluated value.
 The mathematical result set is now frozen for integration. The tracked
 [TeX/PDF notes](notes/notes_stratonovich_ham_second_moment.pdf) now include
 the covariance, wave-variance, finite Gaussian, compactness and actual
-same-noise operator-driver constructions, with 33 complete proof blocks
+same-noise operator-driver and canonical source-convergence constructions,
+with 40 complete proof blocks
 accepted at independent integration gates. The local driver construction
-is scientific source 9dad256. The
+is scientific source 9dad256; source convergence is 8a2add9. The
 derived-constant argument still needs integration there. Earlier failed
 cold-read records remain preserved, and no whole-paper or circulation
 clearance is implied. The official private Lean companion remains separately

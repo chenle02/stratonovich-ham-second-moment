@@ -113,8 +113,14 @@
   31bindings/21full texts/9exact images verified.143-page PDF clean. V1
   squared-norm/grid transcription failures restored and preserved rejected.
   Local fixedR,T first driver only; no source/Young/moment conclusion yet.
-- **Immediate next:** integrate the canonical Gaussian source convergence
-  (SC), then fixed-mask moment/Young and full lower/upper/PB/OC/WS assembly.
+- **Accepted source convergence TeX integration:** scientific8a2add9,
+  Opus5.5/HIGH20PASS405.681s,no required repairs. Seven proof blocks;
+  36five-way bindings/21full texts/13exact images/51archive members verified.
+  Clean150-page PDF;93prior bodies unchanged. GIVEN W retained literally;
+  arbitrary-rate source-driver convergence and ordinary response proved.
+  Fixed R,T only; no nonlinear/canonical moment conclusion from SC alone.
+- **Immediate next:** jointly integrate fixed-mask moment transfer and
+  Young flow (FM/FY), then full lower/upper/PB/OC/WS assembly.
   Keep the frozen PB/OC/WS result set and full original model scope. The
   import interfaces are mapped; avoid repeating that inventory as a new round.
   Continue consolidating complete proofs into TeX/PDF, with clean builds
@@ -143,7 +149,7 @@
  rerun for promotion, new package/companion/lease/registry/HPC action.
 - **Git:** current mathematical work is in the isolated private research
   clone, branchresearch/fixed-mask-young-20261031. Latest result source
-  is95d7515; latest accepted TeX integration source9dad256, with subsequent
+  is95d7515; latest accepted TeX integration source8a2add9, with subsequent
   adoption records separate.
   Fresh fetch/push failed with <HUB>NoRoute. Prior <HUB> parity
   receipts are historical, not evidence of current synchronization.
@@ -8862,3 +8868,37 @@ with full authorPDF included as provenance, not whole-source reading scope.
 Fresh Le <plan removed> identity/headroom, firstParty doctor and actualOpus5.5READY
 retained. Independent integration gate PENDING. Full PB/OC/WS and final
 whole-paper/cold-read/delivery open; fresh fetch stillNoRoute. Goal ACTIVE.
+
+
+### Accepted SC TeX integration checkpoint: scientific8a2add9
+
+Actual native Opus5.5/HIGH20PASS405.681seconds,PASS_WITH_NOTES,
+no required repairs; accepted/coverage true, transport terminal0. Canonical
+passing-report/correspondence/read-ledger checks PASS. All36five-way input
+identities and51raw archive file members read-back verified; all21required
+texts and13exact PNGs delivered. Seven optional notes adjudicated in
+reviews/2026-11-01-source-convergence-tex-integration/adjudication-v1.md.
+No final source/PDF edit on adoption. Clean150-page build;7new proof blocks,
+93prior bodies unchanged. No new Lean fact;80facts22seams remains current.
+
+The given-W retaining feature extension, physical heat and exact author
+MAX-temporal/SUM-spatial source law, both variance contractions, arbitrary
+relative-rate Lp-Ctheta convergence, per-width smooth-space/continuous-time
+fields and ordinary first-response identity now have accepted TeX proofs.
+The independent extension J may enter source fields; the limiting driver
+is W-measurable. This does not yet identify canonical nonlinear u.
+
+Next target frozen before translation in
+reviews/2026-11-01-moment-young-tex-integration/target-v1.md:
+combine FM and FY so the latter proves the former's masked-average L2
+premise. Preserve total distributional phase propagation, both constant
+columns, actual initial(1,0), source solution identity and Gaussian/Young
+uniform integrability. No point trace or nonlinear covariance shortcut.
+
+Durable lesson: pin definitions separately from source proof claims. The
+author's source law is correct with spatial2epsilon; the discrepant p8
+increment index is not imported. The retaining coupling and local increment
+estimate are proved explicitly. Definition-page review is not a full
+source-paper review; source/PDF/hash and reviewer scopes stay distinct.
+Full integration/whole-paper/cold-read, wiki provenance and remote delivery
+remain open. Chen matching remains comparison only; goal ACTIVE.
