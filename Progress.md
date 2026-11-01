@@ -10602,3 +10602,15 @@ contracts remain unchanged. Also checked actual Section36 setup
 (1-theta)^(-1)<r<2/a, nu<2<r: compatible exponent choices are already
 stated, exemplifying a semantic setup dependency not certified by the
 reference graph. No silent theta/r repair or scope restriction.
+
+
+Before independent review, spatial-ratio draftv2 refines the import guard:
+use only the compact-test physical energy E<=published E_full, then extend
+the ratio by Fatou. This avoids assuming the rough-H1 source pairing
+identification in the argument it is meant to supply. v1 preserved.
+The amplitude scaling uses the compact-test dilation bijection explicitly.
+Prepared a separate bounded frozen draft-review packet:8input files,
+4required texts/ranges,3primary PNGs,8named FINchecks. Not dispatched
+before the known quota reset; no source/PDF/current common-contract change.
+It is a pending new draft cycle, not a scientific pass, official main
+composition component or permission to delete the old upper.
