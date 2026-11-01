@@ -66,14 +66,20 @@
 - **Accepted finite positive Gram optimization:** scientific4e2219d,
   26checks/HIGH305.393s, all48five-way bindings verified. Active subsets,
   positive conic maximizer and ENTRYWISE Gram comparison. Its physical
-  occupation/time/mask/continuum application remains open.
-- **Immediate next:** PB1-PB5 physical signed-to-positive score comparison,
-  frozen6de6728, exact target in
-  reviews/2026-10-31-physical-score-comparison/target-v1.md. New normalization
-  diagnostics and statement/source FIT are complete:21PASS/HIGH884.243s,
-  no requiredrepairs. The complete new author proof40ec9a9 is at its OWN
-  LIVE FULL gate, handle83651; no PB proof is accepted. Own S_2
-  remains distinct from the REQUIRED original L_*/L^* constants.
+  occupation/time/mask/continuum application is now accepted at PB below.
+- **Accepted original intrinsic point limit:** scientific40ec9a9,
+  19checks/HIGH387.047s,no requiredrepairs;27five-way bindings/42native
+  members readbackverified BEFORE optionalclarity. PB0-PB5 prove,for ALL
+  originalmodels andfixedx,lim T^-kappa logE|u(T,x)|²=S_2^pos=2^m S_1^pos.
+  This is an OWN positive-control variational value,not authorL_*/L^*
+  oractualp1. All8minorfindingsadjudicated. D1Riesz/white oldmechanism
+  ceiling now supplies anactualmoment-value ceiling throughPB5.
+- **Immediate next:** freeze/falsify anALL-original-model positive-score
+  ceiling using the accepted full-H1 occupation estimate. Avoid importing
+  d1 groundeigenstates into higherdimensions; approximateRayleighprofiles
+  must be genuine measurable unit-H1 occupations. Then compare resulting
+  source-shaped maps with the REQUIRED original energy/domain/normalization
+  dictionary, which remainsOPEN. Original sharpgoal remainsACTIVE.
 - **New accepted uniformR E Cameron/regulator:** scientificf54e92b,
   21checks/HIGH348.303s,no requiredrepairs;21input bindings/native archive
   verified before6optional clarity notes. Actual all-model uniformR means,
@@ -8219,3 +8225,34 @@ Skorohod/sourcefix/TeX/PDF/wiki/bib/publication, NoRoute/pushpending.
   remainUNACCEPTEDuntilFULLgate/adjudication. No newLeancheck/factpromotion.
 - LatestresearchpushTERMINAL128NoRoute. Rootloader/handoffwillpointto
   currentisolatedcheckout+EXACTlivehandle;no forcedmerge orscopechange.
+
+## PB0-PB5 FULL original-point intrinsic limit accepted — 2026-10-31
+
+- Previousgoalturn PROGRESS:21HIGHfitadopted,completeauthorproof40ec9a9
+  frozenandFULLreviewlaunched. Existing83651nowTERMINAL0,notlive.
+- ActualfirstPartyOpus5.5/HIGH,19PASSchecks,387.047s,PASS_WITH_NOTES,
+  no requiredrepairs. Canonicalparse/pass/correspondence/fullcoveragePASS.
+  All27five-waybindings beforeoptionalclarity;42nativearchive members
+  readbackSHAverified. Rawreportunmodified;readerprojectionsnotraworiginals.
+- All8notesadjudicated:J_R=U'sT_Rpointer;Bochnerstrongmeasurabilityfrom
+  simple/L2limits;fixedxstationarityforBOTHsides;ULlowerSection4pinpoint;
+  entrywisenondecreasing;FFTcorrectLambda cancellation/Parseval;float64
+  roundoff-floorresidual;Mslackkept. No requiredmathematicalrepair/rerun.
+- NEWacceptedanalytictheorem:forSAMEoriginalcanonicalsolutionatEVERYfixedx,
+  ALLGamma/d1/2/3/amplitudes/white/subcritical,lim T^-kappa logE|u(T,x)|²
+  =S_2^pos=2^m S_1^pos;Gamma0direct0. Physicalsigned-positivecomparison
+  andmovingmasklimitproved;notonlyfinitelemmaorfit. Earlierfullupperretained.
+- D1Riesz/whiteS_c=V_cdictionarychecked;oldpositive-mechanismceilingnow
+  yieldsactualmoment-valueupper<=U_2(eta),includingstrictOWNenergy-mapgaps.
+  Thisnewconsumerdoesnotretroactivelyupgradetheoldproof'sscopeord2/3.
+- S_1isNOTactualp1/authorL;originalL_*/L^*/intendednormalization/conditional
+  sourceexacttargetstillOPEN. NoJensenimprovement/sourcefix/Skorohodresult.
+  No wholepaper/novelty/citation-chain/human/cold-read/circulationclearance;
+  canonicalTeX/PDF/wiki unchanged. Scopedinternaladoptiononly.
+- Lean78facts21seamsunchanged;oldfinitePGinternals reused andNEWphysical
+  guard/analyticapplications checked. PBBochner/spectral/continuum/moment
+  argumentsreviewedINFORMAL,notnewkernelcertificatesorcompaniongate.
+- Nextcandidate:extendpositive-scoreceilingtoALLoriginalGamma usingown
+  all-dimensionalstaticoccupationbridge(11),(16)-(18),rawSchurembedding,
+  approximateRayleighoccupations insteadofd1H2grounds. Exacttargetmustbe
+  frozenandsource/falsificationFITbeforeproof. Originalconstantsnotredefined.

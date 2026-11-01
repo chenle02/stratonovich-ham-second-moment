@@ -453,3 +453,18 @@ Analyticdualcoercivity/finitecompactness/Fermat/strictconvexity/globalPG
 attainment/Gramrealization/infmax remainINFORMALanalysis. No actualH_I/
 time/mask/signed-positive/lower/sourceconstant/PDE result fromthiskernel.
 Officialcompanion andpackage/lease/registry/HPC/publicgates unchanged.
+
+## PB-INTRINSIC-LIMIT: reviewed analytic model assembly, not a Lean theorem
+
+Scientific40ec9a9/FULL19HIGH387.047s accepts PB0-PB5 and the d1 ceiling
+consumer. U's actual completed mean and uniform C_mean, US signed-H1
+Rayleigh/time regulation, PG optimization, UR original-point upper and UL
+positive lower are named accepted analytic inputs. The new raw L2 tensor
+embedding, nonseparable membership/variance/mean identification, normalized
+physical Gram guards, finite trial choice, optimizer norm, positive
+smoothing, cutoff limit and original-point sandwich remain INFORMAL.
+No canonical SPDE or continuum limit is kernel-certified here. Old four
+PG finite deductions and scalar upper inputs are unchanged and reused only
+at their existing types; actual guard fit has independent analytic review.
+Counts remain78facts/21seams, officialL0PROPOSED/decision4 unchanged.
+Author L_*/L^*/actualp1 and intended normalization are not identified.

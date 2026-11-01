@@ -1,9 +1,13 @@
 # Physical signed-to-positive comparison and the intrinsic second-moment value
 
-AUTHOR PROOF, UNREVIEWED. The PB statement/source/application FIT passed
-21checks/HIGH at source6de6728; this new proof has NOT passed its own FULL
-independent gate. No PB conclusion is an accepted premise yet. Original
-L_*/L^*, intended source normalization and all completion requirements remain.
+ACCEPTED at the scoped FULL analytic/actual-application gate: scientific
+40ec9a9,actualOpus5.5/HIGH,19checksPASS,387.047seconds,no requiredrepairs.
+All27five-way input bindings and42rawnativearchive members verified BEFORE
+optional clarity/adoption. All8minor findings adjudicated in
+reviews/2026-10-31-physical-score-comparison/scientific-adjudication-v1.md.
+Frozen proof/report unchanged. This identifies the original point limit by
+an INTRINSIC positive-control value for all original models, not author
+L_*/L^* or actual p1. Original sharp/source goal remains ACTIVE.
 
 ## 1. Exact model, inputs and conclusions
 
@@ -19,7 +23,7 @@ R>=1. It is used ONCE after noise smoothing. No monotonicity in R is assumed.
 Direct OWN accepted inputs, not proved or re-reviewed here:
 
 - U=uniform-e-cameron-regulator.md, scientificf54e92b, Sections1-2,5-6:
-  actual spatial J_R:H_sp->K(E), its literal row equation(2), scalar
+  actual spatial J_R:H_sp->K(E) (called T_R in U), its literal row equation(2), scalar
   C_t:H_t->Lr(I), r>2,r<2/a, tensor bound(15), and completed mean
   mathcalT_R=J_R(C_t tensor Id), ||mathcalT_R||<=C_mean, equation(17),
   with C_mean independent of R. H_t and H_sp are the test-null completions.
@@ -30,8 +34,9 @@ Direct OWN accepted inputs, not proved or re-reviewed here:
 - PG=positive-gram-variational-comparison.md, scientific4e2219d, PG1-PG2:
   for finite labels in ANY real Hilbert space, ell_i>0,b_i>=0 and entrywise
   nonnegative Gram, the score has a maximizer0 or a positive conic sum of
-  labels; increasing a Gram ENTRYWISE increases the optimized score.
-  Singular/zero labels and empty active subsets are included. This imports
+  labels; increasing a Gram ENTRYWISE cannot decrease the optimized score.
+  Singular/zero labels and empty active subsets are included. Here score
+  monotonicity is nondecreasing, as PG2 states. This imports
   the reviewed analytic theorem, not a kernel proof of whole PG or of PB.
 - UR=rayleigh-signed-moment-upper.md, scientific939d697, Sections1-2,6-8,
   especially(16)-(18): for the SAME original canonical point solution,
@@ -40,7 +45,7 @@ Direct OWN accepted inputs, not proved or re-reviewed here:
   kappa=(4-alpha-a)/(3-alpha), and S_R is defined below. Its source-first,
   all-chain, displacement/velocity and stationarity identifications stay
   within that accepted original-point theorem; they are not rederived here.
-- UL=unmasked-variational-lower.md, scientific61ac2a3, Sections1-3,6-7:
+- UL=unmasked-variational-lower.md, scientific61ac2a3, Sections1-4,6-7:
   C_pos is ALL nonnegative nonzero real C_c^infinity(I x R^d), including
   nonseparable tests. For each Psi, h_Psi,s=int K(s,t)(Gamma*Psi_t)dt is
   globally bounded, and its full-gradient unmasked real H1 rate is
@@ -62,7 +67,7 @@ We prove, for nonzero Gamma,
  lim_(T->infinity) T^-kappa log E|u(T,x)|²
           =S_2^pos=2^m S_1^pos for each fixed x.       (PB5)
 
-These are new proposed intrinsic conclusions, not identification of the
+These are intrinsic conclusions, not identification of the
 source's L_* or L^*. Section8 records the necessary earlier ceiling.
 For Gamma=0, H_I={0},Rate=S_R=0,h_Psi=0,v_Psi=0,define S_c^pos=0;
 the canonical solution is1, so all three statements are direct identities.
@@ -93,7 +98,9 @@ For G=H_sp the accepted C_t tensor Id composed with J_G agrees with
 the Bochner integral int K(s,t)F(t)dt in Lr(I;G). Indeed its pointwise
 norm is bounded by int K(s,t)||F(t)||G dt, so the scalar Schur estimate
 above proves existence a.e. and a bounded map L2(I;G)->L2(I;G), with
-norm at most K0. On smooth finite tensors the identity is the actual
+norm at most K0. Simple-field approximation and this Schur bound give a
+strongly measurable L2-limit version of the integral. On smooth finite
+tensors the identity is the actual
 covariance definition of C_t. Approximate a general F by such tensors
 in L2(I;G), using simple-field density and scalar smooth density. The
 Bochner integral converges in L2 by Schur. The composed map converges
@@ -304,7 +311,10 @@ exists and equals S_2^pos=2^m S_1^pos, the latter equality being UL's
 already accepted auxiliary-label homogeneity. Both inequalities use
 fixed controls before their own moment limits. Source limits, mixed and
 self-pairings, initial displacement1/velocity0 and fixed-x stationarity
-are carried by the cited accepted original-point inputs, not replaced by
+are carried by the cited accepted original-point inputs. In particular,
+UR Section7 cites GC Section8's identity E|u(T,x)|²=E|u(T,0)|², which
+transfers the lower liminf as well as the upper limsup to every fixed x.
+These identifications are not replaced by
 independent blocks or a surrogate solution. This proves Theorem PB5.
 
 [held back: collaborators' unpublished work]
@@ -320,11 +330,11 @@ admissible class, cost and H1 form, not by identifying actual p1 moments.
 
 Import raw-positive-value-ceiling.md (scientificad6c188), (15),(17),(19).
 It defines OWN raw finite-energy occupation E_eta and proves
-V_2^pos<=U_2(eta). If PB5 is accepted, the original moment LIMIT is now
+V_2^pos<=U_2(eta). By the accepted PB5, the original moment LIMIT is now
 equal to this V_2^pos and hence is <=U_2(eta). In particular its strict
 comparisons yield a moment value strictly below2^m F_a(E_(1/2)) and,
 at alpha=1/10,a=9/10, strictly below2^m F_a(E_1), in those OWN domains.
-This is a NEW consequence conditional on this note's unreviewed PB5,
+This is a NEW consequence of this note's PB5,
 not an earlier moment ceiling attributed to the old lower-mechanism note.
 
 No source lower-constant comparison F_a(E_star) follows: its damped

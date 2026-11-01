@@ -698,3 +698,13 @@ statementisbeingclaimed. Trivialscalarcoercivityalonewouldnotcertifythe
 modelcomparison;no low-valuecompilejusttoincrementcount.78acceptedfacts/
 21seams/L0PROPOSED unchanged;existingmirroralreadyagrees. No companion,
 package/lease/registry/HPC action. Scientificauthoritystays../Progress.md.
+
+## PB analytic theorem accepted, no new kernel claim — 2026-10-31
+
+Scientific40ec9a9FULL19checks/HIGH387.047s,no requiredrepairs. PB0-PB5 and
+theiractualmodelapplications are reviewedINFORMAL mathematics:originalpoint
+intrinsiclimitALLmodels,notauthorconstant/p1identity. ExistingPGfinitekernel
+deductions are reused unchanged; no newly compiled theorem, new formal fact,
+seam or officialpackagegate.78facts/21seams/L0PROPOSED unchanged. New raw
+membership/time/mean,Rayleigh/smoothing/optimizationlimits andmomentassembly
+remain analytic boundaries. Fullsource/novelty/wholepaper/coldreadopen.

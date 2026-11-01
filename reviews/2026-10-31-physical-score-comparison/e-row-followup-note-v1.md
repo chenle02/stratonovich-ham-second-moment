@@ -29,3 +29,11 @@ simulation, Gaussian process construction, global optimization or statistical
 confidence follows. The analytic row and all-dimensional application in
 the new proof carry PB1. Full per-grid outputs and library versions are
 retained; source SHA is bound. Exit0.
+
+FULL review clarification: the Lambda factors cancel exactly in the correct
+discrete row. Ortho Parseval therefore reduces it to a periodic trapezoid
+sum of V*f², compared with the separately implemented adaptive quadrature.
+The wrong-metric contrast is the check that exercises the metric choice.
+The2048-node residual is at the float64 roundoff floor, not evidence of
+that many digits of integration accuracy. Neither observation changes the
+raw outputs or supplies a continuum operator certificate.
