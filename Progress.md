@@ -8345,3 +8345,27 @@ Le's exact instruction in this thread:
   MathematicscoreexactvariationalC2 andall-modelboundsareacceptedinternally.
   Integration/build/wholepaper/finalcoldread/wiki/sync remainunfinished.
   No newformalproof/count;78facts21seams/L0/companiondecision4unchanged.
+
+## WS explicit white evaluation frozen and screened — 2026-10-31
+
+- WS1-WS3targetfrozen2026-11-01T01:49:32UTC beforediagnostics/proof,
+  SHA b5da9a7b83c38fb30fc1f08bcab94c4321d87977572e499c00f654d592b520c9.
+  d1physicalGamma=c delta0,alpha1,0<a<1. Oneexample,notall-modelscopereduction.
+- ProposedCDFsquareidentity forEVERYunitrealH1 f shouldyield3(intf4)²
+  <=int(f')². Sechprofile shouldproveR_sp=c/sqrt3,E_sp=c²/6 andtherefore
+  explicitC2bounds(2/3)sqrt(c/M_a)<=(C2)<=(2/3)sqrt(cK0). ALLWSclaims
+  stillUNREVIEWED;ownsourceFIT/FULLgatesneeded. No knownwhite/sourceconstant
+  insertedasinput; derivefromactualnormalization/CDFandintegrals.
+- Newactualprofilequadratures4profiles/twoprecisions40/70,12squarerows
+  each,pointwiseCDFderivativeandminimizedsquare. Maxexpansionresiduals
+  1.83671e-40/2.03753e-71,Gaussianwidth2withz-2/z2. Allrows/precision
+  maxima/ties/roundoffslacks retained;zerosnotexactness. Wrongcrosssign/
+  one-quartercontrastnonzeroatz!=0;z0blindspotdisclosed. No enclosure/H1proof.
+- Proposedwhite-boundevaluationsa1/4,1/2,3/4,c1/4retained. Atc1,a1/2,
+  endpointsapprox1.0795179077/1.1211952203,ratio1.038607338. NOTexactC2
+  valuesorcertifieddecimalenclosures;dependonWS1proof/applicationverification.
+  TheOCcommon-spatialenergybracket itself isaccepted. No guessedChenvalue.
+- HighestvaluefuturefiniteLeanpiecesaretheCDFquadratic-to3A²<=b and
+  whiteenergyuppercA-b/2<=c²/6. Typesmustbefencedbeforeproof andexisting
+  Mathlib/registrysearchedfirst. No code/compiler/fact/packageclaimedhere.
+  Current78facts21seams/L0unchanged. AllownedAI/localcomputejobs nowterminal.
