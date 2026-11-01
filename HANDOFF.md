@@ -5,11 +5,12 @@ Chen matching is not a completion requirement.
 
 ## ⏭ Next session: where to stand and what to do
 
-FIRST audit the accepted proof dependencies for TeX integration in ACTIVE
+FIRST integrate the covariance/variance/compact-driver proofs into TeX in ACTIVE
 ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave,
-branch research/fixed-mask-young-20261031, clean local HEAD414758c.
+branch research/fixed-mask-young-20261031, clean local HEAD2f93f57.
 Read its PROJECT-GOAL.md, AGENTS.md, Progress.md and
-notes/derived-constant-integration-plan.md. Root mathematical files and
+notes/derived-constant-integration-plan.md and derived-constant-proof-imports.md
+in its notes directory. Root mathematical files and
 inherited isolated HANDOFF are historical. Latest user instruction:
 derive the actual constants; matching Chen is not required.
 
@@ -17,6 +18,7 @@ PB/OC/WS scoped proof reviews have passed. Integrate the complete accepted
 argument, rather than opening optional mathematical refinements. The
 inventory is a starting map, not certified proof-dependency closure.
 No owned reviewer or computation remains live; do not poll terminal jobs.
+
 ## Pre-flight checks
 
 1. Preserve original models, dimensions, covariance/amplitude ranges and
@@ -33,26 +35,34 @@ No owned reviewer or computation remains live; do not poll terminal jobs.
 5. Two conditional finite Lean facts accepted after full actual-application
    review. Current80facts22seams; official L0PROPOSED/decision4 unchanged.
    H1/CDF/Gamma/spectral/PDE arguments remain analytic, not Lean-formalized.
-6. Existing TeX/PDF remain unchanged. Integrate complete proof dependencies,
-   then enforce zero errors/undefined references/overfull boxes and PDF
-   fidelity. Scoped acceptance does not replace whole-paper/cold-read gates.
+6. Active manuscript G:sharp/abstract now follow Le's revised target.
+   Rebuilt110-page PDF:0errors/undefined references/citations/overfull boxes;
+   all60existing proof bodies byte-identical; PDF108-109 inspected.
+   Mathematical integration and whole-paper/cold-read gates remain open.
+   Import interfaces:37scoped nodes/35files, not certified closure. SA alias
+   radius-stochastic-driver-anchor.md was missing from initial inventory.
+   Keep old independent T:full-upper finiteness before UL/B/new upper.
+   Fifty-six frozen note/Git bindings from six FULL receipts matched.
 7. <HUB> fresh push still fails NoRoute; no actual remote parity.
    Recovery requires serialized push, canonical pull and isolated research
    fast-forward with actual HEAD checks. Never reset or drop foreign work.
 8. Novelty/full-literature/index/citation status remains incomplete. Use
    canonical repo-queue for wiki updates; no correspondence authorized.
+
 ## Concrete deliverables for the next session
 
-- Audit accepted proof dependency closure, then consolidate PB/OC/WS and
+- Use the scoped import guide, verify selected complete proofs, consolidate PB/OC/WS and
   their driver, lower-event and Gaussian-upper inputs into readable TeX.
 - Build and inspect PDF, freeze whole-argument review and final cold read;
   adjudicate findings before claiming the completion contract satisfied.
 - Recover private pushes/wiki queue/<HUB> parity when available.
+
 ## Success criteria for the immediate next step
 
 A complete, readable, source-faithful integrated argument for the actual
 constant and derived bounds, with honest analytic/formal boundaries.
 Matching Chen is not required. New optional refinements are not needed.
+
 ## Anti-success criteria
 
 [held back: collaborators' unpublished work]
@@ -1357,14 +1367,26 @@ relative-width proof accepted. Two conditional finite Lean facts promoted:
 still L0PROPOSED. Frozen PB/OC/WS integration plan and two inventory versions
 retained. All reviewers terminal. Push attempted, NoRoute persists.
 
+2026-11-01 integration interface checkpoint2f93f57:37scoped nodes across
+35files, explicit proof order and hashes, SA alias found, independent old
+upper finiteness retained.56frozen note/Git inputs from six FULL receipts
+matched;50live adopted bytes match,6later edits require their adjudications.
+TE/GI scalar-only imports and S full-F Fubini use separated from historical
+d1 consumers. Old GL fixed-parameter finiteness branch retained pending
+possible direct Young moment compression; no new proof certified.
+Main G:sharp/abstract now honor actual derived constants, no Chen matching.
+Clean110-page rebuild,0errors/undefined/overfull;60proof bodies unchanged;
+PDF108-109 visually inspected. Full mathematical integration remains next.
+
 ## Repo & git state at handoff
 
-Before this HANDOFF-only successor root master HEAD22554d0. Active
-research HEAD414758c, clean after checkpoint commit. Private origin remains
+Before this HANDOFF-only successor root master HEAD4f5a294. Active
+research HEAD2f93f57, clean after checkpoint commit. Private origin remains
 <HUB> bare; latest push failed SSH NoRoute, no synchronization claimed.
 Last-fetched root611c005/research6937719 are historical observations only.
 Do not merge research into root master implicitly. All new scientific work
 stays in the isolated active clone; root HANDOFF is the operational loader.
+
 ## Operating notes
 
 Goal ACTIVE under the LATEST user revision. Never use the stale goal-service
