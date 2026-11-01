@@ -1,43 +1,48 @@
-Last updated: 2026-11-01 17:59 UTC (Codex)
+Last updated: 2026-11-01 18:40 UTC (Codex)
 
 LATEST USER DIRECTION: derive the actual constants, whatever computation yields.
 Chen matching is not a completion requirement.
 
 ## ⏭ Next session: where to stand and what to do
 
-FIRST poll the existing fresh whole-argument review, native session44594.
-It was confirmed LIVE at the current checkpoint; no terminal receipt yet.
-An observation timeout is not termination; do not restart on that basis.
+FIRST poll the supported whole-argument TIMEOUT CONTINUATION, process
+session13739, confirmed LIVE. Original44594 is TERMINAL TIMEOUT, not live.
+No terminal receipt is present for13739 at capture. An observation timeout
+is not termination; do not restart on that basis.
 
 Work in ACTIVE:
 ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave,
-branch research/fixed-mask-young-20261031, workflow HEADc711a9c.
-The immutable scientific candidate is4a65c79d9d4b5c6a7e0cb712a88f1a973cc9c3fd.
-Read its current PROJECT-GOAL.md and Progress.md. Le requests the actual
-derived constant; matching Chen's prediction is not a completion condition.
+branch research/fixed-mask-young-20261031, workflow HEADc739542.
+Frozen scientific candidate4a65c79d9d4b5c6a7e0cb712a88f1a973cc9c3fd.
+Le's actual-derived-constant revision governs; matching Chen is not required.
+Mathematical workflow authority: current ACTIVE Progress.md/PROJECT-GOAL.md.
 
-Review files: reviews/2026-11-01-whole-argument/ in ACTIVE. Native output:
-../stratonovich-whole-argument-review-v1/native relative to ACTIVE.
-At actual terminal state validate the canonical report/receipt, actual model
-and route, full read ledger, all63 named obligations and all401 source
-bindings, then adjudicate every finding before adoption or source changes.
-The supplementary obligation checker and retainer are in that external
-state directory. Neither has certified this still-running review. Interim
-file-access counts are not complete reading or mathematical acceptance.
+Review files in ACTIVE: reviews/2026-11-01-whole-argument/. External state:
+../stratonovich-whole-argument-review-v1 relative to ACTIVE. Current output
+is its continuation/ directory; original native/ remains untouched.
+Original provider session a31a8981-7180-4654-8ec1-efb81eb57128.
+The original reached3601.406seconds, no report, acceptedfalse, coveragefalse
+with142 undelivered manuscript-image bindings. All413 original native files
+archived and every SHA256 read back;401 five-way input bindings match.
+The original failure is NOT mathematical acceptance or a scientific verdict.
 
-The manuscript-only cold packet is prepared externally at
-../stratonovich-cold-read-preparation-v2 relative to ACTIVE; v1's incomplete
-PDF-manifest lookup failure is preserved. No cold reviewer dispatched.
-Check actual selected route/context at assignment and retain the fresh
-referee protocol without development history or previous reports.
+At actual terminal state validate canonical report/pass/receipt, model and
+auth, full continuation read-ledger lineage, all63 named obligations and
+401 source bindings before adjudicating findings or changing inputs.
+External helpers retain-continuation.py and audit_continuation_obligations.py
+are prepared, not executed or substitutes for gates. No chained continuation
+is supported; preserve actual outcomes before choosing any successor.
 
-<HUB> is now reachable. Both clean corresponding master/research
-checkouts were synchronized, and the remote current-PDF SHA256 matched.
-Do not restore the superseded NoRoute status as current. The exact internal
-wiki-propagation ticket is tk-20261101-124652-codex-stratonovich-project-status;
-last verified in requests. Queueing is not completion. Check its exact
-receipt/page/commit; do not restart the writer service.
-The258-page active PDF was shown on Awesome tag8; do not reopen duplicates.
+All review source/TeX/PDF/finite inputs remain frozen. Independent cold read
+is NOT DISPATCHED; manuscript-only preparation-v2 is retained at
+../stratonovich-cold-read-preparation-v2 relative to ACTIVE; incomplete v1
+and its lookup failure are preserved. Keep fresh-reader context independent.
+
+Clean <HUB> master/research counterparts are synchronized, including
+researchc739542 and the timeout archive; current-PDF hash was verified.
+Exact internal wiki tickettk-20261101-124652-codex-stratonovich-project-status
+was last in requests; check the exact receipt/page/commit, not queueing alone.
+No service restart. Current258-page PDF was displayed on Awesome tag8.
 
 ## Pre-flight checks
 
@@ -2031,18 +2036,39 @@ v1 incomplete preparation and its lookup failure. Review44594 remains
 live and all frozen scientific inputs remain unchanged. No new proof,
 Lean check, package, companion, HPC, public release or goal clearance.
 
+
+### 2026-11-01 — original timeout retained, continuation13739 live
+
+Scientific inputs unchanged. Research workflowc739542 records actual
+original44594 terminal TIMEOUT3601.406seconds, no report and142 uncovered
+image bindings. Preserved413 native artifacts in timeout-native-v1.tar.gz
+(225381330bytes), read back every member hash, verified401five-waybindings.
+ActualOpus5.5/HIGH route verified but no scientific verdict or acceptance.
+Doctor reverified same first-party <account A> identity; account ok,
+notblocked. Same-contract timeout-continuation dry-run PASS, missing0,
+waivers0; launched existing provider session underprocess13739, confirmed
+live. Candidate4a65c79,63obligations,401sources, model/effort/account/auth
+and HIGH threshold unchanged. No model/source/coverage waiver or fresh
+scientific retry. Helpers for terminal continuation validation prepared
+externally, not executed. All source/PDF bytes remain frozen.
+
+Pushedc739542 and synchronized both clean <HUB> counterparts. Root
+masterb4e29f3, researchc739542, corresponding origin equal and0/0. This
+HANDOFF-only update refreshes the now-terminal original handle to13739.
+No new proof/Lean/companion/HPC/publication or goal clearance.
+
 ## Repo & git state at handoff
 
 ROOT master before this HANDOFF-only commit:
-6783cb002d7cfbdbc42b4b014125592e48c5496e, clean, origin/<HUB> equal.
+b4e29f32a69967fbc0150d3deee463fbaa34064f, clean, origin/<HUB> equal.
 ACTIVE research workflow:
-c711a9c4e3dff2b527f4566d5a91c67ba700eba4, clean, origin/<HUB> equal.
-Frozen scientific review candidate:
+c7395422e9ea479d246e32eea9504d325e13f764, clean, origin/<HUB> equal.
+Frozen scientific candidate:
 4a65c79d9d4b5c6a7e0cb712a88f1a973cc9c3fd.
-Research branch stays separate from master; canonical root science is old.
-<HUB> recovery and remote-PDF hash were actually verified. This new
-HANDOFF-only commit is pushed and canonical <HUB> synchronized next;
-verify actual terminal results rather than infer success from this text.
+Both corresponding <HUB>s actually synchronized, including full
+timeout archive. Research stays separate from canonical master science.
+This new HANDOFF-only commit is pushed and canonical <HUB> synced
+next; verify actual results rather than infer success from this text.
 
 ## Operating notes
 
