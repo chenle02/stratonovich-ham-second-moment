@@ -8902,3 +8902,24 @@ estimate are proved explicitly. Definition-page review is not a full
 source-paper review; source/PDF/hash and reviewer scopes stay distinct.
 Full integration/whole-paper/cold-read, wiki provenance and remote delivery
 remain open. Chen matching remains comparison only; goal ACTIVE.
+
+
+### Joint FM/FY TeX candidate frozen for integration review
+
+Added notes/integrated_masked_moments.tex (3proof blocks) and
+notes/integrated_constant_phase_young.tex (8proof blocks). All100prior
+proof bodies unchanged by author execution check. Complete accepted
+FM/FY proofs translated with actual source/canonical/full-phase/Young
+interfaces and explicit closing of the conditional masked-average L2
+premise. No new asymptotic constant or growing-radius estimate asserted.
+
+Clean160-page build:0errors/undefined references/citations/overfull boxes.
+All11new/context pages149-159 inspected. Held author p7/10/12 and
+Friz--Hairer printed13/61/62 checked; bibliography key verified without
+editing All.bib/extra.bib. Literal-safe patches and pre-format C0 scan PASS.
+Frozen packet has30full text sources/17typed exact PNGs/48input files;
+media preflight PASS. Fresh selected Le Max93%weekly/shortunknown,
+firstParty claude.ai doctor and actualOpus5.5READY verified. Full native
+Opus5.5/HIGH source/statement/application/PDF integration gate PENDING.
+No new Lean/compiler/package/HPC/contact. Goal ACTIVE, remaining
+lower/upper/PB/OC/WS, whole-paper/cold-read and delivery gates open.
