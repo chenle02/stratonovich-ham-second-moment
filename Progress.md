@@ -10737,3 +10737,38 @@ visible report tokens despite transport0. No scientific judgment inferred
 from private reasoning. Same-session bounded continuation45697 is live,
 with unchanged candidate/carrier and all tools denied. This is recovery of
 an incomplete response, not a new independent/cold vote or confidence retry.
+
+
+## 2026-11-01 — actual DeepSeek report returned; MEDIUM remains unaccepted
+
+DeepSeek actual model route confirmed by full session export:
+deepseek/deepseek-v4-pro. First response finish=length with no visible
+report. Same-session continuation returned PASS_WITH_NOTES/MEDIUM,
+FIN01-FIN08 checked, no reported critical defect in the finite-ratio
+deduction. All source extraction/normalization/calibration/project-scope
+qualifications and five required production checks retained verbatim.
+The HIGH minimum is unchanged; acceptedfalse. No confidence-only retry,
+no draft adoption or main theorem/source-image clearance.
+
+Adjudication maps every finding and production request. Primary-image
+application check is OPEN because Kimi stopped on monthly quota before
+reading. White c²/6 is existing P:white-spatial-energy prior calibration,
+not newly certified by this excerpt. Full-upper consumer deletion has not
+been adopted; source/UI/score prerequisites remain. Main normalization
+statements lie outside this limited review and gain no acceptance here.
+
+Native continuation terminal0; no reviewer now live. Full session shows
+zero tool calls and actual requested family. Exact source texts unchanged.
+The clean-carrier collector refused task-local opencode.json changing by
+an inserted $schema line; original/current JSON differ only by that inert
+annotation, model/permission semantics identical. Preserve the refusal
+and absence of initial clean-status certification; do not claim an
+all-input green gate. Source bindings and actual report judgment remain
+separate. Complete28-file native lineage archived/read back, report and
+false acceptance disposition committed as separate evidence.
+
+Le's requested reviewer switch is implemented in AGENTS/authority. DeepSeek
+is usable and has now delivered an actual bounded report; Kimi remains
+unavailable on monthly quota. Original all-model goal and common887whole
+proof/source/visual/final cold obligations remain incomplete. No new Lean
+run/fact, package, main mathematical source or PDF change.
