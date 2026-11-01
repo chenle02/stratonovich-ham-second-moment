@@ -1,14 +1,14 @@
-Last updated: 2026-11-01 14:31 UTC (Codex)
+Last updated: 2026-11-01 15:04 UTC (Codex)
 
 LATEST USER DIRECTION: derive the actual constants, whatever computation yields.
 Chen matching is not a completion requirement.
 
 ## ⏭ Next session: where to stand and what to do
 
-FIRST integrate the full occupation bounds OC and white spatial evaluation
-WS into TeX in ACTIVE
+FIRST reconcile the consolidated manuscript and its final presentation
+commitments in ACTIVE
 ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave,
-branch research/fixed-mask-young-20261031, clean local HEAD 7bbc946.
+branch research/fixed-mask-young-20261031, clean local HEAD 26a2820.
 Read its PROJECT-GOAL.md, AGENTS.md, Progress.md and
 notes/derived-constant-integration-plan.md and derived-constant-proof-imports.md
 in its notes directory. Root mathematical files and
@@ -115,10 +115,28 @@ review-complete accepted/coverageTRUE;63fivewayinputs/50fulltexts/13exactPNGs/
 Original ALL-model intrinsic pointlimitC2=Spos2=2^mSpos1 nowintegrated,
 Spos1auxiliarynotactualp1/authorL. No recovery/retry/waiver/sourcePDFedit.
 All9minorfindingsadjudicated forfinalpresentation, notrequiredrepairs.
-Read NEXT target in
+The completed OC/WS target remains in
 reviews/2026-11-01-occupation-white-tex-integration/target-v1.md in ACTIVE.
 OC/WS/fullpresentation/calibrations/wholeargument/finalcoldread/lit/wiki/
 privateparity remainOPEN. This scopedgate doesnotcomplete thefullgoal.
+OC/WS is now ACCEPTED: scientific d041546, packet-only repair 691f413,
+adoption 26a2820. Actual Opus 5.5/HIGH, 31 named PASS checks in 388.996
+seconds, no required repairs. Native 57283 TERMINAL0, accepted/coverage
+true; 64 five-way bindings, 53 texts/11 exact PNGs/79 native archive members
+verified. Nine proofs, clean 254 pages, 204 earlier bodies unchanged.
+The planned mathematical result set is integrated at scoped review gates.
+V1 dry-run refused a fused filename before any provider call; V2 added one
+separator, passed without waivers, then made one scientific call. All old
+contracts/packets/refusals remain; 145 preflight archive members verified.
+Five optional findings join the final presentation inventory. No source/PDF
+edit on adoption, recovery, scientific retry, new compiler or finite fact.
+Read the immediate target in
+reviews/2026-11-01-final-consolidation/target-v2.md and debt-inventory-v2.json
+in that same directory in ACTIVE. The inventory has 140 numbered excerpts
+from 19 adjudications; it is not a coverage certificate or 140 new defects.
+Manually reconcile original notes, including unnumbered findings. Then run
+fresh whole-argument and final independent cold reviews, calibrations,
+source checks and private wiki/Git delivery. Goal completion remains open.
 No owned reviewer or computation remains live.
 
 ## Pre-flight checks
@@ -219,35 +237,36 @@ No owned reviewer or computation remains live.
 
 ## Concrete deliverables for the next session
 
-- Follow FULL OC/WS pretranslation target in ACTIVE:
-  reviews/2026-11-01-occupation-white-tex-integration/target-v1.md.
-- OC full-H1 physical-to-raw square map, complete occupation class and
-  covariance identities, noncircular finite occupation energy/dilation,
-  first-index BOREL Rayleigh near-occupations, TWO global scalar maxima
-  with raw HALFcost, actual all-model ceiling and common spatial-energy
-  bracket. Preserve actual temporal a inside F0; no q>=3 restriction.
-- WS fullrealunitH1 CDF-square argument/integrability/endpoints,
-  sech attainment and exact white spatial energy, actual covariance MASS
-  versus noise amplitude, parent coefficient substitution and Gamma
-  relative-width proof. Bounds are not an exact numerical C2 evaluation.
-- Gamma0 direct spreading/free/zero energies and scores. All original
-  models remain covered; white is an example, not reduced scope.
-- Existing RawValueCeiling/WhiteCDF finite sources/types/guards reused;
-  80facts22seams/L0PROPOSED unchanged, no companion withoutdecision4.
-- CleanTeX/PDF, final visual/source correspondence, fullfresh actual
-  Opus5.5HIGH proof/application review and everyfinding adjudicated.
-- Then apply accumulated presentation debts, explicit calibrations and
-  complete whole-argument/finalcoldread/lit/wiki/privateparity gates.
-  No sourcefix/contact/HPC/companion/Skorohod/sibling/publication action.
+- Follow `reviews/2026-11-01-final-consolidation/target-v2.md` in ACTIVE.
+  Read `debt-inventory-v2.json` and the original adjudications; preserve
+  their histories and record each actual final-pass disposition.
+- Reconcile abstract/title/goals/summary/README with the integrated exact
+  intrinsic constant and derived bounds. Distinguish scoped acceptance
+  from pending whole-argument, cold-read and delivery gates.
+- Resolve promised local definitions, exact fixed parameters, quantifiers,
+  source versions, closed supports, spectral/Young pointers and notation.
+  Keep uniform E budgets separate from fixed-radius F identification.
+  Narrow the optional penalty-one wording to "not universally favorable".
+- Preserve the independent old full upper as the finiteness input; audit
+  the complete source/Young/lower/upper/positive-score/OC/WS proof chain.
+  No proof imports hidden by filenames or restored obsolete branches.
+- Explicitly record calibrations and actual primary-source uses/editions.
+  Do not identify auxiliary Spos1 with actual p1 or force Chen's prediction.
+- Rebuild source/PDF cleanly, inspect changed pages and bind an immutable
+  packet. Obtain fresh whole-argument Opus 5.5/HIGH review and the required
+  independent DeepSeek V4-Pro cold read, with all findings adjudicated.
+- Complete canonical wiki/provenance/handoff and actual private Git/<HUB>
+  convergence when available. No source fix, contact, HPC, companion,
+  Skorohod, sibling scientific edit or publication action.
 
 ## Success criteria for the immediate next step
 
-Complete internal OC/WS proofs of the actual all-model occupation ceiling,
-common spatial-energy bracket, full-H1 white energy evaluation and resulting
-moment bounds, retaining exact covariance/kinetic/half-action conventions.
-Full original scope and zero cases, cleanPDF and required independent HIGH
-source/application gate. No sharpness claim for ceiling endpoints and no
-numeric enclosure from diagnostics. Whole-argument and final gates remain.
+A coherent consolidated manuscript with all promised presentation findings
+reconciled against their original evidence, exact model/constant/normalization
+and limit scopes intact, and a clean source/PDF build. Prepare and obtain
+the fresh whole-argument gate; do not substitute prior local reviews for it.
+Goal completion additionally requires the independent cold read, calibration/
+source checks, canonical wiki/provenance and actual delivery convergence.
 
 ## Anti-success criteria
 
@@ -1899,17 +1918,38 @@ uniformEbudget; trackB-growth/actualfinalcell andlimitorder precisely.
   presentation/calibrations/wholeargument/finalcoldread/lit/wiki/private
   parity. Source/adoptionpushesNoRoute; this scopedgate isnotgoalcompletion.
 
+
+- 2026-11-01 OC/WS integration: scientific d041546, packet 691f413,
+  adoption 26a2820. Actual Opus 5.5/HIGH, 31 named PASS checks, 388.996
+  seconds, no required repairs. Native 57283 TERMINAL0 accepted/coverage
+  true, 64 five-way bindings, 53 full texts/11 typed PNGs/79 native members
+  verified. Nine proofs, clean 254 pages, 204 prior bodies unchanged.
+  Complete raw occupation ceiling/common spatial-energy bracket and full
+  white CDF/sech energy/moment bounds/Gamma width are integrated, retaining
+  all original models and zero cases. Bounds are not exact C2 endpoints.
+  Five optional findings adjudicated; no source/PDF edit on adoption.
+  Existing three finite deductions reused; 80 facts/22 seams and proposed
+  official companion unchanged, no compiler/new fact. V1 dry-run filename
+  refusal preserved; V2 separator-only repair passed without waivers before
+  one scientific call. All 145 preflight archive members also verified.
+  Final consolidation target V2 and inventory prepared: 19 adjudications,
+  140 numbered excerpts, 135 old excerpts preserved. This is bookkeeping,
+  not completed reconciliation or whole-paper acceptance. Research pushes
+  failed NoRoute. Full goal remains active and completion unproven.
+
 ## Repo & git state at handoff
 
-Before this HANDOFF-only successor rootmasterHEAD8889c0d.
-Active research cleanHEAD7bbc9465b6bfa3ad0525cd27cb1e2e2bf9206800,
-scientificsourcefreezea880288423d7824b0ca902b0e3a83b57f9086558.
-Privateorigin remains <HUB> bare; freshrootfetch andsource/adoption
-pushes failedSSHNoRoute. No current synchronization/HEADparity claimed.
-Last-fetchedroot611c005/research6937719 remain HISTORICAL. No implicit
-research/mastermerge. Science stays isolatedACTIVE; rootHANDOFF isloader,
-notmathauthority. Le-AI-Lablessoncommitded76cc1 is pushed/GitHub0/0;
-that is notArticleor<HUB> synchronization.
+Before this HANDOFF-only successor, root master HEAD is 0525aa5.
+Active research is clean at 26a282087dc419609ddbe1244325cb19a9dc4359,
+with scientific source d041546d60693abdbe8ccedea12da2fb6ebb7d0d and
+packet-only contract repair 691f413ea74657a446df256def3301eb28321b6f.
+Private origin remains the <HUB> bare repository. Fresh root fetch
+and source/packet/adoption pushes failed with SSH NoRoute; no current
+synchronization or HEAD parity is claimed. Last-fetched root 611c005 and
+research 6937719 are historical. No implicit research/master merge.
+Science stays in ACTIVE; root HANDOFF is the loader, not math authority.
+The separate Le-AI-Lab lesson commit ded76cc1 was pushed to GitHub; that
+is not Article or <HUB> synchronization.
 
 ## Operating notes
 
