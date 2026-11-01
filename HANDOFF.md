@@ -1,15 +1,14 @@
-Last updated: 2026-11-01 12:54 UTC (Codex)
+Last updated: 2026-11-01 14:04 UTC (Codex)
 
 LATEST USER DIRECTION: derive the actual constants, whatever computation yields.
 Chen matching is not a completion requirement.
 
 ## ⏭ Next session: where to stand and what to do
 
-FIRST jointly integrate original point transfer (GC) and signed-score
-moment upper (UR)
-into TeX in ACTIVE
+FIRST integrate the full finite Gram optimization PG1-PG2 and physical
+positive-score comparison PB0-PB5 into TeX in ACTIVE
 ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave,
-branch research/fixed-mask-young-20261031, clean local HEAD f3475cd.
+branch research/fixed-mask-young-20261031, clean local HEAD c3f4485.
 Read its PROJECT-GOAL.md, AGENTS.md, Progress.md and
 notes/derived-constant-integration-plan.md and derived-constant-proof-imports.md
 in its notes directory. Root mathematical files and
@@ -24,7 +23,7 @@ adoptione7a1972. Do not redo its inventory or restart terminal integration
 review68458(v3PASS0),71223(v2coverage-refusal3), or v1preflight5.
 FR/AV TeX integration is now ACCEPTED: scientificf5c1521,adoption7dbcd4a,
 27PASS/HIGH382.209seconds,no mandatory repairs. Review13477 isTERMINAL0,
-not a task to restart. Read the frozen next target in
+not a task to restart. The completed GC/UR target remains in
 reviews/2026-11-01-point-upper-tex-integration/target-v1.md in ACTIVE.
 FG/CC is now ACCEPTED: scientific2571a15,adoption22e3426,24HIGHchecks
 323.168seconds,no repairs. Native74139 TERMINAL0; old16481 remains
@@ -97,6 +96,18 @@ TERMINAL0 accepted/coverageTRUE;58fivewayinputs/37fulltexts/21exactPNGs/
 Uniform E-only spectral/averaging/mean-products/polynomial-controlballs/
 ANYresidual integrated-rate envelope withdeltaFIRST, notpointupperyet.
 No quantitative F norm in uniform E bounds. No recovery/retry/waiver.
+GC/UR now ACCEPTED: scientific3ac97c4,adoptionc3f4485,
+29namedchecks/HIGH593.249seconds,no requiredrepairs. Native47752TERMINAL3
+originalinvalidJSONrefusal preserved; canonicalONEbrace reversible recovery
+atbyte28011/zero providercalls acceptedafterALLgates.72fivewaybindings/
+59fulltexts/13exactPNGs/90raworiginal+recoverymembers verified.9newproofs,
+238pagesclean,184priorunchanged. Actual BT-to-GC finiteness substitution,
+source-first/full-chain ORIGINALpointtransfer and SAMEforallB signedupper
+nowintegrated; notyet positive-score/exactlimit fromthesesectionsalone.
+Read the NEXT target in
+reviews/2026-11-01-positive-score-tex-integration/target-v1.md in ACTIVE.
+Oldmodel-specific GLF/MB/EA/D1 branch notneededforCURRENTintegratedpath;
+source/reviewhistory retained, proof-importinterfaceaudit appended.
 No owned reviewer or computation remains live.
 
 ## Pre-flight checks
@@ -197,40 +208,32 @@ No owned reviewer or computation remains live.
 
 ## Concrete deliverables for the next session
 
-- Follow FULL pairedGC/UR target in ACTIVE:
-  notes/growing-cone-point-upper-transfer.md Sections1-8FULL (4c6d63e),
-  notes/rayleigh-signed-moment-upper.md Sections1-8FULL (939d697), all
-  sixGC/sevenURclarifications and applicable statement notes.
-- GC finiteness substitution is a NEW EXPLICIT CONSUMER APPLICATION gate:
-  BT atB1 must match EXACTsameWfast/gdelta/maskR=L+2/realmasslessEphase/
-  horizonL=1/delta/theta. CoarseBT+tail givesfixedparameterL2 andSP>=1;
-  separateSC/FYsourceUI/convergence still required. Do NOT pruneoldGLF/
-  MB/EA/D1 until actualGCsource/applicationreview accepts substitution.
-- Fullsame-retaining-source/fastlaw Gamma_delta, E-Fclosedrestriction,
-  compact-dataordinarysourceE_k identification, fullphasefinitepropagation
-  andcausalcone equality, AVERAGEOFSQUARES, two separate source/raw limits,
-  exactcanonicalLAW/momentnormalization/allmixed-self-emptychains, data
-  prefactorandTdelta bijection. No rawpointtrace/reversedF3/maskedstationarity.
-- UR actualoperator moment must be SAMEforallB. OWN signedrawscore/global
-  HALFaction, explicitpolynomialB coarseenvelope, deterministicerrorball,
-  exactRayleighbulkM²/(2delta) andtailfront4/M²quarter, cutoffeventuallyB,
-  ALLlognormalizers/deltaFIRSTthenB, movinglimsupS_Rdelta retained.
-- Gamma0directfree/u1/S,V0, completeexistingDirectEvent/AMGM/powermean/
-  GaussianTailtypesatALLguards, no newcompile/fact;80facts22seamsunchanged.
-- Fullsource/typedprimarymedia/cleanPDF/actualOpus5.5HIGH independent gate,
-  allfindingsadjudicated. This yieldsOWNsigned-scorepointupper, not yet
-  positive-scoreequality/exactC2/authorL*/p1identity. No forcedconstants.
-- ThenPG/PB/OC/WS/fullargument/coldread/lit/wiki/privateparity. Preserve
-  historicalproofs/reviews evenifdependencycompressionpasses. No contact/
-  HPC/companion/Skorohod/sourcefix/sibling/publication action.
+- Follow the FULL PG/PB pretranslation target in ACTIVE:
+  reviews/2026-11-01-positive-score-tex-integration/target-v1.md.
+- Complete PG1-PG2 finite analytic optimization, active-set/empty/zero/
+  singular cases, dual coercivity/attainment and entrywise Gram comparison;
+  reuse four unchanged finite Lean facts at exact types/actual guards.
+- Complete PB0-PB5 actual H_I inclusion/raw label identity/Gram fit,
+  noncircular uniform optimizer norm BEFORE averaging, positive smoothing,
+  signed-positive score match, nonmonotone-family cutoff removal, and SAME
+  original point limit with full variational domain/halfaction/amplitude.
+- Preserve all original models/dimensions/data/zero. Spos1 is auxiliary,
+  not actualp1/ChenL. Old canonical upper independently supplies finiteness.
+- Source Sections1-7 and all adopted clarifications apply. PB Section8
+  oldd1 ceiling remains comparison context, not an all-dimensional premise.
+- CleanTeX/PDF and fullfresh actualOpus5.5HIGH source/proof/application
+  review, exact source/typedmedia gates, findings adjudicated.
+- ThenOC/WS/calibrations/fullargument/finalcoldread/lit/wiki/privateparity.
+  No sourcefix/contact/HPC/companion/Skorohod/sibling/publication action.
 
 ## Success criteria for the immediate next step
 
-Complete internalGC/URproofs withfulloriginalsource/phase/canonicalpoint
-identity andOWNmovingsigned-scoreupper, exactnewBTfinitenessapplication,
-correctglobalrawhalfactionandorderedlimits. CleanPDF, fullindependentHIGH
-source/applicationreview, everyfindingadjudicated. No branchpruningfroman
-unreviewedcandidate andno pointtrace orsurrogatemoment substitution.
+Complete internal PG/PB proofs connecting the actual signed raw score to
+ALL smooth nonnegative nonseparable controls and proving the ORIGINAL
+point-moment limit with its complete intrinsic variational constant. Full
+model/amplitude/zero scope, noncircular dependencies, exact finite guards,
+cleanPDF and required independent HIGH source/application review. Do not
+claim goal completion before OC/WS and the whole-argument/final gates.
 
 ## Anti-success criteria
 
@@ -1848,15 +1851,35 @@ remainrequired. Source/adoptionpushesNoRoute, no sync/parity. Allownedjobs
 terminal. Lesson: identitythrougha fixedRlift doesnotlicenseitsnormina
 uniformEbudget; trackB-growth/actualfinalcell andlimitorder precisely.
 
+- 2026-11-01 GC/UR integration: scientific3ac97c4/adoptionc3f4485,
+  9proofs/238pagesclean/184priorunchanged. ActualOpus5.5HIGH29namedchecks,
+  593.249seconds,no requiredrepairs. Native47752terminal3 original strict
+  invalidJSON receipt retained; unique canonicalonebrace syntaxrecovery,
+  reversible/zero providercalls, passed ALL ordinary gates separately.
+  72fivewayinputs/59texts/13exactPNGs/90rawmembers readbackverified.
+  Actual BT-to-GC finiteness checked; source-first original point identity
+  and moving signed upper integrated, everysevenminor finding adjudicated.
+  OldGLF/MB/EA/D1 model-specific dependency branch unnecessary on CURRENT
+  path after explicit interface audit; all history retained. NextfullPG/PB
+  target frozen; no proof translation yet.80facts22seams/L0unchanged.
+  Source/adoption pushes NoRoute. No finalsource/PDFedit on adoption.
+- 2026-11-01 durable session learning: Le-AI-Labded76cc1 pushed and synced
+  canonical/Claude/Codex/OpenCode. Updated existing progress-authority and
+  Lean-ladder skills; bounded retrospective records actual goal correction,
+  uniformity/consumer boundaries, obligation-based progress and Lean value/
+  friction attribution. Lablocal/GitHub0/0; <HUB>parity unverified.
+
 ## Repo & git state at handoff
 
-Before this HANDOFF-only successor rootmasterHEAD1e54fe1.
-Active research cleanHEADf3475cd7ffb1855f53f7c0db4815011e52b507a3,
-scientificsourcefreeze27e1ce6aea5b5b40eff3988c8dae8d2af871e106.
-Privateorigin remains <HUB> bare; freshsource/adoptionpushes failedSSH
-NoRoute, no synchronization orHEADparity claimed. Last-fetchedroot611c005/
-research6937719 remain HISTORICAL. No implicit research/mastermerge.
-Science stays isolatedACTIVE; rootHANDOFF is loader, not mathauthority.
+Before this HANDOFF-only successor rootmasterHEAD332f251.
+Active research cleanHEADc3f44850bd95d4ca45dd348ffd4cfcc9af89e267,
+scientificsourcefreeze3ac97c4953b1f0901afd2788ccfc16e80cecf437.
+Privateorigin remains <HUB> bare; freshrootfetch/focused<HUB>read
+and source/adoptionpushes failedSSHNoRoute, no synchronization/HEADparity
+claimed. Last-fetchedroot611c005/research6937719 remain HISTORICAL.
+No implicit research/mastermerge. Science stays isolatedACTIVE;
+rootHANDOFF is loader, not mathauthority. Le-AI-Lab lessoncommitded76cc1
+is pushed/GitHub0/0; that is not Article or <HUB> synchronization.
 
 ## Operating notes
 
