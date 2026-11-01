@@ -20,16 +20,15 @@ The [general derived bounds](notes/all-model-occupation-ceiling.md) and
 [explicit white-space evaluation](notes/white-spatial-evaluation.md) also
 passed their full scoped reviews. The exact constant remains the intrinsic
 variational value; interval endpoints are bounds, not its evaluated value.
-The mathematical result set is now frozen for integration. The tracked
-[TeX/PDF notes](notes/notes_stratonovich_ham_second_moment.pdf) now include
-the covariance, wave-variance, Gaussian operator, source-convergence,
-fixed-mask moment, constant-phase Young and compact mean spectral proofs.
-Canonical scaling and the actual raw block/event point lower bound are
-also integrated. Unmasked Rayleigh bounds and finite positive variational scores are also
-integrated. The temporal equilibrium and full physical spatial/occupation foundation
-are integrated as well. These comprise 81 complete proof blocks accepted at independent integration
-gates. The latest integration is scientific source bda7990. The full
-derived-constant argument still needs integration there. Earlier failed
+The mathematical result set is frozen for integration. The tracked
+[TeX/PDF notes](notes/notes_stratonovich_ham_second_moment.pdf) contain
+90 complete proof blocks accepted at independent integration gates.
+They cover the covariance and operator foundations, actual source/Young
+flows, the original-point variational lower bound, spatial/occupation
+energies, compact Cameron means and the generic Young upper perturbation.
+The latest integration is scientific source 5e36bcb. The remaining uniform
+upper and exact-limit assembly still need integration and final review.
+Earlier failed
 cold-read records remain preserved, and no whole-paper or circulation
 clearance is implied. The official private Lean companion remains separately
 gated. Use `Progress.md` and the root loader `HANDOFF.md` for the active checkout.

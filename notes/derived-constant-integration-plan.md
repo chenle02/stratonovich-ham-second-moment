@@ -312,3 +312,26 @@ E2-E4 head/concentration/product consumers remain separate.
 Capture lesson: compare artifact capture time with terminal receipt before
 committing any 'running' label. Preserve superseded text and correction
 when a prior live observation outlives the process; never restart it.
+
+
+## Actual compact mean/Cameron and generic Young upper accepted
+
+Scientific5e36bcb:9complete proofs, actualOpus5.5/HIGH18passing checks
+512.225seconds,no repairs.50five-way inputs,36full texts/13exact images
+and65raw archive members verified. Nine optional notes adjudicated with
+no source/PDF edits. Clean197-page PDF;141prior bodies unchanged. Actual
+fixedR compact mean/Cameron covariance, supported raw space, non-trace
+guard and generic endpoint-preserving LEFT Young perturbation now in TeX.
+No concentration/uniformR/moment upper or exact limit inferred.
+
+Final presentation: explicit s/r/tensor domains, temporal L2 versus Lr
+target, K>=1, real/representative/continuity and signed-row pointers.
+All prior presentation debts and final independent gates remain.
+
+Next U plan in reviews/2026-11-01-uniform-e-mean-tex-integration/.
+Its separate gc-finiteness-audit-v1.md is UNREVIEWED: fixed-parameter
+GL finiteness may be replaced by actual F Gaussian Young moments plus
+GC's exact E restriction. It provides NO growing-radius rate. Conservative
+GLF/MB/EA/D1 graph NOT removed before actual GC/BT correspondence gates.
+The next U wave is already topologically permitted by current accepted
+inputs; it preserves all model/phase/covariance scope.

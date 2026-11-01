@@ -149,8 +149,13 @@
   clean;132prior bodies unchanged. Physical full-H1 pairing/continuity and
   full strongly measurable occupation class, exact temporal mass/row, own
   energy bounds; no optimizer/source-energy or exact moment-limit claim.
-- **Immediate next:** integrate actual compact mean/Cameron map and generic
-  Young upper foundation (C1-C3/E1), then remaining upper/PB/OC/WS assembly.
+- **Accepted C1-C3/E1 TeX foundation:** scientific5e36bcb,Opus5.5/HIGH
+  18passing checks512.225s,no repairs. Nine proofs;50bindings/36full texts/
+  13exact PNGs/65raw archive files verified.197pages clean;141prior bodies
+  unchanged. Actual fixedR compact mean/Cameron covariance and exact
+  delta norm, generic endpoint-preserving Young bound; no moment upper yet.
+- **Immediate next:** integrate uniform-radius E mean/regulator (U), then
+  actual stochastic anchor/spectral/tube/product/point upper/PB/OC/WS.
   Keep the frozen PB/OC/WS result set and full original model scope. The
   import interfaces are mapped; avoid repeating that inventory as a new round.
   Continue consolidating complete proofs into TeX/PDF, with clean builds
@@ -179,7 +184,7 @@
  rerun for promotion, new package/companion/lease/registry/HPC action.
 - **Git:** current mathematical work is in the isolated private research
   clone, branchresearch/fixed-mask-young-20261031. Latest result source
-  is95d7515; latest accepted TeX integration sourcebda7990, with subsequent
+  is95d7515; latest accepted TeX integration source5e36bcb, with subsequent
   adoption records separate.
   Fresh fetch/push failed with <HUB>NoRoute. Prior <HUB> parity
   receipts are historical, not evidence of current synchronization.
@@ -9264,3 +9269,43 @@ Old Mathlib finite power-mean COMPLETE type/actual guards supplied, no
 kernel proof vote/compiler/new fact;80facts22seams/L0PROPOSED unchanged.
 Actual concentration/spectral/product/point/upper/PB/OC/WS and final
 whole-paper/cold-read/wiki/remote delivery remain open; goal ACTIVE.
+
+
+### Accepted actual compact mean/Cameron and generic Young upper: scientific5e36bcb
+
+ActualOpus5.5/HIGH18passing checks (16PASS,2PASS_WITH_NOTES),
+512.225seconds,no required repairs. Native66685 TERMINAL0; accepted and
+coverage true. Canonical passing/correspondence/read-ledger checks PASS.
+All50five-way inputs and65raw archive files verified;36complete required
+texts/13exact images delivered, including primary Young13/61/62. Nine
+optional notes adjudicated in reviews/2026-11-01-upper-foundation-tex-integration/
+adjudication-v1.md. No source/PDF edits;197pages clean,9new proofs,141prior
+bodies unchanged. One old Mathlib finite power-mean type applied at actual
+guards, no kernel re-vote/compile/new fact;80facts22seams unchanged.
+
+All original model classes retained. Actual fractional physical products,
+compact spatial/time-space mean MAPS, supported raw tensor/time covariance,
+non-trace temporal guard, GIVEN-W stopped residual first chaos and actual
+Cameron covariance/quotient norm now integrated with exact delta norm and
+sqrt(delta)epsilon_J. FixedR only, both constant columns and true remainder.
+No instantaneous Gaussian Hilbert field, covariance inverse, independent
+blocks or uniformR tail. Generic E1 retains exact deterministic endpoint
+for arbitrary bounded left A, refined d+d^nu/no prefactor and LEFT Young
+product via remainders. No actual concentration/product/moment upper yet.
+
+Final presentation: fix s locally; specify r and initial smooth tensor
+coordinates; distinguish temporal L2 then Lr target; restate K>=1; explicit
+real/representative/continuity and signed-row pointers. Earlier roadmap/
+bibliography/notation debts remain. No changed hypothesis or estimate.
+
+Next U target frozen in reviews/2026-11-01-uniform-e-mean-tex-integration/.
+UniformR E mean and orthogonal regulator with generally INFINITE spatial
+rank, not F uniformR or finite Gaussian head. A separate UNREVIEWED audit
+records a possible GC fixed-parameter finiteness substitution: sourceGC
+uses GL only for finite moments at fixed delta,R; actual F Gaussian Young
+moments and its proved isometric E restriction appear sufficient. GrowingR
+RATE still mandatory. BT rechecks D1's generic realization, not necessarily
+its norm11.7 concentration or EA finite-head product. Conservative import
+graph remains unchanged until future actual correspondence review; no hard
+objective/old evidence dropped. Private push NoRoute; full upper/exact/
+whole-paper/cold-read/wiki/remote delivery open. Goal ACTIVE.

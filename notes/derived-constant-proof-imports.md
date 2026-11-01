@@ -128,3 +128,20 @@ for each integrated claim and bind them to these selected source scopes.
 Inspect source/PDF correspondence and preserve analytic/formal boundaries.
 Final whole-argument skeptic and independent cold reader remain mandatory;
 this inventory does not clear publication, novelty, circulation or delivery.
+
+
+## 2026-11-01 integration audit: fixed-parameter GC finiteness candidate
+
+The conservative declared graph above is unchanged. The current C1-C3/E1
+integration is accepted at scientific5e36bcb. A precise UNREVIEWED direct
+application is frozen in
+reviews/2026-11-01-uniform-e-mean-tex-integration/gc-finiteness-audit-v1.md.
+GCSection2 uses GL only for finite moments at each fixed delta,R, while
+the accepted F Gaussian Young-flow theorem and GC's exact isometric E
+restriction appear to supply that property and source Lp differences.
+The future GC gate must verify SAME driver/noise/mask/horizon and all
+restriction/source guards before removing GLF. BTSection5 explicitly
+rechecks D1Sections2-3 generic first-chaos/Wiener realization on actual E;
+no norm-only concentration or finite-head consumer is silently imported
+through that method reference. No pruning, new upper rate or proof-closure
+certificate is adopted here. Current next U remains within the graph.
