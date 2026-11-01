@@ -167,9 +167,14 @@
   55rawarchivefiles verified. Five proofs,208pages clean,155priorunchanged.
   Actual uniformR expectedE FIRSTdriver norm tends0 at growingcutoff,
   everydeterministicorthogonalresidual; no CM/nonlinear/moment upgrade.
-- **Immediate next:** jointly integrate signed rough static physical wave
-  S Sections2-5 and E symplectic baseline SP Sections2-7, then actual
-  tube/product/point upper/PB/OC/WS.
+- **Accepted joint S/SP TeX integration:** scientific2cca41c,
+  packetrevision0873245,actualOpus5.5/HIGH24PASSchecks538.314seconds,
+  no requiredrepairs. Native51572 TERMINAL0, accepted/coverage true;
+  63fivewayinputs/44fulltexts/19exactimages/78rawfilesverified.9proofs,
+  216pagesclean,160priorunchanged. Actualroughphysicalwave/symplectic
+  blockmeanbaseline only; no nonlinear/moment upgrade fromthesealone.
+- **Immediate next:** integrate actual E Gaussian control tubes/Rayleigh
+  transfer BT, thenUS/GC/UR/PG/PB/OC/WS/fullargument/finalgates.
   Keep the frozen PB/OC/WS result set and full original model scope. The
   import interfaces are mapped; avoid repeating that inventory as a new round.
   Continue consolidating complete proofs into TeX/PDF, with clean builds
@@ -9482,3 +9487,55 @@ no science/TeX/PDF/hypothesis change or preflightwaiver. Existing native
 workspaceguard correctlycaught the dispatch defect; this is not a review.
 Next dryrun/newnative directory required. All63inputhashes must be checked
 againstnewmetadatafreeze; finalsource/PDF stillmatches2cca41c.
+
+
+## 2026-11-01 — joint signed spectral/phase integration accepted
+
+Scientific2cca41cb3e18c4d9ce06f64993df8ef6dad21a77; reviewpacketmetadata
+revision0873245b58aeb9fd7439e73251cb558d48709bd8. ActualfirstParty
+Opus5.5/HIGH24PASSchecks/PASS_WITH_NOTESoverall,538.314seconds,no repairs.
+Native51572TERMINAL0/review-complete accepted/coverageTRUE,canonical
+parse/pass/correspondence/fullrawreadledgerPASS. All63fivewaybindings
+verifiedBEFOREadoption;44fulltexts+19typedexactPNGs,all78rawnativearchive
+files readbackSHAverified, rawreportunchanged. V1dryrunpreproviderexit5
+wrongpromptliteralpathpreserved,0calls; correctedv2dryrunno waiver and
+onlyONEactualscientificreview. SourcePDFunchangedbydispatchfix.
+All11optionalnotesadjudicated in
+reviews/2026-11-01-signed-phase-tex-integration/adjudication-v2.md.
+No finalTeX/PDFedit,9newproofs (4S1/S2,5SP1-SP4),160priorunchanged,
+clean216pages/0errors/undefined/overfull. Oneformatdisplayoverflow and
+copiedexcerptblankEOF correctedBEFOREscientificfreeze/custodyrecapture.
+
+AcceptedroughactualFmultiplier/form/quarterphase/PVMbottom/graphcoreE-F
+physicalwave, zero-safe spectralrate/polynomialforcingbudget, actual
+source/rawE symplecticphase/inverse/normbaseline andtruecompletedblock
+mean delta^-a/2fastdirection,delta^a/2unscaledcov,partial/emptyclock.
+ALLoriginalmodelscope kept. NoS3/S4newintegration oruniformRbudget/
+CMconcentration/nonlinearpointupper/exactlimitfromS/SPalone.
+80facts22seams/L0PROPOSED/decision4unchanged, no compile/newfact/package/
+HPC/contact/sourcefix/Skorohod/siblingwork/publication. PrimaryTeschl
+selected6mathpages+2editionimages/heldPDFSHA verified; nofullbookaudit/
+newreferenceingestionclaim. Reviewerhandscienceonly, executionseparate.
+
+Finalpresentationdebts include preciseprimaryrepresentationpointer, form
+boundforwardlink, explicitobjects/parentlabels, absoluteFubiniE|ZY|<=
+||Phi||sqrt(E|Y|²), Wmeasurableconservationeventdescenttobase, realphase
+restriction andconstantcolumncompressionguard, notation/oldbib/roadmap.
+Allareclarificationsofalreadyavailablearguments; no requiredrepairwas
+returned. ConsumerUSscopeauditwasauthorread, notindependentclosurecertificate.
+
+NextBTtarget frozenbeforetranslation in
+reviews/2026-11-01-tube-transfer-tex-integration/. CompleteactualE-lawAWS/
+compactmean/tubes/leastattainedradius/Rayleighincludingjumps/zerolaw,
+globalendpoint/coarseenvelope/tail/halfaction. SelfcontainedD1generic
+realization/tightness proof andactualRBrestartmustbewritten, nofilename
+proofsubstitute/normconcentrationreplacement. GCpointconsumerdeferred
+toGC/URwithfullhypotheses, notdropped; GCfinitenesscompression remains
+UNREVIEWED, conservativegraphunchanged. Allfinalupper/PB/OC/WSwholeproof/
+coldread/lit/wiki/privateparityremainOPEN. SourcepushfailedNoRoute.
+
+DurablelessonrecordedNOW: prompt labels mustnotconcatenatewith literal
+paths. Nativepreflightcaught thisbeforeprovider; versionprompt/packet/
+spec/manifestandcheckallbindingsagain, no pathwaiver orscientificreplay.
+Existingguardapplied, nonewgeneric skillneeded. Generatedsourceexcerpts
+needEOFnormalizationBEFOREfreeze/custodyhash, neverpostreviewbytechanges.

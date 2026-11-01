@@ -386,3 +386,35 @@ This avoids optionalproofexpansion whilekeepingrequiredfullphysical
 identification/symplectic/rawmeaninterface. No genuine dependencyremoved.
 GCfinitenesscompressionstillUNREVIEWED, conservativegraphunchanged. Then
 BT/US/GC/UR/PG/PB/OC/WS/fullargument/coldread/lit/wiki/privateparity gates.
+
+
+## Signed rough wave and actual symplectic phase integrated
+
+Scientific2cca41c,packetrevision0873245,9fullproofs/216pagesclean,
+160priorunchanged. ActualfirstPartyOpus5.5/HIGH24PASS538.314seconds,
+no repairs; native51572TERMINAL0 accepted/coverageTRUE.63fivewaybindings,
+44texts/19exactPNGs and78rawarchivefiles verified. Originalv1preprovider
+workspaceexit5wrongliteralpromptpath preserved,0calls; v2correctedpath
+only andONEscientificreview.11notesfullyadjudicated, no finalsourcePDFedit:
+reviews/2026-11-01-signed-phase-tex-integration/adjudication-v2.md.
+
+Finalpass: attributebarebook(2.63), formpositivityforwardpointer, define
+pairing/spectralwave/fullblockobjects, addexactsource/Youngparentlabels,
+explicitabsoluteFubiniC-Sbound, W-measurableeventdescenttobase, realphase
+restriction andconstant-column guard. RecordSitem3outsideS2-5scope and
+finiteevidencelimitsinpacketnotTeX. Localnotation/roadmap/bibdebts remain.
+ActualUSscopeauthorchecked, notindependentfullclosureclaim.80facts22seams,
+L0PROPOSEDunchanged,nocompiler/newfact. No uniformRmomentupgradefromS/SP.
+
+NextBTtarget reviews/2026-11-01-tube-transfer-tex-integration/ frozenbefore
+translation: genuineactualE-lawAWSandRayleightubes/coarsebound/halfaction.
+WriteD1genericrealization/tightnessselfcontained; donotimportD1normexpmodel.
+Matchnoise-onlyrestartGR to actualintegratedRBproof andEintertwining,
+no GLrate/finitenessbranch assumed. DeferfinalGCpointprefactorapplication
+toGC/URcompletegate, notdeletedfromgoal. GCfinitenesscompressionremains
+UNREVIEWED, conservativegraphunchanged. ThenUS/GC/UR/PG/PB/OC/WS/fullpaper/
+coldread/lit/wiki/privateparity. KeepHALFglobalrawaction, nofastcostsum.
+
+Operationalguardlesson: spacedexactpaths inprompts; preflightmustpass
+withoutwaiver BEFOREprovider. Versionrefusal/repair/packet/spec/hashbindings;
+neverfixfrozenartifactsinplace orcallpre-provider refusal a scientificvote.
