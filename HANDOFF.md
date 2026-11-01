@@ -5,9 +5,10 @@ Chen matching is not a completion requirement.
 
 ## ⏭ Next session: where to stand and what to do
 
-FIRST integrate the covariance/variance/compact-driver proofs into TeX in ACTIVE
+FIRST integrate the scalar frequency row and actual TWO variance directions
+(FR+AV) into TeX in ACTIVE
 ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave,
-branch research/fixed-mask-young-20261031, clean local HEAD2f93f57.
+branch research/fixed-mask-young-20261031, clean local HEADe7a1972.
 Read its PROJECT-GOAL.md, AGENTS.md, Progress.md and
 notes/derived-constant-integration-plan.md and derived-constant-proof-imports.md
 in its notes directory. Root mathematical files and
@@ -17,7 +18,10 @@ derive the actual constants; matching Chen is not required.
 PB/OC/WS scoped proof reviews have passed. Integrate the complete accepted
 argument, rather than opening optional mathematical refinements. The
 inventory is a starting map, not certified proof-dependency closure.
-No owned reviewer or computation remains live; do not poll terminal jobs.
+Covariance/temporal TeX foundation is ACCEPTED at scientific96e2a18,
+adoptione7a1972. Do not redo its inventory or restart terminal integration
+review68458(v3PASS0),71223(v2coverage-refusal3), or v1preflight5.
+No owned reviewer or computation remains live.
 
 ## Pre-flight checks
 
@@ -35,14 +39,22 @@ No owned reviewer or computation remains live; do not poll terminal jobs.
 5. Two conditional finite Lean facts accepted after full actual-application
    review. Current80facts22seams; official L0PROPOSED/decision4 unchanged.
    H1/CDF/Gamma/spectral/PDE arguments remain analytic, not Lean-formalized.
-6. Active manuscript G:sharp/abstract now follow Le's revised target.
-   Rebuilt110-page PDF:0errors/undefined references/citations/overfull boxes;
-   all60existing proof bodies byte-identical; PDF108-109 inspected.
-   Mathematical integration and whole-paper/cold-read gates remain open.
-   Import interfaces:37scoped nodes/35files, not certified closure. SA alias
-   radius-stochastic-driver-anchor.md was missing from initial inventory.
-   Keep old independent T:full-upper finiteness before UL/B/new upper.
-   Fifty-six frozen note/Git bindings from six FULL receipts matched.
+6. Active manuscript G:sharp/abstract follow Le's revised target. First
+   complete covariance/temporal TeX section now accepted: scientific96e2a18,
+   actualOpus5.5/HIGH15PASSchecks281.324seconds,no mandatory repairs.
+   Nativeaccepted=true/coverage=true,canonical validators PASS;25five-way
+   bindings,16full texts,8exact PNG deliveries and40rawmembers verified.
+   116-page PDF:0errors/undefined references/citations/overfull boxes;
+   all60old proof bodies unchanged,8source proofs transcribed; PDF108-115
+   inspected. Six optional findings adjudicated with no final source edit.
+   V1 literal filename-case preflight error and V2 malformed PNG-as-text
+   contract refusal remain preserved, never silently accepted. Use the
+   required-media checker in the dated review directory BEFORE future
+   dispatch: kind=image,sha256,media_type=image/png for PNG bytes. Actual
+   malformedv2 negative control refused; correctedv3 passes. No tool setup.
+   Remaining math integration/whole-paper/cold-read gates stay open. Import
+   interfaces37nodes/35files are not certified full closure. Keep independent
+   old T:full-upper finiteness, SA alias and narrow TE/GI scalar-only imports.
 7. <HUB> fresh push still fails NoRoute; no actual remote parity.
    Recovery requires serialized push, canonical pull and isolated research
    fast-forward with actual HEAD checks. Never reset or drop foreign work.
@@ -51,8 +63,12 @@ No owned reviewer or computation remains live; do not poll terminal jobs.
 
 ## Concrete deliverables for the next session
 
-- Use the scoped import guide, verify selected complete proofs, consolidate PB/OC/WS and
-  their driver, lower-event and Gaussian-upper inputs into readable TeX.
+- Translate scalar-frequency-row-bound.md and actual-two-variance-forms.md
+  with exact complete proofs and labels; retain actual same-W complex
+  forms, Sobolev adjoint, four phase entries, BOTH variance directions and
+  strict beta>1/2 ranges. No pathwise bounded operator inferred yet.
+- Then integrate finite Gaussian/Sobolev compactness, actual driver/source/
+  Young, lower event and Gaussian upper, and the PB/OC/WS assembly.
 - Build and inspect PDF, freeze whole-argument review and final cold read;
   adjudicate findings before claiming the completion contract satisfied.
 - Recover private pushes/wiki queue/<HUB> parity when available.
@@ -1378,10 +1394,23 @@ Main G:sharp/abstract now honor actual derived constants, no Chen matching.
 Clean110-page rebuild,0errors/undefined/overfull;60proof bodies unchanged;
 PDF108-109 visually inspected. Full mathematical integration remains next.
 
+2026-11-01 first TeX foundation integration close: scientific96e2a18,
+adoptione7a1972; actualOpus5.5/HIGH15PASS281.324seconds,no repairs.
+Native terminal0accepted/coverage true;25five-waybindings,16complete texts,
+8exactPNG deliveries;40rawnative members read-back SHA256 verified.
+8transcribed proofs,60old main proof bodies unchanged;116pages clean and
+PDF108-115 visually checked. Six optional notes adjudicated. Priorv1 case
+preflight5 andv2 scientificHIGH13/coveragefalse exit3 preserved; v2 PNG
+requirements were incorrectly text-typed. Correct typed-image contract
+validated beforev3; local guard rejects historicalbadmetadata and accepts
+corrected spec. Lesson recorded in integration plan; no shared tools changed.
+Next actualFR+AV TeX integration, not another inventory round. No live jobs.
+Latest private push failed NoRoute; goal remains ACTIVE and full-scope.
+
 ## Repo & git state at handoff
 
-Before this HANDOFF-only successor root master HEAD4f5a294. Active
-research HEAD2f93f57, clean after checkpoint commit. Private origin remains
+Before this HANDOFF-only successor root master HEAD101e899. Active
+research HEADe7a1972, clean after checkpoint commit. Private origin remains
 <HUB> bare; latest push failed SSH NoRoute, no synchronization claimed.
 Last-fetched root611c005/research6937719 are historical observations only.
 Do not merge research into root master implicitly. All new scientific work
