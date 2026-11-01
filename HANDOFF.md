@@ -158,16 +158,18 @@ current Next section and ACTIVE Progress.md before using any old todo.
 
 ## Concrete deliverables for the next session
 
-Resolve the concrete primary-source/normalization evidence gaps identified
-by the retained DeepSeek MEDIUM report before any adopted simplification.
-A materially repaired source packet may receive a new immutable review;
-unchanged confidence-only retry is forbidden. Main full review stays open.
+A precise paperI theorem/dependency interface and closest-source implication
+crosswalk, including a genuine second application or an explicit decision
+to retain the methods inside paperII. No new proof wave on a slogan.
+Keep the exact p2 theorem and all pending source/review obligations intact.
 
 ## Success criteria for the immediate next step
 
-Every source ambiguity and required fix has exact evidence or an explicit
-OPEN disposition. Keep original report/confidence and Kimi quota refusal.
-No auxiliary review is presented as a whole-proof or visual certification.
+The methods theorem does not assume the final C2 result, its analytic
+hypotheses are independently checkable in the original models, and every
+claimed difference from Young/rough-evolution/LDP literature is source-
+grounded or marked OPEN. Higher moments, mixtures and memory extensions
+remain proposed until proved. No auxiliary MEDIUM review is promoted.
 
 ## Anti-success criteria
 
