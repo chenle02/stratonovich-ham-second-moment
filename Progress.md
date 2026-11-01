@@ -53,11 +53,26 @@
   21checks/HIGH379.264s,no repairs;30five-way bindings/native archive
   verified. Actual source/raw/mean form preservation,norm>=1,exact completed
   blockmean fastdirection/trueendpoint baseline. Fixedparams,notuniformbudget.
-- **Immediate next:** write the COMPLETE BT1-BT3 Gaussian tube/Rayleigh
-  transfer proof after accepted15f8a97 statement/source gate16PASS/HIGH
-  417.61s,including2primaryimages/32bindings. All6notes adjudicated,especially
-  calibrationvsfalsification/effectivecasecounts. FULL proof gate still
-  required; no sharp spectral/product/variational/source conclusion yet.
+- **Accepted Gaussian tube/Rayleigh transfer:** scientifica1c90c7,
+  20checks/HIGH508.072s. Its full proof and actual E Gaussian application
+  are accepted; the older BT proof todo is closed, not a task to repeat.
+- **Accepted uniform spectral/product control:** scientifica14c6bb,
+  27checks/HIGH519.949s, all51five-way bindings verified. Uniform E signed
+  Rayleigh rates, scalar-time averaging and arbitrary small residuals.
+- **Accepted original-point signed-score upper:** scientific939d697,
+  19checks/HIGH367.538s, all43five-way bindings verified. SAME original
+  point limsup <= limsup of the growing-mask OWN signed raw score S_R.
+  This is not an identified author constant or an exact limit.
+- **Accepted finite positive Gram optimization:** scientific4e2219d,
+  26checks/HIGH305.393s, all48five-way bindings verified. Active subsets,
+  positive conic maximizer and ENTRYWISE Gram comparison. Its physical
+  occupation/time/mask/continuum application remains open.
+- **Immediate next:** PB1-PB5 physical signed-to-positive score comparison,
+  frozen6de6728, exact target in
+  reviews/2026-10-31-physical-score-comparison/target-v1.md. New normalization
+  diagnostics are complete; actualOpus5.5/HIGH statement/source FIT is live
+  at the native attempt recorded below. No PB proof is accepted. Own S_2
+  remains distinct from the REQUIRED original L_*/L^* constants.
 - **New accepted uniformR E Cameron/regulator:** scientificf54e92b,
   21checks/HIGH348.303s,no requiredrepairs;21input bindings/native archive
   verified before6optional clarity notes. Actual all-model uniformR means,
@@ -72,16 +87,17 @@
 - **Still open:** intended author-energy/domain/normalization dictionary,
   matching sharp upper constant and conditional exact limit. Original full
   goal ACTIVE; no whole-paper/circulation/wiki/master integration clearance.
-- **Lean:**74acceptedfinitefacts20local seams/L0 PROPOSED. New scalar
- cutoff-density split passed local/stdaxiom/5replaypair/3falsevariant and
- FULL actual application gates. Nine missing old state-mirror entries
- restored from authority/reviewed sourcebytes, no proof changes. No formal
- probability/SPDE or officialcompanion/package claim.
-- **Git:** network recovered; all owned research units pushed to the
-  private research branch. <HUB> canonicalmaster and rootmaster align;
-  a CLEAN isolated <HUB> research clone now has actual HEAD parity,
-  tracking0/0,with the local research checkout. No research/master merge.
-  Exact checkpoint receipt in growing-cone-point-transfer review directory.
+- **Lean:**78acceptedfinitefacts21local seams/L0 PROPOSED. Four PG finite
+ algebra facts and their exact finite applications accepted at687b958;
+ analytic optimization and physical comparison remain outside the kernel.
+ The state mirror already contains21entries totaling78facts; summary
+ refresh does not add facts, rerun checks or create a companion/package.
+- **Git:** current mathematical work is in the isolated private research
+  clone, branchresearch/fixed-mask-young-20261031; latest frozen PB target
+  source is6de6728, with subsequent operational summary updates separate.
+  Fresh fetch/push failed with <HUB>NoRoute. Prior <HUB> parity
+  receipts are historical, not evidence of current synchronization.
+  Rootmaster remains a separate loader/handoff checkout; no research merge.
 
 
 ## Historical checkpoint summaries
@@ -8120,3 +8136,26 @@ Skorohod/sourcefix/TeX/PDF/wiki/bib/publication, NoRoute/pushpending.
 ## PB physical score comparison: frozen target and pre-proof tests — 2026-10-31
 
 [held back: AI account details]
+
+### Live PB statement gate and authority-heading repair
+
+- NativeOpus5.5/HIGHfit launchedONCE on6de6728;16requiredtexts187597bytes,
+  exactpacketmanifest retained. Attemptstate is
+  ../stratonovich-physical-score-comparison-review-v1/native/;
+  observerlog at../stratonovich-physical-score-comparison-review-v1/observer.log.
+  Currenttoolhandle79500 confirmedLIVE bysame-handlepoll andgrowingnative
+  events;no receipt/verdict yet. Observationtimeoutsarenotterminalfailure.
+  No fullproofadoption/investment is authorized by an unfinished fit gate.
+- Rootfollowupvisuallyrecheckedpinnedauthorpages4and6AFTERpacketfreeze;
+  source/raw-vs-damped/full-vs-halfkinetic/conjecturequalifications unchanged.
+  Itsreadcoverage isROOTONLY,notretroactivelyattributedtolivereviewer.
+  AlternatecurrentAMS/zbMathURLs alsoinaccessible;citationchains remainopen.
+- FoundSTALEauthorityheadingsrequestingcompletedBTproofand74facts20seams.
+  Refreshedcurrentfrontierfromalreadyacceptedgates andexisting21entry/78fact
+  mirror. Mirrorbytes andallmathematicalproofs unchanged;no newpromotion.
+  Prior<HUB>parity relabeledhistoricalfollowingcurrentNoRouteevidence.
+- Existingcanonicalprogress-authorityskillamendedwiththisretrievalfailure,
+  sourcecheckpoint6de6728. Descriptiongate351/1024,headline57,projection/
+  byteparity/strictbudgetPASS. Genericquery'sarbitrarytop3guardFAILED;
+  exactskillnameandspecificpaper-devtriggerreturnrank1. No rankwaiver
+  claimed;retrievalcoverage isthoseactualqueries,notallgenericphrases.

@@ -18,12 +18,12 @@
   pilot now has three elaborated statements and an owned-source replay.
   Exact type/application review passed4checks/HIGH;no official package gate is claimed.
 
-- **Standalone local checks (current):**74acceptedfinitefacts20local seams.
-  LatestGaussian cutoff-density split passed FULL exacttype/application
-  review18HIGH335.531s atscientific180bf1a. Probability/operator/SPDE
-  analysis remains informal; no officialpackage/companion gate. State
-  mirror reconciled from this authority; prior nine omitted entries were
-  already accepted, not newly proved or reclassified.
+- **Standalone local checks (current):**78acceptedfinitefacts21local seams.
+  Latestfour PG finite algebra facts passed FULL exacttype/application
+  review26HIGH305.393s atscientific4e2219d,adopted687b958. Whole PG
+  optimization and physical occupation/SPDE comparison remain informal;
+  no officialpackage/companion gate. The mirror already records21entries
+  and78facts. This heading refresh promotes no new fact or application.
 
 ## Planned waves (strategy in ROADMAP.md)
 
