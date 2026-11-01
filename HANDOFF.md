@@ -5,10 +5,10 @@ Chen matching is not a completion requirement.
 
 ## ⏭ Next session: where to stand and what to do
 
-FIRST integrate the scalar frequency row and actual TWO variance directions
-(FR+AV) into TeX in ACTIVE
+FIRST integrate the finite Gaussian matrix moment and whole-space Sobolev
+compactness proofs (FG/CC) into TeX in ACTIVE
 ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave,
-branch research/fixed-mask-young-20261031, clean local HEADe7a1972.
+branch research/fixed-mask-young-20261031, clean local HEAD 7dbcd4a.
 Read its PROJECT-GOAL.md, AGENTS.md, Progress.md and
 notes/derived-constant-integration-plan.md and derived-constant-proof-imports.md
 in its notes directory. Root mathematical files and
@@ -21,6 +21,10 @@ inventory is a starting map, not certified proof-dependency closure.
 Covariance/temporal TeX foundation is ACCEPTED at scientific96e2a18,
 adoptione7a1972. Do not redo its inventory or restart terminal integration
 review68458(v3PASS0),71223(v2coverage-refusal3), or v1preflight5.
+FR/AV TeX integration is now ACCEPTED: scientificf5c1521,adoption7dbcd4a,
+27PASS/HIGH382.209seconds,no mandatory repairs. Review13477 isTERMINAL0,
+not a task to restart. Read the frozen next target in
+reviews/2026-11-01-compact-gaussian-tex-integration/target-v1.md in ACTIVE.
 No owned reviewer or computation remains live.
 
 ## Pre-flight checks
@@ -39,22 +43,23 @@ No owned reviewer or computation remains live.
 5. Two conditional finite Lean facts accepted after full actual-application
    review. Current80facts22seams; official L0PROPOSED/decision4 unchanged.
    H1/CDF/Gamma/spectral/PDE arguments remain analytic, not Lean-formalized.
-6. Active manuscript G:sharp/abstract follow Le's revised target. First
-   complete covariance/temporal TeX section now accepted: scientific96e2a18,
-   actualOpus5.5/HIGH15PASSchecks281.324seconds,no mandatory repairs.
-   Nativeaccepted=true/coverage=true,canonical validators PASS;25five-way
-   bindings,16full texts,8exact PNG deliveries and40rawmembers verified.
-   116-page PDF:0errors/undefined references/citations/overfull boxes;
-   all60old proof bodies unchanged,8source proofs transcribed; PDF108-115
-   inspected. Six optional findings adjudicated with no final source edit.
-   V1 literal filename-case preflight error and V2 malformed PNG-as-text
-   contract refusal remain preserved, never silently accepted. Use the
-   required-media checker in the dated review directory BEFORE future
-   dispatch: kind=image,sha256,media_type=image/png for PNG bytes. Actual
-   malformedv2 negative control refused; correctedv3 passes. No tool setup.
-   Remaining math integration/whole-paper/cold-read gates stay open. Import
-   interfaces37nodes/35files are not certified full closure. Keep independent
-   old T:full-upper finiteness, SA alias and narrow TE/GI scalar-only imports.
+6. Active manuscript target follows Le's revision. Accepted covariance/
+   temporal foundation scientific96e2a18:8complete proof blocks,15HIGHchecks.
+   Accepted FR/AV scientificf5c1521:6complete scalar/actual-form/Bessel/
+   TWO-variance/real mean-square column proof blocks,27HIGH382.209seconds.
+   No repairs; accepted/coverage true, canonical validators PASS,25five-way
+   bindings,15full texts,9exact PNG deliveries,40rawarchive members verified.
+   Seven optional findings adjudicated without editing final reviewed source.
+   125-page PDF:0errors/undefined references/citations/overfull boxes;
+   all68earlier proof bodies unchanged. New/contextpages116-124 inspected;
+   Section17ends123, targetcontext124. No sample bounded operator/path yet.
+   Media guard AND native dry-run passed before dispatch (missing=[]), no
+   case/image error or retry. Keep original earlier SF preflight/coverage
+   failures unchanged. Future PNG specs require kind=image,sha256,media_type;
+   check literal filename case and source/PDF boundaries before dispatch.
+   Remaining integration/whole-paper/cold-read gates stay open. Import graph
+   37nodes/35files is not certified closure. Keep independent old upper
+   finiteness, SA alias and narrow TE/GI scalar imports. No new Lean fact.
 7. <HUB> fresh push still fails NoRoute; no actual remote parity.
    Recovery requires serialized push, canonical pull and isolated research
    fast-forward with actual HEAD checks. Never reset or drop foreign work.
@@ -63,12 +68,13 @@ No owned reviewer or computation remains live.
 
 ## Concrete deliverables for the next session
 
-- Translate scalar-frequency-row-bound.md and actual-two-variance-forms.md
-  with exact complete proofs and labels; retain actual same-W complex
-  forms, Sobolev adjoint, four phase entries, BOTH variance directions and
-  strict beta>1/2 ranges. No pathwise bounded operator inferred yet.
-- Then integrate finite Gaussian/Sobolev compactness, actual driver/source/
-  Young, lower event and Gaussian upper, and the PB/OC/WS assembly.
+- Translate finite-gaussian-schatten.md and compact-sobolev-cutoff.md with
+  complete proofs, using the frozen target. Retain complex rectangular
+  matrices/real Gaussians/evenp/unnormalized traces/BOTH variance powers;
+  whole-space recovery, negative Sobolev indices, actual balanced adjoints,
+  minmax trace order (not operator power order), compression/Fatou and
+  plateau-only nonzero witness. Torus remains auxiliary, not state space.
+- Then actual driver/source/Young, lower event/Gaussian upper and PB/OC/WS.
 - Build and inspect PDF, freeze whole-argument review and final cold read;
   adjudicate findings before claiming the completion contract satisfied.
 - Recover private pushes/wiki queue/<HUB> parity when available.
@@ -1407,14 +1413,25 @@ corrected spec. Lesson recorded in integration plan; no shared tools changed.
 Next actualFR+AV TeX integration, not another inventory round. No live jobs.
 Latest private push failed NoRoute; goal remains ACTIVE and full-scope.
 
+2026-11-01 FR/AV TeX integration close: scientificf5c1521,adoption7dbcd4a;
+actualOpus5.5/HIGH27PASS382.209seconds,no required repairs. Native13477
+terminal0accepted/coverage true;25five-waybindings,15complete texts/9exact
+PNG deliveries;40rawmembers read-back SHA256 verified. All68prior proof
+bodies unchanged,6complete source proofs added. Clean125-page PDF and
+new/contextpages116-124 visually inspected. Seven optional notes adjudicated
+without final source edits. Native media/workspace preflight passed before
+first actual review, no retries.80Lean facts22seams andL0PROPOSED unchanged.
+Read FG/CC target frozen before future translation; full model scope and
+actual-derived-constant goal remain. Latest push failed NoRoute. No live jobs.
+
 ## Repo & git state at handoff
 
-Before this HANDOFF-only successor root master HEAD101e899. Active
-research HEADe7a1972, clean after checkpoint commit. Private origin remains
-<HUB> bare; latest push failed SSH NoRoute, no synchronization claimed.
-Last-fetched root611c005/research6937719 are historical observations only.
-Do not merge research into root master implicitly. All new scientific work
-stays in the isolated active clone; root HANDOFF is the operational loader.
+Before this HANDOFF-only successor root master HEAD0caed2b. Active research
+clean HEAD7dbcd4a2b1438d583503d7e4a031b3aea26434c2. Private origin remains
+<HUB> bare; fresh push failed SSH NoRoute, no synchronization claimed.
+Last-fetched root611c005/research6937719 remain historical observations.
+No implicit research/master merge. Scientific work stays in isolated ACTIVE;
+this root HANDOFF is the operational loader, not the mathematical authority.
 
 ## Operating notes
 
