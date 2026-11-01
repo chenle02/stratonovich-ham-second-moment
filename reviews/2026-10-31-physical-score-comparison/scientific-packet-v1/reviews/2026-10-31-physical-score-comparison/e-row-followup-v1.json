@@ -1,0 +1,57 @@
+{
+  "schema": "actual-e-row-followup/1",
+  "source_sha256": "e4886f5a39514b6a4a2d9da859b803e5a0294e6cc43da67e6e2594a04f46a21e",
+  "timing": "AFTER statement FIT and initial author proof draft; not credited as the earlier pre-proof screen",
+  "libraries": {
+    "mpmath": "1.4.1",
+    "numpy": "2.5.4"
+  },
+  "covariance": "3 delta_0",
+  "a": "1/3",
+  "control": "h_0 tensor exp(-x^2)",
+  "test": "h_1 tensor m*f_1^2",
+  "raw_pair": "0.491263078927454047747192652499659678176943990725790487941398976679962611527",
+  "wrong_double_mask_pair": "0.406680695255802083012945263611928449724250564452168527412554969937253452482",
+  "mpmath_dps": 70,
+  "fft_arithmetic": "float64",
+  "periodic_interval": [
+    -4,
+    4
+  ],
+  "rows": [
+    {
+      "N": 512,
+      "dx": 0.015625,
+      "e_row": 0.4912630799942845,
+      "residual": 1.0668304317320126e-09,
+      "wrong_extra_covariance_gap": 0.9825261567880776,
+      "wrong_no_cell_division_gap": 0.19650523263781206,
+      "wrong_double_mask_gap": 0.0845823847384824,
+      "wrong_e_metric_gap": 1.087057856111499,
+      "grid_L2_norm_squared": 1.0000000024813316
+    },
+    {
+      "N": 1024,
+      "dx": 0.0078125,
+      "e_row": 0.4912630789270954,
+      "residual": 3.5862761298478205e-13,
+      "wrong_extra_covariance_gap": 0.9825261578552668,
+      "wrong_no_cell_division_gap": 0.196505231570623,
+      "wrong_double_mask_gap": 0.08458238367129334,
+      "wrong_e_metric_gap": 1.0870586869075916,
+      "grid_L2_norm_squared": 1.0000000000001688
+    },
+    {
+      "N": 2048,
+      "dx": 0.00390625,
+      "e_row": 0.491263078927454,
+      "residual": 2.5576030856504228e-17,
+      "wrong_extra_covariance_gap": 0.9825261578549082,
+      "wrong_no_cell_division_gap": 0.1965052315709816,
+      "wrong_double_mask_gap": 0.08458238367165194,
+      "wrong_e_metric_gap": 1.087058684658175,
+      "grid_L2_norm_squared": 1.0
+    }
+  ],
+  "scope": "spatial spectral E-row calibration and one-sided wrong-factor contrasts, not convergence proof/enclosure/operator construction/PDE simulation"
+}

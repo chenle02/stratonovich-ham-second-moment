@@ -685,3 +685,16 @@ officialL0/PROPOSED/candidateNone/lease/registry/HPC/companiondecision4stay.
 No compile/replay/numericrerun forclarity/promotion. Rawpre-appreceipt/status
 preserved,application-summary-v1 current. Kernelcertifiesfiniteconditional
 algebraONLY,notwholePGanalyticoptimization oractualoccupation/PDEapplication.
+
+## PB physical comparison: analytic boundary — 2026-10-31
+
+PBstatement/applicationFITpassed21HIGH884.243s at6de6728. The new author
+proof includesL2HilberttensorSchurcompletion,nonseparable rawcontrols and
+actualmeans,physicalGramguardfit,uniformnorm/smoothing/continuumarguments
+andoriginalpointupper/lowersandwich. AlltheseNEWanalyticstepsareOUTSIDE
+thekernelandrequiretheirOWNfullgate. ExistingPG finitecertificates and
+priorPGapplicationreviewremainunchanged;no directnewLeanapplication or
+statementisbeingclaimed. Trivialscalarcoercivityalonewouldnotcertifythe
+modelcomparison;no low-valuecompilejusttoincrementcount.78acceptedfacts/
+21seams/L0PROPOSED unchanged;existingmirroralreadyagrees. No companion,
+package/lease/registry/HPC action. Scientificauthoritystays../Progress.md.

@@ -70,8 +70,9 @@
 - **Immediate next:** PB1-PB5 physical signed-to-positive score comparison,
   frozen6de6728, exact target in
   reviews/2026-10-31-physical-score-comparison/target-v1.md. New normalization
-  diagnostics are complete; actualOpus5.5/HIGH statement/source FIT is live
-  at the native attempt recorded below. No PB proof is accepted. Own S_2
+  diagnostics and statement/source FIT are complete:21PASS/HIGH884.243s,
+  no requiredrepairs. The new author proof is being frozen for its OWN
+  FULL gate; no PB proof is accepted. Own S_2
   remains distinct from the REQUIRED original L_*/L^* constants.
 - **New accepted uniformR E Cameron/regulator:** scientificf54e92b,
   21checks/HIGH348.303s,no requiredrepairs;21input bindings/native archive
@@ -8159,3 +8160,43 @@ Skorohod/sourcefix/TeX/PDF/wiki/bib/publication, NoRoute/pushpending.
   byteparity/strictbudgetPASS. Genericquery'sarbitrarytop3guardFAILED;
   exactskillnameandspecificpaper-devtriggerreturnrank1. No rankwaiver
   claimed;retrievalcoverage isthoseactualqueries,notallgenericphrases.
+
+## PB fit accepted; nonseparable raw bridge and full author proof — 2026-10-31
+
+- Native79500TERMINAL0: actualOpus5.5/HIGH,21checksPASS,884.243seconds,
+  PASS_WITH_NOTES,no requiredrepairs. Canonicalparser/pass/correspondence/
+  fullcoveragePASS;18five-waybindings BEFOREnewproof;33rawnativearchive
+  membersreadbackhashed. Rawreportunmodified. Earlierchat22countcorrected21.
+- All6notesadjudicated: explicitnonseparablePsiHI/mean/costduty; numerical
+  TIMEindependenceonly/sharedspatialfactorlimit;URconsumerSections6-7(18);
+  unambiguousequationpinpoints;futurePB5mustcarryoldmechanismceiling;
+  harmlessMnormslackkept. No optionalprecisionimprovement/rerunofoldtests.
+- NEWauthorproof notes/physical-signed-positive-score-comparison.md supplies
+  PB0L2(time;Hsp)->HI Schurcompletion/nonseparablecompactrawinclusion/
+  SAMEv/actualmeanidentity;canonicalmeanversionforEACHfixedsmoothPsi for
+  allR,s,notanuncountablerough-controlversion. PB1actualnormalizedlabels/
+  physicalENTRYWISEGramorder;PB2supportremaskandNONCIRCULARuniformnorm
+  BEFOREUS2;PB3finiteprofiles/PG/smoothing/errororder;PB4fixedtestcutoff;
+  PB5SAMEoriginalpointOWNlimit. ALLNEWPROOFISUNREVIEWED,notapremise.
+- D1Riesz/whiteS_c=V_cdictionaryspellsoutSAMEsmoothclass/cost/H1rateusing
+  acceptedoccupationnote80e47d6. IfPB5passes,oldpositive-mechanismceiling
+  becomesaNEWmomentupper;strictownE_eta mapgapsretained. No authorconstant
+  identity/sourcefix/actualp1/Jensen-improvement claim. OriginalgoalACTIVE.
+- NEWAFTER-fitspatialErowcalibration separatelyevaluatesperiodicFFT
+  Hminus-halfmetric/Lambda-dual andadaptivequadrawpair.512/1024/2048nodes
+  residuals1.067e-9/3.586e-13/2.558e-17. ExtraGamma/noell/doublemask/wrong
+  Emetriccontrastsareone-sidedandnonzero. Float64FFT+70workingdigitquad,
+  NOcontinuumoperator/PDEsimulation/enclosure/statisticalconfidenceclaim.
+  OldV1time/samefactoroutputsunchanged;newchecktimingexplicit,notretrofit.
+- Gate class: scoped. Gate scope: completePB0-PB5authorproof+interfaces+
+  d1ceilingconsequence;ALLoriginalmodels. Routing NORMAL_REVIEW/PARTIAL:
+  unchangedoldfinitekernelinternalsreused,ALLnewanalyticlinksFULLreview.
+  No newLeancompile/factcount/package/companion/HPC. Officialdecision4open.
+- DelimitedREFRAMEafterfit: oneinternalanalyticcomparisonnote+FULLgate,
+  expectedvalueconnectsreviewedoriginalupper/lowermechanismsbeforeoriginal
+  sourceconstantcomparison. Stopadoptiononunrepaireddefect/circularity.
+  Novelty/fullpaper/index/citationgateOPEN;no manuscript/paperpromotion.
+- TimelyauthoritylessonLab6ebbed60pushedclean0/0,withdescription/projection/
+  byteparity/budgetandactualretrievallimitsretained. RootheadingsandLean
+  headingreconciledtoexistingaccepted78facts21seams,notnewpromotions.
+  <HUB>pushstillNoRoute;researchsource/evidenceLOCAL,rootloaderseparate.
