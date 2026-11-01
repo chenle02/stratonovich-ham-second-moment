@@ -81,8 +81,10 @@ checks and synchronization remain separate; this checkpoint alone does not
 declare this completion contract satisfied. This intrinsic theorem is now
 integrated in `notes/integrated_intrinsic_constant.tex`, scientifica880288,
 with its own full actualOpus5.5/HIGH30-check application review and no
-required repairs. Occupation/white-example integration, final presentation,
-whole-paper/cold-read and delivery gates remain OPEN. The older tracked
+required repairs. Occupation/white-example integration is now scoped-gated
+at scientific d041546 (packet 691f413), with 31 HIGH checks and no required
+repairs. Final presentation, whole-paper/cold-read, calibration/source and
+delivery gates remain OPEN. The older tracked
 TeX goal/summary paragraphs await the final reviewed presentation update.
 
 ## Scope limits

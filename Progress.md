@@ -197,10 +197,17 @@
   verified.11proofs/247pagesclean/193priorunchanged. Originalallmodel
   intrinsiclimitC2=Spos2=2^mSpos1 nowintegrated atscoped gate, notactualp1
   orauthorL, no wholepaper/goalcompletionclearance.
-- **Immediate next:** integrate full occupation bounds OC and white
-  evaluation WS into TeX, then presentation/calibrations/fullargument/
-  finalgates. Frozen target in
-  reviews/2026-11-01-occupation-white-tex-integration/target-v1.md.
+- **Accepted OC/WS TeX integration:** scientific d041546, packet 691f413,
+  actual Opus 5.5/HIGH, 31 named PASS checks, 388.996 seconds, no required
+  repairs. Native 57283 TERMINAL0; accepted/coverage true, 64 five-way
+  bindings, 53 texts/11 exact PNGs/79 native archive members verified.
+  Nine proofs, clean 254 pages, 204 earlier bodies unchanged. The planned
+  mathematical result set is integrated at scoped gates, not goal closure.
+- **Immediate next:** reconcile the consolidated manuscript and all final
+  presentation commitments, then run fresh whole-argument and final cold
+  reviews. Use reviews/2026-11-01-final-consolidation/target-v2.md and its
+  debt-inventory-v2.json. Calibration/source/wiki/private-delivery gates
+  remain open.
   Keep the frozen PB/OC/WS result set and full original model scope. The
   import interfaces are mapped; avoid repeating that inventory as a new round.
   Continue consolidating complete proofs into TeX/PDF, with clean builds
@@ -229,7 +236,7 @@
  rerun for promotion, new package/companion/lease/registry/HPC action.
 - **Git:** current mathematical work is in the isolated private research
   clone, branchresearch/fixed-mask-young-20261031. Latest result source
-  is95d7515; latest accepted TeX integration sourcea880288, with subsequent
+  is95d7515; latest accepted TeX integration source d041546 (packet 691f413), with subsequent
   adoption records separate.
   Fresh fetch/push failed with <HUB>NoRoute. Prior <HUB> parity
   receipts are historical, not evidence of current synchronization.
@@ -9964,3 +9971,55 @@ NEWpromptV2 addsONEseparator, NEWpacketV2/spec/manifest recaptured; no
 scientificreview call, mathematicalchange, model/threshold/mediawaiver.
 Existingliteral-filename ruleapplication failure, notnewskill. Required
 independent FULLgate stillPENDING; runfreshV2dryrun then ONEscientificcall.
+
+
+## 2026-11-01 — occupation bounds and white example integrated
+
+Scientific d041546d60693abdbe8ccedea12da2fb6ebb7d0d, packet-only contract
+repair 691f413ea74657a446df256def3301eb28321b6f. Actual first-party Opus
+5.5/HIGH returned 31 named PASS checks, PASS_WITH_NOTES/HIGH overall,
+388.996 seconds, no required repairs. Native 57283 TERMINAL0 with accepted
+review-complete receipt and verified coverage. Canonical parse/pass/
+correspondence/full-ledger gates passed; all 31 obligations occur once.
+All 64 five-way identities were verified before adoption. The 53 full
+texts and 11 typed PNGs were delivered, and all 79 native archive members
+were read back and hashed. Raw report unchanged, no recovery/scientific
+retry/model/auth/threshold waiver. Nine complete proofs, clean 254-page
+PDF, 204 old bodies unchanged; no final source/PDF edit on adoption.
+
+All five optional findings are adjudicated in the OC/WS integration folder.
+Final-pass commitments: narrow the penalty-one wording to "not universally
+favorable"; explicate the already accepted raw-test inclusion; reconcile
+local notation and inherited status prose. The Radon approximation and
+null-set-fill simplifications are optional and mathematically harmless.
+
+Accepted OC full-H1 physical-to-raw occupation identities, finite energy/
+dilation, countable Borel Rayleigh near-selector, both global optimizations
+with raw half-cost, denominator eight and penalty factor, all-model moment
+ceiling and common spatial-energy bracket. Raw and damped kernels remain
+distinct. Accepted WS full real-H1 CDF/endpoint/IBP identity, exact sech
+spatial energy and covariance-mass normalization, original moment bounds
+and Gamma relative width of the bound formulas. Every original model,
+amplitude and zero case is retained; white is an example. Bounds are not
+an exact numerical evaluation of C2 and no endpoint equals C2 is claimed.
+
+Three existing finite facts were reused at complete types and actual guards:
+strict_log_gap and two WhiteCDF deductions. No compiler/new fact/promotion;
+80 facts/22 seams, L0 PROPOSED and companion decision 4 are unchanged.
+All analytic occupation/H1/CDF/integration/Gamma/attainment/moment inputs
+remain outside those kernel certificates. Old screens were read, not run.
+No external primary/source-p1, novelty, human, whole-paper or goal clearance.
+
+The original failed V1 and passing V2 preflights are preserved, with all
+145 archive members read back and hashed. The missing filename separator
+was caught before a provider call; one separator in a new contract/packet
+fixed it without changing mathematics or waiving a gate. This was missed
+application of an existing rule. Use ordinary spaced prose and exact paths,
+not another generic skill. The final consolidation target applies this.
+
+The planned result set now has internal TeX proofs and scoped acceptance.
+Next: the frozen final consolidation target and manual debt reconciliation,
+then fresh whole-argument/final cold reviews, calibration/source fidelity,
+canonical wiki and actual private Git/<HUB> convergence. No goal
+completion claim. Source/packet pushes failed NoRoute. No contact, HPC,
+companion, Skorohod, sibling scientific edit or publication action.
