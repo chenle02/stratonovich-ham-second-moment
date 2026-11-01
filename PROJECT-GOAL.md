@@ -60,7 +60,17 @@ route cannot reach the scale t^κ.
 
 ## Completion contract (for any claimed result)
 
-[held back until the source author has been told]
+1. Every new statement has a complete written proof in the notes, with all
+   imported inputs labeled and pinpointed to the author-version PDF.
+2. The statement passes the calibrations in AGENTS.md (α₀→0; p=1;
+   Jensen; comparison with the Skorohod p=2 result).
+3. An adversarial review by a model family different from the author
+   (Claude Opus 5.5 skeptic), every finding adjudicated in Progress.md, and
+   a final DeepSeek cold read for any result Le may circulate.
+4. Clean build: 0 errors, 0 undefined references/citations, 0 overfull
+   boxes; PDF committed with the source.
+5. Progress.md, the wiki project page status line, and a handoff updated;
+   commits pushed and <HUB> in sync.
 
 Current internal mathematical checkpoint: scientific40ec9a9, adopted at
 d52d1d8, proves the all-model intrinsic limit C₂=S₂^pos=2^{(4−α)/(3−α)}S₁^pos
@@ -68,8 +78,12 @@ with the explicit positive raw-control class in
 `notes/physical-signed-positive-score-comparison.md`. This is not actual p1
 or an identification with Chen's L. Integration, final whole-paper/cold-read
 checks and synchronization remain separate; this checkpoint alone does not
-declare this completion contract satisfied. The older tracked TeX goals
-record the original setup until their reviewed integration update.
+declare this completion contract satisfied. This intrinsic theorem is now
+integrated in `notes/integrated_intrinsic_constant.tex`, scientifica880288,
+with its own full actualOpus5.5/HIGH30-check application review and no
+required repairs. Occupation/white-example integration, final presentation,
+whole-paper/cold-read and delivery gates remain OPEN. The older tracked
+TeX goal/summary paragraphs await the final reviewed presentation update.
 
 ## Scope limits
 

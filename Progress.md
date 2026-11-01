@@ -191,9 +191,16 @@
   Nineproofs/238pagesclean/184priorunchanged. Actual BT-to-GC finiteness,
   source-first originalpoint transfer and same-moment moving signedupper.
   Notyet positive-score/exactlimit from these sections alone.
-- **Immediate next:** integrate full finite PG1-PG2 and physical PB0-PB5
-  into TeX, thenOC/WS/fullargument/finalgates. Frozen target in
-  reviews/2026-11-01-positive-score-tex-integration/target-v1.md.
+- **Accepted PG/PB TeX integration:** scientifica880288, actualOpus5.5/HIGH,
+  30namedchecks455.588seconds,no requiredrepairs. Native16142TERMINAL0,
+  accepted/coverageTRUE;63fivewayinputs/50fulltexts/13exactPNGs/78rawfiles
+  verified.11proofs/247pagesclean/193priorunchanged. Originalallmodel
+  intrinsiclimitC2=Spos2=2^mSpos1 nowintegrated atscoped gate, notactualp1
+  orauthorL, no wholepaper/goalcompletionclearance.
+- **Immediate next:** integrate full occupation bounds OC and white
+  evaluation WS into TeX, then presentation/calibrations/fullargument/
+  finalgates. Frozen target in
+  reviews/2026-11-01-occupation-white-tex-integration/target-v1.md.
   Keep the frozen PB/OC/WS result set and full original model scope. The
   import interfaces are mapped; avoid repeating that inventory as a new round.
   Continue consolidating complete proofs into TeX/PDF, with clean builds
@@ -222,7 +229,7 @@
  rerun for promotion, new package/companion/lease/registry/HPC action.
 - **Git:** current mathematical work is in the isolated private research
   clone, branchresearch/fixed-mask-young-20261031. Latest result source
-  is95d7515; latest accepted TeX integration source3ac97c4, with subsequent
+  is95d7515; latest accepted TeX integration sourcea880288, with subsequent
   adoption records separate.
   Fresh fetch/push failed with <HUB>NoRoute. Prior <HUB> parity
   receipts are historical, not evidence of current synchronization.
@@ -9858,3 +9865,53 @@ notcontinuumPDEproof or enclosures. FULLactualOpus5.5HIGH gate PENDING.
 Freshknownaccountdoctor/READY passed; availabilityisnota scientificreview.
 ThenOC/WS/calibrations/fullargument/finalcoldread/lit/wiki/privateparity.
 No sourcefix/contact/HPC/companion/Skorohod/sibling/publication action.
+
+
+## 2026-11-01 — full finite Gram and original intrinsic limit integrated
+
+Scientifica880288423d7824b0ca902b0e3a83b57f9086558;11completeproofs,
+247pagesclean/0errors/undefined/overfull,193priorproofbodiesunchanged.
+ActualfirstPartyOpus5.5/HIGH30namedchecks,455.588seconds,PASS_WITH_NOTES,
+no requiredrepairs. Native16142TERMINAL0/review-complete accepted/coverage
+TRUE. Canonicalparse/pass/correspondence/fullcoveragePASS, ALL30required
+namedobligations exactlyonce.63fivewaylive/packet/Git/nativeworkspace/
+receiptbindings verified BEFOREadoption.50fulltexts+13exacttypedPNGs fully
+delivered;78rawnativearchive members readbackSHAverified. Rawreportunchanged,
+no recovery/retry/model/threshold/authwaiver. No finalsource/PDFedit.
+Nineoptional findings fullyadjudicated in
+reviews/2026-11-01-positive-score-tex-integration/adjudication-v1.md.
+
+Accepted PG arbitraryrealHilbert/finitepositiveell/nonnegativeb/weakentrywise
+Gram/zero-singular-empty: reciprocalbarrier+coercivity/interiordualminimum/
+strictHessian/stationarity, activeinfmaxinclzero/positiveconicprimal,
+finiteSchurGramrealization andentrywise optimizedcomparison withoutLoewner.
+Accepted PB actualrawBochnerinclusion/nonsepPsi/cost/meanrowmaskonce,
+actualnormalizedfinite labels/physicalGrams, UNIFORMoptimizernorm BEFORE
+averaging, positivesmoothing/cost+rate convergence, exact4e_n+2eps and
+orderedchoices, nonmonotonemask FIXEDcontrolcutoffremoval, SAMEcanonical
+pointupper/lower/fixedx ->C2=Spos2=2^mSpos1. Completevariationaldomain,
+ORIGINALGamma/amplitude/fullgradientkinetic/data(1,0)/allchains/d1/2/3/
+white/subcritical/zero retained. Spos1 AUXILIARYnotactualp1/authorL. OLD
+independentcanonicalupper provesfiniteness, notPB. No forcedChenconstant,
+sourceenergyrepair/Jensenimprovement. This is SCOPED AI scientific/
+applicationacceptance, notwholepaper/human/novelty/coldread/goalcompletion.
+
+FourexistingfinitePGfacts source/types/std3/actualguards reusedunchanged;
+80facts22seams/L0PROPOSED/decision4 unchanged,no compile/newfact/package.
+Allanalyticminimum/calculus/realization/rawphysical/PDE/limit consumers
+remainoutsidekernel. Olddiagnostics read/notrun, no enclosures or solver
+proof; optional radius/overlap illustrations notneededby theorem.
+
+Finalclaritydebts: define B_E locally; rawJ_Hsp-to-testclass separated
+approximation pointer; L_A>0 fromcoercivityatw0; Bochnerformlinearity and
+sumell1; explicitnonzero-standing/zero convention; EXACT Section36r and
+C_meanpointer; notationoverlaps; inheritedabstract/targets/summary/bib/
+titlewrapping. Validcutoffchain kept; no requiredrepairs or reviewer-authored
+new proof. These willjoin the finalpresentationpass beforewholeargumentgate.
+
+NextFULL OC/WS selectedtarget frozen BEFOREtranslation. ActualfullH1raw
+occupation ceiling/countableRayleighnearoccupation/scalaroptimization and
+commonEsp bracket, thenwhiteCDF/sech/spatialenergy/actualmomentbounds/Gamma
+width. Whiteexample is notscope reduction or exactC2numericvalue. Then
+calibrations/presentation/fullargument/finalcoldread/lit/wiki/privateparity.
+SourcepushNoRoute; no contact/HPC/companion/Skorohod/sibling/publication.
