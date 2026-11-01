@@ -1,0 +1,110 @@
+{
+  "scope": "Actual original d1 Gamma=delta0,alpha1,a=.5, RAW first-chaos point-wave kernels and Gaussian completion tests. Numerical covariance/MGF consistency, not certified quadrature/operator/Young/cone/event proof.",
+  "definitions": "delta=1/4; sm=m delta; k_m(s,y)=delta^(-1/2) 1_[sm,sm+delta](s) G1(1-(s-sm)/delta,y), G1(r,y)=.5*1_|y|<=r; X_m=W(k_m). Z=W(1_[0,1](s)*1_[-2,2](y)). One SAME W/Z, not independent time blocks.",
+  "completion_boundary": "Indicators and point-first-response kernels are raw H-completion tests in this admissible d1 model; NOT literal Cc-infinity Psi or a bounded point functional on F. CC-smooth positive test/averaging approximations converge at first chaos. No target low-Sobolev point trace is inferred.",
+  "covariance_formula": "Cij=delta^(1-a)/4 int_0^1 (1-r)^2[(|i-j|+r)^(-a)+abs(|i-j|-r)^(-a)]dr; CovXmZ=sqrt(delta)int_0^1(1-u)H(sm+delta*u)du; H(s)=int_0^1|s-t|^-a dt; VarZ=4*2/((1-a)(2-a)).",
+  "source_calibration": "K0 integrator after actual r=x\u00b2 substitution agrees with closed1/((1-a)(2-a)(3-a)); the evaluator is exercised, not a separately hardcoded return.",
+  "gaussian_test": "F(X)=exp(sum b_i X_i), b=(.1,.2,.3,.4). E F(X)=exp(-r\u00b2v/2) E[exp(-rZ)F(X+r Cov(X,Z))], r=delta^-1/2. Compare LOG values; wrong independence, missing Jacobian and diagonal-only cost all differ.",
+  "mask": "Any actual mask=1 on[-2,2] leaves the displayed first-chaos kernels and Z unchanged; no masked covariance cost substituted.",
+  "precision_scope": "40/65-working-digit printed agreement, NOT rigorous error/eigenvalue/accuracy certification. PSD follows from the actual test covariance construction; its numerical eigenvalue is only a consistency check.",
+  "runs": [
+    {
+      "working_digits": 40,
+      "Cxx": [
+        [
+          "0.26666666666666666666666667",
+          "0.08758056659898402602756732",
+          "0.059509552585192687164017311",
+          "0.048317818263261386917539997"
+        ],
+        [
+          "0.08758056659898402602756732",
+          "0.26666666666666666666666667",
+          "0.08758056659898402602756732",
+          "0.059509552585192687164017311"
+        ],
+        [
+          "0.059509552585192687164017311",
+          "0.08758056659898402602756732",
+          "0.26666666666666666666666667",
+          "0.08758056659898402602756732"
+        ],
+        [
+          "0.048317818263261386917539997",
+          "0.059509552585192687164017311",
+          "0.08758056659898402602756732",
+          "0.26666666666666666666666667"
+        ]
+      ],
+      "Cov_XZ": [
+        "0.61179430241598608556626894",
+        "0.69541763835085926001631204",
+        "0.70329983588468470017780097",
+        "0.65615489001513662090628472"
+      ],
+      "Cov_XZ_slow_test": [
+        "0.61179430241598608556626894",
+        "0.69541763835085926001631204",
+        "0.70329983588468470017780097",
+        "0.65615489001513662090628472"
+      ],
+      "Var_Z": "10.666666666666666666666667",
+      "joint_PSD_min_eigenvalue": "0.16444423009639880962599134",
+      "MGF_log_lhs": "0.065994876834698456270256968",
+      "MGF_log_correct_rhs": "0.065994876834698456270256968",
+      "wrong_independent_Z_log_rhs": "1.4134246062011594942217439",
+      "wrong_missing_Jacobian_log_rhs": "-0.94457742019014732219335825",
+      "wrong_diagonal_only_cost": "5.3333333333333333333333333",
+      "wrong_cost_log_rhs": "10.732661543501365122936924"
+    },
+    {
+      "working_digits": 65,
+      "Cxx": [
+        [
+          "0.26666666666666666666666667",
+          "0.08758056659898402602756732",
+          "0.059509552585192687164017311",
+          "0.048317818263261386917539997"
+        ],
+        [
+          "0.08758056659898402602756732",
+          "0.26666666666666666666666667",
+          "0.08758056659898402602756732",
+          "0.059509552585192687164017311"
+        ],
+        [
+          "0.059509552585192687164017311",
+          "0.08758056659898402602756732",
+          "0.26666666666666666666666667",
+          "0.08758056659898402602756732"
+        ],
+        [
+          "0.048317818263261386917539997",
+          "0.059509552585192687164017311",
+          "0.08758056659898402602756732",
+          "0.26666666666666666666666667"
+        ]
+      ],
+      "Cov_XZ": [
+        "0.61179430241598608556626894",
+        "0.69541763835085926001631204",
+        "0.70329983588468470017780097",
+        "0.65615489001513662090628472"
+      ],
+      "Cov_XZ_slow_test": [
+        "0.61179430241598608556626894",
+        "0.69541763835085926001631204",
+        "0.70329983588468470017780097",
+        "0.65615489001513662090628472"
+      ],
+      "Var_Z": "10.666666666666666666666667",
+      "joint_PSD_min_eigenvalue": "0.16444423009639880962599134",
+      "MGF_log_lhs": "0.065994876834698456270256968",
+      "MGF_log_correct_rhs": "0.065994876834698456270256968",
+      "wrong_independent_Z_log_rhs": "1.4134246062011594942217439",
+      "wrong_missing_Jacobian_log_rhs": "-0.94457742019014732219335825",
+      "wrong_diagonal_only_cost": "5.3333333333333333333333333",
+      "wrong_cost_log_rhs": "10.732661543501365122936924"
+    }
+  ]
+}

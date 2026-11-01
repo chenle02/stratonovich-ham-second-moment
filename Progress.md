@@ -9027,3 +9027,30 @@ recompilation. Preserve SAME W/Z/raw half-cost, correct amplitude, all
 full-phase blocks/remainder, source limits before delta, and e_rate/B order.
 Fresh private push failed NoRoute; final whole-paper/cold-read/wiki/remote
 delivery remain open. Actual-derived-constant goal ACTIVE.
+
+
+### Joint exact scaling / actual raw lower TeX candidate frozen
+
+Added notes/integrated_exact_scaling.tex (1proof block) and
+notes/integrated_raw_block_lower.tex (7proof blocks). Complete accepted
+DS Section1 and RB per-test original-point lower proof translated, with
+actual common-W/Z covariance, norm-Borel Gaussian law, scaled maxima,
+full-F cone/terminal positivity, source-induced raw restart, actual noise
+amplitude and original half-cost.118prior proof bodies unchanged by
+author check. No unmasking/optimization or sharp upper/limit claim yet.
+
+Clean176-page build:0errors/undefined references/citations/overfull boxes.
+All11pages166-176 inspected. Pre-freeze heading overflow repaired; visual
+pass caught default probability P paragraph-mark rendering, fixed by
+explicit mathbb P and re-inspected correctedp174, other10PNGs unchanged.
+Raw String.raw/C0/proof-end/label uniqueness gates PASS. Author PDF hash
+matched pinned64-page version; selected pages7/8/9 and source manifest
+supplied. Frozen61input packet:46full texts/14typed exact PNGs; media
+preflight PASS. Fresh Le Max93%weekly/shortunknown, firstParty claude.ai
+doctor and actualOpus5.5READY verified. Full integration gate PENDING.
+
+Four old scaling facts and nine old RB facts retain exact source/complete
+types/axioms/receipts; actual application guards mapped. No new kernel
+proof vote, compiler run, fact, official companion, package or HPC action.
+80facts22seams/L0PROPOSED unchanged. Goal ACTIVE, full upper/PB/OC/WS
+assembly, final whole-paper/cold-read/wiki/delivery still open.
