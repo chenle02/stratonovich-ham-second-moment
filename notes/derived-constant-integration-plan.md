@@ -418,3 +418,30 @@ coldread/lit/wiki/privateparity. KeepHALFglobalrawaction, nofastcostsum.
 Operationalguardlesson: spacedexactpaths inprompts; preflightmustpass
 withoutwaiver BEFOREprovider. Versionrefusal/repair/packet/spec/hashbindings;
 neverfixfrozenartifactsinplace orcallpre-provider refusal a scientificvote.
+
+
+## Actual E-law Gaussian tubes and coarse operator transfer accepted
+
+Scientific37f322f,8proofs/clean223pages/169priorunchanged. ActualfirstParty
+Opus5.5/HIGH26PASS511.526seconds,no repairs; native6552TERMINAL0 accepted/
+coverageTRUE.56fivewayinputs/44texts/12exactPNGs and71rawarchivefiles
+verified. Sixnotesadjudicated withoutfinalsource/PDFedit in
+reviews/2026-11-01-tube-transfer-tex-integration/adjudication-v1.md.
+GenuineactualAWS/CM/closedtubes/leastattainment/exacthalfaction, Rayleigh
+includingjumps/zero, sameWfullEtuple/RBrestart/SPglobalendpoint, uniform
+COARSEenvelope/finiteoperatorL2, exacttail/rawsup. No sharppointconstant.
+
+Finalpassfootnote3p190, W_misometry/L2 andHIseparabilitypointers, decay
+positivityguard3, a.s.endpoint/Gamma0directfreecase, null-distanceevent,
+G_Blowerfromv0/Younglabels/localsupportnotation. ZeroGammafreegroup law
+suppliesendpointwithoutusingnonzeroRBpremise.80facts22seamsunchanged.
+
+NextUSSections2-8 fulltarget in
+reviews/2026-11-01-uniform-products-tex-integration/ frozenbeforetranslation.
+ActualE-onlysignedform/rate/averaging/meanproducts/polynomialballs/ANY
+smallresidualtool, thenGC/UR/PG/PB/OC/WS/fullargument/coldread/lit/wiki/
+privateparity. gc-finiteness-audit-v2.md proposesBTB1 fixedparameterL2
+instead ofGLfiniteness inGCSection2(6),butapplicationSTILLUNREVIEWED;
+conservativegraphunchanged. No hardgrowingrate/point/sourceclaimdeleted.
+InternalRB alreadyprovidesthe needednoiserestart,independentlyverified;
+literalGLsourceanditsrate notaninputtoBT'sactualproof.

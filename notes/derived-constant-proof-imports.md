@@ -145,3 +145,17 @@ rechecks D1Sections2-3 generic first-chaos/Wiener realization on actual E;
 no norm-only concentration or finite-head consumer is silently imported
 through that method reference. No pruning, new upper rate or proof-closure
 certificate is adopted here. Current next U remains within the graph.
+
+
+## 2026-11-01 BT checkpoint and direct GC interface candidate
+
+Thedeclaredconservativegraphisunchanged. BT'sactualWienerrealizationand
+noise-onlyrestartnowhavecompleteinternalTeXproofs,scientific37f322f,
+actualOpus5.5HIGH26PASS511.526seconds. D1genericmethodiswrittenhere,
+not itsnormexponentialtheorem; thealreadyinternalL:raw-block-restart
+sufficesforGRinterfacewithoutGLrate. A futureGCapplicationcoulduseBT
+coarseoperatorsecondmomentfiniteness atB1 forSAMEdelta,Rdelta,Wfast/gdelta,
+replacingONLYGLfinitenessparagraph. Exactcandidate/guards in
+reviews/2026-11-01-tube-transfer-tex-integration/gc-finiteness-audit-v2.md.
+ThisisUNREVIEWEDasGCapplication, notanadoptedpruningorclosurecertificate.
+Keepallhistoricalproofs/reviews andvalidatewholeGCsourcebeforeanyremoval.

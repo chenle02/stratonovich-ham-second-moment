@@ -173,8 +173,13 @@
   63fivewayinputs/44fulltexts/19exactimages/78rawfilesverified.9proofs,
   216pagesclean,160priorunchanged. Actualroughphysicalwave/symplectic
   blockmeanbaseline only; no nonlinear/moment upgrade fromthesealone.
-- **Immediate next:** integrate actual E Gaussian control tubes/Rayleigh
-  transfer BT, thenUS/GC/UR/PG/PB/OC/WS/fullargument/finalgates.
+- **Accepted BT TeX integration:** scientific37f322f,actualOpus5.5/HIGH,
+  26PASSchecks511.526seconds,no requiredrepairs. Native6552TERMINAL0,
+  accepted/coverageTRUE,56fivewayinputs/44texts/12exactPNGs/71rawfiles
+  verified.8proofs,223pagesclean,169priorunchanged. ActualE-lawAWS/tubes/
+  RayleighCOARSEoperatorL2/globalhalfaction, notsharpconstant orpointupper.
+- **Immediate next:** integrate uniform E spectral/product/residual US
+  Sections2-8, thenGC/UR/PG/PB/OC/WS/fullargument/finalgates.
   Keep the frozen PB/OC/WS result set and full original model scope. The
   import interfaces are mapped; avoid repeating that inventory as a new round.
   Continue consolidating complete proofs into TeX/PDF, with clean builds
@@ -9565,3 +9570,52 @@ Opus5.5/HIGHgatePENDING; source/primary/actualapplicationpacket in
 reviews/2026-11-01-tube-transfer-tex-integration/. Freshroot/activefetch/
 focused<HUB>checkNoRoute; sharedscienceuntouched, no sync/parity.
 No contact/HPC/companion/Skorohod/sourcefix/sibling/publication.
+
+
+## 2026-11-01 — actual-law Gaussian tube transfer integration accepted
+
+Scientific37f322fd328a455ef3d0fea19514a810fbf1b9bb,8fullproofs,
+223pagesclean/0errors/undefined/overfull,169priorbodiesunchanged. Actual
+firstPartyOpus5.5/HIGH26PASS/PASS_WITH_NOTESoverall,511.526seconds,no
+requiredrepairs. Native6552TERMINAL0/review-complete accepted/coverageTRUE,
+actualrouteverified; canonicalparse/pass/correspondence/fullreadledger
+PASS. All56live/packet/Git/nativeworkspace/finalreceiptbindings verified
+BEFOREadoption.44fulltexts+12typedexactPNGs fullyread/delivered,all71raw
+nativearchivefiles SHAreadbackverified. Rawreportunchanged,no recovery/
+waiver/retry/fallback. No finalsource/PDFedit. All6minorfindingsadjudicated:
+reviews/2026-11-01-tube-transfer-tex-integration/adjudication-v1.md.
+
+AcceptedgenuineactualAWS/CM/support/measurablenorm/Radonconstruction,
+closedBoreltubes/leastattainment/exactCMhalfaction, Rayleighincluding
+jumps/zero, actualfullsameW Etuple/compactmean/SAanchor, RBrestart/global
+endpoint/SPnormbaseline, uniformCOARSEenvelope/finiteoperatorL2, exact
+front4/M²quartertail/rawhalfactionsup. Alloriginalcovariance/amplitudes/
+d1/2/3/white/subcriticalretained. No source-to-pointclaimor sharpmoment
+constantfromthissectionalone. D1genericproofwrittenSELFCONTAINED, no
+D1norm/Fernique11.7/GLrate/GLFfiniteness imported as a premise. LiteralGR
+GLtextnotreviewed; internalactualRBproofindependentlycheckedandsufficient.
+
+Finalclaritydebts: footnote3onp190only, W_mpathL2/isometryandHIseparability
+pointers, Qguard3givespositiveexponent(first2pathbound), endpointidentity
+a.s.andGamma0directfreeproduct, null{d=infinity}assignment, G_B>=1from
+v0, exactYounglabels/localE0_delta/deltarange. Allavailablearguments, no
+requiredrepair. Primaryexactselectedp190-191notfullbook/publisheraudit;
+sourcePDF/llmTexfreshSHAverified, normalizedPDFdifferent/non-equated.
+80facts22seams/L0PROPOSED/decision4unchanged,nocompiler/newfact/HPC/
+companion/contact/Skorohod/sibling/sourcefix/publication.
+
+NextUSfullSections2-8 targetfrozenBEFOREtranslation in
+reviews/2026-11-01-uniform-products-tex-integration/,6adoptedclarifications/
+E-onlyformconstants/scalartimeaveraging/trueblockproducts/polynomialballs/
+arbitraryresiduals/iteratedlimits. NoUSnewproofyet. gc-finiteness-audit-v2.md
+isanUNREVIEWEDconsumerapplicationcandidate: BT atB1 mayprovideEXACTfixed
+delta EflowsecondmomentneededbyGCSection2(6), bypassingoldGLfiniteness
+ONLYafteractualGCsource/applicationgate. PreserveoldFYcandidateaudit and
+conservativeGLF/MB/EA/D1graphuntilthen. No growingsharpratefromfiniteness.
+FutureGC/URpointconsumerremainsrequirednotdropped. Allfinalupper/PB/OC/WS/
+wholeargument/coldread/lit/wiki/privateparityOPEN. SourcepushNoRoute.
+
+Durablelessonsnow: exactsource/normalizedartifactidentityandreadingcoverage
+muststayseparate; footnoteandguardrolesprecise; proofdependencycompression
+requiresactualconsumerverificationnotonlyexistenceofstrongertheorem.
+CurrentBTacceptanceisNOTaGCsubstitutionreview. No newskill/unchangedrerun.
