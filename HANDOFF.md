@@ -1,14 +1,14 @@
-Last updated: 2026-11-01 09:16 UTC (Codex)
+Last updated: 2026-11-01 09:51 UTC (Codex)
 
 LATEST USER DIRECTION: derive the actual constants, whatever computation yields.
 Chen matching is not a completion requirement.
 
 ## ⏭ Next session: where to stand and what to do
 
-FIRST integrate temporal equilibrium and physical spatial/occupation foundation (TE/GI/B1-B4)
+FIRST integrate actual compact mean/Cameron and generic Young upper foundation (C1-C3/E1)
 into TeX in ACTIVE
 ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave,
-branch research/fixed-mask-young-20261031, clean local HEAD 698846b.
+branch research/fixed-mask-young-20261031, clean local HEAD 110de6f.
 Read its PROJECT-GOAL.md, AGENTS.md, Progress.md and
 notes/derived-constant-integration-plan.md and derived-constant-proof-imports.md
 in its notes directory. Root mathematical files and
@@ -24,7 +24,7 @@ review68458(v3PASS0),71223(v2coverage-refusal3), or v1preflight5.
 FR/AV TeX integration is now ACCEPTED: scientificf5c1521,adoption7dbcd4a,
 27PASS/HIGH382.209seconds,no mandatory repairs. Review13477 isTERMINAL0,
 not a task to restart. Read the frozen next target in
-reviews/2026-11-01-spatial-occupation-tex-integration/target-v1.md in ACTIVE.
+reviews/2026-11-01-upper-foundation-tex-integration/target-v1.md in ACTIVE.
 FG/CC is now ACCEPTED: scientific2571a15,adoption22e3426,24HIGHchecks
 323.168seconds,no repairs. Native74139 TERMINAL0; old16481 remains
 rejected (rawFAIL/HIGH,canonical invalid-report). Do not restart either.
@@ -51,7 +51,11 @@ UL now ACCEPTED: scientificf4311eb,adoption698846b,22passing checks/HIGH
 429.462seconds,no required repairs. Native69249 TERMINAL0; do not restart.
 Unmasked Rayleigh lower, numerical mask removal, full Radon dilation and
 positive finite score homogeneity now integrated. S1 remains auxiliary,
-not actual p1. Sharp upper/exact-limit assembly and final gates remain.
+not actual p1. TE/GI/B1-B4 now ACCEPTED: scientificbda7990,
+adoption110de6f,21passing checks/HIGH367.179seconds,no repairs.
+Native36578 TERMINAL0; do not restart. Exact temporal mass, physical
+full-H1 pairing/absolute continuity, spatial energy and FULL measurable
+occupation class now integrated. Sharp upper/exact assembly/final gates remain.
 No owned reviewer or computation remains live.
 
 ## Pre-flight checks
@@ -133,23 +137,34 @@ No owned reviewer or computation remains live.
     Final presentation: closed-ball support convention (also Green sphere),
     R>=R0 eligibility and negative floor before squared-rate wording.
 
+13. TE/GI/B1-B4 scientificbda7990/adoption110de6f:21passing checks/HIGH,
+    367.179seconds,no repairs.30five-way inputs,20full texts/9exact PNGs,
+    45raw archive files verified.189-page clean PDF;9new proofs,132prior
+    unchanged. No source/PDF edits on adoption. Eight optional notes
+    adjudicated; no approximate numerical values adopted. No finite
+    application/compiler/fact;80facts22seams unchanged. Capture audit fixed
+    next-target running label to COMPLETED_AT_CAPTURE with superseded
+    text/timestamps/reason retained; no review/source restart.
+
 ## Concrete deliverables for the next session
 
-- Follow frozen TE/GI/B1-B4 target in ACTIVE. Integrate exact temporal
-  equilibrium through TEequation4 (endpoints/L1/L2/mass), Gamma duplication
-  GIequation5 ONLY, and BSections1-5 physical spatial/occupation foundation.
-  No TE rough-control/d1 stochastic, GI numeric/d1, or BSection6 comparison.
-- Actual smooth temporal/static controls FIRST yield finite smooth spatial
-  ratio from finite S1. Do not assume a GN bound or rough H1 extension.
-- Prove representative independence under positive two-point measure,
-  signed smooth PSD, Fatou then ABSOLUTE four-linear continuity/density,
-  exact full real H1 pairing/CS and spatial energy map. No global H1-to-
-  supremum embedding in d2/3 or nonsmooth-modulus shortcut.
-- FULL strongly H1-measurable occupation class, physical pair measurability,
-  exact positive damped-kernel row, finite/positive own energy; no smooth-
-  optimizer restriction, equality or numeric/source-energy identification.
-- Then actual Cameron/upper/PB/OC/WS integration, clean PDF/source/visual
-  and full independent gates, final whole-argument/cold-read and delivery.
+- Follow frozen C1-C3/E1 target in ACTIVE. Fractional physical covariance
+  products from the ACTUAL H1 four-linear bound, compact spatial mean map
+  on exact F, actual supported raw tensor/time Hilbert identification and
+  compact time-space mean. Physical root eta_R gives mask eta_R squared
+  ONCE; spatial covariance applies ONCE. No raw quotient multiplier.
+- Actual GIVEN-W residual Cameron covariance with stopped interaction
+  paths/true final remainder, BOTH constant responses, compact Bochner
+  conjugation, exact delta-weighted norm and sqrt(delta)epsilon_J bound.
+  FixedR only; no trace-class/instantaneous L2 Gaussian or uniformR tail.
+- E1 generic Banach Young perturbation ONLY: refined zero-error growth,
+  Ctheta inverse bounds and left conjugation/product via remainders,
+  exact deterministic endpoint with arbitrary bounded left factor.
+  E2-E4 actual concentration/head/product consumers stay separate.
+- Existing Mathlib finite power-mean COMPLETE type is unchanged. Verify
+  r/p, nonnegative t_m^p, cardinal and exact norm guards, no new compile/fact.
+- Then remaining actual upper/PB/OC/WS and final whole-argument/cold-read,
+  clean source/PDF/visual/full independent gates and private delivery.
 - Recover private pushes/wiki queue/<HUB> parity when available.
 
 ## Success criteria for the immediate next step
@@ -1603,10 +1618,27 @@ paper pass. Next TE/GI/B1-B4 target frozen with exact exclusions; no old d1
 stochastic consumers promoted. Fresh private pushNoRoute; no live jobs.
 Full sharp-upper/exact assembly/cold-read/delivery open; goalACTIVE.
 
+2026-11-01 temporal/physical occupation integration: scientificbda7990,
+adoption110de6f; actualOpus5.5/HIGH21passing checks (17PASS,4notes),
+367.179seconds,no repairs. Native36578 TERMINAL0,accepted/coverage true.
+30five-way inputs,20complete texts/9exact images,45raw archive members
+verified. Eight notes adjudicated without source/PDF edits. Clean189-page
+PDF;9new proofs,132prior unchanged. Exact temporal potential/mass, actual
+smooth controls/FIRST finite spatial ratio, physical representative-
+independent integrals, signed PSD/Fatou/ABSOLUTE four-linear continuity
+on full real H1, own spatial energy and FULL strong-H1 occupation bound.
+No rough evolution, optimizer/equality/numeric/source-energy/p1 identity
+or old d1 consumers promoted. Zero-energy suprema by small dilation.
+80Lean facts22seams unchanged. Next C1-C3/E1 target/old finite type frozen;
+fixedR/non-trace/uniformR negative guards retained. Review capture label
+corrected from prior live observation using receipt timestamps, preserving
+superseded record. Private pushNoRoute; no owned live jobs. Actual-derived-
+constant goalACTIVE, upper/exact/cold-read/delivery remain open.
+
 ## Repo & git state at handoff
 
-Before this HANDOFF-only successor root master HEADa68a2f0. Active research
-clean HEAD698846bee4331c1c85c556fc96a5bca54e12026f. Private origin remains
+Before this HANDOFF-only successor root master HEADe6bfd06. Active research
+clean HEAD110de6f97cccbc497fce07639dc35d517b9b4723. Private origin remains
 <HUB> bare; fresh push failed SSH NoRoute, no synchronization claimed.
 Last-fetched root611c005/research6937719 remain historical observations.
 No implicit research/master merge. Scientific work stays in isolated ACTIVE;
