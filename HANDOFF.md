@@ -5,10 +5,10 @@ Chen matching is not a completion requirement.
 
 ## ⏭ Next session: where to stand and what to do
 
-FIRST integrate the joint fixed-mask moment/Young proofs (FM/FY)
+FIRST integrate the compact-mean ground family and full-F complement (CG)
 into TeX in ACTIVE
 ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave,
-branch research/fixed-mask-young-20261031, clean local HEAD 65cbf05.
+branch research/fixed-mask-young-20261031, clean local HEAD 0a6b71f.
 Read its PROJECT-GOAL.md, AGENTS.md, Progress.md and
 notes/derived-constant-integration-plan.md and derived-constant-proof-imports.md
 in its notes directory. Root mathematical files and
@@ -24,7 +24,7 @@ review68458(v3PASS0),71223(v2coverage-refusal3), or v1preflight5.
 FR/AV TeX integration is now ACCEPTED: scientificf5c1521,adoption7dbcd4a,
 27PASS/HIGH382.209seconds,no mandatory repairs. Review13477 isTERMINAL0,
 not a task to restart. Read the frozen next target in
-reviews/2026-11-01-moment-young-tex-integration/target-v1.md in ACTIVE.
+reviews/2026-11-01-compact-mean-tex-integration/target-v1.md in ACTIVE.
 FG/CC is now ACCEPTED: scientific2571a15,adoption22e3426,24HIGHchecks
 323.168seconds,no repairs. Native74139 TERMINAL0; old16481 remains
 rejected (rawFAIL/HIGH,canonical invalid-report). Do not restart either.
@@ -34,8 +34,12 @@ remains rejected. Do not restart either. Actual compact first driver/path
 is constructed on GIVEN W, local fixedR,T. SC now ACCEPTED: scientific
 8a2add9,adoption65cbf05,20HIGH checks405.681seconds,no required repairs.
 Native45691 terminal receipt exit0; do not restart. Literal retaining
-coupling, source convergence and ordinary response proved; nonlinear
-Young/canonical moment identification remains separate.
+coupling, source convergence and ordinary response proved. Joint FM/FY
+now ACCEPTED: scientific5caa2e8,adoption0a6b71f,23passing checks/HIGH
+479.376seconds,no repairs. Native39688 TERMINAL0; do not restart.
+Actual F Young/source solution and W-measurable average close the exact
+conditional mask-L2 premise and compare to the original canonical point
+moment. Fixed mask/horizon only; asymptotic assembly remains separate.
 No owned reviewer or computation remains live.
 
 ## Pre-flight checks
@@ -80,20 +84,29 @@ No owned reviewer or computation remains live.
 8. Novelty/full-literature/index/citation status remains incomplete. Use
    canonical repo-queue for wiki updates; no correspondence authorized.
 
+9. Latest FM/FY scientific5caa2e8/adoption0a6b71f:23passing checks/HIGH,
+   479.376seconds,no required repairs.48five-way bindings,30full texts,
+   17exact images and63raw archive files verified.160-page clean PDF,
+   11new proofs,100old bodies unchanged. No final source/PDF edits on
+   adoption. Actual W-measurable source-L2 average closes conditional
+   transfer.80Lean facts22seams unchanged. CG plan/source preflight only;
+   selected Teschl140/141/258/273 checked, not a whole-book review.
+
 ## Concrete deliverables for the next session
 
-- Follow the frozen joint FM/FY integration target in ACTIVE. Translate
-  the complete accepted moment-transfer and constant-phase Young proofs;
-  the Young construction must establish the masked-average L2 premise.
-  Retain all mixed/self pairings, positive Green measures, full canonical
-  point-moment source limit and physical mask after regularization.
-- Construct total distributional F=E plus BOTH constants, physical finite
-  propagation and constant-response columns; E is not dense in F. Prove
-  actual source flow, data(1,0), Young stability and Gaussian uniform
-  integrability. No Sobolev point trace or nonlinear covariance shortcut.
-- Do not re-integrate accepted SC/AD/FG/CC. Keep full original model scope.
-- Build/inspect PDF and obtain fresh full native Opus5.5/HIGH integration
-  gate. Full lower/upper/PB/OC/WS and whole-paper/final cold-read follow.
+- Follow the frozen CG integration target in ACTIVE. Translate the complete
+  accepted compact-mean ground-family proof on the actual F phase. Require
+  the common negative trial BEFORE ground simplicity. Keep both fractional
+  Sobolev entries, the decaying mode and full constant-forcing tail in the
+  complementary wave estimate. No E-density-in-F or d1-tail shortcut.
+- Preserve every original nonseparable positive Psi and raw variance cost;
+  only the finite trial/mask grows to obtain binding. Pin Teschl SECOND
+  edition and actual application hypotheses. No fixed-profile all-strength
+  binding claim. Keep all original models and admissible amplitudes.
+- Then DS scaling and actual raw-block event/lower/UL, remaining upper/
+  PB/OC/WS integration. Do not re-integrate accepted FM/FY/SC/AD/FG/CC.
+- Clean build/inspected pages/full native actualOpus5.5/HIGH correspondence
+  gate; final whole-argument and cold-read remain required.
 - Recover private pushes/wiki queue/<HUB> parity when available.
 
 ## Success criteria for the immediate next step
@@ -1481,10 +1494,25 @@ facts22seams unchanged. Joint FM/FY target frozen before translation.
 Private push again failed NoRoute; no owned review/computation remains live.
 Full integration/cold-read/delivery remain open; actual-constant goalACTIVE.
 
+2026-11-01 joint FM/FY integration checkpoint: scientific5caa2e8,
+adoption0a6b71f; actualOpus5.5/HIGH23passing checks (20PASS,3notes),
+479.376seconds,no required repairs. Native39688 TERMINAL0,accepted/coverage
+true. All48five-way inputs,30complete texts/17exact images,63raw native
+file members verified. Seven optional notes adjudicated with no final
+source/PDF edit. Clean160-page PDF;11new proof blocks,100prior unchanged.
+Actual positive chains/full source point-moment limit and full F Young
+flow now integrated; W-measurable tested average PROVES the conditional
+mask-L2 premise and gives original point second-moment comparison.
+Both phase entries/constants and TOTAL finite propagation retained.
+No uniformR or asymptotic constant from this local module.80Lean facts/
+22seams unchanged. Next CG target frozen before translation, selected
+Teschl SECOND-edition hypothesis/source audit retained. Fresh private
+push again NoRoute. No owned live jobs; goalACTIVE, final gates remain.
+
 ## Repo & git state at handoff
 
-Before this HANDOFF-only successor root master HEADda4102f. Active research
-clean HEAD65cbf0529a9df92846f8bd32c963aa3910cf0c3a. Private origin remains
+Before this HANDOFF-only successor root master HEADb2261c0. Active research
+clean HEAD0a6b71f21bc8d5aff8c9163a0968d4afaf81f99c. Private origin remains
 <HUB> bare; fresh push failed SSH NoRoute, no synchronization claimed.
 Last-fetched root611c005/research6937719 remain historical observations.
 No implicit research/master merge. Scientific work stays in isolated ACTIVE;
