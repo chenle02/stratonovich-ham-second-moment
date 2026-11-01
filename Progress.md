@@ -9915,3 +9915,43 @@ commonEsp bracket, thenwhiteCDF/sech/spatialenergy/actualmomentbounds/Gamma
 width. Whiteexample is notscope reduction or exactC2numericvalue. Then
 calibrations/presentation/fullargument/finalcoldread/lit/wiki/privateparity.
 SourcepushNoRoute; no contact/HPC/companion/Skorohod/sibling/publication.
+
+
+## 2026-11-01 — full occupation and white evaluation integration frozen
+
+Previousgoalturn PROGRESS: fullPG/PBa880288 acceptedat7bbc946,
+30HIGHnamedchecks/no requiredrepairs; allownedjobs terminal. Current
+workstartedclean7bbc9465b6bfa3ad0525cd27cb1e2e2bf9206800 and followed
+frozenOC/WStarget. Le's actualconstantrevision preserved, notforcedChen.
+
+Added notes/integrated_occupation_ceiling.tex (fivecompleteproofs) and
+notes/integrated_white_evaluation.tex (fourcompleteproofs). Fullphysical
+H1square-to-Hsp/rawtime identities, actualHilbertCS/occupationclass,
+positivefiniteenergy/Radon scaling/globalratio, COUNTABLE L2-UNIT H1
+nearprofiles/FIRSTINDEX BORELselector/kineticbound, correctupperdirection,
+Tandvglobaloptimizations withRAWHALFcost/denominator8/penaltyfactor,
+actualallmodelceiling/commonEspbracket andOWNFmapcomparison. Penaltyeta
+renamedzeta; auxiliaryscorec renamedfraktc separatefromwhite covariance
+massc. No kernel or model changes. WhiteFULLrealH1AC/CDF/IBP/endpoints/
+ALLrealz square, exactsechspatialratio/energy, physicalDiracmass/parent
+coefficientsubstitution/actualC2bounds, positiveGammaL2CS widthformula.
+Alloriginalmodels/amplitudes/data/zero retained; whiteexample notscope
+reduction, bounds notexactC2value orenclosures. Oldd1dampedalternative
+notanallmodelpremise, no intendedsourceenergyidentity/actualp1claim.
+
+204oldproofbodies byte-identical,9newproofs. String.raw/C0/noTabs/formatter/
+unique labels/proofendsPASS. Clean254pagePDF:0errors/undefined/overfull.
+All11final/context/bibPNGs244-254 inspected. L2-unitratherthanH1normunit
+trialclass clarified BEFOREbuild/freeze. Completepacket53texts/11typed
+images/fullownparents/finite source+types+std3+provenance supplied. Three
+existingfinitefacts strict_log_gap andtwoWhiteCDF reused atEXACTguards;
+80facts22seams/L0PROPOSED/decision4 unchanged,no compile/newfact/promotion.
+AnalyticC4/raw/H1/CDF/Gamma/attainment/momentconsumers remainoutsidekernel.
+Olddiagnostics read/notrun, no numericalproof/enclosure claim.
+
+FULLactualOpus5.5HIGH source/proof/statement/actualapplication gate PENDING.
+Freshknownaccountdoctor/READY andtypedmedia guardPASS, notscientificreview.
+Inheritedabstract/targets/summary andallparentminorclarity/bib/title debts
+awaitfinalpresentation beforewholeargumentgate. Thenexplicitcalibrations/
+sourcefidelity/fullargument/finalcoldread/lit/wiki/privateparity remain.
+No sourcefix/contact/HPC/companion/Skorohod/sibling/publication action.
