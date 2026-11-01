@@ -1,14 +1,14 @@
-Last updated: 2026-11-01 09:51 UTC (Codex)
+Last updated: 2026-11-01 10:31 UTC (Codex)
 
 LATEST USER DIRECTION: derive the actual constants, whatever computation yields.
 Chen matching is not a completion requirement.
 
 ## ⏭ Next session: where to stand and what to do
 
-FIRST integrate actual compact mean/Cameron and generic Young upper foundation (C1-C3/E1)
+FIRST integrate uniform-radius E mean and actual regulator (U)
 into TeX in ACTIVE
 ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave,
-branch research/fixed-mask-young-20261031, clean local HEAD 110de6f.
+branch research/fixed-mask-young-20261031, clean local HEAD 488d089.
 Read its PROJECT-GOAL.md, AGENTS.md, Progress.md and
 notes/derived-constant-integration-plan.md and derived-constant-proof-imports.md
 in its notes directory. Root mathematical files and
@@ -24,7 +24,7 @@ review68458(v3PASS0),71223(v2coverage-refusal3), or v1preflight5.
 FR/AV TeX integration is now ACCEPTED: scientificf5c1521,adoption7dbcd4a,
 27PASS/HIGH382.209seconds,no mandatory repairs. Review13477 isTERMINAL0,
 not a task to restart. Read the frozen next target in
-reviews/2026-11-01-upper-foundation-tex-integration/target-v1.md in ACTIVE.
+reviews/2026-11-01-uniform-e-mean-tex-integration/target-v1.md in ACTIVE.
 FG/CC is now ACCEPTED: scientific2571a15,adoption22e3426,24HIGHchecks
 323.168seconds,no repairs. Native74139 TERMINAL0; old16481 remains
 rejected (rawFAIL/HIGH,canonical invalid-report). Do not restart either.
@@ -55,7 +55,12 @@ not actual p1. TE/GI/B1-B4 now ACCEPTED: scientificbda7990,
 adoption110de6f,21passing checks/HIGH367.179seconds,no repairs.
 Native36578 TERMINAL0; do not restart. Exact temporal mass, physical
 full-H1 pairing/absolute continuity, spatial energy and FULL measurable
-occupation class now integrated. Sharp upper/exact assembly/final gates remain.
+occupation class now integrated. C1-C3/E1 now ACCEPTED: scientific5e36bcb,
+adoption488d089,18passing checks/HIGH512.225seconds,no repairs.
+Native66685 TERMINAL0; do not restart. Actual compact mean/Cameron map
+and generic endpoint-preserving Young upper now integrated, FIXED R only.
+Uniform E controls, actual stochastic/spectral/product/point upper and
+exact-limit/final gates remain.
 No owned reviewer or computation remains live.
 
 ## Pre-flight checks
@@ -146,25 +151,32 @@ No owned reviewer or computation remains live.
     next-target running label to COMPLETED_AT_CAPTURE with superseded
     text/timestamps/reason retained; no review/source restart.
 
+14. C1-C3/E1 scientific5e36bcb/adoption488d089:18passing checks/HIGH,
+    512.225seconds,no repairs.50five-way inputs,36full texts/13exact PNGs,
+    65raw archive members verified.197-page clean PDF;9new proofs,141prior
+    unchanged. No source/PDF edits on adoption. FixedR actual mean/Cameron
+    covariance and CM quotient, non-trace guard and generic LEFT Young
+    endpoint bound, no concentration/moment upper. Nine optional notes
+    adjudicated;80facts22seams unchanged, no compiler/new fact.
+
 ## Concrete deliverables for the next session
 
-- Follow frozen C1-C3/E1 target in ACTIVE. Fractional physical covariance
-  products from the ACTUAL H1 four-linear bound, compact spatial mean map
-  on exact F, actual supported raw tensor/time Hilbert identification and
-  compact time-space mean. Physical root eta_R gives mask eta_R squared
-  ONCE; spatial covariance applies ONCE. No raw quotient multiplier.
-- Actual GIVEN-W residual Cameron covariance with stopped interaction
-  paths/true final remainder, BOTH constant responses, compact Bochner
-  conjugation, exact delta-weighted norm and sqrt(delta)epsilon_J bound.
-  FixedR only; no trace-class/instantaneous L2 Gaussian or uniformR tail.
-- E1 generic Banach Young perturbation ONLY: refined zero-error growth,
-  Ctheta inverse bounds and left conjugation/product via remainders,
-  exact deterministic endpoint with arbitrary bounded left factor.
-  E2-E4 actual concentration/head/product consumers stay separate.
-- Existing Mathlib finite power-mean COMPLETE type is unchanged. Verify
-  r/p, nonnegative t_m^p, cardinal and exact norm guards, no new compile/fact.
-- Then remaining actual upper/PB/OC/WS and final whole-argument/cold-read,
-  clean source/PDF/visual/full independent gates and private delivery.
+- Follow frozen U target in ACTIVE. Uniform physical cutoff, fractional
+  product and E mean bounds, translation/heat tail and TRUE spatial
+  Fourier projections on the actual closed covariance image. No density
+  assumption on mu or periodic state, keep boundary mass and noise maskONCE.
+- Dimension-free Hilbert-valued time tensor tail, with no tensor compactness
+  assertion. Actual retained pi_J tensor P_K generally has INFINITE spatial
+  rank. Correct extension P_full=i_I P_ret i_I^* on H_W, same given W.
+- Actual projected residual covariance/CM norm at true remainder, sqrt(delta)
+  and exact delta norm, explicit radius-independent free constants. E only,
+  no F uniformR/finite Gaussian head, expected stochastic norm or sharp upper.
+- Existing Mathlib finite type unchanged; check actual guards, no compile.
+- Separate gc-finiteness-audit-v1.md is UNREVIEWED. Conservative graph stays
+  until future GC/BT gate checks SAME driver/phase/source correspondence.
+  No growingR rate follows from fixed-parameter F moments/E restriction.
+- Then stochastic anchor/signed spectral/phase/tube/product/point upper,
+  PB/OC/WS and final whole-argument/cold-read plus private delivery.
 - Recover private pushes/wiki queue/<HUB> parity when available.
 
 ## Success criteria for the immediate next step
@@ -1635,10 +1647,25 @@ corrected from prior live observation using receipt timestamps, preserving
 superseded record. Private pushNoRoute; no owned live jobs. Actual-derived-
 constant goalACTIVE, upper/exact/cold-read/delivery remain open.
 
+2026-11-01 actual upper foundation: scientific5e36bcb,adoption488d089;
+actualOpus5.5/HIGH18passing checks (16PASS,2notes),512.225seconds,no repairs.
+Native66685 TERMINAL0,accepted/coverage true.50five-way inputs,36full texts/
+13exact PNGs,65raw archive files verified. Nine notes adjudicated without
+source/PDF edits. Clean197-page PDF;9new proofs,141prior unchanged.
+Fractional physical products, compact spatial/time mean MAPS, supported
+raw tensor, non-trace time covariance, actual given-W stopped residual/
+Cameron map with exact delta norm and true remainder/constant columns;
+generic refined LEFT Young endpoint factor with zero-error cost now in TeX.
+FixedR only, no concentration/uniformR/moment upper. Old finite type/guards
+reused, no compile/new fact;80facts22seams unchanged. Next U target frozen;
+separate GC finiteness substitution candidate UNREVIEWED, conservative
+branches preserved until actual GC/BT gate. Fresh private pushNoRoute;
+no owned live jobs. Upper/exact/final cold-read/delivery open, goalACTIVE.
+
 ## Repo & git state at handoff
 
-Before this HANDOFF-only successor root master HEADe6bfd06. Active research
-clean HEAD110de6f97cccbc497fce07639dc35d517b9b4723. Private origin remains
+Before this HANDOFF-only successor root master HEAD3b42f85. Active research
+clean HEAD488d089d7ef3ee72971182e53e2f450323231759. Private origin remains
 <HUB> bare; fresh push failed SSH NoRoute, no synchronization claimed.
 Last-fetched root611c005/research6937719 remain historical observations.
 No implicit research/master merge. Scientific work stays in isolated ACTIVE;
