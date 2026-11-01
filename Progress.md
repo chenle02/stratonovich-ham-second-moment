@@ -10499,3 +10499,54 @@ source/version check prompted by Le's complex-time talk observation may
 proceed independently; it changes no frozen source by itself. This is
 continued research work, not a substitute for mandatory Opus/source/visual/
 whole/cold gates. Goal completion remains unproven and active.
+
+
+## 2026-11-01 — page-count concern converted into bounded dependency audit
+
+Le asked why the manuscript approached300pages. Checked the actual257-page
+PDF and compiled section starts: the document had accumulated historical
+alternative arguments, diagnostics/review prose and extensive separately
+proved foundations. Page count is not correctness or completed progress.
+The reply acknowledged that a focused manuscript/archive separation should
+have been maintained earlier; no short final page count was promised.
+
+Added author-only manuscript-dependency-audit with a reproducible explicit
+label/reference traversal bound to all28current source bytes at887fbfb.
+All213proof IDs were accounted for. H:homog/T:full-upper/intrinsic-limit
+roots reach143proof blocks; adding occupation/spatial/white/Jensen roots
+reaches158. The other55are candidates for archive/appendix review, NOT
+proved dispensable. Unlabelled context/definitions/imports and navigation
+references prevent a semantic-minimality conclusion from this parser.
+No unresolved core reference ID is a syntax fact, not proof completeness.
+
+Verified the traversal reaches no proof/heading of Sections4-9; checked
+root/theorem joins explicitly. Manual reading guide identifies exact-limit
+matching first, its lower and upper parents, actual original-noise/Young
+construction and the earlier full-upper prerequisites. It preserves the
+average-OF-SQUARES upper versus SQUARE-OF-AVERAGE lower distinction, both
+phase components, raw variance-half cost, fixed-F versus uniform-E use
+and absence of an unmasked ground-state assumption. It proposes no source
+extraction/deletion or smaller passing review corpus. Current contracts
+still assign ALL213proofs/44sections/86primary/257current renders.
+
+Completed the independent bounded wiki-first current-source/version check:
+ran wiki CLI search/cite and read relevant synthesized source/model/regime
+boundaries before primary retrieval. Current author-listed PDF532563bytes,
+64pages, SHA2565f7385ca451e643a1f3ff31835e4ee52b2708b5d2e3652eec3fb5d3958b97b6c
+exactly matches our held edition. Fresh rendered3/6/42read: Theorem1.2
+remains two-sided; (1.22) is conjecture; Remark6.3 retains the one-chain
+ordering obstruction. Author publication list says AAPaccepted, but PDF
+still has submitted header: no publisher pagination/theorem upgrade inferred.
+ArXiv landing history is v1 only; old exact-limit attribution is not restored.
+An alternate hp-23 search hit was not inspected/adopted. No specific talk
+transcript identified, full proof verification, MathSciNet/citing-chain or
+global novelty clearance. No new reference/edition or corpus write.
+Receipts/selected renders/HTTP and publication HTML snapshots retained in
+source-version-check; exact original edition and frozen science unchanged.
+
+These are concrete author architecture/source-reading results, not new
+mathematics or independent acceptance. No TeX/PDF/Lean/input byte changed,
+no compiler rerun or new package/companion/HPC/contact/public release.
+No reviewer is live; known-denied Opus routes have not been retried before
+the documented23:30UTCreset. Required source/visual/whole/cold gates remain
+open. Goal remains active; necessary independent work progressed this turn.

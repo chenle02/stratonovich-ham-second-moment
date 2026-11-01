@@ -1,0 +1,752 @@
+{
+  "scope": "AUTHOR reference reachability audit ONLY, not proof validity, semantic completeness or permission to delete material",
+  "source_revision": "887fbfbe0fa4368d6b32a436615d73349b2445d8",
+  "roots": [
+    "H:homog",
+    "T:full-upper",
+    "T:intrinsic-second-moment"
+  ],
+  "additional_bound_calibration_roots": [
+    "T:intrinsic-occupation-ceiling",
+    "C:intrinsic-spatial-bracket",
+    "P:white-spatial-energy",
+    "T:white-moment-bounds",
+    "C:white-relative-width",
+    "P:Jensen"
+  ],
+  "proofs_total": 213,
+  "core_proofs_reached": 143,
+  "with_bounds_proofs_reached": 158,
+  "core_nodes": 179,
+  "with_bounds_nodes": 196,
+  "limitations": [
+    "Explicit labels are not all mathematical dependencies. Unlabelled setup, definitions, prose imports and cross-section conventions need manual checking.",
+    "Navigation/status references can overinclude. Unreached does not prove unnecessary; reached does not prove necessary or correct.",
+    "No source/proof/PDF or frozen review input is changed. Full existing review obligations stay open."
+  ],
+  "sections": {
+    "What is known": {
+      "all_proofs": 1,
+      "core_reached": 0,
+      "with_bounds_reached": 1,
+      "unreached_labels": [
+        "P:Jensen"
+      ]
+    },
+    "Gate G0: cross terms and the loss in the norm bound": {
+      "all_proofs": 9,
+      "core_reached": 7,
+      "with_bounds_reached": 7,
+      "unreached_labels": [
+        "L:white-test",
+        "P:envelope"
+      ]
+    },
+    "Gate G1: finite-order calibrations in one space dimension": {
+      "all_proofs": 3,
+      "core_reached": 0,
+      "with_bounds_reached": 0,
+      "unreached_labels": [
+        "P:white-four",
+        "L:static-four",
+        "P:riesz-small"
+      ]
+    },
+    "G2 upper bounds for spatial exponents at most one": {
+      "all_proofs": 6,
+      "core_reached": 0,
+      "with_bounds_reached": 0,
+      "unreached_labels": [
+        "L:d1-spatial",
+        "P:d1-upper",
+        "L:low-alpha-convolution",
+        "L:alpha-one-convolution",
+        "P:low-alpha-upper",
+        "C:d1-first-calibration"
+      ]
+    },
+    "Higher spatial exponents under a convolution bound": {
+      "all_proofs": 4,
+      "core_reached": 0,
+      "with_bounds_reached": 0,
+      "unreached_labels": [
+        "P:higher-transfer",
+        "L:higher-riesz",
+        "C:higher-riesz",
+        "P:higher-obstructions"
+      ]
+    },
+    "Riesz bounds by interpolation with static noise": {
+      "all_proofs": 2,
+      "core_reached": 0,
+      "with_bounds_reached": 0,
+      "unreached_labels": [
+        "L:static-holder-input",
+        "P:static-holder-upper"
+      ]
+    },
+    "General homogeneous covariance in dimension two": {
+      "all_proofs": 4,
+      "core_reached": 0,
+      "with_bounds_reached": 0,
+      "unreached_labels": [
+        "L:planar-endpoints",
+        "L:planar-static-input",
+        "P:planar-upper",
+        "C:planar-range"
+      ]
+    },
+    "Three-dimensional bounds from covariance endpoints": {
+      "all_proofs": 6,
+      "core_reached": 0,
+      "with_bounds_reached": 0,
+      "unreached_labels": [
+        "L:product-endpoints",
+        "L:plane-endpoints",
+        "L:endpoint-closure",
+        "P:three-transfer",
+        "C:three-product-riesz",
+        "C:three-finite-images"
+      ]
+    },
+    "Physical and spectral energy for measure covariances": {
+      "all_proofs": 1,
+      "core_reached": 0,
+      "with_bounds_reached": 0,
+      "unreached_labels": [
+        "L:physical-spectral-energy"
+      ]
+    },
+    "A static phase estimate at first variance order": {
+      "all_proofs": 2,
+      "core_reached": 1,
+      "with_bounds_reached": 1,
+      "unreached_labels": [
+        "P:static-phase-variance"
+      ]
+    },
+    "All static orders with arbitrary initial phase": {
+      "all_proofs": 5,
+      "core_reached": 3,
+      "with_bounds_reached": 3,
+      "unreached_labels": [
+        "P:static-phase-all-orders",
+        "C:static-interaction"
+      ]
+    },
+    "Interval fields and the full upper bound": {
+      "all_proofs": 8,
+      "core_reached": 8,
+      "with_bounds_reached": 8,
+      "unreached_labels": []
+    },
+    "A static lower comparison and a near-static mean gap": {
+      "all_proofs": 7,
+      "core_reached": 0,
+      "with_bounds_reached": 0,
+      "unreached_labels": [
+        "L:mean-coefficient-holder",
+        "L:positive-series-type",
+        "P:static-minorant-lower",
+        "P:near-static-mean-gap",
+        "L:full-moment-coefficient-holder",
+        "P:moment-growth-logconvex",
+        "C:static-moment-constant-continuity"
+      ]
+    },
+    "A small-order test for direct Brownian clock copying": {
+      "all_proofs": 2,
+      "core_reached": 0,
+      "with_bounds_reached": 0,
+      "unreached_labels": [
+        "L:white-clock-laplace",
+        "P:clock-copy-obstruction"
+      ]
+    },
+    "Covariance bounds for physically masked wave fields": {
+      "all_proofs": 8,
+      "core_reached": 7,
+      "with_bounds_reached": 7,
+      "unreached_labels": [
+        "P:masked-quotient-obstruction"
+      ]
+    },
+    "Frequency estimates and both wave variance directions": {
+      "all_proofs": 6,
+      "core_reached": 5,
+      "with_bounds_reached": 5,
+      "unreached_labels": [
+        "P:wave-square-columns"
+      ]
+    },
+    "Finite Gaussian moments and whole-space Sobolev compactness": {
+      "all_proofs": 10,
+      "core_reached": 8,
+      "with_bounds_reached": 8,
+      "unreached_labels": [
+        "L:gaussian-trace-bounds",
+        "P:cutoff-boundary-tests"
+      ]
+    },
+    "The actual Gaussian operator driver": {
+      "all_proofs": 9,
+      "core_reached": 9,
+      "with_bounds_reached": 9,
+      "unreached_labels": []
+    },
+    "Convergence of the canonical Gaussian source drivers": {
+      "all_proofs": 7,
+      "core_reached": 7,
+      "with_bounds_reached": 7,
+      "unreached_labels": []
+    },
+    "Fixed masks and displacement moments": {
+      "all_proofs": 3,
+      "core_reached": 3,
+      "with_bounds_reached": 3,
+      "unreached_labels": []
+    },
+    "Young evolution with constant initial data": {
+      "all_proofs": 8,
+      "core_reached": 8,
+      "with_bounds_reached": 8,
+      "unreached_labels": []
+    },
+    "Compact mean families and the full-phase spectral gap": {
+      "all_proofs": 7,
+      "core_reached": 5,
+      "with_bounds_reached": 5,
+      "unreached_labels": [
+        "L:compact-fractional-phase",
+        "P:compact-E-wave"
+      ]
+    },
+    "Exact scaling of the canonical solution": {
+      "all_proofs": 1,
+      "core_reached": 1,
+      "with_bounds_reached": 1,
+      "unreached_labels": []
+    },
+    "Actual raw blocks and the original point lower bound": {
+      "all_proofs": 7,
+      "core_reached": 7,
+      "with_bounds_reached": 7,
+      "unreached_labels": []
+    },
+    "The unmasked Rayleigh rate and positive-control scores": {
+      "all_proofs": 6,
+      "core_reached": 4,
+      "with_bounds_reached": 4,
+      "unreached_labels": [
+        "L:variational-heat-envelope",
+        "L:variational-global-mean"
+      ]
+    },
+    "The temporal equilibrium density": {
+      "all_proofs": 2,
+      "core_reached": 0,
+      "with_bounds_reached": 2,
+      "unreached_labels": [
+        "L:equilibrium-gamma-beta",
+        "L:temporal-equilibrium"
+      ]
+    },
+    "Physical spatial pairings and the full occupation class": {
+      "all_proofs": 7,
+      "core_reached": 2,
+      "with_bounds_reached": 5,
+      "unreached_labels": [
+        "L:spatial-static-controls",
+        "P:spatial-smooth-ratio",
+        "P:spatial-energy-map",
+        "L:occupation-kernel-row",
+        "P:occupation-physical-class"
+      ]
+    },
+    "The actual compact mean and Cameron block map": {
+      "all_proofs": 7,
+      "core_reached": 6,
+      "with_bounds_reached": 6,
+      "unreached_labels": [
+        "P:cameron-temporal-map"
+      ]
+    },
+    "Young perturbations retaining the deterministic endpoint": {
+      "all_proofs": 2,
+      "core_reached": 2,
+      "with_bounds_reached": 2,
+      "unreached_labels": []
+    },
+    "Uniform spatial-radius means and Cameron regulation": {
+      "all_proofs": 5,
+      "core_reached": 5,
+      "with_bounds_reached": 5,
+      "unreached_labels": []
+    },
+    "Radius-explicit stochastic first-driver bounds": {
+      "all_proofs": 5,
+      "core_reached": 4,
+      "with_bounds_reached": 4,
+      "unreached_labels": [
+        "L:radius-outer-maps"
+      ]
+    },
+    "Signed rough static potentials and the physical wave": {
+      "all_proofs": 4,
+      "core_reached": 4,
+      "with_bounds_reached": 4,
+      "unreached_labels": []
+    },
+    "The actual symplectic phase and block-mean baseline": {
+      "all_proofs": 5,
+      "core_reached": 5,
+      "with_bounds_reached": 5,
+      "unreached_labels": []
+    },
+    "Actual Gaussian control tubes and Rayleigh transfer": {
+      "all_proofs": 8,
+      "core_reached": 7,
+      "with_bounds_reached": 7,
+      "unreached_labels": [
+        "L:tube-half-action"
+      ]
+    },
+    "Uniform spectral rates and phase products": {
+      "all_proofs": 7,
+      "core_reached": 7,
+      "with_bounds_reached": 7,
+      "unreached_labels": []
+    },
+    "The original point moment and the growing-cone phase": {
+      "all_proofs": 5,
+      "core_reached": 4,
+      "with_bounds_reached": 4,
+      "unreached_labels": [
+        "L:point-compact-source"
+      ]
+    },
+    "The original upper bound by a moving signed raw score": {
+      "all_proofs": 4,
+      "core_reached": 3,
+      "with_bounds_reached": 3,
+      "unreached_labels": [
+        "L:signed-score-envelope"
+      ]
+    },
+    "Finite optimization with nonnegative Gram entries": {
+      "all_proofs": 5,
+      "core_reached": 5,
+      "with_bounds_reached": 5,
+      "unreached_labels": []
+    },
+    "The positive-control formula for the original moment limit": {
+      "all_proofs": 6,
+      "core_reached": 6,
+      "with_bounds_reached": 6,
+      "unreached_labels": []
+    },
+    "Occupation bounds for the intrinsic constant": {
+      "all_proofs": 5,
+      "core_reached": 0,
+      "with_bounds_reached": 5,
+      "unreached_labels": [
+        "L:occupation-raw-square",
+        "P:raw-occupation-energy",
+        "L:occupation-rayleigh-selection",
+        "T:intrinsic-occupation-ceiling",
+        "C:intrinsic-spatial-bracket"
+      ]
+    },
+    "Spatial white noise: energy and explicit moment bounds": {
+      "all_proofs": 4,
+      "core_reached": 0,
+      "with_bounds_reached": 4,
+      "unreached_labels": [
+        "L:white-cdf-square",
+        "P:white-spatial-energy",
+        "T:white-moment-bounds",
+        "C:white-relative-width"
+      ]
+    }
+  },
+  "core_labels": [
+    "C:finite-gaussian-operators",
+    "C:frequency-time",
+    "C:radius-covariance-residuals",
+    "C:uniform-polynomial-balls",
+    "E:cameron-block-parameters",
+    "E:compact-common-trial",
+    "E:compact-two-factors",
+    "E:constant-young-estimate",
+    "E:cov",
+    "E:cp-input",
+    "E:crude-norms",
+    "E:damped-norm-definitions",
+    "E:driver-parameters",
+    "E:expansion",
+    "E:finite-gram-score",
+    "E:frequency-translated-growth",
+    "E:masked-auxiliary-measure",
+    "E:masked-spectral-convention",
+    "E:mixed-diagram",
+    "E:radius-anchor-Q",
+    "E:radius-anchor-parameters",
+    "E:raw-block-pullback",
+    "E:source-cutoff-noises",
+    "E:symplectic-combined-driver",
+    "E:terminal-chain-measure",
+    "E:uniform-mean-row",
+    "E:variance-actual-form",
+    "E:variance-actual-growth-constant",
+    "E:variance-dual-wave",
+    "E:variance-gamma-range",
+    "G:upper",
+    "H:homog",
+    "L:cameron-actual-residual",
+    "L:cameron-fractional-products",
+    "L:cameron-supported-tensor",
+    "L:compact-positive-order",
+    "L:compact-raw-profile",
+    "L:complex-phase",
+    "L:constant-phase-free",
+    "L:constant-source-response",
+    "L:constant-source-solution",
+    "L:crude-corrected",
+    "L:cutoff-factorization",
+    "L:damped-homogeneous-norms",
+    "L:driver-actual-variances",
+    "L:driver-covariance-coefficients",
+    "L:driver-dominated-tails",
+    "L:driver-gain-localization",
+    "L:driver-gaussian-tail-average",
+    "L:driver-holder-limit",
+    "L:driver-interval-limit",
+    "L:driver-noise-basis",
+    "L:exact-canonical-scaling",
+    "L:finite-word-cutoff",
+    "L:fixed-split",
+    "L:fock-form",
+    "L:gaussian-scalar-powers",
+    "L:gram-dual-minimum",
+    "L:gram-realization",
+    "L:gram-scalar-algebra",
+    "L:interval-complex",
+    "L:interval-contractions",
+    "L:inventory-product",
+    "L:joint-fixed-order",
+    "L:masked-chain-comparison",
+    "L:masked-continuous-wave",
+    "L:masked-temporal-modulation",
+    "L:masked-time-completion",
+    "L:masked-trig-products",
+    "L:phase-bessel",
+    "L:phase-contractions",
+    "L:point-actual-finiteness",
+    "L:point-fast-sources",
+    "L:positive-physical-gram",
+    "L:positive-raw-embedding",
+    "L:positive-uniform-optimizer",
+    "L:raw-block-indexed-cone",
+    "L:raw-block-inputs",
+    "L:raw-block-restart",
+    "L:raw-block-uniform-error",
+    "L:signed-limiting-multiplier",
+    "L:signed-spectral-wave",
+    "L:source-finite-comparison",
+    "L:source-pointfield-regularity",
+    "L:source-retaining-isometry",
+    "L:source-spatial-heat",
+    "L:spatial-physical-pair",
+    "L:spatial-wick-measures",
+    "L:symplectic-free",
+    "L:symplectic-source-mean",
+    "L:terminal-wick",
+    "L:tube-actual-endpoint",
+    "L:tube-closed-geometry",
+    "L:tube-rayleigh-tail",
+    "L:uniform-E-lift",
+    "L:uniform-mean-cutoff",
+    "L:uniform-mean-spatial-tails",
+    "L:uniform-mean-tensor",
+    "L:uniform-product-budgets",
+    "L:uniform-series-tail",
+    "L:variational-control-dilation",
+    "L:vertex-crude",
+    "L:young-upper-growth",
+    "P:actual-operator-driver",
+    "P:actual-wave-form",
+    "P:cameron-actual-embedding",
+    "P:cameron-full-mean",
+    "P:cameron-spatial-map",
+    "P:compact-F-complement",
+    "P:compact-F-projection",
+    "P:compact-ground-family",
+    "P:compact-original-common-trial",
+    "P:compact-two-envelopes",
+    "P:constant-compact-base",
+    "P:constant-gaussian-flow",
+    "P:constant-phase-driver",
+    "P:constant-raw-average",
+    "P:constant-young-linear",
+    "P:cutoff-singular-values",
+    "P:finite-gaussian-matrix",
+    "P:frequency-row",
+    "P:gram-entrywise-comparison",
+    "P:gram-positive-optimizer",
+    "P:interval-coefficients",
+    "P:localized-finite-variance",
+    "P:masked-auxiliary-norm",
+    "P:masked-canonical-transfer",
+    "P:masked-noise-completion",
+    "P:masked-source-moments",
+    "P:masked-spectral-growth",
+    "P:mild-construction",
+    "P:mixed",
+    "P:original-point-transfer",
+    "P:original-signed-point-upper",
+    "P:point-source-cone",
+    "P:positive-score-cutoff",
+    "P:positive-signed-comparison",
+    "P:radius-actual-moments",
+    "P:radius-compact-envelopes",
+    "P:radius-mean-anchor",
+    "P:raw-block-gaussian-law",
+    "P:raw-block-original-lower",
+    "P:raw-block-point-comparison",
+    "P:signed-closed-form",
+    "P:signed-moment-bulk-tail",
+    "P:signed-operator-upper",
+    "P:signed-physical-wave",
+    "P:source-canonical-convergence",
+    "P:source-gaussian-transfer",
+    "P:source-ordinary-response",
+    "P:spatial-four-linear",
+    "P:symplectic-block-mean",
+    "P:symplectic-raw",
+    "P:symplectic-source",
+    "P:tube-actual-law",
+    "P:tube-coarse-envelope",
+    "P:tube-rayleigh-transfer",
+    "P:tube-wiener-realization",
+    "P:uniform-E-spectral",
+    "P:uniform-actual-cameron",
+    "P:uniform-arbitrary-residual",
+    "P:uniform-mean-product",
+    "P:uniform-mean-regulator",
+    "P:uniform-rate-averaging",
+    "P:variational-positive-scores",
+    "P:variational-remove-mask",
+    "P:variational-unmasked-rate",
+    "P:wave-two-variances",
+    "P:young-upper-multiplicative",
+    "S:actual-cameron-mean",
+    "S:constant-phase-young",
+    "S:masked-covariance",
+    "S:signed-static-wave",
+    "S:source-driver-convergence",
+    "S:static-phase",
+    "S:uniform-mean-regulation",
+    "S:wave-variance",
+    "T:full-upper",
+    "T:intrinsic-second-moment"
+  ],
+  "with_bounds_labels": [
+    "C:finite-gaussian-operators",
+    "C:frequency-time",
+    "C:intrinsic-spatial-bracket",
+    "C:radius-covariance-residuals",
+    "C:uniform-polynomial-balls",
+    "C:white-relative-width",
+    "E:cameron-block-parameters",
+    "E:compact-common-trial",
+    "E:compact-two-factors",
+    "E:constant-young-estimate",
+    "E:cov",
+    "E:cp-input",
+    "E:crude-norms",
+    "E:damped-norm-definitions",
+    "E:driver-parameters",
+    "E:expansion",
+    "E:finite-gram-score",
+    "E:frequency-translated-growth",
+    "E:masked-auxiliary-measure",
+    "E:masked-spectral-convention",
+    "E:mixed-diagram",
+    "E:occupation-scalar-map",
+    "E:radius-anchor-Q",
+    "E:radius-anchor-parameters",
+    "E:raw-block-pullback",
+    "E:source-cutoff-noises",
+    "E:symplectic-combined-driver",
+    "E:terminal-chain-measure",
+    "E:uniform-mean-row",
+    "E:variance-actual-form",
+    "E:variance-actual-growth-constant",
+    "E:variance-dual-wave",
+    "E:variance-gamma-range",
+    "G:upper",
+    "H:homog",
+    "L:cameron-actual-residual",
+    "L:cameron-fractional-products",
+    "L:cameron-supported-tensor",
+    "L:compact-positive-order",
+    "L:compact-raw-profile",
+    "L:complex-phase",
+    "L:constant-phase-free",
+    "L:constant-source-response",
+    "L:constant-source-solution",
+    "L:crude-corrected",
+    "L:cutoff-factorization",
+    "L:damped-homogeneous-norms",
+    "L:driver-actual-variances",
+    "L:driver-covariance-coefficients",
+    "L:driver-dominated-tails",
+    "L:driver-gain-localization",
+    "L:driver-gaussian-tail-average",
+    "L:driver-holder-limit",
+    "L:driver-interval-limit",
+    "L:driver-noise-basis",
+    "L:equilibrium-gamma-beta",
+    "L:exact-canonical-scaling",
+    "L:finite-word-cutoff",
+    "L:fixed-split",
+    "L:fock-form",
+    "L:gaussian-scalar-powers",
+    "L:gram-dual-minimum",
+    "L:gram-realization",
+    "L:gram-scalar-algebra",
+    "L:interval-complex",
+    "L:interval-contractions",
+    "L:inventory-product",
+    "L:joint-fixed-order",
+    "L:masked-chain-comparison",
+    "L:masked-continuous-wave",
+    "L:masked-temporal-modulation",
+    "L:masked-time-completion",
+    "L:masked-trig-products",
+    "L:occupation-raw-square",
+    "L:occupation-rayleigh-selection",
+    "L:phase-bessel",
+    "L:phase-contractions",
+    "L:point-actual-finiteness",
+    "L:point-fast-sources",
+    "L:positive-physical-gram",
+    "L:positive-raw-embedding",
+    "L:positive-uniform-optimizer",
+    "L:raw-block-indexed-cone",
+    "L:raw-block-inputs",
+    "L:raw-block-restart",
+    "L:raw-block-uniform-error",
+    "L:signed-limiting-multiplier",
+    "L:signed-spectral-wave",
+    "L:source-finite-comparison",
+    "L:source-pointfield-regularity",
+    "L:source-retaining-isometry",
+    "L:source-spatial-heat",
+    "L:spatial-physical-pair",
+    "L:spatial-static-controls",
+    "L:spatial-wick-measures",
+    "L:symplectic-free",
+    "L:symplectic-source-mean",
+    "L:temporal-equilibrium",
+    "L:terminal-wick",
+    "L:tube-actual-endpoint",
+    "L:tube-closed-geometry",
+    "L:tube-rayleigh-tail",
+    "L:uniform-E-lift",
+    "L:uniform-mean-cutoff",
+    "L:uniform-mean-spatial-tails",
+    "L:uniform-mean-tensor",
+    "L:uniform-product-budgets",
+    "L:uniform-series-tail",
+    "L:variational-control-dilation",
+    "L:vertex-crude",
+    "L:white-cdf-square",
+    "L:young-upper-growth",
+    "P:Jensen",
+    "P:actual-operator-driver",
+    "P:actual-wave-form",
+    "P:cameron-actual-embedding",
+    "P:cameron-full-mean",
+    "P:cameron-spatial-map",
+    "P:compact-F-complement",
+    "P:compact-F-projection",
+    "P:compact-ground-family",
+    "P:compact-original-common-trial",
+    "P:compact-two-envelopes",
+    "P:constant-compact-base",
+    "P:constant-gaussian-flow",
+    "P:constant-phase-driver",
+    "P:constant-raw-average",
+    "P:constant-young-linear",
+    "P:cutoff-singular-values",
+    "P:finite-gaussian-matrix",
+    "P:frequency-row",
+    "P:gram-entrywise-comparison",
+    "P:gram-positive-optimizer",
+    "P:interval-coefficients",
+    "P:localized-finite-variance",
+    "P:masked-auxiliary-norm",
+    "P:masked-canonical-transfer",
+    "P:masked-noise-completion",
+    "P:masked-source-moments",
+    "P:masked-spectral-growth",
+    "P:mild-construction",
+    "P:mixed",
+    "P:original-point-transfer",
+    "P:original-signed-point-upper",
+    "P:point-source-cone",
+    "P:positive-score-cutoff",
+    "P:positive-signed-comparison",
+    "P:radius-actual-moments",
+    "P:radius-compact-envelopes",
+    "P:radius-mean-anchor",
+    "P:raw-block-gaussian-law",
+    "P:raw-block-original-lower",
+    "P:raw-block-point-comparison",
+    "P:raw-occupation-energy",
+    "P:signed-closed-form",
+    "P:signed-moment-bulk-tail",
+    "P:signed-operator-upper",
+    "P:signed-physical-wave",
+    "P:source-canonical-convergence",
+    "P:source-gaussian-transfer",
+    "P:source-ordinary-response",
+    "P:spatial-energy-map",
+    "P:spatial-four-linear",
+    "P:spatial-smooth-ratio",
+    "P:symplectic-block-mean",
+    "P:symplectic-raw",
+    "P:symplectic-source",
+    "P:tube-actual-law",
+    "P:tube-coarse-envelope",
+    "P:tube-rayleigh-transfer",
+    "P:tube-wiener-realization",
+    "P:uniform-E-spectral",
+    "P:uniform-actual-cameron",
+    "P:uniform-arbitrary-residual",
+    "P:uniform-mean-product",
+    "P:uniform-mean-regulator",
+    "P:uniform-rate-averaging",
+    "P:variational-positive-scores",
+    "P:variational-remove-mask",
+    "P:variational-unmasked-rate",
+    "P:wave-two-variances",
+    "P:white-spatial-energy",
+    "P:young-upper-multiplicative",
+    "S:actual-cameron-mean",
+    "S:constant-phase-young",
+    "S:masked-covariance",
+    "S:signed-static-wave",
+    "S:source-driver-convergence",
+    "S:static-phase",
+    "S:uniform-mean-regulation",
+    "S:wave-variance",
+    "T:first",
+    "T:full-upper",
+    "T:intrinsic-occupation-ceiling",
+    "T:intrinsic-second-moment",
+    "T:white-moment-bounds"
+  ],
+  "unresolved_in_core": []
+}
