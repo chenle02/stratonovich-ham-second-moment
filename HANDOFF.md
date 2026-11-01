@@ -5,10 +5,10 @@ Chen matching is not a completion requirement.
 
 ## ⏭ Next session: where to stand and what to do
 
-FIRST integrate the canonical Gaussian source-convergence proof (SC)
+FIRST integrate the joint fixed-mask moment/Young proofs (FM/FY)
 into TeX in ACTIVE
 ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave,
-branch research/fixed-mask-young-20261031, clean local HEAD f553286.
+branch research/fixed-mask-young-20261031, clean local HEAD 65cbf05.
 Read its PROJECT-GOAL.md, AGENTS.md, Progress.md and
 notes/derived-constant-integration-plan.md and derived-constant-proof-imports.md
 in its notes directory. Root mathematical files and
@@ -24,14 +24,18 @@ review68458(v3PASS0),71223(v2coverage-refusal3), or v1preflight5.
 FR/AV TeX integration is now ACCEPTED: scientificf5c1521,adoption7dbcd4a,
 27PASS/HIGH382.209seconds,no mandatory repairs. Review13477 isTERMINAL0,
 not a task to restart. Read the frozen next target in
-reviews/2026-11-01-source-convergence-tex-integration/target-v1.md in ACTIVE.
+reviews/2026-11-01-moment-young-tex-integration/target-v1.md in ACTIVE.
 FG/CC is now ACCEPTED: scientific2571a15,adoption22e3426,24HIGHchecks
 323.168seconds,no repairs. Native74139 TERMINAL0; old16481 remains
 rejected (rawFAIL/HIGH,canonical invalid-report). Do not restart either.
 AD now ACCEPTED: scientific9dad256,adoptionf553286,25HIGHchecks
 396.861seconds,no repairs. Native83117 TERMINAL0;18283 canonicalFAIL/HIGH
 remains rejected. Do not restart either. Actual compact first driver/path
-is constructed on GIVEN W, local fixedR,T; SC/Young/u remain separate.
+is constructed on GIVEN W, local fixedR,T. SC now ACCEPTED: scientific
+8a2add9,adoption65cbf05,20HIGH checks405.681seconds,no required repairs.
+Native45691 terminal receipt exit0; do not restart. Literal retaining
+coupling, source convergence and ordinary response proved; nonlinear
+Young/canonical moment identification remains separate.
 No owned reviewer or computation remains live.
 
 ## Pre-flight checks
@@ -68,8 +72,8 @@ No owned reviewer or computation remains live.
    loss; preserve parameter-dependent comparison constants and shell variable.
    Author machine/build checks are outside LLM execution scope. Media and
    native dry-run preflights pass; PNG kind/image/SHA/type required.
-   No new Lean fact. Source, Young/canonical data/moments and full PB/OC/WS
-   integration still open. Keep independent old upper finiteness and SA.
+   No new Lean fact. SC is now accepted as recorded above; Young/canonical data/moments and
+   full PB/OC/WS integration still open. Keep independent old upper finiteness and SA.
 7. <HUB> fresh push still fails NoRoute; no actual remote parity.
    Recovery requires serialized push, canonical pull and isolated research
    fast-forward with actual HEAD checks. Never reset or drop foreign work.
@@ -78,19 +82,18 @@ No owned reviewer or computation remains live.
 
 ## Concrete deliverables for the next session
 
-- Translate source-operator-convergence.md Sections1-7 completely. Preserve
-  Gaussian transfer with correlated Y(f_j), true raw rows, heat/Laplace
-  feature isometry and product-space extension retaining GIVEN W and its
-  actual raw driver. Exact cross-width K_max times Gamma_(eps+eps'),
-  arbitrary relative-rate convergence, pointfield continuity/Cinfty-space,
-  and actual ordinary first-response/path identity. No nonlinear covariance
-  comparison, temporal convolution or W-only cutoff-family assumption.
-- Pin the held64-page AUTHOR definitions/p5/6/8/9 and existing citekey;
-  no p8 discrepant increment or arXivv1 exact-firstmean input. Then FM/FY
-  canonical data/moment transfer and full lower/upper/PB/OC/WS assembly.
-- Do not re-integrate accepted AD/FG/CC. Keep full original model scope.
-- Build and inspect PDF, freeze whole-argument review and final cold read;
-  adjudicate findings before claiming the completion contract satisfied.
+- Follow the frozen joint FM/FY integration target in ACTIVE. Translate
+  the complete accepted moment-transfer and constant-phase Young proofs;
+  the Young construction must establish the masked-average L2 premise.
+  Retain all mixed/self pairings, positive Green measures, full canonical
+  point-moment source limit and physical mask after regularization.
+- Construct total distributional F=E plus BOTH constants, physical finite
+  propagation and constant-response columns; E is not dense in F. Prove
+  actual source flow, data(1,0), Young stability and Gaussian uniform
+  integrability. No Sobolev point trace or nonlinear covariance shortcut.
+- Do not re-integrate accepted SC/AD/FG/CC. Keep full original model scope.
+- Build/inspect PDF and obtain fresh full native Opus5.5/HIGH integration
+  gate. Full lower/upper/PB/OC/WS and whole-paper/final cold-read follow.
 - Recover private pushes/wiki queue/<HUB> parity when available.
 
 ## Success criteria for the immediate next step
@@ -1464,10 +1467,24 @@ operator/Lp-Ctheta first driver now constructed; no source/Young/u-moment
 claim yet.80Lean facts22seams,L0PROPOSED unchanged. SCtarget frozen before
 translation, plan only. Fresh pushNoRoute; no owned live jobs; goalACTIVE.
 
+2026-11-01 SC integration checkpoint: scientific8a2add9,adoption65cbf05;
+actualOpus5.5/HIGH20PASS405.681seconds,no repairs. Canonical report and
+read-ledger validations PASS; accepted/coverage true,transport exit0.
+All36five-way input bindings,21full texts/13exact PNGs and51raw archive
+file members verified. Seven optional findings adjudicated with no final
+source/PDF edit. Clean150-page PDF;7new proof blocks,93prior unchanged.
+Literal GIVEN-W retention, exact author source law, both contractions,
+arbitrary-rate source-driver convergence and ordinary response now in TeX.
+Source fields may depend on auxiliary J. P8 source increment discrepancy
+is not imported; local increments independently proved. Current80Lean
+facts22seams unchanged. Joint FM/FY target frozen before translation.
+Private push again failed NoRoute; no owned review/computation remains live.
+Full integration/cold-read/delivery remain open; actual-constant goalACTIVE.
+
 ## Repo & git state at handoff
 
-Before this HANDOFF-only successor root master HEAD5efbc50. Active research
-clean HEADf553286eab1e9f66880fe4c5db39b30915382e00. Private origin remains
+Before this HANDOFF-only successor root master HEADda4102f. Active research
+clean HEAD65cbf0529a9df92846f8bd32c963aa3910cf0c3a. Private origin remains
 <HUB> bare; fresh push failed SSH NoRoute, no synchronization claimed.
 Last-fetched root611c005/research6937719 remain historical observations.
 No implicit research/master merge. Scientific work stays in isolated ACTIVE;
