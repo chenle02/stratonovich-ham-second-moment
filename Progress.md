@@ -8696,3 +8696,23 @@ PASS:15full texts/9typed PNGs. Fresh Le <plan removed> identity/headroom, firstP
 claude.ai doctor and actualOpus5.5READY retained. Independent integration
 review PENDING at source freeze. Goal ACTIVE/full scope and Le's actual
 constant target unchanged. Fresh origin fetch still SSH255NoRoute.
+
+
+FG/CC v1 native16481 TERMINAL3. Actual Opus5.5/HIGH raw report claims
+FAIL: integration omitted spacing dependence in the dyadic lattice proof.
+Canonical status invalid-report due an unsupported UNCHECKED tag in a
+separate execution-only check; accepted=false preserved, never relabeled.
+All25old identities checked before repair;39rawmembers archived/read-back
+SHA256 verified. Mathematical finding independently reproduced exactly:
+d1,N2,a1/2,y0,k4,j2 gives1/5>1/16. Source was correct; transcription error.
+
+Restored explicit max(1,2/a)^N comparison before summing k-shells, with
+a,d,N dependence. Also fixed sigma scope and wrote exact autocorrelation
+Plancherel factor/sign. Statements unchanged, only2of10proof blocks changed;
+8others and74previous bodies unchanged by AUTHOR execution checks. New
+contract keeps every mathematical/visual obligation and treats unobservable
+Git/hash executions as author evidence, not a requested reviewer check.
+Full repaired packet-v2:19texts/10typed images; media preflight PASS.
+Clean134-page rebuild,0errors/undefined/overfull; all10pages124-133 inspected.
+NewSection18ends132, targetcontext133. New same-model/HIGH gate PENDING;
+no model/provider/threshold change, no unsupported resume or source fix.

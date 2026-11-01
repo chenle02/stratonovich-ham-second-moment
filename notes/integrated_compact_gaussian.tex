@@ -198,8 +198,9 @@ path is constructed in this section.
 
 Use the unitary Fourier transform with $c_d=(2\pi)^{-d/2}$ and
 $\Lambda=(1-\Delta)^{1/2}$. For real $r$, the norm on $H^r(\R^d)$ is
-$\|\langle\xi\rangle^r\widehat u\|_2$. This deterministic subsection
-allows any smoothing order $\gamma > 0$. Fix a real compact smooth $\chi$.
+$\|\langle\xi\rangle^r\widehat u\|_2$. The deterministic cutoff arguments
+allow any smoothing order $\gamma > 0$. Fix real $\sigma$ and a real compact
+smooth $\chi$.
 Singular values $s_j$, $j \ge 1$, are counted with multiplicity, with zeros
 appended when necessary. For compact $K$, put
 $\|K\|_{S_p}^p=\sum_j s_j(K)^p$.
@@ -245,7 +246,15 @@ $\|K\|_{S_p}^p=\sum_j s_j(K)^p$.
   $|y|\le a\sqrt d/2$. For $|k|\ge\sqrt d$ we have
   $|y-ak|\ge a|k|/2$. The remaining terms are finite; the tail converges
   by dyadic lattice counting, since there are at most $C_d2^{jd}$ lattice
-  points in the $j$th shell and its terms are bounded by $2^{-jN}$.
+  points in the $j$th shell in $k$. More precisely, for
+  $|k|\ge\sqrt d$, the preceding inequality gives
+  \[
+    \langle y-ak\rangle^{-N}
+    \le \max(1,2/a)^N\langle k\rangle^{-N}.
+  \]
+  The comparison-series terms are bounded by $2^{-jN}$ on each dyadic
+  $k$-shell. Thus, its convergent geometric sum carries constants depending
+  on $a,d,N$, as does~\eqref{E:cutoff-lattice-sum}.
 
   We use the mixed Schur bound for a kernel whose absolute row and column
   integrals are bounded by $M_1,M_2$. Weighted Cauchy--Schwarz at each
@@ -607,10 +616,15 @@ $P_\chi$ is not assumed self-adjoint or a projection.
 
   For noncompactness, take $f$ with nonzero Gaussian Fourier transform.
   Then $g=\Lambda^{-\gamma}f$ is a nonzero Schwartz function. The images
-  of translates of $f$ are the same translates of $g$. The autocorrelation
-  of $g$ tends to zero with separation: it is the Fourier transform of
-  the Schwartz function $|\widehat g|^2$, which decays by integration by
-  parts. Choose a large spacing so that any two distinct translates in
+  of translates of $f$ are the same translates of $g$. With
+  $T_hg(x)=g(x-h)$, Plancherel gives
+  \[
+    \langle T_hg,g\rangle
+    =\int e^{-i\xi\cdot h}|\widehat g(\xi)|^2\ud\xi
+    =c_d^{-1}\widehat{|\widehat g|^2}(h).
+  \]
+  This tends to zero because $|\widehat g|^2$ is Schwartz. Choose a large
+  spacing so that any two distinct translates in
   the resulting sequence have image distance at least $\|g\|$. The input
   norms are identical, but the images have no Cauchy subsequence. This
   disproves compactness.
