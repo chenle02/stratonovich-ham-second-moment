@@ -84,7 +84,19 @@ Scientific96e2a18: notes/integrated_covariance_foundation.tex closes the
 SF/TP translation and actual source/PDF correspondence gate,15PASS/HIGH,
 no required repairs. The116-page main PDF is clean; all8required images
 and16full text inputs verified. See adjudication-v3.md in the dated packet.
-This is not closure of the full37-node import graph. Next integrate FR
-(scalar-frequency-row-bound.md) and AV(actual-two-variance-forms.md), then
-finite Gaussian/Sobolev compactness and actual driver/source/Young proofs.
+This is not closure of the full37-node import graph. FR/AV was the next step and is now closed below; continue with finite
+Gaussian/Sobolev compactness and actual driver/source/Young proofs.
 Do not reopen completed SF/TP or repeat the import inventory as a new round.
+
+
+## Scalar frequency and both variance directions accepted
+
+Scientificf5c1521: notes/integrated_wave_variance.tex closes FR/AV source/
+statement/physical application and PDF correspondence,27PASS/HIGH,
+382.209seconds,no required repairs. Six complete proof blocks; all68earlier
+proof bodies unchanged. Clean125-page PDF,15full texts and9exact PNG
+images verified. Native workspace/media preflight passed before dispatch.
+Next integrate FG/CC using the newly frozen target in
+reviews/2026-11-01-compact-gaussian-tex-integration/. The target is a plan,
+not new proof or acceptance. Keep actual operator/series/path consumers
+separate until their complete corresponding arguments are integrated.

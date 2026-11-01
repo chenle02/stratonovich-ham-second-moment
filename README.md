@@ -22,8 +22,9 @@ passed their full scoped reviews. The exact constant remains the intrinsic
 variational value; interval endpoints are bounds, not its evaluated value.
 The mathematical result set is now frozen for integration. The tracked
 [TeX/PDF notes](notes/notes_stratonovich_ham_second_moment.pdf) now include
-the first covariance/temporal foundation section with eight complete proofs,
-accepted at the independent integration gate (scientific96e2a18). The
+the covariance/temporal foundation and both wave variance directions,
+with 14 complete proof blocks accepted at independent integration gates
+(scientific sources96e2a18 andf5c1521). The
 derived-constant argument still needs integration there. Earlier failed
 cold-read records remain preserved, and no whole-paper or circulation
 clearance is implied. The official private Lean companion remains separately

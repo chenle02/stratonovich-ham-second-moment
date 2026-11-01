@@ -97,8 +97,13 @@
   complete internal proofs;25five-waybindings,16full text sources and8exact
   image deliveries verified.116-page PDF clean. No new Lean fact or broader
   operator/moment conclusion from this section.
-- **Immediate next:** integrate the scalar frequency-row and actual TWO
-  variance directions, then compact/Schatten/driver and source/Young proofs.
+- **Accepted wave variance TeX integration:** scientificf5c1521,Opus5.5/HIGH,
+  27PASS382.209s,no mandatory repairs. Six complete scalar/actual-form/
+  Bessel/TWO-variance/real mean-square column proofs integrated;25bindings,
+  15full texts/9exact PNG deliveries verified.125-page PDF clean;68old
+  proof bodies unchanged. No new Lean fact or sample operator/path claim.
+- **Immediate next:** integrate finite Gaussian matrix moments and whole-space
+  Sobolev compactness (FG/CC), then actual driver and source/Young proofs.
   Keep the frozen PB/OC/WS result set and full original model scope. The
   import interfaces are mapped; avoid repeating that inventory as a new round.
   Continue consolidating complete proofs into TeX/PDF, with clean builds
@@ -127,7 +132,7 @@
  rerun for promotion, new package/companion/lease/registry/HPC action.
 - **Git:** current mathematical work is in the isolated private research
   clone, branchresearch/fixed-mask-young-20261031. Latest result source
-  is95d7515; latest accepted TeX integration source96e2a18, with subsequent
+  is95d7515; latest accepted TeX integration sourcef5c1521, with subsequent
   adoption records separate.
   Fresh fetch/push failed with <HUB>NoRoute. Prior <HUB> parity
   receipts are historical, not evidence of current synchronization.
@@ -8637,3 +8642,28 @@ Full model PB/OC/WS assembly, compact/driver/source/Young chain and final
 whole-paper/cold-read/delivery duties remain open. <HUB> fresh fetch
 still failed SSH255 NoRoute; no current remote parity claimed. No source
 correction, actualp1 identity, Skorohod work or official companion action.
+
+
+### Accepted FR/AV integration close: scientificf5c1521
+
+Native process13477 TERMINAL0, actual Opus5.5/HIGH27PASSchecks382.209s,
+PASS_WITH_NOTES,no required repairs. accepted=true/coverage=true; canonical
+parser/passing/model/auth/source/read-ledger validation PASS. All15texts
+complete and9exact PNG images delivered. All25live/packet/Git/native-
+workspace/final-receipt hashes verified before adoption. Raw archive has
+40members; every member read back and SHA256 verified. Raw report
+unchanged; reader receipts normalize home paths only, raw originals archived.
+Seven optional findings adjudicated in the dated adjudication-v1.md, with
+no final source/PDF edit. Media preflight and native dry-run succeeded
+before dispatch; no case/image error, retry, recovery or threshold change.
+
+125-page PDF clean,68previous proof bodies unchanged plus6new complete
+proof blocks. No new mathematical strength or Lean fact;80facts22seams,
+L0PROPOSED/decision4 unchanged. Next FG/CC full finite Gaussian matrix
+moments and compact Sobolev cutoffs, both balanced adjoints/envelopes,
+conditional localized finite-operator variance/trace and Gaussian bound.
+The torus is auxiliary only. No actual infinite-series/path/source/Young/
+point-moment consequence from this finite module until its later consumer.
+Then AD/SC/FY and lower/upper/PB/OC/WS chain; keep full original scope and
+Le's actual-derived-constant goal. Whole-paper/cold-read/delivery remain open.
+No owned native review/compute job remains live. Goal ACTIVE.
