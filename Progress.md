@@ -10242,3 +10242,50 @@ wiki-status-verification-v1. The old pending request record stays historical.
 
 The continuation13739 is confirmed LIVE with no terminal report at capture.
 All401 scientific review inputs remain frozen; no proof, PDF or Lean edit.
+
+
+## 2026-11-01 — whole continuation TERMINAL INCONCLUSIVE, not accepted
+
+The preceding live waits ended in actual continuation13739 TERMINAL exit3.
+Returned actualOpus5.5/HIGH route is verified, transport success and
+unchanged candidate4a65c79; report INCONCLUSIVE/medium, acceptedfalse,
+coveragefalse, elapsed1288.01seconds. No fatal/major finding or required
+mathematical repair was reported, but the reviewer explicitly declines
+to certify all213proofs. All63named obligations occur once, plus one extra
+calibration check;58PASS/6INCONCLUSIVE. The open checks SEC07-09,SOURCE01,
+SOURCE03,VISUAL01 remain open, not voted away. Source/report correspondence
+is canonically coherent with acceptedfalse; canonical passing and required
+coverage gates both refuse. Original timeout is preserved separately.
+
+The reviewer reports232manuscript and38primary images unattested and
+retracts earlier claims of source-pinpoint viewing. The tool ledger flags
+134unverified bindings. These counts concern different notions of evidence.
+Actual image reads returned 'media removed: request limit'; Read-call/path
+counts do not establish delivery or reading. All28TeX were accessed, but
+verification depth varied. No full-paper, circulation or goal acceptance.
+
+Preserved untouched raw/parsed report, original/normalized receipt and full
+read ledger, verified prior-timeout lineage and all401five-way bindings.
+Archived all14continuation artifacts and read back every member SHA256:
+inconclusive-native-v1 and inconclusive-retention-v1. Every finding and
+limitation is adjudicated in inconclusive-adjudication-v1. Four minor notes
+include residual local 'sharp remains open' wording, internal review prose,
+explicit imported Theorem3.1 and unused finite exact_gap. No new source
+correction, standalone-to-package promotion or proof claim is inferred.
+
+Recovery target coverage-recovery-target-v1 preserves ALL original images,
+primary imports,44sections and213proof obligations through bounded actual
+image delivery plus a fresh full mathematical gate. It is a plan, not a
+pass or executed evidence. First make the bounded editorial scope fixes
+and pair a clean rebuilt PDF, retaining all proof bodies; then bind new
+source/render/fidelity packets and measure the first real bounded display.
+Completed reviews cannot be resumed; no chained continuation or confidence
+retry of unchanged passing work. Current13739 and44594 are BOTH TERMINAL.
+No review is currently live. Independent cold read NOT DISPATCHED.
+
+Le's reported talk observation is retained in the adjudication: Chen's held
+Theorem6.1/Remark6.3 complex Brownian-clock route differs from our proposed
+physical-time Gaussian-driver/Young/operator route. The talk itself was
+not checked; no universal necessity claim, novelty or correspondence.
+All source/PDF/Lean bytes currently remain unchanged;80facts/22seams and
+companion L0PROPOSED/decision4 retained. No HPC/Skorohod/publication action.
