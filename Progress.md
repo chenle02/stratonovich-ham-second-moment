@@ -107,8 +107,14 @@
   bindings,19full texts/10exact images verified;134-page PDF clean. V1
   dropped a lattice-spacing factor and remains rejected; corrected source,
   exact counter/control and re-review retained. No new formal coverage.
-- **Immediate next:** integrate the actual same-W Gaussian operator driver
-  (AD), then source convergence/Young identification and lower/upper assembly.
+- **Accepted actual-driver TeX integration:** scientific9dad256,Opus5.5/HIGH,
+  25PASS396.861s,no mandatory repairs. Actual original-W compact Gaussian
+  operator and Ctheta path constructed for all original models;9proof blocks,
+  31bindings/21full texts/9exact images verified.143-page PDF clean. V1
+  squared-norm/grid transcription failures restored and preserved rejected.
+  Local fixedR,T first driver only; no source/Young/moment conclusion yet.
+- **Immediate next:** integrate the canonical Gaussian source convergence
+  (SC), then fixed-mask moment/Young and full lower/upper/PB/OC/WS assembly.
   Keep the frozen PB/OC/WS result set and full original model scope. The
   import interfaces are mapped; avoid repeating that inventory as a new round.
   Continue consolidating complete proofs into TeX/PDF, with clean builds
@@ -137,7 +143,7 @@
  rerun for promotion, new package/companion/lease/registry/HPC action.
 - **Git:** current mathematical work is in the isolated private research
   clone, branchresearch/fixed-mask-young-20261031. Latest result source
-  is95d7515; latest accepted TeX integration source2571a15, with subsequent
+  is95d7515; latest accepted TeX integration source9dad256, with subsequent
   adoption records separate.
   Fresh fetch/push failed with <HUB>NoRoute. Prior <HUB> parity
   receipts are historical, not evidence of current synchronization.
@@ -8793,3 +8799,33 @@ changed formulas. Packet-v2 media preflight PASS:21texts/9typed PNGs.
 Fresh Le <plan removed> identity/headroom and firstParty doctor verified. New full
 same-model/HIGH gate PENDING; no confidence change or old-failure recovery.
 No new Lean, source/Young/moment, companion or publication conclusion.
+
+
+### Accepted repaired AD integration close: scientific9dad256
+
+Native83117 TERMINAL0,actualOpus5.5/HIGH25PASS396.861seconds,
+PASS_WITH_NOTES,no required repairs. accepted/coverage true; canonical
+parser/passing/model/auth/source/read-ledger validation PASS. All21texts
+complete and9exact PNG deliveries verified; all31live/packet/Git/native-
+workspace/final-receipt hashes match before adoption. Raw archive has
+46members, all read-back SHA256 checked. Raw report unchanged;
+reader receipts normalize only home paths, raw originals archived. Six
+optional findings adjudicated with no final source/PDF edits. V1 remains
+FAIL/HIGH and its actual norm-power/render corruption and controls retained.
+
+143-page PDF clean,84prior proof bodies unchanged;9new complete blocks,
+4repaired/clarified betweenV1/V2 and5unchanged. Original-noise compact
+Gaussian first driver and Lp-Ctheta path now actually constructed with all
+required model/class/amplitude/gain/adjoint/variance/trace/measurability/
+raw-row/basis/Gaussian-norm steps. No source convergence or solution theorem
+inferred from this local result. Fixed-I even admissible Schatten only,
+no CthetaSp or uniformR path claim.80Lean facts22seams/L0PROPOSED unchanged.
+
+Next SC source-convergence target frozen before translation in
+reviews/2026-11-01-source-convergence-tex-integration/, plan only. Retain
+GIVEN W through feature-space Gaussian extension, exact heat/Laplace law,
+strong linear driver/source-response matching, then FM/FY and all-model
+lower/upper/PB/OC/WS. Actual-derived-constant goal/full scope preserved.
+Final whole-paper/cold-read/wiki/Git/<HUB> delivery open. All owned
+native review/compute processes terminal; do not restart18283or83117.
+Goal ACTIVE; no new companion/HPC/publication/correspondence action.

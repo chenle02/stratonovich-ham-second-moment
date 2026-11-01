@@ -113,6 +113,25 @@ defines shells and all parameter dependencies when shortening any kernel
 or rescaling argument. Accepted source correctness does not certify a
 compressed transcription; failed candidate/receipt remain rejected.
 
+## Literal TeX transport and homogeneity checks
+
+The first AD translation confused a norm with a squared norm and corrupted
+a grid subscript during non-raw JavaScript string transport. Use a
+literal-safe mechanism such as String.raw for TeX patches. A non-raw
+backslash-r-m becomes character codes13,109; literal TeX needs92,114,109.
+Scan C0 controls BEFORE formatting, since a formatter can turn the control
+into a newline and leave plausible but wrong letters. Successful compile
+and zero overfull boxes do not certify rendered mathematical semantics.
+Compare each changed display with the intended source; a clean max_k is
+preferable to an avoidable legacy font command in a grid subscript.
+
+Check the degree of homogeneity of every copied norm identity. For the
+tensor test, the true relation is
+||tau tensor q||_(H_W)^2=Q_sp||tau||_a^2. Unit normalization hides the
+mistake; scaling a norm-one tensor by2 yields norm2 and squared norm4.
+Preserve the correct power, object space and covariance normalization.
+Both failed formula and report remain historical rejects after repair.
+
 
 ## Finite Gaussian and whole-space Sobolev integration accepted
 
@@ -128,3 +147,24 @@ This is a plan, not an extra theorem. Translate the SAME-W coefficient,
 localization, actual variance/tail, Gaussian-series and path proofs in full.
 Do not re-prove accepted FG/CC or infer those consumers from the finite
 conditional theorem without their actual instantiation.
+
+
+## Actual original-noise driver integration accepted
+
+Scientific9dad256: notes/integrated_actual_operator_driver.tex closes the
+full repaired AD source/statement/actual-Gaussian/PDF correspondence gate,
+25PASS/HIGH396.861seconds,no mandatory repairs. Nine complete proof blocks;
+84prior bodies unchanged. Clean143-page PDF,21full texts/9exact images
+verified. V1 remains FAIL for squared-norm and rendered-grid defects;
+source restoration, literal-safe TeX transport and homogeneity controls
+passed fresh V2. No final reviewed source/PDF edit on adoption.
+
+The actual compact operator and Ctheta path are now constructed on the
+GIVEN noise space, not merely conditional finiteZ hypotheses. This is a
+local fixedR,T first driver, with fixed-I even admissible Schatten bounds
+and all finite operator moments. Next integrate SC with the frozen target
+in reviews/2026-11-01-source-convergence-tex-integration/. Preserve raw W
+through the source feature-space extension and match the exact author
+heat/Laplace law. Then FM/FY supplies the canonical initial-data and moment
+transfer. No uniformR, source/Young/point-moment conclusion is inferred
+from the local driver theorem alone.
