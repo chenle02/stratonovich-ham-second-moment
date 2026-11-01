@@ -23,7 +23,10 @@ calibration or Le's further request, rather than expanding the target.
 
 The inventory in reviews/2026-10-31-derived-constant-integration/inventory-v1.json
 records19curated source roles and the110-page baseline. It is a starting
-inventory, NOT a complete certified dependency closure. In particular,
+inventory, NOT a complete certified dependency closure. The follow-up
+`notes/derived-constant-proof-imports.md` and its scoped manifest identify
+the SA alias omission, the independent-upper finiteness order and narrow
+scalar imports; they audit interfaces rather than certify whole proofs. In particular,
 current accepted Markdown inputs cannot simply be replaced by unproved
 assertions in the final TeX. For every imported own lemma, locate its exact
 accepted scope and complete proof and supply the corresponding internal

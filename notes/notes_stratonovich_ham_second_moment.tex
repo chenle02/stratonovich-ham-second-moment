@@ -81,8 +81,9 @@ noise: Stratonovich regime\\[0.3em]
   $\E u^2(t,x)\le e^{Ct^2}$. The goal of this project is (i) an upper bound
   for $\E u^2(t,x)$ at the correct scale
   $t^{(4-\alpha-\alpha_0)/(3-\alpha)}$, and (ii) the sharp constant in the
-  second-moment asymptotics, or two-sided bounds of the same type as the
-  first-moment result. These notes fix the model, record exactly what is
+  second-moment asymptotics, derived from the model through an explicit
+  value or a fully specified variational formula. Agreement with the
+  conjectured constant is a comparison question. These notes fix the model, record exactly what is
   known (with source pinpoints), state the targets, and list the planned
   route. Section~\ref{S:G0} gives the mixed-term expansion and the upper
   bound $\E u^2(t,x)\le\exp(Ct^\rho)$ for large $t$, where
@@ -7591,22 +7592,26 @@ The earlier explicit bounds for $0<\alpha\le1$ remain available.
 The sharp constant and final whole-paper cold read remain open.}
 
 \begin{goal}[Sharp second-moment constant]\label{G:sharp}
-  Prove two-sided bounds of the type of Theorem~\ref{T:first} for $p=2$:
+  Under Hypothesis~\ref{H:homog}, derive a finite constant
+  $C_2(\gamma,\alpha_0)$ and prove, for every fixed $x \in \R^d$,
   \[
-    2^{\frac{4-\alpha}{3-\alpha}}L_*
-    \le\liminf_{t\to\infty}t^{-\kappa}\log\E u^2(t,x)
-    \le\limsup_{t\to\infty}t^{-\kappa}\log\E u^2(t,x)
-    \le2^{\frac{4-\alpha}{3-\alpha}}L^*,
+    \lim_{t\to\infty}t^{-\kappa}\log\E u^2(t,x)
+    = C_2(\gamma,\alpha_0).
   \]
-  which would confirm Conjecture~\ref{Conj:allp} at $p=2$ up to the same gap
-  $\cE_*<\cE$ as for $p=1$. The exact limit
-  $2^{(4-\alpha)/(3-\alpha)}L^*$ is the conditional target, contingent on
-  closing that gap.
+  A variational characterization must specify its full domain, covariance
+  amplitude, kinetic coefficient and Gaussian action. Derive further
+  evaluations and bounds from this formula. For zero covariance,
+  $u(t,x) = 1$ and $C_2(0,\alpha_0) = 0$.
 \end{goal}
 
-\myCmts{The exponents in Goal~\ref{G:sharp} are the conjectured ones. If
-the analysis produces a different $p=2$ constant, that is a finding about
-Conjecture~\ref{Conj:allp}, not a reason to adjust the target.}
+\myCmts{Goal~\ref{G:sharp} follows Le's revised direction of
+2026-10-31: derive the actual constant, whatever the computation gives.
+The original proposed bounds with endpoints
+$2^{(4-\alpha)/(3-\alpha)}L_*$ and
+$2^{(4-\alpha)/(3-\alpha)}L^*$ remain comparisons with
+Conjecture~\ref{Conj:allp}. Matching those endpoints or closing the source's
+variational gap is not a completion requirement. No correction of the
+source's normalization or equality of its energy domains is adopted.}
 
 \section{Established steps and open questions}\label{S:route}
 

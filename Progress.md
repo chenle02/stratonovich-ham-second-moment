@@ -8469,3 +8469,55 @@ Le's exact instruction in this thread:
   thenwholeargumentskeptic+freshfinalcoldreader. FinalcontractNOTcomplete.
 - <HUB>fetch/pushNoRoutepersists;privatecommitsLOCAL. Canonicalwiki/
   queueandactualHEADconvergencepending. No public/correspondenceclearance.
+
+
+## 2026-11-01: integration import-interface audit
+
+Previous goal turn: PROGRESS (accepted WS adoption414758c and root handoff).
+Current objective remains Le's revised actual-constant target, full original
+model scope. No new proof or claim is proposed in this audit.
+
+- Refined19-source inventory into37scoped nodes across35source files,
+  with explicit import order and file hashes. Checked acyclicity of the
+  declared scoped graph; this is NOT certified dependency completeness.
+- Found missing SA alias: radius-stochastic-driver-anchor.md,scientific
+  8cf62b0, supplies the growing-radius first-driver typical-ball estimate.
+  Fixed-radius estimates alone cannot replace it in BT/UR.
+- Preserved the independent old T:full-upper finiteness input to UL/B;
+  new signed-score upper/exact PB limit cannot supply their premises.
+- Scoped TE to its self-contained scalar temporal identity and GI to Gamma
+  identities. No historical d1 consumer is promoted into full dimensions.
+  Retained S's actual CG full-F forcing/Fubini call at its bounded scope.
+- Conservatively retained GC's old GL fixed-parameter finiteness branch;
+  direct FY moment bounds suggest a possible presentation compression,
+  but it is not adopted before actual-source/phase correspondence review.
+  Kept noise-only restart separately; no block independence introduced.
+- Verified56frozen note/Git input hashes from six existing FULL receipts;
+  all match.50also match live adoption files. Six adoption differences
+  retain their existing adjudications; custody alone does not certify them.
+- New notes/derived-constant-proof-imports.md and dependency-interfaces-v1.json
+  record exact scopes, excluded calibration contexts and remaining body/
+  source/application/TeX checks. No review verdict, new Lean count, new
+  official companion, TeX integration or completion clearance is inferred.
+
+Next: integrate complete covariance/variance/compact-driver and source/Young
+proofs into TeX, then the ordered lower/upper/PB/OC/WS chain. Main source/PDF
+remain unchanged in this audit. No new review/compute job is live. Fresh
+fetch still failed SSH255 NoRoute; isolated owned work remains local, and
+no current <HUB> parity is claimed.
+
+
+### Manuscript target aligned with Le's revision
+
+Updated G:sharp and the abstract objective to derive the actual C2 and its
+fully specified variational characterization. Chen endpoints remain only
+comparisons; source-gap closure is not a requirement. No new proof added:
+all existing proof-environment bodies are byte-identical to414758c.
+Rebuilt source/PDF together,110pages,0errors/undefined references or
+citations/overfull boxes. format-tex: already formatted. Extracted target
+text and visually inspected PDF108-109; readable, no clipping/overlap.
+All.bib symlink and bibliography databases untouched; build used canonical
+read-only refdb search path. Evidence: target-alignment-build-v1.json.
+The dependency manifest is bound to414758c before this wording-only edit;
+its MAIN hash remains the honest audited baseline. It is not silently
+rebound to the successor. Mathematical integration is still pending.
