@@ -8548,3 +8548,10 @@ verified; firstParty claude.ai doctor retained. Independent integration
 correspondence review is PENDING at this source freeze. No acceptance,
 whole-paper or final cold-read clearance is inferred. Full PB/OC/WS and
 remaining driver/source/lower/upper integration duties stay open.
+
+
+Integration review v1 TERMINAL exit5 before any model call: provider workspace
+preflight caught prompt reference Model-context-v1.tex.txt versus supplied
+lowercase model-context-v1.tex.txt. Literal case fixed in prompt-v2 and a
+new immutable packet-v2; original attempt/packet retained. No waiver,
+proof/build change, model switch or confidence change. Review still pending.
