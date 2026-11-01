@@ -10214,3 +10214,31 @@ frozen source-manifest change, whole-book audit or local PDF-arrival claim.
 
 All proof/PDF/Lean bytes unchanged,80finitefacts/22seams/L0PROPOSED retained.
 No HPC, correspondence, public release, companion or Skorohod development.
+
+
+## 2026-11-01 — bounded internal wiki status correction VERIFIED maintained
+
+Exact ticket tk-20261101-124652-codex-stratonovich-project-status is done,
+statusmaintained, owned wiki43ae67dce11469b22cd881e47d87fb7325d0defc,
+lintclean; no paper verify-digest applies. Read the exact receipt and actual
+committed project page, and compared the live canonical page byte-for-byte:
+SHA256b651ad267a4b391a5cecb9151380d6253e3ef87d5314431d423ed352668d74c1.
+Verified actual-constant user revision, complete nonseparable raw control
+formula, kinetic one/raw variance-half, all original models and zero case,
+scoped30/31HIGH reviews, source qualifications, white-energy versus C2
+bounds, Lean/companion boundary and explicit PENDING whole-review/NOT
+DISPATCHED cold-read status. Old rounds are preserved as historical.
+The only other changed paths are seven standard helper-generated indexes,
+not sibling scientific pages. No manuscript/public-site deployment/contact.
+
+The page is explicitly a snapshot from before the original44594 timeout;
+its live-handle sentence records that earlier capture, not current13739
+state. Current research Progress.md governs the later timeout/continuation.
+A final outcome update remains due after actual final gates; do not count
+this maintenance receipt as mathematical review or goal completion.
+Retained exact receipt and committed/observed page bytes in the small
+wiki-status-terminal-v1 archive, every member hash read back; summary
+wiki-status-verification-v1. The old pending request record stays historical.
+
+The continuation13739 is confirmed LIVE with no terminal report at capture.
+All401 scientific review inputs remain frozen; no proof, PDF or Lean edit.
