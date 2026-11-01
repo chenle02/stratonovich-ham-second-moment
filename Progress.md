@@ -10472,3 +10472,30 @@ gates all remain open; old cold packet stale.80facts/22seams/L0PROPOSED
 and companion decision4 unchanged. No HPC, correspondence, public release,
 new source correction or private companion. Bounded wiki-first source/
 version recon may proceed independently while required capacity is held.
+
+
+## 2026-11-01 — resume after interruption; common v2 binding completed
+
+Le paused and reactivated the goal; the latest instruction is active.
+The preceding interrupted turn made authoritative progress: common v2
+887fbfb was committed/pushed, both distinct SF04failures and actual route
+limits retained, and read-only comparison context supplied. On resume,
+verified no reviewer/probe process is live and the only two untracked
+files are our completed v2 official spec/binding. Their actual common
+revision887fbfbe0fa4368d6b32a436615d73349b2445d8,
+tree6a48b34d7ec9bc686453ee5c656938475ea48774,448source identities,
+962packet copies and390check obligations are retained. Source/private
+reference hash and exact spec SHA match; no scientific acceptance.
+
+This commit completes their durable binding without changing any unit
+input, theorem, proof or PDF. All future scientific components/synthesis
+must use that exact common v2 source revision, not this workflow-only HEAD.
+Old v1 failures remain terminal on their original revision. No unsupported
+resume, mixed-candidate composition or confidence promotion.
+
+Current UTC22:00 is before the explicit native short-window reset23:30UTC.
+Do not repeat known-denied provider calls. A bounded wiki-first current
+source/version check prompted by Le's complex-time talk observation may
+proceed independently; it changes no frozen source by itself. This is
+continued research work, not a substitute for mandatory Opus/source/visual/
+whole/cold gates. Goal completion remains unproven and active.
