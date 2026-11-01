@@ -2,7 +2,8 @@
 
 This is a comparison record, not a new Skorohod result or proof premise.
 PB's original point limit is accepted internally at scientific40ec9a9;
-OC remains an unreviewed next comparison target.
+OC's full proof subsequently passed18HIGHchecks at scientific25cc688,
+adopted958c8fb. This status update changes no comparison formula or source.
 
 - Static exponent: kappa=(4-alpha-a)/(3-alpha) tends to
   (4-alpha)/(3-alpha) as a->0. Neither PB nor OC interchanges a->0 with

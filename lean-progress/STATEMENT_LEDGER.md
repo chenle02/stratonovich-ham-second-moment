@@ -147,3 +147,16 @@ conditionalPGbranchD_A bound; integrationevidence,notfifthpublicfact.
 Scientific4e2219d,FULL26HIGH305.393s checksactualguards/type/application
 anduncoveredPGanalyticproof. WholePGminimum/attainment/realization/PDE
 notLean-certified. Source/types/receipts inlocal-checks/positive-gram-v1/.
+
+## White spatial normalization: StratonovichHAMAudit.WhiteCDF
+
+| Public name | Exact type/application boundary | Status |
+|---|---|---|
+| cdf_square_bound | RealA,b; assumesFORALLrealz,0<=b-2zA+z²/3; proves3A²<=b. ActualCDFidentity must establish the premise analytically. | Source/types/std3/5pairreplay/2Falsecontrols; initialFIT26HIGH and FULLWS25HIGH |
+| energy_upper | Realc,A,b,h3:3A²<=b; cA-b/2<=c²/6. Actualc is covariance mass and physical energy/domain/attainment are analytic. | SameFULLapplicationgate95d7515 |
+
+PRIVATEactual_energy_consumer composes these APIs; notthirdpublicfact.
+SourceSHA4d3f8ee4350f96d5936a4b213c7aff5a312218743ee43b885e3c91a3b100cbcd,
+local-checks/white-cdf-v1/. Currentapplication-summary-v1 separates accepted
+usefromrawpending-statuscompile/guardreceipts.80acceptedfacts22localseams;
+noH1/CDF/integral/Gamma/supremum/PDEkerneltheoremorofficialpackagegate.

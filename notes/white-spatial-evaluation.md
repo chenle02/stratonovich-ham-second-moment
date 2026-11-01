@@ -1,9 +1,13 @@
 # White spatial energy and explicit bounds for the derived moment constant
 
-AUTHOR PROOF, UNREVIEWED. WS FIT passed26checks/HIGH at sourcead9fe4d,
-276.215seconds; this new full analytic proof has NOT passed its own gate.
-The two finite conditional algebra steps are kernel checked, not the H1,
-CDF or model assertions below. Le's goal is the actual computed constant,
+ACCEPTED at the scoped FULL analytic/model/kernel-application gate:
+scientific95d7515,actualOpus5.5/HIGH,25checksPASS,313.597seconds,no repairs.
+All39five-waybindings and54rawnativearchive members verified BEFORE
+optionalclarity/promotion; all8notesadjudicated in
+reviews/2026-10-31-white-spatial-evaluation/scientific-adjudication-v1.md.
+Frozenproof/report unchanged. Two finite conditional algebra steps are
+kernel checked; the H1/CDF/integral/Gamma/model arguments are reviewed
+INFORMALmathematics. Le's goal is the actual computed constant,
 without forcing Chen's prediction. The all-model PB/OC theorems are retained;
 this section evaluates a concrete example, not a reduced target.
 
@@ -57,8 +61,9 @@ or that its intrinsic supremum has been numerically optimized.
 ## 2. Full-H1 representatives and the CDF square identity
 
 Let f be REAL H1(R) with ||f||2=1. Choose its locally absolutely continuous
-representative: on any bounded interval subtract the primitive of the weak
-derivative f'; the difference has weak derivative0, hence is a.e. constant.
+representative: on a bounded interval f' is L1 by Cauchy-Schwarz; its
+integral primitive has weak derivative f' by Fubini. Subtract that primitive
+from f; the difference has weak derivative0, hence is a.e. constant.
 The last fact follows by testing against derivatives of compact smooth
 primitives of all zero-integral test functions. The local representatives
 patch on overlapping intervals. In particular f is continuous, and
@@ -104,7 +109,8 @@ WhiteCDF.cdf_square_bound, with A=int f^4 and b=int(f')². Its conclusion is
 
 Its kernel proof is the finite substitution z=3A; all representative,
 integrability and integration facts proving its premise are Section2's
-analytic work, not Lean-certified here. A>0 for a unit profile. Also b>0:
+analytic work, not Lean-certified here. A>0 for a unit profile: A0 would
+force f=0 a.e., contrary to unit norm. Also b>0:
 if f'=0, its absolutely continuous representative is constant, and the
 only L2 constant is0, contradicting unit norm. Hence(7) gives A/sqrt(b)<=1/sqrt3.
 
@@ -187,16 +193,18 @@ and1.1211952203 follow from(2), not a numerical optimization of C2.
 
 The exact general-model constant is the reviewed PB variational value.
 This example gives its evaluated spatial energy and explicit bounds; it
-asserts neither endpoint equals C2. The profile quadratures are independent
-consistency evidence, not proofs of full-H1, endpoints or the supremum.
+asserts neither endpoint equals C2. The profile quadratures are author-side
+deterministic consistency checks, not proofs of full-H1 or the supremum.
 Hard-coded negative-control labels in that JSON are descriptive; actual
 negative Lean source/logs reject the wrong coefficient4 and ceiling1/12.
 
 Two finite public proofs have source/types/std3/replay/control evidence.
 They do not formalize H1, integrals, CDF, Gamma, attainment or a stochastic
 moment. Their source/application fidelity and the complete new analytic
-note need this OWN full independent gate before adoption. No theorem is
+note passed this OWN full independent gate as recorded above. No theorem is
 being fitted to Chen's guesses; no source correction, actualp1, Skorohod
 bridge, novelty/human/wholepaper/coldread/public/contact/HPC/companion
 clearance follows. After this bounded example, consolidate and verify the
 main result instead of opening optional refinements.
+
+[held back: collaborators' unpublished work]

@@ -87,11 +87,15 @@
   beforeclarity. All originalmodels have the reviewed occupation ceiling
   and common spatial-energy bracket fromOC(18). These bounds are not
   asserted sharp or equal to the exact PB variational constant.
-- **Immediate next:** full independent proof/application gate for WS1-WS3.
-  Its26HIGH FIT passed; complete analytic note and strengthened source/log
-  evidence are being frozen. Keep all-model PB/OC scope; this is an example,
-  not a narrowed goal. After closure, freeze the main result set for TeX
-  integration/build and whole-argument/cold-read checks, not optional refinements.
+- **Accepted explicit white example:** scientific95d7515,FULL25HIGH313.597s,
+  no repairs;39five-waybindings/54native members verified beforeclarity.
+  R_sp=c/sqrt3,E_sp=c²/6 and exact Gamma-function bounds for C2, with
+  ratioofBOUNDformulas<=sqrt(sqrt(pi)/(2Gamma_E(5/4)²)). Neither endpoint
+  is asserted equal to C2. Two finite algebra applications also accepted.
+- **Immediate next:** freeze the mathematical result set PB/OC/WS for
+  integration. Map exact own-dependency scopes, consolidate complete proofs
+  into TeX/PDF, clean build and source/PDF correspondence, then whole-argument
+  and final independent cold-read checks. Avoid optional refinements.
 - **New accepted uniformR E Cameron/regulator:** scientificf54e92b,
   21checks/HIGH348.303s,no requiredrepairs;21input bindings/native archive
   verified before6optional clarity notes. Actual all-model uniformR means,
@@ -108,14 +112,14 @@
   synchronization. Chen's energy/domain/normalization dictionary remains
   a comparison question, NOT a completion blocker under Le's revision.
   Full all-model derived-constant goal ACTIVE; no circulation clearance.
-- **Lean:**78acceptedfinitefacts21local seams/L0 PROPOSED. Four PG finite
- algebra facts and their exact finite applications accepted at687b958;
- analytic optimization and physical comparison remain outside the kernel.
- The state mirror already contains21entries totaling78facts; summary
- refresh does not add facts, rerun checks or create a companion/package.
+- **Lean:**80acceptedfinitefacts22local seams/L0 PROPOSED. Two white-CDF
+ conditional algebra facts and actual WS applications accepted at95d7515;
+ the analytical H1/CDF/attainment/Gamma/PDE claims remain outside the kernel.
+ Mirror preserves all21oldentries78facts and adds2facts/1seam. No compiler
+ rerun for promotion, new package/companion/lease/registry/HPC action.
 - **Git:** current mathematical work is in the isolated private research
-  clone, branchresearch/fixed-mask-young-20261031; latest frozen PB proof
-  source is40ec9a9, with subsequent operational summary updates separate.
+  clone, branchresearch/fixed-mask-young-20261031; latest scientific proof
+  source is95d7515, with subsequent adoption/clarity updates separate.
   Fresh fetch/push failed with <HUB>NoRoute. Prior <HUB> parity
   receipts are historical, not evidence of current synchronization.
   Rootmaster remains a separate loader/handoff checkout; no research merge.
@@ -8434,3 +8438,34 @@ Le's exact instruction in this thread:
   thenfirstPartydoctor/actualOpus5.5READYpassed; no fallback/thresholdwaiver.
 - OwnedLean/quadrature/FITjobs terminal. Fullreviewbeingfrozen, no proof
   adoptionyet. Onceclosed, prioritizeconsolidation andremainingfinalgates.
+
+## WS full proof and finite applications accepted — 2026-10-31
+
+- Existing79224TERMINAL0: actualOpus5.5/HIGH,25PASSchecks313.597s,
+  PASS_WITH_NOTES,no requiredrepairs. Canonicalparse/pass/correspondence/
+  fullcoveragePASS;39five-waybindings BEFOREclarity/promotion;54rawnative
+  membersreadbackSHAverified,rawreportunmodified. All8notesadjudicated.
+- ACTUALwhite spatial R_sp=c/sqrt3,E_sp=c²/6 andbounds(2/3)sqrt(c/M_a)
+  <=C2(c,a)<=(2/3)sqrt(cK0(a)) accepted. UniformratioofBOUNDformulas has
+  exactGammabound,attainedata1/2,symmetrica->1-a. NeitherendpointisC2;
+  no globalnumericalC2evaluation,decimalenclosure or endpointSPDEclaim.
+- Optionalclarity:Apositivityreason;basicSobolevprimitivefacts;dropword
+  independentforauthorquadratures;formalnamedstatementsatTeXintegration;
+  optionalGamma/scalingrefinementsNOTadopted;explicitinheritedcalibrations;
+  rawpendingreceiptsretainedwithcurrentapplication-summary;oldOCstatusfixed.
+  No substantiveproofrepair/compiler/numericrerun. Sourceproofsunchanged.
+- Two conditional finite public facts promoted afterinitialtype/definition/
+  ACTUALanalyticapplicationreview:80acceptedfacts22localseams. Mirror adds
+  one2factentry,preservesall21oldentries78factsandofficialL0PROPOSED/
+  candidateNone/jobids[]. PrivateconsumerNOTthirdpublicfact. No package/
+  companion/remote/lease/registry/HPC action. H1/CDF/Gamma/PDEunformalized.
+- MathematicalresultsetPB/OC/WS nowFROZENforintegration. Mainconstantis
+  theexactPBvariationalformulaALLoriginalGamma/d1/2/3;OCboundsallmodels,
+  WSexplicitexample. Le'sderived-constantrevisioncontrols;no Chenmatchgate.
+  DoNOTopenoptionalrefinementwavesunlessneededforcorrectnessorrequested.
+- Integrationinventory19curatedsourcerolerecords/baseline110PDFpages;
+  explicitlyNOTcompletecertifieddependencyclosure. Resolveactualown-dep
+  scopes,includecompleteproofs,integrateTeX/PDFwithstrictbuild/fidelity,
+  thenwholeargumentskeptic+freshfinalcoldreader. FinalcontractNOTcomplete.
+- <HUB>fetch/pushNoRoutepersists;privatecommitsLOCAL. Canonicalwiki/
+  queueandactualHEADconvergencepending. No public/correspondenceclearance.

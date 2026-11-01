@@ -5,7 +5,9 @@ Two PUBLIC conditional REAL algebra statements, sourceSHA
 Headers were frozen before proof and unchanged. Both compile with only
 standard axioms; exact full elaborated types, private composition and
 positive calls are in types-and-axioms.txt and Audit.lean. Initial analytic
-type/application correspondence is PENDING; these are not accepted WS facts.
+type/application correspondence passed FIT26HIGH and FULL25HIGH at
+scientific95d7515. Current acceptance is application-summary-v1.json;
+raw pending-status compile receipts remain preserved as stage history.
 
 1. cdf_square_bound(A,b,h): h is FOR EVERY REALz the scalar nonnegativity
    0<=b-2zA+z²/3. In WS, A=int f^4 and b=int(f')² for a real unit-L2 H1
@@ -34,8 +36,8 @@ Effective limits were verified inside every unit. Process RSS about1.8GiB;
 do not confuse it with the much smaller cgroup-charged shared-cache memory.
 
 No new repository/package/remote/lease/registry/cluster action. Official
-L0/PROPOSED and companion decision4 unchanged. Accepted78facts21seams plus
-these2PROVISIONALpublicfacts; no full GN/CDF/PDE formalization claim.
+L0/PROPOSED and companion decision4 unchanged. These2publicconditional
+facts are now accepted:80facts22seams. No full GN/CDF/PDE formalization claim.
 
 Evidence guard: the initial inline validation looked only for known axiom
 names. Although the actual complete outputs were manually read and contain

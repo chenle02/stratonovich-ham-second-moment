@@ -18,12 +18,12 @@
   pilot now has three elaborated statements and an owned-source replay.
   Exact type/application review passed4checks/HIGH;no official package gate is claimed.
 
-- **Standalone local checks (current):**78acceptedfinitefacts21local seams.
-  Latestfour PG finite algebra facts passed FULL exacttype/application
-  review26HIGH305.393s atscientific4e2219d,adopted687b958. Whole PG
-  optimization and physical occupation/SPDE comparison remain informal;
-  no officialpackage/companion gate. The mirror already records21entries
-  and78facts. This heading refresh promotes no new fact or application.
+- **Standalone local checks (current):**80acceptedfinitefacts22local seams.
+  Latesttwo white-CDF conditional algebra facts passed FULL exacttype/
+  applicationreview25HIGH313.597s atscientific95d7515. ActualH1/CDF,
+  integrals/suprema/attainment/Gamma/PDEarguments remain informal. Mirror
+  addsone2factentry andpreservesall21oldentries78facts. Privatecomposition
+  isnotthirdfact;no compiler rerun or officialpackage/companion gate.
 
 ## Planned waves (strategy in ROADMAP.md)
 
@@ -740,3 +740,16 @@ Negativecontrolsourcesnowincludedandhash/name/logboundbyguardv2,
 18adversarialtextmutationsrejected; no compiler/proof rerun. Prior artifacts
 preserved.2PROVISIONAL/accepted78facts21seams/mirrorunchanged. Private
 compositionnotthirdfact, officialL0PROPOSED/decision4 unchanged.
+
+## White CDF actual applications accepted — 2026-10-31
+
+Scientific95d7515,FULL25HIGH313.597s,no requiredrepairs, accepts complete
+publictypes/definitions/ACTUALCDFsquare andphysical-energy guardapplications.
+Source4d3f8ee4350f96d5936a4b213c7aff5a312218743ee43b885e3c91a3b100cbcd,
+headers/typedproofs/replayoutputs unchanged. TwoPUBLICconditionalfacts
+promoted:80acceptedfinitefacts22seams. Privategenericconsumer notthirdfact.
+Derivedmirror adds2factentry,preserves21oldentries78factsandallofficial
+L0fields. Rawpending-statusreceipts preserved;application-summary-v1 current.
+AnalyticH1,CDF/IBP/integrals,sechattainment,Gamma andoriginalpoint bounds
+reviewedINFORMAL,notLean-certified. No newcompiler/package/registry/lease/
+remote/cluster/companionaction. Integration/finalgatesremain.

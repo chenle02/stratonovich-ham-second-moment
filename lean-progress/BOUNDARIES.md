@@ -493,3 +493,16 @@ weakderivatives/ACrepresentative,endpoints,integrability/IBP,soliton
 attainment,energy/R_spidentification,coefficientGammafunctionsandmoment
 transferremainoutsidekernel. TwofactspendinginitialWSapplicationreview;
 acceptedcounts78/21unchanged. No officialcompanion/package/clusterclaim.
+
+## WS-WHITE-CDF-CLOSE: two exact finite applications accepted
+
+Scientific95d7515 FULL25HIGH313.597s passes initialtype/definition/actual
+CDFsquare/energyguardfidelity andtheuncoveredanalyticproof separately.
+Promote2unchangedPUBLICconditionalalgebra facts to80/22;privatecomposition
+notthirdfact. Kernelonlychecksforallrealz nonnegativequadratic->3A²<=b
+andthenenergyuppercA-b/2<=c²/6. RealH1representative/weakderivative,
+allintegrability/endpoints/IBP/CDFidentity,physicalδpairing,mass,
+sechadmissibility/attainment,GammaCS,source/pointmomentidentification remain
+analytic. Rawreceipts unchanged asstagehistory;currentapplication-summary-v1
+recordsaccepteduse. No source/header/compilerchange or officialpackagegate.
+L0/PROPOSED andcompaniondecision4 remain. No claimofwhole-PDEformalization.

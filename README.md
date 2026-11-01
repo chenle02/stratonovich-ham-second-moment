@@ -16,7 +16,11 @@ second-moment limit for all admissible dimensions/covariances by an explicit
 intrinsic positive-control variational constant. Scientific source40ec9a9
 passed19checks/HIGH; see the [proof](notes/physical-signed-positive-score-comparison.md).
 
-Further constant simplification and bounds are in progress. The tracked
+The [general derived bounds](notes/all-model-occupation-ceiling.md) and
+[explicit white-space evaluation](notes/white-spatial-evaluation.md) also
+passed their full scoped reviews. The exact constant remains the intrinsic
+variational value; interval endpoints are bounds, not its evaluated value.
+The mathematical result set is now frozen for integration. The tracked
 [TeX/PDF notes](notes/notes_stratonovich_ham_second_moment.pdf) are the earlier
 baseline; the new result has not yet been integrated there. Earlier failed
 cold-read records remain preserved, and no whole-paper or circulation

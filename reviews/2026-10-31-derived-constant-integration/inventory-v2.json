@@ -1,0 +1,248 @@
+{
+  "scope": "updated integration inventory only; not complete certified dependency closure",
+  "baseline": {
+    "tex": "notes/notes_stratonovich_ham_second_moment.tex",
+    "tex_sha256": "58b092b258d4f363f8bfa0a02dcf492dcb9c13e794dbcab440bf7b0529b53b7d",
+    "pdf": "notes/notes_stratonovich_ham_second_moment.pdf",
+    "pdf_sha256": "b552a051874ac18920fd32610318404015673e50b1b035f6793bff29618c7e30",
+    "pages": 110
+  },
+  "sections": [
+    {
+      "line": 118,
+      "title": "\\section{Model and standing assumptions}\\label{S:model}"
+    },
+    {
+      "line": 235,
+      "title": "\\section{What is known}\\label{S:known}"
+    },
+    {
+      "line": 383,
+      "title": "\\section{Gate G0: cross terms and the loss in the norm bound}\\label{S:G0}"
+    },
+    {
+      "line": 1396,
+      "title": "\\section{Gate G1: finite-order calibrations in one space dimension}\\label{S:G1}"
+    },
+    {
+      "line": 1760,
+      "title": "\\section{G2 upper bounds for spatial exponents at most one}\\label{S:d1-upper}"
+    },
+    {
+      "line": 2327,
+      "title": "\\section{Higher spatial exponents under a convolution bound}"
+    },
+    {
+      "line": 2717,
+      "title": "\\section{Riesz bounds by interpolation with static noise}"
+    },
+    {
+      "line": 3026,
+      "title": "\\section{General homogeneous covariance in dimension two}"
+    },
+    {
+      "line": 3495,
+      "title": "\\section{Three-dimensional bounds from covariance endpoints}"
+    },
+    {
+      "line": 4392,
+      "title": "\\section{Physical and spectral energy for measure covariances}"
+    },
+    {
+      "line": 4541,
+      "title": "\\section{A static phase estimate at first variance order}"
+    },
+    {
+      "line": 4787,
+      "title": "\\section{All static orders with arbitrary initial phase}"
+    },
+    {
+      "line": 5361,
+      "title": "\\section{Interval fields and the full upper bound}"
+    },
+    {
+      "line": 6623,
+      "title": "\\section{A static lower comparison and a near-static mean gap}"
+    },
+    {
+      "line": 7229,
+      "title": "\\section{A small-order test for direct Brownian clock copying}"
+    },
+    {
+      "line": 7575,
+      "title": "\\section{Targets}\\label{S:targets}"
+    },
+    {
+      "line": 7611,
+      "title": "\\section{Established steps and open questions}\\label{S:route}"
+    }
+  ],
+  "sources": [
+    {
+      "role": "canonical-source-and-finiteness",
+      "path": "notes/notes_stratonovich_ham_second_moment.tex",
+      "sha256": "58b092b258d4f363f8bfa0a02dcf492dcb9c13e794dbcab440bf7b0529b53b7d",
+      "bytes": 344930,
+      "lines": 7648,
+      "opening_scope": "\\documentclass[12pt]{article}\n\n% === amsrefs bibliography setup ===\n\\usepackage{amsrefs}\n\\BibSpec{article}{%\n+{}{\\PrintAuthors}                {author}\n+{,}{ \\textit}                    {title}\n+{.}{ }                           {part}\n+{:}{ }                           {subtitle}"
+    },
+    {
+      "role": "actual-driver-and-source-identification",
+      "path": "notes/actual-operator-driver.md",
+      "sha256": "ffc7ff642b17b64eb995a2d7d32610b02b6e24a49ce867a3f2eca9fca2455642",
+      "bytes": 29685,
+      "lines": 565,
+      "opening_scope": "# Actual masked operator driver on the balanced wave phase\n\nACCEPTED internal actual operator-path result: native Opus5.5/high full\nreview, PASS_WITH_NOTES/HIGH, scientific93d71e4; see the\n2026-10-30-actual-operator-driver packet and adjudication.\nThis constructs a LOCAL physically masked first Gaussian operator path on\nthe SAME original W, in every admissible dimension and covariance class.\nIt proves no source-cutoff convergence, Young flow, canonical solution\nidentity or new solution-moment asymptotic."
+    },
+    {
+      "role": "actual-driver-and-source-identification",
+      "path": "notes/source-operator-convergence.md",
+      "sha256": "e0c344ab16c17135550a9b60a1cad6a43b3fe12c0eeef0f0889fa078f38cc4ae",
+      "bytes": 25013,
+      "lines": 476,
+      "opening_scope": "# Canonical source convergence in the masked operator-driver norm\n\nACCEPTED after independent Opus5.5/HIGH full proof review: ten checks,\nPASS_WITH_NOTES, no required repairs. See the scientific adjudication in\nreviews/2026-10-30-source-operator-convergence/. The frozen scientific\ncandidate is retained at revision da9d464; the changes below clarify the\nfive minor findings without replacing an estimate or construction.\nThis concerns LINEAR Gaussian first drivers. It proves no nonlinear Young\nflow, canonical-solution identity, pointwise Sobolev evaluation or new"
+    },
+    {
+      "role": "actual-driver-and-source-identification",
+      "path": "notes/fixed-mask-young-constant-phase.md",
+      "sha256": "9823d6a1abd42cbd45347e460b301a5ead075ba95439b24babc70fe1adaf7a29",
+      "bytes": 23144,
+      "lines": 433,
+      "opening_scope": "# Fixed-mask Young evolution on Sobolev phases plus constants\n\nACCEPTED after full scientific v2 review: Opus5.5/HIGH, thirteen checks,\nPASS_WITH_NOTES, no required repairs; scientific source8ad5094. See full\nadjudication in reviews/2026-10-31-fixed-mask-young/. Scientific v1 was\nPASS_WITH_NOTES/MEDIUM and not accepted; that disposition, report and frozen\nproof remain retained. The HIGH threshold was unchanged.\nThis applies known Banach Young calculus to the SAME masked source equation.\nFull original all-dimensional sharp second-moment goal remains ACTIVE."
+    },
+    {
+      "role": "actual-driver-and-source-identification",
+      "path": "notes/fixed-mask-moment-transfer.md",
+      "sha256": "e926091011af7e967fde95216a4f72dd878bad352069cc9a2530bace6e50294b",
+      "bytes": 13847,
+      "lines": 250,
+      "opening_scope": "# Fixed noise masks and displacement-moment transfer\n\nACCEPTED after independent full proof review: Opus5.5/HIGH, nine checks,\nPASS_WITH_NOTES, no required repairs. Frozen scientific revision604c60f;\nseven minor clarifications adjudicated in the review directory. No estimate\nor proof mechanism was replaced on adoption.\nThis is an internal positive-Wick consumer, not a new comparison method.\nThe original all-dimensional sharp second-moment goal remains ACTIVE.\n"
+    },
+    {
+      "role": "positive-control-lower",
+      "path": "notes/compact-mean-ground-family.md",
+      "sha256": "b42554059e25aa885602fea8429f2340ede2803d18136e8a996a2e74f25859f2",
+      "bytes": 23615,
+      "lines": 458,
+      "opening_scope": "# Compact mean families: ground state and complementary full wave\n\nACCEPTED after independent full proof review: Opus5.5/HIGH ten checks,\nPASS_WITH_NOTES359.291s, no required repairs; scientific sourcebfbd472.\nSee reviews/2026-10-31-compact-mean-ground/scientific-adjudication-v1.md.\nThis proves the deterministic compact-family consumer proposed in target-v2,\nnot a random event, moment asymptotic or independently new spectral method.\nThe original all-dimensional sharp second-moment goal remains ACTIVE.\n"
+    },
+    {
+      "role": "positive-control-lower",
+      "path": "notes/raw-block-event-lower.md",
+      "sha256": "4666eed85171e7704ae5ecd3a928dae501f39e49e9c92a3dac8335bd04f748aa",
+      "bytes": 32670,
+      "lines": 610,
+      "opening_scope": "# Actual coupled raw blocks, positive cone growth and point lower rate\n\nACCEPTED at the scoped full analytic/source/type/application gate:\nOpus5.5/HIGH, twelve PASS checks, PASS_WITH_NOTES, no required repairs,\n516.106 seconds at source d4d876e. Exact evidence and seven optional\nclarifications are in reviews/2026-10-31-raw-block-event/.\nThe frozen scientific candidate is retained unchanged. The statement gate\nwas separate. Full original all-dimensional sharp/source goal remains ACTIVE.\n"
+    },
+    {
+      "role": "positive-control-lower",
+      "path": "notes/unmasked-variational-lower.md",
+      "sha256": "09430721a7afbe42b280c09fc1277a40b2610656106e5a5c2038a6e0ac727f1b",
+      "bytes": 20479,
+      "lines": 378,
+      "opening_scope": "# Unmasked Rayleigh rates and an intrinsic all-dimensional lower functional\n\nACCEPTED at the scoped full analytic/source/type/application gate:\nOpus5.5/HIGH,11checks PASS/PASS_WITH_NOTES,303.405seconds, no required\nrepairs, scientific source61ac2a3. Seven optional clarifications are recorded\nin reviews/2026-10-31-unmasked-variational-target/scientific-adjudication-v1.md.\nFrozen proof/report bytes remain unchanged. The earlier statement gate was\nseparate. Original sharp/source goal remains ACTIVE.\n"
+    },
+    {
+      "role": "uniform-operator-upper",
+      "path": "notes/upper-cameron-compactness.md",
+      "sha256": "2e66ab46546d0ad79f717ee87dd62be3010221435ce8dd8c0785905db6a0da51",
+      "bytes": 28722,
+      "lines": 500,
+      "opening_scope": "# Fractional covariance products and averaged Cameron block bounds\n\nACCEPTED at the scoped FULL analytic/source/type/application gate:\nOpus5.5/HIGH,12checks PASS/PASS_WITH_NOTES,523.772seconds, no required\nrepairs, scientific sourcee0a6f3e. Ten optional clarifications are in\nreviews/2026-10-31-upper-gaussian-projection-screen/scientific-adjudication-v1.md.\nFrozen proof/report unchanged. This is NOT an original sharp-upper theorem;\nfull original sharp/source goal remains ACTIVE.\n"
+    },
+    {
+      "role": "uniform-operator-upper",
+      "path": "notes/uniform-e-cameron-regulator.md",
+      "sha256": "c0effd4ffaaabfb5d27bd8dff690655003f9c2c47a625a2a79e8c600d1b6377f",
+      "bytes": 21716,
+      "lines": 377,
+      "opening_scope": "# Uniform spatial-mask E means and infinite-spatial-rank Cameron regulation\n\nACCEPTED at the scoped FULL analytic/source/type/actual-application gate:\nscientificf54e92b,actualOpus5.5/HIGH,21checksPASS,348.303seconds,no required\nrepairs. All21input bindings and complete native archive verified before\noptional clarity edits. Six findings adjudicated in\nreviews/2026-10-31-uniform-e-cameron/scientific-adjudication-v1.md.\nFrozen proof/report unchanged there. Linear uniformR Cameron bounds only;\nexpected stochastic norm and original sharp-point/source goal remain OPEN."
+    },
+    {
+      "role": "uniform-operator-upper",
+      "path": "notes/uniform-e-spectral-products.md",
+      "sha256": "649a39f671ff4868b84baa4607457b42158a4ed4e38b6d72f3420f1f59ab41d2",
+      "bytes": 26838,
+      "lines": 464,
+      "opening_scope": "# Uniform E signed spectral rates, mean products and arbitrary small residuals\n\nACCEPTED at the scoped FULL analytic/source/type/actual-E application gate:\nscientifica14c6bb,actualOpus5.5/HIGH,27checksPASS,519.949seconds,no required\nrepairs. All51five-way input bindings and66nativearchive members verified\nBEFORE optional clarity edits. All6minor findings adjudicated in\nreviews/2026-10-31-uniform-e-spectral-product/scientific-adjudication-v1.md.\nFrozen proof/report unchanged. Statement43ff384/adoptionda79a8d passed\nseparately19HIGH607.619s. Uniform E spectral/product tool only; original"
+    },
+    {
+      "role": "uniform-operator-upper",
+      "path": "notes/borell-tube-rayleigh-transfer.md",
+      "sha256": "b52d4199b599b1f74c15952a19deefe7eff1d46071cffb03f3ac9c23b649dfbf",
+      "bytes": 24766,
+      "lines": 427,
+      "opening_scope": "# Gaussian control tubes and Rayleigh transfer for the actual E wave input\n\nACCEPTED at the scoped FULL analytic/source/type/actual-E-law application\ngate: scientifica1c90c7,actualOpus5.5/HIGH,20checksPASS,508.072seconds,\nno requiredrepairs. All43five-way bindings and58native archive members\nverified before optional clarity edits. Four minor findings adjudicated in\nreviews/2026-10-31-borell-tube-transfer/scientific-adjudication-v1.md.\nFrozen proof/report unchanged. Statement15f8a97/adoption6937719 passed\nseparately. Gaussian-input transfer/coarse bound only; no sharp spectral/"
+    },
+    {
+      "role": "uniform-operator-upper",
+      "path": "notes/growing-cone-point-upper-transfer.md",
+      "sha256": "94f6af931618c468e97e34e4c3d277c4d12be6d8c9398d503487bacbea003cc5",
+      "bytes": 25579,
+      "lines": 429,
+      "opening_scope": "# Growing-cone transfer from the original point moment to the actual E flow\n\nACCEPTED at the scoped FULL analytic/source/type/actual-application gate:\nscientific4c6d63e,actualOpus5.5/HIGH,13checksPASS,377.833seconds,no required\nrepairs. All22input bindings and complete native archive verified before\nsix optional clarifications,adjudicated in\nreviews/2026-10-31-growing-cone-point-transfer/scientific-adjudication-v1.md.\nFrozen proof/report preserved unchanged there. Exact transfer reduction only;\nthe growingR stochastic upper/sharpconstant/source goal remains OPEN."
+    },
+    {
+      "role": "uniform-operator-upper",
+      "path": "notes/rayleigh-signed-moment-upper.md",
+      "sha256": "6553d830506829ee8bbde682a6b88febbf2805e7cc4b8dce8832797432440de0",
+      "bytes": 17284,
+      "lines": 306,
+      "opening_scope": "# Actual growing-mask moment upper bounded by the own signed raw score\n\nACCEPTED at the scoped FULL analytic/source/type/original-moment gate:\nscientific939d697,actualOpus5.5/HIGH,19checksPASS,367.538seconds,no required\nrepairs. All43five-way bindings and58nativearchive members verified BEFORE\noptional clarity edits; all7minor findings adjudicated in\nreviews/2026-10-31-rayleigh-signed-moment/scientific-adjudication-v1.md.\nFrozen packet proof/report unchanged. Statement3e8c036/adoptionf9b05fc\npassed17HIGH1321.599s separately. This is the original point upper by an"
+    },
+    {
+      "role": "signed-positive-assembly",
+      "path": "notes/positive-gram-variational-comparison.md",
+      "sha256": "5ae2e701fda361a12b41fd10d6f4ed0adddc08c07a3b4bf938d70d6fdbd24da1",
+      "bytes": 14648,
+      "lines": 255,
+      "opening_scope": "# Finite signed occupation scores and entrywise Gram comparison\n\nACCEPTED at the scoped FULL analytic/source/type/finite-application gate:\nscientific4e2219d,actualOpus5.5/HIGH,26checksPASS,305.393seconds,no required\nrepairs. All48five-way input bindings and63nativearchive members verified\nBEFORE optional clarity edits; all7minor findings adjudicated in\nreviews/2026-10-31-positive-gram-variational/scientific-adjudication-v1.md.\nFrozen packet proof/report unchanged. Four public finite algebraic facts\nand a private integrated active-branch consumer passed local source/type/"
+    },
+    {
+      "role": "signed-positive-assembly",
+      "path": "notes/physical-signed-positive-score-comparison.md",
+      "sha256": "bcbcee7c15669e2b4046914d6d13e35758e54706f58ecba7e0e895454282f8a5",
+      "bytes": 19207,
+      "lines": 358,
+      "opening_scope": "# Physical signed-to-positive comparison and the intrinsic second-moment value\n\nACCEPTED at the scoped FULL analytic/actual-application gate: scientific\n40ec9a9,actualOpus5.5/HIGH,19checksPASS,387.047seconds,no requiredrepairs.\nAll27five-way input bindings and42rawnativearchive members verified BEFORE\noptional clarity/adoption. All8minor findings adjudicated in\nreviews/2026-10-31-physical-score-comparison/scientific-adjudication-v1.md.\nFrozen proof/report unchanged. This identifies the original point limit by\nan INTRINSIC positive-control value for all original models, not author"
+    },
+    {
+      "role": "derived-bounds",
+      "path": "notes/all-dimensional-static-occupation-bridge.md",
+      "sha256": "3e7a5bf8545b5de327e6eed3baca1fbf907dcba698a32b2bb94987cc2108c6f3",
+      "bytes": 21189,
+      "lines": 404,
+      "opening_scope": "# Static controls and full occupation energy in every original dimension\n\nACCEPTED at the scoped FULL analytic/source/type/application gate:\nOpus5.5/HIGH,18checks PASS/PASS_WITH_NOTES,366.614seconds, no required\nrepairs, scientific source249e2c4. Nine optional clarifications are recorded\nin reviews/2026-10-31-all-dimensional-static-occupation/scientific-adjudication-v1.md.\nFrozen proof/report unchanged. Original full sharp/source goal stays ACTIVE.\n\n## 1. Exact model, physical pairings and named inputs"
+    },
+    {
+      "role": "derived-bounds",
+      "path": "notes/all-model-occupation-ceiling.md",
+      "sha256": "9d7ff55b461cd13bfdce60a533b1bf7627ac6af64be2fe3ece1648ea1e90027c",
+      "bytes": 16672,
+      "lines": 320,
+      "opening_scope": "# Derived occupation bounds for the intrinsic second-moment constant\n\nACCEPTED at the scoped FULL analytic/application gate: scientific25cc688,\nactualOpus5.5/HIGH,18checksPASS,302.195seconds,no requiredrepairs.\nAll26five-waybindings and41rawnativearchive members verified BEFORE\noptionalclarity/adoption; all7notesadjudicated in\nreviews/2026-10-31-all-model-occupation-ceiling/scientific-adjudication-v1.md.\nFrozenproof/report unchanged. Le's2026-10-31 instruction is to derive the\nconstant from the model; matching Chen's predictions is not required."
+    },
+    {
+      "role": "white-example-accepted",
+      "path": "notes/white-spatial-evaluation.md",
+      "sha256": "9e5a200a511254a697706d1c56126b8d971742b744de381471567440221973dd",
+      "bytes": 11506,
+      "lines": 218,
+      "opening_scope": "# White spatial energy and explicit bounds for the derived moment constant\n\nACCEPTED at the scoped FULL analytic/model/kernel-application gate:\nscientific95d7515,actualOpus5.5/HIGH,25checksPASS,313.597seconds,no repairs.\nAll39five-waybindings and54rawnativearchive members verified BEFORE\noptionalclarity/promotion; all8notesadjudicated in\nreviews/2026-10-31-white-spatial-evaluation/scientific-adjudication-v1.md.\nFrozenproof/report unchanged. Two finite conditional algebra steps are\nkernel checked; the H1/CDF/integral/Gamma/model arguments are reviewed"
+    }
+  ],
+  "user_objective": "derive actual constant; Chen matching not required",
+  "remaining": [
+    "WS full gate closed; consolidate frozen result set",
+    "resolve all required own-dependency proofs at their exact scopes",
+    "integrate exact statements and complete proofs into readable TeX",
+    "clean build and PDF/source correspondence",
+    "whole-argument skeptic and final independent cold read",
+    "canonical wiki queue and push/<HUB> parity"
+  ],
+  "scientific_result_sources": {
+    "PB": "40ec9a9",
+    "OC": "25cc688",
+    "WS": "95d7515"
+  }
+}
