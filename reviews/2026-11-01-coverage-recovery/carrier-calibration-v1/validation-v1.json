@@ -1,0 +1,115 @@
+{
+  "scope": "Carrier and legibility calibration ONLY, not mathematical/source application acceptance",
+  "status": "review-complete",
+  "accepted": true,
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "elapsed_seconds": 43.806,
+  "coverage_verified": true,
+  "model_actual": "claude-opus-5-5",
+  "effort": "high",
+  "auth": {
+    "authMethod": "<removed>",
+    "apiProvider": "firstParty",
+    "subscriptionType": "<removed>",
+    "email": "<account email removed>"
+  },
+  "bindings": 5,
+  "native_files": 20,
+  "archive_sha256": "f5c409dd3d67062b8e0d43f856f17524fb4cd6ac8105514cd0d9da13fc8be3bf",
+  "members": [
+    {
+      "path": "STATUS.md",
+      "sha256": "f105b2846c3dc563213d37151ec3b090f930e1cadbba0582eca9f2a147862e01"
+    },
+    {
+      "path": "claude-reviewer.json",
+      "sha256": "bd4f1074efc6b1a12f3ed30d06b8fbca0e464fc67bbc20f01f44a8553c463d79"
+    },
+    {
+      "path": "events.jsonl",
+      "sha256": "5a175393610d5cf7657708dbe4e99da51eb4eb6dcd6a0851b4c37fa496772443"
+    },
+    {
+      "path": "execution.json",
+      "sha256": "76a1480353bd6ab7457f04ffa610e326130edfd7757d340302fc9f88ac489ce8"
+    },
+    {
+      "path": "input-manifest.json",
+      "sha256": "ba135728784134f7b2784c1954bd8e3614d5524a456492dd9e3d9b5f07686cc4"
+    },
+    {
+      "path": "prompt.txt",
+      "sha256": "df20e3cd18f507ecf4c3417cb6067259ac824f21b6fa4900f155b11a6d3b1f72"
+    },
+    {
+      "path": "read-ledger.json",
+      "sha256": "f1c2ca0cf2773e99df8b788e7fc091c515d0f5a200b6535c93d2991324802721"
+    },
+    {
+      "path": "receipt.json",
+      "sha256": "c86b8f2412ce16e1a63874f2043f761d02a60b33231e893a36573a1b399ff27b"
+    },
+    {
+      "path": "report-raw.txt",
+      "sha256": "9d6c6ebbb8e3012ab5c80ebd51c508e0ad9b3988312e31de1a106e21436b9f11"
+    },
+    {
+      "path": "report.json",
+      "sha256": "09c0afad0f08d75100cbffd8d17f77d7b99a10eb1940fc6bbfbb7a63c8ea7144"
+    },
+    {
+      "path": "report.txt",
+      "sha256": "29cea32207bb9c2ce20ab729d26167c12132ffdee22bba771f80340bde712977"
+    },
+    {
+      "path": "required-sources.json",
+      "sha256": "13246bcd45a1b52f2e8f1f6725cf1fd99ccd844aa03766d4ee1a6ea784c5923f"
+    },
+    {
+      "path": "stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "transport.log",
+      "sha256": "418a5c17f33c70e99b0cc0a07fce69191489cfedc94164bfa903785777c5bd4b"
+    },
+    {
+      "path": "workspace/.review/required-sources.json",
+      "sha256": "13246bcd45a1b52f2e8f1f6725cf1fd99ccd844aa03766d4ee1a6ea784c5923f"
+    },
+    {
+      "path": "workspace/reviews/2026-11-01-coverage-recovery/carrier-calibration-v1/carrier-scope-v1.json",
+      "sha256": "81807aeb297caec6624cb5ce5ed6cabb22152979a692894248c364dde38901e6"
+    },
+    {
+      "path": "workspace/reviews/2026-11-01-coverage-recovery/carrier-calibration-v1/prompt-v1.md",
+      "sha256": "b796c328bb0f82fc37c4d037ea465b274b294f3f4345852ab7a96421161777a1"
+    },
+    {
+      "path": "workspace/reviews/2026-11-01-coverage-recovery/pages/manuscript-247.png",
+      "sha256": "5dba6744dcf008cce0ac66a28e1c093c30b2f1827d1bfa58f422c1fcc63f6eca"
+    },
+    {
+      "path": "workspace/reviews/2026-11-01-final-consolidation/primary/friz-hairer-pdf200.png",
+      "sha256": "cb2475d8305b7dd5b27c1703a54924a4536e7836f059b0a935816d78c2d04823"
+    },
+    {
+      "path": "workspace/reviews/2026-11-01-final-consolidation/primary/teschl-2014-pdf093.png",
+      "sha256": "62c7e5e8c511e430bca4493d67909a5bc38638bb74367eddb7676a288baba90f"
+    }
+  ],
+  "calibration_boundaries": "Three representative frames of these exact sizes on this actual route. No universal image/frame limit inferred; no213-proof, whole-paper, scientific or source-audit gate closed.",
+  "minor_note_dispositions": [
+    "Distinct alpha/a is a legibility observation; no formula change",
+    "Contract already delivered in prompt; its optional packet copy need not be separately read",
+    "Actual pixel dimensions computed by author PNG-header read, not by model; producer verifies exact media bytes"
+  ],
+  "limitations": [
+    "This is an AI carrier and legibility calibration. It is not human verification, a mathematical review, a source-theorem validation, or a novelty audit.",
+    "Exact byte identity, SHA-256 hashes, and exact pixel sizes were not and cannot be recomputed with Read. They depend on the producer ledger.",
+    "The harness may rescale or re-encode images before showing them, and this cannot be detected. Legibility is judged on the image as it reached me.",
+    "Legibility is confirmed only for these three frames, in this session, on this CLI. It does not generalise to other images, larger sizes, or multi-frame deliveries.",
+    "No identifiers were taken from filenames or the manifest. All page numbers, headers and theorem labels cited were read from the displayed images."
+  ]
+}

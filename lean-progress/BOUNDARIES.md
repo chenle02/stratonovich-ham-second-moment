@@ -506,3 +506,17 @@ sechadmissibility/attainment,GammaCS,source/pointmomentidentification remain
 analytic. Rawreceipts unchanged asstagehistory;currentapplication-summary-v1
 recordsaccepteduse. No source/header/compilerchange or officialpackagegate.
 L0/PROPOSED andcompaniondecision4 remain. No claimofwhole-PDEformalization.
+
+
+## Current printed consumer of the raw-value scalar seam
+
+The historical raw-value application checkpoint includes two valid finite
+statements in `lean-progress/local-checks/raw-value-ceiling-v1/`.
+The natural-number certificate `exact_gap` has no consumer in the current
+TeX manuscript; it is retained as unused standalone evidence, not a proved
+analytic deduction or an application count. `strict_log_gap` has the
+printed scalar consumer, which also has an analytic proof in the notes.
+The standalone receipt remains `LOCAL_DEVELOPMENT_PASS`, not an official
+lean-pkg or companion gate. No source, type, compiler pin, fact count,
+analytic boundary or proposed-companion approval is changed by this scope
+clarification. Historical application reviews keep their original scope.

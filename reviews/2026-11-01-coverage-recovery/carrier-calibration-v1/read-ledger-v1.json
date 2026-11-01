@@ -1,0 +1,131 @@
+{
+  "schema": "le-ai-lab.review-read-ledger/1",
+  "coverage_verified": true,
+  "claude_code_version": "2.1.304",
+  "events_sha256": "5a175393610d5cf7657708dbe4e99da51eb4eb6dcd6a0851b4c37fa496772443",
+  "events_hash_bound_to_receipt": true,
+  "stream_workspace": "../../../../.local/state/Le-AI-Lab/stratonovich-carrier-calibration-v1/native/workspace",
+  "required_sources_sha256": null,
+  "continuation": false,
+  "continuation_credit": null,
+  "proves": "Each credited line was returned, numbered and byte-equal to the frozen workspace file, in a tool_result paired with a Read or line-numbered content-mode Grep call of the hash-bound provider stream.",
+  "does_not_prove": "Attention, understanding, or retention: a credited line may have been skimmed, ignored, or dropped by context compaction before the report was written. Uncredited lines may still have been seen in a form the ledger cannot attribute (previews, unnumbered output, subagents).",
+  "sources": [
+    {
+      "path": "reviews/2026-11-01-coverage-recovery/carrier-calibration-v1/carrier-scope-v1.json",
+      "sha256": "81807aeb297caec6624cb5ce5ed6cabb22152979a692894248c364dde38901e6",
+      "total_lines": 33,
+      "required_ranges": [
+        [
+          1,
+          33
+        ]
+      ],
+      "credited_ranges": [
+        [
+          1,
+          33
+        ]
+      ],
+      "missing_ranges": [],
+      "status": "complete"
+    }
+  ],
+  "image_proves": "Each delivered image: a direct Read tool_use of its exact workspace path, in the stream's session, is paired by id with a tool_result (same session) whose content is one inline base64 image block of the declared media type, and the base64 decodes to bytes whose sha256 is the declared one.",
+  "image_does_not_prove": "That the model looked at, understood or correctly interpreted the image, or any scientific acceptance of what it shows: only delivery of these exact bytes. Transformed or resized content, metadata and self-reports earn nothing, so an undelivered image may still have been seen in another form.",
+  "required_images": [
+    {
+      "path": "reviews/2026-11-01-final-consolidation/primary/teschl-2014-pdf093.png",
+      "sha256": "62c7e5e8c511e430bca4493d67909a5bc38638bb74367eddb7676a288baba90f",
+      "media_type": "image/png",
+      "status": "delivered",
+      "delivered_by": [
+        "toolu_0114cw3Z66yaYnA6KVJxEhFB"
+      ]
+    },
+    {
+      "path": "reviews/2026-11-01-final-consolidation/primary/friz-hairer-pdf200.png",
+      "sha256": "cb2475d8305b7dd5b27c1703a54924a4536e7836f059b0a935816d78c2d04823",
+      "media_type": "image/png",
+      "status": "delivered",
+      "delivered_by": [
+        "toolu_013QntMTE6bDSU5hf8njVfnq"
+      ]
+    },
+    {
+      "path": "reviews/2026-11-01-coverage-recovery/pages/manuscript-247.png",
+      "sha256": "5dba6744dcf008cce0ac66a28e1c093c30b2f1827d1bfa58f422c1fcc63f6eca",
+      "media_type": "image/png",
+      "status": "delivered",
+      "delivered_by": [
+        "toolu_01BscmdZhjGB1XdoJQLpgnuE"
+      ]
+    }
+  ],
+  "tool_calls": [
+    {
+      "id": "toolu_019ggYTGUXYazY3m4miV3bq5",
+      "tool": "Read",
+      "source": ".review/required-sources.json",
+      "plan_copy_read": [
+        ".review/required-sources.json"
+      ],
+      "uncredited": "runner-owned plan copy (.review/): never read credit",
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_01B4RuKsbKT2xd6cPnVGi8M1",
+      "tool": "Read",
+      "source": "reviews/2026-11-01-coverage-recovery/carrier-calibration-v1/carrier-scope-v1.json",
+      "credited": {
+        "reviews/2026-11-01-coverage-recovery/carrier-calibration-v1/carrier-scope-v1.json": [
+          [
+            1,
+            33
+          ]
+        ]
+      },
+      "stream": "attempt"
+    },
+    {
+      "id": "toolu_0114cw3Z66yaYnA6KVJxEhFB",
+      "tool": "Read",
+      "source": "reviews/2026-11-01-final-consolidation/primary/teschl-2014-pdf093.png",
+      "uncredited": "non-text result (image, PDF or block list)",
+      "stream": "attempt",
+      "image": {
+        "path": "reviews/2026-11-01-final-consolidation/primary/teschl-2014-pdf093.png",
+        "media_type": "image/png",
+        "decoded_sha256": "62c7e5e8c511e430bca4493d67909a5bc38638bb74367eddb7676a288baba90f",
+        "delivered": true
+      }
+    },
+    {
+      "id": "toolu_013QntMTE6bDSU5hf8njVfnq",
+      "tool": "Read",
+      "source": "reviews/2026-11-01-final-consolidation/primary/friz-hairer-pdf200.png",
+      "uncredited": "non-text result (image, PDF or block list)",
+      "stream": "attempt",
+      "image": {
+        "path": "reviews/2026-11-01-final-consolidation/primary/friz-hairer-pdf200.png",
+        "media_type": "image/png",
+        "decoded_sha256": "cb2475d8305b7dd5b27c1703a54924a4536e7836f059b0a935816d78c2d04823",
+        "delivered": true
+      }
+    },
+    {
+      "id": "toolu_01BscmdZhjGB1XdoJQLpgnuE",
+      "tool": "Read",
+      "source": "reviews/2026-11-01-coverage-recovery/pages/manuscript-247.png",
+      "uncredited": "non-text result (image, PDF or block list)",
+      "stream": "attempt",
+      "image": {
+        "path": "reviews/2026-11-01-coverage-recovery/pages/manuscript-247.png",
+        "media_type": "image/png",
+        "decoded_sha256": "5dba6744dcf008cce0ac66a28e1c093c30b2f1827d1bfa58f422c1fcc63f6eca",
+        "delivered": true
+      }
+    }
+  ],
+  "diagnostics": []
+}

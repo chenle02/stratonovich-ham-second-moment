@@ -10339,3 +10339,41 @@ full-scope recovery.80finitefacts/22seams, officialcompanion L0PROPOSED and
 decision4 unchanged. No compiler rerun, new package, HPC, Skorohod science,
 contact or public release. Wiki maintenance checkpoint stays verified;
 final review-outcome/status and delivery reconciliation remain required.
+
+
+## 2026-11-01 — actual representative-image calibration PASS, not science
+
+Prepared/froze carrier-calibration at workflowf875d3e after editorial
+scientificb2fda02. All5input live/packet/Git/native/receipt identities match.
+Native Opus5.5/HIGH returned5PASS, PASS_WITH_NOTES/high, acceptedtrue,
+coverageverifiedtrue,43.806seconds. Full canonical parse/pass/correspondence/
+required-read gates pass. Three actual PNG frames were displayed and exact
+returned media/bytes verified by the producer: Teschl printed81 at773x1000,
+Friz-Hairer printed190 at660x1000 and current manuscript247 at928x1200.
+All20native artifacts archived and every member SHA256 read back. The raw
+report, full ledger, receipt and validation remain in carrier-calibration-v1.
+
+This closes ONLY that three-carrier/legibility calibration, not any source
+application or mathematical proof check. No universal pixel/frame cap is
+inferred. Its three minor notes are adjudicated: alpha/a legibility only,
+optional contract copy already delivered as prompt, and exact pixel/byte
+checking belongs to the author/producer rather than model measurements.
+All scientific source/visual/whole/cold gates remain open.
+
+[held back: AI account details]
+
+Read/pinned the official review-composition consumer/runbook. It requires
+one common frozen scientific revision and inventories for all actual
+components plus a fresh synthesis. The custom coverage map is planning,
+NOT an acceptance shortcut. Next freeze the complete bounded component
+and synthesis contract inventory, then run SF04 and measure actual21-image
+delivery before scaling. SF04 is prepared but NOT DISPATCHED; no review
+is currently live. The calibration is separate, not a scientific component.
+Source/PDF remain b2fda02, current257pages and all213proofs unchanged.
+
+Clarified the current raw-value printed consumer in lean-progress/BOUNDARIES:
+exact_gap is a valid unused standalone certificate; only strict_log_gap
+has the printed scalar application. Historical reviews/receipt/types stay
+unchanged;80facts/22seams and L0PROPOSED/decision4 retained, no compiler run.
+Final cold preparation for the old candidate remains STALE; cold not run.
+All original model/scope/actual-constant and final delivery gates retained.
