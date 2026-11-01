@@ -234,3 +234,31 @@ Native report retention lesson: a raw report may be fenced JSON and still
 be accepted by the canonical parser. Preserve it verbatim separately from
 the native canonical report.json; do not use a bare JSON loader on raw
 text or fabricate a recovery requirement for an already valid report.
+
+
+## Canonical scaling and actual raw block lower integration accepted
+
+Scientific65d514b:8complete proofs, actualOpus5.5/HIGH23passing checks
+637.258seconds,no repairs. All61inputs/46full texts/14exact images and
+76raw archive files verified. Ten optional notes adjudicated without
+source/PDF edits. Clean176-page PDF;118prior bodies unchanged. Actual
+SAME-W/Z Gaussian law/half-cost, full-F cone/positive terminal average,
+source-induced raw restart and original canonical point lower now in TeX,
+for every positive nonseparable control and eligible mask in all original
+models. Unmasking/optimization and upper/exact assembly remain separate.
+
+Before whole-paper review: fix 'preceding section' in raw uniform-error
+lemma to compact-mean label; say equality of laws precisely in scaling;
+explicitly m_R=zeta_R and repeat semiscaled-noise law-only scope. Update
+abstract/roadmap and retain earlier CG origin-ball/mask wording debt.
+No stronger mathematical claim is adopted through these presentation notes.
+
+Next UL plan frozen in reviews/2026-11-01-unmasked-variational-tex-integration/.
+Use real Rayleigh bottom without an unmasked eigenstate; numerical mask
+suprema AFTER fixed-mask moment bounds; independent OLD full upper for
+finiteness before supremum homogeneity. Never use PB to prove its own
+variational finiteness. Three old scalar facts available, no new run.
+
+Rendered-symbol lesson: default TeX P is a paragraph mark in this project,
+not a probability macro. Use the actual defined notation or explicit
+mathbb P, inspect the PDF, and freeze corrected exact images only.

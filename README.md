@@ -24,8 +24,9 @@ The mathematical result set is now frozen for integration. The tracked
 [TeX/PDF notes](notes/notes_stratonovich_ham_second_moment.pdf) now include
 the covariance, wave-variance, Gaussian operator, source-convergence,
 fixed-mask moment, constant-phase Young and compact mean spectral proofs.
-These comprise 58 complete proof blocks accepted at independent integration
-gates. The latest integration is scientific source 6c52b5f. The full
+Canonical scaling and the actual raw block/event point lower bound are
+also integrated. These comprise 66 complete proof blocks accepted at independent integration
+gates. The latest integration is scientific source 65d514b. The full
 derived-constant argument still needs integration there. Earlier failed
 cold-read records remain preserved, and no whole-paper or circulation
 clearance is implied. The official private Lean companion remains separately

@@ -130,8 +130,15 @@
   blocks;37bindings/20full texts/16exact images/52raw archive files verified.
   Clean168-page PDF;111prior bodies unchanged. Actual full-F spectral
   complement and original fixed-cost common trial, no random moment rate.
-- **Immediate next:** jointly integrate exact scaling and actual raw block
-  lower bound (DS/RB), then UL and the remaining upper/PB/OC/WS.
+- **Accepted joint DS/RB TeX integration:** scientific65d514b,
+  Opus5.5/HIGH23passing checks637.258s,no required repairs. Eight proof
+  blocks;61bindings/46full texts/14exact PNGs/76raw archive files verified.
+  Clean176-page PDF;118prior bodies unchanged. ORIGINAL point per-test
+  lower >=2int lambda_(R,s)ds-v/2 now integrated, all original models.
+  Actual SAME-W shift, positive terminal average and source/canonical
+  transfer included; no unmasking/optimization or exact limit from RB alone.
+- **Immediate next:** integrate unmasked Rayleigh/variational lower (UL),
+  then the remaining spatial/occupation/Cameron/upper/PB/OC/WS assembly.
   Keep the frozen PB/OC/WS result set and full original model scope. The
   import interfaces are mapped; avoid repeating that inventory as a new round.
   Continue consolidating complete proofs into TeX/PDF, with clean builds
@@ -160,7 +167,7 @@
  rerun for promotion, new package/companion/lease/registry/HPC action.
 - **Git:** current mathematical work is in the isolated private research
   clone, branchresearch/fixed-mask-young-20261031. Latest result source
-  is95d7515; latest accepted TeX integration source6c52b5f, with subsequent
+  is95d7515; latest accepted TeX integration source65d514b, with subsequent
   adoption records separate.
   Fresh fetch/push failed with <HUB>NoRoute. Prior <HUB> parity
   receipts are historical, not evidence of current synchronization.
@@ -9054,3 +9061,44 @@ types/axioms/receipts; actual application guards mapped. No new kernel
 proof vote, compiler run, fact, official companion, package or HPC action.
 80facts22seams/L0PROPOSED unchanged. Goal ACTIVE, full upper/PB/OC/WS
 assembly, final whole-paper/cold-read/wiki/delivery still open.
+
+
+### Accepted joint canonical scaling / raw lower integration: scientific65d514b
+
+ActualOpus5.5/HIGH23passing checks (18PASS,5PASS_WITH_NOTES),
+637.258seconds,no required repairs. Native12052 TERMINAL0; accepted and
+coverage true. Canonical passing/correspondence/read-ledger validation
+PASS. All61five-way inputs and76raw archive files verified;46full texts/
+14exact PNGs delivered. Raw report unchanged separately from canonical
+JSON, no recovery. Ten optional notes adjudicated in
+reviews/2026-11-01-raw-lower-tex-integration/adjudication-v1.md. No final
+source/PDF edits;176pages clean,8new proofs,118prior bodies unchanged.
+
+Accepted actual per-test ORIGINAL point second-moment lower rate
+>=2int lambda_(R,s)ds-v_Psi/2 for every original nonseparable positive
+control and eligible fixed mask, all original nonzero covariances/dimensions/
+amplitudes/white/subcritical cases; zero noise is free. Canonical LAW
+scaling, SAME-W/Z Jacobian/covariance, all-input Gaussian norm-Borel law,
+scaled maxima, actual F cone/terminal positivity, induced-source RAW restart
+and correct-amplitude canonical comparison now integrated. Source limits
+at fixed delta,N, e_rate/B ordering and original raw half-cost retained.
+No unmasking/optimization or exact limit is inferred from this module.
+
+Four old scaling and nine old RB facts reused at complete types and
+actual guards; no subjective kernel proof vote, compiler run/new fact.
+80facts22seams/L0PROPOSED unchanged. Finite quadrature remains mechanism
+evidence only. Final presentation must correct the preceding-section
+pointer to CG, say equality of laws precisely, explicitly m_R=zeta_R,
+repeat semiscaled-noise scope and update abstract/roadmap. Prior CG
+origin-ball/mask clarity debt remains tracked.
+
+Durable lesson: inspect rendered mathematical symbols, not just a clean
+compile. Default TeX probability P was a paragraph mark; corrected before
+freeze with mathbb P, p174 re-inspected and the other10PNGs unchanged.
+Check actual project macros before copying familiar paper conventions.
+
+Next UL target frozen in reviews/2026-11-01-unmasked-variational-tex-integration/.
+Two old source/type bindings matched without compile. Unmasked bottom need
+not be an eigenstate; finiteness MUST use independent old T:full-upper,
+not future PB. Latest private push NoRoute; final whole-paper/cold-read/
+wiki/remote-delivery remain open. Actual-constant goal ACTIVE.
