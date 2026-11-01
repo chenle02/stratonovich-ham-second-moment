@@ -8829,3 +8829,36 @@ lower/upper/PB/OC/WS. Actual-derived-constant goal/full scope preserved.
 Final whole-paper/cold-read/wiki/Git/<HUB> delivery open. All owned
 native review/compute processes terminal; do not restart18283or83117.
 Goal ACTIVE; no new companion/HPC/publication/correspondence action.
+
+
+## 2026-11-01: canonical source-convergence TeX candidate
+
+Previous goal turn: PROGRESS (f553286, AD accepted at9dad256).
+SC target frozen before translation; accepted da9d464 argument/adjudication
+reused, all original model/Radon/white/amplitude/exponent and zero cases.
+Seven proof blocks/491lines; AUTHORchecks find93prior bodies unchanged.
+No new theorem strength, parameter endpoint or Lean claim.
+
+Integrated finite correlated Gaussian Banach transfer and actual raw rows/
+head-tail stability; original spatialH_Gamma/heat; OU/Laplace feature
+isometry and product extension retaining GIVEN W/raw driver; exact joint
+K_max(time widths) Gamma_sum(heat widths) law; both residual/source
+contractions and arbitrary-relative-rate Lp-Ctheta convergence; fixedrho
+pointfield continuity/all spatial derivatives; actual ordinary first-
+response equality using spatial duality without time-smoothness. Physical
+mask after regularization, no raw quotient multiplication, nonlinear
+covariance comparison or source-only-W assumption. No nonlinear Young/
+canonical initial data/u-moment conclusion yet.
+
+Exact held AUTHOR64pagePDF SHA5f7385ca...b97b6c reverified, existing
+extra.bib key found. Definition images5,6,8,9 inspected; source p8 increment
+index and p9 law-redefinition not used as unproved retaining-coupling claims.
+All source PDFs/bibliographies/symlink untouched. Literal String.raw/C0scan
+and squared-norm degree checks applied. Clean150page build,0errors/
+undefined references/citations/overfull boxes; all9new/context pages141-149
+visually inspected. Section20ends148,context149. Source edition/images and
+parent full proofs in dated packet. Media preflight PASS:21texts/13PNGs,
+with full authorPDF included as provenance, not whole-source reading scope.
+Fresh Le <plan removed> identity/headroom, firstParty doctor and actualOpus5.5READY
+retained. Independent integration gate PENDING. Full PB/OC/WS and final
+whole-paper/cold-read/delivery open; fresh fetch stillNoRoute. Goal ACTIVE.
