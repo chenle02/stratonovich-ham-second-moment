@@ -1,14 +1,14 @@
-Last updated: 2026-11-01 11:36 UTC (Codex)
+Last updated: 2026-11-01 12:10 UTC (Codex)
 
 LATEST USER DIRECTION: derive the actual constants, whatever computation yields.
 Chen matching is not a completion requirement.
 
 ## ⏭ Next session: where to stand and what to do
 
-FIRST integrate actual E Gaussian control tubes and Rayleigh transfer (BT)
+FIRST integrate uniform E spectral/mean-product/arbitrary-residual proof (US)
 into TeX in ACTIVE
 ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave,
-branch research/fixed-mask-young-20261031, clean local HEAD 252df6f.
+branch research/fixed-mask-young-20261031, clean local HEAD e157b01.
 Read its PROJECT-GOAL.md, AGENTS.md, Progress.md and
 notes/derived-constant-integration-plan.md and derived-constant-proof-imports.md
 in its notes directory. Root mathematical files and
@@ -24,7 +24,7 @@ review68458(v3PASS0),71223(v2coverage-refusal3), or v1preflight5.
 FR/AV TeX integration is now ACCEPTED: scientificf5c1521,adoption7dbcd4a,
 27PASS/HIGH382.209seconds,no mandatory repairs. Review13477 isTERMINAL0,
 not a task to restart. Read the frozen next target in
-reviews/2026-11-01-tube-transfer-tex-integration/target-v1.md in ACTIVE.
+reviews/2026-11-01-uniform-products-tex-integration/target-v1.md in ACTIVE.
 FG/CC is now ACCEPTED: scientific2571a15,adoption22e3426,24HIGHchecks
 323.168seconds,no repairs. Native74139 TERMINAL0; old16481 remains
 rejected (rawFAIL/HIGH,canonical invalid-report). Do not restart either.
@@ -82,6 +82,13 @@ Native51572TERMINAL0 accepted/coverageTRUE;63fivewayinputs/44texts/
 Ephase/blockmeanbaseline; no uniformmomentbudgetfromthesealone.
 V1dryrunwrongliteralpromptpathwasPREPROVIDERexit5/0calls,preserved;
 v2correctedpathpassedwithnowaiverandONEscientificreview. No recovery.
+BT now ACCEPTED: scientific37f322f,adoptione157b01,
+26PASSchecks/HIGH511.526seconds,no requiredrepairs. Native6552TERMINAL0,
+accepted/coverageTRUE;56fivewayinputs/44fulltexts/12exactPNGs/71rawfiles
+verified.8proofs,223pagesclean,169priorunchanged. GenuineactualE-lawAWS/
+CM/closedtubes/leastattainment/Rayleighincludingjumps/zero/globalhalfaction,
+actualRBrestart/SPendpoint/uniformCOARSEenvelope/finiteoperatorL2 andexact
+radialtail. No sharpdeterministicenvelope/pointupper/exactlimitfromBTalone.
 No owned reviewer or computation remains live.
 
 ## Pre-flight checks
@@ -182,35 +189,38 @@ No owned reviewer or computation remains live.
 
 ## Concrete deliverables for the next session
 
-- Follow frozenBTtarget in ACTIVE. Source
-  notes/borell-tube-rayleigh-transfer.md Sections1-7,scientifica1c90c7,
-  fullfouradoptedclarifications. IncludesACTUALElaw/application, notonly
-  abstracttubegeometry. LastGCpointconsumerparagraph deferredtoGC/UR
-  withitsfullhypotheses, notdeletedfromgoal orclaimedprovedhere.
-- GenuineAWS/firstchaos/CMsupport/measurablenorm/Radonproof SELFCONTAINED.
-  ExtractrequiredD1genericargument/tightness in FULL, notD1normexpmodel.
-  Compactclosedballimages/leastattainedradius/Boreltubes/exactCMgeometry,
-  primaryFriz-Hairer11.6SETenlargementprinted190-191, not11.7normbound.
-- Rayleighdominationincludingjumps/zerolaw, F(0)notassumed0, nopseudorawH
-  Gaussian. SameWfullunprojectedtuple/trueell, compactmeanEACHfixedR,
-  SAvanishingmean atRdelta andEXACTCov=sqrt(delta)Mean, noembeddingcost.
-- ActualgloballydefinedYoungendpointfunctional andnoise-onlyrestart:
-  verifyGRmatchesexistingL:raw-block-restart/sourcecouplingandE-Fintertwining,
-  no GLrate/finiteness imported. SPglobalnormbaseline, exactsecondoperator
-  momenttransfer. UniformCOARSEenvelopeindependentdelta/R,notsharpconstant.
-- OldcompleteGaussianTail/MathlibtypesatALLguards,front4/M²quartertail,
-  positivehalfaction/rawsupidentity.80facts22seams,nocompiler/newfact.
+- Follow frozenUS target in ACTIVE. Source
+  notes/uniform-e-spectral-products.md Sections2-8 FULL,scientifica14c6bb,
+  all6adoptedscientificclarifications/statementnotes. Alloriginalmodels/
+  amplitudes/d1/2/3/white/subcriticalandGamma0directcase, notpointmomentyet.
+- ActualEclosure/uniqueV/fixedRliftONLYforidentification. Re-deriveall
+  form/quarter/spectral/bottom/continuitybudgetswithEoperatornormalone,
+  no oldFconstant orreconstructionconstantinauniformEestimate.
+- Scalar-timecompactness yieldsuniformoperatoraveragingthroughactual
+  completedtensorintertwining/Udimension-freebound, NOTtensorcompactness.
+  Fullcompatibletheta/r/p/SPauxiliarygaps; exactsameactualmean/SPdenominator.
+- Fullgood/badmeanblocks, OWNBochneraverages, tinyTRUElastcell separately,
+  explicitK/B/polynomialbudgets. ControlballsM_B=c_ball B^kappa_ball,
+  K_B=B^s, innerdeltaFIRST thenB; no diagonalB_deltaorM_deltaassumption.
+- ANYsmallresidualsnotGaussian/CM/Hamiltonian, actualE1LEFTphysicalendpoint,
+  SPpuremeannorm>=1, noncommutingorderedproduct/max1ratio inequalities,
+  allfinitepowermean/cardinality/zero/p=nu guards. CompleteUS1-US4proof.
+- ExistingAMGM/powermeantypesatALLguards,nocompiler/newfact;80facts22seams.
   Fullsource/typedprimarymedia/cleanPDF/actualOpus5.5HIGH gate required.
-- GCfinitenesscompression stillUNREVIEWED, conservativegraphunchanged.
-  ThenUS/GC/UR/PG/PB/OC/WS/fullargument/coldread/lit/wiki/privateparity.
+- BT-to-GCfixedparameterfiniteness auditv2 is STILLUNREVIEWED as GCuse.
+  B1 maygiveexactneededEoperatorL2, butGCsource/geometry/canonicalpoint/
+  polynomialprefactorandindependentconsumerreviewmustverifyitfirst.
+  ConservativeGLF/MB/EA/D1graphunchanged, oldproofs/reviews preserved.
+- ThenGC/UR/PG/PB/OC/WS/fullargument/coldread/lit/wiki/privateparity.
   Recoverprivatepushes/actual<HUB>sync whenavailable, notclaimednow.
 
 ## Success criteria for the immediate next step
 
-Complete source-faithful internalBTproofs with the genuineactualE-lawAWS,
-closedcontroltubes/exactCMglobalhalfaction, trueendpoint/Rayleighcoarse
-momenttransfer, fulloriginalmodels, cleanPDFandindependentHIGHgate,
-everyfindingadjudicated. No norm-onlyconcentration orabstract-onlysubstitute.
+Complete source-faithful internalUS1-US4proofs with E-onlyuniformconstants,
+actualmean/SPbaseline, scalar-timeaveraging, trueblockproducts/polynomial
+controlballs/ANYsmallresidualandcorrectiteratedlimits. Fulloriginalmodel,
+cleanPDF/independentHIGHgate/everyfindingadjudicated. No Fbudgetsubstitute,
+no prematuremoment/variationalconstantclaim or GCdependencypruning.
 
 ## Anti-success criteria
 
@@ -1768,12 +1778,42 @@ useexplicitspacedliteralpaths, preflightbeforeproviderWITHOUTwaiver,
 versionrefusals/fixallpacketbindings; nevermanuallyeditacceptedrawreport.
 NormalizegeneratedexcerptEOF BEFOREfreezeandrecapturecustodyhashes.
 
+2026-11-01 actual-law Gaussian tube integration: scientificsource
+37f322fd328a455ef3d0fea19514a810fbf1b9bb,adoption
+e157b017e8fb8043c6f9ae36aa8418093177b21d.8fullproofs/223pagesclean,
+0errors/undefined/overfull,169priorproofbodiesunchanged. ActualfirstParty
+Opus5.5/HIGH26PASS/PASS_WITH_NOTESoverall,511.526seconds,no repairs;
+native6552TERMINAL0/review-complete accepted/coverageTRUE. Canonical
+validationPASS;56fivewaybindings/44fulltexts/12exacttypedPNGs and71raw
+nativearchivefiles readbackSHAverified, rawreportunchanged. No recovery/
+waiver/retry/fallback. No finalsourcePDFeditonadoption. Genuineactual
+firstchaosAWS/CM/support/tightness/measurablenormwrittenSELFCONTAINED,
+closedBoreltubes/attainedradius/exactsqrt(delta)geometry, PRIMARY11.6SET
+enlargement/Rayleighincludingjumps/zerolaw, actualsameWfullEtuple/SAanchor/
+compactmean EACHfixedR, globallydefinedYoungfunctional/actualRBrestart/
+SPnormbaseline, uniformCOARSEenvelope/finiteoperatorsecondmoment, exact
+front4/M²quartertail/globalrawhalfactionsup. No D1normexp/GLrate/GLF
+finiteness premise; internalRBnoiserestart independentlyreviewed, literal
+GLtextnotreadandnotneeded. Bothfastvelocity/displacementandallmodelscope
+kept; no rawHGaussian/independentblocks/pointtrace ornonlinearGaussianity.
+Sixnotesadjudicated: footnote3p190only, W_mpathmoments/HIseparability
+pointers, decaypositivityguard3, a.s.endpoint/zeroGammafreeproduct,
+nullinfinite-distanceconvention, G_Blowerfromv0/Younglabels/localsupport
+notation. Finalpaperpassmustapplytheseavailableclarifications. SourcePDF
+andllmTexfreshSHAverified, normalizedPDFdifferent/non-equated. Selected
+p190-191notfullbookaudit;80facts22seams/L0PROPOSED,no newLeanrun/fact.
+NextUSfullSections2-8 frozenbeforetranslation. gc-finiteness-audit-v2.md
+proposesBTB1finitenessforEXACTGCfixedEflow, butconsumerapplicationSTILL
+UNREVIEWED; conservativeoldgraphnotpruned. GCsourcepointconsumerdeferred,
+notdeleted. Source/adoptionpushesNoRoute; no sync/parity. Allownedjobs
+terminal. Lessons: exactsource/normalizedreadingidentityseparate, footnote/
+guardrolesprecise, dependencycompressionrequiresactualconsumerreview.
+
 ## Repo & git state at handoff
 
-Before this HANDOFF-only successor rootmasterHEAD8ca24a4.
-Active research cleanHEAD252df6fa07ae44162f70e030f57c21443b7a33af,
-sourcefreeze2cca41cb3e18c4d9ce06f64993df8ef6dad21a77,
-reviewpacketrevision0873245b58aeb9fd7439e73251cb558d48709bd8.
+Before this HANDOFF-only successor rootmasterHEAD7fb4115.
+Active research cleanHEADe157b017e8fb8043c6f9ae36aa8418093177b21d,
+scientificsourcefreeze37f322fd328a455ef3d0fea19514a810fbf1b9bb.
 Privateorigin remains <HUB> bare; freshsource/adoptionpushes failedSSH
 NoRoute, no synchronization orHEADparity claimed. Last-fetchedroot611c005/
 research6937719 remain HISTORICAL. No implicit research/mastermerge.
