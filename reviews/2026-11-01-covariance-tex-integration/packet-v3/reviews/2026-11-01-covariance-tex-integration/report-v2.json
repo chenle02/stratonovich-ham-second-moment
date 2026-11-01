@@ -1,0 +1,116 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "notes/integrated_covariance_foundation.tex: lines 1-440 (complete)",
+    "notes/spectral-mask-covariance-foundation.md: lines 1-310 (complete)",
+    "notes/temporal-phase-bound.md: lines 1-193 (complete)",
+    "reviews/2026-10-30-spectral-mask-foundation/scientific-adjudication-v1.md: lines 1-44 (complete)",
+    "reviews/2026-10-30-temporal-phase-bound/scientific-adjudication-v1.md: lines 1-34 (complete)",
+    "reviews/2026-11-01-covariance-tex-integration/target-v1.md: lines 1-30 (complete)",
+    "reviews/2026-11-01-covariance-tex-integration/target-freeze-v1.json: lines 1-11 (complete)",
+    "reviews/2026-11-01-covariance-tex-integration/model-context-v1.tex.txt: lines 1-108 (complete)",
+    "reviews/2026-11-01-covariance-tex-integration/build-v1.json: lines 1-38 (complete)",
+    "reviews/2026-11-01-covariance-tex-integration/worker-honesty-v1.md: lines 1-21 (complete)",
+    "reviews/2026-11-01-covariance-tex-integration/crosswalk-v1.md: lines 1-18 (complete)",
+    "reviews/2026-11-01-covariance-tex-integration/prompt-v2.md: lines 1-43 (complete)",
+    "reviews/2026-11-01-covariance-tex-integration/rendered-section-v1.txt: lines 1-418 (complete)",
+    "reviews/2026-11-01-covariance-tex-integration/page-108.png: whole image viewed",
+    "reviews/2026-11-01-covariance-tex-integration/page-109.png: whole image viewed",
+    "reviews/2026-11-01-covariance-tex-integration/page-110.png: whole image viewed",
+    "reviews/2026-11-01-covariance-tex-integration/page-111.png: whole image viewed",
+    "reviews/2026-11-01-covariance-tex-integration/page-112.png: whole image viewed",
+    "reviews/2026-11-01-covariance-tex-integration/page-113.png: whole image viewed",
+    "reviews/2026-11-01-covariance-tex-integration/page-114.png: whole image viewed",
+    "reviews/2026-11-01-covariance-tex-integration/page-115.png: whole image viewed"
+  ],
+  "checks": [
+    {
+      "claim": "Model class and normalization: the section keeps the full Hypothesis H:homog class, the unitary Fourier constant c_d=(2pi)^(-d/2), the distributional spectral convention and unit amplitude.",
+      "verdict": "PASS",
+      "reason": "TeX L5-18 invokes H:homog from model-context L82-101 without restricting d in {1,2,3}, the Radon or singular cases, white noise, or the range 0<alpha<d or alpha=d=1 with alpha_0+alpha<2. Equation (16.1) is the Schwartz pairing of the source's (1). The only exclusion is Gamma != 0, which the source also makes. No density, strict positivity or effective-dimension hypothesis is added."
+    },
+    {
+      "claim": "Polynomial mass growth and absolute integrability of Schwartz tests.",
+      "verdict": "PASS",
+      "reason": "TeX L22-30 matches source Section 1: a bump test and dilated seminorm bound give polynomial mass growth, dyadic shells give integrability, and Schwartz-topology cutoffs identify the integrals with the pairings. The argument applies separately to Gamma and mu."
+    },
+    {
+      "claim": "P:masked-spectral-growth matches source Proposition 1, with correct constants and a single-pairing proof.",
+      "verdict": "PASS",
+      "reason": "Rederived. J(b)=sqrt(pi/A)exp(-b^2/(4A)) with A=r^2/4 gives (2sqrt(pi)/r)^d exp(-|xi-y|^2/r^2). Applying (16.1) to the single test exp(-r^2|x|^2/4)exp(-iy.x) gives (16.2) with no oscillatory Fubini. Gamma(A/r)=r^(alpha-d)Gamma(A) gives r^(alpha-d)M_Gamma, hence the bound r^alpha M_Gamma/(2sqrt(pi))^d. The lower bound exp(-|xi-y|^2/r^2)>=1/e on open or closed balls gives C_Gamma=eM_Gamma/(2sqrt(pi))^d. M_Gamma>0 uses Gamma != 0."
+    },
+    {
+      "claim": "P:masked-auxiliary-norm matches source Proposition 2, including absolute k_R, the L factor, R-uniform growth and the Hilbert-valued convolution and Schur argument.",
+      "verdict": "PASS",
+      "reason": "k_R(u)=R^d hat zeta(Ru), so ||k_R||_1=L>0. rho_R=c_d^2 L int |k_R(xi-eta)| mu(dxi) agrees with source (4). Evenness follows from k_R(-u)=conj k_R(u) and evenness of mu, with no evenness of zeta assumed. Tonelli with u=xi-eta gives nu_R(B(y,r))=c_d^2 L int |k_R(u)| mu(B(y+u,r))du <= c_d^2 L^2 C_Gamma r^alpha, uniformly in R. No uniform density bound is claimed. Fourier inversion gives hat(zeta_R F)=c_d k_R*hat F. The scalar, finite-rank and projection-limit steps use separable H and Schwartz domination, and the finite-dimensional and zero-space cases are retained. Weighted Cauchy-Schwarz gives the factor c_d^2 L, and Tonelli gives (16.6) exactly."
+    },
+    {
+      "claim": "L:masked-time-completion matches foundation Section 4 and temporal Section 1: positivity, exchanges, Schur bound, separability, complexification and L2 indicator admission.",
+      "verdict": "PASS",
+      "reason": "The Gamma integral identity holds off the diagonal. int_{-inf}^{min(t,s)} 2 lambda e^{-lambda(t-u)}e^{-lambda(s-u)}du = e^{-lambda|t-s|} gives an integral of squares. The row bound sup_t int_0^T|t-s|^(-a)ds <= 2T^(1-a)/(1-a) with 2|xy|<=x^2+y^2 gives (16.7) and justifies the exchanges. L2-dense countable tests give H_a separability. The imaginary cross term cancels by symmetry. The Schur bound on the absolute bilinear form extends the map and the integral formula to L2, which admits bounded measurable amplitudes extended by zero."
+    },
+    {
+      "claim": "P:masked-noise-completion: the (2pi)^d factor, same-W extension, Gaussian limits and finite linear comparison are correct and match the source.",
+      "verdict": "PASS",
+      "reason": "With h(z)=int f(y+z)g(y)dy, h(z)=int e^{i xi z} hat f conj hat g dxi, and int e^{i xi z}h dz=(2pi)^d hat f(-xi)conj hat g(-xi). Applying (16.1) to the single test h and reflecting by evenness gives (16.8) with the correct factor and no conjugation reversal. The temporal sum expands the H_a^C norm. The cutoff admission of D is retained. Proposition 16.2 gives E W(zeta_R F)^2 <= N_R(F)^2 on the same L2(Omega), with null annihilation, Cauchy transfer and uniqueness. Joint Gaussianity of limits uses convergent variances and characteristic functions. The argument b^T A b <= b^T B b, independent Z and conditional Jensen is limited to linear images, and L255-258 disclaims a quotient multiplier and nonlinear comparison."
+    },
+    {
+      "claim": "P:masked-quotient-obstruction: the d=2 Gamma/mu pair, explicit plateau, marginals and positive time factor are correct.",
+      "verdict": "PASS",
+      "reason": "Gamma=delta_0(dx1)dx2 and mu=(2pi)^(-1)dxi1 delta_0(dxi2) are consistent with the convention, since (2pi)^(-1) int e^{i xi1 x1}dxi1=delta_0(x1). Scaling c^1 gives alpha=1<2 and alpha+a<2. The plateau tends to 1 as r->1+ and 0 as r->2-, with infinite-order flatness. V(g)=int(int g dx2)^2dx1 is correct. For g=chi(x1)chi''(x2), the unmasked marginal is zero because int chi''=0. The masked marginal is -I_chi chi(x1)^2, so V(zeta g)=J_chi I_chi^2>0, with J_chi>=2 and I_chi>0. The factor ||tau||_a^2>0 is correct, and no finite C exists. The result is d=2 only, with no d=3 claim."
+    },
+    {
+      "claim": "L:masked-temporal-modulation matches temporal Proposition 1, including the moving-endpoint derivative, f(1)=0, both omega signs and 16/(1-a).",
+      "verdict": "PASS",
+      "reason": "c'(v)=-A(s+h)conj A(s+h-v)+int A'(u+v)conj A(u)du has the correct sign. c(h)=0, |c|<=hM^2 and |c'|<=M^2+hMD give |f|,|f'|<=K^2. The triangles give 2 Re int_0^h v^(-a)e^{i omega v}c(v)dv=2h^(2-a) Re int_0^1 y^(-a)e^{i omega h y}f(y)dy. Low frequency requires C0>=2sqrt(2)/(1-a), which 16/(1-a) satisfies. High frequency sums 1/(1-a)+1+1+1/(1-a)<=4/(1-a), using a int_{1/k}^1 y^(-a-1)dy<=k^a and k^(-1)<=k^(a-1). With k^(a-1)<=sqrt(2)<k>^(a-1) and the factor 2, 8sqrt(2)<=16. Only k=|omega h| and the even bracket enter, so both signs are covered."
+    },
+    {
+      "claim": "L:masked-trig-products matches temporal Proposition 2, with four correlated modes and no independence.",
+      "verdict": "PASS",
+      "reason": "The four modes have frequencies sigma r+tau rho and coefficients of modulus 1/4, whose sum is 1. The inequality ||sum c_j v_j||^2<=(sum|c_j|)sum|c_j| ||v_j||^2 uses no orthogonality. Two modes have magnitude |r-rho| and two have r+rho, giving half of Q_h, which is then enlarged to the stated bound. Zero and repeated frequencies are permitted."
+    },
+    {
+      "claim": "L:masked-continuous-wave matches temporal Proposition 3: b_0=t, sinc identity, Bochner and Jensen, t^j bounds, brackets and C1=4*3^(1-a)C0.",
+      "verdict": "PASS",
+      "reason": "b_r(t)=t<r> int_0^1 cos(vrt)dv covers 0<=r<=1 and gives b_0=t. For r>=1 the coefficient is <r>/r<=sqrt(2), so the product coefficient is at most 2, with square 4. Altered frequencies satisfy |r'-r|<=1. For A=t^j on I subset [0,T] with h<=1, M+hD<=1, T+1, T^2+2T, all at most (1+T)^2. L2 continuity, the Lemma 16.3 inclusion and Bochner identification are retained. <x+e><=(1+|e|)<x> and its reverse, with |e|<=2 and a-1<0, give the factor 3^(1-a). The product is 4*3^(1-a)*C0*(1+T)^4 h^(2-a) Q_h."
+    },
+    {
+      "claim": "Adopted adjudication clarifications survive in the TeX.",
+      "verdict": "PASS",
+      "reason": "The TeX contains no norm-order claim. The counterexample stays d=2. The Schwartz-topology cutoff and tempered-pairing identification are present (L28-30, L230-233). The squared-norm wording, bounded measurable amplitudes and Bochner identification are present (L157-158, L329-331, L415-417)."
+    },
+    {
+      "claim": "TeX and rendered mathematics agree, and labels and proof-end references are complete.",
+      "verdict": "PASS",
+      "reason": "I compared pages 108-114 and the text extraction with the TeX. Numbers 16.1-16.12, statements 16.1-16.8, Hypothesis 1.1 and (1.2) resolve as expected. All eight proofs end with the correct 'This proves' reference. Overlines, signs, exponents, constants and hats render correctly, and no clipping or overlap was seen in the supplied images."
+    },
+    {
+      "claim": "The scope paragraph and post-completion remark claim no operator, moment, nonlinear or source-identification result.",
+      "verdict": "PASS",
+      "reason": "L255-258 and L436-439 disclaim a quotient multiplier, nonlinear covariance comparison and inference of the wave application, both operator variance directions, source convergence and solution-moment asymptotics. No theorem in the section asserts any of these. See the minor finding on the dangling forward wording."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "NOT MANDATORY. Location: TeX L1, L4 and L436-439; PDF pp. 108, 114-115. Evidence: the heading says 'physically masked wave fields', L4 says 'needed for the operator construction', and L438 says 'requires the subsequent arguments'. No wave field or operator is defined in the section, and pp. 114-115 show the next content is Section 17 Targets followed by Section 18. The sources instead say 'Still needed' and 'separate verification' (foundation L301-309, temporal L172-176). Why it is not blocking: no statement or status claim asserts these objects, and L257-258 and L437-439 explicitly deny the inference. Clearer wording would say the items remain open and are not established in this section.",
+      "NOT MANDATORY. Location: TeX L6-7, 'The zero covariance gives zero in every covariance bound below.' Evidence: this is correct for the Gamma-dependent noise and spectral bounds, but Lemmas 16.3 and 16.6-16.8 are purely temporal and do not vanish when Gamma=0. They hold independently of Gamma, so nothing downstream fails. Restricting the sentence to noise covariance would be more exact.",
+      "NOT MANDATORY. Location: TeX L85-103 and L255-258. Evidence: three accepted source non-claims are not transcribed: density bounds need not be uniform in R (foundation L123); nu_R is not asserted to have a nonnegative physical inverse-Fourier covariance (L229-231); the auxiliary and original norms need not dominate one another, and A_R elements need no spatial representative (L216-217, L298). The TeX asserts none of the opposite statements, so strength is unchanged, but later users lose these warnings.",
+      "NOT MANDATORY. Location: TeX L214-225, L235-236, L71-75, L272-273, L335-337, L415-417 and L145 with L189. Evidence: routine steps are compressed relative to the sources: h is Schwartz; zeta_R F lies in D; the indicator-to-monotone-class pushforward step; the threshold check alpha+a<2 for the example; the explicit low-frequency requirement C0>=2sqrt(2)/(1-a); the L2-first Bochner identification; and T is introduced inside the lemma but reused for D without a global 'fix T'. I checked each directly and none is a logical gap.",
+      "NOT MANDATORY. Location: TeX L81 and L264/L289; L57 and L72; L280 and L40; L423; L398 and PDF p. 114. Evidence: there are notation overloads: zeta is 'chosen and fixed' at L81, then a new compact mask zeta appears in Proposition 16.5; A is a Gaussian parameter, a Borel set, an amplitude and a covariance matrix; r is both a ball radius and |x| in the plateau; e is a bracket perturbation at L423, where the source used delta, and Euler's number at L38. '4\\,3^{1-a}' renders as '4 3^(1-a)', which could be misread as 43^(1-a); an explicit multiplication dot would prevent that. The meaning is recoverable in context in all cases.",
+      "NOT MANDATORY. Location: build-v1.json section_page_range [108,115]. Evidence: Section 16 ends on p. 114 and p. 115 contains only Sections 17-18. This is a harmless metadata imprecision, and p. 115 is useful as context for what follows."
+    ],
+    "note_on_mandatory_status": "No finding above is mandatory. I found no incorrect constant, sign reversal, normalized-away amplitude, added hypothesis, missing necessary argument or failed implication."
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is an AI integration review of Section 16 only. It is not human verification, a novelty audit, or a whole-paper, cold-reader, circulation, Lean, companion, actual-p1 or source-correction clearance.",
+    "The main TeX file and PDF are not in the packet, and scripts and Git were prohibited. I therefore did not independently verify SHA-256 hashes, source revision e839aa1c9d4dbc461f2ba877c44881d5eeedbc1e, exact extraction of model-context-v1.tex.txt, byte identity of the 60 existing proof bodies, the claim that the main-file change only inputs this section, or the build exit and log counts. These remain supplied build evidence and are not part of the mathematical verdict.",
+    "Page 116 was not supplied. The statement that no subsequent operator argument follows Section 16 rests on pp. 114-115 and the 116-page count, which show Sections 17-18 following directly.",
+    "Treating the heading and forward-reference wording as minor is a reviewer judgement based on the absence of any asserted theorem or completion status and on the explicit disclaimers. An adjudicator may still choose to reword them.",
+    "Mathematical checks were by hand derivation and source comparison, with no numerical runs. They do not replace the earlier accepted analytic reviews or extend beyond this scoped section."
+  ]
+}

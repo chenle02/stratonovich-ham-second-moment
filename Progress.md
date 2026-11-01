@@ -8555,3 +8555,17 @@ preflight caught prompt reference Model-context-v1.tex.txt versus supplied
 lowercase model-context-v1.tex.txt. Literal case fixed in prompt-v2 and a
 new immutable packet-v2; original attempt/packet retained. No waiver,
 proof/build change, model switch or confidence change. Review still pending.
+
+
+V2 integration reviewer TERMINAL3: scientificPASS_WITH_NOTES/HIGH13checks,
+328.243seconds,no mandatory repairs. Native accepted=false/coverage=false
+is preserved. Author error: PNG items lacked kind=image,sha256,media_type;
+the canonical collector correctly treated them as text and refused credit.
+No unsupported appendix or receipt mutation. Raw v1/v2 attempts archived,
+27/37members respectively, each SHA256 read-back verified. Six minor
+findings adjudicated in adjudication-v2.md; optional zero/scope/warning/
+multiplication clarifications adopted. All8new and60old proof bodies
+unchanged. Clean116-page successor build,0errors/undefined/overfull;
+all8successor pages inspected. Section now ends on115, sharing target page.
+
+[held back: AI account details]

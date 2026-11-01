@@ -3,8 +3,9 @@
 
 We establish the covariance estimates needed for the operator construction.
 Throughout this section, Hypothesis~\ref{H:homog} holds, $a = \alpha_0$,
-and $\Gamma \ne 0$. The zero covariance gives zero in every covariance
-bound below. We use the unitary Fourier transform
+and $\Gamma \ne 0$. For zero spatial covariance, the spatial spectral
+measures and actual noise variances vanish; the purely temporal estimates
+remain valid independently of $\Gamma$. We use the unitary Fourier transform
 \[
   \widehat f(\xi) = c_d\int_{\R^d}e^{-i\xi\cdot x}f(x)\ud x,
   \qquad c_d = (2\pi)^{-d/2}.
@@ -256,6 +257,9 @@ The auxiliary completion depends on $R$ and $\zeta$. Its construction
 does not define multiplication by $\zeta_R$ on the original noise
 quotient. Nor does the finite linear Gaussian comparison assert a
 covariance comparison for nonlinear wave solutions.
+The auxiliary and original test norms need not dominate one another.
+No spatial representative for every auxiliary class, nonnegative physical
+inverse covariance for $\nu_R$, or uniform density bound in $R$ is asserted.
 
 \begin{proposition}[A physical mask need not preserve noise-null tests]
   \label{P:masked-quotient-obstruction}
@@ -395,7 +399,7 @@ the complexified temporal completion in Lemma~\ref{L:masked-time-completion}.
   \begin{equation}\label{E:masked-continuous-wave}
     \|1_IF_rG_\rho\|_a^2
     \le C_1(a)(1+T)^4h^{2-a}\mathcal Q_h(r,\rho),
-    \qquad C_1(a) = 4\,3^{1-a}C_0(a).
+    \qquad C_1(a) = 4\cdot3^{1-a}C_0(a).
   \end{equation}
 \end{lemma}
 
@@ -435,5 +439,6 @@ the complexified temporal completion in Lemma~\ref{L:masked-time-completion}.
 
 These estimates concern covariance forms and temporal factors. Identifying
 their actual two-phase wave application, both operator variance directions,
-source convergence and the solution-moment asymptotics requires the
-subsequent arguments; none is inferred from covariance domination alone.
+source convergence and the solution-moment asymptotics remains part of
+the later integration work. None is established in this section or inferred
+from covariance domination alone.
