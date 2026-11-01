@@ -9715,3 +9715,43 @@ become a uniform E budget. Track B-growth before choosing polynomialballs;
 respect actuallastcell and delta-before-B. Existing fidelity workflow
 applied, no newgeneric skill/unchangeddiagnosticrerun. Sourcecarriersneed
 per-line andEOF normalization BEFOREfreeze, with exact custody hashes.
+
+
+## 2026-11-01 — full original point and signed upper integration frozen
+
+Previous goal turn made operational progress: the bounded long-session
+retrospective and two existing canonical skill updates were committed and
+pushed in Le-AI-Lab at ded76cc1; runtime copies match. This is learning,
+not a new mathematical result. The latest actual-derived-constant contract
+in PROJECT-GOAL.md continues to override the stale goal-service wording.
+
+Now freeze notes/integrated_point_transfer.tex and
+notes/integrated_signed_moment_upper.tex: five GC plus four UR complete
+proofs, all six/seven adopted clarifications. The NEW BT B=1 actual same
+noise/mask/amplitude/phase/horizon finiteness application replaces only the
+old GL input in this candidate; source sqrtp/squareexp/Young/UI and E/F
+restriction remain separately proved. Cone source equality/average OF
+SQUARES/separate source point and displacement limits/all mixed-self-empty
+chains/canonical LAW scaling/polynomial datum/original fixedx are explicit.
+Quantified E-only radial envelope B^(3nu), original raw half-action,
+deterministic error for ANY polynomial balls, exact bulk and tail4/M²quarter,
+SAME moment forallB, delta-FIRST-then-B yield own moving signedscore upper.
+All original dimensions/covariance amplitudes/white/subcritical/zero retained.
+This candidate is NOT yet accepted, not a positive score/exact constant/p1
+identity/author normalization or a completion claim.
+
+184 old proof bodies byte-identical;9new proofs. Final238pagePDF clean:
+0errors/undefined/overfull. All11final/context/bib PNGs228-238 inspected;
+scaled Fdriver and source-point bracket clarifications occurred BEFORE
+freeze, changed only229/230, both reinspected. Author build/visual evidence
+separate from reviewer execution. Full immutable packet has59texts/13typed
+images and complete direct parents/finite types+axioms+custody. No new
+compiler/kernel/fact, current80facts22seams/L0PROPOSED/decision4 unchanged.
+Old cone/normalizer diagnostics read,notrerun,limitations retained.
+
+Required FULL actualfirstPartyOpus5.5/HIGH scientific/application review
+PENDING. Actual known account headroom/doctor/READY observed,not a review.
+Conservative GLF/MB/EA/D1 dependency graph stays until NEW GC consumer gate.
+Then PG/PB/OC/WS/fullargument/coldread/lit/wiki/privateparity remain OPEN.
+No source repair/forced Chen constant/contact/HPC/companion/Skorohod/sibling
+scientific edit/publication. <HUB> NoRoute; no current parity claimed.

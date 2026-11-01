@@ -1,0 +1,532 @@
+uniformly in R ≥ 1, ∥Φ∥ ≤ M . Here DM = CBr (Cmean M )r . If bδ ≥ 0 is any de-
+terministic sequence tending to zero at each fixed B, MB is as in Corollary 36.6, and
+F = 2δ log max(1, ∥PNpert · · · P0pert ∥), then
+                   lim sup lim sup      sup         {F − 2 RateR (Φ)} ≤ 0.         (36.12)
+                     B→∞     δ↓0     R≥1, ∥Φ∥≤MB
+                     B∈N                 Y ≤bδ
+
+No Gaussian, Cameron or Hamiltonian condition on the residuals is imposed.
+Proof. All endpoint norms are positive by the actual Young and free inverses. On every
+cell with am ≤ Kres apply Proposition 30.2 with base Hm , perturbation xm and left
+                                                                              ν
+multiplier SE (ℓm ). It gives logarithmic ratio at most C(θ, B, Kres )(vm + vm  ). On cells
+                                       ν     ν−1 ν     ν
+with am > Kres use (36.9), (am +vm ) ≤ 2 (am +vm ) and the actual mean denominator
+∥Pmmean ∥ ≥ 1. The logarithmic ratio is at most cB (1 + aνm + vmν
+                                                                   ), with cB independent
+of Kres , R, δ, Φ, M . Increase CKres to dominate both good and bad residual constants.
+Summation gives a nonnegative bound
+                                           ∑︂                ∑︂
+                                                    ν
+                 log max(1, zrat ) ≤ CKres   (vm + vm ) + cB      (1 + aνm ).
+                                         m                    am >Kres
+                                        −r     ν−r
+The bad sum times δ is at most DM (Kres    + Kres  ). Finite power mean at exponents
+                                                  ν
+                                                     , gives δ vm ≤ (2/B)1−1/p Y and
+                                                              ∑︁
+  ≥ 1 and p/ν ≥ 1, with nonnegative inputs vm , vm
+p ∑︁
+     ν
+δ vm   ≤ (2/B)1−ν/p Y ν . This includes p = ν, zero entries and the true empty block,
+with no singular powers. ∏︁
+                         It proves (36.11).
+   The product Aprod = m ∥Pmmean ∥ is at least one. Submultiplicativity, without com-
+mutation, gives
+                    max(1, ∥PNpert · · · P0pert ∥) ≤ Aprod max(1, zrat ),
+                              ∑︂
+                     F − 2δ      log ∥Pmmean ∥ ≤ 2δ log max(1, zrat ).
+                               m
+At fixed B, M, Kres the residual terms vanish on Y ≤ bδ . Let δ ↓ 0 first and then
+Kres → ∞. Since r > ν, the residual excess has limsup at most zero, uniformly in
+R, Φ. Now take M = MB at each fixed B and combine with Corollary 36.6; a supre-
+mum of sums is no larger than the sum of the suprema. The outer integer-B limit
+proves (36.12). The endpoint functional is continuous on all tuples by generic Young
+local dependence, including nonphysical residuals. Nothing was multiplied as scalar
+displacement moments. This proves Proposition 36.7.
+   These are uniform deterministic E-phase product estimates. Their Gaussian
+Rayleigh application, original point transfer and signed-positive score comparison
+remain separate steps.
+
+
+37     The original point moment and the growing-cone
+       phase
+Retain all original covariances and amplitudes. Write a = α0 , κ = (4−α−a)/(3−α) > 1.
+Fix the auxiliary parameters of the preceding Gaussian and product sections once, in
+
+                                              228
+their strict admissible gaps. For 0 < δ < 1 put
+            L = δ −1 ,   R = L + 2,     Tδ = δ −1/κ ,   g = δ (1−a)/2 ,   Γδ = g 2 Γ.
+Use the same real even root η, set ψ = η(·/R), m = ψ 2 , z = (ψ, 0) ∈ E, D = B1 (0) and
+vd = |D| > 0. Let Wfast = W ◦ Tδ,0 on the given slow probability space, and let Pδ be the
+actual physical E endpoint at time L driven by gMR (Wfast ), with physical noise mask
+m once. The datum ψ is not the auxiliary cutoff used to extend the driver to constant
+columns on F .
+Lemma 37.1 (Actual restriction and fixed-parameter finiteness). For nonzero covari-
+ance, the actual E flow and its source flows are the closed isometric restrictions of their
+actual F extensions. Their operator norms and differences are measurable, and
+                                     1 ≤ E∥Pδ ∥2L(E) < ∞.                               (37.1)
+Proof. Let AF = gAF,R (Wfast ) be the scaled full driver. Linearity and Proposition 22.2
+give AF i = iDE , with DE = gMR (Wfast ), and SF (t)i = iSE (t). The extension uses a
+cutoff ψ˜︁ = 1 near its larger localization, not the datum ψ. Applying i to the state Young
+sums and using uniqueness gives UF (t, s)i = iUE (t, s), then PF (t, s)i = iPE (t, s). The
+same argument applies to sources. Closedness and isometry imply ∥PE ∥ ≤ ∥PF ∥ and the
+analogous difference bound; density of E in F is neither true nor used. The continuous
+Young map on its separable path span, followed by bounded physical conjugation and
+restriction, gives measurable endpoint norms and uniform time-triangle difference norms.
+No operator-norm continuity of the free group is assumed. Young Neumann pieces and
+the free inverse also give invertibility.
+    We check a direct finiteness input, without a fixed-mask asymptotic rate. Take
+B = 1 in Propositions 35.4 and 35.6 and Lemma 35.7. Every 0 < δ < 1 satisfies their
+clock condition. The global endpoint in (35.10) is exactly this Pδ : the same given Wfast ,
+amplitude g, root η, one mask m, massless E phase, and horizon δ −1 . We use the same
+admissible θ and actual driver version. Literal row identities, rational times and Young
+uniqueness identify versions if a smaller common admissible exponent is used. Thus,
+the finite radial bound applies to this actual endpoint, not merely an equal-law copy.
+Proposition 34.4 gives its norm at least one almost surely, proving (37.1). This use
+requires no F -norm rate along growing radii. Source convergence and source uniform
+integrability are checked next, separately from this raw endpoint finiteness. This proves
+Lemma 37.1.
+Lemma 37.2 (The same retaining fast sources). At each fixed δ, take one retaining slow
+source Yϵ,τ and define
+                          Yfast (t, x) = δ a/2 Yϵ,τ (δt, x).
+Its actual physical E flows PEϵ,τ with coefficient mgYfast satisfy
+                         E sup ∥PEϵ,τ (t, s) − PE (t, s)∥2 −→ 0.                        (37.2)
+                           0≤s≤t≤L
+
+The unmasked field gYfast has the canonical source law for covariance Γδ , spatial width
+ϵ and temporal width τ /δ.
+
+                                             229
+Proof. Testwise this field is Yϵ,τ (Tδ,0 f ). The raw isometry and source domination give
+source and residual variances bounded by ∥f ∥2Hfast , with residual variance tending to zero
+at fixed δ on every smooth compact test. The Gaussian transfer theorem 20.2 therefore
+gives actual driver convergence in every finite Lp C θ , retaining Wfast literally. Multipli-
+cation by fixed g and the bounded F extension preserve it. The transfer bound and
+                                               √
+Proposition 19.1 also give uniform source p path moments at these fixed δ, R, L. The
+moment-series argument yields square-exponential path norms. Young local dependence
+gives probability convergence on driver balls; the growth exponent 1/θ < 2 and those
+tails give uniform flow moments of every finite order and uniform integrability. The
+proof of Proposition 22.5 applies to this very pullback family. Restriction from F then
+proves (37.2). No uniform-in-δ source bound or exchange of limits is asserted.
+    This source is also the actual ordinary response for all E data. On Schwartz
+states its first primitive has row gYfast (hR ). The source indicator approximation and
+bounded
+∫︁         point variances at positive widths identify it with the statewise integral
+   SE (−r)B(mgYfast (r))SE (r) dr. Fubini uses E|ZY | ≤ ∥Z∥2 ∥Y ∥2 when Gaussian
+testing is needed. Countable dense states, rational times and continuity give the full
+ordinary-primitive identity, as in Proposition 20.7.
+                                                ∫︁ τ −1
+    In the temporal kernel Kτ (v) = ΓE (a)−1 0 e−λ|v| λa−1 dλ, substitution λ′ = δλ gives
+
+                                    δ a Kτ (δv) = Kτ /δ (v).
+
+Hence gYfast has covariance Kτ /δ (t − s)(p2ϵ ∗ Γδ )(x − y). The shared-width maximum
+and spatial heat-sum conventions persist for two sources. Positive multiplication by
+g 2 preserves every original covariance class, including spatial white noise. At fixed δ,
+(ϵ, τ /δ) → (0, 0). The full source point-moment limit in Proposition 21.3 thus applies
+to this single-source law and its continuous version; no newly reconstructed auxiliary
+family for Γδ is required. This proves Lemma 37.2.
+
+Lemma 37.3 (Compact-data source identification). For fixed δ, ϵ, τ , the displacement
+vϵ,τ (t, x) = (pr1 PEϵ,τ (t, 0)z)(x) has a jointly measurable continuous version and satisfies
+the ordinary scalar mild equation with coefficient b = mgYfast and initial data (ψ, 0).
+
+Proof. On the fixed source regularity event, b is smooth in space, has common compact
+support in B2R , and is continuous in time in every bounded spatial derivative norm on
+[0, L]. Choose integer k > d/2 + 1 and Ek = H k × H k−1 . Its Bessel-unitary free matrix
+is                       (︃                                      )︃
+                                cos(t|ξ|)      ⟨ξ⟩ sin(t|ξ|)/|ξ|
+                                                                    .
+                            −|ξ| sin(t|ξ|)/⟨ξ⟩     cos(t|ξ|)
+The zero sine quotient is t; finite-horizon bounds and dominated Fourier convergence
+give a strongly continuous group on Ek . Leibniz and the derivative-norm equivalence,
+obtained by expanding (1 + |ξ|2 )k−1 and Parseval, give
+
+                        ∥b(t)f ∥H k−1 ≤ Ck max ∥∂ j b(t)∥∞ ∥f ∥H k−1 .
+                                           |j|≤k−1
+
+
+
+
+                                             230
+Thus B(b(t)) is a norm-continuous bounded
+                                        ∫︁ t force on Ek , with a finite uniform sample
+bound BL . For Z0 = S(t)z and Zn+1 (t) = 0 S(t − r)B(b(r))Zn (r) dr,
+
+                          sup ∥Zn (t)∥Ek ≤ CLn+1 BLn Ln ∥z∥Ek /n!.
+                          t≤L
+
+This series converges in Ct Ek . Iterating a homogeneous Volterra difference proves
+uniqueness. Its continuous embedding into E and ordinary E uniqueness identify the
+sum with PEϵ,τ (t, 0)z.
+    Fourier Cauchy–Schwarz gives ∥fˆ︁∥1 ≤ ∥f ∥H k ( ⟨ξ⟩−2k dξ)1/2 < ∞. Fourier inversion
+                                                   ∫︁
+
+and dominated convergence imply continuous bounded displacement, and the same holds
+for velocity since k − 1 > d/2. The source derivatives on the compact support form a
+measurable Ct Cxk−1 random element, by countable evaluations and continuity. Picard
+iteration and local norm estimates make its phase sum measurable in Ct Ek ; the Fourier
+embedding gives joint measurability. These high norms are used only at positive source
+widths.
+    The first component of Duhamel is, distributionally,
+                                 √
+                                         ∫︂ t
+                     v(t) = cos(t −∆)ψ +      Gd (t − r) ∗ [b(r)v(r)] dr.
+                                             0
+
+Here Gd (h) is the positive Green measure of mass h and support in Bh , including the
+sphere measure for d = 3. The product bv is continuous compactly supported, with
+                  1
+finite uniform L∫︁ t and supremum bounds. Against a compact smooth ϕ, absolute Fubini
+is bounded by 0 ∥ϕ∥∞ ∥b(r)v(r)∥1 (t − r) dr < ∞. Writing Gd (h) as h times the dilation
+of its unit-time probability measure proves continuity of the convolution term. The free
+term is continuous by the Fourier embedding. Thus the distributional identity agrees
+everywhere with the pointwise continuous mild versions. No Green density in d = 3 or
+raw Sobolev point trace is used. This proves Lemma 37.3.
+
+Proposition 37.4 (Cone identity and an average of squares). Let ufull ϵ,τ be the unmasked
+source solution with coefficient gYfast and data (1, 0). At the fixed parameters, almost
+surely,
+               vϵ,τ = ufull
+                       ϵ,τ   on C = {(t, x) : 0 ≤ t ≤ L, |x| ≤ 1 + L − t}.
+Consequently
+                    E∥ pr1 PEϵ,τ (L, 0)z∥2L2 (D) = vd E|ufull       2
+                                                         ϵ,τ (L, 0)| < ∞.            (37.3)
+
+Proof. Proposition 21.2, applied through the exact source law of Lemma 37.2, gives the
+locally continuous measurable full solution and its L2 point Picard sum. We place no
+global unmasked field in E or F . The cone is causally closed: a predecessor at distance
+at most t − s has norm at most 1 + L − s. Its spatial projection lies a positive distance
+inside the plateau of both ψ and m.
+    The total initial difference (ψ − 1, 0) is represented in E plus constants by (ψ, 0) +
+(−1, 0). Every entry of the full free phase kernel is a compactly supported distribution
+in Bt , and the top-left is ∂t Gd (t). Since |x| + t ≤ 1 + L = R − 1 on the cone, its entire
+
+                                            231
+translated kernel support √ lies in the region where this total datum vanishes. Lemma 22.1
+therefore gives cos(t −∆)ψ(x) = 1 there. Testing the E and constant summands
+separately would not give this total finite-propagation statement.
+       The two mild equations have the same coefficient on the cone. For their difference w,
+causal closure gives the homogeneous Green integral equation there. Put H = supC |w|
+and M = supC |gYfast |, both finite sample constants. Iteration with the positive Green
+∫︁measures    gives |w(t, x)| ≤ HM n t2n /(2n)!. Indeed the mass recursion is f0 = 1, fn+1 (t) =
+    t
+   0
+      (t − r)fn (r) dr = t2n+2 /(2n + 2)!. The factorial ratio forces this bound to zero on the
+fixed cone. No positivity of the sample coefficient or expectation of a global source
+supremum is required.
+       At time L the cone contains D. Tonelli and spatial stationarity of the unmasked
+single-source law give (37.3). Finiteness is the full source point-moment bound. This is
+an integral of squares, not a squared average or a covariance comparison with a masked
+model. Events are for each fixed δ, ϵ, τ . This proves Proposition 37.4.
+
+Proposition 37.5 (Exact original point transfer and polynomial cost). For every orig-
+inal model, including zero covariance,
+
+                       E|uΓ (Tδ , 0)|2 = vd−1 E∥ pr1 Pδ z∥2L2 (D) ,                          (37.4)
+                                     ≤ vd−1 ∥ψ∥2H 1/2 E∥Pδ ∥2 ,
+      lim sup T −κ log E|uΓ (T, x)|2 ≤ lim sup δ log E∥Pδ ∥2          for every fixed x.     (37.5)
+        T →∞                                 δ↓0
+
+
+Proof. Assume nonzero covariance until the last paragraph, and fix δ. Equation (37.2)
+gives convergence of the source displacement in L2 (Ω; L2 (D)), since ∥ pr1 e∥L2 (D) ≤ ∥e∥E .
+Expected squared norms converge by Cauchy–Schwarz applied to their difference times
+their sum. Separately, the full source point-moment limit (21.6) at covariance Γδ gives
+convergence of the right side of (37.3) to vd E|uΓδ (L, 0)|2 . Both cutoffs (ϵ, τ /δ) tend to
+zero at fixed δ. Thus the two limits in the equal prelimit moments give
+
+                             E|uΓδ (L, 0)|2 = vd−1 E∥ pr1 Pδ z∥2L2 (D) .
+
+   The law normalization is the consequence of Lemma 24.1 and the canonical-series
+time change proved in Proposition 25.6. Explicitly, for δ = T −κ and rT = T δ, Vδ has the
+law of uΓ (T t, r√
+                 T x) and equation (24.1). At positive source widths, U (t, x) = Vδ (δt, x)
+has coefficient δ Yϵ,τ (δt, x) = gYfast (t, x). The accepted fixed-order and absolutely con-
+vergent canonical-series argument passes this time change to the point moment at fixed
+δ. Hence E|uΓ (Tδ , 0)|2 = E|uΓδ (L, 0)|2 . This is a law/moment identity, not a pathwise
+same-noise identity. It preserves all mixed, unequal, self and empty Stratonovich chains
+and the Green-before-noise convention in d = 3. The shrinking rT is not the mask ra-
+dius R; no spatial Jacobian occurs at point zero. The phase/operator inequality now
+proves (37.4).
+   Parseval and the inhomogeneous Bessel weights give, for R ≥ 1,
+
+     ∥ψ∥2H 1/2 ≤ ∥ψ∥2H 1 = Rd ∥η∥22 + Rd−2 ∥∇η∥22 ≤ Cη Rd ,           Cη = ∥η∥22 + ∥∇η∥22 > 0.
+
+                                                   232
+This includes the negative d − 2 power in d = 1. For DataPref δ = vd−1 Cη (δ −1 + 2)d ,
+              δ log DataPref δ = δ log(Cη /vd ) + dδ[log(1 + 2δ) − log δ] → 0.
+The nontrivial term follows by t = − log δ and te−t → 0, since et ≥ t2 /2. The original
+point moment is at least one: its nonnegative full pairing expansion contains the unit
+empty pair of chains. It is finite by (37.4) and (37.1). Thus logs are defined without
+subtracting infinite quantities. Since α < 2 < 3, a < 1, we have κ > 1 and δ ↦→ Tδ is a
+decreasing bijection (0, 1) → (1, ∞) with inverse δ = T −κ . Taking logs and this change
+of parameter proves (37.5) at zero. Original canonical spatial stationarity extends it to
+every fixed x; no stationarity of the masked operator is assumed.
+    For zero covariance, u = 1, all drivers vanish and Pδ = SE (L). The same total free
+cone argument gives the spatial-square identity. Lemma 34.1 gives ∥SE (L)∥ ≥ 1, and
+its Fourier matrix gives ∥SE (L)∥ ≤ C(1 + L). Thus 0 ≤ δ log ∥SE (δ −1 )∥2 → 0 and both
+claims hold directly without a nonzero-noise import. This proves Proposition 37.5.
+
+
+38     The original upper bound by a moving signed
+       raw score
+Keep all auxiliary choices fixed as in the Gaussian tube construction, including α/4 <
+ssp < 1/2, the admissible θ, ν, r, p, and the three fixed even-Q guards. The mean bound
+Cmean is independent of R, B, δ; it may depend on those fixed auxiliary parameters and
+the model. The space HI has the ORIGINAL covariance Γ. Its norm is not reweighted
+by g and is not a sum of fast block costs. Let Rδ = δ −1 + 2 and Mδ = E∥Pδ ∥2L(E) .
+For every fixed integer B the actual Gaussian block tuple has typical radius bδ,B =
+2E∥Xδ,B ∥δ,p → 0. Its endpoint is the same Pδ for every B by Lemma 35.5, not a B-
+dependent surrogate. Write Mδ,B,R for the normalized actual mean tuple in (35.7), with
+the indicated block length and radius. Write Fδ,B for the everywhere-defined endpoint
+functional Fδ of Lemma 35.5.
+Lemma 38.1 (Signed score and quantitative radial envelope). Define the own score
+              SR = sup {2 RateR (Φ) − ∥Φ∥2HI /2},          Vup = lim sup SRδ .       (38.1)
+                    Φ∈HI                                            δ↓0
+
+                          2
+Then 0 ≤ SR , Vup ≤ 2 + 2Cmean < ∞. The actual tube envelope Gδ,B of Proposition 35.6,
+at R = Rδ , satisfies
+                          Gδ,B (ρ) ≤ A0 + A1 B 3ν ρν + ηB bνδ,B ,               (38.2)
+for every admissible δ and every ρ ≥ 0, where
+                               A0 = 4Cgr ,
+                               A1 = 2ν+1−ν/r Cgr 32ν Cmean
+                                                      ν
+                                                           ,
+                               ηB = 2ν+1−ν/p Cgr B ν/p .
+The score is not identified here with an author constant or a positive score.
+
+                                             233
+Proof. The mean is linear, so TR 0 = 0. Its free form has nonnegative gradient energy
+and spectral bottom zero; thus RateR (0) = 0. Proposition 36.3 gives RateR (Φ) ≤
+1 + Cmean ∥Φ∥. With q = ∥Φ∥ ≥ 0,
+
+       2 RateR (Φ) − q 2 /2 ≤ 2 + 2Cmean q − q 2 /2 = 2 + 2Cmean
+                                                            2
+                                                                 − (q − 2Cmean )2 /2.
+
+The coarser inequality also follows from half-weight arithmetic–geometric mean at bases
+q 2 , (2Cmean )2 , with nonnegative weights and bases, including zeros. The zero control
+gives the lower bound. No optimizer, finite rank, positive control or convergence of SRδ
+is assumed. The finite ceiling is auxiliary-parameter dependent and need not be sharp.
+      For ∥a∥δ,p ≤ bδ,B , ∥Φ∥ ≤ ρ set vm = ∥am ∥θ and hm = ∥(Mδ,B,R Φ)m ∥θ . The quantita-
+tive physical bound (36.9), already including the free factor, and convexity give
+                                                               ∑︂
+                    Fδ,B (a + Mδ,B,R Φ) ≤ 2Cgr Bδn + 2ν Cgr Bδ      ν
+                                                                  (vm + hνm ).
+                                                                   m
+
+Its upper expression is nonnegative, so it controls the maximum at one. The true
+primitive estimate and weighted power mean give
+                         ∑︂
+                              ν
+                       δ    vm  ≤ (2/B)1−ν/p bνδ,B ,
+                         ∑︂
+                       δ    hνm ≤ (2/B)1−ν/r (32B 3−1/r Cmean ρ)ν .
+
+The exponents are p/ν ≥ 1, r/ν > 1, inputs nonnegative, n = N + 1 ≥ 2, δ > 0, and
+δn ≤ 2/B. Zeros and p = ν are legal. The first constant is 4Cgr . In the mean term
+the factors B ν/r and B −ν/r cancel exactly, leaving B 3ν . These computations give the
+displayed coefficients and (38.2), uniformly for all radii. They use no unspecified cY (B)
+or quantitative F estimate. This proves Lemma 38.1.
+
+Proposition 38.2 (Finite-delta bulk and exact tail). For M > 0 define the deterministic
+number
+                      ⎛                                                  ⎞
+
+           Eδ,B,M = max ⎝0,         sup         [Fδ,B (x + Mδ,B,R Φ) − 2 RateR (Φ)]⎠ .
+                        ⎜                                                          ⎟
+                                R≥1, ∥Φ∥≤M
+                                 ∥x∥δ,p ≤bδ,B
+
+
+It is finite. For every polynomial MB = cball B κball , with cball > 0, κball ≥ 0, one has
+
+               eB := lim sup Eδ,B,MB finite and nonnegative,             eB −→ 0.        (38.3)
+                        δ↓0
+
+
+If 4A1 B 3ν ≤ M 2−ν , then
+
+                              M 2 (SR +Eδ,B,M )/δ              ν     2
+                      Mδ ≤       e δ              + 4e(A0 +ηB bδ,B −M /4)/δ .            (38.4)
+                              2δ
+
+
+
+                                                  234
+Proof. The polynomial envelope and nonnegative rate make this supremum finite. It
+is an ordinary deterministic real number, not a random uncountable-radius supremum.
+At fixed R the inner functions are continuous in controls and paths; no measurable
+maximizing selector or joint δ, R measurability is needed. The zero control and zero path
+have rate zero and Fδ,B (0) ≥ 0, so the untruncated supremum is already nonnegative.
+The actual anchor bδ,B → 0 at fixed B satisfies Proposition 36.7 exactly. Its polynomial-
+radius conclusion gives lim supB eB ≤ 0. At fixed B, the polynomial envelope bounds
+the inner limsup by a finite number, and eB ≥ 0 then proves (38.3).
+    The exact actual-law tube bound is
+                                   ∫︂ ∞
+                                        ρ (Gδ,B (ρ)−ρ2 /2)/δ
+                              Mδ ≤        e                  dρ.
+                                     0  δ
+For every ρ ≤ M , every actual base-ball a and ∥Φ∥ ≤ ρ,
+     Fδ,B (a + Mδ,B,Rδ Φ) − ρ2 /2 ≤ 2 RateRδ (Φ) − ∥Φ∥2 /2 + Eδ,B,M ≤ SRδ + Eδ,B,M .
+Taking suprema and integrating ρ/δ over [0, M ] gives the first term of (38.4), even if
+M 2 /(2δ) < 1. This used ρ2 ≥ ∥Φ∥2 , not equality or an optimizer. For the tail apply
+Lemma 35.7 with C = A1 B 3ν and intercept A0 + ηB bνδ,B . All cutoff guards hold: M > 0,
+ρ ≥ M , C ≥ 0, 1 < ν < 2, 4C ≤ M 2−ν . Its analytic integration retains both the
+front factor four and the exponent −M 2 /4. Adding bulk and tail proves the finite-
+delta bound. No infinite-dimensional density or Laplace principle is used. This proves
+Proposition 38.2.
+Proposition 38.3 (Two limits on the same actual moment). The actual global operator
+moment obeys
+                                                                    2
+              0 ≤ lim inf δ log Mδ ≤ lim sup δ log Mδ ≤ Vup ≤ 2 + 2Cmean .
+                     δ↓0                 δ↓0
+
+Proof. Choose any cball > 0 and κball > 3ν/(2 − ν), and set MB = cball B κball . The
+cutoff in Proposition 38.2 holds for all sufficiently large integers B. For A1 = 0 this is
+immediate; otherwise its side ratio is
+                             MB2−ν    c2−ν
+                                  3ν
+                                     = ball B κball (2−ν)−3ν −→ ∞.
+                            4A1 B      4A1
+Both constants and the strictly positive exponent are retained. At such a fixed B, a
+positive sum is at most twice its larger term. Taking δ log of (38.4) therefore gives
+               δ log Mδ ≤ δ log 2 + max{SRδ + Eδ,B,MB + δ log(MB2 /(2δ)),
+                                        A0 + ηB bνδ,B − MB2 /4 + δ log 4}.
+At fixed B, bδ,B → 0. All logarithmic normalizers vanish, including δ log(MB2 /(2δ)) =
+δ log(MB2 /2) − δ log δ → 0. The last limit follows from te−t ≤ 2/t for t = − log δ > 0.
+Finite score and error bounds permit limsup subadditivity, giving
+                    lim sup δ log Mδ ≤ max{Vup + eB , A0 − MB2 /4}.
+                      δ↓0
+
+
+                                               235
+The left side has no B: actual restart identifies every block product with this SAME Pδ .
+Now let integer B → ∞. We have eB → 0, MB → ∞ and finite Vup ≥ 0. This gives the
+asserted upper bound, while Mδ ≥ 1 gives the nonnegative lower bound. The order was
+δ first at fixed block length, ball and thresholds, then B; no diagonal or limit of SRδ was
+assumed. This proves Proposition 38.3.
+
+Proposition 38.4 (The original point upper by the own signed score). For every original
+admissible model and every fixed x,
+
+               lim sup T −κ log E|uΓ (T, x)|2 ≤ lim sup Sδ−1 +2 ≤ 2 + 2Cmean
+                                                                        2
+                                                                             .
+                T →∞                              δ↓0
+
+
+For zero covariance the two normalized moments and the signed score have rate zero.
+
+Proof. Proposition 37.5 bounds the original point moment by DataPref δ Mδ , with
+δ log DataPref δ → 0. Its source-first, full-chain and canonical law proof is the input
+here, not a raw E point trace. The decreasing bijection Tδ = δ −1/κ has inverse
+δ = T −κ . Take logs, normalized limsup and Proposition 38.3. Original canonical spatial
+stationarity gives every fixed x. The moment is at least one by its full expansion and
+finite by the bound, so no logarithm or difference of infinite quantities is hidden.
+    For Γ = 0 set Cmean = 0 directly. Then HI = {0}, RateR = SR = Vup = 0,
+u = 1 and Pδ = SE (δ −1 ). The free lower and upper bounds give 0 ≤ δ log Mδ ≤
+2δ log[C(1 + δ −1 )] → 0. This direct proof needs no nonzero Gaussian or nondegenerate
+Cameron assumption; the free functional at zero may exceed zero. The formal a ↓ 0
+exponent is (4 − α)/(3 − α), with no new endpoint-in-a theorem asserted. Accepted
+Jensen and lower bounds are unchanged. This proves Proposition 38.4.
+   The moving score remains an own signed raw variational value. Its positive-control
+comparison, exact limit and identification of the derived constant require the subsequent
+variational arguments.
+
+
+39     Targets
+Goal 39.1 (Upper bound at the correct scale). Under Hypothesis 1.1, prove
+lim supt→∞ t−κ log Eu2 (t, x) < ∞, ideally with an explicit constant.
+
+
+ Theorem 13.8 establishes the unchanged full upper goal for every admissible dimen-
+ sion and homogeneous covariance. The interval estimate passed scoped correctness
+ review. The preceding independent mild construction passed correctness review.
+ The explicit hypothesis/object revision and independent fixed-order construction
+ and their consumers passed their own scoped Opus5.5/HIGH review. A fresh whole-
+ paper cold read remains required. The earlier explicit bounds for 0 < α ≤ 1 remain
+ available. The sharp constant and final whole-paper cold read remain open.
+
+
+
+                                            236
+Goal 39.2 (Sharp second-moment constant). Under Hypothesis 1.1, derive a finite con-
+stant C2 (γ, α0 ) and prove, for every fixed x ∈ Rd ,
+
+                            lim t−κ log Eu2 (t, x) = C2 (γ, α0 ).
+                            t→∞
+
+A variational characterization must specify its full domain, covariance amplitude, ki-
+netic coefficient and Gaussian action. Derive further evaluations and bounds from this
+formula. For zero covariance, u(t, x) = 1 and C2 (0, α0 ) = 0.
+
+
+ Goal 39.2 follows Le’s revised direction of 2026-10-31: derive the actual constant,
+ whatever the computation gives. The original proposed bounds with endpoints
+ 2(4−α)/(3−α) L∗ and 2(4−α)/(3−α) L∗ remain comparisons with Conjecture 2.3. Matching
+ those endpoints or closing the source’s variational gap is not a completion require-
+ ment. No correction of the source’s normalization or equality of its energy domains
+ is adopted.
+
+
+
+40     Established steps and open questions
+1. The mixed expansion and the first obstruction. Section 3 proves the complete
+   nonnegative mixed expansion and an independent convergent solution series. It cor-
+   rects the time-uniformity issue in the source’s intermediate estimate. The common-
+   per-pairing majorant has exponent ρ > κ and cannot give the desired scale. This is a
+   restriction on that majorant, not on the model or all uses of the source’s Theorem 3.1.
+
+2. Calibrations. Section 4 gives the finite white and Riesz coefficients. As α0 ↓ 0,
+   the target exponent becomes (4 − α)/(3 − α), the static exponent. Proposition 2.4
+   is unconditional; its numerical 2L∗ specialization requires the stated first-moment
+   premise. Comparisons with the Skorohod model identify time exponents only.
+
+3. The full upper scale. Section 5 gives explicit bounds when α ≤ 1. Section 13
+   proves the full homogeneous-covariance upper scale by independent interval fields,
+   local Gaussian-degree estimates and dyadic covariance domination. The latter proof
+   does not assume an endpoint representation of the spatial covariance.
+
+4. The sharp constant remains open. Goal 39.2 requires a lower bound beyond
+   the unconditional Jensen comparison and a matching sharp upper constant. The
+   new candidate in Section 14 supplies a static lower comparison for all admissible
+   temporal exponents and a strict actual-mean gap only near the static endpoint; these
+   proofs passed their own scoped review. A representation using two ordered chains
+   is a possible research direction, not a proved result of these notes. The intended
+   normalization of the source’s first-moment constants also remains to be clarified.
+
+
+
+
+                                            237
+References
+[1] Raluca M. Balan and Daniel Conus, Intermittency for the wave and heat equations with fractional
+    noise in time, Ann. Probab. 44 (2016), 1488–1534 (); MR3474476
+[2] Xia Chen, Exponential asymptotics for Brownian self-intersection local times under Dalang’s con-
+    dition, Electron. J. Probab. 28 (2023), Paper No. 119, 17 (); MR4660700
+[3]          , Time-dependency     in   hyperbolic   anderson   model:   Stratonovich   regime,   Preprint
+      arXiv:2510.01412 (2025) ()
+[4]          , Time-dependency in hyperbolic Anderson models: Stratonovich regime, 2026. 64-
+      page author manuscript, submitted to Ann. Appl. Probab.; retrieved 2026-10-26, SHA-256
+      5f7385ca451e643a1f3ff31835e4ee52b2708b5d2e3652eec3fb5d3958b97b6c; supersedes Theorem 1.2 of
+      arXiv:2510.01412v1.
+[5] Xia Chen and Yaozhong Hu, Hyperbolic anderson equations with general time-independent gaus-
+    sian noise: Stratonovich regime, Ann. Probab. 53 (2025), 2144–2195. Available at 2403.08603 ();
+    MR4988274.Published version of arXiv:2403.08603
+[6] Michel Crouzeix and César Palencia, The numerical range as a spectral set, 2017. Author preprint,
+    arXiv:1702.00668v1; numbering used here refers to this version.
+[7] Peter K. Friz and Martin Hairer, A course on rough paths, Universitext, Springer, Cham, [2020]
+    ©2020. With an introduction to regularity structures, Second edition of [ 3289027]. MR4174393
+[8] Gerald Teschl, Mathematical methods in quantum mechanics, Second, Graduate Studies in Math-
+    ematics, vol. 157, American Mathematical Society, Providence, RI, 2014. With applications to
+    Schrödinger operators. MR3243083
+
+
+
+
+                                                     238
