@@ -10550,3 +10550,14 @@ no compiler rerun or new package/companion/HPC/contact/public release.
 No reviewer is live; known-denied Opus routes have not been retried before
 the documented23:30UTCreset. Required source/visual/whole/cold gates remain
 open. Goal remains active; necessary independent work progressed this turn.
+
+
+Dependency-audit followup target, not a result: check the exact held
+Chen2023Theorem1.1 for an independent Dalang/spatial-energy finiteness input
+covering all original Radon/white cases. If applicable, homogeneity and
+existing mean/occupation estimates might replace the costly old-upper
+bootstrap for R_sp/score finiteness. Must audit ALL other old-upper
+consumers and preserve the reviewed full-upper deliverable. Falsify on
+white and degenerate homogeneous measure cases before proof investment.
+No new lemma or source/PDF edit, shortened validated manuscript or novelty
+claim follows from this proposal. Target in bootstrap-replacement-target-v1.
