@@ -1,61 +1,58 @@
-Last updated: 2026-11-01 02:05 UTC (Codex)
+Last updated: 2026-11-01 (Codex)
 
-LATEST USER DIRECTION,2026-10-31: derive the ACTUAL constants, whatever the
-computation yields; do NOT force agreement with Chen's guesses. This
-explicitly supersedes earlier source-L matching requirements and the old
-goal-service wording. Full original models and verification requirements
-remain. Exact intrinsic C2 and all-model derived bounds are now reviewed.
+LATEST USER DIRECTION: derive the actual constants, whatever computation yields.
+Chen matching is not a completion requirement.
 
 ## ⏭ Next session: where to stand and what to do
 
-FIRST prepare the independent source/statement/application FIT for frozen
-WS1-WS3 white spatial evaluation in the ACTIVE research checkout
+FIRST audit the accepted proof dependencies for TeX integration in ACTIVE
 ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave,
-branchresearch/fixed-mask-young-20261031, cleanLOCALHEAD
-b71114cfbccb9a35bbbd6b1928c777dade3665aa. Read its CURRENT PROJECT-GOAL.md,
-AGENTS.md and Progress.md; root master math and the isolated inherited
-HANDOFF are historical. No owned reviewer or compute job remains live.
-Do NOT poll/restart terminal PB83651 or OC46705/37882.
+branch research/fixed-mask-young-20261031, clean local HEAD414758c.
+Read its PROJECT-GOAL.md, AGENTS.md, Progress.md and
+notes/derived-constant-integration-plan.md. Root mathematical files and
+inherited isolated HANDOFF are historical. Latest user instruction:
+derive the actual constants; matching Chen is not required.
 
-Read reviews/2026-10-31-white-spatial-evaluation/target-v1.md and its exact
-profile diagnostics. Proposed CDF-square identity should compute actual
-R_sp=c/sqrt3 and E_sp=c²/6 for Gamma=c delta0. Those claims and the proposed
-white bounds still need proof and their OWN independent gates. Do not
-mistake profile agreement for a full-H1 proof. All-model PB/OC remain the
-main scope; this is a concrete example, not a narrowed replacement goal.
-
-Le's direction is copied verbatim in ACTIVE PROJECT-GOAL.md and Progress.md.
-The accepted mathematical core already derives C2 by the fullyspecified
-positive raw-control variational formula. Further computations/bounds,
-notes integration/build, final whole-argument/cold-read and synchronization
-requirements remain. Chen's domain/normalization is now a comparison
-question, NOT a completion blocker or a reason to tune our definitions.
-
+PB/OC/WS scoped proof reviews have passed. Integrate the complete accepted
+argument, rather than opening optional mathematical refinements. The
+inventory is a starting map, not certified proof-dependency closure.
+No owned reviewer or computation remains live; do not poll terminal jobs.
 ## Pre-flight checks
 
-[held back: collaborators' unpublished work]
-
+1. Preserve original models, dimensions, covariance/amplitude ranges and
+   exponent. Latest user revision supersedes stale goal-service wording.
+2. PB scientific40ec9a9: exact intrinsic original point limit, all models;
+   full Opus5.5/HIGH19checks. OC scientific25cc688: occupation ceiling and
+   common spatial-energy bracket; full HIGH18checks. Both accepted.
+3. WS scientific95d7515/adoption414758c: full HIGH25checks313.597seconds,
+   no required repairs;39five-way bindings and54raw archive members checked.
+   All8notes adjudicated. FIT HIGH26checks also passed. All jobs terminal.
+4. White example Gamma=c delta0: E_sp=c²/6; exact Gamma-function bounds
+   for C2. At c=1,a=1/2 endpoints approximately1.0795179077 and1.1211952203.
+   These are bounds, not an exact numerical C2 or certified decimal enclosure.
+5. Two conditional finite Lean facts accepted after full actual-application
+   review. Current80facts22seams; official L0PROPOSED/decision4 unchanged.
+   H1/CDF/Gamma/spectral/PDE arguments remain analytic, not Lean-formalized.
+6. Existing TeX/PDF remain unchanged. Integrate complete proof dependencies,
+   then enforce zero errors/undefined references/overfull boxes and PDF
+   fidelity. Scoped acceptance does not replace whole-paper/cold-read gates.
+7. <HUB> fresh push still fails NoRoute; no actual remote parity.
+   Recovery requires serialized push, canonical pull and isolated research
+   fast-forward with actual HEAD checks. Never reset or drop foreign work.
+8. Novelty/full-literature/index/citation status remains incomplete. Use
+   canonical repo-queue for wiki updates; no correspondence authorized.
 ## Concrete deliverables for the next session
 
-- Independent WS source/FIT with actual scalar/integral/normalization guards,
-  then fullH1/CDF/soliton/physical white energy proof and FULL application gate.
-- Verify worthwhile finite WS algebra through fenced local Lean capsules;
-  no new fact from raw compile without initial type/application correspondence.
-- Consolidate the accepted intrinsic limit and derived bounds into readable
-  notes/TeX, obey strict build/PDF rules and remaining whole-paper/cold-read
-  requirements. Evaluate actual model constants without forcing a guess.
-- Recover private pushes, canonical queue/wiki update and <HUB> actual
-  parity when reachable. No public or external correspondence action.
-
+- Audit accepted proof dependency closure, then consolidate PB/OC/WS and
+  their driver, lower-event and Gaussian-upper inputs into readable TeX.
+- Build and inspect PDF, freeze whole-argument review and final cold read;
+  adjudicate findings before claiming the completion contract satisfied.
+- Recover private pushes/wiki queue/<HUB> parity when available.
 ## Success criteria for the immediate next step
 
-A rigorously justified white spatial energy and explicit bounds obtained
-from our accepted OC formula, with source/FIT/full gates and exact finite
-algebra evidence where worthwhile. For general Gamma the exact PB variational
-constant remains the result; a derived bound is not silently its value.
-Under Le's revised goal, matching Chen is NOT a success requirement. Preserve
-the full-model theorem and honest remaining integration/verification gates.
-
+A complete, readable, source-faithful integrated argument for the actual
+constant and derived bounds, with honest analytic/formal boundaries.
+Matching Chen is not required. New optional refinements are not needed.
 ## Anti-success criteria
 
 [held back: collaborators' unpublished work]
@@ -1351,23 +1348,23 @@ proof or new Lean fact claimed. Latest published skill lesson6642f8c
 commits preserved. All owned jobs terminal, all working trees clean;
 <HUB>NoRoute leaves new private research/root commits LOCAL.
 
+2026-11-01 WS full close: scientific95d7515/adoption414758c, actual
+Opus5.5/HIGH25checks313.597seconds, no mandatory repairs; all8notes
+adjudicated,39five-way bindings/54raw members verified. White full-H1
+CDF square proof and soliton attain E_sp=c²/6; exact Gamma bounds and
+relative-width proof accepted. Two conditional finite Lean facts promoted:
+80facts22seams; full analytic premises remain informal. Official companion
+still L0PROPOSED. Frozen PB/OC/WS integration plan and two inventory versions
+retained. All reviewers terminal. Push attempted, NoRoute persists.
+
 ## Repo & git state at handoff
 
-Root before this dedicated HANDOFF-only successor:
-22707f9fac87fe233c79b61546c7bb0f3ee12597,master,clean,5ahead/0 versus
-last-fetched origin/master611c005. This successor also needs push while
-<HUB> is unavailable. ACTIVE research cleanLOCALHEAD
-b71114cfbccb9a35bbbd6b1928c777dade3665aa,28ahead/0 versuslast6937719.
-Latest unitsd52d1d8(PBaccept),b2942ef(OCfit),7522c81(Le goal revision),
-25cc688(OCfullfreeze),958c8fb(OCaccept),b71114c(WSfreeze/checks).
-No research/master merge. Private origin remains <HUB> bare.
-
-Native PB/OC jobs are terminal and archived with full readback hashes.
-No owned reviewer/Lean/numeric process is live. New WS formalization is only
-planned. All original main TeX/PDF/bib/source files unchanged this wave.
-Lab lesson6642f8c59e46fe95cb793956e42241ed57497992 is pushed; sharedLab later
-HEADb2809d88 was trackedclean0/0 atlastcheck, other agents' work untouched.
-
+Before this HANDOFF-only successor root master HEAD22554d0. Active
+research HEAD414758c, clean after checkpoint commit. Private origin remains
+<HUB> bare; latest push failed SSH NoRoute, no synchronization claimed.
+Last-fetched root611c005/research6937719 are historical observations only.
+Do not merge research into root master implicitly. All new scientific work
+stays in the isolated active clone; root HANDOFF is the operational loader.
 ## Operating notes
 
 Goal ACTIVE under the LATEST user revision. Never use the stale goal-service
@@ -1388,15 +1385,10 @@ A later harness starts from this root; loader invocation is a chat command.
 
 ## Risks to monitor
 
-Derived exactC2 is internally reviewed, but integration/build/finalwhole-
-argument/cold-read/wiki/synchronization requirements are NOT complete.
-The current tracked TeX still records older setup goals until its reviewed
-integration. Do not claim publication/human/novelty clearance from scoped
-gates. Keep actualJensen and applicable source results as mathematical
-constraints; guessed constants are not constraints. Never alter the held
-source or adopt the separate unapproved1.24citation/sign proposal.
-WS1-WS3 are proposed, including R_sp=c/sqrt3,E_sp=c²/6 and the candidate
-white interval. All need their own proof/application verification. Local
-Lean scalar seams alone cannot certify CDF/H1/spectral/PDE claims. No new
-companion withoutdecision4; no scope shrink. NoRoute is operational,
-not a mathematical no-go; pending private commits remain safe locally.
+Derived exact C2 and bounds are scoped-reviewed. Integration/build/final
+whole-argument/cold-read/wiki/synchronization requirements remain open.
+Historical TeX targets cannot override Le's latest instruction. Bounds are
+not exact numerical constants; no actual p1 identity or source correction
+is inferred. No optional Skorohod bridge development, public release,
+correspondence or private companion creation is authorized. NoRoute is an
+operational issue; local checkpoints are safe and the goal remains active.
