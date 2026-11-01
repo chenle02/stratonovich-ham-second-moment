@@ -10614,3 +10614,30 @@ Prepared a separate bounded frozen draft-review packet:8input files,
 before the known quota reset; no source/PDF/current common-contract change.
 It is a pending new draft cycle, not a scientific pass, official main
 composition component or permission to delete the old upper.
+
+
+## 2026-11-01 — actual old-upper consumers separated from fixed-time inputs
+
+Completed author semantic classification in old-upper-consumer-audit-v1.
+The final positive-score proof uses T:full-upper for a UNIFORM finite
+score supremum; the auxiliary near-static mean type is another actual
+consumer. Actual point-flow fixed-time finiteness instead uses the tube
+bound; fixed-delta source UI uses Gaussian/Young bounds. Masked-chain
+comparison and canonical transfer require the separate earlier vertexwise
+q_n summability, which does not use the correct-scale full upper. These
+inputs must not be conflated or erased during shortening.
+
+Existing occupation-ceiling proof has a pointwise score bound before its
+last C2 identification; reordering it is only a candidate pending a full
+no-circular-premise audit. The new spatial-ratio import does not by itself
+replace that bound, the near-static statement or all source convergence.
+No second unreviewed proof cycle launched; the original full-upper
+deliverable and all213proof review obligations remain intact.
+
+Posthook verification of the separate finite-ratio review packet confirms
+all8live/packet/Git3c375e6inputs and manifest hashes match. Main PDF still
+257pages with unchanged10bfeae6...294c9SHA. No TeX/PDF/Lean modification,
+new accepted result or official composition credit. Last capacity evidence
+still denies required Opus until23:30UTC; no pre-reset provider retry and
+no live reviewer is claimed. Goal active; this turn supplies actual
+consumer evidence that determines the next mathematical simplification.
