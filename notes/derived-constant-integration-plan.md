@@ -96,7 +96,35 @@ statement/physical application and PDF correspondence,27PASS/HIGH,
 382.209seconds,no required repairs. Six complete proof blocks; all68earlier
 proof bodies unchanged. Clean125-page PDF,15full texts and9exact PNG
 images verified. Native workspace/media preflight passed before dispatch.
-Next integrate FG/CC using the newly frozen target in
-reviews/2026-11-01-compact-gaussian-tex-integration/. The target is a plan,
-not new proof or acceptance. Keep actual operator/series/path consumers
+FG/CC was frozen as the next step and is now closed below. Its dated
+target preserves the pre-translation plan, separately from proof acceptance. Keep actual operator/series/path consumers
 separate until their complete corresponding arguments are integrated.
+
+
+## Preserve parameter-dependent comparison constants
+
+The first FG/CC translation dropped a lattice-spacing factor while
+compressing a proof. For reduced-cell y and |k|>=sqrt(d), retain the exact
+comparison <y-ak>^-N <= max(1,2/a)^N <k>^-N before summing dyadic k-shells.
+Only the comparison-series terms have the bare2^(-jN) bound; its prefactor
+depends on a,N, and the final sum also on d. C_d cannot absorb a. The
+exact d1,N2,a1/2,y0,k4,j2 counterexample is1/5>1/16. Preserve which variable
+defines shells and all parameter dependencies when shortening any kernel
+or rescaling argument. Accepted source correctness does not certify a
+compressed transcription; failed candidate/receipt remain rejected.
+
+
+## Finite Gaussian and whole-space Sobolev integration accepted
+
+Scientific2571a15: notes/integrated_compact_gaussian.tex closes FG/CC
+full repaired source/statement/conditional-application/PDF correspondence,
+24PASS/HIGH323.168seconds,no mandatory repairs. Ten complete proof blocks,
+74previous bodies unchanged. Clean134-page PDF,19full texts/10exact images
+verified. V1 remains rejected for dropping the lattice-spacing factor;
+original raw report, invalid enum status and true mathematical counter
+are retained. Restored comparison and unitary normalization passed V2.
+Next: actual-driver target in reviews/2026-11-01-actual-driver-tex-integration/.
+This is a plan, not an extra theorem. Translate the SAME-W coefficient,
+localization, actual variance/tail, Gaussian-series and path proofs in full.
+Do not re-prove accepted FG/CC or infer those consumers from the finite
+conditional theorem without their actual instantiation.

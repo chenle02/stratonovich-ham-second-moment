@@ -102,8 +102,13 @@
   Bessel/TWO-variance/real mean-square column proofs integrated;25bindings,
   15full texts/9exact PNG deliveries verified.125-page PDF clean;68old
   proof bodies unchanged. No new Lean fact or sample operator/path claim.
-- **Immediate next:** integrate finite Gaussian matrix moments and whole-space
-  Sobolev compactness (FG/CC), then actual driver and source/Young proofs.
+- **Accepted finite Gaussian/Sobolev TeX integration:** scientific2571a15,
+  Opus5.5/HIGH24PASS323.168s,no repairs. Ten complete proof blocks;30input
+  bindings,19full texts/10exact images verified;134-page PDF clean. V1
+  dropped a lattice-spacing factor and remains rejected; corrected source,
+  exact counter/control and re-review retained. No new formal coverage.
+- **Immediate next:** integrate the actual same-W Gaussian operator driver
+  (AD), then source convergence/Young identification and lower/upper assembly.
   Keep the frozen PB/OC/WS result set and full original model scope. The
   import interfaces are mapped; avoid repeating that inventory as a new round.
   Continue consolidating complete proofs into TeX/PDF, with clean builds
@@ -132,7 +137,7 @@
  rerun for promotion, new package/companion/lease/registry/HPC action.
 - **Git:** current mathematical work is in the isolated private research
   clone, branchresearch/fixed-mask-young-20261031. Latest result source
-  is95d7515; latest accepted TeX integration sourcef5c1521, with subsequent
+  is95d7515; latest accepted TeX integration source2571a15, with subsequent
   adoption records separate.
   Fresh fetch/push failed with <HUB>NoRoute. Prior <HUB> parity
   receipts are historical, not evidence of current synchronization.
@@ -8716,3 +8721,27 @@ Full repaired packet-v2:19texts/10typed images; media preflight PASS.
 Clean134-page rebuild,0errors/undefined/overfull; all10pages124-133 inspected.
 NewSection18ends132, targetcontext133. New same-model/HIGH gate PENDING;
 no model/provider/threshold change, no unsupported resume or source fix.
+
+
+### Accepted FG/CC repaired close: scientific2571a15
+
+Native74139 TERMINAL0, actualOpus5.5/HIGH24PASS323.168seconds,
+PASS_WITH_NOTES,no mandatory repairs. accepted/coverage true; canonical
+parser/passing/model/auth/source/read-ledger validation PASS. All19texts
+complete,10exact PNG deliveries verified; all30live/packet/Git/native-
+workspace/final-receipt hashes matched before adoption. Raw archive has
+45members, all read-back SHA256 verified. Report unchanged; raw
+originals archived, reader receipts normalize only home paths. Eight minor
+findings adjudicated with no final source/PDF edits. V1 remains rejected,
+its true missing-spacing-factor error and exact rational counter retained.
+
+134-page PDF clean;74prior proof bodies unchanged and10complete new
+proofs integrated. Of the new10, only2changed for the repair. Source/PDF
+and typed media gates passed. No additional Lean fact:80facts22seams,
+L0PROPOSED/decision4 unchanged. Actual driver target frozen before future
+translation in reviews/2026-11-01-actual-driver-tex-integration/; it remains
+a plan, not a proof or accepted gate. Next AD then SC/FY, ground/event/
+UL, uniform Gaussian upper and PB/OC/WS. Full original model scope and
+Le's actual-derived-constant target preserved. All owned review/compute
+processes now terminal; no restart of16481or74139. Goal ACTIVE. Final
+whole-paper/cold-read/wiki/Git/<HUB> delivery still open.
