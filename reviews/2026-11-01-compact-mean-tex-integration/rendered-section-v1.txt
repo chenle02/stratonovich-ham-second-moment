@@ -1,0 +1,516 @@
+23     Compact mean families and the full-phase spec-
+       tral gap
+Let I = [0, 1], let Kx ⊂ Rd be compact, and let σ ↦→ Vσ be continuous from I into
+Cc∞ (Kx ), real and nonnegative. The index σ is a family parameter, distinct from physical
+propagation time t. Assume that one real w ∈ H 1 (Rd ) with ∥w∥2 = 1 satisfies
+                              ∫︂
+                     ∥∇w∥2 − Vσ w2 ≤ −ε for all σ ∈ I,
+                          2
+                                                                ε > 0.              (23.1)
+
+Put M = supI ∥Vσ ∥∞ and Hσ = −∆ − Vσ . The phases E, F , inclusion i, data e0 and
+observable Oϕ are exactly those of Section 22. Proposition 22.8, with deterministic
+coefficient h = Vσ and noise amplitude zero, gives the actual ordinary physical flow
+Pσ (t) on F . Its E restriction is PσE (t). Uniqueness of the Duhamel solution makes
+finite-horizon constructions agree on overlaps; integer horizons and autonomy give the
+same semigroup for every t ≥ 0.
+    We import the following statements from the second edition of [8]: Theorem 10.2,
+p. 258, gives the self-adjoint H 2 operator, lower bound, essential spectrum [0, ∞) and
+compact smooth core for real compact smooth potentials in the dimensions considered
+here. Theorem 10.13, p. 273, gives a simple positive ground state if the spectral bottom is
+an eigenvalue. Theorem 4.12 and Corollary 4.13, pp. 140–141, give max–min and form
+monotonicity, with the essential threshold used after discrete eigenvalues end and with
+the quadratic-form domain allowed. Uniformity, fractional norms and all applications
+to F are proved below.
+
+23.1     The ground family and the actual global phase
+Proposition 23.1 (Ground states and ∫︁a uniform rate gap). The common form domain
+of Hσ is H 1 with form qσ (u) = ∥∇u∥22 − Vσ |u|2 . Its bottom E1 (σ) is a simple eigenvalue
+with a unique real positive-a.e. normalized ground state pσ . Let E2 (σ) be the second
+max–min level, set to zero when there is no second negative eigenvalue. Then
+
+                           −M ≤ E1 (σ) ≤ −ε,             E1 (σ) < E2 (σ) ≤ 0,          (23.2)
+                |Ej (σ) − Ej (τ )| ≤ ∥Vσ − Vτ ∥∞ ,       j = 1, 2.                     (23.3)
+                                   2
+                                                                                √︁
+    √︁ σ ↦→ pσ is continuous into H and bounded there. With λσ =
+The map                                                                           −E1 (σ) and
+µσ = −E2 (σ),                 √
+                  √
+                    ε ≤ λσ ≤ M ,      d0 := inf (λσ − µσ ) > 0.                        (23.4)
+                                                     I
+
+Proof. The imported Theorem 10.2 applies to −Vσ , which is real, compactly supported
+and in L2 for d ≤ 3. It gives the stated self-adjoint operator on H 2 and essential
+threshold zero. Write c = 1 + M and Aσ = Hσ + c ≥ 1. On H 2 , integration by parts
+and the spectral theorem give
+
+              ∥A1/2 2                2
+                σ u∥2 = qσ (u) + c∥u∥2 ,       ∥u∥2H 1 ≤ ∥A1/2 2       2
+                                                           σ u∥2 ≤ c∥u∥H 1 .
+
+
+                                            159
+Spectral cutoffs 1[1,n] (Aσ )u show that H 2 is a core for the half-power form norm. Fourier
+                                                                                        1/2
+cutoffs show it is dense in H 1 . The two equivalent completions are therefore D(Aσ )
+and H 1 . Both norms dominate L2 and give the same L2 limit, so these are equal as
+subspaces, with the displayed form. This verifies the form domain used below.
+   The form lower bound and (23.1) give −M ≤ E1 ≤ −ε by the imported form
+max–min principle. The bottom belongs to the spectrum and lies below the essential
+threshold, so it is an isolated eigenvalue of finite multiplicity. Only now apply the im-
+ported Theorem 10.13: it is simple with a positive ground state. Conjugation preserves
+the real operator; positivity and unit L2 norm fix its real representative.
+   Simplicity, isolation and threshold zero give E1 < E2 ≤ 0. For every common unit
+form test, |qσ (u) − qτ (u)| ≤ ∥Vσ − Vτ ∥∞ . Taking the same infima over orthogonal com-
+plements and suprema in the source max–min formula proves (23.3), including passage
+of E2 to the threshold. Compactness gives ∆∗ := minI (E2 − E1 ) > 0. Thus
+                                      E2 (σ) − E1 (σ)   ∆∗
+                         λσ − µ σ =                   ≥ √ > 0.
+                                          λσ + µσ      2 M
+Here M ≥ ε > 0, and no division by µσ occurs.
+   Put dV = ∥Vσ − Vτ ∥∞ and decompose pτ = apσ + r, with r ⊥ pσ and 0 < a ≤ 1.
+The variational bound gives qσ (pτ ) ≤ E1 (σ) + 2dV , whereas the complementary spectral
+bound gives qσ (pτ ) ≥ E1 (σ) + ∆∗ ∥r∥22 . Hence,
+
+                      ∥pτ − pσ ∥22 = 2(1 − a) ≤ 2(1 − a2 ) ≤ 4dV /∆∗ .               (23.5)
+
+The eigenfunction equation is
+
+                              (1 − ∆)pσ = (1 − λ2σ + Vσ )pσ .
+
+Its right side is continuous in L2 and bounded there by 1 + 2M . The inverse of 1 − ∆
+is an isometry from L2 to the Bessel H 2 space, proving the asserted H 2 continuity and
+bound. This proves Proposition 23.1.
+Lemma 23.2 (Uniform fractional phase norms). Let B = 1 − ∆, c = 1 + M and
+Aσ = Hσ + c. The quarter-power domain is H 1/2 and
+
+                          ∥B 1/4 u∥2 ≤ ∥A1/4
+                                         σ u∥2 ≤ c
+                                                  1/4
+                                                      ∥B 1/4 u∥2 .                   (23.6)
+
+The norm
+                                                     −1/4
+                           ∥(u, z)∥2Eσ = ∥A1/4 2
+                                           σ u∥2 + ∥Aσ    z∥22                       (23.7)
+is uniformly equivalent to the actual fixed norm on E = H 1/2 × H −1/2 , interpreting the
+negative entry by completion.
+Proof. On the common form domain H 1 , B ≤ Aσ ≤ cB and all three operators are
+at least one. For positive self-adjoint T, S with common form domain, T ≤ S implies
+(T + t)−1 ≥ (S + t)−1 for t > 0. Indeed,
+
+                   ⟨f, (T + t)−1 f ⟩ = sup{2 Re⟨f, u⟩ − qT (u) − t∥u∥22 };
+                                        u
+
+
+                                            160
+completing the square in the closed form norm proves the identity, and comparison of
+the suprema proves the order. Consequently I − t(T + t)−1 ≤ I − t(S + t)−1 . The scalar
+identity
+                                  √     1 ∞ −1/2 x
+                                         ∫︂
+                                    x=       t           dt
+                                        π 0       x+t
+                          ∫︁ ∞
+follows by t = xr2 and 0 (1 + r2 )−1 dr = π/2. Spectral integration and positive Tonelli,
+first over finite intervals and then by monotone convergence, give T 1/2 ≤ S 1/2 as forms,
+including domain inclusions. Apply this to B ≤ Aσ ≤ cB to obtain (23.6) and equality
+of the quarter-power domains with H 1/2 .
+                                               1/4                     −1/4
+    Under the L2 pairing the dual norm of ∥Aσ u∥2 at z ∈ L2 is ∥Aσ z∥2 . Cauchy–
+                                                             −1/2
+Schwarz gives the upper bound, and a scalar multiple of Aσ z attains it. Completion
+and (23.6) identify this negative space with H −1/2 , uniformly in σ. Adding the squared
+norms proves the claim. This proves Lemma 23.2.
+
+Proposition 23.3 (The actual complementary wave on E). Put
+
+                                              ⟨pσ , u⟩ + ⟨pσ , z⟩/λσ
+         eE
+          σ = (pσ , λσ pσ ),    ℓE
+                                 σ (u, z) =                          ,     ΠE    E E
+                                                                            σ = eσ ℓσ .
+                                                        2
+These are bounded real objects, continuous in their respective norms, with ℓE   E
+                                                                            σ (eσ ) = 1,
+and
+
+                               PσE (t)eE
+                                       σ = e
+                                            λσ t E
+                                                eσ ,       ℓE  E
+                                                            σ Pσ (t) = e
+                                                                         λσ t E
+                                                                             ℓσ ,         (23.8)
+                 ∥PσE (t)(I − ΠE
+                               σ )∥B(E) ≤ C(1 + t)e
+                                                   µσ t
+                                                        ,         t ≥ 0.                  (23.9)
+
+The constant is uniform over σ ∈ I.
+                                                               √          √ √
+Proof. Define real spectral functions
+                               √      Ct (h),
+                                            √ St (h) by
+                                                     √   cos(t   h), sin(t h)/ h for h > 0,
+by 1, t at zero, and by cosh(t −h), sinh(t −h)/ −h for h < 0. The spectral wave
+matrix is                      (︃                         )︃
+                                   Ct (Hσ )      St (Hσ )
+                                                             .                      (23.10)
+                                 −Hσ St (Hσ ) Ct (Hσ )
+Real potentials, their resolvents and spectral resolutions commute with conjugation. All
+these real functions and positive Aσ powers preserve the actual real phases.
+   The spatial projection Qsp σ = I − |pσ ⟩⟨pσ | commutes with Hσ , Aσ and is contractive
+on both entries of (23.7). On its support h ≥ E2 = −µ2σ , the phase isometry gives scalar
+matrix entries
+                             √                         √
+                   Ct (h),     h + c St (h), −hSt (h)/ h + c, Ct (h).
+
+For h ≥ 0, use |St (h)| ≤ min(t, h−1/2 ) and split h ≤ 1 from h ≥ 1; the lower off-diagonal
+entry is at most one. For −µ2σ ≤ h < 0, use |Ct (h)| ≤ eµσ t and |St (h)| ≤ teµσ t , with
+|h| ≤ M and 1 ≤ h + c ≤ c. Thus the complementary spatial matrix has norm at most
+C(1 + t)eµσ t , including µσ = 0.
+
+
+                                              161
+    The two spatial ground branches are (pσ , ±λσ pσ ). Besides ΠE
+                                                                 σ , their projections
+include the decaying branch
+                                                 ⟨pσ , u⟩ − ⟨pσ , z⟩/λσ
+                                (pσ , −λσ pσ )                          .
+                                                           2
+Their sum is the spatial ground projection on both phase entries.   √ Both projection
+                                                                                √
+norms are uniformly bounded in the spectral phase norm because ε ≤ λσ ≤ M and
+1 ≤ c − λ2σ ≤ c. The decaying branch has factor e−λσ t and remains in I − ΠE      σ . The
+fractional norm equivalence now proves the stated complement estimate for the spectral
+matrix.
+    We identify this matrix with the actual physical flow. The same scalar bounds at
+                      1/2
+graph levels (Aσ u, Aσ z) give continuous solutions in H 2 × H 1 . These graph norms
+are uniformly equivalent to the Sobolev norms: the H 1 case was proved above, and
+Aσ − B = M − Vσ is bounded by M while Aσ , B ≥ 1. Spectral cutoffs give ut = z in
+H 1 and zt = −Hσ u in L2 , with continuous derivatives there. The free Fourier group on
+H 1 ×L2 has, after its Bessel isometry, the same bounded weighted entries and is strongly
+continuous by dominated Fourier convergence. Its generator is (z, ∆u) on H 2 × H 1 , as
+the Fourier multipliers show. For compact smooth initial data, differentiating the free
+interaction picture at these graph levels gives Duhamel with force (0, Vσ u). The identity
+also holds in E. Multiplication by Vσ maps H 1/2 into L2 and then H −1/2 with bound M ,
+so Picard uniqueness identifies the spectral solution with the ordinary E flow on these
+data. Density within E and finite-horizon boundedness extend equality to all E. No
+density of E in F is used. Finally, the ground branches give (23.8); their pairings are
+continuous because pσ ∈ H 2 . Continuity and uniform bounds of the displayed vectors
+and duals follow from Proposition 23.1. This proves Proposition 23.3.
+
+23.2      The full-phase projection and its complementary flow
+For the constant coordinates write C(t)(c1 , c2 ) = (c1 +tc2 , c2 ) and Dσ (c1 , c2 ) = (0, Vσ c1 ) ∈
+E.
+
+Proposition 23.4 (The full-phase growing projection). The actual physical flow satisfies
+                          (︃         ∫︂ t                             )︃
+                             E             E
+            Pσ (t)(e, c) = Pσ (t)e +      Pσ (t − r)Dσ C(r)c dr, C(t)c .        (23.11)
+                                                 0
+
+Set
+         ∫︁                              (︃         )︃
+         Vσ pσ                             c1    c2
+  fσ =         > 0,        ℓC
+                            σ (c) = fσ        +        ,                                     (23.12)
+         2λσ                              λσ λ2σ
+  eσ = ieE
+         σ,              ℓσ (e, c) = ℓE        C
+                                      σ (e) + ℓσ (c),         Πσ = eσ ℓσ ,   Qσ = I − Πσ .   (23.13)
+
+These vectors, duals and rank-one projections are norm-continuous and uniformly
+bounded, and
+                    ℓσ (eσ ) = 1, Pσ (t)Πσ = Πσ Pσ (t) = eλσ t Πσ .     (23.14)
+
+                                                     162
+For every fixed nonnegative smooth compact ϕ of integral one,
+                            inf ℓσ (e0 ) > 0,         inf Oϕ (eσ ) > 0.              (23.15)
+                               I                       I
+
+Proof. The constant coordinates obey C(t) because the potential force has range in iE.
+To justify variation of constants on the E component, let g be a continuous E force and
+substitute the ordinary free-Duhamel equation for PσE (t − r)g(r) in its time integral.
+With BσE (u, z) = (0, Vσ u), strong E-valued Fubini gives
+                    ∫︂ t ∫︂ t
+                              S(t − s)BσE PσE (s − r)g(r) ds dr
+                      0    r
+                              ∫︂ t             [︃∫︂ s                  ]︃
+                                             E         E
+                           =       S(t − s)Bσ         Pσ (s − r)g(r) dr ds.
+                               0                  0
+
+All norms are bounded
+                   ∫︁ t E on the finite triangle, so this exchange is absolute in E. Thus
+          E                                                                 E
+Y (t) = Pσ (t)e + 0 Pσ (t − r)g(r) dr solves free Duhamel with force Bσ Y + g. Take
+g(r) = Dσ C(r)c and adjoin the constant block. This is the same F Duhamel equation
+as the actual ordinary flow; uniqueness proves (23.11). Its finite-horizon bounds are
+uniform since the family has bounded L∞ and L2 norms on one compact support.
+    The integral defining fσ is finite by L2 Cauchy–Schwarz and positive because Vσ
+is nonzero by the common trial and pσ > 0 a.e. Its coefficients are continuous and
+uniformly bounded by the H 2 continuity and positive rate floor; no pσ ∈ L1 assumption
+is used. Directly,
+                        ℓE
+                         σ Dσ C(r)c = fσ (c1 + rc2 ),
+                                        ∫︂ ∞
+                                C
+                               ℓσ (c) =       e−λσ r fσ (c1 + rc2 ) dr,
+                                        ∫︂0 ∞
+                          ℓC
+                           σ (C(t)c) =        eλσ (t−r) fσ (c1 + rc2 ) dr.
+                                            t
+
+These integrals converge absolutely. Applying ℓσ to (23.11), the finite integral and this
+tail combine to give ℓσ Pσ (t) = eλσ t ℓσ . The ground mode also gives Pσ (t)eσ = eλσ t eσ
+and ℓσ (eσ ) = 1, proving (23.14). Bounded bilinear multiplication and the preceding
+continuous coefficients
+                 ∫︁      prove norm continuity of all objects. Finally, ℓσ (e0 ) = fσ /λσ > 0
+and Oϕ (eσ ) = ϕpσ > 0. Both are continuous on compact I, proving (23.15). Pos-
+itivity is in integrals, without a point trace or a one-dimensional ODE. This proves
+Proposition 23.4.
+Proposition 23.5 (Full-phase complement and parameter control). Uniformly over σ
+and t ≥ 0,
+                         ∥Pσ (t)Qσ ∥B(F ) ≤ C(1 + t)3 eµσ t .            (23.16)
+For every fixed 0 < η < d0 ,
+                                   ∥e−λσ t Pσ (t)Qσ ∥ ≤ Cη e−ηt .                    (23.17)
+For every finite T0 ,
+                                            (︁                        )︁
+            sup ∥Pσ (t) − Pτ (t)∥B(F ) ≤ CT0 ∥Vσ − Vτ ∥∞ + ∥Vσ − Vτ ∥2 .             (23.18)
+          0≤t≤T0
+
+
+                                                163
+Proof. Write QE             E
+                  σ = I −Πσ . Split Dσ into its growing and complementary parts in (23.11)
+and use the two tail integrals in the preceding proof. The exact E component of
+Pσ (t)Qσ (e, c) is
+                                ∫︂ t
+                    E     E
+                   Pσ (t)Qσ e +      PσE (t − r)QE                E C
+                                                 σ Dσ C(r)c dr − eσ ℓσ (C(t)c),    (23.19)
+                               0
+
+and the constant component is C(t)c. The final subtraction retains the growing response
+to constants in the projection. Since ∥QE
+                                        σ Dσ C(r)∥ ≤ C(1 + r), the integral in (23.19)
+has norm at most
+                       ∫︂ t
+               Ce |c| (1 + t − r)(1 + r) dr = Ceµσ t (t + t2 + t3 /6)|c|.
+                  µσ t
+                          0
+
+The first term is bounded by C(1+t)eµσ t ∥e∥E ; the final term and constant component by
+C(1 + t)|c|. Since µσ ≥ 0 this proves (23.16). The boundedness of (1 + t)3 e−(d0 −η)t proves
+(23.17). In particular, the constant-velocity polynomial is included in this estimate.
+    Put Bσ = iBF (Vσ ) and dσ,τ = ∥Vσ − Vτ ∥∞ + ∥Vσ − Vτ ∥2 . The bound for BF gives
+∥Bσ − Bτ ∥ ≤ dσ,τ . Subtract the two free-Duhamel equations on states. Their difference
+is the sum of the integral with SF (t − r)Bσ (Pσ (r) − Pτ (r)) and that with SF (t − r)(Bσ −
+Bτ )Pτ (r). The uniform finite-horizon bounds and scalar Gronwall prove (23.18). The
+operator norm is measurable: separability of F expresses it as the supremum over a
+countable dense set of unit states, each with continuous image. Hence Gronwall applies
+without a B(F )-valued derivative or operator-norm continuity of the free group. This
+proves Proposition 23.5.
+
+23.3     The original positive raw control and a common trial
+Lemma 23.6 (The original mean and raw variance). Let Γ ̸= 0 satisfy Hypothesis 1.1,
+let a = α0 , and let real nonnegative nonzero Ψ ∈ Cc∞ ((0, 1) × Rd ) be arbitrary, without
+a separability assumption. Define
+            ∫︂ 1                                       ∫︂ 1
+                        −a
+  hσ (x) =       |σ − u| (Γ ∗ Ψ(u, ·))(x) du,  q(x) =       Ψ(u, x) du,     Z = W (Ψ).
+            0                                                      0
+                                                                                      (23.20)
+Then h is smooth in time and space on compact sets, and
+                                   ∫︂ 1 ∫︂
+                               2
+                  0 < vΨ := EZ =           Ψ(σ, x)hσ (x) dx dσ < ∞.                   (23.21)
+                                        0
+
+Against every smooth compact positive-time test F0 ,
+                                         ∫︂
+                      E[W (Ψ)W (F0 )] = F0 (s, x)hs (x) dx ds.
+
+Moreover, on I,
+                                            ∫︂            ∫︂
+         hσ ≥ Γ ∗ q,      vΨ ≥ Q(q) :=           Γ( dz)        q(x)q(x − z) dx > 0.   (23.22)
+
+                                                 164
+For every fixed mask, Vσ = mR hσ is a smooth compact family, Lipschitz in σ in L∞ and
+L2 .
+
+Proof. Choose A ≥ 1 containing the spatial support of Ψ in BA . The raw covariance
+identity and absolute Fubini give the stated mean pairing: the two compact tests re-
+strict spatial differences to a compact set of finite Γ mass, and the time singularity is
+locally integrable since a < 1. This identifies the actual linear covariance mean without
+evaluating noise at a point. The same calculation  ∫︁ 1 ∫︁ gives (23.21). Its spatial integrand is
+                                                           1
+bounded in integral by ∥Ψ∥∞ |BA |Γ(B 2A ), and 0 0 |σ − u|−a du dσ = 2/((1 − a)(2 − a)),
+                              2
+
+proving finiteness.
+    Nonnegative nonzero smooth Ψ has positive integral, so q ̸= 0. Nonzero Γ charges
+some ball, and homogeneity gives Γ(B1 ) = rα−d Γ(Br ) > 0. Thus every           ∫︁ positive-radius
+ball has positive finite mass. The continuous compact autocorrelation q(x)q(x − z) dx
+is positive at zero and bounded below on some ball. This proves 0 < Q(q) < ∞. Since
+|σ − u|−a ≥ 1 on the unit time square, positive Tonelli gives both inequalities in (23.22).
+    Extend Ψ by zero in time and write
+                                 ∫︂        ∫︂
+                                        −a
+                        hs (x) =    |r|       Γ( dz)Ψ(s − r, x − z) dr.
+                                   R
+
+On compact s, x sets the relevant r, z range over fixed compact sets; |r|−a is integrable
+there. Every derivative falls on the smooth test, not on the singular time kernel. Dom-
+inated differentiation gives smoothness and continuity of all derivatives on compacts.
+Multiplication by mR now gives the claimed compact family and its fixed-R Lipschitz
+bounds. This proves Lemma 23.6.
+
+Proposition 23.7 (Binding with the original control and cost fixed). For every Ψ in
+Lemma 23.6, a sufficiently large finite mask mR gives Vσ = mR hσ a common negative
+trial (23.1). Thus all preceding ground, projection, positive-margin and complementary-
+wave conclusions apply. The actual rate is Lipschitz on I and has λ0 > 0. The original
+test Ψ, raw variable Z and variance vΨ are unchanged by this choice. The mask can
+additionally cover any fixed compact variational test supports.
+
+Proof. Choose a real unit L2 function ψ ∈ Cc∞ (B2 ) with ψ ≥ c0 > 0 on B1 , and put
+ψL (x) = L−d/2 ψ(x/L), Dψ = ∥∇ψ∥22 , where L ≥ max(1, 2A). Choose the actual even
+mask with R ≥ 2L, so Vσ = hσ on supp ψL . Positive Tonelli and (23.22) give
+                       ∫︂                 ∫︂
+                              2     2 −d
+                          Vσ ψL ≥ c0 L          (Γ ∗ q)(x) dx
+                                             BL
+                                          ∫︂
+                                    2 −d
+                                = c0 L        q(y)Γ(BL − y) dy
+                                                      ∫︂
+                                ≥ c0 L Γ(BL/2 ) q = CΓ L−α ,
+                                    2 −d
+                                                                             (23.23)
+                                                   ∫︂
+                             CΓ = c20 2α−d Γ(B1 ) q > 0.
+
+
+                                               165
+Here BL/2 ⊂ BL − y for |y| ≤ A and L ≥ 2A. All covariance masses in the argument are
+compact and finite. The kinetic energy is Dψ L−2 . Since α < 2, choose L large enough
+that εR := CΓ L−α − Dψ L−2 > 0. Then
+                               ∫︂
+                     ∥∇ψL ∥2 − Vσ ψL2 ≤ −εR for every σ ∈ I.
+                            2
+
+
+
+Fix this finite R before invoking Proposition 23.1. Its level bound and the mean Lipschitz
+estimate give
+                                        ∥Vσ − Vτ ∥∞
+                           |λσ − λτ | ≤     √       ≤ CR |σ − τ |.
+                                           2 εR
+The positive mean integrates the entire time test, so λ0 > 0 even though Ψ(0, ·) = 0.
+Only the trial and mask have grown; the raw test, its variable and (23.21) were fixed
+first. Enlarging R to contain additional fixed compact test supports preserves the trial
+and gives equality of masked and unmasked potential energies on those supports. This
+includes singular invariant-direction covariances and the one-dimensional white case. It
+is not an all-strength binding assertion for one fixed compact potential. Masks are fixed
+before source or time asymptotics; a later supremum over controls must follow their
+individual bounds. This proves Proposition 23.7.
+
+
+24     Targets
+Goal 24.1 (Upper bound at the correct scale). Under Hypothesis 1.1, prove
+lim supt→∞ t−κ log Eu2 (t, x) < ∞, ideally with an explicit constant.
+
+
+ Theorem 13.8 establishes the unchanged full upper goal for every admissible dimen-
+ sion and homogeneous covariance. The interval estimate passed scoped correctness
+ review. The preceding independent mild construction passed correctness review.
+ The explicit hypothesis/object revision and independent fixed-order construction
+ and their consumers passed their own scoped Opus5.5/HIGH review. A fresh whole-
+ paper cold read remains required. The earlier explicit bounds for 0 < α ≤ 1 remain
+ available. The sharp constant and final whole-paper cold read remain open.
+
+
+Goal 24.2 (Sharp second-moment constant). Under Hypothesis 1.1, derive a finite con-
+stant C2 (γ, α0 ) and prove, for every fixed x ∈ Rd ,
+
+                            lim t−κ log Eu2 (t, x) = C2 (γ, α0 ).
+                            t→∞
+
+A variational characterization must specify its full domain, covariance amplitude, ki-
+netic coefficient and Gaussian action. Derive further evaluations and bounds from this
+formula. For zero covariance, u(t, x) = 1 and C2 (0, α0 ) = 0.
+
+
+
+                                            166
+  Goal 24.2 follows Le’s revised direction of 2026-10-31: derive the actual constant,
+  whatever the computation gives. The original proposed bounds with endpoints
+  2(4−α)/(3−α) L∗ and 2(4−α)/(3−α) L∗ remain comparisons with Conjecture 2.3. Matching
+  those endpoints or closing the source’s variational gap is not a completion require-
+  ment. No correction of the source’s normalization or equality of its energy domains
+  is adopted.
+
+
+
+25         Established steps and open questions
+1. The mixed expansion and the first obstruction. Section 3 proves the complete
+   nonnegative mixed expansion and an independent convergent solution series. It cor-
+   rects the time-uniformity issue in the source’s intermediate estimate. The common-
+   per-pairing majorant has exponent ρ > κ and cannot give the desired scale. This is a
+   restriction on that majorant, not on the model or all uses of the source’s Theorem 3.1.
+
+2. Calibrations. Section 4 gives the finite white and Riesz coefficients. As α0 ↓ 0,
+   the target exponent becomes (4 − α)/(3 − α), the static exponent. Proposition 2.4
+   is unconditional; its numerical 2L∗ specialization requires the stated first-moment
+   premise. Comparisons with the Skorohod model identify time exponents only.
+
+3. The full upper scale. Section 5 gives explicit bounds when α ≤ 1. Section 13
+   proves the full homogeneous-covariance upper scale by independent interval fields,
+   local Gaussian-degree estimates and dyadic covariance domination. The latter proof
+   does not assume an endpoint representation of the spatial covariance.
+
+4. The sharp constant remains open. Goal 24.2 requires a lower bound beyond
+   the unconditional Jensen comparison and a matching sharp upper constant. The
+   new candidate in Section 14 supplies a static lower comparison for all admissible
+   temporal exponents and a strict actual-mean gap only near the static endpoint; these
+   proofs passed their own scoped review. A representation using two ordered chains
+   is a possible research direction, not a proved result of these notes. The intended
+   normalization of the source’s first-moment constants also remains to be clarified.
+
+
+References
+[1] Raluca M. Balan and Daniel Conus, Intermittency for the wave and heat equations with fractional
+    noise in time, Ann. Probab. 44 (2016), 1488–1534 (); MR3474476
+[2] Xia Chen, Exponential asymptotics for Brownian self-intersection local times under Dalang’s con-
+    dition, Electron. J. Probab. 28 (2023), Paper No. 119, 17 (); MR4660700
+[3]          , Time-dependency     in   hyperbolic   anderson   model:   Stratonovich   regime,   Preprint
+      arXiv:2510.01412 (2025) ()
+
+
+
+
+                                                     167
+[4]          , Time-dependency in hyperbolic Anderson models: Stratonovich regime, 2026. 64-
+      page author manuscript, submitted to Ann. Appl. Probab.; retrieved 2026-10-26, SHA-256
+      5f7385ca451e643a1f3ff31835e4ee52b2708b5d2e3652eec3fb5d3958b97b6c; supersedes Theorem 1.2 of
+      arXiv:2510.01412v1.
+[5] Xia Chen and Yaozhong Hu, Hyperbolic anderson equations with general time-independent gaus-
+    sian noise: Stratonovich regime, Ann. Probab. 53 (2025), 2144–2195. Available at 2403.08603 ();
+    MR4988274.Published version of arXiv:2403.08603
+[6] Michel Crouzeix and César Palencia, The numerical range as a spectral set, 2017. Author preprint,
+    arXiv:1702.00668v1; numbering used here refers to this version.
+[7] Peter K. Friz and Martin Hairer, A course on rough paths, Universitext, Springer, Cham, [2020]
+    ©2020. With an introduction to regularity structures, Second edition of [ 3289027]. MR4174393
+[8] Gerald Teschl, Mathematical methods in quantum mechanics, Second, Graduate Studies in Math-
+    ematics, vol. 157, American Mathematical Society, Providence, RI, 2014. With applications to
+    Schrödinger operators. MR3243083
+
+
+
+
+                                                168
+

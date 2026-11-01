@@ -8965,3 +8965,25 @@ phase propagation and closed iE replace any false dense-E shortcut.
 Fresh private push of5caa2e8 failed NoRoute; no remote parity. Remaining
 CG/DS/RB/UL/upper/PB/OC/WS integration, whole-argument/final cold-read, wiki
 provenance and delivery gates remain open. Actual-constant goal ACTIVE.
+
+
+### Compact mean family TeX candidate frozen for integration review
+
+Added notes/integrated_compact_mean_family.tex with7complete proof blocks
+translating accepted CG Sections1-8 and all adopted clarifications. All
+111prior proof bodies unchanged by author execution. Common H1 trial
+precedes ground simplicity; actual E fractional norm and physical wave
+identity, both F constant duals and complementary growing-tail subtraction
+are retained. Actual nonseparable Psi/Z/v stay fixed as trial/mask grow.
+No stochastic shift/block event or asymptotic moment rate is inferred.
+
+Clean168-page build:0errors/undefined references/citations/overfull boxes.
+One pre-freeze inline covariance identity overflow fixed by display. All
+10new/context/bibliography pages159-168 inspected. Teschl SECOND-edition
+source statement pins/title/copyright and key verified; no full-book audit.
+Frozen packet:20full texts/16typed exact PNGs/37input files, media preflight
+PASS. Fresh known Le Max93%weekly/shortunknown, firstParty claude.ai doctor
+and actualOpus5.5READY verified. Full native Opus5.5/HIGH correspondence
+gate PENDING. No new Lean/compiler/package/HPC/contact;80facts22seams and
+L0PROPOSED unchanged. Goal ACTIVE; remaining raw block/lower/UL/upper/PB/
+OC/WS integration, final whole-paper/cold-read and delivery gates open.
