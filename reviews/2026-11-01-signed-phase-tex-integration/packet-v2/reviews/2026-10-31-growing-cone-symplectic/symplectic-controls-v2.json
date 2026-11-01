@@ -1,0 +1,49 @@
+{
+  "scope": "exact rational finite surrogate algebra, plus approximate norm diagnostics; no PDE projection, enclosure, stochastic estimate or raw flow result",
+  "cases": [
+    {
+      "case": "free",
+      "physical_Bessel_similarity_exact": true,
+      "symplectic_defect_exact": "0",
+      "determinant_exact": "1",
+      "norm_60digit_diagnostic": "1.1673387076711251746534096911467372"
+    },
+    {
+      "case": "signed_diagonal",
+      "physical_Bessel_similarity_exact": true,
+      "symplectic_defect_exact": "0",
+      "determinant_exact": "1",
+      "norm_60digit_diagnostic": "1.5925482970020218353149962895795642"
+    },
+    {
+      "case": "signed_offdiagonal",
+      "physical_Bessel_similarity_exact": true,
+      "symplectic_defect_exact": "0",
+      "determinant_exact": "1",
+      "norm_60digit_diagnostic": "1.3689806983773679143819895949847833"
+    },
+    {
+      "case": "mixed",
+      "physical_Bessel_similarity_exact": true,
+      "symplectic_defect_exact": "0",
+      "determinant_exact": "1",
+      "norm_60digit_diagnostic": "1.6261482584308529106748186208191142"
+    }
+  ],
+  "false_guards": [
+    {
+      "guard": "delete_velocity",
+      "symplectic_defect_exact": "1"
+    },
+    {
+      "guard": "nonsymmetric_force",
+      "symplectic_defect_exact": "28672/252725"
+    },
+    {
+      "guard": "same_Bessel_weights",
+      "symplectic_defect_exact": "19820416896/67755447845"
+    }
+  ],
+  "sympy_version": "1.14.0",
+  "mpmath_version": "1.3.0"
+}

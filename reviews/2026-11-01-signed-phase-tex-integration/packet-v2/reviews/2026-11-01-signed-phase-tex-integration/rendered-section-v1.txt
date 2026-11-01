@@ -1,0 +1,512 @@
+   Now Rδ ≤ 3/δ because δ < 1. The last condition in (32.2) is equivalent to Q(1 −
+a) > 2d. Dividing by 2Q > 0 gives eanchor > 0. Substitute this radius into (32.8) to
+obtain (32.9). The estimate holds at each fixed B, p, Q and model, uniformly in every
+deterministic residual projection. This proves Proposition 32.5.
+    These bounds concern the expected first-driver norm on E. They do not give an F
+estimate with constant initial-data columns. The radius substitution is numerical; cone
+coverage and source-to-point transfer require their separate arguments. No concentra-
+tion, infinite-head Gaussian integration or nonlinear moment upper bound follows from
+this section alone. The constants need not be uniform as Q, B tend to infinity or as
+model parameters approach an endpoint. For zero covariance, the actual drivers and
+stochastic bounds vanish directly.
+
+
+33      Signed rough static potentials and the physical
+        wave
+Fix the original nonzero covariance and a finite physical mask mR as in Section 29.
+For real q ∈ Cc∞ (Rd ) put Vq = mR (Γ ∗ q) and Lq (u, v, c1 , c2 ) = (0, Vq (u + c1 ), 0, 0) on
+F = E ⊕ R2 . Let VR be the operator-norm closure of these operators in K(F ). It is a
+closed real linear space. No positivity is imposed on q.
+Lemma 33.1 (The actual limiting multiplier). Every L ∈ VR determines a unique real
+V ∈ H −1/2 supported in supp mR . It has the actual multiplier action L(u, v, c1 , c2 ) =
+(0, V u + c1 V, 0, 0), where multiplication extends from tests to H 1/2 → H −1/2 . For k =
+∥L∥, its symmetric pairing obeys
+
+                               |vV (u, w)| ≤ k∥u∥H 1/2 ∥w∥H 1/2 .                       (33.1)
+
+Proof. Choose Lqn → L. The constant-displacement vector has norm one, so ∥Vqn −
+Vqj ∥H −1/2 ≤ ∥Lqn − Lqj ∥. Thus, Vqn → V in H −1/2 . Testing outside the fixed compact
+mask support preserves that support. Every zero column of Lqn remains zero. Its
+displacement multipliers converge in L(H 1/2 , H −1/2 ) to a map of norm at most k. For
+compact smooth u, smooth multiplication is bounded on H −1/2 by Lemma 18.5. Hence,
+Vqn u → V u there, identifying the limiting map on tests and then uniquely on H 1/2 by
+density. The constant column recovers V and proves uniqueness. On compact smooth
+u, w, the pairing is ⟨V, uw⟩, so it is symmetric. Its bound and symmetry extend by
+density. Complexification preserves the operator norm by splitting real and imaginary
+parts in the Hilbert norms. The pairing extends sesquilinearly to a Hermitian form; its
+diagonal is the sum of the real and imaginary diagonal values. This proves Lemma 33.1.
+
+
+Proposition 33.2 (Closed form and quarter-power phase). Let K ≥ max(1, ∥L∥) and
+c = 2 + K 2 . On complexified L2 the form
+
+                       qV (u) = ∥∇u∥22 − vV (u, u),       Q(qV ) = H 1 ,
+
+                                              206
+represents a unique self-adjoint HV . With A = HV + c and LK = 3(1 + K 2 ),
+                    A ≥ 1,       D(A1/2 ) = H 1 ,                                              (33.2)
+              1
+              2
+                ∥u∥2H 1 ≤ qV (u) + c∥u∥22 ≤ LK ∥u∥2H 1 ,                                       (33.3)
+                                                                             1/4
+             D(A1/4 ) = H 1/2 ,        2−1/4 ∥u∥H 1/2 ≤ ∥A1/4 u∥2 ≤ LK ∥u∥H 1/2 .              (33.4)
+The negative dual completion is H −1/2 . No H 2 operator domain is asserted.
+Proof. Put b = ∥u∥2 , z = ∥u∥H 1 . Fourier Cauchy–Schwarz and (33.1) give
+                   ∥u∥2H 1/2 ≤ bz,          |vV (u, u)| ≤ Kbz ≤ 12 z 2 + 21 K 2 b2 .
+The last scalar inequality is the weighted arithmetic–geometric mean inequality at
+weights 1/2, 1/2 and nonnegative bases z 2 , (Kb)2 , including zero norms. Since qV =
+z 2 − b2 − vV (u, u), it follows that
+     qV + cb2 ≥ 21 z 2 + (1 + K 2 /2)b2 ,         qV + cb2 ≤ 23 z 2 + (1 + 3K 2 /2)b2 ≤ LK z 2 .
+The lower bound dominates both z 2 /2 and b2 . Thus, this densely defined Hermitian form
+is semibounded and its shifted norm is equivalent to the complete H 1 norm. It is closed
+in the definition of [8, p. 80]. From [8, Theorem 2.14, p. 81, (2.63)], it represents a unique
+self-adjoint HV . This representation is independent of the admissible shift. From that
+book’s Theorem 3.6 and (3.51)–(3.53), p. 109, applied after shifting, we obtain (33.2).
+Here A ≥ 1 is initially its form lower bound.
+    Set B0 = 1 − ∆. On the common form domain, 21 B0 ≤ A ≤ LK B0 . We prove the
+needed square-root comparison rather than assuming an order rule for arbitrary operator
+powers. For T0 , S0 ≥ 1 with common form domain and qT0 ≤ qS0 , completing the square
+in the shifted form norm gives
+    ⟨f, (T0 + t)−1 f ⟩ = sup{2 Re⟨f, u⟩ − qT0 (u) − t∥u∥2 } ≥ ⟨f, (S0 + t)−1 f ⟩,         t > 0.
+                          u
+                    √          ∫︁ ∞
+The scalar identity x = π −1 0 t−1/2 x/(x + t) dt follows by t = xv 2 . Positive spectral
+                                     1/2     1/2
+integration and Tonelli now imply T0 ≤ S0 as forms, with their domain inclusions:
+I − t(T0 + t)−1 ≤ I − t(S0 + t)−1 . Apply this to (B0 , 2A) and (A, LK B0 ). Both op-
+erators in each pair are at least one. The resulting inequalities give (33.4), including
+equality of its domains. For v ∈ L2 the L2 -duality norm against ∥A1/4 u∥2 is ∥A−1/4 v∥2 :
+Cauchy–Schwarz gives the upper bound, and u = A−1/2 v gives equality after normal-
+ization. Duality and completion therefore identify the negative phase. Uniqueness of
+the form, resolvent and spectral calculus makes these constructions commute with real
+conjugation. This proves Proposition 33.2.
+Lemma 33.3 (The actual bottom and spectral wave). Put
+                                                 √︁
+                 β(V ) = inf 1 qV (u),   λ(V ) = −β(V ).
+                                   u∈H
+                                  ∥u∥2 =1
+
+Then β(V ) = inf spec HV and −K 2 ≤ β(V ) ≤ 0. The spectral wave on E has the bound
+                       ∥PVE (t)∥ ≤ 8(1 + K)2 (1 + t)eλ(V )t ,           t ≥ 0.                 (33.5)
+
+                                                  207
+Proof. For unit u, z = ∥u∥H 1 ≥ 1 gives qV (u) ≥ z 2 /2 − 1 − K 2 /2 ≥ −(1 + K 2 )/2 ≥ −K 2 .
+Conversely dilate a unit compact smooth bump and translate its whole support outside
+supp mR . Its potential pairing is zero and its kinetic energy tends to zero. Thus, β ≤ 0.
+Real and complex form infima agree because a complex diagonal splits into the two real
+diagonals. The spectral form formula in [8, (3.52)–(3.53)] identifies this form infimum
+with the spectral bottom. For clarity, a bounded spectral slice below the form lower
+bound would give a unit form test violating that bound. Conversely the form integral
+is bounded below by the spectral infimum. The spectrum is nonempty: a unit vector’s
+scalar spectral measure has mass one and a support point, and normalized projections
+onto arbitrarily small bounded neighborhoods give approximate eigenvectors, excluding
+a bounded inverse there. Hence, λ ≤ K and every spectral value h has h + c ≥ 2.
+                                                                                                1/4
+    Use the phase norm ∥(u, v)∥2EA = ∥A1/4 u∥22 + ∥A−1/4 v∥22 . With MK = LK ,
+the preceding proposition and its √︁    dual give MK−1 ∥z∥E ≤ ∥z∥EA ≤ MK ∥z∥E . The
+                                2
+condition-number
+     √          √ cost√ is MK =          3(1 + K 2 ) ≤ 2(1 + K). Define Ct (h), St (h) by
+                                                                         √            √      √
+cos(t h), sin(t h)/ h for h > 0, by 1, t at zero, and by cosh(t −h), sinh(t −h)/ −h
+for h < 0. In the EA isometry the wave matrix is
+                            (︃                      √               )︃
+                                    Ct (h)
+                                         √            h + c St (h)
+                                                                       .                    (33.6)
+                               −hSt (h)/ h + c          Ct (h)
+                                                                              −1/2
+                                                                                      √
+For √h ≥ 0, the entries
+                    √    are  bounded    using |C t | ≤ 1,  |S t | ≤ min(t,
+                                                                     √      h      ),  h + c|St | ≤
+1 + c t and |hSt |/ h + c ≤ 1; at zero the   √ off-diagonals√are λt c t, 0. For β√≤ h < 0, they
+are bounded using |Ct | ≤ e , |St | ≤√te , h + c|St | ≤ c te and |hSt |/ h + c ≤ Keλt .
+                             λt           λt
+
+There is no division by λ. Since c ≤ 2K, each entry is at most 2(1 + K)(1 + t)eλt .
+Bounded Borel calculus from [8, Theorem 3.1, pp. 102–103, (3.18)–(3.21)], the two-
+by-two matrix norm bound and the condition-number cost give (33.5). Functions can
+be set to zero off the spectral support. Spectral dominated convergence gives strong
+continuity, and scalar addition identities give the group property. The same matrix and
+bounds apply on the weighted graph levels D(A1/2 ) × L2 and D(A) × D(A1/2 ). Spectral
+cutoffs justify their extensions and continuity there. This proves Lemma 33.3.
+Proposition 33.4 (Identification with the actual physical wave). The spectral wave in
+Lemma 33.3 is the actual bounded-perturbation, equivalently Young, physical wave on E.
+Its actual extension on F satisfies
+
+                     ∥PV (t)∥L(F ) ≤ 16(1 + K)4 (1 + t)3 eλ(V )t ,     t ≥ 0.               (33.7)
+
+Both constant response columns are included.
+Proof. The representation (2.63) tested against compact smooth functions gives HV u =
+−∆u − V u in distributions for u ∈ D(HV ). Such u lies in H 1 and V u ∈ H −1/2 .
+Consequently (1 − ∆)u = HV u + V u + u ∈ H −1/2 , so D(HV ) ↪→ H 3/2 . The embedding is
+graph-continuous: by (33.3), ∥u∥2H 1 ≤ 2⟨Au, u⟩ ≤ ∥Au∥22 + ∥u∥22 , and the distributional
+equation bounds the H 3/2 norm by this graph norm.
+    The generator of the free E group is A0 (u, v) = (v, ∆u) on H 3/2 × H 1/2 . Indeed,
+differentiate its Fourier matrix after a frequency cutoff, dominate by that graph norm and
+
+                                               208
+remove the cutoff. Conversely any strong generator derivative has those distributional
+components; they require v ∈ H 1/2 and ∆u ∈ H −1/2 , hence u ∈ H 3/2 . No operator-norm
+differentiability of the group is used.
+    Start spectral data in D(A) × D(A1/2 ) = D(HV ) × H 1 . The preceding graph-level
+estimates give continuous graph trajectories and C 1 trajectories in H 1 × L2 , with ut = v,
+vt = −HV u. This follows first on bounded spectral cutoffs and then uniformly on finite
+horizons in the graph norms by spectral dominated convergence and [8, Theorem 3.2,
+p. 104, (3.29)–(3.33)]. The projections 1[1,n] (A) approximate every graph datum and the
+same weighted matrix bounds control all cutoff tails on those horizons. Graph embedding
+gives continuity in D(A0 ) and zt = A0 z + LE z in E, where LE = L|E . The strong-group
+chain rule on this domain yields
+                                               ∫︂ t
+                         SE (−t)z(t) = z(0) +       SE (−s)LE z(s) ds.
+                                                0
+
+Graph data are dense in E: spectral cutoffs make D(A) dense in D(A1/2 ) = H 1 , and H 1
+is dense in both H 1/2 and H −1/2 . Boundedness on finite horizons extends this identity
+to all E. Volterra uniqueness by Picard iteration identifies the physical wave. No
+D(A3/4 ) = H 3/2 assertion is needed.
+    On F , bounded L and strongly continuous SF similarly define a unique Duhamel flow.
+On [0, T ], the nth Volterra term has bound CTn+1 ∥L∥n T n /n!. Uniqueness makes horizons
+                                                                        ∫︁ t
+consistent and gives composition. Its interaction primitive is 0 SF (−s)LSF (s) ds. Com-
+pactness of L, and strong continuity of the group and its adjoint, give norm-continuity
+of the conjugated compact operator, as in Proposition 29.7. Thus, this primitive is
+Lipschitz and its ordinary equation is exactly the actual Young equation.
+    For initial (e, c1 , c2 ) the constant coordinates are (c1 + tc2 , c2 ) and the E component
+is                                     ∫︂ t
+                               E
+                             PV (t)e +      PVE (t − s)(0, V (c1 + sc2 )) ds.
+                                    0
+
+The bounded E-valued Fubini argument proving (23.11) applies: substitute the E
+Duhamel formula under this integral and interchange the absolutely bounded finite
+time triangle. It solves the full system, and uniqueness identifies it. No ground pos-
+itivity
+∫︁ t      or gap is used. The forcing norm is at most K(1 + s)|(c1 , c2 )|. Since λ ≥ 0 and
+  0
+     (1 + t − s)(1 + s) ds ≤ (1 + t)3 , the full norm is at most
+
+                       (1 + t)3 eλt {8(1 + K)2 ∥e∥ + [8K(1 + K)2 + 1]|(c1 , c2 )|}.
+                                         √
+Scalar Cauchy–Schwarz and                  82 + 92 < 13 bound this by 13(1 + K)3 (1 +
+t)3 eλt ∥(e, c1 , c2 )∥F . This implies the stated sufficient bound. This proves Propo-
+sition 33.4.
+
+
+
+
+                                             209
+34     The actual symplectic phase and block-mean
+       baseline
+Retain the original model, covariance amplitude, physical mask mR and real E = H 1/2 ×
+H −1/2 . Fix finite R, T > 0 and admissible exponents as in (19.1). Let M = MR (W ) be
+the given-noise first interaction path on E, and M ρ its retaining-source paths from
+Proposition 20.2 and the source construction. Here ρ is the positive heat/Laplace
+smoothing pair. For fixed Φ in the full positive-time raw HW and real c set
+                    Z = W (Φ),    DΦ = E[ZM ],     DΦρ = E[ZM ρ ],
+                                                                                            (34.1)
+                    D = cM + DΦ ,    Dρ = cM ρ + DΦρ .
+All these are actual operator paths on E. The covariance mean is not a pointwise raw
+potential. Write UD for left Young evolution and PD (t, s) = SE (t)UD (t, s)SE (−s).
+Lemma 34.1 (Bounded symplectic form and the free wave). There is a bounded iso-
+metric skew-adjoint JE on E, with JE2 = −I, such that
+
+  ω(z, w) = ⟨z, JE w⟩E = ⟨u, g⟩H 1/2 ,H −1/2 − ⟨f, v⟩H 1/2 ,H −1/2 ,   z = (u, v),   w = (f, g).
+
+The actual free group preserves ω. For bounded real smooth b, the force B(b)(u, v) =
+(0, bu) obeys ω(B(b)z, w) + ω(z, B(b)w) = 0.
+Proof. The balanced map Cbal (u, v) = (Λ1/2 u, Λ−1/2 v) is an onto real isometry to L2 ×L2 .
+                                            −1
+Define Jsymp (q, p) = (p, −q) and JE = Cbal    Jsymp Cbal . This gives all stated operator
+properties and JE (f, g) = (Λ−1 g, −Λf ). The two displayed dualities follow from the
+balanced L2 pairing. No L2 pairing of a general distributional velocity is taken.
+   In balanced Fourier coordinates, the free matrix is
+                           (︃                              )︃
+                                cos(tk)     ⟨ξ⟩ sin(tk)/k
+                  Wt (ξ) =                                    ,   k = |ξ|.
+                             −k sin(tk)/⟨ξ⟩     cos(tk)
+
+At zero it is ( 10 1t ), by the continuous sine quotient. Direct matrix multiplication gives
+WtT Jsymp Wt = Jsymp , since its determinant is cos2 (tk) + sin2 (tk) = 1, also at zero.
+The entries are real, even and bounded on finite time horizons. Integrating the identity
+against real-phase Fourier vectors with Hermitian symmetry is legitimate by L2 Cauchy–
+Schwarz. It gives ω(SE (t)z, SE (t)w) = ω(z, w) on all E. Equivalently one may first use
+Schwartz phases and then density. No rough generator derivative or frequency-zero trace
+is used.
+    Finally ∥bu∥H −1/2 ≤ ∥bu∥2 ≤ ∥b∥∞ ∥u∥H 1/2∫︁. Actual∫︁ duality for these L2 functions
+gives the absolutely integrable cancellation − f bu + ubf = 0. This is skewness for
+ω, not for the E Hilbert inner product. This proves Lemma 34.1.
+Lemma 34.2 (Actual covariance means and source primitives). The expectations
+in (34.1) are Bochner defined and
+
+                       ∥DΦρ − DΦ ∥C θ ≤ ∥Φ∥HW ∥M ρ − M ∥L2 C θ −→ 0.                        (34.2)
+
+                                                210
+For each positive ρ, there is a deterministic real time-continuous, spatially smooth hρΦ
+such that                       ∫︂ t
+                         DΦρ (t) =       SE (−r)B(mR hρΦ (r))SE (r) dr.                  (34.3)
+                                     0
+This is the actual statewise primitive and defines a Lipschitz operator path. The com-
+bined source coefficient is bρ = mR (cY ρ + hρΦ ).
+
+Proof. Separable Gaussian path moments give E∥ZM ∥C θ ≤ ∥Φ∥HW ∥M ∥L2 C θ , and the
+same holds for sources. Bochner Cauchy–Schwarz gives (34.2). Covariance contraction
+also gives the uniform source bound ∥DΦρ ∥C θ ≤ ∥Φ∥HW ∥M ∥L2 C θ .
+    The retaining construction has an isometry jsrc : HW → G and an isonormal process I
+with I(jsrc h) = W (h). Its actual source pointfield is Y ρ (t, x) = I(vρ;t,x ), with continuous
+G-valued spatial derivatives at positive widths. Consequently
+
+                        hρΦ (t, x) = E[W (Φ)Y ρ (t, x)] = ⟨jsrc Φ, vρ;t,x ⟩G
+
+has the claimed regularity. Bounded linear testing commutes with those derivatives.
+After multiplication by mR the coefficient has one compact support and bounded deriva-
+tives on [0, T ].
+    On Schwartz states, the row of the right side of (34.3) is the integral of hρΦ against
+                                                                                ρ
+        √︁ masked source wave product. Ordinary Fubini is justified by |E[ZY (t, x)]| ≤
+the literal
+∥Φ∥HW E|Y ρ (t, x)|2 and bounded point variance on this fixed compact set at positive
+widths. The source test and indicator approximation extends this to the actual com-
+pleted rows by Gaussian Cauchy–Schwarz and covariance contraction. Hence, this row
+is the row of E[ZM ρ (t)]. Countable dense states and rational times, then continuity,
+identify the operator path. The uniformly bounded integrand gives its Lipschitz bound.
+This identifies the combined source coefficient exactly. The combined source is generally
+noncentered and the mask occurs once. This proves Lemma 34.2.
+
+Proposition 34.3 (Actual source conservation). At each fixed positive ρ, on one
+probability-one set for the fixed c, Φ, R, T , the physical source flow satisfies
+
+                      PDρ (t, s)∗ JE PDρ (t, s) = JE ,      0 ≤ s ≤ t ≤ T.
+
+Proof. Intersect the source coefficient regularity event with the event identifying its
+actual first primitive with the ordinary primitive for all times and states. The source
+construction supplies both at this fixed ρ. On their intersection bρ has a common compact
+support, is continuous in supremum norm and is uniformly bounded on [0, T ]. Thus,
+Cb (r) = SE (−r)B(bρ (r))SE (r) is uniformly bounded and strongly continuous on states.
+Lemma 34.1 gives ω(Cb (r)z, w) + ω(z, Cb (r)w) = 0 for all r, z, w.
+    The actual source ∫︁and mean primitive identities identify the Young state equation
+                          t
+with U (t, s)e = e + s Cb (r)U (r, s)e dr. Indeed, replace each driver increment in a
+Young sum by its statewise integral. The error is bounded by the uniform coefficient
+bound times the uniform continuity error of U on the partition. Each state trajectory
+is therefore C 1 , with derivative Cb (t)U (t, s)e, by the strong-integral difference quotient.
+
+                                                211
+Differentiating the bounded bilinear form ω(U (t, s)e, U (t, s)f ) gives zero. This holds on
+the same path set for all states and time pairs, since the bounded ordinary evolution
+is defined there on all E. Free conjugation gives the displayed physical identity. No
+uncountable intersection of state-dependent null sets or derivative of the free generator
+on a rough state was used. This proves Proposition 34.3.
+
+Proposition 34.4 (Raw conservation, inverse and norm baseline). For the fixed param-
+eters in (34.1), on one probability-one set,
+
+        PD (t, s)∗ JE PD (t, s) = JE ,   ∥PD (t, s)∥ ≥ 1,    0 ≤ s ≤ t ≤ T.          (34.4)
+
+The flow is invertible. For c = 0 these assertions are deterministic for every fixed Φ.
+                                                                           √
+Proof. Source contraction and the given-noise driver bound give uniform p moments of
+M ρ at fixed R, T . The deterministic means satisfy (34.2) and its uniform bound. Thus,
+                                                          √
+Dρ → D in every finite Lp C θ , and ∥Dρ ∥Lp C θ ≤ Cc,Φ,R,T p. The Gaussian moment-series
+argument gives uniform square-exponential moments of these shifted path norms. These
+are Gaussian paths plus deterministic shifts, not centered sources.
+    Young local Lipschitz dependence gives uniform interaction evolution convergence in
+probability on every driver ball. The uniform path tails make the complement small. The
+global growth bound CT exp{CT (1 + ∥Dρ ∥C θ )1/θ }, with 1/θ < 2, and square-exponential
+tails give all finite evolution moments uniformly in ρ. Uniform integrability upgrades
+convergence to every finite Lp of the uniform time-triangle operator-difference norm. The
+generic Young arguments apply directly on L(E): bounded multiplication has norm
+one, exactly as on F . Physical differences are the bounded linear image V (t, s) ↦→
+SE (t)V (t, s)SE (−s) of interaction differences. Its separable strongly measurable image
+proves measurability of the triangle supremum norm. No operator-norm continuity of
+the physical free group is assumed.
+    The same actual E/F restriction holds for mean shifts. The original drivers satisfy
+AF i = iM and AρF i = iM ρ . Bounded Bochner expectation with Z gives this intertwining
+for their covariance means. Applying i to the Young sums and using state uniqueness
+gives UF i = iUE , hence PF i = iPE after free conjugation. The inclusion is closed and
+isometric; E is not dense in F .
+    Choose a countable source sequence and a subsequence with expected squared uni-
+form physical difference at most 2−4n . Markov’s inequality makes the probabilities of
+a difference exceeding 2−n summable. The union bound for all events after N tends
+to zero, so the differences tend to zero uniformly in operator norm over all time pairs
+almost surely. Intersect with the countably many source conservation events. Then
+
+                   ∥Pn∗ JE Pn − P ∗ JE P ∥ ≤ ∥Pn − P ∥∥JE ∥(∥Pn ∥ + ∥P ∥)
+
+passes the identity to PD simultaneously on the whole triangle. Only the fixed param-
+eters are concerned; no common path set over uncountably many Φ, c, R, T is claimed.
+For c = 0 the means and evolutions are deterministic, so conservation is deterministic
+for each Φ.
+
+                                            212
+    Since ∥JE ∥ = 1, the identity implies 1 ≤ ∥PD (t, s)∥2 . Surjectivity does not follow
+from this identity alone in infinite dimension. Instead, the actual Young evolution is
+invertible: on short contraction pieces ∥U − I∥ ≤ 1/3, the Neumann series gives the
+inverse, then finite products and the free group inverse give the full inverse. This also
+covers Φ = 0 and the free case. At a fixed 0 < δ < 1, one may take the actual reference
+Wfast = W ◦ Tδ,0 , R = δ −1 + 2, T = δ −1 , c = gδ , Φ = 0. This gives the growing-cone
+flow’s norm baseline pointwise in δ, with no uniform moment or mean budget. This
+proves Proposition 34.4.
+
+Proposition 34.5 (The exact completed block mean). Use the true partition
+B, δ, N, sm , ℓm of Section 29, with integer B ≥ 1. Let iI : HI → HW be the supported
+closed inclusion and Tm = Tδ,m : Hfast → HW the actual raw isometry; Hfast has the
+same original covariance in fast coordinates. For Φ ∈ HI set
+
+             Wm (f ) = W (Tm f ),       ϕm = δ −a/2 Tm∗ iI Φ,      TE Φ = i∗ T Φ i,
+
+where T is the actual full F mean of Proposition 29.5. Define
+                                ∫︂ min(u,ℓm )
+                Hm,E (Φ)(u) =                   SE (−v)TE Φ(sm + δv)SE (v) dv.        (34.5)
+                                 0
+
+With Mm = MR (Wm ) and Dϕm (u) = E[Mm (u)Wm (ϕm )], one has
+
+                   Dϕm (min(u, ℓm )) = Hm,E (Φ)(u),             0 ≤ u ≤ B.            (34.6)
+
+Consequently the actual pure-mean endpoint obeys
+
+                             ∥SE (ℓm )UHm,E (Φ) (ℓm , 0)∥ ≥ 1.
+
+Proof. The raw pullback (25.2) has covariance factor δ a−2 δ 2 δ −a = 1, hence respects
+nulls and extends isometrically from fast to slow raw space. Its Hilbert adjoint is a
+contraction. Thus, ∥ϕm ∥ ≤ δ −a/2 ∥Φ∥ is finite at fixed δ, without a uniform control-
+radius assertion. The actual fast noise remains on the same given W . For applying
+the preceding propositions, construct retaining sources with Wm as the given reference,
+extending by an independent auxiliary source while retaining all base variables. No
+slow-source pullback is presumed; the raw covariance direction is independent of the
+auxiliary realization.
+    The mean T Φ has range in closed iE. Bounded compression passes its strong measur-
+ability and Lr bound to TE Φ. Choose the full parameter package (29.8). Its intervals are
+nonempty because θ < 1 − a/2 and θ > 1/2; p only instantiates that package here. The
+compact-conjugation argument makes (34.5) a Bochner integral, and the Lr primitive
+estimate gives C θ , since 1 − 1/r > θ. Affine pullback preserves null sets.
+    The completed identity (29.9) at raw projection rank zero gives, for 0 ≤ u ≤ ℓm ,
+                                                  √
+                          E[gδ AF,m (u)W (iI Φ)] = δ Hm,F (Φ)(u).
+
+
+                                                 213
+Compress through i using the actual driver intertwining, SF i = iSE , and the mean range
+in iE preserved√by SF . Bochner expectation commutes with this bounded compression.
+Since gδ δ a/2 = δ and gδ > 0, division gives the unscaled covariance
+
+                    E[Mm (u)W (iI Φ)] = δ a/2 Hm,E (Φ)(u),      u ≤ ℓm .             (34.7)
+                              √
+The factor here is δ a/2 , not δ. Completion in the earlier covariance identity permits
+every Φ ∈ HI , without positivity or smoothness.
+    The operator Tm Tm∗ is the orthogonal projection onto the raw isometry’s closed range.
+Thus, W ((I − Tm Tm∗ )iI Φ) is orthogonal to the entire fast first chaos. Every continuous
+linear coordinate of Mm is an L2 limit of finite Wm -basis sums. Its covariance with this
+difference vanishes. Bochner covariance exists by L2 path moments, and bounded linear
+functionals separate its values. Hence,
+
+                       E[Mm (u)W (iI Φ)] = E[Mm (u)Wm (Tm∗ iI Φ)].
+
+Multiply by δ −a/2 and use (34.7) to obtain (34.6) on [0, ℓm ], then stop both sides. No
+unstopped equality beyond ℓm is asserted.
+    Apply Proposition 34.4 with c = 0, reference Wm , horizon B and the deterministic
+direction ϕm . Equality of drivers before ℓm and Young uniqueness give the same actual
+endpoint, so its norm is at least one. If ℓm = 0, the endpoint is the identity and its norm
+is one. The radius may be chosen δ −1 + 2 after fixing δ; all identities are fixed-parameter
+instances. This proves Proposition 34.5.
+    For zero covariance the drivers and covariance means vanish, and the claims reduce
+directly to the free identity in Lemma 34.1. These results give a norm baseline and
+its exact completed mean application. They provide no uniform control-radius budget,
+stochastic moment upper bound or nonlinear product ratio by themselves.
+
+
+35     Targets
+Goal 35.1 (Upper bound at the correct scale). Under Hypothesis 1.1, prove
+lim supt→∞ t−κ log Eu2 (t, x) < ∞, ideally with an explicit constant.
+
+
+ Theorem 13.8 establishes the unchanged full upper goal for every admissible dimen-
+ sion and homogeneous covariance. The interval estimate passed scoped correctness
+ review. The preceding independent mild construction passed correctness review.
+ The explicit hypothesis/object revision and independent fixed-order construction
+ and their consumers passed their own scoped Opus5.5/HIGH review. A fresh whole-
+ paper cold read remains required. The earlier explicit bounds for 0 < α ≤ 1 remain
+ available. The sharp constant and final whole-paper cold read remain open.
+
+
+
+
+                                            214
+Goal 35.2 (Sharp second-moment constant). Under Hypothesis 1.1, derive a finite con-
+stant C2 (γ, α0 ) and prove, for every fixed x ∈ Rd ,
+
+                            lim t−κ log Eu2 (t, x) = C2 (γ, α0 ).
+                            t→∞
+
+A variational characterization must specify its full domain, covariance amplitude, ki-
+netic coefficient and Gaussian action. Derive further evaluations and bounds from this
+formula. For zero covariance, u(t, x) = 1 and C2 (0, α0 ) = 0.
+
+
+ Goal 35.2 follows Le’s revised direction of 2026-10-31: derive the actual constant,
+ whatever the computation gives. The original proposed bounds with endpoints
+ 2(4−α)/(3−α) L∗ and 2(4−α)/(3−α) L∗ remain comparisons with Conjecture 2.3. Matching
+ those endpoints or closing the source’s variational gap is not a completion require-
+ ment. No correction of the source’s normalization or equality of its energy domains
+ is adopted.
+
+
+
+36     Established steps and open questions
+1. The mixed expansion and the first obstruction. Section 3 proves the complete
+   nonnegative mixed expansion and an independent convergent solution series. It cor-
+   rects the time-uniformity issue in the source’s intermediate estimate. The common-
+   per-pairing majorant has exponent ρ > κ and cannot give the desired scale. This is a
+   restriction on that majorant, not on the model or all uses of the source’s Theorem 3.1.
+
+2. Calibrations. Section 4 gives the finite white and Riesz coefficients. As α0 ↓ 0,
+   the target exponent becomes (4 − α)/(3 − α), the static exponent. Proposition 2.4
+   is unconditional; its numerical 2L∗ specialization requires the stated first-moment
+   premise. Comparisons with the Skorohod model identify time exponents only.
+
+3. The full upper scale. Section 5 gives explicit bounds when α ≤ 1. Section 13
+   proves the full homogeneous-covariance upper scale by independent interval fields,
+   local Gaussian-degree estimates and dyadic covariance domination. The latter proof
+   does not assume an endpoint representation of the spatial covariance.
+
+4. The sharp constant remains open. Goal 35.2 requires a lower bound beyond
+   the unconditional Jensen comparison and a matching sharp upper constant. The
+   new candidate in Section 14 supplies a static lower comparison for all admissible
+   temporal exponents and a strict actual-mean gap only near the static endpoint; these
+   proofs passed their own scoped review. A representation using two ordered chains
+   is a possible research direction, not a proved result of these notes. The intended
+   normalization of the source’s first-moment constants also remains to be clarified.
+
+
+
+
+                                            215
+References
+[1] Raluca M. Balan and Daniel Conus, Intermittency for the wave and heat equations with fractional
+    noise in time, Ann. Probab. 44 (2016), 1488–1534 (); MR3474476
+[2] Xia Chen, Exponential asymptotics for Brownian self-intersection local times under Dalang’s con-
+    dition, Electron. J. Probab. 28 (2023), Paper No. 119, 17 (); MR4660700
+[3]          , Time-dependency     in   hyperbolic   anderson   model:   Stratonovich   regime,   Preprint
+      arXiv:2510.01412 (2025) ()
+[4]          , Time-dependency in hyperbolic Anderson models: Stratonovich regime, 2026. 64-
+      page author manuscript, submitted to Ann. Appl. Probab.; retrieved 2026-10-26, SHA-256
+      5f7385ca451e643a1f3ff31835e4ee52b2708b5d2e3652eec3fb5d3958b97b6c; supersedes Theorem 1.2 of
+      arXiv:2510.01412v1.
+[5] Xia Chen and Yaozhong Hu, Hyperbolic anderson equations with general time-independent gaus-
+    sian noise: Stratonovich regime, Ann. Probab. 53 (2025), 2144–2195. Available at 2403.08603 ();
+    MR4988274.Published version of arXiv:2403.08603
+[6] Michel Crouzeix and César Palencia, The numerical range as a spectral set, 2017. Author preprint,
+    arXiv:1702.00668v1; numbering used here refers to this version.
+[7] Peter K. Friz and Martin Hairer, A course on rough paths, Universitext, Springer, Cham, [2020]
+    ©2020. With an introduction to regularity structures, Second edition of [ 3289027]. MR4174393
+[8] Gerald Teschl, Mathematical methods in quantum mechanics, Second, Graduate Studies in Math-
+    ematics, vol. 157, American Mathematical Society, Providence, RI, 2014. With applications to
+    Schrödinger operators. MR3243083
+
+
+
+
+                                                     216

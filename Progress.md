@@ -9471,3 +9471,14 @@ No uniformbudget/CM/concentration/nonlinearpointupper/exactlimit follows
 fromS/SPalone. RemainingBT/US/GC/UR/PG/PB/OC/WS/wholeargument/coldread/
 lit/wiki/privateparity OPEN. Freshroot/activefetch andfocused<HUB>
 readchecksNoRoute; no sync/parity orsharedscienceedit claimed.
+
+
+S/SP native dryrunv1 refused BEFOREprovider (exit5,0calls): prompt's
+concatenatedlabel Ssourcefullnotes/upper-signed-static.md was parsed as
+a missingliteralpath. Full source was already inpacket under correctpath.
+Preserved refusal/untouched nativearchive withreadbackhash. Versioned
+prompt-v2/packet-v2 fixes filename prose with explicit spaces/fullpaths;
+no science/TeX/PDF/hypothesis change or preflightwaiver. Existing native
+workspaceguard correctlycaught the dispatch defect; this is not a review.
+Next dryrun/newnative directory required. All63inputhashes must be checked
+againstnewmetadatafreeze; finalsource/PDF stillmatches2cca41c.
