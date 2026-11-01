@@ -125,8 +125,13 @@
   archive files verified. Clean160-page PDF;100prior bodies unchanged.
   Actual constant-phase Young flow and W-measurable average now close
   the exact conditional masked-L2 premise. Fixed R,T, no asymptotic rate.
-- **Immediate next:** integrate the compact-mean ground family and full-F
-  complement (CG), then DS/raw-block lower/UL and the remaining upper/PB/OC/WS.
+- **Accepted CG spectral TeX integration:** scientific6c52b5f,
+  Opus5.5/HIGH22passing checks499.075s,no required repairs. Seven proof
+  blocks;37bindings/20full texts/16exact images/52raw archive files verified.
+  Clean168-page PDF;111prior bodies unchanged. Actual full-F spectral
+  complement and original fixed-cost common trial, no random moment rate.
+- **Immediate next:** jointly integrate exact scaling and actual raw block
+  lower bound (DS/RB), then UL and the remaining upper/PB/OC/WS.
   Keep the frozen PB/OC/WS result set and full original model scope. The
   import interfaces are mapped; avoid repeating that inventory as a new round.
   Continue consolidating complete proofs into TeX/PDF, with clean builds
@@ -155,7 +160,7 @@
  rerun for promotion, new package/companion/lease/registry/HPC action.
 - **Git:** current mathematical work is in the isolated private research
   clone, branchresearch/fixed-mask-young-20261031. Latest result source
-  is95d7515; latest accepted TeX integration source5caa2e8, with subsequent
+  is95d7515; latest accepted TeX integration source6c52b5f, with subsequent
   adoption records separate.
   Fresh fetch/push failed with <HUB>NoRoute. Prior <HUB> parity
   receipts are historical, not evidence of current synchronization.
@@ -8987,3 +8992,38 @@ and actualOpus5.5READY verified. Full native Opus5.5/HIGH correspondence
 gate PENDING. No new Lean/compiler/package/HPC/contact;80facts22seams and
 L0PROPOSED unchanged. Goal ACTIVE; remaining raw block/lower/UL/upper/PB/
 OC/WS integration, final whole-paper/cold-read and delivery gates open.
+
+
+### Accepted compact mean spectral integration: scientific6c52b5f
+
+Actual native Opus5.5/HIGH22passing checks (16PASS,6PASS_WITH_NOTES),
+499.075seconds,no required repairs. Native72823 TERMINAL0; accepted and
+coverage true. Canonical passing/correspondence/read-ledger validation
+PASS. All37five-way inputs and52raw archive file members verified;20full
+texts/16exact PNGs delivered. Fenced raw report preserved verbatim; native
+canonical JSON retained separately, no recovery. Six optional findings
+adjudicated in reviews/2026-11-01-compact-mean-tex-integration/adjudication-v1.md.
+No final source/PDF edits. Clean168-page build;7new proof blocks,111prior
+bodies unchanged. No new Lean or compiler action;80facts22seams unchanged.
+
+The actual compact mean family now has integrated ground/gap/H2,
+quarter-power global-E, spectral/ordinary-wave, full-F constant-forcing
+projection/positive margins and complementary wave proofs. Both constant
+coefficients and decaying branch are retained. Every positive nonseparable
+raw Psi yields a common finite-mask trial with ORIGINAL Psi/Z/v unchanged.
+No shift/event, stochastic product or moment asymptotic follows here.
+
+Scope clarification retained: homogeneous positive ball masses refer to
+ORIGIN-centered B_rho. No translated-ball positivity is adopted; white
+and invariant-direction measures disprove that broader reading. Before
+whole-paper review, explicitly reword that phrase and repeat the already
+defined [0,1]/plateau/support mask properties in Section23. Scientific
+trial uses only the correct origin-centered mass and existing actual mask.
+
+Next DS/RB target frozen in reviews/2026-11-01-raw-lower-tex-integration/.
+Complete accepted scaling and raw-block proof/interfaces read, six old
+finite source/type bindings matched, nine finite facts available without
+recompilation. Preserve SAME W/Z/raw half-cost, correct amplitude, all
+full-phase blocks/remainder, source limits before delta, and e_rate/B order.
+Fresh private push failed NoRoute; final whole-paper/cold-read/wiki/remote
+delivery remain open. Actual-derived-constant goal ACTIVE.

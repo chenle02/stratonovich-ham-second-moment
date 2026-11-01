@@ -1,0 +1,178 @@
+```json
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "notes/integrated_compact_mean_family.tex: lines 1-573, whole file",
+    "notes/compact-mean-ground-family.md: lines 1-459, whole file",
+    "notes/integrated_constant_phase_young.tex: lines 1-498, whole file",
+    "reviews/2026-11-01-moment-young-tex-integration/adjudication-v1.md: lines 1-63, whole file",
+    "reviews/2026-10-31-compact-mean-ground/scientific-adjudication-v1.md: lines 1-56, whole file",
+    "reviews/2026-10-31-compact-mean-ground/primary-source-custody-v1.json: lines 1-24, whole file",
+    "reviews/2026-10-31-compact-mean-ground/source-crosswalk-v1.md: lines 1-42, whole file",
+    "reviews/2026-10-31-compact-mean-ground/falsification-v1.md: lines 1-48, whole file",
+    "reviews/2026-10-31-compact-mean-ground/constant-projection-v0.json: lines 1-306, whole file",
+    "reviews/2026-10-31-compact-mean-ground/fixed-profile-trial-v0.json: lines 1-118, whole file",
+    "reviews/2026-11-01-compact-mean-tex-integration/target-v1.md: lines 1-73, whole file",
+    "reviews/2026-11-01-compact-mean-tex-integration/target-freeze-v1.json: lines 1-13, whole file",
+    "reviews/2026-11-01-compact-mean-tex-integration/source-preflight-v1.json: lines 1-37, whole file",
+    "reviews/2026-11-01-compact-mean-tex-integration/crosswalk-v1.md: lines 1-22, whole file",
+    "reviews/2026-11-01-compact-mean-tex-integration/worker-honesty-v1.md: lines 1-38, whole file",
+    "reviews/2026-11-01-compact-mean-tex-integration/prompt-v1.md: lines 1-88, whole file",
+    "reviews/2026-11-01-compact-mean-tex-integration/model-context-v1.tex.txt: lines 1-108, whole file",
+    "reviews/2026-11-01-compact-mean-tex-integration/bibliography-input-v1.txt: lines 1-18, whole file",
+    "reviews/2026-11-01-compact-mean-tex-integration/build-v1.json: lines 1-52, whole file",
+    "reviews/2026-11-01-compact-mean-tex-integration/rendered-section-v1.txt: lines 1-516, whole file",
+    "reviews/2026-11-01-compact-mean-tex-integration/page-v1-159.png: full image viewed",
+    "reviews/2026-11-01-compact-mean-tex-integration/page-v1-160.png: full image viewed",
+    "reviews/2026-11-01-compact-mean-tex-integration/page-v1-161.png: full image viewed",
+    "reviews/2026-11-01-compact-mean-tex-integration/page-v1-162.png: full image viewed",
+    "reviews/2026-11-01-compact-mean-tex-integration/page-v1-163.png: full image viewed",
+    "reviews/2026-11-01-compact-mean-tex-integration/page-v1-164.png: full image viewed",
+    "reviews/2026-11-01-compact-mean-tex-integration/page-v1-165.png: full image viewed",
+    "reviews/2026-11-01-compact-mean-tex-integration/page-v1-166.png: full image viewed",
+    "reviews/2026-11-01-compact-mean-tex-integration/page-v1-167.png: full image viewed",
+    "reviews/2026-11-01-compact-mean-tex-integration/page-v1-168.png: full image viewed",
+    "reviews/2026-10-31-compact-mean-ground/pages/teschl2014-title.png: full image viewed",
+    "reviews/2026-10-31-compact-mean-ground/pages/teschl2014-copyright.png: full image viewed",
+    "reviews/2026-10-31-compact-mean-ground/pages/teschl2014-p140.png: full image viewed",
+    "reviews/2026-10-31-compact-mean-ground/pages/teschl2014-p141.png: full image viewed",
+    "reviews/2026-10-31-compact-mean-ground/pages/teschl2014-p258.png: full image viewed",
+    "reviews/2026-10-31-compact-mean-ground/pages/teschl2014-p273.png: full image viewed",
+    ".review/required-sources.json: lines 1-159, read as the read plan only, no read credit"
+  ],
+  "checks": [
+    {
+      "claim": "Parent application: Proposition 22.8 with h=V_sigma, g=0 gives the actual physical F flow; finite horizons and autonomy give all t>=0.",
+      "verdict": "PASS",
+      "reason": "A time-constant V_sigma lies in C([0,T];C_c^infinity(K)). At g=0 the driver is the Lipschitz primitive A_h, so it is C^theta with A_h(0)=0. Proposition 22.4 gives U, and Lemma 22.6's Riemann-sum argument, carried over by Proposition 22.8, gives the statewise F Duhamel equation with iB_F(V). The force is +V u, so H=-Delta-V, which agrees with (1.1). Picard uniqueness gives overlap compatibility and P(t,s)=P(t-s,0). Proposition 22.5 and S_F(t)iE=iE give invariance of iE, so the E restriction solves E Duhamel. No uniform-horizon stochastic statement is used."
+    },
+    {
+      "claim": "Primary pins: Teschl second edition, Theorems 10.2 and 10.13, Theorem 4.12 and Corollary 4.13, with correct hypotheses, pages and order of use.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The title page, copyright page (ISBN 978-1-4704-1704-8, GSM 157, copyright 2009, 2014) and printed pages 140, 141, 258 and 273 match every citation. Theorem 10.2: a real potential in L^infty_infty+L^2 for n<=3 gives self-adjoint H0+V on H^2, bounded below, ess spec [0,infinity), C_c^infinity core. Theorem 10.13 is conditional on the bottom being an eigenvalue, and the note invokes it only after the trial and threshold argument. Theorem 4.12 allows the form domain and sets E_n=inf ess spec once eigenvalues end. H0=-Delta. The source is not credited with uniformity, F projection or moments. Note: the phrase 'form monotonicity' slightly glosses Corollary 4.13, whose printed form is A>=B, A-B>=0; the proof does not depend on it."
+    },
+    {
+      "claim": "Bibliography entry and rendered [8].",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The key, title, series, volume 157, edition Second, publisher, year 2014, ISBN, DOI and MR3243083 are consistent with the primary images, and the citation resolves to [8] on page 168. The render prints 'Second,' without the word edition; the body text states second edition explicitly. Page count xiv+358 is outside the supplied images."
+    },
+    {
+      "claim": "Proposition 23.1, form domain: H^1 is the common form domain, c=1+M, A>=1, with displayed norm bounds.",
+      "verdict": "PASS",
+      "reason": "On H^2, ||A^{1/2}u||^2=q(u)+c||u||^2=||u||_{H1}^2+int(M-V)|u|^2, using 0<=V<=M, which gives the bounds with constants 1 and c. Spectral cutoffs give a form core, Fourier cutoffs give H^1 density, and both norms dominate L^2, so the completions coincide with the same limits."
+    },
+    {
+      "claim": "Proposition 23.1, ground state: trial first, then eigenvalue, then simplicity and positivity; E2 convention; Lipschitz levels; rate gap.",
+      "verdict": "PASS",
+      "reason": "-M<=E1<=-epsilon holds by Rayleigh on the common H^1. The bottom lies in the spectrum and below the essential threshold 0, hence is an isolated finite-multiplicity eigenvalue, and only then is 10.13 invoked. The E2 convention matches Teschl's. E1<E2<=0 holds. |q_sigma-q_tau|<=d_V on common unit tests gives (23.3) through identical sup/inf sets, including the threshold case. lambda-mu=(E2-E1)/(lambda+mu) with lambda+mu<=2 sqrt M, and lambda+mu>=sqrt epsilon>0 makes the denominator nonzero; there is no division by mu."
+    },
+    {
+      "claim": "Proposition 23.1, L2 and H2 continuity of the ground state.",
+      "verdict": "PASS",
+      "reason": "a=<p_sigma,p_tau> lies in (0,1] by a.e. positivity. q_sigma(p_tau)=a^2 E1+q_sigma(r)>=E1+Delta_*||r||^2 and q_sigma(p_tau)<=E1+2 d_V. Then ||p_tau-p_sigma||^2=2(1-a)<=2(1-a^2)=2||r||^2<=4 d_V/Delta_*. The sign in (1-Delta)p=(1-lambda^2+V)p is correct. 1+2M is a valid, crude L^2 bound, since |1-lambda^2+V|<=1+2M. The Bessel inverse is an isometry. No p in L1 or ODE input appears."
+    },
+    {
+      "claim": "Lemma 23.2: resolvent supremum, order reversal, square-root integral, quarter-power norms, negative entry.",
+      "verdict": "PASS",
+      "reason": "Completing the square gives <f,(T+t)^{-1}f>=sup{2Re<f,u>-q_T(u)-t||u||^2}. The order reversal and I-t(T+t)^{-1} monotonicity are correct. Substituting t=x r^2 gives sqrt x=(1/pi) int t^{-1/2} x/(x+t) dt. Tonelli in the extended sense gives T^{1/2}<=S^{1/2} with domain inclusions, with no general power monotonicity assumed. From B<=A<=cB: ||A^{1/4}u||^2<=c^{1/2}||B^{1/4}u||^2, hence constant c^{1/4} in (23.6). The dual norm is attained at a multiple of A^{-1/2}z, and the dual comparison gives ||A^{-1/4}z||<=||B^{-1/4}z||<=c^{1/4}||A^{-1/4}z||, uniformly in sigma on all of R^d."
+    },
+    {
+      "claim": "Proposition 23.3: C_t,S_t definitions, balanced entries, high and low frequency, mu=0, complement bound.",
+      "verdict": "PASS",
+      "reason": "The definitions on h>0, h=0, h<0 are correct. Conjugating by (A^{1/4},A^{-1/4}) gives C, sqrt(h+c)S, -hS/sqrt(h+c), C. For h>=0: |S|<=min(t,h^{-1/2}), the upper entry is <=sqrt(1+c)(1+t), and the lower entry is <=1. For -mu^2<=h<0: cosh<=e^{mu t}, sinh(ty)/y<=t e^{mu t}, |h|<=M, and h+c lies in [1,c]. The spectrum on the complement of p is at or above E2, including threshold and mu=0."
+    },
+    {
+      "claim": "Proposition 23.3: both ground branches, decaying mode retained in I-Pi, bounded projections, eigen-relations.",
+      "verdict": "PASS",
+      "reason": "Pi^E plus the decaying projection equals the spatial projection on both entries. ell(e)=1. c-lambda^2 lies in [1,c] and lambda>=sqrt epsilon give uniform projection norms in the spectral norm. Direct computation gives cosh+sinh=e^{lambda t} on (p,lambda p) and (a+b/lambda)'=lambda(a+b/lambda) for the left eigenrelation. The decaying branch is bounded and absorbed into C(1+t)e^{mu t}. Pairings are continuous since p is in H^2."
+    },
+    {
+      "claim": "Proposition 23.3: identification of the spectral matrix with the actual physical E flow, including real subspace.",
+      "verdict": "PASS",
+      "reason": "The graph-level weights produce the same balanced entries. ||Au|| and ||Bu|| are equivalent with constant 1+M since A-B=M-V lies in [0,M]. u is in C^1(H^1) and C(H^2), z is in C^1(L^2) and C(H^1). The free group on H^1xL^2 has c=1 weighted entries bounded by C(1+T) and generator (z,Delta u) with domain H^2xH^1. The product rule gives force (z,Delta u+Vu)-(z,Delta u)=(0,Vu). The identity embeds into E. Multiplication V: H^{1/2} to H^{-1/2} has bound M, so Picard uniqueness applies. Density within E only, with boundedness of both operators. Real potentials make the functional calculus preserve real phases. The free matrix agrees with S from Lemma 22.1."
+    },
+    {
+      "claim": "Proposition 23.4: triangular block, forcing convolution, E-valued Fubini.",
+      "verdict": "PASS",
+      "reason": "The force splits as B_F(V)(Y,C(r)c)=B^E Y+D C(r)c. The triangle exchange is correct and absolute on a finite triangle with jointly strongly continuous integrand. Y solves free Duhamel with force B^E Y+g. With the constant block this is the F Duhamel equation, so uniqueness gives (23.11). The c1 and c2 columns are both retained through C(r). Uniform finite-horizon bounds follow from ||B_F(V)||<=||V||_infty+||V||_2."
+    },
+    {
+      "claim": "Proposition 23.4: f, both dual constants, tail identity, rank-one normalization, commutation, continuity, positive margins.",
+      "verdict": "PASS",
+      "reason": "ell^E D C(r)c=f(c1+r c2) with f=int V p/(2 lambda). The integral int_0^infty e^{-lambda r}f(c1+r c2)dr=f(c1/lambda+c2/lambda^2) is correct. The tail integral equals ell^C(C(t)c) by r=t+s. Finite integral plus tail gives ell P(t)=e^{lambda t}ell. ell(e_sigma)=1. Commutation (23.14) follows. f>0 since (23.1) forces V nonzero, V>=0, p>0 a.e.; finiteness is by L2 Cauchy-Schwarz. ell(e_0)=f/lambda for e_0=(0,1,0), and O_phi(e_sigma)=int phi p>0. Continuity on compact I gives (23.15). All continuity uses H^2 continuity of p and the rate floor."
+    },
+    {
+      "claim": "Proposition 23.5: exact complement including minus e^E ell^C(C(t)c), polynomial, normalized exponential.",
+      "verdict": "PASS",
+      "reason": "Q(e,c) has E part Q^E e-e^E ell^C(c). Substituting into (23.11) and splitting D gives exactly (23.19) by the tail identity. int_0^t(1+t-r)(1+r)dr=t+t^2+t^3/6 was verified by hand. The first term is C(1+t)e^{mu t}, the final and constant terms are C(1+t)|c|, the total is C(1+t)^3 e^{mu t} since mu>=0, and multiplying by e^{-lambda t} gives C_eta e^{-eta t} for eta<d0."
+    },
+    {
+      "claim": "Proposition 23.5: parameter bound by statewise Duhamel, measurability and Gronwall.",
+      "verdict": "PASS",
+      "reason": "The difference decomposition is correct. ||B_sigma-B_tau||<=||dV||_infty+||dV||_2 follows from Lemma 22.3's bound. The operator norm is a countable supremum of continuous functions by separability from Lemma 22.1. Scalar Gronwall needs no operator-norm continuity of S_F or operator-valued derivative."
+    },
+    {
+      "claim": "Lemma 23.6: original raw mean, variance, positivity, floors, smoothness, for all nonseparable Psi, with Gamma once.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The pairing follows from (1.2)-type covariance with compact tests, locally finite Gamma and a<1. Gamma appears once, in h. v=int Psi h. Spatial bound ||Psi||^2|B_A|Gamma(closed B_{2A}), since |z|<2A. int int |sigma-u|^{-a}=2/((1-a)(2-a)) verified. Homogeneity gives Gamma(B_1)=r^{alpha-d}Gamma(B_r). Autocorrelation is positive near 0, so 0<Q<infty. |sigma-u|^{-a}>=1 on the unit square gives h>=Gamma*qbar on I and v>=Q(qbar). With r=s-u derivatives fall on the zero-extended smooth Psi, so joint smoothness holds. Separability, a global decay assumption and a masked raw covariance are all absent, and the white and invariant-direction cases are covered. Note: 'every positive-radius ball' must be read as origin-centered (see minor findings); the actual use is origin-centered."
+    },
+    {
+      "claim": "Proposition 23.7: common trial, constants, order of choices, Lipschitz rate, endpoint, fixed Z and v, no uniform mask.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "||psi_L||_2=1. Kinetic energy D_psi L^-2. psi_L^2>=c0^2 L^-d on B_L. Tonelli gives int_{B_L}Gamma*qbar=int qbar(y)Gamma(B_L-y)dy. B_{L/2} is contained in B_L-y for |y|<=A<=L/2. (L/2)^{d-alpha}L^{-d}=2^{alpha-d}L^{-alpha} gives C_Gamma. alpha<2 from alpha0+alpha<2 and alpha0>0 gives epsilon_R>0 for large L. R is fixed before Proposition 23.1. |lambda_s-lambda_t|=|E1 diff|/(lambda_s+lambda_t)<=||dV||_infty/(2 sqrt eps_R). lambda_0>=sqrt eps_R despite Psi(0)=0. Z and v do not involve the mask. Enlarging R keeps the trial. The non-claims on all-strength binding and limit exchange are present. Note: mask properties are not restated (see minor findings)."
+    },
+    {
+      "claim": "Scope retained: d=1,2,3, all homogeneous covariances, amplitudes, white and subcritical range; no narrowing to separable controls; zero case boundary.",
+      "verdict": "PASS",
+      "reason": "Lemma 23.6 assumes only Hypothesis 1.1, Gamma nonzero, and arbitrary nonnegative nonzero compact Psi. The amplitude is carried inside Gamma. No separability, pL1, directional decay, d1 ODE, E dense in F, point trace or general power monotonicity is assumed. The zero covariance case is excluded only from the raw profile, where positivity would fail, and Goal 24.2 on page 166 retains the free solution."
+    },
+    {
+      "claim": "Correspondence of TeX with accepted CG note Sections 1-8 and its nine adopted clarifications.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "All objects, signs, powers, squared norms and constants were compared and agree. The nine clarifications are retained, namely the Fubini triangle, core completion, free generator, horizon compatibility, positive integral of qbar, corrected h, displayed decaying projection, real subspace, and no promotion of a new-F cone. Labels 23.1-23.23 and Propositions and Lemmas 23.1-23.7 are consistent with Proposition 22.8, Section 22 and Hypothesis 1.1. Condensations are valid. Only the md's explicit mask phrase and origin-ball phrase are loosened in the TeX; see minor findings."
+    },
+    {
+      "claim": "Correspondence of TeX with rendered pages 159-168 and rendered text.",
+      "verdict": "PASS",
+      "reason": "All 10 PNGs were read fully by eye. Denominator 2 sqrt M, quarter and negative-quarter norms, both constant duals, tail integrals, (23.19) minus sign, polynomial, C_Gamma, L powers, and qbar overlines are all rendered as in the source. The new section runs pages 159-166 with no visible clipping or overlap. This is visual comparison only, not re-execution of the build."
+    },
+    {
+      "claim": "Finite controls and historical counts: their status and consistency.",
+      "verdict": "PASS",
+      "reason": "Not recomputed by execution, as instructed. A hand spot-check of the JSON values is consistent with f=g/(2 lambda) and entrance f/lambda, for example lambda=2, g=1 gives 1/8 and defect 1/4; and with energy kinetic minus 0.1 times potential at scale 256. They are correctly labeled mechanism checks, not continuum proof or certified quadrature. Historical 71 facts/18 seams in the md and current 80 facts/22 seams in the adjudication and honesty statement are distinct times, not a conflict."
+    },
+    {
+      "claim": "Non-claims: no raw Gaussian shift or event, growing random product, moment lower rate, uniform R, Skorohod, companion, whole-paper or goal clearance.",
+      "verdict": "PASS",
+      "reason": "The module asserts only deterministic spectral and flow statements and a covariance mean identity. Section 25 on page 167 keeps the sharp constant open. Masks are fixed before asymptotics, and suprema must follow per-test bounds."
+    },
+    {
+      "claim": "Author machine, build, hash and old-proof evidence.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "build-v1.json and worker-honesty-v1.md are internally consistent with the supplied pages (168 pages, 7 new proof blocks, section pages 159-166). These remain author-side claims and were not independently executed; they are not scientific verification by this review."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Lemma 23.6 proof: 'Thus every positive-radius ball has positive finite mass' is false if read for balls not centered at the origin, for example Gamma=delta_0 or delta_{x1=0} tensor Lebesgue. The accepted md says every Gamma(B_rho)>0, which is correct. Only origin-centered balls are used, so no implication fails. Optional rewording: 'every origin-centered ball B_rho'.",
+      "Proposition 23.7 proof and Lemma 23.6: the properties of m_R are not restated in Section 23. The accepted md line 399 specifies an even [0,1] mask with m_R=1 on B_R. The TeX says 'the actual even mask', relying on Section 22's allowed mask m=zeta_R with 0<=m<=1 and an earlier zeta_R definition. V_sigma>=0 and V_sigma=h_sigma on supp psi_L use these properties. This is an optional clarification: state them explicitly, or cite the earlier definition of zeta_R.",
+      "Proposition 23.1 imports: 'form monotonicity' paraphrases Corollary 4.13, printed for self-adjoint A>=B with A-B>=0. The Lipschitz proof uses identical max-min test sets directly, so nothing depends on the gloss.",
+      "Rendered [8] reads 'Second,' without the word edition, an amsrefs edition-field style issue. The text says second edition and the bib field is correct, so this is cosmetic.",
+      "Letter reuse is locally unambiguous but heavy: c=1+M versus constant vector c=(c1,c2); A radius versus A_sigma; E phase versus E_j levels and expectation; S(t) versus S_t(h); C(t) versus C_t(h) versus generic C; mu_sigma versus the spectral measure mu of the model. Renaming is optional.",
+      "Minor prose and typography: 'Choose A>=1 containing the spatial support of Psi in B_A' is awkward, and Gamma(dz) renders with a small extra space from the differential macro. Pre-existing empty '()' in bibliography items [1], [2], [3], [5] and the '[ 3289027]' in [7] are outside this module."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "Definitions located outside the supplied packet were not read: (E:driver-parameters), the original zeta_R definition, the fixed norm of E, and the definition of W. E=H^{1/2}xH^{-1/2}, the mask properties and the raw covariance form were taken from Section 22's usage, the model context (1.2 and Hypothesis 1.1) and the accepted CG note.",
+    "Accepted parent results (Section 22) were reused and their applications checked by hand; they were not re-derived. The adjudication's noted limits on the parent's dependency chain remain.",
+    "Teschl coverage is six supplied images only: selected statements and interfaces. This is not a full-book, proof or publisher-pagination audit; the title page shows the AMS-permitted online edition.",
+    "The PDF itself was not opened. Only the frozen PNGs and rendered text were compared. No hash, build, Git, Lean or numeric execution was performed; image hashes were not recomputed. Those remain author evidence.",
+    "This AI review is scientific correctness and correspondence checking at module scope. It is not human verification, a novelty audit, a whole-paper cold read, or clearance of the raw Gaussian shift or event, moment lower rate, uniform R, publication or the final goal."
+  ]
+}
+```

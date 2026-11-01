@@ -207,3 +207,30 @@ Selected SECOND-edition Teschl source hypotheses rechecked; common trial
 precedes ground simplicity, and decaying branch/full constant-forcing
 tail must remain. Then DS scaling and actual raw block event/lower/UL,
 remaining upper/PB/OC/WS and whole-paper/final cold-read gates.
+
+
+## Compact mean spectral integration accepted
+
+Scientific6c52b5f:7complete proof blocks; actualOpus5.5/HIGH22passing
+checks499.075seconds,no repairs. All37input bindings,20full texts/16exact
+images and52raw archive file members verified. Six optional findings
+adjudicated; no final source/PDF edits. Clean168-page PDF;111prior bodies
+unchanged. Actual global-E and full-F spectral/ordinary flow complement,
+both constant duals/positive margins and unchanged raw-cost common trial
+now integrated. No raw block event or moment rate yet.
+
+Before final whole-paper review, clarify the Section23 raw-profile proof's
+ball-mass sentence to 'every origin-centered ball B_rho'; arbitrary
+translated balls need not carry positive mass. Repeat the actual mask's
+even/[0,1]/one-on-B_R/support-B_2R properties locally. These are explicit
+presentation debts, not adopted stronger assumptions or changed trial.
+
+Next joint DS/RB plan is frozen in reviews/2026-11-01-raw-lower-tex-integration/.
+Six unchanged complete-type/source bindings and nine old scalar facts are
+ready for exact application reuse; no new compiler run or application
+acceptance implied. Then UL, remaining upper/PB/OC/WS and final full review.
+
+Native report retention lesson: a raw report may be fenced JSON and still
+be accepted by the canonical parser. Preserve it verbatim separately from
+the native canonical report.json; do not use a bare JSON loader on raw
+text or fabricate a recovery requirement for an already valid report.

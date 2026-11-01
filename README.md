@@ -22,12 +22,10 @@ passed their full scoped reviews. The exact constant remains the intrinsic
 variational value; interval endpoints are bounds, not its evaluated value.
 The mathematical result set is now frozen for integration. The tracked
 [TeX/PDF notes](notes/notes_stratonovich_ham_second_moment.pdf) now include
-the covariance, wave-variance, finite Gaussian, compactness and actual
-same-noise operator-driver and canonical source-convergence constructions,
-and fixed-mask moment/constant-phase Young proofs, with 51 complete proof blocks
-accepted at independent integration gates. The local driver construction
-is scientific source 9dad256; source convergence is 8a2add9, and the joint moment/Young integration is
-5caa2e8. The
+the covariance, wave-variance, Gaussian operator, source-convergence,
+fixed-mask moment, constant-phase Young and compact mean spectral proofs.
+These comprise 58 complete proof blocks accepted at independent integration
+gates. The latest integration is scientific source 6c52b5f. The full
 derived-constant argument still needs integration there. Earlier failed
 cold-read records remain preserved, and no whole-paper or circulation
 clearance is implied. The official private Lean companion remains separately
