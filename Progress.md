@@ -6,6 +6,14 @@
 
 ## Current state
 
+- **Reviewer directive (Le,2026-11-01):** use DeepSeek V4 Pro + Kimi-K3.
+  This supersedes Opus-only routing for newly assigned reviews. Preserve
+  exact model/source identity, independent authorship, HIGH threshold,
+  source/application/visual coverage and fresh final review requirements.
+  DeepSeek primary proof review is running on the separate finite-ratio
+  draft; native Kimi attempt stopped on monthly quota before any verdict.
+  Neither is a common887composition component or scientific acceptance.
+
 - **Le's current objective (2026-10-31):** derive the ACTUAL asymptotic
   constant, whatever the computation yields. Matching Chen's guessed
   constants is NO LONGER a completion requirement. This is Le's explicit
@@ -10679,3 +10687,42 @@ changes the next action to wait for genuinely restored required capacity;
 no further proof cycle or unreviewed reordering is authorized by a probe.
 Goal active and incomplete; this turn produced actual new capacity evidence
 and the existing-signed-upper dependency finding, not a verified live wait.
+
+
+## 2026-11-01 — Le authorized DeepSeek V4 Pro + Kimi-K3 reviewers
+
+Le explicitly requested the new two-model reviewer roster, superseding
+prior Opus-only routing for future assignments. Used the focused native
+subscription CLI workflow for Kimi and the configured direct DeepSeek
+V4-Pro category for an isolated, read-only OpenCode review. Existing Opus
+quota/inconclusive reports remain immutable; no retroactive vote conversion.
+Main science epoch887 and all original completion obligations unchanged.
+
+[held back: AI account details]
+
+DeepSeek uses exact configured paper-review-deepseek ->
+deepseek/deepseek-v4-pro, fully inline target136lines, model105-152,
+full spatial-context module, exact Chen2023primary pages1-3pdftotext and
+source/scope bindings. No prior review report supplied. Isolated carrier
+84211f992533e06dfac08c8d66c4a204dd9feb45 differs from scientific3c375e6;
+the exact draft SHA is unchanged and mapping is explicit. The initial
+panel preparation refused a missing carrier Progress marker before any
+provider call; corrected preparation retained. Panel-generated prompt is
+launched through explicit --dir/--agent/--pure with all tools denied and
+no delegation, existing direct provider, no automatic model fallback.
+Full resolved permission JSON retained externally; final wildcard deny
+verified without treating unrelated earlier allow rules as final policy.
+
+Actual DeepSeek handle29446 is live at this checkpoint; raw events show
+step_start and no terminal receipt/verdict. Its TEXT proof/import review
+has no visual-source credit. Do not credit its transport as actual model
+completion until the session/export and complete report are checked.
+Carrier HEAD is held unchanged; project bookkeeping does not mutate it.
+Local carrier-only panel prep emitted a git-state warning from its own
+new review artifacts, candidate unchanged; no actual model call in that
+preparation. The explicit launch and prompt hash are retained separately.
+
+Evidence in reviews/2026-11-01-reviewer-switch/ and external
+../stratonovich-independent-finiteness-review-v1/. Main manuscript/PDF,
+80finite Lean facts, source images and scientific statements unchanged.
+Pending main common-source/visual/full-mathematical/cold gates remain.
