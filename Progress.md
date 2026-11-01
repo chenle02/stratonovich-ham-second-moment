@@ -10726,3 +10726,14 @@ Evidence in reviews/2026-11-01-reviewer-switch/ and external
 ../stratonovich-independent-finiteness-review-v1/. Main manuscript/PDF,
 80finite Lean facts, source images and scientific statements unchanged.
 Pending main common-source/visual/full-mathematical/cold gates remain.
+
+
+Updated project AGENTS.md workforce paragraph to Le's actual requested
+DeepSeek V4 Pro + Kimi-K3 routes. No sibling workforce policy or global
+configuration changed. New native Kimi quota receipt and old Opus reports
+retain exact identities. DeepSeek initial actual session export confirms
+deepseek/deepseek-v4-pro, finish=length,32000reasoning tokens and ZERO
+visible report tokens despite transport0. No scientific judgment inferred
+from private reasoning. Same-session bounded continuation45697 is live,
+with unchanged candidate/carrier and all tools denied. This is recovery of
+an incomplete response, not a new independent/cold vote or confidence retry.

@@ -31,7 +31,32 @@ The precise statements, notation and known results are in
 
 ## Key structural facts (from the 2026-10-26 setup reading; do not relearn)
 
-[held back until the source author has been told]
+1. **Expansion.** u = Σ S_n(g_n) with ordered single-chain kernels
+   (2.13)–(2.16). Expected Stratonovich integrals include **self-pairings**
+   within a chain (Wick sum over all pair partitions, (2.21)), unlike the
+   Skorohod chaos.
+2. **Second moment = two-chain pairing integrals.** 𝔼[S_n(g_n)]² is given
+   exactly by Theorem 4.1 (4.3) (two ordered chains I₁, I₂, all pair
+   partitions of 2n points). The full 𝔼u² also has cross terms
+   𝔼[S_m S_n], m ≠ n, m+n even (via (2.18)): justify and write them (Gate G0).
+3. **Theorem 3.1 (3.6)** is a universal bound for exactly these two-chain
+   integrals, including cross-pairings, with Laplace-weighted kernels in
+   Lemma A.1. Chen uses it only for integrability.
+4. **The crude bound** 𝔼u² ≤ e^{Ct²} (Remark 5.1) comes from (2.13) and
+   (4.4). Where the exponent 2 enters, instead of κ, is the first question.
+5. **Why Chen stops at p = 1** (Remark 6.3): his exact representation
+   (Theorem 6.1) needs the monotone order of one chain. For p = 2 each chain
+   is still ordered; only the interleaving is lost. That is the opening for a
+   two-clock representation.
+6. **Actual Jensen remains a constraint:** E|u|² ≥ (Eu)² (Proposition
+   P:Jensen). Any verified applicable first-moment lower constant gives
+   the corresponding doubled lower bound. Numerical use of the source
+   label L_* retains the known normalization qualification. The guessed
+   factor in Chen's conjecture is not a required answer, and an auxiliary
+   S₁^pos is not automatically the actual first-moment constant.
+7. **Version trap.** arXiv:2510.01412v1 states an exact first-moment limit;
+   the author version proves only two-sided bounds. Never cite v1 for
+   Theorem 1.2. See `sources/SOURCE-MANIFEST.md`.
 
 ## Calibrations every proposed bound must pass
 
@@ -71,7 +96,30 @@ All.bib -> ../refdb/All.bib (read-only), extra.bib (local additions)
   mean term cannot be dropped,and arbitrary-phase covariance monotonicity
   is unavailable. This is a full-spatial-class tool,not an all-order bound.
 
-[held back: collaborators' unpublished work]
+### Workforce (paper-dev)
+- **Worker:** the Codex session running this project (GPT family).
+- **Reviews must come from a different model family than the author** of
+  the argument. Per Le's 2026-11-01 direction, use **DeepSeek V4 Pro +
+  Kimi-K3** for newly assigned reviews. DeepSeek uses the configured
+  `paper-review-deepseek` route with `deepseek/deepseek-v4-pro`; Kimi uses
+  native `subscription-review-cli run kimi --model kimi-code/k3` with its
+  verified configured effort. Use frozen inputs and read-only execution.
+  Keep HIGH confidence, exact source/application/visual coverage and final
+  cold-reader requirements. A final cold read needs a fresh session and a
+  family independent of any author of a material repair. Do not silently
+  substitute another model, purchase quota or relax a missing-source gate.
+  Preserve prior Opus reviews under their original scope and identity.
+  A quota error, generation-limit stop or missing report is not a review:
+  record it. A text-only review does not certify source-image coverage.
+- Every round that adds a proof: freeze a packet in `reviews/<date>-<round>/`,
+  get the skeptic report, adjudicate every finding in Progress.md.
+- Canonical workflow: `<HOME>/workspace/Le-AI-Lab/commands/paper-dev.md`.
+  Skills (read the SKILL.md before using; under
+  `<HOME>/workspace/Le-AI-Lab/skills/omc-learned/` unless noted):
+  `progress-md-authority-paper-dev`, `paper-dev-review-layers-are-mandatory`,
+  `paper-dev-round-close-protocol`, `falsification-first-differentiated-routes`,
+  `numerics-gate-before-proof-investment`, `cited-theorem-source-fidelity-gate`,
+  `le-chen-writing-style`, and `skills/latex-conventions`.
 
 ### LaTeX
 - Build from the repo root:
