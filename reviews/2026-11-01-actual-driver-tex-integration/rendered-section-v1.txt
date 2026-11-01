@@ -1,0 +1,441 @@
+19     The actual Gaussian operator driver
+We now construct the first interaction driver on the same probability space as the original
+noise. Retain Hypothesis 1.1, set a = α0 , s = 1/2 and Er = H r (Rd ) × H r−1 (Rd ), and
+initially use real phases E = Es . Let HW be the real completion of Cc∞ ((0, ∞) × Rd )
+modulo its covariance-null tests. The given isonormal process on it is W . If Γ = 0, the
+driver and all raw forms are zero, so the conclusions below hold directly. Assume Γ ̸= 0
+in the construction.
+    Choose and fix R, T > 0 and a real even nonnegative ζ ∈ Cc∞ (Rd ) equal to one on
+B1 and zero off B2 . The physical mask is ζR (x) = ζ(x/R). The free group S(t) and
+forms ℓR are those of Section 17; both phase entries and the continuous zero-frequency
+sine quotient are retained. Fix parameters
+                    (︃        )︃                        (︃                 )︃
+                       1 2−α          1                       a 3−a−α
+       0 < γ < min       ,       ,      < θ < β < min 1 − ,                   .      (19.1)
+                       2   2          2                       2      2
+The strict intervals are nonempty. The C θ norm is the supremum norm plus the θ-Hölder
+seminorm.
+Proposition 19.1 (Same-noise compact operator path). There is an orthonormal basis
+{fj } of HW with real smooth compact test representatives, independent standard real
+Gaussians gj = W (fj ), and deterministic operators Aj (0, t) on E such that
+                      ∑︂
+            XN (t) :=     gj Aj (0, t) −→ MR (t) in Lp (Ω; C θ ([0, T ]; B(E))) (19.2)
+                       j≤N
+
+for every finite p ≥ 1. The limit is a centered Gaussian path on the original probability
+space, starts at zero, and has compact values at every time on one probability-one path
+set. For each fixed real Schwartz pair z, w and t ∈ [0, T ],
+                       ⟨MR (t)z, w⟩E = ℓR ((0, t); z, w)   in L2 (Ω).               (19.3)
+Long raw intervals mean their actual completed test, equivalently the additive unit-
+interval construction justified below. Different compact smooth test bases give indis-
+tinguishable paths on the same W . For constants C, c > 0 depending on the fixed data
+but not the basis or p,
+                                       √
+                   (E∥MR ∥pC θ )1/p ≤ C p,     E exp(c∥MR ∥2C θ ) < ∞.          (19.4)
+Its complexification has the corresponding sesquilinear raw identity. Fixed-interval Schat-
+ten moments hold at the admissible even indices in (19.18). Arbitrary p above refers to
+B(E), not arbitrary Schatten indices or a Schatten-valued path.
+
+19.1     A test basis and literal covariance coefficients
+Lemma 19.2 (Basis in the prescribed quotient). The nonzero space HW is separable
+and infinite-dimensional. It has a real orthonormal basis with compact smooth represen-
+tatives, whose evaluations by W are independent standard real Gaussians.
+
+                                            133
+Proof. For tests supported in [0, L] × K, with K compact, the physical covariance and
+the temporal Schur bound give the absolute estimate
+                                    2L1−a
+       |⟨F, G⟩HW | ≤ |K|Γ(K − K)          ∥∥F (t)∥∞ ∥L2 (0,L) ∥∥G(t)∥∞ ∥L2 (0,L) .    (19.5)
+                                    1−a
+Only spatial differences in K − K contribute. On each rational compact box inside
+positive time, rational step approximations followed by compact smooth mollifiers at ra-
+tional scales give a countable uniformly dense test collection, supported in a fixed slightly
+larger box. The estimate proves noise-norm approximation. The union over increasing
+boxes is dense in the test completion. This proves separability without assuming the
+covariance form is injective.
+    Choose L ≥ 1 with 0 < Γ(BL ) < ∞ and nonnegative compact smooth q ≥ 1 on
+B2L+1 . Then
+                         ∫︂        ∫︂
+                  Qsp := Γ( dy) q(x)q(x − y) dx ≥ |BL+1 |Γ(BL ) > 0,
+
+and the compact-support estimate makes it finite. For every real compact smooth
+positive-time τ , the norm of τ ⊗ q is Qsp ∥τ ∥2a . This temporal norm is strictly positive
+for signed nonzero τ . Indeed, zero-extend this deterministic test and use the positive
+Laplace factorization from Lemma 16.3 to write
+                                           ∫︂ ∞
+                               2      1
+                          ∥τ ∥a =               λa−1 Eλ (τ ) dλ,
+                                   ΓE (a) 0
+                                   ∫︂    ⃓∫︂ ∞                     ⃓2
+                                                  −λ(t−r)
+                                         ⃓                         ⃓
+                         Eλ (τ ) =    2λ ⃓
+                                         ⃓      e         τ (t) dt⃓⃓ dr.
+                                    R      r
+
+Signed exchanges are absolutely integrable on the test support, by the temporal Schur
+estimate. If the norm vanished, some λ > 0 would have Eλ = 0. Its inner integral v(r) is
+continuous and satisfies v ′ = λv − τ . Vanishing almost everywhere makes it identically
+zero and forces τ = 0. Thus, infinitely many linearly independent compact time bumps
+inject into HW after multiplication by q.
+    Apply Gram–Schmidt to a countable dense real test collection, discarding zero resid-
+uals in the given null quotient. Infinitude gives an infinite basis; each representative
+is a finite linear combination of compact smooth tests. The isonormal identity gives
+Egj gk = δjk . Joint Gaussian characteristic functions then factor, giving independence
+and unit variances. No physical null direction is removed beyond the prescribed quotient,
+and no HW -valued white Gaussian vector is used. This proves Lemma 19.2.
+Lemma 19.3 (Actual covariance coefficients). For each basis representative put
+                                 ∫︂            ∫︂
+                                            −a
+            Hj,R (t, x) = ζR (x)    |t − u|       Γ( dy)fj (u, x − y) du.      (19.6)
+                                     u>0
+
+These functions are real smooth on finite time-space compacts, supported spatially in B2R ,
+with bounded derivatives there. For smooth compact real F , and also for the admitted
+
+                                               134
+wave tests of (17.13),
+                                              ∫︂
+                         E[WC (ζR F )gj ] =        Hj,R (t, x)F (t, x) dt dx.       (19.7)
+
+The coefficient on t ≥ 0 depends only on the HW class of fj .
+
+Proof. Extend ∫︁ fj −a
+                    smoothly
+                       ∫︁      by zero in time and substitute v = t − u. The unmasked
+expression is R |v|       Γ( dy)fj (t−v, x−y) dv. On each compact (t, x) set, the integrand
+involves only bounded v and a common compact set of y. Local Radon mass and
+local integrability of |v|−a allow every mixed derivative to move onto the smooth test.
+Dominated integration proves smoothness and the derivative bounds. Multiplication by
+ζR gives the stated support. Zero extension is only of a deterministic test; no negative-
+time noise is introduced.
+    The physical covariance formula and absolute Fubini give (19.7) first for real compact
+tests. The compact difference set in Γ and integrable temporal singularity justify the ex-
+change. For wave tests use the common-support raw approximations of Proposition 17.3,
+converging in L2 time in the spatial supremum norm after masking. The left side con-
+verges by noise Cauchy–Schwarz and the right side by the coefficient’s boundedness on
+that support. Real and imaginary parts give the complex version. If two representatives
+give the same class, their Gaussian difference is zero. Testing the covariance identity
+against every compact smooth F makes the difference of their masked coefficients zero as
+a distribution for t > 0. Smoothness, then continuity at zero, proves the representative
+assertion on t ≥ 0. This proves Lemma 19.3.
+
+19.2     Gain, adjoints and actual localization
+Lemma 19.4 (Deterministic coefficient operators). The statewise integral
+                                ∫︂
+                    Aj (I)z = S(−t)B(Hj,R (t))S(t)z dt                              (19.8)
+                                        I
+
+satisfies, for every real r,
+
+                               ∥Aj (I)∥B(Er ,Er+1 ) ≤ Cj,r,R,T |I|.                 (19.9)
+
+Its Es adjoint has the gain E2s−r−1 → E2s−r , so both operators act from Es−γ to E.
+Choose real compact smooth χ = 1 on B2R+T +1 . On every Er ,
+
+                                Dχ Aj (I) = Aj (I) = Aj (I)Dχ .                    (19.10)
+
+For each fixed Schwartz pair,
+
+                               E[gj ℓR (I; z, w)] = ⟨Aj (I)z, w⟩E .                (19.11)
+
+Proof. The full massless wave is strongly continuous and bounded on every Er on finite
+time intervals. Its normalized off-diagonal Fourier entries have sizes at most CT and
+
+                                                   135
+one, respectively; continuity and domination prove the strong assertion. Multiplication
+by Hj,R (t) is bounded on every H r , continuously in t, by weighted Fourier convolution
+and its compact smooth derivative bounds. Hence, B(Hj,R (t)) : Er → Er+1 is bounded:
+its second entry is a multiplier of the displacement in H r . The integrand in (19.8) is
+strongly continuous on states in Er+1 and uniformly bounded there. Statewise Bochner
+integration proves (19.9), including the Lipschitz operator-norm primitive Aj (0, t). Norm
+continuity of S(t) is not needed.
+    Under the Es pairing, the dual of Er is isometrically E2s−r , directly by the two
+Bessel weights. Dualizing the gain-one bound therefore gives the asserted adjoint gain.
+It agrees on Schwartz phases with the actual bounded Es adjoint. Since γ < 1, gain one
+at every index implies the two stated maps from Es−γ to E.
+    For smooth data the free-wave energy on a shrinking ball has nonpositive boundary
+flux: v∂n u − (v 2 + |∇u|2 )/2 ≤ 0. Vanishing initial displacement and velocity give zero
+velocity and gradient in the cone; integration of velocity from the zero displacement gives
+zero displacement there as well. Time reversal gives the backward assertion. Thus, both
+entries of S(±t) enlarge supports by at most |t|. Density and testing against compact
+smooth functions extend this support assertion to Sobolev phases. In particular, for
+input (1 − Dχ )z, approximate z by Schwartz phases and retain the factor 1 − Dχ ; the
+approximants vanish on B2R+T +1 . Their free displacement vanishes on B2R throughout
+[0, T ], and the same is true in the distributional limit. They contribute nothing to the
+integral. Its output is supported in B2R+T , by the support of Hj,R and backward finite
+propagation. Since χ = 1 on a neighborhood of this ball, both identities in (19.10)
+follow. This uses both entries, not a scalar restart or a positivity theorem.
+    Finally apply the physical Sobolev pairing (17.15) and (19.7) to the state integral.
+They give (19.11). In (19.6), the mask is after convolution; replacing it by a mask inside
+Γ ∗ fj would change this identity. This proves Lemma 19.4.
+
+19.3     Actual finite variances and first-chaos tails
+Put J0 (u, v) = (Λ1/2 u, Λ−1/2 v), H0 = L2 (Rd ; R2 ), aj = J0 Aj (I)J0−1 and Pχ = J0 Dχ J0−1 .
+The operator Dγ = diag(Λ−γ , Λ−γ ) acts on these physical coordinates. Its two compact
+envelopes Bout , Bin are those of Proposition 18.7, after complexification when Schatten
+norms are used. For I ⊂ [0, T ] with 0 < h = |I| ≤ 1, set
+                                     bI = CT h2−a Bα (h),                              (19.12)
+where CT is the uniform-in-R constant in Proposition 17.5.
+Lemma 19.5 (Both actual variances and their tails). For every N ,
+                      ∑︂                            ∑︂
+            Vout,N :=    aj a∗j ≤ bI Dγ2 , Vin,N :=     a∗j aj ≤ bI Dγ2 .              (19.13)
+                           j≤N                              j≤N
+
+The finite families satisfy both actual localizations by Pχ . There are bounded positive
+limits Vout,∞ , Vin,∞ with positive tails Tout,N , Tin,N → 0 strongly, and
+                            Tout,N ≤ bI Bout ,     Tin,N ≤ bI Bin .                    (19.14)
+
+                                             136
+For each fixed z ∈ Es−γ , the real column maps satisfy
+                 ∑︂                             ∑︂
+      mR,I (z) =    gj Aj (I)z,      nR,I (z) =    gj Aj (I)∗,E z          in L2 (Ω; E).   (19.15)
+                   j                                  j
+                                                              ∑︁
+Proof. By (19.11), the finite matrix forms of XN (I) = j≤N gj Aj (I) are the orthogonal
+Gaussian projections of ℓR (I; z, w) onto g1 , . . . , gN . Thus,
+
+                            E|⟨XN (I)z, w⟩E |2 ≤ E|ℓR (I; z, w)|2 .
+
+These are noise-test-basis projections, not source mollifiers. Choose a real Schwartz
+orthonormal basis {ek } of E. Independence of the finite gj and phase Parseval give, for
+Schwartz w,
+                  ∑︂ ∗,E                         ∑︂
+                      ∥Aj w∥2E = E∥XN∗,E w∥2E =       E|⟨XN ek , w⟩E |2
+                   j≤N                                        k
+
+                                    ≤ bI ∥w∥2Es−γ .
+
+Apply (17.21) first to finite phase sums and then use nonnegative monotone convergence.
+The
+∑︁ other direction      uses (17.22), with input fixed and output ek varying, to bound
+              2
+   j≤N ∥A j z∥E  by the  same expression. Extend these inequalities to E by density. Since
+∥z∥Es−γ = ∥Dγ J0 z∥H0 , they give (19.13). The localization follows from (19.10); no sum
+of individual j-dependent gain bounds was used.
+    The coordinates of mR,I (z), for Schwartz z, are the literal raw forms ℓR (I; z, ek ) and
+belong to the closed first chaos W (HW ). Their coefficients against gj are ⟨Aj z, ek ⟩E .
+Parseval in that chaos, followed by Parseval in E and positive Tonelli, gives
+           ∑︂                                           ∑︂
+                ∥Aj z∥2E = E∥mR,I (z)∥2E ,   mR,I (z) =     gj Aj z in L2 (Ω; E).
+            j                                                     j
+
+The same argument for the adjoint column gives the other expansion. Membership in
+this first chaos comes from actual linear noise tests, not merely Gaussianity. To extend
+to a fixed Es−γ input, approximate by Schwartz phases. The finite inequalities extend
+to that space by the gain bounds and have a constant uniform in N . Apply them to
+the input difference, then use the Schwartz expansion and continuity of m, n. This
+proves (19.15) on the full claimed input domain.
+    The convergent positive quadratic sums, restricted to E and transported by J0 ,
+define the bounded positive operators V·,∞ by polarization and Riesz. They retain the
+bounds bI Dγ2 . Their tails have quadratic forms tending to zero. Since they are uniformly
+bounded and positive, ∥TN v∥2 ≤ ∥TN ∥⟨TN v, v⟩ → 0. Passing to the limit in the finite
+localization identities gives
+
+                       Vout,∞ = Pχ Vout,∞ Pχ∗ ,           Vin,∞ = Pχ∗ Vin,∞ Pχ ,
+
+and the same identities for their tails. Positive congruence applied to TN ≤ bI Dγ2
+proves (19.14).
+
+                                              137
+    Complexification preserves these statements and constants. The Hilbert norms split
+into real and imaginary squared norms; real operators extend isometrically. A real or-
+thonormal basis complexifies to a complex orthonormal basis, preserving singular values
+and multiplicities. The complex column maps have the same bounds and sesquilinear
+row identities. This proves Lemma 19.5.
+Lemma 19.6 (Compact domination of positive tails). If 0 ≤ TN ≤ B, with positive
+compact B ∈ Sm , m ≥ 1, and TN → 0 weakly, then
+                             ∥TN ∥ −→ 0,         Tr TNm −→ 0.                      (19.16)
+Proof. Choose a finite spectral projection Q of B with ∥(1 − Q)B(1 − Q)∥ < ϵ. Positive
+quadratic Cauchy–Schwarz gives, for unit x,
+        ⟨TN x, x⟩ ≤ 2⟨TN Qx, Qx⟩ + 2⟨TN (1 − Q)x, (1 − Q)x⟩ ≤ 2∥QTN Q∥ + 2ϵ.
+Weak convergence makes the finite-dimensional matrix QTN Q converge in norm to zero.
+Letting ϵ ↓ 0 proves norm convergence. Lemma 18.8 gives λj (TN ) ≤ λj (B), while each
+λj (TN ) → 0 by norm convergence. Dominated summation of λj (B)m proves the trace
+limit. No order comparison of the operator powers is used. This proves Lemma 19.6.
+Lemma 19.7 (Retained finite Gaussian variance powers). Let Zℓ be finitely many com-
+pact operators whose two variances Vout , Vin belong to Sq/2 , for an even q ≥ 2. With
+independent standard real gℓ ,
+                      ⃦           ⃦q
+                                                       q/2       q/2
+                                              q/2 Tr Vout + Tr Vin
+                      ⃦∑︂         ⃦
+                            gℓ Zℓ ⃦ ≤ (q − 1)                        .          (19.17)
+                      ⃦           ⃦
+                    E⃦
+                      ⃦
+                         ℓ
+                                  ⃦                        2
+                                   Sq
+
+Proof. Compress by finite-rank orthogonal Qk → I strongly.        The compressed output
+variance is at most Qk Vout Qk , since their difference is ℓ Qk Zℓ (1 − Qk )Zℓ∗ Qk ≥ 0; the
+                                                          ∑︁
+input inequality is the same with adjoints interchanged. Positive-order and compres-
+sion max-min compare their trace powers with the uncompressed ones. Apply Proposi-
+tion 18.3 on the finite range, retaining the average. For each finite Gaussian coordinate
+vector, compactness gives operator-norm convergence of the compressed sum to the orig-
+inal sum. The singular-value norm-Lipschitz argument in the proof of Corollary 18.10,
+then Fatou over singular values and probability, proves the displayed bound. The ex-
+tended norm is measurable by the same finite-coordinate continuity argument. No infi-
+nite Gaussian series or Sq -Bochner convergence is assumed. This proves Lemma 19.7.
+
+19.4     Actual interval limits on the given probability space
+Lemma 19.8 (Fixed-interval operator construction). For each fixed short interval I,
+XN (I) converges in every finite Lp (Ω; B(E)) to a compact-valued centered Gaussian op-
+erator XR (I) on the original probability space. For every admissible even q ≥ 2, qγ > d,
+                                √︁
+    (E∥XR (I)∥qSq )1/q ≤ q − 1 CT h1−a/2 Bα (h)1/2 ∥Kχ ∥Sq ,
+                        √︁
+                                                                 Kχ = Pχ Dγ .     (19.18)
+Its fixed Schwartz rows equal the actual raw forms in L2 .
+
+                                           138
+Proof. The actual finite families aj , j ≤ N , now satisfy every hypothesis of Propo-
+sition 18.9 and Corollary 18.10: both localizations, both weighted variances, and the
+independent real gj have been proved. Thus, their coefficients are compact, and the
+finite sums satisfy the bound in (19.18), uniformly in N . The fixed cutoff factor may
+depend on R, T .
+    Apply Lemma 19.6 to (19.14), whose fixed-interval envelopes belong to Sq/2 . Both
+tail trace powers tend to zero. For M > N , the two variances of M
+                                                                       ∑︁
+                                                                         j=N +1 gj Aj (I) are
+bounded by the corresponding tails. Lemma 19.7 and eigenvalue max-min show that
+its expected Sq norm to the qth power tends to zero, uniformly in M > N . Since the
+operator norm is at most the Sq norm, this gives Lq (B(E)) Cauchy convergence. A
+common nonvanishing envelope alone would not give this conclusion.
+    All finite sums lie in the separable closed real span of the countably many determin-
+istic Aj (I) in B(E). For an elementary realization of the limit, choose a subsequence
+with summable Lq norms of successive differences. Their L1 norms are summable, so
+the pointwise operator-norm differences sum absolutely almost surely. Completeness
+gives a limit in that span; Fatou and the Cauchy property give convergence of the whole
+sequence in Lq . This proves strong measurability on the same original space, with no
+new noise. Different admissible even indices give the same limit by uniqueness of con-
+vergence in probability. Choosing a larger even index yields convergence for every finite
+operator-norm moment p ≥ 1.
+    An almost surely norm-convergent subsequence makes the limit compact. Singular-
+value Fatou gives (19.18). Every continuous linear functional is an L2 limit of centered
+Gaussians, as are finite combinations, so the limit is jointly centered Gaussian. The
+fixed matrix rows of XN (I) are the orthogonal projections of the literal raw forms onto
+the complete noise basis. They converge to those forms in L2 . Operator-norm L2
+convergence identifies their other limit with ⟨XR (I)z, w⟩E .
+    For a long interval, partition it into finitely many intervals of length at most one.
+Their indicators add to the long indicator except at finitely many endpoints, which have
+zero raw norm by the common-support temporal estimate. Raw completion and linearity
+give exact additivity of the forms. Strong-integral additivity gives it for every XN and
+hence for the operator limits. No long-h version of the short-interval bound is used.
+This proves Lemma 19.8.
+
+19.5     Time-path convergence and Gaussian norm bounds
+Lemma 19.9 (Actual Hölder path limit). The finite paths XN (t) = XN ((0, t)) converge
+in Lp (Ω; C θ ([0, T ]; B(E))) for every finite p ≥ 1, in a separable closed path span on the
+same probability space. The limit starts at zero and has compact values for all times on
+                                                                               √
+one path event. For sufficiently large even q0 , its C θ norm has Lq bound C q, uniformly
+over even q ≥ q0 and the basis.
+
+Proof. Choose θ < η < β and an even q0 ≥ 2 with q0 γ > d and β − η − 1/q0 > 0. For
+q ≥ q0 , the singular-value sequence gives ∥Kχ ∥Sq ≤ ∥Kχ ∥Sq0 : if the latter is nonzero,
+normalize by it, so every singular value is at most one, and sum its qth powers. The zero
+
+                                            139
+case is immediate. Apply the finite Gaussian operator estimate with the time-refined
+actual variances from Proposition 17.5. This gives, uniformly in N and even q ≥ q0 ,
+                                             √
+               ∥XN (t) − XN (u)∥Lq (B(E)) ≤ C q |t − u|β ,          |t − u| ≤ 1.   (19.19)
+
+The constant includes the fixed Sq0 cutoff norm and does not depend on q. Longer
+increments are finite sums of unit increments, with constants depending on T .
+    Let Dn (F ) be the maximum of adjacent increments on the grid kT 2−n , 0 ≤ k ≤ 2n .
+At fine levels T 2−n ≤ 1, the elementary bound for a finite maximum yields
+                                                √
+                           ∥Dn (XN )∥Lq ≤ 2n/q C q (T 2−n )β .
+
+No independence of these increments is used. The finitely many coarse levels are con-
+trolled by unit partitions. Minkowski and a geometric sum therefore give
+                                ⃦               ⃦
+                                ⃦∑︂             ⃦       √
+                            sup ⃦   2nη Dn (XN )⃦ ≤ Cη q,                     (19.20)
+                                ⃦               ⃦
+                             N ⃦                ⃦
+                                  n≥0                  Lq
+
+since the fine-level ratio is at most 2−(β−η−1/q0 ) < 1.
+    For a continuous Banach-valued F starting at zero, this weighted dyadic sum controls
+its C η norm. Approximate two times by dyadic points at a scale comparable to their
+separation. The two grid points differ by at most two adjacent increments, and each
+endpoint’s finer binary corrections are bounded by the tail sum of Dn . Multiplying
+by the separation to the power −η bounds that total by the weighted sum, up to a
+constant depending on T, η. Continuity identifies the endpoint limits and also controls
+the supremum norm from F (0) = 0. The finite paths are Lipschitz by (19.9). Thus,
+(19.20) gives uniform Lq C η bounds, and the triangle inequality gives the same bound
+for their differences.
+    On a fixed finite time grid, Lemma 19.8 gives Lq convergence of every point value.
+For continuous F ,
+
+                     ∥F ∥∞ ≤     max         ∥F (tk )∥ + C(mesh)η ∥F ∥C η .
+                               tk mon grid
+
+
+Apply this to XN − XM , send N, M → ∞ at a fixed grid, and then send the mesh to
+zero. The uniform C η bound proves sup-norm Lq Cauchy convergence. The deterministic
+interpolation inequality
+                                                      θ/η
+                             ∥F ∥C θ ≤ C∥F ∥1−θ/η
+                                            ∞     ∥F ∥C η                   (19.21)
+follows by bounding each increment by both 2∥F ∥∞ and its C η bound, and splitting at
+their balancing scale. Its supremum term is controlled too. Scalar Hölder in probability
+proves the Lq C θ Cauchy property. For any requested finite p, choose an admissible even
+q ≥ p and use Lyapunov.
+    The full Hölder/operator space need not be separable. Nevertheless, every finite
+path lies in the span of the countably many deterministic Lipschitz paths Aj (0, ·).
+Their C θ -closed real span is a separable Banach space. In it the same elementary
+
+                                               140
+Cauchy/subsequence construction as in Lemma 19.8 gives a strongly measurable limit
+MR on the original space. Different p limits agree by uniqueness of convergence in
+probability in the path norm. An almost surely C θ -convergent subsequence converges
+uniformly in operator norm. Finite paths have compact values on short intervals, and on
+long ones by finite additivity. Therefore, the limit has compact values at every time on
+that single path set. It starts at zero. Passing the uniform bounds from (19.20) through
+                                              √
+the path convergence proves the asserted C q bound. This proves Lemma 19.9.
+Proof of Proposition 19.1. Lemmas 19.2–19.9 construct the stated finite sums and their
+path limit, with no new probability space. Evaluation at a fixed time agrees with the
+interval limit by uniqueness in probability. Its raw row identity is (19.3), by Lemma 19.8,
+including the long-interval interpretation. The same additivity identifies each fixed in-
+crement with XR (I), proving its stated Schatten moment bound.
+    The finite paths are Gaussian linear combinations of deterministic paths. Every
+continuous linear functional on their closed path span converges in L2 to a centered
+Gaussian; finite linear combinations do as well. Thus, MR is a centered Gaussian path.
+The four real pair identities give its complexified sesquilinear row identity.
+    The construction used only compact smooth representatives, orthonormality and
+completeness, so it applies to any such noise basis. Compare two constructions using
+a fixed countable dense Schwartz phase collection and rational times. Both rows equal
+the same original raw forms. A countable null-set union, boundedness of the operators,
+phase density and path continuity give equality at all times on one probability-one set.
+This proves indistinguishability without an assumed common event for uncountably
+many raw evaluations.
+    For p ≥ 1, choose even q ≥ max(p, q0 ) with q ≤ p + q0 + 2 ≤ (q0 + 3)p. Lemma 19.9
+and Lyapunov give the first bound in (19.4). Write its resulting constant as C1 and
+let Y = ∥MR ∥C θ . If C1 = 0, then Y =√ 0 almost surely and the exponential bound
+is immediate. Otherwise, EY 2m ≤ (C1 2m)2m . Since m! ≥ (m/e)m , as follows by
+integrating log x from one to m, the mth term in the exponential series is at most
+(2ecC12 )m . For 0 < c < 1/(2eC12 ), positive Tonelli and the geometric series prove the
+second bound. This proves Proposition 19.1.
+    All constants here may depend on R, T and the fixed admissible parameters. No
+uniform-in-R path-norm estimate or C θ Sq -valued path is asserted. This constructs the
+local masked first driver on the original noise. Source-cutoff convergence, Young evolu-
+tion, canonical initial data and solution-moment asymptotics remain separate parts of
+the argument.
+
+
+20     Targets
+Goal 20.1 (Upper bound at the correct scale). Under Hypothesis 1.1, prove
+lim supt→∞ t−κ log Eu2 (t, x) < ∞, ideally with an explicit constant.
+
+
+
+
+                                           141
+
