@@ -9239,3 +9239,28 @@ Capture audit corrected a next-target 'running' label written after native
 completion to COMPLETED_AT_CAPTURE, preserving superseded text/timestamps/
 reason. No restart or source change. Private push NoRoute; full original
 upper/exact/cold-read/wiki/remote-delivery requirements open. Goal ACTIVE.
+
+
+### Actual compact mean/Cameron and generic Young upper candidate frozen
+
+Added notes/integrated_cameron_mean.tex (7proofs) and
+notes/integrated_young_upper_foundation.tex (2proofs). All141prior proof
+bodies unchanged by author check. Complete accepted C1-C3 Sections1-8
+and E1 generic statement/Sections2-3 translated; fixedR and non-trace
+guards retained, E2-E4 actual concentration/head/product excluded.
+Actual fractional covariance products, compact mean maps, supported raw
+tensor, GIVEN-W stopped residual covariance and exact delta norm, plus
+refined LEFT Young perturbation preserving deterministic endpoint.
+No uniformR projection tail, new field/law or original moment upper.
+
+Clean197-page build:0errors/undefined references/citations/overfull boxes.
+All10new/context/bibliography pages188-197 and primary Young13/61/62
+inspected. Literal String.raw/C0/proof-end/unique-label checks PASS.
+Held primary source hash/key/exact page identities checked; no fullbook
+audit. Frozen50input packet:36full texts/13typed PNGs; media preflight
+PASS. Fresh Le Max93%weekly/shortunknown, firstParty claude.ai doctor and
+actualOpus5.5READY verified. Full independent integration gate PENDING.
+Old Mathlib finite power-mean COMPLETE type/actual guards supplied, no
+kernel proof vote/compiler/new fact;80facts22seams/L0PROPOSED unchanged.
+Actual concentration/spectral/product/point/upper/PB/OC/WS and final
+whole-paper/cold-read/wiki/remote delivery remain open; goal ACTIVE.
