@@ -9619,3 +9619,41 @@ Durablelessonsnow: exactsource/normalizedartifactidentityandreadingcoverage
 muststayseparate; footnoteandguardrolesprecise; proofdependencycompression
 requiresactualconsumerverificationnotonlyexistenceofstrongertheorem.
 CurrentBTacceptanceisNOTaGCsubstitutionreview. No newskill/unchangedrerun.
+
+
+## 2026-11-01 — full uniform E product integration frozen
+
+Previous goal turn made verified progress: actual BT source37f322f/
+adoptione157b01,8proofs/clean223pages/26HIGHchecks; all old jobs terminal.
+The US target was frozen before translation. Added
+notes/integrated_uniform_products.tex with7complete proofs translating
+US1-US4 sourcea14c6bb Sections2-8 and six adopted clarifications. Actual
+E closure/fixedR lift only for identity; ALL quantitative constants use
+k_E alone. Closed form/quarter phase/spectral bottom/physical identity,
+scalar-time completed averaging/rate, exact primitive/Young/SP baseline,
+full good/bad cells/true last, polynomial control balls and ANY residual
+max1 ordered-product bound with delta-FIRST limits. All original models,
+amplitudes/d1/2/3/white/subcritical/zero retained. No stochastic moment or
+point/score/exact-limit conclusion from US alone.
+
+All177prior proof bodies unchanged; preformatC0/String.raw/format-tex/
+unique-label/proof-end checks PASS. Three overflows split BEFOREfreeze;
+phase(u,v) versus scalarz, driverd, localD_M and zero lift clarified before
+freeze. Clean230pagePDF:0errors/undefined/overfull. All10final PNGs221-230
+inspected. Selected primary Teschl six mathematical/edition images reused
+at unchanged verified hashes; Friz13/61/62 read this turn and actual
+sourcePDF/page identities verified. Fullbook/publisher audit not claimed.
+Old AMGM/powermean types at actual guards only, no compiler/newfact;
+80facts22seams/L0PROPOSED/decision4 unchanged. Full independent actual
+Opus5.5/HIGH source/proof/actual-application gate PENDING. Packet/evidence in
+reviews/2026-11-01-uniform-products-tex-integration/. Fresh focused root/
+active fetch and <HUB> readcheck NoRoute; shared science untouched,
+no current synchronization/parity. No contact/HPC/companion/Skorohod/
+sibling/source repair/publication. GC substitution remains UNREVIEWED.
+
+Pre-freeze set-e diffcheck caught inherited trailing spaces in numbered
+blank rows of the copied Young excerpt. The NEW excerpt copy and packet
+were normalized per-line, custody/manifest hashes recaptured before Git
+freeze. Original primary carrier/PDF left unchanged; no mathematical
+content or source identity equated across different bytes. Future copies
+need per-line normalization as well as a single EOF newline.
