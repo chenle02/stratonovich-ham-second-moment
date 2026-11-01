@@ -8521,3 +8521,30 @@ read-only refdb search path. Evidence: target-alignment-build-v1.json.
 The dependency manifest is bound to414758c before this wording-only edit;
 its MAIN hash remains the honest audited baseline. It is not silently
 rebound to the successor. Mathematical integration is still pending.
+
+
+## 2026-11-01: covariance and temporal TeX integration candidate
+
+Previous goal turn: PROGRESS (2f93f57 import audit, manuscript target/build).
+Target frozen before translation; mathematical statements reuse accepted
+scientificaf9b1ad/81d9158 with their adoption adjudications. No new range,
+constant, operator/moment conclusion or Lean fact is proposed.
+
+Added notes/integrated_covariance_foundation.tex as an internal section:
+8complete analytic statements/proofs, full original Radon model class,
+unitary Fourier and actual(2pi)^d raw covariance factor; same-W auxiliary
+completion, finite-linear Gaussian comparison and genuine d2 quotient
+counterexample; complex/signed modulation, correlated products, b0=t and
+Bochner low-frequency averages. All60old main-file proof bodies unchanged.
+Main source inputs the new module. Clean116-page build:0errors/undefined
+references/citations/overfull boxes. format-tex applied. PDF108-115 visually
+inspected in full; no clipping/overlap observed. All.bib/refdb unedited.
+
+Packet reviews/2026-11-01-covariance-tex-integration contains target freeze,
+accepted source notes/adjudications, exact model extraction,8-claim crosswalk,
+worker honesty, build hashes, rendered text and all8page images. Fresh
+explicit<account A> <plan removed> identity and native actualOpus5.5 READY probe
+verified; firstParty claude.ai doctor retained. Independent integration
+correspondence review is PENDING at this source freeze. No acceptance,
+whole-paper or final cold-read clearance is inferred. Full PB/OC/WS and
+remaining driver/source/lower/upper integration duties stay open.
