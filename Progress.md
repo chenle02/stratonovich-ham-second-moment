@@ -10177,3 +10177,40 @@ checkout in the named whole-review state directory. Check the EXACT ticket
 terminal receipt and changed wiki page/commit before counting completion.
 Do not restart or modify the queue service to accelerate this request.
 Whole-argument session44594 remains LIVE; no source/PDF change or verdict.
+
+
+## 2026-11-01 — whole-review timeout preserved; same-contract continuation LIVE
+
+Original whole-argument session44594 is TERMINAL exit4. Its actual receipt
+reports timeout after3601.406seconds, acceptedfalse, actualOpus5.5/HIGH and
+verified route, no final raw/parsed scientific report. Coverage is false:
+one transport-timeout diagnostic and142 undelivered manuscript-image
+bindings. This is NOT a scientific verdict, acceptance or complete review.
+All401 live/packet/committed/native-workspace/receipt identities still match.
+Archived all413 native files and read back every SHA256; preserved original
+timeout receipt and full read ledger. See timeout-retention-v1 and the
+225381330-byte timeout-native-v1.tar.gz. No old failure was relabeled.
+
+[held back: AI account details]
+
+Launched the one supported same-session timeout continuation. Existing
+provider session a31a8981-7180-4654-8ec1-efb81eb57128, process session13739,
+confirmed LIVE by polling, no terminal receipt at capture. Output is
+../stratonovich-whole-argument-review-v1/continuation relative to this
+checkout. Original native44594 is no longer live. Keep the candidate4a65c79
+and all401 inputs frozen while13739 runs. At terminal validate actual model,
+canonical report/pass/receipt, full continuation read-ledger lineage and
+all63 obligations before findings adjudication. Original timeout remains
+unaccepted even if a later continuation succeeds. Cold read NOT DISPATCHED;
+wiki ticket remains pending as last verified. Goal completion unproven.
+
+Also verified exact old intake ticket
+tk-20261030-010856-codex-stratonovich-spectral: gold BOOK-EXEMPT book
+acquisition, not full six-layer digestion. Canonical <HUB> title/author,
+370pages and SHA256ee2cfd1c9fdc41ef5a585ef8e9657dc632f92b557aeb9c052afe5164a02a2917
+match the held second-edition source. Original receipt retained externally;
+summary teschl-intake-validation-v1. No new source theorem/definition or
+frozen source-manifest change, whole-book audit or local PDF-arrival claim.
+
+All proof/PDF/Lean bytes unchanged,80finitefacts/22seams/L0PROPOSED retained.
+No HPC, correspondence, public release, companion or Skorohod development.
