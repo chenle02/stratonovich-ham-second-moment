@@ -154,8 +154,15 @@
   13exact PNGs/65raw archive files verified.197pages clean;141prior bodies
   unchanged. Actual fixedR compact mean/Cameron covariance and exact
   delta norm, generic endpoint-preserving Young bound; no moment upper yet.
-- **Immediate next:** integrate uniform-radius E mean/regulator (U), then
-  actual stochastic anchor/spectral/tube/product/point upper/PB/OC/WS.
+- **Accepted U TeX integration:** scientificd90c4bc,actualOpus5.5/HIGH,
+  26passingchecks418.169seconds,no requiredrepairs. Native92636 TERMINAL3
+  invalid-report preserved. Canonical UNIQUE one-brace syntax recovery,
+  byte-reversible/no newprovider calls, reranallgates: ACCEPTED recovered.
+  39five-wayinputs/31fulltexts/8exactimages/53raw+4recoverymembers verified.
+  Five proofs,203pages clean,150prior unchanged. UniformR actual E linear
+  mean/regulator/Cameron only; no stochastic/moment upgrade inferred.
+- **Immediate next:** integrate radius-explicit actual E stochastic anchor
+  (SA), then signed spectral/phase/tube/product/point upper/PB/OC/WS.
   Keep the frozen PB/OC/WS result set and full original model scope. The
   import interfaces are mapped; avoid repeating that inventory as a new round.
   Continue consolidating complete proofs into TeX/PDF, with clean builds
@@ -9327,3 +9334,45 @@ powermean type unchanged, no new compiler/fact;80facts22seams/L0PROPOSED.
 Freshroot/active fetch and focused <HUB> readcheck failedNoRoute; both
 localtrees were clean before this owned isolated wave. Remote state/parity
 unknown; no shared scientific edits, reset/stash, systemfix or contact.
+
+
+## 2026-11-01 — U integration accepted via native syntax recovery
+
+Sourcefreeze d90c4bc42b02e514c7bdd1d6b3af887cbc8887ac,5complete proofs.
+ActualfirstPartyOpus5.5/HIGH26checks (24PASS,2notes),418.169seconds, no
+requiredrepairs. Native92636 TERMINAL3 invalid-report, not a live job and
+not a scientific acceptance. Complete coverage and actual route verified.
+Canonical recover-report dryrun and new recovery directory inserted ONE
+unique missing closingbrace byte17827; byte-reversible, zero providercalls.
+Allordinarygates/canonical parse/pass/correspondence/fullcoverage validate
+withallow_recovered=true PASS; recoveredreceipt accepted=true. Original
+raw/refusal preserved unchanged,53native+4recoveryfiles SHAreadbackverified.
+All39input bindings live/packet/Git/nativeworkspace/finalreceipt verified
+BEFORE adoption.31fulltexts+8typedexactPNGdelivered. No final TeX/PDF edit;
+clean203pages,150prior proof bodies unchanged. All7optional findings fully
+adjudicated in reviews/2026-11-01-uniform-e-mean-tex-integration/adjudication-v1.md.
+
+UniformR E-only actual physical mean/heat/truefrequencytail, dimension-free
+time tensor and actual givenW residual Cameron norm accepted; infinite
+spatialhead permitted, no uniformF/noisemean/concentration/pointupper claim.
+Complete old finitepowermean type/actualguards checked;80facts22seams,
+L0PROPOSED/decision4 unchanged, no compiler/newfact/package/HPC/contact.
+
+Durable lesson applied NOW: native exit3 must be diagnosed by its receipt;
+this was one syntactic brace, not a coverage/proof failure. Use EXISTING
+canonical syntax-only recovery in a NEW directory, preserving raw bytes and
+refusal, and require its unique reversible operation plusALLacceptancegates.
+Do not manually rewrite JSON or re-run a completed passing scientific vote.
+Recovery evidence is separate from the old refused receipt. This is a
+retrieved existing native contract, not a new generalized repair skill.
+Copied context has an inherited trailing blank EOF reported by diffcheck;
+no TeX structural/build defect, no clean-whitespace claim, frozen inputs
+leftunchanged. Future generated excerpts should rstrip+single newline.
+
+NextSA target frozen BEFOREtranslation in
+reviews/2026-11-01-radius-anchor-tex-integration/. It records all3fixedQ
+conditions, exactrescaled outerSchur factors/whole-space envelopes, both
+variances, actualsameW allLv path, correlatedprojectedtupleexpectednorm,
+strictgrowingRdecay. NoSAtranslation/proofacceptanceyet. GCfinitenessaudit
+remainsUNREVIEWED; no oldbranchremoved. Final upper/PB/OC/WSwholeargument/
+coldread/lit/wiki/remoteparity remainOPEN. Initialsourcepush failedNoRoute.
