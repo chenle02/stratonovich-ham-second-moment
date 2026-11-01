@@ -1,18 +1,20 @@
-Last updated: 2026-11-01 23:22 UTC (Codex)
+Last updated: 2026-11-01 23:31 UTC (Codex)
 
 LATEST USER DIRECTION: derive the actual constants, whatever computation yields.
 Chen matching is not a completion requirement.
 
 ## ⏭ Next session: where to stand and what to do
 
-After23:30UTC on2026-11-01, revalidate the required actual first-party
-Opus5.5/HIGH route with native doctor and ONE bounded READY probe, then
-if genuinely available dispatch the frozen independent spatial-ratio
-finiteness draft review. Before that time do not retry known-denied slots.
-The reset is provider evidence of a possible window, not guaranteed capacity.
+First inspect ACTIVE Progress.md and the retained post-reset capacity
+receipt before attempting another review. The actual23:30UTC probe already
+FAILED with firstParty429 weekly limit, native text resets9pm
+(America/New_York), exact date unspecified. Do not repeat that denied
+probe just because the old short-window reset passed. Resume required
+Opus5.5/HIGH reviews only after genuinely restored configured capacity.
+No reviewer is live; no new proof cycle or unreviewed adoption meanwhile.
 
 ACTIVE remains ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave,
-branch research/fixed-mask-young-20261031, clean workflowb830a42401c7f5eb5918ba29c05f0135c6b923fc.
+branch research/fixed-mask-young-20261031, clean workflow30611259c256415bc6eb5007f4334164fadfc7f2.
 Read its current Progress.md first. Latest user directive is to derive the
 actual constant, without requiring Chen's guessed constant. Full original
 model/dimension/amplitude/data/zero and verification scope is preserved.
@@ -2125,11 +2127,19 @@ Pushed3192912 and verified both corresponding <HUB> checkouts clean.
 
 [held back: collaborators' unpublished work]
 
+
+2026-11-01b268e6f/3061125: author inspection found existing signed point
+upper already gives finite normalized rate before positive-score comparison;
+its explicit graph reaches112proofs without old full upper or final theorem.
+Candidate reordering only, no science adoption. Actual post-short-reset
+native availability probe refused weekly429 with zero tokens; raw evidence
+retained. No mathematical review ran. All pending reviews and full scope stay.
+
 ## Repo & git state at handoff
 
 ROOT master before this HANDOFF-only commit:
-051555ac14b9e3428548a354d955f36fdb2ef423, clean and origin/<HUB> equal.
-ACTIVE research workflowb830a42401c7f5eb5918ba29c05f0135c6b923fc,
+e378ab65ff967400ae883850581dc736c3abf2b0, clean and origin/<HUB> equal.
+ACTIVE research workflow30611259c256415bc6eb5007f4334164fadfc7f2,
 clean and origin/<HUB> equal after its actual serial sync.
 Main scientific composition epoch887fbfbe0fa4368d6b32a436615d73349b2445d8.
 Separate finiteness draft epoch3c375e63d3253bd571a604dae7a82dfa9c49ef42.
