@@ -8293,3 +8293,32 @@ Le's exact instruction in this thread:
   continuingthederivedconstantwork. Earlier dated source-match blockers
   remainhistory, not current workflow requirements. Goalserviceolderwording
   must not override this later explicit user instruction.
+
+## OC fit accepted; full derived-bound proof prepared — 2026-10-31
+
+- Existing37882TERMINAL0: actualOpus5.5/HIGH,17PASSchecks368.062s,
+  PASS_WITH_NOTES,no requiredrepairs. Canonicalparse/pass/correspondence/
+  fullcoveragePASS;21five-waybindings and36rawarchive members readbackhashed
+  BEFOREclarity. Rawreportunchanged. All9notesadjudicated.
+- Strongeruniformeta1negative-signargumentofferedbyOpusisOUTSIDEtarget
+  andNOTadopted/used, avoidingreviewerself-authorship. Rootalsoflagsits
+  'opencells'overstatement:onlyU_jopen;first-indexA_jareBorel,whichsuffices.
+  FullproofusesexplicitBorelcells,notthatincorrectreasoningsentence.
+- NEWAUTHORPROOFnotes/all-model-occupation-ceiling.md suppliesOC0-OC4:
+  C4->actualH_sp squaremap,fullOrawnorm/physicalmixedpairing,measurability,
+  energy/dilation/ratio,unit-H1countablenear-selection,epsremoval,andT/v
+  globaloptimizations. Gamma0energy0provedbydilation;A0handledseparately.
+  ALLNEWOCconclusions awaitOWNFULLgate,notacceptedfrom17HIGHFITalone.
+- DerivedcoefficienthasnaturalC_occ form andequivalentE_eta form; no
+  forcedChenmatch. Theproofalsoexpresses a commonSPATIALenergy bracket
+  2^m M_a^(-1/k)F0(E_sp)<=C2<=2^m K0^(1/k)F0(E_sp), usingoldB(18)
+  lowerandnewceiling. Botha-dependentfactorsareexplicit;notanexactnumeric
+  evaluationofC2. SourceF_a comparisons retainedasoptionalconsequences.
+- Newfullpacket24texts272668bytesincludesLe'srevisedcontract. No new
+  formalclaim/compiler/factcount;78facts21seams/L0unchanged. Strictloggap
+  reusedatexacttypeguards;allrough/time/energy/momentanalysisunformalized.
+- Timelynumericslesson6642f8c59e46fe95cb793956e42241ed57497992pushed:
+  sharedfactors/FFTParsevalcancellation/roundofffloor scope,existingrule
+  updatednotduplicated.550/1024headline45/gates/projections/byteparity/
+  strictbudgetPASS;actualFFTqueryrank2. SharedLabhaslaterforeigncommits,
+  trackedclean0/0atlastcheck;ourskillunitremainspushed. No foreignWIPtouched.
