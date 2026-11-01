@@ -86,8 +86,12 @@ norm plus the $\theta$-H\"older seminorm.
     \ge |B_{L+1}|\Gamma(B_L)>0,
   \]
   and the compact-support estimate makes it finite. For every real compact
-  smooth positive-time $\tau$, the norm of $\tau\otimes q$ is
-  $Q_{\rm sp}\|\tau\|_a^2$. This temporal norm is strictly positive for
+  smooth positive-time $\tau$, the tensor identity is
+  \[
+    \|\tau\otimes q\|_{H_W}^2=Q_{\rm sp}\|\tau\|_a^2.
+  \]
+  Here the temporal norm is computed on any finite interval containing
+  the support of $\tau$. It is strictly positive for
   signed nonzero $\tau$. Indeed, zero-extend this deterministic test and
   use the positive Laplace factorization from
   Lemma~\ref{L:masked-time-completion} to write
@@ -124,7 +128,7 @@ norm plus the $\theta$-H\"older seminorm.
   \end{equation}
   These functions are real smooth on finite time-space compacts, supported
   spatially in $B_{2R}$, with bounded derivatives there. For smooth compact
-  real $F$, and also for the admitted wave tests of
+  real positive-time $F$, and also for the admitted wave tests of
   \eqref{E:variance-actual-form},
   \begin{equation}\label{E:driver-literal-covariance}
     \E[W_{\mathbb C}(\zeta_RF)g_j]
@@ -163,7 +167,7 @@ norm plus the $\theta$-H\"older seminorm.
 \subsection{Gain, adjoints and actual localization}
 
 \begin{lemma}[Deterministic coefficient operators]\label{L:driver-gain-localization}
-  The statewise integral
+  For $I\subset[0,T]$, the statewise integral
   \begin{equation}\label{E:driver-coefficient-operator}
     A_j(I)z=\int_I S(-t)B(H_{j,R}(t))S(t)z\ud t
   \end{equation}
@@ -194,8 +198,9 @@ norm plus the $\theta$-H\"older seminorm.
   convolution and its compact smooth derivative bounds. Hence,
   $B(H_{j,R}(t)):E_r\to E_{r+1}$ is bounded: its second entry is a
   multiplier of the displacement in $H^r$. The integrand in
-  \eqref{E:driver-coefficient-operator} is strongly continuous on states
-  in $E_{r+1}$ and uniformly bounded there. Statewise Bochner integration
+  \eqref{E:driver-coefficient-operator} is strongly continuous with values
+  in $E_{r+1}$ for each input in $E_r$, and uniformly bounded in that
+  operator norm. Statewise Bochner integration
   proves~\eqref{E:driver-gain-one}, including the Lipschitz operator-norm
   primitive $A_j(0,t)$. Norm continuity of $S(t)$ is not needed.
 
@@ -421,7 +426,7 @@ Proposition~\ref{P:wave-two-variances}.
   eigenvalue max-min show that its expected $S_q$ norm to the $q$th power
   tends to zero, uniformly in $M>N$. Since the operator norm is at most
   the $S_q$ norm, this gives $L^q(\mathcal B(E))$ Cauchy convergence.
-  A common nonvanishing envelope alone would not give this conclusion.
+  This Cauchy estimate uses the vanishing tail traces.
 
   All finite sums lie in the separable closed real span of the countably
   many deterministic $A_j(I)$ in $\mathcal B(E)$. For an elementary
@@ -514,8 +519,7 @@ Proposition~\ref{P:wave-two-variances}.
   On a fixed finite time grid, Lemma~\ref{L:driver-interval-limit} gives
   $L^q$ convergence of every point value. For continuous $F$,
   \[
-    \|F\|_\infty\le\max_{t_k\ {
-    m on\ grid}}\|F(t_k)\|
+    \|F\|_\infty\le\max_k\|F(t_k)\|
     +C(\operatorname{mesh})^\eta\|F\|_{C^\eta}.
   \]
   Apply this to $X_N-X_M$, send $N,M\to\infty$ at a fixed grid, and
@@ -530,7 +534,7 @@ Proposition~\ref{P:wave-two-variances}.
   $C^\eta$ bound, and splitting at their balancing scale. Its supremum
   term is controlled too. Scalar H\"older in probability proves the
   $L^qC^\theta$ Cauchy property. For any requested finite $p$, choose an
-  admissible even $q\ge p$ and use Lyapunov.
+  even $q\ge\max(p,q_0)$ and use Lyapunov.
 
   The full H\"older/operator space need not be separable. Nevertheless,
   every finite path lies in the span of the countably many deterministic

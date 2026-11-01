@@ -1,0 +1,26 @@
+{
+  "scope": "Exact homogeneity falsification and reproduced JS escape mechanism; not a proof of the full driver",
+  "norm_control": {
+    "setup": "Normalize nonzero tau tensor q to H_W norm1; scale tau by c2",
+    "c": 2,
+    "scaled_norm": 2,
+    "scaled_norm_squared": 4,
+    "covariance_quadratic": 4,
+    "v1_unsquared_identity_false": true,
+    "corrected_squared_identity_consistent": true
+  },
+  "escaping": {
+    "original_grid_source_repr": "'\\\\|F\\\\|_\\\\infty\\\\le\\\\max_{t_k\\\\ {\\n    m on\\\\ grid}}\\\\|F(t_k)\\\\|\\n    +C(\\\\operatorname{mesh})^\\\\eta\\\\|F\\\\|_{C^\\\\eta}.\\n  \\\\]\\n  Apply this to $X_N-X'",
+    "js_non_raw_backslash_r_m_char_codes": [
+      13,
+      109
+    ],
+    "literal_backslash_r_m_char_codes": [
+      92,
+      114,
+      109
+    ],
+    "strategy": "Use String.raw TeX patches and max_k; scan control characters before formatting",
+    "mechanism_reproduced_in_js_tool": true
+  }
+}

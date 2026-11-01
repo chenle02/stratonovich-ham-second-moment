@@ -8774,3 +8774,22 @@ Fresh selected Le <plan removed> identity/headroom, firstParty claude.ai doctor 
 actualOpus5.5READY retained. Independent integration review PENDING.
 No numerical/Lean rerun or companion/HPC action. Fresh fetch stillNoRoute;
 full PB/OC/WS and final whole-paper/cold-read/delivery remain open.
+
+
+AD v1 native18283 TERMINAL2,actualOpus5.5/HIGH487.364seconds,valid
+canonicalFAIL/accepted=false. Two transcription defects: norm vs squared
+norm in tensor identity and a corrupted max-grid subscript. All27old
+identities matched before repair;42rawmembers archived/read-back verified.
+Original FAIL/high report and receipt remain unchanged. The correct held
+source and main construction are restored, not replaced by new mathematics.
+
+V2 explicit squared H_W norm, max_k grid display; positive-time/interval/
+strong-output/q0 domains clarified. Four of9new proof blocks changed;
+5others and84prior bodies unchanged by AUTHOR execution checks. Allv2TeX
+patches used String.raw, C0 controls scanned BEFORE formatting. Actual JS
+escape codes and exact homogeneity controls retained. Clean143-page build,
+0errors/undefined/overfull, all9pages133-141 re-inspected including exact
+changed formulas. Packet-v2 media preflight PASS:21texts/9typed PNGs.
+Fresh Le <plan removed> identity/headroom and firstParty doctor verified. New full
+same-model/HIGH gate PENDING; no confidence change or old-failure recovery.
+No new Lean, source/Young/moment, companion or publication conclusion.
