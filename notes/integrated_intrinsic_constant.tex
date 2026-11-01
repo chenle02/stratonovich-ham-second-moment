@@ -3,10 +3,14 @@
 
 Retain every original covariance and amplitude.
 Write $a=\alpha_0$, $I=(0,1)$, $K(s,t)=|s-t|^{-a}$ and
-$H_I=H_t\otimes H_{\mathrm{sp}}$ for the ORIGINAL raw covariance.
+$H_I=H_t\otimes H_{\mathrm{sp}}$ for the original raw covariance.
 Keep the uniform $E$ mean $\mathcal T_R=T_R(C_t\otimes I)$ and
-$C_{\rm mean}$ of~\eqref{E:uniform-completed-mean}, with fixed
-$2<r<2/a$. To distinguish it from the map below, write $J_R=T_R$.
+$C_{\rm mean}=M_0\|C_t\|$ of Section~\ref{S:uniform-physical-products},
+with exactly the fixed $r$ chosen there. In particular $2<r<2/a$.
+To distinguish it from the map below, write $J_R=T_R$.
+For a bounded multiplier $V:H^{1/2}\to H^{-1/2}$ write
+$B_E(V)(u,v)=(0,Vu)$, the actual $E$ operator of
+Lemma~\ref{L:uniform-E-lift}.
 The physical mask is $m_R=\eta(\cdot/R)^2$, used once.
 Let $\mathcal C_{\mathrm{pos}}$ be the full nonseparable class
 in~\eqref{E:variational-positive-class}.
@@ -16,6 +20,8 @@ positive scores $S_c^{\mathrm{pos}}$ from
 Section~\ref{S:unmasked-variational}.
 No first-moment or author-constant interpretation of the label one
 is assumed.
+We assume $\Gamma\ne0$ through the following comparison lemmas.
+The theorem treats zero covariance directly.
 
 \begin{lemma}[Raw inclusion and the actual smooth mean]
   \label{L:positive-raw-embedding}
@@ -79,6 +85,13 @@ is assumed.
   prove the bound, including white and singular Radon covariances.
   Thus $t\mapsto\Psi_t$ is continuous, bounded and compactly supported
   as an $H_{\mathrm{sp}}$-valued field, and belongs to $L^2$.
+  Its image under $J_{H_{\mathrm{sp}}}$ is the original raw test class
+  of $\Psi$. Indeed, the separated compact smooth approximants in
+  Lemma~\ref{L:cameron-supported-tensor} converge uniformly on one common
+  compact support. The local bound above and the temporal Schur estimate
+  give convergence both in $L^2(I;H_{\mathrm{sp}})$ and in the original
+  covariance norm. Their finite tensor identifications therefore have
+  this same limit.
   Formula~\eqref{E:positive-bochner-inclusion} and absolute Fubini give
   \[
     \|\Psi\|_{H_I}^2
@@ -195,6 +208,8 @@ is assumed.
     &\le2+2\sum_i\ell_i\|W_i\|-q^2/2
     \le2+2Cq-q^2/2 .
   \end{align*}
+  For fixed $f_i$, the map $L\mapsto v_L(f_i,f_i)$ is bounded linear;
+  hence the form of the Bochner average is the average form.
   Here $\lambda(L)\le\max(1,\|L\|)\le1+\|L\|$,
   the norm of an average is bounded by the average norm, and
   the $L^1$ mean norm is at most its $L^r$ norm.
@@ -267,6 +282,8 @@ is assumed.
   For $\varepsilon>0$ choose one near-maximizing $f_i$ per cell
   with error at most $\varepsilon$ in the square root.
   This is a finite choice, not a measurable continuum optimizer.
+  Since $\sum_i\ell_i=1$, the weighted trial error contributes
+  $2\varepsilon$ to the next inequality.
   Lemma~\ref{L:positive-physical-gram} gives
   \[
     2\operatorname{Rate}_R(\Phi)-\|\Phi\|^2/2

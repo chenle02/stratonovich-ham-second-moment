@@ -16,9 +16,9 @@
 +{,}{ }                           {status}
 +{,}{ \PrintDOI}                  {doi}
 +{.}{ Available at \eprint}       {eprint}
-+{}{ \parenthesize}               {transition}
++{}{}                             {transition}
 +{;}{ \PrintReviews}              {review}
-+{.}{}                            {note}
++{.}{ }                           {note}
 }
 
 % === Core packages ===
@@ -66,52 +66,38 @@
 
 \title{The second moment of the hyperbolic Anderson model with time-dependent
 noise: Stratonovich regime\\[0.3em]
-{\normalsize Working notes (independent mild construction, 2026-10-29)}}
+{\normalsize Consolidated working notes, 2026-11-01}}
 \author{Le Chen}
 \date{\today}
 \maketitle
 
 \begin{abstract}
-  For the Stratonovich hyperbolic Anderson model driven by a Gaussian noise
-  that is fractional in time, X.~Chen~\cite{chen:author2026:time-dependency}
-  proves the sharp existence condition and studies the large-time growth
-  of the first moment. The printed variational normalization of his
-  two-sided first-moment bounds requires clarification; no correction is
-  adopted here. He conjectures the growth of all integer moments. The source records the second-moment upper bound
-  $\E u^2(t,x)\le e^{Ct^2}$. The goal of this project is (i) an upper bound
-  for $\E u^2(t,x)$ at the correct scale
-  $t^{(4-\alpha-\alpha_0)/(3-\alpha)}$, and (ii) the sharp constant in the
-  second-moment asymptotics, derived from the model through an explicit
-  value or a fully specified variational formula. Agreement with the
-  conjectured constant is a comparison question. These notes fix the model, record exactly what is
-  known (with source pinpoints), state the targets, and list the planned
-  route. Section~\ref{S:G0} gives the mixed-term expansion and the upper
-  bound $\E u^2(t,x)\le\exp(Ct^\rho)$ for large $t$, where
-  $\rho=(4-\alpha-\alpha_0)/(3-\alpha-\alpha_0)$ satisfies
-  $\kappa<\rho<2$. It identifies a time-uniformity issue in the source's
-  intermediate estimate and recovers the quadratic-exponential bound
-  with a corrected argument. The uniform pairing estimate cannot reach
-  the target scale. Section~\ref{S:G1} computes finite-order white-space
-  and Riesz coefficients and their static calibrations.
-  Section~\ref{S:d1-upper} establishes upper bounds at the target
-  scale for $0<\alpha\le1$ in dimensions one, two and three, including
-  spatial white noise in dimension one, with explicit constants.
-  Section~\ref{S:interval-upper} gives the upper-bound argument for the
-  full homogeneous covariance class in every admissible dimension,
-  using interval fields, a uniform coefficient estimate and covariance
-  domination. The sharp constant remains open. The qualification on the
-  printed first-moment normalization concerns numerical calibrations and
-  the sharp target, and is not an input to this upper bound.
-  Section~\ref{S:near-static-lower} adds a candidate static lower comparison
-  and a near-static gap from twice the actual first-mean growth rate.
-  These internal consequences passed their own scoped independent review;
-  the original sharp constant remains open.
-  A further subsection proves temporal interpolation of the full
-  moment and recovery of the static moment constant as the time exponent
-  tends to zero; these three additional proofs passed their own scoped
-  independent review.
-  A further small-order screen tests direct Brownian clock copying
-  for a two-chain gap transform and passed its own scoped independent review.
+  We study the Stratonovich hyperbolic Anderson model with temporal
+  covariance $|s-t|^{-\alpha_0}$ and homogeneous spatial covariance
+  of order $\alpha$, for $0<\alpha_0<1$, $\alpha+\alpha_0<2$ and
+  every admissible model in dimensions one, two and three.
+  For initial data $(1,0)$, the second-moment logarithm has scale
+  $t^\kappa$, where $\kappa=(4-\alpha-\alpha_0)/(3-\alpha)$.
+  We identify its limit by an explicit variational formula over all
+  nonnegative smooth compact spacetime controls, including nonseparable
+  controls. The formula retains the covariance amplitude, kinetic
+  coefficient one and Gaussian variance-half action. Its value is
+  positive and finite for nonzero covariance and zero for zero covariance.
+  An independent full upper bound supplies the earlier finiteness inputs.
+  The sharp comparison uses actual Gaussian phase operators, source-first
+  point-moment transfer, uniform spatial-radius estimates and finite
+  optimization with nonnegative Gram entries.
+  We also derive an occupation ceiling and bounds in terms of a common
+  spatial energy. For spatial covariance $c\delta_0$ in one dimension,
+  that energy is $c^2/6$, yielding explicit bounds for the same moment
+  constant. Earlier pairing estimates and finite-order calculations are
+  retained as calibrations and records of their limitations.
+  Chen's author-version first-moment results
+  \cite{chen:author2026:time-dependency} provide comparison context;
+  their printed variational normalization is not corrected here or used
+  to prescribe the constant. The component proofs have passed scoped
+  independent reviews. Fresh whole-argument and final cold reviews of
+  this consolidated working manuscript remain pending.
 \end{abstract}
 
 \tableofcontents
@@ -160,10 +146,19 @@ Throughout we write
 \end{equation}
 
 \paragraph{Main result and dependencies.}
-The main assertion of these notes is Theorem~\ref{T:full-upper}: the
-second moment has a finite upper growth rate at scale $t^\kappa$ for
-every covariance in Hypothesis~\ref{H:homog}. The sharp constant in
-Goal~\ref{G:sharp} is open. Theorem~\ref{T:full-upper} uses the fixed-order
+Theorem~\ref{T:intrinsic-second-moment} identifies the original point-moment
+limit for every covariance in Hypothesis~\ref{H:homog}.
+Its full variational domain and normalization are displayed in
+\eqref{E:intrinsic-positive-formula}.
+Theorem~\ref{T:intrinsic-occupation-ceiling} and
+Corollary~\ref{C:intrinsic-spatial-bracket} give derived bounds;
+Section~\ref{S:intrinsic-white-evaluation} evaluates the white spatial
+energy and its resulting moment bounds.
+These bounds need not be attained at the moment constant.
+
+The independent earlier Theorem~\ref{T:full-upper} establishes finite
+upper growth at scale $t^\kappa$ and precedes its uses proving
+variational finiteness. It uses the fixed-order
 construction proved in Lemma~\ref{L:joint-fixed-order}, the Gaussian
 and complex phase estimates in Sections~\ref{S:static-phase}--\ref{S:static-all-orders},
 and the interval coefficient and inventory estimates in
@@ -179,6 +174,16 @@ arguments are retained to record their separate hypotheses
 and limitations. Section~\ref{S:d1-upper} also gives explicit constants for
 $\alpha\le1$; the full-class theorem asserts a finite uniform constant,
 without giving a numerically optimized value.
+The later proof constructs the actual operator and its retaining sources
+in Sections~\ref{S:actual-operator-driver}--\ref{S:constant-phase-young},
+then proves the same-solution lower bound and positive-control scores
+in Sections~\ref{S:actual-raw-block-lower}--\ref{S:unmasked-variational}.
+The actual Gaussian upper argument culminates in
+Sections~\ref{S:original-point-transfer}--\ref{S:original-signed-score-upper}.
+Finite Gram optimization and its physical application then match the
+upper and lower values in Section~\ref{S:intrinsic-second-moment}.
+This dependency order does not use that final identification to prove
+its own finiteness.
 
 \paragraph{Notation and source-dependent statements.}
 The target spatial degree is $\alpha$, whereas $\chi$ denotes the degree
@@ -198,6 +203,11 @@ The unconditional first-to-second moment comparison is
 Proposition~\ref{P:Jensen}. Any numerical consequence involving the
 source's $L_*$ explicitly assumes a valid first-moment lower bound with
 that constant. No correction of its printed normalization is adopted.
+When a radius is given for topological support, the closed ball is meant
+unless a strict open inclusion is specified. In particular the spatial
+cutoffs have support in $\overline B_{2R}$ and the wave Green measures
+have support in $\overline B_t$, including the sphere measure in dimension
+three. Plateau and causal-cone arguments retain their strict margins.
 
 \paragraph{Which source statements are inputs.}
 The moment estimate uses the bounded-operator Crouzeix--Palencia
@@ -1766,7 +1776,8 @@ the standing assumptions. The separate one-dimensional Riesz
 estimates retain their sharper constants and white endpoint.
 Degree-one covariance in dimensions two and three does not mean
 full spatial white noise. Section~\ref{S:interval-upper} treats the
-higher exponents by a separate argument; the sharp constant remains open.}
+higher exponents by a separate argument. The intrinsic constant is
+identified later in Theorem~\ref{T:intrinsic-second-moment}.}
 
 We retain the two-chain expansion of Proposition~\ref{P:mixed}, but
 estimate its spatial and temporal factors in a different order. The
@@ -2332,8 +2343,9 @@ $d$-dimensional solution.
 configured high-confidence acceptance remains pending. The convolution
 assumption below is additional to homogeneity. The concrete applications
 cover only the stated Riesz ranges. Section~\ref{S:interval-upper}
-establishes the full general upper scale by a separate argument;
-the sharp constant remains open.}
+establishes the full general upper scale by a separate argument.
+The present additional-assumption route is not an input to
+Theorem~\ref{T:intrinsic-second-moment}.}
 
 We retain the standing covariance assumptions and take $d\in\{2,3\}$ and
 $1<\alpha<2-\alpha_0$. Put $\delta=\alpha-1$, $q=3-\alpha$, and
@@ -4387,7 +4399,8 @@ energy term is nonnegative and its gradient penalty tends to zero.
   density theorem for arbitrary covariances is asserted, and no
   uniform estimate for a limiting infinite mixture is proved.
   Section~\ref{S:interval-upper} treats the full covariance class by
-  a different argument. The sharp constant remains open.
+  a different argument. These endpoint comparisons are not inputs to
+  the intrinsic constant theorem~\ref{T:intrinsic-second-moment}.
 \end{remark}
 
 \section{Physical and spectral energy for measure covariances}
@@ -5368,7 +5381,8 @@ hypothesis and solution-object statements and a proof-level fixed-order
 input audit. The explicit statements, independent fixed-order construction and changed
 consumers passed a fresh scoped Opus5.5/HIGH review at \texttt{f9303ed}.
 The final whole-paper cold read remains pending.
-The sharp constant remains open.}
+The intrinsic constant is identified independently in
+Theorem~\ref{T:intrinsic-second-moment}.}
 
 Write
 \[
@@ -5553,8 +5567,8 @@ Complex Hilbert inner products are linear in the first slot.
   \]
   An initial increase of the weight has no loss. Count a final return
   to $X_\lambda$ as an ending jump at $T$.
-  Each connected interval ends once. This proves
-  \eqref{E:interval-metric} and Lemma~\ref{L:interval-complex}.
+  Each connected interval ends once, giving~\eqref{E:interval-metric}.
+  This proves Lemma~\ref{L:interval-complex}.
 \end{proof}
 
 \begin{lemma}[A positive inventory product]\label{L:inventory-product}
@@ -6313,8 +6327,8 @@ on the empty tuple. This definition introduces no kernel symmetrization.
   Finally, the ratio of successive right sides of
   \eqref{E:terminal-term-majorant}, with an additional factor $|r|^n$,
   is $|r|\sqrt V T^2/((2n+2)\sqrt{2n+1})$, which tends to zero.
-  The zero-variance case is immediate. This proves the absolute series
-  convergence and Lemma~\ref{L:terminal-wick}.
+  The zero-variance case is immediate.
+  This proves Lemma~\ref{L:terminal-wick}.
 \end{proof}
 
 \begin{lemma}[Uniform series tails from scaled moments]\label{L:uniform-series-tail}
@@ -6603,8 +6617,7 @@ on the empty tuple. This definition introduces no kernel symmetrization.
   constants of Proposition~\ref{P:interval-coefficients}; covariance enters
   only through $R_\alpha$.
   The volume ratio is $|B_{T+2}|/|B_1|=(T+2)^d$.
-  This proves~\eqref{E:full-upper-bound} and
-  Theorem~\ref{T:full-upper}.
+  This proves Theorem~\ref{T:full-upper}.
 \end{proof}
 
 \begin{remark}[Claim and calibration boundary]\label{R:full-upper-boundary}
@@ -6617,7 +6630,8 @@ on the empty tuple. This definition introduces no kernel symmetrization.
   the source-normalization qualification stated earlier.
   The Skorohod exponent is compared, not used to identify constants:
   both Gaussian creation and annihilation were retained here.
-  Goal~\ref{G:sharp} remains open.
+  The intrinsic identification in Goal~\ref{G:sharp} is proved later in
+  Theorem~\ref{T:intrinsic-second-moment}, using a separate argument.
 \end{remark}
 
 
@@ -6995,7 +7009,8 @@ corresponding static terms. Set
   the corresponding Jensen rate $2L_*(a)$ in this window.
   This does not establish the original lower target
   $2^{\kappa_{\rm st}}L_*(a)$, or either sharp bound for arbitrary $a$.
-  Goal~\ref{G:sharp} remains open. The proof uses the ordinary
+  The later intrinsic formula in Theorem~\ref{T:intrinsic-second-moment}
+  does not identify either printed source endpoint. The proof here uses the ordinary
   Stratonovich pairing expansion, including self-contractions; no
   Skorohod result or sibling-project development is made.
 \end{remark}
@@ -7220,9 +7235,9 @@ Here \(p=1\) concerns \(\E u\), not \(\E|u|\).
 
   Neither \(L_*(a)\) nor \(L^*(a)\) enters this argument.
   The constant \(L_0\) is the actual static first-mean rate.
-  The original fixed-positive-time-exponent sharp target
-  in Goal~\ref{G:sharp} remains open; parameter continuity does not
-  identify its full conjectured curve. No all-\(p\), absolute-first-moment,
+  Parameter continuity alone does not identify the conjectured curve.
+  The separate intrinsic second-moment value is proved in
+  Theorem~\ref{T:intrinsic-second-moment}. No all-\(p\), absolute-first-moment,
   Skorohod, novelty or circulation result is claimed.
 \end{remark}
 
@@ -7568,7 +7583,9 @@ The analytic covariance, not its absolute-value bound, is being copied.
   representations,modulus inequalities and their possible asymptotics are
   not covered. In particular, the inequality at this first cross pair
   leaves open a shared-clock lower comparison or asymptotic equivalence
-  at higher orders. The original full sharp conjecture remains open.
+  at higher orders. This finite clock calculation does not identify the
+  intrinsic value proved later in Theorem~\ref{T:intrinsic-second-moment}
+  with the source's all-moment conjecture.
   This is not a Skorohod result or a no-go for every two-clock method.
 \end{remark}
 
@@ -7601,7 +7618,7 @@ The analytic covariance, not its absolute-value bound, is being copied.
 \input{notes/integrated_occupation_ceiling}
 \input{notes/integrated_white_evaluation}
 
-\section{Targets}\label{S:targets}
+\section{Targets and verification status}\label{S:targets}
 
 \begin{goal}[Upper bound at the correct scale]\label{G:upper}
   Under Hypothesis~\ref{H:homog}, prove
@@ -7609,22 +7626,17 @@ The analytic covariance, not its absolute-value bound, is being copied.
   explicit constant.
 \end{goal}
 
-\myCmts{Theorem~\ref{T:full-upper} establishes the unchanged full upper
-goal for every admissible dimension and homogeneous covariance.
-The interval estimate passed scoped correctness review.
-The preceding independent mild construction passed correctness review.
-The explicit hypothesis/object revision and independent fixed-order
-construction and their consumers passed their own scoped Opus5.5/HIGH
-review. A fresh whole-paper cold read remains required.
-The earlier explicit bounds for $0<\alpha\le1$ remain available.
-The sharp constant and final whole-paper cold read remain open.}
+Theorem~\ref{T:full-upper} proves this upper bound for every admissible
+dimension and homogeneous covariance, independently of the later
+variational identification. Earlier explicit bounds for
+$0<\alpha\le1$ remain available.
 
 \begin{goal}[Sharp second-moment constant]\label{G:sharp}
   Under Hypothesis~\ref{H:homog}, derive a finite constant
-  $C_2(\gamma,\alpha_0)$ and prove, for every fixed $x \in \R^d$,
+  $C_2(\Gamma,\alpha_0)$ and prove, for every fixed $x \in \R^d$,
   \[
     \lim_{t\to\infty}t^{-\kappa}\log\E u^2(t,x)
-    = C_2(\gamma,\alpha_0).
+    = C_2(\Gamma,\alpha_0).
   \]
   A variational characterization must specify its full domain, covariance
   amplitude, kinetic coefficient and Gaussian action. Derive further
@@ -7632,14 +7644,21 @@ The sharp constant and final whole-paper cold read remain open.}
   $u(t,x) = 1$ and $C_2(0,\alpha_0) = 0$.
 \end{goal}
 
-\myCmts{Goal~\ref{G:sharp} follows Le's revised direction of
-2026-10-31: derive the actual constant, whatever the computation gives.
+Theorem~\ref{T:intrinsic-second-moment} proves this limit and specifies
+its complete positive-control formula.
+Theorem~\ref{T:intrinsic-occupation-ceiling},
+Corollary~\ref{C:intrinsic-spatial-bracket} and
+Theorem~\ref{T:white-moment-bounds} derive bounds from that value.
 The original proposed bounds with endpoints
 $2^{(4-\alpha)/(3-\alpha)}L_*$ and
 $2^{(4-\alpha)/(3-\alpha)}L^*$ remain comparisons with
 Conjecture~\ref{Conj:allp}. Matching those endpoints or closing the source's
-variational gap is not a completion requirement. No correction of the
-source's normalization or equality of its energy domains is adopted.}
+variational gap is not required to identify the intrinsic value.
+No correction of the source's normalization or equality of its energy
+domains is adopted. The component integrations have passed their scoped
+independent proof and application reviews. Whole-argument and final
+independent cold reviews of the consolidated candidate, followed by
+the remaining project delivery checks, are still required.
 
 \section{Established steps and open questions}\label{S:route}
 
@@ -7664,16 +7683,27 @@ source's normalization or equality of its energy domains is adopted.}
     upper scale by independent interval fields, local Gaussian-degree
     estimates and dyadic covariance domination. The latter proof does
     not assume an endpoint representation of the spatial covariance.
-  \item \textbf{The sharp constant remains open.}
-    Goal~\ref{G:sharp} requires a lower bound beyond the unconditional
-    Jensen comparison and a matching sharp upper constant. The new candidate
-    in Section~\ref{S:near-static-lower} supplies a static lower comparison
-    for all admissible temporal exponents and a strict actual-mean gap only
-    near the static endpoint; these proofs passed their own scoped review.
-    A representation
-    using two ordered chains is a possible research direction, not a
-    proved result of these notes. The intended normalization of the
-    source's first-moment constants also remains to be clarified.
+  \item \textbf{The intrinsic constant.}
+    Sections~\ref{S:actual-operator-driver}--\ref{S:intrinsic-second-moment}
+    construct the actual phase/source framework and prove matching
+    original point-moment bounds. The upper score uses the original raw
+    variance-half action. Finite Gram optimization and positive smoothing
+    identify it with the full positive-control lower value.
+    The auxiliary label-one score is not identified with an actual
+    first-moment limit or Chen's printed constants.
+  \item \textbf{Computed bounds and the white example.}
+    Section~\ref{S:intrinsic-occupation-ceiling} bounds the same constant
+    using the full occupation class and a common spatial energy.
+    Section~\ref{S:intrinsic-white-evaluation} evaluates that energy for
+    $\Gamma=c\delta_0$ and gives explicit moment bounds and the relative
+    width of their formulas. It does not evaluate the intrinsic supremum
+    numerically or assert equality at either bound.
+  \item \textbf{Verification still to complete.}
+    Scoped reviews do not replace the fresh whole-argument skeptic and
+    final independent cold read. The source first-moment normalization
+    remains a qualified comparison question. Historical alternatives and
+    failed routes above retain their original scope; they are not new
+    premises of the intrinsic-limit proof.
 \end{enumerate}
 
 \bibliography{All,extra}

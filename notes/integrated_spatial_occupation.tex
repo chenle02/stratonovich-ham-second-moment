@@ -5,6 +5,8 @@ Retain a nonzero original covariance from Hypothesis~\ref{H:homog}
 with its actual amplitude. Set $a=\alpha_0$,
 $k=3-\alpha>1$, $q=4-\alpha=k+1$ and $D=q-2a>0$.
 The scalar $D$ is fixed. All profiles are real.
+The original positive temporal exponent and threshold imply $\alpha<2$;
+this is the strict inequality used in the scalar powers and concavity.
 The finite positive score $S_1^{\mathrm{pos}}$ is that of
 Proposition~\ref{P:variational-positive-scores}.
 
@@ -35,7 +37,8 @@ Proposition~\ref{P:variational-positive-scores}.
 \end{proof}
 
 Put $A_{\mathrm{sp}}(g)=B_\Gamma(g^2,g^2)$ and
-$b(g)=\|\nabla g\|_2^2$, initially for smooth compact profiles.
+$b(g)=\|\nabla g\|_2^2$ on $H^1$; initially $A_{\mathrm{sp}}$ is used
+only for smooth compact profiles before the extension below.
 For smooth compact $z$, write $U_z=\Gamma*z$ in its usual
 pointwise sense.
 
@@ -193,6 +196,9 @@ pointwise sense.
   For smooth compact $f$, normalization in $R_0$ proves
   \eqref{E:spatial-homogeneous-bound}, including $f=0$.
   All exponents in $N$ are positive and $N(f)\le\|f\|_{H^1}$.
+  For smooth compact signed $Q,P$, the absolute correlation is compactly
+  supported and bounded by $\|Q\|_2\|P\|_2$.
+  Local finiteness of $\Gamma$ therefore makes its physical integral finite.
   Smooth signed covariance is positive: with the ordinary transform
   $\widehat Q_{\mathrm{ord}}(\xi)=\int e^{i\xi\cdot x}Q(x)\ud x$,
   the model convention gives
@@ -238,7 +244,7 @@ pointwise sense.
   and actual multilinearity. Telescoping a difference one argument
   at a time and using $N(f)\le\|f\|_{H^1}$ proves joint continuity.
   Thus $A_{\mathrm{sp}}$ and the square pairings are continuous.
-  Smooth PSD passes to finite linear combinations of $H^1$ squares
+  PSD for smooth compact profiles passes to finite linear combinations of $H^1$ squares
   by this continuity, and its two-profile Cauchy--Schwarz gives
   \eqref{E:spatial-square-CS}.
   This completes the physical pairing argument beyond Fatou.
@@ -399,7 +405,8 @@ is imposed.
   Since $0<\alpha/2<1$, concavity on the unit time interval yields
   $\int_0^1F^2=\int_0^1b(g_s)^{\alpha/2}\ud s\le T(g)^{\alpha/2}$.
   Now use $2F(s)F(t)\le F(s)^2+F(t)^2$ and the exact row bound
-  \eqref{E:occupation-kernel-row} to obtain
+  \eqref{E:occupation-kernel-row}, whose column bound is the same
+  because $K_\star$ is even, to obtain
   \eqref{E:occupation-physical-bound}.
   Positive Tonelli is valid before finiteness is known.
   Null-time modifications affect only a product-null set, so
@@ -423,6 +430,9 @@ is imposed.
   This proves Proposition~\ref{P:occupation-physical-class}.
 \end{proof}
 
-For zero covariance all spatial pairings, spatial energies and occupation
-energies vanish; set $R_{\mathrm{sp}}=0$. The temporal identities remain
+For zero covariance all spatial pairings vanish and set $R_{\mathrm{sp}}=0$.
+The spatial and occupation energies are zero suprema of $-b/2$ and $-T/2$:
+small spatial dilations of one fixed unit compact profile make these
+energies tend to zero, with the profile constant in time for the latter.
+No zero-gradient unit state is used. The temporal identities remain
 valid, and the moment model is the free case already treated.

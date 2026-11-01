@@ -501,7 +501,11 @@ Write $E_r^{\mathrm{real}}$ for the real phase space in dimension $d$.
   Choose a countable real Schwartz orthonormal basis $\{e_k\}$ of $E_s$.
   Such a basis follows by Gram--Schmidt from a countable dense Schwartz
   family, discarding zero residuals. Schwartz density follows by smooth
-  Fourier cutoff approximation in the weighted $L^2$ norms. The same
+  Fourier cutoff approximation in the weighted $L^2$ norms:
+  approximate by compact smooth Fourier coordinates, replace $g(\xi)$
+  by $(g(\xi)+\overline{g(-\xi)})/2$, and apply the inverse Bessel/Fourier
+  maps. The resulting phases are real Schwartz, and Gram--Schmidt
+  preserves that class. The same
   density holds in $E_{s-\gamma}$.
 
   For fixed real Schwartz $z$, define
@@ -545,5 +549,5 @@ Write $E_r^{\mathrm{real}}$ for the real phase space in dimension $d$.
 These are maps into $L^2(\Omega;E_s)$ for fixed intervals. No common
 uncountable almost-sure version, random bounded operator, Hilbert--Schmidt
 realization, time path, source convergence or new solution-moment bound
-is inferred. The two variance directions will both be retained in the
-subsequent compact-operator construction.
+is inferred by this section alone. Both variance directions are retained
+in Section~\ref{S:actual-operator-driver}.

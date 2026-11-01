@@ -10023,3 +10023,65 @@ then fresh whole-argument/final cold reviews, calibration/source fidelity,
 canonical wiki and actual private Git/<HUB> convergence. No goal
 completion claim. Source/packet pushes failed NoRoute. No contact, HPC,
 companion, Skorohod, sibling scientific edit or publication action.
+
+
+## 2026-11-01 — consolidated whole-argument candidate frozen
+
+The preceding goal turn made progress: the OC/WS integration was accepted
+at 26a2820 with 31 HIGH named checks and no required repairs. This pass
+starts from that clean baseline and follows final-consolidation target V2.
+Le's actual-derived-constant instruction remains authoritative over the
+older goal-service wording; all original models and remaining gates stay.
+
+Updated the abstract, main dependency overview, goals, final summary and
+README to describe the intrinsic limit and derived bounds without treating
+local reviews as whole-paper clearance. Reconciled all 140 extracted
+numbered records from 19 adjudications after reading the original scope
+notes: 82 implemented, 32 already explicit, 17 retained with reasons and
+9 contextual. The author record is not independent acceptance or a proof
+coverage certificate. No prior record or failed attempt was rewritten.
+
+Expanded the promised local definitions, source/ordinary-Young and raw-test
+identifications, exact fixed r/C_mean and all-radius/clock quantifiers,
+form/spectrum/resolvent explanations, closed-support and origin-ball scope,
+absolute Fubini, base-space event and full-F compression guards. Separated
+specified notation collisions and narrowed the optional penalty-one wording.
+Theorem statements retain the complete model and normalizations. The old
+independent full upper still precedes variational finiteness; no circular
+use of the final C2 identification. All 213 proof blocks remain: 174 exact
+old bodies and 39 bodies with clarification/notation/ending edits; no new
+proof block. Fresh whole-argument review must check the changed bytes.
+
+The exact final source was rebuilt after three ending-only style changes,
+then all PDF/render/packet hashes were recaptured before freeze. Clean
+258-page PDF: zero errors, undefined references/citations and overfull boxes.
+All 258 pages rendered. Author visually inspected final pages 1,5,209,210,
+226,227,244,248,255,256,257,258; this is selected coverage, not an author
+claim to have viewed every image. All local labels, TeX control characters,
+proof-ending style and formatter idempotence checked. Empty bibliography
+parentheses removed without editing All.bib or source metadata.
+
+Prepared the fresh whole-argument packet: all 28 TeX files, bibliography,
+complete manuscript renders, 86 selected primary/edition images, existing
+finite source/type/application evidence and 44 section obligations plus
+19 global/source/kernel/visual/status checks. Total 401 inputs: 57 full
+texts and 344 typed PNGs. All live/packet hashes match. Primary PDF hashes
+and pages were checked read-only; these are selected pages, not full books
+or a fresh publisher/DOI audit. No external intake or source correction.
+The exact author version, published Chen-Hu/Balan-Conus/Chen2023, Crouzeix
+preprint v1, Teschl second edition and Friz-Hairer2020 identities are retained.
+
+Whole-argument Opus 5.5/HIGH gate PENDING. Doctor and actual READY probe
+verified the known first-party subscription route, not a scientific review.
+No source change is allowed during the frozen review. Then the required
+fresh independent cold read, calibration/source adjudication, canonical
+wiki/provenance and actual Git/<HUB> convergence remain. No goal,
+human, novelty, circulation or publication clearance. Existing 80 finite
+facts/22 seams and companion decision 4 unchanged; no Lean compiler run,
+new package, HPC, Skorohod work or sibling scientific edit.
+
+Le requested the current manuscript on Awesome tag8. The current active
+258-page PDF was opened there and its exact filename, client, screen/tag
+and placement were verified; unrelated viewers were preserved. No desktop
+configuration or system setup was changed. The displayed PDF is this
+consolidated candidate, not the older root-checkout scientific files.

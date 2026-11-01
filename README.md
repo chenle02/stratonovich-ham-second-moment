@@ -10,28 +10,32 @@ t^{(4−α−α₀)/(3−α)} and the sharp p = 2 constant, building on X. Chen,
 whatever the computation gives. Chen's conjectured constants remain a
 comparison rather than a required answer. See [PROJECT-GOAL.md](PROJECT-GOAL.md).
 
-**Current internal result (2026-10-31):** the correct-scale full upper is
-retained. An independently reviewed proof now identifies the original
-second-moment limit for all admissible dimensions/covariances by an explicit
-intrinsic positive-control variational constant. Scientific source40ec9a9
-passed19checks/HIGH; see the [proof](notes/physical-signed-positive-score-comparison.md).
+**Current working result (2026-11-01):** the original second-moment
+limit for every admissible dimension and covariance has an explicit
+intrinsic positive-control variational formula. The covariance amplitude,
+kinetic coefficient one and variance-half action are specified in
+[the limit theorem](notes/integrated_intrinsic_constant.tex). Zero covariance
+is treated directly. The earlier independent full upper bound is retained.
 
-The [general derived bounds](notes/all-model-occupation-ceiling.md) and
-[explicit white-space evaluation](notes/white-spatial-evaluation.md) also
-passed their full scoped reviews. The exact constant remains the intrinsic
-variational value; interval endpoints are bounds, not its evaluated value.
-The mathematical result set is frozen for integration. The tracked
-[TeX/PDF notes](notes/notes_stratonovich_ham_second_moment.pdf) contain
-90 complete proof blocks accepted at independent integration gates.
-They cover the covariance and operator foundations, actual source/Young
-flows, the original-point variational lower bound, spatial/occupation
-energies, compact Cameron means and the generic Young upper perturbation.
-The latest integration is scientific source 5e36bcb. The remaining uniform
-upper and exact-limit assembly still need integration and final review.
-Earlier failed
-cold-read records remain preserved, and no whole-paper or circulation
-clearance is implied. The official private Lean companion remains separately
-gated. Use `Progress.md` and the root loader `HANDOFF.md` for the active checkout.
+The [occupation bounds](notes/integrated_occupation_ceiling.tex) and
+[spatial-white example](notes/integrated_white_evaluation.tex) bound this
+same constant. The white spatial energy is evaluated exactly; the moment
+bounds are not an exact numerical evaluation of the intrinsic supremum.
+The auxiliary label-one score is not identified with an actual first-moment
+limit or Chen's printed constants.
+
+All planned mathematical modules are integrated in the
+[TeX/PDF notes](notes/notes_stratonovich_ham_second_moment.pdf), and each
+component passed its scoped independent proof/application review. Those
+reviews bind their frozen versions. The current consolidation adds clarity,
+repairs stale status text and retains the full proof scope; it requires
+fresh whole-argument skeptical review and the final independent cold read.
+Earlier failed attempts remain preserved. No whole-paper, goal-completion
+or circulation clearance is claimed. Calibration/source checks, canonical
+wiki propagation and actual Git/<HUB> convergence also remain open.
+The proposed private Lean companion is separately gated; local finite
+checks do not constitute its package gate. `Progress.md` is the workflow
+authority; the root loader `HANDOFF.md` identifies the active checkout.
 
 ## Start here
 

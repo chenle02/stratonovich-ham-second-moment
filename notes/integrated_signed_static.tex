@@ -36,7 +36,7 @@ No positivity is imposed on $q$.
   on tests and then uniquely on $H^{1/2}$ by density.
   The constant column recovers $V$ and proves uniqueness.
   On compact smooth $u,w$, the pairing is $\langle V,uw\rangle$,
-  so it is symmetric. Its bound and symmetry extend by density.
+  denoted $v_V(u,w)$, so it is symmetric. Its bound and symmetry extend by density.
   Complexification preserves the operator norm by splitting real
   and imaginary parts in the Hilbert norms. The pairing extends
   sesquilinearly to a Hermitian form; its diagonal is the sum of
@@ -91,6 +91,10 @@ No positivity is imposed on $q$.
   From that book's Theorem~3.6 and~(3.51)--(3.53), p.~109,
   applied after shifting, we obtain~\eqref{E:signed-form-domain}.
   Here $A\ge1$ is initially its form lower bound.
+  A bounded spectral slice below one would produce a unit
+  $D(A)$ test contradicting that form bound; hence it is also
+  the spectral lower bound. Lemma~\ref{L:signed-spectral-wave}
+  records the full bottom argument.
 
   Set $B_0=1-\Delta$. On the common form domain,
   $\tfrac12B_0\le A\le L_KB_0$.
@@ -125,6 +129,8 @@ No positivity is imposed on $q$.
 \end{proof}
 
 \begin{lemma}[The actual bottom and spectral wave]\label{L:signed-spectral-wave}
+  Write $P_V^E$ for the evolution in~\eqref{E:signed-spectral-matrix},
+  and $S_E$ for the free restriction from Lemma~\ref{L:constant-phase-free}.
   Put
   \[
     \beta(V)=\inf_{\substack{u\in H^1\\\|u\|_2=1}}q_V(u),
@@ -155,6 +161,11 @@ No positivity is imposed on $q$.
   has mass one and a support point, and normalized projections onto
   arbitrarily small bounded neighborhoods give approximate eigenvectors,
   excluding a bounded inverse there.
+  Conversely, off the closed PVM support $\Sigma$ the Borel function
+  $(h-z)^{-1}$, set to zero off $\Sigma$, is bounded for real
+  $z\notin\Sigma$, as is $h/(h-z)$ on $\Sigma$.
+  Its calculus maps into $D(H_V)$ and is a two-sided resolvent inverse
+  on the appropriate domains. Thus the spectrum is precisely $\Sigma$.
   Hence, $\lambda\le K$ and every spectral value $h$ has $h+c\ge2$.
 
   Use the phase norm
@@ -211,7 +222,9 @@ No positivity is imposed on $q$.
 \end{proposition}
 
 \begin{proof}
-  The representation~(2.63) tested against compact smooth functions
+  The imported form representation
+  \cite{teschl:14:mathematical}*{Theorem~2.14, p.~81, (2.63)},
+  tested against compact smooth functions,
   gives $H_Vu=-\Delta u-Vu$ in distributions for $u\in D(H_V)$.
   Such $u$ lies in $H^1$ and $Vu\in H^{-1/2}$.
   Consequently $(1-\Delta)u=H_Vu+Vu+u\in H^{-1/2}$,

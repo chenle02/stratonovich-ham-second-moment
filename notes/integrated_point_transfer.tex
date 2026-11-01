@@ -76,7 +76,8 @@ to constant columns on $F$.
   $m gY_{\rm fast}$ satisfy
   \begin{equation}\label{E:point-source-flow-limit}
     \E\sup_{0\le s\le t\le L}
-    \|P_E^{\epsilon,\tau}(t,s)-P_E(t,s)\|^2\longrightarrow0 .
+    \|P_E^{\epsilon,\tau}(t,s)-P_E(t,s)\|^2\longrightarrow0
+    \quad\hbox{as }(\epsilon,\tau)\to(0,0).
   \end{equation}
   The unmasked field $gY_{\rm fast}$ has the canonical source law
   for covariance $\Gamma_\delta$, spatial width $\epsilon$
@@ -88,7 +89,7 @@ to constant columns on $F$.
   The raw isometry and source domination give source and residual
   variances bounded by $\|f\|_{H_{\rm fast}}^2$, with residual variance
   tending to zero at fixed $\delta$ on every smooth compact test.
-  The Gaussian transfer theorem~\ref{P:source-gaussian-transfer}
+  The Gaussian transfer Proposition~\ref{P:source-gaussian-transfer}
   therefore gives actual driver convergence in every finite $L^pC^\theta$,
   retaining $W_{\rm fast}$ literally.
   Multiplication by fixed $g$ and the bounded $F$ extension preserve it.
@@ -108,10 +109,13 @@ to constant columns on $F$.
   On Schwartz states its first primitive has row $gY_{\rm fast}(h_R)$.
   The source indicator approximation and bounded point variances at
   positive widths identify it with the statewise integral
-  $\int S_E(-r)B(mgY_{\rm fast}(r))S_E(r)\ud r$.
+  $\int_0^t S_E(-r)B(mgY_{\rm fast}(r))S_E(r)\ud r$.
   Fubini uses $\E|ZY|\le\|Z\|_2\|Y\|_2$ when Gaussian testing is needed.
   Countable dense states, rational times and continuity give the full
   ordinary-primitive identity, as in Proposition~\ref{P:source-ordinary-response}.
+  Lemma~\ref{L:constant-source-solution} and
+  Proposition~\ref{P:symplectic-source} then identify the Young equation
+  with the ordinary interaction equation on $E$.
 
   In the temporal kernel
   $K_\tau(v)=\Gamma_{\rm E}(a)^{-1}
@@ -228,6 +232,9 @@ to constant columns on $F$.
   Proposition~\ref{P:masked-source-moments}, applied through the exact
   source law of Lemma~\ref{L:point-fast-sources}, gives the locally
   continuous measurable full solution and its $L^2$ point Picard sum.
+  The pathwise cone argument uses the realized pullback field; the point
+  second moments depend only on its Gaussian covariance through those
+  Bochner chain sums.
   We place no global unmasked field in $E$ or $F$.
   The cone is causally closed: a predecessor at distance at most $t-s$
   has norm at most $1+L-s$.
@@ -345,7 +352,8 @@ to constant columns on $F$.
   $(0,1)\to(1,\infty)$ with inverse $\delta=T^{-\kappa}$.
   Taking logs and this change of parameter proves
   \eqref{E:original-point-rate-reduction} at zero.
-  Original canonical spatial stationarity extends it to every fixed $x$;
+  Original canonical spatial stationarity, proved in
+  Proposition~\ref{P:raw-block-original-lower}, extends it to every fixed $x$;
   no stationarity of the masked operator is assumed.
 
   For zero covariance, $u=1$, all drivers vanish and $P_\delta=S_E(L)$.

@@ -11,8 +11,10 @@ Choose
     &(1-\theta)^{-1}<r<2/a,\qquad \nu\le p<2<r .
   \end{aligned}
 \]
-The auxiliary $\gamma$ and higher H\"older exponent for the actual
-phase construction can be chosen in their strict admissible gaps.
+Choose auxiliary exponents
+$0<\gamma<\min(1/2,(2-\alpha)/2)$ and
+$\theta<\beta<\min(1-a/2,(3-a-\alpha)/2)$ for the actual phase construction.
+The original strict threshold makes these intervals nonempty.
 Write $i_I:H_I\to H_W$ for the supported closed inclusion.
 For nonzero covariance the actual field is
 \[
@@ -44,6 +46,8 @@ Let $\mathcal V_{E,R}$ be their operator-norm closure in $\mathcal K(E)$.
   It has a lift $L_F$ in the exact class of
   Section~\ref{S:signed-static-wave}, with $L_Fi=iL$.
   Lift constants may depend on $R$ and are used only for identification.
+  Here $v_V(u,w)=\langle Vu,w\rangle_{H^{-1/2},H^{1/2}}$ on real
+  states, with its Hermitian extension on complex states.
 \end{lemma}
 
 \begin{proof}
@@ -120,6 +124,10 @@ Let $\mathcal V_{E,R}$ be their operator-norm closure in $\mathcal K(E)$.
   and Theorem~3.6, p.~109, (3.51)--(3.53), it represents a
   unique self-adjoint $H_V$ with $A=H_V+c\ge2$ and $D(A^{1/2})=H^1$.
   Closedness uses the definition on that book's p.~80.
+  The spectral meaning of $A\ge2$ follows from bounded spectral slices:
+  a nonzero slice below two would give a unit vector in $D(A)$
+  contradicting the form lower bound. The bottom argument below
+  uses the same representation.
 
   Put $B_0=1-\Delta$ and $L_K=3(1+K^2)$.
   The common forms obey $\tfrac12B_0\le A\le L_KB_0$.
@@ -163,6 +171,12 @@ Let $\mathcal V_{E,R}$ be their operator-norm closure in $\mathcal K(E)$.
   There are support points because scalar spectral measures of unit
   vectors have mass one; their arbitrarily small bounded slices
   give approximate eigenvectors and the reverse form bound.
+  If $\Sigma$ denotes the closed PVM support and real $z\notin\Sigma$,
+  the Borel function $f_z(h)=(h-z)^{-1}$ on $\Sigma$, zero outside,
+  is bounded, as is $hf_z(h)$.
+  Its calculus has range in $D(H_V)$ and supplies both inverse identities
+  for $H_V-z$ on their respective domains. Thus no such $z$ is spectral;
+  the approximate eigenvectors give the other inclusion.
   Hence $\lambda\le K$ and $h+c\ge2$ on the spectrum.
 
   Define $\operatorname{Cos}_t(h),\operatorname{Sin}_t(h)$ by
@@ -193,6 +207,7 @@ Let $\mathcal V_{E,R}$ be their operator-norm closure in $\mathcal K(E)$.
   \eqref{E:uniform-E-static-bound}.
   Spectral dominated convergence and scalar addition give the group.
 
+  Denote the spectral matrix evolution by $P_V^E(t)$.
   It is the actual physical $E$ wave.
   The fixed-$R$ lift in Lemma~\ref{L:uniform-E-lift} belongs
   to the precise class in Proposition~\ref{P:signed-physical-wave}.
@@ -205,6 +220,14 @@ Let $\mathcal V_{E,R}$ be their operator-norm closure in $\mathcal K(E)$.
   no lift norm or $\chi_R$ constant entered the budgets above.
   Conjugation commutes with the real structures, so real restrictions
   are the actual phases.
+  For compact $L$, finite-rank approximation and strong continuity of
+  the free group and its adjoint make
+  $v\mapsto S_E(-v)LS_E(v)$ norm continuous on finite intervals.
+  Its primitive is Lipschitz. Its Young equation is therefore the
+  ordinary bounded-interaction equation by
+  Proposition~\ref{P:constant-young-linear}.
+  This identifies the averaged static baseline without transferring
+  any lift norm into the uniform budgets.
 
   Finally, take a unit $\varepsilon$-minimizer for $W$,
   $0<\varepsilon\le1$. Since $\beta(W)\le0$, it has $q_W\le1$.
@@ -315,6 +338,8 @@ For $W_R=\mathcal T_R\Phi$ define
     \log\|S_E(\ell)U_D(\ell,0)\|
     \le C_{\rm gr}B(1+\|D\|_\theta^\nu),\qquad 0\le\ell\le B .
   \end{equation}
+  Here $D$ is any zero-start $C^\theta([0,B];\mathcal L(E))$ path;
+  no Gaussian or Hamiltonian hypothesis is imposed on this growth bound.
   The actual mean endpoints have $\|P_m^{\rm mean}\|\ge1$.
 \end{lemma}
 
@@ -510,17 +535,20 @@ For $W_R=\mathcal T_R\Phi$ define
     \label{E:uniform-residual-ratio}
   \end{align}
   uniformly in $R\ge1$, $\|\Phi\|\le M$.
+  The finite constants may be written
+  $C_{K_{\rm res}}=C(\theta,B,K_{\rm res})$ and
+  $c_B=2^{\nu-1}C_{\rm gr}B$.
   Here $D_M=C_B^r(C_{\rm mean}M)^r$.
-  If $b_\delta\ge0$ is any deterministic sequence tending to zero
+  If $b_\delta\ge0$ is any deterministic function of $\delta$ tending to zero
   at each fixed $B$, $M_B$ is as in
   Corollary~\ref{C:uniform-polynomial-balls}, and
-  $F=2\delta\log\max(1,\|P_N^{\rm pert}\cdots P_0^{\rm pert}\|)$,
+  $\mathcal F=2\delta\log\max(1,\|P_N^{\rm pert}\cdots P_0^{\rm pert}\|)$,
   then
   \begin{equation}\label{E:uniform-residual-integrated-rate}
     \limsup_{\substack{B\to\infty\\B\in\mathbb N}}
     \limsup_{\delta\downarrow0}
     \sup_{\substack{R\ge1,\ \|\Phi\|\le M_B\\Y\le b_\delta}}
-    \{F-2\operatorname{Rate}_R(\Phi)\}\le0 .
+    \{\mathcal F-2\operatorname{Rate}_R(\Phi)\}\le0 .
   \end{equation}
   No Gaussian, Cameron or Hamiltonian condition on the residuals is imposed.
 \end{proposition}
@@ -560,7 +588,7 @@ For $W_R=\mathcal T_R\Phi$ define
     \begin{aligned}
       \max(1,\|P_N^{\rm pert}\cdots P_0^{\rm pert}\|)
       &\le A_{\rm prod}\max(1,z_{\rm rat}),\\
-      F-2\delta\sum_m\log\|P_m^{\rm mean}\|
+      \mathcal F-2\delta\sum_m\log\|P_m^{\rm mean}\|
       &\le2\delta\log\max(1,z_{\rm rat}).
     \end{aligned}
   \]
@@ -580,4 +608,5 @@ For $W_R=\mathcal T_R\Phi$ define
 
 These are uniform deterministic $E$-phase product estimates.
 Their Gaussian Rayleigh application, original point transfer and
-signed-positive score comparison remain separate steps.
+signed-positive score comparison are proved separately in
+Sections~\ref{S:actual-gaussian-tubes}--\ref{S:intrinsic-second-moment}.

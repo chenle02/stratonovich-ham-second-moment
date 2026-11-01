@@ -9,6 +9,15 @@ Let $M=M_R(W)$ be the given-noise first interaction path on $E$,
 and $M^\rho$ its retaining-source paths from
 Proposition~\ref{P:source-gaussian-transfer} and the source construction.
 Here $\rho$ is the positive heat/Laplace smoothing pair.
+The retaining construction and ordinary rows are those of
+Lemma~\ref{L:source-retaining-isometry},
+Lemma~\ref{L:source-pointfield-regularity} and
+Proposition~\ref{P:source-ordinary-response}.
+The full $F$ driver and Young evolution are fixed by
+Proposition~\ref{P:constant-phase-driver} and
+Proposition~\ref{P:constant-young-linear}; their actual $E$ restrictions
+are used here. Complexifications commute with conjugation, so these
+real restrictions are the physical phases.
 For fixed $\Phi$ in the full positive-time raw $H_W$ and real $c$ set
 \begin{equation}\label{E:symplectic-combined-driver}
   \begin{aligned}
@@ -121,7 +130,7 @@ $P_D(t,s)=S_E(t)U_D(t,s)S_E(-s)$.
   \eqref{E:symplectic-source-primitive} is the integral of
   $h_\Phi^\rho$ against the literal masked source wave product.
   Ordinary Fubini is justified by
-  $|\E[ZY^\rho(t,x)]|\le\|\Phi\|_{H_W}
+  $\E|ZY^\rho(t,x)|\le\|\Phi\|_{H_W}
   \sqrt{\E|Y^\rho(t,x)|^2}$ and bounded point variance
   on this fixed compact set at positive widths.
   The source test and indicator approximation extends this to
@@ -198,6 +207,8 @@ $P_D(t,s)=S_E(t)U_D(t,s)S_E(-s)$.
   The Gaussian moment-series argument gives uniform square-exponential
   moments of these shifted path norms.
   These are Gaussian paths plus deterministic shifts, not centered sources.
+  The source-to-flow passage is the actual one in
+  Proposition~\ref{P:constant-gaussian-flow}, with these fixed shifts.
 
   Young local Lipschitz dependence gives uniform interaction
   evolution convergence in probability on every driver ball.
@@ -237,6 +248,11 @@ $P_D(t,s)=S_E(t)U_D(t,s)S_E(-s)$.
     \le\|P_n-P\|\|J_E\|(\|P_n\|+\|P\|)
   \]
   passes the identity to $P_D$ simultaneously on the whole triangle.
+  The raw $P_D$ is measurable with respect to the given $W$.
+  Thus its conservation event, which has probability one on the
+  retaining extension, also has probability one on the base space.
+  Countable states and rational times, followed by continuity and the
+  strong free-group bounds, give the displayed simultaneous event.
   Only the fixed parameters are concerned; no common path set
   over uncountably many $\Phi,c,R,T$ is claimed.
   For $c=0$ the means and evolutions are deterministic, so
@@ -312,6 +328,10 @@ $P_D(t,s)=S_E(t)U_D(t,s)S_E(-s)$.
   the $L^r$ primitive estimate gives $C^\theta$, since
   $1-1/r>\theta$. Affine pullback preserves null sets.
 
+  Here $A_{F,m}$ is the full $F$ interaction driver from
+  Proposition~\ref{P:constant-phase-driver}, and $H_{m,F}$
+  is its stopped completed mean primitive in
+  \eqref{E:cameron-actual-covariance}.
   The completed identity~\eqref{E:cameron-actual-covariance}
   at raw projection rank zero gives, for $0\le u\le\ell_m$,
   \[
@@ -321,6 +341,8 @@ $P_D(t,s)=S_E(t)U_D(t,s)S_E(-s)$.
   Compress through $i$ using the actual driver intertwining,
   $S_Fi=iS_E$, and the mean range in $iE$ preserved by $S_F$.
   Bochner expectation commutes with this bounded compression.
+  The constant columns are retained in the full $F$ driver and mean
+  until this compression; they are inactive only on the $iE$ inputs.
   Since $g_\delta\delta^{a/2}=\sqrt\delta$ and $g_\delta>0$,
   division gives the unscaled covariance
   \begin{equation}\label{E:symplectic-unscaled-covariance}

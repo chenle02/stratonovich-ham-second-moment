@@ -212,6 +212,11 @@ Recall the actual supported identity $H_I=H_t\otimes H_{\mathrm{sp}}$,
 the compact scalar covariance map $C_t:H_t\to L^r(I)$, $2<r<2/a$,
 and its completed tensor $U=C_t\otimes I_{H_{\mathrm{sp}}}$ from
 Section~\ref{S:actual-cameron-mean}.
+On finite smooth tensors $U$ agrees with the earlier $\mathcal U$;
+density gives equality of their completed maps.
+For block applications fix the same $r$ as in
+\eqref{E:cameron-block-parameters}. All $c_t,\varepsilon_J$ and
+mean norms below use that one choice.
 Choose a smooth-test orthonormal basis of $H_t$ and let $\pi_J$
 be its first-$J$ orthogonal projection, with $\pi_0=0$.
 Put
@@ -292,6 +297,12 @@ Define the actual residual fast noise and stopped $E$ driver by
 \end{equation}
 Here $T_{\delta,m}$ is the literal raw isometry
 \eqref{E:raw-block-pullback}, and $A_{m_R}$ takes its $E$ restriction.
+Its isometry is proved in Lemma~\ref{L:raw-block-inputs}.
+The symbol $H_{\mathrm{fast}}$ below denotes this same original
+covariance norm in fast coordinates, carried isometrically into $H_W$.
+The $E$ little H\"older space means the zero-start closure of Lipschitz
+compact-operator paths in $C^\theta$ norm. Compact operators on separable
+$E$ and polygonal approximation make this closure separable.
 The last interval can be empty, in which case $X_N=0$.
 
 \begin{proposition}[Uniform-radius actual Cameron bound]
@@ -309,9 +320,9 @@ The last interval can be empty, in which case $X_N=0$.
   its actual Cameron embedding has the uniform-radius bound
   \begin{equation}\label{E:uniform-actual-cameron-bound}
     \|Lh\|_{\delta,p}
-    \le\sqrt\delta\,C_B(2/B)^{1/p-1/r}
+    \le\sqrt\delta\,C_{B,E}(2/B)^{1/p-1/r}
     [M_0\varepsilon_J+M_fc_tK^{-\beta}]\|h\|_{H_W},
-    \qquad C_B\le18B^{3-1/r}.
+    \qquad C_{B,E}\le18B^{3-1/r}.
   \end{equation}
   All spatial constants are independent of $R\ge1$.
 \end{proposition}
@@ -365,17 +376,17 @@ The last interval can be empty, in which case $X_N=0$.
   The lower entry is at most one, as are both diagonal entries;
   at zero the sine quotient has value $v$.
   Its Frobenius bound is $\sqrt{3+2B^2}\le3B$.
-  Hence $G_B=\sup_{|v|\le B}\|S_E(v)\|\le3B$.
+  Hence $G_{B,E}=\sup_{|v|\le B}\|S_E(v)\|\le3B$.
   With
   \[
-    M_h(t)=\mathcal T_R(Q_{J,K}i_I^*h)(t),\qquad
-    t_m=\|M_h\|_{L^r(I_m;\mathcal L(E))},
+    \mathcal M_h(t)=\mathcal T_R(Q_{J,K}i_I^*h)(t),\qquad
+    t_m=\|\mathcal M_h\|_{L^r(I_m;\mathcal L(E))},
   \]
   the primitive increment bound and the affine time change give
   \[
     \|(Lh)_m\|_{C^\theta}
-    \le\sqrt\delta\,C_B\delta^{-1/r}t_m,\qquad
-    C_B=G_B^2[B^{1-1/r}+B^{1-1/r-\theta}]
+    \le\sqrt\delta\,C_{B,E}\delta^{-1/r}t_m,\qquad
+    C_{B,E}=G_{B,E}^2[B^{1-1/r}+B^{1-1/r-\theta}]
     \le18B^{3-1/r}.
   \]
   Here $1-1/r>\theta$, constant stopping preserves the bound,
@@ -391,12 +402,12 @@ The last interval can be empty, in which case $X_N=0$.
   \]
   Raising nonnegative terms uses only positive powers, including
   when $t_m=0$. The true partition gives
-  $\sum_m t_m^r=\|M_h\|_{L^r(I)}^r$ and $\delta n\le2/B$.
+  $\sum_m t_m^r=\|\mathcal M_h\|_{L^r(I)}^r$ and $\delta n\le2/B$.
   The exact $\delta$ weight therefore yields
   \[
     \|Lh\|_{\delta,p}
-    \le\sqrt\delta\,C_B(\delta n)^{1/p-1/r}\|M_h\|_{L^r}
-    \le\sqrt\delta\,C_B(2/B)^{1/p-1/r}
+    \le\sqrt\delta\,C_{B,E}(\delta n)^{1/p-1/r}\|\mathcal M_h\|_{L^r}
+    \le\sqrt\delta\,C_{B,E}(2/B)^{1/p-1/r}
     [M_0\varepsilon_J+M_fc_tK^{-\beta}]\|h\|_{H_W}.
   \]
 

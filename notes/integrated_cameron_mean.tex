@@ -102,6 +102,8 @@ noise class. All compactness conclusions here fix $R$.
 \end{proposition}
 
 \begin{proof}
+  Fix $s$ with $\alpha/4<s<1/2$; this interval is nonempty because
+  the original threshold implies $\alpha<2$.
   For smooth compact $q$, $\Gamma*q$ is locally smooth by
   differentiation under the compactly restricted Radon integral.
   The masked potential is smooth compact.
@@ -192,6 +194,8 @@ noise class. All compactness conclusions here fix $R$.
     C_t=K^{1/2}\iota:H_t\longrightarrow L^r(I)
   \end{equation}
   is bounded and compact for every $2<r<2/a$.
+  The displayed formula first has its $L^2(I)$ meaning; the same
+  completed map is then shown to take values compactly in $L^r(I)$.
   The operator $K$ is not trace class and $C_t:H_t\to L^2(I)$
   is not Hilbert--Schmidt.
 \end{proposition}
@@ -260,6 +264,7 @@ noise class. All compactness conclusions here fix $R$.
 \end{proof}
 
 \begin{proposition}[The compact time-space mean]\label{P:cameron-full-mean}
+  Fix one $2<r<2/a$ throughout this proposition.
   For finite tensors with orthonormal spatial labels define
   \[
     \mathcal U\left(\sum_j f_j\otimes q_j\right)(s)
@@ -380,7 +385,8 @@ These intervals are nonempty.
   by polygonal approximation.
   Its separability is Lemma~\ref{L:raw-block-inputs}.
 
-  Every observed row's slow pullback belongs to $H_I$:
+  As in Lemma~\ref{L:raw-block-inputs}, every observed row's slow
+  pullback belongs to $H_I$:
   its time support is in $[0,1]$, and approximating its indicator
   inside $I$ converges in raw norm by dominated convergence
   against the integrable time kernel and locally finite $\Gamma$

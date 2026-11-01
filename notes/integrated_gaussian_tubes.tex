@@ -127,7 +127,7 @@ All Hilbert balls below are closed.
 
 We import the set-enlargement theorem
 \cite{friz.hairer:20:course}*{Theorem~11.6, p.~190},
-with its measurability footnote on pp.~190--191.
+with footnote~3 on p.~190; p.~191 supplies the following context.
 For an abstract Wiener space, a Borel $A$ of positive mass and
 its Cameron unit ball $\mathcal K$, it states
 \[
@@ -231,6 +231,9 @@ We verify Borel measurability of every enlargement we use.
   \]
   Rayleigh has no atoms, and at the closed endpoint zero both
   probability bounds are one.
+  On the null event $\{d_\delta(X)=\infty\}$ define
+  $e^{G(d_\delta(X))/\delta}$ to be one. No value of $G$ at infinity
+  is needed and no expectation changes.
   Layer cake and Tonelli therefore order the expectations of
   $e^{G(d_\delta(X))/\delta}$ and $e^{G(\mathcal R_\delta)/\delta}$,
   even when $G$ jumps or expectations are infinite.
@@ -281,6 +284,10 @@ little $C^\theta([0,B];\mathcal K(E))$ spaces, with exact norm
     \E[X_\delta W(\Phi)]&=\sqrt\delta\,\mathcal M_\delta\Phi .
     \label{E:tube-actual-covariance}
   \end{align}
+  Its actual support is
+  $E_{0,\delta}=\overline{C_\delta(H_I)}\subset\mathscr B_\delta$,
+  where $C_\delta\Phi=\E[X_\delta W(\Phi)]
+  =\sqrt\delta\,\mathcal M_\delta\Phi$.
   The actual map $\mathcal M_\delta$ is compact at each fixed radius
   and parameters. At $R=R_\delta$,
   \begin{equation}\label{E:tube-typical-radius}
@@ -302,7 +309,9 @@ little $C^\theta([0,B];\mathcal K(E))$ spaces, with exact norm
   Every finite collection of linear statistics is an $L^2$ limit
   of joint first-chaos Gaussians, hence jointly centered Gaussian.
   The finite tuple has finite $L^2$ norm by the fixed-parameter
-  path moments in Proposition~\ref{P:radius-actual-moments}.
+  path moments in Corollary~\ref{C:radius-covariance-residuals}.
+  The raw Hilbert space $H_I$ is separable by
+  Lemma~\ref{L:cameron-supported-tensor}.
   No separability of all $\mathcal L(E)$ or full $C^\theta$ is claimed.
 
   The actual $E$ mean field $\mathcal T_R$ is the compression
@@ -334,7 +343,8 @@ little $C^\theta([0,B];\mathcal K(E))$ spaces, with exact norm
   to this exact law on its support.
   Finally Proposition~\ref{P:radius-mean-anchor}, with zero
   residual projection, gives~\eqref{E:tube-typical-radius}.
-  The three fixed-$Q$ guards make the exponent positive.
+  The third fixed-$Q$ guard $Q>2d/(1-a)$ makes this exponent positive;
+  the first two supply the path moments and chaining.
   Fast directions used for the symplectic baseline do not replace
   this global $H_I$ action or get summed as separate costs.
   Zero covariance gives zero drivers and means directly.
@@ -358,6 +368,8 @@ little $C^\theta([0,B];\mathcal K(E))$ spaces, with exact norm
     e^{F_\delta(X_\delta)/\delta}
     =\|P_{\delta,E}^R(L_\delta,0)\|^2 .
   \end{equation}
+  These are almost-sure identities for each fixed admissible
+  $\delta,R,B$, without a simultaneous event over all parameter choices.
 \end{lemma}
 
 \begin{proof}
@@ -386,6 +398,8 @@ little $C^\theta([0,B];\mathcal K(E))$ spaces, with exact norm
   Both fast velocity and displacement remain in each factor.
   No mask was commuted through a free group, and the time blocks
   remain correlated on the same $W$.
+  For zero covariance every input is zero and the ordered factors
+  are $S_E(\ell_m)$, whose product is $S_E(L_\delta)$.
 
   Proposition~\ref{P:symplectic-raw}, at the fixed instance
   $W_{\rm fast}=W\circ T_{\delta,0}$, $T=L_\delta$,
@@ -422,6 +436,7 @@ little $C^\theta([0,B];\mathcal K(E))$ spaces, with exact norm
 \begin{proof}
   Put $G_B=\sup_{|v|\le B}\|S_E(v)\|$ and
   $C_{\rm pr}=G_B^2[B^{1-1/r_t}+B^{1-1/r_t-\theta}]$.
+  The lower bound $G_B\ge1$ follows directly from $S_E(0)=I$.
   Proposition~\ref{P:uniform-actual-cameron} gives
   $1\le G_B\le3B$, $C_{\rm pr}\le18B^{3-1/r_t}$.
   Its primitive estimate, now without the covariance factor
@@ -439,7 +454,9 @@ little $C^\theta([0,B];\mathcal K(E))$ spaces, with exact norm
 
   The generic Banach Young bound supplies $c_Y=c_Y(B,\theta)>0$
   with $\log\|U_d(u,0)\|\le c_Y(1+\|d\|_{C^\theta}^{\nu})$
-  for $u\le B$. This follows from the earlier growth bounds by
+  for $u\le B$. This follows from
+  \eqref{E:young-upper-refined-growth} and
+  \eqref{E:constant-young-growth} by
   $d\le1+d^\nu$ and
   $(1+d)^\nu\le2^{\nu-1}(1+d^\nu)$.
   It applies on $\mathcal L(E)$ with multiplication norm one,

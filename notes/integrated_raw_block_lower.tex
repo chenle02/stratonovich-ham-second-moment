@@ -5,7 +5,7 @@ Fix a nonzero covariance from Hypothesis~\ref{H:homog} and any real
 nonnegative nonzero $\Psi\in C_c^\infty((0,1)\times\R^d)$.
 Retain the \emph{original} $Z=W(\Psi)$, $v=v_\Psi>0$ and mean $h_s$
 of Lemma~\ref{L:compact-raw-profile}. Choose one finite even mask
-$m_R\in[0,1]$, equal to one on $B_R$ and supported in $B_{2R}$,
+$m_R\in[0,1]$, equal to one on $B_R$ and supported in $\overline B_{2R}$,
 as in Proposition~\ref{P:compact-original-common-trial}.
 Then $V_s=m_Rh_s$ has the ground family, rate $\lambda_s$ and full
 $F$ projection of Section~\ref{S:compact-mean-family}. Set
@@ -17,6 +17,11 @@ We will prove $Q_2\ge2I_R-v/2$, for this same control and covariance.
 Fix a real nonnegative smooth compact $\phi$ of integral one, the
 bounded observable $O_\phi$, and the actual data $e_0=(0,1,0)\in F$.
 Both displacement and velocity are retained.
+This is the same physical profile $m_R=\zeta_R$ used in the actual
+driver and compact mean; no mask is changed in a covariance identity.
+The semiscaled $W$ below is the given raw-law noise. The comparison to
+the unscaled solution uses equality in law, not samplewise identities
+on one probability space for every $T$.
 
 \subsection{The common raw noise and its exact Gaussian shift}
 
@@ -182,7 +187,7 @@ The latter retains both the mean and the actual residual noise.
   \begin{equation}\label{E:raw-block-maximum-exponential}
     \sup_\delta\E e^{cM_\delta^2}<\infty.
   \end{equation}
-  With the actual deterministic $P_s$ from the preceding section,
+  With the actual deterministic $P_s$ in~\eqref{E:compact-F-block},
   \begin{equation}\label{E:raw-block-operator-error}
     E_{\mathrm{op},\delta}:=
     \max_{m\le N}\sup_{0\le u\le B}
@@ -527,8 +532,9 @@ The latter retains both the mean and the actual residual noise.
   changes neither the original slow $\Psi,Z$ nor $v$ in the density.
 
   The ordinary change from fast $u$ to slow $t=\delta u$, with
-  phase $(V,\delta V_t)$, identifies this unmasked fast law with
-  \eqref{E:exact-fast-equation} at slow time one. Indeed,
+  phase $(V,\delta V_t)$, transforms the unmasked source equation
+  into the regularized version of~\eqref{E:exact-fast-equation},
+  with slow terminal time one. Indeed,
   $g_\delta Y_{\mathrm{fast}}(u)
   =\sqrt\delta\,Y_{\epsilon,\eta}(\delta u)$,
   and its fast cutoff is $\eta/\delta$.

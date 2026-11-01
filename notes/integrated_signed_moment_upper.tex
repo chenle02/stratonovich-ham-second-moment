@@ -21,7 +21,7 @@ functional $F_\delta$ of Lemma~\ref{L:tube-actual-endpoint}.
 
 \begin{lemma}[Signed score and quantitative radial envelope]
   \label{L:signed-score-envelope}
-  Define the own score
+  For $R\ge1$ define the own score
   \begin{equation}\label{E:signed-raw-score}
     \mathcal S_R=\sup_{\Phi\in H_I}
     \{2\operatorname{Rate}_R(\Phi)-\|\Phi\|_{H_I}^2/2\},
@@ -29,12 +29,13 @@ functional $F_\delta$ of Lemma~\ref{L:tube-actual-endpoint}.
   \end{equation}
   Then $0\le\mathcal S_R,V_{\rm up}\le2+2C_{\rm mean}^2<\infty$.
   The actual tube envelope $G_{\delta,B}$ of
-  Proposition~\ref{P:tube-coarse-envelope}, at $R=R_\delta$, satisfies
+  Proposition~\ref{P:tube-coarse-envelope} satisfies, uniformly in
+  $R\ge1$ (in particular at the actual stochastic radius $R_\delta$),
   \begin{equation}\label{E:signed-polynomial-envelope}
     G_{\delta,B}(\rho)\le A_0+A_1B^{3\nu}\rho^\nu
     +\eta_B b_{\delta,B}^\nu ,
   \end{equation}
-  for every admissible $\delta$ and every $\rho\ge0$, where
+  for $0<\delta<\min(1,1/B)$ and every $\rho\ge0$, where
   \[
     \begin{aligned}
       A_0&=4C_{\rm gr},\\
@@ -96,7 +97,8 @@ functional $F_\delta$ of Lemma~\ref{L:tube-actual-endpoint}.
 
 \begin{proposition}[Finite-delta bulk and exact tail]
   \label{P:signed-moment-bulk-tail}
-  For $M>0$ define the deterministic number
+  For fixed integer $B\ge1$, $0<\delta<\min(1,1/B)$ and $M>0$,
+  define the deterministic number
   \[
     \mathcal E_{\delta,B,M}=
     \max\left(0,\sup_{\substack{R\ge1,\ \|\Phi\|\le M\\
@@ -238,7 +240,8 @@ functional $F_\delta$ of Lemma~\ref{L:tube-actual-endpoint}.
   The decreasing bijection $T_\delta=\delta^{-1/\kappa}$ has inverse
   $\delta=T^{-\kappa}$. Take logs, normalized limsup and
   Proposition~\ref{P:signed-operator-upper}.
-  Original canonical spatial stationarity gives every fixed $x$.
+  Original canonical spatial stationarity from
+  Proposition~\ref{P:raw-block-original-lower} gives every fixed $x$.
   The moment is at least one by its full expansion and finite by the bound,
   so no logarithm or difference of infinite quantities is hidden.
 

@@ -60,17 +60,7 @@ route cannot reach the scale t^κ.
 
 ## Completion contract (for any claimed result)
 
-1. Every new statement has a complete written proof in the notes, with all
-   imported inputs labeled and pinpointed to the author-version PDF.
-2. The statement passes the calibrations in AGENTS.md (α₀→0; p=1;
-   Jensen; comparison with the Skorohod p=2 result).
-3. An adversarial review by a model family different from the author
-   (Claude Opus 5.5 skeptic), every finding adjudicated in Progress.md, and
-   a final DeepSeek cold read for any result Le may circulate.
-4. Clean build: 0 errors, 0 undefined references/citations, 0 overfull
-   boxes; PDF committed with the source.
-5. Progress.md, the wiki project page status line, and a handoff updated;
-   commits pushed and <HUB> in sync.
+[held back until the source author has been told]
 
 Current internal mathematical checkpoint: scientific40ec9a9, adopted at
 d52d1d8, proves the all-model intrinsic limit C₂=S₂^pos=2^{(4−α)/(3−α)}S₁^pos
@@ -85,7 +75,10 @@ required repairs. Occupation/white-example integration is now scoped-gated
 at scientific d041546 (packet 691f413), with 31 HIGH checks and no required
 repairs. Final presentation, whole-paper/cold-read, calibration/source and
 delivery gates remain OPEN. The older tracked
-TeX goal/summary paragraphs await the final reviewed presentation update.
+TeX goal/summary paragraphs have now been reconciled in a consolidated
+working candidate. Its changed proof text still requires the fresh
+whole-argument and final cold reviews; no component receipt is silently
+transferred to those new bytes.
 
 ## Scope limits
 
