@@ -8606,3 +8606,34 @@ integrate FR+AV actual frequency/two-variance seam, then FG/CC/AD/SC/FY and
 the all-model lower/upper/PB/OC/WS chain. Final whole-argument/cold-read and
 canonical wiki/Git/<HUB> synchronization remain open. All owned native
 review/compute processes terminal; do not restart v1/v2/v3. Goal ACTIVE.
+
+
+## 2026-11-01: scalar frequency and both variance TeX candidate
+
+Previous goal turn: PROGRESS (e7a1972 accepted first covariance/temporal
+integration, source96e2a18). Current target frozen before translation,
+reusing accepted e905ad8/227d4bc analytic arguments and their scoped
+adjudications. No new proof strength, endpoint, constant or Lean fact.
+
+Added notes/integrated_wave_variance.tex with6complete proof blocks:
+scalar translated-growth row in all3alpha regimes; strict beta time bound;
+actual same-W complex/indicator form and Sobolev/normalized kernel;
+Hilbert-valued finite Bessel; BOTH uniform finite-family variance directions;
+and deterministic real mean-square columns. Fourier(2pi)^d c_d² cancels
+exactly, output direction uses actual even nu_R reflection. Real phase
+superscripts preserve dimensiond. Same-noise maps are INTO L2(Omega;E),
+not a random bounded operator, HS/path/source/flow/moment theorem.
+
+All60main and8covariance proof bodies unchanged; no new Lean/API use.
+Clean125-page build:0errors/undefined references/citations/overfull boxes.
+format-tex applied; all9new/context pages116-124 visually inspected.
+Actualsectionends123, targetcontext124. Bibliography and symlink unedited.
+Packet and6-claim crosswalk in reviews/2026-11-01-wave-variance-tex-integration.
+Canonical required-media checker PASS:15full texts and9typed PNG sources.
+Fresh Le <plan removed> identity/headroom, firstParty claude.ai doctor and actual
+Opus5.5 READY model probe retained. Independent integration gate PENDING.
+
+Full model PB/OC/WS assembly, compact/driver/source/Young chain and final
+whole-paper/cold-read/delivery duties remain open. <HUB> fresh fetch
+still failed SSH255 NoRoute; no current remote parity claimed. No source
+correction, actualp1 identity, Skorohod work or official companion action.
