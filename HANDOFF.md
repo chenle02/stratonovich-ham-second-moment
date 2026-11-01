@@ -1,143 +1,35 @@
-Last updated: 2026-11-01 15:04 UTC (Codex)
+Last updated: 2026-11-01 17:26 UTC (Codex)
 
 LATEST USER DIRECTION: derive the actual constants, whatever computation yields.
 Chen matching is not a completion requirement.
 
 ## ⏭ Next session: where to stand and what to do
 
-FIRST reconcile the consolidated manuscript and its final presentation
-commitments in ACTIVE
-../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave,
-branch research/fixed-mask-young-20261031, clean local HEAD 26a2820.
-Read its PROJECT-GOAL.md, AGENTS.md, Progress.md and
-notes/derived-constant-integration-plan.md and derived-constant-proof-imports.md
-in its notes directory. Root mathematical files and
-inherited isolated HANDOFF are historical. Latest user instruction:
-derive the actual constants; matching Chen is not required.
+FIRST poll the existing fresh whole-argument review, native session 44594.
+It was confirmed LIVE; do not restart it on an observation timeout.
 
-PB/OC/WS scoped proof reviews have passed. Integrate the complete accepted
-argument, rather than opening optional mathematical refinements. The
-inventory is a starting map, not certified proof-dependency closure.
-Covariance/temporal TeX foundation is ACCEPTED at scientific96e2a18,
-adoptione7a1972. Do not redo its inventory or restart terminal integration
-review68458(v3PASS0),71223(v2coverage-refusal3), or v1preflight5.
-FR/AV TeX integration is now ACCEPTED: scientificf5c1521,adoption7dbcd4a,
-27PASS/HIGH382.209seconds,no mandatory repairs. Review13477 isTERMINAL0,
-not a task to restart. The completed GC/UR target remains in
-reviews/2026-11-01-point-upper-tex-integration/target-v1.md in ACTIVE.
-FG/CC is now ACCEPTED: scientific2571a15,adoption22e3426,24HIGHchecks
-323.168seconds,no repairs. Native74139 TERMINAL0; old16481 remains
-rejected (rawFAIL/HIGH,canonical invalid-report). Do not restart either.
-AD now ACCEPTED: scientific9dad256,adoptionf553286,25HIGHchecks
-396.861seconds,no repairs. Native83117 TERMINAL0;18283 canonicalFAIL/HIGH
-remains rejected. Do not restart either. Actual compact first driver/path
-is constructed on GIVEN W, local fixedR,T. SC now ACCEPTED: scientific
-8a2add9,adoption65cbf05,20HIGH checks405.681seconds,no required repairs.
-Native45691 terminal receipt exit0; do not restart. Literal retaining
-coupling, source convergence and ordinary response proved. Joint FM/FY
-now ACCEPTED: scientific5caa2e8,adoption0a6b71f,23passing checks/HIGH
-479.376seconds,no repairs. Native39688 TERMINAL0; do not restart.
-Actual F Young/source solution and W-measurable average close the exact
-conditional mask-L2 premise and compare to the original canonical point
-moment. CG now ACCEPTED: scientific6c52b5f,adoptionbb0515c,22passing
-checks/HIGH499.075seconds,no required repairs. Native72823 TERMINAL0;
-do not restart. Full-F spectral complement and original fixed-cost common
-trial now integrated. DS/RB now ACCEPTED: scientific65d514b,
-adoptionf742ce3,23passing checks/HIGH637.258seconds,no required repairs.
-Native12052 TERMINAL0; do not restart. Exact canonical scaling and actual
-SAME-W/Z shift, full-F cone/positive terminal average, raw restart and
-correct-amplitude original point lower >=2int lambda_R-v/2 now integrated.
-UL now ACCEPTED: scientificf4311eb,adoption698846b,22passing checks/HIGH
-429.462seconds,no required repairs. Native69249 TERMINAL0; do not restart.
-Unmasked Rayleigh lower, numerical mask removal, full Radon dilation and
-positive finite score homogeneity now integrated. S1 remains auxiliary,
-not actual p1. TE/GI/B1-B4 now ACCEPTED: scientificbda7990,
-adoption110de6f,21passing checks/HIGH367.179seconds,no repairs.
-Native36578 TERMINAL0; do not restart. Exact temporal mass, physical
-full-H1 pairing/absolute continuity, spatial energy and FULL measurable
-occupation class now integrated. C1-C3/E1 now ACCEPTED: scientific5e36bcb,
-adoption488d089,18passing checks/HIGH512.225seconds,no repairs.
-Native66685 TERMINAL0; do not restart. Actual compact mean/Cameron map
-and generic endpoint-preserving Young upper now integrated, FIXED R only.
-Uniform E mean/regulator now ACCEPTED: scientificd90c4bc,adoption8bc53b3,
-26passing checks/HIGH418.169seconds,no required repairs. Native92636
-TERMINAL3 malformedJSON preserved; canonical UNIQUE one-brace reversible
-recovery/no newprovider call acceptedafterALLgates. Recoveredreceipt is
-accepted; originalreceipt remains refused.39five-way inputs,31fulltexts/
-8exactimages,53raw+4recoveryoriginals readbackverified.5newproofs,203pages
-clean,150prior unchanged. No finalsource/PDFedit. Actualstochastic/spectral/
-phase/tube/product/pointupper/exact-limit/final gates remain.
-SA now ACCEPTED: scientifice71d3b4,adoption7120cdb,
-28passing checks/HIGH394.462seconds,no requiredrepairs. Native73828
-TERMINAL0/review-complete accepted/coverageTRUE; no recoveryorwaiver.
-40five-wayinputs/32fulltexts/8exactimages/55rawarchivefiles verified.
-5newproofs,208pagesclean,155priorunchanged. ActualexpectedE FIRSTdriver
-norm->0 ongrowingcutoff, alloriginalmodels/everydeterministicorthogonal
-residual. No CM/Fstochastic/concentration/nonlinearmoment claim.
-JointS/SP now ACCEPTED: scientific2cca41c,packetrevision0873245,
-adoption252df6f,24PASSchecks/HIGH538.314seconds,no requiredrepairs.
-Native51572TERMINAL0 accepted/coverageTRUE;63fivewayinputs/44texts/
-19exactPNGs/78rawarchivefilesverified.9newproofs,216pagesclean,
-160priorunchanged. Actualroughphysicalwave andsource/rawsymplectic
-Ephase/blockmeanbaseline; no uniformmomentbudgetfromthesealone.
-V1dryrunwrongliteralpromptpathwasPREPROVIDERexit5/0calls,preserved;
-v2correctedpathpassedwithnowaiverandONEscientificreview. No recovery.
-BT now ACCEPTED: scientific37f322f,adoptione157b01,
-26PASSchecks/HIGH511.526seconds,no requiredrepairs. Native6552TERMINAL0,
-accepted/coverageTRUE;56fivewayinputs/44fulltexts/12exactPNGs/71rawfiles
-verified.8proofs,223pagesclean,169priorunchanged. GenuineactualE-lawAWS/
-CM/closedtubes/leastattainment/Rayleighincludingjumps/zero/globalhalfaction,
-actualRBrestart/SPendpoint/uniformCOARSEenvelope/finiteoperatorL2 andexact
-radialtail. No sharpdeterministicenvelope/pointupper/exactlimitfromBTalone.
-US now ACCEPTED: scientific27e1ce6,adoptionf3475cd,
-29passingchecks/HIGH578.506seconds,no requiredrepairs. Native78139
-TERMINAL0 accepted/coverageTRUE;58fivewayinputs/37fulltexts/21exactPNGs/
-73rawarchivefilesverified.7proofs,230pagesclean,177priorunchanged.
-Uniform E-only spectral/averaging/mean-products/polynomial-controlballs/
-ANYresidual integrated-rate envelope withdeltaFIRST, notpointupperyet.
-No quantitative F norm in uniform E bounds. No recovery/retry/waiver.
-GC/UR now ACCEPTED: scientific3ac97c4,adoptionc3f4485,
-29namedchecks/HIGH593.249seconds,no requiredrepairs. Native47752TERMINAL3
-originalinvalidJSONrefusal preserved; canonicalONEbrace reversible recovery
-atbyte28011/zero providercalls acceptedafterALLgates.72fivewaybindings/
-59fulltexts/13exactPNGs/90raworiginal+recoverymembers verified.9newproofs,
-238pagesclean,184priorunchanged. Actual BT-to-GC finiteness substitution,
-source-first/full-chain ORIGINALpointtransfer and SAMEforallB signedupper
-nowintegrated; notyet positive-score/exactlimit fromthesesectionsalone.
-The completed PG/PB target remains in
-reviews/2026-11-01-positive-score-tex-integration/target-v1.md in ACTIVE.
-Oldmodel-specific GLF/MB/EA/D1 branch notneededforCURRENTintegratedpath;
-source/reviewhistory retained, proof-importinterfaceaudit appended.
-PG/PB now ACCEPTED: scientifica880288,adoption7bbc946,
-30namedchecks/HIGH455.588seconds,no requiredrepairs. Native16142TERMINAL0
-review-complete accepted/coverageTRUE;63fivewayinputs/50fulltexts/13exactPNGs/
-78rawmembersreadbackverified.11newproofs,247pagesclean,193priorunchanged.
-Original ALL-model intrinsic pointlimitC2=Spos2=2^mSpos1 nowintegrated,
-Spos1auxiliarynotactualp1/authorL. No recovery/retry/waiver/sourcePDFedit.
-All9minorfindingsadjudicated forfinalpresentation, notrequiredrepairs.
-The completed OC/WS target remains in
-reviews/2026-11-01-occupation-white-tex-integration/target-v1.md in ACTIVE.
-OC/WS/fullpresentation/calibrations/wholeargument/finalcoldread/lit/wiki/
-privateparity remainOPEN. This scopedgate doesnotcomplete thefullgoal.
-OC/WS is now ACCEPTED: scientific d041546, packet-only repair 691f413,
-adoption 26a2820. Actual Opus 5.5/HIGH, 31 named PASS checks in 388.996
-seconds, no required repairs. Native 57283 TERMINAL0, accepted/coverage
-true; 64 five-way bindings, 53 texts/11 exact PNGs/79 native archive members
-verified. Nine proofs, clean 254 pages, 204 earlier bodies unchanged.
-The planned mathematical result set is integrated at scoped review gates.
-V1 dry-run refused a fused filename before any provider call; V2 added one
-separator, passed without waivers, then made one scientific call. All old
-contracts/packets/refusals remain; 145 preflight archive members verified.
-Five optional findings join the final presentation inventory. No source/PDF
-edit on adoption, recovery, scientific retry, new compiler or finite fact.
-Read the immediate target in
-reviews/2026-11-01-final-consolidation/target-v2.md and debt-inventory-v2.json
-in that same directory in ACTIVE. The inventory has 140 numbered excerpts
-from 19 adjudications; it is not a coverage certificate or 140 new defects.
-Manually reconcile original notes, including unnumbered findings. Then run
-fresh whole-argument and final independent cold reviews, calibrations,
-source checks and private wiki/Git delivery. Goal completion remains open.
-No owned reviewer or computation remains live.
+Work in ACTIVE:
+../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave,
+branch research/fixed-mask-young-20261031, workflow HEAD 7099838.
+The immutable scientific candidate is 4a65c79d9d4b5c6a7e0cb712a88f1a973cc9c3fd.
+Read its current PROJECT-GOAL.md and Progress.md. Le requests the actual
+derived constant; matching Chen's prediction is not a completion condition.
+
+Review files in ACTIVE: reviews/2026-11-01-whole-argument/.
+Native output is in the sibling state directory
+../stratonovich-whole-argument-review-v1/native relative to ACTIVE.
+At terminal state validate the canonical report/receipt, actual model/route,
+full read ledger, all 63 named obligations and all 401 source bindings,
+then adjudicate findings. Source/TeX/PDF/packet inputs must remain unchanged
+while the review runs. The planned result set and author presentation pass
+are complete; fresh whole-argument and final independent cold gates are not.
+
+The current 258-page active PDF was opened and verified on local Awesome
+screen eDP, tag8, for Le. Root scientific files are historical, not that PDF.
+The research branch push to <HUB> bare HEAD7099838 succeeded once;
+subsequent root fetch/remote checkout checks failed NoRoute again. Do not
+claim canonical/research working-checkout parity. Resume safe sync checks
+when reachable, preserving other work. Do not infer goal completion.
 
 ## Pre-flight checks
 
@@ -237,36 +129,36 @@ No owned reviewer or computation remains live.
 
 ## Concrete deliverables for the next session
 
-- Follow `reviews/2026-11-01-final-consolidation/target-v2.md` in ACTIVE.
-  Read `debt-inventory-v2.json` and the original adjudications; preserve
-  their histories and record each actual final-pass disposition.
-- Reconcile abstract/title/goals/summary/README with the integrated exact
-  intrinsic constant and derived bounds. Distinguish scoped acceptance
-  from pending whole-argument, cold-read and delivery gates.
-- Resolve promised local definitions, exact fixed parameters, quantifiers,
-  source versions, closed supports, spectral/Young pointers and notation.
-  Keep uniform E budgets separate from fixed-radius F identification.
-  Narrow the optional penalty-one wording to "not universally favorable".
-- Preserve the independent old full upper as the finiteness input; audit
-  the complete source/Young/lower/upper/positive-score/OC/WS proof chain.
-  No proof imports hidden by filenames or restored obsolete branches.
-- Explicitly record calibrations and actual primary-source uses/editions.
-  Do not identify auxiliary Spos1 with actual p1 or force Chen's prediction.
-- Rebuild source/PDF cleanly, inspect changed pages and bind an immutable
-  packet. Obtain fresh whole-argument Opus 5.5/HIGH review and the required
-  independent DeepSeek V4-Pro cold read, with all findings adjudicated.
-- Complete canonical wiki/provenance/handoff and actual private Git/<HUB>
-  convergence when available. No source fix, contact, HPC, companion,
-  Skorohod, sibling scientific edit or publication action.
+- Monitor session 44594, whose live state is verified in Progress.md and
+  reviews/2026-11-01-whole-argument/dispatch-v1.json at capture. If its
+  handle is missing, inspect authoritative native receipt/process state
+  before deciding what happened; never restart merely because a poll expired.
+- The full candidate contains all 28 TeX files/213 proof blocks. The packet
+  has 57 texts and 344 typed images: all 258 manuscript pages and 86 selected
+  primary pages. Native source revision is 4a65c79, not a later workflow HEAD.
+- Require SEC01-SEC44, GLOBAL01-GLOBAL12, SOURCE01-SOURCE04, KERNEL01,
+  VISUAL01 and STATUS01 exactly once. Scientific defects, missing sources,
+  wrong model, invalid report or incomplete coverage are not acceptance.
+- Preserve the actual attempt. Any syntax-only recovery must use the
+  canonical reversible tool and separate receipt, with the original refusal
+  intact. The prepared external retain.py is not executed until terminal
+  acceptance; adapt only if a documented different terminal state requires it.
+- After whole-gate adjudication, obtain the required fresh independent
+  DeepSeek V4-Pro cold read (reserve Qwen under the workforce contract).
+  Do not replace either final gate by the earlier local reviews.
+- Finish calibration/source and canonical wiki/provenance/delivery checks.
+  Research push7099838 succeeded, but <HUB> checkout sync is unverified.
+  No contact, public release, source correction, HPC, companion creation,
+  Skorohod work, sibling science or system setup is authorized.
 
 ## Success criteria for the immediate next step
 
-A coherent consolidated manuscript with all promised presentation findings
-reconciled against their original evidence, exact model/constant/normalization
-and limit scopes intact, and a clean source/PDF build. Prepare and obtain
-the fresh whole-argument gate; do not substitute prior local reviews for it.
-Goal completion additionally requires the independent cold read, calibration/
-source checks, canonical wiki/provenance and actual delivery convergence.
+A terminal, source-bound whole-argument review of candidate 4a65c79 with the
+actual required model/route, complete text/image coverage, every named
+obligation and all findings adjudicated. A live handle or availability
+probe is not a verdict. Current goal completion additionally requires the
+independent cold read and the remaining calibration/source/wiki/delivery
+checks. Keep the complete original mathematical scope intact.
 
 ## Anti-success criteria
 
@@ -1937,19 +1829,187 @@ uniformEbudget; trackB-growth/actualfinalcell andlimitorder precisely.
   not completed reconciliation or whole-paper acceptance. Research pushes
   failed NoRoute. Full goal remains active and completion unproven.
 
+
+- 2026-11-01 consolidation and fresh whole-argument dispatch: source4a65c79,
+  workflow7099838. Clean258-page paired PDF, all213 proof blocks retained;
+  174 bodies unchanged and39 clarified/renamed/ending-edited, no new block.
+  Author reconciled140 numbered records from19 original adjudications:
+  82 implemented,32 already explicit,17 retained with reasons,9 contextual.
+  Source/abstract/goals/README now describe the intrinsic limit and bounds,
+  with no inherited acceptance for changed bytes. No Lean run/new fact;
+  80facts22seams and companion decision4 remain unchanged.
+- Fresh first-party Opus5.5/HIGH review actually launched, session44594,
+  candidate4a65c79, timeout3600. All401 live/packet/Git identities checked,
+  media preflight57texts/344PNGs passed, native dry-run missing0/waived0.
+  Required scope44sections/213proofs plus19 coupled/source/kernel/visual/
+  status obligations. No terminal receipt at capture; same handle confirmed
+  LIVE. Prepared postterminal streaming retainer outside repo, not executed.
+  All old native attempts and source/copyright/version boundaries retained.
+- Research push7099838 to <HUB> bare succeeded (remote6937719->7099838).
+  Subsequent root fetch and focused checkout reads failed NoRoute, so no
+  current <HUB> canonical/research working-checkout parity is claimed.
+  This partial success must not be relabelled total synchronization.
+- Le asked to see the current manuscript on tag8. pdf-tag placed it on
+  local eDP/tag8; separate Awesome inventory and D-Bus filename verified
+  active258-page PDF client1268087. Unrelated viewers left untouched, no
+  window-manager configuration edited. Later client state may change by
+  Le's actions; inspect before any repeat launch.
+
+### Archived former Next section, superseded at whole-review dispatch
+
+```text
+
+FIRST reconcile the consolidated manuscript and its final presentation
+commitments in ACTIVE
+../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave,
+branch research/fixed-mask-young-20261031, clean local HEAD 26a2820.
+Read its PROJECT-GOAL.md, AGENTS.md, Progress.md and
+notes/derived-constant-integration-plan.md and derived-constant-proof-imports.md
+in its notes directory. Root mathematical files and
+inherited isolated HANDOFF are historical. Latest user instruction:
+derive the actual constants; matching Chen is not required.
+
+PB/OC/WS scoped proof reviews have passed. Integrate the complete accepted
+argument, rather than opening optional mathematical refinements. The
+inventory is a starting map, not certified proof-dependency closure.
+Covariance/temporal TeX foundation is ACCEPTED at scientific96e2a18,
+adoptione7a1972. Do not redo its inventory or restart terminal integration
+review68458(v3PASS0),71223(v2coverage-refusal3), or v1preflight5.
+FR/AV TeX integration is now ACCEPTED: scientificf5c1521,adoption7dbcd4a,
+27PASS/HIGH382.209seconds,no mandatory repairs. Review13477 isTERMINAL0,
+not a task to restart. The completed GC/UR target remains in
+reviews/2026-11-01-point-upper-tex-integration/target-v1.md in ACTIVE.
+FG/CC is now ACCEPTED: scientific2571a15,adoption22e3426,24HIGHchecks
+323.168seconds,no repairs. Native74139 TERMINAL0; old16481 remains
+rejected (rawFAIL/HIGH,canonical invalid-report). Do not restart either.
+AD now ACCEPTED: scientific9dad256,adoptionf553286,25HIGHchecks
+396.861seconds,no repairs. Native83117 TERMINAL0;18283 canonicalFAIL/HIGH
+remains rejected. Do not restart either. Actual compact first driver/path
+is constructed on GIVEN W, local fixedR,T. SC now ACCEPTED: scientific
+8a2add9,adoption65cbf05,20HIGH checks405.681seconds,no required repairs.
+Native45691 terminal receipt exit0; do not restart. Literal retaining
+coupling, source convergence and ordinary response proved. Joint FM/FY
+now ACCEPTED: scientific5caa2e8,adoption0a6b71f,23passing checks/HIGH
+479.376seconds,no repairs. Native39688 TERMINAL0; do not restart.
+Actual F Young/source solution and W-measurable average close the exact
+conditional mask-L2 premise and compare to the original canonical point
+moment. CG now ACCEPTED: scientific6c52b5f,adoptionbb0515c,22passing
+checks/HIGH499.075seconds,no required repairs. Native72823 TERMINAL0;
+do not restart. Full-F spectral complement and original fixed-cost common
+trial now integrated. DS/RB now ACCEPTED: scientific65d514b,
+adoptionf742ce3,23passing checks/HIGH637.258seconds,no required repairs.
+Native12052 TERMINAL0; do not restart. Exact canonical scaling and actual
+SAME-W/Z shift, full-F cone/positive terminal average, raw restart and
+correct-amplitude original point lower >=2int lambda_R-v/2 now integrated.
+UL now ACCEPTED: scientificf4311eb,adoption698846b,22passing checks/HIGH
+429.462seconds,no required repairs. Native69249 TERMINAL0; do not restart.
+Unmasked Rayleigh lower, numerical mask removal, full Radon dilation and
+positive finite score homogeneity now integrated. S1 remains auxiliary,
+not actual p1. TE/GI/B1-B4 now ACCEPTED: scientificbda7990,
+adoption110de6f,21passing checks/HIGH367.179seconds,no repairs.
+Native36578 TERMINAL0; do not restart. Exact temporal mass, physical
+full-H1 pairing/absolute continuity, spatial energy and FULL measurable
+occupation class now integrated. C1-C3/E1 now ACCEPTED: scientific5e36bcb,
+adoption488d089,18passing checks/HIGH512.225seconds,no repairs.
+Native66685 TERMINAL0; do not restart. Actual compact mean/Cameron map
+and generic endpoint-preserving Young upper now integrated, FIXED R only.
+Uniform E mean/regulator now ACCEPTED: scientificd90c4bc,adoption8bc53b3,
+26passing checks/HIGH418.169seconds,no required repairs. Native92636
+TERMINAL3 malformedJSON preserved; canonical UNIQUE one-brace reversible
+recovery/no newprovider call acceptedafterALLgates. Recoveredreceipt is
+accepted; originalreceipt remains refused.39five-way inputs,31fulltexts/
+8exactimages,53raw+4recoveryoriginals readbackverified.5newproofs,203pages
+clean,150prior unchanged. No finalsource/PDFedit. Actualstochastic/spectral/
+phase/tube/product/pointupper/exact-limit/final gates remain.
+SA now ACCEPTED: scientifice71d3b4,adoption7120cdb,
+28passing checks/HIGH394.462seconds,no requiredrepairs. Native73828
+TERMINAL0/review-complete accepted/coverageTRUE; no recoveryorwaiver.
+40five-wayinputs/32fulltexts/8exactimages/55rawarchivefiles verified.
+5newproofs,208pagesclean,155priorunchanged. ActualexpectedE FIRSTdriver
+norm->0 ongrowingcutoff, alloriginalmodels/everydeterministicorthogonal
+residual. No CM/Fstochastic/concentration/nonlinearmoment claim.
+JointS/SP now ACCEPTED: scientific2cca41c,packetrevision0873245,
+adoption252df6f,24PASSchecks/HIGH538.314seconds,no requiredrepairs.
+Native51572TERMINAL0 accepted/coverageTRUE;63fivewayinputs/44texts/
+19exactPNGs/78rawarchivefilesverified.9newproofs,216pagesclean,
+160priorunchanged. Actualroughphysicalwave andsource/rawsymplectic
+Ephase/blockmeanbaseline; no uniformmomentbudgetfromthesealone.
+V1dryrunwrongliteralpromptpathwasPREPROVIDERexit5/0calls,preserved;
+v2correctedpathpassedwithnowaiverandONEscientificreview. No recovery.
+BT now ACCEPTED: scientific37f322f,adoptione157b01,
+26PASSchecks/HIGH511.526seconds,no requiredrepairs. Native6552TERMINAL0,
+accepted/coverageTRUE;56fivewayinputs/44fulltexts/12exactPNGs/71rawfiles
+verified.8proofs,223pagesclean,169priorunchanged. GenuineactualE-lawAWS/
+CM/closedtubes/leastattainment/Rayleighincludingjumps/zero/globalhalfaction,
+actualRBrestart/SPendpoint/uniformCOARSEenvelope/finiteoperatorL2 andexact
+radialtail. No sharpdeterministicenvelope/pointupper/exactlimitfromBTalone.
+US now ACCEPTED: scientific27e1ce6,adoptionf3475cd,
+29passingchecks/HIGH578.506seconds,no requiredrepairs. Native78139
+TERMINAL0 accepted/coverageTRUE;58fivewayinputs/37fulltexts/21exactPNGs/
+73rawarchivefilesverified.7proofs,230pagesclean,177priorunchanged.
+Uniform E-only spectral/averaging/mean-products/polynomial-controlballs/
+ANYresidual integrated-rate envelope withdeltaFIRST, notpointupperyet.
+No quantitative F norm in uniform E bounds. No recovery/retry/waiver.
+GC/UR now ACCEPTED: scientific3ac97c4,adoptionc3f4485,
+29namedchecks/HIGH593.249seconds,no requiredrepairs. Native47752TERMINAL3
+originalinvalidJSONrefusal preserved; canonicalONEbrace reversible recovery
+atbyte28011/zero providercalls acceptedafterALLgates.72fivewaybindings/
+59fulltexts/13exactPNGs/90raworiginal+recoverymembers verified.9newproofs,
+238pagesclean,184priorunchanged. Actual BT-to-GC finiteness substitution,
+source-first/full-chain ORIGINALpointtransfer and SAMEforallB signedupper
+nowintegrated; notyet positive-score/exactlimit fromthesesectionsalone.
+The completed PG/PB target remains in
+reviews/2026-11-01-positive-score-tex-integration/target-v1.md in ACTIVE.
+Oldmodel-specific GLF/MB/EA/D1 branch notneededforCURRENTintegratedpath;
+source/reviewhistory retained, proof-importinterfaceaudit appended.
+PG/PB now ACCEPTED: scientifica880288,adoption7bbc946,
+30namedchecks/HIGH455.588seconds,no requiredrepairs. Native16142TERMINAL0
+review-complete accepted/coverageTRUE;63fivewayinputs/50fulltexts/13exactPNGs/
+78rawmembersreadbackverified.11newproofs,247pagesclean,193priorunchanged.
+Original ALL-model intrinsic pointlimitC2=Spos2=2^mSpos1 nowintegrated,
+Spos1auxiliarynotactualp1/authorL. No recovery/retry/waiver/sourcePDFedit.
+All9minorfindingsadjudicated forfinalpresentation, notrequiredrepairs.
+The completed OC/WS target remains in
+reviews/2026-11-01-occupation-white-tex-integration/target-v1.md in ACTIVE.
+OC/WS/fullpresentation/calibrations/wholeargument/finalcoldread/lit/wiki/
+privateparity remainOPEN. This scopedgate doesnotcomplete thefullgoal.
+OC/WS is now ACCEPTED: scientific d041546, packet-only repair 691f413,
+adoption 26a2820. Actual Opus 5.5/HIGH, 31 named PASS checks in 388.996
+seconds, no required repairs. Native 57283 TERMINAL0, accepted/coverage
+true; 64 five-way bindings, 53 texts/11 exact PNGs/79 native archive members
+verified. Nine proofs, clean 254 pages, 204 earlier bodies unchanged.
+The planned mathematical result set is integrated at scoped review gates.
+V1 dry-run refused a fused filename before any provider call; V2 added one
+separator, passed without waivers, then made one scientific call. All old
+contracts/packets/refusals remain; 145 preflight archive members verified.
+Five optional findings join the final presentation inventory. No source/PDF
+edit on adoption, recovery, scientific retry, new compiler or finite fact.
+Read the immediate target in
+reviews/2026-11-01-final-consolidation/target-v2.md and debt-inventory-v2.json
+in that same directory in ACTIVE. The inventory has 140 numbered excerpts
+from 19 adjudications; it is not a coverage certificate or 140 new defects.
+Manually reconcile original notes, including unnumbered findings. Then run
+fresh whole-argument and final independent cold reviews, calibrations,
+source checks and private wiki/Git delivery. Goal completion remains open.
+No owned reviewer or computation remains live.
+
+```
+
 ## Repo & git state at handoff
 
-Before this HANDOFF-only successor, root master HEAD is 0525aa5.
-Active research is clean at 26a282087dc419609ddbe1244325cb19a9dc4359,
-with scientific source d041546d60693abdbe8ccedea12da2fb6ebb7d0d and
-packet-only contract repair 691f413ea74657a446df256def3301eb28321b6f.
-Private origin remains the <HUB> bare repository. Fresh root fetch
-and source/packet/adoption pushes failed with SSH NoRoute; no current
-synchronization or HEAD parity is claimed. Last-fetched root 611c005 and
-research 6937719 are historical. No implicit research/master merge.
-Science stays in ACTIVE; root HANDOFF is the loader, not math authority.
-The separate Le-AI-Lab lesson commit ded76cc1 was pushed to GitHub; that
-is not Article or <HUB> synchronization.
+Before this HANDOFF-only successor, local root master HEAD is f136bcb.
+ACTIVE is clean at workflow70998389581a41bff6c61e77a2013710466b8b18;
+the immutable reviewed candidate is4a65c79d9d4b5c6a7e0cb712a88f1a973cc9c3fd.
+That candidate is currently under review, not accepted as a whole paper.
+
+The research branch push reached <HUB> bare HEAD7099838. Local tracking
+origin/research/fixed-mask-young-20261031 matches that successful push.
+Root origin/master611c005 is an old observation: fresh fetch failed NoRoute
+and local root master was27 commits ahead before this handoff. Normal push
+may fail or safely reject; never force. Canonical and isolated <HUB>
+working-checkout HEADs could not be read, so sync/parity remains unverified.
+No implicit research/master merge. Only root HANDOFF is updated here;
+scientific authority and the current manuscript remain in ACTIVE.
 
 ## Operating notes
 
