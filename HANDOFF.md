@@ -1,17 +1,21 @@
-Last updated: 2026-11-01 23:49 UTC (Codex)
+Last updated: 2026-11-01 23:56 UTC (Codex)
 
 LATEST USER DIRECTION: derive the actual constants, whatever computation yields.
 Chen matching is not a completion requirement.
 
 ## ⏭ Next session: where to stand and what to do
 
-Read the actual DeepSeek report and its finding-by-finding adjudication in
-ACTIVE reviews/2026-11-01-reviewer-switch/ before preparing a source-
-clarified successor review. Close concrete missing primary/normalization
-inputs; do not rerun an unchanged candidate merely to seek HIGH confidence.
+Read ACTIVE research-program/2026-11-01-series-assessment-v1.json and
+freeze the minimal theorem interface for a stand-alone physical-time
+Gaussian wave theory, checking independence from the final C2 theorem.
+Le's latest request is to assess a gradual paper series and possible new
+theory. This is a proposal, not three completed papers or novelty clearance.
+Do not begin expensive new proof work before the exact prior-art crosswalk.
+The prior finite-ratio draft remains unadopted with the actual DeepSeek
+MEDIUM report and source/normalization findings preserved.
 
 ACTIVE: ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave,
-branch research/fixed-mask-young-20261031, workflow21cbb202329342814498e054094e12c2a20f5efa.
+branch research/fixed-mask-young-20261031, workflow40d0441ddb7fbec8b5b2e2c9afd01c69b9fe1153.
 Progress.md is workflow authority. Le revised reviewers on2026-11-01 to
 DeepSeek V4 Pro + Kimi-K3; ACTIVE AGENTS.md now records these routes.
 Do not restore the old exhausted Opus-only requirement. Original scope,
@@ -2140,11 +2144,21 @@ acceptance; all findings adjudicated and source-image/normalization gaps
 kept open. Original native lineage and config-schema collection refusal
 retained. No main science/PDF/Lean change. Goal explicitly reactivated by Le.
 
+2026-11-01 science architecture40d0441: Le requested a staged paper series
+and ambitious broader theory assessment. Saved structured two-paper plan
+(methods theory + exact p2 application), third contingent on new even-moment,
+spatial-mixture or memory-universality theorems. Current methods must prove
+independent value beyond standard Young/rough-evolution/Gaussian LDP facts.
+Selected primary-source comparison only; novelty OPEN, MathSciNet frontend
+inaccessible. Missing Friz-Victoir LDP reference queued as exactticket
+tk-20261101-185423-codex-stratonovich-program, not ingested. Original model,
+actual-constant goal and full verification retained; no manuscript split.
+
 ## Repo & git state at handoff
 
 ROOT master before this HANDOFF-only commit:
-781be320d15a49dcace4a5eef1bb882b0128d3ec, clean and origin/<HUB> equal.
-ACTIVE research workflow21cbb202329342814498e054094e12c2a20f5efa,
+9c337bc2d7f44b5cca5e5dabfc016e0514a65739, clean and origin/<HUB> equal.
+ACTIVE research workflow40d0441ddb7fbec8b5b2e2c9afd01c69b9fe1153,
 clean and origin/<HUB> equal after its actual serial sync.
 Main scientific composition epoch887fbfbe0fa4368d6b32a436615d73349b2445d8.
 Separate finiteness draft epoch3c375e63d3253bd571a604dae7a82dfa9c49ef42.
