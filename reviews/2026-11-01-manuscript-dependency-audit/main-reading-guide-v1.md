@@ -94,3 +94,10 @@ application or unreviewed argument is removed to make acceptance easier.
 A later actual extraction/reorganization needs its own dependency and
 source/PDF/fidelity binding. Do not recompile or re-render unchanged science
 merely because this author reading guide was added.
+
+A concrete unlabelled setup spot-check: Section36 chooses
+(1-theta)^(-1)<r<2/a together with theta<1-a/2 and nu=1/theta<2<r.
+The strict theta condition makes that r interval nonempty. This setup
+travels with the mean/Young/bad-block arguments even though a label-only
+traversal cannot certify its use. The current source already states the
+compatible choice; no repair or new parameter restriction was made.

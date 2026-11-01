@@ -10561,3 +10561,44 @@ consumers and preserve the reviewed full-upper deliverable. Falsify on
 white and degenerate homogeneous measure cases before proof investment.
 No new lemma or source/PDF edit, shortened validated manuscript or novelty
 claim follows from this proposal. Target in bootstrap-replacement-target-v1.
+
+
+## 2026-11-01 — known finiteness input checked; separate draft, not adopted
+
+Read exact retained Chen2023primary pages1-3, including Theorem1.1,(1.5),
+p2: its right-hand spatial variational energy with kinetic1/2 is finite
+under Dalang; generalized nonnegative positive-definite covariances are
+allowed, and Dirac is explicit. Original homogeneity/alpha+a<2 implies
+alpha<2 and the Dalang integral is finite by dyadic radial ball mass.
+No spectral density, Riesz-only or convolution-square assumption inserted.
+Verified citekey chen:23:exponential read-only before use. This is a
+source-statement/hypothesis check, not a new wave asymptotic theorem or
+whole-paper verification of the cited source.
+
+Wrote independent-spatial-ratio-draft-v1: an explicit complete AUTHOR
+deduction on smooth tests by spatial dilation, optimized monomial and
+extension to full H1 by positive-product-measure Fatou. It obtains a finite
+ratio bound from the imported finite energy, without first assuming the
+ratio finite and without T:full-upper. White c*delta0 normalization yields
+c/sqrt3 from E=c²/6; a coordinate-plane-supported d3covariance satisfies
+Dalang with integral c/2 and passes the singular-measure test. Covariance
+amplitude/zero branches remain explicit; auxiliary kinetic1/2 does not
+change the wave kinetic one or raw Gaussian half action.
+
+Status is AUTHOR_DRAFT_UNREVIEWED, not accepted or adopted into frozen
+TeX. One bounded application/draft cycle now awaits its actual cross-family
+review when required capacity is eligible; do not stamp it closed on this
+one pass. No new Lean declaration/compiler run/fact or package. Scalar
+dilation/optimization reuse may be checked at actual old types if this
+route is adopted; the key draft obligations are imported scope and physical
+measure/Fatou correspondence, not an assumed analytic conclusion.
+
+This is a concrete potential reduction in bootstrap machinery, not an
+established shorter main proof: score finiteness and every remaining
+old-upper consumer (source/canonical/point/UI) still need audit. Old full
+upper remains retained/required. No Skorohod theorem or feature/raw bridge
+developed. Own main213proofs/221statements/PDF and all16frozen review
+contracts remain unchanged. Also checked actual Section36 setup
+(1-theta)^(-1)<r<2/a, nu<2<r: compatible exponent choices are already
+stated, exemplifying a semantic setup dependency not certified by the
+reference graph. No silent theta/r repair or scope restriction.
