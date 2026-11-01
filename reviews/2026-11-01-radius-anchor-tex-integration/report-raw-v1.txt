@@ -1,0 +1,212 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "notes/integrated_radius_anchor.tex: lines 1-373, complete",
+    "notes/radius-stochastic-driver-anchor.md: lines 1-330, complete (Sections 1-6 checked as the mathematical source; Section 7 read as historical scope)",
+    "notes/integrated_compact_gaussian.tex: lines 1-640, complete",
+    "notes/integrated_wave_variance.tex: lines 1-550, complete",
+    "notes/integrated_actual_operator_driver.tex: lines 1-598, complete",
+    "notes/integrated_source_convergence.tex: lines 1-492, complete",
+    "notes/integrated_raw_block_lower.tex: lines 1-630, complete",
+    "notes/integrated_cameron_mean.tex: lines 1-511, complete",
+    "notes/integrated_uniform_mean.tex: lines 1-424, complete",
+    "reviews/2026-10-31-radius-stochastic-anchor/scientific-adjudication-v1.md: lines 1-57, complete",
+    "reviews/2026-10-31-radius-stochastic-anchor/falsification-v1.md: lines 1-30, complete",
+    "reviews/2026-10-31-radius-stochastic-anchor/falsification-v2.md: lines 1-20, complete",
+    "reviews/2026-10-31-radius-stochastic-anchor/check-radius-factors-v1.py: lines 1-46, complete (read, not run)",
+    "reviews/2026-10-31-radius-stochastic-anchor/radius-factor-controls-v1.json: lines 1-417, complete",
+    "reviews/2026-10-31-radius-stochastic-anchor/scientific-source-crosswalk-v1.md: lines 1-70, complete",
+    "reviews/2026-11-01-compact-gaussian-tex-integration/adjudication-v2.md: lines 1-61, complete",
+    "reviews/2026-11-01-wave-variance-tex-integration/adjudication-v1.md: lines 1-56, complete",
+    "reviews/2026-11-01-actual-driver-tex-integration/adjudication-v2.md: lines 1-53, complete",
+    "reviews/2026-11-01-source-convergence-tex-integration/adjudication-v1.md: lines 1-54, complete",
+    "reviews/2026-11-01-raw-lower-tex-integration/adjudication-v1.md: lines 1-83, complete",
+    "reviews/2026-11-01-upper-foundation-tex-integration/adjudication-v1.md: lines 1-75, complete",
+    "reviews/2026-11-01-uniform-e-mean-tex-integration/adjudication-v1.md: lines 1-86, complete",
+    "reviews/2026-11-01-radius-anchor-tex-integration/target-v1.md: lines 1-57, complete",
+    "reviews/2026-11-01-radius-anchor-tex-integration/target-freeze-v1.json: lines 1-11, complete",
+    "reviews/2026-11-01-radius-anchor-tex-integration/crosswalk-v1.md: lines 1-31, complete",
+    "reviews/2026-11-01-radius-anchor-tex-integration/analytic-finite-boundary-v1.md: lines 1-21, complete",
+    "reviews/2026-11-01-radius-anchor-tex-integration/worker-honesty-v1.md: lines 1-25, complete",
+    "reviews/2026-11-01-radius-anchor-tex-integration/prompt-v1.md: lines 1-69, complete",
+    "reviews/2026-11-01-radius-anchor-tex-integration/model-context-v1.tex.txt: lines 1-107, complete",
+    "reviews/2026-11-01-radius-anchor-tex-integration/build-v1.json: lines 1-34, complete",
+    "reviews/2026-11-01-radius-anchor-tex-integration/structural-preflight-v1.json: lines 1-31, complete",
+    "reviews/2026-11-01-radius-anchor-tex-integration/rendered-section-v1.txt: lines 1-346, complete",
+    "reviews/2026-11-01-radius-anchor-tex-integration/page-v1-201.png: whole image inspected",
+    "reviews/2026-11-01-radius-anchor-tex-integration/page-v1-202.png: whole image inspected",
+    "reviews/2026-11-01-radius-anchor-tex-integration/page-v1-203.png: whole image inspected",
+    "reviews/2026-11-01-radius-anchor-tex-integration/page-v1-204.png: whole image inspected",
+    "reviews/2026-11-01-radius-anchor-tex-integration/page-v1-205.png: whole image inspected",
+    "reviews/2026-11-01-radius-anchor-tex-integration/page-v1-206.png: whole image inspected",
+    "reviews/2026-11-01-radius-anchor-tex-integration/page-v1-207.png: whole image inspected",
+    "reviews/2026-11-01-radius-anchor-tex-integration/page-v1-208.png: whole image inspected",
+    ".review/required-sources.json: lines 1-147, read as the plan only (not a packet file)"
+  ],
+  "checks": [
+    {
+      "claim": "HAND CHECK. Parameter windows (32.1) and the three Q guards (32.2) are nonempty and transcribed from the source.",
+      "verdict": "PASS",
+      "reason": "alpha+a<2 gives alpha<2, so the gamma window is nonempty. a<1 gives 1-a/2>1/2, and a+alpha<2 gives (3-a-alpha)/2>1/2, so the theta<eta_t<beta_t chain is nonempty. The guards are the finite thresholds Q>d/gamma, Q>1/(beta_t-eta_t) and Q>2d/(1-a), so a fixed even Q exists. It is fixed before delta tends to zero. These match source (1)-(2)."
+    },
+    {
+      "claim": "HAND CHECK. The rescaled torus and cutoffs satisfy the hypotheses of Lemma L:cutoff-factorization for every rho>=1.",
+      "verdict": "PASS",
+      "reason": "L=2 pi rho gives kappa_k=k/rho, with orthonormal modes L^(-d/2)exp(ik.x/rho) in unnormalized L2 and weights <k/rho>^r. supp psi_rho lies in rho B_3, inside (-pi rho,pi rho)^d because 3<pi. psi_0=1 near supp chi_0 gives psi_rho=1 near supp chi_rho and chi_rho psi_rho=chi_rho."
+    },
+    {
+      "claim": "HAND CHECK. The exact weighted kernels in Lemma L:radius-outer-maps carry L^(-d/2) and no additional c_d.",
+      "verdict": "PASS",
+      "reason": "I re-derived both. In the P kernel, c_d from inversion cancels c_d^(-1) from the ordinary integral of psi. The E kernel is L^(-d/2) times the unitary transform of chi at xi-kappa_k. Both agree with the parent displays, with kappa_k=k/rho."
+    },
+    {
+      "claim": "HAND CHECK. The envelope C_r rho^(d/2) F_r(k-rho xi) holds for both maps and both signs of r.",
+      "verdict": "PASS",
+      "reason": "phi_rho-hat(t)=rho^d phi_0-hat(rho t) and L^(-d/2) rho^d=(2 pi)^(-d/2) rho^(d/2). Parent Peetre (18.10) holds for all real r, and <t/rho><=<t> for rho>=1, so the factor is 2^(|r|/2)<k-rho xi>^|r|. The sign in F_r(+-t) covers the recovery kernel. F_r is integrable and rapidly decreasing, and no smoothness of F_r is needed."
+    },
+    {
+      "claim": "HAND CHECK. The mixed Schur quantities cancel with constants independent of rho.",
+      "verdict": "PASS",
+      "reason": "The xi integral at fixed k gives rho^(d/2) rho^(-d) times the L1 norm of F_r, which is C rho^(-d/2). The k sum at fixed xi gives C rho^(d/2) by (18.11) with spacing a=1, uniformly in the translate rho xi. The square root of the product is independent of rho. Recovery reverses rows and columns. A sanity check at r=0 gives ||psi u||_2<=||psi||_inf ||u||_2."
+    },
+    {
+      "claim": "HAND CHECK. The maps extend to the full Sobolev domains, including negative r, with no rough Fourier sampling.",
+      "verdict": "PASS",
+      "reason": "The Schur bound on Schwartz functions and torus polynomials extends by density. The extensions are the same maps as in the parent at L=2 pi rho, because the parent lemma applies at each fixed rho and bounded extensions are unique. The parent's distributional testing argument is reused, and only the quantitative constant is new."
+    },
+    {
+      "claim": "HAND CHECK. The whole-space factorization in Proposition P:radius-compact-envelopes is exact, including negative sigma.",
+      "verdict": "PASS",
+      "reason": "Parent (18.9) holds on H^(sigma+gamma)(R^d) for all real sigma with gamma>0. Composing with the unitary Lambda^(-sigma-gamma) on L2 and Lambda^sigma on H^sigma gives the identity on L2. No periodic state, alias term or Galerkin replacement is involved. The operator agrees with the unique extension in Proposition P:cutoff-singular-values."
+    },
+    {
+      "claim": "HAND CHECK. The inclusion's singular values and the lattice bound (32.5) are correct.",
+      "verdict": "PASS",
+      "reason": "In weighted orthonormal coordinates I_gamma is diagonal with entries <k/rho>^(-gamma). For x in a unit cell, |x-k|<=sqrt(d)/2 and rho>=1 give <(x-k)/rho><=sqrt(1+d/4), so c'_d=sqrt(2(1+d/4)). Integrating over a.e. disjoint cubes and substituting y=x/rho gives (c'_d)^u rho^d times the integral of <y>^(-u). That integral is finite for u=q gamma>d by dyadic annuli with terms C_d 2^(j(d-u))."
+    },
+    {
+      "claim": "HAND CHECK. The rank<j argument gives (32.3) with the stated constant and compactness.",
+      "verdict": "PASS",
+      "reason": "Lambda_j tends to 0 with finite multiplicities, so a decreasing arrangement exists. Truncating to j-1 coordinates has rank<j and error lambda_j, and composition gives s_j<=C_(chi0,sigma) C_(psi0,sigma+gamma) lambda_j, using the rank inequality in the parent proof. The indices are right: E at r=sigma and P at r=sigma+gamma. Summing q-th powers gives rho^(d/q). Norm limits of finite rank operators give compactness."
+    },
+    {
+      "claim": "HAND CHECK. The balanced envelopes (32.4) use the sum of q-th powers and the correct swap adjoint, with no Hilbert-Schmidt claim.",
+      "verdict": "PASS",
+      "reason": "K_out=diag(K_(1/2,gamma),K_(-1/2,gamma)) and singular values of a direct sum form the multiset union, so q-th powers add. Parent Proposition P:compact-two-envelopes gives P*=U P U with U commuting with D_gamma, so K_in=V K_out V with V=U. Gamma<1/2 and q gamma>d force q>2d>=2. P_chi is not treated as selfadjoint or idempotent, and no positive-operator power order is used."
+    },
+    {
+      "claim": "HAND CHECK. The actual-driver setup keeps the mask once, the base mask eta^2 and the same finite W paths.",
+      "verdict": "PASS",
+      "reason": "zeta=eta^2 is real, even, nonnegative, smooth, 1 on B_1 and 0 off B_2, as Sections 17 and 19 require, and zeta_R=m_R. The basis f_j, g_j=W(f_j) and A_j are those of Lemmas L:driver-noise-basis and L:driver-holder-limit with T=B. The envelope chi affects only the observation estimate and enters neither A_j nor the variance forms."
+    },
+    {
+      "claim": "HAND CHECK. rho=2R+B+2<=(B+4)R, and the plateau gives both localizations.",
+      "verdict": "PASS",
+      "reason": "For R>=1, B+2<=(B+2)R, which gives the inequality, and rho>=1. chi=1 on B_rho contains B_(2R+T+1) with T=B. This is the only condition on chi in Lemma L:driver-gain-localization, so both identities (19.10) hold, and conjugation by J_0 gives the P_chi form."
+    },
+    {
+      "claim": "HAND CHECK. The finite Gaussian operator bound applies with the actual variances, uniformly in R, N and I.",
+      "verdict": "PASS",
+      "reason": "Lemma L:driver-actual-variances gives V_out,N and V_in,N<=b_I D_gamma^2, with C_T from Proposition P:wave-two-variances independent of R, I and family. There is no observation cutoff in the forms. Corollary C:finite-gaussian-operators then applies with C=b_I, even q>=Q, q gamma>=Q gamma>d and independent real g_j. Sqrt(b_I)=sqrt(C_B) h^(1-a/2) B_alpha(h)^(1/2). Complexification and adjoints are carried by Section 19."
+    },
+    {
+      "claim": "HAND CHECK. Schatten monotonicity at fixed Q leaves no hidden q constant.",
+      "verdict": "PASS",
+      "reason": "Normalizing by the l^Q norm gives entries <=1, so the q-sum is at most the Q-sum for q>=Q, and the zero case is immediate. (32.4) is used only at index Q, giving C_Q rho^(d/Q)<=C_Q (B+4)^(d/Q) R^(d/Q). The q dependence is only sqrt(q-1)<=sqrt(q). The operator norm is at most S_q, a step implicit in the source but stated in the parent."
+    },
+    {
+      "claim": "HAND CHECK. The short-time profile and strict beta_t give (32.7) with a q- and R-independent constant.",
+      "verdict": "PASS",
+      "reason": "For alpha<1, min=1-a/2 and h<=1 suffices. For alpha=1, h^(1-a/2-beta_t) sqrt(1+log(1/h)) is bounded by the strict gap. For alpha>1, h^(1-a/2) h^((1-alpha)/2)=h^((3-a-alpha)/2), and min=(3-a-alpha)/2. Longer increments sum at most ceil(B) unit increments by Minkowski."
+    },
+    {
+      "claim": "HAND CHECK. The dyadic and chaining step gives L^q C^(eta_t), then C^theta, with the correct geometric gap.",
+      "verdict": "PASS",
+      "reason": "The maximum over 2^n increments is bounded by 2^(n/q) times the increment bound, without independence. After weighting, the ratio is 2^(-(beta_t-eta_t-1/q))<=2^(-(beta_t-eta_t-1/Q))<1 uniformly for q>=Q. Finitely many coarse levels depend only on B. The parent chaining inequality is deterministic with a constant depending on T,eta only, and finite paths are Lipschitz and zero-start. The embedding constant depends on B,theta,eta_t."
+    },
+    {
+      "claim": "HAND CHECK. Passage to M_R and the bound for all v>=1 are valid, with no uniform-in-R convergence used.",
+      "verdict": "PASS",
+      "reason": "At each fixed R, Lemma L:driver-holder-limit gives L^q C^theta convergence of the same M_N, so the norm bound passes to the limit. Next even integer: q<=max(v,Q)+2<=v+Q+2<=(Q+3)v, since Qv>=Q and 3v>=v+2. Lyapunov gives sqrt(Q+3) sqrt(v) R^(d/Q)."
+    },
+    {
+      "claim": "HAND CHECK. Corollary C:radius-covariance-residuals is a correct linear application of Proposition P:source-gaussian-transfer.",
+      "verdict": "PASS",
+      "reason": "(20.x) with T=B and mask zeta_R=m_R gives ||M_Y||<=sqrt(C)||M_R|| from a finite comparison that needs no independence of the Y(f_j), and it allows C=0. The actual Y is retained, with only the reference norm law used. No nonlinear comparison occurs."
+    },
+    {
+      "claim": "HAND CHECK. The residual Y_m satisfies the transfer hypotheses for any deterministic orthogonal Pi.",
+      "verdict": "PASS",
+      "reason": "T_(delta,m) is the raw isometry of Lemma L:raw-block-inputs and maps positive fast-time tests to positive slow-time tests. Var Y_m(f)=||(I-Pi)T f||^2<=||f||^2. Deterministic Pi keeps Y_m a centered linear Gaussian on W. Infinite rank and delta,R dependence are allowed, and correlation or membership in a minimal fast span is not required."
+    },
+    {
+      "claim": "HAND CHECK. The stopping and delta-weighted expectation in Proposition P:radius-mean-anchor are correct.",
+      "verdict": "PASS",
+      "reason": "|min(u,l)-min(v,l)|<=|u-v| gives no increase in sup or Holder seminorm, and l_N=0 with a zero start gives zero. E Z<=(E Z^p)^(1/p), and E Z^p=delta times the finite sum of E||X_m||^p by linearity only. Each term is bounded via Corollary C:radius-covariance-residuals at v=p, C=1. Delta B<1 gives N>=1 and N+1<=2/(delta B), proving (32.8). No block maximum or independence is used."
+    },
+    {
+      "claim": "HAND CHECK. Decay (32.9) and e_anchor>0 hold, with uniformity limited to deterministic Pi.",
+      "verdict": "PASS",
+      "reason": "Delta<1 gives 2<=2/delta, so R_delta<=3/delta and R_delta>=1. g_delta R_delta^(d/Q)<=3^(d/Q) delta^((1-a)/2-d/Q). Q(1-a)>2d divided by 2Q gives e_anchor>0. The constant in (32.9) is free of Pi, while dependence on B, p, Q and the model remains. No endpoint, Q- or B-uniformity is claimed, and the radius substitution is explicitly numerical."
+    },
+    {
+      "claim": "SOURCE CORRESPONDENCE. Sections 1-6 of the accepted note are faithfully transcribed into the five proofs.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Section 2 maps to Lemma 32.1, Section 3 to Proposition 32.2, Section 4 to Proposition 32.3, Section 5 to Corollary 32.4, and Section 6 to Proposition 32.5. All equations (3)-(5), (6)-(20) have counterparts with the same constants and powers. The note states (4) under guard (1) alone, while the TeX assumes all three guards. This is harmless because a larger Q gives a stronger radius power. Some disclaimer sentences are compressed; see findings.minor."
+    },
+    {
+      "claim": "SOURCE CORRESPONDENCE. All six adopted clarifications of the scientific adjudication are honored.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "(1) The E-only boundary is stated in the closing paragraph. (2) Every deterministic Pi is covered and no named projection is used. (3) The radius substitution is stated to be numerical. (4) The exponent is named e_anchor, and Q_L and Q are retained. (5) q>2d and no HS claim are stated. (6) Dependence on the auxiliary profiles is stated. The consumer-obligation wording of (1) and (2) is compressed but no contrary claim appears."
+    },
+    {
+      "claim": "SCOPE. Original model generality is retained and no excluded conclusion is asserted.",
+      "verdict": "PASS",
+      "reason": "Nothing restricts Gamma, amplitude, d in {1,2,3}, the white case or the subcritical range. Zero covariance is handled directly. No stochastic F bound, Cameron bound, concentration, infinite-head integration, nonlinear or point upper bound, exact limit, p1/Chen identity or cone claim appears. Radius constants are derived in this section rather than attributed to the fixed-cutoff parents, whose own text disclaims them."
+    },
+    {
+      "claim": "FINITE BOUNDARY AND DIAGNOSTICS. No new formal claim is made, and retained diagnostics are read within their stated limits.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "I did not vote on any kernel deduction and made no formal certification of the analytic proof. Without running the code, the JSON has 18 lattice rows, 3 mode calibrations and 9 parameter rows. By hand I confirmed 9/8, 421/324, 1343/864, all 9 anchor powers, all 9 bad-Q powers and exactly 6 bad-Q failures. These refute only Q gamma-only sufficiency. The float remainder is not certified, and the diagonal is not K_out's singular values. The TeX relies on none of this."
+    },
+    {
+      "claim": "PDF. Exact PNGs 201-208 correspond to the TeX for normalization, powers, signs, mask, sqrt(v), Q guards, blocks and exponent.",
+      "verdict": "PASS",
+      "reason": "Visual inspection confirmed: L^(-d/2) in both kernels, rho^(d/2) F_r(k-rho xi) with +-t, c'_d, the rho^d lattice bound and rho^(d/Q). Also m_R=eta(./R)^2, zeta=eta^2, all three guards in (32.2), sqrt(v) R^(d/Q) in (32.6) and the ratio 2^(-(beta_t-eta_t-1/Q)). Finally the delta-weighted Z_delta, (32.8), (32.9) and e_anchor. There is no clipping or overlap, five proof boxes end the five proofs, and no unresolved label is visible."
+    },
+    {
+      "claim": "PDF. Rendered cross-reference numbers point to the intended parents.",
+      "verdict": "PASS",
+      "reason": "Counting theorems and equations by hand inside the supplied parents reproduces 17.5, 18.5, 18.6, 18.7, 18.10, (18.10), (18.11), (18.14), 19.1, 19.2, 19.5, 19.9, (19.10), 20.2 and (25.2). Sections 29 and 31 are the Cameron and uniform-mean sections. Equations (32.1)-(32.9) and results 32.1-32.5 follow source order. This checks counters within sections; earlier section numbering was seen only as rendered."
+    },
+    {
+      "claim": "AUTHOR ATTESTATION, NOT REVIEWER EXECUTION. Build, hash, Git, formatter, C0 and unchanged-old-body records are recorded and consistent where hand-checkable.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "I ran no build, hash, Git or byte comparison and do not certify them. Hand-checkable consistency: per-file counts sum to 155; the seven supplied parents' proof counts match the preflight (9, 7, 10, 7, 7, 5, 6); the target has 5 proof blocks; the rendered PDF shows page 208 as the last page. These remain author evidence only."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Optional pointer precision: Corollary C:radius-covariance-residuals cites equation E:raw-block-pullback as the raw isometry. That equation is the definition, and the isometry is proved in Lemma L:raw-block-inputs. The earlier uniform-mean section uses the same shorthand, and the claim is true.",
+      "Optional explicitness in the step to (32.7): operator norm <= S_q, sqrt(q-1)<=sqrt(q), rho^(d/Q)<=(B+4)^(d/Q) R^(d/Q) and complexification are all left to 'it follows'. Each is correct and is available from earlier text or the parents.",
+      "Optional clarity: (32.4) does not display that K_in and K_out are formed with chi=chi_rho, though the proof makes this clear. Section 32 introduces B as a finite horizon >=1, while Proposition P:radius-mean-anchor obtains integer B only through the Section 29 partition. The note says integer explicitly.",
+      "Harmless strengthening of hypotheses: Proposition P:radius-actual-moments assumes all three Q guards, while source (4) needs only the first two. Any smaller admissible index is dominated by a larger index with all three guards, so nothing is lost.",
+      "Optional wording: the closing paragraph compresses three source sentences. These are that (20) cannot be inserted into the old F tuple proof, that any named projection needs its own orthogonality and Cameron evidence, and that Y may use an auxiliary retaining extension. A Cameron bound is also absent from the explicit exclusion list. The TeX makes no contrary claim.",
+      "Presentation only: overloaded symbols have clear local roles. These are B (horizon, balls, B_alpha, B_out), C_B (variance budget here, primitive constant in Sections 29 and 31), F_r versus phase F, eta versus eta_t, V (swap) versus variances, and Q_L versus Q.",
+      "Pre-existing debt outside this target: pages 206-207 have a roadmap that does not mention Section 32, and bibliography entries show empty parentheses. Neither overclaims this section, and earlier adjudications already record them as final-presentation items."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is an AI review and not human verification, a novelty audit, a whole-paper or cold-read clearance, a publication clearance or goal completion.",
+    "I executed no script, Git, hash, build, Lean or numeric tool. Binding of files, PNG SHA-256 values, the source revision, build logs and old-body identity were not verified. Diagnostic arithmetic was checked by hand from the displayed values.",
+    "Supplied direct parents were read completely and each new use was checked. Deeper ancestors not in the packet were not recertified, including the masked-covariance section behind Proposition P:masked-auxiliary-norm that supplies the uniform-in-R growth constant. Their stated conclusions were relied upon.",
+    "Only pages 201-208 of the PDF were inspected. Section numbers before Section 32 were checked by counters within supplied parents and by rendered references, not against the earlier PDF pages.",
+    "The GC cone and source-transfer evidence is not in this packet and was not audited. The source note says GC transfer passed, while older adjudications call a GC finiteness substitution unreviewed. These may concern different items, and the TeX under review claims neither.",
+    "The result is an expected first-driver norm bound on E at fixed parameters only. Its constants may be large and the decay slow near a=1. No statement about F, concentration, nonlinear moments or the sharp constant is verified here."
+  ]
+}

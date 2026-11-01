@@ -360,3 +360,29 @@ translation: SA1-SA3expectedactualFIRSTdriver norm, exactrescaledperiodization
 outerconstants, allthreeQguards andstrictgrowingradiusdecay. Thenroughsigned
 static/phase/actualtube/products/pointupper/PB/OC/WS. GC/BTdependency
 compression is still UNREVIEWED; conservative graph unchanged.
+
+
+## Radius-explicit stochastic anchor integration accepted
+
+Scientific e71d3b4,5proofs/clean208pages,155priorunchanged. ActualfirstParty
+Opus5.5/HIGH28passingchecks394.462seconds,no repairs; native73828TERMINAL0,
+accepted/coverageTRUE.40fivewayinputs/32fulltexts/8exactPNGs and55rawarchive
+files verified. All7optionalnotes adjudicated withoutfinalsource/PDFchange:
+reviews/2026-11-01-radius-anchor-tex-integration/adjudication-v1.md.
+ActualuniformR E FIRSTdriverallLv sqrt(v)R^(d/Q), deterministicorthogonal
+residuals/correlatedtupleexpectednorm tends0 ongrowingcutoff. NoCM/Fnorm/
+concentration/nonlinearpointupper.80facts22seamsunchanged,noLeanrun.
+
+Finalpresentation: addrawisometrylemmapointer, explicitopnorm/Schatten/
+complexification andrho-to-R factors, envelopeswithchi_rho, integerB at
+blockuse, optionalfirsttwoQguarddistinction, E-onlyconsumer/CM exclusion,
+varianceC_B rename, existingroadmap/bib debts. No mathematical repairs.
+
+Nextjointtarget reviews/2026-11-01-signed-phase-tex-integration/ frozenbefore
+translation. S Sections2-5FULL, SP Sections2-7FULL; verified exactUSscope.
+S3/S4fixedRcontinuity/averagingnotrequiredbyUSwhichderivesitsownuniformE
+rates/averaging; preserveallsource/reviews withoutclaimnewintegration.
+This avoids optionalproofexpansion whilekeepingrequiredfullphysical
+identification/symplectic/rawmeaninterface. No genuine dependencyremoved.
+GCfinitenesscompressionstillUNREVIEWED, conservativegraphunchanged. Then
+BT/US/GC/UR/PG/PB/OC/WS/fullargument/coldread/lit/wiki/privateparity gates.

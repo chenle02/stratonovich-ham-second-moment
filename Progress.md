@@ -161,8 +161,15 @@
   39five-wayinputs/31fulltexts/8exactimages/53raw+4recoverymembers verified.
   Five proofs,203pages clean,150prior unchanged. UniformR actual E linear
   mean/regulator/Cameron only; no stochastic/moment upgrade inferred.
-- **Immediate next:** integrate radius-explicit actual E stochastic anchor
-  (SA), then signed spectral/phase/tube/product/point upper/PB/OC/WS.
+- **Accepted SA TeX integration:** scientifice71d3b4,actualOpus5.5/HIGH,
+  28passingchecks394.462seconds,no repairs. Native73828 TERMINAL0,
+  accepted/coverage true,40five-wayinputs/32fulltexts/8exactimages/
+  55rawarchivefiles verified. Five proofs,208pages clean,155priorunchanged.
+  Actual uniformR expectedE FIRSTdriver norm tends0 at growingcutoff,
+  everydeterministicorthogonalresidual; no CM/nonlinear/moment upgrade.
+- **Immediate next:** jointly integrate signed rough static physical wave
+  S Sections2-5 and E symplectic baseline SP Sections2-7, then actual
+  tube/product/point upper/PB/OC/WS.
   Keep the frozen PB/OC/WS result set and full original model scope. The
   import interfaces are mapped; avoid repeating that inventory as a new round.
   Continue consolidating complete proofs into TeX/PDF, with clean builds
@@ -9398,3 +9405,43 @@ NoRoute. Sharedscience untouched; no sync/parity asserted. Localwork valid.
 80facts22seams/L0PROPOSED/decision4 unchanged;no package/HPC/contact/source
 repair/Skorohod/siblingwork/publication. EonlyFIRSTdriver expectednorm,not
 Fconstantcolumns/CM/concentration/nonlinear/sharp-pointupper/exactlimit.
+
+
+## 2026-11-01 — radius-explicit stochastic anchor integration accepted
+
+Scientificfreeze e71d3b4ae2e827df64a5c6027a9951aafc59db44,5proofs,
+208pagesclean,155oldproofbodies byteidentical. ActualfirstPartyOpus5.5/HIGH,
+28checks (24PASS,4notes),394.462seconds,no requiredrepairs. Native73828
+TERMINAL0/review-complete accepted/coverage TRUE, actualrouteverified.
+Canonical parse/pass/correspondence/fullreadledger validationPASS. All40
+live/packet/Git/nativeworkspace/finalreceiptbindings checked BEFOREadoption;
+32fulltexts+8typedexactPNGs, all55nativearchivefiles SHAreadbackverified.
+Rawreport unchanged; no recovery/fallback/thresholdwaiver/newproviderretry.
+No finalsource/PDFedit. All7optionalfindings fullyadjudicated in
+reviews/2026-11-01-radius-anchor-tex-integration/adjudication-v1.md.
+
+Accepted ALLoriginalmodels E-only expectedFIRSTdriver bound sqrt(v)R^(d/Q),
+actualdeterministicarbitraryorthogonalresiduals andcorrelatedtuplemean->0
+atgrowingRdelta, allthreefixedQguards. BOTHouterrescaledSchurfactors and
+exactwhole-spacefactorizationproved, notperiodicstates/diagonalnumerics.
+NoFconstantcolumn/CM/concentration/infinitehead/nonlinearpointupper claim.
+80facts22seams/L0PROPOSED/decision4 unchanged; no newLeanrun/application,
+package/HPC/contact/sibling/Skorohod/source repair/publication.
+
+NextjointS/SPtarget frozen BEFOREtranslation in
+reviews/2026-11-01-signed-phase-tex-integration/. It is the existing scoped
+S Sections2-5 (actualfixedR roughspectral/physical identity) and FULLSP
+Sections2-7. ExactUSsourceimport checked; unusedS3/S4continuity/fixedRaveraging
+not added as optionalwork, originalsource/reviews retained. Fullsource/
+primary/type/actualapplication gates remain required. SA targetcaptured
+review73828LIVE before actualend; that is historicalcapture, nowTERMINAL0.
+GCfinitenesscompression is STILLUNREVIEWED, distinctfromacceptedoriginalGC
+pointtransfer; conservativegraph unchanged. Finalupper/PB/OC/WSwholeproof/
+coldread/lit/wiki/remoteparity remainOPEN. SourcepushNoRoute preserved.
+
+Durablelessoncapturednow: fixedQbeforelimit/allthreeguards; actualwhole-space
+radiusbound needs BOTHouterSchurfactors as well asdiagonaltrace. Uniform
+finiteN bound passesatEACHfixedR withoutassuminguniformR convergence.
+No unchangeddiagnosticrerun or falseformal/numericalcertificate. Following
+priorcheckpointlesson, newgeneratedcontextrstrip/singlenewline andset-e
+staginggate nowavoid inheritedblankEOF/ignored-diffcheck behavior.
