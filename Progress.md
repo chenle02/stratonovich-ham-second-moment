@@ -8256,3 +8256,7 @@ Skorohod/sourcefix/TeX/PDF/wiki/bib/publication, NoRoute/pushpending.
   all-dimensionalstaticoccupationbridge(11),(16)-(18),rawSchurembedding,
   approximateRayleighoccupations insteadofd1H2grounds. Exacttargetmustbe
   frozenandsource/falsificationFITbeforeproof. Originalconstantsnotredefined.
+
+## OC all-model occupation ceiling target frozen — 2026-10-31
+
+[held back: collaborators' unpublished work]
