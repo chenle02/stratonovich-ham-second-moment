@@ -78,7 +78,12 @@ delivery gates remain OPEN. The older tracked
 TeX goal/summary paragraphs have now been reconciled in a consolidated
 working candidate. Its changed proof text still requires the fresh
 whole-argument and final cold reviews; no component receipt is silently
-transferred to those new bytes.
+transferred to those new bytes. The first whole-argument attempt timed out;
+its supported continuation returned INCONCLUSIVE/medium with incomplete
+image/source coverage and is not accepted. The coverage-recovery target
+retains all sections, proofs and primary/render obligations. Its editorial
+successor changes scope/status prose only; the full mathematical and final
+independent cold gates remain open.
 
 ## Scope limits
 

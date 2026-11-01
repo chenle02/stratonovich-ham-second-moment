@@ -10289,3 +10289,53 @@ physical-time Gaussian-driver/Young/operator route. The talk itself was
 not checked; no universal necessity claim, novelty or correspondence.
 All source/PDF/Lean bytes currently remain unchanged;80facts/22seams and
 companion L0PROPOSED/decision4 retained. No HPC/Skorohod/publication action.
+
+
+## 2026-11-01 — editorial successor and complete bounded-audit assignments
+
+The preceding turn made progress by preserving/adjudicating the terminal
+whole-review INCONCLUSIVE/medium and identifying actual media-removal
+friction. No scientific gate was promoted. This pass implements its eight
+bounded scope/status prose corrections: local limitations now distinguish
+the later intrinsic formula, historical alternative-route review notices
+are replaced by explicit mathematical scope, and near-static/interpolation
+notices no longer say the later constant remains open. Historical verdicts
+and failed packets remain in Git/Progress and the old review archive.
+
+Byte audit against scientific4a65c79: ALL213proof bodies,221statement
+blocks,636display blocks,445equation environments and7974inline formulas
+are unchanged across28TeXfiles. Only main TeX prose changed. No new proof,
+claim, model restriction, source normalization or finite Lean deduction.
+Formatter is idempotent. Source/PDF rebuilt locally, exit0, errors0,
+undefined references/citations0, overfull0. Shorter workflow notices reduce
+the physical PDF from258to257pages; mathematical material is retained.
+Every new page rendered. Author inspected pages38,43,47,48,54,97,103,247,
+254,257 only, not all257. Main theorem is now on physical247. Exact PDF
+SHA25610bfeae6eb576e23ba928b8ef9eca968d87f23ac7eff884c632bf50acb3294c9.
+
+New review directory2026-11-01-coverage-recovery contains exact editorial
+diff/audit, clean build, all257new renders,213proof locators and an explicit
+disposition of EVERY former401input obligation. Old unreviewed renders are
+not relabeled read: the exact new257-page PDF replaces its superseded old
+rendering, with complete mathematical source identity documented. All86
+primary/edition images are retained. Four primary groups contain24,24,19,21
+frames (two context overlaps), and11visual groups cover all current257pages
+(ten24-frame groups and one17-frame group). Every assignment is PLANNED,
+not a pass. A fresh full mathematical gate still covers all28files,44sections,
+213proofs and coupled original-model dependencies. Bounded fidelity passes
+do not prove that argument or substitute review votes for proof premises.
+
+Prepared the first actual assignment SF04, Teschl/Friz import fidelity and
+its actual six full consumer modules plus model/setup lines1-310. Frozen
+packet has52files,21typed PNGs,9assigned text ranges and13named obligations.
+All live/copy identities and actual crosswalk labels checked. This is only
+source/application fidelity, not whole books, all213proofs or goal clearance.
+Native doctor/headroom/preflight and actual dispatch remain next; no job
+is live at this capture. Prior cold preparation-v2 belongs to4a65c79 and is
+STALE for this successor; do not dispatch it as current. Cold NOT DISPATCHED.
+
+README and PROJECT-GOAL now record the actual inconclusive outcome and
+full-scope recovery.80finitefacts/22seams, officialcompanion L0PROPOSED and
+decision4 unchanged. No compiler rerun, new package, HPC, Skorohod science,
+contact or public release. Wiki maintenance checkpoint stays verified;
+final review-outcome/status and delivery reconciliation remain required.

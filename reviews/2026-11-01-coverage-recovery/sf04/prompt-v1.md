@@ -1,0 +1,24 @@
+Perform a fresh bounded primary-source/application audit, not proof authorship. The assigned target is the Teschl and Friz-Hairer imports and their actual manuscript consumers. No prior report or development history is a mathematical premise. Work by hand; no code, builds, numerical experiments, network, messaging or delegation. Read only this frozen packet. Do not edit sources or invent repairs to published definitions.
+
+Read the exact assignment in reviews/2026-11-01-coverage-recovery/sf04/crosswalk-v1.md and source identity in reviews/2026-11-01-coverage-recovery/sf04/primary-scope-v1.json. They list every assigned image and the physical/printed page distinction. All21images are required as actual displayed images; open each individually and do not substitute extracted text, path counts or an author's custody statement. If a read says media removed or no image was displayed, report that limitation and leave the corresponding check INCONCLUSIVE. Do not claim that accessing a filename proves seeing it. This provisional small packet measures actual media delivery; no numerical provider cap is assumed.
+
+Read the following six exact current manuscript files completely: notes/integrated_compact_mean_family.tex , notes/integrated_signed_static.tex , notes/integrated_uniform_products.tex , notes/integrated_gaussian_tubes.tex , notes/integrated_young_upper_foundation.tex , notes/integrated_constant_phase_young.tex . Read notes/notes_stratonovich_ham_second_moment.tex lines1-310 for the original model, conventions and dependency context. The other manuscript files are available if a reference must be resolved, but do not claim a complete28-file or213-proof review from this source audit.
+
+The scientific scope retains all original admissible Stratonovich covariances/amplitudes, dimensions1,2,3, data(1,0), and zero covariance. The full target derives the actual p2 constant, without forcing a printed Chen endpoint. This audit verifies external statement/edition/hypothesis fidelity and these applications. It does not re-prove the imported source chapters or certify the SPDE theorem, unrelated finite facts, all proofs or the final goal. The separate whole mathematical and independent cold gates remain required. Actual analytic defects or missing imported hypotheses must block their check; a vague intention to prove a missing premise is insufficient.
+
+Return the canonical report with exactly these13named checks, each with concrete source/consumer pinpoints and an honest PASS/FAIL/INCONCLUSIVE verdict:
+SF04-01 Teschl second-edition identity, title/copyright and physical/printed pagination.
+SF04-02 Closed densely defined semibounded Hermitian forms, Theorem2.14 and (2.63), actual shifts and form domains.
+SF04-03 Theorems3.1-3.2 and3.6 spectral/form calculus, bounded or unbounded function domains, spectral support and resolvent uses.
+SF04-04 Minmax Theorem4.12 and Corollary4.13 at the actual compact-family uses, with fixed-family versus all-radius scope.
+SF04-05 Theorem10.2 hypotheses: real bounded decaying/compact masked potentials, selfadjoint domain/core and essential spectrum; no general rough-potential import of a bounded-potential theorem.
+SF04-06 Theorem10.13 requires an existing ground eigenvalue; check existence is established before simplicity/positivity and no unmasked ground state is assumed.
+SF04-07 Friz-Hairer2020 identity, original PDF and varying physical/printed offsets.
+SF04-08 Banach Young estimate (4.1)-(4.3), exponent sum, bounded multiplication and actual left evolution/stability consumers; no inappropriate nonlinear theorem substitution.
+SF04-09 Borell set-enlargement Theorem11.6, footnote3 on190 only, normal CDF/tail normalization and distinction from11.7.
+SF04-10 Actual abstract-Wiener, Borel-set/enlargement and Cameron-norm hypotheses at the tube applications, full raw variance-half action and zero-law case; wave output not Gaussian by assumption.
+SF04-11 All21 assigned source/edition PNGs actually displayed and inspected; exact source filenames and any missing display must be reported.
+SF04-12 Every assigned text range read and all imported statements/application guards checked without relying on prior review votes or author build/hash counts as proof.
+SF04-13 Scope/status honesty: selected external source audit only, not whole books, all213proofs, official Lean package, novelty, human/circulation or goal clearance; no missing source/condition is silently accepted.
+
+State every uncertainty, source limitation and required repair. A conditional/source-fidelity result must stay conditional. Do not add extra numbered checks, run code, contact anyone or change any file. Use the canonical structured report required by the review runner, with source_coverage accurately distinguishing assigned complete ranges, displayed images and uninspected optional context.

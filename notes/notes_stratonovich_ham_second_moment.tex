@@ -2339,13 +2339,11 @@ $d$-dimensional solution.
 \section{Higher spatial exponents under a convolution bound}
 \label{S:higher-alpha}
 
-\myCmts{Reviewed by Opus with PASS\_WITH\_NOTES/medium confidence;
-configured high-confidence acceptance remains pending. The convolution
-assumption below is additional to homogeneity. The concrete applications
-cover only the stated Riesz ranges. Section~\ref{S:interval-upper}
-establishes the full general upper scale by a separate argument.
-The present additional-assumption route is not an input to
-Theorem~\ref{T:intrinsic-second-moment}.}
+The convolution assumption below is additional to homogeneity, and the
+concrete applications cover only the stated Riesz ranges.
+Section~\ref{S:interval-upper} establishes the full general upper scale
+by a separate argument. This alternative route is not an input to
+Theorem~\ref{T:intrinsic-second-moment}.
 
 We retain the standing covariance assumptions and take $d\in\{2,3\}$ and
 $1<\alpha<2-\alpha_0$. Put $\delta=\alpha-1$, $q=3-\alpha$, and
@@ -2730,10 +2728,10 @@ $G_{h,\eta}=p_\eta*G_h$, with $G_{h,0}=G_h$.
 \section{Riesz bounds by interpolation with static noise}
 \label{S:static-holder}
 
-\myCmts{Candidate argument, pending independent review. This section concerns
-isotropic Riesz covariance in dimensions two and three. It does not promote
-the preceding candidate, settle general anisotropic covariance, or identify
-the sharp constant. The accepted scope stated elsewhere is unchanged.}
+This alternative argument concerns isotropic Riesz covariance in dimensions
+two and three. It does not use the preceding conditional proposition,
+settle general anisotropic covariance, or identify the sharp constant.
+The full upper and intrinsic formula later use separate arguments.
 
 We use the static Stratonovich model of Chen--Hu as one input and the
 space-degree-one estimate of Section~\ref{S:d1-upper} as the other.
@@ -3030,19 +3028,20 @@ The source hypotheses for the Riesz covariances below are thus satisfied.
   isotropic Riesz covariance throughout the stated higher-degree range
   in dimensions two and three, including the previously uncovered
   two-dimensional interval $3/2\le\alpha<2-\alpha_0$.
-  It does not prove the full homogeneous-covariance goal: arbitrary
-  anisotropic profiles need not factor into admissible endpoint
-  covariances as above. The sharp second-moment constant, novelty and
-  formal verification remain open.
+  This argument does not cover arbitrary homogeneous covariances:
+  anisotropic profiles need not factor into the admissible endpoints.
+  The intrinsic second-moment formula is given separately in
+  Theorem~\ref{T:intrinsic-second-moment}. No novelty or full formal
+  verification is asserted here.
 \end{remark}
 
 \section{General homogeneous covariance in dimension two}
 \label{S:planar-holder}
 
-\myCmts{Candidate argument, pending independent review. This section gives
-complete endpoint constructions and a complete planar transfer. It does not
-use the preceding candidate proposition as an accepted input. Earlier
-accepted-scope statements and review confidence remain unchanged.}
+This section gives planar endpoint constructions and a transfer under
+its stated hypotheses. It does not use the preceding Riesz interpolation
+argument as an input. The later full upper and intrinsic formula use
+separate methods.
 
 Throughout this section $d=2$. Write $\Gamma$ for the spatial covariance
 as a nonnegative, even, positive-definite tempered Radon measure. For a
@@ -3501,20 +3500,18 @@ We first treat $\Gamma\ne0$ and $1<\alpha<2$.
   endpoint construction
   is dimension-specific; no general higher-exponent result in dimension
   three follows from it. Section~\ref{S:interval-upper} treats the full
-  homogeneous-covariance class by a separate argument. The sharp
-  constant remains open.
+  homogeneous-covariance class by a separate argument. The intrinsic
+  constant is identified separately in
+  Theorem~\ref{T:intrinsic-second-moment}.
 \end{remark}
 
 \section{Three-dimensional bounds from covariance endpoints}
 \label{S:three-endpoints}
 
-\myCmts{Expanded candidate, pending independent review of the new assembly.
-The conditional moment transfer has not passed the required high-confidence
-gate. The plane-supported endpoints and finite-sum comparison were reviewed
-separately as deterministic tools. We now include their proofs, a new
-linear-image closure argument, and the resulting moment applications.
-Earlier accepted-scope statements are unchanged; no general
-three-dimensional factorization is asserted.}
+The endpoint constructions and conditional moment transfer are retained
+as an alternative route. No general three-dimensional factorization is
+asserted. The later full upper and intrinsic formula do not use these
+factorizations.
 
 We first construct the product endpoints. Zero coordinate exponents below
 mean constant factors, not one-dimensional white noise.
@@ -6640,8 +6637,9 @@ on the empty tuple. This definition introduces no kernel symmetrization.
 
 \myCmts{The four proofs in this section passed a source-bound Opus5.5/HIGH
 review at \texttt{46d1075}, all seven checks passing. This is a scoped
-internal consequence; the original sharp target and whole-paper
-clearance remain open. No novelty or numerical normalization is claimed.}
+internal consequence and does not identify the intrinsic constant of
+Theorem~\ref{T:intrinsic-second-moment}. Whole-paper clearance remains
+pending; no novelty or numerical normalization is claimed.}
 
 Fix a nonzero spatial covariance in Hypothesis~\ref{H:homog}, and put
 \[
@@ -7021,8 +7019,9 @@ corresponding static terms. Set
 
 \myCmts{The following three proofs and the separate scalar-inference screen
 passed their own source-bound Opus5.5/HIGH review at \texttt{1bf6141},
-all seven checks passing. The full sharp constant at a fixed positive
-temporal exponent and whole-paper clearance remain open.}
+all seven checks passing. The constant at a fixed positive temporal
+exponent is identified later in Theorem~\ref{T:intrinsic-second-moment}.
+Whole-paper clearance remains pending.}
 
 Retain the fixed nonzero covariance and the notation of this section.
 For \(p=1,2\), set \(c_{p,0}(a)=1\) and, for \(k\ge1\),

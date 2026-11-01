@@ -27,12 +27,14 @@ limit or Chen's printed constants.
 All planned mathematical modules are integrated in the
 [TeX/PDF notes](notes/notes_stratonovich_ham_second_moment.pdf), and each
 component passed its scoped independent proof/application review. Those
-reviews bind their frozen versions. The current consolidation adds clarity,
-repairs stale status text and retains the full proof scope; it requires
-fresh whole-argument skeptical review and the final independent cold read.
-Earlier failed attempts remain preserved. No whole-paper, goal-completion
-or circulation clearance is claimed. Calibration/source checks, canonical
-wiki propagation and actual Git/<HUB> convergence also remain open.
+reviews bind their frozen versions. The first whole review ended
+INCONCLUSIVE/medium with incomplete source/image coverage; it is not
+accepted. The editorial successor retains all 213 proof bodies and requires
+complete source/render audits, a fresh whole-argument mathematical gate and
+the independent cold read. Earlier failed attempts remain preserved. No
+whole-paper, goal-completion or circulation clearance is claimed. Internal
+wiki maintenance and private Git delivery have verified checkpoints; final
+source/calibration adjudication, outcome propagation and delivery remain.
 The proposed private Lean companion is separately gated; local finite
 checks do not constitute its package gate. `Progress.md` is the workflow
 authority; the root loader `HANDOFF.md` identifies the active checkout.
