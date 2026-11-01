@@ -1,48 +1,55 @@
-Last updated: 2026-11-01 18:40 UTC (Codex)
+Last updated: 2026-11-01 19:08 UTC (Codex)
 
 LATEST USER DIRECTION: derive the actual constants, whatever computation yields.
 Chen matching is not a completion requirement.
 
 ## ⏭ Next session: where to stand and what to do
 
-FIRST poll the supported whole-argument TIMEOUT CONTINUATION, process
-session13739, confirmed LIVE. Original44594 is TERMINAL TIMEOUT, not live.
-No terminal receipt is present for13739 at capture. An observation timeout
-is not termination; do not restart on that basis.
+FIRST implement the bounded editorial scope/status corrections specified
+in reviews/2026-11-01-whole-argument/inconclusive-adjudication-v1.md in
+ACTIVE, preserving all mathematical statements and213proof bodies, then
+pair a clean rebuilt PDF. This is the first unit of the full-coverage
+recovery target in that same review directory. Do not start a new proof
+wave or call the old whole review accepted.
 
-Work in ACTIVE:
+ACTIVE:
 ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave,
-branch research/fixed-mask-young-20261031, workflow HEADc739542.
-Frozen scientific candidate4a65c79d9d4b5c6a7e0cb712a88f1a973cc9c3fd.
-Le's actual-derived-constant revision governs; matching Chen is not required.
-Mathematical workflow authority: current ACTIVE Progress.md/PROJECT-GOAL.md.
+branch research/fixed-mask-young-20261031, workflow HEADe7d64b6.
+Original consolidated candidate4a65c79d9d4b5c6a7e0cb712a88f1a973cc9c3fd
+is unchanged so far; old packets/receipts remain immutable after repairs.
+Le's actual-derived-constant target governs, without forcing Chen matching.
 
-Review files in ACTIVE: reviews/2026-11-01-whole-argument/. External state:
-../stratonovich-whole-argument-review-v1 relative to ACTIVE. Current output
-is its continuation/ directory; original native/ remains untouched.
-Original provider session a31a8981-7180-4654-8ec1-efb81eb57128.
-The original reached3601.406seconds, no report, acceptedfalse, coveragefalse
-with142 undelivered manuscript-image bindings. All413 original native files
-archived and every SHA256 read back;401 five-way input bindings match.
-The original failure is NOT mathematical acceptance or a scientific verdict.
+NO REVIEW IS CURRENTLY LIVE. Original44594 is TERMINAL TIMEOUT; supported
+continuation13739 is TERMINAL exit3, actual report INCONCLUSIVE/medium,
+acceptedfalse and coveragefalse. Do not poll or resume these as live.
+The actualOpus5.5/HIGH-dispatched continuation had transport success and
+no fatal/major/required mathematical repair, but it expressly declined
+213-proof certification and left6named obligations open. The63named checks
+plus one extra total58PASS/6INCONCLUSIVE. Neither passing nor full source
+coverage gates cleared. 'Media removed: request limit' affected images;
+Read-call counts and no discovered error are not acceptance.
 
-At actual terminal state validate canonical report/pass/receipt, model and
-auth, full continuation read-ledger lineage, all63 named obligations and
-401 source bindings before adjudicating findings or changing inputs.
-External helpers retain-continuation.py and audit_continuation_obligations.py
-are prepared, not executed or substitutes for gates. No chained continuation
-is supported; preserve actual outcomes before choosing any successor.
+All14continuation artifacts, raw/parsed report, full ledger, original
+timeout lineage and401five-way source identities are retained. Original
+413-file timeout archive is also preserved. Review files in ACTIVE:
+reviews/2026-11-01-whole-argument/. Full external native state:
+../stratonovich-whole-argument-review-v1 relative to ACTIVE. Do not run
+the passing retainers against the inconclusive report.
 
-All review source/TeX/PDF/finite inputs remain frozen. Independent cold read
-is NOT DISPATCHED; manuscript-only preparation-v2 is retained at
-../stratonovich-cold-read-preparation-v2 relative to ACTIVE; incomplete v1
-and its lookup failure are preserved. Keep fresh-reader context independent.
+Recovery must cover all original models,44sections,213proofs,86selected
+primary/edition pages and every newly rebuilt manuscript page. The target
+splits image-delivery fidelity into bounded fresh packets and retains a
+fresh full mathematical gate, not a main-theorem-only or lower-confidence
+substitute. Provisional24-image budgets are engineering choices, not a
+claimed provider cap. Measure actual display/read-ledger evidence before
+scaling. Completed review cannot be resumed; any successor needs new
+evidence/contract and immutable outputs. Final cold read NOT DISPATCHED.
 
-Clean <HUB> master/research counterparts are synchronized, including
-researchc739542 and the timeout archive; current-PDF hash was verified.
-Exact internal wiki tickettk-20261101-124652-codex-stratonovich-project-status
-was last in requests; check the exact receipt/page/commit, not queueing alone.
-No service restart. Current258-page PDF was displayed on Awesome tag8.
+Wiki tickettk-20261101-124652-codex-stratonovich-project-status is VERIFIED
+maintained, wiki43ae67dc, actual committed/live page match. Its pre-timeout
+snapshot explicitly keeps whole review and cold gates pending. A final
+outcome refresh remains due. Both clean <HUB> research/master
+counterparts are synchronized. The258-page active PDF was shown on tag8.
 
 ## Pre-flight checks
 
@@ -142,36 +149,19 @@ No service restart. Current258-page PDF was displayed on Awesome tag8.
 
 ## Concrete deliverables for the next session
 
-- Monitor session 44594, whose live state is verified in Progress.md and
-  reviews/2026-11-01-whole-argument/dispatch-v1.json at capture. If its
-  handle is missing, inspect authoritative native receipt/process state
-  before deciding what happened; never restart merely because a poll expired.
-- The full candidate contains all 28 TeX files/213 proof blocks. The packet
-  has 57 texts and 344 typed images: all 258 manuscript pages and 86 selected
-  primary pages. Native source revision is 4a65c79, not a later workflow HEAD.
-- Require SEC01-SEC44, GLOBAL01-GLOBAL12, SOURCE01-SOURCE04, KERNEL01,
-  VISUAL01 and STATUS01 exactly once. Scientific defects, missing sources,
-  wrong model, invalid report or incomplete coverage are not acceptance.
-- Preserve the actual attempt. Any syntax-only recovery must use the
-  canonical reversible tool and separate receipt, with the original refusal
-  intact. The prepared external retain.py is not executed until terminal
-  acceptance; adapt only if a documented different terminal state requires it.
-- After whole-gate adjudication, obtain the required fresh independent
-  DeepSeek V4-Pro cold read (reserve Qwen under the workforce contract).
-  Do not replace either final gate by the earlier local reviews.
-- Finish calibration/source and canonical wiki/provenance/delivery checks.
-  Research push7099838 succeeded, but <HUB> checkout sync is unverified.
-  No contact, public release, source correction, HPC, companion creation,
-  Skorohod work, sibling science or system setup is authorized.
+A bounded editorial successor with unchanged statements/213proof bodies,
+clean source/PDF build, exact body-difference audit and immutable candidate.
+Then execute the coverage-preserving recovery target: complete primary
+source/application and whole-page fidelity evidence plus a fresh whole
+mathematical HIGH gate. These are deliverables, not existing passes.
 
 ## Success criteria for the immediate next step
 
-A terminal, source-bound whole-argument review of candidate 4a65c79 with the
-actual required model/route, complete text/image coverage, every named
-obligation and all findings adjudicated. A live handle or availability
-probe is not a verdict. Current goal completion additionally requires the
-independent cold read and the remaining calibration/source/wiki/delivery
-checks. Keep the complete original mathematical scope intact.
+The first editorial unit corrects only the recorded local scope/status
+prose, retains every original theorem/assumption and proof body, and pairs
+the rebuilt PDF with zero errors, undefined references/citations or
+overfull boxes. Old source/packets/reports and actual medium/inconclusive
+verdict remain unchanged. No final mathematical or goal acceptance follows.
 
 ## Anti-success criteria
 
@@ -2057,18 +2047,55 @@ masterb4e29f3, researchc739542, corresponding origin equal and0/0. This
 HANDOFF-only update refreshes the now-terminal original handle to13739.
 No new proof/Lean/companion/HPC/publication or goal clearance.
 
+
+### 2026-11-01 — terminal inconclusive whole review preserved and adjudicated
+
+Research e7d64b6 preserves actual original4a65 candidate review continuation
+13739: review-complete, transport0/success, actualOpus5.5/HIGH route,
+INCONCLUSIVE/medium, acceptedfalse/coveragefalse,1288.01seconds. All63
+named checks occur once plus extra calibration:58PASS/6INCONCLUSIVE.
+Open SEC07-09,SOURCE01,SOURCE03,VISUAL01; no fatal/major/required repairs
+reported, but variable checking depth and no213-proof certification.
+Unattested232manuscript/38primary images and134producer coverage failures
+are different evidence notions; actual returned image reads reported
+'media removed: request limit'. Prior progress viewing claims retracted.
+Canonical passing and full-read gates both refuse. Original failure and
+confidence remain intact, not improved by selective quoting.
+
+Archived14continuation artifacts, verified every member hash, original
+timeout lineage and401five-waybindings. Raw/parsed report and full ledger
+retained. All findings/limitations adjudicated; full-scope coverage-recovery
+target drafted, not executed. It preserves all scientific obligations while
+using bounded image-delivery passes and a fresh whole mathematical gate.
+No new proof/source/PDF/Lean edit has yet occurred. Both old reviewer
+handles are TERMINAL; no reviewer is currently live. Cold NOT DISPATCHED.
+
+Wiki maintenance is actually verified: exact ticket maintained, owned
+wiki43ae67dce11469b22cd881e47d87fb7325d0defc, committed/live page equal,
+SHA256b651ad267a4b391a5cecb9151380d6253e3ef87d5314431d423ed352668d74c1.
+Research75c0340 records receipt/page verification, complete original archive
+and seven helper-generated indexes only. Source6repo pages untouched by
+Codex. The wiki snapshot was captured before original timeout and keeps
+review/cold gates open; final outcome update remains due.
+
+Le's talk observation is retained: Chen's held author Theorem6.1/Remark6.3
+complex Brownian-clock representation differs from our proposed physical-
+time Gaussian-driver/Young/operator route. Talk construction not checked;
+no universal necessity, novelty or correspondence claim.
+Pushed e7d64b6; both clean <HUB> counterparts synchronized.
+
 ## Repo & git state at handoff
 
 ROOT master before this HANDOFF-only commit:
-b4e29f32a69967fbc0150d3deee463fbaa34064f, clean, origin/<HUB> equal.
+b1081f2e56e169314ddc774dc09dd11b5903b49c, clean, origin/<HUB> equal.
 ACTIVE research workflow:
-c7395422e9ea479d246e32eea9504d325e13f764, clean, origin/<HUB> equal.
-Frozen scientific candidate:
+e7d64b62e395a5faa49d5f242b1e670145fe9ff4, clean, origin/<HUB> equal.
+Unchanged scientific candidate under the inconclusive review:
 4a65c79d9d4b5c6a7e0cb712a88f1a973cc9c3fd.
-Both corresponding <HUB>s actually synchronized, including full
-timeout archive. Research stays separate from canonical master science.
-This new HANDOFF-only commit is pushed and canonical <HUB> synced
-next; verify actual results rather than infer success from this text.
+Both corresponding <HUB> checkouts actually synchronized, including
+all timeout/inconclusive archives. Research is separate from old master
+science. This HANDOFF-only commit is pushed and canonical <HUB>
+synced next; inspect actual terminal results before assuming parity.
 
 ## Operating notes
 
