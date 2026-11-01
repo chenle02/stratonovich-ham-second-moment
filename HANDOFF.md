@@ -1,14 +1,14 @@
-Last updated: 2026-11-01 10:31 UTC (Codex)
+Last updated: 2026-11-01 10:53 UTC (Codex)
 
 LATEST USER DIRECTION: derive the actual constants, whatever computation yields.
 Chen matching is not a completion requirement.
 
 ## ⏭ Next session: where to stand and what to do
 
-FIRST integrate uniform-radius E mean and actual regulator (U)
+FIRST integrate radius-explicit actual E stochastic anchor (SA)
 into TeX in ACTIVE
 ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave,
-branch research/fixed-mask-young-20261031, clean local HEAD 488d089.
+branch research/fixed-mask-young-20261031, clean local HEAD 8bc53b3.
 Read its PROJECT-GOAL.md, AGENTS.md, Progress.md and
 notes/derived-constant-integration-plan.md and derived-constant-proof-imports.md
 in its notes directory. Root mathematical files and
@@ -24,7 +24,7 @@ review68458(v3PASS0),71223(v2coverage-refusal3), or v1preflight5.
 FR/AV TeX integration is now ACCEPTED: scientificf5c1521,adoption7dbcd4a,
 27PASS/HIGH382.209seconds,no mandatory repairs. Review13477 isTERMINAL0,
 not a task to restart. Read the frozen next target in
-reviews/2026-11-01-uniform-e-mean-tex-integration/target-v1.md in ACTIVE.
+reviews/2026-11-01-radius-anchor-tex-integration/target-v1.md in ACTIVE.
 FG/CC is now ACCEPTED: scientific2571a15,adoption22e3426,24HIGHchecks
 323.168seconds,no repairs. Native74139 TERMINAL0; old16481 remains
 rejected (rawFAIL/HIGH,canonical invalid-report). Do not restart either.
@@ -59,8 +59,14 @@ occupation class now integrated. C1-C3/E1 now ACCEPTED: scientific5e36bcb,
 adoption488d089,18passing checks/HIGH512.225seconds,no repairs.
 Native66685 TERMINAL0; do not restart. Actual compact mean/Cameron map
 and generic endpoint-preserving Young upper now integrated, FIXED R only.
-Uniform E controls, actual stochastic/spectral/product/point upper and
-exact-limit/final gates remain.
+Uniform E mean/regulator now ACCEPTED: scientificd90c4bc,adoption8bc53b3,
+26passing checks/HIGH418.169seconds,no required repairs. Native92636
+TERMINAL3 malformedJSON preserved; canonical UNIQUE one-brace reversible
+recovery/no newprovider call acceptedafterALLgates. Recoveredreceipt is
+accepted; originalreceipt remains refused.39five-way inputs,31fulltexts/
+8exactimages,53raw+4recoveryoriginals readbackverified.5newproofs,203pages
+clean,150prior unchanged. No finalsource/PDFedit. Actualstochastic/spectral/
+phase/tube/product/pointupper/exact-limit/final gates remain.
 No owned reviewer or computation remains live.
 
 ## Pre-flight checks
@@ -161,23 +167,26 @@ No owned reviewer or computation remains live.
 
 ## Concrete deliverables for the next session
 
-- Follow frozen U target in ACTIVE. Uniform physical cutoff, fractional
-  product and E mean bounds, translation/heat tail and TRUE spatial
-  Fourier projections on the actual closed covariance image. No density
-  assumption on mu or periodic state, keep boundary mass and noise maskONCE.
-- Dimension-free Hilbert-valued time tensor tail, with no tensor compactness
-  assertion. Actual retained pi_J tensor P_K generally has INFINITE spatial
-  rank. Correct extension P_full=i_I P_ret i_I^* on H_W, same given W.
-- Actual projected residual covariance/CM norm at true remainder, sqrt(delta)
-  and exact delta norm, explicit radius-independent free constants. E only,
-  no F uniformR/finite Gaussian head, expected stochastic norm or sharp upper.
-- Existing Mathlib finite type unchanged; check actual guards, no compile.
-- Separate gc-finiteness-audit-v1.md is UNREVIEWED. Conservative graph stays
-  until future GC/BT gate checks SAME driver/phase/source correspondence.
-  No growingR rate follows from fixed-parameter F moments/E restriction.
-- Then stochastic anchor/signed spectral/phase/tube/product/point upper,
-  PB/OC/WS and final whole-argument/cold-read plus private delivery.
-- Recover private pushes/wiki queue/<HUB> parity when available.
+- Follow frozen SA target in ACTIVE. Translate source
+  notes/radius-stochastic-driver-anchor.md Sections1-6,scientific8cf62b0,
+  and all six adopted scientific findings; complete actual proof, E only.
+- Track BOTH outer weighted Schur kernels uniformly under rescaling,
+  retaining L^(-d/2), exact whole-space cutoff factorization, negative
+  Sobolev indices and lattice power rho^(d/q); no periodic state replacement.
+- Fix ONE even Q before delta with ALLthree conditions. Use both actual
+  uniformR variances, unnormalized Schatten monotonicity at fixedQ,
+  actual sameW finite rawbasis/timechaining thenfixedR allLp limit.
+- Every deterministic raw orthogonal projection, possibly infinite rank;
+  correlatedblock finite expectation sum, true last stop and exactdelta
+  p norm, strict decay atRdelta=delta^-1+2. No stochasticF constantcolumns,
+  randomprojection, concentration, nonlinearorpointupper fromSAalone.
+- Full source/PDF/typedmedia/freshactualOpus5.5/HIGH gate. No new Lean
+  compilation/fact for unchanged finite inputs;80facts22seams remain.
+- Separate gc-finiteness-audit-v1.md is UNREVIEWED; conservative graph stays
+  until futureGC/BT SAMEdriver/phase/sourcecorrespondence gates.
+- Then signed spectral/phase/tube/product/point upper/PB/OC/WS, final
+  whole-argument/coldread/literature/private delivery and wiki provenance.
+- Recover private pushes/wiki queue/actual <HUB> parity when available.
 
 ## Success criteria for the immediate next step
 
@@ -1662,14 +1671,37 @@ separate GC finiteness substitution candidate UNREVIEWED, conservative
 branches preserved until actual GC/BT gate. Fresh private pushNoRoute;
 no owned live jobs. Upper/exact/final cold-read/delivery open, goalACTIVE.
 
+2026-11-01 uniform E regulator integration: scientificd90c4bc,
+adoption8bc53b3dcc11db965e82bb3af33666dea5461f6b,5completeproofs,
+clean203pagePDF/0errors/undefined/overfull;150priorproofbodies unchanged.
+Actual firstPartyOpus5.5/HIGH26checks (24PASS,2notes),418.169seconds,
+no requiredrepairs. Native92636 TERMINAL3 invalidJSON refused; raw
+report/receipt preserved unchanged. Canonical recover-report inserted
+exactlyONE missing'}' atbyte17827 afteruniquevalidsearch, byte-reversible,
+newprovidercalls0; ALLordinarygates/coverage/correspondence rerunPASS.
+Recovered statusreview-complete-recovered acceptedtrue; never relabel
+originalrefusal as accepted.39fivewayinputs/31fulltexts/8exactPNGs;
+all53rawnative+4recoveryoriginalfiles SHAreadbackverified. Sevenoptional
+findings adjudicated with no finalsource/PDFedit: localM_h rename,
+H_fast/rawnorm definition, separateEfreeconstants, U/mathcalU andsame-r
+identification, E littleHolderdefinition, roadmaprefresh. UniformR
+LINEAR E actualmeans/projections/CM only, no stochastic/momentupgrade.
+Existingfinitekernelguardchecked,no compile/fact;80facts22seams/L0PROPOSED.
+SA nexttargetfrozenbeforetranslation, withall3Qguards andstrictgrowingR
+expectedfirstdrivernormdecay. Source/adoptionpushesNoRoute; no sync/parity.
+Allownedprocesses terminal;goalACTIVE. Durablelessonrecorded now: use
+existing UNIQUEreversible syntaxrecovery in NEWdirectory, rawrefusal
+preserved, no manualcontentrewrite/coveragewaiver ornewscientificvote.
+
 ## Repo & git state at handoff
 
-Before this HANDOFF-only successor root master HEAD3b42f85. Active research
-clean HEAD488d089d7ef3ee72971182e53e2f450323231759. Private origin remains
-<HUB> bare; fresh push failed SSH NoRoute, no synchronization claimed.
-Last-fetched root611c005/research6937719 remain historical observations.
-No implicit research/master merge. Scientific work stays in isolated ACTIVE;
-this root HANDOFF is the operational loader, not mathematical authority.
+Before this HANDOFF-only successor rootmasterHEADdbd4cad.
+Active research cleanHEAD8bc53b3dcc11db965e82bb3af33666dea5461f6b,
+sourcefreeze d90c4bc42b02e514c7bdd1d6b3af887cbc8887ac.
+Privateorigin remains <HUB> bare; freshsource/adoptionpushes failedSSH
+NoRoute, no synchronization orHEADparity claimed. Last-fetchedroot611c005/
+research6937719 remain HISTORICAL. No implicit research/mastermerge.
+Science stays isolatedACTIVE; rootHANDOFF is loader, not mathauthority.
 
 ## Operating notes
 
@@ -1681,7 +1713,7 @@ derived constants when fully specified/proved; numerical or closed-form
 evaluation must be distinguished from bounds/calibrations.
 Required independent firstParty actualOpus5.5/HIGH, fresh headroom THEN
 actual doctor/model probe for a NEW assigned review. Explicit known Gmail
-slot lastMax91%/shortunknown; mainalias had changed tootherProidentity.
+slot lastMax94%/shortunknown; mainalias belonged tootherTeamidentity.
 No model/provider/threshold/credential fallback. Preserve raw reviews and
 all failures; archive and five-way-check before optional clarity.
 Canonical queue is the only six-repo writer; no direct wiki writes while
