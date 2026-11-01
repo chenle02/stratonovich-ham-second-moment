@@ -1,0 +1,219 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "notes/integrated_uniform_products.tex: lines 1-584, full",
+    "notes/uniform-e-spectral-products.md: lines 1-465, full; Sections 2-8 checked as scientific source, Section 9 read as historical evidence",
+    "notes/integrated_signed_static.tex: lines 1-290, full",
+    "notes/integrated_cameron_mean.tex: lines 1-511, full",
+    "notes/integrated_uniform_mean.tex: lines 1-424, full",
+    "notes/integrated_symplectic_phase.tex: lines 1-367, full",
+    "notes/integrated_young_upper_foundation.tex: lines 1-111, full",
+    "notes/integrated_constant_phase_young.tex: lines 1-498, full",
+    "notes/integrated_compact_gaussian.tex: lines 1-640, full",
+    "reviews/2026-10-31-uniform-e-spectral-product/scientific-adjudication-v1.md: lines 1-72, full",
+    "reviews/2026-10-31-uniform-e-spectral-product/statement-adjudication-v1.md: lines 1-71, full",
+    "reviews/2026-10-31-uniform-e-spectral-product/falsification-v2.md: lines 1-18, full",
+    "reviews/2026-10-31-uniform-e-spectral-product/check-interface-v1.py: lines 1-79, full, read only and not executed",
+    "reviews/2026-10-31-uniform-e-spectral-product/interface-controls-v1.json: lines 1-217 and 218-349, full across two reads",
+    "reviews/2026-10-31-upper-residual-exponential/mathlib-young-type-v1.txt: lines 1-17, full",
+    "reviews/2026-10-31-upper-residual-exponential/mathlib-young-custody-v1.json: lines 1-9, full",
+    "reviews/2026-10-31-upper-gaussian-projection-screen/mathlib-finite-holder-type-v1.txt: lines 1-19, full",
+    "reviews/2026-10-31-upper-gaussian-projection-screen/mathlib-finite-holder-custody-v1.json: lines 1-9, full",
+    "reviews/2026-11-01-signed-phase-tex-integration/adjudication-v2.md: lines 1-123, full",
+    "reviews/2026-11-01-upper-foundation-tex-integration/adjudication-v1.md: lines 1-75, full",
+    "reviews/2026-11-01-uniform-e-mean-tex-integration/adjudication-v1.md: lines 1-86, full",
+    "reviews/2026-11-01-moment-young-tex-integration/adjudication-v1.md: lines 1-63, full",
+    "reviews/2026-11-01-compact-gaussian-tex-integration/adjudication-v2.md: lines 1-61, full",
+    "reviews/2026-11-01-uniform-products-tex-integration/target-v1.md: lines 1-89, full",
+    "reviews/2026-11-01-uniform-products-tex-integration/target-freeze-v1.json: lines 1-11, full",
+    "reviews/2026-11-01-uniform-products-tex-integration/finite-reuse-preflight-v1.json: lines 1-14, full",
+    "reviews/2026-11-01-uniform-products-tex-integration/finite-application-map-v1.md: lines 1-20, full",
+    "reviews/2026-11-01-uniform-products-tex-integration/crosswalk-v1.md: lines 1-35, full",
+    "reviews/2026-11-01-uniform-products-tex-integration/worker-honesty-v1.md: lines 1-34, full",
+    "reviews/2026-11-01-uniform-products-tex-integration/prompt-v1.md: lines 1-102, full",
+    "reviews/2026-11-01-uniform-products-tex-integration/model-context-v1.tex.txt: lines 1-107, full",
+    "reviews/2026-11-01-uniform-products-tex-integration/primary-teschl-excerpt-v1.txt: lines 1-296, full",
+    "reviews/2026-11-01-uniform-products-tex-integration/primary-young-excerpt-v1.txt: lines 1-51, full",
+    "reviews/2026-11-01-uniform-products-tex-integration/primary-custody-v1.json: lines 1-49, full",
+    "reviews/2026-11-01-uniform-products-tex-integration/build-v1.json: lines 1-38, full",
+    "reviews/2026-11-01-uniform-products-tex-integration/structural-preflight-v1.json: lines 1-40, full",
+    "reviews/2026-11-01-uniform-products-tex-integration/rendered-section-v1.txt: lines 1-487, full",
+    "reviews/2026-11-01-uniform-products-tex-integration/page-v1-221.png through page-v1-230.png: all 10 images inspected in full",
+    "reviews/2026-10-31-upper-signed-static/teschl-physical092.png, teschl-physical093.png, teschl-physical114.png, teschl-physical116.png, teschl-physical121.png: all inspected in full",
+    "reviews/2026-11-01-signed-phase-tex-integration/teschl-physical115.png: inspected in full",
+    "reviews/2026-10-31-compact-mean-ground/pages/teschl2014-title.png and teschl2014-copyright.png: inspected in full",
+    "reviews/2026-10-31-upper-young-perturbation/friz-hairer-pdf028.png, friz-hairer-pdf075.png, friz-hairer-pdf076.png: all inspected in full",
+    ".review/required-sources.json: lines 1-240, read as the coverage plan only"
+  ],
+  "checks": [
+    {
+      "claim": "Parameter window: 1/2<theta<min(1-a/2,(3-a-alpha)/2), nu=1/theta, 1/(1-theta)<r<2/a, nu<=p<2<r is nonempty and supplies every exponent relation used.",
+      "verdict": "PASS",
+      "reason": "theta<1-a/2 gives 1/(1-theta)<2/a. a+alpha<2 gives (3-a-alpha)/2>1/2, including alpha=d=1. theta>1/2 gives r>2>nu, 1-1/r>theta, r/nu>1 and p/nu>=1. All original covariance, amplitude and dimension cases remain, and zero covariance is treated separately."
+    },
+    {
+      "claim": "Lemma L:uniform-E-lift: zero columns, ||L||=||M||=k, unique real V=M chi_R supported in supp m_R, smooth multiplication and density, symmetry, and the bound (36.1).",
+      "verdict": "PASS",
+      "reason": "The (0,Mu) form gives the exact norm equality. M_n chi_R=V_n gives the Cauchy bound with fixed-R factor ||chi_R||_{H^{1/2}}. Testing off the mask preserves support. L:cutoff-factorization multiplication identifies Mu=Vu on tests and density extends it. Mu=Vu on tests also makes M chi'=V for any other admissible cutoff, so V does not depend on the sequence or the cutoff. Symmetry and (36.1) pass to the limit from int V_n u w."
+    },
+    {
+      "claim": "Fixed-R F lift in the exact Section 33 class, used only for physical identification.",
+      "verdict": "PASS",
+      "reason": "The operators (u,v,c1,c2)->(0,M_n u+c1 V_n,0,0) are exactly L_{q_n} of Section 33, and their differences are bounded by (1+||chi_R||)||M_n-M_j||. The limit lies in V_R with L_F i=iL. Neither chi_R nor ||L_F|| appears in (36.2)-(36.12)."
+    },
+    {
+      "claim": "Completed mean fields and Bochner averages lie in V_{E,R}, with the correct sign and one mask.",
+      "verdict": "PASS",
+      "reason": "T_R is bounded on H_sp and agrees with L_q^E on dense smooth q, so T_R(H_sp) lies in the closed class. The field is T_R(U Phi(s)) a.e. The row identity (E:cameron-spatial-row) gives +V z1 paired with Lambda^{-1}w2, which fits H_V=-Delta-V and v_t=-H_V u. The mask m_R=eta_R^2 occurs once, after covariance."
+    },
+    {
+      "claim": "Complexification: same operator norm, Hermitian diagonal, and equal real and complex form infima by convex split.",
+      "verdict": "PASS",
+      "reason": "||M(a+ib)||^2=||Ma||^2+||Mb||^2 preserves k. Symmetry cancels the cross terms, so v(u,u)=v(a,a)+v(b,b). q(u)/||u||^2 is then a convex combination of normalized real quotients with zero parts omitted, and restriction to real vectors gives the reverse bound. Conjugation commutes with the form, resolvent and calculus, so real restrictions are the actual phases."
+    },
+    {
+      "claim": "E form budget (36.4) with c=2+K^2 and L_K=3(1+K^2), plus closed form, A>=2 and D(A^{1/2})=H^1.",
+      "verdict": "PASS",
+      "reason": "Hand algebra: q+cb^2=z^2+(1+K^2)b^2-v, and |v|<=Kbz<=z^2/2+K^2b^2/2 gives both displayed bounds. b<=z gives 5/2+3K^2/2<=3(1+K^2). The lower bound dominates z^2/2, and also 2b^2 because z>=b and K>=1. Norm equivalence with H^1 gives closedness in the sense of Teschl printed p.80. Theorem 2.14 with (2.63) and (3.52)-(3.53) then apply with verified hypotheses."
+    },
+    {
+      "claim": "Positive-resolvent square-root comparison, pairs (B0,2A) and (A,L_K B0), quarter domains, negative completion and condition cost.",
+      "verdict": "PASS",
+      "reason": "Completing the square gives the resolvent order in the correct direction. t=xv^2 verifies the sqrt identity with constant 1/pi. Both pairs are >=1. The output gives 2^{-1/4}||u||<=||A^{1/4}u||<=L_K^{1/4}||u|| and D(A^{1/4})=H^{1/2}. The dual constants are 2^{1/4} and L_K^{-1/4}. L_K>=6 makes M_K dominate them, and M_K^2=sqrt(3(1+K^2))<=2(1+K). No H^2, KLMN or A^{3/4} shortcut occurs. Scalar z and phase (u,v) are kept distinct."
+    },
+    {
+      "claim": "Spectral bottom: -K^2<=beta<=0, beta=inf spec H_V, zero lambda allowed.",
+      "verdict": "PASS",
+      "reason": "For unit L2 u, q>=z^2/2-1-K^2/2>=-(1+K^2)/2>=-K^2. A whole translated dilated bump has zero potential pairing and kinetic energy tending to zero. Form integrals and bounded slices give both inequalities, and mass-one scalar measures show the projection-valued measure has support. Nothing divides by lambda. See minor note 2 on the resolvent direction of spec=supp P."
+    },
+    {
+      "claim": "Spectral wave matrix and the E budget ||P_V^E(t)||<=8(1+K)^2(1+t)e^{lambda t}.",
+      "verdict": "PASS",
+      "reason": "Conjugating [Cos,Sin;-hSin,Cos] by (h+c)^{+1/4,-1/4} reproduces the displayed sqrt(h+c) and reciprocal weights. The h>0, h=0 and beta<=h<0 entry bounds all hold, including lower<=lambda e^{lambda t}/sqrt2<=K e^{lambda t}. sqrt(c)<=2K gives the entry bound 2(1+K)(1+t)e^{lambda t}. The block norm is at most twice that, and the condition cost 2(1+K) gives exactly 8(1+K)^2(1+t)e^{lambda t}. Entries are set to zero off the closed support before Theorem 3.1."
+    },
+    {
+      "claim": "The spectral group is the actual physical E wave, through the same F lift, form uniqueness, shift independence and old graph-core identity, without quantitative F transfer.",
+      "verdict": "PASS",
+      "reason": "L_F belongs to the exact hypothesis class of P:signed-physical-wave. It has the same form q_V, so Theorem 2.14 uniqueness gives the same H_V for any shift. The Cos and Sin functions agree on dense spectral cutoffs, and boundedness extends the equality to E. The parent identifies this wave with the bounded-perturbation and Young wave on E. Only the qualitative identity is used. See minor note 3."
+    },
+    {
+      "claim": "Rate continuity (36.3) from an epsilon-minimizer.",
+      "verdict": "PASS",
+      "reason": "beta(W)<=0 gives q_W<=1. Then z^2-1-Kz<=1 gives z<=(K+sqrt(K^2+8))/2<=K+2. With ||u||_{H^{1/2}}^2<=z, the form change is at most (K+2)||L_V-L_W||. Taking infima and reversing roles gives the beta bound, and |sqrt a-sqrt b|<=sqrt|a-b| gives the lambda bound. Only E norms enter."
+    },
+    {
+      "claim": "Zero covariance handled directly, with no nonzero-noise import.",
+      "verdict": "PASS",
+      "reason": "H_sp=H_I={0}, M0=C_mean=0, class {0}, H_V=-Delta and beta=lambda=Rate=0. Mean flows are S_E(ell_m), and Lemma L:symplectic-free gives norm>=1. All bounds reduce correctly: Z=Omega=Lambda=D_M=0 and every a_m=0. Residual comparisons still act on the nonzero phase E."
+    },
+    {
+      "claim": "Proposition P:uniform-rate-averaging: omega_delta->0, contraction, density, uniformity on the compact C_t ball.",
+      "verdict": "PASS",
+      "reason": "Jensen on positive-length cells gives the contraction, with cell endpoints null and an empty final cell ignored. The continuous-field modulus, density and contraction give strong convergence. Compactness of C_t into L^r (P:cameron-temporal-map, r in (2,2/a)) with a finite net and ||A-I||<=2 gives omega_delta->0 at fixed B. Tiny last cells are legal."
+    },
+    {
+      "claim": "Typed finite tensor identity and completed uniform field error ||W-barW||<=M0 M omega_delta; no compact-tensor or composite-compactness assertion.",
+      "verdict": "PASS",
+      "reason": "On finite tensors the Bochner average commutes with T_R. L:uniform-mean-tensor at r>=2 with A=(A_delta-I)C_t, together with ||T_R||<=M0, gives the completed bound uniformly in R. The tex explicitly disclaims tensor compactness and makes no uniform composite claim."
+    },
+    {
+      "claim": "Integrated rate error (36.7), and Rate finite, nonnegative and continuous.",
+      "verdict": "PASS",
+      "reason": "K(s)+2<=3+||W1(s)||+||W2(s)||, and Cauchy-Schwarz on |I|=1 with L1<=Lr gives sqrt(3+2Z)sqrt(Omega). lambda is continuous on the closed class, so these quantities are measurable. lambda<=max(1,||L||) gives Rate<=1+C_mean||Phi||. Continuity follows from the same inequality."
+    },
+    {
+      "claim": "Lemma L:uniform-product-budgets free matrix and primitive bounds: G_B in [1,3B], C_B<=18B^{3-1/r}<=32B^{3-1/r}, C_B B^{1/r}>=B, ||H_m||<=a_m, delta sum a_m^r<=C_B^r||W||^r.",
+      "verdict": "PASS",
+      "reason": "Both balanced entries and the zero Jordan block are correct. The upper entry is <=sqrt2 B, and Frobenius gives sqrt(3+2B^2)<=3B. C_B B^{1/r}=G_B^2(B+B^{1-theta}) is exact. Hölder and the affine change give the delta^{-1/r} factor, and summing r-th powers cancels delta exactly. Stopping and the empty cell cause no problem."
+    },
+    {
+      "claim": "Generic Young growth (36.9) with C_gr=4+log4+2(4c_theta)^nu.",
+      "verdict": "PASS",
+      "reason": "The small-interval case gives log<=log(4/3)<1/2. Otherwise (4c_theta d)^nu B>1, so ceil<=2B(4c_theta d)^nu pieces each have ratio<=1/4 and norm<=4/3. With log G_B<=log(4B)<=(1+log4)B, the sum is at most (4+log4)B+2(4c_theta)^nu B d^nu<=C_gr B(1+d^nu). Multiplication has norm one on L(E), and no unspecified radius-dependent constant enters."
+    },
+    {
+      "claim": "SP application: endpoint norm>=1 for the exact same compressed field, mask, true clock and deterministic Phi.",
+      "verdict": "PASS",
+      "reason": "H_m is literally H_{m,E}(Phi) of P:symplectic-block-mean. Its T_E=i^*T i equals T_R(C_t tensor I) by the row identities and finite-tensor agreement. The mask is the same m_R, and the proposition applies at any finite R, because the radius delta^{-1}+2 there is only a permitted choice. phi_m=delta^{-a/2}T_m^* i_I Phi is finite at fixed delta and is not used as a cost. The c=0 deterministic case of P:symplectic-raw gives norm>=1. Empty cells give I, and the zero case is free."
+    },
+    {
+      "claim": "Proposition P:uniform-mean-product: full cells with own averages, weighted Hölder E_delta, good and bad splitting.",
+      "verdict": "PASS",
+      "reason": "Full-cell bound: ||barM_m||<=(delta B)^{-1/r}||W||_{L^r(I_m)}=a_m/(C_B B^{1/r})<=a_m/B, not used on the last cell. The good case uses P:young-upper-multiplicative with base barH_m, perturbation H_m-barH_m and left S_E(B). The baseline is the E static wave, and log[8(1+K)^2(1+B)]<=L_{B,K}. delta N<=1/B gives L_{B,K}/B. Rates use |I_m|=delta B and lambda>=0, so dropped cells are legal. E_delta is exact from (delta n)^{1-1/r} and (delta n)^{1-nu/r}."
+    },
+    {
+      "claim": "Bad cells and the true last cell in (36.10).",
+      "verdict": "PASS",
+      "reason": "a>K>=1 and r>nu give 1+a^nu<=(K^{-r}+K^{nu-r})a^r. With C_B^r<=32^r B^{3r-1} the term is C_gr 32^r Z^r B^{3r}(K^{-r}+K^{nu-r}). The last cell uses the actual stopped path with a_N<=C_B delta^{-1/r} Z, giving C_gr B[delta+C_B^nu Z^nu delta^{1-nu/r}]->0. No division by cell length occurs. All terms are uniform in R, and the final inequality adds up exactly."
+    },
+    {
+      "claim": "Corollary C:uniform-polynomial-balls: M_B polynomial, K_B=B^s, both exponents negative, logarithmic prefactor over B->0, delta first, deterministic suprema.",
+      "verdict": "PASS",
+      "reason": "Exponents r(3+kappa)-sr and r(3+kappa)+s(nu-r) are negative because s>r(3+kappa)/(r-nu)>3+kappa. log(1+B^s)<=log2+s log B and log(1+B)<=log2+log B give the exact [log16+7log2+(4s+3)log B]/B. C(theta,B,K_B) is removed in the inner delta limit. No diagonal is asserted. Suprema are finite, continuous and separable on balls, and the R supremum is an ordinary real supremum."
+    },
+    {
+      "claim": "Proposition P:uniform-arbitrary-residual (36.11): any little C^theta K(E) tuple, multiplicative good cells, generic bad cells, SP denominator, true delta p-norm.",
+      "verdict": "PASS",
+      "reason": "Good cells, including a partial last cell, apply the left-multiplier estimate at t=ell_m. Bad cells use (a+v)^nu<=2^{nu-1}(a^nu+v^nu) and ||P^mean||>=1 with c_B=2^{nu-1}C_gr B. The right side is nonnegative, so log max(1,z_rat) is bounded. Power mean at p and p/nu>=1 gives the exact (2/B) powers, with p=nu giving exponent zero safely. No Gaussian, Cameron or Hamiltonian structure is used."
+    },
+    {
+      "claim": "Ordered product and iterated limit (36.12).",
+      "verdict": "PASS",
+      "reason": "||P_N^pert...P_0^pert||<=A_prod z_rat, A_prod>=1, and max(1,A z)<=A max(1,z) gives the stated inequality with no commutation or scalar displacement product. The order is delta first at fixed B,M,K_res, then K_res->infinity, then M=M_B and integer B->infinity using Corollary C:uniform-polynomial-balls. Any deterministic b_delta->0 at fixed B suffices. No uniform-R random-norm claim is made."
+    },
+    {
+      "claim": "Finite types at their actual guards, per finite-application-map-v1.md, without re-voting kernel proofs.",
+      "verdict": "PASS",
+      "reason": "Real.geom_mean_le_arith_mean2_weighted with weights 1/2,1/2 and bases z^2,(Kb)^2>=0 gives Kbz<=z^2/2+K^2b^2/2, and the full printed type fits. Real.rpow_sum_le_const_mul_sum_rpow_of_nonneg at r>=1, r/nu>1, p>=1, p/nu>=1 with nonnegative e,e^nu,v,v^nu is used with card n=N+1>=2, delta>0, delta n<=2/B and exact delta weights. Zeros appear only under positive powers. All analytic assertions remain analytic."
+    },
+    {
+      "claim": "Primary pinpoints: Teschl 2014 second edition p.80, Theorem 2.14 p.81 (2.63), Theorems 3.1-3.2 pp.102-104 (3.18)-(3.33), Theorem 3.6 p.109 (3.51)-(3.53); Friz-Hairer Section 1.5 p.13 and Section 4.1 pp.61-62 (4.1)-(4.3).",
+      "verdict": "PASS",
+      "reason": "Each selected image and excerpt matches the use made of it. Edition and ISBN are visible on the title and copyright images. The closed-form definition, representation, calculus, strong-limit and form-domain statements are all present with the hypotheses verified above. Young remainder estimates apply to Banach spaces. Nonlinear (E1) is an own proof and is not attributed to a book. DOI metadata is not shown on the images and remains inherited custody."
+    },
+    {
+      "claim": "Source fidelity to Sections 2-8 and all six adopted scientific clarifications, plus statement-gate duties.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Equations (3)-(33) map to (36.1)-(36.12) with the same operators, constants and powers, C_gr renaming Ctheta and i_I renaming j_I. The tex's lower-bound route q>=z^2/2-1-K^2/2 differs from the source's z^2-1-Kz but is valid and reaches the same -K^2. All six clarifications appear. See minor notes 3 and 4 for compressed passages, including auxiliary gaps stated without numbers."
+    },
+    {
+      "claim": "Historical evidence is preserved: Q2 comparator, old diagnostics, counts.",
+      "verdict": "PASS",
+      "reason": "Hand check: k=0,b=1,V=-4,h=4,t=pi/4 gives cos=0, sin=1, hence [0,1/2;-2,0]. Its product with Q1 is diag(-1/2,-2). The earlier reviewer error and its correction are retained in statement-adjudication finding 8 and falsification-v2. The tex makes no independent-control realizability claim. 150/145/30/116, 7/6, 11 and 36 match the delivered JSON as read, not run. 74/20 is historical and 80/22 is unchanged. No certified enclosure is claimed."
+    },
+    {
+      "claim": "Rendered pages 221-230 fidelity: phase constants, weights, signs, domains, delta and B powers, iteration order, true last cell, product and ratio order, labels, proof ends, clipping.",
+      "verdict": "PASS",
+      "reason": "All ten images agree with the tex and the rendered text at (36.1)-(36.12). Cross-reference numbers 29, 30.1, 30.2, 31.3, 31.4, 33, 33.4, 34.1 and 34.5 point to the correct parents by counter order. All seven proofs end with the correct 'This proves' sentence and a QED box. No clipping or overlap is visible. The final section closes without claiming point or sharp results."
+    },
+    {
+      "claim": "Scope limits: no stochastic, Rayleigh, point upper, score, exact-limit or p1/Chen claim in the target; no F constant in a uniform budget.",
+      "verdict": "PASS",
+      "reason": "The closing paragraph explicitly leaves the Gaussian Rayleigh application, original point transfer and signed-positive score comparison as separate steps. The prefactor L_{B,K} coincides numerically with the log of the old F-shaped bound but is derived from the E bound by enlarging it, so no F quantity is imported."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "1. Forward pointer, inherited debt. A>=2 and the square-root calculus are used in the quarter-order paragraph, while the spectral interpretation of the form lower bound appears in the next paragraph through bounded slices. This is not circular, and a forward pointer would help. The same debt was already adjudicated for the parent.",
+      "2. The identity inf spec H_V=bottom of the projection-valued-measure support uses both supp P subset spec, from the stated approximate eigenvectors, and spec subset supp P, from a bounded resolvent off the support via Theorem 3.1. The target states only the first explicitly. The parent mentions excluding a bounded inverse. The missing direction is standard and follows at once from the cited calculus, so a clause would suffice. No conclusion changes.",
+      "3. Compressed Young identification. The source spells out norm-continuous conjugates of compact L, a Lipschitz primitive, and the equality of the generic Young equation with the ordinary interaction equation on E. The target relies on the statement of P:signed-physical-wave ('equivalently Young') and on 'the old graph-core Duhamel identification'. The parent's detailed Lipschitz argument is written on F. The E case follows by the same argument or by U_F i=iU_E from P:symplectic-raw. This is valid but terse at the point where Proposition P:uniform-mean-product relies on S_E(B)U_{barH}(B,0) being the static wave.",
+      "4. The auxiliary exponents are named only as 'strict admissible gaps' and the Young continuity is not pinned to a label. The source gives 0<gamma<min(1/2,(2-alpha)/2) and theta<beta<min(1-a/2,(3-a-alpha)/2), and adopted clarification 5 asks for a local continuity pinpoint. Displaying the two gaps and citing P:constant-young-linear would make the application self-contained.",
+      "5. Statement quantifiers. (36.9) does not say that D ranges over zero-start C^theta paths in L(E) on [0,B]. (36.11) uses C_{K_res} and c_B without stating their existence and dependence (theta,B,K_res and theta,B). Both are clear from the proofs, where c_B may be taken as 2^{nu-1}C_gr B. b_delta is called a sequence but is a function of delta at fixed B.",
+      "6. Local notation. F denotes both the phase space E plus R^2 and the functional 2 delta log max(1,||...||) in Proposition P:uniform-arbitrary-residual. The letters L, K, M and D also carry several local roles. Meanings are recoverable from domains, but renaming the functional would prevent a real misreading. v_V, P_V^E and H_V are defined by context and parents, as in the earlier definitions debt.",
+      "7. Provenance and presentation, both pre-existing. The DOI is inherited custody and not visible on the selected images. Empty parentheses in references [1]-[3] on page 230 are older bibliography cosmetics. Neither affects the mathematics."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "Hand science: I checked all seven proofs, their constants, and every new use of a supplied parent by reading and pencil-style reasoning. This is an AI review, not human verification, a novelty audit, a whole-paper cold read, publication clearance or goal completion.",
+    "Author evidence only: the latexmk build, zero error, undefined-reference and overfull counts, 230-page count, SHA-256 values, Git revision, String.raw transport, C0 scan, formatter, label uniqueness and the 177 unchanged prior proof bodies are author records and were not executed or re-verified here. I hand-matched the seven new proof blocks and the per-file prior proof counts only for the seven parent files supplied, against structural-preflight-v1.json. Packet identity against the source revision is taken from the review contract.",
+    "No scripts, Git, Lean, numerics, hashing or network were run. check-interface-v1.py and interface-controls-v1.json were read only, and their rows are not independent proof. The 40-digit formula maximum remains an aggregate limitation. Lean kernel proofs were not re-voted; only printed types, axioms and actual guards were checked. No operator or SPDE statement is Lean-certified.",
+    "Direct parents were read in full and each new use was checked. Deeper ancestors were not recertified, including P:source-gaussian-transfer, L:raw-block-inputs, the raw pullback and the driver construction. A search of notes/ found no definition of E:driver-parameters or P:source-gaussian-transfer in the supplied files, so the auxiliary gaps were checked against the source statement and parent uses, not the original display.",
+    "Primary reading covers only the selected Teschl and Friz-Hairer pages, with no full-book or publisher audit. Theorem 2.14's 'rest is straightforward' and other book proofs are imported, not reproved.",
+    "This target supplies no stochastic moment, Rayleigh-score, signed-positive, mask-removal, point-upper, exact-limit, source-normalization or p1/Chen identity conclusion, and this report clears none. The conservative graph and all later gates listed in the packet remain open."
+  ]
+}

@@ -445,3 +445,29 @@ instead ofGLfiniteness inGCSection2(6),butapplicationSTILLUNREVIEWED;
 conservativegraphunchanged. No hardgrowingrate/point/sourceclaimdeleted.
 InternalRB alreadyprovidesthe needednoiserestart,independentlyverified;
 literalGLsourceanditsrate notaninputtoBT'sactualproof.
+
+
+## Uniform E spectral products and arbitrary residuals accepted
+
+Scientific27e1ce6,7proofs/clean230pages,177priorunchanged. ActualfirstParty
+Opus5.5/HIGH29passingchecks578.506seconds,no repairs; native78139TERMINAL0,
+accepted/coverageTRUE.58fivewaybindings/37texts/21exactPNGs and73rawarchive
+files verified. Sevennotesadjudicated without finalsource/PDFedit:
+reviews/2026-11-01-uniform-products-tex-integration/adjudication-v1.md.
+E-only fullform/spectral/rate constants, fixedRlift onlyforphysicalidentity,
+scalar-time completed averaging, explicitgrowth/SPbaseline/fullgood-bad/
+truelast/polynomialballs/ANYresidual envelope andcorrectiteratedlimits.
+No point/Rayleigh-score/exactlimit fromUSalone.80facts22seamsunchanged.
+
+Finalpass: forwardform/spectralpointer, off-support boundedresolventclause,
+compactEconjugation/ordinary=Young detail, explicitauxiliarygaps/continuity
+label, growthD/ratio constantquantifiers, b_delta array andFfunctional
+renaming/localdefinitions/oldbib. Allalreadyvalidarguments, no requiredrepair.
+
+Next FULLpairedGC/URtarget in reviews/2026-11-01-point-upper-tex-integration/
+frozenbeforetranslation. ExactnewBTfixedparameterL2->GCfiniteness gate,
+fullpoint/source/cone/canonical-law/data proof andURsame-global-moment/
+polynomialcoarse/radialbulk-tail/globalhalfaction/movingSscorelimit.
+ConservativeoldbranchgraphunchangeduntilactualGCconsumerreview accepts
+substitution. Do not skip sourceUI or turnrawE into a pointtrace. Then
+PG/PB/OC/WS/fullargument/coldread/lit/wiki/privateparity. No forcedChenvalue.
