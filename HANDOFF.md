@@ -5,10 +5,10 @@ Chen matching is not a completion requirement.
 
 ## ⏭ Next session: where to stand and what to do
 
-FIRST integrate the finite Gaussian matrix moment and whole-space Sobolev
-compactness proofs (FG/CC) into TeX in ACTIVE
+FIRST integrate the ACTUAL same-W Gaussian operator-driver proof (AD)
+into TeX in ACTIVE
 ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave,
-branch research/fixed-mask-young-20261031, clean local HEAD 7dbcd4a.
+branch research/fixed-mask-young-20261031, clean local HEAD 22e3426.
 Read its PROJECT-GOAL.md, AGENTS.md, Progress.md and
 notes/derived-constant-integration-plan.md and derived-constant-proof-imports.md
 in its notes directory. Root mathematical files and
@@ -24,7 +24,10 @@ review68458(v3PASS0),71223(v2coverage-refusal3), or v1preflight5.
 FR/AV TeX integration is now ACCEPTED: scientificf5c1521,adoption7dbcd4a,
 27PASS/HIGH382.209seconds,no mandatory repairs. Review13477 isTERMINAL0,
 not a task to restart. Read the frozen next target in
-reviews/2026-11-01-compact-gaussian-tex-integration/target-v1.md in ACTIVE.
+reviews/2026-11-01-actual-driver-tex-integration/target-v1.md in ACTIVE.
+FG/CC is now ACCEPTED: scientific2571a15,adoption22e3426,24HIGHchecks
+323.168seconds,no repairs. Native74139 TERMINAL0; old16481 remains
+rejected (rawFAIL/HIGH,canonical invalid-report). Do not restart either.
 No owned reviewer or computation remains live.
 
 ## Pre-flight checks
@@ -43,23 +46,25 @@ No owned reviewer or computation remains live.
 5. Two conditional finite Lean facts accepted after full actual-application
    review. Current80facts22seams; official L0PROPOSED/decision4 unchanged.
    H1/CDF/Gamma/spectral/PDE arguments remain analytic, not Lean-formalized.
-6. Active manuscript target follows Le's revision. Accepted covariance/
-   temporal foundation scientific96e2a18:8complete proof blocks,15HIGHchecks.
-   Accepted FR/AV scientificf5c1521:6complete scalar/actual-form/Bessel/
-   TWO-variance/real mean-square column proof blocks,27HIGH382.209seconds.
-   No repairs; accepted/coverage true, canonical validators PASS,25five-way
-   bindings,15full texts,9exact PNG deliveries,40rawarchive members verified.
-   Seven optional findings adjudicated without editing final reviewed source.
-   125-page PDF:0errors/undefined references/citations/overfull boxes;
-   all68earlier proof bodies unchanged. New/contextpages116-124 inspected;
-   Section17ends123, targetcontext124. No sample bounded operator/path yet.
-   Media guard AND native dry-run passed before dispatch (missing=[]), no
-   case/image error or retry. Keep original earlier SF preflight/coverage
-   failures unchanged. Future PNG specs require kind=image,sha256,media_type;
-   check literal filename case and source/PDF boundaries before dispatch.
-   Remaining integration/whole-paper/cold-read gates stay open. Import graph
-   37nodes/35files is not certified closure. Keep independent old upper
-   finiteness, SA alias and narrow TE/GI scalar imports. No new Lean fact.
+6. Active manuscript target follows Le's revision. Accepted SF/TP8proofs
+   (scientific96e2a18,HIGH15checks),FR/AV6proofs(f5c1521,HIGH27checks),
+   and now FG/CC10proofs(2571a15,HIGH24checks323.168s,no mandatory repairs).
+   FG/CC canonicalaccepted/coverage true;30five-waybindings,19full texts,
+   10exact PNG deliveries and45rawmembers verified. Eight optional notes
+   adjudicated with no final source/PDF edit.134-page PDF clean;74earlier
+   proof bodies unchanged,10new blocks. Section18ends132,context133.
+   V1 introduced a false bare lattice-shell bound by dropping spacing
+   dependence; exactcounter a1/2,y0,k4,j2,N2,d1 gives1/5>1/16. Restore
+   <y-ak>^-N<=max(1,2/a)^N<k>^-N before summing dyadic k-shells, with
+   a,d,N dependencies. Only2proof blocks changed; full repaired V2passed.
+   V1 rawFAIL/HIGH and unsupportedUNCHECKED report status remain rejected.
+   Exact Fourier autocorrelation normalization and real sigma made explicit.
+   Lesson in integration plan: preserve comparison constants/shell variable;
+   C_d cannot absorb a. Author Git/build checks are not LLM observations.
+   Media and native workspace preflights pass; correctly type PNGs and
+   keep read-only review contracts observable. No new Lean fact, actual
+   infinite driver/path/source/Young/moment result from FG/CC alone. Keep
+   independent old upper finiteness, SA alias and scalar-only TE/GI imports.
 7. <HUB> fresh push still fails NoRoute; no actual remote parity.
    Recovery requires serialized push, canonical pull and isolated research
    fast-forward with actual HEAD checks. Never reset or drop foreign work.
@@ -68,13 +73,15 @@ No owned reviewer or computation remains live.
 
 ## Concrete deliverables for the next session
 
-- Translate finite-gaussian-schatten.md and compact-sobolev-cutoff.md with
-  complete proofs, using the frozen target. Retain complex rectangular
-  matrices/real Gaussians/evenp/unnormalized traces/BOTH variance powers;
-  whole-space recovery, negative Sobolev indices, actual balanced adjoints,
-  minmax trace order (not operator power order), compression/Fatou and
-  plateau-only nonzero witness. Torus remains auxiliary, not state space.
-- Then actual driver/source/Young, lower event/Gaussian upper and PB/OC/WS.
+- Translate actual-operator-driver.md Sections1-10 completely, with the
+  frozen target: actual compact-test noise ONbasis/null quotient, same-W
+  covariance coefficients AFTER Gamma convolution, real/complex constants,
+  gain/adjoint/finite propagation, BOTH actual variances/localizations,
+  first-chaos columns and compact trace tails, variance-average Gaussian
+  Cauchy bound, actual compact operator/time-path convergence, measurable
+  countable span, basis independence and sqrt(p)/square-exponential norm.
+- Then source convergence and Young/canonical identification, full lower
+  event/Gaussian upper and PB/OC/WS. Do not re-integrate accepted FG/CC.
 - Build and inspect PDF, freeze whole-argument review and final cold read;
   adjudicate findings before claiming the completion contract satisfied.
 - Recover private pushes/wiki queue/<HUB> parity when available.
@@ -1424,14 +1431,27 @@ first actual review, no retries.80Lean facts22seams andL0PROPOSED unchanged.
 Read FG/CC target frozen before future translation; full model scope and
 actual-derived-constant goal remain. Latest push failed NoRoute. No live jobs.
 
+2026-11-01 repaired FG/CC integration close: scientific2571a15,
+adoption22e3426; actualOpus5.5/HIGH24PASS323.168seconds,no repairs.
+V1rawFAIL/HIGH due missing lattice-spacing factor, canonicalinvalid-report
+for unsupportedUNCHECKED; originalreject preserved. Restore source comparison
+withmax(1,2/a)^N, keepa,d,N dependencies and k-shell convention; exact
+1/5>1/16counter and correctedchain retained. Real sigma/autocorrelation
+normalization clarified. V2terminal0accepted/coverage true;30bindings,
+19fulltexts/10exactimages,45rawmembers SHA256read-back verified. Eight
+minor notes adjudicated with no final source edit.134pages clean;74prior
+proof bodies unchanged plus10new proof blocks,2repaired.80Lean facts22seams
+unchanged;L0PROPOSED. Next actual-driver target frozen before translation,
+not a new proof. Latest private push NoRoute; no owned live jobs; goalACTIVE.
+
 ## Repo & git state at handoff
 
-Before this HANDOFF-only successor root master HEAD0caed2b. Active research
-clean HEAD7dbcd4a2b1438d583503d7e4a031b3aea26434c2. Private origin remains
+Before this HANDOFF-only successor root master HEAD9a48dd5. Active research
+clean HEAD22e3426518b79831a575e1a407e6035e78809257. Private origin remains
 <HUB> bare; fresh push failed SSH NoRoute, no synchronization claimed.
 Last-fetched root611c005/research6937719 remain historical observations.
 No implicit research/master merge. Scientific work stays in isolated ACTIVE;
-this root HANDOFF is the operational loader, not the mathematical authority.
+this root HANDOFF is the operational loader, not mathematical authority.
 
 ## Operating notes
 
