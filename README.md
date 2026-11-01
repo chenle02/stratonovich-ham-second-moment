@@ -26,8 +26,9 @@ the covariance, wave-variance, Gaussian operator, source-convergence,
 fixed-mask moment, constant-phase Young and compact mean spectral proofs.
 Canonical scaling and the actual raw block/event point lower bound are
 also integrated. Unmasked Rayleigh bounds and finite positive variational scores are also
-integrated. These comprise 72 complete proof blocks accepted at independent integration
-gates. The latest integration is scientific source f4311eb. The full
+integrated. The temporal equilibrium and full physical spatial/occupation foundation
+are integrated as well. These comprise 81 complete proof blocks accepted at independent integration
+gates. The latest integration is scientific source bda7990. The full
 derived-constant argument still needs integration there. Earlier failed
 cold-read records remain preserved, and no whole-paper or circulation
 clearance is implied. The official private Lean companion remains separately

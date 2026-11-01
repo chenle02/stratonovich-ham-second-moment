@@ -143,8 +143,14 @@
   126prior bodies unchanged. Unmasked real-Rayleigh rate, numerical mask
   removal, original point lower, full Radon dilation and positive finite
   score homogeneity proved; S1 auxiliary, no exact moment limit here.
-- **Immediate next:** integrate temporal equilibrium and physical spatial/
-  full-occupation foundation (TE/GI/B1-B4), then Cameron/upper/PB/OC/WS.
+- **Accepted temporal/spatial-occupation TeX foundation:** scientificbda7990,
+  Opus5.5/HIGH21passing checks367.179s,no required repairs. Nine proofs;
+  30bindings/20full texts/9exact PNGs/45raw archive files verified.189pages
+  clean;132prior bodies unchanged. Physical full-H1 pairing/continuity and
+  full strongly measurable occupation class, exact temporal mass/row, own
+  energy bounds; no optimizer/source-energy or exact moment-limit claim.
+- **Immediate next:** integrate actual compact mean/Cameron map and generic
+  Young upper foundation (C1-C3/E1), then remaining upper/PB/OC/WS assembly.
   Keep the frozen PB/OC/WS result set and full original model scope. The
   import interfaces are mapped; avoid repeating that inventory as a new round.
   Continue consolidating complete proofs into TeX/PDF, with clean builds
@@ -173,7 +179,7 @@
  rerun for promotion, new package/companion/lease/registry/HPC action.
 - **Git:** current mathematical work is in the isolated private research
   clone, branchresearch/fixed-mask-young-20261031. Latest result source
-  is95d7515; latest accepted TeX integration sourcef4311eb, with subsequent
+  is95d7515; latest accepted TeX integration sourcebda7990, with subsequent
   adoption records separate.
   Fresh fetch/push failed with <HUB>NoRoute. Prior <HUB> parity
   receipts are historical, not evidence of current synchronization.
@@ -9194,3 +9200,42 @@ actualOpus5.5READY verified. Full independent integration gate PENDING.
 No new finite application/kernel vote/compiler/fact/package/companion/HPC
 action;80facts22seams unchanged. Goal ACTIVE; actual Cameron/upper/PB/OC/
 WS assembly and final whole-paper/cold-read/wiki/delivery remain open.
+
+
+### Accepted temporal / physical spatial-occupation integration: scientificbda7990
+
+ActualOpus5.5/HIGH21passing checks (17PASS,4PASS_WITH_NOTES),
+367.179seconds,no repairs. Native36578 TERMINAL0; accepted/coverage true.
+Canonical passing/correspondence/read-ledger checks PASS;30five-way inputs
+and45raw archive members SHA256read-back verified.20complete required
+texts/9exact PNGs delivered. Eight optional notes adjudicated in
+reviews/2026-11-01-spatial-occupation-tex-integration/adjudication-v1.md.
+No source/PDF edit on adoption. Clean189-page PDF;9new proofs,132prior
+bodies unchanged. No new finite application/compiler/fact;80facts22seams
+andL0PROPOSED unchanged. No whole-paper/gold-standard/human clearance.
+
+Exact temporal density/potential/mass/endpoints and Beta duplication now
+in TeX. Actual smooth controls first produce a finite spatial ratio from
+finite S1. Then physical representative-independent integrals, signed
+PSD/CS, Fatou and absolute four-linear continuity extend to FULL real H1;
+no global supremum embedding. Exact own half-gradient energy, kernel row
+and FULL strong-H1 occupation class have finite positive energy bounds.
+No rough field, optimizer/equality/numeric/source-energy/p1 identification
+or historical d1 stochastic/rough-control/numeric-envelope promotion.
+
+Final presentation: clarify b on H1, smooth COMPACT PSD domain, immediate
+absolute convergence for signed compact tests, evenness for the column
+row-bound term, and Gamma0 energy suprema by dilation. Restate alpha<2
+locally; earlier roadmap/notation debts remain. These are direct stated
+parent/property applications, not replaced estimates or new hypotheses.
+
+Next C1-C3/E1 target frozen before translation in
+reviews/2026-11-01-upper-foundation-tex-integration/. C3 actual compact
+mean/covariance map fixedR only; no trace-class/instantaneous L2 noise or
+uniformR finite-smooth-projection tail. E1 is generic Young perturbation
+ONLY; later actual head/concentration/product E2-E4 excluded. Existing
+Mathlib finite power-mean complete type unchanged, no compile/new fact.
+Capture audit corrected a next-target 'running' label written after native
+completion to COMPLETED_AT_CAPTURE, preserving superseded text/timestamps/
+reason. No restart or source change. Private push NoRoute; full original
+upper/exact/cold-read/wiki/remote-delivery requirements open. Goal ACTIVE.
