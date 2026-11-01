@@ -1,57 +1,56 @@
-Last updated: 2026-11-01 23:31 UTC (Codex)
+Last updated: 2026-11-01 23:49 UTC (Codex)
 
 LATEST USER DIRECTION: derive the actual constants, whatever computation yields.
 Chen matching is not a completion requirement.
 
 ## ⏭ Next session: where to stand and what to do
 
-First inspect ACTIVE Progress.md and the retained post-reset capacity
-receipt before attempting another review. The actual23:30UTC probe already
-FAILED with firstParty429 weekly limit, native text resets9pm
-(America/New_York), exact date unspecified. Do not repeat that denied
-probe just because the old short-window reset passed. Resume required
-Opus5.5/HIGH reviews only after genuinely restored configured capacity.
-No reviewer is live; no new proof cycle or unreviewed adoption meanwhile.
+Read the actual DeepSeek report and its finding-by-finding adjudication in
+ACTIVE reviews/2026-11-01-reviewer-switch/ before preparing a source-
+clarified successor review. Close concrete missing primary/normalization
+inputs; do not rerun an unchanged candidate merely to seek HIGH confidence.
 
-ACTIVE remains ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave,
-branch research/fixed-mask-young-20261031, clean workflow30611259c256415bc6eb5007f4334164fadfc7f2.
-Read its current Progress.md first. Latest user directive is to derive the
-actual constant, without requiring Chen's guessed constant. Full original
-model/dimension/amplitude/data/zero and verification scope is preserved.
+ACTIVE: ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave,
+branch research/fixed-mask-young-20261031, workflow21cbb202329342814498e054094e12c2a20f5efa.
+Progress.md is workflow authority. Le revised reviewers on2026-11-01 to
+DeepSeek V4 Pro + Kimi-K3; ACTIVE AGENTS.md now records these routes.
+Do not restore the old exhausted Opus-only requirement. Original scope,
+HIGH minimum, source/application/visual coverage and fresh cold gate stay.
 
-The separate draft review is in
-reviews/2026-11-01-manuscript-dependency-audit/finiteness-review-v1/:
-packet/,prompt-v1.md,required-sources-v1.json,manifest-v1.json.
-Its exact source revision is3c375e63d3253bd571a604dae7a82dfa9c49ef42,
-8input files,4required texts,3primary images,8FINchecks. It is NOT DISPATCHED.
-All8live/packet/committed bytes and manifest hashes rechecked atb830a42.
-Use a NEW immutable external output directory. No unreviewed adoption.
-This review is SEPARATE from the official main composition source epoch.
+Actual bounded DeepSeek review of finite-ratio draft at scientific
+3c375e63d3253bd571a604dae7a82dfa9c49ef42: PASS_WITH_NOTES/MEDIUM,
+FIN01-FIN08, no reported critical defect in supplied deduction. NOT ACCEPTED
+under HIGH gate. Source extraction/images, Fourier/white calibration and
+unprovided main-consumer claims remain qualified. Report/adjudication and
+full28-file native archive retained/read back. Actual route confirmed
+DeepSeek V4 Pro; first response length-limited with no visible report,
+same-session continuation completed. One review, not two/cold votes.
+Strict clean-carrier collection refused task-local config receiving only
+an inserted schema annotation; original/current configurations retained,
+scientific texts exact, refusal not relabelled passing. No model rerun
+just to remove this metadata annotation.
 
-Main science composition candidate is887fbfbe0fa4368d6b32a436615d73349b2445d8,
-tree6a48b34d7ec9bc686453ee5c656938475ea48774. All15source/visual components
-and synthesisv2 are frozen in reviews/2026-11-01-coverage-recovery/.
-composition-spec-v2.json and common-binding-v2.json bind448identities;
-all86primary frames,257current manuscript pages,28ownTeX/44sections/
-213proofs remain assigned. No current component or synthesis accepted.
-Official composition credits text ranges only; each assigned image must
-pass its own component canonical coverage and the independent frame pins.
-Do not mix this epoch with the separate finiteness-draft source revision.
+Kimi native2.3.3/kimi-code/k3/max/OAuth attempted the same frozen8-file
+draft packet and primary3PNGs, but stopped at monthly429 with no report
+or reading credit. Complete17-file native refusal archived/read back.
+No purchase/upgrade, retired metered route or silent substitution. Its
+assigned image check remains OPEN. NO REVIEWER IS CURRENTLY LIVE;
+handles55020,29446,45697 and session-export handles are TERMINAL.
+Old Opus attempts and carrier calibration remain preserved unchanged.
 
-[held back: AI account details]
-
-Main source/PDF remain editorialb2fda020b848369cf8f7b38c5eb0b9db09c650ce,
-257pages, PDFSHA10bfeae6eb576e23ba928b8ef9eca968d87f23ac7eff884c632bf50acb3294c9.
-All213proofs and formulas unchanged. The dependency guide is an author
-organization audit, not a shortened or independently certified manuscript.
-Actual old-upper consumer audit distinguishes uniform score finiteness
-from earlier fixed-time source summability. Published Chen2023import plus
-dilation/Fatou draft supplies only proposed independent spatial-ratio
-finiteness; score extraction remains unproved/unreviewed. Retain old upper.
-No second unreviewed mathematical cycle, Lean package/companion or HPC.
-80facts/22seams unchanged; official companion L0PROPOSED/decision4absent.
-Final whole/source/visual/cold/novelty and wiki-outcome obligations stay open.
-Goal ACTIVE. Existing tag8viewer already displays the exact active PDF.
+Main scientific composition candidate887fbfbe0fa4368d6b32a436615d73349b2445d8,
+tree6a48b34d7ec9bc686453ee5c656938475ea48774, remains separate from this
+new auxiliary draft review. All15components/synthesisv2 were frozen for
+old native contracts; no reviewer-switch vote is an old composition pass.
+A new route must bind its actual source/coverage contract without dropping
+any86primary-frame/257page/28TeX/44section/213proof obligation.
+Main TeX/PDF/math unchanged; PDF257pages SHA256
+10bfeae6eb576e23ba928b8ef9eca968d87f23ac7eff884c632bf50acb3294c9.
+Old independent full upper remains retained/required. Existing signed point
+upper is a candidate simpler score-finiteness input, not an adopted reorder.
+80finite Lean facts/22seams unchanged; no official companion/decision4,
+HPC, sibling edit, correspondence or public release. Goal ACTIVE and full
+verification incomplete. Derive actual constants, not forced Chen endpoints.
 
 ## Pre-flight checks
 
@@ -155,19 +154,16 @@ current Next section and ACTIVE Progress.md before using any old todo.
 
 ## Concrete deliverables for the next session
 
-Actual immutable required-family review of the separately frozen spatial
-finiteness draft, with raw report, source-read ledger and receipt, or an
-honest terminal provider refusal. Validate actual HIGH report and complete
-required coverage before adjudication/adoption. No result from availability
-alone. Then resume the common887source/visual/scientific composition gates.
+Resolve the concrete primary-source/normalization evidence gaps identified
+by the retained DeepSeek MEDIUM report before any adopted simplification.
+A materially repaired source packet may receive a new immutable review;
+unchanged confidence-only retry is forbidden. Main full review stays open.
 
 ## Success criteria for the immediate next step
 
-A genuinely eligible required native route and an actual bounded review,
-with all8draft inputs/source revision bound and all3primary images delivered.
-Every finding and scope qualification survives adjudication. This does not
-clear any main composition component or establish a shorter full proof.
-Preserve all original scientific objectives and the old full upper.
+Every source ambiguity and required fix has exact evidence or an explicit
+OPEN disposition. Keep original report/confidence and Kimi quota refusal.
+No auxiliary review is presented as a whole-proof or visual certification.
 
 ## Anti-success criteria
 
@@ -2135,11 +2131,20 @@ Candidate reordering only, no science adoption. Actual post-short-reset
 native availability probe refused weekly429 with zero tokens; raw evidence
 retained. No mathematical review ran. All pending reviews and full scope stay.
 
+
+2026-11-01 reviewer-switch work21cbb20: Le authorized DeepSeek V4 Pro +
+Kimi-K3; active AGENTS and Progress now govern those routes. Kimi actual
+monthly quota refusal preserved. DeepSeek actual V4-Pro response plus
+same-session continuation completed a bounded MEDIUM report, not HIGH
+acceptance; all findings adjudicated and source-image/normalization gaps
+kept open. Original native lineage and config-schema collection refusal
+retained. No main science/PDF/Lean change. Goal explicitly reactivated by Le.
+
 ## Repo & git state at handoff
 
 ROOT master before this HANDOFF-only commit:
-e378ab65ff967400ae883850581dc736c3abf2b0, clean and origin/<HUB> equal.
-ACTIVE research workflow30611259c256415bc6eb5007f4334164fadfc7f2,
+781be320d15a49dcace4a5eef1bb882b0128d3ec, clean and origin/<HUB> equal.
+ACTIVE research workflow21cbb202329342814498e054094e12c2a20f5efa,
 clean and origin/<HUB> equal after its actual serial sync.
 Main scientific composition epoch887fbfbe0fa4368d6b32a436615d73349b2445d8.
 Separate finiteness draft epoch3c375e63d3253bd571a604dae7a82dfa9c49ef42.
@@ -2157,9 +2162,10 @@ PROJECT-GOAL.md is the completion contract; all dimensions/covariances and
 verification gates remain. Exact intrinsic variational formulas count as
 derived constants when fully specified/proved; numerical or closed-form
 evaluation must be distinguished from bounds/calibrations.
-Required independent firstParty actualOpus5.5/HIGH, fresh headroom THEN
-actual doctor/model probe for a NEW assigned review. Known <plan removed> is
-<usage removed>spent. Existing configured routes were actually probed; no eligible route at last check. Slot aliases do not prove identity.
+Le's latest requested reviewers are DeepSeek V4 Pro + Kimi-K3.
+DeepSeek actual V4-Pro route worked; Kimi OAuth has a monthly quota refusal.
+Require actual route/report/coverage, HIGH threshold and fresh final review;
+old Opus availability history does not override this new direction.
 No model/provider/threshold/credential fallback. Preserve raw reviews and
 all failures; archive and five-way-check before optional clarity.
 Canonical queue is the only six-repo writer; no direct wiki writes
