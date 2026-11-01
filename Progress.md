@@ -9102,3 +9102,27 @@ Two old source/type bindings matched without compile. Unmasked bottom need
 not be an eigenstate; finiteness MUST use independent old T:full-upper,
 not future PB. Latest private push NoRoute; final whole-paper/cold-read/
 wiki/remote-delivery remain open. Actual-constant goal ACTIVE.
+
+
+### Unmasked variational TeX candidate frozen
+
+Added notes/integrated_unmasked_variational.tex with6complete proofs
+translating accepted UL Sections1-6 and actual finite-consumer interfaces.
+All126prior proof bodies unchanged, including independent T:full-upper.
+Global mean bounds, unmasked self-adjoint H2/H1 Rayleigh rate without
+assumed eigenstate, monotone numerical mask removal, full Radon dilation
+and positive finite score homogeneity now written in TeX. No actual p1
+identity, Chen matching, sharp upper or exact limit inferred.
+
+Clean181-page build:0errors/undefined references/citations/overfull boxes.
+All7new/context/bibliography pages175-181 inspected. Literal-safe String.raw,
+pre-format C0/proof ends/label uniqueness PASS. Exact independent old
+upper241-line statement/proof supplied with SAME canonical context; no
+future PB used to prove finiteness. Frozen35input packet:27full texts/
+7typed PNGs; media preflight PASS. Fresh Le Max93%weekly/shortunknown,
+firstParty claude.ai doctor and actualOpus5.5READY verified. Full independent
+source/statement/application/PDF gate PENDING. Three old scalar facts
+reused at complete types/actual guards, no subjective kernel vote/new
+compile/fact/package/companion/HPC action.80facts22seams unchanged.
+Goal ACTIVE; spatial/occupation/Cameron/upper/PB/OC/WS assembly and final
+whole-paper/cold-read/wiki/delivery remain open.
