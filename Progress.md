@@ -87,11 +87,11 @@
   beforeclarity. All originalmodels have the reviewed occupation ceiling
   and common spatial-energy bracket fromOC(18). These bounds are not
   asserted sharp or equal to the exact PB variational constant.
-- **Immediate next:** independently verify the frozen white spatial
-  evaluation WS1-WS3, target in reviews/2026-10-31-white-spatial-evaluation/.
-  CDF square identity should compute actual R_sp/E_sp and explicit bounds
-  for C2. Keep all-model PB/OC scope; this is an example, not a narrowed goal.
-  Then consolidate the derived constant and proofs for final verification.
+- **Immediate next:** full independent proof/application gate for WS1-WS3.
+  Its26HIGH FIT passed; complete analytic note and strengthened source/log
+  evidence are being frozen. Keep all-model PB/OC scope; this is an example,
+  not a narrowed goal. After closure, freeze the main result set for TeX
+  integration/build and whole-argument/cold-read checks, not optional refinements.
 - **New accepted uniformR E Cameron/regulator:** scientificf54e92b,
   21checks/HIGH348.303s,no requiredrepairs;21input bindings/native archive
   verified before6optional clarity notes. Actual all-model uniformR means,
@@ -8405,3 +8405,32 @@ Le's exact instruction in this thread:
   DecisiondelimitedREFRAMEinternalcalibration/evaluation;noveltyUNVERIFIED.
   Freshknown<plan removed>headroom/firstPartydoctor/sameactualOpusREADYpassed.
   No model/threshold/credentialfallback,sourcecorrection,Skorohod/HPC/companion.
+
+## WS FIT accepted and complete white proof prepared — 2026-10-31
+
+- Existing35194TERMINAL0: actualOpus5.5/HIGH,26PASSchecks276.215s,
+  PASS_WITH_NOTES,no requiredrepairs. Canonicalparse/pass/correspondence/
+  fullcoveragePASS;29five-waybindingsBEFOREclarity/repair;44rawnativearchive
+  membersreadbackhashed,rawreportunmodified. All6notesadjudicated.
+- Fullproofnotes/white-spatial-evaluation.md NOWWRITTEN,UNREVIEWED:
+  fullrealH1locACrepresentative,q'=2ff'L1,limits0/boundedness/L4,
+  CDFendpoints/chain/IBPtruncations,allsquaretermsfiniteEVERYrealz;
+  sechintegrals/R_sp/E_spupper+attainment;actualOCcoefficientsubstitution;
+  GammaDup/recurrence/EulerCSratio,saturationa1/2/symmetryforboundsONLY.
+- Two kernelpublicproofs unchangedStd3/source/replay. TheiranalyticCDF
+  h andphysicalenergyapplicationarefullyspelledoutbutawaitOWNFULLgate;
+  accepted78facts21seamsPLUS2provisional,not80accepted. No newcompiler rerun.
+- NegativeLeanSOURCEfileswereabsentfromFITpacket; includeactualbothinFULL
+  plusstrengthenedv2sourceSHA/filename/logbindingverifiedlive/native/archive.
+  v2rejects18mutations;prior14checker/receipts/nativebytes preserved. No
+  mathematicalproofornegativererun. ExactJSONnegativecasesarelabels,notruns.
+- c>=0withc0directspreading,ratioonlyc>0;classicalGNattributionfrommodel
+  memoryUNVERIFIEDnotbibliographicinput. No novelty/methodclaim. Actual
+  constantstillPBvariationalvalue;newwhiteintervalisBOUNDnotexactvalue.
+- Gate class: scoped. Gate scope: FULLWS1-WS3analytic/modelandinitial
+  conditional-kernelapplicationfidelity.27->37requiredtexts254393bytes,
+  nowwithAGENTScalibrationsandread-onlyBCWboundaryrecord. Alloriginalmodels
+  preserved;ChencomparisonoptionalperLe. Freshknown<plan removed>92/shortunknown
+  thenfirstPartydoctor/actualOpus5.5READYpassed; no fallback/thresholdwaiver.
+- OwnedLean/quadrature/FITjobs terminal. Fullreviewbeingfrozen, no proof
+  adoptionyet. Onceclosed, prioritizeconsolidation andremainingfinalgates.

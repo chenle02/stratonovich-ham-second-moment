@@ -1,0 +1,25 @@
+{
+  "source": "StratonovichHAMAudit/WhiteCDF.lean",
+  "source_sha256": "4d3f8ee4350f96d5936a4b213c7aff5a312218743ee43b885e3c91a3b100cbcd",
+  "audit_sha256": "8780c9fc0057f6c2179316649faba800b228bd8dc30a8efac249b58d618741fe",
+  "types_sha256": "34f2e35e22b4c0eb37b31d3b3ffa2e33ff63fa052320aff4016bc55d8cedeece",
+  "guard_sha256": "4f4fa1f272438ebe0558da76f9067ed3871cc6fddddb39caa0f9d7ee97fc6503",
+  "guard_receipt_sha256": "7fa0e1f3d5c4b355436bc4914537b2890a3ffdaca87f6d34838d4c15eb91488c",
+  "scope": "owned source/type/evidence bytes, provisional application",
+  "control_sources": {
+    "negative-cdf": {
+      "source": "WrongCDFCoefficient.lean",
+      "source_sha256": "3a4d4ac1ef5b1d38ace6b6f03cc6b31e355e104af7a8d35a0317e1ca869ce6c7",
+      "stdout_sha256": "275227718f66daf0fb63a1a5da6c5ca1ff56f56763b5cf037af2766d9d626d3e",
+      "exit": 1,
+      "native_archived_source_identical": true
+    },
+    "negative-energy": {
+      "source": "WrongEnergyHalf.lean",
+      "source_sha256": "1df50d14cbe77fc7d36fc42c6aa98e8327e1bfe4d04b0b608d37e70a5c109b0a",
+      "stdout_sha256": "20c52909b7a2a61cc358f592e0da7a4475dbb06a5e41f15f6f0c3c323b131a9e",
+      "exit": 1,
+      "native_archived_source_identical": true
+    }
+  }
+}

@@ -46,3 +46,10 @@ text mutations (extra/sorry axioms, missing/duplicate inventories, compound
 False goals and API/extra errors) are rejected. This applies an existing
 verification rule, not a new mathematical theorem; no proof was rerun for
 this text-guard repair. The initial receipt and native logs are preserved.
+
+FIT feedback: negative-control sources were not copied into its packet.
+Before FULLreview, both actual Lean source files are included and
+verify-evidence-v2.py additionally binds their SHA and filenames to each
+native log. All18 mutations pass rejection. Exact sources match native
+execution and the original53-member archive. The prior14-mutation checker/
+receipt remain preserved; no Lean compile/replay or proof was rerun.
