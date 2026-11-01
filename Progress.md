@@ -8667,3 +8667,32 @@ point-moment consequence from this finite module until its later consumer.
 Then AD/SC/FY and lower/upper/PB/OC/WS chain; keep full original scope and
 Le's actual-derived-constant goal. Whole-paper/cold-read/delivery remain open.
 No owned native review/compute job remains live. Goal ACTIVE.
+
+
+## 2026-11-01: finite Gaussian and whole-space compactness TeX candidate
+
+Previous goal turn: PROGRESS (7dbcd4a, FR/AVaccepted scientificf5c1521).
+Current FG/CC target was frozen before translation; accepted source proofs
+e59c29b/6718a16 and their scoped adjudications are reused without adding
+strength, parameter endpoints or formal claims. No new numerical/Lean run.
+
+Added notes/integrated_compact_gaussian.tex,625lines/10complete proof blocks
+and the analytic n16 row/column negative-control remark. All74earlier proof
+bodies unchanged. Finite complex rectangular matrices, real independent
+gaussians, evenp and unnormalized traces; both variance powers averaged
+before maximum. Whole-space cutoff factorization handles all real Sobolev
+indices, exact Fourier constants and recovery; torus is auxiliary. Actual
+balanced adjoint swap/two envelopes, compact positive eigenvalue/trace order,
+conditional finiteZ localization and both variance bounds, exact finite
+matrix compression and two Fatou steps. Plateau-only rank-one witness and
+uncut translation noncompactness retained. No actual noise coefficient
+family, infinite series/path/source/Young/moment result is inferred here.
+
+Clean134-page build,0errors/undefined references/citations/overfull boxes;
+format-tex applied. All9new/context pages124-132 visually inspected;
+section18ends132 and shares targetcontext. Bibliography/symlink unedited.
+Dated packet has10-proof/remark crosswalk and worker honesty. Media checker
+PASS:15full texts/9typed PNGs. Fresh Le <plan removed> identity/headroom, firstParty
+claude.ai doctor and actualOpus5.5READY retained. Independent integration
+review PENDING at source freeze. Goal ACTIVE/full scope and Le's actual
+constant target unchanged. Fresh origin fetch still SSH255NoRoute.
