@@ -1,55 +1,60 @@
-Last updated: 2026-11-01 19:08 UTC (Codex)
+Last updated: 2026-11-01 19:46 UTC (Codex)
 
 LATEST USER DIRECTION: derive the actual constants, whatever computation yields.
 Chen matching is not a completion requirement.
 
 ## ⏭ Next session: where to stand and what to do
 
-FIRST implement the bounded editorial scope/status corrections specified
-in reviews/2026-11-01-whole-argument/inconclusive-adjudication-v1.md in
-ACTIVE, preserving all mathematical statements and213proof bodies, then
-pair a clean rebuilt PDF. This is the first unit of the full-coverage
-recovery target in that same review directory. Do not start a new proof
-wave or call the old whole review accepted.
+FIRST freeze the complete bounded source/visual audit and fresh synthesis
+contract inventory against ONE common scientific source revision, following
+the official runbooks/review-composition.md protocol. The source fidelity
+SF04 packet is prepared but NOT DISPATCHED. Do not start it with a source
+revision incompatible with the eventual official composition.
 
 ACTIVE:
 ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave,
-branch research/fixed-mask-young-20261031, workflow HEADe7d64b6.
-Original consolidated candidate4a65c79d9d4b5c6a7e0cb712a88f1a973cc9c3fd
-is unchanged so far; old packets/receipts remain immutable after repairs.
-Le's actual-derived-constant target governs, without forcing Chen matching.
+branch research/fixed-mask-young-20261031, workflow HEAD3192912.
+Editorial scientific candidateb2fda020b848369cf8f7b38c5eb0b9db09c650ce.
+Current exact257-page PDF SHA256:
+10bfeae6eb576e23ba928b8ef9eca968d87f23ac7eff884c632bf50acb3294c9.
+All213proof bodies,221statement blocks and all mathematical formulas are
+byte-identical to prior4a65c79. Only8scope/status prose blocks changed;
+README/goal/status records now describe the actual inconclusive review.
 
-NO REVIEW IS CURRENTLY LIVE. Original44594 is TERMINAL TIMEOUT; supported
-continuation13739 is TERMINAL exit3, actual report INCONCLUSIVE/medium,
-acceptedfalse and coveragefalse. Do not poll or resume these as live.
-The actualOpus5.5/HIGH-dispatched continuation had transport success and
-no fatal/major/required mathematical repair, but it expressly declined
-213-proof certification and left6named obligations open. The63named checks
-plus one extra total58PASS/6INCONCLUSIVE. Neither passing nor full source
-coverage gates cleared. 'Media removed: request limit' affected images;
-Read-call counts and no discovered error are not acceptance.
+Recovery directory in ACTIVE: reviews/2026-11-01-coverage-recovery/.
+Read coverage-assignments-v1.json, former-input-union-map-v1.json,
+composition-readiness-v1.json and current Progress.md. Every one of the
+old401input obligations has an explicit disposition. All86primary images
+remain assigned, and every current257PDFpage is assigned. Old258-page
+renders are preserved and superseded, not relabeled reviewed. Four source
+groups24/24/19/21 and11visual groups24each except final17 are PLANNED,
+not passes. Provisional24frame budgets are not a claimed provider cap.
+The fresh whole mathematical gate must retain28files/44sections/213proofs
+and all coupled uses; fidelity votes are not mathematical proof premises.
 
-All14continuation artifacts, raw/parsed report, full ledger, original
-timeout lineage and401five-way source identities are retained. Original
-413-file timeout archive is also preserved. Review files in ACTIVE:
-reviews/2026-11-01-whole-argument/. Full external native state:
-../stratonovich-whole-argument-review-v1 relative to ACTIVE. Do not run
-the passing retainers against the inconclusive report.
+NO REVIEW IS CURRENTLY LIVE. Old44594 TIMEOUT and13739 INCONCLUSIVE/medium
+remain terminal/unaccepted. Carrier calibration44118 is TERMINAL PASS at
+HIGH with full actual required coverage; it covers ONLY3representative
+images and is NOT a scientific component or source-application pass.
+All20native files and5five-waybindings verified,43.806seconds. Source/data:
+carrier-calibration-v1/ in the recovery directory; its external original
+state is ../stratonovich-carrier-calibration-v1 relative to ACTIVE.
+SF04 external preflight: ../stratonovich-sf04-source-audit-v1.
 
-Recovery must cover all original models,44sections,213proofs,86selected
-primary/edition pages and every newly rebuilt manuscript page. The target
-splits image-delivery fidelity into bounded fresh packets and retains a
-fresh full mathematical gate, not a main-theorem-only or lower-confidence
-substitute. Provisional24-image budgets are engineering choices, not a
-claimed provider cap. Measure actual display/read-ledger evidence before
-scaling. Completed review cannot be resumed; any successor needs new
-evidence/contract and immutable outputs. Final cold read NOT DISPATCHED.
+[held back: AI account details]
 
-Wiki tickettk-20261101-124652-codex-stratonovich-project-status is VERIFIED
-maintained, wiki43ae67dc, actual committed/live page match. Its pre-timeout
-snapshot explicitly keeps whole review and cold gates pending. A final
-outcome refresh remains due. Both clean <HUB> research/master
-counterparts are synchronized. The258-page active PDF was shown on tag8.
+Official composition CLI/consumer/runbook hashes are pinned in
+composition-readiness-v1.json. Freeze all contracts/inventories, keep each
+component's exact source/required-source/control pins and canonical HIGH
+coverage gates, then run actual SF04 before scaling. The parent map is
+planning, not an acceptance shortcut. No composition has been run.
+
+Official companion L0PROPOSED/decision4 and80facts/22seams unchanged.
+Current BOUNDARIES clarifies exact_gap is unused in printed TeX. Prior
+cold packet-v2 is STALE for the successor; cold NOT DISPATCHED. Wiki
+maintenance43ae67dc is verified, final review-outcome update remains due.
+Both clean corresponding <HUB> checkouts are synchronized. Existing
+tag8 viewer uses the active PDF; do not reopen duplicates.
 
 ## Pre-flight checks
 
@@ -149,19 +154,20 @@ counterparts are synchronized. The258-page active PDF was shown on tag8.
 
 ## Concrete deliverables for the next session
 
-A bounded editorial successor with unchanged statements/213proof bodies,
-clean source/PDF build, exact body-difference audit and immutable candidate.
-Then execute the coverage-preserving recovery target: complete primary
-source/application and whole-page fidelity evidence plus a fresh whole
-mathematical HIGH gate. These are deliverables, not existing passes.
+One frozen common candidate/control inventory for all four source audits,
+all257page visual assignments and a fresh full mathematical synthesis,
+with official composition schema/pins and complete actual dependencies.
+Then execute SF04 and validate actual21-frame typed delivery and report.
+Every scientific/final gate remains open until actual evidence exists.
 
 ## Success criteria for the immediate next step
 
-The first editorial unit corrects only the recorded local scope/status
-prose, retains every original theorem/assumption and proof body, and pairs
-the rebuilt PDF with zero errors, undefined references/citations or
-overfull boxes. Old source/packets/reports and actual medium/inconclusive
-verdict remain unchanged. No final mathematical or goal acceptance follows.
+Every original mathematical/source/render obligation has a current exact
+assignment; no proof/model/constant is narrowed. All scientific attempts
+use one compatible frozen revision and pinned contracts. Preparations,
+carrier calibration and a missing-component composition refusal are not
+scientific passes. Use only canonical producer/consumer acceptance and
+retain a fresh whole-argument/cold gate; no project-local merged shortcut.
 
 ## Anti-success criteria
 
@@ -2084,18 +2090,54 @@ time Gaussian-driver/Young/operator route. Talk construction not checked;
 no universal necessity, novelty or correspondence claim.
 Pushed e7d64b6; both clean <HUB> counterparts synchronized.
 
+
+### 2026-11-01 — editorial successor and actual three-image calibration
+
+Scientificb2fda02 implements8bounded prose changes with ALL213proofs,
+221statements,636displays,445equation environments and7974inline formulas
+unchanged. Clean257-page source/PDF, zero errors/undefined/overfull,
+formatter idempotent; all257pages rendered, selected10author views only.
+Full source/image recovery assignments, former401input-disposition map,
+new proof locators and SF04 source/application packet prepared. SF04 has
+52input files,21typed PNGs,9required texts and13checks; NOT DISPATCHED.
+
+Workflowf875d3e freezes a separate3-image calibration. Actualnative44118
+returned5PASS/HIGH, PASS_WITH_NOTES/high, acceptedtrue/coveragetrue in
+43.806seconds. Canonical gates,5five-waybindings and20archived native files
+readback verified. Exact observed773x1000Teschl81,660x1000Friz190 and
+928x1200manuscript247carriers passed. Calibration is not source or
+mathematical acceptance and establishes no universal media/frame cap.
+
+Workflow3192912 retains/calibrates source-route evidence and pins the
+official composition consumer/runbook, which requires a common candidate
+revision across scientific components and fresh synthesis. Full contract
+inventory freeze is the next action, before first scientific SF04dispatch.
+Gmailweekly100 excluded; configured current best slot <account removed> verified
+native firstParty <account removed> and actualOpus5.5 READY. Identity
+disagreement with quota helper retained; slot names are not account owners.
+No new sign-in/credential copy/default switch/model/API/threshold fallback.
+Local failed availability argv probe and successful stdin successor retained.
+
+Clarified exact_gap has no current printed consumer; only strict_log_gap
+has that scalar application. No Lean code/pin/fact count/compiler/package
+change. BOUNDARIES scope only. Prior cold packet is STALE. Source/PDF
+unchanged sinceb2fda02; current whole/source/visual/cold gates all open.
+Pushed3192912 and verified both corresponding <HUB> checkouts clean.
+
 ## Repo & git state at handoff
 
 ROOT master before this HANDOFF-only commit:
-b1081f2e56e169314ddc774dc09dd11b5903b49c, clean, origin/<HUB> equal.
+508af29f47652b862c85ba78c2e89c1123d58010, clean, origin/<HUB> equal.
 ACTIVE research workflow:
-e7d64b62e395a5faa49d5f242b1e670145fe9ff4, clean, origin/<HUB> equal.
-Unchanged scientific candidate under the inconclusive review:
-4a65c79d9d4b5c6a7e0cb712a88f1a973cc9c3fd.
-Both corresponding <HUB> checkouts actually synchronized, including
-all timeout/inconclusive archives. Research is separate from old master
-science. This HANDOFF-only commit is pushed and canonical <HUB>
-synced next; inspect actual terminal results before assuming parity.
+3192912a8f1bf91c4f09c32b3601b5c7b8eefeaf, clean, origin/<HUB> equal.
+Editorial scientific source/PDF candidate:
+b2fda020b848369cf8f7b38c5eb0b9db09c650ce.
+Carrier-only calibration source revision:
+f875d3edab938c48403410950105fe344f5bcbab; excluded from science voting.
+Old full candidate4a65c79 and all rejected reports remain immutable.
+Research stays separate from canonical master science. This new
+HANDOFF-only commit is pushed and <HUB> canonical synced next;
+verify actual terminal results rather than infer success from this text.
 
 ## Operating notes
 
