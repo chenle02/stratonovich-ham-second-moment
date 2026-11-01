@@ -5,10 +5,10 @@ Chen matching is not a completion requirement.
 
 ## ⏭ Next session: where to stand and what to do
 
-FIRST integrate the ACTUAL same-W Gaussian operator-driver proof (AD)
+FIRST integrate the canonical Gaussian source-convergence proof (SC)
 into TeX in ACTIVE
 ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave,
-branch research/fixed-mask-young-20261031, clean local HEAD 22e3426.
+branch research/fixed-mask-young-20261031, clean local HEAD f553286.
 Read its PROJECT-GOAL.md, AGENTS.md, Progress.md and
 notes/derived-constant-integration-plan.md and derived-constant-proof-imports.md
 in its notes directory. Root mathematical files and
@@ -24,10 +24,14 @@ review68458(v3PASS0),71223(v2coverage-refusal3), or v1preflight5.
 FR/AV TeX integration is now ACCEPTED: scientificf5c1521,adoption7dbcd4a,
 27PASS/HIGH382.209seconds,no mandatory repairs. Review13477 isTERMINAL0,
 not a task to restart. Read the frozen next target in
-reviews/2026-11-01-actual-driver-tex-integration/target-v1.md in ACTIVE.
+reviews/2026-11-01-source-convergence-tex-integration/target-v1.md in ACTIVE.
 FG/CC is now ACCEPTED: scientific2571a15,adoption22e3426,24HIGHchecks
 323.168seconds,no repairs. Native74139 TERMINAL0; old16481 remains
 rejected (rawFAIL/HIGH,canonical invalid-report). Do not restart either.
+AD now ACCEPTED: scientific9dad256,adoptionf553286,25HIGHchecks
+396.861seconds,no repairs. Native83117 TERMINAL0;18283 canonicalFAIL/HIGH
+remains rejected. Do not restart either. Actual compact first driver/path
+is constructed on GIVEN W, local fixedR,T; SC/Young/u remain separate.
 No owned reviewer or computation remains live.
 
 ## Pre-flight checks
@@ -46,25 +50,26 @@ No owned reviewer or computation remains live.
 5. Two conditional finite Lean facts accepted after full actual-application
    review. Current80facts22seams; official L0PROPOSED/decision4 unchanged.
    H1/CDF/Gamma/spectral/PDE arguments remain analytic, not Lean-formalized.
-6. Active manuscript target follows Le's revision. Accepted SF/TP8proofs
-   (scientific96e2a18,HIGH15checks),FR/AV6proofs(f5c1521,HIGH27checks),
-   and now FG/CC10proofs(2571a15,HIGH24checks323.168s,no mandatory repairs).
-   FG/CC canonicalaccepted/coverage true;30five-waybindings,19full texts,
-   10exact PNG deliveries and45rawmembers verified. Eight optional notes
-   adjudicated with no final source/PDF edit.134-page PDF clean;74earlier
-   proof bodies unchanged,10new blocks. Section18ends132,context133.
-   V1 introduced a false bare lattice-shell bound by dropping spacing
-   dependence; exactcounter a1/2,y0,k4,j2,N2,d1 gives1/5>1/16. Restore
-   <y-ak>^-N<=max(1,2/a)^N<k>^-N before summing dyadic k-shells, with
-   a,d,N dependencies. Only2proof blocks changed; full repaired V2passed.
-   V1 rawFAIL/HIGH and unsupportedUNCHECKED report status remain rejected.
-   Exact Fourier autocorrelation normalization and real sigma made explicit.
-   Lesson in integration plan: preserve comparison constants/shell variable;
-   C_d cannot absorb a. Author Git/build checks are not LLM observations.
-   Media and native workspace preflights pass; correctly type PNGs and
-   keep read-only review contracts observable. No new Lean fact, actual
-   infinite driver/path/source/Young/moment result from FG/CC alone. Keep
-   independent old upper finiteness, SA alias and scalar-only TE/GI imports.
+6. Active target follows Le's actual-constant revision. SF/TP8proofs,
+   FR/AV6proofs,FG/CC10proofs and now AD9proofs are scoped accepted.
+   Latest AD scientific9dad256:25PASS/HIGH396.861seconds,no repairs,
+   accepted/coverage true;31five-waybindings,21fulltexts,9exactimages,
+   46rawmembers SHA256read-back verified. Six optional notes adjudicated
+   with no final source/PDF edit.143pages clean;84prior bodies unchanged.
+   Actual original-W compact Gaussian operator and Lp-Ctheta path proved,
+   both variances/tails, raw row, basis identity and Gaussian norm bounds.
+   Fixed-I even admissible Schatten only; no CthetaSp or uniformR claim.
+   V1 canonicalFAIL/HIGH preserved: norm should have been squared norm,
+   and unsafe JS backslash-r-m corrupted a grid display. Both restored;
+   v2 max_k and squared H_W tensor norm inspected. Four blocks repaired/
+   clarified,5unchanged. Literal-safe String.raw and pre-format C0 scan,
+   plus homogeneity under scaling by2 (norm2 vs quadratic4), now documented.
+   Keep all earlier failures rejected, including FG/CC lattice-spacing
+   loss; preserve parameter-dependent comparison constants and shell variable.
+   Author machine/build checks are outside LLM execution scope. Media and
+   native dry-run preflights pass; PNG kind/image/SHA/type required.
+   No new Lean fact. Source, Young/canonical data/moments and full PB/OC/WS
+   integration still open. Keep independent old upper finiteness and SA.
 7. <HUB> fresh push still fails NoRoute; no actual remote parity.
    Recovery requires serialized push, canonical pull and isolated research
    fast-forward with actual HEAD checks. Never reset or drop foreign work.
@@ -73,15 +78,17 @@ No owned reviewer or computation remains live.
 
 ## Concrete deliverables for the next session
 
-- Translate actual-operator-driver.md Sections1-10 completely, with the
-  frozen target: actual compact-test noise ONbasis/null quotient, same-W
-  covariance coefficients AFTER Gamma convolution, real/complex constants,
-  gain/adjoint/finite propagation, BOTH actual variances/localizations,
-  first-chaos columns and compact trace tails, variance-average Gaussian
-  Cauchy bound, actual compact operator/time-path convergence, measurable
-  countable span, basis independence and sqrt(p)/square-exponential norm.
-- Then source convergence and Young/canonical identification, full lower
-  event/Gaussian upper and PB/OC/WS. Do not re-integrate accepted FG/CC.
+- Translate source-operator-convergence.md Sections1-7 completely. Preserve
+  Gaussian transfer with correlated Y(f_j), true raw rows, heat/Laplace
+  feature isometry and product-space extension retaining GIVEN W and its
+  actual raw driver. Exact cross-width K_max times Gamma_(eps+eps'),
+  arbitrary relative-rate convergence, pointfield continuity/Cinfty-space,
+  and actual ordinary first-response/path identity. No nonlinear covariance
+  comparison, temporal convolution or W-only cutoff-family assumption.
+- Pin the held64-page AUTHOR definitions/p5/6/8/9 and existing citekey;
+  no p8 discrepant increment or arXivv1 exact-firstmean input. Then FM/FY
+  canonical data/moment transfer and full lower/upper/PB/OC/WS assembly.
+- Do not re-integrate accepted AD/FG/CC. Keep full original model scope.
 - Build and inspect PDF, freeze whole-argument review and final cold read;
   adjudicate findings before claiming the completion contract satisfied.
 - Recover private pushes/wiki queue/<HUB> parity when available.
@@ -1444,10 +1451,23 @@ proof bodies unchanged plus10new proof blocks,2repaired.80Lean facts22seams
 unchanged;L0PROPOSED. Next actual-driver target frozen before translation,
 not a new proof. Latest private push NoRoute; no owned live jobs; goalACTIVE.
 
+2026-11-01 repaired AD integration close: scientific9dad256,adoptionf553286;
+actualOpus5.5/HIGH25PASS396.861seconds,no mandatory repairs. V1canonical
+FAIL/HIGH retained: wrong norm power and corrupted grid subscript. Restore
+squared tensor identity and literal max_k; raw JS mechanism codes and
+homogeneity control retained. Four driver proof blocks repaired/clarified,
+5unchanged; all84prior bodies unchanged. V2terminal0accepted/coverage true,
+31bindings/21fulltexts/9exactimages/46rawmembers SHA256read-back verified.
+143pages clean,all9corrected pages133-141 inspected. Six optional notes
+adjudicated without final code edits. Actual same-W compact Gaussian
+operator/Lp-Ctheta first driver now constructed; no source/Young/u-moment
+claim yet.80Lean facts22seams,L0PROPOSED unchanged. SCtarget frozen before
+translation, plan only. Fresh pushNoRoute; no owned live jobs; goalACTIVE.
+
 ## Repo & git state at handoff
 
-Before this HANDOFF-only successor root master HEAD9a48dd5. Active research
-clean HEAD22e3426518b79831a575e1a407e6035e78809257. Private origin remains
+Before this HANDOFF-only successor root master HEAD5efbc50. Active research
+clean HEADf553286eab1e9f66880fe4c5db39b30915382e00. Private origin remains
 <HUB> bare; fresh push failed SSH NoRoute, no synchronization claimed.
 Last-fetched root611c005/research6937719 remain historical observations.
 No implicit research/master merge. Scientific work stays in isolated ACTIVE;
