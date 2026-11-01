@@ -9539,3 +9539,29 @@ paths. Nativepreflightcaught thisbeforeprovider; versionprompt/packet/
 spec/manifestandcheckallbindingsagain, no pathwaiver orscientificreplay.
 Existingguardapplied, nonewgeneric skillneeded. Generatedsourceexcerpts
 needEOFnormalizationBEFOREfreeze/custodyhash, neverpostreviewbytechanges.
+
+
+## 2026-11-01 — full actual-law Gaussian tube integration freeze
+
+Previousgoalturnmadeverifiedprogress: jointS/SPscientific2cca41c,
+packetrevision0873245/adoption252df6f,9proofs/clean216pages/24HIGHchecks.
+AllpriorjobsTERMINAL. FrozenBTtargetprecededtranslation. Added
+notes/integrated_gaussian_tubes.tex,8completeproofs: genericgenuineAWS
+withselfcontainedD1method/tightness, closedtubes/attainedradius/exactCM
+scale, Rayleighincludingjumps/zero, actualfullsameW Etuple/compactmean,
+RBrestart/globalendpoint, uniformcoarseenvelope/operatorL2, exacttail
+budget/rawhalfactionsup. FinalGCpointconsumerdeferredtoGC/URtarget, not
+deleted. No D1normexptheorem/GLrate/GLFfiniteness imported as premise.
+All169priorproofbodies unchanged; String.raw/C0/format/proofends/labels
+PASS. Endpointdisplayoverflow splitBEFOREfreeze; explicitglobalEflow/
+BorelG/compactintegrability andJ0Ftuple/Ecompression clarifiedBEFOREfreeze.
+Clean223pagePDF/0errors/undefined/overfull;10new/context/bib214-223 and2
+primaryimages190-191 inspected, changesreinspected. SourcePDFandllmTex
+freshSHAverified, normalizedPDFdifferent/non-equated, exactsourcepages
+Theorem11.6SETenlargementonly/not11.7. Existingreadonlyrefdbcitekeychecked.
+CompleteoldGaussianTail/Mathlibtypesusedatexactguards, no compiler/newfact;
+80facts22seams/L0PROPOSED/decision4unchanged. Fullindependentactual
+Opus5.5/HIGHgatePENDING; source/primary/actualapplicationpacket in
+reviews/2026-11-01-tube-transfer-tex-integration/. Freshroot/activefetch/
+focused<HUB>checkNoRoute; sharedscienceuntouched, no sync/parity.
+No contact/HPC/companion/Skorohod/sourcefix/sibling/publication.
