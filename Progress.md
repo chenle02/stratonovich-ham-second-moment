@@ -119,8 +119,14 @@
   Clean150-page PDF;93prior bodies unchanged. GIVEN W retained literally;
   arbitrary-rate source-driver convergence and ordinary response proved.
   Fixed R,T only; no nonlinear/canonical moment conclusion from SC alone.
-- **Immediate next:** jointly integrate fixed-mask moment transfer and
-  Young flow (FM/FY), then full lower/upper/PB/OC/WS assembly.
+- **Accepted joint FM/FY TeX integration:** scientific5caa2e8,
+  Opus5.5/HIGH23passing checks479.376s,no required repairs. Eleven new
+  complete proof blocks;48bindings/30full texts/17exact images/63raw
+  archive files verified. Clean160-page PDF;100prior bodies unchanged.
+  Actual constant-phase Young flow and W-measurable average now close
+  the exact conditional masked-L2 premise. Fixed R,T, no asymptotic rate.
+- **Immediate next:** integrate the compact-mean ground family and full-F
+  complement (CG), then DS/raw-block lower/UL and the remaining upper/PB/OC/WS.
   Keep the frozen PB/OC/WS result set and full original model scope. The
   import interfaces are mapped; avoid repeating that inventory as a new round.
   Continue consolidating complete proofs into TeX/PDF, with clean builds
@@ -149,7 +155,7 @@
  rerun for promotion, new package/companion/lease/registry/HPC action.
 - **Git:** current mathematical work is in the isolated private research
   clone, branchresearch/fixed-mask-young-20261031. Latest result source
-  is95d7515; latest accepted TeX integration source8a2add9, with subsequent
+  is95d7515; latest accepted TeX integration source5caa2e8, with subsequent
   adoption records separate.
   Fresh fetch/push failed with <HUB>NoRoute. Prior <HUB> parity
   receipts are historical, not evidence of current synchronization.
@@ -8923,3 +8929,39 @@ firstParty claude.ai doctor and actualOpus5.5READY verified. Full native
 Opus5.5/HIGH source/statement/application/PDF integration gate PENDING.
 No new Lean/compiler/package/HPC/contact. Goal ACTIVE, remaining
 lower/upper/PB/OC/WS, whole-paper/cold-read and delivery gates open.
+
+
+### Accepted joint FM/FY TeX integration: scientific5caa2e8
+
+ActualOpus5.5/HIGH23passing checks (20PASS,3PASS_WITH_NOTES),
+479.376seconds,no required repairs. Native39688 TERMINAL0; accepted and
+coverage true. Canonical report/passing/correspondence/read-ledger checks
+PASS. All48five-way inputs and63raw archive files SHA256read-back verified.
+30complete required texts/17exact images delivered. Seven optional notes
+adjudicated in reviews/2026-11-01-moment-young-tex-integration/adjudication-v1.md.
+No final source/PDF edit on adoption. Clean160-page build,11new proof
+blocks,100prior bodies unchanged; no new Lean fact or compiler action.
+
+The joint integration preserves all mixed/self/unequal/empty chains,
+actual ordinary source solutions and the full unmasked canonical moment
+limit. It constructs the true E plus both constants phase, total finite
+propagation, both constant-response columns, linear Young evolution,
+Gaussian moments/UI and actual source-phase/scalar-chain identity. The
+W-measurable tested raw observable is the all-finite-Lp source limit and
+PROVES the exact previously conditional masked-average L2 premise. Its
+second moment is bounded by the original canonical point moment. Fixed
+mask/horizon only; no asymptotic constant or growing-radius estimate here.
+
+Next CG target frozen before translation in
+reviews/2026-11-01-compact-mean-tex-integration/. Selected held Teschl2014
+SECOND-edition pages140/141/258/273 re-inspected and image identities
+checked. Common negative trial must precede ground simplicity; both
+decaying branch and constant-forcing tail stay in the full complement.
+No fresh theorem or whole-book audit is claimed by that source preflight.
+Durable interface lesson: conditional moment transfer is used only AFTER
+the actual Young/source construction proves its exact L2 premise; total
+phase propagation and closed iE replace any false dense-E shortcut.
+
+Fresh private push of5caa2e8 failed NoRoute; no remote parity. Remaining
+CG/DS/RB/UL/upper/PB/OC/WS integration, whole-argument/final cold-read, wiki
+provenance and delivery gates remain open. Actual-constant goal ACTIVE.

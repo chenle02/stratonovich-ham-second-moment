@@ -189,3 +189,21 @@ remaining full lower/upper/PB/OC/WS and whole-paper/cold-read remain open.
 Definition fidelity is separate from source-proof validity: retain the
 correct2epsilon source law and independently prove local increments rather
 than importing the author's discrepant increment index.
+
+
+## Joint fixed-mask moment and Young integration accepted
+
+Scientific5caa2e8:11complete proof blocks (3FM,8FY), actual first-party
+Opus5.5/HIGH23passing checks479.376seconds,no repairs. All48input bindings,
+30full texts/17exact PNGs and63raw archive files verified. Seven optional
+notes adjudicated with no final source/PDF edits. Clean160-page PDF; all
+100prior proof bodies unchanged. The W-measurable tested raw observable
+now establishes the conditional moment transfer's exact source-L2 premise.
+Full F includes both constants and uses TOTAL distribution propagation,
+not density of E or low-Sobolev point evaluation. Fixed R,T only.
+
+Next CG target is frozen in reviews/2026-11-01-compact-mean-tex-integration/.
+Selected SECOND-edition Teschl source hypotheses rechecked; common trial
+precedes ground simplicity, and decaying branch/full constant-forcing
+tail must remain. Then DS scaling and actual raw block event/lower/UL,
+remaining upper/PB/OC/WS and whole-paper/final cold-read gates.
