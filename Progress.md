@@ -10148,3 +10148,32 @@ coverage, named obligations, findings/adjudication and independent cold
 read remain pending. None of this Git delivery evidence accepts a proof
 or establishes the complete project contract. The intrinsic actual-constant
 target and every original model, scope boundary and decision point remain.
+
+
+## 2026-11-01 — internal wiki status correction queued, not completed
+
+Read the existing project page: its Current state still describes the
+October27 partial alpha<=1 result and its goal still prescribes Chen's
+constants. Ran local wiki CLI search and cite, and read the synthesized
+regime comparison; its speculative static normalization repairs are not
+imported. The first bare-python CLI calls failed for missing frontmatter;
+the existing wiki .venv executed the same read-only commands successfully.
+No environment, wiki or bibliography file was edited directly.
+
+Following the canonical single-writer skill, queued wiki-propagation
+`tk-20261101-124652-codex-stratonovich-project-status`, request UID
+`stratonovich-project-status-20261101-pending-whole-v1`. Independently read
+the exact canonical request JSON and checked its id; state is requests,
+not claimed or completed. The bounded request updates only the internal
+project page, preserving old rounds as history, actual-constant revision,
+all-model scoped proofs/variational domain, proposed companion boundary
+and source qualifications. It explicitly retains PENDING whole review and
+NOT DISPATCHED cold read; no goal/circulation/novelty acceptance, public
+site deployment, manuscript circulation or cross-model identification.
+
+Receipt locator/evidence: whole-argument/wiki-status-queue-v1.json. The
+complete original request/enqueue observation is retained outside this
+checkout in the named whole-review state directory. Check the EXACT ticket
+terminal receipt and changed wiki page/commit before counting completion.
+Do not restart or modify the queue service to accelerate this request.
+Whole-argument session44594 remains LIVE; no source/PDF change or verdict.
