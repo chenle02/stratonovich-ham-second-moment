@@ -1,0 +1,1254 @@
+Derived text of assigned exact PDF pages only; extraction can garble mathematics. Actual PNG inspection is mandatory. No mathematical proof is supplied by this carrier.
+
+===== PHYSICAL PAGE 169 =====
+25     Actual raw blocks and the original point lower
+       bound
+Fix a nonzero covariance from Hypothesis 1.1 and any real nonnegative nonzero Ψ ∈
+Cc∞ ((0, 1)×Rd ). Retain the original Z = W (Ψ), v = vΨ > 0 and mean hs of Lemma 23.6.
+Choose one finite even mask mR ∈ [0, 1], equal to one on BR and supported in B 2R , as in
+Proposition 23.7. Then Vs = mR hs has the ground family, rate λs and full F projection
+of Section 23. Set
+                         ∫︂ 1
+                   IR =       λs ds,   Q2 = lim inf T −κ log E|u(T, 0)|2 .
+                          0                        T →∞
+
+
+We will prove Q2 ≥ 2IR − v/2, for this same control and covariance. Fix a real nonnega-
+tive smooth compact ϕ of integral one, the bounded observable Oϕ , and the actual data
+e0 = (0, 1, 0) ∈ F . Both displacement and velocity are retained. This is the same phys-
+ical profile mR = ζR used in the actual driver and compact mean; no mask is changed
+in a covariance identity. The semiscaled W below is the given raw-law noise. The com-
+parison to the unscaled solution uses equality in law, not samplewise identities on one
+probability space for every T .
+
+25.1    The common raw noise and its exact Gaussian shift
+Choose an integer B ≥ 1, later fixed by the cone estimate, and take 0 < δ < min(1, 1/B).
+Define
+      ⌊︃ ⌋︃
+         1
+ N=         ≥ 1, sm = mδB (0 ≤ m ≤ N ), τ = δ −1 − N B ∈ [0, B), gδ = δ (1−a)/2 .
+        δB
+                                                                                   (25.1)
+For a smooth compact positive-fast-time test f , extended by zero, put
+
+            Tδ,m f (s, x) = δ a/2−1 f ((s − sm )/δ, x),   Wδ,m (f ) = W (Tδ,m f ).   (25.2)
+
+Write Wfast = Wδ,0 . Use the same admissible γ, θ, β as (19.1). Write AR (Wδ,m ) for the
+actual F first driver obtained by the bounded extension (22.5), on the local horizon
+[0, B], and set
+                                        ∫︂ u
+         Xm = gδ AR (Wδ,m ),   Hm (u) =      SF (−r)iBF (Vsm +δr )SF (r) dr.      (25.3)
+                                               0
+
+The convolution formula for h extends smoothly to s ∈ [0, 2], covering these means.
+Ground templates will only use sm ∈ [0, 1].
+
+Lemma 25.1 (Actual coupled Gaussian block inputs). Each Tδ,m is an isometry of
+the raw test completion, respecting covariance-null tests. All Wδ,m and Z are on the
+same given noise space, without an independence assertion. Let K(F ) have the operator
+
+
+                                               169
+
+===== PHYSICAL PAGE 170 =====
+norm and let B0 = hθ0 ([0, B]; K(F )) be the C θ closure of zero-initial polygonal compact-
+operator paths. It is a separable Banach space. In Bδ = B0N +1 with maximum norm,
+(X, Z), X = (Xm )N m=0 , is jointly centered Gaussian and
+                                         √
+                         b := E[XZ] = δ H,          H = (Hm )N m=0 .                 (25.4)
+Moreover,
+                                            √
+                           ∥Xm ∥Lp B0 ≤ CR,B p gδ ,       p ≥ 1.                     (25.5)
+Proof. Substituting s = sm + δu, t = sm + δr in the raw covariance gives the factor
+δ a−2 δ 2 δ −a = 1. Thus the maps extend isometrically through the null quotient. Direct
+test substitution gives Wδ,m (f ) = Wfast (f (· − mB, ·)). These are literal common-space
+identities.
+    Finite-rank rational matrices in a countable real Hilbert basis are dense in K(F ):
+for compact T , Pn T Pn → T in norm by compactness of T, T ∗ , and finite entries admit
+rational approximation. Polygonal paths with rational breakpoints and such matrices
+give separability of B0 . To approximate breakpoints, use uniform convergence, uniform
+Lipschitz bounds and [f ]θ ≤ (2∥f ∥∞ )1−θ Lip(f )θ . The same inequality puts every zero-
+initial Lipschitz compact-valued path in B0 by polygonal approximation. The finite raw
+coefficient paths iAj Lψ have these properties. Their actual Gaussian sums converge in
+Lp C θ and hence in the closed space B0 . Their laws and the parent Gaussian norm bound
+give (25.5). Every finite joint coefficient list with Z is Gaussian on the same W . Scalar
+continuous functionals pass through the L2 limits, preserving Gaussianity by convergence
+of variances and characteristic functions. Thus (X,√Z) is the asserted Banach Gaussian
+variable. Cauchy–Schwarz gives E∥XZ∥ ≤ ∥X∥2 v < ∞, so its Bochner covariance
+exists.
+    The original raw covariance and the test pullback give
+                                              ∫︂
+                                          a/2
+                        E[Wδ,m (f )Z] = δ        f (u, x)hsm +δu (x) dx du.         (25.6)
+
+Absolute Fubini uses compact supports, local Radon mass and a < 1. This identity
+extends to the literal driver matrix tests on E: their time indicator is approximated by
+smooth bounded tests on one compact support, converging in the raw norm by dominated
+convergence against |u−r|−a Γ; their mean pairings converge as well. The √   actual Sobolev
+adjoint is the one in (19.11). Hence the path covariance is gδ δ a/2 Hm = δ Hm on real
+Schwartz E pairs. For constant inputs the two columns are the same Lψ inputs (ψ, 0)
+and (0, ψ), and total finite propagation identifies their deterministic response. The span
+of E and both constant coordinates is dense in F ; E alone is not. Boundedness,
+                                                                            √       rational
+times and path continuity prove (25.4) on all F . In particular H = b/ δ ∈ Bδ . This
+proves Lemma 25.1.
+Proposition 25.2 (Change of law on the whole norm-Borel space). For every nonneg-
+ative norm-Borel j on all of Bδ ,
+                                  [︂   √                 ]︂
+                         Ej(X) = E e−Z/ δ−v/(2δ) j(X + H) .                 (25.7)
+
+The equality is valid also as an extended nonnegative integral.
+
+                                            170
+
+===== PHYSICAL PAGE 171 =====
+                                        2
+Proof. For real s, the density e−sZ−s v/2 defines an equivalent probability measure Qs
+by completing the square in the N (0, v) density. For any finite list ℓ of continuous real
+coordinates on Bδ , the Gaussian vector (ℓ(X), Z) is equal in law to (T G, z ·G) for a finite
+standard Gaussian vector G. A positive covariance square root gives this representation
+even when singular; no inverse is used. Here T z = ℓ(b) and |z|2 = v. Substitution
+G′ = G + sz in its density gives EQs f (ℓ(X + sb)) = Ef (ℓ(X)) for every bounded Borel
+f.
+    The matrix entries of each block in a real Hilbert basis at rational times, together
+with 0, B, generate the norm-Borel sigma-field. To see the operator-norm point, for
+a countable dense set D of unit vectors obtained from normalized rational finite basis
+combinations, ∥T ∥ = supu,w∈D |⟨T u, w⟩|. These pairings are finite linear combinations of
+matrix entries. Supremum and Hölder norms of continuous paths are suprema over ratio-
+nal times and pairs. Thus distance to every fixed element of Bδ is coordinate-measurable.
+Open balls are measurable by rational closed-ball approximation, and separability makes
+every open set a countable union of balls from dense centers. Conversely the coordinates
+are continuous. The cylinder sets form a generating pi-system; uniqueness of probability
+measures extends the finite-coordinate equality to all norm-Borel sets. Simple functions
+and monotone convergence give the identity for nonnegative j. Finally take s = δ −1/2
+and use sb = H from (25.4). The map and its deterministic translate are defined on the
+entire input space; there is no translated exceptional-domain assumption. This proves
+Proposition 25.2.
+
+25.2     Small noisy blocks and an indexed full-phase cone
+For any x ∈ B0 define Dx (u) = SF (u)Ux (u, 0) by the everywhere-defined linear Young
+                                  0                 +
+map of Proposition 22.4. Write Dm   = DXm and Dm       = DXm +Hm . The latter retains
+both the mean and the actual residual noise.
+Lemma 25.3 (Uniform block error). Let Mδ = maxm≤N ∥Xm ∥B0 , including its factor
+gδ . Then Mδ → 0 in every finite Lq , and, for some c > 0,
+                                                2
+                                      sup EecMδ < ∞.                                  (25.8)
+                                       δ
+
+With the actual deterministic Ps in (23.11),
+                          +
+       Eop,δ := max sup ∥Dm (u) − Psm (u)∥B(F ) −→ 0         in every finite Lq .     (25.9)
+                m≤N 0≤u≤B
+
+
+Proof. The maximum and (25.5), with N + 1 ≤ 2/δ, give
+                                      √          √
+                 ∥Mδ ∥p ≤ (N + 1)1/p C p gδ ≤ C ′ p δ (1−a)/2−1/p .
+
+For fixed q, choose p > max(q, 2/(1 − a)) to prove the first limit. No independence is
+needed. Choose an integer n0 with n0 (1 − a) ≥ 1. For n ≥ n0 ,
+
+                        EMδ2n ≤ 2C 2n (2n)n δ n(1−a)−1 ≤ 2C 2n (2n)n .
+
+                                             171
+
+===== PHYSICAL PAGE 172 =====
+For 1 ≤ n < n0 , Lyapunov bounds the moment by the appropriate power of the 2n0
+moment. These finitely many terms ∑︁    are bounded. For the remaining exponential series,
+n! ≥ (n/e) gives a geometric tail 2 n≥n0 (2ecC 2 )n for small c. This proves (25.8); no
+             n
+
+such assertion is made for the unscaled maximum.
+           stat
+     Let Hm     be the primitive for constant potential Vsm . Compact mean smoothness on
+[0, 2] and the statewise primitive bound give
+                                 stat                               stat
+            sup max(∥Hm ∥C θ , ∥Hm    ∥C θ ) ≤ H 0 ,     sup ∥Hm − Hm    ∥C θ ≤ Cδ.
+             m                                            m
+                                                         ∞
+Indeed, the potential difference is at most CδB in L and L2 ; integration of the bounded
+free groups gives its Lipschitz primitive bound on this fixed horizon. On {Mδ ≤ 1}, local
+Young stability on the fixed ball of radius H0 + 1 gives Eop,δ ≤ C(Mδ + δ). This proves
+convergence in probability. The global Young bound also gives
+                                +
+                                  (u)∥ ≤ CB exp CB (1 + H0 + Mδ )1/θ .
+                                                (︁                    )︁
+                    max sup ∥Dm
+                      m   u≤B
+
+Since 1/θ < 2, every finite power of this bound is dominated by a constant times the
+exponential in (25.8). Uniform higher moments yield uniform integrability, proving
+(25.9). Suprema are measurable: on a countable dense set of unit states each difference
+is continuous in u, so rational times and those states suffice. Operator-norm continuity
+of the physical free group is not used. Only sm ≤ 1 supplies the ground templates. This
+proves Lemma 25.3.
+Lemma 25.4 (Indexed cone and terminal displacement). Fix 0 < ϱ < 1/2. There are
+an integer B ≥ 1 and positive ω, ϵop , c∗ such that the following holds for every N ≥ 1.
+If σ0 , . . . , σN ∈ I have adjacent distances at most ω and real bounded operator families
+Dm (u), 0 ≤ u ≤ B, satisfy
+                                max sup ∥Dm (u) − Pσm (u)∥ ≤ ϵop ,
+                                m≤N 0≤u≤B
+
+then, for 0 ≤ u ≤ B,
+                                                          (︄                       )︄
+                                                               ∑︂
+ Oϕ DN (u)DN −1 (B) · · · D0 (B)e0 ≥ c∗ (1 − ϱ)N −1 exp B             λσm + uλσN        > 0. (25.10)
+                                                               m<N
+
+No positivity, composition or independence assumption on the Dm is required.
+Proof. From (23.17) fix Cgap ≥ 1, ηgap > 0 so the normalized complementary norm is at
+most Cgap e−ηgap t . Define positive margins and finite bounds
+ a∗ = inf ℓs (e0 ),   j∗ = inf Oϕ (es ),    Me = max(1, sup ∥es ∥),    Mℓ = max(1, sup ∥ℓs ∥).
+        I                   I                             I                               I
+
+Also put MP = max(1, supI ∥Πs ∥), MQ = 1 + MP , Mz = Me + 1, E0 = ∥e0 ∥ = 1 and
+Hobs = max(1, ∥Oϕ ∥). Choose the aperture first: ϑ = min(1, j∗ /(16Hobs Cgap )) > 0.
+Next choose integer B ≥ 1 with
+                                                 (︃          )︃
+                                   −ηgap B          1 ϑa∗
+                      qB := Cgap e         ≤ min     ,          .
+                                                    8 8MQ E0
+
+                                                172
+
+===== PHYSICAL PAGE 173 =====
+Choose ν > 0 such that νMz ≤ min(ϱ/2, ϑ, 1/4). Uniform continuity of ℓs , Πs supplies
+ω > 0 for which adjacent distances at most ω give both norm differences at most ν.
+Finally choose ϵop > 0 satisfying all five budgets
+        Mℓ ϵop Mz ≤ ϱ/2,          MQ ϵop Mz ≤ ϑ/4,
+        Mℓ ϵop E0 ≤ a∗ /2,        MQ ϵop E0 ≤ ϑa∗ /8,           Hobs ϵop Mz ≤ j∗ /8.
+All denominators are positive. This order of choices uses the normalized complement
+rather than a growing terminal norm.
+   The cone at s consists of z = Aes + r, with A = ℓs (z) > 0, ℓs (r) = 0 and ∥r∥F ≤ ϑA.
+In particular r = Qs z and ∥z∥ ≤ Mz A. For entrance, z1 = D0 (B)e0 , with b = σ0 , has
+normalized amplitude at least a∗ − Mℓ ϵop E0 ≥ a∗ /2. Its normalized residual is at most
+qB MQ E0 + MQ ϵop E0 ≤ ϑa∗ /4. Thus it enters the cone with residual ratio at most ϑ/2
+and amplitude at least eλb B a∗ /2.
+   For an old-cone state z = Aeb + r and an adjacent index c, rebase before using the
+complementary estimate:
+       ℓc (z) ≥ (1 − νMz )A,      ∥Qc z∥ ≤ ∥Qb z∥ + ∥(Πb − Πc )z∥ ≤ (ϑ + νMz )A.
+For the next full block D close to Pc (B), put x = e−λc B ℓc (Dz) and y = e−λc B ∥Qc Dz∥.
+Since λc > 0, the perturbation and budgets give
+                    x ≥ (1 − νMz − Mℓ ϵop Mz )A ≥ (1 − ϱ)A > A/2,
+and
+                       y ≤ [qB (ϑ + νMz ) + MQ ϵop Mz ]A ≤ ϑA/2.
+The last inequality uses qB ≤ 1/8, 0 ≤ νMz ≤ ϑ and MQ ϵop Mz ≤ ϑ/4. Together with
+ϱ < 1/2, these give y ≤ ϑx. These are precisely the finite residual and cone-conversion
+margins; the old residual was not assumed to lie in the new kernel. Each full block
+therefore preserves the new cone and multiplies its amplitude by at least eλc B (1 − ϱ).
+     For the terminal 0 ≤ u ≤ B, rebase once more to c = σN . The same bounds give
+ℓc (z) ≥ 3A/4 and ∥Qc z∥ ≤ 2ϑA. Consequently,
+                       e−λc u Oϕ (Pc (u)z)/A ≥ 3j∗ /4 − 2Hobs Cgap ϑ.
+The perturbation changes this by at most Hobs ϵop Mz ≤ j∗ /8. Since 16Hobs Cgap ϑ ≤ j∗ ,
+the result is at least j∗ /2. Combine entrance, all N − 1 intermediate full blocks and
+this terminal estimate to obtain (25.10), with c∗ = a∗ j∗ /4. The induction is empty for
+N = 1 and the estimate includes u = 0. This proves Lemma 25.4.
+
+25.3     Actual source restart and comparison with the original
+         point
+Lemma 25.5 (The actual raw restart and source products). Fix δ, B, N and let L = δ −1 ,
+Lext = (N + 1)B ≥ L. On this global fast horizon define Aglob = gδ AR (Wfast ). Its actual
+physical flow obeys
+                                           0
+                     Pglob (mB + u, mB) = Dm (u),         0 ≤ u ≤ B.                   (25.11)
+
+                                            173
+
+===== PHYSICAL PAGE 174 =====
+The analogous identity holds with the deterministic mean Vδt added globally and local
+drivers Xm + Hm . Their finite block products, including the last remainder τ , are actual
+source limits in L2 , at this fixed δ, N .
+Proof. Take one retaining slow source Yϵ,η on the extension of the given W constructed
+in Section 20. Define the actual fast and local noises by
+
+                      Yfast (f ) = Yϵ,η (Tδ,0 f ),         Ym (f ) = Yϵ,η (Tδ,m f ).
+
+The pullback isometry and (20.12) give source and residual variance bounds by ∥f ∥2HW .
+The residual tends to zero on each transformed smooth compact test at fixed δ, m. Joint
+Gaussianity is retained. Proposition 20.2 therefore gives the actual Lp C θ first-driver
+limits on [0, Lext ] and on [0, B], including both constant columns.
+    Their pointfields are Yfast (u, x) = δ a/2 Yϵ,η (δu, x) and Ym (u, x) = Yfast (mB + u, x).
+Indeed, these follow by change of variables in their test integrals. The temporal law
+is Kη/δ because δ a Kη (δr) = Kη/δ (r); the spatial heat law and all joint width rules are
+unchanged. They are continuous in time and smooth in space. Their ordinary primitives
+equal their Gaussian-transfer drivers: their actual matrix entries are Ym (hR ), by the
+indicator approximation used in (25.6) and the point-test integral identity. Total finite
+propagation extends this identity to both constant columns. This does not assume a
+separately chosen retaining extension automatically commutes with time dilation.
+    Changing the ordinary source integration variable and composing the free groups
+gives the exact identity on F
+
+               SF (mB) Asrc                    src                        src
+                         [︁                               ]︁
+                            glob (mB + u) − Aglob (mB) SF (−mB) = Xm (u).
+
+No physical mask is commuted through a wave group. Restriction, difference and con-
+jugation are bounded maps on these fixed-horizon C θ spaces. Passing the actual source
+limits gives the same identity for Aglob , Xm . For the finitely many m, a convergent
+subsequence or rational times and path continuity gives simultaneous identities in u.
+Conjugation norms need only be finite at this fixed δ.
+    Conjugate the global interaction Young equation on [mB, mB + u] by SF (mB).
+Bounded linearity of its Riemann sums and that raw identity give the local equation
+driven by Xm . Uniqueness identifies it with UXm , proving (25.11). The ordinary de-
+terministic primitive for Vδt has the identical cocycle with local Hm . Composition now
+identifies the full product, with terminal τ .
+    For completeness, source convergence of these finite products requires no growing-
+product stability assertion. At fixed δ, N let C ≥ 1 be the maximum norm of their
+source and raw factors, and let esrc be the maximum factor difference. The parent Young
+convergence gives every finite moment of C uniformly in source widths and esrc → 0 in
+every finite Lp . If d(n) is the difference of the first n ordered products, then
+
+                         d(n + 1) ≤ Cd(n) + C n esrc ,               d(0) = 0.
+
+Extend both finite sequences by identities so the recurrence holds for all natural n. The
+finite error-accumulation estimate gives d(N + 1) ≤ (N + 1)C N +1 esrc . Hölder, using C
+
+                                                     174
+
+===== PHYSICAL PAGE 175 =====
+in L4(N +1) and the error in L4 , proves L2 convergence. This is only a fixed-δ source
+limit. Shifted source products may use the fixed raw mean plus the regularized noise;
+no finite-source Cameron mean is substituted. This proves Lemma 25.5.
+Proposition 25.6 (The square observable and canonical comparison). Define the signed
+noise-only and shifted averages
+             0      0               0                            +      +               +
+  Uδ,B = Oϕ DN (τ )DN −1 (B) · · · D0 (B)e0 ,         Yδ,B = Oϕ DN (τ )DN −1 (B) · · · D0 (B)e0 .
+
+They have all finite unweighted moments, and
+                              [︂  √              ]︂
+                       2
+                    EUδ,B = E e−Z/ δ−v/(2δ) Yδ,B
+                                              2
+                                                    ,                                       (25.12)
+                       2
+                     EUδ,B ≤ E|Vδ (1, 0)|2 = E|u(T, 0)|2 ,          δ = T −κ .              (25.13)
+The variance v in the density is the original slow raw variance.
+Proof. On all of Bδ put
+                       jδ (x) = |Oϕ DxN (τ )DxN −1 (B) · · · Dx0 (B)e0 |2 .
+The everywhere-defined continuous Young map, fixed-time bounded free groups, finite
+products and bounded Oϕ make jδ continuous and nonnegative on the whole input
+space. Proposition 25.2 proves (25.12). Finite products of the local Young flows have
+every finite moment by their Gaussian norm bounds and Hölder, at fixed δ, N . The
+Gaussian identity itself did not require prior integrability of jδ .
+    To apply the masked comparison at the actual amplitude, put Γδ = gδ2 Γ and W ′ =
+gδ Wfast . This is a nonzero member of the same admissible covariance class, with un-
+changed degree α and temporal parameter a. Its actual first driver is gδ times the
+original one: the raw matrix forms are linear in noise, and basis-independent Gaussian
+transfer and the bounded F extension retain both constant columns. The nth source
+chain is multiplied by gδn . Thus this is exactly the noise-only model at that amplitude.
+    Lemma 25.5 and the ordinary source identity identify Uδ,B as the L2 limit of the tested
+masked ordinary solution driven by W ′ at fast time L = 1/δ. Its sources gδ Yfast have
+the correct law, contraction and raw test limit. Apply
+                                                    ∫︁    Proposition 21.3, or equivalently
+(22.17), to Γδ and this actual source limit. Since ϕ = 1,
+                                     2
+                                   EUδ,B ≤ E|uΓδ (L, 0)|2 .
+This application describes the same noise-only fast law; it changes neither the original
+slow Ψ, Z nor v in the density.
+    The ordinary change from fast u to slow t = δu, with phase (V, δVt ), transforms the
+unmasked source equation into
+                            √ the regularized version of (24.1), with slow terminal time
+one. Indeed, gδ Yfast (u) = δ Yϵ,η (δu), and its fast cutoff is η/δ. The canonical fixed-
+order and absolutely convergent series construction passes this law identity at fixed δ
+to the raw moment, preserving every mixed and self-pairing term. Lemma 24.1 gives
+the final equality in (25.13). The physical scale rT = T δ is distinct from the fixed mask
+radius R. The mask need not contain the growing backward cone: the comparison is
+a moment inequality, not equality of masked and full fields. All source limits preceded
+this large-time comparison. This proves Proposition 25.6.
+
+                                                175
+
+===== PHYSICAL PAGE 176 =====
+Proposition 25.7 (Original point lower rate at the raw half-cost). For every original
+positive Ψ and eligible fixed mask R chosen above, and every fixed x ∈ Rd ,
+                                                   ∫︂ 1
+                               −κ             2                vΨ
+                      lim inf T log E|u(T, x)| ≥ 2      λs ds − .             (25.14)
+                       T →∞                          0          2
+
+Proof. Fix erate > 0. Choose 0 < ϱ < 1/2 with log(1 − ϱ) > −erate /3, then choose the
+cone constants, including fixed B, from Lemma 25.4. For small δ the indices sm = mδB
+lie in I with adjacent gaps at most ω. Define the measurable common-space event
+
+                           Eδ = {Eop,δ ≤ ϵop } ∩ {|Z| ≤ δ −1/4 }.
+
+Lemma 25.3 and Chebyshev give P(Eδ ) → 1, because P(|Z| > δ −1/4 ) ≤ vδ 1/2 . This uses
+a union bound, with no independence from Z or between blocks.
+   On Eδ the shifted blocks meet the cone hypotheses. In particular Yδ,B > 0, and
+                                                            ∑︂
+           δ log Yδ,B ≥ δ log c∗ + δ(N − 1) log(1 − ϱ) + δB    λsm + δτ λsN .
+                                                              m<N
+
+The last two terms form the left Riemann sum for IR on the partition including its final
+interval of length δτ , with mesh at most δB. The actual rate is Lipschitz, so its error is
+at most CR δB. Also 0 ≤ δ(N − 1) ≤ 1/B ≤ 1 and hence the logarithmic loss is at least
+log(1 − ϱ) > −erate /3. For sufficiently small δ, the Riemann error and δ| log c∗ | are each
+at most erate /3. Thus Yδ,B ≥ exp((IR − erate )/δ) on Eδ , including the N = 1 and τ = 0
+cases of the cone estimate.                                                            √
+    The square integrand in (25.12) is nonnegative. Restrict it to Eδ , where −Z/ δ ≥
+−δ −3/4 . With pδ = P(Eδ ) this gives
+                                      (︃                            )︃
+                          2              2IR − 2erate − v/2    −3/4
+                       EUδ,B ≥ pδ exp                       −δ         .
+                                                 δ
+
+For small
+    −1/4
+          √ δ, pδ 1/4≥ 1/2 and δ log pδ → 0. The normalized moderate penalty is
+δ(δ      / δ) = δ → 0. Taking logarithms and lower limits at this fixed erate and its
+associated B gives
+                                         2
+                         lim inf δ log EUδ,B ≥ 2IR − 2erate − v/2.
+                            δ↓0
+
+By (25.13), the B-independent original point rate is at least this right side for every
+fixed erate . Only now let erate ↓ 0. The bijection δ = T −κ covers all sufficiently large T .
+    Finally, spatial translation of all positive-width vertices preserves the original noise
+law, Green kernels and constant initial data. The fixed-order L2 and absolute-series
+limits preserve equality of point second moments. Hence zero can be replaced by every
+fixed x in (25.14). Every control and mask were fixed before asymptotics; a supremum
+over them may follow their individual inequalities. This proves Proposition 25.7.
+
+
+
+
+                                             176
+
+===== PHYSICAL PAGE 177 =====
+26      The unmasked Rayleigh rate and positive-
+        control scores
+Fix a nonzero covariance satisfying Hypothesis 1.1, including its original amplitude, and
+set a = α0 . Define the full class
+                    Cpos = {Ψ ∈ Cc∞ ((0, 1) × Rd ; R) : Ψ ≥ 0, Ψ ̸= 0}.             (26.1)
+                                                                  −1/(1−z 2 )
+It includes nonseparable tests. ∏︁ It is nonempty: if b(z) = e            on |z| < 1 and
+zero otherwise, then b(4s − 2) dj=1 b(xj ) belongs to this class. All boundary derivatives
+vanish because exponential decay dominates every power of (1−z 2 )−1 . For each Ψ retain
+the original mean hΨ,s and raw variance vΨ = EW (Ψ)2 from (23.20)–(23.21). Neither
+the test nor its covariance is changed by a physical mask. We write hs when Ψ is fixed.
+
+26.1     Global bounds and the unmasked spectral bottom
+Lemma 26.1 (Gaussian envelope for the original covariance). For the normalized heat
+                               2
+kernel pϵ (x) = (2πϵ)−d/2 e−|x| /(2ϵ) ,
+                   ∫︂
+                                 2
+    (Γ ∗ pϵ )(x) = eiξ·x e−ϵ|ξ| /2 µ( dξ), 0 ≤ (Γ ∗ pϵ )(x) ≤ (Γ ∗ pϵ )(0) < ∞. (26.2)
+
+The value at zero is strictly positive.
+Proof. A positive tempered Radon measure has polynomial ball growth. Indeed, evalu-
+ate its tempered bound on a nonnegative smooth cutoff equal to one on B1 , dilated by
+R ≥ 1. Its finitely many Schwartz seminorms are bounded by CRN , so positivity gives
+a ball-mass bound CRN . Summing dyadic annuli shows that (1 + |x|)−L is integrable
+for L > N . Apply this separately to Γ and µ. Gaussian weights are therefore integrable
+against both measures. The classical convolution on the left is finite and smooth locally
+in x: on compact x sets its translated Gaussian derivatives are bounded by any fixed
+sufficiently fast polynomial weight in the integration variable.
+    Pair the convolution with a Schwartz test φ. Absolute Fubini is justified by these
+                                    ∫︁ of Γ with pϵ ∗ φ. Applying
+weights. The resulting pairing is that
+                                                           2
+                                                                   the spectral convention
+in Hypothesis 1.1 and the identity pϵ (y)e−iξ·y dy = e−ϵ|ξ| /2 gives exactly the right side
+of (26.2) as a distribution. The heat kernel is even, so either Fourier sign gives that
+same Gaussian multiplier. Its spectral integral is absolutely finite and continuous in
+x by dominated convergence. Thus equality of the two continuous distributions gives
+equality at every x, without an extra normalization factor. The physical convolution is
+nonnegative. Evenness of µ makes the spectral integral real, and its absolute value is
+bounded by its total Gaussian mass, the value at zero. Finally Γ ̸= 0 and pϵ > 0 give
+strict positivity there. This proves Lemma 26.1.
+Lemma 26.2 (Global regularity of the original mean). Every mixed time and space
+derivative of hs is globally bounded in space, uniformly on compact time intervals. In
+particular, for I = [0, 1] there are finite constants M, CΨ such that
+                0 ≤ hs (x) ≤ M,       ∥hs − ht ∥∞ ≤ CΨ |s − t|,      s, t ∈ I.      (26.3)
+
+                                            177
+
+===== PHYSICAL PAGE 178 =====
+Proof. Extend Ψ by zero in time; its compact support inside (0, 1) makes this a smooth
+extension. For any mixed derivative DΨ, a fixed ϵ > 0 and compactness of its common
+spatial support give |DΨ(t, x)| ≤ CD pϵ (x) for all t, x. Here the heat kernel has a positive
+minimum on that support. Lemma 26.1 consequently bounds Γ ∗ |DΨ(t, ·)| uniformly in
+t, x. Ordinary local differentiation against the Radon measure gives the corresponding
+derivatives of the convolution. After the change r = s − t,
+                                   ∫︂
+                          hs (x) =    |r|−a (Γ ∗ Ψ(s − r, ·))(x) dr.
+                                           R
+
+For s in a compact interval the relevant r lie in a fixed bounded interval. The preceding
+global bound times |r|−a is integrable since a < 1. Every derivative thus falls on the
+smooth test and passes through the integral by dominated convergence, with the claimed
+global spatial bounds. Nonnegativity follows from positive kernels. The bounded time
+derivative proves the Lipschitz estimate. No directional decay of the mean has been
+inferred. This proves Lemma 26.2.
+
+Proposition 26.3 (The actual unmasked Rayleigh rate). On complex L2 (Rd ), the op-
+erator Hs = −∆ −∫︁ hs is self-adjoint on H 2 , with actual form domain H 1 and form
+qs (f ) = ∥∇f ∥22 − √hs |f |2 . Its spectral bottom Es is uniformly negative on I. The
+positive rate λΨ,s = −Es satisfies
+                                             (︃∫︂               )︃
+                            2                         2       2
+                          λΨ,s =     sup          hs f − ∥∇f ∥2 .                 (26.4)
+                                        f ∈H 1 (Rd ;R)
+                                           ∥f ∥2 =1
+
+                                         ∫︁ 1
+It is Lipschitz on I, and IΨ :=            0
+                                                λΨ,s ds is positive and finite. No eigenstate at the
+unmasked bottom is asserted.
+
+Proof. The Fourier Laplacian A = −∆ is self-adjoint on H 2 , being multiplication by |ξ|2
+with its maximal domain. Multiplication Bs = −hs is bounded self-adjoint with norm
+at most M . Thus Hs = A + Bs is densely defined, symmetric and closed on H 2 ; the two
+graph norms are equivalent under a bounded perturbation. For real b > M ,
+
+                              Hs − ib = (I + Bs (A − ib)−1 )(A − ib).
+
+The first factor has a Neumann inverse because ∥Bs (A − ib)−1 ∥ ≤ M/b < 1, and the
+same holds with +ib. To check self-adjointness directly, for u ∈ D(Hs∗ ) solve (Hs −ib)v =
+(Hs∗ − ib)u with v ∈ D(Hs ). Then u − v ∈ ker(Hs∗ − ib) = Ran(Hs + ib)⊥ = {0}. Hence
+D(Hs∗ ) = D(Hs ).
+    Set cshift = 1 + M and Js = Hs + cshift ≥ 1. Integration by parts on H 2 gives
+
+           ∥Js1/2 f ∥22 = qs (f ) + cshift ∥f ∥22 ,        ∥f ∥2H 1 ≤ ∥Js1/2 f ∥22 ≤ cshift ∥f ∥2H 1 .
+
+Spectral cutoffs 1[1,n] (Js ) show that H 2 = D(Js ) is a core for the half-power norm;
+Fourier cutoffs give its density in H 1 . Completion in the equivalent norms identifies
+
+                                                         178
+
+===== PHYSICAL PAGE 179 =====
+    1/2
+D(Js ) and H 1 as actual L2 subspaces, since both norms dominate L2 . This proves the
+stated form domain.
+    The spectral lower bound gives one direction of the Rayleigh identity. For the reverse,
+nonzero spectral projections in [Es , Es + ϵ] give unit H 2 vectors with Rayleigh values at
+most Es + ϵ. The bottom is finite because the operator is bounded below and has finite
+Rayleigh tests. Let ϵ ↓ 0. Real tests give the same infimum: qs (u + iv) = qs (u) + qs (v),
+so the quotient is the norm-weighted average of the nonzero real quotients. This proves
+the Rayleigh identity with −Es on the left. The following negative floor justifies writing
+that value as λ2Ψ,s in (26.4).
+    Proposition 23.7 supplies, for this original Ψ, one unit compactly supported w and a
+finite plateau mask with a common negative margin ϵ0 > 0. Its trial has support in B2L ;
+choose its plateau radius R0 ≥ 2L. The unmasked form        √ on this same w is no larger.
+                                            √
+Consequently −M ≤ Es ≤ −ϵ0 < 0, and ϵ0 ≤ λΨ,s ≤ M . Comparing identical unit
+form tests gives |Es − Et | ≤ ∥hs − ht ∥∞ and therefore
+                                                  CΨ
+                                 |λΨ,s − λΨ,t | ≤ √ |s − t|.
+                                                 2 ϵ0
+This also proves positivity and finiteness of IΨ . No compact-potential spectral theorem
+was applied to Hs . This proves Proposition 26.3.
+
+26.2      Removing masks from the numerical lower rate
+Proposition 26.4 (Monotone rates and the original point moment). There is an in-
+creasing family of admissible radial masks mR tending to one, for which the compact
+ground rates satisfy λR,s ↑ λΨ,s uniformly on I as R → ∞, with the compact ground
+statements used for R ≥ R0 (Ψ). For the original canonical solution and any fixed x,
+                                                             vΨ
+                         lim inf T −κ log E|u(T, x)|2 ≥ 2IΨ − .                  (26.5)
+                          T →∞                                2
+Proof. Put F (t) = e−1/t for t > 0 and zero otherwise, and define
+                                 F (2 − r)
+                  χ(r) =                         ,      mR (x) = χ(|x|/R).
+                           F (2 − r) + F (r − 1)
+The denominator is positive. The numerator decreases and the second denominator term
+increases; thus χ is nonincreasing, equals one on r ≤ 1, and zero on r ≥ 2. Flatness
+of F at zero gives smoothness. Since χ is constant near zero, mR is smooth also at the
+spatial origin. These even [0, 1] masks increase pointwise to one.
+    Choose R0 so the preceding common trial lies in the plateau. Every R ≥ R0 has
+the same negative margin. For each fixed R, the compact-family theorem applies to
+mR hs . Its real Rayleigh formula follows from the same real/complex
+                                                          √              quotient argument
+as (26.4). The rates are continuous, positive, at most M     ∫︁ and monotone∫︁ in2 R. For
+                             1                                         2
+every fixed real unit f ∈ H , dominated convergence gives mR hs f → hs f . Hence
+                                              (︃∫︂                   )︃
+                   2
+              sup λR,s =       sup        sup      mR hs f − ∥∇f ∥2 = λ2Ψ,s .
+                                                          2        2
+           R≥R0         ∥f ∥2 =1, f ∈H 1 (Rd ;R) R≥R0
+
+
+                                                 179
+
+===== PHYSICAL PAGE 180 =====
+Only two numerical suprema were interchanged. Positive square roots give the pointwise
+rate convergence. For Rn = R0 + n and ϵ > 0, the increasing open sets {s : λΨ,s −
+λRn ,s < ϵ} cover compact I. A finite subcover lies in the largest one,
+                                                                      ∫︁ proving uniform
+convergence. Monotonicity extends it to all real R → ∞. Therefore I λR,s ds ↑ IΨ .
+    At each fixed R use this very same mask in ∫︁the driver and mean when applying
+Proposition 25.7. It gives the lower bound with 2 I λR,s ds − vΨ /2 for the same original
+point liminf. Taking the numerical supremum over these individual bounds proves (26.5).
+There is no R(T ), unmasked noisy wave, uniform-in-mask Gaussian estimate or exchange
+of source and time limits. This proves Proposition 26.4.
+
+26.3     Full-class dilation and finite positive scores
+Lemma 26.5 (Radon and Rayleigh dilation). For r > 0 the map
+                                (Dr Ψ)(s, x) = rd+2−α Ψ(s, rx)                           (26.6)
+is a bijection of Cpos , with inverse D1/r . With the same original covariance,
+ hDr Ψ,s (x) = r2 hΨ,s (rx),     vDr Ψ = r4−α vΨ ,      λDr Ψ,s = rλΨ,s ,   IDr Ψ = rIΨ . (26.7)
+Proof. Positive dilation preserves the full smooth positive nonzero class; multiplication
+of its amplitude powers gives the stated inverse. Homogeneity of the physical Radon
+measure gives, for every nonnegative measurable G,
+                          ∫︂                      ∫︂
+                                              α−d
+                             G(ry)Γ( dy) = r         G(z)Γ( dz).
+
+Indeed, its left pushforward measure on a Borel set A is Γ(A/r) = rα−d Γ(A). Pos-
+itive Tonelli applies this identity inside the temporal convolution, giving hDr Ψ,s (x) =
+r2 hΨ,s (rx). Now use the Lebesgue substitution z = rx in the raw pairing:
+                               vDr Ψ = rd+2−α r2 r−d vΨ = r4−α vΨ .
+This distinguishes the Radon pushforward from the spatial volume factor; it includes
+singular covariances and white noise.
+     The map Ur f (x) = rd/2 f (rx) is a unitary bijection on real L2 , preserving
+                                                                            ∫︁     H 1 , H 2 as
+sets
+   ∫︁ under its inverse. Weak derivatives give ∥∇Ur f ∥22 = r2 ∥∇f ∥22 and hDr Ψ,s (Ur f )2 =
+r2 hΨ,s f 2 . The real Rayleigh bijection proves the squared rate identity; the rates are
+positive, so their square roots and integrals give (26.7). On H 2 this is also HDr Ψ,s Ur =
+r2 Ur HΨ,s . Time has not been rescaled. For compact masks the corresponding identity
+uses mR (rx) = mR/r (x); a fixed mask radius is not invariant. This proves Lemma 26.5.
+
+Proposition 26.6 (Positive finite intrinsic lower scores). For c > 0, the score set {cIΨ −
+vΨ /2 : Ψ ∈ Cpos } is nonempty and bounded above. Its finite real supremum Scpos is positive
+and satisfies
+                          Scpos = c(4−α)/(3−α) S1pos , Q2 ≥ S2pos ,                  (26.8)
+where Q2 is the original point liminf. The label-one value is an auxiliary variational
+score; no actual first-moment or source-constant identification is asserted.
+
+                                               180
+
+===== PHYSICAL PAGE 181 =====
+Proof. Write k = 3 − α > 0, q = 4 − α = k + 1 and m = q/k > 1. Fix one Ψ0
+from the nonempty class and put I0 = IΨ0 > 0, v0 = vΨ0 > 0. Positivity of the latter
+is Lemma 23.6. For r0 = (I0 /v0 )1/k > 0, which need not be less than one, the exact
+real-power identity gives
+
+                    IDr0 Ψ0 − vDr0 Ψ0 /2 = r0 I0 − r0q v0 /2 = r0 I0 /2 > 0.
+
+This positive score belongs to an actual smooth test.
+   For c > 0 put rc = c1/k and Kc = cm > 0. Lemma 26.5 and the exact scalar powers
+give, for every Ψ,
+                          cIDrc Ψ − vDrc Ψ /2 = Kc (IΨ − vΨ /2).             (26.9)
+Since Drc is a bijection of the entire class, the whole c-score set is Kc times the whole
+label-one score set.
+   We prove boundedness before taking finite-real suprema. The independent existing
+Theorem 13.8, for the same canonical solution, gives
+                                                 κ
+                 E|u(T, 0)|2 ≤ e(T + 2)d eCup T ,        T ≥ 1,     Cup < ∞.
+
+Its prefactor is negligible: choose ϵ = κ/2 > 0, use log T ≤ (T ϵ − 1)/ϵ and log(T + 2) ≤
+log T + log 3 for T ≥ 1, and divide by T κ . Thus the original point limsup is at most
+Cup . One fixed test/mask lower bound gives a finite lower bound for Q2 , so Q2 is
+finite. By (26.5) every label-two score is at most this same Q2 ≤ Cup , uniformly in
+Ψ. Equation (26.9) at c = 2 consequently bounds all label-one scores by Cup /K2 . The
+nonempty set has a finite real supremum S1pos > 0 by the positive test above.
+    For general c, set equality and Kc > 0 show that Kc S1pos is the supremum: it is
+an upper bound, and every smaller number is exceeded by Kc times a label-one score
+within the corresponding positive distance of its supremum. This proves finiteness,
+positivity and the first identity in (26.8). Taking the numerical supremum of the label-
+two lower bounds proves the second. Although 2m > 2, the resulting S2pos > 2S1pos is
+only an auxiliary-score comparison. It is not a Jensen improvement without an actual
+first-moment identification. This proves Proposition 26.6.
+   For Γ = 0, the mean, raw variance and Rayleigh rate are zero. Set all these scores to
+zero; the free canonical solution u = 1 has the corresponding zero moment rate. Strict
+positivity above is restricted to nonzero covariance. Matching an upper variational rate
+and identifying an exact original-point limit remain later steps.
+
+
+27     The temporal equilibrium density
+                                    ∫︁ ∞                               ∫︁ 1
+We use Euler’s function ΓE (x) = 0 ux−1 e−u du, x > 0, and Beta(x, y) = 0 tx−1 (1 −
+t)y−1 dt, x, y > 0. Both integrals are positive and finite.
+
+
+
+
+                                             181
+
+===== PHYSICAL PAGE 182 =====
+Lemma 27.1 (Gamma and Beta identities). For positive arguments,
+
+                            ΓE (x + 1) = xΓE (x),
+                                         ΓE (x)ΓE (y)
+                            Beta(x, y) =              ,
+                                          ΓE (x + y)
+                                         22x−1 ΓE (x)ΓE (x + 1/2)
+                               ΓE (2x) =            √             .
+                                                      π
+Proof. Integration by parts gives the recurrence, with vanishing boundary terms. In the
+positive product Gamma integral, use (u, v) = (Rt, R(1 − t)), with Jacobian R; Tonelli
+gives the Beta–Gamma identity. For the last identity, symmetry, then  ∫︁ t−z=2 (1 + v)/2
+                                                                                    √
+      2                            1−2x
+and v = w, give Beta(x, x) = 2          Beta(1/2, x). Also ΓE (1/2) = R e dz = π:
+the substitution u = z 2 gives the first equality,
+                                               ∫︁ ∞ and2 squaring the positive Gaussian
+integral and using polar coordinates gives 2π 0 re−r dr = π. Substituting these into
+the Beta–Gamma identity proves duplication. This proves Lemma 27.1.
+Lemma 27.2 (Exact potential and mass). For 0 < a < 1 put r = (1 − a)/2 and, for
+0 < t < 1,
+                                      [t(1 − t)]−r
+                           fa (t) =                  .                   (27.1)
+                                    ΓE (r)ΓE (1 − r)
+This positive function belongs to L1 (0, 1) ∩ L2 (0, 1), and
+     ∫︂ 1
+          |s − t|−a fa (t) dt = 1                                     for every s ∈ [0, 1], (27.2)
+       0
+               ∫︂ 1
+                                     ΓE ((1 + a)/2)
+       Ma :=        fa (t) dt =                             > 0.                            (27.3)
+                 0              ΓE (1 + a)ΓE ((1 − a)/2)
+Proof. The positive binomial series (1 − z)−p =                          n
+                                                            ∑︁
+                                                               n≥0 (p)n z /n!, p > 0, 0 ≤ z < 1,
+follows directly as follows. Its coefficient ratio gives uniform convergence on compact
+subintervals, including for its derivative. Termwise differentiation gives (1 − z)y ′ = py,
+y(0) = 1; hence (1 − z)p y is constant one. Here (p)0 = 1, (p)n = p(p + 1) · · · (p + n − 1).
+All terms used below are nonnegative, so Tonelli applies.
+    For 0 < s < 1 split the integral of |s − t|2r−1 [t(1 − t)]−r into left and right parts. In
+the left part, t = su gives
+                                      ∫︂ 1
+                            L(s) = sr
+                                           (1 − u)2r−1 u−r (1 − su)−r du
+                                     0
+                                                     ∑︂ (r)n (1 − r)n sn
+                              = Beta(1 − r, 2r)sr                          .
+                                                     n≥0
+                                                           (1 + r)n n!
+
+The Beta ratio follows from the Gamma recurrence. Since (r)n /(1 + r)n = r/(r + n),
+expanding the incomplete Beta integral gives
+                                                         ∫︂ s
+        L(s) = r Beta(1 − r, 2r)Bs (r, r),   Bs (r, r) =      ur−1 (1 − u)r−1 du.
+                                                                0
+
+                                               182
+
+===== PHYSICAL PAGE 183 =====
+Reflection makes the right part L(1 − s), while symmetry gives Bs (r, r) + B1−s (r, r) =
+Beta(r, r). The full integral is therefore r Beta(1 − r, 2r) Beta(r, r) = ΓE (r)ΓE (1 − r).
+All integrals are finite because −r > −1 and 2r − 1 > −1. At s = 0 the integral is
+directly Beta(r, 1 − r) = ΓE (r)ΓE (1 − r); s = 1 follows by reflection. This proves (27.2),
+including the endpoints without a limiting argument there.
+    Integrability and square integrability follow from −r > −1 and −2r = a − 1 > −1.
+Finally,
+                             Beta(1 − r, 1 − r)         ΓE (1 − r)
+                       Ma =                      =                    ,
+                              ΓE (r)ΓE (1 − r)      ΓE (2 − 2r)ΓE (r)
+which is (27.3). Its time mass has not been renormalized. This proves Lemma 27.2.
+
+
+28      Physical spatial pairings and the full occupation
+        class
+Retain a nonzero original covariance from Hypothesis 1.1 with its actual amplitude. Set
+a = α0 , k = 3 − α > 1, q = 4 − α = k + 1 and D = q − 2a > 0. The scalar D is fixed. All
+profiles are real. The original positive temporal exponent and threshold imply α < 2;
+this is the strict inequality used in the scalar powers and concavity. The finite positive
+score S1pos is that of Proposition 26.6.
+
+Lemma 28.1 (The physical two-point integral). The positive measure ν( dx, dy) =
+dx Γ( dy) is sigma-finite. For nonnegative functions define
+                                      ∫︂
+                           BΓ (f, h) = f (x)h(x − y)ν( dx, dy)            (28.1)
+
+initially as an extended nonnegative integral, using finite Borel representatives of
+Lebesgue classes. Its value is representative independent. Lebesgue-a.e. convergence
+transfers to ν-a.e. convergence at both positions x and x − y.
+
+Proof. Local finiteness of Γ gives sigma-finiteness on exhausting balls, and Lebesgue
+measure is sigma-finite. If N is Borel and Lebesgue null, Tonelli applied first in x gives
+ν{x ∈ N } = 0 and ν{x − y ∈ N } = 0, because every fixed translate of N is null.
+An arbitrary Lebesgue null set has a Borel null superset. Thus arbitrary versions are
+measurable in the ν completion with the same value, and the same observation applies to
+the exceptional sets of a.e. convergence. Signed pairings will be used only after absolute
+convergence. This proves Lemma 28.1.
+    Put Asp (g) = BΓ (g 2 , g 2 ) and b(g) = ∥∇g∥22 on H 1 ; initially Asp is used only for smooth
+compact profiles before the extension below. For smooth compact z, write Uz = Γ ∗ z in
+its usual pointwise sense.
+
+
+
+
+                                               183
+
+===== PHYSICAL PAGE 184 =====
+Lemma 28.2 (Actual smooth temporal controls). For every nonnegative nonzero z ∈
+Cc∞ (Rd ), let                 (︃ ∫︂            )︃
+                      λz (c)2 =       sup         c    Uz g 2 − b(g) ,       c > 0.
+                                  g∈H 1 (Rd ;R)
+                                    ∥g∥2 =1
+
+This is positive and finite, and λz is Lipschitz on every compact positive c interval. With
+the exact Ma in (27.3),
+                                                    Ma
+                                   S1pos ≥ λz (1) −    BΓ (z, z).                               (28.2)
+                                                    2
+                                                                                            ∫︁ 1
+Proof. Choose nonnegative nonzero f ∈ Cc∞ (0, 1) and s0 = 1/2. Let kf (s0 ) = 0 |s0 −
+t|−a f (t) dt > 0. The actual smooth test Ψ(t, x) = cf (t)z(x)/kf (s0 ) has mean cUz at
+s0 . Proposition 26.3 gives boundedness of this potential, the displayed real Rayleigh
+formula, and a positive rate for every c > 0. Comparing identical unit tests makes
+λz (c)2 Lipschitz with constant ∥Uz ∥∞ . On a positive compact interval its rate has a
+positive floor by monotonicity, giving the square-root Lipschitz bound.
+    Use the nonincreasing smooth cutoff χ constructed in the proof of Proposition 26.4.
+For integers n ≥ 4, set on (0, 1)
+                                                                  ∫︂ 1
+           fn (t) = fa (t)χ(1/(nt))χ(1/(n(1 − t))),      kn (s) =      |s − t|−a fn (t) dt.
+                                                                         0
+
+Extend fn by zero. It is smooth compact, vanishes near both endpoints, is nonzero,
+and increases to fa . Thus Ψn = fn ⊗ z is an actual positive smooth control. Monotone
+convergence and (27.2) give kn (s) ↑ 1 for every s ∈ ∫︁[0, 1]. Since the kernel is at least one
+                                                            1
+on the unit square off its null diagonal, 0 < c0 := 0 f4 ≤ kn (s) ≤ 1. The actual mean
+is kn (s)Uz ; hence its actual rate is λz (kn (s)), converging to λz (1) and bounded by that
+finite number. Dominated convergence gives IΨn → λz (1).
+    The raw cost is exactly the nonnegative Tonelli pairing
+                                                ∫︂ 1
+                              vΨn = BΓ (z, z)        fn (s)kn (s) ds.
+                                                       0
+
+Its time integrand increases to fa , so the cost tends to Ma BΓ (z, z). The spatial factor
+is finite and positive: its smooth compact autocorrelation is positive near zero, and
+homogeneity scales any origin-centered ball of positive Γ mass to every other positive
+radius. Such a ball exists by exhaustion. Take the limit of the individual inequalities
+S1pos ≥ IΨn − vΨn /2. The score differences need not increase. No control depends
+on original large time and no rough stochastic evolution has been used. This proves
+Lemma 28.2.
+Proposition 28.3 (The finite smooth spatial ratio). For real unit g ∈ Cc∞ (Rd ) put
+R(g) = Asp (g)/b(g)α/2 . Its supremum R0 over these profiles is a positive finite real
+number, and
+                                                   ]︃1/k
+                                         R(g)αα/2
+                                      [︃
+                                pos
+                               S1 ≥ k                    .                      (28.3)
+                                         8Ma q q/2
+
+                                                      184
+
+===== PHYSICAL PAGE 185 =====
+Proof. The gradient energy b(g) is positive: a nonzero L2 function with zero weak gra-
+dient would have Fourier transform supported only at zero, and hence would vanish. Its
+square is nonnegative nonzero smooth compact, so the autocorrelation argument in the
+preceding proof gives 0 < A := Asp (g) < ∞. With Uℓ g(x) = ℓd/2 g(ℓx), the physical
+changes of variables give
+
+                              Asp (Uℓ g) = ℓα A,         b(Uℓ g) = ℓ2 b(g).                   (28.4)
+
+The factors in the first identity are ℓ2d from the two squares, ℓ−d from dx, and ℓα−d
+from the Radon pushforward.
+   For θ, ℓ > 0 choose the actual smooth control z = θ(Uℓ g)2 . The Rayleigh test Uℓ g
+gives λz (1)2 ≥ θℓα A − ℓ2 b, while BΓ (z, z) = θ2 ℓα A. For any L > 0, put u = α/q > 0 and
+choose
+                            ℓ2 = uL2 /b,      θ = (1 + u)L2 /(ℓα A).
+The radicand is L2 . Lemma 28.2 consequently gives
+
+                                                           Ma (1 + u)2
+                          S1pos ≥ L − CLq ,         C=                 > 0.
+                                                           2R(g)uα/2
+
+Its maximum occurs at Lk = 1/(qC) and is (k/q)(qC)−1/k . Since 1 + u = 4/q, 1/(q q C) =
+R(g)αα/2 /(8Ma q q/2 ), proving (28.3). The already finite S1pos bounds every ratio by
+8Ma q q/2 (S1pos /k)k /αα/2 . A normalized compact bump supplies a positive ratio. This
+proves positivity and finiteness of R0 before any rough spatial extension is invoked. This
+proves Proposition 28.3.
+
+Proposition 28.4 (The physical four-linear extension). For real f ∈ H 1 (Rd ) define
+             1−α/4      α/4
+N (f ) = ∥f ∥2     ∥∇f ∥2 . Every physical square pairing is finite and
+
+                                       Asp (f ) ≤ R0 N (f )4 ,                                (28.5)
+                                                  √︂
+                                        2   2
+                               0 ≤ BΓ (f , h ) ≤ Asp (f )Asp (h).                             (28.6)
+
+The actual signed integral C4 (f1 , f2 , f3 , f4 ) = BΓ (f1 f2 , f3 f4 ) is absolutely convergent and
+jointly continuous on (H 1 )4 , with
+                    ∫︂                                                   4
+                                                                        ∏︂
+                         |f1 (x)f2 (x)f3 (x − y)f4 (x − y)| dν ≤ R0           N (fj ).        (28.7)
+                                                                        j=1
+
+
+The ratio supremum Rsp over all real unit H 1 profiles equals R0 . Every nonzero H 1
+profile has Asp (f ) > 0.
+
+Proof. For smooth compact f , normalization in R0 proves (28.5), including f = 0. All
+exponents in N are positive and N (f ) ≤ ∥f ∥H 1 . For smooth compact signed Q, P , the
+absolute correlation is compactly supported and bounded by ∥Q∥2 ∥P ∥2 . Local finiteness
+
+
+                                                   185
+
+===== PHYSICAL PAGE 186 =====
+of Γ therefore makes its physical integral ∫︁ finite. Smooth signed covariance is positive:
+with the ordinary transform Q ˆ︁ord (ξ) = eiξ·x Q(x) dx, the model convention gives
+                           ∫︂
+               BΓ (Q, Q) = |Q    ˆ︁ord (ξ)|2 µ( dξ) ≥ 0,   Q ∈ Cc∞ (Rd ; R).
+
+Pair Γ with the smooth compact correlation to obtain this identity; rapid Fourier decay
+and tempered µ give finiteness. Evenness of Γ and (x, y) ↦→ (x − y, −y) give symmetry.
+The quadratic polynomial for Q + tP gives covariance Cauchy–Schwarz. In particular,
+for smooth real f, h,
+                          0 ≤ BΓ (f 2 , h2 ) ≤ R0 N (f )2 N (h)2 .
+The squares of signed smooth profiles are already smooth and nonnegative.
+     Smooth compact functions are dense in H 1 . Cutoffs equal to one on the radius-R
+ball, vanishing beyond 2R and with gradient at most C/R, converge by the function and
+gradient tails and the bound C∥f ∥2 /R for the extra gradient term. Mollification then
+converges in H 1 by L2 translation continuity of the function and its weak gradients. The
+space is separable through its closed isometric image f ↦→ (f, ∇f ) in L2 (Rd )d+1 .
+     For arbitrary f, h ∈ H 1 take smooth approximants converging in H 1 and along a com-
+mon subsequence Lebesgue-a.e. Lemma 28.1 transfers this convergence at both positions
+to ν-a.e. convergence. Fatou and continuity of N give BΓ (f 2 , h2 ) ≤ R0 N (f )2 N (h)2 < ∞,
+including the diagonal bound. At this stage Fatou supplies an inequality, not continuity.
+     Apply ordinary Cauchy–Schwarz under the positive measure ν to f1 (x)f3 (x − y) and
+f2 (x)f4 (x−y).
+             ∏︁ The two squared integrals are finite by the last bound; their square root is
+at most R0 j N (fj ). This proves (28.7), absolute convergence and actual multilinearity.
+Telescoping a difference one argument at a time and using N (f ) ≤ ∥f ∥H 1 proves joint
+continuity. Thus Asp and the square pairings are continuous. PSD for smooth compact
+profiles passes to finite linear combinations of H 1 squares by this continuity, and its
+two-profile Cauchy–Schwarz gives (28.6). This completes the physical pairing argument
+beyond Fatou.
+     Every real unit H 1 profile has positive gradient energy by the Fourier argument
+above. The homogeneous bound gives Rsp ≤ R0 , and smooth inclusion gives the reverse.
+Normalized smooth approximations preserve the ratio by continuity. Finally, for nonzero
+f , choose a bounded set E of finite positive measure where |f | ≥ c > 0. The correlation
+of 1E is continuous and positive near zero by L2 translation continuity. An origin-
+centered ball there has positive Γ mass, so Asp (f ) ≥ c4 BΓ (1E , 1E ) > 0. This uses a
+nonnegative integral, not an H 1 claim for 1E . Finiteness was already proved. This
+proves Proposition 28.4.
+Proposition 28.5 (The spatial energy and static lower score). Over all real unit H 1
+profiles define the own energy
+                                          (︃          )︃
+                                                 b(g)
+                             Esp = sup Asp (g) −         .
+                                  ∥g∥2 =1         2
+Then
+                                  2 − α α/(2−α) 2/(2−α)
+                          Esp =        α       Rsp      ∈ (0, ∞).                     (28.8)
+                                    2
+                                            186
+
+===== PHYSICAL PAGE 187 =====
+In particular,
+                                                                          ]︃1/k
+                                               (2z/(2 − α))(2−α)/2
+                                                  [︃
+     S1pos ≥ Ma−1/k F0 (Esp ),      F0 (z) = k                                    ,   z > 0.    (28.9)
+                                                      8q q/2
+
+The subscript in F0 labels this scalar map; the covariance retains its original temporal
+exponent a.
+
+Proof. Physical change of variables, or smooth approximation and Proposition 28.4,
+extends (28.4) to real H 1 profiles. For fixed unit g, with A, b > 0, the maximum of
+ℓα A − ℓ2 b/2 occurs at ℓ2−α = αA/b and equals
+                                   2 − α α/(2−α)
+                                        α        R(g)2/(2−α) .
+                                     2
+Dilation preserves the whole unit class and includes ℓ = 1. Taking both numerical
+suprema, then profiles with ratio tending to Rsp , proves (28.8). No optimizer is assumed.
+Smooth ratios also approach Rsp by Proposition 28.4. Pass them through (28.3) and
+substitute                                (︃       )︃(2−α)/2
+                                    α/2      2Esp
+                              Rsp α =                        .
+                                             2−α
+This gives (28.9). This proves Proposition 28.5.
+
+28.1     The kernel row and full occupation energy
+Define, for u ̸= 0,                          ∫︂ ∞
+                                      1                    2
+                           K⋆ (u) =                 e−(λ+λ /(2D))|u| λa−1 dλ,                  (28.10)
+                                    ΓE (a)    0
+
+and set K⋆ (0) = 0 for time integration.
+
+Lemma 28.6 (Exact row maximum). The kernel is even, positive off zero, locally in-
+tegrable, decreasing on (0, ∞), and K⋆ (u) ≤ |u|−a off zero. Its exact row maximum on
+[0, 1] is
+                      ∫︂ 1                         ∫︂ 1/2
+                 max       K⋆ (s − t) dt = R⋆ := 2        K⋆ (u) du ∈ (0, ∞).   (28.11)
+                 s∈[0,1]   0                              0
+
+Proof. Dropping the positive quadratic damping bounds the mixture by the Gamma
+integral |u|−a . Positivity and monotonicity
+                                      ∫︁ t   follow directly from the integrand, and a < 1
+gives local integrability. Put Φ(t) = 0 K⋆ (u) du. It is concave because its integrand is
+decreasing on positive arguments. The row is Φ(s) + Φ(1 − s) ≤ 2Φ(1/2), with equality
+at s = 1/2. The diagonal value changes no time integral. This proves Lemma 28.6.
+    Let O be the full class of ∫︁strongly H 1 (Rd ; R)-measurable fields s ↦→ gs on (0, 1) with
+                                   1
+∥gs ∥2 = 1 a.e. and T (g) = 0 b(gs ) ds < ∞. No time smoothness, common compact
+support or optimizer condition is imposed.
+
+
+                                                  187
+
+===== PHYSICAL PAGE 188 =====
+Proposition 28.7 (The full physical occupation class). The pairings (s, t) ↦→ BΓ (gs2 , gt2 )
+are measurable, representative independent and equal to their physical integrals. With
+                                ∫︂ 1 ∫︂ 1
+                       J(g) =             K⋆ (s − t)BΓ (gs2 , gt2 ) ds dt,
+                                     0   0
+
+every g ∈ O satisfies
+                              0 ≤ J(g) ≤ R⋆ Rsp T (g)α/2 < ∞.                          (28.12)
+The own energy over exactly this full class satisfies
+
+                0 < E⋆O := sup J(g) − T (g)/2 ≤ R⋆2/(2−α) Esp < ∞.
+                                (︁               )︁
+                                                                                       (28.13)
+                               g∈O
+
+
+Proof.∫︁ The map s ↦→ b(gs ) is measurable by continuity of the squared gradient norm.
+        1
+Also 0 ∥gs ∥2H 1 ds = 1 + T (g). Use a separably valued strong representative and replace
+exceptional null times by one fixed real unit compact bump. Joint measurable spatial
+representatives exist: approximate this Bochner L2 field by simple H 1 -valued functions
+with summable L2 (0, 1; H 1 ) errors, and choose measurable spatial versions for their
+countably many values. A subsequence has a measurable spacetime L2 limit, and for
+a.e. s its spatial L2 class is gs . Lemma 28.1 makes every pairing independent of the
+spatial versions. The continuous pairing map on the separable space H 1 × H 1 from
+Proposition 28.4 consequently gives a measurable function of (s, t) agreeing a.e. with
+the actual nonnegative physical integral.
+    Set F (s) = b(gs )α/4 . Equations (28.5) and (28.6) give BΓ (gs2 , gt2 ) ≤ Rsp F (s)F (t).
+                                                                   ∫︁ 1        ∫︁ 1
+Since 0 < α/2 < 1, concavity on the unit time interval yields 0 F 2 = 0 b(gs )α/2 ds ≤
+T (g)α/2 . Now use 2F (s)F (t) ≤ F (s)2 + F (t)2 and the exact row bound (28.11), whose
+column bound is the same because K⋆ is even, to obtain (28.12). Positive Tonelli is
+valid before finiteness is known. Null-time modifications affect only a product-null set,
+so they cannot change J.
+                                                                      2/(2−α)
+    The scalar maximum of R⋆ Rsp T α/2 − T /2 over T ≥ 0 is R⋆                Esp , by the same
+differentiation as (28.8). This bounds the occupation supremum from above. For pos-
+itivity take a constant-in-time
+                          ∫︁ 1 ∫︁ 1 unit compact profile and its spatial dilation Uℓ . Its J is
+J0 ℓα Asp (g), where J0 = 0 0 K⋆ (s − t) ds dt ∈ (0, ∞), while T = ℓ2 b(g). For sufficiently
+small ℓ > 0, α < 2 makes J − T /2 > 0. Thus the nonempty supremum is a positive
+finite real number. This is a comparison bound; no attaining profile or equality in it
+has been asserted. No spatial point trace or rough stochastic evolution was used. This
+proves Proposition 28.7.
+    For zero covariance all spatial pairings vanish and set Rsp = 0. The spatial and
+occupation energies are zero suprema of −b/2 and −T /2: small spatial dilations of one
+fixed unit compact profile make these energies tend to zero, with the profile constant in
+time for the latter. No zero-gradient unit state is used. The temporal identities remain
+valid, and the moment model is the free case already treated.
+
+
+
+                                             188
+
+===== PHYSICAL PAGE 189 =====
+29      The actual compact mean and Cameron block
+        map
+Retain the nonzero original covariance in Hypothesis 1.1, its amplitude, a = α0 , and
+the actual real phases E = H 1/2 × H −1/2 and F = E ⊕ R2 . Write Λ = (1 − ∆)1/2 .
+The form BΓ and constant Rsp are those of Section 28. Let Hsp be the real covariance-
+null completion of Cc∞ (Rd ) with inner product BΓ , and Ht the analogous completion of
+Cc∞ (I), I = (0, 1), with time kernel |s − t|−a . Let H = HI be the completion of smooth
+tests supported inside I × Rd . It embeds isometrically as a closed subspace of the given
+raw HW . We retain the given W restricted to it.
+    Fix R > 0 and real even ηR ∈ Cc∞ (Rd ) with 0 ≤ ηR ≤ 1, equal to one on the radius-R
+ball and supported in the closed radius-2R ball. The physical mask is mR = ηR2 . Every
+driver below takes its mask argument equal to mR : at this fixed radius the base profile
+ζ(y) = mR (Ry) meets the earlier hypotheses. The root ηR factors state tests; it does
+not multiply a raw noise class. All compactness conclusions here fix R.
+
+29.1     Fractional products and the compact spatial map
+Lemma 29.1 (Actual fractional covariance products). For α/4 < s < 1/2, products of
+real H s functions define actual elements of Hsp , with
+                                           √︁
+                             ∥f g∥Hsp ≤ Cs2 Rsp ∥f ∥H s ∥g∥H s .            (29.1)
+
+Their Hilbert pairings equal their physical integrals. In particular,
+             ∫︂                                                             4
+                                                                           ∏︂
+                  |f1 (x)f2 (x)f3 (x − y)f4 (x − y)| dx Γ( dy) ≤ Cs4 Rsp         ∥fj ∥H s .   (29.2)
+                                                                           j=1
+
+
+Proof. First approximate real H 1 factors by compact smooth ones. The absolute four-
+linear bound
+         √︁ (28.7) and covariance PSD make their products Cauchy in Hsp , with norm
+at most Rsp N (f )N (g). Expanding product differences proves independence of ap-
+proximation; physical continuity identifies all pairings. PSD for products also follows
+from f g = ((f + g)2 − (f − g)2 )/4.
+    Use real radial Fourier bands D0 = 1{|ξ|<1} and Dj = 1{2j−1 ≤|ξ|<2j } , j ≥ 1. For f ∈ H s
+put fj = Dj f . Each block is real and in H 1 . Frequency support, Parseval and weighted
+Cauchy–Schwarz give
+                                                ∑︂
+                      N (fj ) ≤ 2jα/4 ∥fj ∥2 ,     N (fj ) ≤ Cs ∥f ∥H s .               (29.3)
+                                                   j≥0
+
+
+Indeed, j 2−2j(s−α/4) < ∞, while j 22js∑︁∥fj ∥22 ≤ 22s ∥f ∥2H s . The low block∑︁
+        ∑︁                         ∑︁
+                                                                                has factor
+           p
+one. No L multiplier result is used. Also j ∥fj ∥2 < ∞ since s > 0. Thus j |fj | lies
+in L2 by Minkowski and monotone convergence, and the series is absolutely convergent
+a.e. with sum f .
+
+                                               189
+
+===== PHYSICAL PAGE 190 =====
+    Apply the absolute H 1 four-linear∏︁estimate
+                                             ∑︁ to each band quadruple. The sum of
+its absolute integrals is at most Rsp 4ℓ=1 j N ((fℓ )j ) < ∞. Tonelli and the null-set
+transfer at both spatial positions∑︁in Lemma 28.1 identify the physical product series,
+proving (29.2). The double series j,k fj gk is also absolutely convergent in Hsp by the H 1
+product bound. Its partial sums are products of H 1 functions. The absolute quadruple
+calculation identifies their limiting physical pairings and gives (29.1). Compact smooth
+functions are dense in H s : approximate in Fourier space by real Schwartz functions,
+then cut each off compactly in H 1 and hence in H s . This also proves uniqueness of the
+bilinear extension. This proves Lemma 29.1.
+Proposition 29.2 (Compact spatial mean map). The smooth-test map
+                                     Tsp q = iBF (mR (Γ ∗ q))
+extends to a compact linear map Tsp : Hsp → K(F ), where K(F ) has the operator norm.
+For z = (z1 , z2 , c1 , c2 ) and w = (w1 , w2 , d1 , d2 ) set w′ = Λ−1 w2 . Its exact row identity is
+         ⟨Tsp qz, w⟩F = ⟨q, k(z, w)⟩Hsp ,       k(z, w) = (ηR z1 + c1 ηR )(ηR w′ ).           (29.4)
+Proof. Fix s with α/4 < s < 1/2; this interval is nonempty because the original threshold
+implies α < 2. For smooth compact q, Γ ∗ q is locally smooth by differentiation under
+the compactly restricted Radon integral. The masked potential is smooth compact. The
+velocity pairing in E has weight Λ−1 ; hence physical Fubini gives (29.4) on smooth states.
+Evenness of Γ changes BΓ (k, q) to BΓ (q, k). For general states the localized products
+are L1 , and Γ ∗ q is bounded on their compact support. L2 state approximation passes
+the physical integral to the limit, while Lemma 29.1 passes the Hsp pairing. This proves
+the actual row.
+    Multiplication by ηR maps bounded H 1/2 sets to precompact H s sets by Proposi-
+tion 18.6, with gain 1/2 − s > 0. This applies to z1 and w′ . The c1 ηR family is finite
+dimensional and compact. The closures of both factor families for unit z, w are compact,
+so their products have compact closure L in Hsp by the fractional product bound. The
+row identity gives ∥Tsp q∥ ≤ supk∈L ∥k∥∥q∥. Null covariance classes therefore map to
+zero.
+    For smooth q, multiplication by its potential is compact H 1/2 → H −1/2 by the same
+whole-space cutoff result with gain one. Its extra c1 column is finite rank, and the
+instantaneous c2 column is zero. Thus the smooth images lie in K(F ), and so does the
+bounded extension by operator-norm closure.
+    Choose a complete smooth-test orthonormal basis of Hsp by countable compact-
+support approximation and Gram–Schmidt, omitting null classes. Let Qn project onto
+its first n terms. The row identity yields
+                         ∥Tsp (I − Qn )∥ ≤ sup ∥(I − Qn )k∥Hsp −→ 0.
+                                             k∈L
+
+Strong projection convergence is uniform on compact L by a finite-net argument and
+∥I − Qn ∥ ≤ 1. Each Tsp Qn has finite-dimensional range; their operator-norm limit is
+a compact map. This is compactness of the map, in addition to compact values. This
+proves Proposition 29.2.
+
+                                                190
+
+===== PHYSICAL PAGE 191 =====
+29.2     The actual supported tensor and temporal mean
+Lemma 29.3 (Supported raw tensor space). Canonically H = Ht ⊗ Hsp as real Hilbert
+spaces. It is separable and admits a complete orthonormal basis ej with smooth test
+representatives supported inside I × Rd . Projection PJ onto its first J elements is also
+an orthogonal projection on HW by the same finite formula.
+
+Proof. On separated smooth tests, absolute Fubini makes the raw inner product exactly
+the tensor product after both null quotients. Finite sums are dense: approximate a
+smooth compact spacetime test uniformly by smooth time partitions times its spatial
+slices, on one common compact support inside I × Rd . A uniform error ϵ on spatial
+compact A has squared raw norm at most
+                                     ∫︂ ∫︂
+                        2
+                       ϵ |A|Γ(A − A)       |s − t|−a ds dt < ∞.
+                                          I   I
+
+This also gives countable smooth-test density on exhausting compact sets, both here and
+in Hsp . Gram–Schmidt skipping zeros preserves smooth compact support. The isometric
+embedding into HW has closed image by completeness; its finite orthonormal projection
+formula remains orthogonal there. It is not multiplication by a time indicator and gives
+no independence of disjoint time intervals. This proves Lemma 29.3.
+
+Proposition 29.4 (The compact temporal mean, without trace class). Let K on L2 (I)
+have kernel |s − t|−a . It is compact, self-adjoint, strictly positive and injective. The map
+ι : f ↦→ K 1/2 f extends isometrically from Ht onto L2 (I), and the actual temporal mean
+
+                                 Ct = K 1/2 ι : Ht −→ Lr (I)                           (29.5)
+
+is bounded and compact for every 2 < r < 2/a. The displayed formula first has its L2 (I)
+meaning; the same completed map is then shown to take values compactly in Lr (I). The
+operator K is not trace class and Ct : Ht → L2 (I) is not Hilbert–Schmidt.
+
+Proof. Schur bounds K by its finite row and column integrals. The Gamma representa-
+tion of |s − t|−a and zero extension of f ∈ L2 (I) give strict positivity directly: the kernel
+e−λ|v| has quadratic form
+                         ∫︂
+                                 2λ
+                               2      2
+                                        |fˆ︁(ξ)|2 dξ > 0 (f ̸= 0, λ > 0)
+                           R λ   +  ξ
+in the unitary Fourier convention. Absolute Fubini is justified by Schur applied to
+|f (s)f (t)|. Integrating with positive weight λa−1 /ΓE (a) proves positivity and injectivity.
+Symmetry gives self-adjointness. The deterministic truncated kernel Kϵ = K1{|s−t|≥ϵ}
+is square integrable, so finite separated-kernel approximations make it compact. The
+Schur norm of K − Kϵ is at most 2ϵ1−a /(1 − a), proving compactness of K. These
+truncations are not used as Gaussian covariances. Its positive square root is compact
+by the compact spectral theorem.
+
+
+                                              191
+
+===== PHYSICAL PAGE 192 =====
+   On tests ∥K 1/2 f ∥2 = ∥f ∥Ht . Smooth-test L2 density and ker K = 0 imply that its
+range is dense, so the isometry extends onto L2 (I). On tests Ct f = Kf , and (29.5) first
+gives compactness into L2 .
+   Extend Ka (v) = |v|−a 1{|v|≤1} to the line. It lies in Lr/2 . Scalar Young convolution
+gives
+                        ∥g∥2Ht ≤ ∥Ka ∥r/2 ∥g∥2r′ ,  r′ = r/(r − 1).
+To verify the needed Young inequality, take u = r/2, v = r′ , so u, v < r and 1/u + 1/v =
+1 + 1/r. Split the absolute convolution integrand into (|f |u |h|v )1/r , |f |1−u/r and |h|1−v/r .
+Hölder with exponents r, (1/u − 1/r)−1 and (1/v − 1/r)−1 , followed by integration and
+Tonelli, gives ∥f ∗ h∥r ≤ ∥f ∥u ∥h∥v . Covariance Cauchy–Schwarz and Lr duality now
+imply ∥Kf ∥r ≤ Ca,r ∥f ∥Ht on tests. Their Kf are bounded by the integrable-kernel
+row, making duality legitimate before completion. Density extends the estimate, with
+L2 value equal to (29.5). Choose r < r2 < 2/a. Compactness into L2 and boundedness
+into Lr2 give compactness into Lr by ∥u∥r ≤ ∥u∥τ2 ∥u∥1−τ
+                                                       r2   with 1/r = τ /2 + (1 − τ )/r2 .
+                                                1/2
+    Finally the orthonormal cell indicators N 1(j/N,(j+1)/N ) , 0 ≤ j < N , have K
+quadratic forms summing to 2N a /((1 − a)(2 − a)) → ∞. Thus positive K has infinite
+trace, and K 1/2 ι is not Hilbert–Schmidt into L2 . No instantaneous L2 -valued Gaussian
+has been introduced. This proves Proposition 29.4.
+Proposition 29.5 (The compact time-space mean). Fix one 2 < r < 2/a throughout
+this proposition. For finite tensors with orthonormal spatial labels define
+                             (︄           )︄
+                                ∑︂               ∑︂
+                           U       fj ⊗ qj (s) =    (Kfj )(s)qj .
+                                    j                 j
+
+It extends to a bounded map H → Lr (I; Hsp ) with dimension-free bound. The map
+
+                         T Φ(s) = Tsp (UΦ(s)) : H −→ Lr (I; K(F ))                         (29.6)
+
+is compact. For smooth supported Φ, it is the actual multiplier iBF (mR hΦ (s)), where
+hΦ = | · |−a ∗ (Γ ∗ Φ). For the supported projections of Lemma 29.3,
+
+                             ϵJ := ∥T (I − PJ )∥H→Lr (K(F )) −→ 0.                         (29.7)
+
+Proof. For a finite-dimensional spatial field g, positivity of the time kernel and scalar
+Young give
+                            ∫︂ ∫︂
+                   2
+               ∥g∥Ht ⊗Hsp ≤       |s − t|−a ∥gs ∥∥gt ∥ ds dt ≤ Ca,r
+                                                                2
+                                                                    ∥g∥2Lr′ (Hsp ) .
+                                I       I
+
+Hilbert Cauchy–Schwarz and finite-dimensional Lr duality give ∥UΦ∥Lr (Hsp ) ≤ Ca,r ∥Φ∥H .
+The duality can be checked by the pointwise direction ∥UΦ∥r−2 UΦ and smooth coefficient
+                    ′
+approximation in Lr , controlled by the displayed estimate. No dimension factor occurs.
+Tensor density and completeness extend this to a strongly measurable Bochner field.
+This time-only map still contains raw spatial labels. Spatial covariance is applied once,
+by Tsp .
+
+                                               192

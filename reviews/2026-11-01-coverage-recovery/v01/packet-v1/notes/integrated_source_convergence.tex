@@ -1,0 +1,491 @@
+\section{Convergence of the canonical Gaussian source drivers}
+\label{S:source-driver-convergence}
+
+We match the heat normalization, Laplace prefix and joint source law in
+the author version~\cite{chen:author2026:time-dependency}*{(1.20), (1.21),
+(2.9), (2.11), pp.~5--6, 8--9}. Given-noise retention, the Radon
+implementation and the operator-path conclusions are proved here.
+No first-moment variational theorem is an input.
+
+Retain Hypothesis~\ref{H:homog}, the fixed $R,T,\zeta_R,E$ and parameters
+of~\eqref{E:driver-parameters}, and the original noise space $H_W$.
+Write $\mathscr B_\theta=C^\theta([0,T];\mathcal B(E))$.
+Fix one raw test basis $f_j$ and its actual coefficient paths $A_j(t)$
+from Proposition~\ref{P:actual-operator-driver}. Thus,
+$M_N=\sum_{j\le N}W(f_j)A_j\to M_R$ in every finite $L^p(\mathscr B_\theta)$.
+Zero covariance gives zero noises and drivers throughout; assume
+$\Gamma\ne0$ in the construction.
+
+\subsection{Gaussian transfer in the full path norm}
+
+\begin{lemma}[Finite Gaussian linear images]\label{L:source-finite-comparison}
+  Let $v_1,\ldots,v_N$ lie in a real Banach space and let $\xi$ be a
+  centered Gaussian vector with covariance bounded by $CI$, $C\ge0$.
+  For independent standard real $g_j$ and $p\ge1$,
+  \begin{equation}\label{E:source-finite-comparison}
+    \left(\E\left\|\sum_j\xi_jv_j\right\|^p\right)^{1/p}
+    \le\sqrt C\left(\E\left\|\sum_jg_jv_j\right\|^p\right)^{1/p}.
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  The function $\varphi(x)=\|\sum_jx_jv_j\|^p$ is continuous and convex,
+  even when the linear image gives only a seminorm on $\R^N$.
+  Its Gaussian expectations are finite by the finite-sum bound.
+  On an auxiliary space take an independent centered Gaussian $Z$ of
+  covariance $CI-\operatorname{Cov}\xi$. Conditional Jensen gives
+  $\E\varphi(\xi)\le\E\varphi(\xi+Z)$. The latter vector has the law of
+  $\sqrt C\,g$, proving the claim. The case $C=0$ is immediate.
+  This auxiliary comparison changes neither the actual coupling of $\xi$
+  nor any nonlinear wave solution.
+  This proves Lemma~\ref{L:source-finite-comparison}.
+\end{proof}
+
+\begin{proposition}[Actual Gaussian transfer and stability]
+  \label{P:source-gaussian-transfer}
+  Let $Y$ be a centered Gaussian linear noise on smooth compact positive-time
+  tests, on a common coupled space, with
+  \begin{equation}\label{E:source-raw-variance-bound}
+    \operatorname{Var}Y(F)\le C\|F\|_{H_W}^2.
+  \end{equation}
+  It extends to $H_W$. The finite paths
+  $M_{Y,N}=\sum_{j\le N}Y(f_j)A_j$ converge in every finite
+  $L^p(\mathscr B_\theta)$ to an actual centered Gaussian path $M_Y$ with
+  compact values at all times on one path event, and
+  \begin{align}
+    \|M_Y-M_{Y,N}\|_{L^p\mathscr B_\theta}
+    &\le\sqrt C\|M_R-M_N\|_{L^p\mathscr B_\theta},\label{E:source-transfer-tail}\\
+    \|M_Y\|_{L^p\mathscr B_\theta}
+    &\le\sqrt C\|M_R\|_{L^p\mathscr B_\theta}.\label{E:source-transfer-norm}
+  \end{align}
+  For a fixed real Schwartz pair and time,
+  \begin{equation}\label{E:source-transferred-row}
+    \langle M_Y(t)z,w\rangle_E=Y(h_{R,t;z,w})\quad\text{in }L^2,
+  \end{equation}
+  where $h_{R,t;z,w}$ is the literal raw test class
+  $\zeta_R1_{(0,t)}v_zG_w$ with the actual adjoint from
+  \eqref{E:variance-dual-wave}. The path is basis-independent up to
+  indistinguishability, is linear in jointly Gaussian noise families, and
+  complexifies sesquilinearly.
+
+  If $(W,Y_n)$ are jointly centered Gaussian, $Y_n$ and $D_n=W-Y_n$
+  have uniform bounds of the form~\eqref{E:source-raw-variance-bound},
+  and $\operatorname{Var}D_n(F)\to0$ on every smooth compact test,
+  then $M_{Y_n}\to M_R$ in every finite $L^p(\mathscr B_\theta)$.
+\end{proposition}
+
+\begin{proof}
+  The variance bound annihilates raw-null tests and extends $Y$ as a
+  bounded linear map into its actual $L^2$ space. Completion preserves
+  Gaussian finite-dimensional laws. For each finite raw orthonormal family,
+  the covariance of its $Y$ evaluations is bounded by $CI$, by applying
+  the variance bound to every real linear combination. Independence of
+  $Y(f_j)$ is not assumed.
+
+  Apply Lemma~\ref{L:source-finite-comparison} with $v_j=A_j(\cdot)$ in
+  $\mathscr B_\theta$, also to finite tails. The standard comparison vector
+  has the law of the raw $W(f_j)$. The already-proved raw path convergence
+  makes $M_{Y,N}$ Cauchy in every $L^p$. It lies in the same separable
+  closed span of the countably many deterministic paths. The elementary
+  Cauchy/subsequence construction of Lemma~\ref{L:driver-holder-limit}
+  gives a strongly measurable limit on the actual space of $Y$.
+  Different $p$ limits agree by convergence in probability. Passing to
+  limits in the finite inequalities gives both displayed bounds. An
+  almost surely uniformly convergent subsequence gives compact values
+  for all times. Functional $L^2$ limits of Gaussian linear combinations
+  prove that the path is Gaussian.
+
+  For real Schwartz $z,w$, the actual coefficient identity is
+  \[
+    \langle A_j(t)z,w\rangle_E
+    =\E[W(h_{R,t;z,w})W(f_j)]
+    =\langle h_{R,t;z,w},f_j\rangle_{H_W}.
+  \]
+  Therefore, the finite transferred row is $Y(P_Nh)$, with $P_N$ the
+  raw $H_W$ orthogonal projection. Since $P_Nh\to h$, the noise bound
+  gives $Y(P_Nh)\to Y(h)$ in $L^2$. Operator-path $L^2$ convergence
+  proves~\eqref{E:source-transferred-row}. Long intervals use the same
+  raw completion and endpoint nullity as in Lemma~\ref{L:driver-interval-limit}.
+  No filter is commuted through a physical mask or wave group. Four
+  real pair identities give the complex assertion. Countably many dense
+  Schwartz phases and rational times, followed by phase density and path
+  continuity, prove basis indistinguishability.
+
+  For jointly Gaussian $Y,Z$, their real linear combinations have a raw
+  variance bound by the $L^2$ triangle inequality. The finite sums are
+  linear in the noise, hence so are the path limits. In the stability
+  assertion $D_n$ is centered Gaussian by the joint hypothesis. Its
+  uniform bound gives
+  \[
+    \|M_{D_n}-M_{D_n,N}\|_{L^p\mathscr B_\theta}
+    \le\sqrt{C_D}\|M_R-M_N\|_{L^p\mathscr B_\theta}.
+  \]
+  For fixed $N$, the covariance matrix of $(D_n(f_j))_{j\le N}$ is
+  positive and bounded by $s_N(n)I$, where
+  $s_N(n)=\sum_{j\le N}\operatorname{Var}D_n(f_j)\to0$.
+  The finite comparison gives
+  $\|M_{D_n,N}\|_{L^p\mathscr B_\theta}
+  \le\sqrt{s_N(n)}\|M_N\|_{L^p\mathscr B_\theta}$.
+  Choose $N$ large for the uniform tail, then $n$ large for the finite
+  head. Linearity identifies $M_{D_n}=M_R-M_{Y_n}$. The same argument
+  proves a multiparameter limit whenever each fixed test error tends
+  to zero, with no relation between parameter rates.
+  This proves Proposition~\ref{P:source-gaussian-transfer}.
+\end{proof}
+
+\subsection{The spatial covariance space and a retaining extension}
+
+\begin{lemma}[Original spatial space and heat]\label{L:source-spatial-heat}
+  Let $H_\Gamma$ be the real test-null completion with
+  \[
+    B_\Gamma(f,g)=\int\Gamma(\ud y)\int f(x)g(x-y)\ud x
+    =(2\pi)^d\int\widehat f(\xi)\overline{\widehat g(\xi)}\mu(\ud\xi).
+  \]
+  It is separable and includes Schwartz tests. With
+  \begin{equation}\label{E:source-heat-definition}
+    p_\varepsilon(x)=(2\pi\varepsilon)^{-d/2}
+    e^{-|x|^2/(2\varepsilon)},\qquad C_\varepsilon f=p_\varepsilon*f,
+  \end{equation}
+  heat is a positive self-adjoint contraction on $H_\Gamma$,
+  $I-C_\varepsilon$ is a contraction, and $C_\varepsilon\to I$ strongly.
+\end{lemma}
+
+\begin{proof}
+  The spectral normalization is the spatial computation in
+  Proposition~\ref{P:masked-noise-completion}; its integral is real on
+  real tests by evenness of $\mu$. The local bound
+  $|B_\Gamma(f,g)|\le |K|\Gamma(K-K)\|f\|_\infty\|g\|_\infty$
+  on a common compact support gives separability by countable smooth
+  approximation. Expanding smooth cutoffs of a Schwartz test converge
+  in Schwartz seminorms, and its covariance correlation pairing converges
+  against tempered $\Gamma$. Thus, Schwartz tests enter the same completion.
+  The Fourier multiplier of $C_\varepsilon$ is
+  $m_\varepsilon(\xi)=e^{-\varepsilon|\xi|^2/2}$.
+  On dense Schwartz tests, the displayed norm gives positivity,
+  self-adjointness and both contraction bounds. Dominated convergence
+  gives strong convergence there; uniform boundedness extends it to the
+  completion. This uses no physical mask operator on a noise quotient.
+  This proves Lemma~\ref{L:source-spatial-heat}.
+\end{proof}
+
+Set $\nu_a(\ud\lambda)=\lambda^{a-1}\ud\lambda/\Gamma_E(a)$ and
+\[
+  \mathcal G=L^2((0,\infty)_\lambda\times\R_r,
+  \nu_a(\ud\lambda)\ud r;H_\Gamma).
+\]
+This is a real separable Hilbert space: countable simple functions on
+rational rectangles with a countable dense spatial collection suffice.
+
+\begin{lemma}[Feature isometry retaining the given noise]\label{L:source-retaining-isometry}
+  On finite smooth temporal-spatial tensors define
+  \begin{equation}\label{E:source-feature-isometry}
+    \Phi F(\lambda,r)=\sqrt{2\lambda}
+    \int_{\substack{t>0\\t\ge r}}e^{-\lambda(t-r)}F(t,\cdot)\ud t.
+  \end{equation}
+  It extends to an isometry $\Phi:H_W\to\mathcal G$ with closed range,
+  and the formula represents smooth compact tests almost everywhere.
+  On a product extension retaining the original $W$, there is an isonormal
+  $\mathcal I$ on $\mathcal G$ with
+  \begin{equation}\label{E:source-given-W-retention}
+    \mathcal I(\Phi h)=W(h)\quad\text{in }L^2
+    \quad\text{for each }h\in H_W.
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  The identity
+  \[
+    \int_{-\infty}^{\min(t,u)}
+    2\lambda e^{-\lambda(t+u-2r)}\ud r
+    =e^{-\lambda|t-u|}
+  \]
+  and the raw Laplace formula give
+  $\|\Phi F\|_{\mathcal G}^2=\|F\|_{H_W}^2$.
+  All signed exchanges for finite tensors are absolutely integrable:
+  compact temporal factors give integrals of
+  $|\tau(t)\sigma(u)||t-u|^{-a}$, finite for $a<1$, times fixed finite
+  spatial inner products. No oscillatory infinite-measure Fubini is used.
+  Smooth time partitions on one compact support approximate a general
+  smooth spacetime test uniformly by finite tensors. The local covariance
+  bound~\eqref{E:driver-test-continuity} proves their density in $H_W$.
+  Hence, the isometry extends with closed range.
+
+  For a general smooth compact $F$, those approximants also converge
+  uniformly in spatial $H_\Gamma$ norm in time, by local Radon mass.
+  For fixed $\lambda,r$, their integrals in~\eqref{E:source-feature-isometry}
+  converge in $H_\Gamma$. Meanwhile the isometry gives convergence in
+  $\mathcal G$, with an almost everywhere convergent subsequence. Its
+  two limits agree, proving the stated formula. The coordinate $r$ is
+  auxiliary; no value of raw negative-time noise has been assigned.
+
+  Let $P$ project orthogonally onto $\Phi H_W$. On a product extension
+  take an independent isonormal $J$ on $(\Phi H_W)^\perp$, built from
+  independent real standard Gaussians on a finite or countable basis.
+  Define
+  \[
+    \mathcal I(g)=W(\Phi^{-1}Pg)+J((I-P)g).
+  \]
+  Orthogonality and independence make it isonormal on $\mathcal G$ and
+  prove~\eqref{E:source-given-W-retention} with the actual original random
+  variable, not only its law. For the countable fixed raw basis, these
+  equalities hold on one common probability-one set. Thus, the raw
+  finite paths and their $L^p$ limits are precisely pullbacks of the
+  already constructed raw driver. Cutoff fields may use $J$; they are
+  not asserted to be functions of $W$ alone.
+  This proves Lemma~\ref{L:source-retaining-isometry}.
+\end{proof}
+
+\subsection{Exact joint source law and convergence}
+
+Let $P_\eta$ multiply $\mathcal G$ by $1_{\{\lambda\le\eta^{-1}\}}$.
+Let $C_\varepsilon$ act fiberwise on $H_\Gamma$. These commute. For
+$\rho=(\varepsilon,\eta)>0$, define
+\begin{equation}\label{E:source-cutoff-noises}
+  Q_\rho=C_\varepsilon P_\eta,\qquad
+  Y_\rho(F)=\mathcal I(Q_\rho\Phi F),\qquad
+  D_\rho(F)=\mathcal I((I-Q_\rho)\Phi F)=W(F)-Y_\rho(F).
+\end{equation}
+The last equality uses the actual retaining coupling. Define
+\begin{equation}\label{E:source-covariance-functions}
+  \Gamma_e(x)=(p_e*\Gamma)(x),\qquad
+  K_\eta(v)=\frac1{\Gamma_E(a)}
+  \int_0^{\eta^{-1}}e^{-\lambda|v|}\lambda^{a-1}\ud\lambda.
+\end{equation}
+The temporal operation is a Laplace prefix, not temporal convolution.
+
+\begin{proposition}[Canonical sources on the retaining space]
+  \label{P:source-canonical-convergence}
+  The noises in~\eqref{E:source-cutoff-noises} have pointfield realizations
+  with joint covariance
+  \begin{equation}\label{E:source-joint-covariance}
+    \operatorname{Cov}(Y_{\varepsilon,\eta}(t,x),
+    Y_{\varepsilon',\eta'}(s,y))
+    =K_{\max(\eta,\eta')}(t-s)\Gamma_{\varepsilon+\varepsilon'}(x-y).
+  \end{equation}
+  Mean-square pointfield integration agrees with $Y_\rho(F)$ on tests.
+  Both source and full residual obey
+  \begin{equation}\label{E:source-two-dominations}
+    \operatorname{Var}Y_\rho(F),\quad\operatorname{Var}D_\rho(F)
+    \le\|F\|_{H_W}^2,
+  \end{equation}
+  and $\operatorname{Var}D_\rho(F)\to0$ for every $F\in H_W$ as
+  $\varepsilon,\eta\downarrow0$ at arbitrary relative rates. Consequently,
+  for every finite $p\ge1$,
+  \begin{equation}\label{E:source-driver-limit}
+    M_R^\rho:=M_{Y_\rho}\longrightarrow M_R
+    \quad\text{in }L^p(\mathscr B_\theta),\qquad
+    M_{D_\rho}=M_R-M_R^\rho.
+  \end{equation}
+  The source and residual have uniform local Gaussian driver moments and
+  square-exponential norms, with constants for fixed $R,T$ and exponents.
+\end{proposition}
+
+\begin{proof}
+  Apply the spatial distribution identity to a single shifted heat test:
+  \[
+    \Gamma_e(x)=\int e^{i\xi\cdot x}e^{-e|\xi|^2/2}\mu(\ud\xi).
+  \]
+  Gaussian spectral moments of every order are finite for tempered $\mu$.
+  Thus, this is smooth with bounded derivatives. Since
+  $\widehat{p_\varepsilon(x-\cdot)}
+  =c_de^{-i\xi\cdot x}e^{-\varepsilon|\xi|^2/2}$, the two heat factors
+  in the spatial inner product cancel $(2\pi)^d$ exactly, giving
+  \begin{equation}\label{E:source-heat-inner-product}
+    B_\Gamma(p_\varepsilon(x-\cdot),p_{\varepsilon'}(y-\cdot))
+    =\Gamma_{\varepsilon+\varepsilon'}(x-y).
+  \end{equation}
+  Evenness of $\mu$ removes the reflected argument.
+
+  For each positive $\rho$ and point $(t,x)$ put
+  \begin{equation}\label{E:source-point-feature}
+    v_{\rho;t,x}(\lambda,r)
+    =1_{\{\lambda\le\eta^{-1}\}}\sqrt{2\lambda}
+    e^{-\lambda(t-r)}1_{\{r\le t\}}p_\varepsilon(x-\cdot).
+  \end{equation}
+  Its squared $\mathcal G$ norm is
+  $K_\eta(0)\Gamma_{2\varepsilon}(0)<\infty$.
+  Define $Y_\rho(t,x)=\mathcal I(v_{\rho;t,x})$. The common $\lambda$
+  range for two such vectors is
+  $\lambda\le\min(\eta^{-1},\eta'^{-1})=\max(\eta,\eta')^{-1}$.
+  Integrating $r$ gives $e^{-\lambda|t-s|}$, and
+  \eqref{E:source-heat-inner-product} gives the spatial factor. This
+  proves~\eqref{E:source-joint-covariance} with the prescribed widths and
+  raw amplitudes, also for singular Radon and white covariances.
+
+  The point feature is continuous in $\mathcal G$ norm, directly from
+  this continuous covariance. Its norm is bounded on compact parameter
+  sets. Hence, for a smooth compact spacetime $F$, its Bochner integral
+  against $v_{\rho;t,x}$ exists. Integrate the heat translates in $x$,
+  then the time feature, to obtain exactly $Q_\rho\Phi F$. Applying the
+  bounded map $\mathcal I:\mathcal G\to L^2$ proves the pointfield-test
+  identity on the same space. Common-support indicator tests follow by
+  raw completion and $L^1$ approximation; bounded point-feature norms and
+  the domination below give the same $L^2$ limit.
+
+  Orthogonality of the two $\lambda$ ranges gives, for $g\in\mathcal G$,
+  \[
+    \|(I-Q_\rho)g\|_{\mathcal G}^2
+    =\|(I-P_\eta)g\|_{\mathcal G}^2
+    +\|P_\eta(I-C_\varepsilon)g\|_{\mathcal G}^2
+    \le\|g\|_{\mathcal G}^2.
+  \]
+  Also $\|Q_\rho g\|_{\mathcal G}\le\|g\|_{\mathcal G}$. Together with
+  the isometry these prove both variance bounds. Disjoint $\lambda$
+  ranges are independent; the full heat residual need not be independent
+  of the source.
+
+  The $L^2$ tail integral gives $P_\eta\to I$ strongly. Fiberwise heat
+  converges strongly on simple $\mathcal G$ functions by
+  Lemma~\ref{L:source-spatial-heat}, then on all of $\mathcal G$ by the
+  contraction bound. The estimate
+  \[
+    \|(I-Q_\rho)g\|_{\mathcal G}
+    \le\|(I-C_\varepsilon)g\|_{\mathcal G}
+    +\|(I-P_\eta)g\|_{\mathcal G}\longrightarrow0
+  \]
+  holds at arbitrary relative rates. Thus, the residual variance tends
+  to zero for every raw $F$. Proposition~\ref{P:source-gaussian-transfer}
+  gives~\eqref{E:source-driver-limit} without commuting a filter through
+  $\zeta_R$ or a wave group.
+
+  The same comparison gives
+  $\|M_R^\rho\|_{L^p\mathscr B_\theta},
+  \|M_{D_\rho}\|_{L^p\mathscr B_\theta}
+  \le\|M_R\|_{L^p\mathscr B_\theta}$. The raw $\sqrt p$ estimate and
+  its even-moment exponential-series argument give uniform Gaussian
+  driver bounds. They are statements about $L^p$ equivalence classes
+  on the retaining extension, not a simultaneous path event for all
+  uncountably many cutoffs.
+  This proves Proposition~\ref{P:source-canonical-convergence}.
+\end{proof}
+
+\subsection{Regularized pointfields and the ordinary first response}
+
+\begin{lemma}[Regularity for each fixed cutoff]\label{L:source-pointfield-regularity}
+  For each fixed $\rho>0$, the pointfield has a version continuous in
+  time and smooth in space, with every spatial derivative jointly
+  continuous on compact time-space rectangles.
+\end{lemma}
+
+\begin{proof}
+  For each spatial multiindex $b$, differentiate
+  \eqref{E:source-point-feature} in $x$ as a $\mathcal G$ vector.
+  All derivatives exist because their spatial squared norms are the
+  finite heat moments
+  \[
+    \int \xi^{2b}e^{-\varepsilon|\xi|^2}\mu(\ud\xi),
+  \]
+  and the next moments dominate difference quotients. Set
+  $Z_b(t,x)=\mathcal I(\partial_x^bv_{\rho;t,x})$.
+  At fixed $x$, use $1-e^{-\lambda h}\le\lambda h$ in the finite
+  $\lambda$ integral; at fixed $t$, use
+  $|e^{i\xi\cdot x}-e^{i\xi\cdot y}|\le|\xi||x-y|$ and the next heat
+  moment. The squared triangle inequality gives
+  \begin{equation}\label{E:source-derivative-increments}
+    \E|Z_b(t,x)-Z_b(s,y)|^2
+    \le C_{\rho,b}(|t-s|+|x-y|^2).
+  \end{equation}
+  This computation uses~\eqref{E:source-joint-covariance}, including its
+  spatial width, and applies to singular spectral measures without a
+  density assumption.
+
+  Here is a direct continuity construction. In $m=d+1$ parameter
+  dimensions on a compact rectangle, even Gaussian $q$th increment
+  moments have root bounded by $C\sqrt q$ times the parameter distance
+  to the power $1/2$ at small distances. The dyadic grid has at most
+  $C_m2^{nm}$ adjacent edges at level $n$. Their maximum has $L^q$
+  norm at most $C\sqrt q\,2^{-n(1/2-m/q)}$, with constants for this
+  rectangle and fixed $\rho,b$. Choose $q$ large and
+  $0<h_0<1/2-m/q$. The sum of these maxima weighted by $2^{nh_0}$
+  has finite $L^q$ norm. Binary refinement, using a fixed number of
+  adjacent edges per coordinate at each scale, gives a continuous
+  extension from dyadic points. At each fixed parameter the extension
+  agrees with the given Gaussian variable in $L^2$, by
+  \eqref{E:source-derivative-increments}; it is a modification.
+  Use countably many nested compact rectangles and all multiindices.
+  The versions agree on overlaps on countable dense sets, hence
+  everywhere there by continuity, so they patch.
+
+  They are actual derivatives. The $\mathcal G$-valued fundamental
+  theorem gives, along a coordinate segment,
+  \[
+    \partial_x^bv(t,x+he_i)-\partial_x^bv(t,x)
+    =\int_0^h\partial_x^{b+e_i}v(t,x+ue_i)\ud u.
+  \]
+  Apply bounded linear $\mathcal I$ and $L^2$ integration. The continuous
+  versions give the same ordinary integral by their Riemann sums, which
+  converge both pathwise and in $L^2$. Enforce these identities first on
+  countably many rational $t,x,h$ and multiindices, then use joint
+  continuity to extend them to every segment in the compact rectangles.
+  The ordinary fundamental theorem yields $\partial_iZ_b=Z_{b+e_i}$.
+  Thus, all spatial derivatives exist and are jointly continuous with
+  time. The versions are for this fixed $\rho$, not a common path event
+  over uncountably many source parameters.
+  This proves Lemma~\ref{L:source-pointfield-regularity}.
+\end{proof}
+
+\begin{proposition}[Actual ordinary source response]\label{P:source-ordinary-response}
+  For each fixed $\rho>0$, on its regularity event, put
+  $b_\rho(t,x)=\zeta_R(x)Y_\rho(t,x)$. The statewise integral
+  \begin{equation}\label{E:source-ordinary-response}
+    L_\rho(t)z=\int_0^tS(-u)B(b_\rho(u))S(u)z\ud u
+  \end{equation}
+  defines an operator-norm Lipschitz path on $E$, and
+  $L_\rho=M_R^\rho$ for all $t\in[0,T]$ on one probability-one set.
+  In particular, it has the strongly measurable path version supplied
+  by the Gaussian construction.
+\end{proposition}
+
+\begin{proof}
+  The coefficient is compact smooth in space and continuous in time in
+  every spatial derivative norm. Multiplication estimates and strong
+  continuity of the full free group show that the statewise integral
+  exists on every $E_r$. Its operator increments $E_r\to E_{r+1}$
+  are bounded by a finite sample constant times $|t-s|$, exactly by the
+  statewise gain argument of Lemma~\ref{L:driver-gain-localization}.
+  This proves Lipschitz continuity in $\mathcal B(E)$, without requiring
+  norm continuity or an operator-norm derivative of $S(t)$.
+
+  At each fixed $u$, the Sobolev duality calculation uses only spatial
+  smoothness of $b_\rho(u,\cdot)$. From $S(-u)(0,f)$ and the two Bessel
+  weights, for real Schwartz phases,
+  \[
+    \langle S(-u)B(b_\rho(u))S(u)z,w\rangle_E
+    =\int b_\rho(u,x)[S(u)z]_1(x)G_w(u,x)\ud x.
+  \]
+  Thus, no prior hypothesis of smoothness in time is invoked for this
+  instantaneous identity. For complex pairs conjugate the second factor.
+  Integrating gives the ordinary source-field integral against the literal
+  raw wave test $h_{R,t;z,w}$. For smooth tests, the point-feature integral
+  has already been identified with $Y_\rho(F)$. The continuous pointfield
+  version has the same integral: compact Riemann sums converge pathwise
+  and in $L^2$ to the ordinary and feature integrals, respectively.
+  Approximate the indicator wave test in the raw completion with common
+  compact spatial support and $L^2$-time spatial supremum error tending
+  to zero. Its $L^1$ error also tends to zero. The point-feature norms
+  are bounded on that support, so their integrals converge in $\mathcal G$;
+  the raw variance domination gives the same $L^2$ limit on the test side.
+  Consequently,
+  \[
+    \langle L_\rho(t)z,w\rangle_E
+    =Y_\rho(h_{R,t;z,w})
+    =\langle M_R^\rho(t)z,w\rangle_E
+    \quad\text{in }L^2.
+  \]
+  Compare a countable dense Schwartz phase collection and rational times.
+  Boundedness and the path continuity of both sides extend this equality
+  to all states and all times on one probability-one set. The equality
+  is on the actual coupled space, not only in law. The set is for fixed
+  $\rho$; the $L^p$ limit in~\eqref{E:source-driver-limit} needs no
+  simultaneous version for every source parameter.
+  This proves Proposition~\ref{P:source-ordinary-response}.
+\end{proof}
+
+The source laws above match the pinned author definitions. The author's
+page~9 redefinition keeps the law; the retaining extension was proved in
+Lemma~\ref{L:source-retaining-isometry}. The derivative estimate here was
+derived from the correct joint covariance, not from the differing spatial
+index in the author's page~8 increment display. No source correction is
+adopted. All limits are at fixed finite $R,T$. The nonlinear Young flow,
+canonical initial datum $(1,0)$ and its solution-moment transfer remain
+separate parts of the argument.

@@ -1,0 +1,184 @@
+\section{Spatial white noise: energy and explicit moment bounds}
+\label{S:intrinsic-white-evaluation}
+
+Take $d=\alpha=1$ and $\Gamma=c\delta_0$, $c\ge0$, with temporal kernel
+$|s-t|^{-a}$, $0<a<1$, and data $(1,0)$.
+The parameter $c$ is covariance mass; the coefficient of unit noise
+would be $\sqrt c$. No additional temporal normalization is inserted.
+The wave kinetic coefficient is one.
+For real unit $f\in H^1(\R)$ put
+$A=\int_\R f^4$ and $b=\int_\R(f')^2$.
+The physical covariance is $A_{\mathrm{sp}}(f)=cA$.
+
+\begin{lemma}[The full-profile CDF square identity]\label{L:white-cdf-square}
+  Every such $f$ has $A<\infty$.
+  With $\mathsf F(x)=\int_{-\infty}^xf(y)^2\ud y$, for every real $z$,
+  \begin{equation}\label{E:white-cdf-square}
+    0\le\int_\R[f'-zf(1-2\mathsf F)]^2
+    =b-2zA+z^2/3 .
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  On a bounded interval the weak derivative $f'$ is $L^1$ by
+  Cauchy--Schwarz. Its integral primitive has weak derivative $f'$
+  by Fubini. Subtracting it from $f$ gives a function of weak derivative
+  zero, hence constant almost everywhere: test against derivatives
+  of compact smooth primitives of all zero-integral test functions.
+  The resulting locally absolutely continuous representatives patch on
+  overlaps, giving one continuous representative.
+  Thus $\rho=f^2$ is locally absolutely continuous with
+  $\rho'=2ff'\in L^1(\R)$, while $\rho\ge0$ and $\int\rho=1$.
+  Integrability of $\rho'$ makes $\rho$ Cauchy on each infinite tail,
+  so it has finite limits at both ends.
+  Its $L^1$ integrability forces both limits to be zero.
+  It is therefore bounded, and
+  $A=\int\rho^2\le\|\rho\|_\infty\int\rho<\infty$.
+
+  Now $0\le\mathsf F\le1$, $\mathsf F'=\rho$ continuously,
+  and its limits are zero and one.
+  The derivative of $\rho(1-2\mathsf F)$ is
+  $\rho'(1-2\mathsf F)-2\rho^2\in L^1$.
+  Its endpoint limits vanish.
+  Integrating on $[-R,R]$ and sending $R\to\infty$ gives
+  \[
+    \int_\R f'f(1-2\mathsf F)=A .
+  \]
+  The polynomial $P(y)=y-2y^2+(4/3)y^3$ has derivative $(1-2y)^2$.
+  The chain rule and the endpoints of $\mathsf F$ give
+  \[
+    \int_\R f^2(1-2\mathsf F)^2=P(1)-P(0)=1/3 .
+  \]
+  Absolute integrability holds since this integrand is bounded by $f^2$.
+  For each real $z$, both terms in the square in
+  \eqref{E:white-cdf-square} are in $L^2$, and their cross product is
+  absolutely integrable. Expansion and the two preceding identities
+  prove the formula. Neither positivity of $f$ nor strict increase
+  of its CDF is required.
+  This proves Lemma~\ref{L:white-cdf-square}.
+\end{proof}
+
+\begin{proposition}[Exact white spatial energy]\label{P:white-spatial-energy}
+  For $c>0$,
+  \[
+    R_{\mathrm{sp}}=c/\sqrt3,\qquad
+    \mathcal E_{\mathrm{sp}}=c^2/6.
+  \]
+  Both values are zero at $c=0$.
+\end{proposition}
+
+\begin{proof}
+  Substitution $z=3A$ into~\eqref{E:white-cdf-square} gives
+  $3A^2\le b$.
+  This is the exact premise and conclusion of the existing conditional
+  WhiteCDF square deduction.
+  Here $A>0$, since $A=0$ would imply $f=0$ a.e.
+  Also $b>0$: zero derivative makes its continuous representative
+  constant and hence zero in $L^2$, contradicting unit mass.
+  Thus $A/\sqrt b\le1/\sqrt3$.
+
+  For $\ell>0$ use the real smooth $H^1$ profile
+  $f_\ell(x)=\sqrt{\ell/2}\operatorname{sech}(\ell x)$,
+  with $f_\ell'=-\ell\tanh(\ell x)f_\ell$.
+  Set $t=\tanh(\ell x)$, so $\ud t=\ell\operatorname{sech}^2(\ell x)\ud x$.
+  Direct integration gives
+  \[
+    \int f_\ell^2=\frac12\int_{-1}^1\ud t=1,\quad
+    \int f_\ell^4=\frac\ell4\int_{-1}^1(1-t^2)\ud t=\ell/3,\quad
+    \int(f_\ell')^2=\frac{\ell^2}2\int_{-1}^1t^2\ud t=\ell^2/3.
+  \]
+  The ratio is attained, proving $R_{\mathrm{sp}}=c/\sqrt3$.
+  The physical Dirac measure introduces no Fourier constant or
+  nonintegrable kernel $|x|^{-1}$.
+  The existing conditional energy deduction applies to $3A^2\le b$:
+  \[
+    cA-b/2\le cA-\tfrac32A^2
+    =c^2/6-\tfrac32(A-c/3)^2\le c^2/6 .
+  \]
+  At $\ell=c>0$ the profile attains $c^2/6$.
+  These are full $H^1$ energy profiles; compact approximation equality
+  is Proposition~\ref{P:spatial-four-linear}, not a claim that the
+  noncompact profile itself is a compact stochastic control.
+  At $c=0$ the ratio is zero and the energy is $\sup(-b/2)=0$,
+  approached by $f_\ell$ as $\ell\downarrow0$.
+  No zero-scale profile is used as a unit vector.
+  The CDF, integral and attainment arguments remain analytic;
+  the two finite conditional deductions do not formalize them.
+  This proves Proposition~\ref{P:white-spatial-energy}.
+\end{proof}
+
+\begin{theorem}[Explicit white moment bounds]\label{T:white-moment-bounds}
+  For the same original point limit,
+  \begin{equation}\label{E:white-moment-bounds}
+    \frac23\sqrt{\frac{c}{M_a}}\le C_2(c,a)
+    \le\frac23\sqrt{cK_0(a)},\qquad
+    K_0(a)=\frac{2^a}{1-a},\quad
+    M_a=\frac{\Gamma_E((1+a)/2)}
+    {\Gamma_E(1+a)\Gamma_E((1-a)/2)} .
+  \end{equation}
+  Its time exponent is $(3-a)/2$. These are bounds, not a numerical
+  evaluation of the intrinsic supremum.
+\end{theorem}
+
+\begin{proof}
+  Here $q=3,k=2,m=3/2$.
+  Formula~\eqref{E:spatial-static-energy-score} gives
+  \[
+    F_0(z)=2\left[\frac{(2z)^{1/2}}{8\,3^{3/2}}\right]^{1/2}.
+  \]
+  For $c>0$, $\sqrt{2\mathcal E_{\mathrm{sp}}}=c/\sqrt3$, hence
+  $F_0(\mathcal E_{\mathrm{sp}})=\sqrt c/(3\sqrt2)$ and
+  $2^mF_0(\mathcal E_{\mathrm{sp}})=(2/3)\sqrt c$.
+  Substitution into Corollary~\ref{C:intrinsic-spatial-bracket}
+  proves~\eqref{E:white-moment-bounds} in the original units.
+  All Gamma factors are positive finite for $0<a<1$.
+  At $c=0$, $u=1$ and $C_2=0$ by
+  Theorem~\ref{T:intrinsic-second-moment}; both displayed bounds vanish.
+  This proves Theorem~\ref{T:white-moment-bounds}.
+\end{proof}
+
+\begin{corollary}[Uniform relative width of the bound formulas]
+  \label{C:white-relative-width}
+  For $c>0$, the ratio of the upper and lower formulas is
+  \[
+    \sqrt{K_0(a)M_a}
+    \le\left[\frac{\sqrt\pi}{2\Gamma_E(5/4)^2}\right]^{1/2},
+  \]
+  with equality at $a=1/2$.
+\end{corollary}
+
+\begin{proof}
+  Duplication and recurrence from Lemma~\ref{L:equilibrium-gamma-beta} give
+  \[
+    \Gamma_E(1+a)
+    =\frac{2^a\Gamma_E((1+a)/2)\Gamma_E(1+a/2)}{\sqrt\pi},
+    \qquad
+    (1-a)\Gamma_E((1-a)/2)=2\Gamma_E((3-a)/2).
+  \]
+  Therefore
+  \[
+    K_0(a)M_a
+    =\frac{\sqrt\pi}{2\Gamma_E(1+a/2)\Gamma_E((3-a)/2)} .
+  \]
+  Put $x=1+a/2$, $y=(3-a)/2$, so $x,y>0$ and $x+y=5/2$.
+  In Euler's Gamma integral the $L^2(0,\infty)$ functions
+  $t^{(x-1)/2}e^{-t/2}$ and $t^{(y-1)/2}e^{-t/2}$
+  have squared norms $\Gamma_E(x),\Gamma_E(y)$ and inner product
+  $\Gamma_E(5/4)$.
+  Cauchy--Schwarz, positivity, inversion and the increasing square root
+  prove the bound. At $a=1/2$, $x=y=5/4$, giving equality.
+  Replacing $a$ by $1-a$ exchanges these two arguments, so only this
+  ratio of bound formulas is symmetric, not the moment constant or exponent.
+  This proves Corollary~\ref{C:white-relative-width}.
+\end{proof}
+
+This example retains the all-model theorem rather than replacing its scope.
+The formal static exponent is $3/2$ as $a\downarrow0$; no interchange
+of long-time and temporal-endpoint limits is asserted.
+Jensen holds for the same canonical solution, while $S_1^{\mathrm{pos}}$
+remains auxiliary.
+The read-only Skorohod comparison at strict spatial Riesz exponent below
+one does not cover this spatial-white endpoint.
+A separate white-time problem cannot be substituted for $0<a<1$.
+No new Skorohod result, source correction or certified decimal enclosure
+is claimed.

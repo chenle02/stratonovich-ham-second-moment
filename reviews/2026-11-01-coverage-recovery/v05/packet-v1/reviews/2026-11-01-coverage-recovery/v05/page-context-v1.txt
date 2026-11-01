@@ -1,0 +1,1329 @@
+Derived text of assigned exact PDF pages only; extraction can garble mathematics. Actual PNG inspection is mandatory. No mathematical proof is supplied by this carrier.
+
+===== PHYSICAL PAGE 97 =====
+     sends that order to infinity. The final moment bound comes from B(T ; 1), not the
+     larger tail bound B(T ; 2).
+
+ (v) All identifications above are for fixed T, x, Γ; no convergence rate uniform in T or
+     over covariance shapes is claimed. They prove (13.28) for every fixed T ≥ 1 with
+     the same parameter-only constant. Only after this estimate is proved is T → ∞
+     used for the growth-rate conclusion.
+
+The constants come from L = 78, c = 6α0 and the parameter-only constants of Proposi-
+tion 13.5; covariance enters only through Rα . The volume ratio is |BT +2 |/|B1 | = (T +2)d .
+This proves Theorem 13.8.
+
+Remark 13.9 (Claim and calibration boundary). Theorem 13.8 asserts a nonsharp
+upper growth rate. It does not identify the sharp constant or require a correction
+of the printed first-moment normalization as an input. Its exponent tends to (4 −
+α)/(3 − α) as α0 ↓ 0. Cauchy–Schwarz and the unconditional Jensen inequality remain
+compatible with the nonsharp upper constant; any numeric L∗ calibration retains the
+source-normalization qualification stated earlier. The Skorohod exponent is compared,
+not used to identify constants: both Gaussian creation and annihilation were retained
+here. The intrinsic identification in Goal 43.2 is proved later in Theorem 40.6, using a
+separate argument.
+
+
+14      A static lower comparison and a near-static mean
+        gap
+
+ The four proofs in this section passed a source-bound Opus5.5/HIGH review at
+ 46d1075, all seven checks passing. This is a scoped internal consequence and does
+ not identify the intrinsic constant of Theorem 40.6. Whole-paper clearance remains
+ pending; no novelty or numerical normalization is claimed.
+
+
+Fix a nonzero spatial covariance in Hypothesis 1.1, and put
+
+            ν = 3 − α > 1,       amax = min(1, 2 − α),   β(a) = 4 − α − a,
+                                     β(a)            4−α
+                              κ(a) =      ,    κst =     .
+                                       ν               ν
+Here the temporal exponent varies: u(a) denotes our canonical solution with covariance
+|s − r|−a Γ, for 0 < a < amax . At a = 0 define u(0) = U to be the static canonical
+solution with the same spatial covariance and initial data (1, 0). This endpoint means
+                                                                             0
+the temporal covariance one, not a substitution into ΓE (a). The notation γδ,a  records
+the temporal exponent a in the same Laplace-prefix regularization previously denoted
+by γδ0 .
+
+                                             97
+
+===== PHYSICAL PAGE 98 =====
+Imported static input. From Chen–Hu [5, Theorem 1.2, (1.9), p. 2147], the actual
+static first-mean rate L0 exists and
+
+    0 < L0 := lim t−κst log EU (t, x) < ∞,             lim t−κst log EU (t, x)2 = 2κst L0 .   (14.1)
+               t→∞                                     t→∞
+
+We use only the common pκst factor for p = 1, 2; no numerical value of the static
+variational constant or its white-noise specialization is adopted. Strict positivity in that
+formula follows by using a nonzero Gaussian competitor: its interaction and gradient
+terms scale as Acα/2 and Bc2 , with A, B > 0, so their difference is positive for small c.
+Finiteness and the moment law are the imported source result. The static kernel and
+integral conventions are its (2.10)–(2.14), p. 2150; the fixed-order limits agree with its
+Theorem 3.8(i), p. 2165. We supply the static series convergence needed below from our
+regularized fractional-time upper bound, without using the source’s quantitative (4.3).
+The generalized-covariance convention is explicit in its (2.18), p. 2152. Our spectral ball
+law gives           ∫︂
+                         µ( dξ)                          ∑︂
+                                 ≤ µ(B 1 ) + C α µ(B 1 )     2j(α−2) < ∞.
+                        1 + |ξ|2                         j≥0
+
+Thus the static Dalang condition holds in every admissible dimension. Measure homo-
+geneity of degree d − α is equivalent to distributional homogeneity of degree −α, so the
+source’s (1.8) applies in its explicit generalized-covariance convention. The static object
+is identified by its canonical heat-limit expansion; no uniqueness assertion for other mild
+solutions is used.
+                        (a)
+    For a > 0 write Xn for our fixed-order terms; at zero use the corresponding static
+terms. Set
+                                          (a)
+                            mk (a) = EX2k (1, 0),      m0 (a) = 1.
+
+Lemma 14.1 (Raw-power mean coefficients). For every 0 ≤ a < amax , the coefficients
+mk (a) are nonnegative, and
+                                           ∑︂
+                            Eu(a) (t, x) =    mk (a)tβ(a)k .                 (14.2)
+                                                 k≥0
+
+                                     k
+                      ∑︁
+The series Fa (z) =    k≥0 mk (a)z       is finite for every z ≥ 0. If 0 < a < b < amax , then
+
+                           mk (a) ≤ mk (0)1−a/b mk (b)a/b ,        k ≥ 1.                     (14.3)
+
+Proof. We first justify the static endpoint and its norm series. At positive spatial widths
+its ordered terms are the bounded-variance Gaussian Bochner integrals of Lemma 13.6,
+with a time-constant field. Lemma 3.5, applied with temporal multiplier one to the
+diagonal and mixed-width second moments, gives a common finite diagram limit. The
+same Hilbert Cauchy argument as in Lemma 3.6 therefore gives the static fixed-order
+         (0)
+limits Xn , with the source’s heat-limit convention. This uses no infinite solution series.
+    Fix any b0 ∈ (0, amax ) and δ0 > 0, and put c = γδ00 ,b0 (1) > 0. Let UNϵ (r; 1, x) be
+the static partial series at horizon one and noise amplitude r > 1. Compare its finite
+
+                                                 98
+
+===== PHYSICAL PAGE 99 =====
+Wick sum with
+            √ that of the fractional-time partial series at widths ϵ, δ0 , exponent b0 and
+amplitude r/ c. Since γδ00 ,b0 (s − r′ ) ≥ c for s, r′ ∈ [0, 1], every pair factor on the second
+side dominates the static pair factor. Positivity, then the full regularized bound (13.31),
+gives                                         √                        √
+              E|UNϵ (r; 1, x)|2 ≤ E|uϵ,δ                 2
+                                        b0 (r/ c; 1, x)| ≤ Bb0 (1; r/ c) < ∞,
+                                          0
+
+
+
+uniformly in N, ϵ. The notation Bb0 means the bound in (13.31) at temporal exponent b0 .
+Both positive-width full series exist by Lemma 13.6. Letting N → ∞ at fixed ϵ preserves
+this bound. Lemma 13.7 now applies to the static family (with only the spatial width
+varying). It proves absolute L2 convergence of its limiting series at horizon one, with
+geometric coefficient bounds for every r > 1. Static fixed-order homogeneity gives
+
+                           ∥Xn(0) (t, x)∥2 = t(4−α)n/2 ∥Xn(0) (1, 0)∥2 .
+
+Choosing r > max{1, t(4−α)/2 } in those bounds proves norm summability at every fixed
+t > 0. The resulting series has precisely the source’s canonical static kernels and fixed-
+order limits.
+   For a single chain of length 2k, use the initial-chain variables of Proposition 3.1.
+At common positive spatial width ϵ, let ωϵ,D be its finite positive spatial Green–Wick
+measure on the unit time simplex, with covariance γ2ϵ on every pair. It is finite because
+that covariance is bounded and the Green masses are the time gaps. Define
+                        ∑︂ ∫︂ ∏︂
+                ϵ
+              mk (a) =                 |sj − sh |−a dωϵ,D ,  0 ≤ a < amax .
+                         D∈Πk     {j,h}∈D
+
+These raw-time integrals are finite. At fixed ϵ the spatial factors and Green masses are
+bounded on the finite horizon; the disjoint pair endpoints give integrable powers on the
+full time cube since a < 1. Diagonals are null there. On the disjoint union of the pairing
+measures, the time multiplier at a is exactly the a/b power of its multiplier at b. Hölder’s
+inequality therefore gives
+
+                                mϵk (a) ≤ mϵk (0)1−a/b mϵk (b)a/b .
+
+This is a raw-power identity; no exponent-dependent Laplace cutoff or Euler Gamma
+normalization is being interpolated.
+   We justify removal of the common spatial width. For each positive exponent, the
+proof of Lemma 3.6 gives this raw-time limit as well. Indeed, writing Fϵ,η,D for the
+diagram with common temporal cutoff η, (3.11) gives
+
+                     Fϵ,η,D ≤ Fϵ,0,D ≤ Fϵ,η,D + ra (η),         ra (η) −→ 0,
+
+uniformly in ϵ. First pass to the spatial limit at fixed η, then send η to zero. The
+resulting limit is exactly the joint diagram value from that lemma. At zero exponent the
+multiplier is one, so Lemma 3.5 gives the spatial limit directly; the positive-width Wick
+calculation and the imported static fixed-order convergence identify it with the static
+expectation. Thus, mϵk (a) → mk (a) at all three fixed exponents 0, a, b, proving (14.3)
+and nonnegativity. No convergence uniform in a is claimed.
+
+                                                99
+
+===== PHYSICAL PAGE 100 =====
+    Scaling all times and spatial displacements by t in a regularized one-chain diagram
+gives the factor t2(2k)−αk−ak = tβ(a)k and changes the spatial width to ϵ/t2 . Passing
+                                          (a)
+to the just established limits proves EX2k (t, x) = tβ(a)k mk (a). Odd expectations van-
+ish by Wick’s formula. For positive a the independently proved norm summability in
+Lemma 3.8 justifies the mean-series interchange. At zero the static norm series just
+proved does so, with nonnegative even means. This proves (14.2). Since β(a) > 0, every
+z ≥ 0 equals tβ(a) for some t ≥ 0, and the series is finite. This proves Lemma 14.1.
+Lemma 14.2 (Type    of a positive coefficient series). Let ν ≥ 1, ck ≥ 0, c0 = 1, and
+suppose F (z) = k≥0 ck z k < ∞ for every z ≥ 0. If
+               ∑︁
+
+                             τ = lim sup z −1/ν log F (z) < ∞,
+                                    z→∞
+
+then                                      )︁1/k
+                    K := lim sup (k!)ν ck                       τ = νK 1/ν .
+                                (︁
+                                                < ∞,                              (14.4)
+                             k→∞
+Conversely, finite K implies the same finite τ and equality.
+Proof. If τ < ∞, choose L > τ . Since c0 = 1, τ ≥ 0, and continuity of the power
+                                                          1/ν
+series on compact positive intervals gives F (z) ≤ CL eLz for all z ≥ 0. For k ≥ 1, the
+inequality ck z k ≤ F (z) at z = (νk/L)ν yields
+                                                (︃ )︃νk
+                                             νk   L
+                                    ck ≤ CL e           .
+                                                  νk
+Monotonicity of log x and integration on [1, k] give
+                   k log k − k + 1 ≤ log(k!) ≤ k log k − k + 1 + log k.
+Consequently K ≤ (L/ν)ν . Letting L ↓ τ proves K ≤ (τ /ν)ν , including K = 0 when
+τ = 0.
+    Conversely, for any A > K all sufficiently large coefficients obey ck ≤ Ak /(k!)ν .
+Hence, for a polynomial P with nonnegative coefficients,
+                                   ∑︂ (Az)k
+                   F (z) ≤ P (z) +          ν
+                                              ≤ P (z) + exp{ν(Az)1/ν }.
+                                   k≥0
+                                        (k!)
+
+The last inequality is the elementary ℓν bound
+                                                    ∑︁ ν
+                                                       ak ≤ ( ak )ν , applied to ak =
+                                                              ∑︁
+(Az)k/ν /k!. The polynomial contributes zero to the normalized logarithmic growth.
+Therefore τ ≤ νA1/ν ; let A ↓ K. Combining both inequalities proves the equality when
+either quantity is finite. This proves Lemma 14.2.
+Proposition 14.3 (Static temporal-minimum comparison). For every 0 < a < amax ,
+T > 0 and p ∈ {1, 2},
+                                          [︂ (︁             )︁p ]︂
+                      E[u(a) (T, x)p ] ≥ E U T 1−a/(4−α) , x .          (14.5)
+
+In particular,
+                 lim inf T −κ(a) log E[u(a) (T, x)p ] ≥ pκst L0 ,     p = 1, 2.   (14.6)
+                  T →∞
+
+
+                                              100
+
+===== PHYSICAL PAGE 101 =====
+Proof. Fix positive common spatial and temporal noise widths ϵ, δ. On [0, T ], the
+source’s Laplace-prefix temporal covariance satisfies
+                0
+               γδ,a                    0
+                    (s − r) ≥ cδ,T := γδ,a (T ) > 0,      cδ,T −→ T −a       (δ ↓ 0).
+
+Compare the order-N partial series of u(a) with the same partial series of a static model
+having covariance cδ,T γ2ϵ . At positive widths, the mean or squared moment is a finite
+Wick sum of the same terminal Green kernels and pairings. Every spatial factor is the
+same nonnegative γ2ϵ ; every time factor on the first side is at least cδ,T . Thus, the finite
+expected powers are ordered for p = 1, 2. For d = 3, remove Green smoothing first
+at these fixed positive noise widths using the bounded covariance calculation preceding
+Lemma 3.5.
+    Now send (ϵ, δ) jointly to zero at fixed N . Lemma 3.6 gives the fractional-time L2
+limits. Static fixed-order L2 convergence gives all static split products in L1 , by Cauchy–
+Schwarz. Dependence on cδ,T is a finite polynomial at fixed order, so its limit is the static
+model with noise amplitude σ = T −a/2 . This requires no uniform approximation in T or
+in a varying infinite-order series. At every fixed σ, T > 0, static norm homogeneity gives
+                         σ n ∥Xn(0) (T, x)∥2 = ∥Xn(0) (σ 2/(4−α) T, x)∥2 .
+Thus the amplitude-scaled static norm series is summable at the effective time already
+covered by Lemma 14.1. Finally let N → ∞ using the two L2 expansions, with the
+static one supplied in Lemma 14.1. Means and squared moments converge, preserving
+the finite-order inequality. No covariance-order coupling of the two Gaussian fields is
+asserted.
+    Write Uσ for the static solution with noise amplitude σ. In its pth moment, a total
+order 2k has amplitude factor σ 2k and, by static diagram homogeneity, time factor
+T (4−α)k . For p = 1, 2, the finite sums and then the convergent nonnegative moment
+series therefore give the exact identity
+                             E[Uσ (T, x)p ] = E[U (σ 2/(4−α) T, x)p ].
+Only moments are identified; no spatially indexed random fields are coupled. At σ =
+T −a/2 this proves (14.5). The effective static time tends to infinity and
+                                  (︁ 1−a/(4−α) )︁κst
+                                    T                = T κ(a) .
+The imported static rates (14.1) now prove (14.6). This proves Proposition 14.3.
+Proposition 14.4 (Near-static strict gap from the actual mean rate). Define
+                                                                          )︁1/k
+     M (a) = lim sup T −κ(a) log Eu(a) (T, x), K(a) = lim sup (k!)ν mk (a)
+                                                             (︁
+                                                                                .
+                 T →∞                                              k→∞
+
+Then K(0) = (L0 /ν)ν > 0, and K(b) < ∞ for every 0 < b < amax . Fix such a b and
+choose any finite Bb ≥ max{2K(0), K(b)}. For 0 < a < b,
+                                       (︃      )︃a/(bν)
+                                           Bb
+                            M (a) ≤ L0                  .                  (14.7)
+                                          K(0)
+
+                                               101
+
+===== PHYSICAL PAGE 102 =====
+In particular, with
+                                            b log 2
+                                a∗ :=                 ∈ (0, b],                     (14.8)
+                                        log(Bb /K(0))
+every 0 < a < a∗ satisfies
+
+                        lim inf T −κ(a) log E[u(a) (T, x)2 ] > 2M (a).              (14.9)
+                         T →∞
+
+
+Proof. By Lemma 14.1, the substitution z = T β(a) identifies the normalized logarithmic
+type of Fa (z) with the mean limsup M (a); at zero it equals L0 . The imported static
+law and Lemma 14.2 give K(0) = (L0 /ν)ν . For positive b, Cauchy–Schwarz and The-
+orem 13.8, applied at temporal exponent b, give M (b) < ∞. The same type lemma
+therefore gives K(b) < ∞. There is no use of a printed first-moment rate constant.
+   Multiplying (14.3) by (k!)ν , taking kth roots and then limsups yields
+                                                              a/b
+                                  K(a) ≤ K(0)1−a/b Bb .
+
+To justify this even if coefficients vanish, for any η > 0 both endpoint root sequences
+are eventually bounded by K(0) + η and Bb + η; take their weighted product and then
+let η ↓ 0. Lemma 14.2 now gives
+                                                        (︃          )︃a/(bν)
+                                           1/ν                Bb
+                         M (a) = νK(a)           ≤ L0                          ,
+                                                             K(0)
+
+proving (14.7). Since Bb /K(0) ≥ 2, the window in (14.8) is positive and at most b. For
+0 < a < a∗ ,
+                             2M (a) < 2L0 · 21/ν = 2κst L0 ,
+because κst = 1 + 1/ν. Combine this with Proposition 14.3 at p = 2. This proves
+Proposition 14.4.
+
+Remark 14.5 (Scope and calibrations). The static lower comparison holds at every
+admissible positive temporal exponent; the strict gap from twice the actual first-mean
+limsup is asserted only in the nonempty window (14.8). Its endpoint depends on the fixed
+covariance and the chosen anchor b; no uniformity over covariance shapes is claimed. As
+a ↓ 0, the comparison clock has exponent tending to one, the growth exponent tends
+to κst , and the mean upper bound tends to L0 . The static second-moment constant is
+exactly 2κst L0 .
+    The gap concerns Eu, which is positive by its pairing series; no theorem for E|u| or
+all moment orders is asserted. If an intended source first-mean lower rate L∗ (a) is valid,
+then L∗ (a) ≤ M (a), so (14.9) also improves the corresponding Jensen rate 2L∗ (a) in
+this window. This does not establish the original lower target 2κst L∗ (a), or either sharp
+bound for arbitrary a. The later intrinsic formula in Theorem 40.6 does not identify
+either printed source endpoint. The proof here uses the ordinary Stratonovich pairing
+expansion, including self-contractions; no Skorohod result or sibling-project development
+is made.
+
+                                                 102
+
+===== PHYSICAL PAGE 103 =====
+14.1     Temporal interpolation of the full moment
+
+ The following three proofs and the separate scalar-inference screen passed their own
+ source-bound Opus5.5/HIGH review at 1bf6141, all seven checks passing. The
+ constant at a fixed positive temporal exponent is identified later in Theorem 40.6.
+ Whole-paper clearance remains pending.
+
+Retain the fixed nonzero covariance and the notation of this section. For p = 1, 2, set
+cp,0 (a) = 1 and, for k ≥ 1,
+                                                    2k
+                                                    ∑︂
+                                                             (a)           (a)
+              c1,k (a) = mk (a),       c2,k (a) =         E[Xm   (1, 0)X2k−m (1, 0)].   (14.10)
+                                                    m=0
+
+The zero-exponent terms are the static limits constructed in Lemma 14.1.
+Lemma 14.6 (Interpolation of the full moment coefficients). For 0 ≤ a < amax and
+p = 1, 2, the coefficients are nonnegative and
+                                         ∑︂
+                      E[u(a) (t, x)p ] =    cp,k (a)tβ(a)k < ∞, t > 0.    (14.11)
+                                       k≥0
+
+If 0 ≤ a1 < a < a2 < amax and θ = (a − a1 )/(a2 − a1 ), then
+
+                        cp,k (a) ≤ cp,k (a1 )1−θ cp,k (a2 )θ ,         k ≥ 0.           (14.12)
+
+Proof. Work first at a common positive spatial noise width ϵ and at unit horizon. For
+each split m + n = 2k and pairing D, let ωϵ,m,n,D be the finite positive spatial Green–
+Wick measure in the initial-chain convention of Proposition 3.1, with covariance γ2ϵ .
+For p = 1 take the disjoint union over the single specified split (m, n) = (0, 2k) and all
+pairings. For p = 2, take the disjoint union over every m = 0, . . . , 2k and all pairings.
+In particular, the two empty-chain orientations are distinct terms for p = 2, whereas
+p = 1 has just one. Wick’s formula has coefficient one for each pairing on each ordered
+domain.
+   With ωϵ,p,k denoting this disjoint-union measure, define its raw-time integral by
+                                     ∫︂ ∏︂
+                           ϵ
+                          cp,k (a) =        |sj − sh |−a dωϵ,p,k .
+                                          {j,h}∈D
+
+The pairing label in the multiplier is that of its component. These integrals are finite:
+the spatial covariances and Green masses are bounded on the unit horizons, and the
+disjoint pair endpoints give integrable factors on the full time cube since a < 1. The
+multiplier at a is exactly the product of the endpoint multipliers to powers 1 − θ, θ, off
+null diagonals. Hölder’s inequality on the disjoint union gives
+
+                               cϵp,k (a) ≤ cϵp,k (a1 )1−θ cϵp,k (a2 )θ .
+
+                                                 103
+
+===== PHYSICAL PAGE 104 =====
+    For each fixed positive endpoint, the all-chain bound (3.11) and the common
+temporal-cutoff sandwich used in Lemma 14.1 identify the raw-time spatial limit
+with the joint diagram value. This applies to every unequal or empty split, not only
+to a mean diagram. At exponent zero, the multiplier is one and Lemma 3.5 gives
+the same limit. The static diagonal and mixed-width Gaussian limits identify those
+diagram values with the split expectations of the constructed static terms: products
+converge in L1 by Cauchy–Schwarz, and the terminal-to-initial chain reversal is the
+one in Proposition 3.1, applied before removing widths. For positive exponents this
+identification is Proposition 3.1. The union is finite at fixed k; passing to the spatial
+limit proves (14.12) and nonnegativity. No interpolation of exponent-dependent Laplace
+prefixes is used.
+    Every diagram has 2k time Jacobians, 2k Green scaling factors, k spatial covariance
+factors and k temporal factors. Thus its homogeneous time degree is 4k − αk − ak =
+β(a)k, including both empty-chain cases. For positive a, the full second-moment series
+follows from Proposition 3.1; the mean series is (14.2). At zero, the static norm series
+gives convergence of the finite partial means and squared moments. Each finite moment
+expansion has nonnegative mixed terms, so its increasing limit may be regrouped by total
+order 2k. The homogeneity just proved then gives (14.11). This proves Lemma 14.6.
+   For p = 1, 2 define the actual normalized time growth rates
+
+                         Λp (a) = lim sup T −κ(a) log E[u(a) (T, x)p ],
+                                    T →∞
+                                                                                     (14.13)
+                         Λp (a) = lim inf T −κ(a) log E[u(a) (T, x)p ].
+                                    T →∞
+
+Here p = 1 concerns Eu, not E|u|.
+
+Proposition 14.7 (Log-convexity of the upper growth type). The functions Λp (a),
+p = 1, 2, are positive and finite on 0 ≤ a < amax . For the endpoints and θ in Lemma 14.6,
+
+                                Λp (a) ≤ Λp (a1 )1−θ Λp (a2 )θ .                     (14.14)
+
+In particular, log Λp is convex and Λp is continuous on (0, amax ).
+
+Proof. Put Cp = pκst L0 > 0. The imported static law gives Λp (0) = Λp (0) = Cp .
+Proposition 14.3 gives Λp (a) ≥ Cp for positive a. The full upper bound gives finiteness
+for p = 2. Cauchy–Schwarz gives finiteness for p = 1, whose mean is at least one by its
+positive series. Hence all logarithms and rates used here are well defined, positive and
+finite.
+    Let Fp,a (z) = k≥0 cp,k (a)z k . It is finite for every z ≥ 0, by Lemma 14.6. Its normal-
+                  ∑︁
+
+ized logarithmic type equals Λp (a): spatial stationarity makes the moment independent
+of x, while z = T β(a) and z 1/ν = T κ(a) . Lemma 14.2 therefore gives
+                                                                (︃        )︃ν
+                                          (︁    ν
+                                                        )︁1/k      Λp (a)
+                     Kp (a) := lim sup (k!) cp,k (a)          =               .
+                                 k→∞                                 ν
+
+
+                                              104
+
+===== PHYSICAL PAGE 105 =====
+Multiplying the coefficient interpolation by (k!)ν , taking kth roots and then limsups
+gives
+                              Kp (a) ≤ Kp (a1 )1−θ Kp (a2 )θ .
+More explicitly, the two endpoint root sequences are eventually bounded by Kp (ai ) + η;
+let η ↓ 0 after taking their weighted product. This argument permits zero or oscillating
+coefficient subsequences. Taking the 1/ν power and multiplying by ν proves (14.14).
+    For completeness, continuity follows directly from secant slopes. Write f = log Λp .
+If L < l ≤ x < y ≤ r < R are in (0, amax ), convexity gives
+
+                       f (l) − f (L)   f (y) − f (x)   f (R) − f (r)
+                                     ≤               ≤               .
+                           l−L             y−x             R−r
+Both outer slopes are finite. They bound the absolute difference quotient on each com-
+pact interior interval, proving continuity of f , and hence of its exponential. This proves
+Proposition 14.7.
+Corollary 14.8 (Recovery of the static moment constant). Put Cp = pκst L0 , p = 1, 2.
+For every fixed 0 < b < amax and 0 < a < b,
+                                                     (︃             )︃a/b
+                                                           Λp (b)
+                         Cp ≤ Λp (a) ≤ Λp (a) ≤ Cp                          .      (14.15)
+                                                            Cp
+
+Consequently,
+                        lim Λp (a) = lim Λp (a) = Cp ,         p = 1, 2,           (14.16)
+                        a↓0          a↓0
+
+and
+                                         Λ2 (a)
+                                     lim        = 2κst .                           (14.17)
+                                     a↓0 Λ1 (a)
+
+Proof. The lower estimate is Proposition 14.3. For the upper estimate, apply Proposi-
+tion 14.7 with endpoints 0, b, using Λp (0) = Cp . This proves (14.15). The finite ratio
+Λp (b)/Cp is at least one. With b and the covariance fixed, its a/b power tends to one.
+Squeezing both rates proves (14.16). The numerator and denominator in (14.17) tend
+to 2κst L0 and L0 > 0, respectively. Division gives the asserted ratio. This proves Corol-
+lary 14.8.
+Remark 14.9 (Order of limits and remaining sharp target). The static calibration now
+concerns the constant, not only the time exponent. It is an iterated statement: first
+take a time liminf or limsup at each fixed a, with its own normalization T −κ(a) , and
+then send a ↓ 0. No uniformity over covariances or T , no simultaneous limit, and no
+existence of the time limit at a fixed positive a follows. Only the upper rate is asserted
+to be log-convex on the interior.
+    Neither L∗ (a) nor L∗ (a) enters this argument. The constant L0 is the actual static
+first-mean rate. Parameter continuity alone does not identify the conjectured curve. The
+separate intrinsic second-moment value is proved in Theorem 40.6. No all-p, absolute-
+first-moment, Skorohod, novelty or circulation result is claimed.
+
+                                            105
+
+===== PHYSICAL PAGE 106 =====
+15      A small-order test for direct Brownian clock
+        copying
+
+ These two proofs passed a source-bound Opus5.5/HIGH review at e68310f, all seven
+ contract groups passing. The result concerns a specified gap-transform substitu-
+ tion. It does not rule out ordering corrections, a diagonal-only representation, one-
+ sided/asymptotic use, or the original sharp conjecture.
+
+
+Theorem 6.1 of [4, pp. 37–42] represents the time Laplace transform of a fixed-order
+mean by a spatial Brownian path and an independent scalar Brownian clock. The proof
+uses nonnegative cut sums cl , obtained from one-chain time order on p. 38, before the
+wave-to-heat substitution on p. 39. Remark 6.3, p. 42, singles out that order as the
+obstruction for more copies. We test the direct replacement by two spatial Brownian
+paths and two scalar Brownian clocks, without an additional ordering weight.
+   All transforms below are at fixed total order. We begin with the original admissible
+case d = α = 1, Γ = δ0 , 0 < a < 1, and Gs (y) = 12 1{|y|<s} . This is a falsification case for
+an intended general representation, not a restriction of Goal 43.2.
+
+Lemma 15.1 (White-space low-order Laplace transforms). The (1, 1) cross-pair gap
+transform is
+                              ∫︂ ∞ ∫︂ ∞
+                                                               min(s, t)
+             K× (θ1 , θ2 ) :=            e−θ1 s−θ2 t |s − t|−a            ds dt
+                                0    0                            2
+                                                                                (15.1)
+                              ΓE (1 − a) (︁ a−1         a−1
+                                                            )︁
+                           =               θ      + θ2 ,          θ1 , θ2 > 0.
+                              2(θ1 + θ2 )2 1
+
+In particular, K× (θ, θ) = ΓE (1 − a)/(4θ3−a ). For the empty-plus-length-two self-pair,
+independent gap damping gives
+                                 ∫︂ ∞ ∫︂ ∞
+                                                              r1         ΓE (1 − a)
+             Kself (η1 , η2 ) :=           e−η1 r1 −η2 r2 r2−a dr1 dr2 =             . (15.2)
+                                   0    0                     2           2η12 η21−a
+
+Proof. The spatial cross factor is
+             ∫︂                                  ∫︂
+                                               1                    min(s, t)
+                Gs (y)Gt (z)δ0 (y − z) dy dz =      1{|y|<s∧t} dy =           .
+                                               4                       2
+Split its time integral into s = t + v and t = s + v, with v > 0. Each part is one half the
+product of                     ∫︂   ∞
+                                        te−(θ1 +θ2 )t dt = (θ1 + θ2 )−2
+                                0
+    ∫︁ ∞
+and 0 e−θi v v −a dv = ΓE (1 − a)θia−1 . All integrands are nonnegative and finite since
+a < 1, so Tonelli justifies the separation. This proves (15.1).
+
+                                                  106
+
+===== PHYSICAL PAGE 107 =====
+    For one length-two chain, its delta covariance forces the two positions equal. The
+second Green factor is Gr2 (0) = 1/2, and integration of the first gives mass r1 . The time
+difference is r2 . The two elementary Laplace integrals therefore give (15.2). This proves
+Lemma 15.1.
+   The source’s analytic time covariance is
+                                             )︁−a
+                          γaan (z) = z sgn ℜz ,
+                                    (︁
+                                                        ℜz ̸= 0,
+
+with the power taken on the right half-plane. For r > 0, v ≥ 0, put
+                                         ∫︂ ∞
+                                    1                     2
+                      Ψa (r, v) =             λa−1 e−rλ−vλ /2 dλ.                   (15.3)
+                                  ΓE (a) 0
+
+From the source’s complex Laplace identity [4, (6.3), p. 41], and the Gaussian character-
+istic function, Ψa (r, v) = E(r +∫︁iZ)−a when Z is centered normal with variance v. Fubini
+                                     ∞
+at fixed r > 0 is justified by 0 λa−1 e−rλ dλ < ∞. In particular, Ψa is nonnegative,
+decreases with v, and Ψa (r, v) ≤ r−a .
+    Return to an arbitrary nonzero covariance in Hypothesis 1.1, with temporal exponent
+a, so 0 < a < 1, 0 < α < 2 and a + α < 2. Define
+                      ∫︂                                            ∫︂
+                          −w|ξ|2 /2                                     µ( dξ)
+            hΓ (w) = e              µ( dξ) = (pw ∗ Γ)(0),  RΓ (q) =             .
+                                                                       q + |ξ|2
+                                                                        2
+
+
+Both are positive and finite for w, q > 0. Spectral homogeneity gives hΓ (w) = w−α/2 hΓ (1)
+and RΓ (q) = q α−2 RΓ (1). The actual cross-pair gap transform at common damping is
+
+                                     KΓ (θ) = N2 (θ)2
+
+with temporal exponent a in (3.5). This is the spatial-regularization limit of the (1, 1)
+diagram.
+   Let B1 , B2 be independent spatial standard Brownian motions. For auxiliary stan-
+dard Brownian clocks with E[β1 (u)β2 (v)] = ρ min(u, v), −1 ≤ ρ ≤ 1, independent of the
+spatial paths, the clock difference has variance
+
+                             vρ (u, v) = u + v − 2ρ min(u, v).
+
+At common damping θ > 0, the direct unweighted, unrestricted two-clock covariance
+substitution yields the averaged candidate
+                   1 ∞ ∞ −θ2 (u+v)/2
+                    ∫︂ ∫︂
+       JΓ,ρ (θ) :=           e        hΓ (u + v)Ψa (θ|u − v|, vρ (u, v)) du dv. (15.4)
+                   4 0    0
+
+Values on u = v do not affect the integral. The factor 1/4 is one factor 1/2 for each
+wave-to-heat gap transform; hΓ (u + v) is the spatial average of Γ(B1 (u) − B2 (v)). This
+average is interpreted by spatial heat regularization. For the white covariance it is
+(2π(u + v))−1/2 . The analytic covariance, not its absolute-value bound, is being copied.
+
+                                           107
+
+===== PHYSICAL PAGE 108 =====
+Proposition 15.2 (Obstruction to unweighted constant-correlation clock copying). For
+every covariance and parameters just specified, put
+
+                               λa−2 (︁                    )︁
+                    wθ (λ) =           RΓ (θ) − RΓ (θ + λ) ,         λ > 0.         (15.5)
+                             2θΓE (a)
+
+This is a positive integrable density, and
+                                 ∫︂ ∞
+                       KΓ (θ) =        wθ (λ) dλ,
+                                   0
+                                             ∫︂ ∞                                   (15.6)
+                                                      2θ
+                  0 < JΓ,ρ (θ) ≤ JΓ,1 (θ) =                wθ (λ) dλ < KΓ (θ).
+                                             0      2θ + λ
+When α = 1,
+                                  JΓ,1 (θ) = (2 − 2a )KΓ (θ).                       (15.7)
+Thus this direct analytic clock-copying family, including independent clocks and a single
+shared clock, fails to reproduce the cross-pair transform throughout the original nonzero
+covariance class.
+
+Proof. First evaluate the actual cross transform. Temporarily smooth the spatial co-
+variance, so Fourier and time Fubini are absolute. For r = |ξ|, direct integration over
+s = t + v and t = s + v gives
+          ∫︂ ∞ ∫︂ ∞
+                                                                    2θ + λ
+                    e−θ(s+t)−λ|s−t| G
+                                    ˆ︁s (ξ)G
+                                           ˆ︁t (ξ) ds dt =                            .
+            0    0                                         2θ(θ + r )((θ + λ)2 + r2 )
+                                                               2   2
+
+
+For example, on the first cone the v-integral uses
+              ∫︂ ∞
+                                               (θ + λ) sin(rt) + r cos(rt)
+                   e−(θ+λ)v sin(r(t + v)) dv =                             .
+                0                                    (θ + λ)2 + r2
+
+Integrating the remaining sine-square and sine-cosine terms against e−2θt , and adding
+the second cone, gives the displayed identity. The value at r = 0 is its continuous limit.
+    The resulting spectral integrand is nonnegative. Removing the spatial Gaussian
+multiplier and using the raw-time Laplace formula therefore gives
+                            ∫︂ ∞             ∫︂
+                        1         a−1 2θ + λ                µ( dξ)
+            KΓ (θ) =             λ                                             dλ
+                     ΓE (a) 0           2θ      (θ2 + |ξ|2 )((θ + λ)2 + |ξ|2 )
+                     ∫︂ ∞
+                   =      wθ (λ) dλ.
+                        0
+
+The second equality is partial fractions, with (θ + λ)2 − θ2 = λ(2θ + λ). The smoothing
+passage is justified by monotone convergence in this nonnegative spectral expression and
+the finite quadratic form in Lemma 3.4. Alternatively, homogeneity directly bounds the
+density near zero by a constant times λa−1 , and at infinity by a constant times λa−2 . Its
+strict positivity follows from RΓ (θ) − RΓ (θ + λ) > 0, since µ ̸= 0.
+
+                                              108
+
+===== PHYSICAL PAGE 109 =====
+    The candidate integrals are well defined and positive. The bound Ψa (θ|u − v|, vρ ) ≤
+(θ|u − v|)−a , together with hΓ (w) = hΓ (1)w−α/2 , supplies an absolute majorant. With
+w = u + v, q = u − v, the Jacobian is 1/2 and −w < q < w. It is a constant times
+        ∫︂ ∞                ∫︂ w                    ∫︂ ∞
+               −θ2 w/2 −α/2         −a         2            2
+              e       w          |q| dq dw =             e−θ w/2 w1−α/2−a dw < ∞.
+          0                   −w             1−a 0
+
+Here a < 1 and a + α/2 < 2. The same bound dominates the spatial heat-regularized
+averages, whose spatial factor is hΓ (w+2ϵ) ≤ hΓ (w). This is an averaged spectral bound,
+not pointwise covariance monotonicity. Since vρ (u, v) ≥ |u − v| = v1 (u, v), monotonicity
+of Ψa gives JΓ,ρ ≤ JΓ,1 .
+    We compute the latter by nonnegative Tonelli. Write A = θλ + λ2 /2. Integration in
+q gives 2(1 − e−Aw )/A. Also
+
+                                       1 ∞ −q2 w/2
+                                        ∫︂
+                            RΓ (q) =        e      hΓ (w) dw,
+                                       2 0
+by the elementary resolvent integral and spectral Tonelli. Consequently,
+                               ∫︂ ∞ a−1 ∫︂ ∞
+                         1          λ               (︂ 2              2
+                                                                          )︂
+          JΓ,1 (θ) =                          hΓ (w) e−θ w/2 − e−(θ+λ) w/2 dw dλ
+                     4ΓE (a) 0        A
+                             ∫︂ ∞ a−2 0
+                         1         λ (RΓ (θ) − RΓ (θ + λ))
+                   =                                         dλ
+                     ΓE (a) 0                2θ + λ
+                     ∫︂ ∞
+                             2θ
+                   =               wθ (λ) dλ.
+                       0   2θ + λ
+
+The q-integral’s factor two cancels its coordinate Jacobian 1/2; the resolvent identity
+supplies the other factor two. Since wθ > 0 and 2θ/(2θ + λ) < 1 for every λ > 0, the
+strict inequality follows.
+    Finally, if α = 1, homogeneity gives RΓ (q) = RΓ (1)/q. Substitution in the two
+densities gives
+                                        ∫︂ ∞ a−1
+                               RΓ (1)         λ
+                     KΓ (θ) = 2                     dλ,
+                              2θ ΓE (a) 0 θ + λ
+                                      ∫︂ ∞       (︃              )︃
+                               RΓ (1)        a−1      1      1
+                    JΓ,1 (θ) = 2            λ            −          dλ.
+                              θ ΓE (a) 0            θ + λ 2θ + λ
+
+The real Beta identity
+                    ∫︂ ∞
+                           xa−1
+                                dx = ca−1 ΓE (a)ΓE (1 − a),    c > 0,
+                      0    x+c
+
+follows by scaling and (r, s) ↦→ (r + s, r/s) in the positive product of the two Gamma
+integrals. Their finiteness uses 0 < a < 1. Evaluation of these two integrals gives
+JΓ,1 /KΓ = 2(1 − 2a−1 ) = 2 − 2a , proving (15.7). This proves Proposition 15.2.
+
+
+                                            109
+
+===== PHYSICAL PAGE 110 =====
+Remark 15.3 (Normalization and scope of the obstruction). At the static endpoint
+define the time covariance directly as one. The candidate with Ψ0 = 1 gives
+                                      ∫︂
+                                            µ( dξ)
+                           JΓ,ρ (θ) =                  = KΓ (θ).
+                                         (θ2 + |ξ|2 )2
+                                       2
+This follows by integrating we−θ w/2 hΓ (w)/4 spectrally. In the white case it equals
+1/(4θ3 ). Thus static and homogeneous-degree checks alone miss the positive-a loss.
+Relative to the shared-clock value ρ = 1, the omitted cross-pair multiplier is exactly
+1 + λ/(2θ). For smaller correlations the deficit can be larger. This does not assert a
+correction rule at higher orders.
+   The transforms K× use gap damping. For the auxiliary cutoff function
+                                     ∫︂ T1 ∫︂ T2
+                                                           min(s, t)
+                      F (T1 , T2 ) =             |s − t|−a           ds dt,
+                                       0     0                2
+nonnegative Fubini adds 1/(θ1 θ2 ) to its double external-horizon transform. This function
+is not an actual unequal-time solution correlation. Reversing chains ending at different
+physical times instead shifts the cross covariance to |T1 − T2 − s + t|−a . Setting the two
+damping parameters equal is also not the single Laplace transform of a diagonal-horizon
+moment. For a self-pair at common gap damping, one external horizon instead adds
+1/θ, recovering the known first-mean coefficient.
+    The proposition rules out exactly the analytic covariance substitution in (15.4), with
+product heat-chain measure, unrestricted operational-time rectangle and constant Brow-
+nian correlation. Additional relative-order weights,other derived clock couplings,matrix
+representations,modulus inequalities and their possible asymptotics are not covered. In
+particular, the inequality at this first cross pair leaves open a shared-clock lower compar-
+ison or asymptotic equivalence at higher orders. This finite clock calculation does not
+identify the intrinsic value proved later in Theorem 40.6 with the source’s all-moment
+conjecture. This is not a Skorohod result or a no-go for every two-clock method.
+
+
+16     Covariance bounds for physically masked wave
+       fields
+We establish the covariance estimates needed for the operator construction. Throughout
+this section, Hypothesis 1.1 holds, a = α0 , and Γ ̸= 0. For zero spatial covariance,
+the spatial spectral measures and actual noise variances vanish; the purely temporal
+estimates remain valid independently of Γ. We use the unitary Fourier transform
+                                ∫︂
+                     f (ξ) = cd
+                     ˆ︁            e−iξ·x f (x) dx,  cd = (2π)−d/2 .
+                                  Rd
+
+The spectral convention in Hypothesis 1.1 means that, for every complex Schwartz test
+φ,                 ∫︂               ∫︂ (︃∫︂              )︃
+                           φ(x)Γ( dx) =                eiξ·x φ(x) dx µ( dξ).         (16.1)
+                      Rd                   Rd     Rd
+
+
+                                                110
+
+===== PHYSICAL PAGE 111 =====
+This is an identity of distribution pairings. We will not interchange two infinite measures
+in the associated oscillatory expression.
+    A positive tempered Radon measure has polynomial mass growth. Indeed, choose
+a nonnegative compact smooth test that is at least one on the unit ball, and apply a
+defining Schwartz seminorm bound for the distribution to its dilations. Its mass on a
+ball of radius R ≥ 1 is bounded by a power of R. Summation over dyadic shells then
+gives integrability of (1 + |x|)−N for some N , and hence absolute integrability of every
+Schwartz test. These facts apply to both Γ and µ. Smooth cutoffs converge in the
+Schwartz topology, so these integrals agree with the tempered pairings.
+
+16.1     Translated spectral growth and physical masks
+Proposition 16.1 (Translated spectral mass). Put
+                          ∫︂
+                                    2                eMΓ
+                   MΓ =        e−|x| /4 Γ( dx), CΓ = √ d .
+                            Rd                      (2 π)
+
+Then 0 < MΓ < ∞, and for y ∈ Rd and r > 0,
+                  ∫︂                              )︃d ∫︂
+                                                     (︃
+                            −|ξ−y|2 /r2       r               2   2
+                      e          µ( dξ) =    √             e−r |x| /4 e−iy·x Γ( dx),       (16.2)
+                    d                       2 π         Rd
+                 ∫︂R                        α
+                             2 2           r MΓ
+              0≤      e−|ξ−y| /r µ( dξ) ≤ √ d ,            µ(B(y, r)) ≤ CΓ rα .            (16.3)
+                   Rd                     (2   π)
+
+The ball may be open or closed.
+
+Proof. Temperedness gives finiteness  of MΓ . Its positivity follows from Γ ̸= 0. To check
+                                  ∫︁ −Ax 2 ibx
+the Fourier constant, set J(b) = R e       e dx for A > 0. Squaring the real Gaussian
+                                                   √︁
+integral and using polar coordinates gives J(0) = π/A.   √︁ Differentiation    and integration
+                ′                                                 −b2 /(4A)
+by parts give J (b) = −bJ(b)/(2A). Therefore, J(b) = π/Ae                   . Taking products
+over the coordinates gives
+                       ∫︂                                     (︃ √ )︃d
+                                  −r2 |x|2 /4 i(ξ−y)·x          2 π           2 2
+                              e             e            dx =          e−|ξ−y| /r .
+                        Rd                                       r
+                                                            2   2
+Apply (16.1) to the single Schwartz test e−r |x| /4 e−iy·x to obtain (16.2). Its left side is
+nonnegative. Taking the absolute value on the right removes the complex phase because
+Γ is nonnegative. The pushforward of Γ by x ↦→ rx assigns mass rα−d Γ(A) to a Borel
+set A. Thus,                 ∫︂
+                                   2   2
+                                e−r |x| /4 Γ( dx) = rα−d MΓ .
+                                                                                       2   2
+This proves the Gaussian bound. On either ball B(y, r) the integrand e−|ξ−y| /r is at
+least e−1 , proving the mass bound. This proves Proposition 16.1.
+
+
+
+                                                          111
+
+===== PHYSICAL PAGE 112 =====
+   Choose and fix a real nonzero Schwartz function ζ. For R > 0 put ζR (x) = ζ(x/R),
+                                       d ˆ︁
+       R and L = ∥ζ∥1 . Then kR (u) = R ζ(Ru) and ∥kR ∥1 = L > 0. Define
+kR = ζˆ︂            ˆ︁
+                                                   ∫︂
+                                                2
+               νR ( dη) = ρR (η) dη,  ρR (η) = cd L |kR (ξ − η)|µ( dξ).        (16.4)
+
+Proposition 16.2 (Auxiliary mask norm). The measure νR is even, tempered and
+Radon, with
+                            νR (B(y, r)) ≤ c2d L2 CΓ rα                (16.5)
+for all y ∈ Rd and r > 0, uniformly in R > 0. If H is a separable complex Hilbert space
+and F is an H-valued Schwartz function, then
+                      ∫︂                      ∫︂
+                           ˆ︃       2
+                          ∥ζR F (ξ)∥H µ( dξ) ≤ ∥Fˆ︁(η)∥2H νR ( dη).              (16.6)
+
+For a real H, the same assertion holds after complexification.
+
+Proof. Schwartz decay of kR and polynomial growth of µ show that ρR (η) is finite at every
+η. On compact sets of η, the integrands have a common integrable bound. Dominated
+convergence therefore makes ρR continuous, and νR is Radon. Since ζ is real, kR (−u) =
+kR (u). Evenness of µ gives evenness of ρR . Tonelli’s theorem gives
+                                        ∫︂
+                                     2
+                     νR (B(y, r)) = cd L |kR (u)|µ(B(y + u, r)) du.
+
+Proposition 16.1 and ∥kR ∥1 = L give (16.5). Polynomial growth on centered balls proves
+temperedness by the same dyadic argument as above.
+   Bochner Fourier integration gives
+                                        ∫︂
+                           ζR F (ξ) = cd kR (ξ − η)Fˆ︁(η) dη.
+                            ˆ︃
+
+For scalar Schwartz functions this follows by Fourier inversion and absolute integrability.
+It follows next for finite-rank Hilbert-valued functions. For general F , take projections
+onto the successive spans of a countable orthonormal basis of its separable range closure.
+They converge pointwise in norm. The Schwartz bounds on F dominate the Fourier
+integrals, proving the identity by dominated convergence. In a finite-dimensional space
+the full identity projection suffices; the zero space is immediate. The triangle inequality
+and weighted Cauchy–Schwarz yield
+                                           ∫︂
+                        ∥ζR F (ξ)∥H ≤ cd L |kR (ξ − η)|∥Fˆ︁(η)∥2H dη.
+                         ˆ︃       2     2
+
+
+
+Integrating against µ and applying Tonelli’s theorem proves (16.6). Its right side is finite
+by Schwartz decay and temperedness of νR . This proves Proposition 16.2.
+
+
+
+                                            112
+
+===== PHYSICAL PAGE 113 =====
+16.2     Temporal completion and the original noise
+Lemma 16.3 (Temporal covariance completion). Let T > 0. The form
+                             ∫︂ T ∫︂ T
+                   ⟨f, g⟩a =           f (t)g(s)|t − s|−a dt ds
+                                      0     0
+
+is positive semidefinite on real compact smooth tests. Its null-quotient completion Ha is
+separable. The inclusion of tests extends continuously from L2 (0, T ), with
+                                                    2T 1−a
+                                      ∥f ∥2a ≤             ∥f ∥22 .                    (16.7)
+                                                    1−a
+In its complexification the norm is given by the same double integral with f (t)f (s). In
+particular, bounded measurable amplitudes on a subinterval, extended by zero, belong to
+this completion.
+Proof. Write ΓE for Euler’s Gamma function. Away from the null diagonal,
+                                        ∫︂ ∞
+                               −a   1
+                        |t − s| =            λa−1 e−λ|t−s| dλ.
+                                  ΓE (a) 0
+This follows by substitution in the defining Gamma integral. Moreover,
+                                   ∫︂ min(t,s)
+                         −λ|t−s|
+                        e        =             2λe−λ(t−u) e−λ(s−u) du.
+                                       −∞
+
+For each λ > 0 its quadratic form is an integral of a square. All exchanges for com-
+pact smooth tests are absolutely integrable because the kernel row integral is at most
+2T 1−a /(1 − a). The same bound and 2|xy| ≤ |x|2 + |y|2 prove (16.7). A countable
+L2 -dense family of compact smooth tests is consequently dense in Ha , proving separa-
+bility. The complex quadratic form is the sum of those of the real and imaginary parts,
+since symmetry cancels the imaginary cross term. Thus, the same bound holds after
+complexification. Smooth density in L2 , together with the Schur bound on the absolute
+bilinear form, extends the inclusion and the integral identity to L2 . This includes the
+stated interval amplitudes. This proves Lemma 16.3.
+    Let D consist of finite sums F (t, x) = j τj (t)fj (x) with real τj ∈ Cc∞ (0, T ) and real
+                                           ∑︁
+Schwartz fj . These give Ha -valued Schwartz functions of x. Let W denote the original
+real isonormal noise in (1.2).
+Proposition 16.4 (Completion on the same noise). The space D belongs to the original
+test-noise completion and
+                                          ∫︂
+                                 2      d
+                          EW (F ) = (2π)     ∥Fˆ︁(ξ)∥2HaC µ( dξ).             (16.8)
+
+Define the auxiliary seminorm
+                                                    ∫︂
+                                  2             d
+                           NR (F ) = (2π)                ∥Fˆ︁(η)∥2HaC νR ( dη).
+
+                                                    113
+
+===== PHYSICAL PAGE 114 =====
+Then F ↦→ W (ζR F ) extends as a contraction from the null-quotient completion for NR
+into the original L2 (Ω). The extension is centered and jointly Gaussian. For finitely
+many real F1 , . . . , Fm ∈ D, their actual masked covariance matrix is bounded in posi-
+tive semidefinite order by the matrix of auxiliary inner products. This gives covariance
+comparison for every finite linear Gaussian image and every convex norm power p ≥ 1.
+                                                       ∫︁
+Proof. For real spatial Schwartz f, g, put h(z) = f (y + z)g(y) dy. Fourier inversion
+and Parseval give                        ∫︂
+                                 h(z) = eiξ·z fˆ︁(ξ)ˆ︁
+                                                    g(ξ) dξ.
+
+Therefore,                 ∫︂
+                                eiξ·z h(z) dz = (2π)d fˆ︁(−ξ)ˆ︁
+                                                             g(−ξ).
+
+Apply (16.1) to the single test h and reflect ξ using evenness of µ. The spatial covariance
+               ∫︁
+is thus (2π)d fˆ︁(ξ)ˆ︁
+                     g(ξ)µ( dξ). Summing over the finitely many temporal factors gives
+(16.8). Schwartz decay, temperedness and temporal integrability justify these pairings.
+If W is initially given only on compact spatial tests, smooth expanding cutoffs converge
+in the Schwartz topology. The spectral form is continuous in that topology, admitting
+D in the same completion.
+    Proposition 16.2, applied with H = HaC , gives EW (ζR F )2 ≤ NR (F )2 . It annihilates
+auxiliary-null tests. An auxiliary Cauchy sequence thus gives a Cauchy sequence of
+actual noise evaluations in L2 (Ω), proving the contraction extension and its uniqueness.
+Every finite linear combination of the limits is an L2 limit of centered Gaussian variables.
+Their variances converge, so their characteristic functions prove that the limits remain
+jointly centered Gaussian.
+    For the finite family let A be the actual covariance       matrix and B the auxiliary
+Gram matrix. Applying the norm inequality to i bi Fi gives bT Ab ≤ bT Bb for every
+                                                     ∑︁
+real vector b. Diagonalizing B − A constructs a centered Gaussian vector Z of that
+covariance, independent of the actual evaluation vector X, on a product space. Then
+X + Z has covariance B. Conditional Jensen gives E∥X∥p ≤ E∥X + Z∥p for every
+norm and p ≥ 1. Finite Gaussian moments ensure finiteness of both sides. This proves
+Proposition 16.4.
+   The auxiliary completion depends on R and ζ. Its construction does not define
+multiplication by ζR on the original noise quotient. Nor does the finite linear Gaussian
+comparison assert a covariance comparison for nonlinear wave solutions. The auxiliary
+and original test norms need not dominate one another. No spatial representative for
+every auxiliary class, nonnegative physical inverse covariance for νR , or uniform density
+bound in R is asserted.
+
+Proposition 16.5 (A physical mask need not preserve noise-null tests). In the admis-
+sible case d = 2, α = 1, 0 < a < 1 and Γ = δ0 ( dx1 ) dx2 , there is a real compact smooth
+mask ζ such that no finite C satisfies EW (ζF )2 ≤ CEW (F )2 for every compact smooth
+test F .
+
+
+                                              114
+
+===== PHYSICAL PAGE 115 =====
+Proof. Fourier inversion on Schwartz tests gives µ = (2π)−1 dξ1 δ0 ( dξ2 ) in the stated
+spectral convention. The measure Γ is nonnegative, even, positive definite and tempered,
+with Γ(cA) = cΓ(A). It therefore satisfies Hypothesis 1.1 with α = 1. This is not spatial
+white noise in dimension two. For real compact smooth g, its spatial covariance is, by
+ordinary Fubini,                                          )︃2
+                                  ∫︂ (︃∫︂
+                          V (g) =         g(x1 , x2 ) dx2     dx1 .
+                                       R     R
+
+Choose real even χ ∈      Cc∞ (R) equal to one on [−1, 1] and zero outside [−2, 2].          For
+example, on 1 < r = |x| < 2 use
+
+                                                 e−1/(2−r)
+                                χ(x) =                           .
+                                           e−1/(2−r) + e−1/(r−1)
+The endpoint     exponentials vanish ∫︁ to every order, so the plateau pastes smoothly. Let
+Iχ = (χ′ )2 > 0 and Jχ = χ4 > 0. Positivity of Iχ follows because χ is not
+       ∫︁
+                                                   ′′
+constant, and Jχ ≥ 2. Put g(x)       ∫︁ ′′= χ(x1 )χ (x2 ) and ζ(x) = χ(x1 )χ(x2 ). Their un-
+masked marginal vanishes since χ = 0, whereas integration by parts gives the masked
+marginal −Iχ χ(x1 )2 . Thus, V (g) = 0 and V (ζg) = Jχ Iχ2 > 0. For a nonzero nonnegative
+τ ∈ Cc∞ (0, T ), set F (t, x) = τ (t)g(x). The temporal factor ∥τ ∥2a is finite and strictly pos-
+itive because its nonnegative integrand is positive on a set of positive two-dimensional
+measure. Consequently, the full unmasked variance is zero and the masked variance is
+positive. This proves Proposition 16.5.
+
+16.3     Temporal modulation and continuous wave factors
+            √
+Write ⟨x⟩ = 1 + x2 . Let I = [s, s + h] ⊂ [0, T ], with 0 < h ≤ 1. Norms below are those
+of the complexified temporal completion in Lemma 16.3.
+Lemma 16.6 (Modulated amplitudes). Let A ∈ C 1 (I; C), M = supI |A| and D =
+supI |A′ |. For every real ω,
+                                                                                 16
+        ∥1I A(t)eiωt ∥2a ≤ C0 (a)h2−a (M + hD)2 ⟨hω⟩a−1 ,            C0 (a) =       .     (16.9)
+                                                                                1−a
+The bound is uniform in T, s, h, A and ω.
+                   ∫︁ s+h−v
+Proof. Put c(v) = s         A(u + v)A(u) du for 0 ≤ v ≤ h. Differentiation at the moving
+endpoint gives
+                                                 ∫︂ s+h−v
+               ′
+              c (v) = −A(s + h)A(s + h − v) +             A′ (u + v)A(u) du.
+                                                        s
+
+Thus, c(h) = 0, |c(v)| ≤ hM 2 and |c′ (v)| ≤ M 2 + hM D. Splitting the covariance square
+into its two conjugate triangles gives
+                              ∫︂ h                         ∫︂ 1
+                                    −a iωv
+                   iωt 2
+          ∥1I A(t)e ∥a = 2 Re                        2−a
+                                   v e c(v) dv = 2h Re          y −a eiωhy f (y) dy,
+                                  0                                   0
+
+                                                 115
+
+===== PHYSICAL PAGE 116 =====
+where f (y) = c(hy)/h. Set K = M + hD. Then f (1) = 0 and |f |, |f ′ | ≤ K 2 . If K = 0
+the assertion is immediate. If |ωh| ≤ 1, the last integral is at most K 2 /(1−a) in absolute
+value, and ⟨ωh⟩a−1 ≥ 2(a−1)/2 . The claimed constant is sufficient in this case.
+   Now suppose k = |ωh| > 1. On [0, 1/k] the integral is at most K 2 k a−1 /(1 − a). On
+[1/k, 1], integrate the exponential by parts. The endpoint at one vanishes, while the
+other endpoint contributes at most K 2 k a−1 . The derivative integral, divided by k, is
+bounded by
+                   (︃ ∫︂ 1              ∫︂ 1
+               K2
+                                                  )︃            (︃          )︃
+                              −a−1             −a        2 a−1          1
+                     a      y      dy +       y dy ≤ K k          1+           .
+                k       1/k               1/k                         1−a
+
+Here
+√     k −1 ≤ k a−1 √
+                   since a > 0. The total is at most 4K 2 k a−1 /(1 − a). Finally, k a−1 ≤
+  2⟨ωh⟩a−1 and 8 2 ≤ 16. Including the factor 2h2−a proves the bound for either sign
+of ω. This proves Lemma 16.6.
+
+Lemma 16.7 (Correlated trigonometric products). Let r, ρ ≥ 0. Let Pr be either cos(rt)
+or sin(rt), and let Qρ be either cos(ρt) or sin(ρt). With the amplitude and constant above,
+
+                       ∥1I APr Qρ ∥2a ≤ C0 (a)h2−a (M + hD)2 Qh (r, ρ),             (16.10)
+                            Qh (r, ρ) := ⟨h(r − ρ)⟩a−1 + ⟨h(r + ρ)⟩a−1 .            (16.11)
+
+Proof. Expanding the two trigonometric factors gives four complex exponential modes
+with frequencies σr + τ ρ, σ, τ ∈ {−1, 1}, and coefficients of absolute value 1/4. In a
+Hilbert space,          ⃦            ⃦2 (︄        )︄
+                        ⃦∑︂          ⃦    ∑︂         ∑︂
+                               cj vj ⃦ ≤     |cj |      |cj |∥vj ∥2 .
+                        ⃦            ⃦
+                        ⃦
+                        ⃦            ⃦
+                               j                   j          j
+
+The first coefficient sum is one. Apply Lemma 16.6 to each mode. Two frequencies have
+absolute value |r − ρ| and two have absolute value r + ρ. This gives one half of the
+asserted right side, and hence the bound. Repeated or zero frequencies are permitted;
+no orthogonality or independence of the modes is used. This proves Lemma 16.7.
+
+Lemma 16.8 (Continuous sine factors). Define cr (t) = cos(rt) and
+
+                                         sin(rt)
+                          br (t) = ⟨r⟩             (r > 0),       b0 (t) = t.
+                                            r
+For Fr ∈ {cr , br } and Gρ ∈ {cρ , bρ },
+
+       ∥1I Fr Gρ ∥2a ≤ C1 (a)(1 + T )4 h2−a Qh (r, ρ),C1 (a) = 4 · 31−a C0 (a). (16.12)
+                                                               √
+Proof. For r ≥ 1, br is a sine times a coefficient at most 2. For 0 ≤ r ≤ 1, the
+fundamental theorem of calculus gives
+                                           ∫︂ 1
+                             br (t) = t⟨r⟩      cos(vrt) dv.
+                                                       0
+
+
+                                                   116
+
+===== PHYSICAL PAGE 117 =====
+This includes r = 0. Hence, a product Fr Gρ is a scalar coefficient of absolute value
+at most two times a normalized integral of tj Pr′ (t)Qρ′ (t), where j ∈ {0, 1, 2} and |r′ −
+r|, |ρ′ − ρ| ≤ 1. The integral is over zero, one or two copies of [0, 1]; with no averages,
+use a one-point probability space. Its parameter dependence is continuous in L2 (0, T )
+by dominated convergence. Lemma 16.3 makes it continuous in Ha as well. Thus, the
+averages are genuine Bochner integrals, and their Ha images agree with the pointwise
+averages by continuity of the inclusion. Hilbert Jensen bounds the squared norm of an
+average by the average of the squared norms.
+     Apply Lemma 16.7 to each integrand with A(t) = tj . For j = 0, 1, 2, respectively,
+M + hD is at most 1, T + 1 and T 2 + 2T . In every case (M + hD)2 ≤ (1 + T )4 . For real
+x, e, the triangle inequality and its reverse imply
+
+                               ⟨x⟩
+                                     ≤ ⟨x + e⟩ ≤ (1 + |e|)⟨x⟩.
+                             1 + |e|
+
+The changes in h(r ± ρ) have magnitude at most two, since h ≤ 1. Because a − 1 < 0,
+each altered bracket to the power a − 1 is at most 31−a times the original one. Apply
+these comparisons, Hilbert Jensen and the squared scalar coefficient bound four to obtain
+(16.12). This proves Lemma 16.8.
+   These estimates concern covariance forms and temporal factors. Their actual two-
+phase application is in Section 17; the subsequent operator, source and moment results
+require their separate proofs. They do not follow from covariance domination alone.
+
+
+17     Frequency estimates and both wave variance di-
+       rections
+We now apply the covariance and temporal estimates of Section 16 to the full wave
+phase. We retain Hypothesis 1.1, write a = α0 , and choose and fix
+                                          (︃         )︃
+                                             1 2−α
+                             0 < γ < min       ,        .                   (17.1)
+                                             2    2
+                                                            √︁
+The interval is nonempty because α + a < 2. We use ⟨ξ⟩ = 1 + |ξ|2 and set
+                           ⎧
+                           ⎨1,
+                           ⎪                 α < 1,
+                   Bα (h) = 1 + log(1/h), α = 1,          0 < h ≤ 1.        (17.2)
+                           ⎪
+                           ⎩ 1−α
+                             h ,             α > 1,
+
+17.1     A scalar row estimate for a measure
+Let ν be a positive Radon measure satisfying
+
+                         ν(B(y, r)) ≤ Crα ,      y ∈ Rd ,   r > 0,                  (17.3)
+
+                                           117
+
+===== PHYSICAL PAGE 118 =====
+where C ≥ 0. If the estimate is initially known for open balls, apply it at radius r +ϵ and
+let ϵ ↓ 0 to obtain the closed-ball estimate. Neither evenness nor a density is assumed
+here. Using (16.11), define
+
+                                     Qh (|ξ|, |η|)
+                         Φh (ξ, η) :=              ,                                (17.4)
+                                        ⟨ξ⟩⟨η⟩
+                                            ∫︂
+                                         2γ
+                           Jh (ξ) := ⟨ξ⟩        Φh (ξ, ξ − λ)ν( dλ).                (17.5)
+                                             Rd
+
+These are initially nonnegative extended integrals. In particular, the notation denotes
+a pushforward of ν, not integration against an assumed spectral density.
+
+Proposition 17.1 (Uniform scalar row). There is a finite K = K(α, a, γ), independent
+of d, ν, C, h and ξ, such that
+
+                         sup Jh (ξ) ≤ KCBα (h),             0 < h ≤ 1.              (17.6)
+                         ξ∈Rd
+
+Proof. If C = 0, a countable covering by finite balls gives ν = 0, and the result is
+immediate. Suppose C > 0. For each ξ, let νξ be the pushforward under λ ↦→ η = ξ − λ.
+Then νξ (B(0, R)) ≤ CRα . For q ≥ 1, put
+                                      ∫︂
+                             Aξ (q) =      ⟨η⟩−1 νξ ( dη).
+                                         |η|≤5q
+
+
+Choose N = ⌈log2 (5q)⌉, so 5q ≤ 2N < 10q. Splitting into the unit ball and the annuli
+2j < |η| ≤ 2j+1 gives               (︄        −1
+                                            N
+                                                        )︄
+                                            ∑︂
+                          Aξ (q) ≤ C 1 + 2α      2j(α−1) .
+                                                    j=0
+
+The geometric sum is bounded when α < 1, is N when α = 1, and is at most
+2N (α−1) /(2α−1 − 1) when α > 1. Hence,
+                                        ⎧
+                                        ⎨1,
+                                        ⎪           α < 1,
+                           Aξ (q) ≤ Kα C 1 + log q, α = 1,         (17.7)
+                                        ⎪
+                                        ⎩ α−1
+                                          q ,       α > 1,
+
+with a constant depending only on α.
+    Set q = max(1, |ξ|) and ϵ = 1 − 2γ > 0. On |λ| ≤ 4q we have |η| ≤ 5q. Both bracket
+powers in Qh are at most one, since a − 1 < 0. The contribution of this region to Jh (ξ)
+is at most
+                                2⟨ξ⟩−ϵ Aξ (q) ≤ 2q −ϵ Aξ (q).
+If α < 1, this is uniformly bounded by (17.7). If α = 1, the bound follows from
+                                             1
+                        e−ϵu (1 + u) ≤ 1 +      ,         u = log q ≥ 0,
+                                             eϵ
+                                             118
+
+===== PHYSICAL PAGE 119 =====
+since ue−ϵu has maximum 1/(eϵ). If α > 1, the remaining power is q α+2γ−2 , whose
+exponent is negative by (17.1). Thus, the near contribution is at most a constant times
+C in all three cases.
+    On the far region write r = |λ| > 4q. Then
+                           3r      ⃓|η| − |ξ|⃓ ≥ r ,
+                                   ⃓          ⃓                       r
+                      |η| ≥ ,                              |η| + |ξ| ≥ .
+                           4                       2                  2
+Each oscillatory bracket is at least ⟨hr⟩/2, whereas ⟨η⟩ ≤ 4/(3r) and ⟨ξ⟩−ϵ ≤ 1.
+                                                               −1
+
+Consequently, the far contribution is at most
+                                  ∫︂
+                            4 2−a
+                              2            |λ|−1 ⟨h|λ|⟩a−1 ν( dλ).
+                            3       |λ|>4q
+
+Enlarge the domain to |λ| > 1 and split it into dyadic annuli. Applying (17.3) to their
+masses bounds this expression by a constant depending only on α, a times CS(h), where
+                                      ∞
+                                     ∑︂
+                              S(h) =     2j(α−1) ⟨h2j ⟩a−1 .
+                                        j=0
+
+Choose L = ⌊log2 (1/h)⌋ ≥ 0. For j ≤ L the bracket power is at most one. For j ≥ L + 1
+it is at most (h2j )a−1 . Since α + a − 2 < 0, the tail is
+                             ha−1 2(L+1)(α+a−2)      h1−α
+                                                ≤            .
+                                1 − 2α+a−2        1 − 2α+a−2
+The inequality uses 2L+1 > 1/h and the negative exponent. The finite sum is bounded
+by 1/(1 − 2α−1 ) for α < 1, by 1 + log2 (1/h) for α = 1, and by
+                                          2α−1 h1−α
+                                          2α−1 − 1
+for α > 1. Since h1−α ≤ 1 in the first case, we obtain S(h) ≤ Kα,a Bα (h). Combining
+the near and far bounds, and using Bα (h) ≥ 1, proves the assertion and finiteness of the
+original integral. All constants arose from numerical shell estimates and are independent
+of d. This proves Proposition 17.1.
+Corollary 17.2 (A time exponent above one half). For every
+                                   (︃                 )︃
+                        1                a 3−a−α
+                          < β < min 1 − ,                ,                         (17.8)
+                        2                2       2
+there is a finite Kβ = Kβ (α, a, γ, β) such that
+                        h2−a sup Jh (ξ) ≤ Kβ Ch2β ,   0 < h ≤ 1.                   (17.9)
+                              ξ
+
+Proof. Both upper endpoints in (17.8) exceed one half, by a < 1 and α + a < 2. If
+α < 1, use 2 − a > 2β in Proposition 17.1. If α > 1, use 3 − a − α > 2β. For α = 1, set
+δ = 2 − a − 2β > 0 and u = log(1/h). Then
+                                                              1
+                        hδ (1 + log(1/h)) = e−δu (1 + u) ≤ 1 + .
+                                                              eδ
+This absorbs the critical logarithm. No endpoint value of β is used. This proves Corol-
+lary 17.2.
+
+                                              119
+
+===== PHYSICAL PAGE 120 =====
+17.2     Actual forms on the full phase
+Choose and fix T > 0. Set Λ = (1 − ∆)1/2 , s = 1/2 and Er = H r (Rd ) × H r−1 (Rd ). On
+the complexification of E = Es , use inner products linear in the first slot. The map
+                          Jz(ξ) = ⟨ξ⟩1/2 zˆ︁1 (ξ), ⟨ξ⟩−1/2 zˆ︁2 (ξ)
+                                    (︁                              )︁
+
+is unitary onto L2 (Rd ; C2 ). The full massless wave group has Fourier matrix
+                                    (︃                             )︃
+                                        cos(t|ξ|)    sin(t|ξ|)/|ξ|
+                          S(t, ξ) =                                   ,                 (17.10)
+                                      −|ξ| sin(t|ξ|)   cos(t|ξ|)
+where the sine quotient is t at zero. Let B(b)(u, v) = (0, bu). Choose and fix a real even
+nonnegative ζ ∈ Cc∞ (Rd ) equal to one on B1 and zero off B2 , and put ζR (x) = ζ(x/R)
+for R > 0. For I = [t0 , t0 + h] ⊂ [0, T ], 0 < h ≤ 1, and Schwartz phases z, w, put
+             vz (t) = [S(t)z]1 ,                                                        (17.11)
+                        sin(t|D|)
+            Gw (t) = −            Λw1 + cos(t|D|)Λ−1 w2 ,                               (17.12)
+                           |D|
+        Fz,w (t, x) = 1I (t)vz (t, x)Gw (t, x),         ℓR (I; z, w) = WC (ζR Fz,w ),   (17.13)
+where WC (F ) = W (Re F ) + iW (Im F ). There is no observation cutoff in this definition.
+   We first assume Γ ̸= 0. If Γ = 0, all actual forms and the column maps below are
+zero, so their bounds hold directly. For the nonzero case, let νR be (16.4) and set
+                                Lζ = ∥ζ∥
+                                      ˆ︁ 1 ,        Cν = c2d L2ζ CΓ .                   (17.14)
+Proposition 16.2 gives a positive even tempered Radon measure with νR (B(y, r)) ≤ Cν rα ,
+uniformly in R.
+Proposition 17.3 (Actual form and phase kernel). The tests ζR Fz,w in (17.13) belong
+to the original noise completion. The form ℓR is linear in z and conjugate linear in
+w, and uses the same W as the model. For a smooth deterministic coefficient b with
+common compact spatial support and bounded spatial derivatives on [0, T ],
+                                          ∫︂
+                ⟨S(−t)B(b(t))S(t)z, w⟩E = b(t, x)vz (t, x)Gw (t, x) dx.      (17.15)
+
+For a real compact smooth χ, multiplication Dχ on both phase entries has adjoint
+                          Dχ∗,E w = Λ−1 χΛw1 , ΛχΛ−1 w2 .
+                                    (︁                  )︁
+                                                                               (17.16)
+With U = Jz, V = Jw, r = |ξ|, ρ = |η| and the continuous functions cr , br of
+Lemma 16.8, set                                (︃                )︃
+                                         1       −br cρ −br bρ
+                      K(t; ξ, η) = √︁                               (t).           (17.17)
+                                       ⟨ξ⟩⟨η⟩ cr cρ       c r bρ
+Then
+                   ∫︂ ⃦                                                  ⃦2
+                      ⃦∫︂ ∑︂2                                            ⃦
+                 2
+  E|ℓR (I; z, w)| ≤ ⃦          1I Kij (·; η + λ, η)Uj (η)Vi (η + λ) dη ⃦ νR ( dλ). (17.18)
+                      ⃦                                                  ⃦
+                      ⃦                                                  ⃦
+                              i,j=1                                           HaC
+
+
+                                                  120

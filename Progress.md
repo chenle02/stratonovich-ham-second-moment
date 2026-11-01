@@ -10377,3 +10377,46 @@ has the printed scalar application. Historical reviews/receipt/types stay
 unchanged;80facts/22seams and L0PROPOSED/decision4 retained, no compiler run.
 Final cold preparation for the old candidate remains STALE; cold not run.
 All original model/scope/actual-constant and final delivery gates retained.
+
+
+## 2026-11-01 — common bounded-review contracts prepared for freeze
+
+The preceding turn made concrete editorial/custody progress and completed
+the three-image calibration; no scientific audit was dispatched or
+accepted. This turn prepared the complete common contract inventory before
+scientific dispatch:15components (SF01-04,V01-11) plus one fresh full
+mathematical SYNTHESIS. Every original scope remains:28TeXfiles,44sections,
+213proofs,86selected primary images and all257current PDFpages. No new
+proof, formula, theorem, model restriction or compiler check. Source/PDF
+hashes still match the clean editorial build and its byte-identity audit.
+
+Generated exact held-PDF text carriers for the selected84physical primary
+pages plus separately retained edition PNGs; all7original PDF hashes
+matched custody before extraction. Extracted text may garble mathematics
+and does not replace assigned source images. Each SF component has every
+actual application source needed for its assignment. All28TeX bodies are
+also delivered as optional reference context. The final SYNTHESIS must
+read all28files and independently check ALL213proofs and all coupled uses;
+component votes are not mathematical premises. Its44key mandatory primary
+images and exact full primary text supplement, rather than erase, the
+separate complete86-image source-fidelity scope. No full mathematical
+pass is implied by file access or the packing counts.
+
+Every current PDFpage has its own named visual display/layout check, in
+bounded groups. All primary/source and mathematical check IDs stay
+explicit. Common official composition template loads under the pinned
+consumer:15components/1synthesis,446source-inventory paths,5type paths and
+390named checks. This is schema/preparation evidence, not a review or
+composition pass. Before dispatch bind actual common commit/tree/revision
+in a separate immutable spec; no self-referential candidate hash.
+
+Official composition1 joins text-range credits only, not PNG range credits.
+Each component must independently pass canonical typed-image/source-plan
+coverage, actual route/report/HIGH gates and its exact required-plan hash.
+The independent held minimum explicitly covers all86primary/257current
+frames. Data-level controls consistently removing a frame from plan AND
+bindings are refused for SF04 andV01; real file/copy/hash checks are
+separate. No merged image ledger or project-local accepted flag is created.
+A fresh independent cold read remains after complete mathematical/source/
+visual gates and adjudication. No review is live at this freeze capture;
+SF04 is the first planned real scientific dispatch after common binding.

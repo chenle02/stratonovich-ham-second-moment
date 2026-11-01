@@ -1,0 +1,1223 @@
+Derived text of assigned exact PDF pages only; extraction can garble mathematics. Actual PNG inspection is mandatory. No mathematical proof is supplied by this carrier.
+
+===== PHYSICAL PAGE 1 =====
+    The second moment of the hyperbolic Anderson
+    model with time-dependent noise: Stratonovich
+                       regime
+                        Consolidated working notes, 2026-11-01
+
+                                        Le Chen
+                                  November 1, 2026
+
+
+                                         [held back until the source author has been told]
+
+
+Contents
+1 Model and standing assumptions                                                           5
+
+2 What is known                                                                            7
+  2.1 Stratonovich expansion and moments . . . . . . . . . . . . . . . . . . . .           7
+
+                                             1
+
+===== PHYSICAL PAGE 2 =====
+   2.2   The universal two-chain bound . . . . . . . . . . . . . . . . . . . . . . .     8
+   2.3   Known moment bounds . . . . . . . . . . . . . . . . . . . . . . . . . . .       8
+
+3 Gate G0: cross terms and the loss in the norm bound                                    9
+  3.1 The complete two-chain expansion . . . . . . . . . . . . . . . . . . . . . .      10
+  3.2 A small-order check and a source uniformity issue . . . . . . . . . . . . .       11
+  3.3 Recovering the quadratic-exponential bound . . . . . . . . . . . . . . . .        12
+  3.4 Spatial Wick measures and fixed-order construction . . . . . . . . . . . .        14
+  3.5 The mild equation with the corrected bound . . . . . . . . . . . . . . . .        19
+  3.6 What homogeneity recovers, and what the bound still loses . . . . . . . .         22
+
+4 Gate G1: finite-order calibrations in one space dimension                           24
+  4.1 Spatial white noise: all order-four diagrams . . . . . . . . . . . . . . . . . 24
+  4.2 Riesz covariance: order two and an order-four integral . . . . . . . . . . . 27
+  4.3 Calibration table and limits of the finite-order test . . . . . . . . . . . . . 29
+
+5 G2 upper bounds for spatial exponents at most one                                30
+  5.1 A spatial bound retaining the ordered increments . . . . . . . . . . . . . 30
+  5.2 Summing temporal pairings before using time ordering . . . . . . . . . . 32
+  5.3 Spectral bounds for 0 < α ≤ 1 in all three dimensions . . . . . . . . . . . 33
+  5.4 Checks on the scale, constants and scope . . . . . . . . . . . . . . . . . . 37
+
+6 Higher spatial exponents under a convolution bound                                    38
+
+7 Riesz bounds by interpolation with static noise                                       43
+
+8 General homogeneous covariance in dimension two                                       48
+
+9 Three-dimensional bounds from covariance endpoints                                    54
+
+10 Physical and spectral energy for measure covariances                                 67
+
+11 A static phase estimate at first variance order                                      69
+
+12 All static orders with arbitrary initial phase                                       72
+
+13 Interval fields and the full upper bound                                         80
+   13.1 Finite Gaussian models and their terminal kernels . . . . . . . . . . . . . 91
+
+14 A static lower comparison and a near-static mean gap                              97
+   14.1 Temporal interpolation of the full moment . . . . . . . . . . . . . . . . . 103
+
+15 A small-order test for direct Brownian clock copying                                106
+
+
+
+
+                                           2
+
+===== PHYSICAL PAGE 3 =====
+16 Covariance bounds for physically masked wave fields                               110
+   16.1 Translated spectral growth and physical masks . . . . . . . . . . . . . . . 111
+   16.2 Temporal completion and the original noise . . . . . . . . . . . . . . . . . 113
+   16.3 Temporal modulation and continuous wave factors . . . . . . . . . . . . . 115
+
+17 Frequency estimates and both wave variance directions                               117
+   17.1 A scalar row estimate for a measure . . . . . . . . . . . . . . . . . . . . . 117
+   17.2 Actual forms on the full phase . . . . . . . . . . . . . . . . . . . . . . . . 120
+   17.3 Bessel’s inequality and the two variances . . . . . . . . . . . . . . . . . . 122
+   17.4 Same-noise mean-square columns . . . . . . . . . . . . . . . . . . . . . . 124
+
+18 Finite Gaussian moments and whole-space Sobolev compactness                       125
+   18.1 Finite Gaussian matrices with both variance powers . . . . . . . . . . . . 125
+   18.2 Whole-space cutoffs through an auxiliary periodic space . . . . . . . . . . 128
+   18.3 Balanced adjoints and localized variance envelopes . . . . . . . . . . . . . 130
+   18.4 A nonzero witness and the need for a compact cutoff . . . . . . . . . . . 133
+
+19 The actual Gaussian operator driver                                                  134
+   19.1 A test basis and literal covariance coefficients . . . . . . . . . . . . . . . 135
+   19.2 Gain, adjoints and actual localization . . . . . . . . . . . . . . . . . . . . 137
+   19.3 Actual finite variances and first-chaos tails . . . . . . . . . . . . . . . . . 138
+   19.4 Actual interval limits on the given probability space . . . . . . . . . . . . 140
+   19.5 Time-path convergence and Gaussian norm bounds . . . . . . . . . . . . 141
+
+20 Convergence of the canonical Gaussian source drivers                               143
+   20.1 Gaussian transfer in the full path norm . . . . . . . . . . . . . . . . . . . 143
+   20.2 The spatial covariance space and a retaining extension . . . . . . . . . . 145
+   20.3 Exact joint source law and convergence . . . . . . . . . . . . . . . . . . . 146
+   20.4 Regularized pointfields and the ordinary first response . . . . . . . . . . . 148
+
+21 Fixed masks and displacement moments                                               150
+
+22 Young evolution with constant initial data                                         153
+   22.1 The distributional phase and its free evolution . . . . . . . . . . . . . . . 153
+   22.2 Both constant-response columns of the actual driver . . . . . . . . . . . . 155
+   22.3 The exact linear Young equation . . . . . . . . . . . . . . . . . . . . . . . 156
+   22.4 Ordinary source solutions and the raw tested observable . . . . . . . . . 158
+
+23 Compact mean families and the full-phase spectral gap                            160
+   23.1 The ground family and the actual global phase . . . . . . . . . . . . . . . 161
+   23.2 The full-phase projection and its complementary flow . . . . . . . . . . . 164
+   23.3 The original positive raw control and a common trial . . . . . . . . . . . 166
+
+24 Exact scaling of the canonical solution                                            168
+
+
+
+                                            3
+
+===== PHYSICAL PAGE 4 =====
+25 Actual raw blocks and the original point lower bound                             169
+   25.1 The common raw noise and its exact Gaussian shift . . . . . . . . . . . . 169
+   25.2 Small noisy blocks and an indexed full-phase cone . . . . . . . . . . . . . 171
+   25.3 Actual source restart and comparison with the original point . . . . . . . 173
+
+26 The unmasked Rayleigh rate and positive-control scores                                177
+   26.1 Global bounds and the unmasked spectral bottom . . . . . . . . . . . . . 177
+   26.2 Removing masks from the numerical lower rate . . . . . . . . . . . . . . 179
+   26.3 Full-class dilation and finite positive scores . . . . . . . . . . . . . . . . . 180
+
+27 The temporal equilibrium density                                                    181
+
+28 Physical spatial pairings and the full occupation class                          183
+   28.1 The kernel row and full occupation energy . . . . . . . . . . . . . . . . . 187
+
+29 The actual compact mean and Cameron block map                                    189
+   29.1 Fractional products and the compact spatial map . . . . . . . . . . . . . 189
+   29.2 The actual supported tensor and temporal mean . . . . . . . . . . . . . . 191
+   29.3 The given-noise residual and its Cameron operator . . . . . . . . . . . . . 193
+
+30 Young perturbations retaining the deterministic endpoint                            195
+
+31 Uniform spatial-radius means and Cameron regulation                                 197
+   31.1 Uniform multiplier and spatial tails . . . . . . . . . . . . . . . . . . . . . 197
+   31.2 The time tensor and the actual regulator . . . . . . . . . . . . . . . . . . 199
+   31.3 The given-noise block Cameron embedding . . . . . . . . . . . . . . . . . 201
+
+32 Radius-explicit stochastic first-driver bounds                                   203
+   32.1 Uniform outer factors and the exact whole-space envelope . . . . . . . . . 203
+   32.2 The actual driver and covariance contractions . . . . . . . . . . . . . . . 205
+   32.3 The growing-radius expected-norm anchor . . . . . . . . . . . . . . . . . 207
+
+33 Signed rough static potentials and the physical wave                                208
+
+34 The actual symplectic phase and block-mean baseline                                 212
+
+35 Actual Gaussian control tubes and Rayleigh transfer                               216
+   35.1 The genuine Wiener realization . . . . . . . . . . . . . . . . . . . . . . . 217
+   35.2 Closed tubes and exact half-action geometry . . . . . . . . . . . . . . . . 218
+   35.3 The actual wave tuple and its globally defined endpoint . . . . . . . . . . 220
+   35.4 Uniform coarse envelope and the exact radial integral . . . . . . . . . . . 222
+
+36 Uniform spectral rates and phase products                                           224
+   36.1 The actual E class and its own spectral constants . . . . . . . . . . . . . 224
+   36.2 Scalar-time averaging and actual mean budgets . . . . . . . . . . . . . . 227
+   36.3 Full blocks, the true last cell and polynomial control balls . . . . . . . . . 229
+
+                                             4
+
+===== PHYSICAL PAGE 5 =====
+    36.4 Arbitrary small residual paths and the ordered product . . . . . . . . . . 230
+
+37 The original point moment and the growing-cone phase                                   231
+
+38 The original upper bound by a moving signed raw score                                  236
+
+39 Finite optimization with nonnegative Gram entries                                      239
+
+40 The positive-control formula for the original moment limit                             243
+
+41 Occupation bounds for the intrinsic constant                                           248
+
+42 Spatial white noise: energy and explicit moment bounds                                 252
+
+43 Targets and verification status                                                        255
+
+44 Established steps and open questions                                                   255
+
+
+1     Model and standing assumptions
+We study the hyperbolic Anderson model [4, (1.1)]
+       ∂ 2u                                                         ∂u
+            (t, x) = ∆u(t, x) + Ẇ (t, x)u(t, x),    u(0, x) = 1,      (0, x) = 0,       (1.1)
+       ∂t2                                                          ∂t
+for (t, x) ∈ R+ × Rd , d ∈ {1, 2, 3}, interpreted in the Stratonovich sense (limit of classical
+wave equations driven by smoothed noises Ẇϵ,δ ). The noise is centered Gaussian with
+              Cov Ẇ (s, x), Ẇ (t, y) = |s − t|−α0 γ(x − y),
+                   (︁                   )︁
+                                                                   0 < α0 < 1,            (1.2)
+where γ ≥ 0 is nonnegative definite with spectral measure µ.
+Hypothesis 1.1 (Homogeneous covariance). Let d ∈ {1, 2, 3} and 0 < α0 < 1. The
+spatial covariance is a nonnegative, even, positive-definite tempered Radon measure Γ
+on Rd , with positive even tempered Radon spectral measure µ in the convention
+                    ∫︂
+               Γ = eiξ·x µ( dξ) in the sense of tempered distributions.
+
+The symbol γ in (1.2) denotes this covariance as a function when one exists, and as a
+distribution otherwise. For every Borel set A and c > 0, Γ(cA) = cd−α Γ(A), and
+                                          α0 + α < 2,                                    (1.3)
+with 0 < α < d, or α = d = 1. In particular, the last case includes spatial white noise
+Γ = δ0 .
+    Throughout we write
+                                         4 − α − α0
+                                  κ :=              ∈ (1, 2).                            (1.4)
+                                            3−α
+
+                                                5
+
+===== PHYSICAL PAGE 6 =====
+Main result and dependencies. Theorem 40.6 identifies the original point-moment
+limit for every covariance in Hypothesis 1.1. Its full variational domain and normal-
+ization are displayed in (40.9). Theorem 41.4 and Corollary 41.5 give derived bounds;
+Section 42 evaluates the white spatial energy and its resulting moment bounds. These
+bounds need not be attained at the moment constant.
+    The independent earlier Theorem 13.8 establishes finite upper growth at scale tκ
+and precedes its uses proving variational finiteness. It uses the fixed-order construction
+proved in Lemma 3.6, the Gaussian and complex phase estimates in Sections 11–12,
+and the interval coefficient and inventory estimates in Section 13. It does not use the
+alternative covariance interpolation arguments in Sections 6–10 as inputs. Its uniform
+geometric tail is proved here from scaled finite-model moments; the older mixed-series
+and crude estimates in Section 3 are not needed for that moment-limit passage. The
+separate verification of the mild equation is proved in Proposition 3.9, using the corrected
+vertexwise bound of Lemma 3.8. The alternative arguments are retained to record their
+separate hypotheses and limitations. Section 5 also gives explicit constants for α ≤ 1;
+the full-class theorem asserts a finite uniform constant, without giving a numerically
+optimized value. The later proof constructs the actual operator and its retaining sources
+in Sections 19–22, then proves the same-solution lower bound and positive-control scores
+in Sections 25–26. The actual Gaussian upper argument culminates in Sections 37–38.
+Finite Gram optimization and its physical application then match the upper and lower
+values in Section 40. This dependency order does not use that final identification to
+prove its own finiteness.
+
+Notation and source-dependent statements. The target spatial degree is α,
+whereas χ denotes the degree of an auxiliary static covariance in Sections 7–10. The
+coefficient power is β = 4 − α − α0 ; the factorial power in Section 13 is ν = 3 − α.
+The local exponent b = 2 − α in Section 5 is different from coordinate powers bj in
+Section 9. In Section 6, δ = α − 1 is an exponent; when used for temporal noise
+smoothing, δ is a cutoff width. The covariance measure Γ( dx) and the Euler Gamma
+function Γ(q) are distinguished by their arguments. The local p = 2 − α0 in Section 13
+is an inventory-decay exponent; it is not the moment order p in Conjecture 2.3. The
+unconditional first-to-second moment comparison is Proposition 2.4. Any numerical
+consequence involving the source’s L∗ explicitly assumes a valid first-moment lower
+bound with that constant. No correction of its printed normalization is adopted. When
+a radius is given for topological support, the closed ball is meant unless a strict open
+inclusion is specified. In particular the spatial cutoffs have support in B 2R and the wave
+Green measures have support in B t , including the sphere measure in dimension three.
+Plateau and causal-cone arguments retain their strict margins.
+
+Which source statements are inputs. The moment estimate uses the bounded-
+operator Crouzeix–Palencia theorem in (12.1). The fixed-order construction is supplied
+here by Lemmas 3.5–3.6, using only the source’s universal pairing inequality [4, The-
+orem 3.1, (3.6), pp. 14–15] and the direct norm bounds in Lemma 3.4. Thus neither
+
+
+                                             6
+
+===== PHYSICAL PAGE 7 =====
+Theorem 4.1 nor Lemma 4.4 nor Appendix A.1 of the source is an analytic construc-
+tion input. The finite-width Gaussian field and multiple Stratonovich integral use its
+definitions and regularization conventions, with Green smoothing removed before noise
+smoothing. The three construction lemmas and their changed consumers passed a fresh
+scoped Opus5.5/HIGH review at source revision f9303ed. This is separate from the
+earlier quantitative reviews and from the pending whole-paper cold read.
+    Proposition 3.9 proves that the resulting series satisfies its onefold Stratonovich mild
+equation, using the corrected vertexwise bound. It does not import the author’s Sec-
+tion 5(ii) argument or (5.3)–(5.4). No uniqueness assertion is made. The uniform tail
+passage for the target-scale moment estimate is proved in Lemma 13.7, independently
+of the crude bound and the source’s series estimate. The mixed-width and order-limit
+passages for the mild equation are supplied here as well.
+    The first-moment formulas in Theorem 2.1 are quoted source statements, with the
+printed-normalization qualification there; they are not premises of the full upper theo-
+rem. Chen–Hu’s static coefficient estimates and Chen’s 2023 variational finiteness the-
+orem are used only in the explicitly identified auxiliary sections. In particular, our uses
+of the latter cite Theorem 1.1, not Corollary 1.2. Thus neither a disputed first-moment
+constant nor an auxiliary static coefficient theorem enters the interval-field upper bound.
+
+
+2       What is known
+All pinpoints below refer to the current author version [4] (64 pages, “Sub-
+mitted to the Annals of Applied Probability”, SHA-256 5f7385ca...); see
+sources/SOURCE-MANIFEST.md.        arXiv:2510.01412v1 [3] differs in Theorem 1.2
+and must not be used as the authority for it.
+
+2.1       Stratonovich expansion and moments
+The solution is the Stratonovich expansion [4, (2.13)–(2.16)]
+                                                       ∞
+                                                      ∑︂      (︁           )︁
+                                     u(t, x) =              Sn gn (·, t, x) ,
+                                                      n=0
+                                                          n
+                                                      (︂ ∏︂                                )︂                          (2.1)
+    gn (s1 , . . . , sn , x1 , . . . , xn , t, x) =           G(sl+1 − sl , xl+1 − xl ) 1[0,t]n< (s1 , . . . , sn ),
+                                                        l=1
+
+with sn+1 = t, xn+1 = x, G the fundamental solution of the wave equation, and [0, t]n< =
+{0 < s1 < · · · < sn < t}. Odd expected Stratonovich integrals vanish and even ones
+are given by Wick’s formula [4, (2.19)–(2.21)], a sum over pair partitions D ∈ Πn of
+{1, . . . , 2n} that includes self-pairings within one chain. The second moment of one
+ordered term is the two-chain pairing integral, stated in [4, Theorem 4.1, (4.3)] and
+
+
+
+
+                                                                  7
+
+===== PHYSICAL PAGE 8 =====
+proved here under Hypothesis 1.1 in Proposition 3.1:
+
+                       ∑︂      ∫︂                     ∫︂                      2 ∏︂
+                                                                          (︂ ∏︂                               )︂
+E Sn (gn (·, t, x))2 =
+ [︁                 ]︁
+                                                 ds                     dx         G(sl − sp(l) , xl − xp(l) )
+                        D∈Πn    [0,t]n       n
+                                     < ×[0,t]<         (Rd )n ×(Rd )n        ρ=1 l∈Iρ
+                                ∏︂
+                          ×             |sj − sk |−α0 γ(xj − xk ),
+                              (j,k)∈D
+                                                                                                           (2.2)
+
+with I1 = {1, . . . , n} and I2 = {n + 1, . . . , 2n}. Here p(l) is the preceding label in its own
+chain; at the first vertex of either chain use the common root (sp(l) , xp(l) ) = (0, 0). Thus,
+the second chain does not continue the first one. This spells out the source’s conventions
+in Theorem 4.1.
+   The full mixed-term expansion is justified in Proposition 3.1.
+
+2.2     The universal two-chain bound
+[4, Theorem 3.1, (3.6), p. 15] bounds exactly such two-chain pairing integrals with general
+                                                                         (1)     (2)
+nonnegative kernels Gl by products of the norms ∥Gl ∥(0) , ∥Gl ∥j,k , ∥Gl ∥j,k of [4, (3.3)–
+(3.5)], over a partition {Q0 , Q1 , Q2 } of {1, . . . , 2n} with #Q0 = #Q1 and #Q2 even. As
+stated, the theorem uses finite spatial spectral       measures µj,k with nonnegative covariance
+functions and temporal kernels Γ(α0 )−1 Aj,k e−λ|r| λα0 −1 dλ for measurable Aj,k ⊂ R+ .
+                                              ∫︁
+
+The application to the full covariance therefore requires regularization; this is carried
+out in Lemma 3.7. The theorem includes cross-pairings between the two chains. In the
+source it is used only for Stratonovich integrability (Section 4) and, via Lemma A.1 with
+Gl (t, x) = e−θt G(t, x), in Laplace variables.
+
+2.3     Known moment bounds
+
+  The following statement records the source as printed. Its variational constants
+  require normalization clarification; see Remark 9.8. We retain the printed formulas
+  without adopting a correction. The upper-bound proofs below do not use the first-
+  moment upper constant.
+
+Theorem 2.1 ([4, Theorem 1.2, (1.10)–(1.13)]). Source statement as printed. The
+source states, under Hypothesis 1.1,
+
+                L∗ ≤ lim inf t−κ log Eu(t, x) ≤ lim sup t−κ log Eu(t, x) ≤ L∗ ,
+                        t→∞                                    t→∞
+
+where, for E ♯ ∈ {E∗ , E},
+                                   4−α−2α0                    1
+                (︃
+                   (4 − α − 2α   )    2
+                                           (︂ 2E ♯ )︂ 2−α )︃ 3−α
+                               0                       2
+L(E ♯ ) := (3−α) 3                                               ,                 L∗ = L(E∗ ),    L∗ = L(E),
+                   2 (4 − α − α0 )4−α−α0 2 − α
+
+                                                           8
+
+===== PHYSICAL PAGE 9 =====
+and E∗ < E are the variational quantities [4, (1.11)–(1.13)]. These printed normalizations
+are quoted, not adopted as established inputs. Numerical calibrations using L∗ below
+explicitly assume the intended first-moment lower bound.
+    The source predicts that the limit exists and equals L∗ [4, p. 4]; this is not proved, and
+[4, Remark 8.1] explains why the lower bound is not sharp (complex-valued intersection
+local time).
+                                                              2
+Theorem 2.2 ([4, Remark 5.1, (5.8)]). Eu2 (t, x) ≤ eCt for large t.
+Conjecture 2.3 ([4, (1.22)]). For p = 1, 2, . . . ,
+                                                             4−α
+                                lim t−κ log E|u(t, x)|p = p 3−α L∗ .
+                                t→∞
+
+    Since p(4−α)/(3−α) grows faster than p, the conjectured second-moment constant
+2(4−α)/(3−α)
+             L∗ exceeds 2L∗ . The source explains why its method stops at p = 1
+[4, Remark 6.3]: the representation of Theorem 6.1 there uses the monotone order
+s1 ≤ · · · ≤ s2n of a single chain.
+Proposition 2.4 (Jensen lower bound). Under Hypothesis 1.1, Eu(t, x) ≥ 1 and
+Eu2 (t, x) ≥ (Eu(t, x))2 . Consequently, for every real ℓ,
+               lim inf t−κ log Eu(t, x) ≥ ℓ   =⇒     lim inf t−κ log Eu2 (t, x) ≥ 2ℓ.
+                t→∞                                    t→∞
+The specialization ℓ = L∗ is conditional on the intended first-moment lower bound with
+that constant. It is not an unconditional adoption of the printed normalization in The-
+orem 2.1.
+                                                        ∑︁
+Proof. For each fixed t, x, Lemma 3.8 below   ∑︁  gives    n ∥Xn (t, x)∥2 < ∞; its proof does
+not use the present proposition. Thus,           n E|Xn (t, x)| < ∞, and the mean of the
+canonical
+∑︁         series is the sum of its means. By (2.1) and [4, (2.20)–(2.21)], Eu(t, x) =
+   n≥0 ES 2n (g2n (·, t, x)) ≥ 1, since every term is a pairing integral of a nonnegative
+integrand and S0 = 1. By the Cauchy–Schwarz inequality, Eu2 (t, x) ≥ (Eu(t, x))2 ,
+so t−κ log Eu2 (t, x) ≥ 2 t−κ log Eu(t, x). Taking lower limits proves the implication for
+every valid ℓ. Substituting L∗ requires its stated first-moment premise. This proves
+Proposition 2.4.
+
+
+3     Gate G0: cross terms and the loss in the norm
+      bound
+This section records a diagnosis of the proposed route, not a proof of Goal 43.1. Put
+Xn (t, x) = Sn (gn (·, t, x)), with X0 = 1, and
+                                                           (2k)!
+                         β = 4 − α − α0 > 2,         Pk = #Πk =  .
+                                                           2k k!
+The count follows by pairing the smallest remaining label with one of 2k − 1 labels:
+P0 = 1 and Pk = (2k − 1)Pk−1 , which gives the displayed formula by induction. All
+constants below may depend on the fixed covariance and its parameters, but not on the
+orders or on t.
+
+                                                 9
+
+===== PHYSICAL PAGE 10 =====
+3.1    The complete two-chain expansion
+For m + n = 2k, label the two chains by I1 = {1, . . . , m} and I2 = {m + 1, . . . , m + n}.
+A self-pairing has both endpoints in one chain; a cross-pairing has one endpoint in each
+chain. Both are included in Πk . Let p(l) denote the preceding vertex in its own chain;
+at each first vertex set (sp(l) , yp(l) ) = (0, 0). Thus, the second chain has its own root,
+rather than the last vertex of the first chain. For D ∈ Πk , set
+                         ∫︂                     ∫︂                  2 ∏︂
+                                                                   ∏︂
+          Jm,n,D (t) =                     ds                 dy              G(sl − sp(l) , yl − yp(l) )
+                          [0,t]m       n
+                               < ×[0,t]<         (Rd )m+n          ρ=1 l∈Iρ
+                                                ∏︂                                                          (3.1)
+                                                                    −α0
+                                           ×             |sj − sh |       γ(yj − yh ).
+                                               (j,h)∈D
+
+
+An empty chain contributes the factor one. For d = 3, the spatial Green kernels are
+measures; for spatial white noise the covariance is a delta measure. Integrals in (3.1)
+use the generalized-kernel and regularization conventions of the source, not pointwise
+values of these measures. Lemmas 3.5–3.6 construct them with the convention of [4,
+Remark 2.3, p. 11, and the Green regularization on pp. 13–14].
+
+Proposition 3.1 (Mixed terms). Under Hypothesis 1.1,
+                                     ⎧ ∑︂
+                                     ⎨     Jm,n,D (t), m + n = 2k,
+              E[Xm (t, x)Xn (t, x)] = D∈Πk                                                                  (3.2)
+                                       0,              m + n odd,
+                                     ⎩
+
+where the case m = n = 0 equals one. In particular,
+                                                 ∞ ∑︂
+                                                ∑︂ 2k ∑︂
+                                2
+                              Eu (t, x) =                          Jm,2k−m,D (t).                           (3.3)
+                                                k=0 m=0 D∈Πk
+
+This is a convergent series of nonnegative terms.
+
+Proof. Lemma 3.6 below constructs each Xn and each individual two-chain diagram at
+arbitrary vertexwise widths, including unequal and empty chains. Its proof uses the
+positive spatial-measure limit and the imported universal Theorem 3.1; it uses neither
+the present proposition nor any infinite solution series.
+    At positive noise widths Wick’s formula gives zero at odd total order and the finite
+pairing sum at even total order. The Green-width limit is taken first, as in the construc-
+tion preceding Lemma 3.5. At fixed m, n, joint L2 convergence of the two factors gives
+product convergence in L1 :
+
+          ∥Ym Yn − Xm Xn ∥1 ≤ ∥Ym − Xm ∥2 ∥Yn ∥2 + ∥Xm ∥2 ∥Yn − Xn ∥2 −→ 0.
+
+A zero-order factor stays equal to one. Each individual Wick diagram also has the finite
+nonnegative limit in Lemma 3.6.
+
+                                                         10
+
+===== PHYSICAL PAGE 11 =====
+   To identify its initial-chain form, for terminal variables in the first chain set
+
+                 s′j = t − sm+1−j ,      yj′ = x − ym+1−j ,          1 ≤ j ≤ m,
+
+and use the corresponding length-n transformation on the second chain. Each trans-
+formed chain has initial root (0, 0). For example, G(t − sm , x − ym ) becomes G(s′1 , y1′ );
+every other factor becomes the corresponding successive increment. The differences in
+each covariance change sign, absorbed by evenness. The vertex involution is
+
+      ρ(j) = m + 1 − j (1 ≤ j ≤ m),             ρ(m + j) = m + n + 1 − j (1 ≤ j ≤ n).
+
+It induces the pairing bijection D ↦→ {{ρ(a), ρ(b)} : {a, b} ∈ D}. The same transforma-
+tion holds before removing noise smoothing. Passing to the finitely many diagram limits
+proves (3.2) with precisely (3.1).
+    Lemmas 3.7 and 3.8 independently prove fixed-t norm summability of the Xn , using
+the fixed-order construction just cited and the universal pairing bound. Proposition 3.9
+identifies their series as a Stratonovich mild
+                                           ∑︁N solution. None2 of those proofs uses the
+present mixed-term identity. Hence UN = n=0 Xn → u in L , and
+
+                    |EUN2 − Eu2 | ≤ ∥UN − u∥2 (∥UN ∥2 + ∥u∥2 ) −→ 0.
+
+The finite expansions of EUN2 increase, since every mixed expectation computed above
+is nonnegative. Their limit is the full double sum, independent of its enumeration.
+Regrouping by total order gives (3.3). This proves Proposition 3.1.
+
+3.2    A small-order check and a source uniformity issue
+Lemma 3.2 (White-space test). For d = α = 1 and γ = δ0 , put c0 = ((1 − α0 )(2 −
+α0 )(3 − α0 ))−1 . Then
+
+                     EX1 (t, x)2 = c0 t3−α0 ,        EX2 (t, x) = 12 c0 t3−α0 .         (3.4)
+
+In particular, the total-order-two contribution to (3.3) is 2c0 t3−α0 .
+
+Proof. Here G(s, y) = 12 1{|y|<s} . Therefore, R G(s, y)G(r, y) dy = min(s, r)/2. The
+                                                   ∫︁
+
+(1, 1) integral is
+                   ∫︂ t    ∫︂ s
+                                                            t3−α0
+                        ds      r(s − r)−α0 dr =                             .
+                     0       0                   (1 − α0 )(2 − α0 )(3 − α0 )
+
+For the (0, 2) integral, the delta covariance sets the two spatial vertices equal. Write
+0 < r < s < t for their ordered time variables. The first factor Gr has spatial mass r,
+while Gs−r (0) = 1/2. Its time integral is half the preceding display. The (2, 0) term is
+identical. This proves Lemma 3.2.
+
+
+
+
+                                                11
+
+[held back until the source author has been told]
+
+3.3    Recovering the quadratic-exponential bound
+Write Gθ (s, y) = e−θs G(s, y) and G ˆ︁s (ξ) = sin(s|ξ|)/|ξ|, with value s at ξ = 0. We use the
+norms in the source’s (3.3)–(3.5), with the full covariance, but give their bounds directly.
+Write ΓE for Euler’s Gamma function in the following definitions, to distinguish it from
+the covariance measure:
+                        ∫︂ ∞
+               N0 (θ) =       e−θs Gs (Rd ) ds,
+                          0
+                                 ∫︂ ∞              ∫︂
+                            1             α0 −1              µ( dξ)
+               N1 (θ) =                λ        dλ                         ,              (3.5)
+                        ΓE (α0 ) 0                     (θ + λ)2 + |ξ|2
+                        ∫︂ ∞ ∫︂ ∞                         ∫︂
+                    2                −θ(s+t)          −α0
+              N2 (θ) =             e          |s − t|        Gˆ︁s (ξ)G
+                                                                     ˆ︁t (ξ)µ( dξ) ds dt.
+                          0      0
+                                                                        ∫︁ ∞
+The second expression uses the elementary wave Laplace transform 0 e−as G        ˆ︁s (ξ) ds =
+(a2 +|ξ|2 )−1 . The last expression is the space-time covariance quadratic form; in physical
+variables it pairs Gθ (s, x) with Gθ (t, y). Thus, the second Green factor in the printed
+source (3.5) is read with the independent variable y.
+
+Lemma 3.4 (Homogeneous damped norms and temporal tails). Under Hypothesis 1.1,
+the integrals in (3.5) are finite for every θ > 0, with N2 (θ)2 ≥ 0, and
+
+ N0 (θ) = θ−2 ,     N1 (θ) = θα+α0 −2 N1 (1),           N2 (θ)2 = θ−β N2 (1)2 ,   β = 4 − α − α0 .
+
+Let                                               ∫︂ ∞
+                                          1
+                              KM (r) =                   e−λ|r| λα0 −1 dλ.
+                                       ΓE (α0 )    M
+             (M )                                    (M )
+Denote by N1 (1) the first norm with λ > M , and by N2 (1) the second norm with
+KM (s − t) in place of |s − t|−α0 . Then
+                       (M )                     (M )
+                     N1       (1) −→ 0,     N2         (1) −→ 0    (M → ∞).                   (3.6)
+
+Spatial Gaussian smoothing, Gaussian smoothing of the Green kernel, and restriction of
+a temporal Laplace domain do not increase these corresponding full or tail norm bounds.
+
+                                                  12
+
+===== PHYSICAL PAGE 13 =====
+Proof. Scaling the Fourier representation of Γ and using Fourier uniqueness gives
+µ(cA) = cα µ(A). Radon finiteness and α > 0 then imply µ({0}) = 0. In particular,
+µ(Br ) = rα V , where V = µ(B1 ) < ∞. Therefore, for a > 0,
+                           ∫︂                          ∫︂ ∞ α−1
+                                 µ( dξ)           α−2        u
+                                 2      2
+                                          = αV a                    du < ∞.
+                               a + |ξ|                   0  1 + u2
+The∫︁ last integral is finite since 0 < α < 2. Substitution into N1 reduces its finiteness
+      ∞
+to 0 λα0 −1 (θ + λ)α−2 dλ < ∞: the conditions at zero and infinity are α0 > 0 and
+α + α0 < 2.
+     For N2 use |Gˆ︁s (ξ)| ≤ min(s, |ξ|−1 ). On |ξ| ≤ 1, absolute integration is bounded by
+                               ∫︂ ∞ ∫︂ ∞
+                             V            e−θ(s+t) |s − t|−α0 st ds dt < ∞.
+                                 0    0
+                              −2
+                  ∫︁
+On |ξ| > 1, use |ξ|>1 |ξ| µ( dξ) = αV /(2 − α) and the same time integral without st.
+Both time integrals are finite by splitting into s ≤ t and t ≤ s, then using u = min(s, t)
+and v = |s − t|; the only singular factor is v −α0 , with α0 < 1. This proves absolute
+integrability of the displayed spectral formula. For each ξ, its time integral is nonnegative
+because the temporal kernel is positive definite. Indeed, it is a positive Laplace mixture
+of the kernels e−λ|s−t| . This proves N2 (θ)2 ≥ 0.
+     The mass identity Gs (Rd ) = s proves the formula for N0 . In N1 change λ = θu and
+ξ = θη. In N2 change s = u/θ, t = v/θ and ξ = θη, using G              ˆ︁u/θ (θη) = θ−1 G
+                                                                                        ˆ︁u (η). These
+changes give exactly the stated powers.
+     The first tail in (3.6) is a tail of the finite nonnegative N1 (1) integral. For the
+second, 0 ≤ KM (r) ≤ |r|−α0 and KM (r) → 0 for r ̸= 0. The absolute majorant just
+                                                                       (M )
+proved permits dominated convergence in (s, t, ξ), giving N2 (1)2 → 0. The tail kernel
+is positive definite by the same Laplace-mixture argument, so its quadratic form is
+nonnegative.
+     Spatial and Green Gaussian smoothing multiply the spectral integrals by factors in
+[0, 1]. For N1 the integrand is nonnegative. For N2 , first integrate in time: the quadratic
+form at each ξ is nonnegative, so its Gaussian multiplier can be removed in an upper
+bound. Restricting a temporal Laplace domain likewise decreases the first norm and
+its nonnegative covariance quadratic form. This proves all smoothing and truncation
+assertions, including the bounds for temporal tails. This proves Lemma 3.4.
+    Use the joint Gaussian regularizations of the source’s (2.11). Write a = (ϵ, δ) > 0
+for one pair of widths and a = (a1 , . . . , an ) for vertexwise widths. Let Yna (t, x) be
+the ordered terminal integral with kernel gn in (2.1) and field Wϵj ,δj (sj , yj ) at vertex j;
+put Y0 = 1. At fixed positive widths these are Gaussian-polynomial Bochner√︁         integrals.
+Indeed, Wick’s formula bounds their product integrands in L2 by (2n − 1)!! V n/2 ,
+where V is the largest of the finitely many field variances. The terminal Green measure
+has mass t2n /(2n)!, by induction using Gr (Rd ) = r. In dimension three these integrals
+use the actual Green measures: products and linear pushforwards of pη ∗ G converge
+against the bounded continuous covariance products. Mixed moments with two Green
+widths and the same mass bound give the L2 limit as η ↓ 0, before any noise width is
+removed.
+
+                                                 13
+
+===== PHYSICAL PAGE 14 =====
+3.4     Spatial Wick measures and fixed-order construction
+Put γb = pb ∗ Γ, where pb is the Brownian heat kernel. Fix m + n = 2k ≥ 2, the two
+chains I1 , I2 above and D ∈ Πk . For a gap vector r ∈ (0, ∞)2k , let sl be the sum of the
+gaps up to vertex l in its own chain. Similarly, for spatial increments zl , let xl be their
+cumulative sum in that chain. For positive spatial widths ϵ define
+                       2k
+                    ∫︂ ∏︂                  ∏︂
+       Jϵ,D (r) =           Grl ( dzl )             γϵj +ϵh (xj − xh ),           ρϵ,D ( dr) = Jϵ,D (r) dr.
+                      l=1                 {j,h}∈D
+
+
+These are nonnegative measures. They are locally finite because∑︁the smoothed covari-
+ances are bounded and the Green masses are rl . Write νϵ,D = e− l rl ρϵ,D , and let ℓi be
+the sum of the gaps in chain i, with value zero for an empty chain.
+
+Lemma 3.5 (Positive spatial Wick-measure limit). Under Hypothesis 1.1, the finite
+measures νϵ,D converge weakly, as all spatial widths tend to zero∑︁
+                                                                         at arbitrary relative
+                                                                      rl
+rates, to a finite measure νD . The locally finite measure ρD = e   l    νD satisfies
+
+                                ρD (cA) = c(4−α)k ρD (A),                  c > 0.
+
+It gives zero mass to every face rl = 0 and every face ℓi = T > 0. Consequently, for
+every bounded continuous φ and T1 , T2 > 0,
+                       ∫︂                    ∫︂
+                                  φ dρϵ,D −→              φ dρD .              (3.7)
+                             ℓ1 <T1 , ℓ2 <T2                    ℓ1 <T1 , ℓ2 <T2
+
+Proof. Orient each pair e = {j, h} as j < h, and let ηl (ξ) be the coefficient of zl in
+∑︁
+   e={j,h} ξe · (xj − xh ). Finite heat-weighted spectral measures and the finite damped
+Green masses justify Fourier and Laplace Fubini. The wave Laplace transform gives, for
+λl ≥ 0,
+                  ∫︂  ∑︁
+   Lϵ,D (λ) := e− l λl rl dνϵ,D
+                       ⎧                            ⎫
+                 ∫︂    ⎨ 1 ∑︂                          2k                                       (3.8)
+                                                  2
+                                                    ⎬ ∏︂              1           ∏︂
+             = exp −               (ϵj + ϵh )|ξe |                  2           2
+                                                                                      µ( dξe ).
+                       ⎩ 2                          ⎭     (1 + λ l ) + |ηl (ξ)|
+                                e={j,h}               l=1                         e∈D
+
+
+The integrand is nonnegative. Thus the transforms increase when any spatial width
+decreases. This is transform monotonicity, not pointwise monotonicity of the physical
+covariances.
+   We prove a uniform bound on their total masses. With V = µ(B1 ), Fourier triangle
+and radial homogeneity give
+                                                    ∫︂ ∞
+                           −α/2                                  2
+    0 ≤ (pt ∗ γb )(x) ≤ At      , t, b > 0, A = αV       uα−1 e−u /2 du < ∞.    (3.9)
+                                                                           0
+
+
+
+
+                                                         14
+
+===== PHYSICAL PAGE 15 =====
+                                              2
+Indeed, its Fourier multiplier is e−(t+b)|ξ| /2 , whose integral is A(t + b)−α/2 ≤ At−α/2 . For
+                                      ∫︁ T ∫︁ T
+a Brownian motion B put Sb (T ) = 0 0 γb (Bs − Bt ) ds dt. For every integer j ≥ 1,
+
+                                          (2j)![AΓE (1 − α/2)]j (2−α/2)j
+                          EB Sb (T )j ≤                        T         .              (3.10)
+                                           ΓE ((2 − α/2)j + 1)
+To verify this, order the 2j time variables in the moment integral. Condition on all but
+the last remaining Brownian vertex. Its pair factor has conditional mean at most A times
+the last remaining time gap to the power −α/2, by (3.9). Remove this vertex and its
+partner. The remaining factors do not involve either removed vertex, and their marginal
+law is again the Brownian law at the remaining times. Repeat this procedure. The j
+selected right endpoints are distinct; each selected gap is at least the original adjacent
+gap at its right endpoint. On each ordered simplex the resulting bound is therefore Aj
+times a product of j distinct adjacent gaps to the power −α/2. Integration over the
+simplex gives ΓE (1 − α/2)j T (2−α/2)j /ΓE ((2 − α/2)j + 1). There are (2j)! possible orders.
+This proves the bound uniformly in b; the zeroth moment is one.
+    Let ϵ∗ = minl ϵl . The positive formula (3.8) bounds Lϵ,D (0) by the transform with
+every vertex width equal to ϵ∗ . The identity of finite positive measures
+                       ∫︂ ∞
+                                               1 ∞ −a2 u/2
+                                                ∫︂
+                             −at
+                            e Gt ( dx) dt =         e       pu (x) du dx
+                         0                     2 0
+
+follows by their equal Fourier transforms (a2 +|ξ|2 )−1 . Apply it to the 2k Green factors at
+unit damping. This writes the common-width
+                                     ∑︁
+                                                transform as 2−2k times a two-Brownian-
+chain integral with gap weights e− l ul /2 and covariance γ2ϵ∗ on every pair. If τi is the
+last Brownian time in chain i, insert
+                               1 ∞ ∞ −((a−τ1 )+(b−τ2 ))/2
+                                 ∫︂ ∫︂
+                          1=             e                  da db.
+                               4 τ1 τ2
+
+This also holds for an empty chain with τi = 0. Positivity permits extension of the
+ordered Brownian time domains to their full cubes. At fixed paths the time integrations
+then factor into one occupation integral per pair. For independent Brownian paths,
+spectral Cauchy–Schwarz gives
+                       ∫︂ a ∫︂ b                               √︂
+                                                                  (1)    (2)
+            0 ≤ A12 :=           γ2ϵ∗ (B1 (s) − B2 (t)) ds dt ≤ S2ϵ∗ (a)S2ϵ∗ (b).
+                             0   0
+
+If the pairing has v1 , v2 self-pairs and w cross-pairs, with v1 + v2 + w = k, its occupation
+product is at most
+                               v +w/2 v2 +w/2
+                             S1 1    S2       ≤ (1 + S1 )k (1 + S2 )k .
+By (3.10), each expected factor is bounded by a fixed finite sum Mk of nonnegative
+powers of its horizon, independently of ϵ∗ . Independence of the two paths now gives
+                                          (︃∫︂ ∞                 )︃2
+                                    −2k−2          −a/2
+                   sup Lϵ,D (0) ≤ 2              e      Mk (a) da < ∞.
+                    ϵ>0                           0
+
+
+                                                  15
+
+===== PHYSICAL PAGE 16 =====
+    Monotone convergence in (3.8) yields finite limits LD (λ) for all λ ≥ 0. The limiting
+integrand at zero is integrable, so dominated convergence shows continuity at zero.
+Here is the finite-measure Laplace argument, including possible loss of mass. Push the
+measures to [0, 1]2k by yl = e−rl . Uniformly bounded masses on this compact cube have
+weak cluster limits. Their integer monomial moments are the prescribed LD values,    ∏︁ soc
+polynomial density determines a unique cluster limit. For c > 0 the integral of l yl
+is LD (c, . . . , c). As c ↓ 0, continuity at zero and monotone convergence show that the
+cluster limit has no mass on the faces where any yl = 0. Closed neighborhoods of the
+y-zero faces have limiting mass tending to zero; the portmanteau inequality bounds the
+approximating tail masses by these same quantities. Pulling back therefore proves weak
+convergence on [0, ∞)2k . Bounded continuous test functions are handled by cutting off a
+neighborhood of those zero faces and then using the vanishing tail mass. Every sequence
+of widths tending to zero has this same limit, so the convergence is joint and independent
+of their relative rates.
+    Sending just λl → ∞ in the limiting positive integral (3.8) gives zero by domination
+by its integrable zero-parameter integrand. On the measure side this limit is νD {rl = 0}.
+Thus every coordinate-zero face has zero mass.
+    Heat and wave scaling give, for Borel sets,
+
+                               ρϵ,D (cA) = c(4−α)k ρϵ/c2 ,D (A).
+
+This follows from Gcr (c dz) = cGr ( dz), γb (cx) = c−α γb/c2 (x), and the 2k time Jacobians.
+Passing to vague limits proves the stated homogeneity of ρD . If a compact part A of
+{ℓi = T }, T > 0, had positive mass, its dilates cA at distinct c ∈ [1, 2] would be disjoint,
+have a common positive lower mass bound, and lie in one compact set. This contradicts
+local finiteness. Exhausting the face by compacts proves it has zero mass. For an
+empty chain the positive-level face is empty. The finite-horizon region is bounded, and
+its boundary is contained in these horizon faces and the coordinate-zero faces.   ∑︁
+                                                                                        Weak
+                                                                                     rl
+convergence with a compact cutoff, and the bounded continuous multiplier e φ there,
+proves (3.7). This proves Lemma 3.5.
+
+Lemma 3.6 (Joint diagram limits and fixed-order construction). Under Hypothesis 1.1,
+every two-chain diagram with m + n = 2k ≥ 2 has a finite joint limit as all its positive
+vertexwise spatial and temporal widths tend to zero, at arbitrary relative rates. This
+includes unequal and empty chains. For every n ≥ 1, t > 0, x, Yna (t, x) has a unique
+joint L2 limit, denoted Xn (t, x); it is the multiple Stratonovich integral of gn . Green
+smoothing in dimension three is removed before noise smoothing.
+
+Proof. Use the gap variables and spatial measures of Lemma 3.5. With sj = sj (r) define,
+on ℓ1 < T1 , ℓ2 < T2 ,           ∫︂ ∏︂
+                        Fϵ,δ,D =           γδ0j ∨δh (sj − sh ) dρϵ,D .
+                                      {j,h}∈D
+
+At a common temporal width η > 0 the multiplier is bounded and continuous. Hence
+the spatial limit exists at every T1 , T2 > 0 by (3.7).
+
+                                                16
+
+===== PHYSICAL PAGE 17 =====
+    We next bound removal of that temporal cutoff uniformly in all spatial widths.
+Write Fϵ,0,D for the integral with full factors |sj − sh |−α0 . It is finite at positive spatial
+widths: bound the spatial covariances by their finite suprema and the Green masses by
+their horizon bounds, then integrate the disjoint-pair time factors on the full time cube.
+Each factor |s − r|−α0 is integrable since α0 < 1. The elementary difference-of-products
+inequality bounds Fϵ,0,D − Fϵ,η,D by a sum of k nonnegative integrals, each with one
+marked time covariance K1/η and all other time covariances full.
+    Apply the imported universal pairing inequality [4, Theorem 3.1, (3.6), pp. 14–15]
+to the damped kernels e−s Gs . At first smooth the Green kernels in dimension three
+and cap the temporal Laplace domains above. Each spatial edge measure is a finite
+Gaussian-weighted µ with nonnegative physical covariance, and each temporal domain
+is a Laplace interval or its restriction. These are exactly the hypotheses of that theorem.
+The finite-horizon exponential loss is at most eT1 +T2 . Lemma 3.4 bounds all unmarked
+norms independently of the smoothing parameters. The marked edge appears once in
+the first-norm product or twice in the second-norm product. Consequently,
+                                                 (︂                         )︂
+                                                     (1/η)        (1/η)
+                  0 ≤ Fϵ,0,D − Fϵ,η,D ≤ Ck,T1 ,T2 N1 (1) + N2 (1)2 ,                      (3.11)
+
+uniformly in all spatial widths. Constants may depend on the fixed covariance and
+k, T1 , T2 ; no uniformity in these quantities is needed. Let the upper temporal caps tend
+to infinity by positivity, and then remove Green smoothing at these fixed spatial widths.
+For the latter passage, the bounded spatial covariance products, weak convergence of
+Green measures and the integrable time-cube majorant just used give convergence. The
+bound survives both passages. Its right side tends to zero as η ↓ 0.
+    Denote the fixed-η spatial limit by bD (η). These numbers increase as η decreases,
+and (3.11) makes them Cauchy with a finite limit bD . If every δj < η, positivity gives
+
+                                   Fϵ,η,D ≤ Fϵ,δ,D ≤ Fϵ,0,D .
+
+Fix η, pass to the spatial limit in the lower term, and use the uniform remainder in (3.11);
+then let η ↓ 0. This proves the asserted joint limit bD with arbitrary spatial/temporal
+rates. If one chain is empty its horizon contributes no variables, and the same proof
+applies.
+    At positive widths Wick’s formula gives the mixed second moments of two copies
+of Yn as the finite sum of these diagrams, after reversing both terminal chains at their
+common horizon t. Evenness of the covariances absorbs the sign changes. Every such
+mixed
+∑︁     moment, including either diagonal moment, tends to the same finite sum Qn =
+   D∈Πn bD . Hence
+                            ∥Yna − Ynb ∥22 −→ Qn + Qn − 2Qn = 0.
+Completeness of L2 gives a unique limit independent of all width ratios. At fixed positive
+noise widths the Green-width limit was already taken in the terminal construction,
+so the result has the required Green-before-noise convention. Restricting to common
+noise widths gives precisely the multiple Stratonovich definition for gn . This proves
+Lemma 3.6.
+
+                                              17
+
+===== PHYSICAL PAGE 18 =====
+   Since β > 2 and α + α0 < 2, Lemma 3.4 gives constants C0 < ∞ and θ0 = 1 such
+that, for θ ≥ θ0 ,
+
+                    N0 (θ) = θ−2 ,         N1 (θ) ≤ C0 ,      N2 (θ) ≤ C0 θ−1 .           (3.12)
+
+Lemma 3.7 (Corrected crude estimate). Under Hypothesis 1.1, for suitable C < ∞ and
+θ0 > 0,
+
+                              C n t2n                                                2
+       EXn (t, x)2 ≤ e2θ0 t             (n ≥ 1, t > 0),      Eu2 (t, x) ≤ 2e2θ0 t+2Ct .   (3.13)
+                                n!
+Proof. On the two finite chains, the product of the exponential weights telescopes to
+e−θ(sn +s2n ) ≥ e−2θt . Extend the nonnegative integral to the two infinite time simplices
+and apply the source’s Theorem 3.1. If qi = #Qi , then q0 = q1 and q0 + q2 /2 = n.
+Hence, (3.12) bounds each pairing by e2θt C n θ−2n . Summing the Pn pairings gives
+
+                          EXn (t, x)2 ≤ Pn e2θt C n θ−2n ,       θ ≥ θ0 .                 (3.14)
+
+To be precise about the source’s finite-spectral-measure hypothesis in Theorem 3.1,
+first apply it with the spatially smoothed covariance and the temporal truncations of
+(2.24). The smoothed spectral measure is finite: the Gaussian multiplier is bounded
+by a constant times (1 + |ξ|2 )−(2−α0 )/2 , whose integral is finite by (1.5). This argument
+requires no radial density for the spectral measure. The zero norm is unchanged; the
+first and second norms are bounded by Lemma 3.4: their Gaussian multipliers can be
+removed in the upper bounds for the nonnegative transforms and covariance quadratic
+forms. The bound is uniform in these regularizations. In d = 3, first use Gη = pη ∗ G, as
+defined on pp. 13–14 of the source. Its spatial Fourier multiplier is bounded by one and
+its spatial mass equals that of G, so the same bounds are uniform in η as well. For each
+fixed noise regularization (ϵ, δ), first let η ↓ 0 in the source’s L2 definition. The squared
+moments converge, so the inequality survives this first limit. Then let (ϵ, δ) → 0 using
+Lemma 3.6. In d = 1, 2 only this latter limit is needed. These limits transfer a uniform
+inequality; no pointwise delta covariance bound is being used.
+    Choose θ = θ0 + n/t in (3.14). Since (2n)! ≤ (2n)2n , we have Pn n−2n ≤ 2n /n!.
+Absorb 2n e2n in C n to obtain the first bound in (3.13). Its square roots are summable
+for each fixed t, by the ratio test. Thus, the norm series converges independently of
+Proposition 3.1. By Minkowski and Cauchy–Schwarz,
+                                                √
+                                           ∑︂ ( Ct)n
+                        ∥u(t, x)∥2 ≤ eθ0 t       √       ,
+                                           n≥0
+                                                    n!
+                    (︄         )︄2 (︄            )︄ (︄            )︄
+                       ∑︂ z n            ∑︂           ∑︂ (2z 2 )n          2
+                           √       ≤         2−n                     = 2e2z .
+                       n≥0
+                            n!           n≥0           n≥0
+                                                            n!
+
+This proves Lemma 3.7.
+
+
+
+                                                  18
+
+===== PHYSICAL PAGE 19 =====
+3.5    The mild equation with the corrected bound
+Lemma 3.8 (Uniform vertexwise regularization bound). Under Hypothesis 1.1, there
+are C < ∞ and θ0 > 0 such that, for all positive vertexwise widths and n ≥ 1,
+                                                                     C n/2 tn
+                       ∥Yna (t, x)∥2 ≤ qn (t),        qn (t) := eθ0 t √       .       (3.15)
+                                                                        n!
+The bound also holds for Xn (t, x), with q0 (t) = eθ0 t ≥ 1. For each T < ∞,
+                                 ∑︂ √
+                                       n + 1 qn (T ) < ∞.                             (3.16)
+                                   n≥0
+
+Proof. Wick’s formula [4, (2.19), p. 12], with the joint covariance (2.11), gives the square
+of Yna , with the widths copied to the second chain. Its edge covariances are
+                                γδ0j ∨δl (sj − sl )γϵj +ϵl (yj − yl ).
+On each terminal chain use s′j = t − sn+1−j and yj′ = x − yn+1−j . This reverses the
+chain and only permutes its vertex widths; covariance differences change sign and the
+kernels are even. For each pairing apply the imported Theorem 3.1 to e−θr Gr , first with
+Green smoothing if d = 3. The theorem permits a separate finite spectral measure and
+temporal truncation on each edge; see its (3.1)–(3.2), pp. 14–15. These hypotheses hold
+                                                               2
+here: the spatial spectral measure on an edge is e−(ϵj +ϵl )|ξ| /2 µ( dξ), which is finite by
+(1.5), and its temporal Laplace domain is [0, (δj ∨ δl )−1 ].
+    All edge norms obey (3.12), uniformly in their widths. For the first norm the Laplace–
+Fourier transform of the damped Green kernel is positive, and the spatial Gaussian mul-
+tiplier and temporal truncation can only decrease its nonnegative spectral integral. For
+the second norm first enlarge the temporal covariance to |s−r|−α0 , using positivity of the
+Green kernels and the smoothed spatial covariance. Its space-time spectral expression is
+an integral of the squared absolute transform against nonnegative measures, so removal
+of the spatial Gaussian multiplier increases it. Green smoothing has multiplier at most
+one and unchanged mass, so the same bounds hold before its removal. These assertions
+follow from Lemma 3.4, rather than an imported normalization or large-parameter for-
+mula in the source’s Appendix. The constants are independent of all the vertex widths.
+    Since #Q0 = #Q1 and #Q0 + #Q2 /2 = n in Theorem 3.1, exactly as in (3.14)
+we obtain the following bound. Indeed, put D = max{1, 2C0 }. The norm constants
+contribute at most D#Q1 +#Q2 ≤ D2n , so we may take C1 = D2 :
+                         ∥Yna (t, x)∥22 ≤ Pn e2θt C1n θ−2n ,         θ ≥ θ0 .
+Let the Green width tend to zero at these fixed positive noise widths, and choose θ = θ0 +
+n/t. The inequality Pn n−2n ≤ 2n /n! then proves (3.15), after increasing C. Lemma 3.6
+gives the joint noise-width limit Xn ; the same bound passes to it. Finally,
+                         √                        √
+                           n + 2 qn+1 (T ) √         n+2
+                          √               = CT             −→ 0.
+                            n + 1 qn (T )          n+1
+The ratio test proves (3.16). This proves Lemma 3.8.
+
+                                                 19
+
+===== PHYSICAL PAGE 20 =====
+Proposition 3.9 (Mild ∑︁ construction from the fixed-order limits). Under Hypothesis 1.1,
+the series u(t, x) = n≥0 Xn (t, x) is a mild solution in [4, Definition 2.1 and (2.12),
+pp. 9–10]. More precisely, for each t > 0 and x ∈ Rd ,
+          ∫︂ t ∫︂
+     lim          G(t − s, x − dy)u(s, y)Wϵ,δ (s, y) ds = u(t, x) − 1 in L2 (Ω).  (3.17)
+     ϵ,δ↓0   0   Rd
+
+The limit allows arbitrary relative rates of the two widths. In dimension three the Green-
+width limit precedes the noise-width limit. No uniqueness assertion is made.
+
+    For d = 3 we read the source’s generalized-integrand definition using its Green regu-
+larization, with the random factor held fixed. The proof below establishes that limit for
+the actual product uWϵ,δ .
+Proof. Let P≤n be the closed Gaussian polynomial space of total degree at most n,
+generated by all the coupled source fields. It includes all lower-degree contractions.
+The fixed-width terminal integrals lie in this space, by their Bochner construction; their
+fixed-order L2 limits Xn do too.
+    We first record an elementary multiplication bound on these spaces. If H is any
+centered linear Gaussian variable and F ∈ P≤n , then
+                                         √
+                             ∥HF ∥2 ≤ 2 n + 1 ∥H∥2 ∥F ∥2 .                         (3.18)
+
+If H = 0 the assertion is immediate. Otherwise take H/∥H∥2 as the first coordinate of
+an orthonormal Gaussian basis. On normalized  √ Hermite √    polynomials its creation and
+annihilation operators have norms at most n + 1 and n on total degrees at most
+n: the squared coefficient sums have respective weights a1 + 1 ≤ n + 1 and a1 ≤ n.
+Their sum proves the bound for finite-coordinate polynomials. Approximation in the
+degree-closed space proves it for F as well. Indeed, the products of an approximating
+sequence are L2 Cauchy by this bound; subsequences converging almost surely identify
+their limit with HF . This also proves the closedness of multiplication needed below.
+The argument allows F to depend on H.
+    Lemma 3.8 proves absolute L2 convergence of the defining series for u, locally uni-
+formly in time in the displayed norm bounds. All fields are strongly measurable as
+L2 (Ω) vectors. At positive widths, rescale the ordered times and Green increments to
+fixed unit-time domains. The Gaussian evaluations are jointly measurable, and their
+bounded moments and the finite Green masses give Bochner domination on bounded
+time intervals. Parameter integration therefore gives joint strong measurability in (s, y).
+Pointwise L2 limits along a fixed countable sequence of widths give this property for Xn ,
+then for the series. For later Green limits we also need spatial continuity at each fixed
+time. Positive-width terminal terms are L2 -continuous in space, by continuity of their
+bounded smoothed covariance products and dominated integration against the finite
+Green measures. Joint spatial stationarity of the coupled regularizations shows that
+
+                      ∥Ynb (s, y) − Xn (s, y)∥2 = ∥Ynb (s, 0) − Xn (s, 0)∥2 .
+
+
+                                                20
+
+===== PHYSICAL PAGE 21 =====
+Thus their convergence is uniform in y for fixed s. Consequently Xn (s, ·), and by summa-
+bility u(s, ·), have continuous L2 representatives.
+    Fix an external width a = (ϵ, δ) > 0 and write Wa = Wϵ,δ , with variance Va =
+ 0
+γδ (0)γ2ϵ (0) < ∞. For n ≥ 1 define the Bochner integral
+                                ∫︂ t ∫︂
+                  In,a (t, x) =         G(t − s, x − dy)Wa (s, y)Xn−1 (s, y) ds.
+                               0     Rd
+
+It exists because (3.18) gives
+                                           √ √︁
+                ∥Wa (s, y)Xn−1 (s, y)∥2 ≤ 2 n Va qn−1 (T ),          0 ≤ s ≤ T,            (3.19)
+
+and the spatial Green mass is t−s. At fixed a, multiplication of the inner regularizations
+by Wa preserves their L2 convergence, by the same bound on degree at most n−1. Their
+norms have the uniform domination just used. Dominated Bochner integration therefore
+gives
+                           In,a (t, x) = lim Yn(b,a) (t, x) in L2 .                 (3.20)
+                                             b↓0
+
+Here a is at the last, terminal vertex and b at the preceding n − 1 vertices. At positive
+widths this identity before passage to the limit is ordinary terminal-kernel Fubini; its
+moment bound was established before Lemma 3.8. For n = 1 there are no inner widths
+and the identity is exact. In particular, (3.15) passes to this inner limit:
+
+                                     sup ∥In,a (t, x)∥2 ≤ qn (t).                          (3.21)
+                                     a>0
+
+    We spell out the dimension-three convention in these steps.                     The product
+Wa (s, y)Xn−1 (s, y) is L2 -continuous in y. Apply (3.18) first to Wa (s, y)(Xn−1 (s, y) −
+Xn−1 (s, y ′ )) and then to (Wa (s, y) − Wa (s, y ′ ))Xn−1 (s, y ′ ). The two factors tend to zero
+in the required norms, by the continuity just proved and the smoothed covariance of Wa .
+The bound (3.19) is uniform in y. Therefore convolution against pη ∗ Gt−s converges
+in L2 to convolution against Gt−s : on a compact set approximate this continuous
+vector function by a finite continuous partition of unity times fixed vector values, use
+scalar weak convergence, and control the complement by tightness and the uniform
+bound. The mass t − s and (3.19) permit dominated time integration. This proves the
+Green-width limit at fixed external widths. The same argument applies before the inner
+                    (b,a)
+noise limit; all Yn       already use their Green limit at positive noise widths. Thus, (3.20)
+does not interchange the source’s Green and noise limits.
+    For each fixed n, the joint fixed-order convergence in Lemma 3.6 implies
+
+                               lim In,a (t, x) = Xn (t, x) in L2 .                         (3.22)
+                               a↓0
+
+To see the role of joint convergence, fix ζ > 0 and choose r > 0 so that every vertex
+                         (b,a)
+width below r gives ∥Yn        − Xn ∥2 < ζ. Fix any external pair a below r and let the
+inner widths tend to zero in (3.20). Then ∥In,a − Xn ∥2 ≤ ζ. This proves the asserted
+limit with arbitrary relative rates; it does not assume a partial-limit theorem.
+
+                                                   21
+
+===== PHYSICAL PAGE 22 =====
+   It remains to identify the full product integral, rather than only its finite-order terms.
+At fixed a, (3.18) and (3.16) imply
+        ∑︂                             √︁ ∑︂ √
+            ∥Wa (s, y)Xn−1 (s, y)∥2 ≤ 2 Va         n qn−1 (T ) < ∞,      0 ≤ s ≤ T.
+        n≥1                                        n≥1
+
+
+Multiplication is closed: partial sums of u converge in L2 , and their products converge
+by this estimate, so an almost surely convergent subsequence identifies the product limit
+with Wa u. Dominated Green integration and norm summability now prove
+                   ∫︂ t ∫︂                                       ∑︂
+      Ia (t, x) :=         G(t − s, x − dy)Wa (s, y)u(s, y) ds =    In,a (t, x) in L2 .
+                   0   Rd                                               n≥1
+
+
+The sum of the product integrands is spatially L2 -continuous by uniform summability,
+so its Green-width limit is justified in exactly the same way. Finally, for every N ,
+                                            N
+                                           ∑︂                                      ∑︂
+          ∥Ia (t, x) − (u(t, x) − 1)∥2 ≤          ∥In,a (t, x) − Xn (t, x)∥2 + 2         qn (t).
+                                            n=1                                    n>N
+
+First let a ↓ 0 using (3.22), then let N → ∞ using (3.16). This proves (3.17), hence
+the mild equation in the stated definition. The source’s (5.3)–(5.4) and its Section 5(ii)
+identification proof have not been used. This proves Proposition 3.9.
+    Thus, the exponent two enters through replacing the paired norm products by Cθ−2 ,
+followed by the pairing count and the order summation. The sum over unequal chain
+lengths is not responsible for this loss: the same loss already occurs in the diagonal
+estimate and Minkowski’s inequality.
+
+3.6    What homogeneity recovers, and what the bound still loses
+Proposition 3.10 (The uniform pairing estimate). Under Hypothesis 1.1, there is K >
+0 such that
+
+       E[Xm (t, x)Xn (t, x)] ≤ Pk K k e2θt θ−βk ,         m + n = 2k ≥ 2,          θ > 0.          (3.23)
+
+Define the numerical majorant produced by applying this estimate separately at every
+total order by                   ∑︂
+                    BK (t) = 1 +   (2k + 1)Pk K k inf {e2θt θ−βk }.           (3.24)
+                                                              θ>0
+                                      k≥1
+
+Then Eu2 (t, x) ≤ BK (t) and, for some c, C > 0 and all large t,
+
+                                                          β    4 − α − α0
+                ctρ ≤ log BK (t) ≤ Ctρ ,           ρ=        =            > κ.                     (3.25)
+                                                         β−1   3 − α − α0
+The lower bound here concerns the numerical majorant BK , not the second moment.
+
+                                                   22
+
+===== PHYSICAL PAGE 23 =====
+Proof. The wave kernel scales as G(cs, c dy) = cG(s, dy), and the covariance has degree
+−α. Changing all time and spatial variables by θ−1 in the norms yields
+
+             N0 (θ) = θ−2 ,    N1 (θ) = N1 (1)θα+α0 −2 ,        N2 (θ)2 = N2 (1)2 θ−β .   (3.26)
+
+All constants and scalings follow directly from Lemma 3.4. The products 2N0 N1 and
+N22 therefore both have degree −β. Choose K ≥ max{2N1 (1), N2 (1)2 }, increasing it to
+a positive constant if needed. Theorem 3.1 and q0 + q2 /2 = k give K k θ−βk for every
+partition it supplies. The finite horizons contribute at most e2θt . Apply this first to
+regularized moments. In d = 3, fix (ϵ, δ) and let η ↓ 0 in each factor’s L2 limit; Cauchy–
+Schwarz gives L1 convergence of their product. Then let (ϵ, δ) → 0 in the same way, using
+Lemma 3.6 for each chain. In d = 1, 2 only the noise limit is required. The estimates
+are uniform at both stages, by the multiplier bounds in Lemma 3.7. This proves (3.23).
+Empty-chain cases satisfy the same bound (using e2θt is harmless). Proposition 3.1 now
+gives the majorant.
+    The infimum in (3.24) is attained at θ = βk/(2t) and equals eβk (2t/(βk))βk . Put
+q = β − 1 > 1. The elementary estimates
+
+                 k! ≤ Pk ≤ 2k k!,           (k/e)k ≤ k! ≤ k k ,         2k + 1 ≤ 3k
+
+show that, for fixed positive a, b depending only on K, β,
+                              ∑︂ (atβ )k                  ∑︂ (btβ )k
+                                             ≤ BK (t) ≤                 .
+                              k≥0
+                                    (k!)q                 k≥0
+                                                                (k!)q
+
+Indeed, the additional factor k!β /k βk lies between e−βk and one and can be absorbed
+                                                                                       1/q
+into ak , bk . For z > 0, the right-hand series is at most ( k≥0 z k/q /k!)q = eqz , by
+                                                               ∑︁
+the elementary ℓq versus ℓ1 inequality for nonnegative sequences. For a lower bound
+choose k = ⌊z 1/q /2⌋ and use k! ≤ k k ; its single summand is at least 2qk . These estimates
+prove (3.25). Finally, β − 1 = 3 − α − α0 < 3 − α, so ρ > κ. This proves Proposition 3.10.
+
+
+Remark 3.11 (G0 verdict and its scope). Since β > 2, we have 1 < ρ < 2. Thus,
+Proposition 3.10 improves the crude quadratic time scale under homogeneity. It does not
+itself settle Goal 43.1; Section 13 uses a different argument. Theorem 3.1 used through its
+uniform pairing estimate is not viable for Goal 43.1: even with exact homogeneous norm
+scaling, the resulting majorant has exponent ρ > κ. The order coefficient has factorial
+denominator (k!)3−α−α0 , whereas the desired scale requires (k!)3−α ; the missing factor is
+(k!)α0 , up to exponential factors in k. Counting the 2k + 1 chain-length splits does not
+cause this loss, since it can be absorbed into an exponential factor. This conclusion does
+not rule out a more refined application retaining temporal order or grouping pairings
+before estimating them, and does not disprove the conjecture. In the formal boundary
+limit α0 ↓ 0, both ρ and κ tend to (4 − α)/(3 − α). This necessary time-independent
+calibration does not distinguish them and asserts no endpoint theorem or uniformity of
+constants in α0 . At p = 1 use the empty-chain case with eθt in place of e2θt ; minimizing at
+
+                                                  23
+
+===== PHYSICAL PAGE 24 =====
+θ = βk/t changes only a constant to the power k, leaving the same factorial denominator
+(k!)3−α−α0 . It therefore also loses the factorial power α0 relative to β/κ = 3 − α, the
+power corresponding to the target series scale. This is a comparison of scales, not a
+coefficient estimate asserted by the source’s Theorem 1.2. The loss is not specific to the
+second moment. Both the crude and homogeneous upper bounds are consistent with the
+Jensen lower bound, being at larger time scales. No identification with the Skorohod
+second moment is used: its exclusion of self-pairings changes the combinatorics, already
+visible in the (0, 2) and (2, 0) terms of Lemma 3.2.
+
+
+4     Gate G1: finite-order calibrations in one space
+      dimension
+We now compute the total-order-two and total-order-four coefficients in Proposition 3.1,
+first for spatial white noise and then for γ(x) = cα |x|−α with 0 < α < 1 and cα > 0.
+Here d = 1 throughout. A total order is the sum of the two Stratonovich orders; it is
+not an orthogonal Wiener-chaos order. Write
+
+             A = {(1, 2), (3, 4)},   B = {(1, 3), (2, 4)},    C = {(1, 4), (2, 3)}.
+
+These are the three pairings of four vertices. All finite integrals below retain the nor-
+malization G(s, y) = 12 1{|y|<s} and covariance |s − r|−α0 γ(y − z).
+
+4.1    Spatial white noise: all order-four diagrams
+For a, b, c ≥ 0, define
+
+                      F (a, b, c) = 4ab − (a + b − c)2+ + (|a − b| − c)2+ .             (4.1)
+
+This is the area of {(x, y) : |x| < a, |y| < b, |x − y| < c}. In particular, F is nonnegative
+and symmetric in its three arguments. To verify the formula, subtract from the rectangle
+the two regions where |x − y| ≥ c; when c ≥ |a − b| these are two right triangles, and
+when c < |a − b| the retained strip has area 4 min(a, b)c. The three formulas, including
+c ≥ a + b, give (4.1). Symmetry also follows from swapping x, y and the determinant-one
+change (x, y) ↦→ (x, x − y).
+   In the following table, V is a spatial factor and q1 , q2 are nonnegative time gaps.
+The contribution of a row is the integral of V (q1 q2 )−α0 over its domain, with ordinary
+Lebesgue measure in its four listed variables. The domains are
+
+                      (0, 4) : a, b, c, d > 0, a + b + c + d < t,
+                      (1, 3) : 0 < r < t, a, b, c > 0, a + b + c < t,
+                      (2, 2) : a, b, c, d > 0, a + b < t, c + d < t.
+
+The letters a, b, c, d denote increments within the nonempty chains; for (1, 3), r is the time
+of the single vertex. Values on zero-gap sets do not affect these nonnegative integrals.
+
+                                               24

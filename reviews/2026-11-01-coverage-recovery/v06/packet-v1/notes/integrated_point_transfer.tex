@@ -1,0 +1,366 @@
+\section{The original point moment and the growing-cone phase}
+\label{S:original-point-transfer}
+
+Retain all original covariances and amplitudes.
+Write $a=\alpha_0$, $\kappa=(4-\alpha-a)/(3-\alpha)>1$.
+Fix the auxiliary parameters of the preceding Gaussian and product
+sections once, in their strict admissible gaps.
+For $0<\delta<1$ put
+\[
+  L=\delta^{-1},\quad R=L+2,\quad T_\delta=\delta^{-1/\kappa},
+  \quad g=\delta^{(1-a)/2},\quad \Gamma_\delta=g^2\Gamma .
+\]
+Use the same real even root $\eta$, set $\psi=\eta(\cdot/R)$,
+$m=\psi^2$, $z=(\psi,0)\in E$, $D=B_1(0)$ and $v_d=|D|>0$.
+Let $W_{\rm fast}=W\circ T_{\delta,0}$ on the given slow probability
+space, and let $P_\delta$ be the actual physical $E$ endpoint at time
+$L$ driven by $gM_R(W_{\rm fast})$, with physical noise mask $m$ once.
+The datum $\psi$ is not the auxiliary cutoff used to extend the driver
+to constant columns on $F$.
+
+\begin{lemma}[Actual restriction and fixed-parameter finiteness]
+  \label{L:point-actual-finiteness}
+  For nonzero covariance, the actual $E$ flow and its source flows
+  are the closed isometric restrictions of their actual $F$ extensions.
+  Their operator norms and differences are measurable, and
+  \begin{equation}\label{E:point-fixed-finiteness}
+    1\le\E\|P_\delta\|_{\mathcal L(E)}^2<\infty .
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  Let $A_F=gA_{F,R}(W_{\rm fast})$ be the scaled full driver.
+  Linearity and Proposition~\ref{P:constant-phase-driver} give $A_Fi=iD_E$,
+  with $D_E=gM_R(W_{\rm fast})$, and $S_F(t)i=iS_E(t)$.
+  The extension uses a cutoff $\widetilde\psi=1$ near its larger
+  localization, not the datum $\psi$.
+  Applying $i$ to the state Young sums and using uniqueness gives
+  $U_F(t,s)i=iU_E(t,s)$, then $P_F(t,s)i=iP_E(t,s)$.
+  The same argument applies to sources.
+  Closedness and isometry imply
+  $\|P_E\|\le\|P_F\|$ and the analogous difference bound;
+  density of $E$ in $F$ is neither true nor used.
+  The continuous Young map on its separable path span, followed by
+  bounded physical conjugation and restriction, gives measurable
+  endpoint norms and uniform time-triangle difference norms.
+  No operator-norm continuity of the free group is assumed.
+  Young Neumann pieces and the free inverse also give invertibility.
+
+  We check a direct finiteness input, without a fixed-mask asymptotic rate.
+  Take $B=1$ in Propositions~\ref{P:tube-actual-law}
+  and~\ref{P:tube-coarse-envelope} and Lemma~\ref{L:tube-rayleigh-tail}.
+  Every $0<\delta<1$ satisfies their clock condition.
+  The global endpoint in~\eqref{E:tube-global-endpoint} is exactly
+  this $P_\delta$: the same given $W_{\rm fast}$, amplitude $g$,
+  root $\eta$, one mask $m$, massless $E$ phase, and horizon $\delta^{-1}$.
+  We use the same admissible $\theta$ and actual driver version.
+  Literal row identities, rational times and Young uniqueness identify
+  versions if a smaller common admissible exponent is used.
+  Thus, the finite radial bound applies to this actual endpoint,
+  not merely an equal-law copy.
+  Proposition~\ref{P:symplectic-raw} gives its norm at least one
+  almost surely, proving~\eqref{E:point-fixed-finiteness}.
+  This use requires no $F$-norm rate along growing radii.
+  Source convergence and source uniform integrability are checked next,
+  separately from this raw endpoint finiteness.
+  This proves Lemma~\ref{L:point-actual-finiteness}.
+\end{proof}
+
+\begin{lemma}[The same retaining fast sources]\label{L:point-fast-sources}
+  At each fixed $\delta$, take one retaining slow source
+  $Y_{\epsilon,\tau}$ and define
+  \[
+    Y_{\rm fast}(t,x)=\delta^{a/2}Y_{\epsilon,\tau}(\delta t,x).
+  \]
+  Its actual physical $E$ flows $P_E^{\epsilon,\tau}$ with coefficient
+  $m gY_{\rm fast}$ satisfy
+  \begin{equation}\label{E:point-source-flow-limit}
+    \E\sup_{0\le s\le t\le L}
+    \|P_E^{\epsilon,\tau}(t,s)-P_E(t,s)\|^2\longrightarrow0
+    \quad\hbox{as }(\epsilon,\tau)\to(0,0).
+  \end{equation}
+  The unmasked field $gY_{\rm fast}$ has the canonical source law
+  for covariance $\Gamma_\delta$, spatial width $\epsilon$
+  and temporal width $\tau/\delta$.
+\end{lemma}
+
+\begin{proof}
+  Testwise this field is $Y_{\epsilon,\tau}(T_{\delta,0}f)$.
+  The raw isometry and source domination give source and residual
+  variances bounded by $\|f\|_{H_{\rm fast}}^2$, with residual variance
+  tending to zero at fixed $\delta$ on every smooth compact test.
+  The Gaussian transfer Proposition~\ref{P:source-gaussian-transfer}
+  therefore gives actual driver convergence in every finite $L^pC^\theta$,
+  retaining $W_{\rm fast}$ literally.
+  Multiplication by fixed $g$ and the bounded $F$ extension preserve it.
+  The transfer bound and Proposition~\ref{P:actual-operator-driver}
+  also give uniform source $\sqrt p$ path moments at these fixed
+  $\delta,R,L$.
+  The moment-series argument yields square-exponential path norms.
+  Young local dependence gives probability convergence on driver balls;
+  the growth exponent $1/\theta<2$ and those tails give uniform
+  flow moments of every finite order and uniform integrability.
+  The proof of Proposition~\ref{P:constant-gaussian-flow} applies
+  to this very pullback family.
+  Restriction from $F$ then proves~\eqref{E:point-source-flow-limit}.
+  No uniform-in-$\delta$ source bound or exchange of limits is asserted.
+
+  This source is also the actual ordinary response for all $E$ data.
+  On Schwartz states its first primitive has row $gY_{\rm fast}(h_R)$.
+  The source indicator approximation and bounded point variances at
+  positive widths identify it with the statewise integral
+  $\int_0^t S_E(-r)B(mgY_{\rm fast}(r))S_E(r)\ud r$.
+  Fubini uses $\E|ZY|\le\|Z\|_2\|Y\|_2$ when Gaussian testing is needed.
+  Countable dense states, rational times and continuity give the full
+  ordinary-primitive identity, as in Proposition~\ref{P:source-ordinary-response}.
+  Lemma~\ref{L:constant-source-solution} and
+  Proposition~\ref{P:symplectic-source} then identify the Young equation
+  with the ordinary interaction equation on $E$.
+
+  In the temporal kernel
+  $K_\tau(v)=\Gamma_{\rm E}(a)^{-1}
+  \int_0^{\tau^{-1}}e^{-\lambda|v|}\lambda^{a-1}\ud\lambda$,
+  substitution $\lambda'=\delta\lambda$ gives
+  \[
+    \delta^aK_\tau(\delta v)=K_{\tau/\delta}(v).
+  \]
+  Hence $gY_{\rm fast}$ has covariance
+  $K_{\tau/\delta}(t-s)(p_{2\epsilon}*\Gamma_\delta)(x-y)$.
+  The shared-width maximum and spatial heat-sum conventions persist
+  for two sources.
+  Positive multiplication by $g^2$ preserves every original covariance
+  class, including spatial white noise.
+  At fixed $\delta$, $(\epsilon,\tau/\delta)\to(0,0)$.
+  The full source point-moment limit
+  in Proposition~\ref{P:masked-canonical-transfer} thus applies to this
+  single-source law and its continuous version; no newly reconstructed
+  auxiliary family for $\Gamma_\delta$ is required.
+  This proves Lemma~\ref{L:point-fast-sources}.
+\end{proof}
+
+\begin{lemma}[Compact-data source identification]\label{L:point-compact-source}
+  For fixed $\delta,\epsilon,\tau$, the displacement
+  $v_{\epsilon,\tau}(t,x)=(\operatorname{pr}_1P_E^{\epsilon,\tau}(t,0)z)(x)$
+  has a jointly measurable continuous version and satisfies the ordinary
+  scalar mild equation with coefficient $b=mgY_{\rm fast}$
+  and initial data $(\psi,0)$.
+\end{lemma}
+
+\begin{proof}
+  On the fixed source regularity event, $b$ is smooth in space,
+  has common compact support in $B_{2R}$, and is continuous in time
+  in every bounded spatial derivative norm on $[0,L]$.
+  Choose integer $k>d/2+1$ and $E_k=H^k\times H^{k-1}$.
+  Its Bessel-unitary free matrix is
+  \[
+    \begin{pmatrix}
+      \cos(t|\xi|)&\langle\xi\rangle\sin(t|\xi|)/|\xi|\\
+      -|\xi|\sin(t|\xi|)/\langle\xi\rangle&\cos(t|\xi|)
+    \end{pmatrix}.
+  \]
+  The zero sine quotient is $t$; finite-horizon bounds and dominated
+  Fourier convergence give a strongly continuous group on $E_k$.
+  Leibniz and the derivative-norm equivalence, obtained by expanding
+  $(1+|\xi|^2)^{k-1}$ and Parseval, give
+  \[
+    \|b(t)f\|_{H^{k-1}}
+    \le C_k\max_{|j|\le k-1}\|\partial^jb(t)\|_\infty
+    \|f\|_{H^{k-1}} .
+  \]
+  Thus $B(b(t))$ is a norm-continuous bounded force on $E_k$,
+  with a finite uniform sample bound $B_L$.
+  For $Z_0=S(t)z$ and
+  $Z_{n+1}(t)=\int_0^tS(t-r)B(b(r))Z_n(r)\ud r$,
+  \[
+    \sup_{t\le L}\|Z_n(t)\|_{E_k}
+    \le C_L^{n+1}B_L^nL^n\|z\|_{E_k}/n! .
+  \]
+  This series converges in $C_tE_k$.
+  Iterating a homogeneous Volterra difference proves uniqueness.
+  Its continuous embedding into $E$ and ordinary $E$ uniqueness
+  identify the sum with $P_E^{\epsilon,\tau}(t,0)z$.
+
+  Fourier Cauchy--Schwarz gives
+  $\|\widehat f\|_1\le\|f\|_{H^k}
+  (\int\langle\xi\rangle^{-2k}\ud\xi)^{1/2}<\infty$.
+  Fourier inversion and dominated convergence imply continuous bounded
+  displacement, and the same holds for velocity since $k-1>d/2$.
+  The source derivatives on the compact support form a measurable
+  $C_tC_x^{k-1}$ random element, by countable evaluations and continuity.
+  Picard iteration and local norm estimates make its phase sum measurable
+  in $C_tE_k$; the Fourier embedding gives joint measurability.
+  These high norms are used only at positive source widths.
+
+  The first component of Duhamel is, distributionally,
+  \[
+    v(t)=\cos(t\sqrt{-\Delta})\psi+
+    \int_0^t G_d(t-r)*[b(r)v(r)]\ud r .
+  \]
+  Here $G_d(h)$ is the positive Green measure of mass $h$
+  and support in $B_h$, including the sphere measure for $d=3$.
+  The product $bv$ is continuous compactly supported, with finite
+  uniform $L^1$ and supremum bounds.
+  Against a compact smooth $\phi$, absolute Fubini is bounded by
+  $\int_0^t\|\phi\|_\infty\|b(r)v(r)\|_1(t-r)\ud r<\infty$.
+  Writing $G_d(h)$ as $h$ times the dilation of its unit-time
+  probability measure proves continuity of the convolution term.
+  The free term is continuous by the Fourier embedding.
+  Thus the distributional identity agrees everywhere with the
+  pointwise continuous mild versions.
+  No Green density in $d=3$ or raw Sobolev point trace is used.
+  This proves Lemma~\ref{L:point-compact-source}.
+\end{proof}
+
+\begin{proposition}[Cone identity and an average of squares]
+  \label{P:point-source-cone}
+  Let $u_{\epsilon,\tau}^{\rm full}$ be the unmasked source solution
+  with coefficient $gY_{\rm fast}$ and data $(1,0)$.
+  At the fixed parameters, almost surely,
+  \[
+    v_{\epsilon,\tau}=u_{\epsilon,\tau}^{\rm full}
+    \quad\hbox{on }\mathcal C=
+    \{(t,x):0\le t\le L,\ |x|\le1+L-t\}.
+  \]
+  Consequently
+  \begin{equation}\label{E:point-source-square-average}
+    \E\|\operatorname{pr}_1P_E^{\epsilon,\tau}(L,0)z\|_{L^2(D)}^2
+    =v_d\,\E|u_{\epsilon,\tau}^{\rm full}(L,0)|^2<\infty .
+  \end{equation}
+\end{proposition}
+
+\begin{proof}
+  Proposition~\ref{P:masked-source-moments}, applied through the exact
+  source law of Lemma~\ref{L:point-fast-sources}, gives the locally
+  continuous measurable full solution and its $L^2$ point Picard sum.
+  The pathwise cone argument uses the realized pullback field; the point
+  second moments depend only on its Gaussian covariance through those
+  Bochner chain sums.
+  We place no global unmasked field in $E$ or $F$.
+  The cone is causally closed: a predecessor at distance at most $t-s$
+  has norm at most $1+L-s$.
+  Its spatial projection lies a positive distance inside the plateau
+  of both $\psi$ and $m$.
+
+  The total initial difference $(\psi-1,0)$ is represented in
+  $E$ plus constants by $(\psi,0)+(-1,0)$.
+  Every entry of the full free phase kernel is a compactly supported
+  distribution in $B_t$, and the top-left is $\partial_tG_d(t)$.
+  Since $|x|+t\le1+L=R-1$ on the cone, its entire translated
+  kernel support lies in the region where this total datum vanishes.
+  Lemma~\ref{L:constant-phase-free} therefore gives
+  $\cos(t\sqrt{-\Delta})\psi(x)=1$ there.
+  Testing the $E$ and constant summands separately would not give
+  this total finite-propagation statement.
+
+  The two mild equations have the same coefficient on the cone.
+  For their difference $w$, causal closure gives the homogeneous
+  Green integral equation there.
+  Put $H=\sup_{\mathcal C}|w|$ and
+  $M=\sup_{\mathcal C}|gY_{\rm fast}|$, both finite sample constants.
+  Iteration with the positive Green measures gives
+  $|w(t,x)|\le HM^nt^{2n}/(2n)!$.
+  Indeed the mass recursion is $f_0=1$,
+  $f_{n+1}(t)=\int_0^t(t-r)f_n(r)\ud r=t^{2n+2}/(2n+2)!$.
+  The factorial ratio forces this bound to zero on the fixed cone.
+  No positivity of the sample coefficient or expectation of a global
+  source supremum is required.
+
+  At time $L$ the cone contains $D$.
+  Tonelli and spatial stationarity of the unmasked single-source law
+  give~\eqref{E:point-source-square-average}.
+  Finiteness is the full source point-moment bound.
+  This is an integral of squares, not a squared average or
+  a covariance comparison with a masked model.
+  Events are for each fixed $\delta,\epsilon,\tau$.
+  This proves Proposition~\ref{P:point-source-cone}.
+\end{proof}
+
+\begin{proposition}[Exact original point transfer and polynomial cost]
+  \label{P:original-point-transfer}
+  For every original model, including zero covariance,
+  \begin{align}
+    \E|u_\Gamma(T_\delta,0)|^2
+    &=v_d^{-1}\E\|\operatorname{pr}_1P_\delta z\|_{L^2(D)}^2,
+    \label{E:original-point-transfer}\\
+    &\le v_d^{-1}\|\psi\|_{H^{1/2}}^2\E\|P_\delta\|^2,\notag\\
+    \limsup_{T\to\infty}T^{-\kappa}\log\E|u_\Gamma(T,x)|^2
+    &\le\limsup_{\delta\downarrow0}\delta\log\E\|P_\delta\|^2
+    \quad\hbox{for every fixed }x .
+    \label{E:original-point-rate-reduction}
+  \end{align}
+\end{proposition}
+
+\begin{proof}
+  Assume nonzero covariance until the last paragraph, and fix $\delta$.
+  Equation~\eqref{E:point-source-flow-limit} gives
+  convergence of the source displacement in $L^2(\Omega;L^2(D))$,
+  since $\|\operatorname{pr}_1e\|_{L^2(D)}\le\|e\|_E$.
+  Expected squared norms converge by Cauchy--Schwarz applied to their
+  difference times their sum.
+  Separately, the full source point-moment limit
+  \eqref{E:masked-unmasked-moment-limit} at covariance $\Gamma_\delta$
+  gives convergence of the right side of
+  \eqref{E:point-source-square-average} to
+  $v_d\E|u_{\Gamma_\delta}(L,0)|^2$.
+  Both cutoffs $(\epsilon,\tau/\delta)$ tend to zero at fixed $\delta$.
+  Thus the two limits in the equal prelimit moments give
+  \[
+    \E|u_{\Gamma_\delta}(L,0)|^2
+    =v_d^{-1}\E\|\operatorname{pr}_1P_\delta z\|_{L^2(D)}^2 .
+  \]
+
+  The law normalization is the consequence of
+  Lemma~\ref{L:exact-canonical-scaling} and the canonical-series
+  time change proved in Proposition~\ref{P:raw-block-point-comparison}.
+  Explicitly, for $\delta=T^{-\kappa}$ and $r_T=T\delta$,
+  $V_\delta$ has the law of $u_\Gamma(Tt,r_Tx)$ and equation
+  \eqref{E:exact-fast-equation}.
+  At positive source widths, $U(t,x)=V_\delta(\delta t,x)$ has
+  coefficient $\sqrt\delta\,Y_{\epsilon,\tau}(\delta t,x)
+  =gY_{\rm fast}(t,x)$.
+  The accepted fixed-order and absolutely convergent canonical-series
+  argument passes this time change to the point moment at fixed $\delta$.
+  Hence $\E|u_\Gamma(T_\delta,0)|^2=\E|u_{\Gamma_\delta}(L,0)|^2$.
+  This is a law/moment identity, not a pathwise same-noise identity.
+  It preserves all mixed, unequal, self and empty Stratonovich chains
+  and the Green-before-noise convention in $d=3$.
+  The shrinking $r_T$ is not the mask radius $R$;
+  no spatial Jacobian occurs at point zero.
+  The phase/operator inequality now proves~\eqref{E:original-point-transfer}.
+
+  Parseval and the inhomogeneous Bessel weights give, for $R\ge1$,
+  \[
+    \|\psi\|_{H^{1/2}}^2\le\|\psi\|_{H^1}^2
+    =R^d\|\eta\|_2^2+R^{d-2}\|\nabla\eta\|_2^2
+    \le C_\eta R^d,\quad C_\eta=\|\eta\|_2^2+\|\nabla\eta\|_2^2>0.
+  \]
+  This includes the negative $d-2$ power in $d=1$.
+  For $\operatorname{DataPref}_\delta=v_d^{-1}C_\eta(\delta^{-1}+2)^d$,
+  \[
+    \delta\log\operatorname{DataPref}_\delta
+    =\delta\log(C_\eta/v_d)+d\delta[\log(1+2\delta)-\log\delta]\to0 .
+  \]
+  The nontrivial term follows by $t=-\log\delta$ and
+  $te^{-t}\to0$, since $e^t\ge t^2/2$.
+  The original point moment is at least one: its nonnegative full
+  pairing expansion contains the unit empty pair of chains.
+  It is finite by~\eqref{E:original-point-transfer} and
+  \eqref{E:point-fixed-finiteness}.
+  Thus logs are defined without subtracting infinite quantities.
+  Since $\alpha<2<3$, $a<1$, we have $\kappa>1$ and
+  $\delta\mapsto T_\delta$ is a decreasing bijection
+  $(0,1)\to(1,\infty)$ with inverse $\delta=T^{-\kappa}$.
+  Taking logs and this change of parameter proves
+  \eqref{E:original-point-rate-reduction} at zero.
+  Original canonical spatial stationarity, proved in
+  Proposition~\ref{P:raw-block-original-lower}, extends it to every fixed $x$;
+  no stationarity of the masked operator is assumed.
+
+  For zero covariance, $u=1$, all drivers vanish and $P_\delta=S_E(L)$.
+  The same total free cone argument gives the spatial-square identity.
+  Lemma~\ref{L:symplectic-free} gives $\|S_E(L)\|\ge1$,
+  and its Fourier matrix gives $\|S_E(L)\|\le C(1+L)$.
+  Thus $0\le\delta\log\|S_E(\delta^{-1})\|^2\to0$ and
+  both claims hold directly without a nonzero-noise import.
+  This proves Proposition~\ref{P:original-point-transfer}.
+\end{proof}

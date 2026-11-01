@@ -1,0 +1,1251 @@
+Derived text of assigned exact PDF pages only; extraction can garble mathematics. Actual PNG inspection is mandatory. No mathematical proof is supplied by this carrier.
+
+===== PHYSICAL PAGE 193 =====
+    The actual physical mean identity on separated tests follows from (29.4). For a
+smooth spacetime test use the separated compact-support approximations in the tensor
+proof. Their uniform errors give uniformly small masked mean errors, using the finite
+time row and locally finite spatial covariance on the relevant compact differences. The
+multiplier bound by L∞ + L2 then gives uniform operator convergence, identifying the
+Lr mean in (29.6). General H controls denote completed operator fields, without a
+pointwise-potential assertion.
+    Let Qn be the spatial projections in the compact-map proof. The maps Tn Φ =
+Tsp Qn UΦ approximate T in operator norm by the dimension-free bound and ∥Tsp (I −
+Qn )∥ → 0. For fixed n, each spatial coordinate extraction H → Ht has norm at most
+one and its image under Ct is precompact in Lr . Finite combination with the compact
+operators Tsp qj makes Tn compact. Hence T is compact. Scalar time compactness alone
+tensored with an infinite identity would not prove this.
+    To prove (29.7), if it failed choose unit vJ on a subsequence with ∥T (I − PJ )vJ ∥
+bounded below. The vectors (I − PJ )vJ tend weakly to zero, since their pairings with
+fixed h are bounded by ∥(I − PJ )h∥. Compactness gives a norm-convergent image
+subsequence with weak limit zero, a contradiction. This proves Proposition 29.5.
+
+29.3     The given-noise residual and its Cameron operator
+Choose integer B ≥ 1 and 0 < δ < min(1, 1/B). Put N = ⌊1/(δB)⌋, sm = mδB, ℓm = B
+for m < N and ℓN = δ −1 − N B ∈ [0, B). The intervals Im = [sm , sm + δℓm ] partition
+[0, 1] up to endpoints. With QJ = I − PJ on HW and the literal pullback (25.2), define
+
+                        Ym,J (f ) = W (QJ Tδ,m f ),    gδ = δ (1−a)/2 .
+
+Fix parameters
+               (︃          )︃
+    1              a 3−a−α                     1     2               1
+      < θ < min 1 − ,         ,                   <r< ,                ≤ p < 2 < r.   (29.8)
+    2              2   2                      1−θ    a               θ
+
+These intervals are nonempty.
+
+Lemma 29.6 (Actual supported residual paths). Gaussian transfer with mask mR and
+its genuine F extension constructs the actual centered Gaussian paths
+
+                  Xm,J (u) = gδ AmR (Ym,J )(min(u, ℓm )),       0 ≤ u ≤ B.
+
+Their finite tuple lies in the separable space B0N +1 , where B0 = hθ0 ([0, B]; K(F )). Every
+continuous linear statistic ℓ(X) is W (kℓ ) for some kℓ ∈ HI . An empty last interval gives
+zero.
+
+Proof. Isometry of the pullback and orthogonality of QJ give Var Ym,J (f ) ≤ ∥f ∥2HW .
+Proposition 20.2 therefore applies. Its finite sums retain both deterministic localizations,
+and their limits retain the true F extension and constant columns. Choose θ < β < β2
+below the upper threshold in (29.8); read the driver theorem at exponent β with auxiliary
+
+                                             193
+
+===== PHYSICAL PAGE 194 =====
+β2 . Constant stopping preserves compact values and C β bounds, hence gives paths in
+the little C θ closure by polygonal approximation. Its separability is Lemma 25.1.
+    As in Lemma 25.1, every observed row’s slow pullback belongs to HI : its time
+support is in [0, 1], and approximating its indicator inside I converges in raw norm
+by dominated convergence against the integrable time kernel and locally finite Γ on the
+common compact support. This includes endpoints. Schwartz E states and both true
+constant columns supply the identities, then boundedness extends them to F . Let PH be
+the orthogonal projection onto closed HI . Transfer for the noise f ↦→ W (PH QJ Tδ,m f )
+leaves each observed row unchanged, since its residual slow test already lies in HI .
+Countable states and rational times identify the same operator paths. This projected-
+transfer series has coefficient tests in HI . Applying ℓ gives an L2 limit in the closed
+isonormal image W (HI ), proving the assertion. Original global-basis tests were not
+assumed individually supported. No time-support independence or Hilbert-valued noise
+is used. This proves Lemma 29.6.
+
+Proposition 29.7 (Actual Cameron covariance and averaged bound). The actual co-
+variance map Lδ,J Φ = E[XW (Φ)] is
+
+                  √ ∫︂ min(u,ℓm )
+   (Lδ,J Φ)m (u) = δ              SF (−v)T (QJ Φ)(sm + δv)SF (v) dv,                Φ ∈ H.     (29.9)
+                             0
+
+This is a compact-operator Bochner integral. Define the exact norm and constants
+            (︄    N
+                                   )︄1/p
+                 ∑︂
+ ∥x∥δ,p =    δ         ∥xm ∥pC θ           ,   GB = sup ∥SF (v)∥,   CB = G2B [B 1−1/r + B 1−1/r−θ ].
+                 m=0                                |v|≤B
+                                                                                              (29.10)
+Then the actual Gaussian Cameron embedding satisfies
+                                   √
+                      ∥Lδ,J Φ∥δ,p ≤ δ CB (2/B)1/p−1/r ϵJ ∥Φ∥H .                               (29.11)
+
+Convergence ϵJ → 0 fixes R and is independent of δ.
+
+Proof. For smooth supported Φ, QJ Φ is another such test. The literal pullback covari-
+ance (25.6) gives
+                                          ∫︂
+                                      a/2
+                E[Ym,J (f )W (Φ)] = δ        f (v, x)hQJ Φ (sm + δv, x) dx dv.
+                                                                            √
+Absolute Fubini also holds for signed compact tests. Multiplying by gδ gives δ. Literal
+rows and (29.4) give (29.9). The constant-velocity input acquires displacement v under
+SF (v); the constant displacement remains one. Both columns are included.
+    Both SF and its adjoint are strongly continuous on Hilbert F . In Bessel-unitary E
+coordinates the Fourier matrix is
+                         (︃                                     )︃
+                                cos(v|ξ|)      ⟨ξ⟩ sin(v|ξ|)/|ξ|
+                                                                   .
+                            −|ξ| sin(v|ξ|)/⟨ξ⟩     cos(v|ξ|)
+
+                                                      194
+
+===== PHYSICAL PAGE 195 =====
+Its continuous zero quotient and common bound C(1 + B) apply also to its adjoint;
+dominated convergence proves the assertion. The constant block is finite dimensional.
+For compact A, conjugation SF (−v)ASF (v) is norm continuous: strong convergence
+is uniform on compact images, and the right factor follows by adjoints. Joint norm
+continuity in (v, A) and uniform bounds give Bochner measurability for the conjugated
+strongly measurable compact-operator field. No norm continuity of the free group itself
+is assumed.
+    Write M = T QJ Φ. Hölder and the primitive increment estimate give
+                                          √
+                         ∥(Lδ,J Φ)m ∥C θ ≤ δ CB δ −1/r ∥M ∥Lr (Im ) .          (29.12)
+Its primitive exponent is 1−1/r > θ. Simple compact-operator integrand approximation
+in Lr puts the primitive in B0 ; constant stopping does not increase the Hölder norm.
+Affine pullback preserves null sets. For fixed δ, J the actual covariance map is bounded
+by Bochner Cauchy–Schwarz and finite tuple L2 moments. The integral is bounded
+by the displayed estimate, so equality on smooth controls extends by density to all H.
+Dense states and rational times make it a full operator-path identity.
+    Let Hseen be the closed span of the kℓ from Lemma 29.6. Then ℓ(Lδ,J Φ) = ⟨kℓ , Φ⟩H
+                    ⊥
+and ker Lδ,J = Hseen   . The first-chaos definition of the Cameron space is therefore
+Lδ,J (Hseen ) with the minimum raw-H preimage norm. Extra directions are removed
+by orthogonal projection, without an inverse covariance. A raw-H operator bound is
+thus the actual embedding bound.
+    Put tm = ∥M ∥Lr (Im ) ≥ 0 and n = N + 1 ≥ 2. Finite power mean at exponent
+r/p > 1, applied to tpm , gives
+                            (︄       )︄1/p            (︄       )︄1/r
+                              ∑︂                        ∑︂
+                                 tpm       ≤ n1/p−1/r      trm       .
+                              m                     m
+
+The true partition gives m trm = ∥M ∥rLr (I) , including an empty last interval, and n ≤
+                         ∑︁
+
+2/(δB). Hence the exact δ-weighted norm gives
+                       √                            √
+         ∥Lδ,J Φ∥δ,p ≤ δ CB (δn)1/p−1/r ∥M ∥Lr ≤ δ CB (2/B)1/p−1/r ϵJ ∥Φ∥H .
+The B factor remains explicit; covariance and mask occur once. This proves Proposi-
+tion 29.7.
+   These conclusions fix the radius and make no uniform-radius projection tail assertion.
+No concentration estimate or original moment upper bound follows from this section
+alone.
+
+
+30     Young perturbations retaining the deterministic
+       endpoint
+Let X be any nonzero real Banach space, with its induced operator norm on B(X ). Fix
+B ≥ 1, 1/2 < θ < 1 and ν = 1/θ < 2. All driver paths start at zero and have norm
+
+                                          195
+
+===== PHYSICAL PAGE 196 =====
+                                                      ∫︁
+∥D∥θ = supt ∥D(t)∥+[D]θ on [0, B]. Let UD = I + dD UD be the left Young evolution.
+The construction in Proposition 22.4 applies: its proof needs completeness and operator
+multiplication of norm one, with no Hilbert-space assumption. The primary estimate is
+[7, Section 1.5, p. 13; Section 4.1, (4.1)–(4.3), pp. 61–62].
+
+Lemma 30.1 (Refined growth and uniform inverse control). With dimension-free con-
+stants,
+                sup ∥UD (t)∥ ≤ exp{cθ,B (d + dν )}, d = ∥D∥θ .             (30.1)
+                     t≤B
+
+For ∥H∥θ ≤ K, K ≥ 1,
+
+                             ∥UH ∥C θ + ∥UH−1 ∥C θ ≤ Lθ,B,K < ∞.                         (30.2)
+
+Proof. Let cθ = 2 max(1, Cθ ) for the primary     ∫︁ · Young constant. θ The complete scaled
+                             θ
+norm Nℓ (V ) = sup ∥V ∥ + ℓ [V ]θ satisfies Nℓ ( a dD V ) ≤ cθ [D]θ ℓ Nℓ (V ), as in (22.10).
+If cθ dB θ ≤ 1/4, whole-interval contraction gives sup ∥UD ∥ ≤ (1 − cθ dB θ )−1 and hence
+log sup ∥UD ∥ ≤ 2cθ B θ d. Otherwise take nD = ⌈B(4cθ d)ν ⌉ equal pieces. Their contrac-
+tion ratios are at most 1/4 and local norms at most 4/3. The expression inside the
+ceiling exceeds one, so nD ≤ 2B(4cθ d)ν . Composition gives the dν bound. At d = 0,
+UD = I, proving (30.1) without a prefactor.
+    On the ball ∥H∥θ ≤ K choose one uniform equal partition with ratio at most 1/4.
+Each local evolution Q has Nℓ (Q) ≤ 4/3 and sup ∥Q − I∥ ≤ 1/3. Its Neumann inverse
+is bounded by 3/2. Products give uniform global sup bounds. The same scaled estimate
+bounds local Hölder seminorms. Pairs crossing a boundary at distance below ℓ split into
+at most two pieces; use hθ1 + hθ2 ≤ 21−θ (h1 + h2 )θ . For larger distances use 2 sup ∥UH ∥/ℓθ .
+This gives its global C θ bound. Finally,
+
+                   UH−1 (t) − UH−1 (s) = −UH−1 (t)(UH (t) − UH (s))UH−1 (s)
+
+bounds the inverse seminorm. This proves Lemma 30.1.
+
+Proposition 30.2 (Multiplicative upper perturbation). If K ≥ 1, ∥H∥θ ≤ K, x =
+∥X∥θ and A ∈ B(X ), then
+
+             ∥AUH+X (t)∥ ≤ ∥AUH (t)∥ exp{Cθ,B,K (x + xν )},           0 ≤ t ≤ B.         (30.3)
+
+This includes noninvertible A and A = 0 with no extra factor when x = 0.
+
+Proof. Put U = UH , R = U −1 and G(s)Z = R(s)ZU (s). Lemma 30.1 makes G a C θ
+path of bounded linear maps on B(X ), uniformly bounded on the fixed ball. Thus the
+Banach Young integral              ∫︂         t
+                                 Z(t) =           R(s) dX(s)U (s)
+                                          0
+
+exists, with ∥Z∥θ ≤ L′θ,B,K x and Zs,t = R(s)Xs,t U (s)+O(|t−s|2θ ). Put V = UZ . Its and
+U ’s Young remainders are Vs,t = Zs,t V (s)+O(|t−s|2θ ) and Us,t = Hs,t U (s)+O(|t−s|2θ ).
+
+
+                                                  196
+
+===== PHYSICAL PAGE 197 =====
+The exact increment of P = U V includes a cross term of order 2θ. Substitution in the
+stated left order gives
+
+Ps,t = Hs,t P (s) + U (s)R(s)Xs,t U (s)V (s) + O(|t − s|2θ ) = (H + X)s,t P (s) + O(|t − s|2θ ).
+
+On any partition the remainder sum is bounded by a constant times B mesh2θ−1 → 0.
+Left sums converge to the Young integral, so uniqueness yields UH+X = UH UZ . This
+proves the product identity without assuming smooth density in the full Hölder norm.
+Apply (30.1) to Z, then left multiply by A and use submultiplicativity. No inverse or
+lower bound for A is required. This proves Proposition 30.2.
+
+
+31      Uniform spatial-radius means and Cameron reg-
+        ulation
+Retain the original nonzero covariance, amplitude and√︁  real spaces of Section 29. Fix
+                                                       2
+α/4 < s < 1/2 and put β = 1/2 − s > 0. Write As = Cs Rsp for the constant in (29.1).
+Choose a real even smooth compact η, equal to one on the unit ball, with 0 ≤ η ≤ 1
+and support in the closed radius-two ball. For R ≥ 1 set ηR (x) = η(x/R) and mR = ηR2 .
+In this section the mean acts on E = H 1/2 × H −1/2 . The constant data columns belong
+to F , outside E. All uniform-radius claims below concern E. The actual spatial map
+TR : Hsp → K(E) is the E restriction of Proposition 29.2. Its literal row is
+
+             ⟨TR qz, w⟩E = ⟨q, kR (z, w)⟩Hsp ,         kR (z, w) = (ηR z1 )(ηR Λ−1 w2 ).   (31.1)
+
+Thus the physical mask occurs once, after covariance convolution.
+
+31.1     Uniform multiplier and spatial tails
+Lemma 31.1 (Uniform cutoff and physical mean). For every real σ, multiplication by
+ηR on H σ has norm at most
+                                            ∫︂
+                             |σ|/2     −d/2
+                       Mσ = 2      (2π)         η(p)|⟨p⟩|σ| dp,
+                                               |ˆ︁
+                                                       Rd
+
+independently of R ≥ 1. With M = M1/2 and M0 = As M 2 ,
+
+                 ∥kR (z, w)∥Hsp ≤ M0 ∥z∥E ∥w∥E ,            ∥TR ∥Hsp →L(E) ≤ M0 .          (31.2)
+
+Proof. Peetre’s inequality bounds the weighted Fourier kernel for multiplication by ηR
+by convolution with
+                               2|σ|/2 (2π)−d/2 |ˆ︂
+                                                ηR (q)|⟨q⟩|σ| .
+                d
+Here ηˆ︂
+       R (q) = R η(Rq).
+                  ˆ︁    Substitution p = Rq and ⟨p/R⟩ ≤ ⟨p⟩ bound its L1 norm by
+Mσ . The L1 ∗ L2 inequality proves the assertion on Schwartz functions and density
+extends it to H σ . The map w2 ↦→ Λ−1 w2 is an isometry from H −1/2 to H 1/2 , and
+
+                                                 197
+
+===== PHYSICAL PAGE 198 =====
+H 1/2 ↪→ H s has norm one. Apply the cutoff bound at σ = 1/2 and Lemma 29.1 to
+the two factors in (31.1). Hilbert Cauchy–Schwarz then gives the operator bound. This
+is the existing completed physical map: the row agrees on smooth controls and hence
+on their completion. Its compact values at each fixed R are retained. This proves
+Lemma 31.1.
+
+Lemma 31.2 (Uniform heat and frequency tails). Let Cε be the actual covariance-Hilbert
+                                               2
+heat contraction with Fourier multiplier e−ε|ξ| /2 . There is a real orthogonal projection
+PK on Hsp corresponding to the closed frequency ball {|ξ| ≤ K}. It commutes with heat.
+For K ≥ 1, ε > 0 and R ≥ 1,
+
+               ∥TR (I − Cε )∥ ≤ Mh εβ/2 ,                 Mh = 4As M 2 E|Gd |β ,      (31.3)
+                                                                  Mh
+              ∥TR (I − PK )∥ ≤ Mf K −β ,                  Mf =           ,            (31.4)
+                                                               1 − e−1/2
+where Gd is a standard real d-dimensional normal vector. Operator norms are from Hsp
+to L(E). The projection PK is allowed to have infinite rank.
+
+Proof. Translations τh f (x) = f (x − h) extend to strongly continuous isometries of the
+actual Hsp . Indeed, in its covariance Fourier isometry they multiply by e−iξ·h ; domi-
+nated convergence gives continuity on tests, then density and isometry give it on the
+completion. The real subspace is preserved. The inequalities |e−it − 1| ≤ 2 min(1, |t|β )
+and |ξ|β ⟨ξ⟩s ≤ ⟨ξ⟩1/2 show that
+
+                          ∥τh f − f ∥H s ≤ 2 min(1, |h|β )∥f ∥H 1/2 .
+
+Use this for f = ηR z1 and g = ηR Λ−1 w2 . The product identity
+
+                        τh (f g) − f g = (τh f − f )τh g + f (τh g − g)
+
+holds in Hsp , first for smooth factors and then by the continuous fractional product
+extension. Lemma 31.1 gives
+
+                 ∥τh kR (z, w) − kR (z, w)∥Hsp ≤ 4As M 2 min(1, |h|β )∥z∥E ∥w∥E .      (31.5)
+                               ∫︁
+    The Bochner integral pε (h)τh k dh exists, since the translation orbit is strongly
+continuous and bounded in the separable covariance Hilbert space. Its Fourier image is
+      2
+e−ε|ξ| /2 ˆ︁
+          k: ordinary Gaussian integration proves this on tests and contraction extends it
+to all k. It is therefore the actual Cε of the source construction. Heat has variance ε√here;
+there is no additional Fourier normalization factor. Integrating (31.5) with h = εGd
+bounds ∥(I − Cε )kR (z, w)∥ by Mh εβ/2 ∥z∥E ∥w∥E . Selfadjointness in (31.1) proves (31.3).
+    To construct PK , let V be the closed image of the covariance Fourier isometry into
+L (µ), including its fixed (2π)d/2 factor. No surjectivity is assumed. Its formula extends
+  2
+
+to Schwartz functions: compact cutoff approximation converges in Schwartz seminorms,
+and temperedness of µ controls the Fourier error in L2 (µ). Choose real even radial
+smooth χn , equal to one on the closed ball of radius K, zero outside radius K + 1/n, and
+
+                                             198
+
+===== PHYSICAL PAGE 199 =====
+between zero and one. For real Schwartz f , the function χn fˆ︁ is the transform of another
+real Schwartz function and so lies in V . Dominated convergence against |fˆ︁|2 µ gives
+1{|ξ|≤K} fˆ︁ ∈ V . The pointwise limit includes the boundary sphere, even if µ charges it.
+Test density and contraction extend this assertion to all of V . Indicator multiplication
+is selfadjoint and idempotent on V ; pulling it back defines the asserted real orthogonal
+PK . All Fourier multipliers here commute.
+                                   2    2
+    On |ξ| > K one has 1 − e−|ξ| /(2K ) ≥ 1 − e−1/2 , whence
+
+                    ∥(I − PK )k∥Hsp ≤ (1 − e−1/2 )−1 ∥(I − CK −2 )k∥Hsp .
+
+Apply the row heat bound and selfadjointness of PK in (31.1) to obtain (31.4). No
+density of µ, periodic state space or finite rank was used. This proves Lemma 31.2.
+
+31.2     The time tensor and the actual regulator
+Lemma 31.3 (Dimension-free Hilbert tensor extension). If H0 , G are real Hilbert spaces,
+2 ≤ r < ∞ and A : H0 → Lr (I) is bounded, then
+
+                                 ∥A ⊗ IG ∥H0 ⊗G→Lr (I;G) ≤ ∥A∥.
+
+The tensor extension need not be compact when A is compact.
+
+Proof. For a finite tensor write v = nj=1 fj ⊗ ej with (ej ) orthonormal. Its squared
+                                     ∑︁
+
+norm is j ∥fj ∥2 . Let γj be independent standard real normals and mr = E|γ1 |r . Finite
+        ∑︁
+covariance diagonalization gives
+                            ⃦         ⃦r     (︄            )︄r/2
+                            ⃦∑︂       ⃦        ∑︂
+                                γj fj ⃦ ≤ mr      ∥fj ∥2H0       .
+                            ⃦         ⃦
+                           E⃦
+                            ⃦         ⃦
+                                 j           H0              j
+
+                                                            ∑︁
+In
+∑︁ fact,2 if λl are the covariance eigenvalues and L = l λl , the squared norm has law
+                       ∑︁ standardr ζl . For L > 0, convexity at exponent r/2 ≥ 1 bounds
+ ∑︁l λl ζl for independent
+( l (λl /L)ζl2 )r/2 by ∑︁l (λl /L)|ζl | . Taking expectations proves the inequality; L = 0 is
+immediate. Also L = j ∥fj ∥2 .
+     Choose measurable representatives of the finitely many Afj . Scalar Gaussian mo-
+ments and Tonelli give
+                      ∫︂ (︄∑︂                )︄r/2          ⃦            ⃦r
+                                                            ⃦ ∑︂         ⃦
+                 mr             |Afj (t)|2           dt = E ⃦A     γj fj ⃦
+                                                            ⃦            ⃦
+                       I   j
+                                                            ⃦
+                                                                j
+                                                                         ⃦
+                                                                          Lr
+                                                                  (︄             )︄r/2
+                                                                    ∑︂
+                                                        ≤ ∥A∥r mr         ∥fj ∥2       .
+                                                                        j
+
+
+Cancel the finite positive mr and take the rth root. Finite tensor density and Bochner
+completeness give the extension. The zero space is trivial. If Af ̸= 0 and G has an
+
+                                                     199
+
+===== PHYSICAL PAGE 200 =====
+                  √ sequence (ej ), the images of the bounded sequence f ⊗ ej have
+infinite orthonormal
+pairwise distance 2∥Af ∥Lr . They have no convergent subsequence, even when the
+scalar map A is compact. Only finite auxiliary Gaussians were used in the estimate.
+This proves Lemma 31.3.
+    Recall the actual supported identity HI = Ht ⊗ Hsp , the compact scalar covariance
+map Ct : Ht → Lr (I), 2 < r < 2/a, and its completed tensor U = Ct ⊗ IHsp from
+Section 29. On finite smooth tensors U agrees with the earlier U; density gives equality
+of their completed maps. For block applications fix the same r as in (29.8). All ct , εJ
+and mean norms below use that one choice. Choose a smooth-test orthonormal basis of
+Ht and let πJ be its first-J orthogonal projection, with π0 = 0. Put
+
+               ct = ∥Ct ∥,       εJ = ∥Ct (I − πJ )∥Ht →Lr (I) ,        TR = TR U.
+
+Proposition 31.4 (Uniform completed mean regulation). On HI the operators
+
+                             Pret = πJ ⊗ PK ,         QJ,K = I − Pret
+
+are real orthogonal projections, and εJ → 0. The actual mean is a strongly measurable
+Lr (I; K(E)) field and satisfies, uniformly for R ≥ 1,
+
+                   ∥TR ∥ ≤ M0 ct ,       ∥TR QJ,K ∥ ≤ M0 εJ + Mf ct K −β .           (31.6)
+
+These norms have domain HI and target Lr (I; L(E)).
+
+Proof. The tensor projections are selfadjoint, idempotent and contractive on finite ten-
+sors and hence on their Hilbert completion. For the scalar tail, failure of convergence
+would supply unit vJ with ∥Ct (I − πJ )vJ ∥ bounded below on a subsequence. But
+(I − πJ )vJ tends weakly to zero, since its pairing with h is bounded by ∥(I − πJ )h∥.
+Compactness supplies a norm-convergent image subsequence; bounded linear scalar ob-
+servables show its limit is zero, a contradiction. Lemma 31.3 transfers this scalar tail
+norm to the Hilbert-valued time map without a dimension factor.
+    For fixed R, TR is bounded into the separable compact-operator space on E. Com-
+position with the actual Bochner field U Φ gives the stated mean and its first bound.
+The exact decomposition is
+
+                         QJ,K = (I − πJ ) ⊗ I + πJ ⊗ (I − PK ).
+
+The first term is bounded by M0 εJ . For the second term use the typed intertwining
+
+                    U (πJ ⊗ (I − PK )) = (ILr ⊗ (I − PK ))(Ct πJ ⊗ I).
+
+It holds first on finite tensors, then by continuity. Apply (31.4) pointwise, followed by
+Lemma 31.3 for Ct πJ , whose norm is at most ct . This proves (31.6). Infinite spatial rank
+is allowed throughout; neither tensor compactness nor uniform-radius compactness has
+been asserted. This proves Proposition 31.4.
+
+
+                                                200
+
+===== PHYSICAL PAGE 201 =====
+31.3     The given-noise block Cameron embedding
+Use B, δ, N, sm , ℓm , Im and θ, r, p exactly as in (29.8) and its preceding block partition.
+Let iI : HI → HW be the isometric closed inclusion. On the full raw noise space set
+
+                             Pfull = iI Pret i∗I ,         Qfull = I − Pfull .
+
+These are genuine orthogonal projections on HW . Define the actual residual fast noise
+and stopped E driver by
+
+   Ym (f ) = W (Qfull Tδ,m f ),       Xm (u) = gδ AmR (Ym )(min(u, ℓm )), gδ = δ (1−a)/2 .
+                                                                                      (31.7)
+Here Tδ,m is the literal raw isometry (25.2), and AmR takes its E restriction. Its isometry
+is proved in Lemma 25.1. The symbol Hfast below denotes this same original covariance
+norm in fast coordinates, carried isometrically into HW . The E little Hölder space
+means the zero-start closure of Lipschitz compact-operator paths in C θ norm. Compact
+operators on separable E and polygonal approximation make this closure separable. The
+last interval can be empty, in which case XN = 0.
+Proposition 31.5 (Uniform-radius actual Cameron bound). The tuple X = (Xm )N            m=0
+is a centered Gaussian variable in the separable little Hölder compact-operator path space
+on E. Its actual Bochner covariance Lh = E[XW (h)], h ∈ HW , is
+                     √ ∫︂ min(u,ℓm )
+         (Lh)m (u) = δ               SE (−v)TR (QJ,K i∗I h)(sm + δv)SE (v) dv.       (31.8)
+                            0
+
+In the exact norm ∥x∥δ,p = (δ m ∥xm ∥pC θ )1/p , its actual Cameron embedding has the
+                             ∑︁
+uniform-radius bound
+           √
+ ∥Lh∥δ,p ≤ δ CB,E (2/B)1/p−1/r [M0 εJ +Mf ct K −β ]∥h∥HW ,     CB,E ≤ 18B 3−1/r . (31.9)
+
+All spatial constants are independent of R ≥ 1.
+Proof. Orthogonality and raw pullback isometry give Var Ym (f ) ≤ ∥f ∥2Hfast . Gaussian
+transfer, Proposition 20.2, therefore constructs the drivers on the given W , with finite
+path moments at each fixed R, B, δ, J, K. Choose an admissible Hölder exponent strictly
+above θ as in Lemma 29.6; constant stopping puts the paths in the separable little C θ
+closure. Finite-coefficient constructions and their L2 limits show that every continuous
+linear coordinate is in the first chaos of the given W .
+    Every literal observed row, pulled back to slow time, belongs to HI . This is the
+supported-row approximation from Lemma 29.6, also valid before any projection; ap-
+proximate endpoints inside I against the integrable time kernel and locally finite spatial
+covariance. For such a row k, exact orthogonality gives
+
+                         ⟨Qfull Tδ,m k, h⟩HW = ⟨Tδ,m k, iI QJ,K i∗I h⟩HW .
+
+Directions perpendicular to HI disappear from this pairing. Apply the completed J = 0
+identity (29.9) to QJ,K i∗I h, and restrict its input and output to E. The free F group
+
+                                                     201
+
+===== PHYSICAL PAGE 202 =====
+preserves E and restricts to S  √E ; the mean restricts to TR . This proves (31.8). Its
+amplitude is exactly gδ δ a/2 = δ, on the actual noise W . Arbitrary projected controls
+are covered by the completed mean identity; no smoothness or finite rank of PK is
+required. Compact operator values and strong continuity of SE and its adjoint make
+conjugation norm continuous on compact operators, as in Proposition 29.7. Thus the
+integral is Bochner measurable. Fixed-parameter L2 covariance continuity, dense states
+and rational times identify the entire operator path.
+    For explicit free constants, the Bessel-unitary Fourier matrix of SE (v) is the matrix
+      √ in that proposition. For |v| ≤ B, B ≥ 1, the√upper off-diagonal entry is at
+displayed
+most 2B: use | sin(vk)| ≤ Bk for k ≤ 1 and ⟨k⟩/k ≤ 2 for k ≥ 1. The lower entry
+is at most one, as are√ both diagonal entries; at zero the sine quotient has value v. Its
+Frobenius bound is 3 + 2B 2 ≤ 3B. Hence GB,E = sup|v|≤B ∥SE (v)∥ ≤ 3B. With
+
+                        Mh (t) = TR (QJ,K i∗I h)(t),              tm = ∥Mh ∥Lr (Im ;L(E)) ,
+
+the primitive increment bound and the affine time change give
+                  √
+    ∥(Lh)m ∥C θ ≤ δ CB,E δ −1/r tm , CB,E = G2B,E [B 1−1/r + B 1−1/r−θ ] ≤ 18B 3−1/r .
+
+Here 1−1/r > θ, constant stopping preserves the bound, and the empty block contributes
+zero.
+   Put n = N + 1 ≥ 2. The finite power-mean inequality at exponent r/p > 1 with
+nonnegative inputs tpm gives
+        (︄             )︄r/p                            (︄              )︄1/p                (︄              )︄1/r
+          ∑︂                              ∑︂                 ∑︂                                   ∑︂
+                 tpm           ≤ nr/p−1        trm ,              tpm           ≤ n1/p−1/r             trm           .
+            m                             m                  m                                    m
+
+Raising nonnegative
+               ∑︁ rterms usesr only positive powers, including when tm = 0. The true
+partition gives m tm = ∥Mh ∥Lr (I) and δn ≤ 2/B. The exact δ weight therefore yields
+            √                                          √
+∥Lh∥δ,p ≤       δ CB,E (δn)1/p−1/r ∥Mh ∥Lr ≤            δ CB,E (2/B)1/p−1/r [M0 εJ + Mf ct K −β ]∥h∥HW .
+
+    Finally let Hseen be the closed span in HW of all coefficient tests kℓ with ℓ(X) =
+W (kℓ ). The first-chaos Cameron identification in Proposition 29.7 applies on HW : L
+        ⊥
+kills Hseen and its Cameron space is L(Hseen ) with minimum raw preimage norm. Thus
+∥Lh∥CM = ∥Pseen h∥HW . Applying the bound to this minimum-norm representative gives
+precisely the actual Cameron embedding bound, without an inverse covariance or finite-
+dimensional density. This proves Proposition 31.5.
+    The orthogonal Pfull and Qfull Gaussian fields are independent; residual time blocks
+can remain correlated. The retained spatial head may have infinite rank. Heat filtering
+alone would not give this orthogonal decomposition. These linear bounds do not bound
+the expected residual path norm uniformly on growing masks, nor perform conditioning
+or integration over the infinite head. The remaining stochastic, product and original-
+point upper estimates require their own proofs.
+
+                                                        202
+
+===== PHYSICAL PAGE 203 =====
+32      Radius-explicit stochastic first-driver bounds
+Retain every original covariance and amplitude in Hypothesis 1.1, with a = α0 , and the
+real phase E = H 1/2 × H −1/2 . Use the fixed root profile η of Section 31 and physical
+mask mR = η(·/R)2 , R ≥ 1. In the variance construction the base mask is ζ = η 2 .
+The balanced unitary is J0 (u, v) = (Λ1/2 u, Λ−1/2 v). Fix a finite horizon B ≥ 1 and
+parameters
+                (︃        )︃                             (︃                 )︃
+                   1 2−α          1                             a 3−a−α
+   0 < γ < min       ,       ,      < θ < ηt < βt < min 1 − ,                  . (32.1)
+                   2   2          2                             2     2
+The strict subcritical assumptions make these intervals nonempty. Fix one even integer
+Q ≥ 2 such that
+                                                   1                     2d
+                       Qγ > d,        βt − ηt −      > 0,         Q>        .                      (32.2)
+                                                   Q                    1−a
+Such a Q exists because all three lower thresholds are finite. It stays fixed as δ tends
+to zero. Constants below may depend on the model, B, Q, these exponents and the
+fixed auxiliary cutoff profiles. They are independent of the spatial radius, noise-basis
+truncation, moment index and deterministic residual projection unless explicitly stated
+otherwise.
+
+32.1     Uniform outer factors and the exact whole-space envelope
+Fix real χ0 ∈ Cc∞ (Rd ), equal to one on B1 and supported in the closed ball of radius two.
+Choose real ψ0 ∈ Cc∞ (Rd ), equal to one on a neighbourhood of supp χ0 and supported
+inside B3 . For ρ ≥ 1 put χρ (x) = χ0 (x/ρ), ψρ (x) = ψ0 (x/ρ) and L = 2πρ. Since 3 < π,
+both cutoffs are supported strictly inside the cube of side L. The auxiliary torus has
+unnormalized L2 (QL , dx), orthonormal modes L−d/2 eik·x/ρ and Sobolev weights ⟨k/ρ⟩r .
+Lemma 32.1 (Uniform rescaled outer maps). The cutoff periodization and recovery
+maps from Lemma 18.5 satisfy, for every real r,
+
+       ∥Pψρ : H r (Rd ) → H r (TL )∥ ≤ Cψ0 ,r ,         ∥Eχρ : H r (TL ) → H r (Rd )∥ ≤ Cχ0 ,r ,
+
+independently of ρ ≥ 1.
+Proof. The exact weighted Fourier kernels are
+                                  (︃       )︃r
+                             −d/2    ⟨k/ρ⟩ ˆ︂
+                           L                   ψρ (k/ρ − ξ),
+                                      ⟨ξ⟩
+                                  (︃       )︃r
+                             −d/2     ⟨ξ⟩
+                           L                   ˆ︂ρ (ξ − k/ρ).
+                                               χ
+                                     ⟨k/ρ⟩
+
+There is no additional (2π)−d/2 : it cancels between Fourier inversion and the ordinary
+integral in the first kernel, while the torus normalization gives the second. For either
+
+                                                  203
+
+===== PHYSICAL PAGE 204 =====
+base profile ϕ0 , ϕˆ︁ρ (t) = ρd ϕˆ︁0 (ρt). Peetre’s inequality (18.10), also for negative r, and
+⟨(ρξ − k)/ρ⟩ ≤ ⟨ρξ − k⟩ bound the relevant kernel by
+
+                        Cr ρd/2 Fr (k − ρξ),            Fr (t) = |ϕˆ︁0 (±t)|⟨t⟩|r| .
+
+The nonnegative Fr is integrable and bounded by arbitrarily high inverse powers of ⟨t⟩.
+At fixed k, integration in ξ gives a bound Cρ−d/2 . At fixed ξ, summation in k gives
+Cρd/2 : translate ρξ into a unit lattice cell and sum a power tail of order greater than
+d, as in (18.11). This lattice spacing is one and has no remaining ρ dependence. The
+mixed Schur estimate bounds the operator norm by the square root of the product of
+those two quantities. Their radius powers cancel. For recovery the row and column roles
+are reversed.
+    Bounded kernel extension from Schwartz functions and torus polynomials gives the
+full Sobolev maps by density. Their distributional meanings are the same cutoff maps
+as in Lemma 18.5; no point sampling of a rough Fourier function is used. This includes
+negative indices. This proves Lemma 32.1.
+
+Proposition 32.2 (Radius-explicit compact envelopes). For real σ, γ > 0 and q ≥ 1
+with qγ > d,
+                       ∥Λσ χρ Λ−σ−γ ∥Sq ≤ Cσ,γ,q,d,χ0 ,ψ0 ρd/q .            (32.3)
+In the balanced coordinates of (18.14),
+
+                                 ∥Kin ∥Sq = ∥Kout ∥Sq ≤ Cq ρd/q .                        (32.4)
+
+Proof. The exact recovery identity, with χρ ψρ = χρ , gives
+
+                                Λσ χρ Λ−σ−γ = Λσ Eχρ Iγ Pψρ Λ−σ−γ .
+
+Here Iγ : H σ+γ (TL ) → H σ (TL ) has diagonal singular values ⟨k/ρ⟩−γ . The outer Bessel
+maps are unitary on their indicated Sobolev domains. The preceding lemma bounds both
+other outer maps uniformly in ρ. This is an equality on the full whole-space domain by
+the recovery proof and density, including negative σ.
+   Put u = qγ > d. If x ∈ k + [−1/2, 1/2]d , then
+                      √                                         √︁
+            ⟨x/ρ⟩ ≤ 2⟨k/ρ⟩⟨(x − k)/ρ⟩ ≤ c′d ⟨k/ρ⟩,         c′d = 2(1 + d/4).
+
+Integrate over the unit cubes to obtain
+                        ∑︂                              ∫︂
+                                    −u
+                               ⟨k/ρ⟩     ≤ (c′d )u ρd         ⟨y⟩−u dy ≤ Cd,u ρd .       (32.5)
+                                                         Rd
+                        k∈Zd
+
+The integral is finite: dyadic annuli outside the unit ball give a geometric series with
+terms bounded by Cd 2j(d−u) .
+   Arrange the inclusion’s diagonal values in decreasing order (λj ). They tend to zero.
+Retaining its first j − 1 coordinates has rank less than j and error λj . Compose this
+
+                                                   204
+
+===== PHYSICAL PAGE 205 =====
+approximation with the bounded outer factors. The singular-value approximation ar-
+gument in Proposition 18.6 gives sj ≤ Cχ0 ,σ Cψ0 ,σ+γ λj . Finite-rank approximation also
+proves compactness. Summing qth powers and using (32.5) proves (32.3). No separate
+Schatten ideal theorem is needed.
+    The two blocks of Kout = Pχρ Dγ are the whole-space operators with σ = 1/2, −1/2.
+Their qth power norms add, proving its bound. Proposition 18.7 gives Kin = V Kout V for
+the unitary coordinate swap V (z1 , z2 ) = (z2 , z1 ), so their norms agree. In (32.1), γ < 1/2
+and qγ > d force q > 2d ≥ 2; there is no Hilbert–Schmidt conclusion. Neither Pχρ nor
+its adjoint is assumed selfadjoint or idempotent. This proves Proposition 32.2.
+
+32.2     The actual driver and covariance contractions
+Write MR (W ) = AmR (W ) for the actual zero-start E interaction driver on [0, B] from
+Proposition 19.1. The phase remains the whole-space E throughout.
+
+Proposition 32.3 (Radius-explicit actual path moments). Under (32.1)–(32.2), for
+every finite v ≥ 1,
+                                                       √
+                  ∥MR (W )∥Lv (C θ ([0,B];L(E))) ≤ CQ,B v Rd/Q , R ≥ 1.   (32.6)
+
+The constant does not depend on v or R. This is an E first-driver estimate; the two con-
+stant columns on F require their own estimates. Any later projection used in a Cameron
+comparison must also satisfy its actual orthogonality and covariance hypotheses.
+
+Proof. Use the given∑︁
+                     raw smooth-test basis from Lemma 19.2, gj = W (fj ), and its actual
+finite paths MN = j≤N gj Aj . These are the same given-noise coefficient paths as in
+Lemma 19.9, not source approximations. Choose
+
+                      ρ = 2R + B + 2 ≤ (B + 4)R,           χ = χ0 (·/ρ).
+
+The plateau covers B2R+B+1 . Thus both literal localization identities (19.10) hold for
+this envelope. The physical noise mask remains mR . Both envelopes Kin , Kout here use
+this same χρ .
+    For an interval I ⊂ [0, B] of length 0 < h ≤ 1, Proposition 17.5 and Lemma 19.5
+give both finite weighted variances with budget VB,var h2−a Bα (h), uniformly in R, N, I.
+In particular, the base mask is the same fixed η 2 required by that variance theorem.
+Corollary 18.10, applied in the balanced coordinates, gives for every even q ≥ Q
+                                  √︁     √︁
+                ∥MN (I)∥Lq (Sq ) ≤ q − 1 VB,var h1−a/2 Bα (h)1/2 ∥Kout ∥Sq ,
+
+where Bα (h) is 1, 1 + log(1/h) or h1−α according as α < 1, α = 1 or α > 1. Both
+actual variances and both localizations have been checked; individual basis-dependent
+coefficient bounds are not summed.
+   For q ≥ Q, the unnormalized Schatten norms obey ∥Kout ∥Sq ≤ ∥Kout ∥SQ . Indeed,
+normalize a nonzero singular-value sequence by its ℓQ norm; each entry is at most one,
+
+
+                                             205
+
+===== PHYSICAL PAGE 206 =====
+so its qth power sum is at most its Qth power sum. The zero case   √ is immediate. Ap-
+                                                                             √
+ply (32.4) only at the fixed index Q. Use ∥A∥ ≤ ∥A∥Sq and q − 1 ≤ q. The
+balanced Hilbert complexification has the same operator norm as its real restriction,
+and ρd/Q ≤ (B + 4)d/Q Rd/Q . Since βt is strictly below the corresponding short-time
+power, it follows that
+                                          √
+        ∥MN (t) − MN (u)∥Lq (L(E)) ≤ CQ,B q Rd/Q |t − u|βt ,   |t − u| ≤ 1.      (32.7)
+                      √︁
+At α = 1, the factor 1 + log(1/h) is absorbed by the strict gap 1 − a/2 − βt > 0. For
+α > 1, the power is (3 − a − α)/2. These power/log constants are independent of R, N, q.
+Longer increments are finite sums of increments of length at most one, with constants
+depending only on the fixed B.
+    Let Dn (F ) be the largest adjacent increment on the grid kB2−n of [0, B]. For fine
+levels B2−n ≤ 1, the finite-maximum bound gives
+                                               √
+                       ∥Dn (MN )∥Lq ≤ 2n/q CQ,B q Rd/Q (B2−n )βt .
+
+No independence of increments is used. The sum after multiplication by 2nηt converges
+uniformly for even q ≥ Q, because its geometric ratio is at most 2−(βt −ηt −1/Q) < 1. The
+finitely many coarse levels are controlled by unit partitions. The deterministic dyadic
+                                                                                 √
+chaining argument in Lemma 19.9 therefore bounds the Lq C ηt norms by CQ,B q Rd/Q .
+Each finite path is continuous and starts at zero, as required there. The fixed-horizon
+embedding C ηt ↪→ C θ gives the same estimate in C θ .
+    For each fixed R, Lemma 19.9 identifies MR (W ) as the all-finite-moment C θ limit of
+these very MN . Pass the uniform finite-N estimate to this limit. Uniform convergence
+in R is unnecessary: the limiting bound has its explicit radius dependence at every R.
+For arbitrary v ≥ 1, choose an even q ≥ max(v,  √ Q) with q ≤ v + Q + 2 ≤ (Q + 3)v.
+Lyapunov’s inequality gives (32.6), absorbing Q + 3 into the fixed constant. This
+proves Proposition 32.3.
+Corollary 32.4 (Actual deterministic covariance residuals). Let Y be a centered Gaus-
+sian linear noise on the actual coupled space, with Var Y (f ) ≤ C∥f ∥2HW , C ≥ 0. Its
+actual transferred driver satisfies
+                                               √      √
+                           ∥MR (Y )∥Lv (C θ ) ≤ C CQ,B v Rd/Q .
+
+In particular this holds with C = 1 for Ym (f ) = W ((I − Π)Tδ,m f ), for any deterministic
+orthogonal projection Π on the slow HW . Its rank may be infinite and it may depend on
+δ, R.
+Proof. Proposition 20.2 is a linear Gaussian covariance contraction theorem for this same
+physical
+   √     mask and these same deterministic coefficient maps. It bounds the path norm
+by C times the reference isonormal driver norm. The reference has the canonical first-
+driver law used in Proposition 32.3; the actual Y is not replaced in this comparison. The
+zero case gives zero directly. This proves the first assertion. For the second, the actual
+raw isometry (25.2), proved in Lemma 25.1, and ∥I − Π∥ ≤ 1 give Var Ym (f ) ≤ ∥f ∥2HW ,
+
+                                           206
+
+===== PHYSICAL PAGE 207 =====
+where the right side is the original raw norm in fast coordinates. The joint residuals
+retain the given slow W and may be correlated. They need not lie in the span of
+an individual fast noise, which is not a hypothesis of Gaussian transfer. No random
+noise-dependent projection is used. This proves Corollary 32.4.
+
+32.3     The growing-radius expected-norm anchor
+Proposition 32.5 (Actual averaged block mean tends to zero). Fix integer B ≥ 1 and
+use the true block partition B, δ, N, ℓm of Section 29, with 0 < δ < min(1, 1/B) and
+N = ⌊1/(δB)⌋. For Ym as in Corollary 32.4, put
+                                               (︄ N             )︄1/p
+                                                  ∑︂
+  Xm (u) = gδ MR (Ym )(min(u, ℓm )),     Zδ = δ       ∥Xm ∥pC θ       , gδ = δ (1−a)/2 ,
+                                                    m=0
+
+for any fixed p ≥ 1. Then
+                                                √
+                             EZδ ≤ (2/B)1/p CQ,B p gδ Rd/Q .                      (32.8)
+In particular, for Rδ = δ −1 + 2,
+                         √                                          1−a  d
+    2EZδ ≤ 2(2/B)1/p CQ,B p 3d/Q δ eanchor −→ 0,        eanchor =       − > 0.    (32.9)
+                                                                     2   Q
+Both bounds are uniform in the deterministic orthogonal projection.
+Proof. Stopping a zero-start interaction primitive and extending it constantly to B does
+not increase its supremum or Hölder seminorm. An empty last interval gives the zero
+path. Probability normalization and Lyapunov give
+                                           (︄ N               )︄1/p
+                                              ∑︂
+                       EZδ ≤ (EZδp )1/p = δ        E∥Xm ∥pC θ
+                                                  m=0
+                                         1/p          √
+                             ≤ [δ(N + 1)]      gδ CQ,B p Rd/Q .
+This is linearity for a finite sum; no time-block independence or maximum over blocks
+is used. Since δB < 1, we have N ≥ 1 and N + 1 ≤ 2/(δB), proving (32.8).
+    Now Rδ ≤ 3/δ because δ < 1. The last condition in (32.2) is equivalent to Q(1 −
+a) > 2d. Dividing by 2Q > 0 gives eanchor > 0. Substitute this radius into (32.8) to
+obtain (32.9). The estimate holds at each fixed B, p, Q and model, uniformly in every
+deterministic residual projection. This proves Proposition 32.5.
+    These bounds concern the expected first-driver norm on E. They do not give an F
+estimate with constant initial-data columns. The radius substitution is numerical; cone
+coverage and source-to-point transfer require their separate arguments. No concentra-
+tion, infinite-head Gaussian integration or nonlinear moment upper bound follows from
+this section alone. The constants need not be uniform as Q, B tend to infinity or as
+model parameters approach an endpoint. For zero covariance, the actual drivers and
+stochastic bounds vanish directly.
+
+                                            207
+
+===== PHYSICAL PAGE 208 =====
+33      Signed rough static potentials and the physical
+        wave
+Fix the original nonzero covariance and a finite physical mask mR as in Section 29.
+For real q ∈ Cc∞ (Rd ) put Vq = mR (Γ ∗ q) and Lq (u, v, c1 , c2 ) = (0, Vq (u + c1 ), 0, 0) on
+F = E ⊕ R2 . Let VR be the operator-norm closure of these operators in K(F ). It is a
+closed real linear space. No positivity is imposed on q.
+
+Lemma 33.1 (The actual limiting multiplier). Every L ∈ VR determines a unique real
+V ∈ H −1/2 supported in supp mR . It has the actual multiplier action L(u, v, c1 , c2 ) =
+(0, V u + c1 V, 0, 0), where multiplication extends from tests to H 1/2 → H −1/2 . For k =
+∥L∥, its symmetric pairing obeys
+
+                               |vV (u, w)| ≤ k∥u∥H 1/2 ∥w∥H 1/2 .                       (33.1)
+
+Proof. Choose Lqn → L. The constant-displacement vector has norm one, so ∥Vqn −
+Vqj ∥H −1/2 ≤ ∥Lqn − Lqj ∥. Thus, Vqn → V in H −1/2 . Testing outside the fixed com-
+pact mask support preserves that support. Every zero column of Lqn remains zero. Its
+displacement multipliers converge in L(H 1/2 , H −1/2 ) to a map of norm at most k. For
+compact smooth u, smooth multiplication is bounded on H −1/2 by Lemma 18.5. Hence,
+Vqn u → V u there, identifying the limiting map on tests and then uniquely on H 1/2 by
+density. The constant column recovers V and proves uniqueness. On compact smooth
+u, w, the pairing is ⟨V, uw⟩, denoted vV (u, w), so it is symmetric. Its bound and sym-
+metry extend by density. Complexification preserves the operator norm by splitting
+real and imaginary parts in the Hilbert norms. The pairing extends sesquilinearly to a
+Hermitian form; its diagonal is the sum of the real and imaginary diagonal values. This
+proves Lemma 33.1.
+
+Proposition 33.2 (Closed form and quarter-power phase). Let K ≥ max(1, ∥L∥) and
+c = 2 + K 2 . On complexified L2 the form
+
+                       qV (u) = ∥∇u∥22 − vV (u, u),         Q(qV ) = H 1 ,
+
+represents a unique self-adjoint HV . With A = HV + c and LK = 3(1 + K 2 ),
+
+                     A ≥ 1,       D(A1/2 ) = H 1 ,                                      (33.2)
+               1
+               2
+                 ∥u∥2H 1 ≤ qV (u) + c∥u∥22 ≤ LK ∥u∥2H 1 ,                               (33.3)
+                                                                         1/4
+              D(A1/4 ) = H 1/2 ,      2−1/4 ∥u∥H 1/2 ≤ ∥A1/4 u∥2 ≤ LK ∥u∥H 1/2 .        (33.4)
+
+The negative dual completion is H −1/2 . No H 2 operator domain is asserted.
+
+Proof. Put b = ∥u∥2 , z = ∥u∥H 1 . Fourier Cauchy–Schwarz and (33.1) give
+
+                   ∥u∥2H 1/2 ≤ bz,      |vV (u, u)| ≤ Kbz ≤ 12 z 2 + 21 K 2 b2 .
+
+
+                                              208
+
+===== PHYSICAL PAGE 209 =====
+The last scalar inequality is the weighted arithmetic–geometric mean inequality at
+weights 1/2, 1/2 and nonnegative bases z 2 , (Kb)2 , including zero norms. Since qV =
+z 2 − b2 − vV (u, u), it follows that
+
+     qV + cb2 ≥ 21 z 2 + (1 + K 2 /2)b2 ,    qV + cb2 ≤ 23 z 2 + (1 + 3K 2 /2)b2 ≤ LK z 2 .
+
+The lower bound dominates both z 2 /2 and b2 . Thus, this densely defined Hermitian form
+is semibounded and its shifted norm is equivalent to the complete H 1 norm. It is closed
+in the definition of [8, p. 80]. From [8, Theorem 2.14, p. 81, (2.63)], it represents a unique
+self-adjoint HV . This representation is independent of the admissible shift. From that
+book’s Theorem 3.6 and (3.51)–(3.53), p. 109, applied after shifting, we obtain (33.2).
+Here A ≥ 1 is initially its form lower bound. A bounded spectral slice below one would
+produce a unit D(A) test contradicting that form bound; hence it is also the spectral
+lower bound. Lemma 33.3 records the full bottom argument.
+    Set B0 = 1 − ∆. On the common form domain, 21 B0 ≤ A ≤ LK B0 . We prove the
+needed square-root comparison rather than assuming an order rule for arbitrary operator
+powers. For T0 , S0 ≥ 1 with common form domain and qT0 ≤ qS0 , completing the square
+in the shifted form norm gives
+
+    ⟨f, (T0 + t)−1 f ⟩ = sup{2 Re⟨f, u⟩ − qT0 (u) − t∥u∥2 } ≥ ⟨f, (S0 + t)−1 f ⟩,    t > 0.
+                          u
+                    √          ∫︁ ∞
+The scalar identity x = π −1 0 t−1/2 x/(x + t) dt follows by t = xv 2 . Positive spectral
+                                     1/2     1/2
+integration and Tonelli now imply T0 ≤ S0 as forms, with their domain inclusions:
+I − t(T0 + t)−1 ≤ I − t(S0 + t)−1 . Apply this to (B0 , 2A) and (A, LK B0 ). Both op-
+erators in each pair are at least one. The resulting inequalities give (33.4), including
+equality of its domains. For v ∈ L2 the L2 -duality norm against ∥A1/4 u∥2 is ∥A−1/4 v∥2 :
+Cauchy–Schwarz gives the upper bound, and u = A−1/2 v gives equality after normal-
+ization. Duality and completion therefore identify the negative phase. Uniqueness of
+the form, resolvent and spectral calculus makes these constructions commute with real
+conjugation. This proves Proposition 33.2.
+
+Lemma 33.3 (The actual bottom and spectral wave). Write PVE for the evolution
+in (33.6), and SE for the free restriction from Lemma 22.1. Put
+                                                        √︁
+                      β(V ) = inf 1 qV (u),      λ(V ) = −β(V ).
+                                  u∈H
+                                 ∥u∥2 =1
+
+
+Then β(V ) = inf spec HV and −K 2 ≤ β(V ) ≤ 0. The spectral wave on E has the bound
+
+                       ∥PVE (t)∥ ≤ 8(1 + K)2 (1 + t)eλ(V )t ,     t ≥ 0.                  (33.5)
+
+Proof. For unit u, z = ∥u∥H 1 ≥ 1 gives qV (u) ≥ z 2 /2 − 1 − K 2 /2 ≥ −(1 + K 2 )/2 ≥ −K 2 .
+Conversely dilate a unit compact smooth bump and translate its whole support outside
+supp mR . Its potential pairing is zero and its kinetic energy tends to zero. Thus, β ≤ 0.
+Real and complex form infima agree because a complex diagonal splits into the two real
+
+                                              209
+
+===== PHYSICAL PAGE 210 =====
+diagonals. The spectral form formula in [8, (3.52)–(3.53)] identifies this form infimum
+with the spectral bottom. For clarity, a bounded spectral slice below the form lower
+bound would give a unit form test violating that bound. Conversely the form integral
+is bounded below by the spectral infimum. The spectrum is nonempty: a unit vector’s
+scalar spectral measure has mass one and a support point, and normalized projections
+onto arbitrarily small bounded neighborhoods give approximate eigenvectors, excluding
+a bounded inverse there. Conversely, off the closed PVM support Σ the Borel function
+(h − z)−1 , set to zero off Σ, is bounded for real z ∈   / Σ, as is h/(h − z) on Σ. Its calculus
+maps into D(HV ) and is a two-sided resolvent inverse on the appropriate domains. Thus
+the spectrum is precisely Σ. Hence, λ ≤ K and every spectral value h has h + c ≥ 2.
+                                                                                                       1/4
+    Use the phase norm ∥(u, v)∥2EA = ∥A1/4 u∥22 + ∥A−1/4 v∥22 . With MK = LK ,
+the preceding proposition and its √︁     dual give MK−1 ∥z∥E ≤ ∥z∥EA ≤ MK ∥z∥E . The
+                                 2
+condition-number
+     √          √ cost√ is MK =           3(1 + K 2 ) ≤ 2(1 + K). Define Ct (h), St (h) by
+                                                                            √                √      √
+cos(t h), sin(t h)/ h for h > 0, by 1, t at zero, and by cosh(t −h), sinh(t −h)/ −h
+for h < 0. In the EA isometry the wave matrix is
+                             (︃                      √                )︃
+                                     Ct (h)
+                                          √            h +   c St  (h)
+                                                                         .                         (33.6)
+                                −hSt (h)/ h + c          Ct (h)
+                                                                                    −1/2
+                                                                                            √
+For √h ≥ 0, the entries
+                     √    are  bounded    using |C t | ≤  1,  |S t | ≤ min(t,
+                                                                       √          h      ),   h + c|St | ≤
+1 + c t and |hSt |/ h + c ≤ 1; at zero the    √ off-diagonals  √ λtare     c t, 0. For  β√  ≤ h < 0, they
+are bounded using |Ct | ≤ e , |St | ≤√te , h + c|St | ≤ c te and |hSt |/ h + c ≤ Keλt .
+                              λt           λt
+
+There is no division by λ. Since c ≤ 2K, each entry is at most 2(1 + K)(1 + t)eλt .
+Bounded Borel calculus from [8, Theorem 3.1, pp. 102–103, (3.18)–(3.21)], the two-
+by-two matrix norm bound and the condition-number cost give (33.5). Functions can
+be set to zero off the spectral support. Spectral dominated convergence gives strong
+continuity, and scalar addition identities give the group property. The same matrix and
+bounds apply on the weighted graph levels D(A1/2 ) × L2 and D(A) × D(A1/2 ). Spectral
+cutoffs justify their extensions and continuity there. This proves Lemma 33.3.
+Proposition 33.4 (Identification with the actual physical wave). The spectral wave in
+Lemma 33.3 is the actual bounded-perturbation, equivalently Young, physical wave on E.
+Its actual extension on F satisfies
+
+                      ∥PV (t)∥L(F ) ≤ 16(1 + K)4 (1 + t)3 eλ(V )t ,         t ≥ 0.                (33.7)
+
+Both constant response columns are included.
+Proof. The imported form representation [8, Theorem 2.14, p. 81, (2.63)], tested against
+compact smooth functions, gives HV u = −∆u − V u in distributions for u ∈ D(HV ).
+Such u lies in H 1 and V u ∈ H −1/2 . Consequently (1 − ∆)u = HV u + V u + u ∈ H −1/2 ,
+so D(HV ) ↪→ H 3/2 . The embedding is graph-continuous: by (33.3), ∥u∥2H 1 ≤ 2⟨Au, u⟩ ≤
+∥Au∥22 + ∥u∥22 , and the distributional equation bounds the H 3/2 norm by this graph
+norm.
+    The generator of the free E group is A0 (u, v) = (v, ∆u) on H 3/2 × H 1/2 . Indeed,
+differentiate its Fourier matrix after a frequency cutoff, dominate by that graph norm and
+
+                                                  210
+
+===== PHYSICAL PAGE 211 =====
+remove the cutoff. Conversely any strong generator derivative has those distributional
+components; they require v ∈ H 1/2 and ∆u ∈ H −1/2 , hence u ∈ H 3/2 . No operator-norm
+differentiability of the group is used.
+    Start spectral data in D(A) × D(A1/2 ) = D(HV ) × H 1 . The preceding graph-level
+estimates give continuous graph trajectories and C 1 trajectories in H 1 × L2 , with ut = v,
+vt = −HV u. This follows first on bounded spectral cutoffs and then uniformly on finite
+horizons in the graph norms by spectral dominated convergence and [8, Theorem 3.2,
+p. 104, (3.29)–(3.33)]. The projections 1[1,n] (A) approximate every graph datum and the
+same weighted matrix bounds control all cutoff tails on those horizons. Graph embedding
+gives continuity in D(A0 ) and zt = A0 z + LE z in E, where LE = L|E . The strong-group
+chain rule on this domain yields
+                                               ∫︂ t
+                         SE (−t)z(t) = z(0) +       SE (−s)LE z(s) ds.
+                                                0
+
+Graph data are dense in E: spectral cutoffs make D(A) dense in D(A1/2 ) = H 1 , and H 1
+is dense in both H 1/2 and H −1/2 . Boundedness on finite horizons extends this identity
+to all E. Volterra uniqueness by Picard iteration identifies the physical wave. No
+D(A3/4 ) = H 3/2 assertion is needed.
+    On F , bounded L and strongly continuous SF similarly define a unique Duhamel flow.
+On [0, T ], the nth Volterra term has bound CTn+1 ∥L∥n T n /n!. Uniqueness makes horizons
+                                                                        ∫︁ t
+consistent and gives composition. Its interaction primitive is 0 SF (−s)LSF (s) ds. Com-
+pactness of L, and strong continuity of the group and its adjoint, give norm-continuity
+of the conjugated compact operator, as in Proposition 29.7. Thus, this primitive is
+Lipschitz and its ordinary equation is exactly the actual Young equation.
+    For initial (e, c1 , c2 ) the constant coordinates are (c1 + tc2 , c2 ) and the E component
+is                                     ∫︂ t
+                               E
+                             PV (t)e +      PVE (t − s)(0, V (c1 + sc2 )) ds.
+                                    0
+
+The bounded E-valued Fubini argument proving (23.11) applies: substitute the E
+Duhamel formula under this integral and interchange the absolutely bounded finite
+time triangle. It solves the full system, and uniqueness identifies it. No ground pos-
+itivity
+∫︁ t      or gap is used. The forcing norm is at most K(1 + s)|(c1 , c2 )|. Since λ ≥ 0 and
+  0
+     (1 + t − s)(1 + s) ds ≤ (1 + t)3 , the full norm is at most
+
+                       (1 + t)3 eλt {8(1 + K)2 ∥e∥ + [8K(1 + K)2 + 1]|(c1 , c2 )|}.
+                                         √
+Scalar Cauchy–Schwarz and                  82 + 92 < 13 bound this by 13(1 + K)3 (1 +
+t)3 eλt ∥(e, c1 , c2 )∥F . This implies the stated sufficient bound. This proves Propo-
+sition 33.4.
+
+
+
+
+                                             211
+
+===== PHYSICAL PAGE 212 =====
+34     The actual symplectic phase and block-mean
+       baseline
+Retain the original model, covariance amplitude, physical mask mR and real E = H 1/2 ×
+H −1/2 . Fix finite R, T > 0 and admissible exponents as in (19.1). Let M = MR (W ) be
+the given-noise first interaction path on E, and M ρ its retaining-source paths from
+Proposition 20.2 and the source construction. Here ρ is the positive heat/Laplace
+smoothing pair. The retaining construction and ordinary rows are those of Lemma 20.4,
+Lemma 20.6 and Proposition 20.7. The full F driver and Young evolution are fixed
+by Proposition 22.2 and Proposition 22.4; their actual E restrictions are used here.
+Complexifications commute with conjugation, so these real restrictions are the physical
+phases. For fixed Φ in the full positive-time raw HW and real c set
+
+                    Z = W (Φ),    DΦ = E[ZM ],     DΦρ = E[ZM ρ ],
+                                                                                            (34.1)
+                    D = cM + DΦ ,    Dρ = cM ρ + DΦρ .
+
+All these are actual operator paths on E. The covariance mean is not a pointwise raw
+potential. Write UD for left Young evolution and PD (t, s) = SE (t)UD (t, s)SE (−s).
+Lemma 34.1 (Bounded symplectic form and the free wave). There is a bounded iso-
+metric skew-adjoint JE on E, with JE2 = −I, such that
+
+  ω(z, w) = ⟨z, JE w⟩E = ⟨u, g⟩H 1/2 ,H −1/2 − ⟨f, v⟩H 1/2 ,H −1/2 ,   z = (u, v),   w = (f, g).
+
+The actual free group preserves ω. For bounded real smooth b, the force B(b)(u, v) =
+(0, bu) obeys ω(B(b)z, w) + ω(z, B(b)w) = 0.
+Proof. The balanced map Cbal (u, v) = (Λ1/2 u, Λ−1/2 v) is an onto real isometry to L2 ×L2 .
+                                            −1
+Define Jsymp (q, p) = (p, −q) and JE = Cbal    Jsymp Cbal . This gives all stated operator
+                               −1
+properties and JE (f, g) = (Λ g, −Λf ). The two displayed dualities follow from the
+balanced L2 pairing. No L2 pairing of a general distributional velocity is taken.
+   In balanced Fourier coordinates, the free matrix is
+                           (︃                              )︃
+                                cos(tk)     ⟨ξ⟩ sin(tk)/k
+                  Wt (ξ) =                                    ,   k = |ξ|.
+                             −k sin(tk)/⟨ξ⟩     cos(tk)
+
+At zero it is ( 10 1t ), by the continuous sine quotient. Direct matrix multiplication gives
+WtT Jsymp Wt = Jsymp , since its determinant is cos2 (tk) + sin2 (tk) = 1, also at zero.
+The entries are real, even and bounded on finite time horizons. Integrating the identity
+against real-phase Fourier vectors with Hermitian symmetry is legitimate by L2 Cauchy–
+Schwarz. It gives ω(SE (t)z, SE (t)w) = ω(z, w) on all E. Equivalently one may first use
+Schwartz phases and then density. No rough generator derivative or frequency-zero trace
+is used.
+    Finally ∥bu∥H −1/2 ≤ ∥bu∥2 ≤ ∥b∥∞ ∥u∥H 1/2∫︁. Actual∫︁ duality for these L2 functions
+gives the absolutely integrable cancellation − f bu + ubf = 0. This is skewness for
+ω, not for the E Hilbert inner product. This proves Lemma 34.1.
+
+                                                212
+
+===== PHYSICAL PAGE 213 =====
+Lemma 34.2 (Actual covariance means and source primitives). The expectations
+in (34.1) are Bochner defined and
+
+                      ∥DΦρ − DΦ ∥C θ ≤ ∥Φ∥HW ∥M ρ − M ∥L2 C θ −→ 0.                      (34.2)
+
+For each positive ρ, there is a deterministic real time-continuous, spatially smooth hρΦ
+such that                       ∫︂ t
+                         DΦρ (t) =       SE (−r)B(mR hρΦ (r))SE (r) dr.                  (34.3)
+                                     0
+This is the actual statewise primitive and defines a Lipschitz operator path. The com-
+bined source coefficient is bρ = mR (cY ρ + hρΦ ).
+
+Proof. Separable Gaussian path moments give E∥ZM ∥C θ ≤ ∥Φ∥HW ∥M ∥L2 C θ , and the
+same holds for sources. Bochner Cauchy–Schwarz gives (34.2). Covariance contraction
+also gives the uniform source bound ∥DΦρ ∥C θ ≤ ∥Φ∥HW ∥M ∥L2 C θ .
+    The retaining construction has an isometry jsrc : HW → G and an isonormal process I
+with I(jsrc h) = W (h). Its actual source pointfield is Y ρ (t, x) = I(vρ;t,x ), with continuous
+G-valued spatial derivatives at positive widths. Consequently
+
+                        hρΦ (t, x) = E[W (Φ)Y ρ (t, x)] = ⟨jsrc Φ, vρ;t,x ⟩G
+
+has the claimed regularity. Bounded linear testing commutes with those derivatives.
+After multiplication by mR the coefficient has one compact support and bounded deriva-
+tives on [0, T ].
+    On Schwartz states, the row of the right side of (34.3) is the integral of hρΦ against
+                                                                                 ρ
+        √︁ masked source wave product. Ordinary Fubini is justified by E|ZY (t, x)| ≤
+the literal
+∥Φ∥HW E|Y ρ (t, x)|2 and bounded point variance on this fixed compact set at positive
+widths. The source test and indicator approximation extends this to the actual com-
+pleted rows by Gaussian Cauchy–Schwarz and covariance contraction. Hence, this row
+is the row of E[ZM ρ (t)]. Countable dense states and rational times, then continuity,
+identify the operator path. The uniformly bounded integrand gives its Lipschitz bound.
+This identifies the combined source coefficient exactly. The combined source is generally
+noncentered and the mask occurs once. This proves Lemma 34.2.
+
+Proposition 34.3 (Actual source conservation). At each fixed positive ρ, on one
+probability-one set for the fixed c, Φ, R, T , the physical source flow satisfies
+
+                      PDρ (t, s)∗ JE PDρ (t, s) = JE ,      0 ≤ s ≤ t ≤ T.
+
+Proof. Intersect the source coefficient regularity event with the event identifying its
+actual first primitive with the ordinary primitive for all times and states. The source
+construction supplies both at this fixed ρ. On their intersection bρ has a common compact
+support, is continuous in supremum norm and is uniformly bounded on [0, T ]. Thus,
+Cb (r) = SE (−r)B(bρ (r))SE (r) is uniformly bounded and strongly continuous on states.
+Lemma 34.1 gives ω(Cb (r)z, w) + ω(z, Cb (r)w) = 0 for all r, z, w.
+
+
+                                                213
+
+===== PHYSICAL PAGE 214 =====
+    The actual source ∫︁and mean primitive identities identify the Young state equation
+                          t
+with U (t, s)e = e + s Cb (r)U (r, s)e dr. Indeed, replace each driver increment in a
+Young sum by its statewise integral. The error is bounded by the uniform coefficient
+bound times the uniform continuity error of U on the partition. Each state trajectory
+is therefore C 1 , with derivative Cb (t)U (t, s)e, by the strong-integral difference quotient.
+Differentiating the bounded bilinear form ω(U (t, s)e, U (t, s)f ) gives zero. This holds on
+the same path set for all states and time pairs, since the bounded ordinary evolution
+is defined there on all E. Free conjugation gives the displayed physical identity. No
+uncountable intersection of state-dependent null sets or derivative of the free generator
+on a rough state was used. This proves Proposition 34.3.
+Proposition 34.4 (Raw conservation, inverse and norm baseline). For the fixed param-
+eters in (34.1), on one probability-one set,
+        PD (t, s)∗ JE PD (t, s) = JE ,    ∥PD (t, s)∥ ≥ 1,     0 ≤ s ≤ t ≤ T.           (34.4)
+The flow is invertible. For c = 0 these assertions are deterministic for every fixed Φ.
+                                                                           √
+Proof. Source contraction and the given-noise driver bound give uniform p moments of
+M ρ at fixed R, T . The deterministic means satisfy (34.2) and its uniform bound. Thus,
+                                                          √
+Dρ → D in every finite Lp C θ , and ∥Dρ ∥Lp C θ ≤ Cc,Φ,R,T p. The Gaussian moment-series
+argument gives uniform square-exponential moments of these shifted path norms. These
+are Gaussian paths plus deterministic shifts, not centered sources. The source-to-flow
+passage is the actual one in Proposition 22.5, with these fixed shifts.
+    Young local Lipschitz dependence gives uniform interaction evolution convergence in
+probability on every driver ball. The uniform path tails make the complement small. The
+global growth bound CT exp{CT (1 + ∥Dρ ∥C θ )1/θ }, with 1/θ < 2, and square-exponential
+tails give all finite evolution moments uniformly in ρ. Uniform integrability upgrades
+convergence to every finite Lp of the uniform time-triangle operator-difference norm. The
+generic Young arguments apply directly on L(E): bounded multiplication has norm
+one, exactly as on F . Physical differences are the bounded linear image V (t, s) ↦→
+SE (t)V (t, s)SE (−s) of interaction differences. Its separable strongly measurable image
+proves measurability of the triangle supremum norm. No operator-norm continuity of
+the physical free group is assumed.
+    The same actual E/F restriction holds for mean shifts. The original drivers satisfy
+AF i = iM and AρF i = iM ρ . Bounded Bochner expectation with Z gives this intertwining
+for their covariance means. Applying i to the Young sums and using state uniqueness
+gives UF i = iUE , hence PF i = iPE after free conjugation. The inclusion is closed and
+isometric; E is not dense in F .
+    Choose a countable source sequence and a subsequence with expected squared uni-
+form physical difference at most 2−4n . Markov’s inequality makes the probabilities of
+a difference exceeding 2−n summable. The union bound for all events after N tends
+to zero, so the differences tend to zero uniformly in operator norm over all time pairs
+almost surely. Intersect with the countably many source conservation events. Then
+                   ∥Pn∗ JE Pn − P ∗ JE P ∥ ≤ ∥Pn − P ∥∥JE ∥(∥Pn ∥ + ∥P ∥)
+
+                                             214
+
+===== PHYSICAL PAGE 215 =====
+passes the identity to PD simultaneously on the whole triangle. The raw PD is measurable
+with respect to the given W . Thus its conservation event, which has probability one on
+the retaining extension, also has probability one on the base space. Countable states
+and rational times, followed by continuity and the strong free-group bounds, give the
+displayed simultaneous event. Only the fixed parameters are concerned; no common path
+set over uncountably many Φ, c, R, T is claimed. For c = 0 the means and evolutions
+are deterministic, so conservation is deterministic for each Φ.
+    Since ∥JE ∥ = 1, the identity implies 1 ≤ ∥PD (t, s)∥2 . Surjectivity does not follow
+from this identity alone in infinite dimension. Instead, the actual Young evolution is
+invertible: on short contraction pieces ∥U − I∥ ≤ 1/3, the Neumann series gives the
+inverse, then finite products and the free group inverse give the full inverse. This also
+covers Φ = 0 and the free case. At a fixed 0 < δ < 1, one may take the actual reference
+Wfast = W ◦ Tδ,0 , R = δ −1 + 2, T = δ −1 , c = gδ , Φ = 0. This gives the growing-cone
+flow’s norm baseline pointwise in δ, with no uniform moment or mean budget. This
+proves Proposition 34.4.
+
+Proposition 34.5 (The exact completed block mean). Use the true partition
+B, δ, N, sm , ℓm of Section 29, with integer B ≥ 1. Let iI : HI → HW be the supported
+closed inclusion and Tm = Tδ,m : Hfast → HW the actual raw isometry; Hfast has the
+same original covariance in fast coordinates. For Φ ∈ HI set
+
+             Wm (f ) = W (Tm f ),      ϕm = δ −a/2 Tm∗ iI Φ,      TE Φ = i∗ T Φ i,
+
+where T is the actual full F mean of Proposition 29.5. Define
+                              ∫︂ min(u,ℓm )
+               Hm,E (Φ)(u) =                SE (−v)TE Φ(sm + δv)SE (v) dv.           (34.5)
+                                 0
+
+With Mm = MR (Wm ) and Dϕm (u) = E[Mm (u)Wm (ϕm )], one has
+
+                    Dϕm (min(u, ℓm )) = Hm,E (Φ)(u),           0 ≤ u ≤ B.            (34.6)
+
+Consequently the actual pure-mean endpoint obeys
+
+                              ∥SE (ℓm )UHm,E (Φ) (ℓm , 0)∥ ≥ 1.
+
+Proof. The raw pullback (25.2) has covariance factor δ a−2 δ 2 δ −a = 1, hence respects
+nulls and extends isometrically from fast to slow raw space. Its Hilbert adjoint is a
+contraction. Thus, ∥ϕm ∥ ≤ δ −a/2 ∥Φ∥ is finite at fixed δ, without a uniform control-
+radius assertion. The actual fast noise remains on the same given W . For applying
+the preceding propositions, construct retaining sources with Wm as the given reference,
+extending by an independent auxiliary source while retaining all base variables. No
+slow-source pullback is presumed; the raw covariance direction is independent of the
+auxiliary realization.
+    The mean T Φ has range in closed iE. Bounded compression passes its strong measur-
+ability and Lr bound to TE Φ. Choose the full parameter package (29.8). Its intervals are
+
+                                            215
+
+===== PHYSICAL PAGE 216 =====
+nonempty because θ < 1 − a/2 and θ > 1/2; p only instantiates that package here. The
+compact-conjugation argument makes (34.5) a Bochner integral, and the Lr primitive
+estimate gives C θ , since 1 − 1/r > θ. Affine pullback preserves null sets.
+    Here AF,m is the full F interaction driver from Proposition 22.2, and Hm,F is its
+stopped completed mean primitive in (29.9). The completed identity (29.9) at raw
+projection rank zero gives, for 0 ≤ u ≤ ℓm ,
+                                                  √
+                          E[gδ AF,m (u)W (iI Φ)] = δ Hm,F (Φ)(u).
+
+Compress through i using the actual driver intertwining, SF i = iSE , and the mean range
+in iE preserved by SF . Bochner expectation commutes with this bounded compression.
+The constant columns are retained in the full F driver and√mean until this compression;
+they are inactive only on the iE inputs. Since gδ δ a/2 = δ and gδ > 0, division gives
+the unscaled covariance
+
+                    E[Mm (u)W (iI Φ)] = δ a/2 Hm,E (Φ)(u),      u ≤ ℓm .             (34.7)
+                              √
+The factor here is δ a/2 , not δ. Completion in the earlier covariance identity permits
+every Φ ∈ HI , without positivity or smoothness.
+    The operator Tm Tm∗ is the orthogonal projection onto the raw isometry’s closed range.
+Thus, W ((I − Tm Tm∗ )iI Φ) is orthogonal to the entire fast first chaos. Every continuous
+linear coordinate of Mm is an L2 limit of finite Wm -basis sums. Its covariance with this
+difference vanishes. Bochner covariance exists by L2 path moments, and bounded linear
+functionals separate its values. Hence,
+
+                       E[Mm (u)W (iI Φ)] = E[Mm (u)Wm (Tm∗ iI Φ)].
+
+Multiply by δ −a/2 and use (34.7) to obtain (34.6) on [0, ℓm ], then stop both sides. No
+unstopped equality beyond ℓm is asserted.
+    Apply Proposition 34.4 with c = 0, reference Wm , horizon B and the deterministic
+direction ϕm . Equality of drivers before ℓm and Young uniqueness give the same actual
+endpoint, so its norm is at least one. If ℓm = 0, the endpoint is the identity and its norm
+is one. The radius may be chosen δ −1 + 2 after fixing δ; all identities are fixed-parameter
+instances. This proves Proposition 34.5.
+    For zero covariance the drivers and covariance means vanish, and the claims reduce
+directly to the free identity in Lemma 34.1. These results give a norm baseline and
+its exact completed mean application. They provide no uniform control-radius budget,
+stochastic moment upper bound or nonlinear product ratio by themselves.
+
+
+35     Actual Gaussian control tubes and Rayleigh
+       transfer
+We first state the Gaussian geometry with its exact covariance scale. Let H be real
+separable Hilbert, W its given isonormal process, and X a strongly measurable centered
+
+                                            216
