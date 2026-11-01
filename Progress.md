@@ -92,9 +92,17 @@
   R_sp=c/sqrt3,E_sp=c²/6 and exact Gamma-function bounds for C2, with
   ratioofBOUNDformulas<=sqrt(sqrt(pi)/(2Gamma_E(5/4)²)). Neither endpoint
   is asserted equal to C2. Two finite algebra applications also accepted.
-- **Immediate next:** freeze the mathematical result set PB/OC/WS for
-  integration. Map exact own-dependency scopes, consolidate complete proofs
-  into TeX/PDF, clean build and source/PDF correspondence, then whole-argument
+- **Accepted first TeX integration:** scientific96e2a18,Opus5.5/HIGH,
+  15PASS281.324s,no required repairs. Eight covariance/temporal claims have
+  complete internal proofs;25five-waybindings,16full text sources and8exact
+  image deliveries verified.116-page PDF clean. No new Lean fact or broader
+  operator/moment conclusion from this section.
+- **Immediate next:** integrate the scalar frequency-row and actual TWO
+  variance directions, then compact/Schatten/driver and source/Young proofs.
+  Keep the frozen PB/OC/WS result set and full original model scope. The
+  import interfaces are mapped; avoid repeating that inventory as a new round.
+  Continue consolidating complete proofs into TeX/PDF, with clean builds
+  and source/PDF correspondence, then whole-argument
   and final independent cold-read checks. Avoid optional refinements.
 - **New accepted uniformR E Cameron/regulator:** scientificf54e92b,
   21checks/HIGH348.303s,no requiredrepairs;21input bindings/native archive
@@ -107,8 +115,8 @@
   verified. Actual cutoff envelopeR^(d/q),sameW first-driver sqrt(v)R^(d/Q)
   and expected weighted blocknorm->0 on growingR for fixed sufficiently
   largeQ. E ONLY;not F constantcolumns,concentration or sharp-point upper.
-- **Still open:** simplification and verified bounds for our derived
-  constant, manuscript integration, whole-paper/cold-read verification and
+- **Still open:** remaining manuscript integration, whole-paper/cold-read
+  verification and
   synchronization. Chen's energy/domain/normalization dictionary remains
   a comparison question, NOT a completion blocker under Le's revision.
   Full all-model derived-constant goal ACTIVE; no circulation clearance.
@@ -118,8 +126,9 @@
  Mirror preserves all21oldentries78facts and adds2facts/1seam. No compiler
  rerun for promotion, new package/companion/lease/registry/HPC action.
 - **Git:** current mathematical work is in the isolated private research
-  clone, branchresearch/fixed-mask-young-20261031; latest scientific proof
-  source is95d7515, with subsequent adoption/clarity updates separate.
+  clone, branchresearch/fixed-mask-young-20261031. Latest result source
+  is95d7515; latest accepted TeX integration source96e2a18, with subsequent
+  adoption records separate.
   Fresh fetch/push failed with <HUB>NoRoute. Prior <HUB> parity
   receipts are historical, not evidence of current synchronization.
   Rootmaster remains a separate loader/handoff checkout; no research merge.
@@ -8569,3 +8578,31 @@ unchanged. Clean116-page successor build,0errors/undefined/overfull;
 all8successor pages inspected. Section now ends on115, sharing target page.
 
 [held back: AI account details]
+
+
+### Accepted integration close: scientific96e2a18
+
+Native v3 TERMINAL0, actual Opus5.5/HIGH15PASSchecks281.324seconds,
+PASS_WITH_NOTES,no required repairs. accepted=true/coverage_verified=true;
+canonical parser/passing/correspondence validation passed against RAW
+receipt and read ledger. All16texts complete and8exact PNG deliveries
+verified. All25live/packet/Git/native-workspace/final-receipt hashes match
+before adoption. Raw native archive has40members, all read-back
+SHA256 checked. Report unchanged; reader receipts normalize only home paths,
+raw originals remain in archive. Six optional notes adjudicated in
+adjudication-v3.md without modifying the final reviewed source/PDF.
+
+The local required-media checker rejects the actual historical v2 malformed
+contract and accepts the corrected v3 contract. Durable lesson applied in
+notes/derived-constant-integration-plan.md: explicitly type PNG items and
+run media/classification preflight, verify literal filename case, never
+retrofit a changed spec or mutate a refused receipt. No global tool setup
+or shared registry was changed. No new mathematical or Lean claim from
+this metadata guard. All80finite facts22seams and L0PROPOSED unchanged.
+
+Current integrated notes116pages,60existing main proofs unchanged plus8
+transcribed proofs. Clean build/source/PDF correspondence retained. Next
+integrate FR+AV actual frequency/two-variance seam, then FG/CC/AD/SC/FY and
+the all-model lower/upper/PB/OC/WS chain. Final whole-argument/cold-read and
+canonical wiki/Git/<HUB> synchronization remain open. All owned native
+review/compute processes terminal; do not restart v1/v2/v3. Goal ACTIVE.

@@ -62,3 +62,29 @@ the host returns. Current NoRoute failures do not prove synchronization.
 The official Lean companion still requires separate decision4 approval;
 local80facts22seams do not constitute an official package gate. Do not mark
 the active goal complete before its revised contract is actually met.
+
+
+## Required review media preflight
+
+Before dispatching each integration review, run the local
+`reviews/2026-11-01-covariance-tex-integration/check-required-media-v1.py`
+with that required-sources JSON and frozen packet. PNG bytes require explicit
+kind=image, exact sha256 and media_type=image/png. A bare path opts into TEXT
+coverage and is wrong for PNG pages. This guard rejects the actual malformed
+v2 contract and accepts v3 through the canonical spec parser. It does not
+prove delivery or acceptance: the terminal native receipt and read ledger
+must separately verify every text line and exact image block. Preserve old
+failed contracts/receipts; a changed spec cannot be an offline appendix to
+an old receipt. Check literal filename case in the contract as well.
+
+
+## First integrated section accepted
+
+Scientific96e2a18: notes/integrated_covariance_foundation.tex closes the
+SF/TP translation and actual source/PDF correspondence gate,15PASS/HIGH,
+no required repairs. The116-page main PDF is clean; all8required images
+and16full text inputs verified. See adjudication-v3.md in the dated packet.
+This is not closure of the full37-node import graph. Next integrate FR
+(scalar-frequency-row-bound.md) and AV(actual-two-variance-forms.md), then
+finite Gaussian/Sobolev compactness and actual driver/source/Young proofs.
+Do not reopen completed SF/TP or repeat the import inventory as a new round.
