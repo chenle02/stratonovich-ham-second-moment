@@ -1,14 +1,14 @@
-Last updated: 2026-11-01 (Codex)
+Last updated: 2026-11-01 08:48 UTC (Codex)
 
 LATEST USER DIRECTION: derive the actual constants, whatever computation yields.
 Chen matching is not a completion requirement.
 
 ## ⏭ Next session: where to stand and what to do
 
-FIRST jointly integrate exact scaling and the actual raw block lower bound (DS/RB)
+FIRST integrate the unmasked Rayleigh/variational lower functional (UL)
 into TeX in ACTIVE
 ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave,
-branch research/fixed-mask-young-20261031, clean local HEAD bb0515c.
+branch research/fixed-mask-young-20261031, clean local HEAD f742ce3.
 Read its PROJECT-GOAL.md, AGENTS.md, Progress.md and
 notes/derived-constant-integration-plan.md and derived-constant-proof-imports.md
 in its notes directory. Root mathematical files and
@@ -24,7 +24,7 @@ review68458(v3PASS0),71223(v2coverage-refusal3), or v1preflight5.
 FR/AV TeX integration is now ACCEPTED: scientificf5c1521,adoption7dbcd4a,
 27PASS/HIGH382.209seconds,no mandatory repairs. Review13477 isTERMINAL0,
 not a task to restart. Read the frozen next target in
-reviews/2026-11-01-raw-lower-tex-integration/target-v1.md in ACTIVE.
+reviews/2026-11-01-unmasked-variational-tex-integration/target-v1.md in ACTIVE.
 FG/CC is now ACCEPTED: scientific2571a15,adoption22e3426,24HIGHchecks
 323.168seconds,no repairs. Native74139 TERMINAL0; old16481 remains
 rejected (rawFAIL/HIGH,canonical invalid-report). Do not restart either.
@@ -42,7 +42,12 @@ conditional mask-L2 premise and compare to the original canonical point
 moment. CG now ACCEPTED: scientific6c52b5f,adoptionbb0515c,22passing
 checks/HIGH499.075seconds,no required repairs. Native72823 TERMINAL0;
 do not restart. Full-F spectral complement and original fixed-cost common
-trial now integrated. Random block/event/moment asymptotics remain separate.
+trial now integrated. DS/RB now ACCEPTED: scientific65d514b,
+adoptionf742ce3,23passing checks/HIGH637.258seconds,no required repairs.
+Native12052 TERMINAL0; do not restart. Exact canonical scaling and actual
+SAME-W/Z shift, full-F cone/positive terminal average, raw restart and
+correct-amplitude original point lower >=2int lambda_R-v/2 now integrated.
+Unmasking/optimization, sharp upper and exact-limit assembly remain separate.
 No owned reviewer or computation remains live.
 
 ## Pre-flight checks
@@ -103,23 +108,33 @@ No owned reviewer or computation remains live.
    and repeat existing mask properties locally. No translated-ball positivity
    is adopted. All trial uses are origin-centered.80facts22seams unchanged.
 
+11. DS/RB scientific65d514b/adoptionf742ce3:23passing checks/HIGH,
+    637.258seconds,no repairs.61five-way bindings,46full texts/14exact
+    PNGs,76raw archive files verified.176-page clean PDF;8new proofs,
+    118prior unchanged. No source/PDF edit on adoption. Per-test ORIGINAL
+    point lower now integrated. Four old scaling and nine old RB facts
+    reused at actual guards without compile;80facts22seams unchanged.
+    Final presentation: correct CG section pointer, law wording, explicitly
+    m_R=zeta_R/semiscaled scope, update abstract/roadmap; earlier CG wording
+    debt remains. Visual pass fixed probability paragraph-mark defect
+    BEFORE freeze by mathbb P; p174 reinspected, other10PNGs unchanged.
+
 ## Concrete deliverables for the next session
 
-- Follow frozen joint DS/RB target in ACTIVE. Translate exact canonical LAW
-  scaling and the accepted actual raw block/event lower proof completely.
-  Keep raw covariance amplitudes, all mixed/self/empty chains and Green
-  measures, source limits at fixed scale before large-time asymptotics.
-- Actual fast-block noises are functionals of SAME W, with b=sqrt(delta)H.
-  Keep ORIGINAL Z/v and minus-sign half-cost; no independent-block or
-  wrong regularized-mean shortcut. Prove the norm-Borel Gaussian law on
-  the full separable input space and the actual raw/source restart identity.
-- Full F cone must include entrance, all blocks and terminal remainder,
-  giving positive tested displacement. Compare at correct noise amplitude
-  and keep B/e_rate order until the original point bound is obtained.
-- Six unchanged finite source/type pairs and nine old facts are ready for
-  guard-checked application reuse. No metadata recompilation or new fact.
-- Then UL, remaining upper/PB/OC/WS, full whole-argument/final cold-read.
-  Keep clean PDF/source/visual and full native actualOpus5.5/HIGH gates.
+- Follow frozen UL target in ACTIVE. Translate global mean bounds and
+  unmasked Rayleigh lower proof for ALL original positive nonseparable
+  tests. Unmasked bottom need NOT be an eigenvalue; no ground projection.
+- Prove monotone compact rates converge uniformly in time, then take
+  numerical mask suprema AFTER individual fixed-mask original point bounds.
+  No R(delta), unmasked noisy wave or source/time limit exchange.
+- Derive full-dimensional Radon dilation and full-class score bijection.
+  Use independent OLD T:full-upper for finiteness before finite-real suprema.
+  Never use future PB to prove its own variational finiteness. Auxiliary
+  S1 is not an actual first-moment or Chen constant.
+- Three old RawVariational facts have unchanged complete types/source;
+  d1 dilation_factors is excluded. No metadata compiler rerun/new fact.
+- Then remaining spatial/occupation/Cameron/upper/PB/OC/WS assembly,
+  clean PDF/source/visual gates and full independent/final cold review.
 - Recover private pushes/wiki queue/<HUB> parity when available.
 
 ## Success criteria for the immediate next step
@@ -1537,10 +1552,29 @@ Joint DS/RB target frozen and six source/type pairs for nine old finite
 facts rechecked without compile. Private pushNoRoute; no owned live jobs.
 Full asymptotic integration/cold-read/delivery remain; goalACTIVE.
 
+2026-11-01 joint DS/RB integration checkpoint: scientific65d514b,
+adoptionf742ce3; actualOpus5.5/HIGH23passing checks (18PASS,5notes),
+637.258seconds,no required repairs. Native12052 TERMINAL0,accepted/coverage
+true;61five-way inputs,46full texts/14exact images,76raw archive files
+verified. Ten optional findings adjudicated; no source/PDF edits on adoption.
+Clean176-page PDF;8new proofs,118prior unchanged. Actual SAME-W/Z Gaussian
+law/raw half-cost, full-F cone/positive terminal average, induced-source
+RAW restart/correct-amplitude canonical transfer give ORIGINAL point
+liminf>=2int lambda_(R,s)ds-v/2 for every original positive nonseparable
+control/eligible fixed mask. All original nonzero covariances/dimensions/
+amplitudes/white/subcritical cases; zero noise free. Source limits before
+delta and B/e_rate order retained. No unmasking/optimization/exact limit yet.
+Four old scaling and nine old RB facts reused at complete types/actual
+guards; no compile/new fact;80facts22seams unchanged. Pre-freeze probability
+macro rendered paragraph mark, caught visually and fixed with mathbb P;
+correctedp174 reinspected. UL next target frozen; two finite source/type
+bindings matched, independent old upper finiteness and no-unmasked-ground
+boundary explicit. Fresh private pushNoRoute; no owned live jobs. GoalACTIVE.
+
 ## Repo & git state at handoff
 
-Before this HANDOFF-only successor root master HEAD03f5972. Active research
-clean HEADbb0515cad90aff75c379fd653ef2834d8e7fadec. Private origin remains
+Before this HANDOFF-only successor root master HEADbe94893. Active research
+clean HEADf742ce3c28124132a1e5984ca03e19a289964878. Private origin remains
 <HUB> bare; fresh push failed SSH NoRoute, no synchronization claimed.
 Last-fetched root611c005/research6937719 remain historical observations.
 No implicit research/master merge. Scientific work stays in isolated ACTIVE;
