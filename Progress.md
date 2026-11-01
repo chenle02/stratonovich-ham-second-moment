@@ -71,8 +71,8 @@
   frozen6de6728, exact target in
   reviews/2026-10-31-physical-score-comparison/target-v1.md. New normalization
   diagnostics and statement/source FIT are complete:21PASS/HIGH884.243s,
-  no requiredrepairs. The new author proof is being frozen for its OWN
-  FULL gate; no PB proof is accepted. Own S_2
+  no requiredrepairs. The complete new author proof40ec9a9 is at its OWN
+  LIVE FULL gate, handle83651; no PB proof is accepted. Own S_2
   remains distinct from the REQUIRED original L_*/L^* constants.
 - **New accepted uniformR E Cameron/regulator:** scientificf54e92b,
   21checks/HIGH348.303s,no requiredrepairs;21input bindings/native archive
@@ -94,8 +94,8 @@
  The state mirror already contains21entries totaling78facts; summary
  refresh does not add facts, rerun checks or create a companion/package.
 - **Git:** current mathematical work is in the isolated private research
-  clone, branchresearch/fixed-mask-young-20261031; latest frozen PB target
-  source is6de6728, with subsequent operational summary updates separate.
+  clone, branchresearch/fixed-mask-young-20261031; latest frozen PB proof
+  source is40ec9a9, with subsequent operational summary updates separate.
   Fresh fetch/push failed with <HUB>NoRoute. Prior <HUB> parity
   receipts are historical, not evidence of current synchronization.
   Rootmaster remains a separate loader/handoff checkout; no research merge.
@@ -8200,3 +8200,22 @@ Skorohod/sourcefix/TeX/PDF/wiki/bib/publication, NoRoute/pushpending.
   byteparity/budgetandactualretrievallimitsretained. RootheadingsandLean
   headingreconciledtoexistingaccepted78facts21seams,notnewpromotions.
   <HUB>pushstillNoRoute;researchsource/evidenceLOCAL,rootloaderseparate.
+
+### PB full proof gate live — 2026-10-31
+
+- Scientificsource40ec9a9342df2eb1de455b0a2743dce204615eb9;25requiredtexts,
+  266944bytes,completefrozenmanifest. Nativefullreview83651confirmedLIVE
+  bysame-handlepollandgrowingevents. Attemptstate
+  ../stratonovich-physical-score-comparison-full-review-v1/native/;
+  observerlog../stratonovich-physical-score-comparison-full-review-v1/observer.log.
+  No verdict/receipt atthischeckpoint. DoNOTrestartfromquietlog/observation
+  timeout. Statement79500isTERMINAL0andarchived,notanactivereviewer.
+- Freshquotaactual<plan removed>weekly90/shortunknownthenfirstPartydoctorand
+  sameactualOpus5.5READYTERMINAL0;FULLgateactualmodel/effort/minimumHIGH
+  unchanged. No account/credential/model/providerfallback orsystemedit.
+- OwnproofcanonicalversionforsmoothFIXEDPsiavoidsuncountableR-nullsets;
+  temporalidentityusesSchurL2limits+acceptedLrtensorbound,notanuncitednew
+  convolutiontheorem. Allnewproofconclusions andd1moment-ceilingconsequence
+  remainUNACCEPTEDuntilFULLgate/adjudication. No newLeancheck/factpromotion.
+- LatestresearchpushTERMINAL128NoRoute. Rootloader/handoffwillpointto
+  currentisolatedcheckout+EXACTlivehandle;no forcedmerge orscopechange.
