@@ -10420,3 +10420,55 @@ separate. No merged image ledger or project-local accepted flag is created.
 A fresh independent cold read remains after complete mathematical/source/
 visual gates and adjudication. No review is live at this freeze capture;
 SF04 is the first planned real scientific dispatch after common binding.
+
+
+## 2026-11-01 — SF04 returned full carriers but no report; route audit retained
+
+Common v1 froze at ebd01cfe70a475da2a4947f7cd44a3dff8c9e067, tree
+b50d7949dbb2f1e771679666552441b50603e71e. Post-hook all446inventory files
+matched live/Git,960packet copies matched, and all16contract/required-plan
+pins matched. Official spec-v1 bound this exact source/tree; no component
+or composition acceptance was claimed. SF04 native dry-run passed with
+missing0/waivers0. Source/PDF/proofs and all scientific scope unchanged.
+
+Actual SF04 attempt64575 is TERMINAL exit4, blocked-provider,378.81seconds,
+no raw/parsed scientific report. Exact terminal error EAI_AGAIN (DNS/API
+connectivity), not a quota refusal. All21assigned PNGs returned declared
+media/bytes; Gaussian-tube567lines and main setup310lines were unread.
+All52five-way input identities matched; all64native artifacts archived and
+read back hashed. See SF04 provider-failure validation/receipt/ledger/archive.
+A successful actualOpus5.5/firstParty READY after DNS recovery permitted a
+new immutable same-packet/same-HIGH attempt, not an unsupported resume.
+
+Retry74084 is also TERMINAL exit4, blocked-provider,355.364seconds, but
+its own required-read coverage is TRUE: all assigned text AND21images
+returned. It still has NO scientific report/acceptance. Exact native429
+response says session limit, resets6:30pm America/New_York; actual known
+reset is2026-11-01T23:30:00Z (5:30pm Chicago). Preserve both failure kinds
+independently. Coverage proves delivery, not source/application judgment.
+All52bindings and all64archived retry artifacts verified. No report or
+source-theorem pass is fabricated from a completed read plan.
+
+[held back: AI account details]
+
+<HUB> existing clients were checked read-only; default2.1.316 is not
+a supported ledger runtime. Selected already installed2.1.314 through an
+owned task-local PATH selector only, no system/dotfile/install/default
+change. Native firstParty doctor succeeded but the existing-profile READY
+probe returned a monthly spend limit. No remote scientific call. Remote
+originals and local observations are retained in availability-evidence-v1
+(35files, every member hash checked). Current explicit status is in
+capacity-status-v1; no review/probe is currently live. This is the first
+current goal-turn with the complete tested-route availability audit, not
+three consecutive impasse turns and not proof of global model outage.
+Do not mark goal complete/paused or lower a required gate. Recheck actual
+eligibility after the known reset; do not repeatedly spend denied probes.
+
+[held back: collaborators' unpublished work]
+
+No own statement, proof, formula or PDF change. All213proofs/221statements
+and 257-page build remain the editorial baseline. Source/visual/full/cold
+gates all remain open; old cold packet stale.80facts/22seams/L0PROPOSED
+and companion decision4 unchanged. No HPC, correspondence, public release,
+new source correction or private companion. Bounded wiki-first source/
+version recon may proceed independently while required capacity is held.
