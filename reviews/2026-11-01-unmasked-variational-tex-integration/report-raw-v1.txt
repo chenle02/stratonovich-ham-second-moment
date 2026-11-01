@@ -1,0 +1,174 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "notes/integrated_unmasked_variational.tex: lines 1-378 (complete)",
+    "notes/unmasked-variational-lower.md: lines 1-378 (complete)",
+    "reviews/2026-10-31-unmasked-variational-target/scientific-adjudication-v1.md: lines 1-46 (complete)",
+    "reviews/2026-10-31-unmasked-variational-target/falsification-v0.md: lines 1-55 (complete)",
+    "notes/integrated_compact_mean_family.tex: lines 1-572 (complete)",
+    "notes/integrated_raw_block_lower.tex: lines 1-629 (complete)",
+    "reviews/2026-11-01-compact-mean-tex-integration/adjudication-v1.md: lines 1-65 (complete)",
+    "reviews/2026-11-01-raw-lower-tex-integration/adjudication-v1.md: lines 1-82 (complete)",
+    "lean-progress/local-checks/raw-variational-v1/StratonovichHAMAudit/RawVariational.lean: lines 1-73 (complete)",
+    "lean-progress/local-checks/raw-variational-v1/types-and-axioms.txt: lines 1-195 (complete)",
+    "lean-progress/local-checks/raw-variational-v1/local-receipt.json: lines 1-70 (complete)",
+    "reviews/2026-10-30-raw-variational-dilation/accepted-full-upper-custody.json: lines 1-10 (complete)",
+    "reviews/2026-10-30-raw-variational-dilation/accepted-full-upper-statement.txt: lines 1-17 (complete)",
+    "sources/SOURCE-MANIFEST.md: lines 1-173 (complete)",
+    "reviews/2026-11-01-unmasked-variational-tex-integration/target-v1.md: lines 1-76 (complete)",
+    "reviews/2026-11-01-unmasked-variational-tex-integration/target-freeze-v1.json: lines 1-13 (complete)",
+    "reviews/2026-11-01-unmasked-variational-tex-integration/finite-reuse-preflight-v1.json: lines 1-23 (complete)",
+    "reviews/2026-11-01-unmasked-variational-tex-integration/finite-application-map-v1.md: lines 1-24 (complete)",
+    "reviews/2026-11-01-unmasked-variational-tex-integration/crosswalk-v1.md: lines 1-22 (complete)",
+    "reviews/2026-11-01-unmasked-variational-tex-integration/worker-honesty-v1.md: lines 1-33 (complete)",
+    "reviews/2026-11-01-unmasked-variational-tex-integration/prompt-v1.md: lines 1-78 (complete)",
+    "reviews/2026-11-01-unmasked-variational-tex-integration/model-context-v1.tex.txt: lines 1-107 (complete)",
+    "reviews/2026-11-01-unmasked-variational-tex-integration/canonical-inputs-v1.tex.txt: lines 1-1276 (complete)",
+    "reviews/2026-11-01-unmasked-variational-tex-integration/independent-upper-input-v1.tex.txt: lines 1-241 (complete)",
+    "reviews/2026-11-01-unmasked-variational-tex-integration/independent-upper-custody-v1.json: lines 1-13 (complete)",
+    "reviews/2026-11-01-unmasked-variational-tex-integration/build-v1.json: lines 1-41 (complete)",
+    "reviews/2026-11-01-unmasked-variational-tex-integration/rendered-section-v1.txt: lines 1-339 (complete)",
+    "reviews/2026-11-01-unmasked-variational-tex-integration/page-v1-175.png: whole image viewed",
+    "reviews/2026-11-01-unmasked-variational-tex-integration/page-v1-176.png: whole image viewed",
+    "reviews/2026-11-01-unmasked-variational-tex-integration/page-v1-177.png: whole image viewed",
+    "reviews/2026-11-01-unmasked-variational-tex-integration/page-v1-178.png: whole image viewed",
+    "reviews/2026-11-01-unmasked-variational-tex-integration/page-v1-179.png: whole image viewed",
+    "reviews/2026-11-01-unmasked-variational-tex-integration/page-v1-180.png: whole image viewed",
+    "reviews/2026-11-01-unmasked-variational-tex-integration/page-v1-181.png: whole image viewed"
+  ],
+  "checks": [
+    {
+      "claim": "Class C_pos, its smooth example, and retention of the original mean and raw variance (26.1)",
+      "verdict": "PASS",
+      "reason": "b(4s-2) has time support in [1/4,3/4], and the spatial support lies in [-1,1]^d, so the product is compact in (0,1)xR^d, nonnegative, nonzero and flat at the boundary. The class is all real nonnegative nonzero Cc-infinity tests, with no separability assumption. h and v are the parent (23.20)-(23.21), with kernel |s-t|^-a, a=alpha_0, and Gamma entering once at its original amplitude. No mask enters h or v."
+    },
+    {
+      "claim": "Polynomial growth and weights for both Gamma and mu (Lemma 26.1, first paragraph)",
+      "verdict": "PASS",
+      "reason": "Dilating a cutoff gives seminorms of phi(x/R) bounded by C R^N for R>=1. Positivity gives ball mass <= C R^N, and dyadic annuli make (1+|x|)^-L integrable for L>N. Hypothesis H:homog supplies both measures as positive tempered Radon measures. The local-derivative domination is valid."
+    },
+    {
+      "claim": "Heat identity (26.2): normalization, Fourier signs, no 2pi factor, equality at every x, bound by the value at 0, strict positivity",
+      "verdict": "PASS",
+      "reason": "Hand check: the pairing with phi equals Gamma paired with p_e*phi, after Fubini. Under the convention Gamma = int e^{i xi x} mu, int e^{i xi y}(p_e*phi)(y)dy = e^{-e|xi|^2/2} int e^{i xi x}phi(x)dx, so no extra factor appears. The variance-e Gaussian characteristic function is exact, and evenness covers both signs. Two continuous functions equal as distributions agree everywhere. Reality comes from evenness of mu, the upper bound is the total Gaussian mass at x=0, and strict positivity follows from Gamma nonzero and p_e>0."
+    },
+    {
+      "claim": "Global mean regularity and L-infinity Lipschitz bound (Lemma 26.2, (26.3)), with no decay inferred",
+      "verdict": "PASS",
+      "reason": "|D Psi(t,x)| <= C_D p_e(x) holds with C_D = sup|D Psi| / min_K p_e. Lemma 26.1 then bounds Gamma*|D Psi| uniformly. The change r=s-t matches the parent formula, derivatives fall on the zero-extended test, and |r|^-a is integrable on bounded intervals because a<1. The bounded time derivative gives C_Psi. The proof never uses decay, which is consistent with the x2-invariant example in falsification-v0."
+    },
+    {
+      "claim": "H_s is self-adjoint on H2 by direct resolvents and the adjoint argument, without a compact-potential theorem (Prop 26.3)",
+      "verdict": "PASS",
+      "reason": "The factorization H-ib=(I+B(A-ib)^-1)(A-ib) and the bound ||(A-ib)^-1||<=1/b are correct, and the Neumann inverse is valid for b>M. Both signs are used. The adjoint step is correct: (H+ib)*=H*-ib, so ker(H*-ib)=Ran(H+ib)^perp={0}. The Teschl compact-potential theorem is not used for the unmasked operator."
+    },
+    {
+      "claim": "Actual H1 form domain by shift, core and equivalent completions",
+      "verdict": "PASS",
+      "reason": "With c_shift=1+M, the bounds ||f||_{H1}^2 <= q(f)+c||f||^2 <= c||f||_{H1}^2 follow from 0<=h<=M and c>=1. Spectral cutoffs give the core, and Fourier cutoffs give density. Both norms dominate L2, so the two completions coincide as actual L2 subspaces."
+    },
+    {
+      "claim": "The spectral bottom equals the complex and real unit H1 Rayleigh infimum (26.4), with no eigenstate used",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The spectral lower bound and the nonzero bounded-interval projections are correct and need no eigenvalue at the bottom. q(u+iv)=q(u)+q(v) gives the weighted-average argument. Note: the text says 'This proves (26.4)' before the negative floor legitimizes the square root. The content at that point is the identity for -E_s, and lambda is fixed in the next paragraph, so there is no logical defect."
+    },
+    {
+      "claim": "Original-control common trial gives -M<=E_s<=-epsilon0<0, and the rate is Lipschitz with constant C_Psi/(2 sqrt epsilon0)",
+      "verdict": "PASS",
+      "reason": "Parent Prop 23.7 has trial psi_L supported in B_{2L}, with plateau R>=2L and origin-centered masses only, matching the permitted scope of the old wording debt. The unmasked form on w is no larger because 0<=m<=1 and h>=0. The rate bound follows from |lambda_s-lambda_t|=|E_s-E_t|/(lambda_s+lambda_t). I_Psi is positive and finite because the rate lies in [sqrt epsilon0, sqrt M] and is continuous. Constants depend on Psi, and no uniformity over Psi is claimed."
+    },
+    {
+      "claim": "Explicit radial profile and masks (Prop 26.4)",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The denominator is positive for every real r. chi equals 1 on r<=1 and 0 on r>=2, and chi is nonincreasing. It is smooth because F is flat at 0. It is constant near 0, so m_R is smooth at the origin. m_R is even, valued in [0,1], increasing in R, and tends to 1. These satisfy the eligibility properties restated in parent Section 25: real even [0,1], equal to 1 on B_R, supported in B_{2R}. The note is the literal closed-support wording recorded in findings.minor."
+    },
+    {
+      "claim": "Fixed-R applications: the same mask in driver and mean, the common trial, and hypotheses of the compact family",
+      "verdict": "PASS",
+      "reason": "For R>=R0>=2L, m_R=1 on supp w, so the margin epsilon0 is the same. m_R h_s is real, nonnegative, smooth and compact, and Lemma 23.6's proof multiplies by a smooth compact mask. d<=3 holds. Prop 25.7 is invoked at each fixed R with that mask for both driver and mean, and Psi, Z and v are unchanged."
+    },
+    {
+      "claim": "Compact rates increase uniformly to the unmasked rate",
+      "verdict": "PASS",
+      "reason": "Dominated convergence holds for each fixed unit f because h<=M and f^2 is in L1. The interchange involves two suprema of real numbers. Monotonicity comes from m_R increasing and h>=0. The sets {s: lambda_s-lambda_{R_n,s}<eps} are open by continuity of both rates, increasing, and cover compact I. Monotonicity extends the result to real R, and integrals converge."
+    },
+    {
+      "claim": "Original point lower bound (26.5), with correct order of limits",
+      "verdict": "PASS",
+      "reason": "Each fixed-R inequality from Prop 25.7 is obtained first for the same liminf. The numerical supremum over R then gives 2 I_Psi - v_Psi/2. There is no R(T), unmasked noisy flow, uniform-in-mask estimate or source/time exchange. The half-cost constant matches parent (25.14), and x is arbitrary."
+    },
+    {
+      "claim": "Dilation bijection and Radon pushforward factor, valid for general nonnegative measurable tests (Lemma 26.5)",
+      "verdict": "PASS",
+      "reason": "D_{1/r}D_r=id, and the positive class is preserved. The pushforward of Gamma under y->ry on A is Gamma(A/r)=r^{alpha-d}Gamma(A) by homogeneity with c=1/r. No density is used, so white and invariant-direction models are covered. The d1 dilation_factors fact is not used."
+    },
+    {
+      "claim": "Mean, variance and rate scaling (26.7), and the moving mask",
+      "verdict": "PASS",
+      "reason": "r^{d+2-alpha}r^{alpha-d}=r^2 gives h_D=r^2 h(rx). The separate Lebesgue factor gives v_D=r^{d+2-alpha}r^2 r^{-d}v=r^{4-alpha}v. U_r is a unit real L2 bijection, ||grad U_r f||^2=r^2||grad f||^2, and the potential term gets r^2. Hence lambda_D^2=r^2 lambda^2, and the positive root gives lambda_D=r lambda and I_D=r I. H_D U_r=r^2 U_r H is correct, and time is not rescaled. m_R(rx)=m_{R/r}(x) is correct. Hand checks reproduce r^3 for d1 white and d2 invariant covariance with alpha=1."
+    },
+    {
+      "claim": "Finite-fact fidelity: positive_score, label_score, strict_label_factor",
+      "verdict": "PASS",
+      "reason": "The printed types match the Lean source and the displayed uses, with exactly the guards hI, hv, ha and hc, ha, and axioms propext, Classical.choice and Quot.sound. Guards hold from actual data: I0>0 by Prop 26.3, v0>0 by Lemma 23.6, alpha<2<3 from alpha+alpha_0<2, and c>0. label_score is applied to real I_Psi, v_Psi after analytic dilation. r0 is the exact radius and is not assumed below 1. The fourth theorem, dilation_factors, is not consumed. The map's boundary between scalar and analytic claims is accurate. These deductions were not re-proved or voted on."
+    },
+    {
+      "claim": "Positive witness and whole score-set scaling (26.9)",
+      "verdict": "PASS",
+      "reason": "r0^q v0=r0 I0, so the score is r0 I0/2>0 for the actual smooth test D_{r0}Psi0. c r_c=r_c^q=c^m=K_c. Bijectivity of D_{r_c} gives equality of the entire sets, not a subclass statement."
+    },
+    {
+      "claim": "Finiteness from the independent old upper, the negligible prefactor, and non-circularity",
+      "verdict": "PASS",
+      "reason": "The statement in the TeX is T:full-upper with C_up=C R_alpha^{1/(3-alpha)}, T^kappa, and prefactor e(T+2)^d at x=0. T+2<=3T for T>=1, log T<=(T^eps-1)/eps, and eps=kappa/2<kappa, so the prefactor vanishes after dividing by T^kappa. Limsup<=C_up. One fixed lower bound makes Q2 finite. All label-two scores are <=Q2<=C_up, and label-one scores are <=C_up/K_2, proved before any supremum is treated as a real number. The proof cites only Theorem 13.8 and no future PB or new sharp upper. The object identified is the canonical expansion solution in both inputs. The dependencies of Theorem 13.8 are accepted inputs, not re-certified here."
+    },
+    {
+      "claim": "Supremum equality S_c=c^m S_1, positivity, Q2>=S_2, and S_1 auxiliary only (26.8)",
+      "verdict": "PASS",
+      "reason": "Both directions are present: K_c S_1 is an upper bound, and every smaller number is exceeded by approximation through the label-one set. Q2>=S_2 is the supremum of (26.5). S_2>2S_1 follows from 2^m>2 and S_1>0, and is explicitly not a Jensen improvement, actual p1 or Chen-constant statement."
+    },
+    {
+      "claim": "Gamma=0 separate treatment",
+      "verdict": "PASS",
+      "reason": "With h=0 and v=0, the unit Rayleigh supremum of -||grad f||^2 is 0, u=1, and the moment rate is 0. Strict positivity is explicitly restricted to nonzero covariance."
+    },
+    {
+      "claim": "Correspondence of TeX to accepted UL Sections 1-6 and the crosswalk",
+      "verdict": "PASS",
+      "reason": "Every formula from UL (1)-(19) needed for the theorems is transcribed with matching constants, signs, squares and powers. The seven adjudicated clarifications are present where applicable: c_shift, I0/v0, evenness, the explicit prefactor, the B_{2L} support, and removal of Chen-Hu naming. The Section 7 Lean bookkeeping and the one-dimensional diagnostic are not stated as theorems, which is consistent with the target and crosswalk."
+    },
+    {
+      "claim": "Scope and negative controls",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "All steps run under H:homog with d=1,2,3, including singular, white and subcritical models and nonseparable tests. The TeX introduces no unmasked ground state, gap, projection or decay. The mechanism controls from falsification-v0 are hand-consistent but appear in the TeX only as disclaimers, not as an exhibited example."
+    },
+    {
+      "claim": "Rendered pages 175-181: exact PNG sources compared to TeX, numbering, labels, proof ends",
+      "verdict": "PASS",
+      "reason": "Viewed images agree with the TeX in heat normalization, resolvent, form norms, (26.1)-(26.9), powers, half-cost, supremum and the Gamma=0 paragraph. Hand counting of parent environments reproduces Lemma 23.6, Prop 23.7, (23.20)-(23.21), Prop 25.7, (25.13)-(25.14), Hypothesis 1.1 and Prop 2.4. Six proof blocks each end with the correct 'This proves ...' sentence and QED box, with no clipping visible."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Literal mask support: the new chi is positive for all r<2, so supp m_R is the closed ball of radius 2R. Parent Section 25 and the adjudications say 'supported in B_{2R}', and elsewhere the parent uses an overline for a closed ball. Read strictly with an open ball, m_R misses that wording. No visible consumer depends on open versus closed: compactness, boundedness and the plateau are what is used. The paper's own wording is also loose here, since T:full-upper says the support of G_t is contained in B_t. This is an optional clarification, and no proof step fails.",
+      "Prop 26.4 uses 'admissible' without a local definition. Compact ground rates exist only for R>=R0(Psi) although the mask family is universal. The proof makes both clear after the fact; a one-line statement of eligibility and R>=R0 would help a cold reader.",
+      "In the proof of Prop 26.3, 'This proves (26.4)' precedes the paragraph that gives E_s<0 and hence the square root. Stating the identity for -E_s first would match the 'floor before rates' discipline literally.",
+      "Local symbols are reused without ambiguity in any formula but could be cleaner: F is both a profile here and the phase space in Sections 23 and 25; I is the identity, the time interval and part of I_Psi; b is both a bump and a resolvent parameter; r is both a time variable and a dilation radius; m is both a mask and an exponent.",
+      "The invariant-direction no-ground example and the white/invariant power controls remain only in falsification-v0 and UL Section 7, with the TeX carrying disclaimers. An explicit remark is optional and is not needed for any stated theorem.",
+      "Pages 180-181 retain older roadmap text that does not mention the new Sections 23-26 lower functional, plus empty '()' bibliography artifacts. Item 4 of the 'Established steps' section remains true and overclaims nothing. This falls within the final-presentation debt already recorded in the raw-lower adjudication, item 10.",
+      "UL Section 7 cites 71 facts/18 seams and lean-reuse-v1.json, while finite-application-map and worker-honesty record current 80/22 and treat the older count as history. The packet substitutes finite-reuse-preflight-v1.json for the old reuse file. This is a bookkeeping difference only and has no scientific consequence."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "All new analytic steps were checked by hand. No build, hash, Git, Lean, script or numerical operation was executed. Author claims about the clean 181-page build, 126 unchanged prior proof bodies, C0 scan, byte identities, PNG hashes, Lean compile/replay and source revision f4311eb are outside reviewer execution scope and are neither confirmed nor refuted here.",
+    "Sections 21-22 are not in the packet, including the definition of the mask zeta_R and the masked canonical transfer, and neither is the exact-scaling section. Mask eligibility was checked against the properties restated in parent Section 25 and in the two adjudications: real, even, [0,1], plateau, and support. It was not checked against the original Section 22 definition, so that interface is an accepted-input assumption.",
+    "Parent Prop 23.7, Prop 25.7 and T:full-upper were reused as accepted inputs after reading their supplied statements and proofs. Dependencies of T:full-upper that are not supplied (including P:interval-coefficients, L:terminal-wick and L:uniform-series-tail) and the Teschl and Friz-Hairer books were not re-certified. This is not an import-tree or cold-read certificate, and earlier failed cold reads remain non-clear.",
+    "No Lean application goes beyond the three scalar identities. All Fourier, measure, Sobolev, spectral, mask-limit, canonical-moment and supremum claims remain informal analytic proofs reviewed by hand.",
+    "This AI review is not human verification or a novelty audit. It gives no whole-paper, Skorohod, source-repair, companion, publication or final-goal clearance. Matching sharp upper, exact limit, identification of S_1 with an actual first moment, and agreement with Chen's constants remain open and are not asserted."
+  ]
+}

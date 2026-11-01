@@ -137,8 +137,14 @@
   lower >=2int lambda_(R,s)ds-v/2 now integrated, all original models.
   Actual SAME-W shift, positive terminal average and source/canonical
   transfer included; no unmasking/optimization or exact limit from RB alone.
-- **Immediate next:** integrate unmasked Rayleigh/variational lower (UL),
-  then the remaining spatial/occupation/Cameron/upper/PB/OC/WS assembly.
+- **Accepted UL TeX integration:** scientificf4311eb,Opus5.5/HIGH
+  22passing checks429.462s,no required repairs. Six proof blocks;35bindings/
+  27full texts/7exact PNGs/50raw archive files verified. Clean181-page PDF;
+  126prior bodies unchanged. Unmasked real-Rayleigh rate, numerical mask
+  removal, original point lower, full Radon dilation and positive finite
+  score homogeneity proved; S1 auxiliary, no exact moment limit here.
+- **Immediate next:** integrate temporal equilibrium and physical spatial/
+  full-occupation foundation (TE/GI/B1-B4), then Cameron/upper/PB/OC/WS.
   Keep the frozen PB/OC/WS result set and full original model scope. The
   import interfaces are mapped; avoid repeating that inventory as a new round.
   Continue consolidating complete proofs into TeX/PDF, with clean builds
@@ -167,7 +173,7 @@
  rerun for promotion, new package/companion/lease/registry/HPC action.
 - **Git:** current mathematical work is in the isolated private research
   clone, branchresearch/fixed-mask-young-20261031. Latest result source
-  is95d7515; latest accepted TeX integration source65d514b, with subsequent
+  is95d7515; latest accepted TeX integration sourcef4311eb, with subsequent
   adoption records separate.
   Fresh fetch/push failed with <HUB>NoRoute. Prior <HUB> parity
   receipts are historical, not evidence of current synchronization.
@@ -9126,3 +9132,41 @@ reused at complete types/actual guards, no subjective kernel vote/new
 compile/fact/package/companion/HPC action.80facts22seams unchanged.
 Goal ACTIVE; spatial/occupation/Cameron/upper/PB/OC/WS assembly and final
 whole-paper/cold-read/wiki/delivery remain open.
+
+
+### Accepted unmasked variational integration: scientificf4311eb
+
+ActualOpus5.5/HIGH22passing checks (19PASS,3PASS_WITH_NOTES),
+429.462seconds,no required repairs. Native69249 TERMINAL0; accepted and
+coverage true. Canonical passing/correspondence/read-ledger validation
+PASS; all35five-way inputs and50raw archive files verified.27full required
+texts/7exact PNGs delivered. Raw/canonical reports separately preserved,
+no recovery. Seven optional notes adjudicated in
+reviews/2026-11-01-unmasked-variational-tex-integration/adjudication-v1.md.
+No source/PDF edits on adoption;181pages clean,6new proofs,126prior bodies
+unchanged. Three old scalar facts reused at complete types/actual guards;
+no compiler/new fact.80facts22seams/L0PROPOSED unchanged.
+
+Full original models/nonseparable class retained. Global heat/mean bounds,
+unmasked self-adjoint H2/H1 REAL Rayleigh bottom without an eigenstate,
+monotone compact-rate convergence and numerical mask removal yield
+Q2>=2I_Psi-v_Psi/2. Full-dimensional Radon and separate Lebesgue factors
+give whole-class dilation and positive finite S_c^pos=c^m S_1^pos. Finite
+score suprema use INDEPENDENT old T:full-upper for SAME canonical u; no
+PB/new sharp upper circularity. S1 is not actual p1/Chen L. Gamma0 free.
+Matching sharp upper/exact limit assembly and final gates remain separate.
+
+Final presentation debts: support convention is CLOSED balls, especially
+for flat radial cutoffs and sphere Green measures; physical compact support
+and localization margins already suffice. State R>=R0(Psi) eligibility in
+mask proposition and put the negative floor before squared-rate wording.
+No openness-dependent proof or stronger spatial decay/ground claim adopted.
+Existing abstract/roadmap, alias and prior CG debts remain tracked.
+
+Next TE/GI/B1-B4 target frozen in
+reviews/2026-11-01-spatial-occupation-tex-integration/. Selected temporal
+identity throughTE(4), Gamma duplication GI(5), BSections1-5 ONLY: no TE
+rough-control/d1 stochastic, GI numeric/d1 or BSection6 scalar comparison
+promoted. Physical H1 four-linear continuity/full occupation class must
+follow spatial finiteness, not assume an embedding in d2/3. Private push
+NoRoute; whole-paper/cold-read/wiki/remote parity open. Goal ACTIVE.

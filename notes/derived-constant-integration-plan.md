@@ -262,3 +262,28 @@ variational finiteness. Three old scalar facts available, no new run.
 Rendered-symbol lesson: default TeX P is a paragraph mark in this project,
 not a probability macro. Use the actual defined notation or explicit
 mathbb P, inspect the PDF, and freeze corrected exact images only.
+
+
+## Unmasked variational lower integration accepted
+
+Scientificf4311eb:6complete proofs, actualOpus5.5/HIGH22passing checks
+429.462seconds,no repairs.35five-way inputs,27full texts/7exact images
+and50raw archive files verified. Seven optional notes adjudicated with
+no source/PDF edits. Clean181-page PDF;126prior proof bodies unchanged.
+Global mean bound, actual unmasked H1 Rayleigh rate without eigenstate,
+monotone numerical mask removal and original lower, general Radon dilation
+and finite positive whole-class score homogeneity now in TeX. Finiteness
+uses independent OLD upper, never future PB. S1 remains auxiliary.
+
+Before whole-paper review: consistently use closed support balls, including
+sphere Green measures; clarify mask eligibility R>=R0(Psi); phrase the
+Rayleigh equality for -E_s before its negative floor defines the rate.
+Other prior presentation debts remain. No spatial openness, unmasked
+eigenstate or actual-p1 assertion is adopted.
+
+Next TE/GI/B1-B4 target frozen in
+reviews/2026-11-01-spatial-occupation-tex-integration/. Temporal identity
+TE through(4), GI duplication(5), BSections1-5 exactly. No historical d1
+stochastic consumers or subsequent numeric/source-shaped comparisons.
+The full H1 physical pairing and measurable occupation class are needed
+for actual Cameron/upper/PB/OC/WS assembly and final full review.
