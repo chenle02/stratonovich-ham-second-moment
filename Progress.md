@@ -10119,3 +10119,32 @@ At actual terminal state validate the canonical report/receipt and full read
 ledger, actual model/route/source bindings, all named checks and archive
 readback before any adoption. The final independent cold read and private
 wiki/delivery convergence remain required. Goal completion is unproven.
+
+
+## 2026-11-01 — <HUB> Git delivery restored during the frozen review
+
+The preceding goal turns were verified waits on the same live review44594,
+with independent preparation of a manuscript-only cold-read packet and
+postterminal obligation checker. No new proof or scientific acceptance.
+Cold preparation is outside the repository; v1's PDF-manifest lookup failure
+is retained and v2 binds the exact28 TeX files, PDF and processed bibliography.
+No cold reviewer has been dispatched.
+
+<HUB> became reachable. Its canonical master checkout was clean at
+611c005. A serial final local fetch showed28ahead/0behind; pushed root
+handoff6783cb0 and fast-forwarded the clean <HUB> canonical checkout.
+Verified local/origin/<HUB> master6783cb0 and0/0. Its existing isolated
+research checkout was clean on the correct branch at6937719. Fetched and
+fast-forwarded to7099838; verified local/origin/<HUB> research parity,
+clean status and0/0. Exact remote current-PDF SHA256 matches the frozen
+258-page candidate. Delivery receipt: whole-argument/delivery-checkpoint-v1.
+No root scientific merge, reset, WIP removal or source/PDF edit occurred.
+Earlier NoRoute failures remain historical evidence, superseded by this
+observed recovery, not rewritten. These heads precede this workflow-only
+checkpoint commit, which is separately pushed and synchronized.
+
+Whole-argument reviewer44594 is still live. The terminal receipt, actual
+coverage, named obligations, findings/adjudication and independent cold
+read remain pending. None of this Git delivery evidence accepts a proof
+or establishes the complete project contract. The intrinsic actual-constant
+target and every original model, scope boundary and decision point remain.
