@@ -8116,3 +8116,7 @@ Skorohod/sourcefix/TeX/PDF/wiki/bib/publication, NoRoute/pushpending.
   spacetimecontrols/allΓdims verifiedasinput; NEWphysicalcomparisonunproved.
   OriginalallmodelsharpgoalACTIVE; no sourcefix/p1identity/Skorohod/contact/
   HPC/companion/publicaction. Allnativejobs nowterminal; <HUB>NoRoute.
+
+## PB physical score comparison: frozen target and pre-proof tests — 2026-10-31
+
+[held back: AI account details]
