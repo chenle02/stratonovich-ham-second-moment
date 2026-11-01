@@ -90,3 +90,40 @@ No TeX, source PDF, main proof, Lean fact, review verdict or composition
 contract changed. No shortened manuscript is claimed. New Lean work is
 not useful for this reference/consumer classification; the pending draft's
 analytic import and measure correspondence remain the substantive checks.
+
+## Subsequent direct-upper audit: a simpler existing candidate
+
+On reading the actual final join, a potentially simpler existing input
+appears in P:original-signed-point-upper itself (signed module222 onward).
+Before any signed-positive comparison, it states the original normalized
+point limsup <= limsup_delta S_(delta^-1+2) <= 2+2*C_mean^2 < infinity.
+L:signed-score-envelope proves the last ceiling by the uniform mean bound
+and completing a quadratic in the raw norm; it explicitly assumes no
+positive-score identification or mask-score limit. The point proof uses
+source-first point transfer and the signed operator upper, not T:full-upper.
+The zero covariance branch is direct.
+
+The current explicit-reference graph from this ACTUAL named root reaches
+140nodes/112proofs and none of T:full-upper,
+P:variational-positive-scores, T:intrinsic-second-moment or
+P:positive-signed-comparison. This is stronger dependency evidence for
+using the existing signed upper as the finite-growth input than starting
+an occupation reordering with a new published energy import. It remains a
+syntactic graph plus selected author reading, not independent semantic
+clearance of those112proofs or all unlabelled setup. A mistaken exploratory
+query of the equation-derived nonexistent root
+P:variational-unmasked-point-lower returned no node; it supplies NO lower
+route evidence. The actual removal proposition is
+P:variational-remove-mask, with E:variational-unmasked-point-lower.
+
+No replacement or new proof cycle is adopted here. A candidate future
+reordering would use the signed point upper for uniform score finiteness,
+then the existing positive-score proof, then signed-positive comparison
+and cutoff removal. Each individual lower score must still bound the SAME
+canonical point liminf, with original data/amplitude/exponent/raw action;
+Q2 must not mean a different limit or a source approximation. The independent
+Section13 full upper remains retained and validated as a required separate
+result, even if no longer a premise of the focused constant theorem.
+The pending independent spatial-ratio draft remains an unreviewed separate
+claim; this observation does not turn that draft into an accepted result.
+No manuscript edit, source change, finite fact or new review credit.

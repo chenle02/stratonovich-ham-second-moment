@@ -10641,3 +10641,25 @@ new accepted result or official composition credit. Last capacity evidence
 still denies required Opus until23:30UTC; no pre-reset provider retry and
 no live reviewer is claimed. Goal active; this turn supplies actual
 consumer evidence that determines the next mathematical simplification.
+
+
+## 2026-11-01 — existing signed point upper is a simpler finiteness candidate
+
+Direct author reading of the final join found an existing alternative to
+the published-energy bootstrap: P:original-signed-point-upper already
+states finite original normalized limsup <=2+2C_mean² before positive
+score identification. The actual explicit dependency root reaches140nodes/
+112proofs, with no path to old full upper, positive scores, signed-positive
+comparison or intrinsic theorem. The audit records the actual proof inputs,
+zero branch and limits of syntactic evidence. This suggests using that
+existing bound as the finite-growth input to the positive-score proof.
+It is a candidate reordering, NOT a proof adoption or independent clearance;
+all unlabelled setup and canonical-solution interfaces still need review.
+No second new proof cycle or manuscript/Lean change. Retain old full-upper
+result as required. Independent spatial-ratio draft still pending review.
+
+Separate dry-run at ../stratonovich-independent-finiteness-review-v1/preflight
+completed23:22:39UTC: exact8input pins, zero missing/waived references,
+supported native2.1.304 image ledger, actual firstParty auth metadata.
+No provider mathematical call, report, reading coverage or acceptance.
+Root loader HANDOFF updated and synchronized at e378ab6; goal remains active.
