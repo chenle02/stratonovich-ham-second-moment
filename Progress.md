@@ -7,11 +7,11 @@
 ## Current state
 
 - **Main depth recovery (2026-11-02):** full-main DeepSeek review returned
-  MEDIUM; targeted deep audits have now accepted 106 named proof bodies at
+  MEDIUM; targeted deep audits have now accepted 108 named proof bodies at
   scoped HIGH, including terminal Wick/tails and full-upper assembly.
   The initial constructor001–009, calibration010–019 and driver085–093
   reports remain MEDIUM; focused004–006 is now separately accepted HIGH. The append-only ledger is
-  `reviews/2026-11-02-main-deepseek/depth-ledger-v23.json`.
+  `reviews/2026-11-02-main-deepseek/depth-ledger-v24.json`.
   Full213-proof, source-image/render and independent cold obligations remain.
   Further constructor004–006, source094–100 and masked101–103 packets are
   being prepared; preparation is not an actual reviewer launch.
@@ -12132,3 +12132,19 @@ sharp/point/globalcredit. v23has106scopedHIGH; activeTeX/PDF remain887.
 Verified bridge draft and reviewed182replacement await productionintegration;
 other terminal reports remain queued for root adjudication, no missing
 reports replaced with votes or metadata. GoalACTIVE, notcomplete.
+
+
+### Clock calculation completed at scoped HIGH
+
+059–060 originalHIGH had onlyspotchecked spectralidentity; ONEsame-session
+287.838s completion derives bothcones/sineintegrals/r0/lambda0 fully,
+10CLK checks/twoCHECKED rows. Rootreadboth/rehashedbothcapsules andadopts2.
+Correctmajorant separates q0 fromjointw0, no sourceedit. v24has108scopedHIGH.
+
+Productioncandidate isolated at siblingstratonovich-source-bridge-production-20261102:
+new214plus exact182patch,260pages/0errors/undefined/overfull,212oldbodies
+unchanged. Receipts siblingstratonovich-source-bridge-production-receipts-20261102.
+Candidate is pending exacttranscription/application review andintegration;
+ACTIVE scientificsource still887. Root has not waived FND/source/cold gates.
+Terminal point/symplectic/product/intrinsic reports remain for rootadjudication;
+sourcebridge draftHIGH andproposalHIGH are evidence, not automaticadoption.
