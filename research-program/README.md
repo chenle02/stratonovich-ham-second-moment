@@ -131,9 +131,10 @@ that a separate general-theory paper is publishable.
 
 ## The first precise theory candidate
 
-The [current frozen upper-growth statement](uniform-gaussian-growth-statement-v2.json)
+The [current upper-growth statement](uniform-gaussian-growth-statement-v3.json)
 extracts a possible supporting proposition from the existing Gaussian tube and
-signed bulk/tail arguments. It is a statement candidate awaiting independent audit.
+signed bulk/tail arguments. Its conditional implication has now passed a HIGH independent statement audit;
+its actual model applications and novelty remain separate open questions.
 Its six hypotheses specify:
 
 - the actual raw isonormal noise and correctly scaled Cameron maps;
@@ -144,7 +145,7 @@ Its six hypotheses specify:
 - a sharp deterministic comparison on a polynomial control ball large enough
   for the Gaussian tail cutoff, with delta first and B afterward.
 
-Its proposed conclusion is only an upper bound by the moving control-score
+Its conclusion is only an upper bound by the moving control-score
 limsup. It does not identify an exact limit, prove terminal displacement growth,
 or establish mixture asymptotics. The Gaussian transfer may be a standard
 supporting argument; novelty cannot be inferred from abstract notation.
@@ -211,19 +212,52 @@ Indeed, an all-zero Gaussian family with Z_delta=1 and F_delta,B(0)=1/B
 satisfies the original hypotheses with e_B=1/B tending to zero. Requiring
 the inner delta limit to vanish at every fixed B would exclude it needlessly.
 v2 also spells out the propagator determinant and the B14 calculation.
-No version has been adopted or received a passing HIGH gate.
+A fresh v2 audit then returned PASS_WITH_NOTES/HIGH, all eight H checks,
+with no critical finding. See its
+[full report](../reviews/2026-11-02-growth-statement-v2/report.md) and
+[adjudication](../reviews/2026-11-02-growth-statement-v2/adjudication.md).
+v3 addresses production documentation without changing U2-U6 or the conclusion.
+The conditional upper implication is cleared within that scope. Neither the
+original MEDIUM report nor any actual SPDE/source-image/novelty gate is upgraded.
+The report's missing Gaussian upper-tail complement and its overstatement of
+source-proof clearance are explicitly retained as qualifications.
 
-The next decision is whether its assumptions are sufficient, noncircular and
-independently verifiable in the original wave model, and what remains beyond
-existing literature. Independent statement audit precedes proof adoption.
-A useful second application and an exact source crosswalk determine whether
-candidateI deserves its own paper. The original all-model p2 result and every
-whole-proof/source/visual/final-cold gate remain required throughout.
+The remaining decision is whether the wave-specific assumptions are independently
+verified in each intended application, and what lies beyond existing literature.
+The Gaussian upper transfer is supporting machinery, not a separate theory-paper
+contribution by itself. A useful second application and exact source crosswalk
+still determine whether candidateI deserves its own paper. The original all-model
+p2 result and every whole-proof/source/visual/final-cold gate remain required.
+
+## A more concrete construction target for candidateI
+
+A stronger potential headline is a canonical local phase evolution at the
+original Stratonovich roughness threshold. The proposed state space is
+H^(1/2)_loc x H^(-1/2)_loc, carrying both displacement and velocity.
+At each compact observation and finite horizon, one would join the existing
+fixed-mask evolutions through finite propagation and identify their common
+original-noise regularization limit.
+
+This would be a local continuous linear evolution on a Fréchet space, not an
+unmasked bounded operator on the global energy space. It should have a composition
+law and strong continuity on each state, with local random bounds for fixed
+compact sets/horizons. Constant initial data are locally admissible. Point values
+and the original moment problem still need their separate canonical identification.
+
+This is STATEMENT RECONNAISSANCE, not a theorem or a new proof wave. The exact
+solution/approximation class, countable common exceptional set, overlap consistency,
+cutoff independence and uniqueness scope need proof and literature comparison.
+Standard finite-propagation patching alone would not make a new theory paper;
+the candidate contribution is the actual rough-Gaussian wave construction and
+its regularization correspondence. See the
+[precise target and obligations](local-phase-flow-recon-v1.json).
 
 ## Detailed records
 
 - [Paper bundles, proposed theorems and prior-art crosswalk](2026-11-01-series-assessment-v1.json)
 - [Verified holdings, edition defect and contribution map](2026-11-01-holdings-and-contributions-v1.json)
 - [Initial frozen upper-growth statement](uniform-gaussian-growth-statement-v1.json)
-- [Clarified upper-growth statement and boundary examples](uniform-gaussian-growth-statement-v2.json)
+- [Clarified v2 upper-growth statement](uniform-gaussian-growth-statement-v2.json)
+- [Current v3 statement with production documentation](uniform-gaussian-growth-statement-v3.json)
+- [Local phase evolution reconnaissance](local-phase-flow-recon-v1.json)
 - [Executed local symbolic falsification checks](2026-11-01-theory-statement-falsification-v1.json)
