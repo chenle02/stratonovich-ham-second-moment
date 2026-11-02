@@ -7,11 +7,11 @@
 ## Current state
 
 - **Main depth recovery (2026-11-02):** full-main DeepSeek review returned
-  MEDIUM; targeted deep audits have now accepted 92 named proof bodies at
+  MEDIUM; targeted deep audits have now accepted 96 named proof bodies at
   scoped HIGH, including terminal Wick/tails and full-upper assembly.
   The initial constructor001–009, calibration010–019 and driver085–093
   reports remain MEDIUM; focused004–006 is now separately accepted HIGH. The append-only ledger is
-  `reviews/2026-11-02-main-deepseek/depth-ledger-v20.json`.
+  `reviews/2026-11-02-main-deepseek/depth-ledger-v21.json`.
   Full213-proof, source-image/render and independent cold obligations remain.
   Further constructor004–006, source094–100 and masked101–103 packets are
   being prepared; preparation is not an actual reviewer launch.
@@ -12086,3 +12086,20 @@ not imply strict textualblindness; rawmetadata unchanged. No audit has cold
 credit, and historicalvotes are never mathematicalpremises. Futurecoldpacket
 must address this explicitly. Next001–003/135 focusedaudit authorized; exact
 source135correct, only priorreview's null-transfer explanation was invalid.
+
+
+### Signed-static scoped HIGH; symplectic HIGH header withheld
+
+161–164 actualPASS/HIGH,583.956s, fourCHECKED/all10SSW PASS; rootreadall/
+rehashed64members. Bump placement andformconstant optionalnotes, report
+quarter-operator-versus-half-FORM and beta-chain typos adjudicated against
+correctsource. Roughsigned domains/noH2/no ground/gap and bothFcolumns
+preserved. Adopt4targets only, no downstreammoment/image/cold clearance.
+165–169 actualPASS_WITH_NOTES/HIGH,267.36s but reviewer falsely claimed
+Cameron/primaryinputs absent; full delivery verified in actualprompt. It
+also overclaims physicalC1 onallE, mistypesforce cancellation andconflates
+c0/Phi0 withfree. Rootrehashed64members andwithholds all5pending ONEspecific
+same-session correction/input-use auditPID3770108/handle52760; original
+source/carrier/capsule unchanged. No confidence-only vote or newmath edit.
+v21has96scopedHIGH/all213identities; explicitreading/regularityerror statuses
+retain actualheader withoutacceptance. Otherunfinished gates remain open.
