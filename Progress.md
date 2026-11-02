@@ -11,7 +11,7 @@
   scoped HIGH, including terminal Wick/tails and full-upper assembly.
   Constructor001–009, calibration010–019 and driver085–093 reports remain
   MEDIUM. The append-only ledger is
-  `reviews/2026-11-02-main-deepseek/depth-ledger-v7.json`.
+  `reviews/2026-11-02-main-deepseek/depth-ledger-v8.json`.
   Full213-proof, source-image/render and independent cold obligations remain.
   Further constructor004–006, source094–100 and masked101–103 packets are
   being prepared; preparation is not an actual reviewer launch.
@@ -11819,3 +11819,15 @@ DeepSeekMAIN/scoped51HIGH versus actualMEDIUM/fullgates explicitly stated.
 Request and enqueue receipts saved under main-review-resumption/
 wiki-main-depth-queued. QUEUED is not maintained/published; require exact
 terminal receipt and ownedwiki commit. No direct wiki edit or correspondence.
+
+
+### Young flow terminal MEDIUM retained
+
+Young104–111 actualPASS_WITH_NOTES/MEDIUM,434.53s, eightCHECKED/all11PASS.
+Root rehashed41members/11bindings and adjudicated every finding. Conservative
+growth majorant, bounded-bilinear left-composition and support margins need
+no correctness repair. Report-only exponential-integrability 'exactly when'
+is false as necessity; source establishes a sufficient small-c condition.
+Prerequisite joins and source-text limitations remain; HIGH not accepted.
+Append-only depth-ledger-v8 retains51scopedHIGH and records these8MEDIUM.
+No source/PDF change or retry. New scaling/rawlower119–126 packet preparing.
