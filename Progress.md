@@ -11,7 +11,7 @@
   scoped HIGH, including terminal Wick/tails and full-upper assembly.
   Constructor001–009, calibration010–019 and driver085–093 reports remain
   MEDIUM. The append-only ledger is
-  `reviews/2026-11-02-main-deepseek/depth-ledger-v6.json`.
+  `reviews/2026-11-02-main-deepseek/depth-ledger-v7.json`.
   Full213-proof, source-image/render and independent cold obligations remain.
   Further constructor004–006, source094–100 and masked101–103 packets are
   being prepared; preparation is not an actual reviewer launch.
@@ -11760,3 +11760,16 @@ by reviewer; root exact check remains author-only. FiniteLean boundaries,
 pre-provider refusal and raw scope-metadata suffix are preserved/adjudicated.
 No source changes. Append-only depth-ledger-v6 records51scopedHIGH targets,
 all213identities/rawmainstatuses retained. This native processTERMINAL.
+
+
+### Masked moments terminal MEDIUM retained
+
+Masked101–103 actualPASS_WITH_NOTES/MEDIUM,500.663s, threeCHECKED/all10PASS.
+Root rehashed39members and read every finding. Optional mask/Green passage,
+cone exhaustion, productL1 and reversal explanations do not locate a defect.
+Report-only mask domain and looseTheorem4.1 attribution corrected in
+adjudication. Its closing production phrase cannot waive actualHIGH failure.
+Spot-checked constructor dependencies and zeroimage credit remain explicit.
+Append-only depth-ledger-v7 retains51scopedHIGH and records these3MEDIUM
+statuses. No source/PDF change. Compactmean112–118 now preparing as NEW
+unit; maskedproviderTERMINAL, no retry. Full goal remains ACTIVE.
