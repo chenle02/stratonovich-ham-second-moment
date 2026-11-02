@@ -11241,3 +11241,25 @@ O1/O2/O3 scope remain; no main TeX/PDF change.
 Lean routing is FOCUSED_REVIEW with analytic exclusions documented in
 reviews/2026-11-02-cutoff-overlap-proof-v2/lean-review-routing.md. No Lean
 waiver, compiler, new package or changed 80-fact/22-seam ledger.
+
+
+### Actual cutoff production followup dispatched
+
+Frozen successor dd27f38 has one actual DeepSeek V4 Pro native targeted
+followup, started 2026-11-02T02:02:53Z. External attempt is
+../stratonovich-cutoff-overlap-proof-review-v2; clean carrier
+d9ee65027b50e5eda188a80a4cd4fb0b866b0dc4. Native PID2685802 under
+supervisor2685759 was checked LIVE, step_start present, no verdict yet.
+A separate actual route health call returned READY/terminal0.
+This is explicitly non-blind production followup with original v1 report
+and adjudication supplied; not a cold vote. All seven changed arguments
+and O1-O3 regression checks are assigned. No automatic retry or fallback.
+Exact139231-byte prompt SHA256308d93a39d5958566ed3f075fb2da63c9e19e443d3cb7d6ec045f0d156ca14ba
+and source bindings are retained. HIGH remains required, not presumed.
+
+Full recovery inventory independently rehashed:448paths,zero mismatches;
+15components/390checks still unaccepted at whole scope. Kimi doctor passed
+but its installed wrapper offers text Read only, while native PNG reading
+requires ReadMediaFile. An isolated task-local native image review is being
+prepared, with old Claude-only composition explicitly unmet. No global
+setup/account/model change or source-image credit is claimed.
