@@ -11263,3 +11263,8 @@ but its installed wrapper offers text Read only, while native PNG reading
 requires ReadMediaFile. An isolated task-local native image review is being
 prepared, with old Claude-only composition explicitly unmet. No global
 setup/account/model change or source-image credit is claimed.
+
+
+### Kimi SF04 Young-source image attempt: terminal monthly quota refusal
+
+[held back: AI account details]
