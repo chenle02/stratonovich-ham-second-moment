@@ -10,7 +10,7 @@
   b4b6efc is clean and synchronized with <HUB>. All28 TeX retain214
   stable proofs;211 raw bodies are unchanged and034/189/193 have explicit
   editorial-only changes. Current indexv5 and neutralv4 bind the source;
-  depth-ledger-v33 has158 exact scoped HIGH,3 editorial deltas pending the
+  depth-ledger-v34 has158 exact scoped HIGH,3 editorial deltas pending the
   coupled review, and53 actual MEDIUM/qualified/partial rows. The previous
   161 scoped count predates cleanup. Counts are not whole-goal acceptance.
   All old terminal HIGH backlog is now adjudicated at its exact scope.
@@ -18,7 +18,9 @@
 
 - **ACTIVE fresh MAIN (2026-11-02):** Le resumed the full goal and selected
   DeepSeek V4 Pro MAIN. ONE fresh all214-proof/coupled-graph text audit is
-  LIVE from18:23:08UTC, PID1596722/session ses_e627fc583ffeRH1qWPa5Jf1JgZ.
+  TERMINAL after311.280seconds, session ses_e627fc583ffeRH1qWPa5Jf1JgZ.
+  It returned UNGRADED120CHECKED/94LIMITED, no FLAW/NOT_READ. Root read
+  and adjudicated all findings; this does not meet the main HIGH gate.
   Exact1,692,142-byte prompt includes42 byte-bound items/all28 current TeX,
   stable maps, primary editions and neutral analytic/source calculations;
   prior votes/ledgers/governance excluded. All tools denied;131072 output
@@ -12397,3 +12399,22 @@ alltoolsfalse,131072outputbudget, no model/account/global changes. Frozen
 launchcapsule allmembers rehashed/retained. LIVEmeans no verdict yet.
 Fullactualsessionexport/terminalsemanticadjudication awaitsameattempt.
 No re-vote fromscopedcounts and no image/render/Kimi/cold/goalclearance.
+
+
+### Fresh complete214 MAIN terminal; qualifications adjudicated
+
+OneactualDeepSeekV4Pro run311.280s/exit0/stop/zero tools;72membercapsule
+rehashed/durablyretained. Exact450502input/9828public/24257reasoning tokens.
+ActualUNGRADED(no confidence supplied),120CHECKED94LIMITED,0FLAW/NOT_READ.
+Numeric214rows bijectalllabels/examinedintervals; originalcollector literalID
+refusal retained withadditivecorrespondence. Rootreadall/adjudicated source
+offsetattribution/pinpoints, falseweightedAGMmislabel, importedsource/read
+limits, noncircularassembly andmissingoperator-depth. Mechanicalexplicit
+referencegraph308edges/0unresolved; sole002/007syntacticcycle isnegative
+independence-reference, notpremisecycle. v34addsnewrawstatuseseachrowwith
+NOHIGHupgrade. Existing158exactscopedHIGH/3editorialdeltas/53oldMEDIUMpartial
+remain; report calls25ofcurrent56unacceptedCHECKED and31LIMITED butungraded.
+No requiredmanuscriptrepair found; no confidence-onlyrepeat. Authorworkers
+nowwrite explicitnewmathematicalreplays foractualvariance/interval limit,
+Youngretaining-source flow andrawlowerGaussianprobabilityseams. FullMAIN
+HIGH/image/render/Kimi/cold/wiki/privateclosure remainOPEN, goalACTIVE.

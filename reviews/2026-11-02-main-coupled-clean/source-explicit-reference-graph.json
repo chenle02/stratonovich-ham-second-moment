@@ -1,0 +1,3127 @@
+{
+  "scope": "Mechanical explicit source-reference graph only; not complete logical premise extraction, mathematical verification or reviewer grade. Closing selfrefs excluded; unlabelled verbal/imported/analytic premises require semantic inspection.",
+  "source_revision": "b4b6efccacbbccd8f747225330e9ccb27bc097a6",
+  "proofs": [
+    {
+      "id": "PROOF001",
+      "label": "P:Jensen",
+      "raw_proof_sha256": "adc019e1d6e0a1941c8ab725c147843ef332c0979c75a9d238fa4fdf31d7d2db",
+      "explicit_references": [
+        "E:expansion",
+        "L:vertex-crude"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF008"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF002",
+      "label": "P:mixed",
+      "raw_proof_sha256": "3a5178f388a973b782c666260061e5ffc96afd0b57e47f06a4f845ad6ad201d9",
+      "explicit_references": [
+        "E:full-second",
+        "E:mixed-diagram",
+        "E:mixed-moment",
+        "L:crude-corrected",
+        "L:joint-fixed-order",
+        "L:spatial-wick-measures",
+        "L:vertex-crude",
+        "P:mild-construction"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF005",
+        "PROOF006",
+        "PROOF007",
+        "PROOF008",
+        "PROOF009"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF003",
+      "label": "L:white-test",
+      "raw_proof_sha256": "fc567c9cdd5ddc0f982cb936a6582ae2ebb5f5db16b62973ec35b2981d39b6f8",
+      "explicit_references": [],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF004",
+      "label": "L:damped-homogeneous-norms",
+      "raw_proof_sha256": "54a170eba3afe5c50ec8095d92b1c7c89024b904e81cde882cd15bb5c86e24f8",
+      "explicit_references": [
+        "E:damped-tail-norms"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF005",
+      "label": "L:spatial-wick-measures",
+      "raw_proof_sha256": "d7820cfa105715b1b7fd5a3150d6fbb9b3297e6926f72d9a7edc66e3fbd6857c",
+      "explicit_references": [
+        "E:construction-brownian-moments",
+        "E:construction-heat-bound",
+        "E:spatial-positive-laplace",
+        "E:spatial-wick-limit"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF006",
+      "label": "L:joint-fixed-order",
+      "raw_proof_sha256": "0181e896a913b722c6ffaa07da1d813eb6272e9be0f20515a6583afdc3bd33b6",
+      "explicit_references": [
+        "E:joint-temporal-tail",
+        "E:spatial-wick-limit",
+        "L:damped-homogeneous-norms",
+        "L:spatial-wick-measures"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF004",
+        "PROOF005"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF007",
+      "label": "L:crude-corrected",
+      "raw_proof_sha256": "3862d65a98a76f6b367d1fdb49c5d224d7b3e8c75468ef664a84c88d3573e74a",
+      "explicit_references": [
+        "E:crude-corrected",
+        "E:crude-norms",
+        "E:theta-envelope",
+        "L:damped-homogeneous-norms",
+        "L:joint-fixed-order",
+        "P:mixed"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF002",
+        "PROOF004",
+        "PROOF006"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF008",
+      "label": "L:vertex-crude",
+      "raw_proof_sha256": "d047d410b01f52956b6401232267206e8e49e2ec79e173522c83834c4044653e",
+      "explicit_references": [
+        "E:crude-norms",
+        "E:theta-envelope",
+        "E:vertex-crude",
+        "E:vertex-summability",
+        "L:damped-homogeneous-norms",
+        "L:joint-fixed-order"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF004",
+        "PROOF006"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF009",
+      "label": "P:mild-construction",
+      "raw_proof_sha256": "64049ea1f0cc33d8a5fffce8250b2bf1b3c2d6ec81782f881774670454b96b32",
+      "explicit_references": [
+        "E:external-vertex-limit",
+        "E:fixed-external-domination",
+        "E:mild-construction",
+        "E:occupied-multiplication",
+        "E:partial-vertex-limit",
+        "E:vertex-crude",
+        "E:vertex-summability",
+        "L:joint-fixed-order",
+        "L:vertex-crude"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF006",
+        "PROOF008"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF010",
+      "label": "P:envelope",
+      "raw_proof_sha256": "c20ec7a0fd3aeb3eae81741071e4f6d31ec385f0ecf77df5f5fb5ac6f2fe65a1",
+      "explicit_references": [
+        "E:B-envelope",
+        "E:envelope-growth",
+        "E:homogeneous-envelope",
+        "L:crude-corrected",
+        "L:damped-homogeneous-norms",
+        "L:joint-fixed-order",
+        "P:mixed"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF002",
+        "PROOF004",
+        "PROOF006",
+        "PROOF007"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF011",
+      "label": "P:white-four",
+      "raw_proof_sha256": "cd91ff9d36f8c300f7f30b49bf7ff059fd1196e39f96d070a05305aeb6c13662",
+      "explicit_references": [
+        "E:total-four",
+        "E:white-four-table",
+        "L:static-four"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF012"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF012",
+      "label": "L:static-four",
+      "raw_proof_sha256": "d70d1f064e2f7441e6663c26d985f8cc9459c7dea6a451ddb3455f225f0d6e1a",
+      "explicit_references": [
+        "E:sector-values",
+        "E:static-four-table",
+        "E:total-four",
+        "L:white-test"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF003"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF013",
+      "label": "P:riesz-small",
+      "raw_proof_sha256": "9d89225e1a51d036eb300b84b704de45514b7224edf1e4ec1c8c9dfbbe5fc436",
+      "explicit_references": [
+        "E:riesz-four",
+        "E:riesz-two"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF014",
+      "label": "L:d1-spatial",
+      "raw_proof_sha256": "b871f57e0aef5a74058c163f32de8fd5c6a40b1f932429ebb5d68f83183f5202",
+      "explicit_references": [
+        "E:d1-spatial-max",
+        "E:d1-spatial-product"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF015",
+      "label": "P:d1-upper",
+      "raw_proof_sha256": "d8410d755d6ffc92ae72191f8dc574b51b012c6894a5e8e5a4115267bf8737f5",
+      "explicit_references": [
+        "E:d1-coefficient",
+        "E:d1-spatial-max",
+        "E:d1-time-symmetry",
+        "E:d1-upper",
+        "L:d1-spatial",
+        "L:joint-fixed-order",
+        "P:mixed"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF002",
+        "PROOF006",
+        "PROOF014"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF016",
+      "label": "L:low-alpha-convolution",
+      "raw_proof_sha256": "d57dd5952de29531e90f49929234b690d83729696bc01d4365587e8c12eda4ee",
+      "explicit_references": [
+        "E:low-alpha-convolution",
+        "E:low-alpha-radial"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF017",
+      "label": "L:alpha-one-convolution",
+      "raw_proof_sha256": "495537c627c7beedd99b1bfe5730fbe0814d056dbc6e0b6d6ecc1b35f391cf50",
+      "explicit_references": [
+        "E:alpha-one-convolution"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF018",
+      "label": "P:low-alpha-upper",
+      "raw_proof_sha256": "19d775dc42d0a7a8916fc8fd6add577406209918691de25f5dff67d2a09bda71",
+      "explicit_references": [
+        "E:d1-time-symmetry",
+        "E:low-alpha-coefficient",
+        "L:alpha-one-convolution",
+        "L:d1-spatial",
+        "L:joint-fixed-order",
+        "L:low-alpha-convolution",
+        "P:d1-upper"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF006",
+        "PROOF014",
+        "PROOF015",
+        "PROOF016",
+        "PROOF017"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF019",
+      "label": "C:d1-first-calibration",
+      "raw_proof_sha256": "b09153380d761a8b52e28c43404705c70b33c0aa0359cb09cba2e7b4a83cb34e",
+      "explicit_references": [
+        "E:d1-first-calibration",
+        "L:d1-spatial",
+        "P:d1-upper",
+        "P:low-alpha-upper"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF014",
+        "PROOF015",
+        "PROOF018"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF020",
+      "label": "P:higher-transfer",
+      "raw_proof_sha256": "cd2b6895f73e83d1b3d18884a58af08203fbeffd7da4353d61389cfd42a2c6a6",
+      "explicit_references": [
+        "E:higher-holder",
+        "H:homog",
+        "H:spatial-maximum",
+        "L:d1-spatial",
+        "L:joint-fixed-order",
+        "P:low-alpha-upper",
+        "P:mixed",
+        "S:d1-upper"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF002",
+        "PROOF006",
+        "PROOF014",
+        "PROOF018"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF021",
+      "label": "L:higher-riesz",
+      "raw_proof_sha256": "ac6b35538c992703ae30f94cbe62e7821e573da7ac20a643ac7c3b1d85481d8d",
+      "explicit_references": [
+        "H:spatial-maximum"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF022",
+      "label": "C:higher-riesz",
+      "raw_proof_sha256": "c8c0fb82e6b99aedc1a3734af266c46f481aaa276127330818b1ca44d6c36c38",
+      "explicit_references": [
+        "L:higher-riesz",
+        "P:higher-transfer"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF020",
+        "PROOF021"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF023",
+      "label": "P:higher-obstructions",
+      "raw_proof_sha256": "55344337436ad4f28e56a56de5da273b62b05f63c037ad5372927ef450e50b7f",
+      "explicit_references": [
+        "L:higher-riesz"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF021"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF024",
+      "label": "L:static-holder-input",
+      "raw_proof_sha256": "b56620af25d000c74a95a2de436bd4ffeb5717731baf58dc08715706e5092b2e",
+      "explicit_references": [
+        "E:static-holder-input"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF025",
+      "label": "P:static-holder-upper",
+      "raw_proof_sha256": "1eeb396e11eb27099177b0ddd2ae176f8a3e81cacee4e628e779f7ad03cf7391",
+      "explicit_references": [
+        "E:d1-time-symmetry",
+        "E:static-holder-affine",
+        "E:static-holder-low",
+        "E:static-holder-regularized",
+        "E:static-holder-upper",
+        "L:alpha-one-convolution",
+        "L:joint-fixed-order",
+        "L:static-holder-input",
+        "P:d1-upper",
+        "P:low-alpha-upper",
+        "P:mixed",
+        "S:d1-upper"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF002",
+        "PROOF006",
+        "PROOF015",
+        "PROOF017",
+        "PROOF018",
+        "PROOF024"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF026",
+      "label": "L:planar-endpoints",
+      "raw_proof_sha256": "63a92f023f0a6ee5aaa29c042d133241e6dc342c6d5a4ad2369debc9d04201e0",
+      "explicit_references": [
+        "E:planar-line-mixture"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF027",
+      "label": "L:planar-static-input",
+      "raw_proof_sha256": "4867b9c0713e90302e3836563a7cb6a8d08787b99524b8701c4b1bd83e2f8475",
+      "explicit_references": [
+        "E:planar-static-input"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF028",
+      "label": "P:planar-upper",
+      "raw_proof_sha256": "4c111af10c78d6d94731a7fb76a3bd7be4ba10da530f77ef840472ed8a612b15",
+      "explicit_references": [
+        "E:planar-coefficient-holder",
+        "E:planar-low-coefficient",
+        "E:planar-upper",
+        "L:d1-spatial",
+        "L:joint-fixed-order",
+        "L:planar-endpoints",
+        "L:planar-static-input",
+        "P:mixed"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF002",
+        "PROOF006",
+        "PROOF014",
+        "PROOF026",
+        "PROOF027"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF029",
+      "label": "C:planar-range",
+      "raw_proof_sha256": "1929f313f18ade4a78b70f6966591d7b27fbd793dbfc2f75ac6e59369c05ea4a",
+      "explicit_references": [
+        "P:low-alpha-upper",
+        "P:planar-upper"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF018",
+        "PROOF028"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF030",
+      "label": "L:product-endpoints",
+      "raw_proof_sha256": "e2d1e15949d1034e12fe62c16f22dd2edd61b3259172e2d317564ef357ff82be",
+      "explicit_references": [
+        "E:product-gaussian-comparison"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF031",
+      "label": "L:plane-endpoints",
+      "raw_proof_sha256": "cbdfb7a346b4c0cc2a0c32efd1eaccb900543e6a459efc9f1b7121ecc0409921",
+      "explicit_references": [
+        "E:three-gaussian-comparison",
+        "L:alpha-one-convolution"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF017"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF032",
+      "label": "L:endpoint-closure",
+      "raw_proof_sha256": "d4e205b134456e1b01f520b75c32e81e94a33a1440b152c82ba46d6bb575db5b",
+      "explicit_references": [],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF033",
+      "label": "P:three-transfer",
+      "raw_proof_sha256": "4ae17616b2deba75b215224fde039d0e3b6b02a9553b75d0060406c3b1d891d6",
+      "explicit_references": [
+        "E:three-gaussian-comparison",
+        "E:three-low-coefficient",
+        "E:three-regularized-holder",
+        "E:three-static-coefficient",
+        "E:three-variational-upper",
+        "L:alpha-one-convolution",
+        "L:joint-fixed-order",
+        "P:mixed"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF002",
+        "PROOF006",
+        "PROOF017"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF034",
+      "label": "C:three-product-riesz",
+      "raw_proof_sha256": "69dc5ff9df6bcb84ccd2d5a74e99d848553c516e739e846a51d75b37a4f8d61e",
+      "explicit_references": [
+        "E:three-parameters",
+        "H:three-endpoints",
+        "L:product-endpoints",
+        "P:three-transfer"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF030",
+        "PROOF033"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF035",
+      "label": "C:three-finite-images",
+      "raw_proof_sha256": "f3863e8c620d51ad83f895b593b4aada41bb769704a23fc2126679854eab6e68",
+      "explicit_references": [
+        "E:three-parameters",
+        "H:three-endpoints",
+        "L:endpoint-closure",
+        "L:plane-endpoints",
+        "L:product-endpoints",
+        "P:three-transfer"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF030",
+        "PROOF031",
+        "PROOF032",
+        "PROOF033"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF036",
+      "label": "L:physical-spectral-energy",
+      "raw_proof_sha256": "2471f3ba4dd9be0de5b0a578e534958f783649424417e1e7a610ece142cc5d62",
+      "explicit_references": [
+        "E:energy-quartic-bound",
+        "E:physical-spectral-energy"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF037",
+      "label": "L:phase-contractions",
+      "raw_proof_sha256": "8304bab4c2a12dec102b217ec3af64f0acdf82bd3693bef0b5ac0461b3dca79b",
+      "explicit_references": [
+        "E:phase-resolvent",
+        "E:phase-trace"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF038",
+      "label": "P:static-phase-variance",
+      "raw_proof_sha256": "2822039eeb3177ccda889a246c5f57ce59985879ebed4290d7be83a1729d0f73",
+      "explicit_references": [
+        "E:phase-born",
+        "E:phase-duhamel",
+        "E:phase-mean",
+        "E:phase-variance",
+        "L:phase-contractions"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF037"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF039",
+      "label": "L:complex-phase",
+      "raw_proof_sha256": "cd3072e82656528ba66f11a10ff10a60a861e43678c731922a37530e9f00200c",
+      "explicit_references": [
+        "E:abstract-sandwich",
+        "E:cp-input"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF040",
+      "label": "L:fock-form",
+      "raw_proof_sha256": "6e3cc05a816840140067d18ba41cfd893e59a974dc2f2fe658d4473eea5d1ca3",
+      "explicit_references": [
+        "E:fock-sandwich",
+        "L:phase-contractions"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF037"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF041",
+      "label": "L:finite-word-cutoff",
+      "raw_proof_sha256": "73cf9d3ab5472e5cc3f8c205b6f61eacbf1d37d3561c1c8c5ba61a719abf4e09",
+      "explicit_references": [
+        "E:finite-word-cutoff"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF042",
+      "label": "P:static-phase-all-orders",
+      "raw_proof_sha256": "2971df2593762519b10982458c65be583933ecbae17978fd0de3446877a9e9c4",
+      "explicit_references": [
+        "E:all-static-phase-orders",
+        "E:all-static-phase-sum",
+        "L:complex-phase",
+        "L:finite-word-cutoff",
+        "L:fock-form"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF039",
+        "PROOF040",
+        "PROOF041"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF043",
+      "label": "C:static-interaction",
+      "raw_proof_sha256": "87703d43c95df0fb9e0932d3b45c6499257ec2186bdc2fcf1637134441e8f7ee",
+      "explicit_references": [
+        "E:all-static-phase-orders",
+        "E:independent-static-blocks",
+        "E:phase-born",
+        "E:phase-mean",
+        "E:static-block-series",
+        "E:static-interaction",
+        "P:static-phase-variance",
+        "S:static-phase"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF038"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF044",
+      "label": "L:interval-contractions",
+      "raw_proof_sha256": "901a777225aa1058b7a3d281d5fe4259d781765cf3e0fdd3dd257d63f4916cf9",
+      "explicit_references": [
+        "E:interval-column",
+        "E:interval-fock",
+        "L:fock-form",
+        "L:phase-contractions"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF037",
+        "PROOF040"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF045",
+      "label": "L:interval-complex",
+      "raw_proof_sha256": "791160543990464c19e6cb151c1929ed37b78d59f82ce297a7d3bd3e5ffdb476",
+      "explicit_references": [
+        "E:interval-metric",
+        "E:phase-root-comparisons",
+        "L:complex-phase"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF039"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF046",
+      "label": "L:inventory-product",
+      "raw_proof_sha256": "2b85f1375a6568a65b652d4be324c1ac06eb25b3d569b35ad9881462bb292fc8",
+      "explicit_references": [],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF047",
+      "label": "L:fixed-split",
+      "raw_proof_sha256": "01b30b4d96c8025574cad230a6bcc16cc4d5e71b0f973eeefee8d839e5973a45",
+      "explicit_references": [
+        "E:fixed-split-bound",
+        "E:interval-column",
+        "E:interval-cross-cube",
+        "E:interval-cross-vector",
+        "E:split-before-absorption",
+        "E:split-radii",
+        "E:split-word-product",
+        "L:complex-phase",
+        "L:finite-word-cutoff",
+        "L:interval-complex",
+        "L:interval-contractions"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF039",
+        "PROOF041",
+        "PROOF044",
+        "PROOF045"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF048",
+      "label": "P:interval-coefficients",
+      "raw_proof_sha256": "cc45d2ef3526f5bb78d5ddf02e999b956cfc6bb788a78a760eff1adc894bfbc8",
+      "explicit_references": [
+        "E:interval-coefficient-bound",
+        "E:interval-energy-splits",
+        "E:interval-entire-majorant",
+        "E:interval-phase-bound",
+        "L:finite-word-cutoff",
+        "L:fixed-split",
+        "L:inventory-product"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF041",
+        "PROOF046",
+        "PROOF047"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF049",
+      "label": "L:terminal-wick",
+      "raw_proof_sha256": "93c3b82a05afc9c91c47b99a53a3131fea56276b65de311598e26152304efde4",
+      "explicit_references": [
+        "E:expansion",
+        "E:terminal-pairing-integral",
+        "E:terminal-term-majorant",
+        "E:terminal-wick-formula"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF050",
+      "label": "L:uniform-series-tail",
+      "raw_proof_sha256": "3ec563e1efd325a59f3d117de326e964c3832d3c36d9082fba09a1389e78ea75",
+      "explicit_references": [
+        "E:uniform-series-tail",
+        "L:terminal-wick"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF049"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF051",
+      "label": "T:full-upper",
+      "raw_proof_sha256": "c6ebb46c1a5c9e8cf937aa6e928f8a194d094d24cf4469799e118f5e85da5b50",
+      "explicit_references": [
+        "E:dyadic-time-majorant",
+        "E:expansion",
+        "E:full-upper-bound",
+        "E:interval-source-comparison",
+        "E:regularized-scaled-moment",
+        "E:terminal-chain-measure",
+        "E:terminal-pairing-integral",
+        "L:crude-corrected",
+        "L:fixed-split",
+        "L:joint-fixed-order",
+        "L:terminal-wick",
+        "L:uniform-series-tail",
+        "P:interval-coefficients",
+        "P:mild-construction",
+        "P:mixed"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF002",
+        "PROOF006",
+        "PROOF007",
+        "PROOF009",
+        "PROOF047",
+        "PROOF048",
+        "PROOF049",
+        "PROOF050"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF052",
+      "label": "L:mean-coefficient-holder",
+      "raw_proof_sha256": "cb4ad9b919870e79dcb5e015afd29de22ea361e1e4c5688d616c16fac4fbf2f2",
+      "explicit_references": [
+        "E:joint-temporal-tail",
+        "E:mean-coefficient-holder",
+        "E:mean-positive-series",
+        "E:regularized-scaled-moment",
+        "L:joint-fixed-order",
+        "L:spatial-wick-measures",
+        "L:terminal-wick",
+        "L:uniform-series-tail",
+        "L:vertex-crude",
+        "P:mixed"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF002",
+        "PROOF005",
+        "PROOF006",
+        "PROOF008",
+        "PROOF049",
+        "PROOF050"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF053",
+      "label": "L:positive-series-type",
+      "raw_proof_sha256": "6a026d4cd3e475f89e67eba0fccf9c3d856d44a3410ad06f7072dd501c2d28ac",
+      "explicit_references": [],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF054",
+      "label": "P:static-minorant-lower",
+      "raw_proof_sha256": "2b0aa93d965f2be01c7a2bddc1cb743d8fe16e7580fdc5fd456f3591dd839926",
+      "explicit_references": [
+        "E:static-minorant-moment",
+        "E:static-minorant-rate",
+        "E:static-ratio-input",
+        "L:joint-fixed-order",
+        "L:mean-coefficient-holder",
+        "L:spatial-wick-measures"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF005",
+        "PROOF006",
+        "PROOF052"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF055",
+      "label": "P:near-static-mean-gap",
+      "raw_proof_sha256": "c4f6abb106dd65ac2819f84a991f1be2481b1800cc33d54002d2ab461c9c0a06",
+      "explicit_references": [
+        "E:mean-coefficient-holder",
+        "E:near-static-mean-upper",
+        "E:near-static-window",
+        "L:mean-coefficient-holder",
+        "L:positive-series-type",
+        "P:static-minorant-lower",
+        "T:full-upper"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF051",
+        "PROOF052",
+        "PROOF053",
+        "PROOF054"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF056",
+      "label": "L:full-moment-coefficient-holder",
+      "raw_proof_sha256": "ea32382adb442d683dcf71cf283e710958ff0e1346fd95bdcf501ec380e78aa0",
+      "explicit_references": [
+        "E:full-moment-coefficient-holder",
+        "E:full-moment-positive-series",
+        "E:joint-temporal-tail",
+        "E:mean-positive-series",
+        "L:mean-coefficient-holder",
+        "L:spatial-wick-measures",
+        "P:mixed"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF002",
+        "PROOF005",
+        "PROOF052"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF057",
+      "label": "P:moment-growth-logconvex",
+      "raw_proof_sha256": "f048590dc808885370e01e5b1ba7a91b2e62a7ab22b0b08deb1b7a112b550d20",
+      "explicit_references": [
+        "E:moment-growth-logconvex",
+        "L:full-moment-coefficient-holder",
+        "L:positive-series-type",
+        "P:static-minorant-lower"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF053",
+        "PROOF054",
+        "PROOF056"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF058",
+      "label": "C:static-moment-constant-continuity",
+      "raw_proof_sha256": "accacda5f563f275e763a6a04a0de9fda8b71934f267d6af9108af1d64fe8f03",
+      "explicit_references": [
+        "E:static-constant-continuity",
+        "E:static-constant-envelope",
+        "E:static-moment-ratio-continuity",
+        "P:moment-growth-logconvex",
+        "P:static-minorant-lower"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF054",
+        "PROOF057"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF059",
+      "label": "L:white-clock-laplace",
+      "raw_proof_sha256": "d69e6b66a0384ca6056f307a976b491457523ce58e4697e9e2442c245d2f45b9",
+      "explicit_references": [
+        "E:white-cross-clock-transform",
+        "E:white-self-clock-transform"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF060",
+      "label": "P:clock-copy-obstruction",
+      "raw_proof_sha256": "8f0ac930014c253af7ae7e17a05a6c932230b66c0b4687ec4ee5919c0f1f81a8",
+      "explicit_references": [
+        "E:degree-one-clock-loss",
+        "L:damped-homogeneous-norms"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF004"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF061",
+      "label": "P:masked-spectral-growth",
+      "raw_proof_sha256": "0478c99120385aec598146ce84e88b32b6008aa7fdd23912da956175c1feb6dd",
+      "explicit_references": [
+        "E:masked-gaussian-transform",
+        "E:masked-spectral-convention"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF062",
+      "label": "P:masked-auxiliary-norm",
+      "raw_proof_sha256": "82c713363961236ec1f8a2e915eca336fd8193eb4c2cad52c5fcffa6872c30ee",
+      "explicit_references": [
+        "E:masked-auxiliary-growth",
+        "E:masked-hilbert-fourier",
+        "P:masked-spectral-growth"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF061"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF063",
+      "label": "L:masked-time-completion",
+      "raw_proof_sha256": "42dbfeecea6c844deaf501aabc316a55c537f507a1b133c676297a101ec0ca69",
+      "explicit_references": [
+        "E:masked-time-schur"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF064",
+      "label": "P:masked-noise-completion",
+      "raw_proof_sha256": "cc69698b975dfff4d29e5e7bdcd59bc933477949f0e5fef3b896bb08989cf0b9",
+      "explicit_references": [
+        "E:masked-actual-noise-norm",
+        "E:masked-spectral-convention",
+        "P:masked-auxiliary-norm"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF062"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF065",
+      "label": "P:masked-quotient-obstruction",
+      "raw_proof_sha256": "0ebbe4612554edd33ef21a2cda3d17fb3db99e6370eeb62c771f03a127b41323",
+      "explicit_references": [
+        "H:homog"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF066",
+      "label": "L:masked-temporal-modulation",
+      "raw_proof_sha256": "385a69a0a37b20e6025d4d87a485024cdbd61c7fe039282e8bd62f897bca36ed",
+      "explicit_references": [],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF067",
+      "label": "L:masked-trig-products",
+      "raw_proof_sha256": "f1cf6579a1b8d4cf36d08c5adf22618ba307c4ccf250f126582694a41c43191e",
+      "explicit_references": [
+        "L:masked-temporal-modulation"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF066"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF068",
+      "label": "L:masked-continuous-wave",
+      "raw_proof_sha256": "8cb881f6213017ef9bc28af755026035afd7b9909562a20e0899eec254311553",
+      "explicit_references": [
+        "E:masked-continuous-wave",
+        "L:masked-time-completion",
+        "L:masked-trig-products"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF063",
+        "PROOF067"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF069",
+      "label": "P:frequency-row",
+      "raw_proof_sha256": "e332a784570b09324e88f0f2c2219899b11b57673362b9cd9ff849e39b933815",
+      "explicit_references": [
+        "E:frequency-inverse-bessel",
+        "E:frequency-translated-growth",
+        "E:variance-gamma-range"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF070",
+      "label": "C:frequency-time",
+      "raw_proof_sha256": "47ce4058c337a368d7364eb028d238f0438b8ef00f54a8e027f98704d4ec3088",
+      "explicit_references": [
+        "E:variance-beta-range",
+        "P:frequency-row"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF069"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF071",
+      "label": "P:actual-wave-form",
+      "raw_proof_sha256": "fad3c5a975c5fb7844619bb9701b8659a530e645857f388c23344071444ff257",
+      "explicit_references": [
+        "E:variance-complex-noise",
+        "E:variance-cutoff-adjoint",
+        "E:variance-normalized-covariance",
+        "E:variance-normalized-kernel",
+        "E:variance-physical-adjoint",
+        "L:masked-time-completion",
+        "P:masked-noise-completion"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF063",
+        "PROOF064"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF072",
+      "label": "L:phase-bessel",
+      "raw_proof_sha256": "b3392bb74ac70b45b540b0f5183c4280c2e48c8034152068f5299964e6985daf",
+      "explicit_references": [],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF073",
+      "label": "P:wave-two-variances",
+      "raw_proof_sha256": "fe20fc62b8388ec345ee16d121a1b602f21480bdf220210c4f8eca86ec92213f",
+      "explicit_references": [
+        "C:frequency-time",
+        "E:variance-actual-growth-constant",
+        "E:variance-actual-row-bound",
+        "E:variance-normalized-covariance",
+        "E:variance-normalized-kernel",
+        "E:wave-input-variance",
+        "E:wave-output-variance",
+        "L:masked-continuous-wave",
+        "L:phase-bessel",
+        "P:frequency-row"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF068",
+        "PROOF069",
+        "PROOF070",
+        "PROOF072"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF074",
+      "label": "P:wave-square-columns",
+      "raw_proof_sha256": "e6f48e418640f08ef35aed033e2f97477a1e2fc695e27d34e59bb80dbf484c88",
+      "explicit_references": [
+        "E:variance-square-columns",
+        "E:wave-input-variance",
+        "E:wave-output-variance",
+        "P:wave-two-variances"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF073"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF075",
+      "label": "L:gaussian-scalar-powers",
+      "raw_proof_sha256": "98f4248402d88647117447b01d6c3d949ddec290ca2e204ba802c7ab311b1e2b",
+      "explicit_references": [
+        "E:gaussian-weighted-power"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF076",
+      "label": "L:gaussian-trace-bounds",
+      "raw_proof_sha256": "eb592a09bfb31d766605edaf5981442438615e695ac9a8ac3e3eaa14c4cd564e",
+      "explicit_references": [
+        "E:gaussian-integer-power",
+        "E:gaussian-trace-holder",
+        "E:gaussian-trace-word",
+        "L:gaussian-scalar-powers"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF075"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF077",
+      "label": "P:finite-gaussian-matrix",
+      "raw_proof_sha256": "8587511e6035ff982239665a3e259484093fd45d6eb64f4d3fb99e37ac97d8e2",
+      "explicit_references": [
+        "E:finite-gaussian-average",
+        "E:finite-hermitian-gaussian",
+        "L:gaussian-scalar-powers"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF075"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF078",
+      "label": "L:cutoff-factorization",
+      "raw_proof_sha256": "c38e4cda468cef22e9c824004a9f753594e293c889797893c31b70ee7e6056ee",
+      "explicit_references": [
+        "E:cutoff-lattice-sum",
+        "E:cutoff-peetre",
+        "E:cutoff-periodic-maps",
+        "E:cutoff-whole-space-recovery"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF079",
+      "label": "P:cutoff-singular-values",
+      "raw_proof_sha256": "2c348906e6a2ac0918f8af3e2b950f1e0e0aab89d06c27dfebc08db5f5203baa",
+      "explicit_references": [
+        "L:cutoff-factorization"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF078"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF080",
+      "label": "P:compact-two-envelopes",
+      "raw_proof_sha256": "0eb1028cfd761700d6949bebd90cd4652078f3df40693176ebadab47e62459ee",
+      "explicit_references": [
+        "E:compact-envelope-traces",
+        "L:cutoff-factorization",
+        "P:cutoff-singular-values"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF078",
+        "PROOF079"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF081",
+      "label": "L:compact-positive-order",
+      "raw_proof_sha256": "ebde632902dd49bf402dec084cfe6b44e273ea8bf1fe1ee695de400447bfaf73",
+      "explicit_references": [
+        "E:compact-positive-trace"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF082",
+      "label": "P:localized-finite-variance",
+      "raw_proof_sha256": "a7ccf0d02505a74dbe0dd0edafaa84614781142b54e69fae89cf86bd9b09f397",
+      "explicit_references": [
+        "E:localized-finite-hypotheses",
+        "L:compact-positive-order",
+        "P:compact-two-envelopes"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF080",
+        "PROOF081"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF083",
+      "label": "C:finite-gaussian-operators",
+      "raw_proof_sha256": "913a8e754a253cb7cc8a7fa4ce1e54d621d53ee9e15342ede20d35c9fb033673",
+      "explicit_references": [
+        "E:finite-gaussian-compression-bound",
+        "P:finite-gaussian-matrix"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF077"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF084",
+      "label": "P:cutoff-boundary-tests",
+      "raw_proof_sha256": "9f9470aad78462957da2ab1b83d61b4d80c59de8d53f5e1242b657295aba5c3e",
+      "explicit_references": [],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF085",
+      "label": "L:driver-noise-basis",
+      "raw_proof_sha256": "1c42ab03cab5b685d1d46c26931cd5dbe79e0a71b4098311fb4a59e9d33cd4a7",
+      "explicit_references": [
+        "L:masked-time-completion"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF063"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF086",
+      "label": "L:driver-covariance-coefficients",
+      "raw_proof_sha256": "4b39d3081dfa0f3857e1a63866b7473943f3ccef15d81ecc441c1cea2b4b7bdf",
+      "explicit_references": [
+        "E:driver-literal-covariance",
+        "P:actual-wave-form"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF071"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF087",
+      "label": "L:driver-gain-localization",
+      "raw_proof_sha256": "d0ea78ed96b7cfe3b386b5aacf290af285d0aac4cce9a247927c9761b5b3e54d",
+      "explicit_references": [
+        "E:driver-actual-localization",
+        "E:driver-coefficient-operator",
+        "E:driver-covariance-coefficient",
+        "E:driver-covariance-row",
+        "E:driver-gain-one",
+        "E:driver-literal-covariance",
+        "E:variance-physical-adjoint"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF088",
+      "label": "L:driver-actual-variances",
+      "raw_proof_sha256": "38b48f50af6013e3e2a235b19348f42e326cbba0d00d3a6328725af44174df93",
+      "explicit_references": [
+        "E:driver-actual-localization",
+        "E:driver-column-expansions",
+        "E:driver-compact-tail-envelopes",
+        "E:driver-covariance-row",
+        "E:driver-two-variances",
+        "E:wave-input-variance",
+        "E:wave-output-variance"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF089",
+      "label": "L:driver-dominated-tails",
+      "raw_proof_sha256": "ea116ab9fb6f01fe5adf7cdfca43183f7b3272c43d9c8f3762229d2dae47910a",
+      "explicit_references": [
+        "L:compact-positive-order"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF081"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF090",
+      "label": "L:driver-gaussian-tail-average",
+      "raw_proof_sha256": "1d23f8e418fb2bf1f78d1fe5c25caf2b1094b01b614d01d8e2faecbe62888983",
+      "explicit_references": [
+        "C:finite-gaussian-operators",
+        "P:finite-gaussian-matrix"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF077",
+        "PROOF083"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF091",
+      "label": "L:driver-interval-limit",
+      "raw_proof_sha256": "afbc183d4511ab745aead87967c776dfaec4bc2330835db5c2722b2cf9ffa5af",
+      "explicit_references": [
+        "C:finite-gaussian-operators",
+        "E:driver-compact-tail-envelopes",
+        "E:driver-fixed-schatten",
+        "L:driver-dominated-tails",
+        "L:driver-gaussian-tail-average",
+        "P:localized-finite-variance"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF082",
+        "PROOF083",
+        "PROOF089",
+        "PROOF090"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF092",
+      "label": "L:driver-holder-limit",
+      "raw_proof_sha256": "b20b2fe4ea7cec640eb709a224cdae0e8cb4adb9d826e1504cdf22eff68f29ba",
+      "explicit_references": [
+        "E:driver-dyadic-moment-sum",
+        "E:driver-gain-one",
+        "L:driver-interval-limit",
+        "P:wave-two-variances"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF073",
+        "PROOF091"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF093",
+      "label": "P:actual-operator-driver",
+      "raw_proof_sha256": "64d8a474d8cbb265f65cd500b742f18a776fe2bf2bdad3c263a164da195eddc1",
+      "explicit_references": [
+        "E:driver-gaussian-norm",
+        "E:driver-raw-row",
+        "L:driver-holder-limit",
+        "L:driver-interval-limit",
+        "L:driver-noise-basis"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF085",
+        "PROOF091",
+        "PROOF092"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF094",
+      "label": "L:source-finite-comparison",
+      "raw_proof_sha256": "c1d42000d48eba8ed27b79e69f01e1728679f1e444ff449548f14df7c191a018",
+      "explicit_references": [],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF095",
+      "label": "P:source-gaussian-transfer",
+      "raw_proof_sha256": "ef223e5845675d562dda0774fda0d4075e19a9317a322a318f9d636d924aef52",
+      "explicit_references": [
+        "E:source-transferred-row",
+        "L:driver-holder-limit",
+        "L:driver-interval-limit",
+        "L:source-finite-comparison"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF091",
+        "PROOF092",
+        "PROOF094"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF096",
+      "label": "L:source-spatial-heat",
+      "raw_proof_sha256": "69313755129b2271e22e98eda2ecc6f144d5e8418b8618881006b06fcca2456f",
+      "explicit_references": [
+        "P:masked-noise-completion"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF064"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF097",
+      "label": "L:source-retaining-isometry",
+      "raw_proof_sha256": "5fd27c5c7c2a267e554afdc988bb9d8fe0c2eca799c564391c3e98d59e7fdcd5",
+      "explicit_references": [
+        "E:driver-test-continuity",
+        "E:source-feature-isometry",
+        "E:source-given-W-retention"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF098",
+      "label": "P:source-canonical-convergence",
+      "raw_proof_sha256": "ca02cb68cbb74152823894a80100682c499e994fe87c7a3001498fefb0170f00",
+      "explicit_references": [
+        "E:source-driver-limit",
+        "E:source-heat-inner-product",
+        "E:source-joint-covariance",
+        "L:source-spatial-heat",
+        "P:source-gaussian-transfer"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF095",
+        "PROOF096"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF099",
+      "label": "L:source-pointfield-regularity",
+      "raw_proof_sha256": "6fc8d2f7d2825236526dc681c9d11b32a5b476efd664e80a7b917bb82ef8603a",
+      "explicit_references": [
+        "E:source-derivative-increments",
+        "E:source-joint-covariance",
+        "E:source-point-feature"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF100",
+      "label": "P:source-ordinary-response",
+      "raw_proof_sha256": "c0a00155a525d66ca310542404f4404be0a4b6fec17e74a62b5e7795deaabaf5",
+      "explicit_references": [
+        "E:source-driver-limit",
+        "L:driver-gain-localization"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF087"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF101",
+      "label": "L:masked-chain-comparison",
+      "raw_proof_sha256": "a10aac3a98552b578486686a32f48d233fdc3385face0417c4d35a35012cabda",
+      "explicit_references": [
+        "E:masked-chain-mass",
+        "E:masked-order-bound",
+        "E:masked-order-comparison",
+        "L:joint-fixed-order",
+        "L:source-pointfield-regularity",
+        "L:vertex-crude"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF006",
+        "PROOF008",
+        "PROOF099"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF102",
+      "label": "P:masked-source-moments",
+      "raw_proof_sha256": "837265877953ac87eb204ab42b0fb8514c0f08762971817251e48d99f9d08527",
+      "explicit_references": [
+        "E:masked-average-source",
+        "E:masked-chain-mass",
+        "E:masked-two-point",
+        "E:vertex-summability",
+        "L:masked-chain-comparison"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF101"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF103",
+      "label": "P:masked-canonical-transfer",
+      "raw_proof_sha256": "6edef258572d67695e834ab2608ace46f5b5095aba02f6e8980cc7b8fd23bfe1",
+      "explicit_references": [
+        "E:masked-average-source",
+        "E:masked-unmasked-moment-limit",
+        "L:joint-fixed-order",
+        "P:mixed"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF002",
+        "PROOF006"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF104",
+      "label": "L:constant-phase-free",
+      "raw_proof_sha256": "e965c2aa01bef8161c7fb203eef6ebe5982b3789a9da7bc6c9837f1deaf8a366",
+      "explicit_references": [
+        "E:constant-phase-cutoff",
+        "E:constant-phase-free",
+        "L:driver-gain-localization"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF087"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF105",
+      "label": "P:constant-phase-driver",
+      "raw_proof_sha256": "20cc283754a1c04048ab281f8dd423f216175a5714c8e5bf003b614372cdc42c",
+      "explicit_references": [
+        "E:constant-phase-driver",
+        "E:constant-phase-localization",
+        "E:source-driver-limit",
+        "L:driver-gain-localization",
+        "P:source-gaussian-transfer"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF087",
+        "PROOF095"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF106",
+      "label": "L:constant-source-response",
+      "raw_proof_sha256": "a93e96adeafde35168040e03262221206edf37c6cd3ca5dc64b01a6b20543da3",
+      "explicit_references": [
+        "E:constant-source-response",
+        "L:constant-phase-free",
+        "P:source-ordinary-response"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF100",
+        "PROOF104"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF107",
+      "label": "P:constant-young-linear",
+      "raw_proof_sha256": "9ac705655ad102e3d136dbaf9becddd711229135dc15b0858d035554df05f6c9",
+      "explicit_references": [
+        "E:constant-young-difference",
+        "E:constant-young-estimate",
+        "E:constant-young-growth",
+        "E:constant-young-local"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF108",
+      "label": "P:constant-gaussian-flow",
+      "raw_proof_sha256": "a741504faf92597f256a631c5d94ca6b970655ec07185f140b8b887e72ee39e0",
+      "explicit_references": [
+        "E:constant-flow-limit",
+        "E:constant-flow-range",
+        "E:constant-phase-driver",
+        "E:constant-physical-flow",
+        "E:constant-young-growth"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF109",
+      "label": "L:constant-source-solution",
+      "raw_proof_sha256": "0be6ab302595346fe6a6331b5ae6021bc2b39d9e265e7963a975a51e5f5e5de7",
+      "explicit_references": [
+        "E:constant-source-response"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF110",
+      "label": "P:constant-raw-average",
+      "raw_proof_sha256": "c7a80c355541a8a732a8156d2db8a5f4f732a021ea1da7e4f9685059dce87878",
+      "explicit_references": [
+        "E:constant-original-point-transfer",
+        "E:constant-raw-average",
+        "E:constant-tested-limit",
+        "L:constant-source-solution",
+        "P:constant-gaussian-flow",
+        "P:masked-canonical-transfer",
+        "P:masked-source-moments"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF102",
+        "PROOF103",
+        "PROOF108",
+        "PROOF109"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF111",
+      "label": "P:constant-compact-base",
+      "raw_proof_sha256": "7d0c80df33fd2546ad8e21912538f40fb95df4128adf749a734f6591b002794d",
+      "explicit_references": [
+        "E:constant-original-point-transfer",
+        "L:constant-source-response"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF106"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF112",
+      "label": "P:compact-ground-family",
+      "raw_proof_sha256": "c9d76dc1e92a789b64daeec1ae0c0950921e74d63b9050d3a281ac7009dd830a",
+      "explicit_references": [
+        "E:compact-common-trial",
+        "E:compact-level-continuity"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF113",
+      "label": "L:compact-fractional-phase",
+      "raw_proof_sha256": "faedc07d39df2dd31af3b1c012f9e6facf9d1cae10ff246e2912e039a5f983f1",
+      "explicit_references": [
+        "E:compact-quarter-power"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF114",
+      "label": "P:compact-E-wave",
+      "raw_proof_sha256": "b2e8c549b62f02728158c16b78f6ebba5e4cd13c6eeb30005ca983b51cbb8655",
+      "explicit_references": [
+        "E:compact-E-eigen",
+        "E:compact-spectral-phase-norm",
+        "P:compact-ground-family"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF112"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF115",
+      "label": "P:compact-F-projection",
+      "raw_proof_sha256": "9aca6d66237e93496e3a80a11e2204393d74be7e6c9b3c98dcd0dabc6f43a2e0",
+      "explicit_references": [
+        "E:compact-F-block",
+        "E:compact-F-eigen",
+        "E:compact-positive-margins"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF116",
+      "label": "P:compact-F-complement",
+      "raw_proof_sha256": "4d839304d403b977f7af7c3d2fc5a3755bc0b3eba720d75f4a5df9a13b1de8d0",
+      "explicit_references": [
+        "E:compact-F-block",
+        "E:compact-F-complement",
+        "E:compact-complement-forcing",
+        "E:compact-normalized-complement",
+        "E:compact-parameter-flow"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF117",
+      "label": "L:compact-raw-profile",
+      "raw_proof_sha256": "fcc395079623be3632d1f086ad8585cfa612b35d92f65e24c0a950affeafd4f7",
+      "explicit_references": [
+        "E:compact-positive-mean-floor",
+        "E:compact-raw-cost"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF118",
+      "label": "P:compact-original-common-trial",
+      "raw_proof_sha256": "ae78d77217d7bb284ae00383c42d73ee36ad570b74d6bf7b5777526ee17918a3",
+      "explicit_references": [
+        "E:compact-positive-mean-floor",
+        "E:compact-raw-cost",
+        "P:compact-ground-family"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF112"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF119",
+      "label": "L:exact-canonical-scaling",
+      "raw_proof_sha256": "f00aa82ca3f390ded7c6cddcdefb634a953b97d07c9ddd8f489a06ad9508d72f",
+      "explicit_references": [
+        "E:exact-fast-equation",
+        "E:exact-moment-scaling",
+        "L:joint-fixed-order",
+        "L:vertex-crude"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF006",
+        "PROOF008"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF120",
+      "label": "L:raw-block-inputs",
+      "raw_proof_sha256": "31751de8fe0b6ed931bdd3114acdaa3f42696a03c70e9ff2d24d90a3db988da6",
+      "explicit_references": [
+        "E:driver-covariance-row",
+        "E:raw-block-covariance",
+        "E:raw-block-moments"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF121",
+      "label": "P:raw-block-gaussian-law",
+      "raw_proof_sha256": "540077204f83d1b2aef0808c0301f8a19be4a16a17fc6d18794ec58604daff93",
+      "explicit_references": [
+        "E:raw-block-covariance"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF122",
+      "label": "L:raw-block-uniform-error",
+      "raw_proof_sha256": "d8b8294bcbfa624f0b69d125548a0516d06fcd5881b374d1e53a3e125480c745",
+      "explicit_references": [
+        "E:raw-block-maximum-exponential",
+        "E:raw-block-moments",
+        "E:raw-block-operator-error"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF123",
+      "label": "L:raw-block-indexed-cone",
+      "raw_proof_sha256": "4ffb03df0c316a74b4d7c370ac821bd46ba1f16ba05fea7cd690904e8a7e10ca",
+      "explicit_references": [
+        "E:compact-normalized-complement",
+        "E:raw-block-positive-product"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF124",
+      "label": "L:raw-block-restart",
+      "raw_proof_sha256": "954c69db99ab3295fd7699f56f912a9ca5be4139b265a8adbab5ee4c6174d9b3",
+      "explicit_references": [
+        "E:raw-block-mean-jacobian",
+        "E:raw-block-restart",
+        "E:source-two-dominations",
+        "P:source-gaussian-transfer",
+        "S:source-driver-convergence"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF095"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF125",
+      "label": "P:raw-block-point-comparison",
+      "raw_proof_sha256": "5404da2714106af6cf167503916a3534505dc1f977cf1fa6105936c4b46e4e9f",
+      "explicit_references": [
+        "E:constant-original-point-transfer",
+        "E:exact-fast-equation",
+        "E:raw-block-original-comparison",
+        "E:raw-block-square-identity",
+        "L:exact-canonical-scaling",
+        "L:raw-block-restart",
+        "P:masked-canonical-transfer",
+        "P:raw-block-gaussian-law"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF103",
+        "PROOF119",
+        "PROOF121",
+        "PROOF124"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF126",
+      "label": "P:raw-block-original-lower",
+      "raw_proof_sha256": "1818e2bf0fbf320741a20f9744e1e87fe289014d307117898893692985d1c78f",
+      "explicit_references": [
+        "E:raw-block-original-comparison",
+        "E:raw-block-original-lower",
+        "E:raw-block-square-identity",
+        "L:raw-block-indexed-cone",
+        "L:raw-block-uniform-error"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF122",
+        "PROOF123"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF127",
+      "label": "L:variational-heat-envelope",
+      "raw_proof_sha256": "56183239395edd120f2ba77db72113f2fb99f91bfee452723885a26c50c3e3d8",
+      "explicit_references": [
+        "E:variational-heat-envelope",
+        "H:homog"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF128",
+      "label": "L:variational-global-mean",
+      "raw_proof_sha256": "6a9d3ba44742b8c0f04a8f8bc66edc66ff1598906bddc63f7a88fa25dc98d766",
+      "explicit_references": [
+        "L:variational-heat-envelope"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF127"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF129",
+      "label": "P:variational-unmasked-rate",
+      "raw_proof_sha256": "02325d1ae079e5ebbde7beba22933c51a51048e2bf13b997aec5a924e82649a3",
+      "explicit_references": [
+        "E:variational-real-rayleigh",
+        "P:compact-original-common-trial"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF118"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF130",
+      "label": "P:variational-remove-mask",
+      "raw_proof_sha256": "5b506f4ea434a107b5048a46c4e91f9cfb8c59bf42e47cfc0b5fcba1ea12df54",
+      "explicit_references": [
+        "E:variational-real-rayleigh",
+        "E:variational-unmasked-point-lower",
+        "P:raw-block-original-lower"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF126"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF131",
+      "label": "L:variational-control-dilation",
+      "raw_proof_sha256": "45b0759c0fe2229827f7c582e81f04ed0352241cdf8e6c9252b2f8ab020aa956",
+      "explicit_references": [
+        "E:variational-dilation-values"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF132",
+      "label": "P:variational-positive-scores",
+      "raw_proof_sha256": "5f303b0e65f09010fa7d7ea4aa1da26a3be4eba3d345e3a4c793ee87daa74424",
+      "explicit_references": [
+        "E:variational-score-homogeneity",
+        "E:variational-score-set-scaling",
+        "E:variational-unmasked-point-lower",
+        "L:compact-raw-profile",
+        "L:variational-control-dilation",
+        "T:full-upper"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF051",
+        "PROOF117",
+        "PROOF131"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF133",
+      "label": "L:equilibrium-gamma-beta",
+      "raw_proof_sha256": "a0ad6f7894448ea3aa9d9f199a15aa67171a5ad19cc641048d3e363a1dec1428",
+      "explicit_references": [],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF134",
+      "label": "L:temporal-equilibrium",
+      "raw_proof_sha256": "d5cfcab3cd81d61ce548aba947f3f098831b1393be93f91b024e10ebc5ed88e0",
+      "explicit_references": [
+        "E:temporal-equilibrium-mass",
+        "E:temporal-equilibrium-potential"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF135",
+      "label": "L:spatial-physical-pair",
+      "raw_proof_sha256": "a1dbbb63074b1ab189e07dc2d7389c7e298319a8317de67ecc39c0ca5b894bc4",
+      "explicit_references": [],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF136",
+      "label": "L:spatial-static-controls",
+      "raw_proof_sha256": "3a0a251a7d92f28374f93dfd06615e87657f27eef29ced5f9390fe6c63e4d00e",
+      "explicit_references": [
+        "E:temporal-equilibrium-potential",
+        "P:variational-remove-mask",
+        "P:variational-unmasked-rate"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF129",
+        "PROOF130"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF137",
+      "label": "P:spatial-smooth-ratio",
+      "raw_proof_sha256": "e3e3ca568e383433912f368dc289d9f69185a279411bc7caccdbbef93e12b868",
+      "explicit_references": [
+        "E:spatial-smooth-score",
+        "L:spatial-static-controls"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF136"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF138",
+      "label": "P:spatial-four-linear",
+      "raw_proof_sha256": "6901956cd66c2695e339af77168a989766a0cb82f780096a713e22c3da787b8f",
+      "explicit_references": [
+        "E:spatial-four-linear",
+        "E:spatial-homogeneous-bound",
+        "E:spatial-square-CS",
+        "L:spatial-physical-pair"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF135"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF139",
+      "label": "P:spatial-energy-map",
+      "raw_proof_sha256": "02387306cd7ed13fd82780a3367d9fbadc63ef34a16eeea83bb39d97faebfe00",
+      "explicit_references": [
+        "E:spatial-dilation",
+        "E:spatial-energy-map",
+        "E:spatial-smooth-score",
+        "E:spatial-static-energy-score",
+        "P:spatial-four-linear"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF138"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF140",
+      "label": "L:occupation-kernel-row",
+      "raw_proof_sha256": "3b34518f15bee53c313ee58bb4c62908a0faadd370c513e106e7942c7a93ac94",
+      "explicit_references": [],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF141",
+      "label": "P:occupation-physical-class",
+      "raw_proof_sha256": "e78e5dfdec9bc93f3c51b2be8e898c14073b768c345db221e5b5d076123f47b9",
+      "explicit_references": [
+        "E:occupation-kernel-row",
+        "E:occupation-physical-bound",
+        "E:spatial-energy-map",
+        "E:spatial-homogeneous-bound",
+        "E:spatial-square-CS",
+        "L:spatial-physical-pair",
+        "P:spatial-four-linear"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF135",
+        "PROOF138"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF142",
+      "label": "L:cameron-fractional-products",
+      "raw_proof_sha256": "7dd9102ba0d0724502a0a9964e67acab31fb189f28d913ed2d0a963f33d7624e",
+      "explicit_references": [
+        "E:cameron-fractional-absolute",
+        "E:cameron-fractional-product",
+        "E:spatial-four-linear",
+        "L:spatial-physical-pair"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF135"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF143",
+      "label": "P:cameron-spatial-map",
+      "raw_proof_sha256": "b1e56a22be5c39753c0ad57742129174f8608b0e38454507f19755bfb7def5c7",
+      "explicit_references": [
+        "E:cameron-spatial-row",
+        "L:cameron-fractional-products",
+        "P:cutoff-singular-values"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF079",
+        "PROOF142"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF144",
+      "label": "L:cameron-supported-tensor",
+      "raw_proof_sha256": "871b4f55065436c16f461d9150c54d3ae968aebd83b46e239f8a33afd9fd0d5c",
+      "explicit_references": [],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF145",
+      "label": "P:cameron-temporal-map",
+      "raw_proof_sha256": "2f78c3bf09c638a80adffbb28e757b28227ba401139a14b74ae467caff076f64",
+      "explicit_references": [
+        "E:cameron-temporal-map"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF146",
+      "label": "P:cameron-full-mean",
+      "raw_proof_sha256": "79eacc2a67931a2f933695ff5137285be540bd6ac68348d707f8895058fa17e4",
+      "explicit_references": [
+        "E:cameron-compact-tail",
+        "E:cameron-full-mean",
+        "E:cameron-spatial-row"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF147",
+      "label": "L:cameron-actual-residual",
+      "raw_proof_sha256": "15a7a126aa5b451571171d8496d11b58282872b2bdb7ddd616f25d025c4c7734",
+      "explicit_references": [
+        "E:cameron-block-parameters",
+        "L:raw-block-inputs",
+        "P:source-gaussian-transfer"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF095",
+        "PROOF120"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF148",
+      "label": "P:cameron-actual-embedding",
+      "raw_proof_sha256": "c146407b58b104edbb700a3efa9cb81b82adeeacea4f49815aae801e187146ac",
+      "explicit_references": [
+        "E:cameron-actual-covariance",
+        "E:cameron-spatial-row",
+        "E:raw-block-mean-jacobian",
+        "L:cameron-actual-residual"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF147"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF149",
+      "label": "L:young-upper-growth",
+      "raw_proof_sha256": "34b31493d1802b8e9ba925e0c9c336a1810b282b81f80837e20f46655206b1a6",
+      "explicit_references": [
+        "E:constant-young-local",
+        "E:young-upper-refined-growth"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF150",
+      "label": "P:young-upper-multiplicative",
+      "raw_proof_sha256": "131c5d9c414c9dec026516bb697aedbc984750acd1d0ec5c5005d77956eab3ca",
+      "explicit_references": [
+        "E:young-upper-refined-growth",
+        "L:young-upper-growth"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF149"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF151",
+      "label": "L:uniform-mean-cutoff",
+      "raw_proof_sha256": "8807ff2a4ce225763ba84fae1a18992682014610ebba4b9012020e386161a037",
+      "explicit_references": [
+        "E:uniform-mean-row",
+        "L:cameron-fractional-products"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF142"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF152",
+      "label": "L:uniform-mean-spatial-tails",
+      "raw_proof_sha256": "e3170d0054396d9c49032853edb38f9476b75a90dbbcc19271d632595217477f",
+      "explicit_references": [
+        "E:uniform-mean-frequency",
+        "E:uniform-mean-heat",
+        "E:uniform-mean-row",
+        "E:uniform-mean-row-translation",
+        "L:uniform-mean-cutoff"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF151"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF153",
+      "label": "L:uniform-mean-tensor",
+      "raw_proof_sha256": "be4f87f63ac519e52aa80dd22be22f16dfda147776d8e0301317b1df392fb234",
+      "explicit_references": [],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF154",
+      "label": "P:uniform-mean-regulator",
+      "raw_proof_sha256": "62f241aec28fb21bd21286246084aeb483a2a6c4fd08e576a461dee14dd778f3",
+      "explicit_references": [
+        "E:uniform-completed-mean",
+        "E:uniform-mean-frequency",
+        "L:uniform-mean-tensor"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF153"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF155",
+      "label": "P:uniform-actual-cameron",
+      "raw_proof_sha256": "fcb7bb63a9ccc5f8fb5e4a733684ab8fc716f83cc02c95ca431e195930139ba4",
+      "explicit_references": [
+        "E:cameron-actual-covariance",
+        "E:uniform-actual-covariance",
+        "L:cameron-actual-residual",
+        "P:cameron-actual-embedding",
+        "P:source-gaussian-transfer"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF095",
+        "PROOF147",
+        "PROOF148"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF156",
+      "label": "L:radius-outer-maps",
+      "raw_proof_sha256": "25adf35c3e9553a2cda4ecb62db6e2e86a1f852cec7b526c825f7de69875e029",
+      "explicit_references": [
+        "E:cutoff-lattice-sum",
+        "E:cutoff-peetre",
+        "L:cutoff-factorization"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF078"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF157",
+      "label": "P:radius-compact-envelopes",
+      "raw_proof_sha256": "2d08330b66ae215079c1107e96e5cf948b1d89b3322c43f7be4f4e7b39fd3faf",
+      "explicit_references": [
+        "E:radius-anchor-parameters",
+        "E:radius-cutoff-Schatten",
+        "E:radius-lattice-volume",
+        "P:compact-two-envelopes",
+        "P:cutoff-singular-values"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF079",
+        "PROOF080"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF158",
+      "label": "P:radius-actual-moments",
+      "raw_proof_sha256": "552062ea0680b5718c88092baf008c07bcf9b9d674f89d65ba38a47da54f956e",
+      "explicit_references": [
+        "C:finite-gaussian-operators",
+        "E:driver-actual-localization",
+        "E:radius-actual-path-moments",
+        "E:radius-two-envelopes",
+        "L:driver-actual-variances",
+        "L:driver-holder-limit",
+        "L:driver-noise-basis",
+        "P:wave-two-variances"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF073",
+        "PROOF083",
+        "PROOF085",
+        "PROOF088",
+        "PROOF092"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF159",
+      "label": "C:radius-covariance-residuals",
+      "raw_proof_sha256": "76194cfcd3f5e5643530550d088c53b71089c696b0f2d04b6ffa676be7448b37",
+      "explicit_references": [
+        "E:raw-block-pullback",
+        "L:raw-block-inputs",
+        "P:radius-actual-moments",
+        "P:source-gaussian-transfer"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF095",
+        "PROOF120",
+        "PROOF158"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF160",
+      "label": "P:radius-mean-anchor",
+      "raw_proof_sha256": "74d69a88a03f12e4987d322e010f1b2ea1fd9df587ac2de0e62c869047c9d52b",
+      "explicit_references": [
+        "E:radius-anchor-Q",
+        "E:radius-mean-anchor",
+        "E:radius-mean-anchor-decay"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF161",
+      "label": "L:signed-limiting-multiplier",
+      "raw_proof_sha256": "bbca532051b17d1a7c76fd625c112790643a8a61f9ae1805146642e7ac82dd18",
+      "explicit_references": [
+        "L:cutoff-factorization"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF078"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF162",
+      "label": "P:signed-closed-form",
+      "raw_proof_sha256": "0f335d735be2037751d610e9227aeac25ad0b5895cb4fec68e4de67c8ef627bd",
+      "explicit_references": [
+        "E:signed-form-domain",
+        "E:signed-multiplier-form",
+        "E:signed-quarter-phase",
+        "L:signed-spectral-wave"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF163"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF163",
+      "label": "L:signed-spectral-wave",
+      "raw_proof_sha256": "74d8581fca02d7b5ee8b0351cf9d604557a8caed56623e961852439f64dcfd56",
+      "explicit_references": [
+        "E:signed-E-wave"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF164",
+      "label": "P:signed-physical-wave",
+      "raw_proof_sha256": "c7c64e2063ba3e69b48cd99d8d0a937b1b4dd22f1c454f7e3e494bbc2bae3f30",
+      "explicit_references": [
+        "E:compact-F-block",
+        "E:signed-form-bounds",
+        "P:cameron-actual-embedding"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF148"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF165",
+      "label": "L:symplectic-free",
+      "raw_proof_sha256": "4513a29214abcb804ed05ac27080b21c68085957fb9da977ee431cd12f146671",
+      "explicit_references": [],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF166",
+      "label": "L:symplectic-source-mean",
+      "raw_proof_sha256": "178a925edc85635a99612b643c9e0c30a55a4af7ed8c5f64463ca571d7a4174b",
+      "explicit_references": [
+        "E:symplectic-mean-convergence",
+        "E:symplectic-source-primitive"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF167",
+      "label": "P:symplectic-source",
+      "raw_proof_sha256": "d131cfe621fe0624f26e1f5e37b1560873f006dc7449d3d7ea42d2f9dadc5303",
+      "explicit_references": [
+        "L:symplectic-free"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF165"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF168",
+      "label": "P:symplectic-raw",
+      "raw_proof_sha256": "77241c1f5eb5a1a1a9bc8268e9914b66d9233578e86e407a8b376f360ad745db",
+      "explicit_references": [
+        "E:symplectic-mean-convergence",
+        "P:constant-gaussian-flow"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF108"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF169",
+      "label": "P:symplectic-block-mean",
+      "raw_proof_sha256": "2cf19076ce91630dbc951925032575b4c1174942b3934ef3a1933b9de4b9b3b1",
+      "explicit_references": [
+        "E:cameron-actual-covariance",
+        "E:cameron-block-parameters",
+        "E:raw-block-pullback",
+        "E:symplectic-block-direction",
+        "E:symplectic-block-primitive",
+        "E:symplectic-unscaled-covariance",
+        "P:constant-phase-driver",
+        "P:symplectic-raw"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF105",
+        "PROOF168"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF170",
+      "label": "P:tube-wiener-realization",
+      "raw_proof_sha256": "7050dfc99d5892c8f7c452fe238998407cc092a5f14404fa301ba6a78fe0113e",
+      "explicit_references": [
+        "E:tube-cameron-space",
+        "E:tube-finite-regression"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF171",
+      "label": "L:tube-closed-geometry",
+      "raw_proof_sha256": "cf86d9b5eac0d1b8c2c6c7a43c9658fbe703a8558c228ddb1dfeeef2cc5553b7",
+      "explicit_references": [
+        "E:tube-attained-radius",
+        "E:tube-cameron-space",
+        "P:tube-wiener-realization"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF170"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF172",
+      "label": "P:tube-rayleigh-transfer",
+      "raw_proof_sha256": "293fa2b6238485131c42f8c9ba38cebe3ff7254f47378c1d896531ed069c2995",
+      "explicit_references": [
+        "E:tube-attained-radius",
+        "E:tube-rayleigh-transfer"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF173",
+      "label": "P:tube-actual-law",
+      "raw_proof_sha256": "bdbe54f96124ec14e8a2b313153289bbb6451b70401ebe387689398bd1ecc7be",
+      "explicit_references": [
+        "C:radius-covariance-residuals",
+        "E:cameron-actual-covariance",
+        "E:tube-actual-covariance",
+        "E:tube-actual-mean",
+        "E:tube-typical-radius",
+        "L:cameron-actual-residual",
+        "L:cameron-supported-tensor",
+        "P:cameron-full-mean",
+        "P:radius-mean-anchor",
+        "P:symplectic-block-mean",
+        "P:tube-wiener-realization",
+        "P:uniform-mean-regulator"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF144",
+        "PROOF146",
+        "PROOF147",
+        "PROOF154",
+        "PROOF159",
+        "PROOF160",
+        "PROOF169",
+        "PROOF170"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF174",
+      "label": "L:tube-actual-endpoint",
+      "raw_proof_sha256": "667115a04ac09d63cf1e2e4c1e1d70c01d388a402837584e4caaa9cc0ab2adf4",
+      "explicit_references": [
+        "E:tube-global-endpoint",
+        "L:raw-block-restart",
+        "P:symplectic-raw"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF124",
+        "PROOF168"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF175",
+      "label": "P:tube-coarse-envelope",
+      "raw_proof_sha256": "db24650a2154b6f595fc632ec492b53258151e327174813314305a1679804ed9",
+      "explicit_references": [
+        "E:constant-young-growth",
+        "E:tube-global-endpoint",
+        "E:tube-primitive-sum",
+        "E:young-upper-refined-growth",
+        "P:tube-rayleigh-transfer",
+        "P:uniform-actual-cameron"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF155",
+        "PROOF172"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF176",
+      "label": "L:tube-rayleigh-tail",
+      "raw_proof_sha256": "468888c964888f15353d52ab82353620d213302e7db27591cb3abd6181636ae9",
+      "explicit_references": [
+        "E:tube-rayleigh-tail"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF177",
+      "label": "L:tube-half-action",
+      "raw_proof_sha256": "9726f634170dc0e165f65bbc4e29b758c2e136d26c5e497f164d3a7a0c07db0f",
+      "explicit_references": [],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF178",
+      "label": "L:uniform-E-lift",
+      "raw_proof_sha256": "64d985de1df1fbccde6d023388344d85dd512baf84931c173b873e6d27d8f76d",
+      "explicit_references": [
+        "E:uniform-E-pairing"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF179",
+      "label": "P:uniform-E-spectral",
+      "raw_proof_sha256": "c37bbdf536dfffc43ca92217bb13cf3f93ab44044cdd69db46ef12f3b9b92b58",
+      "explicit_references": [
+        "E:uniform-E-pairing",
+        "E:uniform-E-rate-continuity",
+        "E:uniform-E-static-bound",
+        "L:uniform-E-lift",
+        "P:constant-young-linear",
+        "P:signed-physical-wave"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF107",
+        "PROOF164",
+        "PROOF178"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF180",
+      "label": "P:uniform-rate-averaging",
+      "raw_proof_sha256": "c0375e60eacff5efbfed0943ce2455e6d6ec17cb8cc9432bb229661083c6d555",
+      "explicit_references": [
+        "E:uniform-E-rate-continuity",
+        "E:uniform-field-averaging",
+        "E:uniform-rate-averaging",
+        "L:uniform-mean-tensor"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF153"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF181",
+      "label": "L:uniform-product-budgets",
+      "raw_proof_sha256": "14757e7fda5606160d6a7ad735b98f4440e44e1bdd02b35c60b875a81ad6adb9",
+      "explicit_references": [
+        "E:uniform-product-growth",
+        "E:uniform-product-primitive",
+        "L:symplectic-free",
+        "L:young-upper-growth",
+        "P:symplectic-block-mean"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF149",
+        "PROOF165",
+        "PROOF169"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF182",
+      "label": "P:uniform-mean-product",
+      "raw_proof_sha256": "b1b28eaa1508d83e4ef5bb5a6e282973d7d0faf71663b4eb2d083a6b8a2a7d68",
+      "explicit_references": [
+        "E:uniform-mean-product",
+        "E:uniform-product-growth",
+        "E:uniform-product-primitive",
+        "P:uniform-E-spectral",
+        "P:young-upper-multiplicative"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF150",
+        "PROOF179"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF183",
+      "label": "C:uniform-polynomial-balls",
+      "raw_proof_sha256": "de0c64fbc654c68171ef6bf908d0e9bf65e33b846e95219aac101b4e027b2bb2",
+      "explicit_references": [
+        "E:uniform-mean-product",
+        "P:uniform-rate-averaging"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF180"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF184",
+      "label": "P:uniform-arbitrary-residual",
+      "raw_proof_sha256": "39552ab30e4af00acb48a252a4dc9ac4cd3c138ffbf4dc1f2bc86fd5a753e464",
+      "explicit_references": [
+        "C:uniform-polynomial-balls",
+        "E:uniform-product-growth",
+        "E:uniform-residual-integrated-rate",
+        "E:uniform-residual-ratio",
+        "P:young-upper-multiplicative"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF150",
+        "PROOF183"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF185",
+      "label": "L:point-actual-finiteness",
+      "raw_proof_sha256": "8674df0bc9608eb2bc648c798e1f90dd37c195cba41998f7666cff8d35de2e95",
+      "explicit_references": [
+        "E:point-fixed-finiteness",
+        "E:tube-global-endpoint",
+        "L:tube-rayleigh-tail",
+        "P:constant-phase-driver",
+        "P:symplectic-raw",
+        "P:tube-actual-law",
+        "P:tube-coarse-envelope"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF105",
+        "PROOF168",
+        "PROOF173",
+        "PROOF175",
+        "PROOF176"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF186",
+      "label": "L:point-fast-sources",
+      "raw_proof_sha256": "411624f3a0afbb30edbb9d50b267512b3bed85c3620d6d88a14ca9ce0d8ff423",
+      "explicit_references": [
+        "E:point-source-flow-limit",
+        "L:constant-source-solution",
+        "P:actual-operator-driver",
+        "P:constant-gaussian-flow",
+        "P:masked-canonical-transfer",
+        "P:source-gaussian-transfer",
+        "P:source-ordinary-response",
+        "P:symplectic-source"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF093",
+        "PROOF095",
+        "PROOF100",
+        "PROOF103",
+        "PROOF108",
+        "PROOF109",
+        "PROOF167"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF187",
+      "label": "L:point-compact-source",
+      "raw_proof_sha256": "baeb859c668396d21eb0cc71f85fa4feda6d983bf5ebc517382caa802cf1750e",
+      "explicit_references": [],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF188",
+      "label": "P:point-source-cone",
+      "raw_proof_sha256": "45079d14f30f7ed4e5da635e91088c1bb0eee85255f2e9e09dcc5a1205f1af6b",
+      "explicit_references": [
+        "E:point-source-square-average",
+        "L:constant-phase-free",
+        "L:point-fast-sources",
+        "P:masked-source-moments"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF102",
+        "PROOF104",
+        "PROOF186"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF189",
+      "label": "P:original-point-transfer",
+      "raw_proof_sha256": "ae457ae3b6b342a37ecd8f1884bfcb4df3ba1aa1d7eb72b31d742a7e6fee07e0",
+      "explicit_references": [
+        "E:exact-fast-equation",
+        "E:masked-unmasked-moment-limit",
+        "E:original-point-rate-reduction",
+        "E:original-point-transfer",
+        "E:point-fixed-finiteness",
+        "E:point-source-flow-limit",
+        "E:point-source-square-average",
+        "L:exact-canonical-scaling",
+        "L:symplectic-free",
+        "P:raw-block-original-lower",
+        "P:raw-block-point-comparison"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF119",
+        "PROOF125",
+        "PROOF126",
+        "PROOF165"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF190",
+      "label": "L:signed-score-envelope",
+      "raw_proof_sha256": "8feb640940182d0595bf33db2df4291a5dd6aca4e5cdc3faa0a8f002da0421fe",
+      "explicit_references": [
+        "E:signed-polynomial-envelope",
+        "E:uniform-product-growth",
+        "P:uniform-rate-averaging"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF180"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF191",
+      "label": "P:signed-moment-bulk-tail",
+      "raw_proof_sha256": "c1dcd54834e4514bb632a88bb53a50db9385ad975f97c3e286d8de262f8b9f3c",
+      "explicit_references": [
+        "E:signed-error-limit",
+        "E:signed-finite-moment",
+        "L:tube-rayleigh-tail",
+        "P:uniform-arbitrary-residual"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF176",
+        "PROOF184"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF192",
+      "label": "P:signed-operator-upper",
+      "raw_proof_sha256": "10487d106ebf518bb18a572b93247b402a245a0586dd3fc8346dda3fa5893f91",
+      "explicit_references": [
+        "E:signed-finite-moment",
+        "P:signed-moment-bulk-tail"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF191"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF193",
+      "label": "P:original-signed-point-upper",
+      "raw_proof_sha256": "fc76ecdd1c6901ae5725944a1807cfbb73a33dcf281f2178eece6d20487b48f9",
+      "explicit_references": [
+        "P:original-point-transfer",
+        "P:raw-block-original-lower",
+        "P:signed-operator-upper"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF126",
+        "PROOF189",
+        "PROOF192"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF194",
+      "label": "L:gram-scalar-algebra",
+      "raw_proof_sha256": "d2cfa006c08888b4cf3345d25199a40146783eb018e69d63e11e0f60909ef968",
+      "explicit_references": [
+        "E:gram-hilbert-square"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF195",
+      "label": "L:gram-dual-minimum",
+      "raw_proof_sha256": "ec891cd403db49a1013932f00d358535c4c29db5610a955220dffaa0ed414f35",
+      "explicit_references": [
+        "E:gram-dual-coercivity",
+        "E:gram-dual-stationarity"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF196",
+      "label": "P:gram-positive-optimizer",
+      "raw_proof_sha256": "124b6bd4bd87fb65e9882d6427ee9ed10e6dbc6eb70a9ce14ba56da2da29738f",
+      "explicit_references": [
+        "E:gram-active-duality",
+        "E:gram-dual-stationarity",
+        "L:gram-dual-minimum",
+        "L:gram-scalar-algebra"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF194",
+        "PROOF195"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF197",
+      "label": "L:gram-realization",
+      "raw_proof_sha256": "98ae7331bf42a8a1ef859cc686454d90f596cc55c60c9a7b2182062507f21e68",
+      "explicit_references": [
+        "E:gram-active-duality"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF198",
+      "label": "P:gram-entrywise-comparison",
+      "raw_proof_sha256": "5d8227118efb217258ce4df7f14e27fa4df13754d87b31c57c20c90d8b1b0afc",
+      "explicit_references": [
+        "L:gram-realization",
+        "P:gram-positive-optimizer"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF196",
+        "PROOF197"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF199",
+      "label": "L:positive-raw-embedding",
+      "raw_proof_sha256": "ccaea7fe9e89f4598385f7d85e8723d71f4567c4e4d0ac259a75a28e48246e64",
+      "explicit_references": [
+        "E:positive-bochner-inclusion",
+        "E:positive-local-spatial-bound",
+        "E:positive-raw-mean",
+        "E:uniform-mean-row",
+        "L:cameron-supported-tensor",
+        "L:uniform-mean-tensor"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF144",
+        "PROOF153"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF200",
+      "label": "L:positive-physical-gram",
+      "raw_proof_sha256": "2ed1208461a00a0969f526d03874cabaacd789004fd16ed1a65ea1180c692190",
+      "explicit_references": [
+        "E:positive-label-row",
+        "E:positive-local-spatial-bound",
+        "E:uniform-completed-mean",
+        "E:uniform-mean-row",
+        "L:positive-raw-embedding",
+        "L:uniform-E-lift",
+        "P:gram-entrywise-comparison"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF178",
+        "PROOF198",
+        "PROOF199"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF201",
+      "label": "L:positive-uniform-optimizer",
+      "raw_proof_sha256": "bac1d8cec1bb1a8dcb7ddc52822812827337aed40bb8d218674aa18171b3d8c0",
+      "explicit_references": [
+        "E:positive-bochner-inclusion",
+        "P:gram-positive-optimizer",
+        "P:uniform-rate-averaging"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF180",
+        "PROOF196"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF202",
+      "label": "P:positive-signed-comparison",
+      "raw_proof_sha256": "c8c492467cbb53f52e3f509803a5e5a3bd9f623f66f2069ba825aab5360114df",
+      "explicit_references": [
+        "E:positive-finite-optimizer-bound",
+        "E:positive-signed-comparison",
+        "L:positive-physical-gram",
+        "L:positive-raw-embedding",
+        "L:positive-uniform-optimizer",
+        "P:uniform-E-spectral",
+        "P:uniform-rate-averaging",
+        "P:variational-positive-scores"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF132",
+        "PROOF179",
+        "PROOF180",
+        "PROOF199",
+        "PROOF200",
+        "PROOF201"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF203",
+      "label": "P:positive-score-cutoff",
+      "raw_proof_sha256": "5ad2a3c26f6879b54deed1f15d865f289427a46bb7e78b174912b57a12e5ec57",
+      "explicit_references": [
+        "E:variational-real-rayleigh",
+        "L:positive-raw-embedding",
+        "P:positive-signed-comparison"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF199",
+        "PROOF202"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF204",
+      "label": "T:intrinsic-second-moment",
+      "raw_proof_sha256": "11d24ede3638e2ae97ec5c65b82d16a47efcf73570bfcb7a930c28686ec7cff5",
+      "explicit_references": [
+        "E:intrinsic-positive-formula",
+        "E:variational-real-rayleigh",
+        "P:original-signed-point-upper",
+        "P:positive-score-cutoff",
+        "P:raw-block-original-lower",
+        "P:variational-positive-scores"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF126",
+        "PROOF132",
+        "PROOF193",
+        "PROOF203"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF205",
+      "label": "L:occupation-raw-square",
+      "raw_proof_sha256": "692a8d7ffca6088254bff332ee9c8f3a144fd055dc338632c4c08e24f0e5260a",
+      "explicit_references": [
+        "E:occupation-raw-identities",
+        "E:positive-bochner-inclusion",
+        "L:positive-raw-embedding",
+        "P:spatial-four-linear"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF138",
+        "PROOF199"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF206",
+      "label": "P:raw-occupation-energy",
+      "raw_proof_sha256": "fd93a46fa212097f7626a8adb12c81b7bcdebdf5608c08a193d37a6ec770fb60",
+      "explicit_references": [
+        "E:raw-occupation-energy",
+        "E:raw-occupation-ratio",
+        "P:spatial-four-linear"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF138"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF207",
+      "label": "L:occupation-rayleigh-selection",
+      "raw_proof_sha256": "7ea377aaaac5b8841671ce89e8372437a99b5fb72485e9525dcf85b27d1f1ae8",
+      "explicit_references": [
+        "E:occupation-rayleigh-selection",
+        "L:occupation-raw-square",
+        "P:variational-unmasked-rate"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF129",
+        "PROOF205"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF208",
+      "label": "T:intrinsic-occupation-ceiling",
+      "raw_proof_sha256": "4afc813afcce3bd0bb31efcb087f30ee5edaa5c771632b9400879ec2db22725d",
+      "explicit_references": [
+        "E:occupation-score-ceiling",
+        "E:raw-occupation-ratio",
+        "L:occupation-rayleigh-selection",
+        "T:intrinsic-second-moment"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF204",
+        "PROOF207"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF209",
+      "label": "C:intrinsic-spatial-bracket",
+      "raw_proof_sha256": "ca4d079f726b7bd42963be9d5ec5ec9e18e2c0e6c415361000daee151752a54c",
+      "explicit_references": [
+        "E:occupation-scalar-map",
+        "E:occupation-score-ceiling",
+        "E:spatial-energy-map",
+        "E:spatial-static-energy-score",
+        "T:intrinsic-second-moment"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF204"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF210",
+      "label": "L:white-cdf-square",
+      "raw_proof_sha256": "06cfbaab8945c4017412abbc161a8fd68aad26ff7aaca581189387b7e6db121a",
+      "explicit_references": [
+        "E:white-cdf-square"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF211",
+      "label": "P:white-spatial-energy",
+      "raw_proof_sha256": "477521882d6de25748764c2e7ae80924c5fa27f2740b182f19189b22b851ae86",
+      "explicit_references": [
+        "E:white-cdf-square",
+        "P:spatial-four-linear"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF138"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF212",
+      "label": "T:white-moment-bounds",
+      "raw_proof_sha256": "ba136fbbcfe866144f2acf6aa68240f32d02a38ba75b2d2b94413a53cf8033d8",
+      "explicit_references": [
+        "C:intrinsic-spatial-bracket",
+        "E:spatial-static-energy-score",
+        "E:white-moment-bounds",
+        "T:intrinsic-second-moment"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF204",
+        "PROOF209"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF213",
+      "label": "C:white-relative-width",
+      "raw_proof_sha256": "d18bfc43bc25b6da70a0ba7436cebac64de6690172892a533a227598dd9dea3e",
+      "explicit_references": [
+        "L:equilibrium-gamma-beta"
+      ],
+      "explicit_local_proof_edges": [
+        "PROOF133"
+      ],
+      "unresolved_refs": []
+    },
+    {
+      "id": "PROOF214",
+      "label": "L:translated-covariance-CS",
+      "raw_proof_sha256": "8a187e589582d0c618d281bc1a3ce974a4d0a715a0e2a750692288d465dc2434",
+      "explicit_references": [
+        "E:translated-covariance-CS",
+        "E:translated-covariance-form"
+      ],
+      "explicit_local_proof_edges": [],
+      "unresolved_refs": []
+    }
+  ],
+  "explicit_proof_edge_count": 308,
+  "unresolved_refs": [],
+  "syntactic_cycles": [
+    [
+      "PROOF002",
+      "PROOF007",
+      "PROOF002"
+    ]
+  ]
+}
