@@ -1,17 +1,35 @@
-Last updated: 2026-11-02 18:59 UTC (Codex)
+Last updated: 2026-11-02 23:27 UTC (Codex)
 
 LATEST USER DIRECTION: DeepSeek V4 Pro MAIN; full original goalACTIVE.
 Actualconstant, no forcedChen matching.
 
 ## ⏭ Next session: where to stand and what to do
-Inspect the external new analytic-clarification candidate and author
-replays; finish root mathematical/diff/build checks, then obtain the
-properly scoped independent review before any production integration.
-No new provider call is authorized yet for this candidate. Do not rerun
+Storage cleanup requested by Le is COMPLETE. Keep only canonical master
+and the ACTIVE research checkout; do not recreate full duplicate checkouts.
+The6-proof candidate remains frozen at
+../../../../.local/state/Le-AI-Lab/stratonovich-analytic-clarification-candidate-20261102/v2/proposed/.
+Its complete source patch and exact four changed worktree files are also
+preserved under stratonovich-cleanup-rescue-20261102 and committed in
+ACTIVE reviews/2026-11-02-storage-cleanup/candidate-wip-recovery.tar.gz.
+The redundant analytic checkout/branch and merged source-bridge checkout/
+local+remote branch were removed; the source-bridge tip36c0fec remains in
+ACTIVE history. The clean retired <HUB> clone was removed too.
+About3.7GiB duplicate local checkouts removed; disk free124G->127G.
+Git gc --no-prune and connectivity check passed; research history retained.
+
+Inspect the prepared lightweight six-proof review packet, bind its source
+to frozen candidate-v2 baseb4b6efc+patch2300422d, and authorize exactly one
+properly scoped independent review after all guards. Root has read the
+full6-proof diff and mathematical replays; clean263-page build was verified.
+Use a source-only carrier, not a full repository checkout.
+No new provider call is authorized yet for this candidate; preparation was
+held for storage cleanup and its source path must be updated from the
+removed checkout to frozenv2. The unrun preparation script remains
+../../../../.local/state/Le-AI-Lab/prepare-stratonovich-six-analytic-depth-v1.py. Do not rerun
 the TERMINAL fresh complete214 MAIN review described below.
 
 ACTIVE ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave,
-branch research/fixed-mask-young-20261031, HEADbe61381655dcd688cefc9002f679a2899d8fb64e,
+branch research/fixed-mask-young-20261031, HEADada34823f723b3fe3e5bcbae25f45c207a9dab31,
 clean/pushed/<HUB> equal. Scientific sourceb4b6efccacbbccd8f747225330e9ccb27bc097a6,
 PDF259pages0errors/undefined/overfull, SHAedc3b9e4a5ce5528ec25d4d619d9f99d69e75bc1dfd8c760141ac9c565f4922c.
 Current indexv5/neutralv4 and ledger-v34:158 exact scopedHIGH,3 editorial
@@ -36,14 +54,16 @@ New substantive author expansions (external below same state root):
   driver-ball/tail/uniformLp/Bochner flow limit and ordinary-source averages.
   Root caught original piece-indexing ambiguity; v2 corrects it, originals
   retained. Root read both; no independent vote or source acceptance.
-- stratonovich-driver-variance-limit-complete-replay-20261102: worker active
-  on full Fourier/two-Bessel-variance/localized-Gaussian interval-limit seam;
-  inspect actual files/message before considering it complete.
+- stratonovich-driver-variance-limit-complete-replay-20261102: worker author-only
+  completed394line standalone-full-replay.md (rootread/checked) on full
+  Fourier/two-Bessel-variance/localized-Gaussian interval limit. Authoronly.
 - stratonovich-analytic-clarification-candidate-20261102: production worker
-  prepares external TeX/PDF candidate fromb4b6efc. Authorized edits ONLY
-  existing125/126 and108/110 proof bodies; all statements/214IDs unchanged.
-  No ACTIVE/ref/provider changes authorized. Variance088/091 integration
-  is NOT yet authorized. Candidate must receive review before adoption.
+  completed frozenv2 TeX/PDF fromb4b6efc: only088/091/108/110/125/126
+  changed,208otherbodies/all240statements/214IDs exact. Rootreadall and
+  independentlychecked6rawbodydeltas.263pagecleanbuild. ItsfullpatchSHA
+  2300422d7ebfcb4dc34041fc0bdb085dfb1d5f70971134554ca4fc2c0acb81c3.
+  No ACTIVE/provider adoption; independentreviewrequired. Temporary review
+  branch hadzero uniquecommits and wasremovedafterexactWIPrecovery.
 
 No native reviewer remains live. Full MAIN HIGH, independent source images,
 full259 render, Kimi/fresh independent cold/wiki/final private gates open.
@@ -70,6 +90,16 @@ full completion-contract obligations remain separately recorded.
 [held back: collaborators' unpublished work]
 
 ## What the previous sessions produced
+2026-11-02 userstoragecleanupada3482: removed two local merged-tip branches/
+worktrees (~1.8+1.9GiB), lease-deleted mergedremote sourcebridgebranch and
+removeditsclean<HUB>clone. Before removing the dirtytemporaryreview
+checkout, saved/rehashedall4ownedmodifiedfiles,binarypatch,indexintent and
+buildlogs; applycheckpassedonretainedbasebe613. Compact2.5MBrecoveryarchive
+committed/pushed/synced; frozen6-proofv2 andallreplays retained. Onlymaster
+andActivebranches remain. Gitgc--no-prune+connectivitypassed; diskfree127G.
+No scienceadoption/providercall or goal/scopechange. Future reviewpackets
+mustuse compact source-onlycarriers ratherthanfull12k-filecheckouts.
+
 2026-11-02 terminal MAIN/new analytic checkpointbe61381: full214 fresh
 DeepSeek report actualUNGRADED120CHECKED94LIMITED/311.280s,72native members
 rehashed/adjudicated ataa1dba8, no confidence upgrade. Root extracted308
@@ -2203,8 +2233,8 @@ local canonical copies still old at observation, correct external source
 held. Main p2source/PDF/Lean facts unchanged; no reviewer live.
 
 ## Repo & git state at handoff
-ROOTmaster pre-handoff26e322b, clean/upstream equal; this dedicated HANDOFF
-commit follows it. ACTIVEbe61381655dcd688cefc9002f679a2899d8fb64e clean,
+ROOTmaster pre-handoffe4a35d1, clean/upstream equal; this dedicated HANDOFF
+commit follows it. ACTIVEada34823f723b3fe3e5bcbae25f45c207a9dab31 clean,
 pushed/<HUB> equal. Scientificb4b6efc includes editorial changes to53bf.
 MainTeXSHA364753242f9d02e57036af586ab8e777b184d897862750d3170d79f028067914;
 uniformproductsSHA5c03545c565dee67266226ec11e272cd20628dcc5e586b0ea268f9c3b0f77ca5.
@@ -2218,8 +2248,8 @@ stratonovich-products-root-audit-20261102,
 stratonovich-symplectic-root-audit-20261102,
 stratonovich-intrinsic-root-audit-20261102,
 stratonovich-private-delivery-audit-20261102.
-Review reports/corrections are terminal; do not replay them. Original source
-bridge candidate branch and independent <HUB> clone remain retained.
+Review reports/corrections are terminal; do not replay them. The retired source-bridge branch/duplicate clone were removed after verified
+merger; exactcommit36c0fec and reviewed source remain in ACTIVE history.
 
 External newmath WIP: stratonovich-raw-lower-complete-replay-20261102,
 stratonovich-young-source-complete-replay-20261102 (use replay-v2),
