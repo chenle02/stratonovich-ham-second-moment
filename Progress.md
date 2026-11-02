@@ -6,15 +6,13 @@
 
 ## Current state
 
-- **BLOCKED (2026-11-02):** goal service now records the unchanged full
-  objective blocked after the required Kimi quota/route condition persisted
-  over more than three goal continuations. No current reviewer is live.
-  Cutoff production is scoped HIGH accepted; both broader SF04 audits
-  returned actual MEDIUM and remain below the HIGH gate. All current
-  findings are adjudicated and evidence retained. User route question is
-  pending; restored Kimi access or explicit replacement authorization is
-  needed for the next substantive required review. No reduced scope,
-  confidence threshold, guessed constants or goal completion is adopted.
+- **ACTIVE by Le (2026-11-02 renewed direction):** goal resumed and
+  DeepSeek V4 Pro explicitly designated MAIN reviewer. Prepare a full
+  mathematical main review of all213proofs/44sections with complete primary
+  text and finite-evidence context. Prior blocked checkpoint and both actual
+  MEDIUM reports remain historical evidence, not acceptance. Required image
+  and fresh independent cold gates remain open; the separate Kimi/replacement
+  question is pending and no model substitution is authorized.
 
 - **Reviewer directive (Le,2026-11-01):** use DeepSeek V4 Pro + Kimi-K3.
   This supersedes Opus-only routing for newly assigned reviews. Preserve
@@ -226,12 +224,12 @@
   b2fda02, 257 pages and 213 proof blocks. The earlier 4a65c79 whole-review
   attempt and continuation are TERMINAL and unaccepted (incomplete coverage,
   INCONCLUSIVE/medium). Their evidence remains historical, not live work.
-- **Immediate next (blocked checkpoint):** obtain restored authorized
-  reviewer capacity or Le's explicit replacement direction, then resume the
-  full source/image/whole/fresh-cold verification with exact bindings.
-  All current attempts are terminal; never restart old handles. Preserve
-  the full17-input/28file MEDIUM report and adjudication. No confidence-only
-  unchanged rerun or optional theory detour substitutes for completion.
+- **Immediate next (main-review direction):** freeze the full mathematical
+  DeepSeek main-review packet with all28manuscript files, complete primary
+  text, finite evidence, all44section/213proof obligations and calibrations.
+  Do not call a narrow application audit a whole review. Image/edition and
+  independent cold coverage stay separate and open. No provider is live at
+  this pre-dispatch checkpoint; verify actual launch records before polling.
 - **New accepted uniformR E Cameron/regulator:** scientificf54e92b,
   21checks/HIGH348.303s,no requiredrepairs;21input bindings/native archive
   verified before6optional clarity notes. Actual all-model uniformR means,
@@ -11444,3 +11442,21 @@ UID stratonovich-blocked-review-status-20261102-v1. This is NOT yet
 maintained; prior current-status maintenance984fe7b remains verified.
 Receipt collection is a future preservation check, not scientific work
 or a reason to restart unavailable reviewers. Full goal remains BLOCKED.
+
+
+## 2026-11-02 — Le resumes and designates DeepSeek the main reviewer
+
+User explicitly reactivated the full goal and instructed: Use DeepSeek V4 Pro
+as the main reviewer. This authorizes the full main mathematical review, not
+a model/threshold/source-image waiver. AGENTS and completion contract now
+record the main role. Prior blocked state and raw MEDIUM reports remain
+historical. No replacement image/cold reviewer is yet authorized.
+
+Gate class: whole-paper
+Gate scope: all original213proofs/44sections/28TeX, complete actual p2
+constant, auxiliary results, source applications, finite evidence and all
+calibrations; separate image/edition/visual and fresh independent cold gates.
+Mandatory protocols: AGENTS.md and PROJECT-GOAL.md; HIGH confidence, exact
+actual route/full source/coverage; no forced Chen endpoints or source repair.
+
+[held back: collaborators' unpublished work]

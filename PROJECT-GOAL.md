@@ -65,7 +65,8 @@ route cannot reach the scale t^κ.
 2. The statement passes the calibrations in AGENTS.md (α₀→0; p=1;
    Jensen; comparison with the Skorohod p=2 result).
 3. Independent cross-family review using DeepSeek V4 Pro + Kimi-K3,
-   per Le's 2026-11-01 directive in AGENTS.md, with HIGH confidence and
+   per Le's directive in AGENTS.md, with DeepSeek V4 Pro explicitly the
+   main reviewer (2026-11-02), HIGH confidence and
    verified actual route, source, application and visual coverage. Every
    finding is adjudicated in Progress.md. Any result Le may circulate also
    requires a final cold read in a fresh session, independent of material

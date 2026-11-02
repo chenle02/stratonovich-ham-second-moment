@@ -100,7 +100,10 @@ All.bib -> ../refdb/All.bib (read-only), extra.bib (local additions)
 - **Worker:** the Codex session running this project (GPT family).
 - **Reviews must come from a different model family than the author** of
   the argument. Per Le's 2026-11-01 direction, use **DeepSeek V4 Pro +
-  Kimi-K3** for newly assigned reviews. DeepSeek uses the configured
+  Kimi-K3** for newly assigned reviews. Le explicitly designated
+  **DeepSeek V4 Pro as the main reviewer on 2026-11-02**. This does not
+  waive image verification or the fresh independent cold-review gate.
+  DeepSeek uses the configured
   `paper-review-deepseek` route with `deepseek/deepseek-v4-pro`; Kimi uses
   native `subscription-review-cli run kimi --model kimi-code/k3` with its
   verified configured effort. Use frozen inputs and read-only execution.
