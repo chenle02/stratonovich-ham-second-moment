@@ -301,13 +301,17 @@ No complete local Fréchet flow or primary-source-image clearance is claimed.
 The original moment theorem's full verification remains the completion target.
 
 
-## Current verification stop
+## Prior verification stop and current main review
 
 The expanded full-context actual-law/application review returned MEDIUM,
 not the required HIGH. Its report and every finding are preserved in
 [the expanded audit](../reviews/2026-11-02-sf04-eligibility/adjudication.md).
 The scientific manuscript is unchanged. The required Kimi route returned
 a monthly quota refusal, with no image or report credit. All reviewers are
-now terminal, and the full goal is blocked pending restored capacity or
-Le's explicit replacement-reviewer direction. Source/image/whole/cold
+terminal at that checkpoint. Le subsequently resumed the goal and explicitly
+designated DeepSeek V4 Pro as the main reviewer. A new full mathematical
+review now covers all213proofs/44sections with complete primary text and
+finite evidence; see [its scope](../reviews/2026-11-02-main-deepseek/scope.md).
+No result is available yet. Image and independent cold-review routing remain
+separate unresolved requirements. Source/image/whole/cold
 requirements remain intact; see the [completion and blocker audit](../reviews/2026-11-02-resumption/blocker-and-completion-audit.md).

@@ -224,12 +224,12 @@
   b2fda02, 257 pages and 213 proof blocks. The earlier 4a65c79 whole-review
   attempt and continuation are TERMINAL and unaccepted (incomplete coverage,
   INCONCLUSIVE/medium). Their evidence remains historical, not live work.
-- **Immediate next (main-review direction):** freeze the full mathematical
-  DeepSeek main-review packet with all28manuscript files, complete primary
-  text, finite evidence, all44section/213proof obligations and calibrations.
-  Do not call a narrow application audit a whole review. Image/edition and
-  independent cold coverage stay separate and open. No provider is live at
-  this pre-dispatch checkpoint; verify actual launch records before polling.
+- **Immediate next (main-review running):** collect the existing full
+  DeepSeek MAIN review PID3010935 at terminal state. It includes all213
+  proofs/44sections/28TeX, complete primary text and finite evidence. Check
+  all63determinations and the explicit proof-coverage ledger; delivery is
+  not proof checking. Preserve actual confidence and every unresolved item.
+  Image/edition/render and independent cold gates remain separately open.
 - **New accepted uniformR E Cameron/regulator:** scientificf54e92b,
   21checks/HIGH348.303s,no requiredrepairs;21input bindings/native archive
   verified before6optional clarity notes. Actual all-model uniformR means,
