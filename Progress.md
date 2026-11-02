@@ -11460,3 +11460,38 @@ Mandatory protocols: AGENTS.md and PROJECT-GOAL.md; HIGH confidence, exact
 actual route/full source/coverage; no forced Chen endpoints or source repair.
 
 [held back: collaborators' unpublished work]
+
+
+### Full MAIN DeepSeek mathematical review actually dispatched
+
+One native DeepSeek V4 Pro MAIN review launched on the complete original
+mathematical scope:213proofs,44sections,63namedchecks plus explicit213-row
+proof-coverage ledger, all actual constants/calibrations and complete
+available primary text/finite evidence. No prior narrow reports are supplied
+as proof authority. This is the full main assignment Le requested, not a
+renamed bounded application audit or old canonical composition certificate.
+
+External attempt ../stratonovich-main-deepseek-review-v1; clean carrier
+cf229b1ea868b915b4b332f9584f7e0e3323652f. PID3010935/supervisor3010742
+confirmed LIVE, handle33922/session ses_e65832d95ffego6ugwXbv52qh5.
+Prompt1674228bytes SHA256
+55a07bd2e40c4d1a2ca553553d9c9b039d789459dfc5b0477482fd1673582dba.
+All64assigned texts total1339097bytes with current279governance; all28
+scientific sources exact887. AGENTS current279 is separately supplied.
+All27337target lines embedded; raw source bytes retained despite canonical
+line rendering of formfeeds.145preflight members archived/readback verified.
+Preprovider byte-count and missing-newline/formfeed line-map refusals retained
+and fixed without dropping source material. No provider retry.
+
+Conservative planning input chars/2 plus65536output and32768system reserve
+is928274tokens against cached1048576context. This is not actual tokenizer
+usage; actual provider receipt remains authoritative. Configured DeepSeek
+route/tools-disabled verified. HIGH not presumed. All image/render/edition
+and fresh independent cold gates remain open and separate. Kimi route
+question pending; no fallback or confidence/source-scope waiver.
+
+The previous blocked-status wiki ticket is actually MAINTAINED at
+58048edc5c084e30c60dfa9f1d32238197f39f15; root verified exact receipt and
+live/owned-page equality, retained in main-review-resumption/wiki-blocked-
+completed. It is a dated prior-state maintenance record, superseded by
+Le's new resumption/main-review directive; not a claim current goal blocked.
