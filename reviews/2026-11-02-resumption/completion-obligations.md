@@ -12,8 +12,8 @@ The correct-scale upper bound and intrinsic all-model limit are integrated
 with scoped independent reviews. The occupation comparison and white
 example are also integrated at scoped gates. These receipts do not close
 the consolidated whole-argument, primary-source, visual or final cold gates.
-The cutoff v1 HIGH result has a revised v2 production candidate; its actual
-followup/adoption is **OPEN**. A general local phase evolution is a separate
+The cutoff successor dd27f38 now has a HIGH targeted production followup
+and scoped compatibility adoption at 23b484a; full source/image gates remain **OPEN**. A general local phase evolution is a separate
 research candidate, not a replacement for completing the original moment
 result or a prerequisite invented to defer its verification.
 

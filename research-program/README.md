@@ -292,6 +292,10 @@ addresses the seven production requests, including the distinction between
 the Young primitive's regularity and the ordinary integrand's continuity.
 See the [production adjudication](../reviews/2026-11-02-cutoff-overlap-proof-v2/production-adjudication.md)
 and the preserved [parked assessment](../reviews/2026-11-02-cutoff-overlap-proof-v1/park-adjudication.md).
-Actual production followup remains pending; v2 is not adopted, and no complete
-local Fréchet flow is claimed. The original moment theorem's full verification
-remains the completion target.
+The actual targeted followup returned PASS_WITH_NOTES/HIGH on F01-F10.
+The bounded compatibility deduction is now scoped accepted on its named
+construction inputs; see the [adoption and every finding](../reviews/2026-11-02-cutoff-overlap-proof-v2/adoption-adjudication.md).
+A reversed cone identity in the reviewer summary is preserved and corrected
+in that adjudication; the reviewed proof itself was unchanged and correct.
+No complete local Fréchet flow or primary-source-image clearance is claimed.
+The original moment theorem's full verification remains the completion target.

@@ -13,7 +13,7 @@
   dispositions are now scoped accepted at successor dd27f38 after actual
   DeepSeek production PASS_WITH_NOTES/HIGH (all F01-F10).
   Whole-paper/source/visual/final-cold obligations remain OPEN. No new
-  proof adoption or whole-goal completion follows from this resumption.
+  main-manuscript theorem or whole-goal completion follows from this subaim.
 
 - **Reviewer directive (Le,2026-11-01):** use DeepSeek V4 Pro + Kimi-K3.
   This supersedes Opus-only routing for newly assigned reviews. Preserve
@@ -225,14 +225,14 @@
   b2fda02, 257 pages and 213 proof blocks. The earlier 4a65c79 whole-review
   attempt and continuation are TERMINAL and unaccepted (incomplete coverage,
   INCONCLUSIVE/medium). Their evidence remains historical, not live work.
-- **Immediate next (resumed 2026-11-02):** finish the seven cutoff-proof
-  production close is recorded below; continue the prepared full
-  source/visual/whole-argument
-  coverage recovery and fresh cold gate. Fifteen prepared components and
-  synthesis contracts do not count as completed reviews. General local-flow
-  assembly is a separate research-program target, not a substitute for the
-  original second-moment completion obligations. No reviewer is currently
-  dispatched by this resumption; do not restart historical handles.
+- **Immediate next (2026-11-02):** cutoff production is scoped accepted;
+  continue full source/visual/whole-argument recovery and fresh cold gates.
+  A supplementary DeepSeek SF04 text/application audit is LIVE (details below);
+  its image-dependent obligations remain OPEN after actual Kimi monthly429.
+  Fifteen prepared components and synthesis contracts are not completed
+  reviews. General local-flow assembly is a separate research target, not a
+  substitute for original second-moment completion. The cutoff-v2 reviewer
+  is terminal; consult latest dispatch entries for any new live process.
 - **New accepted uniformR E Cameron/regulator:** scientificf54e92b,
   21checks/HIGH348.303s,no requiredrepairs;21input bindings/native archive
   verified before6optional clarity notes. Actual all-model uniformR means,
@@ -11294,3 +11294,28 @@ tk-20261101-211105-codex-stratonovich-resumption, request UID
 stratonovich-resumption-20261102-review-status-v1. This is queued, not a
 completed wiki update. Its earlier pending snapshot is explicitly dated;
 latest mathematical authority remains this Progress record.
+
+
+### SF04 supplementary text/application audit actually dispatched
+
+One actual DeepSeek V4 Pro review launched 2026-11-02T02:14:07Z on the
+unchanged common887 scientific inputs. External attempt
+../stratonovich-sf04-text-review-v1, clean carrier
+3f5563c7ea0c6f8b99390e0988fcf4c502ca4960, PID2728316/wrapper2728286
+confirmed LIVE; handle73653. Prompt230623bytes/SHA256
+1b08a39ecb9e17d6fc1c4d71b3e27b935c99b5deaf07f28a688018d90f72c9d0.
+All eleven source bindings verified: six complete consumers, original
+model1-310, exact Teschl/Friz nineteen mathematical page extracts and
+source/crosswalk context. Text carriers originate in the common887
+synthesis packet; consumer modules also match original SF04 packet.
+
+This is a supplementary mathematical/application audit, NOT completed
+SF04/source-image/synthesis/cold clearance. All21images remain uninspected
+by this text-only route; SF04-01/07/11 must stay INCONCLUSIVE. No prior
+verdict supplied; no tools/delegation, output cap65536, no automatic retry.
+Initial canonical inline-context size refusal occurred before any provider
+call; exact consumer concatenation with file/line map retained all bytes
+and passed supported target-excerpt preparation. Refusal preserved.
+
+Main TeX/PDF/80facts unchanged; goal ACTIVE. Cutoff-v2 and Kimi processes
+are terminal. The new SF04 text attempt is the sole reviewer live at capture.
