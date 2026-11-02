@@ -11922,3 +11922,22 @@ sameZ half-action, fixed-orderlimits and zeroimage credit retained. NoHIGH.
 Append-only depth-ledger-v12 has57scopedHIGH, all213identities/rawmainstatus.
 No source/PDF/Lean change. Both nativeprocessesTERMINAL; newvariational127–132
 packet preparing. Constructor correction/compact completion remain pending.
+
+
+### Unmasked score and full occupation NEW audits actually running
+
+Unmasked127–132: siblingstratonovich-main-deep-unmasked-v1,
+PID3647665/wrapper3647647, handle11304; carrier
+cb677cb44b3d22e40f2bdc309b24c4156b0895a6; prompt1017813bytes/SHA
+8758edd9713f8cffdc35d8bcd011738498b5719b639e7e4cf3b97c7315f41a9a.
+Six targets/17sourcebindings, complete main7710lines includes actual earlier
+T:full-upper and its own inputs; no finaltheorem or priorvote substitution.
+Physicaloccupation135–141: siblingstratonovich-main-deep-occupation-v1,
+PID3648457/supervisor3648450, handle25116; carrier
+8224a859e7dda4c0a4617d04058bb32ea9ae0f8b; prompt797616bytes/SHA
+82603a332557d77e6e200c3ddf94954a89f945884248e5cae26cee605b179f04.
+Seven targets/tenfullinputs; actualRadon pairing, smooth-ratio finiteness,
+fullH1fourlinear extension, ownenergy and fullstrong-H1 occupationclass.
+Both actualDeepSeek/toolsdenied/cap131072, no scientific edits/retries.
+Original213proof/fullsource/image/cold goal remains. README now explicitly
+records MAIN MEDIUM, scoped recovery and header-versus-acceptance distinction.

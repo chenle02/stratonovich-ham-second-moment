@@ -37,7 +37,7 @@ Independent covariance branch: PROOF061-065 now scoped HIGH accepted;
 PROOF066-074 (three temporal lemmas plus six wave-variance proofs) has
 scoped HIGH acceptance with complete covariance and consumer inputs.
 Neither foundation acceptance certifies downstream stochastic flow proofs.
-Current source-bound scoped states are in depth-ledger-v7.json; raw main
+Current source-bound scoped states are in depth-ledger-v12.json; raw main
 MEDIUM and all remaining213proof obligations are preserved.
 
 
@@ -54,3 +54,12 @@ Masked101–103 is terminal MEDIUM, retained unaccepted. Constructor004–006
 (with new held primary induction pages and worked-step checks), Young104–111
 and White210–213 are actually running; exact launch records in Progress.
 Compactmean112–118 is being prepared. Check native exits before collection.
+
+
+Current:57scopedHIGH including temporal133–134 and white210–213.
+Constructor004–006 HIGH header is NOT adopted: specific shifted-kernel
+reasoning error is under one same-session correction audit. Compactmean
+original report is incomplete despite native stop; one same-session public
+completion is running. Young104–111 and rawlower119–126 remain MEDIUM;
+rawlower also has undefined coverage wording. Unmasked127–132 and full
+physicaloccupation135–141 are new running units. Exact records in Progress.

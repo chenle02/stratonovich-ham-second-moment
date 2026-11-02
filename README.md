@@ -39,6 +39,13 @@ The proposed private Lean companion is separately gated; local finite
 checks do not constitute its package gate. `Progress.md` is the workflow
 authority; the root loader `HANDOFF.md` identifies the active checkout.
 
+DeepSeek V4 Pro is the main reviewer under Le's renewed direction. Its
+full-manuscript review returned MEDIUM and remains unaccepted; bounded
+proof-depth audits are in progress. Their exact coverage, raw grades and
+corrections are recorded in [the depth worklist](reviews/2026-11-02-main-deepseek/deep-audit-worklist.md)
+and `Progress.md`. A HIGH header alone is not acceptance when the report
+contains an unresolved mathematical error or omits required checks.
+
 ## Start here
 
 1. `AGENTS.md`: goal, scope boundary, structural facts, rules
