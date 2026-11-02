@@ -6,23 +6,27 @@
 
 ## Current state
 
-- **Main depth recovery (2026-11-02):** full-main DeepSeek review returned
-  MEDIUM; targeted deep audits have now accepted 122 named proof bodies at
-  scoped HIGH, including terminal Wick/tails and full-upper assembly.
-  The initial constructor001–009, calibration010–019 and driver085–093
-  reports remain MEDIUM; focused004–006 is now separately accepted HIGH. The append-only ledger is
-  `reviews/2026-11-02-main-deepseek/depth-ledger-v27.json`.
-  All original213 proofs plus new214, source-image/render and independent
-  cold obligations remain. Exact production214/182 is now integrated;
-  terminal review backlog and earlierMEDIUM/NF obligations remain.
+- **Current exact source (2026-11-02):** scientific editorial commit
+  b4b6efc is clean and synchronized with <HUB>. All28 TeX retain214
+  stable proofs;211 raw bodies are unchanged and034/189/193 have explicit
+  editorial-only changes. Current indexv5 and neutralv4 bind the source;
+  depth-ledger-v33 has158 exact scoped HIGH,3 editorial deltas pending the
+  coupled review, and53 actual MEDIUM/qualified/partial rows. The previous
+  161 scoped count predates cleanup. Counts are not whole-goal acceptance.
+  All old terminal HIGH backlog is now adjudicated at its exact scope.
+  Clean259-page PDF;0errors/undefined references/citations/overfull boxes.
 
-- **ACTIVE by Le (2026-11-02 renewed direction):** goal resumed and
-  DeepSeek V4 Pro explicitly designated MAIN reviewer. The full
-  mathematical main review of all213proofs/44sections completed at MEDIUM;
-  bounded deep audits now recover the documented missing proof depth. Prior blocked checkpoint and both actual
-  MEDIUM reports remain historical evidence, not acceptance. Required image
-  and fresh independent cold gates remain open; the separate Kimi/replacement
-  question is pending and no model substitution is authorized.
+- **ACTIVE fresh MAIN (2026-11-02):** Le resumed the full goal and selected
+  DeepSeek V4 Pro MAIN. ONE fresh all214-proof/coupled-graph text audit is
+  LIVE from18:23:08UTC, PID1596722/session ses_e627fc583ffeRH1qWPa5Jf1JgZ.
+  Exact1,692,142-byte prompt includes42 byte-bound items/all28 current TeX,
+  stable maps, primary editions and neutral analytic/source calculations;
+  prior votes/ledgers/governance excluded. All tools denied;131072 output
+  cap; no automatic retry/continuation/substitute/cold claim. The original
+  full-main213 report remains MEDIUM historical evidence. Required source
+  images/full259 independent visual/Kimi/fresh cold gates remain OPEN.
+  Current Kimi monthly429 at17:26:09UTC produced zero reads/images/report;
+  no further probe/substitution authorized. Wiki status ticket still QUEUED.
 
 - **Reviewer directive (Le,2026-11-01):** use DeepSeek V4 Pro + Kimi-K3.
   This supersedes Opus-only routing for newly assigned reviews. Preserve
@@ -12379,3 +12383,17 @@ v33restoresactualv31sixdispositions. No grade/body/claim/source/PDFchange.
 Root verifiedfreshMAINpacket42embeddeditems/28exactcommittedTeX/all214maps/
 neutralmathsupplements andauthorized ONEactualDeepSeekMAINcall subjectexact
 tasklocaltoolsdeniedpreflight/freeze. Notacoldreview orimagewaiver.
+
+
+### One actual fresh complete214 MAIN audit launched
+
+Root inspectedprompt/readorder/modelpreflight and independentlyverified42
+embeddedslices,28ACTIVE+committedsourceblobs,214neutralproofrows andclean
+mathematical supplements. ONE actualnative DeepSeekV4Pro run18:23:08UTC,
+PID1596722/supervisor1596719/exec86372/session
+ses_e627fc583ffeRH1qWPa5Jf1JgZ. ExactpromptSHA4268889791b53d76ca6764069f8b02b02f5e4d70ee0945cd596cc660eb713d35.
+Sealedexternalcarrier3cd471bdf04bb736955d0c1a792537b8af3a8f86, sourceb4b6efc,
+alltoolsfalse,131072outputbudget, no model/account/global changes. Frozen
+launchcapsule allmembers rehashed/retained. LIVEmeans no verdict yet.
+Fullactualsessionexport/terminalsemanticadjudication awaitsameattempt.
+No re-vote fromscopedcounts and no image/render/Kimi/cold/goalclearance.
