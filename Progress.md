@@ -224,13 +224,12 @@
   b2fda02, 257 pages and 213 proof blocks. The earlier 4a65c79 whole-review
   attempt and continuation are TERMINAL and unaccepted (incomplete coverage,
   INCONCLUSIVE/medium). Their evidence remains historical, not live work.
-- **Immediate next (main-review depth recovery):** full MAIN DeepSeek
-  returned actual MEDIUM, with125NF and58undefined qualified ledger rows.
-  Corrected v2 proof index resolves the sole PROOF093 locator defect.
-  Begin dependency-complete deep review of the independent-upper foundation,
-  then its interval coefficient/canonical-limit consumers. Preserve all213
-  proof obligations and final coupled/source/visual/cold gates; no smaller
-  replacement goal or unchanged confidence-only rerun.
+- **Immediate next (main-review depth recovery):** collect the two LIVE
+  DeepSeek deep audits at terminal state: static UnitA PID3049511 and
+  construction PID3053225. Full MAIN review is terminalMEDIUM with125NF
+  and58qualified rows, not HIGH. Corrected index resolves PROOF093 only.
+  Retain every213proof and final coupled/source/visual/cold obligation;
+  subsequent interval units follow the actual foundation review outcomes.
 - **New accepted uniformR E Cameron/regulator:** scientificf54e92b,
   21checks/HIGH348.303s,no requiredrepairs;21input bindings/native archive
   verified before6optional clarity notes. Actual all-model uniformR means,

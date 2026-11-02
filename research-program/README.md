@@ -312,6 +312,9 @@ terminal at that checkpoint. Le subsequently resumed the goal and explicitly
 designated DeepSeek V4 Pro as the main reviewer. A new full mathematical
 review now covers all213proofs/44sections with complete primary text and
 finite evidence; see [its scope](../reviews/2026-11-02-main-deepseek/scope.md).
-No result is available yet. Image and independent cold-review routing remain
+The full main report returned MEDIUM with explicit proof-depth gaps. Two
+dependency-complete deep audits now target the canonical construction and
+static analytic/Fock foundations; the [worklist](../reviews/2026-11-02-main-deepseek/deep-audit-worklist.md)
+retains all213proof and final global obligations. Image and independent cold-review routing remain
 separate unresolved requirements. Source/image/whole/cold
 requirements remain intact; see the [completion and blocker audit](../reviews/2026-11-02-resumption/blocker-and-completion-audit.md).

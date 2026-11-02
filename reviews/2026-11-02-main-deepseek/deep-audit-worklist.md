@@ -28,7 +28,7 @@ C must retain fresh-color vacuum guards, common partition/exponential
 charges, one ending metric charge per connected interval/active copy,
 coefficient-one permutation simplices, vector Cauchy (not holomorphic squared
 norm), singleton mean/cross-singleton weights and all factorial conversions.
-D retains three shifted grids/78T-i inventory, constant-data/stationarity,
+D retains three shifted grids/78T/i inventory, constant-data/stationarity,
 positive terminal Wick unequal/empty chains, cutoff order before positivity,
 finite-order J monotonicity and amplitude2 tails versus amplitude1 bound.
 No source PNGs or canonical composition clearance is supplied by text audits.
