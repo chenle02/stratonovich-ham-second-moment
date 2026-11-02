@@ -281,12 +281,17 @@ review. The first actual source-interface review returned MEDIUM and identified
 two missing explicit bridges: all-state/all-initial-time ordinary Duhamel
 identification and ordinary perturbed cone propagation.
 
-The [new proof draft](cutoff-overlap-proof-draft-v1.md) supplies those lemmas,
+The [v1 proof draft](cutoff-overlap-proof-draft-v1.md) supplies those lemmas,
 then transfers their identities to raw fixed-mask flows by uniform triangle
 operator convergence and a zero-expectation argument. It retains the source
-field on the(W,J) extension and the limiting raw event on the original W space.
-The fresh actual proof review completed at PASS_WITH_NOTES/HIGH with no
-critical finding. Its native evidence is preserved. Production clarifications
-remain open and no complete local Fréchet flow is claimed. Le has PAUSED the
-work at this checkpoint; no new proof revision or local assembly is started.
-See the [parked adjudication](../reviews/2026-11-02-cutoff-overlap-proof-v1/park-adjudication.md).
+field on the (W,J) extension and the limiting raw event on the original W space.
+Its actual proof review returned PASS_WITH_NOTES/HIGH with no critical finding;
+that verdict and native evidence retain their original v1 scope. Le has now
+resumed the full project goal. The [revised v2 candidate](cutoff-overlap-proof-v2.md)
+addresses the seven production requests, including the distinction between
+the Young primitive's regularity and the ordinary integrand's continuity.
+See the [production adjudication](../reviews/2026-11-02-cutoff-overlap-proof-v2/production-adjudication.md)
+and the preserved [parked assessment](../reviews/2026-11-02-cutoff-overlap-proof-v1/park-adjudication.md).
+Actual production followup remains pending; v2 is not adopted, and no complete
+local Fréchet flow is claimed. The original moment theorem's full verification
+remains the completion target.
