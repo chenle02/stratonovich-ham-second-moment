@@ -7,11 +7,11 @@
 ## Current state
 
 - **Main depth recovery (2026-11-02):** full-main DeepSeek review returned
-  MEDIUM; targeted deep audits have now accepted 66 named proof bodies at
+  MEDIUM; targeted deep audits have now accepted 73 named proof bodies at
   scoped HIGH, including terminal Wick/tails and full-upper assembly.
   Constructor001–009, calibration010–019 and driver085–093 reports remain
   MEDIUM. The append-only ledger is
-  `reviews/2026-11-02-main-deepseek/depth-ledger-v15.json`.
+  `reviews/2026-11-02-main-deepseek/depth-ledger-v16.json`.
   Full213-proof, source-image/render and independent cold obligations remain.
   Further constructor004–006, source094–100 and masked101–103 packets are
   being prepared; preparation is not an actual reviewer launch.
@@ -11989,3 +11989,17 @@ originalcarrierunchanged, prompt6346bytes/SHA
 87c30ce3f6db95067c432b41dace67fe568f0dfe7024063b680354464a1e6228.
 No confidence solicitation/newvote/furtherautoretry. v15marks135–141pending,
 acceptedHIGH count remains66. Actual corrections must be read before adoption.
+
+
+### Cameron/mean-field scoped HIGH adoption
+
+142–148 actualPASS_WITH_NOTES/HIGH,404.695s, sevenCHECKED/all12CAM PASS.
+Root read all findings/rehashed63members and fullsource bindings. Report-only
+missinggradient/ChenHu-chain attribution/28otherfiles/malformedprimitive
+norm slips corrected against source; actualdyadic/finalaveraged bound correct.
+R_sp and rawdriver interface-read limits retained, not upgraded. FixedR
+compactness, onephysicalmask, bothphase, rawGaussian/preimage identity and
+non-traceclass distinction kept. No nonlinear/growingradius/image/cold credit.
+v16has73scopedHIGH; occupation135–141 stillpending correction (not counted).
+No source/PDF/Lean change. Next151–155 actualindex-scoped unit preparing;
+deterministic149–150 and constructor007–009 live.
