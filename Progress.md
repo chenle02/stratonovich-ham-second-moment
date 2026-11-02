@@ -7,11 +7,11 @@
 ## Current state
 
 - **Main depth recovery (2026-11-02):** full-main DeepSeek review returned
-  MEDIUM; targeted deep audits have now accepted 39 named proof bodies at
+  MEDIUM; targeted deep audits have now accepted 46 named proof bodies at
   scoped HIGH, including terminal Wick/tails and full-upper assembly.
   Constructor001–009, calibration010–019 and driver085–093 reports remain
   MEDIUM. The append-only ledger is
-  `reviews/2026-11-02-main-deepseek/depth-ledger-v4.json`.
+  `reviews/2026-11-02-main-deepseek/depth-ledger-v5.json`.
   Full213-proof, source-image/render and independent cold obligations remain.
   Further constructor004–006, source094–100 and masked101–103 packets are
   being prepared; preparation is not an actual reviewer launch.
@@ -11733,3 +11733,17 @@ values and11/540. External run and portable committed-path replay both exit0
 under Sympy1.14.0. See main-deep-calibration/author-sector-checks. This adds
 worked evidence for a genuine later depth audit, not independent reviewer
 credit or a change to the actual MEDIUM verdict. No source/PDF changes.
+
+
+### Canonical Gaussian source scoped HIGH adoption
+
+Source094–100 actualPASS/HIGH,465.97s, sevenCHECKED/SRC01–10PASS.
+Root read fullreport, rehashed38archive members andeightbindings. Optional
+finiteGaussianmoment/orthogonal-support/dyadicpatch comments adjudicated;
+report-only proof-number and implied prior-driver-review wording corrected
+in adoption-adjudication. Driver085–093 remains MEDIUM. Actual same-W,
+heat-width sum/Laplace maximum, residual dependence and fixed-cutoff path
+scope preserved. Text-only source matching supplies zero image credit.
+Append-only depth-ledger-v5 has46named scopedHIGH proofs, all213rows/raw
+mainstatuses retained. Source providerTERMINAL; newYoung104–111 packet
+preparing. Manuscript/PDF/finiteLean unchanged and full goal ACTIVE.
