@@ -10955,3 +10955,34 @@ full-proof reading or paper novelty. CDST identity repair exactticket
 tk-20261101-190012-codex-stratonovich-reference-identity is still CLAIMED
 at observation; no repaired source/store is asserted. Original bad PDF and
 held correct published54-page external copy remain separately identified.
+
+
+## 2026-11-02 — DeepSeek growth-statement audit returned; scope preserved
+
+Actual DeepSeek V4 Pro statement audit is TERMINAL0, PASS_WITH_NOTES/MEDIUM,
+G01-G10. HIGH gate remains unaccepted. Full actual model/finish-stop/no-tool
+export, exact user-prompt equality, clean unchanged8-file carrier and all
+22native archive members verified. No length recovery needed for this run.
+No reviewer remains live; do not reuse old76401as an active wait.
+
+Adjudicated every finding. Reviewer found no invalidation of U1-U6, but
+requested zero-law and radius production clarifications. The demanded
+fixed-B zero-law limit would unnecessarily strengthen the statement:
+H={0},Z_delta=1,F_delta,B(0)=1/B,J=X=M=0 satisfies the original U1-U6
+with e_B=1/B->0, yet violates that stronger fixed-B zero condition. v2
+states the correct ordered collapse. Likewise the actual growing R_delta
+may be absorbed in delta-indexed objects; hypotheses must hold along it,
+while all-R uniformity from the source is a stronger sufficient input.
+Fixed-R estimates alone do not suffice. No scope contraction adopted.
+
+v2 explicitly distinguishes generator det=-1 from propagator det=1 and
+shows (B10)^(3/2)/B=B14. Rejected optional all-delta finiteness because
+original hypotheses only hold for sufficiently small delta. No abstract
+nonnegative lower rate is claimed from mere positivity Z_delta; source
+symplectic bounds remain separate. Borell remains an imported input.
+
+New v2 statement is FROZEN AUTHOR candidate, not accepted/novel theory or
+proof adoption. Original v1 and exact MEDIUM report preserved, author
+response checks/adjudication retained. This is an actual clarification
+successor, not a confidence-only retry; fresh review is still required.
+Main p2 mathematical source/PDF/Lean unchanged and all final gates open.
