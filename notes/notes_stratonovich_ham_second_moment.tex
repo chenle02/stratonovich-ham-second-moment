@@ -216,6 +216,10 @@ here by Lemmas~\ref{L:spatial-wick-measures}--\ref{L:joint-fixed-order},
 using only the source's universal pairing inequality
 \cite{chen:author2026:time-dependency}*{Theorem~3.1, (3.6), pp.~14--15}
 and the direct norm bounds in Lemma~\ref{L:damped-homogeneous-norms}.
+The Case~2 covariance step is proved independently in
+Lemma~\ref{L:translated-covariance-CS}; the precise source-display
+qualifications and regularized application are in
+Remark~\ref{R:source-case2-time-shift}.
 Thus neither Theorem~4.1 nor Lemma~4.4 nor Appendix~A.1 of the source is
 an analytic construction input. The finite-width Gaussian field and
 multiple Stratonovich integral use its definitions and regularization
@@ -304,7 +308,10 @@ $\Gamma(\alpha_0)^{-1}\int_{A_{j,k}}e^{-\lambda|r|}
 \lambda^{\alpha_0-1}\ud\lambda$ for measurable $A_{j,k}\subset\R_+$.
 The application to the full covariance therefore requires regularization;
 this is carried out in Lemma~\ref{L:crude-corrected}.
-The theorem includes cross-pairings between the two chains. In the
+The theorem includes cross-pairings between the two chains.
+Lemma~\ref{L:translated-covariance-CS} supplies its Case~2 estimate
+with the predecessor-time difference retained, as explained in
+Remark~\ref{R:source-case2-time-shift}. In the
 source it is used only for Stratonovich integrability (Section~4) and, via
 Lemma~A.1 with $G_l(t,x)=e^{-\theta t}G(t,x)$, in Laplace variables.
 
@@ -578,7 +585,10 @@ $\int_0^\infty e^{-as}\widehat G_s(\xi)\ud s=(a^2+|\xi|^2)^{-1}$.
 The last expression is the space-time covariance quadratic form;
 in physical variables it pairs $G_\theta(s,x)$ with $G_\theta(t,y)$.
 Thus, the second Green factor in the printed source (3.5) is read with
-the independent variable $y$.
+the independent variable $y$; see
+Lemma~\ref{L:translated-covariance-CS} and
+Remark~\ref{R:source-case2-time-shift} for the independent justification
+and the exact source qualification.
 
 \begin{lemma}[Homogeneous damped norms and temporal tails]
   \label{L:damped-homogeneous-norms}
@@ -669,6 +679,232 @@ the independent variable $y$.
   the bounds for temporal tails.
   This proves Lemma~\ref{L:damped-homogeneous-norms}.
 \end{proof}
+
+\paragraph{Covariance pairings of translated kernels.}
+Fix $d\in\{1,2,3\}$. Let $\mu$ be a finite positive Borel measure on
+$\R^d$ such that $\gamma(z)=\int e^{i\xi\cdot z}\mu(\ud\xi)$ is real and
+nonnegative for every $z$. Thus, $\gamma$ is bounded, continuous and even,
+with $0\le\gamma(z)\le\mu(\R^d)$. Let $\nu$ be a positive Borel measure
+on $(0,\infty)$ with $\nu((0,L])<\infty$ for every $L>0$, and put
+\[
+  \kappa_L(t)=\int_{(0,L]}e^{-\lambda|t|}\nu(\ud\lambda),\qquad
+  C_L((t,x),(s,y))=\kappa_L(t-s)\gamma(x-y).
+\]
+For complex $L^1(\R\times\R^d)$ functions $f,h$, define
+\begin{equation}\label{E:translated-covariance-form}
+  Q_L(f,h)=\int_{\R^2}\int_{\R^{2d}}
+  f(t,x)\overline{h(s,y)}\kappa_L(t-s)\gamma(x-y)
+  \ud x\ud y\ud t\ud s.
+\end{equation}
+This integral is absolutely convergent, with
+$|Q_L(f,h)|\le\nu((0,L])\mu(\R^d)\|f\|_1\|h\|_1$.
+For nonnegative $f,h$, define $Q(f,h)=\lim_{L\to\infty}Q_L(f,h)$
+as an extended nonnegative number. This positive cap limit also defines
+the pairing when the full temporal kernel is singular on the diagonal.
+The spatial covariance is fixed throughout this definition.
+For a nonnegative Borel function $G$ on $(0,\infty)\times\R^d$, let
+$G^0$ be its zero extension to nonpositive times and put
+\[
+  N_0(G)=\int_0^\infty\int_{\R^d}G(t,x)\ud x\ud t,\qquad
+  N_C(G)^2=Q(G^0,G^0).
+\]
+For $(A,a)\in\R\times\R^d$, write
+$T_{A,a}f(t,x)=f(t-A,x-a)$. All translated pairings are over the full
+time line.
+
+\begin{lemma}[Translated covariance Cauchy--Schwarz]
+  \label{L:translated-covariance-CS}
+  Under the preceding assumptions on $\mu$ and $\nu$, let $G_1,G_2$ be
+  nonnegative Borel functions with $N_0(G_i),N_C(G_i)<\infty$, $i=1,2$.
+  For arbitrary origins $(A,a),(B,b)\in\R\times\R^d$,
+  \begin{equation}\label{E:translated-covariance-CS}
+    0\le Q(T_{A,a}G_1^0,T_{B,b}G_2^0)\le N_C(G_1)N_C(G_2),
+  \end{equation}
+  and $Q(T_{A,a}G_i^0,T_{A,a}G_i^0)=N_C(G_i)^2$ for $i=1,2$.
+  The coefficient one is independent of the origins, dimension, cap and
+  covariance masses. Zero norms and zero measures are included.
+\end{lemma}
+
+\begin{proof}
+  We first prove positivity and Cauchy--Schwarz for the stationary
+  kernel $C_L$ at fixed finite $L$. For $\lambda>0$, define
+  \[
+    h_\lambda(t,r)=\sqrt{2\lambda}\,e^{-\lambda(t-r)}
+    \mathbf1_{\{r\le t\}}.
+  \]
+  Direct integration gives
+  \[
+    \int_\R h_\lambda(t,r)h_\lambda(s,r)\ud r
+    =2\lambda e^{-\lambda(t+s)}
+    \int_{-\infty}^{\min(t,s)}e^{2\lambda r}\ud r
+    =e^{-\lambda|t-s|}.
+  \]
+  In particular, $\int h_\lambda(t,r)^2\ud r=1$.
+  On the complex Hilbert space
+  \[
+    \mathcal H_L=L^2((0,L]\times\R^d\times\R,
+    \nu(\ud\lambda)\mu(\ud\xi)\ud r),
+  \]
+  with inner product linear in its first entry, put
+  $\Phi_L(t,x)(\lambda,\xi,r)=h_\lambda(t,r)e^{i\xi\cdot x}$.
+  Then
+  \[
+    \|\Phi_L(t,x)\|^2=m_L:=\nu((0,L])\mu(\R^d),\qquad
+    \langle\Phi_L(t,x),\Phi_L(s,y)\rangle=C_L((t,x),(s,y)).
+  \]
+  The scalar integrals are absolutely convergent: Cauchy--Schwarz in
+  $r$ bounds $\int|h_\lambda(t,r)h_\lambda(s,r)|\ud r$ by one, and
+  both remaining measures are finite on the cap.
+
+  The map $(t,x)\mapsto\Phi_L(t,x)$ is norm-continuous, since its squared
+  increment is $2m_L-2\operatorname{Re}C_L((t,x),(s,y))$.
+  Continuity of $C_L$ follows by dominated convergence against the finite
+  measures. Thus, the map is strongly measurable, has separable range
+  and is bounded. For $f\in L^1$, the Bochner integral
+  $F_L(f)=\int f(t,x)\Phi_L(t,x)\ud t\ud x$ exists.
+  Bochner Fubini, justified by $m_L\|f\|_1\|h\|_1$, gives
+  $Q_L(f,h)=\langle F_L(f),F_L(h)\rangle$. Therefore,
+  \[
+    |Q_L(f,h)|\le Q_L(f,f)^{1/2}Q_L(h,h)^{1/2}.
+  \]
+  This uses the original stationary covariance, rather than positivity
+  of an independently shifted cross kernel. The feature space is
+  deterministic and introduces no new Gaussian field.
+
+  Changing both integration variables in~\eqref{E:translated-covariance-form}
+  by the same time and spatial translation gives
+  \[
+    Q_L(T_{A,a}f,T_{A,a}h)=Q_L(f,h).
+  \]
+  Both differences remain unchanged. The full time line and Lebesgue
+  translation invariance justify this equality without an origin factor.
+  Apply Cauchy--Schwarz to the two different translates and this equality
+  separately to their self pairings. This proves the capped form
+  of~\eqref{E:translated-covariance-CS}.
+
+  To make the passage for possibly unbounded nonnegative kernels
+  explicit, set
+  \[
+    G_{i,M}(t,x)=\min(G_i(t,x),M)
+    \mathbf1_{\{0<t\le M,\ |x|\le M\}},\qquad M\in\N.
+  \]
+  These functions increase to $G_i$ almost everywhere. Their zero
+  extensions and translates are bounded compactly supported $L^1$
+  functions. Since $C_L\ge0$, monotone convergence passes the capped
+  inequality and common-translation identity to $G_i$ as $M\to\infty$.
+  Equivalently, the finite-cap passage follows from $L^1$ convergence
+  and the absolute bound after~\eqref{E:translated-covariance-form}.
+
+  Finally, positivity of $\nu$ and nonnegativity of $\gamma$ give
+  \[
+    Q_L(G_i^0,G_i^0)\uparrow N_C(G_i)^2,\qquad
+    Q_L(T_{A,a}G_1^0,T_{B,b}G_2^0)
+    \uparrow Q(T_{A,a}G_1^0,T_{B,b}G_2^0).
+  \]
+  The finite self norms bound the latter limit by $N_C(G_1)N_C(G_2)$.
+  The common-translation identity passes to the limit in the same way.
+  No division by a norm is used, so zero norms cause no exception.
+  No spatial Gaussian mollifier is removed in this argument.
+  This proves Lemma~\ref{L:translated-covariance-CS}.
+\end{proof}
+
+\begin{remark}[Source Case 2 and the actual regularized inputs]
+  \label{R:source-case2-time-shift}
+  \emph{(i)} In Case~2 of the proof of
+  \cite{chen:author2026:time-dependency}*{Theorem~3.1, p.~21}, the final
+  vertices belong to two nonempty chains of lengths $n_1,n_2$ with
+  $n_1+n_2=2n$. Fix their predecessor origins separately:
+  \[
+    (A,a)=
+    \begin{cases}
+      (0,0),&n_1=1,\\
+      (s_{n_1-1},x_{n_1-1}),&n_1>1,
+    \end{cases}
+    \qquad
+    (B,b)=
+    \begin{cases}
+      (0,0),&n_2=1,\\
+      (s_{2n-1},x_{2n-1}),&n_2>1.
+    \end{cases}
+  \]
+  The second chain's first vertex uses its own root. An empty chain
+  has no interchain Case~2 pair. The final-pair integral is, using
+  evenness to fix the orientation,
+  \[
+    \begin{split}
+      I&=\int_A^\infty\int_B^\infty\int_{\R^{2d}}
+      G_1(t-A,x-a)\kappa(t-s)\gamma(x-y)G_2(s-B,y-b)
+      \ud x\ud y\ud s\ud t\\
+      &=Q(T_{A,a}G_1^0,T_{B,b}G_2^0),
+    \end{split}
+  \]
+  where the full temporal expression means the positive cap limit.
+  Lemma~\ref{L:translated-covariance-CS} gives
+  $0\le I\le N_C(G_1)N_C(G_2)$ uniformly in the predecessors, so the
+  bound can be inserted into the remaining nonnegative integrals in the
+  source's induction. If only $u=t-A$ and $v=s-B$ are substituted, the
+  integrand has factors
+  \begin{equation}\label{E:translated-covariance-offset}
+    G_1(u,x-a)\kappa(u-v+A-B)\gamma(x-y)G_2(v,y-b).
+  \end{equation}
+  The time difference $A-B$ must remain. The source's first Case~2
+  equality on physical p.~21 displays $\kappa(u-v)$ after this change
+  of time variables, which is not an identity for general $A\ne B$.
+  Its spatial origins remain in the two tests, so $\gamma(x-y)$ is
+  correct in those absolute spatial variables. Changing also
+  $x=X+a$, $y=Y+b$ gives $\gamma(X-Y+a-b)$.
+  We use the original integral and the proved inequality, not the
+  offset-free equality or positivity of a shifted cross kernel.
+
+  \emph{(ii)} The norm $N_C(G)$ pairs $G(t,x)$ with $G(s,y)$ in
+  \eqref{E:translated-covariance-form}, with independent spatial variables.
+  The source's printed (3.5), physical p.~14, repeats $x$ in its second
+  Green factor. Our quadratic form states explicitly the convention used
+  in~\eqref{E:damped-norm-definitions}; it is not a literal quotation
+  of that display.
+
+  \emph{(iii)} At an edge $e=\{j,h\}$ of the manuscript's pairing
+  estimates, retain positive spatial widths $\epsilon_j,\epsilon_h$ and use
+  \[
+    \mu_e(\ud\xi)=e^{-(\epsilon_j+\epsilon_h)|\xi|^2/2}\mu(\ud\xi),
+    \qquad \gamma_e=p_{\epsilon_j+\epsilon_h}*\Gamma\ge0.
+  \]
+  For $b=\epsilon_j+\epsilon_h>0$, the radial ball masses
+  $\mu(B_r)=Vr^\alpha$ from Lemma~\ref{L:damped-homogeneous-norms} give
+  \[
+    \mu_e(\R^d)=\alpha Vb^{-\alpha/2}
+    \int_0^\infty u^{\alpha-1}e^{-u^2/2}\ud u<\infty.
+  \]
+  This uses ball masses rather than a radial density, and establishes
+  finiteness only. It does not replace the later uniform norm bounds.
+  Nonnegativity of the heat convolution follows from the nonnegative
+  Radon measure $\Gamma$. This spatial covariance stays fixed during
+  the lemma's application. For a measurable temporal domain
+  $A_e\subset(0,\infty)$, use
+  \[
+    \nu_e(\ud\lambda)=\mathbf1_{A_e}(\lambda)
+    \lambda^{\alpha_0-1}\ud\lambda/\Gamma_{\mathrm E}(\alpha_0).
+  \]
+  Since $\alpha_0>0$, it is finite on every $(0,L]$. This covers both
+  bounded regularization domains and marked-tail domains after adding
+  the finite cap, with the Gamma normalization already included.
+  The tested kernels are $e^{-\theta t}G_t$, with positive Green
+  smoothing in dimension three when a function is required.
+  They have $N_0=\theta^{-2}$, and
+  Lemma~\ref{L:damped-homogeneous-norms} supplies the finite full and tail
+  second-norm bounds. The source theorem's separate first-norm
+  hypotheses remain in force for the induction steps still imported.
+  The Case~2 estimate contributes exactly its two second norms, with
+  coefficient one. It changes neither a $Q_2$ factor nor any coefficient
+  estimate and adds no factor depending on $A+B$.
+  Temporal cap removal uses positivity; Green-width removal at fixed
+  positive spatial widths and the subsequent spatial-noise limit retain
+  their separate weak-limit arguments in Lemmas~\ref{L:joint-fixed-order}
+  and~\ref{L:spatial-wick-measures}. No pointwise monotonicity of spatial
+  Gaussian smoothing or general unregularized spatial-distribution
+  version is asserted. The other parts of the source's Theorem~3.1
+  remain imported with their hypotheses unchanged.
+\end{remark}
 
 Use the joint Gaussian regularizations of the source's (2.11).
 Write $a=(\epsilon,\delta)>0$ for one pair of widths and

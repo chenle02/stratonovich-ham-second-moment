@@ -6,6 +6,13 @@
 
 ## Current state
 
+- **Isolated production candidate (2026-11-02):** bridge plus exact
+  uniform-product paragraph integrated on the separate production branch.
+  Stable214-proof map preserves212 old bodies and changes only182 by its
+  exact proposal; production transcription/application review is PENDING.
+  Source-image/global/cold/FND adoption gates remain open. See
+  `reviews/2026-11-02-source-bridge-production/candidate-note.md`.
+
 - **Main depth recovery (2026-11-02):** full-main DeepSeek review returned
   MEDIUM; targeted deep audits have now accepted 98 named proof bodies at
   scoped HIGH, including terminal Wick/tails and full-upper assembly.
@@ -12119,3 +12126,23 @@ is being drafted/reviewed EXTERNALLY before anysourceintegration. No silence
 or automaticpromotion ofcondition. CurrentTeX/PDF/Lean unchanged. v22has
 98scopedHIGH and marks001/002 HIGH_INTERNAL_ONLY_PRODUCTION_PREMISE_PENDING.
 Originalall213/image/cold/wholegoal obligations remain open.
+
+
+### Isolated bridge/product production candidate; review pending
+
+The production branch from21bbf31 adds the reviewed translated-covariance
+lemma/remark and three setup references, plus only the exact proposed
+PROOF182 paragraph. The rebuilt260-page PDF passes zeroerrors/undefined
+references/citations/overfull. Candidate proofmap retains all originalIDs
+and labels:212old rawbodies identical,182exactproposal,new214. Candidate
+notes and proofmap are in reviews/2026-11-02-source-bridge-production/.
+Production transcription/application review is PENDING; standalone math
+reviews do not cover integratedbytes. Independent roots, coefficientone,
+positive fixedspatialwidth/cap limits and no spatialpointwisemonotonicity
+are retained. The source(3.5) independent-y convention and page21timeoffset
+are explicit; other sourceTheorem3.1 steps remain imported. No sourceimage,
+full3.6reproof, FND/global/cold adoption or goalcompletion is claimed.
+Root authorized one fresh DeepSeekV4Pro production audit with taskcap131072,
+alltoolsdenied, disclosed nonblindsourcehistory and noautomaticretry.
+This is a localcandidatecheckpoint, not roundclose; ACTIVE/<HUB> and
+all other repositories remain unchanged by this worker. No push or merge.
