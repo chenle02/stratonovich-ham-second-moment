@@ -6,14 +6,15 @@
 
 ## Current state
 
-- **ACTIVE by Le (2026-11-02):** explicit instruction to resume and complete
-  the full project; parallel author-side subagents are authorized. The prior
-  pause is superseded, its historical checkpoint retained. Cutoff proof v1
-  has a verified DeepSeek PASS_WITH_NOTES/HIGH report; seven production
-  dispositions are now scoped accepted at successor dd27f38 after actual
-  DeepSeek production PASS_WITH_NOTES/HIGH (all F01-F10).
-  Whole-paper/source/visual/final-cold obligations remain OPEN. No new
-  main-manuscript theorem or whole-goal completion follows from this subaim.
+- **BLOCKED (2026-11-02):** goal service now records the unchanged full
+  objective blocked after the required Kimi quota/route condition persisted
+  over more than three goal continuations. No current reviewer is live.
+  Cutoff production is scoped HIGH accepted; both broader SF04 audits
+  returned actual MEDIUM and remain below the HIGH gate. All current
+  findings are adjudicated and evidence retained. User route question is
+  pending; restored Kimi access or explicit replacement authorization is
+  needed for the next substantive required review. No reduced scope,
+  confidence threshold, guessed constants or goal completion is adopted.
 
 - **Reviewer directive (Le,2026-11-01):** use DeepSeek V4 Pro + Kimi-K3.
   This supersedes Opus-only routing for newly assigned reviews. Preserve
@@ -225,13 +226,12 @@
   b2fda02, 257 pages and 213 proof blocks. The earlier 4a65c79 whole-review
   attempt and continuation are TERMINAL and unaccepted (incomplete coverage,
   INCONCLUSIVE/medium). Their evidence remains historical, not live work.
-- **Immediate next (2026-11-02):** collect the actual expanded SF04
-  eligibility/application review PID2800827 at terminal state. All28
-  scientific source files and17 omitted upstream proofs are supplied; the
-  earlier six-module review remains MEDIUM/unaccepted. The expanded review
-  is non-blind and targeted, not whole synthesis/cold or image clearance.
-  Kimi monthly429 and the pending reviewer-route question remain. Fifteen
-  prepared components are not completed reviews; full goal scope persists.
+- **Immediate next (blocked checkpoint):** obtain restored authorized
+  reviewer capacity or Le's explicit replacement direction, then resume the
+  full source/image/whole/fresh-cold verification with exact bindings.
+  All current attempts are terminal; never restart old handles. Preserve
+  the full17-input/28file MEDIUM report and adjudication. No confidence-only
+  unchanged rerun or optional theory detour substitutes for completion.
 - **New accepted uniformR E Cameron/regulator:** scientificf54e92b,
   21checks/HIGH348.303s,no requiredrepairs;21input bindings/native archive
   verified before6optional clarity notes. Actual all-model uniformR means,
@@ -11403,3 +11403,36 @@ text arrived after actual launch and was NOT applied to the frozen carrier.
 Any resulting external-source limitation stays open; no second call or
 mutation. All source-image/fullSF04/whole-synthesis/finalcold gates remain.
 Kimi capacity/replacement question still unanswered; no alternative authorized.
+
+
+### Expanded eligibility audit closed as MEDIUM; goal BLOCKED
+
+Actual DeepSeek V4 Pro returned PASS_WITH_NOTES/MEDIUM,775.546seconds,
+E01-E10 PASS/PASS_WITH_NOTES with remaining depth/source-image limitations.
+The seventeen formerly omitted inputs are now supplied; the reviewer accepts
+all five author rebuttals and reports no blocking defect in the assigned
+chain. This is NOT HIGH or fullSF04/whole/cold acceptance. Native
+PID2800827/handle26981/session ses_e65d98fe4ffe4UdtSYbB0B5euP TERMINAL0.
+Actual model/full prompt/stop/no-tools/clean carrier/all28science and
+separatebf6c1ba response bindings verified. Root rehashed all71archive
+members; archive SHA256aab7846c38a49c337c6067c131779316edcc7635afb7225e0cb61e20822b139b.
+Actual input363397tokens confirms context fit; no source bytes dropped.
+
+Every new finding is adjudicated in eligibility/adjudication.md. Mainchain
+and derived-bound non-input classification does not waive the kept auxiliary
+Chen-Hu/Chen2023 applications or full213proof source scope. Finite Lean
+metadata already states its analytic exclusions; no unverifiable packet
+claim is counted as a new certificate. c_Y(B) coarse and C_gr quantitative
+constants must remain distinct. K/B sentence has coefficient antecedent,
+not a static-wave norm bound. No mathematical/PDF change was warranted or
+made. Original confidence and all source-image limitations are preserved.
+
+All current reviewer receipts are terminal and owned PIDs absent. The
+required Kimi monthly429 condition persisted across more than three
+continuations without restored access or an authorized replacement; the
+user question remains unanswered. Useful current scientific review and
+adjudication work is complete, with no established repair justifying an
+unchanged confidence-seeking call. Completion/blocking audit retained in
+reviews/2026-11-02-resumption/blocker-and-completion-audit.md. Goal service
+returned BLOCKED with the full objective unchanged. This is not a user
+pause or completion. Preserve state and await external capacity/direction.

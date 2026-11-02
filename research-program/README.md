@@ -299,3 +299,15 @@ A reversed cone identity in the reviewer summary is preserved and corrected
 in that adjudication; the reviewed proof itself was unchanged and correct.
 No complete local Fréchet flow or primary-source-image clearance is claimed.
 The original moment theorem's full verification remains the completion target.
+
+
+## Current verification stop
+
+The expanded full-context actual-law/application review returned MEDIUM,
+not the required HIGH. Its report and every finding are preserved in
+[the expanded audit](../reviews/2026-11-02-sf04-eligibility/adjudication.md).
+The scientific manuscript is unchanged. The required Kimi route returned
+a monthly quota refusal, with no image or report credit. All reviewers are
+now terminal, and the full goal is blocked pending restored capacity or
+Le's explicit replacement-reviewer direction. Source/image/whole/cold
+requirements remain intact; see the [completion and blocker audit](../reviews/2026-11-02-resumption/blocker-and-completion-audit.md).
