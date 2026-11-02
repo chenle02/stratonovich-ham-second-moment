@@ -1,58 +1,55 @@
-Last updated: 2026-11-02 04:23 UTC (Codex)
+Last updated: 2026-11-02 05:49 UTC (Codex)
 
 LATEST USER DIRECTION: derive the actual constants, whatever computation yields.
 Chen matching is not a completion requirement.
 
 ## ⏭ Next session: where to stand and what to do
 
-Collect the EXISTING full MAIN DeepSeek review at terminal state without
-restarting it. Le explicitly resumed the goal and instructed DeepSeek V4 Pro
-as MAIN reviewer. Goal ACTIVE; prior blocked checkpoint remains history.
-ACTIVE research is
+Collect the TWO existing MAIN deep reviews at terminal state, without
+restarting either. Goal ACTIVE; DeepSeek V4 Pro is MAIN reviewer by Le's
+explicit direction. ACTIVE research is
 ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave,
-branch research/fixed-mask-young-20261031. Progress.md is authority.
+branch research/fixed-mask-young-20261031; Progress.md is authority.
 
-Main attempt sibling stratonovich-main-deepseek-review-v1 is LIVE at capture:
-PID3010935/supervisor3010742, handle33922,
-session ses_e65832d95ffego6ugwXbv52qh5. Inspect native/exit.json and actual
-process. Clean carriercf229b1ea868b915b4b332f9584f7e0e3323652f;
-prompt1674228bytes/SHA256
-55a07bd2e40c4d1a2ca553553d9c9b039d789459dfc5b0477482fd1673582dba.
-Scientific887 with current279governance separately bound. All64assigned
-texts total1339097bytes; all28TeX,7primary carriers,finite evidence and
-calibrations supplied. All213proofs/44sections/63namedchecks plus explicit
-213-entry proof-coverage ledger are requested. No prior narrow reports
-supplied as proof authority. HIGH not presumed; record depth/coverage honestly.
+LIVE at capture:
+- UnitB PROOF042-045 (static-to-interval): sibling
+  stratonovich-main-deep-b-v1, PID3148173/supervisor3147994, handle56604,
+  session ses_e65399441ffe8l76vpBV5DEzX0. Carrier8cf1476bad3376535c8ac25df4ba13d9f5446717;
+  promptSHA6056eba446071e4d69c2367bec9ef2b28e5b16d1ee8623977df901bf1fd061c2.
+- Wave PROOF066-074 (three temporal plus six wave-variance proofs): sibling
+  stratonovich-main-deep-wave-v1, PID3146523/wrapper3146496, handle34604.
+  Carrier1cb2dcf0005621ee6efbf56329e341f538c5cabd;
+  promptSHAb4e1d93b78d1c20ed3378e75c81913d262f24ef3878853c829c5844ae9e9b92e.
+Both have exact frozen887science, complete input bodies and taskcap131072,
+no automatic retries. Inspect actual native/exit.json/process, not old todos.
 
-This is a full MAIN mathematical review, not a bounded source/application
-audit and not the old Opus-only composition consumer. All image/render/
-edition and fresh independent cold gates remain separate and open. Kimi's
-last actual attempt is monthly429/no credit; question about retaining Kimi
-or an authorized replacement for those gates remains pending. No fallback
-or waiver is inferred from designating the main reviewer.
+Scoped HIGH depth now accepted for PROOF037-041 (static UnitA) and
+PROOF061-065 (covariance), adoptione415c3c. All report-only density/equality/
+Q_z/Fock/blindness wording issues are adjudicated against unchanged correct
+source. UnitA original length-stop had no report; ONE same-session continuation
+completed the same review, not a second vote. Construction001-009 remains
+actualMEDIUM despite reportedCHECKED. Full MAIN is terminalMEDIUM with
+30CK/58undefinedCK-NH/125NF, not its incorrect78/135 summary. Corrected
+proof-index-v2 fixes only PROOF093 (actual deferred P:actual-operator-driver).
 
-All earlier reviewers are TERMINAL. Cutoff-v2 is scoped HIGH accepted;
-both SF04 text/application reviews remain actual MEDIUM. Correct formulas
-were not changed to satisfy incorrect objections. Main source/PDF/80finite
-facts remain unchanged. Exact full text/line/source maps retained in
-reviews/2026-11-02-main-deepseek/.
-
-Prior blocked-status wiki maintenance is completed at58048edc, exact
-receipt/live page verified under main-review-resumption/wiki-blocked-completed.
-That dated status is superseded by Le's new direction; current main-review
-wiki refresh remains due at the next substantive checkpoint.
+Use main-deepseek/depth-ledger-v1.json and deep-audit-worklist.md. All213proofs,
+44sections,63global/main checks and source/image/render/fresh-cold gates
+remain required. These bounded units recover proof depth, not a smaller
+replacement goal. No mainTeX/PDF/80finitefact change or full-goal clearance.
+Kimi image/cold capacity/replacement question remains pending; no waiver.
+All other current reviewer processes are TERMINAL.
 
 ## Pre-flight checks
 
 1. Confirm this literal root and clean master. The pre-handoff root baseline
-   is 1bb982ddcf56d9dfdf3dc1f9c7f14010a71b9b47; verify ancestry, not equality
+   is 69fe9450b0d64105ca3b976a692eeadf409cd25d; verify ancestry, not equality
    to the later handoff commit. Preserve any foreign work.
 2. In ACTIVE, check git status, branch, latest Progress.md and ancestry of
-   4865a00240881aa19d6e9df0eb3ad4b57ea45636. Fetch serially and compare
+   235224df4aaf79aa7b92da482cb93f82d4d21ff1. Fetch serially and compare
    local/origin/<HUB> before edits. Recorded baseline was clean/equal.
-3. Verify prior cutoff/SF04/Kimi terminal receipts and then inspect the
-   NEW main-review PID3010935/session/exit.json. It is the only live reviewer
-   at capture. Never restart a live attempt on observation timeout.
+3. Full main3010935, construction3053225, UnitA original3049511 and
+   continuation3081094, covariance3083420 are TERMINAL. Inspect the two
+   NEW UnitB/Wave processes and exit receipts; never restart a live attempt.
 4. Verify proof-v2 and its three imported construction modules against the
    frozen source-bindings in reviews/2026-11-02-cutoff-overlap-proof-v2/.
    Original inventory has448files:447currently match and PROJECT-GOAL.md
@@ -63,34 +60,42 @@ wiki refresh remains due at the next substantive checkpoint.
    reviews/2026-11-02-resumption/. Preserve all original models and all
    86primary frames/257pages/28TeX/44sections/213proof obligations.
 6. Kimi session76482/PID2686747, cutoff-v2 PID2685802 and SF04-text
-   PID2728316 and expanded SF04 PID2800827 are TERMINAL. Main-review
-   PID3010935 is LIVE at capture. Goal ACTIVE under Le's main-review
-   instruction; image/cold route is still unresolved, with no gate waiver.
+   PID2728316 and expanded SF04 PID2800827 are TERMINAL. Current live
+   UnitB/Wave attempts are named above. Goal ACTIVE; image/cold route remains
+   unresolved, without any source/model/confidence waiver.
 7. The wiki page is read-only here; maintenance goes through the canonical
    queue. Local wiki snapshots may lag <HUB>. No correspondence,
    sibling edits, new companion, HPC or public release is authorized.
 
 ## Concrete deliverables for the next session
 
-Collect the full main review with exact route/prompt/source/coverage and
-native archive/readback. Adjudicate every finding and every unchecked proof;
-all63checks and213proof-ledger entries must be inspected, not merely counted.
-Preserve actual confidence and separate image/cold requirements. Continue
-full original goal, not forced Chen endpoints or reduced proof scope.
+Collect exact UnitB/Wave reports, validate route/prompt/source/individual
+proof coverage/native archives and adjudicate every finding. Continue the
+full depth worklist based on actual outcomes; pending interval inventory/
+splitting and canonical-upper units must retain complete upstream bodies.
+Do not relabel MEDIUM or missing reports as HIGH, or scoped depth as global
+clearance. Preserve all213proof and final source/visual/cold obligations.
 
 ## Success criteria for the immediate next step
 
-Actual terminal main report verified with complete213proof/44section scope,
-all actual source hypotheses and constants/calibrations. Unchecked or unclear
-proofs remain explicit; text delivery is not proof verification. No image,
-old composition, cold or goal clearance is inferred from this mathematical
-review alone. Prior raw MEDIUM reports and failed Kimi attempt stay intact.
+Actual returned grades and full target proof statuses verified against exact
+source bodies; explicit hypotheses, constants and limit orders checked.
+HIGH accepted only at its scoped target after adjudication. Source-image,
+main-global, old composition and cold gates stay distinct. Raw reports,
+locator corrections and length/collection failures remain immutable.
 
 ## Anti-success criteria
 
 [held back: collaborators' unpublished work]
 
 ## What the previous sessions produced
+
+2026-11-02 main depth recovery:fcf29f1 retains fullMAIN MEDIUM report160native
+members, corrects solePROOF093 locator and reconciles30CK/58qualified/125NF.
+c2d931d retains constructionMEDIUM37members and UnitA lengthstop42members.
+e415c3c accepts scoped covarianceHIGH39members and UnitA same-sessionHIGH
+continuation25members, with all wording/custody findings adjudicated and no
+source changes.235224d binds LIVE next UnitB/Wave reviews; full goal intact.
 
 2026-11-02 renewed main-review direction:279e118 records Le's explicit
 DeepSeek MAIN role and ACTIVE objective; a8c5aa6/4865a00 launch/bind one
@@ -2155,15 +2160,16 @@ held. Main p2source/PDF/Lean facts unchanged; no reviewer live.
 ## Repo & git state at handoff
 
 ROOT master before this HANDOFF-only commit:
-1bb982ddcf56d9dfdf3dc1f9c7f14010a71b9b47, clean and origin/<HUB> equal.
-ACTIVE research4865a00240881aa19d6e9df0eb3ad4b57ea45636, clean/synchronized.
-Main-review governance279e118; live launch a8c5aa6, exact maps4865a00.
+69fe9450b0d64105ca3b976a692eeadf409cd25d, clean and origin/<HUB> equal.
+ACTIVE research235224df4aaf79aa7b92da482cb93f82d4d21ff1, clean/synchronized.
+Full-main evidence/index correctionfcf29f1; construction/length evidencec2d931d;
+scoped static/covariance HIGH adoptions e415c3c; current liveB/Wave235224d.
 Main scientific887 and source/PDFb2fda02 unchanged;257page PDF SHA256
 10bfeae6eb576e23ba928b8ef9eca968d87f23ac7eff884c632bf50acb3294c9.
-Existing80finite facts/22seams unchanged. Prior native archives preserved;
-new main native directory retained externally and named above. No uncommitted
+Existing80finite facts/22seams unchanged. All original archives preserved;
+new live native directories named above retained externally. No uncommitted
 scientific WIP. This handoff is pushed and canonical <HUB> synchronized
-immediately afterward, then exact parity checked.
+immediately afterward, then parity checked.
 
 ## Operating notes
 
@@ -2171,12 +2177,13 @@ immediately afterward, then exact parity checked.
 
 ## Risks to monitor
 
-The full main input is large: planning chars/2 plus65536output and32768system
-reserve gives928274tokens against cached1048576context, not an exact tokenizer
-count. Actual usage/finish/coverage govern; no source omission or automatic
-retry. Extracted formulas can be garbled; leave unresolved source fidelity
-open without actual image checks. Both previous broader audits are MEDIUM,
-not prior votes authorizing main acceptance. Kimi's image/cold quota issue
-remains. Source447/448old inventory has known PROJECT-GOAL governance delta;
-all28 scientific sources exact887. Final whole/source/visual/cold delivery
-and current wiki status refresh remain open.
+The broad MAIN report was incomplete atHIGH; raw counts and undefined
+qualified rows cannot be used as accepted proof coverage. UnitA's original
+65k task limit yielded no report; same-session131k continuation completed
+it. New complex units use131k to allow a final report, not relax confidence.
+Keep rawLF source lines distinct from renderer splitlines/formfeeds and
+preserve missing finalLF. Prior status annotations leaked into UnitA identity
+metadata and were disclosed; no strict blindness/cold credit. New identity
+packets strip them. All current scientific28files exact887; old448inventory
+has known PROJECT-GOAL governance delta. Kimi image/cold access remains
+unresolved, and current wiki status refresh is due after review recovery.
