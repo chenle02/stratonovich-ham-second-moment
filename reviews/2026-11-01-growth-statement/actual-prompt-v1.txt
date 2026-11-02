@@ -1,0 +1,1088 @@
+# Tailored Paper-Dev Review Panel Prompt
+
+You are the DeepSeek V4-Pro adversarial skeptic.
+
+[held back: collaborators' unpublished work]
+
+Effective route evidence:
+- category: paper-review-deepseek
+- model: deepseek/deepseek-v4-pro
+- variant: (none)
+
+Project root: current working directory
+Target file: candidate.json
+Purpose: Find proof gaps, false identities, hidden hypotheses, incorrect constants, and invalid asymptotics.
+
+Required read order:
+1. Do not inspect any Progress.md, Review.md, HANDOFF.md, reviews/ directory, paper-dev state file, or experiments ledger; this run is intentionally blind to prior workflow claims, reviewer verdicts, and conclusions. These artifacts are removed from the review snapshot.
+2. Use the PaperDev-Tailored-Workflow.md excerpt embedded below if it is present.
+3. Use the exact bounded context file(s) embedded below; do not open or search for their paths.
+4. Do not open or otherwise read candidate.json. Audit only the exact line-numbered target excerpt(s) in this prompt.
+
+Task:
+Audit Independently refute the frozen abstract upper-growth statement and its scope; no paper-novelty or actual SPDE extension verdict requested. Check proof logic, signs, boundary terms, constants, cited identities, final coefficients, and large-time/asymptotic claims where relevant. For the honesty role, focus on overclaims in the manuscript without reading Progress.md or Review.md.
+
+Output exactly this markdown shape:
+
+# Review Result — deepseek
+
+- category: paper-review-deepseek
+- model: deepseek/deepseek-v4-pro
+- verdict: PASS | PASS_WITH_NOTES | FAIL
+- confidence: LOW | MEDIUM | HIGH
+
+## Critical findings
+
+## Noncritical findings
+
+## Checked derivations
+
+## Required fixes before production gate
+
+## One-line summary
+
+Additional user/project instructions:
+Use NO tools. All needed text is inlined. Audit exactly G01 actual Gaussian/Cameron scaling and changing Banach spaces; G02 Borel tube envelope and zero-law guards; G03 moment finiteness deduced before assumption; G04 one growing cutoff polynomial versus subquadratic tail; G05 SAME Z_delta and correct delta-first/B-second limits; G06 no tautological hypothesis or hidden optimizing selector; G07 scalar nonzero sanity model and all four falsification boundaries, including l2 escaping directions; G08 faithful extraction from supplied Gaussian/signed contexts and independent of final C2/positive-score theorem; G09 honest mixture/observable/variational-limit and novelty exclusions; G10 complete supplied text and all remaining qualifications. Treat the classical Borell theorem as an imported input, not a source-proof or source-image certification. Return the panel report with every G check reason, verdict, confidence and concrete required repairs. HIGH is the acceptance threshold, not an instruction to report HIGH. Keep the report concise, about1800 words, and do not author repairs or a new theorem.
+
+--- PaperDev-Tailored-Workflow.md excerpt ---
+[missing: PaperDev-Tailored-Workflow.md]
+
+
+--- Exact bounded context files from the tracked HEAD ---
+The bytes between each BEGIN/END marker are embedded verbatim. Do not open or search for their paths.
+
+[gaussian-context.tex; git-blob ee49e6a7f7af65fe66dac5b1206bf8ad4f8505ef; sha256 b1dd4e41c4c5c6ca12e81482694b5b5a2af2cdbf98a56aa91ea6288a03a98598; size 25381 bytes]
+<<<BEGIN TRACKED CONTEXT: gaussian-context.tex>>>
+\section{Actual Gaussian control tubes and Rayleigh transfer}
+\label{S:actual-gaussian-tubes}
+
+We first state the Gaussian geometry with its exact covariance scale.
+Let $H$ be real separable Hilbert, $W$ its given isonormal process,
+and $X$ a strongly measurable centered Gaussian variable in a real
+separable Banach space $\mathscr B$, with $\E\|X\|^2<\infty$.
+Assume every continuous linear coordinate has the form
+$\ell(X)=W(k_\ell)$, $k_\ell\in H$.
+Fix $0<\delta<1$ and write
+\begin{equation}\label{E:tube-covariance-scale}
+  Ch=\E[XW(h)]=\sqrt\delta\,\mathcal M_\delta h,\qquad
+  H_{\rm seen}=\overline{\operatorname{span}\{k_\ell\}},\qquad
+  E_0=\overline{C(H)} .
+\end{equation}
+Assume $\mathcal M_\delta:H\to\mathscr B$ is compact.
+All Hilbert balls below are closed.
+
+\subsection{The genuine Wiener realization}
+
+\begin{proposition}[First-chaos realization on the actual support]
+  \label{P:tube-wiener-realization}
+  The variable $X$ lies in $E_0$ almost surely, with a centered
+  Radon Gaussian law of full support there.
+  Its genuine Cameron space and norm are
+  \begin{equation}\label{E:tube-cameron-space}
+    H_{\rm CM}=C(H_{\rm seen}),\qquad
+    \|Ch\|_{\rm CM}=\|P_{\rm seen}h\|_H .
+  \end{equation}
+  This support triple is an abstract Wiener realization, including
+  the measurable-norm condition.
+\end{proposition}
+
+\begin{proof}
+  The zero law has $C=0$ and $E_0=\{0\}$ and is immediate.
+  A countable norming family exists in $\mathscr B^*$:
+  choose a dense sequence on the unit sphere and apply Hahn--Banach
+  at each point. Approximation gives
+  $\|x\|=\sup_j|\ell_j(x)|$.
+  Norms of differences from a countable dense set show that these
+  coordinates generate the Borel sets.
+  Consequently $X$ is measurable in the completion of $\sigma(W(H))$.
+  Fix an orthonormal basis $(e_j)$ of $H$ and set
+  $\mathcal G_j=\sigma(W(e_1),\ldots,W(e_j))$.
+  In finite dimension these sums and projections stabilize at the dimension.
+  Bochner conditional expectations need no Radon--Nikodym property here:
+  define them first on finite-valued simple variables using scalar
+  conditional expectations, then extend by the $L^2$ norm contraction.
+  Simple approximation supplies their scalar testing identities.
+  Gaussian regression and the countable norming family give
+  \begin{equation}\label{E:tube-finite-regression}
+    X_j=\E[X\mid\mathcal G_j]
+    =\sum_{l\le j}W(e_l)Ce_l,\qquad X_j\longrightarrow X
+    \quad\hbox{in }L^2(\mathscr B).
+  \end{equation}
+  To justify convergence, finite-coordinate scalar events approximate
+  all events in the generated sigma field: the class of events whose
+  indicators are approximable in $L^2$ is a monotone class containing
+  the finite-coordinate algebra. Approximate a Bochner variable by
+  simple variables and use the conditional $L^2$ contraction.
+
+  Bounded testing gives $\ell(Ch)=\langle k_\ell,h\rangle$.
+  Thus, $\ker C=H_{\rm seen}^\perp$, and $C$ is injective on
+  $H_{\rm seen}$. The closed first chaos generated by $X$ is
+  exactly $W(H_{\rm seen})$.
+  Its covariance image therefore has the first-chaos norm
+  in~\eqref{E:tube-cameron-space}; unused directions are removed
+  by the orthogonal projection, without an inverse covariance.
+  This is the genuine Cameron image under the first-chaos definition.
+  The finite sums in~\eqref{E:tube-finite-regression} lie in
+  $E_0$, so $L^2$ convergence and an almost-sure subsequence
+  put $X$ in that closed space almost surely.
+  Functionals on $E_0$ extend to $\mathscr B$ by Hahn--Banach,
+  so restriction preserves the scalar laws and first chaos.
+
+  Its law is tight. For each radius $2^{-j}$ choose a finite union
+  of balls of mass greater than $1-\varepsilon2^{-j-1}$,
+  using a countable cover of the separable space.
+  The intersection of the corresponding finite closed unions
+  is closed and totally bounded and has mass at least $1-\varepsilon$.
+  Completeness makes it compact.
+  Metric Borel regularity on these compact sets, followed by tightness,
+  gives a Radon law.
+  To prove full support, the tail $X-X_j$ is independent of the
+  finite Gaussian head: every tail coordinate has label
+  $(I-P_j)k_\ell$, orthogonal to $e_1,\ldots,e_j$.
+  Joint Gaussianity and countable Borel coordinates give Banach
+  tail independence.
+  Given $h$ and $\varepsilon>0$, choose $j$ with
+  $\|CP_jh-Ch\|<\varepsilon/3$ and
+  $\mathbb P(\|X-X_j\|<\varepsilon/3)>0$.
+  The finite head has positive probability in every ball about
+  $CP_jh$, even if its covariance is singular:
+  the preimage under its finite linear map contains an open ball
+  about the coefficient vector of $P_jh$.
+  Independence proves positivity of every ball about $Ch$.
+  Closure proves that the support is all of $E_0$.
+
+  We check the measurable norm explicitly.
+  In $H_{\rm seen}$ put $V_j=\operatorname{span}\{P_{\rm seen}e_l:l\le j\}$.
+  Any finite orthonormal family $(h_k)$ in $V_j^\perp$
+  is also orthogonal to $e_1,\ldots,e_j$.
+  The same regression and Bochner Jensen argument gives
+  \[
+    \E[X-X_j\mid W(h_k),\hbox{ all }k]
+    =\sum_k W(h_k)Ch_k,\qquad
+    \E\left\|\sum_kW(h_k)Ch_k\right\|^2
+    \le\E\|X-X_j\|^2 .
+  \]
+  For any $\varepsilon>0$ choose $j$ so that the right side
+  is less than $\varepsilon^3$.
+  Markov bounds the probability that this finite sum has norm
+  exceeding $\varepsilon$ by $\varepsilon$, uniformly over every
+  such finite orthonormal family.
+  Since $C:H_{\rm seen}\to H_{\rm CM}$ is isometric, the excluded
+  finite-dimensional Cameron subspace is $C(V_j)$.
+  This is the measurable-norm tail condition for the dense Hilbert
+  image, whose Banach completion is $E_0$.
+  The characteristic functional of the law is
+  $\E e^{i\ell(X)}=\exp(-\|k_\ell\|_H^2/2)$.
+  These facts give the stated actual abstract Wiener realization.
+  The zero space has the direct zero-law interpretation.
+  This proves Proposition~\ref{P:tube-wiener-realization}.
+\end{proof}
+
+\subsection{Closed tubes and exact half-action geometry}
+
+We import the set-enlargement theorem
+\cite{friz.hairer:20:course}*{Theorem~11.6, p.~190},
+with footnote~3 on p.~190; p.~191 supplies the following context.
+For an abstract Wiener space, a Borel $A$ of positive mass and
+its Cameron unit ball $\mathcal K$, it states
+\[
+  \mu((A+t\mathcal K)^c)
+  \le\overline\Phi_{\rm N}(\widehat a+t),\qquad
+  \widehat a=\Phi_{\rm N}^{-1}(\mu(A)),\quad t\ge0 .
+\]
+Here $\Phi_{\rm N}$ is the standard normal distribution function;
+the same page gives $\overline\Phi_{\rm N}(y)\le e^{-y^2/2}$
+for $y\ge0$. This theorem is imported, not proved here.
+It concerns Gaussian input sets, not Gaussianity of a nonlinear wave.
+We verify Borel measurability of every enlargement we use.
+
+\begin{lemma}[Compact images and attained tube radii]
+  \label{L:tube-closed-geometry}
+  Suppose the law of $X$ is nonzero and put
+  \[
+    b_\delta=2\E\|X\|,\qquad
+    A_\delta=\{x\in E_0:\|x\|\le b_\delta\},\qquad
+    \mathcal T_r=A_\delta+\mathcal M_\delta(\overline B_H(r)).
+  \]
+  Every $\mathcal T_r$ is closed.
+  The extended distance
+  $d_\delta(x)=\inf\{r\ge0:x\in\mathcal T_r\}$ satisfies
+  \begin{equation}\label{E:tube-attained-radius}
+    \{d_\delta\le r\}=\mathcal T_r,\qquad
+    \mathbb P(d_\delta(X)>r)\le e^{-r^2/(2\delta)},\quad r\ge0 .
+  \end{equation}
+  In particular, $d_\delta$ is lower semicontinuous and finite almost surely.
+\end{lemma}
+
+\begin{proof}
+  A compact map from a separable Hilbert space sends a closed bounded
+  ball to a compact set, including closedness of the image.
+  Indeed, diagonal orthonormal coordinates and Fatou give a weakly
+  convergent subsequence of any bounded sequence, with limit still
+  in the ball. Compactness gives norm-convergent image subsequences,
+  and bounded scalar testing identifies every limit with the image
+  of that weak limit. This proves sequential compactness.
+  Closed $A_\delta$ plus a compact image is closed: along a converging
+  sequence of sums, extract the compact component and pass the
+  residual into the closed base set.
+
+  Membership in $\mathcal T_r$ implies $d_\delta\le r$.
+  Conversely, if $d_\delta(x)\le r$, choose $h_j$ with
+  $\|h_j\|\le r+1/j$ and $x-\mathcal M_\delta h_j\in A_\delta$.
+  A weak subsequence has limit $h$ of norm at most $r$;
+  compactness gives $\mathcal M_\delta h_j\to\mathcal M_\delta h$.
+  Closedness of the residual proves membership in $\mathcal T_r$.
+  This also covers $r=0$ and proves least finite-radius attainment.
+  Closed sublevels give lower semicontinuity and Borel measurability.
+
+  The nonzero law has $b_\delta>0$, and Markov gives
+  $\mu(A_\delta)\ge1/2$.
+  Projection onto $H_{\rm seen}$ removes all unused raw directions,
+  so~\eqref{E:tube-cameron-space} gives the exact set identities
+  \[
+    \mathcal K=C(\overline B_H(1))
+    =\sqrt\delta\,\mathcal M_\delta(\overline B_H(1)),\qquad
+    \mathcal T_r=A_\delta+(r/\sqrt\delta)\mathcal K .
+  \]
+  These are Borel enlargements by the preceding closedness.
+  The imported theorem applies to the genuine realization in
+  Proposition~\ref{P:tube-wiener-realization}.
+  Since $\widehat a\ge0$, it yields~\eqref{E:tube-attained-radius}.
+  The value $\widehat a=+\infty$ is allowed when $\mu(A_\delta)=1$.
+  The tail tends to zero, proving almost-sure finiteness.
+  No Cameron embedding constant changes the half action.
+  This proves Lemma~\ref{L:tube-closed-geometry}.
+\end{proof}
+
+\begin{proposition}[Rayleigh transfer including jumps and zero law]
+  \label{P:tube-rayleigh-transfer}
+  Let $F:E_0\to\R$ be Borel and let $G:[0,\infty)\to\R$
+  be Borel and nondecreasing.
+  If $F(x)\le G(r)$ for every $x\in\mathcal T_r$ and every $r\ge0$,
+  then
+  \begin{equation}\label{E:tube-rayleigh-transfer}
+    \E e^{F(X)/\delta}
+    \le\int_0^\infty\frac r\delta
+    \exp\left(\frac{G(r)-r^2/2}{\delta}\right)\ud r .
+  \end{equation}
+  For zero law use $E_0=\{0\}$, $C=\mathcal M_\delta=0$;
+  the same conclusion holds when $F(0)\le G(0)$.
+\end{proposition}
+
+\begin{proof}
+  The auxiliary Rayleigh variable $\mathcal R_\delta$ with density
+  $(r/\delta)e^{-r^2/(2\delta)}$, $r>0$, has mass one and
+  survival function $e^{-r^2/(2\delta)}$ by direct integration.
+  It is a scalar stochastic dominator, not a raw-Hilbert Gaussian norm.
+  For every level $t\ge0$, the upper level set of $e^{G(r)/\delta}$
+  is an upper interval, possibly empty or the whole halfline.
+  An open endpoint is controlled by~\eqref{E:tube-attained-radius}.
+  At a positive closed endpoint $c$, let $s\uparrow c$:
+  \[
+    \mathbb P(d_\delta(X)\ge c)
+    =\lim_{s\uparrow c}\mathbb P(d_\delta(X)>s)
+    \le e^{-c^2/(2\delta)}
+    =\mathbb P(\mathcal R_\delta\ge c).
+  \]
+  Rayleigh has no atoms, and at the closed endpoint zero both
+  probability bounds are one.
+  On the null event $\{d_\delta(X)=\infty\}$ define
+  $e^{G(d_\delta(X))/\delta}$ to be one. No value of $G$ at infinity
+  is needed and no expectation changes.
+  Layer cake and Tonelli therefore order the expectations of
+  $e^{G(d_\delta(X))/\delta}$ and $e^{G(\mathcal R_\delta)/\delta}$,
+  even when $G$ jumps or expectations are infinite.
+  Least-radius attainment gives $F(X)\le G(d_\delta(X))$
+  almost surely. No measurable selection of a control or residual is needed.
+  This proves~\eqref{E:tube-rayleigh-transfer}.
+  For zero law, $X=0$ and $F(0)\le G(0)\le G(r)$;
+  normalization of the Rayleigh density proves the claim directly.
+  In particular, $F(0)$ need not be zero.
+  This proves Proposition~\ref{P:tube-rayleigh-transfer}.
+\end{proof}
+
+\subsection{The actual wave tuple and its globally defined endpoint}
+
+Retain all original covariances and amplitudes.
+Use the exponents and fixed even $Q$ in
+\eqref{E:radius-anchor-parameters}--\eqref{E:radius-anchor-Q};
+put $\nu=1/\theta$ and choose
+$(1-\theta)^{-1}<r_t<2/a$, $\nu\le p<2<r_t$.
+All these intervals are nonempty by the strict subcritical assumptions.
+Fix integer $B\ge1$ and the true partition
+$\delta,N,s_m,\ell_m$ from Section~\ref{S:actual-cameron-mean}.
+Set $L_\delta=\delta^{-1}$ and eventually $R_\delta=L_\delta+2$.
+On the same given slow $W$ define the full, unprojected input
+\begin{equation}\label{E:tube-actual-input}
+  W_m(f)=W(T_{\delta,m}f),\qquad
+  X_m(u)=g_\delta M_R(W_m)(\min(u,\ell_m)),\qquad
+  g_\delta=\delta^{(1-a)/2}.
+\end{equation}
+Write $P_{\delta,E}^R$ for the actual physical $E$ flow driven by
+$g_\delta M_R(W\circ T_{\delta,0})$ on the global fast horizon $[0,L_\delta]$.
+Let $\mathscr B_\delta$ be the finite product of zero-start
+little $C^\theta([0,B];\mathcal K(E))$ spaces, with exact norm
+\[
+  \|x\|_{\delta,p}=\left(\delta\sum_{m=0}^N
+  \|x_m\|_{C^\theta}^p\right)^{1/p}.
+\]
+
+\begin{proposition}[Eligibility of the actual E law]
+  \label{P:tube-actual-law}
+  The tuple $X_\delta=(X_m)$ satisfies the preceding Gaussian
+  hypotheses with $H=H_I$ and
+  \begin{align}
+    (\mathcal M_\delta\Phi)_m(u)
+    &=\int_0^{\min(u,\ell_m)}
+    S_E(-v)\mathcal T_R\Phi(s_m+\delta v)S_E(v)\ud v,
+    \label{E:tube-actual-mean}\\
+    \E[X_\delta W(\Phi)]&=\sqrt\delta\,\mathcal M_\delta\Phi .
+    \label{E:tube-actual-covariance}
+  \end{align}
+  Its actual support is
+  $E_{0,\delta}=\overline{C_\delta(H_I)}\subset\mathscr B_\delta$,
+  where $C_\delta\Phi=\E[X_\delta W(\Phi)]
+  =\sqrt\delta\,\mathcal M_\delta\Phi$.
+  The actual map $\mathcal M_\delta$ is compact at each fixed radius
+  and parameters. At $R=R_\delta$,
+  \begin{equation}\label{E:tube-typical-radius}
+    b_\delta=2\E\|X_\delta\|_{\delta,p}
+    \le C_{Q,B,p}\delta^{(1-a)/2-d/Q}\longrightarrow0 .
+  \end{equation}
+\end{proposition}
+
+\begin{proof}
+  Compact operators on separable Hilbert $E$ form a separable
+  operator-norm space: finite-rank rational matrices in an
+  orthonormal basis are dense.
+  Polygonal paths give separability of the little H\"older closure.
+  The actual construction is a $C^\theta$ limit of zero-start
+  Lipschitz finite coefficient paths; stopping at $\ell_m$
+  and extending constantly preserves this space and gives zero
+  for an empty final interval.
+  Gaussian transfer retains the given $W$ for all finitely many blocks.
+  Every finite collection of linear statistics is an $L^2$ limit
+  of joint first-chaos Gaussians, hence jointly centered Gaussian.
+  The finite tuple has finite $L^2$ norm by the fixed-parameter
+  path moments in Corollary~\ref{C:radius-covariance-residuals}.
+  The raw Hilbert space $H_I$ is separable by
+  Lemma~\ref{L:cameron-supported-tensor}.
+  No separability of all $\mathcal L(E)$ or full $C^\theta$ is claimed.
+
+  The actual $E$ mean field $\mathcal T_R$ is the compression
+  of Proposition~\ref{P:cameron-full-mean}; it is compact into
+  $L^{r_t}(I;\mathcal K(E))$ at fixed $R$.
+  Proposition~\ref{P:uniform-mean-regulator} gives
+  $\|\mathcal T_R\|\le C_{\rm mean}=M_0\|C_t\|$ independently of $R\ge1$.
+  Compact conjugation, affine time pullback and
+  $1-1/r_t>\theta$ make the primitive in
+  \eqref{E:tube-actual-mean} bounded from that field space to
+  $\mathscr B_\delta$, with constant stopping.
+  Composition proves compactness of $\mathcal M_\delta$.
+  There is no uniform-radius compactness assertion.
+
+  The rank-zero identity~\eqref{E:cameron-actual-covariance},
+  compressed to $E$ as in Proposition~\ref{P:symplectic-block-mean},
+  gives~\eqref{E:tube-actual-covariance}.
+  Its scale is exactly $g_\delta\delta^{a/2}=\sqrt\delta$.
+  Every stopped row's slow pullback lies in $H_I$ by the
+  inside-$I$ endpoint approximation of Lemma~\ref{L:cameron-actual-residual}.
+  Countable matrix coordinates and rational times identify the
+  tuple in the closed first chaos $W(H_I)$, so every linear
+  statistic has its label there.
+  Equivalently, apply that lemma at $J=0$ on $F$ and compose
+  any $E$-tuple statistic with the bounded $E$-compression.
+  This is actual same-$W$ covariance, without a block-independence
+  assumption or a raw time-indicator multiplier.
+  Proposition~\ref{P:tube-wiener-realization} therefore applies
+  to this exact law on its support.
+  Finally Proposition~\ref{P:radius-mean-anchor}, with zero
+  residual projection, gives~\eqref{E:tube-typical-radius}.
+  The third fixed-$Q$ guard $Q>2d/(1-a)$ makes this exponent positive;
+  the first two supply the path moments and chaining.
+  Fast directions used for the symplectic baseline do not replace
+  this global $H_I$ action or get summed as separate costs.
+  Zero covariance gives zero drivers and means directly.
+  This proves Proposition~\ref{P:tube-actual-law}.
+\end{proof}
+
+\begin{lemma}[The actual endpoint functional]\label{L:tube-actual-endpoint}
+  For every $x\in\mathscr B_\delta$ define
+  \[
+    \begin{aligned}
+      P_m(x_m)&=S_E(\ell_m)U_{x_m}(\ell_m,0),\qquad
+      \mathcal P_\delta(x)=P_N(x_N)\cdots P_0(x_0),\\
+      F_\delta(x)&=2\delta\log\max(1,\|\mathcal P_\delta(x)\|).
+    \end{aligned}
+  \]
+  This is a finite continuous functional on all tuples.
+  For the actual input it satisfies
+  \begin{equation}\label{E:tube-global-endpoint}
+    \mathcal P_\delta(X_\delta)
+    =P_{\delta,E}^R(L_\delta,0),\qquad
+    e^{F_\delta(X_\delta)/\delta}
+    =\|P_{\delta,E}^R(L_\delta,0)\|^2 .
+  \end{equation}
+  These are almost-sure identities for each fixed admissible
+  $\delta,R,B$, without a simultaneous event over all parameter choices.
+\end{lemma}
+
+\begin{proof}
+  Generic Young evolution is globally defined and locally Lipschitz
+  in every $C^\theta$ driver. Finite products, fixed-time free
+  factors, norm and $\log\max(1,\cdot)$ preserve continuity.
+  Thus, $F_\delta$ is defined even off every Gaussian full-measure set.
+
+  Lemma~\ref{L:raw-block-restart}, in its noise-only case, applies
+  to this same full input with base physical profile $\eta^2$.
+  To check the exact objects, use its single retaining slow source
+  and pull it back by $T_{\delta,0}$ and $T_{\delta,m}$.
+  At fixed $\delta$ the global fast source pointfield is
+  $\delta^{a/2}Y^\rho(\delta u,x)$ and its local restriction is
+  its time shift by $mB$.
+  Their ordinary Duhamel flows have the same massless free groups,
+  amplitude $g_\delta$ and mask $m_R$.
+  Source limits are taken on the fixed finite extended horizon
+  $(N+1)B$ and on each local $B$ before composing the finitely
+  many factors. The actual raw cocycle from that lemma therefore
+  gives the ordered physical $F$ product with the true remainder.
+  The full drivers and free groups intertwine through the closed
+  isometry $i:E\to F$, including the source limits.
+  Restricting the product and using injectivity of $i$ gives
+  the first identity in~\eqref{E:tube-global-endpoint}.
+  Both fast velocity and displacement remain in each factor.
+  No mask was commuted through a free group, and the time blocks
+  remain correlated on the same $W$.
+  For zero covariance every input is zero and the ordered factors
+  are $S_E(\ell_m)$, whose product is $S_E(L_\delta)$.
+
+  Proposition~\ref{P:symplectic-raw}, at the fixed instance
+  $W_{\rm fast}=W\circ T_{\delta,0}$, $T=L_\delta$,
+  $c=g_\delta$, $\Phi=0$, gives norm at least one for this
+  actual global endpoint. It removes the maximum in the
+  definition of $F_\delta$, proving the second identity.
+  No fixed-radius Gaussian-operator rate or source-to-point result
+  is an input to this restart argument.
+  This proves Lemma~\ref{L:tube-actual-endpoint}.
+\end{proof}
+
+\subsection{Uniform coarse envelope and the exact radial integral}
+
+\begin{proposition}[Coarse tube envelope and actual operator moment]
+  \label{P:tube-coarse-envelope}
+  On the actual support $E_{0,\delta}$ let $A_\delta$ be its
+  closed ball of radius $b_\delta$ and put
+  \[
+    G_\delta(r)=
+    \sup_{\substack{a\in A_\delta\\\|\Phi\|_{H_I}\le r}}
+    F_\delta(a+\mathcal M_\delta\Phi).
+  \]
+  This is finite, nondecreasing and Borel.
+  There is $C_{\rm env}<\infty$, independent of $\delta$ and $R\ge1$,
+  such that
+  \begin{equation}\label{E:tube-coarse-envelope}
+    G_\delta(r)\le C_{\rm env}(1+b_\delta^\nu+r^\nu),\qquad
+    \E\|P_{\delta,E}^R(L_\delta,0)\|^2
+    \le\int_0^\infty\frac r\delta
+    e^{(G_\delta(r)-r^2/2)/\delta}\ud r .
+  \end{equation}
+\end{proposition}
+
+\begin{proof}
+  Put $G_B=\sup_{|v|\le B}\|S_E(v)\|$ and
+  $C_{\rm pr}=G_B^2[B^{1-1/r_t}+B^{1-1/r_t-\theta}]$.
+  The lower bound $G_B\ge1$ follows directly from $S_E(0)=I$.
+  Proposition~\ref{P:uniform-actual-cameron} gives
+  $1\le G_B\le3B$, $C_{\rm pr}\le18B^{3-1/r_t}$.
+  Its primitive estimate, now without the covariance factor
+  $\sqrt\delta$, gives
+  \begin{equation}\label{E:tube-primitive-sum}
+    \delta\sum_m h_m^{r_t}
+    \le(C_{\rm pr}C_{\rm mean})^{r_t}\|\Phi\|_{H_I}^{r_t},
+    \qquad h_m=\|(\mathcal M_\delta\Phi)_m\|_{C^\theta}.
+  \end{equation}
+  Indeed, each primitive norm is at most
+  $C_{\rm pr}\delta^{-1/r_t}
+  \|\mathcal T_R\Phi\|_{L^{r_t}(I_m)}$.
+  Raising to $r_t$ cancels the $\delta$ weight, and the true
+  partition sums to the full field norm, including an empty cell.
+
+  The generic Banach Young bound supplies $c_Y=c_Y(B,\theta)>0$
+  with $\log\|U_d(u,0)\|\le c_Y(1+\|d\|_{C^\theta}^{\nu})$
+  for $u\le B$. This follows from
+  \eqref{E:young-upper-refined-growth} and
+  \eqref{E:constant-young-growth} by
+  $d\le1+d^\nu$ and
+  $(1+d)^\nu\le2^{\nu-1}(1+d^\nu)$.
+  It applies on $\mathcal L(E)$ with multiplication norm one,
+  without Gaussian, positivity or Hamiltonian assumptions on $d$.
+  For $a\in A_\delta$ put $v_m=\|a_m\|_{C^\theta}$ and
+  $n=N+1$. Convexity and submultiplicativity give
+  \[
+    F_\delta(a+\mathcal M_\delta\Phi)
+    \le2\delta n(\log G_B+c_Y)
+    +2^\nu c_Y\delta\sum_m(v_m^\nu+h_m^\nu).
+  \]
+  The upper expression is nonnegative, so it also bounds the
+  logarithm with the maximum at one.
+  The exact finite weighted power-mean inequalities are
+  \begin{align*}
+    \delta\sum_m v_m^\nu
+    &\le(\delta n)^{1-\nu/p}\|a\|_{\delta,p}^\nu,\\
+    \delta\sum_m h_m^\nu
+    &\le(\delta n)^{1-\nu/r_t}
+    \left(\delta\sum_m h_m^{r_t}\right)^{\nu/r_t}.
+  \end{align*}
+  They use exponents $p/\nu\ge1$, $r_t/\nu>1$ and
+  nonnegative inputs $v_m^\nu,h_m^\nu$, followed by positive powers.
+  Zero norms and empty cells cause no negative powers;
+  $\delta>0$ and $n\ge2$, including the case $p=\nu$.
+  Since $\delta n\le2/B$, these bounds and
+  \eqref{E:tube-primitive-sum} give
+  $F_\delta(a+\mathcal M_\delta\Phi)
+  \le D_0+D_1b_\delta^\nu+D_2r^\nu$, where
+  \begin{align*}
+    D_0&=2(2/B)(\log G_B+c_Y),\\
+    D_1&=2^\nu c_Y(2/B)^{1-\nu/p},\\
+    D_2&=2^\nu c_Y(2/B)^{1-\nu/r_t}
+    (C_{\rm pr}C_{\rm mean})^\nu .
+  \end{align*}
+  Hence $C_{\rm env}=1+D_0+D_1+D_2$ is independent of
+  $\delta,R$ and proves the coarse bound for every admissible
+  $\delta$, not just when $b_\delta$ is small.
+  The supremum sets are nonempty and this bound makes their
+  suprema finite. Monotonicity gives Borel measurability without
+  asserting attainment of these suprema.
+  The definition bounds $F_\delta$ on every closed tube.
+  Apply Proposition~\ref{P:tube-rayleigh-transfer} and
+  \eqref{E:tube-global-endpoint} to obtain the operator-moment bound.
+  For zero law its direct case applies, with no assumption that
+  the free endpoint norm is one.
+  This proves Proposition~\ref{P:tube-coarse-envelope}.
+\end{proof}
+
+\begin{lemma}[Exact Rayleigh tail budget]\label{L:tube-rayleigh-tail}
+  Suppose $G$ is Borel and $G(r)\le A_0+Cr^\nu$, $C\ge0$, $1<\nu<2$.
+  If $M>0$ and $4C\le M^{2-\nu}$, then
+  \begin{equation}\label{E:tube-rayleigh-tail}
+    \int_M^\infty\frac r\delta
+    e^{(G(r)-r^2/2)/\delta}\ud r
+    \le4e^{(A_0-M^2/4)/\delta}.
+  \end{equation}
+  In particular the operator-moment bound in
+  \eqref{E:tube-coarse-envelope} is finite at fixed parameters.
+\end{lemma}
+
+\begin{proof}
+  The finite scalar cutoff inequality gives, for $r\ge M$,
+  $Cr^\nu-r^2/2\le-M^2/8-r^2/8$.
+  Its exact guards are $M>0$, $r\ge M$, $C\ge0$,
+  $1<\nu<2$ and $4C\le M^{2-\nu}$.
+  Indeed, $r^{2-\nu}\ge M^{2-\nu}\ge4C$ gives
+  $Cr^\nu\le r^2/4$, while $r^2\ge M^2$ splits the
+  remaining $-r^2/4$ into the two displayed negative terms.
+  Analytically,
+  $-\frac{\ud}{\ud r}[4e^{-r^2/(8\delta)}]
+  =(r/\delta)e^{-r^2/(8\delta)}$.
+  Integrating gives the front factor $4e^{-M^2/(8\delta)}$;
+  multiplication by $e^{(A_0-M^2/8)/\delta}$ proves
+  \eqref{E:tube-rayleigh-tail}.
+  Such a cutoff exists since $2-\nu>0$.
+  On $[0,M]$ the growth bound gives $G(r)\le A_0+CM^\nu$,
+  so the integral is finite there as well.
+  Apply this to $A_0=C_{\rm env}(1+b_\delta^\nu)$ and
+  $C=C_{\rm env}$ in the preceding proposition.
+  No infinite-dimensional Gaussian density is used.
+  This proves Lemma~\ref{L:tube-rayleigh-tail}.
+\end{proof}
+
+\begin{lemma}[The raw half-action supremum]\label{L:tube-half-action}
+  For finite $J:H\to\R$ bounded above on every raw ball,
+  let $g_J(r)=\sup_{\|h\|\le r}J(h)$. In the extended reals,
+  \[
+    \sup_{r\ge0}\{g_J(r)-r^2/2\}
+    =\sup_{h\in H}\{J(h)-\|h\|_H^2/2\}.
+  \]
+\end{lemma}
+
+\begin{proof}
+  For the lower inequality take $r=\|h\|$.
+  For the upper inequality, every $\|h\|\le r$ gives
+  $J(h)-r^2/2\le J(h)-\|h\|^2/2$.
+  Take first the ball supremum and then the radius supremum.
+  Each ball is nonempty with finite supremum, so no
+  infinity-minus-infinity expression occurs.
+  No compactness, rank or density assumption is needed.
+  This proves Lemma~\ref{L:tube-half-action}.
+\end{proof}
+
+The Gaussian transfer retains the half of the single global raw action.
+The coarse envelope is not the sharp spectral/product envelope.
+Its application to the original canonical point moment, and the sharp
+envelope and variational comparison, require their separate proofs.
+<<<END TRACKED CONTEXT: gaussian-context.tex>>>
+
+[signed-context.tex; git-blob 769e5f7e1c9d9fb26e0fc2e1a6ad92825450630f; sha256 a137f9d0f6aa1e2a62b6fed371d34119b4a2396c8015aefd3a4df62cb77d159e; size 11407 bytes]
+<<<BEGIN TRACKED CONTEXT: signed-context.tex>>>
+\section{The original upper bound by a moving signed raw score}
+\label{S:original-signed-score-upper}
+
+Keep all auxiliary choices fixed as in the Gaussian tube construction,
+including $\alpha/4<s_{\rm sp}<1/2$, the admissible $\theta,\nu,r,p$,
+and the three fixed even-$Q$ guards.
+The mean bound $C_{\rm mean}$ is independent of $R,B,\delta$;
+it may depend on those fixed auxiliary parameters and the model.
+The space $H_I$ has the ORIGINAL covariance $\Gamma$.
+Its norm is not reweighted by $g$ and is not a sum of fast block costs.
+Let $R_\delta=\delta^{-1}+2$ and
+$M_\delta=\E\|P_\delta\|_{\mathcal L(E)}^2$.
+For every fixed integer $B$ the actual Gaussian block tuple has typical
+radius $b_{\delta,B}=2\E\|X_{\delta,B}\|_{\delta,p}\to0$.
+Its endpoint is the same $P_\delta$ for every $B$ by
+Lemma~\ref{L:tube-actual-endpoint}, not a $B$-dependent surrogate.
+Write $\mathcal M_{\delta,B,R}$ for the normalized actual mean tuple
+in~\eqref{E:tube-actual-mean}, with the indicated block length and radius.
+Write $\mathcal F_{\delta,B}$ for the everywhere-defined endpoint
+functional $F_\delta$ of Lemma~\ref{L:tube-actual-endpoint}.
+
+\begin{lemma}[Signed score and quantitative radial envelope]
+  \label{L:signed-score-envelope}
+  For $R\ge1$ define the own score
+  \begin{equation}\label{E:signed-raw-score}
+    \mathcal S_R=\sup_{\Phi\in H_I}
+    \{2\operatorname{Rate}_R(\Phi)-\|\Phi\|_{H_I}^2/2\},
+    \qquad V_{\rm up}=\limsup_{\delta\downarrow0}\mathcal S_{R_\delta}.
+  \end{equation}
+  Then $0\le\mathcal S_R,V_{\rm up}\le2+2C_{\rm mean}^2<\infty$.
+  The actual tube envelope $G_{\delta,B}$ of
+  Proposition~\ref{P:tube-coarse-envelope} satisfies, uniformly in
+  $R\ge1$ (in particular at the actual stochastic radius $R_\delta$),
+  \begin{equation}\label{E:signed-polynomial-envelope}
+    G_{\delta,B}(\rho)\le A_0+A_1B^{3\nu}\rho^\nu
+    +\eta_B b_{\delta,B}^\nu ,
+  \end{equation}
+  for $0<\delta<\min(1,1/B)$ and every $\rho\ge0$, where
+  \[
+    \begin{aligned}
+      A_0&=4C_{\rm gr},\\
+      A_1&=2^{\nu+1-\nu/r}C_{\rm gr}32^\nu C_{\rm mean}^\nu,\\
+      \eta_B&=2^{\nu+1-\nu/p}C_{\rm gr}B^{\nu/p}.
+    \end{aligned}
+  \]
+  The score is not identified here with an author constant or a positive score.
+\end{lemma}
+
+\begin{proof}
+  The mean is linear, so $\mathcal T_R0=0$.
+  Its free form has nonnegative gradient energy and spectral bottom zero;
+  thus $\operatorname{Rate}_R(0)=0$.
+  Proposition~\ref{P:uniform-rate-averaging} gives
+  $\operatorname{Rate}_R(\Phi)\le1+C_{\rm mean}\|\Phi\|$.
+  With $q=\|\Phi\|\ge0$,
+  \[
+    2\operatorname{Rate}_R(\Phi)-q^2/2
+    \le2+2C_{\rm mean}q-q^2/2
+    =2+2C_{\rm mean}^2-(q-2C_{\rm mean})^2/2 .
+  \]
+  The coarser inequality also follows from half-weight
+  arithmetic--geometric mean at bases $q^2,(2C_{\rm mean})^2$,
+  with nonnegative weights and bases, including zeros.
+  The zero control gives the lower bound.
+  No optimizer, finite rank, positive control or convergence of
+  $\mathcal S_{R_\delta}$ is assumed.
+  The finite ceiling is auxiliary-parameter dependent and need not be sharp.
+
+  For $\|a\|_{\delta,p}\le b_{\delta,B}$, $\|\Phi\|\le\rho$ set
+  $v_m=\|a_m\|_\theta$ and
+  $h_m=\|(\mathcal M_{\delta,B,R}\Phi)_m\|_\theta$.
+  The quantitative physical bound~\eqref{E:uniform-product-growth},
+  already including the free factor, and convexity give
+  \[
+    \mathcal F_{\delta,B}(a+\mathcal M_{\delta,B,R}\Phi)
+    \le2C_{\rm gr}B\delta n
+    +2^\nu C_{\rm gr}B\delta\sum_m(v_m^\nu+h_m^\nu).
+  \]
+  Its upper expression is nonnegative, so it controls the maximum at one.
+  The true primitive estimate and weighted power mean give
+  \begin{align*}
+    \delta\sum v_m^\nu&\le(2/B)^{1-\nu/p}b_{\delta,B}^\nu,\\
+    \delta\sum h_m^\nu&\le(2/B)^{1-\nu/r}
+    (32B^{3-1/r}C_{\rm mean}\rho)^\nu .
+  \end{align*}
+  The exponents are $p/\nu\ge1$, $r/\nu>1$, inputs nonnegative,
+  $n=N+1\ge2$, $\delta>0$, and $\delta n\le2/B$.
+  Zeros and $p=\nu$ are legal.
+  The first constant is $4C_{\rm gr}$.
+  In the mean term the factors $B^{\nu/r}$ and $B^{-\nu/r}$
+  cancel exactly, leaving $B^{3\nu}$.
+  These computations give the displayed coefficients and
+  \eqref{E:signed-polynomial-envelope}, uniformly for all radii.
+  They use no unspecified $c_Y(B)$ or quantitative $F$ estimate.
+  This proves Lemma~\ref{L:signed-score-envelope}.
+\end{proof}
+
+\begin{proposition}[Finite-delta bulk and exact tail]
+  \label{P:signed-moment-bulk-tail}
+  For fixed integer $B\ge1$, $0<\delta<\min(1,1/B)$ and $M>0$,
+  define the deterministic number
+  \[
+    \mathcal E_{\delta,B,M}=
+    \max\left(0,\sup_{\substack{R\ge1,\ \|\Phi\|\le M\\
+    \|x\|_{\delta,p}\le b_{\delta,B}}}
+    [\mathcal F_{\delta,B}(x+\mathcal M_{\delta,B,R}\Phi)
+    -2\operatorname{Rate}_R(\Phi)]\right).
+  \]
+  It is finite. For every polynomial
+  $M_B=c_{\rm ball}B^{\kappa_{\rm ball}}$, with $c_{\rm ball}>0$,
+  $\kappa_{\rm ball}\ge0$, one has
+  \begin{equation}\label{E:signed-error-limit}
+    e_B:=\limsup_{\delta\downarrow0}\mathcal E_{\delta,B,M_B}
+    \ \text{finite and nonnegative},\qquad e_B\longrightarrow0 .
+  \end{equation}
+  If $4A_1B^{3\nu}\le M^{2-\nu}$, then
+  \begin{equation}\label{E:signed-finite-moment}
+    M_\delta\le
+    \frac{M^2}{2\delta}
+    e^{(\mathcal S_{R_\delta}+\mathcal E_{\delta,B,M})/\delta}
+    +4e^{(A_0+\eta_Bb_{\delta,B}^\nu-M^2/4)/\delta}.
+  \end{equation}
+\end{proposition}
+
+\begin{proof}
+  The polynomial envelope and nonnegative rate make this supremum
+  finite. It is an ordinary deterministic real number, not a
+  random uncountable-radius supremum.
+  At fixed $R$ the inner functions are continuous in controls and paths;
+  no measurable maximizing selector or joint $\delta,R$ measurability is needed.
+  The zero control and zero path have rate zero and
+  $\mathcal F_{\delta,B}(0)\ge0$, so the untruncated supremum
+  is already nonnegative.
+  The actual anchor $b_{\delta,B}\to0$ at fixed $B$ satisfies
+  Proposition~\ref{P:uniform-arbitrary-residual} exactly.
+  Its polynomial-radius conclusion gives $\limsup_B e_B\le0$.
+  At fixed $B$, the polynomial envelope bounds the inner limsup by
+  a finite number, and $e_B\ge0$ then proves~\eqref{E:signed-error-limit}.
+
+  The exact actual-law tube bound is
+  \[
+    M_\delta\le\int_0^\infty\frac{\rho}{\delta}
+    e^{(G_{\delta,B}(\rho)-\rho^2/2)/\delta}\ud\rho .
+  \]
+  For every $\rho\le M$, every actual base-ball $a$ and
+  $\|\Phi\|\le\rho$,
+  \[
+    \mathcal F_{\delta,B}(a+\mathcal M_{\delta,B,R_\delta}\Phi)-\rho^2/2
+    \le2\operatorname{Rate}_{R_\delta}(\Phi)-\|\Phi\|^2/2
+    +\mathcal E_{\delta,B,M}
+    \le\mathcal S_{R_\delta}+\mathcal E_{\delta,B,M}.
+  \]
+  Taking suprema and integrating $\rho/\delta$ over $[0,M]$
+  gives the first term of~\eqref{E:signed-finite-moment},
+  even if $M^2/(2\delta)<1$.
+  This used $\rho^2\ge\|\Phi\|^2$, not equality or an optimizer.
+  For the tail apply Lemma~\ref{L:tube-rayleigh-tail} with
+  $C=A_1B^{3\nu}$ and intercept $A_0+\eta_Bb_{\delta,B}^\nu$.
+  All cutoff guards hold: $M>0$, $\rho\ge M$, $C\ge0$,
+  $1<\nu<2$, $4C\le M^{2-\nu}$.
+  Its analytic integration retains both the front factor four
+  and the exponent $-M^2/4$.
+  Adding bulk and tail proves the finite-delta bound.
+  No infinite-dimensional density or Laplace principle is used.
+  This proves Proposition~\ref{P:signed-moment-bulk-tail}.
+\end{proof}
+
+\begin{proposition}[Two limits on the same actual moment]
+  \label{P:signed-operator-upper}
+  The actual global operator moment obeys
+  \[
+    0\le\liminf_{\delta\downarrow0}\delta\log M_\delta
+    \le\limsup_{\delta\downarrow0}\delta\log M_\delta
+    \le V_{\rm up}\le2+2C_{\rm mean}^2 .
+  \]
+\end{proposition}
+
+\begin{proof}
+  Choose any $c_{\rm ball}>0$ and
+  $\kappa_{\rm ball}>3\nu/(2-\nu)$, and set
+  $M_B=c_{\rm ball}B^{\kappa_{\rm ball}}$.
+  The cutoff in Proposition~\ref{P:signed-moment-bulk-tail}
+  holds for all sufficiently large integers $B$.
+  For $A_1=0$ this is immediate; otherwise its side ratio is
+  \[
+    \frac{M_B^{2-\nu}}{4A_1B^{3\nu}}
+    =\frac{c_{\rm ball}^{2-\nu}}{4A_1}
+    B^{\kappa_{\rm ball}(2-\nu)-3\nu}\longrightarrow\infty .
+  \]
+  Both constants and the strictly positive exponent are retained.
+  At such a fixed $B$, a positive sum is at most twice its larger term.
+  Taking $\delta\log$ of~\eqref{E:signed-finite-moment} therefore gives
+  \begin{align*}
+    \delta\log M_\delta\le\delta\log2+
+    \max\{&
+    \mathcal S_{R_\delta}+\mathcal E_{\delta,B,M_B}
+    +\delta\log(M_B^2/(2\delta)),\\
+    &A_0+\eta_Bb_{\delta,B}^\nu-M_B^2/4+\delta\log4\}.
+  \end{align*}
+  At fixed $B$, $b_{\delta,B}\to0$.
+  All logarithmic normalizers vanish, including
+  $\delta\log(M_B^2/(2\delta))
+  =\delta\log(M_B^2/2)-\delta\log\delta\to0$.
+  The last limit follows from $te^{-t}\le2/t$ for $t=-\log\delta>0$.
+  Finite score and error bounds permit limsup subadditivity, giving
+  \[
+    \limsup_{\delta\downarrow0}\delta\log M_\delta
+    \le\max\{V_{\rm up}+e_B,\ A_0-M_B^2/4\}.
+  \]
+  The left side has no $B$: actual restart identifies every block
+  product with this SAME $P_\delta$.
+  Now let integer $B\to\infty$. We have $e_B\to0$, $M_B\to\infty$
+  and finite $V_{\rm up}\ge0$.
+  This gives the asserted upper bound, while $M_\delta\ge1$
+  gives the nonnegative lower bound.
+  The order was $\delta$ first at fixed block length, ball and thresholds,
+  then $B$; no diagonal or limit of $\mathcal S_{R_\delta}$ was assumed.
+  This proves Proposition~\ref{P:signed-operator-upper}.
+\end{proof}
+
+\begin{proposition}[The original point upper by the own signed score]
+  \label{P:original-signed-point-upper}
+  For every original admissible model and every fixed $x$,
+  \[
+    \limsup_{T\to\infty}T^{-\kappa}
+    \log\E|u_\Gamma(T,x)|^2
+    \le\limsup_{\delta\downarrow0}\mathcal S_{\delta^{-1}+2}
+    \le2+2C_{\rm mean}^2 .
+  \]
+  For zero covariance the two normalized moments and the signed score
+  have rate zero.
+\end{proposition}
+
+\begin{proof}
+  Proposition~\ref{P:original-point-transfer} bounds the original
+  point moment by $\operatorname{DataPref}_\delta M_\delta$,
+  with $\delta\log\operatorname{DataPref}_\delta\to0$.
+  Its source-first, full-chain and canonical law proof is the input here,
+  not a raw $E$ point trace.
+  The decreasing bijection $T_\delta=\delta^{-1/\kappa}$ has inverse
+  $\delta=T^{-\kappa}$. Take logs, normalized limsup and
+  Proposition~\ref{P:signed-operator-upper}.
+  Original canonical spatial stationarity from
+  Proposition~\ref{P:raw-block-original-lower} gives every fixed $x$.
+  The moment is at least one by its full expansion and finite by the bound,
+  so no logarithm or difference of infinite quantities is hidden.
+
+  For $\Gamma=0$ set $C_{\rm mean}=0$ directly.
+  Then $H_I=\{0\}$, $\operatorname{Rate}_R=\mathcal S_R=V_{\rm up}=0$,
+  $u=1$ and $P_\delta=S_E(\delta^{-1})$.
+  The free lower and upper bounds give
+  $0\le\delta\log M_\delta
+  \le2\delta\log[C(1+\delta^{-1})]\to0$.
+  This direct proof needs no nonzero Gaussian or nondegenerate
+  Cameron assumption; the free functional at zero may exceed zero.
+  The formal $a\downarrow0$ exponent is $(4-\alpha)/(3-\alpha)$,
+  with no new endpoint-in-$a$ theorem asserted.
+  Accepted Jensen and lower bounds are unchanged.
+  This proves Proposition~\ref{P:original-signed-point-upper}.
+\end{proof}
+
+The moving score remains an own signed raw variational value.
+Its positive-control comparison, exact limit and identification of the
+derived constant require the subsequent variational arguments.
+<<<END TRACKED CONTEXT: signed-context.tex>>>
+
+[falsifications.json; git-blob 6d1fcfee5451096cc971c1df2115192a8ef7654e; sha256 d669955d8fe8f0498e3f9b95e6353dbe378e2b01ce73e31faa30609083214f9e; size 1431 bytes]
+<<<BEGIN TRACKED CONTEXT: falsifications.json>>>
+{
+  "tool": "local Sympy 1.14.0",
+  "scope": "Finite algebraic statement falsification; not a Lean/kernel certificate or SPDE theorem",
+  "wave_observable": {
+    "generator": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "initial_phase": [
+      1,
+      -1
+    ],
+    "displacement": "exp(-t)",
+    "determinant": "1",
+    "operator_growth": "exp(t) in Euclidean norm since A is real symmetric with eigenvalues+1,-1",
+    "conclusion": "Operator growth does not imply lower growth for every nonzero phase/observed displacement. This tests an overgeneralized abstract claim, not original data(1,0)."
+  },
+  "control_ball_quantifiers": {
+    "nu": "3/2",
+    "coarse_B_exponent": "9/2",
+    "cutoff_ball_exponent": "10",
+    "tail_dominance_exponent": "1/2",
+    "fixed_ball_error": "M^nu/B tends to0 for every fixed M",
+    "growing_ball_error_exponent": "14",
+    "conclusion": "A fixed-control-ball deterministic limit does not justify the polynomial growing balls required by the Gaussian tail cutoff."
+  },
+  "covariance_mixture": {
+    "d": 1,
+    "temporal_alpha0": "1/2",
+    "spatial_orders": [
+      "1/4",
+      "1/2"
+    ],
+    "test": "Gamma(4)-4^(-1/2) Gamma(1)",
+    "exact_difference": "-1/2 + sqrt(2)/2",
+    "conclusion": "Finite positive covariance sum is not homogeneous of its largest order; no exact homogeneous scaling identity may be reused for the mixture."
+  }
+}
+<<<END TRACKED CONTEXT: falsifications.json>>>
+
+[scope.txt; git-blob 7dac56811b15b24219fc7b1b86f98d13976d4b17; sha256 c0ea8cf140e62ec0c677993c11d269f220adf490a83a94c39bd856bcd33a9351; size 895 bytes]
+<<<BEGIN TRACKED CONTEXT: scope.txt>>>
+Read-only statement/sufficiency audit of the exact frozen author candidate. Not a novelty audit, source-image audit, actual SPDE hypothesis verification or full manuscript review. Treat classical Borell enlargement for a genuine abstract Wiener Gaussian support and its Cameron norm as an imported theorem; check whether U1-U2 justify the application as in the Gaussian context. The primary source PDF is not supplied for re-verification. The uniform-products module is named only as a future application map; certification of its model-specific estimates is not requested. No prior reports or acceptance votes supplied. All text is inlined. Use no tools, network, code, edits or delegation. Reject a hypothesis that restates the stochastic conclusion. Preserve limitations and distinguish standard deductions from possible wave-specific novelty. HIGH remains required for any project adoption.
+<<<END TRACKED CONTEXT: scope.txt>>>
+
+[source-bindings.json; git-blob 1a80c6b72267d5664d5f5d33e10b7f4f03c6a95d; sha256 851733cf18a584a0f6078ae81b05a2eee32ecf5b47e48035ae1213a7b95d3478; size 1116 bytes]
+<<<BEGIN TRACKED CONTEXT: source-bindings.json>>>
+{
+  "source_revision": "7e5849a8d7cfd8b2831fb5dffcd3ab20a188b3aa",
+  "main_original_science": "887fbfbe0fa4368d6b32a436615d73349b2445d8",
+  "root_compared_inputs": {
+    "candidate.json": {
+      "source": "research-program/uniform-gaussian-growth-statement-v1.json",
+      "sha256": "6fa805f038fa11dbbdda9a9f6d567c63aa7ba519e84e18bc9a9262e4438c4001",
+      "live_Git_packet_equal": true
+    },
+    "falsifications.json": {
+      "source": "research-program/2026-11-01-theory-statement-falsification-v1.json",
+      "sha256": "d669955d8fe8f0498e3f9b95e6353dbe378e2b01ce73e31faa30609083214f9e",
+      "live_Git_packet_equal": true
+    },
+    "gaussian-context.tex": {
+      "source": "notes/integrated_gaussian_tubes.tex",
+      "sha256": "b1dd4e41c4c5c6ca12e81482694b5b5a2af2cdbf98a56aa91ea6288a03a98598",
+      "live_Git_packet_equal": true
+    },
+    "signed-context.tex": {
+      "source": "notes/integrated_signed_moment_upper.tex",
+      "sha256": "a137f9d0f6aa1e2a62b6fed371d34119b4a2396c8015aefd3a4df62cb77d159e",
+      "live_Git_packet_equal": true
+    }
+  },
+  "scope": "Source identity, not correctness"
+}
+<<<END TRACKED CONTEXT: source-bindings.json>>>
+
+--- Exact line-numbered excerpts from the tracked target ---
+Each line after the separator is copied verbatim from the reviewed HEAD.
+
+[candidate.json lines 1:106]
+     1 | {
+     2 |   "status": "FROZEN AUTHOR STATEMENT CANDIDATE; extraction for independent audit, not a new proved theorem or novelty claim",
+     3 |   "name": "Uniform Gaussian upper-growth transfer on varying path spaces",
+     4 |   "role": "Candidate supporting proposition for paperI; must not be marketed as a new Gaussian LDP solely by repackaging Borell concentration",
+     5 |   "scope": "No new original-model theorem, no lower terminal-observable conclusion, no exact moving-score limit, no covariance-mixture asymptotic conclusion.",
+     6 |   "parameters": "Fix p>0, nu in(1,2), s>=0, A0,C>=0, c0,c1>=0. delta decreases to0; B ranges over positive integers. Constants listed here do not depend on delta or B. All statements below hold for delta small enough at each fixed B; no diagonal B(delta) is assumed.",
+     7 |   "hypotheses": [
+     8 |     {
+     9 |       "id": "U1",
+    10 |       "statement": "H is a fixed real separable Hilbert space with its given isonormal W. For every delta,B, let V_(delta,B) be a real separable Banach space, X_(delta,B) a strongly measurable centered Gaussian variable with finite second norm moment, and M_(delta,B):H->V_(delta,B) a compact linear map. Every continuous linear coordinate ell(X) belongs to the first chaos of W and E[X W(h)]=sqrt(delta) M_(delta,B)h for h in H. No H-valued standard Gaussian or unnormalized inverse-covariance norm is assumed."
+    11 |     },
+    12 |     {
+    13 |       "id": "U2",
+    14 |       "statement": "b_(delta,B)=2 E||X_(delta,B)|| tends to0 as delta->0 for each fixed B. The zero Gaussian law is allowed, with support{0}, M=0,b=0. Unseen raw directions are retained in H and removed only by the true covariance quotient where needed."
+    15 |     },
+    16 |     {
+    17 |       "id": "U3",
+    18 |       "statement": "F_(delta,B):V_(delta,B)->R is continuous. A positive extended-real quantity Z_delta in(0,infinity], independent of B, satisfies Z_delta<=E exp(F_(delta,B)(X_(delta,B))/delta). Finite expectation is to be deduced from U5, not assumed. Endpoint products for every B must represent or bound this same Z_delta."
+    19 |     },
+    20 |     {
+    21 |       "id": "U4",
+    22 |       "statement": "J_delta:H->[0,infinity) is finite, J_delta(0)=0, and J_delta(h)<=c0+c1||h||. J_delta may depend on delta through a growing localization, but is independent of B. Define S_delta=sup_(h in H){p J_delta(h)-||h||^2/2}. The quadratic estimate makes 0<=S_delta<=p*c0+(p*c1)^2/2. No optimizer is assumed."
+    23 |     },
+    24 |     {
+    25 |       "id": "U5",
+    26 |       "statement": "There are finite eta_B>=0, independent of delta at each fixed B, such that for every rho>=0, ||a||<=b_(delta,B) and ||h||<=rho, F_(delta,B)(a+M_(delta,B)h)<=A0+C*B^s*rho^nu+eta_B*b_(delta,B)^nu. The base ball is in V_(delta,B); no random selector is used."
+    27 |     },
+    28 |     {
+    29 |       "id": "U6",
+    30 |       "statement": "There exist fixed c>0 and k>s/(2-nu). Set R_B=c B^k. Define E_(delta,B)=max(0,sup_(||a||<=b_(delta,B),||h||<=R_B){F_(delta,B)(a+M_(delta,B)h)-p J_delta(h)}). It is finite. For each B, e_B=limsup_(delta->0) E_(delta,B) is finite, and e_B->0 as integer B->infinity. Only one such polynomial cutoff is required, not every polynomial radius. Fixed-ball convergence alone is insufficient."
+    31 |     }
+    32 |   ],
+    33 |   "proposed_conclusion": "Z_delta is finite for delta sufficiently small and limsup_(delta->0) delta log Z_delta <= limsup_(delta->0) S_delta < infinity.",
+    34 |   "source_deduction_skeleton_not_new_proof": "Use actual Gaussian support/Cameron image and Borell enlargement to dominate by the Rayleigh-radius integral. Split at R_B. U6 bounds the bulk by (R_B^2/(2delta))*exp((S_delta+E_(delta,B))/delta). U5 and 4 C B^s<=R_B^(2-nu), eventually in B by k>s/(2-nu), bound the tail by 4 exp((A0+eta_B*b^nu-R_B^2/4)/delta). Take delta->0 at fixed B, then B->infinity; logarithmic factors vanish, e_B->0 and R_B->infinity. Actual sufficiency of every step is assigned to the skeptic; this skeleton confers no acceptance.",
+    35 |   "existing_sources": [
+    36 |     {
+    37 |       "path": "notes/integrated_gaussian_tubes.tex",
+    38 |       "labels": [
+    39 |         "P:tube-wiener-realization",
+    40 |         "L:tube-closed-geometry",
+    41 |         "P:tube-rayleigh-transfer",
+    42 |         "L:tube-rayleigh-tail",
+    43 |         "L:tube-half-action"
+    44 |       ],
+    45 |       "role": "Original Gaussian support/quotient/tube transfer and scalar tail arguments; treated as scoped existing inputs, not new abstract discoveries."
+    46 |     },
+    47 |     {
+    48 |       "path": "notes/integrated_signed_moment_upper.tex",
+    49 |       "labels": [
+    50 |         "L:signed-score-envelope",
+    51 |         "P:signed-moment-bulk-tail",
+    52 |         "P:signed-operator-upper"
+    53 |       ],
+    54 |       "role": "Existing bulk/tail and same-endpoint ordered-limit architecture. Current wave p=2 and s=3nu; the proposed abstract statement does not prove actual wave p-moment bounds for other p."
+    55 |     },
+    56 |     {
+    57 |       "path": "notes/integrated_uniform_products.tex",
+    58 |       "labels": [
+    59 |         "C:uniform-polynomial-balls",
+    60 |         "P:uniform-arbitrary-residual"
+    61 |       ],
+    62 |       "role": "Current model-specific deterministic mechanism for U6. Abstract U6 is a substantial independently verifiable deterministic estimate, not the requested stochastic conclusion restated."
+    63 |     }
+    64 |   ],
+    65 |   "what_the_upper_statement_does_not_supply": [
+    66 |     "A lower bound for an observed displacement: it needs a positive/nonvanishing projection of the actual initial data and robust terminal observable growth on shifted events.",
+    67 |     "Identification of limsup S_delta with sup of pointwise limiting rates: requires a separate variational convergence/positive-control comparison or compactness argument.",
+    68 |     "An unmasked noisy wave group, a positive phase semigroup, global uniform regularization limits, or covariance monotonicity for arbitrary signed potentials.",
+    69 |     "Novelty of this supporting Gaussian proposition: exact prior-art comparison remains open; possible independent contribution lies in wave-specific verification/uniformity and broader applications."
+    70 |   ],
+    71 |   "nonzero_sanity_model": {
+    72 |     "data": "H=V=R, W=N(0,1), X_delta=sqrt(delta)W, M=identity, p=1, F_delta,B(x)=a|x|, J_delta(h)=a|h| for a>0; independent of B.",
+    73 |     "guards": "b_delta=2sqrt(2delta/pi), choose any nu in(1,2), s=0, C=a,A0=3a,eta_B=0. Error <=a b_delta, so e_B=0; choose any k>0.",
+    74 |     "exact_value": "E exp(a|W|/sqrt(delta))=2 exp(a²/(2delta)) Phi(a/sqrt(delta)); hence normalized limit and S_delta both equal a²/2. This is a scalar sanity case, not an SPDE application or novelty witness."
+    75 |   },
+    76 |   "falsification_boundaries": [
+    77 |     {
+    78 |       "id": "F1",
+    79 |       "claim_refuted": "Uniform operator growth implies lower displacement growth for every nonzero phase.",
+    80 |       "witness": "Scalar wave u_second=u, phase generator[[0,1],[1,0]], initial(1,-1): operator norm exp(t), displacement exp(-t), determinant1. Not original initial(1,0)."
+    81 |     },
+    82 |     {
+    83 |       "id": "F2",
+    84 |       "claim_refuted": "Fixed-control-ball deterministic convergence is sufficient for the Gaussian upper tail cutoff.",
+    85 |       "witness": "Error M^(3/2)/B vanishes at each fixed M; coarse B exponent9/2 requires cutoff exponent k>9. At k10 the tail-dominance exponent is1/2, but the error grows as B14."
+    86 |     },
+    87 |     {
+    88 |       "id": "F3",
+    89 |       "claim_refuted": "A finite mixture inherits exact homogeneous scaling at the largest order.",
+    90 |       "witness": "d1, temporal alpha0=1/2, Gamma(x)=|x|^(-1/4)+|x|^(-1/2). Gamma(4)-4^(-1/2)Gamma(1)=(sqrt(2)-1)/2>0."
+    91 |     },
+    92 |     {
+    93 |       "id": "F4",
+    94 |       "claim_refuted": "Pointwise convergence J_n(h)->J(h) plus uniform norm-ball coercivity allows interchanging sup and limit.",
+    95 |       "witness": "H=l2, e_n orthonormal, p1, J_n(h)=max(0,1-2||h-e_n||). For every fixed h, J_n(h)->0, all J_n<=1 and J_n(0)=0; score at h=e_n is1/2. Thus liminf S_n>=1/2 whereas the score supremum of the pointwise limit is0. Bounded optimal norms do not eliminate escaping directions."
+    96 |     }
+    97 |   ],
+    98 |   "mixture_scope_probe": {
+    99 |     "hypotheses": "d in1,2,3; fixed0<a<1; Gamma=Gamma1+Gamma2 with each nonnegative even positive-definite tempered Radon, homogeneous order alpha_j, each original admissible including allowedwhite, a+alpha_j<2.",
+   100 |     "first_target": "At fixed finite T and smooth physical mask, extend the actual same-W compact-operator driver and Young-flow construction. Common theta must satisfy1/2<theta<min_j{1-a/2,(3-a-alpha_j)/2}; auxiliary gamma also chosen in every required interval.",
+   101 |     "reason_to_test": "Scalar covariance forms add. Check both wave-variance estimates and admissible even Schatten guards in the existing construction without assuming an independent decomposition of an arbitrary given W.",
+   102 |     "not_established": "No full-source proof of this extension, no exact mixture time scaling, roughest-order dominance, intrinsic moment constant or second-application acceptance."
+   103 |   },
+   104 |   "lean_triage": "No new Lean package/run/fact. Existing local GaussianTail.cutoff_density_split has scoped earlier use; a future application must inspect exact types. The current extraction is analytic Gaussian geometry and ordered uniform limits. Do not replace those with a hollow assumed-conclusion theorem.",
+   105 |   "review_gate": "Independent statement-fidelity/sufficiency audit before proof adoption; original HIGH threshold, actual DeepSeek V4 Pro route. Kimi monthly-quota refusal remains; source images or full novelty reading are not claimed by this text-only target."
+   106 | }
+
+[held back: collaborators' unpublished work]

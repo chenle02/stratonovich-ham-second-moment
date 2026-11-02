@@ -10917,3 +10917,41 @@ No new theorem or publication claim, manuscript split, review promotion,
 source/PDF/Lean change or external correspondence. Verified all local Markdown
 links resolve and all linked JSON records parse. Next independent statement
 review remains pending; this documentation does not clear it.
+
+
+## 2026-11-01 — actual independent growth-statement reviewer dispatched
+
+Dispatched required DeepSeek V4 Pro statement/sufficiency skeptic on frozen
+scientific7e5849a8d7cfd8b2831fb5dffcd3ab20a188b3aa. Exact original target,
+falsifications and two full Gaussian/signed contexts match live/Git/copied
+bytes. Isolated prior-blind carrierf29e6e7126a407f9493ae8fd677773f08d02d538
+was clean after native preflight; explicit schema prevented the earlier
+config auto-annotation. Dry-run generation added its own untracked review
+artifacts; these were preserved outside the carrier before actual launch,
+then the complete carrier was clean. Original preparation's nonexistent-
+workdir refusal retained: no process/provider was launched by that error.
+
+Actual route paper-review-deepseek ->deepseek/deepseek-v4-pro; explicit
+--dir/--agent/--pure, full inline input, no tools/delegation, HIGH threshold.
+Per-run native output-cap request65536 is retained; no global config/model
+or confidence change, actual provider behavior still to be checked.
+Borell is an explicit imported input, not a source-PDF proof check; current
+model-specific uniform-products hypotheses are not being recertified.
+No Kimi retry after its monthly quota refusal. Main common887science and
+all final source/image/cold obligations stay separate and unchanged.
+
+Live native handle76401 in external
+../stratonovich-growth-statement-review-v1/native. At checkpoint only an
+in-flight step_start; no verdict/acceptance. Preserve exact session through
+observation timeouts, do not restart on silence. Source/launch/prompt/scope
+records retained in reviews/2026-11-01-growth-statement/. Scientific sources
+and carrier HEAD held; project bookkeeping changes neither.
+
+Reference intake updated from actual exact receipt, not a broad list:
+tk-20261101-185423-codex-stratonovich-program now GOLD, digestPASS/lintclean,
+canonical citekeyfriz.victoir:07:large, all5addressable layers present.
+Full raw receipt retained. This establishes ingestion scope, not author
+full-proof reading or paper novelty. CDST identity repair exactticket
+tk-20261101-190012-codex-stratonovich-reference-identity is still CLAIMED
+at observation; no repaired source/store is asserted. Original bad PDF and
+held correct published54-page external copy remain separately identified.
