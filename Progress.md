@@ -11,7 +11,7 @@
   scoped HIGH, including terminal Wick/tails and full-upper assembly.
   Constructor001–009, calibration010–019 and driver085–093 reports remain
   MEDIUM. The append-only ledger is
-  `reviews/2026-11-02-main-deepseek/depth-ledger-v9.json`.
+  `reviews/2026-11-02-main-deepseek/depth-ledger-v10.json`.
   Full213-proof, source-image/render and independent cold obligations remain.
   Further constructor004–006, source094–100 and masked101–103 packets are
   being prepared; preparation is not an actual reviewer launch.
@@ -11873,3 +11873,18 @@ unequal previous-time shifts; not just extraction garbling. Candidate
 stationary covariance-CS explanation and exact image/PDF hashes retained
 there, PENDING the running constructor audit. No source-theorem failure,
 adopted repair, source edit or independent-image credit is claimed.
+
+
+### Constructor HIGH header withheld for concrete correction
+
+Worked004–006 review actualPASS_WITH_NOTES/HIGH,899.746s, threeFULLY_CHECKED
+and collectiveJ01–J12. Root rehashed64members/eightbindings and read report.
+Reviewer source-repair claim that independently shifted cross-kernel isPSD
+is false; simple2point negativequadratic control recorded. Printed page21
+omits time origins but retains spatial origins through shifted G factors.
+Root author-image observation and translated-TEST stationary-CS candidate
+preserved, no independent image credit or adopted source repair.
+One same-session correction audit authorized for this actual false reasoning
+and missing individualJ/workedj2/auxiliarycap controls, not confidence alone.
+No new source edit. Depth-ledger-v10 keeps acceptedHIGH count55 and marks
+004–006 HIGH_REPORT_NOT_ADOPTED_CORRECTION_PENDING. InitialMEDIUM immutable.
