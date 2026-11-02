@@ -1,0 +1,750 @@
+--- a/notes/integrated_actual_operator_driver.tex
++++ b/notes/integrated_actual_operator_driver.tex
+@@ -274,30 +274,79 @@
+ \end{lemma}
+ 
+ \begin{proof}
+-  By~\eqref{E:driver-covariance-row}, the finite matrix forms of
+-  $X_N(I)=\sum_{j\le N}g_jA_j(I)$ are the orthogonal Gaussian projections
+-  of $\ell_R(I;z,w)$ onto $g_1,\ldots,g_N$. Thus,
+-  \[
+-    \E|\langle X_N(I)z,w\rangle_E|^2\le\E|\ell_R(I;z,w)|^2.
+-  \]
+-  These are noise-test-basis projections, not source mollifiers. Choose
+-  a real Schwartz orthonormal basis $\{e_k\}$ of $E$. Independence of the
+-  finite $g_j$ and phase Parseval give, for Schwartz $w$,
+-  \begin{align*}
+-    \sum_{j\le N}\|A_j^{*,E}w\|_E^2
+-    &=\E\|X_N^{*,E}w\|_E^2
+-    =\sum_k\E|\langle X_Ne_k,w\rangle_E|^2\\
+-    &\le b_I\|w\|_{E_{s-\gamma}}^2.
+-  \end{align*}
+-  Apply~\eqref{E:wave-input-variance} first to finite phase sums and then
+-  use nonnegative monotone convergence. The other direction uses
+-  \eqref{E:wave-output-variance}, with input fixed and output $e_k$ varying,
+-  to bound $\sum_{j\le N}\|A_jz\|_E^2$ by the same expression. Extend
+-  these inequalities to $E$ by density. Since
+-  $\|z\|_{E_{s-\gamma}}=\|D_\gamma J_0z\|_{H_0}$, they give
+-  \eqref{E:driver-two-variances}. The localization follows from
+-  \eqref{E:driver-actual-localization}; no sum of individual
+-  $j$-dependent gain bounds was used.
++  By~\eqref{E:driver-covariance-row}, for real Schwartz $z,w$,
++  \[
++    \langle X_N(I)z,w\rangle_E
++    =\sum_{j\le N}g_j\E[g_j\ell_R(I;z,w)]
++    =\mathcal P_N\ell_R(I;z,w),
++  \]
++  where $\mathcal P_N$ is the orthogonal projection in $L^2(\Omega)$
++  onto the span of $g_1,\ldots,g_N$. In particular,
++  \[
++    \sum_{j\le N}|\langle A_j(I)z,w\rangle_E|^2
++    =\E|\langle X_N(I)z,w\rangle_E|^2
++    \le\E|\ell_R(I;z,w)|^2.
++  \]
++  These are projections onto the actual noise-test basis, not source
++  regularizations. The two variance bounds of
++  Proposition~\ref{P:wave-two-variances}, with the mean-square columns
++  of Proposition~\ref{P:wave-square-columns}, apply to these same raw
++  forms and the budget~\eqref{E:driver-short-variance-budget}.
++
++  Choose a real Schwartz orthonormal basis $\{e_k\}$ of $E$.
++  Fix real Schwartz $w$. For every finite phase truncation $K$,
++  \[
++    \begin{split}
++      \sum_{k\le K}\sum_{j\le N}
++      |\langle A_j(I)e_k,w\rangle_E|^2
++      &=\sum_{k\le K}\E|\langle X_N(I)e_k,w\rangle_E|^2\\
++      &\le\sum_{k\le K}\E|\ell_R(I;e_k,w)|^2
++      \le b_I\|w\|_{E_{s-\gamma}}^2,
++    \end{split}
++  \]
++  by~\eqref{E:wave-input-variance}. Let $K\to\infty$.
++  Parseval in the phase space and nonnegative monotone convergence,
++  with $N$ still finite, give
++  \[
++    \sum_{j\le N}\|A_j(I)^{*,E}w\|_E^2
++    =\E\|X_N(I)^{*,E}w\|_E^2
++    \le b_I\|w\|_{E_{s-\gamma}}^2.
++  \]
++  Conversely, for fixed real Schwartz $z$, use
++  \eqref{E:wave-output-variance} with the output basis varying:
++  \[
++    \begin{split}
++      \sum_{k\le K}\sum_{j\le N}
++      |\langle A_j(I)z,e_k\rangle_E|^2
++      &=\sum_{k\le K}\E|\langle X_N(I)z,e_k\rangle_E|^2\\
++      &\le\sum_{k\le K}\E|\ell_R(I;z,e_k)|^2
++      \le b_I\|z\|_{E_{s-\gamma}}^2.
++    \end{split}
++  \]
++  The same phase Parseval limit gives
++  \[
++    \sum_{j\le N}\|A_j(I)z\|_E^2
++    =\E\|X_N(I)z\|_E^2
++    \le b_I\|z\|_{E_{s-\gamma}}^2.
++  \]
++  Thus both directions use their respective actual Hilbert-Bessel
++  bounds; neither follows from retaining only one variance.
++
++  These inequalities extend at each finite $N$ to the full
++  $E_{s-\gamma}$ input space. Indeed,
++  Lemma~\ref{L:driver-gain-localization} gives
++  $A_j:E_{s-\gamma}\to E_{s+1-\gamma}\subset E$.
++  Its adjoint gain, at $r=s+\gamma-1$, gives the same map for
++  $A_j^{*,E}$. The inclusion holds since $\gamma<1$.
++  Approximate the input by Schwartz phases and pass each of the
++  finitely many operator terms to the limit. The resulting constant
++  is still $b_I$, independent of $N$; individual $j$-dependent gain
++  constants were not summed.
++  Restricting to $E$ and using
++  $\|z\|_{E_{s-\gamma}}=\|D_\gamma J_0z\|_{H_0}$ gives
++  \eqref{E:driver-two-variances} as two operator quadratic inequalities.
++  Both localizations follow from~\eqref{E:driver-actual-localization}.
++  No self-adjointness or projection property of $P_\chi$ is assumed.
+ 
+   The coordinates of $m_{R,I}(z)$, for Schwartz $z$, are the literal raw
+   forms $\ell_R(I;z,e_k)$ and belong to the closed first chaos $W(H_W)$.
+@@ -410,51 +459,100 @@
+ \end{lemma}
+ 
+ \begin{proof}
+-  The actual finite families $a_j$, $j\le N$, now satisfy every hypothesis
++  The actual finite families $a_j$, $j\le N$, satisfy every hypothesis
+   of Proposition~\ref{P:localized-finite-variance} and
+-  Corollary~\ref{C:finite-gaussian-operators}: both localizations, both
+-  weighted variances, and the independent real $g_j$ have been proved.
+-  Thus, their coefficients are compact, and the finite sums satisfy the
+-  bound in~\eqref{E:driver-fixed-schatten}, uniformly in $N$.
+-  The fixed cutoff factor may depend on $R,T$.
+-
+-  Apply Lemma~\ref{L:driver-dominated-tails} to
+-  \eqref{E:driver-compact-tail-envelopes}, whose fixed-interval envelopes
+-  belong to $S_{q/2}$. Both tail trace powers tend to zero. For $M>N$,
+-  the two variances of $\sum_{j=N+1}^Mg_jA_j(I)$ are bounded by the
+-  corresponding tails. Lemma~\ref{L:driver-gaussian-tail-average} and
+-  eigenvalue max-min show that its expected $S_q$ norm to the $q$th power
+-  tends to zero, uniformly in $M>N$. Since the operator norm is at most
+-  the $S_q$ norm, this gives $L^q(\mathcal B(E))$ Cauchy convergence.
+-  This Cauchy estimate uses the vanishing tail traces.
+-
+-  All finite sums lie in the separable closed real span of the countably
+-  many deterministic $A_j(I)$ in $\mathcal B(E)$. For an elementary
+-  realization of the limit, choose a subsequence with summable $L^q$
+-  norms of successive differences. Their $L^1$ norms are summable, so
+-  the pointwise operator-norm differences sum absolutely almost surely.
+-  Completeness gives a limit in that span; Fatou and the Cauchy property
+-  give convergence of the whole sequence in $L^q$. This proves strong
+-  measurability on the same original space, with no new noise.
+-  Different admissible even indices give the same limit by uniqueness
+-  of convergence in probability. Choosing a larger even index yields
+-  convergence for every finite operator-norm moment $p\ge1$.
+-
+-  An almost surely norm-convergent subsequence makes the limit compact.
+-  Singular-value Fatou gives~\eqref{E:driver-fixed-schatten}. Every
+-  continuous linear functional is an $L^2$ limit of centered Gaussians,
+-  as are finite combinations, so the limit is jointly centered Gaussian.
+-  The fixed matrix rows of $X_N(I)$ are the orthogonal projections of
+-  the literal raw forms onto the complete noise basis. They converge to
+-  those forms in $L^2$. Operator-norm $L^2$ convergence identifies their
+-  other limit with $\langle X_R(I)z,w\rangle_E$.
+-
+-  For a long interval, partition it into finitely many intervals of length
+-  at most one. Their indicators add to the long indicator except at finitely
+-  many endpoints, which have zero raw norm by the common-support temporal
+-  estimate. Raw completion and linearity give exact additivity of the forms.
+-  Strong-integral additivity gives it for every $X_N$ and hence for the
+-  operator limits. No long-$h$ version of the short-interval bound is used.
++  Corollary~\ref{C:finite-gaussian-operators}: both localizations,
++  both weighted variances and the independent real $g_j$ have been
++  proved in Lemma~\ref{L:driver-actual-variances}.
++  Thus the coefficients are compact, and their finite Gaussian sums
++  satisfy~\eqref{E:driver-fixed-schatten}, uniformly in $N$.
++  The fixed cutoff norm may depend on $R,T$.
++
++  Fix an admissible even $q\ge2$, $q\gamma>d$.
++  Both positive compact envelopes in
++  \eqref{E:driver-compact-tail-envelopes} belong to $S_{q/2}$.
++  Lemma~\ref{L:driver-dominated-tails} therefore gives
++  \[
++    \operatorname{Tr}T_{{\rm out},N}^{q/2}\longrightarrow0,
++    \qquad
++    \operatorname{Tr}T_{{\rm in},N}^{q/2}\longrightarrow0.
++  \]
++  For $M>N$, put
++  $Y_{N,M}=\sum_{j=N+1}^Mg_jA_j(I)$.
++  After the unitary $J_0$ transport, its two finite variances are
++  \[
++    V_{{\rm out},M}-V_{{\rm out},N}\le T_{{\rm out},N},\qquad
++    V_{{\rm in},M}-V_{{\rm in},N}\le T_{{\rm in},N}.
++  \]
++  Lemma~\ref{L:driver-gaussian-tail-average} and positive eigenvalue
++  max-min comparison now give the uniform tail estimate
++  \[
++    \sup_{M>N}\E\|Y_{N,M}\|_{S_q}^q
++    \le(q-1)^{q/2}
++    \frac{\operatorname{Tr}T_{{\rm out},N}^{q/2}
++    +\operatorname{Tr}T_{{\rm in},N}^{q/2}}2
++    \longrightarrow0.
++  \]
++  The average of the two trace powers is retained. The comparison
++  uses eigenvalues, not operator monotonicity of the $q/2$ power.
++  Since $\|Y_{N,M}\|\le\|Y_{N,M}\|_{S_q}$, this proves genuine
++  $L^q(\Omega;\mathcal B(E))$ Cauchy convergence; a uniform moment
++  bound alone would not suffice.
++
++  All finite sums lie in the separable operator-norm closed real span
++  $\mathcal F_I$ of the countably many deterministic $A_j(I)$.
++  Choose $N_k$ increasing so that
++  $\|X_{N_{k+1}}(I)-X_{N_k}(I)\|_{L^q\mathcal B(E)}\le2^{-k}$.
++  Their $L^1$ norms are summable. Tonelli therefore shows that the
++  pointwise operator-norm differences sum absolutely almost surely.
++  Completeness gives a limit in $\mathcal F_I$ on the original
++  probability space; assign it zero on the exceptional null set.
++  It is strongly measurable as a limit of separably valued finite
++  Gaussian sums. Fatou and the Cauchy property give convergence of
++  the whole sequence in $L^q$ to this limit $X_R(I)$.
++  No new noise or probability space has been introduced.
++  Limits constructed at different admissible even indices agree by
++  uniqueness of convergence in probability. For each requested
++  finite $p\ge1$, choose an admissible even $q\ge p$ and use
++  Lyapunov to obtain $L^p$ operator-norm convergence to that same limit.
++  One fixed Schatten index is not used to infer all moment orders.
++
++  The compact operators are norm closed, so an almost surely
++  norm-convergent subsequence makes $X_R(I)$ compact valued.
++  Singular-value Fatou applied to the finite uniform bound gives
++  \eqref{E:driver-fixed-schatten} at each admissible even $q$.
++  Every continuous real linear functional of $X_R(I)$ is an $L^2$
++  limit of centered finite Gaussian sums; convergence of means,
++  variances and characteristic functions makes it centered Gaussian.
++  The same applies to finite linear combinations of these functionals,
++  proving joint Gaussianity on the given space.
++
++  For each fixed real Schwartz $z,w$, the scalar rows
++  $\langle X_N(I)z,w\rangle_E$ are the orthogonal projections of
++  the actual completed raw form $\ell_R(I;z,w)$ onto the complete
++  noise basis. That form lies in the original closed first chaos,
++  so these projections converge to it in $L^2(\Omega)$.
++  Operator-norm $L^2$ convergence also gives convergence to
++  $\langle X_R(I)z,w\rangle_E$. Uniqueness of the $L^2$ limit
++  identifies these two actual variables on the same space, not
++  merely their laws.
++
++  For a fixed long interval, choose a finite partition into intervals
++  of length at most one. Their actual indicator tests add to the
++  long-interval test except at finitely many endpoints. The masked
++  wave products have common compact spatial support, and the temporal
++  estimate~\eqref{E:driver-test-continuity} makes those endpoint
++  changes have zero raw norm. Raw completion and linearity give
++  exact additivity of the actual forms. The deterministic statewise
++  coefficient integrals, hence every $X_N$, add on the same partition.
++  Passing their finite-sum $L^p$ limits gives the corresponding
++  operator additivity and raw-row identity, independently of the
++  partition by common refinement. These are statements at each
++  fixed interval and partition; no uncountable intersection of
++  independently selected null sets is used.
++  No long-interval version of the short-$h$ bound is asserted.
++  The Schatten conclusion is a fixed-interval moment at admissible
++  even indices, not a Schatten-valued path or arbitrary-index claim.
+   This proves Lemma~\ref{L:driver-interval-limit}.
+ \end{proof}
+ 
+--- a/notes/integrated_constant_phase_young.tex
++++ b/notes/integrated_constant_phase_young.tex
+@@ -302,32 +302,96 @@
+ \begin{proof}
+   The original paths lie in separable closed path spans by their Gaussian
+   construction. Bounded composition in~\eqref{E:constant-phase-driver}
+-  and the continuous Young map preserve strong measurability.
++  and the continuous Young map preserve strong measurability into
++  $C(\Delta_T;\mathcal B(F))$, where
++  $\Delta_T=\{(t,s):0\le s\le t\le T\}$ has the uniform norm.
++  Indeed, the continuous image of the separable driver space has
++  separable closure in this triangle space.
+   Applying $\pi_C$ to Young Riemann sums gives the first identity
+   in~\eqref{E:constant-flow-range}. Each increment applied to any
+   state lies in $iE$; closedness of this subspace passes the property
+   through sums and limits, giving the second identity.
+ 
+-  On a ball of driver norm $K$, the local Lipschitz estimate and driver
+-  convergence give convergence in probability of the flows. Uniform
+-  Gaussian driver tails make the complement of this ball arbitrarily
+-  small, uniformly in $\rho$. Hence convergence holds in probability
+-  without restriction. Set $q=1/\theta<2$. For every finite $p$ and
+-  $c>0$, $pC(1+x)^q\le cx^2+C_{p,c}$. Combine this inequality,
+-  \eqref{E:constant-young-growth} and the uniform square-exponential
+-  driver moment to obtain uniform flow moments of every order.
+-  They imply uniform integrability of the $p$th powers of flow
+-  differences, and therefore~\eqref{E:constant-flow-limit}.
++  Write $X_\rho=\|A^\rho\|_{C^\theta}$ and
++  $X_0=\|A\|_{C^\theta}$. Proposition~\ref{P:constant-phase-driver}
++  supplies $c_0>0$ and $H_0<\infty$ such that
++  \[
++    \sup_\rho\E e^{c_0X_\rho^2}\le H_0,\qquad
++    \E e^{c_0X_0^2}\le H_0.
++  \]
++  For $K\ge1$, let $L_K$ be the Lipschitz constant of
++  Proposition~\ref{P:constant-young-linear} on the driver ball of
++  radius $K$, in the whole time-triangle norm. On
++  $\{X_\rho\le K,\ X_0\le K\}$ it gives
++  \[
++    \|U_{A^\rho}-U_A\|_\infty
++    \le L_K\|A^\rho-A\|_{C^\theta}.
++  \]
++  Consequently, for $\varepsilon>0$ and any finite $q\ge1$,
++  Markov and the union bound give
++  \[
++    \mathbb P(\|U_{A^\rho}-U_A\|_\infty>\varepsilon)
++    \le2H_0e^{-c_0K^2}
++    +(L_K/\varepsilon)^q\E\|A^\rho-A\|_{C^\theta}^q.
++  \]
++  At fixed $K$ the second term tends to zero at arbitrary relative
++  source-width rates. Only then let $K\to\infty$ to obtain
++  convergence in probability. No independence of the raw, source
++  and residual drivers is required.
++
++  Put $\nu=1/\theta<2$. For each finite $r\ge1$ and $c>0$,
++  there is $C_{r,c}<\infty$ such that
++  \[
++    rC_T(1+x)^\nu\le cx^2+C_{r,c},\qquad x\ge0.
++  \]
++  This follows because $(1+x)^\nu/x^2\to0$ as $x\to\infty$,
++  while the remainder is bounded on compact intervals.
++  Use $c\le c_0$ and~\eqref{E:constant-young-growth} to obtain
++  \[
++    \sup_\rho\E\|U_{A^\rho}\|_\infty^r<\infty,\qquad
++    \E\|U_A\|_\infty^r<\infty.
++  \]
++  In particular, for fixed finite $p\ge1$ and
++  $V_\rho=\|U_{A^\rho}-U_A\|_\infty$, the $2p$ moments of
++  $V_\rho$ are uniformly bounded. For every $\varepsilon>0$,
++  \[
++    \E V_\rho^p
++    \le\varepsilon^p+
++    (\E V_\rho^{2p})^{1/2}
++    \mathbb P(V_\rho>\varepsilon)^{1/2}.
++  \]
++  The second term tends to zero by convergence in probability;
++  then let $\varepsilon\downarrow0$. This proves
++  \eqref{E:constant-flow-limit}. The square-exponential bound used
++  here is a driver bound; no square-exponential flow bound is needed.
+ 
+   The free group is strongly continuous and bounded on the horizon.
+-  Formula~\eqref{E:constant-physical-flow} gives composition, statewise
+-  continuity and the asserted constant block. The map
+-  $V(t,s)\mapsto S_F(t)V(t,s)S_F(-s)$ is bounded linear from the
+-  continuous triangle-valued operator space into the Banach space
+-  of bounded triangle-valued operator families, with norm at most
+-  $C_T^2$. It transfers strong measurability, moments and convergence.
+-  This does not assert operator-norm continuity of the physical free
+-  group. Finally,
++  Define $\mathcal B_\infty(\Delta_T;\mathcal B(F))$ to be the
++  Banach space of all bounded operator families on $\Delta_T$.
++  The deterministic map
++  \[
++    \mathcal L(V)(t,s)=S_F(t)V(t,s)S_F(-s)
++  \]
++  is bounded linear from $C(\Delta_T;\mathcal B(F))$ into
++  this bounded-family space, with norm at most $C_T^2$, where
++  $C_T\ge\sup_{|r|\le T}\|S_F(r)\|$.
++  Hence it preserves strong measurability on the separable ranges and
++  gives, in particular,
++  \[
++    \|P_{A^\rho}-P_A\|_\infty
++    \le C_T^2\|U_{A^\rho}-U_A\|_\infty.
++  \]
++  All finite moments and uniform $L^p$ convergence therefore transfer
++  to the physical flows. This does not place those flows in the
++  norm-continuous triangle space or assert operator-norm continuity
++  of the free group.
++  For each fixed state, joint continuity follows by splitting a
++  physical-flow difference into the norm-continuous $U$ difference
++  and two strong free-group differences, using the uniform group bound.
++  Group cancellation gives composition. The finite constant block
++  $J_t(c_1,c_2)=(c_1+tc_2,c_2)$ satisfies $J_tJ_{-s}=J_{t-s}$,
++  which gives the asserted physical constant coordinates from
++  $\pi_CU_A=\pi_C$. Finally,
+   \[
+     P_A(t,s)-S_F(t-s)
+     =S_F(t)(U_A(t,s)-I)S_F(-s)
+@@ -431,32 +495,68 @@
+   above are continuous or bounded measurable on their separable ranges.
+   Thus $Z_m$ is $W$-measurable and does not depend on the auxiliary
+   $J$ used in source realizations.
+-  Lemma~\ref{L:constant-source-solution} identifies the source version
+-  of~\eqref{E:constant-raw-average} with the ordinary spatial integral.
+-
+-  We check that this is also the Bochner average from
+-  Proposition~\ref{P:masked-source-moments}. Its uniform pointwise
+-  $L^2$ bound is $Q_t$. Scalar Fubini gives
+-  $\E\int|\phi u_\rho^m|\le Q_t\|\phi\|_1$.
+-  For the ordinary integral $C_\phi$, weighted Cauchy--Schwarz gives
+-  $\E|C_\phi|^2\le Q_t^2\|\phi\|_1^2$. Call the Bochner integral
+-  $B_\phi$. For every bounded random variable $\Xi$, the continuous
+-  $L^2$ functional $V\mapsto\E[\Xi V]$ commutes with that integral.
+-  Absolute scalar Fubini then gives
+-  $\E[\Xi B_\phi]=\int\phi\,\E[\Xi u_\rho^m]=\E[\Xi C_\phi]$.
+-  Take $\Xi=\operatorname{sign}(B_\phi-C_\phi)$ to obtain equality
+-  almost surely.
+-
+-  Proposition~\ref{P:constant-gaussian-flow} bounds the difference of
+-  the source and raw observables by $\|O_\phi\|\|e_0\|$ times the
+-  uniform physical-flow difference. It proves
+-  \eqref{E:constant-tested-limit}, including its $L^2$ case.
+-  This establishes the exact premise of
+-  Proposition~\ref{P:masked-canonical-transfer}; since $\|\phi\|_1=1$,
+-  that proposition gives~\eqref{E:constant-original-point-transfer}.
++  At each fixed $\rho$, Lemma~\ref{L:constant-source-solution}
++  identifies the displacement as a distribution with the ordinary
++  source solution. Testing by this same $\phi$, with $\int\phi=1$,
++  therefore gives the almost sure identity
++  \[
++    O_\phi P_{A^\rho}(t,0)e_0
++    =C_\phi:=\int\phi(x)u_\rho^m(t,x)\ud x.
++  \]
++  This uses the displacement pairing and its constant displacement
++  coordinate in~\eqref{E:constant-raw-average}; it takes no point
++  trace of an $H^{1/2}$ state. All identities here are at one fixed
++  $\rho$, so no uncountable intersection of source-version events
++  is used.
++
++  We verify that $C_\phi$ equals the Bochner $L^2$ average
++  $B_\phi$ from Proposition~\ref{P:masked-source-moments}.
++  That proposition gives the spatially uniform bound
++  $\|u_\rho^m(t,x)\|_2\le Q_t$, with $Q_t$ also independent of
++  source widths. Scalar Fubini gives
++  \[
++    \E\int|\phi(x)u_\rho^m(t,x)|\ud x
++    \le Q_t\|\phi\|_1<\infty.
++  \]
++  Thus the ordinary spatial integral exists almost surely.
++  Weighted Cauchy--Schwarz and scalar Fubini also give
++  \[
++    \E|C_\phi|^2
++    \le\|\phi\|_1\int|\phi(x)|\E|u_\rho^m(t,x)|^2\ud x
++    \le Q_t^2\|\phi\|_1^2.
++  \]
++  For every bounded real random variable $\Xi$ on the fixed source
++  space, $V\mapsto\E[\Xi V]$ is a continuous functional on $L^2$.
++  It therefore commutes with the Bochner integral, while scalar
++  Fubini is justified by
++  $\|\Xi\|_\infty Q_t\|\phi\|_1$. Consequently,
++  \[
++    \E[\Xi B_\phi]
++    =\int\phi(x)\E[\Xi u_\rho^m(t,x)]\ud x
++    =\E[\Xi C_\phi].
++  \]
++  Both averages are real $L^2$ variables. Taking
++  $\Xi=\operatorname{sign}(B_\phi-C_\phi)$ yields
++  $\E|B_\phi-C_\phi|=0$, so the two averages agree almost surely.
++
++  Proposition~\ref{P:constant-gaussian-flow} now gives, for every
++  finite $p$,
++  \[
++    \|B_\phi-Z_m(t,\phi)\|_{L^p}
++    \le\|O_\phi\|\|e_0\|
++    \big\|\|P_{A^\rho}-P_A\|_\infty\big\|_{L^p}
++    \longrightarrow0.
++  \]
++  This is~\eqref{E:constant-tested-limit}, including its $L^2$ case,
++  for the actual masked Bochner average, with arbitrary relative
++  source-width rates. It supplies the conditional convergence premise
++  of Proposition~\ref{P:masked-canonical-transfer} at the same fixed
++  mask, horizon, original covariance and observable.
++  Since $\phi\ge0$ and $\|\phi\|_1=1$, that proposition gives
++  \eqref{E:constant-original-point-transfer}.
+   Zero covariance gives the free constant solution and equality.
+   All source limits are at fixed mask and horizon, before time
+-  asymptotics. No point trace of an $H^{1/2}$ displacement is used.
++  asymptotics.
+   This proves Proposition~\ref{P:constant-raw-average}.
+ \end{proof}
+ 
+--- a/notes/integrated_raw_block_lower.tex
++++ b/notes/integrated_raw_block_lower.tex
+@@ -498,11 +498,15 @@
+   The everywhere-defined continuous Young map, fixed-time bounded
+   free groups, finite products and bounded $O_\phi$ make $j_\delta$
+   continuous and nonnegative on the whole input space.
+-  Proposition~\ref{P:raw-block-gaussian-law} proves
+-  \eqref{E:raw-block-square-identity}. Finite products of the local
+-  Young flows have every finite moment by their Gaussian norm bounds
+-  and H\"older, at fixed $\delta,N$. The Gaussian identity itself
+-  did not require prior integrability of $j_\delta$.
++  Apply Proposition~\ref{P:raw-block-gaussian-law} directly to these
++  raw paths. Since $X+H$ is its exact translate, this proves
++  \eqref{E:raw-block-square-identity} with the original single
++  $Z=W(\Psi)$ and its variance $v$. Finite products of the local
++  Young flows have every finite unweighted moment by their Gaussian
++  path bounds and H\"older, at fixed $\delta,N$.
++  The Gaussian identity itself did not require prior integrability
++  of $j_\delta$. No source convergence under its exponential density
++  is used.
+ 
+   To apply the masked comparison at the actual amplitude, put
+   $\Gamma_\delta=g_\delta^2\Gamma$ and
+@@ -516,20 +520,63 @@
+   $g_\delta^n$. Thus this is exactly the noise-only model at that
+   amplitude.
+ 
+-  Lemma~\ref{L:raw-block-restart} and the ordinary source identity
+-  identify $U_{\delta,B}$ as the $L^2$ limit of the tested masked
+-  ordinary solution driven by $W'$ at fast time $L=1/\delta$.
+-  Its sources $g_\delta Y_{\mathrm{fast}}$ have the correct law,
+-  contraction and raw test limit. Apply
+-  Proposition~\ref{P:masked-canonical-transfer}, or equivalently
+-  \eqref{E:constant-original-point-transfer}, to $\Gamma_\delta$
+-  and this actual source limit. Since $\int\phi=1$,
++  We verify the source-limit premise of the masked comparison.
++  Keep $\delta,B,N$ fixed and use the single retaining source of
++  Lemma~\ref{L:raw-block-restart}. For $m<N$ let
++  $F_m=D_m^0(B)$ and put $F_N=D_N^0(\tau)$; write $F_{m,\rho}$
++  for the corresponding ordinary source factors, where both source
++  widths in $\rho$ tend to zero. Lemma~\ref{L:raw-block-restart}
++  and Proposition~\ref{P:constant-gaussian-flow} give factor convergence
++  in every finite $L^q$ and uniform bounds for every finite moment
++  of their norms. These statements are on the fixed finite horizons
++  $[0,(N+1)B]$ and $[0,B]$, and include both constant-response columns.
++  Set $n=N+1$ and
++  \[
++    C_\rho=\max\left(1,\max_{m\le N}\|F_{m,\rho}\|,
++    \max_{m\le N}\|F_m\|\right),\qquad
++    e_\rho=\max_{m\le N}\|F_{m,\rho}-F_m\|.
++  \]
++  Then $\sup_\rho\|C_\rho\|_q<\infty$ for every finite $q$, and
++  $\|e_\rho\|_q\to0$. Telescoping the actual ordered products gives
++  \[
++    \|F_{N,\rho}\cdots F_{0,\rho}-F_N\cdots F_0\|
++    \le n C_\rho^n e_\rho.
++  \]
++  Therefore, H\"older with exponents $4n$ and $4$ gives
++  \[
++    \big\|F_{N,\rho}\cdots F_{0,\rho}-F_N\cdots F_0\big\|_{L^2}
++    \le n\|C_\rho\|_{L^{4n}}^n\|e_\rho\|_{L^4}
++    \longrightarrow0.
++  \]
++  No uniform estimate in the growing number $N$ is needed: this
++  source limit is completed at each fixed $\delta,N$.
++  The physical source identification in
++  Lemma~\ref{L:constant-source-solution}, with the same $m_R$ and
++  initial state $e_0$, identifies the source product with the tested
++  ordinary masked solution at fast time $L=1/\delta$.
++  Boundedness of $O_\phi$ and $\|e_0\|=1$ thus identify
++  $U_{\delta,B}$ as its actual $L^2$ limit.
++  The sources $g_\delta Y_{\mathrm{fast}}$ have the correct law,
++  contraction and raw-test limit by Lemma~\ref{L:raw-block-restart}.
++
++  At positive source widths, $0\le m_R\le1$ multiplies each
++  nonnegative displacement Wick integrand by the product of its
++  vertex masks. Positive Green measures and covariance retain this
++  comparison for unequal, self and empty chains as well.
++  Proposition~\ref{P:masked-source-moments} gives the tested comparison,
++  and the just-proved $L^2$ convergence discharges the premise of
++  Proposition~\ref{P:masked-canonical-transfer} at $\Gamma_\delta$.
++  Its canonical unmasked moment limit uses the fixed-order joint
++  source limits and the absolutely summable order bounds.
++  Since $\phi\ge0$ and $\int\phi=1$, these facts give
+   \[
+     \E U_{\delta,B}^2
+     \le\E|u_{\Gamma_\delta}(L,0)|^2.
+   \]
+-  This application describes the same noise-only fast law; it
+-  changes neither the original slow $\Psi,Z$ nor $v$ in the density.
++  Only the noise-only source products were needed for this passage.
++  The shifted raw product is already the everywhere-defined
++  $j_\delta(X+H)$ in the Gaussian identity; no tilted source limit
++  or change of the original slow $\Psi,Z,v$ has been made.
+ 
+   The ordinary change from fast $u$ to slow $t=\delta u$, with
+   phase $(V,\delta V_t)$, transforms the unmasked source equation
+@@ -540,7 +587,7 @@
+   and its fast cutoff is $\eta/\delta$.
+   The canonical fixed-order and absolutely convergent series
+   construction passes this law identity at fixed $\delta$ to the
+-  raw moment, preserving every mixed and self-pairing term.
++  raw moment, preserving every mixed, unequal, self and empty chain.
+   Lemma~\ref{L:exact-canonical-scaling} gives the final equality
+   in~\eqref{E:raw-block-original-comparison}.
+   The physical scale $r_T=T\delta$ is distinct from the fixed
+@@ -564,65 +611,132 @@
+ \begin{proof}
+   Fix $e_{\mathrm{rate}}>0$. Choose $0<\varrho<1/2$ with
+   $\log(1-\varrho)>-e_{\mathrm{rate}}/3$, then choose the cone
+-  constants, including fixed $B$, from
+-  Lemma~\ref{L:raw-block-indexed-cone}.
+-  For small $\delta$ the indices $s_m=m\delta B$ lie in $I$
+-  with adjacent gaps at most $\omega$.
+-  Define the measurable common-space event
++  constants, including an integer $B$ fixed independently of $\delta$,
++  from Lemma~\ref{L:raw-block-indexed-cone}.
++  The control $\Psi$ and eligible mask $R$ remain fixed throughout.
++
++  Choose a finite $p>2/(1-a)$ and put
++  $\gamma_p=p(1-a)/2-1>0$. From~\eqref{E:raw-block-moments} and
++  $N+1\le2/\delta$, Markov and the union bound give, for $\eta>0$,
++  \[
++    \begin{split}
++      \mathbb P(M_\delta>\eta)
++      &\le\eta^{-p}\sum_{m=0}^N
++      \E\|X_m\|_{C^\theta}^p\\
++      &\le A_p\eta^{-p}\delta^{\gamma_p},\qquad
++      A_p=2(C_{R,B}\sqrt p)^p<\infty.
++    \end{split}
++  \]
++  This estimate concerns the actual coupled blocks; no independence
++  is needed. At these fixed data $A_p$ is independent of $\delta$.
++
++  We also specify the deterministic tolerance used with this bound.
++  The primitive estimates in Lemma~\ref{L:raw-block-uniform-error}
++  give, for the constant-potential primitives $H_m^{\mathrm{stat}}$,
++  \[
++    \max_m\max(\|H_m\|_{C^\theta},
++    \|H_m^{\mathrm{stat}}\|_{C^\theta})\le H_0,\qquad
++    \max_m\|H_m-H_m^{\mathrm{stat}}\|_{C^\theta}\le C_B\delta.
++  \]
++  Apply Proposition~\ref{P:constant-young-linear} on the fixed
++  driver ball of radius $H_0+1$ and use the bounded free groups on
++  $[0,B]$. There is $L_B\ge1$, depending on these fixed $R,B,\Psi$
++  and the admissible exponents, such that on $\{M_\delta\le1\}$,
++  \[
++    E_{\mathrm{op},\delta}\le L_B(M_\delta+\delta).
++  \]
++  Set $\eta=\min(1,\epsilon_{\mathrm{op}}/(2L_B))>0$.
++  If $\delta\le\epsilon_{\mathrm{op}}/(2L_B)$, then
++  $M_\delta\le\eta$ implies
++  $E_{\mathrm{op},\delta}\le\epsilon_{\mathrm{op}}$.
++  Thus, for the measurable event on the original common space
+   \[
+     E_\delta=\{E_{\mathrm{op},\delta}\le\epsilon_{\mathrm{op}}\}
+-    \cap\{|Z|\le\delta^{-1/4}\}.
+-  \]
+-  Lemma~\ref{L:raw-block-uniform-error} and Chebyshev give
+-  $\mathbb P(E_\delta)\to1$, because
+-  $\mathbb P(|Z|>\delta^{-1/4})\le v\delta^{1/2}$.
+-  This uses a union bound, with no independence from $Z$ or
+-  between blocks.
+-
+-  On $E_\delta$ the shifted blocks meet the cone hypotheses.
+-  In particular $Y_{\delta,B}>0$, and
++    \cap\{|Z|\le\delta^{-1/4}\},\qquad
++    p_\delta=\mathbb P(E_\delta),
++  \]
++  Chebyshev for the same single $Z=W(\Psi)$, with $\E Z^2=v$, gives
++  \[
++    p_\delta\ge1-A_p\eta^{-p}\delta^{\gamma_p}
++    -v\delta^{1/2}\longrightarrow1.
++  \]
++  This is one union bound, with no independence between blocks or
++  from $Z$ and no product of block probabilities.
++
++  Let $C_\lambda$ be a Lipschitz bound for $s\mapsto\lambda_s$.
++  Take $\delta$ small enough, in addition to
++  $0<\delta<\min(1,1/B)$, that
++  \[
++    \begin{gathered}
++      \delta B\le\omega,\qquad
++      \delta\le\epsilon_{\mathrm{op}}/(2L_B),\qquad
++      C_\lambda\delta B\le e_{\mathrm{rate}}/3,\\
++      \delta|\log c_*|\le e_{\mathrm{rate}}/3,\qquad
++      A_p\eta^{-p}\delta^{\gamma_p}+v\delta^{1/2}\le1/2.
++    \end{gathered}
++  \]
++  Every constant has been fixed before this choice. The condition
++  involving $C_\lambda$ is vacuous if that constant is zero.
++  All source limits in Proposition~\ref{P:raw-block-point-comparison}
++  have already been completed at each such fixed $\delta$.
++
++  The indices $s_m=m\delta B$ lie in $I$ with adjacent gaps at most
++  $\omega$. On $E_\delta$ the shifted full-$F$ blocks therefore
++  satisfy Lemma~\ref{L:raw-block-indexed-cone}, retaining both phase
++  entries and the actual final remainder $\tau$. In particular,
++  $Y_{\delta,B}>0$, and
+   \[
+     \delta\log Y_{\delta,B}
+     \ge\delta\log c_*+\delta(N-1)\log(1-\varrho)
+     +\delta B\sum_{m<N}\lambda_{s_m}
+     +\delta\tau\lambda_{s_N}.
+   \]
+-  The last two terms form the left Riemann sum for $I_R$ on
+-  the partition including its final interval of length
+-  $\delta\tau$, with mesh at most $\delta B$.
+-  The actual rate is Lipschitz, so its error is at most $C_R\delta B$.
+-  Also $0\le\delta(N-1)\le1/B\le1$ and hence the logarithmic
+-  loss is at least $\log(1-\varrho)>-e_{\mathrm{rate}}/3$.
+-  For sufficiently small $\delta$, the Riemann error and
+-  $\delta|\log c_*|$ are each at most $e_{\mathrm{rate}}/3$.
+-  Thus
+-  $Y_{\delta,B}\ge\exp((I_R-e_{\mathrm{rate}})/\delta)$ on $E_\delta$,
++  Since $s_N+\delta\tau=1$, the last two terms are the left Riemann
++  sum for $I_R$ on the entire interval, including its last interval
++  of length $\delta\tau$, with mesh at most $\delta B$.
++  Its error is at most $C_\lambda\delta B$.
++  Also $0\le\delta(N-1)\le1/B\le1$, so the logarithmic loss is
++  at least $\log(1-\varrho)>-e_{\mathrm{rate}}/3$.
++  The two other losses are each at most $e_{\mathrm{rate}}/3$ by
++  the choices above. Hence,
++  \[
++    Y_{\delta,B}\ge
++    \exp((I_R-e_{\mathrm{rate}})/\delta)\quad\hbox{on }E_\delta,
++  \]
+   including the $N=1$ and $\tau=0$ cases of the cone estimate.
+ 
+-  The square integrand in~\eqref{E:raw-block-square-identity}
+-  is nonnegative. Restrict it to $E_\delta$, where
+-  $-Z/\sqrt\delta\ge-\delta^{-3/4}$.
+-  With $p_\delta=\mathbb P(E_\delta)$ this gives
+-  \[
+-    \E U_{\delta,B}^2
+-    \ge p_\delta
+-    \exp\left(\frac{2I_R-2e_{\mathrm{rate}}-v/2}{\delta}
+-    -\delta^{-3/4}\right).
+-  \]
+-  For small $\delta$, $p_\delta\ge1/2$ and
+-  $\delta\log p_\delta\to0$. The normalized moderate penalty is
+-  $\delta(\delta^{-1/4}/\sqrt\delta)=\delta^{1/4}\to0$.
+-  Taking logarithms and lower limits at this fixed
+-  $e_{\mathrm{rate}}$ and its associated $B$ gives
+-  \[
+-    \liminf_{\delta\downarrow0}\delta\log\E U_{\delta,B}^2
+-    \ge2I_R-2e_{\mathrm{rate}}-v/2.
+-  \]
+-  By~\eqref{E:raw-block-original-comparison}, the
+-  $B$-independent original point rate is at least this right side
+-  for every fixed $e_{\mathrm{rate}}$. Only now let
+-  $e_{\mathrm{rate}}\downarrow0$. The bijection
+-  $\delta=T^{-\kappa}$ covers all sufficiently large $T$.
++  The integrand in~\eqref{E:raw-block-square-identity} is
++  nonnegative. On the same $E_\delta$ its linear Gaussian term
++  satisfies $-Z/\sqrt\delta\ge-\delta^{-3/4}$.
++  Restriction to this event and~\eqref{E:raw-block-original-comparison}
++  therefore give the explicit original-point budget
++  \[
++    \E|u(T,0)|^2\ge\E U_{\delta,B}^2
++    \ge p_\delta\exp\left(
++    \frac{2I_R-2e_{\mathrm{rate}}-v/2}{\delta}
++    -\delta^{-3/4}\right),\qquad \delta=T^{-\kappa}.
++  \]
++  Here $p_\delta\ge1/2$ for small $\delta$, so
++  $-\delta\log2\le\delta\log p_\delta\le0$.
++  Multiplying the logarithm of the preceding inequality by $\delta$
++  yields
++  \[
++    \delta\log\E|u(T,0)|^2
++    \ge2I_R-2e_{\mathrm{rate}}-v/2
++    -\delta^{1/4}+\delta\log p_\delta.
++  \]
++  Thus the normalized linear penalty is
++  $\delta\delta^{-3/4}=\delta^{1/4}\to0$, and
++  $\delta\log p_\delta\to0$. The quadratic Gaussian cost is
++  precisely half the original raw variance $v$.
++  Since $\kappa>0$, $\delta=T^{-\kappa}$ is a bijection between
++  all sufficiently large $T$ and all sufficiently small $\delta$.
++  This gives the full continuous-time liminf
++  $Q_2\ge2I_R-2e_{\mathrm{rate}}-v/2$.
++  For each $e_{\mathrm{rate}}$ the argument first fixed its own
++  $B=B(e_{\mathrm{rate}})$ and then took $\delta\downarrow0$.
++  The original point rate $Q_2$ is independent of $B$; only now let
++  $e_{\mathrm{rate}}\downarrow0$. No choice $B=B(\delta)$ is made.
+ 
+   Finally, spatial translation of all positive-width vertices
+   preserves the original noise law, Green kernels and constant

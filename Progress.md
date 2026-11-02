@@ -6,6 +6,16 @@
 
 ## Current state
 
+- **New analytic candidate ready (2026-11-02):** the external candidate expands
+  proofs 088, 091, 108, 110, 125 and 126. All 214 identities, 240 formal
+  statements, label and citation sequences remain; 208 other proof bodies
+  are identical to scientific b4b6efc. Root read the mathematical replays and
+  full diff, verified the preserved source/build evidence, and checked the
+  clean 263-page PDF after storage cleanup. This candidate is not production
+  source and has no independent review grade. Its source identity is b4b6efc
+  plus patch 2300422d, with exact file/body hashes. A compact source-only
+  DeepSeek review packet is being prepared; no new call has started.
+
 - **Current exact source (2026-11-02):** scientific editorial commit
   b4b6efc is clean and synchronized with <HUB>. All28 TeX retain214
   stable proofs;211 raw bodies are unchanged and034/189/193 have explicit
@@ -12461,3 +12471,19 @@ history/danglingobjects preserved. No nativeprocess/callactive. Userstorage
 priorityheldpacketgeneration; continuemathfromcompactsource-onlycarriers,
 notfullcopycheckouts. ACTIVEscientificsource stillb4b6efc; candidatev2new6
 proofbodiespendingreview. All originalgoal/gates/scopelimits unchanged.
+
+
+### Candidate verification after storage cleanup
+
+The preceding goal turn made progress: candidate mathematics was expanded,
+the full MAIN report was adjudicated, and duplicate checkouts were removed
+without losing the uncommitted work. This turn revalidated clean local/origin/
+<HUB> parity at ada3482 and preserved the complete candidate bindings.
+Root independently compared all 240 formal statement bodies, label and
+citation sequences and the restored 263-page PDF against frozen v2. The
+98-member candidate and 8-member variance-replay archives were rehashed.
+The variance replay derives both Bessel bounds, the actual noise/phase
+projections, distinct cutoff envelopes and vanishing Gaussian tail traces;
+it adds no independent vote. All six new proof bodies remain pending review.
+Only source-sized packet generation is authorized, not another full checkout.
+The original all-model objective and main/image/render/Kimi/cold gates remain.
