@@ -11143,3 +11143,25 @@ reviews/2026-11-02-cutoff-overlap-v1/adjudication.md. New proof document
 research-program/cutoff-overlap-proof-draft-v1.md requires actual independent
 proof review before adoption. Added missing proofs justify a genuine new
 immutable attempt; no unchanged confidence-only retry or gate relaxation.
+
+
+## 2026-11-02 — explicit cutoff proof review actually dispatched
+
+Fresh prior-blind DeepSeek V4 Pro PROOF reviewer on scientific
+7b624bee7255f51e2794ebf912cefa3aecd3acad, original p2science887 unchanged.
+Input is the actual221-line LemmaA/B/PropositionC draft, exact statement,
+model105-152, falsification record and FULL three construction modules.
+No prior report supplied; source aliases match live/Git/packet bytes.
+Carrier c053b28c9713b3a2e01cdb2af308e3de42b5559e is clean and held.
+Actual explicit --dir/--pure/--agent, requested model agrees with configured
+paper-review-deepseek, all tools denied, task-only65536output-cap request,
+HIGH minimum. Dry-run's own artifacts preserved outside carrier before
+launch. Exact scope/launch/bindings retained in
+reviews/2026-11-02-cutoff-overlap-proof-v1/.
+
+Actual native handle84370 is LIVE at checkpoint, in external
+../stratonovich-cutoff-overlap-proof-review-v1/native. PID2607887 confirmed
+live with step_start only and no stderr/terminal receipt; do not restart
+on silence or observation timeout. This is an actual new missing-proof
+attempt, not a repeat of unchanged MEDIUM statement inputs. Draft remains
+UNADOPTED; no current local-flow/point-moment/novelty or source-image gate.

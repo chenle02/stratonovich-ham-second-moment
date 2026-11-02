@@ -271,3 +271,19 @@ local phase target and Chen's known canonical existence. It records the
 white-noise parameter test, the literal integrated-noise factor c_a=3/8
 at a=1/2, the still-open approximation bridge and the exact PDF-repair status.
 This is author reconnaissance, not a new theorem or novelty clearance.
+
+
+## Cutoff consistency proof checkpoint
+
+The [precise cutoff statement](cutoff-overlap-statement-v1.json) and
+[cone/velocity test](cutoff-overlap-falsification-v1.json) were frozen before
+review. The first actual source-interface review returned MEDIUM and identified
+two missing explicit bridges: all-state/all-initial-time ordinary Duhamel
+identification and ordinary perturbed cone propagation.
+
+The [new proof draft](cutoff-overlap-proof-draft-v1.md) supplies those lemmas,
+then transfers their identities to raw fixed-mask flows by uniform triangle
+operator convergence and a zero-expectation argument. It retains the source
+field on the(W,J) extension and the limiting raw event on the original W space.
+A fresh actual proof review is running at this checkpoint. None of these new
+claims is adopted yet, and no complete local Fréchet flow is claimed.
