@@ -11,7 +11,7 @@
   scoped HIGH, including terminal Wick/tails and full-upper assembly.
   Constructor001–009, calibration010–019 and driver085–093 reports remain
   MEDIUM. The append-only ledger is
-  `reviews/2026-11-02-main-deepseek/depth-ledger-v12.json`.
+  `reviews/2026-11-02-main-deepseek/depth-ledger-v13.json`.
   Full213-proof, source-image/render and independent cold obligations remain.
   Further constructor004–006, source094–100 and masked101–103 packets are
   being prepared; preparation is not an actual reviewer launch.
@@ -11941,3 +11941,17 @@ fullH1fourlinear extension, ownenergy and fullstrong-H1 occupationclass.
 Both actualDeepSeek/toolsdenied/cap131072, no scientific edits/retries.
 Original213proof/fullsource/image/cold goal remains. README now explicitly
 records MAIN MEDIUM, scoped recovery and header-versus-acceptance distinction.
+
+
+### Compact-mean same-session public completion remains MEDIUM
+
+One authorizedcompletion614.627s, actualPASS_WITH_NOTES/MEDIUM unchanged,
+now all12CMF/sevenproofPASS ledger and fullfinalreport. Root read all and
+rehashed28archive members; exacttwo prompts/sameroute/one lineage/oldarchives
+verified. Originalmidword report and completenessrefusal remain immutable.
+Inverse-quarter-domain and missingexponential criticisms are false; additional
+report denominator direction and quarter-operator-versus-square-rootFORM
+shorthands corrected against already-correct source. No source/PDF edits.
+Depth-ledger-v13 replaces incomplete112–118 states with completedMEDIUM
+notaccepted. HIGH count remains57. No further retry. Nextnew142–148 unit
+preparing; constructor concretecorrection and unmasked/occupation stilllive.
