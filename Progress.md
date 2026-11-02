@@ -7,11 +7,11 @@
 ## Current state
 
 - **Main depth recovery (2026-11-02):** full-main DeepSeek review returned
-  MEDIUM; targeted deep audits have now accepted 111 named proof bodies at
+  MEDIUM; targeted deep audits have now accepted 115 named proof bodies at
   scoped HIGH, including terminal Wick/tails and full-upper assembly.
   The initial constructor001–009, calibration010–019 and driver085–093
   reports remain MEDIUM; focused004–006 is now separately accepted HIGH. The append-only ledger is
-  `reviews/2026-11-02-main-deepseek/depth-ledger-v25.json`.
+  `reviews/2026-11-02-main-deepseek/depth-ledger-v26.json`.
   All original213 proofs plus new214, source-image/render and independent
   cold obligations remain. Exact production214/182 is now integrated;
   terminal review backlog and earlierMEDIUM/NF obligations remain.
@@ -12220,3 +12220,21 @@ upgradeit. Higher witness a7/12not5/8/Gammainequalitynot equality; temporal
 ratio/controldepth qualifiers; ceilingcomputed-boundcomparison doesnot
 refute anactualmomentbound. All rawerrors/grades preserved for rootread.
 No model retries or sourceedits. Production53bf remains clean260pages.
+
+
+### Higher-dimensional conditional route scoped HIGH adopted
+
+020–023 actualPASS/HIGH,345.780s, fourFULLY_CHECKED/all14HD rows. Rootread
+whole report/rehashed90members. Rationalwitness a7/12versustheta5/8,
+Gammainequalitynot equality, factorialreciprocal direction andinvalidlabel
+advice adjudicated against correctsource. ExactRiesz/profilewindows and
+anisotropic no-go scope retained; no allmodel/Skorohod/cold/image transfer.
+v26has115scopedHIGH/all214identities. No scientificsource/PDF changes.
+
+FreshKimi capacityevidence: readonlyusageHTTP200 short/weeklywindowsroom
+butmonthlyfieldsabsent. ONErootauthorizednative3imageattempt thenreturned
+monthlyHTTP429 at2026-11-02T17:26:09Z, exit1,zerotools/images/report. Same
+configuredidentity persistedthrough ordinarynative renewal; configunchanged.
+No retry/fallback. This is a current externalimage/cold blocker, not a
+mathematical rejection orsuccessfulreview. Otherproof work remainsmeaningful,
+so fullgoalACTIVE; no source-image/cold waiver or completion claim.
