@@ -7,11 +7,11 @@
 ## Current state
 
 - **Main depth recovery (2026-11-02):** full-main DeepSeek review returned
-  MEDIUM; targeted deep audits have now accepted 84 named proof bodies at
+  MEDIUM; targeted deep audits have now accepted 92 named proof bodies at
   scoped HIGH, including terminal Wick/tails and full-upper assembly.
   The initial constructor001–009, calibration010–019 and driver085–093
   reports remain MEDIUM; focused004–006 is now separately accepted HIGH. The append-only ledger is
-  `reviews/2026-11-02-main-deepseek/depth-ledger-v19.json`.
+  `reviews/2026-11-02-main-deepseek/depth-ledger-v20.json`.
   Full213-proof, source-image/render and independent cold obligations remain.
   Further constructor004–006, source094–100 and masked101–103 packets are
   being prepared; preparation is not an actual reviewer launch.
@@ -12066,3 +12066,23 @@ not blockindependence or infiniteheadconditioning; compactvalues notuniform
 compactness. No growingRrandomresidual/concentration/nonlinear/image/cold
 clearance. v19has84scopedHIGH;135–137 remain unresolved asv18records.
 No source/PDF/Lean edit. Next161–164 exactsignedfoundation unit preparing.
+
+
+### Radius and remaining constructor scoped HIGH adoptions
+
+Radius156–160 actualPASS/HIGH,526.67s, fiveCHECKED/all8RAD PASS; rootreadall/
+rehashed48members/18bindings. Report-only straddling-stop increment claim
+corrected; source Holder contraction valid. FixedQ/R^(d/Q), bothvariances,
+projectiondeterminism and expectedEanchor scope retained, not F/nonlinear.
+Constructor007–009 actualPASS_WITH_NOTES/HIGH,1247.957s, threeFULLY_CHECKED/
+12MILD PASS. Rootrehashed64members/ninebindings. Heatvariance exponent is
+-alpha/2, not review's-alpha; N0 remains theta^-2 atzeroGamma. Two distinct
+Green-limit roles, correlatedoccupiedmultiplication, strongmeasurability and
+uniformtail passage adjudicated. No source/PDF/Lean edit. v20has92scopedHIGH.
+
+Central source-history-blindness-disclosure records review prose already
+inside exact887TeX. No prior REPORT files/identityverdict rows supplied does
+not imply strict textualblindness; rawmetadata unchanged. No audit has cold
+credit, and historicalvotes are never mathematicalpremises. Futurecoldpacket
+must address this explicitly. Next001–003/135 focusedaudit authorized; exact
+source135correct, only priorreview's null-transfer explanation was invalid.

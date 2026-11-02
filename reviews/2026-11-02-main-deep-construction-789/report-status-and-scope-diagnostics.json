@@ -1,0 +1,99 @@
+{
+  "scope": "Literal actual report dispositions and report-only control/limit clarifications; root adoption pending, raw report and scientific source unchanged",
+  "actual_grade": "PASS_WITH_NOTES/HIGH",
+  "individual_checks": [
+    {
+      "id": "MILD01",
+      "raw_status": "PASS (FULLY_CHECKED)."
+    },
+    {
+      "id": "MILD02",
+      "raw_status": "PASS (FULLY_CHECKED)."
+    },
+    {
+      "id": "MILD03",
+      "raw_status": "PASS (FULLY_CHECKED)."
+    },
+    {
+      "id": "MILD04",
+      "raw_status": "PASS (FULLY_CHECKED)."
+    },
+    {
+      "id": "MILD05",
+      "raw_status": "PASS (FULLY_CHECKED)."
+    },
+    {
+      "id": "MILD06",
+      "raw_status": "PASS (FULLY_CHECKED)."
+    },
+    {
+      "id": "MILD07",
+      "raw_status": "PASS (FULLY_CHECKED)."
+    },
+    {
+      "id": "MILD08",
+      "raw_status": "PASS (FULLY_CHECKED)."
+    },
+    {
+      "id": "MILD09",
+      "raw_status": "PASS (FULLY_CHECKED)."
+    },
+    {
+      "id": "MILD10",
+      "raw_status": "PASS (FULLY_CHECKED)."
+    },
+    {
+      "id": "MILD11",
+      "raw_status": "PASS (FULLY_CHECKED)."
+    },
+    {
+      "id": "MILD12",
+      "raw_status": "PASS (FULLY_CHECKED)."
+    }
+  ],
+  "proof_ledger": [
+    {
+      "id": "PROOF007",
+      "raw_label": "(`L:crude-corrected`, 989\u20131040)",
+      "raw_status": "FULLY_CHECKED"
+    },
+    {
+      "id": "PROOF008",
+      "raw_label": "(`L:vertex-crude`, 1058\u20131116)",
+      "raw_status": "FULLY_CHECKED"
+    },
+    {
+      "id": "PROOF009",
+      "raw_label": "(`P:mild-construction`, 1139\u20131286)",
+      "raw_status": "FULLY_CHECKED"
+    }
+  ],
+  "reported_required_repairs": "none; optional expansion of measurability/stationarity and product-subsequence prose",
+  "report_only_errors": [
+    {
+      "issue": "Finite-width control says gamma_(2epsilon)(0) scales epsilon^(-alpha).",
+      "correction": "Heat parameter epsilon is Brownian covariance width. Homogeneity gives gamma_(2epsilon)(0)=epsilon^(-alpha/2) gamma_2(0).",
+      "white_control": "For Gamma=delta0 in d1, gamma_(2epsilon)(0)=1/sqrt(4*pi*epsilon), not epsilon^-1.",
+      "scope": "Source uses exact symbolVa and only fixedpositive-a finiteness; no asserted quantitative divergence rate appears or is used there."
+    },
+    {
+      "issue": "ZeroGamma control says allnorms0.",
+      "correction": "Covariance norms N1,N2 vanish, but freeGreen mass norm N0(theta)=theta^-2 remains nonzero. Positive-order fields vanish directly; u=1, I_a=0.",
+      "scope": "Source retains exact N0 andH0 branch; report wording does not invalidate proof."
+    }
+  ],
+  "limit_order_clarification": {
+    "source_has_two_distinct_uses": [
+      "For Y_n^(b,a) allpositive noise widths, Green limit is already taken before innerb noise limit.",
+      "For fixedexternala productWa*X_(n-1), canonicalX is held fixed while its OUTER Green-width limit is proved by spatialL2continuity/tightness and dominatedtime integration."
+    ],
+    "do_not_infer": "No one global simultaneous Green/all-noise limit or unproved arbitrary interchange is supplied by the report shorthand. Source proves both needed identities separately."
+  },
+  "prior_verdict_annotations_supplied": false,
+  "gates_remaining": [
+    "Full213/main/global",
+    "Source-image/render",
+    "Independentcold"
+  ],
+  "next_provider_launched": false
+}
