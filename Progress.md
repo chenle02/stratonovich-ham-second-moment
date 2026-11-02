@@ -7,11 +7,11 @@
 ## Current state
 
 - **Main depth recovery (2026-11-02):** full-main DeepSeek review returned
-  MEDIUM; targeted deep audits have now accepted 98 named proof bodies at
+  MEDIUM; targeted deep audits have now accepted 106 named proof bodies at
   scoped HIGH, including terminal Wick/tails and full-upper assembly.
   The initial constructor001–009, calibration010–019 and driver085–093
   reports remain MEDIUM; focused004–006 is now separately accepted HIGH. The append-only ledger is
-  `reviews/2026-11-02-main-deepseek/depth-ledger-v22.json`.
+  `reviews/2026-11-02-main-deepseek/depth-ledger-v23.json`.
   Full213-proof, source-image/render and independent cold obligations remain.
   Further constructor004–006, source094–100 and masked101–103 packets are
   being prepared; preparation is not an actual reviewer launch.
@@ -12119,3 +12119,16 @@ is being drafted/reviewed EXTERNALLY before anysourceintegration. No silence
 or automaticpromotion ofcondition. CurrentTeX/PDF/Lean unchanged. v22has
 98scopedHIGH and marks001/002 HIGH_INTERNAL_ONLY_PRODUCTION_PREMISE_PENDING.
 Originalall213/image/cold/wholegoal obligations remain open.
+
+
+### Actual Gaussian tube/Rayleigh scoped HIGH adoption
+
+170–177 actualPASS_WITH_NOTES/HIGH,686.525s, eightCHECKED/all14TUB PASS.
+Rootreadall/rehashed64members/allbindings. ActualAWS/minpreimage, closedtubes,
+Borellsqrt(delta)scale, jumpingRayleigh transfer, coarse/tail/halfaction
+arguments checked. Printed190–191 arephysical200–201; injectivitytypo and
+broad-versus-interface endpointqualification adjudicated. No images or
+sharp/point/globalcredit. v23has106scopedHIGH; activeTeX/PDF remain887.
+Verified bridge draft and reviewed182replacement await productionintegration;
+other terminal reports remain queued for root adjudication, no missing
+reports replaced with votes or metadata. GoalACTIVE, notcomplete.
