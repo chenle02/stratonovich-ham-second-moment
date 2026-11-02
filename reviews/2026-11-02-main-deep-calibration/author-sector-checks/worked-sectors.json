@@ -1,0 +1,684 @@
+{
+  "scope": "Author-side exact finite polynomial verification only; not an independent review, regularization proof, asymptotic claim or HIGH upgrade.",
+  "source_revision": "887fbfbe0fa4368d6b32a436615d73349b2445d8",
+  "source_path": "notes/notes_stratonovich_ham_second_moment.tex",
+  "source_sha256": "e299a48b69f179573f1f5f0634ee976d34768dc7189f905bbd7a873ca48f2bf1",
+  "sympy_version": "1.14.0",
+  "sector_parameterization": [
+    "(|x|,|y|,|x-y|)=(u,u+v,v)",
+    "(u+v,u,v)",
+    "(u,v,u+v)"
+  ],
+  "method": "For each physical length pair impose L1<=1 if m>0 and L2<=1 if n>0; split u where active affine v upper bounds cross; integrate the polynomial exactly. Reflected sectors give factor2/(16*m!*n!).",
+  "rows": [
+    {
+      "split": [
+        0,
+        4
+      ],
+      "pairing": "A",
+      "sector": 1,
+      "L1": "0",
+      "L2": "u + v",
+      "integrand": "u**4 + 4*u**3*v - 4*u**3 + 6*u**2*v**2 - 12*u**2*v + 6*u**2 + 4*u*v**3 - 12*u*v**2 + 12*u*v - 4*u + v**4 - 4*v**3 + 6*v**2 - 4*v + 1",
+      "pieces": [
+        {
+          "u_from": "0",
+          "u_to": "1",
+          "v_from": "0",
+          "v_to": "1 - u",
+          "inner_integral_polynomial": "-u**5/5 + u**4 - 2*u**3 + 2*u**2 - u + 1/5",
+          "piece_value": "1/30"
+        }
+      ],
+      "total": "1/30",
+      "printed_matches": true,
+      "reflected_normalized_row": "1/2880"
+    },
+    {
+      "split": [
+        0,
+        4
+      ],
+      "pairing": "A",
+      "sector": 2,
+      "L1": "0",
+      "L2": "u + 2*v",
+      "integrand": "u**4 + 8*u**3*v - 4*u**3 + 24*u**2*v**2 - 24*u**2*v + 6*u**2 + 32*u*v**3 - 48*u*v**2 + 24*u*v - 4*u + 16*v**4 - 32*v**3 + 24*v**2 - 8*v + 1",
+      "pieces": [
+        {
+          "u_from": "0",
+          "u_to": "1",
+          "v_from": "0",
+          "v_to": "1/2 - u/2",
+          "inner_integral_polynomial": "-u**5/10 + u**4/2 - u**3 + u**2 - u/2 + 1/10",
+          "piece_value": "1/60"
+        }
+      ],
+      "total": "1/60",
+      "printed_matches": true,
+      "reflected_normalized_row": "1/2880"
+    },
+    {
+      "split": [
+        0,
+        4
+      ],
+      "pairing": "A",
+      "sector": 3,
+      "L1": "0",
+      "L2": "2*u + v",
+      "integrand": "16*u**4 + 32*u**3*v - 32*u**3 + 24*u**2*v**2 - 48*u**2*v + 24*u**2 + 8*u*v**3 - 24*u*v**2 + 24*u*v - 8*u + v**4 - 4*v**3 + 6*v**2 - 4*v + 1",
+      "pieces": [
+        {
+          "u_from": "0",
+          "u_to": "1/2",
+          "v_from": "0",
+          "v_to": "1 - 2*u",
+          "inner_integral_polynomial": "-32*u**5/5 + 16*u**4 - 16*u**3 + 8*u**2 - 2*u + 1/5",
+          "piece_value": "1/60"
+        }
+      ],
+      "total": "1/60",
+      "printed_matches": true,
+      "reflected_normalized_row": "1/2880"
+    },
+    {
+      "split": [
+        0,
+        4
+      ],
+      "pairing": "B",
+      "sector": 1,
+      "L1": "0",
+      "L2": "u + 3*v",
+      "integrand": "u**4 + 12*u**3*v - 4*u**3 + 54*u**2*v**2 - 36*u**2*v + 6*u**2 + 108*u*v**3 - 108*u*v**2 + 36*u*v - 4*u + 81*v**4 - 108*v**3 + 54*v**2 - 12*v + 1",
+      "pieces": [
+        {
+          "u_from": "0",
+          "u_to": "1",
+          "v_from": "0",
+          "v_to": "1/3 - u/3",
+          "inner_integral_polynomial": "-u**5/15 + u**4/3 - 2*u**3/3 + 2*u**2/3 - u/3 + 1/15",
+          "piece_value": "1/90"
+        }
+      ],
+      "total": "1/90",
+      "printed_matches": true,
+      "reflected_normalized_row": "1/8640"
+    },
+    {
+      "split": [
+        0,
+        4
+      ],
+      "pairing": "B",
+      "sector": 2,
+      "L1": "0",
+      "L2": "u + 4*v",
+      "integrand": "u**4 + 16*u**3*v - 4*u**3 + 96*u**2*v**2 - 48*u**2*v + 6*u**2 + 256*u*v**3 - 192*u*v**2 + 48*u*v - 4*u + 256*v**4 - 256*v**3 + 96*v**2 - 16*v + 1",
+      "pieces": [
+        {
+          "u_from": "0",
+          "u_to": "1",
+          "v_from": "0",
+          "v_to": "1/4 - u/4",
+          "inner_integral_polynomial": "-u**5/20 + u**4/4 - u**3/2 + u**2/2 - u/4 + 1/20",
+          "piece_value": "1/120"
+        }
+      ],
+      "total": "1/120",
+      "printed_matches": true,
+      "reflected_normalized_row": "1/8640"
+    },
+    {
+      "split": [
+        0,
+        4
+      ],
+      "pairing": "B",
+      "sector": 3,
+      "L1": "0",
+      "L2": "4*u + 3*v",
+      "integrand": "256*u**4 + 768*u**3*v - 256*u**3 + 864*u**2*v**2 - 576*u**2*v + 96*u**2 + 432*u*v**3 - 432*u*v**2 + 144*u*v - 16*u + 81*v**4 - 108*v**3 + 54*v**2 - 12*v + 1",
+      "pieces": [
+        {
+          "u_from": "0",
+          "u_to": "1/4",
+          "v_from": "0",
+          "v_to": "1/3 - 4*u/3",
+          "inner_integral_polynomial": "-1024*u**5/15 + 256*u**4/3 - 128*u**3/3 + 32*u**2/3 - 4*u/3 + 1/15",
+          "piece_value": "1/360"
+        }
+      ],
+      "total": "1/360",
+      "printed_matches": true,
+      "reflected_normalized_row": "1/8640"
+    },
+    {
+      "split": [
+        0,
+        4
+      ],
+      "pairing": "C",
+      "sector": 1,
+      "L1": "0",
+      "L2": "u + 2*v",
+      "integrand": "u**4 + 8*u**3*v - 4*u**3 + 24*u**2*v**2 - 24*u**2*v + 6*u**2 + 32*u*v**3 - 48*u*v**2 + 24*u*v - 4*u + 16*v**4 - 32*v**3 + 24*v**2 - 8*v + 1",
+      "pieces": [
+        {
+          "u_from": "0",
+          "u_to": "1",
+          "v_from": "0",
+          "v_to": "1/2 - u/2",
+          "inner_integral_polynomial": "-u**5/10 + u**4/2 - u**3 + u**2 - u/2 + 1/10",
+          "piece_value": "1/60"
+        }
+      ],
+      "total": "1/60",
+      "printed_matches": true,
+      "reflected_normalized_row": "1/5760"
+    },
+    {
+      "split": [
+        0,
+        4
+      ],
+      "pairing": "C",
+      "sector": 2,
+      "L1": "0",
+      "L2": "u + 3*v",
+      "integrand": "u**4 + 12*u**3*v - 4*u**3 + 54*u**2*v**2 - 36*u**2*v + 6*u**2 + 108*u*v**3 - 108*u*v**2 + 36*u*v - 4*u + 81*v**4 - 108*v**3 + 54*v**2 - 12*v + 1",
+      "pieces": [
+        {
+          "u_from": "0",
+          "u_to": "1",
+          "v_from": "0",
+          "v_to": "1/3 - u/3",
+          "inner_integral_polynomial": "-u**5/15 + u**4/3 - 2*u**3/3 + 2*u**2/3 - u/3 + 1/15",
+          "piece_value": "1/90"
+        }
+      ],
+      "total": "1/90",
+      "printed_matches": true,
+      "reflected_normalized_row": "1/5760"
+    },
+    {
+      "split": [
+        0,
+        4
+      ],
+      "pairing": "C",
+      "sector": 3,
+      "L1": "0",
+      "L2": "3*u + 2*v",
+      "integrand": "81*u**4 + 216*u**3*v - 108*u**3 + 216*u**2*v**2 - 216*u**2*v + 54*u**2 + 96*u*v**3 - 144*u*v**2 + 72*u*v - 12*u + 16*v**4 - 32*v**3 + 24*v**2 - 8*v + 1",
+      "pieces": [
+        {
+          "u_from": "0",
+          "u_to": "1/3",
+          "v_from": "0",
+          "v_to": "1/2 - 3*u/2",
+          "inner_integral_polynomial": "-243*u**5/10 + 81*u**4/2 - 27*u**3 + 9*u**2 - 3*u/2 + 1/10",
+          "piece_value": "1/180"
+        }
+      ],
+      "total": "1/180",
+      "printed_matches": true,
+      "reflected_normalized_row": "1/5760"
+    },
+    {
+      "split": [
+        1,
+        3
+      ],
+      "pairing": "A",
+      "sector": 1,
+      "L1": "u",
+      "L2": "u + v",
+      "integrand": "u**4 + 3*u**3*v - 4*u**3 + 3*u**2*v**2 - 9*u**2*v + 6*u**2 + u*v**3 - 6*u*v**2 + 9*u*v - 4*u - v**3 + 3*v**2 - 3*v + 1",
+      "pieces": [
+        {
+          "u_from": "0",
+          "u_to": "1",
+          "v_from": "0",
+          "v_to": "1 - u",
+          "inner_integral_polynomial": "-u**5/4 + 5*u**4/4 - 5*u**3/2 + 5*u**2/2 - 5*u/4 + 1/4",
+          "piece_value": "1/24"
+        }
+      ],
+      "total": "1/24",
+      "printed_matches": true,
+      "reflected_normalized_row": "1/576"
+    },
+    {
+      "split": [
+        1,
+        3
+      ],
+      "pairing": "A",
+      "sector": 2,
+      "L1": "u + v",
+      "L2": "u + 2*v",
+      "integrand": "u**4 + 7*u**3*v - 4*u**3 + 18*u**2*v**2 - 21*u**2*v + 6*u**2 + 20*u*v**3 - 36*u*v**2 + 21*u*v - 4*u + 8*v**4 - 20*v**3 + 18*v**2 - 7*v + 1",
+      "pieces": [
+        {
+          "u_from": "0",
+          "u_to": "1",
+          "v_from": "0",
+          "v_to": "1/2 - u/2",
+          "inner_integral_polynomial": "-9*u**5/80 + 9*u**4/16 - 9*u**3/8 + 9*u**2/8 - 9*u/16 + 9/80",
+          "piece_value": "3/160"
+        }
+      ],
+      "total": "3/160",
+      "printed_matches": true,
+      "reflected_normalized_row": "1/576"
+    },
+    {
+      "split": [
+        1,
+        3
+      ],
+      "pairing": "A",
+      "sector": 3,
+      "L1": "u",
+      "L2": "2*u + v",
+      "integrand": "8*u**4 + 12*u**3*v - 20*u**3 + 6*u**2*v**2 - 24*u**2*v + 18*u**2 + u*v**3 - 9*u*v**2 + 15*u*v - 7*u - v**3 + 3*v**2 - 3*v + 1",
+      "pieces": [
+        {
+          "u_from": "0",
+          "u_to": "1/2",
+          "v_from": "0",
+          "v_to": "1 - 2*u",
+          "inner_integral_polynomial": "-4*u**5 + 12*u**4 - 14*u**3 + 8*u**2 - 9*u/4 + 1/4",
+          "piece_value": "11/480"
+        }
+      ],
+      "total": "11/480",
+      "printed_matches": true,
+      "reflected_normalized_row": "1/576"
+    },
+    {
+      "split": [
+        1,
+        3
+      ],
+      "pairing": "B",
+      "sector": 1,
+      "L1": "u",
+      "L2": "u + 3*v",
+      "integrand": "u**4 + 9*u**3*v - 4*u**3 + 27*u**2*v**2 - 27*u**2*v + 6*u**2 + 27*u*v**3 - 54*u*v**2 + 27*u*v - 4*u - 27*v**3 + 27*v**2 - 9*v + 1",
+      "pieces": [
+        {
+          "u_from": "0",
+          "u_to": "1",
+          "v_from": "0",
+          "v_to": "1/3 - u/3",
+          "inner_integral_polynomial": "-u**5/12 + 5*u**4/12 - 5*u**3/6 + 5*u**2/6 - 5*u/12 + 1/12",
+          "piece_value": "1/72"
+        }
+      ],
+      "total": "1/72",
+      "printed_matches": true,
+      "reflected_normalized_row": "29/34560"
+    },
+    {
+      "split": [
+        1,
+        3
+      ],
+      "pairing": "B",
+      "sector": 2,
+      "L1": "u + v",
+      "L2": "u + 2*v",
+      "integrand": "u**4 + 7*u**3*v - 4*u**3 + 18*u**2*v**2 - 21*u**2*v + 6*u**2 + 20*u*v**3 - 36*u*v**2 + 21*u*v - 4*u + 8*v**4 - 20*v**3 + 18*v**2 - 7*v + 1",
+      "pieces": [
+        {
+          "u_from": "0",
+          "u_to": "1",
+          "v_from": "0",
+          "v_to": "1/2 - u/2",
+          "inner_integral_polynomial": "-9*u**5/80 + 9*u**4/16 - 9*u**3/8 + 9*u**2/8 - 9*u/16 + 9/80",
+          "piece_value": "3/160"
+        }
+      ],
+      "total": "3/160",
+      "printed_matches": true,
+      "reflected_normalized_row": "29/34560"
+    },
+    {
+      "split": [
+        1,
+        3
+      ],
+      "pairing": "B",
+      "sector": 3,
+      "L1": "u",
+      "L2": "2*u + 3*v",
+      "integrand": "8*u**4 + 36*u**3*v - 20*u**3 + 54*u**2*v**2 - 72*u**2*v + 18*u**2 + 27*u*v**3 - 81*u*v**2 + 45*u*v - 7*u - 27*v**3 + 27*v**2 - 9*v + 1",
+      "pieces": [
+        {
+          "u_from": "0",
+          "u_to": "1/2",
+          "v_from": "0",
+          "v_to": "1/3 - 2*u/3",
+          "inner_integral_polynomial": "-4*u**5/3 + 4*u**4 - 14*u**3/3 + 8*u**2/3 - 3*u/4 + 1/12",
+          "piece_value": "11/1440"
+        }
+      ],
+      "total": "11/1440",
+      "printed_matches": true,
+      "reflected_normalized_row": "29/34560"
+    },
+    {
+      "split": [
+        1,
+        3
+      ],
+      "pairing": "C",
+      "sector": 1,
+      "L1": "u",
+      "L2": "u + 2*v",
+      "integrand": "u**4 + 6*u**3*v - 4*u**3 + 12*u**2*v**2 - 18*u**2*v + 6*u**2 + 8*u*v**3 - 24*u*v**2 + 18*u*v - 4*u - 8*v**3 + 12*v**2 - 6*v + 1",
+      "pieces": [
+        {
+          "u_from": "0",
+          "u_to": "1",
+          "v_from": "0",
+          "v_to": "1/2 - u/2",
+          "inner_integral_polynomial": "-u**5/8 + 5*u**4/8 - 5*u**3/4 + 5*u**2/4 - 5*u/8 + 1/8",
+          "piece_value": "1/48"
+        }
+      ],
+      "total": "1/48",
+      "printed_matches": true,
+      "reflected_normalized_row": "1/640"
+    },
+    {
+      "split": [
+        1,
+        3
+      ],
+      "pairing": "C",
+      "sector": 2,
+      "L1": "u + v",
+      "L2": "u + v",
+      "integrand": "u**4 + 4*u**3*v - 4*u**3 + 6*u**2*v**2 - 12*u**2*v + 6*u**2 + 4*u*v**3 - 12*u*v**2 + 12*u*v - 4*u + v**4 - 4*v**3 + 6*v**2 - 4*v + 1",
+      "pieces": [
+        {
+          "u_from": "0",
+          "u_to": "1",
+          "v_from": "0",
+          "v_to": "1 - u",
+          "inner_integral_polynomial": "-u**5/5 + u**4 - 2*u**3 + 2*u**2 - u + 1/5",
+          "piece_value": "1/30"
+        }
+      ],
+      "total": "1/30",
+      "printed_matches": true,
+      "reflected_normalized_row": "1/640"
+    },
+    {
+      "split": [
+        1,
+        3
+      ],
+      "pairing": "C",
+      "sector": 3,
+      "L1": "u",
+      "L2": "u + 2*v",
+      "integrand": "u**4 + 6*u**3*v - 4*u**3 + 12*u**2*v**2 - 18*u**2*v + 6*u**2 + 8*u*v**3 - 24*u*v**2 + 18*u*v - 4*u - 8*v**3 + 12*v**2 - 6*v + 1",
+      "pieces": [
+        {
+          "u_from": "0",
+          "u_to": "1",
+          "v_from": "0",
+          "v_to": "1/2 - u/2",
+          "inner_integral_polynomial": "-u**5/8 + 5*u**4/8 - 5*u**3/4 + 5*u**2/4 - 5*u/8 + 1/8",
+          "piece_value": "1/48"
+        }
+      ],
+      "total": "1/48",
+      "printed_matches": true,
+      "reflected_normalized_row": "1/640"
+    },
+    {
+      "split": [
+        2,
+        2
+      ],
+      "pairing": "A",
+      "sector": 1,
+      "L1": "u",
+      "L2": "u + v",
+      "integrand": "u**4 + 2*u**3*v - 4*u**3 + u**2*v**2 - 6*u**2*v + 6*u**2 - 2*u*v**2 + 6*u*v - 4*u + v**2 - 2*v + 1",
+      "pieces": [
+        {
+          "u_from": "0",
+          "u_to": "1",
+          "v_from": "0",
+          "v_to": "1 - u",
+          "inner_integral_polynomial": "-u**5/3 + 5*u**4/3 - 10*u**3/3 + 10*u**2/3 - 5*u/3 + 1/3",
+          "piece_value": "1/18"
+        }
+      ],
+      "total": "1/18",
+      "printed_matches": true,
+      "reflected_normalized_row": "1/144"
+    },
+    {
+      "split": [
+        2,
+        2
+      ],
+      "pairing": "A",
+      "sector": 2,
+      "L1": "u + v",
+      "L2": "u",
+      "integrand": "u**4 + 2*u**3*v - 4*u**3 + u**2*v**2 - 6*u**2*v + 6*u**2 - 2*u*v**2 + 6*u*v - 4*u + v**2 - 2*v + 1",
+      "pieces": [
+        {
+          "u_from": "0",
+          "u_to": "1",
+          "v_from": "0",
+          "v_to": "1 - u",
+          "inner_integral_polynomial": "-u**5/3 + 5*u**4/3 - 10*u**3/3 + 10*u**2/3 - 5*u/3 + 1/3",
+          "piece_value": "1/18"
+        }
+      ],
+      "total": "1/18",
+      "printed_matches": true,
+      "reflected_normalized_row": "1/144"
+    },
+    {
+      "split": [
+        2,
+        2
+      ],
+      "pairing": "A",
+      "sector": 3,
+      "L1": "u",
+      "L2": "v",
+      "integrand": "u**2*v**2 - 2*u**2*v + u**2 - 2*u*v**2 + 4*u*v - 2*u + v**2 - 2*v + 1",
+      "pieces": [
+        {
+          "u_from": "0",
+          "u_to": "1",
+          "v_from": "0",
+          "v_to": "1",
+          "inner_integral_polynomial": "u**2/3 - 2*u/3 + 1/3",
+          "piece_value": "1/9"
+        }
+      ],
+      "total": "1/9",
+      "printed_matches": true,
+      "reflected_normalized_row": "1/144"
+    },
+    {
+      "split": [
+        2,
+        2
+      ],
+      "pairing": "B",
+      "sector": 1,
+      "L1": "u + v",
+      "L2": "u + v",
+      "integrand": "u**4 + 4*u**3*v - 4*u**3 + 6*u**2*v**2 - 12*u**2*v + 6*u**2 + 4*u*v**3 - 12*u*v**2 + 12*u*v - 4*u + v**4 - 4*v**3 + 6*v**2 - 4*v + 1",
+      "pieces": [
+        {
+          "u_from": "0",
+          "u_to": "1",
+          "v_from": "0",
+          "v_to": "1 - u",
+          "inner_integral_polynomial": "-u**5/5 + u**4 - 2*u**3 + 2*u**2 - u + 1/5",
+          "piece_value": "1/30"
+        }
+      ],
+      "total": "1/30",
+      "printed_matches": true,
+      "reflected_normalized_row": "1/480"
+    },
+    {
+      "split": [
+        2,
+        2
+      ],
+      "pairing": "B",
+      "sector": 2,
+      "L1": "u + 2*v",
+      "L2": "u + 2*v",
+      "integrand": "u**4 + 8*u**3*v - 4*u**3 + 24*u**2*v**2 - 24*u**2*v + 6*u**2 + 32*u*v**3 - 48*u*v**2 + 24*u*v - 4*u + 16*v**4 - 32*v**3 + 24*v**2 - 8*v + 1",
+      "pieces": [
+        {
+          "u_from": "0",
+          "u_to": "1",
+          "v_from": "0",
+          "v_to": "1/2 - u/2",
+          "inner_integral_polynomial": "-u**5/10 + u**4/2 - u**3 + u**2 - u/2 + 1/10",
+          "piece_value": "1/60"
+        }
+      ],
+      "total": "1/60",
+      "printed_matches": true,
+      "reflected_normalized_row": "1/480"
+    },
+    {
+      "split": [
+        2,
+        2
+      ],
+      "pairing": "B",
+      "sector": 3,
+      "L1": "2*u + v",
+      "L2": "2*u + v",
+      "integrand": "16*u**4 + 32*u**3*v - 32*u**3 + 24*u**2*v**2 - 48*u**2*v + 24*u**2 + 8*u*v**3 - 24*u*v**2 + 24*u*v - 8*u + v**4 - 4*v**3 + 6*v**2 - 4*v + 1",
+      "pieces": [
+        {
+          "u_from": "0",
+          "u_to": "1/2",
+          "v_from": "0",
+          "v_to": "1 - 2*u",
+          "inner_integral_polynomial": "-32*u**5/5 + 16*u**4 - 16*u**3 + 8*u**2 - 2*u + 1/5",
+          "piece_value": "1/60"
+        }
+      ],
+      "total": "1/60",
+      "printed_matches": true,
+      "reflected_normalized_row": "1/480"
+    },
+    {
+      "split": [
+        2,
+        2
+      ],
+      "pairing": "C",
+      "sector": 1,
+      "L1": "u + v",
+      "L2": "u + 2*v",
+      "integrand": "u**4 + 6*u**3*v - 4*u**3 + 13*u**2*v**2 - 18*u**2*v + 6*u**2 + 12*u*v**3 - 26*u*v**2 + 18*u*v - 4*u + 4*v**4 - 12*v**3 + 13*v**2 - 6*v + 1",
+      "pieces": [
+        {
+          "u_from": "0",
+          "u_to": "1",
+          "v_from": "0",
+          "v_to": "1/2 - u/2",
+          "inner_integral_polynomial": "-31*u**5/240 + 31*u**4/48 - 31*u**3/24 + 31*u**2/24 - 31*u/48 + 31/240",
+          "piece_value": "31/1440"
+        }
+      ],
+      "total": "31/1440",
+      "printed_matches": true,
+      "reflected_normalized_row": "31/17280"
+    },
+    {
+      "split": [
+        2,
+        2
+      ],
+      "pairing": "C",
+      "sector": 2,
+      "L1": "u + 2*v",
+      "L2": "u + v",
+      "integrand": "u**4 + 6*u**3*v - 4*u**3 + 13*u**2*v**2 - 18*u**2*v + 6*u**2 + 12*u*v**3 - 26*u*v**2 + 18*u*v - 4*u + 4*v**4 - 12*v**3 + 13*v**2 - 6*v + 1",
+      "pieces": [
+        {
+          "u_from": "0",
+          "u_to": "1",
+          "v_from": "0",
+          "v_to": "1/2 - u/2",
+          "inner_integral_polynomial": "-31*u**5/240 + 31*u**4/48 - 31*u**3/24 + 31*u**2/24 - 31*u/48 + 31/240",
+          "piece_value": "31/1440"
+        }
+      ],
+      "total": "31/1440",
+      "printed_matches": true,
+      "reflected_normalized_row": "31/17280"
+    },
+    {
+      "split": [
+        2,
+        2
+      ],
+      "pairing": "C",
+      "sector": 3,
+      "L1": "2*u + v",
+      "L2": "u + 2*v",
+      "integrand": "4*u**4 + 20*u**3*v - 12*u**3 + 33*u**2*v**2 - 42*u**2*v + 13*u**2 + 20*u*v**3 - 42*u*v**2 + 28*u*v - 6*u + 4*v**4 - 12*v**3 + 13*v**2 - 6*v + 1",
+      "pieces": [
+        {
+          "u_from": "0",
+          "u_to": "1/3",
+          "v_from": "0",
+          "v_to": "1/2 - u/2",
+          "inner_integral_polynomial": "-47*u**5/80 + 37*u**4/16 - 85*u**3/24 + 21*u**2/8 - 15*u/16 + 31/240",
+          "piece_value": "995/69984"
+        },
+        {
+          "u_from": "1/3",
+          "u_to": "1/2",
+          "v_from": "0",
+          "v_to": "1 - 2*u",
+          "inner_integral_polynomial": "-8*u**5/5 + 4*u**4 - 14*u**3/3 + 3*u**2 - u + 2/15",
+          "piece_value": "47/349920"
+        }
+      ],
+      "total": "31/2160",
+      "printed_matches": true,
+      "reflected_normalized_row": "31/17280"
+    }
+  ],
+  "all27_match": true,
+  "normalized_rows": [
+    "1/2880",
+    "1/8640",
+    "1/5760",
+    "1/576",
+    "29/34560",
+    "1/640",
+    "1/144",
+    "1/480",
+    "31/17280"
+  ],
+  "total": "11/540"
+}

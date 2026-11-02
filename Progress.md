@@ -11700,3 +11700,36 @@ rows and absent source images. Balan–Conus carrier is not privateBCW input.
 All findings adjudicated in the three review directories. Append-only v4
 preserves all213identities and raw main statuses, with39scoped HIGH targets.
 No scientific TeX/PDF/finiteLean change; full goal is ACTIVE, not complete.
+
+
+### Next native MAIN depth reviews and exact calibration controls
+
+Source094–100 ACTUALLY launched once: siblingstratonovich-main-deep-source-v1,
+PID3582719/wrapper3582714, handle2253; carrier
+a01d09050c272b90c1f425bbb481d8bb269b3096; prompt401833bytes/SHA
+9728b44ee02e04399ac7d0e75406d3e8026e526ba82d99e80c9f83b9008bc727.
+Masked101–103 ACTUALLY launched once: siblingstratonovich-main-deep-masked-v1,
+PID3586933/supervisor3586814, handle48642; carrier
+e7566e3ec8f0181cee7057b5909bdea5a0b76eb7; prompt424829bytes/SHA
+06c6dbc7c1d1e998b94c6553b1d4a9e20f31b4d536d55e4e7c40fa1729126e17.
+FiniteGram194–198 ACTUALLY launched once: siblingstratonovich-main-deep-gram-v1,
+PID3587123/supervisor3587110, handle87418; carrier
+e20bf73f170784b9aa86d7769c5eab09deb329f0; prompt63207bytes/SHA
+d913768bd2f0df09946a048eb5d727e3dcb88d38860e89ae67e595de9adb024f.
+All three exact887science, actual DeepSeek V4 Pro/tools-denied/cap131072,
+complete assigned proofs and concrete prerequisite/consumer contexts,
+no prior verdicts or automatic retries. LIVE at this capture; inspect actual
+exit receipts before collecting. Gram first dry-run refused missing Progress
+before any provider invocation; retained then fixed in external carrier.
+Its raw launch metadata contains a copied actualW/source-law suffix; the
+actual prompt/identity/scope is exclusively the finiteGram assignment, with
+intrinsic consumer context. Additive author-scope-note preserves this fact.
+
+Author exact calibration checks independently reconstruct all27sectors from
+physical chain lengths and linear constraints, splitting every active-bound
+crossing, then integrate rational polynomials exactly. Recorded each piece's
+bounds/inner polynomial/value and all9reflected rows. All agree with printed
+values and11/540. External run and portable committed-path replay both exit0
+under Sympy1.14.0. See main-deep-calibration/author-sector-checks. This adds
+worked evidence for a genuine later depth audit, not independent reviewer
+credit or a change to the actual MEDIUM verdict. No source/PDF changes.
