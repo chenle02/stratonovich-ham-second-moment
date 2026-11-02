@@ -11523,3 +11523,31 @@ first PROOF037-051 in four successive dependency-complete units, retaining
 full213scope and final combined/source/visual/cold obligations. Main reviewer
 remains DeepSeek as Le requested. This responds to actual proof-depth gaps,
 not a confidence-only repeat or a reduced task. Goal ACTIVE.
+
+
+### Two substantive MAIN depth units actually launched
+
+UnitA (static analytic/Fock foundation PROOF037-041) is LIVE:
+../stratonovich-main-deep-a-v1, PID3049511/supervisor3049351, handle67716,
+session ses_e657075fcffeFpkGQ4L1getFwD. Clean carrier
+b18bfcdbc65b8fd68767e2037d9486a83f859ce4. Prompt168321bytes SHA256
+42885d1275b2347bea50102e2e0c830cc535493ea1a02db55c8640b5b2d92ade.
+Target22746bytes matches exact887 lines4552-5123; full Crouzeix and exact
+Chen physical7-8 LF385-530 with original formfeeds supplied. Eight named
+checks and individual5proof depth statuses; no prior votes supplied.
+
+Independent construction unit PROOF001-009 is LIVE:
+../stratonovich-main-deep-construction-v1, PID3053225/wrapper3053217,
+handle72849. Clean carrier7b654235775a91a9f4b9832a3ab1ca3f06a26e5e.
+Prompt302708bytes SHA256
+f76a7937e845f6773af9350a30e9a129957d0f758170d14859e0f8932f9c4cec.
+Main1-1286 contains all9statements/proofs and internal references; full
+Chen author/source manifest/historical-version context supplied. CON01-CON11
+and explicit proof coverage, by-hand falsification, actual limit/hypothesis
+checks requested. No source change or provider retry in either attempt.
+
+Both actual configured DeepSeek/all-tools-disabled routes verified; cap65536,
+HIGH not presumed. The four-unit upper worklist and independent construction
+unit retain full213scope and global/source/image/render/cold gates. This
+addresses actual reported proof-depth gaps rather than replacing the goal
+with an easier theorem. Full MAIN report remains terminalMEDIUM/unaccepted.
