@@ -10820,3 +10820,40 @@ No direct corpus write, source correspondence or manuscript release.
 Current257-page scientific source/PDF and all213proofs stay unchanged.
 This is a higher-level author program proposal, not independent scientific
 acceptance, three proven papers or replacement of the original goal.
+
+
+## 2026-11-01 — actual reference holdings and contribution boundaries
+
+Le asked whether all cited references are held and what our contributions
+are. Performed exact DOI Papis queries plus canonical five-layer checks,
+PDF signatures/title-page/page-count/SHA checks; did not infer identity from
+filename. All four foundational full texts now locally accessible, but
+full theorem/novelty comparison remains incomplete. Gubinelli-Tindel75pages
+and Cass-Litterer-Lyons25pages are held in PDF/refdb/Papis; Forge/wiki/brain
+coverage incomplete. Friz-Victoir11-page published PDF newly acquired on
+<HUB>; exact ticket tk-20261101-185423-codex-stratonovich-program is
+CLAIMED at observation, not a finished digest. Copied it into external
+project audit storage, preserving canonical corpus single-writer policy.
+
+Found and remotely confirmed a REAL identity defect: canonical
+All_PDFs/c/chen_deya_ea-23-hyperbolic.pdf contains Chen's EJP2023spatial
+energy paper, DOI10.1214/23-EJP985,SHA9ed4b0ae...a5da,18PDFpages.
+Papis has correct CDST title but arXivv1,34pages. Retained project llm_pack
+TeX has correct CDST title/subject; no direct CDST citekey in current own
+mathematical TeX. Acquired and title-verified actual54-page published CDST
+PDF from the author-hosted IMRN source into external project audit storage,
+SHA13be3be86d54b30f1988b251d9ad2867ffbde74eed52aac10aafe8d778ea5bf0.
+Normal exact-identity repair queued as
+tk-20261101-190012-codex-stratonovich-reference-identity, with preserve-old-
+bytes instruction. No direct corpus repair or completed repair asserted.
+
+Evidence/holdings/contribution map in
+research-program/2026-11-01-holdings-and-contributions-v1.json.
+Current main candidate contributions are the correct-scale original p2
+upper and exact intrinsic p2 variational characterization; these remain
+subject to consolidated verification. Candidate reusable advance is the
+actual Gaussian weak-phase construction plus uniform growing-domain
+spectral/product control and optimized sign reduction. Generic Young/LDP/
+flow-integrability facts and imported spatial-energy finiteness are known
+inputs, not our discoveries. Higher moments/mixtures/memory theories remain
+proposed. No new theorem or separate-paper novelty accepted.
