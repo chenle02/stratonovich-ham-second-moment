@@ -13,7 +13,11 @@ credit. Kimi's actual monthly429 remains an external blocker to that assigned
 review. Source hashes and text extracts are not visual attestation.
 SF04-10 is INCONCLUSIVE because the packet did not supply the full upstream
 actual-law/endpoint chain. This is a real packet coverage limit, not evidence
-that the cited proofs do not exist. Their exact source closure must be
+that the cited proofs do not exist. The report also calls the residual
+corollary L:radius-covariance-residuals; its actual label is
+C:radius-covariance-residuals (radius_anchor.tex280), correctly cited by
+gaussian_tubes.tex312. This is a report-only prefix error.
+Their exact source closure must be
 supplied before claiming end-to-end application review.
 SF04-02/03/04/05/06/08/09/12/13 have returned PASS with the report's scope
 limits; this is not HIGH acceptance of the whole SF04 component.

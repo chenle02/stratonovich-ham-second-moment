@@ -11344,3 +11344,18 @@ Missing upstream packet evidence and assigned primary images remain real
 coverage gaps. Kimi monthly429 persists; a user reviewer-route question is
 pending, with no alternative authorized. No new provider retry or confidence
 upgrade. Goal ACTIVE; full source/visual/synthesis/final cold still OPEN.
+
+
+### SF04 missing-input resolution for a genuinely expanded followup
+
+All17 omitted upstream labels are located in the current scientific887
+manuscript; the report's L:radius-covariance-residuals prefix is corrected
+to actual C:radius-covariance-residuals (consumer already correct).
+The exact source spans and all28 manuscript files are bound in
+reviews/2026-11-02-sf04-text/missing-input-map.json. Every live file matches
+Git887 and common review inventory;831625bytes total. This is source custody
+and dependency location, not proof acceptance. Use the complete manuscript
+context instead of claiming a minimal mechanical closure covers implicit
+setup. The next targeted actual-law/application audit must examine these
+newly supplied proofs and author rebuttals; it is not whole synthesis and
+cannot discharge Kimi/source-image/final cold requirements.
