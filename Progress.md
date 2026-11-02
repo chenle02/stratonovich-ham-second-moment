@@ -11359,3 +11359,22 @@ context instead of claiming a minimal mechanical closure covers implicit
 setup. The next targeted actual-law/application audit must examine these
 newly supplied proofs and author rebuttals; it is not whole synthesis and
 cannot discharge Kimi/source-image/final cold requirements.
+
+
+### Canonical wiki maintenance completed and exact readback verified
+
+Exactticket tk-20261101-211105-codex-stratonovich-resumption is MAINTAINED,
+owned wiki984fe7b146648c88ed2f0f0ee72b588fcc555bcd. Root verified parsed
+receipt identity, owned Git page and live canonical page identical, SHA256
+0310f6200e93726316f7438f89a09a8cce9676e8b3c6f23433c0e3409f748e67.
+Receipt retains normal lint/publication checks and no public deployment or
+correspondence. It read current descendant b49dd36, recording terminal
+SF04 MEDIUM and scoped cutoff HIGH, full goal/gates still open. Full receipt
+and exact page/verification retained under resumption/wiki-completed.
+
+Current inventory clarification: all448 matched at the earlier resumption
+check, before93ef28f updated PROJECT-GOAL's reviewer directive. A fresh
+root check now gives447/448, the only delta PROJECT-GOAL.md governance;
+all28 scientific TeX remain unchanged887. This known delta is documented
+without altering the frozen composition inventory or claiming it passes.
+Expanded reviewer prompts carry the current authorized routes explicitly.

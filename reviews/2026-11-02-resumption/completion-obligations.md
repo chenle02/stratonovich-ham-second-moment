@@ -21,7 +21,10 @@ result or a prerequisite invented to defer its verification.
 
 The resumption read-back rehashed all **448** paths in
 `reviews/2026-11-01-coverage-recovery/common-binding-v2.json`, with zero
-mismatches. The bound scientific candidate remains
+mismatches at that earlier check. After the explicit reviewer-governance
+update at93ef28f, a fresh check gives447/448: PROJECT-GOAL.md alone differs;
+all28 scientific TeX are unchanged. The original inventory is preserved.
+The bound scientific candidate remains
 `887fbfbe0fa4368d6b32a436615d73349b2445d8`, tree
 `6a48b34d7ec9bc686453ee5c656938475ea48774`. Byte identity preserves the
 inputs; it supplies no new mathematical acceptance.
@@ -47,9 +50,10 @@ inventories identify the scope; assignments are not passing reviews.
   undefined references/citations and overfull boxes. Commit the rebuilt
   PDF with any TeX changes and verify that the reviewed source, labels,
   render and PDF identify the same candidate.
-- **Wiki update: OPEN.** Use the canonical queue, retain the exact ticket
-  and completed receipt, and verify the final status/provenance. Queue
-  submission alone is not published or reviewed maintenance.
+- **Wiki current-status update: COMPLETED at owned984fe7b** via exact ticket
+  tk-20261101-211105-codex-stratonovich-resumption; receipt/page readback
+  verified. This is the current incomplete-project status, not eventual
+  final-goal delivery. Refresh again when final scientific status changes.
 - **Handoff: OPEN.** Refresh the canonical root `HANDOFF.md` to the actual
   frontier and reviewer status, preserving schema and historical evidence.
 - **Private Git delivery: OPEN at the eventual final checkpoint.** Push
