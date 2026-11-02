@@ -11076,3 +11076,38 @@ Decision REFRAME for bounded interface/statement audit only; full novelty
 and independent source gate remain open. Next natural target is exact
 same-source cutoff-overlap consistency before local gluing. No new lemma,
 flow theorem, Lean fact/package/HPC, main Tex/PDF change or release.
+
+
+## 2026-11-02 — cutoff consistency statement frozen before proof
+
+Froze research-program/cutoff-overlap-statement-v1.json for independent
+statement/source-fidelity audit, not a new proof or local-flow adoption.
+Uses original H:homog models, E=Hhalf x HminusHalf, ONE retaining source
+sequence for all masks/horizons, physical mask once, actual L1 uniform
+operator-triangle source convergence and ordinary full-phase Duhamel.
+C3 explicitly requires auditing all-E ordinary-source identification from
+the statewise primitive/Young sums; the data(1,0) lemma alone is not treated
+as an all-state theorem. No raw cutoff/horizon identity is assumed.
+
+Target O1 is one probability-one event for all integer tuple cutoffs and
+all times/initial E states, with margins R,N>=2j+T+3 for observer support
+B2j. O2 is restriction consistency across integer horizons. O3 only extends
+the identity to cut-off local phase data via a larger common global cutoff;
+it does not claim the complete local evolution/composition theorem yet.
+Route to audit: ordinary same-source finite propagation, triangle norm/L1
+limit, countable tuple intersection. No a.s. event over all source widths,
+free-group operator-norm continuity or density of E in F is introduced.
+
+Falsification-first finite support arithmetic executed: d1free wave,
+initial displacement0/velocity1_[5,6], observer support[-2,2],T9. Initial
+psi2 and psi14 both equal1 on the terminal observer; psi2 kills velocity,
+psi14 retains it. Exact d'Alembert integral gives0 versus1/2 throughout
+the observer. Masks R14 satisfy the full cone margin. This refutes dropping
+the initial cone guard or forgetting velocity, not the frozen statement.
+Same-law/strong-versus-operator-norm logic witnesses are recorded with their
+actual scope. No simulation or new Lean/kernel result. Main source/PDF,
+80facts and all original p2/final verification obligations unchanged.
+
+This is the next bounded interface check under the selected-source REFRAME
+disposition, not a novelty-cleared theory proof wave. Required independent
+review precedes proof adoption. No package, HPC, sibling work or release.
