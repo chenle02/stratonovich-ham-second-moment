@@ -10857,3 +10857,48 @@ spectral/product control and optimized sign reduction. Generic Young/LDP/
 flow-integrability facts and imported spatial-energy finiteness are known
 inputs, not our discoveries. Higher moments/mixtures/memory theories remain
 proposed. No new theorem or separate-paper novelty accepted.
+
+
+## 2026-11-01 — precise abstract upper statement and falsification boundaries
+
+Froze research-program/uniform-gaussian-growth-statement-v1.json as a
+STATEMENT CANDIDATE for independent audit, not a new proved/novel theorem.
+Six explicit hypotheses specify same raw W/covariance-half scaling,
+varying separable Gaussian path spaces and compact mean maps, small
+expected path radius, the SAME Z_delta at every block length, finite
+coercive moving control scores, subquadratic radial envelopes, and sharp
+errors on ONE polynomial control ball large enough for the tail cutoff.
+Conclusion is only the moving-score moment UPPER bound. No lower observed
+wave bound or interchange of score supremum/limit is hidden in it.
+Gaussian bulk/tail step is extracted from existing tube/signed proofs;
+novelty of that probability step is not claimed. Real potential contribution
+remains verification of wave-specific uniform hypotheses and extensions.
+
+Falsification-first local Sympy1.14 checks retained separately: scalar
+wave generator[[0,1],[1,0]] has exp(t) operator growth but initial(1,-1)
+displacement exp(-t); determinant1 is preserved. This refutes an arbitrary-
+phase terminal-lower generalization, not original data(1,0). Fixed-ball
+error M^(3/2)/B vanishes at each fixed M but grows as B14 at cutoff B10,
+while that cutoff satisfies the coarse B^(9/2) Gaussian tail guard.
+Two-order admissible d1Riesz sum differs from largest-order homogeneous
+scaling by (sqrt2-1)/2 at the explicit test. No false exact mixture scaling.
+Also froze an analytical escaping-direction example J_n(h)=(1-2||h-e_n||)+
+on l2: pointwise J_n->0 yet scores>=1/2, despite bounded maximizing norms.
+Separate variational convergence is necessary for an exact constant.
+These are author elementary boundary checks, not Lean/SPDE certificates.
+
+Nonzero scalar Gaussian absolute-value model supplies a sanity case with
+exact normalized moment and control value a²/2. Proposed first genuinely
+beyond-homogeneous construction test is a two-order covariance SUM at fixed
+mask/horizon, choosing a common admissible theta/gamma. Both actual variance
+estimates and original-W correspondence must be checked; an arbitrary
+independent-noise decomposition or exact mixture scaling is not assumed.
+No mixture asymptotic/dominance theorem, lower observable theorem or new
+original p2 proof adopted. Original full-model goal and all gates intact.
+
+Lean triage: existing GaussianTail.cutoff_density_split has prior scoped
+applications; no exact-type reuse or new formal fact asserted here. New
+Gaussian geometry/uniform limits are analytical. No package/companion/HPC.
+Next: required DeepSeek statement/sufficiency skeptic on frozen inputs
+before any proof adoption or broader wave. Literature novelty gate remains
+OPEN; this is not a separate-paper PROCEED verdict.

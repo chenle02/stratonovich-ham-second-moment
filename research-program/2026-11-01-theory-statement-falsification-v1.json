@@ -1,0 +1,44 @@
+{
+  "tool": "local Sympy 1.14.0",
+  "scope": "Finite algebraic statement falsification; not a Lean/kernel certificate or SPDE theorem",
+  "wave_observable": {
+    "generator": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "initial_phase": [
+      1,
+      -1
+    ],
+    "displacement": "exp(-t)",
+    "determinant": "1",
+    "operator_growth": "exp(t) in Euclidean norm since A is real symmetric with eigenvalues+1,-1",
+    "conclusion": "Operator growth does not imply lower growth for every nonzero phase/observed displacement. This tests an overgeneralized abstract claim, not original data(1,0)."
+  },
+  "control_ball_quantifiers": {
+    "nu": "3/2",
+    "coarse_B_exponent": "9/2",
+    "cutoff_ball_exponent": "10",
+    "tail_dominance_exponent": "1/2",
+    "fixed_ball_error": "M^nu/B tends to0 for every fixed M",
+    "growing_ball_error_exponent": "14",
+    "conclusion": "A fixed-control-ball deterministic limit does not justify the polynomial growing balls required by the Gaussian tail cutoff."
+  },
+  "covariance_mixture": {
+    "d": 1,
+    "temporal_alpha0": "1/2",
+    "spatial_orders": [
+      "1/4",
+      "1/2"
+    ],
+    "test": "Gamma(4)-4^(-1/2) Gamma(1)",
+    "exact_difference": "-1/2 + sqrt(2)/2",
+    "conclusion": "Finite positive covariance sum is not homogeneous of its largest order; no exact homogeneous scaling identity may be reused for the mixture."
+  }
+}
