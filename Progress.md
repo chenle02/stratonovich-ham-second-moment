@@ -224,12 +224,12 @@
   b2fda02, 257 pages and 213 proof blocks. The earlier 4a65c79 whole-review
   attempt and continuation are TERMINAL and unaccepted (incomplete coverage,
   INCONCLUSIVE/medium). Their evidence remains historical, not live work.
-- **Immediate next (main-review depth recovery):** collect the two LIVE
-  DeepSeek deep audits at terminal state: static UnitA PID3049511 and
-  construction PID3053225. Full MAIN review is terminalMEDIUM with125NF
-  and58qualified rows, not HIGH. Corrected index resolves PROOF093 only.
-  Retain every213proof and final coupled/source/visual/cold obligation;
-  subsequent interval units follow the actual foundation review outcomes.
+- **Immediate next (main-review depth recovery):** collect LIVE UnitB
+  PID3148173 and wave-variance PID3146523. Static UnitA037-041 and covariance
+  061-065 have scoped HIGH depth adoption; construction001-009 remains
+  MEDIUM. Full main remains MEDIUM with125NF/58qualified original rows.
+  All213proof and global/source/visual/cold requirements persist; use the
+  append-only depth ledger, not report summary counts, for scoped progress.
 - **New accepted uniformR E Cameron/regulator:** scientificf54e92b,
   21checks/HIGH348.303s,no requiredrepairs;21input bindings/native archive
   verified before6optional clarity notes. Actual all-model uniformR means,
@@ -11597,3 +11597,26 @@ Append-only depth-ledger-v1 retains every213proof and exact source hash,
 without turning partial statuses or source custody into full acceptance.
 Both currently completed deep providers are TERMINAL; subsequent UnitB
 will retain complete A bodies and separate original dimension scopes.
+
+
+### Next MAIN depth units B and wave actually launched
+
+UnitB PROOF042-045 LIVE: ../stratonovich-main-deep-b-v1,
+PID3148173/supervisor3147994, handle56604/session ses_e65399441ffe8l76vpBV5DEzX0.
+Clean carrier8cf1476bad3376535c8ac25df4ba13d9f5446717; prompt165581bytes
+SHA2566056eba446071e4d69c2367bec9ef2b28e5b16d1ee8623977df901bf1fd061c2.
+Complete static-to-interval target plus allA/model/primary/consumer context;
+identity rows exclude prior report annotations. B01-B08 and4proof ledger.
+
+Wave PROOF066-074 LIVE: ../stratonovich-main-deep-wave-v1,
+PID3146523/wrapper3146496, handle34604. Clean carrier
+1cb2dcf0005621ee6efbf56329e341f538c5cabd; prompt366655bytes SHA256
+b4e1d93b78d1c20ed3378e75c81913d262f24ef3878853c829c5844ae9e9b92e.
+All3temporal covariance lemmas and6wave proofs targeted explicitly, complete
+seven source inputs. Byte/rawLF/renderer and absent-final-LF maps verified
+before provider. WAVE01-WAVE11 and9proof ledger; no prior status fields.
+
+Both actual DeepSeek main routes/tools-disabled verified, source887 unchanged,
+task-only cap131072 (originalA showed65k could truncate the final report),
+no automatic retry. Full goal/source-image/render/cold/legacy-composition
+boundaries unchanged. Every older current reviewer is terminal.
