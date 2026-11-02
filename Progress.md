@@ -7,14 +7,14 @@
 ## Current state
 
 - **Main depth recovery (2026-11-02):** full-main DeepSeek review returned
-  MEDIUM; targeted deep audits have now accepted 108 named proof bodies at
+  MEDIUM; targeted deep audits have now accepted 111 named proof bodies at
   scoped HIGH, including terminal Wick/tails and full-upper assembly.
   The initial constructor001–009, calibration010–019 and driver085–093
   reports remain MEDIUM; focused004–006 is now separately accepted HIGH. The append-only ledger is
-  `reviews/2026-11-02-main-deepseek/depth-ledger-v24.json`.
-  Full213-proof, source-image/render and independent cold obligations remain.
-  Further constructor004–006, source094–100 and masked101–103 packets are
-  being prepared; preparation is not an actual reviewer launch.
+  `reviews/2026-11-02-main-deepseek/depth-ledger-v25.json`.
+  All original213 proofs plus new214, source-image/render and independent
+  cold obligations remain. Exact production214/182 is now integrated;
+  terminal review backlog and earlierMEDIUM/NF obligations remain.
 
 - **ACTIVE by Le (2026-11-02 renewed direction):** goal resumed and
   DeepSeek V4 Pro explicitly designated MAIN reviewer. The full
@@ -12171,3 +12171,39 @@ restart based on obsolete live entries. Remaining signedupper collector,
 point/intrinsic/product/symplectic reports and sourceimages/cold remain due.
 This continuation made authoritativeprogress: deeperacceptedsource108,
 verifiedproductioncandidate, privateevidence synchronization; goalACTIVE.
+
+
+Historical candidate record at36c0fec, superseded by adoption below:
+
+### Isolated bridge/product production candidate; review pending
+
+The production branch from21bbf31 adds the reviewed translated-covariance
+lemma/remark and three setup references, plus only the exact proposed
+PROOF182 paragraph. The rebuilt260-page PDF passes zeroerrors/undefined
+references/citations/overfull. Candidate proofmap retains all originalIDs
+and labels:212old rawbodies identical,182exactproposal,new214. Candidate
+notes and proofmap are in reviews/2026-11-02-source-bridge-production/.
+Production transcription/application review is PENDING; standalone math
+reviews do not cover integratedbytes. Independent roots, coefficientone,
+positive fixedspatialwidth/cap limits and no spatialpointwisemonotonicity
+are retained. The source(3.5) independent-y convention and page21timeoffset
+are explicit; other sourceTheorem3.1 steps remain imported. No sourceimage,
+full3.6reproof, FND/global/cold adoption or goalcompletion is claimed.
+Root authorized one fresh DeepSeekV4Pro production audit with taskcap131072,
+alltoolsdenied, disclosed nonblindsourcehistory and noautomaticretry.
+This is a localcandidatecheckpoint, not roundclose; ACTIVE/<HUB> and
+all other repositories remain unchanged by this worker. No push or merge.
+
+
+### Exact reviewed production integrated; original scope extended
+
+Merged36c0fec scientificbytes after rootread/adjudication of fresh542.266s
+DeepSeekPASS_WITH_NOTES/HIGH/all14PRD/214and182PASS. Rootrehashed69members
+and independentlyrecomputed all214bodyhashes/statementlocators.212oldbodies
+identical,182exactreviewedreplacement,new214. TeXfiles matchcandidate; rebuiltPDF has identical all260page layouttext.
+The specific FNDCase2 production condition is satisfied in actualnotes;
+unchanged001–002 now scopedHIGH adopted with Lstarstillconditional. New214
+scopedHIGH. v25has111accepted of214identities; rawmainMEDIUM unchanged.
+Proofindexv3 preserves all213oldIDs and deferred093, adds214without renumber.
+182delta passes butbroaderunitadjudication pending. No whole/sourceimage/
+full260render/Kimi/cold/goalclosure. Remainingchecks and originalmodels stay.
