@@ -11620,3 +11620,27 @@ Both actual DeepSeek main routes/tools-disabled verified, source887 unchanged,
 task-only cap131072 (originalA showed65k could truncate the final report),
 no automatic retry. Full goal/source-image/render/cold/legacy-composition
 boundaries unchanged. Every older current reviewer is terminal.
+
+
+### Interval interface and temporal/wave variance scoped HIGH adoptions
+
+UnitB PROOF042-045: actualPASS/HIGH,895.544seconds, fourFULLY_CHECKED,
+explicit grouped B01-B08 allPASS with detailed keyed derivations. Root
+readback45members and actual route/prompt/unchanged-source verified.
+d3D_Gamma stays scoped; dimension-free interval proofs use their own
+R_alpha argument. Report-only sigma0free-isometry and randomoperator-norm
+shorthands adjudicated against correct source. No downstream fixedsplit
+or actual full-upper conclusion adopted here.
+
+Wave PROOF066-074: actualPASS_WITH_NOTES/HIGH,622.740seconds, WAVE01-11
+allPASS and all9CHECKED; rootreadback37members, all7source bindings and
+exactbyte/LF/renderer maps verified. Optional constant/inequality exposition
+and report-only evenness attribution corrected in adjudication, no source
+edit. Both variance directions and strict parameter/zero guards retained.
+No downstream Gaussian-driver/source proofs or image/cold credit.
+
+Append-only depth-ledger-v2 preserves all213rows and adds these13scoped
+HIGH statuses, totaling23named scoped text-depth adoptions. Main rawMEDIUM
+and constructionMEDIUM remain unchanged; this is not a percentage or a
+full-goal certificate. Both providers TERMINAL, no retry. Next coefficient
+engine/compact-Gaussian units retain exact source bodies and full scope.
