@@ -11644,3 +11644,25 @@ HIGH statuses, totaling23named scoped text-depth adoptions. Main rawMEDIUM
 and constructionMEDIUM remain unchanged; this is not a percentage or a
 full-goal certificate. Both providers TERMINAL, no retry. Next coefficient
 engine/compact-Gaussian units retain exact source bodies and full scope.
+
+
+### Coefficient engine and compact Gaussian foundation scoped HIGH adopted
+
+UnitC PROOF046-048 actualPASS_WITH_NOTES/HIGH,1465.652seconds, all3
+FULLY_CHECKED/C01-C10CHECKED; rootreadback46members and exact source/route
+verified. Report-only reciprocal-ratio and equal-half simplex controls are
+wrong and explicitly corrected with k2 and adjacent/nested interval tests.
+Source uses correct metric inequality and TOTAL clipped cube volume; no
+source repair. All common partition, fresh-colour, Cauchy and coefficient
+limits remain at their actual scope. Terminal upper assembly not yet cleared.
+
+Compact PROOF075-084 actualPASS/HIGH,909.21seconds, CMP01-12allPASS and
+all10CHECKED; rootreadback38members and exact route/eightinputs verified.
+Lattice-spacing, Fatou and small-j notes adjudicated; fixedR/T and finite
+evenp scope preserved. Report-only categorical P_chi wording is not adopted.
+No growing-radius, infinite Gaussian path or flow/point-moment clearance.
+
+Append-only depth-ledger-v3 retains all213proof identities and records36
+named scoped HIGH text-depth adoptions. Not a percentage or whole-goal
+acceptance. All source/PDF/80finitefacts unchanged; main/construction raw
+MEDIUM reports remain. Both UnitC/compact providers TERMINAL.
