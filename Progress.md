@@ -9,8 +9,8 @@
 - **Main depth recovery (2026-11-02):** full-main DeepSeek review returned
   MEDIUM; targeted deep audits have now accepted 75 named proof bodies at
   scoped HIGH, including terminal Wick/tails and full-upper assembly.
-  Constructor001–009, calibration010–019 and driver085–093 reports remain
-  MEDIUM. The append-only ledger is
+  The initial constructor001–009, calibration010–019 and driver085–093
+  reports remain MEDIUM; focused004–006 is now separately accepted HIGH. The append-only ledger is
   `reviews/2026-11-02-main-deepseek/depth-ledger-v17.json`.
   Full213-proof, source-image/render and independent cold obligations remain.
   Further constructor004–006, source094–100 and masked101–103 packets are
@@ -12015,3 +12015,24 @@ bounded; no Gaussianconditioning/finite-delta/iteratedlimit/radiusuniform
 conclusion follows. Inlined target and inputs were read, not allreference
 modules. v17has75scopedHIGH, original213scope/rawmainMEDIUM retained.
 No source/PDF/Lean edit. Providerterminal; next156–160 exactindexunit preparing.
+
+
+### Next exact constructor and upper-interface launches
+
+Constructor007–009 worked audit: siblingstratonovich-main-deep-construction-789-v1,
+PID3686635/supervisor3686545, handle84935,
+session ses_e640e3769ffeRkeVUxg8EeMt6e; carrierc4172323a626876849a723b81133a73b9b80f71a;
+prompt363215bytes/SHA5b8f9274ce0e59e573edd071bb898a0e96b74d96800f1c8271c0911dfb2dee06.
+Exacttarget970–1286/fullupstream1–969/heldCheninduction andcorrectsource
+unequal-time warning; MILD01–12 specifically deepens original009 limits,
+Bochnermeasurability/spatialcontinuity/Greenlimits/fullmultiplication.
+Uniformmean151–155: siblingstratonovich-main-deep-uniform-mean-v1,
+PID3696410/supervisor3696303, handle6511;
+carrierf7ba542977ad80f957b63be84d6bb22089eb191d;
+prompt1340266bytes/SHAfcb5e0617e8c2b2707f048b85dde34aa7063b4434179f6d7b6a98031ac7425c4.
+Exactcutoff/spatialtails/tensor/regulator/actualCameron targets withUME01–10,
+full28TeX as reference only; E-only radiusuniformity and genuine orthogonal
+head/residual independence distinguished from correlatedtimeblocks.
+Both actualDeepSeek/toolsdenied/cap131072/onefreshattempt, no priorvotes or
+scientific edits. Occupation correction stillLIVE; radius156–160 preparing
+with actualE-phase R^(d/Q) first-driver scope (not Fconstant-column bound).
