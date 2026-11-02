@@ -11111,3 +11111,35 @@ actual scope. No simulation or new Lean/kernel result. Main source/PDF,
 This is the next bounded interface check under the selected-source REFRAME
 disposition, not a novelty-cleared theory proof wave. Required independent
 review precedes proof adoption. No package, HPC, sibling work or release.
+
+
+## 2026-11-02 — actual cutoff-interface review identifies two proof bridges
+
+Actual fresh DeepSeek V4 Pro report TERMINAL0,PASS_WITH_NOTES/MEDIUM,
+L01-L10; HIGH gate unaccepted. Exact actual model/finish-stop/no-tool trace,
+full prompt correspondence, held clean10-file carrier and23native archive
+members verified. No reviewer remains live; handle11469 terminal.
+
+Accepted the two critical completeness findings: all-E/all-initial-time
+ordinary Duhamel identification and the ordinary perturbed cone/mask/data
+identity were only implicit in source proof bodies. No original lemma
+stated only for data(1,0) is promoted by assertion. Wrote explicit AUTHOR
+UNADOPTED proof draft with Lemma A(E restriction/compression, Young sums
+and arbitrary-s Picard uniqueness), Lemma B(inflated cone support induction
+for both components plus ordinary horizon uniqueness), and Proposition C
+(L1 operator-triangle zero-expectation transfer, W-measurable original
+probability-one event and countable all-state/time version).
+
+Draft explicitly retains source Y_n on(W,J), not on W alone; uses one
+retaining I(v_rho;t,x) field across R,T; raw objects remain W-measurable.
+Cutoff multiplier constants depend on each fixed tuple. Existing raw flow
+is not redefined; its unique source limit gives horizon consistency.
+Local Hhalf/HminusHalf data are first cut to global E via a larger common
+cutoff. No full local flow, point trace, new noise class or moment theorem.
+No source/PDF/80-fact Lean/package/HPC/release change. Main p2 goal intact.
+
+Every finding and required repair mapped in
+reviews/2026-11-02-cutoff-overlap-v1/adjudication.md. New proof document
+research-program/cutoff-overlap-proof-draft-v1.md requires actual independent
+proof review before adoption. Added missing proofs justify a genuine new
+immutable attempt; no unchanged confidence-only retry or gate relaxation.
