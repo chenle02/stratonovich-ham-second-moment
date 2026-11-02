@@ -11436,3 +11436,11 @@ unchanged confidence-seeking call. Completion/blocking audit retained in
 reviews/2026-11-02-resumption/blocker-and-completion-audit.md. Goal service
 returned BLOCKED with the full objective unchanged. This is not a user
 pause or completion. Preserve state and await external capacity/direction.
+
+
+Blocked-stop preservation: a narrow wiki status successor is queued as
+exactticket tk-20261101-221302-codex-stratonovich-terminal-status, request
+UID stratonovich-blocked-review-status-20261102-v1. This is NOT yet
+maintained; prior current-status maintenance984fe7b remains verified.
+Receipt collection is a future preservation check, not scientific work
+or a reason to restart unavailable reviewers. Full goal remains BLOCKED.
