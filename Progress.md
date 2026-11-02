@@ -224,12 +224,13 @@
   b2fda02, 257 pages and 213 proof blocks. The earlier 4a65c79 whole-review
   attempt and continuation are TERMINAL and unaccepted (incomplete coverage,
   INCONCLUSIVE/medium). Their evidence remains historical, not live work.
-- **Immediate next (main-review running):** collect the existing full
-  DeepSeek MAIN review PID3010935 at terminal state. It includes all213
-  proofs/44sections/28TeX, complete primary text and finite evidence. Check
-  all63determinations and the explicit proof-coverage ledger; delivery is
-  not proof checking. Preserve actual confidence and every unresolved item.
-  Image/edition/render and independent cold gates remain separately open.
+- **Immediate next (main-review depth recovery):** full MAIN DeepSeek
+  returned actual MEDIUM, with125NF and58undefined qualified ledger rows.
+  Corrected v2 proof index resolves the sole PROOF093 locator defect.
+  Begin dependency-complete deep review of the independent-upper foundation,
+  then its interval coefficient/canonical-limit consumers. Preserve all213
+  proof obligations and final coupled/source/visual/cold gates; no smaller
+  replacement goal or unchanged confidence-only rerun.
 - **New accepted uniformR E Cameron/regulator:** scientificf54e92b,
   21checks/HIGH348.303s,no requiredrepairs;21input bindings/native archive
   verified before6optional clarity notes. Actual all-model uniformR means,
@@ -11495,3 +11496,30 @@ The previous blocked-status wiki ticket is actually MAINTAINED at
 live/owned-page equality, retained in main-review-resumption/wiki-blocked-
 completed. It is a dated prior-state maintenance record, superseded by
 Le's new resumption/main-review directive; not a claim current goal blocked.
+
+
+### Full MAIN DeepSeek review terminal: actual depth gaps, no HIGH clearance
+
+Actual DeepSeek V4 Pro PASS_WITH_NOTES/MEDIUM,416.865seconds/terminal0,
+all63named determinations and213ledger rows. Intrinsic theorem explicitly
+INCONCLUSIVE atHIGH. Actual input528596/output7171/reasoning23596; context
+fit observed. Model/full prompt/finish/no tools/clean carrier/all source
+bindings verified; root read back all160native archive members. Archive
+SHA25665f9a6bc77b38ebd647ced026830cd30ebc17a5d7b035adfd15e000fd96d0520.
+PID3010935/handle33922/session ses_e65832d95ffego6ugwXbv52qh5 TERMINAL.
+
+The report's summary78checked/135NF is wrong: rows are30CK,58CK·NH,125NF.
+Qualified CK·NH is undefined and never counted fully checked. Full-main
+acceptance false. Supplied frozen index had one actual defect: PROOF093
+is deferred P:actual-operator-driver, not duplicate L:driver-holder-limit.
+All213 closing identities and original source/proof hashes checked; new
+proof-index-v2 corrects metadata only and preserves old report/index.
+
+Every finding adjudicated in main-deepseek/adjudication.md, including
+unverified novelty language, incorrect page/section counts and distinction
+between analytic versus Lean-formalized proof. No mathematical TeX/PDF edit.
+The next work is bounded deep scrutiny of specifically unchecked proofs,
+first PROOF037-051 in four successive dependency-complete units, retaining
+full213scope and final combined/source/visual/cold obligations. Main reviewer
+remains DeepSeek as Le requested. This responds to actual proof-depth gaps,
+not a confidence-only repeat or a reduced task. Goal ACTIVE.
