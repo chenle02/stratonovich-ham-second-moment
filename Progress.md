@@ -10902,3 +10902,18 @@ Gaussian geometry/uniform limits are analytical. No package/companion/HPC.
 Next: required DeepSeek statement/sufficiency skeptic on frozen inputs
 before any proof adoption or broader wave. Literature novelty gate remains
 OPEN; this is not a separate-paper PROCEED verdict.
+
+
+## 2026-11-01 — readable record of Le's theory/paper-series discussion
+
+At Le's explicit request, added research-program/README.md as the readable
+entry point to the discussion, supplementing the existing structured records.
+It records the257-page editorial diagnosis, unchanged original objective,
+two-paper proposal/conditional third, current-versus-proposed contributions,
+known foundations, actual reference holdings/edition defect and queue IDs,
+physical-time versus complex-clock qualification, exact abstract-statement
+boundaries, executed falsifications and remaining scientific/novelty gates.
+No new theorem or publication claim, manuscript split, review promotion,
+source/PDF/Lean change or external correspondence. Verified all local Markdown
+links resolve and all linked JSON records parse. Next independent statement
+review remains pending; this documentation does not clear it.
