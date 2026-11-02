@@ -11800,3 +11800,22 @@ H1/CDF/IBP/attainment/Gamma checks, not just finite algebra certificates.
 All actualDeepSeek/toolsdenied/cap131072 and no automaticretry. These are
 NEW or genuinely expanded worked-depth assignments, not confidence-only
 votes. All original213proof and full/source-image/cold obligations unchanged.
+
+
+### Compact mean launch and private status maintenance queue
+
+Compactmean112–118 actualnativeLIVE: siblingstratonovich-main-deep-compact-mean-v1,
+PID3610712/supervisor3610422, handle31482; carrier
+dfdf099952d7499dc6ef300d9b25f5f6df932b47; prompt554275bytes/SHA
+dce58c9b4764fef88649eabafd00c43f7a2665e7a806a413ba31509b0f5afec9.
+Full7targets and exact scalar-source/constructor/constantphase interfaces,
+CMF01–12. One actualDeepSeek/toolsdenied/cap131072; no source changes,
+prior votes or retries. All original scope remains.
+
+Canonical queue accepted exactticket
+`tk-20261102-052608-codex-stratonovich-main-depth` for INTERNAL status-only
+wiki successor to the prior blocked checkpoint. Current goalACTIVE and
+DeepSeekMAIN/scoped51HIGH versus actualMEDIUM/fullgates explicitly stated.
+Request and enqueue receipts saved under main-review-resumption/
+wiki-main-depth-queued. QUEUED is not maintained/published; require exact
+terminal receipt and ownedwiki commit. No direct wiki edit or correspondence.
