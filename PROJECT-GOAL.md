@@ -60,7 +60,21 @@ route cannot reach the scale t^κ.
 
 ## Completion contract (for any claimed result)
 
-[held back until the source author has been told]
+1. Every new statement has a complete written proof in the notes, with all
+   imported inputs labeled and pinpointed to the author-version PDF.
+2. The statement passes the calibrations in AGENTS.md (α₀→0; p=1;
+   Jensen; comparison with the Skorohod p=2 result).
+3. Independent cross-family review using DeepSeek V4 Pro + Kimi-K3,
+   per Le's 2026-11-01 directive in AGENTS.md, with HIGH confidence and
+   verified actual route, source, application and visual coverage. Every
+   finding is adjudicated in Progress.md. Any result Le may circulate also
+   requires a final cold read in a fresh session, independent of material
+   proof authors and the skeptic as required by the review protocol.
+   Preserve earlier reviews under their original identities and scopes.
+4. Clean build: 0 errors, 0 undefined references/citations, 0 overfull
+   boxes; PDF committed with the source.
+5. Progress.md, the wiki project page status line, and a handoff updated;
+   commits pushed and <HUB> in sync.
 
 Current internal mathematical checkpoint: scientific40ec9a9, adopted at
 d52d1d8, proves the all-model intrinsic limit C₂=S₂^pos=2^{(4−α)/(3−α)}S₁^pos
