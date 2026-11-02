@@ -225,14 +225,13 @@
   b2fda02, 257 pages and 213 proof blocks. The earlier 4a65c79 whole-review
   attempt and continuation are TERMINAL and unaccepted (incomplete coverage,
   INCONCLUSIVE/medium). Their evidence remains historical, not live work.
-- **Immediate next (2026-11-02):** cutoff production is scoped accepted;
-  continue full source/visual/whole-argument recovery and fresh cold gates.
-  The supplementary DeepSeek SF04 audit is TERMINAL/MEDIUM (details below);
-  its image-dependent obligations remain OPEN after actual Kimi monthly429.
-  Fifteen prepared components and synthesis contracts are not completed
-  reviews. General local-flow assembly is a separate research target, not a
-  substitute for original second-moment completion. The cutoff-v2 reviewer
-  is terminal; consult latest dispatch entries for any new live process.
+- **Immediate next (2026-11-02):** collect the actual expanded SF04
+  eligibility/application review PID2800827 at terminal state. All28
+  scientific source files and17 omitted upstream proofs are supplied; the
+  earlier six-module review remains MEDIUM/unaccepted. The expanded review
+  is non-blind and targeted, not whole synthesis/cold or image clearance.
+  Kimi monthly429 and the pending reviewer-route question remain. Fifteen
+  prepared components are not completed reviews; full goal scope persists.
 - **New accepted uniformR E Cameron/regulator:** scientificf54e92b,
   21checks/HIGH348.303s,no requiredrepairs;21input bindings/native archive
   verified before6optional clarity notes. Actual all-model uniformR means,
@@ -11378,3 +11377,29 @@ root check now gives447/448, the only delta PROJECT-GOAL.md governance;
 all28 scientific TeX remain unchanged887. This known delta is documented
 without altering the frozen composition inventory or claiming it passes.
 Expanded reviewer prompts carry the current authorized routes explicitly.
+
+
+### Expanded actual-law/application followup actually launched
+
+One native DeepSeek V4 Pro E01-E10 audit started2026-11-02T02:46:11Z.
+Scientific887 and all28 complete TeX/831625bytes unchanged; responses
+separately pinned tobf6c1ba. External attempt
+../stratonovich-sf04-eligibility-review-v1, clean carrier
+0baf0ff4c529ff9b5fe6c4cb23fc3eccd8ebefa2. PID2800827/supervisor2800811
+confirmed LIVE; handle26981, session ses_e65d98fe4ffe4UdtSYbB0B5euP.
+Exact1109204-byte prompt SHA256
+5feb1a3fa7a92b7ae859ae606d11ee1fc8041020dda0cd57dd8f67ecc6a0b12a.
+All target lines and ten context files verified embedded.55preflight files
+archived/readback verified externally. Cached context capacity1048576tokens;
+planning estimate467295 including output/reserve is not exact tokenization.
+No bytes dropped, no automatic retry, tools disabled, task output cap65536.
+
+This genuinely adds all17 missing upstream proofs and surrounding complete
+manuscript context; it is not an unchanged confidence-only retry. Prior
+MEDIUM report and author rebuttal are explicit non-blind context, not votes.
+Original Teschl/Friz extracts are supplied; Chen primary text is NOT separately
+supplied beyond manuscript quotations. A late request to add that primary
+text arrived after actual launch and was NOT applied to the frozen carrier.
+Any resulting external-source limitation stays open; no second call or
+mutation. All source-image/fullSF04/whole-synthesis/finalcold gates remain.
+Kimi capacity/replacement question still unanswered; no alternative authorized.
