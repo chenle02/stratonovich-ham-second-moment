@@ -12319,3 +12319,19 @@ dilationscore/groupedexponent replaces report-onlyshorthand. UpstreamMEDIUM
 rows stillMEDIUM; wholegraph/main/image/render/Kimi/cold/goalremainopen.
 No scientificedit/newreview/retry/Lean. Externalcold-cleanv2preparing three
 pureeditorialproofwordchanges plusone remark, allmathpreservedexplicitly.
+
+
+### Remaining MEDIUM coverage and author readbacks retained
+
+Driveranalytic original217.104s actualPASS_WITH_NOTES/MEDIUM preserved with
+39membernativecapsule andauthor-onlyexpanded supplement. Rootreadfullreport:
+087/092/093bridges reconstructed, numericupstreampremises notrecomputed;
+rawMEDIUM unchanged, no confidence-onlyretry. Sixplanar024–029 rawMEDIUM
+nowexplicitin v31, including027partial/textnormalization readinglimit.
+161scopedHIGH accepted; remaining53retain their actualMEDIUM/partial depth.
+Authorproducts/symplectic/intrinsic reconciliationcopies retainedwithhashes;
+zeroindependentvote/grade/image/cold credit. Rootprevious scopedadoptions
+stand at exactdocumentednamed-input limits. Newcold-cleanv2external and
+one freshcoupledfull214MAINtext packet preparing; no providercall yet.
+Scientificsource/PDF unchanged53bf, currentKimi monthly429stillblocksimages
+andindependentcold. Alloriginalmodel/auxiliary/no-go scope retained.
