@@ -10986,3 +10986,10 @@ proof adoption. Original v1 and exact MEDIUM report preserved, author
 response checks/adjudication retained. This is an actual clarification
 successor, not a confidence-only retry; fresh review is still required.
 Main p2 mathematical source/PDF/Lean unchanged and all final gates open.
+
+
+Updated the readable research-program entry point with the actual MEDIUM
+abstract-statement outcome, v2's exact zero/radius clarifications and the
+new verified Friz-Victoir GOLD intake status. v1/source records unchanged.
+This run produced a complete report under the task-only output-cap request;
+no causal speed/capacity improvement is established by that observation.

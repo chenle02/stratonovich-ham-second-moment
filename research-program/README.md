@@ -21,15 +21,15 @@ completed result. No Skorohod development or sibling-repository edits are includ
 
 ## Why the notes became long
 
-The current scientific PDF has257pages. It accumulated discovery history,
+The current scientific PDF has 257 pages. It accumulated discovery history,
 conditional and alternative routes, finite-order diagnostics, separately
 expanded technical foundations, repeated setup, and internal status prose.
 The author should have separated the research archive from the focused
 manuscript earlier. Page count is not evidence of correctness or completion.
 
-The dependency audit reaches143of213proof blocks from the main model/upper/
-intrinsic theorem roots, and158when the derived bounds and Jensen are included.
-The55not explicitly reached are candidates for manual disposition, not proved
+The dependency audit reaches 143 of 213 proof blocks from the main model/upper/
+intrinsic theorem roots, and 158 when the derived bounds and Jensen are included.
+The 55 not explicitly reached are candidates for manual disposition, not proved
 redundant: unlabelled setup and implicit dependencies must still be checked.
 See the [reading guide and dependency audit](../reviews/2026-11-01-manuscript-dependency-audit/main-reading-guide-v1.md).
 No proof has been deleted or manuscript split performed on this basis.
@@ -98,10 +98,10 @@ wave endpoints are bounds, not an exact numerical C2.
 
 | Source | Current full text | What the current comparison actually read |
 |---|---|---|
-| Chen-Deya-Song-Tindel, IMRN2023, DOI10.1093/imrn/rnad039 | Published54-page PDF now held; correct older34-page preprint also held | Selected theorem/introduction passages, especially Theorem1.1 and1.7-1.8; no complete proof comparison |
-| Gubinelli-Tindel, AnnProb2010, DOI10.1214/08-AOP437 |75-page PDF, refdb and Papis present | Selected analytic-semigroup setup/introduction |
-| Friz-Victoir, AIHP2007, DOI10.1016/j.anihpb.2006.11.002 |11-page published PDF acquired on <HUB> and copied to local external audit storage | Selected Gaussian LDP statements |
-| Cass-Litterer-Lyons, AnnProb2013, DOI10.1214/12-AOP821 |25-page PDF, refdb and Papis present | Abstract/metadata for this program assessment |
+| Chen-Deya-Song-Tindel, IMRN2023, DOI10.1093/imrn/rnad039 | Published 54-page PDF now held; correct older 34-page preprint also held | Selected theorem/introduction passages, especially Theorem 1.1 and 1.7-1.8; no complete proof comparison |
+| Gubinelli-Tindel, AnnProb2010, DOI10.1214/08-AOP437 | 75-page PDF, refdb and Papis present | Selected analytic-semigroup setup/introduction |
+| Friz-Victoir, AIHP2007, DOI10.1016/j.anihpb.2006.11.002 | 11-page published PDF acquired on <HUB> and copied to local external audit storage | Selected Gaussian LDP statements |
+| Cass-Litterer-Lyons, AnnProb2013, DOI10.1214/12-AOP821 | 25-page PDF, refdb and Papis present | Abstract/metadata for this program assessment |
 
 CDST already develops a Young-type Stratonovich wave theory in weighted Besov
 spaces. Gubinelli-Tindel treats rough evolution equations with analytic semigroups.
@@ -114,13 +114,14 @@ The canonical PDF named chen_deya_ea-23-hyperbolic.pdf was checked on both machi
 and actually contains Chen's different EJP2023 spatial-energy paper. The retained
 project CDST TeX has the correct title/subject. A correct published CDST PDF was
 obtained separately, and identity/edition repair was requested through the
-canonical single-writer queue. Do not infer source identity from catalogue5/5.
+canonical single-writer queue. Do not infer source identity from catalogue 5/5.
 
 Exact receipts/editions/hashes are in the
 [holdings and contributions record](2026-11-01-holdings-and-contributions-v1.json).
-Reference intake tk-20261101-185423-codex-stratonovich-program was CLAIMED at the
-last observation; identity repair tk-20261101-190012-codex-stratonovich-reference-identity
-was requested. Neither observation is a completed repair/digest receipt.
+Reference intake tk-20261101-185423-codex-stratonovich-program now has an exact
+GOLD receipt with digest PASS and clean lint; identity repair
+tk-20261101-190012-codex-stratonovich-reference-identity remained CLAIMED at the
+last observation. Completed ingestion is not a full mathematical proof audit.
 No direct corpus edits were made.
 
 The novelty gate is OPEN. Wiki search/cite and selected primary comparisons were
@@ -130,7 +131,7 @@ that a separate general-theory paper is publishable.
 
 ## The first precise theory candidate
 
-The [frozen upper-growth statement](uniform-gaussian-growth-statement-v1.json)
+The [current frozen upper-growth statement](uniform-gaussian-growth-statement-v2.json)
 extracts a possible supporting proposition from the existing Gaussian tube and
 signed bulk/tail arguments. It is a statement candidate awaiting independent audit.
 Its six hypotheses specify:
@@ -201,7 +202,16 @@ minimum, with source/normalization qualifications. Kimi hit monthly quota before
 reading or returning a report. See the
 [retained report](../reviews/2026-11-01-reviewer-switch/deepseek-report-v1.md) and
 [adjudication](../reviews/2026-11-01-reviewer-switch/deepseek-adjudication-v1.md).
-No reviewer has certified the new abstract-growth statement yet.
+The abstract-growth v1 statement subsequently received a separate DeepSeek
+PASS_WITH_NOTES/MEDIUM report, below HIGH. Its full report and
+[adjudication](../reviews/2026-11-01-growth-statement/adjudication-v1.md) are retained.
+v2 clarifies the radius indexing and the exact ordered zero-law reduction,
+without adding the stronger fixed-block zero limit suggested by the reviewer.
+Indeed, an all-zero Gaussian family with Z_delta=1 and F_delta,B(0)=1/B
+satisfies the original hypotheses with e_B=1/B tending to zero. Requiring
+the inner delta limit to vanish at every fixed B would exclude it needlessly.
+v2 also spells out the propagator determinant and the B14 calculation.
+No version has been adopted or received a passing HIGH gate.
 
 The next decision is whether its assumptions are sufficient, noncircular and
 independently verifiable in the original wave model, and what remains beyond
@@ -214,5 +224,6 @@ whole-proof/source/visual/final-cold gate remain required throughout.
 
 - [Paper bundles, proposed theorems and prior-art crosswalk](2026-11-01-series-assessment-v1.json)
 - [Verified holdings, edition defect and contribution map](2026-11-01-holdings-and-contributions-v1.json)
-- [Abstract upper-growth statement and analytical boundary examples](uniform-gaussian-growth-statement-v1.json)
+- [Initial frozen upper-growth statement](uniform-gaussian-growth-statement-v1.json)
+- [Clarified upper-growth statement and boundary examples](uniform-gaussian-growth-statement-v2.json)
 - [Executed local symbolic falsification checks](2026-11-01-theory-statement-falsification-v1.json)
