@@ -17,9 +17,9 @@
   being prepared; preparation is not an actual reviewer launch.
 
 - **ACTIVE by Le (2026-11-02 renewed direction):** goal resumed and
-  DeepSeek V4 Pro explicitly designated MAIN reviewer. Prepare a full
-  mathematical main review of all213proofs/44sections with complete primary
-  text and finite-evidence context. Prior blocked checkpoint and both actual
+  DeepSeek V4 Pro explicitly designated MAIN reviewer. The full
+  mathematical main review of all213proofs/44sections completed at MEDIUM;
+  bounded deep audits now recover the documented missing proof depth. Prior blocked checkpoint and both actual
   MEDIUM reports remain historical evidence, not acceptance. Required image
   and fresh independent cold gates remain open; the separate Kimi/replacement
   question is pending and no model substitution is authorized.
@@ -11845,3 +11845,31 @@ occupation/intrinsic/Gamma dependencies preserved. No numericalC2, endpoint
 interchange, all-model, image or cold clearance. Two conditionalLean facts
 unchanged. Append-only depth-ledger-v9 has55scopedHIGH, all213identities
 and raw mainMEDIUM statuses retained. WhiteproviderTERMINAL; no rerun.
+
+
+### Raw lower and temporal equilibrium actually launched
+
+Scaling/rawlower119–126: siblingstratonovich-main-deep-raw-lower-v1,
+PID3623574/wrapper3623569, handle68987; carrier
+5e6c6b77942682bc33a27d452b3a2faeef341378; prompt625297bytes/SHA
+5b875122d31e44cdfb7c44bf387f762f64238f13ec680675a4a78eb60d491af4.
+Eighttargets/15exactinputs; scaling/source widths, SAME-Z half-action,
+phase restart/positive average and original point identity, fixed controls
+and source-first limit order. No prior votes or Skorohod work.
+Temporal equilibrium133–134: siblingstratonovich-main-deep-equilibrium-v1,
+PID3624745/supervisor3624741, handle37987; carrier
+e6eb416b5225188630ff4dba28a2ad05262764f7; prompt66050bytes/SHA
+df43ffce80247ca98bc3f6306f28caf2e2753a1060cae201314312fb2f338b71.
+Two completeproofs/fourfullsource contexts; EQB01–10 reconstruct Beta/Gamma,
+positive series, endpoints and actual L1/L2 mass. Generic agent prompt has
+an inherited 'full-H1' phrase, documented in author-scope-note; assigned
+scope/source explicitly require L1/L2, NOT H1 for the singular density.
+Inspect actual report for scope distortion; raw config remains preserved.
+Both toolsdenied/cap131072 actualDeepSeek, one nativeattempt each, no retry.
+
+Author root visually read held Chen PDFpage21 in external sibling
+stratonovich-author-source-visual-v1. The printed Case2 equality omits the
+unequal previous-time shifts; not just extraction garbling. Candidate
+stationary covariance-CS explanation and exact image/PDF hashes retained
+there, PENDING the running constructor audit. No source-theorem failure,
+adopted repair, source edit or independent-image credit is claimed.
