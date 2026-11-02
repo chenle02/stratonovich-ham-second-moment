@@ -227,7 +227,7 @@
   INCONCLUSIVE/medium). Their evidence remains historical, not live work.
 - **Immediate next (2026-11-02):** cutoff production is scoped accepted;
   continue full source/visual/whole-argument recovery and fresh cold gates.
-  A supplementary DeepSeek SF04 text/application audit is LIVE (details below);
+  The supplementary DeepSeek SF04 audit is TERMINAL/MEDIUM (details below);
   its image-dependent obligations remain OPEN after actual Kimi monthly429.
   Fifteen prepared components and synthesis contracts are not completed
   reviews. General local-flow assembly is a separate research target, not a
@@ -11319,3 +11319,28 @@ and passed supported target-excerpt preparation. Refusal preserved.
 
 Main TeX/PDF/80facts unchanged; goal ACTIVE. Cutoff-v2 and Kimi processes
 are terminal. The new SF04 text attempt is the sole reviewer live at capture.
+
+
+### SF04 supplemental text audit: terminal MEDIUM and actual findings adjudicated
+
+Actual DeepSeek V4 Pro returned PASS_WITH_NOTES/MEDIUM,590.57seconds,
+terminal0/finish-stop/no tools. PID2728316/handle73653 TERMINAL; no reviewer
+is live. Full actual prompt, unchanged clean carrier, eleven source bindings
+and exact concatenation validated;45native archive members read back.
+All13check IDs present. SF04-01/07/11 remain INCONCLUSIVE without images;
+SF04-10 remains INCONCLUSIVE without the supplied upstream eligibility
+proof chain. Nine other determinations PASS at their limited scope, not
+HIGH or full-component acceptance. Original report/confidence preserved.
+
+Root and parallel author-side audits adjudicated every finding in
+reviews/2026-11-02-sf04-text/adjudication.md. Projection contractivity is
+true in its stated spectral norm; small-d log inequality is exact; N full
+cells versus n=N+1 all cells explains1/B versus2/B. E2 continuity follows
+from common-form max-min sandwich including threshold. Gamma(B1)>0 has
+the elementary origin-centered ball proof, not translated-ball positivity.
+No incorrect reviewer repair was applied. Main source/PDF remain unchanged.
+
+Missing upstream packet evidence and assigned primary images remain real
+coverage gaps. Kimi monthly429 persists; a user reviewer-route question is
+pending, with no alternative authorized. No new provider retry or confidence
+upgrade. Goal ACTIVE; full source/visual/synthesis/final cold still OPEN.
