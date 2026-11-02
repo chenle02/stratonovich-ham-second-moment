@@ -12251,3 +12251,23 @@ iteratedstaticsqueeze retain exactscope. NonzeroGamma explicit; zerofree
 case separate. v27has122scopedHIGH/all214identities. No source/PDF change,
 image/cold/global/goalclosure. Driver analytic supplement newreview remains
 actualMEDIUM despite explicitownbridge reconstruction; no furtherretry.
+
+
+### Current Kimi image refusal durably retained
+
+Exact29member capsuleSHA03d43c2657c2830c98f2599047ff9d0fa14d66fd8080d1ad124169a96043d9ab
+rootmatched/rehashed andsecret-audited safe. Native3imageattempt monthly429,
+zeroreads/report/credit; no retries. Ordinarynative renewal allowedforcurrent
+sameidentity/configunchanged, no provider/account/permission change. Current
+sourceimage/cold capacity stillblocked; fullgoalnotblocked becauseotherwork
+remains. No globalmathematical rejection inferred from accountrefusal.
+
+Newdriveranalytic supplement/review explicitly reconstructs support/dyadic/
+interpolation/momentbridges but raw217.104s PASS_WITH_NOTES/MEDIUM again;
+upstreamconstants/interfaces are consumed aslemmas, no requiredmathfix.
+RawMEDIUM unchanged; no furtherconfidence-onlyretry. Exact39membercapsule
+external stratonovich-main-deep-driver-analytic-v1, SHA
+134d682f9d414d097f7f2e52ad260ad299ab5856e6846aa6e6e359f30af2d041.
+Authorintrinsic typedreconciliation verifiesdense-tensor extension/current
+productionconditions, not anindependentvote. Cold-clean externalproposal
+preparing; no ACTIVEscientificedit. All214original+bridge scope retained.
