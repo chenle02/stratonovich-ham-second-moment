@@ -1,55 +1,58 @@
-Last updated: 2026-11-02 03:14 UTC (Codex)
+Last updated: 2026-11-02 04:23 UTC (Codex)
 
 LATEST USER DIRECTION: derive the actual constants, whatever computation yields.
 Chen matching is not a completion requirement.
 
 ## ⏭ Next session: where to stand and what to do
 
-Resolve the required reviewer-capacity/authorization blocker before new
-scientific dispatch. Goal service is BLOCKED, not complete or user-paused.
-Le's pending question is whether Kimi access will be restored or a specified
-replacement independent reviewer is authorized; no answer has arrived.
-Do not silently change model, provider, confidence threshold or source scope.
-
+Collect the EXISTING full MAIN DeepSeek review at terminal state without
+restarting it. Le explicitly resumed the goal and instructed DeepSeek V4 Pro
+as MAIN reviewer. Goal ACTIVE; prior blocked checkpoint remains history.
 ACTIVE research is
 ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave,
-branch research/fixed-mask-young-20261031. Progress.md is authority;
-PROJECT-GOAL.md retains the full original actual-constant objective.
+branch research/fixed-mask-young-20261031. Progress.md is authority.
 
-ALL current reviewers are TERMINAL. Expanded SF04 eligibility review
-PID2800827/handle26981/session ses_e65d98fe4ffe4UdtSYbB0B5euP finished
-PASS_WITH_NOTES/MEDIUM after775.546seconds, not HIGH. E01-E10 favorable
-scoped determinations and five author rebuttals accepted, with depth/image
-limits. All28source files and17upstream proofs were supplied. Full71-member
-native archive and exact adjudication are in reviews/2026-11-02-sf04-eligibility/.
-Earlier SF04 text review also MEDIUM; cutoff-v2 remains scoped HIGH only.
-No new mathematical TeX/PDF/Lean change or full-goal clearance.
+Main attempt sibling stratonovich-main-deepseek-review-v1 is LIVE at capture:
+PID3010935/supervisor3010742, handle33922,
+session ses_e65832d95ffego6ugwXbv52qh5. Inspect native/exit.json and actual
+process. Clean carriercf229b1ea868b915b4b332f9584f7e0e3323652f;
+prompt1674228bytes/SHA256
+55a07bd2e40c4d1a2ca553553d9c9b039d789459dfc5b0477482fd1673582dba.
+Scientific887 with current279governance separately bound. All64assigned
+texts total1339097bytes; all28TeX,7primary carriers,finite evidence and
+calibrations supplied. All213proofs/44sections/63namedchecks plus explicit
+213-entry proof-coverage ledger are requested. No prior narrow reports
+supplied as proof authority. HIGH not presumed; record depth/coverage honestly.
 
-Kimi's actual monthly429 produced no report/tool/image credit. The same
-blocker persisted across more than three goal continuations; available
-scientific audits/adjudications are complete, with no established repair
-justifying an unchanged confidence-seeking rerun. See
-reviews/2026-11-02-resumption/blocker-and-completion-audit.md.
-Full source/visual/whole/fresh-cold gates remain OPEN. Mainchain non-input
-classification does not waive retained auxiliary Chen-Hu/Chen2023 sources.
+This is a full MAIN mathematical review, not a bounded source/application
+audit and not the old Opus-only composition consumer. All image/render/
+edition and fresh independent cold gates remain separate and open. Kimi's
+last actual attempt is monthly429/no credit; question about retaining Kimi
+or an authorized replacement for those gates remains pending. No fallback
+or waiver is inferred from designating the main reviewer.
 
-Wiki maintenance984fe7b and its live-page identity were verified. A terminal
-blocked-status successor is QUEUED as exactticket
-tk-20261101-221302-codex-stratonovich-terminal-status; do not count it as
-maintained until its exact receipt/page is verified. Receipt collection is
-preservation work, not permission to restart unavailable scientific reviews.
+All earlier reviewers are TERMINAL. Cutoff-v2 is scoped HIGH accepted;
+both SF04 text/application reviews remain actual MEDIUM. Correct formulas
+were not changed to satisfy incorrect objections. Main source/PDF/80finite
+facts remain unchanged. Exact full text/line/source maps retained in
+reviews/2026-11-02-main-deepseek/.
+
+Prior blocked-status wiki maintenance is completed at58048edc, exact
+receipt/live page verified under main-review-resumption/wiki-blocked-completed.
+That dated status is superseded by Le's new direction; current main-review
+wiki refresh remains due at the next substantive checkpoint.
 
 ## Pre-flight checks
 
 1. Confirm this literal root and clean master. The pre-handoff root baseline
-   is 3771774d2613490642b629172b7130ebea6a8a80; verify ancestry, not equality
+   is 1bb982ddcf56d9dfdf3dc1f9c7f14010a71b9b47; verify ancestry, not equality
    to the later handoff commit. Preserve any foreign work.
 2. In ACTIVE, check git status, branch, latest Progress.md and ancestry of
-   a6fb61a08fc5c99f818f9f1c5ead12c767c28f40. Fetch serially and compare
+   4865a00240881aa19d6e9df0eb3ad4b57ea45636. Fetch serially and compare
    local/origin/<HUB> before edits. Recorded baseline was clean/equal.
-3. Verify terminal exit receipts for cutoff-v2, SF04 text and expanded
-   eligibility attempts, plus Kimi terminal.json. All four owned reviewer
-   PIDs are absent; no reviewer is queued. Never restart old handles.
+3. Verify prior cutoff/SF04/Kimi terminal receipts and then inspect the
+   NEW main-review PID3010935/session/exit.json. It is the only live reviewer
+   at capture. Never restart a live attempt on observation timeout.
 4. Verify proof-v2 and its three imported construction modules against the
    frozen source-bindings in reviews/2026-11-02-cutoff-overlap-proof-v2/.
    Original inventory has448files:447currently match and PROJECT-GOAL.md
@@ -60,34 +63,40 @@ preservation work, not permission to restart unavailable scientific reviews.
    reviews/2026-11-02-resumption/. Preserve all original models and all
    86primary frames/257pages/28TeX/44sections/213proof obligations.
 6. Kimi session76482/PID2686747, cutoff-v2 PID2685802 and SF04-text
-   PID2728316 and expanded SF04 PID2800827 are TERMINAL. Goal BLOCKED;
-   verify actual restored capacity or explicit new reviewer direction before
-   scientific dispatch, without dropping any mandatory gate.
+   PID2728316 and expanded SF04 PID2800827 are TERMINAL. Main-review
+   PID3010935 is LIVE at capture. Goal ACTIVE under Le's main-review
+   instruction; image/cold route is still unresolved, with no gate waiver.
 7. The wiki page is read-only here; maintenance goes through the canonical
    queue. Local wiki snapshots may lag <HUB>. No correspondence,
    sibling edits, new companion, HPC or public release is authorized.
 
 ## Concrete deliverables for the next session
 
-After the external blocker is resolved and the goal resumed, continue full
-source/image/whole/fresh-cold verification with exact source/route/coverage
-bindings. Preserve both actual MEDIUM reports and every source limitation.
-Before that, the only pending preservation check is the exact queued wiki
-status receipt; no new proof or repeated confidence-only review is due.
+Collect the full main review with exact route/prompt/source/coverage and
+native archive/readback. Adjudicate every finding and every unchecked proof;
+all63checks and213proof-ledger entries must be inspected, not merely counted.
+Preserve actual confidence and separate image/cold requirements. Continue
+full original goal, not forced Chen endpoints or reduced proof scope.
 
 ## Success criteria for the immediate next step
 
-Actual authorized reviewer capacity is demonstrated, or Le explicitly
-selects a replacement that preserves independent source/image/final review.
-No quota receipt, doctor output, source hash or text-only report is counted
-as image/HIGH/full-paper clearance. The full original model/constant goal
-and all verification obligations remain unchanged.
+Actual terminal main report verified with complete213proof/44section scope,
+all actual source hypotheses and constants/calibrations. Unchecked or unclear
+proofs remain explicit; text delivery is not proof verification. No image,
+old composition, cold or goal clearance is inferred from this mathematical
+review alone. Prior raw MEDIUM reports and failed Kimi attempt stay intact.
 
 ## Anti-success criteria
 
 [held back: collaborators' unpublished work]
 
 ## What the previous sessions produced
+
+2026-11-02 renewed main-review direction:279e118 records Le's explicit
+DeepSeek MAIN role and ACTIVE objective; a8c5aa6/4865a00 launch/bind one
+full213proof/44section/63check mathematical review with complete64text
+inventory and exact source maps. Prior blocked wiki58048edc receipt/page
+verified as dated history. No scientific/PDF/Lean changes or review clearance.
 
 2026-11-02 terminal close:6cf9d73 preserves actual expanded MEDIUM report,
 all71native archive members and every finding adjudicated. No mathematical
@@ -2146,16 +2155,15 @@ held. Main p2source/PDF/Lean facts unchanged; no reviewer live.
 ## Repo & git state at handoff
 
 ROOT master before this HANDOFF-only commit:
-3771774d2613490642b629172b7130ebea6a8a80, clean and origin/<HUB> equal.
-ACTIVE research a6fb61a08fc5c99f818f9f1c5ead12c767c28f40,
-clean and synchronized. Terminal expanded audit/adjudication6cf9d73.
-Cutoff source dd27f38/scoped adoption23b484a unchanged.
-Main scientific epoch887fbfbe and editorial source/PDFb2fda02 unchanged;
-original257-page PDF hash remains10bfeae6eb576e23ba928b8ef9eca968d87f23ac7eff884c632bf50acb3294c9.
-Existing80finite facts/22seams unchanged. All current native archives are
-retained in research commits and original external directories. No live
-reviewer or uncommitted scientific WIP. This handoff is pushed and canonical
-<HUB> master synchronized next, then exact parity checked.
+1bb982ddcf56d9dfdf3dc1f9c7f14010a71b9b47, clean and origin/<HUB> equal.
+ACTIVE research4865a00240881aa19d6e9df0eb3ad4b57ea45636, clean/synchronized.
+Main-review governance279e118; live launch a8c5aa6, exact maps4865a00.
+Main scientific887 and source/PDFb2fda02 unchanged;257page PDF SHA256
+10bfeae6eb576e23ba928b8ef9eca968d87f23ac7eff884c632bf50acb3294c9.
+Existing80finite facts/22seams unchanged. Prior native archives preserved;
+new main native directory retained externally and named above. No uncommitted
+scientific WIP. This handoff is pushed and canonical <HUB> synchronized
+immediately afterward, then exact parity checked.
 
 ## Operating notes
 
@@ -2163,12 +2171,12 @@ reviewer or uncommitted scientific WIP. This handoff is pushed and canonical
 
 ## Risks to monitor
 
-The required Kimi image/cold route remains unavailable. Both broader
-DeepSeek audits remain MEDIUM; complete delivered text and favorable checks
-are not HIGH/full-proof acceptance. Full213proof scope retains auxiliary
-source obligations even when those imports are absent from the main theorem
-path. Never copy incorrect reviewer repairs into correct mathematics.
-The old Opus-only composition checker cannot certify new routes by renaming.
-Current447/448inventory match has one known PROJECT-GOAL governance delta;
-all28scientific TeX match887. Final build/whole/cold/private delivery remain
-open; the queued terminal wiki update is not yet a completed receipt.
+The full main input is large: planning chars/2 plus65536output and32768system
+reserve gives928274tokens against cached1048576context, not an exact tokenizer
+count. Actual usage/finish/coverage govern; no source omission or automatic
+retry. Extracted formulas can be garbled; leave unresolved source fidelity
+open without actual image checks. Both previous broader audits are MEDIUM,
+not prior votes authorizing main acceptance. Kimi's image/cold quota issue
+remains. Source447/448old inventory has known PROJECT-GOAL governance delta;
+all28 scientific sources exact887. Final whole/source/visual/cold delivery
+and current wiki status refresh remain open.
