@@ -11227,3 +11227,17 @@ Immediate worklist:
 
 No final theorem, Gaussian source-paper, image, novelty or Lean certificate
 is inferred from the scoped cutoff review. No correspondence is authorized.
+
+
+### Cutoff production successor frozen for independent followup
+
+All seven requests are addressed in research-program/cutoff-overlap-proof-v2.md
+and its production-adjudication record. v1 remains immutable. Exact source
+interfaces support M/V Young regularity, bounded strongly continuous C,
+open-cone propagation, countable source events and raw triangle measurability.
+This is an AUTHOR candidate, not adoption. Full construction inputs and
+O1/O2/O3 scope remain; no main TeX/PDF change.
+
+Lean routing is FOCUSED_REVIEW with analytic exclusions documented in
+reviews/2026-11-02-cutoff-overlap-proof-v2/lean-review-routing.md. No Lean
+waiver, compiler, new package or changed 80-fact/22-seam ledger.
