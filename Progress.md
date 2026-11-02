@@ -7,11 +7,11 @@
 ## Current state
 
 - **Main depth recovery (2026-11-02):** full-main DeepSeek review returned
-  MEDIUM; targeted deep audits have now accepted 57 named proof bodies at
+  MEDIUM; targeted deep audits have now accepted 66 named proof bodies at
   scoped HIGH, including terminal Wick/tails and full-upper assembly.
   Constructor001–009, calibration010–019 and driver085–093 reports remain
   MEDIUM. The append-only ledger is
-  `reviews/2026-11-02-main-deepseek/depth-ledger-v13.json`.
+  `reviews/2026-11-02-main-deepseek/depth-ledger-v14.json`.
   Full213-proof, source-image/render and independent cold obligations remain.
   Further constructor004–006, source094–100 and masked101–103 packets are
   being prepared; preparation is not an actual reviewer launch.
@@ -11955,3 +11955,22 @@ shorthands corrected against already-correct source. No source/PDF edits.
 Depth-ledger-v13 replaces incomplete112–118 states with completedMEDIUM
 notaccepted. HIGH count remains57. No further retry. Nextnew142–148 unit
 preparing; constructor concretecorrection and unmasked/occupation stilllive.
+
+
+### Corrected constructor and unmasked score scoped HIGH adoptions
+
+Same-session constructor correction469.198s actualPASS_WITH_NOTES/HIGH,
+12individualJ/3FULLY_CHECKED. Root readoriginal+correction, rehashed23member
+successor including immutable64member capsule, and verified correct source
+unequal-time warning. Retracted shifted-crossPSD/spatialomission claims;
+translatedTEST stationaryCS with finite source spatial widths and positive
+limits verified. Remaining reviewerJ11 sign slip explicitly rejected with
+1/2vs3/2control; same-horizon target and already-correct source unaffected.
+Workedj2 has24orders/noextra3. Adopt004–006 only, not otherconstructor proofs.
+Unmasked127–132 actualPASS/HIGH,512.64s, sixCHECKED/all9PASS. Rootrehashed
+47members/17bindings; fullH1/H2, non-eigenbottom, fixedcontrol numericalmask
+removal, rawcost/class bijection and pre-supremum independentfullupper
+finiteness verified. No first-moment label1 identity or exactlimit claimed.
+All findings adjudicated; no source/PDF/Lean changes. Append-only v14 has
+66scopedHIGH and all213identities/rawmainstatuses. Next007–009 worked audit
+and deterministic149–150 preparing; occupation135–141 andCameron142–148 live.
