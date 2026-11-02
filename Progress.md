@@ -7,11 +7,11 @@
 ## Current state
 
 - **Main depth recovery (2026-11-02):** full-main DeepSeek review returned
-  MEDIUM; targeted deep audits have now accepted 73 named proof bodies at
+  MEDIUM; targeted deep audits have now accepted 75 named proof bodies at
   scoped HIGH, including terminal Wick/tails and full-upper assembly.
   Constructor001–009, calibration010–019 and driver085–093 reports remain
   MEDIUM. The append-only ledger is
-  `reviews/2026-11-02-main-deepseek/depth-ledger-v16.json`.
+  `reviews/2026-11-02-main-deepseek/depth-ledger-v17.json`.
   Full213-proof, source-image/render and independent cold obligations remain.
   Further constructor004–006, source094–100 and masked101–103 packets are
   being prepared; preparation is not an actual reviewer launch.
@@ -12003,3 +12003,15 @@ non-traceclass distinction kept. No nonlinear/growingradius/image/cold credit.
 v16has73scopedHIGH; occupation135–141 stillpending correction (not counted).
 No source/PDF/Lean change. Next151–155 actualindex-scoped unit preparing;
 deterministic149–150 and constructor007–009 live.
+
+
+### Deterministic Young-upper foundation scoped HIGH
+
+149–150 actualPASS_WITH_NOTES/HIGH,530.29s, bothproofs worked/all5YUP PASS.
+Root rehashed47members/17bindings. Optionalconstant/crossincrement/inverse
+exposition and reviewer threshold equality typo adjudicated. ExactLEFTgauge,
+mesh^(2theta-1), actualAU_H prefactor and x0endpoint preserved. A remains
+bounded; no Gaussianconditioning/finite-delta/iteratedlimit/radiusuniform
+conclusion follows. Inlined target and inputs were read, not allreference
+modules. v17has75scopedHIGH, original213scope/rawmainMEDIUM retained.
+No source/PDF/Lean edit. Providerterminal; next156–160 exactindexunit preparing.
