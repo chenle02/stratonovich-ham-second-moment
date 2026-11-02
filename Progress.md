@@ -11550,3 +11550,23 @@ HIGH not presumed. The four-unit upper worklist and independent construction
 unit retain full213scope and global/source/image/render/cold gates. This
 addresses actual reported proof-depth gaps rather than replacing the goal
 with an easier theorem. Full MAIN report remains terminalMEDIUM/unaccepted.
+
+
+### Construction MEDIUM and static-core original length stop retained
+
+Construction unit TERMINAL0,560.257seconds, actualPASS_WITH_NOTES/MEDIUM,
+allCON01-CON11 and all9proof-levelCHECKED returned. No blocking defect,
+but HIGH not met. Every optional/source finding is adjudicated without
+scientific changes. Root read back37native members. Original source-map
+collection refusal (38formfeed offset on later metadata blocks) preserved;
+additive corrected map/full packet reconstruction verified, source bytes
+and actual supplied target unchanged. No model retry or confidence upgrade.
+
+Static UnitA original TERMINAL0/finishlength,756.160seconds, reasoning65535
+and visibleoutput0: no report/verdict/credit. Original42native members
+retained/readback verified. One SAME-session continuation is now authorized
+with task-only cap131072, separate output, unchanged model/carrier/source;
+not a new independent vote. Its actual launch follows below when bound.
+Root found five prior main status annotations inside UnitA target-identities;
+strict prior-status blindness is not claimed. No live carrier was edited.
+Main actualMEDIUM and full213coverage obligations remain unchanged.
