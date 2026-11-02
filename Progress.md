@@ -7,11 +7,11 @@
 ## Current state
 
 - **Main depth recovery (2026-11-02):** full-main DeepSeek review returned
-  MEDIUM; targeted deep audits have now accepted 51 named proof bodies at
+  MEDIUM; targeted deep audits have now accepted 55 named proof bodies at
   scoped HIGH, including terminal Wick/tails and full-upper assembly.
   Constructor001–009, calibration010–019 and driver085–093 reports remain
   MEDIUM. The append-only ledger is
-  `reviews/2026-11-02-main-deepseek/depth-ledger-v8.json`.
+  `reviews/2026-11-02-main-deepseek/depth-ledger-v9.json`.
   Full213-proof, source-image/render and independent cold obligations remain.
   Further constructor004–006, source094–100 and masked101–103 packets are
   being prepared; preparation is not an actual reviewer launch.
@@ -11831,3 +11831,17 @@ is false as necessity; source establishes a sufficient small-c condition.
 Prerequisite joins and source-text limitations remain; HIGH not accepted.
 Append-only depth-ledger-v8 retains51scopedHIGH and records these8MEDIUM.
 No source/PDF change or retry. New scaling/rawlower119–126 packet preparing.
+
+
+### Spatial-white calibration scoped HIGH adoption
+
+White210–213 actualPASS_WITH_NOTES/HIGH,358.938s, fourPASS/WHT01–10PASS
+with explicit unperformed kinetic perturbation control and upstream limits.
+Root rehashed39members/tenbindings and read all findings. Report-only claim
+that3A²<=b changes with wavekinetic coefficient is false for unchanged A,b;
+source coefficient-one identities and energy are correct. Missing extra
+control, full-H1 versus compact-control distinction, CDFchainrule and named
+occupation/intrinsic/Gamma dependencies preserved. No numericalC2, endpoint
+interchange, all-model, image or cold clearance. Two conditionalLean facts
+unchanged. Append-only depth-ledger-v9 has55scopedHIGH, all213identities
+and raw mainMEDIUM statuses retained. WhiteproviderTERMINAL; no rerun.
