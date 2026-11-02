@@ -12366,3 +12366,16 @@ editorialdeltas and53MEDIUM/partial rows remain; prior161countwaspreeditorial.
 No automaticvote transfer or deletionofrawhistory. Full214coupledmaintext
 packetpreparing, notdispatched; sourceimages/full259independentrender/Kimi/
 cold/fullgoalstillopen.
+
+
+### Rebinding metadata corrections retained without source change
+
+Workerpostcheckcaught35fullindexv4 finalclosing-sentence startlocators that
+started at anearlier 'This proves' phrase. Rawbody/statement/proofinterval
+locators andneutralmap werealwayscorrect. Rootverifiedsameall214bindings,
+adoptedappend-onlyv5 withexactfinalownerreferencelines; v4historypreserved.
+Ledger v32rebindhadcopiedoldsixplanarPENDINGstates despiteactualv31rawMEDIUM;
+v33restoresactualv31sixdispositions. No grade/body/claim/source/PDFchange.
+Root verifiedfreshMAINpacket42embeddeditems/28exactcommittedTeX/all214maps/
+neutralmathsupplements andauthorized ONEactualDeepSeekMAINcall subjectexact
+tasklocaltoolsdeniedpreflight/freeze. Notacoldreview orimagewaiver.
