@@ -7,11 +7,11 @@
 ## Current state
 
 - **Main depth recovery (2026-11-02):** full-main DeepSeek review returned
-  MEDIUM; targeted deep audits have now accepted 55 named proof bodies at
+  MEDIUM; targeted deep audits have now accepted 57 named proof bodies at
   scoped HIGH, including terminal Wick/tails and full-upper assembly.
   Constructor001–009, calibration010–019 and driver085–093 reports remain
   MEDIUM. The append-only ledger is
-  `reviews/2026-11-02-main-deepseek/depth-ledger-v11.json`.
+  `reviews/2026-11-02-main-deepseek/depth-ledger-v12.json`.
   Full213-proof, source-image/render and independent cold obligations remain.
   Further constructor004–006, source094–100 and masked101–103 packets are
   being prepared; preparation is not an actual reviewer launch.
@@ -11904,3 +11904,21 @@ siblingstratonovich-main-deep-compact-mean-completion-v1, no changed math,
 root rebuttal or confidence solicitation. Await actual complete report.
 Append-only depth-ledger-v11 marks112–118 INCOMPLETE_REPORT_NOT_ACCEPTED;
 acceptedHIGH remains55. Original/source/image/full/cold gates unchanged.
+
+
+### Equilibrium scoped HIGH; raw lower qualified MEDIUM
+
+Equilibrium133–134 actualPASS_WITH_NOTES/HIGH,294.833s, bothPASS/all10checks.
+Root read every finding and rehashed34members/fourbindings. Source already
+prints Jacobian; positive-binomial/reflection expansions optional. Actual
+review honors L1/L2, not the genericconfig's inheritedH1 phrase. Formal
+parameter endpoints and original model limits remain separate. Adopt2targets.
+Rawlower119–126 actualPASS_WITH_NOTES/MEDIUM,588.48s; rootrehashed45members/
+15bindings. Preserve undefinedRBL11 'INCONCLUSIVE-adjacent-but-consistent'
+and absent prescribedproofledger. Finitejoint coefficient laws plus L2series
+DO pass finite-dimensional laws; no unjustified weakening to moments alone.
+ProductC^(N+1) slack valid forC>=1. Constant-column/compressedinput qualifiers,
+sameZ half-action, fixed-orderlimits and zeroimage credit retained. NoHIGH.
+Append-only depth-ledger-v12 has57scopedHIGH, all213identities/rawmainstatus.
+No source/PDF/Lean change. Both nativeprocessesTERMINAL; newvariational127–132
+packet preparing. Constructor correction/compact completion remain pending.
