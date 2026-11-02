@@ -7,11 +7,11 @@
 ## Current state
 
 - **Main depth recovery (2026-11-02):** full-main DeepSeek review returned
-  MEDIUM; targeted deep audits have now accepted 79 named proof bodies at
+  MEDIUM; targeted deep audits have now accepted 84 named proof bodies at
   scoped HIGH, including terminal Wick/tails and full-upper assembly.
   The initial constructor001–009, calibration010–019 and driver085–093
   reports remain MEDIUM; focused004–006 is now separately accepted HIGH. The append-only ledger is
-  `reviews/2026-11-02-main-deepseek/depth-ledger-v18.json`.
+  `reviews/2026-11-02-main-deepseek/depth-ledger-v19.json`.
   Full213-proof, source-image/render and independent cold obligations remain.
   Further constructor004–006, source094–100 and masked101–103 packets are
   being prepared; preparation is not an actual reviewer launch.
@@ -12053,3 +12053,16 @@ Time-diagonal versus spatialcovariancediagonal, unnecessaryoptimalconstant
 claim and unworkedextra controls also adjudicated. No furtherautomaticcall.
 v18has79scopedHIGH; original213scope/mainMEDIUM/image/cold gates persist.
 OccupationproviderTERMINAL; manuscript/PDF/Lean unchanged.
+
+
+### Uniform E mean/Cameron scoped HIGH adoption
+
+151–155 actualPASS_WITH_NOTES/HIGH,596.143s, fiveCHECKED/all10UME PASS.
+Rootreadall/rehashed63members andsourcebindings. Rieszrow, exacttailconstant,
+pointwiseBochner projection versus undefinedtensoridentification and spatial
+T_R versus completedmathcalT_R adjudicated. Source precise maps unchanged.
+Uniformradius onlyonE, bothphase/onephysicalmask; head/residualorthogonality
+not blockindependence or infiniteheadconditioning; compactvalues notuniform
+compactness. No growingRrandomresidual/concentration/nonlinear/image/cold
+clearance. v19has84scopedHIGH;135–137 remain unresolved asv18records.
+No source/PDF/Lean edit. Next161–164 exactsignedfoundation unit preparing.
