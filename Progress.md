@@ -11,7 +11,7 @@
   scoped HIGH, including terminal Wick/tails and full-upper assembly.
   Constructor001–009, calibration010–019 and driver085–093 reports remain
   MEDIUM. The append-only ledger is
-  `reviews/2026-11-02-main-deepseek/depth-ledger-v14.json`.
+  `reviews/2026-11-02-main-deepseek/depth-ledger-v15.json`.
   Full213-proof, source-image/render and independent cold obligations remain.
   Further constructor004–006, source094–100 and masked101–103 packets are
   being prepared; preparation is not an actual reviewer launch.
@@ -11974,3 +11974,18 @@ finiteness verified. No first-moment label1 identity or exactlimit claimed.
 All findings adjudicated; no source/PDF/Lean changes. Append-only v14 has
 66scopedHIGH and all213identities/rawmainstatuses. Next007–009 worked audit
 and deterministic149–150 preparing; occupation135–141 andCameron142–148 live.
+
+
+### Occupation HIGH header withheld for specific correction and coverage
+
+Original135–141 actualPASS_WITH_NOTES/HIGH,612.261s, sevenfavorableproof
+paragraphs but missing prescribed12check/proofstatus ledgers. Rootreadall,
+rehashed39members/tenbindings. Review drops c inlambda_z(c)²upper and gives
+inadequate weak-binding shorthand; PSD alone does not imply positivecross
+pairings. Correct source uses c*potential, homogeneous large-balltrial and
+positivephysicalintegral before continuity/PSD/CS. No manuscript repair.
+One SAME-session correction/coverage continuation runningPID3680785/handle18562,
+originalcarrierunchanged, prompt6346bytes/SHA
+87c30ce3f6db95067c432b41dace67fe568f0dfe7024063b680354464a1e6228.
+No confidence solicitation/newvote/furtherautoretry. v15marks135–141pending,
+acceptedHIGH count remains66. Actual corrections must be read before adoption.
