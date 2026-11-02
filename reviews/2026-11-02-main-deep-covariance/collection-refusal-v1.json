@@ -1,0 +1,9 @@
+{
+  "scope": "Collector implementation error only; original frozen inputs and LF/renderer maps correct and immutable",
+  "failure": "AssertionError reconstructing complete chen-author.txt: collector unconditionally appended final LF",
+  "cause": "Original exact Chen author carrier has no final LF; collector synthesized one extra byte. Source byte-span and renderer range validated before dispatch are correct.",
+  "input_bytes_changed": false,
+  "input_metadata_changed": false,
+  "provider_rerun": false,
+  "fix": "Retain rawLF terminators only when they exist in original source; compare rawLF line content independently from exact packet byte spans. Preserve original exported session."
+}

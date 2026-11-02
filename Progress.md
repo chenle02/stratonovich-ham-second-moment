@@ -11570,3 +11570,30 @@ not a new independent vote. Its actual launch follows below when bound.
 Root found five prior main status annotations inside UnitA target-identities;
 strict prior-status blindness is not claimed. No live carrier was edited.
 Main actualMEDIUM and full213coverage obligations remain unchanged.
+
+
+### Two scoped HIGH depth units accepted; full main goal remains open
+
+Covariance unit PROOF061-065: actualPASS/HIGH, COV01-COV08 allPASS,
+469.281seconds, no required mathematical repair. Root readback39members;
+actual route/prompt/source/coverage verified. Gamma!=0/zero-case context,
+Schwartz inclusion, separability and report-only phase-equality overstatement
+adjudicated; correct source unchanged. No downstream proof/image credit.
+
+Static UnitA PROOF037-041: authorized SAME-session continuation returned
+PASS_WITH_NOTES/HIGH, all5FULLY_CHECKED, A01-A07FULLY_CHECKED andA08scoped
+CHECKED. Original lengthstop has no report/credit. Continuation764.609seconds
+with input52042/output6355/reasoning61980; root readback25members plus
+original42. Actual two-message lineage/unchanged original archive/route/
+source/finish/no-tools verified. Report-only density shorthand, Q_z real
+wording and Fock scalar-versus-vector-row shorthand adjudicated against
+correct source. Five prior status annotations WERE in identity context;
+strict blindness/cold credit is not claimed. No source/PDF change.
+
+Scoped mathematical proof-depth adopted only for these10named proofs on
+their actual hypotheses/textual interfaces. Original mainMEDIUM, construction
+MEDIUM, all213goal/global/source-image/render/cold requirements unchanged.
+Append-only depth-ledger-v1 retains every213proof and exact source hash,
+without turning partial statuses or source custody into full acceptance.
+Both currently completed deep providers are TERMINAL; subsequent UnitB
+will retain complete A bodies and separate original dimension scopes.
