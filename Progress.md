@@ -11773,3 +11773,30 @@ Spot-checked constructor dependencies and zeroimage credit remain explicit.
 Append-only depth-ledger-v7 retains51scopedHIGH and records these3MEDIUM
 statuses. No source/PDF change. Compactmean112–118 now preparing as NEW
 unit; maskedproviderTERMINAL, no retry. Full goal remains ACTIVE.
+
+
+### Constructor, Young and white next units actually running
+
+Constructor004–006 worked audit: siblingstratonovich-main-deep-construction-456-v1,
+PID3602167/supervisor3602110, handle48145,
+session ses_e643adb41ffeU4plPY0jau2cd4; carrier
+ad93d4af414b622e480e41ad5ea80d5027c5bc47; prompt360905bytes/SHA
+5a659fc367d7be0a3f1d428730b35e1fbdfb498f05b741cb8498bebfdcfeeb9e.
+Adds held primaryPDFpages14–21, including formerly missing induction17–21,
+and worked marked-edge/compactification/horizon-face checks. SourceCase2
+shift issue is a QUESTION for audit, not an established source defect.
+Young104–111: siblingstratonovich-main-deep-young-v1,
+PID3603392/wrapper3603386, handle34836; carrier
+e4085df087277ce86bd9da7217920c0ea700d3d9; prompt520887bytes/SHA
+a52cdef0373f5d8d26b4f47ec31ec434e4d388befad19b965d572d94800f9606.
+Complete8targets,11inputs incl actual constructor/source prerequisites.
+White210–213: siblingstratonovich-main-deep-white-v1,
+PID3606601/supervisor3606598, handle12273; carrier
+fc7701dc2d854545e139dec75a3d57b4c3c7dd84; prompt136991bytes/SHA
+99f04a5fd90bf5b26f9949df12700b0fdfae4651ff8b454a1c21b72abba154e2.
+Full4targetproofs plus complete spatial/temporal/occupation/intrinsic
+consumer interfaces and two conditionalLean types. WHT01–10 require full
+H1/CDF/IBP/attainment/Gamma checks, not just finite algebra certificates.
+All actualDeepSeek/toolsdenied/cap131072 and no automaticretry. These are
+NEW or genuinely expanded worked-depth assignments, not confidence-only
+votes. All original213proof and full/source-image/cold obligations unchanged.

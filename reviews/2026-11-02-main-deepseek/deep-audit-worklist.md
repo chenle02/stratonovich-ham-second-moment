@@ -37,7 +37,7 @@ Independent covariance branch: PROOF061-065 now scoped HIGH accepted;
 PROOF066-074 (three temporal lemmas plus six wave-variance proofs) has
 scoped HIGH acceptance with complete covariance and consumer inputs.
 Neither foundation acceptance certifies downstream stochastic flow proofs.
-Current source-bound scoped states are in depth-ledger-v6.json; raw main
+Current source-bound scoped states are in depth-ledger-v7.json; raw main
 MEDIUM and all remaining213proof obligations are preserved.
 
 
@@ -49,3 +49,8 @@ removed; no global, image or cold clearance follows from unit acceptance.
 Source094–100 and finiteGram194–198 now scopedHIGH accepted. Young104–111
 is a new packet in preparation, not a presumed review success. All intrinsic
 consumer/upstream and global/source-image/cold obligations remain open.
+
+Masked101–103 is terminal MEDIUM, retained unaccepted. Constructor004–006
+(with new held primary induction pages and worked-step checks), Young104–111
+and White210–213 are actually running; exact launch records in Progress.
+Compactmean112–118 is being prepared. Check native exits before collection.
