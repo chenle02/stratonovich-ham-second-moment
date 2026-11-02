@@ -11,7 +11,7 @@
   scoped HIGH, including terminal Wick/tails and full-upper assembly.
   Constructor001–009, calibration010–019 and driver085–093 reports remain
   MEDIUM. The append-only ledger is
-  `reviews/2026-11-02-main-deepseek/depth-ledger-v10.json`.
+  `reviews/2026-11-02-main-deepseek/depth-ledger-v11.json`.
   Full213-proof, source-image/render and independent cold obligations remain.
   Further constructor004–006, source094–100 and masked101–103 packets are
   being prepared; preparation is not an actual reviewer launch.
@@ -11888,3 +11888,19 @@ One same-session correction audit authorized for this actual false reasoning
 and missing individualJ/workedj2/auxiliarycap controls, not confidence alone.
 No new source edit. Depth-ledger-v10 keeps acceptedHIGH count55 and marks
 004–006 HIGH_REPORT_NOT_ADOPTED_CORRECTION_PENDING. InitialMEDIUM immutable.
+
+
+### Compact mean public report incomplete despite native stop
+
+Original compactmean112–118 run exit0/finishstop639.125s but publicreport
+only2264bytes ending midword; noCMF01–12 or sevenproofledger. HeaderMEDIUM
+is not a completed review. Root rehashed44original/45refusal-capsule members.
+Original collector completeness flag insufficient; explicit refusal retained.
+Events/export/report match; collector truncation ruled out, cause not inferred.
+Returned inverse-quarter-domain and polynomial-growth criticisms are false
+as stated; manuscript bounds/completion already correct. No source edits.
+One SAME-session public completion authorized/launchedPID3636911/handle63144,
+siblingstratonovich-main-deep-compact-mean-completion-v1, no changed math,
+root rebuttal or confidence solicitation. Await actual complete report.
+Append-only depth-ledger-v11 marks112–118 INCOMPLETE_REPORT_NOT_ACCEPTED;
+acceptedHIGH remains55. Original/source/image/full/cold gates unchanged.
