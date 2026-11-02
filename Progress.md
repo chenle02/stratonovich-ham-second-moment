@@ -12271,3 +12271,18 @@ external stratonovich-main-deep-driver-analytic-v1, SHA
 Authorintrinsic typedreconciliation verifiesdense-tensor extension/current
 productionconditions, not anindependentvote. Cold-clean externalproposal
 preparing; no ACTIVEscientificedit. All214original+bridge scope retained.
+
+
+### Three-dimensional and occupation deductions scoped HIGH adopted
+
+Root read full native reports and actual transfer/energy/occupation source,
+rehashed49/74capsule members. 030–036 and205–209 accepted at exact named
+hypotheses; v28has134scopedHIGH/all214identities. Three-dimensional endpoint
+comparison remains conditional, imported static theorem not re-proved,
+source-image reading limitation retained. Occupation report finalclaim that
+penalty-onecomparison refutes actualmoment inequality explicitly rejected;
+source correctly comparescomputedbounds. Its unworkedtwo-celltest not
+invented asreviewercoverage; separate rootauthorcheck retains crosspairing.
+Rawgrades/readinglimits unchanged, no scientificedit/providerretry/global
+application/image/render/Kimi/cold/goalclosure. Other reviewadjudications
+and cold-clean editorialproposal remain active.
