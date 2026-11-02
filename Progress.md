@@ -12418,3 +12418,15 @@ No requiredmanuscriptrepair found; no confidence-onlyrepeat. Authorworkers
 nowwrite explicitnewmathematicalreplays foractualvariance/interval limit,
 Youngretaining-source flow andrawlowerGaussianprobabilityseams. FullMAIN
 HIGH/image/render/Kimi/cold/wiki/privateclosure remainOPEN, goalACTIVE.
+
+
+### Final existing-formula calibrations author-checked
+
+Readfullauthorcrosswalk/sourcebindings atb4b6efc. ExistingM_aGammaratio→1
+andK0→1; whiteboundformulascoalesce2sqrt(c)/3 with timeasymptoticsfirst,
+noa0constructionoruniformL2 arcsineendpoint. ActualJensen/auxS1/sourceL
+remainseparate; physicalkinetic1/comparisonhalfgradient/rawhalfaction not
+conflated. DistinctprivateBCWstrictRieszcomparison retainedreadonly, no
+feature/rawbridge ornewSkorohodwork. Thoseunproveddictionaryidentities are
+qualifications, notnewcompletionrequirements. Zeroindependentvote/grade/
+image/coldcredit. Newexplicitoperator/Young/lowerauthorreplays remainactive.
