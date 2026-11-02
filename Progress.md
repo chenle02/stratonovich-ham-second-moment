@@ -7,11 +7,11 @@
 ## Current state
 
 - **Main depth recovery (2026-11-02):** full-main DeepSeek review returned
-  MEDIUM; targeted deep audits have now accepted 75 named proof bodies at
+  MEDIUM; targeted deep audits have now accepted 79 named proof bodies at
   scoped HIGH, including terminal Wick/tails and full-upper assembly.
   The initial constructor001–009, calibration010–019 and driver085–093
   reports remain MEDIUM; focused004–006 is now separately accepted HIGH. The append-only ledger is
-  `reviews/2026-11-02-main-deepseek/depth-ledger-v17.json`.
+  `reviews/2026-11-02-main-deepseek/depth-ledger-v18.json`.
   Full213-proof, source-image/render and independent cold obligations remain.
   Further constructor004–006, source094–100 and masked101–103 packets are
   being prepared; preparation is not an actual reviewer launch.
@@ -12036,3 +12036,20 @@ head/residual independence distinguished from correlatedtimeblocks.
 Both actualDeepSeek/toolsdenied/cap131072/onefreshattempt, no priorvotes or
 scientific edits. Occupation correction stillLIVE; radius156–160 preparing
 with actualE-phase R^(d/Q) first-driver scope (not Fconstant-column bound).
+
+
+### Occupation correction completed: partial scoped adoption only
+
+Same-session237.286s actualPASS_WITH_NOTES/HIGH,12namedchecks/sevenledger.
+Root readall/rehashed17capsule members with originalarchive/prefix unchanged.
+Missingc, weak-bindinghomogeneity and positivity/PSD order corrected. NEW
+returned null-transfer explanation wrongly integrates singularGamma first
+and declares innerzero; actualsource135 correctly integrates Lebesgue x
+first foreachy. Delta0,N={0},x0 disproves reviewer's pointwise claim. No
+source repair. Withhold135 despiteCHECKED label. 136/137 explicitly
+NOT_FULLY_CHECKED in correctedledger; preserve that qualification.
+Adopt ONLY138–141 scoped, keeping their named upstream obligations open.
+Time-diagonal versus spatialcovariancediagonal, unnecessaryoptimalconstant
+claim and unworkedextra controls also adjudicated. No furtherautomaticcall.
+v18has79scopedHIGH; original213scope/mainMEDIUM/image/cold gates persist.
+OccupationproviderTERMINAL; manuscript/PDF/Lean unchanged.
