@@ -10,7 +10,8 @@
   the full project; parallel author-side subagents are authorized. The prior
   pause is superseded, its historical checkpoint retained. Cutoff proof v1
   has a verified DeepSeek PASS_WITH_NOTES/HIGH report; seven production
-  dispositions are being completed in a separate immutable successor.
+  dispositions are now scoped accepted at successor dd27f38 after actual
+  DeepSeek production PASS_WITH_NOTES/HIGH (all F01-F10).
   Whole-paper/source/visual/final-cold obligations remain OPEN. No new
   proof adoption or whole-goal completion follows from this resumption.
 
@@ -225,8 +226,8 @@
   attempt and continuation are TERMINAL and unaccepted (incomplete coverage,
   INCONCLUSIVE/medium). Their evidence remains historical, not live work.
 - **Immediate next (resumed 2026-11-02):** finish the seven cutoff-proof
-  production notes in a separate successor and validate its changed analytic
-  interfaces. Then continue the prepared full source/visual/whole-argument
+  production close is recorded below; continue the prepared full
+  source/visual/whole-argument
   coverage recovery and fresh cold gate. Fifteen prepared components and
   synthesis contracts do not count as completed reviews. General local-flow
   assembly is a separate research-program target, not a substitute for the
@@ -11268,3 +11269,28 @@ setup/account/model change or source-image credit is claimed.
 ### Kimi SF04 Young-source image attempt: terminal monthly quota refusal
 
 [held back: AI account details]
+
+
+### Cutoff production followup: scoped compatibility deduction accepted
+
+Actual DeepSeek V4 Pro on dd27f38 returned PASS_WITH_NOTES/HIGH, all
+F01-F10 PASS, no correctness-blocking repair,453.646seconds/terminal0.
+Native session ses_e66013385ffehNPjMsGGJhgfzX/PID2685802 is TERMINAL.
+Actual prompt/route/finish/no-tools/unchanged clean carrier and nine source
+bindings verified; all48native archive members independently read back.
+The seven production requests are closed for the bounded O1/O2/O3
+deduction on its named analytic construction inputs. Proof bytes remain
+unchanged. This is a non-blind targeted followup, not a cold vote.
+
+Every finding is adjudicated in the v2 adoption-adjudication.md. Preserve
+reviewer-only reversed cone summary (source correctly enlarges K_v to K_r)
+and its overstrong everywhere wording for an a.s. expectation inequality.
+Neither erroneous report phrase is copied into the proof. Optional prose
+changes are deferred; missing tailored-workflow/external-proof/image limits
+remain. No full local flow, source-image, novelty or whole-p2 clearance.
+
+Canonical wiki maintenance queued exactticket
+tk-20261101-211105-codex-stratonovich-resumption, request UID
+stratonovich-resumption-20261102-review-status-v1. This is queued, not a
+completed wiki update. Its earlier pending snapshot is explicitly dated;
+latest mathematical authority remains this Progress record.
