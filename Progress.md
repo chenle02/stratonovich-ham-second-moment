@@ -12443,3 +12443,21 @@ NewexternalTeXcandidateauthorizedONLYselectedexpansions in125/126 and108/110,
 allstatements/214IDs preserved; variance088/091replay stillactive. No native
 callorgradeupgrade. Rootinspection/build/freshindependentreviewrequired
 beforeproductionintegration. ActualMAIN120CHECKED94LIMITED stillungraded.
+
+
+### User-requested storage cleanup; all candidate edits preserved
+
+Removed cleanfullymerged source-bridge production worktree/localbranch and
+lease-guardedremote branch; tip36c0fec remains ancestorofretainedACTIVE.
+Removed redundant temporaryanalytic reviewworktree/branch (tipbe61381,zero
+uniquecommits) AFTERexact4modifiedfiles,binarypatch,indexintent/buildlogs
+werecaptured/rehashedandrestore-applychecked. ThreeTex/263pagePDF preserved
+incompactcandidate-WIP recoveryarchive andexternalstratonovich-cleanup-rescue-20261102;
+frozenv2source/capsule/neutralmaps retained. No proofdata/WIPlost.
+About3.7GiBlocalduplicatedcheckouts removed; diskfree124G→127G (94%→93%).
+Cleanretired<HUB>clone also removed. Onlymaster/active researchbranches
+remainlocally. Gitgc--no-prune compactedobjects,connectivitypassed; all
+history/danglingobjects preserved. No nativeprocess/callactive. Userstorage
+priorityheldpacketgeneration; continuemathfromcompactsource-onlycarriers,
+notfullcopycheckouts. ACTIVEscientificsource stillb4b6efc; candidatev2new6
+proofbodiespendingreview. All originalgoal/gates/scopelimits unchanged.
