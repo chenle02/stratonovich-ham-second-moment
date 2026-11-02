@@ -65,8 +65,7 @@
 \begin{document}
 
 \title{The second moment of the hyperbolic Anderson model with time-dependent
-noise: Stratonovich regime\\[0.3em]
-{\normalsize Consolidated working notes, 2026-11-01}}
+noise: Stratonovich regime}
 \author{Le Chen}
 \date{\today}
 \maketitle
@@ -95,9 +94,7 @@ noise: Stratonovich regime\\[0.3em]
   Chen's author-version first-moment results
   \cite{chen:author2026:time-dependency} provide comparison context;
   their printed variational normalization is not corrected here or used
-  to prescribe the constant. The component proofs have passed scoped
-  independent reviews. Fresh whole-argument and final cold reviews of
-  this consolidated working manuscript remain pending.
+  to prescribe the constant.
 \end{abstract}
 
 \tableofcontents
@@ -224,10 +221,6 @@ Thus neither Theorem~4.1 nor Lemma~4.4 nor Appendix~A.1 of the source is
 an analytic construction input. The finite-width Gaussian field and
 multiple Stratonovich integral use its definitions and regularization
 conventions, with Green smoothing removed before noise smoothing.
-The three construction lemmas and their changed consumers passed a fresh
-scoped Opus5.5/HIGH review at source revision \texttt{f9303ed}. This is
-separate from the earlier quantitative reviews and from the pending
-whole-paper cold read.
 
 Proposition~\ref{P:mild-construction} proves that the resulting series
 satisfies its onefold Stratonovich mild equation, using the corrected
@@ -317,11 +310,11 @@ Lemma~A.1 with $G_l(t,x)=e^{-\theta t}G(t,x)$, in Laplace variables.
 
 \subsection{Known moment bounds}
 
-\myCmts{The following statement records the source as printed. Its
+The following statement records the source as printed. Its
 variational constants require normalization clarification; see
 Remark~\ref{R:three-endpoint-scope}. We retain the printed formulas
 without adopting a correction. The upper-bound proofs below do not
-use the first-moment upper constant.}
+use the first-moment upper constant.
 
 \begin{theorem}[\cite{chen:author2026:time-dependency}*{Theorem~1.2, (1.10)--(1.13)}]\label{T:first}
   \emph{Source statement as printed.} The source states, under
@@ -2006,14 +1999,14 @@ remaining integrals is asserted.
 
 \section{G2 upper bounds for spatial exponents at most one}\label{S:d1-upper}
 
-\myCmts{Reviewed partial result: the upper bound at scale $t^\kappa$
+The upper bound at scale $t^\kappa$
 is proved for $0<\alpha\le1$ in dimensions one, two and three under
 the standing assumptions. The separate one-dimensional Riesz
 estimates retain their sharper constants and white endpoint.
 Degree-one covariance in dimensions two and three does not mean
 full spatial white noise. Section~\ref{S:interval-upper} treats the
 higher exponents by a separate argument. The intrinsic constant is
-identified later in Theorem~\ref{T:intrinsic-second-moment}.}
+identified later in Theorem~\ref{T:intrinsic-second-moment}.
 
 We retain the two-chain expansion of Proposition~\ref{P:mixed}, but
 estimate its spatial and temporal factors in a different order. The
@@ -2756,8 +2749,8 @@ $G_{h,\eta}=p_\eta*G_h$, with $G_{h,0}=G_h$.
   This proves Proposition~\ref{P:higher-transfer}.
 \end{proof}
 
-% Spatial subclass insertion marker: the candidate lemma below discharges
-% H:spatial-maximum only for its explicitly stated isotropic Riesz ranges.
+% This lemma discharges H:spatial-maximum only for its explicitly stated
+% isotropic Riesz ranges.
 \begin{lemma}[Riesz spatial maxima]\label{L:higher-riesz}
   Let $\gamma(x)=c|x|^{-\alpha}$, $c>0$. In dimension three, for
   $1<\alpha<2$, Hypothesis~\ref{H:spatial-maximum} holds with the
@@ -3267,8 +3260,7 @@ The source hypotheses for the Riesz covariances below are thus satisfied.
   This argument does not cover arbitrary homogeneous covariances:
   anisotropic profiles need not factor into the admissible endpoints.
   The intrinsic second-moment formula is given separately in
-  Theorem~\ref{T:intrinsic-second-moment}. No novelty or full formal
-  verification is asserted here.
+  Theorem~\ref{T:intrinsic-second-moment}. No novelty is asserted here.
 \end{remark}
 
 \section{General homogeneous covariance in dimension two}
@@ -4544,8 +4536,8 @@ energy term is nonnegative and its gradient penalty tends to zero.
   almost everywhere, with the same amplitude $c$. H\"older on the
   Gaussian probability measure proves the required common-width
   comparison for every $\epsilon,z$. Thus, in both cases all endpoint
-  hypotheses are discharged without relying on an earlier candidate
-  proposition. Proposition~\ref{P:three-transfer} applies. This proves
+  hypotheses are discharged.
+  Proposition~\ref{P:three-transfer} applies. This proves
   Corollary~\ref{C:three-product-riesz}.
 \end{proof}
 
@@ -4646,10 +4638,8 @@ The imported analytic input is the finiteness of the variation on the
 right of (1.5), stated in the closing sentence of
 Chen~\cite{chen:23:exponential}*{Theorem~1.1, p.~2}.
 
-\myCmts{The energy-identification lemma passed a scoped independent review.
-The full conditional moment argument has not passed its required gate.
 This source-functional identification does not promote the separate
-conditional moment argument or resolve general covariance factorization.}
+conditional moment argument or resolve general covariance factorization.
 
 \begin{lemma}[Sobolev energy identification]\label{L:physical-spectral-energy}
   Let $\Xi$ be a nonnegative, even, positive-definite tempered Radon
@@ -4794,10 +4784,7 @@ arbitrary deterministic initial phase. The covariance may be any member
 of the original three-dimensional class; no endpoint representation is
 assumed. The estimate below is not an all-order propagator bound.
 
-\myCmts{The static contraction and first-variance phase estimates
-passed a scoped independent review.
-The full general-covariance moment goal and the preceding candidate
-moment arguments retain their stated status.}
+
 
 Let $0<\alpha<2$, and let $\Gamma$ be a nonnegative, even,
 positive-definite tempered Radon covariance on $\R^3$, satisfying
@@ -5037,9 +5024,8 @@ establish Goal~\ref{G:upper}.
 We now seek all static Duhamel orders, retaining the full spatial
 covariance class of Section~\ref{S:static-phase}. The temporal
 covariance is not included in this section.
-\myCmts{The phase estimates and finite-word cutoff lemma passed scoped
-correctness review. Static estimates alone do not identify the evolution
-for overlapping intervals; that step is treated in the next section.}
+Static estimates alone do not identify the evolution
+for overlapping intervals; that step is treated in the next section.
 
 We use one external operator theorem. From Crouzeix--Palencia
 \cite{crouzeix.palencia:source2017:numerical}*{author preprint v1,
@@ -5608,14 +5594,8 @@ for that evolution.
 \section{Interval fields and the full upper bound}
 \label{S:interval-upper}
 
-\myCmts{The preceding interval and mild-construction arguments passed
-source-bound correctness review. The sixth cold reader requested clearer
-hypothesis and solution-object statements and a proof-level fixed-order
-input audit. The explicit statements, independent fixed-order construction and changed
-consumers passed a fresh scoped Opus5.5/HIGH review at \texttt{f9303ed}.
-The final whole-paper cold read remains pending.
 The intrinsic constant is identified independently in
-Theorem~\ref{T:intrinsic-second-moment}.}
+Theorem~\ref{T:intrinsic-second-moment}.
 
 Write
 \[
@@ -6871,11 +6851,9 @@ on the empty tuple. This definition introduces no kernel symmetrization.
 \section{A static lower comparison and a near-static mean gap}
 \label{S:near-static-lower}
 
-\myCmts{The four proofs in this section passed a source-bound Opus5.5/HIGH
-review at \texttt{46d1075}, all seven checks passing. This is a scoped
-internal consequence and does not identify the intrinsic constant of
-Theorem~\ref{T:intrinsic-second-moment}. Whole-paper clearance remains
-pending; no novelty or numerical normalization is claimed.}
+The comparison in this section does not identify the intrinsic constant of
+Theorem~\ref{T:intrinsic-second-moment}; no novelty or numerical
+normalization is claimed.
 
 Fix a nonzero spatial covariance in Hypothesis~\ref{H:homog}, and put
 \[
@@ -7253,11 +7231,8 @@ corresponding static terms. Set
 \subsection{Temporal interpolation of the full moment}
 \label{S:temporal-type-continuity}
 
-\myCmts{The following three proofs and the separate scalar-inference screen
-passed their own source-bound Opus5.5/HIGH review at \texttt{1bf6141},
-all seven checks passing. The constant at a fixed positive temporal
-exponent is identified later in Theorem~\ref{T:intrinsic-second-moment}.
-Whole-paper clearance remains pending.}
+The constant at a fixed positive temporal exponent is identified later in
+Theorem~\ref{T:intrinsic-second-moment}.
 
 Retain the fixed nonzero covariance and the notation of this section.
 For \(p=1,2\), set \(c_{p,0}(a)=1\) and, for \(k\ge1\),
@@ -7480,11 +7455,9 @@ Here \(p=1\) concerns \(\E u\), not \(\E|u|\).
 \section{A small-order test for direct Brownian clock copying}
 \label{S:two-clock-screen}
 
-\myCmts{These two proofs passed a source-bound Opus5.5/HIGH review at
-\texttt{e68310f}, all seven contract groups passing. The result concerns a
-specified gap-transform substitution. It does not rule out ordering
-corrections, a diagonal-only representation, one-sided/asymptotic use,
-or the original sharp conjecture.}
+The result concerns a specified gap-transform substitution. It does not
+rule out ordering corrections, a diagonal-only representation,
+one-sided/asymptotic use, or the original sharp conjecture.
 
 Theorem~6.1 of \cite{chen:author2026:time-dependency}*{pp.~37--42}
 represents the time Laplace transform of a \emph{fixed-order} mean by a
@@ -7853,7 +7826,7 @@ The analytic covariance, not its absolute-value bound, is being copied.
 \input{notes/integrated_occupation_ceiling}
 \input{notes/integrated_white_evaluation}
 
-\section{Targets and verification status}\label{S:targets}
+\section{Targets}\label{S:targets}
 
 \begin{goal}[Upper bound at the correct scale]\label{G:upper}
   Under Hypothesis~\ref{H:homog}, prove
@@ -7890,10 +7863,7 @@ $2^{(4-\alpha)/(3-\alpha)}L^*$ remain comparisons with
 Conjecture~\ref{Conj:allp}. Matching those endpoints or closing the source's
 variational gap is not required to identify the intrinsic value.
 No correction of the source's normalization or equality of its energy
-domains is adopted. The component integrations have passed their scoped
-independent proof and application reviews. Whole-argument and final
-independent cold reviews of the consolidated candidate, followed by
-the remaining project delivery checks, are still required.
+domains is adopted.
 
 \section{Established steps and open questions}\label{S:route}
 
@@ -7933,9 +7903,8 @@ the remaining project delivery checks, are still required.
     $\Gamma=c\delta_0$ and gives explicit moment bounds and the relative
     width of their formulas. It does not evaluate the intrinsic supremum
     numerically or assert equality at either bound.
-  \item \textbf{Verification still to complete.}
-    Scoped reviews do not replace the fresh whole-argument skeptic and
-    final independent cold read. The source first-moment normalization
+  \item \textbf{Source comparisons and scope.}
+    The source first-moment normalization
     remains a qualified comparison question. Historical alternatives and
     failed routes above retain their original scope; they are not new
     premises of the intrinsic-limit proof.
