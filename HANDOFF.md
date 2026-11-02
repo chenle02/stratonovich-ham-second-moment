@@ -1,190 +1,90 @@
-Last updated: 2026-11-02 00:53 UTC (Codex)
+Last updated: 2026-11-02 02:07 UTC (Codex)
 
 LATEST USER DIRECTION: derive the actual constants, whatever computation yields.
 Chen matching is not a completion requirement.
 
 ## ⏭ Next session: where to stand and what to do
 
-Freeze the bounded same-W cutoff-overlap consistency statement from the
-existing fixed-mask physical flows and common ordinary-source family,
-before any local gluing. Use the exact construction interfaces, Lp uniform
-triangle convergence and finite propagation; do not assume the desired
-raw overlap identity as a premise. Keep point traces and arbitrary weak-
-solution uniqueness out of the statement.
+Inspect the existing cutoff-v2 DeepSeek review, then collect/adjudicate it
+at terminal state without restarting it. ACTIVE research is
+../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave,
+branch research/fixed-mask-young-20261031. Progress.md is the authority.
+Le explicitly resumed the FULL goal and authorized parallel subagents.
 
-Author selected-source comparison is now in
-research-program/local-phase-flow-source-comparison.md and
-reviews/2026-11-02-local-phase-source-crosswalk/. Published CDST inspected
-statements do not directly cover the d1white/alpha0half test. Chen already
-has canonical data(1,0) existence at the full original range. Candidate
-residual is a general local phase evolution/approximation correspondence,
-not a new existence-threshold or full-novelty claim. Full source gate OPEN.
-Literal CDST integrated covariance comparison has c_a=(1-a/2)(1-a), c_half=3/8;
-normalization/same-W approximation bridge still needs proof. Current math
-normalization is unchanged. No reviewer live, no new flow theorem proved.
+The review attempt is the sibling stratonovich-cutoff-overlap-proof-review-v2,
+native session ses_e66013385ffehNPjMsGGJhgfzX, PID2685802 under supervisor2685759.
+At capture it was LIVE with step_start and no exit.json. Revalidate via
+native/exit.json and the actual process. Scientific source dd27f38,
+carrier d9ee65027b50e5eda188a80a4cd4fb0b866b0dc4. This is a non-blind
+production followup, not a cold vote. All seven production corrections are
+written; successor remains unadopted pending that report.
 
-ACTIVE: ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave,
-branch research/fixed-mask-young-20261031, workflow598068387a92748e887da2acc92f7bde2ad836cc.
-Progress.md is workflow authority. Le revised reviewers on2026-11-01 to
-DeepSeek V4 Pro + Kimi-K3; ACTIVE AGENTS.md now records these routes.
-Do not restore the old exhausted Opus-only requirement. Original scope,
-HIGH minimum, source/application/visual coverage and fresh cold gate stay.
+Kimi source-image attempt is TERMINAL monthly429, zero report/read credit;
+reviews/2026-11-02-sf04-young-kimi/ preserves the complete evidence.
+No unchanged retry, purchase or model substitution. The native image tool
+was enabled in a task-local profile; old canonical composition remains
+Opus-specific and cannot be passed by relabelling DeepSeek/Kimi receipts.
 
-Actual bounded DeepSeek review of finite-ratio draft at scientific
-3c375e63d3253bd571a604dae7a82dfa9c49ef42: PASS_WITH_NOTES/MEDIUM,
-FIN01-FIN08, no reported critical defect in supplied deduction. NOT ACCEPTED
-under HIGH gate. Source extraction/images, Fourier/white calibration and
-unprovided main-consumer claims remain qualified. Report/adjudication and
-full28-file native archive retained/read back. Actual route confirmed
-DeepSeek V4 Pro; first response length-limited with no visible report,
-same-session continuation completed. One review, not two/cold votes.
-Strict clean-carrier collection refused task-local config receiving only
-an inserted schema annotation; original/current configurations retained,
-scientific texts exact, refusal not relabelled passing. No model rerun
-just to remove this metadata annotation.
-
-Kimi native2.3.3/kimi-code/k3/max/OAuth attempted the same frozen8-file
-draft packet and primary3PNGs, but stopped at monthly429 with no report
-or reading credit. Complete17-file native refusal archived/read back.
-No purchase/upgrade, retired metered route or silent substitution. Its
-assigned image check remains OPEN. Old handles55020,29446,45697 and their export handles are TERMINAL.
-The new growth-statement handle76401 is also terminal; no reviewer is live.
-Old Opus attempts and carrier calibration remain preserved unchanged.
-
-Main scientific composition candidate887fbfbe0fa4368d6b32a436615d73349b2445d8,
-tree6a48b34d7ec9bc686453ee5c656938475ea48774, remains separate from this
-new auxiliary draft review. All15components/synthesisv2 were frozen for
-old native contracts; no reviewer-switch vote is an old composition pass.
-A new route must bind its actual source/coverage contract without dropping
-any86primary-frame/257page/28TeX/44section/213proof obligation.
-Main TeX/PDF/math unchanged; PDF257pages SHA256
-10bfeae6eb576e23ba928b8ef9eca968d87f23ac7eff884c632bf50acb3294c9.
-Old independent full upper remains retained/required. Existing signed point
-upper is a candidate simpler score-finiteness input, not an adopted reorder.
-80finite Lean facts/22seams unchanged; no official companion/decision4,
-HPC, sibling edit, correspondence or public release. Goal ACTIVE and full
-verification incomplete. Derive actual constants, not forced Chen endpoints.
+After bounded cutoff disposition, prioritize the original full manuscript
+verification. General local-flow assembly is a separate program target,
+not a substitute for whole/source/visual/final-cold obligations. Derive
+actual constants; do not force Chen endpoints. Goal remains ACTIVE.
 
 ## Pre-flight checks
 
-The scoped lineage below is historical evidence, not a list of unfinished
-proof waves. Resolve current live/terminal status and next action from the
-current Next section and ACTIVE Progress.md before using any old todo.
-
-1. Preserve original models, dimensions, covariance/amplitude ranges and
-   exponent. Latest user revision supersedes stale goal-service wording.
-2. PB scientific40ec9a9: exact intrinsic original point limit, all models;
-   full Opus5.5/HIGH19checks. OC scientific25cc688: occupation ceiling and
-   common spatial-energy bracket; full HIGH18checks. Both accepted.
-3. WS scientific95d7515/adoption414758c: full HIGH25checks313.597seconds,
-   no required repairs;39five-way bindings and54raw archive members checked.
-   All8notes adjudicated. FIT HIGH26checks also passed. All jobs terminal.
-4. White example Gamma=c delta0: E_sp=c²/6; exact Gamma-function bounds
-   for C2. At c=1,a=1/2 endpoints approximately1.0795179077 and1.1211952203.
-   These are bounds, not an exact numerical C2 or certified decimal enclosure.
-5. Two conditional finite Lean facts accepted after full actual-application
-   review. Current80facts22seams; official L0PROPOSED/decision4 unchanged.
-   H1/CDF/Gamma/spectral/PDE arguments remain analytic, not Lean-formalized.
-6. Active target follows Le's actual-constant revision. SF/TP8proofs,
-   FR/AV6proofs,FG/CC10proofs and now AD9proofs are scoped accepted.
-   Latest AD scientific9dad256:25PASS/HIGH396.861seconds,no repairs,
-   accepted/coverage true;31five-waybindings,21fulltexts,9exactimages,
-   46rawmembers SHA256read-back verified. Six optional notes adjudicated
-   with no final source/PDF edit.143pages clean;84prior bodies unchanged.
-   Actual original-W compact Gaussian operator and Lp-Ctheta path proved,
-   both variances/tails, raw row, basis identity and Gaussian norm bounds.
-   Fixed-I even admissible Schatten only; no CthetaSp or uniformR claim.
-   V1 canonicalFAIL/HIGH preserved: norm should have been squared norm,
-   and unsafe JS backslash-r-m corrupted a grid display. Both restored;
-   v2 max_k and squared H_W tensor norm inspected. Four blocks repaired/
-   clarified,5unchanged. Literal-safe String.raw and pre-format C0 scan,
-   plus homogeneity under scaling by2 (norm2 vs quadratic4), now documented.
-   Keep all earlier failures rejected, including FG/CC lattice-spacing
-   loss; preserve parameter-dependent comparison constants and shell variable.
-   Author machine/build checks are outside LLM execution scope. Media and
-   native dry-run preflights pass; PNG kind/image/SHA/type required.
-   No new Lean fact. SC is now accepted as recorded above; Young/canonical data/moments and
-   full PB/OC/WS integration still open. Keep independent old upper finiteness and SA.
-7. <HUB> recovered on November1. Current master/research parity was
-   verified clean; see the current Next and Git state below. Serialize all
-   ref updates and preserve foreign work. Earlier NoRoute notes are history.
-8. Novelty/full-literature/index/citation status remains incomplete. Use
-   canonical repo-queue for wiki updates; no correspondence authorized.
-
-9. Latest FM/FY scientific5caa2e8/adoption0a6b71f:23passing checks/HIGH,
-   479.376seconds,no required repairs.48five-way bindings,30full texts,
-   17exact images and63raw archive files verified.160-page clean PDF,
-   11new proofs,100old bodies unchanged. No final source/PDF edits on
-   adoption. Actual W-measurable source-L2 average closes conditional
-   transfer.80Lean facts22seams unchanged. CG plan/source preflight only;
-   selected Teschl140/141/258/273 checked, not a whole-book review.
-
-10. CG scientific6c52b5f/adoptionbb0515c:22passing checks/HIGH,
-   499.075seconds,no repairs.37five-way inputs,20full texts/16exact images,
-   52raw archive files verified.168-page clean PDF;7new proofs,111prior
-   bodies unchanged. No final source/PDF edits. Before whole-paper review,
-   explicitly say origin-centered balls in the raw-profile mass sentence
-   and repeat existing mask properties locally. No translated-ball positivity
-   is adopted. All trial uses are origin-centered.80facts22seams unchanged.
-
-11. DS/RB scientific65d514b/adoptionf742ce3:23passing checks/HIGH,
-    637.258seconds,no repairs.61five-way bindings,46full texts/14exact
-    PNGs,76raw archive files verified.176-page clean PDF;8new proofs,
-    118prior unchanged. No source/PDF edit on adoption. Per-test ORIGINAL
-    point lower now integrated. Four old scaling and nine old RB facts
-    reused at actual guards without compile;80facts22seams unchanged.
-    Final presentation: correct CG section pointer, law wording, explicitly
-    m_R=zeta_R/semiscaled scope, update abstract/roadmap; earlier CG wording
-    debt remains. Visual pass fixed probability paragraph-mark defect
-    BEFORE freeze by mathbb P; p174 reinspected, other10PNGs unchanged.
-
-12. UL scientificf4311eb/adoption698846b:22passing checks/HIGH,
-    429.462seconds,no repairs.35five-way inputs,27full texts/7exact PNGs,
-    50raw archive files verified.181-page clean PDF;6new proofs,126prior
-    unchanged. No source/PDF edits on adoption. Unmasked bottom need not
-    be eigenvalue; original point lower and positive finite scores now
-    integrated. Independent OLD full upper proves finiteness, not PB.
-    Three old scalar facts reused without compile;80facts22seams unchanged.
-    Final presentation: closed-ball support convention (also Green sphere),
-    R>=R0 eligibility and negative floor before squared-rate wording.
-
-13. TE/GI/B1-B4 scientificbda7990/adoption110de6f:21passing checks/HIGH,
-    367.179seconds,no repairs.30five-way inputs,20full texts/9exact PNGs,
-    45raw archive files verified.189-page clean PDF;9new proofs,132prior
-    unchanged. No source/PDF edits on adoption. Eight optional notes
-    adjudicated; no approximate numerical values adopted. No finite
-    application/compiler/fact;80facts22seams unchanged. Capture audit fixed
-    next-target running label to COMPLETED_AT_CAPTURE with superseded
-    text/timestamps/reason retained; no review/source restart.
-
-14. C1-C3/E1 scientific5e36bcb/adoption488d089:18passing checks/HIGH,
-    512.225seconds,no repairs.50five-way inputs,36full texts/13exact PNGs,
-    65raw archive members verified.197-page clean PDF;9new proofs,141prior
-    unchanged. No source/PDF edits on adoption. FixedR actual mean/Cameron
-    covariance and CM quotient, non-trace guard and generic LEFT Young
-    endpoint bound, no concentration/moment upper. Nine optional notes
-    adjudicated;80facts22seams unchanged, no compiler/new fact.
+1. Confirm this literal root and clean master. The pre-handoff root baseline
+   is 1d02a1ec4861594344bb3c29228f8bb21ed9f2c4; verify ancestry, not equality
+   to the later handoff commit. Preserve any foreign work.
+2. In ACTIVE, check git status, branch, latest Progress.md and ancestry of
+   ee44505d354ef85ce47dc5d49ebddf4e16af1080. Fetch serially and compare
+   local/origin/<HUB> before edits. Recorded baseline was clean/equal.
+3. Inspect the exact reviewer attempt above: exit.json is authoritative
+   terminal evidence; otherwise check PID and session. Never infer terminal
+   state from an observation timeout or restart an existing live attempt.
+4. Verify proof-v2 and its three imported construction modules against the
+   frozen source-bindings in reviews/2026-11-02-cutoff-overlap-proof-v2/.
+   Main scientific887 inventory has448files and was rehashed with zero
+   mismatches; main257-page PDF SHA256 is
+   10bfeae6eb576e23ba928b8ef9eca968d87f23ac7eff884c632bf50acb3294c9.
+5. Read current PROJECT-GOAL.md and completion-obligations.md under
+   reviews/2026-11-02-resumption/. Preserve all original models and all
+   86primary frames/257pages/28TeX/44sections/213proof obligations.
+6. Kimi session76482/PID2686747 and all older named reviewer handles are
+   TERMINAL. The latest actual Kimi attempt has monthly429 and no vote.
+   DeepSeek native session named above is the only reviewer live at capture.
+7. The wiki page is read-only here; maintenance goes through the canonical
+   queue. Local wiki snapshots may lag <HUB>. No correspondence,
+   sibling edits, new companion, HPC or public release is authorized.
 
 ## Concrete deliverables for the next session
 
-A precise cutoff-overlap interface and a hypothesis-to-conclusion/source-
-fidelity review before claiming a canonical local evolution. Same retaining
-source on both masks, correct weak phase/data cutoffs, actual Lp operator
-limits and countable event choices must be explicit. No new main Tex/PDF.
+Collect the existing cutoff production followup with actual route, exact
+prompt/source bindings, complete native archive/readback and every finding
+adjudicated. Then continue full source/visual/whole/fresh-cold verification
+under authorized DeepSeek V4 Pro + Kimi-K3, retaining every unmet gate.
+Do not expand into a new local-flow theorem merely to avoid final review.
 
 ## Success criteria for the immediate next step
 
-Neither scalar displacement nor an unmasked global bounded operator is
-substituted for the two-component local phase. No final C2 assumption
-enters the construction. Original all-model p2 goal and all verification
-requirements remain mandatory. Published source/approximation comparison
-and paper novelty remain qualified, not upgraded from a parameter test.
+Actual terminal report and HIGH threshold verified; all seven production
+requests and O1-O3 regressions explicitly adjudicated. No C-Holder premise
+is inserted: Young regularity belongs to M,V and the ordinary integrand C
+is bounded/strongly continuous. Preserve both phase components, same source,
+original W-measurable countable events and source-limit quantifiers.
+A scoped pass is not whole-project or source-image completion.
 
 ## Anti-success criteria
 
 [held back: collaborators' unpublished work]
 
 ## What the previous sessions produced
+
+2026-11-02 resumed checkpoint: d7762c3 reconciles ACTIVE/current frontier;
+dd27f38 completes seven production corrections in proof-v2;9e1bef3 records
+full completion inventory;93ef28f aligns contract with Le's reviewer switch;
+d029e1b binds one actual DeepSeek production followup;ee44505 preserves
+actual Kimi monthly429/no reading credit. All448 original coverage inputs
+unchanged. No main TeX/PDF/Lean changes or whole-goal completion.
 
 2026-10-30 actual nonseparable family close: sourcec0a0093/adoption4a6d672,
 27PASS/HIGH,379.661seconds,22texts+8Teschl2ndedimages,no required repairs.
@@ -2212,16 +2112,15 @@ held. Main p2source/PDF/Lean facts unchanged; no reviewer live.
 ## Repo & git state at handoff
 
 ROOT master before this HANDOFF-only commit:
-31e8386d4c161425b8e6403004ad26ecc55d1591, clean and origin/<HUB> equal.
-ACTIVE research workflow598068387a92748e887da2acc92f7bde2ad836cc,
-clean and origin/<HUB> equal after its actual serial sync.
-Main scientific composition epoch887fbfbe0fa4368d6b32a436615d73349b2445d8.
-Separate finiteness draft epoch3c375e63d3253bd571a604dae7a82dfa9c49ef42.
-Editorial source/PDFb2fda020b848369cf8f7b38c5eb0b9db09c650ce.
-Carrier calibrationf875d3edab938c48403410950105fe344f5bcbab is not science.
-All prior rejected/inconclusive reports and4a65c79candidate preserved.
-This HANDOFF-only commit is pushed and canonical <HUB> synced next;
-verify terminal parity rather than infer it from this text.
+1d02a1ec4861594344bb3c29228f8bb21ed9f2c4, clean and origin/<HUB> equal.
+ACTIVE research baseline ee44505d354ef85ce47dc5d49ebddf4e16af1080,
+clean and synchronized. Newer workflow commits must be inspected normally.
+Cutoff scientific successor dd27f38e55506930352725bdb4ce6162283c2c3d.
+Main scientific epoch887fbfbe0fa4368d6b32a436615d73349b2445d8 unchanged;
+editorial source/PDFb2fda02. Existing 80finite facts/22seams unchanged.
+External live review and terminal Kimi evidence are named above; do not
+remove their directories. This handoff commit is pushed and <HUB>
+master synchronized immediately afterward, with parity checked.
 
 ## Operating notes
 
