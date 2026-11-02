@@ -7,11 +7,11 @@
 ## Current state
 
 - **Main depth recovery (2026-11-02):** full-main DeepSeek review returned
-  MEDIUM; targeted deep audits have now accepted 96 named proof bodies at
+  MEDIUM; targeted deep audits have now accepted 98 named proof bodies at
   scoped HIGH, including terminal Wick/tails and full-upper assembly.
   The initial constructor001–009, calibration010–019 and driver085–093
   reports remain MEDIUM; focused004–006 is now separately accepted HIGH. The append-only ledger is
-  `reviews/2026-11-02-main-deepseek/depth-ledger-v21.json`.
+  `reviews/2026-11-02-main-deepseek/depth-ledger-v22.json`.
   Full213-proof, source-image/render and independent cold obligations remain.
   Further constructor004–006, source094–100 and masked101–103 packets are
   being prepared; preparation is not an actual reviewer launch.
@@ -12103,3 +12103,19 @@ same-session correction/input-use auditPID3770108/handle52760; original
 source/carrier/capsule unchanged. No confidence-only vote or newmath edit.
 v21has96scopedHIGH/all213identities; explicitreading/regularityerror statuses
 retain actualheader withoutacceptance. Otherunfinished gates remain open.
+
+
+### Focused foundations: null-transfer cleared, production bridge retained
+
+001–003/135 actualPASS_WITH_NOTES/HIGH,431.039s, fourFULLY_CHECKED and
+12FND PASS withexplicitproductioncondition. Rootreadall/rehashed67members/
+sourcebindings. Adopt003whitecoefficient and135x-FIRSTTonelli/completion;
+the delta0counterexample rejects only earlierreview's reversed inference.
+Second-chain global m index typo in report corrected against actualsource.
+001–002 internallyHIGH but productionpremisecondition remains: sourceCase2
+bridge must be internalized/certified. Existing independentlyreviewed
+translated-TEST argument is retained; a new self-contained productionbridge
+is being drafted/reviewed EXTERNALLY before anysourceintegration. No silence
+or automaticpromotion ofcondition. CurrentTeX/PDF/Lean unchanged. v22has
+98scopedHIGH and marks001/002 HIGH_INTERNAL_ONLY_PRODUCTION_PREMISE_PENDING.
+Originalall213/image/cold/wholegoal obligations remain open.
