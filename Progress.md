@@ -12207,3 +12207,16 @@ scopedHIGH. v25has111accepted of214identities; rawmainMEDIUM unchanged.
 Proofindexv3 preserves all213oldIDs and deferred093, adds214without renumber.
 182delta passes butbroaderunitadjudication pending. No whole/sourceimage/
 full260render/Kimi/cold/goalclosure. Remainingchecks and originalmodels stay.
+
+
+### Next-wave terminal evidence preserved without adoption
+
+Source53bf readonlyaudits020–023/HIGH,024–029/MEDIUM,030–036/HIGH,
+052–058/HIGH and205–209/HIGH are terminal. Root rehashed their final90/59/
+49/101/74member capsules into pending-main-depth-intake/next-wave. Intake
+is notadoption; v25accepted111 unchanged. Planar027partial/normalization
+unverified inrawreview remains; author-onlysource reconciliation doesnot
+upgradeit. Higher witness a7/12not5/8/Gammainequalitynot equality; temporal
+ratio/controldepth qualifiers; ceilingcomputed-boundcomparison doesnot
+refute anactualmomentbound. All rawerrors/grades preserved for rootread.
+No model retries or sourceedits. Production53bf remains clean260pages.

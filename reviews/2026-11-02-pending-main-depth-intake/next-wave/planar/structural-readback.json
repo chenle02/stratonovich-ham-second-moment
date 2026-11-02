@@ -1,0 +1,81 @@
+{
+  "kind": "worker terminal structural readback, not a replacement scientific verdict",
+  "source_revision": "53bf01b7585b8815ec92b56b5ba1590550c3e93f",
+  "index": "reviews/2026-11-02-main-deepseek/proof-index-v3.json",
+  "report_sha256": "c2a12ea5ccfd27c45cd7c28234681e926aa328d72c0e21913e3475a98d449f35",
+  "report_bytes": 8972,
+  "raw_contract": {
+    "contract_ok": "true",
+    "contract_error": "",
+    "verdict": "PASS_WITH_NOTES",
+    "confidence": "MEDIUM",
+    "category": "paper-review-deepseek",
+    "model": "deepseek/deepseek-v4-pro"
+  },
+  "all_six_proof_statuses_present": true,
+  "all_ten_check_statuses_present": true,
+  "per_proof_raw_statuses": {
+    "PROOF024": {
+      "label": "L:static-holder-input",
+      "raw_status": "fully reconstructed; imports (5.1)/(5.15)/(3.8) matched, source-internal proofs unread"
+    },
+    "PROOF025": {
+      "label": "P:static-holder-upper",
+      "raw_status": "fully reconstructed"
+    },
+    "PROOF026": {
+      "label": "L:planar-endpoints",
+      "raw_status": "fully reconstructed"
+    },
+    "PROOF027": {
+      "label": "L:planar-static-input",
+      "raw_status": "partially checked; spectral/Dalang part full, imported finiteness chain statement-matched only"
+    },
+    "PROOF028": {
+      "label": "P:planar-upper",
+      "raw_status": "fully reconstructed"
+    },
+    "PROOF029": {
+      "label": "C:planar-range",
+      "raw_status": "fully reconstructed"
+    }
+  },
+  "check_raw_statuses": {
+    "PLN01": "checked (import caveat)",
+    "PLN02": "checked",
+    "PLN03": "checked",
+    "PLN04": "checked",
+    "PLN05": "checked",
+    "PLN06": "checked",
+    "PLN07": "checked (import caveat)",
+    "PLN08": "checked",
+    "PLN09": "checked",
+    "PLN10": "checked with unread/unperformed items: rendered-source proof bodies for imported theorems, exact coefficient normalization"
+  },
+  "native_transport_complete": true,
+  "structural_depth_complete": false,
+  "HIGH_acceptance": false,
+  "root_adjudication": "PENDING",
+  "raw_required_fixes": [
+    "Rendered Chen--Hu2173(5.1),2180(5.15) p2/finite upperrate;2165Thm3.8(i);2175variational scaling",
+    "Rendered Chen2023Thm1.1 finiteness/generalized covariance",
+    "Retain generalized-covariance application via heatregularized(2.18)/(2.22)",
+    "Sourceproof bodies unread; supply or explicitly accept premises if production gate requires end-to-end independence",
+    "Keep nonsharp/dimension-specific scope"
+  ],
+  "independent_structural_limits": [
+    "Reviewer explicitly marks PROOF027 partially checked and confidence MEDIUM; clean exit/stop does not remove this debt.",
+    "Per-check ledger labels all PLN items checked with import caveats, but exact static coefficient normalization is explicitly unverified.",
+    "k1/k2 pairing and split counts and an admissible parameter tuple are worked; separate concrete line/Riesz endpoint numerical falsification examples were not displayed.",
+    "No image was delivered or inspected by reviewer. Held selected-page text only is not full-primary/source-render coverage.",
+    "No whole214-proof/global/fresh cold/allmodel-goal acceptance or any other-proof promotion follows."
+  ],
+  "reviewer_text_error": {
+    "exact": "Degree `1<χ<2<d` satisfies Dalang",
+    "location": "Checked derivations / PROOF024",
+    "assessment": "The chained inequality2<d is false for d=2. Actual manuscript states chi<min{2,d}; this is a reviewer transcription error, not evidence of an error in the supplied theorem. Do not silently correct raw report."
+  },
+  "noncritical_citation_note": "Report says source(2.17)is Wick expectation and(2.19)is product rule, while target prose names product then Wick; both source pinpoints are present. Root adjudication remains pending.",
+  "no_retry": true,
+  "no_Article_or_ACTIVE_mutation": true
+}
