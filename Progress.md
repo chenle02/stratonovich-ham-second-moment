@@ -7,11 +7,11 @@
 ## Current state
 
 - **Main depth recovery (2026-11-02):** full-main DeepSeek review returned
-  MEDIUM; targeted deep audits have now accepted 46 named proof bodies at
+  MEDIUM; targeted deep audits have now accepted 51 named proof bodies at
   scoped HIGH, including terminal Wick/tails and full-upper assembly.
   Constructor001–009, calibration010–019 and driver085–093 reports remain
   MEDIUM. The append-only ledger is
-  `reviews/2026-11-02-main-deepseek/depth-ledger-v5.json`.
+  `reviews/2026-11-02-main-deepseek/depth-ledger-v6.json`.
   Full213-proof, source-image/render and independent cold obligations remain.
   Further constructor004–006, source094–100 and masked101–103 packets are
   being prepared; preparation is not an actual reviewer launch.
@@ -11747,3 +11747,16 @@ scope preserved. Text-only source matching supplies zero image credit.
 Append-only depth-ledger-v5 has46named scopedHIGH proofs, all213rows/raw
 mainstatuses retained. Source providerTERMINAL; newYoung104–111 packet
 preparing. Manuscript/PDF/finiteLean unchanged and full goal ACTIVE.
+
+
+### Finite Gram scoped HIGH adoption
+
+FiniteGram194–198 actualPASS/HIGH,366.653s; fiveCHECKED/GRAM01–10PASS,
+with intrinsic consumer upstream obligations expressly unclosed. Root read
+all findings and rehashed37members/sixbindings. Report-only zero-label dual
+claim corrected: b=0 has infimum0, b>0 gives minusinfinity; source correctly
+excludes zero labels. Additional singular worked example was not displayed
+by reviewer; root exact check remains author-only. FiniteLean boundaries,
+pre-provider refusal and raw scope-metadata suffix are preserved/adjudicated.
+No source changes. Append-only depth-ledger-v6 records51scopedHIGH targets,
+all213identities/rawmainstatuses retained. This native processTERMINAL.
