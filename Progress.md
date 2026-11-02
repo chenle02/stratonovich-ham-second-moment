@@ -11031,3 +11031,48 @@ solution topologies, approximation classes and thresholds still require
 exact comparison. It must be independent of final C2 and useful beyond a
 standard patching corollary before becoming a separate paper. Original
 all-model p2 goal is preserved rather than replaced by this optional target.
+
+
+## 2026-11-02 — source comparison identifies a concrete construction residual
+
+Read selected actual published CDST statements/definitions and current
+Chen author statements; displayed7primary source frames. Kept all PDF
+hashes/pinpoints, selected text and full published CDST source in a
+readback-verified10-member archive. No preprint/publication parity assumed.
+CDST Theorem4.8 uses H^(1+kappa_s)xH^kappa_s and weighted-Besov displacement
+paths; Corollary5.7 requires alpha0+alpha_cov<rho_d, rho1=1/rho2=1/2.
+The original d1white alpha_cov1,alpha0half case is outside those displayed
+noise hypotheses but inside our original range. This is non-implication
+by those statements, not complete novelty clearance. Localizing data does
+not improve its Sobolev order, yet proof refinements may extend the overlap
+regime. Chen already has canonical existence at full original threshold
+for data(1,0); no new existence-threshold claim is credited to us.
+
+Concrete potential contribution: actual same-W local phase evolution for
+all local phase data, with precise approximation class, cutoff consistency,
+composition and local random bounds. Generic Young/local gluing alone is
+standard. No bounded unmasked global phase operator, point trace, arbitrary
+weak-solution uniqueness or optimality/necessity for this weak class claimed.
+Existing three construction roots have no explicit references to final C2/
+positive scores/full upper, source-byte checked; implicit setup not certified.
+
+Normalization check: CDST displayed integrated R_a has physical mixed
+derivative coefficient c_a=(1-a/2)(1-a), positive for0<a<1, equal3/8 at a1/2.
+Literal matching to our |t-s|^-aGamma therefore requires gamma_CDST=Gamma/c_a
+(or scaling integrated input by c_a^-half). Local Sympy verifies only the
+off-diagonal coefficient; same-W/distributional/approximation bridge remains
+open. No source correction or current manuscript/raw-cost change made.
+
+Actual CDST identity repair receipt is PARTIAL, digestMAJOR/lintclean.
+Confirmed corrected canonical <HUB> PDF and Papis hashes both13be3be8...
+ea5bf0; old bytes rescued. Partial due inherited wiki digest structure, not
+failed source repair. Local canonical stores still old at observation;
+correct external source used and no direct six-repo overwrite. Full receipt
+retained by exactidentity; no gold digest or local parity asserted.
+
+Readable reasoning in research-program/local-phase-flow-source-comparison.md,
+exact map/evidence in reviews/2026-11-02-local-phase-source-crosswalk/.
+Decision REFRAME for bounded interface/statement audit only; full novelty
+and independent source gate remain open. Next natural target is exact
+same-source cutoff-overlap consistency before local gluing. No new lemma,
+flow theorem, Lean fact/package/HPC, main Tex/PDF change or release.

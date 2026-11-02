@@ -261,3 +261,13 @@ its regularization correspondence. See the
 - [Current v3 statement with production documentation](uniform-gaussian-growth-statement-v3.json)
 - [Local phase evolution reconnaissance](local-phase-flow-recon-v1.json)
 - [Executed local symbolic falsification checks](2026-11-01-theory-statement-falsification-v1.json)
+
+
+## Selected construction-source comparison update
+
+The [selected source comparison](local-phase-flow-source-comparison.md) now
+pins the published CDST theorem/data/noise conditions against the proposed
+local phase target and Chen's known canonical existence. It records the
+white-noise parameter test, the literal integrated-noise factor c_a=3/8
+at a=1/2, the still-open approximation bridge and the exact PDF-repair status.
+This is author reconnaissance, not a new theorem or novelty clearance.

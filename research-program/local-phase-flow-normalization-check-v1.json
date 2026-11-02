@@ -1,0 +1,11 @@
+{
+  "scope": "Off-diagonal covariance differentiation on t>r>0; does not certify a distributional identification or source proof",
+  "symbolic_tool": "Sympy 1.14.0",
+  "R_a": "(t^(2-a)+r^(2-a)-|t-r|^(2-a))/2",
+  "mixed_derivative_coefficient": "(a - 2)*(a - 1)*(-r + t)**2/(2*(r - t)**2)",
+  "equivalent_coefficient": "(1-a/2)*(1-a)",
+  "at_a_half": "3/8",
+  "coefficient_positive_assumptions": "0<a<1",
+  "literal_covariance_matching": "If CDST integrated input has covariance R_a(t,r)*gamma_CDST and the physical derivative target has |t-r|^(-a)*Gamma, use gamma_CDST=Gamma/[(1-a/2)(1-a)], or multiply the integrated input with gamma_CDST=Gamma by that coefficient^(-1/2).",
+  "normalization_boundary": "This is a comparison of the displayed conventions, not a proposed correction to a source theorem. Matching only a Hurst parameter does not identify amplitudes or same-W regularizations."
+}

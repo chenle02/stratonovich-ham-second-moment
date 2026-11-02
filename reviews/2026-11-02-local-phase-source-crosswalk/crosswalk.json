@@ -1,0 +1,104 @@
+{
+  "status": "AUTHOR SELECTED-STATEMENT IMPLICATION CROSSWALK; no novelty/publishability/proof acceptance",
+  "proposed_target": "research-program/local-phase-flow-recon-v1.json",
+  "scope": "Original H:homog d1/2/3, alpha+alpha0<2; local phase Hhalf_loc x HminusHalf_loc. No optimality/necessity claim for this weak phase class.",
+  "sources": {
+    "CDST": {
+      "doi": "10.1093/imrn/rnad039",
+      "edition": "Published typeset advance-access PDF, printed1-54; final issue pagination differs",
+      "sha256": "13be3be86d54b30f1988b251d9ad2867ffbde74eed52aac10aafe8d778ea5bf0",
+      "actual_selected_text_read": "Theorem1.1/p2-3; Definition4.2/p27; Proposition4.4/(4.4)/p28; Notation4.7/Theorem4.8/p36; harmonizable input/approximants(5.3)-(5.7)/p42; Proposition5.6/p45-46; Corollary5.7/p47. No full-paper/proof reading claimed."
+    },
+    "Chen_author": {
+      "path": "sources/chen-2026-author/aap-chen-2025.pdf",
+      "sha256": "5f7385ca451e643a1f3ff31835e4ee52b2708b5d2e3652eec3fb5d3958b97b6c",
+      "selected_pages": [
+        2,
+        3,
+        10
+      ],
+      "scope": "Initial data(1,0), literal covariance, Theorem1.1/(1.5), Definition2.1 and beginning of expansion. No v1 exact-first-moment attribution."
+    }
+  },
+  "crosswalk": [
+    {
+      "target": "Full original noise range/dimensions",
+      "CDST_source": "Theorem1.1/(1.7)-(1.8); Corollary5.7/(5.21)",
+      "source_statement": "d1/2 only, alpha0+alpha_cov<rho_d with rho1=1,rho2=1/2 in the homogeneous Gaussian corollary.",
+      "test": "d1,Gamma=c delta0,alpha_cov=1,alpha0=1/2: original condition1+1/2<2 holds; source corollary1+1/2<1 fails. In Theorem1.1 the spectral integral has Lebesgue spectral measure and power rho1-alpha0-eta=1/2-eta, hence diverges at infinity.",
+      "verdict": "No direct implication from these stated CDST conditions to the full proposed range. This is not a global novelty theorem."
+    },
+    {
+      "target": "General local initial phase",
+      "CDST_source": "Notation4.7/Theorem4.8/p36; Definition4.2/p27",
+      "source_statement": "u0 in global H^(1+kappa_s), u1 in H^kappa_s; displacement path in weighted Besov E^(gamma_t,kappa_s)_(2,infinity)(T), parameters satisfying(4.4).",
+      "map": "CDST kappa_s is solution regularity, NOT our time growth exponent; CDST alpha_B is Besov noise loss, NOT spatial covariance alpha_cov. Our proposed E_local allows u0 Hhalf_loc and u1 HminusHalf_loc.",
+      "verdict": "Localization alone does not upgrade rough Sobolev order into the displayed source initial class. However proof refinements/interpolation or standard local patching may already yield some extension in the overlap regime; no novelty from initial-data wording alone is claimed."
+    },
+    {
+      "target": "Canonical local evolution at original threshold",
+      "Chen_source": "Equation1.1,p2; Theorem1.1,p2-3; Definition2.1,p10",
+      "source_statement": "Canonical point/random-field mild solution with fixed data(1,0) under integral (1+|xi|²)^(-(2-alpha0)/2) mu(dxi)<infinity; necessity is for square-integrable solution admitting the Stratonovich expansion.",
+      "verdict": "Known existence at the original range is not our contribution. The inspected statement does not itself provide a common-W continuous local phase evolution for every local initial state, random local operator bounds and compatibility of all cutoff/time evolutions. Whether the full proof or other sources imply these remains open."
+    },
+    {
+      "target": "Noise/regularization identification",
+      "CDST_source": "Equations5.3-5.7,p42; dyadic spatial spectral ball cutoff",
+      "own_source": "Given raw W with literal temporal kernel |t-s|^(-alpha0), retaining heat/Laplace source construction and operator Young limits",
+      "map": "CDST integrated input has covariance R_a(t,s)*gamma_CDST, R_a=(|t|^(2-a)+|s|^(2-a)-|t-s|^(2-a))/2. Off-diagonal mixed derivative coefficient c_a=(1-a/2)(1-a). Use gamma_CDST=Gamma/c_a to match the literal physical derivative covariance, or scale integrated input by c_a^(-1/2) if gamma_CDST=Gamma. At a1/2,c_a=3/8.",
+      "verdict": "Matching a Hurst exponent or a marginal Gaussian law is insufficient. Same-W coupling, exact amplitude and approximation-class bridge must be proved. This compares displayed conventions without proposing a source correction."
+    },
+    {
+      "target": "Point-moment interpretation",
+      "source": "Chen Definition2.1 and existing own point-transfer source route",
+      "verdict": "A local Hhalf/HminusHalf evolution does not supply a point trace or by itself identify point moments. Preserve the original canonical point-field and tested-observable/source arguments."
+    },
+    {
+      "target": "Generic Young/semigroup theory",
+      "source": "Existing Gubinelli-Tindel analytic-semigroup setup; standard Young equations",
+      "verdict": "Direct wave-generator substitution is not an analytic-smoothing-semigroup argument. After constructing the interaction driver, generic Young machinery can apply. The potentially new analytical content is the rough-Gaussian driver/correspondence and uniform verification, not Young integration or local patching alone."
+    }
+  ],
+  "concrete_residuals": [
+    "Verify actual Gaussian interaction operators in weak phase throughout original noise range, independent of final C2.",
+    "Prove raw overlap consistency by the SAME ordinary source family and fixed-mask operator convergence, then construct a common local evolution.",
+    "Define the uniqueness/approximation class precisely and compare it with CDST on overlapping assumptions.",
+    "Keep local seminorm evolution separate from an unmasked bounded global operator, point trace and all-time/all-space estimates."
+  ],
+  "dependency_check": {
+    "exact_original_science_inputs": {
+      "notes/integrated_actual_operator_driver.tex": "3559a660b26df33fc41b84b088e5a1a8ffe4f6e5cb40da26ab53dbd2d8e8881d",
+      "notes/integrated_source_convergence.tex": "13f2e0f1ad93bfd1065cdeaf0174cdcab938706e271c190eb040b855cf7dba33",
+      "notes/integrated_constant_phase_young.tex": "11a1ed7eea3a95826ad26b5eaf2007241161ef3dc05eda4cdd2d1b43f1de0262"
+    },
+    "explicit_reference_closures": {
+      "P:actual-operator-driver": {
+        "nodes": 36,
+        "proofs": 26,
+        "forbidden_targets_reached": []
+      },
+      "P:source-ordinary-response": {
+        "nodes": 45,
+        "proofs": 34,
+        "forbidden_targets_reached": []
+      },
+      "P:constant-gaussian-flow": {
+        "nodes": 48,
+        "proofs": 36,
+        "forbidden_targets_reached": []
+      }
+    },
+    "limitation": "No forbidden explicit references found; unlabelled setup/implicit dependencies still need semantic audit. Node counts are not proof validity."
+  },
+  "repair_status": {
+    "ticket": "tk-20261101-190012-codex-stratonovich-reference-identity",
+    "terminal_status": "partial",
+    "verify_digest": "MAJOR",
+    "lint": "clean",
+    "identity_repair": "Canonical <HUB> All_PDFs and Papis now both have the exact54-page published PDF hash; original wrong and preprint bytes rescued by the writer.",
+    "remaining": "Partial due inherited wiki digest structure/display/size checks; not a failed identity repair and not full gold digestion.",
+    "local_sync": "Local canonical All_PDFs and Papis still show their old hashes at this observation. Correct published PDF is held separately in project audit storage; no direct six-repo overwrite or false local parity claim."
+  },
+  "decision": "REFRAME candidateI around actual local wave construction/correspondence. No direct subsumption by inspected theorem statements, but full novelty gate OPEN. Only bounded interface/statement checking next; no expensive proof wave or separate-paper promotion cleared.",
+  "lean_triage": "Off-diagonal temporal coefficient checked in local Sympy; distributional derivative and actual noise/regularization identification remain analytic obligations. No new Lean/kernel claim or package."
+}
