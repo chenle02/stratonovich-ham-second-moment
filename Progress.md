@@ -6,6 +6,16 @@
 
 ## Current state
 
+- **Main depth recovery (2026-11-02):** full-main DeepSeek review returned
+  MEDIUM; targeted deep audits have now accepted 39 named proof bodies at
+  scoped HIGH, including terminal Wick/tails and full-upper assembly.
+  Constructor001–009, calibration010–019 and driver085–093 reports remain
+  MEDIUM. The append-only ledger is
+  `reviews/2026-11-02-main-deepseek/depth-ledger-v4.json`.
+  Full213-proof, source-image/render and independent cold obligations remain.
+  Further constructor004–006, source094–100 and masked101–103 packets are
+  being prepared; preparation is not an actual reviewer launch.
+
 - **ACTIVE by Le (2026-11-02 renewed direction):** goal resumed and
   DeepSeek V4 Pro explicitly designated MAIN reviewer. Prepare a full
   mathematical main review of all213proofs/44sections with complete primary
@@ -11666,3 +11676,27 @@ Append-only depth-ledger-v3 retains all213proof identities and records36
 named scoped HIGH text-depth adoptions. Not a percentage or whole-goal
 acceptance. All source/PDF/80finitefacts unchanged; main/construction raw
 MEDIUM reports remain. Both UnitC/compact providers TERMINAL.
+
+
+### Terminal/upper depth adopted; driver and calibration MEDIUM preserved
+
+UnitD actualPASS/HIGH, 904.585s; all3 PROOF049–051 FULLY_CHECKED and
+D01–11 PASS. Root rehashed45archive members and10source bindings.
+Report-only grid-shift, endpoint, tie-index, Wick-cancellation and measurability
+shorthands corrected in adoption-adjudication against unchanged source.
+Upstream construction is not thereby promoted; only three targets adopted.
+
+Driver actualPASS_WITH_NOTES/MEDIUM,692.82s; all9 rawFULL/DRV01–11PASS.
+Root rehashed38members/eightbindings. Source already supplies the requested
+finite-propagation, dyadic, zero-time and long-interval details. Report-only
+one-q/all-p monotonicity is invalid; source chooses q for each p. No located
+source defect and no HIGH acceptance or confidence-only retry.
+
+Calibration actualPASS_WITH_NOTES/MEDIUM,1737.052s; tenCHECKED/CAL01–12PASS.
+Root rehashed36members/sixbindings. Preserve spot-checked constructor input,
+selected rather than every-row worked sector derivations, sum-level exchanged
+rows and absent source images. Balan–Conus carrier is not privateBCW input.
+
+All findings adjudicated in the three review directories. Append-only v4
+preserves all213identities and raw main statuses, with39scoped HIGH targets.
+No scientific TeX/PDF/finiteLean change; full goal is ACTIVE, not complete.
