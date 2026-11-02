@@ -1,48 +1,54 @@
-Last updated: 2026-11-02 02:15 UTC (Codex)
+Last updated: 2026-11-02 02:43 UTC (Codex)
 
 LATEST USER DIRECTION: derive the actual constants, whatever computation yields.
 Chen matching is not a completion requirement.
 
 ## ⏭ Next session: where to stand and what to do
 
-Inspect and collect the existing SF04 supplementary DeepSeek text/application
-review at terminal state; do not restart it. ACTIVE is
+Finish preparing the expanded SF04 actual-law/application review using
+all28 frozen manuscript sources and the17 located upstream proofs, then
+inspect any actual launch evidence before dispatching. ACTIVE is
 ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave,
 branch research/fixed-mask-young-20261031. Progress.md is the authority.
 Le resumed the FULL goal and authorized parallel author-side subagents.
 
-Attempt: sibling stratonovich-sf04-text-review-v1, PID2728316 under
-wrapper2728286, handle73653. At capture LIVE with no terminal receipt.
-Inspect native/exit.json and the actual process. Common scientific887,
-clean carrier3f5563c7ea0c6f8b99390e0988fcf4c502ca4960,
-promptSHA1b08a39ecb9e17d6fc1c4d71b3e27b935c99b5deaf07f28a688018d90f72c9d0.
-Six complete consumer modules and exact Teschl/Friz mathematical extracts
-are supplied. This is NOT source-image, full SF04, synthesis or cold
-clearance. SF04-01/07/11 remain INCONCLUSIVE on this text-only route.
+The SF04 text review PID2728316/handle73653 is TERMINAL, actual
+PASS_WITH_NOTES/MEDIUM at590.57seconds. Full report and45-member native
+archive are retained in reviews/2026-11-02-sf04-text/. SF04-01/07/11 have
+no image credit; SF04-10 lacks supplied upstream context. Nine other
+checks PASS at limited scope, not HIGH or full-component clearance.
+Author adjudication rejects incorrect projection/log/cell objections
+with explicit proofs, preserves optional exposition and missing coverage.
+No mathematical source/PDF edit was made. Scientific887 remains frozen.
 
-Cutoff-v2 review is now TERMINAL and scoped accepted: dd27f38 source,
-adoption23b484a, actual DeepSeek PASS_WITH_NOTES/HIGH/F01-F10,48native
-archive members readback verified. All seven production requests closed
-on their named inputs. Preserve the report-only reversed cone identity;
-the proof is correct and unchanged. No full local-flow theorem is claimed.
+All17 missing labels are mapped in missing-input-map.json; report L:radius-
+covariance-residuals is actually C:radius-covariance-residuals. All28files,
+831625bytes, match live/Git887/common inventory. Use complete context,
+not a mechanically minimized closure. An expanded native attempt may be
+prepared in sibling stratonovich-sf04-eligibility-review-v1; at this capture
+no native review had launched. Verify its actual files/process on resume.
+Do not confuse preparation or an agent status with a live provider call.
 
-Kimi image attempt TERMINAL monthly429, zero report/read credit. See
-reviews/2026-11-02-sf04-young-kimi/. No unchanged retry/purchase/substitute.
+Cutoff-v2 is scoped accepted at23b484a after actual HIGH/F01-F10 review,
+within its named construction inputs only. No full local-flow theorem.
+Kimi image attempt is TERMINAL monthly429, zero reading credit. A user
+question about restoring Kimi or authorizing a replacement is pending;
+no replacement is authorized. No unchanged retry/purchase/substitute.
 Old canonical composition is Opus-specific and remains unmet under the
-new authorized routes; do not relabel receipts or reduce coverage.
+new routes. Full whole/source/visual/cold obligations remain OPEN.
 
-Continue the original all-model actual-constant completion contract.
-Whole/source/visual/fresh-cold gates remain OPEN; no forced Chen endpoints.
-Wiki status maintenance queued tk-20261101-211105-codex-stratonovich-resumption;
-verify exact receipt before counting publication. Goal remains ACTIVE.
+Wiki ticket tk-20261101-211105-codex-stratonovich-resumption is CLAIMED
+at latest observation, not completed. Verify exact receipt before counting
+maintenance. Continue original all-model actual constants, not forced Chen
+endpoints. Goal ACTIVE; no goal-completion claim.
 
 ## Pre-flight checks
 
 1. Confirm this literal root and clean master. The pre-handoff root baseline
-   is 696ec4bce8b33bda8d2d1e00fdb7362fe51614c2; verify ancestry, not equality
+   is 639b9c0a4cdb4688551a646e669d3bd498fe3573; verify ancestry, not equality
    to the later handoff commit. Preserve any foreign work.
 2. In ACTIVE, check git status, branch, latest Progress.md and ancestry of
-   e5690b466546f7476b36adb690803b821cad1afa. Fetch serially and compare
+   bf6c1ba797720f0e6bac5630dce35371202fb24b. Fetch serially and compare
    local/origin/<HUB> before edits. Recorded baseline was clean/equal.
 3. Inspect the exact reviewer attempt above: exit.json is authoritative
    terminal evidence; otherwise check PID and session. Never infer terminal
@@ -55,19 +61,20 @@ verify exact receipt before counting publication. Goal remains ACTIVE.
 5. Read current PROJECT-GOAL.md and completion-obligations.md under
    reviews/2026-11-02-resumption/. Preserve all original models and all
    86primary frames/257pages/28TeX/44sections/213proof obligations.
-6. Kimi session76482/PID2686747 and cutoff-v2 PID2685802 are TERMINAL.
-   Kimi has monthly429/no vote. SF04-text PID2728316 is the only reviewer
-   live at capture; use actual process/receipt evidence on resumption.
+6. Kimi session76482/PID2686747, cutoff-v2 PID2685802 and SF04-text
+   PID2728316 are TERMINAL. No reviewer is live at this capture. Check
+   any expanded attempt actual launch/exit/process before further work.
 7. The wiki page is read-only here; maintenance goes through the canonical
    queue. Local wiki snapshots may lag <HUB>. No correspondence,
    sibling edits, new companion, HPC or public release is authorized.
 
 ## Concrete deliverables for the next session
 
-Collect the existing SF04 text audit with actual route, complete prompt/source
-bindings, native archive/readback and findings adjudication. Keep exact-image
-and official component gates open. Continue the full original review contract
-and canonical wiki queue followup without expanding optional theory instead.
+Freeze a genuinely expanded actual-law/application packet with full source
+context and exact17-label coverage, then obtain the appropriate review.
+Preserve the prior MEDIUM report and root rebuttal without confidence
+upgrades. Complete the full source/image/whole/cold obligations separately;
+retain the pending reviewer-route question and canonical wiki ticket.
 
 ## Success criteria for the immediate next step
 
@@ -82,6 +89,12 @@ both phase components and same-source countable original-W identities.
 [held back: collaborators' unpublished work]
 
 ## What the previous sessions produced
+
+2026-11-02 SF04 text close: b49dd36 retains actual MEDIUM report,45native
+members and every finding adjudicated. Correct projection/log/count formulas
+were not weakened. bf6c1ba resolves all17 omitted upstream labels and binds
+complete28file831625byte unchanged scientific context for expanded audit.
+No source/PDF/Lean change; no image/fullSF04/synthesis/cold acceptance.
 
 2026-11-02 followup:23b484a accepts bounded cutoff production after actual
 HIGH report/all10checks and full48-member archive; reviewer-only cone/nullset
@@ -2123,8 +2136,8 @@ held. Main p2source/PDF/Lean facts unchanged; no reviewer live.
 ## Repo & git state at handoff
 
 ROOT master before this HANDOFF-only commit:
-696ec4bce8b33bda8d2d1e00fdb7362fe51614c2, clean and origin/<HUB> equal.
-ACTIVE research baseline e5690b466546f7476b36adb690803b821cad1afa,
+639b9c0a4cdb4688551a646e669d3bd498fe3573, clean and origin/<HUB> equal.
+ACTIVE research baseline bf6c1ba797720f0e6bac5630dce35371202fb24b,
 clean and synchronized. Newer workflow commits must be inspected normally.
 Cutoff scientific successor dd27f38e55506930352725bdb4ce6162283c2c3d.
 Main scientific epoch887fbfbe0fa4368d6b32a436615d73349b2445d8 unchanged;
