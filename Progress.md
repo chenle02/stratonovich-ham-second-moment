@@ -12286,3 +12286,17 @@ invented asreviewercoverage; separate rootauthorcheck retains crosspairing.
 Rawgrades/readinglimits unchanged, no scientificedit/providerretry/global
 application/image/render/Kimi/cold/goalclosure. Other reviewadjudications
 and cold-clean editorialproposal remain active.
+
+
+### Actual point-transfer and signed-upper deductions scoped HIGH adopted
+
+Root read both full native reports and allnine actual185–193proofs. Rehashed
+64point/65signed capsulemembers; sourcebodies unchanged from reviewedepoch.
+Five point derivationheadings/all12PNT do not invent a separate rowtable.
+Besselcoordinates are isometric; freewaveunitarity notassumed. Exacttransfer
+is averageofsquares, fixed-delta source-first, sameactual endpoint. Signed
+allfourCHECKED/all12SUP has no falsewaveK/B; its pending182wordingcondition
+met by exactintegrated53bf independently reviewedpatch. Suppliedexternal
+sourceproofs remain imported, no newfullproofcredit. v29has143scopedHIGH,
+all214identities. No scientificedit/retry/fullgraph/main/image/Kimi/cold/goal
+clearance. Originalrawgrades/limits and currentKimi monthlyrefusal retained.
