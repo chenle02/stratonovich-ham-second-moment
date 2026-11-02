@@ -1,19 +1,27 @@
-Last updated: 2026-11-02 00:18 UTC (Codex)
+Last updated: 2026-11-02 00:23 UTC (Codex)
 
 LATEST USER DIRECTION: derive the actual constants, whatever computation yields.
 Chen matching is not a completion requirement.
 
 ## ⏭ Next session: where to stand and what to do
 
-Poll the SAME actual DeepSeek growth-statement review, handle76401,
-external ../stratonovich-growth-statement-review-v1/native relative to
-ACTIVE. Last check: process live, step_start only, no terminal receipt,
-carrier clean/HEAD unchanged. Do not restart on silence or observation
-timeout. At terminal collect the full report/session and adjudicate every
-finding without lowering HIGH or converting this into a novelty vote.
+Prepare an independently reviewed statement-fidelity/sufficiency successor
+for ACTIVE research-program/uniform-gaussian-growth-statement-v2.json,
+using the exact v1 MEDIUM report and adjudication as provenance without
+rewriting them. v2 makes actual radius indexing and the ordered zero-law
+condition explicit; do not add the stronger fixed-B zero limit that the
+author counterexample refutes. No unchanged confidence-only retry.
+
+Growth-statement native handle76401 is TERMINAL0, not live. Actual
+DeepSeek V4 Pro returned PASS_WITH_NOTES/MEDIUM, G01-G10, no invalidation
+of U1-U6, but production clarification requests. HIGH gate NOT PASSED.
+Full22-file native archive, exact no-tool/prompt/model/clean8-file-carrier
+checks and all findings retained in reviews/2026-11-01-growth-statement/.
+No reviewer currently live. Current readable discussion entry point is
+research-program/README.md; source/model/novelty/SPDE gates remain open.
 
 ACTIVE: ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave,
-branch research/fixed-mask-young-20261031, workflowf5ce37c13810ad42985a2d965b6b9b3f44b2086c.
+branch research/fixed-mask-young-20261031, workflowa24af3f8c610bc46ccb3e1c2152a76d2ee055e51.
 Progress.md is workflow authority. Le revised reviewers on2026-11-01 to
 DeepSeek V4 Pro + Kimi-K3; ACTIVE AGENTS.md now records these routes.
 Do not restore the old exhausted Opus-only requirement. Original scope,
@@ -37,7 +45,7 @@ draft packet and primary3PNGs, but stopped at monthly429 with no report
 or reading credit. Complete17-file native refusal archived/read back.
 No purchase/upgrade, retired metered route or silent substitution. Its
 assigned image check remains OPEN. Old handles55020,29446,45697 and their export handles are TERMINAL.
-Only the new growth-statement handle76401 is live at the latest checkpoint.
+The new growth-statement handle76401 is also terminal; no reviewer is live.
 Old Opus attempts and carrier calibration remain preserved unchanged.
 
 Main scientific composition candidate887fbfbe0fa4368d6b32a436615d73349b2445d8,
@@ -156,17 +164,18 @@ current Next section and ACTIVE Progress.md before using any old todo.
 
 ## Concrete deliverables for the next session
 
-Terminal native DeepSeek growth-statement report or honest transport failure,
-with actual model/session, source/carrier pins, no-tool trace and full findings
-preserved. The review checks statement sufficiency, not publication novelty
-or actual mixture/SPDE hypothesis verification.
+A bound v2 statement review of actual zero/radius/determinant/exponent
+clarifications, preserving the original HIGH gate and full hypothesis class.
+No abstract lower bound, exact moving-score limit, actual mixture theorem
+or novelty verdict is supplied by this supporting upper statement.
 
 ## Success criteria for the immediate next step
 
-Monitor the original live process without duplication; retain exact model,
-confidence and qualifications. AllG01-G10 conclusions must be assessed at
-their actual scope. No adoption from an incomplete or below-HIGH report.
-Original p2 manuscript and all verification gates remain intact.
+Every v1 finding is preserved and resolved or explicitly OPEN. Maintain
+delta-first/B-second limits: e_B may be positive at each finite B and tend
+to zero afterward. Actual growing R_delta is included in all delta-indexed
+hypotheses; fixed-R estimates alone do not verify those hypotheses.
+Original p2 manuscript and all verification requirements remain unchanged.
 
 ## Anti-success criteria
 
@@ -2167,11 +2176,20 @@ f29e6e7126a407f9493ae8fd677773f08d02d538 held. Scientific statement source
 Actual prompt/launch/input bindings and source receipt committed; live
 handle76401 only. No source/PDF/Lean modification or theory adoption.
 
+2026-11-02 workflow9687c2c/a24af3f: actual growth-statement review completed
+at MEDIUM, not accepted. Raw report and22-file native archive verified;
+no private reasoning treated as a report. Author adjudication supplies the
+admissible zero-law familyF(0)=1/B,Z=1 to reject unnecessary fixed-B
+strengthening, clarifies R_delta versus uniform-all-R estimates, generator
+and propagator determinants, and exact B14 calculation. v2 candidate frozen;
+no new proof adopted. README discussion and source-intake status refreshed.
+No live reviewer; original p2source/PDF/80Lean facts unchanged.
+
 ## Repo & git state at handoff
 
 ROOT master before this HANDOFF-only commit:
-24185d017083a1d9fdc8997075430c07b50378eb, clean and origin/<HUB> equal.
-ACTIVE research workflowf5ce37c13810ad42985a2d965b6b9b3f44b2086c,
+596e35013949dcac5060274bc8d7a65db62e34a9, clean and origin/<HUB> equal.
+ACTIVE research workflowa24af3f8c610bc46ccb3e1c2152a76d2ee055e51,
 clean and origin/<HUB> equal after its actual serial sync.
 Main scientific composition epoch887fbfbe0fa4368d6b32a436615d73349b2445d8.
 Separate finiteness draft epoch3c375e63d3253bd571a604dae7a82dfa9c49ef42.
