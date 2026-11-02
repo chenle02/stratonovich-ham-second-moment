@@ -6,12 +6,13 @@
 
 ## Current state
 
-- **PAUSED by Le (2026-11-02):** park after the current milestone, run retro
-  and save-handoff. The actual cutoff compatibility proof review returned
-  PASS_WITH_NOTES/HIGH and its native evidence is fully collected. Production
-  notes remain OPEN; proof-v2/local assembly has NOT started. No reviewer is
-  live or queued. Resume only on Le's explicit direction. Original full
-  research goal is incomplete and unchanged.
+- **ACTIVE by Le (2026-11-02):** explicit instruction to resume and complete
+  the full project; parallel author-side subagents are authorized. The prior
+  pause is superseded, its historical checkpoint retained. Cutoff proof v1
+  has a verified DeepSeek PASS_WITH_NOTES/HIGH report; seven production
+  dispositions are being completed in a separate immutable successor.
+  Whole-paper/source/visual/final-cold obligations remain OPEN. No new
+  proof adoption or whole-goal completion follows from this resumption.
 
 - **Reviewer directive (Le,2026-11-01):** use DeepSeek V4 Pro + Kimi-K3.
   This supersedes Opus-only routing for newly assigned reviews. Preserve
@@ -218,21 +219,19 @@
   bindings, 53 texts/11 exact PNGs/79 native archive members verified.
   Nine proofs, clean 254 pages, 204 earlier bodies unchanged. The planned
   mathematical result set is integrated at scoped gates, not goal closure.
-- **Consolidated candidate:** scientific 4a65c79, clean 258 pages and all
-  213 proof blocks. Author reconciled the 140 numbered presentation records;
-  no inherited whole-paper acceptance is claimed for changed bytes.
-- **Immediate next:** monitor the existing fresh whole-argument review,
-  native session 44594, source 4a65c79, output in the sibling state directory
-  stratonovich-whole-argument-review-v1/native. It was confirmed LIVE at
-  capture; do not restart on an observation timeout. At terminal state,
-  validate actual model/route/report/coverage and all 63 named obligations,
-  bind every input and adjudicate findings. Then obtain the required fresh
-  independent cold read. Calibration/source/wiki/private delivery remain.
-  Keep the frozen PB/OC/WS result set and full original model scope. The
-  import interfaces are mapped; avoid repeating that inventory as a new round.
-  Continue consolidating complete proofs into TeX/PDF, with clean builds
-  and source/PDF correspondence, then whole-argument
-  and final independent cold-read checks. Avoid optional refinements.
+- **Consolidated candidate:** the current common scientific review epoch is
+  887fbfbe0fa4368d6b32a436615d73349b2445d8, with editorial source/PDF
+  b2fda02, 257 pages and 213 proof blocks. The earlier 4a65c79 whole-review
+  attempt and continuation are TERMINAL and unaccepted (incomplete coverage,
+  INCONCLUSIVE/medium). Their evidence remains historical, not live work.
+- **Immediate next (resumed 2026-11-02):** finish the seven cutoff-proof
+  production notes in a separate successor and validate its changed analytic
+  interfaces. Then continue the prepared full source/visual/whole-argument
+  coverage recovery and fresh cold gate. Fifteen prepared components and
+  synthesis contracts do not count as completed reviews. General local-flow
+  assembly is a separate research-program target, not a substitute for the
+  original second-moment completion obligations. No reviewer is currently
+  dispatched by this resumption; do not restart historical handles.
 - **New accepted uniformR E Cameron/regulator:** scientificf54e92b,
   21checks/HIGH348.303s,no requiredrepairs;21input bindings/native archive
   verified before6optional clarity notes. Actual all-model uniformR means,
@@ -11195,3 +11194,36 @@ No live reviewer/queued retry, new Lean fact/package/companion/HPC, main
 Tex/PDF change or goal completion. Preserve all full-p2/source/visual/cold
 and novelty obligations. Only requested retro/preservation work continues
 before final stop; paused status is authoritative.
+
+
+## 2026-11-02 — explicit goal resumption and production repair
+
+Le explicitly requested completion/resumption and authorized multiple
+subagents. Session goal is ACTIVE with the actual-constant objective,
+original all-model scope and all verification gates preserved.
+
+Gate class: whole-paper
+Gate scope: PROJECT-GOAL.md in full; current bounded subaim is the seven
+cutoff-overlap production dispositions, with no full-local-flow adoption.
+Mandatory protocols: AGENTS.md; paper-dev review layers; source/application/
+visual coverage; DeepSeek V4 Pro + Kimi-K3 directive and fresh final cold
+review; lean-aware-paper-review runbook; private synchronized delivery.
+
+Preflight: local and fetched origin research0fa63b4 agree (0/0), clean;
+<HUB> corresponding research checkout clean at the same revision. Root
+master1d02a1e is clean and synchronized but its loader handoff is historical.
+Read-only GPT interface audit confirms the ordinary exchange uses bounded
+strongly continuous C, not Holder C; the Young regularity belongs to M,V.
+This author-side audit is not an independent cross-family review.
+
+Immediate worklist:
+1. Complete all seven production dispositions in proof-v2, preserving v1.
+2. Validate exact source interfaces and changed proof boundaries; freeze
+   and obtain the appropriate independent production followup.
+3. Reconcile the full completion inventory and execute the outstanding
+   source/whole-argument/visual/cold gates without narrowing their scope.
+4. Refresh the literal root handoff and private wiki delivery through the
+   canonical queue; commit/push owned paths and verify <HUB> parity.
+
+No final theorem, Gaussian source-paper, image, novelty or Lean certificate
+is inferred from the scoped cutoff review. No correspondence is authorized.
