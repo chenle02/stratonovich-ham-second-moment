@@ -1,43 +1,50 @@
-Last updated: 2026-11-02 10:11 UTC (Codex)
+Last updated: 2026-11-02 10:34 UTC (Codex)
 
-LATEST USER DIRECTION: DeepSeek V4 Pro is MAIN reviewer; derive the actual
-constant without forcing Chen matching. Full goal ACTIVE.
+LATEST USER DIRECTION: DeepSeek V4 Pro is MAIN reviewer; actual constant
+without forcing Chen matching. Full goal ACTIVE.
 
 ## ⏭ Next session: where to stand and what to do
-Inspect the existing MAIN review attempts and collect completed evidence;
-do not restart them. Goal ACTIVE; DeepSeek V4 Pro is MAIN by Le's explicit
-direction. ACTIVE research checkout is
-../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave,
-branch research/fixed-mask-young-20261031; Progress.md is authority.
+Inspect the FOUR existing MAIN review attempts and collect actual terminal
+evidence without restarting them. Goal ACTIVE; DeepSeek V4 Pro is MAIN.
+ACTIVE checkout is ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave,
+branch research/fixed-mask-young-20261031. Progress.md is authority.
 
-Current source audit: sibling stratonovich-main-deep-source-v1,
-PID3582719/wrapper3582714, handle2253; carrier a01d09050c272b90c1f425bbb481d8bb269b3096;
-promptSHA9728b44ee02e04399ac7d0e75406d3e8026e526ba82d99e80c9f83b9008bc727.
-Current masked101–103 audit: stratonovich-main-deep-masked-v1,
-PID3586933/supervisor3586814, handle48642;
-carrier e7566e3ec8f0181cee7057b5909bdea5a0b76eb7;
-promptSHA06c6dbc7c1d1e998b94c6553b1d4a9e20f31b4d536d55e4e7c40fa1729126e17.
-Current finite Gram194–198 audit: stratonovich-main-deep-gram-v1,
-PID3587123/supervisor3587110, handle87418;
-carrier e20bf73f170784b9aa86d7769c5eab09deb329f0;
-promptSHAd913768bd2f0df09946a048eb5d727e3dcb88d38860e89ae67e595de9adb024f.
-These three were LIVE at capture. Constructor004–006 packet is being
-prepared by completion_audit with added held primary pages; inspect its
-actual native launch/exit receipts before describing it as running.
+LIVE at capture (each directory is a sibling of ACTIVE):
+- stratonovich-main-deep-construction-456-v1: PROOF004–006 worked audit;
+  PID3602167/supervisor3602110, handle48145,
+  session ses_e643adb41ffeU4plPY0jau2cd4;
+  promptSHA5a659fc367d7be0a3f1d428730b35e1fbdfb498f05b741cb8498bebfdcfeeb9e.
+- stratonovich-main-deep-compact-mean-v1: PROOF112–118;
+  PID3610712/supervisor3610422, handle31482;
+  promptSHAdce58c9b4764fef88649eabafd00c43f7a2665e7a806a413ba31509b0f5afec9.
+- stratonovich-main-deep-raw-lower-v1: PROOF119–126;
+  PID3623574/wrapper3623569, handle68987;
+  promptSHA5b875122d31e44cdfb7c44bf387f762f64238f13ec680675a4a78eb60d491af4.
+- stratonovich-main-deep-equilibrium-v1: PROOF133–134;
+  PID3624745/supervisor3624741, handle37987;
+  promptSHAdf43ffce80247ca98bc3f6306f28caf2e2753a1060cae201314312fb2f338b71.
+All previous source/masked/Young/Gram/white and earlier reviews are TERMINAL.
 
-All earlier A/B/C/D, covariance/wave/compact, constructor001–009,
-driver085–093 and calibration010–019 attempts are TERMINAL.
-Scoped HIGH depth now covers39named proofs; exact append-only inventory:
-reviews/2026-11-02-main-deepseek/depth-ledger-v4.json in ACTIVE.
-Constructor001–009, calibration010–019 and driver085–093 remain actualMEDIUM.
-Full MAIN remains MEDIUM; raw30CK/58undefinedCK-NH/125NF is preserved.
-Full213proofs/44sections/63checks, source/image/render/fresh-cold gates remain.
-No manuscript/PDF/80finitefact change or full-goal acceptance.
+Current append-only depth-ledger-v9 (main-deepseek review directory) has55
+scoped HIGH targets. Constructor001–009, calibration010–019, driver085–093,
+masked101–103 and Young104–111 remain actualMEDIUM, unaccepted atHIGH.
+Fullmain remains MEDIUM with original30CK/58undefinedCK-NH/125NF preserved.
+All213proofs/44sections/63globalchecks and source/image/render/freshcold gates
+remain required. No source/PDF/80finitefact change or original-goal clearance.
+
+The targeted constructor review adds missing held primary inductionpages17–21.
+Author root separately viewed page21 and confirmed its Case2 equality omits
+unequal previous-time shifts. Candidate stationary covariance-CS explanation
+is external stratonovich-author-source-visual-v1; pending independent audit,
+not an adopted source repair/theorem failure or independent-image credit.
+Equilibrium's generic config has a copied full-H1 phrase; exact source/scope
+only claims L1/L2 for its singular density. Inspect report for distortion;
+preserve the raw config and additive author-scope-note.
 
 ## Pre-flight checks
-1. Root master baseline fd05092c56dba1c14aa0402a9248162153783c88 before
+1. Root master baseline 7a9e8026eedce61fdbdd7a5a729411c19107836d before
    this handoff-only commit; check ancestry and preserve foreign work.
-2. ACTIVE baseline717d087d068cbca8a69a6e66b74857f2373ea3a2 clean and
+2. ACTIVE baseline8935dc8 clean and
    synchronized with origin/<HUB>. Fetch serially; inspect latest Progress.
 3. Check actual pid/exit receipts in the named external review directories.
    Old B/Wave live entries were superseded by terminal HIGH reports.
@@ -68,6 +75,17 @@ locator corrections and length/collection failures remain immutable.
 [held back: collaborators' unpublished work]
 
 ## What the previous sessions produced
+2026-11-02 depth checkpoint8935dc8: source094–100 HIGH accepted85d257f,
+finiteGram194–198 HIGH accepted e4dd1ef, white210–213 HIGH acceptedadfe267.
+All raw reviewer slips and missed extra controls adjudicated without source
+edits. Masked101–103 MEDIUM b3a6e24; Young104–111 MEDIUM8f614cd. Ledger-v9
+has55scopedHIGH targets, all213original rows retained. Exactauthor27sector
+checks2f4498d agree with all9rows/11/540 and do not upgrade reviewerMEDIUM.
+Private wiki status ticket tk-20261102-052608-codex-stratonovich-main-depth
+QUEUED, not maintained; exact prior blocked history retained. Read its
+terminal receipt by file, not repo-queue receipt (that is a writer command).
+Four live review directories and author-source visual WIP are listed above.
+
 2026-11-02 checkpoint717d087: D049–051 accepted scoped HIGH; driver085–093
 and calibration010–019 preserved at MEDIUM with all findings adjudicated.
 Root verified119archive members and24source bindings. Depth-ledger-v4
@@ -2143,14 +2161,15 @@ local canonical copies still old at observation, correct external source
 held. Main p2source/PDF/Lean facts unchanged; no reviewer live.
 
 ## Repo & git state at handoff
-ROOT master pre-handoff fd05092c56dba1c14aa0402a9248162153783c88,
-clean and origin/<HUB> equal. ACTIVE research
-717d087d068cbca8a69a6e66b74857f2373ea3a2 clean/synchronized.
-Scientific source887fbfbe0fa4368d6b32a436615d73349b2445d8 unchanged,
-257pagePDF SHA10bfeae6eb576e23ba928b8ef9eca968d87f23ac7eff884c632bf50acb3294c9.
-Existing80finitefacts/22seams unchanged. Native WIP is in named external
-carrier directories only. Preserve it through terminal collection.
-This HANDOFF-only commit is pushed and <HUB> canonical root synchronized.
+ROOT master pre-handoff7a9e8026eedce61fdbdd7a5a729411c19107836d,
+clean and origin/<HUB> equal. ACTIVE research8935dc8,
+clean/synchronized; verify full HEAD and ancestry rather than equality to
+this pre-handoff snapshot. Scientific887fbfbe0fa4368d6b32a436615d73349b2445d8
+unchanged,257pagePDF SHA
+10bfeae6eb576e23ba928b8ef9eca968d87f23ac7eff884c632bf50acb3294c9.
+Existing80finitefacts/22seams unchanged. Native/author-image WIP remains in
+named external directories; preserve through terminal collection. This
+HANDOFF-only commit is pushed and <HUB> canonical root synchronized.
 
 [held back: collaborators' unpublished work]
 
