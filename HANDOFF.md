@@ -1,69 +1,85 @@
-Last updated: 2026-11-02 10:34 UTC (Codex)
+Last updated: 2026-11-02 16:16 UTC (Codex)
 
-LATEST USER DIRECTION: DeepSeek V4 Pro is MAIN reviewer; actual constant
-without forcing Chen matching. Full goal ACTIVE.
+LATEST USER DIRECTION: DeepSeek V4 Pro is MAIN. Full original goal ACTIVE;
+derive actual constant without forcing Chen matching.
 
 ## ⏭ Next session: where to stand and what to do
-Inspect the FOUR existing MAIN review attempts and collect actual terminal
-evidence without restarting them. Goal ACTIVE; DeepSeek V4 Pro is MAIN.
-ACTIVE checkout is ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave,
-branch research/fixed-mask-young-20261031. Progress.md is authority.
+Read/adjudicate the completed production review for candidate36c0fec, then
+integrate only its verified source changes into ACTIVE with an explicit
+214-proof/common-source rebind. Goal ACTIVE; DeepSeek V4 Pro is MAIN.
+ACTIVE is ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave,
+branch research/fixed-mask-young-20261031; Progress.md is authority.
 
-LIVE at capture (each directory is a sibling of ACTIVE):
-- stratonovich-main-deep-construction-456-v1: PROOF004–006 worked audit;
-  PID3602167/supervisor3602110, handle48145,
-  session ses_e643adb41ffeU4plPY0jau2cd4;
-  promptSHA5a659fc367d7be0a3f1d428730b35e1fbdfb498f05b741cb8498bebfdcfeeb9e.
-- stratonovich-main-deep-compact-mean-v1: PROOF112–118;
-  PID3610712/supervisor3610422, handle31482;
-  promptSHAdce58c9b4764fef88649eabafd00c43f7a2665e7a806a413ba31509b0f5afec9.
-- stratonovich-main-deep-raw-lower-v1: PROOF119–126;
-  PID3623574/wrapper3623569, handle68987;
-  promptSHA5b875122d31e44cdfb7c44bf387f762f64238f13ec680675a4a78eb60d491af4.
-- stratonovich-main-deep-equilibrium-v1: PROOF133–134;
-  PID3624745/supervisor3624741, handle37987;
-  promptSHAdf43ffce80247ca98bc3f6306f28caf2e2753a1060cae201314312fb2f338b71.
-All previous source/masked/Young/Gram/white and earlier reviews are TERMINAL.
+ACTIVE628466d38725b89ad7a25bd3bb567a19e7136e13 is clean/pushed/<HUB>equal;
+scientificsource still887, PDF257pages unchanged. Accepteddepth108 original
+proofs at scopedHIGH in main-deepseek/depth-ledger-v24.json. Wholemain raw
+MEDIUM and all original213proof/source/image/render/cold obligations remain.
 
-Current append-only depth-ledger-v9 (main-deepseek review directory) has55
-scoped HIGH targets. Constructor001–009, calibration010–019, driver085–093,
-masked101–103 and Young104–111 remain actualMEDIUM, unaccepted atHIGH.
-Fullmain remains MEDIUM with original30CK/58undefinedCK-NH/125NF preserved.
-All213proofs/44sections/63globalchecks and source/image/render/freshcold gates
-remain required. No source/PDF/80finitefact change or original-goal clearance.
+PRODUCTION candidate (separate worktree/branch, privatelypushed and clean
+independent<HUB>checkout synchronized):
+stratonovich-source-bridge-production-20261102,
+research/source-bridge-production-20261102,
+36c0fec8f0abf1584c4ca1abe5ec553c2c4ea2d7 (base21bbf31).
+It adds sourceCase2 bridge214 and EXACT uniform_products182 clarification;
+212other originalrawproofbodies unchanged. NewPDF260pages,0errors/undefined/
+overfull. Source/PDF/proofmap/renderreceipts sibling
+stratonovich-source-bridge-production-receipts-20261102.
+PDFSHA0e8d39bd2a7eff3daa1f77789af6abcb259d95571a4c2bfca0d7a43922010dfa.
+Fresh productionreview TERMINAL PASS_WITH_NOTES/HIGH,542.266s:
+stratonovich-source-bridge-production-review-v1/native/report.txt;
+69member capsule SHA d229df03a0cd36bde0b431205c0ac04d6f74699856a909966f68868a95d85802.
+PRD01–14/214/182passed; FND_CASE2 premise SATISFIED FOR EXACT CANDIDATE.
+Root has NOT yet read/adjudicated that whole final report or mergedACTIVE.
+No unconditionalwholegoal/source-image/cold clearance. Do not rerun it.
 
-The targeted constructor review adds missing held primary inductionpages17–21.
-Author root separately viewed page21 and confirmed its Case2 equality omits
-unequal previous-time shifts. Candidate stationary covariance-CS explanation
-is external stratonovich-author-source-visual-v1; pending independent audit,
-not an adopted source repair/theorem failure or independent-image credit.
-Equilibrium's generic config has a copied full-H1 phrase; exact source/scope
-only claims L1/L2 for its singular density. Inspect report for distortion;
-preserve the raw config and additive author-scope-note.
+Terminal review backlog preserved/rehashed under ACTIVE
+reviews/2026-11-02-pending-main-depth-intake/: point185–189, intrinsic199–204,
+uniformproducts178–184 plus correction, symplectic165–169 correction,
+standalone sourcebridge. Intake is NOT adoption. Read actual grades/errors.
+Signedupper190–193 external stratonovich-main-deep-signed-upper-v1 has
+nativeexit0 (311.892s); inspect/finish its existing collector if needed,
+never restart the provider from an obsolete live note. Clock059–060 is
+already completed/adopted, not live. All reported old nativeattempts are
+terminal. Check actualexit/handles before deciding any new call.
+
+Important backlog qualifications: intrinsic review is INTERNAL ONLY with
+sourcebridge/182productionconditions; roughPhi uses completedtensor mean,
+not an assumed timefunctionPhi_t. Symplectic correction's extra claim all
+constantcolumns vanish is false (c1 retained,c2instantaneouszero; rangeiE
+is correct). Products Vnorm is NOT multipliernorm; K/B bounds potential,
+not primitive/wave. Point review lacks literalstatus table despitefive
+workedheadings; preserve this. All sourcehistory/nonblindness disclosed.
 
 ## Pre-flight checks
-1. Root master baseline 7a9e8026eedce61fdbdd7a5a729411c19107836d before
-   this handoff-only commit; check ancestry and preserve foreign work.
-2. ACTIVE baseline8935dc8 clean and
-   synchronized with origin/<HUB>. Fetch serially; inspect latest Progress.
-3. Check actual pid/exit receipts in the named external review directories.
-   Old B/Wave live entries were superseded by terminal HIGH reports.
-4. Corrected proof-index-v2 uniquely identifies deferred PROOF093; preserve
-   raw original index/report and all original collection/length failures.
-5. All28scientific TeX are exact887; main257-page PDF SHA256 is
-   10bfeae6eb576e23ba928b8ef9eca968d87f23ac7eff884c632bf50acb3294c9.
-   Original448inventory has447matches plus authorized PROJECT-GOAL delta.
-6. Read PROJECT-GOAL.md and reviews/2026-11-02-resumption/completion-obligations.md.
-   Full original model,86primaryframes/257pages and all final gates persist.
-7. Kimi monthly-quota failure is terminal with no image credit; separate
-   capacity/replacement question remains unanswered. No model substitution,
-   correspondence, sibling edit, new companion, HPC or public release.
+1. Rootmaster pre-handoff a63b03482c45d20cd73693edd8c3aa223d7f8934;
+   inspect status/index for foreignwork. Stage HANDOFF only in its commit.
+2. ACTIVE628466d clean/origin/<HUB> equal atcapture. Fetch/ref writes
+   serially across linkedworktrees and machines. Production36c0fec is
+   also privatelypushed; its<HUB>clone is independent, not ACTIVE.
+3. Root and ACTIVE are linkedworktrees sharing Git metadata. Never reset
+   ACTIVE to an old snapshot. Candidatebase21bb predates laterreview-only
+   commits; resolve Progress merge by preserving both histories/currentstate.
+4. Verify productiondiff only twoTeX+PDF plus explicitownmetadata. Existing
+   213IDs mustremain; add214, change only182rawbody. Proofmap in receipts;
+   old093 is deferredP:actual-operator-driver, not nearestpriorlabel.
+5. Before merging scientificchanges, ensure old887 collectors are complete
+   or bind their immutable Git/carrier snapshots explicitly. Oldlive-source
+   hash assertions must not be misread as corruption after a new sourceepoch.
+6. Read PROJECT-GOAL and completion-obligations under reviews/resumption.
+   Originalallmodels/allproofs/86primaryframes/global/freshcold scope remains;
+   addnew214 and newsourceCase2page21coverage. New260page render needs its
+   own final full inventory; old257page certificate does not transfer.
+7. Kimi actualmonthly429 remains no report/imagecredit; capacity/replacement
+   question pending. No silentmodel/threshold waiver, correspondence, new
+   companion, HPC, Skorohoddevelopment or publicrelease. Wikiqueue only.
 
 ## Concrete deliverables for the next session
-Collect current native reports, verify actual route/prompt/source and exact
-proof coverage, rehash complete archives, adjudicate all findings at their
-actual confidence. Continue genuine bounded depth work without discarding
-any of213proofs or mistaking optional exposition for a required repair.
+Adjudicate productionreport and exactnew214/182 transcriptions, reconcile
+candidate into ACTIVE and regenerate stableproof/source/render bindings.
+Preserve explicitproductionconditions until actualadoption. Then process
+terminalbacklog and continue remainingproof-depth/calibration/global/source/
+visual/cold work. Remaining untouched main020–036 and052–058, occupation
+205–209 and priorMEDIUM/NF units are not dropped to make a smaller goal.
 
 ## Success criteria for the immediate next step
 Actual returned grades and full target proof statuses verified against exact
@@ -75,6 +91,17 @@ locator corrections and length/collection failures remain immutable.
 [held back: collaborators' unpublished work]
 
 ## What the previous sessions produced
+2026-11-02 continuation checkpoint628466d: originalproofdepth108 accepted
+(v24), allrawmainMEDIUM/qualifiedstates immutable. Rootadopted tube170–177
+and completedclock059–060; stored352pendingarchive members separately
+withoutadoption. Newsourcebridge draft passed independentHIGH88member
+capsule598ec3cd...; reviewed182proposal changesoneparagraph only. Fresh
+productionintegration in separate36c0fec compiled260pages/clean and passed
+freshDeepSeekHIGH; privatecandidatebranch+independent<HUB>clone synced.
+Rootadoption/ACTIVEintegration stillpending. Workermessages/modelcapacity
+errors were author-turn interruptions; never treat them as native review
+failures or duplicate completedreviews. Fresh productionworker succeeded.
+
 2026-11-02 depth checkpoint8935dc8: source094–100 HIGH accepted85d257f,
 finiteGram194–198 HIGH accepted e4dd1ef, white210–213 HIGH acceptedadfe267.
 All raw reviewer slips and missed extra controls adjudicated without source
@@ -2161,26 +2188,31 @@ local canonical copies still old at observation, correct external source
 held. Main p2source/PDF/Lean facts unchanged; no reviewer live.
 
 ## Repo & git state at handoff
-ROOT master pre-handoff7a9e8026eedce61fdbdd7a5a729411c19107836d,
-clean and origin/<HUB> equal. ACTIVE research8935dc8,
-clean/synchronized; verify full HEAD and ancestry rather than equality to
-this pre-handoff snapshot. Scientific887fbfbe0fa4368d6b32a436615d73349b2445d8
-unchanged,257pagePDF SHA
-10bfeae6eb576e23ba928b8ef9eca968d87f23ac7eff884c632bf50acb3294c9.
-Existing80finitefacts/22seams unchanged. Native/author-image WIP remains in
-named external directories; preserve through terminal collection. This
-HANDOFF-only commit is pushed and <HUB> canonical root synchronized.
+ROOTmaster pre-handoff a63b03482c45d20cd73693edd8c3aa223d7f8934,
+clean/origin equal. ACTIVE628466d38725b89ad7a25bd3bb567a19e7136e13,
+clean/pushed/<HUB>equal. Its scientificsource887 and257pagePDF SHA
+10bfeae6eb576e23ba928b8ef9eca968d87f23ac7eff884c632bf50acb3294c9 unchanged.
+Separate productioncandidate36c0fec privatelypushed/<HUB>parity,260page
+PDF SHA0e8d39bd2a7eff3daa1f77789af6abcb259d95571a4c2bfca0d7a43922010dfa.
+No merge toACTIVE/master and no finaladoption yet. EightyfiniteLean facts/
+22seams unchanged; no companionapproval. Externalreceipts and Gitbundles
+retained by named paths. ThisHANDOFFcommit is pushed/synced separately.
 
 [held back: collaborators' unpublished work]
 
 ## Risks to monitor
-The broad MAIN report was incomplete atHIGH; raw counts and undefined
-qualified rows cannot be used as accepted proof coverage. UnitA's original
-65k task limit yielded no report; same-session131k continuation completed
-it. New complex units use131k to allow a final report, not relax confidence.
-Keep rawLF source lines distinct from renderer splitlines/formfeeds and
-preserve missing finalLF. Prior status annotations leaked into UnitA identity
-metadata and were disclosed; no strict blindness/cold credit. New identity
-packets strip them. All current scientific28files exact887; old448inventory
-has known PROJECT-GOAL governance delta. Kimi image/cold access remains
-unresolved, and current wiki status refresh is due after review recovery.
+Do not confuse HIGH header, suppliedbody presence or processstop with
+verifiedcoverage. Preserve all report-onlyerrors and incomplete-report
+history; no confidence-only reruns. Fullsource includes historicalreview
+annotations: no prior REPORTS/identityverdicts supplied is not strict
+textualblindness. Read main-deepseek/source-history-blindness-disclosure.md;
+no existing scoped review has coldcredit. Finalcoldpacket must handle this.
+Case2 repair uses translatedTESTS in ONEstationary covariance pairing,
+never PSD of an independentlyshifted crosskernel. Sourcep14 duplicatesx;
+p21 omits timeoffset only, spatialorigins retained. Feature is L2norm1;
+A-B first-minus-second. No spatialpointwiseGaussian-monotonicity claim.
+Productioncandidate has new214 andexact182; oldsource887 evidence binds
+its frozenbodies, not automatically newfullsource/PDF. Apply explicitmap.
+Wiki active-status ticket tk-20261102-052608-codex-stratonovich-main-depth
+wasQUEUED, no terminalreceiptverified; read its receipt FILE on<HUB>
+(repo-queue receipt is writer-only, not lookup). Kimi image/cold gate open.
