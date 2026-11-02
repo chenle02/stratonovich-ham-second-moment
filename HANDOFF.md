@@ -1,42 +1,48 @@
-Last updated: 2026-11-02 02:07 UTC (Codex)
+Last updated: 2026-11-02 02:15 UTC (Codex)
 
 LATEST USER DIRECTION: derive the actual constants, whatever computation yields.
 Chen matching is not a completion requirement.
 
 ## ⏭ Next session: where to stand and what to do
 
-Inspect the existing cutoff-v2 DeepSeek review, then collect/adjudicate it
-at terminal state without restarting it. ACTIVE research is
+Inspect and collect the existing SF04 supplementary DeepSeek text/application
+review at terminal state; do not restart it. ACTIVE is
 ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave,
 branch research/fixed-mask-young-20261031. Progress.md is the authority.
-Le explicitly resumed the FULL goal and authorized parallel subagents.
+Le resumed the FULL goal and authorized parallel author-side subagents.
 
-The review attempt is the sibling stratonovich-cutoff-overlap-proof-review-v2,
-native session ses_e66013385ffehNPjMsGGJhgfzX, PID2685802 under supervisor2685759.
-At capture it was LIVE with step_start and no exit.json. Revalidate via
-native/exit.json and the actual process. Scientific source dd27f38,
-carrier d9ee65027b50e5eda188a80a4cd4fb0b866b0dc4. This is a non-blind
-production followup, not a cold vote. All seven production corrections are
-written; successor remains unadopted pending that report.
+Attempt: sibling stratonovich-sf04-text-review-v1, PID2728316 under
+wrapper2728286, handle73653. At capture LIVE with no terminal receipt.
+Inspect native/exit.json and the actual process. Common scientific887,
+clean carrier3f5563c7ea0c6f8b99390e0988fcf4c502ca4960,
+promptSHA1b08a39ecb9e17d6fc1c4d71b3e27b935c99b5deaf07f28a688018d90f72c9d0.
+Six complete consumer modules and exact Teschl/Friz mathematical extracts
+are supplied. This is NOT source-image, full SF04, synthesis or cold
+clearance. SF04-01/07/11 remain INCONCLUSIVE on this text-only route.
 
-Kimi source-image attempt is TERMINAL monthly429, zero report/read credit;
-reviews/2026-11-02-sf04-young-kimi/ preserves the complete evidence.
-No unchanged retry, purchase or model substitution. The native image tool
-was enabled in a task-local profile; old canonical composition remains
-Opus-specific and cannot be passed by relabelling DeepSeek/Kimi receipts.
+Cutoff-v2 review is now TERMINAL and scoped accepted: dd27f38 source,
+adoption23b484a, actual DeepSeek PASS_WITH_NOTES/HIGH/F01-F10,48native
+archive members readback verified. All seven production requests closed
+on their named inputs. Preserve the report-only reversed cone identity;
+the proof is correct and unchanged. No full local-flow theorem is claimed.
 
-After bounded cutoff disposition, prioritize the original full manuscript
-verification. General local-flow assembly is a separate program target,
-not a substitute for whole/source/visual/final-cold obligations. Derive
-actual constants; do not force Chen endpoints. Goal remains ACTIVE.
+Kimi image attempt TERMINAL monthly429, zero report/read credit. See
+reviews/2026-11-02-sf04-young-kimi/. No unchanged retry/purchase/substitute.
+Old canonical composition is Opus-specific and remains unmet under the
+new authorized routes; do not relabel receipts or reduce coverage.
+
+Continue the original all-model actual-constant completion contract.
+Whole/source/visual/fresh-cold gates remain OPEN; no forced Chen endpoints.
+Wiki status maintenance queued tk-20261101-211105-codex-stratonovich-resumption;
+verify exact receipt before counting publication. Goal remains ACTIVE.
 
 ## Pre-flight checks
 
 1. Confirm this literal root and clean master. The pre-handoff root baseline
-   is 1d02a1ec4861594344bb3c29228f8bb21ed9f2c4; verify ancestry, not equality
+   is 696ec4bce8b33bda8d2d1e00fdb7362fe51614c2; verify ancestry, not equality
    to the later handoff commit. Preserve any foreign work.
 2. In ACTIVE, check git status, branch, latest Progress.md and ancestry of
-   ee44505d354ef85ce47dc5d49ebddf4e16af1080. Fetch serially and compare
+   e5690b466546f7476b36adb690803b821cad1afa. Fetch serially and compare
    local/origin/<HUB> before edits. Recorded baseline was clean/equal.
 3. Inspect the exact reviewer attempt above: exit.json is authoritative
    terminal evidence; otherwise check PID and session. Never infer terminal
@@ -49,35 +55,40 @@ actual constants; do not force Chen endpoints. Goal remains ACTIVE.
 5. Read current PROJECT-GOAL.md and completion-obligations.md under
    reviews/2026-11-02-resumption/. Preserve all original models and all
    86primary frames/257pages/28TeX/44sections/213proof obligations.
-6. Kimi session76482/PID2686747 and all older named reviewer handles are
-   TERMINAL. The latest actual Kimi attempt has monthly429 and no vote.
-   DeepSeek native session named above is the only reviewer live at capture.
+6. Kimi session76482/PID2686747 and cutoff-v2 PID2685802 are TERMINAL.
+   Kimi has monthly429/no vote. SF04-text PID2728316 is the only reviewer
+   live at capture; use actual process/receipt evidence on resumption.
 7. The wiki page is read-only here; maintenance goes through the canonical
    queue. Local wiki snapshots may lag <HUB>. No correspondence,
    sibling edits, new companion, HPC or public release is authorized.
 
 ## Concrete deliverables for the next session
 
-Collect the existing cutoff production followup with actual route, exact
-prompt/source bindings, complete native archive/readback and every finding
-adjudicated. Then continue full source/visual/whole/fresh-cold verification
-under authorized DeepSeek V4 Pro + Kimi-K3, retaining every unmet gate.
-Do not expand into a new local-flow theorem merely to avoid final review.
+Collect the existing SF04 text audit with actual route, complete prompt/source
+bindings, native archive/readback and findings adjudication. Keep exact-image
+and official component gates open. Continue the full original review contract
+and canonical wiki queue followup without expanding optional theory instead.
 
 ## Success criteria for the immediate next step
 
-Actual terminal report and HIGH threshold verified; all seven production
-requests and O1-O3 regressions explicitly adjudicated. No C-Holder premise
-is inserted: Young regularity belongs to M,V and the ordinary integrand C
-is bounded/strongly continuous. Preserve both phase components, same source,
-original W-measurable countable events and source-limit quantifiers.
-A scoped pass is not whole-project or source-image completion.
+Actual report and source/text reading scope verified, every finding adjudicated;
+no image credit from extracted text and no whole-synthesis vote from a bounded
+source audit. Preserve all full scientific/model/source/visual/cold obligations.
+The accepted cutoff proof uses M/V Young regularity, bounded continuous C,
+both phase components and same-source countable original-W identities.
 
 ## Anti-success criteria
 
 [held back: collaborators' unpublished work]
 
 ## What the previous sessions produced
+
+2026-11-02 followup:23b484a accepts bounded cutoff production after actual
+HIGH report/all10checks and full48-member archive; reviewer-only cone/nullset
+wording errors retained/adjudicated, proof unchanged. e5690b4 binds one
+actual SF04 text/application review, image/edition gates explicitly open.
+Wiki maintenance exactticket tk-20261101-211105-codex-stratonovich-resumption
+queued, not completed. Main257-page PDF/80finite facts unchanged.
 
 2026-11-02 resumed checkpoint: d7762c3 reconciles ACTIVE/current frontier;
 dd27f38 completes seven production corrections in proof-v2;9e1bef3 records
@@ -2112,8 +2123,8 @@ held. Main p2source/PDF/Lean facts unchanged; no reviewer live.
 ## Repo & git state at handoff
 
 ROOT master before this HANDOFF-only commit:
-1d02a1ec4861594344bb3c29228f8bb21ed9f2c4, clean and origin/<HUB> equal.
-ACTIVE research baseline ee44505d354ef85ce47dc5d49ebddf4e16af1080,
+696ec4bce8b33bda8d2d1e00fdb7362fe51614c2, clean and origin/<HUB> equal.
+ACTIVE research baseline e5690b466546f7476b36adb690803b821cad1afa,
 clean and synchronized. Newer workflow commits must be inspected normally.
 Cutoff scientific successor dd27f38e55506930352725bdb4ce6162283c2c3d.
 Main scientific epoch887fbfbe0fa4368d6b32a436615d73349b2445d8 unchanged;
