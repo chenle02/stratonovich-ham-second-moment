@@ -1,94 +1,79 @@
-Last updated: 2026-11-02 05:49 UTC (Codex)
+Last updated: 2026-11-02 10:11 UTC (Codex)
 
-LATEST USER DIRECTION: derive the actual constants, whatever computation yields.
-Chen matching is not a completion requirement.
+LATEST USER DIRECTION: DeepSeek V4 Pro is MAIN reviewer; derive the actual
+constant without forcing Chen matching. Full goal ACTIVE.
 
 ## ⏭ Next session: where to stand and what to do
-
-Collect the TWO existing MAIN deep reviews at terminal state, without
-restarting either. Goal ACTIVE; DeepSeek V4 Pro is MAIN reviewer by Le's
-explicit direction. ACTIVE research is
+Inspect the existing MAIN review attempts and collect completed evidence;
+do not restart them. Goal ACTIVE; DeepSeek V4 Pro is MAIN by Le's explicit
+direction. ACTIVE research checkout is
 ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave,
 branch research/fixed-mask-young-20261031; Progress.md is authority.
 
-LIVE at capture:
-- UnitB PROOF042-045 (static-to-interval): sibling
-  stratonovich-main-deep-b-v1, PID3148173/supervisor3147994, handle56604,
-  session ses_e65399441ffe8l76vpBV5DEzX0. Carrier8cf1476bad3376535c8ac25df4ba13d9f5446717;
-  promptSHA6056eba446071e4d69c2367bec9ef2b28e5b16d1ee8623977df901bf1fd061c2.
-- Wave PROOF066-074 (three temporal plus six wave-variance proofs): sibling
-  stratonovich-main-deep-wave-v1, PID3146523/wrapper3146496, handle34604.
-  Carrier1cb2dcf0005621ee6efbf56329e341f538c5cabd;
-  promptSHAb4e1d93b78d1c20ed3378e75c81913d262f24ef3878853c829c5844ae9e9b92e.
-Both have exact frozen887science, complete input bodies and taskcap131072,
-no automatic retries. Inspect actual native/exit.json/process, not old todos.
+Current source audit: sibling stratonovich-main-deep-source-v1,
+PID3582719/wrapper3582714, handle2253; carrier a01d09050c272b90c1f425bbb481d8bb269b3096;
+promptSHA9728b44ee02e04399ac7d0e75406d3e8026e526ba82d99e80c9f83b9008bc727.
+Current masked101–103 audit: stratonovich-main-deep-masked-v1,
+PID3586933/supervisor3586814, handle48642;
+carrier e7566e3ec8f0181cee7057b5909bdea5a0b76eb7;
+promptSHA06c6dbc7c1d1e998b94c6553b1d4a9e20f31b4d536d55e4e7c40fa1729126e17.
+Current finite Gram194–198 audit: stratonovich-main-deep-gram-v1,
+PID3587123/supervisor3587110, handle87418;
+carrier e20bf73f170784b9aa86d7769c5eab09deb329f0;
+promptSHAd913768bd2f0df09946a048eb5d727e3dcb88d38860e89ae67e595de9adb024f.
+These three were LIVE at capture. Constructor004–006 packet is being
+prepared by completion_audit with added held primary pages; inspect its
+actual native launch/exit receipts before describing it as running.
 
-Scoped HIGH depth now accepted for PROOF037-041 (static UnitA) and
-PROOF061-065 (covariance), adoptione415c3c. All report-only density/equality/
-Q_z/Fock/blindness wording issues are adjudicated against unchanged correct
-source. UnitA original length-stop had no report; ONE same-session continuation
-completed the same review, not a second vote. Construction001-009 remains
-actualMEDIUM despite reportedCHECKED. Full MAIN is terminalMEDIUM with
-30CK/58undefinedCK-NH/125NF, not its incorrect78/135 summary. Corrected
-proof-index-v2 fixes only PROOF093 (actual deferred P:actual-operator-driver).
-
-Use main-deepseek/depth-ledger-v1.json and deep-audit-worklist.md. All213proofs,
-44sections,63global/main checks and source/image/render/fresh-cold gates
-remain required. These bounded units recover proof depth, not a smaller
-replacement goal. No mainTeX/PDF/80finitefact change or full-goal clearance.
-Kimi image/cold capacity/replacement question remains pending; no waiver.
-All other current reviewer processes are TERMINAL.
+All earlier A/B/C/D, covariance/wave/compact, constructor001–009,
+driver085–093 and calibration010–019 attempts are TERMINAL.
+Scoped HIGH depth now covers39named proofs; exact append-only inventory:
+reviews/2026-11-02-main-deepseek/depth-ledger-v4.json in ACTIVE.
+Constructor001–009, calibration010–019 and driver085–093 remain actualMEDIUM.
+Full MAIN remains MEDIUM; raw30CK/58undefinedCK-NH/125NF is preserved.
+Full213proofs/44sections/63checks, source/image/render/fresh-cold gates remain.
+No manuscript/PDF/80finitefact change or full-goal acceptance.
 
 ## Pre-flight checks
-
-1. Confirm this literal root and clean master. The pre-handoff root baseline
-   is 69fe9450b0d64105ca3b976a692eeadf409cd25d; verify ancestry, not equality
-   to the later handoff commit. Preserve any foreign work.
-2. In ACTIVE, check git status, branch, latest Progress.md and ancestry of
-   235224df4aaf79aa7b92da482cb93f82d4d21ff1. Fetch serially and compare
-   local/origin/<HUB> before edits. Recorded baseline was clean/equal.
-3. Full main3010935, construction3053225, UnitA original3049511 and
-   continuation3081094, covariance3083420 are TERMINAL. Inspect the two
-   NEW UnitB/Wave processes and exit receipts; never restart a live attempt.
-4. Verify proof-v2 and its three imported construction modules against the
-   frozen source-bindings in reviews/2026-11-02-cutoff-overlap-proof-v2/.
-   Original inventory has448files:447currently match and PROJECT-GOAL.md
-   alone differs by authorized reviewer-governance update93ef28f. All28
-   scientific TeX remain exact887; main257-page PDF SHA256 is
+1. Root master baseline fd05092c56dba1c14aa0402a9248162153783c88 before
+   this handoff-only commit; check ancestry and preserve foreign work.
+2. ACTIVE baseline717d087d068cbca8a69a6e66b74857f2373ea3a2 clean and
+   synchronized with origin/<HUB>. Fetch serially; inspect latest Progress.
+3. Check actual pid/exit receipts in the named external review directories.
+   Old B/Wave live entries were superseded by terminal HIGH reports.
+4. Corrected proof-index-v2 uniquely identifies deferred PROOF093; preserve
+   raw original index/report and all original collection/length failures.
+5. All28scientific TeX are exact887; main257-page PDF SHA256 is
    10bfeae6eb576e23ba928b8ef9eca968d87f23ac7eff884c632bf50acb3294c9.
-5. Read current PROJECT-GOAL.md and completion-obligations.md under
-   reviews/2026-11-02-resumption/. Preserve all original models and all
-   86primary frames/257pages/28TeX/44sections/213proof obligations.
-6. Kimi session76482/PID2686747, cutoff-v2 PID2685802 and SF04-text
-   PID2728316 and expanded SF04 PID2800827 are TERMINAL. Current live
-   UnitB/Wave attempts are named above. Goal ACTIVE; image/cold route remains
-   unresolved, without any source/model/confidence waiver.
-7. The wiki page is read-only here; maintenance goes through the canonical
-   queue. Local wiki snapshots may lag <HUB>. No correspondence,
-   sibling edits, new companion, HPC or public release is authorized.
+   Original448inventory has447matches plus authorized PROJECT-GOAL delta.
+6. Read PROJECT-GOAL.md and reviews/2026-11-02-resumption/completion-obligations.md.
+   Full original model,86primaryframes/257pages and all final gates persist.
+7. Kimi monthly-quota failure is terminal with no image credit; separate
+   capacity/replacement question remains unanswered. No model substitution,
+   correspondence, sibling edit, new companion, HPC or public release.
 
 ## Concrete deliverables for the next session
-
-Collect exact UnitB/Wave reports, validate route/prompt/source/individual
-proof coverage/native archives and adjudicate every finding. Continue the
-full depth worklist based on actual outcomes; pending interval inventory/
-splitting and canonical-upper units must retain complete upstream bodies.
-Do not relabel MEDIUM or missing reports as HIGH, or scoped depth as global
-clearance. Preserve all213proof and final source/visual/cold obligations.
+Collect current native reports, verify actual route/prompt/source and exact
+proof coverage, rehash complete archives, adjudicate all findings at their
+actual confidence. Continue genuine bounded depth work without discarding
+any of213proofs or mistaking optional exposition for a required repair.
 
 ## Success criteria for the immediate next step
-
 Actual returned grades and full target proof statuses verified against exact
 source bodies; explicit hypotheses, constants and limit orders checked.
 HIGH accepted only at its scoped target after adjudication. Source-image,
 main-global, old composition and cold gates stay distinct. Raw reports,
 locator corrections and length/collection failures remain immutable.
 
-## Anti-success criteria
-
 [held back: collaborators' unpublished work]
 
 ## What the previous sessions produced
+2026-11-02 checkpoint717d087: D049–051 accepted scoped HIGH; driver085–093
+and calibration010–019 preserved at MEDIUM with all findings adjudicated.
+Root verified119archive members and24source bindings. Depth-ledger-v4
+contains39scoped HIGH targets. Earlier B/wave adopted d76734c and C/compact
+adopted99136a0. All source/PDF/Lean bytes unchanged. Source/masked/Gram
+next native attempts running, constructor focused packet being prepared.
 
 2026-11-02 main depth recovery:fcf29f1 retains fullMAIN MEDIUM report160native
 members, corrects solePROOF093 locator and reconciles30CK/58qualified/125NF.
@@ -2158,25 +2143,18 @@ local canonical copies still old at observation, correct external source
 held. Main p2source/PDF/Lean facts unchanged; no reviewer live.
 
 ## Repo & git state at handoff
-
-ROOT master before this HANDOFF-only commit:
-69fe9450b0d64105ca3b976a692eeadf409cd25d, clean and origin/<HUB> equal.
-ACTIVE research235224df4aaf79aa7b92da482cb93f82d4d21ff1, clean/synchronized.
-Full-main evidence/index correctionfcf29f1; construction/length evidencec2d931d;
-scoped static/covariance HIGH adoptions e415c3c; current liveB/Wave235224d.
-Main scientific887 and source/PDFb2fda02 unchanged;257page PDF SHA256
-10bfeae6eb576e23ba928b8ef9eca968d87f23ac7eff884c632bf50acb3294c9.
-Existing80finite facts/22seams unchanged. All original archives preserved;
-new live native directories named above retained externally. No uncommitted
-scientific WIP. This handoff is pushed and canonical <HUB> synchronized
-immediately afterward, then parity checked.
-
-## Operating notes
+ROOT master pre-handoff fd05092c56dba1c14aa0402a9248162153783c88,
+clean and origin/<HUB> equal. ACTIVE research
+717d087d068cbca8a69a6e66b74857f2373ea3a2 clean/synchronized.
+Scientific source887fbfbe0fa4368d6b32a436615d73349b2445d8 unchanged,
+257pagePDF SHA10bfeae6eb576e23ba928b8ef9eca968d87f23ac7eff884c632bf50acb3294c9.
+Existing80finitefacts/22seams unchanged. Native WIP is in named external
+carrier directories only. Preserve it through terminal collection.
+This HANDOFF-only commit is pushed and <HUB> canonical root synchronized.
 
 [held back: collaborators' unpublished work]
 
 ## Risks to monitor
-
 The broad MAIN report was incomplete atHIGH; raw counts and undefined
 qualified rows cannot be used as accepted proof coverage. UnitA's original
 65k task limit yielded no report; same-session131k continuation completed
