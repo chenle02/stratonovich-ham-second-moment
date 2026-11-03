@@ -14,8 +14,8 @@
   committed with the source and matches every reviewed-candidate text page.
   Local/origin/<HUB> source parity is verified; no extra checkout exists.
 
-- **Review scope:** current indexv6/neutralv6 and depth-ledger-v42 bind the
-  integrated source:201 exact scoped HIGH,3 earlier editorial deltas,10
+- **Review scope:** current indexv6/neutralv6 and depth-ledger-v43 bind the
+  integrated source:204 exact scoped HIGH,3 earlier editorial deltas,7
   unaccepted lower-depth/current-report rows. These counts are not a completion
   percentage. The earlier complete MAIN report remains ungraded120CHECKED/
   94LIMITED on b4b6efc; the six new scoped results do not rewrite it or clear
@@ -32,9 +32,9 @@
   learning instruction is fulfilled in canonical Le-AI-Lab657586a; all retrieval,
   description/runtime/budget checks passed, push/<HUB> parity verified
   and unowned WIP preserved. Young104/105/106/107/109/111 and spatial136/137 are now adopted at
-  bounded HIGH. Raw119–124 is now adopted after its one factual correction. Masked101–103
-  is terminal pending adjudication, and static/planar024–029 has one live
-  native review; neither launch/header clears those targets.
+  bounded HIGH. Raw119–124 is now adopted after its one factual correction. Masked101–103 is now adopted after a factual version/input-scope correction.
+  Static/planar024–029 is terminal pending full root adoption; no whole-main
+  acceptance follows from these bounded units.
 
 - **ACTIVE fresh MAIN (2026-11-02):** Le resumed the full goal and selected
   DeepSeek V4 Pro MAIN. ONE fresh all214-proof/coupled-graph text audit is
@@ -12779,3 +12779,22 @@ flag; all28Git8ceTeX/PDF are reverified.201scopedHIGH,10unaccepted rows and
 3editorialdeltas are unchanged. The six newer analytic review bindings remain
 valid and distinct from their older previous-body hashes. This is metadata
 repair, not new acceptance, a source change or a whole-main/image/cold gate.
+
+
+### Complete masked moment/canonical transfer family adopted at scoped HIGH
+
+The actual DeepSeek V4 Pro original report is PASS_WITH_NOTES/HIGH,8checks
+PASS. One factual correction is PASS/HIGH,2checks PASS, no source repair.
+Root rejects the returned false arbitrary-version criterion and overclaimed
+unrelated primary-input scope; the correction constructs the proper fixed-point
+continuous modification/Fubini-average proof and retracts those claims.
+The source already had the correct argument. The original parser's8missing
+check errors are also preserved as a field-name mismatch; an exact additive
+check-field adapter binds all8 actual identities, not extra votes.
+
+All74+12capsule members, actual prompt/model/tools0/stop/frozen source/original
+message prefix and3current body bindings are verified.101–103 are adopted;
+108/109/110 remain input contracts only. Ledgerv43:204scopedHIGH,7unaccepted
+rows plus3editorialdeltas; prior24metadata corrections persist. No TeX/PDF/
+Lean or original-scope change;010 and whole-main/source-image/full-render/
+Kimi/fresh-cold/final-delivery gates remain open. No further continuation.
