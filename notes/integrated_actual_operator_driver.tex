@@ -274,30 +274,79 @@ Proposition~\ref{P:wave-two-variances}.
 \end{lemma}
 
 \begin{proof}
-  By~\eqref{E:driver-covariance-row}, the finite matrix forms of
-  $X_N(I)=\sum_{j\le N}g_jA_j(I)$ are the orthogonal Gaussian projections
-  of $\ell_R(I;z,w)$ onto $g_1,\ldots,g_N$. Thus,
+  By~\eqref{E:driver-covariance-row}, for real Schwartz $z,w$,
   \[
-    \E|\langle X_N(I)z,w\rangle_E|^2\le\E|\ell_R(I;z,w)|^2.
+    \langle X_N(I)z,w\rangle_E
+    =\sum_{j\le N}g_j\E[g_j\ell_R(I;z,w)]
+    =\mathcal P_N\ell_R(I;z,w),
   \]
-  These are noise-test-basis projections, not source mollifiers. Choose
-  a real Schwartz orthonormal basis $\{e_k\}$ of $E$. Independence of the
-  finite $g_j$ and phase Parseval give, for Schwartz $w$,
-  \begin{align*}
-    \sum_{j\le N}\|A_j^{*,E}w\|_E^2
-    &=\E\|X_N^{*,E}w\|_E^2
-    =\sum_k\E|\langle X_Ne_k,w\rangle_E|^2\\
-    &\le b_I\|w\|_{E_{s-\gamma}}^2.
-  \end{align*}
-  Apply~\eqref{E:wave-input-variance} first to finite phase sums and then
-  use nonnegative monotone convergence. The other direction uses
-  \eqref{E:wave-output-variance}, with input fixed and output $e_k$ varying,
-  to bound $\sum_{j\le N}\|A_jz\|_E^2$ by the same expression. Extend
-  these inequalities to $E$ by density. Since
-  $\|z\|_{E_{s-\gamma}}=\|D_\gamma J_0z\|_{H_0}$, they give
-  \eqref{E:driver-two-variances}. The localization follows from
-  \eqref{E:driver-actual-localization}; no sum of individual
-  $j$-dependent gain bounds was used.
+  where $\mathcal P_N$ is the orthogonal projection in $L^2(\Omega)$
+  onto the span of $g_1,\ldots,g_N$. In particular,
+  \[
+    \sum_{j\le N}|\langle A_j(I)z,w\rangle_E|^2
+    =\E|\langle X_N(I)z,w\rangle_E|^2
+    \le\E|\ell_R(I;z,w)|^2.
+  \]
+  These are projections onto the actual noise-test basis, not source
+  regularizations. The two variance bounds of
+  Proposition~\ref{P:wave-two-variances}, with the mean-square columns
+  of Proposition~\ref{P:wave-square-columns}, apply to these same raw
+  forms and the budget~\eqref{E:driver-short-variance-budget}.
+
+  Choose a real Schwartz orthonormal basis $\{e_k\}$ of $E$.
+  Fix real Schwartz $w$. For every finite phase truncation $K$,
+  \[
+    \begin{split}
+      \sum_{k\le K}\sum_{j\le N}
+      |\langle A_j(I)e_k,w\rangle_E|^2
+      &=\sum_{k\le K}\E|\langle X_N(I)e_k,w\rangle_E|^2\\
+      &\le\sum_{k\le K}\E|\ell_R(I;e_k,w)|^2
+      \le b_I\|w\|_{E_{s-\gamma}}^2,
+    \end{split}
+  \]
+  by~\eqref{E:wave-input-variance}. Let $K\to\infty$.
+  Parseval in the phase space and nonnegative monotone convergence,
+  with $N$ still finite, give
+  \[
+    \sum_{j\le N}\|A_j(I)^{*,E}w\|_E^2
+    =\E\|X_N(I)^{*,E}w\|_E^2
+    \le b_I\|w\|_{E_{s-\gamma}}^2.
+  \]
+  Conversely, for fixed real Schwartz $z$, use
+  \eqref{E:wave-output-variance} with the output basis varying:
+  \[
+    \begin{split}
+      \sum_{k\le K}\sum_{j\le N}
+      |\langle A_j(I)z,e_k\rangle_E|^2
+      &=\sum_{k\le K}\E|\langle X_N(I)z,e_k\rangle_E|^2\\
+      &\le\sum_{k\le K}\E|\ell_R(I;z,e_k)|^2
+      \le b_I\|z\|_{E_{s-\gamma}}^2.
+    \end{split}
+  \]
+  The same phase Parseval limit gives
+  \[
+    \sum_{j\le N}\|A_j(I)z\|_E^2
+    =\E\|X_N(I)z\|_E^2
+    \le b_I\|z\|_{E_{s-\gamma}}^2.
+  \]
+  Thus both directions use their respective actual Hilbert-Bessel
+  bounds; neither follows from retaining only one variance.
+
+  These inequalities extend at each finite $N$ to the full
+  $E_{s-\gamma}$ input space. Indeed,
+  Lemma~\ref{L:driver-gain-localization} gives
+  $A_j:E_{s-\gamma}\to E_{s+1-\gamma}\subset E$.
+  Its adjoint gain, at $r=s+\gamma-1$, gives the same map for
+  $A_j^{*,E}$. The inclusion holds since $\gamma<1$.
+  Approximate the input by Schwartz phases and pass each of the
+  finitely many operator terms to the limit. The resulting constant
+  is still $b_I$, independent of $N$; individual $j$-dependent gain
+  constants were not summed.
+  Restricting to $E$ and using
+  $\|z\|_{E_{s-\gamma}}=\|D_\gamma J_0z\|_{H_0}$ gives
+  \eqref{E:driver-two-variances} as two operator quadratic inequalities.
+  Both localizations follow from~\eqref{E:driver-actual-localization}.
+  No self-adjointness or projection property of $P_\chi$ is assumed.
 
   The coordinates of $m_{R,I}(z)$, for Schwartz $z$, are the literal raw
   forms $\ell_R(I;z,e_k)$ and belong to the closed first chaos $W(H_W)$.
@@ -410,51 +459,100 @@ Proposition~\ref{P:wave-two-variances}.
 \end{lemma}
 
 \begin{proof}
-  The actual finite families $a_j$, $j\le N$, now satisfy every hypothesis
+  The actual finite families $a_j$, $j\le N$, satisfy every hypothesis
   of Proposition~\ref{P:localized-finite-variance} and
-  Corollary~\ref{C:finite-gaussian-operators}: both localizations, both
-  weighted variances, and the independent real $g_j$ have been proved.
-  Thus, their coefficients are compact, and the finite sums satisfy the
-  bound in~\eqref{E:driver-fixed-schatten}, uniformly in $N$.
-  The fixed cutoff factor may depend on $R,T$.
+  Corollary~\ref{C:finite-gaussian-operators}: both localizations,
+  both weighted variances and the independent real $g_j$ have been
+  proved in Lemma~\ref{L:driver-actual-variances}.
+  Thus the coefficients are compact, and their finite Gaussian sums
+  satisfy~\eqref{E:driver-fixed-schatten}, uniformly in $N$.
+  The fixed cutoff norm may depend on $R,T$.
 
-  Apply Lemma~\ref{L:driver-dominated-tails} to
-  \eqref{E:driver-compact-tail-envelopes}, whose fixed-interval envelopes
-  belong to $S_{q/2}$. Both tail trace powers tend to zero. For $M>N$,
-  the two variances of $\sum_{j=N+1}^Mg_jA_j(I)$ are bounded by the
-  corresponding tails. Lemma~\ref{L:driver-gaussian-tail-average} and
-  eigenvalue max-min show that its expected $S_q$ norm to the $q$th power
-  tends to zero, uniformly in $M>N$. Since the operator norm is at most
-  the $S_q$ norm, this gives $L^q(\mathcal B(E))$ Cauchy convergence.
-  This Cauchy estimate uses the vanishing tail traces.
+  Fix an admissible even $q\ge2$, $q\gamma>d$.
+  Both positive compact envelopes in
+  \eqref{E:driver-compact-tail-envelopes} belong to $S_{q/2}$.
+  Lemma~\ref{L:driver-dominated-tails} therefore gives
+  \[
+    \operatorname{Tr}T_{{\rm out},N}^{q/2}\longrightarrow0,
+    \qquad
+    \operatorname{Tr}T_{{\rm in},N}^{q/2}\longrightarrow0.
+  \]
+  For $M>N$, put
+  $Y_{N,M}=\sum_{j=N+1}^Mg_jA_j(I)$.
+  After the unitary $J_0$ transport, its two finite variances are
+  \[
+    V_{{\rm out},M}-V_{{\rm out},N}\le T_{{\rm out},N},\qquad
+    V_{{\rm in},M}-V_{{\rm in},N}\le T_{{\rm in},N}.
+  \]
+  Lemma~\ref{L:driver-gaussian-tail-average} and positive eigenvalue
+  max-min comparison now give the uniform tail estimate
+  \[
+    \sup_{M>N}\E\|Y_{N,M}\|_{S_q}^q
+    \le(q-1)^{q/2}
+    \frac{\operatorname{Tr}T_{{\rm out},N}^{q/2}
+    +\operatorname{Tr}T_{{\rm in},N}^{q/2}}2
+    \longrightarrow0.
+  \]
+  The average of the two trace powers is retained. The comparison
+  uses eigenvalues, not operator monotonicity of the $q/2$ power.
+  Since $\|Y_{N,M}\|\le\|Y_{N,M}\|_{S_q}$, this proves genuine
+  $L^q(\Omega;\mathcal B(E))$ Cauchy convergence; a uniform moment
+  bound alone would not suffice.
 
-  All finite sums lie in the separable closed real span of the countably
-  many deterministic $A_j(I)$ in $\mathcal B(E)$. For an elementary
-  realization of the limit, choose a subsequence with summable $L^q$
-  norms of successive differences. Their $L^1$ norms are summable, so
-  the pointwise operator-norm differences sum absolutely almost surely.
-  Completeness gives a limit in that span; Fatou and the Cauchy property
-  give convergence of the whole sequence in $L^q$. This proves strong
-  measurability on the same original space, with no new noise.
-  Different admissible even indices give the same limit by uniqueness
-  of convergence in probability. Choosing a larger even index yields
-  convergence for every finite operator-norm moment $p\ge1$.
+  All finite sums lie in the separable operator-norm closed real span
+  $\mathcal F_I$ of the countably many deterministic $A_j(I)$.
+  Choose $N_k$ increasing so that
+  $\|X_{N_{k+1}}(I)-X_{N_k}(I)\|_{L^q\mathcal B(E)}\le2^{-k}$.
+  Their $L^1$ norms are summable. Tonelli therefore shows that the
+  pointwise operator-norm differences sum absolutely almost surely.
+  Completeness gives a limit in $\mathcal F_I$ on the original
+  probability space; assign it zero on the exceptional null set.
+  It is strongly measurable as a limit of separably valued finite
+  Gaussian sums. Fatou and the Cauchy property give convergence of
+  the whole sequence in $L^q$ to this limit $X_R(I)$.
+  No new noise or probability space has been introduced.
+  Limits constructed at different admissible even indices agree by
+  uniqueness of convergence in probability. For each requested
+  finite $p\ge1$, choose an admissible even $q\ge p$ and use
+  Lyapunov to obtain $L^p$ operator-norm convergence to that same limit.
+  One fixed Schatten index is not used to infer all moment orders.
 
-  An almost surely norm-convergent subsequence makes the limit compact.
-  Singular-value Fatou gives~\eqref{E:driver-fixed-schatten}. Every
-  continuous linear functional is an $L^2$ limit of centered Gaussians,
-  as are finite combinations, so the limit is jointly centered Gaussian.
-  The fixed matrix rows of $X_N(I)$ are the orthogonal projections of
-  the literal raw forms onto the complete noise basis. They converge to
-  those forms in $L^2$. Operator-norm $L^2$ convergence identifies their
-  other limit with $\langle X_R(I)z,w\rangle_E$.
+  The compact operators are norm closed, so an almost surely
+  norm-convergent subsequence makes $X_R(I)$ compact valued.
+  Singular-value Fatou applied to the finite uniform bound gives
+  \eqref{E:driver-fixed-schatten} at each admissible even $q$.
+  Every continuous real linear functional of $X_R(I)$ is an $L^2$
+  limit of centered finite Gaussian sums; convergence of means,
+  variances and characteristic functions makes it centered Gaussian.
+  The same applies to finite linear combinations of these functionals,
+  proving joint Gaussianity on the given space.
 
-  For a long interval, partition it into finitely many intervals of length
-  at most one. Their indicators add to the long indicator except at finitely
-  many endpoints, which have zero raw norm by the common-support temporal
-  estimate. Raw completion and linearity give exact additivity of the forms.
-  Strong-integral additivity gives it for every $X_N$ and hence for the
-  operator limits. No long-$h$ version of the short-interval bound is used.
+  For each fixed real Schwartz $z,w$, the scalar rows
+  $\langle X_N(I)z,w\rangle_E$ are the orthogonal projections of
+  the actual completed raw form $\ell_R(I;z,w)$ onto the complete
+  noise basis. That form lies in the original closed first chaos,
+  so these projections converge to it in $L^2(\Omega)$.
+  Operator-norm $L^2$ convergence also gives convergence to
+  $\langle X_R(I)z,w\rangle_E$. Uniqueness of the $L^2$ limit
+  identifies these two actual variables on the same space, not
+  merely their laws.
+
+  For a fixed long interval, choose a finite partition into intervals
+  of length at most one. Their actual indicator tests add to the
+  long-interval test except at finitely many endpoints. The masked
+  wave products have common compact spatial support, and the temporal
+  estimate~\eqref{E:driver-test-continuity} makes those endpoint
+  changes have zero raw norm. Raw completion and linearity give
+  exact additivity of the actual forms. The deterministic statewise
+  coefficient integrals, hence every $X_N$, add on the same partition.
+  Passing their finite-sum $L^p$ limits gives the corresponding
+  operator additivity and raw-row identity, independently of the
+  partition by common refinement. These are statements at each
+  fixed interval and partition; no uncountable intersection of
+  independently selected null sets is used.
+  No long-interval version of the short-$h$ bound is asserted.
+  The Schatten conclusion is a fixed-interval moment at admissible
+  even indices, not a Schatten-valued path or arbitrary-index claim.
   This proves Lemma~\ref{L:driver-interval-limit}.
 \end{proof}
 

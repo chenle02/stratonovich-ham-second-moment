@@ -11,13 +11,16 @@
   statements, label and citation sequences remain; 208 other proof bodies
   are identical to scientific b4b6efc. Root read the mathematical replays and
   full diff, verified the preserved source/build evidence, and checked the
-  clean 263-page PDF after storage cleanup. This candidate is not production
-  source and has no independent review grade. Its source identity is b4b6efc
-  plus patch 2300422d, with exact file/body hashes. A compact source-only
-  DeepSeek review packet is being prepared; no new call has started.
+  clean 263-page PDF after storage cleanup. The exact candidate has now received scoped DeepSeek V4 Pro
+  PASS/HIGH for the six new deductions and their actual input applications.
+  Exact installation and the clean 263-page production build are verified. Its source identity is b4b6efc
+  plus patch 2300422d, with exact file/body hashes. The compact source-only
+  review is terminal; root has read the full report and rehashed its capsule.
+  No whole-argument, image or cold gate follows from this component result.
 
 - **Current exact source (2026-11-02):** scientific editorial commit
-  b4b6efc is clean and synchronized with <HUB>. All28 TeX retain214
+  The six reviewed analytic clarifications are integrated in this commit.
+  All28 TeX retain214
   stable proofs;211 raw bodies are unchanged and034/189/193 have explicit
   editorial-only changes. Current indexv5 and neutralv4 bind the source;
   depth-ledger-v34 has158 exact scoped HIGH,3 editorial deltas pending the
@@ -12487,3 +12490,38 @@ projections, distinct cutoff envelopes and vanishing Gaussian tail traces;
 it adds no independent vote. All six new proof bodies remain pending review.
 Only source-sized packet generation is authorized, not another full checkout.
 The original all-model objective and main/image/render/Kimi/cold gates remain.
+
+
+### Six expanded analytic proofs pass the actual scoped HIGH review
+
+The new source-only DeepSeek V4 Pro run ses_e61604377ffeI15fqkZp863ywT
+returned PASS/high after 258.014 seconds, with all six AN checks, three
+application checks and the finite row PASS, no findings or required repairs.
+The native export verifies one exact 1,724,920-byte prompt, the actual route,
+zero tools, stop finish and unchanged clean carrier 75a46a9. Root read the
+full report, rehashed all 73 archive members and recorded the actual scope.
+
+The six new proof bodies are approved mathematically as deductions from
+their named inputs. The input bodies were checked for hypotheses and use,
+not all re-proved by this unit. Root records the finite-example j=1 omission
+without inventing independent coverage; its normalization is separately
+verified and no source repair follows. Prior MAIN/partial reports remain
+unchanged. Exact source installation/build is proceeding in ACTIVE with no
+new worktree or branch. The pending source commit and index rebind will
+record only these six new HIGH deductions, leaving all broader gates open.
+
+
+### Exact six-proof analytic integration verified
+
+Root independently rehashed all 214 current proof bodies and checked their
+statement/owner locators, including deferred093. Exactly088/091/108/110/125/126
+match the newly reviewed candidate; the other208 bodies are unchanged.
+All28 current TeX files match the frozen candidate. The rebuilt263-page PDF
+has0errors/undefined references/citations/overfull boxes, and every layout-
+text page equals the reviewed candidate. Its SHA is
+bd1bacf8bdf992ca2e271d671839dfd6a03cd9e84160327045ce45f6d93b7ab6.
+The actual PASS/HIGH six-deduction review and all10 application/finite checks
+are adjudicated and retained with full73-member native custody. This source
+unit is adopted. A source-compatible index/ledger receipt follows this
+commit; no neighbouring or whole-main grade is upgraded by this unit.
+No new branch/worktree, official companion, HPC, correspondence or release.

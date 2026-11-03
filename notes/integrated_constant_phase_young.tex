@@ -302,32 +302,96 @@ theorem.
 \begin{proof}
   The original paths lie in separable closed path spans by their Gaussian
   construction. Bounded composition in~\eqref{E:constant-phase-driver}
-  and the continuous Young map preserve strong measurability.
+  and the continuous Young map preserve strong measurability into
+  $C(\Delta_T;\mathcal B(F))$, where
+  $\Delta_T=\{(t,s):0\le s\le t\le T\}$ has the uniform norm.
+  Indeed, the continuous image of the separable driver space has
+  separable closure in this triangle space.
   Applying $\pi_C$ to Young Riemann sums gives the first identity
   in~\eqref{E:constant-flow-range}. Each increment applied to any
   state lies in $iE$; closedness of this subspace passes the property
   through sums and limits, giving the second identity.
 
-  On a ball of driver norm $K$, the local Lipschitz estimate and driver
-  convergence give convergence in probability of the flows. Uniform
-  Gaussian driver tails make the complement of this ball arbitrarily
-  small, uniformly in $\rho$. Hence convergence holds in probability
-  without restriction. Set $q=1/\theta<2$. For every finite $p$ and
-  $c>0$, $pC(1+x)^q\le cx^2+C_{p,c}$. Combine this inequality,
-  \eqref{E:constant-young-growth} and the uniform square-exponential
-  driver moment to obtain uniform flow moments of every order.
-  They imply uniform integrability of the $p$th powers of flow
-  differences, and therefore~\eqref{E:constant-flow-limit}.
+  Write $X_\rho=\|A^\rho\|_{C^\theta}$ and
+  $X_0=\|A\|_{C^\theta}$. Proposition~\ref{P:constant-phase-driver}
+  supplies $c_0>0$ and $H_0<\infty$ such that
+  \[
+    \sup_\rho\E e^{c_0X_\rho^2}\le H_0,\qquad
+    \E e^{c_0X_0^2}\le H_0.
+  \]
+  For $K\ge1$, let $L_K$ be the Lipschitz constant of
+  Proposition~\ref{P:constant-young-linear} on the driver ball of
+  radius $K$, in the whole time-triangle norm. On
+  $\{X_\rho\le K,\ X_0\le K\}$ it gives
+  \[
+    \|U_{A^\rho}-U_A\|_\infty
+    \le L_K\|A^\rho-A\|_{C^\theta}.
+  \]
+  Consequently, for $\varepsilon>0$ and any finite $q\ge1$,
+  Markov and the union bound give
+  \[
+    \mathbb P(\|U_{A^\rho}-U_A\|_\infty>\varepsilon)
+    \le2H_0e^{-c_0K^2}
+    +(L_K/\varepsilon)^q\E\|A^\rho-A\|_{C^\theta}^q.
+  \]
+  At fixed $K$ the second term tends to zero at arbitrary relative
+  source-width rates. Only then let $K\to\infty$ to obtain
+  convergence in probability. No independence of the raw, source
+  and residual drivers is required.
+
+  Put $\nu=1/\theta<2$. For each finite $r\ge1$ and $c>0$,
+  there is $C_{r,c}<\infty$ such that
+  \[
+    rC_T(1+x)^\nu\le cx^2+C_{r,c},\qquad x\ge0.
+  \]
+  This follows because $(1+x)^\nu/x^2\to0$ as $x\to\infty$,
+  while the remainder is bounded on compact intervals.
+  Use $c\le c_0$ and~\eqref{E:constant-young-growth} to obtain
+  \[
+    \sup_\rho\E\|U_{A^\rho}\|_\infty^r<\infty,\qquad
+    \E\|U_A\|_\infty^r<\infty.
+  \]
+  In particular, for fixed finite $p\ge1$ and
+  $V_\rho=\|U_{A^\rho}-U_A\|_\infty$, the $2p$ moments of
+  $V_\rho$ are uniformly bounded. For every $\varepsilon>0$,
+  \[
+    \E V_\rho^p
+    \le\varepsilon^p+
+    (\E V_\rho^{2p})^{1/2}
+    \mathbb P(V_\rho>\varepsilon)^{1/2}.
+  \]
+  The second term tends to zero by convergence in probability;
+  then let $\varepsilon\downarrow0$. This proves
+  \eqref{E:constant-flow-limit}. The square-exponential bound used
+  here is a driver bound; no square-exponential flow bound is needed.
 
   The free group is strongly continuous and bounded on the horizon.
-  Formula~\eqref{E:constant-physical-flow} gives composition, statewise
-  continuity and the asserted constant block. The map
-  $V(t,s)\mapsto S_F(t)V(t,s)S_F(-s)$ is bounded linear from the
-  continuous triangle-valued operator space into the Banach space
-  of bounded triangle-valued operator families, with norm at most
-  $C_T^2$. It transfers strong measurability, moments and convergence.
-  This does not assert operator-norm continuity of the physical free
-  group. Finally,
+  Define $\mathcal B_\infty(\Delta_T;\mathcal B(F))$ to be the
+  Banach space of all bounded operator families on $\Delta_T$.
+  The deterministic map
+  \[
+    \mathcal L(V)(t,s)=S_F(t)V(t,s)S_F(-s)
+  \]
+  is bounded linear from $C(\Delta_T;\mathcal B(F))$ into
+  this bounded-family space, with norm at most $C_T^2$, where
+  $C_T\ge\sup_{|r|\le T}\|S_F(r)\|$.
+  Hence it preserves strong measurability on the separable ranges and
+  gives, in particular,
+  \[
+    \|P_{A^\rho}-P_A\|_\infty
+    \le C_T^2\|U_{A^\rho}-U_A\|_\infty.
+  \]
+  All finite moments and uniform $L^p$ convergence therefore transfer
+  to the physical flows. This does not place those flows in the
+  norm-continuous triangle space or assert operator-norm continuity
+  of the free group.
+  For each fixed state, joint continuity follows by splitting a
+  physical-flow difference into the norm-continuous $U$ difference
+  and two strong free-group differences, using the uniform group bound.
+  Group cancellation gives composition. The finite constant block
+  $J_t(c_1,c_2)=(c_1+tc_2,c_2)$ satisfies $J_tJ_{-s}=J_{t-s}$,
+  which gives the asserted physical constant coordinates from
+  $\pi_CU_A=\pi_C$. Finally,
   \[
     P_A(t,s)-S_F(t-s)
     =S_F(t)(U_A(t,s)-I)S_F(-s)
@@ -431,32 +495,68 @@ theorem.
   above are continuous or bounded measurable on their separable ranges.
   Thus $Z_m$ is $W$-measurable and does not depend on the auxiliary
   $J$ used in source realizations.
-  Lemma~\ref{L:constant-source-solution} identifies the source version
-  of~\eqref{E:constant-raw-average} with the ordinary spatial integral.
+  At each fixed $\rho$, Lemma~\ref{L:constant-source-solution}
+  identifies the displacement as a distribution with the ordinary
+  source solution. Testing by this same $\phi$, with $\int\phi=1$,
+  therefore gives the almost sure identity
+  \[
+    O_\phi P_{A^\rho}(t,0)e_0
+    =C_\phi:=\int\phi(x)u_\rho^m(t,x)\ud x.
+  \]
+  This uses the displacement pairing and its constant displacement
+  coordinate in~\eqref{E:constant-raw-average}; it takes no point
+  trace of an $H^{1/2}$ state. All identities here are at one fixed
+  $\rho$, so no uncountable intersection of source-version events
+  is used.
 
-  We check that this is also the Bochner average from
-  Proposition~\ref{P:masked-source-moments}. Its uniform pointwise
-  $L^2$ bound is $Q_t$. Scalar Fubini gives
-  $\E\int|\phi u_\rho^m|\le Q_t\|\phi\|_1$.
-  For the ordinary integral $C_\phi$, weighted Cauchy--Schwarz gives
-  $\E|C_\phi|^2\le Q_t^2\|\phi\|_1^2$. Call the Bochner integral
-  $B_\phi$. For every bounded random variable $\Xi$, the continuous
-  $L^2$ functional $V\mapsto\E[\Xi V]$ commutes with that integral.
-  Absolute scalar Fubini then gives
-  $\E[\Xi B_\phi]=\int\phi\,\E[\Xi u_\rho^m]=\E[\Xi C_\phi]$.
-  Take $\Xi=\operatorname{sign}(B_\phi-C_\phi)$ to obtain equality
-  almost surely.
+  We verify that $C_\phi$ equals the Bochner $L^2$ average
+  $B_\phi$ from Proposition~\ref{P:masked-source-moments}.
+  That proposition gives the spatially uniform bound
+  $\|u_\rho^m(t,x)\|_2\le Q_t$, with $Q_t$ also independent of
+  source widths. Scalar Fubini gives
+  \[
+    \E\int|\phi(x)u_\rho^m(t,x)|\ud x
+    \le Q_t\|\phi\|_1<\infty.
+  \]
+  Thus the ordinary spatial integral exists almost surely.
+  Weighted Cauchy--Schwarz and scalar Fubini also give
+  \[
+    \E|C_\phi|^2
+    \le\|\phi\|_1\int|\phi(x)|\E|u_\rho^m(t,x)|^2\ud x
+    \le Q_t^2\|\phi\|_1^2.
+  \]
+  For every bounded real random variable $\Xi$ on the fixed source
+  space, $V\mapsto\E[\Xi V]$ is a continuous functional on $L^2$.
+  It therefore commutes with the Bochner integral, while scalar
+  Fubini is justified by
+  $\|\Xi\|_\infty Q_t\|\phi\|_1$. Consequently,
+  \[
+    \E[\Xi B_\phi]
+    =\int\phi(x)\E[\Xi u_\rho^m(t,x)]\ud x
+    =\E[\Xi C_\phi].
+  \]
+  Both averages are real $L^2$ variables. Taking
+  $\Xi=\operatorname{sign}(B_\phi-C_\phi)$ yields
+  $\E|B_\phi-C_\phi|=0$, so the two averages agree almost surely.
 
-  Proposition~\ref{P:constant-gaussian-flow} bounds the difference of
-  the source and raw observables by $\|O_\phi\|\|e_0\|$ times the
-  uniform physical-flow difference. It proves
-  \eqref{E:constant-tested-limit}, including its $L^2$ case.
-  This establishes the exact premise of
-  Proposition~\ref{P:masked-canonical-transfer}; since $\|\phi\|_1=1$,
-  that proposition gives~\eqref{E:constant-original-point-transfer}.
+  Proposition~\ref{P:constant-gaussian-flow} now gives, for every
+  finite $p$,
+  \[
+    \|B_\phi-Z_m(t,\phi)\|_{L^p}
+    \le\|O_\phi\|\|e_0\|
+    \big\|\|P_{A^\rho}-P_A\|_\infty\big\|_{L^p}
+    \longrightarrow0.
+  \]
+  This is~\eqref{E:constant-tested-limit}, including its $L^2$ case,
+  for the actual masked Bochner average, with arbitrary relative
+  source-width rates. It supplies the conditional convergence premise
+  of Proposition~\ref{P:masked-canonical-transfer} at the same fixed
+  mask, horizon, original covariance and observable.
+  Since $\phi\ge0$ and $\|\phi\|_1=1$, that proposition gives
+  \eqref{E:constant-original-point-transfer}.
   Zero covariance gives the free constant solution and equality.
   All source limits are at fixed mask and horizon, before time
-  asymptotics. No point trace of an $H^{1/2}$ displacement is used.
+  asymptotics.
   This proves Proposition~\ref{P:constant-raw-average}.
 \end{proof}
 

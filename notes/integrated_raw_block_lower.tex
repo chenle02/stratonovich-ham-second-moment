@@ -498,11 +498,15 @@ The latter retains both the mean and the actual residual noise.
   The everywhere-defined continuous Young map, fixed-time bounded
   free groups, finite products and bounded $O_\phi$ make $j_\delta$
   continuous and nonnegative on the whole input space.
-  Proposition~\ref{P:raw-block-gaussian-law} proves
-  \eqref{E:raw-block-square-identity}. Finite products of the local
-  Young flows have every finite moment by their Gaussian norm bounds
-  and H\"older, at fixed $\delta,N$. The Gaussian identity itself
-  did not require prior integrability of $j_\delta$.
+  Apply Proposition~\ref{P:raw-block-gaussian-law} directly to these
+  raw paths. Since $X+H$ is its exact translate, this proves
+  \eqref{E:raw-block-square-identity} with the original single
+  $Z=W(\Psi)$ and its variance $v$. Finite products of the local
+  Young flows have every finite unweighted moment by their Gaussian
+  path bounds and H\"older, at fixed $\delta,N$.
+  The Gaussian identity itself did not require prior integrability
+  of $j_\delta$. No source convergence under its exponential density
+  is used.
 
   To apply the masked comparison at the actual amplitude, put
   $\Gamma_\delta=g_\delta^2\Gamma$ and
@@ -516,20 +520,63 @@ The latter retains both the mean and the actual residual noise.
   $g_\delta^n$. Thus this is exactly the noise-only model at that
   amplitude.
 
-  Lemma~\ref{L:raw-block-restart} and the ordinary source identity
-  identify $U_{\delta,B}$ as the $L^2$ limit of the tested masked
-  ordinary solution driven by $W'$ at fast time $L=1/\delta$.
-  Its sources $g_\delta Y_{\mathrm{fast}}$ have the correct law,
-  contraction and raw test limit. Apply
-  Proposition~\ref{P:masked-canonical-transfer}, or equivalently
-  \eqref{E:constant-original-point-transfer}, to $\Gamma_\delta$
-  and this actual source limit. Since $\int\phi=1$,
+  We verify the source-limit premise of the masked comparison.
+  Keep $\delta,B,N$ fixed and use the single retaining source of
+  Lemma~\ref{L:raw-block-restart}. For $m<N$ let
+  $F_m=D_m^0(B)$ and put $F_N=D_N^0(\tau)$; write $F_{m,\rho}$
+  for the corresponding ordinary source factors, where both source
+  widths in $\rho$ tend to zero. Lemma~\ref{L:raw-block-restart}
+  and Proposition~\ref{P:constant-gaussian-flow} give factor convergence
+  in every finite $L^q$ and uniform bounds for every finite moment
+  of their norms. These statements are on the fixed finite horizons
+  $[0,(N+1)B]$ and $[0,B]$, and include both constant-response columns.
+  Set $n=N+1$ and
+  \[
+    C_\rho=\max\left(1,\max_{m\le N}\|F_{m,\rho}\|,
+    \max_{m\le N}\|F_m\|\right),\qquad
+    e_\rho=\max_{m\le N}\|F_{m,\rho}-F_m\|.
+  \]
+  Then $\sup_\rho\|C_\rho\|_q<\infty$ for every finite $q$, and
+  $\|e_\rho\|_q\to0$. Telescoping the actual ordered products gives
+  \[
+    \|F_{N,\rho}\cdots F_{0,\rho}-F_N\cdots F_0\|
+    \le n C_\rho^n e_\rho.
+  \]
+  Therefore, H\"older with exponents $4n$ and $4$ gives
+  \[
+    \big\|F_{N,\rho}\cdots F_{0,\rho}-F_N\cdots F_0\big\|_{L^2}
+    \le n\|C_\rho\|_{L^{4n}}^n\|e_\rho\|_{L^4}
+    \longrightarrow0.
+  \]
+  No uniform estimate in the growing number $N$ is needed: this
+  source limit is completed at each fixed $\delta,N$.
+  The physical source identification in
+  Lemma~\ref{L:constant-source-solution}, with the same $m_R$ and
+  initial state $e_0$, identifies the source product with the tested
+  ordinary masked solution at fast time $L=1/\delta$.
+  Boundedness of $O_\phi$ and $\|e_0\|=1$ thus identify
+  $U_{\delta,B}$ as its actual $L^2$ limit.
+  The sources $g_\delta Y_{\mathrm{fast}}$ have the correct law,
+  contraction and raw-test limit by Lemma~\ref{L:raw-block-restart}.
+
+  At positive source widths, $0\le m_R\le1$ multiplies each
+  nonnegative displacement Wick integrand by the product of its
+  vertex masks. Positive Green measures and covariance retain this
+  comparison for unequal, self and empty chains as well.
+  Proposition~\ref{P:masked-source-moments} gives the tested comparison,
+  and the just-proved $L^2$ convergence discharges the premise of
+  Proposition~\ref{P:masked-canonical-transfer} at $\Gamma_\delta$.
+  Its canonical unmasked moment limit uses the fixed-order joint
+  source limits and the absolutely summable order bounds.
+  Since $\phi\ge0$ and $\int\phi=1$, these facts give
   \[
     \E U_{\delta,B}^2
     \le\E|u_{\Gamma_\delta}(L,0)|^2.
   \]
-  This application describes the same noise-only fast law; it
-  changes neither the original slow $\Psi,Z$ nor $v$ in the density.
+  Only the noise-only source products were needed for this passage.
+  The shifted raw product is already the everywhere-defined
+  $j_\delta(X+H)$ in the Gaussian identity; no tilted source limit
+  or change of the original slow $\Psi,Z,v$ has been made.
 
   The ordinary change from fast $u$ to slow $t=\delta u$, with
   phase $(V,\delta V_t)$, transforms the unmasked source equation
@@ -540,7 +587,7 @@ The latter retains both the mean and the actual residual noise.
   and its fast cutoff is $\eta/\delta$.
   The canonical fixed-order and absolutely convergent series
   construction passes this law identity at fixed $\delta$ to the
-  raw moment, preserving every mixed and self-pairing term.
+  raw moment, preserving every mixed, unequal, self and empty chain.
   Lemma~\ref{L:exact-canonical-scaling} gives the final equality
   in~\eqref{E:raw-block-original-comparison}.
   The physical scale $r_T=T\delta$ is distinct from the fixed
@@ -564,65 +611,132 @@ The latter retains both the mean and the actual residual noise.
 \begin{proof}
   Fix $e_{\mathrm{rate}}>0$. Choose $0<\varrho<1/2$ with
   $\log(1-\varrho)>-e_{\mathrm{rate}}/3$, then choose the cone
-  constants, including fixed $B$, from
-  Lemma~\ref{L:raw-block-indexed-cone}.
-  For small $\delta$ the indices $s_m=m\delta B$ lie in $I$
-  with adjacent gaps at most $\omega$.
-  Define the measurable common-space event
+  constants, including an integer $B$ fixed independently of $\delta$,
+  from Lemma~\ref{L:raw-block-indexed-cone}.
+  The control $\Psi$ and eligible mask $R$ remain fixed throughout.
+
+  Choose a finite $p>2/(1-a)$ and put
+  $\gamma_p=p(1-a)/2-1>0$. From~\eqref{E:raw-block-moments} and
+  $N+1\le2/\delta$, Markov and the union bound give, for $\eta>0$,
+  \[
+    \begin{split}
+      \mathbb P(M_\delta>\eta)
+      &\le\eta^{-p}\sum_{m=0}^N
+      \E\|X_m\|_{C^\theta}^p\\
+      &\le A_p\eta^{-p}\delta^{\gamma_p},\qquad
+      A_p=2(C_{R,B}\sqrt p)^p<\infty.
+    \end{split}
+  \]
+  This estimate concerns the actual coupled blocks; no independence
+  is needed. At these fixed data $A_p$ is independent of $\delta$.
+
+  We also specify the deterministic tolerance used with this bound.
+  The primitive estimates in Lemma~\ref{L:raw-block-uniform-error}
+  give, for the constant-potential primitives $H_m^{\mathrm{stat}}$,
+  \[
+    \max_m\max(\|H_m\|_{C^\theta},
+    \|H_m^{\mathrm{stat}}\|_{C^\theta})\le H_0,\qquad
+    \max_m\|H_m-H_m^{\mathrm{stat}}\|_{C^\theta}\le C_B\delta.
+  \]
+  Apply Proposition~\ref{P:constant-young-linear} on the fixed
+  driver ball of radius $H_0+1$ and use the bounded free groups on
+  $[0,B]$. There is $L_B\ge1$, depending on these fixed $R,B,\Psi$
+  and the admissible exponents, such that on $\{M_\delta\le1\}$,
+  \[
+    E_{\mathrm{op},\delta}\le L_B(M_\delta+\delta).
+  \]
+  Set $\eta=\min(1,\epsilon_{\mathrm{op}}/(2L_B))>0$.
+  If $\delta\le\epsilon_{\mathrm{op}}/(2L_B)$, then
+  $M_\delta\le\eta$ implies
+  $E_{\mathrm{op},\delta}\le\epsilon_{\mathrm{op}}$.
+  Thus, for the measurable event on the original common space
   \[
     E_\delta=\{E_{\mathrm{op},\delta}\le\epsilon_{\mathrm{op}}\}
-    \cap\{|Z|\le\delta^{-1/4}\}.
+    \cap\{|Z|\le\delta^{-1/4}\},\qquad
+    p_\delta=\mathbb P(E_\delta),
   \]
-  Lemma~\ref{L:raw-block-uniform-error} and Chebyshev give
-  $\mathbb P(E_\delta)\to1$, because
-  $\mathbb P(|Z|>\delta^{-1/4})\le v\delta^{1/2}$.
-  This uses a union bound, with no independence from $Z$ or
-  between blocks.
+  Chebyshev for the same single $Z=W(\Psi)$, with $\E Z^2=v$, gives
+  \[
+    p_\delta\ge1-A_p\eta^{-p}\delta^{\gamma_p}
+    -v\delta^{1/2}\longrightarrow1.
+  \]
+  This is one union bound, with no independence between blocks or
+  from $Z$ and no product of block probabilities.
 
-  On $E_\delta$ the shifted blocks meet the cone hypotheses.
-  In particular $Y_{\delta,B}>0$, and
+  Let $C_\lambda$ be a Lipschitz bound for $s\mapsto\lambda_s$.
+  Take $\delta$ small enough, in addition to
+  $0<\delta<\min(1,1/B)$, that
+  \[
+    \begin{gathered}
+      \delta B\le\omega,\qquad
+      \delta\le\epsilon_{\mathrm{op}}/(2L_B),\qquad
+      C_\lambda\delta B\le e_{\mathrm{rate}}/3,\\
+      \delta|\log c_*|\le e_{\mathrm{rate}}/3,\qquad
+      A_p\eta^{-p}\delta^{\gamma_p}+v\delta^{1/2}\le1/2.
+    \end{gathered}
+  \]
+  Every constant has been fixed before this choice. The condition
+  involving $C_\lambda$ is vacuous if that constant is zero.
+  All source limits in Proposition~\ref{P:raw-block-point-comparison}
+  have already been completed at each such fixed $\delta$.
+
+  The indices $s_m=m\delta B$ lie in $I$ with adjacent gaps at most
+  $\omega$. On $E_\delta$ the shifted full-$F$ blocks therefore
+  satisfy Lemma~\ref{L:raw-block-indexed-cone}, retaining both phase
+  entries and the actual final remainder $\tau$. In particular,
+  $Y_{\delta,B}>0$, and
   \[
     \delta\log Y_{\delta,B}
     \ge\delta\log c_*+\delta(N-1)\log(1-\varrho)
     +\delta B\sum_{m<N}\lambda_{s_m}
     +\delta\tau\lambda_{s_N}.
   \]
-  The last two terms form the left Riemann sum for $I_R$ on
-  the partition including its final interval of length
-  $\delta\tau$, with mesh at most $\delta B$.
-  The actual rate is Lipschitz, so its error is at most $C_R\delta B$.
-  Also $0\le\delta(N-1)\le1/B\le1$ and hence the logarithmic
-  loss is at least $\log(1-\varrho)>-e_{\mathrm{rate}}/3$.
-  For sufficiently small $\delta$, the Riemann error and
-  $\delta|\log c_*|$ are each at most $e_{\mathrm{rate}}/3$.
-  Thus
-  $Y_{\delta,B}\ge\exp((I_R-e_{\mathrm{rate}})/\delta)$ on $E_\delta$,
+  Since $s_N+\delta\tau=1$, the last two terms are the left Riemann
+  sum for $I_R$ on the entire interval, including its last interval
+  of length $\delta\tau$, with mesh at most $\delta B$.
+  Its error is at most $C_\lambda\delta B$.
+  Also $0\le\delta(N-1)\le1/B\le1$, so the logarithmic loss is
+  at least $\log(1-\varrho)>-e_{\mathrm{rate}}/3$.
+  The two other losses are each at most $e_{\mathrm{rate}}/3$ by
+  the choices above. Hence,
+  \[
+    Y_{\delta,B}\ge
+    \exp((I_R-e_{\mathrm{rate}})/\delta)\quad\hbox{on }E_\delta,
+  \]
   including the $N=1$ and $\tau=0$ cases of the cone estimate.
 
-  The square integrand in~\eqref{E:raw-block-square-identity}
-  is nonnegative. Restrict it to $E_\delta$, where
-  $-Z/\sqrt\delta\ge-\delta^{-3/4}$.
-  With $p_\delta=\mathbb P(E_\delta)$ this gives
+  The integrand in~\eqref{E:raw-block-square-identity} is
+  nonnegative. On the same $E_\delta$ its linear Gaussian term
+  satisfies $-Z/\sqrt\delta\ge-\delta^{-3/4}$.
+  Restriction to this event and~\eqref{E:raw-block-original-comparison}
+  therefore give the explicit original-point budget
   \[
-    \E U_{\delta,B}^2
-    \ge p_\delta
-    \exp\left(\frac{2I_R-2e_{\mathrm{rate}}-v/2}{\delta}
-    -\delta^{-3/4}\right).
+    \E|u(T,0)|^2\ge\E U_{\delta,B}^2
+    \ge p_\delta\exp\left(
+    \frac{2I_R-2e_{\mathrm{rate}}-v/2}{\delta}
+    -\delta^{-3/4}\right),\qquad \delta=T^{-\kappa}.
   \]
-  For small $\delta$, $p_\delta\ge1/2$ and
-  $\delta\log p_\delta\to0$. The normalized moderate penalty is
-  $\delta(\delta^{-1/4}/\sqrt\delta)=\delta^{1/4}\to0$.
-  Taking logarithms and lower limits at this fixed
-  $e_{\mathrm{rate}}$ and its associated $B$ gives
+  Here $p_\delta\ge1/2$ for small $\delta$, so
+  $-\delta\log2\le\delta\log p_\delta\le0$.
+  Multiplying the logarithm of the preceding inequality by $\delta$
+  yields
   \[
-    \liminf_{\delta\downarrow0}\delta\log\E U_{\delta,B}^2
-    \ge2I_R-2e_{\mathrm{rate}}-v/2.
+    \delta\log\E|u(T,0)|^2
+    \ge2I_R-2e_{\mathrm{rate}}-v/2
+    -\delta^{1/4}+\delta\log p_\delta.
   \]
-  By~\eqref{E:raw-block-original-comparison}, the
-  $B$-independent original point rate is at least this right side
-  for every fixed $e_{\mathrm{rate}}$. Only now let
-  $e_{\mathrm{rate}}\downarrow0$. The bijection
-  $\delta=T^{-\kappa}$ covers all sufficiently large $T$.
+  Thus the normalized linear penalty is
+  $\delta\delta^{-3/4}=\delta^{1/4}\to0$, and
+  $\delta\log p_\delta\to0$. The quadratic Gaussian cost is
+  precisely half the original raw variance $v$.
+  Since $\kappa>0$, $\delta=T^{-\kappa}$ is a bijection between
+  all sufficiently large $T$ and all sufficiently small $\delta$.
+  This gives the full continuous-time liminf
+  $Q_2\ge2I_R-2e_{\mathrm{rate}}-v/2$.
+  For each $e_{\mathrm{rate}}$ the argument first fixed its own
+  $B=B(e_{\mathrm{rate}})$ and then took $\delta\downarrow0$.
+  The original point rate $Q_2$ is independent of $B$; only now let
+  $e_{\mathrm{rate}}\downarrow0$. No choice $B=B(\delta)$ is made.
 
   Finally, spatial translation of all positive-width vertices
   preserves the original noise law, Green kernels and constant
