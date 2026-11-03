@@ -14,8 +14,8 @@
   committed with the source and matches every reviewed-candidate text page.
   Local/origin/<HUB> source parity is verified; no extra checkout exists.
 
-- **Review scope:** current indexv6/neutralv6 and depth-ledger-v35 bind the
-  integrated source:164 exact scoped HIGH,3 earlier editorial deltas,47
+- **Review scope:** current indexv6/neutralv6 and depth-ledger-v36 bind the
+  integrated source:171 exact scoped HIGH,3 earlier editorial deltas,40
   earlier MEDIUM/qualified/partial rows. These counts are not a completion
   percentage. The earlier complete MAIN report remains ungraded120CHECKED/
   94LIMITED on b4b6efc; the six new scoped results do not rewrite it or clear
@@ -12533,3 +12533,24 @@ whole-main transfer, extra review call or branch is introduced. The proof
 changes are analytic convergence/probability details; existing80 finite Lean
 facts/22 seams remain at their original scope, with no new official package
 or claim that the analytic inputs have been formalized.
+
+
+### Compact ground/full-phase family adopted at scoped HIGH
+
+The new complete mathematical replay and current ordinary-flow joins were
+reviewed by DeepSeek V4 Pro at PASS_WITH_NOTES/HIGH. Root read the full
+original report and caught two inaccurate explanations: the quarter-power
+norm/domain inference and the spatial versus growing-branch projections.
+One explicitly authorized same-session report correction re-derived both
+correctly and clarified the planar covariance and physical/printed book
+pages. Source8ce03ae remained unchanged. The correction's three repair
+requests concern the report record and are satisfied by its immutable
+correction and root adjudication; no manuscript repair was requested.
+
+Root rehashed67 original and12 correction members, verified the unchanged
+original message prefix and actual model/tools0/stop, and matched all seven
+current bodies. This is one review lineage. Only112–118 are newly accepted;
+all imported-input reading limits and prior MEDIUM reports remain. Ledgerv36
+has171 scopedHIGH,3 earlier editorial deltas and40 earlier MEDIUM/partial
+rows. Source/PDF/indexv6 stay unchanged; whole-main/source-image/render/Kimi/
+cold and private-delivery gates remain open. No additional branch or clone.
