@@ -1,0 +1,54 @@
+{
+  "schema": "subscription-review-report/1",
+  "category": "paper-review-deepseek",
+  "model": "deepseek/deepseek-v4-pro",
+  "verdict": "PASS",
+  "confidence": "high",
+  "confidence_justification": "The flagged CAL010 discrepancy reduces to a returned explanation error in my prior reason text, not a manuscript defect. Re-deriving from the literal source product: Theorem 3.1 (3.6) is prod_{Q0} N0-labels times prod_{Q1} 2*first-norm-labels times prod_{Q2} second-norm-labels, i.e. N0(θ)^{q0}(2N1(θ))^{q1}N2(θ)^{q2}. Because each Q1 label carries one first norm whose subscript pair appears exactly once and its other endpoint sits in Q0 (split pairs), and each pair assigned to Q2 contributes exactly two second-norm factors with the same subscript (whole pairs), the correct compact form is (2N0N1)^{q1}(N2^2)^{q2/2} with q1=q0 and q1+q2/2=k. This gives θ-degree -βq1 - (β/2)q2 = -βk and constant ≤K^{q1+q2/2}=K^k, exactly the manuscript's compressed '2N0N1 and N2^2 both have degree -β... q0+q2/2=k gives K^k θ^{-βk}'. The all-Q2 sanity case q0=q1=0,q2=2,k=1 evaluates to N2(θ)^2=N2(1)^2 θ^{-β}=K^1 θ^{-β·1}, confirming N2^2 is raised to q2/2, not q2. The minimizer θ*=βk/(2t) with value e^{βk}(2t/(βk))^{βk}, the factorial exponent Q=β-1=3-α-α0, and ρ=β/Q>κ are all unaffected by this correction and were derived correctly before. Hence the manuscript and the CAL010/APP-A conclusions stand and the PASS verdict is reaffirmed; only my parenthetical product display was wrong and is corrected here. The input-application-map.json locator was also a returned factual string error (file is at root), now corrected with no change to reading status.",
+  "source_coverage": [
+    "maps/targets.json: ten target intervals (PROOF010 LF1548-1600; PROOF011 LF1709-1744; PROOF012 LF1762-1837; PROOF013 LF1890-1925; PROOF014 LF2084-2136; PROOF015 LF2161-2234; PROOF016 LF2267-2309; PROOF017 LF2321-2373; PROOF018 LF2401-2464; PROOF019 LF2505-2528) - read, reconstructed",
+    "maps/exact-target-statements-and-proofs.txt: full statements+proofs of PROOF010-019 - read and re-derived",
+    "maps/exact-named-input-statements-and-proofs.txt: PROOF001, PROOF002, PROOF004, PROOF006, PROOF007, PROOF008, PROOF009, PROOF214 - read; hypotheses/types/application checked at use sites",
+    "supplements/majorant-riesz-low-alpha-complete-mathematics.txt sections A,B,C - read and independent constants recomputed",
+    "supplements/white-four-all-domains-complete-mathematics.txt sections 2-5 - read; every length pair, sector table and multiplicity reconfirmed",
+    "supplements/white-four-exact-check.py, white-four-exact-results.json, white-four-execution-summary.txt - read as exact-rational finite arithmetic evidence; key values re-derived by hand",
+    "supplements/scalar-exact-check.py, scalar-exact-results.json, scalar-execution-summary.txt - read; pairing counts, majorant witness, Z/c0 ratio 5, weighted AGM 128/27, EX2=1/12, lambda identity re-derived",
+    "supplements/finite-check-tasks.txt - read; each task discharged by reconstruction above",
+    "input-application-map.json (root, not maps/) - read; UNIT-A/B/C input lists and semantic joins checked against actual use sites [locator corrected in authorized same-session correction]",
+    "primary/chen-author-full.txt - read at the exact used pinpoints: Theorem 1.2 (1.10)-(1.13) printed normalizations (quoted, not adopted as proof input); Theorem 3.1 statement (3.6) and its Case 2 at physical p.21 (offset defect); Section 5 (5.4) uniformity claim (flagged by R:source-uniformity and repaired by L:crude-corrected)",
+    "primary/chen-hu-model-theorem12-pages1-5.txt - read for the static-exponent comparison only (Theorem 1.2, (1.9), p.2147)",
+    "primary/balan-conus-selected.txt - read for the read-only Skorohod exponent comparison (Theorem 2.1(b), p.1492)",
+    "primary/source-editions.json, primary/cited-bibliography.bbl - read to fix editions and normalization-scope boundaries"
+  ],
+  "checks": [
+    {
+      "claim": "COR-PARTITION-POWERS",
+      "verdict": "PASS",
+      "reason": "Historical assertion that was wrong (returned explanation error, not a source defect): the prior CAL010 reason displayed the Theorem-3.1 product as (2N0N1)^q0 (N2^2)^q2 with a parenthetical 'N2 counting #Q2/2 distinct pairs'. Writing (N2^2)^q2 double-counts: N2 appears once per label in the literal product, so the total N2 power is q2, i.e. (N2^2)^{q2/2}. Established current deduction: the literal product before using q0=q1 is N0(θ)^{q0}(2N1(θ))^{q1}N2(θ)^{q2}; grouping into split pairs (one Q0 endpoint with N0, one Q1 endpoint with 2N1, giving 2N0N1 ~ θ^{-β}) and whole pairs (two Q2 endpoints of the same pair, giving N2·N2=N2^2 ~ θ^{-β}) yields the exact compact product (2N0N1)^{q1}(N2^2)^{q2/2} = (2N0N1)^{q0}(N2^2)^{q2/2} using q0=q1, with q1+q2/2=k. θ-degree: -βq1-(β/2)q2=-β(q1+q2/2)=-βk. Constant: (2N1(1))^{q1}(N2(1)^2)^{q2/2}≤K^{q1+q2/2}=K^k for K≥max{2N1(1),N2(1)^2}, and N0(1)=1 since N0(θ)=θ^{-2}. All-Q2 case q0=q1=0, q2=2, k=1: product equals N2(θ)^2=N2(1)^2θ^{-β}=K^1θ^{-β·1}, not (N2^2)^2~θ^{-2β}; this is the concrete discriminator between q2/2 and q2. Re-derived majorant minimizer: d/dθ[2θt-βk logθ]=0 ⇒ θ*=βk/(2t), infimum e^{βk}(2t/(βk))^{βk}. Re-derived factorial exponent: kth summand ∝ (2k+1)P_k K^k [2/(βk)]^{βk} e^{βk} t^{βk}/(k!)^{β-1} with (k!)^β/k^{βk} absorbed between e^{-βk} and 1, so Q=β-1=3-α-α0 and ρ=β/Q=(4-α-α0)/(3-α-α0)>κ. These minimizer/factorial conclusions are unchanged and were correct in the original report. Source repair needed: none. The manuscript's compressed '2N0N1 and N2^2 both have degree -β; q0+q2/2=k gives K^kθ^{-βk}' is internally consistent and correct."
+    },
+    {
+      "claim": "COR-INPUT-MAP-LOCATOR",
+      "verdict": "PASS",
+      "reason": "Historical assertion that was wrong (returned factual locator string error): the prior source_coverage cited maps/input-application-map.json. The supplied packet file is at root, named input-application-map.json. Established current deduction: the file was read and its UNIT-A/B/C targets/inputs/questions content was checked against the actual use sites (this content reading stands); only the path string was mislocated in the report. This creates no extra reading, no image/render/fresh-cold credit, and no change to the ten-proof bounded scope. Source repair needed: none. The corrected locator is now listed under source_coverage."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Returned-explanation correction (non-source): prior CAL010 reason displayed the Theorem-3.1 partition product as (2N0N1)^q0 (N2^2)^q2, which double-counted the N2 exponent. Correct literal/product form N0^{q0}(2N1)^{q1}N2^{q2}=(2N0N1)^{q1}(N2^2)^{q2/2}; manuscript is correct and no source repair is needed; the prior PASS conclusion is preserved with the explanation text corrected.",
+      "Returned-locator correction (non-source): prior source_coverage wrote maps/input-application-map.json; the supplied file is root input-application-map.json. Substance and reading status unchanged."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "Named proved inputs are used after checking their stated hypotheses/types/application only; their internal machinery (the universal pairing inequality of source Theorem 3.1 Case 1/3 induction, and the full spatial-Wick-measure/joint-fixed-order construction of PROOF006) is not re-proven, per packet scope.",
+    "The whole-main source and all 214 proofs are not reassigned or audited; only the ten targets and their cited named local inputs were read. Image/render and final fresh cold-review gates are out of scope and not cleared.",
+    "Only the supplied primary page texts were read (chen-author-full, chen-hu pp.1-5, balan-conus pp.1-5); the chen-author PDF pixels were not inspected and no program was executed outside the provided evidence.",
+    "The two supplied Python programs are read as exact-rational finite arithmetic evidence, not run here; their assert chains are consistent with independent by-hand recomputation.",
+    "All upper-constant conclusions audited are explicitly nonsharp all-time bounds (U1/U2, C1_*/C2_*); they are not identified with Chen's printed first-moment constants, auxiliary S1, or an intrinsic C2. PROOF019's L_* comparison remains conditional on a valid lower-bound premise.",
+    "The white/static results are fixed finite coefficients (M2=t^3/3, M4=11 t^6/540) with the 1+3<->3+1 A<->C/B-fixed exchange established in the supplement and the code's direct 3+1 integration. No all-order identity is claimed.",
+    "Static/large-time/white limits are not interchanged; alpha0->0 comparisons are exponent-only calibrations, and the alpha->1 white endpoint is gated on c_alpha=(1-alpha)/2.",
+    "This authorized same-session correction changes only the explanations recorded under COR-PARTITION-POWERS and COR-INPUT-MAP-LOCATOR and the corresponding minor notes/source_coverage locator; the immutable original report/grade, the unchanged source and the bounded ten-proof scope are preserved."
+  ]
+}

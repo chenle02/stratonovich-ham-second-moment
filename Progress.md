@@ -14,24 +14,25 @@
   committed with the source and matches every reviewed-candidate text page.
   Local/origin/<HUB> source parity is verified; no extra checkout exists.
 
-- **Review scope:** current indexv6/neutralv6 and depth-ledger-v37 bind the
-  integrated source:178 exact scoped HIGH,3 earlier editorial deltas,33
-  earlier MEDIUM/qualified/partial rows. These counts are not a completion
+- **Review scope:** current indexv6/neutralv6 and depth-ledger-v38 bind the
+  integrated source:187 exact scoped HIGH,3 earlier editorial deltas,24
+  unaccepted lower-depth/current-report rows. These counts are not a completion
   percentage. The earlier complete MAIN report remains ungraded120CHECKED/
   94LIMITED on b4b6efc; the six new scoped results do not rewrite it or clear
   the remaining whole-argument, source-image, render, Kimi or cold gates.
 
-- **Current live review and durable learning (2026-11-03):** the complete
-  calibration010–019 review is one native DeepSeek V4 Pro call on science
-  8ce03ae, actual session ses_e60aac29bffebu9imGVUskZ9yk. Check its terminal
-  receipt before any action; no launch or partial output is accepted.
-  Exact input and recovery handles are preserved at2574140. The driver
-  seven-proof adoptione063c96 preserves literal PARTIAL factual-correction
-  rows and correct actual target judgments as one reviewer lineage.
-  Le's durable-learning instruction is fulfilled in canonical Le-AI-Lab
-  657586a: three existing skills updated, retrieved, projected, validated
-  and pushed/<HUB> equal; unowned WIP preserved. Young and raw-block
-  complete packets are being prepared only, with no extra provider call.
+- **Current terminal calibration and durable learning (2026-11-03):** the
+  complete-calibration DeepSeek review and one factual correction are terminal,
+  raw PASS/HIGH. Root adopts exactly011–019;010 remains unaccepted because
+  the independent reasons still misstate the factorial rearrangement, despite
+  a correct source and author replay. All original/correction statuses and
+  source bytes remain immutable. See the complete-calibration adjudication.
+  The driver seven-proof adoptione063c96 preserves its own literal PARTIAL
+  correction rows and actual target judgments as one lineage. Le's durable
+  learning instruction is fulfilled in canonical Le-AI-Lab657586a; all retrieval,
+  description/runtime/budget checks passed, push/<HUB> parity verified
+  and unowned WIP preserved. Young, raw-block and smooth spatial-control
+  packets are being prepared only, with no additional provider call.
 
 - **ACTIVE fresh MAIN (2026-11-02):** Le resumed the full goal and selected
   DeepSeek V4 Pro MAIN. ONE fresh all214-proof/coupled-graph text audit is
@@ -12631,3 +12632,30 @@ PID2510092,startticks55465194,supervisor2509978,handle83130 is retained under
 reviews/2026-11-02-calibration-complete-depth with frozen input, not a result.
 Do not restart. Current ledgerv37 remains178 scoped HIGH,33 earlier MEDIUM/
 partial and3 editorial deltas; no gate is upgraded by this launch.
+
+
+### Complete calibration: nine local deductions adopted;010 remains open
+
+The actual DeepSeek V4 Pro report is PASS/HIGH, all16checks PASS, with one
+same-session factual correction also PASS/HIGH. Root read both entire reports,
+verified the actual model/prompt/tools0/stop/unchanged source/message prefix,
+rehashed all76+12native members and re-bound all10current proof bodies.
+011–019 are adopted at exact local scope, retaining all named-input, primary
+text and finite-calibration limits. No source/PDF/Lean change occurred.
+
+010 is NOT adopted: root caught the q2 versus q2/2 explanation error and the
+one factual correction repaired it, but full rereading also found wrong
+factorial rearrangements. The original exact-term display lacks P_k/k!, and
+the correction's literal display inserts an extra factorial denominator. At
+k2,beta3, normalized true/source15/64 differs from their15/32 and15/256.
+The manuscript and worked replay are correct; root's author derivation is
+not independent review clearance. The raw PASS/HIGH reports remain immutable
+beside explicit non-adoption. No further continuation/confidence retry.
+
+Ledgerv38 now has187scopedHIGH,24unaccepted lower-depth/current-report rows
+and3editorialdeltas. The majorant seam stays in the next substantive coupled
+audit; none of the nine adopted deductions depends on its erroneous report
+rearrangement. Root must finish all mathematical adjudication before spending
+one corrective call; this failure to batch the full finding set is a durable
+application lesson for the existing canonical rule. Whole-main/source-image/
+full-render/Kimi/fresh-cold/wiki/private-delivery requirements remain open.
