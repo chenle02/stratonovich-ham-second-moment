@@ -13106,3 +13106,24 @@ subgoal. Root will inspect complete math before any bounded independent
 review; no new whole-MAIN retry is authorized merely by this LOW report.
 Kimi monthly429/sourceimages/fullrender/freshcold/finalprivategatesOPEN.
 GoalACTIVE. Source8ce/index6/PDF263/80finiteLean/22analyticseams unchanged.
+
+
+## 2026-11-03 — Durable output/supplement lessons published
+
+Canonical Le-AI-Lab21b75a2492246aaf94b1d4d518cf32016f8d13f3 is verified on
+origin/master and <HUB> shared2b81b09b. Two existing homes now capture
+combined reasoning/public output budgeting, literal partial-prefix custody,
+one factual same-session tail/errata completion, calculation-level supplement
+equivalence, and norm²/current-proof-ID checks. No newskill or sourcechange.
+Phase2.5 descriptions361/468 and headlines41/42 pass; actual current
+Claude/OpenCode/Codex copies match; strict startup9implicit/1372explicitPASS.
+Exact/contextual lookups pass; generic supplement equivalence ambiguity is
+retained as negativequery. Pi missing-settings warning is not a Pi pass.
+
+Foreign three-skill WIP plus old untrackedretrospective remain byte-identical
+and excluded. New generatedWIKI delta belongs to anotherwriter's watchupdate
+and is left unstaged. Two ownpushes were rejected by ordinary stale-ref races;
+the other writer published a descendant containing the owned21b75a24unit.
+Root verified exact ancestry/ownedblobs/runtime/<HUB> rather than force
+push/reset/rebaseforeignwork. Evidence: reviews/2026-11-03-durable-budget-proof-coverage/.
+Source8ce/PDF263/localgrades and all verification/delivery gates unchanged.
