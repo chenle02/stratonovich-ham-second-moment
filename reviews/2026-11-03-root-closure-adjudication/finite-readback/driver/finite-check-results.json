@@ -1,0 +1,184 @@
+{
+  "scope": "Author finite algebra/negative controls only, not analytic proof or independent review",
+  "all_checks_passed": true,
+  "n16_two_variances": {
+    "actual": 288,
+    "false_input_only": 144,
+    "retained_average": 1224,
+    "maximum": 2304
+  },
+  "operator_power_order_counterexample": {
+    "A": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "B": [
+      [
+        2,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "B_minus_A": "all-ones positive rankone",
+    "B2_minus_A2": [
+      [
+        4,
+        3
+      ],
+      [
+        3,
+        2
+      ]
+    ],
+    "determinant": -1,
+    "vector": [
+      "1",
+      "-3/2"
+    ],
+    "quadratic": "-1/2"
+  },
+  "strict_path_parameters": {
+    "alpha": "5/4",
+    "a": "1/5",
+    "d": 2,
+    "gamma": "1/4",
+    "theta": "5/8",
+    "eta": "11/16",
+    "beta": "3/4",
+    "q0": 18,
+    "rho0": "1/144",
+    "uniform_denominator": 0.004801955655646228,
+    "inadmissible_q16_temporal_gap": 0
+  },
+  "per_p_indices": [
+    {
+      "p": "1",
+      "q": 18
+    },
+    {
+      "p": "3/2",
+      "q": 18
+    },
+    {
+      "p": "7",
+      "q": 18
+    },
+    {
+      "p": "18",
+      "q": 18
+    },
+    {
+      "p": "101/5",
+      "q": 22
+    },
+    {
+      "p": "1000",
+      "q": 1000
+    }
+  ],
+  "diagonal_compact_tail_examples": [
+    {
+      "N": 1,
+      "M": 128,
+      "operator_envelope_tail_norm": 0.25,
+      "actual_L4S4_fourth": 0.24696922985508887,
+      "retained_fourth": 0.7409076895652666,
+      "uniform_in_M_fourth_upper": 3.0
+    },
+    {
+      "N": 4,
+      "M": 128,
+      "operator_envelope_tail_norm": 0.04,
+      "actual_L4S4_fourth": 0.01071344281805184,
+      "retained_fourth": 0.03214032845415552,
+      "uniform_in_M_fourth_upper": 0.046875
+    },
+    {
+      "N": 16,
+      "M": 128,
+      "operator_envelope_tail_norm": 0.0034602076124567475,
+      "actual_L4S4_fourth": 0.00022173298436891164,
+      "retained_fourth": 0.0006651989531067349,
+      "uniform_in_M_fourth_upper": 0.000732421875
+    }
+  ],
+  "moving_projection_negative_control": {
+    "operators": "T_N=e_N tensor e_N on l2",
+    "strong_limit": 0,
+    "operator_norm": 1,
+    "trace_power": 1,
+    "no_common_positive_compact_envelope": "<B e_N,e_N>>=1 would contradict compactness"
+  },
+  "correlated_source_comparison": {
+    "covariance": [
+      [
+        "1/2",
+        "1/2"
+      ],
+      [
+        "1/2",
+        "1/2"
+      ]
+    ],
+    "eigenvalues": [
+      0,
+      1
+    ],
+    "left_second_moment": 2,
+    "standard_comparison_second_moment": 2
+  },
+  "gain_indices": {
+    "direct": "1/4",
+    "adjoint": "-1/4"
+  },
+  "both_constant_columns": {
+    "constant_displacement_position_first": "1",
+    "constant_displacement_velocity_first": "2",
+    "constant_velocity_position_free": "1",
+    "constant_velocity_position_first": "1/3",
+    "constant_velocity_velocity_first": "1"
+  },
+  "zero_start_negative_control": {
+    "path": "F(t)=nonzero fixed rankone P",
+    "all_increments": 0,
+    "supremum_norm": 1,
+    "reason": "zero-start is required for increment-only norm bound"
+  },
+  "raw_max_exponent": {
+    "a": "1/2",
+    "p": 6,
+    "correct": "1/2",
+    "double_g_delta_wrong": "2"
+  },
+  "average_of_squares": {
+    "average_of_squares": "1",
+    "square_of_average": "0"
+  },
+  "point_data_cost": [
+    {
+      "delta": 0.0625,
+      "normalized_log_data_cost": 0.36129646973702056
+    },
+    {
+      "delta": 0.00390625,
+      "normalized_log_data_cost": 0.043382496757200135
+    },
+    {
+      "delta": 1.52587890625e-05,
+      "normalized_log_data_cost": 0.00033845170306614987
+    },
+    {
+      "delta": 2.3283064365386963e-10,
+      "normalized_log_data_cost": 1.0328697868801612e-08
+    }
+  ]
+}

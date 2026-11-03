@@ -14,7 +14,7 @@
   committed with the source and matches every reviewed-candidate text page.
   Local/origin/<HUB> source parity is verified; no extra checkout exists.
 
-- **Review scope:** current indexv6/neutralv6 and depth-ledger-v45 bind the
+- **Review scope:** current indexv6/neutralv6 and depth-ledger-v46 bind the
   integrated source:210 exact scoped HIGH,3 earlier editorial deltas,1
   unaccepted current-report row010. These counts are not a completion
   percentage. The earlier complete MAIN report remains ungraded120CHECKED/
@@ -26,10 +26,15 @@
   MEDIUM,204CHECKED/10LIMITED,0FLAW/NOT_READ and4major/2minor findings.
   No falsifying error established; critical operator-dynamics/cutoff/constant/
   positive-matching closures were not independently replayed fully. Root
-  verified the full native envelope and triaged the10limited/finding rows;
-  full204reason/240statement/13join/source/calibration adjudication PENDING.
-  Four from-scratch author replays are assigned (051;091–093 and dependents;
-  155/173/175;202).210local scopes/010+3editorial pending states remain;
+  has completed reading/adjudication of all214reason fields,240 grouped
+  statement accounts,13joins,source/calibrations and every finding. Whole
+  acceptance is withheld;182 has an empty worked reason and a locator typo,
+  four reported hashes have typos, and212 misplaces the lower-bound radical
+  in its reason. The unchanged source is correct on these points. Four new
+  complete author replays and three adversarial author checks are read;
+  no new source gap identified under their named inputs. One harmless
+  replay K-choice clarification is recorded.210local scopes/010+3editorial
+  pending states remain;
   no whole-main/image/render/Kimi/cold acceptance or confidence retry.
 
 - **Current terminal calibration and durable learning (2026-11-03):** the
@@ -12904,3 +12909,39 @@ without model override. Actual complete files are now saved. These are not
 native reviewer failures or repeated confidence calls. No new scope/constant
 or Gamma/model restriction is adopted. Goal stays ACTIVE with substantive
 adjudication/math/review work available; image/Kimi/fresh-cold gates still open.
+
+
+## 2026-11-03 — Whole report adjudicated; four new mathematical closures assessed
+
+Root read the complete current MAIN report, including every214proof reason/
+input/gap field,240 grouped statement coverage and exceptions,13coupled joins,
+8source-fidelity blocks,all findings/repairs,7calibrations and cycle/limitations.
+The actual INCONCLUSIVE/MEDIUM204CHECKED10LIMITED verdict stays unaccepted.
+182's reason is only “See below”; its raw414:382 range is a typo for414:482.
+Four other reported hashes contain transcription errors.212's reason places
+M_a outside the radical; correct source/report calibration give sqrt(c/M_a).
+No source/PDF repair follows.010 remains locally unaccepted;034/189/193 retain
+their editorial pending states. Exact-rational integration is sufficient for
+the white polynomial table; independent decimal quadrature is not a new gate.
+
+All four complete author replays (173,934bytes) and three adversarial author
+challenges were read. The latter sought actual counterexamples to compact
+row/trace-tail, correlated-source, uniform-radius/Cameron and positive-Gram
+shortcuts. No new missing estimate was found under precisely named local
+inputs. One harmless replay quantifier slip needs the explicit choice
+K=max(1,k), and aggregate F=2delta lognorm errors carry factor2. Frozen replays
+are unchanged. Root reran four finite scripts in separate scratch locations;
+all exit0 and reproduce their frozen result bytes. All28Git8ce TeX,214own
+proof bodies and240statement bodies were rehashed. These are author/custody
+checks, not cross-family review, whole acceptance or image/cold clearance.
+
+Evidence: reviews/2026-11-03-root-closure-adjudication/adjudication.md, exact
+report-root-readback.json, three-member author-challenges capsule/inventory
+and four finite-readback directories. Ledger46 preserves all local states
+and records complete report reading separately. A fresh all214/240/28TeX
+MAIN proposal is being prepared with the four substantive new derivations,
+remaining nonoverlapping calculations and exact current primary contexts.
+No native call, installed config, Git carrier seal, confidence continuation
+or review acceptance has occurred for that proposal at this checkpoint.
+Kimi monthly capacity/source images/full render/fresh cold remain open.
+Lean0.24 FYI requests no action; no install/receipt/official companion/HPC.
