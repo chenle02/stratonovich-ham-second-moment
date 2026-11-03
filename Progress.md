@@ -6,18 +6,30 @@
 
 ## Current state
 
-- **Next whole MAIN and wiki (2026-11-03):** sourceaf97/index7/ledger53 are
-  committed and <HUB>-equal at workflowd478316. Full214/240/28TeX/13join
-  review preparation is in progress, with calculation-level supplement
-  retention and full primary coverage required. Initial chars/2 literal-union
-  forecast exceeds context; the provisional38-page AUTHOR selection is NOT
-  root-approved. A reversible-map/primary-use and explicit capacity investigation
-  continues; no new whole native review or root-ready packet exists yet.
-  Ordinary private wiki tickettk-20261103-151055-codex-stratonovich-af97-status
-  is verified in canonicalrequests; writerinactive/dead/MainPID0. This is
-  QUEUED, notmaintained or a verifiedlivewait; no restart/wake/force/requeue.
-  Prior09c7e3 page/maintainedticket remains dated history. GoalACTIVE; no
-  whole/sourcepixel/fullvisual/Kimi/finalcold/finaldelivery clearance.
+- **Current af97 whole MAIN and next work (2026-11-03):** one fresh DeepSeek
+  V4 Pro session plus ONE factual same-session public-record supplement are
+  TERMINAL and the lineage is closed. Actual INCONCLUSIVE/low; the completed
+  record has214proof rows13CHECKED/201LIMITED and all13literal joins2PASS/
+  11PARTIAL. No source mathematical error or repair was located; critical
+  own reconstructions remain incomplete. Literal finite/conditional PASS
+  records do not clear their unreconstructed inputs or the whole argument.
+  Sourceaf97/PDF096cb3cd/indexv7 stay unchanged. Ledger54 records this outcome
+  while preserving ALL214proof rows,210localHIGH,010unaccepted and034/189/193
+  editorial states. Evidence: reviews/2026-11-03-main-af97-terminal/.
+  Root's initial white-ID slip and returned row003factor typo are retained as
+  reporting qualifications, not source errors. No further current-lineage call.
+  Next work is a substantive themed full-source reconstruction workflow,
+  in preparation only, not dispatched. It must change the actual per-call
+  workload and supply a genuine final coupled judgment, retaining214/240/
+  28TeX/13joins and every original model/constant obligation;
+  no grade union, automatic confidence retry, source-body edit or readiness
+  claim follows. The263PNG set is preparation only; source-pixel/fullvisual,
+  Kimi and fresh final-cold gates remain open. Kimi's recorded monthly429
+  supplied zero images/reads/report. Ordinary private wiki ticket
+  tk-20261103-151055-codex-stratonovich-af97-status remains last recorded
+  QUEUED, not maintained; current terminal propagation and final private
+  delivery remain pending. No restart/wake/force/requeue is authorized here.
+  GoalACTIVE; no whole/sourcepixel/fullvisual/Kimi/finalcold/delivery clearance.
 
 
 - **Current structural integration (2026-11-03):** scientificaf97ae4,
@@ -36,8 +48,9 @@
   Indexv7/neutralv7/ledger53 now bind all214proofs/240statements and25current
   module rows. Two independent source/history reconstructions plus root body
   readback passed; all local210/1/3states and historical verdicts are unchanged. Whole MAIN on these new bytes
-  is NOT reviewed; historical8ce INCONCLUSIVE/low remains unchanged. No new
-  whole/Kimi/source-image/render/cold/goal acceptance and no native reviewer live.
+  is now terminal INCONCLUSIVE/low as recorded above; historical8ce reports
+  remain unchanged. No whole/Kimi/source-image/render/cold/goal acceptance
+  and no native reviewer is live.
 
 
 - **Previous integrated source (2026-11-02), scientific8ce:** scientific 8ce03ae contains the
@@ -13335,3 +13348,48 @@ inactive/dead/MainPID0 and livepage09c7e3 remain observed. No publication is
 inferred; no service/account/wake/force/requeue action. The oldmaintained and
 failed predecessors stay unchanged. Evidence:
 reviews/2026-11-03-af97-private-wiki-status/queued-state.json. No goal closure.
+
+
+## 2026-11-03: current af97 whole MAIN is terminal and incomplete
+
+One fresh actual DeepSeek V4 Pro session ses_e5ca3f319ffe0OatPfuHBon0G9 received
+all28currentTeX,214OWNproofs,240formal statements and13coupled joins, all14older
+and8new mathematical supplements, all10primary payloads including full64AUTHOR.
+The72frame prompt is exactf8fdd79b/2052556UTF8bytes. Preserved character-based
+forecasts failed; root explicitly authorized a qualified measured-baseline
+construction with all extra bytes charged, no deletion credit and131072combined
+output plus framing/system reserves. Actual native603973input fit this exact
+artifact. Capacity acceptance does not establish semantic depth or correctness.
+
+The original INCONCLUSIVE/low report was fully read before ONE factual public
+record completion. Both processes exited0/stop/tools0; exact original2messages
+remain the prefix of the final4. Final record has214owner-matched rows, literal
+13CHECKED/201LIMITED, and all13joins with literal2PASS/11PARTIAL. Root fully read
+all returned reason/global fields and qualified conditional001, limited010,
+source/formal attachments, external3.1 versus own006, root's white-ID slip and
+returned003 extra-half transcription. The source is unchanged; no located
+mathematical defect is inferred from reconstruction limits. No more calls in
+this lineage, no local-grade or whole-gate upgrade.
+
+Root and the separate custody author independently verified the complete204member
+capsule6151630535f5a38ff57a407c1ce4f5a2b8dbdf23c797839e1a8a5daf002c34a7,
+including the unchanged original118member eb51c4b capsule. Full input, capacity,
+extraction, primary-use, native, configuration-safe readback and author audits
+are preserved. Secret-pattern scan is clear at its declared scope; raw global
+configuration is excluded. Evidence: reviews/2026-11-03-main-af97-terminal/.
+Ledger54 retains all214proof rows byteexact, all historical bindings and210/1/3
+local dispositions; current whole state is now terminalINCONCLUSIVE/low.
+
+A new author010 exact kth calculation includes the essential P_k/k! and explicit
+k2/k3 coefficients.25finite log-domain checks and a separate author replay pass;
+this does not independently certify010 or its upstream source-norm application.
+All263PDF pages are rendered at150dpi and their PNG hashes verified. The83MiB
+PNG files remain external; only preparation metadata is committed. No independent
+image inspection, source-pixel/Kimi/fullvisual/cold credit follows.
+
+Canonical themed-full-source strategy is prospective preparation. It retains
+all214/240/13 and actual original-model C2, and requires a genuine final DeepSeek
+coupled judgment. Kimi monthly429/source pixels/fullvisual/freshcold remain open.
+Exactwiki ticket tk-20261103-151055-codex-stratonovich-af97-status was still only
+queued at22:44:30UTC; writerinactive/dead/MainPID0 and oldpage09c7e3 unchanged.
+No service action or verified live wait. Goal remains ACTIVE and incomplete.

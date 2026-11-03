@@ -31,19 +31,31 @@ DeepSeek V4 Pro review of six changed deductions and their applications.
 See the [adjudication](reviews/2026-11-03-structural-baseline-candidate/root-adjudication.md).
 
 The [current index](reviews/2026-11-02-main-deepseek/proof-index-v7-neutral.json)
-and [depth ledger](reviews/2026-11-02-main-deepseek/depth-ledger-v53.json)
+and [depth ledger](reviews/2026-11-02-main-deepseek/depth-ledger-v54.json)
 record exact body and statement bindings. There are 210 locally accepted
 HIGH scopes, one unaccepted proof row (010), and three pending editorial
-changes. These counts are not a completion percentage. Scoped reviews bind
-their recorded versions and do not certify the whole argument.
+changes. These scoped states do not establish whole-argument acceptance. Scoped
+reviews bind their recorded versions and do not certify the whole argument.
 
-DeepSeek V4 Pro is the main reviewer under Le's direction. The latest complete
-whole review covered the previous source `8ce03ae` and remained
-INCONCLUSIVE/low; that result stays unchanged. The current `af97ae4` source
-still needs its full MAIN review. Required source/application and image checks,
-Kimi, the independent full-PDF visual audit and a fresh independent final cold
-read remain open. Kimi's actual monthly-quota refusal supplied no review.
-No whole-paper, goal-completion or circulation clearance is claimed.
+DeepSeek V4 Pro is the main reviewer under Le's direction. The current
+`af97ae4` whole MAIN is terminal after one fresh session and one factual
+same-session public-record supplement: actual INCONCLUSIVE/low, with 214
+reported proof rows (13 CHECKED, 201 LIMITED) and 13 literal joins (2 PASS,
+11 PARTIAL). No source mathematical defect was located; the critical end-to-end
+reconstruction remains incomplete. The [terminal record](reviews/2026-11-03-main-af97-terminal/)
+preserves both original and supplemental texts and their reporting qualifiers.
+Earlier whole reports on `8ce03ae` remain dated history. Local scoped states
+are preserved and are not combined into whole acceptance.
+
+The planned next work is substantive themed review with the full current
+source and original model/constant obligations retained. This is preparation,
+not a dispatched review or a union of earlier grades. The 263-page PNG
+preparation supplies no independent visual reading. Source/application and
+pixel checks, Kimi, the independent full-PDF visual audit and a fresh final
+cold read remain open. Kimi's recorded monthly-quota 429 supplied no review
+or images. Wiki propagation of this terminal outcome and final private
+delivery remain pending. No whole-paper, goal-completion, readiness or
+circulation clearance is claimed.
 
 The 80 finite Lean facts retain their 22 analytic boundaries; an official
 private companion and its package gate are separately authorized steps.
