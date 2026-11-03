@@ -6,28 +6,20 @@
 
 ## Current state
 
-- **New analytic candidate ready (2026-11-02):** the external candidate expands
-  proofs 088, 091, 108, 110, 125 and 126. All 214 identities, 240 formal
-  statements, label and citation sequences remain; 208 other proof bodies
-  are identical to scientific b4b6efc. Root read the mathematical replays and
-  full diff, verified the preserved source/build evidence, and checked the
-  clean 263-page PDF after storage cleanup. The exact candidate has now received scoped DeepSeek V4 Pro
-  PASS/HIGH for the six new deductions and their actual input applications.
-  Exact installation and the clean 263-page production build are verified. Its source identity is b4b6efc
-  plus patch 2300422d, with exact file/body hashes. The compact source-only
-  review is terminal; root has read the full report and rehashed its capsule.
-  No whole-argument, image or cold gate follows from this component result.
+- **Current integrated source (2026-11-02):** scientific 8ce03ae contains the
+  six expanded analytic proofs, each adopted after the actual scoped
+  DeepSeek V4 Pro PASS/HIGH review. All28 TeX retain214 proof identities and
+  all240 formal statements. Exactly088/091/108/110/125/126 have new reviewed
+  bodies; the other208 are unchanged from b4b6efc. The clean263-page PDF is
+  committed with the source and matches every reviewed-candidate text page.
+  Local/origin/<HUB> source parity is verified; no extra checkout exists.
 
-- **Current exact source (2026-11-02):** scientific editorial commit
-  The six reviewed analytic clarifications are integrated in this commit.
-  All28 TeX retain214
-  stable proofs;211 raw bodies are unchanged and034/189/193 have explicit
-  editorial-only changes. Current indexv5 and neutralv4 bind the source;
-  depth-ledger-v34 has158 exact scoped HIGH,3 editorial deltas pending the
-  coupled review, and53 actual MEDIUM/qualified/partial rows. The previous
-  161 scoped count predates cleanup. Counts are not whole-goal acceptance.
-  All old terminal HIGH backlog is now adjudicated at its exact scope.
-  Clean259-page PDF;0errors/undefined references/citations/overfull boxes.
+- **Review scope:** current indexv6/neutralv6 and depth-ledger-v35 bind the
+  integrated source:164 exact scoped HIGH,3 earlier editorial deltas,47
+  earlier MEDIUM/qualified/partial rows. These counts are not a completion
+  percentage. The earlier complete MAIN report remains ungraded120CHECKED/
+  94LIMITED on b4b6efc; the six new scoped results do not rewrite it or clear
+  the remaining whole-argument, source-image, render, Kimi or cold gates.
 
 - **ACTIVE fresh MAIN (2026-11-02):** Le resumed the full goal and selected
   DeepSeek V4 Pro MAIN. ONE fresh all214-proof/coupled-graph text audit is
@@ -12525,3 +12517,19 @@ are adjudicated and retained with full73-member native custody. This source
 unit is adopted. A source-compatible index/ledger receipt follows this
 commit; no neighbouring or whole-main grade is upgraded by this unit.
 No new branch/worktree, official companion, HPC, correspondence or release.
+
+
+### Current source index and bounded adoptions rebound
+
+Scientific8ce03ae is pushed and equal on <HUB>. Root's post-hook check
+confirms all28 committed TeX files and the PDF match the reviewed candidate.
+Indexv6/neutralv6 preserve214 identities/current statement and body locators,
+including deferred093. Ledgerv35 adopts exactly the six newly reviewed local
+deductions and preserves all earlier raw reports and body hashes separately.
+Current164 scoped HIGH does not clear the47 earlier MEDIUM/partial rows or
+three earlier editorial deltas. The previous MAIN statuses explicitly refer
+to sourceb4b6efc, with changed-body flags on the six new bodies. No false
+whole-main transfer, extra review call or branch is introduced. The proof
+changes are analytic convergence/probability details; existing80 finite Lean
+facts/22 seams remain at their original scope, with no new official package
+or claim that the analytic inputs have been formalized.
