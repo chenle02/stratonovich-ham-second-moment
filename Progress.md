@@ -14,24 +14,25 @@
   committed with the source and matches every reviewed-candidate text page.
   Local/origin/<HUB> source parity is verified; no extra checkout exists.
 
-- **Review scope:** current indexv6/neutralv6 and depth-ledger-v49 bind the
+- **Review scope:** current indexv6/neutralv6 and depth-ledger-v50 bind the
   integrated source:210 exact scoped HIGH,3 earlier editorial deltas,1
   unaccepted current-report row010. These counts are not a completion
   percentage. The earlier complete MAIN report remains ungraded120CHECKED/
   94LIMITED on b4b6efc; the six new scoped results do not rewrite it or clear
   the remaining whole-argument, source-image, render, Kimi or cold gates.
 
-- **Fresh MAIN with four mathematical closures (2026-11-03):** TERMINAL
-  after1122.932seconds, actualfinishLENGTH; public JSON truncated during204.
-  Visible literal INCONCLUSIVE/low;001–203exactdecodable rows41CHECKED/
-  162LIMITED, not full214coverage. Exact userprompt/model/tools0/clean
-  carrier/source/native export verified. Root read every returned203reason
-  and partial204tail; numerous explicit reading limits and concrete report
-  calculation errors are retained. Root65536cap was consumed by19862
-  reasoning+45674public tokens. The full original capsule is immutable.
-  After complete203row/all-three-batch reading, ONE factual same-session
-  missing-report completion is LIVE (14:19:50UTC,PID3801775,exec62504). No source or local-grade change,
-  whole/image/render/Kimi/cold/project acceptance, auto retry or grade chase.
+- **Fresh MAIN with four mathematical closures (2026-11-03):** the original
+  length stop plus ONE factual same-session public completion are TERMINAL.
+  Exact original2messageprefix/newinput/actualmodel/tools0/finishstop/source
+  verified. Complete additive public record has214actualrows45CHECKED/
+  169LIMITED, all13joinsPARTIAL, actual INCONCLUSIVE/low. Whole acceptance
+  is withheld; actualsource_repairs empty, major analytic reconstruction
+  limits remain. Root read ALL214reasonfields,25errata,240groupedIDs,13joins,
+  8sourceblocks and every globalfield. Corrections mostly fix returned
+  arithmetic/types; residual reporterrors169/Beta/C23/174andcount/locator
+  issues are retained. Twoauthorinput norm²/restartIDerrata stay explicit.
+  Original publictexts immutable, composite is derived one-lineage, no new
+  vote or localgrade/source/PDF change. NO furthercurrentlineagecall.
 
 - **Earlier complete whole MAIN (2026-11-03):** the one actual all214own-proof/
   240statement/28TeX DeepSeek V4 Pro run is TERMINAL, actual INCONCLUSIVE/
@@ -13051,3 +13052,57 @@ oldreview/source/localgrades. durable-lessons.md records combined token
 budgeting, arithmetic-check depth and author norm/ID fidelity. Concurrent
 Le-AI-Lab foreign work is left untouched. GoalACTIVE, no whole/image/Kimi/
 render/freshcold/private-final clearance; this is substantive report repair.
+
+
+## 2026-11-03 — Final public completion adjudicated; analytic obligations retained
+
+The one permitted same-session completion stops normally14:27:20.821506UTC
+after450.383seconds,actualDeepSeek V4 Pro/tools0,originalTWOmessages
+canonically identical,new17860byteprompt exact,source/config/carrier clean.
+Publiccompletion69843bytes,25factualerrata,2authorinputerrata,7metadata
+notes,11actualremainingrows. Exact203prefix+11tail=214reportedrows,45CHECKED/
+169LIMITED; all13coupledjoinsPARTIAL. Actual finalINCONCLUSIVE/low unchanged,
+no actualsource_repairs requested; no proof or whole-goal acceptance.
+
+Root read every214row,25errata,240groupeddeclIDs/28filegroups,13joins,8
+sourcefidelity blocks,5major3minor,allrepairs/calibrations/cycles/limits.
+Newtail11bindings exact; original7typos retained. Four environment-count
+tallies are wrong(F04/F09/F14/F22), although all240IDs are accountedonce.
+The publicsession_id is alogicalalias,not nativeID; actualnativecustody
+establishes the session.010factorial/k2/k3 correction is now mathematically
+correctatLOWscope,butdoesnotmeetlocalHIGHgate. All210localHIGH/010+3editorial
+states remain. No native source text or original response is rewritten.
+
+Several completedreportdetails are still wrong:169's newg_delta parenthesis
+(productissqrt(delta),unscaledMhasnog); calibrationBetaargument(alpha/4,
+notalpha/2inI_eta); C23's036use(quartic1.5,not square-root1.4);174claimsno
+originalhashtypowhenliteral c4/e4 discrepancyremains. Other sourcebinding/
+page/physical-radius-vs-rank/sign glosses are qualified in fulladjudication.
+No furthercall inthislineage. These errors do not falsify unchangedsource,
+and correctingthemdoesnotcertifytheunreconstructedanalytic proof.
+
+Exactwholeoriginal-plus-completion native/inputcapsule/everymemberreadback/
+secret-scan inventory,rawpubliccompletion,envelope,root-full-readbackand
+adjudication are in reviews/2026-11-03-main-four-closures/completion/terminal/.
+Explicit derived-composite.json in the parent reviewfolder retains literal
+203rows+actual11rows+separateerrata/globalfields,not an inventedproviderreport
+ornewvote. Ledger50recordsactualLOWreportedstatesseparatelyfromlocalscopes.
+
+A bounded actual supplement audit finds the seven removedsupportfiles were
+not mathematically equivalent to the newfourreplays: complementaryactual
+Fourier/Bessel,fullphasesupport,two-parameterrawscaling,scaled-maxexponential,
+F/distribution/deterministicH/Gandmasked-versionworkingwascompressedor
+onlynamedasinput. All28ownsourcefiles/proofs remainedpresent/exact/assigned;
+therewasnosource-proofomission,buttheoverlapdescriptionoverstatedsupplement
+equivalence. Future substantivepackets mustpreservecomplementaryworkafter
+proof-levelcomparison,not justtitle/bytecount. Actualproviderusagecaninform
+capacityplanning; no confidence-onlywhole retry or reducedgoal follows.
+
+Two fresh substantiveAUTHOR reconstructions are assigned externally for
+005/006/214 foundations and061–074wavevariance,withfulloriginalΓ/d1/2/3,
+exactconstants/types,zero/fine-scalechecks andnoprovider/source/refactions.
+Theyaddressactualnamedanalyticverificationdebt,not completionbyan easier
+subgoal. Root will inspect complete math before any bounded independent
+review; no new whole-MAIN retry is authorized merely by this LOW report.
+Kimi monthly429/sourceimages/fullrender/freshcold/finalprivategatesOPEN.
+GoalACTIVE. Source8ce/index6/PDF263/80finiteLean/22analyticseams unchanged.
