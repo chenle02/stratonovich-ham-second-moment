@@ -1,129 +1,92 @@
-Last updated: 2026-11-03 14:23 UTC (Codex)
+Last updated: 2026-11-03 18:47 UTC (Codex)
 
 LATEST USER DIRECTION: DeepSeek V4 Pro MAIN; full original goal ACTIVE.
 Capture durable lessons along the way. Actual constant, no forced Chen matching.
 
 ## ⏭ Next session: where to stand and what to do
 
-Monitor the ONE factual SAME-SESSION public-report completion, not the dead
-original process. Same DeepSeek V4 Pro session ses_e5e5bdfa0ffewBx72obudLzeRj,
-completion started2026-11-03T14:19:50.438776UTC. PID3801775/startticks59571740,
-supervisor3801769, exec62504. External native directory:
-../../../../.local/state/Le-AI-Lab/stratonovich-main-four-closures-math-packet-v2/completion/native.
-Check exit.json and current PID/state/startticks before waiting boundedly.
-NO further retry/continuation is authorized. On terminal, export the exact
-session DIRECTLY TO A NEW REGULAR FILE under completion/native, never over
-the original native/session-export.json. Verify original TWO message prefix
-canonically identical using completion/original-message-prefix.json, exact
-new user text, actual same model/session/tools0/finish/clean frozen source.
+Read and falsify the complete PROVISIONAL structural baseline candidate before
+planning any manuscript rewrite. The candidate may shorten the existing
+169/174/181 norm-baseline arguments; it is author work, NOT adopted or independently
+reviewed. Work in ACTIVE, the existing research worktree, not this launcher tree.
 
-ACTIVE research HEAD54761bb584703cf18d2a8946c5850dcce57597a0, branch
-research/fixed-mask-young-20261031, pushed/<HUB> equal. Science8ce03ae,
-index6/neutral6/ledger49;28TeX/214proofs/240statements/PDF263 unchanged.
-210local scopedHIGH+010unaccepted+034189193editorialpending remain; never
-treat those counts as whole completion. Full original all-model actual-
-constant goal ACTIVE. No source/PDF repair has been identified by this audit.
+ACTIVE: ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave
+branch research/fixed-mask-young-20261031, HEAD647a8c421a24d73df5808b4b1e531f16bd37cba7.
+Read Progress.md there first, then
+reviews/2026-11-03-core-analytic-replays/PROVISIONAL-structural-baseline-candidate.md
+(SHA027b4aa7c1b54ddbfea0799f607fee6782dabc58b2bad9b1f460bce5d4c3f91e).
+Root has independently derived the basic route but has NOT fully read this file.
+Check actual compact-valued driver/path/mean/product hypotheses, translation on E,
+free group lower norm and the distinct real symplectic argument. Counterexamples
+to removing those hypotheses are included. Do not infer uniform-R tails or
+point-moment/variational upper bounds from this norm lemma.
 
-ORIGINAL fresh four-closure MAIN is now TERMINAL LENGTH at13:59:32.473388UTC,
-1122.932seconds,actual DeepSeek V4 Pro/tools0. Exit0 is not report completion.
-Its public142776byte JSON stops inside204. Visible literalINCONCLUSIVE/low;
-only001–203are individuallydecodable (41CHECKED162LIMITED),204incomplete,
-205–214andglobalstatement/join/source/findings/calibration/cycle tail absent.
-OriginalPID3725892/exec60323are terminal: never wait/restart them.
-Root read ALL203reason/input/gap fields,partial204andintros, and all THREE
-complete adversarial author finding batches before the ONE completion call.
+The two new scoped native reviews are TERMINAL, fully collected and adjudicated
+in647a8c4. Four foundation proofs004/005/006/214 plus their assigned canonical
+fixed-order application are now additionally accepted at bounded HIGH. The
+variance061-074/088 check remains positive with raw numeric confidence0.8;
+its ONE factual supplement corrected two returned-report captions and supplied
+explicit coefficients, without changing confidence or source. No reviewer is live.
+See their terminal/root-adjudication.md files under
+reviews/2026-11-03-foundation-four-depth/ and
+reviews/2026-11-03-wave061074-depth/correction/.
 
-Original98member native/input capsule SHA
-43c442c81bcaefd8797140c65310def495379769bf5e594ab4605b72d856b8c1,
-allmembersreadback/secretclear, committed65d74f2 at
-reviews/2026-11-03-main-four-closures/original-terminal/. Raw truncated
-report,parsefailure,exact-prefix adapter,source/metadataenvelope all retained.
-Seven returned locator/hash typos stay raw beside exact current bindings.
-Numerous false returned summaries affect010012046047059069073079105109
-131132139164169183190192and202-type descriptions. They are report errors,
-not demonstrated manuscript defects; many other deductions are explicitly
-un-reconstructed and stay LIMITED. No lower confidence or report defect is
-a reason to force a grade or redefine the full goal.
-
-Two errors ALSO occur in new AUTHOR support: the073temporal-kernel sentence
-omits normSQUARED (correct source E:variance-kernel-time-bound406–410);
-K21=1 atzero gives norm proportional h^(1-a/2), falsifying the unsquared
-h^(2-a) claim. Other variance budgets/source already squared correctly.
-Cameron supplement11misnumbers restart121; actualrestart124,121Gaussianlaw.
-Frozen originals unchanged; explicit factual errata supplied. No TeX change.
-
-The one completion asks ONLY missing204–214/globalfields and additive factual
-errata, not regeneration of203rows or a new HIGH assessment. One lineage,
-not a new independent vote. Newprompt17860bytes SHA
-bb920adef522ffaa6f7b97190c09bd8fe1e8f2084b0b3b1ff7bbb61515d91f22.
-Carrier1c41ad48ea1e3a5b5007fbb54f562d3d22286b5a/source/config unchanged.
-Original token cap65536was too small because it includes reasoning19862+
-public45674. Newcombinedcap131072; measured previoususage603944 plus
-newinput/output/system estimate776698<1048576,not exacttokenizer/capacity.
-Original-message hash,rootauthorization,all-three-finding-batches,runner/
-prompt/launch/PID and10member exactcapsule are committed54761bb in
-reviews/2026-11-03-main-four-closures/completion/. durable-lessons.md records
-the supervision/output and author-support mistakes. Concurrent canonical
-Le-AI-Lab foreign work is untouched; older canonical learning remains durable.
-
-After completion, preserve raw output and expliciterrata. If valid, a clearly
-labeled additive composite may join actual203prefix rows with actual11tail
-rows and separate errata; it must not fabricate coverage or rewrite originals.
-Adjudicate every new factual correction, globalfield and remaining proof.
-No whole mathematical/image/render/Kimi/freshcold/final acceptance yet.
-Earlier completeMAIN ses_e600701fbffe4368jteUddzr2y remains separately
-INCONCLUSIVE/MEDIUM204CHECKED10LIMITED, fully root-adjudicated at b2a5749,
-not accepted. Source/PDF/build/scoped reviews and all original boundaries hold.
-
-Kimi MONTHLY429remains: zero reads/images/report. No further probe/retry or
-substitute without actual capacity evidence or Le direction. Primaryimages,
-full263independent render, Kimi,freshcold,finalprivate gates open. Privatewiki
-successor tk-20261102-223931-codex-stratonovich-status-refresh MAINTAINED
-at its dated189snapshot; canonical solewriter queue only. Storage cleanup
-remains done (~3.7GiB),twoArticleworktrees/149GBfree at lastcheck; exactrescue
-kept,neverreapply obsoletepatch. No Lean0.24FYI action or companion/HPC.
+Full original all-model actual-constant goal remains ACTIVE. Whole MAIN is still
+INCONCLUSIVE/low after its one factual public completion:214rows45CHECKED/
+169LIMITED,13joinsPARTIAL. No further call in that lineage. Do not relabel the
+whole manuscript from scoped votes or retry for a higher confidence header.
+Science8ce/index6/ledger52, all28TeX/214proofs/240statements/PDF263 unchanged.
+Whole HIGH, Kimi/source images, independent full render and final fresh cold gates
+remain open. Actual Kimi monthly429 has no restored-capacity evidence; do not probe,
+retry or substitute a model/account. No missing result is a review.
 
 ## Pre-flight checks
 
-1. ROOT pre-handoff4db65bf0c43427b7ba4846b2175a9dda0f878c35; ACTIVE54761bb584703cf18d2a8946c5850dcce57597a0.
-   Verify status/origin/<HUB>; serialize linked ref/staging changes.
-2. Work in ACTIVE. Science8ce/index6/ledger49 and263PDF unchanged. ROOT
-   literal handoff is launch pointer, not latest scientific tree.
-3. ONLY completionPID3801775/startticks59571740/exec62504may be LIVE; inspect
-   exit.json then actualprocessstate. OriginalPID3725892is TERMINALlength.
-4. No newprovider/retry/continuation. Completion is ONEsame-session factual
-   public-record repair, actual unforced judgment, not a new independent vote.
-5. Export NEW fullsession directly to NEWregularfile; verify exact original
-   TWO-message prefix, newprompt/model/session/tools/finish/source/carrier.
-6. Root all203prefix+threebatch reading COMPLETE; sourceactualcorrect,
-   report errors and twoauthornorm/IDerrata preserved, no grade changes.
-7. Any composite must retain raw203+actual11tail+separateerrata provenance.
-   No missingcoverage or HIGH fromtransport/parser repair.
-8. Source/proof repairs only for verified gap, with complete source/PDF/
-   independent-review gates; no grade chasing or scope reduction.
-9. Kimi monthly429notrestoredcapacity; wikiqueueonly, no correspondence/
-   sibling/Skorohod/HPC/officialLeancompanion/publicrelease.
+1. ROOT pre-handoff34529eac731bea609ab2213147e8a077dbf7ef88 and ACTIVE
+   647a8c421a24d73df5808b4b1e531f16bd37cba7 were clean/pushed/<HUB> equal.
+   Verify current status/upstream/<HUB> and preserve other writers' work.
+2. ROOT is the human launcher; ACTIVE Progress.md is current workflow authority.
+   Serialize staging/ref changes: both worktrees share Git metadata.
+3. All native processes cited by older historical sections are TERMINAL. The
+   current whole MAIN and both new scoped reports have already been collected.
+   Do not monitor/restart their dead PIDs or export over original native files.
+4. Verify source8ce/index6/neutral6 and ledger52. All28TeX and PDF were rechecked
+   byteexact to science8ce in647a8c4. No new source build is implied by doc-only work.
+5. Structural candidate is provisional author material; root full reading and
+   actual-domain falsification precede any rewrite or new independent review.
+6. Raw numeric0.8 has no predefined categorical mapping. Preserve it unchanged.
+   Foundation HIGH is exactly four proofs plus assigned fixed-order application.
+7. Two Article worktrees only; cleanup recovered about3.7GiB. No extra Article
+   clone/branch needed. Small source-only review carriers preserve native custody.
+8. Kimi monthly429 is an external open gate. No new availability probe, confidence
+   retry, hidden fallback, source-author correspondence, public release, sibling
+   edit, Skorohod proof, Easley work or official Lean companion is authorized.
 
 ## Concrete deliverables for the next session
 
-Collect the one public completion and its entire raw native envelope, verify
-exact original lineage/input/source, then adjudicate ALL actual corrected/
-remaining rows and globalfields. Complete an explicitly derived record only
-from actual public content; preserve every original error/limit. Continue
-material work toward full original goal and required HIGH/sourcevisual/cold
-gates. No extra continuation or confidence-only retry.
+A root mathematical assessment of the provisional compact-perturbation baseline:
+verify its exact actual-driver application or record a concrete obstruction in
+ACTIVE Progress.md. Only after that assessment decide whether a shorter proof
+would materially improve the whole-argument review. Preserve all existing claims
+and all original models. Do not create a replacement easier completion target.
 
 ## Success criteria for the immediate next step
 
-Original-message prefix unchanged; actual newinput/samemodel/session/tools0/
-finish/source verified. Public missingfields genuinely returned or explicitly
-stillmissing. All actual factual corrections/11rows/globalclaims adjudicated,
-raw originals retained and no local/globalgrade inferred from transport.
-No missing scientific or visual/cold/private gate is silently closed.
+The complete candidate is read, its compactness/translation/free-group and separate
+real Young-Lie arguments are checked on the actual source domains, and a concrete
+accept/reject-as-author-route decision with falsification tests is recorded. No
+independent acceptance is claimed before the required cross-family review. This
+step does not by itself complete the original goal or clear whole/image/cold gates.
 
 ## Anti-success criteria
 
-[held back: collaborators' unpublished work]
+More reports or confidence labels without new mathematical coverage; unioning
+scoped HIGH votes into whole MAIN acceptance; converting numeric0.8 to HIGH;
+waiting on dead reviewers; replacing original Gamma/dimensions/data or the actual
+constant objective; assuming compactness uniform in R; deriving symplectic
+conservation from compactness; source edits without rebuilt clean PDF and required
+independent review; retrying quota-blocked Kimi without actual restored capacity
+or Le direction; overwriting another writer's work or removing cleanup rescues.
 
 ## What the previous sessions produced
 
@@ -2338,62 +2301,80 @@ PARTIAL (digestMAJOR/lintclean) with corrected <HUB> PDFs both13be3be8;
 local canonical copies still old at observation, correct external source
 held. Main p2source/PDF/Lean facts unchanged; no reviewer live.
 
+
+2026-11-03 review checkpoint647a8c4: fully adjudicated actual DeepSeek foundation
+004/005/006/214 PASS_WITH_NOTES/high and assigned fixed-order application; all four
+current owner/LF/module/statement/body bindings match. Fully read the variance
+ONE factual supplement: two report-caption corrections, explicit D/N/E/F/K algebra,
+088 scope clarification; raw0.8 unchanged, no HIGH conversion. Both complete native
+capsules and exact original/correction exports archived/rehashed/secretclear.
+All28TeX/PDF unchanged, ledger52 local states unchanged; pushed and <HUB> parity
+verified. No reviewer live. Canonical durable learning21b75a2/runtime retrieval
+receipts are published; full whole/image/Kimi/cold/goal gates remain open.
+
 ## Repo & git state at handoff
 
-ROOTpre-handoff4db65bf0c43427b7ba4846b2175a9dda0f878c35, clean/pushed before this dedicated
-handoff. ACTIVE54761bb584703cf18d2a8946c5850dcce57597a0, researchbranch,
-clean/pushed/<HUB> equal. Source8ce03ae/index6/ledger49,28TeX/214proofs/
-240statements,PDF263SHA bd1bacf8bdf992ca2e271d671839dfd6a03cd9e84160327045ce45f6d93b7ab6.
-210local scopedHIGH+010unaccepted+3editorials unchanged;80finiteLean facts/
-22analyticseams unchanged. No official companion approval.
+ROOT pre-handoff34529eac731bea609ab2213147e8a077dbf7ef88, clean/pushed before
+this dedicated handoff. ACTIVE647a8c421a24d73df5808b4b1e531f16bd37cba7,
+research/fixed-mask-young-20261031, clean/pushed/<HUB> equal.
+Scientific8ce03ae09cca984b32aaddf3da0a6ded07f47ebc/index6/ledger52:
+28TeX/214proofs/240statements/PDF263; PDF SHA
+bd1bacf8bdf992ca2e271d671839dfd6a03cd9e84160327045ce45f6d93b7ab6.
+210local scopedHIGH,010unaccepted,034/189/193editorialpending unchanged;
+these are not a completion percentage.80finiteLean facts/22analytic seams unchanged.
 
-65d74f2preserves originalMAIN lengthstop/truncated public203prefix and full
-98member capsule.54761bbpreserves threeauthorfindingbatches, twoauthorinput
-errata and ONEsame-session publiccompletion launch/10member prelaunchcapsule.
-Native completion lives in external stratonovich-main-four-closures-math-
-packet-v2/completion/native (literal directory name has no inserted newline).
-Original complete inputs/replays/reports and old cleanuprescue remain exactly
-preserved in their dated directories. All authoragents completed/idle; only
-completionPID3801775needmonitoring. Concurrent Le-AI-Lab foreign work is
-untouched; do not stage/reset/push another writer's unpublished changes.
+647a8c4 archives both complete scoped native/input capsules, exact exports and
+root adjudications. Foundation44members SHA
+da79955e27938667b5125f21d71ebbe3d872e665a65fefa1f6f31e55f296c3b9;
+wave66members SHAa97d85dac70228e2337fc2770f1e98899d57775b44bcb5112fc4a3ebe09ec251.
+Every member rehashed and secret-pattern scanned. Source-only carrier Git objects
+are excluded. Raw original and one corrected wave record remain one exact lineage.
+No mathematical result follows merely from these custody checks.
+
+a2cc313 preserves complete new49kfoundation/31kvariance author replays, peer
+challenges, root assessment and the provisional baseline candidate. df076b8
+preserves final whole MAIN INCONCLUSIVE/low root adjudication and composite.
+8e111f2 preserves canonical durable-learning receipts. Le-AI-Lab lesson21b75a2
+is published as ancestor of verified shared2b81b09; owned skill/runtime/retrieval
+checks passed. Foreign lab WIP remains excluded; do not stage/reset it.
 
 ## Operating notes
 
-[held back: collaborators' unpublished work]
+GoalACTIVE, DeepSeek V4 Pro MAIN, full original all-model actualp2constant.
+No forced Chen matching, source-energy repair or auxiliaryS1/actualp1 identity.
+Progress.md in ACTIVE is the mathematics/workflow authority. Lean-progress is
+separate; no official companion approval or lean-pkg upgrade is inferred from
+lean-ops0.24.0 FYI. No HPC authorized for this pen-and-paper project.
 
-LeanopsFYI reports lean-pkg0.24.0 released/recommended, installed on <HUB>/
-<MACHINE>/<MACHINE>, Office0.23.0; NOaction requested and no upgrade/gate performed
-here. Before nextLean work verify lean-pkg --version and current docs. Reported
-page--write defers binding: updateNAME--write-binding-file just beforeverify,
-commit binding separately fromREADME; comparator receipt first. This does not
-authorize official companion creation/publication or cluster work.
+Whole current MAIN remains unaccepted despite210local scoped HIGH. New foundation
+review is bounded four-proof/application HIGH; new variance report is numeric0.8.
+All author agents are completed/idle. Root source-page14 pixel reading is author
+work, not independent Kimi/image credit. Canonical private wiki successor ticket
+tk-20261102-223931-codex-stratonovich-status-refresh is MAINTAINED/lintclean;
+its189snapshot is explicitly dated, not a current proof-completion percentage.
+Wiki writes use the canonical sole-writer queue; no direct page edits.
+
+Timely durable lessons are recorded in existing canonical review/asymptotic-audit
+skills, dated retro and verified Codex/OpenCode/Claude projections. Generic
+retrieval misses stay explicit beside successful qualified queries. Preserve
+exact native model/source/prompt/cap/finish and full regular-file exports; private
+reasoning, transport success, hashes and counts do not replace public mathematics.
 
 ## Risks to monitor
 
-Whole current MAIN is actual INCONCLUSIVE/MEDIUM; never relabel it HIGH
-because210local scopes exist or4authorreplays assert no gap. The four major
-clusters are incomplete independent replay, not established source falsities.
-Full prior rootreport/author-math reading is complete; a substantive fresh
-MAIN stopped at length/INCONCLUSIVE-low; one publiccompletion is LIVE
-without any acceptance. No confidence-only retry or simple
-union of old votes clears this whole assignment. Native reportmetadata5hash/
-line mismatches must stay raw beside exact input/index source verification.
+Whole graph HIGH remains open: the latest complete MAIN is INCONCLUSIVE/low,
+not an established falsification, and13joins are PARTIAL. Independent driver tails,
+actual Gaussian/Cameron input norms, signed-product/cutoff budgets and positive
+matching need exact mathematical coverage rather than confidence retries.
 
-Independent upper must not assume its own canonical/mixed tail or converge
-coloredK_infinity to original noise. Driver tails need BOTH variances/common
-compact summable envelopes, not strong convergence alone; all-time compactness
-uses one uniform path event. Full F keeps both constants/velocity, E notdense,
-physicalgroup strong notnormcontinuous; onlyE norm is used for growingRupper.
-ActualCameron/AWS uses same-W labels inH_I and correct sqrtδ/minimal quotient
-norm, fulluniformRbound distinct from falseuniformRfinite-projection tails.
-Coarse radius constants/budget order must allbe explicit. Positive matching
-must not reverseJensen/use literalroughPhi_t or assume feature/rawclassequality;
-uniformnear-optimizer budget and positive smoothing/cost/rate passage matter.
+Compact perturbation could simplify a norm baseline only at fixed parameters.
+It does not imply uniform-R compact tails, point upper bounds or sharp constants.
+Symplectic conservation has a separate real Lie argument and needs an inverse;
+arbitrary phase compression or complex Gaussian coefficients can break it.
+Carry displacement AND velocity. No scalar restart, raw point trace, arbitrary
+covariance masking, independent-block or tilted-source-limit shortcut.
 
-No rawpointtrace, GaussianPSD masking, samplewise solution order, independent
-blocks, scalarrestart or tilted-source-limit shortcut. Exactfinitecontrols
-and primarytext do not supply pixel/coldcoverage. Kimi actualmonthly429 and
-full263independentrender/primaryimages/freshcold/finaldelivery remain open;
-no restoredcapacity/substitute is inferred. WikiACTIVE189snapshot is dated
-14d/v39 and verified; future finalstatus needs lateractualfindings. The full
-goal staysactive while meaningful math/adjudication work is available.
+Kimi monthly429, required source pixels, independent full263-page visual review,
+fresh final cold reading and private final delivery are open. No substitute or
+restored capacity is inferred. The goal stays active while meaningful mathematical
+work is available; do not declare completion from local counts or author replays.
