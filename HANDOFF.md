@@ -1,92 +1,120 @@
-Last updated: 2026-11-03 18:47 UTC (Codex)
+Last updated: 2026-11-03 20:39 UTC (Codex)
 
 LATEST USER DIRECTION: DeepSeek V4 Pro MAIN; full original goal ACTIVE.
 Capture durable lessons along the way. Actual constant, no forced Chen matching.
 
 ## ⏭ Next session: where to stand and what to do
 
-Read and falsify the complete PROVISIONAL structural baseline candidate before
-planning any manuscript rewrite. The candidate may shorten the existing
-169/174/181 norm-baseline arguments; it is author work, NOT adopted or independently
-reviewed. Work in ACTIVE, the existing research worktree, not this launcher tree.
+Finish the exact FULL MAIN packet's primary-source/capacity assessment for new
+scientificaf97, then construct and inspect the actual packet before any model call.
+Work in ACTIVE, not this launcher tree:
+../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave
+branch research/fixed-mask-young-20261031, HEAD903966068e9b6559a3d372e0bd73452d308bc927.
+Read its Progress.md first. Current science is
+af97ae4db921a660b0a4ed1ffbe9b6f53a487e2b, indexv7/neutral7/ledger53.
 
-ACTIVE: ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave
-branch research/fixed-mask-young-20261031, HEAD647a8c421a24d73df5808b4b1e531f16bd37cba7.
-Read Progress.md there first, then
-reviews/2026-11-03-core-analytic-replays/PROVISIONAL-structural-baseline-candidate.md
-(SHA027b4aa7c1b54ddbfea0799f607fee6782dabc58b2bad9b1f460bce5d4c3f91e).
-Root has independently derived the basic route but has NOT fully read this file.
-Check actual compact-valued driver/path/mean/product hypotheses, translation on E,
-free group lower norm and the distinct real symplectic argument. Counterexamples
-to removing those hypotheses are included. Do not infer uniform-R tails or
-point-moment/variational upper bounds from this norm lemma.
+The source rewrite is DONE and internally adopted after exact six-proof HIGH;
+do not reread the old provisional baseline as an unfinished source proposal.
+All214ownproofs/240formalstatements/28Tex/13coupledjoins remain the NEXT FULL
+MAIN assignment. Own statements used by other own statements remain assigned,
+not external imports. All original Gamma/d1/2/3/amplitude/data/actualC2 scope stays.
+Newaf97 whole MAIN has NOT run; old8ce INCONCLUSIVE/low remains historical.
 
-The two new scoped native reviews are TERMINAL, fully collected and adjudicated
-in647a8c4. Four foundation proofs004/005/006/214 plus their assigned canonical
-fixed-order application are now additionally accepted at bounded HIGH. The
-variance061-074/088 check remains positive with raw numeric confidence0.8;
-its ONE factual supplement corrected two returned-report captions and supplied
-explicit coefficients, without changing confidence or source. No reviewer is live.
-See their terminal/root-adjudication.md files under
-reviews/2026-11-03-foundation-four-depth/ and
-reviews/2026-11-03-wave061074-depth/correction/.
+First-stage inventory is committed at
+reviews/2026-11-03-main-af97-preparation/inventory-and-capacity-plan.md.
+Its external builder/proposal is the sibling state directory
+stratonovich-full-main-af97-proposal-20261103. Root read the whole inventory.
+Its literal all-working/full-primary chars/2 forecast totals1,146,232 against
+1,048,576 with131072combinedreasoning/public+32768reserve. Its provisional
+38-pageAUTHOR selection is NOTrootapproved. Do not silently trim sources,
+mathematical complements, ownproofs or outputcap to obtain a fit.
 
-Full original all-model actual-constant goal remains ACTIVE. Whole MAIN is still
-INCONCLUSIVE/low after its one factual public completion:214rows45CHECKED/
-169LIMITED,13joinsPARTIAL. No further call in that lineage. Do not relabel the
-whole manuscript from scoped votes or retry for a higher confidence header.
-Science8ce/index6/ledger52, all28TeX/214proofs/240statements/PDF263 unchanged.
-Whole HIGH, Kimi/source images, independent full render and final fresh cold gates
-remain open. Actual Kimi monthly429 has no restored-capacity evidence; do not probe,
-retry or substitute a model/account. No missing result is a review.
+The internal author agent three_dimension_depth has COMPLETED
+SEPARATE stage2 in siblingstate
+stratonovich-full-main-af97-factorization-20261103. Read README-STAGE2.md there (SHA106a6d82...) then the actual supporting records.
+Root has read that README, not yet all Stage2 data/code. It preserves the four
+initial files, full64AUTHOR+allpriorprimary and all1434refs/77citation uses.
+It confirms Lemma4.4p30 and Section5p33–37 context; the38page plan is NOTapproved.
+Factored maps round-trip neutral7 byteexact010d2eeb. Full64 chars/2 forecast
+still FAILS1,097,950 by49,374. Separate matched-baseline incremental forecast
+is1,036,950 with11,626headroom, CONDITIONAL on same-tokenizer/BYTE-BPE framing:
+actualbaseline527922 +266370newmathbytecharge+7799source edits+36231map edits
++2020instruction edits+4x4096futureedit-byte allowances+16384boundary tokens
++32768system+131072combined. NOT exact tokenization or root dispatch approval.
+No local exactV4 tokenizer was established. Root must inspect actual retained
+payload/edit-boundary/primary data and make an explicit capacity decision;
+never silently override the failed guard. NO final packet,
+rootready marker, installed config, preflight, Gitseal or native fullMAIN call.
+No author preparation message or syntax check is a review. Read actual Stage2
+working/coverage before a concrete root selection/plan decision.
+
+All scoped native processes are TERMINAL; never wait/restart their old PIDs.
+The source and current mapping are clean/pushed/<HUB> equal. Primary pixels,
+Kimi, independent263visual and finalfreshcold remain OPEN; actual monthly429 has
+no restored-capacity evidence and permits no new probe/substitute.
 
 ## Pre-flight checks
 
-1. ROOT pre-handoff34529eac731bea609ab2213147e8a077dbf7ef88 and ACTIVE
-   647a8c421a24d73df5808b4b1e531f16bd37cba7 were clean/pushed/<HUB> equal.
-   Verify current status/upstream/<HUB> and preserve other writers' work.
-2. ROOT is the human launcher; ACTIVE Progress.md is current workflow authority.
-   Serialize staging/ref changes: both worktrees share Git metadata.
-3. All native processes cited by older historical sections are TERMINAL. The
-   current whole MAIN and both new scoped reports have already been collected.
-   Do not monitor/restart their dead PIDs or export over original native files.
-4. Verify source8ce/index6/neutral6 and ledger52. All28TeX and PDF were rechecked
-   byteexact to science8ce in647a8c4. No new source build is implied by doc-only work.
-5. Structural candidate is provisional author material; root full reading and
-   actual-domain falsification precede any rewrite or new independent review.
-6. Raw numeric0.8 has no predefined categorical mapping. Preserve it unchanged.
-   Foundation HIGH is exactly four proofs plus assigned fixed-order application.
-7. Two Article worktrees only; cleanup recovered about3.7GiB. No extra Article
-   clone/branch needed. Small source-only review carriers preserve native custody.
-8. Kimi monthly429 is an external open gate. No new availability probe, confidence
-   retry, hidden fallback, source-author correspondence, public release, sibling
-   edit, Skorohod proof, Easley work or official Lean companion is authorized.
+1. ROOT pre-handoff755f0fb411243a317a36c780a3cf96b5adcc5788; ACTIVE
+   903966068e9b6559a3d372e0bd73452d308bc927. Verify current status/upstream/GW;
+   preserve foreign work and serialize linked Git ref/staging mutations.
+2. ROOT is the human launcher only. The current science is in ACTIVE:
+   af97ae4/sourcecontent5551, index7/neutral7/ledger53,263PDF096cb3.
+   Do not use launcher/master Progress or older8ce maps as current science.
+3. Full neutral7 hash010d2eeb0959878fe68a7131812dd72487c594943a2181c91ecf086f5a49cfeb.
+   Current manifest-FILEcbc7 differs from content5551 and carrier36c2572.
+   d478316 applied all214/240currentbindings/25modulefields; histories and
+   current-versus-old flags are honest, local210/1/3states unchanged.
+4. All native reviewers are TERMINAL. Stage2 AUTHOR preparation is terminal. No new whole-review process/session
+   or rootready marker exists.
+5. Full-MAIN scope is all214OWN,240declarations,28sourcefiles,13joins and all
+   actual original-model/calibration/source obligations. Prior reports/votes/
+   grades/ledgers/governance excluded from provider payload; no desired verdict.
+6. Budget reasoning/public together131072. Capacity is planning, not exact
+   tokenization/semantic reading. Preserve all original failed forecasts and
+   raw inputs; no silent pruning, cap downgrade or confidence-only retry.
+7. Rebuilding the state worktree may need the canonical refdb search path via
+   BIBINPUTS because its relative All.bib link is outside the paired workspace.
+   All.bib/refdb were not changed. Current build is already clean; do not
+   repeat absent a source change or unresolved build issue.
+8. Kimi monthly429 not restored. Wiki exactnewticket is queued with inactive
+   canonical writer; no service restart/wake/requeue or false live-wait claim.
+9. Two protected Article worktrees only; about3.7GiB cleanup recovery retained.
+   No new Articleclone, HPC, Skorohod/sibling edits, official companion,
+   correspondence or public release authorized.
 
 ## Concrete deliverables for the next session
 
-A root mathematical assessment of the provisional compact-perturbation baseline:
-verify its exact actual-driver application or record a concrete obstruction in
-ACTIVE Progress.md. Only after that assessment decide whether a shorter proof
-would materially improve the whole-argument review. Preserve all existing claims
-and all original models. Do not create a replacement easier completion target.
+An exact, reviewable full-MAIN source/math/primary packet on af97 after actual
+Stage2 primary-use and capacity decisions. Retain complementary Fourier/Bessel,
+spatial support, raw scaling/quotient, scaled-max, F/distribution, H/G/UI,
+version and010k2/k3 factorial calculations. New foundation49k/wave31k and
+structural working may replace older calculations only after actual equivalence
+is checked. Preserve source166/167 and ordinary/source-point own claims.
+Then effectiveactualDeepSeekV4Pro/alltoolsdeny preflight, post-seal frame
+readback and ONE root-owned fresh native fullMAIN call, if the exact packet
+passes. No native call is approved merely by this handoff.
 
 ## Success criteria for the immediate next step
 
-The complete candidate is read, its compactness/translation/free-group and separate
-real Young-Lie arguments are checked on the actual source domains, and a concrete
-accept/reject-as-author-route decision with falsification tests is recorded. No
-independent acceptance is claimed before the required cross-family review. This
-step does not by itself complete the original goal or clear whole/image/cold gates.
+All exact af97 source/neutral7 bindings, source citations/primary-use coverage,
+mathematical complement inventory and actual final frames are verified. No
+required primary/source/own-proof scope is silently omitted for a capacity
+heuristic. The concrete capacity method and its assumptions/reserves are recorded;
+an estimate is not called an exact token count. Root reads/authorizes the exact
+built payload before any native invocation. Eventual actual full214math result
+is fully read/adjudicated, with no acceptance inferred from metadata or a header.
 
 ## Anti-success criteria
 
-More reports or confidence labels without new mathematical coverage; unioning
-scoped HIGH votes into whole MAIN acceptance; converting numeric0.8 to HIGH;
-waiting on dead reviewers; replacing original Gamma/dimensions/data or the actual
-constant objective; assuming compactness uniform in R; deriving symplectic
-conservation from compactness; source edits without rebuilt clean PDF and required
-independent review; retrying quota-blocked Kimi without actual restored capacity
-or Le direction; overwriting another writer's work or removing cleanup rescues.
+Calling the new source whole-reviewed from six scoped HIGHs; treating210local
+scopes as a percentage; converting waveconfidence0.8 toHIGH; waiting on dead
+reviewers; treating authorStage2 as a provider result; using source8ce/candidate
+as af97 without exact bridge; retaining stale current module hashes or wrong
+manifest labels; pruning primary pages/calculations/own proofs silently to fit;
+calling owncontext an imported external theorem; retrying for a higher label;
+restarting a queue service or probing/substituting Kimi without authority;
+source/goal/model reduction; source changes without new clean PDF/review gates.
 
 ## What the previous sessions produced
 
@@ -2312,69 +2340,112 @@ All28TeX/PDF unchanged, ledger52 local states unchanged; pushed and <HUB> parity
 verified. No reviewer live. Canonical durable learning21b75a2/runtime retrieval
 receipts are published; full whole/image/Kimi/cold/goal gates remain open.
 
+2026-11-03 structural checkpointaf97ae4/d478316/9039660: source now contains the
+compact-Young/free-norm lemma in165, direct real Young-Lie conservation in168,
+and norm-only rewiring169/174/181/185. Exactly6bodies/1statement changed,
+all214proof/240formal identities retained. Actual fresh DeepSeek V4 Pro plus ONE
+factual supplement is terminal/high/all6CHECKED; root fully adjudicated every
+original/corrected field. All28TeX match reviewedcandidate5551; actual263PDF096cb3
+builds with0errors/undefinedrefs,cites/overfull, full263text and8changed-page pixels
+match candidate. Authorvisuals only. Native/author archives and exact reports
+committed, source pushed/GW parity. Newindexv7/neutral7/ledger53 rebind all25module
+rows and preserve priorreports/hashes/dispositions; independent actual-Git-source
+parser/root apply verified, no grade/count upgrade. Currentwholeaf97 NOT_YET_REVIEWED.
+
+Canonicaldurablelesson d59efc66532f6bcff945042496a1795bc965dc05: numericconfidence
+staysraw, formal keys includeenvironment, declarebodyhash/content/manifest/Git
+identities. Existingskill updated;434chars/41headline, runtimebyteexact,
+strictstartup9/9implicit1375explicit, retrievalranks2/1. ForeignWIP and entire
+unownedindex preserved, origin/<HUB> equal. Article receipts inaf97.
+
+9039660 preserves full-MAIN first-stage calculation inventory/guardedbuilder
+proposal and exact ordinary wiki requesttk-20261103-151055-codex-stratonovich-af97-status.
+Requestverifiedcanonicalrequests, writerinactive/dead/MainPID0; queuednotmaintained,
+priorpage09c7e3 unchanged. No restart/wake/force/requeue. Initialliteralunion
+chars/2 capacity fails by97,656; proposed38-pageAUTHOR selection NOTrootapproved.
+Full64preferred. Author three_dimension_depth subsequently completed separateStage2
+reversiblemaps/primary-use coverage/incrementalcapacity/local-tokenizer checks;
+no fullpacket/provider/config/seal/rootready exists. Fullgoal ACTIVE.
+
 ## Repo & git state at handoff
 
-ROOT pre-handoff34529eac731bea609ab2213147e8a077dbf7ef88, clean/pushed before
-this dedicated handoff. ACTIVE647a8c421a24d73df5808b4b1e531f16bd37cba7,
+ROOTpre-handoff755f0fb411243a317a36c780a3cf96b5adcc5788, clean/pushed before
+this dedicated handoff. ACTIVE903966068e9b6559a3d372e0bd73452d308bc927,
 research/fixed-mask-young-20261031, clean/pushed/<HUB> equal.
-Scientific8ce03ae09cca984b32aaddf3da0a6ded07f47ebc/index6/ledger52:
-28TeX/214proofs/240statements/PDF263; PDF SHA
-bd1bacf8bdf992ca2e271d671839dfd6a03cd9e84160327045ce45f6d93b7ab6.
-210local scopedHIGH,010unaccepted,034/189/193editorialpending unchanged;
-these are not a completion percentage.80finiteLean facts/22analytic seams unchanged.
+Scienceaf97ae4db921a660b0a4ed1ffbe9b6f53a487e2b; mapping/statusd47831693aa7dd34bc5163403b74ab5597110a11;
+preparation/queued-wiki9039660. All28Tex/214proofs/240statements/PDF263;
+current PDFSHA096cb3cd4610c91d7dc8718bd56526e777cdd06ebca41651a8955bc230eb2f35.
 
-647a8c4 archives both complete scoped native/input capsules, exact exports and
-root adjudications. Foundation44members SHA
-da79955e27938667b5125f21d71ebbe3d872e665a65fefa1f6f31e55f296c3b9;
-wave66members SHAa97d85dac70228e2337fc2770f1e98899d57775b44bcb5112fc4a3ebe09ec251.
-Every member rehashed and secret-pattern scanned. Source-only carrier Git objects
-are excluded. Raw original and one corrected wave record remain one exact lineage.
-No mathematical result follows merely from these custody checks.
+Exactly six new bodies165/168/169/174/181/185, one expanded165statement.
+Bounded actualDeepSeek/high session ses_e5d297aa6ffec2Vp5oF6IHzb8h +ONEfactual
+supplement (originalprefixexact/tools0/stop); root adjudication and original/
+corrected public texts immutable. Complete native84member capsule0b5f2d12...,
+original64member102fabb2..., author/build34member2fa9b7e0... in
+reviews/2026-11-03-structural-baseline-candidate/. PDF263cleanfulltext and8author
+pixels match candidate; no independent image credit. d478316 rootapplies
+v7/neutral7/ledger53 after two source reconstructions; all history/literal
+reviews/previoushashes preserved. Local210HIGH/010unaccepted/034189193pending;
+current af97 wholeNOT_YET_REVIEWED.80finiteLean facts/22analyticseams unchanged.
 
-a2cc313 preserves complete new49kfoundation/31kvariance author replays, peer
-challenges, root assessment and the provisional baseline candidate. df076b8
-preserves final whole MAIN INCONCLUSIVE/low root adjudication and composite.
-8e111f2 preserves canonical durable-learning receipts. Le-AI-Lab lesson21b75a2
-is published as ancestor of verified shared2b81b09; owned skill/runtime/retrieval
-checks passed. Foreign lab WIP remains excluded; do not stage/reset it.
+Canonical Le-AI-Labd59efc66532f6bcff945042496a1795bc965dc05 is published,
+origin/GW/runtime/retrieval/strictbudget verified. Four foreign WIP paths and
+entire unowned index preserved; no stage/reset of foreign work. Receipts in
+reviews/2026-11-03-durable-numeric-bindings/. InitialfullMAINplan and queuedwiki
+request are committed in their datedpreparation/status directories.
 
 ## Operating notes
 
 GoalACTIVE, DeepSeek V4 Pro MAIN, full original all-model actualp2constant.
 No forced Chen matching, source-energy repair or auxiliaryS1/actualp1 identity.
-Progress.md in ACTIVE is the mathematics/workflow authority. Lean-progress is
-separate; no official companion approval or lean-pkg upgrade is inferred from
-lean-ops0.24.0 FYI. No HPC authorized for this pen-and-paper project.
+Progress.md in ACTIVE is the mathematics/workflow authority. Sourceaf97's
+internal6proofacceptance is not full project/circulation permission.
 
-Whole current MAIN remains unaccepted despite210local scoped HIGH. New foundation
-review is bounded four-proof/application HIGH; new variance report is numeric0.8.
-All author agents are completed/idle. Root source-page14 pixel reading is author
-work, not independent Kimi/image credit. Canonical private wiki successor ticket
-tk-20261102-223931-codex-stratonovich-status-refresh is MAINTAINED/lintclean;
-its189snapshot is explicitly dated, not a current proof-completion percentage.
-Wiki writes use the canonical sole-writer queue; no direct page edits.
+Wiki sole-writer ordinary requesttk-20261103-151055-codex-stratonovich-af97-status
+was verified only in canonicalrequests, writerinactive/dead/MainPID0 at20:11UTC.
+Not maintained, not a live process wait. Prior maintainedticket
+ tk-20261102-223931-codex-stratonovich-status-refresh/page09c7e3 remain dated
+14d82c0/v39/189snapshot history. Newticket explicitly authorizes af97/source
+status+fourpaths, preservesmathdisplays; no restart/wake/force/requeue. Check
+exact ticket/receipt ID on resume; do not use prefix globs or list the whole
+thousands-entry queue. No direct wiki/refdb/source-store edits.
 
-Timely durable lessons are recorded in existing canonical review/asymptotic-audit
-skills, dated retro and verified Codex/OpenCode/Claude projections. Generic
-retrieval misses stay explicit beside successful qualified queries. Preserve
-exact native model/source/prompt/cap/finish and full regular-file exports; private
-reasoning, transport success, hashes and counts do not replace public mathematics.
+Full-MAINStage2 author preparation and all other authors are complete.
+No native reviewer is live. Book/source pixels, full263independent visual,
+Kimi and freshfinalcold remain open. User's old Kimi question is pending;
+no further quota probe/account/model substitute absent restored-capacity
+evidence or Le direction. lean-pkg0.24FYI needs no action; no upgrade or
+companion/gate creation has been performed here.
+
+Timely lessons were captured in existing canonical skills, not duplicate skills.
+Native source/prompt/actualmodel/finish/tools and literal report/correction
+statuses remain distinct from correctness/acceptance. New MAIN may be assigned
+because sourceaf97 has genuine proof changes plus new analytic working; this
+does not authorize a confidence-only rerun of any closed old lineage.
 
 ## Risks to monitor
 
-Whole graph HIGH remains open: the latest complete MAIN is INCONCLUSIVE/low,
-not an established falsification, and13joins are PARTIAL. Independent driver tails,
-actual Gaussian/Cameron input norms, signed-product/cutoff budgets and positive
-matching need exact mathematical coverage rather than confidence retries.
+Whole current af97 has not been reviewed. Prior8ce whole MAIN is actual
+INCONCLUSIVE/low with13PARTIALjoins, preserved unchanged; neither is an
+established source falsity or sourceaf97 acceptance. Critical all-order,
+operator/path/source/canonical, Cameron/AWS/action, growing-mask product,
+original-point and positive-matching deductions still require a complete
+independent whole audit. A broad count of supplied source is not reconstruction.
 
-Compact perturbation could simplify a norm baseline only at fixed parameters.
-It does not imply uniform-R compact tails, point upper bounds or sharp constants.
-Symplectic conservation has a separate real Lie argument and needs an inverse;
-arbitrary phase compression or complex Gaussian coefficients can break it.
-Carry displacement AND velocity. No scalar restart, raw point trace, arbitrary
-covariance masking, independent-block or tilted-source-limit shortcut.
+Fullprimary fidelity must cover actual author4.1/Lemma4.4/Section5 and allother
+citations, not assume missing pages dispensable. Mathematical supplements need
+calculation-level equivalence before replacement. Never drop a required proof,
+primary-use context or model to satisfy a planning heuristic. Actual context
+budget includes reasoning/public and system reserve; no silent cap change.
 
-Kimi monthly429, required source pixels, independent full263-page visual review,
-fresh final cold reading and private final delivery are open. No substitute or
-restored capacity is inferred. The goal stays active while meaningful mathematical
-work is available; do not declare completion from local counts or author replays.
+Compact norm floor is on actual infinite whole-space E and compact-valued
+Young paths; not arbitrary finite-dimensional/noncompact/F operators. Real
+J-skew conservation is separate. Retain both phase entries, covariance
+compensation, true restart and all fixed-versus-growing parameter budgets.
+No scalar restart, GaussianPSD masking, arbitrary phase compression, dense
+E-in-F assumption, pointtrace or tilted-source-limit shortcut.
+
+Kimi monthly429 and inactive wiki writer are genuine external gates, but
+meaningful full-MAIN preparation/work remains available: do not mark goal
+blocked merely because those gates remain. No final completion until original
+contract allproof/calibration/HIGH/source/visual/cold/private-delivery evidence
+is actually inspected and complete. Goal remains active across turns.
