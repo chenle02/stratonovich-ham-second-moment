@@ -14,7 +14,7 @@
   committed with the source and matches every reviewed-candidate text page.
   Local/origin/<HUB> source parity is verified; no extra checkout exists.
 
-- **Review scope:** current indexv6/neutralv6 and depth-ledger-v48 bind the
+- **Review scope:** current indexv6/neutralv6 and depth-ledger-v49 bind the
   integrated source:210 exact scoped HIGH,3 earlier editorial deltas,1
   unaccepted current-report row010. These counts are not a completion
   percentage. The earlier complete MAIN report remains ungraded120CHECKED/
@@ -29,11 +29,11 @@
   and partial204tail; numerous explicit reading limits and concrete report
   calculation errors are retained. Root65536cap was consumed by19862
   reasoning+45674public tokens. The full original capsule is immutable.
-  One possible factual same-session missing-report completion awaits the
-  complete finding batch; none launched. No source or local-grade change,
+  After complete203row/all-three-batch reading, ONE factual same-session
+  missing-report completion is LIVE (14:19:50UTC,PID3801775,exec62504). No source or local-grade change,
   whole/image/render/Kimi/cold/project acceptance, auto retry or grade chase.
 
-- **Current whole MAIN (2026-11-03):** the one actual all214own-proof/
+- **Earlier complete whole MAIN (2026-11-03):** the one actual all214own-proof/
   240statement/28TeX DeepSeek V4 Pro run is TERMINAL, actual INCONCLUSIVE/
   MEDIUM,204CHECKED/10LIMITED,0FLAW/NOT_READ and4major/2minor findings.
   No falsifying error established; critical operator-dynamics/cutoff/constant/
@@ -13017,3 +13017,37 @@ for a confidence retry or a new vote. No completion call has yet been launched.
 All original model/domain/data/amplitude/action, image/Kimi/freshcold and
 final-private gates remain. GoalACTIVE; previous turn had concrete progress,
 this turn produced an actual terminal report and mathematical findings.
+
+
+## 2026-11-03 — Batched factual errors and one public-record completion
+
+Root completed every203returned row and all three author finding batches
+before ONE explicit same-session completion. Besides report010012046047059,
+069073079105109131132139164169183190192and202-type errors, two actual
+author-support defects were found: the073time-kernel sentence omitted norm²
+(correct at zero frequency only as squarednorm), and a Cameron restart
+shorthand named121 rather than124. The manuscript/source/PDF is correct;
+original support bytes stay frozen with explicit errata, not silently edited.
+No unexplained ancestor is treated as checked merely because author working
+exists. Full local depth states/source model/kinetic/action remain unchanged.
+
+The one manual completion starts14:19:50.438776UTC, same DeepSeek V4 Pro
+session ses_e5e5bdfa0ffewBx72obudLzeRj, PID3801775/startticks59571740,
+supervisor3801769,exec62504. Newinput17860bytes SHA
+bb920adef522ffaa6f7b97190c09bd8fe1e8f2084b0b3b1ff7bbb61515d91f22 asks
+ONLY missing204–214/globalfields and additive factual errata, not regeneration
+of203rows or higherconfidence. One lineage,not a new vote; honest unresolved
+reading stays unresolved. Actual oldtokens603944 plus newinput/output/system
+planning776698/1048576;131072combinedoutputcap. No further continuation/retry
+is authorized. Source8ce/carrier/model/config unchanged. Export the new full
+session to a NEW regularfile; verify exact original-message prefix and actual
+new user/model/tool/finish/source before reading. Do not overwrite original.
+
+All three finding files, metadata comparison, complete completion prompt/
+rootauthorization/originalprefixhash/runner/launch/PID custody are preserved
+in reviews/2026-11-03-main-four-closures/completion/, with every archive member
+rehashed and secret-scanned. Ledger49records RUNNING child without touching
+oldreview/source/localgrades. durable-lessons.md records combined token
+budgeting, arithmetic-check depth and author norm/ID fidelity. Concurrent
+Le-AI-Lab foreign work is left untouched. GoalACTIVE, no whole/image/Kimi/
+render/freshcold/private-final clearance; this is substantive report repair.
