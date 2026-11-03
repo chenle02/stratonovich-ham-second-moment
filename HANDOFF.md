@@ -1,122 +1,124 @@
-Last updated: 2026-11-03 20:39 UTC (Codex)
+Last updated: 2026-11-03 23:01 UTC (Codex)
 
-LATEST USER DIRECTION: DeepSeek V4 Pro MAIN; full original goal ACTIVE.
-Capture durable lessons along the way. Actual constant, no forced Chen matching.
+LATEST USER DIRECTION: full original goal ACTIVE; DeepSeek V4 Pro MAIN.
+Capture durable lessons promptly. Derive the actual constant without forcing Chen.
 
 ## ⏭ Next session: where to stand and what to do
 
-Finish the exact FULL MAIN packet's primary-source/capacity assessment for new
-scientificaf97, then construct and inspect the actual packet before any model call.
-Work in ACTIVE, not this launcher tree:
+Prepare the exact A.pilot full-context reconstruction packet from the frozen
+prospective themed MAIN plan. Work in ACTIVE, not this launcher checkout:
 ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave
-branch research/fixed-mask-young-20261031, HEAD903966068e9b6559a3d372e0bd73452d308bc927.
-Read its Progress.md first. Current science is
-af97ae4db921a660b0a4ed1ffbe9b6f53a487e2b, indexv7/neutral7/ledger53.
+branch research/fixed-mask-young-20261031, HEAD990f2b45966f258934db802679c104e5501c9fd9.
+Read its Progress.md and reviews/2026-11-03-af97-themed-main-plan/ first.
+Root has read and authorized packet PREPARATION ONLY under that directory's
+root-preparation-decision.json; no pilot build, preflight, seal or native run yet.
 
-The source rewrite is DONE and internally adopted after exact six-proof HIGH;
-do not reread the old provisional baseline as an unfinished source proposal.
-All214ownproofs/240formalstatements/28Tex/13coupledjoins remain the NEXT FULL
-MAIN assignment. Own statements used by other own statements remain assigned,
-not external imports. All original Gamma/d1/2/3/amplitude/data/actualC2 scope stays.
-Newaf97 whole MAIN has NOT run; old8ce INCONCLUSIVE/low remains historical.
+A.pilot owns001003004005006007008010214 and15formal statements; the full program
+retains214OWN/240formal/13joins/all28TeX and every original-model actual-C2 claim.
+Replace BOTH the old unframed214-task prefix and old agent instructions, not
+just two framed instructions. Enforce exact owned-ID/source/application coverage
+outside the generic schema, which can validate empty arrays. Keep the70 exact
+source/primary/math/map frames including full64AUTHOR; add the neutral010 exact
+kth working and finite checks with provenance. Rebind current workflow metadata
+outside the immutable plan; scientific source remains af97. Measure every new
+byte against actual603973baseline, explicit reserves and proposed196608combined
+output. Root must inspect the built artifact and actual route/tools/capacity
+before any invocation. This handoff is not native dispatch approval.
 
-First-stage inventory is committed at
-reviews/2026-11-03-main-af97-preparation/inventory-and-capacity-plan.md.
-Its external builder/proposal is the sibling state directory
-stratonovich-full-main-af97-proposal-20261103. Root read the whole inventory.
-Its literal all-working/full-primary chars/2 forecast totals1,146,232 against
-1,048,576 with131072combinedreasoning/public+32768reserve. Its provisional
-38-pageAUTHOR selection is NOTrootapproved. Do not silently trim sources,
-mathematical complements, ownproofs or outputcap to obtain a fit.
-
-The internal author agent three_dimension_depth has COMPLETED
-SEPARATE stage2 in siblingstate
-stratonovich-full-main-af97-factorization-20261103. Read README-STAGE2.md there (SHA106a6d82...) then the actual supporting records.
-Root has read that README, not yet all Stage2 data/code. It preserves the four
-initial files, full64AUTHOR+allpriorprimary and all1434refs/77citation uses.
-It confirms Lemma4.4p30 and Section5p33–37 context; the38page plan is NOTapproved.
-Factored maps round-trip neutral7 byteexact010d2eeb. Full64 chars/2 forecast
-still FAILS1,097,950 by49,374. Separate matched-baseline incremental forecast
-is1,036,950 with11,626headroom, CONDITIONAL on same-tokenizer/BYTE-BPE framing:
-actualbaseline527922 +266370newmathbytecharge+7799source edits+36231map edits
-+2020instruction edits+4x4096futureedit-byte allowances+16384boundary tokens
-+32768system+131072combined. NOT exact tokenization or root dispatch approval.
-No local exactV4 tokenizer was established. Root must inspect actual retained
-payload/edit-boundary/primary data and make an explicit capacity decision;
-never silently override the failed guard. NO final packet,
-rootready marker, installed config, preflight, Gitseal or native fullMAIN call.
-No author preparation message or syntax check is a review. Read actual Stage2
-working/coverage before a concrete root selection/plan decision.
-
-All scoped native processes are TERMINAL; never wait/restart their old PIDs.
-The source and current mapping are clean/pushed/<HUB> equal. Primary pixels,
-Kimi, independent263visual and finalfreshcold remain OPEN; actual monthly429 has
-no restored-capacity evidence and permits no new probe/substitute.
+The previous fullaf97 MAIN DID RUN and is terminal INCONCLUSIVE/low, not pending
+or unstarted. Session ses_e5ca3f319ffe0OatPfuHBon0G9 plus ONE factual same-session
+record completion is CLOSED:214rows13CHECKED/201LIMITED;13literaljoins2PASS/
+11PARTIAL. No located source defect, no complete reconstruction. Both originals,
+allreturned math, source and custody are fully read/adjudicated. NO further call
+in that lineage. New phased work is a substantive workload change, never a
+confidence retry or union of earlier scoped votes. A genuine final DeepSeek
+whole-coupled judgment remains required after actual OWN/interface deductions.
 
 ## Pre-flight checks
 
-1. ROOT pre-handoff755f0fb411243a317a36c780a3cf96b5adcc5788; ACTIVE
-   903966068e9b6559a3d372e0bd73452d308bc927. Verify current status/upstream/GW;
-   preserve foreign work and serialize linked Git ref/staging mutations.
-2. ROOT is the human launcher only. The current science is in ACTIVE:
-   af97ae4/sourcecontent5551, index7/neutral7/ledger53,263PDF096cb3.
-   Do not use launcher/master Progress or older8ce maps as current science.
-3. Full neutral7 hash010d2eeb0959878fe68a7131812dd72487c594943a2181c91ecf086f5a49cfeb.
-   Current manifest-FILEcbc7 differs from content5551 and carrier36c2572.
-   d478316 applied all214/240currentbindings/25modulefields; histories and
-   current-versus-old flags are honest, local210/1/3states unchanged.
-4. All native reviewers are TERMINAL. Stage2 AUTHOR preparation is terminal. No new whole-review process/session
-   or rootready marker exists.
-5. Full-MAIN scope is all214OWN,240declarations,28sourcefiles,13joins and all
-   actual original-model/calibration/source obligations. Prior reports/votes/
-   grades/ledgers/governance excluded from provider payload; no desired verdict.
-6. Budget reasoning/public together131072. Capacity is planning, not exact
-   tokenization/semantic reading. Preserve all original failed forecasts and
-   raw inputs; no silent pruning, cap downgrade or confidence-only retry.
-7. Rebuilding the state worktree may need the canonical refdb search path via
-   BIBINPUTS because its relative All.bib link is outside the paired workspace.
-   All.bib/refdb were not changed. Current build is already clean; do not
-   repeat absent a source change or unresolved build issue.
-8. Kimi monthly429 not restored. Wiki exactnewticket is queued with inactive
-   canonical writer; no service restart/wake/requeue or false live-wait claim.
-9. Two protected Article worktrees only; about3.7GiB cleanup recovery retained.
-   No new Articleclone, HPC, Skorohod/sibling edits, official companion,
-   correspondence or public release authorized.
+1. Verify ROOTmaster and ACTIVE branch/upstream/GW parity; linked Git metadata
+   is shared, so serialize staging/ref mutations. Current ACTIVE is 990f2b45966f258934db802679c104e5501c9fd9;
+   ROOTpre-handoff is 928399afa300996ec41bed99530b8d96c95fdf29. Both were clean/pushed/GW equal.
+2. Scienceaf97ae4db921a660b0a4ed1ffbe9b6f53a487e2b is unchanged across all28TeX;
+   PDF263 SHA096cb3cd4610c91d7dc8718bd56526e777cdd06ebca41651a8955bc230eb2f35.
+   Indexv7/neutral7 remain current; neutralSHA010d2eeb0959878fe68a7131812dd72487c594943a2181c91ecf086f5a49cfeb.
+   Ledger54 changes only terminal metadata, preserves all214raw rows/history.
+3. ContentID5551fff230882d8a42a213a8663ccee03b83aca434d1f65c0eb020a068de5248
+   differs from manifest-FILEcbc7bf9aa8ae5f90cdda36d46a83a2e152bb8ee8710a68f8ba75ed9fabc744c2.
+   Local210scopedHIGH/010unaccepted/034189193editorialpending are not percentages.
+4. Every native process and author/audit task from this checkpoint is terminal.
+   Never poll/restart old PIDs. All exports are regular-file masters; capture
+   secret-bearing global config only into an anonymous regular file and persist
+   selected safe fields. Tools must all be denied; actual model/finish/source/
+   exactprompt/prefix checks remain distinct from mathematical acceptance.
+5. Frozen plan manifest88520f9528d805e1aace3b1534adde76a4a2a01dbafd6a3eee4ebfe5ed88c19b;
+   producer3438/independentauthor7082checks plus root214/240field comparison.
+   Read the independent-author-audit.md construction guards. These are author
+   checks, not independent scientific review or final synthesis-fit evidence.
+6. Proposed196608 cap is not installed or proven honored. Actual393216cached
+   ceiling fails the conservative full-scaffold bound. Preserve failed chars/2
+   forecasts and source/primary/math scopes; no silent trimming or cap change.
+7. No LaTeX edit occurred this checkpoint. Prior clean build and exact source/
+   PDF checks stand. Rebuild only after changes/unresolved issues; state checkout
+   may need canonical BIBINPUTS for its read-only All.bib link.
+8. Kimi monthly429 has no restored-capacity evidence: no probe/account/model
+   substitute or quota purchase. Source-pixel/independent263visual/freshcold open.
+   Exactwiki ticket stays queued/inactive, not maintained or a live-process wait.
+9. Exactly two protected Article worktrees remain; prior cleanup recoveredabout
+   3.7GiB. No new Articleclone/worktree, HPC, Skorohod/sibling edit, officialLean
+   companion, correspondence or public release is authorized.
 
 ## Concrete deliverables for the next session
 
-An exact, reviewable full-MAIN source/math/primary packet on af97 after actual
-Stage2 primary-use and capacity decisions. Retain complementary Fourier/Bessel,
-spatial support, raw scaling/quotient, scaled-max, F/distribution, H/G/UI,
-version and010k2/k3 factorial calculations. New foundation49k/wave31k and
-structural working may replace older calculations only after actual equivalence
-is checked. Preserve source166/167 and ordinary/source-point own claims.
-Then effectiveactualDeepSeekV4Pro/alltoolsdeny preflight, post-seal frame
-readback and ONE root-owned fresh native fullMAIN call, if the exact packet
-passes. No native call is approved merely by this handoff.
+One built and independently validated A.pilot full-context packet on exactaf97,
+with new owned-work prefix/agent/contract, all70 unchanged frames, explicit15
+formal/9proof ownership, current workflow bindings and full capacity accounting.
+Root inspects actual bytes, effective route and all guarded preconditions before
+one fresh native invocation. Keep all pending OWN premises provisional; reports
+need actual mathematical working and an unforced verdict/confidence.
 
 ## Success criteria for the immediate next step
 
-All exact af97 source/neutral7 bindings, source citations/primary-use coverage,
-mathematical complement inventory and actual final frames are verified. No
-required primary/source/own-proof scope is silently omitted for a capacity
-heuristic. The concrete capacity method and its assumptions/reserves are recorded;
-an estimate is not called an exact token count. Root reads/authorizes the exact
-built payload before any native invocation. Eventual actual full214math result
-is fully read/adjudicated, with no acceptance inferred from metadata or a header.
+All source/primary/math scope remains literal; new instructions consistently
+assign the pilot workload rather than all214 per call. Exact-ID and semantic
+validation supplement schema validity. Capacity includes actual additions,
+reasoning/public and reserves, without deleted-byte credit. No terminal old
+lineage is reopened and no acceptance follows from metadata alone.
 
 ## Anti-success criteria
 
-Calling the new source whole-reviewed from six scoped HIGHs; treating210local
-scopes as a percentage; converting waveconfidence0.8 toHIGH; waiting on dead
-reviewers; treating authorStage2 as a provider result; using source8ce/candidate
-as af97 without exact bridge; retaining stale current module hashes or wrong
-manifest labels; pruning primary pages/calculations/own proofs silently to fit;
-calling owncontext an imported external theorem; retrying for a higher label;
-restarting a queue service or probing/substituting Kimi without authority;
-source/goal/model reduction; source changes without new clean PDF/review gates.
+Calling LOW a pass; treating210local scopes as a completion percentage; converting
+numeric0.8toHIGH; forgetting the old prefix/agent; proving coverage from empty
+schema-valid arrays; confusing formal/proof IDs or content/manifest/Git hashes;
+trimming primaries/working/models to fit; treating OWN inputs as external papers;
+confidence-only reruns; union-of-votes whole acceptance; Kimi substitute/probe or
+queue restart; counting author PNG preparation as independent visual clearance.
 
 ## What the previous sessions produced
+
+2026-11-03 c4040ba records the actual terminal fullaf97 MAIN and ONE factual
+completion, all214reason/globalfield adjudication and exact owner/prefix/route
+checks. Complete204member capsule6151630535f5a38ff57a407c1ce4f5a2b8dbdf23c797839e1a8a5daf002c34a7
+retains all72inputs, complete primaries/math/capacity provenance and original
+118member eb51c4b capsule. Ledger54 preserves every214proof row and priorhistory.
+Root qualifies conditional001,010LIMITED, originalrootwhite-ID slip and returned
+003extra-half typo; source unchanged. New010 exactauthor calculation/25checks and
+separate author replay are preserved without independent-grade credit. All263
+PNG rendered/rehashed at150dpi, preparation only,87MB remains external.
+
+2026-11-03 1e72621 retains canonical lesson33e2c1d1912e91195deb4aab08ea28f9f3b72bef:
+regular-file export/safeconfig capture, honestLIMITEDcoverage records and measured
+capacity versus proof verification. Phase2.5=511/41, skillgate/synccheck/runtime/
+strictbudget/retrieval2/1/4PASS; canonicalorigin/GW equal, fourforeignWIP/index
+preserved. Receipt directory reviews/2026-11-03-durable-native-records/.
+
+2026-11-03 990f2b4 retains the full prospective themed MAIN plan and separate
+7082check authoraudit (18member capsulec82e5aac74c2ba5de62418e065f8d8607e78ce1731a99714f23cc8261c82e868).
+Explicit214OWN/2EXTERNAL/24CONTEXT formal classification and pilot9/15 plus
+all13joins are source-bound; root authorizes preparation only with four concrete
+construction guards. Full source remains in every phase and genuine final
+DeepSeek whole judgment required; no pilot built/dispatched and no goal closure.
+
 
 2026-11-03 65d74f2preserves newMAINv2finishlength, visibleINCONCLUSIVE/low,
 203complete rows41CHECKED162LIMITED plus incomplete204/missingglobaltail.
@@ -2369,83 +2371,66 @@ no fullpacket/provider/config/seal/rootready exists. Fullgoal ACTIVE.
 
 ## Repo & git state at handoff
 
-ROOTpre-handoff755f0fb411243a317a36c780a3cf96b5adcc5788, clean/pushed before
-this dedicated handoff. ACTIVE903966068e9b6559a3d372e0bd73452d308bc927,
-research/fixed-mask-young-20261031, clean/pushed/<HUB> equal.
-Scienceaf97ae4db921a660b0a4ed1ffbe9b6f53a487e2b; mapping/statusd47831693aa7dd34bc5163403b74ab5597110a11;
-preparation/queued-wiki9039660. All28Tex/214proofs/240statements/PDF263;
-current PDFSHA096cb3cd4610c91d7dc8718bd56526e777cdd06ebca41651a8955bc230eb2f35.
-
-Exactly six new bodies165/168/169/174/181/185, one expanded165statement.
-Bounded actualDeepSeek/high session ses_e5d297aa6ffec2Vp5oF6IHzb8h +ONEfactual
-supplement (originalprefixexact/tools0/stop); root adjudication and original/
-corrected public texts immutable. Complete native84member capsule0b5f2d12...,
-original64member102fabb2..., author/build34member2fa9b7e0... in
-reviews/2026-11-03-structural-baseline-candidate/. PDF263cleanfulltext and8author
-pixels match candidate; no independent image credit. d478316 rootapplies
-v7/neutral7/ledger53 after two source reconstructions; all history/literal
-reviews/previoushashes preserved. Local210HIGH/010unaccepted/034189193pending;
-current af97 wholeNOT_YET_REVIEWED.80finiteLean facts/22analyticseams unchanged.
-
-Canonical Le-AI-Labd59efc66532f6bcff945042496a1795bc965dc05 is published,
-origin/GW/runtime/retrieval/strictbudget verified. Four foreign WIP paths and
-entire unowned index preserved; no stage/reset of foreign work. Receipts in
-reviews/2026-11-03-durable-numeric-bindings/. InitialfullMAINplan and queuedwiki
-request are committed in their datedpreparation/status directories.
+ROOTpre-handoff928399afa300996ec41bed99530b8d96c95fdf29, master, clean/pushed before this dedicated handoff.
+ACTIVE990f2b45966f258934db802679c104e5501c9fd9, research/fixed-mask-young-20261031, clean/pushed/GW equal.
+Current scienceaf97; terminal-review checkpointc4040ba, lessons1e72621,
+prospective-plan990f2b4. Indexv7/neutral7/ledger54, all28TeX/214OWN/240formal,
+PDF263clean/096cb3. Current whole actualINCONCLUSIVE/low; no source/PDF changes
+or local grade upgrades.80finiteLean facts/22analytic boundaries unchanged.
+Canonical Le-AI-Lab33e2c1d1912e91195deb4aab08ea28f9f3b72bef origin/GW equal;
+threeforeigndirtyskills andearlieruntrackedretro remain excluded/preserved.
 
 ## Operating notes
 
-GoalACTIVE, DeepSeek V4 Pro MAIN, full original all-model actualp2constant.
-No forced Chen matching, source-energy repair or auxiliaryS1/actualp1 identity.
-Progress.md in ACTIVE is the mathematics/workflow authority. Sourceaf97's
-internal6proofacceptance is not full project/circulation permission.
+Progress.md in ACTIVE is workflow authority; ROOTmaster is only the human
+launcher and its older manuscript/Progress is not current science. Goal remains
+ACTIVE with DeepSeek V4 Pro MAIN, original models and actual intrinsic constant.
+No forced Chen/source-energy/auxiliaryS1-to-actualp1 identification.
 
-Wiki sole-writer ordinary requesttk-20261103-151055-codex-stratonovich-af97-status
-was verified only in canonicalrequests, writerinactive/dead/MainPID0 at20:11UTC.
-Not maintained, not a live process wait. Prior maintainedticket
- tk-20261102-223931-codex-stratonovich-status-refresh/page09c7e3 remain dated
-14d82c0/v39/189snapshot history. Newticket explicitly authorizes af97/source
-status+fourpaths, preservesmathdisplays; no restart/wake/force/requeue. Check
-exact ticket/receipt ID on resume; do not use prefix globs or list the whole
-thousands-entry queue. No direct wiki/refdb/source-store edits.
+External preserved directories under the same state root as ACTIVE:
+stratonovich-main-af97-full-math-packet-v1 (closed original+factualnative lineage),
+stratonovich-full-main-af97-root-inputs-20261103 (exact construction/capacity),
+stratonovich-af97-main-terminal-custody-20261103 (complete terminal archive),
+stratonovich-af97-full263-render-preparation-20261103 (all263PNG; prep only),
+stratonovich-af97-envelope010-exact-check-20261103 (authoralgebra/checks),
+stratonovich-af97-themed-main-plan-20261103 and
+stratonovich-af97-themed-main-independent-author-audit-20261103 (frozenplan/audit),
+stratonovich-af97-terminal-metadata-proposal-20261103 (appliedv54proposal),
+stratonovich-retro-full-context-and-records-preserve-20261103 (foreignWIPbackup;
+never stage its foreigncontents/patch). Exact delivered capsules are in ACTIVE.
 
-Full-MAINStage2 author preparation and all other authors are complete.
-No native reviewer is live. Book/source pixels, full263independent visual,
-Kimi and freshfinalcold remain open. User's old Kimi question is pending;
-no further quota probe/account/model substitute absent restored-capacity
-evidence or Le direction. lean-pkg0.24FYI needs no action; no upgrade or
-companion/gate creation has been performed here.
+Wiki ordinarytk-20261103-151055-codex-stratonovich-af97-status remained only in
+canonicalrequests at22:44:30UTC; writerinactive/dead/MainPID0; livepage09c7e3
+still prior maintained snapshot. No wake/restart/requeue or verifiedlivewait.
+Read exact ticket/receipt identities, never prefixglobs or the entire queue.
+No direct six-repository writes. Private current-status propagation remains open.
 
-Timely lessons were captured in existing canonical skills, not duplicate skills.
-Native source/prompt/actualmodel/finish/tools and literal report/correction
-statuses remain distinct from correctness/acceptance. New MAIN may be assigned
-because sourceaf97 has genuine proof changes plus new analytic working; this
-does not authorize a confidence-only rerun of any closed old lineage.
+All old reviewer lineages are terminal. The one factual publiccompletion in
+ses_e5ca3f319ffe0OatPfuHBon0G9 is spent; no further call. New prospective actual
+mathematical workload must remain distinct. No new Kimi query/substitute absent
+restoredcapacity evidence or Le direction; the earlier question remains pending.
+Lean-pkg0.24FYI requested no action; no upgrade/companion/HPC work performed.
 
 ## Risks to monitor
 
-Whole current af97 has not been reviewed. Prior8ce whole MAIN is actual
-INCONCLUSIVE/low with13PARTIALjoins, preserved unchanged; neither is an
-established source falsity or sourceaf97 acceptance. Critical all-order,
-operator/path/source/canonical, Cameron/AWS/action, growing-mask product,
-original-point and positive-matching deductions still require a complete
-independent whole audit. A broad count of supplied source is not reconstruction.
+Complete manuscript candidate and local scopes do not establish whole proof.
+Actualaf97 MAIN was unable to reconstruct critical own source/application,
+operator/radius, Gaussian/CM/tube, positive matching and coupled constant steps.
+No located flaw does not mean those steps have been certified. Preserve these
+limits and source-correct report-only errata without inventing assumptions.
 
-Fullprimary fidelity must cover actual author4.1/Lemma4.4/Section5 and allother
-citations, not assume missing pages dispensable. Mathematical supplements need
-calculation-level equivalence before replacement. Never drop a required proof,
-primary-use context or model to satisfy a planning heuristic. Actual context
-budget includes reasoning/public and system reserve; no silent cap change.
+A larger output cap alone is not the remedy: the previous whole report stopped
+normally well below its ceiling. The material change is bounded actual deductions
+plus explicit interface/cycle work, followed by genuine final coupled assessment.
+Final synthesis capacity/depth remains unknown until actual phase math exists.
+Retain full primary editions and complementary calculations in every call.
 
-Compact norm floor is on actual infinite whole-space E and compact-valued
-Young paths; not arbitrary finite-dimensional/noncompact/F operators. Real
-J-skew conservation is separate. Retain both phase entries, covariance
-compensation, true restart and all fixed-versus-growing parameter budgets.
-No scalar restart, GaussianPSD masking, arbitrary phase compression, dense
-E-in-F assumption, pointtrace or tilted-source-limit shortcut.
+Maintain actual whole-space compact normfloor, separate realJ conservation,
+covariance scaling, originalsame-source restart, both phase entries and growing-
+parameter budgets. No scalar restart, PSD mask, roughpointtrace, F-norm lift,
+denseE-in-F or tilted-source-limit shortcut. Other OWN inputs stay assigned.
 
-Kimi monthly429 and inactive wiki writer are genuine external gates, but
-meaningful full-MAIN preparation/work remains available: do not mark goal
-blocked merely because those gates remain. No final completion until original
-contract allproof/calibration/HIGH/source/visual/cold/private-delivery evidence
-is actually inspected and complete. Goal remains active across turns.
+Kimi429 and inactive wiki writer remain external gates, while substantive
+phased MAIN preparation/work is available. Do not mark blocked merely for these
+gates. All original proof/calibration/HIGH/source/image/visual/freshcold/private
+contract evidence must be actual and adjudicated before goal completion.
