@@ -14,12 +14,24 @@
   committed with the source and matches every reviewed-candidate text page.
   Local/origin/<HUB> source parity is verified; no extra checkout exists.
 
-- **Review scope:** current indexv6/neutralv6 and depth-ledger-v36 bind the
-  integrated source:171 exact scoped HIGH,3 earlier editorial deltas,40
+- **Review scope:** current indexv6/neutralv6 and depth-ledger-v37 bind the
+  integrated source:178 exact scoped HIGH,3 earlier editorial deltas,33
   earlier MEDIUM/qualified/partial rows. These counts are not a completion
   percentage. The earlier complete MAIN report remains ungraded120CHECKED/
   94LIMITED on b4b6efc; the six new scoped results do not rewrite it or clear
   the remaining whole-argument, source-image, render, Kimi or cold gates.
+
+- **Current live review and durable learning (2026-11-03):** the complete
+  calibration010–019 review is one native DeepSeek V4 Pro call on science
+  8ce03ae, actual session ses_e60aac29bffebu9imGVUskZ9yk. Check its terminal
+  receipt before any action; no launch or partial output is accepted.
+  Exact input and recovery handles are preserved at2574140. The driver
+  seven-proof adoptione063c96 preserves literal PARTIAL factual-correction
+  rows and correct actual target judgments as one reviewer lineage.
+  Le's durable-learning instruction is fulfilled in canonical Le-AI-Lab
+  657586a: three existing skills updated, retrieved, projected, validated
+  and pushed/<HUB> equal; unowned WIP preserved. Young and raw-block
+  complete packets are being prepared only, with no extra provider call.
 
 - **ACTIVE fresh MAIN (2026-11-02):** Le resumed the full goal and selected
   DeepSeek V4 Pro MAIN. ONE fresh all214-proof/coupled-graph text audit is
@@ -31,7 +43,7 @@
   prior votes/ledgers/governance excluded. All tools denied;131072 output
   cap; no automatic retry/continuation/substitute/cold claim. The original
   full-main213 report remains MEDIUM historical evidence. Required source
-  images/full259 independent visual/Kimi/fresh cold gates remain OPEN.
+  images/full263 independent visual/Kimi/fresh cold gates remain OPEN.
   Current Kimi monthly429 at17:26:09UTC produced zero reads/images/report;
   no further probe/substitution authorized. Wiki status ticket still QUEUED.
 
