@@ -14,7 +14,7 @@
   committed with the source and matches every reviewed-candidate text page.
   Local/origin/<HUB> source parity is verified; no extra checkout exists.
 
-- **Review scope:** current indexv6/neutralv6 and depth-ledger-v41 bind the
+- **Review scope:** current indexv6/neutralv6 and depth-ledger-v42 bind the
   integrated source:201 exact scoped HIGH,3 earlier editorial deltas,10
   unaccepted lower-depth/current-report rows. These counts are not a completion
   percentage. The earlier complete MAIN report remains ungraded120CHECKED/
@@ -12761,3 +12761,21 @@ Receipt reports normal index/lint/relations/dashboard/push gates with no owned
 other-repository changes. Raw receipts/request/readbacks are retained under
 reviews/2026-11-03-private-wiki-status-refresh. This closes only the dated
 status-maintenance checkpoint; later final private delivery remains open.
+
+
+### Current-binding metadata audit corrected without scientific changes
+
+The read-only audit found17 stale current MODULE hashes across the three
+expanded source modules, including unchanged sibling proofs; six literal
+current-versus-previous BODY equality flags also remained true despite new
+body hashes, and the top binding descriptor still named the old editorial
+snapshot. Actual214body hashes/owners/locators,28TeX and263pagePDF already
+matched science8ce03ae. No source or mathematical review defect followed.
+
+Root applied the ID-keyed24field correction to ledgerv41, preserving every
+previous hash and review outcome/evidence in explicit history. Ledgerv42 now
+matches every actual current module/body/label/path/line and literal comparison
+flag; all28Git8ceTeX/PDF are reverified.201scopedHIGH,10unaccepted rows and
+3editorialdeltas are unchanged. The six newer analytic review bindings remain
+valid and distinct from their older previous-body hashes. This is metadata
+repair, not new acceptance, a source change or a whole-main/image/cold gate.
