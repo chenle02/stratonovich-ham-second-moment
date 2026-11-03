@@ -12884,3 +12884,23 @@ three_dimension_depth202positive-Gram/partition/smoothing closure. Clean
 from-scratch mathematics or precise real gaps required, no provider/source/
 ref/clone/HPC/Skorohod changes yet. Currentsource/PDF8ce remain exact. Goal
 ACTIVE with meaningful mathematics available; Kimi/image/cold remain open.
+
+
+### Four from-scratch critical author replays saved, awaiting root/full review
+
+The four MAIN-critical mathematical derivations are now actual frozen files:
+051independent-upper cutoff/constants;091–093and105/110/126/189 driver/source
+path closure;155/173/175uniform-Cameron/AWS/envelope;202positive matching.
+Root preserved all member bytes/announced work hashes and rehashed every
+archive under reviews/2026-11-03-critical-author-replays. FULL root reading and
+mathematical challenge remain PENDING; author no-gap assertions and finite
+checks are not independent votes or upgrades. No new review packet/provider
+request/source/PDF/Lean change occurred. Current210scopedHIGH and rawcurrent
+MAIN INCONCLUSIVE/MEDIUM204CHECKED10LIMITED remain unchanged.
+
+Two author service turns failed selected-model capacity before saving files;
+root confirmed absence and resumed the same configured author route once,
+without model override. Actual complete files are now saved. These are not
+native reviewer failures or repeated confidence calls. No new scope/constant
+or Gamma/model restriction is adopted. Goal stays ACTIVE with substantive
+adjudication/math/review work available; image/Kimi/fresh-cold gates still open.
