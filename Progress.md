@@ -7,9 +7,10 @@
 ## Current state
 
 
-- **Themed MAIN A.pilot READY (2026-11-03):** the exact nine-proof/fifteen-
+- **Themed MAIN A.pilot RUNNING (2026-11-03):** the exact nine-proof/fifteen-
   declaration/fourteen-obligation full-context packet is built and frozen,
-  not yet invoked. All70required source/primary/math/map frames and original
+  invoked once at23:33:26UTC after READY authorityb1249e6. All70required
+  source/primary/math/map frames and original
  214/240/28/13 program remain. Root read actual instructions, current source,
  010working and all report requirements; separate author1235checks plus9
   meaningful refusal controls pass. Matching --pure native preflight verifies
@@ -18,7 +19,8 @@
   this was a missed existing startup-flags rule, fixed before any provider call.
   Carrier a2c04425187ae4a97f509723a0b79176eccb6e55, prompt9f5861b5,
   conditional932630/head115946 with196608combined output. Root authorizes
-  ONE fresh native invocation after this READY checkpoint is committed.
+  ONE fresh native invocation, now live at PID1248735/start62893372,
+  supervisor1248723/exec5685. No actual session/report/grade has been collected.
   No report/math/grade/image/Kimi/cold/goal credit. Evidence:
   reviews/2026-11-03-main-af97-theme-I-A-pilot/.
 
@@ -13491,3 +13493,19 @@ and all28af97blobs AFTER commit. Clean77file seal holds. One invocation is now
 root-authorized after this authority READY commit, no automatic follow-ups. No
 provider has run at this snapshot. Source/PDF/80Lean22seams and localgrades stay;
 wholeMAIN/Kimi/sourcepixels/fullvisual/freshcold/private delivery remain open.
+
+
+## 2026-11-03: bounded foundations MAIN phase launched
+
+After READY authorityb1249e6 was committed/pushed/<HUB>-equal, the guarded
+fresh A.pilot invocation started2026-11-03T23:33:26.763499UTC. NativePID1248735,
+startticks62893372, supervisor1248723, exec5685; use that exact existing handle
+and terminal sidecars, never start another merely after an observation timeout.
+It passed held-source/config/CLI/prompt/actual --pure preflight guards. Source
+carriera2c0442 remains held against writers; Article bookkeeping is separate.
+
+Actual scope9proofs/15formal/14obligations, all70full-context frames;196608combined
+cap; actual unforced report pending. Preflight model is DeepSeekV4Pro/all12tools
+false, but an actual returned report/model/finish will be verified at collection.
+No old MAIN lineage resumed; no automatic retry/follow-up; all other OWN inputs
+provisional. Source/PDF/localgrades/whole/image/Kimi/cold/goal unchanged.

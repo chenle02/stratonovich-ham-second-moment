@@ -17,8 +17,9 @@ Matching --pure diagnostics confirmed all12toolsfalse and the selected agent.
 Carriera2c04425187ae4a97f509723a0b79176eccb6e55 and prompt9f5861b5 are sealed.
 Conditional planning total932630/head115946, combined output196608; this is not
 an exact tokenizer or provider guarantee. Root authorizes one fresh invocation
-once this authority READY checkpoint is committed. No automatic retries or
-continuations. No provider report exists at this snapshot.
+after READY authorityb1249e6 was committed and synchronized. That invocation
+started23:33:26UTC (tracked in phase-state.json) and is awaiting its actual
+result. No automatic retries or continuations; no report or acceptance inferred.
 
 Preparation/current-workflow preimages remain dated; authority bookkeeping may
 advance without changing the sealed source. The source/PDF, ledger54 and local
