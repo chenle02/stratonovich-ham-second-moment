@@ -14,22 +14,23 @@
   committed with the source and matches every reviewed-candidate text page.
   Local/origin/<HUB> source parity is verified; no extra checkout exists.
 
-- **Review scope:** current indexv6/neutralv6 and depth-ledger-v44 bind the
+- **Review scope:** current indexv6/neutralv6 and depth-ledger-v45 bind the
   integrated source:210 exact scoped HIGH,3 earlier editorial deltas,1
   unaccepted current-report row010. These counts are not a completion
   percentage. The earlier complete MAIN report remains ungraded120CHECKED/
   94LIMITED on b4b6efc; the six new scoped results do not rewrite it or clear
   the remaining whole-argument, source-image, render, Kimi or cold gates.
 
-- **Current whole MAIN (2026-11-03):** one fresh instructed all214own-proof/
-  240statement/28TeX review is LIVE on exact science8ce03ae, actual session
-  ses_e600701fbffe4368jteUddzr2y, PID2856653/startticks56538369,
-  supervisor2856636/handle32617, begun05:54:16Z. All62UTF8LF frames,
-  selected primary contexts and14complete mathematical families are bound;
-  all own deductions and real semantic joins are assigned. No prior reports/
-  grades supplied. Actual unforced verdict/confidence requested; no automatic
-  retry/continuation. Inspect the existing handle/exit before acting. This is
-  MAIN, not finalcold, and has no image/render/Kimi/acceptance credit yet.
+- **Current whole MAIN (2026-11-03):** the one actual all214own-proof/
+  240statement/28TeX DeepSeek V4 Pro run is TERMINAL, actual INCONCLUSIVE/
+  MEDIUM,204CHECKED/10LIMITED,0FLAW/NOT_READ and4major/2minor findings.
+  No falsifying error established; critical operator-dynamics/cutoff/constant/
+  positive-matching closures were not independently replayed fully. Root
+  verified the full native envelope and triaged the10limited/finding rows;
+  full204reason/240statement/13join/source/calibration adjudication PENDING.
+  Four from-scratch author replays are assigned (051;091–093 and dependents;
+  155/173/175;202).210local scopes/010+3editorial pending states remain;
+  no whole-main/image/render/Kimi/cold acceptance or confidence retry.
 
 - **Current terminal calibration and durable learning (2026-11-03):** the
   complete-calibration DeepSeek review and one factual correction are terminal,
@@ -12859,3 +12860,27 @@ binding and proper stochastic modifications/averages. Description, retrieval,
 exact runtime and strict startup-budget checks passed; pushed and <HUB>
 parity verified, four unowned WIP files byte-exact and excluded. No new skill,
 source/PDF/Lean/model/provider or public-release change.
+
+
+### Whole-current MAIN terminal INCONCLUSIVE/MEDIUM; critical replay work active
+
+Actual session ses_e600701fbffe4368jteUddzr2y ended with214proof rows,
+204CHECKED/10LIMITED,0FLAW/NOT_READ,0fatal/4major/2minor findings. The full
+public report explicitly calls this a depth/uncertainty verdict without a
+falsifying error or current textual/source repair. Root preserves all actual
+fields, verifies exact input/actual model/tools0/stop/frozen sources/full
+regular-file export and rehashes all101capsule members. Per-row binding
+comparisons are recorded, not treated as semantic acceptance.
+
+Root triaged all10limited rows/findings/cycle notes; the full204checked reasons,
+240statement/13join/source-fidelity/calibration audit remains PENDING. Ledgerv45
+adds the current raw statuses separately without rewriting old reports or
+210local scopedHIGH/010+3editorial pending dispositions. No whole acceptance.
+
+New author work: production_integration051cutoff/full-upper closure;
+root091–093tail/path/compact/source-premise chain;
+driver_depth_packet155/173/175uniform-Cameron/AWS/coarse-envelope constants;
+three_dimension_depth202positive-Gram/partition/smoothing closure. Clean
+from-scratch mathematics or precise real gaps required, no provider/source/
+ref/clone/HPC/Skorohod changes yet. Currentsource/PDF8ce remain exact. Goal
+ACTIVE with meaningful mathematics available; Kimi/image/cold remain open.
