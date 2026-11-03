@@ -6,7 +6,7 @@
 
 ## Current state
 
-- **Current structural integration (2026-11-03):** scientific(this commit),
+- **Current structural integration (2026-11-03):** scientificaf97ae4,
   content5551fff, replaces exactly165/168/169/174/181/185 and expands only
   statement165. All214proof/240formal identities,208other bodies and239other
   statements remain.165 now proves the compact-Young/free-norm baseline on
@@ -19,8 +19,9 @@
   qualifications. Evidence: reviews/2026-11-03-structural-baseline-candidate/.
   Actual263PDF clean0errors/undefrefs,cites/overfull; all263text pages and eight
   changed-page pixels match the reviewed-source candidate. AUTHOR visuals only.
-  Current indexv6/ledger52 still bind prior8ce; a full25module-row/current-index
-  refresh is the immediate next metadata step. Whole MAIN on these new bytes
+  Indexv7/neutralv7/ledger53 now bind all214proofs/240statements and25current
+  module rows. Two independent source/history reconstructions plus root body
+  readback passed; all local210/1/3states and historical verdicts are unchanged. Whole MAIN on these new bytes
   is NOT reviewed; historical8ce INCONCLUSIVE/low remains unchanged. No new
   whole/Kimi/source-image/render/cold/goal acceptance and no native reviewer live.
 
@@ -13268,3 +13269,28 @@ Receipts: reviews/2026-11-03-durable-numeric-bindings/. No Kimi probe/route chan
 Internal component acceptance only. Full original all-model actual-C2 goal ACTIVE;
 current whole HIGH, Kimi/source pixels, independent full263render, fresh finalcold,
 private wiki final status/delivery remain OPEN. No round/final-goal closure.
+
+## 2026-11-03: af97 current bindings and history preserved
+
+Scientificaf97ae4db921a660b0a4ed1ffbe9b6f53a487e2b/PDF096cb3 is pushed and
+<HUB>-equal. Indexv7/neutralv7/ledger53 rebind all214 current proof and240
+formal statement identities, including25module hashes and15start locations.
+Exactly six current bodies differ from8ce; only165statement expands. Producer
+and separate source parser independently re-read actual Git blobs, preserved
+all predecessor snapshots/literal reports/previous-reviewed hashes and tested
+current-versus-historical comparisons. Root copied exact validated proposals
+and changed only current application-state/evidence metadata; exact preimage
+reconstruction verified. Current audit bindsaf97, while whole8ce records are
+explicitly historical and af97whole is NOT_YET_REVIEWED_AS_WHOLE. Correct
+contentID5551 versus manifest-FILEcbc7 identities are separate. All local
+states remain210HIGH/010unaccepted/034189193editorialpending, not a percentage.
+Evidence: reviews/2026-11-03-af97-current-binding/root-application.json.
+
+README now states this current source and its open gates instead of the stale
+213-proof snapshot. The next full MAIN packet is being prepared from the new
+source plus genuinely complementary worked mathematics; no new native whole
+review has started. Kimi/source pixels/independent263visual/finalcold/goal stay
+OPEN. A private wiki refresh is drafted but not yet enqueued; the attested
+canonical writer was observed inactive/MainPID0, so no service action or
+verified live wait is inferred. No mathematical source/PDF change in this
+metadata step, no review-grade upgrade and no goal/round closure.

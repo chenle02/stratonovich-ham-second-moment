@@ -10,7 +10,7 @@ t^{(4−α−α₀)/(3−α)} and the sharp p = 2 constant, building on X. Chen,
 whatever the computation gives. Chen's conjectured constants remain a
 comparison rather than a required answer. See [PROJECT-GOAL.md](PROJECT-GOAL.md).
 
-**Current working result (2026-11-01):** the original second-moment
+**Current written result (2026-11-03):** the original second-moment
 limit for every admissible dimension and covariance has an explicit
 intrinsic positive-control variational formula. The covariance amplitude,
 kinetic coefficient one and variance-half action are specified in
@@ -24,27 +24,33 @@ bounds are not an exact numerical evaluation of the intrinsic supremum.
 The auxiliary label-one score is not identified with an actual first-moment
 limit or Chen's printed constants.
 
-All planned mathematical modules are integrated in the
-[TeX/PDF notes](notes/notes_stratonovich_ham_second_moment.pdf), and each
-component passed its scoped independent proof/application review. Those
-reviews bind their frozen versions. The first whole review ended
-INCONCLUSIVE/medium with incomplete source/image coverage; it is not
-accepted. The editorial successor retains all 213 proof bodies and requires
-complete source/render audits, a fresh whole-argument mathematical gate and
-the independent cold read. Earlier failed attempts remain preserved. No
-whole-paper, goal-completion or circulation clearance is claimed. Internal
-wiki maintenance and private Git delivery have verified checkpoints; final
-source/calibration adjudication, outcome propagation and delivery remain.
-The proposed private Lean companion is separately gated; local finite
-checks do not constitute its package gate. `Progress.md` is the workflow
-authority; the root loader `HANDOFF.md` identifies the active checkout.
+The current scientific source, `af97ae4`, contains 28 TeX files, 214 proof
+identities, 240 formal statements and a clean 263-page PDF. Its new compact
+Young norm argument and direct real conservation proof passed a bounded
+DeepSeek V4 Pro review of six changed deductions and their applications.
+See the [adjudication](reviews/2026-11-03-structural-baseline-candidate/root-adjudication.md).
 
-DeepSeek V4 Pro is the main reviewer under Le's renewed direction. Its
-full-manuscript review returned MEDIUM and remains unaccepted; bounded
-proof-depth audits are in progress. Their exact coverage, raw grades and
-corrections are recorded in [the depth worklist](reviews/2026-11-02-main-deepseek/deep-audit-worklist.md)
-and `Progress.md`. A HIGH header alone is not acceptance when the report
-contains an unresolved mathematical error or omits required checks.
+The [current index](reviews/2026-11-02-main-deepseek/proof-index-v7-neutral.json)
+and [depth ledger](reviews/2026-11-02-main-deepseek/depth-ledger-v53.json)
+record exact body and statement bindings. There are 210 locally accepted
+HIGH scopes, one unaccepted proof row (010), and three pending editorial
+changes. These counts are not a completion percentage. Scoped reviews bind
+their recorded versions and do not certify the whole argument.
+
+DeepSeek V4 Pro is the main reviewer under Le's direction. The latest complete
+whole review covered the previous source `8ce03ae` and remained
+INCONCLUSIVE/low; that result stays unchanged. The current `af97ae4` source
+still needs its full MAIN review. Required source/application and image checks,
+Kimi, the independent full-PDF visual audit and a fresh independent final cold
+read remain open. Kimi's actual monthly-quota refusal supplied no review.
+No whole-paper, goal-completion or circulation clearance is claimed.
+
+The 80 finite Lean facts retain their 22 analytic boundaries; an official
+private companion and its package gate are separately authorized steps.
+Private wiki maintenance and Git delivery have verified earlier checkpoints;
+current outcome propagation and final delivery remain separate obligations.
+`Progress.md` is the workflow authority. The human launcher's `HANDOFF.md`
+identifies the active research checkout.
 
 ## Start here
 

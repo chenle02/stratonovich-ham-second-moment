@@ -9,6 +9,6 @@ source repairs: none. Complete raw exports/inputs and author working are in
 member-rehashed, secret-scan-clear capsules; original remains separately frozen.
 The candidate263-page PDF builds with0errors/undefinedrefs,cites/overfull.
 Only eight pages have AUTHOR visual checks; no independent visual/Kimi credit.
-Reviewed source/PDF integrated at scientific(this commit); current index/ledger
-rebind follows in the next metadata commit.
+Reviewed source/PDF integrated at scientificaf97ae4db921a660b0a4ed1ffbe9b6f53a487e2b; current indexv7/neutralv7/ledger53
+rebind is verified in the following metadata checkpoint.
 This is one bounded review lineage, not full214/whole MAIN HIGH/cold/goal closure.
