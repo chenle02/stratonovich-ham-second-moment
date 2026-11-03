@@ -12554,3 +12554,22 @@ all imported-input reading limits and prior MEDIUM reports remain. Ledgerv36
 has171 scopedHIGH,3 earlier editorial deltas and40 earlier MEDIUM/partial
 rows. Source/PDF/indexv6 stay unchanged; whole-main/source-image/render/Kimi/
 cold and private-delivery gates remain open. No additional branch or clone.
+
+
+### Complete calibration and static-planar author mathematics retained
+
+Root read the full010–019 and024–029 mathematical replays and rehashed all
+8+11+23 source-bound archive members. The white calculation contains all27
+canonical domains and45 ordered split sectors; an independent local Fraction
+reimplementation from actual pair positions gives the same11/540 rollup.
+The other replays derive resolvent-majorant scaling, Riesz/low-degree bounds,
+critical angular-measure closing, exact published static coefficient and
+normalization applications, positive-diagram limits, and the singular planar
+endpoint construction. Root checked all16 unchanged current proof bodies.
+
+No additional gap was found author-side under the named imports. These are
+mathematical preparations for a genuinely deeper review, not independent
+votes or source/PDF changes. Existing MEDIUM/qualified states stay unchanged.
+A new small complete calibration packet is being prepared without a provider
+call; the current driver report correction is a separate one-lineage audit.
+The original model/constant and full completion contract remain active.
