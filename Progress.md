@@ -13393,3 +13393,20 @@ coupled judgment. Kimi monthly429/source pixels/fullvisual/freshcold remain open
 Exactwiki ticket tk-20261103-151055-codex-stratonovich-af97-status was still only
 queued at22:44:30UTC; writerinactive/dead/MainPID0 and oldpage09c7e3 unchanged.
 No service action or verified live wait. Goal remains ACTIVE and incomplete.
+
+
+## 2026-11-03: durable native-record and coverage lessons published
+
+Canonical Le-AI-Lab33e2c1d1912e91195deb4aab08ea28f9f3b72bef extends the existing
+mandatory-review skill: regular-file large-export custody and anonymous safe-field
+configuration capture; coverage-complete LIMITED records versus completed proof;
+and qualified measured-baseline capacity versus exact tokenization or correctness.
+The root white-ID swap is recorded as a missed existing owner-ID rule, not a new
+skill. One bounded retrospective and two generated indexes accompany the update.
+
+Phase2.5PASS511description/41headline; skill-gate/sync-checkPASS; Claude/OpenCode/
+Codex runtime copies byteexact; strictstartup13visibleunique/9implicit/1375explicit
+PASS; actual alias retrieval ranks2/1/4. AllfourforeignWIP paths and unownedindex
+preserved and excluded. Canonical origin/GW both33e2c1d and0/0. Evidence:
+reviews/2026-11-03-durable-native-records/. No mathematical/source/review-grade,
+whole/image/Kimi/cold/goal credit follows from operational lesson promotion.
