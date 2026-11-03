@@ -1,0 +1,104 @@
+{
+  "category": "paper-review-deepseek",
+  "model": "deepseek/deepseek-v4-pro",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "confidence_justification": "I independently reconstructed all seven named deductions (PROOF085,086,087,089,090,092,093) directly from notes/integrated_actual_operator_driver.tex together with its consumed local wave/covariance/compact inputs, and re-derived the finite analytic controls, the dyadic/path pipeline, both variance directions, the tail-trace/interval seam, and the source-transfer contract match. The core chain is mathematically coherent. Confidence is set to high rather than unconditional because the named local inputs 061-084/088/091 and the downstream source-convergence module (beyond 095) are used as supplied proved statements, and the whole-project/image/Kimi/final-cold clearances are explicitly outside this bounded report; no defect in the reconstructed chain itself was found.",
+  "source_coverage": [
+    "supplied+read: scope.txt (assignment boundary, seven targets, explicit downstream/navigation exclusions)",
+    "supplied+read: report-contract.json (subscription-review-report/1 required fields and checks)",
+    "supplied+read: maps/targets.json (exact statement/proof line ranges and ownership; PROOF093 statement LF27-55, body LF653-689)",
+    "supplied+read: maps/proof-index.tsv (index of PROOF001-214 and file paths)",
+    "supplied+read: maps/exact-target-statements-and-proofs.txt (verbatim statements and proof slices for 085,086,087,089,090,092,093)",
+    "supplied+read+reconstructed: notes/integrated_actual_operator_driver.tex (full module LF1-344; reconstructed LF59-121, 123-165, 169-237, 255-389, 391-416, 418-444, 448-557, 561-689)",
+    "supplied+read: notes/integrated_wave_variance.tex (actual-wave-form, both wave variance directions, mean-square columns)",
+    "supplied+read: notes/integrated_compact_gaussian.tex (finite Gaussian matrix, cutoff envelopes, localized finite variance, compact positive order)",
+    "supplied+read: notes/integrated_covariance_foundation.tex (temporal completion, masked noise completion, positive Laplace factorization)",
+    "supplied+read+recomputed: supplements/support-dyadic-worked-mathematics.txt (cone/support, dyadic sum, interpolation, moment-index selection)",
+    "supplied+read+recomputed: supplements/variance-interval-worked-mathematics.txt (both variance directions, envelopes, tails, retained Gaussian average, interval limit seam)",
+    "supplied+read+recomputed: supplements/finite-controls.txt (finite numerical controls)",
+    "supplied+read(as downstream application context; contract-check only): notes/integrated_source_convergence.tex (PROOF094, PROOF095, source-gaussian-transfer) - inspected to confirm it consumes M_R/M_N and the fixed A_j paths from PROOF093",
+    "supplied+read(context only): primary/source-editions.json, primary/chen-author-full.txt, primary/cited-bibliography.bbl (edition identity and model/noise convention; not premises of the driver deductions)"
+  ],
+  "checks": {
+    "DR085 PROOF085 L:driver-noise-basis": {
+      "claim": "The prescribed nonzero quotient H_W is separable and infinite-dimensional and has a real orthonormal basis of compact smooth representatives whose W-evaluations are independent standard real Gaussians.",
+      "verdict": "PASS",
+      "reason": "Reconstructed from E:driver-test-continuity: |<F,G>| bounded by |K|Gamma(K-K) 2L^(1-a)/(1-a) times the time sup-L2 norms, so rational-box step-plus-mollifier collections are uniformly dense, giving separability without injectivity. Infinite dimensionality follows from Q_sp = int Gamma(dy) int q(x)q(x-y)dx >= |B_{L+1}|Gamma(B_L)>0 for q>=1 on B_{2L+1}, the tensor identity ||tau tensor q||^2 = Q_sp ||tau||_a^2, and the positive Laplace factorization with v' = lambda v - tau forcing tau=0. Gram-Schmidt on a countable dense real collection, discarding quotient-null residuals, gives compact smooth representatives; the isonormal property gives E[g_j g_k]=delta_jk and joint Gaussian factorization gives independence. Gamma=0 is handled separately and no H_W-valued Gaussian is introduced."
+    },
+    "DR086 PROOF086 L:driver-covariance-coefficients": {
+      "claim": "H_{j,R}(t,x)=zeta_R(x) int_{u>0}|t-u|^{-a}(Gamma*f_j)(u,x-u term) is smooth real, spatially supported in B_{2R} with bounded mixed derivatives, satisfies the literal covariance row E[W_C(zeta_R F)g_j]=int H_{j,R}F, and depends only on the H_W class on t>=0.",
+      "verdict": "PASS",
+      "reason": "The substitution v=t-u confines v to a bounded interval and y to a compact set for compact (t,x), so local Radon mass and local |v|^{-a} integrability move all derivatives onto the compact smooth f_j, giving smoothness and bounded derivatives; zeta_R then gives support B_{2R}. The isonormal covariance and absolute Fubini give the row for compact real tests, extended to complex wave tests through the common-support raw approximations of P:actual-wave-form. Class invariance is established by distributional vanishing on t>0, smoothness, and continuity at zero. The mask stays after convolution, matching downstream use."
+    },
+    "DR087 PROOF087 L:driver-gain-localization": {
+      "claim": "A_j(I)=int_I S(-t)B(H_{j,R}(t))S(t)dt has gain E_r->E_{r+1}, E_s-adjoint gain E_{2s-r-1}->E_{2s-r}, hence both E_{s-gamma}->E; with chi=1 on B_{2R+T+1}, D_chi A_j(I)=A_j(I)=A_j(I)D_chi; and E[g_j ell_R(I;z,w)]=<A_j(I)z,w>_E.",
+      "verdict": "PASS",
+      "reason": "For r chosen so the second entry of B(H) is a bounded multiplier H^r->H^r; compact smooth coefficient gives t-uniform boundedness, and each Fourier entry is bounded by a fixed C_T, so the Bochner integrand is strongly continuous with bounded operator norm and integration gives gain one. The actual E_s pair identifies the dual of E_r with E_{2s-r}=E_{1-r}, so A* gains E_{2s-r-1}->E_{2s-r}; choosing r=s+gamma-1 gives domain E_{s-gamma} and codomain E_{s+1-gamma} subset E since gamma<1. The two identity localizations follow from the full two-entry finite-propagation cone argument (both displacement and velocity), H_{j,R} supported in B_{2R}, output in B_{2R+T}, and chi=1 on a neighborhood of B_{2R+T+1}. The covariance row uses the actual physical-adjoint identity together with DR086."
+    },
+    "DR089 PROOF089 L:driver-dominated-tails": {
+      "claim": "For 0<=T_N<=B with positive compact B in S_m (m>=1) and T_N->0 weakly, ||T_N||->0 and Tr T_N^m->0.",
+      "verdict": "PASS",
+      "reason": "For unit x, x=Qx+(I-Q)x with Q a finite spectral projection of B, the inequality bounds <T_N x,x> by 2||QT_NQ||+2||(I-Q)B(I-Q)||; weak convergence drives the finite matrix QT_NQ to zero and letting eps->0 gives norm convergence. Compact positive order gives lambda_j(T_N)<=lambda_j(B), norm convergence gives lambda_j(T_N)->0 pointwise, and dominated summation against the summable spectrum lambda_j(B)^m proves the trace limit. The proof explicitly avoids asserting operator-power order T_N^m<=B^m."
+    },
+    "DR090 PROOF090 L:driver-gaussian-tail-average": {
+      "claim": "For finitely many compact Z_l with V_out,V_in in S_{q/2} and independent standard real g_l, E||sum g_l Z_l||_{S_q}^q <= (q-1)^(q/2)(Tr V_out^(q/2)+Tr V_in^(q/2))/2.",
+      "verdict": "PASS",
+      "reason": "Finite-rank compression gives output variance <= Q_k V_out Q_k (difference equals sum Q_k Z_l(I-Q_k)Z_l* Q_k >=0) and the input analog, then the finite-dimensional P:finite-gaussian-matrix bound is applied and passed to the compact operators via norm-Lipschitz singular values plus Fatou over singular values and probability. Measurability follows by finite-coordinate continuity. No infinite Gaussian series or S_q Bochner convergence is required."
+    },
+    "DR092 PROOF092 L:driver-holder-limit": {
+      "claim": "X_N(t)=X_N((0,t)) converges in L^p(Omega;C^theta([0,T];B(E))) for all finite p>=1 in a separable closed path span, limit starts at zero and has compact values at all times on one event, and for large even q_0 the C^theta L^q norm is <= C sqrt(q) uniformly over even q>=q_0 and the basis.",
+      "verdict": "PASS",
+      "reason": "The strict choice theta<eta<beta and even q_0 with q_0 gamma>d and beta-eta-1/q_0>0 is verified. The uniform Schatten-step bound from the retained Gaussian estimate and the fixed S_{q_0} cutoff gives L^q increments <= C sqrt(q)|t-u|^beta; the finite-maximum bound gives D_n <= 2^(n/q)C sqrt(q)(T2^{-n})^beta, and the geometric sum closes with gap beta-eta-1/q_0>0. The dyadic sum controls the C^eta norm for zero-start continuous paths; fixed-grid-then-mesh convergence with the uniform C^eta bound proves sup-norm Cauchy; deterministic interpolation and scalar Holder prove C^theta Cauchy; Lyapunov covers arbitrary p. The limit lies in the C^theta-closed span of the countable deterministic Lipschitz paths A_j(0,.), and an a.s. C^theta-convergent subsequence gives compact values at all times on one path event."
+    },
+    "DR093 PROOF093 P:actual-operator-driver": {
+      "claim": "There is a same-noise compact operator path M_R with finite-path convergence E:driver-path-convergence in every L^p C^theta B(E); centered Gaussian, starts at zero, compact at all times on one event; fixed Schwartz raw rows equal ell_R((0,t);z,w) in L^2 including long-interval additivity; basis indistinguishability; (E||M_R||^p)^(1/p)<=C sqrt(p) and exponential square-integrability; complexification and fixed admissible even Schatten indices.",
+      "verdict": "PASS",
+      "reason": "Assembled from 085-092 on the original probability space; evaluation at fixed t agrees with the interval limit by uniqueness in probability; every continuous functional of the finite Gaussian path sum converges in L^2 to a centered Gaussian, giving the Gaussian path property; four real pair identities give the sesquilinear row. Basis indistinguishability uses a fixed countable dense Schwartz collection and rational times plus boundedness and path continuity, so only a countable null-set union is needed, distinguishing it from an uncountable raw-event intersection. The norm bound uses, for each p, an even q with q>=max(p,q_0) and q<=p+q_0+2<=(q_0+3)p, yielding C sqrt(p); the exponential bound follows from E Y^(2m)<=(C1 sqrt(2m))^(2m) and m!>=(m/e)^m, giving series terms bounded by (2ecC1^2)^m for c<1/(2eC1^2), with C1=0 handled trivially. Path moments are B(E) norms, not arbitrary Schatten-valued or endpoint claims."
+    },
+    "APP-NOISE-ROW": {
+      "claim": "The real compact-test quotient basis and physical post-convolution mask reproduce the literal original-W covariance row, using the actual E_s adjoint and no H_W-valued Gaussian.",
+      "verdict": "PASS",
+      "reason": "Join of 085, 086 and 087: the basis is real with compact smooth representatives and g_j=W(f_j); the post-convolution masked coefficient H_{j,R} gives E[W_C(zeta_R F)g_j]=int H_{j,R}F; and the physical-adjoint row gives E[g_j ell_R(I;z,w)]=<A_j(I)z,w>_E. This is identity on the same W (same-noise identity in L^2 row form), not merely equality in law, and no H_W-valued Gaussian vector is used."
+    },
+    "APP-GAIN-SUPPORT": {
+      "claim": "Gain one and its dual index both produce E_{s-gamma}->E maps, and full two-entry forward/backward propagation gives both cutoff identities for the actual coefficient integrals.",
+      "verdict": "PASS",
+      "reason": "A:E_r->E_{r+1} and A*:E_{2s-r-1}->E_{2s-r}; with r=s+gamma-1 both have domain E_{s-gamma} and codomain E_{s+1-gamma} subset E because gamma<1. D_chi A_j(I)=A_j(I)=A_j(I)D_chi is obtained from the complete (u,v) cone argument in both time directions and the B_{2R} support of H_{j,R}; it does not assert D_chi^{*,E}=D_chi."
+    },
+    "APP-TAIL-INTERVAL": {
+      "claim": "Current 088/091 use the actual Fourier/Bessel columns, both compact summable envelopes, the retained Gaussian average and vanishing traces to prove same-space tail Cauchy convergence, row/additivity and fixed-interval compact Gaussianity.",
+      "verdict": "PASS",
+      "reason": "088 proves both actual weighted variance directions (V_out and V_in) bounded by b_I D_gamma^2 with both localizations by P_chi and positive tails strongly tending to zero under b_I B_out/B_in. 091 then, for admissible even q with q gamma>d, puts the envelopes in S_{q/2}; DR089 gives Tr T_{out/in,N}^(q/2)->0; DR090 gives sup_{M>N} E||Y_{N,M}||_{S_q}^q->0; this is genuine L^q(B(E)) Cauchy convergence, not merely a uniform moment bound. The limit is taken in the separable operator-norm closed span of the countable deterministic A_j(I), is compact-valued, centered Gaussian on the original space, and has the literal fixed Schwartz row identity plus exact additivity over finite partitions; endpoint changes of long-interval indicators have zero raw norm. Common compact summable envelopes are the decisive ingredient, avoiding the strong-convergence-only counterexample."
+    },
+    "APP-PATH-VERSION": {
+      "claim": "Fixed-grid-then-mesh convergence and deterministic/probability interpolation produce a strongly measurable separable-span C^theta path, compact at all times on one event, preserving every fixed raw row and basis indistinguishability.",
+      "verdict": "PASS",
+      "reason": "This is exactly the 092/093 join. Fixed-grid pointwise convergence from 091 is combined with the uniform dyadic C^eta bound; the mesh is then refined; deterministic C^theta interpolation and scalar probability Holder close the Cauchy property in the separable C^theta-closed span of the countable A_j(0,.) paths. An a.s. C^theta-convergent subsequence is uniform in operator norm, so compact values hold at all times on one path event. Rows are preserved by uniqueness in probability at fixed times, and basis indistinguishability follows from a countable dense collection plus continuity, avoiding an uncountable null-set intersection."
+    },
+    "APP-MOMENT-TRANSFER": {
+      "claim": "Per-p even-q selection yields C sqrt(p) and square-exponential integrability with constants independent of p and the noise basis at fixed R,T, and source-transfer 095 consumes the exact path/row contracts consistently.",
+      "verdict": "PASS",
+      "reason": "For each p, an even q with q>=max(p,q_0) and q<=p+q_0+2<=(q_0+3)p is admissible; combining with the uniform dyadic bound gives a constant C independent of p, q and the basis at fixed R,T, and the even-moment series plus m!>=(m/e)^m gives the square-exponential bound. PROOF095 consumes exactly the fixed paths M_N=sum W(f_j)A_j(.,) converging to M_R in every finite L^p(B_theta), together with the same deterministic A_j coefficient paths; L:source-finite-comparison and the P:source-gaussian-transfer tail/norm/transfer bounds are compatible with those contracts. No fresh proof of the whole source-convergence module is assigned."
+    },
+    "FINITE": {
+      "claim": "Finite controls and index/constant checks recomputed: admissible tuples, q(p) selection, n=16 variance example, l2 moving projection, 2x2 Gaussian matrix test, cone/support checks, C1=0 and h=0/Gamma=0 definitions.",
+      "verdict": "PASS",
+      "reason": "Recomputed values: (1) d=1,alpha=1,a=1/2,gamma=1/4,theta=9/16,eta=5/8,beta=11/16,q0=32: q0*gamma=8>1 and beta-eta-1/q0=1/16-1/32=1/32>0, all strict parameter inequalities hold; q(1)=32, q(33)=34, q(100)=100, satisfying q<=p+q0+2 and q<=(q0+3)p, and a single fixed q only covers p<=q. The d2 singular tuple has q0*gamma=8>2 and gap 1/32; the d3 tuple has q0*gamma=16>3 and gap 1/128. (2) A_j=e_j^T on n=16: V_out=16, V_in=I_16, E||X||^4_{S4}=E(sum g_j^2)^2=16*3+240=288; the input-only bound 9*Tr(I_16^2)=144 is false; the retained average bound is 9*(256+16)/2=1224 and the maximum bound is (sqrt3*max(4,2))^4=9*256=2304; transposing refutes an output-only bound. (3) On l2, T_N=e_N tensor e_N tends strongly to zero but ||T_N||=Tr(T_N^m)=1, so strong convergence alone cannot give the tail result; a common compact summable positive envelope and eigenvalue order are needed, and A<=B does not imply A^t<=B^t. (4) A1=[[1,1],[0,0]], A2=[[0,0],[1,0]]: V_out=diag(2,1), Tr V_out^2=5; V_in=[[2,1],[1,1]], Tr V_in^2=7; E tr((X*X)^2)=17<=54=9*(5+7)/2, with finite-rank compression and double Fatou giving the compact extension. (5) The d1 shrinking-cone flux is (v u_x-e)(right)+(-v u_x-e)(left)<=0; S(-t)=J S(t) J with J(u,v)=(u,-v); both initial entries are needed (nonzero constant displacement or zero displacement/nonzero velocity each break the null-cone conclusion). (6) For F(t)=const nonzero, D_n(F)=0 for all n so F(0)=0 is essential to the full Holder control. (7) m!>=(m/e)^m holds by integrating log x; E Y^(2m)<=(C1 sqrt(2m))^(2m) gives exponential-series terms <=(2ecC1^2)^m with c<1/(2eC1^2), C1=0 is trivial, and h=0/Gamma=0 are defined as direct zero objects rather than substituted into B_alpha(0) or a nonzero basis construction."
+    }
+  },
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": []
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This verdict covers only the bounded same-noise operator-driver chain (PROOF085,086,087,089,090,092,093) and its stated application closure plus the finite checks; it does not assign or rely on whole214, source-image, manuscript-render, Kimi, or final fresh cold-review clearance.",
+    "Named local inputs (061-084 and current 088/091) are used as supplied proved local statements; their exact types and hypotheses were checked at the points of use, but they were not independently re-derived from first principles.",
+    "Downstream source-convergence PROOF094 and PROOF095 were inspected only to confirm that PROOF095 consumes the path/row contracts produced by PROOF093; the whole downstream convergence module and later variational modules were not independently re-proved in this report.",
+    "The fixed-author 64-page manuscript is treated as edition/model/noise context, not as a premise of the driver deductions; no external book or all214 paper argument is re-derived.",
+    "All estimates are at fixed finite R,T with the strict parameter guards (gamma<min(1/2,(2-alpha)/2), q0 gamma>d, beta-eta-1/q0>0, alpha+a<2); no uniform growing-R path-norm estimate, critical Schatten endpoint q gamma=d, or Schatten-valued Holder path is asserted.",
+    "Gamma=0 sets the driver and all raw forms to zero directly; empty intervals are zero objects without evaluating B_alpha(0)."
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "scope": "Seven actual operator-driver deductions and same-noise/application closure; actual scoped adoption requires root reading every check/finding/input limitation",
+  "source_commit": "8ce03ae09cca984b32aaddf3da0a6ded07f47ebc",
+  "actual_session_id": "ses_e60c9662affeG0QYzOwe8tC7XO",
+  "actual_model": "deepseek/deepseek-v4-pro",
+  "actual_model_all_assistant_messages_verified": true,
+  "one_user_input_lineage": true,
+  "exact_prompt_input_returned": true,
+  "prompt_sha256": "12a977de48ce9f5ba33b1b737a8679ede8edae99ac32263fe92de99b3ce5c0d9",
+  "prompt_bytes": 1280931,
+  "all40_embedded_source_slices_equal": true,
+  "carrier_head": "2c300c63b1c692016f7717e1def0529a54c544a5",
+  "carrier_clean": true,
+  "all_frozen_file_hashes_equal": true,
+  "actual_tool_parts": 0,
+  "actual_image_reads": 0,
+  "finish": "stop",
+  "public_report_present": true,
+  "public_report_sha256": "c512959b0e0904ed987fd5392e346b1b6305d7f7334884d264261f0959efa785",
+  "public_report_bytes": 18391,
+  "all7_target_IDs_mentioned": true,
+  "missing_ID_mentions": [],
+  "ID_mentions_are_not_mathematical_coverage": true,
+  "confidence_requested": true,
+  "root_mathematical_adjudication": "PENDING",
+  "source_image_render_cold_gate_credit": false,
+  "global_project_clearance": false,
+  "automatic_retry_or_continuation": false,
+  "event_counts": {
+    "step_start": 1,
+    "text": 1,
+    "step_finish": 1
+  },
+  "exit": {
+    "exit_code": 0,
+    "elapsed_seconds": 421.1468934660079,
+    "finished_utc": "2026-11-03T02:28:57.260896+00:00",
+    "carrier_head_unchanged": true,
+    "carrier_clean": true,
+    "events_sha256": "fbed2be028aa8078652430f956d8acc825c0c7436b17f1679ad7de6b049c17fb",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "usage_metadata": [
+    {
+      "total": 401363,
+      "input": 378523,
+      "output": 5023,
+      "reasoning": 17817,
+      "cache": {
+        "write": 0,
+        "read": 0
+      }
+    }
+  ],
+  "actual_session_info": {
+    "id": "ses_e60c9662affeG0QYzOwe8tC7XO",
+    "slug": "quiet-falcon",
+    "projectID": "2c300c63b1c692016f7717e1def0529a54c544a5",
+    "directory": "<HOME>/.local/state/Le-AI-Lab/stratonovich-driver-complete-depth-packet-v1/carrier",
+    "path": "",
+    "title": "Same-noise compact Gaussian operator-driver chain",
+    "agent": "reviewer",
+    "model": {
+      "id": "deepseek-v4-pro",
+      "providerID": "deepseek",
+      "variant": "default"
+    },
+    "version": "1.18.31",
+    "summary": {
+      "additions": 0,
+      "deletions": 0,
+      "files": 0
+    },
+    "cost": 0.29504838,
+    "tokens": {
+      "input": 378523,
+      "output": 5023,
+      "reasoning": 17817,
+      "cache": {
+        "read": 0,
+        "write": 0
+      }
+    },
+    "permission": [
+      {
+        "permission": "question",
+        "pattern": "*",
+        "action": "deny"
+      },
+      {
+        "permission": "plan_enter",
+        "pattern": "*",
+        "action": "deny"
+      },
+      {
+        "permission": "plan_exit",
+        "pattern": "*",
+        "action": "deny"
+      }
+    ],
+    "time": {
+      "created": 1793672518101,
+      "updated": 1793672937121
+    }
+  },
+  "reported_verdict": "PASS_WITH_NOTES",
+  "reported_confidence": "high",
+  "reported_checks": [
+    {
+      "claim": "The prescribed nonzero quotient H_W is separable and infinite-dimensional and has a real orthonormal basis of compact smooth representatives whose W-evaluations are independent standard real Gaussians.",
+      "verdict": "PASS"
+    },
+    {
+      "claim": "H_{j,R}(t,x)=zeta_R(x) int_{u>0}|t-u|^{-a}(Gamma*f_j)(u,x-u term) is smooth real, spatially supported in B_{2R} with bounded mixed derivatives, satisfies the literal covariance row E[W_C(zeta_R F)g_j]=int H_{j,R}F, and depends only on the H_W class on t>=0.",
+      "verdict": "PASS"
+    },
+    {
+      "claim": "A_j(I)=int_I S(-t)B(H_{j,R}(t))S(t)dt has gain E_r->E_{r+1}, E_s-adjoint gain E_{2s-r-1}->E_{2s-r}, hence both E_{s-gamma}->E; with chi=1 on B_{2R+T+1}, D_chi A_j(I)=A_j(I)=A_j(I)D_chi; and E[g_j ell_R(I;z,w)]=<A_j(I)z,w>_E.",
+      "verdict": "PASS"
+    },
+    {
+      "claim": "For 0<=T_N<=B with positive compact B in S_m (m>=1) and T_N->0 weakly, ||T_N||->0 and Tr T_N^m->0.",
+      "verdict": "PASS"
+    },
+    {
+      "claim": "For finitely many compact Z_l with V_out,V_in in S_{q/2} and independent standard real g_l, E||sum g_l Z_l||_{S_q}^q <= (q-1)^(q/2)(Tr V_out^(q/2)+Tr V_in^(q/2))/2.",
+      "verdict": "PASS"
+    },
+    {
+      "claim": "X_N(t)=X_N((0,t)) converges in L^p(Omega;C^theta([0,T];B(E))) for all finite p>=1 in a separable closed path span, limit starts at zero and has compact values at all times on one event, and for large even q_0 the C^theta L^q norm is <= C sqrt(q) uniformly over even q>=q_0 and the basis.",
+      "verdict": "PASS"
+    },
+    {
+      "claim": "There is a same-noise compact operator path M_R with finite-path convergence E:driver-path-convergence in every L^p C^theta B(E); centered Gaussian, starts at zero, compact at all times on one event; fixed Schwartz raw rows equal ell_R((0,t);z,w) in L^2 including long-interval additivity; basis indistinguishability; (E||M_R||^p)^(1/p)<=C sqrt(p) and exponential square-integrability; complexification and fixed admissible even Schatten indices.",
+      "verdict": "PASS"
+    },
+    {
+      "claim": "The real compact-test quotient basis and physical post-convolution mask reproduce the literal original-W covariance row, using the actual E_s adjoint and no H_W-valued Gaussian.",
+      "verdict": "PASS"
+    },
+    {
+      "claim": "Gain one and its dual index both produce E_{s-gamma}->E maps, and full two-entry forward/backward propagation gives both cutoff identities for the actual coefficient integrals.",
+      "verdict": "PASS"
+    },
+    {
+      "claim": "Current 088/091 use the actual Fourier/Bessel columns, both compact summable envelopes, the retained Gaussian average and vanishing traces to prove same-space tail Cauchy convergence, row/additivity and fixed-interval compact Gaussianity.",
+      "verdict": "PASS"
+    },
+    {
+      "claim": "Fixed-grid-then-mesh convergence and deterministic/probability interpolation produce a strongly measurable separable-span C^theta path, compact at all times on one event, preserving every fixed raw row and basis indistinguishability.",
+      "verdict": "PASS"
+    },
+    {
+      "claim": "Per-p even-q selection yields C sqrt(p) and square-exponential integrability with constants independent of p and the noise basis at fixed R,T, and source-transfer 095 consumes the exact path/row contracts consistently.",
+      "verdict": "PASS"
+    },
+    {
+      "claim": "Finite controls and index/constant checks recomputed: admissible tuples, q(p) selection, n=16 variance example, l2 moving projection, 2x2 Gaussian matrix test, cone/support checks, C1=0 and h=0/Gamma=0 definitions.",
+      "verdict": "PASS"
+    }
+  ],
+  "reported_limitations": [
+    "This verdict covers only the bounded same-noise operator-driver chain (PROOF085,086,087,089,090,092,093) and its stated application closure plus the finite checks; it does not assign or rely on whole214, source-image, manuscript-render, Kimi, or final fresh cold-review clearance.",
+    "Named local inputs (061-084 and current 088/091) are used as supplied proved local statements; their exact types and hypotheses were checked at the points of use, but they were not independently re-derived from first principles.",
+    "Downstream source-convergence PROOF094 and PROOF095 were inspected only to confirm that PROOF095 consumes the path/row contracts produced by PROOF093; the whole downstream convergence module and later variational modules were not independently re-proved in this report.",
+    "The fixed-author 64-page manuscript is treated as edition/model/noise context, not as a premise of the driver deductions; no external book or all214 paper argument is re-derived.",
+    "All estimates are at fixed finite R,T with the strict parameter guards (gamma<min(1/2,(2-alpha)/2), q0 gamma>d, beta-eta-1/q0>0, alpha+a<2); no uniform growing-R path-norm estimate, critical Schatten endpoint q gamma=d, or Schatten-valued Holder path is asserted.",
+    "Gamma=0 sets the driver and all raw forms to zero directly; empty intervals are zero objects without evaluating B_alpha(0)."
+  ],
+  "contract_issues": [],
+  "contract_validation_is_not_mathematical_adoption": true,
+  "HIGH_threshold_metadata_only": true
+}

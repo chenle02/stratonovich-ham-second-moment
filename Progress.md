@@ -12573,3 +12573,28 @@ votes or source/PDF changes. Existing MEDIUM/qualified states stay unchanged.
 A new small complete calibration packet is being prepared without a provider
 call; the current driver report correction is a separate one-lineage audit.
 The original model/constant and full completion contract remain active.
+
+
+### Complete actual operator-driver chain adopted at scoped HIGH
+
+DeepSeek V4 Pro's new current-source report is PASS_WITH_NOTES/HIGH, all
+seven target and six application/finite rows PASS. Root read every deduction
+and limitation, rehashed67 original+12 correction members and verified the
+exact prompt/actual route/tools0/stop/frozen source and current body hashes.
+The complete replay supplied full support/dyadic/two-variance/tail/interval
+mathematics rather than only the earlier moment outline.
+
+Root caught the returned shared-index explanation error. One factual
+same-session correction derives the distinct direct and adjoint substitutions,
+retracts a coefficient paraphrase and corrects the erroneous LF344 endpoint.
+Its two raw correction rows are PARTIAL on the false original report claims;
+root preserves those statuses and the exact695-line source count. The full
+correct deductions explicitly retain the affected source checks PASS. No
+source repair or second independent vote is invented. Detailed adjudication
+is in reviews/2026-11-02-driver-complete-depth/adoption-adjudication.md.
+
+Ledgerv37 newly accepts085/086/087/089/090/092/093, reaching178 exact scoped
+HIGH with33 earlier MEDIUM/partial rows and3 editorial deltas still open.
+All214 identities, source8ce03ae,263-page PDF, indexv6 and80 finite Lean
+facts stay unchanged. Whole-main/source-image/full-render/Kimi/fresh-cold/
+private delivery requirements remain separate, and the goal remains active.
