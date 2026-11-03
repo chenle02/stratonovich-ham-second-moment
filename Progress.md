@@ -14,22 +14,24 @@
   committed with the source and matches every reviewed-candidate text page.
   Local/origin/<HUB> source parity is verified; no extra checkout exists.
 
-- **Review scope:** current indexv6/neutralv6 and depth-ledger-v47 bind the
+- **Review scope:** current indexv6/neutralv6 and depth-ledger-v48 bind the
   integrated source:210 exact scoped HIGH,3 earlier editorial deltas,1
   unaccepted current-report row010. These counts are not a completion
   percentage. The earlier complete MAIN report remains ungraded120CHECKED/
   94LIMITED on b4b6efc; the six new scoped results do not rewrite it or clear
   the remaining whole-argument, source-image, render, Kimi or cold gates.
 
-- **Fresh MAIN with four mathematical closures (2026-11-03):** ONE actual
-  DeepSeek V4 Pro invocation is LIVE, session ses_e5e5bdfa0ffewBx72obudLzeRj,
-  started13:40:49UTC;214ownproofs/240statements/28TeX/all13joins, same8ce
-  source, complete new finite-upper/driver-source/Cameron-tube/positive-
-  matching mathematics. Root inspected all59frames and every disclosed
-  extraction, exact primary/source/maps; effective all12tools disabled.
-  No prior grades supplied; actual confidence unforced; no automatic retry
-  or continuation. Planning994308/1048576 with54268headroom is an estimate.
-  No report/adoption/image/render/Kimi/cold/whole-goal acceptance yet.
+- **Fresh MAIN with four mathematical closures (2026-11-03):** TERMINAL
+  after1122.932seconds, actualfinishLENGTH; public JSON truncated during204.
+  Visible literal INCONCLUSIVE/low;001–203exactdecodable rows41CHECKED/
+  162LIMITED, not full214coverage. Exact userprompt/model/tools0/clean
+  carrier/source/native export verified. Root read every returned203reason
+  and partial204tail; numerous explicit reading limits and concrete report
+  calculation errors are retained. Root65536cap was consumed by19862
+  reasoning+45674public tokens. The full original capsule is immutable.
+  One possible factual same-session missing-report completion awaits the
+  complete finding batch; none launched. No source or local-grade change,
+  whole/image/render/Kimi/cold/project acceptance, auto retry or grade chase.
 
 - **Current whole MAIN (2026-11-03):** the one actual all214own-proof/
   240statement/28TeX DeepSeek V4 Pro run is TERMINAL, actual INCONCLUSIVE/
@@ -12985,3 +12987,33 @@ adjudication remain pending. Ledger47 records RUNNING without changing any
 local proof state or the older inconclusive MAIN. Never retry/restart this
 run automatically. Text supplies no source-image/full-render/Kimi/freshcold
 or final-private acceptance; all remaining contract gates stay open.
+
+
+## 2026-11-03 — New MAIN length stop and complete returned-prefix reading
+
+Session ses_e5e5bdfa0ffewBx72obudLzeRj is terminal at13:59:32.473388UTC,
+exit0 but actualfinishlength. The public JSON stops during204; visible
+INCONCLUSIVE/low is preserved, not interpreted as completed coverage. Root
+verified the regular-file export, exact original prompt, actual DeepSeek V4
+Pro/tools0 and unchanged clean frozen carrier. Literal complete prefix001–203
+has41CHECKED162LIMITED;204is incomplete,205–214/globaltail absent. Root read
+all203worked/input/gap fields, partial204and every supplied globalintro field.
+Seven reported locator/hash transcriptions remain beside correct input/index.
+
+Concrete errors in returned explanations are being fully batched before any
+ONE possible factual same-session PUBLICREPORT completion. They include010
+factorial/k2/k3 arithmetic,012sector,047metricclass,059self-gap,164domain,
+169fastdirection and183threshold. The source is correct on those checked
+points. Widespread admitted non-reconstruction is an honest reading limit,
+not a manuscript falsity or clearance. No new source edit or scoped grade.
+
+Durable original capsule/report-prefix/parsefailure/native envelope and full
+member rehash/secret-scan inventory: reviews/2026-11-03-main-four-closures/
+original-terminal/. Ledger48 records this separately. Root's chosen65536
+output cap includes reasoning19862+public45674, exactly65536; it was too small
+for this actual public record. Actualinput538408tokens, source unchanged.
+Future completion must budget both quantities; this is not justification
+for a confidence retry or a new vote. No completion call has yet been launched.
+All original model/domain/data/amplitude/action, image/Kimi/freshcold and
+final-private gates remain. GoalACTIVE; previous turn had concrete progress,
+this turn produced an actual terminal report and mathematical findings.
