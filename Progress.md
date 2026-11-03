@@ -13127,3 +13127,32 @@ the other writer published a descendant containing the owned21b75a24unit.
 Root verified exact ancestry/ownedblobs/runtime/<HUB> rather than force
 push/reset/rebaseforeignwork. Evidence: reviews/2026-11-03-durable-budget-proof-coverage/.
 Source8ce/PDF263/localgrades and all verification/delivery gates unchanged.
+
+
+## 2026-11-03 — Complete core analytic working retained and root-assessed
+
+Two fullAUTHORreplays are frozen and archived: foundation004/005/006/214
+49219bytes SHA f8c0fb9d68d0a4c1153f94a0ea4a929c423c914a15c728e95f89ee7f104ebb06,
+wave061–07431392bytes SHA10a59a3b8e6ffac4ae4ac57d2ee701567b7da80a26cfde83dba2f43d3991a62c.
+Root read BOTH complete documents, BOTH complete peer author challenges and
+actual source/finite/primary hypotheses. No new source gap identified under
+exact named inputs; no source/PDF/depth-grade adoption. Explicit Brownian
+factorials/heat-horizon factors/U_k, weakmeasure/fullmass/empty-vs-positive
+faces, marked2A_tail+B_tail² and samefamilyCauchy, and full actualbothvariance
+row/adjoint/Fourier constants are now worked in standalone mathematicaldata.
+All originalΓ/dimensions/amplitude/data/action/white/singular/zero cases hold.
+
+Localroot+author view of heldPDFp14 resolves source3.4absbars dropped bytext
+extraction. Actualfirstnorm has INNER-transformabsolutevalue; actualdamped
+Green-heattransform>=0,so scalarN1/tail/markedconstants unchanged. Separate
+3.5x/y typo andp21originoffset remain explicitlyqualifiedbyown214. No independent
+Kimi/imagecredit. Foundationproposaloriginal10frame version preserved before
+additive11th source-note; source8ce/mathunchanged.
+
+Evidence reviews/2026-11-03-core-analytic-replays/ contains exact complete
+authorarchives/inventories, fullpeerchallenges androotprimaryreadback. New
+structuralbaseline16.9k candidate is PROVISIONAL/rootfullfileassessment and
+independentreviewPENDING; no integration/source claim. Main/currentglobal
+INCONCLUSIVE/LOW/local210HIGH+010+3editorials/80finiteLean22seams unchanged.
+Bounded module checks do not replace full214/mainHIGH/image/Kimi/cold/final
+contract. Source8ce/PDF263 unchanged; no officialcompanion/HPC/Skorohod edits.
