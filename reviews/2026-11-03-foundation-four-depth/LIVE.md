@@ -1,0 +1,26 @@
+# Scoped fixed-order foundation004005006214 review
+
+OnefreshactualDeepSeek V4 Pro invocation starts18:17:42.685985UTC on
+2026-11-03.PID148060/startticks60998964,supervisor148041,exec11140.
+Assignedexactfourcurrentownproofs004005006214andcanonicalfixedorder
+application,alloriginalΓ/d1/2/3/self/unequal/empty/amplitude/data/zero.
+Othercomplete-mainproofscontextonly;noallorder/targetupper/4.1/4.4/
+Section5/PDEuniqueness/strongersigmaW/whole214/image/cold/goalclaim.
+
+Source8ce,carrier68cfc03e6fc1d230ada729087ef9af6f89ed774a.
+Input1053983UTF8bytes SHA5334622b44c7ee6746525c9e023d48e8200503d74b82c0846af173cfc77a6784,
+11frames,fullprimary64pages,actualfirstnormabsbarsauthortranscriptionas
+additive11thnote.Original10frameproposalpreservedbeforeamendment;no
+source/math/oldpayloadchanged. Rootreadall49kmathematics/peerchallenge,
+actualsource/theoremhypotheses/edgecounts andsource14pixels;all4body/
+statementbindings,64primaryslices/PDFhash,11framesrootverifiedbefore
+andAFTERseal/hooks.EffectivemodelDeepSeekV4Pro/alltoolsdisabled;actual
+assistantmetadata/reportstillrequireterminalexportverification.
+
+Combinedoutput131072+systemreserve32768,conservativeplanning684146/
+1048576—notexacttokenizationorsemanticcoverage.Noautoret/continuation/
+minimumconfidence.NoadditionalArticleclone/worktree. Externalnative
+issiblingstate stratonovich-fixed-order-foundation-depth-packet-v1/native.
+Checkexit.jsonandactualPIDbeforeboundedwait. Onterminalexportdirectly
+toregularfile,verifyactualmodel/prompt/tools/finish/frozensource,collect
+andreadentirepublicreportandfindingsbeforeanyacceptance.Noresultyet.

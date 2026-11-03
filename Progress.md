@@ -14,12 +14,21 @@
   committed with the source and matches every reviewed-candidate text page.
   Local/origin/<HUB> source parity is verified; no extra checkout exists.
 
-- **Review scope:** current indexv6/neutralv6 and depth-ledger-v50 bind the
+- **Review scope:** current indexv6/neutralv6 and depth-ledger-v51 bind the
   integrated source:210 exact scoped HIGH,3 earlier editorial deltas,1
   unaccepted current-report row010. These counts are not a completion
   percentage. The earlier complete MAIN report remains ungraded120CHECKED/
   94LIMITED on b4b6efc; the six new scoped results do not rewrite it or clear
   the remaining whole-argument, source-image, render, Kimi or cold gates.
+
+- **Core analytic checks (2026-11-03):** complete49kfoundation/31kvariance
+  authorworking+peerchallengesrootreadandarchived. NewboundedDeepSeek
+  variancepanelreturned14CHECKED/088MATCHED,actualnumericconfidence0.8;
+  noHIGHconversionorlocaladoption. ONEfactualsame-sessioncoefficient
+  supplementisLIVE,PID144011/exec99846. Freshfour-foundation004005006214
+  reviewisLIVE,PID148060/exec11140,source8ce,all11frames/rootprimarynote
+  verified.Combinedoutput131072,noautoret/continuation/unforcedverdicts.
+  Thesemoduleobligationsdonotreplacewhole214/mainHIGH/image/Kimi/cold/goal.
 
 - **Fresh MAIN with four mathematical closures (2026-11-03):** the original
   length stop plus ONE factual same-session public completion are TERMINAL.
@@ -13156,3 +13165,38 @@ independentreviewPENDING; no integration/source claim. Main/currentglobal
 INCONCLUSIVE/LOW/local210HIGH+010+3editorials/80finiteLean22seams unchanged.
 Bounded module checks do not replace full214/mainHIGH/image/Kimi/cold/final
 contract. Source8ce/PDF263 unchanged; no officialcompanion/HPC/Skorohod edits.
+
+
+## 2026-11-03 — Scoped core checks launched; originalnumericwave report preserved
+
+Freshvariancepanel061–074+088application ses_e5dbc5178ffeww2PMtkV3pITAS
+ended577.197seconds/stop/actualDeepSeekV4Pro/tools0,14CHECKED/088MATCHED,
+actualconfidenceSTRING0.8andpositiveproseverdict.Numericscoreisnotmapped
+posthoctoHIGH.Rootreadall14workedreasons/source/app/calibration/limits;
+all14reportedstatement/bodyhashandLFbindingsmatchactualindex6. Actual
+calibrationtypoK21=t (matrixgives1),065wrongd1endpointcaptionforcorrect
+d2alpha1case, andmissingpublicexplicitD/N/E/Fcoefficientdetailarebatched
+beforeONEfactualsame-session supplement. Modelconfidenceunforced,noHIGH
+conversionrequest;075084contextcompactnessnotnewlyreviewed/full093notassigned.
+
+Original51membernative/sourcecapsule/report/envelope/readback retainedin
+reviews/2026-11-03-wave061074-depth/original/. Onefactualcallstarts18:15:38UTC,
+PID144011/startticks60986533/supervisor144005/exec99846,samesession,
+4205byteinput SHA48c879373a7293f90ce46858e7b98bfd461644f3d8eb6d1f9a871fa321598da8.
+Noautofollowup;newexportmustpreserveexactoriginal2messagesandraw0.8record.
+
+Freshfourproof004005006214foundationreviewstarts18:17:42.685985UTC,
+PID148060/startticks60998964/supervisor148041/exec11140,carrier68cfc03e.
+Input1053983bytes SHA5334622b44c7ee6746525c9e023d48e8200503d74b82c0846af173cfc77a6784,
+11rootverifiedframes,full64pageprimary,all4ownbindings.Reviewincludesexact
+prelaunchfirstnormabsbarssource-note;original10frames/config/mathpreserved
+beforeadditivenote. ActualeffectiveDeepSeekV4Pro/alltoolsfalse;noactual
+report/assistant-route/finishcredituntilterminalexport. 131072combinedcap,
+planning684146/1048576isestimate. Frozeninput/proposal/rootauthorization/
+seal/postseal/launch/PID retainedin reviews/2026-11-03-foundation-four-depth/.
+
+Ledger51recordsnewworkseparately;actualwholeMAININCONCLUSIVE/LOW45CHECKED
+169LIMITED/all13PARTIALandlocal210HIGH+010+3editorialstatesunchanged.
+AlloriginalΓ/models/action/data,source8ce/PDF263,80Lean22seamsandwhole
+HIGH/image/Kimi/fullrender/freshcold/private-delivery gates remain.Open
+KimiMONTHLY429hasnoactualcapacitychange/noextraquery/substitution.
