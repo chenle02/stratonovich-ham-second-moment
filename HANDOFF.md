@@ -1,4 +1,4 @@
-Last updated: 2026-11-03 02:59 UTC (Codex)
+Last updated: 2026-11-03 03:05 UTC (Codex)
 
 LATEST USER DIRECTION: DeepSeek V4 Pro MAIN; full original goal ACTIVE.
 Capture durable lessons along the way. Actual constant, no forced Chen matching.
@@ -19,7 +19,7 @@ carrier8a0d77d4f42f881a542e19305ca2db01f5ee959a. All49 embedded slices,
 Durable launch/frozen input is in ACTIVE reviews/2026-11-02-calibration-complete-depth.
 
 ACTIVE ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave,
-branch research/fixed-mask-young-20261031, HEAD257414039604a7cb0e655db05f6b30ab5ac5f01a,
+branch research/fixed-mask-young-20261031, HEAD474fa748144e25b52795e9924206a6b8c36175e2,
 clean/pushed/<HUB> equal. Scientific source8ce03ae09cca984b32aaddf3da0a6ded07f47ebc.
 Current263-page PDF builds with0errors/undefined refs/cites/overfull boxes,
 SHA bd1bacf8bdf992ca2e271d671839dfd6a03cd9e84160327045ce45f6d93b7ab6.
@@ -90,6 +90,10 @@ The whole completion contract remains separate and the goal remains active.
 [held back: collaborators' unpublished work]
 
 ## What the previous sessions produced
+
+2026-11-03 authority refresh474fa74: current Progress header now explicitly
+binds ledgerv37/178scopedHIGH, complete-calibration live review and canonical
+durable-learning checkpoint. No source/PDF/grade change or new provider call.
 
 2026-11-03 continuation checkpoint2574140: six analytic expansions adopted
 at science8ce03ae with exact263-page PDF/current214indexv6. Compact ground/
@@ -2251,14 +2255,19 @@ held. Main p2source/PDF/Lean facts unchanged; no reviewer live.
 
 ## Repo & git state at handoff
 
-ROOTmaster pre-handoff823f454a5fbb0a992db0ba19887cb61635ce4301, clean/upstream
-equal before this dedicated HANDOFF commit. ACTIVE257414039604a7cb0e655db05f6b30ab5ac5f01a,
+ROOTmaster pre-handoff147eade63011ebc901ac991fc15a4cc5d961e2b9, clean/upstream
+equal before this dedicated HANDOFF commit. ACTIVE474fa748144e25b52795e9924206a6b8c36175e2,
 pushed/<HUB> equal; branch research/fixed-mask-young-20261031.
 Scientific8ce03ae09cca984b32aaddf3da0a6ded07f47ebc; current PDF263pages,
 SHAbd1bacf8bdf992ca2e271d671839dfd6a03cd9e84160327045ce45f6d93b7ab6.
 MainTeXSHA364753242f9d02e57036af586ab8e777b184d897862750d3170d79f028067914.
 Indexv6/neutralv6/ledgerv37.80finite Lean facts/22seams unchanged; no official
 companion approval. Only master and active research branches remain locally.
+
+Young/raw-block source-sized packets are currently being prepared by author
+workers in stratonovich-young-complete-depth-packet-v1 and
+stratonovich-raw-block-complete-depth-packet-v1. No provider calls there are
+authorized by this handoff; inspect actual mathematics and completion status.
 
 External source-sized evidence/WIP under ../../../../.local/state/Le-AI-Lab/:
 - stratonovich-calibration-complete-depth-packet-v1 (LIVE native handle above).
@@ -2305,4 +2314,3 @@ maintenance; read its current file receipt before upgrading that status.
 Learning artifacts are durable and discoverable, but do not clear any research
 gate or authorize provider/system setup changes. Goal remains ACTIVE while
 meaningful mathematical/review/delivery work continues.
-
