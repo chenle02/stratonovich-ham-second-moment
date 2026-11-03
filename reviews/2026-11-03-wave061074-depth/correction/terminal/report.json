@@ -1,0 +1,68 @@
+{
+  "schema": "wave061074-factual-coefficient-supplement/1",
+  "session_actual_native": "ses_e5dbc5178ffeww2PMtkV3pITAS",
+  "factual_corrections": [
+    {
+      "exact_error": "In the original returned field all_model_and_finite_calibrations.worked_checks I wrote that the zero-mode entry K21=i is t, while the displayed matrix is [[-t,-t^2],[1,t]].",
+      "correct_deduction": "The matrix [[-t,-t^2],[1,t]] has K21=1, not t. For I=(0,h), ||1_I||_a^2 = Z_a h^(2-a) with Z_a=2/((1-a)(2-a)). A t-entry would instead have squared temporal norm 2Beta(2,1-a)/(4-a)*h^(4-a). At a=1/2 these coefficients are 8/3 and 16/21 respectively, and the h-powers differ (h^(2-a) versus h^(4-a)).",
+      "source": "This is a returned calibration typo only. The source formulas are correct: PROOF073/E:variance-kernel-time-bound bounds squared H_a norms, and PROOF071/E:variance-normalized-kernel states the zero-frequency matrix as [[-t,-t^2],[1,t]]. No manuscript error.",
+      "effect": "The worked_checks caption is corrected; no proof status or application is affected."
+    },
+    {
+      "exact_error": "In the original returned PROOF065 input_applications field I labeled the homogeneity regime as the admissible alpha=d=1 case.",
+      "correct_deduction": "PROOF065 uses d=2, Gamma=delta_0(dx1)dx2, alpha=1<d, admissible for every 0<a<1. The alpha=d=1 endpoint is the separate d=1 spatial-white-noise endpoint, not this d=2 singular-plane example.",
+      "source": "The d=2 variance and marginal computation remain correct: V(g)=int( int g(x1,x2)dx2)^2 dx1, unmasked marginal int g dx2=0, masked marginal -I_chi chi(x1)^2, so V(zeta g)=J_chi I_chi^2>0.",
+      "effect": "PROOF065 input caption is corrected to keep the source/model class distinction precise. Status remains CHECKED."
+    }
+  ],
+  "explicit_coefficient_audit": {
+    "scope": "Analytic verification of the concrete constants D_alpha, D_1, N, E, F, K, K_beta and the downstream constants C0, C1, A_T, C_nu, C_T from notes/integrated_wave_variance.tex and supplements/wave-full-worked-mathematics.txt. Decimal examples are not used as premises.",
+    "A_xi_and_D_alpha": "With q=max(1,|xi|) and N_shell=ceil(log2(5q)), so 5q<=2^N<10q, split the ball of radius 5q into the unit ball and annuli (2^j,2^{j+1}], j=0..N-1. On each annulus <eta>^{-1}<=2^{-j} and the annulus mass is <=C*2^alpha*2^{j alpha}. Hence A_xi(q)<=C[1+2^alpha*sum_{j=0}^{N-1}2^{j(alpha-1)}].",
+    "regime_alpha_lt_1": "sum_{j>=0}2^{j(alpha-1)} < 1/(1-2^{alpha-1}), so A_xi(q)<=C D_alpha with D_alpha=1+2^alpha/(1-2^{alpha-1}).",
+    "regime_alpha_eq_1": "The geometric sum equals N, and N=ceil(log2(5q))<log2(10q)=log2(10)+log2(q). Thus A_xi(q)<=C[1+2log2(10)+ (2/ln2)ln q]<=C D_1(1+ln q) with D_1=1+2log2(10), because 2/ln2<=D_1. This constant handles the near-region log q.",
+    "regime_alpha_gt_1": "The geometric sum is <=2^{(alpha-1)N}/(2^{alpha-1}-1)<10^{alpha-1}q^{alpha-1}/(2^{alpha-1}-1), so A_xi(q)<=C D_alpha q^{alpha-1} with D_alpha=1+2^alpha*10^{alpha-1}/(2^{alpha-1}-1), using 1<=q^{alpha-1}.",
+    "near_region": "On |lambda|<=4q, |eta|<=5q and each of the two brackets in Q_h is <=1. Thus the near contribution to J_h(xi) is <=2<xi>^{-epsilon}A_xi(q)<=2q^{-epsilon}A_xi(q), epsilon=1-2gamma>0.",
+    "near_N_alpha_neq_1": "For alpha<1: q^{-epsilon}A_xi(q)<=D_alpha, so near<=2D_alpha. For alpha>1: q^{-epsilon}A_xi(q)<=D_alpha q^{alpha+2gamma-2}<=D_alpha, using alpha+2gamma-2<0 by gamma<(2-alpha)/2. Therefore N_alpha=2D_alpha in both cases.",
+    "near_N_1": "For alpha=1: q^{-epsilon}(1+ln q)<=1+1/(e*epsilon), so near<=2D_1[1+1/(e(1-2gamma))]=N_1. Verified with u=ln q, using e^{-epsilon*u}(1+u)<=1+1/(e*epsilon).",
+    "far_region": "For r=|lambda|>4q, one has |eta|>=3r/4, ||eta|-|xi||>=r/2 and |eta|+|xi|>=r/2. Each frequency bracket has argument >=hr/2, and with a-1<0 its bracket power is <=2^{1-a}<hr>^{a-1}. Two brackets give Q_h<=2^{2-a}<hr>^{a-1}, while <eta>^{-1}<=4/(3r) and <xi>^{-epsilon}<=1. This yields the far bound (4/3)2^{2-a}*int_{|lambda|>4q}|lambda|^{-1}<h|lambda|>^{a-1}nu(dlambda).",
+    "far_F_and_S": "Enlarging to |lambda|>1, dyadic splitting of the annuli (2^j,2^{j+1}] contributes mass C*2^alpha*2^{j alpha} and inverse radius 2^{-j}, so the far contribution is <=C*F*S(h) with F=(4/3)2^{2-a+alpha} and S(h)=sum_{j>=0}2^{j(alpha-1)}<h2^j>^{a-1}. The first exponent is the spatial alpha-1, not a-1.",
+    "S_low_high_split": "With L=floor(log2(1/h))>=0 and tstar=alpha+a-2<0: for j<=L, <h2^j>^{a-1}<=1; for j>=L+1, <h2^j>^{a-1}<=(h2^j)^{a-1}. The high tail is h^{a-1}*sum_{j>=L+1}2^{j*tstar}=h^{a-1}*2^{(L+1)tstar}/(1-2^tstar)<=h^{1-alpha}/(1-2^tstar), since 2^{L+1}>1/h and tstar<0.",
+    "E_alpha_lt_1": "Low part <1/(1-2^{alpha-1}); tail coefficient 1/(1-2^tstar). E_alpha=1/(1-2^{alpha-1})+1/(1-2^tstar) with B_alpha(h)=1. Verified.",
+    "E_1": "Low part L+1<=(ln2)^{-1}(1+ln(1/h)); tail uses tstar=a-1, coefficient 1/(1-2^{a-1}). E_1=(ln2)^{-1}+1/(1-2^{a-1}) with B_alpha(h)=1+ln(1/h). Verified. This is the distinct small-h logarithm, separate from the near-region log q.",
+    "E_alpha_gt_1": "Low part <=2^{(alpha-1)(L+1)}/(2^{alpha-1}-1)<2^{alpha-1}h^{1-alpha}/(2^{alpha-1}-1); tail coefficient 1/(1-2^tstar). E_alpha=2^{alpha-1}/(2^{alpha-1}-1)+1/(1-2^tstar) with B_alpha(h)=h^{1-alpha}. Verified.",
+    "K_combined": "K(alpha,a,gamma)=N+F*E, where N=2D_alpha for alpha!=1 and N_1=2D_1[1+1/(e(1-2gamma))] for alpha=1. This is finite at every stated strict tuple and independent of d, nu, C, h and xi.",
+    "K_beta": "For alpha!=1, K_beta=K, because alpha<1 uses 2-a>2beta and alpha>1 uses 3-a-alpha>2beta. For alpha=1, K_beta=K[1+1/(e(2-a-2beta))] because h^delta(1+ln(1/h))<=1+1/(e*delta) with delta=2-a-2beta>0. Verified.",
+    "downstream_C0_C1_A_T": "C0=16/(1-a) is a sufficient constant from the integration-by-parts estimate in L:masked-temporal-modulation. C1=4*3^{1-a}*C0 comes from the squared coefficient bound 4 and the frequency-change bracket factor 3^{1-a} in L:masked-continuous-wave. A_T=C1*(1+T)^4 since for A(t)=t^j, j=0,1,2, (M+hD)^2<=(1+T)^4. Verified analytically.",
+    "C_nu": "C_nu=c_d^2*L_zeta^2*C_Gamma, where L_zeta=||zeta_hat||_1 is invariant under the scaling zeta_R(x)=zeta(x/R). The uniform-in-R ball bound nu_R(B(y,r))<=C_nu*r^alpha follows from P:masked-spectral-growth and ||k_R||_1=L_zeta. Verified.",
+    "C_T": "C_T=4*A_T*K*C_nu for the h^{2-a}B_alpha(h) budget, or 4*A_T*K_beta*C_nu for the h^{2beta} budget. The factor 4 arises from two finite component sums in each Hilbert-Bessel direction. The Fourier constant is internally consistent: c_d^2 enters C_nu and the normalized covariance cancellation uses (2pi)^d*c_d^2=1. The amplitude enters only through C_Gamma=e*M_Gamma/(2sqrt(pi))^d, and the dimension d is retained through c_d^2 in C_T even though the scalar K is dimension-free. All constants are uniform in R, the interval location I, and the orthonormal family size.",
+    "verdict_on_candidates": "No candidate coefficient fails. Each displayed D, N, E, F, K, K_beta and the downstream constants C0, C1, A_T, C_nu, C_T follows from the stated strict parameter rules and the near/far shell algebra. The two distinct logarithms (near log q absorbed by D_1/N_1, and small-h log(1/h) absorbed by E_1) are handled separately. Decimal values in the supplement are diagnostics and are not needed as premises."
+  },
+  "application088_scope_clarification": "The assigned PROOF088 application is: (i) actual noise projection first, E[g_j ell_R(I;z,w)]=<A_j(I)z,w>_E, producing sum_{j<=N}|coefficients|^2<=E|ell_R|^2; (ii) phase Parseval afterwards, using E:wave-input-variance and E:wave-output-variance from PROOF073 to reach the two finite operator inequalities V_out,N<=b_I D_gamma^2 and V_in,N<=b_I D_gamma^2; (iii) the same-W first-chaos column expansions m_{R,I}=sum_j g_j A_j z and n_{R,I}=sum_j g_j A_j^{*,E} z; and (iv) positive congruence through the two actual localizations P_chi a_j=a_j=a_j P_chi to obtain the tail envelopes T_out,N<=b_I B_out and T_in,N<=b_I B_in. Compactness and trace properties of the named PROOF075-084 envelope inputs (B_out/B_in, K_out/K_in) are not newly established merely by referencing their definitions in PROOF088; those remain hypotheses/inputs from the compact-Gaussian module and were not full audited in this supplement. No full PROOF093, whole214, or whole-project certification is asserted.",
+  "actual_scoped_verdict": "The original scoped verdict stands: PROOF061-PROOF074 all reconstruct as CHECKED, and PROOF088's assigned application is MATCHED. The two corrections are returned-report calibration errors, not source or deduction errors, and the requested concrete coefficient audit confirms the explicit D/N/E/F/K/K_beta and downstream constants.",
+  "actual_confidence": "0.8",
+  "actual_confidence_reason": "0.8 remains the raw, unforced value. The corrections are typographical in the returned calibration caption, not in the mathematical chain; the coefficient audit was completed analytically and passed. I do not upgrade confidence because a typo correction does not expand the reading depth already priced into the original value, and the same unread limits remain (no hash recomputation, no pixel verification, PROOF075-084/089-093 not fully audited).",
+  "affected_statuses": [
+    {
+      "target_or_app": "PROOF065",
+      "original_status": "CHECKED",
+      "after_supplement": "CHECKED unchanged; only the input caption is corrected from alpha=d=1 to d=2, alpha=1<d."
+    },
+    {
+      "target_or_app": "PROOF061-PROOF074 excluding PROOF065 caption",
+      "original_status": "CHECKED",
+      "after_supplement": "CHECKED unchanged."
+    },
+    {
+      "target_or_app": "application088",
+      "original_status": "MATCHED",
+      "after_supplement": "MATCHED unchanged; scope clarification appended."
+    }
+  ],
+  "remaining_errors_or_unread_inputs": [
+    "SHA256 and raw-LF byte intervals remain accepted from the map and not independently recomputed (no hashing tool available).",
+    "No PDF pixel/image rendering verification was performed.",
+    "PROOF075-084 compact/trace properties and PROOF089-093 were not fully audited; only their local inputs consumed by PROOF088 were checked.",
+    "The full214-own-proof, full-goal, and whole-project gate remains separate and is not certified here."
+  ],
+  "limitations": "This is an additive factual supplement under the requested schema, not a new independent review or confidence retry. All fourteen original worked rows remain immutable. Decimal floating examples in the supplement were not independently re-run numerically and were not used as premises; the audit verified the analytic inequalities only. No tools, delegation, hashing, image rendering, or external execution were used."
+}

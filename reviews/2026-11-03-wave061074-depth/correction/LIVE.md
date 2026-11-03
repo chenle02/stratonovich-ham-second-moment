@@ -1,3 +1,5 @@
+> TERMINAL: one factual supplement fully root-read; raw confidence0.8 unchanged, no HIGH conversion. See terminal/root-adjudication.md. No reviewer is live. The launch record below is historical.
+
 # One scoped wave factual supplement, not a confidence retry
 
 OriginalactualDeepSeek V4 Pro session ses_e5dbc5178ffeww2PMtkV3pITAS finished

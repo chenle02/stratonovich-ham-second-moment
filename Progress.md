@@ -14,21 +14,27 @@
   committed with the source and matches every reviewed-candidate text page.
   Local/origin/<HUB> source parity is verified; no extra checkout exists.
 
-- **Review scope:** current indexv6/neutralv6 and depth-ledger-v51 bind the
+- **Review scope:** current indexv6/neutralv6 and depth-ledger-v52 bind the
   integrated source:210 exact scoped HIGH,3 earlier editorial deltas,1
   unaccepted current-report row010. These counts are not a completion
   percentage. The earlier complete MAIN report remains ungraded120CHECKED/
   94LIMITED on b4b6efc; the six new scoped results do not rewrite it or clear
   the remaining whole-argument, source-image, render, Kimi or cold gates.
 
-- **Core analytic checks (2026-11-03):** complete49kfoundation/31kvariance
-  authorworking+peerchallengesrootreadandarchived. NewboundedDeepSeek
-  variancepanelreturned14CHECKED/088MATCHED,actualnumericconfidence0.8;
-  noHIGHconversionorlocaladoption. ONEfactualsame-sessioncoefficient
-  supplementisLIVE,PID144011/exec99846. Freshfour-foundation004005006214
-  reviewisLIVE,PID148060/exec11140,source8ce,all11frames/rootprimarynote
-  verified.Combinedoutput131072,noautoret/continuation/unforcedverdicts.
-  Thesemoduleobligationsdonotreplacewhole214/mainHIGH/image/Kimi/cold/goal.
+- **Core analytic checks (2026-11-03):** both new native lineages are
+  TERMINAL and fully root-adjudicated. Fresh DeepSeek foundation004/005/006/214
+  is PASS_WITH_NOTES/high: accept exactly those four deductions plus the
+  assigned canonical fixed-order application on source8ce. No source repair.
+  The variance061–074 panel is14CHECKED/088MATCHED; ONE factual same-session
+  supplement corrects two returned-report captions and supplies the concrete
+  D/N/E/F/K coefficient algebra. Rawconfidence remains0.8, no categorical
+  HIGH conversion or localstate change. Both complete native/input capsules
+  are member-rehashed/secret-scan clear; exact prompt/model/tools0/stop,
+  four source bindings and original wave messageprefix verified. Evidence:
+  reviews/2026-11-03-foundation-four-depth/terminal/root-adjudication.md and
+  reviews/2026-11-03-wave061074-depth/correction/terminal/root-adjudication.md.
+  All28TeX and PDF remain scientific8ce byteexact. No whole MAIN HIGH,
+  primary-image/render/Kimi/cold/goal clearance; no native reviewer is live.
 
 - **Fresh MAIN with four mathematical closures (2026-11-03):** the original
   length stop plus ONE factual same-session public completion are TERMINAL.

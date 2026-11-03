@@ -1,0 +1,235 @@
+{
+  "schema": "fixed-order-foundation-scoped-four-v1",
+  "category": "paper-review-deepseek",
+  "model": "deepseek/deepseek-v4-pro",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "confidence_justification": "I reconstructed the four assigned deductions analytically from the embedded main TeX, the fixed-order-complete-derivation, the integrated_source_convergence module, and the relevant pp.7-21 of the held 64-page author text. All four fixed-order deductions are internally valid in their stated scopes: the damped-norm constants and tail vanishing are correct; the full-line translated covariance Cauchy-Schwarz has the claimed constant one; the compactification/uniqueness/mass-preservation and all boundary-face claims of the spatial Wick-measure limit are correct; and the arbitrary-relative-width joint spatial/temporal diagram limit combines with the same-family retaining-source Cauchy argument to give a valid fixed-order L2 limit. The imported source Theorem3.1 is not re-proved, but its actual per-edge hypotheses (finite positive spectral edge measures with nonnegative physical covariance, Laplace temporal domains, Q1-once/Q2-twice edge assignment) are verified in the application. Residual uncertainty is confined to (a) no numerical/executable verification was possible, (b) the measure-compactness/portmanteau passage and the Green-first limit in dimension three are compressed but reconstructible, and (c) imported Theorem3.1 induction steps remain named imports.",
+  "source_coverage": {
+    "main_file": {
+      "path": "notes/notes_stratonovich_ham_second_moment.tex",
+      "sha256": "364753242f9d02e57036af586ab8e777b184d897862750d3170d79f028067914",
+      "bytes": 356001,
+      "read": [
+        "model anchors E:HAM LF106, E:cov LF113, H:homog LF119, E:threshold LF132, E:expansion LF256, E:damped-norm-definitions LF564",
+        "PROOF004 statement 586-612, proof 614-674",
+        "PROOF214 statement 708-719, proof 721-802, Remark R:source-case2-time-shift 804-900 (qualification context)",
+        "PROOF005 statement 941-957, proof 959-1101",
+        "PROOF006 statement 1103-1112, proof 1114-1198"
+      ],
+      "distinction": "These four bodies were fully read and reconstructed. All other proofs/paragraphs of the file are context-only and were not accepted or used as correctness premises."
+    },
+    "source_module": {
+      "path": "notes/integrated_source_convergence.tex",
+      "sha256": "13f2e0f1ad93bfd1065cdeaf0174cdcab938706e271c190eb040b855cf7dba33",
+      "bytes": 23788,
+      "read": "read for the retaining linear Gaussian family/law and the fixed-auxiliary-isonormal extension; no driver/operator/Young theorem there was used as an extra premise",
+      "status": "CONTEXT_READ"
+    },
+    "worked_derivation": {
+      "path": "mathematics/fixed-order-complete-derivation.txt",
+      "sha256": "e6cdae9d99da1ac7c3fde944b61b6a217cd161a3c4b15ac2725eb3a19d66984b",
+      "bytes": 48840,
+      "read": "read as author reconstruction to be checked against the four proofs, not as a proof certificate",
+      "status": "RECONSTRUCTED"
+    },
+    "primary_author": {
+      "path": "primary/chen-author-full.txt",
+      "sha256": "5a6eff9725bafa36cbaa8c8314661cbac79cc35d1eefa1d148d3b001f02729a2",
+      "pdf_sha256": "5f7385ca451e643a1f3ff31835e4ee52b2708b5d2e3652eec3fb5d3958b97b6c",
+      "read": "pp.7-13 Green/regularization/Wick/Green-first definitions; pp.14-15 Theorem3.1(3.6); p.21 Case2 with the missing A-B offset; pp.22-32 Lemma4.2-4.4 only as context for the printed-vs-local inequality. Other pages remain context/unread beyond navigation.",
+      "status": "READ_RELEVANT_PAGES"
+    },
+    "first_norm_note": {
+      "path": "primary/first-norm-absolute-value-source-note.txt",
+      "sha256": "8bb0e9102570770f23d49abd1220db4e3d0d397835c518ee8bdba0d93f31a464",
+      "read": "treated as author-side pixel-transcription data only; it does not change the imported-application check because the actual damped Green-heat inner Laplace-Fourier transforms are nonnegative, so the first-norm bars are immaterial for these tests",
+      "status": "DATA_NOT_VERIFICATION"
+    }
+  },
+  "proof_coverage": [
+    {
+      "id": "PROOF004",
+      "claim_label": "L:damped-homogeneous-norms",
+      "path": "notes/notes_stratonovich_ham_second_moment.tex",
+      "statement_LF": [
+        586,
+        612
+      ],
+      "proof_LF": [
+        614,
+        674
+      ],
+      "raw_body_sha256": "54a170eba3afe5c50ec8095d92b1c7c89024b904e81cde882cd15bb5c86e24f8",
+      "statement_raw_body_sha256": "38792f3d1721374e6818a238ef3f6d03115fff21b99cd77720a40ee806344a6e",
+      "source_sha256": "364753242f9d02e57036af586ab8e777b184d897862750d3170d79f028067914",
+      "status": "CHECKED",
+      "worked_reason": "Spectral homogeneity via Fourier uniqueness gives mu(cA)=c^alpha mu(A), mu({0})=0, mu(B_r)=V r^alpha. For a>0, integral mu(dxi)/(a^2+|xi|^2) = alpha V a^{alpha-2} integral_0^infty u^{alpha-1}/(1+u^2) du < infinity exactly for 0<alpha<2. N1 finiteness reduces to integral_0^infty lambda^{alpha0-1}(theta+lambda)^{alpha-2} dlambda, finite by alpha0>0 at 0 and alpha+alpha0<2 at infinity. N2 is absolutely integrable by |Ghat_s|<=min(s,|xi|^{-1}): the low-frequency part is V times the double-time integral of e^{-theta(s+t)}|s-t|^{-alpha0} st, and the high-frequency part is alpha V/(2-alpha) times the same integral without st; both split into min/max difference variables with only v^{-alpha0} singular (alpha0<1). Nonnegativity of N2(theta)^2 is the positive Laplace-mixture positive-definiteness in time. Scalings are exact: G_s(R^d)=s so N0(theta)=theta^{-2}; changing lambda=theta u, xi=theta eta gives N1(theta)=theta^{alpha+alpha0-2}N1(1); changing s=u/theta, t=v/theta, xi=theta eta and using Ghat_{u/theta}(theta eta)=theta^{-1}Ghat_u(eta) gives N2(theta)^2=theta^{-beta}N2(1)^2 with beta=4-alpha-alpha0. The tails N1^{(M)}(1), N2^{(M)}(1) are the tails of finite nonnegative integrals, with K_M<=|r|^{-alpha0} and K_M(r)->0 for r!=0, so dominated convergence gives their vanishing. Gaussian/heat multipliers lie in [0,1]; for N2 the time quadratic form is first integrated at fixed xi before removing the spatial multiplier, so the smoothing/truncation non-increase claim is valid.",
+      "input_hypotheses_and_applications": "Hypothesis H:homog only; no all-order/norm-uniformity claim. Supplies the finite scalar first norms A=N1(1), second norms B=N2(1), and marked tails A_M,B_M used in PROOF006 and in the imported Theorem3.1 application.",
+      "remaining_gap": "None at fixed theta and fixed Gamma. The proof gives finite upper envelopes for N1(1),N2(1)^2 rather than sharp equalities; closure depends only on mu(B_1)=V<infinity, alpha0>0, alpha<2, alpha+alpha0<2, which are the stated hypotheses. The first-norm bars (author-side source display) are immaterial here because the inner transforms of damped Green-heat kernels are nonnegative."
+    },
+    {
+      "id": "PROOF214",
+      "claim_label": "L:translated-covariance-CS",
+      "path": "notes/notes_stratonovich_ham_second_moment.tex",
+      "statement_LF": [
+        708,
+        719
+      ],
+      "proof_LF": [
+        721,
+        802
+      ],
+      "raw_body_sha256": "8a187e589582d0c618d281bc1a3ce974a4d0a715a0e2a750692288d465dc2434",
+      "statement_raw_body_sha256": "0f9c57be2ca88d150fef4355ca281f27318e7c87a9caeecb5d7f7fb4a5ca9f33",
+      "source_sha256": "364753242f9d02e57036af586ab8e777b184d897862750d3170d79f028067914",
+      "status": "CHECKED",
+      "worked_reason": "For the capped kernel C_L, the feature h_lambda(t,r)=sqrt(2lambda)e^{-lambda(t-r)}1_{r<=t} gives integral_R h_lambda(t,r)h_lambda(s,r)dr = e^{-lambda|t-s|}. On H_L=L^2((0,L]x R^d x R, nu(dlambda)mu(dxi)dr) the feature Phi_L(t,x)=h_lambda(t,r)e^{i xi.x} has norm squared m_L=nu((0,L])mu(R^d) and inner product C_L((t,x),(s,y)). Bochner integration and Fubini give Q_L(f,h)=<F_L(f),F_L(h)>, so the finite-cap quadratic form is positive and satisfies Cauchy-Schwarz. Simultaneous time-space translation on the full line gives Q_L(T_{A,a}f,T_{A,a}h)=Q_L(f,h) with no origin factor. Applied to the two different translates and their self forms, this yields the capped inequality with coefficient one. The nonnegative unbounded passage uses truncations G_{i,M}=min(G_i,M)1_{0<t<=M,|x|<=M}, monotone convergence for C_L>=0, and then monotone increase in L. No division by a possibly zero norm occurs. The shifted-origin countercheck in the derivation is correct: gamma=1, kappa=e^{-|t|}, test 1_{(0,1)} gives self norm^2=2/e, while shifting one origin by 2 gives cross pairing (e-1)^2/e^3, so replacing kappa(u-v+A-B) by kappa(u-v) would be false; the proved inequality supplies the needed bound without that equality.",
+      "input_hypotheses_and_applications": "Finite positive Borel mu with real nonnegative gamma, positive nu finite on every (0,L]; nonnegative G1,G2 with finite N0,N_C. Applied in the paper only to actual finite smoothed edge measures mu_e=e^{-(eps_j+eps_h)|xi|^2/2}mu and nu_e=1_{A_e}(lambda)lambda^{alpha0-1}dlambda/GammaEuler(alpha0), so the source p21 Case2 predecessor origins are retained and the p14 printed (3.5) repeated-x display is replaced by the independent-spatial-variable self form. The coefficient is exactly ONE: no cap/mass/origin/dimension factor remains.",
+      "remaining_gap": "None mathematical within scope. The source Theorem3.1 Case2 equality on p.21 is qualified (it drops A-B after variable change); we use the independent proved inequality, not that equality. This lemma does not re-prove the rest of the source induction."
+    },
+    {
+      "id": "PROOF005",
+      "claim_label": "L:spatial-wick-measures",
+      "path": "notes/notes_stratonovich_ham_second_moment.tex",
+      "statement_LF": [
+        941,
+        957
+      ],
+      "proof_LF": [
+        959,
+        1101
+      ],
+      "raw_body_sha256": "d7820cfa105715b1b7fd5a3150d6fbb9b3297e6926f72d9a7edc66e3fbd6857c",
+      "statement_raw_body_sha256": "1ca912122f792f3ba2482da840bcc02a62981ff0ed75dc8513d3900904f787cb",
+      "source_sha256": "364753242f9d02e57036af586ab8e777b184d897862750d3170d79f028067914",
+      "status": "CHECKED",
+      "worked_reason": "The Laplace transforms L_{eps,D}(lambda) are computed via the wave Laplace identity integral_0^infty e^{-ar}G_r(dz)dr having Fourier transform (a^2+|xi|^2)^{-1}; this is correct and accounts for every factor 1/((1+lambda_l)^2+|eta_l(xi)|^2). The heat bound 0<=(p_t*gamma_b)(x)<=A t^{-alpha/2}, A=alpha V integral_0^infty u^{alpha-1}e^{-u^2/2}du=2^{c}V GammaEuler(1+c) with c=alpha/2, is verified by Fourier triangular/radial integration. The Brownian occupation moment bound (2j)![A Gamma(1-alpha/2)]^j T^{(2-alpha/2)j}/Gamma((2-alpha/2)j+1) is valid: iterate last-remaining-vertex elimination conditional on the other remaining observations (never conditioning on the eliminated future vertex), each selected gap u_h-u_v >= the original adjacent gap Delta_h, and the j selected gaps have Dirichlet exponent 1-alpha/2; the (2j)! chronological orderings give the stated numerator. The white calibrations match: E S_0(T)=8/(3sqrt(2pi))T^{3/2} and E S_0(T)^2=(11/9)T^3, with chronological sequential/nested/crossing values T^3/12, T^3/24, T^3/36 each counted eight times. The wave-to-heat identity, the inserted horizon identity 1=(1/4)integral_{tau1}^{infty}integral_{tau2}^{infty}e^{-((a-tau1)+(b-tau2))/2} da db, the two-path occupation factorization and spectral Cauchy-Schwarz C12<=sqrt(S1 S2) give the uniform mass bound U_k=2^{-2k-2}[integral_0^infty e^{-t/2}M_k(t)dt]^2 < infinity, totally independent of spatial widths. The compactification y_l=e^{-r_l}, Bernstein-polynomial moment uniqueness, and continuity at lambda=0 exclude any mass on the y-zero/infinity faces; full-mass continuity shows bar nu_D{all y_l>0}=L_D(0). Coordinate-zero faces are excluded by one-sided lambda_l->infty; the rho_D homogeneity c^{(4-alpha)k} is exact via G_{cr}(c dz)=c G_r(dz), gamma_b(cx)=c^{-alpha}gamma_{b/c^2}(x), and 2k time Jacobians. Dilation argument proves rho_D{l_i=T>0}=0; an empty chain has l_empty=0 with the whole measure on that level and an empty positive-T face, and this is not declared null.",
+      "input_hypotheses_and_applications": "Hypothesis H:homog, 0<alpha0<1, 0<alpha<d or alpha=d=1, alpha0+alpha<2; d1 white and d3 sphere Green measures both covered. Provides the finite spatial measures rho_D/nu_D and the finite-horizon convergence E:spatial-wick-limit that PROOF006 uses.",
+      "remaining_gap": "The portmanteau/compact-cutoff passage from the finite cube to [0,infty)^{2k} is compressed but is justified by the controlled vanishing tail masses near y=0. This is a reading-compression issue, not a mathematical defect. Gamma=0 gives zero diagrams directly rather than through division by V or A."
+    },
+    {
+      "id": "PROOF006",
+      "claim_label": "L:joint-fixed-order",
+      "path": "notes/notes_stratonovich_ham_second_moment.tex",
+      "statement_LF": [
+        1103,
+        1112
+      ],
+      "proof_LF": [
+        1114,
+        1198
+      ],
+      "raw_body_sha256": "0181e896a913b722c6ffaa07da1d813eb6272e9be0f20515a6583afdc3bd33b6",
+      "statement_raw_body_sha256": "7700f951f0160ce544a94a497b3cfc6c4e2ffaf28f154803f5daac47126aeeed",
+      "source_sha256": "364753242f9d02e57036af586ab8e777b184d897862750d3170d79f028067914",
+      "status": "CHECKED",
+      "worked_reason": "F_{eps,delta,D} at common temporal width eta has a bounded continuous multiplier and obtains its spatial limit b_D(eta) from E:spatial-wick-limit. The temporal remainder F_{eps,0,D}-F_{eps,eta,D} is decomposed by the difference-of-products inequality into k marked integrals with one K_{1/eta} factor and k-1 full factors. Applying the imported Theorem3.1 to e^{-s}G_s (Green-heat in d3, temporal caps temporary), with finite Gaussian-weighted edge measures mu_e and Laplace interval domains, each unmarked first-type edge contributes <=2A, each unmarked second-type edge B^2; taking H=max(1,2N1(1),N2(1)^2) gives the uniform bound 0<=F_{eps,0,D}-F_{eps,eta,D} <= k exp(T1+T2) H^{k-1}(2A_{1/eta}+B_{1/eta}^2), whose right side is independent of spatial widths and of the temporary caps/Green width and tends to zero as eta->0. The temporary upper caps are removed by positivity and the Green smoothing at fixed positive spatial widths by weak Green convergence against the bounded covariance products and the integrable full time-cube majorant; the bound survives both passages. Hence b_D(eta) is monotone, Cauchy, with limit b_D, and for any vertexwise temporal widths below eta the sandwich F_{eps,eta,D}<=F_{eps,delta,D}<=F_{eps,0,D} plus the remainder gives the joint spatial/temporal arbitrary-relative-rate limit. For two copies Y_n^a,Y_n^b at the same T,x, reversal to two separate roots (each chain with its own root; sign changes absorbed by evenness; relabeling bijects pairings) makes every diagonal and off-diagonal diagram converge to the same finite value Q_n. Then ||Y_n^a-Y_n^b||_2^2 -> Q_n+Q_n-2Q_n=0; completeness gives the unique joint L2 limit, with Green-first ordering in d3 and common-width restriction equal to the multiple Stratonovich integral S_n(g_n).",
+      "input_hypotheses_and_applications": "Uses PROOF005 spatial measures, PROOF214's locally-proved Case2 covariance input, PROOF004's norm/tail controls, and the imported held Theorem3.1(3.6) only after checking its finite-edge-measure/nonnegative-physical-covariance/Laplace-domain hypotheses. Data (1,0) gives Y0=1; unequal and empty chains, self-pairings and cross-copy moments are all included. No all-order series, Section5 convergence, Theorem4.1/Lemma4.4, or PDE uniqueness is used.",
+      "remaining_gap": "The source Theorem3.1 induction steps other than Case2 remain named imports; the fixed-auxiliary-isonormal retaining extension is used for the common family but stronger sigma(W)-measurability is not claimed or required. All convergence is qualitative at each fixed order/horizon/Gamma; no rate uniform in k,T or covariance is asserted."
+    }
+  ],
+  "application_checks": [
+    {
+      "item": "actual terminal g_n and data (1,0)",
+      "conclusion": "g_n is the original ordered kernel in E:expansion with s_{n+1}=t, x_{n+1}=x, G the wave fundamental solution, and [0,t]^n_< the ordered simplex. After reversal, the two-chain diagrams use separate roots (s,x)=(0,0) in each chain; the second chain does not continue the first. Y0=1 corresponds to data (1,0), and an empty chain contributes factor one.",
+      "status": "CHECKED"
+    },
+    {
+      "item": "positive-width Bochner existence",
+      "conclusion": "For fixed positive vertex widths, the terminal chain measure has total mass T^{2n}/(2n)!, and the Gaussian product of n field values has L2 norm <= sqrt((2n-1)!!) V_*^{n/2}; this gives the Bochner bound ||Y_n||_2 <= sqrt((2n-1)!!)V_*^{n/2} T^{2n}/(2n)!. Existence does not require V_* to be width-uniform.",
+      "status": "CHECKED"
+    },
+    {
+      "item": "Green-FIRST source convention",
+      "conclusion": "In dimension 3 each Green measure is replaced by p_eta*G at fixed positive noise widths. Weak convergence of the smoothed Green products (same masses) against bounded continuous Wick covariance products gives the inner L2 Green limit before any noise width is removed, exactly the pp.13-14 ordering.",
+      "status": "CHECKED"
+    },
+    {
+      "item": "same fixed retaining source law",
+      "conclusion": "The integrated_source_convergence module realizes the law Cov(Y_{eps,eta}(t,x),Y_{eps',eta'}(s,y))=K_{max(eta,eta')}(t-s)Gamma_{eps+eps'}(x-y) on one fixed extension with I(Phi h)=W(h), using the fixed auxiliary isonormal J on the orthogonal complement. Spatial widths add, temporal widths take max. Lengths are NOT independently resampled, so the L2 Cauchy assertion is meaningful. The original W is retained literally; cutoff fields may use J and are not asserted to be sigma(W)-measurable.",
+      "status": "CHECKED"
+    },
+    {
+      "item": "arbitrary-relative-width L2 Cauchy",
+      "conclusion": "Using the off-diagonal joint covariance, both diagonal moment sequences and the mixed two-copy moment sequence converge to the same finite sum Q_n=sum_{D in Pi_n} b_D; therefore ||Y_n^a-Y_n^b||_2^2 -> Q_n+Q_n-2Q_n=0. Matching marginal moments/laws alone would not suffice, and the argument does not take that shortcut.",
+      "status": "CHECKED"
+    },
+    {
+      "item": "self/unequal/empty chains and Gamma0",
+      "conclusion": "All pair partitions of Pi_k, including self-pairings, unequal chain lengths and empty chains, are included with their own roots. Empty-chain horizon ell_empty=0 carries the whole measure and is not declared null; the positive-T face for the empty chain is empty. Gamma=0 makes every positive-order spatial/time diagram and every positive-order term zero, with X0=1.",
+      "status": "CHECKED"
+    },
+    {
+      "item": "amplitude/singular/white preservation",
+      "conclusion": "Every diagram retains exactly k covariance factors, has degree k in the original amplitude, and no variance renormalization is introduced. Singular spatial/spectral/angular measures are handled by finite smoothed edge measures e^{-(eps_j+eps_h)|xi|^2/2}mu with nonnegative physical covariance gamma_e; the d1 white endpoint and the d3 sphere Green measures are both admitted. Only fixed-order conclusions are drawn; no all-order/whole-paper inference is made.",
+      "status": "CHECKED"
+    }
+  ],
+  "primary_source_checks": {
+    "edition": "Held 64-page author manuscript 'Submitted to the Annals of Applied Probability', PDF SHA256 5f7385ca451e643a1f3ff31835e4ee52b2708b5d2e3652eec3fb5d3958b97b6c, text SHA256 5a6eff9725bafa36cbaa8c8314661cbac79cc35d1eefa1d148d3b001f02729a2.",
+    "source_displays": {
+      "(2.11)": "common source law with spatial-width sum and temporal-width max: conforms to the retaining family and to the max/sum usage in PROOF006.",
+      "(2.13)-(2.16)": "ordered terminal g_n with data (1,0) and s_{n+1}=t, x_{n+1}=x: matches E:expansion.",
+      "(2.19)": "finite Wick formula with coefficient one per pairing including self-pairs within a chain: matches usage.",
+      "(2.23)-(2.24)": "common-width regularization gamma_delta^0, gamma_epsilon; Green-first convention is verified for d=3 at pp.13-14."
+    },
+    "theorem_3_1_application": {
+      "actual_finite_edge_measure": "edge e uses mu_e(dxi)=e^{-(eps_j+eps_h)|xi|^2/2}mu(dxi), finite by mu(B_r)=V r^alpha; physical covariance gamma_e=p_{eps_j+eps_h}*Gamma is nonnegative.",
+      "temporal_domain": "prefix [0,L], full (0,infty), or marked tail (1/eta,L] with nu_e=lambda^{alpha0-1}dlambda/GammaEuler(alpha0); each is finite on every (0,L].",
+      "edge_assignment": "each edge occurs ONCE in the Q1 first-norm product or TWICE in the Q2 second-norm product, never both, so #Q1+#Q2/2=k; this matches the source statement and the marked H^{k-1}(2A_M+B_M^2) bound.",
+      "truth_vs_application": "the theorem itself remains imported; its application is verified from the actual per-edge hypotheses rather than from the theorem's truth alone."
+    },
+    "printed_qualifications": {
+      "(3.5) p.14": "the printed second-norm display repeats x in its second Green factor; the locally-proved 214 uses independent spatial variables x,y, hence an independent-variable quadratic form. This is the independent-origin justification, not a literal quotation of the misprinted display.",
+      "Case2 p.21": "the printed equality after time-variable change displays kappa(u-v), dropping the predecessor-offset A-B; the actual integral retains the origins and 214 proves the required bound with coefficient one. Only the proved local inequality is used.",
+      "first-norm(3.4) bars": "the author-side pixel note says the bars enclose the inner transform; for the actual damped Green-heat tests this inner transform is nonnegative, so the displayed norm and the integrand without absolute bars agree; the note changes nothing in the scoped conclusions."
+    }
+  },
+  "finite_and_boundary_checks": {
+    "brownian_white_values": "j1 E S_0(T)=8/(3 sqrt(2pi)) T^{3/2}; j2 E S_0(T)^2=(11/9)T^3. The chronological j2 pair types are sequential T^3/12, nested T^3/24, crossing T^3/36; each of the three types occurs 8 times in the fully labeled cube, totaling 8(1/12+1/24+1/36)T^3=11T^3/9. These are finite-order calibration calculations, not whole-path or all-order claims.",
+    "k1_cross_self_masses": "d1 white Gamma=c_w delta_0: cross-pair mass is c_w min(r1,r2)/2 with damped integral c_w/4; empty-plus-length-two self-pair mass is c_w r1/2 with damped integral c_w/2; the empty chain has l_empty=0 on the whole mass, not null.",
+    "marked_norm_powers": "N1(theta)=theta^{alpha+alpha0-2}N1(1); N2(theta)^2=theta^{-(4-alpha-alpha0)}N2(1)^2; full damped time integrals I0(theta,alpha0)=GammaEuler(1-alpha0)theta^{alpha0-2}, Ist(theta,alpha0)=(2-alpha0)GammaEuler(1-alpha0)theta^{alpha0-4}/2; marked first tail A_M->0 and second tail B_M->0. The second-type marked edge contributes B_M^2, not B_M, because the same edge is used in both second norms; the first-type factor is the source factor 2A_M.",
+    "shifted_origin_test": "For kappa=e^{-|t|}, gamma=1, and test 1_{(0,1)}, each self norm squared is 2/e; shifting one time origin by 2 gives cross pairing (e-1)^2/e^3, correctly below the Cauchy-Schwarz bound 2/e, while deleting the origin difference would give the false value 2/e. Coefficient one is sharp for equal origins/tests.",
+    "boundary_faces": "coordinate-zero faces r_l=0 have zero nu_D/rho_D mass; positive horizon faces l_i=T>0 have zero rho_D mass by disjoint dilation and local finiteness. An empty chain has l_empty=0 with the entire pushforward mass and empty positive-T face; the limit boundary density is distinguished from a face atom and is not declared null. The homogeneity rho_D(cA)=c^{(4-alpha)k}rho_D(A) is for the UNDAMPED measure; nu_D=e^{-sum r_l}rho_D is not homogeneous.",
+    "damped_vs_undamped": "the damped nu_D is finite and used for compactification/weak convergence; rho_D is locally finite and carries the exact spatial homogeneity. No pointwise density vanishing is assumed from the white example (the self density can stay positive up to r=0 while the face has zero measure)."
+  },
+  "constant_and_limit_audit": {
+    "damped_norms": "N0(theta)=theta^{-2}; N1(1)=R_alpha GammaEuler(2-alpha-alpha0)/GammaEuler(2-alpha), R_alpha=alpha pi V/[2 sin(pi alpha/2)]; N2(1)^2 <= V GammaEuler(1-alpha0)[(2-alpha0)/2 + alpha/(2-alpha)]. All dependencies are fixed order, fixed theta, fixed Gamma.",
+    "U_k": "U_k=2^{-2k}[sum_{j=0}^k binom(k,j)(2j)![2^{2-c}A GammaEuler(1-c)]^j]^2 with c=alpha/2. It is finite at fixed k, uniform in spatial widths, but may grow arbitrarily fast in k; no k-uniform control is asserted.",
+    "marked_E_eta": "0<=F_{eps,0,D}-F_{eps,eta,D} <= k exp(T1+T2)H^{k-1}(2A_{1/eta}+B_{1/eta}^2), H=max(1,2N1(1),N2(1)^2); right side is independent of vertex widths, temporary caps and Green widths and vanishes as eta->0. Dependencies are fixed k,T1,T2,Gamma; no width-uniform rate is invented.",
+    "specific_colors_consistency": "the finite-order checks above reproduce the author's claimed constants: sequential/crossing/nested white j2 values, total 11T^3/9, cross/self k1 masses c_w/4 and c_w/2, and GammaEuler(1-alpha0) powers in N1/N2, all consistent with the canonical amplitude and Brownian generator Delta/2 wave-to-heat factors 1/2.",
+    "no_invented_rates": "only fixed-order, fixed-horizon qualitative convergence is claimed; there is no order/horizon/covariance-uniform convergence rate anywhere in scope."
+  },
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      {
+        "locator": "PROOF005, portmanteau/compact-cutoff passage to [0,infty)^{2k} in lines 959-1101",
+        "effect": "The passage is compressed but is completed by the zero limiting mass of the y-zero faces and bounded continuous cutoffs; not a defect.",
+        "repair": "none required"
+      },
+      {
+        "locator": "PROOF005 Brownian occupation bound and PROOF006 marked remainder display",
+        "effect": "The main proof displays H-absorbed constants (C_{k,T1,T2}) while the explicit H^{k-1}(2A_M+B_M^2) and U_k are in the derivation; the two are consistent but require cross-reading.",
+        "repair": "none required"
+      },
+      {
+        "locator": "imported Theorem3.1 induction steps other than Case2",
+        "effect": "Remain named imports. This is permitted by the assignment; their actual per-edge hypotheses are verified, but their full induction is not independently re-proven here.",
+        "repair": "none required within the stated scope"
+      }
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "No program execution, network, numerical integration, or second-opinion check was used; verification is analytic reconstruction from the embedded mathematics.",
+    "No closed-form sharp values for N1(1), N2(1)^2 or the marked constants are needed; finite upper envelopes suffice for the fixed-order statements, and this is all the proofs claim.",
+    "All convergence is qualitative at each fixed total order, fixed horizons T1,T2, and fixed Gamma; no rate uniform in k, t, or covariance shape is stated or verified.",
+    "The source Theorem3.1 induction (beyond the locally-proved Case2/214 entry) is imported, not re-proven; source Theorem4.1, Lemma4.4, and Section5 series/PDE uniqueness are excluded and were not used.",
+    "The retaining-source cutoffs may use a fixed auxiliary isonormal J on the extension; the results do not claim each cutoff, or the limit object, is sigma(W)-measurable, and this stronger claim was not imposed.",
+    "The primary page binding and PDF hash are text/PDF identifiers; the glyph image layer itself was not independently rendered, and no primary-image/manuscript-render/other-family/Kimi/cold/project-completion credit is taken.",
+    "No all-order series, target-upper source4.1/4.4, Section5 solution convergence, PDE uniqueness, whole-214, mainHIGH, image/render/other-family, or goal clearance is asserted."
+  ]
+}

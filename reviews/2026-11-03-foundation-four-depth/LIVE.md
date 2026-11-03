@@ -1,3 +1,5 @@
+> TERMINAL: PASS_WITH_NOTES/high; root bounded acceptance is in terminal/root-adjudication.md. No reviewer is live. The launch record below is historical.
+
 # Scoped fixed-order foundation004005006214 review
 
 OnefreshactualDeepSeek V4 Pro invocation starts18:17:42.685985UTC on
