@@ -1,0 +1,48 @@
+{
+  "schema": "subscription-review-report/1",
+  "category": "paper-review-deepseek",
+  "model": "deepseek/deepseek-v4-pro",
+  "verdict": "PASS",
+  "confidence": "high",
+  "confidence_justification": "This correction concedes two imprecisions in my returned explanations while the underlying deductions remain fully proved. (i) My earlier phrase 'globally bounded by local Radon mass' was an insufficient justification: local Radon finiteness alone gives only local-in-x bounds, as the discriminator (1+|x|^2)dx shows. The correct input is PROOF128 applied to the actual compact spacetime control, whose internal global step is the Gaussian envelope of PROOF127 built on the positive spectral Radon measure mu of Hypothesis H:homog; the discriminator fails positive-definiteness/positive spectral measure and is outside the class, so no source conclusion is affected. (ii) My earlier sentence 'v_Psi_n -> M_a B_Gamma(z,z) = (M_a/2)B_Gamma(z,z) after the half action' conflated the raw variance limit with its half. The raw variance limit is M_a B_Gamma(z,z), the half action used in the score is (M_a/2)B_Gamma(z,z); source 117/136 uses the full raw variance and divides by two only inside the score. Both were returned-explanation errors, not manuscript defects. All original target and join judgments (SC136, SC137, endpoint control, raw-cost positivity, unmasked Rayleigh domain, spatial dilation/optimization, finite-before-rough, FINITE values) remain proved, with the same named-input reading limits and no changed grade.",
+  "source_coverage": [
+    "PROOF136 statement L45-59 and proof L61-110 (notes/integrated_spatial_occupation.tex): read and re-derived.",
+    "PROOF137 statement L112-124 and proof L126-170 (notes/integrated_spatial_occupation.tex): read and re-derived.",
+    "PROOF133 L9-18/L20-33 and PROOF134 L35-49/L51-101 (Gamma/Beta identities, exact temporal potential, mass, endpoint Beta values): read and re-derived.",
+    "PROOF127 L23-35/L37-70 (Gaussian envelope from positive spectral measure mu): read; now correctly identified as the specific input supplying the uniform-in-x bound.",
+    "PROOF128 L72-82/L84-108 (global regularity applied to compact spacetime controls): read; identified as the direct boundedness input for U_z through the control Psi=c f z/k_f(s0).",
+    "PROOF129 L110-125/L127-186 (unmasked real H1 Rayleigh rate, positivity via 118): read and applied.",
+    "PROOF118 L514-525/L527-574 (common negative trial with alpha<2): read as the positivity source inside 129.",
+    "PROOF117 L445-472/L474-512 (actual mean and raw variance v_Psi): read; used for the full raw variance and its positivity.",
+    "PROOF130 L190-201/L203-249 (monotone mask removal, smooth chi): read; used for the chi cutoff shape and the point-lower finiteness input.",
+    "PROOF132 L305-319/L321-375 (positive finite S1pos): read; finiteness/positivity/c-homogeneity checked.",
+    "PROOF135 L13-23/L25-37 (physical two-point B_Gamma pairings): read and applied.",
+    "PROOF051 T:full-upper statement L6595-6611 and proof structure: read as the independent finiteness input; internal dyadic estimates not re-derived line-by-line.",
+    "supplements/complete-worked-mathematics.txt, finite-check.py, finite-results.json: read and recomputed."
+  ],
+  "checks": [
+    {
+      "claim": "COR-GLOBAL-BOUND-INPUT",
+      "reason": "Conceded: 'globally bounded by local Radon mass' is not a sufficient argument. Local finiteness of a positive tempered Radon measure gives only uniform bounds on compacts, not uniform in x. The discriminator Gamma0=(1+|x|^2)dx is positive tempered Radon with finite local masses, but for nonnegative nonzero compact z the convolution Gamma0*z grows polynomially at infinity. It is not a contrad model: its distributional Fourier transform is (1-Delta)delta0, a signed distribution, so Gamma0 is not positive-definite with a positive spectral measure, and it is not homogeneous of degree d-alpha; hence it lies outside Hypothesis H:homog and does not falsify the source. Correct mechanism: in PROOF136 the mean at s0 equals h_{Psi,s0} for the compact spacetime control Psi(t,x)=c f(t) z(x)/k_f(s0); PROOF128 (global regularity), valid for this exact control, gives 0<=h_{Psi,s}<=M uniformly in x, so ||U_z||_inf=(1/c)h_{Psi,s0}<infinity. The internal global step of 128 is the Gaussian envelope 127: for each mixed derivative DPsi of compact support one has |DPsi(t,x)|<=C_D p_eps(x) pointwise (the centered heat kernel has a positive minimum on the common compact spatial support and stands above DPsi=0 elsewhere); then Gamma*|DPsi(t,.)|(x)<=C_D (Gamma*p_eps)(x)=C_D int e^{i xi x} e^{-eps|xi|^2/2} mu(dxi), and because mu>=0 the absolute value of the oscillatory factor is bounded by one, giving uniformity in x: |(Gamma*p_eps)(x)|<=int e^{-eps|xi|^2/2} mu(dxi)=(Gamma*p_eps)(0)<infinity (temperedness of mu makes the Gaussian weight integrable; strict positivity at zero uses Gamma!=0 and p_eps>0). Thus the global bound uses positivity + positive spectral measure, not mere local Radon mass. The three ingredients stay separate: boundedness gives finiteness lambda_z(c)^2<=c||U_z||_inf; positivity of the rate for every c>0 is independent via 129/118 using C_Gamma L^{-alpha}-D L^{-2}>0 (alpha<2); the positive square-root floor on [c0,1] uses Lambda(c)>=Lambda(c0)=lambda_z(c0)^2>0 and monotonicity. No source defect; only the earlier returned phrasing was a shortcut/error.",
+      "verdict": "PASS"
+    },
+    {
+      "claim": "COR-VARIANCE-HALF-ACTION",
+      "reason": "Resolved as two distinct quantities. Raw variance: v_{Psi_n}=E[W(Psi_n)^2]=B_Gamma(z,z)*int_0^1 int_0^1 f_n(s)f_n(t)|s-t|^{-a} ds dt = B_Gamma(z,z)*int_0^1 f_n(s)k_n(s) ds, and by monotone convergence (the nonnegative time integrand f_n(s)k_n(s) increases to f_a(s) a.e. interior; the displayed symmetric double integral contains both orderings, so no extra factor 2 or 1/2) this tends to M_a B_Gamma(z,z)>0. Half action: v_{Psi_n}/2 tends to (M_a/2)B_Gamma(z,z). These two limits are not equal; only the half appears in a score. Source 117/136 compute and use the full raw variance v_{Psi_n}; the factor 1/2 enters exclusively through the score inequality S1pos>=I_{Psi_n}-v_{Psi_n}/2. Re-deriving the static score: for every fixed n, S1pos (a supremum over the full positive-control class) majorizes I_{Psi_n}-v_{Psi_n}/2; I_{Psi_n}->lambda_z(1) and v_{Psi_n}/2->(M_a/2)B_Gamma(z,z), so S1pos>=lambda_z(1)-(M_a/2)B_Gamma(z,z), with no monotonicity of the score differences required since both components converge separately. In PROOF137, z=theta(U_ell g)^2 gives B_Gamma(z,z)=theta^2 ell^alpha A (the full raw-variance factor). The cost term actually entering the 136 inequality is (M_a/2)B_Gamma(z,z). With ell^2=uL^2/b and theta=(1+u)L^2/(ell^alpha A): (M_a/2)B_Gamma(z,z)=(M_a/2)theta^2 ell^alpha A = M_a(1+u)^2 L^4/(2 ell^alpha A) = M_a(1+u)^2 L^{4-alpha}/(2 u^{alpha/2} R(g)) = C(u)L^q. Hence C(u)=M_a(1+u)^2/(2 R(g) u^{alpha/2}); the denominator 2 is exactly the half action. At u*=alpha/q one has 1+u*=4/q and the constant reconciles: q^q C = M_a/(2R)*q^q*(16/q^2)*(q/alpha)^{alpha/2} = 8 M_a q^{q-2+alpha/2}/(R alpha^{alpha/2}) = 8 M_a q^{q/2}/(R alpha^{alpha/2}), using q+alpha/2-2=q/2 (q=4-alpha). This confirms the constant 8 and shows the earlier report sentence '=(M_a/2)B_Gamma(z,z) after the half action' was imprecise returned wording, not a manuscript defect.",
+      "verdict": "PASS"
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": []
+  },
+  "required_repairs": [],
+  "limitations": [
+    "Two corrections are to my returned explanations, not to the manuscript: (1) the uniform global bound of U_z is supplied by PROOF128 via the PROOF127 Gaussian envelope on the positive spectral Radon measure mu, not by local Radon finiteness alone; (2) the raw variance limit M_a B_Gamma(z,z) is distinct from the half action (M_a/2)B_Gamma(z,z), with only the half entering the score.",
+    "Every original target and application judgment remains proved: SC136 (static control inequality, Lipschitzness with positive floor), SC137 (positive finite smooth ratio and the constant 8M_a q^(q/2)/R alpha^(alpha/2)), temporal endpoint control, raw-cost positivity via same-W/autocorrelation/origin-ball scaling, unmasked Rayleigh domain, spatial dilation/optimization, and finite-before-rough via preexisting S1pos in PROOF132.",
+    "Named inputs PROOF051, PROOF130, PROOF131 are consumed with their stated hypotheses; their full internal dyadic/transfer estimates were not independently re-derived line-by-line.",
+    "No PROOF138/139 premise is used in the two targets; S1pos remains an auxiliary positive-control score, not an actual first-moment or Chen constant.",
+    "Whole214, source-image, render, Kimi, and final independent cold-review clearances remain withheld; scope is limited to PROOF136/137 and their named local inputs."
+  ]
+}

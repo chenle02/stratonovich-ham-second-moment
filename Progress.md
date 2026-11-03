@@ -14,8 +14,8 @@
   committed with the source and matches every reviewed-candidate text page.
   Local/origin/<HUB> source parity is verified; no extra checkout exists.
 
-- **Review scope:** current indexv6/neutralv6 and depth-ledger-v38 bind the
-  integrated source:187 exact scoped HIGH,3 earlier editorial deltas,24
+- **Review scope:** current indexv6/neutralv6 and depth-ledger-v39 bind the
+  integrated source:189 exact scoped HIGH,3 earlier editorial deltas,22
   unaccepted lower-depth/current-report rows. These counts are not a completion
   percentage. The earlier complete MAIN report remains ungraded120CHECKED/
   94LIMITED on b4b6efc; the six new scoped results do not rewrite it or clear
@@ -12659,3 +12659,25 @@ rearrangement. Root must finish all mathematical adjudication before spending
 one corrective call; this failure to batch the full finding set is a durable
 application lesson for the existing canonical rule. Whole-main/source-image/
 full-render/Kimi/fresh-cold/wiki/private-delivery requirements remain open.
+
+
+### Actual temporal controls and smooth spatial ratio adopted at scoped HIGH
+
+The complete136/137 DeepSeek V4 Pro report is PASS/HIGH, all8checks PASS.
+Root read every deduction, input and reading limit, then batched the full
+factual correction set: global boundedness needs128/127 rather than local
+Radon mass alone, and raw variance must stay distinct from half action.
+One same-session correction reconstructs both correctly, retains every
+scientific judgment PASS/HIGH and requests no source repair. Root records
+a harmless norm-shorthand slip and8identical duplicate verdict keys in the
+immutable original, not extra votes or conflicting grades. All74+12native
+members, actual route/input/tools0/stop/message prefix and current bodies
+are verified. No manuscript/PDF/Lean change or further continuation.
+
+Ledgerv39 newly accepts136/137:189scopedHIGH,22unaccepted lower-depth/current
+report rows and3editorialdeltas.010's separate factorial-report obligation
+remains open. Full source/visual/render/Kimi/cold/wiki/private gates remain.
+Canonical learning follow-upd564781 now requires complete adjudication and
+batching all critical findings before one factual correction; runtime search/
+projection/strictbudget and <HUB> parity passed, unowned WIP unchanged.
+The lesson was applied here without another source or reviewer-family change.

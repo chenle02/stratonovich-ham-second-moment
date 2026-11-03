@@ -23,3 +23,10 @@ were backed up and verified byte-for-byte unchanged, with their index intent
 preserved and excluded from the commit. Canonical/local/origin/<HUB> HEAD
 parity was independently verified after push. No mathematical manuscript,
 provider route, public research release or review requirement changed.
+
+Follow-up canonical commitd564781d58531369c19fb600b916224c25e541bb adds the
+verified complete-findings-before-correction rule after calibration010's
+remaining normalization error. Retrieval/exact runtime bodies/strict budget
+passed and canonical/local/origin/<HUB> parity is verified. The three
+foreign dirty skills and untracked earlier retro remain byte-exact and were
+excluded. This is an update of the existing review rule, not another skill.
