@@ -6,6 +6,22 @@
 
 ## Current state
 
+
+- **Themed MAIN A.pilot READY (2026-11-03):** the exact nine-proof/fifteen-
+  declaration/fourteen-obligation full-context packet is built and frozen,
+  not yet invoked. All70required source/primary/math/map frames and original
+ 214/240/28/13 program remain. Root read actual instructions, current source,
+ 010working and all report requirements; separate author1235checks plus9
+  meaningful refusal controls pass. Matching --pure native preflight verifies
+  exactDeepSeekV4Pro/boundedagent/all12toolsfalse/compactionfalse/share disabled.
+  The initial non-pure diagnostic is preserved and explicitly not matching;
+  this was a missed existing startup-flags rule, fixed before any provider call.
+  Carrier a2c04425187ae4a97f509723a0b79176eccb6e55, prompt9f5861b5,
+  conditional932630/head115946 with196608combined output. Root authorizes
+  ONE fresh native invocation after this READY checkpoint is committed.
+  No report/math/grade/image/Kimi/cold/goal credit. Evidence:
+  reviews/2026-11-03-main-af97-theme-I-A-pilot/.
+
 - **Current af97 whole MAIN and next work (2026-11-03):** one fresh DeepSeek
   V4 Pro session plus ONE factual same-session public-record supplement are
   TERMINAL and the lineage is closed. Actual INCONCLUSIVE/low; the completed
@@ -13440,3 +13456,38 @@ unproved until actual working exists. Preserve every substantive calculation,
 limitation and original goal. Ledger54/localstates/source/PDF unchanged; all
 Kimi/image/fullvisual/freshcold/private delivery requirements remain open.
 Evidence: reviews/2026-11-03-af97-themed-main-plan/.
+
+
+## 2026-11-03: A.pilot actual construction, preflight and source seal
+
+The prospective program now has a concrete76frame/2104780byte packet, exact
+prompt9f5861b5e1ee625e731d36870089ac7bcb60f6339826452ff4d8a327eb6befe8.
+All70retained payloads match old immutable bytes, including seven primary texts
+with no finalLF. New prefix AND effectiveagent replace old214-call instructions;
+actualowned001003004005006007008010214, exact15formal and14semantic obligations,
+nojoins. Exact-ID/schema/application/status validation rejects24producer and9
+separate-author negative cases; correct allLIMITED records are mechanically valid,
+not accepted mathematics. Full new010working/25finite checks remain substantive.
+
+Producer535 and separateauthor1235 readiness checks plus root actual-frame/source/
+contract reading passed. Every new/changed byte, all76wrappers and full config/
+agent/runtime drafts are charged without deletion credit:603973+82897+196608+
+16384+32768=932630, head115946. Failed chars/2 estimates stay preserved; actual
+future tokenization/depth/final synthesis capacity are not promised.
+
+Root initially omitted --pure from the local agent/config diagnostics. Those
+showed34disabled plugintools and are preserved as NONMATCHING, never provider
+reading. Matching --pure diagnostics show12disabledtools, exactmodel/agent,
+compactionfalse/share disabled. Both kept all77carrier files unchanged; raw global
+configuration was captured only in anonymous regular files, selected safe fields
+persisted. Existing phase-probe-must-share-run-startup-flags rule was missed and
+then applied, not replaced by a new skill. Localcode/version1.18.31/f9dab322
+supports the configured cap; no actual provider guarantee is inferred.
+
+The source-only carrier Git seal a2c04425187ae4a97f509723a0b79176eccb6e55 is
+separate from scientificaf97; no Articleclone/worktree was created. Its global
+format hook reported all29Tex alreadyformatted; root replayed all76payload hashes
+and all28af97blobs AFTER commit. Clean77file seal holds. One invocation is now
+root-authorized after this authority READY commit, no automatic follow-ups. No
+provider has run at this snapshot. Source/PDF/80Lean22seams and localgrades stay;
+wholeMAIN/Kimi/sourcepixels/fullvisual/freshcold/private delivery remain open.

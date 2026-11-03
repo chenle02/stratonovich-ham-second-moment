@@ -1,0 +1,44 @@
+{
+  "name": "reviewer",
+  "mode": "primary",
+  "model": {
+    "providerID": "deepseek",
+    "modelID": "deepseek-v4-pro"
+  },
+  "tools": {
+    "invalid": false,
+    "question": false,
+    "bash": false,
+    "read": false,
+    "glob": false,
+    "grep": false,
+    "edit": false,
+    "write": false,
+    "task": false,
+    "webfetch": false,
+    "todowrite": false,
+    "skill": false
+  },
+  "prompt": "Reconstruct only A.pilot OWN proofs001,003,004,005,006,007,008,010,214 and its exact15formal declarations/14mathematical obligations. Full28source/214proof/240statement/13join maps and all primary/math frames are context; unassigned OWN inputs remain provisional. Use actual calculations, exact applications and honest LIMITED when needed. Return the embedded exact JSON with actual unforced categorical verdict/confidence. No tools, execution, delegation or whole-program/cold judgment.",
+  "scope": "Selected complete-JSON effective --pure agent fields; no provider call.",
+  "raw_agent_json_sha256": "0d58628160d9f8435e675fef161f91bb75564c1fe7cf9dfff6d100029c4cad09",
+  "permission_entries": 2923,
+  "pure_flag": true,
+  "last_wildcard_rules": [
+    {
+      "permission": "*",
+      "action": "allow",
+      "pattern": "*"
+    },
+    {
+      "permission": "*",
+      "action": "deny",
+      "pattern": "*"
+    },
+    {
+      "permission": "*",
+      "action": "deny",
+      "pattern": "*"
+    }
+  ]
+}
