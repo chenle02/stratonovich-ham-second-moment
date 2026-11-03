@@ -14,8 +14,8 @@
   committed with the source and matches every reviewed-candidate text page.
   Local/origin/<HUB> source parity is verified; no extra checkout exists.
 
-- **Review scope:** current indexv6/neutralv6 and depth-ledger-v39 bind the
-  integrated source:189 exact scoped HIGH,3 earlier editorial deltas,22
+- **Review scope:** current indexv6/neutralv6 and depth-ledger-v40 bind the
+  integrated source:195 exact scoped HIGH,3 earlier editorial deltas,16
   unaccepted lower-depth/current-report rows. These counts are not a completion
   percentage. The earlier complete MAIN report remains ungraded120CHECKED/
   94LIMITED on b4b6efc; the six new scoped results do not rewrite it or clear
@@ -31,8 +31,9 @@
   correction rows and actual target judgments as one lineage. Le's durable
   learning instruction is fulfilled in canonical Le-AI-Lab657586a; all retrieval,
   description/runtime/budget checks passed, push/<HUB> parity verified
-  and unowned WIP preserved. Young, raw-block and smooth spatial-control
-  packets are being prepared only, with no additional provider call.
+  and unowned WIP preserved. Young104/105/106/107/109/111 and spatial136/137 are now adopted at
+  bounded HIGH. Raw119–124 is one actual native review in progress; masked
+  and static/planar full packets are preparation only.
 
 - **ACTIVE fresh MAIN (2026-11-02):** Le resumed the full goal and selected
   DeepSeek V4 Pro MAIN. ONE fresh all214-proof/coupled-graph text audit is
@@ -12681,3 +12682,29 @@ Canonical learning follow-upd564781 now requires complete adjudication and
 batching all critical findings before one factual correction; runtime search/
 projection/strictbudget and <HUB> parity passed, unowned WIP unchanged.
 The lesson was applied here without another source or reviewer-family change.
+
+
+### Complete six-proof F/Young and ordinary-source chain adopted at scoped HIGH
+
+The new actual DeepSeek V4 Pro report is PASS_WITH_NOTES/HIGH, all13 target/
+application/finite/primary checks PASS, no required repair. Root read all
+mathematics and three minor notes, verified the exact input/actual model/
+tools0/stop/frozen source and rehashed all82native members. The no-provider
+initial schema guard and additive49piece byte/LF adapter remain exact; they
+are not another reviewer attempt. No factual correction was needed.
+
+104/105/106/107/109/111 are adopted; current108/110 stay named inputs without
+new votes.111's compressed final paragraph has its full H/G-budget, all-Lp
+and ordinary union-support derivation in the supplied UnitC, under its actual
+106/108/109 contracts; root records this as valid internal-reference closure,
+not a source repair. All inherited-input and text-only reading limits remain.
+The source/PDF/indexv6 and80finite Lean facts remain unchanged.
+
+Ledgerv40 now has195scopedHIGH,16unaccepted lower-depth/current-report rows
+and3editorialdeltas.010's independent factorial-normalization debt remains.
+No whole-main/source-image/full-render/Kimi/fresh-cold/private closure follows.
+Raw119–124 has one separate live native review at source8ce03ae, actual
+session ses_e606f3c8bffesHj9sARLDcV182, PID2637384/startticks55855319,
+supervisor2637280/handle94885, begun04:00:26Z. Do not restart it. Root read
+its complete math and corrected two AUTHOR supplement scope/type wordings
+before dispatch; actual TeX was never changed. A raw launch binding follows.
