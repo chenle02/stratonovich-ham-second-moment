@@ -6,6 +6,20 @@
 
 ## Current state
 
+- **Next whole MAIN and wiki (2026-11-03):** sourceaf97/index7/ledger53 are
+  committed and <HUB>-equal at workflowd478316. Full214/240/28TeX/13join
+  review preparation is in progress, with calculation-level supplement
+  retention and full primary coverage required. Initial chars/2 literal-union
+  forecast exceeds context; the provisional38-page AUTHOR selection is NOT
+  root-approved. A reversible-map/primary-use and explicit capacity investigation
+  continues; no new whole native review or root-ready packet exists yet.
+  Ordinary private wiki tickettk-20261103-151055-codex-stratonovich-af97-status
+  is verified in canonicalrequests; writerinactive/dead/MainPID0. This is
+  QUEUED, notmaintained or a verifiedlivewait; no restart/wake/force/requeue.
+  Prior09c7e3 page/maintainedticket remains dated history. GoalACTIVE; no
+  whole/sourcepixel/fullvisual/Kimi/finalcold/finaldelivery clearance.
+
+
 - **Current structural integration (2026-11-03):** scientificaf97ae4,
   content5551fff, replaces exactly165/168/169/174/181/185 and expands only
   statement165. All214proof/240formal identities,208other bodies and239other
@@ -13294,3 +13308,30 @@ OPEN. A private wiki refresh is drafted but not yet enqueued; the attested
 canonical writer was observed inactive/MainPID0, so no service action or
 verified live wait is inferred. No mathematical source/PDF change in this
 metadata step, no review-grade upgrade and no goal/round closure.
+
+## 2026-11-03: full MAIN preparation and private status request
+
+Root read the complete first-stage calculation inventory and capacity plan.
+All14 earlier supplements, the four closures and newfoundation/wave/structural
+working are accounted at calculation level; complementary support, quotient
+scaling, scaled-max, F/distribution, H/G/UI, version and factorial checks are
+retained/fully derived explicitly. Full214own proofs and all240formal statements,
+all28exactTeX and13joins remain assigned; OWN inputs are not external imports.
+The literal union's conservative chars/2 plan totals1,146,232 against1,048,576;
+the proposed38-pageAUTHOR alternative is only a forecast and NOT approved.
+Root requested full64preferred plus reversible lossless navigation factoring,
+all1434reference occurrences, actual77citation-use coverage (including author
+4.1/Lemma4.4/Section5) and a separate exact-tokenizer/measured-baseline capacity
+investigation. No source/primary/mathematical scope pruning or cap reduction
+is authorized. No packet construction, config install/seal/nativewhole call.
+Four immutable first-stage files are archived with hashes at
+reviews/2026-11-03-main-af97-preparation/; stage2 is author preparation only.
+
+The new private wiki request is exactticket
+tk-20261103-151055-codex-stratonovich-af97-status, ordinarykindwiki-propagation,
+UIDstratonovich-af97-private-status-20261103-d478316. Its canonical request ID,
+reason and source/workflow match exactly; onlyrequests contains it. Writer
+inactive/dead/MainPID0 and livepage09c7e3 remain observed. No publication is
+inferred; no service/account/wake/force/requeue action. The oldmaintained and
+failed predecessors stay unchanged. Evidence:
+reviews/2026-11-03-af97-private-wiki-status/queued-state.json. No goal closure.
