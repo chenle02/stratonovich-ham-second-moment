@@ -12598,3 +12598,24 @@ HIGH with33 earlier MEDIUM/partial rows and3 editorial deltas still open.
 All214 identities, source8ce03ae,263-page PDF, indexv6 and80 finite Lean
 facts stay unchanged. Whole-main/source-image/full-render/Kimi/fresh-cold/
 private delivery requirements remain separate, and the goal remains active.
+
+
+### Durable lessons captured before the next complete calibration review
+
+Le explicitly requested learning along the way. Root updated three existing
+canonical skills and one dated retrospective in Le-AI-Lab657586a: factual
+review correction with literal statuses, functional-calculus/phase/index
+interfaces, and exact WIP-preserving storage cleanup. Retrieval, runtime
+projection, description and strict startup-budget checks passed; canonical
+push/<HUB> parity verified. Unowned WIP stayed byte-exact and uncommitted.
+The durable record is reviews/2026-11-03-durable-lessons/canonical-retro.md.
+
+One new complete-calibration DeepSeek V4 Pro review is now LIVE on exact
+science8ce03ae, targets010–019. New full mathematical input supplies all27
+canonical domains/45 sectors and all norm/Riesz/closing/Abel/limit/constants
+steps. Root verified28source files/214bodies/49embedded slices and froze a
+source-sized carrier8a0d77d; no duplicate repository checkout. Exact native
+PID2510092,startticks55465194,supervisor2509978,handle83130 is retained under
+reviews/2026-11-02-calibration-complete-depth with frozen input, not a result.
+Do not restart. Current ledgerv37 remains178 scoped HIGH,33 earlier MEDIUM/
+partial and3 editorial deltas; no gate is upgraded by this launch.
