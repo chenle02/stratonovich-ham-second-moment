@@ -30,3 +30,11 @@ remaining normalization error. Retrieval/exact runtime bodies/strict budget
 passed and canonical/local/origin/<HUB> parity is verified. The three
 foreign dirty skills and untracked earlier retro remain byte-exact and were
 excluded. This is an update of the existing review rule, not another skill.
+
+Second verified follow-up canonical1600ad890f0e857c057cbe3699e63402941585c2
+adds current-module/sibling and literal previous-body flag rebinding, plus
+the correct continuous-modification/Fubini-average rule and diagonal-spike
+falsification. Existing skills only. All Phase2.5/search/runtime/strict-budget
+checks and canonical/local/origin/<HUB> parity passed; unowned WIP stayed
+byte-exact and excluded. The actual fixes are Articledd25530 and4eef726;
+they create no whole-project or visual acceptance.

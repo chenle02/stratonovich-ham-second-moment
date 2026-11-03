@@ -21,6 +21,16 @@
   94LIMITED on b4b6efc; the six new scoped results do not rewrite it or clear
   the remaining whole-argument, source-image, render, Kimi or cold gates.
 
+- **Current whole MAIN (2026-11-03):** one fresh instructed all214own-proof/
+  240statement/28TeX review is LIVE on exact science8ce03ae, actual session
+  ses_e600701fbffe4368jteUddzr2y, PID2856653/startticks56538369,
+  supervisor2856636/handle32617, begun05:54:16Z. All62UTF8LF frames,
+  selected primary contexts and14complete mathematical families are bound;
+  all own deductions and real semantic joins are assigned. No prior reports/
+  grades supplied. Actual unforced verdict/confidence requested; no automatic
+  retry/continuation. Inspect the existing handle/exit before acting. This is
+  MAIN, not finalcold, and has no image/render/Kimi/acceptance credit yet.
+
 - **Current terminal calibration and durable learning (2026-11-03):** the
   complete-calibration DeepSeek review and one factual correction are terminal,
   raw PASS/HIGH. Root adopts exactly011–019;010 remains unaccepted because
@@ -12823,3 +12833,29 @@ review remains live. Whole-current214 MAIN proposal is prepared only, not
 invoked or final-cold; root must inspect its actual content/capacity/primary
 coverage before dispatch. All whole-main/source-image/full-render/Kimi/fresh-
 cold/final-private-delivery requirements remain open and the goal ACTIVE.
+
+
+### Whole-current214 MAIN actual invocation and exact input preserved
+
+Root inspected the prepared complete-math proposal after all local units
+were adjudicated. All28Git8ceTeX/214body-owner/240statement maps,62UTF8LF
+frames and selected full-primary byte segments are verified. The14mathematical
+families and13semantic/source/limit-order assignments retain the original
+all-model target and every own proof. Planning1039383 with9193headroom is
+explicitly an estimate, not effective native capacity or semantic coverage.
+
+One actual native DeepSeek V4 Pro invocation began05:54:16Z, session
+ses_e600701fbffe4368jteUddzr2y, PID2856653/startticks56538369,
+supervisor2856636/handle32617, clean carrier870124a. Exact input and launch
+are preserved under reviews/2026-11-03-main-current-complete. The initial
+launcher authorization-key guard failed before any provider call; original
+metadata and additive resolution are retained, and native count remainsONE.
+No automatic retry/continuation.210scopedHIGH and4current unresolved rows
+are unchanged by launch; no whole-main/image/render/Kimi/fresh-cold closure.
+
+Canonical timely-learning1600ad890f0e857c057cbe3699e63402941585c2 updates
+existing review-layer and interface skills for current-module/previous-body
+binding and proper stochastic modifications/averages. Description, retrieval,
+exact runtime and strict startup-budget checks passed; pushed and <HUB>
+parity verified, four unowned WIP files byte-exact and excluded. No new skill,
+source/PDF/Lean/model/provider or public-release change.
