@@ -6,7 +6,26 @@
 
 ## Current state
 
-- **Current integrated source (2026-11-02):** scientific 8ce03ae contains the
+- **Current structural integration (2026-11-03):** scientific(this commit),
+  content5551fff, replaces exactly165/168/169/174/181/185 and expands only
+  statement165. All214proof/240formal identities,208other bodies and239other
+  statements remain.165 now proves the compact-Young/free-norm baseline on
+  actual E;168 directly preserves the real J form from093 coefficients and
+  Young increments.169/174/181/185 use the compact floor, retaining covariance,
+  restart, all quantitative budgets and finiteness inputs. All original models,
+  actual amplitude/data/action/constant stay. One fresh DeepSeek V4 Pro lineage
+  plus ONE factual supplement is terminal/high/all6CHECKED; root read every
+  original/corrected field and adopted exact source after four report-gloss
+  qualifications. Evidence: reviews/2026-11-03-structural-baseline-candidate/.
+  Actual263PDF clean0errors/undefrefs,cites/overfull; all263text pages and eight
+  changed-page pixels match the reviewed-source candidate. AUTHOR visuals only.
+  Current indexv6/ledger52 still bind prior8ce; a full25module-row/current-index
+  refresh is the immediate next metadata step. Whole MAIN on these new bytes
+  is NOT reviewed; historical8ce INCONCLUSIVE/low remains unchanged. No new
+  whole/Kimi/source-image/render/cold/goal acceptance and no native reviewer live.
+
+
+- **Previous integrated source (2026-11-02), scientific8ce:** scientific 8ce03ae contains the
   six expanded analytic proofs, each adopted after the actual scoped
   DeepSeek V4 Pro PASS/HIGH review. All28 TeX retain214 proof identities and
   all240 formal statements. Exactly088/091/108/110/125/126 have new reviewed
@@ -14,8 +33,8 @@
   committed with the source and matches every reviewed-candidate text page.
   Local/origin/<HUB> source parity is verified; no extra checkout exists.
 
-- **Review scope:** current indexv6/neutralv6 and depth-ledger-v52 bind the
-  integrated source:210 exact scoped HIGH,3 earlier editorial deltas,1
+- **Prior8ce review scope:** indexv6/neutralv6 and depth-ledger-v52 bind
+  prior8ce source:210 exact scoped HIGH,3 earlier editorial deltas,1
   unaccepted current-report row010. These counts are not a completion
   percentage. The earlier complete MAIN report remains ungraded120CHECKED/
   94LIMITED on b4b6efc; the six new scoped results do not rewrite it or clear
@@ -13206,3 +13225,46 @@ Ledger51recordsnewworkseparately;actualwholeMAININCONCLUSIVE/LOW45CHECKED
 AlloriginalΓ/models/action/data,source8ce/PDF263,80Lean22seamsandwhole
 HIGH/image/Kimi/fullrender/freshcold/private-delivery gates remain.Open
 KimiMONTHLY429hasnoactualcapacitychange/noextraquery/substitution.
+
+## 2026-11-03: structural baseline integration, component gate only
+
+Previous turn647a8c4 was concrete progress: two native lineages fully adjudicated.
+This cycle replaces six proof bodies after full author/root/independent review;
+it is one scientific preparation/integration cycle, not a reset of review debt.
+One actual fresh DeepSeek V4 Pro ses_e5d297aa6ffec2Vp5oF6IHzb8h reviewed candidate
+content5551fff/all28contextTeX. Original249.859s/high/all6CHECKED, tools0/stop;
+one factual same-session88.447s/high/all6unchanged. Exact old2messageprefix/new
+input/actualroute/source/seal verified. Root fully read originals, all returned
+math and the factual supplement. Corrected conjugation adjoint, compact ambient
+scope, covariance-versus-J compression and internal-context taxonomy; minor
+self-description/count/import glosses remain explicitly adjudicated. No source
+repair required; no more calls in this lineage.
+
+Falsification preceded integration: finite-dimensional compact contraction,
+abstract diagonal norm reduction, actual-space noncompact contraction, real versus
+complex J coefficients and R4 compression all retain their failure boundaries.
+Source166/167 and all other assertions remain; no fixedR compactness is promoted
+to a growingR finite-projection tail.185 is the point-finiteness owner (earlier
+164 author-message typo is preserved). Lean triage excluded forcing analytic
+compact/Bochner/Young work into hollow finite checks;80existing facts unchanged.
+
+Complete native84member capsule0b5f2d12997f58228177830100e9b28e01e779cace682302f867b2b51c16c298;
+original64member capsule102fabb2e77222781575b408bd715d7c8f7ccc475211c3074e5abe1994fbfc29;
+author/build34member capsule2fa9b7e0e44c6eadbbb4e4b2b87822669d00360d63fc19b380d9cb4a3f0adf1e.
+All members rehashed and secret-scan clear. Actual active-root LaTeX build and
+full263text/eightauthorpixel comparisons passed; see integration-build-gate.json.
+The temporary first bibliography-link failure and its corrected build remain
+archived; All.bib/refdb untouched, actual build used the canonical bibliography
+search path. No source image or independent full-render credit follows.
+
+Timely canonical lessons published at Le-AI-Labd59efc66532f6bcff945042496a1795bc965dc05:
+raw numeric confidence, (path,environment,ordinal) formal keys, raw-body hash
+conventions and content/manifest/Git identities. One existing skill updated;
+Phase2.5=434chars/41headline PASS, runtimeClaude/OpenCode/Codex byteexact,
+strictstartup9/9implicit1375explicitPASS, actual retrieval ranks2/1. Fourforeign
+WIP paths and entire unowned index preserved; origin/<HUB> parity verified.
+Receipts: reviews/2026-11-03-durable-numeric-bindings/. No Kimi probe/route change.
+
+Internal component acceptance only. Full original all-model actual-C2 goal ACTIVE;
+current whole HIGH, Kimi/source pixels, independent full263render, fresh finalcold,
+private wiki final status/delivery remain OPEN. No round/final-goal closure.

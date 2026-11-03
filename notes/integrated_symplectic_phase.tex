@@ -31,7 +31,7 @@ The covariance mean is not a pointwise raw potential.
 Write $U_D$ for left Young evolution and
 $P_D(t,s)=S_E(t)U_D(t,s)S_E(-s)$.
 
-\begin{lemma}[Bounded symplectic form and the free wave]
+\begin{lemma}[Free wave form and compact Young baseline]
   \label{L:symplectic-free}
   There is a bounded isometric skew-adjoint $J_E$ on $E$,
   with $J_E^2=-I$, such that
@@ -44,6 +44,25 @@ $P_D(t,s)=S_E(t)U_D(t,s)S_E(-s)$.
   The actual free group preserves $\omega$.
   For bounded real smooth $b$, the force $B(b)(u,v)=(0,bu)$
   obeys $\omega(B(b)z,w)+\omega(z,B(b)w)=0$.
+
+  Let $1/2<\theta<1$ and let
+  $X\in C^\theta([0,T];\mathcal K(E))$ start at zero, with
+  $U_X$ its left Young evolution. Then
+  \begin{equation}\label{E:symplectic-compact-young-baseline}
+    U_X(t,s)-I\in\mathcal K(E),\qquad
+    \|S_E(t)U_X(t,s)S_E(-s)\|
+    \ge\|S_E(t-s)\|\ge1,\qquad 0\le s\le t\le T .
+  \end{equation}
+  More generally, for finitely many such zero-start paths $X_j$
+  on $[0,B]$ and lengths $0\le\ell_j\le B$, put
+  $P_j=S_E(\ell_j)U_{X_j}(\ell_j,0)$. Then
+  \begin{equation}\label{E:symplectic-compact-product-baseline}
+    P_N\cdots P_0-S_E\Big(\sum_{j=0}^N\ell_j\Big)\in\mathcal K(E),
+    \qquad
+    \|P_N\cdots P_0\|
+    \ge\left\|S_E\Big(\sum_{j=0}^N\ell_j\Big)\right\|\ge1 .
+  \end{equation}
+  These norm bounds require neither Gaussian nor Hamiltonian drivers.
 \end{lemma}
 
 \begin{proof}
@@ -81,6 +100,55 @@ $P_D(t,s)=S_E(t)U_D(t,s)S_E(-s)$.
   Actual duality for these $L^2$ functions gives the absolutely
   integrable cancellation $-\int fbu+\int ubf=0$.
   This is skewness for $\omega$, not for the $E$ Hilbert inner product.
+  The Young construction of
+  Proposition~\ref{P:constant-young-linear} applies on
+  $\mathcal L(E)$: its proof uses completeness and operator
+  multiplication of norm one, exactly as on $\mathcal L(F)$.
+  For fixed $s,t$, each left Young sum
+  \[
+    \sum_j\big(X(t_{j+1})-X(t_j)\big)U_X(t_j,s)
+  \]
+  is compact. The sums converge in operator norm to
+  $U_X(t,s)-I$, so closedness of the compact ideal gives the first
+  assertion in~\eqref{E:symplectic-compact-young-baseline}.
+  Bounded composition then shows that the physical endpoint differs
+  from $S_E(t-s)$ by a compact operator.
+
+  We prove the required compact-perturbation bound for this actual
+  whole-space phase. Translations $\tau_y$ on both entries are
+  isometries on $E$ and commute with $S_E(h)$.
+  For fixed $z,w\in E$, their translated pairing is the Fourier
+  transform of an $L^1$ function: the two weighted Fourier products
+  are integrable by Cauchy--Schwarz in the Bessel norms.
+  Approximation of that function in $L^1$ by compact smooth
+  functions, followed by integration by parts for the approximants,
+  proves $\langle\tau_yz,w\rangle_E\to0$ as $|y|\to\infty$.
+  Thus $\tau_yz$ tends weakly to zero. For compact $K$,
+  $\|K\tau_yz\|\to0$: otherwise compactness supplies a
+  norm-convergent subsequence with nonzero norm, while bounded
+  linear testing makes its limit zero. For unit $z$ it follows that
+  \[
+    \|S_E(h)+K\|
+    \ge\liminf_{|y|\to\infty}\|(S_E(h)+K)\tau_yz\|
+    \ge\|S_E(h)z\|.
+  \]
+  Taking the supremum over $z$ gives
+  $\|S_E(h)+K\|\ge\|S_E(h)\|$.
+  The isometric velocity reversal $\mathcal R(u,v)=(u,-v)$
+  satisfies $S_E(-h)=\mathcal R S_E(h)\mathcal R$ by the full
+  free Fourier matrix. The group law yields
+  $1\le\|S_E(-h)\|\|S_E(h)\|=\|S_E(h)\|^2$.
+  This proves~\eqref{E:symplectic-compact-young-baseline}.
+
+  Finally $P_j-S_E(\ell_j)$ is compact. Telescoping the finite
+  ordered product against its free product gives a finite sum of
+  bounded--compact--bounded products, hence a compact difference.
+  Only the free factors are combined by the group law; no noisy
+  factors are commuted. The same translation argument proves
+  \eqref{E:symplectic-compact-product-baseline}.
+  A zero length gives $P_j=I$. All assertions are at fixed finite
+  horizons and products; no uniform compact approximation in a
+  radius, horizon or number of factors is asserted.
   This proves Lemma~\ref{L:symplectic-free}.
 \end{proof}
 
@@ -198,78 +266,64 @@ $P_D(t,s)=S_E(t)U_D(t,s)S_E(-s)$.
 \end{proposition}
 
 \begin{proof}
-  Source contraction and the given-noise driver bound give uniform
-  $\sqrt p$ moments of $M^\rho$ at fixed $R,T$.
-  The deterministic means satisfy
-  \eqref{E:symplectic-mean-convergence} and its uniform bound.
-  Thus, $D^\rho\to D$ in every finite $L^pC^\theta$, and
-  $\|D^\rho\|_{L^pC^\theta}\le C_{c,\Phi,R,T}\sqrt p$.
-  The Gaussian moment-series argument gives uniform square-exponential
-  moments of these shifted path norms.
-  These are Gaussian paths plus deterministic shifts, not centered sources.
-  The source-to-flow passage is the actual one in
-  Proposition~\ref{P:constant-gaussian-flow}, with these fixed shifts.
-
-  Young local Lipschitz dependence gives uniform interaction
-  evolution convergence in probability on every driver ball.
-  The uniform path tails make the complement small.
-  The global growth bound
-  $C_T\exp\{C_T(1+\|D^\rho\|_{C^\theta})^{1/\theta}\}$,
-  with $1/\theta<2$, and square-exponential tails give all
-  finite evolution moments uniformly in $\rho$.
-  Uniform integrability upgrades convergence to every finite
-  $L^p$ of the uniform time-triangle operator-difference norm.
-  The generic Young arguments apply directly on $\mathcal L(E)$:
-  bounded multiplication has norm one, exactly as on $F$.
-  Physical differences are the bounded linear image
-  $V(t,s)\mapsto S_E(t)V(t,s)S_E(-s)$ of interaction differences.
-  Its separable strongly measurable image proves measurability
-  of the triangle supremum norm. No operator-norm continuity
-  of the physical free group is assumed.
-
-  The same actual $E/F$ restriction holds for mean shifts.
-  The original drivers satisfy $A_Fi=iM$ and $A_F^\rho i=iM^\rho$.
-  Bounded Bochner expectation with $Z$ gives this intertwining
-  for their covariance means.
-  Applying $i$ to the Young sums and using state uniqueness gives
-  $U_Fi=iU_E$, hence $P_Fi=iP_E$ after free conjugation.
-  The inclusion is closed and isometric; $E$ is not dense in $F$.
-
-  Choose a countable source sequence and a subsequence with expected
-  squared uniform physical difference at most $2^{-4n}$.
-  Markov's inequality makes the probabilities of a difference
-  exceeding $2^{-n}$ summable. The union bound for all events
-  after $N$ tends to zero, so the differences tend to zero
-  uniformly in operator norm over all time pairs almost surely.
-  Intersect with the countably many source conservation events.
-  Then
+  We first identify a closed real linear constraint on the actual driver.
+  Write
   \[
-    \|P_n^*J_EP_n-P^*J_EP\|
-    \le\|P_n-P\|\|J_E\|(\|P_n\|+\|P\|)
+    \mathfrak g_J=\{A\in\mathcal L(E):A^*J_E+J_EA=0\}.
   \]
-  passes the identity to $P_D$ simultaneously on the whole triangle.
-  The raw $P_D$ is measurable with respect to the given $W$.
-  Thus its conservation event, which has probability one on the
-  retaining extension, also has probability one on the base space.
-  Countable states and rational times, followed by continuity and the
-  strong free-group bounds, give the displayed simultaneous event.
-  Only the fixed parameters are concerned; no common path set
-  over uncountably many $\Phi,c,R,T$ is claimed.
-  For $c=0$ the means and evolutions are deterministic, so
-  conservation is deterministic for each $\Phi$.
+  The coefficient $H_{j,R}$ in
+  \eqref{E:driver-covariance-coefficient} is real and smooth.
+  Free conservation gives $S_E(-r)^*J_E=J_ES_E(r)$ and
+  $J_ES_E(-r)=S_E(r)^*J_E$.
+  Lemma~\ref{L:symplectic-free} therefore makes
+  $S_E(-r)B(H_{j,R}(r))S_E(r)$ belong to $\mathfrak g_J$.
+  Testing the statewise integral in
+  \eqref{E:driver-coefficient-operator} against two states shows
+  $A_j(0,t)\in\mathfrak g_J$ for every $j,t$.
+  No operator-norm derivative of the free group is taken.
+  The real finite sums in~\eqref{E:driver-path-convergence} obey
+  the same constraint. The map $A\mapsto A^*J_E+J_EA$ is bounded
+  on the path space, so their $L^2C^\theta$ limit $M$ obeys it
+  at all times on one probability-one path set.
 
-  Since $\|J_E\|=1$, the identity implies $1\le\|P_D(t,s)\|^2$.
-  Surjectivity does not follow from this identity alone in infinite
-  dimension. Instead, the actual Young evolution is invertible:
-  on short contraction pieces $\|U-I\|\le1/3$, the Neumann
-  series gives the inverse, then finite products and the free
-  group inverse give the full inverse.
-  This also covers $\Phi=0$ and the free case.
-  At a fixed $0<\delta<1$, one may take the actual reference
-  $W_{\rm fast}=W\circ T_{\delta,0}$, $R=\delta^{-1}+2$,
-  $T=\delta^{-1}$, $c=g_\delta$, $\Phi=0$.
-  This gives the growing-cone flow's norm baseline pointwise in
-  $\delta$, with no uniform moment or mean budget.
+  The mean is a Bochner expectation since
+  $\E\|W(\Phi)M\|_{C^\theta}
+  \le\|\Phi\|_{H_W}\|M\|_{L^2C^\theta}<\infty$.
+  Bounded real linear maps commute with this expectation, hence
+  $D_\Phi(t)\in\mathfrak g_J$ for every $t$.
+  Thus, $D=cM+D_\Phi$ starts at zero and is a $C^\theta$ path
+  in $\mathfrak g_J$ on that path set. Complex Gaussian
+  coefficients are not used. All these variables remain on the given $W$.
+
+  The proof of Proposition~\ref{P:constant-young-linear} applies
+  on $\mathcal L(E)$, with multiplication of norm one.
+  Fix any $s$ and put $V(r)=U_D(r,s)$ for $r\ge s$.
+  The Young remainder on $[u,v]\subset[s,T]$ gives
+  \[
+    V(v)-V(u)=D_{u,v}V(u)+R_{u,v},\qquad
+    \|R_{u,v}\|\le C|v-u|^{2\theta}.
+  \]
+  The exact increment of $V^*J_EV$ has first-order term
+  $V(u)^*(D_{u,v}^*J_E+J_ED_{u,v})V(u)=0$.
+  Its remaining terms have norm at most $C'|v-u|^{2\theta}$,
+  using the bounded $C^\theta$ norm of $V$.
+  Their sum on a partition is at most
+  $C'(t-s)\operatorname{mesh}^{2\theta-1}$, which tends to zero.
+  Therefore $U_D(t,s)^*J_EU_D(t,s)=J_E$.
+  This deterministic argument applies to every time pair on the same
+  driver path; it requires no state-dependent null sets.
+  Free conservation in Lemma~\ref{L:symplectic-free} gives
+  \eqref{E:symplectic-raw-conservation}, including
+  $1=\|J_E\|\le\|P_D(t,s)\|^2$.
+
+  Invertibility comes from the local Young Neumann pieces and
+  their finite products, followed by the free inverse; it is not
+  inferred from conservation in infinite dimension.
+  For $c=0$ the path and the argument are deterministic for each $\Phi$.
+  Zero covariance gives the free flow directly. At each fixed $\delta$
+  one may take the given reference $W\circ T_{\delta,0}$,
+  $R=\delta^{-1}+2$, $T=\delta^{-1}$, $c=g_\delta$ and $\Phi=0$.
+  No uniform-radius or control-budget assertion follows.
   This proves Proposition~\ref{P:symplectic-raw}.
 \end{proof}
 
@@ -318,8 +372,9 @@ $P_D(t,s)=S_E(t)U_D(t,s)S_E(-s)$.
   is independent of the auxiliary realization.
 
   The mean $T\Phi$ has range in closed $iE$.
-  Bounded compression passes its strong measurability and $L^r$
-  bound to $\mathcal T_E\Phi$.
+  By Proposition~\ref{P:cameron-full-mean}, bounded compression
+  passes its strong measurability, $L^r$ bound and compact operator
+  values to $\mathcal T_E\Phi\in L^r(I;\mathcal K(E))$.
   Choose the full parameter package~\eqref{E:cameron-block-parameters}.
   Its intervals are nonempty because $\theta<1-a/2$ and
   $\theta>1/2$; $p$ only instantiates that package here.
@@ -327,6 +382,9 @@ $P_D(t,s)=S_E(t)U_D(t,s)S_E(-s)$.
   \eqref{E:symplectic-block-primitive} a Bochner integral, and
   the $L^r$ primitive estimate gives $C^\theta$, since
   $1-1/r>\theta$. Affine pullback preserves null sets.
+  Its integrand is compact valued almost everywhere; closedness of
+  $\mathcal K(E)$ under Bochner integration makes $H_{m,E}(\Phi)$
+  a zero-start compact-valued path, also after constant stopping.
 
   Here $A_{F,m}$ is the full $F$ interaction driver from
   Proposition~\ref{P:constant-phase-driver}, and $H_{m,F}$
@@ -371,10 +429,10 @@ $P_D(t,s)=S_E(t)U_D(t,s)S_E(-s)$.
   then stop both sides. No unstopped equality beyond $\ell_m$
   is asserted.
 
-  Apply Proposition~\ref{P:symplectic-raw} with $c=0$, reference
-  $W_m$, horizon $B$ and the deterministic direction $\phi_m$.
-  Equality of drivers before $\ell_m$ and Young uniqueness
-  give the same actual endpoint, so its norm is at least one.
+  Apply Lemma~\ref{L:symplectic-free} directly to the zero-start
+  compact-valued path $H_{m,E}(\Phi)$ on $[0,B]$.
+  Its actual physical endpoint has norm at least
+  $\|S_E(\ell_m)\|\ge1$.
   If $\ell_m=0$, the endpoint is the identity and its norm is one.
   The radius may be chosen $\delta^{-1}+2$ after fixing $\delta$;
   all identities are fixed-parameter instances.

@@ -1,0 +1,105 @@
+{
+  "schema": "structural-six-factual-supplement-v1",
+  "lineage": "Same-session additive supplement to the structural-six-candidate-result-v1 report. The original public report, preface and result JSON are immutable; nothing below regenerates or overrides them. Candidate content ID 5551fff230882d8a42a213a8663ccee03b83aca434d1f65c0eb020a068de5248, manifest-file cbc7bf9aa8ae5f90cdda36d46a83a2e152bb8ee8710a68f8ba75ed9fabc744c2, scope and all six assigned deductions (PROOF165/168/169/174/181/185) unchanged.",
+  "factual_errata": [
+    {
+      "item": 1,
+      "target": "PROOF168",
+      "category": "returned-explanation typo (my reconstruction), not a source or deduction issue",
+      "worked_correction": "Let C(r)=S_E(-r) B(H_{j,R}(r)) S_E(r). The candidate itself does not display the intermediate; it quotes the two free-conjugation identities exactly and then cites Lemma L:symplectic-free. The correct derivation uses (i) S_E(-r)^* J_E = J_E S_E(r) and (ii) J_E S_E(-r) = S_E(r)^* J_E, both of which follow from conservation S_E(t)^* J_E S_E(t)=J_E by composing with the group inverse and by adjointing (J_E^*=-J_E). Substituting: C^*J+JC = S_E(r)^* B(H)^* S_E(-r)^* J_E + J_E S_E(-r) B(H) S_E(r) = S_E(r)^* B(H)^* (S_E(-r)^*J_E) + (J_E S_E(-r)) B(H) S_E(r) = S_E(r)^* B(H)^* (J_E S_E(r)) + (S_E(r)^* J_E) B(H) S_E(r) = S_E(r)^* [B(H)^* J_E + J_E B(H)] S_E(r) = 0, because B(H)^*J_E+J_E B(H)=0 is exactly the ω-skewness of the real multiplier recorded in 165 (〈z,(B^*J+JB)w〉_E = ω(Bz,w)+ω(z,Bw)=0). So the correct display has S_E(r)^* (adjoint) on the left conjugation and B(H)^* (adjoint) inside the bracket. My original gloss dropped the dagger markers and read the left factor as S_E(r) with an effectively self-adjoint B. That is an explanation typo. The deduction stands: the statewise integral A_j(0,t)=∫C_j(r)dr is in g_J by testing on pairs (the scalar integrand is identically zero in r); g_J is a closed real linear subspace and A↦A^*J+JA is bounded, so the real-g_j finite sums and their 093 L^2 C^θ(operator-norm) path limit M_R lie in g_J on one path event; the deterministic mean D_Φ is a Bochner expectation and stays in g_J; the Young remainder V(v)-V(u)=D_{u,v}V(u)+R with D_{u,v}∈g_J kills the linear term in the increment of V^*JV and the residual is O(|v-u|^{2θ}), so partition summation (mesh^{2θ-1}→0) gives U_D^* J U_D = J and P_D^* J P_D = J, ‖P_D‖≥1.",
+      "source_or_derivation_issue": false,
+      "targets_affected": [
+        "PROOF168"
+      ]
+    },
+    {
+      "item": 2,
+      "target": "PROOF174",
+      "category": "imprecise wording (my reconstruction); no source or deduction issue",
+      "worked_correction": "The compact norm lemma 165 applies exactly to the ambient domain B_delta, which by definition (File 9, preceding P:tube-actual-law) is a finite product of zero-start little C^θ([0,B];K(E)) spaces, i.e. every tuple has compact values. For such an x, each factor satisfies P_m(x_m)=S_E(l_m)U_{x_m}(l_m,0) with P_m(x_m)-S_E(l_m) compact, so 165 gives ‖P_delta(x)‖ ≥ ‖S_E(Σ l_m)‖ ≥ 1 for EVERY tuple of the ambient domain, which legitimizes removing the maximum at X_delta and making F_delta well defined off the Gaussian full-measure set. This lower bound is asserted only for compact-valued tuples; no generic non-compact L(E)-valued residual helper is in the ambient domain, and no lower norm bound for a non-compact perturbation is claimed or inferred anywhere. What remains robust is the functional architecture, not a non-compact lemma: F_delta = 2δ log max(1,‖P_delta(.)‖) is continuous on the (separable, compact-valued) ambient domain and is nonnegative there, so the coarse envelope (175) and the arbitrary-residual ratio bound (184) only require the upper estimates plus F_delta≥0; they never need a lower bound on a perturbed product. In 184 the residual helpers are themselves required to be zero-start little C^θ compact-operator paths, so they are in the same compact-valued class. The candidate body is explicit ('Every x_m in this ambient space is a zero-start compact-valued C^θ path'), so only my returned wording was loose.",
+      "source_or_derivation_issue": false,
+      "targets_affected": [
+        "PROOF174"
+      ]
+    },
+    {
+      "item": 3,
+      "target": "PROOF169 (and the PROOF168 E-level check)",
+      "category": "clarification of roles; no source or deduction issue",
+      "worked_correction": "169's E/F compression performs only three jobs, none of which is a J-preservation claim. (a) Covariance: the rank-zero completed identity E[g_delta A_{F,m}(u) W(i_I Φ)] = sqrt(delta) H_{m,F}(Φ)(u) from 148 is compressed through the closed isometry i (S_F i = i S_E, A_{F,m} i = i M_m) to E[g_delta M_m(u) W(i_I Φ)] = sqrt(delta) H_{m,E}(Φ)(u); dividing by g_delta gives the correctly uncompensated factor delta^{a/2} (not sqrt(delta)), and phi_m = delta^{-a/2} T_m^* i_I Φ compensates it in the M_m W_m covariance. (b) Bounded compact values: the 143/146 completed mean range in closed iE passes to the compressed strongly measurable field T_E Φ = i^* T Φ i in L^r(I;K(E)); compact conjugation makes the stopped primitive H_{m,E}(Φ)(u) a zero-start compact-valued C^θ path. (c) Norm baseline only: 165 applied to that deterministic compact-valued path gives ‖S_E(l_m) U_{H_{m,E}(Φ)}(l_m,0)‖ ≥ 1. 169 does not state or use P^*JP=J for the compressed mean flow, and it does not need to. The real physical J-skewness is 168's job, done directly on the genuine E coefficients: the real smooth H_{j,R}(r) force has B^*J+JB=0 by the physical duality ∫ u H f − ∫ f H u = 0 in the actual E pairing, with no F extension and no compression involved. Consequently compactness, the closed isometry and range-in-iE are used only for covariance transport, bounded/compact values and the norm lower bound; they are not offered as a J-preservation theorem. The R4 counterexample diag(I2,-I2) compressed to its position plane gives I2 with A^T J2 + J2 A = 2 J2 ≠ 0, and it remains fully in force: it is exactly why an arbitrary compression cannot be expected to preserve the symplectic form, and why 168 establishes skewness at the level where the form actually lives.",
+      "source_or_derivation_issue": false,
+      "targets_affected": [
+        "PROOF168",
+        "PROOF169"
+      ]
+    },
+    {
+      "item": 4,
+      "target": "all six targets (dependency labeling)",
+      "category": "scope clarification of named inputs",
+      "worked_correction": "The eleven labels 093 (P:actual-operator-driver), 107 (P:constant-young-linear), 124 (L:raw-block-restart), 143/146 (P:cameron-spatial-map / P:cameron-full-mean), 148 (P:cameron-actual-embedding), 154 (P:uniform-mean-regulator), 173/175/176 (P:tube-actual-law / P:tube-coarse-envelope / L:tube-rayleigh-tail), 105/106 (P:constant-phase-driver / L:constant-source-response), 149 (L:young-upper-growth) are all OWN statements inside the supplied candidate notes (the same 28 TeX files). This six-target assignment did not independently re-derive their full proofs; it checked, at each target's use site: (i) exact statement/body binding to the supplied bytes, (ii) that the hypothesis actually consumed by the target matches what the context module states, and (iii) acyclicity of the six-target graph. 107 and 149 additionally import the published Friz–Hairer Banach Young 2θ estimate and their refined-growth estimates as scope-specific named inputs, which this assignment lets remain named inputs after exact-hypothesis/use checks rather than whole-book reproofs. Therefore a favorable scoped verdict on the six targets does not, and is not meant to, newly certify 093/107/124/143/146/148/154/173/175/176/105/106/149 as independent external published results; they remain candidate-internal context whose own hypotheses may independently fail outside the stated model if misapplied.",
+      "source_or_derivation_issue": false,
+      "targets_affected": [
+        "PROOF165",
+        "PROOF168",
+        "PROOF169",
+        "PROOF174",
+        "PROOF181",
+        "PROOF185"
+      ]
+    }
+  ],
+  "affected_target_statuses": [
+    {
+      "id": "PROOF165",
+      "owner_label": "L:symplectic-free",
+      "status": "CHECKED",
+      "changed": false,
+      "note": "No errata bear on 165 itself; item 3 clarifies that 165's compact-perturbation lower bound and product baseline are norm results, and that only 168 carries the J-preservation. 165's finite-product/compact and translation-commutation premises remain exactly as originally reconstructed."
+    },
+    {
+      "id": "PROOF168",
+      "owner_label": "P:symplectic-raw",
+      "status": "CHECKED",
+      "changed": false,
+      "note": "Item 1 corrects my displayed conjugation to S_E(r)^*[B^*J+JB]S_E(r)=0; the candidate's conjunction 'S-E(-r)^*J=JS_E(r) and JS_E(-r)=S_E(r)^*J therefore makes ... belong to g-J' is exact, and the bounded statewise coefficient, real path closure and Young remainder application all close. Status unchanged."
+    },
+    {
+      "id": "PROOF169",
+      "owner_label": "P:symplectic-block-mean",
+      "status": "CHECKED",
+      "changed": false,
+      "note": "Item 3 removes any possible misreading that compression yields symplecticity: 169's compression is covariance transport, bounded compact values and a norm baseline only; the delta^{a/2} vs sqrt(delta) compensation is unaffected. Status unchanged."
+    },
+    {
+      "id": "PROOF174",
+      "owner_label": "L:tube-actual-endpoint",
+      "status": "CHECKED",
+      "changed": false,
+      "note": "Item 2 corrects my 'noncompact residual helpers' wording: the compact lower bound applies only to compact-valued ambient tuples; max(1,.) supplies continuity/nonnegativity, not a non-compact lower bound. The candidate body already states compact-valuedness. Status unchanged."
+    },
+    {
+      "id": "PROOF181",
+      "owner_label": "L:uniform-product-budgets",
+      "status": "CHECKED",
+      "changed": false,
+      "note": "Unchanged by the four items; item 4 only re-labels its inputs 149/165/154 as candidate-internal context. G_B, C_B, C_gr budgets and the mean endpoint norm baseline stand."
+    },
+    {
+      "id": "PROOF185",
+      "owner_label": "L:point-actual-finiteness",
+      "status": "CHECKED",
+      "changed": false,
+      "note": "Unchanged; item 4 re-labels 105/106/165/173/174/175/176 as internal context consumed at use sites. The fixed-parameter 1<=E||P_delta||^2<infinity deduction and the no-growing-radius guard stand."
+    }
+  ],
+  "actual_scoped_verdict": "Unchanged: all six assigned own deductions reconstruct from the supplied candidate TeX without an unresolved own step. The four explanation items are all additive clarifications: (1) is a returned-explanation typo remedied by the correct adjoint conjugation S_E(r)^*[B^*J+JB]S_E(r)=0, while the candidate's own conjunction of the two free-conjugation identities and its appeal to L:symplectic-free are exact; (2) restricts the compact lower bound precisely to compact-valued ambient tuples without any non-compact phantom; (3) assigns 169's compression to covariance/bounded-compact-values/norm-baseline only and keeps the J-preservation entirely in 168's direct real E-coefficient check, with the R4 counterexample retained; (4) correctly re-labels the eleven consumed modules as candidate-internal context checked at use sites rather than newly certified external results. No target status changes, no source or deduction flaw was found, and no forbidden operator was re-inserted.",
+  "actual_confidence": "high",
+  "actual_confidence_reason": "This is a same-lineage factual supplement, not a new independent vote. Confidence is high for three unforced reasons. First, the derivations requested in items 1-3 were re-computed directly from the candidate's own displayed free-conjugation identities and from the explicit compact-valuedness sentence in the 174 body, and each matches the candidate text; the items are therefore fully resolved additions, not open risks. Second, no reading limit was encountered in this supplement: the six target bodies were already read to their closers in the base assignment, and the relevant use sites inside 093/107/124/143/146/148/154/173/175/176/105/106/149 were re-located and quoted where the candidates state the exact consumed hypotheses. Third, every affected status is confirmed as unchanged, which is the expected outcome when the only corrections are a dropped dagger on a displayed conjugation and two verbal loosenesses, none of which alters the reused logical content of the proofs. Confidence is not raised by any desired outcome, and none is requested beyond the scoped six-target reconstruction.",
+  "remaining_errors_or_unread_inputs": [
+    "No remaining factual errors among the six own-target deductions.",
+    "No unread own target: PROOF165/168/169/174/181/185 were read in full to their explicit closers.",
+    "The eleven consumed context modules (093/107/124/143/146/148/154/173/175/176/105/106/149) are candidate-internal inputs; their full independent proofs are outside this bounded six-target assignment and are not re-certified here, as stated in item 4."
+  ],
+  "limitations": "Exact six-assigned-deduction scope and their actual applications; not a full214-own-proof, whole-model, whole-goal, Kimi, source-image, render or final-cold clearance. Same lineage as the original structural-six-candidate-result-v1 report; the original report is immutable and this supplement is additive only. External named inputs that are actually published (for example the Friz-Hairer Banach Young estimates invoked by 107/149) remain named scope-specific imports after hypothesis/use checks, not whole-book reproofs. No minimum or target confidence was requested and none is satisfied beyond the stated unforced scoped verdict."
+}

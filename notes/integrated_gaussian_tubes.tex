@@ -377,6 +377,13 @@ little $C^\theta([0,B];\mathcal K(E))$ spaces, with exact norm
   in every $C^\theta$ driver. Finite products, fixed-time free
   factors, norm and $\log\max(1,\cdot)$ preserve continuity.
   Thus, $F_\delta$ is defined even off every Gaussian full-measure set.
+  Every $x_m$ in this ambient space is a zero-start compact-valued
+  $C^\theta$ path. The finite-product assertion of
+  Lemma~\ref{L:symplectic-free} gives, for every such tuple,
+  \[
+    \|\mathcal P_\delta(x)\|
+    \ge\left\|S_E\Big(\sum_{m=0}^N\ell_m\Big)\right\|\ge1 .
+  \]
 
   Lemma~\ref{L:raw-block-restart}, in its noise-only case, applies
   to this same full input with base physical profile $\eta^2$.
@@ -401,11 +408,9 @@ little $C^\theta([0,B];\mathcal K(E))$ spaces, with exact norm
   For zero covariance every input is zero and the ordered factors
   are $S_E(\ell_m)$, whose product is $S_E(L_\delta)$.
 
-  Proposition~\ref{P:symplectic-raw}, at the fixed instance
-  $W_{\rm fast}=W\circ T_{\delta,0}$, $T=L_\delta$,
-  $c=g_\delta$, $\Phi=0$, gives norm at least one for this
-  actual global endpoint. It removes the maximum in the
-  definition of $F_\delta$, proving the second identity.
+  The lower bound already established for every tuple removes
+  the maximum at $X_\delta$. Together with the first identity,
+  this proves the second identity in~\eqref{E:tube-global-endpoint}.
   No fixed-radius Gaussian-operator rate or source-to-point result
   is an input to this restart argument.
   This proves Lemma~\ref{L:tube-actual-endpoint}.
