@@ -48,7 +48,8 @@
   full-main213 report remains MEDIUM historical evidence. Required source
   images/full263 independent visual/Kimi/fresh cold gates remain OPEN.
   Current Kimi monthly429 at17:26:09UTC produced zero reads/images/report;
-  no further probe/substitution authorized. Wiki status ticket still QUEUED.
+  no further probe/substitution authorized. The old wiki ticket failed for
+  stale scope; its distinct successor is now maintained and privately verified.
 
 - **Reviewer directive (Le,2026-11-01):** use DeepSeek V4 Pro + Kimi-K3.
   This supersedes Opus-only routing for newly assigned reviews. Preserve
@@ -12741,3 +12742,22 @@ application inputs, no new votes. Source/PDF/indexv6/80finite Lean facts stay.
 Ledgerv41 has201scopedHIGH,10unaccepted lower-depth/current-report rows and
 3editorialdeltas.010's factorial-report debt and all whole-main/image/render/
 Kimi/fresh-cold/final-delivery requirements remain open. No further correction.
+
+
+### Private wiki resumed-status successor maintained and root-verified
+
+Old tk-20261102-052608-codex-stratonovich-main-depth is now exact FAILED for
+scope mismatch before writes, not still queued. Its raw receipt is preserved.
+Distinct successor tk-20261102-223931-codex-stratonovich-status-refresh is
+maintained/lintclean with owned contentde03e54b and propagatee0cb6872. Root
+verified both on HEAD/origin, exact four authorized paths, clean live page/blob
+identity and0/0 canonical parity; all display math remains unchanged. Current
+private project status is ACTIVE, old blocked prose explicitly dated history.
+
+The page's189scopedHIGH reflects its verified14d82c0/v39 source snapshot;
+it does not claim current201 acceptance or whole-project completion. Source
+8ce03ae/214proofs/263pages and all model/constant/review qualifications match.
+Receipt reports normal index/lint/relations/dashboard/push gates with no owned
+other-repository changes. Raw receipts/request/readbacks are retained under
+reviews/2026-11-03-private-wiki-status-refresh. This closes only the dated
+status-maintenance checkpoint; later final private delivery remains open.
