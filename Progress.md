@@ -12708,3 +12708,15 @@ session ses_e606f3c8bffesHj9sARLDcV182, PID2637384/startticks55855319,
 supervisor2637280/handle94885, begun04:00:26Z. Do not restart it. Root read
 its complete math and corrected two AUTHOR supplement scope/type wordings
 before dispatch; actual TeX was never changed. A raw launch binding follows.
+
+
+### Raw119–124 exact launch and mathematical input preserved
+
+One native DeepSeek V4 Pro invocation, session ses_e606f3c8bffesHj9sARLDcV182,
+PID2637384/startticks55855319/supervisor2637280/handle94885, started04:00:26Z.
+Root rechecked its existing process/exit state and frozen carrierfa6e2ad,
+preserved the exact1,363,330-byte input/46embedded source slices and source-
+sized mathematical archive with full member readback. The author supplement
+scope/type wording fixes preceded dispatch; scientific8ce03ae was unchanged.
+No result or adoption follows from launch;125/126 remain input contracts only.
+Do not restart. The source/PDF/indexv6 and current ledgerv40 remain unchanged.
