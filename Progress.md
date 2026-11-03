@@ -14,12 +14,22 @@
   committed with the source and matches every reviewed-candidate text page.
   Local/origin/<HUB> source parity is verified; no extra checkout exists.
 
-- **Review scope:** current indexv6/neutralv6 and depth-ledger-v46 bind the
+- **Review scope:** current indexv6/neutralv6 and depth-ledger-v47 bind the
   integrated source:210 exact scoped HIGH,3 earlier editorial deltas,1
   unaccepted current-report row010. These counts are not a completion
   percentage. The earlier complete MAIN report remains ungraded120CHECKED/
   94LIMITED on b4b6efc; the six new scoped results do not rewrite it or clear
   the remaining whole-argument, source-image, render, Kimi or cold gates.
+
+- **Fresh MAIN with four mathematical closures (2026-11-03):** ONE actual
+  DeepSeek V4 Pro invocation is LIVE, session ses_e5e5bdfa0ffewBx72obudLzeRj,
+  started13:40:49UTC;214ownproofs/240statements/28TeX/all13joins, same8ce
+  source, complete new finite-upper/driver-source/Cameron-tube/positive-
+  matching mathematics. Root inspected all59frames and every disclosed
+  extraction, exact primary/source/maps; effective all12tools disabled.
+  No prior grades supplied; actual confidence unforced; no automatic retry
+  or continuation. Planning994308/1048576 with54268headroom is an estimate.
+  No report/adoption/image/render/Kimi/cold/whole-goal acceptance yet.
 
 - **Current whole MAIN (2026-11-03):** the one actual all214own-proof/
   240statement/28TeX DeepSeek V4 Pro run is TERMINAL, actual INCONCLUSIVE/
@@ -12945,3 +12955,33 @@ No native call, installed config, Git carrier seal, confidence continuation
 or review acceptance has occurred for that proposal at this checkpoint.
 Kimi monthly capacity/source images/full render/fresh cold remain open.
 Lean0.24 FYI requests no action; no install/receipt/official companion/HPC.
+
+
+## 2026-11-03 — One fresh substantive whole MAIN dispatched
+
+After complete b2a5749 root mathematical/report adjudication, a clean input
+now contains the four complete new derivations (170887cleanmathbytes), seven
+retained nonoverlapping support families, every current proof/statement/file
+and exact primary context. Source8ce/index6/PDF263 remain unchanged. Root
+verified all59sourceframes, all disclosed editorial extractions and the two
+Cameron K-choice/squared-log-error clarifications. No raw prior report, vote,
+grade,ledger or adoption enters the prompt. Actual verdict/confidence is
+unforced. The65536output-cap planning estimate is994308 with54268headroom;
+exact tokenization and effective semantic capacity are not certified.
+
+One native run starts2026-11-03T13:40:49.538587UTC, DeepSeek V4 Pro session
+ses_e5e5bdfa0ffewBx72obudLzeRj, PID3725892/startticks59337650, supervisor
+3725668, exec60323. Carrier1c41ad48ea1e3a5b5007fbb54f562d3d22286b5a;
+input1821334UTF8bytes SHA d3a61080adb8b79bab38ca829613260baaf0b8d61aaa09c6f4c9511ee9459837.
+All12effective tools false. Global commit-format hooks said every file was
+already formatted; root rechecked all59frames after sealing, with unchanged
+clean source. No extra Article clone/worktree/branch was created.
+
+Exact prelaunch/input freeze, every-member readback/secret-scan inventory,
+root authorization, config/model preflight/freeze and LIVE PID receipt are
+durable in reviews/2026-11-03-main-four-closures/. Native terminal envelope,
+actual assistant metadata, public report collection and full scientific
+adjudication remain pending. Ledger47 records RUNNING without changing any
+local proof state or the older inconclusive MAIN. Never retry/restart this
+run automatically. Text supplies no source-image/full-render/Kimi/freshcold
+or final-private acceptance; all remaining contract gates stay open.
