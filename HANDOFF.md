@@ -1,95 +1,163 @@
-Last updated: 2026-11-03 03:05 UTC (Codex)
+Last updated: 2026-11-03 06:14 UTC (Codex)
 
 LATEST USER DIRECTION: DeepSeek V4 Pro MAIN; full original goal ACTIVE.
 Capture durable lessons along the way. Actual constant, no forced Chen matching.
 
 ## ⏭ Next session: where to stand and what to do
 
-Inspect the ONE existing complete-calibration native review before any dispatch.
-External packet ../../../../.local/state/Le-AI-Lab/stratonovich-calibration-complete-depth-packet-v1,
-actual session ses_e60aac29bffebu9imGVUskZ9yk, PID2510092,
-startticks55465194, supervisor2509978, exec handle83130. It started
-2026-11-03T02:55:24.981172Z and was LIVE at this checkpoint. Check native/exit.json
-and process identity; collect only after terminal exit. Never restart it.
-Root authorized one fresh DeepSeek V4 Pro invocation, all tools denied and
-no automatic retry/continuation. Exact prompt1485761bytes,
-SHA79db41e472b9248559b0bfb46142efaeeb46149af19c3362922632df76f86c4f,
-carrier8a0d77d4f42f881a542e19305ca2db01f5ee959a. All49 embedded slices,
-28 exact science8ce03ae TeX and214 raw proof hashes were root-verified.
-Durable launch/frozen input is in ACTIVE reviews/2026-11-02-calibration-complete-depth.
+Inspect the ONE existing whole-current214 MAIN native process/report first.
+External packet ../../../../.local/state/Le-AI-Lab/stratonovich-main-current-complete-math-packet-v1,
+actual session ses_e600701fbffe4368jteUddzr2y, PID2856653,
+startticks56538369, supervisor2856636, exec handle32617. It began
+2026-11-03T05:54:16.733405Z; observed TERMINAL_PENDING_COLLECTION at this checkpoint.
+Inspect native/exit.json and actual PID/startticks before waiting or collection.
+NEVER restart because observation expires. No automatic retry/continuation.
+
+Root inspected and authorized ONE actual DeepSeek V4 Pro invocation, pure,
+all tools disabled, actual unforced verdict/confidence requested. Exact input
+1,780,379bytes/1,751,086characters,
+SHAdf702b5118887c1bd9b2420e0c35259d664620f7ceda14effa92a54c42f90916,
+clean source-sized carrier870124a0f88762127ef24b2d448407baf21472ed.
+All28Git8ceTeX/214body-owner/240statement maps,62UTF8LF frames and selected
+primary/full-retained byte segments were independently root reverified.
+14complete mathematical families and13semantic joins are supplied, with no
+historical reports/grades/ledgers. The1423explicitrefs/1324grouped edges are
+textual navigation, not certified semantic closure. Planning1039383 includes
+131072output/32768system;9193headroom, exact tokenizer unavailable. No
+own proof or used external-hypothesis context was dropped to meet the estimate.
+Full exact input/launch/guard custody is durable in ACTIVE
+reviews/2026-11-03-main-current-complete. The first launcher metadata-key
+guard failed before any provider call; original freeze/runner preserved and
+one additive authorization alias resolved it. Actual native count remainsONE.
+
+After terminal exit export the actual session DIRECTLY to a regular file.
+Use a whole-report collector for proof_coverage/statement_coverage/13joins/
+source_fidelity/calibrations/cycle audit, not the local-unit checks schema.
+Verify exact input/actual model/toolparts/finish/frozen source and read EVERY
+214reason/status plus240statement coverage and all findings/limits. No grade
+from PID/header/count/IDs or private reasoning. This instructed MAIN is NOT
+finalcold; no source-image/render/Kimi/cold credit is assigned.
 
 ACTIVE ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave,
-branch research/fixed-mask-young-20261031, HEAD474fa748144e25b52795e9924206a6b8c36175e2,
-clean/pushed/<HUB> equal. Scientific source8ce03ae09cca984b32aaddf3da0a6ded07f47ebc.
-Current263-page PDF builds with0errors/undefined refs/cites/overfull boxes,
-SHA bd1bacf8bdf992ca2e271d671839dfd6a03cd9e84160327045ce45f6d93b7ab6.
-Use indexv6/neutralv6 and append-only ledgerv37:178 exact scoped HIGH,
-33 earlier MEDIUM/partial and3 editorial deltas, all214 identities retained.
-These counts are not a project completion percentage or whole-graph acceptance.
+branch research/fixed-mask-young-20261031, HEADa6a1779e485c9c3765d7cc422cef66d8c81b9427,
+clean/pushed/<HUB> equal. Scientific8ce03ae09cca984b32aaddf3da0a6ded07f47ebc.
+Indexv6/neutralv6 and ledgerv44 now bind210exact scopedHIGH,010unaccepted
+for independent factorial-report normalization, and3current editorial bodies
+034/189/193 awaiting coupled review. These counts are not a completion percent.
+The263pagePDF is unchanged,0errors/undefinedrefs/cites/overfull, SHA
+bd1bacf8bdf992ca2e271d671839dfd6a03cd9e84160327045ce45f6d93b7ab6.
+All214IDs/240statements and80finiteLean facts/22seams remain. No source/PDF
+change in this continuation; no official companion approval.
 
-Six expanded analytic proofs088/091/108/110/125/126 are reviewed/adopted in8ce03ae.
-Compact-family112–118 and complete-driver085/086/087/089/090/092/093 are now
-adopted at bounded HIGH. Original and factual same-session correction reports
-are immutable and one lineage per review, never extra votes. The driver
-correction's literal two PARTIAL rows quote false old report claims; correct
-reasons derive the source maps and retain original scientific checks PASS.
-Full exact driver module695 lines is distinct from final proof ending689.
+All local cohort native reviews are TERMINAL and adjudicated; never rerun:
+calibration011–019 adopted(ad5dac7),010notadopted despite rawPASS/HIGH;
+spatial136/137 adopted14d82c0; Young104105106107109111 adoptedc47ac99;
+raw119–124 adopted9562da7; masked101–103 adopted4eef726; static024–029
+adopted501e2b2. Own inputs108/110/125/126 are not duplicate votes. Original
+and factual corrections are each one lineage with all raw shapes/statuses/
+reading limits retained. Detailed records are in their dated review directories.
+Ledgerv42 metadata repairdd25530 preserves grades/history but rebinds17module
+hashes,6literal previous-body comparison flags and1descriptor. Root reverified
+all214current source/path/owner/body/line/comparison fields and all28Git/PDF.
 
-Root read and retained complete author calibrations010–019 and static-planar
-024–029 at6339ce3, including27canonical domains/45white sectors and singular
-planar line controls. The currently live review covers010–019 with that new
-complete mathematical depth. No grade follows from a live process or author work.
-Remaining Young/masked/raw-control/spatial-control joins and whole-main checks
-stay open. Current full214 MAIN remains its actual UNGRADED120CHECKED94LIMITED
-atb4b6efc, not retrospectively HIGH after component adoptions.
+The private wiki resumed-status successor is MAINTAINED, not just queued:
+tk-20261102-223931-codex-stratonovich-status-refresh, contentde03e54b7c301a6926a39d7d2830235d93a6c7f2,
+propagatee0cb6872ac65245b86b8b494a4e0a1f39fa20258, exact4authorizedpaths,
+lint/relations/index/dashboard/privatepush, canonical0/0 and liveblob verified.
+PageSHA09c7e3e4789288785d072a210c52b707e5e637a1585cff934a43bb5d04ccdee0.
+It records ACTIVE and a dated14d/v39/189snapshot, not current210 or whole
+acceptance. Old tk-20261102-052608-codex-stratonovich-main-depth is FAILED
+for stale-scope mismatch, preserved unchanged. Both receipts/readbacks are in
+reviews/2026-11-03-private-wiki-status-refresh. Later final delivery refresh
+is still required after actual whole/image/cold gates; no direct wiki writes.
 
-Le's instruction to learn along the way was fulfilled in canonical Le-AI-Lab
-657586af53e61ecb7d951887c6b640c9d574e2b3: three existing skills updated and dated
-retrospective saved, description/search/runtime/strict-budget checks passed,
-pushed and <HUB> equal. Foreign WIP remained byte-exact and excluded.
-Article durable record: reviews/2026-11-03-durable-lessons/canonical-retro.md.
+Durable learning is canonical and projected: Le-AI-Lab1600ad890f0e857c057cbe3699e63402941585c2
+(latest), earlier657586a/d564781. Existing skills cover actual review-math
+adjudication/single factual corrections, full finding sets before dispatch,
+module/current/previous-body bindings, form-domain/phase/index distinctions,
+proper stochastic versions/Fubini averages and WIP-preserving storage cleanup.
+Description/search/exact runtime/strictbudget passed, pushed/<HUB> equal;
+4unowned labWIP files preserved byte-exact and excluded. No duplicate skill.
 
-Requested storage cleanup is COMPLETE: only canonical master/active research
-checkouts remain; about3.7GiB of duplicates removed. No new Article branch/clone.
-Exact original candidate WIP, patch/index/PDF/build logs remain recoverable in
-reviews/2026-11-02-storage-cleanup/candidate-wip-recovery.tar.gz and external
-stratonovich-cleanup-rescue-20261102. Current source already adopted those
-reviewed six changes; do not reapply the old candidate or rerun terminal reviews.
-Use source-sized carriers. gc--no-prune retained all history/connectivity.
+Requested storage cleanup remains COMPLETE: only canonical master and active
+research checkout; about3.7GiB duplicates removed with exact WIP/PDF/patch/
+index/build rescue. No new Article branch/clone. Source-sized review carriers
+only. All history retained with gc--no-prune; do not reapply old rescued v2
+candidate, already adopted in scientific8ce03ae.
 
-Full goal ACTIVE. Full MAIN HIGH, independent primary-source images, all263
-render pages, Kimi/fresh independent cold/wiki/final private gates remain open.
-Current actual Kimi monthly42917:26:09Z had zero reading/image/report credit;
-no retry/probe/substitution without new authorized evidence. No HPC, new Lean
-companion, sibling/Skorohod edits, correspondence or public research release.
+Full goalACTIVE. Whole-current MAIN is unaccepted until actual terminal
+adjudication. Required independent primary images/full263render/Kimi/freshcold
+remain OPEN. Actual Kimi monthly4292026-11-02T17:26:09Z had0reads/images/
+nullreport; no retry/probe/substitution without new authorized evidence.
+No HPC, new companion, Skorohod/sibling edits, correspondence or public release.
 
 ## Pre-flight checks
 
-[held back: AI account details]
+1. ROOTmaster pre-handoff2014a0cead17775fae74770e5e3e27a65e3c9ee5; ACTIVEa6a1779e485c9c3765d7cc422cef66d8c81b9427,
+   science8ce03ae. Verify actual local/origin/<HUB> parity/status/index
+   before edits; preserve foreign WIP and serialize shared Git ref writes.
+2. Root HANDOFF is the human launch pointer; latest research lives in ACTIVE,
+   with its older literal handoff. Do not edit master as latest mathematics.
+3. Indexv6/neutralv6/ledgerv44 contain214IDs. Current module and previous-body
+   flags are corrected explicitly in v42. Do not restore their stale v41 fields.
+   Deferred093 owner P:actual-operator-driver, statement27–55/body653–689;
+   fullmodule695lines differs from finalproof endpoint689.
+4. Poll existing MAIN PID/startticks/session/exit before waiting/export. It has
+   ONE actual invocation; both earlier preparation guards produced0provider
+   calls. Never restart an observation timeout or parse partial output as review.
+5. Actual source/input/role/model/tool/finish custody is necessary, not semantic
+   acceptance. All214own deductions are assigned by this whole-current review;
+   external theorem statements may stay imported after exact use checks.
+6. No confidence-only retries; factual corrections require a complete finding
+   set, one lineage, unchanged original prefix and exact scientific reassessment.
+   Preserve all raw PARTIAL/ungraded/shape deviations and old outcomes.
+7. Kimi monthly refusal is not short/weekly room or restored capacity. No new
+   probe/account/model/provider/purchase/threshold substitute is authorized.
+8. Wiki successor maintainedde03/e0cb is a dated source14d/v39snapshot. Read
+   exact ticket receipts/id and actual owned paths before updating status; old
+   predecessor failed, notqueued. No direct six-repo writes or public deployment.
 
 ## Concrete deliverables for the next session
 
-Finish collection and mathematical adjudication of the existing complete
-calibration review against its exact10targets/16checks. Preserve every native
-byte and actual grade; apply repairs only when a genuine source defect is
-established. Then continue the remaining real mathematical and full global/
-image/render/Kimi/cold/wiki/private-delivery contract at original model and
-actual-constant scope. Keep learning at durable checkpoints; update existing
-canonical rules rather than creating overlapping skills.
+Finish the existing whole-current214 MAIN collection and mathematical
+adjudication at its actual source/scope, including010 and editorial034/189/193.
+Preserve every actual verdict/coverage limitation and repair only genuine
+source defects with the full required source/PDF/review gates. Then complete
+independent source images/full render/Kimi/fresh cold and final private status
+contract without reducing the original models, actual constant or threshold.
+Keep timely lessons at durable checkpoints; existing canonical homes first.
 
 ## Success criteria for the immediate next step
 
-Actual prompt/route/session/tool-use/finish/frozen-source custody verified;
-root reads each target deduction, application edge, finding and limitation.
-Only genuinely reconstructed current deductions may be accepted. A header,
-finite rollup, code assertion or count alone is not mathematical acceptance.
-The whole completion contract remains separate and the goal remains active.
+Actual whole-report prompt/route/session/tool-use/finish and unchanged frozen
+source verified. Root reads all214scientific reasons/statuses,240statements,
+13semantic joins, source fidelity/calibrations/cycles and every finding/limit.
+Only fully reconstructed current deductions may be accepted; no count/header/
+ID/source delivery or partial author view is a whole-project certificate.
+All visual/Kimi/cold/private completion obligations stay separately audited.
 
 ## Anti-success criteria
 
 [held back: collaborators' unpublished work]
 
 ## What the previous sessions produced
+
+2026-11-03 continuation checkpointa6a1779e485c9c3765d7cc422cef66d8c81b9427: local cohort completed at
+science8ce03ae with210scopedHIGH/v44; only010independent normalization debt
+and3editorial current bodies remain locally open. Actual calibration9,spatial2,
+Young6,raw6,masked3,static6 adoptions have full native custody and all findings
+adjudicated, no source/PDF/Lean change. Fact corrections are1lineage each,
+notvotes. Current-binding auditdd25530 repairs24metadata fields preserving
+all past hashes/grades; all214actual bodies/locators and263PDF exact. Private
+wiki resumed-status successor maintainedde03/e0cb with exact4path propagation
+and liveblob/parity; failed oldscope ticket retained. Canonical learning1600ad8
+adds current-binding and proper version lessons to existing skills, validated/
+projected/pushed/synced with all unownedWIP unchanged. One actual whole214
+MAIN nowTERMINAL_PENDING_COLLECTION, session ses_e600701fbffe4368jteUddzr2y,
+PID2856653/startticks56538369/supervisor2856636/handle32617,
+started05:54:16Z on clean870124a carrier. Exact complete input/guard/launch
+is durable in reviews/2026-11-03-main-current-complete. No actualresult/HIGH/
+image/render/Kimi/cold/goalcompletion inferred. Inspect existing handle first.
 
 2026-11-03 authority refresh474fa74: current Progress header now explicitly
 binds ledgerv37/178scopedHIGH, complete-calibration live review and canonical
@@ -2255,35 +2323,34 @@ held. Main p2source/PDF/Lean facts unchanged; no reviewer live.
 
 ## Repo & git state at handoff
 
-ROOTmaster pre-handoff147eade63011ebc901ac991fc15a4cc5d961e2b9, clean/upstream
-equal before this dedicated HANDOFF commit. ACTIVE474fa748144e25b52795e9924206a6b8c36175e2,
-pushed/<HUB> equal; branch research/fixed-mask-young-20261031.
-Scientific8ce03ae09cca984b32aaddf3da0a6ded07f47ebc; current PDF263pages,
-SHAbd1bacf8bdf992ca2e271d671839dfd6a03cd9e84160327045ce45f6d93b7ab6.
+ROOTmaster pre-handoff2014a0cead17775fae74770e5e3e27a65e3c9ee5, clean/upstream equal before this dedicated
+HANDOFF commit. ACTIVEa6a1779e485c9c3765d7cc422cef66d8c81b9427, branch
+research/fixed-mask-young-20261031, clean/pushed/<HUB> equal.
+Scientific8ce03ae09cca984b32aaddf3da0a6ded07f47ebc, all28TeX/214proofs/
+240formalstatements; PDF263SHA
+bd1bacf8bdf992ca2e271d671839dfd6a03cd9e84160327045ce45f6d93b7ab6.
 MainTeXSHA364753242f9d02e57036af586ab8e777b184d897862750d3170d79f028067914.
-Indexv6/neutralv6/ledgerv37.80finite Lean facts/22seams unchanged; no official
-companion approval. Only master and active research branches remain locally.
+Indexv6/neutralv6/ledgerv44=210scopedHIGH+010open+3editorialdeltas.
+All current bindings corrected/reverified.80finiteLean facts/22seams unchanged.
 
-Young/raw-block source-sized packets are currently being prepared by author
-workers in stratonovich-young-complete-depth-packet-v1 and
-stratonovich-raw-block-complete-depth-packet-v1. No provider calls there are
-authorized by this handoff; inspect actual mathematics and completion status.
-
-External source-sized evidence/WIP under ../../../../.local/state/Le-AI-Lab/:
-- stratonovich-calibration-complete-depth-packet-v1 (LIVE native handle above).
-- stratonovich-driver-complete-depth-packet-v1 (TERMINAL original/correction,
-  adopted; archives durable in ACTIVE; never rerun).
-- stratonovich-compact-family-depth-v1 (TERMINAL original/correction, adopted).
-- stratonovich-six-analytic-depth-packet-v1 (TERMINAL, adopted science8ce03ae).
-- stratonovich-white-four-complete-calibration-20261102,
-  stratonovich-complete-calibration-010-019-replay-20261102,
-  stratonovich-static-planar-complete-replay-20261102 (author math archived).
-- stratonovich-retro-preserve-20261103 (exact backup of four unowned labWIP
-  files and index/patch state; canonical657586a did not commit them).
-- stratonovich-cleanup-rescue-20261102 (candidate WIP/build/patch rescue).
-Earlier immutable source/review packets and original replays remain at their
-recorded locations. Their old stopped/pending status is superseded only by
-explicit newer adoption entries; never infer current status from old prose.
+External evidence under ../../../../.local/state/Le-AI-Lab/:
+- stratonovich-main-current-complete-math-packet-v1 (TERMINAL_PENDING_COLLECTION; exact handle
+  above; native export/whole report schema collection still required).
+- stratonovich-calibration-complete-depth-packet-v1, spatial-control-ratio-
+  complete-depth-v1, young-complete-depth-packet-v1, raw-block-complete-depth-
+  packet-v1, masked-complete-depth-packet-v1, static-planar-complete-depth-v1
+  (all with stratonovich-prefix; TERMINAL and adopted at exact recorded scope;
+  original/correction capsules durable in ACTIVE; NEVER rerun).
+- stratonovich-ledger-current-binding-audit-20261103 (read-only author audit,
+  minimal24field repair applieddd25530, no new scientific vote).
+- stratonovich-wiki-status-refresh-20261103 (exact failed/successor receipts
+  and owned/wiki readbacks, copied durably into ACTIVE).
+- stratonovich-retro-preserve-20261103 (4unowned labWIP bytes/patch/index
+  snapshots plus local learning sync logs; no ownership granted by backup).
+- stratonovich-cleanup-rescue-20261102 (exact original candidate rescue,
+  already source-adopted; do not reapply the oldpatch).
+All older native/science evidence and research history remain at their recorded
+paths. No new Article branch/full checkout, official companion, HPC or release.
 
 ## Operating notes
 
@@ -2291,26 +2358,31 @@ explicit newer adoption entries; never infer current status from old prose.
 
 ## Risks to monitor
 
-Scoped178HIGH is no whole-graph acceptance or completion percentage.
-The33 earlier lower-depth bodies and3 editorial bodies remain open; current
-whole-MAIN is raw ungraded/outline-qualified. Preserve all old raw reports at
-their original source hashes/confidence; no confidence-only retries.
+210local scopedHIGH is not whole-argument acceptance or a completion percent.
+010source/replay is correct but its independent calibration explanations still
+misstate factorial normalization; it stays open for this new full MAIN.
+034/189/193 are current editorial deltas, not automatically oldbodyHIGH.
+The old b4b MAIN remains actual UNGRADED120CHECKED94LIMITED; no confidence
+is imputed and component grades do not rewrite it.
 
-A correct source deduction can be described incorrectly by a reviewer.
-Preserve both records, derive the actual domain/index/branch relationship and
-adjudicate the explicit affected scientific judgment. A factual same-session
-correction is one lineage and its literalPARTIAL rows must stayPARTIAL.
+The new MAIN assigns all214own deductions and240statements. Textual reference
+edges include closing/negative/summary contexts and do not certify premises;
+uncited joins and real cycles must be checked. Planning margin is small and
+not effective capacity evidence; lengthstop/malformed/partial outputs are not
+complete review. Original raw field-shape/parser deviations stay immutable
+with additive exact adapters, never invented scientific coverage.
 
-The calibration process is LIVE at checkpoint, not a passing report. Do not
-restart it or treat code/output/all214map delivery as mathematical coverage.
-White all27domains/45sectors are finite controls, not all-order identities.
-The optimized majorant lower growth is not actual-moment lower growth; all-time
-constants remain separate from intrinsic actualC2/auxS1/printed sourceL labels.
+Module/current-body/previous-body/review bindings are distinct; update current
+module hashes for unchanged siblings too. Pointwise L2 modifications need no
+uncountable event; arbitrary reps cannot be identified from L2 continuity and
+a dense set alone. No Gaussian covariance PSD/samplewise solution order from
+positive expected Wick diagrams. Full F includes both constants and velocity;
+physical free flow is strong, not operator-norm continuous. No rough pointtrace,
+independent timeblocks or weighted-source-limit shortcut.
 
-Kimi actual monthly429, full263-page independent render, source images and
-fresh independent cold remain open. No new probe or substitute is authorized.
-Wiki exact request remains its last verified QUEUED state, not completed
-maintenance; read its current file receipt before upgrading that status.
-Learning artifacts are durable and discoverable, but do not clear any research
-gate or authorize provider/system setup changes. Goal remains ACTIVE while
-meaningful mathematical/review/delivery work continues.
+Kimi actual monthly429 is still an external image/cold prerequisite. All263
+independent render and primary-source images remain required. No new probe or
+substitute without changed authorization/evidence. Wiki ACTIVE/189snapshot is
+dated14d/v39 and correctly preserved; final delivery must refresh after actual
+new whole/image/cold findings. No public theorem/goal completion follows from
+that maintained page, clean PDF, source custody, raw HIGH header or localcount.
