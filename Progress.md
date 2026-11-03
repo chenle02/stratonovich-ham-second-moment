@@ -7,9 +7,10 @@
 ## Current state
 
 
-- **Themed MAIN A.pilot RUNNING (2026-11-03):** the exact nine-proof/fifteen-
+- **Themed MAIN A.pilot ORIGINAL TERMINAL (2026-11-03):** the exact nine-proof/fifteen-
   declaration/fourteen-obligation full-context packet is built and frozen,
-  invoked once at23:33:26UTC after READY authorityb1249e6. All70required
+  returned actual PASS_WITH_NOTES/medium, stop/tools0, after one fresh run.
+  All70required
   source/primary/math/map frames and original
  214/240/28/13 program remain. Root read actual instructions, current source,
  010working and all report requirements; separate author1235checks plus9
@@ -19,8 +20,12 @@
   this was a missed existing startup-flags rule, fixed before any provider call.
   Carrier a2c04425187ae4a97f509723a0b79176eccb6e55, prompt9f5861b5,
   conditional932630/head115946 with196608combined output. Root authorizes
-  ONE fresh native invocation, now live at PID1248735/start62893372,
-  supervisor1248723/exec5685. No actual session/report/grade has been collected.
+  ONE fresh native invocation, now terminal; exec5685 must not be polled or
+  restarted. Complete9/15/14literalCHECKED rows received, with51exact-ID/
+  pending-scope validator issues and several returned caption errors. Root
+  read every field and both author batches; source calculations check. One
+  factual same-session addendum is authorized, not yet invoked; no new proof
+  or higher-confidence request. Original PASS_WITH_NOTES/medium is immutable.
   No report/math/grade/image/Kimi/cold/goal credit. Evidence:
   reviews/2026-11-03-main-af97-theme-I-A-pilot/.
 
@@ -13478,7 +13483,8 @@ agent/runtime drafts are charged without deletion credit:603973+82897+196608+
 future tokenization/depth/final synthesis capacity are not promised.
 
 Root initially omitted --pure from the local agent/config diagnostics. Those
-showed34disabled plugintools and are preserved as NONMATCHING, never provider
+showed35disabled entries includinginvalid (the earlier34
+summary omittedinvalid and mislabelled them as plugin tools) and are preserved as NONMATCHING, never provider
 reading. Matching --pure diagnostics show12disabledtools, exactmodel/agent,
 compactionfalse/share disabled. Both kept all77carrier files unchanged; raw global
 configuration was captured only in anonymous regular files, selected safe fields
@@ -13509,3 +13515,36 @@ cap; actual unforced report pending. Preflight model is DeepSeekV4Pro/all12tools
 false, but an actual returned report/model/finish will be verified at collection.
 No old MAIN lineage resumed; no automatic retry/follow-up; all other OWN inputs
 provisional. Source/PDF/localgrades/whole/image/Kimi/cold/goal unchanged.
+
+
+## 2026-11-03: A.pilot original report read; one factual batch authorized
+
+ActualsameDeepSeek ses_e5c3d4fe2ffetOF0orNlewrxQr ended23:38:22UTC after296.205s,
+exit0/stop/tools0/sourcecarrierclean/all77bytesunchanged. Exactprompt/export2
+messages/source/model verified, completeJSON no duplicatekeys. Actual619404input,
+19591public+12932reasoning=32523combined under196608; no cap exhaustion. Raw
+PASS_WITH_NOTES/medium and9proof/15formal/14obligationCHECKED rows are preserved,
+not HIGH or acceptance. All original public fields and both complete author
+mathematical checks are read. Exact010Pk/k!/k2/k3/real-q growth and white splits
+are correct; no source repair located.
+
+The exact-ID validator refuses51derivative issues: OWN target strings append
+labels;051/204ownerunits shouldB/H;010/S040 markfullCHECKED while explicit002
+premise remains provisional. Report-only007series-square,008removal-direction,
+O003paircaption,O010summand-caption,S064spectral-symbol and provisional002cycle
+labels require clarification. H:homog is a real global assumption despite formal
+CONTEXTclassification; root's frozen grammar lacks a dedicated hypothesis kind.
+No new hypothesis/source defect is inferred. Root's initial readback also guessed
+two JSON array indices; pointer errata resolve byactualreturnedproofID/order,
+with original metadata/capsule retained. Source/rawreview texts never edited.
+
+Original16membercapsuleda5ff8c94d7fc5332720f568d37b5a4bdc5467a1da98380ec84473c954d585a3
+is immutable. One additive factual same-session clarification is rootauthorized
+only after this fullbatch; originalmedium retained, no new proof or confidence
+upgrade requested, no newvote. Conditionalcontinuationbudget975846/head72730
+charges all originalpublic and reasoningbytes plus5469newuserbytes/reserves/
+196608combined; reasoningcontent is counted, never read as scientific evidence.
+No addendum launched at this checkpoint. Author025finite-table reproduction now
+supplies previously undisclosedK1.25/t1.5/executable, reproduces everyrowexactly,
+and is explicitlyNOTin the reviewerinput. Source/PDF/localgrades/whole/Kimi/
+sourcepixels/fullvisual/freshcold/goal remain unchanged and open.
