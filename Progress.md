@@ -14,9 +14,9 @@
   committed with the source and matches every reviewed-candidate text page.
   Local/origin/<HUB> source parity is verified; no extra checkout exists.
 
-- **Review scope:** current indexv6/neutralv6 and depth-ledger-v43 bind the
-  integrated source:204 exact scoped HIGH,3 earlier editorial deltas,7
-  unaccepted lower-depth/current-report rows. These counts are not a completion
+- **Review scope:** current indexv6/neutralv6 and depth-ledger-v44 bind the
+  integrated source:210 exact scoped HIGH,3 earlier editorial deltas,1
+  unaccepted current-report row010. These counts are not a completion
   percentage. The earlier complete MAIN report remains ungraded120CHECKED/
   94LIMITED on b4b6efc; the six new scoped results do not rewrite it or clear
   the remaining whole-argument, source-image, render, Kimi or cold gates.
@@ -33,8 +33,8 @@
   description/runtime/budget checks passed, push/<HUB> parity verified
   and unowned WIP preserved. Young104/105/106/107/109/111 and spatial136/137 are now adopted at
   bounded HIGH. Raw119–124 is now adopted after its one factual correction. Masked101–103 is now adopted after a factual version/input-scope correction.
-  Static/planar024–029 is terminal pending full root adoption; no whole-main
-  acceptance follows from these bounded units.
+  Static/planar024–029 is also adopted at its exact bounded HIGH scope.
+  All local native reports are terminal; no whole-main acceptance follows.
 
 - **ACTIVE fresh MAIN (2026-11-02):** Le resumed the full goal and selected
   DeepSeek V4 Pro MAIN. ONE fresh all214-proof/coupled-graph text audit is
@@ -12798,3 +12798,28 @@ message prefix and3current body bindings are verified.101–103 are adopted;
 rows plus3editorialdeltas; prior24metadata corrections persist. No TeX/PDF/
 Lean or original-scope change;010 and whole-main/source-image/full-render/
 Kimi/fresh-cold/final-delivery gates remain open. No further continuation.
+
+
+### Complete static/planar family adopted at scoped HIGH
+
+The actual DeepSeek V4 Pro report is PASS_WITH_NOTES/HIGH, all13checks PASS,
+no required repair. Root read every deduction, primary theorem application,
+finite constant and five minor notes, and verified exact input/model/tools0/
+stop/frozen source/46UTF8LF pieces/current bodies. All77native capsule members
+are rehashed and secret-pattern clear. The raw coverage field's string format
+is recorded without inventing a list or stronger reading. No correction needed.
+
+024–029 are adopted at the actual Riesz/generalized-planar scope, preserving
+full split/self-pair coefficients, all-k versus asymptotic constants, published
+half/unit-gradient conversion, positive-measure Holder and Green-first limits,
+singular angular endpoint PD and S/4 normalization. Imported proofs and image
+limits remain; no genericd3, intrinsic-value or source-constant identity.
+
+Ledgerv44 now has210scopedHIGH,010unaccepted for independent factorial-report
+normalization and3editorialdeltas034/189/193 awaiting current coupled review.
+All24current-binding metadata repairs persist; actual28TeX/214bodies/240formal
+statements/PDF263/indexv6/80finiteLean facts are unchanged. No local native
+review remains live. Whole-current214 MAIN proposal is prepared only, not
+invoked or final-cold; root must inspect its actual content/capacity/primary
+coverage before dispatch. All whole-main/source-image/full-render/Kimi/fresh-
+cold/final-private-delivery requirements remain open and the goal ACTIVE.
