@@ -13410,3 +13410,33 @@ PASS; actual alias retrieval ranks2/1/4. AllfourforeignWIP paths and unownedinde
 preserved and excluded. Canonical origin/GW both33e2c1d and0/0. Evidence:
 reviews/2026-11-03-durable-native-records/. No mathematical/source/review-grade,
 whole/image/Kimi/cold/goal credit follows from operational lesson promotion.
+
+
+## 2026-11-03: prospective themed MAIN and exact pilot ownership
+
+Root read the full plan, assignment and separate author audit. Canonical Strategy3b
+supports full-context themed work. All214OWN/240formal/13joins are explicitly
+assigned; formal classification is214OWN,2EXTERNAL(T:first/T:crude),24CONTEXT,
+keyed by(path,environment,ordinal). No invented remark proofs or OWN imports.
+The70unchanged source/primary/math/map frames preserve full64AUTHOR and every
+mathematical complement. Producer3438 and independentauthor7082 mechanicalchecks
+passed; root separately compared every current proof/formal field and plan hash.
+These checks are author navigation/provenance, not scientific review acceptance.
+
+Root authorizes PREPARATION ONLY of A.pilot:001003004005006007008010214, nine
+proofs/fifteen declarations, actual norm/fixed-order/marked-edge/summability/
+mean/white-coefficient/factorial deductions with other OWN inputs provisional.
+Replace the old unframed214task AND old agentprompt; exact-ID/semantic report
+validation must supplement the generic schema (empty coverage can satisfy it).
+Bind current workflow preimages outside the immutable historical plan. Retain
+all70frames and measure all new/changed bytes against actual603973baseline plus
+reserves and proposed196608combined output. No construction, config/preflight,
+seal or native execution has occurred or is approved merely by this plan.
+
+ThemeII owns all13actualjoined deductions and cycle/source/model/application
+checks. ThemeIII must supply the genuine final DeepSeek coupled whole judgment;
+a root union of local votes is insufficient. Final dossier fit/depth remain
+unproved until actual working exists. Preserve every substantive calculation,
+limitation and original goal. Ledger54/localstates/source/PDF unchanged; all
+Kimi/image/fullvisual/freshcold/private delivery requirements remain open.
+Evidence: reviews/2026-11-03-af97-themed-main-plan/.
