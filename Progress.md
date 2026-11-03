@@ -14,8 +14,8 @@
   committed with the source and matches every reviewed-candidate text page.
   Local/origin/<HUB> source parity is verified; no extra checkout exists.
 
-- **Review scope:** current indexv6/neutralv6 and depth-ledger-v40 bind the
-  integrated source:195 exact scoped HIGH,3 earlier editorial deltas,16
+- **Review scope:** current indexv6/neutralv6 and depth-ledger-v41 bind the
+  integrated source:201 exact scoped HIGH,3 earlier editorial deltas,10
   unaccepted lower-depth/current-report rows. These counts are not a completion
   percentage. The earlier complete MAIN report remains ungraded120CHECKED/
   94LIMITED on b4b6efc; the six new scoped results do not rewrite it or clear
@@ -32,8 +32,9 @@
   learning instruction is fulfilled in canonical Le-AI-Lab657586a; all retrieval,
   description/runtime/budget checks passed, push/<HUB> parity verified
   and unowned WIP preserved. Young104/105/106/107/109/111 and spatial136/137 are now adopted at
-  bounded HIGH. Raw119–124 is one actual native review in progress; masked
-  and static/planar full packets are preparation only.
+  bounded HIGH. Raw119–124 is now adopted after its one factual correction. Masked101–103
+  is terminal pending adjudication, and static/planar024–029 has one live
+  native review; neither launch/header clears those targets.
 
 - **ACTIVE fresh MAIN (2026-11-02):** Le resumed the full goal and selected
   DeepSeek V4 Pro MAIN. ONE fresh all214-proof/coupled-graph text audit is
@@ -12720,3 +12721,23 @@ sized mathematical archive with full member readback. The author supplement
 scope/type wording fixes preceded dispatch; scientific8ce03ae was unchanged.
 No result or adoption follows from launch;125/126 remain input contracts only.
 Do not restart. The source/PDF/indexv6 and current ledgerv40 remain unchanged.
+
+
+### Complete raw scaling/block/restart family adopted at scoped HIGH
+
+The actual DeepSeek V4 Pro report and one factual correction are both
+PASS_WITH_NOTES/HIGH. Root finished the full original adjudication before
+batching all4explanation issues: Green MEASURE scaling, nu not rho in the
+cone, a single g_delta in the maximum, and literal F-to-E constant-column
+types. The correction derives every relationship correctly and explicitly
+reassesses the affected source/application rows PASS; no source repair.
+Its coverage list also resolves the original string-shaped coverage field
+without rewriting that raw record or inventing extra reading credit.
+
+Root read every equation/limit, verified exact prompt/actual route/tools0/
+stop/frozen source/original message prefix, rehashed74+12capsule members and
+all six current bodies.119–124 are adopted at exact scope;125/126 are named
+application inputs, no new votes. Source/PDF/indexv6/80finite Lean facts stay.
+Ledgerv41 has201scopedHIGH,10unaccepted lower-depth/current-report rows and
+3editorialdeltas.010's factorial-report debt and all whole-main/image/render/
+Kimi/fresh-cold/final-delivery requirements remain open. No further correction.

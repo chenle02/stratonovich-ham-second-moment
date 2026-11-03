@@ -1,0 +1,126 @@
+{
+  "schema": "subscription-review-report/1",
+  "category": "paper-review-deepseek",
+  "model": "deepseek/deepseek-v4-pro",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "confidence_justification": "Each of the four concrete issues was independently re-derived and the source was found to be correct in all four cases; the defects were in wording of my prior returned reconstruction, not in the supplied source. For GREEN-MEASURE-SCALING the measure pushforward under the dilation by r_T is proved weakly via the Fourier transform of the wave Green measure (sin(t|xi|)/|xi|), which remains valid for the d=3 sphere measure, so the displayed source identity is correct with no density or dz-multiplication shortcut. For CONE-NU-BUDGET the correct rebase coefficient nu gives 1-nuM_z-M_l*eps*M_z, whose two halves are each bounded by rho/2, so the (1-rho) amplitude lower bound is sound, and the supplied control values give exactly 8175/8192. For MAX-SINGLE-FACTOR, X_m already contains g_delta, so M_delta=max||X_m|| equals g_delta*max||A_R(W_{delta,m})|| with g_delta occurring once, and gamma_p=p(1-a)/2-1 reproduces the finite values (gamma_p=1/2 at a=1/2,p=6). For CONSTANT-COLUMN-TYPES, L_psi acts on the two F constant-coordinate vectors (0,1,0),(0,0,1) and produces E-outputs (psi,0),(0,psi), so the columns are explicit coordinate mappings, not E-density. Remaining uncertainty is only the unverified downstream named-input bodies and non-execution of the finite check, which are scope limits, not mathematical defects in the six targets."
+  ,"source_coverage": [
+    "RECONSTRUCTED VERBATIM TARGETS: PROOF119 L:exact-canonical-scaling notes/integrated_exact_scaling.tex statement LF4-24, proof LF26-61",
+    "RECONSTRUCTED VERBATIM TARGETS: PROOF120 L:raw-block-inputs notes/integrated_raw_block_lower.tex statement LF55-73, proof LF75-126",
+    "RECONSTRUCTED VERBATIM TARGETS: PROOF121 P:raw-block-gaussian-law notes/integrated_raw_block_lower.tex statement LF128-136, proof LF138-172",
+    "RECONSTRUCTED VERBATIM TARGETS: PROOF122 L:raw-block-uniform-error notes/integrated_raw_block_lower.tex statement LF182-198, proof LF200-253",
+    "RECONSTRUCTED VERBATIM TARGETS: PROOF123 L:raw-block-indexed-cone notes/integrated_raw_block_lower.tex statement LF255-275, proof LF277-372",
+    "RECONSTRUCTED VERBATIM TARGETS: PROOF124 L:raw-block-restart notes/integrated_raw_block_lower.tex statement LF376-389, proof LF391-466",
+    "CURRENT NAMED ANALYTIC INPUTS (application/hypothesis-checked, not re-rated): PROOF125 P:raw-block-point-comparison notes/integrated_raw_block_lower.tex LF468-490, LF492-599",
+    "CURRENT NAMED ANALYTIC INPUTS (application/hypothesis-checked, not re-rated): PROOF126 P:raw-block-original-lower notes/integrated_raw_block_lower.tex LF601-609, LF611-749",
+    "SUPPLEMENTS READ (claims inspected, values hand-recomputed, not executed): complete-scaling-block-mathematics.txt A1-A3, B1-B2, C1-C2",
+    "SUPPLEMENTS READ: point-comparison-rate-mathematics.txt sections 1-5",
+    "SUPPLEMENTS READ: raw-block-finite-check.py and raw-block-finite-results.json (inspection/hand-recheck only, not run)",
+    "SUPPLEMENTS READ: finite-check-tasks.txt",
+    "NAMED INPUT BODIES READ FOR STATEMENT/HYPOTHESIS/TYPE/INTERFACE (not re-derived line-by-line): L:joint-fixed-order notes_stratonovich_ham_second_moment.tex LF1103-1198; L:vertex-crude LF1273-1345",
+    "NAMED INPUT BODIES READ: P:source-gaussian-transfer integrated_source_convergence.tex LF44-134; P:source-ordinary-response LF427-482",
+    "NAMED INPUT BODIES READ: P:constant-young-linear integrated_constant_phase_young.tex LF204-275; P:constant-gaussian-flow LF277-401; L:constant-source-solution LF405-469",
+    "NAMED INPUT BODIES READ: P:masked-source-moments integrated_masked_moments.tex LF102-165; P:masked-canonical-transfer LF167-221",
+    "NAMED INPUT BODIES READ: P:compact-F-projection integrated_compact_mean_family.tex LF288-376; P:compact-F-complement LF378-441; L:compact-raw-profile LF445-472; P:compact-original-common-trial LF514-574",
+    "NAMED INPUT BODIES READ: P:actual-operator-driver integrated_actual_operator_driver.tex statement LF27-55, proof LF653-689",
+    "PRIMARY SELECTED PAGE BODIES (role/support only, no full-book re-proof): chen-author-full.txt held author manuscript, sourced as a 64-page author edition (no page-by-page distinction except source-internal section markers)",
+    "PRIMARY SELECTED PAGE BODIES: friz-hairer-selected.txt physical PDF pages 1,2,3,4,28,75,76,200,201; the embedded bounded-bilinear Young estimate is printed page 13, Sections 1.4-1.5 and printed page 61-62, Section 4.1 (4.2)-(4.3); Cameron-Martin/Borell is printed pages 190-191, Sections 11.2-11.2.1",
+    "PRIMARY SELECTED PAGE BODIES: teschl-2014-selected.txt physical PDF pages 92,93,114,115,116,121,152,153,270,285, corresponding to printed pages 80,81,102,103,104,109,140,141,258,273 (Friedrichs/closed forms, PVM spectral calculus, max-min/eigenvalues, Schroedinger Theorem 10.2, positivity Theorem 10.13)",
+    "No whole214/global, source-image/render, Kimi, or final-cold-acceptance credit was taken; all six target slices were read verbatim and the named inputs were distinguished as interface reads"
+  ],
+  "checks": [
+    {
+      "id": "COR-GREEN-MEASURE-SCALING",
+      "claim": "RAW119 Green measure scaling and Duhamel vertex factor",
+      "verdict": "PASS",
+      "reason": "Historical fault: my prior report reconstructed the scaling as G_d(T tau, r_T dz) = r_T^(1-d)G_d(tau/delta, dz) r_T^d dz, which treats the measure as a density and then multiplies by dz a second time, and the r_T power was printed without grouping. Correct now: for the wave Green measure mu_t with Fourier transform widehat mu_t(xi)=sin(t|xi|)/|xi|, define the dilated measure by (D_{r_T} mu_{T tau})(A)=mu_{T tau}(r_T A). Then widehat(D_{r_T} mu_{T tau})(xi)=widehat mu_{T tau}(xi/r_T)=r_T sin(T tau |xi|/r_T)/|xi|, and since T tau/r_T=tau/delta this equals r_T widehat mu_{tau/delta}(xi). Therefore weakly, Test: for every test phi, Integral(phi(z) mu_{T tau}(r_T dz)) = r_T Integral(phi(z) mu_{tau/delta}(dz)). This holds for every admissible d, including the singular sphere measure in d=3, because the Fourier identity sin(t|xi|)/|xi| is the distributional transform of G_d(t,.). Mass check: LHS=mu_{T tau}(r_T R^d)=T tau; RHS=r_T*(tau/delta)=T tau, and support |z|<=T tau/r_T=tau/delta, both consistent. With delta=T^{-kappa}, kappa=(4-alpha-a)/(3-alpha): r_T=T delta=T^{(a-1)/(3-alpha)} (exponent (a-1)/(3-alpha), explicitly ordered). Substitution gives T^{-a/2} r_T^{2-alpha/2}=T^{-kappa/2}=sqrt(delta) and T^{1-a/2}r_T^{1-alpha/2}=T^{kappa/2}=delta^{-1/2}; the Duhamel vertex factor is T r_T T^{-a/2}r_T^{-alpha/2}=(T/r_T)(T^{-a/2}r_T^{2-alpha/2})=delta^{-1}*sqrt(delta)=delta^{-1/2}, matching sqrt(delta) times the fast Green kernel delta^{-1}G_d((t-s)/delta). Equality in law passes through finite coefficient lists of the Gaussian field law plus the fixed-order/summability construction, never through a sphere density or moment-determinacy replacement."
+      ,
+      "historical_fault": "My earlier returned line wrote the scaling through a formal density r_T^(1-d)G r_T^d dz and omitted clear grouping of the r_T power.",
+      "correct_now": "The scaling is the weak measure pushforward identity mu_{T tau}(r_T dz)=r_T mu_{tau/delta}(dz), proved by Fourier transform, valid for all d including d=3, with r_T=T^{(a-1)/(3-alpha)}.",
+      "source_repair_needed": false
+    },
+    {
+      "id": "COR-CONE-NU-BUDGET",
+      "claim": "RAW123 next-block cone amplitude and residual conversion",
+      "verdict": "PASS",
+      "reason": "Historical fault: my prior report wrote the amplitude lower bound as x >= (1-rho M_z - M_l eps M_z)A >= (1-rho)A, i.e. it substituted the cone tolerance rho in place of the rebase coefficient nu. Correct now: after rebase the new basis gives l_c(z) >= (1 - nu M_z)A, and the next full block gives x = e^{-lambda_c B} l_c(Dz) >= (1 - nu M_z - M_l eps M_z)A. The two small pieces are controlled separately: nu M_z <= rho/2 (by choice of nu) and M_l eps M_z <= rho/2 (from the five epsilon_op budgets), so 1 - nu M_z - M_l eps M_z >= 1 - rho, hence x >= (1-rho)A > A/2. Residual conversion: the rebase residual bound is ||Q_c z|| <= (vartheta + nu M_z)A, and y <= [q_B(vartheta + nu M_z) + M_Q eps M_z]A <= vartheta A/2, using q_B <= 1/8, nu M_z <= vartheta, and M_Q eps M_z <= vartheta/4; together with rho<1/2 this gives y <= vartheta x. Concrete values (rho=1/4, M_z=M_l=2, nu=1/1024, eps_op=1/32768): nu M_z = 1/512, M_l eps M_z = 1/8192, sum = 17/8192, so 1 - sum = 8175/8192, which is >= 3/4 (6144/8192), exactly the supplied finite control. The terminal, N=1 and tau=0 conclusions are unaffected because they use l_c >= 3A/4, ||Q_c z|| <= 2vartheta A and an empty induction at N=1, none of which depend on the wrong rho-for-nu substitution.",
+      "historical_fault": "My prior returned line replaced the rebase coefficient nu by rho in the amplitude chain.",
+      "correct_now": "The correct coefficient chain uses nu M_z <= rho/2 plus M_l eps M_z <= rho/2 to reach 1-rho, and the supplied test values give 8175/8192.",
+      "source_repair_needed": false
+    },
+    {
+      "id": "COR-MAX-SINGLE-FACTOR",
+      "claim": "RAW122 scaled maximum and RAW126 probability exponent",
+      "verdict": "PASS",
+      "reason": "Historical fault: my prior APP-B statement wrote M_delta = g_delta max||X_m||, but the source defines X_m = g_delta A_R(W_delta,m), so that formulation would count g_delta twice. Correct now: the unscaled drivers are A_m := A_R(W_delta,m), so X_m = g_delta A_m, and M_delta = max_{m<=N} ||X_m||_{B_0} = g_delta max_{m<=N} ||A_m||_{B_0}; g_delta occurs exactly once. The moment estimate uses ||X_m||_{Lp B_0} <= C_{R,B} sqrt(p) g_delta, hence ||M_delta||_p <= E[max_m ||X_m||^p]^(1/p) <= (sum_m E||X_m||_{B_0}^p)^(1/p) <= (N+1)^{1/p} C sqrt(p) g_delta <= C' sqrt(p) delta^{(1-a)/2 - 1/p}, with N+1<=2/delta. The single-event exponent is gamma_p = p(1-a)/2 - 1: sum_{m=0}^N E||X_m||_{C^theta}^p <= 2 C^p p^{p/2} delta^{p(1-a)/2} delta^{-1} = A_p delta^{gamma_p}, A_p = 2C^p p^{p/2}. At a=1/2, p=6 this gives gamma_p = 6*(1/2)/2 - 1 = 1/2, matching the supplied finite output; a doubling of g_delta would instead give delta^{p(1-a)-1} and gamma_p=2, which is not the source model. The square-exponential estimate: choose integer n0 with n0(1-a)>=1, and for n>=n0 use the p=2n moment bound, E M_delta^{2n} <= 2C^{2n}(2n)^n delta^{n(1-a)-1} <= 2C^{2n}(2n)^n; finitely many n<n0 are controlled by Lyapunov against the 2n0 moment, and n!>=(n/e)^n gives the geometric tail 2 sum_{n>=n0}(2ecC^2)^n for small c, so sup_delta E exp(cM_delta^2)<infty. This M_delta, the scaled block maximum with g_delta occurring once, is what drives the local Young bound E_{op,delta} <= L_B(M_delta+delta) on {M_delta<=1} and the event E_delta in PROOF126.",
+      "historical_fault": "My prior APP-B prose displayed M_delta as g_delta multiplied again by max||X_m||, double-counting the already-absorbed factor g_delta.",
+      "correct_now": "M_delta = max||X_m|| with X_m = g_delta A_R(W_delta,m), so g_delta appears exactly once; gamma_p=p(1-a)/2-1 is reproduced.",
+      "source_repair_needed": false
+    },
+    {
+      "id": "COR-CONSTANT-COLUMN-TYPES",
+      "claim": "RAW120 constant-column input/output types under L_psi",
+      "verdict": "PASS",
+      "reason": "Historical fault: my prior report wrote 'constant columns via L_psi(psi,0),(0,psi)', presenting the E-images as though they were the F-inputs. Correct now: F=E+R^2 with elements (e,c1,c2). The two pure constant-coordinate inputs are the F vectors e_{c1}=(0,1,0) and e_{c2}=(0,0,1) in the R^2 summand (with zero E-part), not (psi,0),(0,psi). Under L_psi(e,c1,c2) = psi*e + (c1 psi, c2 psi), these map to L_psi(0,1,0)=(psi,0) in E and L_psi(0,0,1)=(0,psi) in E. Therefore in the driver A = i M_E L_psi the two retained constant-response columns are A(0,1,0)= i M_E(psi,0) and A(0,0,1)= i M_E(0,psi), both living in F via the inclusion i. This is explicit coordinate mapping and finite propagation for the total data, and it uses the correct F-to-E bounded map L_psi; density of E in F is neither asserted nor needed.",
+      "historical_fault": "My prior returned wording conflated the E-image values (psi,0),(0,psi) with the F coordinate inputs.",
+      "correct_now": "The F inputs are (0,1,0),(0,0,1); their E-outputs under L_psi are (psi,0),(0,psi); the retained columns are i M_E of those outputs.",
+      "source_repair_needed": false
+    },
+    {
+      "id": "RAW119",
+      "claim": "RAW119 PROOF119 L:exact-canonical-scaling",
+      "verdict": "PASS",
+      "reason": "Reassessed after correction. The scaling algebra, Green measure pushforward, cutoffs, vertex factor delta^{-1/2}, and equality-in-law scope are all correct; the prior defect was only my report's density-form derivation line, not this proof."
+    },
+    {
+      "id": "RAW120",
+      "claim": "RAW120 PROOF120 L:raw-block-inputs",
+      "verdict": "PASS",
+      "reason": "Reassessed after correction. The same-W block isometry, b=sqrt(delta)H covariance, moment bound and separability are correct; the only fault was my prose misstating the constant-column type, while the source's (psi,0),(0,psi) statement is correct as E-images of the F coordinate inputs."
+    },
+    {
+      "id": "RAW122",
+      "claim": "RAW122 PROOF122 L:raw-block-uniform-error",
+      "verdict": "PASS",
+      "reason": "Reassessed after correction. M_delta is max||X_m|| with X_m already containing g_delta; the all-moment, gamma_p, n0 square-exponential and UI arguments are correct, and the prior double-factor wording is corrected without touching the source. The finite gamma_p values are consistent."
+    },
+    {
+      "id": "RAW123",
+      "claim": "RAW123 PROOF123 L:raw-block-indexed-cone",
+      "verdict": "PASS",
+      "reason": "Reassessed after correction. The rebase coefficient is nu, not rho; the correct budget nuM_z + M_l eps M_z <= rho and the concrete value 8175/8192 are established, and the terminal/N=1/tau=0 conclusions remain valid."
+    },
+    {
+      "id": "APP-A",
+      "claim": "APP-A-SCALING-COUPLED-LAW",
+      "verdict": "PASS",
+      "reason": "Reassessed: PROOF119 equality-in-law is now rebuilt through the weak measure pushforward and the Fourier transform of the wave Green measure (valid for d=3), and PROOF120-121 remain literal same-W/norm-Borel constructions; the coupling scope and the E-not-dense-F split are unchanged and correct."
+    },
+    {
+      "id": "APP-B",
+      "claim": "APP-B-ALLMOMENT-CONE-TERMINAL",
+      "verdict": "PASS",
+      "reason": "Reassessed: the all-moment machinery is correct with g_delta appearing once in X_m and M_delta, and the cone amplitude uses the nu-budget correctly; the prior erroneous double-factor and rho-for-nu prose are corrected without any change to the source's conclusions."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Prior returned-report prose fault only: the Green scaling was displayed through a formal density form r_T^(1-d)G_d r_T^d dz rather than the weak measure pushforward; the source display itself is concise but correct.",
+      "Prior returned-report prose fault only: the RAW123 amplitude chain substituted rho for the rebase coefficient nu; the source uses nuM_z<=rho/2 and is correct (8175/8192).",
+      "Prior returned-report prose fault only: APP-B wrote M_delta=g_delta*max||X_m||, double-counting g_delta; the source has X_m=g_delta A_R(W_delta,m), so M_delta=max||X_m|| contains g_delta exactly once.",
+      "Prior returned-report prose fault only: the RAW120 constant-column sentence presented (psi,0),(0,psi) as inputs rather than as E-outputs of the F coordinate inputs (0,1,0),(0,0,1)."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "No source repair is needed: all four adjudicated issues are historical wording errors in my prior returned report, while the supplied source slices are correct; accordingly required_repairs is empty.",
+    "No tools, execution or network were used: the supplied raw-block-finite-check.py and raw-block-finite-results.json were inspected as claims and the finite values were hand-recomputed, not run.",
+    "The downstream named inputs (L:joint-fixed-order, L:vertex-crude, P:source-gaussian-transfer, P:source-ordinary-response, P:constant-young-linear, P:constant-gaussian-flow, L:constant-source-solution, P:masked-source-moments, P:masked-canonical-transfer, compact-F projection/complement/raw-profile/original-common-trial, P:actual-operator-driver) are read as embedded statements/hypotheses/interfaces, not re-derived line-by-line within this six-slice unit.",
+    "Primary sources are selected extracted pages only; the friz-hairer/taking Young page numbers and teschl printed/physical page distinctions are recorded only as already supplied, with no additional reading or image credit.",
+    "PROOF125 and PROOF126 remain application-checked named analytic inputs, not re-rated as new proof targets, and no new votes/051/downstream/theorem conclusion was drawn.",
+    "This correction preserves the six-target scope and does not grant whole214/global, source-image/render, Kimi, or final-cold-acceptance clearance."
+  ]
+}
