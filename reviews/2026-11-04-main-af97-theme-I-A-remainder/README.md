@@ -18,11 +18,17 @@ readback verifies all79payloads and all28af97modules. Full input/audit capsule
 has per-member hashes and bounded secret-pattern scan; raw global config is
 never stored. The original preparation and audit preimages remain identifiable.
 
-One fresh invocation started00:44:23UTC after READY authority58c0085 was
-committed/pushed/synchronized. Existing native handle60190 is recorded in
-phase-state.json; no returned report is inferred.
-Combined output131072 and conditional budget980261/head68315 are explicit;
-empirical planning is not an exact tokenizer or semantic-depth guarantee.
-No automatic retries or followups; no provider report at this snapshot. The
-old pilot and full-af97 lineages stay closed. All source/PDF/80Lean22seams,
-local dispositions and whole/Kimi/image/fullvisual/freshcold/goal gates remain.
+The one fresh original report is now terminal and CLOSED, with ZERO factual
+addenda. ActualPASS_WITH_NOTES/medium,8CHECKED/7LIMITED; all15/22/15/2records
+complete,23metadata/scope refusals retained. Root read all public mathematics
+and author checks. Known report-only formula/caption/scope issues are annotated
+against correct source, without a synthetic repaired PASS or additional APIcall.
+See root-adjudication.md. Medium and a rawPASSheader do not clear HIGH/full15.
+
+The93member terminal capsulee32f901f preserves everyactualnative object, root/
+author qualifications and immutable fullinput136a09ce reference at58c0085.
+All members are independentlyrehashed; boundedsecret scan is clear, rawglobal
+config/.git/PNGexcluded. Source/PDF/80Lean22seams/localgrades remain unchanged.
+The full originalgoal and genuine whole-coupled DeepSeek, Kimi/sourcepixel/
+fullvisual/freshcold/private delivery requirements remain OPEN. Future Bunits
+and authorGreen-limit working are distinct unfinished programme work.

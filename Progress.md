@@ -7,19 +7,19 @@
 ## Current state
 
 
-- **Themed MAIN A.remainder RUNNING (2026-11-04UTC):** actual15proofs002009011–023,
-  22formal/15obligations/2givenhypotheses are sealed with full28/214/240/13
-  context and all70required oldframes. Actual prior math/conditions/errors
-  retained; no grade premises. Root read source/tasks/dossier/contracts;
-  904selection fidelity and2053mechanical checks/13refusal controls pass.
-  Newtypedglobal/conditionalhypotheses, exact OWN IDs and route-bound versus
-  intrinsic-constant distinction are explicit. Matching--pure actualagent
-  DeepSeekV4Pro/all12toolsfalse/compactionfalse/share disabled. Sourcecarrierc46cdc90,
-  promptcb35b724; conditional980261/head68315/131072combined. One fresh native
-  invocation started00:44:23UTC AFTER READY58c0085 was synchronized.
-  PID1553652/start63319008, supervisor1553634/exec60190; no result yet.
-  No math/grade/source/PDF/whole/image/Kimi/cold/goal credit. Evidence:
-  reviews/2026-11-04-main-af97-theme-I-A-remainder/.
+- **Themed MAIN A.remainder CLOSED (2026-11-04UTC):** actualDeepSeekV4Pro
+  PASS_WITH_NOTES/medium,8CHECKED/7LIMITED; complete15proof/22formal/15obligation/
+  2given records, stop/tools0/fresh2/exactsource80verified. Root read every
+  publicfield and both author batches.002/009/018/020–023 remain incomplete
+  independent reconstruction, not new source counterexamples. Report-only
+  factorialcube/Greenprefactor/whitehalf and dependency-scope errors are
+  annotated. Original23validatorrefusals/rawmedium retained; ZEROaddenda,
+  no morecurrentlineagecalls. No source repair identified or localHigh change.
+  Evidence: reviews/2026-11-04-main-af97-theme-I-A-remainder/root-adjudication.md.
+  Next programme work prioritizes B.phase036–043 andB.interval044–051, with
+  alternatives/comparisons still assigned and alloriginalscope retained.
+  A bounded authorGreen-limit expansion is being prepared for future actual
+  constructor-join work, not an Arconfidence retry. No next native call yet.
 
 
 - **Themed MAIN A.pilot CLOSED (2026-11-03):** one fresh DeepSeek V4 Pro
@@ -13644,3 +13644,35 @@ promptcb35b724 and matchingpureprofile/source guards passed. Actual15proof/
 131072combinedcap. Actual model/finish/publicmath result willbeverified at
 collection. No report or mathematicalgrade, source/PDF/Lean/localdisposition,
 whole/image/Kimi/cold/goal advance inferred merely from launch.
+
+
+## 2026-11-04UTC: Ar original closed without record-repair reruns
+
+ActualfreshDeepSeek ses_e5bfc5dbcffelSKynRO2VWOcz1 finished00:50:52UTC after
+389.396s, exit0/stop/tools0/source80clean/promptcb35exact/full2export. Actual
+652516input,29368public+8262reasoning=37630combined under131072; complete
+96334byteJSON15proof/22formal/15obligation/2given. Root read EVERYpublicfield
+andbothcompleteauthor mathbatches. ActualPASS_WITH_NOTES/medium8CHECKED7LIMITED;
+002009018020021022023 stillunreconstructedatstatedanalyticsteps. No source
+error or repair located; readinglimits are not newlyimposed mathematicalhyps.
+
+Root annotates returned018denominatorcube vsq=3-alpha (whitek3counter162<216),
+011areaGreenfactor1/16 and017closingc_delta/2 versusKspc_delta, convergence/
+DCTcaptions and consumer-scope issues.23originalmechanicalrefusals preserved:
+12non-exact mathpointers/5LIMITEDtargetworkclaims/2ownerunits/3contextroles/
+1header-fullworkcontradiction.015/020actualmomentbridgesneed002;019mayuseonly
+018'svalidatedspatialclause;011/012sharedindependentmajorantnotwholeproofcycle.
+Hsp20assumes21establishes22applies23refutes. Root's mistakenANY-Hspguardreading
+is explicitlycorrected byactualcodebranch020only, no artificialgrammarfault.
+
+ZERO factualaddenda; rootclosedoriginalwithout extraAPIcallmerelytorepaira
+below-thresholdrecord. Correctsource/authorcounterexamples annotate obvious
+returnederrors; no syntheticmergedPASS, HIGHconversion or extraindependentvote.
+93terminalcapsulee32f901fcfbe3cc9048a4130805b76bc7ad0ecd28ba275a7f0a8e75ae97d543b
+wasper-member rehashedbyauthor+root; full136inputa09ce exact58c0085blob referenced.
+Nativeprivate reasoningnotusedasverdict; rawglobalconfig/.git/PNGexcluded and
+boundedsecretscansclear. Sourceaf97/PDF096cb3/index7/ledger54/local210HIGH/
+010unaccepted/034189193pending/80Lean22seams unchanged. AllwholeHigh/Kimi/
+pixels/fullvisual/cold/finaldelivery/goalremain. Bphase/interval corepriority
+and an explicitexistingGreen-passagenote addressactualuncompleted work next;
+no confidence-only Arretry or source-changingprooftoy authorized.
