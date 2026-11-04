@@ -7,7 +7,7 @@
 ## Current state
 
 
-- **Themed MAIN A.remainder READY (2026-11-04UTC):** actual15proofs002009011–023,
+- **Themed MAIN A.remainder RUNNING (2026-11-04UTC):** actual15proofs002009011–023,
   22formal/15obligations/2givenhypotheses are sealed with full28/214/240/13
   context and all70required oldframes. Actual prior math/conditions/errors
   retained; no grade premises. Root read source/tasks/dossier/contracts;
@@ -16,7 +16,8 @@
   intrinsic-constant distinction are explicit. Matching--pure actualagent
   DeepSeekV4Pro/all12toolsfalse/compactionfalse/share disabled. Sourcecarrierc46cdc90,
   promptcb35b724; conditional980261/head68315/131072combined. One fresh native
-  invocation authorized AFTER this READY checkpoint commit; not yet invoked.
+  invocation started00:44:23UTC AFTER READY58c0085 was synchronized.
+  PID1553652/start63319008, supervisor1553634/exec60190; no result yet.
   No math/grade/source/PDF/whole/image/Kimi/cold/goal credit. Evidence:
   reviews/2026-11-04-main-af97-theme-I-A-remainder/.
 
@@ -13630,3 +13631,16 @@ No newArticleclone/worktree. One fresh invocation authorized only afterthis
 READY authority is committed; no provider yet at this snapshot. No auto-retry/
 followup, priorlineages closed. AllwholeHIGH/Kimi/pixels/fullvisual/cold/private
 requirements and local210HIGH/010unaccepted/3editorialstates remain.
+
+
+## 2026-11-04UTC: A.remainder actual native invocation
+
+One guarded fresh invocation started00:44:23.121365UTC afterREADY58c0085 was
+committed/pushed/<HUB>-equal. PID1553652/start63319008,supervisor1553634,
+exec60190. Inspect that exact existinghandle/terminalsidecars; no automatic
+restart afterobservationaltimeout. Heldcarrierc46cdc90/all80sourcefiles,
+promptcb35b724 and matchingpureprofile/source guards passed. Actual15proof/
+22formal/15obligation/2given records and complete source/math/primary context;
+131072combinedcap. Actual model/finish/publicmath result willbeverified at
+collection. No report or mathematicalgrade, source/PDF/Lean/localdisposition,
+whole/image/Kimi/cold/goal advance inferred merely from launch.

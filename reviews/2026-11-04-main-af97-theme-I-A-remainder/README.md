@@ -18,7 +18,9 @@ readback verifies all79payloads and all28af97modules. Full input/audit capsule
 has per-member hashes and bounded secret-pattern scan; raw global config is
 never stored. The original preparation and audit preimages remain identifiable.
 
-One fresh invocation is authorized after this READY checkpoint is committed.
+One fresh invocation started00:44:23UTC after READY authority58c0085 was
+committed/pushed/synchronized. Existing native handle60190 is recorded in
+phase-state.json; no returned report is inferred.
 Combined output131072 and conditional budget980261/head68315 are explicit;
 empirical planning is not an exact tokenizer or semantic-depth guarantee.
 No automatic retries or followups; no provider report at this snapshot. The
