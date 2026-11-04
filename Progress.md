@@ -13567,3 +13567,20 @@ Sourceaf97/PDF263/096cb3, indexv7/ledger54,80finiteLean22seams andlocal210HIGH/
 Kimi/sourcepixels/fullvisual/freshcold/goal. NewA.remainder15proof/22formal
 packetpreparationaddressesactualunworked002/009/calibrationownership; it is
 not a confidence-onlyrerun. Full214/240/13/alloriginalmodels/actualC2 remains.
+
+
+## 2026-11-03: startup-parity lesson promoted without scientific clearance
+
+CanonicalLe-AI-Lab14c180d2668d613ec2d322ce7c622c70b336efdc updates the existing
+phase-probe-must-share-run-startup-flags skill and datedretro, no newskill or
+routingpolicy. The initial nonmatching no-pure diagnostics stay; matchingpure
+checks proveonlytheiractualscope. Toolcountsare35vs12includinginvalid/23extra;
+initial34“plugintools” was a count/labelslip. Rawglobalconfig stayedanonymous.
+
+Phase2.5=601description/81headline, skill-gate/sync/check/strictstartupPASS;
+Claude/OpenCode/Codex byteexact; actualretrieval1/1/2/6/1 preserved including
+broadqueryrank6. Root independentlychecked fourownedcommitpaths, emptyindex,
+allfourforeignfilehashes andruntimebytes. Origin/GW14cparityverified; no external
+notification sent. Only owned lesson/indexpaths committed; foreignWIP remains.
+Receipts:reviews/2026-11-03-durable-pure-preflight/. These are operationalgates,
+not a confidenceconversion, proof/source-image/Kimi/cold or goalacceptance.
