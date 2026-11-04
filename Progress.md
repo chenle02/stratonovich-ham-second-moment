@@ -6,6 +6,27 @@
 
 ## Current state
 
+- **Bounded v3 protocol/retention audit accepted; runtime arithmetic fix pending
+  (2026-11-04 UTC):** Root read the complete independent final audit and
+  verified its10-member manifest.56 independent cases plus exact99controls/
+  40minimum,454source identities,21/60scope/global/local matching,108-to123
+  lossless math retention and actual127-frame/81alias/token/special-spelling
+  replay found no remaining bounded v3 issue. This closes preparation audit
+  only, not mathematical review, a source/visual gate, final fit or a packet.
+  Full audit and Root disposition are retained in
+  reviews/2026-11-04-B21-prototype-completeness-audit/v3-approved-protocol/.
+  Root read all four written runtime-v1 programs and reproduced31pure+7actual
+  virtual-binding controls without mutation or CLI calls. Written reserve24953
+  and1112object tokens give a correct conditional1030633/head17943. Independent
+  runtime audit found check_contract nevertheless accepts zero/negative/stale
+  plan totals. Root authorized a bounded NEW runtime-v2 linking a pinned exact
+  capacity receipt, prompt/code/config identities and positive/full component
+  arithmetic, with all extra code bytes recounted. Dormant builder-v1 is held;
+  its minimal successor must pin the corrected stage. No actual packet,
+  materialization authority, Git seal, preflight or provider call exists.
+  All original science/closed59H38/grades/wholeHIGH/Kimi/cold/delivery stay OPEN.
+
+
 - **V3 Root replay and preserved harness incident (2026-11-04 UTC):**
   V3 uses distinct PREBOUND_B21_PROTOTYPE_3/scope3. Root read its actual code
   delta, grammar and corrected011/012 finite-sector associations;210–213 stay
