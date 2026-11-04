@@ -1,0 +1,107 @@
+{
+  "kind": "FACTUAL_ADDENDUM",
+  "phase_id": "ThemeII.B.interval",
+  "source_commit": "af97ae4db921a660b0a4ed1ffbe9b6f53a487e2b",
+  "preserved_original_assessment": "PASS_WITH_NOTES / medium, as issued; this addendum reopens no vote, issues no new verdict/confidence, and regenerates no part of the original report.",
+  "corrections": [
+    {
+      "original_JSON_pointer": "/proofs[3]/actual_working[5]; /proofs[3]/constants_and_limits[2]; /proofs[3]/constants_and_limits[3]",
+      "actual_corrected_working": "The final E:fixed-split-bound (source LF5893-5898) carries exactly ONE outside R_alpha^k with NO R inside the local products; the identity |C|+sum_{i in B}k_i = k (LF6211) collects the total degree. The consistent final inequality is k^2 C_split^k R_alpha^k ||v||_{1/T}^2 [prod_{i in C}(sigma_i^2 h_i^2 lambda^(alpha-2))][prod_{i in B}(sigma_i^2 h_i^(4-alpha))^{k_i}/(k_i!)^nu (1+k_i/(lambda h_i))^{ell_i}], with C_split=100^8 e^8 max(1,12 delta_{alpha/2}^{-2}). Inside the earlier split-before-absorption (LF6180-6187) the cross product and the radius q_{rho,i} carry R only as pre-collection normalizations; the radius factorization (LF6195-6204) gives rho_i^{-2k_i} <= (12 delta_a^{-2})^{k_i}(R_alpha sigma_i^2 h_i^{4-alpha})^{k_i}/(k_i!)^nu, and only afterwards is a single R_alpha^k pulled out. The three 048 local weights (singleton mean R_alpha h_i^beta(1+1/(lambda h_i)); singleton cross R_alpha lambda^(alpha-2)h_i^(2-alpha0); higher R_alpha^l h_i^(beta l)(1+l/(lambda h_i))^2/(l!)^nu) are obtained by distributing that one R_alpha^k with one R_alpha per unit of total degree, NOT by adding R on top of it.",
+      "consequence_for_affected_claim": "Under Gamma -> b Gamma, R_alpha -> b R_alpha, so the single R_alpha^k scales as b^k, the correct total-degree-2k amplitude degree; the literal combined reading (outside R^k AND local R) scales as b^{2k} and already fails at k=1, r=q=1 (one cross color, total degree 2) for small b>0 with a nonzero first response. 051's enlarged-amplitude bound remains B(T;r)=e(T+2)^d exp{C(r^2 R_alpha)^{1/nu} T^kappa} and the final B(T;1)=e(T+2)^d exp{C R_alpha^{1/(3-alpha)} T^kappa}; the final C=C(alpha,alpha0) is unaffected.",
+      "remaining_obligation": "Do not normalize R_alpha>=1 and do not absorb covariance into the parameter-only C; keep the single-R^k form of 047 and the distributed-R form of 048 equivalent, not multiplicative."
+    },
+    {
+      "original_JSON_pointer": "/joins[0]/inputs[target=PROOF009]; /provisional_dependencies[2]",
+      "actual_corrected_working": "009 is a PARALLEL PHYSICAL-DESIGNATION premise, not DOWNSTREAM_CONSUMER/CONTEXT_ONLY and not a rate antecedent: it does not consume 051, and it is not an input to the prelimit B_r, to C=C(alpha,alpha0), or to the canonical-series bound. Its actual hypotheses are H:homog plus 006 joint fixed-order limits plus 008 vertex-summability plus the occupied multiplication bound 2 sqrt(n+1) plus fixed-external-width Green averaging; its consumer effect is limited to designating the SAME canonical series as the original Stratonovich mild solution, with no uniqueness and with none of its fixed-covariance crude constants entering the rate. Reclassify to premise_role=PREMISE with use_scope=IDENTIFIED_SUBCLAUSE and clause_id='ninth-mild-designation' (parallel branch only), keeping state=PRIOR_MATH_CONSUMER_VALIDATED because 009 is not reconstructed within this interval workload.",
+      "consequence_for_affected_claim": "The physical labelling of the bounded series as the original mild solution is a real premise of the theorem's own wording (T:full-upper says 'let u be the canonical expansion solution, constructed as a Stratonovich mild solution in P:mild-construction'), while the numerical rate and constant remain fully independent of it; the false direction '009 downstream of 051' is removed.",
+      "remaining_obligation": "Keep the two branches explicit in every downstream statement; a validated identified subclause (the 006+008 mild designation) must not be read as acceptance of a pending full parent, and the earlier constructor mixed-coordinate sentence (G(t-s,x-dz) W_a(s,x-z) X_{n-1}(s,x-z)) remains an error to be avoided in favor of the correct backward Green/product-measure form G(t-s,x-dy)W_a(s,y)X(s,y) or G_{t-s}(dz)W_a(s,x-z)X(s,x-z)."
+    },
+    {
+      "original_JSON_pointer": "/semantic_cycles[1]; /model_and_constant_audit[2]",
+      "actual_corrected_working": "State two branches explicitly. Numerical/rate branch: 048+049+positive compact-data localization -> prelimit B(T;r)=e(T+2)^d exp{C(r^2 R_alpha)^{1/nu} T^kappa} (every r>1), then B_r plus 006 fixed-order L2 limits -> 050 -> canonical upper B(T;1); 009 is NOT an input and its crude constants are absent from C. Physical-labelling branch: 006+008 -> 009 identifies the same canonical series as the original Stratonovich mild solution; this runs in parallel with (not downstream of) 051 and only combines with the numerical bound in the theorem's explicit mild-solution sentence. Replace every occurrence of 'downstream designation' / 'separate 009 designation' with this two-branch phrasing.",
+      "consequence_for_affected_claim": "Removes a false direction (009 downstream of 051) and prevents the physical label from being hidden as context-only; the acyclicity of the numerical chain is restated without corrupting the physical-designation edge.",
+      "remaining_obligation": "No uniqueness claim; keep no 009 crude constants in the rate."
+    },
+    {
+      "original_JSON_pointer": "/finite_controls[0]",
+      "actual_corrected_working": "The cT^3/6, cT^3/12, cT^3/3 values are the STATIC alpha0=0 single-interval calibration (as labelled in m/independent-upper.txt), not the fractional-time model, and my parameters silently omitted that boundary. For actual a=alpha0 in (0,1), spatial white Gamma=c delta0 and G_t=(1/2)1_{|x|<t}: E|Y1|^2 = c int_0^T (T-s)(int_0^s (s-r)^{-a} dr)ds = c T^{3-a}/[(1-a)(2-a)(3-a)], E[Y2] is one half of this, and the total order-two is 2 E[Y2]+E|Y1|^2 = 2c T^{3-a}/[(1-a)(2-a)(3-a)]. The coefficient-one self/empty-chain conclusion is preserved, and no static time is imposed on 049 or 051.",
+      "consequence_for_affected_claim": "The finite control is restored to the fractional-time normalization while retaining its falsifying power for any missed empty-chain/self-contraction factor; the static value remains only the alpha0=0 boundary check.",
+      "remaining_obligation": "Keep the a-dependence explicit; do not let the static calibration leak into 049/051 where a in (0,1)."
+    },
+    {
+      "original_JSON_pointer": "/proofs[1]/actual_working[4]; /proofs[1]/constants_and_limits[1]",
+      "actual_corrected_working": "The actual scalar bounds are |C_h(w)|<=e^{Lambda h}, |F_h(w)|<=2(1+Lambda h)e^{Lambda h}, |H_h(w)|<=2 e^{Lambda h} on the numerical range; applying CP (1+sqrt2<3) gives the OPERATOR norms 3 e^{Lambda h}, 6(1+Lambda h) e^{Lambda h}, 6 e^{Lambda h}, and the final weighted blocks 3, 12(1+Lambda h), 12, 12 (sum <=100 e^{2 Lambda h}) count the CP factor and the four root-comparison factors exactly once. The caption must not label the 3,6,6 as scalar sup bounds. A separate z-circle condition applies only to the specialization V=zB with D the sandwich of B; the V-general hypotheses of the lemma are ||A_rho^{-1/2} V A_rho^{-1/2}||<=D rho^{a-2} with D<=delta_a Lambda^{2-a}, and no free-standing |z|<=delta_a Lambda^{2-a}/d is an assumption of the lemma.",
+      "consequence_for_affected_claim": "Removes confusion between scalar and operator constants and between the general nonselfadjoint V statement and its coupling-circle specialization; no constant is double-counted.",
+      "remaining_obligation": "CP remains a named import with bounded hypotheses."
+    },
+    {
+      "original_JSON_pointer": "/proofs[3]/constants_and_limits[4]",
+      "actual_corrected_working": "Separate the two quantities: the common partition/segment count is M <= 2|A|+m+1 <= 3k+1 pieces (source E:split-segment-product), while the integrated phase weight is int Lambda(t)dt <= lambda T + sum_{i in A} omega_i |I_i^T| <= 2k (source's exponent in M_k=100^{3k+1} e^{4k}: 3k+1 from the piece count and 4k = 2 x 2k from two copies of the integrated weight). The caption must not write 'integrated partition <=3k+1'.",
+      "consequence_for_affected_claim": "Distinguishes the segment count (3k+1) from the integrated Lambda weight (2k), removing a conflation in the explanation of M_k; the 051 global dyadic count 78T/i remains separately distinct.",
+      "remaining_obligation": "None."
+    },
+    {
+      "original_JSON_pointer": "/proofs[4]/actual_working[5]",
+      "actual_corrected_working": "The summation uses the ABSOLUTE VALUE of each order-k coefficient bound (the nonnegative scalar majorant D_coeff^k R_alpha^k T^{beta k}/(k!)^nu, plus the order-zero free-energy term e), not a claim that the arbitrary-phase interval energy coefficients themselves are nonnegative. Correct phrasing: summing the coefficient bounds in absolute value gives E||U_F(T;1)v||_{1/T}^2 <= (e+Y-1)||v||^2 <= e Y ||v||^2 with Y=e^{nu x^{1/nu}}, x=C R_alpha T^beta.",
+      "consequence_for_affected_claim": "Prevents interpreting the phase-energy coefficients as nonnegative; the bound is an absolute-value majorant and no monotonicity of the coefficients is asserted.",
+      "remaining_obligation": "None."
+    },
+    {
+      "original_JSON_pointer": "/proofs[0]/actual_working[4]",
+      "actual_corrected_working": "For R_alpha=0 (Gamma=0) the field vanishes and every positive order vanishes. 'u=1' holds only for the original flat datum (1,0); for a general phase (f,g) the zero-covariance evolution is the FREE wave u(t)=C_t f + G_t*g, not the constant one. Qualify the zero branch accordingly.",
+      "consequence_for_affected_claim": "Corrects the zero-covariance statement to the data-dependent free wave; the interval lemmas are phase estimates and are not restricted to u=1.",
+      "remaining_obligation": "None."
+    },
+    {
+      "original_JSON_pointer": "/proofs[5]/actual_working[1]; /proofs[5]/inputs",
+      "actual_corrected_working": "The field hypothesis is JOINT mean-square continuity on each open cell of a finite partition of [0,T] TIMES R^d (jointly in time and space), not merely piecewise time continuity; joint continuity is what yields continuity in every fixed Gaussian L^p of the finite product and hence strong measurability. The lemma itself is stated for a general centered real Gaussian field on [0,T]xR^d with bounded variance and that joint continuity: it is broader than its H:homog instance, and positivity of the covariance K is used ONLY for the nonnegativity/entrywise-comparison clause; the term majorant and coefficient-one Wick formula require neither positivity nor homogeneity.",
+      "consequence_for_affected_claim": "Makes the 049 hypotheses exact and keeps its standalone breadth without over-importing H:homog where the lemma does not need it.",
+      "remaining_obligation": "None for these captions."
+    },
+    {
+      "original_JSON_pointer": "/primary_applications[1]/own_application_working",
+      "actual_corrected_working": "H^{k-1}(2A_M+B_M^2) is the contribution of ONE marked temporal edge inside the 006 fixed-order difference-of-products (first type once: 2A_M; second type twice: B_M^2), with A_M=N1^{(M)}(1), B_M=N2^{(M)}(1). The full finite-order/horizon remainder retains the union over the k possible marked edges (factor k) and the finite-horizon undamping e^{T1+T2}: 0 <= F_{eps,0,D}-F_{eps,eta,D} <= k e^{T1+T2} H^{k-1}(2A_{1/eta}+B_{1/eta}^2). This is a fixed-order/horizon bound, not a new uniform all-order conclusion; H=max(1,2A,B^2) is the finite per-edge cap.",
+      "consequence_for_affected_claim": "Restates the 006 marked-edge remainder with its union factor and horizon undamping so the caption does not imply all-order uniformity.",
+      "remaining_obligation": "The imported author pairing inequality is used only at this fixed-order step; no whole-theorem reproof."
+    },
+    {
+      "original_JSON_pointer": "/findings[2]",
+      "actual_corrected_working": "S068/S082 being CONTEXT declarations with no OWN proof body is exactly the assignment's prescribed scope, not a manuscript defect. Remove or recast the MANUSCRIPT_DEFECT label: they are required scope/application checks whose appropriate status is CHECKED as context scope; any record of them should be a scope note, not a defect.",
+      "consequence_for_affected_claim": "Avoids manufacturing a defect where the input contract requires exactly a context classification.",
+      "remaining_obligation": "None."
+    },
+    {
+      "original_JSON_pointer": "/model_and_constant_audit[2]/remaining_obligation",
+      "actual_corrected_working": "The full OWN inventory is 214 (not 218): write 'the 214 OWN/240 formal/13 coupled full-goal obligations are not discharged by this 8/10/1 workload'.",
+      "consequence_for_affected_claim": "Corrects the inventory count.",
+      "remaining_obligation": "None."
+    },
+    {
+      "original_JSON_pointer": "/finite_controls[4]/parameters",
+      "actual_corrected_working": "The condition 6T<=H0<12T selects the starting scale H0 of the three nested alternating-shift dyadic grids; it is not a lower bound T>=6 on the model horizon. The final bound is E u^2(T,x) <= e(T+2)^d exp{C R_alpha^{1/nu} T^kappa} for T>=1.",
+      "consequence_for_affected_claim": "Removes a phantom T>=6 restriction; the volume ratio (T+2)^d and the bound hold for T>=1.",
+      "remaining_obligation": "None."
+    },
+    {
+      "original_JSON_pointer": "/limitations[4] (and any other occurrence of 'Section 5(iii)')",
+      "actual_corrected_working": "The excluded source convergence argument is the author-version Section 5(ii) (the onefold solution identification), together with (5.3)-(5.4) and source 4.1/L4.4; write '009 designates the same series without importing source Section 5(ii) or any uniqueness result'.",
+      "consequence_for_affected_claim": "Corrects the source-section label to Section 5(ii).",
+      "remaining_obligation": "None."
+    }
+  ],
+  "affected_scope": [
+    "PROOF047 covariance-amplitude routing (single outside R_alpha^k with no R in the local products; the three 048 weights carry the distributed R_alpha one per unit of total degree): the final B(T;r), B(T;1), C=C(alpha,alpha0) and R_alpha^{1/(3-alpha)} amplitude are UNCHANGED.",
+    "009 role classification in the join and provisional dependencies, plus the two-branch qualification in semantic_cycles[1] and model_and_constant_audit[2]: parallel physical designation (006+008->009), not downstream of 051 and not a numerical-rate antecedent.",
+    "finite_controls[0] restored to the fractional-time a in (0,1) normalization, retaining the coefficient-one self/empty-chain conclusion.",
+    "Caption-level fixes in 044 (zero branch = free wave for general phase data), 045 (scalar vs operator factors; V-general vs z-circle hypotheses), 047 (segment count vs integrated weight), 048 (absolute-value majorant), 049 (joint time-space continuity; standalone lemma breadth with positivity only for comparison), the 006 primary application (marked-edge union factor and horizon undamping), findings[2] (CONTEXT scope is not a defect), and the inventory/section labels (214, T>=1, Section 5(ii)).",
+    "No affected claim changes status: the eight OWN proofs remain CHECKED, S068/S082 remain CONTEXT scope checks, and the JOIN-INDEPENDENT-UPPER remains CHECKED."
+  ],
+  "limitations": [
+    "The original PASS_WITH_NOTES/medium assessment is preserved verbatim; this addendum issues no replacement verdict or confidence and is not a re-review.",
+    "The earlier 23 validator refusals remain literal: 11 current and 10 prior math reference fields are TeX LF locators rather than resolved numeric JSON math pointers, and 2 are the 009 role/state mismatches addressed here; this addendum corrects the mathematical captions and the 009 scope but does not manufacture resolved numeric JSON pointers or regenerate the report.",
+    "The Crouzeix-Palencia Theorem 6 proof and the author universal Theorem 3.1 induction remain named imports; all pending full-parent conditions are retained.",
+    "All original d1/2/3 model classes, covariance amplitude, data (1,0), zero-covariance branch, Green-before-noise convention and the fixed limit-order scope are unchanged.",
+    "The earlier constructor mixed-coordinate sentence (G(t-s,x-dz) W_a(s,x-z) X_{n-1}(s,x-z)) remains an error and is not reused; only the correct backward Green/product-measure form is available for the 009 physical designation.",
+    "The full 214 OWN/240 formal/13 coupled program, the intrinsic actual constant, and all image/Kimi/cold obligations remain ungraded by this interval workload; IDs, labels, and LF locators are not treated as calculation references."
+  ]
+}

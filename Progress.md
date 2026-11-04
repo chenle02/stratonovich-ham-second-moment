@@ -6,6 +6,27 @@
 
 ## Current state
 
+- **B.interval CLOSED, original plus ONE factual (2026-11-04UTC):**
+  Original PASS_WITH_NOTES/medium/all8OWN+10formal+joinCHECKED remains literal.
+  Sole factual266.839s/stop/tools0/exact4-prefix/source88 unchanged corrects
+  covariance counted once,009 parallel physical premise and fractional-white/
+  other captions; no new confidence/verdict. Root read EVERY original/additive
+  public field and all complete author batches. One new explanation wrongly
+  attributes per-copy e4k to two copies; actual one-copy e4k/two-copy e8k and
+  displayed constants are correct. All23 original record refusals and14 new
+  nonresolving locator strings remain; AUTHOR numeric maps are navigation,
+  not synthetic native passes. No source repair/HIGH/localgrade conversion.
+  Evidence:reviews/2026-11-04-main-af97-B-interval/root-adjudication.md.
+  Original31member41112e10 at5858162; final custody preserves full native and
+  author readbacks. ONE factual spent, NO further call in this lineage.
+  Sourceaf97/all28TeX/PDF263/index7/ledger54/80Lean22seams unchanged.
+  Next existing intrinsic194–204 coupled closure has author support/complete
+  finiteness203204 reconstruction and singular/optimizer falsifications; no
+  intrinsic packet/call/acceptance yet. All214/240/13,otherB/C–H/alloriginal
+  models/actualconstant/coupledHIGH/Kimi/sourcevisual/freshcold/wiki/private
+  delivery remain open. GoalACTIVE, not complete.
+
+
 - **B.interval original TERMINAL; one factual batch prepared (2026-11-04UTC):**
   Actual471.225s/stop/zero tools/fresh2/source88 unchanged. Literal
   PASS_WITH_NOTES/medium, all8OWN/10formal/join CHECKED;23record refusals
