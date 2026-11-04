@@ -6,6 +6,26 @@
 
 ## Current state
 
+- **Both variance directions explicitly reconstructed; science boundaries checked
+  (2026-11-04):** RootFULLREADfinal22708B069/071/073/074math/table and13312B
+  authorcrosscheck againstactualsource. OriginalW/Sobolevadjoints/Fouriercancel,
+  squaredtime/zero/resonance, near/farshell/criticalwhitelog, BOTHBesselorientations/
+  evenreflection/balancedgain and fixed-inputL2Omegacolumns are worked. No concrete
+  assignedgap undercovariance/timeclauses; no075–093randomoperator/path/Schatten
+  or moment/wholeHIGH credit. Complete12directory custody/manifests verified at
+  reviews/2026-11-04-variance-current-science-boundaries/.
+  Independentvisibleminimum adopted asdatafloor(all28/214CURRENT/240roles/13joins,
+  fullprimaries/77uses/12domains/54supports/newmath/corrections/unmatchedKEEP).
+  RootadditiveBCwhite(iv) interpretation retained. EXACT31administrativefield/
+  span moves now exist onlyin14COPIEDpostimages; independentevery-nonselected-
+  value/type/key/array/text-envelope/8mixedfields/277meaning checks pass; original
+  142unchanged.14clauseCURRENTcontract semantics independentlymatches277old
+  schema meanings WITHwholeassignment/minimum; Rootadoptsprospective semantics,
+  notwhole-schema/reportomission ornewreviewinput. No directmathparaphrase/drop,
+  modelinput/fit/runtime/providercall/source/PDF/status/grade change. Actualwhole
+  MAININC/coremedium/wholelow and alloriginal completiongates stayOPEN.
+
+
 - **Existing lower/sourceUI deductions explicitly reconstructed by authors
   (2026-11-04):** RootFULLREADfinal24371Blower119–126 and19986BUI095/102/103/110,
   bothprereqtables and independentauthorcrosscheck. ActualsameWlaw/shift,
