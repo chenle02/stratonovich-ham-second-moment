@@ -1,33 +1,42 @@
-Last updated: 2026-11-04 18:39 UTC (Codex)
+Last updated: 2026-11-04 19:22 UTC (Codex)
 
 Full original goal ACTIVE. DeepSeek V4 Pro MAIN; required Kimi and all final
 gates retained. No source/PDF/grade change from this preparation/review wave.
 
 ## ⏭ Next session: where to stand and what to do
 
-Read the completed Root B21 final disposition at ACTIVE
-reviews/2026-11-04-main-af97-calibration-prebound/final/root-final-adjudication.md,
-then derive the next substantive whole-current-source214/240/13 verification
-inventory and its actual complete context plan. Every required source, unique
-mathematical argument, hypothesis, correction and genuine pending premise must
-remain accounted. A new whole-project judgment is required; do not substitute
-a confidence/format retry of the now CLOSED B21 scope. No new packet or provider
-choice is approved at this checkpoint.
+Read the actual whole-current-source inventory, completion matrix, MAIN-versus-
+cold policy and source assembly guide at ACTIVE
+reviews/2026-11-04-whole-project-verification-inventory/. Then inspect Driver's
+bounded retention/context reconnaissance at
+../../../../.local/state/Le-AI-Lab/stratonovich-af97-whole-retention-capacity-recon-20261104/.
+The immediate work is reconciling its exact mathematical-content retention,
+operational-only custody split and actual request-versus-private-code accounting.
+No new format, reduced budget, packet, runtime or provider call is approved.
 
 ACTIVE is ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave,
-branch research/fixed-mask-young-20261031, HEAD3dcbf321fbb75e5e36ee9168c07b8f39749a970f.
-Progress.md is sole workflow authority. Root fully read all public content and
-all THREE author batches, adjudicated every returned qualification and closed
-the original INCONCLUSIVE/medium without adoption or source/grade changes.
-Final29member custody1d97dac3 and original70342c6/18member custody were verified,
-committed,privatelypushed and<HUB>-equal. The original goal stays ACTIVE.
+branch research/fixed-mask-young-20261031,HEADa7d655b6bec8653d444428cc5c1e0b57be38de43.
+Progress.md remains sole workflow authority. The full214CURRENT OWN/240formal/
+13joins scope is concretely inventoried; every required source, unique worked
+argument, hypothesis, correction and pending premise remains accounted. Native
+prose/keyed WORK plus a compact scientific coverage index is a prospective
+option only. A final cold paper+bibliography read is separate and cannot replace
+unfinished MAIN. B21 is CLOSED INCONCLUSIVE/medium, not reusable for confidence.
 
-No native process is live. No addendum fits unchanged full reserves; never
-restart47381/PID1202244 or seek another same-lineage confidence/format vote.
+Driver's known literal additive baseline is884009plain; pure-category neutral
+880115plusONLY131072/16384/32768 hardreserves already1060339,over11763 BEFORE
+runtime/config/overhead/newwholemetadata. Legible field-layout/column factoring
+861326 and extra exact duplicate-value factoring859918 still fail the inherited
+full floor by23311/21903. Restoration alone does not prove reader equivalence.
+New explicit protocol-to-custody/math-caution split and accurate delivered-
+request accounting audits remain separate WIP. Preserve all failed bounds.
+
+No native process is live. No current B21 addendum fits unchanged reserves;
+never restart47381/PID1202244 or seek a confidence/format retry.
 
 ## Pre-flight checks
 
-1. ROOTpre-handoff99406f37c66e41c312ad01030422a98a739b9c72/master; ACTIVE3dcbf32
+1. ROOTpre-handoffe9ee9c936bf917cc0b6a220d8fc191e4046e3860/master; ACTIVEa7d655b
    clean/pushed/<HUB>-equal at snapshot. Sourceaf97 and all28TeX unchanged;
    PDF263 SHA096cb3cd4610c91d7dc8718bd56526e777cdd06ebca41651a8955bc230eb2f35.
    Existing clean build stands. ROOT is launcher; research belongs in ACTIVE.
@@ -88,29 +97,32 @@ restart47381/PID1202244 or seek another same-lineage confidence/format vote.
    account/model/quota probes, substitution or purchase.263PNGs are authorprep,
    not independent visual.80Lean facts/22analyticseams unchanged; no official
    companion repository authorized. No HPC, contacts, public release or setups.
-12.Canonical durable lesson Labd00fdeff/runtime86c4fb02 remains published.
-   Preserve four foreign LabWIP/staging/index entries. New project-isolation
-   lesson/positive-conjunction-diagnosis lesson are recorded but not yet promoted
-   canonically; any later retro must preserve source/runtime while jobs live.
+12.Canonical durable lesson Labd2a22b22/runtimef3b233e4 is now published.
+   Preserve four foreign LabWIP/staging/index entries. The isolation/positive-path/actual-predicate/global-coverage lessons now sync
+   exactly to local and GWClaude/OpenCode/Codex.37bodylines only,desc717/head41;
+   strictstartup/skillgate/synccheck/retrievalexact1 passed.4foreignWIP/runtime
+   bytes+3689nonownedindexentries preserved; no foreigncontents archived.
    Wiki supervisorreplacement DONE/maintained940c704f is datedNov3, not final.
 
 ## Concrete deliverables for the next session
 
-Start from the closed Root source/mathematical disposition and current full
-completion contract. Determine the exact genuine remaining whole-source proof,
-formal,join,source-application and calibration obligations. Prepare a reviewable
-complete inventory and capacity design for that scientific scope, preserving
-the full original models/actualC2 and remaining evidence. No new scope/call may
-merely repair this closed record or request a higher-confidence same result.
+Finish the actual complete whole-input evidence/retention/accounting audit.
+Source-bound inventories and26-rowcompletionmatrix are already preserved;
+reusing them must not duplicate1.38MBofcustody metadata into model context.
+Native mathematical WORK/proof/declaration/join coverage may be designed in
+prose prospectively, with actual hypotheses/consumer/remainder/status and usable
+current references. A final ungraded cold input is only the final complete
+paper+bibliography, not the development history or a substitute MAIN review.
 
 ## Success criteria for the immediate next step
 
-The planned work addresses actual remaining214/240/13 coupled scientific
-verification. Its source/domain/constant/dependency inventory is concrete;
-actual necessary mathematics is retained and capacity is honestly measured.
-No claimed HIGH/goal completion comes from old votes, format fixes, selected
-statements, author audits or a smaller/easier problem. Closed B21 remains
-literal INCONCLUSIVE/medium with its172record failures and actual reading limits.
+An actual source/unique-math-preserving representation remains readable and
+reversible, with exact roles/arrays/types/error-correction/limit provenance.
+Every actual delivered token and all hard output/system/boundary reserves are
+counted accurately; private verifier code/custody is distinguished by evidence,
+not silently cut. No new full-packet admission is inferred from old fits or
+byte savings. Original214/240/13/allmodels/actualC2/independentHIGH/Kimi/source/
+visual/cold/finalprivate scope remains unchanged and unproven as a whole.
 
 ## Anti-success criteria
 
@@ -122,6 +134,17 @@ quarticM as CH's square-rootM; confuse raw/norm moments or static/joint limits;
 claim no-go for all clocks; alter source/siblings/refdb; narrow the original goal.
 
 ## What the previous sessions produced
+
+2026-11-04 a7d655b/8b9e2da:26-rowfullcompletionmatrix+verified16binding
+samecanonicalassemblyguide+prospectiveMAIN/coldpolicy andfull214CURRENT/240role/
+13join/77citation/54support inventory archived andprivate/GW-synchronized.
+No source/PDF/grade changes or newpacket/callapproval. RootupdatedbothREADME
+statuses; launcher e9ee9c9. Canonical lessonsd2a22b22/source-runtimef3b233e4
+published andverifiedlocal/GW; sourcepull-alone staleGWruntime wasfixedthrough
+normalsync,5722nonownedruntimefiles unchanged. Capacity additive/layoutvariants
+stillFAIL; explicitmath/operationalspan+accurateactualrequestaccounting audits
+remain externalWIP. Fulloriginalgoal ACTIVE.
+
 
 2026-11-04 3dcbf32: closed complete B21 mathematical adjudication after Root
 read entire127987Bpublic/all21proofs/60formals/globals/framing and allthree
@@ -2647,8 +2670,8 @@ no fullpacket/provider/config/seal/rootready exists. Fullgoal ACTIVE.
 
 ## Repo & git state at handoff
 
-ROOT pre-handoff99406f37c66e41c312ad01030422a98a739b9c72/master; this dedicated
-commit changes HANDOFF.md only. ACTIVE3dcbf321fbb75e5e36ee9168c07b8f39749a970f/
+ROOT pre-handoffe9ee9c936bf917cc0b6a220d8fc191e4046e3860/master; this dedicated
+commit changes HANDOFF.md only. ACTIVEa7d655b6bec8653d444428cc5c1e0b57be38de43/
 research/fixed-mask-young-20261031 clean/pushed/GW-equal. Sourceaf97/PDF263/
 index7/ledger54/localreviewstates/80Lean22seams unchanged. All native jobs
 terminal; Runtime-v2 actual Rootauthorizations/delivery/oncefence remain custody,
