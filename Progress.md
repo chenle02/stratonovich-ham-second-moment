@@ -6,6 +6,15 @@
 
 ## Current state
 
+- **B.phase sole factual resolution LIVE (2026-11-04UTC03:54:07):** exact
+  existingexec29641/PID2339649/start64457450/supervisor2339574, sameoriginal
+  sessionses_e5b6bfaeaffegchkdt3XnieWpg. Original34member540df919 custody was
+  committed/pushed/GWequal at20c6fd5 andexactblob/prefix/sourceguards passed.
+  ThisisONEadditivemath/publicrecordcorrection, not a confidence request or
+  full8rerun/newvote. No secondfactual/autoretry/continuation. Inspect this
+  exacthandle/terminalsidecars, notoriginal87764whichisterminal. All86files
+  held; source/PDF/grades/whole/Kimi/visual/cold/goal unchanged.
+
 - **B.phase original TERMINAL; one factual batch prepared (2026-11-04UTC):**
   actual510.163s/stop/tools0/fresh2/source86unchanged; rawPASSnotes/medium with
   all8proof/8formalCHECKED,15recordrefusals(9ownerA->B,6nonJSONclausereferences).
@@ -14028,9 +14037,25 @@ original/native/author/readback/factualprep capsule memberhashes replayed and
 boundedcredentialscansclear; rawglobalconfig/.git/PNGexcluded. New5532bytefactual
 promptdb5e25fe asksactualcorrectedderivations/unforcedaffectedstatuses, notnewglobal
 confidence/wholejudgment/eightproofrerun. Alloriginalassistantbytes(including
-reasoningforcapacityONLY)+newuser/config/agent/runtimecharged:694211+86211+
+reasoningforcapacityONLY)+newuser/config/agent/runtimecharged:694211+87311+
 131072+16384+32768=961746/head86830. No deletioncredit/pruning/lowercap; conditional
 notexacttokenizer/ceiling. Integratedguard checkssameoriginal2-messageprefixvia
 anonymousregular-fileexport, source86/CLI/prompt andcustodydeliverybeforerun.
 No factualattemptyet atthissnapshot;noautomaticretry/additionalcontinuation.
 Allsourceaf97/PDF096cb3/index7/ledger54/local210/1/3/80Lean22seams andfullgoalstay.
+
+
+## 2026-11-04UTC: actual sole B.phase factual request started
+
+Originalcustody20c6fd50de1fd8667240c5f064ac796a7d4b1c65 waspushed/<HUB>-equal,
+exact34member540df919Gitblobrehashed. Integratedsupervisor checked the actual
+backend'soriginal2messagesagainstthecompleteoriginalexport inanonymousregular
+file, source86/CLI/factualprompt/131072cap anddeliveredcustody beforeinvocation.
+Actualsame-sessionfactualcallstarted03:54:07.545180UTC, PID2339649/start64457450,
+supervisor2339574, exec29641. CurrentPID/startactual/procverifiedlive. Source
+fixedfb2a6d4/all86; noautomaticretry/secondfactual. Observeexact29641/terminal
+sidecars, neveroriginal87764oroldconstructorhandles. Contextplan961746/head86830
+preservesalloriginalassistantbytecharges; correctedhuman-summand87311 matches
+actualcapacityJSON(alltotal/headroomvalueswerealreadycorrect). No source/math/
+PDF/Lean/grade changed. Actualresponse/prefix4/model/tools/finish/newmath remain
+pending; nocertification orconfidence advancefromlaunch. Allfullgoal gates stay.
