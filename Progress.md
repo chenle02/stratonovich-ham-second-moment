@@ -6,6 +6,32 @@
 
 ## Current state
 
+- **B21 MAIN mathematical adjudication CLOSED, raw medium/unadopted
+  (2026-11-04 UTC):** Root fully read every127987B public field/framing,
+  all21proofs/60formals/global rows and all THREE complete author batches.
+  No new manuscript gap established under named source contracts; report-depth
+  limits remain real (033ownedGreen/Bochnerinneridentification not reconstructed,
+  052quantitative static-tail application abbreviated,060Psi/N2 admission).
+  Full outside-parent credit being unassigned alone is not a missing consumed
+  premise, but nativeLIMITED working and downstream incompletion stay literal.
+  Returned errors include sqrtM/quartic1.5/C23source routing andalltimeCst,
+  F01normalization1vs2/F02F03unworked2/4/3, F11degree-one-only exact ratio,
+  dimension/weight/window/dependency/source-page captions; main coefficient,
+  static/raw/iterated/clock formulas generally match af97. All corrections are
+  annotations, not a repaired native/passing master or confidence promotion.
+  RawINCONCLUSIVE/medium,8CH13LIM/16CH44LIM and172schema refusals preserved;
+  semantic literal checks were never reached. No source/PDF/grade/ledger/old
+  report change. No further current-lineage call fits full unchanged reserves
+  (already over253 before any newcharge); once fence spent, all handles terminal.
+  Complete29member final custody1d97dac3 was reread and original70342c6/18member
+  custody reference verified. Full Root disposition:
+  reviews/2026-11-04-main-af97-calibration-prebound/final/.
+  Next work must address substantive whole-current-source214/240/13 coupled
+  verification and remaining original-model/actualC2/wholeHIGH/Kimi/sourcevisual/
+  freshcold/finalprivate-delivery gates. No next packet/provider/capacity choice
+  is approved by this closed adjudication; original goal remains ACTIVE.
+
+
 - **B21 original MAIN terminal: INCONCLUSIVE/medium; no safe addendum
   (2026-11-04 UTC):** One fresh actual DeepSeekV4Pro SID
   ses_e584bd594ffeLfZI5ijKP3J7X7 stopped397.0985639s/CLIexit0/fresh2/tools0;
