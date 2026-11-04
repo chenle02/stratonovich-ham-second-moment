@@ -6,6 +6,23 @@
 
 ## Current state
 
+- **Durable positive/isolated preparation lessons published (2026-11-04):**
+  Canonical Labd2a22b22/source-runtimef3b233e4 now records isolated replay and
+  full held-tree hashes, positive actual construction before materialization,
+  failed-conjunction predicate inspection, required global coverage and honest
+  unread rows. Existing rule extended, no new skill/metadata grade invented.
+  Phase2.5desc717/headline41/trigger tail, skillgate/synccheck/apply and strict
+  local/GWstartup passed; exact-name retrievalrank1, no same-thread refresh or
+  broad-query top3 claim. Local four foreign WIP/runtime bytes and3689nonowned
+  indexentries preserved. <HUB> sourcepull alone left runtime85f544 stale;
+  normal sync corrected only the ownedskill,5722nonownedruntimefiles unchanged.
+  Owned7member custody verified at
+  reviews/2026-11-04-durable-isolated-preparation-lessons/; foreign contents not
+  archived. No notifications/provider/source/PDF/grade/closed-report changes.
+  Full original goal remains ACTIVE; whole214/240/13 inventory/contract/capacity
+  reconnaissance is underway, not a new packet or scientific review approval.
+
+
 - **B21 MAIN mathematical adjudication CLOSED, raw medium/unadopted
   (2026-11-04 UTC):** Root fully read every127987B public field/framing,
   all21proofs/60formals/global rows and all THREE complete author batches.
