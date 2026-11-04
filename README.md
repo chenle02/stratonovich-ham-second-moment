@@ -54,13 +54,22 @@ because the mixed-series input remains unworked in that pass. The original
 factorial calculation is correct; returned captions and metadata errors are
 qualified in the [phase adjudication](reviews/2026-11-03-main-af97-theme-I-A-pilot/root-adjudication.md).
 This supplies mathematical working and does not meet the required HIGH gate.
-The following fifteen-proof pass is also closed at medium confidence, with
-eight CHECKED and seven LIMITED records. The mixed-series/mild identification
-and several higher-dimensional analytic checks remain unreconstructed; no
-source repair was identified. A new coupled constructor review is being
-prepared with an explicit calculation for the missing Green passage. The
-independent-upper review units remain assigned afterward. Grades are not
-combined into whole-argument acceptance.
+The following fifteen-proof pass and the later constructor, phase,
+independent-upper and intrinsic-constant passes are also closed. Their returned
+confidence and qualifications remain recorded under their original scopes;
+none supplies whole-argument acceptance. No source repair was identified in
+those adjudications.
+
+The latest remaining-calibration review (2026-11-04) covered 21 proofs,
+60 declarations and their canonical join. DeepSeek returned
+INCONCLUSIVE/medium, with eight CHECKED and thirteen LIMITED proof records.
+Root read the entire public response and all three complete author readbacks.
+The [closed adjudication](reviews/2026-11-04-main-af97-calibration-prebound/final/)
+distinguishes incomplete reconstruction and returned errors from manuscript
+gaps. No new source gap was established under the named inputs; no local grade
+or confidence was promoted. The original whole-current-source 214-proof,
+240-declaration, 13-join scientific verification remains open. Closed reports
+will not be retried for confidence or formatting.
 
 The 263-page PNG preparation supplies no independent visual reading.
 Source/application and pixel checks, Kimi, the independent full-PDF visual audit

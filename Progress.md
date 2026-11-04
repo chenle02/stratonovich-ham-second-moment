@@ -6,6 +6,39 @@
 
 ## Current state
 
+- **Whole-project completion/source inventory checkpoint (2026-11-04):**
+  A26-row author contract/evidence audit now distinguishes written upper/exact
+  C2 from actual remaining current214OWN/240declarations/13join reconstruction,
+  source application/calibration, wholeDeepSeekHIGH/Kimi/sourcepixels/full263
+  visual/freshcold/build/wiki/handoff/private-delivery gates. Source and existing
+  build unchanged; no completion percentage or scope reduction. OfficialLean
+  creation remains a separate authorization boundary, not a reason to stop
+  corework;80localfinitefacts/22analyticseams retain their exact limited scope.
+  Root re-read the final signed/positive/optimizer/cutoff/point assembly and
+  wrote a source-bound author guide with16verified current==sealed proofbody
+  bindings. Production reconciled it to actual199–204: independent051 finances
+  132,201uniformball precedes202secondaveraging, entrywiseGram comparison,
+  everyR signed<=positive,203nonmonotonefixed-test cutoff,204samecanonical
+  upper/lower/action/domain/zero. This guide replaces no source proof/review.
+  Full source inventory214CURRENT/240roles/13exactjoins/12domaincontracts/
+  77citationuses+bookcontracts/13debtrows/54existingmathsupports is held. AllOWN
+  parents are current in the proposed whole assignment; no outside-parent
+  import escape. Nativeprose/currentWORK plus compactcoverage links is a
+  prospective representation only. No format/parser/runtime/packet/call choice.
+  Policy audit separates MAIN fullsource/unique support from finalcold complete
+  manuscript+bib without developmenthistory; cold is canonicallyungraded and
+  cannot substitute for unfinishedMAIN. Operational-only redundancy requires
+  exact content/role audit before any verifier-only selection. Driver's additive
+  neutral880115plaintext already exceeds context by11763 with ONLY hard
+  131072/16384/32768 reserves, before new wholemetadata or runtime. No fit or
+  mathematical pruning is approved. Full custody and actual matrix/guide:
+  reviews/2026-11-04-whole-project-verification-inventory/.
+  Both README summaries now distinguish current research from stale launcher
+  snapshot/closed preparations; launcher e9ee9c9 pushed/GW-equal. ActiveREADME
+  included in this metadata checkpoint. No source/PDF/grade/closed172/59/H38
+  change. Original goal remains ACTIVE with meaningful scientific work pending.
+
+
 - **Durable positive/isolated preparation lessons published (2026-11-04):**
   Canonical Labd2a22b22/source-runtimef3b233e4 now records isolated replay and
   full held-tree hashes, positive actual construction before materialization,
