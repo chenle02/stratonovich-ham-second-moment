@@ -6,6 +6,27 @@
 
 ## Current state
 
+- **Actual request versus private runtime accounting resolved in scope
+  (2026-11-04):** The read-only producer audit and independent Root check bind
+  the actual closed B21 driver/export/usage and pinned CLI request-preparation
+  byte spans. Exact single user part823859plain; native824374/cache0 gives515
+  historical net other input. Agent.prompt enters system text; the private
+  guard/preflight/run/projection programs and entire local config JSON are
+  not serialized wholesale into model messages by this inspected path.
+  Root will count actual delivered payloads plus unchanged131072/16384/32768
+  hard reserves; private runtime/custody programs count as additional model
+  context only if actually included. Earlier28699byte/1123object floors remain
+  literal historical plans. This corrects categories, not hard reserves.
+  Actual HTTP/system/tool decomposition and future overhead remain unknown;
+  observed515 is not a future guarantee. Both complete originals and Root
+  cross-check, all6members/producer-manifest verified, are retained at
+  reviews/2026-11-04-actual-request-accounting/.
+  No future full-fit, format, packet or provider action is approved yet.
+  Immediate next: exact mixed-protocol scientific/semantic span audit, then
+  a readable all214/240/13 representation with complete actual new counts.
+  TeX/PDF/proof grades and all full-goal independent gates remain unchanged.
+
+
 - **Whole inventory independently audited; failed capacity evidence retained
   (2026-11-04):** Root fully read the independent author inventory report,
   physical-scope receipt and additive BC-white clarification. Its checks bind
