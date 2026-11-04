@@ -6,6 +6,27 @@
 
 ## Current state
 
+- **Point/signed MAIN actual READY, no provider yet (2026-11-04UTC):**
+  Current14OWN/33OWNdecl/S064/POINTjoin+3boundary scope unchanged. ROOTfull
+  source/working/code/minimum read/replay and independent actualinput/851guard
+  audits complete at scopedboundaries. DRAFTc9e1/READYe2a/promptb6ee/149input
+  custody already9ae314d. Privatecarrier1bdb4101/all103Gitblobs clean.
+  OriginalLOCALpermissionassertion failure preserved. Bounded native-v2 tool-
+  effective denial/internal-only exception amendment: ROOT21/independent28
+  cases passed. ACTUALpurelocaldiagnostics11:42:32UTC matchDeepSeekV4Pro/prompt,
+ 12toolsfalse/effectivelydeny/onlybuiltinoutputdir exception/compactionfalse/
+  shareoff;1642byte safeprofile62b8ca3d, no rawglobalconfig persisted/delivered.
+  Runtime7954+2048maxsafe =>upwardguard10002/fullreserves1005108/head43468;
+  old8392/8192stages retained. Rootplanb50b9df0, sourceaf97/PDF263/guard851/mapc758
+  andallinputbytes unchanged. Ready/runtime/auditcustody at
+  reviews/2026-11-04-main-af97-point-signed/. ONEfreshnative onlyAFTERthisREADY
+  commit/push/GWparity+separateplan/safe/commit-boundROOTauthorization. No
+  provider yet/noHIGH/gradeconversion/H38regrade/whole-image-cold clearance.
+  Full214/240/13/originalmodels/actualC2/wholeHIGH/Kimi/sourcevisual/freshcold/
+  private delivery remain OPEN. Parallelpublishedstaticcalibration source
+  readback confirmsrawinteger-moment p scaling sofar; no source bugasserted.
+
+
 - **Point-upper ROOT DRAFT passed/sealed; local permission diagnostic correction (2026-11-04UTC):**
   ROOT full currentguard/minimum/control/docs read andactual1597/7minimum/
   physical103 checks replayed;147manifestmembers rehashed. Independent851
