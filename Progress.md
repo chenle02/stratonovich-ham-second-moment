@@ -7,6 +7,15 @@
 ## Current state
 
 
+- **Constructor MAIN LIVE (2026-11-04UTC02:09:20):** ONE fresh guarded
+  DeepSeek V4 Pro invocation is running after READYb70ee7d was pushed and
+  <HUB>-equal. Exact existing exec48328/PID1856296/start63828786,
+  supervisor1856292; inspect this handle, never restart after a timeout.
+  Carrier27d98e4/all82files, prompt6fcfb0a4 and matching pure guards passed.
+  No mathematical result or acceptance follows from launch. See the live
+  records in reviews/2026-11-04-main-af97-constructor/live/.
+
+
 - **Constructor MAIN READY (2026-11-04UTC):** the new coupled workload owns
   PROOF002/009, S038/S039, JOIN-CONSTRUCTOR and given H:homog. Full81payloads,
   all70original source/primary/math/map frames, complete pilot/Ar mathematics
@@ -13775,3 +13784,17 @@ source gaps. Root authorizes ONEfresh constructor call only after actualREADY
 commit/push/<HUB> parity; runner checks that receipt. No automaticretry or
 continuation, oldlineages closed. No provider yet at this READY snapshot. Every
 wholeHIGH/Kimi/sourcepixels/fullvisual/freshcold/wiki/private delivery gate remains.
+
+
+## 2026-11-04UTC: ONE fresh coupled constructor review actually launched
+
+READYb70ee7db1d73e079f0e9903a0b1b409596085a06 was committed/pushed and actual
+<HUB> HEAD/ahead-behind0/0 verified. The committed148member88e5ee7 capsule
+was rehashed from its actual Git blob. Guarded runner required that delivered
+READY receipt and all exact carrier/source/prompt/config/CLI/agent/capacity checks.
+Actual call started02:09:20.903529UTC, PID1856296/start63828786/supervisor1856292,
+exec48328. Allwriters hold actual82file carrier27d98e4/prompt6fcfb0a4; no automatic
+retry/continuation. Observe this exact handle or terminalsidecars, not old Ar/pilot
+jobs. Actual model/finish/fresh-prefix/publicmath/usage will be collected after
+terminal; launch alone is not a review or any local/whole/Kimi/visual/cold/goal
+acceptance. Sourceaf97/PDF096cb3 and every original contract obligation remain.
