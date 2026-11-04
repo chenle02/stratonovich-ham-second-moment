@@ -14102,3 +14102,29 @@ withoutfullinputduplication. Private reasoningneverproofevidence. Sourceaf97/
 PDF096cb3/index7/ledger54/local210/1/3/80Lean22seams unchanged. No wholeHIGH/Kimi/
 sourcepixels/full263visual/cold/wiki/private-delivery/goalclearance. Actualnew
 B.interval8/10+JOIN-INDEPENDENT-UPPER draft isforauditsonly; fullprogramretained.
+
+
+## 2026-11-04UTC: cached-context accounting lesson published without score inflation
+
+CanonicalLe-AI-Lab6e0b0bd600cae14fa6d010630dd5567b7cc91d7f extends existingreview
+layers withone93wordprovider/adapter-awarecacheparagraph. ActualBfactinput19232+
+cacheRead694144=713376prompttokens;pluspublic3249/reason8909=725534total. Cached
+contextisnotabsent;someotherprovidersalreadyincludecacheininput,soblinddouble-add
+isalsowrong. Preferactualcache0baselinewhenuncertain;our961746budgetcorrectlyused
+original694211/cache0andall87311newbytecharges, nocaplowering/pruning/sourcechange.
+
+Phase2.5/skillgate/generation/sync/freshstrictstartup pass,description593/head41,
+canonical/Claude/OpenCode/explicitCodex029e474d root-rehashed; local/origin/GWHEAD
+and0/0verified. Same-threadcatalogremainssnapshot. ActualNEWALIASretrievalrank12
+isOUTSIDEdefaulttop10, exactname1; no retrievalsuccessfiction. MissingPi settings
+remainnonblocking/no setupchanged. Source/grade/High/wholegoalunchanged.
+
+Foreign4files/indexintent/staged+unstagedpatches preserved;3685nonownedentries
+referstosyncedbaselineafter2unrelatedlegitimateupstreamfastforwards, notanindex
+reset. TwoGWGitHubSSHresets retained;verified3594byteonecommitbundle4d2f6563
+synchronizedwithoutURL/globalconfigchanges. Onlypost-sync runtimehashescredited,
+notearlierprobe. Safe37memberreceipts are root-rehashed in
+reviews/2026-11-04-durable-cached-context/, rawforeignbackups/index/patchcontents
+externaluncommitted; no notification/provider/Articlemath actions. AllBnativejobs
+wereterminalbeforepublication; futureintervaleffectivepreflightmustmatchcurrent
+runtime. Fullalloriginalmodel/actualconstant/verification/deliverygoalremains.
