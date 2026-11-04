@@ -1,0 +1,13 @@
+# Constructor MAIN: frozen inputs, awaiting one fresh invocation
+
+The new bounded workload reconstructs current PROOF002/009, S038/S039 and JOIN-CONSTRUCTOR under the original H:homog model. It adds the full explicit fixed-random-factor Gaussian/Green calculation to the complete prior mathematical context. This is substantive work on the previously incomplete construction-to-moment implication; the closed Ar, pilot and whole-review lineages are not reopened.
+
+Root read the complete new working and both full author audits. The audits verify exact mathematical retention and actual packet/source/conditional-accounting identities. Two concrete validator gaps were reproduced and repaired: calculation references must resolve to the corresponding proof mathematics, and an unresolved global premise cannot support complete-scope claims. These are mechanical guards, not proof certificates.
+
+All81 payloads and all70 original source/primary/math/map inputs remain literal. The actual matching pure metadata diagnostics confirm DeepSeek V4 Pro, all12tools false, compaction off and sharing disabled. The private data-only carrier has82 post-commit-verified files. The selected measured-Ar73 plan totals1,014,073 with34,503 conditional headroom and131,072 combined output/reasoning allowance; original diagnostics, no-deletion accounting and actual failed local readbacks are preserved.
+
+The capsule includes every input, actual audits, complete extraction provenance, guard preimages/diff/controls, root capacity choice/preflight/post-seal records and a next-B.phase support map. Every member was rehashed after compression; bounded credential-value scans were clear. Raw global configuration, Git internals, image renders and native output are excluded. Earlier preparation metadata is retained as dated history; the separate root decision controls the next invocation.
+
+The new source-only Git import initially failed a strict blank-at-EOF check on seven unchanged mandatory frames. Their bytes were preserved; only this initial data import used the documented blank-at-EOF exception, all other whitespace checks and hooks ran, and every post-commit blob matched. Root also preserved a failed readback that selected the old interval evidence before explicitly switching to the amended v2 evidence.
+
+No provider invocation exists at this READY snapshot. The runner requires an actual committed, pushed and <HUB>-equal READY receipt before ONE fresh call. It forbids automatic retry or continuation. No scientific source, PDF, local acceptance state or Lean fact changed; no whole HIGH, Kimi, visual, cold, wiki-maintenance or goal completion follows. All214proofs/240formals/13joins, all original models and the actual constant remain required.

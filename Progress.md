@@ -7,6 +7,22 @@
 ## Current state
 
 
+- **Constructor MAIN READY (2026-11-04UTC):** the new coupled workload owns
+  PROOF002/009, S038/S039, JOIN-CONSTRUCTOR and given H:homog. Full81payloads,
+  all70original source/primary/math/map frames, complete pilot/Ar mathematics
+  and new explicit Gaussian/Green author working are retained. Root read both
+  full audits and the new calculation. Matching actual --pure diagnostics
+  confirm DeepSeek V4 Pro/all12toolsfalse/compactionfalse/share disabled.
+  All82post-commit carrier blobs and28current scientific modules match.
+  Selected measured-Ar73 plan totals1014073/head34503 with131072combined;
+  original capacity diagnostics and both actual local failures are preserved.
+  Evidence: reviews/2026-11-04-main-af97-constructor/. A single fresh invocation
+  is authorized only after this READY is committed/pushed/<HUB>-equal;
+  no provider exists yet at this snapshot. No source/PDF/local210/1/3/Lean
+  or whole HIGH/Kimi/visual/cold/delivery/goal clearance follows. B.phase and
+  B.interval remain next, with all37B/46formal and full214/240/13 retained.
+
+
 - **Themed MAIN A.remainder CLOSED (2026-11-04UTC):** actualDeepSeekV4Pro
   PASS_WITH_NOTES/medium,8CHECKED/7LIMITED; complete15proof/22formal/15obligation/
   2given records, stop/tools0/fresh2/exactsource80verified. Root read every
@@ -20,7 +36,8 @@
   constructorpacket preparation (JOIN-CONSTRUCTOR andunresolved002/009),
   then B.phase036–043/B.interval044–051. AllB alternatives/comparisons stay
   assigned. This addressesactualunworkedsourceconsumers, not an Arconfidence
-  retry. No next preflight/seal/native call is approved or started.
+  retry. Its preparation is now READY as recorded above; no native invocation
+  exists at this pre-dispatch snapshot.
 
 
 - **Themed MAIN A.pilot CLOSED (2026-11-03):** one fresh DeepSeek V4 Pro
@@ -34,9 +51,9 @@
   repair located; original/current PDFs and all local dispositions stay.
   No more current-lineage call; old handles5685/96843 are terminal. Evidence:
   reviews/2026-11-03-main-af97-theme-I-A-pilot/root-adjudication.md.
-  Next actual work is A.remainder002009011–023/22formals; packet preparation
-  is in progress with all original scope/full source and actual mathematical
-  phase-working/limits. No next native call or readiness is inferred.
+  The subsequent A.remainder002009011–023/22formal phase is now closed as
+  recorded above. Its original next-step paragraph is superseded by the
+  constructor READY checkpoint; historical outcomes are unchanged.
 
 
 - **Current af97 whole MAIN and next work (2026-11-03):** one fresh DeepSeek
@@ -13704,3 +13721,57 @@ on the observed missing implication, not a completedArconfidence rerun. Bphase/
 interval remain nextcore priorities, allotherclaims stayassigned. No provider/
 preflight/seal/native approval follows. Evidence:
 reviews/2026-11-04-constructor-and-B-preparation/. Goalfullscope ACTIVE.
+
+
+## 2026-11-04UTC: constructor packet independently audited and sealed
+
+This NEW constructor workload supplies actual direct Gaussian averaging/modulus/
+tail/time-DCT working at fixed external widths and a fixed random factor, then
+occupied-product closure, inner/external joint vertex limits and order-last
+summability, followed by the physical002 moment consumer. It does not rerun the
+closed15proof Ar or9proof pilot for confidence. Exact current002/009 andS038/S039,
+one JOIN-CONSTRUCTOR and givenHhomog; full214/240/13/alloriginalmodels/actualC2
+and all37B/46formal obligations remain. Sourceaf97/PDF096cb3/index7/ledger54 and
+all local210scopedHIGH/010unaccepted/034189193pending/80Lean22seams unchanged.
+
+Independent extraction audit replays all1175selections1044literal/49transform/
+82drop and1191original leaves, retaining7incomplete parents/23ordered refusal
+conditions/13separate author comparisons. Native wrong formulas stay quoted;
+newauthor repairs are not prior-reader deductions. A separate actualpacket audit
+verifies source/framing/assignment/capacity and both targeted validator fixes.
+Real prior-Ar clause pointers now resolve to the corresponding proof mathematics;
+global pending premises cannot coexist with complete current/joined claims.
+HonestLIMITED, valid018subclause/retainedparent and downstreamcontext controls pass.
+Root read both full audits, actual source proofs/newGreen working and all new
+contracts; these checks establish custody and intended scope, not proof truth.
+
+Prompt6fcfb0a4072ab9b69db0592d079a7c691a93047d2d63748cf55e31ce1df93ef2 is
+2285038bytes/81frames; all70oldframes/full64AUTHOR/all28TeX are unchanged. The
+single description-only schema amendment saved8bytes, with exact oldprompt
+reconstruction retained. Root explicitly selected the SEPARATE measuredAr73
+method:652516actualinput/cache0 +181333allnewbytes/framing/config +131072combined
++16384boundary +32768system =1014073/head34503. Every73matched payload/interval/
+relativeorder is actual Ar native evidence, no removed-byte credit. Current70
+primary1047962/head614 and original606preimage remain. Not exact tokenization,
+provider availability/effective ceiling, proof-depth or future-synthesis guarantees.
+
+Actual matching--pure agent/config diagnostics confirm CLI1.18.31 exactf9dab322,
+DeepSeekV4Pro/all12toolsfalse, compactionfalse/share disabled. Full secret-bearing
+config remained anonymous; only safe fields persisted. Private data-only Git
+carrier27d98e479376fa0f79ff9033382901a1acf1f21a has82literal files; postcommit
+readback verifies everyblob/all81promptpayloads/all28science. Root's first v2
+readback used preservedv1intervals and failed; original script/failure is retained,
+then explicitv2selection passes. Initial strict Git whitespace check also failed
+on blank EOF in7mandatory unchangedframes. No source bytes were edited: a narrow
+blank-at-EOF exception for this data import passed other checks, hooks ran, and
+all82postimages match. Neither failed check is recorded as an earlier pass.
+
+Full148member input/audit/root/preparation capsule88e5ee7a16eefca9e2aa897eb5390c2a05aeab14b307f3f5a7789fd3be612c70
+was rehashed member-by-member; bounded credential patterns clear, no rawglobal
+config/.git/native/PNG. The independent next-B.phase map distinguishes036quartic
+from square-root energy,038both variance terms and042free-phase subclause, and
+043independent finite partitions. Missing separate supplement replays are not
+source gaps. Root authorizes ONEfresh constructor call only after actualREADY
+commit/push/<HUB> parity; runner checks that receipt. No automaticretry or
+continuation, oldlineages closed. No provider yet at this READY snapshot. Every
+wholeHIGH/Kimi/sourcepixels/fullvisual/freshcold/wiki/private delivery gate remains.
