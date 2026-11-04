@@ -6,6 +6,32 @@
 
 ## Current state
 
+- **Remaining B21 source readback; prototypes only approved (2026-11-04 UTC):**
+  Root personally read all 21 current statements and complete proofs for
+  PROOF024–035 and PROOF052–060 in bounded, untruncated manuscript excerpts.
+  A separate executable recomputed every statement/proof interior hash against
+  neutral index v7 and verified current TeX equals sealed science af97ae4.
+  No manuscript gap was identified under the named inputs and hypotheses.
+  Checked whole-union Holder, static finite exceptions versus asymptotic rate,
+  actual Green-first L2 approximant identification, conditional H:three scope,
+  constants versus coordinate Dirac factors, linear covariance pushforwards,
+  static-series construction from the prelimit fractional bound, raw moment
+  normalization, iterated static recovery, and the restricted clock no-go.
+  Evidence: reviews/2026-11-04-B21-root-source-readback/.
+  Root approved external source-binding implementation and lossless in-memory
+  capacity prototypes ONLY: contemplated scope 21 current proofs / 60 formal
+  declarations (52 OWN, 8 CONTEXT), S064 given, full canonical calibration-
+  alternatives join and four boundary consumer questions. Actual schema/code,
+  retention, source-map and complete context-fit audits remain unfinished.
+  Earlier inventory omitted full counterexample/source mathematics; additions
+  are being retained explicitly, with no fit claim. No packet or native call
+  authorized; no source/PDF/grades changed and no closed review regraded.
+  This is an intra-round author checkpoint, not an independent review or
+  round close. Full 214 proofs / 240 declarations / 13 joins, all original
+  models and actual constant, whole HIGH, Kimi, source/visual, fresh cold and
+  synchronized private delivery remain OPEN.
+
+
 - **Durable public-record/binding lessons published (2026-11-04UTC):**
   CanonicalLabd00fdeff/source+runtime86c4fb02 pushed/GWsourceequal. Existing
   review-layers rule nowrequiresnonemptypublicreviewafterstop, exactlast-turn
@@ -17,8 +43,9 @@
   pathscommitted; disjoint5upstreamtelemetry/board FF noted. No foreigncontents
   archived. Evidence:reviews/2026-11-04-durable-public-record-lessons/.
   PointlineageCLOSED36735e6/qualifiedunadoptedHigh, sourceaf97/PDF263/gradesunchanged.
-  NewB21scope/math/capacityandprospectivepreboundprotocol proposals are external
-  andUNAPPROVED; no newpacket/call/sourcechange. Full214/240/13/alloriginalmodels/
+  New B21 scope and prospective source-binding/capacity work have since received
+  prototype-only approval (see current entry); no new packet/call/source change.
+  Full214/240/13/alloriginalmodels/
   actualC2/wholeHIGH/Kimi/sourcevisual/freshcold/finaldelivery remainOPEN.
 
 
