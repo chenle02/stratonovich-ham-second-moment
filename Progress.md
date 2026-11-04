@@ -6,6 +6,35 @@
 
 ## Current state
 
+- **Remaining B21 input sealed; exact pure startup passed, no native call yet
+  (2026-11-04 UTC):** Actual140-file draft/128carrier files passed independent
+  physical source/frame/scope/306evidence/5doc/81alias/capacity checks. Full
+  positive in-memory prepare passed before exact Root data-only materialization.
+  Builder's actual positive-path defect was five prior JSON documents versus
+  hardcoded six; evidence-row assignment was present. Root withdrew its
+  premature missing-assignment diagnosis; corrected v3 derives the exact path
+  set. Runtime-v2 actual arithmetic link and builder-v3 are independently
+  audited; prior versions/findings remain preserved. Source/grades unchanged.
+  Input Git seal c1d04b5c5b6ac289f40e719e34a840fe58549819 is clean, with all128
+  Git blobs identical to audited data. Carrier-only scoped whitespace metadata
+  preserves seven inherited EOF blanks and one administrative trailing space;
+  hooks/other checks retained, all140original file hashes unchanged.
+  Root plan d5bf7bb7 binds the actual prompt051f6d59/source-map8508/policyaee/
+  binding97, allcode/books/PDF/source and fullcount1034390/head14186, including
+  written runtime28699 and all131072/16384/32768 reserves. Actual local pure
+  startup passed17:42:00UTC: DeepSeekV4Pro/12false/effective tool denies, only
+  exact internal non-tool output-directory exception, compactionoff/shareoff;
+  safe1683B/7e21267c. No raw configuration or credential output was retained.
+  Exact363-member private preparation capsule was reread member-by-member:
+  reviews/2026-11-04-main-af97-calibration-prebound/preparation/.
+  Original payloads and construction inputs remain in custody, including all
+  opaque metadata values; no mathematical pruning or narrowed goal. Separate
+  run authority remains absent until this input checkpoint is committed,
+  privately pushed and <HUB>-equal. No old native59/H38 was reopened or
+  regraded. All214/240/13/originalmodels/actualC2/wholeHIGH/Kimi/sourcevisual/
+  freshcold/final private delivery remain OPEN.
+
+
 - **Bounded v3 protocol/retention audit accepted; runtime arithmetic fix pending
   (2026-11-04 UTC):** Root read the complete independent final audit and
   verified its10-member manifest.56 independent cases plus exact99controls/
@@ -24,7 +53,8 @@
   arithmetic, with all extra code bytes recounted. Dormant builder-v1 is held;
   its minimal successor must pin the corrected stage. No actual packet,
   materialization authority, Git seal, preflight or provider call exists.
-  All original science/closed59H38/grades/wholeHIGH/Kimi/cold/delivery stay OPEN.
+  Scientific source, closed59/H38 records and local grades remain unchanged.
+  Whole HIGH, Kimi, source/visual, fresh cold and final delivery remain OPEN.
 
 
 - **V3 Root replay and preserved harness incident (2026-11-04 UTC):**
