@@ -6,18 +6,22 @@
 
 ## Current state
 
-- **Intrinsic MAIN LIVE (2026-11-04UTC06:48:37):** ONEfreshguardedcallstarted
-  afterREADYa00c816 committed/pushed/GWequal and218capsulemembers rehashed.
-  Exactexec60819/PID3023865/start65504471/supervisor3023815, native session
-  ses_e5aaee461ffeCp5UYWElgEsK8y. Actual/procstartmatch/liveverified; no
-  terminalreceipt at snapshot. All96sealedcarrierfiles/95promptframes held;
-  localpure/CLI/source/prompt/cap/READY guards passed. No verdict orgrade yet.
-  Observeexistinghandle/terminalsidecars, NEVERrestartonobservationtimeout.
-  Atterminal useexisting root-runtime collect_native.py DIRECTregularfile,
-  thenreadALL14proof/18formal/application/join/globalmath beforeanyONEfactual
-  batch ifgenuinelyneeded. Noautomaticfollowup/confidence request orvoteunion.
-  Alloriginalgoal/wholeHIGH/Kimi/sourcevisual/freshcold/wiki/delivery gatesopen.
-
+- **Intrinsic original TERMINAL; sole factual batch ready (2026-11-04UTC):**
+  Actual706.429s/stop/tools0/fresh2/source96/PDFunchanged. LiteralPASSnotes/
+  medium/all14proof18formal/application/joinCHECKED;38recordrefusalsretained.
+  Root readEVERY93kpublicfield andall3authorbatches; no source repairlocated.
+  Batchedreportmathclarifications: normalizedtemporal/rawlabel, general
+  doubledcostweights,D(4)vsinf,C_upamplitude,finitevspositive causality,
+ 201/180andSchur/Ct clauses,compactgroundrouting/nonmonotonecutoff. Supplied
+  covariance-amplitudecalibration requested explicitly; no newtheorem/Highvote.
+  Originalcustodyandactualonefactualpreparation preserved in
+  reviews/2026-11-04-main-af97-intrinsic/original/. AtmostONEsame-sessionaddendum
+  onlyaftercommitted/pushed/GWequaldeliveryandexactoriginal2guard; nocallyetat
+  snapshot. Conditional previousTURN807771(allinput+public+reason,notinput)
+  +newbytes/fullreserves/guardallowance=1007997/head40579; failedUTF8plan kept.
+  Freshpurelocalpreflight passed07:40:23UTC/all12false/samePro/sourceunchanged.
+  Allsource/PDF/localgrades/Lean andfull214/240/13/originalmodels/actualC2/
+  wholeHIGH/Kimi/sourcevisual/freshcold/wiki/private delivery remain open.
 
 - **Intrinsic MAIN READY (2026-11-04UTC):** exact14OWN130–132/194–204,
  18declarations/S064given/132-finitenessapplication/JOIN-POSITIVE-INTRINSIC.
