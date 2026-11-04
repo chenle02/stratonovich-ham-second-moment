@@ -47,15 +47,22 @@ preserves both original and supplemental texts and their reporting qualifiers.
 Earlier whole reports on `8ce03ae` remain dated history. Local scoped states
 are preserved and are not combined into whole acceptance.
 
-The planned next work is substantive themed review with the full current
-source and original model/constant obligations retained. This is preparation,
-not a dispatched review or a union of earlier grades. The 263-page PNG
-preparation supplies no independent visual reading. Source/application and
-pixel checks, Kimi, the independent full-PDF visual audit and a fresh final
-cold read remain open. Kimi's recorded monthly-quota 429 supplied no review
-or images. Wiki propagation of this terminal outcome and final private
-delivery remain pending. No whole-paper, goal-completion, readiness or
-circulation clearance is claimed.
+The first themed working pass is now closed: DeepSeek returned
+PASS_WITH_NOTES/medium for nine foundational proofs and fifteen declarations.
+Its one factual addendum records eight CHECKED and PROOF010/S040 LIMITED,
+because the mixed-series input remains unworked in that pass. The original
+factorial calculation is correct; returned captions and metadata errors are
+qualified in the [phase adjudication](reviews/2026-11-03-main-af97-theme-I-A-pilot/root-adjudication.md).
+This supplies mathematical working and does not meet the required HIGH gate.
+The next fifteen-proof pass is being prepared with the full source and actual
+prior calculations/limitations retained; grades are not combined into acceptance.
+
+The 263-page PNG preparation supplies no independent visual reading.
+Source/application and pixel checks, Kimi, the independent full-PDF visual audit
+and a fresh final cold read remain open. Kimi's recorded monthly-quota 429
+supplied no review or images. Wiki propagation and final private delivery
+remain pending. No whole-paper, goal-completion or circulation clearance is
+claimed.
 
 The 80 finite Lean facts retain their 22 analytic boundaries; an official
 private companion and its package gate are separately authorized steps.

@@ -7,27 +7,21 @@
 ## Current state
 
 
-- **Themed MAIN A.pilot ORIGINAL TERMINAL (2026-11-03):** the exact nine-proof/fifteen-
-  declaration/fourteen-obligation full-context packet is built and frozen,
-  returned actual PASS_WITH_NOTES/medium, stop/tools0, after one fresh run.
-  All70required
-  source/primary/math/map frames and original
- 214/240/28/13 program remain. Root read actual instructions, current source,
- 010working and all report requirements; separate author1235checks plus9
-  meaningful refusal controls pass. Matching --pure native preflight verifies
-  exactDeepSeekV4Pro/boundedagent/all12toolsfalse/compactionfalse/share disabled.
-  The initial non-pure diagnostic is preserved and explicitly not matching;
-  this was a missed existing startup-flags rule, fixed before any provider call.
-  Carrier a2c04425187ae4a97f509723a0b79176eccb6e55, prompt9f5861b5,
-  conditional932630/head115946 with196608combined output. Root authorizes
-  ONE fresh native invocation, now terminal; exec5685 must not be polled or
-  restarted. Complete9/15/14literalCHECKED rows received, with51exact-ID/
-  pending-scope validator issues and several returned caption errors. Root
-  read every field and both author batches; source calculations check. One
-  factual same-session addendum is authorized, not yet invoked; no new proof
-  or higher-confidence request. Original PASS_WITH_NOTES/medium is immutable.
-  No report/math/grade/image/Kimi/cold/goal credit. Evidence:
-  reviews/2026-11-03-main-af97-theme-I-A-pilot/.
+- **Themed MAIN A.pilot CLOSED (2026-11-03):** one fresh DeepSeek V4 Pro
+  original plus ONE factual same-session addendum are terminal; actual
+  PASS_WITH_NOTES/medium in both. Complete bounded working has8CHECKED and
+  010LIMITED (S040LIMITED) due unworked002; no full-nine or HIGH acceptance.
+  Root read all original/additive mathematical fields and author checks.
+  Correct original010kth/k2/k3 algebra is retained; new additive shorthand
+  mistakenly DIVIDES by factorial powers. Residual top-dependency metadata
+  and source-role/author-provenance qualifications are explicit. No source
+  repair located; original/current PDFs and all local dispositions stay.
+  No more current-lineage call; old handles5685/96843 are terminal. Evidence:
+  reviews/2026-11-03-main-af97-theme-I-A-pilot/root-adjudication.md.
+  Next actual work is A.remainder002009011–023/22formals; packet preparation
+  is in progress with all original scope/full source and actual mathematical
+  phase-working/limits. No next native call or readiness is inferred.
+
 
 - **Current af97 whole MAIN and next work (2026-11-03):** one fresh DeepSeek
   V4 Pro session plus ONE factual same-session public-record supplement are
@@ -13544,7 +13538,32 @@ only after this fullbatch; originalmedium retained, no new proof or confidence
 upgrade requested, no newvote. Conditionalcontinuationbudget975846/head72730
 charges all originalpublic and reasoningbytes plus5469newuserbytes/reserves/
 196608combined; reasoningcontent is counted, never read as scientific evidence.
-No addendum launched at this checkpoint. Author025finite-table reproduction now
+No addendum launched at this checkpoint. Author25finite-table reproduction now
 supplies previously undisclosedK1.25/t1.5/executable, reproduces everyrowexactly,
 and is explicitlyNOTin the reviewerinput. Source/PDF/localgrades/whole/Kimi/
 sourcepixels/fullvisual/freshcold/goal remain unchanged and open.
+
+
+## 2026-11-03: A.pilot closed with actual medium and explicit remaining scope
+
+OriginalplusONEfactualsame-sessionaddendum are terminal, exact4messageprefix
+andnewinput/model/tools0/stop/sourcecarrierclean verified. Root read every returned
+field and both author mathematical batches before the factualcall, then the
+completeaddendum and its separate author check. ActualbothPASS_WITH_NOTES/medium;
+additiveinventory8CHECKED/010LIMITED andS040LIMITED, not fullnine acceptance.
+Originalcorrect010factorial/k2/k3working stays; addendum newlyDIVIDES by(2!)^q/
+(3!)^q instead ofMULTIPLYING. Atwhiteq3/2 the error factorsare8/216. No source
+repair follows; no morecurrentlineagecalls. TopfourrequestedOWNobjectcorrections
+werenotactuallyreturned;051B/204H remain independentlypinnedplanmetadata, not
+fabricatedreviewerreturns. Hypothesis-role taxonomy, captions, rootedpointer/
+outerpathfailures and finite25disclosure limits are fullypreserved/adjudicated.
+
+Complete103member terminalcapsule903a6ac9a423ccd2e112ed3fec32a08e829b8817e8a5915b83cd4f00051cb8ae
+was individuallyrehashed bycustodyauthor androot; original16da5 untouched,
+full119inputf2ee exactcommittedb124blob referencedandverified. Boundedsecret scans
+clear; globalconfig/.git/PNGexcluded. Evidence:reviews/2026-11-03-main-af97-theme-I-A-pilot/terminal/.
+Sourceaf97/PDF263/096cb3, indexv7/ledger54,80finiteLean22seams andlocal210HIGH/
+010unaccepted/034189193editorialpending remain. MediumdoesnotclearHIGH, whole,
+Kimi/sourcepixels/fullvisual/freshcold/goal. NewA.remainder15proof/22formal
+packetpreparationaddressesactualunworked002/009/calibrationownership; it is
+not a confidence-onlyrerun. Full214/240/13/alloriginalmodels/actualC2 remains.
