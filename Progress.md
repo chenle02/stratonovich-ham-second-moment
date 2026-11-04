@@ -6,6 +6,27 @@
 
 ## Current state
 
+- **Existing lower/sourceUI deductions explicitly reconstructed by authors
+  (2026-11-04):** RootFULLREADfinal24371Blower119–126 and19986BUI095/102/103/110,
+  bothprereqtables and independentauthorcrosscheck. ActualsameWlaw/shift,
+  fullF2columns/cone/rebase/terminaltau, per-p union/max/UI, originalmeasure
+  orderedproductsHolder4n/4, globalhalfaction, scalar/Bochner/Wick/canonical
+  moment andTWOpointlimits-before-scaling are worked. No concreteassignedstep
+  gap foundunderexplicitcurrentOWNinputs; full004–008/061–093/112–118/187–188
+  ancestors remain load-bearing, notacceptedfromsourcepresence. AdditiveRoot
+  notes clarify UIeta-width/tau-remainder and S064CONTEXT/logicalGIVEN; frozen
+  originalcapsules unaltered. Complete6directory verified custody and working:
+  reviews/2026-11-04-lower-source-ui-reconstruction/.
+  RootNEWprospective current-science policy preserves all28/214CURRENT/240roles/
+  13joins/fullprimaries/54supports/uniquemath+corrections, while permittingONLY
+  exact obsoleteworkload/wire/vote/procedural custody proposals afterindependent
+  visibleminimum. Earlier142packet/history preserved, noactualomission/input/
+  count/runtime/providercall orreviewgrade change. Newdata minimum/spanaudits
+  underway; authoractual069/071/073/074TWOvariance mathreconstruction underway.
+  NativewholeINC/coremedium/wholelow and all MAINHIGH/Kimi/sourcepixels/fullvisual/
+  freshcold/privatefinal completion gates remain OPEN. Originalgoal ACTIVE.
+
+
 - **Whole214 MAIN author/root adjudication CLOSED, no source/grade change
   (2026-11-04):** Root now read all29462publicbytes/691logical lines, including
   the154Bunterminatedfinalqualification missed by the initial690LF-boundscan;
