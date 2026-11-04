@@ -6,6 +6,22 @@
 
 ## Current state
 
+- **Actual whole input candidate physically held (2026-11-04):** Written
+  review-input.txt3065452B/39c13c5a/866375tokens plus whole-agent836B/181tokens
+  bind exact operativev2 task underWHOLE_CURRENT_ASSIGNMENT. All214CURRENT/
+  240roles/13joins/allmodels/actualC2, rawJSONstatuses/IDs and full source/math
+  remain; no dictionary, categorical deletion or obsolete21/60agent reuse.
+  Actual user+agent+full131072/16384/32768 reserves=1046780/head1796 BEFORE
+  unmeasured other future system/tool/model framing. No final fit/admission.
+  All7candidatecustody members and originalmanifest verified at
+  reviews/2026-11-04-whole-current-input-candidate/; Root read actualbuilder/
+  report/counts but does not claim fresh full3MBreader or allsidecar rereading.
+  Independent exact candidate/source/JSON/readability/count and pinned-CLI
+  other-framing audits are running. Next inspect their actual reports and
+  finish request accounting before runtime/carrier/dispatch preparation.
+  No provider action, source/PDF/grade change or whole-goal completion.
+
+
 - **Complete raw-tree input prototype held; operative text proposed (2026-11-04):**
   All127originalframes+15completeappends/39rawJSON/609numbers now retain every
   supplied value/status/vote/type/order, inline semantic IDs and WORK/clause
