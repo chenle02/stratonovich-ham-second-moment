@@ -6,6 +6,26 @@
 
 ## Current state
 
+- **Point-upper ROOT DRAFT passed/sealed; local permission diagnostic correction (2026-11-04UTC):**
+  ROOT full currentguard/minimum/control/docs read andactual1597/7minimum/
+  physical103 checks replayed;147manifestmembers rehashed. Independent851
+  finalguard71records/URI/mapchecks passed after7boundedfixes, including pending
+  published APPLICATION hypotheses; named bookproofs remain imported. Input
+  custodyc9e1/READYe2a43/promptb6ee/102frames/fullnotes/all95wholeframes retained.
+  ROOT selected upwardruntime8392/fullreserves =>conditional1003498/head45078.
+  PRIVATE source-onlyseal1bdb4101/all103Gitblobs checked; same7literalEOFwarnings
+  only localcarrier exception, source/PDF/grades untouched. First actualLOCAL
+  purediagnostic stopped BEFOREprovider: overlystrict afterglobaldeny assertion
+  rejectedexactbuiltin tool-output directory allowance.2925rules, lastglobaldeny
+ 2923/onlyoneinternaldirectoryexception, all12toolsfalse/modelright; nosafeprofile,
+  nonative directory/call. Separate native-preparation-v2 effectiveTOOLdeny+
+  exactinternalexception codeamendment/independentaudit is underway; no config/
+  input/model change or oldlineageretry. Exactinput/audit/seal/failurecustody at
+  reviews/2026-11-04-point-upper-root-readiness/. No nativeREADY/preflightpass or
+  review/High/adoptionclaimed. Full214/240/13/sourceaf97/PDF263/actualC2/wholeHIGH/
+  Kimi/sourcevisual/freshcold/private delivery remain OPEN; H38unchanged.
+
+
 - **Exact wiki maintenance reconciled read-only (2026-11-04UTC):**
   Old tk-20261103-151055-codex-stratonovich-af97-status is CANCELLED in failed,
   replaced by supervisor tk-20261103-190225-codex-queue-supervisor-2, whose exact
