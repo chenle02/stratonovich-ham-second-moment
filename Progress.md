@@ -6,6 +6,32 @@
 
 ## Current state
 
+- **V3 Root replay and preserved harness incident (2026-11-04 UTC):**
+  V3 uses distinct PREBOUND_B21_PROTOTYPE_3/scope3. Root read its actual code
+  delta, grammar and corrected011/012 finite-sector associations;210–213 stay
+  separate. Status-aware unread/partial logic preserves explicit remainders
+  without invented certificates while validating supplied work and refusing
+  consumed unavailable CURRENT work or a complete header over unread rows.
+  Root's first replay harness intercepted write_text but missed open('a'),
+  accidentally appending two duplicate grammar sections. Root stopped audits,
+  preserved its10195B postimage, and restored only its own appended suffix:
+  original6899B grammar SHA77b0361c matched the held manifest. All22 members
+  rehashed exact.28TeX/PDF and bound prior reports remain unchanged.
+  A disposable-copy replay then reproduced all seven generated artifacts,
+  99controls and40minimum byte-exact, with the entire held tree unchanged.
+  Exact incident/restoration/executable evidence and durable isolation lesson:
+  reviews/2026-11-04-B21-prototype-completeness-audit/v3-root-replay-incident/.
+  This was a Root harness error, not a producer grammar or manuscript defect.
+  Independent v3 implementation/retention audit remains pending. Actual v3
+  baseline count127frames/823859plaintext+1022planned-object tokens with old
+  allowances totals1015592/head32984, not final fit. Root additionally approved
+  an external blocked runtime CODE PROPOSAL ONLY to enforce strict raw JSON,
+  profile freshness and exact projected binding. No Root plan/authorization/
+  delivery files, runtime main, CLI/preflight/provider, packet/config/carrier
+  or new Git seal is authorized. Actual extra runtime bytes must be charged.
+  Scientific source/PDF/grades/closed reports/full goal remain unchanged/open.
+
+
 - **Held v2 follow-up: source associations and honest unread rows (2026-11-04 UTC):**
   V2 added exact named global coverage and producer75controls/38minimum, but
   Root found two further preparation defects and the independent auditor
