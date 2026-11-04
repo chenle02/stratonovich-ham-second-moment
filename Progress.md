@@ -6,6 +6,27 @@
 
 ## Current state
 
+- **Intrinsic MAIN CLOSED, original plus ONE factual (2026-11-04UTC):**
+  LiteralPASS_WITH_NOTES/medium/all14OWN18formal/application/joinCHECKED remains.
+  Solefactual170.414s/stop/tools0/fresh4/exactoriginal2prefix/source96PDFheld
+  corrects/calibrateslabels,scalarweights,D(4),C_upamplitudeandcausal/norm
+  attribution; full-classbGamma amplitude scaling explicitlyworked. Root read
+  EVERYoriginal/additivepublicfield andallauthorbatches. No source repairfound.
+  All17new numericJSONpointersresolve; no newconfidence/verdict. Four residual
+  additivecaption/recordqualifications retained: wrongoldBfailureinventory,
+  costarrowtypo,dualvalue-vs-weightdirection,genericBochnervsEmeanconstants.
+  Original38recordfailures stayliteral; no syntheticpassingmaster/HIGH/voteunion.
+  Evidence:reviews/2026-11-04-main-af97-intrinsic/root-adjudication.md.
+  Original49member64ec4ffd at8ab3d30; fullfinalcustodypreservesactualexports,
+ 12additivecorrectionsandrootqualifications. ONEfactualspent; NO furthercallin
+  thislineage. Fullfactualprompt796029=30077+765952cache,not30077alone;
+  public4509/reason7954/total808492. Originalturn807771notinputwasconditional
+  planningbase; actualusagekept. All28source/PDF263/index7/ledger54/localstates/
+ 80Lean22seams unchanged. Next actualG164–193/Bremainder21 supportmaps read,
+  no newpacket/call/acceptanceyet. All214/240/13/originalmodels/actualC2/
+  genuinewholeHIGH/Kimi/sourcevisual/freshcold/wiki/private delivery open.
+
+
 - **Intrinsic original TERMINAL; sole factual batch ready (2026-11-04UTC):**
   Actual706.429s/stop/tools0/fresh2/source96/PDFunchanged. LiteralPASSnotes/
   medium/all14proof18formal/application/joinCHECKED;38recordrefusalsretained.

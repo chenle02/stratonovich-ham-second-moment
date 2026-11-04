@@ -1,0 +1,117 @@
+{
+  "kind": "FACTUAL_ADDENDUM",
+  "phase_id": "ThemeII.H.intrinsic",
+  "source_commit": "af97ae4db921a660b0a4ed1ffbe9b6f53a487e2b",
+  "preserved_original_assessment": "PASS_WITH_NOTES / medium",
+  "corrections": [
+    {
+      "original_JSON_pointers": [
+        "/formal_statements/9/actual_clause_and_scope_check"
+      ],
+      "corrected_derivation": "S228's caption collapsed the temporal label into the spatial multiplier. In PROOF200 the objects are distinct: h_i = 1_{I_i}/ell_i is the pure temporal cell label (cell average). The actual raw labels are k_i^R = h_i tensor (m_R f_i^2) and k_i^infinity = h_i tensor f_i^2, where m_R f_i^2 is the spatial multiplier with exactly ONE physical mask placed after covariance convolution. The completed-row identity is <Phi,k_i^R>_{H_I} = ell_i^{-1} int_{I_i} v_{T_R Phi(s)}(f_i,f_i) ds, with the displacement/dual-second-component cancellation giving m_R f_i^2 (not m_R^2 and not an extra Fourier factor). Writing 'h_i = m_R f_i^2' conflates the temporal label with the spatial multiplier; the proof itself uses the correct separated labels.",
+      "affected_claim_assessment": "Caption-level conflation only. PROOF200's quantitative content is unaffected: the labels actually used in the row identity and in the entrywise Gram order are the correct separated objects. 202's masked/unmasked optimized-value comparison is unaffected.",
+      "remaining_conditions": "Preserve h_i = 1_cell/ell_i (not a 1/2-cell normalization), exactly one physical mask m_R f_i^2, and the ell_i sitting outside the square root in the score."
+    },
+    {
+      "original_JSON_pointers": [
+        "/finite_controls/1/actual_calculation"
+      ],
+      "corrected_derivation": "For a general nonzero label with C_ii = c > 0, k_i has norm sqrt(c), ell > 0, b = 0. Writing Phi along the label direction, the half-cost objective is 2 ell c^{1/4} sqrt(phi_+) - phi^2/2 with optimizer phi* = ell^{2/3} c^{1/6} and value (3/2) ell^{4/3} c^{1/3}. With the DOUBLED cost q^2->q^2 (phi^2) the stationarity on phi>0 is ell c^{1/4}/sqrt(phi) - 2 phi = 0, giving the general optimizer 2^{-2/3} ell^{2/3} c^{1/6} and value 3 * 2^{-4/3} ell^{4/3} c^{1/3}; phi<=0 remains nonpositive. The bare constants 2^{-2/3} and 3*2^{-4/3} are the ell = c = 1 specialization, not valid at general amplitude.",
+      "affected_claim_assessment": "Finite Gram calibration only, not the physical C2 covariance scaling. The original values 3/2 and 3*2^{-4/3} are correct at ell=c=1; the missing ell,c dependence is a display imprecision in the finite-control caption, not a defect in PROOF194's half-cost identity.",
+      "remaining_conditions": "Keep this abstract Gram test (c = C_ii, computed from the label norm) distinct from the physical covariance-amplitude dilation of item 12; it gives no actual moment or Chen identity."
+    },
+    {
+      "original_JSON_pointers": [
+        "/finite_controls/0/actual_calculation"
+      ],
+      "corrected_derivation": "In the 1x1 empty-active branch, D(w) = 1/(100w) - 4w + w^2/2 is the dual function on the eligible nonempty subset Psi. D(4) = -3199/400 is a NEGATIVE TEST EVALUATION at w=4, not the attained nonempty dual infimum d_A; D is not minimized at 4. Indeed D'(w) = -1/(100 w^2) - 4 + w, so D'(4) = -1/1600 < 0, and the nonempty dual continues strictly below 4: for delta = 1/1600, D(4+delta)-D(4) = -6399/32773120000 < 0, so d_A < -3199/400. The strict negative evaluation already certifies d_A < 0, which is exactly what the empty-branch example needs: the primal maximum is 0 while the nonempty dual infimum is strictly negative, so retaining the empty subset is essential.",
+      "affected_claim_assessment": "No change to the conclusion of PROOF195/196 (empty branch is attained and necessary). The correction removes a false claim that w=4 minimizes D; the source argument still stands because a negative test value suffices to show d_A < 0.",
+      "remaining_conditions": "Do not state D(4) as the minimizer; d_A is the infimum (slightly below -3199/400), and the empty value 0 is the nonnegative primal maximum in this example."
+    },
+    {
+      "original_JSON_pointers": [
+        "/proofs/2/inputs/0/actual_hypotheses"
+      ],
+      "corrected_derivation": "For the fixed ORIGINAL covariance, the independent canonical upper is E u^2(T,x) <= e(T+2)^d exp{C(alpha,a) R_alpha^{1/(3-alpha)} T^kappa} with kappa=(4-alpha-a)/(3-alpha). Only C(alpha,a) is parameter-only; the full constant C_up = C(alpha,a) R_alpha^{1/(3-alpha)} retains the covariance amplitude through R_alpha. PROOF132 requires finiteness at the FIXED model (any fixed amplitude b in Gamma->bGamma is allowed because the bound scales as b^{1/(3-alpha)}), not a covariance-uniform ceiling. R_alpha keeps its original normalization; no R_alpha >= 1 renormalization is inserted.",
+      "affected_claim_assessment": "Scope-precision on the consumed clause. 132's finiteness numerator is unaffected; the 'parameter-only' phrasing over-claimed the constant and could be misread as amplitude-uniformity.",
+      "remaining_conditions": "Keep R_alpha = alpha*pi*mu(B1)/(2 sin(pi alpha/2)) unchanged; zero covariance is handled directly, not by a normalization."
+    },
+    {
+      "original_JSON_pointers": [
+        "/applications/0/actual_working/1"
+      ],
+      "corrected_derivation": "051 supplies only FINITE upper growth at the canonical scale; it does not by itself prove strict positivity of S1^pos or a positive lower rate. Strict positivity uses the explicit positive test: 117/129 give I0,v0 in (0,infinity), r0=(I0/v0)^{1/k} yields a strictly positive score, and 130/131 transfer finiteness to the label-one scores and give S1^pos>0. For zero Gamma, u=1 and all rates and scores are exactly 0. Preserve the same-canonical independent-upper-before-score-finiteness order with no additional positivity premise inside 132 or 202/204.",
+      "affected_claim_assessment": "Local wording fix in the application working. Finiteness and positivity already have the correct source in 132; no output change.",
+      "remaining_conditions": "Zero Gamma remains the direct zero branch; no Gaussian nondegeneracy argument is invoked."
+    },
+    {
+      "original_JSON_pointers": [
+        "/applications/0/inputs/0/clause_id",
+        "/primary_applications/0/consumer"
+      ],
+      "corrected_derivation": "0051's internal structure must be split into stages. The PRELIMIT enlarged-amplitude B(T;r)=e(T+2)^d exp{C(r^2 R_alpha)^{1/(3-alpha)}T^kappa}, r>1, is an internal antecedent built from 048+049+localization/positive Wick comparison; only afterward do 006's fixed-order L2 limits plus 050's uniform geometric tails close the CANONICAL amplitude-1 upper. The clause actually consumed by 132 to bound score finiteness is the canonical upper after this closure, not the prelimit B_r. Thus the clause_id 'PRELIMIT_ENLARGED_AMPLITUDE_BOUND' compresses distinct stages; the score-bounding clause is 'full-upper-bound'. No variational/intrinsic finiteness is fed back into 051's own antecedent, and 051 is not re-run by this distinction.",
+      "affected_claim_assessment": "Clause-labeling correction. The application chain already states the correct order in its working[0]; only the clause label and the consumer phrase 'PRELIMIT canonical upper' misfiled the consumed stage.",
+      "remaining_conditions": "Keep the strict order PRELIMIT B_r -> 006 fixed orders + 050 tails -> canonical upper -> 132 finiteness; 202/204/193 remain non-antecedents of this finiteness."
+    },
+    {
+      "original_JSON_pointers": [
+        "/proofs/10/inputs/0/actual_consumer_check"
+      ],
+      "corrected_derivation": "PROOF201 already consumes PROOF180 as a genuine premise, not deferred context: it uses 180's elementary envelope Rate_R(Phi)<=1+C_mean||Phi|| to form the score bound 2+2Cq-q^2/2 and the uniform M=4C_mean+4 ball, plus the closed-potential Rayleigh facts and integrated rate CONTINUITY for the positive-smoothing step. Only the uniform AVERAGING ERROR e_n (the measurable partition-mesh error) is deferred to 202, because the M budget is proved before any re-averaging and is independent of partition, trial gradients and the chosen plateau R'. Erasing 180 as later-only context misstates the premise actually used in 201.",
+      "affected_claim_assessment": "Premise-tagging correction. No mathematical step in 201/202 changes; e_n remains the only deferred part of 180.",
+      "remaining_conditions": "The uniform M budget still precedes all averaging errors; 180's averaging ERROR (not its envelope/continuity clauses) is what 202 applies after the optimizer budget."
+    },
+    {
+      "original_JSON_pointers": [
+        "/proofs/8/actual_working/0",
+        "/proofs/8/inputs/1/actual_hypotheses",
+        "/formal_statements/8/actual_clause_and_scope_check"
+      ],
+      "corrected_derivation": "Separate the two conclusions. Schur's K0 = 2^a/(1-a) bound gives only an L^2 Hilbert inclusion J_G: L^2(I;G)->H_t tensor G with ||J_G F||^2 = int K(s,t)<F(s),F(t)>_G ds dt <= K0||F||^2. The Bochner mean B(F)(s)=int_I K(s,t)F(t)dt is first identified as an L^2-version field. The L^r conclusion is a distinct step: the actual compact scalar-time map C_t and 153's dimension-free Hilbert tensor norm bound give (C_t tensor Id)J_G in L^r(I;G) for the FIXED admissible r of the supplied mean package (2<r<2/a). Since r>2 and |I|=1, L^r embeds into L^2 and uniqueness of the L^2 limit identifies the L^2 field with the L^r tensor map, yielding L^r membership with the displayed C_mean bound. The Schur bound alone does NOT give L^r, no arbitrary r is asserted, and no tensor compactness is inferred.",
+      "affected_claim_assessment": "Constant/domain attribution correction in 199/S227. The final L^r mean and C_mean bound used by 200-202 remain valid; only the justification chain is made explicit rather than imputed to Schur alone.",
+      "remaining_conditions": "The L^r statement holds at the single fixed r of the uniform-mean package; uniformity in r or an L^2->L^r gain from Schur alone is not claimed."
+    },
+    {
+      "original_JSON_pointers": [
+        "/provisional_dependencies/3/actual_consumer_check"
+      ],
+      "corrected_derivation": "Route Teschl correctly through the owners. 117 supplies the original raw covariance/profile identity (mean h_s, variance v_Psi, W(Phi)) and its bounds; it does not import the spectral/ground theorems. 118 constructs the homogeneous common negative trial (potential gain CL^{-alpha} vs kinetic cost DL^{-2}, using alpha<2) with the original Psi,Z,v fixed. The Teschl spectral imports enter through PROOF112 applied to the compact smooth MASKED family V_s=m_R h_s: the form-domain/max-min/essential-spectrum facts give the discrete negative bottom, and the simple positive ground state is then legitimately invoked because 118 has already supplied the negative floor. Thus 118 correctly calls 112 after its own negative trial; this chain proves neither 117's raw identity nor an unmasked ground eigenstate, and the named external proofs stay external after exact hypothesis matching.",
+      "affected_claim_assessment": "Dependency-routing clarification. No change to 117/118/112 or to 130/132's use of the compact masked family.",
+      "remaining_conditions": "Teschl statements remain named imports; the ground-state simplicity applies to the compact masked family only (no unmasked eigenbottom), and 117's raw covariance identity is an own covariance completion, not a spectral-import consequence."
+    },
+    {
+      "original_JSON_pointers": [
+        "/proofs/13/actual_working/2"
+      ],
+      "corrected_derivation": "DO NOT use 193 alone as an independent finite ceiling on S2^pos. The displayed 193 conclusion P2 <= limsup_(delta->0) S_(delta^{-1}+2) is a point-to-score limsup comparison, not a finite bound on S2^pos by itself. The actual order is: 132 obtains S2^pos finite positive via 051+130+131 (independent of 193); 203 then gives lim_R S_R = S2^pos; only AFTER that does 193's limsup expression evaluate to S2^pos and give S2^pos <= P2 <= S2^pos. Saying S2^pos is 'finite by 193's upper' is a posthoc consistency statement, valid only after the independent 132 finiteness and the 203 all-R limit; it must not be manufactured into a new finiteness input or a cycle in which 193 feeds 132.",
+      "affected_claim_assessment": "Ordering-of-limits clarification in 204. The final equality is unchanged; the wording 'finite by 193's upper' is made strictly posthoc.",
+      "remaining_conditions": "193 does not assume S_R converges (203 supplies that); 132's finiteness remains upstream via 051; no diagonal R(delta) and no new gap/cycle."
+    },
+    {
+      "original_JSON_pointers": [
+        "/finite_controls/4/parameters"
+      ],
+      "corrected_derivation": "The family must be stated as the UPPER mask family m_R=eta(./R)^2, which is possibly NONMONOTONE in R; call it 'upward' only in the sense of an upper-bound mask, not in the sense of monotone growth. 203 uses only 0<=m_R<=1 and eventual equality to 1 on each fixed compact set, so the family need not be pointwise nondecreasing in R. Keep the single fixed positive near-test chosen before the liminf, its R-independent cost v_Psi, and dominated rate convergence; no moving maximizing control or noisy unmasked limit appears.",
+      "affected_claim_assessment": "Terminology fix only. The nonmonotone-flavored argument in PROOF203 is unchanged.",
+      "remaining_conditions": "The monotone numerical LOWER family of 130 and the possible nonmonotone UPPER family of 203 remain distinct legitimate uses; neither supplies a uniform-in-mask Gaussian lower estimate."
+    },
+    {
+      "original_JSON_pointers": [
+        "/model_and_constant_audit/0/actual_deduction",
+        "/finite_controls/5/actual_calculation",
+        "/proofs/13/actual_working/3"
+      ],
+      "corrected_derivation": "Replay the supplied original-covariance amplitude calibration explicitly, beyond the fixed-Gamma D_r identity. For b>0 put nu=3-alpha, q=4-alpha=nu+1, r=b^{1/nu}. Since b=r^nu, define the bijection of the FULL nonseparable positive smooth class by Psi_b := b^{-1} D_r Psi = r^{d-1} Psi(s,rx). Using original Radon homogeneity and PROOF131: (i) (bGamma * (Psi_b)_t)(x) = r^2 (Gamma * Psi_t)(rx), so h^{bGamma}_{Psi_b,s}(x)=r^2 h^Gamma_{Psi,s}(rx); (ii) I^{bGamma}(Psi_b)=r I^Gamma(Psi); (iii) v^{bGamma}(Psi_b)=b^{-1} r^q v^Gamma(Psi)=r v^Gamma(Psi), because b^{-1}r^q = r^{-nu}r^{nu+1}=r. Hence each label-c score transforms by r and the FULL supremum satisfies S_c^{bGamma}=r S_c^Gamma=b^{1/(3-alpha)}S_c^Gamma. Applying the already identified C2=S2^pos gives C2(bGamma,a)=b^{1/(3-alpha)}C2(Gamma,a), matching the R_alpha^{1/(3-alpha)} amplitude dependence of the independent upper. b=0/zero covariance is the direct zero branch, not division. The half action v/2 is retained and no covariance normalization shortcut is used.",
+      "affected_claim_assessment": "This is a normalization/consistency calibration of the existing variational formula, not a new moment theorem and not an actual-p1/Chen identity. It confirms the covariance-amplitude routing is internally consistent (Radon r^{alpha-d} distinct from Lebesgue r^{-d}; b^{-1}(D_r) collapses to r^{d-1}). No forced outcome; the additive derivation stands on 131 and the original homogenity.",
+      "remaining_conditions": "Keep the full positive class bijection, kinetic coefficient 1, and Gaussian v/2 action. This physical amplitude scaling is distinct from the finite abstract Gram c^{1/3} (C_ii) of item 2, and gives nothing about first moments, Chen's printed energies, or a new full-project theorem; zero covariance remains direct."
+    }
+  ],
+  "scope_and_limitations": [
+    "The original PASS_WITH_NOTES / medium verdict and confidence are preserved verbatim; no replacement, no stronger-confidence request, and no status regeneration are issued.",
+    "All 14 proofs, 18 formal declarations, the one canonical join and the one application retain their original assessments; only caption/calibration/scope-precision language is corrected.",
+    "The 38 original mechanical refusals (11 current + 10 prior math-reference LF locators, 9 owner-B corrections, 2 009 role/state mismatches, plus the global completion language) remain literal and untouched; no metadata or dependency records are regenerated and no synthetic corrected master is produced.",
+    "All corrections keep the original admissible d1/2/3 covariances, white/singular/zero branches, original amplitude, data (1,0), full nonseparable positive class, kinetic coefficient 1, same canonical Stratonovich solution and Gaussian action exactly v/2.",
+    "The named external imports (Crouzeix-Palencia, AUTHOR Theorem 3.1, Friz-Hairer Young/enlargement, Teschl spectral/ground) remain named after exact hypothesis/application matching; their proofs are not re-derived.",
+    "No new SPDE theorem, no actual-p1/Chen identity, no uniqueness result, and no new project scope (full 214 OWN / 240 formal / 13 joins / image / Kimi / cold) are introduced; the whole-project scope remains separately ungraded."
+  ]
+}
