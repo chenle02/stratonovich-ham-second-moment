@@ -1,0 +1,690 @@
+{
+  "schema": "PROSPECTIVE_THEMED_MAIN_REPORT_V1",
+  "phase_id": "ThemeI.B.phase",
+  "kind": "OWN_WORKING",
+  "source_commit": "af97ae4db921a660b0a4ed1ffbe9b6f53a487e2b",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "medium",
+  "judgment_reason": "Each of the eight OWN proof bodies is present in the supplied source notes/notes_stratonovich_ham_second_moment.tex (SHA256 364753242f9d02e57036af586ab8e777b184d897862750d3170d79f028067914) at the assigned LF windows, and the actual calculations (036 quartic C23 import and H1 strong limits; 037 physical/spectral mass separation and R_alpha/D_Gamma constants; 038 both Born and mean contributions plus the free two-component phase growth; 039 all four ordered root comparisons, numerical-range parabola and 1+sqrt2 CP application; 040 both selfadjoint row and column variances and the uniform d_N; 041 the exact selected finite-word prefix-degree induction; 042 the vector-Cauchy factorial exponent (3-alpha)/2 with 038FREE_PHASE_GROWTH local reuse; 043 general-lambda Born/mean, higher-order factorial parity, dyadic powers and independent NEXT-field finite partition) are reproduced as OWN deductions. The named CPv1 and C23 external statements are imported only after explicit hypothesis matching. The report is honest about standalone scope: no full owned join is claimed, no all-order bound is derived from the 038 first-variance term alone, and 043's finite-partition product is only for successive fields independent of the NEXT field. Severity is not high because the phase block is isolated and does not clear the full 214/240/13 goal.",
+  "actual_reading_scope": [
+    "notes/notes_stratonovich_ham_second_moment.tex source body of PROOF036--PROOF043 and formals S022,S023,S050,S024,S025,S026,S051,S062",
+    "C23 authorpreprint/paper Theorem 1.1 closing (1.5)-quartic finiteness statement",
+    "Crouzeix-Palencia author-preprint-v1 (3), page 1 and Theorem 6, pages 5-6",
+    "author-math/B-phase-source-support.md and author-math/B-phase-root-working.md as source-support navigation and working context"
+  ],
+  "proofs": [
+    {
+      "id": "PROOF036",
+      "owner_label": "L:physical-spectral-energy",
+      "path": "notes/notes_stratonovich_ham_second_moment.tex",
+      "proof_LF": "4666:4768",
+      "raw_body_sha256": "2471f3ba4dd9be0de5b0a578e534958f783649424417e1e7a610ece142cc5d62",
+      "status": "CHECKED",
+      "actual_working": [
+        "Fourier uniqueness with Xi(cA)=c^{3-chi}Xi(A) gives mu_Xi(cA)=c^chi mu_Xi(A), mu_Xi({0})=0, and a dyadic Dalang check on unit strata using sum_{j>=0} 2^{j(chi-2)}<infinity for 0<chi<2.",
+        "Define E(h)=int |what(h)|^2 dmu_Xi and Q(f)=E(f^2); for real Schwartz h under the unnormalized Fourier convention Q(f) is the Schwartz-pairing form of the positive physical integral int_Xi(dz)int f(y+z)^2 f(y)^2 dy.",
+        "Import C23 Theorem 1.1 closing sentence for QUARTIC variation (1.5), page 2, initially on real unit-L2 Schwartz profiles: there is C0>=0 with Q(g)<= (1/2)||grad g||_2^2 + C0 when ||g||_2=1, hence by quartic homogeneity Q(f)<= (1/2)||f||_2^2 ||grad f||_2^2 + C0||f||_2^4, not the square-root variation (1.4).",
+        "Two DIFFERENT Cauchy--Schwarz bounds: (i) spectral P(f,h)=int_Xi(dz)int f(y+z)^2 h(y)^2 dy=int what_2 conj(hat{h^2}) dmu_Xi <= sqrt(Q(f)Q(h)); (ii) on the sigma-finite positive measure dy Xi(dz), E(fh)=int_Xi(dz)int f(y+z)f(y)h(y+z)h(y) dy <= sqrt(Q(f)Q(h)); E(fh) is the quadratic energy of fh, not Q(fh).",
+        "Show ||A_f-A_h||_{L2(dy Xi(dz))} <= D(N(f)+N(h))N(f-h) from the decomposition A_f-A_h=(f-h)(y+z)f(y)+h(y+z)(f-h)(y), and ||B_f-B_h||_{L2(mu_Xi)} <= D N(f-h)N(f+h) <= D(N(f)+N(h))N(f-h) from f^2-h^2=(f-h)(f+h).",
+        "For a real Schwartz approximation f_n->g in W^{1,2}, strong L2 Cauchy subsequences give a.e. f_n->g; sigma-finite Fubini in dy Xi(dz) gives A_{f_n}->A_g m-a.e.; L1 convergence ||f_n^2-g^2||_1->0 gives uniform Fourier convergence so the strong L2(mu_Xi) limit is B_g; passing the norm identity ||A_{f_n}||^2=Q(f_n)=||B_{f_n}||^2 proves the physical-spectral equality and the quartic bound, with representative independence and validity for singular Xi and singular mu_Xi."
+      ],
+      "inputs": [
+        {
+          "target": "Chen2023",
+          "target_label": "Theorem 1.1 quartic (1.5) closing finiteness",
+          "owner_unit": null,
+          "kind": "PUBLISHED_IMPORT",
+          "premise_role": "PREMISE",
+          "state": "IMPORTED_HYPOTHESES_VALIDATED",
+          "use_scope": "IDENTIFIED_SUBCLAUSE",
+          "clause_id": "QUARTIC_1.5_CLOSING",
+          "actual_hypotheses": "Dalang condition for the generalized nonnegative positive-definite covariance with 0<chi<2 and unit-L2 real Schwartz profiles; quartic finiteness for the variation in (1.5), not the square-root variation (1.4).",
+          "actual_consumer_check": "Used only to seed boundedness of Q on normalized Schwartz profiles before the OWN H1 physical/spectral extension; the energy identification itself is proven in this proof, not imported.",
+          "source_body_sha256": null,
+          "math_reference": "primary/chen-2023-actual-import-contexts.txt",
+          "unresolved_parent_condition": "The external Theorem 1.1 proof remains named; only the (1.5) quartic closing statement is imported."
+        },
+        {
+          "target": "H:homog/auxiliary static covariance",
+          "target_label": "static homogeneous physical-spectral covariance",
+          "owner_unit": null,
+          "kind": "GLOBAL_HYPOTHESIS",
+          "premise_role": "PREMISE",
+          "state": "GIVEN_ASSUMPTION",
+          "use_scope": "FULL_CURRENT_CLAIM",
+          "clause_id": "STANDALONE_D3_XI",
+          "actual_hypotheses": "Standalone d3 nonnegative even positive-definite tempered Radon Xi with Xi(cA)=c^{3-chi}Xi(A), 0<chi<2, real g in W^{1,2}(R^3); no temporal-alpha0 premise and no endpoint factorization.",
+          "actual_consumer_check": "Supplies physical-spectral identification used by the static variational transfer in Section S:three-endpoints (036 does not assume 033 or H:three).",
+          "source_body_sha256": "e266e6de87dfbc8c81a7352eb5add622a9923b3238db8f8c872014ca9449e68d",
+          "math_reference": "notes/notes_stratonovich_ham_second_moment.tex:4644-4664",
+          "unresolved_parent_condition": "None for this standalone scope."
+        }
+      ],
+      "constants_and_limits": [
+        "C0>=0 from the C23 quartic closing statement",
+        "D finite with sqrt(Q(f))<=D N(f)^2, N(f)^2=||f||_2^2+||grad f||_2^2",
+        "Q(f)<= (1/2)||f||_2^2||grad f||_2^2+C0||f||_2^4",
+        "P(f,h)<=sqrt(Q(f)Q(h)) and E(fh)<=sqrt(Q(f)Q(h)) as two distinct CS bounds",
+        "Representative independence via sigma-finite Fubini; uniform Fourier convergence from L1 convergence of squares"
+      ],
+      "consumer_check": "Supplies the measure-form energy identification and finite quartic bound consumed by the positive-measure static variational functional in EQ three-static-variational (033), without assuming a density for a singular covariance; 033->036 is a backward presentation, so no circle.",
+      "remaining_obligation": "None within this standalone d3 statement; dimension-independent input is not claimed here (044 handles it later).",
+      "phase_working_reference": null,
+      "source_sha256": "364753242f9d02e57036af586ab8e777b184d897862750d3170d79f028067914"
+    },
+    {
+      "id": "PROOF037",
+      "owner_label": "L:phase-contractions",
+      "path": "notes/notes_stratonovich_ham_second_moment.tex",
+      "proof_LF": "4824:4878",
+      "raw_body_sha256": "8304bab4c2a12dec102b217ec3af64f0acdf82bd3693bef0b5ac0461b3dca79b",
+      "status": "CHECKED",
+      "actual_working": [
+        "Spectral mass V=mu(B_1) and PHYSICAL mass M=Gamma(B_1) are kept distinct; homogeneity gives mu(B_r)=V r^alpha and Gamma radial distribution Gamma(B_r)=M r^{3-alpha}.",
+        "Physical nonnegativity and evenness give the shifted heat comparison int e^{-s|q+xi|^2} mu(dxi)=int p_{2s}(x)e^{i q.x} Gamma(dx) <= int e^{-s|xi|^2} mu(dxi); multiplying by e^{-lambda^2 s}, integrating in s, and dominating the q=0 case by the radial Stieltjes integral alpha V r^{alpha-1} yields int mu(dxi)/(lambda^2+|q+xi|^2)<=R_alpha lambda^{alpha-2} with R_alpha=alpha pi V/[2 sin(pi alpha/2)].",
+        "For the physical trace, T_epsilon(a,q)=int e^{iq.x}Gamma_epsilon(x)G_a(dx)=int Ghat_a(q+xi)e^{-epsilon|xi|^2}mu(dxi); finite Gaussian weighting justifies Fourier Fubini, and |T_epsilon(a,q)|<=T_epsilon(a,0) by nonnegativity of Gamma_epsilon G_a.",
+        "The radial distribution gives int F dGamma=(3-alpha)M int_0^inf F(r)r^{2-alpha}dr for radial Schwartz F, i.e. c_Gamma int F(x)|x|^{-alpha} dx with c_Gamma=(3-alpha)M/(4pi); applying this to G_a*p_{2epsilon} gives T_epsilon(a,0)=c_Gamma [p_{2eps}*(G_a*|x|^{-alpha})](0)<=c_Gamma sup_z (G_a*|x|^{-alpha})(z).",
+        "The d3 sphere convolution is explicit: (G_a*|x|^{-alpha})(z)=[(a+r)^{2-alpha}-|a-r|^{2-alpha}]/[2r(2-alpha)] for r=|z|>0; regionwise r<a/2 gives <=2^alpha a^{1-alpha}, r>2a gives <=a^{1-alpha}, and a/2<=r<=2a gives <=3^{2-alpha}a^{1-alpha}/(2-alpha); hence b_alpha=2^alpha+3^{2-alpha}/(2-alpha) and D_Gamma=c_Gamma b_alpha bound T_epsilon(a,q) by D_Gamma a^{1-alpha}.",
+        "No angular density and no identification of the spectral mass with the physical mass is used; M is not V, and the physical trace bound is a genuine three-dimensional-sphere/positive-smoothing calculation, not an export of the spectral resolvent estimate."
+      ],
+      "inputs": [],
+      "constants_and_limits": [
+        "R_alpha=alpha pi V/[2 sin(pi alpha/2)]",
+        "M=Gamma(B_1), V=mu(B_1), M and V distinct",
+        "c_Gamma=(3-alpha)M/(4pi)",
+        "b_alpha=2^alpha+3^{2-alpha}/(2-alpha)",
+        "D_Gamma=c_Gamma b_alpha",
+        "alpha in (0,2), positive epsilon/lambda/a"
+      ],
+      "consumer_check": "Supplies the two uniform contraction bounds consumed by 038 (Born and mean terms), 040 (Gaussian covariance/Plancherel sandwich), 043 (general-lambda Born/mean), 044 and 045; both 036-style resolvent and physical-trace constants remain available.",
+      "remaining_obligation": "This is a static d3 standalone result; no trace argument is exported unchanged to lower dimensions, and no angular density or physical/spectral mass equality is claimed.",
+      "phase_working_reference": null,
+      "source_sha256": "364753242f9d02e57036af586ab8e777b184d897862750d3170d79f028067914"
+    },
+    {
+      "id": "PROOF038",
+      "owner_label": "P:static-phase-variance",
+      "path": "notes/notes_stratonovich_ham_second_moment.tex",
+      "proof_LF": "4930:5012",
+      "raw_body_sha256": "2822039eeb3177ccda889a246c5f57ce59985879ebed4290d7be83a1729d0f73",
+      "status": "CHECKED",
+      "actual_working": [
+        "With A_lambda=lambda^2-Delta and N=||(f,g)||_lambda, the free position coefficient is cos^2(sq)+(1+lambda^2/q^2)sin^2(sq)<=1+lambda^2 s^2 with the continuous value 1+lambda^2 s^2 at q=0, giving |a_s(eta)|^2<=(1+lambda^2 s^2)e_lambda(eta) with e_lambda=|widethat f|^2+|widethat g|^2/(lambda^2+|eta|^2).",
+        "The two output coordinates are k_tau(r)=(sin(tau r)/r, cos(tau r)/sqrt(lambda^2+r^2)), whose squared norm equals [1+lambda^2 sin^2(tau r)/r^2]/(lambda^2+r^2)<= (1+lambda^2 h^2)/(lambda^2+r^2) for 0<=tau<=h.",
+        "Gaussian covariance plus unnormalized spatial Plancherel gives E||Z_1(h)||_lambda^2 as the explicit input-frequency/noise-frequency integral; time Cauchy--Schwarz charges h^2 and the two coefficient estimates charge (1+lambda^2 h^2)^2, and 037's shifted resolvent bound gives the Born estimate E||Z_1(h)||_lambda^2 <= R_alpha h^2 lambda^{alpha-2}(1+lambda^2 h^2)^2 N^2.",
+        "The separate MEAN contraction is the convolution operator with kernel G_{s-r}(dx)Gamma_epsilon(x), whose Fourier multiplier T_epsilon(s-r,eta) has operator norm at most D_Gamma(s-r)^{1-alpha} by 037; the output multiplier contributes sqrt(1+lambda^2 h^2)/lambda, the free position contributes sqrt(1+lambda^2 h^2) N, and int_0^h ds int_0^s dr (s-r)^{1-alpha}=h^{3-alpha}/[(2-alpha)(3-alpha)], producing ||E Z_2(h)||_lambda <= D_Gamma(1+lambda^2 h^2) h^{3-alpha} N/[lambda(2-alpha)(3-alpha)].",
+        "For BOTH phase coordinates, the free two-component weighted energy is differentiated: the -Delta terms cancel, leaving 2 lambda^2 Re<A_lambda^{-1} dot(w0), w0>, whose absolute value is at most lambda||Z_0||_lambda^2; Gronwall gives ||Z_0(h)||_lambda<=e^{lambda h/2} N, and this same absolute-differentiated-energy bound works backward for S_0(-h) (FREE_PHASE_GROWTH LF 4998:5004).",
+        "The exact sigma^2 coefficient is K_epsilon=E||Z_1(h)||_lambda^2+2Re<Z_0(h), E Z_2(h)>_lambda; at lambda=1/h the Born bound is 4 R_alpha h^{4-alpha} N^2 and the absolute cross bound is 4 sqrt(e) D_Gamma h^{4-alpha} N^2/[(2-alpha)(3-alpha)], with NO favorable sign assigned to the mean term."
+      ],
+      "inputs": [
+        {
+          "target": "PROOF037",
+          "target_label": "L:phase-contractions",
+          "owner_unit": "A",
+          "kind": "OWN",
+          "premise_role": "PREMISE",
+          "state": "CURRENT_MATH_RECONSTRUCTED",
+          "use_scope": "FULL_CURRENT_CLAIM",
+          "clause_id": "phase-resolvent + phase-trace",
+          "actual_hypotheses": "Static d3 covariance Gamma exponent alpha in (0,2), positive epsilon/lambda/a; physical mass M and spectral mass V distinct.",
+          "actual_consumer_check": "Used for R_alpha lambda^{alpha-2} in the Born term (LF 4977) and D_Gamma a^{1-alpha} in the mean term (LF 4996).",
+          "source_body_sha256": "8304bab4c2a12dec102b217ec3af64f0acdf82bd3693bef0b5ac0461b3dca79b",
+          "math_reference": "notes/notes_stratonovich_ham_second_moment.tex:4824-4878",
+          "unresolved_parent_condition": "None for this consumer use; M and V remain distinct."
+        }
+      ],
+      "constants_and_limits": [
+        "Born: R_alpha h^2 lambda^{alpha-2}(1+lambda^2 h^2)^2 N^2",
+        "Mean: D_Gamma(1+lambda^2 h^2)h^{3-alpha}N/[lambda(2-alpha)(3-alpha)]",
+        "Free phase: ||Z_0(h)||_lambda <= e^{lambda h/2} N",
+        "K_epsilon=E||Z_1||^2+2Re<Z_0,E Z_2> with no assigned sign of the cross term",
+        "lambda=1/h specialization: 4 R_alpha h^{4-alpha} and 4 sqrt(e) D_Gamma h^{4-alpha}/[(2-alpha)(3-alpha)]"
+      ],
+      "consumer_check": "Supplies both separate general-lambda Born and mean estimates retained for 043 (GENERAL_LAMBDA_BORN_AND_MEAN LF 4930:4996) and the local FREE_PHASE_GROWTH calculation (LF 4998:5004) reused locally by 042 and 043 without clearing the full proposition as an all-order premise.",
+      "remaining_obligation": "This is a first-variance-order result with arbitrary deterministic initial phase; it is not an all-order phase bound, and its coefficient is not reproduced by dropping the velocity entry (already established by the finite control).",
+      "phase_working_reference": null,
+      "source_sha256": "364753242f9d02e57036af586ab8e777b184d897862750d3170d79f028067914"
+    },
+    {
+      "id": "PROOF039",
+      "owner_label": "L:complex-phase",
+      "path": "notes/notes_stratonovich_ham_second_moment.tex",
+      "proof_LF": "5066:5228",
+      "raw_body_sha256": "cd3072e82656528ba66f11a10ff10a60a861e43678c731922a37530e9f00200c",
+      "status": "CHECKED",
+      "actual_working": [
+        "Abstract complex Hilbert H, bounded nonnegative selfadjoint A_0, bounded selfadjoint B; A_rho=rho^2+A_0; the sandwich hypothesis ||A_rho^{-1/2}BA_rho^{-1/2}||<=d rho^{a-2} holds for every rho>0 with 0<a<1 and d>0, where d is a sandwich constant, NOT a spatial dimension.",
+        "I_a=int_0^inf s^{-1/2}(1+s)^{(a-3)/2} ds = Beta(1/2,1-a/2), so at a=alpha/2 the second Beta argument is 1-alpha/4 and NOT 1-alpha/2; delta_a=min(1/4, pi/(8I_a)).",
+        "For L=A_0-zB and |z|<=delta_a lambda^{2-a}/d, factor L_lambda+t=A_k^{1/2}(1-zK_k)A_k^{1/2} with k=(lambda^2+t)^{1/2} and K_k=A_k^{-1/2}BA_k^{-1/2}; ||zK_k||<=delta gives invertibility and ||A_k^{1/2}(L_lambda+t)^{-1}||<=1/((1-delta)k), plus Re<L_lambda u,u>>=(1-delta)<A_lambda u,u>.",
+        "The inverse-root integral w^{-1/2}=pi^{-1}int_0^inf t^{-1/2}(w+t)^{-1}dt gives Q_z-I=(1/pi)int_0^inf t^{-1/2}A_lambda^{1/2}[(L_lambda+t)^{-1}-(A_lambda+t)^{-1}]dt; the ordered factorization gives an integrand bound |z|d k^{a-3}/(1-delta), hence ||Q_z-1||<=|z|d lambda^{a-2} I_a/[pi(1-delta)]<=1/6, so Q_z and Q_z^{-1} have norm at most 2, and the adjoint/L* argument gives all FOUR ordered operators A_lambda^{1/2}L_lambda^{-1/2}, L_lambda^{-1/2}A_lambda^{1/2}, L_lambda^{1/2}A_lambda^{-1/2}, A_lambda^{-1/2}L_lambda^{1/2} norm at most 2; no commutativity of A_lambda with L is assumed.",
+        "For a unit u with s=||A_0^{1/2}u||, optimizing the sandwich at rho=s gives |<Bu,u>|<=2d s^a, while evaluating at rho=lambda gives |z<Bu,u>|<=delta(s^2+lambda^2); this produces x+lambda^2>=(1-delta)(s^2+lambda^2) and |y|<=2 delta lambda^{2-a}s^a, hence the numerical-range parabola y^2<=[4delta^2/(1-delta)]lambda^2(x+lambda^2)<=(1/3)lambda^2(x+lambda^2) and |Im sqrt(w)|<=lambda with x>=-lambda^2/4.",
+        "The scalar functions C_h(w)=cos(h sqrt w), F_h(w)=sqrt(w+lambda^2) sin(h sqrt w)/sqrt w, H_h(w)=w sin(h sqrt w)/[sqrt(w+lambda^2)sqrt w] are holomorphic near the closed numerical range with removable values at zero; import CPv1 (3),page1 and Theorem 6,pages 5-6 gives operator-norm constants 1+sqrt2<=3 and the four weighted block norms sum to at most 100 e^{2 lambda h} (constants 3,12(1+lambda h),12,12 times the multplicative root-comparison factors), establishing ||M_z(h)||_{X_lambda->X_lambda}<=100 e^{2lambda h} independent of ||A_0|| and ||B||."
+      ],
+      "inputs": [
+        {
+          "target": "Crouzeix-Palencia",
+          "target_label": "author preprint v1 (3) page 1 and Theorem 6 pages 5-6",
+          "owner_unit": null,
+          "kind": "PUBLISHED_IMPORT",
+          "premise_role": "PREMISE",
+          "state": "IMPORTED_HYPOTHESES_VALIDATED",
+          "use_scope": "IDENTIFIED_SUBCLAUSE",
+          "clause_id": "BOUNDED_NUMERICAL_RANGE_SPECTRAL_SET",
+          "actual_hypotheses": "Bounded Hilbert-space operator T and functions holomorphic on a neighborhood of the closed numerical range W(T), constant 1+sqrt2.",
+          "actual_consumer_check": "All operators here are bounded (A_0 and B are bounded on H); the three scalar functions are holomorphic on a neighborhood of the closure of the numerical range after root comparisons, so the bounded-operator theorem applies.",
+          "source_body_sha256": null,
+          "math_reference": "primary/crouzeix-v1-selected.txt",
+          "unresolved_parent_condition": "Theorem proof remains named external; no unbounded-operator extension is imported."
+        }
+      ],
+      "constants_and_limits": [
+        "I_a=Beta(1/2,1-a/2); at a=alpha/2 this is Beta(1/2,1-alpha/4)",
+        "delta_a=min(1/4, pi/(8I_a))",
+        "All four ordered root comparisons have norm at most 2",
+        "Scalar function bounds 3 e^{lambda h}, 6(1+lambda h)e^{lambda h}, 6 e^{lambda h}",
+        "Final block sum <=100 e^{2 lambda h}, independent of operators"
+      ],
+      "consumer_check": "Supplies the abstract bounded-phase mechanism consumed by 040/042 (finite Gaussian/band cutoff), 045, and 047; it gives a bounded two-component phase bound without importing an unbounded CP extension or assuming sqrt(L) is defined by a spectral branch of a possibly noncommuting A_lambda.",
+      "remaining_obligation": "Abstract only; no model-dependent constants are present. No claim that arbitrary sqrt(L) branches define the propagator is used.",
+      "phase_working_reference": null,
+      "source_sha256": "364753242f9d02e57036af586ab8e777b184d897862750d3170d79f028067914"
+    },
+    {
+      "id": "PROOF040",
+      "owner_label": "L:fock-form",
+      "path": "notes/notes_stratonovich_ham_second_moment.tex",
+      "proof_LF": "5251:5295",
+      "raw_body_sha256": "6e3cc05a816840140067d18ba41cfd893e59a974dc2f2fe658d4473eea5d1ca3",
+      "status": "CHECKED",
+      "actual_working": [
+        "Represent W_epsilon(x)=sum_i g_i e_i(x) in L2(Omega), with e_i(x)=E[W_epsilon(x)g_i], so sum_i e_i(x)^2=Gamma_epsilon(0)=v_epsilon and |e_i(x)|<=sqrt(v_epsilon); this makes each M_ei bounded selfadjoint.",
+        "Gaussian isometry and spatial Plancherel give sum_i||A_rho^{-1/2}M_ei f||_2^2 = (2pi)^{-3}int |widethat f(eta)|^2/(rho^2+|eta|^2) J_{rho,epsilon}(eta) d eta with J_{rho,epsilon}=int e^{-epsilon|xi|^2} mu(dxi)/(rho^2+|eta+xi|^2); 037's resolvent bound gives J<=R_alpha rho^{alpha-2}.",
+        "For H_i=A_rho^{-1/2}M_ei A_rho^{-1/2}, the column sums satisfy sum_i H_i^2 <= R_alpha rho^{alpha-4} I in quadratic forms; for selfadjoint boundaries, compression to a Fourier band preserves the bound since (S_b H_i S_b)^2 <= S_b H_i^2 S_b on its closed support, and row and column variances are equal for selfadjoint operators.",
+        "Normalized Hermite creation and annihilation are retained on degree k: g_i h_k=sqrt(k_i+1)h_{k+e_i}+sqrt(k_i)h_{k-e_i}; the creation row map has norm sqrt(k+1) and annihilation is its adjoint after cutoff; summing both parts on degrees at most N gives d_N=2 sqrt(N+1) sqrt(R_alpha), uniform in epsilon, modes, and band, i.e. the sandwich bound ||A_rho^{-1/2}B_{N,m,b}A_rho^{-1/2}||<=d_N rho^{alpha/2-2}.",
+        "The fixed-width v_epsilon only supports the Fock existence and the Gaussian cutoff identification; the divergent v_epsilon is never used in the pointwise/uniform d_N bound. 009's occupied-polynomial multiplication bound (2 sqrt(n+1)||H||_2||F||_2) is only an analogy, not a substitute for the resolvent-variance calculation."
+      ],
+      "inputs": [
+        {
+          "target": "PROOF037",
+          "target_label": "L:phase-contractions",
+          "owner_unit": "A",
+          "kind": "OWN",
+          "premise_role": "PREMISE",
+          "state": "CURRENT_MATH_RECONSTRUCTED",
+          "use_scope": "IDENTIFIED_SUBCLAUSE",
+          "clause_id": "phase-resolvent shifted bound",
+          "actual_hypotheses": "Same d3 Gamma/exponent and positive epsilon/rho; spectral resolvent bound only.",
+          "actual_consumer_check": "Used at LF 5270 to bound J_{rho,epsilon} by R_alpha rho^{alpha-2} for every finite mode sum; no physical trace term needed here.",
+          "source_body_sha256": "8304bab4c2a12dec102b217ec3af64f0acdf82bd3693bef0b5ac0461b3dca79b",
+          "math_reference": "notes/notes_stratonovich_ham_second_moment.tex:4824-4878",
+          "unresolved_parent_condition": "None for the resolvent clause."
+        }
+      ],
+      "constants_and_limits": [
+        "v_epsilon=Gamma_epsilon(0) fixed-width identification variance only",
+        "sum_i H_i^2 <= R_alpha rho^{alpha-4} I",
+        "creation row sqrt(k+1), annihilation norm sqrt(k)",
+        "d_N=2 sqrt(N+1) sqrt(R_alpha) uniform in epsilon, modes, band",
+        "rho>0 and alpha in (0,2) throughout"
+      ],
+      "consumer_check": "Supplies the Fock-form sandwich consumed by 042 and 044/047 for all static Duhamel orders via 039; the uniformity in epsilon/modes/band is exactly what makes the finite-cutoff bounds transfer, whereas v_epsilon never appears in a uniform constant.",
+      "remaining_obligation": "Finite Gaussian degree/band cutoffs only; removal of those cutoffs at fixed epsilon/n is handled in 042, and this lemma is not a zero-smoothing phase limit.",
+      "phase_working_reference": null,
+      "source_sha256": "364753242f9d02e57036af586ab8e777b184d897862750d3170d79f028067914"
+    },
+    {
+      "id": "PROOF041",
+      "owner_label": "L:finite-word-cutoff",
+      "path": "notes/notes_stratonovich_ham_second_moment.tex",
+      "proof_LF": "5323:5343",
+      "raw_body_sha256": "73cf9d3ab5472e5cc3f8c205b6f61eacbf1d37d3561c1c8c5ba61a719abf4e09",
+      "status": "CHECKED",
+      "actual_working": [
+        "Abstract complex Hilbert space X with bounded operators F_0,...,F_n acting on X, independent real Gaussian colors g_ij grouped by color i, and J_i=sum_j M_{g_ij} o K_ij with all K_ij bounded on X.",
+        "Normalized Hermite multiplication by g_ij changes the total degree of color i by exactly one (creation +1 with coefficient sqrt(a_ij+1), annihilation -1 with coefficient sqrt(a_ij)), and every F_l or K_ij leaves the Gaussian degree unchanged.",
+        "Fix a selected word i_1,...,i_n and let r_i be the occurrence count of color i; for N_i>=r_i and P projecting each color to total Hermite degree at most N_i, the induction is that after the first l insertions the color-i degree is at most r_i(l)=|{j<=l:i_j=i}|<=r_i<=N_i, starting from the vacuum of every color.",
+        "The claimed equality (IxF_n)(PJ_{i_n}P)(IxF_{n-1})...(PJ_{i_1}P)(IxF_0)(1xv) = (IxF_n)J_{i_n}(IxF_{n-1})...J_{i_1}(IxF_0)(1xv) follows because P acts as the identity both before and after every insertion along this word; annihilations and self-contractions are retained by the lowering terms.",
+        "The equality is linear and termwise equality of vector integrands, so it passes to finite sums and to Bochner integrals of such words whenever the displayed operator integrals exist; this is an equality of SELECTED FINITE WORDS, not of complete fixed-cutoff propagators."
+      ],
+      "inputs": [],
+      "constants_and_limits": [
+        "r_i(l)<=r_i<=N_i monotone per selected word",
+        "Hermite creation and annihilation coefficients sqrt(a_ij+1), sqrt(a_ij)",
+        "empty word (n=0) and F_l do not raise Gaussian degree",
+        "Bochner-integral extension requires strong measurability and existing operator integrals"
+      ],
+      "consumer_check": "Supplies the exact finite-word/selected-prefix-degree identity consumed by 042 (exact order-n words, N=n) and 047/048, including creation followed by annihilation and all self-contractions, without claiming a fixed-cutoff propagator is exactly the untruncated one.",
+      "remaining_obligation": "Abstract only; no Fock-form constants are attached here (they come from 040).",
+      "phase_working_reference": null,
+      "source_sha256": "364753242f9d02e57036af586ab8e777b184d897862750d3170d79f028067914"
+    },
+    {
+      "id": "PROOF042",
+      "owner_label": "P:static-phase-all-orders",
+      "path": "notes/notes_stratonovich_ham_second_moment.tex",
+      "proof_LF": "5376:5462",
+      "raw_body_sha256": "2971df2593762519b10982458c65be583933ecbae17978fd0de3446877a9e9c4",
+      "status": "CHECKED",
+      "actual_working": [
+        "Retain the full covariance class of Section static-variance with real Schwartz (f,g); Z_n^epsilon(h) is the n-th regularized static Duhamel phase from the recursion for all n>=0, an ordinary Gaussian polynomial of degree at most n including self-contractions, not a pure chaos.",
+        "Combine 040/039 at a=alpha/2: at the finite Gaussian-mode/degree/band cutoff and a real coupling circle, |z|<=delta_{alpha/2} lambda^{2-alpha/2}/d_N, the four-entire entries are entire in the coupling and vector-Cauchy coefficient extraction bounds the n-th Duhamel phase from the vacuum by 100 e^{2 lambda h}(d_N/(delta_{alpha/2} lambda^{2-alpha/2}))^n ||S_b(f,g)||_lambda.",
+        "Apply 041 selected-word exactness with one color, degree cutoff N=n, spatial phase Hilbert space as X, and free wave operators as the F_l; dominated time integration keeps the equation, so each cutoff Duhamel word equals its untruncated word, including annihilations/self-contractions.",
+        "Choose lambda=n/h and charge norm conversion by n: ||z||_{1/h}<=n||z||_{n/h} and ||(f,g)||_{n/h}<=||(f,g)||_{1/h}; with d_n<=2sqrt(2n)sqrt(R_alpha) this yields 100 n (2sqrt2 e^2/delta_{alpha/2})^n R_alpha^{n/2} h^{(4-alpha)n/2} n^{-(3-alpha)n/2} ||(f,g)||_{1/h}; use 100 n<=200^n and n!<=n^n to extract A_alpha=400 sqrt2 e^2/delta_{alpha/2} inside the (A_alpha sqrt(R_alpha))^n numerator and the factorial exponent (3-alpha)/2 in the denominator of EQ all-static-phase-orders.",
+        "Remove the finite band at fixed epsilon/n by L2 approximation: multiplication of degree<=N is bounded by 2 sqrt(N+1) sqrt(V_a) and free propagation contracts the X_rho norm; then remove Gaussian modes using, for vectors depending on finitely many coordinates, zero annihilation tails and dominated creation tails bounded by int sum_{i>m}e_i(x)^2||F(x)||^2 dx->0; the closure identifies the limit as Z_n^epsilon, with NO zero-smoothing limit.",
+        "For beta=(3-alpha)/2 and x=A_alpha|sigma| sqrt(R_alpha) h^{(4-alpha)/2}, prove sum_{n>=0} x^n/(n!)^beta <=2 e^{3 x^{1/beta}}: for beta>=1 use conjugation/ell^beta convexity sum a_n^beta<=(sum a_n)^beta with a_n=x^{n/beta}/n!, and for beta<1 split a_n^beta=(2x^{1/beta})^n/n! times 2^{-beta n/(1-beta)} and apply Holder, yielding the stated all-static-phase-sum bound and the displayed L2 phase convergence for every real sigma."
+      ],
+      "inputs": [
+        {
+          "target": "PROOF039",
+          "target_label": "L:complex-phase",
+          "owner_unit": "A",
+          "kind": "OWN",
+          "premise_role": "PREMISE",
+          "state": "CURRENT_MATH_RECONSTRUCTED",
+          "use_scope": "FULL_CURRENT_CLAIM",
+          "clause_id": "abstract-sandwich/root comparisons/numerical-range blocks",
+          "actual_hypotheses": "Bounded band/degree selfadjoint operators at the finite space; no unbounded CP extension and no commuting A_lambda with L.",
+          "actual_consumer_check": "Bound 100 e^{2 lambda h} used to extract entire coefficient bounds in coupling z at the fixed norm ||S_b(f,g)||_lambda.",
+          "source_body_sha256": "cd3072e82656528ba66f11a10ff10a60a861e43678c731922a37530e9f00200c",
+          "math_reference": "notes/notes_stratonovich_ham_second_moment.tex:5066-5228",
+          "unresolved_parent_condition": "None for this abstract bounded application."
+        },
+        {
+          "target": "PROOF040",
+          "target_label": "L:fock-form",
+          "owner_unit": "A",
+          "kind": "OWN",
+          "premise_role": "PREMISE",
+          "state": "CURRENT_MATH_RECONSTRUCTED",
+          "use_scope": "FULL_CURRENT_CLAIM",
+          "clause_id": "fock-sandwich d_N",
+          "actual_hypotheses": "Uniform-in-widths d_N=2 sqrt(N+1) sqrt(R_alpha), field variance only for existence, NOT in the claimed coefficient.",
+          "actual_consumer_check": "Use d_N with N=n to connect the cutoff field multiplication to the abstract sandwich; no other mode/width quantity enters the final coefficient.",
+          "source_body_sha256": "6e3cc05a816840140067d18ba41cfd893e59a974dc2f2fe658d4473eea5d1ca3",
+          "math_reference": "notes/notes_stratonovich_ham_second_moment.tex:5251-5295",
+          "unresolved_parent_condition": "None; fixed-width v_epsilon never survives from the identification step into the uniform coefficients."
+        },
+        {
+          "target": "PROOF041",
+          "target_label": "L:finite-word-cutoff",
+          "owner_unit": "A",
+          "kind": "OWN",
+          "premise_role": "PREMISE",
+          "state": "CURRENT_MATH_RECONSTRUCTED",
+          "use_scope": "IDENTIFIED_SUBCLAUSE",
+          "clause_id": "selected finite words/prefix degree equality",
+          "actual_hypotheses": "Single color, degree N=n >= r=n occurrences, and spatial phase Hilbert X.",
+          "actual_consumer_check": "Identifies each cutoff coefficient exactly with its untruncated word, preserving self-contractions and lowered terms.",
+          "source_body_sha256": "73cf9d3ab5472e5cc3f8c205b6f61eacbf1d37d3561c1c8c5ba61a719abf4e09",
+          "math_reference": "notes/notes_stratonovich_ham_second_moment.tex:5323-5343",
+          "unresolved_parent_condition": "None for selected finite words."
+        },
+        {
+          "target": "PROOF038",
+          "target_label": "P:static-phase-variance",
+          "owner_unit": "A",
+          "kind": "OWN",
+          "premise_role": "PREMISE",
+          "state": "CURRENT_MATH_RECONSTRUCTED",
+          "use_scope": "IDENTIFIED_SUBCLAUSE",
+          "clause_id": "FREE_PHASE_GROWTH",
+          "actual_hypotheses": "Free-phase Gronwall from the absolute differentiated energy bound at LF 4998:5004, valid in both time directions for Schwartz free data.",
+          "actual_consumer_check": "Used only for the zero-order norm when lambda h <=1 and for the norm comparison / backward S_0(-h) reuse; not the full first-variance proposition, and not an all-order assertion.",
+          "source_body_sha256": "2822039eeb3177ccda889a246c5f57ce59985879ebed4290d7be83a1729d0f73",
+          "math_reference": "notes/notes_stratonovich_ham_second_moment.tex:4998-5004",
+          "unresolved_parent_condition": "Only the local free-phase bound is reused; other 038 clauses (Born/mean) are not used as all-order inputs here."
+        }
+      ],
+      "constants_and_limits": [
+        "A_alpha=400 sqrt2 e^2/delta_{alpha/2}",
+        "R_alpha exponent n/2 and h exponent (4-alpha)n/2",
+        "Factorial denominator (n!)^{(3-alpha)/2}",
+        "Order-zero ||Z_0(h)||_{1/h}<=sqrt(e)||(f,g)||_{1/h} via FREE_PHASE_GROWTH",
+        "Total sum bound [sqrt(e)+2]^2 exp{6 A_alpha^{2/(3-alpha)}(|sigma|^2 R_alpha)^{1/(3-alpha)} h^{(4-alpha)/(3-alpha)}} ||(f,g)||^2"
+      ],
+      "consumer_check": "Supplies the all-regularized-static-orders bound and full sigma-series used both in 043 (all static orders for the interaction picture) and the later interval/positive arguments, while 042 is fixed at positive epsilon and never asserts a zero-smoothing phase limit.",
+      "remaining_obligation": "Static (no temporal covariance) and fixed positive epsilon/n; no broad lim_eps(phase) claim and no all-orders-of-first-variance identification is made.",
+      "phase_working_reference": null,
+      "source_sha256": "364753242f9d02e57036af586ab8e777b184d897862750d3170d79f028067914"
+    },
+    {
+      "id": "PROOF043",
+      "owner_label": "C:static-interaction",
+      "path": "notes/notes_stratonovich_ham_second_moment.tex",
+      "proof_LF": "5512:5586",
+      "raw_body_sha256": "87703d43c95df0fb9e0932d3b45c6499257ec2186bdc2fcf1637134441e8f7ee",
+      "status": "CHECKED",
+      "actual_working": [
+        "Define the static interaction map I^eps_sigma(h)=S_0(-h) sum_{n>=0}sigma^n Z_n^eps(h) using the convergent 042 series; set Y_n=S_0(-h)Z_n. From 038FREE_PHASE_GROWTH both time directions hold, so ||S_0(-h)||_lambda<=sqrt e and Y_0=(f,g).",
+        "Use BOTH general-lambda estimates of 038: give E||Z_1(h)||_lambda^2 <= R_alpha h^2 lambda^{alpha-2}(1+lambda^2 h^2)^2 N^2, and through S_0(-h) the first random term is charged e times this first coefficient, giving e R_alpha h^2 lambda^{alpha-2}(1+lambda^2 h^2)^2 N^2; the mean second-order term is charged 2N sqrt e times ||E Z_2(h)||_lambda, giving 2 sqrt e D_Gamma (1+lambda^2 h^2) h^{3-alpha} N^2/[lambda(2-alpha)(3-alpha)]; this yields L_alpha(h,lambda)=4e R_alpha h^2 lambda^{alpha-2} + [4 sqrt e D_Gamma/((2-alpha)(3-alpha))] h^{3-alpha}/lambda at lambda h<=1, with no favorable mean sign.",
+        "For n>=1, norm comparisons and the 042 factorial bound give ||Y_n||_{L2(Omega;X_lambda)} <= [sqrt e/(lambda h)] (A_alpha sqrt(R_alpha))^n h^{(4-alpha)n/2}/(n!)^{gamma/2} N.",
+        "Orthogonal Gaussian parity (colors/parity on the same field) gives E<Y_r,Y_s>_lambda=0 for r+s odd; for r+s=2k use r!s!>=(k!)^2 and the split count 2k+1 to bound the sum of absolute inner products by [e(2k+1)/(lambda h)^2] (A_alpha^2 R_alpha)^k h^{(4-alpha)k}/(k!)^gamma N^2, with the all-factors construction from 042; the k>=2 tail is dominated by (lambda h)^{-2} x^2 e^{gamma x^{1/gamma}} with x=B_alpha sigma^2 R_alpha h^{4-alpha}, B_alpha=3 e A_alpha^2, after keeping the sharper first coefficient.",
+        "Combining the first-coefficient term and the higher-even-order tail gives E||I^eps_sigma(h)(f,g)||_lambda^2 <= [1+sigma^2 L_alpha(h,lambda)+(lambda h)^{-2} x^2 e^{gamma x^{1/gamma}}]||(f,g)||_lambda^2, the displayed C:static-interaction bound.",
+        "For the dyadic clause sigma_j^2=h_j^{-alpha_0}, h_j=2^{-j}/lambda, verify the first coefficient terms after T/h_j are constant multiples of T lambda^{alpha-2} h_j^{1-alpha_0} and (T/lambda) h_j^{2-alpha-alpha_0}, both manifestly positive powers for alpha_0<1 and alpha+alpha_0<2; the higher-order term is (T/lambda^2)(B_alpha R_alpha)^2 h_j^{2 beta-3} times a bounded exponential factor at h_0, with beta=4-alpha-alpha_0>2 so 2 beta-3>0; the geometric dyadic series converges.",
+        "For the finite-partition tensor bound, per step M_j(h_j)=S_0(h_j)I_j(h_j) with independent successive fields; the static map has a bounded L2 extension to deterministic initial phases and is tensored by the past probability space to allow random initial phases INDEPENDENT of the j-th field; iterating gives the product of e^{lambda h_j}[1+E(h_j,sigma_j,lambda)] and hence E||M_K...M_1(f,g)||_lambda^2 <= exp{lambda sum_j h_j + sum_j E(...)}||(f,g)||_lambda^2; each block develops its own field only over its one block and is independent of the NEXT field, while the dyadic scalar summability is one upper-bound sum, not a product representation for overlapping/repeated fields."
+      ],
+      "inputs": [
+        {
+          "target": "PROOF038",
+          "target_label": "P:static-phase-variance",
+          "owner_unit": "A",
+          "kind": "OWN",
+          "premise_role": "PREMISE",
+          "state": "CURRENT_MATH_RECONSTRUCTED",
+          "use_scope": "IDENTIFIED_SUBCLAUSE",
+          "clause_id": "GENERAL_LAMBDA_BORN_AND_MEAN",
+          "actual_hypotheses": "Arbitrary real Schwartz (f,g), lambda>0, h>0, both terms separately with e-times Born and 2N sqrt e times mean.",
+          "actual_consumer_check": "Used at LF 5523 and 5524 with lambda h<=1 to bound the first random norm and the mean cross term; the source also records a specialization but the source passes the general-lambda split.",
+          "source_body_sha256": "2822039eeb3177ccda889a246c5f57ce59985879ebed4290d7be83a1729d0f73",
+          "math_reference": "notes/notes_stratonovich_ham_second_moment.tex:4930-4996",
+          "unresolved_parent_condition": "Only the general-lambda Born/mean clauses are consumed, not a made-up lambda=1/h all-order estimate."
+        },
+        {
+          "target": "PROOF038",
+          "target_label": "P:static-phase-variance",
+          "owner_unit": "A",
+          "kind": "OWN",
+          "premise_role": "PREMISE",
+          "state": "CURRENT_MATH_RECONSTRUCTED",
+          "use_scope": "IDENTIFIED_SUBCLAUSE",
+          "clause_id": "FREE_PHASE_GROWTH",
+          "actual_hypotheses": "Absolute differentiated-energy bound yielding backward S_0(-h) growth at LF 4998:5004.",
+          "actual_consumer_check": "Used for S_0(-h) with norm sqrt(e) at lambda h<=1; local clause only, not the full proposition.",
+          "source_body_sha256": "2822039eeb3177ccda889a246c5f57ce59985879ebed4290d7be83a1729d0f73",
+          "math_reference": "notes/notes_stratonovich_ham_second_moment.tex:4998-5004",
+          "unresolved_parent_condition": "No full 038 clearance follows from this local clause use."
+        },
+        {
+          "target": "PROOF042",
+          "target_label": "P:static-phase-all-orders",
+          "owner_unit": "A",
+          "kind": "OWN",
+          "premise_role": "PREMISE",
+          "state": "CURRENT_MATH_RECONSTRUCTED",
+          "use_scope": "IDENTIFIED_SUBCLAUSE",
+          "clause_id": "all-static-phase-orders",
+          "actual_hypotheses": "Full static phase order bound, real Gaussian phase, and the displayed gamma=(3-alpha)/2 factorial bound at lambda h<=1.",
+          "actual_consumer_check": "Used at LF 5527 to bound Y_n for n>=1, keeping both order-n coefficients and their parity cancellation, not an all-order-of-first-variance derivation.",
+          "source_body_sha256": "2971df2593762519b10982458c65be583933ecbae17978fd0de3446877a9e9c4",
+          "math_reference": "notes/notes_stratonovich_ham_second_moment.tex:5376-5462",
+          "unresolved_parent_condition": "None for this consumer use; 042 is static and fixed-epsilon."
+        }
+      ],
+      "constants_and_limits": [
+        "L_alpha(h,lambda)=4e R_alpha h^2 lambda^{alpha-2}+[4 sqrt e D_Gamma/((2-alpha)(3-alpha))]h^{3-alpha}/lambda",
+        "x=B_alpha sigma^2 R_alpha h^{4-alpha}, B_alpha=3 e A_alpha^2, gamma=3-alpha>1",
+        "Magnitudes for dyadic sum: lambda^{alpha-2}h^{1-alpha_0}, h^{2-alpha-alpha_0}/lambda, and h^{2 beta-3} with beta=4-alpha-alpha_0>2, 2 beta-3>0 under alpha+alpha_0<2",
+        "Finite-partition growth: exp{lambda sum_j h_j + sum_j E(h_j,sigma_j,lambda)}"
+      ],
+      "consumer_check": "Supplies the summable static-interaction bound used as context for the interval argument for independent successive blocks; its own dyadic clause is only an upper-bound scalar sum across dyadic levels and explicitly does NOT identify a product evolution with overlapping/repeated fields.",
+      "remaining_obligation": "No full join and no overlapping-interval evolution are claimed; 043 is fixed to independent NEXT-field finite partitions only. No all-order estimate is inferred from the 038 first-variance term alone.",
+      "phase_working_reference": null,
+      "source_sha256": "364753242f9d02e57036af586ab8e777b184d897862750d3170d79f028067914"
+    }
+  ],
+  "formal_statements": [
+    {
+      "id": "S022",
+      "path": "notes/notes_stratonovich_ham_second_moment.tex",
+      "environment": "lemma",
+      "ordinal": 19,
+      "LF": "4644:4664",
+      "body_sha256": "e266e6de87dfbc8c81a7352eb5add622a9923b3238db8f8c872014ca9449e68d",
+      "classification": "OWN",
+      "role": "own_deduction",
+      "own_proof_id": "PROOF036",
+      "status": "CHECKED",
+      "actual_clause_and_scope_check": "The statement is reproduced: physical and spectral energies agree as finite quantities for every real g in W^{1,2}(R^3), are Borel-representative independent, and obey the quartic bound (energy-quartic-bound) with the physical expression using the standalone d3 Xi as in the proof.",
+      "remaining_obligation": "None beyond the 036 standalone scope; no temporal window or endpoint factorization.",
+      "source_sha256": "364753242f9d02e57036af586ab8e777b184d897862750d3170d79f028067914"
+    },
+    {
+      "id": "S023",
+      "path": "notes/notes_stratonovich_ham_second_moment.tex",
+      "environment": "lemma",
+      "ordinal": 20,
+      "LF": "4808:4822",
+      "body_sha256": "6da290263a88f500364509d19cb94f49790132c1855790b0da96e2176bfc52b2",
+      "classification": "OWN",
+      "role": "own_deduction",
+      "own_proof_id": "PROOF037",
+      "status": "CHECKED",
+      "actual_clause_and_scope_check": "The two displayed E:phase-resolvent and E:phase-trace bounds are reproduced with R_alpha, c_Gamma, b_alpha and D_Gamma as constant definitions, with V=mu(B_1) used only in the spectral bound and M=Gamma(B_1) used only in the physical trace bound, and T_epsilon(a,q) defined exactly as the source definition.",
+      "remaining_obligation": "M and V are not identified; the trace uses the actual 3D sphere measure and positive smoothing.",
+      "source_sha256": "364753242f9d02e57036af586ab8e777b184d897862750d3170d79f028067914"
+    },
+    {
+      "id": "S050",
+      "path": "notes/notes_stratonovich_ham_second_moment.tex",
+      "environment": "proposition",
+      "ordinal": 14,
+      "LF": "4906:4928",
+      "body_sha256": "c7ca7ec9e3e1b5c850a64fedae5722ef012f04fd876b62986cc1caa00ab89fb7",
+      "classification": "OWN",
+      "role": "own_deduction",
+      "own_proof_id": "PROOF038",
+      "status": "CHECKED",
+      "actual_clause_and_scope_check": "The statement is reproduced: E:phase-born and E:phase-mean are separate general-lambda bounds with coefficients R_alpha and D_Gamma respectively, the K_epsilon coefficient of sigma^2 is exactly E||Z_1||^2+2Re<Z_0,E Z_2>_lambda, and the lambda=h^{-1} specialization is an upper bound in absolute value, not an assertion of favorable mean sign or arbitrary-phase covariance monotonicity.",
+      "remaining_obligation": "First-variance order only; arbitrary real Schwartz (f,g), lambda>0, h>0. No all-order or signed-mean conclusion is included.",
+      "source_sha256": "364753242f9d02e57036af586ab8e777b184d897862750d3170d79f028067914"
+    },
+    {
+      "id": "S024",
+      "path": "notes/notes_stratonovich_ham_second_moment.tex",
+      "environment": "lemma",
+      "ordinal": 21,
+      "LF": "5042:5064",
+      "body_sha256": "d28b7a38e196daed69b92aad790de0d832b3dfa15c9e18b655295998084343fe",
+      "classification": "OWN",
+      "role": "own_deduction",
+      "own_proof_id": "PROOF039",
+      "status": "CHECKED",
+      "actual_clause_and_scope_check": "The abstract sandwich at every rho>0, the I_a=Beta(1/2,1-a/2) and delta_a definitions, the coupling circle |z|<=delta_a lambda^{2-a}/d and the final bound ||M_z(h)||_{X_lambda->X_lambda}<=100 e^{2 lambda h} are reproduced with the bounded-operator constant 1+sqrt2 only as an import; the four ordered roots and all four weighted blocks are internal deductions.",
+      "remaining_obligation": "Abstract complex Hilbert statement; no unbounded CP extension and no commutation of A_lambda with L.",
+      "source_sha256": "364753242f9d02e57036af586ab8e777b184d897862750d3170d79f028067914"
+    },
+    {
+      "id": "S025",
+      "path": "notes/notes_stratonovich_ham_second_moment.tex",
+      "environment": "lemma",
+      "ordinal": 22,
+      "LF": "5230:5249",
+      "body_sha256": "918cc28ee0634d57aef5a99e5cec143ea6aa58fc765d3ffc7143529eb5b99027",
+      "classification": "OWN",
+      "role": "own_deduction",
+      "own_proof_id": "PROOF040",
+      "status": "CHECKED",
+      "actual_clause_and_scope_check": "The Fock-form statement is reproduced: the A_rho^{-1/2}B_{N,m,b}A_rho^{-1/2} sandwich bound has d_N=2 sqrt(N+1) sqrt(R_alpha) uniform in epsilon, m and b, from both row and column selfadjoint variances plus normalized creation/annihilation. The fixed-width v_epsilon is not part of the uniform constant.",
+      "remaining_obligation": "Finite Gaussian/band cutoffs only; existence uses v_epsilon but the lemma's quantitative content does not.",
+      "source_sha256": "364753242f9d02e57036af586ab8e777b184d897862750d3170d79f028067914"
+    },
+    {
+      "id": "S026",
+      "path": "notes/notes_stratonovich_ham_second_moment.tex",
+      "environment": "lemma",
+      "ordinal": 23,
+      "LF": "5297:5321",
+      "body_sha256": "98a90b7503f59af7ca75083c81078d7ed7d0031c575235d08741ffec8360f6d5",
+      "classification": "OWN",
+      "role": "own_deduction",
+      "own_proof_id": "PROOF041",
+      "status": "CHECKED",
+      "actual_clause_and_scope_check": "The displayed selected finite-word equality, with P color-degree projections at N_i>=r_i, is reproduced exactly as in the proof; it is an equality of selected finite words, finite sums, and existing Bochner integrals, not of complete fixed-cutoff propagators.",
+      "remaining_obligation": "None; creation, annihilation and self-contractions are all retained.",
+      "source_sha256": "364753242f9d02e57036af586ab8e777b184d897862750d3170d79f028067914"
+    },
+    {
+      "id": "S051",
+      "path": "notes/notes_stratonovich_ham_second_moment.tex",
+      "environment": "proposition",
+      "ordinal": 15,
+      "LF": "5345:5374",
+      "body_sha256": "a8f4e17a4ef2c2f8e56a39d9cd0fdbad6c74097e6557cb05a8b73d01b691a922",
+      "classification": "OWN",
+      "role": "own_deduction",
+      "own_proof_id": "PROOF042",
+      "status": "CHECKED",
+      "actual_clause_and_scope_check": "The statement is reproduced: Z_n^epsilon has the (A_alpha sqrt(R_alpha))^n h^{(4-alpha)n/2}/(n!)^{(3-alpha)/2} bound and the convergent sigma-series obeys the displayed closed-form all-static-phase-sum bound, at every fixed positive epsilon and real sigma.",
+      "remaining_obligation": "Static, fixed-epsilon and fixed-order-removal scope; no zero-smoothing phase limit and no all-statement extension to the free/interaction phase beyond the stated static sum.",
+      "source_sha256": "364753242f9d02e57036af586ab8e777b184d897862750d3170d79f028067914"
+    },
+    {
+      "id": "S062",
+      "path": "notes/notes_stratonovich_ham_second_moment.tex",
+      "environment": "corollary",
+      "ordinal": 6,
+      "LF": "5464:5510",
+      "body_sha256": "eec9b34844004e7ba03458ef02deb58627bc0b78010450fff29746a52d97b08a",
+      "classification": "OWN",
+      "role": "own_deduction",
+      "own_proof_id": "PROOF043",
+      "status": "CHECKED",
+      "actual_clause_and_scope_check": "The static-interaction bound, the converging dyadic scalar series, and the finite-partition independent-block bound are reproduced exactly, including both 038 general-lambda Born AND mean pieces, higher even orders by parity/factorial symmetrization, B_alpha=3eA_alpha^2, and the stated independent-NEXT-field finite partition hypothesis.",
+      "remaining_obligation": "The dyadic clause is only a summed upper-bound series; the finite-partition tensor bound is for successive independent fields and does not represent overlapping/repeated-factor evolution.",
+      "source_sha256": "364753242f9d02e57036af586ab8e777b184d897862750d3170d79f028067914"
+    }
+  ],
+  "joins": [],
+  "primary_applications": [
+    {
+      "consumer": "PROOF036",
+      "edition_and_pinpoint": "Chen 2023 EJP28(2023)119, Theorem 1.1, closing sentence for the QUARTIC variation in (1.5), physical page 2",
+      "actual_source_statement": "Under Dalang's condition the self-intersection local time is properly defined and the square-root variational limit in (1.4) and the scaled limit in (1.5) hold with finite variations. The closing finiteness assertion for the (1.5) quartic variation is finite under Dalang's condition.",
+      "hypothesis_match": "The d3 stationary Xi has 0<chi<2, yielding a finite square-root variational quantity; the source statement's generalized nonnegative positive-definite covariance hypothesis is met by X_i.",
+      "own_application_working": "Restricts the imported finiteness to real unit-L2 Schwartz profiles only, obtaining Q(g)<=||grad g||_2^2/2+C0 for a positive constant, then quartic homogeneity gives the full bound; no nonsmooth energy equality and no square-root(1.4) variation is assumed.",
+      "limitations": "Only the (1.5) QUARTIC closing statement is used; the source's other variations and its variational equality are not imported, and the external proof remains named."
+    },
+    {
+      "consumer": "PROOF039",
+      "edition_and_pinpoint": "Crouzeix-Palencia author-preprint-v1, (3) page 1 and Theorem 6 pages 5-6",
+      "actual_source_statement": "For a bounded linear operator T on a complex Hilbert space and a function F holomorphic on a neighborhood of the closed numerical range W(T), ||F(T)|| <= (1+sqrt2) sup_{w in W(T)} |F(w)|.",
+      "hypothesis_match": "A_0 and B are bounded so L=A_0-zB is bounded and the three scalar functions C_h, F_h, H_h are ultimately holomorphic on a neighborhood of the closed numerical range after the root-comparison/parabola deductions; the source's bounded-operator version is the one used.",
+      "own_application_working": "Applies the theorem to the scalar functions of L after proving numerical-range geometry and all four ordered root comparisons; the phase blocks use only functions of L with bounded post-weighting.",
+      "limitations": "The theorem's proof is imported; unbounded-operator extensions are not used, and the 1+sqrt2 constant is only the scalar-function supremum factor before the remaining explicit block sums."
+    }
+  ],
+  "finite_controls": [
+    {
+      "target": "038 two contributions",
+      "parameters": "h>0, lambda=1/h, d3 static Gamma exponent alpha",
+      "actual_calculation": "Born coefficient 4 R_alpha h^{4-alpha} and mean absolute cross coefficient 4 sqrt(e) D_Gamma h^{4-alpha}/[(2-alpha)(3-alpha)]; both must be retained with no favorable sign.",
+      "comparison_or_counterexample": "The author working file confirms dropping the velocity/output entry is impossible since the exact coefficient is E||Z_1||^2+2Re<Z_0,E Z_2> and the finite ODE control shows the mean cross term is nonnegligible; no sign assignment is made.",
+      "scope": "047 and 043 consumers; general-lambda split distinct from the lambda=1/h specialization."
+    },
+    {
+      "target": "043 dyadic powers",
+      "parameters": "beta=4-alpha-alpha_0, gamma=3-alpha, h_j=2^{-j}/lambda",
+      "actual_calculation": "First-coefficient powers h_j^{1-alpha_0} and h_j^{2-alpha-alpha_0}; higher-order power h_j^{2 beta-3}; all strictly positive for 0<alpha_0<1 and alpha+alpha_0<2 since 2 beta-3=5-2 alpha-2 alpha_0>0.",
+      "comparison_or_counterexample": "These positive powers confirm the dyadic scalar series converges; it is only a scalar level sum, not a field product.",
+      "scope": "043 dyadic clause only."
+    },
+    {
+      "target": "039 Beta argument",
+      "parameters": "a in (0,1) abstract, eta=alpha/2",
+      "actual_calculation": "I_a=Beta(1/2,1-a/2), so at a=alpha/2 the second argument is 1-alpha/4, not 1-alpha/2.",
+      "comparison_or_counterexample": "This is the exact formal identity used throughout the phase bounds; the abstract a is not the temporal alpha_0 or a spatial dimension.",
+      "scope": "All 039-derived phase bounds."
+    },
+    {
+      "target": "042 factorial exponent",
+      "parameters": "lambda=n/h, d_N=2 sqrt(N+1) sqrt(R_alpha), 100 n<=200^n, n!<=n^n",
+      "actual_calculation": "The lambda=n/h substitution produces h^{(4-alpha)n/2} n^{-(3-alpha)n/2}, which after n!<=n^n becomes the displayed denominator (n!)^{(3-alpha)/2}, with A_alpha=400 sqrt2 e^2/delta_{alpha/2} carrying the exponential constants, no extremal-order sharpness included.",
+      "comparison_or_counterexample": "This is the 'fixed-order then modest strong limits' route; the implicit constant is finite for each fixed positive epsilon and is not claimed sharp, and no phase zero-noise limit is taken.",
+      "scope": "042 all-static-phase-orders."
+    }
+  ],
+  "provisional_dependencies": [],
+  "model_and_constant_audit": [
+    {
+      "target": "Standalone d3 and abstract scope",
+      "actual_deduction": "036/037/038/040/042/043 use static d3 homogeneous covariance with 0<alpha<2 and no temporal alpha_0 window except the 043 dyadic clause; 039/041 are abstract complex-Hilbert statements with d>0 a sandwich constant, not a dimension.",
+      "inputs": [
+        "S022/S023/S050/S025/S051/S062",
+        "S024/S026"
+      ],
+      "status": "CHECKED",
+      "remaining_obligation": "d1/d2 models and dimension-independent endpoints remain separate; nothing here widens standalone claims to arbitrary dimensions."
+    },
+    {
+      "target": "Phase constants",
+      "actual_deduction": "R_alpha, c_Gamma, b_alpha, D_Gamma, I_a, delta_a, d_N, A_alpha, B_alpha are all explicit and originate in the right places: spectral ball mass for R_alpha, physical ball mass for D_Gamma, abstract Beta for I_a, R_alpha for d_N, and combined R_alpha constants for A_alpha/B_alpha.",
+      "inputs": [
+        "S023",
+        "S050",
+        "S024",
+        "S025",
+        "S051",
+        "S062"
+      ],
+      "status": "CHECKED",
+      "remaining_obligation": "No extremal constant, intrinsic C2, or source Chen value is forced by this block."
+    },
+    {
+      "target": "Circle and limit order rules",
+      "actual_deduction": "033->036 is a backward presentation use; 036 excludes H:three-endpoints and conditional moment premises and imports only C23 quartic finiteness. 042 consumes only the 038FREE_PHASE_GROWTH subclause, and 043 consumes separate 038 Born/mean clauses plus FREE_PHASE_GROWTH; no all-order bound is inferred from the 038 first-variance proposition.",
+      "inputs": [
+        "S022",
+        "S050",
+        "S051",
+        "S062",
+        "dependency-grammar rules 8-9"
+      ],
+      "status": "CHECKED",
+      "remaining_obligation": "Full 038 parent clearance does not follow from local subclause reuses."
+    }
+  ],
+  "semantic_cycles": [
+    {
+      "target": "033->036->?",
+      "actual_deduction": "Source line 4062-4076 uses 036 to identify the conditional endpoint's physical variational functional, while source line 4634-4639 excludes H:three-endpoints and the conditional moment bound from 036's premises; 036 imports only C23 quartic finiteness on its disclosed d3 standalone class.",
+      "inputs": [
+        "S022",
+        "assignment source_order",
+        "input-clause-registry named_inputs"
+      ],
+      "status": "CHECKED",
+      "remaining_obligation": "None for the 036 subgraph."
+    },
+    {
+      "target": "038<-042/043 local clause reuse",
+      "actual_deduction": "042 reuses only FREE_PHASE_GROWTH (LF 4998-5004); 043 additionally reuses GENERAL_LAMBDA_BORN_AND_MEAN (LF 4930-4996); neither use clears the whole 038 first-variance proposition or turns 038 into an all-order premise, per dependency-grammar rules 8-9.",
+      "inputs": [
+        "S050",
+        "S051",
+        "S062",
+        "input-clause-registry same_phase_clause_uses"
+      ],
+      "status": "CHECKED",
+      "remaining_obligation": "Maintain that 043's dyadic scalar summability is not a product representation for overlapping/repeated fields."
+    }
+  ],
+  "findings": [
+    {
+      "target": "No full owned join in this block",
+      "kind": "MANUSCRIPT_DEFECT",
+      "actual_reason": "This is the intended scope, not a defect: assignment.json has no owned_join_ids and no owned wholejoin target in the current block; the full model/amplitude/actual-C2-join is not cleared here.",
+      "weakest_missing_step_or_repair": "Report must not synthesize a wholejoin, and joins must be empty."
+    },
+    {
+      "target": "038 first-variance term used as all-order",
+      "kind": "SOURCE_APPLICATION_LIMIT",
+      "actual_reason": "The 038 proposition bounds only the first variance coefficient; 042/043 must use the local FREE_PHASE_GROWTH and (for 043) separate general-lambda Born/mean clauses without exporting them as an all-order statement.",
+      "weakest_missing_step_or_repair": "Keep the identified-subclause use and retain the unresolved parent condition; 042's all-order bound comes from 039/040/041, not from 038."
+    },
+    {
+      "target": "Internationalized CP/C23 import scope",
+      "kind": "READING_LIMIT",
+      "actual_reason": "The external CPv1 numerical-range theorem and the C23 quartic closing statement remain named imports; their proofs are not reconstructed in this block.",
+      "weakest_missing_step_or_repair": "Hypotheses are matched explicitly in PROOF039 (bounded operators, holomorphic near W(T)) and PROOF036 (unit-L2 Schwartz initial import only), and the remaining external proofs stay named."
+    }
+  ],
+  "limitations": [
+    "No owned wholejoin is part of this block.",
+    "No all-order result is derived from the 038 first-variance term alone; only its FREE_PHASE_GROWTH and the separate general-lambda Born/mean clauses are locally reused.",
+    "043's finite-partition product is restricted to successive fields independent of the NEXT field; its dyadic clause is summable scalar bounds, not overlapping/repeated-field evolution.",
+    "CPv1 and C23 theorem proofs remain external imports after hypothesis check.",
+    "This block does not supply dimension-free input; 044 is separate.",
+    "No sharp or intrinsic C2 constant is produced."
+  ],
+  "completed_public_record": true
+}

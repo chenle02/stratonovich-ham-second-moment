@@ -1,0 +1,82 @@
+{
+  "scope": "ROOT_COMPLETE_ORIGINAL_B_PHASE_PUBLIC_MATH_READ_BEFORE_FACTUAL_DECISION",
+  "utc": "2026-11-04T03:44:38.629313+00:00",
+  "session_id": "ses_e5b6bfaeaffegchkdt3XnieWpg",
+  "raw_public_sha256": "286a4d08e53ca085d2f06feaf394e7f6ba547009fa44f00459915c413e7ddad6",
+  "parsed_report_sha256": "6b2946ac7572530cfd2f468f97743c8a9a09355fb469a2540bf53f3f0ca0bb21",
+  "all_original_public_fields_read": true,
+  "section_counts": {
+    "schema": "str",
+    "phase_id": "str",
+    "kind": "str",
+    "source_commit": "str",
+    "verdict": "str",
+    "confidence": "str",
+    "judgment_reason": "str",
+    "actual_reading_scope": 4,
+    "proofs": 8,
+    "formal_statements": 8,
+    "joins": 0,
+    "primary_applications": 2,
+    "finite_controls": 4,
+    "provisional_dependencies": 0,
+    "model_and_constant_audit": 3,
+    "semantic_cycles": 2,
+    "findings": 3,
+    "limitations": 6,
+    "completed_public_record": "bool"
+  },
+  "literal_verdict": "PASS_WITH_NOTES",
+  "literal_confidence": "medium",
+  "literal_8proofs_8formals_CHECKED": true,
+  "mechanical_issues": 15,
+  "issue_partition": {
+    "wrong_owner_A_instead_of_B": 9,
+    "source_LF_instead_of_exact_current_JSON_math_pointer": 6
+  },
+  "source_repairs_located": false,
+  "concrete_returned_math_errors": [
+    {
+      "pointer": "/proofs/4/actual_working/1",
+      "error": "LHS lacks input A_rho^(-1/2), but RHS includes its Fourier denominator.",
+      "correct": "Balanced H_i=A^-1/2 M_ei A^-1/2 identity has denominator; one-sided column identity has none.",
+      "control": "At rho=2 nonzero covariance/nonzero f, erroneous RHS<=onequarter of the displayed positive LHS."
+    },
+    {
+      "pointer": "/proofs/6/actual_working/4",
+      "error": "Claims free phase contracts X_rho; source bound is exp(rho*h/2).",
+      "control": "For real nonzero Schwartz f=g, derivative at0 of squared norm is2rho^2< A_rho^-1 f,f> >0."
+    },
+    {
+      "pointer": "/proofs/6/actual_working/5",
+      "error": "Holder factorization omits powers beta and1-beta.",
+      "control": "beta3/4,n1,x1: reportedunpoweredproduct1/4 versus actual1; correctedpoweredproduct1."
+    }
+  ],
+  "scope_wording_to_preserve": [
+    "039fourblockconstants already include rootfactors; no doublemultiplication",
+    "041vectorBochnerintegrals, not a stronger operatorintegral assumption",
+    "042complexcouplingcircle, staticv_epsilon notconstructorV_a",
+    "043interactiongamma=3-alpha versus042beta=gamma/2",
+    "C23hypothesis_match Dalang/quartic, not square-rootseed",
+    "A_alpha/B_alpha dependonlyalpha, R_alpha factored separately",
+    "037/040/038downstreamscope doesnot importD3trace/Bornmean into all-dimensional047",
+    "first MANUSCRIPT_DEFECT tag expressly describes intendedscope not a source flaw",
+    "judgment_reason severity/scope wording doesnot allow changingliteralmedium"
+  ],
+  "all_other_source_limits_and_originalmodel_goal_retained": true,
+  "factual_calls_yet": 0,
+  "decision": "ExactlyONE focused mathematical/public-recorderratum justified by three concrete false returned steps; no globalconfidence/wholejudgment/eightproofrerun.",
+  "both_complete_author_batches_read": true,
+  "author_reports": [
+    {
+      "path": "../stratonovich-af97-B-phase-author-039042-audit-20261104/findings.md",
+      "sha256": "2c55bb659b2f71f7b9b6091ff3f39d77bb28be27e7792219c9e725afc59553b7"
+    },
+    {
+      "path": "../stratonovich-af97-B-phase-036-038-043-author-check-20261104/report.md",
+      "sha256": "93e246c4ea24c39cba212b8f9e0fba07d4bdaddf666f02a22aa14f667d2ed95e"
+    }
+  ],
+  "presentation_path_base": "repositoryroot; exact original root record remains in custody capsule"
+}

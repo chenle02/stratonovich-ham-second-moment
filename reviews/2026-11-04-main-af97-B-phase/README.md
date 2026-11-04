@@ -1,4 +1,12 @@
-# B.phase MAIN: frozen inputs, awaiting one fresh invocation
+# B.phase original returned; one factual mathematical correction prepared
+
+The actual fresh DeepSeek V4 Pro original returned PASS_WITH_NOTES/medium, all8OWN/eightformals CHECKED, nojoin. The report is complete, but has15 record refusals:9wrong ownerA versusB and6source LF references instead of current JSON mathematical pointers. Root read every public field and both complete author batches. Three concrete returned steps are false:040's one-sided Gaussian identity includes an extra input denominator,042 calls weighted free propagation contractive, and042's Hölder product omits its powers. The manuscript already has the correct formulas; no source repair was located.
+
+The complete original is retained in [the original record](original/report.json) and its native capsule, with all15refusals and literalmedium. Root prepared exactly ONE same-session additive factual request for actual corrected derivations, affected-scope judgments and public-record errata. It requests no stronger confidence, full-eight rerun, new vote or whole judgment. The runner additionally checks the exact original two-message prefix and all86held files, and requires this custody checkpoint delivered before invoking it. No factual call exists at this snapshot.
+
+Original custody34member540df919 was rehashed; it references exact174memberREADY7afe8db5 at553f5f3 rather than duplicating it. Actualoriginal510.163seconds/exit0/stop/tools0/fresh2/source86clean; input694211/cache0, public17753+reason4252=22005combined. Private reasoning is custody/capacity only, not public proof evidence. The factual conditional plan charges the full original assistant UTF8bytes and everynew byte/config, preserving131072combined/reserves:961746/head86830, no pruning/lowercap/deletioncredit.
+
+No source/PDF/localgrade/Lean, wholeHIGH, Kimi, visual/cold, wiki or finaldelivery gate is cleared. Alloriginalmodels/actualconstant/full214/240/13 remain. The following frozen-input checkpoint is dated history.
 
 The current bounded workload reconstructs the eight complete036–043 source proofs and eight attached formals, owning no full join. It retains their actual standalone three-dimensional or abstract Hilbert-space scope. All214proofs/240formals/13joins, all original dimensions/models/amplitude/data and the actual constant remain required by the full project.
 
