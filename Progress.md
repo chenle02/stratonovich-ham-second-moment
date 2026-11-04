@@ -6,6 +6,23 @@
 
 ## Current state
 
+- **Intrinsic coupled scope/input audit (2026-11-04UTC):** root selected14
+  full OWN130–132/194–204,18 same-module declarations(15core+3input-only),given
+  H:homog,JOIN-POSITIVE-INTRINSIC and separate132-finiteness application.
+  Exact14proof/18formal source bindings checked; root read full point-transfer/
+  signed-upper and126/153154/178–180 consumers. Interval mathematical
+  extraction preserves1011leaves(977exact/31vote-only/3vote-span-only),all
+  knownerrors and actual corrections separately; root inspected both scripts
+  and replayed the independent author validator. Full source/primaries/old
+  complementary math remain. Evidence:reviews/2026-11-04-intrinsic-scope-and-input-audit/.
+  Actual DRAFT builder is underway externally; no preflight/seal/provider
+  authorization. Actual capacity still pending:747509 FULL measured baseline
+  includes721536cache, never25973 alone;120843new-byte ceiling retains131072
+  combined output and16384/32768 reserves. No pruning/caplower/source repair/
+  grade promotion or completion claim. All214/240/13/originalmodels/actualC2/wholeHIGH/Kimi/
+  sourcevisual/freshcold/wiki/private delivery remain open.
+
+
 - **B.interval CLOSED, original plus ONE factual (2026-11-04UTC):**
   Original PASS_WITH_NOTES/medium/all8OWN+10formal+joinCHECKED remains literal.
   Sole factual266.839s/stop/tools0/exact4-prefix/source88 unchanged corrects
