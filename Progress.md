@@ -6,6 +6,31 @@
 
 ## Current state
 
+- **B21 original MAIN terminal: INCONCLUSIVE/medium; no safe addendum
+  (2026-11-04 UTC):** One fresh actual DeepSeekV4Pro SID
+  ses_e584bd594ffeLfZI5ijKP3J7X7 stopped397.0985639s/CLIexit0/fresh2/tools0;
+  allinputs/source/PDF unchanged. Supervisor47381 exited2 because public127987B
+  a7c87886 has introduction+fencedJSON+suffix. Original strict publicJSON=false
+  remains. Exact derived inner126022B/b217d4cb has no value/status edits and is
+  not a repaired native report. Root read ALL public fields/21proofs/60formals/
+  globals/framing, private reasoning unused. Literal frozen checker refuses
+  raw JSON and finds172schema issues on exact extraction; semantic resolution
+  was not reached. Native8CHECKED13LIMITED proofs/16CHECKED44LIMITED formals/
+  LIMITEDjoin/3LIMITED1CHECKED questions remain literal, no localgrade promotion.
+  ActualFULLTURN824374input+34509public+9722reason=868605; combined44231<131072.
+  FULLTURN+131072+16384+32768=1048829,overcap253 BEFORE anynewcharge. No factual
+  completion or confidence-only retry is cap-safe; once fence spent, no more
+  calls authorized in this lineage. Native original/directexport/authority/
+  exactextraction/fullread custody18members was verified and retained at
+  reviews/2026-11-04-main-af97-calibration-prebound/original/.
+  Author math adjudications distinguish actual abbreviated reconstruction from
+  the report's blanket outside-full-parent obstacle. Returned finite/source/
+  definition captions have concrete errors; no manuscript gap established so
+  far under named contracts. Final author/root adjudication remains underway.
+  No source/PDF/old59H38/ledger/grade/goal change. Full original scope, actualC2,
+  wholeHIGH/Kimi/sourcevisual/freshcold/finalprivate delivery remain OPEN.
+
+
 - **Remaining B21 input sealed; exact pure startup passed, no native call yet
   (2026-11-04 UTC):** Actual140-file draft/128carrier files passed independent
   physical source/frame/scope/306evidence/5doc/81alias/capacity checks. Full
