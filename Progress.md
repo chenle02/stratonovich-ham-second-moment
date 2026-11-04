@@ -6,6 +6,28 @@
 
 ## Current state
 
+- **Whole214 MAIN preparation READY for Root release after private sync
+  (2026-11-04):** Exact all214CURRENT/240roles/13joins input/minimum/source/code/
+  conditionalcapacity and actualV4localpreflight passed their scoped independent
+  audits and actualRootpositive. All142rawsourcepayloads, carrierGitbundle,
+  originalv1–v3refusals and v4metadatafix are retained. Allproducer manifests/
+  archive members/modes verified at
+  reviews/2026-11-04-whole214-main-preparation/.
+  V1blankpublic/extrauserpart gaps closed; V3actualraw-agent hash refusal was
+  traced to permutationONLY in overriddenpermissionprefix. V4retains every
+  value/duplicate/nonpermissionfield and ordered effective suffix, stablec6c4,
+  with actualpermissions unchanged. Root minimum adds directBCwhite(iv) and
+  currentclaims-to-verify boundary; no native math change. ActualV4safe21:30:28
+  matchesPLAN8b31/model/3flags/context/carrierd3eb; fixedtitle prevents known
+  auxiliarytitlemodel path. User866375+knownsystem416+CONDITIONAL515+
+  unchanged131072/16384/32768=1047530/head1046; futureactualusage still mustpass.
+  Rootrun authority/delivery/nativeout/oncefence ABSENT atthischeckpoint.
+  Next: verify privatepush/GWparity and immediateoperatorguards, release ONE
+  fresh DeepSeekV4Pro MAIN, holdALLGitwritersuntilterminal, collectliteralraw
+  Markdown/usage/export and adjudicate its complete actual214/240/13working.
+  No scientificHIGH/sourcepixels/Kimi/fullvisual/cold/finalcompletion is implied.
+
+
 - **Actual input accepted for preparation; conditional capacity independently
   checked (2026-11-04):** Root fully read the actualcandidate report, framing
   source audit/addendum and independent capacity report. All3065452userbytes/
