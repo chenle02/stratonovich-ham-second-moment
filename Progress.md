@@ -6,6 +6,30 @@
 
 ## Current state
 
+- **Held prototype v1: four actual completeness defects (2026-11-04 UTC):**
+  Root fully read the implementation, scope, grammar, examples and policy;
+  all16 held manifest members rehashed. Read-only in-memory replays reproduced
+  all seven generator/schema/control/minimum artifacts exactly (46 controls,
+  32 minimum checks), preserving every held file. The full214proof/240formal/
+  28module source scan is source-derived. Root also read all60 selected formal
+  declarations plusS064, without granting outside full-parent review credit.
+  Additional actual synthetic tests showed v1 returns no record issue for
+  completed_public_record=false, a LIMITED model/constant audit, a NOT_READ
+  cycle audit, or empty required global audit/application/control arrays.
+  Scientific_acceptance stays false in all cases; these are completeness-
+  contract defects, not mathematical votes. Root withheld packet/readiness
+  approval and authorized a bounded v2 in a NEW external directory; heldv1
+  and its failing witnesses remain immutable. Honest LIMITED/inconclusive
+  records and unforced confidence must be retained. Evidence:
+  reviews/2026-11-04-B21-prototype-completeness-audit/.
+  Independent partial retention replay passed108base/123extended frames,
+  1284custody-only hash moves/8609scalar origins, including full counterexamples
+  and published2180–85. Complete capacity remains unproven; any v1 count is a
+  diagnostic and actual v2/runtime additions must be counted afterwards.
+  No packet, native call, source/PDF/grade change, old59/H38 repair or narrowing.
+  Full original goal and every independent/final gate remain OPEN.
+
+
 - **Remaining B21 source readback; prototypes only approved (2026-11-04 UTC):**
   Root personally read all 21 current statements and complete proofs for
   PROOF024–035 and PROOF052–060 in bounded, untruncated manuscript excerpts.
