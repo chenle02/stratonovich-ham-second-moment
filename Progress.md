@@ -14128,3 +14128,31 @@ reviews/2026-11-04-durable-cached-context/, rawforeignbackups/index/patchcontent
 externaluncommitted; no notification/provider/Articlemath actions. AllBnativejobs
 wereterminalbeforepublication; futureintervaleffectivepreflightmustmatchcurrent
 runtime. Fullalloriginalmodel/actualconstant/verification/deliverygoalremains.
+
+
+## 2026-11-04UTC: B.interval full-upper draft preserved for readiness audit
+
+ExistingB.intervaldraft nowhas87frames/2464018bytes/prompt113423413689c18dd726d5d4207d0e9a648be629b53602153330279bba8c1413.
+ExactOWN044–051/10formal(includingS068goal/S082remarkCONTEXT,noinventedproofs)
+andcanonicalJOIN-INDEPENDENT-UPPER, fullscope036–051/upstreamactualfixedorders
+andindependentprelimit-to-canonicalupper BEFOREvariationalfiniteness. All79literal
+priorBphasemath/contextpayloads/nativeinterval/hash/order areheld, pluscomplete
+original+onefactualBmath/limits/errorsunder613selection/616leafprovenance. Correct
+M3distinctfromfalseoriginal040/042captions;all14pseudo-selectorrefskeptunresolved,
+AUTHORlocatorsnotcreditedasmodelrepairs. No priorvote/confidencepremises.
+
+Completeinventory BEFOREmaterialization gives694211/cache0+163913allnewbytes+
+131072combined+16384boundary+32768system=1038348/head10228, nopruning/deletioncredit/
+lowercap. Full28TexalreadyhasallOWN, so nooptionalduplicateexcerpts wereadded.
+Thisremainsconditionalnotexacttokenizer/effectiveceiling/depthguarantee. Newknown
+errata guardblocks3oldfalse040/042fieldsandtheirworkingcontainersasvalidated
+premises, retainingrawcontext/actualcorrectedM3/origfactorial/honestLIMITED. Actual
+accepted-gap+fixcontrols/preimagepreserved;87payloadbytes/cap/613extract unchanged.
+
+Rootreadfullintervalsupportmapfd1156f4andsource044–046. Full047–051coupledsource/
+math/contract/extractionandfinalwrapperpostimagechecks remain BEFOREanyeffective
+preflight/seal/onefreshproviderapproval. Currentdraft/earlyWIP/support/bindings
+snapshots in reviews/2026-11-04-B-interval-preparation/ aredatedpreparationonly,
+notnewreceipt/grade. AlloldBphase/constructor/Ar/pilot/wholelineagesclosed;allother
+B/higherA/13joins/full214240/originalmodels/actualC2 andwholeHIGH/Kimi/sourcevisual/
+cold/wiki/private deliverygates stay. GoalACTIVE, nointervalnativeauthorized.
