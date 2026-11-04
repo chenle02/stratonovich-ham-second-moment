@@ -16,10 +16,11 @@
   annotated. Original23validatorrefusals/rawmedium retained; ZEROaddenda,
   no morecurrentlineagecalls. No source repair identified or localHigh change.
   Evidence: reviews/2026-11-04-main-af97-theme-I-A-remainder/root-adjudication.md.
-  Next programme work prioritizes B.phase036–043 andB.interval044–051, with
-  alternatives/comparisons still assigned and alloriginalscope retained.
-  A bounded authorGreen-limit expansion is being prepared for future actual
-  constructor-join work, not an Arconfidence retry. No next native call yet.
+  The new explicitauthorGreen-limit working now supports a NEW coupled
+  constructorpacket preparation (JOIN-CONSTRUCTOR andunresolved002/009),
+  then B.phase036–043/B.interval044–051. AllB alternatives/comparisons stay
+  assigned. This addressesactualunworkedsourceconsumers, not an Arconfidence
+  retry. No next preflight/seal/native call is approved or started.
 
 
 - **Themed MAIN A.pilot CLOSED (2026-11-03):** one fresh DeepSeek V4 Pro
@@ -13675,4 +13676,31 @@ boundedsecretscansclear. Sourceaf97/PDF096cb3/index7/ledger54/local210HIGH/
 010unaccepted/034189193pending/80Lean22seams unchanged. AllwholeHigh/Kimi/
 pixels/fullvisual/cold/finaldelivery/goalremain. Bphase/interval corepriority
 and an explicitexistingGreen-passagenote addressactualuncompleted work next;
-no confidence-only Arretry or source-changingprooftoy authorized.
+no confidence-only Arretry or manuscript edits follow from this checkpoint.
+
+
+## 2026-11-04UTC: explicit Green working and complete B ownership prepared
+
+Root read authornote99406c7 on existing009/018 passage: fixeda gives globally
+bounded continuousL2Omega productviaHermitecreation+annihilation andweightedq
+series, not byfinite-degree boundon infiniteu. DeterministicGaussianaveraging
+withfixedrandomfactor yields tau[omega(r)+2M P(|Z_eta|>r)], eta->0 thenr->0,
+timeDCTby2tauM. Innerverticesthenexternaljointa thenNtailsuses006/008, not002;
+002momentconsumer becomes explicit afterward. Bounded/unbounded movingfunction
+counterexamples andactualspherekernelexample verify essentialscope conditions.
+No uniforma,radius,Ftrace,tiltedsource,uniqueness or new sharpconstant claim.
+This is authorcalculation, not a newindependentreview or sourceedit.
+
+Bmap370f0309 keeps37proof/46formals: alternatives024–035(12/16), phase036–043
+(8/8), interval044–051(8/10), comparisons052–060(9/12).1110source/partition
+checks do not establish truth. Source033->036backwardprintededgeand051prelimit
+Br->050->noiseclosedlimit are distinguished from whole-resultcycles. All13future
+joins andfullcontext retained, no allGamma promotionofconditional3Dmethods.
+
+Root authorizes PREPARATIONONLY of a NEW constructor-join packet using the
+actualdirectGreenworking pluscompleteprior/math/sourcecontext, exact002/009/
+S038/S039 andJOIN-CONSTRUCTOR/givenHhomog. This is substantivenewcoupledworking
+on the observed missing implication, not a completedArconfidence rerun. Bphase/
+interval remain nextcore priorities, allotherclaims stayassigned. No provider/
+preflight/seal/native approval follows. Evidence:
+reviews/2026-11-04-constructor-and-B-preparation/. Goalfullscope ACTIVE.
