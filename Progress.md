@@ -6,6 +6,27 @@
 
 ## Current state
 
+- **Point-upper input audit passed conditionally; six staged guard defects (2026-11-04UTC):**
+  Independent actualv2 input audit reprojected1212Hleaves/38purevotes, all102
+  frames/full95suffix, both complete notes,14proof/33OWNdecl+S064bindings and
+  local-tokenizer813787/conditional1003298/head45278. ROOT read full report and
+  full137line independent code; no unresolved fidelity/cap issue located.
+  This is NOT native admission/scientific confidence/fullREADY. ROOT also
+  read/rehashed outside-current180–184 and their actual191/192 consumer use;
+  fixed-B delta-first/radius-threshold/B-second order and uniform-E scope hold.
+  Staged validator d9a74827 had six reproduced defects: formatting-only source
+  math, current nonworking substitutes, context source identity, unrelated
+  global-pending blanket rejection, missing mode colon/clause, unregistered
+  schema URI. Exact preimage/controls and real-positive/LIMITED cases retained.
+  ROOT ruled pending premises block affected whole/POINT claims, not independent
+  explicitly scoped boundaries. Driver is fixing the bounded guards; actual
+  promptb6ee/sourceaf97/PDF263 unchanged. Evidence/durable lessons at
+  reviews/2026-11-04-point-upper-guard-audit/. Stable postimage/codecontrols and
+  independent behavioral audit remain pending; no READY/preflight/seal/provider.
+  Full214/240/13/originalC2/wholeHIGH/Kimi/sourcevisual/freshcold/wiki/private
+  delivery remain OPEN, without H38 regrade or source repair.
+
+
 - **Point-upper exact DRAFT/local tokenizer capacity (2026-11-04UTC):**
   Complete first byte plan failed1055628/over7052. Independent content audit
   found one mixed factual scope leaf incorrectly treated as pure vote; v2
