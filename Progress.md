@@ -6,6 +6,21 @@
 
 ## Current state
 
+- **Point/signed MAIN live, one fresh invocation (2026-11-04UTC):**
+  READY a31fbeae committed/pushed/GWclean equal;4READYGit/27runtimecustodymembers
+  ROOT-rehashed. Separate exactplanb50b9df0/safe62b8ca3d/commitbound authorization
+  then ONEfresh requestedDeepSeekV4Pro --pure invocation began11:47:06UTC.
+  ActualSID ses_e599d9e96ffeVLXNDI2Mjy8zl6, exec17869, CLI PID4103173/start67295381,
+  supervisor4103034. Root verifiedPID/startticks live andrealstep_start event;
+  terminal/model/tools/fresh2/usage/public-record collection remainsPENDING.
+  No otherlineageretry/followup/call/grade/adoption. Actualscope14/33/S064/POINT+
+ 3boundaries; all214/240/13/originalmodels/actualC2/wholeHIGH/Kimi/sourcevisual/
+  freshcold/private delivery remainOPEN. Live launch/auth/handle custody in
+  reviews/2026-11-04-main-af97-point-signed/live/. ObserveSAMEhandle; timeout or
+  silentstdoutisnotterminal anddoesnotauthorize restart. Sourceaf97/PDF263/
+  inputb6ee/guard851/mapc758 unchanged; source/calibrationworkreadonlyparallel.
+
+
 - **Point/signed MAIN actual READY, no provider yet (2026-11-04UTC):**
   Current14OWN/33OWNdecl/S064/POINTjoin+3boundary scope unchanged. ROOTfull
   source/working/code/minimum read/replay and independent actualinput/851guard
