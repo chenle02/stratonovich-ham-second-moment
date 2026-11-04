@@ -6,6 +6,30 @@
 
 ## Current state
 
+- **Scientific meaning/retention audit and complete-task draft (2026-11-04):**
+  Root read the complete independent3schema and mixed16object audit reports.
+  The independent auditor read all22713schema bytes; mixed objects protect
+  work/status/current-prior/local-given/consumer/pending/source/error meanings. No
+  wholeframe or candidate operational span is removed. Root found27nested
+  actual-working status leaves among143diagnostic omissions; the next external
+  prototype now preserves ALL raw JSON values/statuses/votes as nonoperative
+  history, with no neutral projection or literal dictionary. Semantic proof/
+  boundary identifier-map keys stay INLINE, not positional far-legend values.
+  Actual39rawJSON/609numeric-value checks found no duplicate/nonfinite/decimal-
+  value/signed-zero loss. Existing carrier maps match all214current proof
+  owners/spans and240formal labels/environments/spans, so big custody data need
+  not be duplicated as native navigation. Root's1726token scientificassignment
+  draft keeps214CURRENT/240roles/13joins/allmodels/actualC2 and substantive
+  WORK/consumer/remainder requirements; quick independent scope check found
+  no concrete omission. Three complete original directories and manifests
+  verified at reviews/2026-11-04-whole-review-meaning-and-retention/.
+  Driver is authorized to prepare only a NEW EXTERNAL exact raw-tree named-
+  column representation prototype with the actual draft/nonoperative wrapper,
+  unchanged source/primary/plain math and full reserves. Independent reader
+  audit remains underway. No final format, fit, runtime, packet, provider,
+  source/PDF/grade change or round close; full goal remains ACTIVE.
+
+
 - **Actual request versus private runtime accounting resolved in scope
   (2026-11-04):** The read-only producer audit and independent Root check bind
   the actual closed B21 driver/export/usage and pinned CLI request-preparation
