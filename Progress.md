@@ -6,6 +6,21 @@
 
 ## Current state
 
+- **Published static052–058 normalization source check closed (2026-11-04UTC):**
+  ProvidedPUBLISHEDChenHu2025 DOI24-AOP1758/PDF52 SHA58b152d7, Th1.2/(1.9),
+  printed2147 explicitlyRAW E U^p, noLp root; fixed-p coefficientproof gives
+  rawp^kappa_st. Existing052–058 use/sourcehypotheses/Green-first heatlimits/
+  staticamplitudeclock/iterateda->0 match; no source repairlocated. ROOTread
+  full15kreadback/applicationmatrix/falsifications andviewedactual2147/2152
+  pages; author9pagesviewed/lower2181–82textonly accuratelyscoped. L0/rawM(a)/
+  auxiliaryS1pos/sourceM_CH remainseparate; existingnumericalM/whiteholdnotused
+  orresolved. Exact17member+manifestcustody andRootscope at
+  reviews/2026-11-04-static-calibration-published-source/.
+  AUTHORsourcecheckpointonly,noindependentHIGH/visual/Kimi/cold/gradepromotion.
+  Sourceaf97/PDF263/heldpointcontext/solepubliccompletion unchanged; fullgoal
+  all214/240/13/originalmodels/actualC2/wholeHIGH/delivery remainsOPEN.
+
+
 - **Point/signed SOLE public completion live (2026-11-04UTC):**
   CompletionREADYb3edfc8 committed/pushed/GWclean equal;4Git/17tar members
   ROOT-rehashed beforeseparateexactplan/profile/session-boundauthorization.
