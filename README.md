@@ -6,17 +6,31 @@ t^{(4−α−α₀)/(3−α)} and the sharp p = 2 constant, building on X. Chen,
 *Time-dependency in hyperbolic Anderson models: Stratonovich regime*
 (author version, submitted to AAP; arXiv:2510.01412).
 
-**Status (2026-10-29):** the preceding quantitative upper-bound and mild
-construction passed 19 source-bound checks at high confidence. The sixth
-cold read remains NOT CLEAR and requests a proof-level fixed-order-input
-check plus explicit hypothesis/object statements.
+**Active research status (2026-11-04):** the research checkout contains a
+written correct-scale upper bound and a fully specified positive-control
+variational formula for the original second-moment limit. Every original
+admissible dimension/covariance, covariance amplitude, kinetic coefficient one,
+variance-half action and zero-covariance case remain in scope. Chen's predicted
+constants are comparisons; matching them is not a completion requirement.
 
-The current [94-page revision](notes/notes_stratonovich_ham_second_moment.pdf)
-makes the original covariance class and canonical solution explicit and adds
-a direct norm-and-tail lemma. That new lemma is unreviewed; the spatial
-Wick-measure and joint-limit construction lemmas remain to implement.
-The full upper statement is Theorem 13.8 on page 89. See `Progress.md` and
-`HANDOFF.md`. The sharp constant and private Lean companion remain open.
+This directory is the human launcher and retains an older manuscript snapshot.
+The active checkout and exact source/verification state are identified by
+[HANDOFF.md](HANDOFF.md). Its current
+[workflow authority](../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave/Progress.md)
+and [research README](../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave/README.md)
+record the 28-file scientific source `af97ae4` and clean 263-page PDF. Use that
+checkout for current research and builds.
+
+The latest DeepSeek V4 Pro review and full mathematical adjudication are closed
+at INCONCLUSIVE/medium. The source was not changed and no new manuscript gap
+was established under the named input contracts; the returned reconstruction
+and verification are incomplete. Historical scoped reviews do not establish
+whole-argument acceptance. Full 214-proof, 240-declaration, 13-join review,
+required Kimi/source/visual checks, fresh final cold read and final private
+delivery remain open. No completion or circulation clearance is claimed.
+
+The existing 80 standalone finite Lean facts retain their 22 analytic seams.
+An official private companion repository requires Le's separate authorization.
 
 ## Start here
 
