@@ -6,6 +6,29 @@
 
 ## Current state
 
+- **Actual input accepted for preparation; conditional capacity independently
+  checked (2026-11-04):** Root fully read the actualcandidate report, framing
+  source audit/addendum and independent capacity report. All3065452userbytes/
+  142payloads/39rawJSONinverse/609numbers/current214proofs/240roles/13joins
+  match; raw dispositions/inlineIDs preserved, actualcompactsamples readable.
+  Non-generationpurestartup bound exactwholeagent/model/denytools/profile,
+  MCP0/configuredinstructions0; selectedactualdocs/source exclude refs and
+  unrelatedbuiltintext. Exactjoinedknownsystem416 includesagent181. Root keeps
+  the ENTIREhistorical515 as separate CONDITIONALprovider-template margin
+  after localtext, not a guaranteed futurebound. Total866375+416+515+
+  131072+16384+32768=1047530/head1046; independentaudit found no inconsistency.
+  Root modelauthority remains absent and actualusage mustverify the plan.
+  Complete audit custody/manifests verified at
+  reviews/2026-11-04-whole-input-and-capacity-independent-audits/.
+  Finalcarrier nowholds exactinput/agent/profile atd3ebd5c; one inherited
+  trailing space was preserved by input-onlyGitmetadata, no payload change.
+  NewHEAD/data additions do not alter countedtext; actualruntimeplan binding
+  remains pending. Runtimev1 has two collection falseacceptances (blankpublic,
+  extrauserfilepart); boundedv2fix/accounting/event controls underway. No source/
+  PDF/grade/wholeHIGH/Kimi/image/cold clearance or nativecall yet. Next finish
+  v2independentcodeaudit, Rootminimum/actualpositivepath/preflight/delivery.
+
+
 - **Raw prototype independent preservation audit accepted in scope
   (2026-11-04):** Root fully read the exact frozen report. Independent checks
   reproduce39rawJSONinverse/609numericvalues/145supplieddispositions,16inline
