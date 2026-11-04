@@ -1,29 +1,44 @@
-Last updated: 2026-11-04 15:21 UTC (Codex)
+Last updated: 2026-11-04 15:32 UTC (Codex)
 
 LATEST USER DIRECTION: full original goal ACTIVE; DeepSeek V4 Pro MAIN;
 required Kimi-K3 and all remaining gates retained. Learn durable lessons.
 
 ## ⏭ Next session: where to stand and what to do
 
-Read the held implementation artifacts and independent audit for the external
-B21 source-binding prototype, once its producer confirms exact frozen hashes.
-First examine ../../../../.local/state/Le-AI-Lab/stratonovich-prebound-B21-prototype-20261104/
-WIP.md and the actual named artifacts, then reconcile the independent audit in
-../../../../.local/state/Le-AI-Lab/stratonovich-prebound-B21-independent-prototype-audit-20261104/.
-Producer has now HELD the implementation (manifest efbc2d8c0bfddade4330ec35b2e6991617b2003cac0651cecbd5f4269b25be2a);
-independent code/control audit and Root readback are pending. Do not treat the
-design controls or producer controls as an independent implementation audit.
+Read ACTIVE Progress.md's current entry and the four reproduced v1 completeness
+failures in reviews/2026-11-04-B21-prototype-completeness-audit/ before examining
+the proposed v2. The immediate step is to inspect the bounded v2 implementation
+and independent author audit once their producers confirm frozen paths/hashes.
+At this snapshot v2 is external WIP, not held or approved. Root has NOT approved
+any actual packet, provider preflight, runtime or native call.
 
-Research authority is ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave/Progress.md,
-branch research/fixed-mask-young-20261031, HEAD 2a343fa32da5e668a7184503465cb9f88e44dcef.
-Root has approved PROTOTYPES ONLY, not a packet, provider preflight or call.
-The actual source readback of all 21 remaining proofs is completed and committed.
-The point/signed original and sole public completion are CLOSED; do not restart.
+ACTIVE is ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave,
+branch research/fixed-mask-young-20261031, HEAD13fc846207b09b7f40e278a96d4443387f2b9d52.
+Root's full21-proof/all60-formal source reading is completed. Held v1 at
+../../../../.local/state/Le-AI-Lab/stratonovich-prebound-B21-prototype-20261104/
+remains immutable, manifestefbc2d8c0bfddade4330ec35b2e6991617b2003cac0651cecbd5f4269b25be2a.
+Root independently reproduced its46controls/32minimum/sevenoutput artifacts
+without writes, then found four completeness holes: false public-completion
+flag, LIMITED model audit, NOT_READ cycle audit, and empty required global
+arrays. All returned no record issue. Scientific_acceptance stayed false.
+
+The independent audit lives in
+../../../../.local/state/Le-AI-Lab/stratonovich-prebound-B21-independent-prototype-audit-20261104/.
+The count/retention work lives in
+../../../../.local/state/Le-AI-Lab/stratonovich-af97-B21-lossless-capacity-prototype-20261104/.
+Complete v1 diagnostic counted127frames/all123math+4protocol,821643plaintext,
+1022fullplannedconfig/agent/runtime/text and unchanged otherreserves, total
+1013376/head35200. This is INVALID as final protocol/readiness because of v1
+holes; actual v2 additions and actual runtime sufficiency remain unproved.
+All1283 original tokenizer special literals were checked: zero candidate or
+planned-object collisions. Repeat for the actual v2 construction.
+
+Point/signed original and sole completion are CLOSED. Never reopen them.
 
 ## Pre-flight checks
 
-1. ROOT pre-handoff 5faf9b61696f78d635751a6dca17d2957cebbc62/master and ACTIVE
-   2a343fa32da5e668a7184503465cb9f88e44dcef were clean, pushed and <HUB>-equal.
+1. ROOT pre-handoff ecfe4df720c3a0729cff892c65daff8322657a52/master and ACTIVE
+   13fc846207b09b7f40e278a96d4443387f2b9d52 were clean, pushed and <HUB>-equal.
    Perform focused local/origin/<HUB> checks before any new edits. ROOT is
    the human launcher; research changes belong in ACTIVE.
 2. Science af97ae4db921a660b0a4ed1ffbe9b6f53a487e2b and all 28 TeX files are
@@ -112,6 +127,14 @@ smaller reserves or unauthorized Kimi/provider/setup actions. Scope controls
 are author infrastructure, not independent scientific verification.
 
 ## What the previous sessions produced
+
+2026-11-04 13fc846: Root fully read and exactly replayed the held source-binding
+prototype, then preserved four reproducible global completeness defects in
+an executable audit. V1 withheld from use; bounded separatev2 authorized only
+as an external prototype. Root also read full white210–213 source proofs.
+No source/PDF/grade or native-review change. ROOTecfe4df refreshed launcher
+handoff; next inspection is v2 and its independent audit, not another point vote.
+
 
 2026-11-04 2a343fa: Root personally read all21 remaining B statements/full
 proofs and recomputed exact sealed proof/statement interiors; author scope
@@ -2611,14 +2634,15 @@ no fullpacket/provider/config/seal/rootready exists. Fullgoal ACTIVE.
 
 ## Repo & git state at handoff
 
-ROOT pre-handoff5faf9b61696f78d635751a6dca17d2957cebbc62/master; this dedicated
-commit changes HANDOFF.md only. ACTIVE2a343fa32da5e668a7184503465cb9f88e44dcef/
+ROOT pre-handoffecfe4df720c3a0729cff892c65daff8322657a52/master; this dedicated
+commit changes HANDOFF.md only. ACTIVE13fc846207b09b7f40e278a96d4443387f2b9d52/
 research/fixed-mask-young-20261031 clean/pushed/<HUB>-equal at snapshot.
 Sourceaf97/PDF263/index7/ledger54/local review states unchanged. Lab publication
 d00fdeff3c9aee65f028e11f42ddbd4b235ea6d7 and runtime86c4fb02 were verified at
 publication; later foreign Lab activity is possible. No native process live.
-Production prototype is held by manifest above. Driver retention/capacity work
-remains external WIP; independent full implementation/fit audits are pending.
+Production v1 is held and rejected for completeness defects. Separate bounded
+v2 and Driver retention/capacity work remain external WIP; independent full
+implementation/fit audits are pending. No native process live.
 Only two protected Article branches remain; earlier3.7GiB cleanup retained.
 
 ## Operating notes
