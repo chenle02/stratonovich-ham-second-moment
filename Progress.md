@@ -6,6 +6,32 @@
 
 ## Current state
 
+- **Held v2 follow-up: source associations and honest unread rows (2026-11-04 UTC):**
+  V2 added exact named global coverage and producer75controls/38minimum, but
+  Root found two further preparation defects and the independent auditor
+  confirmed both. F12/F13 wrongly pointed finite-white27/45 sector checks to
+  PROOF210–213; actual tables and chain-exchange rules are PROOF011/012.
+  The reflected-sector factor is retained;210–213 remain distinct CDF/energy/
+  intrinsic-bound checks. No finite or canonical-join obligation is removed.
+  Under an INCONCLUSIVE header, a genuinely unconsumed NOT_READ024 plus its
+  unread S016, with precise remainders and no invented work/certificate, gives
+  three record issues. Equivalent unread join/question/input-application and
+  conditional/property cases also fail independently. Status-aware allowance
+  must preserve truthful unread/limited inventories, validate every supplied
+  clause/evidence, and still refuse consumed missing CURRENT work or complete
+  claims over unread work. Root requested only these bounded corrections in
+  a new v3 with a distinct protocol/scope identity; heldv1/v2 stay immutable.
+  Exact executable/results: reviews/2026-11-04-B21-prototype-completeness-audit/
+  v2-followup/. No v3 success or packet/readiness/provider permission inferred.
+  V2 text diagnostic127frames/823649plaintext+1022planned-object tokens plus
+  fixed allowances/reserves totals1015382/head33194. It is not final fit;
+  actual v3 and new raw-parser/freshness/projected-binding runtime costs remain
+  to be charged. Input strict parsing and special-token collision audits pass
+  for the held inputs only. All28TeX/PDF hashes remain unchanged. An initial
+  Root PDF check mistyped its expected value; stored-handoff-derived check
+  passed, with no file drift. Full goal/all independent/final gates stay OPEN.
+
+
 - **Held prototype v1: four actual completeness defects (2026-11-04 UTC):**
   Root fully read the implementation, scope, grammar, examples and policy;
   all16 held manifest members rehashed. Read-only in-memory replays reproduced
