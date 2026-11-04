@@ -6,6 +6,22 @@
 
 ## Current state
 
+- **Durable public-record/binding lessons published (2026-11-04UTC):**
+  CanonicalLabd00fdeff/source+runtime86c4fb02 pushed/GWsourceequal. Existing
+  review-layers rule nowrequiresnonemptypublicreviewafterstop, exactlast-turn
+  grammar, independentsealedsourcefingerprints(notnativeecho), boundeddiagnostic
+  output andno retrospectivegrade/59/H38repair. Phase2.5desc717/headline41,
+  skillgate/synccheck/apply/freshlocalCodexbudget pass; exactOpenCode/runtimebytes
+  match. Actualretrievalbroad23/domain1/exact1; nosame-threadcatalogrefreshclaim.
+ 4foreignWIPfiles/stagedintent/3687nonownedindexentries preserved, onlyowned3
+  pathscommitted; disjoint5upstreamtelemetry/board FF noted. No foreigncontents
+  archived. Evidence:reviews/2026-11-04-durable-public-record-lessons/.
+  PointlineageCLOSED36735e6/qualifiedunadoptedHigh, sourceaf97/PDF263/gradesunchanged.
+  NewB21scope/math/capacityandprospectivepreboundprotocol proposals are external
+  andUNAPPROVED; no newpacket/call/sourcechange. Full214/240/13/alloriginalmodels/
+  actualC2/wholeHIGH/Kimi/sourcevisual/freshcold/finaldelivery remainOPEN.
+
+
 - **Point/signed MAIN CLOSED: firstpublicHIGH, qualified/unadopted (2026-11-04UTC):**
   OriginalpublicEMPTY remainsnullverdict/confidence. SoleSAME SIDpubliccompletion
   returned literalPASS_WITH_NOTES/high/all14OWN33decl1POINT3boundaryCHECKED,
