@@ -7,6 +7,20 @@
 ## Current state
 
 
+- **Themed MAIN A.remainder READY (2026-11-04UTC):** actual15proofs002009011–023,
+  22formal/15obligations/2givenhypotheses are sealed with full28/214/240/13
+  context and all70required oldframes. Actual prior math/conditions/errors
+  retained; no grade premises. Root read source/tasks/dossier/contracts;
+  904selection fidelity and2053mechanical checks/13refusal controls pass.
+  Newtypedglobal/conditionalhypotheses, exact OWN IDs and route-bound versus
+  intrinsic-constant distinction are explicit. Matching--pure actualagent
+  DeepSeekV4Pro/all12toolsfalse/compactionfalse/share disabled. Sourcecarrierc46cdc90,
+  promptcb35b724; conditional980261/head68315/131072combined. One fresh native
+  invocation authorized AFTER this READY checkpoint commit; not yet invoked.
+  No math/grade/source/PDF/whole/image/Kimi/cold/goal credit. Evidence:
+  reviews/2026-11-04-main-af97-theme-I-A-remainder/.
+
+
 - **Themed MAIN A.pilot CLOSED (2026-11-03):** one fresh DeepSeek V4 Pro
   original plus ONE factual same-session addendum are terminal; actual
   PASS_WITH_NOTES/medium in both. Complete bounded working has8CHECKED and
@@ -13584,3 +13598,35 @@ allfourforeignfilehashes andruntimebytes. Origin/GW14cparityverified; no externa
 notification sent. Only owned lesson/indexpaths committed; foreignWIP remains.
 Receipts:reviews/2026-11-03-durable-pure-preflight/. These are operationalgates,
 not a confidenceconversion, proof/source-image/Kimi/cold or goalacceptance.
+
+
+## 2026-11-04UTC: actual A.remainder packet and source seal
+
+Owned002009011–023/22formal declarations,15complete-proof obligations, no whole
+joins; full214/240/28TeX/13join/alloriginal models/actualconstant goal preserved.
+The actual79frame/2217492byte promptcb35b724cda35f667d220132a3b1aae47c1292782d0d969c59eed7fdbec5f8f8
+retains70literal oldinputs and both010math/25row frames plus actualprior math.
+Root read all new task/contract/dossier conditions and original source proofs.
+Separate author audit verifies904selection records775KEEP118DROP11TRANSFORM;
+all substantive math/limits preserved and vote fields withheld, originaltrue
+and additivefalse factorial formulas distinguished. Scope-amended C2upper/
+calibrationconstants are not asserted intrinsic or actualsharp-p1 constants.
+
+Independent actualpacket audit2053checks/13refusals confirms79actualframes,
+all70immutable requiredpayloads, exact15/22/15/2typed records, no appendedOWNlabels,
+no context-erased globalhypothesis or conditional-promotion. Producer3041checks/
+30negative cases are mechanical evidence, not truth. Source/index allaf97,
+workflowpreimages exactdatedGit222b8e6blobs rather than livefile freezes.
+All196064newbytes/wrappers/agent/config charged;603973+196064+131072+16384+
+32768=980261/head68315. Failed chars2 retained, no deletedbytecredit or scope
+pruning; not exact tokenization, honoredserverceiling or proofdepth guarantee.
+
+Matching native--pure agent/config preflight beforeseal confirmed exactmodel/
+newboundedagent/all12toolsfalse/compactionfalse/share disabled, all80carrier
+files unchanged. Secret-bearing fullconfig remainedanonymous regular-file;
+only safe fields retained. Source-only Gitcarrierc46cdc90a33538213b69fb2292a7314b694d3a01
+was post-commit checked against all80blobs/79prompt payloads/all28scienceAF97.
+No newArticleclone/worktree. One fresh invocation authorized only afterthis
+READY authority is committed; no provider yet at this snapshot. No auto-retry/
+followup, priorlineages closed. AllwholeHIGH/Kimi/pixels/fullvisual/cold/private
+requirements and local210HIGH/010unaccepted/3editorialstates remain.
