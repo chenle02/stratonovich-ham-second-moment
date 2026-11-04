@@ -1,0 +1,15 @@
+# ROOT selected conditional capacity plan, DRAFT only
+
+The first complete inventory failed the conservative new-UTF8-byte estimate:1055628 against1048576 (over7052). Independent author audit then found that factual scope_and_limitations[1] mixes old-assessment language with the scientific qualifier that only caption/calibration/scope precision is corrected. The corrected v2 retains that ENTIRE literal native leaf, rather than omitting it as pure vote text. Its byte estimate still fails1055618 (over7042). Both original inventories remain held; neither failure has been relabeled as a pass.
+
+[held back: AI account details]
+
+With tokenizers Python0.23.3, all1283 added-token entries removed in memory for ordinary user text, no automatic special tokens, truncation or padding, the original user prompt counts765524 against actual native FULL input766005 (difference481). The three factual input text parts count795544 against actual FULL796029 (difference485). The factual public output counts4508 against native4509. These checks support the pinned plaintext tokenizer for this route; they do not establish a universal API chat/system template.
+
+The exact corrected v2 prospective/actual prompt b6ee2dd65470477c3466369bcd6aeb3f975f180aee41ba589d0f688fc0efbfd9,2786454UTF8bytes, counts813787texttokens. The selected conditional plan is813787+485maximum observed native overhead+610entire new config/agent/runtime/agent-text token allowance+8192future runner/guard UTF8 allowance+131072combined reasoning/public output+16384boundary+32768system=1003298, leaving45278. Every existing reserve is retained. This is an exact local count of specified text under a pinned public tokenizer, plus conservative allowances; it is not native admission, proof attention, a scientific review or confidence credit.
+
+ROOT selected materialization of this exact v2 DRAFT only. The actual102 framed payloads, both complete new notes, all95 literal old whole frames, actual H original/sole-factual mathematical leaves and all28 af97 sources remain. ROOT independently compared every actual payload/file/hash with the held framing map and verified the exact old95-frame suffix. There are103 carrier files including local configuration. No mathematical source/PDF bytes changed.
+
+The current report/source-reference guards still require implementation and independent code/control audit. Independent full content/leaf/native-capacity audit is also pending. No READY stamp, native preflight, Git carrier seal or provider invocation is authorized by this record. H38 failures, all214 OWN/240 formal/13 joins and all original-model/HIGH/Kimi/source-visual/fresh-cold/private-delivery requirements remain unchanged.
+
+The count script is preserved as executed audit evidence. It uses its external state-directory layout and was run before materialization; its explicit no-carrier/no-prompt guard deliberately prevents replay after a carrier exists. Recount the held actual prompt directly for later postimage audits. Do not execute this archived script in the Article tree as a build tool.

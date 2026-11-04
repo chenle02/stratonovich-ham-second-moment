@@ -6,6 +6,26 @@
 
 ## Current state
 
+- **Point-upper exact DRAFT/local tokenizer capacity (2026-11-04UTC):**
+  Complete first byte plan failed1055628/over7052. Independent content audit
+  found one mixed factual scope leaf incorrectly treated as pure vote; v2
+  retains it ENTIRE and preserves the corrected byte failure1055618/over7042.
+  All1212 source leaves accounted/38pure votes omitted; actual mathematics and
+  both new notes retained. Official public V4-Pro and0813 tokenizer assets
+  identical/pinned8f9f37ca; local original/factual text counts differ from FULL
+  native input by481/485 only. Exact v2text813787+485+610allcfgagent/runtime+
+  FULL8192guard+131072combinedoutput+16384boundary+32768system=1003298/head45278.
+  No reserve reduction, mathematical pruning, provider/account probe or native
+  admission claim. ROOT selected this conditional plan for DRAFT materialization
+  only: actual102frames/103carrierfiles,promptb6ee2dd6/2786454bytes,all95literal
+  oldwholeframes suffix andbothcomplete notes ROOT-rechecked. Guard implementation
+  and independent actual content/capacity/code audits are underway; no READY,
+  preflight/Gitseal/provider yet. Evidence and failed estimates retained at
+  reviews/2026-11-04-point-upper-capacity/. All214/240/13/sourceaf97/PDF263/
+  localgrades/80Lean22seams/originalC2/wholeHIGH/Kimi/sourcevisual/freshcold/wiki/
+  private delivery remain unchanged and OPEN.
+
+
 - **Point-upper complete author/source readback (2026-11-04UTC):**
   ROOT read all14 current assigned statements/proofs164166167178179185–193
   and both full new mathematical notes (rough21370bytes/point22461bytes),
