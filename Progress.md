@@ -6,13 +6,21 @@
 
 ## Current state
 
-- **B.interval MAIN LIVE (2026-11-04UTC05:03:11):** ONEfreshguardedcallstarted
-  afterREADY6dcef8dwascommitted/pushed/GWequal. Exactexec57594/PID2621876/
-  start64871879/supervisor2621868, sessionses_e5b0f6acbffe2wP4jz4R47VCkp.
-  Actual/procstartmatch/liveverified. All88carrierfiles/87promptpayloads held,
-  matchingpure/CLI/source/prompt/cap/READYguards passed. No newverdict orgrade
-  fromlaunch;alloriginalgoal/wholeHIGH/Kimi/visual/cold/delivery gatesstayopen.
-  Observeexistinghandle/terminalsidecars; no restartafterobservationtimeout.
+- **B.interval original TERMINAL; one factual batch prepared (2026-11-04UTC):**
+  Actual471.225s/stop/zero tools/fresh2/source88 unchanged. Literal
+  PASS_WITH_NOTES/medium, all8OWN/10formal/join CHECKED;23record refusals
+  remain (11current refs,10prior refs,2OWN009 roles). Root read EVERY public
+  field and both complete author batches. No source repair located. Returned047
+  double-counts covariance in one sentence; source and final048/051 count it
+  once. Batched factual request also qualifies009 physical designation as a
+  separate real premise, static-white calibration and other report captions.
+  Original custody and one factual preparation are preserved in
+  reviews/2026-11-04-main-af97-B-interval/original/.
+  At most ONE additive same-session factual, not stronger confidence/new vote;
+  no call yet at this snapshot. Conditional1044565/head4011 retains full output
+  and reserves without pruning. Source/PDF/localgrades unchanged. All original
+  scope, intrinsic constant, full coupled HIGH/Kimi/visual/cold/wiki/delivery
+  gates remain open. Author intrinsic-closure reconstruction is underway.
 
 - **B.interval MAIN READY (2026-11-04UTC):** rootfull044–051/source/coupledmath
   readback complete, exact8OWN/10formal/independent-upperjoin. PrelimitBr is
