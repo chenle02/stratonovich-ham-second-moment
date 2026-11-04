@@ -6,6 +6,22 @@
 
 ## Current state
 
+- **Bounded reader audit completed; actual successor pending (2026-11-04):**
+  The independent author read all89legends and13mathematical records across
+  8documents without a decoder; generic role/hypothesis/consumer/remainder/
+  correction columns were intelligible. Root fully read the final report.
+  The held experiment is NOT accepted: positional identifier maps lose local
+  PROOF060/other target identity and the antecedent projection removes27nested
+  statuses (17LIMITED). The directed raw successor retains ALL statuses and
+  inline semantic IDs, but has not yet been inspected. Original JSON pointers
+  address original named logical records, not automatically encoded wire paths;
+  the candidate must explain this and old literal validators cannot be assumed
+  reusable. Complete8member custody/manifests verified at
+  reviews/2026-11-04-whole-review-meaning-and-retention/reader-audit/.
+  No source/PDF/grade/format/provider change; next inspect actual successor
+  retention, readability and complete actual request costs with full reserves.
+
+
 - **Scientific meaning/retention audit and complete-task draft (2026-11-04):**
   Root read the complete independent3schema and mixed16object audit reports.
   The independent auditor read all22713schema bytes; mixed objects protect
