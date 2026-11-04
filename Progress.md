@@ -6,6 +6,21 @@
 
 ## Current state
 
+- **Raw prototype independent preservation audit accepted in scope
+  (2026-11-04):** Root fully read the exact frozen report. Independent checks
+  reproduce39rawJSONinverse/609numericvalues/145supplieddispositions,16inline
+  semanticIDmaps/26namedWORKmaps/45recordlayouts,127+15inputhashes and all28
+  currentTeX. Ten compact samples were readable; no remaining concrete cell/
+  identity loss found. This accepts prototype custody and bounded author-reader
+  evidence only, not full-context attention, operative candidate, finalfit,
+  native scientific review or a source-pixel gate. Complete original manifest/
+  all10archive members verified at
+  reviews/2026-11-04-whole-raw-input-prototype/independent-audit/.
+  Independent actualcandidate and other-framing audits continue. A separate
+  runtime CODE PROPOSAL ONLY is underway; Root authority absent, no profile,
+  carrier or native call created. All full-goal scientific gates remain OPEN.
+
+
 - **Actual whole input candidate physically held (2026-11-04):** Written
   review-input.txt3065452B/39c13c5a/866375tokens plus whole-agent836B/181tokens
   bind exact operativev2 task underWHOLE_CURRENT_ASSIGNMENT. All214CURRENT/
