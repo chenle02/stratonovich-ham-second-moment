@@ -6,6 +6,28 @@
 
 ## Current state
 
+- **Whole inventory independently audited; failed capacity evidence retained
+  (2026-11-04):** Root fully read the independent author inventory report,
+  physical-scope receipt and additive BC-white clarification. Its checks bind
+  all214 current proof interiors/240declarations/13joins/12domains/77citation
+  uses/54support hashes without an orphaned OWN item or narrowed original model.
+  This is planning/custody acceptance only, not scientific HIGH or source-pixel
+  review. Both frozen original directories, all16archive members and producer
+  manifest entries were verified and retained at
+  reviews/2026-11-04-whole-scope-capacity-and-inventory-audit/.
+  Neutral880115 plus ONLY unchanged131072/16384/32768 hard reserves totals
+  1060339:FAIL11763 before new wholemetadata. Legible field-layout and exact-
+  value factoring still fail under the inherited accounting floors. The old
+  private28699runtime/1123object floors are historical, not established actual
+  future model delivery; separate read-only request-construction accounting
+  and exact operational-span/scientific-meaning audits remain underway.
+  No token credit, lower reserve, new representation/packet/provider action,
+  mathematical pruning, source/PDF/ledger/confidence change or round close.
+  Immediate next: inspect actual request evidence and exact mixed-protocol
+  spans, then assess a complete readable214/240/13 representation with all
+  actual costs and unchanged reserves. Full goal remains ACTIVE.
+
+
 - **Whole-project completion/source inventory checkpoint (2026-11-04):**
   A26-row author contract/evidence audit now distinguishes written upper/exact
   C2 from actual remaining current214OWN/240declarations/13join reconstruction,
