@@ -6,6 +6,22 @@
 
 ## Current state
 
+- **Exact wiki maintenance reconciled read-only (2026-11-04UTC):**
+  Old tk-20261103-151055-codex-stratonovich-af97-status is CANCELLED in failed,
+  replaced by supervisor tk-20261103-190225-codex-queue-supervisor-2, whose exact
+  done receipt is MAINTAINED/completedNov3T19:30:41-05:00, owned wiki940c704f.
+  Successful remote parity is recorded at completion. Current pagea04d4b2f
+  equals owned commit blob/clean page; cached HEAD=origin/v4=2c2e5146 contains
+  it. Current direct <HUB> GitHub ls-remote failedpublickey; no setup/key
+  repair or fresh remote-parity assertion. Exact rawreceipts/page custody at
+  reviews/2026-11-04-private-wiki-maintenance-readback/. No newticket, service
+  restart/wake/requeue/directsixrepowrite/contact. Datedaf97/workflow222bstatus
+  preserves ACTIVE/fullgates; currentNov4scoped reviews/finaldelivery mayneed
+  laterstatusrefresh. This supersedes the old queued/writerinactive observation,
+  not the literal oldcancelled or previous maintained/failed receipts. Fullgoal
+  scienceaf97/all214/240/13/actualC2/HIGH/Kimi/visual/cold/delivery remain OPEN.
+
+
 - **Point-upper input audit passed conditionally; six staged guard defects (2026-11-04UTC):**
   Independent actualv2 input audit reprojected1212Hleaves/38purevotes, all102
   frames/full95suffix, both complete notes,14proof/33OWNdecl+S064bindings and
