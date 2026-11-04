@@ -6,6 +6,34 @@
 
 ## Current state
 
+- **Actual-noise driver and fixed-order constructions reconstructed
+  (2026-11-04):** The frozen working notes explicitly derive005/006 spatial
+  Wick measures and joint fixed-order limits, and088/091/092/093 actual
+  operator/path limits with089/090 trace-tail intermediates. Root read both
+  complete notes and prerequisite tables, the complete independent driver
+  author crosscheck, and the actual005/006/004 source. No concrete assigned
+  gap was located under the exposed current OWN/import clauses. The driver
+  author crosscheck agrees; a separate fixed-order crosscheck is underway.
+  Neither fixed-input Gaussian columns nor uniform moments replace the two
+  compact covariance envelopes and actual trace-tail Cauchy estimate. The
+  fixed-order construction retains the full-mass/face argument, marked
+  2A_M+B_M² bound, same-family mixed widths, Green-first convention and
+  square-plus-cross L² limit. These are author deductions, not native review
+  acceptance or full-parent credit. Source/PDF and all review grades remain
+  unchanged. Complete custody and Root readback are retained at
+  reviews/2026-11-04-driver-fixed-order-reconstruction/.
+  The concrete complete-history input prototype is HELD/REJECTED for dispatch:
+  929478 user +181 agent +131072/16384/32768 reserves =1109883, exceeding
+  1048576 by61307 before unknown framing. Its original bytes and honest
+  failure are preserved; no scope/reserve trimming or provider retry occurred.
+  Root also read the full current uniform-products module and checked180–184
+  limit order, true final cell and polynomial threshold. Further explicit
+  author work is active on002/008 and180–184. A distinct bounded unit-A MAIN
+  dependency/coverage proposal may be prepared; it is not a replacement for
+  the whole214/240/13 goal or a model-call approval. Actual whole MAIN remains
+  INCONCLUSIVE/core-medium/whole-low. MAIN HIGH, Kimi, source/pixels, full
+  visual, fresh cold and synchronized final delivery gates all remain OPEN.
+
 - **Both variance directions explicitly reconstructed; science boundaries checked
   (2026-11-04):** RootFULLREADfinal22708B069/071/073/074math/table and13312B
   authorcrosscheck againstactualsource. OriginalW/Sobolevadjoints/Fouriercancel,
