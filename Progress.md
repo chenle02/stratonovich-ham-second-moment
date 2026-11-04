@@ -6,6 +6,25 @@
 
 ## Current state
 
+- **Complete raw-tree input prototype held; operative text proposed (2026-11-04):**
+  All127originalframes+15completeappends/39rawJSON/609numbers now retain every
+  supplied value/status/vote/type/order, inline semantic IDs and WORK/clause
+  maps.45stable-record field layouts use full named columns; no neutralization,
+  dictionary or mathematical deletion. All28CURRENTaf97TeX/primary/plainmath
+  bytes stay exact, explicitly current despite OLD102 source path prefixes.
+  Root read actual code and final report; manifests/all20custodymembers verified
+  at reviews/2026-11-04-whole-raw-input-prototype/.
+  Exact diagnostic866462plain+unchanged131072/16384/32768=1046686/head1890 BEFORE
+  actual future whole-agent/system/tool costs: no final fit. Independent actual
+  successor reader/role audit is underway. Operative textv2 removes only author
+  planning wording, uses ordinary mathematicalMarkdown/compactnativecoverage,
+  and explicitly binds214CURRENT/240roles/13joins/allmodels/actualC2. OldB21
+  agent21/60 cannot be reused. Original proposals/preimages retained unchanged.
+  Next authorized Driver work is NEW EXTERNAL actual review-input candidate
+  with v2task+separateagent and full source/retention/count receipts; no runtime,
+  config, carrier or provider action yet. Full science/review gates remain OPEN.
+
+
 - **Bounded reader audit completed; actual successor pending (2026-11-04):**
   The independent author read all89legends and13mathematical records across
   8documents without a decoder; generic role/hypothesis/consumer/remainder/
