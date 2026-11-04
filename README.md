@@ -54,8 +54,13 @@ because the mixed-series input remains unworked in that pass. The original
 factorial calculation is correct; returned captions and metadata errors are
 qualified in the [phase adjudication](reviews/2026-11-03-main-af97-theme-I-A-pilot/root-adjudication.md).
 This supplies mathematical working and does not meet the required HIGH gate.
-The next fifteen-proof pass is being prepared with the full source and actual
-prior calculations/limitations retained; grades are not combined into acceptance.
+The following fifteen-proof pass is also closed at medium confidence, with
+eight CHECKED and seven LIMITED records. The mixed-series/mild identification
+and several higher-dimensional analytic checks remain unreconstructed; no
+source repair was identified. A new coupled constructor review is being
+prepared with an explicit calculation for the missing Green passage. The
+independent-upper review units remain assigned afterward. Grades are not
+combined into whole-argument acceptance.
 
 The 263-page PNG preparation supplies no independent visual reading.
 Source/application and pixel checks, Kimi, the independent full-PDF visual audit

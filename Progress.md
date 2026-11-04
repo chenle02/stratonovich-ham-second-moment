@@ -51,12 +51,12 @@
   editorial states. Evidence: reviews/2026-11-03-main-af97-terminal/.
   Root's initial white-ID slip and returned row003factor typo are retained as
   reporting qualifications, not source errors. No further current-lineage call.
-  Next work is a substantive themed full-source reconstruction workflow,
-  in preparation only, not dispatched. It must change the actual per-call
-  workload and supply a genuine final coupled judgment, retaining214/240/
-  28TeX/13joins and every original model/constant obligation;
-  no grade union, automatic confidence retry, source-body edit or readiness
-  claim follows. The263PNG set is preparation only; source-pixel/fullvisual,
+  At that whole-lineage close the themed workflow was only preparation;
+  the subsequent pilot and remainder are now closed as recorded above.
+  The next actual constructor-join preparation uses new explicit working,
+  retaining214/240/28TeX/13joins and every original model/constant obligation.
+  A genuine final coupled judgment remains required; no grade union,
+  confidence-only retry or source-body change is inferred. The263PNG set is preparation only; source-pixel/fullvisual,
   Kimi and fresh final-cold gates remain open. Kimi's recorded monthly429
   supplied zero images/reads/report. Ordinary private wiki ticket
   tk-20261103-151055-codex-stratonovich-af97-status remains last recorded
