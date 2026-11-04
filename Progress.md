@@ -6,6 +6,31 @@
 
 ## Current state
 
+- **Point/signed MAIN CLOSED: firstpublicHIGH, qualified/unadopted (2026-11-04UTC):**
+  OriginalpublicEMPTY remainsnullverdict/confidence. SoleSAME SIDpubliccompletion
+  returned literalPASS_WITH_NOTES/high/all14OWN33decl1POINT3boundaryCHECKED,
+  actual733.530055s/stop/exit0/tools0/4msgs/exactoriginal2/sourceunchanged.
+  FULLinput815550=62+815488cache;public36580/reason24135/total876265; combined
+ 60715<131072. Public125125B89b85280 vsformatted128918B39ffa5e3 areequaltrees.
+  ROOTreadENTIREpublicrecord/all3completeauthorbatches/bothcounterexamples.
+  Once-only851refusals59 preserved:19outside+8currentref,12doubleownerchecksfor6
+  records,18missingboundaryparents,1S198onehex,1missing193POINTedge. All33OWN
+  inputlabels/bodyhashes andall33ancillarysourceLFbodies matchcanonical; this
+  isavailabilitynotrecordpass. H2graphcaption/F-vs-Enormcaption falsifiedby
+  admissiblewhiteclosure/smoothV_Rexamples; source164/179 alreadycorrect.
+  Additional reportqualifiers:source165vs169/173–176attribution,A1=0guard,
+  ordinary167vsraw168method/inverse107,noB(delta)notnoRdelta,postlimitleftside,
+  FHestimatevsownlinearflow,priorREPORTerror-vs-source wording. Tailformula
+  andmainpoint/signedmathtracksource; no manuscriptrepairlocatedundernamed
+  inputs. Rawhigh staysliteral, scopedgate/localgradesNOTpromoted; no passing
+  master/gradeconversion/H38regrade. SolecompletionSPENT/no furthercallinthis
+  lineage. Fullnative/author/rootcustodyat
+  reviews/2026-11-04-main-af97-point-signed/public-completion/final/.
+  Sourceaf97/28TeX/PDF263/214OWN240formal13joins/actualC2/80Lean22seams unchanged;
+  wholeHIGH/Kimi/sourcevisual/freshcold/wiki-final/private delivery OPEN.
+  NextactualremainingB/coupled-source work mayproceed, notconfidence-onlyretry.
+
+
 - **Published static052–058 normalization source check closed (2026-11-04UTC):**
   ProvidedPUBLISHEDChenHu2025 DOI24-AOP1758/PDF52 SHA58b152d7, Th1.2/(1.9),
   printed2147 explicitlyRAW E U^p, noLp root; fixed-p coefficientproof gives
