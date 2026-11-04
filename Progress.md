@@ -6,6 +6,27 @@
 
 ## Current state
 
+- **Intrinsic MAIN READY (2026-11-04UTC):** exact14OWN130–132/194–204,
+ 18declarations/S064given/132-finitenessapplication/JOIN-POSITIVE-INTRINSIC.
+  Root full-source/working/coupled readiness and complete code/audits read;
+ 178draft+6minimum+65record controls replayed, separate actual audit agrees.
+  All95frames/all81oldwholeframes/all6newmath preserved, no source repair.
+  Failedv1total1068297 remains. Verified17515already-baseline framing and6062
+  JSON-whitespace-only savings yield conditional1044720/head3856 with all
+ 131072+16384+32768 reserves, no deleted-scope/factual-output credit/pruning.
+  Actualpurelocalpreflight06:37:38UTC passedDeepSeekV4Pro/12toolsfalse/
+  compactionfalse/shareoff/CLI1.18.31. Source-only carrier46570736/all96Gitblobs
+  postchecked; prompt00f37b48/2622634bytes unchanged. Full custody at
+  reviews/2026-11-04-main-af97-intrinsic/; memberhashes/scanclear.
+  ONE fresh invocation only after READY commit/push/<HUB>-equal delivery;
+  no provider yet at this snapshot. Earlier lineages closed; no retry/voteunion.
+  Durable lessonLab1fc6d26/runtime85f544a6 published,actual ranks8/1/exact1;
+  foreign4files/3686nonownedindexentries/stagingintent preserved. Directional
+  white author calibration checked/future-audit-only, outside95inputframes.
+  All28science/PDF/localgrades/Lean unchanged; all214/240/13/originalmodels/
+  actualC2/wholeHIGH/Kimi/sourcevisual/freshcold/wiki/private delivery open.
+
+
 - **Intrinsic coupled scope/input audit (2026-11-04UTC):** root selected14
   full OWN130–132/194–204,18 same-module declarations(15core+3input-only),given
   H:homog,JOIN-POSITIVE-INTRINSIC and separate132-finiteness application.
