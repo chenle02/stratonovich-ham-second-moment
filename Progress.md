@@ -22,7 +22,11 @@
   Sourceaf97/all28TeX/PDF263/index7/ledger54/80Lean22seams unchanged.
   Next existing intrinsic194–204 coupled closure has author support/complete
   finiteness203204 reconstruction and singular/optimizer falsifications; no
-  intrinsic packet/call/acceptance yet. All214/240/13,otherB/C–H/alloriginal
+  intrinsic packet/call/acceptance yet. Complete12member19510083 author/source
+  preparation is in reviews/2026-11-04-intrinsic-closure-preparation/; root read
+  full194–204/130–132/193/180 and every worked/falsification report. Covariance
+  amplitude and half-action checks match; no new theorem/independent vote.
+  All214/240/13,otherB/C–H/alloriginal
   models/actualconstant/coupledHIGH/Kimi/sourcevisual/freshcold/wiki/private
   delivery remain open. GoalACTIVE, not complete.
 
