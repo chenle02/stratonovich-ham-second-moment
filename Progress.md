@@ -6,6 +6,22 @@
 
 ## Current state
 
+- **Point-upper complete author/source readback (2026-11-04UTC):**
+  ROOT read all14 current assigned statements/proofs164166167178179185–193
+  and both full new mathematical notes (rough21370bytes/point22461bytes),
+  including separately recovered initially truncated boundaries. Independently
+  rehashed all14 body/module identities against neutral7. Rough graph/quarter
+  domains, fixed-R lift versus uniform-E budgets, raw B=1 norm finiteness,
+  same-W retaining source, two fixed-delta limits, total-datum cone and average
+  of squares, original raw action and delta-first/B-second order are retained.
+  No source repair located; no independent review or confidence credit.
+  Byte-preserved working/finite controls and ROOT bindings are at
+  reviews/2026-11-04-point-upper-author-preparation/.
+  Actual next14OWN/33declaration inventory is being constructed externally;
+  no passing capacity/draft/readiness/provider claim. Full original214/240/13,
+  actualC2/wholeHIGH/Kimi/sourcevisual/freshcold/wiki/private delivery OPEN.
+
+
 - **Intrinsic MAIN CLOSED, original plus ONE factual (2026-11-04UTC):**
   LiteralPASS_WITH_NOTES/medium/all14OWN18formal/application/joinCHECKED remains.
   Solefactual170.414s/stop/tools0/fresh4/exactoriginal2prefix/source96PDFheld
