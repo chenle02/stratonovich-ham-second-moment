@@ -1,4 +1,14 @@
-# B.phase original returned; one factual mathematical correction prepared
+# B.phase original plus sole factual addendum closed
+
+The original remains PASS_WITH_NOTES/medium, all8proof/8formalCHECKED and15recordrefusals. The ONE actual same-session factual response correctly derives the balanced Gaussian identity, exponential free-phase bound and powered Hölder series argument. Affected040/042 remain literally CHECKED; no new global confidence/verdict is supplied. Root read every original/factual field and all author batches. No manuscript repair was located.
+
+[Root adjudication](root-adjudication.md) preserves the original errors, corrected mathematics and remaining record limitations. All14new selector-style references still fail to resolve as JSON Pointers; nine ownerB corrections are accurate. The AUTHOR locator map is separately labeled, and the last two old erroneous042fields need their actual M042 corrections. There is no synthetic passing report, HIGH conversion or additional vote. The lineage is CLOSED after one factual addendum; no more calls.
+
+Full25member final48f67e2a custody is member-rehashed and references complete34member original540df919 at20c6fd5 and174member input7afe8db5 at553f5f3 by exact committed blobs. The [factual response](final/factual-report.json) and [collection receipt](final/factual-collection.json) are reviewable. Complete raw responses/events/four-message exact-prefix export are archived; private reasoning is custody/capacity only. Both native calls ended stop/tools0/source86unchanged.
+
+Original input694211/cache0. Factual input19232pluscache-read694144 is fullprompt713376;3249public+8909reasoning bring total725534. This observed adapter convention is not a universal cache double-add rule. The961746/head86830pre-call plan correctly used the cache-zero baseline and allnewbyte/reserve charges. Allsource/PDF/localstates/Lean and wholeHIGH/Kimi/visual/cold/wiki/private-delivery obligations remain unchanged. Next is actual all-model independent-upper interval application, retaining the full original constant goal.
+
+## Original collection and factual preparation, retained as history
 
 The actual fresh DeepSeek V4 Pro original returned PASS_WITH_NOTES/medium, all8OWN/eightformals CHECKED, nojoin. The report is complete, but has15 record refusals:9wrong ownerA versusB and6source LF references instead of current JSON mathematical pointers. Root read every public field and both complete author batches. Three concrete returned steps are false:040's one-sided Gaussian identity includes an extra input denominator,042 calls weighted free propagation contractive, and042's Hölder product omits its powers. The manuscript already has the correct formulas; no source repair was located.
 

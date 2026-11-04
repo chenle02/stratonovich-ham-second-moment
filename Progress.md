@@ -6,14 +6,20 @@
 
 ## Current state
 
-- **B.phase sole factual resolution LIVE (2026-11-04UTC03:54:07):** exact
-  existingexec29641/PID2339649/start64457450/supervisor2339574, sameoriginal
-  sessionses_e5b6bfaeaffegchkdt3XnieWpg. Original34member540df919 custody was
-  committed/pushed/GWequal at20c6fd5 andexactblob/prefix/sourceguards passed.
-  ThisisONEadditivemath/publicrecordcorrection, not a confidence request or
-  full8rerun/newvote. No secondfactual/autoretry/continuation. Inspect this
-  exacthandle/terminalsidecars, notoriginal87764whichisterminal. All86files
-  held; source/PDF/grades/whole/Kimi/visual/cold/goal unchanged.
+- **B.phase CLOSED, original plus ONE factual (2026-11-04UTC):** original
+  PASSnotes/medium/all8proof+8formalCHECKED/15recordrefusals remainsliteral.
+  Actualsolefactual168.143s/stop/tools0/exact4prefix/source86clean supplies
+  correctGaussianhalfweights/freeexp-growth/Holderpowers;040/042CHECKED, no new
+  globalconfidence/verdict. Rootreadalloriginal+newpublicandallauthorbatches.
+  Newconcavitywordisinaccuratebutinequalityvalid;all14selectorrefs unresolved,
+ 9ownerBcorrectionsaccurate. AUTHORlocatorsarenotnativepointers;old0424/5remain
+  falsewithoutM042corrections. No sourcefix/syntheticpass/HIGH/newvote; nomore
+  callsinthislineage. Final25member48f67e2a referencesfull34original540df919/
+ 174input7afe8db5 byexactGitblobs, allrehashed. Evidence:
+  reviews/2026-11-04-main-af97-B-phase/root-adjudication.md.
+  NextB.interval044–051/eightOWN/10formal/canonicalindependent-upperjoin draft
+  existsforaudits; nocall/preflight/seal approved. All214/240/13/originalmodels/
+  actualC2/wholeHIGH/Kimi/visual/cold/wiki/finaldelivery gatesremain.
 
 - **B.phase original TERMINAL; one factual batch prepared (2026-11-04UTC):**
   actual510.163s/stop/tools0/fresh2/source86unchanged; rawPASSnotes/medium with
@@ -14059,3 +14065,40 @@ preservesalloriginalassistantbytecharges; correctedhuman-summand87311 matches
 actualcapacityJSON(alltotal/headroomvalueswerealreadycorrect). No source/math/
 PDF/Lean/grade changed. Actualresponse/prefix4/model/tools/finish/newmath remain
 pending; nocertification orconfidence advancefromlaunch. Allfullgoal gates stay.
+
+
+## 2026-11-04UTC: B.phase factual fullyadjudicated, lineage closed
+
+Solefactualended03:56:55.688479UTC after168.143149656s,exit0/stop/tools0,all86bytes/
+originalexport unchanged. Fullregular-filefour-messageexportd4202f9c verifies
+EXACToriginal2prefix,new5532byteinputdb5e25fe andactualdeepseek-v4-pro. Rawnewpublic
+10204bytes5057cd35 andparsed10193bytes0f4ebdb2 arethesameactualJSON, nottwovotes.
+Input19232isUNCACHED;cache.read694144meansfullprompt713376;public3249+reason8909
+=12158combined,total725534. Thisnativeadapterconventiondoesnotjustifyblindly
+addingcachedtokensforotherproviders. Original694211/cache0 remainsnextbaseline.
+
+RootreadEVERYoriginal/factualfieldandallcompleteauthorbatches. CorrectedM040
+derivestwogaussianidentities;inputhalfweightproducesextraρ^-2andbalancedvariance
+Rρ^(α-4), preservingrow/column/creation+annihilation/d_N. M042correctsfreegrowthto
+exp(ρ|t|/2), staticv_epsilon/1ρinsertionandfixed-orderbandthenmodes/nozerosmoothing,
+complexcircleanddirectR0branch. M042HoldernowhasA_n^βB_n^(1-β),properp/qandgeometric
+bound,andβ>=1validℓβ/ℓ1inequality. Newconcavitynameiswrongbuttheinequalityisvalid;
+no additionalmodelcall. γ043=3-α,β042=γ/2 asactualsource. Allsourcealreadycorrect.
+
+NinefactualownerBvaluesarecorrect. ALL14newstrings original#/proofs[id=...]/...
+areunresolvableselectors: RFC6901treatsbracketsasaliteralmissingkey. Theirrawstrings
+remain;separateAUTHORmapdb52dc9a derivesindexlocators/valuehashes, rootrehashesall14,
+notreviewer-returnedvalidpointers. Last043->042refstooldworking4/5stillpointatfalse
+originalcontraction/Holdercaptions;pairactualM042errataorusecorrectfactorialworking3.
+Theoriginal15refusalsarenoterased,nosyntheticmaster/gradeupgrade. Zerojoinintended
+scope,externalnamedCP/C23importsallowed,dimensional/temporal/NEXTlimitsretained.
+
+LineageCLOSEDafterONEfactual,nomorecalls. LiteraloriginalPASSnotes/medium/all8proof/
+8formalCHECKED unchanged;factualaffected040/042CHECKED,noglobalnewconfidence/verdict.
+Full25member48f67e2ac5daa7a6d77471b52facd77e5c17b735d7a0352b5d2bd2b149123d39
+final/native/author/ref/rootcustody ismemberrehashedandboundedcredentialscanclear;
+referencesexact34memberoriginal540df919at20c6fd5and174input7afe8db5at553f5f3
+withoutfullinputduplication. Private reasoningneverproofevidence. Sourceaf97/
+PDF096cb3/index7/ledger54/local210/1/3/80Lean22seams unchanged. No wholeHIGH/Kimi/
+sourcepixels/full263visual/cold/wiki/private-delivery/goalclearance. Actualnew
+B.interval8/10+JOIN-INDEPENDENT-UPPER draft isforauditsonly; fullprogramretained.

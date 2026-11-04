@@ -1,0 +1,140 @@
+{
+  "kind": "FACTUAL_MATH_AND_RECORD_ERRATA_ONLY",
+  "source_commit": "af97ae4db921a660b0a4ed1ffbe9b6f53a487e2b",
+  "original_public_sha256": "286a4d08e53ca085d2f06feaf394e7f6ba547009fa44f00459915c413e7ddad6",
+  "mathematical_errata": [
+    {
+      "id": "M040_HALF_WEIGHT",
+      "original_pointer": "/proofs/4/actual_working/1",
+      "original_caption": "LHS was sum_i||A_rho^(-1/2)M_ei f||_2^2 but RHS carried an extra input factor 1/(rho^2+|eta|^2).",
+      "corrected_derivation": "Let J_{rho,eps}(eta)=int e^{-eps|xi|^2} mu(dxi)/(rho^2+|eta+xi|^2). With H_i=A_rho^(-1/2) M_ei A_rho^(-1/2), the two correct Gaussian/Plancherel identities are: (A) unweighted-input/output-half-weight: sum_i||A_rho^(-1/2) M_ei g||_2^2 = (2pi)^{-d} int |g-hat(eta)|^2 J_{rho,eps}(eta) d eta, with NO extra (rho^2+|eta|^2) in the denominator; (B) sandwich with BOTH half-weights: put U=A_rho^(-1/2) f, so sum_i||H_i f||_2^2 = sum_i||A_rho^(-1/2) M_ei U||_2^2 = (2pi)^{-d} int |f-hat(eta)|^2 /(rho^2+|eta|^2) * J_{rho,eps}(eta) d eta. Using J<=R_alpha rho^{alpha-2} (source 037 resolvent) and 1/(rho^2+|eta|^2)<=rho^{-2} gives sum_i||H_i f||^2 <= R_alpha rho^{alpha-2} * rho^{-2} ||f||^2 = R_alpha rho^{alpha-4}||f||^2, i.e. the balanced quadratic-form bound sum_i H_i^2 <= R_alpha rho^{alpha-4} I. H_i is selfadjoint (A_rho^{-1/2}, M_ei, A_rho^{-1/2} all selfadjoint) so the row sum H_i^2 and the column sum coincide. The Hermite Fock roles are unchanged: creation row sqrt(N+1), annihilation sqrt(N), sum 2 sqrt(N+1), hence d_N=2 sqrt(N+1) sqrt(R_alpha).",
+      "why_restore_half_weight": "Restoring the input A_rho^{-1/2} on f (so the object is A_rho^{-1/2} M_ei A_rho^{-1/2}, exactly source 5258-5269) is the correct repair, not a change of d_N or the source statement: the input half-weight is precisely what turns the resolvent power rho^{alpha-2} into the sandwich power rho^{alpha-4}, and d_N is the norm of that sandwich. At rho=2 the erroneous returned RHS has denominator bounded by 1/4, so it is at most one quarter of the stated positive LHS (nonzero covariance, nonzero f); the single-half-weight identity (A) has no such extra factor.",
+      "affected_proof": "PROOF040",
+      "disposition": "CHECKED",
+      "remaining_conditions": "Source statement and uniform d_N are unchanged; only the returned caption was corrected. selfadjoint row=column and creation/annihilation roles remain as in original#/proofs[id=PROOF040]."
+    },
+    {
+      "id": "M042_CUTOFF",
+      "original_pointer": "/proofs/6/actual_working/4",
+      "original_caption": "Claimed free propagation contracts the X_rho norm; also used 'real coupling circle' and V_a instead of static v_epsilon.",
+      "corrected_derivation": "The free phase does NOT contract X_rho. Derive the source bound: for free Schwartz data w0 with z(t)=S0(t)w0, d/dt ||z(t)||_rho^2 = 2 rho^2 Re <A_rho^(-1) ̇w0, w0>, and |2 rho^2 Re<A_rho^(-1)̇w0,w0>| <= rho ||z(t)||_rho^2, so Gronwall gives ||S0(t)||_rho <= exp(rho |t|/2) (this is 038FREE_PHASE_GROWTH). This is sufficient for the fixed-order band-then-mode identification: at each fixed epsilon,n the finite-degree multiplication bound is 2 sqrt(N+1) sqrt(v_epsilon) with v_epsilon=Gamma_epsilon(0) (not constructor V_a), the phase insertion (u,v)->(0, W_epsilon u) costs that bound divided by rho via ||A_rho^{-1/2}||_op <= 1/rho on the velocity slot, and exp(rho|t|/2) is a finite factor on the fixed horizon [0,h]; therefore each fixed Duhamel word is dominated and converges first as the band goes to infinity and then as the Gaussian modes go to infinity, with the nonuniform v_epsilon and rho confined to the identification step. The coupling circle is a circle in the COMPLEX coupling plane with positive real radius |z| (039's complex coupling), not a 'real' circle. Retain the source 042 direct R_alpha=0 branch BEFORE dividing by d_N: if R_alpha=0 then mu=0 and all positive orders vanish.",
+      "affected_proof": "PROOF042",
+      "disposition": "CHECKED",
+      "remaining_conditions": "No zero-smoothing phase limit; no unbounded CP use. The corrected bands/modes removal uses the exp-growth bound, not contraction."
+    },
+    {
+      "id": "M042_HOLDER",
+      "original_pointer": "/proofs/6/actual_working/5",
+      "original_caption": "Wrote the beta<1 product as A_n B_n, losing the powers beta and 1-beta.",
+      "corrected_derivation": "Set A_n=(2 x^{1/beta})^n/n! and B_n=2^{-beta n/(1-beta)}. The exact term is A_n^beta B_n^{1-beta}: A_n^beta=2^{beta n} x^n/(n!)^beta, B_n^{1-beta}=2^{-beta n}, so A_n^beta B_n^{1-beta}=x^n/(n!)^beta. For beta in (1/2,1) apply Hölder with conjugate exponents p=1/beta and q=1/(1-beta): sum A_n^beta B_n^{1-beta} <= (sum A_n)^beta (sum B_n)^{1-beta}; sum A_n=exp(2 x^{1/beta}); sum B_n=1/(1-2^{-beta/(1-beta)})<=2 because beta/(1-beta)>1 for beta>1/2, so (sum B_n)^{1-beta}<=2^{1-beta}<=2; altogether <=2 exp(2 beta x^{1/beta}) <=2 exp(3 x^{1/beta}) since 2 beta<3 for beta<3/2. For beta>=1 use the concavity bound sum a_n^beta <= (sum a_n)^beta with a_n=x^{n/beta}/n!, giving exp(beta x^{1/beta}) <= exp(3 x^{1/beta}). Check: at beta=3/4, n=1, x=1, the unpowered A_1 B_1=2*(1/8)=1/4 while A_1^beta B_1^{1-beta}=2^{3/4}*(1/8)^{1/4}=1=x^1/(1!)^beta. Norm-order exponents are beta_042=(3-alpha)/2 and gamma_043=3-alpha, so the norm-order exponent is gamma_043/2, distinct from the tail-order gamma.",
+      "affected_proof": "PROOF042",
+      "disposition": "CHECKED",
+      "remaining_conditions": "The final bound sum x^n/(n!)^beta <=2 exp(3 x^{1/beta}) holds for all beta in (1/2,3/2); the input caption at /proofs/7/inputs/2 must not redefine tail gamma away from gamma_043=3-alpha."
+    }
+  ],
+  "input_record_errata": [
+    {
+      "original_pointer": "/proofs/2/inputs/0",
+      "consumer_proof": "PROOF038",
+      "target_id": "PROOF037",
+      "owner_unit_corrected": "B",
+      "math_reference": [
+        "original#/proofs[id=PROOF037]/actual_working/1",
+        "original#/proofs[id=PROOF037]/actual_working/4"
+      ]
+    },
+    {
+      "original_pointer": "/proofs/4/inputs/0",
+      "consumer_proof": "PROOF040",
+      "target_id": "PROOF037",
+      "owner_unit_corrected": "B",
+      "math_reference": [
+        "original#/proofs[id=PROOF037]/actual_working/1"
+      ]
+    },
+    {
+      "original_pointer": "/proofs/6/inputs/0",
+      "consumer_proof": "PROOF042",
+      "target_id": "PROOF039",
+      "owner_unit_corrected": "B",
+      "math_reference": [
+        "original#/proofs[id=PROOF039]/actual_working/5"
+      ]
+    },
+    {
+      "original_pointer": "/proofs/6/inputs/1",
+      "consumer_proof": "PROOF042",
+      "target_id": "PROOF040",
+      "owner_unit_corrected": "B",
+      "math_reference": [
+        "original#/proofs[id=PROOF040]/actual_working/2",
+        "original#/proofs[id=PROOF040]/actual_working/3"
+      ]
+    },
+    {
+      "original_pointer": "/proofs/6/inputs/2",
+      "consumer_proof": "PROOF042",
+      "target_id": "PROOF041",
+      "owner_unit_corrected": "B",
+      "math_reference": [
+        "original#/proofs[id=PROOF041]/actual_working/2",
+        "original#/proofs[id=PROOF041]/actual_working/3"
+      ]
+    },
+    {
+      "original_pointer": "/proofs/6/inputs/3",
+      "consumer_proof": "PROOF042",
+      "target_id": "PROOF038",
+      "owner_unit_corrected": "B",
+      "math_reference": [
+        "original#/proofs[id=PROOF038]/actual_working/4"
+      ]
+    },
+    {
+      "original_pointer": "/proofs/7/inputs/0",
+      "consumer_proof": "PROOF043",
+      "target_id": "PROOF038",
+      "owner_unit_corrected": "B",
+      "math_reference": [
+        "original#/proofs[id=PROOF038]/actual_working/2",
+        "original#/proofs[id=PROOF038]/actual_working/3"
+      ]
+    },
+    {
+      "original_pointer": "/proofs/7/inputs/1",
+      "consumer_proof": "PROOF043",
+      "target_id": "PROOF038",
+      "owner_unit_corrected": "B",
+      "math_reference": [
+        "original#/proofs[id=PROOF038]/actual_working/4"
+      ]
+    },
+    {
+      "original_pointer": "/proofs/7/inputs/2",
+      "consumer_proof": "PROOF043",
+      "target_id": "PROOF042",
+      "owner_unit_corrected": "B",
+      "math_reference": [
+        "original#/proofs[id=PROOF042]/actual_working/4",
+        "original#/proofs[id=PROOF042]/actual_working/5"
+      ]
+    }
+  ],
+  "scope_errata": [
+    "PROOF039 block constants 3, 12(1+lambda*h), 12, 12 already include the root-comparison factors; they are not pre-root scalar-function norms.",
+    "PROOF041 requires existing VECTOR Bochner integrals of the displayed words, not an additional operator-norm-integral hypothesis.",
+    "A_alpha and B_alpha depend only on alpha; R_alpha is factored separately and not absorbed into them.",
+    "PROOF036's imported seed is the C23 QUARTIC (1.5) finiteness after Dalang; the source also proves a square-root variation but only the quartic closing finiteness is imported.",
+    "No-owned-join is intended scope of the original block, so the raw MANUSCRIPT_DEFECT kind in the original findings array contradicts its own 'not a defect' reason; record-only, no disposition change.",
+    "The 3D trace/Born/mean theorem is not exported into the later all-dimensional interval argument; the separate 044/045 inputs remain assigned."
+  ],
+  "limitations": [
+    "This is an additive erratum, not a rerun, re-vote, or re-verdict; the original PASS_WITH_NOTES/medium is historical and unchanged.",
+    "No error has been located in source af97ae4db921a660b0a4ed1ffbe9b6f53a487e2b; the corrections concern returned captions and record pointers only.",
+    "The nine OWN input owner units are corrected to B; target IDs, labels, and body fingerprints in the original response remain correct.",
+    "Affected proofs PROOF040 and PROOF042 remain CHECKED in mathematical disposition because the source statements are unchanged and only the returned derivations are corrected.",
+    "No verdict is assigned to unowned 044-051 or to any whole join; no synthetic corrected main report is produced.",
+    "All original global model/data/amplitude/actual-C2 requirements and Kimi/visual/cold requirements remain unchanged and are not discharged by this addendum.",
+    "No new global confidence label is supplied."
+  ]
+}
