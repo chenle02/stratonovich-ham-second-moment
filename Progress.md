@@ -13851,3 +13851,29 @@ Current-frontier cleanup also removed a stale Immediate-next instruction for
 historical PID3148173/3146523 and relabeled the older887/213proof candidate.
 Their dated records remain; no old process was restarted and no acceptance was
 changed. Currentaf97/214source and constructorclose govern the next B work.
+
+
+## 2026-11-04UTC: actual pointer/global-premise lesson published
+
+User-requested durable learning is canonical at Le-AI-Lab e35ce2e7c546e79bbe187ab806485a39c9675541.
+Existing paper-dev-review-layers-are-mandatory now requires actual source-bound
+mathematical JSON-pointer resolution and complete-scope checks for global pending
+premises, with negative AND honestlimited/subclause/context controls. A valid
+pointer or schema remains no proof certificate. Actual two constructorguard gaps
+and fixes are evidence, not a manufactured scientific result or new reviewer.
+
+Phase2.5/skill-gate/generation/syncapply/check/strictfreshstartup pass; description
+567/1024,headline41/90. Actualaliasretrievalranks2/1 on bothhosts, exactname1.
+Root directlyrehashes canonical/Claude/OpenCode/explicitCodexbytes ccb5315b and
+actual<HUB>HEAD/parity0/0; currentthreadcatalogremainsitsstartupsnapshot.
+Pi missing-settingswarning nonblocking, no setupchanged. All4foreignfiles and
+3681nonownedindexentries/staged+unstagedpatchintent preserved; root rechecks
+actualforeignfile/indexpostimages. No stash/reset/unownedstaging/notification.
+
+Safe29member publication receipts are root-rehashed in
+reviews/2026-11-04-durable-constructor-guards/; rawforeignbackupfiles/index/patches
+stay external and uncommitted. ConstructorlineagewasalreadyclosedZEROaddenda,
+so no live input/profilechanged. No source/PDF/Lean/reviewgrade/wholegoal advance.
+The direct close-record presentation uses repository-relative author paths;
+its exact original remains unchanged in the terminal capsule. B.phase preparation
+continues with allscope andfuturematchingpurepreflight required.
