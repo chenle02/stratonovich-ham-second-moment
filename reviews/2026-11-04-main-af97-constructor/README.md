@@ -1,4 +1,14 @@
-# Constructor MAIN: frozen inputs, awaiting one fresh invocation
+# Constructor MAIN original closed at medium confidence
+
+One actual fresh DeepSeek V4 Pro invocation returned PASS_WITH_NOTES/medium: current PROOF002/009, S038/S039 and JOIN-CONSTRUCTOR are CHECKED, with zero mechanical refusals. Root read every public mathematical field and both complete author batches. The quantitative Green/product/vertex/series/mixed-moment working is sufficient under the retained upstream scope; no source repair was located. Returned coordinate/dependency captions and control/scope wording are preserved and qualified in [root-adjudication.md](root-adjudication.md).
+
+The original lineage is CLOSED with ZERO factual addenda. Its correct surrounding calculations and source resolve the captions without another call merely to repair a below-threshold record. No corrected synthetic report or HIGH conversion was made. The parsed literal [report](terminal/report.json) and [actual collection receipt](terminal/collection.json) are available; the full raw original/export/events are in the terminal capsule.
+
+Actual run:374.596seconds, exit0/stop/tools0, fresh2messages and exact frozen prompt/source. Input671252/cache0; public12575+reasoning13084=25659combined under131072. All82carrier files and28current scientific modules/PDF remain unchanged. The32member terminal capsule288e35a9c32ffe31426ea92bd55f7b5d567dd94ec7960e4eac6f8d91eef8b038 was individually rehashed, with bounded credential scans clear. It references the complete148member input capsule by exact committed b70ee7d blob/hash rather than duplicating it. Private reasoning is custody/usage only, not public proof evidence.
+
+No source/PDF/local acceptance/Lean change follows. The required whole HIGH, Kimi, source/image/visual, fresh cold, wiki and private-delivery gates remain open. Next is actual B.phase036–043/B.interval044–051 working, retaining every alternative/comparison, all214/240/13, every original model and the actual constant. The original Ar/pilot/whole lineages stay closed with their historical limits.
+
+## Frozen input checkpoint, retained as dated history
 
 The new bounded workload reconstructs current PROOF002/009, S038/S039 and JOIN-CONSTRUCTOR under the original H:homog model. It adds the full explicit fixed-random-factor Gaussian/Green calculation to the complete prior mathematical context. This is substantive work on the previously incomplete construction-to-moment implication; the closed Ar, pilot and whole-review lineages are not reopened.
 

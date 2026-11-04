@@ -7,14 +7,21 @@
 ## Current state
 
 
-- **Constructor MAIN LIVE (2026-11-04UTC02:09:20):** ONE fresh guarded
-  DeepSeek V4 Pro invocation is running after READYb70ee7d was pushed and
-  <HUB>-equal. Exact existing exec48328/PID1856296/start63828786,
-  supervisor1856292; inspect this handle, never restart after a timeout.
-  Carrier27d98e4/all82files, prompt6fcfb0a4 and matching pure guards passed.
-  No mathematical result or acceptance follows from launch. See the live
-  records in reviews/2026-11-04-main-af97-constructor/live/.
-
+- **Constructor MAIN CLOSED (2026-11-04UTC):** actual fresh DeepSeek V4 Pro
+  PASS_WITH_NOTES/medium, current002/009/S038/S039/JOIN-CONSTRUCTOR CHECKED,
+  validator0issues. Root read ALL public mathematics and both author batches.
+  The explicit Green/product/vertex/series/mixed bridge is worked at the stated
+  upstream scope; no source repair located. False coordinate/dependency captions
+  and control/source wording remain literal with root annotations. ZEROaddenda,
+  no more calls in this lineage and no HIGH conversion. Actual374.596seconds,
+  stop/tools0/fresh2/exactsource82; input671252/cache0/public12575/reason13084.
+  Full32member terminal288e35a9 capsule references148member READY88e5ee7 by
+  exactb70blob/hash. Evidence: reviews/2026-11-04-main-af97-constructor/.
+  Next actual work is B.phase036–043/B.interval044–051 preparation using the
+  saved full-source/support map and actual prior math. AllA higher-family
+  limitations, B alternatives/comparisons, full214/240/13/originalmodels/actualC2
+  and finalgenuinecoupledHIGH/Kimi/visual/cold/delivery remain assigned. Allsource/
+  PDF/local210/1/3/80Lean22seams unchanged; no native reviewer is live.
 
 - **Constructor MAIN READY (2026-11-04UTC):** the new coupled workload owns
   PROOF002/009, S038/S039, JOIN-CONSTRUCTOR and given H:homog. Full81payloads,
@@ -26,8 +33,8 @@
   Selected measured-Ar73 plan totals1014073/head34503 with131072combined;
   original capacity diagnostics and both actual local failures are preserved.
   Evidence: reviews/2026-11-04-main-af97-constructor/. A single fresh invocation
-  is authorized only after this READY is committed/pushed/<HUB>-equal;
-  no provider exists yet at this snapshot. No source/PDF/local210/1/3/Lean
+  was authorized only after READY commit/push/<HUB> parity; the actual
+  invocation is now closed as recorded above. No source/PDF/local210/1/3/Lean
   or whole HIGH/Kimi/visual/cold/delivery/goal clearance follows. B.phase and
   B.interval remain next, with all37B/46formal and full214/240/13 retained.
 
@@ -35,18 +42,18 @@
 - **Themed MAIN A.remainder CLOSED (2026-11-04UTC):** actualDeepSeekV4Pro
   PASS_WITH_NOTES/medium,8CHECKED/7LIMITED; complete15proof/22formal/15obligation/
   2given records, stop/tools0/fresh2/exactsource80verified. Root read every
-  publicfield and both author batches.002/009/018/020–023 remain incomplete
-  independent reconstruction, not new source counterexamples. Report-only
+  publicfield and both author batches. In that original Ar record,002/009/
+  018/020–023 remain incompletely reconstructed, not new source counterexamples. Report-only
   factorialcube/Greenprefactor/whitehalf and dependency-scope errors are
   annotated. Original23validatorrefusals/rawmedium retained; ZEROaddenda,
   no morecurrentlineagecalls. No source repair identified or localHigh change.
   Evidence: reviews/2026-11-04-main-af97-theme-I-A-remainder/root-adjudication.md.
-  The new explicitauthorGreen-limit working now supports a NEW coupled
-  constructorpacket preparation (JOIN-CONSTRUCTOR andunresolved002/009),
-  then B.phase036–043/B.interval044–051. AllB alternatives/comparisons stay
+  At Ar closure the new explicit authorGreen working supported the later
+  constructor preparation (JOIN-CONSTRUCTOR and002/009); that invocation is
+  now closed above. Next B.phase036–043/B.interval044–051; alternatives/comparisons stay
   assigned. This addressesactualunworkedsourceconsumers, not an Arconfidence
-  retry. Its preparation is now READY as recorded above; no native invocation
-  exists at this pre-dispatch snapshot.
+  retry. That separate constructor invocation is now closed at medium as
+  recorded above; the originalArrecord is unchanged.
 
 
 - **Themed MAIN A.pilot CLOSED (2026-11-03):** one fresh DeepSeek V4 Pro
@@ -62,7 +69,7 @@
   reviews/2026-11-03-main-af97-theme-I-A-pilot/root-adjudication.md.
   The subsequent A.remainder002009011–023/22formal phase is now closed as
   recorded above. Its original next-step paragraph is superseded by the
-  constructor READY checkpoint; historical outcomes are unchanged.
+  constructor CLOSED checkpoint; historical outcomes are unchanged.
 
 
 - **Current af97 whole MAIN and next work (2026-11-03):** one fresh DeepSeek
@@ -79,8 +86,9 @@
   reporting qualifications, not source errors. No further current-lineage call.
   At that whole-lineage close the themed workflow was only preparation;
   the subsequent pilot and remainder are now closed as recorded above.
-  The next actual constructor-join preparation uses new explicit working,
-  retaining214/240/28TeX/13joins and every original model/constant obligation.
+  The subsequent constructor join is now closed at medium; next is B.phase/
+  B.interval preparation, retaining214/240/28TeX/13joins and every original
+  model/constant obligation.
   A genuine final coupled judgment remains required; no grade union,
   confidence-only retry or source-body change is inferred. The263PNG set is preparation only; source-pixel/fullvisual,
   Kimi and fresh final-cold gates remain open. Kimi's recorded monthly429
@@ -406,17 +414,18 @@
   bindings, 53 texts/11 exact PNGs/79 native archive members verified.
   Nine proofs, clean 254 pages, 204 earlier bodies unchanged. The planned
   mathematical result set is integrated at scoped gates, not goal closure.
-- **Consolidated candidate:** the current common scientific review epoch is
+- **Earlier consolidated candidate (historical):** that review epoch was
   887fbfbe0fa4368d6b32a436615d73349b2445d8, with editorial source/PDF
   b2fda02, 257 pages and 213 proof blocks. The earlier 4a65c79 whole-review
   attempt and continuation are TERMINAL and unaccepted (incomplete coverage,
   INCONCLUSIVE/medium). Their evidence remains historical, not live work.
-- **Immediate next (main-review depth recovery):** collect LIVE UnitB
-  PID3148173 and wave-variance PID3146523. Static UnitA037-041 and covariance
-  061-065 have scoped HIGH depth adoption; construction001-009 remains
-  MEDIUM. Full main remains MEDIUM with125NF/58qualified original rows.
-  All213proof and global/source/visual/cold requirements persist; use the
-  append-only depth ledger, not report summary counts, for scoped progress.
+- **Superseded depth-recovery launch state:** old UnitB PID3148173 and
+  wave-variance PID3146523 belong to historical terminal/adjudicated lineages,
+  not live jobs to collect. Their old213proof/125NF/58qualified snapshot is
+  superseded by current sourceaf97/index7/ledger54 and the dated records above.
+  Immediate next is B.phase/B.interval preparation after constructor closure;
+  all214proofs and global/source/visual/Kimi/cold requirements remain. Use the
+  bound evidence and preserved scope, not a union of historical grade counts.
 - **New accepted uniformR E Cameron/regulator:** scientificf54e92b,
   21checks/HIGH348.303s,no requiredrepairs;21input bindings/native archive
   verified before6optional clarity notes. Actual all-model uniformR means,
@@ -13798,3 +13807,47 @@ retry/continuation. Observe this exact handle or terminalsidecars, not old Ar/pi
 jobs. Actual model/finish/fresh-prefix/publicmath/usage will be collected after
 terminal; launch alone is not a review or any local/whole/Kimi/visual/cold/goal
 acceptance. Sourceaf97/PDF096cb3 and every original contract obligation remain.
+
+
+## 2026-11-04UTC: constructor original complete, medium retained
+
+Fresh ses_e5bae948cfferBosFOTk3mtZnl ended02:15:35.502239UTC after374.596184858s,
+exit0/stop/tools0/all82bytesandGitheadunchanged. Exact two-message regular-file
+export verifies prompt6fcfb0a4/modeldeepseek-v4-pro; actual671252input/cache0,
+12575public+13084reasoning=25659combined under131072. Complete42830byte public
+JSON1191e795 and43055byte parsedpresentation79f4f0ec are the same JSONvalue,
+not two responses. ActualPASS_WITH_NOTES/medium with2OWN/2formal/1joinCHECKED,
+1given and0mechanicalissues. Root read EVERY publicfield and both full author
+batches. Actual fixed-factor Gaussian/Green estimate, occupied weighted infinite
+product, joint inner/external/order limits and physicalmixed consumer are worked;
+named upstream/source3.1 inputs keep their actualscope, not whole-parent regrades.
+
+Root annotates returned009mixed-coordinate caption: choose G_tau(dz)withWa(x-z),
+or G(t-s,x-dy)withWa(y). Nativeearlier009working/control0/source have correctform;
+d1tau1/cos/xpi gives -sin1versus+sin1 notationcheck.002parenthetical omits009 only
+for fixed-order identity; physicalmomentdesignation stillneeds009 asactualinputs/
+join/source state. Fixedunboundedmu_j andmovingboundedcos controls are different;
+008actualnormsum, not square-summabilityalone, justifiesclosure. Fixedexternala
+is a state beforeGreen/inner limits; Greenmass is a wave-kernel fact. Rawphase
+working-defect label supplies no counterexample to sourcecompactvector/tightness
+argument; no manuscriptrepair found. No allorder/sharpidentity beyond statedmixed
+expansion inferred. Correctsurroundingnative calculations/source resolve these
+unambiguousrecorderrors. ZERO factualaddenda; originalclosed withouta callmerely
+torepair a below-threshold record, no syntheticcorrectedPASS/HIGH or additionalvote.
+
+Full32member terminal288e35a9c32ffe31426ea92bd55f7b5d567dd94ec7960e4eac6f8d91eef8b038
+was regular-file/member rehashed and boundedcredentialscan clear. Exact148member
+READY88e5ee7 atb70ee7d is rehashed fromitscommittedGitblob and referencedwithout
+fullinputduplication. Raworiginal/export/events/usage/rootannotations/bothauthor
+batches preserved; private reasoningnotproof. Sourceaf97/PDF096cb3/index7/ledger54,
+all local210HIGH/010unaccepted/034189193pending/80Lean22seams remain unchanged.
+This newbounded workingdoesnotrewritetheold Ar7LIMITED or oldwholeLOW. Next
+B.phase/B.interval keepall37B/46formal subdivisions andall214/240/13; otherhigher
+family/calibrationlimits andfinalgenuineMAINHIGH/Kimi/sourcevisual/full263pixel/
+freshcold/wiki/private delivery obligations remain. GoalACTIVE, notcomplete.
+
+
+Current-frontier cleanup also removed a stale Immediate-next instruction for
+historical PID3148173/3146523 and relabeled the older887/213proof candidate.
+Their dated records remain; no old process was restarted and no acceptance was
+changed. Currentaf97/214source and constructorclose govern the next B work.
