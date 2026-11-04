@@ -1,109 +1,134 @@
-Last updated: 2026-11-04 06:54 UTC (Codex)
+Last updated: 2026-11-04 09:11 UTC (Codex)
 
 LATEST USER DIRECTION: full original goal ACTIVE; DeepSeek V4 Pro MAIN.
 Durable lessons along the way; actual constant, no forced Chen identification.
 
 ## ⏭ Next session: where to stand and what to do
 
-Inspect the EXISTING intrinsic MAIN review; do not create another job.
+Complete the next point/signed-upper readiness examination, starting from the
+NEW exact scope/reference proposal and the rough-E/point-transfer author work.
 ACTIVE ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave,
-branch research/fixed-mask-young-20261031, HEADc7ab52f9a3657d6c558da597dce2dfafa1d3aef5.
-Packet ../../../../.local/state/Le-AI-Lab/stratonovich-af97-intrinsic-core-packet-v2.
-Rootruntime ../../../../.local/state/Le-AI-Lab/stratonovich-af97-intrinsic-root-runtime-20261104.
-Actualexec60819/PID3023865/start65504471/supervisor3023815,
-SIDses_e5aaee461ffeCp5UYWElgEsK8y,started2026-11-04T06:48:37.749532UTC.
-Lastprocessstartmatch/liveverified; inspect authoritative native/exit.json or
-sameprocess/handle. An observation timeout NEVER authorizes restart.
+branch research/fixed-mask-young-20261031, HEADb0741199aee2edcf8f349fb769980fd96f46a6bf.
+Current Progress.md is authority. H intrinsic original plus ONEfactual is now
+TERMINAL/COLLECTED/CLOSED; do not poll/restart60819/66427 or seekanotherHvote.
 
-At terminal use the EXISTING rootruntime collect_native.py only if not already
-collected. It captures a full fresh2 export DIRECT to a regular file. Verify
-actual model/tools/finish/prompt/source/usage then read EVERY14proof/18formal/
-132application/join/global mathematical field and batch ALL findings before
-any at-most-ONE factual same-session completion genuinely needed. No automatic
-follow-up, confidence request, new vote or grade conjunction. Older lineages closed.
+First read ../../../../.local/state/Le-AI-Lab/stratonovich-af97-point-signed-scope-reference-proposal-20261104/
+scope-proposal.md and reference-format-proposal.md. Proposed14OWN are164,166,
+167,178,179,185–193 (F3/G11), subjectROOTscopechoice. Five TARGETmodules have25
+declarations (14target+11OWNinput); Gaussian inputmodule adds8, making33 only
+if included in the declaration inventory. All remain OWN, not inventedCONTEXT.
+JOIN-POINT-UPPER is canonical; otherjoins boundaryapplications only. Source-
+body-reference extension is only PROPOSED, no schema/validator change yet.
+It cannot clearoldH38 or turn sourcepresence into proof/fullparent credit.
+
+Read actual source and the new external stratonovich-af97-point-transfer-author-working-20261104
+and stratonovich-af97-rough-E-wave-author-working-20261104 notes when producers
+confirmheld; they were beingprepared atthischeckpoint. Their missing-equivalent
+replay is not sourceabsence. No nextpacket/preflight/seal/provider authorized.
+All214/240/13/originalmodels/actualC2/fullgates retained.
 
 ## Pre-flight checks
 
-1. ROOT humanlauncher pre-handoff27eebe4/master; ACTIVEc7ab52f clean/pushed/GW
-   equal, READYa00c816. Serialize Article refs/staging and protect foreignWIP.
-2. Source scienceaf97/all28TeX unchanged; PDF263 SHA096cb3cd4610c91d7dc8718bd56526e777cdd06ebca41651a8955bc230eb2f35.
+1. ROOTpre-handoff21d0335/master; ACTIVEb074119 clean/pushed/<HUB>-equal.
+   Horiginalcustody8ab3d30/finaladjudicatione025bf9,READYinputa00c816.
+2. Scienceaf97/all28TeX unchanged; PDF263 SHA096cb3cd4610c91d7dc8718bd56526e777cdd06ebca41651a8955bc230eb2f35.
    Index7/neutral7/ledger54/local210scopedHIGH/010unaccepted/034189193pending,
    80Lean22seams unchanged. No TeX edit; existing clean build stands.
-3. Actualworkload14OWN130–132/194–204;18same-module declarations (14OWN+S225
-   CONTEXT+S153/154/156 OWN INPUT_APPLICATION),givenS064,one132-finiteness
-   application and JOIN-POSITIVE-INTRINSIC. No full127–129credit or14thjoin.
-   All214OWN/240formal/13joins/originalmodels/actualconstant remain assigned.
-4. All95promptframes/96carrierfiles, full28source/full64author/allprimary and
-   complementary oldmath retained; all6newmathematical docs byteexact tofinalv1.
-   Prompt2622634B SHA00f37b482718d9be7c9d2a38202a3d6b6429c9d85df570bd3d79ad5caf0161a8.
-   Source-only carrier46570736e6764662b4c54263f0f6ea73bd6b45fb,96postcommit
-   blobs verified clean. Exact7 unchanged literal EOF warnings onlyexception;
-   otherwhitespacechecks/hooks ran. No input writer remains.
-5. Root fullmathematics/source/operativecode/schema/contract/registry read,
-   no source repairfound.178draft+6minimum+65report controls replayed; separate
-   actual independent-author audit40a209e3 matches123manifestmembers andsource.
-   Mechanical checks are not proof. Outside14 source clauses may be worked in
-   exact-target current audit/input-declaration math, with parent conditions;
-   no fullparent credit, externalization, placeholder or metadata premise.
-6. First completev1 failed1068297 and is preserved. Root+independentaudit prove
-   whole81suffix2409901B SHA8c9ce65b1494175a269806eb3599b52d601d9d6153561824ff81d430e71c3456.
-   Its17515wrapperbytes already baseline; only2868new14wrappers charged.
-   JSON-whitespace-only new-opcode compaction saves6062, with alltrees/strings/
-   schema/math unchanged. Actual747509FULLprompt(25973+721536cache)+116987new
-   +131072combined+16384boundary+32768system=1044720/head3856. No deletion/
-   factual-output credit, math/primary pruning or lowercap. Conditional only.
-7. Matching actual --pure diagnostics06:37:38UTC passedDeepSeekV4Pro/12false/
-   compactionfalse/shareoff/CLI1.18.31 SHA f9dab32248695e9ebd56b16a1921798fd85112cf5a69c7dfd0cabc1e17be4a11.
-   Fullsecretcfg only anonymousregularfile; safe selectedfields/hashes stored.
-   READY218member1509a53e ata00c816 exactGitblob/member rehashed afterpush/GW
-   equality BEFOREguardedcall. Source/PDF/CLI/prompt/carrier guards passed.
-8. Known old047 doubleR/factualcopycaption and040/042/constructor009 errors
-   remain separate rawcontext/ineligiblepremises; actualcorrections andnumeric
-   references/214ownerunits supplied.009 parallelphysicaldesignation via006008,
-   not numerical-rate premise. Independent051 precedes132/202/204finiteness.
-9. DurablelessonLab1fc6d26/runtime85f544a6 published/synced beforepreflight,
-   actualretrieval8/1/exactname1. Foreign4files and3686nonownedindexentries/
-   stagingintent preserved. No globalruntimewrites whilecurrentreviewlive.
-   Directional-white authorcalibration is outside95input/futureaudit-only.
-10.Kimi lastmonthly429,no restoredcapacity evidence/no probes/substitution/
-   purchases.263PNGs authorprep only; wiki exactticket lastqueued/inactive,
-   no wake/restart/requeue. NoHPC/newofficialLeanrepo/Skorohod/sibling/bib/
-   contact/publicrelease/setup/notification. Only2protectedArticlebranches;
-   earlier~3.7GiBcleanup stands,134GiBavailable atlastread.
+3. H original706.429s/stop/tools0/fresh2 and solefactual170.414s/stop/tools0/
+   fresh4/exactoriginal2prefix. SIDses_e5aaee461ffeCp5UYWElgEsK8y. Exec60819/
+   originalPID3023865 andexec66427/factualPID3247476 TERMINAL, notlive. Full
+   native/collection/exports saved, no need to recollect/re-export. Root read
+   EVERY93k original/16k factual publicfield andall4completeauthorbatches.
+4. LiteralPASS_WITH_NOTES/medium/all14OWN18formal/132application/joinCHECKED
+   remains; no new confidence/verdict in factual, no HIGH/adoption/wholevote.
+   No source repairfound. Original38failures remain:16prior+9currentrefs,
+   3current132wrong-priorstates,3inputformalparentedges,1typed203join edge,
+   4missingstatuses,2PREMIREschema/role failures. All37OWNbindingscorrect.
+5. Correctedlabels/generalellc half-vs-fullcost/D(4)notinf/C_upamplitude/finite
+   vspositivecausality/201180/SchurCt/compactgroundrouting are worked. Actual
+   fullpositiveclassbGamma calibration gives hnew=r²h(rx),Inew=rI,vnew=rv,
+   r=b^(1/(3-alpha)),socharacterizedC2 scales b^(1/(3-alpha)); zero direct.
+   This iscalibration, notactualp1/Chenidentity orfiniteGram c^(1/3) value.
+6. Fouradditiveresiduals inrootadjudication: inventedoldBfailureinventory,
+   q²->q²arrowtypo, dualvaluebelowD(4)vsminimizerABOVE4, genericBochner bound
+   ||Ct||sqrtK0vsactualEmean Cmean=M0||Ct|| AFTERT_R. Keeprawfalsewording and
+   ROOTannotations distinct; no syntheticpassingmaster/secondfactual.
+7. All17factualnumericRFC6901paths resolve. Actualfullfactualprompt796029=
+   30077uncached+765952cache, public4509/reason7954/total808492. Selected
+   conditionalplan1007997/head40579 usedpreviousTURN807771(input766005+
+   public27980+reason13786),NOTinput807771. FailedserializedUTF8plan1104171
+   preserved. No reasoningasmathevidence/pruning/lowerreserves. Actualfresh
+   purelocalpreflight07:40:23 hadPro/12false/compactionoff/shareoff; all96
+   carrier/source/PDF/prompt/originalexport held throughout. No currentnativejob.
+8. FullH READY218member1509a53e ata00c816; original49member64ec4ffd at8ab3d30;
+   final29member3de42966 ate025bf9. Root/Gitmemberhashes rechecked, bounded
+   credential scansclear. Data-only carrier46570736 remainsimmutable;95full
+   inputframes/allsource/full64author/allprimaries/all6newmath retained.
+9. Completed30G/F+21Bsupportmaps18memberd7dc0e94 atb074119 rootreadinfull.
+   OwnershipF164–169/G170–193; sixaf97changedbodies165168169174181185 stay
+   actualcurrentmath. No supplementarymap gives independentproofcredit.
+   Main source-referenceprospectiveformat mustresolveactualfrozenproofmath,
+   retaincurrent-working/globalpendingpremise rules andfullHighgates.
+10.Lablesson1fc6d26/runtime85f544a6 stands,actualranks8/1/exact1;foreign4files/
+   3686nonownedindexentries/stagingintent preserved. Kimi lastmonthly429/no
+   restoredevidence/no probes/substitution/purchases;263PNGs authorprep only.
+   Wiki exactticket lastqueued/inactive, no wake/restart/requeue. NoHPC/new
+   officialLeanrepo/Skorohod/sibling/bib/contact/publicrelease/setup/notices.
+   Two protectedArticlebranches only, earlier~3.7GiBcleanup stands.
 
 ## Concrete deliverables for the next session
 
-Collect/adjudicate the actual14OWN/18formal/oneapplication/onecanonicaljoin
-MAIN output, with real source/constant/domain/limit-order/consumer checks.
-Preserve its literal judgment and all incomplete parent conditions. Read every
-public field before any one factual batch; no new confidence-only retry.
-Then use resulting actual obligations and read-only G164–193/B024–035052–060
-support maps (authors preparing) for further substantive work. All other B/C–H,
-full214/240/13 and actual original-model C2/whole/source/visual/cold/private
-requirements remain; author maps/calibration are not independent review.
+Inspect/choose the exact next source/application scope and prospective source-
+proof-reference format after reading the actual proposals, new mathematical
+working and its sourcebindings. Current-working references must still reach
+actualcurrentdeductions; an outside-owned sourcecitation cannot supplyfull
+parentreviewcredit or conceal genuinependingpremises. No retroactiveHregrade.
+Thenbuild/audit a concrete fullscope packet only afterROOTreadiness, preserving
+actualnecessarysupport/primaries/source andqualifiedcapacity. Do not inferfit,
+routepermission orHIGH from an author proposal. OtherG/F/B/C–H andall214/240/13
+remain assigned; fullactualC2/alloriginalmodel/Kimi/visual/cold/delivery stay.
 
 ## Success criteria for the immediate next step
 
-Actual independent051 plus126/130 andfull131 classbijection ->132 finite positive
-score sets BEFORE202; actual194–198 finiteoptimization ->199/200rawrows ->201
-uniformbudget BEFORE averaging ->202positiveceiling ->203fixed-test allRscore
-limit.193+203/132 must close204 for the SAME canonical solution, covariance,
-exponent/data and variance-half action. Complete positive nonseparable smooth
-class/real fullH1/kinetic1/amplitude/zero retained; S1pos is auxiliary. Confirm
-all actual deductions and parent scopes, not labels or metadata validity.
+ActualroughE graph/domain/quarter-wave and source-scalar construction are worked,
+not assumed from a smoothsource shortcut.187 uses highSobolevpositivewidth
+Picard/measurableversion/GreenFubini;188 comparesTOTALdata onthefullcone and
+integratesSQUARES;189 takes two fixed-delta source limits BEFORElaw/scaling,
+withnegligiblepolynomialdatumcost.190–193 keeporiginalrawhalfaction,
+actualcorrelatedGaussianlaw/CMquotient anddelta-first-fixedB thenB-infinity
+on theSAMEendpoint. Fullmodels/bothphase/zero/source-firstcanon retained.
 
 ## Anti-success criteria
 
-Restartinglive60819 aftertimeout; spendingtheonefactual beforeallpublicmathread;
-strongerconfidence/newvote requests; silentlyfixingselectors/oldfalseformulas;
-assumingJSONvalidityprovesmath; hiding actual193/126/180 usedpremises; using202/
-204finiteness toprove132; arbitrary-signed form order, PSDmask order, tensor
-compactness, globaltrialgradientpool, meshdependentoptimizerbudget, noisy
-unmasked/movinglower-mask limit, droppedvariancehalf/action or forcedChen/p1
-constant. Do not omit the unique root point-transfer two-limit identification
-for fit. All95frozenframesand6mathdocs must remain unchangedwhilelive.
+ReopeningclosedH/olderlineages forconfidence; inventingnative38repairs/newHIGH;
+trusting factualoldBcounts; genericBochnerCmeanbound; weakcompactpotential
+binding/unmaskedgroundassumption; rawEpointtrace/squaredaverage/globalunmaskedE;
+constantdata inwholeL2; sourcepresence/referencevalidationasproof; OWNexternalized
+orhiddenpendingpremise; using168conservationasanecessarynormfloor where165's
+compactfloor applies; scalarrestart/independentblockcosts/diagonalB(delta);
+Γ/Rnormalization, forcedChen/p1constants, reducedmodels orJSON-formatpass as
+completion. Newreferenceformatmustbeprospective, not an unchangedHconfidence retry.
 
 ## What the previous sessions produced
+
+
+2026-11-04UTC8ab3d30/e025bf9/b074119: H original706.429s/stop/tools0/fresh2
+PASSnotesmedium/all14OWN18formal/join/132appCHECKED,38recordfailures. Root read
+all93kpublic+threefullauthorbatches, no sourcefix. Full49member64ec4ffd preserved
+original/export/solefactualprep beforeoneguardedcall. Actualsolefactual170.414s/
+stop/tools0/fresh4/exactoriginal2prefix/source96PDFunchanged; correctlabels,
+scalarellc factors,D(4)testvalue,C_upΓamp/causal/norm/sourceattributions and
+suppliedfullclassbGamma calibration.12corrections/17numericpathsallresolve,
+nonewglobalconfidence/verdict; mediumunchanged. Fournewcaption/recorderrors
+annotatedinROOT6d2ab9af, original38unchanged. Actualfactprompt30077+765952cache
+=796029/public4509/reason7954/total808492; conditionalpreviousTURNtotal807771
+notinput used1007997/head40579; failedUTF8planpreserved. Full29final3de42966
+e025bf9 root/Gitmemberrehashed/scanclear, no furtherHcalls. AllTeX/PDF/grades/
+Lean unchanged. Completed30upstreamF/G+21Bremaindermap18d7dc0e94 archivedb074119,
+source-depth gaps distinguishedfromsourceabsence. Newpoint/roughreplayand
+14-OWNpoint-signedscope/source-referenceproposal externalprepared/preparing,
+no nextpacket/provider. FullgoalACTIVE/alloriginalmodels/allgatesretained.
+
 
 
 2026-11-04UTCcd7227c/a00c816/c7ab52f: rooted14OWN/18declaration/S064/132application/
@@ -2572,43 +2597,40 @@ no fullpacket/provider/config/seal/rootready exists. Fullgoal ACTIVE.
 
 ## Repo & git state at handoff
 
-ROOTpre-handoff27eebe40302c1bde918b8a11595f84b5880d7062/master, HANDOFF-only
-in this commit. ACTIVEc7ab52f9a3657d6c558da597dce2dfafa1d3aef5/
-research/fixed-mask-young-20261031 clean/pushed/GWequal; READYa00c816;
-inputauditcd7227c/priorinterval8ae4623. Scienceaf97/PDF096cb3/index7/ledger54/
-localstates unchanged. Data-only carrier46570736; actualpacketv2 FROZEN/LIVE.
-Lab1fc6d26/runtime85f544a6 and foreignWIP/index preserved. ROOT science is older;
-allresearchbelongsinACTIVE. No new officialLeancompanion created.
+ROOTpre-handoff21d03359ba3c5daee8540226e3467324848d2258/master; HANDOFF-only
+inthiscommit. ACTIVEb0741199aee2edcf8f349fb769980fd96f46a6bf/research/fixed-mask-young-20261031,
+clean/pushed/<HUB>-equal; Hfinale025bf9/original8ab3d30/READYa00c816.
+Scienceaf97/PDF096cb3/index7/ledger54/localstates unchanged. ROOT scienceolder;
+researchbelongsinACTIVE. Lab1fc6d26/runtime85f544a6/foreignWIPpreserved. No live
+nativeprocess. Hsource-onlycarrier46570736 immutable, not an activeattempt.
 
 ## Operating notes
 
-ACTIVE Progress.md is soleworkflowauthority, ROOT the humanlauncher. Current
-liveintrinsic v2 is already built/audited/preflighted/sealed/launched, not to
-rebuild from a stale prep instruction. Allolder interval/Bphase/constructor/
-Ar/pilot/whole lineages closed. Actualrootruntime containsguardedrunner,
-collector,delivery andlocalpreflightsourcechecks. Collect only once after
-terminal; fullsessionexport DIRECTregularfile,fresh2,prompt/model/tools/finish/
-source/usage verified beforemath. Private reasoning custody/usage only.
-AtmostONEadditive factual ifconcrete need aftercompletepublicread/batching;
-neverconfidence-only, automaticretry ornewvote.
+ACTIVEProgress soleauthority; ROOT humanlauncher. H originalplusONEfactual and
+allolderlineages closed. Fullactualexports/rawpublic/rootadjudications are in
+reviews/2026-11-04-main-af97-intrinsic/; private reasoning custody/usage only.
+Neverreruncollectors overwriteexports orrestartoldhandles. No newconfidence
+vote/secondfactual. Positive scopedmathatmedium is notHIGH/completion.
 
-Newsourceinput clauses outside14 can be checked at use in exacttarget current
-mathaudits/inputformal clauses, with full-parentconditions retained. This is
-not externalizingOWN proofs or inheriting oldgrades. Fullsource/maps/95frames
-are frozen; independent root/authorchecks establishidentitynottruth.
+Currentnewsource-referenceproposal isunimplemented. Itcanacceptgenuineoutside
+source-proof-body mathematics onlywithfrozenpath/target/body/module/interval,
+actualconsumerhypothesiswork andparentconditions; CURRENT stillactualcurrent
+working. No fabricatedproofcredit, oldH38clearance, sourcepresence=>truth or
+threshold/modelweakening. Readwholeproposal beforechoosing. No nextdata
+carrier/prompt/schema/config/native authorizedatthischeckpoint.
 
 Wiki ticket tk-20261103-151055-codex-stratonovich-af97-status remains lastqueued,
-not maintained, writerinactive. No force/wake/restart/requeue/directsixrepowrites.
+notmaintained/writerinactive. No force/wake/restart/requeue/directsixrepowrite.
 All.bib/sourcePDFs/siblingsreadonly. No contacts/Telegram/publicrelease/HPC/
-officialLeanrepo/setup. Future setupAgent21 viaactualamsg lookup. Lean-pkg0.24
-FYI requestednoaction. Do notmodifyglobalruntime whilecurrentreviewlive.
+officialLeanrepo/setup. Future system/dotfile/nvim requestsAgent21 viaactual
+amsg lookup. Lean-pkg0.24FYI requestednoaction. ProtectforeignLabWIP/index.
 
 ## Risks to monitor
 
-Actualintrinsicreviewresult unknown whilelive. No genuinewholeMAINHIGH/Kimi/
-sourcepixel/full263visual/freshcold closure. Currentinputfit/metadata/65controls
-arenotproof; actual returnedmathmayremainLIMITED orcontainerrors. Keepallfull
-parentclauses andscopequalifications. Local210scopedHIGH andprior mediumreports
-are not a completionpercentage orwholecertificate. FullactualC2 proof/source
-application andall214/240/13 stillrequired. No reliablecompletionETA. GoalACTIVE,
-notcomplete/notblocked whilecoreworkavailable; no originalmodel weakening.
+No genuinewholeMAINHIGH/Kimi/sourcepixel/full263visual/freshcoldclosure. H14math
+andcalibration coherentunderstatedinputs, butmedium/38recordfailures andungraded
+fullparents remain. Typedrefs/typechecksnotproof; full214/240/13 andactual
+alloriginalmodelC2 stillrequired. Supplementary workinggapsarenotsourceomissions;
+newworking/prospectiveformatsnotindependentreviews. No reliablecompletionETA.
+GoalACTIVE, neithercomplete norblockedwhilecoreworkavailable. No narrowingto
+convenientmodels/scopeorinterchangingstatic/noise/time limits foracceptance.
