@@ -44,10 +44,10 @@ messages, publication, HPC or official Lean-companion creation.
 
 ## Current Subaim
 
-- [ ] Bind isolated native preparation to independently checked committed D18
-  DATA, preserving its full joined applications and C qualifications. Retain
-  the separately committed compact-reader prototype with its full technical
-  companion and pending independent correspondence/visual/final gates.
+- [ ] Complete one fresh actual DeepSeek D review after synchronized delivery
+  of the checked native preflight; preserve full joined applications and C
+  qualifications. Retain the compact reader and full technical companion with
+  pending independent correspondence/visual/final gates.
 
 ## What's Done
 
@@ -80,6 +80,26 @@ Dashboard/state and round-accounting repair do not clear any of these gates.
   the complete technical companion and remains subject to independent review.
 
 ## Current state
+
+- **D actual native preparation and pure preflight checked (2026-11-05):**
+  Root read the complete final independent code/framing audit. All 80 original
+  payloads, held carrier, source28/PDF and 177 authorities pass the actual
+  snapshot; independent 41+14 pure controls retain strict extra-step refusal.
+  Real pure startup passed with the newly bound D config/agent fingerprint,
+  all12 tools denied, MCP0, instructions[]/references{}, share/compaction off.
+  Root checked the exact launch predicate, date, context pins and logical link.
+  Conditional710759/1048576 includes full hard reserves and unchanged515
+  conditional template margin; it is not captured HTTP or guaranteed admission.
+  Native processor reentry remains possible; no invented disable flag or C
+  eligibility waiver. A generic operator home/.opencode-absence check refused
+  because that is the pinned CLI installation; actual audited carrier absences
+  and global link/config pins passed. No context/config files were changed.
+  Exact49-member preflight custody: reviews/2026-11-05-unitD-main-preflight/.
+  This checkpoint contains no RUN authority or generation. Next: verify private
+  committed/pushed/<HUB>-equal delivery, then one fresh D MAIN invocation.
+  Full18 deductions/19roles and BOTH actual source/Young joins retain unresolved
+  outside-clause conditions; no parent vote/availability grants joined credit.
+  Scienceaf97/source28/technical263PDF/old grades and all remaining gates stay.
 
 - **Actual D18/19 review DATA independently checked; preparation next
   (2026-11-05):** Root read complete18715-byte task/808-byte agent, proposal/
