@@ -1,12 +1,18 @@
 # Article-Stratonovich-HAM-Second-Moment
 
+**Current reading copy:** [research notes, 263 pages](../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave/notes/notes_stratonovich_ham_second_moment.pdf),
+built November 3, 2026. The [110-page PDF stored here](notes/notes_stratonovich_ham_second_moment.pdf)
+is the older October 29 snapshot. It is not a shortened edition of the current
+notes. A content-reduction audit is underway against the 263-page baseline;
+the scientific source and current PDF have not been cut.
+
 The second moment of the Stratonovich hyperbolic Anderson model with noise
 fractional in time: an upper bound at the correct scale
 t^{(4−α−α₀)/(3−α)} and the sharp p = 2 constant, building on X. Chen,
 *Time-dependency in hyperbolic Anderson models: Stratonovich regime*
 (author version, submitted to AAP; arXiv:2510.01412).
 
-**Active research status (2026-11-04):** the research checkout contains a
+**Active research status (2026-11-05):** the research checkout contains a
 written correct-scale upper bound and a fully specified positive-control
 variational formula for the original second-moment limit. Every original
 admissible dimension/covariance, covariance amplitude, kinetic coefficient one,
@@ -21,10 +27,9 @@ and [research README](../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask
 record the 28-file scientific source `af97ae4` and clean 263-page PDF. Use that
 checkout for current research and builds.
 
-The latest DeepSeek V4 Pro review and full mathematical adjudication are closed
-at INCONCLUSIVE/medium. The source was not changed and no new manuscript gap
-was established under the named input contracts; the returned reconstruction
-and verification are incomplete. Historical scoped reviews do not establish
+Whole-argument acceptance remains open. Earlier whole/depth reviews returned
+INCONCLUSIVE; later scoped A/B/C reports and their exact qualifications are
+recorded in the active workflow authority above. Scoped reviews do not establish
 whole-argument acceptance. Full 214-proof, 240-declaration, 13-join review,
 required Kimi/source/visual checks, fresh final cold read and final private
 delivery remain open. No completion or circulation clearance is claimed.
