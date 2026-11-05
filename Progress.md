@@ -6,6 +6,32 @@
 
 ## Current state
 
+- **Mixed/all-order and uniform phase-product deductions checked
+  (2026-11-04):** Root read complete002/008 and180–184 working notes, both
+  prerequisite/consumer tables and the actual source. The width-uniform
+  factorial bound is derived before any infinite moment identity; the
+  absolute double expectation series, unequal/self/empty pairings and
+  finite-prefix/uniform-tail square UI are explicit. Uniform mean products
+  retain scalar-time compactness, the tensor norm bound, full signed E
+  controls, the tiny true final cell, polynomial bad-block threshold and
+  delta/K_res/B limit order. The separate uniform author crosscheck agrees
+  under the exposed OWN clauses. The separate005/006 author crosscheck is
+  also complete and agrees; Root read its entire report. No concrete
+  assigned gap was located, and no full-parent or model-review credit is
+  inferred. The nonseparable-control wording is qualified additively as
+  nonfactorized tensors in a separable Hilbert space; originals unchanged.
+  Complete custody/readback is at
+  reviews/2026-11-04-mixed-uniform-reconstruction/.
+  Source/PDF and all scientific grades remain unchanged. Actual MAIN remains
+  INCONCLUSIVE/core-medium/whole-low. Next: a coherent foundational unit-A
+  MAIN dependency/coverage proposal, and explicit036/049–051 actual upper
+  reconstruction. The latter must follow its finite-interval coefficient/
+  Fock route; a Root dispatch summary that mentioned later Gaussian-tube
+  machinery was corrected against the actual source. No new model call or
+  whole-review composition is authorized by these author records. All
+  original214/240/13/model, MAIN HIGH/Kimi/source-pixel/visual/fresh-cold and
+  final delivery gates remain OPEN; the original goal is ACTIVE.
+
 - **Actual-noise driver and fixed-order constructions reconstructed
   (2026-11-04):** The frozen working notes explicitly derive005/006 spatial
   Wick measures and joint fixed-order limits, and088/091/092/093 actual
