@@ -80,6 +80,23 @@ Dashboard/state and round-accounting repair do not clear any of these gates.
 
 ## Current state
 
+- **Shorter-notes audit retained; no page reduction applied (2026-11-05):**
+  Root independently checked PDF metadata: ACTIVE263pages/November3 versus
+  ROOT110pages/October29, distinct hashes. The110-page launcher is an old
+  snapshot, not a cut-down current edition. Root master2579047 links the
+  current PDF clearly and is pushed/GW-equal. Root read the complete12017-byte
+  compression audit;44sections/28sources and semantic dependencies are mapped.
+  64 full interior current pages could move as comparison/calibration/derived
+  details, but relocation is NOT net total-page reduction and leaves about200
+  current-page equivalents before summaries/reflow. No100-page total is
+  promised.137→138→142 and implicit214/076/110/111 uses are protected; label
+  reachability is not permission to delete proofs. Exact complete audit:
+  reviews/2026-11-05-notes-compression-audit/.
+  Format preference remains pending; all complete proofs/original model/
+  214/240/13 and required independent gates stay in scope. Every future TeX
+  change and rebuilt companion PDF must land together after the build gate.
+  No source/PDF/review binding is changed by this editorial plan. Goal ACTIVE.
+
 - **C source/transport adjudication complete; qualifications preserved
   (2026-11-05):** Root read all24671 public bytes, the complete12433-byte
   math author report/all8 findings and complete9621-byte transport audit.
