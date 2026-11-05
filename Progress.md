@@ -44,10 +44,10 @@ messages, publication, HPC or official Lean-companion creation.
 
 ## Current Subaim
 
-- [ ] Complete independent E native code/framing audit, then Root fresh pure
-  preflight and one actual E MAIN review. F DATA-only construction and H
-  source-only proposal are active; G scope is selected. Keep D MEDIUM and all
-  unresolved joins, paired reader and final independent gates unchanged.
+- [ ] Adopt checked F DATA-v2 and G DATA as DATA-only, then prepare actual F
+  MAIN. Correct the H task scaling claim in a preserved successor before its
+  DATA approval. Retain E scoped HIGH/conditional joins/collector INCOMPLETE,
+  D MEDIUM, paired reader and all remaining independent/final gates.
 
 ## What's Done
 
@@ -80,6 +80,44 @@ Dashboard/state and round-accounting repair do not clear any of these gates.
   the complete technical companion and remains subject to independent review.
 
 ## Current state
+
+- **Actual E MAIN terminal/source/transport adjudication preserved
+  (2026-11-05):** ONEexplicitinvocation ended1037.481713465s/CLI0/stop,
+  fresh2messages/tools0; TWOdistinctstepstarts mean collectorINCOMPLETE remains.
+  Root verified exactuser/model/reviewer/parent/title/directory/cwd/root,
+  heldcleanHEADb75194c,all209authorities/source28/PDF/carrier/code/reader.
+  FULLREAD15284publicbytes/127logicallines/noLFEOF; firstpublic0,final15284.
+  NativeHIGH is scopedEinternal28; BOTH joins remain conditional on unworked
+  OWN, notwholeacceptance. Root read final15196-byteauthorreport and upheld
+  fourpublic errors: F/G/H/F142 bodies WEREsupplied; sine needs t sqrt(h);
+  051ownerB/093ownerC; C23comparison isnotEantecedent. No newsourcegap found
+  under actualcontracts. Publicbrevity is actualdepth, not inventedunreadwork;
+  author/sourceavailability doesnotretroactivelyexpandnativeproofs.
+  Allowlistedlogs show2same-runLLM.stream calls/1process/2looprecords; pinned
+  retry/reset sourceunchanged. Exacttrigger/HTTPcount/firstframing/usageunknown.
+  Completedstepinput49+cache657024=657073,out4469+reason18501=22970,total680043
+  is NOTaggregateattemptusage. Firstreason99805B/second58126B metadataonly;
+  contents never math.515conditionalmargin unchanged, noeligibilitywaiver,
+  newgrade,retry/supplement or harnesschange. Source/Git hold released after
+  terminalinvariance; EfenceSPENT. Completecustody:
+  reviews/2026-11-05-unitE-main-native-adjudication/.
+  Alloriginal214/240/13/model/actualC2/finalgates remain OPEN. Goal ACTIVE.
+
+- **Review-task fidelity corrections before future calls (2026-11-05):**
+  F v1 actual1852-checkaudit found twoambiguous sigma/gamma captions; source
+  permits ALLreal sigma and requires gamma>0. NEWFv2 changes onlythose two
+  captions(+36bytes/+10tokens); all132scientificpayloads/agent remainliteral.
+  Separatepostimage514checks/4negativecontrols pass; Rootfulldiff/auditadoption
+  pending. Gactual139-origin/24proof25roleDATAaudit is HELD, Rootfullreportread
+  pending. Hactual156-origin/20proof24roleDATA mechanicallymatches, but Root's
+  unqualifiedfinite-Gramcube-rootinstruction was false atfixedpositive
+  thresholds. Source194–198 itselfdoesNOTassertthatlaw. Correctc>0law is
+  F(cC,c^(2/3)b)=c^(1/3)F(C,b); zero-thresholdcase givescube-root. Theexact
+  ell1/10,b4,C1value0 versusC256,phi1positive counterexample isretained.
+  HsemanticDATAapproval isWITHHELDpendingnewexplicitcorrectedtask/postimage;
+  nooriginals/sourceedited. Durablelesson: nameALLfixed/scaledparameters;
+  a zero-thresholdcalibration doesnotjustifyfixedpositive-thresholdscaling.
+  Original covarianceamplitude lawandconstant/kinetic/action goalareunchanged.
 
 - **E independent code audit and actual pure preflight pass (2026-11-05):**
   Root read full10040-byte final independent audit; all17+9 heldmembers,
