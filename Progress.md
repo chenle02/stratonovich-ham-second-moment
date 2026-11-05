@@ -44,10 +44,11 @@ messages, publication, HPC or official Lean-companion creation.
 
 ## Current Subaim
 
-- [ ] Complete the independent C33/35 proposal/dependency/retention audit,
-  then select and verify the actual C review data. Preserve A/B's qualified
-  native confidence and every whole-goal gate; proposal/data checks are not
-  mathematical acceptance. Reconcile workflow bookkeeping alongside this work.
+- [ ] Complete the independent audit of the actual assembled C33/35 review
+  input and its joined count, then bind guarded native preparation to the
+  approved committed data. The proposal audit and exact70-file scientific
+  selection are complete. Preserve A/B's qualified confidence and all final
+  gates; data checks are not mathematical acceptance.
 
 ## What's Done
 
@@ -67,6 +68,30 @@ fresh final cold read; final clean delivery, wiki provenance and handoff.
 Dashboard/state and round-accounting repair do not clear any of these gates.
 
 ## Current state
+
+- **Bounded workflow audit adjudicated; actual C data audit active
+  (2026-11-05):** Root read the full15221-byte workflow report and all11
+  findings. Substantive proof/falsification/source/build/review/adjudication
+  discipline is evidenced at inspected scopes; strict full canonical
+  compliance is not claimed. Historical Oct31 debt/routing error and actual
+  recovery remain separate; postR4 cadence accounting stays UNKNOWN. No new
+  live three-cycle stop was established. Record scientific deltas/due actual
+  review before material new proof/repair. Exact custody and dispositions:
+  reviews/2026-11-05-paper-dev-workflow-audit/. Missing agents/telemetry and
+  final honesty remain explicit; old readiness table is historical.
+  The independent C proposal audit passed260 source/retention/count checks;
+  Root selected all69 full proposed origins plus the full focused variance
+  author report,70 total, with all5 precision findings adjudicated. Actual
+  C input now exists at1804522 bytes with33OWN/35roles and full28/214/240/13
+  context; producer isolated-positive/readback and3 fidelity negatives pass.
+  Actual516885user+180agent+full180224 reserves=697289 before UNKNOWN framing.
+  A different author is independently checking the complete actual DATA;
+  no runtime/admission or scientific grade is granted. Root read all4 C
+  modules through EOF; that author readback is not independent MAIN coverage.
+  D18's complete source/ordinary/Young/observable proposal is frozen and its
+  independent scope/retention audit is active. Source/PDF/old grades unchanged.
+  All original model/actualC2 and required remaining MAIN/Kimi/sourcepixels/
+  fullvisual/freshcold/private-delivery gates stay OPEN. Goal ACTIVE.
 
 - **Dashboard metadata repaired; workflow accounting still under audit
   (2026-11-05):** Both launcher and active `paper-dev-dash --once` originally
@@ -2111,6 +2136,11 @@ clearance. No Skorohod result was developed and no Lean package was created.
   Round 2, Lean L1 and companion creation remain unopened.
 
 ## Review readiness
+
+Historical snapshot from the early numbered rounds, retained verbatim below.
+It is not the current reviewer roster, run count, Lean count or completion
+state. The canonical summary and newest current-state entries above govern;
+later dated source/review/cadence evidence and open final gates remain separate.
 
 | Layer | Runs | Status | Scope |
 |---|---:|---|---|
