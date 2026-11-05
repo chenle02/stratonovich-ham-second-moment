@@ -6,6 +6,29 @@
 
 ## Current state
 
+- **B MAIN author/root adjudication complete; confidence unchanged
+  (2026-11-05):** Root read the full core/static/upper reports and all18
+  findings, with the original27557-byte public record and exact source
+  comparisons.043's printed first dyadic exponent must be1-alpha0, not
+  1-alpha;051's finite-J covariance domination is false. The source already
+  uses the correct exponent and K_infinity with positive fixed-N J-limit.
+  No concrete manuscript gap was located under the named current inputs.
+  All findings, controls and complete immutable author/root custody are at
+  reviews/2026-11-05-unitB-main-adjudication/. Scope/local-parameter/nonzero
+  guards, outside-A assumed-versus-checked ambiguity,009 parallel physical
+  designation and unsupported outside white-work credit remain explicit.
+  Author source checks do not create extra native reconstruction. Normal
+  external theorem imports do not require book reproof. Literal HIGH remains
+  internal B UNDERINPUTS; unconditional B remains MEDIUM. No unqualified B
+  HIGH, whole214/240/13 composition, retry or supplement is granted.
+  Source28/PDF/old grades unchanged. Next: independently audit the frozen
+  C33/35 DATA/dependency/retention proposal and assemble only the selected
+  complete C science after that audit. Root has read all current075–084
+  Gaussian/compact proofs and085–093 same-W driver/path proofs; that author
+  readback is not independent MAIN acceptance. All original model/actualC2/
+  remainingMAIN/Kimi/sourcepixels/fullvisual/freshcold/private-delivery gates
+  remain OPEN. Goal ACTIVE; manuscript conclusion remains provisional.
+
 - **Actual B MAIN returned; qualified HIGH and adjudication active
   (2026-11-04):** One actualDeepSeekV4Pro37-proof/48-role job completed
   641.688949894s, CLI0/stop/fresh2/tools0. Root verified actual user/assistant
