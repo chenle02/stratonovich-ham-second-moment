@@ -44,10 +44,10 @@ messages, publication, HPC or official Lean-companion creation.
 
 ## Current Subaim
 
-- [ ] Complete F/G isolated native preparation and independent code/framing
-  checks, then their actual MAIN reviews on frozen current source. Verify H
-  DATA-v2 threshold-scaling correction before its DATA approval. Retain E
-  scoped HIGH/conditional joins/collector INCOMPLETE and all final gates.
+- [ ] Run one fresh actual DeepSeek MAIN call for each F/G/H block after
+  synchronized common delivery, holding source and metadata through all three
+  terminal readbacks. Adjudicate actual mathematics/reading/transport limits;
+  all whole MAIN/Kimi/source/visual/cold/private-delivery gates remain open.
 
 ## What's Done
 
@@ -80,6 +80,32 @@ Dashboard/state and round-accounting repair do not clear any of these gates.
   the complete technical companion and remains subject to independent review.
 
 ## Current state
+
+- **F/G/H independent code audits and fresh actual preflights pass
+  (2026-11-05):** Root FULLREAD finalF9784/G7980/H9804 code/framing reports,
+  completeguarddiffs/proposals and all retained qualifications. Generic3programs
+  byte-exactE; no collector/cache/export/once/reentryrule altered. Correctcurrent
+  C1archives selectFv2/Gv1/Hv2, includinghard-pinnedbothHmembersv2 and original
+  H1semanticnonapproval. All70/47/88archive members,132/139/158origins, source28/
+  PDF/carrier3blobs/bundles and actualminima passactualpositivechecks. F55+27,
+  G40+26,H49+27purecontrols areboundedcodeevidence, notmathematicalvotes.
+  Rootactual snapshots/capacity bind253F/235G/297H authorities. REALfreshpure
+  agent/configdiagnostics and run-safe/context/link/date predicates passall3.
+  KnownF429incl200agent,G436incl207,H447incl218 give229nonagent+UNCHANGED515=
+  744other. Fullconditionalplans F897462/head151114,G912696/head135880,
+  H988369/head60207 retainall180224hardreserves. No capturedHTTP/futureadmission
+  guarantee; actualusage mustpass. Source/reader/PDF/oldgrades unchanged.
+  Threeexactscopequalifications remain: F30OWN/31roles/onefull+sixpartial;
+  G24/25/threefull/Hdownstreamtrue; H20/24/context4/canonical23/twofull.
+  Completeindependentactualpreflightcustody:
+  reviews/2026-11-05-unitF-main-preflight/,
+  reviews/2026-11-05-unitG-main-preflight/,
+  reviews/2026-11-05-unitH-main-preflight/.
+  Thischeckpoint contains NOgeneration/RUNauthority. NextcommonprivateHEAD/
+  archiveparity and sourcehold, thenONEfreshcallEACH, independently scoped;
+  no parentvote/wholepromotion, no automaticretry/supplement. Neededoutside
+  OWN remain actualwork/conditions; all214/240/13/originalactualC2 and final
+  independentgates unchanged. GoalACTIVE.
 
 - **H corrected DATA-v2 adopted ONLY as current DATA (2026-11-05):** Root
   read complete37060-byte task/883-byte agent/final9518-byte postimageaudit
