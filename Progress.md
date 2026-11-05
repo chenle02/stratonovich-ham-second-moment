@@ -44,10 +44,10 @@ messages, publication, HPC or official Lean-companion creation.
 
 ## Current Subaim
 
-- [ ] Reconcile the whole scientific minimum at calculation/primary-use level
-  and select a genuine complete-argument MAIN assignment without dropping
-  unique mathematics or inherited conditions. F/G/H adjudication is preserved;
-  Kimi/source/visual/fresh-cold/final private-delivery gates remain open.
+- [ ] Prepare actual coupled deductions for the13 ThemeII joins, beginning
+  original-source/Young, independent-upper and fixed-control-lower applications.
+  The six author dossiers are preparation, not six approved calls or whole
+  acceptance. Scientific minimum/input selection and all final gates stay open.
 
 ## What's Done
 
@@ -80,6 +80,34 @@ Dashboard/state and round-accounting repair do not clear any of these gates.
   the complete technical companion and remains subject to independent review.
 
 ## Current state
+
+- **ThemeII author preparation selected; no review promotion (2026-11-05):**
+  Root FULLREAD seven capacity/counterpart narratives, all13 canonical join
+  records and the final34158-byte plan. All54 previously unmatched selected
+  groups now have author reconciliation, but no field/file omission or whole
+  scientific minimum/input/fit is selected. Exact same-claim alternatives do
+  not erase unique controls, false/correct pairs or pending applications.
+  CanonicalI=A–H/all214OWN/240roles,II=13joins,III=genuine whole judgment.
+  Six scientific author dossiers retain original owners; no six-call or
+  provider authorization. Actual II.1/II.2/II.3 source-only preparation is
+  assigned; cross-owner OWN clauses are rederived at use or stay conditional.
+  Root additionally writes051+126→132→136/137→138 funding, with explicit
+  R0 ceiling linear in original covariance amplitude. A bounded separate author
+  check finds its scalar/algebra/application order correct, without accepting
+  full051/126/F/H parents. No final193/204 finances this earlier construction.
+  Durable lessons: source-visible/reconstructed/accepted differ; semantic
+  claim equivalence is not whole mixed-file redundancy; joined counts differ
+  from sums; actual same-object/source-before-tilt applications stay required.
+  Full119member/4061550-byte custody is in
+  reviews/2026-11-05-themeII-readiness/, archive765472f6, compressed710942bytes;
+  no extra repository/PDF copy. Wrapper-onlyH2 prototype saves actual9803joined
+  tokens; its independent audit has arrived separately and Root disposition/
+  adoption is still pending. This does not establish WHOLE fit or clearance.
+  Latest reader9895781 and technicalaf97 both contain changedTeX+rebuiltPDF;
+  every futureTeX change keeps that atomic pairing. This metadata checkpoint
+  leaves all28 scienceTeX/PDF263, acceptedgrades and80localLean facts unchanged;
+  integratedMAIN/actualKimi/sourcepixels/fullvisual/reader/cold/wiki/finaldelivery
+  gates remain open.
 
 - **Root F/G/H adjudication complete; source and outcomes unchanged
   (2026-11-05):** FULLREAD completeauthorF17316/G15459/H18952 plus allactual
