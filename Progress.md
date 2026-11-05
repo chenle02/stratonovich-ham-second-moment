@@ -76,7 +76,8 @@ Dashboard/state and round-accounting repair do not clear any of these gates.
   between a short main text plus companion and one self-contained PDF is pending.
 - Le,2026-11-05: every TeX change must be committed together with its rebuilt
   companion PDF, after the existing zero-error/undefined-reference/citation/
-  overfull-box gate. No TeX/PDF shortening has yet been applied.
+  overfull-box gate. The compact-reader prototype described below preserves
+  the complete technical companion and remains subject to independent review.
 
 ## Current state
 
