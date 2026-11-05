@@ -44,11 +44,11 @@ messages, publication, HPC or official Lean-companion creation.
 
 ## Current Subaim
 
-- [ ] Bind independently checked isolated native preparation to the approved
-  committed C33/35 DATA, verify effective framing/code/private delivery, then
-  release one fresh DeepSeek V4 Pro C MAIN. Exact70-file scientific selection
-  and independent full actual-data audit are complete. Preserve A/B's
-  qualified confidence and all final gates; data is not proof acceptance.
+- [ ] Release and collect one fresh DeepSeek V4 Pro C MAIN after private
+  preflight-checkpoint delivery and immediate caller invariance checks.
+  Exact C33/35 DATA, independent code/framing audit and actual pure preflight
+  pass. Preserve original source, A/B's qualified confidence and all final
+  gates; transport readiness is not mathematical acceptance.
 
 ## What's Done
 
@@ -68,6 +68,28 @@ fresh final cold read; final clean delivery, wiki provenance and handoff.
 Dashboard/state and round-accounting repair do not clear any of these gates.
 
 ## Current state
+
+- **Actual C MAIN pure preflight passes; private release pending
+  (2026-11-05):** C1 input5ef7dae is bound to the minimal audited B-to-C
+  derivative and actual Root DATA minimum. Root read the complete independent
+  code/framing report, full four programs/diff and startup/count evidence.
+  37 producer and16 targeted pure safeguards and the actual snapshot pass.
+  Root's actual positive snapshot/capacity check and pure runtime preflight
+  pass with149 held authorities, source28/PDF/C1 and exact3-file carrier.
+  Actual effective reviewer is DeepSeek V4 Pro with exactC850-byte agent,
+  12 tools denied/MCP0/instructions[]/refs{}, shareoff/compactionoff. New C
+  permission prefix is independently bound, not falsely identical to B.
+  Known409includes180agent; other229+unchangedconditional515=744; full
+  conditional total698033/head350543 retains all hard reserves. No exact
+  future HTTP/template or scientific guarantee is inferred. Complete custody:
+  reviews/2026-11-05-unitC-main-preflight/.
+  At this checkpoint Root PLAN/PREFLIGHT exist; RUN authority, READY delivery,
+  native output and C fence are absent. Next: private push/GW equality,
+  immediate operator guards and ONE fresh C MAIN. Hold all Git writers
+  through its terminal invariance check; no retry/supplement is approved.
+  Source/PDF/old grades unchanged. Original all-model actualC2/214/240/13,
+  remainingMAIN/Kimi/sourcepixels/fullvisual/freshcold/finaldelivery stay OPEN.
+  Goal ACTIVE; manuscript conclusion remains provisional.
 
 - **Actual C33/35 MAIN DATA independently checked; native preparation next
   (2026-11-05):** Root read complete task/agent/assembler, the full independent
