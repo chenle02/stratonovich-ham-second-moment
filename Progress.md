@@ -44,11 +44,10 @@ messages, publication, HPC or official Lean-companion creation.
 
 ## Current Subaim
 
-- [ ] Adjudicate the actual C public mathematics and extra-start transport
-  anomaly, preserving its native high confidence and collector-INCOMPLETE
-  qualification. Then continue the complete D source/Young/observable scope
-  from its independently audited proposal. No retry or automatic promotion;
-  all original whole-goal requirements remain.
+- [ ] Select the complete D source/ordinary/Young/observable review data from
+  its independently audited proposal, preserving C's exact mathematical and
+  transport qualifications. Continue the proof-preserving editorial shortening
+  audit in parallel. No retry or automatic promotion; full original scope stays.
 
 ## What's Done
 
@@ -67,7 +66,44 @@ MAIN acceptance; required Kimi-K3 review; source pixels and full visual check;
 fresh final cold read; final clean delivery, wiki provenance and handoff.
 Dashboard/state and round-accounting repair do not clear any of these gates.
 
+## Human Notes
+
+- Le,2026-11-05: shorter notes are preferred if possible. The110-page launcher
+  PDF is an older October29 snapshot; the current research PDF is263pages,
+  built November3. No263-to110 reduction occurred. An editorial audit must
+  distinguish shorter main exposition from total technical pages and retain
+  the complete proofs/original model/verification obligations. Format preference
+  between a short main text plus companion and one self-contained PDF is pending.
+- Le,2026-11-05: every TeX change must be committed together with its rebuilt
+  companion PDF, after the existing zero-error/undefined-reference/citation/
+  overfull-box gate. No TeX/PDF shortening has yet been applied.
+
 ## Current state
+
+- **C source/transport adjudication complete; qualifications preserved
+  (2026-11-05):** Root read all24671 public bytes, the complete12433-byte
+  math author report/all8 findings and complete9621-byte transport audit.
+  Source has correct Peetre power, sufficient Schatten criterion/gamma>0,
+  exact even/real domains and earlier compact/localization dependencies.
+  Public071's abbreviated kernel/adjoint/time calculation is not the full
+  displayed raw/auxiliary/Fourier proof; source/author availability is not
+  extra native working. No new manuscript gap was demonstrated under actual
+  contracts. Exact full dispositions/custody:
+  reviews/2026-11-05-unitC-main-adjudication/.
+  Safe logs evidence TWO same-session/model native LLM streams, one outer
+  loop/process, and a source-supported retry/reset path. Exact trigger/HTTP
+  count/first framing/usage remain UNKNOWN. One exact user/assistant/final
+  public assessment is verified; native scoped high stays, collectorINCOMPLETE
+  stays. Completed-step537667 is not aggregate attempt usage. No waiver,
+  patched report/harness, confidence change or retry/supplement is granted.
+  Old grades/source28/PDF unchanged. Next D18 proposal has passed336 independent
+  identity/retention/count checks; Root read the complete proposal/audit and
+  will select full relevant math plus3 focused additions before actual DATA.
+  E28 source-only proposal is frozen for later independent audit, with all
+  required current C/A/D/B clauses explicit and no new acceptance. Le's shorter
+  notes preference is recorded above; editorial audit runs with no source cuts.
+  Original all-model actualC2/214/240/13 and all remaining MAIN/Kimi/sourcepixels/
+  fullvisual/freshcold/finalhonesty/private-delivery gates stay OPEN. Goal ACTIVE.
 
 - **Actual C MAIN returned high scoped mathematics; collector INCOMPLETE
   (2026-11-05):** One explicit CLI invocation ended788.943459978s, CLI0/stop,
