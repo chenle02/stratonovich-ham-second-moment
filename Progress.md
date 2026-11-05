@@ -6,6 +6,27 @@
 
 ## Current state
 
+- **Actual B MAIN returned; qualified HIGH and adjudication active
+  (2026-11-04):** One actualDeepSeekV4Pro37-proof/48-role job completed
+  641.688949894s, CLI0/stop/fresh2/tools0. Root verified actual user/assistant
+  agent/model, title/shareoff/session-parent, export directory and cwd/root.
+  SourceHEAD205a13c/all138 authorities,28 modules/PDF/code/C1/carrier held.
+  Actualinput726685+public8431+reason38836=773952FULLTURN/cache0; bounds pass.
+  Known377 plus83 observed extra explains nonuser460; conditional515 stays.
+  Root read all27557 bytes/228 logical lines, including final unterminated line.
+  Exact original report/custody: reviews/2026-11-04-unitB-main-native/.
+  Literal native HIGH is internal B validity UNDERINPUTS; MEDIUM applies to
+  unconditional B acceptance with outside-A clauses/external statements left
+  conditional. No unqualified B/whole HIGH or automatic composition. Legitimate
+  external imports do not become OWN/book-reproof debt. Full core/static/upper
+  author/root adjudications are active, including finite-J comparison, dyadic
+  exponent, standalone-scope and boundary-working questions. Source/PDF/old
+  grades unchanged; no source gap declared from report wording alone.
+  Git hold released after terminal invariance check. Fresh fence spent; no
+  retry/supplement approved. Original model/C2/214/240/13/wholeMAIN/Kimi/pixels/
+  visual/freshcold/finaldelivery remain OPEN. C33 proposal is frozen read-only,
+  still a DATA proposal, not a review. Goal ACTIVE.
+
 - **Actual B37/48 preflight passes; private release pending (2026-11-04):**
   Input765b136, minimal guarded A→B derivative and exact actual Root minimum/
   count/frame/carrier bindings are frozen. Root read the complete independent
