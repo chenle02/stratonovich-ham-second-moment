@@ -44,10 +44,10 @@ messages, publication, HPC or official Lean-companion creation.
 
 ## Current Subaim
 
-- [ ] Select the complete D source/ordinary/Young/observable review data from
-  its independently audited proposal, preserving C's exact mathematical and
-  transport qualifications. Continue the proof-preserving editorial shortening
-  audit in parallel. No retry or automatic promotion; full original scope stays.
+- [ ] Bind isolated native preparation to independently checked committed D18
+  DATA, preserving its full joined applications and C qualifications. Retain
+  the separately committed compact-reader prototype with its full technical
+  companion and pending independent correspondence/visual/final gates.
 
 ## What's Done
 
@@ -79,6 +79,38 @@ Dashboard/state and round-accounting repair do not clear any of these gates.
   overfull-box gate. No TeX/PDF shortening has yet been applied.
 
 ## Current state
+
+- **Actual D18/19 review DATA independently checked; preparation next
+  (2026-11-05):** Root read complete18715-byte task/808-byte agent, proposal/
+  independent proposal audit and complete8047-byte actual-data audit. The
+  independent reader reconstructs every1805833 joined byte from80 FULL
+  originals/currentnav/framing.1604 principal checks and exact nine-clause
+  readback match actual18proof/19formal and all214proof/240statement/28module
+  source bindings; all13 joins retained. Held trees/80origins unchanged.
+  Actual529607user+184agent+full180224 reserves=710015;338561 room is BEFORE
+  UNKNOWN effective framing. Root DATA minimum approves completeness only.
+  Exact custody: reviews/2026-11-05-unitD-main-data/.
+  Both complete joined implications retain actually needed C/A/F clauses and
+  E/F/G consumers or conditions, not source-presence/vote/full-parent credit.
+  Source28/technical263PDF/old grades unchanged. Next: committed-data binding,
+  minimal isolated native code/profile/framing audit and fresh actual D MAIN.
+  No runtime/call or scientific acceptance granted. Original all-model actualC2/
+  full214/240/13 and remaining independent gates stay OPEN. Goal ACTIVE.
+
+- **Compact reader source/PDF committed together as separate prototype
+  (2026-11-05):** editorial/reading-notes-20261105 commit2b54f19 contains NEW
+  reader.tex and its rebuilt reader.pdf together, plus the paired-reading guide.
+  MAIN20pages+unchangedTECH263=283 supplied pages; this reduces reading length,
+  not total technical record. The new exact variational domain, independent
+  upper/limit spine, source/mean/signed/Gram dependencies and68 technical-label
+  references retain all original hypotheses/normalizations and full214/240/13.
+  Root read the complete source plus exact V2/V3 corrections, inspected current
+  pages1/3/6/8/19 and rechecked build0errors/undefinedrefs-cites/overfull/tabs,
+  205 external links and source28/PDF invariance. Full263PDF still096cb3….
+  ReaderTex8cc07385…/PDF17e64758… are identical on local/origin/<HUB> at
+  2b54f19a2f1d8636a5a39ced37c3b121af35d19d. Prototype fidelity/whole/visual/
+  cold clearance is NOT granted. Format preference remains open; old technical
+  claims/proofs are not withdrawn. Active scienceaf97 remains unchanged.
 
 - **Shorter-notes audit retained; no page reduction applied (2026-11-05):**
   Root independently checked PDF metadata: ACTIVE263pages/November3 versus
