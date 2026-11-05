@@ -2,10 +2,10 @@
 
 **Compact reading prototype:** [20-page reader](../stratonovich-reading-notes-20261105/notes/notes_stratonovich_ham_second_moment_reader.pdf)
 with its [matching TeX](../stratonovich-reading-notes-20261105/notes/notes_stratonovich_ham_second_moment_reader.tex),
-committed together at `2b54f19` on `editorial/reading-notes-20261105`. Use it with
+committed together at `9895781` on `editorial/reading-notes-20261105`. Use it with
 the [unchanged 263-page technical companion](notes/notes_stratonovich_ham_second_moment.pdf).
 The complete package has 283 pages; no total-proof-length reduction or final
-independent clearance is claimed. [Prototype validation](reviews/2026-11-05-compact-reader-prototype/).
+independent clearance is claimed. [Latest paired revision and validation](reviews/2026-11-05-reader-v4-paired-revision/).
 
 The second moment of the Stratonovich hyperbolic Anderson model with noise
 fractional in time: an upper bound at the correct scale

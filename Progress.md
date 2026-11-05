@@ -81,6 +81,25 @@ Dashboard/state and round-accounting repair do not clear any of these gates.
 
 ## Current state
 
+- **Reader notation corrected with TeX/PDF SAME commit (2026-11-05):**
+  Root read the complete original-reader AUTHOR audit9372bytes. Its R1 is an
+  undefined spectral shift; Q2/Q3 clarify positive polynomial radii and temporal
+  Laplace-prefix notation. Exact V4 fixes match technicalsource; full technical
+  source28/PDF096cb3… unchanged. ReaderTeX183e148d… andPDF06fac482… are BOTH
+  committed at9895781f9be82b0ba2b9d2e9fb26dc45b28796e2, with guide, on
+  editorial/reading-notes-20261105. Still20+263=283 suppliedpages. Required
+  build/style0errors/undefinedrefs-cites/overfull/tabs and205external links pass;
+  Root viewed changedpages8/13/14/15 and read exactdiff. Independent scientific/
+  fullvisual/cold clearance remains open; old audit is bound to original2b54.
+  Exact34-member custody: reviews/2026-11-05-reader-v4-paired-revision/.
+  Local/origin/<HUB> HEAD/bytes are equal and clean. Durable Git lesson:
+  an explicitly fetched ref in a single-branch clone does NOT establish its
+  branch upstream. GW default pull initially followed research; hash parity
+  caught the wrongcheckout. The owned duplicatecommit was saved in a verified
+  privatebundle before zero-range rebase onto publishededitorial989; exact
+  fetchmapping/upstream set and bothartifact hashes rechecked. No foreign work
+  discarded. Exit0 alone is not synchronization evidence. Goal remains ACTIVE.
+
 - **Actual D MAIN terminal: MEDIUM and conditional (2026-11-05):**
   One explicit fresh DeepSeek V4 Pro call completed203.881753942s, CLI0/stop,
   two fresh messages/tools0/exact3events; collector incomplete=false. Root
