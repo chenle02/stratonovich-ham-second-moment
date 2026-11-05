@@ -81,6 +81,25 @@ Dashboard/state and round-accounting repair do not clear any of these gates.
 
 ## Current state
 
+- **E independent code audit and actual pure preflight pass (2026-11-05):**
+  Root read full10040-byte final independent audit; all17+9 heldmembers,
+  actualC1a7313b5/all47archive members/all109origins/carrier3blobs/bundle/
+  source28/PDF match.49producer+22focusedpurecontrols retain all fourpartial
+  contribution guards, exact twofulljoin assignments/qualification and strict
+  transport/reentry/cache/fence/public-first refusals. Common/preflight/run
+  remain byteidenticalD; no new disableflag or waiver. M1 staleRoot_D_named
+  preservationfield actually checksE; Root independently qualifies it asE
+  absence, never a presentDclaim. Auditinitialwrongarchivebasename preserved
+  ascheckerrefusal/correction, notproducer/sourcefailure. No heldfilesrewritten.
+  Root actual209authority snapshot/capacity and REAL pure agent/config preflight
+  pass; exactnewE fingerprints/toolsdenied/MCP0/instructions[]/refs{}/context/
+  logicallink/date/run-safepredicate verified. Fullconditionaltotal837729,
+  head210847 retains515conditionaltemplate and allhardreserves; no HTTP/admission
+  guarantee. Exactcustody: reviews/2026-11-05-unitE-main-preflight/.
+  This checkpoint has no RUNauthority/generation. Next private-deliveryparity,
+  thenONEfreshactualEMAIN. Science/PDF/oldgrades/all214/240/13/originalactualC2
+  and all required independent/final gates remain unchanged. Goal ACTIVE.
+
 - **D public/source adjudication completed without grade promotion
   (2026-11-05):** Root read entire23540-byte native public/no-LF EOF and final
  14379-byte author report, directly checked G174/E124/E125/D107/D111/G189
