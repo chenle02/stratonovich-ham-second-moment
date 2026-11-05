@@ -4,7 +4,86 @@
 > (per `progress-md-authority-paper-dev`). Start every session here. Update it
 > at the end of every round, before committing.
 
+## Goal
+
+Prove the correct-scale upper bound and the all-original-model second-moment
+asymptotic limit with its actual fully specified variational constant, under
+PROJECT-GOAL.md. Retain all admissible dimensions/covariances, amplitude,
+unit kinetic coefficient, Gaussian half-action and the direct zero case.
+Complete DeepSeek V4 Pro MAIN and Kimi-K3 HIGH review, source/visual and fresh
+cold gates, clean manuscript/PDF and synchronized private delivery. Do not
+force Chen's predicted constant or create a Lean companion without approval.
+
+## Status
+
+IN_PROGRESS
+
+## Round
+
+4
+
+## Roadmap
+
+The round number is the last historically numbered round, used as a tooling
+compatibility anchor. Later scientific and review cycles are recorded below;
+4 is not a count of all such cycles or a reset of review-cadence debt. The
+historical Round log remains unchanged. A workflow-accounting audit is active.
+
+Gate class: whole-paper.
+Gate scope: original all-model actual-C2 goal; full214 proofs/240 declarations/
+13 joins, exact current source and its applications.
+Mandatory protocols: actual DeepSeek V4 Pro MAIN and Kimi-K3 HIGH; adjudicate
+every finding; source/visual coverage; fresh independent final cold read;
+clean build; private delivery and wiki/handoff provenance; no unauthorized
+messages, publication, HPC or official Lean-companion creation.
+
+1. Complete actual reconstruction of the remaining proof blocks and joins.
+2. Resolve every genuine gap and obtain the required integrated reviews.
+3. Complete primary-source, calibration and full rendered-PDF checks.
+4. Complete fresh cold review and verified final private delivery.
+
+## Current Subaim
+
+- [ ] Complete the independent C33/35 proposal/dependency/retention audit,
+  then select and verify the actual C review data. Preserve A/B's qualified
+  native confidence and every whole-goal gate; proposal/data checks are not
+  mathematical acceptance. Reconcile workflow bookkeeping alongside this work.
+
+## What's Done
+
+The current source contains a provisional all-model upper/limit argument.
+Actual scoped A and B DeepSeek MAIN calls and their author/root adjudications
+are preserved with their original confidence and depth limits. B adjudication
+is committed at9c85530. All28 source modules and the263-page PDF are unchanged.
+Existing local Lean evidence concerns80 finite/algebraic facts in22 groups;
+it does not verify the full analytic theorem. Dated records below give the
+exact scientific, review, build and synchronization boundaries.
+
+## What's Left
+
+Remaining OWN deductions and joined applications; unqualified integrated
+MAIN acceptance; required Kimi-K3 review; source pixels and full visual check;
+fresh final cold read; final clean delivery, wiki provenance and handoff.
+Dashboard/state and round-accounting repair do not clear any of these gates.
+
 ## Current state
+
+- **Dashboard metadata repaired; workflow accounting still under audit
+  (2026-11-05):** Both launcher and active `paper-dev-dash --once` originally
+  exited0 with the missing-state/agents message. Neither checkout had either
+  JSON file, and this authority lacked canonical paper-dev section headings.
+  Added the canonical Goal/Status/Round/Roadmap/CurrentSubaim/Done/Left summary
+  above without removing historical records. The repeatable repo-local
+  scripts/refresh-paper-dev-state.py uses the canonical locked state helper
+  to refresh only named display keys. Both dashboards now render; the launcher
+  explicitly warns its review list is an older snapshot. Repeat refresh is
+  byte-idempotent. State/lock remain ignored. No reviewer roles, session,
+  completed-round timestamp, budget, grades or telemetry were invented.
+  Historical4 is a compatibility anchor, not a scientific-cycle/cadence count;
+  review-directory discovery is not a count of accepted rounds. Missing
+  agent configuration and full workflow/cadence reconciliation remain explicit
+  audit items, not scientific clearance. Source/PDF/review grades unchanged;
+  original all-model C2/214/240/13 and final gates remain OPEN. Goal ACTIVE.
 
 - **B MAIN author/root adjudication complete; confidence unchanged
   (2026-11-05):** Root read the full core/static/upper reports and all18

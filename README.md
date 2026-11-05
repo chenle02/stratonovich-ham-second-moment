@@ -93,6 +93,28 @@ identifies the active research checkout.
 4. `sources/SOURCE-MANIFEST.md`: hash-pinned sources and page pinpoints
 5. `notes/notes_stratonovich_ham_second_moment.tex`: model, known results, targets, route
 
+## Paper-dev dashboard
+
+From the active research checkout, refresh the ignored session-state mirror
+from the canonical sections of `Progress.md`, then launch the dashboard:
+
+```bash
+python3 scripts/refresh-paper-dev-state.py
+paper-dev-dash
+```
+
+The historical round number remains4 while later scientific-cycle accounting
+is audited. It is not a count of reviewer calls or a reset of review debt.
+Dashboard review-directory counts are heuristic file discovery, not counts of
+scientific rounds or accepted reviews. Read the actual adjudications for
+qualified confidence. Missing session-local telemetry is not fabricated.
+
+A separate launcher checkout can display the research state using the refresh
+script's `--repo LAUNCHER --authority RESEARCH` options. Its own review list
+still describes its older snapshot; `paper-dev-dash --repo RESEARCH` displays
+the active checkout directly. The state JSON and lock remain gitignored.
+This repair adds no reviewer role assignments or passed scientific gates.
+
 ## Building
 
 ```bash
