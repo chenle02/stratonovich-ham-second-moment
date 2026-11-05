@@ -44,10 +44,10 @@ messages, publication, HPC or official Lean-companion creation.
 
 ## Current Subaim
 
-- [ ] Verify committed/pushed/<HUB>-equal delivery of the actual ThemeII.1
-  pure preflight checkpoint, then separately authorize ONE fresh coupled MAIN
-  invocation for the59-OWN/60-role/3-join task. No invocation exists at this
-  snapshot; all other joins, genuine whole assessment and final gates stay open.
+- [ ] Carry the actual ThemeII.1 conditional MEDIUM and precise OWN foundational
+  reconstruction limits into the remaining coupled work; read II.4–II.6 working
+  and prepare the next substantive assessment with fresh catalog/context pins.
+  No confidence-only retry; the whole HIGH/Kimi/source/visual/cold gates stay open.
 
 ## What's Done
 
@@ -82,6 +82,43 @@ Dashboard/state and round-accounting repair do not clear any of these gates.
   the complete technical companion and remains subject to independent review.
 
 ## Current state
+
+- **Actual ThemeII.1 MAIN returned and adjudicated; MEDIUM remains
+  (2026-11-05):** READY348ed68 verified committed/pushed/<HUB>-equal, then
+  Root authorized one fresh invocation. Actual SIDses_e52064a33ffeovDDl8wwbg5Feo,
+  PID369537/start80031083/supervisor369531, exec96348 CLOSED. CLI0/stop,
+  206.419494591seconds, exactstart/text/finish, fresh2messages/tools0 and exact
+  user/model/agent/parent/project/directory/root/title/version verified.
+  Cache-inclusive input775543/public9926/reasoning9546/FULLTURN795015/cache0.
+  Public35183bytes/437LF/438logical/no-finalLF/SHA9dfeeaf5 RootFULLREADthroughEOF;
+  all59proofrows+S064 and3conclusions present. Actual48OK/9LIM/2IMP-LIM are
+  literalstatuses, not acceptedcounts/percentage. Threejoins coherently
+  conditional, confidenceMEDIUM, no concrete sourceerror. No HIGH/whole
+  acceptance or existinggrade promotion; allrecords literal. Named3.1/Young
+  imports remain legitimate afteractualhypothesis/application checks, without
+  a new whole-book reproof debt. ActualOWN measure/frequency/compact/dyadic
+  reconstruction-depth limits stay explicit. Correct theorem-domain limits
+  are not newly missingpremises;098/110 actually supply095/103consumer clauses.
+  Fixed-Phi166 versus latergeneralmean167/rawclass and canonicalMOMENT versus
+  givenWdriver/observable distinctions stay. No publicrecord completion or
+  retry authorized; current/olderfences SPENT. No source/PDFrepair follows.
+  Runtime actualall254-authority terminalsnapshot passed23:13:11UTC and
+  collection23:13:12. Rootlaterstrictcheck correctlyREFUSED changed shared
+  modelscatalog: firstobservedmtime23:14:05, latermtime23:19:57, SHA151c04bd…
+  replaces8399e9b7…. All253otherauthorities/science/PDF/code/carrier/mathinputs
+  unchanged. Whole selectedDeepseek model and archivedproviderid/npm/api match;
+  fullcatalog/unrecordedprovider equivalence andwriter/trigger UNKNOWN.
+  No globalcache restore/oldplanwaiver. Rootqualifiedchronology and separate
+  sourceauditFULLREAD7176 preserve terminalpass ANDlaterrefusal. Futurefresh
+  lineage requiresnewcatalogpin/freshactualcontextchecks. Liveholdreleased.
+  Durable lesson: distinguish import policy, actual missingdeductions and
+  already-met domain restrictions; distinguish terminalbinding from later
+  sharedmetadata drift without erasing either. Full32member/3148968rawbytes
+  custody in reviews/2026-11-05-themeII-1-main-native-adjudication/,
+  archive8f1a2071/compressed950955bytes. All science28/PDF263/80Lean facts/
+  acceptedgrades unchanged. II.4/II.5/II.6 authorwork now frozen externally,
+  with Rootreading stillneeded; all21424013/allmodels/actualC2/remainingjoins/
+  integratedMAINHIGH/actualKimi/sourcevisual/cold/wiki/finaldelivery stayopen.
 
 - **Actual ThemeII.1 code/framing and pure preflight passed (2026-11-05):**
   Root FULLREAD final codeaudit12374bytes/cb2c4ed8 and separate947-byte wording
