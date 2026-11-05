@@ -486,11 +486,13 @@ Keeping levels through $N$ defines $K_N$.
 The sorted interval lengths obey $h_i\le78T/i$ and the weights have
 $\sigma_i^2=6^ah_i^{-a}$. Thus, $L=78$ and $c=6^a$ apply in
 \eqref{E:reader-interval-coefficients}.
-The actual comparison is
+For a source cutoff $\eta>0$, put $\gamma_\eta^0=K_\eta$, where
+$K_\eta$ is the temporal Laplace prefix in
+Section~\ref{S:reader-retaining-source}. The actual comparison is
 \[
-  \gamma_\delta(s-r)\le |s-r|^{-a}\le K_\infty(s,r).
+  \gamma_\eta^0(s-r)\le |s-r|^{-a}\le K_\infty(s,r).
 \]
-It does \emph{not} assert $\gamma_\delta\le K_N$ for arbitrary finite
+It does \emph{not} assert $\gamma_\eta^0\le K_N$ for arbitrary finite
 $N$. For each finite positive diagram, compare with $K_\infty$ and
 then use positive monotone convergence of $K_N$.
 These interval covariances need not be stationary.
@@ -606,7 +608,7 @@ The extension and flow statements are
 \TNref{Lemma}{L:constant-source-solution} and
 \TNref{Proposition}{P:constant-raw-average} for physical identification.
 
-\subsection{The source has to retain the original noise}
+\subsection{The source has to retain the original noise}\label{S:reader-retaining-source}
 
 Use one product extension retaining the original $W$ literally.
 The feature isonormal family $\mathcal I$ satisfies
@@ -861,7 +863,7 @@ This is \TNref{Proposition}{P:uniform-E-spectral}.
 The form construction uses
 \cite{teschl:14:mathematical}*{Theorem~2.14 and Theorem~3.6} with its
 hypotheses checked for the actual form. Ordered resolvents give the
-square-root form comparisons and
+square-root form comparisons. With $c=2+K^2$ they give
 $D((H_V+c)^{1/4})=H^{1/2}$, with dual scale $H^{-1/2}$.
 The graph-domain argument supplies the required $H^{3/2}$ inclusion;
 it does not assert $D(H_V)=H^2$ for a rough completed potential.
@@ -940,7 +942,8 @@ $\delta\downarrow0$, then by the residual norm threshold and finally
 by the coarse block length tending to infinity.
 The polynomial localization threshold is chosen with exponent
 $s>r(3+k_*)/(r-\nu)$, where $k_*$ is the polynomial raw-ball exponent
-$M_B=c_{\rm ball}B^{k_*}$, not the model exponent $k=3-\alpha$.
+$M_B=c_{\rm ball}B^{k_*}$ with $c_{\rm ball}>0$ and $k_*\ge0$,
+not the model exponent $k=3-\alpha$.
 The residual denominator is bounded below by one.
 There is no unproved diagonal choice of radius and approximation.
 These bounds are the content of Technical Notes, Section~36;

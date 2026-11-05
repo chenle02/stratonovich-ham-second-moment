@@ -2,7 +2,7 @@
 
 Read [the 20-page reader](notes_stratonovich_ham_second_moment_reader.pdf)
 with [the 263-page technical companion](notes_stratonovich_ham_second_moment.pdf).
-The complete supplied package has283 pages. This makes the main reading route
+The complete supplied package has 283 pages. This makes the main reading route
 shorter; it does not claim a reduction in the total technical record.
 
 The reader states the original model, complete variational constant and
@@ -25,5 +25,7 @@ reader source; both PDFs must travel together for its external proof links.
 
 Every reader TeX edit is committed with its rebuilt PDF after the zero-error,
 undefined-reference/citation and overfull-box checks. Current source/PDF pair
-is versionV3 of the editorial prototype; detailed author validation and Root
+is version V4 of the editorial prototype; detailed author validation and Root
 source/visual readback are retained separately from scientific review gates.
+Version V4 names the positive spectral shift and the temporal source cutoff,
+and states the inherited positive-radius parameter conditions explicitly.
