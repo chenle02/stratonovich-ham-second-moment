@@ -44,10 +44,10 @@ messages, publication, HPC or official Lean-companion creation.
 
 ## Current Subaim
 
-- [ ] Complete one fresh actual DeepSeek D review after synchronized delivery
-  of the checked native preflight; preserve full joined applications and C
-  qualifications. Retain the compact reader and full technical companion with
-  pending independent correspondence/visual/final gates.
+- [ ] Adjudicate the actual D MEDIUM conditional review without upgrading its
+  depth or joined coverage; independently check the E DATA postimage and G
+  scientific proposal. Retain paired reader/full technical companion and all
+  remaining whole MAIN/Kimi/source/visual/cold/final gates.
 
 ## What's Done
 
@@ -80,6 +80,38 @@ Dashboard/state and round-accounting repair do not clear any of these gates.
   the complete technical companion and remains subject to independent review.
 
 ## Current state
+
+- **Actual D MAIN terminal: MEDIUM and conditional (2026-11-05):**
+  One explicit fresh DeepSeek V4 Pro call completed203.881753942s, CLI0/stop,
+  two fresh messages/tools0/exact3events; collector incomplete=false. Root
+  independently verified actualuser/model/reviewer/parent/title/directory/cwd/
+  root, heldcleanHEADc87e10b, all177 authorities/source28/PDF/code/carrier.
+  Root FULLREAD23540public bytes/403logical lines through final no-LF EOF.
+  Actualinput530103/cache0,public7227+reason3208=10435,total540538. Observed83
+  beyond reconstructed known413 is not a replacement for conditional515.
+  Original complete custody: reviews/2026-11-05-unitD-main-native/.
+  Native categorically MEDIUM: D18 conditionally consistent; BOTH joins remain
+  conditional on named C and matched E/F/G clauses. This is not HIGH or whole
+  clearance. Source/author/depth adjudication is assigned; original public and
+  old grades stay exact. No tool execution/book-proof rederivation is invented.
+  Source/Git hold released after terminal invariance; fence SPENT/no retry or
+  supplement authorized. One preterminal liveness check refused because the
+  child had finished; terminal/export checks resolved it without a restart.
+  The original all-model actualC2/full214/240/13 and all final gates stay OPEN.
+
+- **Durable lesson: source identity is not caption correctness (2026-11-05):**
+  Root read full E/F proposals and their complete independent author audits.
+  Correct proof IDs/body hashes still accompanied three misleading E consumer
+  captions: F142 is fractional Hs products (F141 is time occupation); F143 is
+  compact spatial mean with both compact values and map, not scalar energy;
+  G172 is scalar stochastic-Rayleigh/layer-cake, not spectral ground theory.
+  Root directly checked F143's complete statement/proof. Frozen old artifacts
+  are preserved; future E task states the actual applications explicitly.
+  Full109 origins and both joined scopes are selected for external E DATA-only
+  preparation, with S064union29 and all unresolved OWN clauses visible. No
+  assembled fit/call/acceptance follows. G24 proposal is frozen; independent
+  author audit pending. H20 source-only preparation is assigned. No original
+  manuscript proof or PDF is changed by these caption/dependency corrections.
 
 - **D actual native preparation and pure preflight checked (2026-11-05):**
   Root read the complete final independent code/framing audit. All 80 original
