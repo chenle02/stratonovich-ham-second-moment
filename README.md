@@ -3,8 +3,14 @@
 **Current reading copy:** [research notes, 263 pages](../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave/notes/notes_stratonovich_ham_second_moment.pdf),
 built November 3, 2026. The [110-page PDF stored here](notes/notes_stratonovich_ham_second_moment.pdf)
 is the older October 29 snapshot. It is not a shortened edition of the current
-notes. A content-reduction audit is underway against the 263-page baseline;
-the scientific source and current PDF have not been cut.
+notes. The scientific source and current technical PDF have not been cut.
+
+**Compact reading prototype:** the [20-page reader](../../../../.local/state/Le-AI-Lab/stratonovich-reading-notes-20261105/notes/notes_stratonovich_ham_second_moment_reader.pdf)
+and its [matching TeX](../../../../.local/state/Le-AI-Lab/stratonovich-reading-notes-20261105/notes/notes_stratonovich_ham_second_moment_reader.tex)
+are committed together at `9895781` on `editorial/reading-notes-20261105`.
+Read it with the complete 263-page technical companion above: 283 supplied
+pages. This shortens the main reading route; total proof length and final
+independent clearance remain separate questions.
 
 The second moment of the Stratonovich hyperbolic Anderson model with noise
 fractional in time: an upper bound at the correct scale
