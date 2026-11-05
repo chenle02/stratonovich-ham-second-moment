@@ -6,6 +6,30 @@
 
 ## Current state
 
+- **Actual foundational DeepSeek MAIN returned; scientific adjudication active
+  (2026-11-04):** One fresh actualDeepSeekV4Pro scoped24-proof/38-role job
+  completed305.102151945s, CLI0/stop/fresh2/tools0. Root verified actual
+  user/assistant agent/model, fixed title/shareoff, export directory and cwd/
+  root. SourceHEADC20452ade, all95 authority/source files,28 current modules,
+  PDF, code and C1/carrier inputs held unchanged; Git hold is released.
+  Actualinput526601+public8342+reason12578=547521FULLTURN/cache0; all bounds
+  pass. Observed extra afterknown420 is83, not a replacement for conditional515.
+  Root read every25510 public byte/195 logical lines, including the final
+  unterminated line. Exact custody/report at
+  reviews/2026-11-04-unitA-main-native/.
+  Native judgment calls all24 deductions sound at their actual scopes, with
+  HIGH confidence for finite/algebraic calculations and constructor acyclicity.
+  Its explicit021/023 Fatou/approximation/optimality depth exclusions remain;
+  this is NOT an unqualified all-analytic A or whole HIGH. External3.1 induction
+  is a named import, not an extra OWN/book-reproof requirement. Full constructor,
+  calibration and higher-route author/root adjudications are now active, with
+  reviewer caption/normalization questions kept distinct from source gaps and
+  reading limits. No source/PDF/old-grade change or accepted whole composition.
+  The new fresh fence is spent; no retry/supplement is approved. All original
+  model/C2/214/240/13, wholeMAIN/Kimi/sourcepixels/fullvisual/freshcold/private
+  delivery gates remain OPEN. Goal ACTIVE; provisional manuscript conclusion
+  is not yet final independent acceptance.
+
 - **Actual scoped MAIN preflight passes; private release pending
   (2026-11-04):** DataC1 is28e5fa2. The minimal v4 derivative binds the exact
   current24/38 constructor scope, C1/user/agent/carrier and conditional707257
