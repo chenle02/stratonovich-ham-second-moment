@@ -6,6 +6,29 @@
 
 ## Current state
 
+- **Complete B author working retained; actual B data audit active
+  (2026-11-04):** Root read full22699B core039–048,24653B static synthesis/
+  report and14000B full037/038 supplement, plus actual039 source. The full
+  R1/R2/R3 and B-phase/independent-upper companions are preserved byte-exact.
+  Coverage is21 static+10 core+2 variance+4 prior energy/upper claims=37OWN,
+  not35 groups with two assumed inputs. Correct root ordering, occupied/fresh
+  Fock states, one/two-copy and R-once counts, actual whole inventory weights,
+  both Born/mean terms, raw/static constants, endpoint/clock/source windows
+  remain explicit. No assigned source gap found under named current inputs;
+  no source/PDF/MAIN/HIGH change. Custody at
+  reviews/2026-11-04-unitB-author-working/.
+  Canonical B46 plus S064/S071 gives the selected48-role union. Root read full
+  scope/dependency and independent retention proposals and selected exact C4
+  scientific spans, S065 roles/counterparts, all14 B21 mathematical top members
+  and exact false/correction chains, with six pure identity/vote fields private.
+  Original B data now exists with111 payloads; full actual-data audit verifies
+  its science retention. Two administrative task/agent clarifications are being
+  preserved in an immutable successor with delta-only validation, not source
+  repair or scientific scope change. Actual final bytes/count and independent
+  audit/readback are required before native preparation or any model call.
+  All original model/C2/214/240/13 and remaining MAIN/Kimi/sourcepixels/visual/
+  freshcold/private-delivery gates remain OPEN. Goal ACTIVE.
+
 - **Actual full-upper route explicitly retained (2026-11-04):** Root read the
   full25974B036/049–051 reconstruction, table, independent author report and
   actual source statements/proofs. The broader standalone R3/realH1 energy
