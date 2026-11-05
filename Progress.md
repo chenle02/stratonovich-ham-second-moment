@@ -6,6 +6,26 @@
 
 ## Current state
 
+- **Actual full-upper route explicitly retained (2026-11-04):** Root read the
+  full25974B036/049–051 reconstruction, table, independent author report and
+  actual source statements/proofs. The broader standalone R3/realH1 energy
+  extension, terminal coefficient-one/allmixed Wick identity, prelimit scaled
+  tails, nested3-grid inventory/locality/volume and same-canonical all-model
+  upper closure are worked. Source051 uses the finite-interval coefficient/
+  Fock044–048 route; later Gaussian-tube/Rayleigh machinery is not substituted.
+  The faulty Root dispatch summary and its correction remain explicit.
+  Mode/band identification precedes positivity/locality; doubled noise gives
+  4Gamma for tails while the unscaled bound passes to the final moment.
+  All28 modules and30 proof/statement interiors match. No assigned gap found
+  under named CURRENT inputs, with no full-parent/MAIN/HIGH conversion.
+  Verified custody: reviews/2026-11-04-upper-reconstruction/.
+  Next active work: canonical unitB37 proof/formal/join dependency proposal,
+  actual039–048 complex/Fock/inventory checking and024–035/052–060 static/
+  source-application checking. Formal sets come from canonical owners, not
+  LF cutoffs. Scope remains the original all-model actual-C2/full214/240/13
+  goal; source/PDF/grades unchanged. Actual MAIN A confidence stays qualified;
+  wholeMAIN/Kimi/sourcepixels/fullvisual/freshcold/finaldelivery remain OPEN.
+
 - **Scoped native A adjudication complete; confidence unchanged (2026-11-04):**
   Root read all three complete author batches, all15 findings and full22121B
   020–023 working/role table. No concrete source gap was located under the
