@@ -44,11 +44,11 @@ messages, publication, HPC or official Lean-companion creation.
 
 ## Current Subaim
 
-- [ ] Release and collect one fresh DeepSeek V4 Pro C MAIN after private
-  preflight-checkpoint delivery and immediate caller invariance checks.
-  Exact C33/35 DATA, independent code/framing audit and actual pure preflight
-  pass. Preserve original source, A/B's qualified confidence and all final
-  gates; transport readiness is not mathematical acceptance.
+- [ ] Adjudicate the actual C public mathematics and extra-start transport
+  anomaly, preserving its native high confidence and collector-INCOMPLETE
+  qualification. Then continue the complete D source/Young/observable scope
+  from its independently audited proposal. No retry or automatic promotion;
+  all original whole-goal requirements remain.
 
 ## What's Done
 
@@ -68,6 +68,31 @@ fresh final cold read; final clean delivery, wiki provenance and handoff.
 Dashboard/state and round-accounting repair do not clear any of these gates.
 
 ## Current state
+
+- **Actual C MAIN returned high scoped mathematics; collector INCOMPLETE
+  (2026-11-05):** One explicit CLI invocation ended788.943459978s, CLI0/stop,
+  fresh2messages/tools0. Root verified actual user/assistant reviewer+model,
+  parent/title/shareoff/directory/cwd/root and all149 authorities/source28/
+  PDF/code/carrier; active HEADec5c365 held. Root FULLREAD24671public bytes/
+  278logical lines including final no-LF. Exact original public/custody:
+  reviews/2026-11-05-unitC-main-native/.
+  Native confidence is high for all33 C deductions and C contribution only
+  through093, not downstream source/Young/constant-data/whole acceptance.
+  Mathematical source/author adjudication is active, including Peetre's
+  printed missing exponent,079 unsupported iff/domain, grouped even-index
+  and dependency/localization captions and actual071 public working depth.
+  No source gap or new accepted grade is declared from report wording.
+  Collector2/incomplete:true stays: eventsequence has TWO step_start before
+  text/finish. First reasoning part has0 stored bytes/start-only; zero server
+  work cannot be inferred. A bounded native-source/log transport audit is
+  active. Reported COMPLETED-STEP input1+cache517376=517377,public8393,
+  reason11897,total537667; bounds pass for that step. All-attempt usage is
+  NOT established. Observed83 beyond known409 does not replace conditional515.
+  Raw exports/private reasoning stay custody only, never mathematics. Git
+  hold released after terminal invariance. C fence spent; no retry/supplement
+  approved. Source/PDF/old grades unchanged. All original model/actualC2/
+  214/240/13/remainingMAIN/Kimi/sourcepixels/fullvisual/freshcold/delivery
+  gates remain OPEN. Goal ACTIVE.
 
 - **Actual C MAIN pure preflight passes; private release pending
   (2026-11-05):** C1 input5ef7dae is bound to the minimal audited B-to-C
