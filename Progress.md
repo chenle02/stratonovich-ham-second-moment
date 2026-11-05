@@ -6,6 +6,29 @@
 
 ## Current state
 
+- **Actual B37/48 review data independently checked (2026-11-04):** Root read
+  the full actual task/agent and full retention/delta/framing audit reports.
+  Independent v1 reconstruction matches every2556657 input byte and all111
+  payloads through990 checks. The minimal v2 administrative successor changes
+  one outside-B caption byte and agent marker;264 delta checks preserve every
+  mathematical payload/value/condition/remainder and all v1 evidence. Canonical
+  B46+S064/S071=48 roles; all37 OWN and full independent-upper join are assigned,
+  with B calibration contribution only and full214/240/13 context retained.
+  Exact C4 science, S065 counterparts, B21 mathematical members and historical
+  false/correction chains survive without old operative votes or wire tasks.
+  Actual joined726225user+148agent+full180224 reserves=906597 before framing.
+  Known joined377 includes148agent; unchanged conditional515 gives provisional
+  total907341/head141235. Independent framing audit agrees under bound source
+  conditions; pure startup has0generation/exactmodel/12denials/MCP0/shareoff.
+  No exact future template guarantee or B native admission is claimed.
+  Complete verified data/readback custody:
+  reviews/2026-11-04-unitB-main-data/.
+  Next: bind minimal audited native-driver derivative to this committed actual
+  B data, complete fresh code/operator/private-sync checks and release one
+  actual MAIN review. No source/PDF/grade change. All original model/C2/214/
+  240/13/wholeMAIN/Kimi/sourcepixels/visual/freshcold/finaldelivery gates remain
+  OPEN. Goal ACTIVE.
+
 - **Complete B author working retained; actual B data audit active
   (2026-11-04):** Root read full22699B core039–048,24653B static synthesis/
   report and14000B full037/038 supplement, plus actual039 source. The full
