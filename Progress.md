@@ -44,17 +44,19 @@ messages, publication, HPC or official Lean-companion creation.
 
 ## Current Subaim
 
-- [ ] Prepare actual coupled deductions for the13 ThemeII joins, beginning
-  original-source/Young, independent-upper and fixed-control-lower applications.
-  The six author dossiers are preparation, not six approved calls or whole
-  acceptance. Scientific minimum/input selection and all final gates stay open.
+- [ ] Prepare and independently audit the fresh ThemeII.1 native runtime for
+  the three source/Young joins, using the approved59-OWN/60-role DATA only.
+  Actual startup/framing/one-call authority remains absent. The other joins,
+  genuine whole assessment and all final gates remain open.
 
 ## What's Done
 
 The current source contains a provisional all-model upper/limit argument.
-Actual scoped A and B DeepSeek MAIN calls and their author/root adjudications
-are preserved with their original confidence and depth limits. B adjudication
-is committed at9c85530. All28 source modules and the263-page PDF are unchanged.
+Actual A–H scoped DeepSeek MAIN reports and their adjudications are preserved
+with their original confidence, conditional applications and transport/depth
+limits. Their labels do not establish whole acceptance. The first joined
+source/Young DATA packet is now independently audited and Root-approved at
+the data boundary only. All28 source modules and the263-page PDF are unchanged.
 Existing local Lean evidence concerns80 finite/algebraic facts in22 groups;
 it does not verify the full analytic theorem. Dated records below give the
 exact scientific, review, build and synchronization boundaries.
@@ -80,6 +82,36 @@ Dashboard/state and round-accounting repair do not clear any of these gates.
   the complete technical companion and remains subject to independent review.
 
 ## Current state
+
+- **ThemeII.1 DATA frozen and scoped minimum approved (2026-11-05):**
+  Root FULLREAD final source/Young working34552/table10369/report4961/controls,
+  and final independent DATA audit14679bytes. Actual141 FULL literal payloads
+  retain current28TeX/9navigation/10primary-use contexts, all needed selected
+  A/C/D/E/F/G mathematics/controls/corrections and actual records. Those10 are
+  seven primary works plus three ancillary contexts. The59 core OWN are A8+C33+
+  D18;59formal parents plusS064 logicalGLOBALgiven give60roles and3canonical
+  joins. Global214/240/13/allmodels unchanged. Independent full-input/alias/
+  body/envordinal checks and9negatives pass. User2720073bytes/6bea925e; actual
+  joined775075+agent152+hard180224=955451 BEFORE UNKNOWN otherframing.
+  No fit/provider/native/grade approval. Rootminimum42ce58d0 grants DATA only;
+  runtime/codeaudit/actualstartup/Rootone-call/delivery authorization absent.
+  Whole minimum and all other joined/MAIN/Kimi/source/visual/cold gates stay.
+  Source/UI h0→125/189 precedes132/Rsp; local fixed-Phi166 differs from later
+  uniform-radius/general-mean uses. No fullG185 tube proof is imported to fund
+  the fixed-delta physical-square source limit. A006 ambient source L2 and
+  A009 ALL-source degree closure differ from rawW driver/tested observables;
+  D103/G189 consume canonical MOMENTS. Bounded fidelity FULLREAD13764 confirms
+  no extraA006 requirement/sourcegap or DATA revision; optional point-W bridge
+  is preserved separately, not a new pass condition or selected model input.
+  Durable lesson: demand the actual coupling/measurability at its use, without
+  inventing a stronger global point-field condition; keep unstopped restart
+  distinct from endpoint evaluation and source pathwise versions distinct from
+  the Bochner-L2 canonical passage. III.2/III.3 author preparations are also
+  frozen externally; Root FULLREAD III.3, while III.2 root reading remains.
+  Custody in reviews/2026-11-05-themeII-1-main-data/:191members/6673615rawbytes,
+  archive018e9742/compressed1867209; fidelity10members/090b4270/17700bytes.
+  All28 scienceTeX/PDF263/acceptedgrades/80localLean facts unchanged. No new
+  generation or source edit; every futureTeX commit still pairs its rebuiltPDF.
 
 - **ThemeII author preparation selected; no review promotion (2026-11-05):**
   Root FULLREAD seven capacity/counterpart narratives, all13 canonical join
