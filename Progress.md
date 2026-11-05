@@ -44,11 +44,11 @@ messages, publication, HPC or official Lean-companion creation.
 
 ## Current Subaim
 
-- [ ] Complete the independent audit of the actual assembled C33/35 review
-  input and its joined count, then bind guarded native preparation to the
-  approved committed data. The proposal audit and exact70-file scientific
-  selection are complete. Preserve A/B's qualified confidence and all final
-  gates; data checks are not mathematical acceptance.
+- [ ] Bind independently checked isolated native preparation to the approved
+  committed C33/35 DATA, verify effective framing/code/private delivery, then
+  release one fresh DeepSeek V4 Pro C MAIN. Exact70-file scientific selection
+  and independent full actual-data audit are complete. Preserve A/B's
+  qualified confidence and all final gates; data is not proof acceptance.
 
 ## What's Done
 
@@ -68,6 +68,30 @@ fresh final cold read; final clean delivery, wiki provenance and handoff.
 Dashboard/state and round-accounting repair do not clear any of these gates.
 
 ## Current state
+
+- **Actual C33/35 MAIN DATA independently checked; native preparation next
+  (2026-11-05):** Root read complete task/agent/assembler, the full independent
+  proposal/actual-data reports and their exact schemas/counts. Independent
+  actual reconstruction matches every1804522 input byte, current prefix/nav,
+  all70 full payloads/wrappers/endings/offsets and canonical33proof/35formal
+  source bodies/modules/environment keys, including093's heading convention.
+  All70 origins and12 held producer files remain unchanged. Actual joined
+  516885user+180agent+full180224 hard reserves=697289;351287 arithmetic room
+  is BEFORE UNKNOWN effective framing, not admission. All5 proposal findings
+  are adjudicated, including full focused variance AUTHOR report retention.
+  Complete custody/readbacks: reviews/2026-11-05-unitC-main-data/.
+  Root DATA minimum approves33OWN/35roles and full internal C construction,
+  with C-only contribution through093 to D's source/ordinary join. All075–087
+  remain assigned OWN, standalone/even-index/adjoint/norm-square/parallel006
+  qualifications remain explicit. No source-presence, producer preview or
+  author audit supplies mathematical acceptance. Root's complete4-module
+  source readback stays author evidence, not an extra model payload.
+  Next: exact committed-data binding, isolated carrier/effective framing,
+  minimal audited native-driver derivative and one fresh actual C MAIN.
+  No config/carrier/runtime/provider/call authority is granted by DATA alone.
+  Source28/PDF/native originals/old grades unchanged. Original all-model
+  actualC2/214/240/13/remainingMAIN/Kimi/sourcepixels/fullvisual/freshcold/
+  private-delivery gates remain OPEN. Goal ACTIVE.
 
 - **Bounded workflow audit adjudicated; actual C data audit active
   (2026-11-05):** Root read the full15221-byte workflow report and all11
