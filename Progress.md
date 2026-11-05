@@ -44,10 +44,10 @@ messages, publication, HPC or official Lean-companion creation.
 
 ## Current Subaim
 
-- [ ] Run one fresh actual DeepSeek MAIN call for each F/G/H block after
-  synchronized common delivery, holding source and metadata through all three
-  terminal readbacks. Adjudicate actual mathematics/reading/transport limits;
-  all whole MAIN/Kimi/source/visual/cold/private-delivery gates remain open.
+- [ ] Complete Root adjudication of actual F/G/H reports and author findings,
+  preserving native medium/low/conditional scopes. Reconcile whole scientific
+  inputs at calculation level before any complete-argument MAIN request;
+  Kimi/source/visual/fresh-cold/final private-delivery gates remain open.
 
 ## What's Done
 
@@ -80,6 +80,32 @@ Dashboard/state and round-accounting repair do not clear any of these gates.
   the complete technical companion and remains subject to independent review.
 
 ## Current state
+
+- **Actual F/G/H MAIN cohort terminal, clean transport and qualified math
+  (2026-11-05):** Threeindependent ONEfreshcalls ranoncommon27cabbb. F224.991933183s,
+  G170.855779858s,H242.240609871s; CLI0/stop/fresh2/tools0/exact3events each,
+  collectorincomplete=false ALL. Root independentlyverified exactuser/agent/
+  actualmodel/parent/title/cwd/root,every132F/139G/158H payloadspan, all253F/
+  235G/297H authorities/source28/PDF/carrier/code/reader and heldcleanHEAD.
+  All3terminalbeforeholdrelease. FULLREAD F24050bytes/316logical,G16293/252,
+  H29971/636 throughfinalnoLFEOF. Private reasoning NEVER math.
+  F: nativeMEDIUM interiors30, LOWclosedoccupationjoin. G: MEDIUMlocal24,
+  LOW-MEDIUMclosure/threeconditionalMEDIUMjoins. H: HIGHfinite194198 and
+  occupationwhite205213, MEDIUMintrinsic199204/bothjoins underactualoutside
+  conditions. No scope/gradeunion orunqualifiedwholeacceptance follows.
+  Finput716806+out6901+reason5626=729333; G732040+4643+2148=738831;
+  H807713+9404+2346=819463; cache0all. Observed83 beyondknowneachdoesnotreplace
+  unchangedconditional515. HTTPattemptsnottraced/orguaranteed. F/G/H fences
+  SPENT/no retry/supplement. Exactnative/cohortcustody:
+  reviews/2026-11-05-unitF-main-native/,
+  reviews/2026-11-05-unitG-main-native/,
+  reviews/2026-11-05-unitH-main-native/.
+  Authoradjudicationsheld; Rootfullreports/dispositionsnext. Report-onlyerrors/
+  omissions alreadyidentified byauthors staydistinctfromsourcegaps. Source
+  af97/technical263PDF/reader989/oldacceptedgrades unchanged. All21424013/
+  originalmodelactualC2/wholeMAIN/Kimi/sourcepixels/visual/cold/privateclose
+  remainOPEN. Whole-sciencecapacity/reconciliation work isongoing, notblocker
+  or permissionforunknownmathomission. Goal ACTIVE.
 
 - **F/G/H independent code audits and fresh actual preflights pass
   (2026-11-05):** Root FULLREAD finalF9784/G7980/H9804 code/framing reports,
