@@ -44,10 +44,10 @@ messages, publication, HPC or official Lean-companion creation.
 
 ## Current Subaim
 
-- [ ] Prepare and independently audit the fresh ThemeII.1 native runtime for
-  the three source/Young joins, using the approved59-OWN/60-role DATA only.
-  Actual startup/framing/one-call authority remains absent. The other joins,
-  genuine whole assessment and all final gates remain open.
+- [ ] Verify committed/pushed/<HUB>-equal delivery of the actual ThemeII.1
+  pure preflight checkpoint, then separately authorize ONE fresh coupled MAIN
+  invocation for the59-OWN/60-role/3-join task. No invocation exists at this
+  snapshot; all other joins, genuine whole assessment and final gates stay open.
 
 ## What's Done
 
@@ -82,6 +82,41 @@ Dashboard/state and round-accounting repair do not clear any of these gates.
   the complete technical companion and remains subject to independent review.
 
 ## Current state
+
+- **Actual ThemeII.1 code/framing and pure preflight passed (2026-11-05):**
+  Root FULLREAD final codeaudit12374bytes/cb2c4ed8 and separate947-byte wording
+  qualification/a4a19521; all45producer+67independent controls and actual
+  unfiltered141-payload/191-C1-member/150-authority snapshot pass. Generic H
+  common/preflight/run byte-identical, newguard764b6ff6 binds actual59/60/3,
+  S064 logicalgiven/CTX, pending outside clauses and full214/240/13/28 context.
+  Collector does not grade public text; the actual MAIN task still asks scoped
+  statuses/three join conclusions/unforced verdict-confidence, not a cold read.
+  Root now selects actual775075user/152agent/known joined385 includingagent:
+  nonagent233+UNCHANGED CONDITIONAL515 gives other748, NOT old744. Fullhard
+  output131072/boundary16384/system32768 retained; conditional956199/head92377
+  is not capturedHTTP/provider admission or proof-depth evidence. Actualusage
+  must pass. No supported internal-processor retry-disable knob is claimed.
+  Newcarrier HEAD6e68dea3/tree972dd8f5 is clean and exactly3files; no extra
+  Articleclone/PDFcopy. Root positive snapshot/capacity binds254 authorities.
+  ACTUAL fresh pure agent/config preflight23:04:23UTC and Root run-safe/context/
+  logical-link/date/source readback pass, stableagent5bb6d327; no generation.
+  Four-program CLIhashf9dab322,12toolsfalse/deny, MCP0,instructions[],refs{},
+  skilldisabled/shareoff/compactionoff and3envflags are verified. Raw private
+  diagnostics only anonymous regular handles; no rawconfig stored or displayed.
+  Root helper initially sought the wording addendum's absent separateHELD;
+  actual heldmanifest+receipt shape was inspected/rehashed before approval.
+  Auditor initial process-stub refusal likewise checker-only, not producergap.
+  Complete58-member/4056186-byte custody is in
+  reviews/2026-11-05-themeII-1-main-preflight/, archive de76084b/compressed1798079.
+  This checkpoint contains NO RUN/delivery authority/native output/fence;
+  Root must first verify C2 private delivery, then separately authorize ONE
+  fresh call with no supervisor retry/followup. All older lineages stay spent.
+  Root also FULLREAD II.2 working70752/table10053/29controls and III.3 bounded
+  check10630. II.2 one AUTHOR caption list is indexshifted; separate qualification
+  preserves correct rawcounts1,3,15 at k1,2,3 and fullfactor2,2,4/3. Formula/
+  controls/source alreadycorrect, no sourcegap. II.4 authorwork now frozen;
+  Rootreading remains. All scienceTeX/PDF263/acceptedgrades/80Lean unchanged;
+  integratedMAIN/actualKimi/source/visual/cold/wiki/finaldelivery gates stay open.
 
 - **ThemeII.1 DATA frozen and scoped minimum approved (2026-11-05):**
   Root FULLREAD final source/Young working34552/table10369/report4961/controls,
