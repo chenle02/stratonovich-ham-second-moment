@@ -44,10 +44,10 @@ messages, publication, HPC or official Lean-companion creation.
 
 ## Current Subaim
 
-- [ ] Adopt checked F DATA-v2 and G DATA as DATA-only, then prepare actual F
-  MAIN. Correct the H task scaling claim in a preserved successor before its
-  DATA approval. Retain E scoped HIGH/conditional joins/collector INCOMPLETE,
-  D MEDIUM, paired reader and all remaining independent/final gates.
+- [ ] Complete F/G isolated native preparation and independent code/framing
+  checks, then their actual MAIN reviews on frozen current source. Verify H
+  DATA-v2 threshold-scaling correction before its DATA approval. Retain E
+  scoped HIGH/conditional joins/collector INCOMPLETE and all final gates.
 
 ## What's Done
 
@@ -80,6 +80,19 @@ Dashboard/state and round-accounting repair do not clear any of these gates.
   the complete technical companion and remains subject to independent review.
 
 ## Current state
+
+- **G actual DATA adopted for full assigned scope only (2026-11-05):**
+  Root read complete30156-byte task/852-byte agent and final11710-byte
+  independentactualaudit, then rechecked all139 literalspans/currentproof/
+  formalowner/body/ordinalbindings. Full2568691bytes/24OWN/25roles,
+  all14precisions and THREEcompletejoined assignments retain actualpending
+  clauses; H interpretations aredownstream, neverinventedGpremises. Fifteen
+  purecorruptions arecustodycontrols, notscientificvotes. User731521+agent207+
+  fullhard180224=911952;136624 room is BEFORE UNKNOWN framing. Rootminimum
+  35e4c4eb… approves DATAcompleteness ONLY. Exact47-membercustody:
+  reviews/2026-11-05-unitG-main-data/. No runtime/framing/call/fit/scientific
+  acceptance; source28/PDF/oldgrades/all214/240/13/originalactualC2/finalgates
+  unchanged. F/G isolatedcodeprep may proceed; actualgeneration staysseparate.
 
 - **F current DATA-v2 adopted as DATA only (2026-11-05):** Root read full
   v1 task/agent and exact v2 changes, final5479-byte different-producer audit,
