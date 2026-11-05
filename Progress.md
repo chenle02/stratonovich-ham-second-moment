@@ -44,10 +44,10 @@ messages, publication, HPC or official Lean-companion creation.
 
 ## Current Subaim
 
-- [ ] Adjudicate actual D MEDIUM conditional review without upgrading depth or
-  joined coverage; bind checked E DATA to isolated native preparation. Root read
-  of the G independent proposal audit and H preparation remain pending. Keep
-  paired reader/full technical companion and all final independent gates.
+- [ ] Complete independent E native code/framing audit, then Root fresh pure
+  preflight and one actual E MAIN review. F DATA-only construction and H
+  source-only proposal are active; G scope is selected. Keep D MEDIUM and all
+  unresolved joins, paired reader and final independent gates unchanged.
 
 ## What's Done
 
@@ -80,6 +80,39 @@ Dashboard/state and round-accounting repair do not clear any of these gates.
   the complete technical companion and remains subject to independent review.
 
 ## Current state
+
+- **D public/source adjudication completed without grade promotion
+  (2026-11-05):** Root read entire23540-byte native public/no-LF EOF and final
+ 14379-byte author report, directly checked G174/E124/E125/D107/D111/G189
+  source calculations, and adjudicated all7 findings plus the import boundary.
+  M1: G189 needs L2OmegaL2(D)/average OF SQUARES/twofixed-delta limits, not
+  scalar D110. Q2: productC>=1 is explicit in source and follows actual F
+  constantblock; abstract3/16vs1/8 scalar warning is outside actual class.
+  Q3: restartorientation correct, stoppedpathusesmin(u,ell_m). Q4: D095
+  uniformvariancehypotheses retained. E5: whiteHAMorder2 distinct from g4 Wick
+  controls. Q6: actualleftsum and4/16/48 recurrence correct despite loose
+  indices. Q7: D111 bounded fixed-horizon H/G families allowed; no blanket
+  h_delta ban or growingT/R bound. Named externalbook proofs need exact
+  applications, not gratuitousfullreproof; unworked OWN clauses remain real
+  limits. No new sourcegap/repair is established; nativeMEDIUM and BOTH
+  conditional joins remain unchanged. Authoravailability is not nativework.
+  Exactcustody: reviews/2026-11-05-unitD-main-adjudication/. No retry/supplement.
+  Fullsource/PDF/oldgrades/allmodelactualC2/all214/240/13 and finalgates stay.
+
+- **F/G scope selections and E code preparation (2026-11-05):** Root read
+  completeGproposal22942 and finaldifferent-authorGreport17353, with863
+  source/retention/countchecks. Full138Gorigins+fullaudit are selected as139
+  for laterDATA,24OWN/optionalS064union25/threecanonical completejoins with
+  genuineoutsideconditions. Full131Forigins+fullaudit selectedas132 for
+  currentDATA-only construction,30OWN/optionalS064union31/occupationjoin plus
+  sixpartialcontributions. Separatefilecounts do not assert joinedfit.
+  E actualpureprep/runtime are HELD; common/preflight/run byteidenticalD,
+  guard changes only actualE scope/data/full+partialjoins. Actualknown426
+  includesagent197; other744 and fullconditionaltotal837729/head210847.
+  Forty-ninepurecontrols/actualsource109/C1archive/carrier/source28/PDF pass.
+  Independentcode/framingaudit is active; no Rootframing/preflight/runauthority
+  or generation exists. H actualcanonical20OWN has23formals(3CONTEXT),
+  optionalS064union24; proposal remains in preparation, no roles invented.
 
 - **E actual DATA independently reconstructed and approved only as DATA
   (2026-11-05):** Root read full25910-byte task/871-byte agent and complete
