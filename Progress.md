@@ -44,10 +44,10 @@ messages, publication, HPC or official Lean-companion creation.
 
 ## Current Subaim
 
-- [ ] Adjudicate the actual D MEDIUM conditional review without upgrading its
-  depth or joined coverage; independently check the E DATA postimage and G
-  scientific proposal. Retain paired reader/full technical companion and all
-  remaining whole MAIN/Kimi/source/visual/cold/final gates.
+- [ ] Adjudicate actual D MEDIUM conditional review without upgrading depth or
+  joined coverage; bind checked E DATA to isolated native preparation. Root read
+  of the G independent proposal audit and H preparation remain pending. Keep
+  paired reader/full technical companion and all final independent gates.
 
 ## What's Done
 
@@ -80,6 +80,24 @@ Dashboard/state and round-accounting repair do not clear any of these gates.
   the complete technical companion and remains subject to independent review.
 
 ## Current state
+
+- **E actual DATA independently reconstructed and approved only as DATA
+  (2026-11-05):** Root read full25910-byte task/871-byte agent and complete
+  proposal/audit. Independently rebuilt every2302099 input byte from109 full
+  originals and literalframing without importing/executing producer.2032
+  principalchecks plus all28/29navrows match actual214proof/240formal bodies,
+  E28owners/29roles/envordinals, all12precisionclauses/F143addition and both
+  complete joined scopes with exact outside-OWN qualifications. Three in-memory
+  corruptions refused. All109origins/held producer unchanged. Pinnedindependent
+  user656564+agent197+hard180224=836985;211591 room is BEFORE UNKNOWN framing.
+  Initial wrongwhole214/FULL_HELD namespace assumption refused; actual B21/
+  FULL_CONTEXT contract corrected in checker with preimage/diagnostic preserved.
+  No producer/source defect follows. Root DATA minimum b7643bea… approves
+  completeness ONLY, no profile/carrier/runtime/framing/modelcall/fit/grade.
+  Exact47-member custody: reviews/2026-11-05-unitE-main-data/.
+  G independent863-check proposal audit is HELD, Root fullreport read pending.
+  H20 source-only proposal is being prepared. Technicalsource/PDF/old grades,
+  all214/240/13/originalactualC2 and all independent/final gates remain unchanged.
 
 - **Reader notation corrected with TeX/PDF SAME commit (2026-11-05):**
   Root read the complete original-reader AUTHOR audit9372bytes. Its R1 is an
