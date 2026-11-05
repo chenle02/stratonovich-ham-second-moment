@@ -81,6 +81,20 @@ Dashboard/state and round-accounting repair do not clear any of these gates.
 
 ## Current state
 
+- **F current DATA-v2 adopted as DATA only (2026-11-05):** Root read full
+  v1 task/agent and exact v2 changes, final5479-byte different-producer audit,
+  and directly rechecked all132 literal spans/sourceproof/formal bindings.
+  Exactly two captions now allow all REAL sigma, gamma>0 and sufficient
+  index conditions; task+36bytes/user+10tokens. All132 mathematical payloads,
+  agent923B/nav/30proof31roles/onefull6partial/13precisions remain unchanged.
+  Independent514checks/fourcorruptions pass; audit explicitly records v1
+  author versus Driver-v2 producer and its fixed-reader diagnostic correction.
+  User716294+agent200+hard180224=896718, room151858 BEFORE UNKNOWN framing.
+  Rootminimum3fd63182… grants completeness ONLY, never scientific/nativefit/
+  runtime/call acceptance. Complete70-member original+successor custody:
+  reviews/2026-11-05-unitF-main-data/. Next isolated native preparation and
+  independent code/framing audit; all original/final gates remain unchanged.
+
 - **Actual E MAIN terminal/source/transport adjudication preserved
   (2026-11-05):** ONEexplicitinvocation ended1037.481713465s/CLI0/stop,
   fresh2messages/tools0; TWOdistinctstepstarts mean collectorINCOMPLETE remains.
