@@ -6,6 +6,28 @@
 
 ## Current state
 
+- **Actual scoped MAIN preflight passes; private release pending
+  (2026-11-04):** DataC1 is28e5fa2. The minimal v4 derivative binds the exact
+  current24/38 constructor scope, C1/user/agent/carrier and conditional707257
+  count, retaining all hard reserves and the full conditional515 margin.
+  Independent code replay passes32 producer+16 additional pure cases. Root
+  read its full report/diff and the full independent framing report. Actual
+  readonly positive checks match95 authority/source files,28 science modules,
+  PDF and C1 capsule. The actual pure preflight now passes the exact model,
+  prompt, deny-all12 tools, MCP0, config/agent/instruction/reference bindings,
+  shareoff/compactionoff, freshness and logical config resolution. A Root seal-
+  field assumption caused an initial pre-authority refusal; the unchanged
+  guard stopped before CLI activity, and the correction/original failure are
+  retained. No input/profile/code changes were required.
+  Complete verified custody is at reviews/2026-11-04-unitA-main-preflight/.
+  Run authority/READY delivery/fresh fence/native output are absent at this
+  checkpoint. Next: private push/<HUB> equality and immediate operator
+  guards, then ONE actual DeepSeekV4Pro scoped MAIN invocation. No automatic
+  retry/followup or scientific confidence is implied. This scoped step does
+  not compose whole HIGH or replace full214/240/13/original-model/C2 gates.
+  Whole MAIN remains INCONCLUSIVE/core-medium/whole-low; Kimi/sourcepixels/
+  fullvisual/freshcold/finaldelivery remain OPEN. Goal ACTIVE.
+
 - **Actual foundational MAIN data independently checked (2026-11-04):**
   Root selected24 current OWN001–023+214,38 formal-role checks and the exact
   constructor coupling for a distinct review step. Canonical ownerA is37;
