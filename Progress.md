@@ -6,6 +6,29 @@
 
 ## Current state
 
+- **Scoped native A adjudication complete; confidence unchanged (2026-11-04):**
+  Root read all three complete author batches, all15 findings and full22121B
+  020–023 working/role table. No concrete source gap was located under the
+  named current inputs. Report-local Gaussian-product wording needs actual
+  finite-degree/weighted closure;214 uses finite heat edges.012 mixes sector/
+  diagram/row levels but its final11/540 is correct.014's public expansion
+  reference is unresolved,010's tilde is only order, andM3 is spatially sharp
+  despite the blanket nonsharp caption. Exact corrections and all findings
+  are adjudicated at reviews/2026-11-04-unitA-main-adjudication/.
+  Full author020–023 deductions now display fixed-shift positive-width M3
+  sharpness, sufficient all-center M2, distributional PD, wedge/Beta/sphere
+  projection and positive-width Fatou, plus conditional Holder/Dirichlet/
+  factorial/limit transfer. These do not retroconvert native limitation4 into
+  independent coverage. Named external3.1 remains legitimate, not OWN/book
+  reproof debt. Source/PDF/native originals/old grades are unchanged.
+  Native HIGH is still finite/algebraic and constructor-acyclic only; no full
+  analytic A/whole HIGH or automatic composition. No retry/supplement approved.
+  Next: retain the independently checked036/049–051 actual upper working,
+  then continue substantive MAIN coverage of the remaining proof blocks and
+  joins, carrying these exact current clauses/depth limits. All original
+  model/C2/214/240/13/Kimi/sourcepixels/fullvisual/freshcold/private-delivery
+  gates remain OPEN. Goal ACTIVE; manuscript conclusion remains provisional.
+
 - **Actual foundational DeepSeek MAIN returned; scientific adjudication active
   (2026-11-04):** One fresh actualDeepSeekV4Pro scoped24-proof/38-role job
   completed305.102151945s, CLI0/stop/fresh2/tools0. Root verified actual
