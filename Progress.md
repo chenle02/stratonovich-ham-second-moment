@@ -81,6 +81,24 @@ Dashboard/state and round-accounting repair do not clear any of these gates.
 
 ## Current state
 
+- **H corrected DATA-v2 adopted ONLY as current DATA (2026-11-05):** Root
+  read complete37060-byte task/883-byte agent/final9518-byte postimageaudit
+  and rechecked all158 spans, actual20proof/24formal identities and old156
+  offsetdelta3073. Both activefinite-Gram captions now state valid c>0
+  jointthresholdlaws, zero-thresholdspecialcase/c0direct; fullproof/exact
+  counterexample/physicalr³C,r²b diagnostic retained. Originalv1/task/selection/
+  proposal/audits remainfrozen and semanticallyUNAPPROVED. Other16precisions,
+  agent/nav/old156wholeframes unchanged; twoFULLcorrections append to158.
+  CanonicalownerH23=20OWN+3CTX, plusS064 gives24=20OWN/4CTX/0EXT; no invented
+  contextproof. Correctingauthor's postimageaudit ismechanical, not a second
+  scientificvote.13+6purecorruptions pass. User807183+agent218+hard180224=
+  987625;60951 room is BEFORE UNKNOWN framing. Rootminimum0bc45661… approves
+  completenessONLY. Completeoriginal+successorcustody:
+  reviews/2026-11-05-unitH-main-data/. No sourceproof/technicalPDF/oldgrade
+  changed; no runtimefit/call/wholeacceptance. Originalallmodels/actualC2/
+  21424013 and independent/finalgates remain. F/G codeaudits areheld orbeing
+  finalized; H isolatednativeprep may followcommitteddelivery. Goal ACTIVE.
+
 - **G actual DATA adopted for full assigned scope only (2026-11-05):**
   Root read complete30156-byte task/852-byte agent and final11710-byte
   independentactualaudit, then rechecked all139 literalspans/currentproof/
