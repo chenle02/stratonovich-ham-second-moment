@@ -6,6 +6,24 @@
 
 ## Current state
 
+- **Actual B37/48 preflight passes; private release pending (2026-11-04):**
+  Input765b136, minimal guarded A→B derivative and exact actual Root minimum/
+  count/frame/carrier bindings are frozen. Root read the complete independent
+  code audit/diff and framing audit;33 producer+43 independent pure cases pass.
+  Actual readonly snapshot and pure preflight match138 source/authority files,
+  28 science modules, PDF, C1 input/code/carrier, exact model/prompt,12 denials,
+  MCP0/instruction/reference controls, date/config fingerprints/shareoff and
+  compactionoff. Logical configuration resolution/freshness also pass. Known377
+  includesagent148; unchanged conditional515 gives907341 with full hard reserves.
+  No exact future HTTP/template or scientific-acceptance guarantee is inferred.
+  Complete original custody: reviews/2026-11-04-unitB-main-preflight/.
+  Root run authority/READY delivery/fence/native output are absent here. Next:
+  private push/<HUB> equality, immediate operator guards and ONE actual
+  DeepSeekV4Pro B MAIN invocation. Hold all Git writers until its terminal
+  invariance check. Source/PDF/grades unchanged. All original C2/model/214/240/
+  13/wholeMAIN/Kimi/sourcepixels/visual/freshcold/private-delivery gates remain
+  OPEN; no automatic retry/followup. Goal ACTIVE.
+
 - **Actual B37/48 review data independently checked (2026-11-04):** Root read
   the full actual task/agent and full retention/delta/framing audit reports.
   Independent v1 reconstruction matches every2556657 input byte and all111
