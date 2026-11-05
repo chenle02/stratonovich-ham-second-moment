@@ -6,6 +6,33 @@
 
 ## Current state
 
+- **Actual foundational MAIN data independently checked (2026-11-04):**
+  Root selected24 current OWN001–023+214,38 formal-role checks and the exact
+  constructor coupling for a distinct review step. Canonical ownerA is37;
+  the assessed union additionally retains S067 conjecture context. The
+  original proposal's37 set had omitted S078 while adding S067. The source
+  always contained both; the wrong proposal/draft/Root selection and explicit
+  corrections are preserved. Actualv2 now checks S078 and the correct38 union.
+  All28 current source modules/full214/240/13 navigation remain; calibration
+  is only A's contribution and the original whole goal is unchanged.
+  Independent actual-byte reconstruction covers all1833702 user bytes,
+  all64 payloads, exact scientific selections/historical wrappers and paired
+  false010/corrected formulas. Actual concatenated526098 user +191 agent
+  +131072/16384/32768 reserves =706513 before unknown framing. Root read both
+  full audit reports and the actual task/agent. The isolated carrier is sealed;
+  two pure local startup diagnostics made zero generation requests and found
+  the exact DeepSeekV4Pro route with all12 tools denied. Known joined system
+  counts420 inclagent191; retaining conditional515 gives provisional707257.
+  Fresh independent framing and minimal native-driver binding/code checks
+  remain pending; no provider call or scientific acceptance is authorized by
+  this data record. Verified private custody/readbacks are at
+  reviews/2026-11-04-unitA-main-data/.
+  Next: bind the existing audited driver to this committed scoped input,
+  complete its fresh audits/operator guards/private sync, then release one
+  actual scoped MAIN review. Whole MAIN remains INCONCLUSIVE/core-medium/
+  whole-low; all original model/C2/214/240/13, MAIN HIGH/Kimi/source-pixel/
+  fullvisual/freshcold/finaldelivery gates remain OPEN. Goal ACTIVE.
+
 - **Mixed/all-order and uniform phase-product deductions checked
   (2026-11-04):** Root read complete002/008 and180–184 working notes, both
   prerequisite/consumer tables and the actual source. The width-uniform
