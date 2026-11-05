@@ -1,0 +1,147 @@
+{
+  "kind": "ROOT_F_AUTHOR_PUBLIC_ADJUDICATION_NOT_NEW_PROOF_ACCEPTANCE",
+  "native_public_sha256": "0975d5c6dc7022b48696f191fa7a599d5dcfaa8b8d2369961a7cc4dd5619466e",
+  "author_report_sha256": "cc6c67bacccc9c5f41ef8930bb71b41b57de38f83656275164d088a46872b69a",
+  "Root_full_native_public_and_final_author_report_read": true,
+  "dispositions": [
+    {
+      "id": "F-REPORT-01",
+      "author_finding": {
+        "id": "F-REPORT-01",
+        "classification": "MINOR_RETURNED_SIGN_WORD_ERROR_NOT_SOURCE_GAP",
+        "public_LF": [
+          44
+        ],
+        "literal": "**WORK verified.** The proof checks: `0<K\u2217(u)\u2264|u|^{-a}` off zero by dropping the positive quadratic damping; even/positive/decreasing; local integrability from `a<1`. With `\u03a6(t)=\u222b_0^t K\u2217`, concavity (negative decreasing integrand) gives `row(s)=\u03a6(s)+\u03a6(1\u2212s)\u22642\u03a6(1/2)=:R\u2217`. The diagonal convention contributes no time mass. Verified; this is not a finite pointfield covariance.",
+        "source_path": "notes/integrated_spatial_occupation.tex",
+        "source_LF": [
+          343,
+          350
+        ],
+        "actual_math": "Kstar is positive and decreasing off0; Phi prime=Kstar>0 and Phi is concave because the derivative is decreasing. The integrand is not negative. Public row-maximum formula and conclusion remain correct.",
+        "source_repair": false
+      },
+      "Root_disposition": "UPHELD_AT_EXACT_REPORT_SOURCE_AND_SCOPE_BOUNDARY",
+      "Root_reason": "Positive decreasing Kstar gives a concave primitive. Root read SO343\u2013350; returned negative-integrand word is wrong, row bound/source correct."
+    },
+    {
+      "id": "F-REPORT-02",
+      "author_finding": {
+        "id": "F-REPORT-02",
+        "classification": "RETURNED_CANONICAL_OWNER_CAPTION_ERRORS",
+        "public_LF": [
+          21,
+          83,
+          154,
+          202,
+          311
+        ],
+        "literals": [
+          "**Verdict.** No genuine contradiction, circularity through the final intrinsic constant, wrong normalization, or missing assigned step was located in the 30 assigned F deductions at the level of their *own* interiors, under the inputs they explicitly consume. Several deductions are conditional on upstream clauses that this bounded F pass did not reprove from scratch (notably E135/E138 representative-transfer and four-linear extension, D095/093\u2013100 driver/source family, and H204 used by the downstream H208/H209 interpretation). Those remain honest pending conditions rather than proven gaps.",
+          "**WORK verified, input D095/105.** Gaussian transfer with mask and genuine `F` extension gives actual centered compact paths stopped at `\u2113_m` in the little-H\u00f6lder space; every linear statistic is `W(k_\u2113)` with `k_\u2113\u2208H_I`; endpoint/empty-last handled. No smooth-time/uniform optimizer assumption.",
+          "**Status.** VERIFIED-COND (inputs E073/083/093 wave-variance/finite-Gaussian/driver).",
+          "**Status.** VERIFIED-COND (inputs D093/095/097\u2013100).",
+          "- Full **D-side** parent 093\u2013100,107\u2013111;"
+        ],
+        "actual_owners": {
+          "PROOF073": "C",
+          "PROOF083": "C",
+          "PROOF093": "C",
+          "PROOF095": "D",
+          "PROOF105": "D"
+        },
+        "assessment": "Range093\u2013100 crosses C/D;093 cannot be labeledD. At158,073/083/093 are C, not E. These captions do not change the actual proved inputs, source clauses or pending conditions. LF310 E-side parentsB048\u2013051 is reasonably funding-branch wording, not an assertion that canonical ownerB has changed."
+      },
+      "Root_disposition": "UPHELD_AT_EXACT_REPORT_SOURCE_AND_SCOPE_BOUNDARY",
+      "Root_reason": "093 and073/083 belong C, not D/E. B048\u2013051 retains B prefix and may describe E financing. No actual source ownership/cycle change."
+    },
+    {
+      "id": "F-REPORT-03",
+      "author_finding": {
+        "id": "F-REPORT-03",
+        "classification": "MINOR_NONCONTIGUOUS_FORMAL_PROOF_TABLE_CAPTION",
+        "public_LF": [
+          240,
+          241
+        ],
+        "literals": [
+          "| S182\u2013S185 | 156\u2013160 | VERIFIED(-COND) |",
+          "| S186 | 159 | VERIFIED |"
+        ],
+        "actual_map": {
+          "S182": "PROOF156",
+          "S183": "PROOF157",
+          "S184": "PROOF158",
+          "S185": "PROOF160",
+          "S186": "PROOF159"
+        },
+        "assessment": "The row156\u2013160 is overinclusive shorthand for four IDs; next row correctly identifies159/S186. The individual proof sections and current31-binding set are correct. Read row240 as156/157/158/160, not duplicate coverage/ownership for159."
+      },
+      "Root_disposition": "UPHELD_AT_EXACT_REPORT_SOURCE_AND_SCOPE_BOUNDARY",
+      "Root_reason": "S182\u2013S185 map156/157/158/160;159 mapsS186. Grouped native table shorthand overinclusive; individual sections are correct."
+    },
+    {
+      "id": "F-QUAL-04",
+      "author_finding": {
+        "id": "F-QUAL-04",
+        "classification": "COMPRESSED_YOUNG_CASE_QUALIFICATION_NOT_NEW_GAP",
+        "public_LF": [
+          99
+        ],
+        "literal": "**WORK verified.** Complete scaled norm `N_\u2113`, contraction ratio `c_\u03b8 d\u2113^\u03b8\u22641/4`, patching into at most `2B(4c_\u03b8 d)^\u03bd` pieces; no-prefactor `exp{c_{\u03b8,B}(d+d^\u03bd)}`; uniform inverse control on a fixed driver ball. Only the Banach Young remainder estimate is imported; the flow construction is derived.",
+        "source_path": "notes/integrated_young_upper_foundation.tex",
+        "source_LF": [
+          38,
+          46
+        ],
+        "assessment": "The at-most2B(4ctheta*d)^nu count is only the large-driver branch ctheta*d*B^theta>1/4. Small drivers use whole-interval contraction; d0 givesI. The public correctly gives the resulting exp(c(d+d^nu)) and zero-case perturbation, but does not spell out this branch condition. Do not apply the partition count atd0."
+      },
+      "Root_disposition": "UPHELD_AT_EXACT_REPORT_SOURCE_AND_SCOPE_BOUNDARY",
+      "Root_reason": "Root read YU31\u201365: 2B(4cd)^nu partition bound only large-driver branch. Small branch uses one whole interval and d0 identity. No source gap."
+    },
+    {
+      "id": "F-LIMIT-05",
+      "author_finding": {
+        "id": "F-LIMIT-05",
+        "classification": "GENUINE_PUBLIC_WORK_AND_PENDING_CONSUMER_BOUNDARY_NOT_SOURCE_MISSING",
+        "public_LF": [
+          21,
+          23,
+          248,
+          275,
+          308,
+          316
+        ],
+        "assessment": "Public explicitly reports MEDIUM internalF under inputs, LOW for closedoccupationjoin, and unreconstructed outside OWN. All28 source modules were present; no not-supplied claim occurs. The join skeleton does not individually work E136/H206/H207/H208/H209 or allH204 source/moment antecedents. H204 is only the later actualC2 interpretation, not needed to finance E132/E137 or construct F141/142 spaces. Full-source presence and author replay do not supply missing native deductions. No parent/status synthesis or confidence upgrade is made."
+      },
+      "Root_disposition": "UPHELD_AT_EXACT_REPORT_SOURCE_AND_SCOPE_BOUNDARY",
+      "Root_reason": "Native occupation skeleton does not individually derive H206/fullHselection/scalar/bracket/204 parent. Keep MEDIUMinteriors/LOWclosedjoin; source/author availability is not extra native working."
+    },
+    {
+      "id": "F-QUAL-06",
+      "author_finding": {
+        "id": "F-QUAL-06",
+        "classification": "AMBIGUOUS_EARLIER_CLAUSE_REFERENCE_NOT_VERIFIED_SOURCE_CYCLE",
+        "public_LF": [
+          135
+        ],
+        "literal": "**Status.** VERIFIED-COND (inputs D095/CM146/155 earlier clauses).",
+        "source_path": "notes/integrated_uniform_mean.tex",
+        "source_LF": [
+          330,
+          425
+        ],
+        "assessment": "155 earlierclauses is imprecise. Actual155 uses actualsourceGaussiantransfer, supported residual147, completed covariance148 atJ0 and regulator154; its own earlier calculation inside the proof is not an assumed complete155 theorem. Current source shows no155->155 premise cycle."
+      },
+      "Root_disposition": "UPHELD_AT_EXACT_REPORT_SOURCE_AND_SCOPE_BOUNDARY",
+      "Root_reason": "Root read UM330\u2013370 actual147/supported rows/148J0/154 regulator. Earlier155 calculations do not assume completed155 theorem; no source self-cycle."
+    }
+  ],
+  "native_confidence_scope_preserved": "MEDIUMF30/LOWclosedoccupation",
+  "original_collector_incomplete": false,
+  "no_source_gap_established_under_actual_exposed_contracts": true,
+  "source_PDF_oldacceptedgrades_changed": false,
+  "no_extra_native_working_by_author_availability": true,
+  "retry_supplement_model_or_scientific_acceptance_authorized": false,
+  "whole21424013_all_original_models_actualC2_final_gates_open": true
+}

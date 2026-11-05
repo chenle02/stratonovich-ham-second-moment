@@ -44,9 +44,9 @@ messages, publication, HPC or official Lean-companion creation.
 
 ## Current Subaim
 
-- [ ] Complete Root adjudication of actual F/G/H reports and author findings,
-  preserving native medium/low/conditional scopes. Reconcile whole scientific
-  inputs at calculation level before any complete-argument MAIN request;
+- [ ] Reconcile the whole scientific minimum at calculation/primary-use level
+  and select a genuine complete-argument MAIN assignment without dropping
+  unique mathematics or inherited conditions. F/G/H adjudication is preserved;
   Kimi/source/visual/fresh-cold/final private-delivery gates remain open.
 
 ## What's Done
@@ -80,6 +80,35 @@ Dashboard/state and round-accounting repair do not clear any of these gates.
   the complete technical companion and remains subject to independent review.
 
 ## Current state
+
+- **Root F/G/H adjudication complete; source and outcomes unchanged
+  (2026-11-05):** FULLREAD completeauthorF17316/G15459/H18952 plus allactual
+  publics throughEOF. Every6F/5G/13H finding has explicitRoot disposition,
+  withdirectsourcechecks SO343350/YU3165/UM330370/SU117122157162/PG216238/
+  WE2259/IC379428 and actualownedsourcebindings. No manuscriptgap established
+  under actualcurrentcontracts; no sourcerepair or acceptedgradechange.
+  F: positiveKstar word, Cownerprefixes, noncontiguousS182185/159S186,
+  large-driverpartitionbranch and actualearlier155clauses clarified; LOW
+  closedoccupationjoin notbackfilled bysourceavailability. G: missingentire
+  tail/delta exponent isliteralreturnederror (source176/191correct); actual
+  scalarcountere24 versuswrong4e7/4 retained.173self-input/Eclockowners,
+  actualUP179 OWN quantitativework/S064selected scope clarified. H: wrong
+  0.302decimal/unstated2labelweights, falsefprimeAC, undefinedA1; sourcecorrect.
+  Rootexactrationalbracket provesfinitevalue<0.291, not0.302. D4testvalue,
+  covarianceidentity/noinverse and H1CLASS/norm distinction retained.
+  Missingnativefullpositiveformula/moduluscontrol/generic-vs-Econstants/
+  requiredparent/primary/scalingbijection work remain realpublicdepthlimits.
+  Legitimateexternalproofimports donotcreatewholebookdebt; currentOWN cannot
+  beexempted oraccepted bymetadata/authorstatus. NativeF MEDIUM/LOW,G MEDIUM/
+  LOW-MEDIUM,H finitewhiteHIGH/intrinsicjoinsMEDIUMconditional stayliteral.
+  No author-to-native reattribution/voteunion/retry/supplement. Exactcustody:
+  reviews/2026-11-05-unitF-main-adjudication/,
+  reviews/2026-11-05-unitG-main-adjudication/,
+  reviews/2026-11-05-unitH-main-adjudication/.
+  RootHmanifestreader initialpath/file keymismatch stoppedbeforeHwrite; actual
+  file-schema inspected/rehashed, originalsuntouched. Whole-sourceminimum
+  planning/reconciliation isnextcorework, notapprovaltoshedunknownmath. All
+  21424013/originalmodels/actualC2 and remainingindependentgates stayOPEN.
 
 - **Actual F/G/H MAIN cohort terminal, clean transport and qualified math
   (2026-11-05):** Threeindependent ONEfreshcalls ranoncommon27cabbb. F224.991933183s,
