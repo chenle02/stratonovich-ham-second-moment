@@ -1,137 +1,75 @@
-Last updated: 2026-11-04 19:22 UTC (Codex)
+Last updated: 2026-11-05 21:14 CST (<MACHINE>, Codex)
 
-Full original goal ACTIVE. DeepSeek V4 Pro MAIN; required Kimi and all final
-gates retained. No source/PDF/grade change from this preparation/review wave.
+# HANDOFF
+
+Project: Article-Stratonovich-HAM-Second-Moment. Research goal PAUSED by Le.
+Wiki strategy: ../SPDEs-wiki/content/projects/stratonovich-ham-second-moment.md
+Workflow authority: ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave/Progress.md. Historical entries below are archived
+snapshots; this current header, next step and Progress status govern.
 
 ## ⏭ Next session: where to stand and what to do
 
-Read the actual whole-current-source inventory, completion matrix, MAIN-versus-
-cold policy and source assembly guide at ACTIVE
-reviews/2026-11-04-whole-project-verification-inventory/. Then inspect Driver's
-bounded retention/context reconnaissance at
-../../../../.local/state/Le-AI-Lab/stratonovich-af97-whole-retention-capacity-recon-20261104/.
-The immediate work is reconciling its exact mathematical-content retention,
-operational-only custody split and actual request-versus-private-code accounting.
-No new format, reduced budget, packet, runtime or provider call is approved.
+Stand in the research checkout, relative to this handoff:
 
-ACTIVE is ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave,
-branch research/fixed-mask-young-20261031,HEADa7d655b6bec8653d444428cc5c1e0b57be38de43.
-Progress.md remains sole workflow authority. The full214CURRENT OWN/240formal/
-13joins scope is concretely inventoried; every required source, unique worked
-argument, hypothesis, correction and pending premise remains accounted. Native
-prose/keyed WORK plus a compact scientific coverage index is a prospective
-option only. A final cold paper+bibliography read is separate and cannot replace
-unfinished MAIN. B21 is CLOSED INCONCLUSIVE/medium, not reusable for confidence.
+```bash
+cd ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave
+sed -n '1,180p' Progress.md
+```
 
-Driver's known literal additive baseline is884009plain; pure-category neutral
-880115plusONLY131072/16384/32768 hardreserves already1060339,over11763 BEFORE
-runtime/config/overhead/newwholemetadata. Legible field-layout/column factoring
-861326 and extra exact duplicate-value factoring859918 still fail the inherited
-full floor by23311/21903. Restoration alone does not prove reader equivalence.
-New explicit protocol-to-custody/math-caution split and accurate delivered-
-request accounting audits remain separate WIP. Preserve all failed bounds.
-
-No native process is live. No current B21 addendum fits unchanged reserves;
-never restart47381/PID1202244 or seek a confidence/format retry.
+The goal is PAUSED. Loading this checkpoint or running retro does not resume
+research. After Le explicitly resumes, the immediate next step is an independent
+transcription/application audit of the frozen paired 267-page integration draft
+against the complete reviewed pairing proof and its actual source cutoff law.
+Use the R01–R15 map and exact diff in ../../../../.local/state/Le-AI-Lab/themeII-pairing-product-envelope-integration-draft-20261105; the existing skeptic is
+PASS_WITH_NOTES/MEDIUM, accepted=false at HIGH. Do not adopt the draft or restart
+that terminal reviewer merely to obtain a higher confidence. The old U/C input
+layouts remain over context; choose a subsequent substantive MAIN scope only
+with complete mathematics and fresh admission checks.
 
 ## Pre-flight checks
 
-1. ROOTpre-handoffe9ee9c936bf917cc0b6a220d8fc191e4046e3860/master; ACTIVEa7d655b
-   clean/pushed/<HUB>-equal at snapshot. Sourceaf97 and all28TeX unchanged;
-   PDF263 SHA096cb3cd4610c91d7dc8718bd56526e777cdd06ebca41651a8955bc230eb2f35.
-   Existing clean build stands. ROOT is launcher; research belongs in ACTIVE.
-2. B21 actual MAIN SIDses_e584bd594ffeLfZI5ijKP3J7X7,397.0985638820566s,
-   CLIexit0/stop/fresh2/actualDeepSeekV4Pro/tools0/allinputssame. Rootsupervisor
-   tool47381 exited2 only because strict public JSON parse refused the wrapper.
-   PID1202244/start69509085 andsupervisor1202233 are terminal; no native job live.
-3. Original127987B public a7c8788678de519208ea1aaa4f824fe0301339c397248c23cdf54b227092512f
-   contains intro/fencedJSON/suffix. Exact bytes530:126552 are126022B/b217d4cb;
-   this is DERIVED syntax custody, never a rewritten native or passing master.
-   RawINCONCLUSIVE/medium,8CHECKED13LIMITEDproofs,16CHECKED44LIMITEDformals,
-   LIMITEDjoin,3LIMITED1CHECKEDquestions,4modelCH/4cycleCH/primary3LIM1CH/
-   finite12CH2LIM. Frozen validator has172schema issues; semantic checks neverran.
-4. Actualusage824374input/cache0+34509public+9722reason=868605FULLTURN.
-   +131072output+16384boundary+32768system=1048829,over1048576by253 BEFORE any
-   newcharge. No cap-safe factual completion, no reasoning/pruning/reserve credit.
-   Atomic once fence remains spent. Originalcollection.public_JSON_complete=false.
-5. Root personally read ENTIRE public/all21proofs/60formals/everyglobal record,
-   intro and suffix; private reasoning text never used. Tracker and exact
-   extraction at
-   ../../../../.local/state/Le-AI-Lab/stratonovich-af97-B21-public-root-adjudication-20261104/.
-   All original native files/export immutable at
-   ../../../../.local/state/Le-AI-Lab/stratonovich-af97-B21-packet-v1/native/.
-6. Root fully read052–060 author reportd842be59 and counterchecks, plus terminal
-   contract reportccfed356. Paths respectively
-   ../../../../.local/state/Le-AI-Lab/stratonovich-af97-B21-052060-author-adjudication-20261104/
-   and../../../../.local/state/Le-AI-Lab/stratonovich-af97-B21-terminal-independent-author-audit-20261104/.
-   These are AUTHOR evidence, not independent scientific votes. Root also fully
-   read024–035 report4c39f030 and completed the final mathematical disposition.
-   No new source gap was established under named contracts; no grade changes.
-7. Concrete returned qualifications:024caption2<d wronglyexcludesd2; C23/CH
-   square-rootM versusquartic1.5/036 routing; F01weightedfactor2 not1;
-   F02/F03genericnotactual2/4/3; F11degreeone ratio2-2^a notgeneralalpha;
-   S061closure032not048; authorRemark5.1p37not34–35;(6.3)used060not059;
-   Teschlnot036;032allowsallzero weights/arbitraryfixedtheta;033familyproofs
-   aredownstreamcontextnotpremises;058extra055edgeunneeded. S015M2optimal
-   overstatement needsqualification (onlyM3claimedoptimal). No manuscript gap
-   located so far under named inputs. Genuine report-depth limits remain,
-   especially033Green/Bochner identification and052quantitative static tails.
-8. Full-parent-outside-current21 alone does not block a sufficient selected
-   clause application. Named imports remain external after exact matching.
-   But native LIMITED working stays LIMITED; author source checks cannot
-   synthesize native evidence, status or HIGH, or clear downstream incompletion.
-9. Actual input preparation is archived at ACTIVE
-   reviews/2026-11-04-main-af97-calibration-prebound/preparation/ (7c68c8a),
-   363member capsule353ff10a, all retained originals/metadata included.
-   Prompt127frames/2917758B/051f6d59;carrier128files/Gitc1d04b5; allblobs exact.
-   Protocolv3/sourceMap8508/5docs81aliases306evidence/policyaee/binding97.
-   Actualcount823859+1123+485+28699+131072+16384+32768=1034390/head14186;
-   fullreserves retained. Actualpurestartup17:42UTC safe1683B/7e21267c,
-   12toolsfalse/effectivedeny/onlyauditedinternalexception/compactionoff/shareoff.
-   Rawconfigneverpersisted. Root replayappendincident restoredexactly; safe
-   isolatedreplay99+40; source/protocol/mathretention audits passed separately.
-10.Original18member native/authority/extraction/full-read custodyae61ac2c is
-   committed at70342c6 under reviews/2026-11-04-main-af97-calibration-prebound/original/.
-   Its terminal/report failures stay literal. No old59/H38 regrade or sourcefix.
-11.Kimi lastmonthly429 produced0reads/images/report; no authorizedavailability/
-   account/model/quota probes, substitution or purchase.263PNGs are authorprep,
-   not independent visual.80Lean facts/22analyticseams unchanged; no official
-   companion repository authorized. No HPC, contacts, public release or setups.
-12.Canonical durable lesson Labd2a22b22/runtimef3b233e4 is now published.
-   Preserve four foreign LabWIP/staging/index entries. The isolation/positive-path/actual-predicate/global-coverage lessons now sync
-   exactly to local and GWClaude/OpenCode/Codex.37bodylines only,desc717/head41;
-   strictstartup/skillgate/synccheck/retrievalexact1 passed.4foreignWIP/runtime
-   bytes+3689nonownedindexentries preserved; no foreigncontents archived.
-   Wiki supervisorreplacement DONE/maintained940c704f is datedNov3, not final.
+[held back: AI account details]
 
 ## Concrete deliverables for the next session
 
-Finish the actual complete whole-input evidence/retention/accounting audit.
-Source-bound inventories and26-rowcompletionmatrix are already preserved;
-reusing them must not duplicate1.38MBofcustody metadata into model context.
-Native mathematical WORK/proof/declaration/join coverage may be designed in
-prose prospectively, with actual hypotheses/consumer/remainder/status and usable
-current references. A final ungraded cold input is only the final complete
-paper+bibliography, not the development history or a substitute MAIN review.
+After explicit resume: an independent audit of the paired integration draft,
+its full source/covariance/application correspondence and preservation delta;
+then a concrete retained-scope MAIN input decision. The draft proposes one new
+owned proof, prospectively215OWN/241formal, rather than hiding a proof in a
+remark. Current source remains unchanged until a reviewable adoption decision.
+
+Preserved external material, relative to this repo:
+
+- ../../../../.local/state/Le-AI-Lab/themeII-pairing-product-envelope-integration-draft-20261105: TeX/PDF, full diff, R01–R15 map, build logs and scoped visuals.
+- ../../../../.local/state/Le-AI-Lab/themeII-author31-repair-Root-native-adjudication-20261105:
+  full public result and all six finding/six limitation dispositions.
+- ../../../../.local/state/Le-AI-Lab/themeII-2-split-joined-capacity-experiment-20261105 and
+  ../../../../.local/state/Le-AI-Lab/themeII-2-json-whitespace-capacity-experiment-20261105:
+  literal negative counts, reversible recipes and no admission.
+- ../../../../.local/state/Le-AI-Lab/themeII-6-Root-author-readback-20261105:
+  full author-working readback, not a native grade.
+- ../../../../.local/state/Le-AI-Lab/stratonovich-retro-handoff-20261105: retro verification, foreign-WIP and runtime preservation receipts.
+  Published canonical lesson commit b8409f74a29efbd59adb22c8360db944bd3f731d.
 
 ## Success criteria for the immediate next step
 
-An actual source/unique-math-preserving representation remains readable and
-reversible, with exact roles/arrays/types/error-correction/limit provenance.
-Every actual delivered token and all hard output/system/boundary reserves are
-counted accurately; private verifier code/custody is distinguished by evidence,
-not silently cut. No new full-packet admission is inferred from old fits or
-byte savings. Original214/240/13/allmodels/actualC2/independentHIGH/Kimi/source/
-visual/cold/finalprivate scope remains unchanged and unproven as a whole.
+- Explicit resume precedes research; the paused checkpoint remains intact.
+- The new per-family maximum, independent-variable covariance norm, exact2/HALF,
+  all original models and actual four consumer applications are checked at their
+  true scopes. Source pp9/13 are supplied explicitly; indirect parents remain
+  current OWN obligations rather than accepted assumptions by source presence.
+- Any future TeX commit includes its rebuilt PDF, with zero errors, undefined
+  citations/references and overfull boxes. No current scope or HIGH gate is reduced.
 
 ## Anti-success criteria
 
-Restart spent or terminal handles; request a higher-confidence same-scope vote;
-lower reserves to fit an addendum; normalize172 failures into a passing report;
-use private reasoning as mathematics; source presence equals proof; full-parent
-credit from selected statements; assign HIGH from author audits; silently adopt
-quarticM as CH's square-rootM; confuse raw/norm moments or static/joint limits;
-claim no-go for all clocks; alter source/siblings/refdb; narrow the original goal.
+No research restart from automatic continuation or this maintenance request;
+no completed-MEDIUM confidence retry; no private reasoning as mathematical
+evidence; no stronger kernel-independent partition claimed; no source-print
+gap called theorem falsity; no budget reduction or unique-math pruning to fit;
+no source/PDF/grade adoption from an author audit. No source/sibling/refdb edits,
+private Lean repository, HPC, correspondence, Telegram or public release without
+Le's applicable explicit authorization.
 
 ## What the previous sessions produced
 
@@ -2668,37 +2606,73 @@ no fullpacket/provider/config/seal/rootready exists. Fullgoal ACTIVE.
 
 
 
+
+
+### 2026-11-05 — verified pairing checkpoint and paused close
+
+- 4145aea: frozen primary-source discrepancies, full author exact-factor repair,
+  independent finite controls and Root qualification; no source adoption.
+- c67fc07: complete95-file proof-note packet, independent DATA audit and native
+  preflight, preserving the initial account identity refusal and matching
+  existing-subscription recovery.
+- 60e8e11: actual Opus5.5 PASS_WITH_NOTES/MEDIUM, accepted=false, all25 texts and8
+  exact images delivered; full public report and all six notes/six limitations
+  adjudicated. No confidence-only repeat or resume; all whole gates remain.
+- 3a08495: explicit PAUSED authority and committed local WIP paths/hashes at
+  handoffs/2026-11-05-paused-session-state.json. The267-page paired integration
+  remains external, unadopted, with prospective215/241 counts; current263 source
+  unchanged. Root read the full diff and viewed scoped draft16–21/source9/13,
+  not the full267-page visual gate.
+- Canonical retro b8409f74: new pairing-induction-half-budget memory and existing
+  output-shape source-copy-schema extension. Published/description-validated,
+  discovery regenerated, actual local Claude/Codex copies and OpenCode link
+  verified; four pre-existing shared Lab WIP paths/index entries preserved.
+- Literal and restricted whitespace U/C experiments remain negative; all selected
+  mathematics and hard reserves retained. No new packet, model call or source
+  adoption follows. All owned workers/reviewers terminal; goal PAUSED by Le.
+
 ## Repo & git state at handoff
 
-ROOT pre-handoffe9ee9c936bf917cc0b6a220d8fc191e4046e3860/master; this dedicated
-commit changes HANDOFF.md only. ACTIVEa7d655b6bec8653d444428cc5c1e0b57be38de43/
-research/fixed-mask-young-20261031 clean/pushed/GW-equal. Sourceaf97/PDF263/
-index7/ledger54/localreviewstates/80Lean22seams unchanged. All native jobs
-terminal; Runtime-v2 actual Rootauthorizations/delivery/oncefence remain custody,
-not reusable permission. Current packet stratonovich-af97-B21-packet-v1 is immutable.
-Two protected Article branches remain; earlier3.7GiBcleanup is retained.
+- Research: ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave, branch research/fixed-mask-young-20261031;
+  pre-handoff HEAD 4a8c101b2b8a1259a27ca58cc492bc97253f9e4d, origin/<HUB> verified before handoff.
+- Human launcher: ., master, pre-handoff HEAD 600f1e99c720aed6251706680b28fc0418a86118.
+- Science: af97ae4; current 214/240/13/28 and263PDF unchanged. External267 draft
+  is a different unadopted candidate; exact identities are in the close state.
+- Canonical lesson commit: b8409f74a29efbd59adb22c8360db944bd3f731d in Le-AI-Lab.
+- This dedicated handoff commit stages HANDOFF.md only. Earlier history is
+  cumulative; pre-handoff hashes intentionally precede this operational commit.
 
 ## Operating notes
 
-ACTIVE Progress.md is sole workflow authority. ROOT is the human launcher.
-Root extracted only exact public fenced bytes, never rewrote original output.
-Original raw/export/private reasoning stay byte-custodied; only public content
-is mathematical evidence. All oldH/point/A/B and this B21 call are terminal.
-No collectors or oldsessions need reruns; no factual completion is cap-safe.
+Progress.md is the research workflow authority; the harness goal is PAUSED.
+Only requested handoff/retro maintenance was performed after pausing. Keep
+external WIP by its exact local path; it is not a discoverable handoff substitute.
+The full original all-model upper/actual-C2 goal, DeepSeek V4 Pro MAIN and
+Kimi-K3 HIGH remain. Never force Chen or actual-p1 identities. Fresh final cold
+reading is separate from MAIN and from these scoped components.
 
-Root-owned carrier-only whitespace metadata preserve frozen payloads. All128
-Gitblobs matchedactual140originalfiles. Do not alter placeholders/failedsource
-snapshots or root-auth files to make a record pass. No official Lean repo,
-HPC,author/coauthorcontact,Telegram,publicrelease,sibling/bib/sourcePDF edits.
-System/dotfile/nvim requests go to Agent21 via actual amsg lookup. Lean-pkg
-0.24FYI requested noaction. Preserve foreign Lab WIP and index intent.
+Only metadata was committed during close; no TeX/PDF or Lean rebuild was needed.
+When later editing TeX, commit its companion PDF atomically after the clean gate.
+All.bib is read-only; process-local BIBINPUTS may point to the existing refdb for
+an isolated build. No global setup changes; system/dotfile/Neovim requests route
+to Agent21 through a fresh address lookup. No unauthorized messages.
+
+Four foreign Le-AI-Lab WIP paths are untouched. Own canonical retro and local
+runtime projection are verified at ../../../../.local/state/Le-AI-Lab/stratonovich-retro-handoff-20261105/retro-final-verification.json;
+non-owned runtime changes are empty. Codex discovery refreshes in a new session.
+For future DeepSeek work, the owned public catalog snapshot under
+../../../../.local/state/Le-AI-Lab/themeII-owned-public-catalog-snapshot-20261105 is preparation only;
+new guard/framing/count/run authority is still required. Do not reuse a spent
+fence or repair a shared catalog silently.
 
 ## Risks to monitor
 
-Main reasoning is mostly source-consistent but several ancillary returned
-formula/definition/source captions are false or incomplete, and code consistency
-is not mathematical review. The full-source/current214/240/13 coupled HIGH,
-Kimi/sourcepixels/full263visual/freshcold/finaldelivery gates remain open.
-Actual source gaps, if any, need worked falsification and new source proofs,
-not a confidence retry. There is no reliable whole-project completion ETA.
-Goal stays ACTIVE while meaningful work remains; neither complete nor blocked.
+- Current project is NOT complete: integrated HIGH, Kimi, source/application,
+  full visual, fresh cold, round-accounting and private-delivery gates remain.
+- The paired267 draft has not received HIGH or whole-paper acceptance. It adds
+  a genuine owned proof; inventory/domain/citation/transcription changes require
+  honest new source binding before a broader review.
+- Exact same-source moments and source-first/Green-first limits remain actual
+  premises to check, not automatic consequences of the deterministic norm bound.
+- Context failures are failures of recorded layouts, not proof of whole-goal
+  impossibility or permission to prune math or lower reserves. No reliable ETA.
