@@ -84,6 +84,27 @@ Dashboard/state and round-accounting repair do not clear any of these gates.
 
 ## Current state
 
+- **Actual new-repair Opus skeptic completed; MEDIUM retained
+  (2026-11-05):** One fresh actualClaudeOpus5.5/high attempt completed in
+  476.296seconds, session9df2e675-bb4e-4c6b-a1f3-2526cbfca8a3; exec66920 is
+  CLOSED. Transport0, scientificPASS_WITH_NOTES/MEDIUM, all15checks favorable,
+  fatal0/major0/requiredrepairs0. Driver3/accepted=false is solely the unmet
+  unchanged HIGH threshold. All25 required texts and8 exact images delivered;
+  Root verified95packet/95workspace bytes, runtime/tooling and actual first-party
+  identity, and FULLREAD24606-byte public report. All6notes and6limitations
+  individually adjudicated; oldII.1MEDIUM remains. No confidence-only retry or
+  resume authorized. The source9/13 temporal-cutoff law was NOT read by this
+  reviewer; Green/source/005 and indirect parents retain their exact scoped
+  premises, not whole-parent acceptance. A worker is preparing an EXTERNAL
+  paired TeX/PDF integration candidate with a new genuine owned lemma (prospective
+  215proofs/241declarations) and four corrected consumer references. It remains
+  provisional/unadopted; current28source/263PDF are unchanged. DeepSeek MAIN,
+  Kimi/integratedHIGH/source/visual/cold/private delivery remain open.
+  [Actual report and adjudication](reviews/2026-11-05-pairing-repair-skeptic-adjudication/README.md).
+  Durable lesson: complete source delivery and passing scoped checks do not
+  change a MEDIUM confidence; source quantifiers and actual consumer needs must
+  match, and native account identity overrides a stale alias label.
+
 - **New pairing-repair skeptic DATA and native preflight frozen
   (2026-11-05):** Full25317-byte proof, source ledger,8619-byte per-family/
   consumer qualification, all actual006/007/008/010 applications, primary

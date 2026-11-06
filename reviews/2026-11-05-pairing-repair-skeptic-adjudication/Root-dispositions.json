@@ -1,0 +1,154 @@
+{
+  "kind": "ROOT_ADJUDICATION_OF_ACTUAL_MEDIUM_NOT_ACCEPTANCE",
+  "utc": "2026-11-06T01:58:26.808294+00:00",
+  "actual_report_json_sha256": "9c9b4597b1b460342a4cbca1ae26e2a9a9c989e3d80cb36bd3e8149caa6acaff",
+  "actual_public_raw_sha256": "df218fd1ac5b4af330d4a295562574d03de11a5e58a44c955ffb0cd3f8cb8fb2",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "medium",
+  "accepted": false,
+  "checks": [
+    {
+      "claim": "R01 Exact normalized hypotheses and the norm convention",
+      "actual_verdict": "PASS_WITH_NOTES",
+      "Root_disposition": "Favorable bounded scientific check retained at actual stated hypotheses and limitations; no new HIGH or whole-parent grade."
+    },
+    {
+      "claim": "R02 Endpoint extraction with predecessor phase, cap finiteness, coefficient 1 and adjacent mass",
+      "actual_verdict": "PASS",
+      "Root_disposition": "Favorable bounded scientific check retained at actual stated hypotheses and limitations; no new HIGH or whole-parent grade."
+    },
+    {
+      "claim": "R03 Fusion eligibility and mass norm",
+      "actual_verdict": "PASS",
+      "Root_disposition": "Favorable bounded scientific check retained at actual stated hypotheses and limitations; no new HIGH or whole-parent grade."
+    },
+    {
+      "claim": "R04 First-slot fusion retains the 2: N1_e(G*H)<=N0(G)N1_e(H), exact HALF",
+      "actual_verdict": "PASS",
+      "Root_disposition": "Favorable bounded scientific check retained at actual stated hypotheses and limitations; no new HIGH or whole-parent grade."
+    },
+    {
+      "claim": "R05 Second-slot fusion: N2_e(G*H)<=N0(G)N2_e(H)",
+      "actual_verdict": "PASS",
+      "Root_disposition": "Favorable bounded scientific check retained at actual stated hypotheses and limitations; no new HIGH or whole-parent grade."
+    },
+    {
+      "claim": "R06 All three slot lifts: partition, counts, edge multiplicities, p19 union/count, nonincident labels",
+      "actual_verdict": "PASS",
+      "Root_disposition": "Favorable bounded scientific check retained at actual stated hypotheses and limitations; no new HIGH or whole-parent grade."
+    },
+    {
+      "claim": "R07 Base cases, empty or unequal chains, zeros, p16 swapped caption",
+      "actual_verdict": "PASS_WITH_NOTES",
+      "Root_disposition": "Favorable bounded scientific check retained at actual stated hypotheses and limitations; no new HIGH or whole-parent grade."
+    },
+    {
+      "claim": "R08 Case 2: predecessor time and space offsets; OWN214 coefficient-one CS",
+      "actual_verdict": "PASS",
+      "Root_disposition": "Favorable bounded scientific check retained at actual stated hypotheses and limitations; no new HIGH or whole-parent grade."
+    },
+    {
+      "claim": "R09 Case 3 regions: last-gap comparison, independent indicators, drop after extraction, own-chain successor",
+      "actual_verdict": "PASS",
+      "Root_disposition": "Favorable bounded scientific check retained at actual stated hypotheses and limitations; no new HIGH or whole-parent grade."
+    },
+    {
+      "claim": "R10 Regional HALF from FULL n−1 induction; half-sum<=max; exhaustiveness",
+      "actual_verdict": "PASS",
+      "Root_disposition": "Favorable bounded scientific check retained at actual stated hypotheses and limitations; no new HIGH or whole-parent grade."
+    },
+    {
+      "claim": "R11 Caps to measurable domains, finite admissible set, zeros",
+      "actual_verdict": "PASS_WITH_NOTES",
+      "Root_disposition": "Favorable bounded scientific check retained at actual stated hypotheses and limitations; no new HIGH or whole-parent grade."
+    },
+    {
+      "claim": "R12 Quantifier: ∀G∃Q (candidate) versus ∃Q∀G (strong literal p15 reading)",
+      "actual_verdict": "PASS_WITH_NOTES",
+      "Root_disposition": "Favorable bounded scientific check retained at actual stated hypotheses and limitations; no new HIGH or whole-parent grade."
+    },
+    {
+      "claim": "R13 Original-model application (d=1,2,3, all admissible Gamma)",
+      "actual_verdict": "PASS_WITH_NOTES",
+      "Root_disposition": "Favorable bounded scientific check retained at actual stated hypotheses and limitations; no new HIGH or whole-parent grade."
+    },
+    {
+      "claim": "R14 Direct consumers OWN004/214/006/007008/010; indirect 002/009/051",
+      "actual_verdict": "PASS_WITH_NOTES",
+      "Root_disposition": "Favorable bounded scientific check retained at actual stated hypotheses and limitations; no new HIGH or whole-parent grade."
+    },
+    {
+      "claim": "R15 Attribution, constants and limits",
+      "actual_verdict": "PASS_WITH_NOTES",
+      "Root_disposition": "Favorable bounded scientific check retained at actual stated hypotheses and limitations; no new HIGH or whole-parent grade."
+    }
+  ],
+  "minor_findings": [
+    {
+      "id": "F01",
+      "actual": "Candidate §1 LF49-54: the candidate's own p16 control shows only that the UNMULTIPLIED swapped caption fails (ratio ≈1.18<2). Stronger and supportable: the printed swapped product with the theorem's factor 2 also fails. Examples: independent-fusion-controls with A=[4,9], ratio ≈5.07>2; or G1 concentrated near a large time T, where N1(G1)→0. Optional wording strengthening only.",
+      "Root_disposition": "Optional strengthening only. The candidate correctly refuted the unmultiplied printed swap. The separate supplied measurable-band A=[4,9] control already proves ratio>4, so it also refutes the same wrong assignment with factor2. Preserve both scopes; do not claim the theorem itself false."
+    },
+    {
+      "id": "F02",
+      "actual": "Further print typos not itemized in the ledger, none consequential to the reconstruction: p16 'In summary' display writes |s1−s2|^{−α0}γ(x−y) instead of γ^0_{1,2}γ_{1,2}; p19 displays γ^0(s+t)γ(x−y)G(s,x)G(t,x), repeating the (3.5) x typo; p17 uses μ(dξ) without the edge subscript; p18 has x_{j0 1}; p21 has 'k1∈I2' for k0 and 'Q'_1,Q'_2,Q'_3' for Q'_0,Q'_1,Q'_2.",
+      "Root_disposition": "Preserve as source observations. The needed norm/offset/coefficient/union issues are independently declared in our proof. Extra typography that is not used does not create another external-book proof obligation or require manuscript bloat."
+    },
+    {
+      "id": "F03",
+      "actual": "Quantifier bookkeeping: the per-family Q may depend on G, mu_e, A_e, the finite caps, θ and the vertex widths, not only on n1, n2 and D. Any adopted citation should state Theorem 3.1 in the ∀(G,mu,A)∃(Q,ℓ) form with the y-norm, and should not quote p15's 'possibly depending on n1,n2 and D' as if a kernel-independent Q were proved.",
+      "Root_disposition": "Carry into the explicit new statement: per-family existence may depend on every deterministic input, including spectral/Laplace domains, damping and widths. The finite maximum and every-product consumer envelopes avoid a uniform or measurable selector."
+    },
+    {
+      "id": "F04",
+      "actual": "OWN008 LF108 writes the temporal domain as [0,(δ_j∨δ_l)^{−1}], whereas the candidate uses (0,·]. The difference is Lebesgue-null and harmless.",
+      "Root_disposition": "Harmless null-endpoint difference for the absolutely continuous Laplace measure. Normalize the new application notation to (0,L] without claiming a changed covariance."
+    },
+    {
+      "id": "F05",
+      "actual": "Candidate LF194: 'its product converges to the corresponding ORIGINAL product' is true but unnecessary; only the monotone bound P^L(Q)<=P(Q) is needed.",
+      "Root_disposition": "True but unnecessary passage. The integration draft may simply use P_cap<=P_full and the finite maximum; this is already an equivalent argument in the reviewed proof, not a stronger new result."
+    },
+    {
+      "id": "F06",
+      "actual": "The current OWN006/007/008/010 text still cites the printed Theorem 3.1 (3.6). Adopting the candidate means re-pointing those citations to the reconstructed per-family statement with the independent-y norm. This is editorial and outside this focused scope.",
+      "Root_disposition": "Required for actual integration correspondence even though the reviewer classifies it editorial/outside focus. The four active consumers must point to the new explicit per-family lemma and its independent-variable norm. External draft only until the next source/application assessment; do not upgrade this report."
+    }
+  ],
+  "limitations": [
+    {
+      "id": "L01",
+      "actual": "This is an AI review, not human verification, a novelty audit, whole-paper acceptance, or acceptance of the 214/240/13 obligations, the final cold review, or Kimi/source-visual clearance.",
+      "Root_disposition": "Keep all whole-paper/Kimi/source/visual/cold obligations open. The present result is one bounded skeptic lineage, not a vote proving the goal."
+    },
+    {
+      "id": "L02",
+      "actual": "The full 263-page technical PDF and the 64-page primary outside pp14-21 were not read. The source's temporal regularization γ^0_δ in (2.11)/(2.24), which OWN006/008 identify with the Laplace truncation (0,(δ_j∨δ_h)^{−1}], was not checked against the primary pages.",
+      "Root_disposition": "Genuine precise coverage boundary. Source pp9/13 temporal regularization was accessible but not read by this reviewer. The existing author pixel audit covered it; that is not new-family credit. The external integration draft must expose the actual heatSUM/timeMAX/Laplace-prefix calculation and exact primary pages for the next substantive assessment."
+    },
+    {
+      "id": "L03",
+      "actual": "The indirect consumers 002/009/051 were checked only through a Grep for Theorem~3.1 citations and spot reads of main LF205-309, 445-469 and 1600-1635; their full proofs were not reviewed. Green-before-noise removal and OWN005's weak limit were accepted as current-OWN premises at their stated clauses, not reproved.",
+      "Root_disposition": "The indirect parents remain current OWN obligations, and Green-before-noise/OWN005 remain consumed premises at their actual clauses. No full-parent acceptance or new sigma(W)-pointfield/rough uniqueness condition follows."
+    },
+    {
+      "id": "L04",
+      "actual": "The page images were the reduced-resolution review carriers (max 1000px). They were legible enough to confirm the inner bars in (3.4), the repeated x in (3.5), the missing 2 in (3.9), ∩ on p19, the dropped offset on p21 and the nonincident labels on p15.",
+      "Root_disposition": "Actual eight image byte deliveries are verified. This is useful bounded source-pixel evidence, not a 263-page manuscript visual pass or a full64-page primary read."
+    },
+    {
+      "id": "L05",
+      "actual": "No code was executed. The finite-control numbers were checked by hand only for the key exact ratios. The combinatorial enumerations up to n=4 in the control JSONs were not re-run and were not used as evidence of the general induction, which I verified analytically.",
+      "Root_disposition": "No model code execution was requested or needed to verify the general analytic induction. Retain existing exact controls at their limited scope; do not rerun unchanged controls for confidence."
+    },
+    {
+      "id": "L06",
+      "actual": "Whether the strong ∃Q∀G version of Theorem 3.1 is true or false was not determined. It is not needed by the consumers reviewed.",
+      "Root_disposition": "The stronger exists-one-partition-for-all-families statement is neither proved nor falsified. All four actual consumers need only the per-family/finite-max statement, which was checked. Do not silently restore the stronger quantifier."
+    }
+  ],
+  "mandatory_repairs_returned": [],
+  "no_confidence_retry_or_resume_authorized": true,
+  "source_repair_adopted": false,
+  "whole_goal_unchanged": true
+}
