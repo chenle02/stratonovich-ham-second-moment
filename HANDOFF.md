@@ -1,91 +1,75 @@
-Last updated: 2026-10-31 03:23 UTC (Codex)
+Last updated: 2026-11-05 21:14 CST (<MACHINE>, Codex)
 
-Original full upper/sharp goal ACTIVE. Source convergence and fixed-mask
-displacement moment comparison accepted; masked raw Young average next.
+# HANDOFF
+
+Project: Article-Stratonovich-HAM-Second-Moment. Research goal PAUSED by Le.
+Wiki strategy: ../../../../Dropbox/workspace/svn/SPDEs-wiki/content/projects/stratonovich-ham-second-moment.md
+Workflow authority: ./Progress.md. Historical entries below are archived
+snapshots; this current header, next step and Progress status govern.
 
 ## ⏭ Next session: where to stand and what to do
 
-Stand in this repository root. First restore the pending push/sync when
-<HUB> becomes reachable: substantive adoption0accd3d is LOCAL ONLY;
-last verified origin/<HUB>604c60f. Last push and follow-up SSH both
-failed with No route to host. Do not claim parity from stale tracking refs.
+Stand in the research checkout, relative to this handoff:
 
-After sync, freeze/falsify the fixed-mask all-dimensional Young/local-phase
-and source-solution identification target from
-reviews/2026-10-30-fixed-mask-moment/next-flow-obligations.md (UNREVIEWED plan).
-The masked average L2 limit is still the EXPLICIT premise of accepted F3;
-construct it on a phase containing initial(1,0). No new long proof before
-statement gate. Both source-driver convergence and F1-F3 comparison are now
-accepted; do not repeat them. No live reviewer or Lean process.
+```bash
+cd .
+sed -n '1,180p' Progress.md
+```
+
+The goal is PAUSED. Loading this checkpoint or running retro does not resume
+research. After Le explicitly resumes, the immediate next step is an independent
+transcription/application audit of the frozen paired 267-page integration draft
+against the complete reviewed pairing proof and its actual source cutoff law.
+Use the R01–R15 map and exact diff in ../themeII-pairing-product-envelope-integration-draft-20261105; the existing skeptic is
+PASS_WITH_NOTES/MEDIUM, accepted=false at HIGH. Do not adopt the draft or restart
+that terminal reviewer merely to obtain a higher confidence. The old U/C input
+layouts remain over context; choose a subsequent substantive MAIN scope only
+with complete mathematics and fresh admission checks.
 
 ## Pre-flight checks
 
-1. Read AGENTS.md, PROJECT-GOAL.md and current Progress.md. Full original
-   sharp/source goal ACTIVE; mathematics authority Progress.md, Lean authority
-   lean-progress/PROGRESS.md, official companion still separately gated.
-2. Check local ownership/status and serial local/origin/<HUB> refs.
-   Substantive adoption0accd3db751435e17a333a3122bf878bb8084568 was committed
-   after network failed; root handoff successor is also pending push. Last
-   verified remote604c60f2f8dc6d1a7635b9af224bbb6e5751d379. Do not reset WIP.
-3. Accepted source-operator-convergence.md: scientific da9d464/adoptionfa1e54f,
-   ten HIGH checks388.736s,23inputs/38nativefiles. Fixed RAW basis/correlated
-   Gaussian transfer, retaining OU extension, exact MAXdelta/SUMepsilon law,
-   all-finite-Lp Ctheta source convergence, ordinary linear first response.
-   This closes the older source-CM reconstruction plan; no such rebuild needed.
-4. Accepted fixed-mask-moment-transfer.md: scientific604c60f/local adoption
-   0accd3d, nine HIGH checks756.999s,18inputs/33nativefiles. F1 all mixed
-   positive displacement diagrams; F2 ordinary source solutions/two-point/
-   positive-average order; NEW full unmasked canonical moment limit; F3
-   CONDITIONAL on masked-average L2 convergence. Full adjudication records
-   seven minor clarifications. Direct valid JSON/no recovery or relaunch.
-5. Preproof fixed-mask nine HIGH checks352.974s,11inputs/26nativefiles.
-   Both v1/v2 diagnostics executed:100mixed-order controls/48odd-zero rows,
-   actual singular d2 model, PSD/signed negative controls. These are finite
-   mechanism checks, not continuum quadrature/accuracy certificates.
-6. Inspect exact prior F construction/Young inputs in
-   notes/local-causal-young-flow.md Sections4-6 as d1-only accepted input.
-   New actual operator paths and source convergence are all-dimensional;
-   do not import its d1 noise-Hilbert mask multiplier to the full class.
-7. Canonical TeX/PDF/wiki unchanged; TeX SHA256
-   58b092b258d4f363f8bfa0a02dcf492dcb9c13e794dbcab440bf7b0529b53b7d.
-   Full Gupper/GLOBALd1 lower retained,71finitefacts/18seams/L0 unchanged.
-   No new Lean/package/lease/registry/HPC/contact/Skorohod/source repair.
+[held back: AI account details]
 
 ## Concrete deliverables for the next session
 
-- A frozen fixed-noise-mask operator extension to a separable local phase F
-  containing constants, with source convergence and ordinary source identity.
-- A precise Banach Young/source limit and positive terminal-average consumer,
-  proving the masked L2-limit premise of accepted F3 before using it.
-- Subsequently compact mean potentials: explicit common negative Rayleigh
-  trial before d3 gap/ground claims, weighted projection/complement estimates,
-  full-phase cone/product and actual raw Gaussian shift/event/cost.
-- Secondary all-alpha-damped-ratio target remains UNREVIEWED; old d1 moment
-  consumer is not extended just by a scalar calculation.
+After explicit resume: an independent audit of the paired integration draft,
+its full source/covariance/application correspondence and preservation delta;
+then a concrete retained-scope MAIN input decision. The draft proposes one new
+owned proof, prospectively215OWN/241formal, rather than hiding a proof in a
+remark. Current source remains unchanged until a reviewable adoption decision.
+
+Preserved external material, relative to this repo:
+
+- ../themeII-pairing-product-envelope-integration-draft-20261105: TeX/PDF, full diff, R01–R15 map, build logs and scoped visuals.
+- ../themeII-author31-repair-Root-native-adjudication-20261105:
+  full public result and all six finding/six limitation dispositions.
+- ../themeII-2-split-joined-capacity-experiment-20261105 and
+  ../themeII-2-json-whitespace-capacity-experiment-20261105:
+  literal negative counts, reversible recipes and no admission.
+- ../themeII-6-Root-author-readback-20261105:
+  full author-working readback, not a native grade.
+- ../stratonovich-retro-handoff-20261105: retro verification, foreign-WIP and runtime preservation receipts.
+  Published canonical lesson commit b8409f74a29efbd59adb22c8360db944bd3f731d.
 
 ## Success criteria for the immediate next step
 
-Construct the actual masked raw average on the SAME raw W by source limits
-of an all-dimensional Young flow on a phase containing(1,0). Accepted raw
-M_E has physical compact input/output localization; try bounded maps
-Dpsi:F->E and E->F for FIXED mask/horizon. Prove cutoff independence and
-source/classical identity, without pretending global E is dense in F.
-Gaussian driver moments plus theta>1/2 must control nonlinear stability
-and all-finite-Lp convergence. Independent statement/full gates required.
-Then F3 gives the original unmasked point-moment bound at fixed time.
+- Explicit resume precedes research; the paused checkpoint remains intact.
+- The new per-family maximum, independent-variable covariance norm, exact2/HALF,
+  all original models and actual four consumer applications are checked at their
+  true scopes. Source pp9/13 are supplied explicitly; indirect parents remain
+  current OWN obligations rather than accepted assumptions by source presence.
+- Any future TeX commit includes its rebuilt PDF, with zero errors, undefined
+  citations/references and overfull boxes. No current scope or HIGH gate is reduced.
 
 ## Anti-success criteria
 
-No arbitrary-phase/velocity covariance monotonicity or PSD order: both
-negative controls are genuine in an admissible d2 model. Use only the
-restricted positive displacement diagram theorem. No point Sobolev
-evaluation, initialconstant in global E, original-noise quotient mask
-multiplier, time convolution, full heat-residual independence, minimal-raw-
-span cutoff measurability, Sp-valued Holder path or block independence.
-Compact positive potentials need not bind at every strength in d3; supply
-an explicit common negative trial. Preserve displacement AND velocity.
-No easier replacement model, source energy repair, Skorohod/contact/HPC/
-companion/publication or premature completion of the full sharp goal.
+No research restart from automatic continuation or this maintenance request;
+no completed-MEDIUM confidence retry; no private reasoning as mathematical
+evidence; no stronger kernel-independent partition claimed; no source-print
+gap called theorem falsity; no budget reduction or unique-math pruning to fit;
+no source/PDF/grade adoption from an author audit. No source/sibling/refdb edits,
+private Lean repository, HPC, correspondence, Telegram or public release without
+Le's applicable explicit authorization.
 
 ## What the previous sessions produced
 
@@ -898,47 +882,73 @@ new lower rate/sharp upper/source-energy theorem follows. Push of adoption
 failed: <HUB> No route to host, confirmed by follow-up SSH. Work secure
 locally; remote sync pending. Full original goal ACTIVE.
 
+
+
+### 2026-11-05 — verified pairing checkpoint and paused close
+
+- 4145aea: frozen primary-source discrepancies, full author exact-factor repair,
+  independent finite controls and Root qualification; no source adoption.
+- c67fc07: complete95-file proof-note packet, independent DATA audit and native
+  preflight, preserving the initial account identity refusal and matching
+  existing-subscription recovery.
+- 60e8e11: actual Opus5.5 PASS_WITH_NOTES/MEDIUM, accepted=false, all25 texts and8
+  exact images delivered; full public report and all six notes/six limitations
+  adjudicated. No confidence-only repeat or resume; all whole gates remain.
+- 3a08495: explicit PAUSED authority and committed local WIP paths/hashes at
+  handoffs/2026-11-05-paused-session-state.json. The267-page paired integration
+  remains external, unadopted, with prospective215/241 counts; current263 source
+  unchanged. Root read the full diff and viewed scoped draft16–21/source9/13,
+  not the full267-page visual gate.
+- Canonical retro b8409f74: new pairing-induction-half-budget memory and existing
+  output-shape source-copy-schema extension. Published/description-validated,
+  discovery regenerated, actual local Claude/Codex copies and OpenCode link
+  verified; four pre-existing shared Lab WIP paths/index entries preserved.
+- Literal and restricted whitespace U/C experiments remain negative; all selected
+  mathematics and hard reserves retained. No new packet, model call or source
+  adoption follows. All owned workers/reviewers terminal; goal PAUSED by Le.
+
 ## Repo & git state at handoff
 
-Substantive checkpoint before this HANDOFF-only successor:
-0accd3db751435e17a333a3122bf878bb8084568, LOCAL ONLY.
-Last verified remote/synchronized checkpoint:
-604c60f2f8dc6d1a7635b9af224bbb6e5751d379.
-Push and follow-up SSH failed with No route to host. Origin tracking is
-stale until network returns; no fresh remote parity claimed. All substantive
-work committed, no foreign WIP, no live reviewer/Lean job. Handoff successor
-also needs push. Wiki project page
-../SPDEs-wiki/content/projects/stratonovich-ham-second-moment.md exists,
-unchanged. No whole-paper/cold-reader/novelty/circulation clearance.
+- Research: ., branch research/fixed-mask-young-20261031;
+  pre-handoff HEAD 3a084956f0d6a002736ee1ea7347291e4ce402a0, origin/<HUB> verified before handoff.
+- Human launcher: ../../../../Dropbox/workspace/svn/Article-Stratonovich-HAM-Second-Moment, master, pre-handoff HEAD 600f1e99c720aed6251706680b28fc0418a86118.
+- Science: af97ae4; current 214/240/13/28 and263PDF unchanged. External267 draft
+  is a different unadopted candidate; exact identities are in the close state.
+- Canonical lesson commit: b8409f74a29efbd59adb22c8360db944bd3f731d in Le-AI-Lab.
+- This dedicated handoff commit stages HANDOFF.md only. Earlier history is
+  cumulative; pre-handoff hashes intentionally precede this operational commit.
 
 ## Operating notes
 
-Root compiler/hash/archive/git/script execution evidence is separate from
-read-only AI verification. Native Opus5.5/high CLI2.1.304 actual route and
-required-read coverage verified for both new gates. Original native full
-review handle33865 terminal; statement42618 terminal. Never relaunch them.
-Historical RUNNING_AT_CAPTURE files are superseded by terminal receipts.
-Older finite-Gaussian format-only recovery history remains preserved.
+Progress.md is the research workflow authority; the harness goal is PAUSED.
+Only requested handoff/retro maintenance was performed after pausing. Keep
+external WIP by its exact local path; it is not a discoverable handoff substitute.
+The full original all-model upper/actual-C2 goal, DeepSeek V4 Pro MAIN and
+Kimi-K3 HIGH remain. Never force Chen or actual-p1 identities. Fresh final cold
+reading is separate from MAIN and from these scoped components.
 
-Source cutoff depends on possible auxiliary J but retains raw W. F3 makes
-no W-measurability assumption for A; next Young construction must establish
-its own raw-W identity. Fixed physical mask stays AFTER source smoothing.
-Local phase containing constants and free-wave STRONG continuity suffice;
-no operator-norm continuity of the free wave group is presumed.
+Only metadata was committed during close; no TeX/PDF or Lean rebuild was needed.
+When later editing TeX, commit its companion PDF atomically after the clean gate.
+All.bib is read-only; process-local BIBINPUTS may point to the existing refdb for
+an isolated build. No global setup changes; system/dotfile/Neovim requests route
+to Agent21 through a fresh address lookup. No unauthorized messages.
 
-All-alpha-damped-ratio remains an unreviewed later target, scalar D not
-physicaldimension; do not modify OLD V certificate or infer new moment
-consumer. No amsg/contact/setup/HPC, official package or source fix.
+Four foreign Le-AI-Lab WIP paths are untouched. Own canonical retro and local
+runtime projection are verified at ../stratonovich-retro-handoff-20261105/retro-final-verification.json;
+non-owned runtime changes are empty. Codex discovery refreshes in a new session.
+For future DeepSeek work, the owned public catalog snapshot under
+../themeII-owned-public-catalog-snapshot-20261105 is preparation only;
+new guard/framing/count/run authority is still required. Do not reuse a spent
+fence or repair a shared catalog silently.
 
 ## Risks to monitor
 
-Network sync pending, not a mathematical blocker or goal completion.
-Recheck reachability and serial refs before next edit/push. No destructive
-network/Git workaround. Preserve pending commits and external WIP by path.
-
-Masked raw-average existence/Young identity, higher-dimensional compact
-mean common trial/gap, weighted projection/complement, full-phase product,
-actual Gaussian event/cost, all-alpha variational lower and sharp upper
-constant/source normalization remain OPEN. H1/2 never supplies point
-Sobolev evaluation here. No cutoff/large-time limit interchange or independent
-time-block assumption. Full original goal remains ACTIVE, not complete.
+- Current project is NOT complete: integrated HIGH, Kimi, source/application,
+  full visual, fresh cold, round-accounting and private-delivery gates remain.
+- The paired267 draft has not received HIGH or whole-paper acceptance. It adds
+  a genuine owned proof; inventory/domain/citation/transcription changes require
+  honest new source binding before a broader review.
+- Exact same-source moments and source-first/Green-first limits remain actual
+  premises to check, not automatic consequences of the deterministic norm bound.
+- Context failures are failures of recorded layouts, not proof of whole-goal
+  impossibility or permission to prune math or lower reserves. No reliable ETA.
