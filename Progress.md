@@ -84,6 +84,24 @@ Dashboard/state and round-accounting repair do not clear any of these gates.
 
 ## Current state
 
+- **New pairing-repair skeptic DATA and native preflight frozen
+  (2026-11-05):** Full25317-byte proof, source ledger,8619-byte per-family/
+  consumer qualification, all actual006/007/008/010 applications, primary
+  pp14–21 and full28-source/263PDF/all-model context are retained. Root
+  verified all93 packet members and67 actual source copies; independent
+  DATA audit reproduced all8 images and passed9 negative controls.
+  Required plan is25 complete texts+8 exact PNGs; operative request uses
+  the installed report contract and read/search-only tools. A quota-helper/
+  native identity mismatch was refused before a model call and preserved.
+  A separate existing first-party <plan removed> identity now matches native/helper
+  observations; <usage removed> reported, short-window unknown. Supported
+  existing CLI2.1.314 is selected in task-local PATH; default318 is not used.
+  Official dry run passes with no waived reference and no model call.
+  DeepSeek stays MAIN; new-repair Opus5.5 HIGH skeptic is prepared, not yet
+  executed or accepted at this checkpoint. Prior grades and whole-paper/
+  Kimi/source/visual/cold obligations stay open.
+  [Frozen DATA/preflight](reviews/2026-11-05-pairing-repair-skeptic-data/README.md).
+
 - **Later primary-source audit and exact-constant author reconstruction
   (2026-11-05):** The actual held author PDF pp14–21 contains a fused
   first-norm transition that drops the induced factor2 before the stronger
