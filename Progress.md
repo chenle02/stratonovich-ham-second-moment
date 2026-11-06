@@ -94,6 +94,8 @@ Dashboard/state and round-accounting repair do not clear any of these gates.
 
 ## Current state
 
+- **Three-image visual calibration TERMINAL (2026-11-06):** Sole93791/wrapper0, actualOpus5.5/high/retained2.1.314/<plan removed>, technicalPASS_WITH_NOTES/high and canonical3imagecoveragePASS. Root independently decoded all3same-session Read/result PNGs byte-exact and read/adjudicated every publicfinding/limit. [Full public report and custody](reviews/2026-11-06-visual-calibration-adjudication/README.md). Small-script/hex limits retained; other264pages/allscience/fullvisual/cold remain open. This proves currentprobeavailability, not helperquota or futurecapacity; no source/PDF/grade/adoption change.
+
 - **Three-page visual calibration READY (2026-11-06):** Retained Claude2.1.314 image-ledger/runtime and fresh Root firstParty/native identity checks PASS; helper reports different live identity, so quota remains unknown and is not transferred. [Complete frozen three-PNG preparation](reviews/2026-11-06-visual-calibration-ready/README.md). Standing recovery permits one bounded availability/image-legibility probe after separate Root authority/private parity; no generation yet. Root viewed pages1/150/267 only; no full267 visual or scientific acceptance.
 
 - **Construction C sole PRIMARY invocation live (2026-11-06):** Audited byte-loader95362/PID3330528/start88789300 after READY686eed4 pushed/GW parity. [Exact once authority and live handle](reviews/2026-11-06-construction-C-live/README.md). No report/verdict yet, no automatic retry/followup/fallback; F remains MEDIUM and C derives or conditions all consumed premises. Source/PDF/candidate/adoption and freshJ/whole gates unchanged.
