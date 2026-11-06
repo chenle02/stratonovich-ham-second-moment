@@ -16,7 +16,7 @@ force Chen's predicted constant or create a Lean companion without approval.
 
 ## Status
 
-PAUSED
+ACTIVE
 
 ## Round
 
@@ -71,6 +71,8 @@ Dashboard/state and round-accounting repair do not clear any of these gates.
 
 ## Human Notes
 
+- Le, 2026-11-06: explicitly resumed the preserved full goal: "Please set up the goal and achieve it." The active harness goal retains all original models, the actual derived constant and every required review/source/visual/cold/delivery gate. Begin with the independent frozen integration-draft transcription and application audit. Earlier pause entries remain historical.
+
 - Le,2026-11-05: explicitly paused the harness goal and requested save-handoff
   plus retro. Only close-state/retrospective maintenance is authorized while
   paused; no proof, reviewer, account-availability or model restart.
@@ -87,6 +89,8 @@ Dashboard/state and round-accounting repair do not clear any of these gates.
   the complete technical companion and remains subject to independent review.
 
 ## Current state
+
+- **Explicit full-goal resumption (2026-11-06):** The user resumed research. Launcher and research trees were clean; serial origin fetches and focused <HUB> readbacks verified exact HEAD parity and recorded-checkpoint ancestry. Current main TeX/PDF and the external paired draft hashes match the paused close record. Current science remains af97ae4, 214 OWN/240 formal/13 joins/28 modules; the external 267-page candidate remains unadopted. The immediate task is independent R01–R15 transcription/application checking, including the actual common-prefix temporal cutoff and four consumers. Existing MEDIUM reports remain immutable and do not authorize confidence-only retries. No new model call, manuscript adoption or Lean/HPC run has occurred. Existing 80 finite/algebraic Lean facts do not exempt the analytic pairing or whole-paper obligations; official companion creation remains unauthorized.
 
 - **Paused safe stop and preserved external integration draft (2026-11-05):**
   The paired267-page draft is frozen locally, unadopted, with prospective215
