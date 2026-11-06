@@ -44,10 +44,11 @@ messages, publication, HPC or official Lean-companion creation.
 
 ## Current Subaim
 
-- [ ] Carry the actual ThemeII.1 conditional MEDIUM and precise OWN foundational
-  reconstruction limits into the remaining coupled work; read II.4–II.6 working
-  and prepare the next substantive assessment with fresh catalog/context pins.
-  No confidence-only retry; the whole HIGH/Kimi/source/visual/cold gates stay open.
+- [ ] Review and explicitly integrate the new exact-constant pairing-source
+  reconstruction after its cross-family gate; retain the actual ThemeII.1
+  conditional MEDIUM and continue the remaining coupled reviews. The new
+  author proof preserves the required half-products but is not yet adopted.
+  No confidence-only retry; whole HIGH/Kimi/source/visual/cold gates stay open.
 
 ## What's Done
 
@@ -82,6 +83,35 @@ Dashboard/state and round-accounting repair do not clear any of these gates.
   the complete technical companion and remains subject to independent review.
 
 ## Current state
+
+- **Later primary-source audit and exact-constant author reconstruction
+  (2026-11-05):** The actual held author PDF pp14–21 contains a fused
+  first-norm transition that drops the induced factor2 before the stronger
+  half-bound used by Case3. A 17-page author pixel/application audit retains
+  this and the separate norm-variable/base-label/set/offset discrepancies as
+  SOURCE-INTERNAL-DISCREPANCY. This is not theorem falsity and does not rewrite
+  the earlier actual DeepSeek report. Root proposed the coefficient-one bound
+  N1(F*H)<=N0(F)N1(H); a complete independent GPT-family author reconstruction
+  now checks all3 fusion slots, exact half-products/edge multiplicities,
+  both Case3 regions, actual translated-covariance CS, zeros/empty chains,
+  arbitrary temporal caps and all-dimensional Green-first applications.
+  Finite controls expose the old transition and support the replacement;
+  they do not replace its analytic proof or a cross-family review.
+  Root fully read that25317-byte proof, its8015-byte report/4834-byte ledger,
+  the14222-byte proposal, source audit/application matrix and finite report;
+  all44 producer manifest members were byte-verified. Root also viewed actual
+  pp14/15/16/21, in addition to earlier pp18/19. The proof establishes
+  per-kernel-family partition existence/max envelope; no stronger universal
+  kernel-independent partition is claimed. Actual OWN006/007/008 need only
+  the uniform envelope over admissible products. Full source/context access
+  is retained in the new bounded skeptic preparation. No model ran on this
+  repair yet; no adoption, HIGH, TeX/PDF change or Lean exemption follows.
+  DeepSeek V4 Pro stays MAIN; whole integrated/Kimi/source/visual/cold gates
+  remain open. Frozen evidence and routing:
+  [source reconstruction checkpoint](reviews/2026-11-05-pairing-source-reconstruction/README.md).
+  Durable lesson: track the exact half through the induction; retain source
+  discrepancies separately from our repairs, use valid measurable-band
+  falsification inputs, and verify the actual consumer's partition quantifier.
 
 - **Actual ThemeII.1 MAIN returned and adjudicated; MEDIUM remains
   (2026-11-05):** READY348ed68 verified committed/pushed/<HUB>-equal, then
