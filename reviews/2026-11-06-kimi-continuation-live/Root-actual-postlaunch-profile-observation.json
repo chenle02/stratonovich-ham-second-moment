@@ -1,0 +1,52 @@
+{
+  "kind": "ACTUAL_POSTLAUNCH_EFFECTIVE_REQUEST_HASHES_WITH_PINNED_DURABLE_PROFILE_REPLAY",
+  "utc": "2026-11-06T21:43:19.493774+00:00",
+  "session": "session_687c1423-751c-42af-b7f5-f385d8750dad",
+  "binding": {
+    "agentId": "main",
+    "modelAlias": "kimi-code/k3",
+    "profileName": "artifact-reviewer",
+    "thinkingEffort": "max",
+    "activeToolNames": [
+      "Read",
+      "ReadMediaFile",
+      "Grep",
+      "Glob"
+    ],
+    "disallowedTools": [],
+    "subagents": [],
+    "systemPrompt_sha256": "b4a43ffb549322600bc7000dcbeaf07b048d7d93c857da29f3283c7824ec797e",
+    "systemPrompt_strip_equals_saved_ROLE": true
+  },
+  "registered_tool_names": [
+    "Glob",
+    "Grep",
+    "Read",
+    "ReadMediaFile"
+  ],
+  "actual_new_request": {
+    "agentId": "main",
+    "kind": "loop",
+    "provider": "openai",
+    "model": "k3",
+    "modelAlias": "kimi-code/k3",
+    "thinkingEffort": "max",
+    "thinkingKeep": "all",
+    "toolSelect": false,
+    "systemPromptHash": "b4a43ffb549322600bc7000dcbeaf07b048d7d93c857da29f3283c7824ec797e",
+    "toolsHash": "422d50688ae86ee2d44af512e9b9a59b744275426389ae85dfe46e2e682df46f",
+    "messageCount": 119,
+    "turnStep": "1.1",
+    "time": 1794001297360,
+    "source_wire_byte_start": 7865378,
+    "source_raw_line_sha256": "4d31597bf369a89515d5885b0b643235d557202c2a3935c9cfe36ce7c4bec475"
+  },
+  "original_tools_snapshot_hash": "422d50688ae86ee2d44af512e9b9a59b744275426389ae85dfe46e2e682df46f",
+  "effective_Role_and_tools_hashes_observed_AFTER_launch": true,
+  "new_profile_bind_event_required_or_claimed": false,
+  "ancillary_profileName_disallowedTools_subagents_basis": "Unchanged original durable binding, verified pinned-native replay semantics, no binding change; actual effective request confirms exact ROLE/tool schema/model/max.",
+  "private_reasoning_accessed_or_used_as_science": false,
+  "wire_prelaunch_prefix_unchanged": true,
+  "protocol_provider_field_is_adapter_not_model_identity": true,
+  "scientific_acceptance": false
+}
