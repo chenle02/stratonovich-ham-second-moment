@@ -94,6 +94,8 @@ Dashboard/state and round-accounting repair do not clear any of these gates.
 
 ## Current state
 
+- **Construction C sole PRIMARY invocation live (2026-11-06):** Audited byte-loader95362/PID3330528/start88789300 after READY686eed4 pushed/GW parity. [Exact once authority and live handle](reviews/2026-11-06-construction-C-live/README.md). No report/verdict yet, no automatic retry/followup/fallback; F remains MEDIUM and C derives or conditions all consumed premises. Source/PDF/candidate/adoption and freshJ/whole gates unchanged.
+
 - **Construction C private READY (2026-11-06):** Actual final preflight/committed-input/carrier/context and independent full-string recount PASS; conditional987118/head61458 with unchanged180224 reserves and explicit conditional515 provider margin. [Complete runtime and actual binding evidence](reviews/2026-11-06-construction-C-ready/README.md). Pure diagnostics made0provider calls. C must derive every unaccepted F implication or condition per row/global; F remains MEDIUM. Separate Root single-call authority follows private push/parity only. No source/PDF/adoption/grade or whole-goal closure.
 
 - **Construction C actual DATA independently CLEAR (2026-11-06):** Localbuild/validatePASS; independent158origins/119wholebodies (153core114+5completeF), exactsource/roles/header/LF/FF/prefix/17cutouts/ninecontext/defs and22refusalcontrolsPASS. Indepjoined806150+unchanged180224=986374/head62202 BEFOREUNKNOWNframing. [Full actualDATA/codes/selection/audits](reviews/2026-11-06-construction-C-data/README.md). FstillMEDIUM/unacceptedHIGH; Cmustderiveeveryconsumedunacceptedimplicationorconditionperrow/global. Runtime/caller/modelauthoritypending, no newmodelcall/source/PDF/adoption/gradechange; freshJ/fulloriginalgoalremain.
