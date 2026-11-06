@@ -16,7 +16,7 @@ force Chen's predicted constant or create a Lean companion without approval.
 
 ## Status
 
-IN_PROGRESS
+PAUSED
 
 ## Round
 
@@ -71,6 +71,10 @@ Dashboard/state and round-accounting repair do not clear any of these gates.
 
 ## Human Notes
 
+- Le,2026-11-05: explicitly paused the harness goal and requested save-handoff
+  plus retro. Only close-state/retrospective maintenance is authorized while
+  paused; no proof, reviewer, account-availability or model restart.
+
 - Le,2026-11-05: shorter notes are preferred if possible. The110-page launcher
   PDF is an older October29 snapshot; the current research PDF is263pages,
   built November3. No263-to110 reduction occurred. An editorial audit must
@@ -83,6 +87,18 @@ Dashboard/state and round-accounting repair do not clear any of these gates.
   the complete technical companion and remains subject to independent review.
 
 ## Current state
+
+- **Paused safe stop and preserved external integration draft (2026-11-05):**
+  The paired267-page draft is frozen locally, unadopted, with prospective215
+  OWN/241formal statements. Current technical263PDF and214/240 source remain
+  unchanged. Root read its complete diff and viewed draftpp16–21 and source9/13;
+  this is scoped author checking, not HIGH or full-PDF clearance. Both U/C
+  literal capacity and restricted whitespace experiments remain OVER before
+  unknown framing; no next packet, format or call is authorized. All owned
+  reviewers/workers are terminal. Canonical retrob8409f74 promotes exact-half
+  bookkeeping and extends source-copy shape checks, retaining actual MEDIUM.
+  Exact local WIP paths, manifests, source/PDF pair and next-step boundaries:
+  [paused close state](handoffs/2026-11-05-paused-session-state.json).
 
 - **Actual new-repair Opus skeptic completed; MEDIUM retained
   (2026-11-05):** One fresh actualClaudeOpus5.5/high attempt completed in
