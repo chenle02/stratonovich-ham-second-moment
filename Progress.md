@@ -44,11 +44,15 @@ messages, publication, HPC or official Lean-companion creation.
 
 ## Current Subaim
 
-- [ ] Review and explicitly integrate the new exact-constant pairing-source
-  reconstruction after its cross-family gate; retain the actual ThemeII.1
-  conditional MEDIUM and continue the remaining coupled reviews. The new
-  author proof preserves the required half-products but is not yet adopted.
-  No confidence-only retry; whole HIGH/Kimi/source/visual/cold gates stay open.
+- [ ] Complete the genuine full-constructor/source-application assessment of the
+  external267-page candidate: all9owned constructor proofs (including new215),
+  exact primary pixels and the explicit original-white finite fusion control.
+  P267 DeepSeek PASS_WITH_NOTES/MEDIUM and all earlier reports remain literal;
+  the candidate is unadopted. The corrected Kimi media channel now delivers
+  actual pixels; its calibration is not a theorem review. Then obtain executable
+  complete U/C MAIN inputs without pruning mathematics or lowering reserves.
+  Whole all-model actual-C2, integrated HIGH/Kimi/source/fullvisual/freshcold and
+  delivery gates remain open.
 
 ## What's Done
 
@@ -89,6 +93,8 @@ Dashboard/state and round-accounting repair do not clear any of these gates.
   the complete technical companion and remains subject to independent review.
 
 ## Current state
+
+- **Full9constructor Kimi DATA and explicit original-white control frozen (2026-11-06):** Required64completetext/17PNG/15checks and all9proof+9definition bindings independentlyaudited; all544outer/204packet/old259 sources and148origins/25old/30supports verified,25consistentdeletion/demotion/binding controls pass. NewAUTHORwhiteformula ratio21/16 plus rigorousEXPLICITepsilon1/4,L4 bound183/176>1 diagnosesprintedfusiontransitiononly; twoAUTHORchecks confirm, cross-familyreviewpending. ExactexistingLeanresolventsource/type/receipt reusedonlyasalgebra,0newfacts/runs/80unchanged/L0unchanged. CorrectedKimi actualtoolset4/noextraagents/skills/ROLEexact and15media actualRGBAregionpixelmatches cover3fullimages. Separateofficial0callfence-recovery accepts technicalPASSnotesHIGH; originalinvalidreport retained andP14Gargumentuncertainty/wrongfactorinterpretationNOTcleared. New200dpiP14detailrequired17thimage; no newnativecredit yet. [DATA/calibration/control custody](reviews/2026-11-06-constructor-kimi-ready/README.md). Current263source/grades unchanged,267external; fullCtorcaller/preflight/actualread/SCIENCEHIGH stillpending. ProgressACTIVE/current-subaim refreshed; ignoredlocaldashboardmirrorrealignedACTIVE, originalgoal/round preserved.
 
 - **Actual Kimi calibration failure and local media repair retained (2026-11-06):** ManagedOAuthK3/max/native2.3.3 is AVAILABLE; first actual3image calibration completed146.968s/transport0 with13Read/Globcalls/media0. Rawpublic INCONCLUSIVE/high/3UNCHECKED; officialinvalid-report/acceptedfalse (prose beforeJSON), deterministicrecovery refuses. Focusedprofile omittedReadMediaFile; source/PNG/theorem notfalsified. Task-localnew-session-only wrapper addsread-onlymedia+empty0700skillsdir;102author+21independent controls and freshdryrun pass, globals/parser/route/effort unchanged. [Complete failure/repair custody](reviews/2026-11-06-kimi-media-profile-repair/README.md). Correctedactualmedia calibration and full9constructor KimiDATA preparation remain pending; no source/grade/adoption. Latestwrapper-encoding oldC nominal4404below BEFORE UNKNOWNnewsource/framing, C+repair stillOVER9616 andU/U+OVER26304/40324; no format or model admission, all203origins/hardreserves intact.
 
