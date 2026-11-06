@@ -1,0 +1,9 @@
+# Frozen P267 MAIN boundary DATA
+
+Le resumed the full goal on 2026-11-06. This packet assigns genuinely new assessment of the compact267-page pairing lemma, actual source pp9/13 cutoff law, four changed direct applications and attribution/source-limit boundaries. It does not repeat the spent II.1 or Opus task for confidence. Original214OWN/240formal/13joins/28modules and all models remain the current goal; candidate215/241 remains unadopted.
+
+The complete archive preserves148 full-literal origins in112 exact-byte frames, full candidate and baseline28 modules, complete64-page primary text, all25 original required texts and30 complementary construction inputs. It retains24 source/candidate images and3 PDFs in custody only: the prospective DeepSeek text route earns no image credit. All24 named rows allow honest limited or unread outcomes and an unforced judgment. Old MEDIUM reports remain unchanged.
+
+Root independently reproduced all body/alias bytes, actual source graphs, target statement/proof identities and the full source text from its PDF, and rehashed259 producer manifest members. Cached-tokenizer counts are user765405, agent160, concatenated765565. Combined reasoning/public131072, completion boundary16384 and margin32768 remain unchanged. Effective native framing has not yet been observed or admitted.
+
+This is C1 DATA custody only. Runtime engineering, real-carrier positive-path checks, actual fresh effective-context/count/framing, exact Root approvals and private READY delivery are required before ONE separately authorized fresh call. No provider call or manuscript adoption follows from this commit. No analytic Lean exemption is claimed;80 existing local finite facts remain at their original boundaries. Full integrated MAIN/Kimi/source/visual/cold and private final delivery remain open.
