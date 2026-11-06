@@ -1,0 +1,117 @@
+{
+  "raw_sha256": "42e6e527d540a6e62d6f7f448cecd98360d261c6c7b5d8bc95e2e6b4aec5c861",
+  "raw_verdict": "PASS_WITH_NOTES",
+  "raw_confidence": "MEDIUM",
+  "author_scientific_acceptance": false,
+  "technical_collection_not_scientific_acceptance": true,
+  "new_source_defect_identified": false,
+  "rows": [
+    {
+      "id": "OWN004",
+      "raw_heading": "## OWN004 — `L:damped-homogeneous-norms` — status: RECONSTRUCTED",
+      "author_disposition": "No new source defect identified at reviewed clauses; preserve raw bounded evidence, no new independent vote/acceptance."
+    },
+    {
+      "id": "OWN214",
+      "raw_heading": "## OWN214 — `L:translated-covariance-CS` — status: RECONSTRUCTED",
+      "author_disposition": "No new source defect identified at reviewed clauses; preserve raw bounded evidence, no new independent vote/acceptance."
+    },
+    {
+      "id": "OWN215",
+      "raw_heading": "## OWN215 — `L:pairing-product-envelope` — status: RECONSTRUCTED",
+      "author_disposition": "No new source defect identified at reviewed clauses; preserve raw bounded evidence, no new independent vote/acceptance."
+    },
+    {
+      "id": "OWN005",
+      "raw_heading": "## OWN005 — `L:spatial-wick-measures` — status: RECONSTRUCTED",
+      "author_disposition": "Report-only missing factorial in moment display: raw (2j) must be (2j)!. Actual LF1228/1245 correct; raw later Uk retains factorial. Do not reuse incorrect raw bound."
+    },
+    {
+      "id": "SOURCE-LAW",
+      "raw_heading": "## SOURCE-LAW — status: RECONSTRUCTED (text level)",
+      "author_disposition": "No new source defect identified at reviewed clauses; preserve raw bounded evidence, no new independent vote/acceptance."
+    },
+    {
+      "id": "SOURCE-PRINT",
+      "raw_heading": "## SOURCE-PRINT — status: RECONSTRUCTED (text level); explicit literal-variable answer",
+      "author_disposition": "No new source defect identified at reviewed clauses; preserve raw bounded evidence, no new independent vote/acceptance."
+    },
+    {
+      "id": "BENCH-WHITE",
+      "raw_heading": "## BENCH-WHITE — status: RECONSTRUCTED (analytic witness verified)",
+      "author_disposition": "Norm/Gamma/183/176 derivations agree with actual retained controls. Full sine-integral K derivation is not publicly written here; old Lean partial-fraction mention is not its analytic reconstruction. Literal repeated-x norm is called finite but its <=B comparison is not explicitly derived. Retain these public evidence limits without inventing private proof."
+    },
+    {
+      "id": "FOUNDATION-JOIN",
+      "raw_heading": "## FOUNDATION-JOIN — status: RECONSTRUCTED (funding direction)",
+      "author_disposition": "M1 removal recommendation not accepted: LF1560 cites007 formula E:theta-envelope; LF1562–66 independently derives bound. Distinguish reference/notation edge from necessary logical proof dependency. No source edit or deletion to satisfy report."
+    },
+    {
+      "id": "PRESERVATION",
+      "raw_heading": "## PRESERVATION — status: RECONSTRUCTED (mechanical, quoted-body level)",
+      "author_disposition": "No new source defect identified at reviewed clauses; preserve raw bounded evidence, no new independent vote/acceptance."
+    },
+    {
+      "id": "GLOBAL-SCOPE",
+      "raw_heading": "## GLOBAL-SCOPE — status: NOT_READ (outside assignment)",
+      "author_disposition": "Raw NOT_READ/out-of-scope status retained; exact inventory lists bodies used, not all185 aliases or complete source28 read."
+    }
+  ],
+  "minor_dispositions": [
+    {
+      "index": 1,
+      "verbatim": "- **M1 (metadata, curation).** `constructor/source-bindings-and-graph.json` adds an unsupported edge `OWN007→OWN008`; the candidate `L:vertex-crude` does not reference `L:crude-corrected`. Remove the edge; no mathematical consequence.",
+      "disposition": "QUALIFY_NOT_ACCEPT_DELETION: documentary formula edge exists; standalone algebra derivable; no cycle."
+    },
+    {
+      "index": 2,
+      "verbatim": "**M2 (source quantifier).** p15 “possibly depending on `n1,n2` and `D`” is weaker than the actually proved per-family dependence (`∃Q` per kernel/edge/cap data); `OWN215` keeps this explicit. Any citation should use the per-family/finite-maximum form and not infer a kernel-independent `Q`.",
+      "disposition": "RETAIN_CONSERVATIVE_QUANTIFIER: finite-max/per-family only; weaker/stronger comparison prose imprecise, not a universal-assignment proof."
+    },
+    {
+      "index": 3,
+      "verbatim": "**M3 (source print).** (3.5) literally repeats `x` in `G(t,x)` (second spatial argument `x`). The intended/used norm is `G(s,x)G(t,y)`; this remains a source display qualification, text-resolved, not pixel-certified.",
+      "disposition": "RETAIN_TEXT_ONLY_PRINT: repeated-x text answer consistent with actual source/candidate convention; no pixel credit."
+    },
+    {
+      "index": 4,
+      "verbatim": "**M4 (benchmark scope).** The finite-edge numeric control `1.1888…` is quadrature, not an interval proof; the rigorous statement is the analytic `183/176` bound; the kept Lean certificate covers only the unchanged rational resolvent identity.",
+      "disposition": "RETAIN_ANALYTIC_VS_NUMERICAL_LEAN_BOUNDARY:183/176 analytic;1.1888 numerical; existing rational Lean only."
+    }
+  ],
+  "limitation_dispositions": [
+    {
+      "index": 1,
+      "verbatim": "- Text-only reconstruction: no actual page-image reading was performed or claimed; `SOURCE-PRINT`/`SOURCE-LAW` are certified at layout-text level only, with author pixel-dossier claims quoted as non-operative evidence.",
+      "disposition": "RETAIN_NO_PIXEL_CREDIT; exact image evidence elsewhere does not transfer reading."
+    },
+    {
+      "index": 2,
+      "verbatim": "`OWN005`, `OWN214`, `OWN215` are reconstructed from the supplied quoted sources; this is one-model verification, not the separate Kimi/source-image/native cross-family gate.",
+      "disposition": "RETAIN_ONE_MODEL_SCOPE; textual omission of004 from this limitation list does not negate its OWN004 row."
+    },
+    {
+      "index": 3,
+      "verbatim": "The ambient `006/009/051/204`, whole-paper, cold-read and full-267-visual obligations remain open; no old verdict was regraded and no `HIGH` acceptance is issued.",
+      "disposition": "RETAIN_OTHER_OWN_C_J_WHOLE_COLD_OPEN; MEDIUM unchanged; noHIGHacceptance."
+    },
+    {
+      "index": 4,
+      "verbatim": "LF/byte locators are cited from the supplied bindings and quoted bodies; I did not independently re-run a line-counting tool.",
+      "disposition": "RETAIN_LOCATOR_LIMIT; actual author source readback separately confirms the challenged clauses."
+    }
+  ],
+  "report_only_corrections": [
+    "OWN005 missing factorial",
+    "M1 overstrong metadata-edge removal recommendation"
+  ],
+  "assigned_public_evidence_limits": [
+    "FULL analytic sine-integral K not displayed",
+    "literal repeated-x comparison to B not explicitly derived"
+  ],
+  "actual_reading_boundary": "Inventory names selected bodies actually used; not proof of complete185 aliases,146 whole bodies or all28 modules reading",
+  "future_C": "Derive every consumed unaccepted implication from full source or preserve condition; no MEDIUM label as axiom",
+  "calls": 0,
+  "source_mutations": 0,
+  "regrade": false
+}
