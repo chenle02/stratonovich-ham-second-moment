@@ -145,6 +145,20 @@ realization implication must be derived at its application or conditioned
 per row and globally. Original all215/thirteen-join objective is unchanged;
 no component scope replaces integrated MAIN/Kimi/source/visual/cold/delivery.
 
+## 2026-11-06: actual raw common-noise proof reconstruction under skepticism
+
+New UNREVIEWED AUTHOR working isolates existing raw realization clauses:
+H_Gamma/Phi isometry, given W plus one fixed auxiliary J, actual temporalMAX/
+heatSUM/Euler normalization, exact point-test identity and arbitrary-relative
+L2 test limit, fixed-cutoff regularity. It borrows no operator/Young/SPDE
+convergence theorem and asserts no uniqueness or uncountable-cutoff path event.
+The complete argument and frozen full-source/primary skeptical packet are in
+reviews/2026-11-06-source-retaining-family-reconstruction/.
+One actual fresh native Opus5.5 mathematical skepticism call is running on
+retainedhandle31703 (initialPID4007344); no retry/resume/fallback is authorized.
+Its actual public findings must be read/adjudicated before adoption. No current
+manuscript/PDF or original whole-goal acceptance is changed by this AUTHOR work.
+
 ## Current Subaim
 
 - [ ] Complete the original all-model upper051 and actual-C2 intrinsic204 proof
