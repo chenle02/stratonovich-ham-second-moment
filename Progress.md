@@ -225,6 +225,18 @@ readiness is in reviews/2026-11-06-upper-engine16-main-ready/. All outside
 conditions and original all215/thirteen-join/full-goal gates remain open.
 No model had started at this readiness snapshot.
 
+## 2026-11-06: actual Upper16 DeepSeek MAIN invocation live
+
+READYc998206 committed/pushed/<HUB> parity0/0 and exact archived blob
+verified. The ONE fresh actual call is running on retainedhandle42338,
+sessionses_e4beef2b8ffeVURqnzbMQfTwmZ, PID857332/start90250375.
+Root rechecked the recorded process start live; no terminal receipt existed
+at that observation. Source-byte CLI guard and final scope/profile/count gates
+passed before launch. No retry/resume/fallback or candidate adoption.
+Evidence: reviews/2026-11-06-upper-engine16-main-live/.
+Actual terminal lineage/route/input/usage/source checks and every public
+mathematical finding remain pending. All original goal gates remain open.
+
 ## Current Subaim
 
 - [ ] Complete the original all-model upper051 and actual-C2 intrinsic204 proof
