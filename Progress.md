@@ -17202,3 +17202,8 @@ Root readfull30assignment/workmap/minimalreuse, independentlyverified30wholebodi
 ## 2026-11-07: raw lower/variational/Cameron119–148 LIVE
 
 AfterREADY529cb76push/GWresearchrefparity RootauthorizedONEfreshsource-onlyderivation. Unifiedexec69585/nativePID925096/start96584093 verifiedLIVE/noterminalreceipt. Exact30wholebodies/30IDs+raw-lower-variational-Cameronapplication; no gradedhistory/auto-retry/adoption. Revalidatesamehandlebeforewait; original21513/allmodelC2/HIGH/visual/cold/deliverygatesremain.
+
+
+## 2026-11-07: raw lower/variational/Cameron119–148 terminal; report power errors rejected
+
+Exec69585 CLOSEDnative0/wrapper0; freshses_e4828800affexm5hD2LDAyt4CU exact2messages/no parent/tool0/compaction0. Actual315369input+19449public+2807reason=337625; raw64861B SHA0a979ba35f13607c67d380146e9f704097efa9a1ebc4f12e47bb15b40ae9637f. Independenttechnicalaudit30inverses/aliases/DATAorigin/39pins/3PDF12pagepins/route/events/usage verifies; old061UNKNOWNretained. RootreadENTIRE30sections/application/10GLOBAL andactualaffectedsource. Evidence reviews/2026-11-07-residual119148-source-only-working-terminal/ (relativeJSONtranscriptionswithoriginalhashes,rawexternalcustodyunchanged). MajorREPORTerrors119rT/vertexpowers and126extradelta rejected: actualF011sqrt(delta)PDEcoefficient vsdelta^-1/2Duhamelvertex andF012delta logY>=I_R-epsilon arecorrect.136n>=4omission/140falsealpha+2aimplication/146normerrortypo/132any-rwordingqualified. Singlecontrol/halfaction/fixeddeltaorder/fullclass/finiteness051before132 remain; no newcandidatecounterexample/sourceedit/adoption. Thisungradedresponseisnotproofcertificate. Full21513/allmodelC2/gatesremain.
