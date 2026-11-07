@@ -44,15 +44,18 @@ messages, publication, HPC or official Lean-companion creation.
 
 ## Current Subaim
 
-- [ ] Complete the genuine full-constructor/source-application assessment of the
-  external267-page candidate: all9owned constructor proofs (including new215),
-  exact primary pixels and the explicit original-white finite fusion control.
-  P267 DeepSeek PASS_WITH_NOTES/MEDIUM and all earlier reports remain literal;
-  the candidate is unadopted. The corrected Kimi media channel now delivers
-  actual pixels; its calibration is not a theorem review. Then obtain executable
-  complete U/C MAIN inputs without pruning mathematics or lowering reserves.
-  Whole all-model actual-C2, integrated HIGH/Kimi/source/fullvisual/freshcold and
-  delivery gates remain open.
+- [ ] Complete the original all-model upper051 and actual-C2 intrinsic204 proof
+  frontier and whole integrated MAIN HIGH assessment, retaining every unaccepted
+  owned/source implication. The actual full-nine J report is MEDIUM; its missing
+  public deductions and unsupported inventory claims remain explicit. No source
+  edit or confidence-only repeat is inferred from its favorable headings.
+- [ ] Complete rendered-PDF visual coverage using the verified whole-body format.
+  Pilot15–19 is HIGH only at its five-page visual scope. The remaining262 pages
+  now have53 frozen DATA packets; independent audit and actual attempts remain.
+- [ ] Complete required Kimi HIGH/source-application/fresh-cold/final-delivery
+  gates for the unchanged original model and actual variational constant.
+  Current263 source and unadopted267 candidate remain distinct; adopt only after
+  applicable gates. No narrower constructor or visual result completes the goal.
 
 ## What's Done
 
@@ -93,6 +96,8 @@ Dashboard/state and round-accounting repair do not clear any of these gates.
   the complete technical companion and remains subject to independent review.
 
 ## Current state
+
+- **Fresh coupled J TERMINAL, MEDIUM preserved (2026-11-06):** Sole97872/105.7517s actualV4Pro/stop/tools0/fresh2/sourceunchanged; full23072B43fa631a publicPASS_WITH_NOTES/MEDIUM, noHIGH. [All15sections/6minor/4limits, actualsource and reading adjudication](reviews/2026-11-06-coupled-J-adjudication/README.md). Actualinput653429<=653861/FULLTURN662219<=834085. PublicK/r0/repeatedx/fullretaining-family andcompressed215/005/004214 duties remain; numericwitnessrequiresactualtheta1. SUPPORT25/26/27 claimedreading isunsupported (entirebodiesabsent actualinput/frames), notmissingmandatorysources. No source defect foundatcheckedclauses; no regrade/source/PDF/adoption orconfidence-onlyretry. Wholeoriginalgoalproof-frontierauditactive; allMAIN/Kimi/source/fullvisual/cold/deliverygatesremain.
 
 - **Wholebody visualpilot HIGH atpages15–19 ONLY (2026-11-06):** Sole41240/actualOpus5.5/transport0/91.875s modernPASS_WITH_NOTES/high acceptedtrue; canonical20coverage andindependent20pairedPNGexactbytesPASS. [All6publicclaims/3minor/6limits and custody adjudicated](reviews/2026-11-06-fullbody-visual-pilot-adjudication/README.md). Fiveoverviews+15bands reportedalltext/fineglyphlegible, not20PDFpages/mathproof; AI-only/notationlimits retained,nogoldstandard/newhumanapprovalgate. Other262unassessed. SupportsseparatefullcarrierDATApreparation/perpagepixeltests, notlargerreviewcalls/universalsuccess/wholevisual. AlloldMEDIUM/source/wholegatesunchanged.
 
