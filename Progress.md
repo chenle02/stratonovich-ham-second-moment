@@ -115,6 +115,18 @@ The original V012 INCONCLUSIVE/MEDIUM and its historical repair text remain
 unchanged, without native PASS/HIGH promotion. Full visual and mathematical
 acceptance remain open; all source/PDF and old carriers remain unchanged.
 
+## 2026-11-06: fifth visual batch adjudicated
+
+Pages65–79: V013/V014/V015 all retain PASS_WITH_NOTES/MEDIUM and
+accepted false. Root read all18 checks/12minor/15limits/emptyrepairs and
+complete adjudication. Independent readback verifies60 exact unique PNG
+paired deliveries. Original V014 format refusal and canonical zero-call
+recovery are preserved in reviews/2026-11-06-fullbody-visual-batch005-adjudication/.
+No mandatory repair or source edit follows. AUTHOR copied P062-OPEN prose
+refers to the historical native condition; Root already completed that
+requested equivalent local check at78d212e without regrading the native report.
+Structural visual reading reaches1–79, with full visual/math acceptance open.
+
 ## Current Subaim
 
 - [ ] Complete the original all-model upper051 and actual-C2 intrinsic204 proof
