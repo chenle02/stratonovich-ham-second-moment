@@ -9,3 +9,7 @@ Other items remain mathematical application obligations at their actual scopes: 
 All full215/241/13/C2/HIGH/Kimi/visual/cold/adoption/delivery gates remain open. No manuscript change.
 
 Archive SHA256: 067fd9bd486d618e403f716191b91922636123dbe251080c9a23f19d45fb14a7
+
+Root subsequently read the full sealed C author report, all35 source dispositions and all10 remaining/coupling dispositions. No additional source counterexample identified. F214 is Kimi40 dispositions, not DeepSeek; q evidence is194/195/197 with independent196. Generic per-file retention dispositions do not independently prove the actual source deductions.
+
+Public-adjudication archive SHA256: b58a1fdb455ac1ba46adc697ec71d80f2417f32be05f91cd97db8e98417a37de
