@@ -1,0 +1,11 @@
+# Prospective mathematical contract: complete FrontII052–118
+
+Reconstruct ALL67 full owned source statements/proofs PROOF052 through PROOF118 inclusive and their actual Gaussian/source/Young/constant/masked-flow applications on the original Gaussian model. The assignment is not narrowed by old confidence, adoption or status. Check object-level mathematics and identify only real missing/failed steps or uncertainty; no absent-review condition.
+
+Retain d1/2/3, homogeneous even nonnegative positive-definite tempered Radon covariance, actual amplitude, singular/white/zero, all strict admissible exponent choices and original constant data(1,0). No spectral density/isotropy, original-null-quotient mask map, nonlinear covariance order, omitted velocity/mean/constant column, H1 pointtrace/algebra, unmasked L2 ground, W-only positive-cutoff family or uniqueness may be assumed. Keep one original givenW and fixed auxiliaryJ for sources; full098 driver convergence is now actual assigned work.
+
+The six groups and all67 exact source bindings in the application map are mandatory complete work. Derive consumed unaccepted upstream implications at actual uses; if a genuine derivation is unavailable identify its exact mathematical content and per-row/global effect, rather than conditioning on a label or prior grade. Published/primary imported results require exact-edition statement/hypothesis/application checks, not OWN reproof of the imported theorem.
+
+Read every selected whole mathematical source including opaque scientific JSON and full mixed adverse reports/qualifications. New AUTHOR derivations are working mathematics to independently evaluate, never grade certificates. Exact-byte duplicates may share literal delivery; no semantic compression or field/body pruning. Scope is scientifically fixed before any later count.
+
+Deliver substantive per-proof reasoning and actual application joins, concrete locators/findings/repairs/limits and honest uncertainty/confidence. Original215/241/13 full-goal/limit/constant/wholeHIGH/sourcevisual/cold/delivery remain. No narrower group acceptance, fixedR bound misrepresented as growingR, or label conjunction closes the original goal. This proposal itself creates no packet/count/provider/runtime authority; latest distinct live Kimi22 is untouched.

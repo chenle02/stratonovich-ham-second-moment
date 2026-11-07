@@ -16712,3 +16712,8 @@ Root read the complete author report and target assessments; three sealed member
 ## 2026-11-07: full-body visual batch011 retained
 
 Root read the complete V031–V033 recovered public reports and all author dispositions: physical pages155–169, three PASS_WITH_NOTES/MEDIUM outcomes,18 checks,11 minor notes,14 limitations, no mandatory repairs. All three original format refusals were solely outside-fence prose; canonical zero-call extraction preserves originals and confidence. Retained in reviews/2026-11-07-fullbody-visual-batch011/. All sealed members verified; author custody checks60 exact distinct PNG returns/four negatives. No mandatory repair inferred from cosmetic or fine-script uncertainty. Structural reading reaches169/267; full visual acceptance remains open. Source/PDF unchanged.
+
+
+## 2026-11-07: complete Front II scientific source scope fixed before count
+
+Root selected full proofs052–118 and actual incoming applications after reading the full contract, grouped alias/use catalogue, six derivation groups and all incoming/outgoing boundaries. All218 whole source origins and67 full candidate proof environments were rehashed. An inherited metadata ambiguity was corrected before counting: unrelated whole-main proof ownership is historical only; actual assignment remains exactly052–118. Source bodies unchanged. Selection/reserve decision retained in reviews/2026-11-07-Front-II-scientific-selection/. Pure DATA/count only is authorized with preselected311296 full-work allowance; no fit/native/provider authority or post-count source/reserve reduction. Full original215/13/actualC2/final gates remain active.
