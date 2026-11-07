@@ -310,6 +310,23 @@ Evidence: reviews/2026-11-06-fullbody-visual-batch006-adjudication/.
 Structural visual reading now1–94/267, without fullvisual/math clearance.
 Prior conditions/local diagnostics remain distinct; source/PDF unchanged.
 
+## 2026-11-06: constructor12/raw098 MAIN terminal, MEDIUM retained
+
+Retained43367 closed0; actualDeepSeekV4Pro/fresh2/noTools/stop,236.509s.
+Input637988<=638420, combinedpublic/reasoning12285, FULLTURN650273 pass;
+all56 source modules/twoPDFs unchanged. Root read/adjudicated complete20928B
+ac05a736c1ba514389c86a645ea3ddaa2ef6fbc524443e80d8d0e3d72070ec4f:
+all12 records/RAW098/joins/2major-status objections/5minor/2requirements/limits.
+Report reconstructs assigned mathematics but labels it unreviewed/unadopted
+as a blocker without a concrete failed step. Root records that inconsistency,
+not a mathematical repair or native rating upgrade. Actual verdict remains
+INCONCLUSIVE/conditional MEDIUM; full-goal inferenceLOW. Extension/sigma(W)
+limits remain explicit; no stronger unrequested model claim is introduced.
+Evidence: reviews/2026-11-06-constructor12-raw098-main-adjudication/.
+Next REQUIRED independent Kimi mathematical evaluation and genuine integrated
+judgment; no unchanged DeepSeek confidence repeat or conjunction of grades.
+All original215/thirteen-join/limit/source/visual/cold/delivery gates stay open.
+
 ## Current Subaim
 
 - [ ] Complete the original all-model upper051 and actual-C2 intrinsic204 proof
