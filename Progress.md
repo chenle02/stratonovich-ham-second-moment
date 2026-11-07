@@ -16787,3 +16787,8 @@ Root read V043–V045 complete public reports and all author dispositions: physi
 ## 2026-11-07: calibration/source audit retained; no return to forced Chen endpoints
 
 [held back: collaborators' unpublished work]
+
+
+## 2026-11-07: complete Kimi public/adjudication retained without regrading
+
+Complete75885B rawpublic andAUTHOR26checks/8minor/6limits retained in reviews/2026-11-07-gupper22-Kimi-public-adjudication/. RootreadfullAUTHORreport/all26dispositions andallfindinglimits; all9sealedmembers match. INVALID causedbydecoratedrowverdicts suchasPASS(RECONSTRUCTED), notoverallmedium spelling; canonicalrefusal/no manualnormalization/retry preserved. RawMEDIUM remainsbelowHIGH. Full123requiredsource/124aliascustody doesnotproveattention ormath. Check25false007/008current-candidatehashmatch qualifiedbyactualhashes. FixedW+J scopecorrect; no retroactiveq-reviewcredit. Prospectiveplainenumgrammar clarifiesreconstructionlabelambiguity, notoldreportrepair. NoMCP0/compactionabsence/private-tokeninference. Source/PDF/fullgoalunchanged.
