@@ -362,6 +362,22 @@ Root authorizes ONE fresh integrated22/raw proof call after actualcommitted/
 pushed/<HUB>-equal READY delivery, no automaticretry/resume/fallback.
 No parser weakening, old-grade transfer, candidate adoption or goal clearance.
 
+## 2026-11-07: required Kimi integrated upper review actually live
+
+READYd0845f7 committed/pushed/<HUB> parity0/0 and exact archive verified.
+One fresh actualKimi22/raw review is running on retained30371, nativePID
+2134059/start90793452 (live rechecked), owned session
+session_bab4ed62-50d5-417f-817f-3fb77452b2de. Actual native2.3.3/k3/max,
+main/artifact-reviewer, Read/ReadMediaFile/Grep/Glob,subagents[],agentsMdPaths[]
+and initial requestmaxTokens131072 observed, not inferred from a profile file.
+Canonicalbg-run dispatch source is unchanged; actual native exe independently
+verified. No initial-five-step compaction observed, no later guarantee; MCP
+connection absence itself remains unproved rather than guessed.
+Evidence: reviews/2026-11-07-gupper22-kimi-main-live/.
+Await SAME30371 only, no automaticretry/resume/fallback. Actual whole123-source
+text delivery/compaction/retention, final route/usage/source and every public
+mathematical finding remain pending. No proof/candidate/goal acceptance.
+
 ## Current Subaim
 
 - [ ] Complete the original all-model upper051 and actual-C2 intrinsic204 proof
