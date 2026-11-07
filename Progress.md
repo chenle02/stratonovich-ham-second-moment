@@ -17217,3 +17217,8 @@ Rootreadfull29assignment/workmap/minimalreuse, verified40wholebodies/allaliases/
 ## 2026-11-07: actual Gaussian tube149–177 derivation LIVE
 
 AfterREADYfe21c82push/GWresearchrefparity RootauthorizedONEfreshsource-onlyderivation. Unifiedexec69062/nativePID965707/start96726963 verifiedLIVE/noterminalreceipt. Exact40wholebodies/29IDs+Gaussian-tubes-upperapplication; no gradedhistory/auto-retry/adoption. Revalidatesamehandlebeforewait; original21513/allmodelC2/HIGH/visual/cold/deliverygatesremain.
+
+
+## 2026-11-07: Gaussian tube149–177 terminal with decorated-heading refusal and report errors
+
+Exec69062 CLOSEDnative0/wrapper2; freshses_e4812b354ffeizHN8jJHUteRsv exact2messages/no parent/tool0/compaction0. OriginalRefusal missingexactPROOF149 becauseallheadersdecorated preserved, no normalization/retry/promotion. Actual358373input+15128public+8591reason=382092; raw49840B SHA95b656f8cffa18beb457e1a434cc6e84901304876863b29e866ed3c757bfd64d. IndependentNONACCEPTINGheadingstub isolates40source/51pins/3PDF16page/route/events/usagechecks; old061UNKNOWNretained. RootreadENTIRE29sections/application/10GLOBAL inthreeuntruncatedchunks. Evidence reviews/2026-11-07-residual149177-source-only-working-terminal/. RejectREPORT164Hsign/169gdeltafactor/G1universalJ-limit+rawtubeJpremise/G5denialofactualuniformspectraltail/G6blockindependence andextrauniformFcondition. SourceactualrawW/halfaction/E-onlyregulation/compactbaseline retained; AWS170ingredientscompressednotcertificate. No newcandidatecounterexample/sourceedit/adoption/HIGH; point193/intrinsic204andallfullgoalgatesremain.
