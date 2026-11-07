@@ -16672,3 +16672,8 @@ orconstructorrestart. Sourceaf97/PDF096cb3/localgrades/Leanunchanged. Actual
 model/fresh2/prompt/tools/finish/usage/publicmath willbeverifiedatterminal; launch
 isnotproofacceptance/HIGH/whole/visual/Kimi/cold orgoalclosure. Read-onlyintrinsic
 core194–204supportmap preparationdoesnotchangeanyliveinputoracceptance.
+
+
+## 2026-11-07: wave measure and actual raw admission author audit
+
+Root read the complete 061–071 author report and eleven proof records; all four sealed input members and eleven full candidate proof-environment hashes match. Retained in reviews/2026-11-07-wave-measure-raw-admission-author-audit/. The audit reconstructs the translated-ball and auxiliary-measure estimates, same-W completion and quotient obstruction, complex temporal estimate with moving endpoint, continuous zero-frequency matrix, separate near/far strict restrictions, critical logarithm, and actual Sobolev-adjoint wave-test admission. No local gap or new source repair found. This fills the specified analytic inputs left conditional in the preceding author matrix/two-variance audit, without creating an independent acceptance vote. Original all-model scope and all final gates remain active. Source and PDF unchanged.
