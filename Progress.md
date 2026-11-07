@@ -16887,3 +16887,8 @@ Root checked actualAGENTS workforce and historicalProgress launch restrictions: 
 ## 2026-11-07: native staged delivery limitation identified before dispatch
 
 Root rehashed nativef9dab and inspected actual embedded Read/compaction code. Read clips2000UTF16unit lines/51200bytes;13of215distinct required bodies contain50overlongLF lines. Offset pagination cannot recover these tails. Evidence in reviews/2026-11-07-whole215-staged-route-design/native-read-limit-evidence.json. DATA-only originalcorpus+bounded reversible supplementary views for13whole bodies now being prepared, exact inversebytes/CR/FF/LF and originalsourcepins required. Compaction requires explicit per-request allowance/toolbuffer and sameV4Pro checks. No generation/sourcechange/acceptance; all243sources/215proofs/241roles/13joins retained.
+
+
+## 2026-11-07: staged whole-source corpus and reversible views verified
+
+Root verified all331 sealed members/0444regular modes of DATA309bead8;243required aliases/215whole original frames+94wholecustody/full215/241/13metadata retained. Independently decoded all13whole-source views to byte-identical originals, including originalLF/FF; all50overlong lines represented. Complete corpus in reviews/2026-11-07-whole215-staged-read-corpus/. No sourceedit/provider/native-read/grade/scientific acceptance. Minimal staged event/export validator and tasklocal read-only profile preflight implementation authorized separately, no generator launch; per-request budget, actualReadcustody and compaction route checks remain.
