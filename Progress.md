@@ -16772,3 +16772,8 @@ Root viewed all4 actual3200 context/detail crops and read the complete diagnosti
 ## 2026-11-07: Kimi22 terminal INVALID/rawMEDIUM; whole-source delivery complete
 
 Rootclosed30371 actualterminal4318.774s/transport0/K3max routeverified/sourceunchanged. Publicpreamble+fencedJSON rejected; canonicalZEROcallrecoverydryrun refuses body-invalid unsupportedverdict/confidence. No manualnormalization/acceptance/retry/continuation. RawPASS_WITH_NOTES/MEDIUM/no repairs, belowHIGH regardlessformat; fullpublicauthoradjudicationpending. ExactterminalLFcodec confirmsALL123requiredwholefiles (120bodies+3docs),123creditedReadpairs/no missingrows; notattention/mathacceptance. Safeobservation/deliveryproof retained in reviews/2026-11-07-gupper22-Kimi-terminal-observation/. NewqOpus77136 separatelylive/agentmonitored, actualwrapperPID2269169/start91235864 reportedverified; notKimi orwhole22rerating. Fullgoal/gatesactive, source/PDFunchanged.
+
+
+## 2026-11-07: independent HIGH q-counterexample review; MAIN erratum adjudicated
+
+[held back: collaborators' unpublished work]

@@ -1,0 +1,13 @@
+# Independent q-counterexample review and MAIN report erratum
+
+Root read the complete actual Opus report: seven PASS checks, six minor notes, seven limitations and no required repairs. The strict report is PASS_WITH_NOTES/high, accepted by the canonical helper. Terminal readback verifies all twelve required whole source files and the actual pinned read-only profile; all sealed archive members match. No private thinking is archived or used.
+
+The orthogonal witness q proves that positive-cutoff point features at t>0 need not belong to the closed raw-noise image. Consequently the given-W-only claim in three DeepSeek report passages is false. The draft explicitly allows one independent auxiliary Gaussian field and makes no such claim. Root adopts the factual correction proposed by the independent review: reject the last extra sentence in PROOF097.derivation, retract the strengthening in minor5, and interpret the integrated moment/solution claim on the fixed extension. The original DeepSeek report stays immutable; these are Root's adjudicated errata, not a retraction attributed to DeepSeek.
+
+The isometry, exact retention, joint covariance, raw test convergence and regularity statements remain valid. None of the actual 006/008/009/051 deductions needs W-only positive-cutoff fields. The original model means its covariance, amplitude and source-family law with the given noise retained on the extension; it does not assert descent to the original sample space. The quantitative upper argument uses source-family laws and its actual fixed-order/product/tail joins. This resolves the identified extra-assertion issue in the scoped MAIN report, without issuing a new whole22 HIGH vote or replacing the original proof checks. The raw MAIN HIGH remains the original result with this explicit erratum; whole-goal MAIN acceptance is still not established by the upper-bound scope alone.
+
+All six minor findings are adjudicated: the witness is restricted to t>0 and says nothing about t=0; direct full-test orthogonality is already valid; proposed stronger test-source/range statements and realization-invariance are optional and unnecessary here; nonlinear-limit W-measurability remains unsettled and is not a new completion requirement; original-model wording is restricted as above. All seven scope/source-text limitations are retained. No new source repair follows, and no unreviewed nonlinear measurability theorem is adopted.
+
+[held back: collaborators' unpublished work]
+
+Kimi's raw MEDIUM/technical failure, the full intrinsic limit, all215/thirteen joins, visual/cold/build and private-delivery gates remain separate. Source and PDF are unchanged.
