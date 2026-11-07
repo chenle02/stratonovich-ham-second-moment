@@ -16687,3 +16687,8 @@ Root viewed the actual 3200-pixel context and glyph detail and read the complete
 ## 2026-11-07: full-body visual batch009 retained
 
 Root completed the full public readback for V025–V027, physical pages125–139, and read all author dispositions. Three PASS_WITH_NOTES/MEDIUM outcomes,18 checks,12 minor notes,15 limitations and empty mandatory repairs are preserved in reviews/2026-11-07-fullbody-visual-batch009/. V025 used canonical zero-call fenced-JSON recovery only; no confidence change. The author custody audit verifies60 exact distinct PNG returns with four negative controls. Root verified every sealed archive member. The original P134 uncertainty remains in the report; its separate actual-pixel check is now complete without native regrade. No source/PDF edits. Full visual and integrated acceptance remain open.
+
+
+## 2026-11-07: Root actual raw-block lower deduction audit
+
+Root read the complete frozen raw-block lower module and final positive-score/limit applications. The report in reviews/2026-11-07-raw-block-lower-root-audit/ reconstructs same-W pullback and single half-action, norm-Borel Gaussian shift, correlated-block maximum, closed-endpoint full-phase cone, actual retaining-source restart and fixed-N product convergence, canonical full-chain moment comparison, exact fast/slow scaling and the ordered asymptotic limits. No local failure/new repair found. Named source/Young/mild and uniform compact spectral inputs remain separate prerequisites, with targeted audits active; this is not independent acceptance. Source/PDF unchanged, full goal and final gates active.
