@@ -16727,3 +16727,8 @@ Root independently recomputed1184821 joined tokens for the frozen full052–118 
 ## 2026-11-07: full-body visual batch012 retained
 
 Root read all V034–V036 complete public reports and author dispositions: physical pages170–184, three PASS_WITH_NOTES/MEDIUM,18 checks,13 minor notes,15 limitations, no mandatory repair. V035 used canonical zero-call fence extraction only; original refusal/prose/confidence preserved. Retained in reviews/2026-11-07-fullbody-visual-batch012/. All sealed members match; author custody checks60 exact distinct PNG returns/four negatives. Page183 tiny half-action exponent uncertainty remains visual-only. Structural reading reaches184/267 without full visual acceptance. Source/PDF unchanged.
+
+
+## 2026-11-07: integrated Gupper22 DeepSeek MAIN actual inputs frozen
+
+Root verified corrected-v2 whole124/120 input and22 proof environments against exact source bytes and the immutable Kimi corpus, and independently recomputed697017 joined tokens with unchanged311296 allowance. Root read the whole adapted guard/unchanged transport/source-byte loader;33 author pure controls pass. Fresh pure profile diagnostic confirms exact primary DeepSeek/tools/skills/MCP/context/share/compaction policy with zero provider calls; no raw secret configuration retained. Complete regular-member input/runtime archive is in reviews/2026-11-07-gupper22-deepseek-input/. No model generation yet; actual framing, final matching preflight, READY push/GW and separate one-call authority remain. Full original goal unchanged; source/PDF unmodified.
