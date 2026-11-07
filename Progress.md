@@ -16692,3 +16692,8 @@ Root completed the full public readback for V025–V027, physical pages125–139
 ## 2026-11-07: Root actual raw-block lower deduction audit
 
 Root read the complete frozen raw-block lower module and final positive-score/limit applications. The report in reviews/2026-11-07-raw-block-lower-root-audit/ reconstructs same-W pullback and single half-action, norm-Borel Gaussian shift, correlated-block maximum, closed-endpoint full-phase cone, actual retaining-source restart and fixed-N product convergence, canonical full-chain moment comparison, exact fast/slow scaling and the ordered asymptotic limits. No local failure/new repair found. Named source/Young/mild and uniform compact spectral inputs remain separate prerequisites, with targeted audits active; this is not independent acceptance. Source/PDF unchanged, full goal and final gates active.
+
+
+## 2026-11-07: compact mean-family prerequisites audited
+
+Root read the full bounded compact-mean author audit, verified its ten input pins and report hash, and directly read the retained Teschl ground-state/max-min theorem pages and essential-threshold convention. Arbitrary positive nonseparable controls admit one fixed eligible mask and common negative trial. Closed-interval simple ground families, positive initial/observable margins, both phase entries and constant coordinates, and normalized complementary decay reconstruct without a local gap. Zero covariance is excluded from binding and remains its separate free branch. Evidence: reviews/2026-11-07-compact-mean-family-author-audit/. This completes the specific local spectral prerequisite audit for the raw-block deduction; it is not independent-family/full-goal acceptance. Source/PDF unchanged.
