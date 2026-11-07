@@ -399,6 +399,21 @@ V020MEDIUM/rawlimuncertainty unchanged, no native or math grade promotion.
 Evidence: reviews/2026-11-07-P101-limit-glyph-diagnostic/.
 No source/PDF edit or wholevisual/goal acceptance.
 
+## 2026-11-07: actual point-upper growing-radius AUTHOR audit retained
+
+Root read full189/193 derivation audit. Actual expected-driver-path norm
+(not weakCM variance alone) yields moving-radius anchor; the exact closed-
+support/minimum-original-preimage Borell action is globalHALF. Fast Young
+weighted delta cancels affinepullback, and fixedB/radius/threshold orders
+precede delta then outerlimits.189 uses averageOFsquares and TWO fixeddelta
+sourceL2limits before exactcanonical lawscaling, no pointH1trace.
+No local counterexample/missingradiushypothesis found; remaining actual
+finiteGaussianMatrix/twovariance maskedkernel/sourceconstantcolumn/q_n
+proofs stay explicit upstream obligations, not closed by source/oldgrades.
+Evidence: reviews/2026-11-07-point-upper-growing-radius-author-audit/.
+This is AUTHOR work, no full-limit/independentfamily/wholegoal acceptance.
+Kimi22 remains the one live actual attempt under Root30371, no retry/resume.
+
 ## Current Subaim
 
 - [ ] Complete the original all-model upper051 and actual-C2 intrinsic204 proof
