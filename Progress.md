@@ -237,6 +237,20 @@ Evidence: reviews/2026-11-06-upper-engine16-main-live/.
 Actual terminal lineage/route/input/usage/source checks and every public
 mathematical finding remain pending. All original goal gates remain open.
 
+## 2026-11-06: positive Gram/intrinsic AUTHOR derivation audit retained
+
+Root read the full194–204 AUTHOR audit with exact zero/singular/empty/
+entrywise-order/half-action controls. No local counterexample in194–203 was
+located.201 bounds the unmasked optimizer by the SAME M before202's second
+averaging;203 removes masks by one fixed positive test and domination, with
+no monotonicity or unmasked ground state. The full positive-class covariance/
+noise amplitude scaling also matches the unit-kinetic/global-half-action formula.
+204 remains conditional here on actual193/source-to-point and raw lower/cone/
+source implications; this is no independent-family acceptance or whole proof.
+Evidence: reviews/2026-11-06-positive-intrinsic-author-audit/.
+Current Upper16 MAIN retainedhandle42338 is still the only native MAIN to await;
+no retry/resume/fallback or original-goal narrowing is authorized.
+
 ## Current Subaim
 
 - [ ] Complete the original all-model upper051 and actual-C2 intrinsic204 proof
