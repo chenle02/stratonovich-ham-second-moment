@@ -16767,3 +16767,8 @@ Rootclosed12723 atactualterminal472.610s/exit0/stop/fresh2/tools0. ExactDeepSeek
 ## 2026-11-07: P200/P202 local glyph questions resolved
 
 Root viewed all4 actual3200 context/detail crops and read the complete diagnostic; all sealed members rehashed. P200 apparenthat is preceding subscriptj, with zero eight-neighborcontact to lowerL^p/A atboth1600/3200 including antialias pixels. P202 interval parentheses/comma andtau exponents/r_2 are clear and agree with source. Complete evidence in reviews/2026-11-07-P200-P202-glyph-diagnostic/. No source repair inferred. V040technicalINVALID/rawMEDIUM remain unchanged; this is local diagnostic evidence, not native/fullvisual/math acceptance.
+
+
+## 2026-11-07: Kimi22 terminal INVALID/rawMEDIUM; whole-source delivery complete
+
+Rootclosed30371 actualterminal4318.774s/transport0/K3max routeverified/sourceunchanged. Publicpreamble+fencedJSON rejected; canonicalZEROcallrecoverydryrun refuses body-invalid unsupportedverdict/confidence. No manualnormalization/acceptance/retry/continuation. RawPASS_WITH_NOTES/MEDIUM/no repairs, belowHIGH regardlessformat; fullpublicauthoradjudicationpending. ExactterminalLFcodec confirmsALL123requiredwholefiles (120bodies+3docs),123creditedReadpairs/no missingrows; notattention/mathacceptance. Safeobservation/deliveryproof retained in reviews/2026-11-07-gupper22-Kimi-terminal-observation/. NewqOpus77136 separatelylive/agentmonitored, actualwrapperPID2269169/start91235864 reportedverified; notKimi orwhole22rerating. Fullgoal/gatesactive, source/PDFunchanged.
