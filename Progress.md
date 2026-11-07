@@ -16747,3 +16747,8 @@ After READY7a649c1 push/GW parity, Root launched exactly one bound source-byte n
 ## 2026-11-07: full-body visual batch013 retained
 
 Root read all V037–V039 complete public reports and all author dispositions: physical pages185–199, three original valid PASS_WITH_NOTES/MEDIUM,18 checks,13 minor notes,14 limitations, no mandatory repairs or recovery. Evidence: reviews/2026-11-07-fullbody-visual-batch013/. All sealed members verified; author custody checks60 exact distinct PNG returns/four negatives. Cosmetic/fine-script/noncontact spacing qualifications remain; no native regrade. Structural reading reaches199/267 without full visual acceptance. Source/PDF unchanged.
+
+
+## 2026-11-07: visual batch014 preserved with V040 format failure
+
+Root read complete V040 raw output/trailing prose, valid V041/V042 reports and all author dispositions. Physical pages200–214: V041/V042 valid PASS_WITH_NOTES/MEDIUM; V040 raw MEDIUM but strictINVALID, canonical zero-call recovery refused unfenced JSON+prose. No manual promotion/recoveredJSON/modelretry. All18 raw checks/12minor/14limits/emptyrawrepairs preserved in reviews/2026-11-07-fullbody-visual-batch014/. Every sealed member verified; author custody checks60 exact distinct PNG returns/four negatives. Root commissioned localP200/P202 glyph diagnostics; rawhuman wording grants no approval gate. Structural reading reaches214/267, with explicit V040 technical gap and no full visual acceptance. Source/PDF unchanged.
