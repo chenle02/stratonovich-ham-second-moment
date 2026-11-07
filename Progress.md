@@ -16907,3 +16907,8 @@ Root read validator/Readhook and reran7core+8sourcecontrols, plus8sourcecontrols
 ## 2026-11-07: full215 staged MAIN READY before first invocation
 
 Root independently inspected and tested finalcollector/profile/launcher, verified actualsource/carrier/metadata bindings. Safe0generation profile/directDeepSeekV4Pro/samecompactor/235Readpaths/threshold671744 pass;9core/8Read/launcher and Rootprofile controls pass. Fullcode/plan evidence in reviews/2026-11-07-whole215-staged-MAIN-ready/. Initial1532+conditional131072+unchanged311296=443900, notactualadmission; everyactualstep737280input/262144combinedoutput andwhole220targetdelivery mustverify. Normalcompactionbound; overflow/unknownroute/tool/source/usage refuses, no gradepromotion. ONEfreshfull243/215/241/13nativeinvocation onlyafterREADYpush/GWparity andseparateRootauthority; no generation yet. FulloriginalC2/sourcevisual/KimiHIGH/cold/adoption/private delivery gatesremain.
+
+
+## 2026-11-07: first full215 staged MAIN invocation LIVE
+
+AfterREADY475ea8fpush/GWparity, RootauthorizedONEfreshnativeV4Pro stagedreview; actualPID2505045/start92031421/executable/carrierverifiedLIVE, Rootexec64091/session ses_e4adf2f21ffeMDPxl7Y9MOn7QE. Safeauthority/observation in reviews/2026-11-07-whole215-staged-MAIN-live/. First13completedReadreturnsmatchfrozenbytes/14requestusagepassesmaxinput120121; notcompletecoverage. InitialdirectorynavigationReadDENIED/notcredited; currentstrictcollectorwillretain/refusefailedRead, no mid-runrelaxation/codechange/restart. Continueobservingsamehandle; fullpublic/math/HIGH/source/cold/deliveryremainpending. No sourcePDFadoption.
