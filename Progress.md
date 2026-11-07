@@ -16832,3 +16832,8 @@ AfterREADY7970ebdpush/GWparity, RootlaunchedONEfirstGaussian40/FULL098call. Actu
 ## 2026-11-07: Gaussian40 MAIN fullpublic adjudication, PARTIAL/MEDIUM retained
 
 Rootreadall40publicrecords/5minor/2repairs/3limits andfullAUTHORdispositions; completeevidence in reviews/2026-11-07-Gaussian40V3-MAIN-public-adjudication/. Actual183.662s/fresh2/stop/tools0/sourceunchanged/input588037/combined7036/FULL595073 pass. OverallPARTIAL/medium iscanonicalunsupported/unaccepted although35PASS+5PASSnotes rows; no normalization/regrade/retry. Repair1alreadyRootq-erratum; repair2actualassignedPASS094095dependencyexplicitlydischargedby098, notnewsourcegap/statuspremise. Report076d_i<=TrD^m false(scalar.5,m2); actualsourceSUMd_i^m<=TrD^m correct. No source/cohortinput-changecounterexample. Selectivecoverage notfullattentioncertificate; privateanalysisexcluded. Kimi40independentcohort/fullgoal/gates/sourcePDFunchanged.
+
+
+## 2026-11-07: visual batch017 retained, structuralreading259/267
+
+RootreadcompleteV04950(recovered)51public/allAUTHORdispositions;18checks/13minor/15limits/no mandatoryrepairs, allMEDIUM. V050canonicalZEROcallfence extraction preservesoriginalrefusal/confidence; no generationretry. Completeevidence in reviews/2026-11-07-fullbody-visual-batch017/; allsealedmembers rehashed/AUTHOR60exactPNGfournegativespass. SourceP256H_t temporal andP259generalS_c zero intentional, no typo. P253contact/productspacing localdiagnosticpending. V04046technicalgaps/fullvisualacceptance remainopen; sourcePDFunchanged.
