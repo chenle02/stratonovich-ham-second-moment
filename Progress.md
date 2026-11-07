@@ -16872,3 +16872,8 @@ Root read all42 complete public claim/reason/reconstruction records plus AUTHOR 
 ## 2026-11-07: whole215 final scientific selection before count
 
 Root read all105 distinct current-use role/locator/reason groups and complete final additive contract, rehashed337 whole origins and all215 actual complete candidate proof environments, checked241roles/13join record counts. Final selection243required whole mathematical/current/primary files+94whole available custody, including complete actualKimi40 outcome; no source cuts/semantic substitutions or status/grade premises. Root selection in reviews/2026-11-07-whole215-final-source-selection/. Pure lossless DATA and official literal count authorized using existing code, fixed311296 allowance; no provider/runtime/generation authority. Original all-model goal unchanged; this is source selection, not proof acceptance.
+
+
+## 2026-11-07: final whole215 literal input exceeds MAIN context
+
+Exact243whole-origin/215byte-frame input counted1,367,391 tokens; Root independently reproduced with official pinned tokenizer/cached0.23.3. Fixed311,296 allowance gives1,678,687, OVER630,111 before unknown framing; input alone OVER318,815. All215proofs/241roles/13joins/whole sources preserved; no model call, postcount cuts or reserve reduction. Evidence in reviews/2026-11-07-whole215-final-literal-capacity/. Current all-at-once tool-free MAIN route cannot admit this required input. A feasible full-scope review route remains to be established; component grades do not substitute. Goal active, manuscript unadopted.
