@@ -102,6 +102,19 @@ component verdicts alone will not satisfy the whole-goal requirement.
 Front-I source relevance selection is underway before any new counting.
 All original all-model mathematics and review gates remain required.
 
+## 2026-11-06: page 62 equivalent layout check completed
+
+Root viewed actual 3200-height context/detail crops, checked source LF4070
+and all six original/new raster measurements. The bar belongs to the
+conjugated expression; there is no ink contact with Gaussian, with fourteen
+clear rows at 3200 height and seven at original 1600 using all nonwhite ink.
+This completes the requested higher-resolution/equivalent check locally;
+no collision-driven source repair is justified. Complete evidence is in
+reviews/2026-11-06-P062-layout-diagnostic/.
+The original V012 INCONCLUSIVE/MEDIUM and its historical repair text remain
+unchanged, without native PASS/HIGH promotion. Full visual and mathematical
+acceptance remain open; all source/PDF and old carriers remain unchanged.
+
 ## Current Subaim
 
 - [ ] Complete the original all-model upper051 and actual-C2 intrinsic204 proof
