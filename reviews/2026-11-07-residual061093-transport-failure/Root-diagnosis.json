@@ -1,0 +1,31 @@
+{
+  "scope": "TRANSPORT_FAILURE_NOT_SCIENTIFIC_REVIEW",
+  "runtime": "external-evidence/stratonovich-residual061093-source-only-working-runtime-20261107",
+  "session": "ses_e48bbeef8ffe9QUGd8w4DeXZRl",
+  "exec_handle_closed": 98060,
+  "native_exit": 1,
+  "wrapper_exit": 2,
+  "events_bytes": 605,
+  "events_sha256": "508f92f4ccd1c339cb620e924afe83f3726dd6d84656b30313667cd32411f76b",
+  "public_derivation_present": false,
+  "completed_request_usage": "UNKNOWN",
+  "HTTP_admission_or_billing": "UNKNOWN_NOT_INFERRED",
+  "error_name": "APIError",
+  "error_message": "Cannot connect to API: Unable to connect. Is the computer able to access the url?",
+  "native_isRetryable": true,
+  "live_checkpoint_assertion": "REFUSED_BEFORE_WRITES_NO_LIVE_COMMIT",
+  "old_fence_preserved": true,
+  "Root_plan_sha256": "3c439cc96b5b524d30fb50a11a5c045dc4ae842d8ce3c7ba71fa770390cbc882",
+  "code_manifest_sha256": "1498ebb8236e2a0a3065f7a720345e58a1e839f0a0cd814cb84f3f11e6fc6a14",
+  "DATA_manifest_sha256": "2b69e26f21ed535547bb55160dad666a34043b4524543a05cd1289a5b49a1b6f",
+  "subsequent_zero_generation_diagnostic": {
+    "command": "curl --head --output /dev/null --silent --show-error --connect-timeout10 --max-time20 https://api.deepseek.com",
+    "exit": 0,
+    "http_status": 401,
+    "tls_verify_result": 0,
+    "auth_key_sent": false,
+    "meaning": "DNS/TLS/unauthenticated HTTP endpoint reachable at this later observation; not authenticated model admission or recovery completion"
+  },
+  "recovery_authorized_or_launched": false,
+  "scientific_acceptance": false
+}
