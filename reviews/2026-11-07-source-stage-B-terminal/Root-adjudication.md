@@ -7,3 +7,7 @@ Root read the complete 20038-byte public working record and the current inserted
 No manuscript changes or adoption. The remaining source/application work, integrated DeepSeek HIGH, Kimi HIGH, operative visual acceptance, fresh cold review, and synchronized final delivery remain required.
 
 Complete archive SHA256: 82412530bdc9c3df81d23b5d1e5ce12ddbb94a5310cae115e7cb6b65e8a97c10
+
+Root subsequently read the complete sealed mathematical adjudication, all 30 source dispositions and all 10 remaining-item dispositions. No new source counterexample was found. Historical external-import classifications are qualified against the current proof. Concrete consumer reconstructions remain required; bounded author pairing deductions are retained separately.
+
+Public-adjudication archive SHA256: d900baa5a3b6af644554808deb6d0f2250a5adfb6f92bfc7a9ba36626ec359f0
