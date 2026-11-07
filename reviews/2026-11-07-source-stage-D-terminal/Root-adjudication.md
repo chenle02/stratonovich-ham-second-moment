@@ -9,3 +9,7 @@ D correctly traces the intended204 upper through193/203 and lower through132, th
 All prior reports, including F188's rejected extra W-only assertions, retain their raw identities and grades. No component HIGH or source-delivery count is promoted into a whole-argument vote. Detailed D author adjudication and substantive lower reconstruction are being prepared. Integrated MAIN/Kimi HIGH, independent visual and fresh cold acceptance, adoption/build and final private delivery remain open. No manuscript edit.
 
 Archive SHA256: 912f224b3e477def9f0d118bb94dc495477c5f7889fff7675ba33290fb6b9e86
+
+Root read the complete sealed D author report and all11 remaining-item dispositions. The 36 aliases and current source pin identities are retained. PROOF131 supplies dilation identities; PROOF132 itself sets r_c and applies the full-class bijection. No new source counterexample identified. The current lower proofs exist; independent working reconstruction of their lower event, restart and half-action remains substantive work.
+
+Public-adjudication archive SHA256: a00f5489ab42b4d5301b9a2b5284d8215bd1a9eda9d28f88adfca496bbacd3ca
