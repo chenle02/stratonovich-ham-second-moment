@@ -1,0 +1,5 @@
+# Integrated Gupper22 MAIN ready for one fresh call
+
+Root verified the complete bound input/runtime capsule and fresh exact source-byte preflight. Full launch eligibility checks pass: exact primary route, source context, immutable carrier/input, complete22/raw scope, no tools/skills/MCP/sharing/compaction and unused output/fence. The conditional capacity total is1009065 with39511 remaining; known system564 includes agent327, with a separately declared515 conditional provider-template allowance. This is not exact HTTP capture or a future-token guarantee; actual full input and combined output must pass the recorded bound.
+
+The complete readiness archive contains safe Root records only. Raw configuration and private thinking are excluded. One fresh invocation becomes authorized only after this READY commit is pushed and <HUB> parity verified. No automatic retry, resume, continuation or fallback is authorized. Transport/public JSON validity and mathematical confidence remain separate terminal checks. This scope addresses the original all-model upper theorem; it does not close the full variational-limit or whole215/thirteen-join/final gates. Source/PDF unchanged.

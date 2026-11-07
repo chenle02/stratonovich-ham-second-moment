@@ -16732,3 +16732,8 @@ Root read all V034–V036 complete public reports and author dispositions: physi
 ## 2026-11-07: integrated Gupper22 DeepSeek MAIN actual inputs frozen
 
 Root verified corrected-v2 whole124/120 input and22 proof environments against exact source bytes and the immutable Kimi corpus, and independently recomputed697017 joined tokens with unchanged311296 allowance. Root read the whole adapted guard/unchanged transport/source-byte loader;33 author pure controls pass. Fresh pure profile diagnostic confirms exact primary DeepSeek/tools/skills/MCP/context/share/compaction policy with zero provider calls; no raw secret configuration retained. Complete regular-member input/runtime archive is in reviews/2026-11-07-gupper22-deepseek-input/. No model generation yet; actual framing, final matching preflight, READY push/GW and separate one-call authority remain. Full original goal unchanged; source/PDF unmodified.
+
+
+## 2026-11-07: integrated Gupper22 MAIN exact preflight ready
+
+Root completed the source-byte matching preflight and full launch checks for the new integrated22/raw098 original-model upper tree. Exact actual native/config/agent/context/C1/carrier and unused-fence bindings pass. Conditional total1009065/head39511 retains full311296 allowance; other framing752 includes known nonagent237 plus historical515 declared conditional margin, not exact HTTP/future usage. Actual usage must pass. Safe complete readiness records: reviews/2026-11-07-gupper22-deepseek-ready/. ONE fresh call only after READY commit/push/GW parity; no automatic retry/resume/continuation/fallback. No generation yet at this snapshot. Full original actualC2/215/13/sourcevisual/cold/delivery gates unchanged; source/PDF unmodified.
