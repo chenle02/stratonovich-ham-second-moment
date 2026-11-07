@@ -414,6 +414,17 @@ Evidence: reviews/2026-11-07-point-upper-growing-radius-author-audit/.
 This is AUTHOR work, no full-limit/independentfamily/wholegoal acceptance.
 Kimi22 remains the one live actual attempt under Root30371, no retry/resume.
 
+## 2026-11-07: eighth visual batch read and adjudicated
+
+Pages110–124/V022–024 all PASS_WITH_NOTES/MEDIUM,acceptedfalse.
+Root read full18checks/12minor/13limits/inventories/emptyrepairs/adjudication;
+60 exact unique typed paired PNG deliveries verified. V024 originalformat
+refusal and canonicalzero-call recovery retained, no new model/regrade.
+Cosmetic punctuation/orphan/font/spacing notes stay backlog; no currentTeX/
+PDFedit. InternalP120→121-outside wording is reportimprecision, not missing
+image. Evidence: reviews/2026-11-07-fullbody-visual-batch008-adjudication/.
+Structural visual reading1–124/267, no fullvisual/math/candidate acceptance.
+
 ## Current Subaim
 
 - [ ] Complete the original all-model upper051 and actual-C2 intrinsic204 proof
