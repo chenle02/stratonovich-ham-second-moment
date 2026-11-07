@@ -16722,3 +16722,8 @@ Root selected full proofs052–118 and actual incoming applications after readin
 ## 2026-11-07: complete Front II literal capacity measured, OVER
 
 Root independently recomputed1184821 joined tokens for the frozen full052–118 selection:218 origins/208 exact-byte frames. With unchanged311296 allowance the total1496117 exceeds1048576 by447541 before unknown framing; input alone exceeds by136245. All1283 added literals absent and pinned raw tokenizer unchanged. Full input/count retained in reviews/2026-11-07-Front-II-literal-capacity/. No source/reserve cuts or provider call. This is a literal capacity obstruction, not a proof failure or reduction of the original215/13/actualC2 goal.
+
+
+## 2026-11-07: full-body visual batch012 retained
+
+Root read all V034–V036 complete public reports and author dispositions: physical pages170–184, three PASS_WITH_NOTES/MEDIUM,18 checks,13 minor notes,15 limitations, no mandatory repair. V035 used canonical zero-call fence extraction only; original refusal/prose/confidence preserved. Retained in reviews/2026-11-07-fullbody-visual-batch012/. All sealed members match; author custody checks60 exact distinct PNG returns/four negatives. Page183 tiny half-action exponent uncertainty remains visual-only. Structural reading reaches184/267 without full visual acceptance. Source/PDF unchanged.
