@@ -16822,3 +16822,8 @@ RootrehashedDATA63bd/67aliases61bodies/40proofenvs andformat-v2b8fa source-bytec
 ## 2026-11-07: first Gaussian40 Kimi exact metadata readiness
 
 RootverifiedDATA63bd/bodyset40/readbackformat2/unchangedcf3launcher/plainJSON/empty0700skills/unusedoutfence. Fresh0generationdoctor confirmsKimi2.3.3/K3max/managedOAuth; principal/quota/K3tokens/outputceiling/MCPabsence notproven. Requestedcap131072/header600000 child-only, no exactcontextadmissionclaim. SafeRootrecords in reviews/2026-11-07-Gaussian40V3-Kimi-ready/. ONEfreshfirstscope40call afterREADYcommitpushGWparity; no automaticretry/resume/fallback orold22regrading. Actualterminalprofile/reading/schema/math remainpending; sourcePDF/fullgoalunchanged.
+
+
+## 2026-11-07: first Gaussian/source40 Kimi call live
+
+AfterREADY7970ebdpush/GWparity, RootlaunchedONEfirstGaussian40/FULL098call. ActualnativePID2368860/start91575533/executable/cwdverifiedLIVE; generatedprofileRead/Grep/Glob/subagents[] confirmed. Rootowns57490; no terminalreceipt. Safeprofile/launch in reviews/2026-11-07-Gaussian40V3-Kimi-live/. Actualroute/requestcap/reading/schema/mathpending; no retries/resume/fallback orold22regrade. No claimK3exacttokens/outputceiling/MCPabsence/admission. Source/PDF/fullgoalunchanged.
