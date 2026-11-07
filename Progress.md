@@ -16742,3 +16742,8 @@ Root completed the source-byte matching preflight and full launch checks for the
 ## 2026-11-07: integrated original-model Gupper22 MAIN started
 
 After READY7a649c1 push/GW parity, Root launched exactly one bound source-byte native call. Actual nativePID2234555/start91122486/executable verified live; Root retained handle12723. Launch/delivery records in reviews/2026-11-07-gupper22-deepseek-live/. No terminal at observation. No retry/resume/continuation/fallback. Kimi30371 remains its distinct existing live handle. Terminal actual route/usage/input invariance/requested JSON and full public mathematics remain pending; launch is not acceptance. Full actualC2/215/13 and final gates unchanged.
+
+
+## 2026-11-07: full-body visual batch013 retained
+
+Root read all V037–V039 complete public reports and all author dispositions: physical pages185–199, three original valid PASS_WITH_NOTES/MEDIUM,18 checks,13 minor notes,14 limitations, no mandatory repairs or recovery. Evidence: reviews/2026-11-07-fullbody-visual-batch013/. All sealed members verified; author custody checks60 exact distinct PNG returns/four negatives. Cosmetic/fine-script/noncontact spacing qualifications remain; no native regrade. Structural reading reaches199/267 without full visual acceptance. Source/PDF unchanged.
