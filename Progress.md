@@ -16777,3 +16777,8 @@ Rootclosed30371 actualterminal4318.774s/transport0/K3max routeverified/sourceunc
 ## 2026-11-07: independent HIGH q-counterexample review; MAIN erratum adjudicated
 
 [held back: collaborators' unpublished work]
+
+
+## 2026-11-07: full-body visual batch015 retained
+
+Root read V043–V045 complete public reports and all author dispositions: physicalpages215–229, three originalvalid PASS_WITH_NOTES/MEDIUM,18checks/10minor/15limits/no mandatoryrepairs/no recovery. Complete evidence in reviews/2026-11-07-fullbody-visual-batch015/. Everysealedmember verified; authorcustodychecks60exactdistinctPNGreturns/fournegatives. No gradepromotion/sourceedit. Structuralreading reaches229/267; V040technicalINVALID and fullvisualgate remainopen. Source/PDF unchanged.
