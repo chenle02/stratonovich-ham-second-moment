@@ -16897,3 +16897,8 @@ Root verified all331 sealed members/0444regular modes of DATA309bead8;243require
 ## 2026-11-07: separate staged Git carrier and per-step accounting
 
 Root froze a separate exact333-file Git carrier HEAD44b25617/tree79c02aab, leaving DATA309bead8 untouched; prospective prompt9b59a42f retains all243/215/241/13. Receipt in reviews/2026-11-07-whole215-staged-carrier/. Native source inspection confirms message tokens contain latest-step usage, so validator must check EVERY step-finish request. Native splitter scans onlyCR/LF and preservesFF; allsourcebodieshave0CR. Minimal collector purecontrols pass at partialscope; actualReadhook/profile/compaction/perstepchecks pending. Firstprofilecapture was incomplete and correctlyrefused, no modelcall; fixedcapture/reboundcarrierpreflight pending. No science/source/adoption/grade change.
+
+
+## 2026-11-07: first staged collector independently checked
+
+Root read validator/Readhook and reran7core+8sourcecontrols, plus8sourcecontrols rebound toactualGitcarrier; allPASS engineeringonly. All220requiredtargets/243aliases/13views and per-step cache-inclusiveusage are checked, synthetic562pages areNOTactualdelivery. Firstsealed7membervalidator144c3 retained in reviews/2026-11-07-whole215-staged-collector-v1/. Native-source inspection identified exactcompaction-user/autocontinue shapes; successor binding normalcontinuation and refusingoverflow ispending. Profilev2refusednativeinternalnon-tool exception; boundedmatchingcorrection/reboundprofile/APIroutechecks underway. No provider generation/sourcechange/HIGH/adoption.
