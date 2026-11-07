@@ -16877,3 +16877,8 @@ Root read all105 distinct current-use role/locator/reason groups and complete fi
 ## 2026-11-07: final whole215 literal input exceeds MAIN context
 
 Exact243whole-origin/215byte-frame input counted1,367,391 tokens; Root independently reproduced with official pinned tokenizer/cached0.23.3. Fixed311,296 allowance gives1,678,687, OVER630,111 before unknown framing; input alone OVER318,815. All215proofs/241roles/13joins/whole sources preserved; no model call, postcount cuts or reserve reduction. Evidence in reviews/2026-11-07-whole215-final-literal-capacity/. Current all-at-once tool-free MAIN route cannot admit this required input. A feasible full-scope review route remains to be established; component grades do not substitute. Goal active, manuscript unadopted.
+
+
+## 2026-11-07: full-scope staged native route design
+
+Root checked actualAGENTS workforce and historicalProgress launch restrictions: frozen/read-only/DeepSeekV4Pro MAIN+Kimi/HIGH/fullcoverage are user requirements; zero-tools/no-compaction/single-response are prior per-attempt transport choices. Native capability audit identifies paginatedRead/sessioncompaction, but currentcollector rejects these events. Prospective same-session full243/215/241/13 route in reviews/2026-11-07-whole215-staged-route-design/ retains all mathematics, explicit lossy-compaction/reread disclosure and genuine final synthesis; no component-grade conjunction. Minimal guard/route validation is pending; no implementation/provider authority, source change, new acceptance or scope reduction. This is a feasible direction to investigate, not a claim the capacity/review gates are solved.
