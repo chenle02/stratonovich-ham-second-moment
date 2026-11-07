@@ -17067,3 +17067,8 @@ Afterall220source+NAVdelivery andcompleteLadjudication Rootpreparedfull215OWN/24
 ## 2026-11-07: genuine full integrated MAIN mathematical judgment LIVE
 
 AfterREADYaa24986push/GWparity RootauthorizedONLYfinalF originalfull215OWN/241role/13join/allmodelC2judgment in originalses_e4adf2f21ffeMDPxl7Y9MOn7QE. Rootexec32057/nativePID3690984/start93733816 verifiedLIVE/executable/model/session/carrier. Safe evidence in reviews/2026-11-07-final-integrated-MAIN-live/. Wholecontract/crosswalk retained, newsourcecouplingrereads andactualindependentdeductions requested, confidenceunforced. PriorNUNKNOWN/refusal/globaltechnicalPASSfalse retained; parse/route/coverage/actualHIGH/mathacceptance separate. No auto-retry/adoption/sourceedit/Kimi/pixel/coldcertificate. Fullgoalremainsactive.
+
+
+## 2026-11-07: Kimi image transport distinguished from text Read
+
+Rootread full nativeimageaudit/allsnippets, rehashed native80284397 and verifiedevery8sourcebyte-range. Evidence in reviews/2026-11-07-Kimi-image-capability/. Kimi2.3.3 textRead REFUSESimages; ReadMediaFile suppliesactualimage_url attachments whenregistered/permitted andmodelimage_in true. CurrentmanagedK3image_in UNKNOWN; public/third-partycatalog notproof. full_resolution preservesbyteswithinactualproviderbudget, defaultmediareadsmaydownsample. No currenttextprofilepixelcredit, no config/auth/provider/model/source/permissionchange orblindcohortchange. Agent21compactionselector replypending. FullintegratedMAIN remainsLIVE; originalgoal/gatesunchanged.
