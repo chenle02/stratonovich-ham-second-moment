@@ -159,6 +159,21 @@ retainedhandle31703 (initialPID4007344); no retry/resume/fallback is authorized.
 Its actual public findings must be read/adjudicated before adoption. No current
 manuscript/PDF or original whole-goal acceptance is changed by this AUTHOR work.
 
+## 2026-11-06: complete upper-engine16 scientific scope approved
+
+Assigned036–051 as sixteen complete claims with their actual same-u and
+noncircular upper joins. Root approved110 whole-source origin roles by
+mathematical use before counting. All outside constructor/raw realization
+implications remain derive-or-condition per-row and globally; R3-only physical
+claims retain their actual scopes. The new raw realization working is
+UNREVIEWED AUTHOR, not a premise accepted by its presence. Its actual complete
+skeptic report and Root adjudication must be added before DATA/count.
+Contract and source responsibilities are preserved in
+reviews/2026-11-06-upper-engine16-scientific-scope/.
+The311296 allowance is unchanged; no provider or scientific acceptance follows.
+All215/thirteen joins,37 initial debts, remaining later fronts and original
+MAIN/Kimi/source/visual/cold/delivery requirements remain open.
+
 ## Current Subaim
 
 - [ ] Complete the original all-model upper051 and actual-C2 intrinsic204 proof
