@@ -16847,3 +16847,8 @@ RootviewedwholeRemarkcontext andbothactual3200details/readcompletediagnostic/all
 ## 2026-11-07: final8-page visual batch018 retained
 
 RootreadcompleteV052/053public/allAUTHORdispositions,10checks/10minor/11limits/no mandatoryrepairs/bothoriginalvalidMEDIUM/no recovery. Completeevidence in reviews/2026-11-07-fullbody-visual-batch018/; everysealedmember rehashed/AUTHOR32exactPNGfournegativesverified. Final260–267rangefinished; whole267union/technicalstatuses/fineglyph dispositions requireseparateaudit, notimpliedbyfinalbatch. Bibliography/hash/thinspace observations notsourcecorrectnessproof. V04046invalid/mostMEDIUM/fullvisualmathcoldgatesremainopen; sourcePDFunchanged.
+
+
+## 2026-11-07: isolated frozen267 clean build and full raster equivalence
+
+Rootcopied28unchangedTeX+reviewedbbl, heldvisibleNov5date(childSOURCE_DATE_EPOCH/FORCE_SOURCE_DATE), latexmk frozen-bbl buildpasses0errors/undefinedrefs-cites/overfull,267pages. Layouttextidentical andALL267defaultRGBPPMpages byteequal atscale1600underidenticalPoppler. Originalsource/bbl/PDF26f9 posthashesunchanged; verificationPDFa2aea80b differsinbytes/notreplacement. Completeevidence in reviews/2026-11-07-frozen267-clean-build/. No currentrefdbregen/sourceedit/math/cold/finaladoption inferred.
