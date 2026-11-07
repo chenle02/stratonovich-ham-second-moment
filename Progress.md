@@ -207,6 +207,24 @@ Actual context/profile/framing and pure diagnostic bindings remain pending;
 no provider or scientific acceptance is authorized by this capsule.
 Evidence: reviews/2026-11-06-upper-engine16-native-capsule/.
 
+## 2026-11-06: actual Upper16 MAIN one-call readiness
+
+Final PLAN166fc713 and matching fresh pure receipt9a96c92c align with actual
+input, primary reviewer,12false tools/skills,MCP0,empty instructions/references,
+shareoff,compactionfalse and native/catalog/source pins. Actual agent185,
+user654634,known system420 and conditional other750 give total966865,
+head81711 with all311296 hard allowances unchanged. The515 template term is
+conditional historical evidence, not exact HTTP/future-token assurance;
+terminal actual full usage must pass. The live private carrier uses normal
+hooks and unchanged mathematical/profile bytes; initial override preimage
+is retained separately. No candidate/source/PDF adoption occurs.
+
+Root authorizes ONE fresh Upper16 MAIN only AFTER actual committed/pushed/
+<HUB>-equal READY delivery. No automatic retry/resume/fallback. Full
+readiness is in reviews/2026-11-06-upper-engine16-main-ready/. All outside
+conditions and original all215/thirteen-join/full-goal gates remain open.
+No model had started at this readiness snapshot.
+
 ## Current Subaim
 
 - [ ] Complete the original all-model upper051 and actual-C2 intrinsic204 proof
