@@ -16682,3 +16682,8 @@ Root read the complete 061–071 author report and eleven proof records; all fou
 ## 2026-11-07: physical page 134 contact question resolved locally
 
 Root viewed the actual 3200-pixel context and glyph detail and read the complete diagnostic; all eight sealed members match. The subscript p and following-line A are separate: zero eight-neighbor contacts at either retained 1600 or new 3200 rendering, including all antialiased pixels. Source ownership agrees. Evidence: reviews/2026-11-07-P134-glyph-contact/. The original V026 MEDIUM assessment is preserved. No source/PDF change or native regrade; full visual gate remains open.
+
+
+## 2026-11-07: full-body visual batch009 retained
+
+Root completed the full public readback for V025–V027, physical pages125–139, and read all author dispositions. Three PASS_WITH_NOTES/MEDIUM outcomes,18 checks,12 minor notes,15 limitations and empty mandatory repairs are preserved in reviews/2026-11-07-fullbody-visual-batch009/. V025 used canonical zero-call fenced-JSON recovery only; no confidence change. The author custody audit verifies60 exact distinct PNG returns with four negative controls. Root verified every sealed archive member. The original P134 uncertainty remains in the report; its separate actual-pixel check is now complete without native regrade. No source/PDF edits. Full visual and integrated acceptance remain open.
