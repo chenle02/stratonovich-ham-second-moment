@@ -17160,3 +17160,10 @@ Root readfullassignment/minimalruntime/setup/preflight adaptations, verified6who
 ## 2026-11-07: Gaussian-driver061–093 attempt failed transport, not LIVE
 
 Exec98060 CLOSEDwrapper2/native1; freshses_e48bbeef8ffe9QUGd8w4DeXZRl has step_start thenAPIError cannotconnecttoAPI/retryabletrue, no publicderivation/completedusage. Usage/HTTPadmission/billing UNKNOWN, notzero. RootlivecheckpointASSERTrefusedBEFOREwrites; no livecommitcreated. Evidence reviews/2026-11-07-residual061093-transport-failure/. Oldfence/attempt/source/grades preserved. LaterunauthedHEAD api.deepseek.com curl0/HTTP401/TLSverify0 showsendpointreachableonly, notauthenticatedmodeladmission. Onefreshtransportrecoveryproposal requested, no retryauthorized/launchedyet; secondidenticalfailure wouldstoprepeatfor diagnosis. Fullgoal/all21513/gatesunchanged, no review/adoption credit.
+
+
+## 2026-11-07: Gaussian-driver one transport recovery READY
+
+Independentfailureaudit450e6fc verifiescapturedsameDATAuser/agent/6inverses/allpins; nofinish/public/usage, HTTPdelivery/billing/usageUNKNOWN. Originalattempt/fenceimmutable. LaterunauthedHEAD401/TLS0/curl0 repeated; noauthenticatedadmissionclaimed. Rootreviewedbyteidenticalcore/sameDATA/agent/title anddistinctrecovery01profile/out/fence, minimalsetup/preflightdiffs. Actualzero-generationprofilepasses. Evidence reviews/2026-11-07-residual061093-transport-recovery01-ready/. ONEexplicitrecoverypendingREADYpush/GW/Rootauthority; identicalfailurewouldstoprepeatdiagnose. No confidence/vote/sourceedit/adoption/gateclosure.
+
+Agent21proposal65bffbc946a1 readinfull: globalreserved_context_size409600 hasheuristicmarginonly, compactionrequestsnotheldreserve, failedcompactionguardmayproceedabovethreshold andothermodelsaffected. Thusproposaldoesnotprovebudgetinvariant; NOglobalchangeorapprovalrequest. SupportednativeACPmaintenancebetweencanonicalheadlessturns isbeingexaminedread-only; notimplemented/tested/canonicalacceptance. Fullresearchgoalremains.
