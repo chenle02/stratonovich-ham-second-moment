@@ -16892,3 +16892,8 @@ Root rehashed nativef9dab and inspected actual embedded Read/compaction code. Re
 ## 2026-11-07: staged whole-source corpus and reversible views verified
 
 Root verified all331 sealed members/0444regular modes of DATA309bead8;243required aliases/215whole original frames+94wholecustody/full215/241/13metadata retained. Independently decoded all13whole-source views to byte-identical originals, including originalLF/FF; all50overlong lines represented. Complete corpus in reviews/2026-11-07-whole215-staged-read-corpus/. No sourceedit/provider/native-read/grade/scientific acceptance. Minimal staged event/export validator and tasklocal read-only profile preflight implementation authorized separately, no generator launch; per-request budget, actualReadcustody and compaction route checks remain.
+
+
+## 2026-11-07: separate staged Git carrier and per-step accounting
+
+Root froze a separate exact333-file Git carrier HEAD44b25617/tree79c02aab, leaving DATA309bead8 untouched; prospective prompt9b59a42f retains all243/215/241/13. Receipt in reviews/2026-11-07-whole215-staged-carrier/. Native source inspection confirms message tokens contain latest-step usage, so validator must check EVERY step-finish request. Native splitter scans onlyCR/LF and preservesFF; allsourcebodieshave0CR. Minimal collector purecontrols pass at partialscope; actualReadhook/profile/compaction/perstepchecks pending. Firstprofilecapture was incomplete and correctlyrefused, no modelcall; fixedcapture/reboundcarrierpreflight pending. No science/source/adoption/grade change.
