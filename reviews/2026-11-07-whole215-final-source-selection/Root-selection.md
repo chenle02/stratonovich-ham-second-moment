@@ -9,3 +9,5 @@ The actual complete Kimi40 public response and mathematical adjudication must be
 ## Final additive selection
 
 Root read the final additive report and complete operative contract, rehashed all337 whole origins, and selects243 required whole sources with94 whole custody records as proposed by manifest42792da82bfd6454ad22210d3dfab1c51267d3325a7f6d1874ec1fd72807303c. The added four Kimi mathematical bodies are required; ten technical/presentation records are custody. Selection is now final BEFORE count. Pure lossless DATA construction and official literal count are authorized, reusing existing framing/tokenizer code; no generation/runtime authority. Preserve all sources and fixed311296 allowance if OVER.
+
+All241 complete declaration statement bindings independently rehashed against the actual candidate source. Complete final scientific proposal archive SHA256: 6d2246f85683cf988762e72831500b7f9b0cf517e23cbc761421007eceda8dfa.
