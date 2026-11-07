@@ -286,6 +286,19 @@ Evidence: reviews/2026-11-06-constructor12-raw098-native-data/.
 This genuinely adds raw/source/constructor application work beyond J9 and
 Upper16; no unchanged rating retry, source/PDF adoption or whole-goal narrowing.
 
+## 2026-11-06: constructor12/raw098 actual one-call readiness
+
+Actual PLAN9fa12a00 and fresh pure receipt8090e0ea align with complete107/103
+input,12 full proofs and restricted raw098 assignment. Profileprimary/tool-free/
+skillsfalse/MCP0/instructions[]/references{}/shareoff/compactionfalse and
+source-byte CLI-path guards pass. Agent234,user637432,known system473 and
+conditional other754 give949716 total/head98860, hard311296 unchanged.
+The historical515 term is conditional, not HTTP/future-token guarantee;
+actual terminal full usage must pass. Root authorizes ONE fresh call only
+after actual committed/pushed/<HUB>-equal READY delivery, no retry/resume/
+fallback. Evidence: reviews/2026-11-06-constructor12-raw098-main-ready/.
+No scientific/candidate/whole-goal acceptance occurs at readiness.
+
 ## Current Subaim
 
 - [ ] Complete the original all-model upper051 and actual-C2 intrinsic204 proof
