@@ -16697,3 +16697,8 @@ Root read the complete frozen raw-block lower module and final positive-score/li
 ## 2026-11-07: compact mean-family prerequisites audited
 
 Root read the full bounded compact-mean author audit, verified its ten input pins and report hash, and directly read the retained Teschl ground-state/max-min theorem pages and essential-threshold convention. Arbitrary positive nonseparable controls admit one fixed eligible mask and common negative trial. Closed-interval simple ground families, positive initial/observable margins, both phase entries and constant coordinates, and normalized complementary decay reconstruct without a local gap. Zero covariance is excluded from binding and remains its separate free branch. Evidence: reviews/2026-11-07-compact-mean-family-author-audit/. This completes the specific local spectral prerequisite audit for the raw-block deduction; it is not independent-family/full-goal acceptance. Source/PDF unchanged.
+
+
+## 2026-11-07: full-body visual batch010 retained
+
+Root read V028–V030 complete public reports and all author dispositions: physical pages140–154, three original valid PASS_WITH_NOTES/MEDIUM outcomes,18 checks,11 minor notes,15 limitations, no mandatory repairs or format recovery. Evidence: reviews/2026-11-07-fullbody-visual-batch010/. All sealed archive members verified; author custody checks60 exact distinct PNG returns/four negatives. Generic Latin heat-width e and Bochner norm shorthand match actual source; optional notation observations need no repair. Native fine-glyph/near-contact uncertainty remains unchanged. Source/PDF unchanged. Structural visual reading now reaches154/267, without full visual acceptance or mathematical grading.
