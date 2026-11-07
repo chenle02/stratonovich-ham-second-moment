@@ -16827,3 +16827,8 @@ RootverifiedDATA63bd/bodyset40/readbackformat2/unchangedcf3launcher/plainJSON/em
 ## 2026-11-07: first Gaussian/source40 Kimi call live
 
 AfterREADY7970ebdpush/GWparity, RootlaunchedONEfirstGaussian40/FULL098call. ActualnativePID2368860/start91575533/executable/cwdverifiedLIVE; generatedprofileRead/Grep/Glob/subagents[] confirmed. Rootowns57490; no terminalreceipt. Safeprofile/launch in reviews/2026-11-07-Gaussian40V3-Kimi-live/. Actualroute/requestcap/reading/schema/mathpending; no retries/resume/fallback orold22regrade. No claimK3exacttokens/outputceiling/MCPabsence/admission. Source/PDF/fullgoalunchanged.
+
+
+## 2026-11-07: Gaussian40 MAIN fullpublic adjudication, PARTIAL/MEDIUM retained
+
+Rootreadall40publicrecords/5minor/2repairs/3limits andfullAUTHORdispositions; completeevidence in reviews/2026-11-07-Gaussian40V3-MAIN-public-adjudication/. Actual183.662s/fresh2/stop/tools0/sourceunchanged/input588037/combined7036/FULL595073 pass. OverallPARTIAL/medium iscanonicalunsupported/unaccepted although35PASS+5PASSnotes rows; no normalization/regrade/retry. Repair1alreadyRootq-erratum; repair2actualassignedPASS094095dependencyexplicitlydischargedby098, notnewsourcegap/statuspremise. Report076d_i<=TrD^m false(scalar.5,m2); actualsourceSUMd_i^m<=TrD^m correct. No source/cohortinput-changecounterexample. Selectivecoverage notfullattentioncertificate; privateanalysisexcluded. Kimi40independentcohort/fullgoal/gates/sourcePDFunchanged.
