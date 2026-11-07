@@ -16862,3 +16862,8 @@ Rootreadfullglobalreport/threshold/statusfields andindependentlychecked267pagese
 ## 2026-11-07: remaining glyph audit and terminal Kimi40 evidence retained
 
 Root verified every sealed member and retained complete AUTHOR evidence in reviews/2026-11-07-remaining-glyph-audit/ and reviews/2026-11-07-Gaussian40V3-Kimi-public-adjudication/. Root read both full reports and viewed ten named glyph details: page153 is strict t>0; reference[7] lacks MR prefix, a bibliography presentation backlog. Kimi40 is terminal, valid bareJSON PASS_WITH_NOTES/medium, acceptedfalse below HIGH; author verifies all64 required whole files delivered and no source repair. Full42 per-row Root adjudication remains pending. No source/PDF edit, retry, normalization, grade promotion or whole-goal acceptance. Original all-model goal and integrated HIGH/cold/delivery gates remain active.
+
+
+## 2026-11-07: Root full42 Kimi40 public-disposition reading
+
+Root read all42 complete public claim/reason/reconstruction records plus AUTHOR dispositions in four bounded, untruncated outputs. The actual summed-power trace inequality076, full source-driver consequence098 through095, both variance directions and exact source MAX/SUM normalization are reconstructed;097/098 explicitly retain fixedW+ONEJ and actual q obstruction. No new source defect identified in these records. Original MEDIUM/acceptedfalse and all outgoing/full215/HIGH/cold gates remain unchanged. Evidence receipt updated in reviews/2026-11-07-Gaussian40V3-Kimi-public-adjudication/.
