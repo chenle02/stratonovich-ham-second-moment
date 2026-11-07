@@ -251,6 +251,27 @@ Evidence: reviews/2026-11-06-positive-intrinsic-author-audit/.
 Current Upper16 MAIN retainedhandle42338 is still the only native MAIN to await;
 no retry/resume/fallback or original-goal narrowing is authorized.
 
+## 2026-11-06: Upper16 actual MAIN terminal; conditional MEDIUM
+
+Retained42338 closed0; actualDeepSeekV4Pro/fresh2/noTools/stop,353.772s.
+Input655137<=655569, combinedpublic+reasoning20460, FULLTURN675597 pass;
+all56 source modules/twoPDFs unchanged. Root read/adjudicated full26987B
+bfeed7a58392ba4c0bc02f4c55fb70afdf034dad86c77d46665cf83a42624506:
+all16 records/internal and same-u joins/outside conditions/4minor/2acceptance
+requirements/limits/inventory. All16 reconstructed at their actual scopes;
+044–051 internal engine coherent, but Gupper remains CONDITIONAL on outside
+constructor/raw-realization deductions. Native MEDIUM core/LOW fullgoal stays.
+
+Named CP/C23 imports are legitimate with matched hypotheses/pinpoints; they
+are not unproved OWN theorem debts. Actual Teschl/FH whole-page reading claim
+is unsupported: all27 whole-page bodies absent from actualuser/everyframe;
+mixed maps exist but give no whole-page credit. No pages are retro-added.
+Complete evidence: reviews/2026-11-06-upper-engine16-main-adjudication/.
+Next genuine mathematics: full constructor9+096/097/099 and restricted raw098
+clauses, with V2 raw proof assigned for derivation rather than an unreviewed
+parent label. Full098 driver and original all215/thirteen-join/limit/Kimi/
+visual/cold/delivery requirements remain. No unchanged confidence retry.
+
 ## Current Subaim
 
 - [ ] Complete the original all-model upper051 and actual-C2 intrinsic204 proof
