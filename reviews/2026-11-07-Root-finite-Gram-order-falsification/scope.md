@@ -1,0 +1,1 @@
+AUTHOR small finite algebra test, not part of the assigned149–177 review or a scientific gate. Two legal nonnegative Grams are entrywise ordered while their difference has eigenvalues plus/minus1/2. Full-active primal/dual values agree and increase; neither a Loewner-order premise nor a physical optimizer is inferred. Source194–198 complete proof remains independently owed.
