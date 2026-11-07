@@ -81,6 +81,27 @@ The P062 condition remains open while a separate local diagnostic is prepared.
 No source defect or edit is inferred, no confidence is raised. Structural
 visual reading now covers pages 1–64, without full visual acceptance.
 
+## 2026-11-06: complete mathematical input measured; staged proof work needed
+
+The complete whole-goal DATA is frozen: 264 whole origins/233 full-byte
+frames; all 215 proof applications, thirteen joins, 35 primary pages and
+complete complementary-use navigation. Root independently checked actual
+body/origin bytes, all aliases and joined count arithmetic.
+First joined count 1,310,594 plus pre-count full-work allowance 311,296
+is 1,621,890: 573,314 over the reference context before unknown framing.
+Input alone also exceeds context. No provider call or post-count scope,
+source or reserve change occurred. Complete evidence is retained in
+reviews/2026-11-06-whole-goal-literal-capacity/.
+
+Proceed by genuine scientific proof fronts, not a confidence repeat:
+I=001–051+214+external215; II=052–118; III=119–169; IV=170–213.
+Their union is all 215 proofs. Every unaccepted cross-front premise must
+be derived or precisely conditioned. A later genuine integrated judgment
+must assess the same original solution and all thirteen joins; favorable
+component verdicts alone will not satisfy the whole-goal requirement.
+Front-I source relevance selection is underway before any new counting.
+All original all-model mathematics and review gates remain required.
+
 ## Current Subaim
 
 - [ ] Complete the original all-model upper051 and actual-C2 intrinsic204 proof
