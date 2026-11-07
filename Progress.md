@@ -16792,3 +16792,8 @@ Root read V043–V045 complete public reports and all author dispositions: physi
 ## 2026-11-07: complete Kimi public/adjudication retained without regrading
 
 Complete75885B rawpublic andAUTHOR26checks/8minor/6limits retained in reviews/2026-11-07-gupper22-Kimi-public-adjudication/. RootreadfullAUTHORreport/all26dispositions andallfindinglimits; all9sealedmembers match. INVALID causedbydecoratedrowverdicts suchasPASS(RECONSTRUCTED), notoverallmedium spelling; canonicalrefusal/no manualnormalization/retry preserved. RawMEDIUM remainsbelowHIGH. Full123requiredsource/124aliascustody doesnotproveattention ormath. Check25false007/008current-candidatehashmatch qualifiedbyactualhashes. FixedW+J scopecorrect; no retroactiveq-reviewcredit. Prospectiveplainenumgrammar clarifiesreconstructionlabelambiguity, notoldreportrepair. NoMCP0/compactionabsence/private-tokeninference. Source/PDF/fullgoalunchanged.
+
+
+## 2026-11-07: Gaussian/source40 V3 MAIN input frozen with new counterevidence
+
+Complete67mathaliases/61literalframes +6wholeoutside provenancefiles,40proofenvironments/modernplainJSONgrammar and587715officialjoinedcount Rootverified. Source-role classification preceded count; full311296 allowance unchanged. Rootreadboundguard/source-bytehelper/unchangedtransport;36purecontrols pass, normal-hook data-onlycarrier clean. Complete regular-member C1 retained in reviews/2026-11-07-Gaussian40V3-MAIN-input/. Freshactualprofile/framing/preflight/READYpushGW/one-callauthority stillpending; no generation at snapshot. Original40scope/FULL098, full67/21513/actualC2gates unchanged. Source/PDFunchanged.
