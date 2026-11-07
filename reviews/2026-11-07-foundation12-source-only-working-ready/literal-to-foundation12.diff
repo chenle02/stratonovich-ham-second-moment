@@ -1,0 +1,117 @@
+--- literal-working/common.py
++++ foundation12/common.py
+@@ -3,14 +3,15 @@
+ sys.dont_write_bytecode=True
+ ROOT=Path(__file__).resolve().parent
+ BASE=ROOT.parent
+-DATA=BASE/'stratonovich-all215-literal-proof-working-data-v2-20261107'
++BIND=json.loads((ROOT/'data-binding.json').read_text())
++DATA=Path(BIND['DATA_path'])
+ CLI=Path('<HOME>/.opencode/bin/opencode')
+ CLI_SHA='f9dab32248695e9ebd56b16a1921798fd85112cf5a69c7dfd0cabc1e17be4a11'
+ CAT=BASE/'themeII-owned-public-catalog-snapshot-20261105/models.public.snapshot.json'
+ CAT_SHA='151c04bd9718dcc1da544a34db350f97b98e3f279c00bf24ad787a885eac9f57'
+ HELPER=Path('<HOME>/.claude/bin/review_report_contract.py')
+ HELPER_SHA='ec22bee41b7ffc62a17d215d27b11173a03e679aa88e6f379bb9c8259d3a32a9'
+-TITLE='all215-literal-actual-proof-working-NOT-MAIN-NOT-COLD'
++TITLE=BIND['title']
+ TOOLS=['invalid','question','bash','read','glob','grep','edit','write','task','webfetch','todowrite','skill']
+ class Refusal(RuntimeError):pass
+ def need(x,s):
+@@ -34,23 +35,20 @@
+  if expected:need(sha(body)==expected,'source module pin mismatch')
+  m=types.ModuleType(name);m.__file__=str(p);sys.modules[name]=m;exec(compile(body,str(p),'exec'),m.__dict__);return m
+ def verify_data():
+- need(sha(raw(DATA/'manifest.json'))=='09c9bdbfb170b24807be3210a89c04082b2413023df98a312b57f8a3713f64df','literal DATA seal changed')
+- for name,z in load(DATA/'manifest.json')['files'].items():
+-  need(not Path(name).is_absolute()and'..'not in Path(name).parts,'unsafe DATA path')
+-  b=raw(DATA/name);need(len(b)==z['bytes']and sha(b)==z['sha256'],'literal DATA member changed')
++ need(sha(raw(DATA/'manifest.json'))==BIND['DATA_manifest_sha256'],'foundation DATA seal changed')
++ for name,pin in load(DATA/'manifest.json')['files'].items():
++  need(not Path(name).is_absolute()and '..'not in Path(name).parts,'unsafe DATA path')
++  body=raw(DATA/name);need(len(body)==pin['bytes']and sha(body)==pin['sha256'],'foundation DATA member changed')
+  user=raw(DATA/'review-input.txt');agent=raw(DATA/'agent-proposal.txt');iv=load(DATA/'literal-inventory.json')
+- need(len(iv['frames'])==96 and sha(user)==iv['user_sha256'],'96 frame/user mismatch')
+- for f in iv['frames']:
+-  a=f['payload_start_byte'];z=f['payload_end_byte_exclusive'];payload=user[a:z]
+-  need(len(payload)==f['encoded_payload_bytes']and sha(payload)==f['encoded_payload_sha256'],'payload offset/hash mismatch')
+-  marker=('WHOLE_SOURCE_CARRIER_BEGIN '+f['id']+'\n').encode();start=user.rfind(marker,0,a);need(start>=0,'frame header missing')
+-  meta=strict(user[start+len(marker):a].strip());need(all(meta[k]==v for k,v in f.items()if k not in ['payload_start_byte','payload_end_byte_exclusive','special_literal_hits_by_index']),'literal header/inventory mismatch')
+-  if f['carrier_mode']=='SOURCE_LITERAL_BYTES':decoded=payload
+-  elif f['carrier_mode']=='SOURCE_JSON_STRING_ASCII':
+-   text=strict(payload);need(isinstance(text,str),'encoded source not one JSON string');decoded=text.encode()
+-  else:raise Refusal('unknown source carrier')
+-  need(len(decoded)==f['decoded_source_bytes']and sha(decoded)==f['decoded_source_sha256'],'source inverse mismatch')
+-  for s in f['sources']:need(raw(s['origin'])==decoded and sha(decoded)==s['sha256'],'full source origin changed')
++ need(len(iv['frames'])==BIND['whole_source_count']and sha(user)==iv['user_sha256'],'whole source/user mismatch')
++ for frame in iv['frames']:
++  need(frame['mode']=='WHOLE_LITERAL_UTF8','unexpected carrier mode')
++  body=user[frame['payload_start_byte']:frame['payload_end_byte_exclusive']];source=frame['source']
++  need(len(body)==frame['payload_bytes']==frame['decoded_bytes']==source['bytes']and sha(body)==frame['payload_sha256']==frame['decoded_sha256']==source['sha256'],'literal source offset/hash mismatch')
++  need(body==raw(source['source_path']),'whole source inverse differs')
++  for alias in source['aliases']:need(raw(alias['origin'])==body and sha(body)==alias['sha256'],'original alias source changed')
++ count=load(DATA/'joined-count.json');need(count['tokenizer_sha256']=='8f9f37ca37fdc4f5fd36d5cf4d3b0e8392edb4e894fd10cc0d70b4957c8633cf'and count['tokenizers_version']=='0.23.3'and count['hard_allowance']==311296,'official count identity/reserve differs')
++ need(count['joined_sha256']==sha(agent+b'\n'+user),'actual joined count input differs')
+  return user,agent
+ 
+ def profile_payload(agent):
+@@ -62,11 +60,12 @@
+  need(inp<=bound and inp+311296<=1048576,'actual request exceeds preserved reserve/input bound');need(o+r<=262144 and turn<=1048576,'actual output/FULLTURN exceeds limit')
+  if 'total'in u:need(u['total']==turn,'native total mismatch')
+  return {'actual_input_including_cache':inp,'combined_output_reasoning':o+r,'FULLTURN':turn}
+-def report_status(text):
+- obj=strict(text.encode());m=module('_literal_report_contract',HELPER,HELPER_SHA);view=m.validate_report(obj,legacy_mode=None)
+- need(sha(raw(DATA/'manifest.json'))=='09c9bdbfb170b24807be3210a89c04082b2413023df98a312b57f8a3713f64df','mandatory map DATA seal changed')
+- pin=load(DATA/'manifest.json')['files']['application-bindings.json'];need(sha(raw(DATA/'application-bindings.json'))==pin['sha256'],'mandatory map member changed')
+- mapping=load(DATA/'application-bindings.json');ids=[r['id']for r in mapping['exact_all215_owned_records']]+[r['id']for r in mapping['exact_all13_sameu_joins']];need(len(ids)==len(set(ids))==228,'mandatory ID map mismatch')
+- for row in obj['checks']:need(all(isinstance(row.get(k),str)and row[k].strip()for k in ['claim','verdict','reason']),'check strings required')
+- for ident in ids:need(sum(bool(re.match('^'+re.escape(ident)+'(?: |:)',row['claim']))for row in obj['checks'])==1,'missing/duplicate mandatory ID: '+ident)
+- return {'parse_valid':True,'mandatory228_once':True,'additional_checks_allowed':True,'raw_verdict':obj['verdict'],'raw_confidence':obj['confidence'],'confidence_high':view.confidence=='high','passing':view.verdict in m.PASSING_VERDICTS,'nonblocking':not(obj['findings']['fatal']or obj['findings']['major']or obj['required_repairs']),'accepted':False,'MAIN_cold_visual_adoption':False}
++def coverage_status(text):
++ # Heading presence is source-working coverage only, never proof or a grade.
++ need(sha(raw(DATA/'manifest.json'))==BIND['DATA_manifest_sha256'],'foundation DATA seal changed')
++ pin=load(DATA/'manifest.json')['files'][BIND['required_ids_file']];body=raw(DATA/BIND['required_ids_file']);need(sha(body)==pin['sha256'],'required IDs member changed')
++ ids=strict(body)['exact_ids'];need(len(ids)==len(set(ids))==12,'exact twelve IDs required')
++ headings=re.findall(r'^## ([^\r\n]+)\r?$',text,re.M)
++ for ident in ids+[BIND['global_heading']]:need(headings.count(ident)==1,'missing/duplicate exact heading: '+ident)
++ need(headings[-1]==BIND['global_heading'],'GLOBAL conditions must finish required headings')
++ return {'all12_exact_headings_once':True,'GLOBAL_conditions_heading_once':True,'heading_coverage_only_not_derivation_acceptance':True,'accepted':False,'grade_or_confidence_not_requested_or_inferred':True,'MAIN_cold_visual_adoption':False}
+--- literal-working/collect.py
++++ foundation12/collect.py
+@@ -24,4 +24,4 @@
+    need(e['type']=='text'and p==u['parts'][0]and p['text'].encode()==expected_user,'unbound user event');bound_user.add(p['id'])
+  expected={p['id']for p in a['parts']if p['type']in names.values()};need(seen==expected|bound_user,'event/export coverage mismatch')
+  text=''.join(public)
+- return {'fresh_session':sid,'exact_user_bytes':True,'event_export_exact':True,'bound_user_text_events_NOT_math':sorted(bound_user),'completed_request_usage':finishes,'raw_public':text,'report_status':report_status(text),'accepted':False,'working_only_NOT_original_MAIN_or_cold':True}
++ return {'fresh_session':sid,'exact_user_bytes':True,'event_export_exact':True,'bound_user_text_events_NOT_math':sorted(bound_user),'completed_request_usage':finishes,'raw_public':text,'coverage_status':coverage_status(text),'accepted':False,'working_only_NOT_original_MAIN_or_cold':True}
+--- literal-working/run.py
++++ foundation12/run.py
+@@ -5,8 +5,8 @@
+ def gate(mode):
+  plan=load(ROOT/'Root-plan.json');auth=load(ROOT/('Root-'+mode+'-authority.json'))
+  need(auth.get('authorized')is True and auth.get('mode')==mode and auth.get('plan_sha256')==sha(raw(ROOT/'Root-plan.json')),'Root exact mode authority absent')
+- need(plan.get('purpose')=='FRESH_LITERAL_ACTUAL_PROOF_WORKING_NOT_MAIN_NOT_COLD','Root role mismatch')
+- required={str(ROOT/n)for n in ['common.py','collect.py','run.py','entrypoint.py','code-manifest.json']}
++ need(plan.get('purpose')==BIND['purpose'],'Root role mismatch')
++ required={str(ROOT/n)for n in ['common.py','collect.py','run.py','entrypoint.py','data-binding.json','code-manifest.json']}
+  need(required.issubset({str(Path(z['path']))for z in plan['pins']}),'mandatory source-code pins absent')
+  for pin in plan['pins']:need(sha(raw(pin['path']))==pin['sha256'],'Root pinned context/source changed')
+  user,agent=verify_data();need(sha(user)==plan['user_sha256']and sha(agent)==plan['agent_sha256'],'Root source/user/agent mismatch');need(plan.get('local_context_complete')is True and plan.get('unresolved_local_context_sources')==[],'unknown local context refused')
+@@ -16,7 +16,7 @@
+  p,a,user,agent=gate('profile');dest=Path(p['profile']);need(not dest.exists(),'profile already exists');dest.mkdir(mode=0o700);save(dest/'opencode.json',profile_payload(agent))
+ 
+ def capacity(p):
+- c=load(p['count_path']);f=load(p['framing_path']);need(c['user_tokens']==695326 and c['agent_tokens']==81 and c['joined_tokens']==695407 and c['hard_allowance']==311296,'exact count/reserve mismatch')
++ c=load(p['count_path']);f=load(p['framing_path']);expected=load(DATA/'joined-count.json');need(all(c[k]==expected[k]for k in ['user_tokens','agent_tokens','joined_tokens','hard_allowance']),'exact DATA count/reserve mismatch')
+  need(f['kind']=='ROOT_DECLARED_CONDITIONAL_MARGIN'and type(f['extra_tokens'])is int and f['extra_tokens']>0,'positive conditional unknown framing treatment required')
+  need(c['joined_tokens']+f['extra_tokens']+311296<=1048576,'conditional initial capacity exceeded');need(p['input_bound']==c['joined_tokens']+f['extra_tokens']and p['input_bound']+311296<=1048576,'request bound mismatch')
+  return f
+@@ -69,7 +69,7 @@
+   need(r.returncode==0,'export failed');ex=load(out/'session-export.json');public=''.join(q.get('text','')for m in ex['messages']if m['info']['role']=='assistant'and not m['info'].get('summary')for q in m['parts']if q['type']=='text');(out/'public.raw.txt').write_bytes(public.encode())
+   verify_data()
+   for pin in p['pins']:need(sha(raw(pin['path']))==pin['sha256'],'post-source changed')
+-  collect=module('_literal_collect',ROOT/'collect.py');result=collect.validate(ex,raw(out/'events.jsonl'),user,p);save(out/'validation.json',result);receipt.update(incomplete=False,report_status=result['report_status'])
++  collect=module('_literal_collect',ROOT/'collect.py');result=collect.validate(ex,raw(out/'events.jsonl'),user,p);save(out/'validation.json',result);receipt.update(incomplete=False,coverage_status=result['coverage_status'])
+  except Exception as exc:receipt.update(failure_type=type(exc).__name__,reason=str(exc))
+  save(out/'collection.json',receipt);return 0 if not receipt['incomplete']else 2
+ if __name__=='__main__':raise SystemExit(launch())
