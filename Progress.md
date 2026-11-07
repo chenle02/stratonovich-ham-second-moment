@@ -327,6 +327,24 @@ Next REQUIRED independent Kimi mathematical evaluation and genuine integrated
 judgment; no unchanged DeepSeek confidence repeat or conjunction of grades.
 All original215/thirteen-join/limit/source/visual/cold/delivery gates stay open.
 
+## 2026-11-06: required Kimi integrated Gupper22 scientific scope
+
+Root approved124 WHOLE source origins for constructor12 plus core039/041/
+044–051 and restricted raw098:22 full proofs and the actual closed original
+all-model upper theorem. Prior status/adoption/grades are not mathematical
+hypotheses; every real uncertain derivation must be identified explicitly.
+No conjunction of component labels establishes this integrated claim.
+
+Actual readonly Kimi doctor/source metadata identifies native2.3.3/k3/max.
+A child-only request completion cap is supported; Root chooses131072.
+Configured context1048576 is metadata, not admission. ExactK3 tokenizer,
+advertised output ceiling and compaction-off selector remain unverified;
+no values are invented. Canonicalrequired-sources is CLAUDE-only; whole-source
+reading must be independently verified from actual Kimi public tool returns.
+Existing empty-skills readonly wrapper can be bound later. No generation yet.
+Evidence: reviews/2026-11-06-gupper22-kimi-scientific-preparation/.
+All original215/actual-limit/final gates remain; DATA/runtime/call pending.
+
 ## Current Subaim
 
 - [ ] Complete the original all-model upper051 and actual-C2 intrinsic204 proof
