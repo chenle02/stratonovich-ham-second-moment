@@ -42,6 +42,18 @@ messages, publication, HPC or official Lean-companion creation.
 3. Complete primary-source, calibration and full rendered-PDF checks.
 4. Complete fresh cold review and verified final private delivery.
 
+## 2026-11-06: third body-band visual batch adjudicated
+
+Pages 35–49: V007/V008/V009 retain PASS_WITH_NOTES/MEDIUM and
+accepted false. Canonical zero-call format recovery changes no confidence.
+All 18 checks, 12 minor notes, 14 limitations and empty repair lists are
+preserved with independent 60-PNG exact paired delivery evidence in
+reviews/2026-11-06-fullbody-visual-batch003-adjudication/.
+No mandatory layout repair was found; residual fine-script uncertainty and
+earlier page conditions remain open. Structural visual reading now covers
+pages 1–49, with only the historical 15–19 pilot HIGH. This is not full-PDF
+visual acceptance. Source/PDF and mathematical acceptance remain unchanged.
+
 ## Current Subaim
 
 - [ ] Complete the original all-model upper051 and actual-C2 intrinsic204 proof
