@@ -68,6 +68,19 @@ review grades establish no proof acceptance. Literal full input preparation
 and capacity measurement are next; no provider call or narrowing is authorized.
 All scientific source/PDF and full-goal gates remain unchanged.
 
+## 2026-11-06: fourth visual batch; page 62 ambiguity open
+
+New pages 50–64 completed. V010/V011 are PASS_WITH_NOTES/MEDIUM;
+V012 is INCONCLUSIVE/MEDIUM with one mandatory P062 high-resolution or
+equivalent check for conjugation-bar/prose placement. Root read all eighteen
+checks, eleven minor notes, fourteen limits and the repair. Independent
+readback verifies 61 exact paired returns/60 unique PNGs, including one repeat.
+Original format refusal and canonical zero-call recovery are preserved in
+reviews/2026-11-06-fullbody-visual-batch004-adjudication/.
+The P062 condition remains open while a separate local diagnostic is prepared.
+No source defect or edit is inferred, no confidence is raised. Structural
+visual reading now covers pages 1–64, without full visual acceptance.
+
 ## Current Subaim
 
 - [ ] Complete the original all-model upper051 and actual-C2 intrinsic204 proof
