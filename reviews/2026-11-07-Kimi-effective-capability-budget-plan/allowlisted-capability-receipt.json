@@ -1,0 +1,68 @@
+{
+  "archive_note": "Relative locator transcription; original retained in private evidence. Namespace locators do not assert repository files.",
+  "original_sha256": "765060de19bb6113f6b616cdd24f2a378d238bcb1bfb9d8085494f3c02715ffd",
+  "evidence": {
+    "scope": "READ_ONLY_CAPABILITY_AND_PROSPECTIVE_RUNTIME_PLAN_NO_AUTHORITY",
+    "native": {
+      "path": "native-kimi-home/bin/kimi",
+      "version": "2.3.3",
+      "sha256": "80284397b837c5fc371ad5f8f0a634f09296299928511deb1cf4ab4c79a2423a"
+    },
+    "config_path": "native-kimi-home/config.toml",
+    "config_sha256": "087236ed732577fdf51728b8c172951fcc54d5136e79cf726d75324c773650d0",
+    "selected_alias": "kimi-code/k3",
+    "selected_max_context_size": 1048576,
+    "selected_max_input_size_present": false,
+    "selected_max_output_size_present": false,
+    "selected_overrides_present": false,
+    "global_model_overrides_present": false,
+    "global_loop_control_present": false,
+    "declared_image_in": true,
+    "effective_native_image_in": true,
+    "effective_base_input_context_fallback": 1048576,
+    "provider_output_ceiling": "UNKNOWN",
+    "exact_K3_tokenizer": "UNKNOWN",
+    "observed_overflow_effective_reduction": "NOT_INFERRED; native later takes min(configured,observed)",
+    "native_source_proof": [
+      {
+        "embedded_path": "packages/agent-core-v2/src/llm-adapter/model/catalog-runtime.ts",
+        "byte_range": [
+          130656078,
+          130659100
+        ],
+        "sha256": "e8f25c8c98315e3a8db0bb4d5cad50cd0db6c5ad38f3c747ce81431746d9aa58",
+        "meaning": "syncAll builds configured model records into upsertEntry, no managed-capability negotiation here"
+      },
+      {
+        "embedded_path": "packages/agent-core-v2/src/llm-adapter/model/catalog-service.ts",
+        "byte_range": [
+          130673058,
+          130673800
+        ],
+        "sha256": "8ff648d6a91305a3cb8d3506a397bb9af3787b9600a7b82de22f4a5aaaeea00b",
+        "meaning": "declared image_in OR protocol detected; max_input from model maxInputSize"
+      },
+      {
+        "embedded_path": "packages/agent-core-v2/src/llm-adapter/model/catalog-service.ts",
+        "byte_range": [
+          130683200,
+          130685900
+        ],
+        "sha256": "2eed7f50207338d9344c2ade44bb99bc1da88e50337cfd84239e7fef22df4864",
+        "meaning": "effective configured definition builds actual model capabilities"
+      },
+      {
+        "embedded_path": "packages/agent-core-v2/src/agent/fullCompaction/fullCompactionService.ts",
+        "byte_range": [
+          135785980,
+          135786740
+        ],
+        "sha256": "f4ced1f6cfcde38849122b0a2f261ecc6bf5379c1acac213594c5b6c8fd9fe3b",
+        "meaning": "effective max may later decrease from observed overflow"
+      }
+    ],
+    "credential_or_auth_files_read": false,
+    "raw_config_persisted": false,
+    "new_native_or_provider_execution": false
+  }
+}

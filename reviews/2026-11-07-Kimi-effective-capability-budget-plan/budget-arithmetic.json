@@ -1,0 +1,32 @@
+{
+  "archive_note": "Relative locator transcription; original retained in private evidence. Namespace locators do not assert repository files.",
+  "original_sha256": "a3cf669b6079b890bba5675b68937415a9f612f21635e6f647b56c233c1d10ae",
+  "evidence": {
+    "native_base_context": 1048576,
+    "combined_reasoning_public_reserve": 262144,
+    "boundary_reserve": 16384,
+    "margin_reserve": 32768,
+    "hard_reserve": 311296,
+    "next_Read_additional_allowance": 65536,
+    "preserved_total_allowance": 376832,
+    "max_input_including_all_existing_context_before_next_Read_charge": 671744,
+    "max_actual_input_after_next_Read_charge_preserving_hard_reserve": 737280,
+    "distinction": "I+65536+311296<=1048576 before next Read; actual full provider input after returned Read must satisfy I_actual+311296<=1048576. All system/tools/reminders/summary framing count in I, not zero.",
+    "default_ratio": 0.85,
+    "default_ratio_trigger": 891289.6,
+    "default_reserve_trigger": 998576,
+    "first_default_trigger": 891289.6,
+    "default_trigger_exceeds_safe_pre_Read_input_by": 219545.6,
+    "default_ratio_free_context": 157286.4,
+    "comparison376832_less_than_default_trigger_NOT_sufficient": true,
+    "hypothetical_input_max311296_NOT_current_config": {
+      "max_input": 311296,
+      "ratio_trigger": 264601.6,
+      "reserve_trigger": 261296,
+      "first_trigger": 261296,
+      "input_plus_preserved_allowance": 688128,
+      "headroom_against1048576": 360448,
+      "meaning": "311296 as input maximum is NOT311296 reserved free space. This scenario is arithmetic only; current effective base input is1048576, not311296."
+    }
+  }
+}
