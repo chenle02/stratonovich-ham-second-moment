@@ -16752,3 +16752,8 @@ Root read all V037–V039 complete public reports and all author dispositions: p
 ## 2026-11-07: visual batch014 preserved with V040 format failure
 
 Root read complete V040 raw output/trailing prose, valid V041/V042 reports and all author dispositions. Physical pages200–214: V041/V042 valid PASS_WITH_NOTES/MEDIUM; V040 raw MEDIUM but strictINVALID, canonical zero-call recovery refused unfenced JSON+prose. No manual promotion/recoveredJSON/modelretry. All18 raw checks/12minor/14limits/emptyrawrepairs preserved in reviews/2026-11-07-fullbody-visual-batch014/. Every sealed member verified; author custody checks60 exact distinct PNG returns/four negatives. Root commissioned localP200/P202 glyph diagnostics; rawhuman wording grants no approval gate. Structural reading reaches214/267, with explicit V040 technical gap and no full visual acceptance. Source/PDF unchanged.
+
+
+## 2026-11-07: closed Gaussian/source40 input independently verified
+
+Root selected and verified the natural complete061–100 original-law Gaussian/path/source construction before count:57 whole aliases/51 exact frames,40 complete proof environments, all5 dependency groups and incoming/outgoing boundaries. Root recomputed518645 joined tokens (518417user/228agent), unchanged311296 allowance =>829941/head218635 BEFOREUNKNOWNframing. Full098 driver consequence assigned; no constructor/moment/Young/ground acceptance premise. Complete evidence in reviews/2026-11-07-Gaussian-source40-input-capacity/. This genuine integrated construction scope does not replace the preserved OVER67 or original215/13/actualC2 goal. No model generation for40; runtime/final framing/READY/provider authorities remain separate. Source/PDF unchanged.
