@@ -16717,3 +16717,8 @@ Root read the complete V031–V033 recovered public reports and all author dispo
 ## 2026-11-07: complete Front II scientific source scope fixed before count
 
 Root selected full proofs052–118 and actual incoming applications after reading the full contract, grouped alias/use catalogue, six derivation groups and all incoming/outgoing boundaries. All218 whole source origins and67 full candidate proof environments were rehashed. An inherited metadata ambiguity was corrected before counting: unrelated whole-main proof ownership is historical only; actual assignment remains exactly052–118. Source bodies unchanged. Selection/reserve decision retained in reviews/2026-11-07-Front-II-scientific-selection/. Pure DATA/count only is authorized with preselected311296 full-work allowance; no fit/native/provider authority or post-count source/reserve reduction. Full original215/13/actualC2/final gates remain active.
+
+
+## 2026-11-07: complete Front II literal capacity measured, OVER
+
+Root independently recomputed1184821 joined tokens for the frozen full052–118 selection:218 origins/208 exact-byte frames. With unchanged311296 allowance the total1496117 exceeds1048576 by447541 before unknown framing; input alone exceeds by136245. All1283 added literals absent and pinned raw tokenizer unchanged. Full input/count retained in reviews/2026-11-07-Front-II-literal-capacity/. No source/reserve cuts or provider call. This is a literal capacity obstruction, not a proof failure or reduction of the original215/13/actualC2 goal.
