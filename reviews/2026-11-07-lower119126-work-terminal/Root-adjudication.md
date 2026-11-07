@@ -1,0 +1,11 @@
+# Exact lower119–126 working checkpoint
+
+Root read all18084 bytes/129LF, the full technical audit, complete author mathematical adjudication and all seven condition dispositions. Three genuinely new Reads cover F01161LF and F012749LF; all220core+inventory coverage remains complete. Native0/317.91039075s, unchanged333sources/435-message prefix, no new anomaly/compaction. OldN usage remains UNKNOWN/globaltechnicalPASSfalse. Raw preparation/not-dispatched title remains preserved as inaccurate metadata for the actual terminal invocation.
+
+The independent working record reconstructs all eight lower deductions: exact canonical scaling, raw Banach Gaussian tuple, whole-space single-density law, vanishing maximum/error, full-phase cone and terminal remainder, actual fixed-delta source restart/product limit, nonnegative masked point comparison, and the one-event v/2 lower budget. No new internal false inequality was identified. It nevertheless repeats a false proposed upstream condition: positive-cutoff features lying in Phi(H) and W-only source fields.
+
+That proposed condition is rejected on the actual source, not regraded away. RawX_m and Z are constructed/tilted on given W before regularization. The common product extension retains W while allowing cutoff J. Tested sources I(Qrho Phi F) converge to I(Phi F)=W(F) by strong contraction, without Qrho Phi F or point features lying in Phi(H). The q witness refutes the extra range assertion but does not invalidate this convergence.124 passes unweighted finite products at fixed delta;125 applies the Gaussian law directly to raw j(X), not a tilted source limit. Thus sharing the probability space does not consume W-only cutoffs. Other six items are ordinary actual upstream applications, not certification/adoption conditions.
+
+No report confidence/verdict was requested, and no whole215/241/13 acceptance is claimed. A genuine final integrated mathematical assessment is being prepared, retaining all source scope and separately testing this recurring false premise against fresh full-source rereads. MAIN/KimiHIGH, independent visual/cold, adoption/build and private delivery remain open. No source changes.
+
+Archive SHA256: 6b2bcd3eb9a05e9c7b61b7d7513ef19934bfe44d696de01d01982e3208b96d00

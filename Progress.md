@@ -17052,3 +17052,8 @@ Root read complete actualF011/F012/all8statements+proofs and reproduced8environm
 ## 2026-11-07: substantive lower119–126 reconstruction LIVE
 
 AfterREADY640f073push/GWparity RootauthorizedONLYL exacteight-proofworking pass in originalses_e4adf2f21ffeMDPxl7Y9MOn7QE; Rootexec13403/nativePID3662333/start93632689 verifiedLIVE/executable/model/session. Safe evidence in reviews/2026-11-07-lower119126-work-live/. NewwholeF011/F012rereads and concrete event/restart/source/half-action derivations required; no unchanged-confidence retry or overallvote. PriorNUNKNOWN/refusal/globaltechnicalPASSfalse retained. No auto-final/sourceedit/adoption; fullgoalremains.
+
+
+## 2026-11-07: exact lower working complete; false W-only premise rejected
+
+L native0/317.91039075s; newwholeF011/F012threeReads verified, all220+NAVwhole/source333/prefix435unchanged/no newanomaly. Rootreadall18084B/129LF, complete technicalAUTHOR audits/all7conditions. Evidence in reviews/2026-11-07-lower119126-work-terminal/. Detailed8proofloweralgebra coherent, but proposedcondition1 v_rho∈PhiH/W-only isfalse and NOTconsumed: rawX_m,Z alreadyonW; I(QrhoPhiF)→I(PhiF)=W(F) oncommonW+Jextension;124unweightedfixeddelta products/125rawtilt neednoW-onlysource. q counterexamplepreserved; no sourcegap/sourceedit/gradepromotion. Other6ordinaryupstreamapplications remain forfulljudgment. OldNUNKNOWN/refusal/globaltechnicalPASSfalse retained. Genuinefinalall215/241/13 DATAprepared withwholecontract/crosswalk andexplicitnewcouplingrereads; no authority/call yet. Allotherfullgoalgatesremainopen.
