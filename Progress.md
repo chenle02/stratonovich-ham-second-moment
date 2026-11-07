@@ -299,6 +299,17 @@ after actual committed/pushed/<HUB>-equal READY delivery, no retry/resume/
 fallback. Evidence: reviews/2026-11-06-constructor12-raw098-main-ready/.
 No scientific/candidate/whole-goal acceptance occurs at readiness.
 
+## 2026-11-06: sixth visual batch read and adjudicated
+
+Pages80–94/V016–018 all validPASS_WITH_NOTES/MEDIUM, acceptedfalse.
+Root read full18checks/9minor/13limits/emptyrepairs and complete adjudication.
+Independent custody verifies60 exact unique PNG/direct paired returns.
+No mandatory source repair or unresolved clipping; small-script and context
+limits stay literal. No recovery/retry or native grade promotion.
+Evidence: reviews/2026-11-06-fullbody-visual-batch006-adjudication/.
+Structural visual reading now1–94/267, without fullvisual/math clearance.
+Prior conditions/local diagnostics remain distinct; source/PDF unchanged.
+
 ## Current Subaim
 
 - [ ] Complete the original all-model upper051 and actual-C2 intrinsic204 proof
