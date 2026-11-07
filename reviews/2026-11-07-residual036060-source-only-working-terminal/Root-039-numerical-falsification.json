@@ -1,0 +1,42 @@
+{
+  "scope": "AUTHOR_NUMERICAL_FALSIFICATION_NOT_OPERATOR_PROOF",
+  "A0": [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      4
+    ]
+  ],
+  "B": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ]
+  ],
+  "a": 0.5,
+  "d": 1,
+  "lambda": 0.8,
+  "t": 0.37,
+  "z": "delta_a * lambda^(2-a) * exp(0.7i)",
+  "global_sandwich_check": "rho^(2-a)/sqrt((rho\u00b2+1)(rho\u00b2+4))<=1: rho<=1 uses denominator>=2; rho>=1 uses denominator>=rho\u00b2. Thus d=1 is admissible for all rho.",
+  "ordered_identity": "S[(Llambda+t)^(-1)-Ak^(-1)] = S Ak^(-1/2)(I-zK)^(-1)zK Ak^(-1/2)",
+  "illegal_reorder": "move (I-zK)^(-1) left past S Ak^(-1/2)",
+  "observed": {
+    "commutator_AB_norm": 3.0,
+    "ordered_error": 7.941624542642012e-17,
+    "reordered_error": 5.6917044032687263e-05,
+    "root_Q_minus_I_norm": 0.026692968783042035,
+    "one_sixth_bound_satisfied": true
+  },
+  "execution": "uv run --with numpy --with scipy python; scipy.linalg.fractional_matrix_power on positive/principal complex matrices; numpy.linalg.norm ord2",
+  "initial_environment_attempt": "system python lacked numpy; no computation executed there. uv dependency environment succeeded; no global install.",
+  "source_changed": false,
+  "scientific_acceptance": false
+}
