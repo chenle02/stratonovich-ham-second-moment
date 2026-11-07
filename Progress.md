@@ -54,6 +54,20 @@ earlier page conditions remain open. Structural visual reading now covers
 pages 1–49, with only the historical 15–19 pilot HIGH. This is not full-PDF
 visual acceptance. Source/PDF and mathematical acceptance remain unchanged.
 
+## 2026-11-06: whole-goal mathematical reading selection frozen
+
+Root chose the actual scientific reading scope before counting: 264 complete
+origin roles, forty whole provenance-only files in separate custody, and exact
+full-byte duplicate aliases only. Every mixed mathematical/adverse record is
+required whole. All 215 candidate proofs, 214 comparisons, thirteen joins and
+35 primary statement/context pages remain mandatory. The 72 complementary
+math/constructor files now have concrete proof-use and historical-route guards.
+Independent coverage/classification audit and Root decision are archived in
+reviews/2026-11-06-whole-goal-scientific-selection/. Source presence and old
+review grades establish no proof acceptance. Literal full input preparation
+and capacity measurement are next; no provider call or narrowing is authorized.
+All scientific source/PDF and full-goal gates remain unchanged.
+
 ## Current Subaim
 
 - [ ] Complete the original all-model upper051 and actual-C2 intrinsic204 proof
