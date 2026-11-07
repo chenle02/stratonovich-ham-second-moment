@@ -425,6 +425,19 @@ PDFedit. InternalP120→121-outside wording is reportimprecision, not missing
 image. Evidence: reviews/2026-11-07-fullbody-visual-batch008-adjudication/.
 Structural visual reading1–124/267, no fullvisual/math/candidate acceptance.
 
+## 2026-11-07: Gaussian matrix/two-variance AUTHOR audit retained
+
+Root read full075/076/077 derivations and actual072/073/088 applications.
+Ordered2m−1 IBP words, noncommuting trace bounds, separatep2 and rectangular
+factor2 normalization checked. Exactone-sided negative controls80>72 and
+transpose enforce BOTH budgets. Their average yields ONE S_q envelope, no
+product/extraR factor. ActualgivenWprojection precedesphaseParseval; literal
+Sobolevadjoint/reflection/eta² mask and localizations retained.
+No localgap/newrepair found; earlier wave-test admission/translated-ball+
+auxiliarynorm/oscillatory-time kernel bounds remain actual analytic inputs.
+Evidence: reviews/2026-11-07-gaussian-matrix-two-variance-author-audit/.
+AUTHOR only, no crossfamily/whole67/SPDE/limit/goal acceptance, source unchanged.
+
 ## Current Subaim
 
 - [ ] Complete the original all-model upper051 and actual-C2 intrinsic204 proof
