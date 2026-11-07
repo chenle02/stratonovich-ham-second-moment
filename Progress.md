@@ -174,6 +174,27 @@ The311296 allowance is unchanged; no provider or scientific acceptance follows.
 All215/thirteen joins,37 initial debts, remaining later fronts and original
 MAIN/Kimi/source/visual/cold/delivery requirements remain open.
 
+## 2026-11-06: upper-engine16 literal input ready; runtime binding next
+
+The actual source-realization skeptic finished PASS_WITH_NOTES/MEDIUM,
+accepted false, with seven checks, nine minor notes, six limitations and no
+mandatory repairs. Root read/adjudicated every finding. V2 AUTHOR work now
+explicitly supplies the missing standard measurability, Fourier, full-feature
+convergence, pathwise-Bochner and version-patching steps; it is not yet
+independently accepted. Current MAIN was actually supplied/delivered despite
+the report's contrary wording. Nonlinear sigma(W)/extension application scope
+remains explicit rather than silently discharged.
+
+Complete upper16 DATA116 whole origins/112 literal frames includes both AUTHOR
+versions, actual public skeptic and complete Root dispositions. Root checked
+all body/origin bytes and all16 canonical proof environments. Joined654819
+plus unchanged311296 is966115, with82461 before UNKNOWN runtime framing.
+Actual native/profile/framing/carrier binding remains next; no provider or
+math acceptance follows yet. Complete evidence is preserved in
+reviews/2026-11-06-upper-engine16-main-data/.
+All original dimensions/covariances/amplitude/zero and all215/thirteen-join,
+MAIN/Kimi/source/visual/cold/build/delivery requirements remain unchanged.
+
 ## Current Subaim
 
 - [ ] Complete the original all-model upper051 and actual-C2 intrinsic204 proof
