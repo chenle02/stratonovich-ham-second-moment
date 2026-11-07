@@ -272,6 +272,20 @@ clauses, with V2 raw proof assigned for derivation rather than an unreviewed
 parent label. Full098 driver and original all215/thirteen-join/limit/Kimi/
 visual/cold/delivery requirements remain. No unchanged confidence retry.
 
+## 2026-11-06: genuine constructor12/raw098 complete DATA ready
+
+New assigned work is full constructor9 plus096/097/099 and restricted raw098
+point/test/residual clauses, excluding full098 driver/operator consequences.
+Expanded V2 is TARGET mathematics to derive, not an unaccepted-parent label.
+Actual107 whole origins/103 literal frames and all12 proof/raw-clause bindings
+are complete. Root independently compared all actual bodies/aliases/proof
+hashes and joined count637666; unchanged311296 leaves99614 before UNKNOWN
+runtime framing. Normal-hook private carrier and DATA-bound CODE/31 pure
+controls are frozen; no provider or scientific acceptance yet.
+Evidence: reviews/2026-11-06-constructor12-raw098-native-data/.
+This genuinely adds raw/source/constructor application work beyond J9 and
+Upper16; no unchanged rating retry, source/PDF adoption or whole-goal narrowing.
+
 ## Current Subaim
 
 - [ ] Complete the original all-model upper051 and actual-C2 intrinsic204 proof
