@@ -16837,3 +16837,8 @@ Rootreadall40publicrecords/5minor/2repairs/3limits andfullAUTHORdispositions; co
 ## 2026-11-07: visual batch017 retained, structuralreading259/267
 
 RootreadcompleteV04950(recovered)51public/allAUTHORdispositions;18checks/13minor/15limits/no mandatoryrepairs, allMEDIUM. V050canonicalZEROcallfence extraction preservesoriginalrefusal/confidence; no generationretry. Completeevidence in reviews/2026-11-07-fullbody-visual-batch017/; allsealedmembers rehashed/AUTHOR60exactPNGfournegativespass. SourceP256H_t temporal andP259generalS_c zero intentional, no typo. P253contact/productspacing localdiagnosticpending. V04046technicalgaps/fullvisualacceptance remainopen; sourcePDFunchanged.
+
+
+## 2026-11-07: P253 local glyph questions resolved
+
+RootviewedwholeRemarkcontext andbothactual3200details/readcompletediagnostic/allsealedmembersverified. Allegedprimal-p/radicalcontact absentat1600/3200(allnonwhitepixel8neighborzero); source3\,2^{-4/3} andPDFgap distinguishcoefficient3/product, notbase32. Completeevidence in reviews/2026-11-07-P253-glyph-diagnostic/. No sourceedit/nativegradechange; V050MEDIUM preserved. Final8structuralvisual calls separatelyauthorized; fullvisual/math gatesunchanged.
