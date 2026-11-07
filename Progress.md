@@ -195,6 +195,18 @@ reviews/2026-11-06-upper-engine16-main-data/.
 All original dimensions/covariances/amplitude/zero and all215/thirteen-join,
 MAIN/Kimi/source/visual/cold/build/delivery requirements remain unchanged.
 
+## 2026-11-06: Upper16 native data/code capsule prepared
+
+Root inspected the actual DATA-bound guard, unchanged pure preflight/native
+collection and source-byte CLI path guard;27 bounded pure controls pass.
+A regular-file-only custody capsule preserves actual user/agent/CODE and
+normal-hook clean carrier, satisfying the existing strict archive parser
+without changing it. Earlier provenance archives remain immutable.
+All56 current/candidate source modules and both PDFs match their frozen hashes.
+Actual context/profile/framing and pure diagnostic bindings remain pending;
+no provider or scientific acceptance is authorized by this capsule.
+Evidence: reviews/2026-11-06-upper-engine16-native-capsule/.
+
 ## Current Subaim
 
 - [ ] Complete the original all-model upper051 and actual-C2 intrinsic204 proof
