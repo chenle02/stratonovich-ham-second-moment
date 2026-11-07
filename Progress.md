@@ -17072,3 +17072,8 @@ AfterREADYaa24986push/GWparity RootauthorizedONLYfinalF originalfull215OWN/241ro
 ## 2026-11-07: Kimi image transport distinguished from text Read
 
 Rootread full nativeimageaudit/allsnippets, rehashed native80284397 and verifiedevery8sourcebyte-range. Evidence in reviews/2026-11-07-Kimi-image-capability/. Kimi2.3.3 textRead REFUSESimages; ReadMediaFile suppliesactualimage_url attachments whenregistered/permitted andmodelimage_in true. CurrentmanagedK3image_in UNKNOWN; public/third-partycatalog notproof. full_resolution preservesbyteswithinactualproviderbudget, defaultmediareadsmaydownsample. No currenttextprofilepixelcredit, no config/auth/provider/model/source/permissionchange orblindcohortchange. Agent21compactionselector replypending. FullintegratedMAIN remainsLIVE; originalgoal/gatesunchanged.
+
+
+## 2026-11-07: integrated MAIN returned MEDIUM/incomplete and is NOT accepted
+
+F terminalnative0/511.9993838s/raw68306B503d4a3e; trailingDSML violatesbareJSON; diagnostic241rows141PARTIAL/22PASS/78PASSnotes, actualMEDIUM. OverallPASSnotesalsofailscomplete-passingsemanticgate. RootreadENTIREraw/all241reasons/11findings/7limits andcompleteaudits. Evidence in reviews/2026-11-07-final-integrated-MAIN-terminal/. NewF007/F012/F194whole verified, all220+NAV retained; source333/prefix440unchanged/416Reads432completedusage/no newanomaly. OldNUNKNOWN/refusal/globaltechnicalPASSfalse remains. W-onlyerrorresolved, source094100/lower119126substantive; remainingbodydepthnotmissingbytes.003wrongwhitebenchmark/210fprimeAC/131misattribution are reporterrors, notsourcefixes. ALL215residualmap13mathgroups retained. Nextdirectactual-proof-body work required, notconfidence/formatretry orscopecut. Allfullgoalgatesremainopen; no sourceedit/adoption.

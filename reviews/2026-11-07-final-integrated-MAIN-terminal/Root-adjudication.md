@@ -1,0 +1,11 @@
+# Integrated MAIN attempt: not accepted
+
+Root read the entire68306-byte raw output, all241 literal check reasons, all11 findings/7 limitations, and full technical/author adjudications including the all215 residual map. Native0/511.9993838s; immutable rawSHA503d4a3e1ca2dac59e07d5a51420b6cdc8d77fd8d076fce2703041723fb0c8ab. Trailing literal DSML closing tags violate bareJSON. Diagnostic first-object decoding is not an accepted/normalized report. Independently, rawPASS_WITH_NOTES with141PARTIAL rows fails the complete-passing semantic gate. Actual confidence is MEDIUM; no HIGH or whole-goal acceptance.
+
+All215 proof IDs and13 joins occur once, with13 additional checks. Whole220core+inventory delivery remains verified; required newF007/F012/F194 rereads pass. All333 source bytes and440-message prefix unchanged,416 cumulative Reads/432 completed usage finishes, no new anomaly/compaction. PriorN unmatched usage remains UNKNOWN and its refusal/globaltechnicalPASSfalse persist.
+
+F correctly resolves the unnecessary cutoff W-only premise and substantively reconstructs source094–100 and lower119–126. It expressly leaves many owned bodies at report-summary depth, so syntactic row coverage does not verify the mathematics. Concrete report errors:003 describes fusion benchmarks instead of the actual white order-two moment test;210 wrongly says the weak derivative is locally AC rather than f itself;131 invokes120/137 instead of its own Radon/unitary dilation. Current source is not repaired for those report errors. C23 quartic036 and square-root027/033 uses remain distinct.
+
+No new current-source failed inequality was established. The residual map preserves ALL215 in13 mathematical groups, including alternatives and calibrations; even some PASS/notes rows remain only report-based. Next substantive work is direct actual-body reconstruction, starting with the canonical foundation and its mass/compactification/regional induction/mild applications. No confidence-only or format-only retry is authorized by this checkpoint, no scope reduction and no component-grade conjunction. All MAIN/KimiHIGH, independent visual/cold, adoption/build and private-delivery gates remain open. No manuscript changes.
+
+Archive SHA256: 9abb5537206de6faa5d8d9a958894dcbc028d85681164f75851fce01c1282811
