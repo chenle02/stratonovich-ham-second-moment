@@ -16737,3 +16737,8 @@ Root verified corrected-v2 whole124/120 input and22 proof environments against e
 ## 2026-11-07: integrated Gupper22 MAIN exact preflight ready
 
 Root completed the source-byte matching preflight and full launch checks for the new integrated22/raw098 original-model upper tree. Exact actual native/config/agent/context/C1/carrier and unused-fence bindings pass. Conditional total1009065/head39511 retains full311296 allowance; other framing752 includes known nonagent237 plus historical515 declared conditional margin, not exact HTTP/future usage. Actual usage must pass. Safe complete readiness records: reviews/2026-11-07-gupper22-deepseek-ready/. ONE fresh call only after READY commit/push/GW parity; no automatic retry/resume/continuation/fallback. No generation yet at this snapshot. Full original actualC2/215/13/sourcevisual/cold/delivery gates unchanged; source/PDF unmodified.
+
+
+## 2026-11-07: integrated original-model Gupper22 MAIN started
+
+After READY7a649c1 push/GW parity, Root launched exactly one bound source-byte native call. Actual nativePID2234555/start91122486/executable verified live; Root retained handle12723. Launch/delivery records in reviews/2026-11-07-gupper22-deepseek-live/. No terminal at observation. No retry/resume/continuation/fallback. Kimi30371 remains its distinct existing live handle. Terminal actual route/usage/input invariance/requested JSON and full public mathematics remain pending; launch is not acceptance. Full actualC2/215/13 and final gates unchanged.
