@@ -16882,3 +16882,8 @@ Exact243whole-origin/215byte-frame input counted1,367,391 tokens; Root independe
 ## 2026-11-07: full-scope staged native route design
 
 Root checked actualAGENTS workforce and historicalProgress launch restrictions: frozen/read-only/DeepSeekV4Pro MAIN+Kimi/HIGH/fullcoverage are user requirements; zero-tools/no-compaction/single-response are prior per-attempt transport choices. Native capability audit identifies paginatedRead/sessioncompaction, but currentcollector rejects these events. Prospective same-session full243/215/241/13 route in reviews/2026-11-07-whole215-staged-route-design/ retains all mathematics, explicit lossy-compaction/reread disclosure and genuine final synthesis; no component-grade conjunction. Minimal guard/route validation is pending; no implementation/provider authority, source change, new acceptance or scope reduction. This is a feasible direction to investigate, not a claim the capacity/review gates are solved.
+
+
+## 2026-11-07: native staged delivery limitation identified before dispatch
+
+Root rehashed nativef9dab and inspected actual embedded Read/compaction code. Read clips2000UTF16unit lines/51200bytes;13of215distinct required bodies contain50overlongLF lines. Offset pagination cannot recover these tails. Evidence in reviews/2026-11-07-whole215-staged-route-design/native-read-limit-evidence.json. DATA-only originalcorpus+bounded reversible supplementary views for13whole bodies now being prepared, exact inversebytes/CR/FF/LF and originalsourcepins required. Compaction requires explicit per-request allowance/toolbuffer and sameV4Pro checks. No generation/sourcechange/acceptance; all243sources/215proofs/241roles/13joins retained.

@@ -9,3 +9,7 @@ Prospective route: one fresh DeepSeekV4Pro reviewer session with all243 whole so
 Current collector explicitly rejects tool/multi-assistant events and requires two-message toolfree execution, so this design cannot run through it unchanged. Before any dispatch: verify native capability/source pins; prepare confined immutable carrier; validate all required source reads, per-turn and compaction routing/usage, final public report and complete findings. Required output and safety allowance remain unchanged; no guarantee of native feasibility or HIGH. No generation is authorized by this design.
 
 Separate Kimi, source-image, full visual, fresh cold, build and synchronized private delivery gates remain. No manuscript adoption/source change.
+
+## Verified delivery constraint
+
+Root independently rehashed nativef9dab and inspected embedded code: Read truncates lines beyond2000 JS UTF16 units, caps output at51200bytes, default2000lines. Among215distinct required bodies,13bodies contain50sourceLF lines beyond that limit; line pagination cannot recover their tails. Supplementary reversible JSONL read views of these13whole originals are required before dispatch: bounded literal-string chunks, explicit original LF/continuation, inverse byte equality including CR/FF. Originals remain immutable and available; no semantic source cut or model-reading credit. Native compaction threshold defaults also do not establish the fixed311296 allowance; per-request budget and next-tool-output buffer require explicit validation.
