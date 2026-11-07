@@ -390,6 +390,15 @@ Evidence: reviews/2026-11-07-fullbody-visual-batch007-adjudication/.
 Structural visual reading1–109/267, fullvisual/math gates stillopen.
 Allsource/PDF/priornativeconditions unchanged.
 
+## 2026-11-07: P101 local limit-glyph check completed
+
+Root viewed actual long3200 same-PDF equation/context crop: plainlim with
+J→infinity below, no inf/sup decoration; separatefollowing sup_J is distinct.
+ActualTeX/PDFgeometry agree. Specific local ambiguity resolved; original
+V020MEDIUM/rawlimuncertainty unchanged, no native or math grade promotion.
+Evidence: reviews/2026-11-07-P101-limit-glyph-diagnostic/.
+No source/PDF edit or wholevisual/goal acceptance.
+
 ## Current Subaim
 
 - [ ] Complete the original all-model upper051 and actual-C2 intrinsic204 proof
