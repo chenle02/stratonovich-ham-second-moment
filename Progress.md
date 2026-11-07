@@ -345,6 +345,23 @@ Existing empty-skills readonly wrapper can be bound later. No generation yet.
 Evidence: reviews/2026-11-06-gupper22-kimi-scientific-preparation/.
 All original215/actual-limit/final gates remain; DATA/runtime/call pending.
 
+## 2026-11-07: actual required Kimi Gupper22 one-call readiness
+
+All124 whole aliases/120 unique body copies and123-file read plan are frozen
+and Root round-trip checked. Actual short prompt uses workspace-relative
+packet/* paths, preserving original DATA prompt; no mathematical changes.
+Fresh pinnedKimi2.3.3/kimi-code-k3/configuredmax managedOAuth doctor passes
+with zero generation. Existing byte-pinned readonly wrapper supplies empty
+skills/no subagents; actual future profile must still be verified. Child-only
+completioncap131072 and supportedheader600000ms selected. ExactK3 tokens,
+advertised output ceiling/compaction behavior remain unknown; no invented
+admission or whole-source retention claim. Independent actual text-readback
+and complete public finding adjudication remain required.
+Evidence: reviews/2026-11-07-gupper22-kimi-main-ready/.
+Root authorizes ONE fresh integrated22/raw proof call after actualcommitted/
+pushed/<HUB>-equal READY delivery, no automaticretry/resume/fallback.
+No parser weakening, old-grade transfer, candidate adoption or goal clearance.
+
 ## Current Subaim
 
 - [ ] Complete the original all-model upper051 and actual-C2 intrinsic204 proof
