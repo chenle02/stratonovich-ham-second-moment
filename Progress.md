@@ -17663,3 +17663,13 @@ Root read full505 HIGH report, commoncanonicalvalidator passes,16exactviewIDs/ha
 
 
 2026-11-08:afteractualmaincompact06, distinct126–129/pixel33 READY580477input/+311296=891773. Independentmainunion125/267 retained;142remain. Sameoriginalreviewer/nativeprocess, no newsetup or narrowing.
+
+
+## 2026-11-08:diagnosis13 identifies actual remaining independent calculations
+
+Root read full13public; no verdict/confidence or sourcegap. Native686287input/8983output-plus-reasoning. Concrete005induction/033printedconstant/042series/047tensorinvariance/048stronglimits andBCWunitcheck remain independently unwritten. Correct two diagnostic errors:005uses lastremaining-predecessorgap, not pairedgap;047coupledbackground/spatial propagator tensorIdcross, not separateGaussian/spatial factors. Actualsourcecorrect. Genuine next reconstruction mustderive exactsteps andpinpoints; no unchangedgrade retry. Context05 READY733230input/+311296=1044526/head4050,actual222/83state, navigationonly/resetfreshaftercompletion. Evidence reviews/2026-11-08-verification-depth-diagnosis13/.
+
+
+## 2026-11-08:129 main and eight valid primary pages accepted
+
+Root read full pixel33 HIGH/commonvalidator/16views/no repairs. Union129/267pages/516views;138remain. Native37472input/3791output/context41263. Next130–133 READY599687input/+311296=910983. Primary506F142–145 HIGH/commonvalidator/16views/no repairs; validprimaryF138–145 union8/35pages/32views,27remain including9failed-schema pages. Native67060input/11154output/context78214. NextF146–149 READY636710input/+311296=948006. UngradedDS13 gives specific proof-work scope, notHIGH; alloriginalgates retained.
