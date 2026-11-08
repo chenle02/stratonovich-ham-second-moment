@@ -1,0 +1,425 @@
+# Mathematical working turn 03
+
+All formulas use the running notation \(a=\alpha_0\), \(\beta=4-\alpha-a\), \(\nu=3-\alpha\), \(q_n\) as in the vertexwise crude bound. The whole main source, including Definition 2.1 and (2.12), remains current. No source-receipt matter, no verdict.
+
+---
+
+## Part I. Corrections to working02
+
+### I.1 The \(T_1,T_2\to\infty\) limit is not a defining step
+
+Keep \(T_1,T_2>0\) fixed. The correct order is
+
+\[
+b_D(L;T_1,T_2)=\lim_{\boldsymbol\varepsilon\to0}F_{\boldsymbol\varepsilon,L,D}(T_1,T_2),
+\qquad
+b_D(T_1,T_2)=\lim_{L\to\infty}b_D(L;T_1,T_2)
+\]
+
+with \(T_1,T_2\) not moved. The intermediate \(b_D(L;T_1,T_2)\) exists by the PROOF005/006 spatial weak limit at the common temporal cap \(L\). At fixed finite \(T_1,T_2\) the uncapped diagram is finite because \(|s-r|^{-a}\) is integrable on a bounded square and \(a=\alpha_0<1\), so \(b_D(T_1,T_2)<\infty\).
+
+**\(d=1\) white \((1,1)\) check.** With \(\Gamma=\delta_0\), two one-vertex chains with gaps \(r\in[0,T_1]\), \(s\in[0,T_2]\) and common terminal point, the collision factor is
+
+\[
+J_{\varepsilon}(r,s)
+=\int G_r(x)\,G_s(x)\,p_{\varepsilon_1+\varepsilon_2}*\delta_0(x)\,\mathrm dx
+\;\longrightarrow\;\int G_r(x)G_s(x)\,\mathrm dx
+=\frac{\min(r,s)}2 .
+\]
+
+Hence
+
+\[
+b_D(L;T_1,T_2)
+=\int_0^{T_1}\!\int_0^{T_2}K_L(s-r)\frac{\min(s,r)}2\,\mathrm ds\,\mathrm dr ,
+\]
+
+and by monotone convergence in \(L\), since \(K_L\uparrow |s-r|^{-a}\),
+
+\[
+b_D(T_1,T_2)
+=\frac12\int_0^{T_1}\!\int_0^{T_2}|s-r|^{-a}\min(s,r)\,\mathrm ds\,\mathrm dr .
+\]
+
+On the square \([T/2,T]^2\) with \(T_1=T_2=T\),
+
+\[
+\min(s,r)\ge\frac T4
+\quad\Longrightarrow\quad
+b_D(T,T)\ge
+\frac T4\int_{T/2}^{T}\!\int_{T/2}^{T}|s-r|^{-a}\,\mathrm ds\,\mathrm dr
+\sim (1-a)^{-1}(2-a)^{-1}2^{a-3}T^{3-a}.
+\]
+
+Thus it diverges as the **horizon** \(T\to\infty\), but for each fixed \(T_1,T_2\) it is finite. The earlier false step \(b_D(L;T_1,T_2)\underset{T_1,T_2\to\infty}{\longrightarrow}\) is removed.
+
+### I.2 \(Y_n\) is not Gaussian; the Cauchy identity uses \(\mathbb E[Y_n^{a}Y_n^{b}]\)
+
+For \(n\ge2\), \(Y_n^{(\cdot)}\) is a degree-\(\le n\) Gaussian polynomial with lower contractions, not a Gaussian variable. Wick's rule applies to the underlying jointly Gaussian point-field evaluations, not to \(Y_n\) itself as a Gaussian. The \(L^2\)-Cauchy identity is
+
+\[
+\|Y_n^{a}-Y_n^{b}\|_2^2
+=\mathbb E[(Y_n^{a})^2]-2\mathbb E[Y_n^{a}Y_n^{b}]+\mathbb E[(Y_n^{b})^2].
+\]
+
+Each of the three expectations is the finite sum \(\sum_{D\in\Pi_n}\) of a diagram with widths \((a,a)\), \((a,b)\), or \((b,b)\), respectively. By the joint diagram limit of the previous turn, each such diagram tends to \(b_D\). Therefore all three sums tend to \(Q_n=\sum_{D\in\Pi_n}b_D\), and
+
+\[
+\|Y_n^{a}-Y_n^{b}\|_2^2\longrightarrow Q_n-2Q_n+Q_n=0 .
+\]
+
+No \(\mathbb E|Y_n^{a}Y_n^{b}|\), no pointwise product positivity, and no claim that \(Y_n\) is Gaussian are used.
+
+### I.3 Marked norms are dominated by the raw tails, not equal; \(N_0(e^{-s}G_s)=1\)
+
+At unit damping, directly,
+
+\[
+N_0(e^{-s}G_s)=\int_0^\infty\int_{\R^d}e^{-s}G_s(\mathrm dx)\mathrm ds
+=\int_0^\infty e^{-s}\cdot s\,\mathrm ds=1 .
+\]
+
+For the marked-edge tail at cutoff \(L\), a regularized Green kernel has a Fourier multiplier \(e^{-\eta|\xi|^2/2}\le1\) in \(N_1\), and the same nonnegative quadratic-form comparison in \(N_2\), while the tail spectral domain \((\lambda>L)\) is a subset of the full domain. Hence
+
+\[
+N_1^{(L)}\bigl(G^{(\eta,\varepsilon)}_l\bigr)
+\le N_1^{(L)}(1)=A_L,
+\qquad
+N_2^{(L)}\bigl(G^{(\eta,\varepsilon)}_l\bigr)^2
+\le N_2^{(L)}(1)^2=B_L^2,
+\]
+
+with **inequalities**, uniform over all positive widths and all Green smoothing. The finite-horizon tail is therefore
+
+\[
+0\le F_{\boldsymbol\varepsilon,0,D}(T_1,T_2)-F_{\boldsymbol\varepsilon,L,D}(T_1,T_2)
+\le k\,e^{T_1+T_2}H^{k-1}(2A_L+B_L^2),
+\]
+
+with \(H=\max(1,2N_1^{full}(1),N_2^{full}(1)^2)\). The joint-width conclusion remains: \(\boldsymbol\varepsilon\to0\) at fixed \(L\), then \(L\to\infty\), with \(A_L,B_L\to0\), yields the finite fixed-horizon limit \(b_D(T_1,T_2)\) and then \(b_D=\lim_{L\to\infty}b_D(L)\) for each fixed \((T_1,T_2)\); arbitrary spatial/temporal relative rates are preserved.
+
+---
+
+## Part II. The solution-construction chain
+
+### A. Uniform vertexwise crude bound
+
+**Incoming hypotheses.** Proof004's damped homogeneous norm finiteness and scaling; Proof005/006 fixed-order joint \(L^2\) limits; Proof008 corrected pairing envelope (per-family maximum, exact \(2N_1\) and \(N_2^2\) slots, no \(C^n\) cardinality penalty); spatial positivity and \(\alpha+\alpha_0<2\).
+
+**Step 1: damped norms for \(\theta\ge\theta_0=1\).** Proof004 gives
+
+\[
+N_0(\theta)=\theta^{-2},\quad
+N_1(\theta)=\theta^{\alpha+a-2}N_1(1),\quad
+N_2(\theta)^2=\theta^{-\beta}N_2(1)^2,\qquad \beta=4-\alpha-a>2 .
+\]
+
+Since \(\alpha+a<2\) and \(\beta/2>1\), for \(\theta\ge1\),
+
+\[
+N_1(\theta)\le N_1(1),\qquad N_2(\theta)\le N_2(1)\theta^{-1}.
+\]
+
+Put \(C_0=\max(N_1(1),N_2(1),1)\), \(D=\max(1,2C_0)\).
+
+**Step 2: per-family envelope.** For the diagonal squared moment \(\E X_n^2\), the terminal chains are reversed at the common endpoint; the \(P_n\) pairings enter through the finite maximum envelope \(\E X_n^2\le\max_{\mathcal A}P_{Q,\iota}\) after the two chains are reordered and horizon damping \(e^{2\theta t}\) is restored. For every admissible product with \(q_0=q_1\) and \(q_0+q_2/2=n\),
+
+\[
+\begin{aligned}
+P_{Q,\iota}
+&\le \theta^{-2q_0}(2C_0)^{q_1}(C_0\theta^{-1})^{q_2}\\
+&\le D^{q_1+q_2}\theta^{-(2q_0+q_2)}
+= D^{q_1+q_2}\theta^{-2n}
+\le D^{2n}\theta^{-2n}.
+\end{aligned}
+\]
+
+The identity uses only \(2q_0+q_2=2n\), no cardinality-dependent loss.
+
+**Step 3: pairing count and \(\theta\) choice.**
+
+\[
+P_n=\#\Pi_n=\frac{(2n)!}{2^n n!}.
+\]
+
+Choose \(\theta=\theta_0+n/t\ge1\). Then
+
+\[
+\E X_n^2
+\le P_n e^{2\theta t}D^{2n}\theta^{-2n}
+\le P_n e^{2\theta_0t+2n}D^{2n}\frac{t^{2n}}{n^{2n}}
+\le e^{2\theta_0t}\frac{(\bar C t^2)^n}{n!}
+\]
+
+with \(\bar C=2e^2D^2\), because
+
+\[
+\frac{P_n}{n^{2n}}=\frac{(2n)!}{2^n n! n^{2n}}
+\le\frac{(2n)^{2n}}{2^n n!n^{2n}}=\frac{2^n}{n!}.
+\]
+
+Hence
+
+\[
+\boxed{\|\color{black}{Y_n^{\mathbf a}(t,x)}\|_2\le q_n(t):=e^{\theta_0t}\frac{\bar C^{n/2}t^n}{\sqrt{n!}}}
+\]
+
+uniformly in all vertexwise widths, and the same bound passes to \(X_n(t,x)\) by the fixed-order \(L^2\) limit.
+
+**Step 4: summability.** With \(T>0\),
+
+\[
+\frac{q_{n+1}(T)}{q_n(T)}=\frac{\bar C^{1/2}T}{\sqrt{n+1}}\longrightarrow0,
+\qquad
+\frac{\sqrt{n+2}\,q_{n+1}(T)}{\sqrt{n+1}\,q_n(T)}
+=\bar C^{1/2}T\frac{\sqrt{n+2}}{n+1}\longrightarrow0.
+\]
+
+Thus
+
+\[
+\sum_{n\ge0}q_n(T)<\infty,\qquad
+\sum_{n\ge0}\sqrt{n+1}\,q_n(T)<\infty .
+\]
+
+**The correction to the source's nonuniform assertion.** The source's claimed bound \(\E X_n^2\le C^{n}t^{2n}/n!\) misses the exponential horizon loss. The same \(\theta=n/t\) optimization, done without dropping that loss, gives the extra \(e^{2\theta_0t}\) above. This is still a crude \(e^{Ct^2}\) scale; it does not produce \(\kappa\)-rate and is not a defect in the target result.
+
+---
+
+### B. Occupied multiplication and closedness
+
+**Incoming hypotheses.** Normalized Hermite basis of the Gaussian polynomial spaces \(\mathscr P_{\le n}\); the defining series convergence of part A.
+
+**Bound.** Let \(H\) be centered linear Gaussian. If \(H=0\), trivial. Otherwise set \(g_1=H/\|H\|_2\) as first coordinate. On normalized Hermite polynomials \(h_{\mathbf a}\), \(g_1=a_1^\ast+a_1\). For \(F\in\mathscr P_{\le n}\), write its Hermite expansion \(F=\sum f_{\mathbf a}h_{\mathbf a}\) (finite sums dense; extend below). Then
+
+\[
+\|a_1^\ast F\|_2^2=\sum_{\mathbf a}(a_1+1)|f_{\mathbf a}|^2\le(n+1)\|F\|_2^2,
+\]
+
+\[
+\|a_1F\|_2^2=\sum_{|\mathbf a|\le n}a_1|f_{\mathbf a}|^2\le n\|F\|_2^2 .
+\]
+
+The \(\sqrt{n+1}\) uses \(a_1\le|\mathbf a|\le n\). Therefore
+
+\[
+\|HF\|_2\le\|H\|_2(\sqrt{n+1}+\sqrt n)\|F\|_2
+\le2\sqrt{n+1}\|H\|_2\|F\|_2.
+\]
+
+This holds for arbitrary \(F\) in \(\mathscr P_{\le n}\), including \(F\) depending on \(H\).
+
+**Closedness.** The operators \(a_1^\ast,a_1\), restricted to the dense subspace of finite Hermite sums in the closed Gaussian polynomial space of degree \(\le n\), are bounded (by \(\sqrt{n+1},\sqrt n\)). They therefore extend uniquely to that closed subspace. If \(F_j\to F\) in \(L^2\) within it, then \(HF_j=H F_j\to\) the extended product in \(L^2\), and a subsequence converging a.s. identifies that limit with the ordinary product \(HF\). This proves multiplication is closed: the product of an \(L^2\)-convergent sequence in \(\mathscr P_{\le n}\) by the fixed \(H\) converges in \(L^2\) to \(HF\). No infinite series is ever treated as finite degree, and \(H\) need not be independent of \(F\).
+
+---
+
+### C. \(I_{n,a}\), inner width limit, and \(I_{n,a}\to X_n\)
+
+**Incoming hypotheses.** Fixed-order joint \(L^2\) convergence (Proof006), the finite-degree multiplication bound, part A's summability, and joint spatial stationarity of the coupled regularizations.
+
+**Spatial \(L^2\)-continuity and uniform-in-\(y\) convergence.** At positive widths, \(Y_n^{\mathbf b}(s,y)\) is \(L^2\)-continuous in \(y\), by continuity of the bounded smoothed covariance products and dominated integration against finite Green measures. Joint spatial stationarity of the coupled regularizations gives
+
+\[
+\|Y_n^{\mathbf b}(s,y)-Y_n^{\mathbf b'}(s,y)\|_2
+=\|Y_n^{\mathbf b}(s,0)-Y_n^{\mathbf b'}(s,0)\|_2,
+\]
+
+so the fixed-order \(L^2\)-convergence, for fixed \(s\), is uniform in \(y\). Passing to the limit, \(X_n(s,\cdot)\) is an \(L^2\)-continuous representative.
+
+**Construction at fixed outer width \(a\).** Fix \(a=(\varepsilon,\delta)\), \(W_a=W_{\varepsilon,\delta}\), \(V_a=\gamma^0_\delta(0)\gamma_{2\varepsilon}(0)<\infty\). Define
+
+\[
+I_{n,a}(t,x)=\int_0^t\int_{\R^d}G(t-s,x-\mathrm dy)\,W_a(s,y)X_{n-1}(s,y)\,\mathrm ds.
+\]
+
+The Bochner integrand is strongly measurable by part C's measurability at positive widths and dominated in \(L^2\) by
+
+\[
+\|W_a(s,y)X_{n-1}(s,y)\|_2
+\le2\sqrt n\,\sqrt{V_a}\,q_{n-1}(T),\qquad 0\le s\le T.
+\]
+
+So \(I_{n,a}\) exists.
+
+**Inner limit.** At fixed outer \(a\), multiplication by \(W_a\) preserves \(L^2\) convergence on degree \(\le n-1\) and has uniform domination just stated. Therefore
+
+\[
+I_{n,a}(t,x)=\lim_{\mathbf b\to0}Y_n^{(\mathbf b,a)}(t,x)\quad\text{in }L^2,
+\]
+
+where \(a\) is at the terminal vertex and \(\mathbf b\) the preceding \(n-1\) vertices. Hence
+
+\[
+\sup_{a>0}\|I_{n,a}(t,x)\|_2\le q_n(t).
+\]
+
+**Outer limit, without assuming a partial-limit theorem from a joint-limit theorem.** Fix \(\zeta>0\). The joint fixed-order convergence gives \(r>0\) such that every vertex width below \(r\) has
+
+\[
+\|Y_n^{(\mathbf b,a)}-X_n\|_2<\zeta.
+\]
+
+Fix any outer \(a\) below \(r\), and let \(\mathbf b\to0\) in the inner-limit identity. Then
+
+\[
+\|I_{n,a}-X_n\|_2\le\zeta.
+\]
+
+Thus \(I_{n,a}(t,x)\to X_n(t,x)\) in \(L^2\) as \(a\to0\), with arbitrary relative rates.
+
+---
+
+### D. Green-before-noise for the product \(W_a u\) in \(d=3\)
+
+**Incoming hypotheses.** The author's Definition 2.1 and (2.12), pp. 9–10; finite spatial Green measures \(G_h\) with mass \(h\); \(L^2\)-continuity of the vector function \((s,y)\mapsto W_a(s,y)u(s,y)\); the fixed-outer multiplication bound.
+
+Work at fixed outer \(a\) and fixed finite horizon \(T\). Let \(G_{h,\eta}=p_\eta*G_h\), \(\eta>0\). The function \(V(s,y)=W_a(s,y)X_{n-1}(s,y)\) is \(L^2\)-continuous in \(y\), and for the full product \(W_a u\) we use the summable extension below. We want
+
+\[
+\lim_{\eta\downarrow0}\int G_{h,\eta}(\mathrm dy)V(s,y)
+=\int G_h(\mathrm dy)V(s,y)\quad\text{in }L^2,
+\]
+
+uniformly in \(s\), before any noise width is removed.
+
+For fixed \(s\), the scalar measures \(G_{h,\eta}\) converge weakly to \(G_h\) with common mass \(h\). The function \(V(s,\cdot)\) is \(L^2\)-continuous; on a compact set \(B_R\) approximate it by a finite continuous partition of unity times fixed \(L^2\)-space values, use scalar weak convergence on each fixed value, and control the complement by tightness of \(G_{h,\eta}\) and the uniform bound
+
+\[
+\|V(s,y)\|_2\le M,\qquad |y|>R\ \text{tail under }G_{h,\eta}\to0
+\]
+
+uniformly in \(\eta\). The common mass \(h\) gives dominated time integration:
+
+\[
+\int_0^t\|\int[G_{h,\eta}-G_h](\mathrm dy)V(s,y)\|_2\,\mathrm ds
+\le\text{small}.
+\]
+
+This is the Green limit at fixed outer widths; the same argument applies to the full summable product \(W_a u\) because its \(L^2\) norm is summable in the same way. Consequently the Green smoothing is removed first, and only afterwards \(a\to0\).
+
+This matches Definition 2.1/(2.12): the ordinary integral \(\int G(t-s,x-y)\,W_a(s,y)u(s,y)\,\mathrm dy\mathrm ds\) at fixed \(a\) has a Green-width limit, then the Stratonovich \(L^2\) limit removes the noise widths. No \(H^1\) point trace/algebra, Theorem100, Gaussian operator driver093, or uniqueness assumption is inserted.
+
+---
+
+### E. The infinite sum is the product \(W_a u\), interchange, and the double limit
+
+**Incoming hypotheses.** Part A summability; part B closed multiplication; the partial-order sums \(U_N=\sum_{n=0}^N X_n\).
+
+**Product identification.** At fixed \(a\) and fixed \((s,y)\),
+
+\[
+\sum_{n\ge1}\|W_a(s,y)X_{n-1}(s,y)\|_2
+\le2\sqrt{V_a}\sum_{n\ge1}\sqrt n\,q_{n-1}(T)<\infty .
+\]
+
+Since \(U_N\to u\) in \(L^2\) and multiplication by the fixed \(W_a\) is closed on each finite degree by part B, the products \(W_a U_N\to W_a u\) in \(L^2\). (For the full series, closedness on finite partial sums plus the uniform bound identifies the limit.)
+
+**Interchanging Green integration and the sum at fixed \(a\).** The Green measure has finite mass \(t-s\), and the partial sums \(\sum_{n=1}^N W_a(s,y)X_{n-1}\) converge in \(L^2\), preserving spatial \(L^2\)-continuity by uniform linear convergence. Dominated Bochner integration gives
+
+\[
+I_a(t,x)=\int_0^t\int_{\R^d}G(t-s,x-\mathrm dy)W_a(s,y)u(s,y)\,\mathrm ds
+=\sum_{n\ge1}I_{n,a}(t,x)\quad\text{in }L^2.
+\]
+
+**Double limit.** For every \(N\ge1\),
+
+\[
+\begin{aligned}
+\|I_a(t,x)-(u(t,x)-1)\|_2
+&\le\sum_{n=1}^N\|I_{n,a}(t,x)-X_n(t,x)\|_2
++2\sum_{n>N}q_n(t).
+\end{aligned}
+\]
+
+Let \(a\downarrow0\) first, using part C's \(I_{n,a}\to X_n\), at fixed finite \(N\), then let \(N\to\infty\), using \(\sum_{n>N}q_n(t)\to0\). Therefore
+
+\[
+\lim_{a\downarrow0}I_a(t,x)=u(t,x)-1\quad\text{in }L^2.
+\]
+
+With the outer width \(a\) replaced by the full outer pair \((\varepsilon,\delta)\), this is exactly the mild equation
+
+\[
+\lim_{\varepsilon,\delta\downarrow0}
+\int_0^t\int_{\R^d}G(t-s,x-\mathrm dy)u(s,y)W_{\varepsilon,\delta}(s,y)\,\mathrm ds
+=u(t,x)-1.
+\]
+
+Green-before-noise in \(d=3\) was discharged in part D.
+
+---
+
+### F. Full mixed moment, positivity, regrouping, and Jensen
+
+**Finite-sum mixed Wick formula.** Fix \(m+n=2k\). For two terminal chains ending at \((t,x)\), reversing each chain to an initial-root convention gives an ordinary finite-sum Gaussian Wick identity. Each pairing \(D\in\Pi_k\) contributes the one term of \(\E[X_m X_n]\), so
+
+\[
+\E X_mX_n=\sum_{D\in\Pi_k}J_{m,n,D}(t),
+\]
+
+where \(J_{m,n,D}\) is the two-chain diagram with two separate roots, the first vertex of each chain paired to its own root, and covariance \(|s_j-s_k|^{-a}\gamma(x_j-x_k)\), including self-pairs and unequal/empty chains. Odd total order gives zero by Wick's formula.
+
+**Positivity of the limiting mixed moments.** The regularized mixed expectations are nonnegative, finite sums of nonnegative integrands (positive Green kernels and nonnegative covariance). As the widths are removed, each individual diagram has the finite nonnegative limit established in the previous working turn, so
+
+\[
+\E[X_mX_n]\ge0.
+\]
+
+**\(U_N\to u\) and regrouping.** Let \(U_N=\sum_{n=0}^N X_n\). By the fixed-\(t\) norm summability of part A, \(U_N\to u\) in \(L^2\). Hence
+
+\[
+\|\E U_N^2-\E u^2\|
+\le\|U_N-u\|_2(\|U_N\|_2+\|u\|_2)\to0 .
+\]
+
+The finite expansions \(\E U_N^2\) increase, because every mixed expectation just shown is nonnegative. Their limit is therefore the full double sum, independent of enumeration, and grouping by total order \(m+n=2k\) gives
+
+\[
+\E u^2(t,x)
+=\sum_{k\ge0}\sum_{m=0}^{2k}\sum_{D\in\Pi_k}J_{m,2k-m,D}(t),
+\]
+
+with \(\E[u^2]\ge1\) because the \(X_0=1\) term is \(1\).
+
+**Actual Jensen for this same \(u\).** Since the canonical series converges in \(L^2\) and the odd terms have zero mean,
+
+\[
+\E u(t,x)=\sum_{n\ge0}\E X_{2n}(t,x)\ge1
+\]
+
+by the positivity of the even pairing integrals. Cauchy–Schwarz on the same random variable yields
+
+\[
+\E u^2(t,x)\ge(\E u(t,x))^2,
+\]
+
+with no identification of any auxiliary \(S_1\) with the first moment; the inequality is unconditional for the constructed \(u\).
+
+**Homogeneous common-product exponent.** For the common-per-pairing envelope, with \(\beta=4-\alpha-a\), the admissible products have total \(\theta\)-degree \(-\beta k\), so the majorant is \(\sum_k P_k\exp(2\theta t)\theta^{-\beta k}\). Its optimization gives exponent
+
+\[
+\rho=\frac{\beta}{\beta-1}
+=\frac{4-\alpha-a}{3-\alpha-a}
+>\frac{4-\alpha-a}{3-\alpha}=\kappa
+\]
+
+for \(a>0\), because \(3-\alpha-a<3-\alpha\). Thus the no-go remains a no-go: the crude common-product majorant cannot produce the \(\kappa\) scale. This is a comparison of a numerical majorant, not a false inequality in the other arguments.
+
+---
+
+## Incoming-hypothesis check and first defect located
+
+No mathematical defect was located in steps A–F of the corrected chain. The only defects corrected in this turn were the three working02 errors:
+
+1. the false horizon limit \(T_1,T_2\to\infty\) inside \(b_D\);
+2. treating \(Y_n\) as Gaussian and writing \(|Y_n^aY_n^b|\);
+3. asserting equality of regularized marked norms with the raw \(A_L,B_L\) instead of \(\le\), and the informal \(N_0\) wording.
+
+The manuscript text itself already uses the correct statements; the corrections are to the prior working response.
+
+## Remaining mathematical gaps
+
+1. The full target \(\kappa\)-scale upper bound and the intrinsic constant identification are not supplied by the crude-chain items A–F; they depend on the separate interval-field and variational arguments, which remain outside the two foundations requested here.
+2. The per-family quantifier of the pairing envelope remains per-family; the crude-chain items use only that every admissible product is singly bounded over the finite edge family, so the restriction is respected but not upgraded.
+3. The limiting measures \(\rho_D\) are now identified as the fixed-order diagram limits at fixed horizons, but the passage from the per-\((n,D)\) finite-order limits to a full series and the mild-solution identification is exactly the chain A–F above; no further gap specific to the chain was located.
+4. The nonmathematical certification gates (Native Read, hash, pixel, cold) remain separate and were not mathematical premises here.

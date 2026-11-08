@@ -1,0 +1,535 @@
+## 1. PROOF003: the white‑space order‑two calibration (falsification attempted, statement verified)
+
+Fix \(d=\alpha=1\), \(\Gamma=\delta_0\), write \(a=\alpha_0\in(0,1)\). Work in the initial‑chain convention: each chain has its own root \((0,0)\), the first Green factor is \(G(s,x)\) at the first vertex, and all chain time variables are strictly ordered. For \(d=1\),
+
+\[
+G(s,x)=\tfrac12\mathbf1_{\{|x|<s\}},\qquad \int_\mathbb R G(s,x)G(r,x)\,\mathrm dx=\frac{\min(s,r)}2 .
+\]
+
+### 1.1 The \((1,1)\) cross‑term, i.e. \(\mathbb E X_1(t,x)^2\)
+
+Two chains of length one, vertices \((s,x_1)\), \((r,x_2)\). There is one pairing \(D=\{\{1,2\}\}\), so
+
+\[
+\begin{aligned}
+\mathbb E X_1(t,x)^2
+&=\int_0^t\int_0^t\int_{\mathbb R^2}
+G(s,x_1)G(r,x_2)\,\delta_0(x_1-x_2)|s-r|^{-a}\,
+\mathrm dx_1\,\mathrm dx_2\,\mathrm ds\,\mathrm dr\\
+&=\int_0^t\int_0^t\frac{\min(s,r)}2\,|s-r|^{-a}\,\mathrm ds\,\mathrm dr .
+\end{aligned}
+\]
+
+By symmetry,
+
+\[
+\begin{aligned}
+\mathbb E X_1(t,x)^2
+&=\int_0^t\int_0^s r\,(s-r)^{-a}\,\mathrm dr\,\mathrm ds\\
+&=\int_0^t\frac{s^{2-a}}{(1-a)(2-a)}\,\mathrm ds\\
+&=\frac{t^{3-a}}{(1-a)(2-a)(3-a)}
+=c_0\,t^{3-a}.
+\end{aligned}
+\]
+
+The \(1/2\) from \(G(s)G(r)\) swallowed the factor \(2\) from the symmetric decomposition. This is exactly the statement \(c_0t^{3-a}\).
+
+### 1.2 The single‑chain \((0,2)\) term, i.e. \(\mathbb E X_2(t,x)\)
+
+One chain of length two, vertices \(0<s_1<s_2<t\). The only pairing joins the two vertices, and \(\delta_0\) forces \(x_1=x_2\). Hence
+
+\[
+\begin{aligned}
+\mathbb E X_2(t,x)
+&=\int_{0<s_1<s_2<t}\int_{\mathbb R^2}
+G(s_1,x_1)\,G(s_2-s_1,x_2-x_1)\,
+\delta_0(x_1-x_2)(s_2-s_1)^{-a}\,
+\mathrm dx_1\,\mathrm dx_2\,\mathrm ds_1\,\mathrm ds_2\\
+&=\frac12\int_{0<s_1<s_2<t}s_1(s_2-s_1)^{-a}\,\mathrm ds_1\,\mathrm ds_2.
+\end{aligned}
+\]
+
+Here \(\int_\mathbb R G(s_1,x_1)\,\mathrm dx_1=s_1\), and \(G(0)=1/2\) at the second vertex after collision. Put \(v=s_2-s_1\):
+
+\[
+\begin{aligned}
+\mathbb E X_2(t,x)
+&=\frac12\int_{0}^{t}s_1\int_{0}^{t-s_1}v^{-a}\,\mathrm dv\,\mathrm ds_1\\
+&=\frac1{2(1-a)}\int_0^t s_1(t-s_1)^{1-a}\,\mathrm ds_1\\
+&=\frac1{2(1-a)}
+\frac{t^{3-a}}{(2-a)(3-a)}
+=\frac12 c_0 t^{3-a}.
+\end{aligned}
+\]
+
+The \((2,0)\) term is identical.
+
+### 1.3 Total order‑two contribution, including both unequal splits
+
+\[
+\begin{aligned}
+A_1(t)
+&=\mathbb E[X_0X_2]+\mathbb E[X_1X_1]+\mathbb E[X_2X_0]\\
+&=2\,\mathbb E X_2(t,x)+\mathbb E X_1(t,x)^2\\
+&=2\cdot\left(\frac12c_0t^{3-a}\right)+c_0t^{3-a}
+=2c_0t^{3-a}.
+\end{aligned}
+\]
+
+The empty‑chain factor \(X_0=1\) and the equality \(\mathbb E[X_0X_2]=\mathbb E X_2\) give the factor \(2\) in front of \(\mathbb E X_2\); the middle term \(\mathbb E[X_1X_1]=\mathbb E X_1(t,x)^2\) is the cross‑term computed above.
+
+Calibration at the static boundary: \(c_0|_{a=0}=1/6\), so \(\mathbb E X_1^2=t^3/6\), \(\mathbb E X_2=t^3/12\), and \(A_1(t)=t^3/3\). This matches the static value recorded elsewhere.
+
+**Conclusion for PROOF003:** no falsification. The computation is exact on its ordered two‑chain/one‑chain domains.
+
+---
+
+## 2. PROOF214: coefficient‑one translated covariance Cauchy–Schwarz
+
+The lemma uses the Laplace–mixture feature
+
+\[
+h_\lambda(t,r)=\sqrt{2\lambda}\,e^{-\lambda(t-r)}\mathbf 1_{\{r\le t\}},
+\]
+
+which satisfies
+
+\[
+\int_\mathbb R h_\lambda(t,r)h_\lambda(s,r)\,\mathrm dr=e^{-\lambda|t-s|},
+\qquad
+\int_\mathbb R h_\lambda(t,r)^2\,\mathrm dr=1 .
+\]
+
+Define the capped stationary covariance
+
+\[
+C_L((t,x),(s,y))
+=\kappa_L(t-s)\gamma(x-y),
+\qquad
+\kappa_L(t)=\int_{(0,L]}e^{-\lambda|t|}\nu(\mathrm d\lambda).
+\]
+
+On
+
+\[
+\mathcal H_L=L^2((0,L]\times\mathbb R^d\times\mathbb R,\nu\otimes\mu\otimes\mathrm dr)
+\]
+
+set
+
+\[
+\Phi_L(t,x)(\lambda,\xi,r)
+=h_\lambda(t,r)e^{i\xi\cdot x}.
+\]
+
+Then
+
+\[
+\|\Phi_L(t,x)\|^2=\nu((0,L])\mu(\mathbb R^d),
+\qquad
+\langle \Phi_L(t,x),\Phi_L(s,y)\rangle
+=C_L((t,x),(s,y)).
+\]
+
+Thus
+
+\[
+Q_L(f,h)=\langle F_L(f),F_L(h)\rangle_{\mathcal H_L},
+\qquad
+F_L(f)=\int f(t,x)\Phi_L(t,x)\,\mathrm dt\,\mathrm dx,
+\]
+
+and Cauchy–Schwarz gives
+
+\[
+|Q_L(f,h)|\le Q_L(f,f)^{1/2}Q_L(h,h)^{1/2}.
+\]
+
+Two distinct translations are handled by using the original stationary covariance and the equal‑translation invariance
+
+\[
+Q_L(T_{A,a}f,T_{A,a}h)=Q_L(f,h).
+\]
+
+This yields the coefficient‑one bound
+
+\[
+0\le Q_L(T_{A,a}G_1^0,T_{B,b}G_2^0)
+\le N_{2,L}(G_1)N_{2,L}(G_2),
+\]
+
+where the left nonnegativity is plain nonnegativity of \(G_i\) and \(C_L\ge0\), and \(N_{2,L}\) is the capped Hilbert norm. The predecessors \(A,B\) are not discarded: the time argument retains \(s-t+A-B\); invariance is applied separately to each self pairing.
+
+The passage to unbounded \(G_i\) uses the truncations \(G_{i,M}=\min(G_i,M)\mathbf1_{\{0<t\le M,|x|\le M\}}\) and monotone convergence since \(C_L\ge0\). Finally \(L\to\infty\) is monotone by positivity of \(\nu\) and nonnegativity of \(\gamma\). Zero measures and zero norms cause no division by a norm.
+
+**Verification:** the normalization is consistent. For \(f=h=G_i^0\), \(\langle F_L,F_L\rangle=Q_L(G_i^0,G_i^0)\), which increases to \(N_C(G_i)^2\). The coefficient one is independent of origin, dimension, cap, and covariance mass. PROOF214 is sound.
+
+---
+
+## 3. EXTERNAL_CANDIDATE_OWN215: the pairing‑product envelope
+
+### 3.1 The precise input
+
+For each edge \(e\in D\), \(\mu_e\) is finite and positive with
+
+\[
+\gamma_e(x)=\int_{\mathbb R^d}e^{i\xi\cdot x}\mu_e(\mathrm d\xi)\ge0,
+\]
+
+and for \(0<a<1\),
+
+\[
+\nu_e(\mathrm d\lambda)=\Gamma_{\mathrm E}(a)^{-1}\mathbf 1_{A_e}(\lambda)\lambda^{a-1}\mathrm d\lambda,
+\qquad
+\kappa_e(t)=\int e^{-\lambda|t|}\nu_e(\mathrm d\lambda),
+\]
+
+with \(A_e\subset(0,\infty)\) measurable. The norms are
+
+\[
+\begin{aligned}
+N_0(G)&=\int G,\\
+N_{1,e}(G)&=\int\left|\int e^{-\lambda t+i\xi\cdot x}G(t,x)\,\mathrm dt\,\mathrm dx\right|
+\nu_e(\mathrm d\lambda)\mu_e(\mathrm d\xi),\\
+N_{2,e}(G)^2&=\int G(s,x)G(t,y)\kappa_e(s-t)\gamma_e(x-y)
+\,\mathrm ds\,\mathrm dx\,\mathrm dt\,\mathrm dy .
+\end{aligned}
+\]
+
+The diagram \(I_D(\mathbf G)\) and the admissible products \(\mathcal P_{Q,\iota}\) are as defined in the source body.
+
+### 3.2 The three convolution laws
+
+Put \(F(t,x)=\int_{0}^{t}\int_{\mathbb R^d}G(r,y)H(t-r,x-y)\,\mathrm dy\,\mathrm dr\). By Tonelli,
+
+\[
+N_0(F)=N_0(G)N_0(H),
+\qquad
+\mathcal L_F(\lambda,\xi)=\mathcal L_G(\lambda,\xi)\mathcal L_H(\lambda,\xi).
+\]
+
+Since
+
+\[
+|\mathcal L_G(\lambda,\xi)|\le\int e^{-\lambda t}G(t,x)\,\mathrm dt\,\mathrm dx\le N_0(G),
+\qquad \lambda\ge0,
+\]
+
+we get
+
+\[
+N_{1,e}(F)\le N_0(G)N_{1,e}(H).
+\]
+
+For \(N_{2,e}\), zero‑extend \(H\) in time and write \(F\) as the Bochner integral of the translates \(H(\cdot-r,\cdot-y)\) against the nonnegative density \(G(r,y)\). Translation preserves each second norm, so Minkowski gives
+
+\[
+N_{2,e}(F)\le N_0(G)N_{2,e}(H).
+\]
+
+Thus a fused kernel is admissible at every remaining edge and in every remaining slot type.
+
+### 3.3 Base cases
+
+- \(n=0\): both sides equal \(1\).
+- One vertex on each chain: the cross covariance is
+
+\[
+\int G_1(s,x)G_2(t,y)\kappa_e(s-t)\gamma_e(x-y)
+=Q(G_1^0,G_2^0)\le N_{2,e}(G_1)N_{2,e}(G_2),
+\]
+
+so \(Q_2=\{1,2\}\), \(Q_0=Q_1=\varnothing\).
+
+- Two vertices on one chain, the other chain empty: with \(G_{\rm first}\), \(G_{\rm last}\), the integral factors as
+
+\[
+\int N_0(G_{\rm first})\int G_{\rm last}(t,x)\kappa_e(t)\gamma_e(x)\,\mathrm dt\,\mathrm dx
+\le N_0(G_{\rm first})N_{1,e}(G_{\rm last})
+=\frac12N_0(G_{\rm first})\bigl[2N_{1,e}(G_{\rm last})\bigr].
+\]
+
+This is exactly the chronological base; it produces the factor \(2\) on the first norm and the domestic half‑bound.
+
+### 3.4 Regional half‑bound
+
+Let \(v\) be a chain endpoint, \(p\) its predecessor, \(a\) the partner of \(v\), \(e_0=\{a,v\}\), and suppose a region \(R\) satisfies \(s_a\le s_p\) with \(R\) independent of \((s_v,x_v)\). Since \(\kappa_{e_0}\) is decreasing on positive arguments,
+
+\[
+\kappa_{e_0}(s_v-s_a)\le\kappa_{e_0}(s_v-s_p).
+\]
+
+After the change \(u=s_v-s_p,\ z=x_v-x_p\), the endpoint integral has spectral phase \(e^{i\xi\cdot(x_p-x_a)}\) of modulus one, so it is bounded by
+
+\[
+\int|\mathcal L G_v(\lambda,\xi)|\,\nu_{e_0}(\mathrm d\lambda)\mu_{e_0}(\mathrm d\xi)
+=N_{1,e_0}(G_v).
+\]
+
+Dropping \(R\) by positivity, removing \(v\), and either integrating \(a\) to \(N_0(G_a)\) or fusing \(G_a G_b\) into \(F=G_a*G_b\) gives a reduced diagram with \(n-1\) edges. Induction supplies a full admissible product \(P_{\rm rest}\).
+
+The three possible slots for \(F\) are now exactly as in the source body.
+
+- \(i=0\), \(F\) in a mass slot: mass multiplicativity gives
+
+\[
+I_R\le \frac12\,N_0(G_a)N_0(G_b)\bigl[2N_{1,e_0}(G_v)\bigr]B_{\rm rest}.
+\]
+
+- \(i=1\), \(F\) in a first slot with inherited edge \(e_1\): the retained factor \(2\) gives
+
+\[
+N_{1,e_0}(G_v)\,[2N_{1,e_1}(F)]B_{\rm rest}
+\le\frac12 N_0(G_a)\,[2N_{1,e_1}(G_b)]\,[2N_{1,e_0}(G_v)]B_{\rm rest}.
+\]
+
+This is the nontrivial repair: the first‑slot factor \(2\) is passed through, not absorbed into an \(N_{2}N_{2}\) comparison.
+
+- \(i=2\), \(F\) in a second slot with inherited edge \(e_1\): by \(N_{2,e}(F)\le N_0(G)N_{2,e}(H)\),
+
+\[
+I_R\le\frac12 N_0(G_a)\,[2N_{1,e_0}(G_v)]\,N_{2,e_1}(G_b)B_{\rm rest}.
+\]
+
+The cardinality identities
+
+\[
+|Q_0|=|Q_1|,\qquad |Q_2|\text{ even}
+\]
+
+are preserved in all three cases because the reduced products already obey them.
+
+### 3.5 Global cases
+
+- **Domestic endpoint**: has its partner at or before its predecessor, so the half‑bound applies on the full domain.
+- **Case 1**: one domestic endpoint exists; the half‑bound proves the full bound.
+- **Case 2**: \(u=n_1\) and \(v=2n\) paired together. Conditioning on predecessors and keeping \(A-B\), PROOF214 supplies
+
+\[
+\le N_{2,e}(G_u)N_{2,e}(G_v);
+\]
+
+then induction and adding \(u,v\) to \(Q_2\) prove the full bound.
+- **Case 3**: both endpoint pairs cross and distinct. Split at \(\{s_a\le s_q\}\). On each piece the half‑bound produces possibly different admissible products, so
+
+\[
+I_D\le\frac{P+P'}{2}\le\max(P,P').
+\]
+
+### 3.6 Cap removal and zero branch
+
+The proof is first done at \(A_e\cap(0,L]\). Letting \(L\to\infty\) is monotone, and since the admissible set is finite, the maximum converges to the maximum of limits. Zero kernels, zero norms, and zero measures are allowed because no division by a norm occurs.
+
+**Mathematical conclusion:** the statement of OWN215 is proved. The bound is a per‑family existential maximum; it does not assert a single \(Q\) valid for all kernel families, and it does not require a measurable maximizing selector.
+
+---
+
+## 4. PROOF005 audit: positive spatial Wick‑measure limit
+
+**Parent trace.** PROOF005 does **not** consume OWN215 or PROOF214. It uses
+
+- the heat bound (E:construction‑heat‑bound),
+- the iterated Brownian moment bound (E:construction‑brownian‑moments),
+- the wave‑to‑heat identity,
+- spectral Cauchy–Schwarz,
+- standard monotone/Dirichlet/Laplace moment arguments.
+
+### 4.1 The transform formula
+
+The measure is \(\nu_{\varepsilon,D}=e^{-\sum r_l}\rho_{\varepsilon,D}\). Its Laplace transform is
+
+\[
+L_{\varepsilon,D}(\lambda)
+=\int e^{-\sum \lambda_l r_l}\mathrm d\nu_{\varepsilon,D}
+=\int\exp\left(-\frac12\sum_{e=\{j,h\}}(\epsilon_j+\epsilon_h)|\xi_e|^2\right)
+\prod_{l=1}^{2k}\frac1{(1+\lambda_l)^2+|\eta_l(\xi)|^2}
+\prod_{e\in D}\mu(\mathrm d\xi_e).
+\]
+
+Here the denominator uses damping \(1+\lambda_l\), exactly because \(\nu\) already carries the factor \(e^{-\sum r_l}\). Since \(\int_0^\infty e^{-(1+\lambda)r}G_r(\mathrm dz)\) has Fourier transform \(((1+\lambda)^2+|\xi|^2)^{-1}\), the identity is consistent.
+
+The integrand is nonnegative and increases when the spatial widths decrease. The bound by the all‑\(\epsilon_\ast\) transform is legitimate because replacing \((\epsilon_j+\epsilon_h)/2\) by the smaller \(\epsilon_\ast\) increases each Gaussian multiplier.
+
+### 4.2 The Brownian moment bound
+
+For one path,
+
+\[
+\mathbb E_B S_b(T)^j\le
+\frac{(2j)![A\Gamma_{\mathrm E}(1-\alpha/2)]^j}
+{\Gamma_{\mathrm E}((2-\alpha/2)j+1)}
+T^{(2-\alpha/2)j}.
+\]
+
+The exponent is consistent at \(j=1\): ordering the two times gives \(T^{2-\alpha/2}\), and the Dirichlet factor is
+
+\[
+\frac{\Gamma_{\mathrm E}(1-\alpha/2)\Gamma_{\mathrm E}(1)}{\Gamma_{\mathrm E}(3-\alpha/2)}.
+\]
+
+Multiplication by \(2!\) and the prefactor \(A\) reproduces
+
+\[
+2A\int_{0<s<t<t?} (t-s)^{-\alpha/2}\,\mathrm ds\,\mathrm dt
+=\frac{2A T^{2-\alpha/2}}{(1-\alpha/2)(2-\alpha/2)}.
+\]
+
+For general \(j\), the iterated deletion selects \(j\) distinct adjacent gaps among the \(2j\) gaps (including the terminal gap). The Dirichlet denominator is \(\Gamma_{\mathrm E}(j(1-\alpha/2)+j+1)=\Gamma_{\mathrm E}((2-\alpha/2)j+1)\), and the exponent \(T^{(2-\alpha/2)j}\) includes the \(j\) unselected gaps integrated with \(\Gamma_{\mathrm E}(1)=1\). This verifies the stated formula.
+
+### 4.3 Common‑width total‑mass bound
+
+The wave‑to‑heat identity
+
+\[
+\int_0^\infty e^{-at}G_t(\mathrm dx)\,\mathrm dt
+=\frac12\int_0^\infty e^{-a^2u/2}p_u(x)\,\mathrm du\,\mathrm dx
+\]
+
+converts the common‑width transform to \(2^{-2k}\) times a two‑Brownian‑chain integral with gap weights \(e^{-\sum u_l/2}\). The quarter‑fraction insertion
+
+\[
+1=\frac14\int_{\tau_1}^{\infty}\int_{\tau_2}^{\infty}
+e^{-\frac12[(a-\tau_1)+(b-\tau_2)]}\,\mathrm da\,\mathrm db
+\]
+
+allows the ordered chain times to be extended to full cubes. At fixed paths, each pair contributes one occupation integral; cross‑pairs are bounded by
+
+\[
+A_{12}\le\sqrt{S_{2\epsilon_\ast}^{(1)}(a)S_{2\epsilon_\ast}^{(2)}(b)}.
+\]
+
+If there are \(v_1,v_2\) self‑pairs and \(w\) cross‑pairs with \(v_1+v_2+w=k\), the occupation product is
+
+\[
+S_1^{v_1+w/2}S_2^{v_2+w/2}\le(1+S_1)^k(1+S_2)^k.
+\]
+
+The moment bound and independence of the two Brownian chains give the uniform bound
+
+\[
+\sup_{\varepsilon>0}L_{\varepsilon,D}(0)\le
+2^{-2k-2}\left(\int_0^\infty e^{-a/2}M_k(a)\,\mathrm da\right)^2
+<\infty.
+\]
+
+### 4.4 Weak limit and face masses
+
+Monotone convergence gives the limiting Laplace transforms \(L_D(\lambda)\) for \(\lambda\ge0\). On \([0,1]^{2k}\) via \(y_l=e^{-r_l}\), the bounded masses have weak cluster limits. The integer monomial moments are the prescribed \(L_D\) values, so polynomial density identifies the limit. Since \(\int\prod y_l^c\) is \(L_D(c,\dots,c)\) and \(c\downarrow0\) gives no mass on any \(y_l=0\) face, closed neighborhoods of these faces have vanishing limiting mass. The portmanteau inequality then gives weak convergence on \([0,\infty)^{2k}\), independent of the relative width rates.
+
+Coordinate‑zero faces have zero mass because \(\lambda_l\to\infty\) in the limiting integral gives zero, and this equals \(\nu_D\{r_l=0\}\). The homogeneity
+
+\[
+\rho_{\varepsilon,D}(cA)=c^{(4-\alpha)k}\rho_{\epsilon/c^2,D}(A)
+\]
+
+uses \(G_{cr}(c\,\mathrm dz)=cG_r(\mathrm dz)\), \(\gamma_b(cx)=c^{-\alpha}\gamma_{b/c^2}(x)\), and the \(2k\) time Jacobians. The exponent is \(2k\) from Green factors, \(-k\alpha\) from covariances, and \(2k\) from \(\mathrm dr\)-Jacobians: \(2k-\alpha k+2k=(4-\alpha)k\). Horizon faces have zero mass by the usual disjoint‑dilate/local finiteness argument.
+
+**Conclusion:** no specific failed inequality was located in PROOF005. The four load steps (transform, mass bound, weak cluster, homogeneity) are all independently checkable as above.
+
+---
+
+## 5. Substitution into the downstream quantified consumers
+
+### 5.1 Consumer 006: the marked‑edge envelope
+
+OWN215 gives, for the actual family of Green‑type kernels, a finite maximum over admissible products. For the marked temporal‑tail insertion, each admissible product has the marked edge either
+
+\[
+2N_{1,e_0}\quad\text{or}\quad N_{2,e_0}^2,
+\]
+
+and all unmarked edges obey the full‑norm bound. Let \(H=\max\{1,2N_{1,\rm full},N_{2,\rm full}^2\}\). Every admissible product is then at most
+
+\[
+H^{k-1}\,\max\{2N_{1,\rm tail},N_{2,\rm tail}^2\}
+\le H^{k-1}\bigl(2N_{1,\rm tail}+N_{2,\rm tail}^2\bigr).
+\]
+
+There are \(k\) marked edges after the difference‑of‑products step, and the horizon damping contributes \(e^{2\theta t}\le e^{2T_1+2T_2}\). Hence
+
+\[
+0\le F_{\epsilon,0,D}-F_{\epsilon,\eta,D}
+\le C_{k,T_1,T_2}\bigl(N_1^{(1/\eta)}(1)+N_2^{(1/\eta)}(1)^2\bigr),
+\]
+
+with the factor \(2\) from the first norm made explicit. The estimate is uniform in spatial widths and admissible partitions, so the spatial/cap/Green/damping limits may all be taken. No specific failed inequality was found.
+
+### 5.2 Consumers 007/008: the crude \(\theta\)-envelope
+
+For \(\theta\ge\theta_0\),
+
+\[
+N_0=\theta^{-2},\qquad N_1\le C_0,\qquad N_2\le C_0\theta^{-1}.
+\]
+
+For any admissible product, with \(q_0=q_1\) and \(q_0+q_2/2=n\),
+
+\[
+\begin{aligned}
+\mathcal P_{Q,\iota}
+&\le\theta^{-2q_0}(2C_0)^{q_1}(C_0\theta^{-1})^{q_2}\\
+&\le D^{q_1+q_2}\theta^{-(2q_0+q_2)},\qquad D=\max\{1,2C_0\}\\
+&\le D^{2q_1+q_2}\theta^{-2n}\le D^{2n}\theta^{-2n}.
+\end{aligned}
+\]
+
+The last identity uses \(2q_1+q_2=q_0+q_1+q_2=2n\). This is the exact quadratic exponential loss: \(\theta^{-2n}\) for pairing count \(P_n\), then \(\theta=\theta_0+n/t\) and \(P_n n^{-2n}\le2^n/n!\).
+
+### 5.3 Consumer 010: the homogeneous envelope
+
+With \(\beta=4-\alpha-a\),
+
+\[
+N_0(\theta)=\theta^{-2},\qquad
+N_1(\theta)=N_1(1)\theta^{\alpha+a-2},\qquad
+N_2(\theta)=N_2(1)\theta^{-\beta/2}.
+\]
+
+For every admissible product,
+
+\[
+\begin{aligned}
+\log\mathcal P
+&\le q_1\log(2N_1(1))+q_2\log N_2(1)\\
+&\quad+\bigl[-2q_0+(\alpha+a-2)q_1-\beta q_2/2\bigr]\log\theta.
+\end{aligned}
+\]
+
+Since \(q_0=q_1\) and \(q_0+q_2/2=n\), the \(\theta\)-exponent is
+
+\[
+-2q_0+(\alpha+a-2)q_0-\beta q_2/2
+=-\beta(q_0+q_2/2)
+=-\beta n,
+\]
+
+and the constant is at most
+
+\[
+K^{q_1+q_2/2}=K^n,
+\qquad K=\max\{2N_1(1),N_2(1)^2\}.
+\]
+
+This is exactly \(I_D\le K^n\theta^{-\beta n}\), and the pairing summation and \(\theta\)-infimum follow. The resulting majorant has exponent
+
+\[
+\rho=\frac{\beta}{\beta-1}
+=\frac{4-\alpha-a}{3-\alpha-a}>\kappa
+=\frac{4-\alpha-a}{3-\alpha},
+\]
+
+as the source states. The leading factorial denominator remains \((n!)^{\beta-1}=(n!)^{3-\alpha-a}\), which is the correct calibration for the common‑partition majorant.
+
+---
+
+## 6. Remaining mathematical gaps, without administrative or coverage grading
+
+1. **Full independent re‑expansion of the \(j‑\)fold Brownian deletion in PROOF005.** The transform, the \(j=1\) exponent, and the two‑chain mass bound were checked; the induction for every \(j\ge2\) was verified at the Dirichlet count level, but a fully expanded rearrangement of all pair interlacements in general \(j\) has not been written out from the Brownian law directly. This is standard but still the one point where only a structural verification, not a symbolic all‑\(j\) computation, is currently written down.
+
+2. **Identification of the limiting measures \(\rho_D\) as the fixed‑order Wick diagram measures.** PROOF005 gives the measure limits and homogeneity. The statement that these limits are exactly the diagram limits used by PROOF006 is a separate identification step. Its ingredient was checked (the transform and the fixed width/multipliers), but the full pairing‑diagram identification from the joint Gaussian moments was not independently re‑expanded here.
+
+3. **The per‑family nature of OWN215 is preserved through regularization.** The quantified consumer envelopes above use only that each admissible product is uniformly bounded under smoothing/truncation; no common \(Q\) across regularizations was assumed or needed. This is a mathematical restriction, not a gap in the present computation, but it must remain explicit whenever PROOF006/007/008/010 are applied.
+
+4. **No circular import was found.** PROOF003 does not assume PROOF005 or OWN215; PROOF005 does not assume OWN215; OWN215 uses only PROOF214 and standard Fubini/Bochner/Minkowski; PROOF214 uses the Laplace‑feature Hilbert identity and monotone cap removal.
+
+No specific failed inequality or hypothesis was located in these four targets or in the downstream quantified applications derived above.

@@ -1,0 +1,37 @@
+# Full MAIN outcome and genuine mathematical reconstruction
+
+## Original outcome remains unaccepted
+
+Final exec98225 CLOSED0, raw55697B SHAc9d54e336d538f5358ce0983c7a4bd0646071a56834d3ba5af3ee266afb5ed7e is valid bare canonical JSON, INCONCLUSIVE/low. All238 rows read in full by Root:226PARTIAL/12INCONCLUSIVE, including all215 exact OWN IDs and13 joins. Actual592176 input+20655 output/reason=612831, below625354 input bound. All222 cumulative whole targets and83 sources freshly supplied in that actual final user were verified. No result was normalized, upgraded, retried for confidence or adopted. The report identifies unfinished independent reconstruction, not a concrete fatal formula counterexample.
+
+The source-identity/pixel concerns stay separate from mathematical proof: literal whole-body delivery and actual-byte/inverse receipts establish transport identity, while primary-source application and independent visual/cold gates remain open. A native Read tool is not an additional analytic hypothesis. Historical false W-only assertions require manifest errata while their raw reports remain intact; they must not be silently rewritten. OWN215 is an OWN self-contained proof, not an adopted correction of the printed source theorem. These points do not convert the global outcome to PASS.
+
+## Working01: pairing envelope and spatial measures
+
+Exec55082 CLOSED0; raw19952B SHA97664c6130e5fd2ed37519e3bd7fa1b54037e17c0becfdafa7ab0340224df7a1; actual637660input+26092output/reason=663752. Root read all534LF. It derives003/214/OWN215 and005, then each every-product consumer006/007/008/010. Root independently checked regional half-bounds, all fused-slot counts/factors2, retained predecessor offsets, finite maximum/cap limit and family-dependent quantifiers. The positive spatial measure proof uses Brownian heat/marginal arguments, not OWN215 as a parent. No candidate defect located. This is ungraded mathematics, not MAIN HIGH.
+
+At a=1/2,t=1,Gamma=delta0 the independent low-order values are E X1^2=8/15, E X2=4/15 and total-degree2 contribution16/15. Both unequal splits are indispensable. The statement G(0)=1/2 must carry the positive time-gap subscript. Unit-damping horizon restoration is exp(T1+T2); an unrestricted arbitrary-theta inequality in that working response is not a premise.
+
+## Working02: indexed all-order induction and joint limits
+
+Exec20644 CLOSED0; raw19911B SHA4f0d3bbed3448e1e61da24573aaa19cc0c95ef884b08cbf43f71f642cc4cb8fd; actual206398input+26228output/reason=232626. All418LF read. Indexed deletion is valid for every fixed matching: remove the latest remaining vertex and its partner after a uniform conditional heat bound; remaining coordinates retain their Brownian marginal law. Distinct selected right endpoints give j distinct original integration gaps. Dirichlet integration has2j+1 variables including UNSELECTED terminal slack. All three j=2 matchings checked; no brute-force all-j enumeration is needed.
+
+Root found working-report errors: B4 incorrectly introduced an infinite-horizon limit (keep T1,T2 fixed); B5 called Y_n Gaussian and wrote E|Y_aY_b| (use finite Gaussian polynomial degree<=n and E[Y_aY_b]); marked regularized norms are <=raw tails, not generally equal. The manuscript006 already has the correct statements. The legitimate joint limit is finite-cap spatial weak convergence plus uniform marked-tail remainder, then the mixed-square L2-Cauchy identity at a COMMON physical endpoint, with Green removed before noise in d3.
+
+## Working03: actual mild construction
+
+Exec8716 CLOSED0; raw18768B SHA2df841a4ee72b02d10f19d0fa106e2f04e6e3d307a6c9ae9787f583e66f0a061; actual215749input+11922output/reason=227671. All424LF read. Occupied Hermite multiplication handles dependence of H and F, all lower contractions, fixed-outer-width inner limits, uniform vertex bounds and two-stage tail passage for the ACTUAL product W_a u. The full mixed sum is nonorthogonal, nonnegative in expectation and includes unequal/self/empty chains. Actual Jensen applies to this same u; auxiliary S1 is not identified with its mean. The common-product majorant still gives the stated weaker rho>kappa no-go.
+
+Further report clarifications: white J_epsilon is a DOUBLE spatial convolution integral, not G_r(x)G_s(x)p_epsilon(x); the latter tends1/4 at r=s=1 and is false. Fixed-horizon limiting finiteness uses the uniform tail bound after spatial limiting, not a<1 in Lebesgue measure alone. Pairing envelope bounds EACH diagram, with P_n retained afterwards. The envelope is OWN215, not008. The source uniformity error is large-theta estimates used at theta=n/t approaching0; the safe theta0+n/t creates exp(2theta0t). Roots are deterministic GREEN roots, never Wick paired. Green convergence is per fixed s plus dominated time integration; no uniform-in-s claim is needed. Global product identification uses weighted summability and an almost-sure subsequence; finite-degree boundedness is not a global bound on multiplication. Source009 explicitly supplies strong measurability via positive-width approximants/countable limits. These correct the working explanation, not candidate source bytes.
+
+## Working04: operator core
+
+Exec96830 CLOSED0; raw26474B SHAf41be6d64b77bcc00dadba388616ac415e6487e1a6e588781eadfacbbce5fdaf; actual261395input+40953output/reason=302348. All816LF read. Root independently checked037 resolvent contraction using physical positivity and spectral homogeneity;039 ordered inverses, weighted inverse-root bound1/6, shifted numerical-range parabola and bounded CP functions;040 dimension-free Fock creation/annihilation;041 selected-word exactness only;044 tensor column bounds;045 complex adjoint sandwich and ending-only metrics with coincident fixed endpoints bundled. No candidate failure identified in these comparisons.
+
+Report qualifications: finite mode sums are Bessel contractions, not stationary full-covariance equality; preconditioned Fock multiplication is factored using the spatial H_j, not raw B without its two resolvents. The band is needed to make A0 bounded for CP; finite-mode/Hermite B is already bounded at positive heat width. Distinguish L_lambda numerical range from its shift L. Physical D_Gamma uses physical mass, distinct from spectral R_alpha; the all-model resolvent/Fock route uses the latter. Neither now nor later is independence/multiplication of scalar solution moments across overlapping blocks an input. Operator exponent a=alpha/2 differs from temporal alpha0 and inventory p=2-alpha0.
+
+## Next actual work and remaining gates
+
+MATH05 exec99470 was observed LIVE: six interval/point-upper targets046–051, input379305 bound, no grade requested. It must rederive fresh-color subspace invariance, vector Cauchy extraction, exact metric/factorial inventory and original point passage; no unproved driver085–093/S2/132/204 may fund051. Revalidate SAME handle, never restart on observation timeout.
+
+Original all-model215proof/241role/13join scope remains unchanged. These actual new mathematical turns address unfinished work; they are not another unchanged whole-verdict retry or a conjunction of component votes. All old global/raw outcomes remain. The current manuscript/PDF is unchanged and267 remains unadopted. Full MAIN/Kimi HIGH, exact primary-source applications, independent full visual, fresh cold, final build/adoption/wiki/handoff/private delivery remain OPEN. The failed maintenanceSummary2 attempt still has UNKNOWN usage; no all-request technical PASS for this lineage is claimed.
