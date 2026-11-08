@@ -17610,3 +17610,13 @@ Root read entire unchanged pixel27 HIGH report,102–105/all16views/no repairs. 
 ## 2026-11-08:visualcompact05 complete; primary502 strict-format correction ready
 
 Actualcompact05 explicit18messagecompletion,207387before/21723after,128409input/1801output below135396bound. Nextmain106–109 READY580139input/+311296=891435; union105only. Primary502 fullread native report literalHIGH/no repairs but strictINVALID at3backslashes; no acceptance,primaryunion1/35only. ONEformat-only continuation READY131586input/+311296=442882, exact3insertions allowed, no scientific/content/confidence changes. Originalraw retained. Failed archive stoppedbeforewrites, nothingcommitted; primary503 uncalledcountheld pendingnewcontext. DSdetail12 same actual live request; alloriginal gates remain.
+
+
+## 2026-11-08:genuine DSdetail12 complete and adjudicated
+
+Root read all30614bytes/sections0–8, compared actual sixproofs. No candidate-source failure found, covariance scaling independently reconstructed. Native276151input/51694output-plus-reasoning. Correct report-only self-gap orientation, multiplication commutation, background-factor identity scope, two false factorial equalities, missing local046derivation attribution and overly broad imports; actualsource unchanged. Evidence reviews/2026-11-08-ds-long-proof-detail12/. Original integratedMAIN+KimiHIGH stillowed. Actual222cumulative/18fresh; manualcontext04 READY360797input/+311296=672093, navigationonly/reset83freshaftercompletion. No overallgrade, no narrowed goal.
+
+
+## 2026-11-08:109 main pages accepted; primary format lineage verified
+
+Root read full pixel28 HIGH,106–109/all16views/no repairs. Union109/267pages,436views;158remain. Native37217input/3557output/context40774. Next110–113 READY599195input/+311296=910491. Primary502 syntax continuation byte-equals original plus exactly3backslashes, preserving every scientific byte and confidence; original raw retained, ONElineage. Root full original report read; primary1–4 acceptedwith explicit sourceMSC/email glyph uncertainty, union5/35pages/20views;30remain. NextCP5–8 actual-context prefix504 READY663015input/+311296=974311; prior503uncalled stalecount retained. All original proof/source/cold/adoption/delivery requirements unchanged.
