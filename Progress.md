@@ -17673,3 +17673,13 @@ Root read full13public; no verdict/confidence or sourcegap. Native686287input/89
 ## 2026-11-08:129 main and eight valid primary pages accepted
 
 Root read full pixel33 HIGH/commonvalidator/16views/no repairs. Union129/267pages/516views;138remain. Native37472input/3791output/context41263. Next130–133 READY599687input/+311296=910983. Primary506F142–145 HIGH/commonvalidator/16views/no repairs; validprimaryF138–145 union8/35pages/32views,27remain including9failed-schema pages. Native67060input/11154output/context78214. NextF146–149 READY636710input/+311296=948006. UngradedDS13 gives specific proof-work scope, notHIGH; alloriginalgates retained.
+
+
+## 2026-11-08:exact inference working14ready; original scope retained
+
+[held back: collaborators' unpublished work]
+
+
+## 2026-11-08:133 main and twelve valid primary pages accepted
+
+Root read full pixel34 HIGH/commonvalidator/all16views/no repairs. Union133/267pages/532views;134remain. Native57298input/4635output/context61933. Next134–137 READY620357input/+311296=931653. Primary507F146–149 HIGH/commonvalidator/16views/no repairs; validprimaryF138–149 union12/35pages/48views;23remain including9schemafailedpages. Native94321input/9888output/context104209. NextF150–153 READY662696input/+311296=973992. Exactmathematicalwork14prepared,no newoverallgrade/acceptance.

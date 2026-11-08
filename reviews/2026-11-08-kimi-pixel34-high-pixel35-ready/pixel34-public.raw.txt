@@ -1,0 +1,68 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "PDF_PAGE130 fullpages/page-130.png",
+    "PDF_PAGE130 bands/page-130-band-1.png",
+    "PDF_PAGE130 bands/page-130-band-2.png",
+    "PDF_PAGE130 bands/page-130-band-3.png",
+    "PDF_PAGE131 fullpages/page-131.png",
+    "PDF_PAGE131 bands/page-131-band-1.png",
+    "PDF_PAGE131 bands/page-131-band-2.png",
+    "PDF_PAGE131 bands/page-131-band-3.png",
+    "PDF_PAGE132 fullpages/page-132.png",
+    "PDF_PAGE132 bands/page-132-band-1.png",
+    "PDF_PAGE132 bands/page-132-band-2.png",
+    "PDF_PAGE132 bands/page-132-band-3.png",
+    "PDF_PAGE133 fullpages/page-133.png",
+    "PDF_PAGE133 bands/page-133-band-1.png",
+    "PDF_PAGE133 bands/page-133-band-2.png",
+    "PDF_PAGE133 bands/page-133-band-3.png"
+  ],
+  "checks": [
+    {
+      "claim": "P130: whole-page layout is clean and all fine mathematical glyphs on the page are legible across the four views.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Overview shows the end of the Proposition 17.5 proof closed by a right-aligned □, the bold heading '17.4 Same-noise mean-square columns', Proposition 17.6 (Column and adjoint-column maps) with its italic statement, and the start of its proof; folio 130 centered, margins regular, no clipping or collisions. Bands resolve: the display 4A_T h^{2−a}∫Φ_h(ξ,ξ−λ)Σ_j|U_j(ξ−λ)|²dξ; the map declaration m_{R,I},n_{R,I}: E^{real}_{s−γ} → L²(Ω;E^{real}_s) with 'real' superscripts and compound subscripts legible; (17.25) ⟨m_{R,I}z,w⟩_E = ℓ_R(I;z,w) = ⟨z,n_{R,I}w⟩_E; the inline symmetrization (g(ξ)+overline{g(−ξ)})/2 with the overline clear; and the finite-sum definitions m_N(z), n_N(z) with k≤N subscripts. Band-2 bottom cuts the proof sentence mid-line ('replace g(ξ)'); the complete lines are in band-3, a crop artifact only. Visible anchors: heading 17.4 and equation label (17.25)."
+    },
+    {
+      "claim": "P131: whole-page layout is clean and all fine mathematical glyphs on the page are legible across the four views.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Overview shows the end of the Proposition 17.6 proof with □, a remark paragraph, the two-line bold section heading '18 Finite Gaussian moments and whole-space Sobolev compactness', an unnumbered introduction, the bold heading '18.1 Finite Gaussian matrices with both variance powers', and Lemma 18.1 (Scalar power estimates) with two numbered displays; folio 131 centered, margins regular, no collisions. Bands resolve: the singleton bound 𝔼|ℓ_R(I;z,w−w_N)|² ≤ C_T h^{2−a}B_α(h)‖z‖²_{E_{s−γ}}‖w−w_N‖²_{E_s} with both norm subscripts distinct; the set membership d ∈ {1,2,3}; (18.1) u^θv^{1−θ} ≤ θu+(1−θ)v with superscripts θ and 1−θ crisp; (18.2) |x|^q|y|^{L−q} ≤ (q/L)|x|^L + ((L−q)/L)|y|^L with fraction coefficients legible; and the closing inline statement 𝔼Z^r ≤ F^r with blackboard 𝔼 clear. Band-3 top edge clips the very top of the section-18 heading glyphs; the complete heading is present in band-2 and the overview, a crop artifact only. Visible anchors: heading 18.1 and equation label (18.1)."
+    },
+    {
+      "claim": "P132: whole-page layout is clean and all fine mathematical glyphs on the page are legible across the four views.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Overview shows the proof of Lemma 18.1 ending with □, Lemma 18.2 (Two Hermitian trace bounds) with displays (18.3) and (18.4), its proof with two unnumbered sum displays ending with □, and Proposition 18.3 (Finite Gaussian matrix moment) with the X, V_out, V_in definitions at the bottom; folio 132 centered, margins regular, no collisions. Bands resolve: the derivative expression θ(1−t^{θ−1}) and the convention a⁰=1; (18.3) Re Tr(BY^qBY^{L−q}) ≤ Tr(B²|Y|^L); (18.4) Tr(D|Y|^{2m−2}) ≤ (Tr D^m)^{1/m}(Tr|Y|^{2m})^{(m−1)/m} with both fractional exponents crisp; b_{ji}=overline{b_{ij}} with the overline clear; the eigenvalue displays Σ_{i,j}|b_{ij}|²λ_j^qλ_i^{L−q} and Σ_i d_i^m ≤ Σ_{i,j}|U_{ij}|²θ_j^m = Tr D^m; the inline convexity inequality t^m ≥ s^m+ms^{m−1}(t−s); and V_out = Σ_k A_kA_k^*, V_in = Σ_k A_k^*A_k with star superscripts distinct. Band-2 bottom and band-3 top each cut one display row at the seam; both displays are complete in the adjacent band, crop artifacts only. Visible anchors: Lemma 18.2 and equation label (18.3)."
+    },
+    {
+      "claim": "P133: whole-page layout is clean and all fine mathematical glyphs on the page are legible across the four views.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Overview shows the statement continuation for even p=2m with numbered displays (18.5)–(18.6), the proof of Proposition 18.3 with the double-sum F display, a three-line inequality chain, (18.7), the Hermitian-dilation matrices, and a closing two-part trace display; folio 133 centered, margins regular, no clipping or collisions. Bands resolve: ‖A‖^p_{S_p}=Tr((A^*A)^m) with the Schatten subscript S_p; (18.5) (𝔼‖X‖^p_{S_p})^{1/p} ≤ √(p−1)((Tr V_out^m+Tr V_in^m)/2)^{1/p} with nested exponent 1/p and radical clear; (18.6) with ‖V_out^{1/2}‖_{S_p} terms; the Gaussian integration-by-parts identity 𝔼[g_kP(g)]=𝔼[∂_kP(g)]; F = Σ_kΣ_{q=0}^L 𝔼Tr(B_kY^qB_kY^{L−q}); the chain F ≤ (2m−1)𝔼Tr(D|Y|^{2m−2}) ≤ (2m−1)(Tr D^m)^{1/m}𝔼(Tr|Y|^{2m})^{(m−1)/m} ≤ (2m−1)(Tr D^m)^{1/m}F^{(m−1)/m} with exponents (m−1)/m legible on both lines; (18.7) 𝔼Tr Y^{2m} ≤ (2m−1)^m Tr D^m; the 2x2 dilation blocks (0 A_k; A_k^* 0), (0 X; X^* 0), and D=diag(V_out,V_in); and the closing Tr Y^{2m}=2Tr((X^*X)^m), Tr D^m = Tr V_out^m+Tr V_in^m. Band seams fall in ordinary text gaps here; no cut requires repair. Visible anchor: equation labels (18.5) and (18.7); no new heading appears, matching the page's continuation role."
+    },
+    {
+      "claim": "SCOPE_ALL_IMAGES: the review covers exactly the 16 attached views of PDF physical pages 130–133, each read as pixels.",
+      "verdict": "PASS",
+      "reason": "All four required views per page (one full-page overview plus three overlapping body bands) were present and inspected as images for pages 130, 131, 132, and 133. The overlapping bands account for every body region of each page, and the overviews supply margins, folios, headings, and display alignment. No view was missing, blank, duplicated, or mislabeled relative to its listed VIEW_ID; no other pages were assessed."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Band-edge partial content at specific seams — p130 band-2 bottom (proof line cut mid-sentence), p131 band-3 top (top edge of the section-18 heading glyphs), p132 band-2 bottom and band-3 top (one display row each) — every cut line or row is complete in the adjacent overlapping band or the overview; crop artifacts of the rendering views, not page defects.",
+      "The smallest nested scripts (fractional exponents 1/m and (m−1)/m on pp132–133, Schatten subscript S_p on p133, compound norm subscripts E_{s−γ} and E^{real}_{s−γ} on pp130–131) are legible only at band resolution; the overviews alone do not resolve them.",
+      "Page 133 carries no new section heading and opens mid-statement ('For even p = 2m ≥ 2, ...'); ordinary continuation, noted so the absence of a heading is not misread as a defect."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "Pixel-only review of the 16 attached images; no tools, filesystem, shell, or network were used and no hashes were recomputed; VIEW_ID and SHA256 strings are treated as out-of-scope provenance metadata bound by Root.",
+    "Scope is exactly PDF physical pages 130–133; no other pages were inspected and no claim is made about them.",
+    "In-text cross-references (e.g. (17.21), (17.22), (17.24), (17.25), (18.1)–(18.4), Lemmas 17.4 and 18.1–18.2, Propositions 17.5–17.6, Corollary 17.2, Section 19) were read as printed text only; their targets were not opened or verified.",
+    "Mathematical correctness, primary-source fidelity, and source/PDF provenance are outside this judgment; no formula was recomputed.",
+    "Fine-glyph verdicts rest on the three overlapping bands; the full-page overviews alone are insufficient for the smallest scripts, consistent with the stated role of the views.",
+    "Cold-read status, overall delivery acceptance, and all full-goal, mathematical, source, application, and adoption gates remain open and untouched by this pixel verdict."
+  ]
+}
