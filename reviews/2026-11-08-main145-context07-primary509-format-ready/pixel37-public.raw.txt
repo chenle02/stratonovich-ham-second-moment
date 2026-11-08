@@ -1,0 +1,68 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "PDF_PAGE142 fullpages/page-142.png",
+    "PDF_PAGE142 bands/page-142-band-1.png",
+    "PDF_PAGE142 bands/page-142-band-2.png",
+    "PDF_PAGE142 bands/page-142-band-3.png",
+    "PDF_PAGE143 fullpages/page-143.png",
+    "PDF_PAGE143 bands/page-143-band-1.png",
+    "PDF_PAGE143 bands/page-143-band-2.png",
+    "PDF_PAGE143 bands/page-143-band-3.png",
+    "PDF_PAGE144 fullpages/page-144.png",
+    "PDF_PAGE144 bands/page-144-band-1.png",
+    "PDF_PAGE144 bands/page-144-band-2.png",
+    "PDF_PAGE144 bands/page-144-band-3.png",
+    "PDF_PAGE145 fullpages/page-145.png",
+    "PDF_PAGE145 bands/page-145-band-1.png",
+    "PDF_PAGE145 bands/page-145-band-2.png",
+    "PDF_PAGE145 bands/page-145-band-3.png"
+  ],
+  "checks": [
+    {
+      "claim": "P142: whole-page layout is clean and all fine mathematical glyphs on the page are legible across the four views.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Overview shows the end of the Lemma 19.2 proof with □, Lemma 19.3 (Actual covariance coefficients) with displays (19.6) and (19.7), and its full proof ending in □; folio 142 centered, margins regular, no collisions. Bands resolve: the ODE clause v′ = λv − τ with the prime clear; 𝔼g_jg_k = δ_jk with the Kronecker subscript; (19.6) H_{j,R}(t,x) = ζ_R(x)∫_{u>0}|t−u|^{−a}∫Γ(dy)f_j(u,x−y)du with the restricted integral limit u>0 and exponent −a distinct; (19.7) 𝔼[W_ℂ(ζ_RF)g_j] = ∫H_{j,R}(t,x)F(t,x)dt dx with the ℂ subscript; the unmasked expression ∫_ℝ|v|^{−a}∫Γ(dy)f_j(t−v,x−y)dv; and the convolution Γ*f_j inline. Band-2 top cuts the 𝔼g_jg_k line and band-3 top cuts the italic coefficient line; both are complete in the adjacent band, crop artifacts only. Visible anchors: Lemma 19.3 and equation label (19.6)."
+    },
+    {
+      "claim": "P143: whole-page layout is clean and all fine mathematical glyphs on the page are legible across the four views.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Overview shows the bold heading '19.2 Gain, adjoints and actual localization', Lemma 19.4 (Deterministic coefficient operators) with displays (19.8)–(19.11), and its full proof ending in □; folio 143 centered, margins regular, no collisions. Bands resolve: (19.8) A_j(I)z = ∫_I S(−t)B(H_{j,R}(t))S(t)z dt; (19.9) ‖A_j(I)‖_{ℬ(E_r,E_{r+1})} ≤ C_{j,r,R,T}|I| with the script ℬ, its two-part space subscript, and the four-part constant subscript C_{j,r,R,T} all crisp; the gain chain E_{2s−r−1} → E_{2s−r} and E_{s−γ}; the ball subscript B_{2R+T+1}; (19.10) D_χA_j(I) = A_j(I) = A_j(I)D_χ; (19.11) 𝔼[g_jℓ_R(I;z,w)] = ⟨A_j(I)z,w⟩_E; the boundary flux v∂_n u − (v²+|∇u|²)/2 ≤ 0 with the normal derivative ∂_n and gradient modulus squared clear; S(±t); and (1−D_χ)z inline. Band-1 bottom cuts the proof's first line and band-2 top cuts the (19.9) display row; both are complete in the adjacent band, crop artifacts only. Visible anchors: heading 19.2 and equation label (19.9)."
+    },
+    {
+      "claim": "P144: whole-page layout is clean and all fine mathematical glyphs on the page are legible across the four views.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Overview shows the bold heading '19.3 Actual finite variances and first-chaos tails', the setup paragraph, (19.12), Lemma 19.5 (Both actual variances and their tails) with (19.13)–(19.15), and the start of its proof through the double-sum Parseval chain; folio 144 centered, margins regular, no collisions. Bands resolve: a_j = J_0A_j(I)J_0^{−1} and P_χ = J_0D_χJ_0^{−1} with the inverse superscripts; H_0 = L²(ℝ^d;ℝ²); (19.12) b_I = C_T h^{2−a}B_α(h); (19.13) V_out,N := Σ_{j≤N} a_ja_j^* ≤ b_ID_γ² and V_in,N := Σ_{j≤N} a_j^*a_j ≤ b_ID_γ² with star placement distinguishing the two orders; (19.14) T_out,N ≤ b_IB_out, T_in,N ≤ b_IB_in; (19.15) m_{R,I}(z) = Σ_j g_jA_j(I)z and n_{R,I}(z) = Σ_j g_jA_j(I)^{*,E}z with the stacked *,E superscript legible; ⟨X_N(I)z,w⟩_E = Σ_{j≤N} g_j𝔼[g_jℓ_R(I;z,w)] = 𝒫_Nℓ_R(I;z,w) with script 𝒫_N; and the chain Σ_{k≤K}Σ_{j≤N}|⟨A_j(I)e_k,w⟩_E|² = Σ_{k≤K}𝔼|⟨X_N(I)e_k,w⟩_E|² ≤ Σ_{k≤K}𝔼|ℓ_R(I;e_k,w)|² ≤ b_I‖w‖²_{E_{s−γ}} with both sum limits and the compound norm subscript clear. Band-1 bottom cuts the tails sentence; it is complete in band-2, a crop artifact only. Visible anchors: heading 19.3 and equation label (19.13)."
+    },
+    {
+      "claim": "P145: whole-page layout is clean and all fine mathematical glyphs on the page are legible across the four views.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Overview shows the Lemma 19.5 proof continuing with four unnumbered displays — the adjoint Parseval bound, the converse double-sum chain, the forward Parseval bound, and the first-chaos expansion — and closing with the V_{out,∞}, V_{in,∞} localization display; folio 145 centered, margins regular, no collisions. Bands resolve: Σ_{j≤N}‖A_j(I)^{*,E}w‖²_E = 𝔼‖X_N(I)^{*,E}w‖²_E ≤ b_I‖w‖²_{E_{s−γ}} with the *,E superscript; the converse chain ending Σ_{k≤K}𝔼|ℓ_R(I;z,e_k)|² ≤ b_I‖z‖²_{E_{s−γ}}; Σ_{j≤N}‖A_j(I)z‖²_E = 𝔼‖X_N(I)z‖²_E ≤ b_I‖z‖²_{E_{s−γ}}; the adjoint-gain clause at r = s+γ−1 with A_j^{*,E}; the norm identity ‖z‖_{E_{s−γ}} = ‖D_γJ_0z‖_{H_0}; Σ_j‖A_jz‖²_E = 𝔼‖m_{R,I}(z)‖²_E and m_{R,I}(z) = Σ_j g_jA_jz in L²(Ω;E); ‖T_Nv‖² ≤ ‖T_N‖⟨T_Nv,v⟩ → 0; and V_{out,∞} = P_χV_{out,∞}P_χ^*, V_{in,∞} = P_χ^*V_{in,∞}P_χ with the comma-infinity subscripts distinct. The page carries no numbered equation label — all displays are unnumbered while the text cites (17.21), (17.22), (19.10), (19.13), (19.15); noted so the absence of a label is not misread as a defect. Band-1 bottom, band-2 top, and band-3 top each cut content at the seam; all are complete in the adjacent band, crop artifacts only. Visible anchor: the unnumbered display m_{R,I}(z) = Σ_j g_jA_jz in L²(Ω;E)."
+    },
+    {
+      "claim": "SCOPE_ALL_IMAGES: the review covers exactly the 16 attached views of PDF physical pages 142–145, each read as pixels.",
+      "verdict": "PASS",
+      "reason": "All four required views per page (one full-page overview plus three overlapping body bands) were present and inspected as images for pages 142, 143, 144, and 145. The overlapping bands account for every body region of each page, and the overviews supply margins, folios, headings, and display alignment. No view was missing, blank, duplicated, or mislabeled relative to its listed VIEW_ID; no other pages were assessed."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Band-edge partial content at specific seams — p142 band-2 top (𝔼g_jg_k line) and band-3 top (italic coefficient line), p143 band-1 bottom (proof first line) and band-2 top ((19.9) display row), p144 band-1 bottom (tails sentence), p145 band-1 bottom, band-2 top (double-sum chain rows), and band-3 top (one text line) — every cut is complete in the adjacent overlapping band; crop artifacts of the rendering views, not page defects.",
+      "The smallest nested scripts (four-part subscript C_{j,r,R,T} and two-part space subscript ℬ(E_r,E_{r+1}) on p143, stacked superscript A_j(I)^{*,E} on pp144–145, comma-infinity subscripts V_{out,∞} on p145, compound norm subscripts E_{s−γ} throughout) are legible only at band resolution; the overviews alone do not resolve them.",
+      "Page 145 carries no numbered equation label — all displays are unnumbered while the text cites earlier labels; noted so the absence of a label is not misread as a defect."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "Pixel-only review of the 16 attached images; no tools, filesystem, shell, or network were used and no hashes were recomputed; VIEW_ID and SHA256 strings are treated as out-of-scope provenance metadata bound by Root.",
+    "Scope is exactly PDF physical pages 142–145; no other pages were inspected and no claim is made about them.",
+    "In-text cross-references (e.g. (17.13), (17.15), (17.21), (17.22), (19.6)–(19.15), Lemmas 19.2–19.4, Propositions 17.3, 17.5, 17.6, 18.7) were read as printed text only; their targets were not opened or verified.",
+    "Mathematical correctness, primary-source fidelity, and source/PDF provenance are outside this judgment; no formula was recomputed.",
+    "Fine-glyph verdicts rest on the three overlapping bands; the full-page overviews alone are insufficient for the smallest scripts, consistent with the stated role of the views.",
+    "Cold-read status, overall delivery acceptance, and all full-goal, mathematical, source, application, and adoption gates remain open and untouched by this pixel verdict."
+  ]
+}

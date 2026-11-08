@@ -17709,3 +17709,8 @@ WHOLEF001+CP8/9frames and5wholecurrentchallenges allbyteverified,actual14raw+ful
 
 
 2026-11-08:evidence-only transport correction: native14public has one trailing-space line, so gitdiffcheck warned in c1b0dc8 although the shell continued tocommit. Preserve that publishedhistory; rawbyte-identical gzip and roundtrip/hashbinding now store the report without altering science or originalnativefile. No model rerun/regrade/sourcechange. Futurecheck/commitsequence failsclosed.
+
+
+## 2026-11-08:145 main pages accepted; source509needs one syntax-only continuation
+
+Fullmain37 HIGH/commonvalidator/16views/no repairs, union145/267pages/580views;122remain. Native120489input/4852output/context125341. Compact07 READY133533input/+311296=444829. Primary509rawfullread literalHIGH but strictINVALID4backslashescapes; NOcredit, primary16/35only. Oneformat-only continuation READY85098input/+311296=396394, exact4insertions permitted, no newgrade/vote/sciencechange. Failed510prep stoppedbeforewrites/calls; separatemainprep valid. Rootparallel exactfiniteoperatorcheck supportsN2selectedcoefficients, rejectsN1 atz2h3 andretains selfpair; no Lean/generalproof/HIGHclaim, reviewer15didnotseeit. Actualoperator15stilllive, alloriginalgates retained.
