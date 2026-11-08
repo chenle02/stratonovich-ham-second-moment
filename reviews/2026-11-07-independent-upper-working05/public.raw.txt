@@ -1,0 +1,526 @@
+# Mathematical working turn 05
+
+This is an upper-bound reconstruction only. No source receipt, no overall verdict, no confidence. I carry the work04 clarifications explicitly and use \(a:=\alpha_0\) for the temporal exponent, \(\alpha\) for the spatial degree, and separate the operator-height exponent \(2-\alpha/2\) from the inventory exponent \(p=2-a\).
+
+---
+
+## 1. Falsification first: one interval, \(k=1\)
+
+Here there is one interval \(I\) of length \(h\), one real Gaussian color \(W\), and one physical amplitude \(\sigma\). Two energy splits are possible.
+
+### Cross \((r,q)=(1,1)\)
+
+Each copy uses the color exactly once, in degree one. On each copy the color is **fresh**: the first use of the color is a creation on its vacuum, and on that copy there is no background amplitude for this same color. Therefore:
+
+- the height function is \(\Lambda(t)=\lambda\), with no ending metric \((D_{\mathcal A}=1)\);
+- the insertion \(J\) is the norm-one step
+\[
+\|J_i v\|_{\mathcal H_\lambda}^2
+=\sigma^2\sum_j\|A_\lambda^{-1/2}S_bM_{e_j}S_b u\|^2
+\le\sigma^2 R_\alpha\lambda^{\alpha-2}\|u\|^2
+\]
+for the fresh vacuum \(1_i\otimes(u,w)\), using only the creation part; no occupied-color annihilation is given a vacuum bound.
+
+The time integral over the interval contributes \(\le h\); squaring the two-copy product and taking \(\lambda=k/T=1/T\), then \(\sigma^2\le c\,h^{-a}\), gives
+
+\[
+P_{(1,1)}\le R_\alpha\,\lambda^{\alpha-2}\sigma^2h^2
+\le R_\alpha\,T^{2-\alpha}\sigma^2h^2
+\le c\,R_\alpha T^{2-\alpha}h^{2-a}.
+\]
+
+### One-copy mean \((2,0)\) or \((0,2)\)
+
+Now the one copy uses the color twice; it is a **background** color with \(k_i=1\). The height is
+
+\[
+\Lambda(t)=\lambda+\omega\,\mathbf 1_{I}(t),\qquad \omega=\frac{1}{h},
+\]
+
+and there is **one ending charge**
+
+\[
+D_{\mathcal A}=1+\frac{1}{\lambda h}.
+\]
+
+The radius/factorial bookkeeping of the background color gives
+
+\[
+P_{(2,0)}\ \text{or}\ P_{(0,2)}
+\le R_\alpha\,\sigma^2h^{4-\alpha}\left(1+\frac{1}{\lambda h}\right)
+\le c\,R_\alpha\,h^{\beta}\left(1+\frac{T}{k h}\right),\qquad k=1.
+\]
+
+Expanding, this is \(c\,R_\alpha(h^\beta+T h^{\beta-1})\). Both contributions are retained: the cross term and the mean term are different cases, not two bounds for the same diagrams.
+
+---
+
+## 2. OWN047: fixed degree-split
+
+### 2.1 Color classification per copy
+
+For copy \(r\), the background set is
+
+\[
+\mathcal A_r=\{i\in\mathcal B:r_i>0\},\qquad
+\mathcal C=\{i:(r_i,q_i)=(1,1)\}.
+\]
+
+A cross singleton \(i\in\mathcal C\) has degree one on **each** copy and is never in either \(\mathcal A_r\): its insertions are fresh \(J\)-steps, not background amplitudes. A mean color \((2,0)\) belongs to \(\mathcal A_r\) and not to \(\mathcal A_q\); a higher color with both \(r_i,q_i>0\) belongs to both.
+
+### 2.2 The tensor subspaces \(\mathscr Z_S\)
+
+Let
+
+\[
+\mathscr Z_S=
+\bigotimes_{i\in\mathcal A}\mathscr G_i^{\le N_i}
+\otimes\bigotimes_{i\in S}\mathscr G_i^{(1)}
+\otimes\bigotimes_{i\in\mathcal C\setminus S}\mathscr G_i^{(0)}
+\]
+
+with the spatial band and all omitted colors understood in their vacuum. The potential
+
+\[
+V_z(t)=\sum_{i\in\mathcal A}z_i\sigma_i\mathbf 1_{I_i^T}(t)B_i
+\]
+
+acts on the colors in \(\mathcal A\) only, while the cross factors of \(S\)-colors are passive. Hence:
+
+- each segment evolution \(P_j=P_z(\tau_j,\tau_{j-1})\) preserves \(\mathscr Z_S\), including vectors entangled with earlier/background colors, because \(B_i\) carries the identity on the cross-color factors;
+- each metric identity \(\mathscr I_j\) likewise preserves \(\mathscr Z_S\);
+- the total projection \(P\) is the identity on the vector along the selected word because each color degree never exceeds its cutoff \(N_i\) (cross colors stay in degree one \(\le N_i=2\), background colors stay in degree \(\le N_i=2k_i\)).
+
+Consequently the norm bounds for the full product do not commute \(P\) through arbitrary vectors; only the selected coefficient is identified.
+
+### 2.3 Fresh-color insertion norm
+
+For a cross color \(i\notin S\), \(J_i=(0,\sigma_i B_i u)\) maps \(\mathscr Z_S\) into \(\mathscr Z_{S\cup\{i\}}\) by a single creation. Using orthogonality \(\mathbb E[g_{ij}g_{il}]=\delta_{jl}\),
+
+\[
+\|J_i(1_i\otimes(u,w))\|_{\mathcal H_\rho}^2
+=\sigma_i^2\sum_{j=1}^{m_i}\|A_\rho^{-1/2}S_bM_{e_{ij}}S_bu\|^2_{\mathscr R_i\otimes L^2_x}.
+\]
+
+The column inequality of OWN044, valid for the finite projection:
+
+\[
+\sum_{j=1}^{m_i}\|A_\rho^{-1/2}S_bM_{e_{ij}}S_bu\|^2
+\le R_\alpha\rho^{\alpha-2}\|u\|^2,
+\]
+
+because the left side is a nonnegative sub-sum of the bound in terms of the full basis (the finite-mode functions do not have to be pointwise stationary or complete). Using \(\|A_\rho^{-1}\|\le\rho^{-2}\) and the two-component phase norm,
+
+\[
+\|J_i\|\le\sigma_i\sqrt{R_\alpha}\,\rho^{(\alpha-2)/2}.
+\]
+
+At the insertion time \(t_i\) the height is at most \(\lambda\) on the fresh-color step, so
+
+\[
+\|J_i\|\le\sigma_i\sqrt{R_\alpha}\,\lambda^{(\alpha-2)/2}.
+\]
+
+No annihilation of an occupied color is estimated: for cross colors the vacuum hypothesis is used; for background colors the Hermite cutoff with exact finite-word exactness handles creation and annihilation together.
+
+### 2.4 Common partition and the ordered word
+
+The common partition consists of all background endpoints of the \(I_i^T=(a_i,b_i)\) and all cross insertion times \(t_i\), with coincident fixed endpoints **bundled as a set**; only the null set of coinciding variable insertion times with each other or with fixed endpoints is discarded. Each background color contributes at most two points and each cross color one point, so the number of segments is
+
+\[
+M\le2|\mathcal A|+m+1\le3k+1.
+\]
+
+On the segment \((\tau_{j-1},\tau_j)\) the height \(\Lambda_j\) is constant, and by OWN044/045
+
+\[
+\|P_j\|_{\mathcal H_{\Lambda_j}\to\mathcal H_{\Lambda_j}}
+\le100e^{2\Lambda_j(\tau_j-\tau_{j-1})}.
+\]
+
+The **height integral is single**: \(\sum_j\Lambda_j\Delta\tau_j=\lambda T+\sum_{i\in\mathcal A}\omega_i(b_i-a_i)\le k+\sum_{i\in\mathcal A}k_i\le2k\). Adding insertion points refines the partition but does not change \(\Lambda\), so the height integral and metric product are not repeated.
+
+### 2.5 Metric change, per copy
+
+At a jump with ending set \(E_j\), starting set \(S_j\), remaining set \(R_j\),
+
+\[
+\frac{\Lambda_j}{\Lambda_{j+1}}
+=\frac{\lambda+\sum_R\omega_i+\sum_E\omega_i}
+{\lambda+\sum_R\omega_i+\sum_S\omega_i}
+\le\prod_{i\in E_j}\left(1+\frac{\omega_i}{\lambda}\right).
+\]
+
+An initial start creates no loss; a final return to \(X_\lambda\) charges all intervals ending at \(T\); each connected interval ends at exactly one bundled cut. Hence the copy-metric product is
+
+\[
+D_{\mathcal A}=\prod_{i\in\mathcal A}\left(1+\frac{k_i}{\lambda h_i}\right).
+\]
+
+There is no extra copy at an insertion time or at an overlapping interval's start.
+
+### 2.6 The word bound
+
+With \(B_j^{\text{cut}}=J_i\) at an insertion cut and the identity otherwise, the chronological word
+
+\[
+\mathcal W_{\mathcal A}(z,\boldsymbol t)
+=\mathscr I_MP_MB_{M-1}^{\text{cut}}\cdots B_1^{\text{cut}}\mathscr I_1P_1\mathscr I_0
+\]
+
+has norm
+
+\[
+\|\mathcal W_{\mathcal A}(z,\boldsymbol t)v\|_\lambda
+\le M_kD_{\mathcal A}\|v\|_\lambda
+\prod_{i\in\mathcal C}c_i,
+\qquad
+c_i=\sigma_i\sqrt{R_\alpha}\,\lambda^{(\alpha-2)/2}.
+\]
+
+### 2.7 Insertion cube with coefficient one
+
+Variation of constants about the background evolution \(P_z\) gives
+
+\[
+\Phi_{\mathcal A}(z)=\left[\prod_{i\in\mathcal C}y_i\right]
+\mathcal M^{\text{cut}}_{(z,y,0)}(T)v
+=\sum_{\pi}\int_{D_\pi}\mathcal W_{\mathcal A}(z,\boldsymbol t)v\,\mathrm d\boldsymbol t,
+\]
+
+where \(D_\pi=\{t_{\pi_1}<\cdots<t_{\pi_m}\}\) are the permutation simplices. They partition the insertion cube up to null diagonals, and
+
+\[
+\sum_\pi|D_\pi|=\prod_{i\in\mathcal C}|I_i^T|
+\le\prod_{i\in\mathcal C}h_i.
+\]
+
+There is **no** \(m!\) or \(1/m!\): each ordered Dyson word has coefficient one and the geometric decomposition carries the total volume exactly. Hence
+
+\[
+\|\Phi_{\mathcal A}(z)\|_\lambda
+\le M_kD_{\mathcal A}\|v\|_\lambda
+\prod_{i\in\mathcal C}c_ih_i.
+\]
+
+### 2.8 Vector Cauchy before inner product
+
+The coefficient is an ordinary power-series coefficient of an entire vector function. By the normalized vector Cauchy formula on the polytorus of radius \(\varrho_i\),
+
+\[
+\|U_{\boldsymbol r}v\|_\lambda
+\le M_kD_{\mathcal A_r}\left(\prod_{i\in\mathcal B}\varrho_i^{-r_i}\right)
+\left(\prod_{i\in\mathcal C}c_ih_i\right)\|v\|_\lambda .
+\]
+
+Then Cauchy–Schwarz on the two copies, with
+
+\[
+\|w\|_{1/T}\le k\|w\|_\lambda,\qquad \|v\|_\lambda\le\|v\|_{1/T},
+\]
+
+gives the prefactor \(k^2M_k^2D_{\mathcal A_r}D_{\mathcal A_q}\), the radius exponent \(r_i+q_i=2k_i\), and exactly one metric factor per background color per copy. For \(d_i=2\sqrt{2k_i+1}\sqrt{R_\alpha}\),
+
+\[
+d_i^2=4(2k_i+1)R_\alpha\le12k_iR_\alpha,
+\qquad
+\varrho_i^{-2k_i}
+=\left(\frac{\sigma_i^2d_i^2}{\delta_a^2}\right)^{k_i}
+\left(\frac{h_i}{k_i}\right)^{(4-\alpha)k_i}
+\le(12\delta_a^{-2})^{k_i}
+\frac{(R_\alpha\sigma_i^2h_i^{4-\alpha})^{k_i}}{(k_i!)^{3-\alpha}},
+\]
+
+using \(k_i!\le k_i^{k_i}\). This proves
+
+\[
+\begin{split}
+|\langle U_{\boldsymbol r}v,U_{\boldsymbol q}v\rangle|
+\le
+k^2C_{\text{split}}^kR_\alpha^k\|v\|_{1/T}^2
+&\prod_{i\in\mathcal C}(\sigma_i^2h_i^2\lambda^{\alpha-2})
+\\&\times
+\prod_{i\in\mathcal B}\frac{(\sigma_i^2h_i^{4-\alpha})^{k_i}}{(k_i!)^\nu}
+\left(1+\frac{k_i}{\lambda h_i}\right)^{\ell_i},
+\end{split}
+\]
+
+with
+
+\[
+C_{\text{split}}=100^8e^8\max\{1,12\delta_{\alpha/2}^{-2}\}.
+\]
+
+No full cutoff propagator is identified with the uncut one; only selected finite coefficients are used.
+
+---
+
+## 3. OWN046/048: inventory
+
+### 3.1 Parameter inequalities
+
+\[
+\beta=4-\alpha-a,\qquad \nu=3-\alpha,\qquad p=2-a.
+\]
+
+Since \(0<a<1\) and \(\alpha+a<2\),
+
+\[
+\beta-\nu=1-a>0,
+\qquad
+\beta=4-\alpha-a>2,
+\qquad
+p=2-a>1.
+\]
+
+The operator-height exponent \(2-\alpha/2\), used in OWN047 radii, is unrelated to the inventory exponent \(p\).
+
+### 3.2 The three singleton terms
+
+With \(\lambda=k/T\) and \(h\le LT/i\), the mean term has two powers and the cross term one:
+
+- mean \(h^\beta\): \(T^\beta L^\beta i^{-\beta}\);
+- mean \(T h^{\beta-1}/k\): \(T^\beta L^{\beta-1}k^{-1}i^{-(\beta-1)}\);
+- cross \(\lambda^{\alpha-2}\sigma^2h^2\) with \(\sigma^2\le c h^{-a}\):
+\[
+\lambda^{\alpha-2}h^{2-a}
+=(k/T)^{\alpha-2}(LT/i)^{2-a}
+=T^{\beta}L^{2-a}k^{\alpha-2}i^{-p}.
+\]
+
+After extracting \(T^\beta\) and absorbing \(L\) powers in \(C\),
+
+\[
+v_i=i^{-\beta}+k^{-1}i^{-(\beta-1)}+k^{\alpha-2}i^{-p}.
+\]
+
+The second coefficient here uses \(\nu+\alpha-2=1\) implicitly in the source bookkeeping; the direct derivation above gives it.
+
+### 3.3 Higher-order weights
+
+For \(l\ge2\),
+
+\[
+R_\alpha^lh^{\beta l}\left(1+\frac{l}{\lambda h}\right)^2/(l!)^\nu,
+\]
+
+with \(\lambda h=kL/i\), \(1+l/(\lambda h)\le1+li/k\), giving
+
+\[
+b_{i,l}=\frac{i^{-\beta l}(1+li/k)^2}{(l!)^\nu}.
+\]
+
+All split counts are absorbed by \(C^k\) and the \(3^k\) factor; the ordinary multiplication identity
+
+\[
+\sum_{\sum k_i=k}\prod_iw_{i,k_i}=[z^k]\prod_i\left(\sum_{l\ge0}w_{i,l}z^l\right)
+\]
+
+supplies no multinomial penalty.
+
+### 3.4 Coarse/fine at \(z=\theta k^\nu\)
+
+At \(z=\theta k^\nu\), \(\theta=1/4\),
+
+\[
+v_iz=
+\theta k^\nu i^{-\beta}
++\theta k^{\nu-1}i^{-(\beta-1)}
++\theta k^{\nu+\alpha-2}i^{-p}
+=:P_i+\theta k^{\nu-1}i^{-(\beta-1)}+Q_i.
+\]
+
+For \(i\le k\), \(k^{\nu-1}i^{-(\beta-1)}\le k^\nu i^{-\beta}=z^{-1}P_i\), so the middle singleton is dominated by \(P_i\). The higher terms absorb \((1+li/k)^2\le(1+l)^2\le4^l\), producing \(S_\nu(4P_i)\) with
+
+\[
+\nu>1\Longrightarrow S_\nu(x)=\sum_{l\ge0}\frac{x^l}{(l!)^\nu}\le e^{\nu x^{1/\nu}},
+\]
+
+so
+
+\[
+\sum_{i\le k}\log S_\nu(4P_i)\le Ck.
+\]
+
+For \(i>k\), the first-plus-middle singleton tail is
+
+\[
+\theta k^\nu\sum_{i>k}i^{-\beta}+\theta k^{\nu-1}\sum_{i>k}i^{-(\beta-1)}
+\le Ck^{\nu+1-\beta}=Ck^{a}.
+\]
+
+The third singletons \(\prod(1+Q_i)\) contribute a logarithmic sum bounded by
+
+\[
+\int_0^\infty\log(1+Ax^{-p})\,\mathrm dx=Ck^{1/p}\le Ck.
+\]
+
+The fine higher-order terms for \(i>k\), using \(P\le1/4\) and the uniform estimate
+
+\[
+\sum_{l\ge2}\frac{P^l(1+ly)^2}{(l!)^\nu}\le CP^2(1+y^2),
+\]
+
+sum to \(C(k^{2\alpha_0-1}+k^{2\alpha_0})\le Ck\). Multiplying the \(e^{Ck}\) for each part,
+
+\[
+\prod_{i=1}^M\left(1+v_iz+\sum_{l\ge2}b_{i,l}z^l\right)\le e^{Ck}
+\qquad\text{at }z=\theta k^\nu.
+\]
+
+Positivity of the coefficients then bounds the \(k\)-th coefficient by \(z^{-k}e^{Ck}=\theta^{-k}k^{-\nu k}e^{Ck}\le C^k/(k!)^\nu\).
+
+This is a uniform coefficient bound; the finite-smoothed entire identification uses \(v_{\max}\), which is finite for the fixed family and smoothing but may depend on them and is not part of the uniform constant.
+
+---
+
+## 4. OWN049/050: terminal identification and tails
+
+At fixed positive spatial smoothing and finite mode/band projections, the terminal-chain mass is
+
+\[
+M_n(T)=\int_0^T(T-s)M_{n-1}(s)\,\mathrm ds
+\Longrightarrow M_n(T)=\frac{T^{2n}}{(2n)!}.
+\]
+
+The Gaussian law of the finite projected fields is not needed to be stationary for the Wick formula: differentiating the joint characteristic function of the \(m+n\) vertex variables gives the coefficient-one sum over unordered pair partitions, with an odd total degree vanishing. Each pairing contributes the exactly two-chain diagram with two separate deterministic Green roots; unequal, empty, and self-paired terms are included.
+
+For Green smoothing in \(d=3\), the mixed-width convergence must hold for **all** mixed Green moments, not only diagonals. Product measures \(G_{h,\eta_1}(\mathrm dy)G_{h,\eta_2}(\mathrm dz)\) converge weakly, with common masses \(h^2\), off the finitely many time cut points, and the bounded continuous Gaussian covariance factors dominate, so mixed \(\eta\)-pairs converge too.
+
+The order of limits is critical:
+
+1. at fixed finite coefficient word and finite interval family, remove finite modes and band projections first, using the finite-degree multiplication bound and dominated time integration;
+2. only then apply finite propagation, spatial stationarity, and the positive pointwise Wick comparison of OWN051.
+
+Positive-width order summation uses the absolute \(L^2\) convergence of the finite-width series, independent of any unsmoothed tail theorem.
+
+Amplitude-\(2\) financing: apply the same interval bound with physical amplitude \(a=2\), i.e. \(R_\alpha\mapsto4R_\alpha\). At scaling \(r=2\),
+
+\[
+\sup_{\epsilon,\delta>0}\mathbb E|u^{\epsilon,\delta}(2;T,x)|^2\le B(T;2)<\infty.
+\]
+
+Then \(4^n\mathbb E|Y_n^{\epsilon,\delta}|^2\le B(T;2)\), so
+
+\[
+\|Y_n^{\epsilon,\delta}\|_2,\|X_n\|_2\le B(T;2)^{1/2}2^{-n},
+\qquad
+\sum_{n>N}^{\phantom{n}}\le\frac{B(T;2)^{1/2}2^{-(N+1)}}{1-2^{-1}},
+\]
+
+a uniform geometric tail passing to the original source widths. No infinite-depth \(K_\infty\)-covariance field is posited; \(K_\infty\) is only the pointwise supremum of integrands in monotone limits.
+
+---
+
+## 5. OWN051: all-model correct-scale upper bound
+
+### 5.1 Nested dyadic grids
+
+Choose \(H_0\) with \(6T\le H_0<12T\), \(h_j=H_02^{-j}\), and the three shifted nested grids with endpoints
+
+\[
+h_j(n+(-1)^jt),\qquad n\in\mathbb Z,\quad t=0,\tfrac13,\tfrac23.
+\]
+
+Because \(3t\in\mathbb Z\), each child grid is nested in its parent. For any \(s\ne r\in[0,T]\), choose \(j\) with \(3|s-r|<h_j\le6|s-r|\); at this scale, the mutual boundary spacing of the three grids is \(h_j/3>|s-r|\), so at least one grid interval contains both points. Therefore, off the diagonal,
+
+\[
+|s-r|^{-a}\le6^{a}
+\sum_{\text{three grids},\,|I|\le H_0}|I|^{-a}\mathbf 1_I(s)\mathbf 1_I(r)=:K_\infty(s,r).
+\]
+
+### 5.2 Sorted independent colors
+
+The intervals meeting \([0,T]\) at levels \(0,\dots,j\) number at most
+
+\[
+3\left(\frac T{h_j}+2\right)(j+1)\le78\frac T{h_j},
+\]
+
+so after sorting by decreasing length, \(h_i\le78T/i\). Give each color the amplitude \(\sigma_i^2\le6^a h_i^{-a}\). These are **finite independent Gaussian colors used only as a positive covariance surrogate**; they are not independent physical time blocks delivering independent solution moments.
+
+### 5.3 Initial bump and spatial averaging
+
+Choose \(f_T\in C_c^\infty(\mathbb R^d)\), \(0\le f_T\le1\), \(f_T=1\) on \(B_{T+1}\), support in \(B_{T+2}\), velocity zero. For \(|y|+s<T+1\),
+
+\[
+G_s*f_T(y)=\int G_s(\mathrm dz)f_T(y-z)=s,
+\qquad C_sf_T(y)=1.
+\]
+
+Along a chain ending at \(x\in B_1\) at time \(T\), every earlier time-space point satisfies \(|y|+s\le|x|+T<T+1\), so the free initial-data factor is exactly one. Duhamel induction identifies the position from \((f_T,0)\) with the constant-data position on \(B_1\). Spatial stationarity of the constant-data model gives
+
+\[
+|B_1|\,\mathbb E|u_{J,\epsilon}(T,0)|^2
+\le\mathbb E\|u_{f_T,J,\epsilon}(T)\|_{L^2_x}^2
+\le e\,|B_{T+2}|\exp\{CR_\alpha^{1/\nu}T^{\beta/\nu}\}.
+\]
+
+Dividing by \(|B_1|\) and using \(|B_{T+2}|/|B_1|=(T+2)^d\) gives the \(d\)-dimensional volume factor; no \(H^1\) point trace, algebra, or monotonicity in \(f\) is used.
+
+### 5.4 Positive Wick comparison and finite-depth limits
+
+The surrogate field has covariance \(K_J(s,r)\Gamma_\epsilon(y-z)\). By OWN049, at fixed \(J,\epsilon\), every two-chain Wick term has the same terminal Green kernels and pairings as the source term, with covariance factor \(K_J\Gamma_\epsilon\ge0\). The chain reversal is irrelevant before comparing; no stationarity in time is needed. The source covariance obeys
+
+\[
+0\le\gamma_\delta^0(s-r)\Gamma_\epsilon(y-z)\le|s-r|^{-a}\Gamma_\epsilon(y-z)
+\le K_\infty(s,r)\Gamma_\epsilon(y-z).
+\]
+
+Since \(K_J\uparrow K_\infty\), for fixed partial order \(N\),
+
+\[
+\mathbb E|U_N^{\epsilon,\delta}(T,x)|^2
+\le\lim_{J\to\infty}\mathbb E|V_{N,J}^\epsilon(T,x)|^2
+\le\sup_J\mathbb E|u_{J,\epsilon}(T,x)|^2\le B(T).
+\]
+
+This is a monotone limit of positive finite diagrams, not an infinite-depth Gaussian field and not covariance order for arbitrary initial phases.
+
+### 5.5 Amplitude financing and tail passage
+
+Multiplying the source noise by a real amplitude \(a\) changes \(R_\alpha\to a^2R_\alpha\) and preserves all degrees and parameter-only constants, giving
+
+\[
+\mathbb E|u^{\epsilon,\delta}(a;T,x)|^2
+\le e(T+2)^d\exp\{C(a^2R_\alpha)^{1/\nu}T^\kappa\}.
+\]
+
+Apply this at \(a=2\) to obtain \(B(T;2)\), then OWN050 with \(r=2\) passes the uniform geometric tail from positive widths to the unsmoothed series. Taking the limit in the width-regularized bound at \(a=1\) yields
+
+\[
+\boxed{
+\mathbb E u^2(T,x)
+\le e(T+2)^d
+\exp\!\left\{C R_\alpha^{1/(3-\alpha)}
+T^{(4-\alpha-a)/(3-\alpha)}\right\},
+\qquad T\ge1.
+}
+\]
+
+Zero noise is direct: \(R_\alpha=0\) and \(u=1\). The bound preserves the original covariance amplitude through \(R_\alpha\), and covers all \(d=1,2,3\), including anisotropic, singular, and white branches.
+
+---
+
+## 6. Dependency audit and first defect
+
+The chain is:
+
+\[
+\text{OWN044,045}
+\Rightarrow \text{OWN047}
+\Rightarrow \text{OWN046,048}
+\Rightarrow \text{OWN049,050}
+\Rightarrow \text{OWN051}.
+\]
+
+The \(u\) constructed in OWN051 by its canonical series is the **same** \(u\) used in the mild construction OWN009 and the fixed-order construction OWN006; no 085–093 Gaussian operator driver, no S2-finiteness theorem, no 132 variational conclusion, and no 204 intrinsic closure enters as a parent. OWN051 is the independent correct-scale route.
+
+**First specific failed implication:** none located. The main points that earlier drafts compressed — the subspace invariance of \(\mathscr Z_S\), the single height integral, the bundled endpoint metric, the coefficient-one insertion cube, the \(m!/1/m!\) absence, the correct number-operator input/output degree in OWN040, and the finite-mode non-stationarity — are all consistent after the explicit reconstructions above.
+
+## Remaining mathematical gaps
+
+1. The proof that the fixed-endpoint bundling in OWN045 survives coincident grid endpoints across the three dyadic grids is a combinatorial step supplied by the common partition; it should be written out for the specific \(t=0,\tfrac13,\tfrac23\) grid family, although the underlying product bound is correct.
+2. The per-family quantifier of the pairing envelope remains per-family and is not upgraded; the upper chain respects it, but the resulting constants are never constructed as a single measure-independent partition.
+3. No estimate uniform in \(T\) over covariance shapes is asserted; the upper bound is pointwise in \(T,\Gamma\), with only the exponent and the \(R_\alpha\)-dependence explicit.
+4. The sharp intrinsic constant and the full lower bound remain outside this upper-bound route.
