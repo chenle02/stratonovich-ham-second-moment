@@ -17655,3 +17655,11 @@ Root read full pixel31 HIGH/all16views/no repairs and commoncanonicalvalidator p
 ## 2026-11-08:125 main pages accepted; visualcompact06ready
 
 Root read complete pixel32 HIGH/commonvalidator/all16views/no repairs. Union125/267pages/500views;142remain. Native117591input/4504output/context122095. Compact06 READY130287input/+311296=441583, actualcompletion owed before126–129. Primary505F138–141 actuallyrunning with explicitcanonicalLISTcontract; acceptedprimary0/35. MAINnewMEDIUMunaccepted, ungradedexact-inference diagnosis13prepared, fulloriginalgoal retained.
+
+
+## 2026-11-08:first valid primary batch505 accepted; next506ready
+
+Root read full505 HIGH report, commoncanonicalvalidator passes,16exactviewIDs/hashpins,5checks/4minor/6limits/no repairs. AcceptF138–141(Teschl80,81,100,101), validprimary4/35pages/16views;31remain including9schemafailedpages. Native37596input/13363output/context50959. NextF142–145 READY609449input/+311296=920745. Actualmaincompact06 complete18messages,203989before/22035after,reported123300input/2106output below130287conditionalbound; prior accountingunknowns retained. DSdiagnosis13 actuallystarted samehistory,no grade requested. Originalallmodel gatesopen.
+
+
+2026-11-08:afteractualmaincompact06, distinct126–129/pixel33 READY580477input/+311296=891773. Independentmainunion125/267 retained;142remain. Sameoriginalreviewer/nativeprocess, no newsetup or narrowing.
