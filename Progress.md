@@ -17635,3 +17635,8 @@ Root read all pixel29 HIGH report,110–113/all16views/no repairs. Union113/267p
 ## 2026-11-08:117 main pages and nine primary pages visually accepted
 
 Root read full pixel30 HIGH,114–117/all16views/no repairs. Union117/267pages/468views;150remain. Native77187input/4126output/context81313. p116 comma-spacing editorial minor retained, frozenbytesunchanged. Next118–121 READY639708input/+311296=951004. FullnewMAINafterdetail12 actuallystarted once705023input in originalsameDSsession; verifiedlive, no result yet. Separateprimary504 CP5–8 completeHIGH/all16views/no repairs; primaryF130–137plusF163 union9/35pages/36views,26remain. Native120626input/14071output/context134697. Compact09 READY142889input/+311296=454185, actualcompletion owed beforeTeschlF138–141. Original all-model and finalgates unchanged.
+
+
+## 2026-11-08:CORRECTION—primary report schema invalid; accepted count reset to0
+
+Common report-contract validator rejects primary501, primary502syntaxcontinuation and primary504 because source_coverage is an object, not requiredLISTstrings. Root had omitted that common validator for these reports; exactIDs/hash/HIGH checks alone were insufficient. Withdraw prior1/5/9page primaryacceptance credit: validPRIMARY35count0/35, all35stillowed. Native findings and syntaxlineage preserved unchanged, no normalization/schemawaiver. Recoveractualimage reports underexplicitlistcontract withcommonvalidation, no extra confidence vote. Mainaccepted117/267 and livewholeMAINrequest unaffected. Evidence reviews/2026-11-08-primary-schema-credit-correction/.
