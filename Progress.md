@@ -17520,3 +17520,13 @@ Evidence reviews/2026-11-08-kimi-pixel19-high-pixel20-ready/. Root read full val
 Evidence reviews/2026-11-08-kimi-pixel20-high-pixel21-ready/. Root read full valid canonicalPASS_WITH_NOTES/HIGH/no repairs,5checks/16IDs/5minor/5limits. Union1–77/308images;190mainpages owed. Reported82325input/8374output/ctx90699; next78–81 READY649110input/+311296=960406. Source08 still actualLIVE sameexec24373.
 
 HELD first-integrated83 base-v2 is exact fixed83 whole bodies,579887ordinary before challenges/context/framing, NOproviderauthority/admission/delivery. It keeps full215OWN/241roles/13joins and explicit215OWN+26non-OWN+13join substantive rows; actual role ledger215OWN/24CONTEXT/2EXTERNAL. No extra cumulative credit: actual109/222,08(71)inflight,09(42)prepared. All original scope/fresh83/source/fullvisual/cold/integratedHIGH/delivery obligations remain.
+
+
+## 2026-11-08: historical/source08 adjudicated;180 original targets actually delivered
+
+Evidence reviews/2026-11-08-kimi-historical-controls-working08/. Root read full42733chars, separately recovered tool-truncatedsections6–8.71NEWwhole bodies completed; actual180/222, fresh0/83;42original09bodies remain. No candidate-source failure in this ungraded scope. Root replayed decisivecounterexamples and corrected report-only slotfactor,137reciprocal, conditional-rangeIDscope, coefficientLambda_st versus timeconstant, labelversuscovarianceamplitude andnegative-dualcertificate qualifications. Actualsource unchanged; originalrawstatuses immutable. Reported342403input/43356output/ctx385759. Compact06 READY393951input/+311296=705247, actualcompletion owed before09. All83fresh/final215/241/13/source/integratedMAIN+KimiHIGH/fullvisual/cold/adoption/delivery remain open.
+
+
+## 2026-11-08:81 independent HIGH pages; last42 original sources prepared
+
+Evidence reviews/2026-11-08-kimi-pixel21-high-pixel22-ready/. Root read full valid canonicalPASS_WITH_NOTES/HIGH/no repairs,5checks/16IDs/6minor/5limits. Union1–81/324images;186mainpages owed. Reported106721input/9578output/ctx116299; next82–85 READY674704input/+311296=986000, check earlycompaction after actualresponse. Source09-v2 prepared42whole original bodies+FULL08raw/Rootdisposition+boundedstaticwhite/unitactionfalsification, no contextbudget/authority/modelcall yet. Actualscientific180/222,not222; all original/fullfresh83/integratedHIGH/source/fullvisual/cold/adoption/delivery gates remain.
