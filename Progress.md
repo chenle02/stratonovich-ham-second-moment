@@ -17714,3 +17714,13 @@ WHOLEF001+CP8/9frames and5wholecurrentchallenges allbyteverified,actual14raw+ful
 ## 2026-11-08:145 main pages accepted; source509needs one syntax-only continuation
 
 Fullmain37 HIGH/commonvalidator/16views/no repairs, union145/267pages/580views;122remain. Native120489input/4852output/context125341. Compact07 READY133533input/+311296=444829. Primary509rawfullread literalHIGH but strictINVALID4backslashescapes; NOcredit, primary16/35only. Oneformat-only continuation READY85098input/+311296=396394, exact4insertions permitted, no newgrade/vote/sciencechange. Failed510prep stoppedbeforewrites/calls; separatemainprep valid. Rootparallel exactfiniteoperatorcheck supportsN2selectedcoefficients, rejectsN1 atz2h3 andretains selfpair; no Lean/generalproof/HIGHclaim, reviewer15didnotseeit. Actualoperator15stilllive, alloriginalgates retained.
+
+
+## 2026-11-08:exactoperator15 complete; fullreport mathematics adjudicated
+
+Root read all29319bytes/468lines, A/B/Csections/import/boundaries. Native391934input/26870output-plus-reasoning within437117bound. No candidate-source failure found; explicitgeneral phase/Taylor/selectedcutoff, coupled-tensorprefix andstrong-word/actualcoefficient derivations supplied. Correct substantialREPORT-side slips: negative-axis/sqrtbranch, normalizedHermitefactor, compressedB/stageidentity, duplicatedH_A, qboundvs equality, prematureh_i inWORDbound (shrinkintervalcounter), occupied-formtyping, globalL2dominator andfree/simplex counting. Sourcecorrect; earlierRootZ_Sshorthand clarified. No HIGH/errorfreecertificate fromungradedworkingreport. Evidence reviews/2026-11-08-exact-operators15-working/. Nextwholejudgment mustreadfullcurrentcorrectionsandoriginalscope, notseekconfidence-onlyretry.
+
+
+## 2026-11-08:primary509exactsyntaxlineage accepted; nextvisualbatches ready
+
+509nativecontinuation exactly4backslashinsertions-only, commonvalidator/high/16IDs/no repairs; allscientificbytes unchanged, ONElineage. AcceptF154–157, validprimary20/35pages/80views;15remain includingoriginal9schemafailedpages. Native52348input/3994output/context56342 below85098bound. NextF158–161 READY614789input/+311296=926085. Maincompact07actualcomplete18messages/context21836,reported126546input/1900output; next146–149 READY580246input/+311296=891542; mainaccepted145/267. Exactoperator15allreadandadjudicated; DScontext06READY463842input/+311296=775138,22freshbeforereset. Alloriginalgoal/gatesretained.
