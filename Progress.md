@@ -17587,3 +17587,6 @@ ActualKimi compact08 completed8messages/context42117,708384input/5204output belo
 Root read full pixel24 native HIGH report: pages90–93,16views,no repairs. Union1–93/372views;174main pages remain. Empty idle-REPL polls had been misread as ongoing work; normal native files already existed, recovered public is byte-identical, no restart. Next94–97 READY622504input/+311296=933800.
 
 Root read full primary501 PASS_WITH_NOTES/HIGH report: F163/FHphysical200printed190, allfourviews including Borell11.6/footnote3, no repairs. Primary1/35 accepted,34remain; this does not regrade MEDIUM mathematics. DS manualcontext03 terminal verified; genuine detail12 whole18sources/fourwholechallenges counted309075input/+311296=620371, no final grade requested. Original all-model and full MAIN/KimiHIGH/source/cold/adoption/private-delivery gates remain open.
+
+
+2026-11-08: DS detailed proof12 actually started once in same owned session,309075 input bound; no confidence request or automatic next call. Main pixel25 actually started once94–97. Primary502 prepared distinct CP physical1–4/F130–133,16views,614398 input plus311296 reserve. No new reviewer/session/setup; original whole-goal gates remain.
