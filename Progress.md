@@ -17706,3 +17706,6 @@ WHOLEF001+CP8/9frames and5wholecurrentchallenges allbyteverified,actual14raw+ful
 ## 2026-11-08:141 main pages accepted; operatorcheck15ready
 
 [held back: collaborators' unpublished work]
+
+
+2026-11-08:evidence-only transport correction: native14public has one trailing-space line, so gitdiffcheck warned in c1b0dc8 although the shell continued tocommit. Preserve that publishedhistory; rawbyte-identical gzip and roundtrip/hashbinding now store the report without altering science or originalnativefile. No model rerun/regrade/sourcechange. Futurecheck/commitsequence failsclosed.
