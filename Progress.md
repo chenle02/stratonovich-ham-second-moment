@@ -17495,3 +17495,13 @@ Root provenance clarification after actual file inspection: F129 is the bibliogr
 Evidence reviews/2026-11-08-kimi-current-comparison-working07/ and reviews/2026-11-08-kimi-visual-compact03-pixel18-ready/. Root read full23699char07, entire actualmain diff and full215proof. Independent215 source/application chain and actual059 unequal-damping formulas reconstructed; no candidate-source failure. Correct report-only coefficient parenthesis and gap-vs-vertex self ratio(4, not2); source correct. Actual109/222cumulative/1fresh83,113original bodies remain08–09. Reported363619input/47125output/ctx410744. Compact05 READY418936input/+311296=730232, actualcompletion still owed. No overallgrade or adoption.
 
 Visualcompact03 actualcompletion20messages/context21681; reported125540input/1775output below132473bound. Five-page prep halted atexisting4page guard, ZEROmodelcalls/files; retain4page batches. Pixel18distinct66–69/16views READY580086input/+311296=891382;70stillowednextscope. Existing65HIGHpages/260views only,202pagesowed. Original fullgoal/gates intact.
+
+
+## 2026-11-08: actual mathcompact05 complete; original history/control08 ready
+
+Evidence reviews/2026-11-08-kimi-compact05-historical-controls08-ready/. Native explicit8messagecompletion/context43610; reported412042input/6718output below418936bound. Actual109cumulative retained/fresh0/83. Source08-v2 READY71NEWwhole original bodies+FULL07raw/Rootdisposition;298370ordinary+43610context+32768=374748input/+311296=686044. Successfuldelivery would180/222, not grade/attention;42original09bodies still owed. Root checked actualpublishedCHuTheorem1.2(1.9)p2147 gives signedEu^p forintegerp, so staticactualmean import is legitimate, distinct from absolute(1.10). No source/PDF edit or original full-goal gate promotion.
+
+
+## 2026-11-08:69 independent HIGH pages; next source audit ready
+
+Evidence reviews/2026-11-08-kimi-pixel18-high-pixel19-ready/. Root read full valid canonicalPASS_WITH_NOTES/HIGH/no repairs,5checks/16IDs/4minor/5limits. Union1–69/276images,198mainpages owed. Reported37168input/6013output/ctx43181. Next70–73 READY601583input/+311296=912879, no authority yet. Original scope/MAIN+KimiHIGH/source/fullvisual/cold/adoption/delivery remain open; adoptedsource/PDF unchanged.
