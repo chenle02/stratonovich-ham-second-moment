@@ -17688,3 +17688,21 @@ Root read full pixel34 HIGH/commonvalidator/all16views/no repairs. Union133/267p
 ## 2026-11-08:137 main and sixteen valid primary pages accepted
 
 Root read full pixel35 HIGH/commonvalidator/all16views/no repairs. Union137/267pages/548views;130remain. Native77968input/5290output/context83258. Next138–141 READY641658input/+311296=952954. Primary508F150–153 HIGH/commonvalidator/16views/no repairs; validprimaryF138–153 union16/35pages/64views,19remain including9schemafailedpages. Native120307input/9921output/context130228. Context10 READY138420input/+311296=449716, actualcompletion owed beforeF154–157. ExactDSwork14 sameactual live request; no newgrade or sourcechanges.
+
+
+[held back: collaborators' unpublished work]
+
+Root read all18108bytes/393lines, compared actualsourceformulas. Native251628input/17681output-plus-reasoning; no candidate-source failure. Complete remaining-pair induction/Dirichlet/occupation mass, published5.13p2factor+gradientcrosswalk and explicitBCW/BC2016calibration now publiclyderived. Correct report-only finalfactor2wording, extraneousbridgeword, zero-ratequalification and unverifiedbroadBCCreference; actualsourceunchanged. No grade/HIGH. Next042/047/048exactoperatorwork15heldbase9whole sources; actual14raw+fulladjudmustappendbeforecount. Evidence reviews/2026-11-08-exact-probability-import14-working/. Originalall-model/finalgatesremainopen.
+
+
+## 2026-11-08:exactoperatorwork15ready afteractual14adjudication
+
+WHOLEF001+CP8/9frames and5wholecurrentchallenges allbyteverified,actual14raw+fullRootadjudappended. Count437117input/+311296=748413,actual222cumulative/14freshbefore. Exact042Taylor/velocity/cutoff,047correctcoupled-tensorinvariance and048strongword/actualcoefficientidentification assigned,no verdict/confidence or automaticnext. Originalfullgoal unchanged, no source/Lean factcountchange. Evidence reviews/2026-11-08-exact-operators15-ready/.
+
+
+2026-11-08:actualprimarycontext10 complete14messages/context23320;reported131534input/3298output below138420bound. MixedF154–157 Teschl272–274+FH13 READY581829input/+311296=893125. Validprimary16/35retained,19remain; no scientificgradepromotion.
+
+
+## 2026-11-08:141 main pages accepted; operatorcheck15ready
+
+[held back: collaborators' unpublished work]
