@@ -17645,3 +17645,13 @@ Common report-contract validator rejects primary501, primary502syntaxcontinuatio
 ## 2026-11-08:121 main pages accepted; corrected primary review ready
 
 Root read full pixel31 HIGH/all16views/no repairs and commoncanonicalvalidator passes. Union121/267pages/484views;146remain. Native97319input/4238output/context101557. Next122–125 READY659980input/+311296=971276. ActualmathKimi compact09 complete14messages/167338before/24853after,135976input/5020output below142889bound, cumulative222/fresh0 preserved. NextprimaryF138–141 Teschl READY583353input/+311296=894649 with explicit canonicalLISTcoverage; validprimarycredit remains0/35 until validated returned reports. Original prior9schemafailure/retraction retained. WholeMAIN sameactual live request, no result/grade.
+
+
+## 2026-11-08:new MAIN judgment PASS_WITH_NOTES/MEDIUM; HIGH remainsopen
+
+[held back: collaborators' unpublished work]
+
+
+## 2026-11-08:125 main pages accepted; visualcompact06ready
+
+Root read complete pixel32 HIGH/commonvalidator/all16views/no repairs. Union125/267pages/500views;142remain. Native117591input/4504output/context122095. Compact06 READY130287input/+311296=441583, actualcompletion owed before126–129. Primary505F138–141 actuallyrunning with explicitcanonicalLISTcontract; acceptedprimary0/35. MAINnewMEDIUMunaccepted, ungradedexact-inference diagnosis13prepared, fulloriginalgoal retained.
