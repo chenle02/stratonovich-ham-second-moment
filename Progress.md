@@ -17530,3 +17530,10 @@ Evidence reviews/2026-11-08-kimi-historical-controls-working08/. Root read full4
 ## 2026-11-08:81 independent HIGH pages; last42 original sources prepared
 
 Evidence reviews/2026-11-08-kimi-pixel21-high-pixel22-ready/. Root read full valid canonicalPASS_WITH_NOTES/HIGH/no repairs,5checks/16IDs/6minor/5limits. Union1–81/324images;186mainpages owed. Reported106721input/9578output/ctx116299; next82–85 READY674704input/+311296=986000, check earlycompaction after actualresponse. Source09-v2 prepared42whole original bodies+FULL08raw/Rootdisposition+boundedstaticwhite/unitactionfalsification, no contextbudget/authority/modelcall yet. Actualscientific180/222,not222; all original/fullfresh83/integratedHIGH/source/fullvisual/cold/adoption/delivery gates remain.
+
+
+## 2026-11-08: last42 original source bodies ready;85 independent HIGH pages
+
+Evidence reviews/2026-11-08-kimi-compact06-final-historical09-ready/ and reviews/2026-11-08-kimi-pixel22-high-visual-compact04-ready/. Actualmathcompact06 completed8messages/context44901, reported387091input/8002output below393951bound. Actual180cumulative/fresh0/83. Source09-v2 READY42whole original bodies+FULL08raw/Rootdisposition+boundedstaticwhite/unitactionfalsification;247110ordinary+44901context+32768=324779input/+311296=636075. No09authority/prompt yet. Successfulwholebodycoverage222 wouldnotcomplete original215/241/13 judgment/final83fresh/HIGH/cold/adoption/delivery.
+
+Pixel22 fullvalidcanonicalPASS_WITH_NOTES/HIGH/no repairs read,5checks/16IDs/5minor/5limits. Union1–85/340images,182mainpages owed. Reported132315input/9785output/ctx142100. Visualcompact04 READY150292input/+311296=461588; actualcompletion owed before86–89. No source/PDF changes or originalscope/grade promotion.
