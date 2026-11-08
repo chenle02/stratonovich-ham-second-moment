@@ -17580,3 +17580,10 @@ Native667866input/39161output/ctx707027 within699869bound;samek3max/tool0,prioru
 Evidence reviews/2026-11-08-ds-context03-primary-pilot-ready/. ExistingDSownedprocess/actualsid revalidatedREADONLY/idle/deepseekv4pro with actual222/83sourceRESTstate, no generation. Same-route no-tailmanualcontext03 READY733002input/+311296=1044298, runtimecompactionpromptpinmatched. NextDSproofwork genuinely targets allsteps005/033/040/042/047/048 andcovariancescaling, based onactualKimiMEDIUMdepth/normalizationissues; NOT a confidence-onlywhole retry or narrowedcompletion. No DSpostauthorityyet.
 
 ActualKimi compact08 completed8messages/context42117,708384input/5204output below715219bound; same222cumulative/fresh0/83. Existingmathprocess imagecapabilityTrue. SeparateprimarypilotF163/FHphysical200printed190,4exactimages,READY206601input/+311296=517897; unchangedcanonicalpixelrunnerreused, no newworker/model/globalsetup. No nativeimagecall/credityet. Pendingmainpixel24samevisualhandle stillrunning; no timeoutrestart. Priorall263MEDIUM/fenced and bothDSMAINLOW unaccepted, fulloriginalgates retained.
+
+
+## 2026-11-08:93 main pages and one primary page visually accepted; long-proof verification prepared
+
+Root read full pixel24 native HIGH report: pages90–93,16views,no repairs. Union1–93/372views;174main pages remain. Empty idle-REPL polls had been misread as ongoing work; normal native files already existed, recovered public is byte-identical, no restart. Next94–97 READY622504input/+311296=933800.
+
+Root read full primary501 PASS_WITH_NOTES/HIGH report: F163/FHphysical200printed190, allfourviews including Borell11.6/footnote3, no repairs. Primary1/35 accepted,34remain; this does not regrade MEDIUM mathematics. DS manualcontext03 terminal verified; genuine detail12 whole18sources/fourwholechallenges counted309075input/+311296=620371, no final grade requested. Original all-model and full MAIN/KimiHIGH/source/cold/adoption/private-delivery gates remain open.
