@@ -17423,3 +17423,10 @@ Evidence reviews/2026-11-08-kimi-pixel10-high-pixel11-ready/. Fullcanonicalrepor
 ## 2026-11-08:41 independent HIGH pages; source05 still LIVE
 
 Evidence reviews/2026-11-08-kimi-pixel11-high-pixel12-ready/. Fullreport read, PASS_WITH_NOTES/HIGH/no repairs,5checks/16IDs/2minor/4limits. Union1–41/164images;226pages owed. Reported111318input/3914output/ctx115232. Next42–45 READY673610input/+311296=984906; nextusage must trigger earlycompact if>=120000. Source05 still sameactualmathsessionexec24373. Source06–09 remaining original bodies prepared3/18/71/42whole targets respectively, no new modelcall/authority/coverage. Source/PDF unchanged, original full-goal gates retained.
+
+
+## 2026-11-08: initial/calibration working05 returned; exact report attribution corrected
+
+Evidence reviews/2026-11-08-kimi-initial-calibration-working05/. Source05 end_turn; Root read full32112chars/all source/42oldchecks/roughform sections. No candidate-source failure found, no grade. Report proof numbers drift; exact38-label crosswalk separately preserves actual001Jensen/003white/036physical/052mean/059clock/060screen, raw unchanged. Selected public checks do not equal allfull reproofs; actual059 separate Laplace derivation still owed in final judgment. Correct white k2 t6, Dirichlet denominator and general-frequency/r0 notation. Clarify LOCAL Fourier conventions, including earlier overbroad Root spatial-factor wording:036/F015 ordinary, F003/F016 unitary. Source has no amplitude defect. Rough closure constant-column convergence follows L4/3–L4 duality.
+
+Actual89/222 cumulative and7/83fresh;133 original bodies remain. Native reported390491input/71125output/context461616. Compact03 READY469808input/+311296=781104, actual completion still owed before source06. Full raw05/crosswalk/disposition will be whole challenges there. Original MAINsecondLOW/fullscope/source/fullvisual/cold/delivery remain open. Pixel12pages42–45 LIVE original visualsessionexec40714; last accepted41pages/164images.
