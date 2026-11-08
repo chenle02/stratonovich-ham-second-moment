@@ -17361,3 +17361,10 @@ Kimi actual4-image page15 pilotexec40714 returned canonicalPASS_WITH_NOTES/HIGH,
 [held back: collaborators' unpublished work]
 
 Pixel02 returned canonicalPASS_WITH_NOTES/HIGH, Root read all5checks/16viewIDs/3minor/4limits. No requiredrepair; actual16PNG hashes/sourcePDF bind. Reportedturn38610+2763=41373 fromnative totals57867/6020. Page4 TOC-ending wording is local, not a global completeness claim (continuespage5). New Kimi pixel union exactlypages1,2,3,4,15 =5/267/20images; other262owed. Pixel03 pages5–8 READY/16distinct frozenviews/conditional599762input/+311296=911058. Pending this push/GW then separate one-shot source04 and pixel03 authorities. MainDSsecondLOW unchanged; no overallHIGH/source/PDF adoption/cold/delivery promotion.
+
+
+## 2026-11-08: lower/intrinsic source04 LIVE; independent pixel union9/267
+
+Actual source04 ONEprompt launched in original Kimi session/exec24373 after applied compact01,51whole targets/conditional261005input. Re-poll SAME handle; no report yet/no automatic retry. The resulting total83cumulative targets (if completion verifies) must not be confused with the distinct operative83fresh obligation: currently source04 supplies51fresh and the other139 original cumulative bodies remain owed. Original MAIN secondLOW remains open; no third unchanged confidence retry.
+
+Evidence reviews/2026-11-08-kimi-pixel03-high-pixel04-ready/: pixel03exec40714 returned canonicalPASS_WITH_NOTES/HIGH/no repairs, Root read all5checks/16IDs/3minor/4limits. Native reporteddelta57373+3592=60965, totals115240/9612; no hidden-attempt completeness claim. Distinct Kimi HIGH pixel unionpages1–8,15 =9/267/36images;258pagesowed. Nextpages9–12/16frozenviews READY,conditional619350input/+311296=930646. Same existing canonical ACP transport; local one-shot glue has per-call authority/hash/fence and NO loop/automatic next/retry. Pending this push/GW then one next image prompt. Source/PDF unchanged, mathematical/source/fullvisual/cold/delivery gates remain.
