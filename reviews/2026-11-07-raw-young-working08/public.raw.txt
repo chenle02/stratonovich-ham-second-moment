@@ -1,0 +1,877 @@
+# Mathematical working turn 08
+
+This is an independent reconstruction of the chain `PROOF085–111` from the four whole modules `F006` (actual Gaussian operator driver), `F007` (canonical source drivers), `F008` (masked/displacement moments), and `F009` (Young evolution with constant data). It is not a grade or verdict. All fixed \(R,T\) limits are kept before any time asymptotics, and no later sharp-constant, tube, or intrinsic comparison result is used as a parent.
+
+Carried forward verbatim as constraints:
+
+- No scalar restart of the wave problem.
+- No claim that positive-cutoff source points lie in \(\Phi(H_W)\) or that a cutoff field is a function of \(W\) alone.
+- No independence of the full heat residual from the source.
+- No finite-projection spatial stationarity is used to make a covariance comparison.
+- No point trace of \(H^{1/2}\) data is taken.
+
+The two reporting corrections I accepted from Root for this turn are:
+
+1. In my work07 summary I wrote Schatten membership “iff” against `P:cutoff-singular-values`; the source proves only the **sufficient** direction \(p\gamma>d\), and explicitly claims no endpoint necessity. The actual source text is correct.
+2. In my work07 reproduction of `L:gaussian-trace-bounds`, the weighted pointwise inequality was written with interchanged weights. The correct scalar bound is:
+
+\[
+|\lambda_j|^q|\lambda_i|^{L-q}
+\;\le\;\frac qL|\lambda_j|^{L}+\frac{L-q}{L}|\lambda_i|^{L}
+\qquad (0\le q\le L).
+\]
+
+Because the two resulting double sums are symmetric after interchanging \(i,j\),
+
+\[
+\sum_{i,j}|b_{ij}|^2\bigl[\tfrac qL|\lambda_j|^{L}
++\tfrac{L-q}{L}|\lambda_i|^{L}\bigr]
+=
+\Bigl(\tfrac qL+\tfrac{L-q}{L}\Bigr)
+\sum_{i,j}|b_{ij}|^2|\lambda_i|^{L}
+=\operatorname{Tr}(B^2|Y|^{L}),
+\]
+
+so the stated trace bound is unchanged. Both reporting slips are not source defects.
+
+---
+
+## 0. Two opening consistency examples
+
+### 0.1 Zero frequency
+
+Throughout the driver layer all sine quotients are the continuous function \(b_0(t)=t\), and the normalized free kernel at \(\xi=\eta=0\) is
+
+\[
+\mathcal K(t;0,0)
+=
+\begin{pmatrix}
+-t&-t^2\\1&t
+\end{pmatrix}.
+\]
+
+There is no division by zero. The constant-phase channel uses exactly this structure: the free evolution of constant data \((c_1+c_2)}\) is
+
+\[
+S_F(t)(e,c_1,c_2)=(S(t)e,\ c_1+t\,c_2,\ c_2),
+\]
+
+with the finite-dimensional block
+
+\[
+J_t=\begin{pmatrix}1&t\\0&1\end{pmatrix},\qquad J_tJ_s=J_{t+s}.
+\]
+
+This is the zero-frequency content of the wave group, and it is the reason the constant displacement column is retained in the extended phase.
+
+### 0.2 One singular-covariance example
+
+The admissible example already worked in the variance layer remains
+
+\[
+d=2,\qquad\alpha=1,\qquad\Gamma=\delta_0(\mathrm dx_1)\,\mathrm dx_2.
+\]
+
+Its spectral measure is
+
+\[
+\mu=(2\pi)^{-1}\mathrm d\xi_1\,\delta_0(\mathrm d\xi_2).
+\]
+
+Every covariance pairing here is the measure pairing
+
+\[
+B_\Gamma(f,g)=\int_{\R}\Bigl(\int_\R f(x_1,x_2)\,\mathrm dx_2\Bigr)
+\Bigl(\int_\R g(x_1,y_2)\,\mathrm dy_2\Bigr)\,\mathrm dx_1,
+\]
+
+never a pointwise density. This is the exact class in which `P:masked-quotient-obstruction` exhibits a raw \(W\)-null test whose masked variance is strictly positive. Consequently:
+
+- the physical mask \(\zeta_R\) is used **after** covariance convolution, not inside \(\Gamma*f\);
+- the auxiliary completion does not define a multiplication operator on the original \(W\)-quotient;
+- positive-cutoff source point features are not asserted to live in \(\Phi(H_W)\).
+
+That is the correct singular-model boundary carried into the source layer.
+
+---
+
+# Part I. The actual Gaussian operator driver (`F006`, PROOF085–093)
+
+## PROOF085 — `L:driver-noise-basis`
+
+**Locale.** For a compact spatial box \(K\) and compact time interval \([0,L]\),
+
+\[
+|\langle F,G\rangle_{H_W}|
+\le |K|\,\Gamma(K-K)\frac{2L^{1-a}}{1-a}
+\|\|F(t)\|_\infty\|_{L^2(0,L)}
+\|\|G(t)\|_\infty\|_{L^2(0,L)}.
+\]
+
+This uses only spatial differences in \(K-K\). Countable dense collections at rational boxes and rational mollifier scales make the null-quotient separable without assuming injectivity of the covariance form.
+
+**Infinite-dimensionality.** Choose real compact smooth \(q\ge0\) with \(q\ge1\) on \(B_{2L+1}\). Then
+
+\[
+Q_{\rm sp}=\int\Gamma(\mathrm dy)\int q(x)q(x-y)\,\mathrm dx
+\ge |B_{L+1}|\,\Gamma(B_L)>0.
+\]
+
+For a signed compact time bump \(\tau\),
+
+\[
+\|\tau\otimes q\|_{H_W}^2=Q_{\rm sp}\|\tau\|_a^2 ,
+\]
+
+and positivity of the Laplace-factorized temporal norm for every nonzero \(\tau\) shows infinitely many independent time bumps inject into \(H_W\). Gram–Schmidt gives a real orthonormal basis \((f_j)\), whose evaluations \(g_j=W(f_j)\) are i.i.d. \(N(0,1)\) by the isonormal characteristic functions. No white \(H_W\)-valued vector is introduced.
+
+## PROOF086 — `L:driver-covariance-coefficients`
+
+The literal coefficients are
+
+\[
+H_{j,R}(t,x)=\zeta_R(x)\int_{u>0}|t-u|^{-a}
+\int\Gamma(\mathrm dy)f_j(u,x-y)\,\mathrm du .
+\]
+
+The mask is **post-convolution**. Because \(f_j\) is compact smooth and \(|v|^{-a}\) is locally integrable for \(a<1\), every derivative may be moved onto the smooth test on compact finite-time strips, giving smoothness and bounded spatial derivatives with support in \(B_{2R}\). For an admitted wave test \(F=1_Iv_z\overline{G_w}\),
+
+\[
+\mathbb E[W_{\mathbb C}(\zeta_RF)g_j]
+=\int H_{j,R}(t,x)F(t,x)\,\mathrm dt\,\mathrm dx .
+\]
+
+This is exactly the physical covariance identity, and the \(H_W\)-representative assertion follows by testing against every compact smooth \(F\). The key structural fact is that the coefficient depends on the \(H_W\) class of \(f_j\), so the basis choice is only a representative choice.
+
+## PROOF087 — `L:driver-gain-localization`
+
+For \(I\subset[0,T]\),
+
+\[
+A_j(I)z=\int_I S(-t)B(H_{j,R}(t))S(t)z\,\mathrm dt .
+\]
+
+The multiplier \(H_{j,R}(t)\) is bounded on every \(H^r\), continuously in \(t\), and the free group is strongly continuous and bounded on every \(E_r\) on finite horizons. The operator \(B(H_{j,R}(t))\) maps \(E_r\to E_{r+1}\): the second entry is a smooth multiplier applied to the displacement component. Hence
+
+\[
+\|A_j(I)\|_{\mathcal B(E_r,E_{r+1})}
+\le C_{j,r,R,T}|I|.
+\]
+
+The \(E_s\)-dual of \(E_r\) is \(E_{2s-r}\), up to the customary component swap built into the phase pairing, so the dual gain is \(E_{2s-r-1}\to E_{2s-r}\). This is exactly what is needed: with \(\gamma<1\), both \(A_j\) and \(A_j^{*,E}\) act from \(E_{s-\gamma}\) to \(E\). For a fixed Schwartz pair,
+
+\[
+\mathbb E[g_j\ell_R(I;z,w)]=\langle A_j(I)z,w\rangle_E .
+\]
+
+**Localization.** Finite propagation in the shrinking cone, applied to both entries of the free group, gives
+
+\[
+\partial_t(v^2+|\nabla u|^2)-\operatorname{div}(v\nabla u)\le0\ \text{for }v=\partial_tu,
+\]
+
+which for vanishing data on an enlarged region gives vanishing displacement there. By time reversal and support chain,
+
+\[
+D_\chi A_j(I)=A_j(I)=A_j(I)D_\chi,
+\qquad \chi=1\ \text{on }B_{2R+T+1}.
+\]
+
+The input/output support computation uses both displacement and velocity entries; it is not a scalar restart.
+
+## PROOF088 — `L:driver-actual-variances`
+
+This is the central step connecting the two-variance Hilbert–Bessel bound of the variance layer to the finite Gaussian operator tails. In physical coordinates \(a_j=J_0A_j(I)J_0^{-1}\), the finite sums satisfy
+
+\[
+V_{{\rm out},N}:=\sum_{j\le N}a_ja_j^*\le b_1D_\gamma^2,
+\qquad
+V_{{\rm in},N}:=\sum_{j\le N}a_j^*a_j\le b_1D_\gamma^2,
+\qquad
+b_1=C_T\,h^{2-a}B_\alpha(h).
+\]
+
+The proof is genuinely a projection onto the constructed \(W\)-basis, not an abstract Gaussian assumption. For each real Schwartz \(w\),
+
+\[
+\sum_{j\le N}\|A_j(I)^{*,E}w\|_E^2
+=\mathbb E\|X_N(I)^{*,E}w\|^2
+\le\mathbb E|\ell_R(I;\cdot,w)\text{-type raw form}|^2,
+\]
+
+with the inner bound supplied by the **output** Hilbert–Bessel direction of `P:wave-two-variances`, and symmetrically with the **input** direction. The two inequalities are therefore genuinely two separate variance channels. The finite families also satisfy both \(P_\chi\)-localizations inherited from `L:driver-gain-localization`.
+
+From the same two directions, the column identities hold:
+
+\[
+m_{R,I}(z)=\sum_j g_jA_j(I)z,
+\qquad
+n_{R,I}(z)=\sum_j g_jA_j(I)^{*,E}z
+\quad\text{in }L^2(\Omega;E).
+\]
+
+Passing the quadratic forms to the limit gives the bounded positive operators \(V_{{\rm out},\infty},V_{{\rm in},\infty}\) and tails \(T_{{\rm out},N},T_{{\rm in},N}\) with
+
+\[
+T_{{\rm out},N}\le b_1B_{\rm out},\qquad
+T_{{\rm in},N}\le b_1B_{\rm in},
+\qquad
+T_{\cdot,N}\to0\text{ strongly}.
+\]
+
+The bounded positive-to-norm step uses \(\|T_Nv\|^2\le\|T_N\|\langle T_Nv,v\rangle\), so the strong quadratic-form decay implies norm decay of the tails.
+
+**Important structural point.** The variance bound is a **projection onto the raw noise basis, then phase Parseval, then the already-proved two-variance estimate**; it is not a Gaussian-law-only or one-variance extraction.
+
+## PROOF089 — `L:driver-dominated-tails`
+
+If \(0\le T_N\le B\), with \(B\) positive compact in \(S_m\), \(m\ge1\), and \(T_N\to0\) weakly, then:
+
+- finite spectral projections \(Q\) of \(B\) and positive quadratic Cauchy–Schwarz give \(\|T_N\|\to0\);
+- \(\lambda_j(T_N)\le\lambda_j(B)\) and dominated \(\ell^m\) summation give
+
+\[
+\operatorname{Tr}T_N^m\to0.
+\]
+
+No order of operator powers \(T_N^m\le B^m\) is asserted; the argument is purely eigenvalue-wise.
+
+## PROOF090 — `L:driver-gaussian-tail-average`
+
+For finitely many compact \(Z_\ell\) with both variances in \(S_{q/2}\), the finite matrix bound with the average of both trace powers passes through finite-rank compression and singular-value Fatou:
+
+\[
+\mathbb E\Bigl\|\sum_\ell g_\ell Z_\ell\Bigr\|_{S_q}^q
+\le(q-1)^{q/2}
+\frac{\operatorname{Tr}V_{\rm out}^{q/2}
++\operatorname{Tr}V_{\rm in}^{q/2}}2 .
+\]
+
+No infinite Gaussian series or \(S_q\)-Bochner convergence is assumed at this stage.
+
+## PROOF091 — `L:driver-interval-limit`
+
+For a fixed short interval \(I\), the finite sums \(X_N(I)\) are actual compact operators satisfying the hypotheses of `P:localized-finite-variance` and `C:finite-gaussian-operators`. Therefore their finite Gaussian moments obey, uniformly in \(N\),
+
+\[
+(\mathbb E\|X_N(I)\|_{S_q}^q)^{1/q}
+\le\sqrt{q-1}\,\sqrt{C_T}\,h^{1-a/2}B_\alpha(h)^{1/2}\|K_\chi\|_{S_q},
+\qquad q\ \text{even},\ q\gamma>d.
+\]
+
+For \(M>N\), the tail \(Y_{N,M}:=\sum_{j=N+1}^{M}g_jA_j(I)\) has variance differences dominated, respectively, by \(T_{{\rm out},N}\) and \(T_{{\rm in},N}\). Hence
+
+\[
+\sup_{M>N}\mathbb E\|Y_{N,M}\|_{S_q}^q
+\le(q-1)^{q/2}
+\frac{\operatorname{Tr}T_{{\rm out},N}^{q/2}
++\operatorname{Tr}T_{{\rm in},N}^{q/2}}2
+\longrightarrow0 .
+\]
+
+Since the operator norm is at most the \(S_q\) norm, this is a genuine \(L^q(\mathscr B(E))\) Cauchy property, not merely uniform moments. A summable \(L^1\) subsequence lives in the separable closed real span \(\mathscr F_I\) of the \(A_j(I)\), producing a limit \(X_R(I)\) on the original probability space. Compactness is inherited by the compact operators being norm-closed.
+
+Its Schwartz rows equal the actual raw \(W\)-completed forms \(\ell_R(I;\cdot,\cdot)\) in \(L^2\), by the original closed-first-chaos projection and uniqueness of the \(L^2\) limit. Joint Gaussianity is by characteristic functions of finite linear functionals.
+
+**Fixed long intervals** are additive through unit partitions; endpoints are \(H_W\)-null by the test-continuity bound, so there is no dependence on the partition.
+
+## PROOF092 — `L:driver-holder-limit`
+
+For \(X_N(t)=X_N((0,t))\), choose \(\theta<\eta<\beta\) and even \(q_0\ge2\) with
+
+\[
+q_0\gamma>d,\qquad \beta-\eta-\frac1{q_0}>0.
+\]
+
+The single-interval Schatten estimate transfers to increments,
+
+\[
+\|X_N(t)-X_N(u)\|_{L^q(\mathscr B(E))}
+\le C\sqrt q\,|t-u|^\beta,\qquad |t-u|\le1,
+\]
+
+uniform in \(N\) and \(q\ge q_0\). The dyadic-maximum bound
+
+\[
+\|D_n(X_N)\|_{L^q}\le2^{n/q}C\sqrt q\,(T2^{-n})^\beta
+\]
+
+gives the summable dyadic series
+
+\[
+\sup_N\Bigl\|\sum_{n\ge0}2^{n\eta}D_n(X_N)\Bigr\|_{L^q}\le C_\eta\sqrt q,
+\]
+
+with no independence between the increments. Fixed-grid \(L^q\) convergence is taken before the mesh limit, followed by the determinin interpolation
+
+\[
+\|F\|_{C^\theta}\le C\,\|F\|_\infty^{1-\theta/\eta}\|F\|_{C^\eta}^{\theta/\eta}
+\]
+
+and scalar Hölder in probability. The required \(L^pC^\theta\) convergence holds for every finite \(p\), with \(L^q\) bounds at even \(q\ge q_0\).
+
+Although \(C^\theta([0,T];\mathscr B(E))\) itself need not be separable, the limit lies in the separable \(C^\theta\)-closed span of the countably many deterministic paths \(A_j(0,\cdot)\). This is the separable-Banach support needed for strong measurability, without any claim that all bounded operator paths are separable.
+
+## PROOF093 — `P:actual-operator-driver`
+
+Assembling `PROOF085–092`:
+
+\[
+X_N(t):=\sum_{j\le N}g_jA_j(0,t)\longrightarrow M_R(t)
+\quad\text{in }L^p(\Omega;C^\theta([0,T];\mathscr B(E))),
+\]
+
+for every finite \(p\). The limit is a centered Gaussian path on the original \((\Omega,\mathscr A,P)\), starts at \(0\), and has compact values at all times on one path event. Its raw rows satisfy
+
+\[
+\langle M_R(t)z,w\rangle_E=\ell_R((0,t);z,w)\quad\text{in }L^2(\Omega).
+\]
+
+The norm bound and square-exponential moment are
+
+\[
+(\mathbb E\|M_R\|_{C^\theta}^p)^{1/p}\le C\sqrt p,
+\qquad
+\mathbb E\exp(c\|M_R\|_{C^\theta}^2)<\infty,
+\]
+
+the second from the even-moment bounds and \(m!\ge(m/e)^m\). All constants depend on \((R,T)\), not uniformly on \(R\); no \(C^\theta S_q\)-valued path and no arbitrary-index Schatten moment are asserted.
+
+---
+
+# Part II. Canonical source-driver convergence (`F007`, PROOF094–100)
+
+The source layer is compatible with the prior two-variance work, and it supplies the **retaining** element that makes the raw driver and the actual source family live on one probability space.
+
+## PROOF094 — `L:source-finite-comparison`
+
+For \(\varphi(x)=\|\sum x_jv_j\|^p\), an auxiliary Gaussian \(Z\) of covariance \(CI-\operatorname{Cov}\xi\) gives by conditional Jensen
+
+\[
+\mathbb E\varphi(\xi)\le\mathbb E\varphi(\xi+Z),
+\qquad
+\xi+Z\overset d=\sqrt C\,g.
+\]
+
+Thus
+
+\[
+\left(\mathbb E\Bigl\|\sum_j\xi_jv_j\Bigr\|^p\right)^{1/p}
+\le\sqrt C\left(\mathbb E\Bigl\|\sum_jg_jv_j\Bigr\|^p\right)^{1/p}.
+\]
+
+The auxiliary comparison changes neither the coupling nor any nonlinear solution.
+
+## PROOF095 — `P:source-gaussian-transfer`
+
+A centered Gaussian linear noise \(Y\) with
+
+\[
+\operatorname{Var}Y(F)\le C\|F\|_{H_W}^2
+\]
+
+extends to \(H_W\). The finite paths
+
+\[
+M_{Y,N}=\sum_{j\le N}Y(f_j)A_j
+\]
+
+are Cauchy in every finite \(L^p(\mathscr B_\theta)\) as soon as the raw paths are. Therefore
+
+\[
+\|M_Y-M_{Y,N}\|_{L^p\mathscr B_\theta}
+\le\sqrt C\|M_R-M_N\|_{L^p\mathscr B_\theta},
+\]
+
+and the raw row identity is
+
+\[
+\langle M_Y(t)z,w\rangle_E=Y(h_{R,t;z,w})
+\]
+
+with the literal raw test \(h_{R,t;z,w}=\zeta_R1_{(0,t)}v_zG_w\).
+
+**Stability.** If \((W,Y_n)\) are jointly Gaussian, each \(Y_n\) and each \(D_n=W-Y_n\) obeys a uniform raw variance bound, and \(\operatorname{Var}D_n(F)\to0\) on every smooth compact test, then \(M_{D_n}\to0\) pathwise-in-\(L^p\) and hence \(M_{Y_n}\to M_R\). No relation between the rates is required because each fixed-test error tends to zero.
+
+## PROOF096 — `L:source-spatial-heat`
+
+The spatial space \(H_\Gamma\) is the test-null completion of
+
+\[
+B_\Gamma(f,g)=\int\Gamma(\mathrm dy)\int f(x)g(x-y)\,\mathrm dx
+=(2\pi)^d\int\widehat f(\xi)\overline{\widehat g(\xi)}\mu(\mathrm d\xi),
+\]
+
+singular admissible covariances included. Heat
+
+\[
+C_\varepsilon f=p_\varepsilon*f,
+\qquad
+p_\varepsilon(x)=(2\pi\varepsilon)^{-d/2}e^{-|x|^2/(2\varepsilon)},
+\]
+
+has Fourier multiplier \(e^{-\varepsilon|\xi|^2/2}\), so it is a positive self-adjoint contraction, \(I-C_\varepsilon\) is a contraction, and \(C_\varepsilon\to I\) strongly.
+
+## PROOF097 — `L:source-retaining-isometry`
+
+The correct normalized feature space is
+
+\[
+\mathscr G=L^2((0,\infty)_\lambda\times\R_r,\ \nu_a(\mathrm d\lambda)\,\mathrm dr;H_\Gamma),
+\qquad
+\nu_a(\mathrm d\lambda)=\frac{\lambda^{a-1}}{\Gamma_E(a)}\,\mathrm d\lambda,
+\]
+
+and
+
+\[
+\Phi F(\lambda,r)=\sqrt{2\lambda}
+\int_{\substack{t>0\\ t\ge r}}e^{-\lambda(t-r)}F(t,\cdot)\,\mathrm dt .
+\]
+
+The algebra
+
+\[
+\int_{-\infty}^{\min(t,u)}2\lambda e^{-\lambda(t+u-2r)}\,\mathrm dr
+=e^{-\lambda|t-u|}
+\]
+
+combined with the raw Laplace formula gives
+
+\[
+\langle\Phi F,\Phi G\rangle_{\mathscr G}=\langle F,G\rangle_{H_W}.
+\]
+
+Thus \(\Phi:H_W\to\mathscr G\) is an isometry with closed range. On a product extension, define
+
+\[
+\mathscr I(g)=W\bigl(\Phi^{-1}Pg\bigr)+J((I-P)g),
+\]
+
+where \(P\) projects onto \(\Phi H_W\) and \(J\) is an independent auxiliary isonormal on the orthogonal complement. Then
+
+\[
+\mathscr I(\Phi h)=W(h)\quad\text{in }L^2(\Omega)
+\]
+
+for every raw \(h\). \(\mathscr I\) is isonormal on all of \(\mathscr G\), but cutoff fields may use \(J\); they are **not** asserted to be functions of \(W\) alone, consistent with the known positive-cutoff counterexample.
+
+## PROOF098 — `P:source-canonical-convergence`
+
+For \(\rho=(\varepsilon,\eta)\),
+
+\[
+Q_\rho=C_\varepsilon P_\eta,
+\qquad
+Y_\rho(F)=\mathscr I(Q_\rho\Phi F),
+\qquad
+D_\rho(F)=\mathscr I((I-Q_\rho)\Phi F).
+\]
+
+The point features
+
+\[
+v_{\rho;t,x}(\lambda,r)
+=1_{\{\lambda\le\eta^{-1}\}}\sqrt{2\lambda}\,
+e^{-\lambda(t-r)}1_{\{r\le t\}}\,p_\varepsilon(x-\cdot)
+\]
+
+have joint covariance
+
+\[
+\operatorname{Cov}\bigl(Y_{\varepsilon,\eta}(t,x),Y_{\varepsilon',\eta'}(s,y)\bigr)
+=
+K_{\max(\eta,\eta')}(t-s)\,
+\Gamma_{\varepsilon+\varepsilon'}(x-y),
+\]
+
+with
+
+\[
+\Gamma_e=p_e*\Gamma,
+\qquad
+K_\eta(v)=\frac1{\Gamma_E(a)}\int_0^{\eta^{-1}}e^{-\lambda|v|}\lambda^{a-1}\,\mathrm d\lambda .
+\]
+
+This is exactly the **max-temporal-cutoff / sum-spatial-heat** law, including the heat inner-product cancellation
+
+\[
+B_\Gamma\bigl(p_\varepsilon(x-\cdot),p_{\varepsilon'}(y-\cdot)\bigr)
+=\Gamma_{\varepsilon+\varepsilon'}(x-y).
+\]
+
+The two variance dominations are
+
+\[
+\operatorname{Var}Y_\rho(F),\ \operatorname{Var}D_\rho(F)\le\|F\|_{H_W}^2,
+\]
+
+and, since \(Q_\rho\to I\) strongly in \(\mathscr G\),
+
+\[
+\operatorname{Var}D_\rho(F)\to0,
+\qquad F\in H_W,
+\]
+
+at arbitrary relative widths. By `P:source-gaussian-transfer`, the corresponding \(L^p(\mathscr B_\theta)\) path convergence holds:
+
+\[
+M_R^\rho\longrightarrow M_R,\qquad 
+M_{D_\rho}=M_R-M_R^\rho.
+\]
+
+## PROOF099 — `L:source-pointfield-regularity`
+
+For each fixed \(\rho\), the spatial derivatives \(Z_b=\mathscr I(\partial_x^bv_{\rho;t,x})\) have increments
+
+\[
+\mathbb E|Z_b(t,x)-Z_b(s,y)|^2
+\le C_{\rho,b}(|t-s|+|x-y|^2),
+\]
+
+using the finite heat moments and the \(\lambda\)-range truncation. The dyadic Gaussian-modification construction gives a version jointly continuous in time and smooth in space, with real spatial derivatives. This is a **single fixed \(\rho\)** version, not a common event over uncountably many source parameters.
+
+## PROOF100 — `P:source-ordinary-response`
+
+For the regularized coefficient \(b_\rho(t,x)=\zeta_R(x)Y_\rho(t,x)\), the statewise integral
+
+\[
+L_\rho(t)z=\int_0^tS(-u)B(b_\rho(u))S(u)z\,\mathrm du
+\]
+
+is an operator-norm Lipschitz path on \(E\). Each instantaneous space duality gives
+
+\[
+\langle S(-u)B(b_\rho(u))S(u)z,w\rangle_E
+=\int b_\rho(u,x)[S(u)z]_1(x)G_w(u,x)\,\mathrm dx .
+\]
+
+Integrating and comparing the point-feature test identity yields
+
+\[
+L_\rho(t)=M_R^\rho(t)
+\]
+
+for every \(t\) on one probability-one set, by a countable dense Schwartz-phase/rational-time argument. This is an identification on the actual coupled space, not merely in law.
+
+---
+
+# Part III. Masked displacement moments (`F008`, PROOF101–103)
+
+## PROOF101 — `L:masked-chain-comparison`
+
+The forward chain measures
+
+\[
+\nu_n^{t,x}(1)=\frac{t^{2n}}{(2n)!}.
+\]
+
+At fixed positive source widths, the covariance is bounded and nonnegative,
+
+\[
+C_\rho(s,z;r,w)=K_\eta(s-r)\Gamma_{2\varepsilon}(z-w)
+\le c_\rho=K_\eta(0)\Gamma_{2\varepsilon}(0).
+\]
+
+For any fixed set of Gaussian source factors, the Wick expansion produces exactly one pairing per unordered partition, and every pairing has nonnegative finite integral. The mask \(0\le m\le1\) multiplies each vertex once, so
+
+\[
+0\le\mathbb E[X_{\rho,n}^m(t,x)X_{\rho,k}^m(t,y)]
+\le\mathbb E[X_{\rho,n}(t,x)X_{\rho,k}(t,y)],
+\]
+
+with odd total order zero. The Green-width identification uses weak convergence of \(p_\eta*G_d\) with the bounded continuous Wick factors before passing \(\eta\downarrow0\), i.e. it is Green-before-noise and not a scalar Green-restart.
+
+The uniform order bound
+
+\[
+\|X_{\rho,n}^m(t,x)\|_2\le q_n(t),\qquad
+\|X_{\rho,n}(t,x)\|_2\le q_n(t)
+\]
+
+is obtained by matching the Wick diagrams to the vertexwise bound that produces \(q_n\).
+
+## PROOF102 — `P:masked-source-moments`
+
+Absolute \(L^2\) convergence of the two series follows from \(Q_T:=\sum q_n(T)<\infty\). The ordinary solutions \(u_\rho^m,u_\rho\) with coefficients \(mY_\rho,Y_\rho\) are the unique locally continuous mild solutions by the bounded-coefficient Picard/Volterra argument, no Picard dependence on an unbounded phase.
+
+The two-point comparison passes to the full sums through square-summable product order, and the unmasked spatial stationarity gives
+
+\[
+\mathbb E[u_\rho(t,x)u_\rho(t,y)]
+\le\mathbb E|u_\rho(t,0)|^2.
+\]
+
+The tested second moment is exactly
+
+\[
+\mathbb E\Bigl|\int\phi(x)u_\rho^m(t,x)\,\mathrm dx\Bigr|^2
+\le\|\phi\|_1^2\,\mathbb E|u_\rho(t,0)|^2,
+\]
+
+with the Bochner interpretation justified by the uniform \(Q_t\) bound.
+
+## PROOF103 — `P:masked-canonical-transfer`
+
+At fixed terminal \((t,0)\), both chains are reversed and relabeled; all covariances are even, and this identifies the common-width unmasked source law with `P:mixed`. The fixed-order diagram limits of `L:joint-fixed-order` then give
+
+\[
+\mathbb E[X_{\rho,n}(t,0)X_{\rho,k}(t,0)]
+\longrightarrow\mathbb E[X_n(t,0)X_k(t,0)],
+\]
+
+at arbitrary relative noise-width rates. Since all mixed absolute moments are dominated by \(q_n(t)q_k(t)\), the double-summation/tail argument yields
+
+\[
+\lim_{\varepsilon,\eta\downarrow0}\mathbb E|u_\rho(t,0)|^2
+=\mathbb E|u(t,0)|^2.
+\]
+
+The masked conditional transfer states that **if** the masked averages converge in \(L^2\) to a random variable \(Z_m(t,\phi)\), then
+
+\[
+\mathbb E|Z_m(t,\phi)|^2
+\le\|\phi\|_1^2\,\mathbb E|u(t,0)|^2.
+\]
+
+The actual \(L^2\) convergence of that masked average is supplied in the Young layer next; it is not assumed to hold merely by the width-limit law of the unmasked source.
+
+---
+
+# Part IV. Young evolution with constant data (`F009`, PROOF104–111)
+
+## PROOF104 — `L:constant-phase-free`
+
+The extended phase space is
+
+\[
+F=E\oplus\R^2,
+\]
+
+with distributional interpretation \((e,c_1,c_2)\mapsto(e_1+c_1,e_2+c_2)\). The check that constants lie in neither \(H^{1/2}\) nor \(H^{-1/2}\) is exactly the test
+
+\[
+\langle\delta_0,\varphi(\cdot/\varepsilon)\rangle=1
+\]
+
+against the locally \(L^2\)-smallness of every positive/negative Sobolev Fourier coefficient near zero. Thus the interpretation is injective, and the displacement-scalar test
+
+\[
+O_\phi(e,c_1,c_2)=\langle e_1,\phi\rangle+c_1,\qquad\int\phi=1,
+\]
+
+is the correct way to observe the constant component: no point trace of an \(H^{1/2}\) function is taken.
+
+The free evolution on \(F\) is
+
+\[
+S_F(t)(e,c_1,c_2)=(S(t)e,\ c_1+tc_2,\ c_2),
+\]
+
+with the finite-dimensional block \(J_t\). The compact-support cutoff map
+
+\[
+L_\psi(e,c_1,c_2)=\psi e+(c_1\psi,c_2\psi)
+\]
+
+is bounded \(F\to E\) by the Peetre inequalities.
+
+## PROOF105 — `P:constant-phase-driver`
+
+The localization
+
+\[
+D_\chi M_E=M_E=M_ED_\chi
+\]
+
+transfers to the extended drivers
+
+\[
+A_E=M_EL_\psi,\qquad A=iA_E,
+\]
+
+which are independent of the auxiliary \(\psi\) and satisfy
+
+\[
+Ai=iM_E,\qquad \pi_CA=0.
+\]
+
+The constant columns are exactly the two images \(iM_E(\psi,0)\) and \(iM_E(0,\psi)\), and their bounded composition inherits all finite \(L^p\) convergence and the \(\sqrt p\) moment/square-exponential bounds from `P:actual-operator-driver`. The raw \(A\) is measurable with respect to the given \(W\).
+
+## PROOF106 — `L:constant-source-response`
+
+For the regularized coefficient \(b(r)=mY_\rho(r)\),
+
+\[
+B_F(b)(e,c_1,c_2):=(0,b(e_1+c_1))\in E,
+\]
+
+and
+
+\[
+A_E^\rho(t)z=\int_0^tS(-r)B_F(b(r))S_F(r)z\,\mathrm dr .
+\]
+
+This is the correct constant-column response: the total initial displacement of \(z\), including \(c_1\), is multiplied by \(b\), and the constants enter only through \(c_1+c_2\) under the free group as required by `E:constant-phase-free`.
+
+## PROOF107 — `P:constant-young-linear`
+
+The Banach Young estimate used here is the linear one,
+
+\[
+\Bigl\|\int_s^t\mathrm dD(r)V(r)-D(s,t)V(s)\Bigr\|
+\le C_\theta\,[D]_\theta[V]_\theta\,|t-s|^{2\theta},
+\]
+
+with multiplication being bounded bilinear composition on \(\mathscr B(F)\). The local scaled-norm contraction
+
+\[
+N_\ell(I_D(V))\le c_\theta[D]_\theta\ell^\theta N_\ell(V)
+\]
+
+and the piece-covering argument give existence, composition, invertibility, joint continuity, local Lipschitz dependence, and
+
+\[
+\sup_{s\le t\le T}\|U_D(t,s)\|
+\le C_T\exp\Bigl(C_T(1+\|D\|_{C^\theta})^{1/\theta}\Bigr).
+\]
+
+Only the linear Young equation is invoked; no nonlinear bounded-vector-field theorem is needed.
+
+## PROOF108 — `P:constant-gaussian-flow`
+
+Applying the continuous Young map to \(A,A^\rho\) gives flows \(U_{A^\rho},U_A\), strongly measurable on the separable triangle span and satisfying
+
+\[
+\pi_CU_A(t,s)=\pi_C,\qquad
+(U_A(t,s)-I)F\subset iE.
+\]
+
+The source convergence in every finite \(L^p\) is obtained by Markov with the common square-exponential driver bound and the local Lipschitz Young dependence, then by uniform \(L^{2p}\) tightness of the flow difference. This uses **no independence** of the raw, source, and residual drivers.
+
+The physical flow
+
+\[
+P_A(t,s)=S_F(t)U_A(t,s)S_F(-s)
+\]
+
+has the free finite-dimensional constant block \((c_1,c_2)\mapsto(c_1+(t-s)c_2,c_2)\), strong continuity on states through \(U\) norm continuity and free-group strong continuity, and its difference from the free flow has range in \(iE\).
+
+## PROOF109 — `L:constant-source-solution`
+
+The identification of \(P_{A^\rho}\) displacement with the ordinary constant-data source solution uses the exact strong-integral/Young-sum relation and the matching Picard chain recursion.
+
+For fixed regularized coefficient \(b\), the ordinary displacement chain is
+
+\[
+X_0=1,\qquad
+X_n(t)=\int_0^t G_d(t-r)*(b(r)X_{n-1}(r))\,\mathrm dr,
+\]
+
+which reproduces the defined \(X_{\rho,n}^m\) with chronological order and all mask factors. The phase recursion with \(B_F(b)\), the compact-support \(L^1\) bound, and the comparison of the phase free group to the displacement distribution show by induction that the displacement of the phase solution is exactly the ordinary source solution. This covers the three-dimensional sphere measures through the compact-distribution convolution identity, not through an \(H^{1/2}\) point trace.
+
+## PROOF110 — `P:constant-raw-average`
+
+The observable
+
+\[
+O_\phi(e,c_1,c_2)=\langle e_1,\phi\rangle+c_1
+\]
+
+is a bounded linear functional on \(F\), for nonnegative \(\phi\in C_c^\infty\) with \(\int\phi=1\), and
+
+\[
+Z_m(t,\phi)=O_\phi P_A(t,0)e_0
+\]
+
+is \(W\)-measurable. At arbitrary relative source-width rates and every finite \(p\),
+
+\[
+\int\phi(x)u_\rho^m(t,x)\,\mathrm dx
+\;\longrightarrow\;Z_m(t,\phi)\quad\text{in }L^p.
+\]
+
+The proof identifies the ordinary spatial integral \(C_\phi\) with the Bochner average \(B_\phi\) from `P:masked-source-moments` by exchanging \(V\mapsto\mathbb E[\Xi V]\) against every bounded \(\Xi\), exactly because the uniform \(Q_t\) bound justifies scalar Fubini on both sides. No samplewise source Gaussian covariance bound replaces this.
+
+This supplies the conditional \(L^2\) convergence premise of `P:masked-canonical-transfer`, giving
+
+\[
+\mathbb E|Z_m(t,\phi)|^2
+\le\mathbb E|u(t,0)|^2,
+\]
+
+since \(\|\phi\|_1=1\). Thus a genuine raw tested average, measurable with respect to the given \(W\), compares with exactly the canonical point moment, with the mask \(m=\zeta_R\) fixed.
+
+The \(L^p\) convergence of the unmasked ordinary response to the raw \(W\)-measurable object comes from
+
+\[
+P_{A^\rho}\to P_A
+\]
+
+in every finite \(L^p\), by `P:constant-gaussian-flow`, and never by positing a pointwise ordinary solution in two different source realizations.
+
+## PROOF111 — `P:constant-compact-base`
+
+For a real deterministic \(h\in C([0,T];C_c^\infty(K))\),
+
+\[
+A_h(t)=\int_0^t iS(-r)B_F(h(r))S_F(r)\,\mathrm dr
+\]
+
+is a Lipschitz operator path with range in \(iE\) and norm depending only on \(\sup_r(\|h\|_\infty+\|h\|_2)\). For bounded real \(g\), the driver \(A_h+gA\) has the same square-exponential moment bounds as \(A\) through
+
+\[
+\mathbb E e^{c'\|A_h+gA\|^2}\le e^{2c'H^2}\mathbb E e^{2c'G^2\|A\|^2}<\infty,
+\]
+
+so its Young flow has all finite moments and the same source convergence. This is the deterministic-compact base that will later carry compact test initial data and bounded external phases; only \(h=0\), \(g=1\) enters the raw point-moment transfer.
+
+No Cameron-shift identity, no vector-field compactness in time, and no uniform-in-\(R\) bound are asserted.
+
+---
+
+## Dependency audit of the completed chain
+
+The actual chain with the correct incoming parents is:
+
+\[
+\begin{array}{c}
+\sc{PROOF073,074}\ \text{(both variance directions, fixed-interval columns)}\\
+\Rightarrow \text{PROOF088}\ \text{(both actual operator variances and tails)}\\
+\Rightarrow \text{PROOF089,090,091}\ \text{(compact tail decay, finite Gaussian average, interval operator limit)}\\
+\Rightarrow \text{PROOF092,093}\ \text{(H\"older path, raw Gaussian driver)}\\
+\Rightarrow \text{PROOF094--098}\ \text{(retaining source, transfer, exact max/sum source law)}\\
+\Rightarrow \text{PROOF099,100}\ \text{(source path regularity and ordinary response identification)}\\
+\Rightarrow \text{PROOF101--103}\ \text{(masked displacement chain, moment comparison, canonical point-moment limit)}\\
+\Rightarrow \text{PROOF104--111}\ \text{(constant phase, Young flow, raw tested average comparison)}.
+\end{array}
+\]
+
+The construction of the same \(u\) through `006/009` in the other branch is consistent with this chain through the shared `P:mixed`/`L:joint-fixed-order` diagram limits; the driver/Young chain does not feed its conclusion back into `P:actual-operator-driver`.
+
+---
+
+## First actual source error
+
+No failure was found in `PROOF085–111` within the stated hypotheses and fixed \((R,T)\) regime. The only items I corrected this turn are my own previous report statements, not the source:
+
+1. `P:cutoff-singular-values` proves \(p\gamma>d\) as a **sufficient** condition for \(S_p\) membership, not an equivalence.
+2. In `L:gaussian-trace-bounds`, the pointwise weighted inequality must carry
+
+\[
+\frac qL|\lambda_j|^{L}+\frac{L-q}{L}|\lambda_i|^{L}
+\]
+
+with the weights on the matching indices; the symmetric double sum still evaluates to \(\operatorname{Tr}(B^2|Y|^L)\). This is a typo-level reproduction issue only.
+
+A delicate but legitimate point is the `E_r` dual-gain statement in `L:driver-gain-localization`, which is correct relative to the phase/E_s pivot with the customary component swap built into the \(E_s\) pairing used by the column maps, not a bare componentwise \(L^2\) dual. It must be read in that pivot, as the source does; otherwise the displayed gain would appear component-swapped. This is a notational/identification explanation, not an analytic defect.
+
+There is no legitimate reason in `F006–F009` to use the forbidden premises: the source feature construction explicitly allows the auxiliary component \(J\), the full heat residual is never claimed independent of the source, finite-mode fields are used only before positive pointwise Wick comparisons, and the constant-data observable is a distributional test \(O_\phi\), not an \(H^{1/2}\) point evaluation.
+
+## Remaining mathematical gaps
+
+1. The constants from the driver, source, and Young layers are \(\rho\)- and \((R,T)\)-dependent unless explicitly stated otherwise; no uniform-in-\(R\) propagation of norms is provided here, and `P:wave-two-variances`’s uniform \(R\)-independence does **not** lift the fixed-cutoff compact/path constants.
+2. The raw tested average is compared to one fixed-mask point moment \(\mathbb E|u(t,0)|^2\); removing the mask in the average, identifying \(Z_m\) with the canonical point evaluation \(u(t,0)\) itself, and taking time asymptotics remain beyond this chain.
+3. The relevant conditional transfer in `P:masked-canonical-transfer` is contingent on an \(L^2\) limit precisely satisfied in the Young layer by the raw \(W\)-measurable \(Z_m(t,\phi)\); the identification of \(Z_m\) with any scalar value \(u(t,0)\) is a separate step not justified by the masked/average bound alone.
+4. The positive-variance/compact-tail arguments prove \(L^p\) driver and flow convergence at even Schatten indices \(q\gamma>d\) and finite \(p\), not arbitrary \(S_p\)—for that matter, no \(S_p\)-valued time path is claimed.
+5. No Young flow regularity in the sharp constant, tube concentration, or intrinsic comparison sense follows from this chain; those are separate sections.
