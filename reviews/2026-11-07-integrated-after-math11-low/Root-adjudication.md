@@ -1,0 +1,22 @@
+# New integrated report: INCONCLUSIVE/low, not accepted
+
+Root read the entire238-row report, its source-coverage list, four major/four minor findings, six repair requests and four limitations. Exact215 OWN and13 join rows are structurally present, but227 are PARTIAL and11 INCONCLUSIVE. Native one-request route/finish/tool/SSE/usage collection passed for this operation:629112 input+11889 output/reasoning=641001. This does not erase earlier UNKNOWN requests or establish scientific acceptance. The raw verdict/confidence remain unchanged.
+
+The report identifies no concrete candidate formula counterexample. Its decisive finding is that it did not complete the requested independent derivation in this final turn. The second integrated MAIN HIGH gate therefore remains open. No further unchanged confidence retry is authorized. Component checks and author audits cannot be promoted to this missing independent judgment.
+
+Finding/repair dispositions:
+
+- Major1/2 and repair1: unfinished per-row/global independent work is a real missing REVIEW gate, not a proof of correctness or a newly identified mathematical failure. Preserve every PARTIAL/INCONCLUSIVE. All named alternatives and all13 joins remain assigned; no scope is dropped.
+- Major3, OWN215 row and repair4: the report again calls OWN215 a reconstructed source premise. The actual L:pairing-product-envelope is an OWN self-contained proof in the candidate, with translated covariance214 and explicit finite-cap/per-family induction. Source-internal discrepancies belong to the printed theorem's separate qualification record, which is not silently repaired. This report supplies no failed step in the OWN proof or consumers. The misclassification cannot turn the verdict into PASS; independent certification is still absent.
+- Major4, minor4 and repair3: the operative source retains the given W plus one fixed auxiliary J; positive cutoff fields need not be W-measurable. Old false historical reports stay immutable with explicit errata. Rewriting/removing their raw statements would violate evidence preservation. Actual current consumers, rather than obsolete report text, require the propagation check.
+- Minor1/2 and repair5/6: arithmetic, contextual units, homogeneity, independent051 funding and degenerate/source-limit branches remain unverified by this reviewer. Existing author derivations are retained without claiming they clear this independent gate. These are not identified failed formulas requiring a manuscript patch.
+- Minor3/repair2: metadata identities, literal-body EOF provenance and rendered-image/cold gates are separate from mathematical premises. All222 cumulative and83 fresh sources were actually supplied under the approved literal protocol; this does not prove reviewer attention. Full independent pixel/cold acceptance remains pending. No fabricated native Read or pixel credit is added, and no missing-source claim is inferred from the absence of a tool call where whole literal bodies were supplied.
+
+Report errors/clarifications:
+
+- PROOF001 does not assume that the actual Stratonovich mean is one. Jensen requires the actual same-u mean, with its positivity/finiteness. Its even-chain expansion gives Eu>=1, and existing white calibration EX2=4/15 at a=1/2,t=1 already refutes mean-one. This is an error in the report, not the source.
+- Its source-coverage file ranges misname the primary slots. Actual CP pages are F130–F137, Teschl F138–F156 and FH F157–F164; C23/Chen–Hu/Balan-Conus have their own F125–F127 context bodies. Actual complete primary deliveries remain bound, not inferred from these prose labels.
+- A prior public reconstruction error about negative-quarter norms was not a candidate-source defect. The correct form/dual argument remains in source113/162. The report's cross-reference to source129 does not establish that check.
+- Correct canonical indexing: the spatial smooth-ratio finiteness proposition is PROOF137, while PROOF135 is the physical-pair/null-set lemma. Earlier Root work09/work10 prose used135 for the ratio. The label-based mathematics is unchanged; the exact map is authoritative.
+
+No source/PDF edit or adoption follows from this generic incomplete review. Continue the required Kimi source/application and genuine independent pixel work. If independent MAIN certification remains unavailable after other meaningful work is exhausted, report that specific unresolved requirement rather than fabricate a HIGH grade or shrink the project goal.
