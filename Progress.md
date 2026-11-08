@@ -17488,3 +17488,10 @@ Evidence reviews/2026-11-08-kimi-pixel17-high-visual-compact03-ready/. Full vali
 
 
 Root provenance clarification after actual file inspection: F129 is the bibliography, not Gaussian-enlargement primary context as earlier task prose guessed. The actual import is FH11.6/footnote3 on F163(p190), contextF164(p191); CP8F130–137 are Crouzeix–Palencia spectral sets. Source05/06 and frozen role registry already identify these correctly. This is a Root task-label correction, no candidate-source defect or new premise.
+
+
+## 2026-11-08: actual current/candidate07 adjudicated; next genuine source and images ready
+
+Evidence reviews/2026-11-08-kimi-current-comparison-working07/ and reviews/2026-11-08-kimi-visual-compact03-pixel18-ready/. Root read full23699char07, entire actualmain diff and full215proof. Independent215 source/application chain and actual059 unequal-damping formulas reconstructed; no candidate-source failure. Correct report-only coefficient parenthesis and gap-vs-vertex self ratio(4, not2); source correct. Actual109/222cumulative/1fresh83,113original bodies remain08–09. Reported363619input/47125output/ctx410744. Compact05 READY418936input/+311296=730232, actualcompletion still owed. No overallgrade or adoption.
+
+Visualcompact03 actualcompletion20messages/context21681; reported125540input/1775output below132473bound. Five-page prep halted atexisting4page guard, ZEROmodelcalls/files; retain4page batches. Pixel18distinct66–69/16views READY580086input/+311296=891382;70stillowednextscope. Existing65HIGHpages/260views only,202pagesowed. Original fullgoal/gates intact.
