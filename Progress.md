@@ -17354,3 +17354,10 @@ Kimi source03 remains live inexec24373. Actual image-only pilot page15 is prepar
 Source-inspected SAME-native compactor appends one rendered instruction; pinned static4654-byte template/customrender5793bytes+1024new-message allowance fits8192. Conditional724455+8192=732647/+311296hard=1043943. No generic reduction of fresh-source framing; actual existing context already includes native system/tools. Actual compact completion/state and unknown attempts remain to verify. Agent21 current lookup failed (Office unreachable), nothing sent; read-only installed pinned source supplied the necessary bound without setup/config edits.
 
 Kimi actual4-image page15 pilotexec40714 returned canonicalPASS_WITH_NOTES/HIGH,5checks/no required repairs, all4view IDs; Root read full report and matched actualanchors/immutablePNGgloballedger. Observedtool0/permission0/unsupported0; native sessionaggregate19257input+3257output=ctx22514. This is ONEpage HIGH pixel evidence, not full267 acceptance. Next distinctpages1–4/16views READY:conditional580924input/+311296=892220, geometry-matched calibration not exact native image count. Pending this push/GW, one separate compact operation and one separate image prompt. MAIN secondLOW unchanged; full goal/gates remain.
+
+
+## 2026-11-08: Kimi compact01 applied; five distinct pages now have independent HIGH pixel evidence
+
+[held back: collaborators' unpublished work]
+
+Pixel02 returned canonicalPASS_WITH_NOTES/HIGH, Root read all5checks/16viewIDs/3minor/4limits. No requiredrepair; actual16PNG hashes/sourcePDF bind. Reportedturn38610+2763=41373 fromnative totals57867/6020. Page4 TOC-ending wording is local, not a global completeness claim (continuespage5). New Kimi pixel union exactlypages1,2,3,4,15 =5/267/20images; other262owed. Pixel03 pages5–8 READY/16distinct frozenviews/conditional599762input/+311296=911058. Pending this push/GW then separate one-shot source04 and pixel03 authorities. MainDSsecondLOW unchanged; no overallHIGH/source/PDF adoption/cold/delivery promotion.
