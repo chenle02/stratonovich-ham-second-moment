@@ -17590,3 +17590,8 @@ Root read full primary501 PASS_WITH_NOTES/HIGH report: F163/FHphysical200printed
 
 
 2026-11-08: DS detailed proof12 actually started once in same owned session,309075 input bound; no confidence request or automatic next call. Main pixel25 actually started once94–97. Primary502 prepared distinct CP physical1–4/F130–133,16views,614398 input plus311296 reserve. No new reviewer/session/setup; original whole-goal gates remain.
+
+
+## 2026-11-08:97 main pages visually accepted; detailed mathematics remains running
+
+Root read whole pixel25 PASS_WITH_NOTES/HIGH, pages94–97/all16views/no repairs. Union97/267pages,388views;170remain. Reported80115input/5837output/context85952. Unusual-looking translated measure G(y−dy) is legitimate source notation, no edit. Next98–101 prepared644390input/+311296=955686. DS detail12 and separate primary502 CP1–4 remain same actual live requests; no restarts or grades inferred. Focus remains original project completion.
