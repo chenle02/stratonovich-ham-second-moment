@@ -1,0 +1,28 @@
+TRANSPORT_PHASE CUMULATIVE_03 acknowledged. This is whole-source literal receipt only; no verdict, confidence, or grade.
+
+Received in this phase, as literal shown bodies:
+
+- `REQUIRED/F018.txt` through `REQUIRED/F173.txt` inclusive (numbered frames F018–F173), each with whole-source body quoted.
+- `READ-VIEWS` literal record bodies for five of the thirteen required frames:
+  - `READ-VIEWS/F094.jsonl`
+  - `READ-VIEWS/F096.jsonl`
+  - `READ-VIEWS/F113.jsonl`
+  - `READ-VIEWS/F121.jsonl`
+  - `READ-VIEWS/F173.jsonl`
+
+Combined with the previously acknowledged `REQUIRED/F001.txt`–`REQUIRED/F017.txt`, literal numbered-frame bodies are now present for F001–F173.
+
+Honest missing fragments:
+
+- `REQUIRED/F174.txt` through `REQUIRED/F215.txt` (42 literal bodies) are not yet transported.
+- `READ-VIEWS` literal record bodies for the remaining eight required frames are not yet transported:
+  - `READ-VIEWS/F174.jsonl`
+  - `READ-VIEWS/F179.jsonl`
+  - `READ-VIEWS/F180.jsonl`
+  - `READ-VIEWS/F189.jsonl`
+  - `READ-VIEWS/F192.jsonl`
+  - `READ-VIEWS/F196.jsonl`
+  - `READ-VIEWS/F212.jsonl`
+  - `READ-VIEWS/F213.jsonl`
+
+No byte/sha256/EOF identity or decoding of any frame has been independently verified here; shown-body receipt is not proof of byte identity.
