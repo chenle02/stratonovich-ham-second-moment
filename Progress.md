@@ -17775,3 +17775,8 @@ Primary513fullreadHIGH/common-validator/all12IDs/hashpins/no repairs closesF130-
 
 
 2026-11-08:evidence-custody correction: commit hook automatically reformatted the two copied paperproof excerpts named.tex in2bc0926. Actual candidate/manuscript/PDF unchanged. Preserve originalexternalbytes and priorcommit; now store byte-identical source excerpts as.tex.txt with original/priorhookSHA bindings to prevent formatter touching evidence. No sourceproof, formalproof, kernelreceipt or grade change.
+
+
+## 2026-11-08:visual contexts refreshed; original scope preserved
+
+MAINcompact08 actualcomplete18messages204662before22137after,aggregate4384713input211731output; next166-169READY580557input/+311296=891853. OriginalmathKcompact12 actualcomplete10messages93575before22764after,inputunknown/output690379; all83freshmathematical bodiesowed, primary35visualcomplete. DScomp07sameactualrequestlive, observationtimeoutnotterminal/no restart. Finitewordinitialtype/application19wholebodypacketpreparedonly; accepted80facts22seamsunchanged.
