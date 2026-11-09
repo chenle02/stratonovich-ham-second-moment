@@ -17772,3 +17772,6 @@ Root fullread pixel42 HIGH/common-validator/all16IDs/hashpins/no repairs. Main16
 ## 2026-11-08:selected35 primary pixel gate complete; finite-word Lean pilot
 
 Primary513fullreadHIGH/common-validator/all12IDs/hashpins/no repairs closesF130-F164 selected35pages/140views137distinctPNGhashes. Previousfailed-schema reportszerocredit. This is pixelONLY; source/application/math/cold unchanged. Context12READY72687input/+311296=383983 beforeall83fresh science. Main165/267accepted. Boundedselected-wordLean2PROVISIONALfacts actualcompile/types/stdaxioms/ownedreplay/privateallorderrecurrenceconsumer/3semanticFalsecontrolsPASS; initialtype/applicationreviewpending, accepted80facts22seams unchanged. DScontext07READY731275input/+311296=1042571, no auto call. No manuscript/PDF or goal scope change.
+
+
+2026-11-08:evidence-custody correction: commit hook automatically reformatted the two copied paperproof excerpts named.tex in2bc0926. Actual candidate/manuscript/PDF unchanged. Preserve originalexternalbytes and priorcommit; now store byte-identical source excerpts as.tex.txt with original/priorhookSHA bindings to prevent formatter touching evidence. No sourceproof, formalproof, kernelreceipt or grade change.

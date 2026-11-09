@@ -1,46 +1,46 @@
 \begin{lemma}[A fixed degree-split estimate]\label{L:fixed-split}
-Retain the finite interval fields above, with $R_\alpha>0$ and
-$\sigma_i>0$. Fix integers $r_i,q_i,k_i\ge0$ with
-$r_i+q_i=2k_i$, and put $k=\sum_i k_i\ge1$, $\lambda=k/T$.
-Represent $W_i^\epsilon(x)=\sum_jg_{ij}e_{ij}(x)$ as in
-Lemma~\ref{L:interval-contractions}. Retain $m_i$ Gaussian modes,
-a spatial Fourier band $S_b$, and Hermite cutoff $N_i=2k_i$ on
-color $i$. Write $P=\bigotimes_iP_{N_i}$
-and set
-\[
-  B_i=P S_b\left(\sum_{j=1}^{m_i}g_{ij}M_{e_{ij}}\right)S_bP,
-  \qquad V_{\boldsymbol z}(t)
-  =\sum_i z_i\sigma_i\mathbf1_{I_i}(t)B_i.
-\]
-Let $\mathcal M^{\rm cut}_{\boldsymbol z}(T)$ be the phase evolution
-with this bounded potential and $A_0=-\Delta$ on the band. Define
-$U_{\boldsymbol r}v=[\boldsymbol z^{\boldsymbol r}]
-\mathcal M^{\rm cut}_{\boldsymbol z}(T)v$, with the projected
-deterministic initial phase in the Gaussian vacuum. Put
-\[
-  \begin{gathered}
-    \mathcal I=\{i:k_i>0\},\qquad
-    \mathcal C=\{i:k_i=1,\ r_i=q_i=1\},\\
-    \mathcal B=\mathcal I\setminus\mathcal C,\qquad
-    \ell_i=\mathbf1_{\{r_i>0\}}+\mathbf1_{\{q_i>0\}}.
-  \end{gathered}
-\]
-There is a finite $C_{\rm split}=C_{\rm split}(\alpha)$, uniform
-in all these cutoffs and in the finite inventory, such that
-\begin{equation}\label{E:fixed-split-bound}
-  \begin{split}
-    |\langle U_{\boldsymbol r}v,U_{\boldsymbol q}v
-    \rangle_{L^2(\Omega;X_{1/T})}|
-    \le{}&k^2 C_{\rm split}^k R_\alpha^k\|v\|_{1/T}^2
-    \prod_{i\in\mathcal C}
-    (\sigma_i^2h_i^2\lambda^{\alpha-2})\\
-    &\quad\times\prod_{i\in\mathcal B}
-    \frac{(\sigma_i^2h_i^{4-\alpha})^{k_i}}{(k_i!)^\nu}
-    (1+k_i/(\lambda h_i))^{\ell_i}.
-  \end{split}
-\end{equation}
-In particular, a singleton used twice on one copy has $\ell_i=1$;
-a higher color has at most two metric factors.
+  Retain the finite interval fields above, with $R_\alpha>0$ and
+  $\sigma_i>0$. Fix integers $r_i,q_i,k_i\ge0$ with
+  $r_i+q_i=2k_i$, and put $k=\sum_i k_i\ge1$, $\lambda=k/T$.
+  Represent $W_i^\epsilon(x)=\sum_jg_{ij}e_{ij}(x)$ as in
+  Lemma~\ref{L:interval-contractions}. Retain $m_i$ Gaussian modes,
+  a spatial Fourier band $S_b$, and Hermite cutoff $N_i=2k_i$ on
+  color $i$. Write $P=\bigotimes_iP_{N_i}$
+  and set
+  \[
+    B_i=P S_b\left(\sum_{j=1}^{m_i}g_{ij}M_{e_{ij}}\right)S_bP,
+    \qquad V_{\boldsymbol z}(t)
+    =\sum_i z_i\sigma_i\mathbf1_{I_i}(t)B_i.
+  \]
+  Let $\mathcal M^{\rm cut}_{\boldsymbol z}(T)$ be the phase evolution
+  with this bounded potential and $A_0=-\Delta$ on the band. Define
+  $U_{\boldsymbol r}v=[\boldsymbol z^{\boldsymbol r}]
+  \mathcal M^{\rm cut}_{\boldsymbol z}(T)v$, with the projected
+  deterministic initial phase in the Gaussian vacuum. Put
+  \[
+    \begin{gathered}
+      \mathcal I=\{i:k_i>0\},\qquad
+      \mathcal C=\{i:k_i=1,\ r_i=q_i=1\},\\
+      \mathcal B=\mathcal I\setminus\mathcal C,\qquad
+      \ell_i=\mathbf1_{\{r_i>0\}}+\mathbf1_{\{q_i>0\}}.
+    \end{gathered}
+  \]
+  There is a finite $C_{\rm split}=C_{\rm split}(\alpha)$, uniform
+  in all these cutoffs and in the finite inventory, such that
+  \begin{equation}\label{E:fixed-split-bound}
+    \begin{split}
+      |\langle U_{\boldsymbol r}v,U_{\boldsymbol q}v
+      \rangle_{L^2(\Omega;X_{1/T})}|
+      \le{}&k^2 C_{\rm split}^k R_\alpha^k\|v\|_{1/T}^2
+      \prod_{i\in\mathcal C}
+      (\sigma_i^2h_i^2\lambda^{\alpha-2})\\
+      &\quad\times\prod_{i\in\mathcal B}
+      \frac{(\sigma_i^2h_i^{4-\alpha})^{k_i}}{(k_i!)^\nu}
+      (1+k_i/(\lambda h_i))^{\ell_i}.
+    \end{split}
+  \end{equation}
+  In particular, a singleton used twice on one copy has $\ell_i=1$;
+  a higher color has at most two metric factors.
 \end{lemma}
 
 \begin{proof}

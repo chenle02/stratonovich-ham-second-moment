@@ -1,27 +1,27 @@
 \begin{lemma}[Exact cutoffs for finite Gaussian words]\label{L:finite-word-cutoff}
-Let $g_{ij}$, $1\le i\le M$, $1\le j\le m_i$, be independent
-standard real Gaussian coordinates, grouped by color $i$, and let
-$\mathscr X$ be a complex Hilbert space. On Gaussian polynomials
-with coefficients in $\mathscr X$ set
-\[
-  J_i=\sum_{j=1}^{m_i}M_{g_{ij}}\otimes K_{ij},
-\]
-where each $K_{ij}$ is bounded on $\mathscr X$. Let
-$F_0,\ldots,F_n$ be bounded operators acting only on $\mathscr X$.
-Fix a word $i_1,\ldots,i_n$, and let $r_i$ be the number of its
-occurrences of color $i$. If $N_i\ge r_i$ and $P$ projects each
-color onto total Hermite degree at most $N_i$, then, for every
-$v\in\mathscr X$,
-\begin{equation}\label{E:finite-word-cutoff}
-  \begin{split}
-    &(I\otimes F_n)(PJ_{i_n}P)(I\otimes F_{n-1})\cdots
-    (PJ_{i_1}P)(I\otimes F_0)(1\otimes v)\\
-    &\qquad=(I\otimes F_n)J_{i_n}(I\otimes F_{n-1})\cdots
-    J_{i_1}(I\otimes F_0)(1\otimes v).
-  \end{split}
-\end{equation}
-The equality holds for finite sums and for Bochner integrals of such
-words whenever the displayed vector integrals exist.
+  Let $g_{ij}$, $1\le i\le M$, $1\le j\le m_i$, be independent
+  standard real Gaussian coordinates, grouped by color $i$, and let
+  $\mathscr X$ be a complex Hilbert space. On Gaussian polynomials
+  with coefficients in $\mathscr X$ set
+  \[
+    J_i=\sum_{j=1}^{m_i}M_{g_{ij}}\otimes K_{ij},
+  \]
+  where each $K_{ij}$ is bounded on $\mathscr X$. Let
+  $F_0,\ldots,F_n$ be bounded operators acting only on $\mathscr X$.
+  Fix a word $i_1,\ldots,i_n$, and let $r_i$ be the number of its
+  occurrences of color $i$. If $N_i\ge r_i$ and $P$ projects each
+  color onto total Hermite degree at most $N_i$, then, for every
+  $v\in\mathscr X$,
+  \begin{equation}\label{E:finite-word-cutoff}
+    \begin{split}
+      &(I\otimes F_n)(PJ_{i_n}P)(I\otimes F_{n-1})\cdots
+      (PJ_{i_1}P)(I\otimes F_0)(1\otimes v)\\
+      &\qquad=(I\otimes F_n)J_{i_n}(I\otimes F_{n-1})\cdots
+      J_{i_1}(I\otimes F_0)(1\otimes v).
+    \end{split}
+  \end{equation}
+  The equality holds for finite sums and for Bochner integrals of such
+  words whenever the displayed vector integrals exist.
 \end{lemma}
 
 \begin{proof}
