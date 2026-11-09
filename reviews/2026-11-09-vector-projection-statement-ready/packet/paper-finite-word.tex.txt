@@ -1,0 +1,47 @@
+\begin{lemma}[Exact cutoffs for finite Gaussian words]\label{L:finite-word-cutoff}
+  Let $g_{ij}$, $1\le i\le M$, $1\le j\le m_i$, be independent
+  standard real Gaussian coordinates, grouped by color $i$, and let
+  $\mathscr X$ be a complex Hilbert space. On Gaussian polynomials
+  with coefficients in $\mathscr X$ set
+  \[
+    J_i=\sum_{j=1}^{m_i}M_{g_{ij}}\otimes K_{ij},
+  \]
+  where each $K_{ij}$ is bounded on $\mathscr X$. Let
+  $F_0,\ldots,F_n$ be bounded operators acting only on $\mathscr X$.
+  Fix a word $i_1,\ldots,i_n$, and let $r_i$ be the number of its
+  occurrences of color $i$. If $N_i\ge r_i$ and $P$ projects each
+  color onto total Hermite degree at most $N_i$, then, for every
+  $v\in\mathscr X$,
+  \begin{equation}\label{E:finite-word-cutoff}
+    \begin{split}
+      &(I\otimes F_n)(PJ_{i_n}P)(I\otimes F_{n-1})\cdots
+      (PJ_{i_1}P)(I\otimes F_0)(1\otimes v)\\
+      &\qquad=(I\otimes F_n)J_{i_n}(I\otimes F_{n-1})\cdots
+      J_{i_1}(I\otimes F_0)(1\otimes v).
+    \end{split}
+  \end{equation}
+  The equality holds for finite sums and for Bochner integrals of such
+  words whenever the displayed vector integrals exist.
+\end{lemma}
+
+\begin{proof}
+  In normalized Hermite coordinates, multiplication by $g_{ij}$ maps
+  $h_{\boldsymbol a}$ to
+  $\sqrt{a_{ij}+1}\,h_{\boldsymbol a+e_{ij}}
+  +\sqrt{a_{ij}}\,h_{\boldsymbol a-e_{ij}}$; the second term is zero
+  if $a_{ij}=0$. Thus it changes the total degree of color $i$ by
+  one and leaves all other color degrees unchanged. The operators
+  $I\otimes F_l$ leave every Gaussian degree unchanged.
+  After the first $l$ insertions, the uncompressed word therefore
+  has color-$i$ degree at most
+  $r_i(l)=|\{j\le l:i_j=i\}|\le r_i\le N_i$.
+  This is an induction starting from degree zero in every color.
+  Consequently $P$ is the identity both before and after every
+  insertion along that word. Induction on $l$ now proves
+  \eqref{E:finite-word-cutoff}. The lowering term has been retained:
+  the assertion includes creation followed by annihilation and all
+  resulting self-contractions. Linearity and equality of the vector
+  integrands prove the last assertion. This is an equality of selected
+  finite words, not of full propagators at a fixed cutoff.
+  This proves Lemma~\ref{L:finite-word-cutoff}.
+\end{proof}
