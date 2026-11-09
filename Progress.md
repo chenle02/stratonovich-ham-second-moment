@@ -52,7 +52,7 @@ reports remain MEDIUM/no required repairs, with no currently identified
 source defect; the new detailed005/033/042/047/048 Opus audit also remains
 MEDIUM and technically unaccepted. Kimi weekly429 quota is confirmed from
 native per-session logs; no exact reset time is known. Main visual acceptance
-is229/267 pages,38 remaining. Le directed a few-day Kimi hold until its weekly quota refills;
+is230/267 pages,37 remaining. Le directed a few-day Kimi hold until its weekly quota refills;
 no threshold change, pause, completion or new scientific request is inferred.
 See the November9 review directories and current literal HANDOFF.md.
 
@@ -18000,3 +18000,8 @@ Root corrects earlier overbroad whole-project blocker:38 visual pages remain una
 ## 2026-11-09:main visual230/267 accepted through independent Opus pilot
 
 Root fullread page230 twoPASS checks/fourminor/fourlimits; literalHIGH/no repairs. ActualOpus5.5/high firstParty supported2.1.304; paired directRead delivers all4 original PNG/MIME/SHA byteexact, nativecoverage/route/candidatepins PASS, sourcecarrier44b25617clean. Cropseam covered/overviewfineglyphs resolvedinbands/optionalbreak/counternumbering adjudicated no defects. Common standardfence parser only; originalraw preserved. Accept ONLY230; combinedmain230/267,920views,37remain,notKimi/mathHIGH. Next231–234 ready16originalimages/image-awaredryrun/conditional701440includingnative128000reserve, noauthorityPOSTyet. Evidence reviews/2026-11-09-opus-visual-p230-high-p231-234-ready/. Kimi remainsheld/closed; both mathematicalHIGH/finalgatesopen.
+
+
+## 2026-11-09:Opus231-234 invalidJSON/MEDIUM, concrete pixel questions retained
+
+Root fullread all5PASS rows/4minor/5limits; original proseprefixstrictJSONfailschar0, no repair/normalization. VisibleMEDIUM independentlyfailsHIGH. All16 original PNGs exactpairedRead coverage verified; no pagecredit,combinedmain230/267accepted/37remain. P232subpixelrelation alignment andP234nestedscripts have specific visibility limitations; genuinely new detailviews fromsamePDF canaddress them, notunchangedconfidence retry. P233justification/breaks andP234whitespace/cropseams arelegible/nondefective, no manuscriptrepair. Nextunseen235-238 independentlyready16PNGs/image-aware preflight/701440conditionalbound, separateRootauthorityowed. Evidence reviews/2026-11-09-opus-visual-p231-234-invalid-medium-p235-238-ready/. Kimi hold/all wholeHIGH/finalgatesunchanged.

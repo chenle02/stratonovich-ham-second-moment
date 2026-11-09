@@ -1,0 +1,179 @@
+{
+  "original_sha256": "89a67b3a810aadbbc3c72dbc2af20b815500dbbe72fc950e59857a034fbbba67",
+  "data": {
+    "provider": "claude",
+    "started_utc": "2026-11-09T13:12:39.917498+00:00",
+    "workspace": "external-evidence/stratonovich-opus-main-visual-20261109/p231-234-actual/workspace",
+    "source_revision": "44b25617befac48da660d59b90ec07d47ab118cc",
+    "input_hashes": {
+      "VISUAL.md": "376e784d254a9d9694daf020051e5258698ecd449870df0954812605401386b6",
+      "bands/page-231-band-1.png": "3041a0b6702a8f3bdd0a70442bf5328839c9f379e6b4a4ae716b55e993c94d51",
+      "bands/page-231-band-2.png": "1cbea1a3269f27cccada5349e6a6b5aad094288e3bd9ae1ffeaaebd966ff3146",
+      "bands/page-231-band-3.png": "1b6202783eaad7551d05b5fde59a8f641b1d17c78f16a05131c6319f8d077ab9",
+      "bands/page-232-band-1.png": "e9a4e0598549feed79b830edd0903c03e1d8ece7252b8b34fec6d4ae726000b6",
+      "bands/page-232-band-2.png": "97275fe98507aa7184338f27927ca49065e9f68d0202b8f8d43434f1b0714ca2",
+      "bands/page-232-band-3.png": "4f7b46df341c7406cb4dd042c9c31eb45e10740d2c288f2d4eb4d741fffbae98",
+      "bands/page-233-band-1.png": "2ae49b5907e00c6ddf8c7f01fb0698440b4ef698bed08f5e55c4124462e5d095",
+      "bands/page-233-band-2.png": "a3e73dfd6ca8c226dd33a34b12f945a8fdd507d5e10cda8b2c3dfbd7b5f32f0a",
+      "bands/page-233-band-3.png": "8c2e642dd85312e6da6e7447dae38bbe06ec4790259058485b30715f5298a193",
+      "bands/page-234-band-1.png": "9496feb0c4c5308f226783ec6c92596ab24eeb89856a7b14ad71f4566107ebd8",
+      "bands/page-234-band-2.png": "3fb631e752c22153eb687f0978ceafae038867fe12d3b1eebabdd81526d0ee1c",
+      "bands/page-234-band-3.png": "4e0eb6ffe6eebf8fd1bcb141abe523d38afe7d48eb406300d0abdae9834bf56c",
+      "fullpages/page-231.png": "565195a465394be49aee5ae95965b45e3226cafb4b9d7dbd1a7893e8f69da9e3",
+      "fullpages/page-232.png": "bb34775ce5ad02e6a2a3e1a52dcf4186d4b9b00fb0287ddaa2490f800ebd5638",
+      "fullpages/page-233.png": "693d12bfeccb88e6a49b695d76dd0fa84027aadf4beeae2537a48c78e3217008",
+      "fullpages/page-234.png": "fdaa3fb64168cd0574d91bba9fd2703915dd0ddaf224164bd3f8255fa99dfe98",
+      "required-sources.json": "6b779edfd1f578afccd117811268566973d137a306d5dd6fcd57dc259e769863",
+      "source-manifest.json": "caa1fc939f6a1f44f1208344c2309de2491ec9b0ba32ccd32ae4fa04288ecbbc"
+    },
+    "target": "fullpages/page-231.png",
+    "claude_account": "<removed>",
+    "review_contract_sha256": "376e784d254a9d9694daf020051e5258698ecd449870df0954812605401386b6",
+    "effort_requested": "high",
+    "resumed_from": null,
+    "resume_mode": null,
+    "resume_binding": null,
+    "min_confidence": "high",
+    "scientific_verdict": null,
+    "accepted": false,
+    "report_contract_schema": "subscription-review-report/1",
+    "report_legacy_mode": null,
+    "legacy_resume_binding": null,
+    "diagnostics": [
+      {
+        "code": "unsupported-schema",
+        "path": "",
+        "message": "invalid report JSON: Expecting value: line 1 column 1 (char 0)"
+      }
+    ],
+    "required_sources_sha256": "6b779edfd1f578afccd117811268566973d137a306d5dd6fcd57dc259e769863",
+    "required_sources_workspace_copy": ".review/required-sources.json",
+    "workspace_preflight": {
+      "schema": "le-ai-lab.review-workspace-preflight/1",
+      "scanned": "review contract (--prompt-file)",
+      "references": {
+        "source-manifest.json": [
+          "source-manifest.json"
+        ]
+      },
+      "waived": [],
+      "missing": [],
+      "required_sources_copy": ".review/required-sources.json"
+    },
+    "runtime_preflight": {
+      "effective_version": "2.1.304",
+      "cli_version": "2.1.304 (Claude Code)",
+      "image_requirements": true,
+      "supported_versions": [
+        "2.1.302",
+        "2.1.304",
+        "2.1.314"
+      ],
+      "supported": true
+    },
+    "cli_version": "2.1.304 (Claude Code)",
+    "executable": "external-evidence/swe-white-time-resume-20261024/runtime/node_modules/@anthropic-ai/claude-code-linux-x64/claude",
+    "executable_requested": null,
+    "executable_effective": {
+      "path": "external-evidence/swe-white-time-resume-20261024/runtime/node_modules/@anthropic-ai/claude-code-linux-x64/claude",
+      "version": "2.1.304 (Claude Code)"
+    },
+    "read_ledger_format_supported": true,
+    "auth": {
+      "authMethod": "<removed>",
+      "apiProvider": "firstParty",
+      "subscriptionType": "<removed>",
+      "email": "<email removed>"
+    },
+    "model_requested": "claude-opus-5-5",
+    "command_without_prompt": [
+      "external-user-home/.claude/bin/claude-acct",
+      "run",
+      "<account>",
+      "--print",
+      "--model",
+      "claude-opus-5-5",
+      "--effort",
+      "high",
+      "--disable-slash-commands",
+      "--strict-mcp-config",
+      "--mcp-config",
+      "{\"mcpServers\":{}}",
+      "--permission-mode",
+      "dontAsk",
+      "--permission-prompts",
+      "none",
+      "--output-format",
+      "stream-json",
+      "--verbose",
+      "--tools",
+      "Read,Grep,Glob",
+      "--allowedTools",
+      "Read,Grep,Glob",
+      "--agents",
+      "external-evidence/stratonovich-opus-main-visual-20261109/p231-234-actual/claude-reviewer.json",
+      "--agent",
+      "artifact-reviewer",
+      "<stdin: prompt.txt without its final newline>"
+    ],
+    "prompt_transport": "stdin",
+    "prompt_bytes": 6199,
+    "prompt_sha256": "2abcaf8e40ef51a36a0f081bfe5e9fd9acbc96ded1e5bcf4298f2f8aa76e4e7d",
+    "transport_exit_code": 0,
+    "transport_ok": true,
+    "model_actual": "claude-opus-5-5",
+    "session_id": "d1dfbdd2-6742-4536-822d-e67a08ae0e71",
+    "usage": {
+      "input_tokens": 12,
+      "cache_creation_input_tokens": 42379,
+      "cache_read_input_tokens": 157629,
+      "output_tokens": 8461,
+      "output_tokens_details": {
+        "thinking_tokens": 2077
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 42379,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "global",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 4627,
+          "cache_read_input_tokens": 40701,
+          "cache_creation_input_tokens": 4882,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 4882
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "provider_error": false,
+    "terminal_subtype": "success",
+    "tools_actual": [
+      "Read",
+      "Grep",
+      "Glob"
+    ],
+    "actual_route_verified": true,
+    "candidate_hashes_unchanged": true,
+    "raw_report_sha256": "c3a35071dd8897adbcfdd5aceb09784dfa5395ad9b47e859d0c362778983d042",
+    "status": "invalid-report",
+    "reason": "invalid report JSON: Expecting value: line 1 column 1 (char 0)",
+    "finished_utc": "2026-11-09T13:14:12.931137+00:00",
+    "elapsed_seconds": 93.013,
+    "transport_events_sha256": "d7592460823e915533168a2640f6e827621c1cdc993af3d0eaab4dc68a09289b",
+    "transport_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "read_ledger_sha256": "46ecd707967910740e52a24984e39bd7a3895d490ccead70a0201571f9337b1a",
+    "coverage_verified": true
+  }
+}
