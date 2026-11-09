@@ -17744,3 +17744,6 @@ Root read full pixel39 HIGH/common-validator/all16 exact views and hash pins/no 
 ## 2026-11-08:full original263 review remains MEDIUM; primary28/35
 
 New DS whole source-first83 review terminal682691input/15628output-plus-reasoning within716588bound. Root read entire59692byte report; canonical schema and exact215OWN/26nonOWN/13joins/9global=263 once-only audit pass. PASS_WITH_NOTES/MEDIUM, zero fatal/major/repairs; no HIGH credit. Mechanism-depth residuals005/033/042/047/048, finite tables/conditional transfers and all-model realization remain explicit; separate pixel/cold gates cannot normalize grade. Evidence reviews/2026-11-08-full-main-after-exact15-medium-unaccepted/. Primary511fullread HIGH/common-validator/all16IDs/hashpins/no repairs acceptsF162-F164+F130:28/35pages/112views;7CPpagesF131-F137 remain. Nativecontext123671; compact11 READY131863input/+311296=443159, actualcompletionowed. No source/PDF/Lean change or goal narrowing.
+
+
+2026-11-08:primarycontext11 actualcomplete14messages/156073before/22919after; aggregate inputunknown, output673181. No per-attempt completeness claim. PRIMARY F131-F134(CP2-5) READY581470input/+311296=892766,16frozenviews; validprimary28/35unchanged pending actual result. Mainpixel40 actualstarted once. All83fresh mathematical sources reopen aftercompaction.
