@@ -1,0 +1,175 @@
+{
+  "original_sha256": "c4797af8be6d0fa3c6947c683afd67474fe40f8e3bad74818d9526750168f079",
+  "data": {
+    "provider": "claude",
+    "started_utc": "2026-11-09T13:07:18.837974+00:00",
+    "workspace": "external-evidence/stratonovich-opus-main-visual-20261109/p230-actual/workspace",
+    "source_revision": "44b25617befac48da660d59b90ec07d47ab118cc",
+    "input_hashes": {
+      "VISUAL.md": "84ffc34f3cd4cefc8e5ad4a8c8c139bbb4a3c6e0490701b236d24fac9d5ddd50",
+      "bands/page-230-band-1.png": "c9e28ec33356190dc3c9b707a7fd55501c380d448ac61cf5b43968063c446ff2",
+      "bands/page-230-band-2.png": "211e695780a7f5b4e6e91d19058b9a9799529e9fb912796c23d6c0da24211f2f",
+      "bands/page-230-band-3.png": "fa58f7562c349d768aa9889df75df1a3ab15afe5ff647ae7e37aad99971cef5d",
+      "fullpages/page-230.png": "b5559b3fccc6252821b43033033ca79dc078d1d6b045a82f235e1ca5dd91f515",
+      "required-sources.json": "b177e1a0eb9bcb79f6137857857c7b445632feace5778ef6f9ef0b8e270722d4",
+      "source-manifest.json": "de7fcfd117059edd6d80ee0b8baf97777a0aca4ea550ecf5d9c00ca94810c503"
+    },
+    "target": "fullpages/page-230.png",
+    "claude_account": "<removed>",
+    "review_contract_sha256": "84ffc34f3cd4cefc8e5ad4a8c8c139bbb4a3c6e0490701b236d24fac9d5ddd50",
+    "effort_requested": "high",
+    "resumed_from": null,
+    "resume_mode": null,
+    "resume_binding": null,
+    "min_confidence": "high",
+    "scientific_verdict": "PASS_WITH_NOTES",
+    "accepted": true,
+    "report_contract_schema": "subscription-review-report/1",
+    "report_legacy_mode": null,
+    "legacy_resume_binding": null,
+    "diagnostics": [],
+    "required_sources_sha256": "b177e1a0eb9bcb79f6137857857c7b445632feace5778ef6f9ef0b8e270722d4",
+    "required_sources_workspace_copy": ".review/required-sources.json",
+    "workspace_preflight": {
+      "schema": "le-ai-lab.review-workspace-preflight/1",
+      "scanned": "review contract (--prompt-file)",
+      "references": {
+        "source-manifest.json": [
+          "source-manifest.json"
+        ]
+      },
+      "waived": [],
+      "missing": [],
+      "required_sources_copy": ".review/required-sources.json"
+    },
+    "runtime_preflight": {
+      "effective_version": "2.1.304",
+      "cli_version": "2.1.304 (Claude Code)",
+      "image_requirements": true,
+      "supported_versions": [
+        "2.1.302",
+        "2.1.304",
+        "2.1.314"
+      ],
+      "supported": true
+    },
+    "cli_version": "2.1.304 (Claude Code)",
+    "executable": "external-evidence/swe-white-time-resume-20261024/runtime/node_modules/@anthropic-ai/claude-code-linux-x64/claude",
+    "executable_requested": null,
+    "executable_effective": {
+      "path": "external-evidence/swe-white-time-resume-20261024/runtime/node_modules/@anthropic-ai/claude-code-linux-x64/claude",
+      "version": "2.1.304 (Claude Code)"
+    },
+    "read_ledger_format_supported": true,
+    "auth": {
+      "authMethod": "<removed>",
+      "apiProvider": "firstParty",
+      "subscriptionType": "<removed>",
+      "email": "<email removed>"
+    },
+    "model_requested": "claude-opus-5-5",
+    "command_without_prompt": [
+      "external-user-home/.claude/bin/claude-acct",
+      "run",
+      "<account>",
+      "--print",
+      "--model",
+      "claude-opus-5-5",
+      "--effort",
+      "high",
+      "--disable-slash-commands",
+      "--strict-mcp-config",
+      "--mcp-config",
+      "{\"mcpServers\":{}}",
+      "--permission-mode",
+      "dontAsk",
+      "--permission-prompts",
+      "none",
+      "--output-format",
+      "stream-json",
+      "--verbose",
+      "--tools",
+      "Read,Grep,Glob",
+      "--allowedTools",
+      "Read,Grep,Glob",
+      "--agents",
+      "external-evidence/stratonovich-opus-main-visual-20261109/p230-actual/claude-reviewer.json",
+      "--agent",
+      "artifact-reviewer",
+      "<stdin: prompt.txt without its final newline>"
+    ],
+    "prompt_transport": "stdin",
+    "prompt_bytes": 5064,
+    "prompt_sha256": "87d48501458b39626c16f9aa5e78cca9835eab1980882b2129f998611248eb36",
+    "transport_exit_code": 0,
+    "transport_ok": true,
+    "model_actual": "claude-opus-5-5",
+    "session_id": "35a2d4a2-b09a-445c-bcdf-936a255b90e4",
+    "usage": {
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 26538,
+      "cache_read_input_tokens": 41619,
+      "output_tokens": 4289,
+      "output_tokens_details": {
+        "thinking_tokens": 1260
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 26538,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "global",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 3521,
+          "cache_read_input_tokens": 22346,
+          "cache_creation_input_tokens": 4192,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 4192
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "provider_error": false,
+    "terminal_subtype": "success",
+    "tools_actual": [
+      "Read",
+      "Grep",
+      "Glob"
+    ],
+    "actual_route_verified": true,
+    "candidate_hashes_unchanged": true,
+    "raw_report_sha256": "97aacd75a5568268a2f751a61dce8846223ebb3161820445b1ba51e0d5684dd0",
+    "status": "review-complete",
+    "confidence": "high",
+    "report_interpretation": {
+      "contract_schema": "subscription-review-report/1",
+      "report_schema": "subscription-review-report/1",
+      "legacy_mode": null,
+      "normalized_verdict": "PASS_WITH_NOTES",
+      "normalized_confidence": "high",
+      "normalized_check_verdicts": [
+        "PASS",
+        "PASS"
+      ]
+    },
+    "report_sha256": "4a4c5ec856dfe6a86a58dced19663a3cc2a3d8792c1ce0cbc5e4beeb62f59932",
+    "report_text_format": "fenced-json",
+    "report_body_sha256": "5e55d1de21ab3967ffb0c6a9391e71fc32380adef0349a1f5c6c11668f690baf",
+    "finished_utc": "2026-11-09T13:08:06.982642+00:00",
+    "elapsed_seconds": 48.144,
+    "transport_events_sha256": "b706a8876b7c4d250103134031e04f68ea9b94fe92e06a394dab93bd1dee47a7",
+    "transport_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "read_ledger_sha256": "114799cc38f6be2274dabaf67142c2bc568d35020ed467283ca298d035ff1e91",
+    "coverage_verified": true
+  }
+}
