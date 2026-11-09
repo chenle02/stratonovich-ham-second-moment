@@ -17810,3 +17810,13 @@ DS actualterminal18696input14718output-plus-reasoning within52180bound, Root rea
 ## 2026-11-08:181 main pages accepted
 
 Root fullread pixel46 HIGH/common-validator/all16IDs/PNGpins/no repairs. Main181/267pages/724views,86remain. Nativecontext101014,aggregate4654323input227077output. Next182-185READY659435input/+311296=970731. FullKimi original v3 sameactualrequeststillrunning; selectedwordFIT MEDIUMsaved/unaccepted, accepted80facts22seams unchanged.
+
+
+## 2026-11-08:185 main pages accepted; entire visual union reaudited
+
+Root fullread pixel47 HIGH/common-validator/all16IDs/PNGpins/no repairs. Main185/267pages/740views,82remain. Independentread-onlyauditall47canonical lineages confirms EXACTpages1-185/fourviewsperpage/allPNGpins/no duplicatepagecredit; pixel15 remainsone syntax-onlylineage. Nativecontext120766,aggregate4771369input230797output. Compact09READY128958input/+311296=440254 before next186-189.
+
+
+## 2026-11-08:new Kimi originalfull263 remains MEDIUM
+
+Root read complete116170bytefullsource-firstv3 report; canonicalJSON/exact215OWNlabels+26nonOWNlabels+13joins+9globalonceauditPASS.229PASS34PASS_WITH_NOTES, nofatal/major/repairs, literalMEDIUMUNACCEPTED. Actualall83ID+SHAset and25wholechallenges byteverified. Nativecontext730411/aggregateinputunknown/output725454; usageNULLnotnormalized. No concretecandidate defect found; coupling/nonloadbearingline risk remains explicit. Correct report-only freshcoverageoverclaim of retiredcandidateDIFF/F128comparison; both getnofreshcredit, operative83whole unaffected. ZeroHIGHpromotion orsourcechange. Evidence reviews/2026-11-08-kimi-full-source-first-v3-medium-unaccepted/. Userstatus: researchdraftcompleteascandidate, verificationcontractnotcomplete; no reliablepercentages orclaimmostlydone.
