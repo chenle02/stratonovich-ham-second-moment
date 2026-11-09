@@ -1,0 +1,1 @@
+ActualMAINvisualcompact11 complete18messages210659before22066after;aggregate5943981input288864output. Nextphysical226-229READY580498inputplus311296hard=891794,16frozenviews. Main225/267accepted/42remain. ThisisdistinctfrommathoriginalSID/PRIMARY35; selected35primarypixelcomplete. No scientific/cold/finalgatepromotion.

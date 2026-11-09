@@ -17916,3 +17916,8 @@ Root fullread pixel57 HIGH/common-validator/all16IDs/PNGpins/no repairs. Main225
 ## 2026-11-09:Kimi mathematicalshortcontext13READY, unchangedhard/framingguards
 
 ActualmathKcontext730411;old8192extrapacketrefused1049899withhard311296(1323over),NOpost. New168byteoptionalnavigationtext viaSAMEpinnednative/template renders4821bytes; same1024positive framing=5845,predeclared6144incrementadds299padding. Bound736555input/+311296=1047851,725headroom. Source-derivedsmaller INPUT, no hard/sourceframing/imageguard reduction orRoot-history/proofbody truncation. All83fresh sourcesreopenafteractualsummary; currentwholeMEDIUMunchanged. Evidence reviews/2026-11-09-kimi-math-short-context13-ready/. Noauthority/POSTyet.
+
+
+## 2026-11-09:pairedKimiwholev4READY; MAINcontext11complete
+
+ActualoriginalmathKcompact13complete8messages664173before40590after,inputunknown/output729093. All83freshsourcesowed. Kpairedv4 EXACTruninputmatchesDSv4frozenuserSHA,all83+34wholechallenges/original263minimumscopeunchanged. Counter654456user+40590ACTUALctx+32768frame=727814input/+311296=1039110,9466headroom. Source/challengespans/originSHAverified; noauthority/POSTyet. NewDSrawarrivedinvalidJSON/visibleMEDIUM(no major/fatal/repairs), awaitsfullRootadjud; notfedmidwavetoindependentKimi pairedreview. MAINcompact11actualcomplete18messages210659before22066after,aggregate5943981input288864output;next226-229READY580498input/+311296=891794. Main225accepted/42remain, allHigh/cold/finalgatesopen.
