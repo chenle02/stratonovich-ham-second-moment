@@ -1,0 +1,1 @@
+ActualMAINnativecompact09 complete18messages,202022before/22107after. Aggregate4893242input/232953output. Nextphysical186-189 READY580532input plus311296hard=891828,16frozenimages. Mainaccepted185/267/740views unchanged until actualnewresult. Selected35primarypixelcomplete; bothfullscientificresultsMEDIUM/unaccepted andotherfinalgatesremainopen.
