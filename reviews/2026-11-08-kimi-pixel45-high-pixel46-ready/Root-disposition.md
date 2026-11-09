@@ -1,0 +1,1 @@
+Root read the entire public report. Canonical validator accepts literal HIGH/no repairs, all16 exact VIEW_IDs match, and every PNG hash verifies. Accept MAIN174-177 only: union177/267pages/708views,90remain. All reported crop seams resolved in adjacent bands. No math/source/cold credit. Next178-181 READY639649input plus311296hard=950945, nativecontext81241.
