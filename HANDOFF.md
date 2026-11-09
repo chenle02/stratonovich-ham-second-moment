@@ -1,77 +1,55 @@
-Last updated: 2026-11-05 21:14 CST (<MACHINE>, Codex)
+Last updated: 2026-11-09 01:15 CST (<MACHINE>, Codex)
 
 # HANDOFF
 
-Project: Article-Stratonovich-HAM-Second-Moment. Research goal PAUSED by Le.
-Wiki strategy: ../SPDEs-wiki/content/projects/stratonovich-ham-second-moment.md
-Workflow authority: ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave/Progress.md. Historical entries below are archived
-snapshots; this current header, next step and Progress status govern.
+Project: Article-Stratonovich-HAM-Second-Moment. Original all-model goal ACTIVE and incomplete; Le explicitly resumed after the archived November5 pause. No new pause or gate waiver was requested. Workflow authority: ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave/Progress.md; completion contract: ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave/PROJECT-GOAL.md. This current header supersedes historical paused snapshots below.
 
 ## ⏭ Next session: where to stand and what to do
 
-Stand in the research checkout, relative to this handoff:
+This master checkout is the shell launcher, with an older manuscript. Stand in the actual research checkout:
 
 ```bash
 cd ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave
-sed -n '1,180p' Progress.md
 ```
 
-The goal is PAUSED. Loading this checkpoint or running retro does not resume
-research. After Le explicitly resumes, the immediate next step is an independent
-transcription/application audit of the frozen paired 267-page integration draft
-against the complete reviewed pairing proof and its actual source cutoff law.
-Use the R01–R15 map and exact diff in ../../../../.local/state/Le-AI-Lab/themeII-pairing-product-envelope-integration-draft-20261105; the existing skeptic is
-PASS_WITH_NOTES/MEDIUM, accepted=false at HIGH. Do not adopt the draft or restart
-that terminal reviewer merely to obtain a higher confidence. The old U/C input
-layouts remain over context; choose a subsequent substantive MAIN scope only
-with complete mathematics and fresh admission checks.
+Branch: research/fixed-mask-young-20261031. All operational relative paths below are interpreted after this cd; archived history retains its original locators.
+The immediate next step is to resolve the pending review-procedure decision against the latest actual evidence in Progress.md and the November9 reports. An asynchronous question asks whether to preserve every gate and resume when Kimi capacity returns, or discuss a review-procedure change; no answer is recorded at this checkpoint. Until an explicit change, preserve all original gates. Kimi is actually blocked by its weekly quota, not a running review. Check renewed capacity only on credible external availability evidence; the errors give no exact reset timestamp. Do not start another unchanged scientific review merely to seek HIGH or manufacture a new proof obligation from a no-repairs MEDIUM report.
 
 ## Pre-flight checks
 
-[held back: AI account details]
+1. Read AGENTS.md, PROJECT-GOAL.md, the current Progress.md tail and notes §§1-3. Verify the active goal remains the original full model/constant/delivery objective, not a smaller result. The November5 paused handoff is historical and was superseded by Le's explicit resume.
+2. Fetch local and <HUB> refs serially, inspect both worktrees, compare the research tracking ref and preserve foreign WIP. This research branch was clean at pre-handoff21a73e29ae692e6f15501fcf77eaf0fb53f20cb4. Operational handoff descendants are expected.
+3. Adopted263-page source SHA364753242f9d02e57036af586ab8e777b184d897862750d3170d79f028067914; tracked PDF SHA096cb3cd4610c91d7dc8718bd56526e777cdd06ebca41651a8955bc230eb2f35. Both remain unchanged.
+4. Unadopted267-page integration under ../themeII-pairing-product-envelope-integration-draft-20261105/build/notes: source SHA516d6a650bdac7d3da68672f37836afd084b651c39553b43d5135d0512e39d14; PDF SHA26f9f4a5ee65b08449cedc41dc34e688d15147f0ab4e3b9d23e4ee3f9a8624f8. Actual target scope215 OWN,241 declarations,13 joins and9 global checks,263 minimum review rows; all28 source modules. No adoption is authorized by scoped receipts.
+5. Native Kimi2.5.2 K3/max/default weekly quota is confirmed by exact session-log HTTP429 APIProviderQuotaExhaustedError for image59/60 and fresh READY. See reviews/2026-11-09-kimi-weekly-quota-confirmed/. Do not treat empty ACP end_turn as success, retry the failed turns, buy quota, upgrade, or infer a reset date.
+6. All actual mathematical/visual model requests are terminal. The Opus five-proof native audit completed driver exit3, not live. Older ACP/DeepSeek local processes may remain idle; a PID or session file is not a live review. Do not restart a request solely because its execution handle expires.
+7. Keep80 accepted finite Lean facts/22 groups; the two local scalar Hermite pilot theorems remain provisional with MEDIUM fit review, not additional accepted facts. Official private Lean companion creation, HPC, correspondence, Telegram and public release remain unauthorized.
 
 ## Concrete deliverables for the next session
 
-After explicit resume: an independent audit of the paired integration draft,
-its full source/covariance/application correspondence and preservation delta;
-then a concrete retained-scope MAIN input decision. The draft proposes one new
-owned proof, prospectively215OWN/241formal, rather than hiding a proof in a
-remark. Current source remains unchanged until a reviewable adoption decision.
+Preserve the original whole DeepSeek V4 Pro MAIN HIGH and Kimi-K3 HIGH gates, source/application, full visual, fresh cold, adoption, clean build, wiki and synchronized private delivery. Current main visual acceptance229/267 pages (916 views),38 remaining. All267 structural images were delivered earlier, but structural coverage is not HIGH acceptance. No direct Kimi credit for the empty230-233 turns.
 
-Preserved external material, relative to this repo:
+Latest whole DS v4: reviews/2026-11-09-full-main-v4-invalid-medium-unaccepted/ (raw90048bytes SHA5016c36d4695928d6824f760a8ff696c25adf54d74f815500751d0fb92358f1a). Invalid final limitations-array JSON and literal MEDIUM, zero fatal/major/repairs; exact263 ID/primary-label inspection does not repair or accept it.
 
-- ../../../../.local/state/Le-AI-Lab/themeII-pairing-product-envelope-integration-draft-20261105: TeX/PDF, full diff, R01–R15 map, build logs and scoped visuals.
-- ../../../../.local/state/Le-AI-Lab/themeII-author31-repair-Root-native-adjudication-20261105:
-  full public result and all six finding/six limitation dispositions.
-- ../../../../.local/state/Le-AI-Lab/themeII-2-split-joined-capacity-experiment-20261105 and
-  ../../../../.local/state/Le-AI-Lab/themeII-2-json-whitespace-capacity-experiment-20261105:
-  literal negative counts, reversible recipes and no admission.
-- ../../../../.local/state/Le-AI-Lab/themeII-6-Root-author-readback-20261105:
-  full author-working readback, not a native grade.
-- ../../../../.local/state/Le-AI-Lab/stratonovich-retro-handoff-20261105: retro verification, foreign-WIP and runtime preservation receipts.
-  Published canonical lesson commit b8409f74a29efbd59adb22c8360db944bd3f731d.
+Latest whole Kimi v4: reviews/2026-11-09-kimi-whole-v4-medium-unaccepted/ (raw SHA9c7f90df05d4bf7dbd0cefb206c0f20abd66a159353e85081c02bd92eba1fdc2). Valid canonical263 rows, MEDIUM, zero fatal/major/repairs. Unsupported fresh-read claims about retired histories are corrected in Root adjudication, never credited.
+
+Five-proof audit: reviews/2026-11-09-opus-five-proof-medium-unaccepted/. Actual native Opus5.5/high firstParty,005/033/042/047/048 each PASS, no required repairs, literal MEDIUM. Read ledger also fails the unreturned final F126 line1385 (sole byte0x0c); original coverage failure is not waived. Root adjudicates all four minor observations without changing source. No additional unchanged bounded audit is justified by its confidence alone.
+
+External payloads remain LOCAL unless separately archived: ../stratonovich-fullMAIN-execution-20261107; ../stratonovich-Kimi-full-review-acp-execution-20261107; ../stratonovich-Kimi-independent-pixel-pilot-20261107; ../stratonovich-opus-five-proof-depth-20261109; ../stratonovich-whole215-staged-review-carrier-20261107. Committed review directories contain exact public raws or lossless gzip, derived relative-locator receipts and bindings. The frozen twelve-file Opus packet is retained in reviews/2026-11-09-opus-five-proof-depth-ready/frozen-packet.tar.gz. Private native transcripts stay external; do not inspect provider thoughts.
 
 ## Success criteria for the immediate next step
 
-- Explicit resume precedes research; the paused checkpoint remains intact.
-- The new per-family maximum, independent-variable covariance norm, exact2/HALF,
-  all original models and actual four consumer applications are checked at their
-  true scopes. Source pp9/13 are supplied explicitly; indirect parents remain
-  current OWN obligations rather than accepted assumptions by source presence.
-- Any future TeX commit includes its rebuilt PDF, with zero errors, undefined
-  citations/references and overfull boxes. No current scope or HIGH gate is reduced.
+Reproduce the exact current gate/quota state and receive either a concrete user decision or independently verified restored Kimi availability. Preserve all dimensions/covariances/amplitude/zero branches and the fully specified actual variational constant. A mere absence of a known mathematical defect is not HIGH or completion. A requested procedural change is a new visible disposition; old reports keep their identities and confidence.
 
 ## Anti-success criteria
 
-No research restart from automatic continuation or this maintenance request;
-no completed-MEDIUM confidence retry; no private reasoning as mathematical
-evidence; no stronger kernel-independent partition claimed; no source-print
-gap called theorem falsity; no budget reduction or unique-math pruning to fit;
-no source/PDF/grade adoption from an author audit. No source/sibling/refdb edits,
-private Lean repository, HPC, correspondence, Telegram or public release without
-Le's applicable explicit authorization.
+No goal completion, proof/PDF adoption, gate lowering, vote conjunction, report/JSON repair, fresh-coverage inference from absent histories, duplicate model request, or unlimited textbook-reproof wave. No source mutation to generate a new review solely for a confidence label. No narrowed parameter class, forced Chen endpoint identification, removal of conditional alternatives, source-print correction adoption, or Skorohod development. Keep311296 DS/Kimi hard reserves and existing source/image/framing guards; no arbitrary reductions to fit. No quota purchase, account creation, credentials copying, model/provider substitution or system setup edit.
 
 ## What the previous sessions produced
+
+2026-11-09: Accepted main visual pages226-229, total229/267; recorded image59/60 empty terminals and a fresh empty READY probe; diagnosed all three actual per-session weekly429 errors. Archived/adjudicated full DSv4 invalid/MEDIUM and full Kimi v4 valid/MEDIUM with exact original263 IDs. Completed native five-proof Opus depth audit (five PASS, no repairs, MEDIUM and missing final formfeed coverage), with detailed public LF reconstructions and all four minor dispositions. Commits443db69,d79328b,707b009,9d0402a,303a479,fe7b536,21a73e2 pushed; <HUB> refs synchronized. No adopted/unadopted manuscript or PDF bytes changed. User review-procedure decision is pending; no gate waiver or pause inferred.
+
+Archived prior-session history follows; its old scope/status snapshots are not current instructions.
 
 2026-11-04 a7d655b/8b9e2da:26-rowfullcompletionmatrix+verified16binding
 samecanonicalassemblyguide+prospectiveMAIN/coldpolicy andfull214CURRENT/240role/
@@ -2633,46 +2611,16 @@ no fullpacket/provider/config/seal/rootready exists. Fullgoal ACTIVE.
 
 ## Repo & git state at handoff
 
-- Research: ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave, branch research/fixed-mask-young-20261031;
-  pre-handoff HEAD 4a8c101b2b8a1259a27ca58cc492bc97253f9e4d, origin/<HUB> verified before handoff.
-- Human launcher: ., master, pre-handoff HEAD 600f1e99c720aed6251706680b28fc0418a86118.
-- Science: af97ae4; current 214/240/13/28 and263PDF unchanged. External267 draft
-  is a different unadopted candidate; exact identities are in the close state.
-- Canonical lesson commit: b8409f74a29efbd59adb22c8360db944bd3f731d in Le-AI-Lab.
-- This dedicated handoff commit stages HANDOFF.md only. Earlier history is
-  cumulative; pre-handoff hashes intentionally precede this operational commit.
+Research branch research/fixed-mask-young-20261031, scientific/review pre-handoff21a73e29ae692e6f15501fcf77eaf0fb53f20cb4, operational HANDOFF commit6e316955f6b76c0a087b6aa23af6eda23f5732cc, clean. Canonical shell-launch checkout ../../../../Dropbox/workspace/svn/Article-Stratonovich-HAM-Second-Moment is master, pre-handoff564887b7cb5df91770f6aa0002dbfb8da03fb63b, clean; it contains an older manuscript and acts as loader, not the research document. Dedicated HANDOFF-only descendants are expected on both branches. Origin is <HUB> bare storage; compare the research tracking REF when <HUB>'s checkout stays on master.
+
+Frozen source carrier ../stratonovich-whole215-staged-review-carrier-20261107 at44b25617befac48da660d59b90ec07d47ab118cc remained clean and unchanged through the completed native audit. No reviewer currently holds a live mathematical request there. Never reset or discard other work.
 
 ## Operating notes
 
-Progress.md is the research workflow authority; the harness goal is PAUSED.
-Only requested handoff/retro maintenance was performed after pausing. Keep
-external WIP by its exact local path; it is not a discoverable handoff substitute.
-The full original all-model upper/actual-C2 goal, DeepSeek V4 Pro MAIN and
-Kimi-K3 HIGH remain. Never force Chen or actual-p1 identities. Fresh final cold
-reading is separate from MAIN and from these scoped components.
+Progress.md is mathematical workflow authority; lean-progress/PROGRESS.md governs only Lean. Read the full current completion contract. The result's constant is the fully specified intrinsic variational expression, not a numerical value or a forced Chen energy endpoint; auxiliary S1 is not an actual first-moment limit. Conditional033 stays conditional and is not an input to the all-model theorem. Keep source imports and original version qualifications exact.
 
-Only metadata was committed during close; no TeX/PDF or Lean rebuild was needed.
-When later editing TeX, commit its companion PDF atomically after the clean gate.
-All.bib is read-only; process-local BIBINPUTS may point to the existing refdb for
-an isolated build. No global setup changes; system/dotfile/Neovim requests route
-to Agent21 through a fresh address lookup. No unauthorized messages.
-
-Four foreign Le-AI-Lab WIP paths are untouched. Own canonical retro and local
-runtime projection are verified at ../../../../.local/state/Le-AI-Lab/stratonovich-retro-handoff-20261105/retro-final-verification.json;
-non-owned runtime changes are empty. Codex discovery refreshes in a new session.
-For future DeepSeek work, the owned public catalog snapshot under
-../../../../.local/state/Le-AI-Lab/themeII-owned-public-catalog-snapshot-20261105 is preparation only;
-new guard/framing/count/run authority is still required. Do not reuse a spent
-fence or repair a shared catalog silently.
+Wiki project page: ../../../../Dropbox/workspace/svn/SPDEs-wiki/content/projects/stratonovich-ham-second-moment.md. Its final status update is still owed; this handoff does not claim wiki completion. Rebuild PDF only with actual TeX adoption/change under the required clean-build checks. No current TeX/PDF change requires a redundant rebuild.
 
 ## Risks to monitor
 
-- Current project is NOT complete: integrated HIGH, Kimi, source/application,
-  full visual, fresh cold, round-accounting and private-delivery gates remain.
-- The paired267 draft has not received HIGH or whole-paper acceptance. It adds
-  a genuine owned proof; inventory/domain/citation/transcription changes require
-  honest new source binding before a broader review.
-- Exact same-source moments and source-first/Green-first limits remain actual
-  premises to check, not automatic consequences of the deterministic norm bound.
-- Context failures are failures of recorded layouts, not proof of whole-goal
-  impossibility or permission to prune math or lower reserves. No reliable ETA.
+MEDIUM/no-repairs is not acceptance. Technical byte/read/schema coverage is distinct from mathematical correctness. Kimi ACP hides actual weekly-quota errors as empty terminal responses; rely on per-session logs, not just the global log or a local process. Exact reset timestamp remains unknown. Idle sessions are not running jobs. Do not carry paused November5 instructions into the resumed goal or infer user answers from a default asynchronous option. Full goal remains ACTIVE and incomplete.
