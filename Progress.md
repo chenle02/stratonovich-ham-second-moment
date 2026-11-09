@@ -17734,3 +17734,13 @@ ActualDScontext06 terminal/no-tail,431157input/2704output-plus-reasoning below46
 ## 2026-11-08:149 main pages and twenty-four valid primary pages accepted
 
 Root read full pixel38 HIGH/commonvalidator/16views/no repairs; main149/267pages/596views,118remain. Native37201input/3987output/context41188. Next150–153 READY599591input/+311296=910887. Primary510F158–161 HIGH/commonvalidator/16views/no repairs; validprimaryF138–161=24/35pages/96views,11remainincludingoriginal9schemafailedpages. Native72400input/8970output/context81370. NextF162–164plusCPF130 READY639840input/+311296=951136. Newfullsource-firstMAINready716588input preservesall83sources/all4adverse/fullcorrections/263obligations; noauthority/postyet, prioroutcomes unchanged.
+
+
+## 2026-11-08:153 main pages accepted; next154-157 ready
+
+Root read full pixel39 HIGH/common-validator/all16 exact views and hash pins/no repairs. Main union153/267pages/612views;114remain. Native context61622, aggregate3965638input/195563output; next154-157 READY620039input/+311296=931335. Separate mathematical/source/cold gates remain open.
+
+
+## 2026-11-08:full original263 review remains MEDIUM; primary28/35
+
+New DS whole source-first83 review terminal682691input/15628output-plus-reasoning within716588bound. Root read entire59692byte report; canonical schema and exact215OWN/26nonOWN/13joins/9global=263 once-only audit pass. PASS_WITH_NOTES/MEDIUM, zero fatal/major/repairs; no HIGH credit. Mechanism-depth residuals005/033/042/047/048, finite tables/conditional transfers and all-model realization remain explicit; separate pixel/cold gates cannot normalize grade. Evidence reviews/2026-11-08-full-main-after-exact15-medium-unaccepted/. Primary511fullread HIGH/common-validator/all16IDs/hashpins/no repairs acceptsF162-F164+F130:28/35pages/112views;7CPpagesF131-F137 remain. Nativecontext123671; compact11 READY131863input/+311296=443159, actualcompletionowed. No source/PDF/Lean change or goal narrowing.
