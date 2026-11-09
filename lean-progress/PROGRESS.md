@@ -753,3 +753,8 @@ L0fields. Rawpending-statusreceipts preserved;application-summary-v1 current.
 AnalyticH1,CDF/IBP/integrals,sechattainment,Gamma andoriginalpoint bounds
 reviewedINFORMAL,notLean-certified. No newcompiler/package/registry/lease/
 remote/cluster/companionaction. Integration/finalgatesremain.
+
+
+## Hermite selected-word standalone pilot — 2026-11-08
+
+Two abstract public facts raw_support/cut_eq_raw compile on currentstableLean4.35.0 withStdonly, noMathlibimport. Corefirstcompileclean andheadersunchanged. Exacttypes/axioms audit:raw_supportnone;cut_eq_rawonlypropext/Quot.sound. Ownedsource-onlyreplayproducesbyteidenticalolean/audit; privateall-orderunnormalizedcoefficientrecurrenceconsumerpasses,order2selfpair1/order4selfpair3retained. Three semanticFalsecontrols reject insufficientcutoff1, missingloweringandwrongorder4multiplicity. One privateconsumer simplificationfailure andone control-parser-wordingfailure preserved. Initialexacttype/applicationreviewPENDING;2PROVISIONALfacts, accepted80facts22seams unchanged. Evidence local-checks/hermite-word-v1/. L0/PROPOSED anddecision4unchanged; no companion/package/registry/lease/HPC.

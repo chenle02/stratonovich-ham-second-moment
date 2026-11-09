@@ -1,0 +1,364 @@
+\begin{lemma}[A fixed degree-split estimate]\label{L:fixed-split}
+Retain the finite interval fields above, with $R_\alpha>0$ and
+$\sigma_i>0$. Fix integers $r_i,q_i,k_i\ge0$ with
+$r_i+q_i=2k_i$, and put $k=\sum_i k_i\ge1$, $\lambda=k/T$.
+Represent $W_i^\epsilon(x)=\sum_jg_{ij}e_{ij}(x)$ as in
+Lemma~\ref{L:interval-contractions}. Retain $m_i$ Gaussian modes,
+a spatial Fourier band $S_b$, and Hermite cutoff $N_i=2k_i$ on
+color $i$. Write $P=\bigotimes_iP_{N_i}$
+and set
+\[
+  B_i=P S_b\left(\sum_{j=1}^{m_i}g_{ij}M_{e_{ij}}\right)S_bP,
+  \qquad V_{\boldsymbol z}(t)
+  =\sum_i z_i\sigma_i\mathbf1_{I_i}(t)B_i.
+\]
+Let $\mathcal M^{\rm cut}_{\boldsymbol z}(T)$ be the phase evolution
+with this bounded potential and $A_0=-\Delta$ on the band. Define
+$U_{\boldsymbol r}v=[\boldsymbol z^{\boldsymbol r}]
+\mathcal M^{\rm cut}_{\boldsymbol z}(T)v$, with the projected
+deterministic initial phase in the Gaussian vacuum. Put
+\[
+  \begin{gathered}
+    \mathcal I=\{i:k_i>0\},\qquad
+    \mathcal C=\{i:k_i=1,\ r_i=q_i=1\},\\
+    \mathcal B=\mathcal I\setminus\mathcal C,\qquad
+    \ell_i=\mathbf1_{\{r_i>0\}}+\mathbf1_{\{q_i>0\}}.
+  \end{gathered}
+\]
+There is a finite $C_{\rm split}=C_{\rm split}(\alpha)$, uniform
+in all these cutoffs and in the finite inventory, such that
+\begin{equation}\label{E:fixed-split-bound}
+  \begin{split}
+    |\langle U_{\boldsymbol r}v,U_{\boldsymbol q}v
+    \rangle_{L^2(\Omega;X_{1/T})}|
+    \le{}&k^2 C_{\rm split}^k R_\alpha^k\|v\|_{1/T}^2
+    \prod_{i\in\mathcal C}
+    (\sigma_i^2h_i^2\lambda^{\alpha-2})\\
+    &\quad\times\prod_{i\in\mathcal B}
+    \frac{(\sigma_i^2h_i^{4-\alpha})^{k_i}}{(k_i!)^\nu}
+    (1+k_i/(\lambda h_i))^{\ell_i}.
+  \end{split}
+\end{equation}
+In particular, a singleton used twice on one copy has $\ell_i=1$;
+a higher color has at most two metric factors.
+\end{lemma}
+
+\begin{proof}
+  We give a bound for each vector coefficient before taking their inner
+  product. Every operator below acts on the finite Gaussian-mode, Hermite
+  and spatial-band Hilbert space in the statement. In particular, it is
+  bounded. Its piecewise-constant evolution is a finite product of block
+  exponentials, hence is entire in every amplitude. All coefficient
+  extractions in this proof are ordinary power-series extractions.
+
+  An amplitude with $k_i=0$ is evaluated at zero on both copies. If
+  $k_i>0$ but $I_i\cap[0,T]$ has zero length, every coefficient with a
+  positive power of that amplitude vanishes. The claimed inner product
+  is then zero. We may therefore assume that every active interval has
+  a positive-length intersection
+  $I_i^T=(a_i,b_i)$ with $(0,T)$; endpoint conventions do not affect the
+  evolution or its time integrals. Its length is at most $h_i$.
+
+  Write $a=\alpha/2$, and use the positive constant $\delta_a$ in
+  Lemma~\ref{L:complex-phase}. For every $i\in\mathcal B$ put
+  \begin{equation}\label{E:split-radii}
+    \omega_i=\frac{k_i}{h_i},\qquad
+    d_i=2\sqrt{2k_i+1}\sqrt{R_\alpha},\qquad
+    \varrho_i=\frac{\delta_a\omega_i^{2-a}}{\sigma_i d_i}.
+  \end{equation}
+  Fix one of the two copies. Its background set is
+  $\mathcal A_r=\{i\in\mathcal B:r_i>0\}$ or
+  $\mathcal A_q=\{i\in\mathcal B:q_i>0\}$; denote that set by
+  $\mathcal A$. Evaluate every unused amplitude at zero. Colors in
+  $\mathcal C$ have degree one on this copy. Put $m=|\mathcal C|$.
+  Thus there are at most $k$ background and cross colors altogether.
+
+  \emph{Background segments and the common partition.}
+  Fix $|z_i|=\varrho_i$ for $i\in\mathcal A$. With the cross amplitudes
+  zero, the potential is
+  $V_z(t)=\sum_{i\in\mathcal A}z_i\sigma_i\mathbf1_{I_i^T}(t)B_i$.
+  Write $P_z(t,s)$ for its evolution, and set
+  \[
+    \Lambda(t)=\lambda+\sum_{i\in\mathcal A}
+    \omega_i\mathbf1_{I_i^T}(t).
+  \]
+  For each $\rho>0$, Lemma~\ref{L:interval-contractions} gives
+  \[
+    \|A_\rho^{-1/2}V_z(t)A_\rho^{-1/2}\|
+    \le D(t)\rho^{a-2},\qquad
+    D(t)=\sum_{i\in\mathcal A}|z_i|\sigma_i d_i
+    \mathbf1_{I_i^T}(t)
+    \le\delta_a\Lambda(t)^{2-a}.
+  \]
+  The last step follows from~\eqref{E:split-radii} and
+  $\sum x_i^{2-a}\le(\sum x_i)^{2-a}$ for nonnegative $x_i$.
+  The spatial resolvents here include the identity on every Gaussian
+  factor. This is a deterministic operator inequality on their joint
+  Hilbert space; the input can depend on the background fields.
+
+  For the moment fix a tuple $(t_i)_{i\in\mathcal C}$ with
+  $t_i\in I_i^T$, all distinct and away from the background endpoints.
+  The excluded tuples have Lebesgue measure zero. Form the common
+  partition
+  \begin{equation}\label{E:split-partition}
+    0=\tau_0<\tau_1<\cdots<\tau_M=T
+  \end{equation}
+  from these times and all background endpoints in $(0,T)$.
+  On $(\tau_{j-1},\tau_j)$ let $\Lambda_j$ be the constant value of
+  $\Lambda$, and put $P_j=P_z(\tau_j,\tau_{j-1})$.
+  There are at most $2|\mathcal A|+m$ interior partition points, so
+  $M\le2|\mathcal A|+m+1\le3k+1$.
+  Lemma~\ref{L:interval-complex}, with its adjoint bound as stated there,
+  gives
+  \begin{equation}\label{E:split-segment-product}
+    \begin{split}
+      \prod_{j=1}^M\|P_j\|_{\mathcal H_{\Lambda_j}\to
+      \mathcal H_{\Lambda_j}}
+      &\le100^M\exp\left(2\sum_{j=1}^M
+      \Lambda_j(\tau_j-\tau_{j-1})\right)\\
+      &\le100^{3k+1}e^{4k}=:M_k,
+      \qquad \mathcal H_\rho=L^2(\Omega;X_\rho).
+    \end{split}
+  \end{equation}
+  Indeed, the sum in the exponential is exactly
+  $\lambda T+\sum_{i\in\mathcal A}\omega_i(b_i-a_i)
+  \le k+\sum_{i\in\mathcal A}k_i\le2k$.
+  Insertion times refine a partition; they do not repeat this integral.
+
+  \emph{Every identity between phase norms.}
+  Put $\Lambda_0=\Lambda_{M+1}=\lambda$.
+  At $\tau_j$ let $\mathscr I_j$ be the identity from
+  $\mathcal H_{\Lambda_j}$ to $\mathcal H_{\Lambda_{j+1}}$,
+  for $0\le j\le M$. Its norm is at most
+  \[
+    q_j:=\max\{1,\Lambda_j/\Lambda_{j+1}\}.
+  \]
+  This follows directly from the two components of the phase norm and
+  the spectral inequality
+  $A_{\Lambda_{j+1}}^{-1}\le q_j^2 A_{\Lambda_j}^{-1}$.
+  At an interior background endpoint, let $E_j,S_j,R_j$ denote the
+  ending, starting and remaining background colors. Then
+  \[
+    \frac{\Lambda_j}{\Lambda_{j+1}}
+    =\frac{\lambda+\sum_{R_j}\omega_i+\sum_{E_j}\omega_i}
+    {\lambda+\sum_{R_j}\omega_i+\sum_{S_j}\omega_i}
+    \le1+\sum_{E_j}\omega_i/\lambda
+    \le\prod_{i\in E_j}(1+\omega_i/\lambda).
+  \]
+  The last product is at least one, so it also bounds $q_j$.
+  At an insertion-only cut the heights agree and $q_j=1$.
+  Initially $q_0=1$. At $T$ the same inequality charges all intervals
+  with $b_i=T$ as ending there. Each connected $I_i^T$ ends at precisely
+  one such cut. Consequently,
+  \begin{equation}\label{E:interval-copy-metric}
+    \prod_{j=0}^M q_j
+    \le D_{\mathcal A}:=
+    \prod_{i\in\mathcal A}(1+k_i/(\lambda h_i)).
+  \end{equation}
+  This product includes the initial and final conversions. There is no
+  new copy of $D_{\mathcal A}$ at an insertion time or an overlapping
+  interval's start.
+
+  \emph{The cross-color subspaces and the word norm.}
+  Let $\mathscr G_i^{(0)}$ be the vacuum of color $i$ and
+  $\mathscr G_i^{(1)}$ its first Gaussian degree. For
+  $S\subset\mathcal C$, use the tensor subspace
+  \[
+    \mathscr Z_S=
+    \bigotimes_{i\in\mathcal A}\mathscr G_i^{\le N_i}
+    \otimes\bigotimes_{i\in S}\mathscr G_i^{(1)}
+    \otimes\bigotimes_{i\in\mathcal C\setminus S}
+    \mathscr G_i^{(0)},
+  \]
+  with every omitted Gaussian color in its vacuum and with the common
+  spatial band understood. Each $P_j$ preserves the corresponding
+  phase space over $\mathscr Z_S$: its potential acts only on colors in
+  $\mathcal A$, and its spatial operators act identically on all cross
+  Gaussian factors. The identities $\mathscr I_j$ preserve the same
+  tensor subspace.
+
+  Define $J_i(u,w)=(0,\sigma_i B_i u)$ for $i\in\mathcal C$.
+  If $i\notin S$, multiplication by its field takes its vacuum into
+  first Gaussian degree. The Hermite cutoff $N_i=2$ does not alter this
+  step. Thus $J_i$ maps the phase over $\mathscr Z_S$ into the phase
+  over $\mathscr Z_{S\cup\{i\}}$.
+  Collect all other Gaussian factors into $\mathscr R_i$.
+  Every input has the form $1_i\otimes(u,w)$, with
+  $(u,w)\in\mathscr R_i\otimes X_\rho$. The cutoffs on other
+  colors are identities on its retained degrees, which multiplication
+  by the color-$i$ field leaves unchanged. Hence
+  \[
+    J_i(1_i\otimes(u,w))
+    =\sigma_i\sum_{j=1}^{m_i}g_{ij}\otimes
+    (0,S_bM_{e_{ij}}S_bu).
+  \]
+  Orthogonality $\E[g_{ij}g_{il}]=\mathbf1_{\{j=l\}}$ gives
+  \[
+    \begin{split}
+      \|J_i(1_i\otimes(u,w))\|_{\mathcal H_\rho}^2
+      &=\sigma_i^2\sum_{j=1}^{m_i}
+      \|A_\rho^{-1/2}S_bM_{e_{ij}}S_bu
+      \|_{\mathscr R_i\otimes L^2_x}^2\\
+      &\le\sigma_i^2R_\alpha\rho^{\alpha-2}
+      \|u\|_{\mathscr R_i\otimes L^2_x}^2\\
+      &\le\sigma_i^2R_\alpha\rho^{\alpha-2}
+      \|1_i\otimes(u,w)\|_{\mathcal H_\rho}^2.
+    \end{split}
+  \]
+  The first inequality is~\eqref{E:interval-column} tensored with
+  $\mathscr R_i$ and allows arbitrary dependence on earlier colors.
+  Thus, at the insertion time,
+  \begin{equation}\label{E:split-fresh-insertion}
+    \|J_i\|\le\sigma_i\sqrt{R_\alpha}
+    \Lambda(t_i)^{(\alpha-2)/2}
+    \le c_i:=\sigma_i\sqrt{R_\alpha}\lambda^{(\alpha-2)/2}.
+  \end{equation}
+  Starting with $\mathscr Z_\varnothing$, these subspaces describe every
+  partial word. They justify each new-color estimate even though the
+  current vector depends on the background and earlier cross colors.
+  No occupied-color annihilation is estimated by a vacuum bound.
+
+  Equivalently, apply Lemma~\ref{L:finite-word-cutoff} to the cross
+  colors, with $\mathscr X$ containing the bounded background Gaussian
+  space and the spatial phase space. Background segments act only on
+  $\mathscr X$, and each cross color occurs once. Its cutoff is an
+  exact identity on every prefix of the selected word. This does not
+  identify an untruncated background propagator with a fixed cutoff.
+
+  At an interior cut $\tau_j$ let $B_j^{\rm cut}=J_i$ if
+  $\tau_j=t_i$ and let $B_j^{\rm cut}$ be the identity otherwise.
+  Apply $B_j^{\rm cut}$ after $\mathscr I_j$; at an insertion cut the
+  two heights are equal. The chronological word, as a map from
+  $\mathcal H_\lambda$ back to $\mathcal H_\lambda$, is exactly
+  \[
+    \mathcal W_{\mathcal A}(z,\boldsymbol t)
+    =\mathscr I_M P_M B_{M-1}^{\rm cut}\mathscr I_{M-1}P_{M-1}
+    \cdots B_1^{\rm cut}\mathscr I_1P_1\mathscr I_0.
+  \]
+  For $M=1$ this means $\mathscr I_1P_1\mathscr I_0$.
+  The rightmost factor acts first; no spatial operators are commuted.
+  Multiplying their norms, using the subspaces just specified,
+  gives the explicit bound
+  \begin{equation}\label{E:split-word-product}
+    \begin{split}
+      \|\mathcal W_{\mathcal A}(z,\boldsymbol t)v\|_\lambda
+      &\le\left(\prod_{j=1}^M\|P_j\|\right)
+      \left(\prod_{j=0}^M q_j\right)
+      \left(\prod_{i\in\mathcal C}c_i\right)\|v\|_\lambda\\
+      &\le M_kD_{\mathcal A}\|v\|_\lambda
+      \prod_{i\in\mathcal C}c_i.
+    \end{split}
+  \end{equation}
+  The background norm bound is on the joint Gaussian Hilbert space;
+  it is not obtained by conditioning on successive fields.
+
+  \emph{The insertion cube and vector Cauchy formula.}
+  Give the cross colors amplitudes $y_i$ and define the vector
+  \[
+    \Phi_{\mathcal A}(z)
+    :=\left[\prod_{i\in\mathcal C}y_i\right]
+    \mathcal M^{\rm cut}_{(z,y,0)}(T)v.
+  \]
+  Variation of constants about $P_z$ and iteration give a Dyson series.
+  A monomial of degree one in every $y_i$ uses exactly $m$ insertions,
+  with each distinct cross color used once. Hence
+  \begin{equation}\label{E:interval-cross-cube}
+    \Phi_{\mathcal A}(z)
+    =\sum_{\pi}\int_{D_\pi}
+    \mathcal W_{\mathcal A}(z,\boldsymbol t)v\,\ud\boldsymbol t,
+    \qquad
+    D_\pi=\left\{\boldsymbol t\in\prod_{i\in\mathcal C}I_i^T:
+    t_{\pi_1}<\cdots<t_{\pi_m}\right\}.
+  \end{equation}
+  Each ordered Dyson integral has coefficient one. The permutation
+  simplices $D_\pi$ partition the cube up to null diagonals. In particular,
+  \[
+    \sum_\pi |D_\pi|=\prod_{i\in\mathcal C}|I_i^T|
+    \le\prod_{i\in\mathcal C}h_i.
+  \]
+  Minkowski applied to~\eqref{E:interval-cross-cube} and the single-word
+  bound~\eqref{E:split-word-product} therefore gives
+  \begin{equation}\label{E:interval-cross-vector}
+    \|\Phi_{\mathcal A}(z)\|_\lambda
+    \le M_kD_{\mathcal A}\|v\|_\lambda
+    \prod_{i\in\mathcal C}c_i h_i.
+  \end{equation}
+  There is no factor $m!$ or $1/m!$ in this estimate. For $m=0$,
+  the cube has unit mass and $\Phi_{\mathcal A}(z)=P_z(T,0)v$.
+
+  The vector $\Phi_{\mathcal A}$ is entire in the background amplitudes.
+  On the first copy its coefficient is given by the normalized formula
+  \begin{equation}\label{E:split-vector-cauchy}
+    \begin{split}
+      U_{\boldsymbol r}v
+      ={}&\left(\prod_{i\in\mathcal A_r}\varrho_i^{-r_i}\right)
+      \int_{[0,2\pi]^{\mathcal A_r}}
+      e^{-i\sum_{i\in\mathcal A_r}r_i\theta_i}
+      \Phi_{\mathcal A_r}((\varrho_i e^{i\theta_i})_i)
+      \prod_{i\in\mathcal A_r}\frac{\ud\theta_i}{2\pi}.
+    \end{split}
+  \end{equation}
+  This is precisely the desired coefficient because each cross exponent
+  equals one and every omitted exponent is zero. The normalized angular
+  measure has total mass one. Thus~\eqref{E:interval-cross-vector}
+  bounds $\|U_{\boldsymbol r}v\|_\lambda$ with the additional factor
+  $\prod_{i\in\mathcal A_r}\varrho_i^{-r_i}$, and the identical
+  formula bounds the second copy using $\mathcal A_q,q_i$.
+  No holomorphic formula is applied to a squared norm.
+
+  \emph{The inner product and all constants.}
+  Since $\lambda=k/T$ and $k\ge1$,
+  \[
+    \|w\|_{1/T}\le k\|w\|_\lambda,\qquad
+    \|v\|_\lambda\le\|v\|_{1/T}.
+  \]
+  Cauchy--Schwarz between the two vectors on the same Gaussian space
+  now gives, before any constants are absorbed,
+  \begin{equation}\label{E:split-before-absorption}
+    \begin{split}
+      |\langle U_{\boldsymbol r}v,U_{\boldsymbol q}v
+      \rangle_{\mathcal H_{1/T}}|
+      \le{}&k^2 M_k^2D_{\mathcal A_r}D_{\mathcal A_q}
+      \|v\|_{1/T}^2
+      \prod_{i\in\mathcal B}\varrho_i^{-2k_i}\\
+      &\quad\times\prod_{i\in\mathcal C}
+      (R_\alpha\sigma_i^2h_i^2\lambda^{\alpha-2}).
+    \end{split}
+  \end{equation}
+  The radius exponent is $r_i+q_i=2k_i$. The metric product is exactly
+  \[
+    D_{\mathcal A_r}D_{\mathcal A_q}
+    =\prod_{i\in\mathcal B}(1+k_i/(\lambda h_i))^{\ell_i}.
+  \]
+  In particular, a singleton on only one copy has one ending charge,
+  not two. For every $i\in\mathcal B$, $d_i^2\le12k_iR_\alpha$ gives
+  \begin{equation}\label{E:split-radius-factorial}
+    \begin{split}
+      \varrho_i^{-2k_i}
+      &=\left(\frac{\sigma_i^2d_i^2}{\delta_a^2}\right)^{k_i}
+      \left(\frac{h_i}{k_i}\right)^{(4-\alpha)k_i}\\
+      &\le(12\delta_a^{-2})^{k_i}
+      (R_\alpha\sigma_i^2h_i^{4-\alpha})^{k_i}
+      k_i^{-(3-\alpha)k_i}\\
+      &\le(12\delta_a^{-2})^{k_i}
+      \frac{(R_\alpha\sigma_i^2h_i^{4-\alpha})^{k_i}}
+      {(k_i!)^{3-\alpha}}.
+    \end{split}
+  \end{equation}
+  The last step uses $k_i!\le k_i^{k_i}$.
+  Finally,
+  \[
+    M_k^2=100^{6k+2}e^{8k}\le(100^8e^8)^k,
+    \qquad |\mathcal C|+\sum_{i\in\mathcal B}k_i=k.
+  \]
+  Substituting these inequalities in~\eqref{E:split-before-absorption}
+  proves~\eqref{E:fixed-split-bound} with the explicit admissible choice
+  \begin{equation}\label{E:split-explicit-constant}
+    C_{\rm split}=100^8e^8
+    \max\{1,12\delta_{\alpha/2}^{-2}\}.
+  \end{equation}
+  This constant depends only on $\alpha$. No permutation, Gaussian-mode,
+  inventory-size or further degree factor remains. The projected initial
+  phase has norm at most the displayed original $\|v\|_{1/T}$.
+  This proves Lemma~\ref{L:fixed-split}.
+\end{proof}

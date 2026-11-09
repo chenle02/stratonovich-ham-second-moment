@@ -520,3 +520,8 @@ The standalone receipt remains `LOCAL_DEVELOPMENT_PASS`, not an official
 lean-pkg or companion gate. No source, type, compiler pin, fact count,
 analytic boundary or proposed-companion approval is changed by this scope
 clarification. Historical application reviews keep their original scope.
+
+
+## Provisional selected finite-word cutoff induction
+
+local-checks/hermite-word-v1/ proves abstract graded-support induction and exact ordered projection insertion from explicit vacuum, degree-growth, frame-preservation and projection-fixing premises. No commutation premise or assumed prefix/cutoff equality. Private scalar coefficient recurrence includes lowering and exact low-order contractions. Actual normalized Hermite/Gaussian Hilbert realization, arbitrary spatial operators, Bochner integration, full propagator identity, cutoff limits and SPDE theorem are OUTSIDE this kernel claim. Application to manuscript L:finite-word-cutoff and the cross-color prefix of L:fixed-split remains pending independent type/application review. Two provisional facts add no accepted count.

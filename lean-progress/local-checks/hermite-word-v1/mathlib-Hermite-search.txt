@@ -1,0 +1,3 @@
+noncomputable def hermite : ℕ → Polynomial ℤ
+theorem hermite_succ (n : ℕ) : hermite (n + 1) = X * hermite n - derivative (hermite n) := by
+theorem natDegree_hermite {n : ℕ} : (hermite n).natDegree = n :=

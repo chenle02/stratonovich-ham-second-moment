@@ -160,3 +160,13 @@ SourceSHA4d3f8ee4350f96d5936a4b213c7aff5a312218743ee43b885e3c91a3b100cbcd,
 local-checks/white-cdf-v1/. Currentapplication-summary-v1 separates accepted
 usefromrawpending-statuscompile/guardreceipts.80acceptedfacts22localseams;
 noH1/CDF/integral/Gamma/supremum/PDEkerneltheoremorofficialpackagegate.
+
+
+## Provisional finite-word cutoff: StratonovichHAMAudit.HermiteWord
+
+| Public name | Exact type/application boundary | Status |
+|---|---|---|
+| raw_support | Any types C,B,V, decidable color equality; vacuumGood0, J raises degree upper bound by one in its color, F preserves bound. Ordered word satisfies coordinate occurrence-count bound. | Kernel/audit/source-only replay PASS; initial FIT pending |
+| cut_eq_raw | Same premises, P fixes every Good(d) vector for d<=N and total per-color count<=N; inserting P before/after each J preserves ordered word. | Same;2provisional,0acceptedadded |
+
+Exact full public headers/types in local-checks/hermite-word-v1/. Private scalar Hermite-coefficient recurrence consumer is not a third public fact; actual Gaussian/Hilbert/analytic applications remain outsideLean.
