@@ -1,0 +1,16 @@
+import GaussianChaos.ChaosDensity
+
+set_option autoImplicit false
+universe u
+
+-- A proposed closed proposition, TYPE CHECK ONLY: no proof is asserted.
+#check (∀ {Mode : Type u} [DecidableEq Mode]
+    (ν : Mode →₀ ℕ) (j : Mode) (ω : Mode → ℝ),
+    ω j * (GaussianChaos.WienerChaos.Hm ν ω /
+      Real.sqrt (GaussianChaos.WienerChaos.mfact ν)) =
+      Real.sqrt ((ν j : ℝ) + 1) *
+        (GaussianChaos.WienerChaos.Hm (ν + Finsupp.single j 1) ω /
+          Real.sqrt (GaussianChaos.WienerChaos.mfact (ν + Finsupp.single j 1))) +
+      Real.sqrt (ν j : ℝ) *
+        (GaussianChaos.WienerChaos.Hm (ν - Finsupp.single j 1) ω /
+          Real.sqrt (GaussianChaos.WienerChaos.mfact (ν - Finsupp.single j 1))))

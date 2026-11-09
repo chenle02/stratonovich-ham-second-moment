@@ -1,0 +1,34 @@
+GaussianChaos.GaussianProduct.noise.{u_1} : (ι : Type u_1) → MeasureTheory.Measure.{u_1} (ι → ℝ)
+def GaussianChaos.WienerChaos.He : ℕ → Polynomial.{0} ℝ :=
+fun n => Polynomial.map.{0, 0} (Int.castRingHom.{0} ℝ) (Polynomial.hermite n)
+def GaussianChaos.WienerChaos.Hm.{u_1} : {ι : Type u_1} → Finsupp.{u_1, 0} ι ℕ → (ι → ℝ) → ℝ :=
+fun {ι} α ω => ∏ i ∈ Finsupp.support.{u_1, 0} α, Polynomial.eval.{0} (ω i) (GaussianChaos.WienerChaos.He (α i))
+def GaussianChaos.WienerChaos.mfact.{u_1} : {ι : Type u_1} → Finsupp.{u_1, 0} ι ℕ → ℝ :=
+fun {ι} α => ∏ i ∈ Finsupp.support.{u_1, 0} α, ↑(α i).factorial
+def GaussianChaos.ChaosDensity.hermiteNormalized.{u_1} : {ι : Type u_1} →
+  Finsupp.{u_1, 0} ι ℕ → ↥(MeasureTheory.Lp.{0, u_1} ℝ 2 (GaussianChaos.GaussianProduct.noise.{u_1} ι)) :=
+fun {ι} α =>
+  HSMul.hSMul.{0, u_1, u_1} (Inv.inv.{0} √(GaussianChaos.WienerChaos.mfact.{u_1} α))
+    (GaussianChaos.ChaosDensity.hermiteLp.{u_1} α)
+@GaussianChaos.ChaosDensity.coord_mul_Hm.{u_1} : ∀ {ι : Type u_1} [DecidableEq.{u_1 + 1} ι] (α : Finsupp.{u_1, 0} ι ℕ)
+  (j : ι) (ω : ι → ℝ),
+  Eq.{1} (HMul.hMul.{0, 0, 0} (ω j) (GaussianChaos.WienerChaos.Hm.{u_1} α ω))
+    (HAdd.hAdd.{0, 0, 0}
+      (GaussianChaos.WienerChaos.Hm.{u_1} (HAdd.hAdd.{u_1, u_1, u_1} α (Finsupp.single.{u_1, 0} j 1)) ω)
+      (HMul.hMul.{0, 0, 0} (↑(α j))
+        (GaussianChaos.WienerChaos.Hm.{u_1} (HSub.hSub.{u_1, u_1, u_1} α (Finsupp.single.{u_1, 0} j 1)) ω)))
+@GaussianChaos.ChaosDensity.orthonormal_hermite.{u_1} : ∀ {ι : Type u_1},
+  Orthonormal.{0, u_1, u_1} ℝ GaussianChaos.ChaosDensity.hermiteNormalized.{u_1}
+@GaussianChaos.ChaosDensity.hermiteBasis.{u_1} : {ι : Type u_1} →
+  HilbertBasis.{u_1, 0, u_1} (Finsupp.{u_1, 0} ι ℕ) ℝ
+    ↥(MeasureTheory.Lp.{0, u_1} ℝ 2 (GaussianChaos.GaussianProduct.noise.{u_1} ι))
+GaussianChaos.ChaosDensity.hermiteBasis.{0} : HilbertBasis.{0, 0, 0} (Finsupp.{0, 0} (Fin 2) ℕ) ℝ
+  ↥(MeasureTheory.Lp.{0, 0} ℝ 2 (GaussianChaos.GaussianProduct.noise.{0} (Fin 2)))
+'GaussianChaos.ChaosDensity.coord_mul_Hm' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+'GaussianChaos.ChaosDensity.orthonormal_hermite' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+'GaussianChaos.ChaosDensity.hermiteBasis' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@orthonormal_iff_ite.{u_1, u_2,
+    u_3} : ∀ {𝕜 : Type u_1} {E : Type u_2} [inst : RCLike.{u_1} 𝕜] [inst_1 : SeminormedAddCommGroup.{u_2} E]
+  [inst_2 : InnerProductSpace.{u_1, u_2} 𝕜 E] {ι : Type u_3} [inst_3 : DecidableEq.{u_3 + 1} ι] {v : ι → E},
+  Orthonormal.{u_1, u_2, u_3} 𝕜 v ↔
+    ∀ (i j : ι), Eq.{u_1 + 1} (inner.{u_1, u_2} 𝕜 (v i) (v j)) (ite.{u_1 + 1} (Eq.{u_3 + 1} i j) 1 0)
