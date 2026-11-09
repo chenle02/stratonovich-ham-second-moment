@@ -1,0 +1,60 @@
+{
+  "status": "LOCAL_VERIFIED_POINTWISE_NORMALIZATION_STATEMENT_APPLICATION_HIGH",
+  "scope": "Canonical real normalized Hermite polynomial coordinate identity only",
+  "public_theorems": 1,
+  "private_factorial_helpers": 2,
+  "private_consumer_facts_not_added": true,
+  "source_sha256": "594e4b17b0935e829660e916e4bca5cb7e5b056abdde3e3853af350371e76222",
+  "frozen_statement_sha256": "38c89d8d0626fe279c6000089262da074d42899adbf8b2308519265627d490d1",
+  "exact_frozen_prop_assignment_pass": true,
+  "statement_review": {
+    "raw_sha256": "df425444e1bb1b09328bc91c885ebb227fce5b901853a6ce584b8a210e866d02",
+    "confidence": "high",
+    "all_six_checks": "PASS",
+    "required_repairs": [],
+    "coverage_verified": true,
+    "model_actual": "claude-opus-5-5",
+    "source_revision": "943a216d3d68a403a9e9a4d36e635eda5ee33203"
+  },
+  "lean_pkg": "0.28.0",
+  "lean": "4.35.0",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "proof_compile_seconds": 3.2708689930150285,
+  "proof_compile_exit": 0,
+  "leaf_source_replay_exit": 0,
+  "leaf_object_byte_equal": true,
+  "leaf_audit_byte_equal": true,
+  "replay_import_boundary": "The seven exact-source foundation objects from reuse-probes/gaussian-basis-028-v1 are reused at their hashes. This replay freshly rebuilds only the owned normalization leaf, not the full dependency closure.",
+  "semantic_negative_control": {
+    "missing_lowering_term": {
+      "exit": 1,
+      "only_diagnostic": "unsolved goals: False",
+      "source": "WrongLowering.lean"
+    }
+  },
+  "positive_controls": [
+    "exact proposed closed Prop assigned to compiled theorem",
+    "degree-one polynomial at zero is zero",
+    "degree-two polynomial at zero is minus one",
+    "degree-two factorial normalization is two",
+    "nonzero vacuum lowering term cancels raised degree-two value",
+    "two-active-coordinate normalized Gaussian L2 squared norm is one"
+  ],
+  "prior_facts_unchanged": 80,
+  "accepted_local_facts_after": 81,
+  "accepted_local_seams_after": 23,
+  "old_abstract_word_facts_still_provisional": 2,
+  "official_registry_receipt": false,
+  "new_package": false,
+  "companion_created": false,
+  "cluster_jobs": [],
+  "physical_vector_word_projection_or_SPDE_formalized": false,
+  "reuse_evidence": "../../reuse-probes/gaussian-basis-028-v1/README.md",
+  "paper_consumer": "Frozen267 L:fock-form sourceLF5516-5518; excerpt and bindings in ../../statement-proposals/normalized-coordinate-v1/",
+  "archive_sha256": "ac86bfdf6b9bb8836c88195bd84569c94d466573e8b3a4113c32a1c3ca603313"
+}

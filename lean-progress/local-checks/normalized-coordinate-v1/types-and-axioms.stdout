@@ -1,0 +1,17 @@
+@StratonovichHAMAudit.NormalizedCoordinate.normalized_coordinate.{u_1} : ∀ {Mode : Type u_1}
+  [DecidableEq.{u_1 + 1} Mode] (ν : Finsupp.{u_1, 0} Mode ℕ) (j : Mode) (ω : Mode → ℝ),
+  Eq.{1}
+    (HMul.hMul.{0, 0, 0} (ω j)
+      (HDiv.hDiv.{0, 0, 0} (GaussianChaos.WienerChaos.Hm.{u_1} ν ω) √(GaussianChaos.WienerChaos.mfact.{u_1} ν)))
+    (HAdd.hAdd.{0, 0, 0}
+      (HMul.hMul.{0, 0, 0} (√(HAdd.hAdd.{0, 0, 0} (↑(ν j)) 1))
+        (HDiv.hDiv.{0, 0, 0}
+          (GaussianChaos.WienerChaos.Hm.{u_1} (HAdd.hAdd.{u_1, u_1, u_1} ν (Finsupp.single.{u_1, 0} j 1)) ω)
+          √(GaussianChaos.WienerChaos.mfact.{u_1} (HAdd.hAdd.{u_1, u_1, u_1} ν (Finsupp.single.{u_1, 0} j 1)))))
+      (HMul.hMul.{0, 0, 0} (√↑(ν j))
+        (HDiv.hDiv.{0, 0, 0}
+          (GaussianChaos.WienerChaos.Hm.{u_1} (HSub.hSub.{u_1, u_1, u_1} ν (Finsupp.single.{u_1, 0} j 1)) ω)
+          √(GaussianChaos.WienerChaos.mfact.{u_1} (HSub.hSub.{u_1, u_1, u_1} ν (Finsupp.single.{u_1, 0} j 1))))))
+'StratonovichHAMAudit.NormalizedCoordinate.normalized_coordinate' depends on axioms: [propext,
+ Classical.choice.{u},
+ Quot.sound.{u}]
