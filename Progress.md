@@ -17936,3 +17936,8 @@ Root read all263rows plus findings/limitations. Original90048byte raw SHA5016c36
 ## 2026-11-09:paired Kimi whole v4 MEDIUM adjudicated without promotion
 
 Root read all263rows/coverage/findings/limitations. Canonical schema PASS/exact215OWN26nonOWN13joins9global IDs/primary labels once; literalPASS_WITH_NOTES/MEDIUM,229PASS34PASS_WITH_NOTES,zero fatal/major/repairs,8minor5limitations. RawSHA9c7f90df05d4bf7dbd0cefb206c0f20abd66a159353e85081c02bd92eba1fdc2. Correct unsupported fresh-coverage claims for retired early opinions/candidateDIFF/F128, and distinguish Root computations from independent reviewer derivations. Actualcontext716173,aggregateinputUNKNOWN/output754847. Exactsame2297103byte user body as DSv4; no midwave newreport feed. Evidence reviews/2026-11-09-kimi-whole-v4-medium-unaccepted/. Both mathematicalHIGH gates remain unmet; no source/PDF/threshold change.
+
+
+## 2026-11-09:pixel59 empty terminal, one recovery pixel60 ready
+
+Actual single pages230-233 turn ended end_turn with0 public bytes/no report/no credit. Context73355,aggregate counters unchanged5981588input291569output. Preserve raw/fence/receipt. One separate missing-report recovery pixel60 prepared, same16images/source pins/guards;631789input/+311296=943085. Needs separate Root authority after durable readiness; repeated empty result requires diagnosis, no blind loop. Evidence reviews/2026-11-09-main-pixel59-empty-pixel60-recovery-ready/. Main229/267 accepted,38remain.
