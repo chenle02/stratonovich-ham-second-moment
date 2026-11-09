@@ -525,3 +525,8 @@ clarification. Historical application reviews keep their original scope.
 ## Provisional selected finite-word cutoff induction
 
 local-checks/hermite-word-v1/ proves abstract graded-support induction and exact ordered projection insertion from explicit vacuum, degree-growth, frame-preservation and projection-fixing premises. No commutation premise or assumed prefix/cutoff equality. Private scalar coefficient recurrence includes lowering and exact low-order contractions. Actual normalized Hermite/Gaussian Hilbert realization, arbitrary spatial operators, Bochner integration, full propagator identity, cutoff limits and SPDE theorem are OUTSIDE this kernel claim. Application to manuscript L:finite-word-cutoff and the cross-color prefix of L:fixed-split remains pending independent type/application review. Two provisional facts add no accepted count.
+
+
+## Gaussian basis primitive is available; actual word instance still open
+
+The bounded0.28reuse probe builds7exact borrowed modules from GaussianChaos87e02e09 andWalshc111340 at4.35/Mathlib56a0058. Actual normalized Hermite products form a verified scalarL2(noise) Hilbert basis; raw coordinate recurrence includes lowering. These are imported existing classical facts, not newownedpaperclaims or an officialpackage gate. Gaussian probabilityL2 is distinct from rawH_I and spatialphase spaces. The initialhermite-word-v1 claim/consumer remains abstract/provisional; normalizedweighted coordinate implementation, arbitraryphysical-vector/coloredprojections, sourceintertwining, Bochner/cutoff/SPDE limits remain unproved in that fixture. Do not infer those from sourceavailability or a norm1 smoke control. Accepted80facts22seams andoldanalyticboundaries remain unchanged.

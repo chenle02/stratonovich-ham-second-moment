@@ -1,0 +1,952 @@
+{
+  "original_sha256": "4c140ed5faf13c1b2c3d18c05d61fa0cfc69ad6c35d5f82f4062a85e31a110d3",
+  "note": "Derived relative-locator transcription; exact original remains in the local source-bound evidence archive.",
+  "data": {
+    "cache": {
+      "root": "default",
+      "writes": [
+        "palomar/snapshots-v1/838.json"
+      ]
+    },
+    "complete": false,
+    "coverage": {
+      "claims": 32,
+      "declaration_files_capped": [],
+      "declaration_hits_omitted": 0,
+      "declaration_only": 20,
+      "not_searched": [
+        "<PRIVATE-PACKAGE>",
+        "gaussian-chaos-lean",
+        "<PRIVATE-PACKAGE>",
+        "rough-heat-kernel",
+        "<PRIVATE-PACKAGE>",
+        "walsh-integral"
+      ],
+      "not_searched_reasons": [
+        {
+          "code": "no-checkout",
+          "detail": null,
+          "package": "<PRIVATE-PACKAGE>",
+          "remedy": "local_path is not a directory on this host; see `lean-pkg status <PRIVATE-PACKAGE> --fields local_path,repo` and clone the repository there"
+        },
+        {
+          "code": "no-checkout",
+          "detail": null,
+          "package": "gaussian-chaos-lean",
+          "remedy": "local_path is not a directory on this host; see `lean-pkg status gaussian-chaos-lean --fields local_path,repo` and clone the repository there"
+        },
+        {
+          "code": "no-checkout",
+          "detail": null,
+          "package": "<PRIVATE-PACKAGE>",
+          "remedy": "local_path is not a directory on this host; see `lean-pkg status <PRIVATE-PACKAGE> --fields local_path,repo` and clone the repository there"
+        },
+        {
+          "code": "no-checkout",
+          "detail": null,
+          "package": "rough-heat-kernel",
+          "remedy": "local_path is not a directory on this host; see `lean-pkg status rough-heat-kernel --fields local_path,repo` and clone the repository there"
+        },
+        {
+          "code": "no-checkout",
+          "detail": null,
+          "package": "<PRIVATE-PACKAGE>",
+          "remedy": "local_path is not a directory on this host; see `lean-pkg status <PRIVATE-PACKAGE> --fields local_path,repo` and clone the repository there"
+        },
+        {
+          "code": "no-checkout",
+          "detail": null,
+          "package": "walsh-integral",
+          "remedy": "local_path is not a directory on this host; see `lean-pkg status walsh-integral --fields local_path,repo` and clone the repository there"
+        }
+      ]
+    },
+    "date": "2026-11-09",
+    "loogle_query": "Polynomial.hermite",
+    "offline": false,
+    "ok": true,
+    "package": null,
+    "route": "natural-language",
+    "searched": 7,
+    "skipped_sources": [],
+    "sources": [
+      {
+        "cache_writes": [],
+        "cap_limit": null,
+        "capped": [],
+        "hits": [
+          {
+            "decl": "RMTFoundations.TracyWidom.GUEHermite.hermite_christoffel_darboux_cross",
+            "file": "RMTFoundations/TracyWidom/GUEHermite.lean",
+            "hit_kind": "claim",
+            "id": "rmt-foundations/tw-guehermite-hermite-christoffel-darboux-cross",
+            "kind": "theorem",
+            "package": "rmt-foundations",
+            "pin": "b924561d77d6b9f203221692c907ccc05e8aa11e",
+            "repo": null,
+            "score": 1,
+            "source": "registry",
+            "status": "internal",
+            "summary": "Literal normalized Hermite CD, including the diagonal cross identity.",
+            "trust": "comparator",
+            "where": "token"
+          },
+          {
+            "decl": "RMTFoundations.TracyWidom.GUEHermite.hermiteMode",
+            "file": "RMTFoundations/TracyWidom/GUEHermite.lean",
+            "hit_kind": "claim",
+            "id": "rmt-foundations/tw-guehermite-hermitemode",
+            "kind": "definition",
+            "package": "rmt-foundations",
+            "pin": "b924561d77d6b9f203221692c907ccc05e8aa11e",
+            "repo": null,
+            "score": 1,
+            "source": "registry",
+            "status": "reusable",
+            "summary": "The actual normalized probabilists' Hermite oscillator functions.",
+            "trust": "comparator",
+            "where": "token"
+          },
+          {
+            "decl": "RMTFoundations.TracyWidom.GUEProjection.hermiteFunction_orthogonality",
+            "file": "RMTFoundations/TracyWidom/GUEHermiteFunctions.lean",
+            "hit_kind": "claim",
+            "id": "rmt-foundations/tw-gueprojection-hermitefunction-orthogonality",
+            "kind": "theorem",
+            "package": "rmt-foundations",
+            "pin": "b924561d77d6b9f203221692c907ccc05e8aa11e",
+            "repo": null,
+            "score": 1,
+            "source": "registry",
+            "status": "internal",
+            "summary": "The normalized probabilists Hermite functions have exact Lebesgue orthogonality.",
+            "trust": "comparator",
+            "where": "token"
+          },
+          {
+            "decl": "RMTFoundations.TracyWidom.GUEProjection.hermiteKernel_cd",
+            "file": "RMTFoundations/TracyWidom/GUEHermiteKernel.lean",
+            "hit_kind": "claim",
+            "id": "rmt-foundations/tw-gueprojection-hermitekernel-cd",
+            "kind": "theorem",
+            "package": "rmt-foundations",
+            "pin": "b924561d77d6b9f203221692c907ccc05e8aa11e",
+            "repo": null,
+            "score": 1,
+            "source": "registry",
+            "status": "internal",
+            "summary": "The physical normalized Hermite projection kernel obeys the Christoffel-Darboux identity.",
+            "trust": "comparator",
+            "where": "token"
+          },
+          {
+            "decl": "RMTFoundations.TracyWidom.GUEProjection.hermiteKernel_projection",
+            "file": "RMTFoundations/TracyWidom/GUEHermiteKernel.lean",
+            "hit_kind": "claim",
+            "id": "rmt-foundations/tw-gueprojection-hermitekernel-projection",
+            "kind": "theorem",
+            "package": "rmt-foundations",
+            "pin": "b924561d77d6b9f203221692c907ccc05e8aa11e",
+            "repo": null,
+            "score": 1,
+            "source": "registry",
+            "status": "internal",
+            "summary": "The finite normalized Hermite kernel is an integral projection.",
+            "trust": "comparator",
+            "where": "token"
+          },
+          {
+            "decl": "RMTFoundations.TracyWidom.GUEProjection.hermiteVector_orthonormal",
+            "file": "RMTFoundations/TracyWidom/GUEHermiteFunctions.lean",
+            "hit_kind": "claim",
+            "id": "rmt-foundations/tw-gueprojection-hermitevector-orthonormal",
+            "kind": "theorem",
+            "package": "rmt-foundations",
+            "pin": "b924561d77d6b9f203221692c907ccc05e8aa11e",
+            "repo": null,
+            "score": 1,
+            "source": "registry",
+            "status": "internal",
+            "summary": "The actual normalized Hermite L2 vectors form an orthonormal family.",
+            "trust": "comparator",
+            "where": "token"
+          },
+          {
+            "decl": "RMTFoundations.TracyWidom.GUEProjectionDeterminant.projectionGap_eq_gram_det",
+            "file": "RMTFoundations/TracyWidom/GUEProjectionDeterminant.lean",
+            "hit_kind": "claim",
+            "id": "rmt-foundations/tw-gueprojectiondeterminant-projectiongap-equality-gram-det",
+            "kind": "theorem",
+            "package": "rmt-foundations",
+            "pin": "b924561d77d6b9f203221692c907ccc05e8aa11e",
+            "repo": null,
+            "score": 1,
+            "source": "registry",
+            "status": "internal",
+            "summary": "The normalized finite projection gap equals the determinant of the truncated Hermite Gram matrix.",
+            "trust": "comparator",
+            "where": "token"
+          },
+          {
+            "decl": "RMTFoundations.TracyWidom.GUEProjectionLaw.projectionGap_density_integral",
+            "file": "RMTFoundations/TracyWidom/GUEProjectionLaw.lean",
+            "hit_kind": "claim",
+            "id": "rmt-foundations/tw-gueprojectionlaw-projectiongap-density-integral",
+            "kind": "theorem",
+            "package": "rmt-foundations",
+            "pin": "b924561d77d6b9f203221692c907ccc05e8aa11e",
+            "repo": null,
+            "score": 1,
+            "source": "registry",
+            "status": "internal",
+            "summary": "The one-time finite Hermite projection gap is its normalized density integral.",
+            "trust": "comparator",
+            "where": "token"
+          },
+          {
+            "decl": "RMTFoundations.TracyWidom.GUEProjectionLaw.projectionLaw",
+            "file": "RMTFoundations/TracyWidom/GUEProjectionLaw.lean",
+            "hit_kind": "claim",
+            "id": "rmt-foundations/tw-gueprojectionlaw-projectionlaw",
+            "kind": "definition",
+            "package": "rmt-foundations",
+            "pin": "b924561d77d6b9f203221692c907ccc05e8aa11e",
+            "repo": null,
+            "score": 1,
+            "source": "registry",
+            "status": "internal",
+            "summary": "The finite determinantal Hermite density defines a genuine normalized eigenvalue probability measure.",
+            "trust": "comparator",
+            "where": "token"
+          },
+          {
+            "decl": "RMTFoundations.TracyWidom.HermiteAiryVolterra.edge_mode_volterra",
+            "file": "RMTFoundations/TracyWidom/HermiteAiryVolterra.lean",
+            "hit_kind": "claim",
+            "id": "rmt-foundations/tw-hermiteairyvolterra-edge-mode-volterra",
+            "kind": "theorem",
+            "package": "rmt-foundations",
+            "pin": "b924561d77d6b9f203221692c907ccc05e8aa11e",
+            "repo": null,
+            "score": 1,
+            "source": "registry",
+            "status": "internal",
+            "summary": "The actual finite normalized Hermite edge mode has the exact Airy variation-of-constants representation.",
+            "trust": "comparator",
+            "where": "token"
+          },
+          {
+            "decl": "RMTFoundations.TracyWidom.HermiteEdgeReduction.edgeSlope_hasDerivAt",
+            "file": "RMTFoundations/TracyWidom/HermiteEdgeReduction.lean",
+            "hit_kind": "claim",
+            "id": "rmt-foundations/tw-hermiteedgereduction-edgeslope-hasderivat",
+            "kind": "theorem",
+            "package": "rmt-foundations",
+            "pin": "b924561d77d6b9f203221692c907ccc05e8aa11e",
+            "repo": null,
+            "score": 1,
+            "source": "registry",
+            "status": "internal",
+            "summary": "The genuinely normalized Hermite edge mode obeys its exact rescaled second-order equation.",
+            "trust": "comparator",
+            "where": "token"
+          },
+          {
+            "decl": "RMTFoundations.TracyWidom.HermiteLimits.adjacent_tendsto",
+            "file": "RMTFoundations/TracyWidom/HermiteLimits.lean",
+            "hit_kind": "claim",
+            "id": "rmt-foundations/tw-hermitelimits-adjacent-tendsto",
+            "kind": "theorem",
+            "package": "rmt-foundations",
+            "pin": "b924561d77d6b9f203221692c907ccc05e8aa11e",
+            "repo": null,
+            "score": 1,
+            "source": "registry",
+            "status": "internal",
+            "summary": "The actual neighboring normalized Hermite edge mode converges pointwise to Ai.",
+            "trust": "comparator",
+            "where": "token"
+          },
+          {
+            "decl": "RMTFoundations.TracyWidom.HermiteLimits.locally_uniform",
+            "file": "RMTFoundations/TracyWidom/HermiteLimits.lean",
+            "hit_kind": "claim",
+            "id": "rmt-foundations/tw-hermitelimits-locally-uniform",
+            "kind": "theorem",
+            "package": "rmt-foundations",
+            "pin": "b924561d77d6b9f203221692c907ccc05e8aa11e",
+            "repo": null,
+            "score": 1,
+            "source": "registry",
+            "status": "internal",
+            "summary": "The actual normalized Hermite edge mode converges uniformly to Ai on every bounded real window.",
+            "trust": "comparator",
+            "where": "token"
+          }
+        ],
+        "incomplete": "6 registered package(s) not searched (no checkout) (see the coverage line)",
+        "partial": [],
+        "reason": null,
+        "revision": "sha256:db01898b4a20",
+        "route": "natural-language",
+        "source": "registry",
+        "state": "ok",
+        "total": null
+      },
+      {
+        "cache_writes": [],
+        "cap_limit": null,
+        "capped": [],
+        "hits": [],
+        "incomplete": null,
+        "partial": [],
+        "reason": null,
+        "revision": "git:6d3ff0cbc77c",
+        "route": "natural-language",
+        "source": "index",
+        "state": "ok",
+        "total": null
+      },
+      {
+        "cache_writes": [],
+        "cap_limit": null,
+        "capped": [],
+        "hits": [
+          {
+            "extra": {
+              "module": "Mathlib.RingTheory.Polynomial.Hermite.Basic",
+              "type": ": \u2115 \u2192 Polynomial \u2124"
+            },
+            "name": "Polynomial.hermite",
+            "summary": "the probabilists' Hermite polynomials.",
+            "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Polynomial.hermite#doc"
+          },
+          {
+            "extra": {
+              "module": "Mathlib.RingTheory.Polynomial.Hermite.Basic",
+              "type": "(n : \u2115) : (Polynomial.hermite n).Monic"
+            },
+            "name": "Polynomial.hermite_monic",
+            "summary": "(n : \u2115) : (Polynomial.hermite n).Monic",
+            "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Polynomial.hermite_monic#doc"
+          },
+          {
+            "extra": {
+              "module": "Mathlib.RingTheory.Polynomial.Hermite.Basic",
+              "type": "{n : \u2115} : (Polynomial.hermite n).natDegree = n"
+            },
+            "name": "Polynomial.natDegree_hermite",
+            "summary": "{n : \u2115} : (Polynomial.hermite n).natDegree = n",
+            "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Polynomial.natDegree_hermite#doc"
+          },
+          {
+            "extra": {
+              "module": "Mathlib.RingTheory.Polynomial.Hermite.Basic",
+              "type": ": Polynomial.hermite 1 = Polynomial.X"
+            },
+            "name": "Polynomial.hermite_one",
+            "summary": ": Polynomial.hermite 1 = Polynomial.X",
+            "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Polynomial.hermite_one#doc"
+          },
+          {
+            "extra": {
+              "module": "Mathlib.RingTheory.Polynomial.Hermite.Basic",
+              "type": "(n : \u2115) : (Polynomial.hermite n).leadingCoeff = 1"
+            },
+            "name": "Polynomial.leadingCoeff_hermite",
+            "summary": "(n : \u2115) : (Polynomial.hermite n).leadingCoeff = 1",
+            "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Polynomial.leadingCoeff_hermite#doc"
+          },
+          {
+            "extra": {
+              "module": "Mathlib.RingTheory.Polynomial.Hermite.Basic",
+              "type": "(n : \u2115) : (Polynomial.hermite n).degree = \u2191n"
+            },
+            "name": "Polynomial.degree_hermite",
+            "summary": "(n : \u2115) : (Polynomial.hermite n).degree = \u2191n",
+            "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Polynomial.degree_hermite#doc"
+          },
+          {
+            "extra": {
+              "module": "Mathlib.RingTheory.Polynomial.Hermite.Basic",
+              "type": "(n : \u2115) : (Polynomial.hermite n).coeff n = 1"
+            },
+            "name": "Polynomial.coeff_hermite_self",
+            "summary": "(n : \u2115) : (Polynomial.hermite n).coeff n = 1",
+            "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Polynomial.coeff_hermite_self#doc"
+          },
+          {
+            "extra": {
+              "module": "Mathlib.RingTheory.Polynomial.Hermite.Basic",
+              "type": "{n k : \u2115} (hnk : n < k) : (Polynomial.hermite n).coeff k = 0"
+            },
+            "name": "Polynomial.coeff_hermite_of_lt",
+            "summary": "{n k : \u2115} (hnk : n < k) : (Polynomial.hermite n).coeff k = 0",
+            "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Polynomial.coeff_hermite_of_lt#doc"
+          },
+          {
+            "extra": {
+              "module": "Mathlib.RingTheory.Polynomial.Hermite.Basic",
+              "type": "{n k : \u2115} (hnk : Odd (n + k)) : (Polynomial.hermite n).coeff k = 0"
+            },
+            "name": "Polynomial.coeff_hermite_of_odd_add",
+            "summary": "{n k : \u2115} (hnk : Odd (n + k)) : (Polynomial.hermite n).coeff k = 0",
+            "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Polynomial.coeff_hermite_of_odd_add#doc"
+          },
+          {
+            "extra": {
+              "module": "Mathlib.RingTheory.Polynomial.Hermite.Basic",
+              "type": ": Polynomial.hermite 0 = Polynomial.C 1"
+            },
+            "name": "Polynomial.hermite_zero",
+            "summary": ": Polynomial.hermite 0 = Polynomial.C 1",
+            "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Polynomial.hermite_zero#doc"
+          },
+          {
+            "extra": {
+              "module": "Mathlib.RingTheory.Polynomial.Hermite.Basic",
+              "type": "(n : \u2115) : (Polynomial.hermite (n + 1)).coeff 0 = -(Polynomial.hermite n).coeff 1"
+            },
+            "name": "Polynomial.coeff_hermite_succ_zero",
+            "summary": "(n : \u2115) : (Polynomial.hermite (n + 1)).coeff 0 = -(Polynomial.hermite n).coeff 1",
+            "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Polynomial.coeff_hermite_succ_zero#doc"
+          },
+          {
+            "extra": {
+              "module": "Mathlib.RingTheory.Polynomial.Hermite.Basic",
+              "type": "{n k : \u2115} (hnk : Even (n + k)) : (Polynomial.hermite n).coeff k = (-1) ^ ((n - k) / 2) * \u2191(n - k - 1).doubleFactorial * \u2191(n.choose k)"
+            },
+            "name": "Polynomial.coeff_hermite_of_even_add",
+            "summary": "{n k : \u2115} (hnk : Even (n + k)) : (Polynomial.hermite n).coeff k = (-1) ^ ((n - k) / 2) * \u2191(n - k - 1).doubleFactorial * \u2191(n.choose k)",
+            "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Polynomial.coeff_hermite_of_even_add#doc"
+          },
+          {
+            "extra": {
+              "module": "Mathlib.RingTheory.Polynomial.Hermite.Basic",
+              "type": "(n k : \u2115) : (Polynomial.hermite (2 * n + k)).coeff k = (-1) ^ n * \u2191(2 * n - 1).doubleFactorial * \u2191((2 * n + k).choose k)"
+            },
+            "name": "Polynomial.coeff_hermite_explicit",
+            "summary": "Because of `coeff_hermite_of_odd_add`, every nonzero coefficient is described as follows.",
+            "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Polynomial.coeff_hermite_explicit#doc"
+          },
+          {
+            "extra": {
+              "module": "Mathlib.RingTheory.Polynomial.Hermite.Basic",
+              "type": "(n k : \u2115) : (Polynomial.hermite n).coeff k = if Even (n + k) then (-1) ^ ((n - k) / 2) * \u2191(n - k - 1).doubleFactorial * \u2191(n.choose k) else 0"
+            },
+            "name": "Polynomial.coeff_hermite",
+            "summary": "(n k : \u2115) : (Polynomial.hermite n).coeff k = if Even (n + k) then (-1) ^ ((n - k) / 2) * \u2191(n - k - 1).doubleFactorial * \u2191(n.choose k) else 0",
+            "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Polynomial.coeff_hermite#doc"
+          },
+          {
+            "extra": {
+              "module": "Mathlib.RingTheory.Polynomial.Hermite.Basic",
+              "type": "(n k : \u2115) : (Polynomial.hermite (n + 1)).coeff (k + 1) = (Polynomial.hermite n).coeff k - (\u2191k + 2) * (Polynomial.hermite n).coeff (k + 2)"
+            },
+            "name": "Polynomial.coeff_hermite_succ_succ",
+            "summary": "(n k : \u2115) : (Polynomial.hermite (n + 1)).coeff (k + 1) = (Polynomial.hermite n).coeff k - (\u2191k + 2) * (Polynomial.hermite n).coeff (k + 2)",
+            "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Polynomial.coeff_hermite_succ_succ#doc"
+          },
+          {
+            "extra": {
+              "module": "Mathlib.RingTheory.Polynomial.Hermite.Basic",
+              "type": "(n : \u2115) : Polynomial.hermite (n + 1) = Polynomial.X * Polynomial.hermite n - Polynomial.derivative (Polynomial.hermite n)"
+            },
+            "name": "Polynomial.hermite_succ",
+            "summary": "The recursion `hermite (n+1) = (x - d/dx) (hermite n)`",
+            "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Polynomial.hermite_succ#doc"
+          },
+          {
+            "extra": {
+              "module": "Mathlib.RingTheory.Polynomial.Hermite.Basic",
+              "type": "(n : \u2115) : Polynomial.hermite n = (fun p => Polynomial.X * p - Polynomial.derivative p)^[n] 1"
+            },
+            "name": "Polynomial.hermite_eq_iterate",
+            "summary": "(n : \u2115) : Polynomial.hermite n = (fun p => Polynomial.X * p - Polynomial.derivative p)^[n] 1",
+            "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Polynomial.hermite_eq_iterate#doc"
+          },
+          {
+            "extra": {
+              "module": "Mathlib.RingTheory.Polynomial.Hermite.Gaussian",
+              "type": "(n : \u2115) (x : \u211d) : (Polynomial.aeval x) (Polynomial.hermite n) = (-1) ^ n * deriv^[n] (fun y => Real.exp (-(y ^ 2 / 2))) x * Real.exp (x ^ 2 / 2)"
+            },
+            "name": "Polynomial.hermite_eq_deriv_gaussian'",
+            "summary": "(n : \u2115) (x : \u211d) : (Polynomial.aeval x) (Polynomial.hermite n) = (-1) ^ n * deriv^[n] (fun y => Real.exp (-(y ^ 2 / 2))) x * Real.exp (x ^ 2 / 2)",
+            "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Polynomial.hermite_eq_deriv_gaussian%27#doc"
+          },
+          {
+            "extra": {
+              "module": "Mathlib.RingTheory.Polynomial.Hermite.Gaussian",
+              "type": "(n : \u2115) (x : \u211d) : deriv^[n] (fun y => Real.exp (-(y ^ 2 / 2))) x = (-1) ^ n * (Polynomial.aeval x) (Polynomial.hermite n) * Real.exp (-(x ^ 2 / 2))"
+            },
+            "name": "Polynomial.deriv_gaussian_eq_hermite_mul_gaussian",
+            "summary": "`hermite n` is (up to sign) the factor appearing in `deriv^[n]` of a Gaussian.",
+            "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Polynomial.deriv_gaussian_eq_hermite_mul_gaussian#doc"
+          },
+          {
+            "extra": {
+              "module": "Mathlib.RingTheory.Polynomial.Hermite.Gaussian",
+              "type": "(n : \u2115) (x : \u211d) : (Polynomial.aeval x) (Polynomial.hermite n) = (-1) ^ n * deriv^[n] (fun y => Real.exp (-(y ^ 2 / 2))) x / Real.exp (-(x ^ 2 / 2))"
+            },
+            "name": "Polynomial.hermite_eq_deriv_gaussian",
+            "summary": "(n : \u2115) (x : \u211d) : (Polynomial.aeval x) (Polynomial.hermite n) = (-1) ^ n * deriv^[n] (fun y => Real.exp (-(y ^ 2 / 2))) x / Real.exp (-(x ^ 2 / 2))",
+            "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Polynomial.hermite_eq_deriv_gaussian#doc"
+          }
+        ],
+        "incomplete": null,
+        "partial": [],
+        "reason": null,
+        "revision": "live (Mathlib master)",
+        "route": "natural-language",
+        "source": "loogle",
+        "state": "ok",
+        "total": null
+      },
+      {
+        "cache_writes": [],
+        "cap_limit": null,
+        "capped": [],
+        "hits": [
+          {
+            "extra": {
+              "distance": 0.36629313230514526,
+              "kind": "definition",
+              "module": "Mathlib.RingTheory.Polynomial.Hermite.Basic"
+            },
+            "name": "Polynomial.hermite",
+            "summary": "Hermite polynomials",
+            "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Polynomial.hermite#doc"
+          },
+          {
+            "extra": {
+              "distance": 0.3721967935562134,
+              "kind": "theorem",
+              "module": "Mathlib.RingTheory.Polynomial.Hermite.Basic"
+            },
+            "name": "Polynomial.hermite_monic",
+            "summary": "Hermite Polynomials are Monic",
+            "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Polynomial.hermite_monic#doc"
+          },
+          {
+            "extra": {
+              "distance": 0.39408206939697266,
+              "kind": "theorem",
+              "module": "Mathlib.RingTheory.Polynomial.Hermite.Basic"
+            },
+            "name": "Polynomial.leadingCoeff_hermite",
+            "summary": "Leading Coefficient of Hermite Polynomials is One",
+            "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Polynomial.leadingCoeff_hermite#doc"
+          },
+          {
+            "extra": {
+              "distance": 0.3880589008331299,
+              "kind": "theorem",
+              "module": "Mathlib.RingTheory.Polynomial.Hermite.Basic"
+            },
+            "name": "Polynomial.coeff_hermite_self",
+            "summary": "Leading Coefficient of Hermite Polynomial is One",
+            "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Polynomial.coeff_hermite_self#doc"
+          },
+          {
+            "extra": {
+              "distance": 0.39978110790252686,
+              "kind": "theorem",
+              "module": "Mathlib.RingTheory.Polynomial.Hermite.Basic"
+            },
+            "name": "Polynomial.hermite_succ",
+            "summary": "Recursive Definition of Hermite Polynomials",
+            "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Polynomial.hermite_succ#doc"
+          },
+          {
+            "extra": {
+              "distance": 0.40601783990859985,
+              "kind": "theorem",
+              "module": "Mathlib.RingTheory.Polynomial.Hermite.Gaussian"
+            },
+            "name": "Polynomial.hermite_eq_deriv_gaussian",
+            "summary": "Hermite Polynomial Derivative Identity: $ H_n(x) = (-1)^n e^{x^2/2} \\frac{d^n}{dx^n} e^{-x^2/2} $",
+            "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Polynomial.hermite_eq_deriv_gaussian#doc"
+          },
+          {
+            "extra": {
+              "distance": 0.40936535596847534,
+              "kind": "theorem",
+              "module": "Mathlib.RingTheory.Polynomial.Hermite.Basic"
+            },
+            "name": "Polynomial.hermite_eq_iterate",
+            "summary": "Hermite Polynomial Iteration Identity: $ H_n = (X \\cdot p - p')^{[n]} 1 $",
+            "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Polynomial.hermite_eq_iterate#doc"
+          },
+          {
+            "extra": {
+              "distance": 0.4388236999511719,
+              "kind": "theorem",
+              "module": "Mathlib.RingTheory.Polynomial.Hermite.Basic"
+            },
+            "name": "Polynomial.coeff_hermite_explicit",
+            "summary": "Explicit Formula for Coefficients of Hermite Polynomials",
+            "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Polynomial.coeff_hermite_explicit#doc"
+          },
+          {
+            "extra": {
+              "distance": 0.40476077795028687,
+              "kind": "theorem",
+              "module": "Mathlib.RingTheory.Polynomial.Hermite.Gaussian"
+            },
+            "name": "Polynomial.hermite_eq_deriv_gaussian'",
+            "summary": "Hermite Polynomial Identity via Gaussian Derivatives",
+            "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Polynomial.hermite_eq_deriv_gaussian%27#doc"
+          },
+          {
+            "extra": {
+              "distance": 0.4540894031524658,
+              "kind": "theorem",
+              "module": "Mathlib.RingTheory.Polynomial.Hermite.Gaussian"
+            },
+            "name": "Polynomial.deriv_gaussian_eq_hermite_mul_gaussian",
+            "summary": "$n$-th Derivative of Gaussian Function Equals Hermite Polynomial Times Gaussian",
+            "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Polynomial.deriv_gaussian_eq_hermite_mul_gaussian#doc"
+          }
+        ],
+        "incomplete": null,
+        "partial": [],
+        "reason": null,
+        "revision": "live",
+        "route": "natural-language",
+        "source": "leansearch",
+        "state": "ok",
+        "total": null
+      },
+      {
+        "cache_writes": [],
+        "cap_limit": null,
+        "capped": [],
+        "hits": [],
+        "incomplete": null,
+        "partial": [],
+        "reason": "921 packages searched",
+        "revision": "1b85eeae",
+        "route": "natural-language",
+        "source": "reservoir",
+        "state": "ok",
+        "total": null
+      },
+      {
+        "cache_writes": [
+          "palomar/snapshots-v1/838.json"
+        ],
+        "cap_limit": null,
+        "capped": [],
+        "hits": [
+          {
+            "extra": {
+              "repository": "na0b/<PRIVATE-PACKAGE>",
+              "theorem_names": [
+                "GaussianRiesz.obstacle_decomposition",
+                "GaussianRiesz.obstacle_decomposition_unique",
+                "GaussianRiesz.sqrt_domain_sobolev",
+                "GaussianRiesz.endpoint_theorem",
+                "GaussianRiesz.pv_identification",
+                "GaussianRiesz.coordinate_endpoint_bound",
+                "GaussianRiesz.spectral_normalization_bound",
+                "GaussianRiesz.unnormalized_measure_invariance",
+                "GaussianRiesz.complex_endpoint_theorem",
+                "GaussianRiesz.GaussIsProb",
+                "GaussianRiesz.HermiteFunMemLp",
+                "GaussianRiesz.HermiteL2Orthonormal",
+                "GaussianRiesz.HermiteL2Complete"
+              ]
+            },
+            "name": "PALOMAR-2026-10-30-000009",
+            "summary": "A dimension-free weak-type (1,1) bound for the Gaussian Riesz transforms",
+            "url": "https://data.palomar-registry.org/entries/PALOMAR-2026-10-30-000009-v1.json"
+          },
+          {
+            "extra": {
+              "repository": "ShengtongZhang-alt/Nikodym",
+              "theorem_names": [
+                "Nikodym.card_compl_pow_mul_card_le",
+                "Nikodym.card_ge_pow_sub",
+                "Nikodym.exists_isNikodym_card_le"
+              ]
+            },
+            "name": "PALOMAR-2026-09-06-000002",
+            "summary": "The sharp finite-field Nikodym exponent",
+            "url": "https://data.palomar-registry.org/entries/PALOMAR-2026-09-06-000002-v1.json"
+          }
+        ],
+        "incomplete": null,
+        "partial": [],
+        "reason": "1039 results searched",
+        "revision": "838",
+        "route": "natural-language",
+        "source": "palomar",
+        "state": "ok",
+        "total": null
+      },
+      {
+        "cache_writes": [],
+        "cap_limit": 30,
+        "capped": [
+          "code"
+        ],
+        "hits": [
+          {
+            "extra": {
+              "kind": "code"
+            },
+            "name": "TauCetiProject/TauCeti:TauCeti/Probability/Distributions/Gaussian/Hermite/Parseval.lean",
+            "summary": "",
+            "url": "https://github.com/TauCetiProject/TauCeti/blob/1e668f5e55bc20f2eb87f4ba49b48833470290d1/TauCeti/Probability/Distributions/Gaussian/Hermite/Parseval.lean"
+          },
+          {
+            "extra": {
+              "kind": "code"
+            },
+            "name": "mrdouglasny/gaussian-field:future/mehler_kernel.lean",
+            "summary": "",
+            "url": "https://github.com/mrdouglasny/gaussian-field/blob/1283a2721377a36e80672799fcc1f69a494c8ea0/future/mehler_kernel.lean"
+          },
+          {
+            "extra": {
+              "kind": "code"
+            },
+            "name": "Jiyuan-Tan/CausalSmith:Causalean/Mathlib/Probability/HermiteGenerating.lean",
+            "summary": "",
+            "url": "https://github.com/Jiyuan-Tan/CausalSmith/blob/a7085d88d2e4b30003db7097ca374f4718da0f01/Causalean/Mathlib/Probability/HermiteGenerating.lean"
+          },
+          {
+            "extra": {
+              "kind": "code"
+            },
+            "name": "TauCetiProject/TauCeti:TauCeti/Analysis/SpecialFunctions/Hermite/Function/Fourier/Basic.lean",
+            "summary": "",
+            "url": "https://github.com/TauCetiProject/TauCeti/blob/1e668f5e55bc20f2eb87f4ba49b48833470290d1/TauCeti/Analysis/SpecialFunctions/Hermite/Function/Fourier/Basic.lean"
+          },
+          {
+            "extra": {
+              "kind": "code"
+            },
+            "name": "balancedscorpion/countably-infinite-dimension-strong-meyer-spaces:MeyerGeneralProblem/Hermite/Scale.lean",
+            "summary": "",
+            "url": "https://github.com/balancedscorpion/countably-infinite-dimension-strong-meyer-spaces/blob/4d3163a0ce1dd93fa48b7d4677fe78db15c0af9c/MeyerGeneralProblem/Hermite/Scale.lean"
+          },
+          {
+            "extra": {
+              "kind": "code"
+            },
+            "name": "balancedscorpion/countably-infinite-dimension-strong-meyer-spaces:MeyerGeneralProblem/Hermite/Orthonormal.lean",
+            "summary": "",
+            "url": "https://github.com/balancedscorpion/countably-infinite-dimension-strong-meyer-spaces/blob/4d3163a0ce1dd93fa48b7d4677fe78db15c0af9c/MeyerGeneralProblem/Hermite/Orthonormal.lean"
+          },
+          {
+            "extra": {
+              "kind": "code"
+            },
+            "name": "balancedscorpion/countably-infinite-dimension-strong-meyer-spaces:MeyerGeneralProblem/Atomic/HermitePointMass.lean",
+            "summary": "",
+            "url": "https://github.com/balancedscorpion/countably-infinite-dimension-strong-meyer-spaces/blob/4d3163a0ce1dd93fa48b7d4677fe78db15c0af9c/MeyerGeneralProblem/Atomic/HermitePointMass.lean"
+          },
+          {
+            "extra": {
+              "kind": "code"
+            },
+            "name": "balancedscorpion/countably-infinite-dimension-strong-meyer-spaces:MeyerGeneralProblem/Hermite/Exhaustion.lean",
+            "summary": "",
+            "url": "https://github.com/balancedscorpion/countably-infinite-dimension-strong-meyer-spaces/blob/4d3163a0ce1dd93fa48b7d4677fe78db15c0af9c/MeyerGeneralProblem/Hermite/Exhaustion.lean"
+          },
+          {
+            "extra": {
+              "kind": "code"
+            },
+            "name": "balancedscorpion/countably-infinite-dimension-strong-meyer-spaces:MeyerGeneralProblem/Hermite/ScaleEmbedding.lean",
+            "summary": "",
+            "url": "https://github.com/balancedscorpion/countably-infinite-dimension-strong-meyer-spaces/blob/4d3163a0ce1dd93fa48b7d4677fe78db15c0af9c/MeyerGeneralProblem/Hermite/ScaleEmbedding.lean"
+          },
+          {
+            "extra": {
+              "kind": "code"
+            },
+            "name": "balancedscorpion/countably-infinite-dimension-strong-meyer-spaces:MeyerGeneralProblem/Carrier/HermiteSynthesis.lean",
+            "summary": "",
+            "url": "https://github.com/balancedscorpion/countably-infinite-dimension-strong-meyer-spaces/blob/4d3163a0ce1dd93fa48b7d4677fe78db15c0af9c/MeyerGeneralProblem/Carrier/HermiteSynthesis.lean"
+          },
+          {
+            "extra": {
+              "kind": "code"
+            },
+            "name": "bjbraams/lean-DLMF:DLMF/AlgebraicAnalytic/Spectral/Basic.lean",
+            "summary": "",
+            "url": "https://github.com/bjbraams/lean-DLMF/blob/a300098e51fedcbb6fa90e4d5f0bcb1953f0d120/DLMF/AlgebraicAnalytic/Spectral/Basic.lean"
+          },
+          {
+            "extra": {
+              "kind": "code"
+            },
+            "name": "balancedscorpion/countably-infinite-dimension-strong-meyer-spaces:MeyerGeneralProblem/Hermite/MehlerKernel.lean",
+            "summary": "",
+            "url": "https://github.com/balancedscorpion/countably-infinite-dimension-strong-meyer-spaces/blob/4d3163a0ce1dd93fa48b7d4677fe78db15c0af9c/MeyerGeneralProblem/Hermite/MehlerKernel.lean"
+          },
+          {
+            "extra": {
+              "kind": "code"
+            },
+            "name": "balancedscorpion/countably-infinite-dimension-strong-meyer-spaces:MeyerGeneralProblem/Hermite/Functions.lean",
+            "summary": "",
+            "url": "https://github.com/balancedscorpion/countably-infinite-dimension-strong-meyer-spaces/blob/4d3163a0ce1dd93fa48b7d4677fe78db15c0af9c/MeyerGeneralProblem/Hermite/Functions.lean"
+          },
+          {
+            "extra": {
+              "kind": "code"
+            },
+            "name": "competemath/tengoku:Tengoku/Tauceti/TauCeti/Probability/Distributions/Gaussian/Hermite/Parseval.lean",
+            "summary": "",
+            "url": "https://github.com/competemath/tengoku/blob/5992b7790e65f349b5c9f0184a5fc2d52e9e8ef6/Tengoku/Tauceti/TauCeti/Probability/Distributions/Gaussian/Hermite/Parseval.lean"
+          },
+          {
+            "extra": {
+              "kind": "code"
+            },
+            "name": "balancedscorpion/countably-infinite-dimension-strong-meyer-spaces:MeyerGeneralProblem/Hermite/CutoffNorm.lean",
+            "summary": "",
+            "url": "https://github.com/balancedscorpion/countably-infinite-dimension-strong-meyer-spaces/blob/4d3163a0ce1dd93fa48b7d4677fe78db15c0af9c/MeyerGeneralProblem/Hermite/CutoffNorm.lean"
+          },
+          {
+            "extra": {
+              "kind": "code"
+            },
+            "name": "competemath/tengoku:Tengoku/Causalean/Causalean/Mathlib/Probability/HermiteGenerating.lean",
+            "summary": "",
+            "url": "https://github.com/competemath/tengoku/blob/5992b7790e65f349b5c9f0184a5fc2d52e9e8ef6/Tengoku/Causalean/Causalean/Mathlib/Probability/HermiteGenerating.lean"
+          },
+          {
+            "extra": {
+              "kind": "code"
+            },
+            "name": "TokyoProbabilityGroup/SYK_CLT:SYK/Probability/GaussianChaos/HermiteDensity.lean",
+            "summary": "",
+            "url": "https://github.com/TokyoProbabilityGroup/SYK_CLT/blob/89f791ed4546496f0ad606d9b68807024f7c2924/SYK/Probability/GaussianChaos/HermiteDensity.lean"
+          },
+          {
+            "extra": {
+              "kind": "code"
+            },
+            "name": "balancedscorpion/countably-infinite-dimension-strong-meyer-spaces:MeyerGeneralProblem/Hermite/MehlerBounds.lean",
+            "summary": "",
+            "url": "https://github.com/balancedscorpion/countably-infinite-dimension-strong-meyer-spaces/blob/4d3163a0ce1dd93fa48b7d4677fe78db15c0af9c/MeyerGeneralProblem/Hermite/MehlerBounds.lean"
+          },
+          {
+            "extra": {
+              "kind": "code"
+            },
+            "name": "pmaronow/slowequilibration-palomar:SlowEquilibration/GaussianHermiteSmoothIBP.lean",
+            "summary": "",
+            "url": "https://github.com/pmaronow/slowequilibration-palomar/blob/a28aaa336343c4caf43791ababd8ed0ee5c7b58e/SlowEquilibration/GaussianHermiteSmoothIBP.lean"
+          },
+          {
+            "extra": {
+              "kind": "code"
+            },
+            "name": "balancedscorpion/countably-infinite-dimension-strong-meyer-spaces:MeyerGeneralProblem/Hermite/MehlerFormula.lean",
+            "summary": "",
+            "url": "https://github.com/balancedscorpion/countably-infinite-dimension-strong-meyer-spaces/blob/4d3163a0ce1dd93fa48b7d4677fe78db15c0af9c/MeyerGeneralProblem/Hermite/MehlerFormula.lean"
+          },
+          {
+            "extra": {
+              "kind": "code"
+            },
+            "name": "balancedscorpion/countably-infinite-dimension-strong-meyer-spaces:MeyerGeneralProblem/Sampling/KNSGraphOscillator.lean",
+            "summary": "",
+            "url": "https://github.com/balancedscorpion/countably-infinite-dimension-strong-meyer-spaces/blob/4d3163a0ce1dd93fa48b7d4677fe78db15c0af9c/MeyerGeneralProblem/Sampling/KNSGraphOscillator.lean"
+          },
+          {
+            "extra": {
+              "kind": "code"
+            },
+            "name": "balancedscorpion/countably-infinite-dimension-strong-meyer-spaces:MeyerGeneralProblem/Atomic/HermiteDistribution.lean",
+            "summary": "",
+            "url": "https://github.com/balancedscorpion/countably-infinite-dimension-strong-meyer-spaces/blob/4d3163a0ce1dd93fa48b7d4677fe78db15c0af9c/MeyerGeneralProblem/Atomic/HermiteDistribution.lean"
+          },
+          {
+            "extra": {
+              "kind": "code"
+            },
+            "name": "competemath/tengoku:Tengoku/Tauceti/TauCeti/Probability/Distributions/Gaussian/Hermite/Basis.lean",
+            "summary": "",
+            "url": "https://github.com/competemath/tengoku/blob/5992b7790e65f349b5c9f0184a5fc2d52e9e8ef6/Tengoku/Tauceti/TauCeti/Probability/Distributions/Gaussian/Hermite/Basis.lean"
+          },
+          {
+            "extra": {
+              "kind": "code"
+            },
+            "name": "isogeny-labs/crypto:research/prime_common_scalar_20261108/lean/HermiteBasis.lean",
+            "summary": "",
+            "url": "https://github.com/isogeny-labs/crypto/blob/bab27b21e1d14360604c284644bab06ebc2102d7/research/prime_common_scalar_20261108/lean/HermiteBasis.lean"
+          },
+          {
+            "extra": {
+              "kind": "code"
+            },
+            "name": "balancedscorpion/countably-infinite-dimension-strong-meyer-spaces:MeyerGeneralProblem/Cardinal/Adaptive/OriginalMixedNorms.lean",
+            "summary": "",
+            "url": "https://github.com/balancedscorpion/countably-infinite-dimension-strong-meyer-spaces/blob/4d3163a0ce1dd93fa48b7d4677fe78db15c0af9c/MeyerGeneralProblem/Cardinal/Adaptive/OriginalMixedNorms.lean"
+          },
+          {
+            "extra": {
+              "kind": "code"
+            },
+            "name": "isogeny-labs/crypto:research/prime_common_scalar_20261108/lean/HermiteValuation.lean",
+            "summary": "",
+            "url": "https://github.com/isogeny-labs/crypto/blob/bab27b21e1d14360604c284644bab06ebc2102d7/research/prime_common_scalar_20261108/lean/HermiteValuation.lean"
+          },
+          {
+            "extra": {
+              "kind": "code"
+            },
+            "name": "competemath/tengoku:Tengoku/Tauceti/TauCeti/Analysis/SpecialFunctions/Hermite/Function/Fourier/Basic.lean",
+            "summary": "",
+            "url": "https://github.com/competemath/tengoku/blob/5992b7790e65f349b5c9f0184a5fc2d52e9e8ef6/Tengoku/Tauceti/TauCeti/Analysis/SpecialFunctions/Hermite/Function/Fourier/Basic.lean"
+          },
+          {
+            "extra": {
+              "kind": "code"
+            },
+            "name": "bjbraams/lean-DLMF:DLMF/OrthogonalPolynomials/Integrals/BesselAndLaguerreTransforms.lean",
+            "summary": "",
+            "url": "https://github.com/bjbraams/lean-DLMF/blob/a300098e51fedcbb6fa90e4d5f0bcb1953f0d120/DLMF/OrthogonalPolynomials/Integrals/BesselAndLaguerreTransforms.lean"
+          },
+          {
+            "extra": {
+              "kind": "code"
+            },
+            "name": "eragasa/projectkoios-formal:ProjectKoios/QuantumMechanics/HarmonicOscillator/HermiteEigenfunction.lean",
+            "summary": "",
+            "url": "https://github.com/eragasa/projectkoios-formal/blob/71139ab4809999217d756e9729ced0d6800f07e9/ProjectKoios/QuantumMechanics/HarmonicOscillator/HermiteEigenfunction.lean"
+          },
+          {
+            "extra": {
+              "kind": "code"
+            },
+            "name": "balancedscorpion/countably-infinite-dimension-meyer-spaces:MeyerGeneralProblem/Hermite/Scale.lean",
+            "summary": "",
+            "url": "https://github.com/balancedscorpion/countably-infinite-dimension-meyer-spaces/blob/0de61962a757b5e930dfe59dd94d191ae1f87922/MeyerGeneralProblem/Hermite/Scale.lean"
+          }
+        ],
+        "incomplete": null,
+        "partial": [],
+        "reason": null,
+        "revision": "live",
+        "route": "natural-language",
+        "source": "github",
+        "state": "ok",
+        "total": null
+      }
+    ],
+    "term": "normalized Hermite",
+    "total_hits": 75,
+    "truncated_sources": [
+      "registry",
+      "github"
+    ]
+  }
+}
