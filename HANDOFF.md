@@ -1,8 +1,8 @@
-Last updated: 2026-11-09 06:54 CST (<MACHINE>, Codex)
+Last updated: 2026-11-09 07:51 CST (<MACHINE>, Codex)
 
 # HANDOFF
 
-Project: Article-Stratonovich-HAM-Second-Moment. Original all-model goal BLOCKED and incomplete; Le explicitly resumed after the archived November5 pause. No new pause or gate waiver was requested. Workflow authority: ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave/Progress.md; completion contract: ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave/PROJECT-GOAL.md. This current header supersedes historical paused snapshots below.
+Project: Article-Stratonovich-HAM-Second-Moment. Original all-model goal ACTIVE and incomplete; Le explicitly resumed after the archived November5 pause. No new pause or gate waiver was requested. Workflow authority: ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave/Progress.md; completion contract: ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave/PROJECT-GOAL.md. This current header supersedes historical paused snapshots below.
 
 ## ⏭ Next session: where to stand and what to do
 
@@ -13,7 +13,11 @@ cd ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave
 ```
 
 Branch: research/fixed-mask-young-20261031. All operational relative paths below are interpreted after this cd; archived history retains its original locators.
-The immediate next step is to honor Le's November9 instruction: retire Kimi for a few days until the weekly quota refills. Hold all Kimi mathematical/visual requests, availability generation probes, retries and automatic resumptions. Reassess after a few days and verified quota replenishment; no exact reset date or automatic resumption schedule is inferred. All three owned native Kimi ACP processes were closed cleanly, exit0, with external retirement receipts. Preserve the original full goal and every required gate. This is a temporary Kimi hold, not a whole-project pause or permission to repeat unchanged scientific reviews solely for HIGH. No procedural gate change was requested.
+The immediate next step is to resolve Le's pending decision on the concrete proposed VISUAL-only policy in reviews/2026-11-09-visual-policy-proposal/POLICY-PROPOSED.md. It is NOT ADOPTED. The asynchronous question asks whether valid verified visual PASS at MEDIUM may qualify once all specific glyph issues are resolved, while BOTH required whole mathematical HIGH gates remain unchanged. Do not infer approval from a default option, elapsed time or goal continuation. If approved, apply a new explicit scoped disposition, preserving every old confidence/receipt and resolving all technical refusals separately; if declined, preserve current visual HIGH thresholds.
+
+Current main visual acceptance230/267 pages (920 original required views),37 remain. Page230 is actual independent OpusHIGH/no repairs/exact4PNG. Valid detailed231-234 and235-238 reports have allPASS/no repairs/exact18 and17PNG; their concrete glyph questions are resolved, but literalMEDIUM remains unaccepted. New239-240 complete300dpi body coverage yields allPASS/no repairs/exact20PNG but MEDIUM plus original prose-prefix/VIEW_ID-format failures, also unaccepted. Root confirmed the P238 lowercase-t domain is correct for the scalar covariance map, with no source error. All new Opus execution handles4855,66440,8154,35852,57417,75617 are TERMINAL; no active mathematical or visual model request remains. Do not wait on an idle process or replay unchanged source solely to obtain HIGH.
+
+Le's few-day Kimi hold remains absolute until verified weekly refill: no Kimi requests, generation probes, retries or automatic resumption. All three owned Kimi ACP processes are closed. No policy in this proposal substitutes for required DS/Kimi mathematical reviewers, changes the original full model/constant scope, authorizes manuscript adoption, or clears cold/build/wiki/private delivery.
 
 ## Pre-flight checks
 
@@ -22,12 +26,12 @@ The immediate next step is to honor Le's November9 instruction: retire Kimi for 
 3. Adopted263-page source SHA364753242f9d02e57036af586ab8e777b184d897862750d3170d79f028067914; tracked PDF SHA096cb3cd4610c91d7dc8718bd56526e777cdd06ebca41651a8955bc230eb2f35. Both remain unchanged.
 4. Unadopted267-page integration under ../themeII-pairing-product-envelope-integration-draft-20261105/build/notes: source SHA516d6a650bdac7d3da68672f37836afd084b651c39553b43d5135d0512e39d14; PDF SHA26f9f4a5ee65b08449cedc41dc34e688d15147f0ab4e3b9d23e4ee3f9a8624f8. Actual target scope215 OWN,241 declarations,13 joins and9 global checks,263 minimum review rows; all28 source modules. No adoption is authorized by scoped receipts.
 5. Native Kimi2.5.2 K3/max/default weekly quota is confirmed by exact session-log HTTP429 APIProviderQuotaExhaustedError for image59/60 and fresh READY. See reviews/2026-11-09-kimi-weekly-quota-confirmed/. Do not treat empty ACP end_turn as success, retry the failed turns, buy quota, upgrade, or infer a reset date.
-6. All actual mathematical/visual model requests are terminal. The Opus five-proof native audit completed driver exit3, not live. The three owned Kimi ACP processes are now closed cleanly under Le's temporary retirement instruction; idle Python/DeepSeek processes are not live reviews. Do not restart a request solely because its execution handle expires.
+6. All old and new mathematical/visual requests are terminal; no model request is running. The Opus five-proof native audit and new visual batches are terminal, not live. The three owned Kimi ACP processes are now closed cleanly under Le's temporary retirement instruction; idle Python/DeepSeek processes are not live reviews. Do not restart a request solely because its execution handle expires.
 7. Keep80 accepted finite Lean facts/22 groups; the two local scalar Hermite pilot theorems remain provisional with MEDIUM fit review, not additional accepted facts. Official private Lean companion creation, HPC, correspondence, Telegram and public release remain unauthorized.
 
 ## Concrete deliverables for the next session
 
-Preserve the original whole DeepSeek V4 Pro MAIN HIGH and Kimi-K3 HIGH gates, source/application, full visual, fresh cold, adoption, clean build, wiki and synchronized private delivery. Current main visual acceptance229/267 pages (916 views),38 remaining. All267 structural images were delivered earlier, but structural coverage is not HIGH acceptance. No direct Kimi credit for the empty230-233 turns.
+Preserve the original whole DeepSeek V4 Pro MAIN HIGH and Kimi-K3 HIGH gates, source/application, full visual, fresh cold, adoption, clean build, wiki and synchronized private delivery. Current main visual acceptance230/267 pages (920 views),37 remaining. All267 structural images were delivered earlier, but structural coverage is not HIGH acceptance. No direct Kimi credit for the empty230-233 turns.
 
 Latest whole DS v4: reviews/2026-11-09-full-main-v4-invalid-medium-unaccepted/ (raw90048bytes SHA5016c36d4695928d6824f760a8ff696c25adf54d74f815500751d0fb92358f1a). Invalid final limitations-array JSON and literal MEDIUM, zero fatal/major/repairs; exact263 ID/primary-label inspection does not repair or accept it.
 
@@ -43,11 +47,13 @@ Reproduce the exact current gate/quota state and receive either a concrete user 
 
 ## Anti-success criteria
 
-No goal completion, proof/PDF adoption, gate lowering, vote conjunction, report/JSON repair, fresh-coverage inference from absent histories, duplicate model request, or unlimited textbook-reproof wave. No source mutation to generate a new review solely for a confidence label. No narrowed parameter class, forced Chen endpoint identification, removal of conditional alternatives, source-print correction adoption, or Skorohod development. Keep311296 DS/Kimi hard reserves and existing source/image/framing guards; no arbitrary reductions to fit. No quota purchase, account creation, credentials copying, model/provider substitution or system setup edit.
+No goal completion, proof/PDF adoption, gate lowering, vote conjunction, report/JSON repair, fresh-coverage inference from absent histories, duplicate model request, or unlimited textbook-reproof wave. No source mutation to generate a new review solely for a confidence label. No narrowed parameter class, forced Chen endpoint identification, removal of conditional alternatives, source-print correction adoption, or Skorohod development. Keep311296 DS/Kimi hard reserves and existing source/image/framing guards; no arbitrary reductions to fit. No quota purchase, account creation, credential copying, substitution for required DS/Kimi whole mathematical models, or system setup edit. Auxiliary new-scope Opus pixel review is separately recorded.
 
 ## What the previous sessions produced
 
 2026-11-09: Accepted main visual pages226-229, total229/267; recorded image59/60 empty terminals and a fresh empty READY probe; diagnosed all three actual per-session weekly429 errors. Archived/adjudicated full DSv4 invalid/MEDIUM and full Kimi v4 valid/MEDIUM with exact original263 IDs. Completed native five-proof Opus depth audit (five PASS, no repairs, MEDIUM and missing final formfeed coverage), with detailed public LF reconstructions and all four minor dispositions. Commits443db69,d79328b,707b009,9d0402a,303a479,fe7b536,21a73e2 pushed; <HUB> refs synchronized. No adopted/unadopted manuscript or PDF bytes changed. Le directed a few-day Kimi hold until weekly replenishment; no gate waiver or whole-project pause inferred.
+
+2026-11-09 additional progress: accepted actual page230 OpusHIGH/no repairs/exact4PNG (353f8b3). Completed231-234 and235-238 first and specific-detail attempts; allPASS and concrete glyph questions resolved, but MEDIUM/unaccepted preserved. Confirmed actual H_t scalar-domain glyph is correct from unchanged candidate/adopted module definitions. Completed new239-240 original+300dpi whole-body20PNG inspection, allPASS/MEDIUM with malformed original public framing retained/unaccepted. All source/image carrier native byte checks passed. The separate VISUAL-policy proposal is concrete/NOTADOPTED; Le decision pending. All requests nowterminal, no unchanged confidence retry. Latest substantive checkpoint1240af587d24ee8fcb718217b0aa2f389c47065c; Kimi hold and all whole mathematical HIGH/final gates unchanged.
 
 Archived prior-session history follows; its old scope/status snapshots are not current instructions.
 
@@ -2611,7 +2617,7 @@ no fullpacket/provider/config/seal/rootready exists. Fullgoal ACTIVE.
 
 ## Repo & git state at handoff
 
-Research branch research/fixed-mask-young-20261031, scientific/review pre-handoff21a73e29ae692e6f15501fcf77eaf0fb53f20cb4, operational HANDOFF commit0c53c37c04992a34db4932b8ad9de63e3674cc06, clean. Canonical shell-launch checkout ../../../../Dropbox/workspace/svn/Article-Stratonovich-HAM-Second-Moment is master, pre-handoff564887b7cb5df91770f6aa0002dbfb8da03fb63b, clean; it contains an older manuscript and acts as loader, not the research document. Dedicated HANDOFF-only descendants are expected on both branches. Origin is <HUB> bare storage; compare the research tracking REF when <HUB>'s checkout stays on master.
+Research branch research/fixed-mask-young-20261031, scientific/review pre-handoff21a73e29ae692e6f15501fcf77eaf0fb53f20cb4, operational HANDOFF commit37dbf95350c5d71735f7c366c54a0b2d5af2eab9, clean. Canonical shell-launch checkout ../../../../Dropbox/workspace/svn/Article-Stratonovich-HAM-Second-Moment is master, pre-handoff564887b7cb5df91770f6aa0002dbfb8da03fb63b, clean; it contains an older manuscript and acts as loader, not the research document. Dedicated HANDOFF-only descendants are expected on both branches. Origin is <HUB> bare storage; compare the research tracking REF when <HUB>'s checkout stays on master.
 
 Frozen source carrier ../stratonovich-whole215-staged-review-carrier-20261107 at44b25617befac48da660d59b90ec07d47ab118cc remained clean and unchanged through the completed native audit. No reviewer currently holds a live mathematical request there. Never reset or discard other work.
 
@@ -2623,4 +2629,4 @@ Wiki project page: ../../../../Dropbox/workspace/svn/SPDEs-wiki/content/projects
 
 ## Risks to monitor
 
-MEDIUM/no-repairs is not acceptance. Technical byte/read/schema coverage is distinct from mathematical correctness. Kimi ACP hides actual weekly-quota errors as empty terminal responses; rely on per-session logs, not just the global log or a local process. Exact reset timestamp remains unknown. Idle sessions are not running jobs. Do not carry paused November5 instructions into the resumed goal or infer user answers from a default asynchronous option. Full goal remains BLOCKED and incomplete; this is not a user-requested pause.
+MEDIUM/no-repairs is not acceptance. Technical byte/read/schema coverage is distinct from mathematical correctness. Kimi ACP hides actual weekly-quota errors as empty terminal responses; rely on per-session logs, not just the global log or a local process. Exact reset timestamp remains unknown. Idle sessions are not running jobs. Do not carry paused November5 instructions into the resumed goal or infer a visual-policy answer from a default asynchronous option. Full goal remains ACTIVE and incomplete; Kimi is held and no mathematical HIGH gate is waived.
