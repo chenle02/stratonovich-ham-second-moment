@@ -1,0 +1,1 @@
+Root read the complete report. Canonical HIGH/no repairs, all16 exact VIEW_IDs and PNG hashes pass. Accept MAIN214-217 only: union217/267pages/868views;50remain. Crop fragments fully present in neighboring bands. No math/source/cold credit. Next218-221 READY644868input plus311296hard=956164, nativecontext86447.
