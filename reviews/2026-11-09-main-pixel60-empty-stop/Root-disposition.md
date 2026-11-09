@@ -1,0 +1,5 @@
+# Two empty terminal responses: session stopped for image requests
+
+The separately authorized pixel60 recovery also returned end_turn with zero public bytes. No report, no page credit, no automatic retry. Native usage reports context73358, aggregate5981588 input/291569 output unchanged. Sanitized transport inspection confirms image prompts153 and155 returned terminal end_turn without intervening public output, thought content, provider error object or usage update. Subsequent local usage commands respond. The native process is responsive; this does not establish remote model availability or quota. Cause remains unverified; do not label this a quota rejection or mathematical/visual finding.
+
+Preserve original fences, raw results and receipts. Do not keep feeding this visual session. Further recovery requires a separately preflighted fresh native session or verified cause/remedy, with the same image/source identities and original gates. Main229/267 accepted,38 remain. Both whole mathematical HIGH gates remain open.
