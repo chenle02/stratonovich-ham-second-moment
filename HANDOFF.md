@@ -1,4 +1,4 @@
-Last updated: 2026-11-09 01:21 CST (<MACHINE>, Codex)
+Last updated: 2026-11-09 06:54 CST (<MACHINE>, Codex)
 
 # HANDOFF
 
@@ -7,7 +7,7 @@ Project: Article-Stratonovich-HAM-Second-Moment. Original all-model goal BLOCKED
 ## ⏭ Next session: where to stand and what to do
 
 Stand in this research checkout, branch research/fixed-mask-young-20261031.
-The immediate next step is to resolve the pending review-procedure decision against the latest actual evidence in Progress.md and the November9 reports. An asynchronous question asks whether to preserve every gate and resume when Kimi capacity returns, or discuss a review-procedure change; no answer is recorded at this checkpoint. Until an explicit change, preserve all original gates. Kimi is actually blocked by its weekly quota, not a running review. Check renewed capacity only on credible external availability evidence; the errors give no exact reset timestamp. Do not start another unchanged scientific review merely to seek HIGH or manufacture a new proof obligation from a no-repairs MEDIUM report.
+The immediate next step is to honor Le's November9 instruction: retire Kimi for a few days until the weekly quota refills. Hold all Kimi mathematical/visual requests, availability generation probes, retries and automatic resumptions. Reassess after a few days and verified quota replenishment; no exact reset date or automatic resumption schedule is inferred. All three owned native Kimi ACP processes were closed cleanly, exit0, with external retirement receipts. Preserve the original full goal and every required gate. This is a temporary Kimi hold, not a whole-project pause or permission to repeat unchanged scientific reviews solely for HIGH. No procedural gate change was requested.
 
 ## Pre-flight checks
 
@@ -16,7 +16,7 @@ The immediate next step is to resolve the pending review-procedure decision agai
 3. Adopted263-page source SHA364753242f9d02e57036af586ab8e777b184d897862750d3170d79f028067914; tracked PDF SHA096cb3cd4610c91d7dc8718bd56526e777cdd06ebca41651a8955bc230eb2f35. Both remain unchanged.
 4. Unadopted267-page integration under ../themeII-pairing-product-envelope-integration-draft-20261105/build/notes: source SHA516d6a650bdac7d3da68672f37836afd084b651c39553b43d5135d0512e39d14; PDF SHA26f9f4a5ee65b08449cedc41dc34e688d15147f0ab4e3b9d23e4ee3f9a8624f8. Actual target scope215 OWN,241 declarations,13 joins and9 global checks,263 minimum review rows; all28 source modules. No adoption is authorized by scoped receipts.
 5. Native Kimi2.5.2 K3/max/default weekly quota is confirmed by exact session-log HTTP429 APIProviderQuotaExhaustedError for image59/60 and fresh READY. See reviews/2026-11-09-kimi-weekly-quota-confirmed/. Do not treat empty ACP end_turn as success, retry the failed turns, buy quota, upgrade, or infer a reset date.
-6. All actual mathematical/visual model requests are terminal. The Opus five-proof native audit completed driver exit3, not live. Older ACP/DeepSeek local processes may remain idle; a PID or session file is not a live review. Do not restart a request solely because its execution handle expires.
+6. All actual mathematical/visual model requests are terminal. The Opus five-proof native audit completed driver exit3, not live. The three owned Kimi ACP processes are now closed cleanly under Le's temporary retirement instruction; idle Python/DeepSeek processes are not live reviews. Do not restart a request solely because its execution handle expires.
 7. Keep80 accepted finite Lean facts/22 groups; the two local scalar Hermite pilot theorems remain provisional with MEDIUM fit review, not additional accepted facts. Official private Lean companion creation, HPC, correspondence, Telegram and public release remain unauthorized.
 
 ## Concrete deliverables for the next session
@@ -41,7 +41,7 @@ No goal completion, proof/PDF adoption, gate lowering, vote conjunction, report/
 
 ## What the previous sessions produced
 
-2026-11-09: Accepted main visual pages226-229, total229/267; recorded image59/60 empty terminals and a fresh empty READY probe; diagnosed all three actual per-session weekly429 errors. Archived/adjudicated full DSv4 invalid/MEDIUM and full Kimi v4 valid/MEDIUM with exact original263 IDs. Completed native five-proof Opus depth audit (five PASS, no repairs, MEDIUM and missing final formfeed coverage), with detailed public LF reconstructions and all four minor dispositions. Commits443db69,d79328b,707b009,9d0402a,303a479,fe7b536,21a73e2 pushed; <HUB> refs synchronized. No adopted/unadopted manuscript or PDF bytes changed. User review-procedure decision is pending; no gate waiver or pause inferred.
+2026-11-09: Accepted main visual pages226-229, total229/267; recorded image59/60 empty terminals and a fresh empty READY probe; diagnosed all three actual per-session weekly429 errors. Archived/adjudicated full DSv4 invalid/MEDIUM and full Kimi v4 valid/MEDIUM with exact original263 IDs. Completed native five-proof Opus depth audit (five PASS, no repairs, MEDIUM and missing final formfeed coverage), with detailed public LF reconstructions and all four minor dispositions. Commits443db69,d79328b,707b009,9d0402a,303a479,fe7b536,21a73e2 pushed; <HUB> refs synchronized. No adopted/unadopted manuscript or PDF bytes changed. Le directed a few-day Kimi hold until weekly replenishment; no gate waiver or whole-project pause inferred.
 
 Archived prior-session history follows; its old scope/status snapshots are not current instructions.
 
