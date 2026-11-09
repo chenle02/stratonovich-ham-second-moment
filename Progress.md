@@ -17875,3 +17875,11 @@ ActualMAINvisualcompact10 complete18messages203902before22309after;aggregate5405
 ## 2026-11-08:check19raw invalidJSON andMEDIUM, no promotion
 
 Actualterminal660644input17506output-plus-reasoning within717589bound. Root readfull10936bytepublicraw. StrictJSONFAILchar10935missingclosinglimitationsarray; no localrepair/normalization orcanonicalacceptance. Exactunchangedsubtreeinspection confirms12IDsonce/all12visiblePASS/no repairs/literalMEDIUM, stillunacceptedforBOTHformat/confidence. Failedinitialarchiveparser wrote/stagednothing; originalrawintact. Rootverifiedactual033LF4654-4735 coefficientassembly,N_rindependentoft,finiteloworders/logsum/r->0 includingzerorate; notpeerHIGH. Correctreport-onlyF029attribution/two-deltaboundwording. Evidence reviews/2026-11-08-alternative-calibration-check19-medium-unaccepted/. No source/PDF/factcountchange. Main205accepted/62remain.
+
+
+## 2026-11-08:209 main pages accepted
+
+Root fullread pixel53 HIGH/common-validator/all16IDs/PNGpins/no repairs. Main209/267pages/836views;58remain. Nativecontext42829,aggregate5443442input261348output. Next210-213READY601241input/+311296=912537. Check19rawinvalidJSON/MEDIUM remainsunaccepted; no scientificHIGH/cold/finalgatepromotion.
+
+
+2026-11-08:DScontext08 source-inspectedREADY734589input/+311296=1045885,2691headroom;32768framingunchanged. Actualcurrent222cumulative83fresh; afteractualcompletionall83freshbodiesreopen. No authority/POSTyet, no nativehistorytruncation orscopewaiver.
