@@ -17724,3 +17724,13 @@ Root read all29319bytes/468lines, A/B/Csections/import/boundaries. Native391934i
 ## 2026-11-08:primary509exactsyntaxlineage accepted; nextvisualbatches ready
 
 509nativecontinuation exactly4backslashinsertions-only, commonvalidator/high/16IDs/no repairs; allscientificbytes unchanged, ONElineage. AcceptF154–157, validprimary20/35pages/80views;15remain includingoriginal9schemafailedpages. Native52348input/3994output/context56342 below85098bound. NextF158–161 READY614789input/+311296=926085. Maincompact07actualcomplete18messages/context21836,reported126546input/1900output; next146–149 READY580246input/+311296=891542; mainaccepted145/267. Exactoperator15allreadandadjudicated; DScontext06READY463842input/+311296=775138,22freshbeforereset. Alloriginalgoal/gatesretained.
+
+
+## 2026-11-08:full original source-first MAIN packet READY after exact14/15
+
+ActualDScontext06 terminal/no-tail,431157input/2704output-plus-reasoning below463842bound;222cumulative/fresh0. Literal83+30v1 refused at742547input/+311296=1053843 (5267over),NOauthority/post. JSONwhitespace-only probe insufficient/unapplied. Source-firstv2 keepsALL83actual proof/primarybodies, ALL4adverseopinions, EVERYfullRootadjud/correction, correctedexplicitmathguide/control;26whole challenges. Four UNGRADEDintermediate rawconversations remain immutableaudithistory, notanalyticpremises/positivevotes; fullcurrentdispositions/actualsourcefindingsretained. Originalall215/241/13/allmodels/9explicitglobalchecks andeverygate unchanged. Count716588input/+311296=1027884/head20692,32768positiveframing unchanged;83/26spans byteverified. K3user-only673183prospective, actualfinalcontext/admissionowed. No newsciencecall/grade yet. Evidence reviews/2026-11-08-whole-main-source-first-after-exact15-ready/.
+
+
+## 2026-11-08:149 main pages and twenty-four valid primary pages accepted
+
+Root read full pixel38 HIGH/commonvalidator/16views/no repairs; main149/267pages/596views,118remain. Native37201input/3987output/context41188. Next150–153 READY599591input/+311296=910887. Primary510F158–161 HIGH/commonvalidator/16views/no repairs; validprimaryF138–161=24/35pages/96views,11remainincludingoriginal9schemafailedpages. Native72400input/8970output/context81370. NextF162–164plusCPF130 READY639840input/+311296=951136. Newfullsource-firstMAINready716588input preservesall83sources/all4adverse/fullcorrections/263obligations; noauthority/postyet, prioroutcomes unchanged.
