@@ -1,0 +1,73 @@
+\begin{lemma}[Dimension-independent Gaussian contractions]
+  \label{L:interval-contractions}
+  Uniformly in positive spatial smoothing and in finite Gaussian-mode
+  and spatial Fourier-band cutoffs,
+  \begin{equation}\label{E:interval-column}
+    \sum_m\|A_\rho^{-1/2}M_{e_m}f\|_2^2
+    \le R_\alpha\rho^{\alpha-2}\|f\|_2^2.
+  \end{equation}
+  Here $W_\epsilon(x)=\sum_m g_me_m(x)$ is an orthonormal-coordinate
+  representation of $W(p_\epsilon(x-\cdot))$, whose covariance is
+  $\Gamma_\epsilon=p_{2\epsilon}*\Gamma$.
+  Consequently, on a Gaussian color that is initially in its vacuum,
+  the phase insertion $(u,v)\mapsto(0,W_\epsilon u)$ has norm at most
+  $\sqrt{R_\alpha}\rho^{(\alpha-2)/2}$ into its Gaussian $L^2$ phase.
+  With Hermite degree of this color truncated at $N$, its sandwiched
+  field has operator norm at most
+  \begin{equation}\label{E:interval-fock}
+    2\sqrt{N+1}\sqrt{R_\alpha}\rho^{\alpha/2-2}.
+  \end{equation}
+  Both statements remain valid tensoring with any other Hilbert factor.
+\end{lemma}
+
+\begin{proof}
+  Fourier uniqueness gives $\mu(B_r)=r^\alpha\mu(B_1)$.
+  The Gaussian comparison in Lemma~\ref{L:phase-contractions} uses no
+  dimension-specific identity:
+  \[
+    \int e^{-s|\eta+\xi|^2}\mu(\ud\xi)
+    =\int p_{2s}^{(d)}(x)e^{i\eta\cdot x}\Gamma(\ud x)
+    \le\int e^{-s|\xi|^2}\mu(\ud\xi).
+  \]
+  Evenness gives a real integral, and physical nonnegativity gives
+  the inequality. Integrating against $e^{-\rho^2s}\ud s$ and using
+  radial spectral homogeneity yields
+  \[
+    \sup_\eta\int\frac{\mu(\ud\xi)}{\rho^2+|\eta+\xi|^2}
+    \le R_\alpha\rho^{\alpha-2}.
+  \]
+  No exclusion of a physical origin atom is used.
+
+  Gaussian isometry and unnormalized spatial Plancherel give
+  \[
+    \sum_m\|A_\rho^{-1/2}M_{e_m}f\|_2^2
+    =\frac1{(2\pi)^d}\int|\widehat f(\eta)|^2
+    \left(\int\frac{e^{-\epsilon|\xi|^2}\mu(\ud\xi)}
+    {\rho^2+|\eta+\xi|^2}\right)\ud\eta .
+  \]
+  This proves~\eqref{E:interval-column}. A finite mode sum is a
+  positive sub-sum. For a Fourier-band projection $S_b$, which commutes
+  with $A_\rho$, use $S_bA_\rho^{-1}S_b\le A_\rho^{-1}$ to obtain
+  the same inequality for $S_bM_{e_m}S_b$.
+  The phase assertion on a new color follows because
+  $\sum_mg_m(0,M_{e_m}u)$ has squared norm given by the left side
+  of~\eqref{E:interval-column}, and its input is independent of this color.
+
+  Substituting $A_\rho^{-1/2}f$ gives
+  \[
+    \sum_m(A_\rho^{-1/2}M_{e_m}A_\rho^{-1/2})^2
+    \le R_\alpha\rho^{\alpha-4}I.
+  \]
+  These spatial sandwiches are selfadjoint, so their row and column
+  variances agree. The normalized Hermite creation-row norm from
+  degree $j$ to degree $j+1$ is $\sqrt{j+1}$, and annihilation is
+  its adjoint, as proved in Lemma~\ref{L:fock-form}.
+  Composition with the spatial column and addition of the two
+  parts prove~\eqref{E:interval-fock}. The same positive operator
+  identities hold with an identity on every other Hilbert factor.
+  The calculation used only the radial mass $\mu(B_1)$, homogeneity
+  and physical nonnegativity. Thus, $R_\alpha$ is the only covariance
+  quantity in these estimates. No angular bound or unsmoothed
+  multiplication norm has been absorbed into a constant.
+  This proves Lemma~\ref{L:interval-contractions}.
+\end{proof}
