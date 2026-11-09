@@ -16,7 +16,7 @@ force Chen's predicted constant or create a Lean companion without approval.
 
 ## Status
 
-BLOCKED — original objective and all gates preserved.
+ACTIVE — auxiliary visual review proceeding; Kimi hold and all original gates preserved.
 
 ## Round
 
@@ -17990,3 +17990,8 @@ Goal tool returned statusblocked with the original objective unchanged. Threecon
 ## 2026-11-09:Le temporarily retires Kimi for a few days
 
 Explicit instruction: retire Kimi for a few days until the weekly token quota refills. Hold ALL Kimi mathematical/visual requests, availability generation probes, retries and automatic resumptions during this interval. No fixed reset date is claimed. Reassess only after a few days and verified replenishment; no new schedule, quota purchase, account/model substitution or gate waiver. The original full goal remains blocked/incomplete, not user-paused. All three owned native Kimi ACP processes (math1695179, visual1840232, freshvisual4099351) closed cleanly with exit0; external retirement receipts preserve the sessions, public reports and source bindings. Python REPLs may remain idle, but no owned Kimi ACP process remains live. Reports and accepted visual229/267 retain their original scope; remaining38 pages and Kimi wholeHIGH still owed.
+
+
+## 2026-11-09:remaining visual work can proceed through Opus, Kimi hold intact
+
+Root corrects earlier overbroad whole-project blocker:38 visual pages remain unaccepted; NEW scoped Opus pixel review can advance that gate without substituting either required DS/Kimi mathematical reviewer or relaxing HIGH. One page230/four exact original773x1000+977x700 PNGs ready for image-delivery/legibility calibration plus scoped visual judgment. Current configured Opus account selected/doctor actual<plan removed> identity verified; READYprobe actualOpus5.5/context1000000/maxout128000. Initial text-default image-plan dryrun caught before provider, preserved; corrected documented imagekind/hash/MIME v2dryrunPASS. Conditional planning180224+128000=308224,notexacttokenizer. Samefrozen267/source516d/PDF26f9; G44b sourcebinding explicitlynotimageGitclaim. Evidence reviews/2026-11-09-opus-visual-p230-ready/. No pixelreviewPOSTyet; separateRootauthorityaftercommit. Kimi remainsclosed/no requests/probes/retries forfewdays,wholeHIGH/cold/finalgatesunchanged.
