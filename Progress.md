@@ -17800,3 +17800,8 @@ Root fullread pixel44 HIGH/common-validator/all16exactIDs/hashpins/no repairs. M
 ## 2026-11-08:177 main pages accepted
 
 Root fullread pixel45 HIGH/common-validator/all16IDs/PNGpins/no repairs. Main177/267pages/708views,90remain. Nativecontext81241,aggregate4557063input223323output. Next178-181READY639649input/+311296=950945. FullKimi originalscientific v3 and DSfinitewordFIT sameactualrequests remainlive; no new grade/Leanacceptedcountchange.
+
+
+## 2026-11-08:selected-word initial FIT remains MEDIUM; no promotion
+
+DS actualterminal18696input14718output-plus-reasoning within52180bound, Root readentire publicreport/commonvalidator/all19bodycoverage/exact8FITchecks allPASS/no requiredrepairs. LiteralMEDIUMunaccepted; Gaussian/Hilbertandcoupled-frameinstantiations explicitlyinformal. Two abstractLean results remainprovisional, accepted80facts22seams unchanged; no source/header/compilerchange, no confidence-onlyretry orcompanioncreation. Evidence reviews/2026-11-08-finite-word-fit-medium-unaccepted/. FullKimi v3 Rootalsoverified exactfixed83ID+SHAset equality against originalpolicy, notcountalone. Originalallmodel/fullgates retained.

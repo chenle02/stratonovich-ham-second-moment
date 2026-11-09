@@ -758,3 +758,8 @@ remote/cluster/companionaction. Integration/finalgatesremain.
 ## Hermite selected-word standalone pilot — 2026-11-08
 
 Two abstract public facts raw_support/cut_eq_raw compile on currentstableLean4.35.0 withStdonly, noMathlibimport. Corefirstcompileclean andheadersunchanged. Exacttypes/axioms audit:raw_supportnone;cut_eq_rawonlypropext/Quot.sound. Ownedsource-onlyreplayproducesbyteidenticalolean/audit; privateall-orderunnormalizedcoefficientrecurrenceconsumerpasses,order2selfpair1/order4selfpair3retained. Three semanticFalsecontrols reject insufficientcutoff1, missingloweringandwrongorder4multiplicity. One privateconsumer simplificationfailure andone control-parser-wordingfailure preserved. Initialexacttype/applicationreviewPENDING;2PROVISIONALfacts, accepted80facts22seams unchanged. Evidence local-checks/hermite-word-v1/. L0/PROPOSED anddecision4unchanged; no companion/package/registry/lease/HPC.
+
+
+## Selected-word initial FIT remains MEDIUM — 2026-11-08
+
+NativeDS whole19body review terminal18696input/14718output-plus-reasoning within52180bound. Root fullread/canonicalvalidator/exactFIT01-FIT08 all8PASS/no repairs. LiteralPASS_WITH_NOTES/MEDIUM remainsUNACCEPTED; normalizedmultimodeGaussian/Hilbert andcoupled-frame instances remaininformal. No actual false source statement located; no confidence normalization or retry. Two abstract publicfacts stillPROVISIONAL, accepted80facts22seams/L0PROPOSED unchanged. Proof/headers/compiler/replayunchanged; current application-summary-v1 records status separatefromhistoricalpendingreceipts. No new companion/package/registry/lease/HPC.

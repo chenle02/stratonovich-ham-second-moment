@@ -170,3 +170,6 @@ noH1/CDF/integral/Gamma/supremum/PDEkerneltheoremorofficialpackagegate.
 | cut_eq_raw | Same premises, P fixes every Good(d) vector for d<=N and total per-color count<=N; inserting P before/after each J preserves ordered word. | Same;2provisional,0acceptedadded |
 
 Exact full public headers/types in local-checks/hermite-word-v1/. Private scalar Hermite-coefficient recurrence consumer is not a third public fact; actual Gaussian/Hilbert/analytic applications remain outsideLean.
+
+
+Selected-word initial FIT2026-11-08:all8PASS/no repairs butliteralMEDIUM/unaccepted. Bothrows remainprovisional; accepted80facts22seams unchanged. Current local-checks/hermite-word-v1/application-summary-v1.json links complete report. No compiled normalizedmulticolorGaussian/Hilbert orcoupled-frameinstance inferred.
