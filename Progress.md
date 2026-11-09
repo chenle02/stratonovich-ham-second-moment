@@ -17870,3 +17870,8 @@ Newboundedscientificsource/applicationreview ofactualOWN011/012/020/033 andRoot1
 ## 2026-11-08:MAINcontext10 complete; next206-209ready
 
 ActualMAINvisualcompact10 complete18messages203902before22309after;aggregate5405755input256206output. Next206-209READY580716input/+311296=892012. No primary/mathsessionconflation ornewpagecredit; main205accepted/62remain. Scientificcheck19 actualstartedonce/717589bound/fourOWNproofs/newRoot17/18, stillrunning andnotawholegrade retry.
+
+
+## 2026-11-08:check19raw invalidJSON andMEDIUM, no promotion
+
+Actualterminal660644input17506output-plus-reasoning within717589bound. Root readfull10936bytepublicraw. StrictJSONFAILchar10935missingclosinglimitationsarray; no localrepair/normalization orcanonicalacceptance. Exactunchangedsubtreeinspection confirms12IDsonce/all12visiblePASS/no repairs/literalMEDIUM, stillunacceptedforBOTHformat/confidence. Failedinitialarchiveparser wrote/stagednothing; originalrawintact. Rootverifiedactual033LF4654-4735 coefficientassembly,N_rindependentoft,finiteloworders/logsum/r->0 includingzerorate; notpeerHIGH. Correctreport-onlyF029attribution/two-deltaboundwording. Evidence reviews/2026-11-08-alternative-calibration-check19-medium-unaccepted/. No source/PDF/factcountchange. Main205accepted/62remain.
