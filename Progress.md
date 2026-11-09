@@ -30,8 +30,13 @@ compatibility anchor. Later scientific and review cycles are recorded below;
 historical Round log remains unchanged. A workflow-accounting audit is active.
 
 Gate class: whole-paper.
-Gate scope: original all-model actual-C2 goal; full214 proofs/240 declarations/
-13 joins, exact current source and its applications.
+Gate scope: original all-model actual-C2 goal. The adopted263-page source
+has214 OWN proofs/240 declarations. The unadopted267-page integration candidate
+has215 OWN proofs/241 declarations, including the self-contained pairing
+envelope OWN215. Required integrated reviews cover the WHOLE candidate215,
+all26 non-OWN declarations,13 joins and9 global checks (263 minimum rows),
+with its exact source and actual applications. Adopted-source receipts do
+not automatically clear the different candidate bytes.
 Mandatory protocols: actual DeepSeek V4 Pro MAIN and Kimi-K3 HIGH; adjudicate
 every finding; source/visual coverage; fresh independent final cold read;
 clean build; private delivery and wiki/handoff provenance; no unauthorized
@@ -41,6 +46,15 @@ messages, publication, HPC or official Lean-companion creation.
 2. Resolve every genuine gap and obtain the required integrated reviews.
 3. Complete primary-source, calibration and full rendered-PDF checks.
 4. Complete fresh cold review and verified final private delivery.
+
+Current evidence checkpoint (2026-11-09): both latest whole mathematical
+reports remain MEDIUM/no required repairs, with no currently identified
+source defect; the new detailed005/033/042/047/048 Opus audit also remains
+MEDIUM and technically unaccepted. Kimi weekly429 quota is confirmed from
+native per-session logs; no exact reset time is known. Main visual acceptance
+is229/267 pages,38 remaining. The user review-procedure question is pending;
+no threshold change, pause, completion or new scientific request is inferred.
+See the November9 review directories and current literal HANDOFF.md.
 
 ## 2026-11-06: third body-band visual batch adjudicated
 
