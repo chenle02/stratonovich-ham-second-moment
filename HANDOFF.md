@@ -1,8 +1,8 @@
-Last updated: 2026-11-09 01:15 CST (<MACHINE>, Codex)
+Last updated: 2026-11-09 01:21 CST (<MACHINE>, Codex)
 
 # HANDOFF
 
-Project: Article-Stratonovich-HAM-Second-Moment. Original all-model goal ACTIVE and incomplete; Le explicitly resumed after the archived November5 pause. No new pause or gate waiver was requested. Workflow authority: Progress.md; completion contract: PROJECT-GOAL.md. This current header supersedes historical paused snapshots below.
+Project: Article-Stratonovich-HAM-Second-Moment. Original all-model goal BLOCKED and incomplete; Le explicitly resumed after the archived November5 pause. No new pause or gate waiver was requested. Workflow authority: Progress.md; completion contract: PROJECT-GOAL.md. This current header supersedes historical paused snapshots below.
 
 ## ⏭ Next session: where to stand and what to do
 
@@ -893,4 +893,4 @@ Wiki project page: ../../../../Dropbox/workspace/svn/SPDEs-wiki/content/projects
 
 ## Risks to monitor
 
-MEDIUM/no-repairs is not acceptance. Technical byte/read/schema coverage is distinct from mathematical correctness. Kimi ACP hides actual weekly-quota errors as empty terminal responses; rely on per-session logs, not just the global log or a local process. Exact reset timestamp remains unknown. Idle sessions are not running jobs. Do not carry paused November5 instructions into the resumed goal or infer user answers from a default asynchronous option. Full goal remains ACTIVE and incomplete.
+MEDIUM/no-repairs is not acceptance. Technical byte/read/schema coverage is distinct from mathematical correctness. Kimi ACP hides actual weekly-quota errors as empty terminal responses; rely on per-session logs, not just the global log or a local process. Exact reset timestamp remains unknown. Idle sessions are not running jobs. Do not carry paused November5 instructions into the resumed goal or infer user answers from a default asynchronous option. Full goal remains BLOCKED and incomplete; this is not a user-requested pause.
