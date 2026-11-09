@@ -1,0 +1,502 @@
+{
+  "original_sha256": "2760f972293bee8e388034f1ac7d97c34e2aeba120af63859ba38ebb31864adb",
+  "data": {
+    "schema": "le-ai-lab.review-read-ledger/1",
+    "coverage_verified": true,
+    "claude_code_version": "2.1.304",
+    "events_sha256": "c71cff7c0db192aa88bde9d6a32eaa4f9cb7b2596f8b740bc748a1b644513aa1",
+    "events_hash_bound_to_receipt": true,
+    "stream_workspace": "external-evidence/stratonovich-opus-main-visual-20261109/p239-240-hires-actual/workspace",
+    "required_sources_sha256": null,
+    "continuation": false,
+    "continuation_credit": null,
+    "proves": "Each credited line was returned, numbered and byte-equal to the frozen workspace file, in a tool_result paired with a Read or line-numbered content-mode Grep call of the hash-bound provider stream.",
+    "does_not_prove": "Attention, understanding, or retention: a credited line may have been skimmed, ignored, or dropped by context compaction before the report was written. Uncredited lines may still have been seen in a form the ledger cannot attribute (previews, unnumbered output, subagents).",
+    "sources": [],
+    "image_proves": "Each delivered image: a direct Read tool_use of its exact workspace path, in the stream's session, is paired by id with a tool_result (same session) whose content is one inline base64 image block of the declared media type, and the base64 decodes to bytes whose sha256 is the declared one.",
+    "image_does_not_prove": "That the model looked at, understood or correctly interpreted the image, or any scientific acceptance of what it shows: only delivery of these exact bytes. Transformed or resized content, metadata and self-reports earn nothing, so an undelivered image may still have been seen in another form.",
+    "required_images": [
+      {
+        "path": "fullpages/page-239.png",
+        "sha256": "05f169179b9c7afeff4708185e0260a1527f76fb627e6a56025fb29c4afcae64",
+        "media_type": "image/png",
+        "status": "delivered",
+        "delivered_by": [
+          "toolu_019tpVSjsRk1ma6FQSYTT7fs"
+        ]
+      },
+      {
+        "path": "bands/page-239-band-1.png",
+        "sha256": "7276021b2a0a5641396138568b685641994dc773758905e6ffe54c1234cfed42",
+        "media_type": "image/png",
+        "status": "delivered",
+        "delivered_by": [
+          "toolu_01Tz2DYitt6psaCh3G8u6UuD"
+        ]
+      },
+      {
+        "path": "bands/page-239-band-2.png",
+        "sha256": "afc59f835169bd893188209c422fb2ad6568af1adb5c83f61588ca86a6ece948",
+        "media_type": "image/png",
+        "status": "delivered",
+        "delivered_by": [
+          "toolu_01Crvi5QXMQJsxbzSmh8AskJ"
+        ]
+      },
+      {
+        "path": "bands/page-239-band-3.png",
+        "sha256": "6ab9171260b2d18b43c19841f95b8acbe7fd7a017f0940f2a490c296cfedb6dc",
+        "media_type": "image/png",
+        "status": "delivered",
+        "delivered_by": [
+          "toolu_014sajVZtsXDXpR5izHBdcuJ"
+        ]
+      },
+      {
+        "path": "fullpages/page-240.png",
+        "sha256": "b2e7d76c91022f50530df6547ec982fad1646a19d42041df0325f8aca6df9cb0",
+        "media_type": "image/png",
+        "status": "delivered",
+        "delivered_by": [
+          "toolu_01Kh7Dvo4x2pr41uvredtHCK"
+        ]
+      },
+      {
+        "path": "bands/page-240-band-1.png",
+        "sha256": "a7eada5bd783d36d3e4b36d29e4c271bb2fe12ad35c73457b667e6aa562b37c0",
+        "media_type": "image/png",
+        "status": "delivered",
+        "delivered_by": [
+          "toolu_01WaLD1T2T8r89Tvmp7fPoM9"
+        ]
+      },
+      {
+        "path": "bands/page-240-band-2.png",
+        "sha256": "9439c0c48ff4f5c0f1b3c8ea239a4f7f6eb1dd65048851d8d79fa47746c13ba9",
+        "media_type": "image/png",
+        "status": "delivered",
+        "delivered_by": [
+          "toolu_012SwUu1RLBLRC2wbbU44nqC"
+        ]
+      },
+      {
+        "path": "bands/page-240-band-3.png",
+        "sha256": "dee12cda058ef70c9dff813a765e18462485576265b44e4f8a14a7ae4b56f760",
+        "media_type": "image/png",
+        "status": "delivered",
+        "delivered_by": [
+          "toolu_01Nm2E7M56zUwWgaJou1iusx"
+        ]
+      },
+      {
+        "path": "hires/page-239-body-r1-c1.png",
+        "sha256": "1067f82166bbab432e1c590889e697175b56420fd1225a628ad1c8fd23be1484",
+        "media_type": "image/png",
+        "status": "delivered",
+        "delivered_by": [
+          "toolu_01AvZXAnUvcufnm2eaTh3Zto"
+        ]
+      },
+      {
+        "path": "hires/page-239-body-r1-c2.png",
+        "sha256": "fbd50c8ac0e61c67b0d021dcf91a78d3998aecbad2e19b93793e20f02406df6d",
+        "media_type": "image/png",
+        "status": "delivered",
+        "delivered_by": [
+          "toolu_019874PDQsgayVyusXgAkUYJ"
+        ]
+      },
+      {
+        "path": "hires/page-239-body-r2-c1.png",
+        "sha256": "22492d7ea91c3f9771777ceb78c6131189eed297354f687d611687696ef2dfe6",
+        "media_type": "image/png",
+        "status": "delivered",
+        "delivered_by": [
+          "toolu_01GHeVQLitLr15F6J3Nz9ufs"
+        ]
+      },
+      {
+        "path": "hires/page-239-body-r2-c2.png",
+        "sha256": "b3ee45c2b2a96bdee504763fdff30aca24a1a04d1df26c846d990d2b467629f2",
+        "media_type": "image/png",
+        "status": "delivered",
+        "delivered_by": [
+          "toolu_01Ex4p4VeVRcfq9kuPBqSz9N"
+        ]
+      },
+      {
+        "path": "hires/page-239-body-r3-c1.png",
+        "sha256": "5144f089609c4e9aab9a89237a6ec9fb7f29a940fe0eb22974d036b2b60e9735",
+        "media_type": "image/png",
+        "status": "delivered",
+        "delivered_by": [
+          "toolu_01M8Btp3iQjMptgbBQjaTCFM"
+        ]
+      },
+      {
+        "path": "hires/page-239-body-r3-c2.png",
+        "sha256": "cee521f84bce61d2fe6c3582b836bb43be9d67e5e483fd54cc3562c6532f596d",
+        "media_type": "image/png",
+        "status": "delivered",
+        "delivered_by": [
+          "toolu_01AhT8TqGyWqmEUVYpKoMwtP"
+        ]
+      },
+      {
+        "path": "hires/page-240-body-r1-c1.png",
+        "sha256": "d229d0d5c44b2cb2ee6af71f9c673b1c55560494a03041c1e05f9053321edd69",
+        "media_type": "image/png",
+        "status": "delivered",
+        "delivered_by": [
+          "toolu_018HYW39xbAxb55ouRNJAX3Q"
+        ]
+      },
+      {
+        "path": "hires/page-240-body-r1-c2.png",
+        "sha256": "26570b1227dc1b1534a94232d751fce0d6326147e942be767ea8f7afb162dc2e",
+        "media_type": "image/png",
+        "status": "delivered",
+        "delivered_by": [
+          "toolu_01VaKDS289RYiwWUi6vQ3XtM"
+        ]
+      },
+      {
+        "path": "hires/page-240-body-r2-c1.png",
+        "sha256": "f853fe09891ec948259517bc07d170d28eaa08f2b31b2bd363acf61b331e26b2",
+        "media_type": "image/png",
+        "status": "delivered",
+        "delivered_by": [
+          "toolu_011dgyHtLWdaVqVtaSAWkjfn"
+        ]
+      },
+      {
+        "path": "hires/page-240-body-r2-c2.png",
+        "sha256": "fddceaeb5c004b4813c85b6b11d4fdbb475613c2770a623f9c27fd89ad5147bc",
+        "media_type": "image/png",
+        "status": "delivered",
+        "delivered_by": [
+          "toolu_01NeBLKYuG4E4GNUrrc4dqAP"
+        ]
+      },
+      {
+        "path": "hires/page-240-body-r3-c1.png",
+        "sha256": "6e26f5ac7f68db1e6c3df542d84208b166c437c740a12150ee26576406931e87",
+        "media_type": "image/png",
+        "status": "delivered",
+        "delivered_by": [
+          "toolu_01RYeKbKVzDfB5ct41h6R1kt"
+        ]
+      },
+      {
+        "path": "hires/page-240-body-r3-c2.png",
+        "sha256": "6bbd8e6b303780ec4beda2b76e645f3ea11880a0a317a391f1b7884e28a9fc84",
+        "media_type": "image/png",
+        "status": "delivered",
+        "delivered_by": [
+          "toolu_01JmjdCg1gHv7B7DfL72bTS3"
+        ]
+      }
+    ],
+    "tool_calls": [
+      {
+        "id": "toolu_017iXMbbzaFPnJkYi1j381E9",
+        "tool": "Read",
+        "source": ".review/required-sources.json",
+        "plan_copy_read": [
+          ".review/required-sources.json"
+        ],
+        "uncredited": "runner-owned plan copy (.review/): never read credit",
+        "stream": "attempt"
+      },
+      {
+        "id": "toolu_01Qwg3qVZ65y3EdtHrVZQaAb",
+        "tool": "Read",
+        "source": "source-manifest.json",
+        "credited": {
+          "source-manifest.json": [
+            [
+              1,
+              535
+            ]
+          ]
+        },
+        "stream": "attempt"
+      },
+      {
+        "id": "toolu_01S2f7EmB9iq6zg8zRpLhesy",
+        "tool": "Read",
+        "source": "VISUAL.md",
+        "credited": {
+          "VISUAL.md": [
+            [
+              1,
+              32
+            ]
+          ]
+        },
+        "stream": "attempt"
+      },
+      {
+        "id": "toolu_019tpVSjsRk1ma6FQSYTT7fs",
+        "tool": "Read",
+        "source": "fullpages/page-239.png",
+        "uncredited": "non-text result (image, PDF or block list)",
+        "stream": "attempt",
+        "image": {
+          "path": "fullpages/page-239.png",
+          "media_type": "image/png",
+          "decoded_sha256": "05f169179b9c7afeff4708185e0260a1527f76fb627e6a56025fb29c4afcae64",
+          "delivered": true
+        }
+      },
+      {
+        "id": "toolu_01Tz2DYitt6psaCh3G8u6UuD",
+        "tool": "Read",
+        "source": "bands/page-239-band-1.png",
+        "uncredited": "non-text result (image, PDF or block list)",
+        "stream": "attempt",
+        "image": {
+          "path": "bands/page-239-band-1.png",
+          "media_type": "image/png",
+          "decoded_sha256": "7276021b2a0a5641396138568b685641994dc773758905e6ffe54c1234cfed42",
+          "delivered": true
+        }
+      },
+      {
+        "id": "toolu_01Crvi5QXMQJsxbzSmh8AskJ",
+        "tool": "Read",
+        "source": "bands/page-239-band-2.png",
+        "uncredited": "non-text result (image, PDF or block list)",
+        "stream": "attempt",
+        "image": {
+          "path": "bands/page-239-band-2.png",
+          "media_type": "image/png",
+          "decoded_sha256": "afc59f835169bd893188209c422fb2ad6568af1adb5c83f61588ca86a6ece948",
+          "delivered": true
+        }
+      },
+      {
+        "id": "toolu_014sajVZtsXDXpR5izHBdcuJ",
+        "tool": "Read",
+        "source": "bands/page-239-band-3.png",
+        "uncredited": "non-text result (image, PDF or block list)",
+        "stream": "attempt",
+        "image": {
+          "path": "bands/page-239-band-3.png",
+          "media_type": "image/png",
+          "decoded_sha256": "6ab9171260b2d18b43c19841f95b8acbe7fd7a017f0940f2a490c296cfedb6dc",
+          "delivered": true
+        }
+      },
+      {
+        "id": "toolu_01AvZXAnUvcufnm2eaTh3Zto",
+        "tool": "Read",
+        "source": "hires/page-239-body-r1-c1.png",
+        "uncredited": "non-text result (image, PDF or block list)",
+        "stream": "attempt",
+        "image": {
+          "path": "hires/page-239-body-r1-c1.png",
+          "media_type": "image/png",
+          "decoded_sha256": "1067f82166bbab432e1c590889e697175b56420fd1225a628ad1c8fd23be1484",
+          "delivered": true
+        }
+      },
+      {
+        "id": "toolu_019874PDQsgayVyusXgAkUYJ",
+        "tool": "Read",
+        "source": "hires/page-239-body-r1-c2.png",
+        "uncredited": "non-text result (image, PDF or block list)",
+        "stream": "attempt",
+        "image": {
+          "path": "hires/page-239-body-r1-c2.png",
+          "media_type": "image/png",
+          "decoded_sha256": "fbd50c8ac0e61c67b0d021dcf91a78d3998aecbad2e19b93793e20f02406df6d",
+          "delivered": true
+        }
+      },
+      {
+        "id": "toolu_01GHeVQLitLr15F6J3Nz9ufs",
+        "tool": "Read",
+        "source": "hires/page-239-body-r2-c1.png",
+        "uncredited": "non-text result (image, PDF or block list)",
+        "stream": "attempt",
+        "image": {
+          "path": "hires/page-239-body-r2-c1.png",
+          "media_type": "image/png",
+          "decoded_sha256": "22492d7ea91c3f9771777ceb78c6131189eed297354f687d611687696ef2dfe6",
+          "delivered": true
+        }
+      },
+      {
+        "id": "toolu_01Ex4p4VeVRcfq9kuPBqSz9N",
+        "tool": "Read",
+        "source": "hires/page-239-body-r2-c2.png",
+        "uncredited": "non-text result (image, PDF or block list)",
+        "stream": "attempt",
+        "image": {
+          "path": "hires/page-239-body-r2-c2.png",
+          "media_type": "image/png",
+          "decoded_sha256": "b3ee45c2b2a96bdee504763fdff30aca24a1a04d1df26c846d990d2b467629f2",
+          "delivered": true
+        }
+      },
+      {
+        "id": "toolu_01M8Btp3iQjMptgbBQjaTCFM",
+        "tool": "Read",
+        "source": "hires/page-239-body-r3-c1.png",
+        "uncredited": "non-text result (image, PDF or block list)",
+        "stream": "attempt",
+        "image": {
+          "path": "hires/page-239-body-r3-c1.png",
+          "media_type": "image/png",
+          "decoded_sha256": "5144f089609c4e9aab9a89237a6ec9fb7f29a940fe0eb22974d036b2b60e9735",
+          "delivered": true
+        }
+      },
+      {
+        "id": "toolu_01AhT8TqGyWqmEUVYpKoMwtP",
+        "tool": "Read",
+        "source": "hires/page-239-body-r3-c2.png",
+        "uncredited": "non-text result (image, PDF or block list)",
+        "stream": "attempt",
+        "image": {
+          "path": "hires/page-239-body-r3-c2.png",
+          "media_type": "image/png",
+          "decoded_sha256": "cee521f84bce61d2fe6c3582b836bb43be9d67e5e483fd54cc3562c6532f596d",
+          "delivered": true
+        }
+      },
+      {
+        "id": "toolu_01Kh7Dvo4x2pr41uvredtHCK",
+        "tool": "Read",
+        "source": "fullpages/page-240.png",
+        "uncredited": "non-text result (image, PDF or block list)",
+        "stream": "attempt",
+        "image": {
+          "path": "fullpages/page-240.png",
+          "media_type": "image/png",
+          "decoded_sha256": "b2e7d76c91022f50530df6547ec982fad1646a19d42041df0325f8aca6df9cb0",
+          "delivered": true
+        }
+      },
+      {
+        "id": "toolu_01WaLD1T2T8r89Tvmp7fPoM9",
+        "tool": "Read",
+        "source": "bands/page-240-band-1.png",
+        "uncredited": "non-text result (image, PDF or block list)",
+        "stream": "attempt",
+        "image": {
+          "path": "bands/page-240-band-1.png",
+          "media_type": "image/png",
+          "decoded_sha256": "a7eada5bd783d36d3e4b36d29e4c271bb2fe12ad35c73457b667e6aa562b37c0",
+          "delivered": true
+        }
+      },
+      {
+        "id": "toolu_012SwUu1RLBLRC2wbbU44nqC",
+        "tool": "Read",
+        "source": "bands/page-240-band-2.png",
+        "uncredited": "non-text result (image, PDF or block list)",
+        "stream": "attempt",
+        "image": {
+          "path": "bands/page-240-band-2.png",
+          "media_type": "image/png",
+          "decoded_sha256": "9439c0c48ff4f5c0f1b3c8ea239a4f7f6eb1dd65048851d8d79fa47746c13ba9",
+          "delivered": true
+        }
+      },
+      {
+        "id": "toolu_01Nm2E7M56zUwWgaJou1iusx",
+        "tool": "Read",
+        "source": "bands/page-240-band-3.png",
+        "uncredited": "non-text result (image, PDF or block list)",
+        "stream": "attempt",
+        "image": {
+          "path": "bands/page-240-band-3.png",
+          "media_type": "image/png",
+          "decoded_sha256": "dee12cda058ef70c9dff813a765e18462485576265b44e4f8a14a7ae4b56f760",
+          "delivered": true
+        }
+      },
+      {
+        "id": "toolu_018HYW39xbAxb55ouRNJAX3Q",
+        "tool": "Read",
+        "source": "hires/page-240-body-r1-c1.png",
+        "uncredited": "non-text result (image, PDF or block list)",
+        "stream": "attempt",
+        "image": {
+          "path": "hires/page-240-body-r1-c1.png",
+          "media_type": "image/png",
+          "decoded_sha256": "d229d0d5c44b2cb2ee6af71f9c673b1c55560494a03041c1e05f9053321edd69",
+          "delivered": true
+        }
+      },
+      {
+        "id": "toolu_01VaKDS289RYiwWUi6vQ3XtM",
+        "tool": "Read",
+        "source": "hires/page-240-body-r1-c2.png",
+        "uncredited": "non-text result (image, PDF or block list)",
+        "stream": "attempt",
+        "image": {
+          "path": "hires/page-240-body-r1-c2.png",
+          "media_type": "image/png",
+          "decoded_sha256": "26570b1227dc1b1534a94232d751fce0d6326147e942be767ea8f7afb162dc2e",
+          "delivered": true
+        }
+      },
+      {
+        "id": "toolu_011dgyHtLWdaVqVtaSAWkjfn",
+        "tool": "Read",
+        "source": "hires/page-240-body-r2-c1.png",
+        "uncredited": "non-text result (image, PDF or block list)",
+        "stream": "attempt",
+        "image": {
+          "path": "hires/page-240-body-r2-c1.png",
+          "media_type": "image/png",
+          "decoded_sha256": "f853fe09891ec948259517bc07d170d28eaa08f2b31b2bd363acf61b331e26b2",
+          "delivered": true
+        }
+      },
+      {
+        "id": "toolu_01NeBLKYuG4E4GNUrrc4dqAP",
+        "tool": "Read",
+        "source": "hires/page-240-body-r2-c2.png",
+        "uncredited": "non-text result (image, PDF or block list)",
+        "stream": "attempt",
+        "image": {
+          "path": "hires/page-240-body-r2-c2.png",
+          "media_type": "image/png",
+          "decoded_sha256": "fddceaeb5c004b4813c85b6b11d4fdbb475613c2770a623f9c27fd89ad5147bc",
+          "delivered": true
+        }
+      },
+      {
+        "id": "toolu_01RYeKbKVzDfB5ct41h6R1kt",
+        "tool": "Read",
+        "source": "hires/page-240-body-r3-c1.png",
+        "uncredited": "non-text result (image, PDF or block list)",
+        "stream": "attempt",
+        "image": {
+          "path": "hires/page-240-body-r3-c1.png",
+          "media_type": "image/png",
+          "decoded_sha256": "6e26f5ac7f68db1e6c3df542d84208b166c437c740a12150ee26576406931e87",
+          "delivered": true
+        }
+      },
+      {
+        "id": "toolu_01JmjdCg1gHv7B7DfL72bTS3",
+        "tool": "Read",
+        "source": "hires/page-240-body-r3-c2.png",
+        "uncredited": "non-text result (image, PDF or block list)",
+        "stream": "attempt",
+        "image": {
+          "path": "hires/page-240-body-r3-c2.png",
+          "media_type": "image/png",
+          "decoded_sha256": "6bbd8e6b303780ec4beda2b76e645f3ea11880a0a317a391f1b7884e28a9fc84",
+          "delivered": true
+        }
+      }
+    ],
+    "diagnostics": []
+  }
+}

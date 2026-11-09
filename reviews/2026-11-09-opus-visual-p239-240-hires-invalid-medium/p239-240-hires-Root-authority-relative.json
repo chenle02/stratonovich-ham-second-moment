@@ -1,0 +1,45 @@
+{
+  "original_sha256": "a0b17cb53b7669f1c7230ec7eb03a7e4b3036c00a1dd3146c9e42fc494c3990a",
+  "data": {
+    "authorized_once": true,
+    "ready_commit": "50bacb73e0489f9ca6cf7ddd3ae7ecf984f01839",
+    "held_source_revision": "44b25617befac48da660d59b90ec07d47ab118cc",
+    "prompt_sha256": "794497dfe8d5d0615f138563521bce78cf5a8b49c15b3a7583e208d54b3b52e1",
+    "required_sources_sha256": "eb6c6029411ab782e0f16c9a8a24fd883e67a98544720ed4ad99a78aeb2b250f",
+    "account": "<account>",
+    "scope": "actual pixels of listed pages only",
+    "pages": [
+      239,
+      240
+    ],
+    "no_automatic_next_or_retry": true,
+    "Kimi_hold_untouched": true,
+    "argv": [
+      "subscription-review-cli",
+      "run",
+      "claude",
+      "--model",
+      "claude-opus-5-5",
+      "--effort",
+      "high",
+      "--claude-account",
+      "<account>",
+      "--packet",
+      "external-evidence/stratonovich-opus-main-visual-20261109/p239-240-hires-packet",
+      "--target",
+      "fullpages/page-239.png",
+      "--prompt-file",
+      "external-evidence/stratonovich-opus-main-visual-20261109/p239-240-hires-prompt.md",
+      "--source-revision",
+      "44b25617befac48da660d59b90ec07d47ab118cc",
+      "--out",
+      "external-evidence/stratonovich-opus-main-visual-20261109/p239-240-hires-actual",
+      "--min-confidence",
+      "high",
+      "--required-sources",
+      "external-evidence/stratonovich-opus-main-visual-20261109/p239-240-hires-packet/required-sources.json",
+      "--timeout",
+      "1800"
+    ]
+  }
+}
