@@ -17956,3 +17956,8 @@ Separately authorized pixel60 recovery for230-233 also0public bytes/end_turn. No
 ## 2026-11-09:Opus five-proof audit ACTUAL active; fresh Kimi probe empty
 
 Actualone Opus5.5/high firstParty audit started, bound ready9d0402a/heldclean44b25617. Stream actualcanonicalOpus5.5 Read/Grep/Glob,19Readrequests observed/no terminal; requests notfullcoverage. Noauditgradeyet. OldKimi visualsession nofurtherimage requests aftertwoempty. FreshnativeACP process4099351 session_c7b9bc3c-5014-4f65-adc5-6bada1cf71e9 samebinary/config K3maxdefault; usage0/noLLMcalls. Onebounded availability-only textprobe also0public/end_turn. Noimages/manuscript sent fresh; causeunknown/noquotaerrorinferred. Stopfurtherprobes/image retries pendingmeaningfuldiagnosis oravailabilitychange. Evidence reviews/2026-11-09-opus-depth-active-kimi-availability-empty/. Main229/267accepted,38remain; bothmathematicalHIGH/final gatesopen,fullgoalactive.
+
+
+## 2026-11-09:Kimi empty-turn cause verified as weekly quota exhaustion
+
+Exactnative per-session logs forimage59/60 andfreshREADYprobe eachrecordHTTP429 APIProviderQuotaExhaustedError/weekly7-daylimit. ACP hiderrorsbehindemptyend_turn; earlierunknowncausehistorypreserved. Retainexact3errorlines/sourcebytespans/SHA256bindings, no private thoughts/credentials. Primaryupstream1865identifiedper-sessionlogpath; actuallocal2.5.2logsestablishincident,notoldissuealone. No furthergeneration/retry/accountorconfigchanges/purchase/upgrade/substitution. ExactresettimeNOTreported,donotinfer. Evidence reviews/2026-11-09-kimi-weekly-quota-confirmed/. Main229/267accepted/38remain,KimiwholeHIGHopen. SeparateOpusfiveproofauditactive,36Readrequestsobserved/notterminal;fullgoalactive.
