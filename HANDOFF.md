@@ -1,8 +1,8 @@
-Last updated: 2026-11-09 01:15 CST (<MACHINE>, Codex)
+Last updated: 2026-11-09 01:21 CST (<MACHINE>, Codex)
 
 # HANDOFF
 
-Project: Article-Stratonovich-HAM-Second-Moment. Original all-model goal ACTIVE and incomplete; Le explicitly resumed after the archived November5 pause. No new pause or gate waiver was requested. Workflow authority: ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave/Progress.md; completion contract: ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave/PROJECT-GOAL.md. This current header supersedes historical paused snapshots below.
+Project: Article-Stratonovich-HAM-Second-Moment. Original all-model goal BLOCKED and incomplete; Le explicitly resumed after the archived November5 pause. No new pause or gate waiver was requested. Workflow authority: ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave/Progress.md; completion contract: ../../../../.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-wave/PROJECT-GOAL.md. This current header supersedes historical paused snapshots below.
 
 ## ⏭ Next session: where to stand and what to do
 
@@ -2611,7 +2611,7 @@ no fullpacket/provider/config/seal/rootready exists. Fullgoal ACTIVE.
 
 ## Repo & git state at handoff
 
-Research branch research/fixed-mask-young-20261031, scientific/review pre-handoff21a73e29ae692e6f15501fcf77eaf0fb53f20cb4, operational HANDOFF commit6e316955f6b76c0a087b6aa23af6eda23f5732cc, clean. Canonical shell-launch checkout ../../../../Dropbox/workspace/svn/Article-Stratonovich-HAM-Second-Moment is master, pre-handoff564887b7cb5df91770f6aa0002dbfb8da03fb63b, clean; it contains an older manuscript and acts as loader, not the research document. Dedicated HANDOFF-only descendants are expected on both branches. Origin is <HUB> bare storage; compare the research tracking REF when <HUB>'s checkout stays on master.
+Research branch research/fixed-mask-young-20261031, scientific/review pre-handoff21a73e29ae692e6f15501fcf77eaf0fb53f20cb4, operational HANDOFF commit3410e5c155803e2cc6e0225ab9b4da96b30574ce, clean. Canonical shell-launch checkout ../../../../Dropbox/workspace/svn/Article-Stratonovich-HAM-Second-Moment is master, pre-handoff564887b7cb5df91770f6aa0002dbfb8da03fb63b, clean; it contains an older manuscript and acts as loader, not the research document. Dedicated HANDOFF-only descendants are expected on both branches. Origin is <HUB> bare storage; compare the research tracking REF when <HUB>'s checkout stays on master.
 
 Frozen source carrier ../stratonovich-whole215-staged-review-carrier-20261107 at44b25617befac48da660d59b90ec07d47ab118cc remained clean and unchanged through the completed native audit. No reviewer currently holds a live mathematical request there. Never reset or discard other work.
 
@@ -2623,4 +2623,4 @@ Wiki project page: ../../../../Dropbox/workspace/svn/SPDEs-wiki/content/projects
 
 ## Risks to monitor
 
-MEDIUM/no-repairs is not acceptance. Technical byte/read/schema coverage is distinct from mathematical correctness. Kimi ACP hides actual weekly-quota errors as empty terminal responses; rely on per-session logs, not just the global log or a local process. Exact reset timestamp remains unknown. Idle sessions are not running jobs. Do not carry paused November5 instructions into the resumed goal or infer user answers from a default asynchronous option. Full goal remains ACTIVE and incomplete.
+MEDIUM/no-repairs is not acceptance. Technical byte/read/schema coverage is distinct from mathematical correctness. Kimi ACP hides actual weekly-quota errors as empty terminal responses; rely on per-session logs, not just the global log or a local process. Exact reset timestamp remains unknown. Idle sessions are not running jobs. Do not carry paused November5 instructions into the resumed goal or infer user answers from a default asynchronous option. Full goal remains BLOCKED and incomplete; this is not a user-requested pause.
