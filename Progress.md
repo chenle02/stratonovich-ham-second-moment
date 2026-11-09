@@ -17926,3 +17926,13 @@ ActualoriginalmathKcompact13complete8messages664173before40590after,inputunknown
 ## 2026-11-09:229 main pages accepted
 
 Root fullread pixel58 HIGH/common-validator/all16IDs/PNGpins/no repairs. Main229/267pages/916views;38remain. Nativecontext40312,aggregate5981588input291569output. Next230-233READY598746input/+311296=910042. Both latest full mathematical reports remain MEDIUM; no scientificHIGH/cold/finalgate promotion.
+
+
+## 2026-11-09:full MAIN v4 invalid/MEDIUM adjudicated without promotion
+
+Root read all263rows plus findings/limitations. Original90048byte raw SHA5016c36d4695928d6824f760a8ff696c25adf54d74f815500751d0fb92358f1a; strictJSON failschar90047/unclosed limitations array, never repaired. Intact subtree inspection matches exact215OWN/26nonOWN/13joins/9global IDs/primary labels; visible227PASS36PASS_WITH_NOTES,zero fatal/major/repairs,literalMEDIUM. Initial audit incorrectly expected four secondary equation labels in headers and stopped before files; corrected contract unchanged. Actual663659input34040output-plus-reasoning within696889bound. Exhaustive line reconstruction005/033/042/047/048 remains unperformed, no new source falsifier. Report-side corrections adjudicated. Evidence reviews/2026-11-09-full-main-v4-invalid-medium-unaccepted/. MathematicalHIGH/final gates open; no source/PDF/threshold change.
+
+
+## 2026-11-09:paired Kimi whole v4 MEDIUM adjudicated without promotion
+
+Root read all263rows/coverage/findings/limitations. Canonical schema PASS/exact215OWN26nonOWN13joins9global IDs/primary labels once; literalPASS_WITH_NOTES/MEDIUM,229PASS34PASS_WITH_NOTES,zero fatal/major/repairs,8minor5limitations. RawSHA9c7f90df05d4bf7dbd0cefb206c0f20abd66a159353e85081c02bd92eba1fdc2. Correct unsupported fresh-coverage claims for retired early opinions/candidateDIFF/F128, and distinguish Root computations from independent reviewer derivations. Actualcontext716173,aggregateinputUNKNOWN/output754847. Exactsame2297103byte user body as DSv4; no midwave newreport feed. Evidence reviews/2026-11-09-kimi-whole-v4-medium-unaccepted/. Both mathematicalHIGH gates remain unmet; no source/PDF/threshold change.

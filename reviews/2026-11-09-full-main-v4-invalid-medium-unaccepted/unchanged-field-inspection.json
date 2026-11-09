@@ -1,0 +1,50 @@
+{
+  "raw_sha256": "5016c36d4695928d6824f760a8ff696c25adf54d74f815500751d0fb92358f1a",
+  "raw_bytes": 90048,
+  "strict_json": "FAIL",
+  "error": {
+    "type": "JSONDecodeError",
+    "message": "Expecting ',' delimiter: line 1 column 90048 (char 90047)",
+    "character_offset": 90047
+  },
+  "unchanged_valid_subtree_spans_only": {
+    "verdict": {
+      "start_byte": 51,
+      "end_byte_exclusive": 68
+    },
+    "confidence": {
+      "start_byte": 82,
+      "end_byte_exclusive": 90
+    },
+    "source_coverage": {
+      "start_byte": 109,
+      "end_byte_exclusive": 3321
+    },
+    "checks": {
+      "start_byte": 3331,
+      "end_byte_exclusive": 87153
+    },
+    "findings": {
+      "start_byte": 87165,
+      "end_byte_exclusive": 88544
+    },
+    "required_repairs": {
+      "start_byte": 88564,
+      "end_byte_exclusive": 88566
+    }
+  },
+  "not_a_repaired_or_accepted_report": true,
+  "visible_verdict": "PASS_WITH_NOTES",
+  "visible_confidence": "medium",
+  "checks_count": 263,
+  "exact_original_owned215_nonowned26_joins13_global9_ID_and_primary_label_match": true,
+  "secondary_equation_labels_are_not_check_header_requirements": true,
+  "row_verdict_counts": {
+    "PASS": 227,
+    "PASS_WITH_NOTES": 36
+  },
+  "fatal_count": 0,
+  "major_count": 0,
+  "minor_count": 4,
+  "repairs_count": 0
+}
