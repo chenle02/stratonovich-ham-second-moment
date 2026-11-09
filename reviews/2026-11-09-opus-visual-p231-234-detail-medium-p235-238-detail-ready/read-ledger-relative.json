@@ -1,0 +1,458 @@
+{
+  "original_sha256": "522afdc0cb9616b1f8bf0d45b1dcffccfdf5bb8b4af8592bd0bd59159f7c85cf",
+  "data": {
+    "schema": "le-ai-lab.review-read-ledger/1",
+    "coverage_verified": true,
+    "claude_code_version": "2.1.304",
+    "events_sha256": "0213d06bdae356b36c8bc124cc8b3cb12cc9296e291b771a0c03d9955856ad1b",
+    "events_hash_bound_to_receipt": true,
+    "stream_workspace": "external-evidence/stratonovich-opus-main-visual-20261109/p231-234-detail-v2-actual/workspace",
+    "required_sources_sha256": null,
+    "continuation": false,
+    "continuation_credit": null,
+    "proves": "Each credited line was returned, numbered and byte-equal to the frozen workspace file, in a tool_result paired with a Read or line-numbered content-mode Grep call of the hash-bound provider stream.",
+    "does_not_prove": "Attention, understanding, or retention: a credited line may have been skimmed, ignored, or dropped by context compaction before the report was written. Uncredited lines may still have been seen in a form the ledger cannot attribute (previews, unnumbered output, subagents).",
+    "sources": [],
+    "image_proves": "Each delivered image: a direct Read tool_use of its exact workspace path, in the stream's session, is paired by id with a tool_result (same session) whose content is one inline base64 image block of the declared media type, and the base64 decodes to bytes whose sha256 is the declared one.",
+    "image_does_not_prove": "That the model looked at, understood or correctly interpreted the image, or any scientific acceptance of what it shows: only delivery of these exact bytes. Transformed or resized content, metadata and self-reports earn nothing, so an undelivered image may still have been seen in another form.",
+    "required_images": [
+      {
+        "path": "fullpages/page-231.png",
+        "sha256": "565195a465394be49aee5ae95965b45e3226cafb4b9d7dbd1a7893e8f69da9e3",
+        "media_type": "image/png",
+        "status": "delivered",
+        "delivered_by": [
+          "toolu_018mYnZZsjp89tEhMZ9jonRz"
+        ]
+      },
+      {
+        "path": "bands/page-231-band-1.png",
+        "sha256": "3041a0b6702a8f3bdd0a70442bf5328839c9f379e6b4a4ae716b55e993c94d51",
+        "media_type": "image/png",
+        "status": "delivered",
+        "delivered_by": [
+          "toolu_01K2cvPiYDsqakfEQw81WL8p"
+        ]
+      },
+      {
+        "path": "bands/page-231-band-2.png",
+        "sha256": "1cbea1a3269f27cccada5349e6a6b5aad094288e3bd9ae1ffeaaebd966ff3146",
+        "media_type": "image/png",
+        "status": "delivered",
+        "delivered_by": [
+          "toolu_01F7UV3GPXMRdUaqe62nAhF7"
+        ]
+      },
+      {
+        "path": "bands/page-231-band-3.png",
+        "sha256": "1b6202783eaad7551d05b5fde59a8f641b1d17c78f16a05131c6319f8d077ab9",
+        "media_type": "image/png",
+        "status": "delivered",
+        "delivered_by": [
+          "toolu_01L4Aj1eVmeTEiLexzDbkcvw"
+        ]
+      },
+      {
+        "path": "fullpages/page-232.png",
+        "sha256": "bb34775ce5ad02e6a2a3e1a52dcf4186d4b9b00fb0287ddaa2490f800ebd5638",
+        "media_type": "image/png",
+        "status": "delivered",
+        "delivered_by": [
+          "toolu_012KHhAbXXHgEsjCFhgKgH6x"
+        ]
+      },
+      {
+        "path": "bands/page-232-band-1.png",
+        "sha256": "e9a4e0598549feed79b830edd0903c03e1d8ece7252b8b34fec6d4ae726000b6",
+        "media_type": "image/png",
+        "status": "delivered",
+        "delivered_by": [
+          "toolu_016nWvgTLxck9o8cp9ULeBb5"
+        ]
+      },
+      {
+        "path": "bands/page-232-band-2.png",
+        "sha256": "97275fe98507aa7184338f27927ca49065e9f68d0202b8f8d43434f1b0714ca2",
+        "media_type": "image/png",
+        "status": "delivered",
+        "delivered_by": [
+          "toolu_01DM3jFuSaYjRhLMRdobQJeB"
+        ]
+      },
+      {
+        "path": "bands/page-232-band-3.png",
+        "sha256": "4f7b46df341c7406cb4dd042c9c31eb45e10740d2c288f2d4eb4d741fffbae98",
+        "media_type": "image/png",
+        "status": "delivered",
+        "delivered_by": [
+          "toolu_011qMQNQ2Fvoseer2KdyGu4b"
+        ]
+      },
+      {
+        "path": "fullpages/page-233.png",
+        "sha256": "693d12bfeccb88e6a49b695d76dd0fa84027aadf4beeae2537a48c78e3217008",
+        "media_type": "image/png",
+        "status": "delivered",
+        "delivered_by": [
+          "toolu_016TrGko4bQ4fDirMDHf9f1r"
+        ]
+      },
+      {
+        "path": "bands/page-233-band-1.png",
+        "sha256": "2ae49b5907e00c6ddf8c7f01fb0698440b4ef698bed08f5e55c4124462e5d095",
+        "media_type": "image/png",
+        "status": "delivered",
+        "delivered_by": [
+          "toolu_01DFR7Ww4TTBVk9MVKuEDFcU"
+        ]
+      },
+      {
+        "path": "bands/page-233-band-2.png",
+        "sha256": "a3e73dfd6ca8c226dd33a34b12f945a8fdd507d5e10cda8b2c3dfbd7b5f32f0a",
+        "media_type": "image/png",
+        "status": "delivered",
+        "delivered_by": [
+          "toolu_01BKFxhM5QM6U94JvUfr9mtN"
+        ]
+      },
+      {
+        "path": "bands/page-233-band-3.png",
+        "sha256": "8c2e642dd85312e6da6e7447dae38bbe06ec4790259058485b30715f5298a193",
+        "media_type": "image/png",
+        "status": "delivered",
+        "delivered_by": [
+          "toolu_01GiSbuNdkuvHEV9Cg9ytvDZ"
+        ]
+      },
+      {
+        "path": "fullpages/page-234.png",
+        "sha256": "fdaa3fb64168cd0574d91bba9fd2703915dd0ddaf224164bd3f8255fa99dfe98",
+        "media_type": "image/png",
+        "status": "delivered",
+        "delivered_by": [
+          "toolu_01AiySqVHE5QV7ePZGf1YAQA"
+        ]
+      },
+      {
+        "path": "bands/page-234-band-1.png",
+        "sha256": "9496feb0c4c5308f226783ec6c92596ab24eeb89856a7b14ad71f4566107ebd8",
+        "media_type": "image/png",
+        "status": "delivered",
+        "delivered_by": [
+          "toolu_01WEQguCDpbzSGjLBBgF8dBS"
+        ]
+      },
+      {
+        "path": "bands/page-234-band-2.png",
+        "sha256": "3fb631e752c22153eb687f0978ceafae038867fe12d3b1eebabdd81526d0ee1c",
+        "media_type": "image/png",
+        "status": "delivered",
+        "delivered_by": [
+          "toolu_01BqBQxJ7j49GRAt8pfnYhnT"
+        ]
+      },
+      {
+        "path": "bands/page-234-band-3.png",
+        "sha256": "4e0eb6ffe6eebf8fd1bcb141abe523d38afe7d48eb406300d0abdae9834bf56c",
+        "media_type": "image/png",
+        "status": "delivered",
+        "delivered_by": [
+          "toolu_01E3eGZkYdQNm64oksQoZXUn"
+        ]
+      },
+      {
+        "path": "detail-views/page-232-lemma35-5-display.png",
+        "sha256": "5fffde7582b7f9b9b6ad294f59b9682220f428ca1ac226a36d1f9e9097944519",
+        "media_type": "image/png",
+        "status": "delivered",
+        "delivered_by": [
+          "toolu_01X7wMjTTFvFozDm9enPWggV"
+        ]
+      },
+      {
+        "path": "detail-views/page-234-lemma35-7-scripts.png",
+        "sha256": "06496930d78dcc90067b6002841739009ba5f96ba8d753dabe5bfb430edc169a",
+        "media_type": "image/png",
+        "status": "delivered",
+        "delivered_by": [
+          "toolu_013pPZSQAkN6mFXUn7yXZoGa"
+        ]
+      }
+    ],
+    "tool_calls": [
+      {
+        "id": "toolu_01KTUcKqoTegSs7pB5qHoDja",
+        "tool": "Read",
+        "source": ".review/required-sources.json",
+        "plan_copy_read": [
+          ".review/required-sources.json"
+        ],
+        "uncredited": "runner-owned plan copy (.review/): never read credit",
+        "stream": "attempt"
+      },
+      {
+        "id": "toolu_01NJcPSQReUzxXSQ978C2a6s",
+        "tool": "Read",
+        "source": "source-manifest.json",
+        "credited": {
+          "source-manifest.json": [
+            [
+              1,
+              271
+            ]
+          ]
+        },
+        "stream": "attempt"
+      },
+      {
+        "id": "toolu_01MWc9p6qETYZS3kMdtLSAqE",
+        "tool": "Read",
+        "source": "VISUAL.md",
+        "credited": {
+          "VISUAL.md": [
+            [
+              1,
+              30
+            ]
+          ]
+        },
+        "stream": "attempt"
+      },
+      {
+        "id": "toolu_018mYnZZsjp89tEhMZ9jonRz",
+        "tool": "Read",
+        "source": "fullpages/page-231.png",
+        "uncredited": "non-text result (image, PDF or block list)",
+        "stream": "attempt",
+        "image": {
+          "path": "fullpages/page-231.png",
+          "media_type": "image/png",
+          "decoded_sha256": "565195a465394be49aee5ae95965b45e3226cafb4b9d7dbd1a7893e8f69da9e3",
+          "delivered": true
+        }
+      },
+      {
+        "id": "toolu_01K2cvPiYDsqakfEQw81WL8p",
+        "tool": "Read",
+        "source": "bands/page-231-band-1.png",
+        "uncredited": "non-text result (image, PDF or block list)",
+        "stream": "attempt",
+        "image": {
+          "path": "bands/page-231-band-1.png",
+          "media_type": "image/png",
+          "decoded_sha256": "3041a0b6702a8f3bdd0a70442bf5328839c9f379e6b4a4ae716b55e993c94d51",
+          "delivered": true
+        }
+      },
+      {
+        "id": "toolu_01F7UV3GPXMRdUaqe62nAhF7",
+        "tool": "Read",
+        "source": "bands/page-231-band-2.png",
+        "uncredited": "non-text result (image, PDF or block list)",
+        "stream": "attempt",
+        "image": {
+          "path": "bands/page-231-band-2.png",
+          "media_type": "image/png",
+          "decoded_sha256": "1cbea1a3269f27cccada5349e6a6b5aad094288e3bd9ae1ffeaaebd966ff3146",
+          "delivered": true
+        }
+      },
+      {
+        "id": "toolu_01L4Aj1eVmeTEiLexzDbkcvw",
+        "tool": "Read",
+        "source": "bands/page-231-band-3.png",
+        "uncredited": "non-text result (image, PDF or block list)",
+        "stream": "attempt",
+        "image": {
+          "path": "bands/page-231-band-3.png",
+          "media_type": "image/png",
+          "decoded_sha256": "1b6202783eaad7551d05b5fde59a8f641b1d17c78f16a05131c6319f8d077ab9",
+          "delivered": true
+        }
+      },
+      {
+        "id": "toolu_012KHhAbXXHgEsjCFhgKgH6x",
+        "tool": "Read",
+        "source": "fullpages/page-232.png",
+        "uncredited": "non-text result (image, PDF or block list)",
+        "stream": "attempt",
+        "image": {
+          "path": "fullpages/page-232.png",
+          "media_type": "image/png",
+          "decoded_sha256": "bb34775ce5ad02e6a2a3e1a52dcf4186d4b9b00fb0287ddaa2490f800ebd5638",
+          "delivered": true
+        }
+      },
+      {
+        "id": "toolu_016nWvgTLxck9o8cp9ULeBb5",
+        "tool": "Read",
+        "source": "bands/page-232-band-1.png",
+        "uncredited": "non-text result (image, PDF or block list)",
+        "stream": "attempt",
+        "image": {
+          "path": "bands/page-232-band-1.png",
+          "media_type": "image/png",
+          "decoded_sha256": "e9a4e0598549feed79b830edd0903c03e1d8ece7252b8b34fec6d4ae726000b6",
+          "delivered": true
+        }
+      },
+      {
+        "id": "toolu_01DM3jFuSaYjRhLMRdobQJeB",
+        "tool": "Read",
+        "source": "bands/page-232-band-2.png",
+        "uncredited": "non-text result (image, PDF or block list)",
+        "stream": "attempt",
+        "image": {
+          "path": "bands/page-232-band-2.png",
+          "media_type": "image/png",
+          "decoded_sha256": "97275fe98507aa7184338f27927ca49065e9f68d0202b8f8d43434f1b0714ca2",
+          "delivered": true
+        }
+      },
+      {
+        "id": "toolu_011qMQNQ2Fvoseer2KdyGu4b",
+        "tool": "Read",
+        "source": "bands/page-232-band-3.png",
+        "uncredited": "non-text result (image, PDF or block list)",
+        "stream": "attempt",
+        "image": {
+          "path": "bands/page-232-band-3.png",
+          "media_type": "image/png",
+          "decoded_sha256": "4f7b46df341c7406cb4dd042c9c31eb45e10740d2c288f2d4eb4d741fffbae98",
+          "delivered": true
+        }
+      },
+      {
+        "id": "toolu_01X7wMjTTFvFozDm9enPWggV",
+        "tool": "Read",
+        "source": "detail-views/page-232-lemma35-5-display.png",
+        "uncredited": "non-text result (image, PDF or block list)",
+        "stream": "attempt",
+        "image": {
+          "path": "detail-views/page-232-lemma35-5-display.png",
+          "media_type": "image/png",
+          "decoded_sha256": "5fffde7582b7f9b9b6ad294f59b9682220f428ca1ac226a36d1f9e9097944519",
+          "delivered": true
+        }
+      },
+      {
+        "id": "toolu_016TrGko4bQ4fDirMDHf9f1r",
+        "tool": "Read",
+        "source": "fullpages/page-233.png",
+        "uncredited": "non-text result (image, PDF or block list)",
+        "stream": "attempt",
+        "image": {
+          "path": "fullpages/page-233.png",
+          "media_type": "image/png",
+          "decoded_sha256": "693d12bfeccb88e6a49b695d76dd0fa84027aadf4beeae2537a48c78e3217008",
+          "delivered": true
+        }
+      },
+      {
+        "id": "toolu_01DFR7Ww4TTBVk9MVKuEDFcU",
+        "tool": "Read",
+        "source": "bands/page-233-band-1.png",
+        "uncredited": "non-text result (image, PDF or block list)",
+        "stream": "attempt",
+        "image": {
+          "path": "bands/page-233-band-1.png",
+          "media_type": "image/png",
+          "decoded_sha256": "2ae49b5907e00c6ddf8c7f01fb0698440b4ef698bed08f5e55c4124462e5d095",
+          "delivered": true
+        }
+      },
+      {
+        "id": "toolu_01BKFxhM5QM6U94JvUfr9mtN",
+        "tool": "Read",
+        "source": "bands/page-233-band-2.png",
+        "uncredited": "non-text result (image, PDF or block list)",
+        "stream": "attempt",
+        "image": {
+          "path": "bands/page-233-band-2.png",
+          "media_type": "image/png",
+          "decoded_sha256": "a3e73dfd6ca8c226dd33a34b12f945a8fdd507d5e10cda8b2c3dfbd7b5f32f0a",
+          "delivered": true
+        }
+      },
+      {
+        "id": "toolu_01GiSbuNdkuvHEV9Cg9ytvDZ",
+        "tool": "Read",
+        "source": "bands/page-233-band-3.png",
+        "uncredited": "non-text result (image, PDF or block list)",
+        "stream": "attempt",
+        "image": {
+          "path": "bands/page-233-band-3.png",
+          "media_type": "image/png",
+          "decoded_sha256": "8c2e642dd85312e6da6e7447dae38bbe06ec4790259058485b30715f5298a193",
+          "delivered": true
+        }
+      },
+      {
+        "id": "toolu_01AiySqVHE5QV7ePZGf1YAQA",
+        "tool": "Read",
+        "source": "fullpages/page-234.png",
+        "uncredited": "non-text result (image, PDF or block list)",
+        "stream": "attempt",
+        "image": {
+          "path": "fullpages/page-234.png",
+          "media_type": "image/png",
+          "decoded_sha256": "fdaa3fb64168cd0574d91bba9fd2703915dd0ddaf224164bd3f8255fa99dfe98",
+          "delivered": true
+        }
+      },
+      {
+        "id": "toolu_01WEQguCDpbzSGjLBBgF8dBS",
+        "tool": "Read",
+        "source": "bands/page-234-band-1.png",
+        "uncredited": "non-text result (image, PDF or block list)",
+        "stream": "attempt",
+        "image": {
+          "path": "bands/page-234-band-1.png",
+          "media_type": "image/png",
+          "decoded_sha256": "9496feb0c4c5308f226783ec6c92596ab24eeb89856a7b14ad71f4566107ebd8",
+          "delivered": true
+        }
+      },
+      {
+        "id": "toolu_01BqBQxJ7j49GRAt8pfnYhnT",
+        "tool": "Read",
+        "source": "bands/page-234-band-2.png",
+        "uncredited": "non-text result (image, PDF or block list)",
+        "stream": "attempt",
+        "image": {
+          "path": "bands/page-234-band-2.png",
+          "media_type": "image/png",
+          "decoded_sha256": "3fb631e752c22153eb687f0978ceafae038867fe12d3b1eebabdd81526d0ee1c",
+          "delivered": true
+        }
+      },
+      {
+        "id": "toolu_01E3eGZkYdQNm64oksQoZXUn",
+        "tool": "Read",
+        "source": "bands/page-234-band-3.png",
+        "uncredited": "non-text result (image, PDF or block list)",
+        "stream": "attempt",
+        "image": {
+          "path": "bands/page-234-band-3.png",
+          "media_type": "image/png",
+          "decoded_sha256": "4e0eb6ffe6eebf8fd1bcb141abe523d38afe7d48eb406300d0abdae9834bf56c",
+          "delivered": true
+        }
+      },
+      {
+        "id": "toolu_013pPZSQAkN6mFXUn7yXZoGa",
+        "tool": "Read",
+        "source": "detail-views/page-234-lemma35-7-scripts.png",
+        "uncredited": "non-text result (image, PDF or block list)",
+        "stream": "attempt",
+        "image": {
+          "path": "detail-views/page-234-lemma35-7-scripts.png",
+          "media_type": "image/png",
+          "decoded_sha256": "06496930d78dcc90067b6002841739009ba5f96ba8d753dabe5bfb430edc169a",
+          "delivered": true
+        }
+      }
+    ],
+    "diagnostics": []
+  }
+}
