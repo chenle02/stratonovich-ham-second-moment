@@ -1,0 +1,12 @@
+@StratonovichHAMAudit.VectorProjection.projection_realize.{u_1,
+    u_2} : ∀ {Mode : Type u_1} {E : Type u_2} [inst : NormedAddCommGroup.{u_2} E]
+  [inst_1 : InnerProductSpace.{0, u_2} ℝ E] [inst_2 : CompleteSpace.{u_2} E] (p : Finsupp.{u_1, 0} Mode ℕ → Prop)
+  (f : Finsupp.{u_1, u_2} (Finsupp.{u_1, 0} Mode ℕ) E),
+  Eq.{max (u_1 + 1) (u_2 + 1)}
+    ((Submodule.starProjection.{0, max u_1 u_2} ↑(StratonovichHAMAudit.VectorProjection.cutoffSpace.{u_1, u_2} p))
+      (StratonovichHAMAudit.VectorProjection.realize.{u_1, u_2} f))
+    (StratonovichHAMAudit.VectorProjection.realize.{u_1, u_2}
+      (StratonovichHAMAudit.VectorProjection.cut.{u_1, u_2} p f))
+'StratonovichHAMAudit.VectorProjection.projection_realize' depends on axioms: [propext,
+ Classical.choice.{u},
+ Quot.sound.{u}]
