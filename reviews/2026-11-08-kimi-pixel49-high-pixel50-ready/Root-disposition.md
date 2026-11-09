@@ -1,0 +1,1 @@
+Root read the entire report. Canonical HIGH/no repairs, all16 exact VIEW_IDs and PNG hashes verified. Accept MAIN190-193 only: union193/267pages/772views;74remain. Crop-seam observations are complete in adjacent bands; no candidate defects. No mathematical/source/cold gate credit. Next194-197 READY620274input plus311296hard=931570, nativecontext61865.
