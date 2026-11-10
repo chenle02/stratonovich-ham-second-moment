@@ -56,6 +56,12 @@ MEDIUM and technically unaccepted. Kimi weekly429 quota is confirmed from
 native per-session logs; no exact reset time is known. Main visual acceptance
 is230/267 pages,37 remaining. Le directed a few-day Kimi hold until its weekly quota refills;
 no threshold change, pause, completion or new scientific request is inferred.
+Exception (Le, 2026-11-10, in session with #22): the hold is lifted for ONE
+run only, the Kimi-K3 correspondence review of the Lean statement ledger
+(companion 4bdffba, manuscript 669ccc9; attempt in
+~/.local/state/Le-AI-Lab/stratonovich-lean-ledger-kimi-v1/attempt-01,
+launched 07:11 before the hold was noticed, then explicitly continued by Le).
+All other Kimi requests, probes and retries remain on hold.
 See the November9 review directories and current literal HANDOFF.md.
 
 ## 2026-11-06: third body-band visual batch adjudicated
