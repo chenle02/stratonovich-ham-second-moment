@@ -18536,3 +18536,16 @@ pages containing the conjecture/table were inspected; builds are clean,
 215 existing proof bodies preserved, 82 mapped labels and 250 links valid.
 Report 303 pages; reader 28. This is presentation of an open question, not
 a new proof or research-goal activation.
+
+## 2026-11-10: quick static-endpoint check
+
+The existing common spatial-energy bracket already squeezes the intrinsic
+constant as the temporal exponent tends to zero: both scalar factors tend
+to one. For spatial covariance c delta_0, the endpoint is 2 sqrt(c)/3.
+This corrects the earlier suggestion that convergence of these constants
+itself necessarily needs a new compactness argument. The separate comparison
+with a published static model and interchange with the long-time limit have
+not been checked. The numerical rows in
+private/audit/2026-11-10-static-limit-check/check.json evaluate bounding
+formulas only. This is a consequence conditional on the existing written
+bracket, not a new independent acceptance or source-normalization repair.
