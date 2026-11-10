@@ -18572,3 +18572,16 @@ No LDP theorem has been added. Relevant missing background, Touchette's
 2009 review (DOI 10.1016/j.physrep.2009.05.002; accessible arXiv0804.0327v2),
 was queued as tk-20261110-181521-codex-stratonovich-future-work after canonical
 coverage and Papis checks; queued is not ingested.
+
+## 2026-11-10: universality reconnaissance
+
+At Le's request, a subagent investigated whether KPZ or another scaling limit
+is suggested by this model. Its source-qualified memo is retained under
+private/audit/2026-11-10-universality/. Current annealed moment asymptotics
+do not determine typical fluctuation scaling or a fixed point. In the white
+spatial case, the proposed cubic upper tail differs from KPZ's upper-tail
+power 3/2. Exact shrinking-space moment scaling is not KPZ fluctuation
+scaling. A formal log-wave expansion suggests a possible effective damping
+mechanism, but its centering, positivity/localization and negligible-inertia
+assumptions are unproved, and temporal memory remains to be tested.
+No universality conjecture, simulation, proof or scientific gate is added.
