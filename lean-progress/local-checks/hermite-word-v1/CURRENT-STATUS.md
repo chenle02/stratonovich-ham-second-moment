@@ -1,0 +1,5 @@
+# Current generic-word application status
+
+The two unchanged generic kernel facts now have an accepted concrete normalized multivariate Gaussian/vector application. See application-summary-v2.json and ../colored-vector-word-v1/application-summary-v1.json. The actual Gaussian Lp coordinate domain, normalized coefficient action, arbitrary bounded vector frames, concrete degree/vacuum/filter properties, actual orthogonal projection, prefix domains and word equality are supplied by the completed kernel consumer. Its independent six-check application review is HIGH with no required repairs.
+
+The original application-summary-v1.json, local-receipt.json, report and scalar-only fixture remain historical stage artifacts. Their MEDIUM/pending labels are not rewritten. The new accepted application is arbitrary complete REAL Hilbert coefficients; complex-real, background and height-space identifications remain separately reviewed mathematics. Bochner/infinite-cutoff/analytic wave/SPDE and all full-project gates remain outside this local claim. No source/type change, new package, registry, companion or HPC action.
