@@ -25,8 +25,11 @@
   is licensed and public; they stay here in local-checks.
 - **Manuscript anchor:** revision cf979d6, pinned in the companion's
   provenance/manuscript-anchor.json (main TeX + 27 inputs + PDF SHA-256).
-  The statement ledger cites 45 labels, all present at cf979d6; 35 claims
-  map to a label, 53 check computations with no direct label at cf979d6
+  The statement ledger maps 33 claims to a label and 55 have no direct
+  label at cf979d6 (35/53 before the DeepSeek V4 Pro correspondence review
+  of 38d1616, adjudicated in reviews/2026-11-09-lean-ledger-correspondence/:
+  0 critical, 1 major, 6 minor, all accepted or confirmatory, MEDIUM
+  confidence; ledger corrected at companion a78c5d0, docs-only)
   (whole seams AllAlphaMoment, DampedLower, DimensionalMatrix, GlobalOmega,
   LocalFlow, MiddleCross, OccupationForm, PhaseResponse, ProjectionResidual,
   TerminalCross, plus 8 rows in DirectEvent/InteractionDriver/RawValueCeiling).
@@ -34,7 +37,8 @@
 - **Not claimed:** no Comparator tier, no whole-paper gate, no correspondence
   re-review of the packaged statements (the ledger is an AI-drafted review
   draft), no Palomar eligibility (seam companion, ADR-0070 D4).
-- **Next:** independent correspondence read of docs/statement-ledger.md;
+- **Next:** second-family (Kimi-K3) or human correspondence read of the
+  post-repair ledger at a78c5d0 for a HIGH gate;
   wave L1 (G0 pair-partition counts) when opened.
 
 - **Standalone local checks (current, 2026-11-09):** 87 accepted finite

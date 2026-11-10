@@ -1,0 +1,29 @@
+{
+  "started_utc": "2026-11-10T04:03:06.082418Z",
+  "argv": [
+    "opencode",
+    "run",
+    "--pure",
+    "--dir",
+    "<empty carrier>",
+    "--agent",
+    "reviewer",
+    "--model",
+    "deepseek/deepseek-v4-pro",
+    "--format",
+    "json",
+    "--title",
+    "lean-ledger-correspondence"
+  ],
+  "agent_note": "opencode has no reviewer agent; falls back to default agent (smoke test); all tools denied by OPENCODE_PERMISSION",
+  "permission_env": {
+    "*": "deny"
+  },
+  "output_limit_env": {
+    "OPENCODE_EXPERIMENTAL_OUTPUT_TOKEN_MAX": "131072"
+  },
+  "category": "paper-review-deepseek",
+  "model_requested": "deepseek/deepseek-v4-pro",
+  "automatic_retry": false,
+  "stdin": "prompt.md"
+}
