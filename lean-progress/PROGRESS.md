@@ -18,12 +18,15 @@
   pilot now has three elaborated statements and an owned-source replay.
   Exact type/application review passed4checks/HIGH;no official package gate is claimed.
 
-- **Standalone local checks (current):**80acceptedfinitefacts22local seams.
-  Latesttwo white-CDF conditional algebra facts passed FULL exacttype/
-  applicationreview25HIGH313.597s atscientific95d7515. ActualH1/CDF,
-  integrals/suprema/attainment/Gamma/PDEarguments remain informal. Mirror
-  addsone2factentry andpreservesall21oldentries78facts. Privatecomposition
-  isnotthirdfact;no compiler rerun or officialpackage/companion gate.
+- **Standalone local checks (current, 2026-11-09):** 87 accepted finite
+  facts in 26 local seams. The latest promotion added three concrete
+  colored-vector Gaussian word facts and promoted two earlier provisional
+  generic word facts after the completed actual-application review (see the
+  last 2026-11-09 log entry and `local-checks/colored-vector-word-v1/`).
+  Analytic inputs (H1/CDF, integrals, suprema, attainment, Gamma, PDE,
+  complex/background/Bochner bridges) remain informal and outside the
+  kernel. Official wave L0 PROPOSED; no package, companion, registry entry
+  or cluster job. The earlier 80/22 snapshot is superseded history.
 
 ## Planned waves (strategy in ROADMAP.md)
 
