@@ -1,0 +1,523 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "medium",
+  "source_coverage": [
+    "candidate/statement-ledger.md:1-470 complete; the truncated passage was recovered by reading 228-263.",
+    "lean/claims.yaml:1-642 complete",
+    "lean/coverage.yaml:1-330 complete",
+    "lean/StratonovichHAMAudit/ActualEvent.lean:1-35 complete",
+    "lean/StratonovichHAMAudit/AllAlphaMoment.lean:1-29 complete",
+    "lean/StratonovichHAMAudit/ClockFilter.lean:1-64 complete",
+    "lean/StratonovichHAMAudit/DampedLower.lean:1-34 complete",
+    "lean/StratonovichHAMAudit/DimensionalMatrix.lean:1-23 complete",
+    "lean/StratonovichHAMAudit/DirectEvent.lean:1-93 complete",
+    "lean/StratonovichHAMAudit/FiniteYoung.lean:1-34 complete",
+    "lean/StratonovichHAMAudit/GaussianTail.lean:1-29 complete",
+    "lean/StratonovichHAMAudit/GlobalOmega.lean:1-144 complete",
+    "lean/StratonovichHAMAudit/HermiteWord.lean:1-61 complete",
+    "lean/StratonovichHAMAudit/HermiteWordConsumer.lean:1-70 complete",
+    "lean/StratonovichHAMAudit/InteractionDriver.lean:1-100 complete",
+    "lean/StratonovichHAMAudit/JointTilt.lean:1-28 complete",
+    "lean/StratonovichHAMAudit/LocalFlow.lean:1-51 complete",
+    "lean/StratonovichHAMAudit/MiddleCross.lean:1-192 complete",
+    "lean/StratonovichHAMAudit/MovingCone.lean:1-30 complete",
+    "lean/StratonovichHAMAudit/OccupationForm.lean:1-23 complete",
+    "lean/StratonovichHAMAudit/PhaseResponse.lean:1-67 complete",
+    "lean/StratonovichHAMAudit/PositiveGram.lean:1-87 complete",
+    "lean/StratonovichHAMAudit/ProjectionResidual.lean:1-28 complete",
+    "lean/StratonovichHAMAudit/RawValueCeiling.lean:1-27 complete",
+    "lean/StratonovichHAMAudit/RawVariational.lean:1-73 complete",
+    "lean/StratonovichHAMAudit/TerminalCross.lean:1-113 complete",
+    "lean/StratonovichHAMAudit/WhiteCDF.lean:1-20 complete",
+    "manuscript/notes/integrated_actual_operator_driver.tex:1-655 complete",
+    "manuscript/notes/integrated_cameron_mean.tex:1-457 complete",
+    "manuscript/notes/integrated_compact_gaussian.tex:1-617 complete",
+    "manuscript/notes/integrated_covariance_foundation.tex:1-428 complete",
+    "manuscript/notes/integrated_exact_scaling.tex:1-56 complete",
+    "manuscript/notes/integrated_gaussian_tubes.tex:1-503 complete",
+    "manuscript/notes/integrated_intrinsic_constant.tex:1-388 complete",
+    "manuscript/notes/integrated_occupation_ceiling.tex:1-308 complete",
+    "manuscript/notes/integrated_point_transfer.tex:1-323 complete",
+    "manuscript/notes/integrated_positive_gram.tex:1-216 complete",
+    "manuscript/notes/integrated_radius_anchor.tex:1-339 complete",
+    "manuscript/notes/integrated_raw_block_lower.tex:1-675 complete",
+    "manuscript/notes/integrated_symplectic_phase.tex:1-383 complete",
+    "manuscript/notes/integrated_temporal_equilibrium.tex:1-90 complete",
+    "manuscript/notes/integrated_unmasked_variational.tex:1-343 complete",
+    "manuscript/notes/integrated_wave_variance.tex:1-531 complete",
+    "manuscript/notes/integrated_white_evaluation.tex:1-164 complete",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex: partial; full-text ranges read: 1-180, 1910-2170, 2480-2550, 2660-2735, 3890-3975, 4860-5360, 7230-7706. Additional isolated search-hit lines were read, including 420, 1354, 1585, 3010, 5769 and 6460; these do not close the gaps.",
+    "manuscript/notes/integrated_compact_mean_family.tex: partial; full-text range 160-335 read, plus isolated search hits elsewhere.",
+    "manuscript/notes/integrated_signed_static.tex: partial; full-text ranges 1-100 and 135-215 read.",
+    "manuscript/notes/integrated_uniform_products.tex: partial; full-text ranges 115-190 and 449-530 read.",
+    "manuscript/notes/integrated_uniform_mean.tex: partial; search-hit lines 26, 29-30, 44-45, 48, 50 and 52 read.",
+    "manuscript/notes/integrated_source_convergence.tex: partial; search-hit lines 68, 112, 155, 194, 347 and 401 read.",
+    "manuscript/notes/integrated_constant_phase_young.tex: partial; search-hit lines 39, 55-60, 75, 152, 393 and 477 read.",
+    "manuscript/notes/integrated_masked_moments.tex: partial; search-hit lines 8, 73 and 121 read.",
+    "manuscript/notes/integrated_spatial_occupation.tex: partial; search-hit lines 14 and 25-26 read."
+  ],
+  "checks": [
+    {
+      "claim": "StratonovichHAMAudit.ActualEvent.finite_error_accumulation: L:raw-block-restart",
+      "verdict": "PASS",
+      "reason": "OK: ActualEvent.lean:9-12 agrees with the ledger and claims.yaml:8. The recurrence, identity extension and n C^n error bound occur in integrated_raw_block_lower.tex:396-412. Operator and moment inputs are correctly excluded."
+    },
+    {
+      "claim": "StratonovichHAMAudit.ActualEvent.moderate_penalty: P:raw-block-original-lower",
+      "verdict": "PASS",
+      "reason": "OK: ActualEvent.lean:25-26 requires delta>0 and has exactly the stated exponent. integrated_raw_block_lower.tex:639-659 uses the same normalized penalty. The change of law and limit remain outside Lean."
+    },
+    {
+      "claim": "StratonovichHAMAudit.AllAlphaMoment.moment_lower: no direct label",
+      "verdict": "INCONCLUSIVE",
+      "reason": "ABSENT-CONFIRMED: not certified. Fidelity agrees with AllAlphaMoment.lean:8-10 and claims.yaml:23. Searches over all manuscript inputs for D+4a, x+y=a and x^2 with Dy found no candidate computation; incomplete required main-file reading prevents an absence verdict."
+    },
+    {
+      "claim": "StratonovichHAMAudit.AllAlphaMoment.rational_gap: no direct label",
+      "verdict": "INCONCLUSIVE",
+      "reason": "ABSENT-CONFIRMED: not certified. AllAlphaMoment.lean:17-20 agrees with the shortened ledger and claims.yaml:30. Searches for D+4a, D+2a and the corresponding rational denominators found no candidate; the main-file completeness requirement remains unmet."
+    },
+    {
+      "claim": "StratonovichHAMAudit.ClockFilter.resolvent_partial_fraction: P:clock-copy-obstruction",
+      "verdict": "INCONCLUSIVE",
+      "reason": "OK: local fidelity and mapping agree: ClockFilter.lean:14-16 and claims.yaml:38 match the partial-fraction step in notes_stratonovich_ham_second_moment.tex:7457-7469. The required complete reading of that manuscript file was not achieved."
+    },
+    {
+      "claim": "StratonovichHAMAudit.ClockFilter.clock_filter_bounds: P:clock-copy-obstruction",
+      "verdict": "INCONCLUSIVE",
+      "reason": "OK: ClockFilter.lean:22-23 matches the paraphrase and claims.yaml:45; notes_stratonovich_ham_second_moment.tex:7414-7419,7520-7523 uses the factor strictly between zero and one. The containing required file remains partially read."
+    },
+    {
+      "claim": "StratonovichHAMAudit.ClockFilter.strict_filter_integral: P:clock-copy-obstruction",
+      "verdict": "INCONCLUSIVE",
+      "reason": "OK: ClockFilter.lean:29-35 includes the stated nonzero measure, positive support, integrability and a.e. positivity. Their manuscript counterparts are notes_stratonovich_ham_second_moment.tex:7404-7419,7468-7476,7520-7523. Full required reading of that file is missing."
+    },
+    {
+      "claim": "StratonovichHAMAudit.DampedLower.exact_margin: no direct label",
+      "verdict": "INCONCLUSIVE",
+      "reason": "ABSENT-CONFIRMED: not certified. DampedLower.lean:9 and claims.yaml:60 agree. Searches for 157, 2^{28} and the numerical certificate found no manuscript candidate; incomplete required main-file reading prevents confirmation."
+    },
+    {
+      "claim": "StratonovichHAMAudit.DampedLower.pi_cube_certificate: no direct label",
+      "verdict": "INCONCLUSIVE",
+      "reason": "ABSENT-CONFIRMED: not certified. DampedLower.lean:12 and claims.yaml:67 agree. Searches for pi^3, 2^{25}, 5^{10} and 157 found no candidate; required main-file reading is incomplete."
+    },
+    {
+      "claim": "StratonovichHAMAudit.DampedLower.rational_pi_gain: no direct label",
+      "verdict": "INCONCLUSIVE",
+      "reason": "ABSENT-CONFIRMED: not certified. DampedLower.lean:23-24 and claims.yaml:74 agree. Searches for 157, pi^3, 2^{28}, 2^{25} and 5^{10} found no candidate; manuscript completeness remains insufficient."
+    },
+    {
+      "claim": "StratonovichHAMAudit.DimensionalMatrix.backward: P:actual-wave-form",
+      "verdict": "PASS",
+      "reason": "OK: DimensionalMatrix.lean:9-10 matches the ledger and claims.yaml:82. integrated_wave_variance.tex:178-185,218-220,309-311 supplies the unweighted backward factor. The zero-frequency and weighted-coordinate qualifications prevent overclaim."
+    },
+    {
+      "claim": "StratonovichHAMAudit.DimensionalMatrix.coupling: P:actual-wave-form",
+      "verdict": "PASS",
+      "reason": "OK: DimensionalMatrix.lean:11 matches claims.yaml:89 and the force B(b)(u,v)=(0,bu) in integrated_wave_variance.tex:185,218-220. The coefficient interpretation is outside the algebraic definition."
+    },
+    {
+      "claim": "StratonovichHAMAudit.DimensionalMatrix.forward: P:actual-wave-form",
+      "verdict": "PASS",
+      "reason": "OK: DimensionalMatrix.lean:12-13 matches claims.yaml:96 and integrated_wave_variance.tex:178-185. The ledger expressly excludes the continuous zero-frequency interpretation."
+    },
+    {
+      "claim": "StratonovichHAMAudit.DimensionalMatrix.full_interaction: P:actual-wave-form",
+      "verdict": "PASS",
+      "reason": "OK: DimensionalMatrix.lean:15-17 retains all four entries with the stated signs. integrated_wave_variance.tex:218-237,309-326 uses this product before normalization. The ledger correctly distinguishes unweighted multiplication from the weighted kernel."
+    },
+    {
+      "claim": "StratonovichHAMAudit.DirectEvent.kappa_gt_one: L:exact-canonical-scaling",
+      "verdict": "PASS",
+      "reason": "OK: DirectEvent.lean:12,16-17 agrees with claims.yaml:111. integrated_exact_scaling.tex:5-9 uses this kappa, and integrated_point_transfer.tex:307-310 applies kappa>1 under stronger manuscript assumptions. The unchecked upper bound is explicitly disclosed."
+    },
+    {
+      "claim": "StratonovichHAMAudit.DirectEvent.physical_scale: L:exact-canonical-scaling",
+      "verdict": "PASS",
+      "reason": "OK: DirectEvent.lean:22-23, with definitions at 12-14, matches claims.yaml:118 and integrated_exact_scaling.tex:5-10. Positive T and alpha<3 are preserved."
+    },
+    {
+      "claim": "StratonovichHAMAudit.DirectEvent.noise_scale: L:exact-canonical-scaling",
+      "verdict": "PASS",
+      "reason": "OK: DirectEvent.lean:36-37 matches claims.yaml:125 and integrated_exact_scaling.tex:39-43. Covariance scaling and equality in law are correctly left outside Lean."
+    },
+    {
+      "claim": "StratonovichHAMAudit.DirectEvent.vertex_scale: L:exact-canonical-scaling",
+      "verdict": "PASS",
+      "reason": "OK: DirectEvent.lean:48-50 matches claims.yaml:132 and integrated_exact_scaling.tex:39-47. Green scaling and passage to the full series are explicitly excluded."
+    },
+    {
+      "claim": "StratonovichHAMAudit.DirectEvent.gauge_inverse: no direct label",
+      "verdict": "INCONCLUSIVE",
+      "reason": "ABSENT-CONFIRMED: not certified. DirectEvent.lean:60-64 and claims.yaml:139 agree. Manuscript-wide searches for gauge, the shear matrix, pulse, Floquet and monodromy found no candidate; required main-file reading is incomplete."
+    },
+    {
+      "claim": "StratonovichHAMAudit.DirectEvent.gauge_drift: no direct label",
+      "verdict": "INCONCLUSIVE",
+      "reason": "ABSENT-CONFIRMED: not certified. DirectEvent.lean:60-61,68-69 and claims.yaml:146 agree. Searches for gauge, 1-w^2, 1-W^2 and the conjugation terminology found no candidate; absence cannot be certified."
+    },
+    {
+      "claim": "StratonovichHAMAudit.DirectEvent.monodromy: no direct label",
+      "verdict": "INCONCLUSIVE",
+      "reason": "ABSENT-CONFIRMED: not certified. DirectEvent.lean:75-81 and claims.yaml:153 agree. Searches for monodromy, Floquet, pulse and a^2-2b^2 found no candidate; the required complete main-file reading is missing."
+    },
+    {
+      "claim": "StratonovichHAMAudit.FiniteYoung.weighted_natural_powers: L:gaussian-scalar-powers",
+      "verdict": "PASS",
+      "reason": "OK: FiniteYoung.lean:9-11 matches claims.yaml:161, including natural exponents and endpoint cases. integrated_compact_gaussian.tex:18-23,33-35 states and proves the same inequality."
+    },
+    {
+      "claim": "StratonovichHAMAudit.GaussianTail.cutoff_density_split: L:tube-rayleigh-tail",
+      "verdict": "PASS",
+      "reason": "OK: GaussianTail.lean:9-12 matches claims.yaml:169. integrated_gaussian_tubes.tex:455-479 explicitly uses exactly these hypotheses and the -M^2/8-r^2/8 split. The integral evaluation remains outside Lean."
+    },
+    {
+      "claim": "StratonovichHAMAudit.GlobalOmega.envelopePolynomial: no direct label",
+      "verdict": "INCONCLUSIVE",
+      "reason": "ABSENT-CONFIRMED: not certified. GlobalOmega.lean:8-9 and claims.yaml:177 agree on degree 15. Searches for 237888, 2567920, 516600, 9900 and envelope polynomial found no candidate; required main-file reading is incomplete."
+    },
+    {
+      "claim": "StratonovichHAMAudit.GlobalOmega.envelopeDenom: no direct label",
+      "verdict": "INCONCLUSIVE",
+      "reason": "ABSENT-CONFIRMED: not certified. GlobalOmega.lean:11-12 matches claims.yaml:184. Searches for 750, 3-4x-2x^2 and the denominator factors found no candidate; the completeness prerequisite is unmet."
+    },
+    {
+      "claim": "StratonovichHAMAudit.GlobalOmega.envelopeRational: no direct label",
+      "verdict": "INCONCLUSIVE",
+      "reason": "ABSENT-CONFIRMED: not certified. GlobalOmega.lean:14-18 agrees with claims.yaml:191. Searches for 177/100, its fraction forms, 1-3x/5 and 3-4x-2x^2 found no candidate; absence remains unverified."
+    },
+    {
+      "claim": "StratonovichHAMAudit.GlobalOmega.left_certificate: no direct label",
+      "verdict": "INCONCLUSIVE",
+      "reason": "ABSENT-CONFIRMED: not certified. GlobalOmega.lean:20-21 agrees with claims.yaml:198. Searches for Bernstein, 10630044057599, 237888 and the degree-15 envelope found no candidate; incomplete main-file reading prevents confirmation."
+    },
+    {
+      "claim": "StratonovichHAMAudit.GlobalOmega.right_certificate: no direct label",
+      "verdict": "INCONCLUSIVE",
+      "reason": "ABSENT-CONFIRMED: not certified. GlobalOmega.lean:61-62 agrees with claims.yaml:205. Searches for Bernstein, 12356981993087, 237888 and the degree-15 envelope found no candidate; required main-file reading is incomplete."
+    },
+    {
+      "claim": "StratonovichHAMAudit.GlobalOmega.polynomial_pos: no direct label",
+      "verdict": "INCONCLUSIVE",
+      "reason": "ABSENT-CONFIRMED: not certified. GlobalOmega.lean:102-103 agrees with claims.yaml:212, including x=0. Searches for its distinctive polynomial coefficients and Bernstein certificate found no candidate; absence is not certified."
+    },
+    {
+      "claim": "StratonovichHAMAudit.GlobalOmega.rational_lt_one: no direct label",
+      "verdict": "INCONCLUSIVE",
+      "reason": "ABSENT-CONFIRMED: not certified. GlobalOmega.lean:114-115 agrees with claims.yaml:219. Searches for 177/100, 750, the polynomial coefficients and denominator factors found no candidate; required main-file coverage is incomplete."
+    },
+    {
+      "claim": "StratonovichHAMAudit.HermiteWord.raw_support: L:finite-word-cutoff",
+      "verdict": "INCONCLUSIVE",
+      "reason": "OK: local correspondence holds: HermiteWord.lean:23-29 matches claims.yaml:227 and the degree-zero induction in notes_stratonovich_ham_second_moment.tex:5279-5287. The entire containing required manuscript file was not read."
+    },
+    {
+      "claim": "StratonovichHAMAudit.HermiteWord.cut_eq_raw: L:finite-word-cutoff",
+      "verdict": "INCONCLUSIVE",
+      "reason": "OK: HermiteWord.lean:35-44 matches claims.yaml:234; notes_stratonovich_ham_second_moment.tex:5255-5295 uses the same cutoff-fixing induction. The Gaussian realization and Bochner extension are correctly outside Lean, but required main-file coverage is incomplete."
+    },
+    {
+      "claim": "StratonovichHAMAudit.InteractionDriver.temporal_range: E:driver-parameters",
+      "verdict": "PASS",
+      "reason": "OK: InteractionDriver.lean:16-17 agrees with claims.yaml:242. integrated_actual_operator_driver.tex:18-24 uses the endpoint 1-a/2; integrated_wave_variance.tex:154-164 explains its admissibility. The ledger explicitly limits coverage to this endpoint."
+    },
+    {
+      "claim": "StratonovichHAMAudit.InteractionDriver.variance_norm: L:driver-interval-limit",
+      "verdict": "PASS",
+      "reason": "OK: InteractionDriver.lean:21-22 agrees with claims.yaml:249. Taking the square root of integrated_actual_operator_driver.tex:239-243 yields the h^{1-a/2} factor in 432-435. The additional profile factor can be absorbed into the nonnegative scalar L."
+    },
+    {
+      "claim": "StratonovichHAMAudit.InteractionDriver.holder_parameters: L:driver-holder-limit",
+      "verdict": "PASS",
+      "reason": "OK: InteractionDriver.lean:57-61 agrees with claims.yaml:270; positivity of p follows already from the ledger's stronger lower threshold. The midpoint is an admissible choice for eta in integrated_actual_operator_driver.tex:538-539, with H=beta. Other index requirements remain outside Lean."
+    },
+    {
+      "claim": "StratonovichHAMAudit.InteractionDriver.dyadic_ratio: L:driver-holder-limit",
+      "verdict": "PASS",
+      "reason": "OK: InteractionDriver.lean:79-80 agrees with claims.yaml:277. integrated_actual_operator_driver.tex:554-568 uses precisely the positive-margin geometric ratio. The ledger correctly restricts the formal choice to the midpoint."
+    },
+    {
+      "claim": "StratonovichHAMAudit.InteractionDriver.gaussian_prefactor: no direct label",
+      "verdict": "INCONCLUSIVE",
+      "reason": "ABSENT-CONFIRMED: not certified. InteractionDriver.lean:30-32 matches claims.yaml:256. Searches for uv/(u+v), u+v and z^2/(4u) found only unrelated contexts, read at integrated_covariance_foundation.tex:300-345, notes_stratonovich_ham_second_moment.tex:1956-2043,7380-7553 and integrated_uniform_products.tex:450-525. Main-file reading remains incomplete."
+    },
+    {
+      "claim": "StratonovichHAMAudit.InteractionDriver.gaussian_exponent: no direct label",
+      "verdict": "INCONCLUSIVE",
+      "reason": "ABSENT-CONFIRMED: not certified. InteractionDriver.lean:51-52 matches claims.yaml:263. Searches for uv/(u+v), u+v, z^2/(4u) and z^2/(4v) found no equivalent identity in the inspected contexts cited for gaussian_prefactor. Required main-file coverage is incomplete."
+    },
+    {
+      "claim": "StratonovichHAMAudit.InteractionDriver.box_margin: P:radius-mean-anchor",
+      "verdict": "PASS",
+      "reason": "OK: InteractionDriver.lean:86-87 agrees with claims.yaml:284. integrated_radius_anchor.tex:16-21,323-329 gives the general d/Q margin; setting d=2 and Lean p=Q gives exactly this result. The specialization is explicitly disclosed."
+    },
+    {
+      "claim": "StratonovichHAMAudit.InteractionDriver.box_scale: P:radius-mean-anchor",
+      "verdict": "PASS",
+      "reason": "OK: InteractionDriver.lean:94-95 agrees with claims.yaml:291. integrated_radius_anchor.tex:287-302,323-327 combines g_delta with R^{d/Q}; d=2 gives the stated power bookkeeping. Radius constants and other dimensions are correctly excluded."
+    },
+    {
+      "claim": "StratonovichHAMAudit.JointTilt.tilt_exponent: no direct label",
+      "verdict": "INCONCLUSIVE",
+      "reason": "ABSENT-CONFIRMED: not certified. JointTilt.lean:9-10 agrees with claims.yaml:299. Searches for r^2w, rsc, 2rsc, s^2v and tilted generating functions led to integrated_raw_block_lower.tex:124-151, which uses direct Gaussian translation rather than this displayed MGF identity. Required global reading remains incomplete."
+    },
+    {
+      "claim": "StratonovichHAMAudit.JointTilt.wrong_sign_error: no direct label",
+      "verdict": "INCONCLUSIVE",
+      "reason": "ABSENT-CONFIRMED: not certified. JointTilt.lean:13-14 matches claims.yaml:306. Searches for 2rsc, rsc and the positive cross-term exponent found no diagnostic computation in integrated_raw_block_lower.tex:124-151 or other returned contexts. Main-file coverage remains incomplete."
+    },
+    {
+      "claim": "StratonovichHAMAudit.JointTilt.wrong_cost_error: no direct label",
+      "verdict": "INCONCLUSIVE",
+      "reason": "ABSENT-CONFIRMED: not certified. JointTilt.lean:17-18 matches claims.yaml:313. Searches for s^2v and the doubled Gaussian cost found no matching diagnostic; integrated_raw_block_lower.tex:124-151 has the correct half cost. Required main-file reading is incomplete."
+    },
+    {
+      "claim": "StratonovichHAMAudit.JointTilt.shifted_amplitude: L:raw-block-inputs",
+      "verdict": "PASS",
+      "reason": "OK: JointTilt.lean:21-22 agrees with claims.yaml:320. integrated_raw_block_lower.tex:28-32,93-110 uses g_delta delta^{a/2}=sqrt(delta). Division by positive sqrt(delta) gives exactly the Lean form."
+    },
+    {
+      "claim": "StratonovichHAMAudit.LocalFlow.noise_order: no direct label",
+      "verdict": "INCONCLUSIVE",
+      "reason": "ABSENT-CONFIRMED: not certified. LocalFlow.lean:12-14 agrees with claims.yaml:328. Searches for (1-alpha)/2 and alpha-1=-2b found Riesz amplitude normalizations, not a noise-order statement, in notes_stratonovich_ham_second_moment.tex:2129-2150,2705-2720. Required main-file reading remains incomplete."
+    },
+    {
+      "claim": "StratonovichHAMAudit.LocalFlow.schur_row: no direct label",
+      "verdict": "INCONCLUSIVE",
+      "reason": "ABSENT-CONFIRMED: not certified. LocalFlow.lean:20-21 agrees with claims.yaml:335. Searches for q^{-b}, k^{-b}, weighted Schur and Schur weight factors found no exact row cancellation; the inspected Schur arguments include integrated_compact_gaussian.tex:223-295. Complete global coverage was not achieved."
+    },
+    {
+      "claim": "StratonovichHAMAudit.LocalFlow.schur_column: no direct label",
+      "verdict": "INCONCLUSIVE",
+      "reason": "ABSENT-CONFIRMED: not certified. LocalFlow.lean:26-27 agrees with claims.yaml:342, including unrestricted k. Searches for q^{-b}, q^{-2b} and weighted Schur found no exact identity in inspected contexts, including integrated_compact_gaussian.tex:223-295. Required main-file reading is incomplete."
+    },
+    {
+      "claim": "StratonovichHAMAudit.LocalFlow.schur_rescale: no direct label",
+      "verdict": "INCONCLUSIVE",
+      "reason": "ABSENT-CONFIRMED: not certified. LocalFlow.lean:32-33 agrees with claims.yaml:349. Searches for k^{2b}, (k/R)^{2b} and weighted Schur rescaling found no exact computation in inspected contexts, including integrated_radius_anchor.tex:39-85. Global completeness remains insufficient."
+    },
+    {
+      "claim": "StratonovichHAMAudit.LocalFlow.source_overlap: no direct label",
+      "verdict": "INCONCLUSIVE",
+      "reason": "ABSENT-CONFIRMED: not certified. LocalFlow.lean:37-38 agrees with claims.yaml:356. Searches for -(1+alpha)/4, 2 sigma+alpha and source Sobolev/index terminology found no matching choice. Required main-file reading and all exploratory match contexts were not completed."
+    },
+    {
+      "claim": "StratonovichHAMAudit.LocalFlow.source_white_obstruction: no direct label",
+      "verdict": "INCONCLUSIVE",
+      "reason": "ABSENT-CONFIRMED: not certified. LocalFlow.lean:42-43 agrees with claims.yaml:363. Searches for -s<sigma, s-1<sigma, sigma<-1/2 and source Sobolev terminology found no matching obstruction. Incomplete global reading prevents certification."
+    },
+    {
+      "claim": "StratonovichHAMAudit.LocalFlow.source_tail_obstruction: no direct label",
+      "verdict": "INCONCLUSIVE",
+      "reason": "ABSENT-CONFIRMED: not certified. LocalFlow.lean:47-48 agrees with claims.yaml:370. Searches for 2 sigma+alpha, -s<sigma and s-1<sigma found no matching implication. Required manuscript completeness was not achieved."
+    },
+    {
+      "claim": "StratonovichHAMAudit.MiddleCross.certificate_pos: no direct label",
+      "verdict": "INCONCLUSIVE",
+      "reason": "ABSENT-CONFIRMED: not certified. MiddleCross.lean:38-63 agrees with claims.yaml:378. Searches for 94208, 14247936000, Horner and the distinctive comparison polynomial found no candidate. Required main-file reading remains incomplete."
+    },
+    {
+      "claim": "StratonovichHAMAudit.MiddleCross.parameter_identity: no direct label",
+      "verdict": "INCONCLUSIVE",
+      "reason": "ABSENT-CONFIRMED: not certified. MiddleCross.lean:66-68 agrees with claims.yaml:385. Searches for 32768, (z^2-1)/(2z), (z^2+1)/(2z) and the certificate coefficients found no candidate. Global completeness is insufficient."
+    },
+    {
+      "claim": "StratonovichHAMAudit.MiddleCross.parameter_numerator_pos: no direct label",
+      "verdict": "INCONCLUSIVE",
+      "reason": "ABSENT-CONFIRMED: not certified. MiddleCross.lean:73-74 agrees with claims.yaml:392. Searches for 32768, the rational parametrization and distinctive numerator/certificate coefficients found no candidate. Required main-file reading is incomplete."
+    },
+    {
+      "claim": "StratonovichHAMAudit.MiddleCross.difference_identity: no direct label",
+      "verdict": "INCONCLUSIVE",
+      "reason": "ABSENT-CONFIRMED: not certified. MiddleCross.lean:85-87 agrees with claims.yaml:399. Searches for 2b^2+4bc+2c^2-c+1, b+c-1 and 2b+1 found no matching rational comparison. The complete-reading prerequisite remains unmet."
+    },
+    {
+      "claim": "StratonovichHAMAudit.MiddleCross.resolvent_difference: no direct label",
+      "verdict": "INCONCLUSIVE",
+      "reason": "ABSENT-CONFIRMED: not certified. MiddleCross.lean:105-108 agrees with claims.yaml:406. Searches for b+c-1, 2b+1, the middle-cross terminology and distinctive rational factors found no candidate. Required main-file reading remains incomplete."
+    },
+    {
+      "claim": "StratonovichHAMAudit.MiddleCross.root_numerator_pos: no direct label",
+      "verdict": "INCONCLUSIVE",
+      "reason": "ABSENT-CONFIRMED: not certified. MiddleCross.lean:120-121 agrees with claims.yaml:413. Searches for b^2+c^2-1, b^2+1, 32768 and the comparison coefficients found no candidate. Absence cannot be certified without the missing reading."
+    },
+    {
+      "claim": "StratonovichHAMAudit.MiddleCross.middle_bound: no direct label",
+      "verdict": "INCONCLUSIVE",
+      "reason": "ABSENT-CONFIRMED: not certified. MiddleCross.lean:173-174 agrees with claims.yaml:420. Searches for b^2+c^2-1, b^2+1, b+c-1 and the expanded actual numerator found no candidate. Required global coverage remains incomplete."
+    },
+    {
+      "claim": "StratonovichHAMAudit.MovingCone.residual_budget: L:raw-block-indexed-cone",
+      "verdict": "PASS",
+      "reason": "OK: MovingCone.lean:8-10 agrees with claims.yaml:428. integrated_raw_block_lower.tex:304-310 explicitly uses q<=1/8, d<=theta and e<=theta/4 to obtain theta/2. Spectral and operator premises are correctly excluded."
+    },
+    {
+      "claim": "StratonovichHAMAudit.MovingCone.cone_conversion: L:raw-block-indexed-cone",
+      "verdict": "PASS",
+      "reason": "OK: MovingCone.lean:14-17 agrees with claims.yaml:435. integrated_raw_block_lower.tex:295-313 uses x> A/2 and y<=theta A/2 to conclude y<=theta x, with positive amplitude and rho<1/2."
+    },
+    {
+      "claim": "StratonovichHAMAudit.MovingCone.terminal_margin: L:raw-block-indexed-cone",
+      "verdict": "PASS",
+      "reason": "OK: MovingCone.lean:25-27 agrees with claims.yaml:442. integrated_raw_block_lower.tex:315-328 uses exactly the 16K theta, j/8 and 3j/4-2K theta budgets. The ledger appropriately excludes terminal observable estimates."
+    },
+    {
+      "claim": "StratonovichHAMAudit.OccupationForm.potential_budget: no direct label",
+      "verdict": "INCONCLUSIVE",
+      "reason": "ABSENT-CONFIRMED: not certified. OccupationForm.lean:8-9 agrees with claims.yaml:450. Searches for A D N, A^2/(4 epsilon), potential absorption and potential budget found no exact computation. integrated_signed_static.tex:59-76 instead uses Kbz<=z^2/2+K^2b^2/2. Required global reading is incomplete."
+    },
+    {
+      "claim": "StratonovichHAMAudit.OccupationForm.shifted_coercivity: no direct label",
+      "verdict": "INCONCLUSIVE",
+      "reason": "ABSENT-CONFIRMED: not certified. OccupationForm.lean:18-20 agrees with claims.yaml:457. Searches for C+1, D^2-P, shifted coercivity and coercive form bounds found no exact stated deduction in inspected contexts, including integrated_signed_static.tex:39-76. Missing global reading prevents confirmation."
+    },
+    {
+      "claim": "StratonovichHAMAudit.PhaseResponse.rough_phase_choice: no direct label",
+      "verdict": "INCONCLUSIVE",
+      "reason": "ABSENT-CONFIRMED: not certified. PhaseResponse.lean:12-15 agrees with claims.yaml:465. Searches for 1-(alpha+a)/4, its fraction form, 2s+alpha+a and alpha+a-3 found no matching choice. Required main-file reading is incomplete."
+    },
+    {
+      "claim": "StratonovichHAMAudit.PhaseResponse.balanced_phase: no direct label",
+      "verdict": "INCONCLUSIVE",
+      "reason": "ABSENT-CONFIRMED: not certified. PhaseResponse.lean:25-26 agrees with claims.yaml:472. Searches for 2s+alpha+a, alpha+a-3 and the balanced phase margins found no exact computation; integrated_wave_variance.tex:1-10,141-164 uses different explicit margins. Required global coverage is incomplete."
+    },
+    {
+      "claim": "StratonovichHAMAudit.PhaseResponse.energy_boundary: no direct label",
+      "verdict": "INCONCLUSIVE",
+      "reason": "ABSENT-CONFIRMED: not certified. PhaseResponse.lean:29-30 agrees with claims.yaml:479. Searches for alpha+a<1, alpha+a < 1 and 2s+alpha+a found no matching equivalence. Required main-file reading remains incomplete."
+    },
+    {
+      "claim": "StratonovichHAMAudit.PhaseResponse.four_component_gram: no direct label",
+      "verdict": "INCONCLUSIVE",
+      "reason": "ABSENT-CONFIRMED: not certified. PhaseResponse.lean:33-38 agrees with claims.yaml:486. Searches for r_1-r_2, k_1-k_2, cosine products and four-component terminology found no matching four-term identity in inspected contexts, including integrated_wave_variance.tex:212-341 and notes_stratonovich_ham_second_moment.tex:4895-4991. Global reading is incomplete."
+    },
+    {
+      "claim": "StratonovichHAMAudit.PhaseResponse.two_frequency_average: no direct label",
+      "verdict": "FAIL",
+      "reason": "LABEL-FOUND L:masked-trig-products: PhaseResponse.lean:42-44 and claims.yaml:493 faithfully state cos x cos y=(cos(x-y)+cos(x+y))/2. Searches for cosine products, cos(x-y), cos(x+y) and 'four complex exponential' locate integrated_covariance_foundation.tex:347-375. Its cosine-cosine case expands into the equivalent four exponential modes at 363-373. Under the contract's equivalent-form criterion, the ledger's no-label classification and explicit representation-based exclusion at statement-ledger.md:359 are incorrect."
+    },
+    {
+      "claim": "StratonovichHAMAudit.PhaseResponse.frequency_window: no direct label",
+      "verdict": "INCONCLUSIVE",
+      "reason": "ABSENT-CONFIRMED: not certified. PhaseResponse.lean:47-50 agrees with claims.yaml:500, including the supplied absolute error bound and cutoff. Searches for r^{a-2}, r^{a-1}, 2B/(At) and the frequency-window terminology found no matching computation. Required main-file reading is incomplete."
+    },
+    {
+      "claim": "StratonovichHAMAudit.PositiveGram.scalar_sqrt_dual: L:gram-scalar-algebra",
+      "verdict": "PASS",
+      "reason": "OK: PositiveGram.lean:12-13 and claims.yaml:508 match integrated_positive_gram.tex:26-30,39-45, including unrestricted real ell and nonnegative t. No analytic input is hidden."
+    },
+    {
+      "claim": "StratonovichHAMAudit.PositiveGram.gram_norm_square: L:gram-scalar-algebra",
+      "verdict": "PASS",
+      "reason": "OK: PositiveGram.lean:21-24 and claims.yaml:515 match integrated_positive_gram.tex:36,46-49. Arbitrary finite real weights and real inner products are retained; Hilbert completeness is unnecessary for this finite identity."
+    },
+    {
+      "claim": "StratonovichHAMAudit.PositiveGram.active_upper_bound: P:gram-positive-optimizer",
+      "verdict": "PASS",
+      "reason": "OK: PositiveGram.lean:38-43 and claims.yaml:522 match the active-set deduction in integrated_positive_gram.tex:112-128. Lean permits weaker sign assumptions than the application. Existence, minimization and attainment are explicitly outside its claim."
+    },
+    {
+      "claim": "StratonovichHAMAudit.PositiveGram.half_weighted_entrywise_mono: P:gram-entrywise-comparison",
+      "verdict": "PASS",
+      "reason": "OK: PositiveGram.lean:72-76 and claims.yaml:529 match integrated_positive_gram.tex:183-195. The nonnegative weights and factor one half are correct. Gram realization and optimization are separately disclosed."
+    },
+    {
+      "claim": "StratonovichHAMAudit.ProjectionResidual.projection_gap: no direct label",
+      "verdict": "INCONCLUSIVE",
+      "reason": "ABSENT-CONFIRMED: not certified. ProjectionResidual.lean:9-12 and claims.yaml:537 agree. Searches for 1932951, 20000, 3200, 101/, 1/96 and fraction variants found no matching numbers. The rank-one search hit in integrated_compact_mean_family.tex:255-335 concerns a different spectral projection. Required main-file reading is incomplete."
+    },
+    {
+      "claim": "StratonovichHAMAudit.ProjectionResidual.tilted_gap: no direct label",
+      "verdict": "INCONCLUSIVE",
+      "reason": "ABSENT-CONFIRMED: not certified. ProjectionResidual.lean:23-24 and claims.yaml:544 agree, with unrestricted q. Searches for 1932951, 3200, 101/, 1/96 and rank-one projection found no matching affine comparison; integrated_compact_mean_family.tex:255-335 is unrelated. Global completeness remains insufficient."
+    },
+    {
+      "claim": "StratonovichHAMAudit.RawValueCeiling.exact_gap: no direct label",
+      "verdict": "INCONCLUSIVE",
+      "reason": "ABSENT-CONFIRMED: not certified. RawValueCeiling.lean:9 and claims.yaml:552 agree. Searches for 30^{60}, 30^60, 39^{39}, 21^{21}, q=39 and a=9 found no candidate. integrated_occupation_ceiling.tex:275-299 contains a different numerical calibration. Required main-file reading remains incomplete."
+    },
+    {
+      "claim": "StratonovichHAMAudit.RawValueCeiling.strict_log_gap: C:intrinsic-spatial-bracket",
+      "verdict": "PASS",
+      "reason": "OK: RawValueCeiling.lean:12-14 and claims.yaml:559 match integrated_occupation_ceiling.tex:275-290, including only a>0 and q-2a>0 as scalar premises. The occupation identifications are correctly excluded."
+    },
+    {
+      "claim": "StratonovichHAMAudit.RawVariational.dilation_factors: L:variational-control-dilation",
+      "verdict": "PASS",
+      "reason": "OK: RawVariational.lean:9-11 and claims.yaml:567 match the dimension-one arithmetic in integrated_unmasked_variational.tex:225-257. The ledger explicitly discloses specialization in dimension and excludes Radon and Rayleigh analysis."
+    },
+    {
+      "claim": "StratonovichHAMAudit.RawVariational.label_score: P:variational-positive-scores",
+      "verdict": "PASS",
+      "reason": "OK: RawVariational.lean:22-24 and claims.yaml:574 match integrated_unmasked_variational.tex:287-307. Positive c, alpha<3 and the exponent (4-alpha)/(3-alpha) are correct; full-class bijection and finite suprema remain outside Lean."
+    },
+    {
+      "claim": "StratonovichHAMAudit.RawVariational.positive_score: P:variational-positive-scores",
+      "verdict": "PASS",
+      "reason": "OK: RawVariational.lean:40-42 and claims.yaml:581 match integrated_unmasked_variational.tex:287-296. The positivity premises on I and v are explicit, and the analytic production of an actual positive control is excluded."
+    },
+    {
+      "claim": "StratonovichHAMAudit.RawVariational.strict_label_factor: P:variational-positive-scores",
+      "verdict": "PASS",
+      "reason": "OK: RawVariational.lean:64-65 and claims.yaml:588 match integrated_unmasked_variational.tex:287,333-335. The ledger does not turn this auxiliary value comparison into a first-moment or Jensen claim."
+    },
+    {
+      "claim": "StratonovichHAMAudit.TerminalCross.polynomial_identity: no direct label",
+      "verdict": "INCONCLUSIVE",
+      "reason": "ABSENT-CONFIRMED: not certified. TerminalCross.lean:12-32 agrees with claims.yaml:596. Searches for c^2+c+1, c^3+c+1, b+c-1, 3546, 4618 and terminal-cross terminology found no candidate. Required main-file reading is incomplete."
+    },
+    {
+      "claim": "StratonovichHAMAudit.TerminalCross.polynomial_pos: no direct label",
+      "verdict": "INCONCLUSIVE",
+      "reason": "ABSENT-CONFIRMED: not certified. TerminalCross.lean:36-37 agrees with claims.yaml:603. Searches for the expanded numerator components, b+c-1 and distinctive certificate coefficients found no candidate. Global completeness remains insufficient."
+    },
+    {
+      "claim": "StratonovichHAMAudit.TerminalCross.rate_le: no direct label",
+      "verdict": "INCONCLUSIVE",
+      "reason": "ABSENT-CONFIRMED: not certified. TerminalCross.lean:44-45 agrees with claims.yaml:610. Searches for 2(A+1), A+2s and the terminal comparison terminology found no matching rate inequality. Required main-file reading is incomplete."
+    },
+    {
+      "claim": "StratonovichHAMAudit.TerminalCross.exponential_difference: no direct label",
+      "verdict": "INCONCLUSIVE",
+      "reason": "ABSENT-CONFIRMED: not certified. TerminalCross.lean:51-54 agrees with claims.yaml:617, including unrestricted w. Searches for C-D, (C-D)k and exponential difference found no matching convexity computation. Required manuscript completeness was not achieved."
+    },
+    {
+      "claim": "StratonovichHAMAudit.TerminalCross.terminal_bound: no direct label",
+      "verdict": "INCONCLUSIVE",
+      "reason": "ABSENT-CONFIRMED: not certified. TerminalCross.lean:71-73 agrees with claims.yaml:624. Searches for c^2+c+1, c^3+c+1, b+c-1, b^2+(c^2-1)/(c^2+1) and terminal-cross terminology found no candidate. Required main-file reading remains incomplete."
+    },
+    {
+      "claim": "StratonovichHAMAudit.WhiteCDF.cdf_square_bound: P:white-spatial-energy",
+      "verdict": "PASS",
+      "reason": "OK: WhiteCDF.lean:8-10 and claims.yaml:632 match integrated_white_evaluation.tex:61-66. The universally quantified quadratic bound is correctly identified as supplied by L:white-cdf-square, not proved by this Lean theorem."
+    },
+    {
+      "claim": "StratonovichHAMAudit.WhiteCDF.energy_upper: P:white-spatial-energy",
+      "verdict": "PASS",
+      "reason": "OK: WhiteCDF.lean:15-16 and claims.yaml:639 match integrated_white_evaluation.tex:79-91. Constants 3 and 1/6 are correct. Domain and attainment remain analytic. The original ledger's inventory is internally consistent: 88 rows, 82 theorems, six fact definitions, 38 labelled and 50 unlabelled."
+    }
+  ],
+  "findings": {
+    "fatal": [
+      "K1 — StratonovichHAMAudit.PhaseResponse.two_frequency_average is incorrectly classified as having no direct label under the review contract's equivalent-form criterion. Lean states 'Real.cos x*Real.cos y = (Real.cos (x-y)+Real.cos (x+y))/2' (lean/StratonovichHAMAudit/PhaseResponse.lean:42-44). The manuscript allows P_r=cos(rt), Q_rho=cos(rho t) and proves its labelled lemma by 'four complex exponential modes' with coefficients of absolute value 1/4 (manuscript/notes/integrated_covariance_foundation.tex:347-375, particularly 363-373). For the cosine-cosine case, pairing opposite modes gives exactly the Lean identity with x=rt and y=rho t. The ledger itself acknowledges this equivalent expansion but excludes it solely because it is not written as the real identity (candidate/statement-ledger.md:359). Exact fix: map this row to L:masked-trig-products as the scalar identity for its cosine-cosine case; explain the equivalent exponential presentation, retain the analytic covariance estimates outside Lean, amend the blanket PhaseResponse no-label descriptions at 78 and 346-351, and update the labelled/unlabelled totals to 39/49."
+    ],
+    "major": [],
+    "minor": []
+  },
+  "required_repairs": [
+    "Correct the correspondence classification of PhaseResponse.two_frequency_average to L:masked-trig-products, explaining the equivalent four-exponential expansion, and propagate that correction through the index, module description and totals (39 labelled, 49 unlabelled)."
+  ],
+  "limitations": [
+    "The binding complete-reading requirement was not fully satisfied. The required main manuscript file remains partial. Its full-text gaps are lines 181-1909, 2171-2479, 2551-2659, 2736-3889, 3976-4859 and 5361-7229; isolated search hits do not discharge these gaps.",
+    "All 24 Lean files, the ledger, claims.yaml, coverage.yaml and the other 17 required manuscript files were read completely. Every Lean declaration type and claims.yaml summary was inspected; no fidelity defect was identified.",
+    "All manuscript inputs were searched for the no-label computations using the terms recorded in their checks. Nevertheless, not every broad exploratory Schur, sigma, source-regularity or cosine search hit was read with its entire surrounding proof. Search-only excerpts in partially covered optional files are not complete contextual coverage.",
+    "Consequently, absence is not certified for the 49 no-label rows other than two_frequency_average. These rows are marked INCONCLUSIVE, notwithstanding correct local Lean paraphrases. The three ClockFilter and two HermiteWord rows are also INCONCLUSIVE because their required containing manuscript file was not read completely. Their cited local statements and proofs were inspected.",
+    "The positive witness for K1 does not depend on proving absence elsewhere: the relevant labelled lemma and proof were read completely. The overall FAIL therefore records an established mapping defect, not a claim of exhaustive review.",
+    "Source coverage records complete text ranges separately from isolated search excerpts; the latter do not support any complete-reading claim.",
+    "Statements about revision cf979d6, the external manuscript-anchor record, Audit outputs and withheld modules are outside this packet review and were not treated as findings.",
+    "Proof compilation and absence of sorry were supplied premises, not independently rerun. Provenance hashes were not recomputed.",
+    "This AI review is neither human verification nor a novelty audit."
+  ]
+}

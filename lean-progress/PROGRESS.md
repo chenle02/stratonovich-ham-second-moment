@@ -68,9 +68,15 @@
   case of the margin step of P:radius-mean-anchor (overrides the 11-09
   triage). Now 38 labelled / 50 unlabelled; coverage 21+4. Record:
   reviews/2026-11-10-lean-ledger-codex-gpt61sol-v2/.
-- **Next:** successor review of 1a8c419 with complete reading of cited
-  files, AND a human statement read (A1): each AI pass has found a new
-  real defect;
+- **Complete-reading Codex review (2026-11-10):** at 1a8c419, valid,
+  FAIL/medium: 17 of 18 required files read completely, main TeX partial
+  (about 1,700 of 7,706 lines) so 54 rows INCONCLUSIVE as contracted; 33
+  labelled rows PASS; no fidelity defect. 1 fatal accepted:
+  two_frequency_average is the cosine case of the L:masked-trig-products
+  expansion (companion 0eb9403; 39 labelled / 49 unlabelled; coverage 22+4).
+  Record: reviews/2026-11-10-lean-ledger-codex-gpt61sol-v3-complete-reading/.
+- **Next:** split review: a main-file pass (complete, chunked) for the 49
+  no-label + 5 main-file rows, composed with module coverage; plus A1;
   wave L1 (G0 pair-partition counts) when opened.
 
 - **Standalone local checks (current, 2026-11-09):** 87 accepted finite

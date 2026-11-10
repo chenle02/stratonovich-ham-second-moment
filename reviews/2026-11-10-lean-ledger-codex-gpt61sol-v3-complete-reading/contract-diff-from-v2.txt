@@ -1,0 +1,49 @@
+9c9
+<   commit c9e28af1b128). For each of 88 Lean declarations it states what the
+---
+>   commit 1a8c419de219). For each of 88 Lean declarations it states what the
+25a26,61
+> COMPLETE-READING REQUIREMENT (binding; keyword search alone is not enough)
+> A. Read each of these 18 manuscript files COMPLETELY, from the first line to
+>    the last, in consecutive ranges with no gaps, before giving any verdict.
+>    They contain every label the ledger cites. Use Read/sed in ranges; never
+>    rely on grep output alone for these files.
+>      - manuscript/notes/integrated_actual_operator_driver.tex
+>      - manuscript/notes/integrated_cameron_mean.tex
+>      - manuscript/notes/integrated_compact_gaussian.tex
+>      - manuscript/notes/integrated_covariance_foundation.tex
+>      - manuscript/notes/integrated_exact_scaling.tex
+>      - manuscript/notes/integrated_gaussian_tubes.tex
+>      - manuscript/notes/integrated_intrinsic_constant.tex
+>      - manuscript/notes/integrated_occupation_ceiling.tex
+>      - manuscript/notes/integrated_point_transfer.tex
+>      - manuscript/notes/integrated_positive_gram.tex
+>      - manuscript/notes/integrated_radius_anchor.tex
+>      - manuscript/notes/integrated_raw_block_lower.tex
+>      - manuscript/notes/integrated_symplectic_phase.tex
+>      - manuscript/notes/integrated_temporal_equilibrium.tex
+>      - manuscript/notes/integrated_unmasked_variational.tex
+>      - manuscript/notes/integrated_wave_variance.tex
+>      - manuscript/notes/integrated_white_evaluation.tex
+>      - manuscript/notes/notes_stratonovich_ham_second_moment.tex
+> B. Read the 24 Lean files, the ledger, claims.yaml and coverage.yaml
+>    completely.
+> C. For each of the 50 no-label rows: run searches over ALL manuscript
+>    files for its distinctive constants, polynomials, exponents and symbol
+>    combinations (also equivalent forms, e.g. a product written as an
+>    expansion), and READ the surrounding statement or proof of every match
+>    before deciding. Record the search terms and the contexts read.
+> D. In "source_coverage", list every file you read with its exact line
+>    ranges and the word "complete" or "partial". If any file in A or B is
+>    partial, or any search match in C was not read in context: mark every
+>    affected row INCONCLUSIVE, name the gap in "limitations", and give
+>    confidence medium or low. Do not report high confidence otherwise.
+> 
+35c71
+< 3. NO DIRECT LABEL rows (52): search the manuscript for the computation
+---
+> 3. NO DIRECT LABEL rows (50): search the manuscript for the computation
+45c81
+<    36 labelled, 52 unlabelled) are correct. Every label cited anywhere in
+---
+>    38 labelled, 50 unlabelled) are correct. Every label cited anywhere in
