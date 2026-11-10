@@ -23,8 +23,12 @@
   (normalized-coordinate, vector-gaussian-projection, colored-vector-word;
   9 facts) are WITHHELD by Le's 2026-11-09 decision until gaussian-chaos-lean
   is licensed and public; they stay here in local-checks.
-- **Manuscript anchor:** revision cf979d6, pinned in the companion's
-  provenance/manuscript-anchor.json (main TeX + 27 inputs + PDF SHA-256).
+- **Manuscript anchor:** revision 669ccc9 (presentation-only successor of
+  cf979d6), pinned in the companion's provenance/manuscript-anchor.json at
+  companion 4bdffba: 41 TeX inputs (28 core + 12 figures + styles) and the
+  275-page PDF; cf979d6 kept under history. Script check: all 46 cited
+  labels exist and the math of the 40 cited statements/proofs is unchanged
+  up to whitespace and braces, so no Lean correspondence changed.
   The statement ledger maps 33 claims to a label and 55 have no direct
   label at cf979d6 (35/53 before the DeepSeek V4 Pro correspondence review
   of 38d1616, adjudicated in reviews/2026-11-09-lean-ledger-correspondence/:
