@@ -18549,3 +18549,26 @@ not been checked. The numerical rows in
 private/audit/2026-11-10-static-limit-check/check.json evaluate bounding
 formulas only. This is a consequence conditional on the existing written
 bracket, not a new independent acceptance or source-normalization repair.
+
+## 2026-11-10: optimizer and first-correction conjectures
+
+At Le's request, a subagent drafted two precise conjectures and root checked
+their scope against the actual control class and bounds. Conjecture 1.6.2
+asks for one strongly convergent maximizing sequence after spatial translations
+in the original covariance Hilbert space, for one-dimensional spatial white
+noise. It does not assert smooth compact attainment or uniqueness. Conjecture
+1.6.3 predicts the relative first-order coefficient 3/4 as the temporal exponent
+tends to zero. Formal trial/operator motivation and the consistency check
+against existing bound slopes are retained in
+private/audit/2026-11-10-optimizer-conjectures/ASSESSMENT.md. These remain
+unproved; no independent-review or research-completion gate is changed.
+
+Both rendered conjecture pages inspected; builds and source-style checks pass.
+Report 304 pages; reader 28; 215 proof bodies preserved, 82 mapped labels and
+250 external links valid. Root separately explained that a continuous real-order
+moment spectrum can support a sharp pointwise upper-tail large-deviation
+result, whereas even-order moment data alone do not establish that result.
+No LDP theorem has been added. Relevant missing background, Touchette's
+2009 review (DOI 10.1016/j.physrep.2009.05.002; accessible arXiv0804.0327v2),
+was queued as tk-20261110-181521-codex-stratonovich-future-work after canonical
+coverage and Papis checks; queued is not ingested.

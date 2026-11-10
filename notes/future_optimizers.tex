@@ -1,0 +1,72 @@
+\paragraph{Compactness of optimizing controls.}
+The variational formula raises a question about the controls responsible for
+large moment growth. Its admissible tests are smooth and compactly supported,
+so attainment in that class should not be presumed. We first ask for a weaker
+form of compactness in the one-dimensional spatial-white case.
+
+Fix $\Gamma = c\delta_0$, with $c > 0$, and write $a = \alpha_0 \in (0,1)$.
+Let $H_a$ be the completion of real smooth compactly supported tests on
+$I\times\R$, where $I = (0,1)$, modulo covariance-null tests, under the norm
+\[
+  \|\Phi\|_{H_a}^2
+  =c\int_{I^2}|s-t|^{-a}\int_\R
+  \Phi(s,x)\Phi(t,x)\ud x\ud s\ud t.
+\]
+For $\Psi \in \mathcal{C}_{\mathrm{pos}}$
+of~\eqref{E:intro-control-class}, put
+\[
+  J_a(\Psi)=2\int_I\sqrt{\mathcal{R}_\Psi(s)}\ud s
+  -\frac12\|\Psi\|_{H_a}^2,
+  \qquad (\tau_y\Psi)(s,x)=\Psi(s,x+y).
+\]
+The Rayleigh value is defined in~\eqref{E:intro-control-rate}.
+
+\begin{conjecture}[Compactness of an optimizing sequence]
+  \label{Conj:positive-control-compactness}
+  For every $c > 0$ and $0 < a < 1$, there are
+  $\Psi_j \in \mathcal{C}_{\mathrm{pos}}$, spatial translations $y_j \in \R$
+  and a nonzero $\Phi_* \in H_a$ such that
+  \[
+    J_a(\Psi_j)\longrightarrow C_2(c\delta_0,a),
+    \qquad
+    \|\tau_{y_j}\Psi_j-\Phi_*\|_{H_a}\longrightarrow0.
+  \]
+\end{conjecture}
+
+The conjecture asks for one strongly convergent optimizing sequence after
+spatial translation. It asserts neither compactness of every optimizing
+sequence nor a smooth compactly supported maximizer. Identifying the Rayleigh
+functional at the limit would be a further step. Another question is whether
+controls that separate into a time factor and a space factor give the full
+supremum. Comparing such controls with sums of two products is a first test;
+we do not assume either equality or strict improvement.
+
+\paragraph{A sharper bound near the static case.}
+The lower and upper formulas in Theorem~\ref{T:white-moment-bounds} have the
+same limit as $a\downarrow0$. A more precise question concerns the first
+correction to this limit.
+
+\begin{conjecture}[First correction in the spatial-white case]
+  \label{Conj:white-first-correction}
+  For each fixed $c > 0$,
+  \[
+    \lim_{a\downarrow0}\frac1a
+    \left(\frac{3C_2(c\delta_0,a)}{2\sqrt c}-1\right)
+    =\frac34.
+  \]
+\end{conjecture}
+
+The coefficient is suggested by formally expanding a temporally constant
+trial and the temporal covariance operator around the constant kernel.
+Justifying the trial approximation and a matching upper estimate remains part
+of the question. The common zeroth-order limit of the existing bounds does
+not establish this first-order correction.
+
+For a fixed $0 < a < 1$, another question is whether both inequalities in
+Theorem~\ref{T:white-moment-bounds} are strict. Varying the temporal equilibrium
+trial may improve the lower formula. On the upper side, the norm of the
+temporal covariance operator may improve the current row-integral estimate.
+A separate numerical objective is a certified enclosure of $C_2$ for a fixed
+$a$, with explicit errors from truncation and discretization. Optimizing a
+finite family of controls alone gives lower bounds and does not certify the
+continuum supremum from above.
