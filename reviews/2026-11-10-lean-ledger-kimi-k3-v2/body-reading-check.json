@@ -1,0 +1,12 @@
+{
+ "schema": "reading-only-body-check/1",
+ "note": "NOT an acceptance record. The raw report has a prose prefix; this strips that prefix in memory and runs the lab validator and passing-report gate on the remaining body only, for reading. The attempt receipt stays invalid-report.",
+ "prefix_bytes": 329,
+ "prefix_text": "All evidence is gathered. I have read all 24 Lean files in full, the ledger, claims.yaml, coverage.yaml, and PROVENANCE.json in full; read every cited manuscript statement and proof; built the complete label inventory; and run non-truncated full-tree searches for every no-label row's distinctive constants. Here is the report.\n\n",
+ "body_sha256": "d1ae3b17866526667985460c27645d771f97049d29bdcc00d7a9eaa130ecc33d",
+ "validator": "review_report_contract.parse_report_text + require_passing_report",
+ "body_verdict": "PASS_WITH_NOTES",
+ "body_confidence": "high",
+ "checks": 88,
+ "passing_gate": "ok"
+}

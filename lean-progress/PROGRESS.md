@@ -48,8 +48,14 @@
   contract used non-schema check verdicts; recover-report refused), so the
   correspondence gate is NOT closed by receipt. Record:
   reviews/2026-11-10-lean-ledger-kimi-k3/ADJUDICATION.md.
-- **Next:** new Kimi-K3 attempt at 01e2480 with a schema-conforming,
-  contract-checked contract (needs Le's go-ahead), or a human read;
+- **Kimi-K3 v2 (2026-11-10, schema-conforming, contract-checked):** at
+  01e2480 over 669ccc9: body PASS_WITH_NOTES/high, 88/88, 0/0/2 minor (both
+  accepted, companion 5e0d122) plus a DimensionalMatrix note. Receipt again
+  INVALID-REPORT: Kimi prefixed one prose sentence despite the JSON-only
+  instruction; recover-report cannot strip a prose prefix. Gate NOT closed
+  by receipt. Record: reviews/2026-11-10-lean-ledger-kimi-k3-v2/.
+- **Next:** Le's choice: lab tool change (recover a prose prefix), a
+  Codex/Claude route, or a human read;
   wave L1 (G0 pair-partition counts) when opened.
 
 - **Standalone local checks (current, 2026-11-09):** 87 accepted finite
