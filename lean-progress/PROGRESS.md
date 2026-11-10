@@ -101,7 +101,20 @@
   (40 labelled / 48 unlabelled). Not human verification; analytic inputs
   outside Lean are not verified; any later ledger or cited-label change
   needs a successor review.
-- **Next:** human statement read (work package A1) still recommended;
+- **Wave L1 (2026-11-10, OPENED and built):** five deterministic labelled
+  results formalized WHOLE with the paper's hypotheses (W1 packages B1,
+  B2, B7, B10, B25): L:gaussian-scalar-powers (weighted AM-GM, integer
+  powers, finite Hoelder, E Z^r <= (E Z)^r), L:gram-scalar-algebra,
+  E:kappa (1 < kappa < 2), E:driver-parameters (intervals nonempty),
+  L:tube-rayleigh-tail (tail integral bound, integrability). 17 theorems,
+  2 definitions, 17 refutations (Lean proofs that wrong variants are
+  false). Companion commits 25a587d..e36f946; lean-pkg receipt and gate
+  verified-private at e36f946 (107 claims' axioms read; 0 sorry); claims
+  synced at 9d1c7c4. Coverage: 5 same-assumptions, 19 inputs-supplied, 4
+  outside. No manuscript defect found. The 19 new ledger rows await an
+  independent correspondence review (Codex, launched 2026-11-10).
+- **Next:** adjudicate the wave-L1 correspondence review; human statement
+  read (work package A1) still recommended;
   wave L1 (G0 pair-partition counts) when opened.
 
 - **Standalone local checks (current, 2026-11-09):** 87 accepted finite
