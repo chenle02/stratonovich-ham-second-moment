@@ -1,0 +1,70 @@
+% Typography and navigation for the technical companion.
+\usepackage{microtype}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{booktabs}
+\setlength{\headheight}{16pt}
+\setlength{\headsep}{18pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\nouppercase{\leftmark}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\renewcommand{\chaptermark}[1]{\markboth{\thechapter\quad #1}{}}
+\fancypagestyle{plain}{%
+  \fancyhf{}
+  \fancyfoot[C]{\thepage}
+  \renewcommand{\headrulewidth}{0pt}
+}
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries\raggedright\color{hamblue}}
+  {\normalfont\large\scshape\chaptertitlename\ \thechapter}{10pt}{}
+\titleformat{name=\chapter,numberless}[display]
+  {\normalfont\huge\bfseries\raggedright\color{hamblue}}{}{0pt}{}
+\titlespacing*{\chapter}{0pt}{-12pt}{28pt}
+\titleformat{\section}
+  {\normalfont\Large\bfseries\raggedright\color{hamblue}}{\thesection}{0.75em}{}
+\titleformat{\subsection}
+  {\normalfont\large\bfseries}{\thesubsection}{0.75em}{}
+\setcounter{tocdepth}{2}
+\setcounter{secnumdepth}{2}
+\hypersetup{bookmarksnumbered=true, linkcolor=hamblue,
+  citecolor=hamteal, urlcolor=hamblue}
+\newenvironment{abstract}{%
+  \chapter*{Overview}
+  \addcontentsline{toc}{chapter}{Overview}
+}{}
+\makeatletter
+\renewcommand{\maketitle}{%
+  \begin{titlepage}
+    \thispdfpagelabel{Cover}
+    \centering
+    \vspace*{1.4cm}
+    {\large\scshape Technical companion\par}
+    \vspace{0.65cm}
+    {\color{hamblue}\rule{0.28\textwidth}{0.8pt}\par}
+    \vspace{1.2cm}
+    {\Huge\bfseries\color{hamblue}\@title\par}
+    \vspace{1.1cm}
+    {\Large\@author\par}
+    \vfill
+    {\large Construction, moment bounds and the variational constant\par}
+    \vspace{0.5cm}
+    {\normalsize With auxiliary estimates and consistency checks\par}
+    \vfill
+    {\normalsize Working manuscript\par}
+    \vspace{0.3cm}
+    {\normalsize\@date\par}
+  \end{titlepage}
+}
+\renewcommand{\listoffigures}{%
+  \chapter*{Illustrations}
+  \addcontentsline{toc}{chapter}{Illustrations}
+  \@starttoc{lof}
+}
+\makeatother
+\renewenvironment{bibchapter}[1][\bibname]{%
+  \chapter*{#1}
+  \addcontentsline{toc}{chapter}{#1}
+  \markboth{#1}{#1}
+}{\par}

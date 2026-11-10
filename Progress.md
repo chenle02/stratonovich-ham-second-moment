@@ -167,7 +167,7 @@ Next coherent assignment: upper-engine036–051 (16 full proofs), with actual
 physical/spectral, phase, interval, source, tail and upper joins. Remaining
 001–035+214+external215 (37) stay required. Every outside constructor/source
 realization implication must be derived at its application or conditioned
-per row and globally. Original all215/thirteen-join objective is unchanged;
+per row and globally. Original all 215/thirteen-join objective is unchanged;
 no component scope replaces integrated MAIN/Kimi/source/visual/cold/delivery.
 
 ## 2026-11-06: actual raw common-noise proof reconstruction under skepticism
@@ -217,7 +217,7 @@ plus unchanged311296 is966115, with82461 before UNKNOWN runtime framing.
 Actual native/profile/framing/carrier binding remains next; no provider or
 math acceptance follows yet. Complete evidence is preserved in
 reviews/2026-11-06-upper-engine16-main-data/.
-All original dimensions/covariances/amplitude/zero and all215/thirteen-join,
+All original dimensions/covariances/amplitude/zero and all 215/thirteen-join,
 MAIN/Kimi/source/visual/cold/build/delivery requirements remain unchanged.
 
 ## 2026-11-06: Upper16 native data/code capsule prepared
@@ -247,7 +247,7 @@ is retained separately. No candidate/source/PDF adoption occurs.
 Root authorizes ONE fresh Upper16 MAIN only AFTER actual committed/pushed/
 <HUB>-equal READY delivery. No automatic retry/resume/fallback. Full
 readiness is in reviews/2026-11-06-upper-engine16-main-ready/. All outside
-conditions and original all215/thirteen-join/full-goal gates remain open.
+conditions and original all 215/thirteen-join/full-goal gates remain open.
 No model had started at this readiness snapshot.
 
 ## 2026-11-06: actual Upper16 DeepSeek MAIN invocation live
@@ -294,7 +294,7 @@ mixed maps exist but give no whole-page credit. No pages are retro-added.
 Complete evidence: reviews/2026-11-06-upper-engine16-main-adjudication/.
 Next genuine mathematics: full constructor9+096/097/099 and restricted raw098
 clauses, with V2 raw proof assigned for derivation rather than an unreviewed
-parent label. Full098 driver and original all215/thirteen-join/limit/Kimi/
+parent label. Full098 driver and original all 215/thirteen-join/limit/Kimi/
 visual/cold/delivery requirements remain. No unchanged confidence retry.
 
 ## 2026-11-06: genuine constructor12/raw098 complete DATA ready
@@ -602,7 +602,7 @@ Dashboard/state and round-accounting repair do not clear any of these gates.
 
 - **P267 actual runtime/preflight checkpoint (2026-11-06):** Separate frozenv2 repairs native provenance/policy gaps;118 author+24 independent controls and the actual complete source/carrier/C1/count/framing/safe positive path pass. Actual pure PRIMARY DeepSeek V4 Pro/MCP0/tools12false/emptyinstructions+refs/profile and ownedcatalog pins verified; configured login-route models health HTTP200. Count765405+160+742+unchanged180224=946531/head102045 remains conditional and actual usage must pass. Safe preflight15:56:14UTC. [READY custody](reviews/2026-11-06-p267-main-ready/README.md) contains code, controls, actual readbacks and original preparation refusals; NO native review or RUN authority yet. Current science/263PDF/grades remain unchanged; candidate267 external. Extra lossless JSON-value interning retains203origins but all U/C variants stillOVER52970/67132/20533/34695; no format or call admission, math/reserves unchanged.
 
-- **P267 complete DATA retained and independently read back (2026-11-06):** New compact-transcription/source9/13/four-application boundary assignment freezes148 full originals in112 byte-exact frames and24 named checks; all25 prior required texts, both source28 versions, full64 primary and30 complementary construction origins retained. Root verified259 producer members, actual aliases/targets/source graph and source text. Text765565 + unchanged180224 reserves remains before unknown effective framing; no admission or model call.24 images/3PDFs are custody only, not text-route image credit. Runtime v1 engineering found missing native provenance checks before launch; a separate v2 successor is being prepared, not a source defect or old-report regrade. [Full DATA custody](reviews/2026-11-06-p267-main-data/README.md). Current science/PDF/grades unchanged.
+- **P267 complete DATA retained and independently read back (2026-11-06):** New compact-transcription/source9/13/four-application boundary assignment freezes148 full originals in112 byte-exact frames and 24 named checks; all25 prior required texts, both source28 versions, full64 primary and30 complementary construction origins retained. Root verified259 producer members, actual aliases/targets/source graph and source text. Text765565 + unchanged180224 reserves remains before unknown effective framing; no admission or model call.24 images/3PDFs are custody only, not text-route image credit. Runtime v1 engineering found missing native provenance checks before launch; a separate v2 successor is being prepared, not a source defect or old-report regrade. [Full DATA custody](reviews/2026-11-06-p267-main-data/README.md). Current science/PDF/grades unchanged.
 
 - **Independent integration transcription/application audit (2026-11-06):** Root read the full draft diff, complete reviewed author proof and actual public skeptic, checked R01–R15 and four consumers, and viewed actual source9/13 and draft16–21. All 69 draft manifest members rehash. No transcription/application defect was found at the stated scope; actual source prefix/timeMAX and heatSUM law matches with original amplitude. Candidate remains external/unadopted, prior MEDIUM unchanged; whole parents and all final gates stay open. [Audit](reviews/2026-11-06-pairing-integration-audit/Root-audit.md). Independent preservation now reproduces all 28 modules,209 unchanged old proofs, five changed proofs with133 identical math spans and all214 old owned statements. Root prospectively selects a new P267 MAIN boundary assignment for compact transcription, actual source-cutoff law and affected applications; U remains the next whole-join priority and its old layouts remain OVER. Exact retained inputs, new capacity/catalog/guards and dispatch readiness are pending; no new provider call or source adoption.
 
@@ -674,7 +674,7 @@ Dashboard/state and round-accounting repair do not clear any of these gates.
   they do not replace its analytic proof or a cross-family review.
   Root fully read that25317-byte proof, its8015-byte report/4834-byte ledger,
   the14222-byte proposal, source audit/application matrix and finite report;
-  all44 producer manifest members were byte-verified. Root also viewed actual
+  all 44 producer manifest members were byte-verified. Root also viewed actual
   pp14/15/16/21, in addition to earlier pp18/19. The proof establishes
   per-kernel-family partition existence/max envelope; no stronger universal
   kernel-independent partition is claimed. Actual OWN006/007/008 need only
@@ -1010,7 +1010,7 @@ Dashboard/state and round-accounting repair do not clear any of these gates.
   constantblock; abstract3/16vs1/8 scalar warning is outside actual class.
   Q3: restartorientation correct, stoppedpathusesmin(u,ell_m). Q4: D095
   uniformvariancehypotheses retained. E5: whiteHAMorder2 distinct from g4 Wick
-  controls. Q6: actualleftsum and4/16/48 recurrence correct despite loose
+  controls. Q6: actualleftsum and 4/16/48 recurrence correct despite loose
   indices. Q7: D111 bounded fixed-horizon H/G families allowed; no blanket
   h_delta ban or growingT/R bound. Named externalbook proofs need exact
   applications, not gratuitousfullreproof; unworked OWN clauses remain real
@@ -1409,7 +1409,7 @@ Dashboard/state and round-accounting repair do not clear any of these gates.
   scope/dependency and independent retention proposals and selected exact C4
   scientific spans, S065 roles/counterparts, all14 B21 mathematical top members
   and exact false/correction chains, with six pure identity/vote fields private.
-  Original B data now exists with111 payloads; full actual-data audit verifies
+  Original B data now exists with 111 payloads; full actual-data audit verifies
   its science retention. Two administrative task/agent clarifications are being
   preserved in an immutable successor with delta-only validation, not source
   repair or scientific scope change. Actual final bytes/count and independent
@@ -1796,7 +1796,7 @@ Dashboard/state and round-accounting repair do not clear any of these gates.
   boundary identifier-map keys stay INLINE, not positional far-legend values.
   Actual39rawJSON/609numeric-value checks found no duplicate/nonfinite/decimal-
   value/signed-zero loss. Existing carrier maps match all214current proof
-  owners/spans and240formal labels/environments/spans, so big custody data need
+  owners/spans and 240formal labels/environments/spans, so big custody data need
   not be duplicated as native navigation. Root's1726token scientificassignment
   draft keeps214CURRENT/240roles/13joins/allmodels/actualC2 and substantive
   WORK/consumer/remainder requirements; quick independent scope check found
@@ -2016,7 +2016,7 @@ Dashboard/state and round-accounting repair do not clear any of these gates.
   original6899B grammar SHA77b0361c matched the held manifest. All22 members
   rehashed exact.28TeX/PDF and bound prior reports remain unchanged.
   A disposable-copy replay then reproduced all seven generated artifacts,
-  99controls and40minimum byte-exact, with the entire held tree unchanged.
+  99controls and 40minimum byte-exact, with the entire held tree unchanged.
   Exact incident/restoration/executable evidence and durable isolation lesson:
   reviews/2026-11-04-B21-prototype-completeness-audit/v3-root-replay-incident/.
   This was a Root harness error, not a producer grammar or manuscript defect.
@@ -2678,7 +2678,7 @@ Dashboard/state and round-accounting repair do not clear any of these gates.
 
 - **Earlier complete whole MAIN (2026-11-03):** the one actual all214own-proof/
   240statement/28TeX DeepSeek V4 Pro run is TERMINAL, actual INCONCLUSIVE/
-  MEDIUM,204CHECKED/10LIMITED,0FLAW/NOT_READ and4major/2minor findings.
+  MEDIUM,204CHECKED/10LIMITED,0FLAW/NOT_READ and 4major/2minor findings.
   No falsifying error established; critical operator-dynamics/cutoff/constant/
   positive-matching closures were not independently replayed fully. Root
   has completed reading/adjudication of all214reason fields,240 grouped
@@ -2918,7 +2918,7 @@ Dashboard/state and round-accounting repair do not clear any of these gates.
 - **Accepted PG/PB TeX integration:** scientifica880288, actualOpus5.5/HIGH,
   30namedchecks455.588seconds,no requiredrepairs. Native16142TERMINAL0,
   accepted/coverageTRUE;63fivewayinputs/50fulltexts/13exactPNGs/78rawfiles
-  verified.11proofs/247pagesclean/193priorunchanged. Originalallmodel
+  verified.11 proofs/247pagesclean/193priorunchanged. Originalallmodel
   intrinsiclimitC2=Spos2=2^mSpos1 nowintegrated atscoped gate, notactualp1
   orauthorL, no wholepaper/goalcompletionclearance.
 - **Accepted OC/WS TeX integration:** scientific d041546, packet 691f413,
@@ -2975,7 +2975,7 @@ The following bullets retain prior checkpoint status and next steps; they
 are historical. Use the current frontier above and dated entries below.
 
 - **Latest actualdimensional methodtest:** physicallyMASKED SAME-W L²HS(E_s,E_s) firstdriver reconstruction in d2/3 ruledout forEVERYs byactualcompactGaussianmean/FourierUV/covariance proof, accepted8groups/HIGH at0743b2d (407.368seconds,26texts+2images). Not an unmasked/law-only/moment/solution/Gupper no-go. Onefullmatrixtype+2OLDscalarNEWapplications checked. NEXT: freeze/falsify actualuniformspectralballgrowth and auxiliarymaskvariance domination for a larger driverclass; Schatten/flow claims remainUNPROVED. Originalall-dimensional lower/sharpupper/source issues open.
-- **Latest GLOBALd1lower:** Omega>1 andexplicitgainV(a/2)^(-1/k) ORIGINALpointlower(18) forALLadmissibled1Riesz/whitea/alpha/amplitudes, withown E_star^O, accepted7groups/HIGH atee188ab (447.816seconds,31texts+2images). EntireactualGamma/kernel/rationalproof and4finitecompleteQ/D/Vtype/applications checked. This closes d1LOWERcomparison only; source/domain/label/intendednormalization, sharpupper andd2d3 remainOPEN. MaskedHS extension nowrefuted at0743b2d; NEXTactualspectral/mask/operatornorm bounds preservingoriginalclass.
+- **Latest GLOBALd1lower:** Omega>1 andexplicitgainV(a/2)^(-1/k) ORIGINALpointlower(18) forALLadmissibled1Riesz/whitea/alpha/amplitudes, withown E_star^O, accepted7groups/HIGH atee188ab (447.816seconds,31texts+2images). EntireactualGamma/kernel/rationalproof and 4finitecompleteQ/D/Vtype/applications checked. This closes d1LOWERcomparison only; source/domain/label/intendednormalization, sharpupper andd2d3 remainOPEN. MaskedHS extension nowrefuted at0743b2d; NEXTactualspectral/mask/operatornorm bounds preservingoriginalclass.
 - **Latest actual damped lower result:** temporalBeta/legalX/staticlower/dampedenergy GENERALOmega pointcomparison and whitealpha1,a1/2 directpoint theorem(16), exactzeta=(2418683125/2415919104)^(1/8)>1, accepted7groups/HIGH at8883160 (295.426seconds,28texts+2images). OwnE_star^O explicitmeaningfuldomain; source/domain/label matching and normalization unadopted. Threefinite scalar applications checked. GlobalOmega nowclosed atee188ab; NEXToriginalhigher-dimensional/sharpupper work. Sharpupper/originald2d3/exactlimit/fullgoal remainOPEN.
 - **Latest raw value comparison:** actual positive-control variational VALUE ceiling in own raw occupation energy E_eta, with strict displayed-map gaps ateta1/2 and legalalpha1/10,a9/10eta1, accepted8groups/HIGH atad6c188 (322.118seconds,26texts+4images). Actual moment Q2 still has only LOWERQ2>=V2 from thismechanism; no Q2 upper/sourceconstantidentity. Two scalar applications checked. Dampedbridge/whitepoint now accepted at8883160; NEXTglobalOmega comparison. Original9pointrecon doesnotprove fullrange. Original sharpupper/all-dimensions/intendednormalization remainopen.
 - **Latest occupation bridge:** actual positive X=L2(time;L1 intersect L2 space) covariance/closed-H1-form/measurable-Rayleigh-rate approximation, original-point lower and exact smooth/X score-supremum equality accepted8groups/HIGH at80e47d6 (272.897seconds,25texts). Includes actual finite-energy occupation densities g² and bounded nonnegative timeweights. Two new scalar form-budget applications checked. RawVALUE ceiling now accepted atad6c188; NEXTdamped-lower-endpoint comparison. Intended normalization/sharp upper/higher dimensions remain open.
@@ -4372,7 +4372,7 @@ unchanged-source build was not edit evidence. Corrected fail-fast run verified
 the actual diff,formatter idempotence and clean canonical50page build.
 Current TeXcd9d1c6381e481592af8fb5f339f735b727aebc4647fa2c07510210093625b12;
 PDFd630a021b5647ccbc643cda5747ca9d35576f9990944873e495569a2d1c12d08.
-Changed PDF pages1and48 visually checked;0errors/undefined/overfull/tabs.
+Changed PDF pages1and 48 visually checked;0errors/undefined/overfull/tabs.
 Original49page freeze and author reports remain immutable history.
 
 [held back: AI account details]
@@ -4513,7 +4513,7 @@ TeX7bbac562f562c4278c2e46b4f60c6ba0e6ac91dc0194bd851e9b701c577d0052;
 PDF3366d9cc4567fdc4e561ebfeb39146eabf06f51ef8fd71437ea2481f072281ad.
 Prior full50page14PASS/medium and scoped deterministic6PASS/high reports
 remain immutable and do NOT accept this new assembly. A full17check primary
-skeptic contract and43file packet are frozen,with the same30actual validated
+skeptic contract and 43file packet are frozen,with the same30actual validated
 source-image carriers,full inherited proofs and pinned source PDFs. No
 confidence outcome is requested. HIGH threshold retained;new review is for
 genuine new geometry/types/consumers and source-identification proof.
@@ -5502,7 +5502,7 @@ One elementary explanatory paragraph is added to P:interval-coefficients
 for coefficientwise absolute energy convergence,as suggested by v1minor4:
 Cauchy on a doubled polydisc bounds the coefficient norm sum;the finite
 2^|F|/4^|F| factors are for identification only,not the uniform estimate.
-All formal statements and44of45proofs must remain byte-equal in the final
+All formal statements and 44of45proofs must remain byte-equal in the final
 binding. No new theorem,constant optimization,scope restriction or analytic
 input is introduced. Final clean build/binding and a fresh prior-blind
 whole-paper cold read are next. The sharp constant,Lean creation,novelty,
@@ -5592,7 +5592,7 @@ remain required. No reviewer report or source-normalization repair is supplied.
 
 Actual source431a3d685752224da3ce480214f6d62562b19c1b,freeze638b9ad.
 Fresh native Opus5.5/HIGH846.204s:17PASS,no fatal/major or required repairs,
-accepted=true,coverage_verified=true. All23required texts and24PNGimages
+accepted=true,coverage_verified=true. All23required texts and 24PNGimages
 complete/exact;actual route,held HEAD,input and ledger/event hashes verified.
 Every8minor finding adjudicated in explicit-justifications/adjudication-v1.md.
 Full original nonsharp upper scope retained;sharp,cold,Lean,novelty and
@@ -5847,7 +5847,7 @@ The original full goal remains ACTIVE.
 Fresh source `f9303ed` passed its8check Opus5.5/HIGH construction/interface
 audit in527.512s,all required7texts/36PNGs exact,accepted=true,no required
 repairs. All8minor findings are adjudicated in the new directory. Every
-final formal statement and46of51proofs match that source;five proofs have
+final formal statement and 46of51proofs match that source;five proofs have
 optional notation/pinpoint/elementary-argument clarifications. The direct
 joint-limit and main upper proof remain exact. Zero-error/undefined/overfull/
 tab build and hashes are in final-status-binding.json.
@@ -6155,7 +6155,7 @@ is attempted;positive superlinear growth makes ordinary exponential damping
 insufficient. Relative ordering of distinct chains must not be erased.
 
 Local calibration before long proof:9common-damping cases,3unequal-parameter
-cross transforms and45EXACT covariance-variance comparisons pass. Atwhite
+cross transforms and 45EXACT covariance-variance comparisons pass. Atwhite
 alpha1,a0=1/2,theta1,the actual cross gap transform is0.4431134627;
 shared-clock ansatz0.2595698568(ratio2-sqrt2),independent-clock0.2041190640.
 This tests a named analytic-covariance substitution,not a physical model
@@ -6765,7 +6765,7 @@ smooth averaging a valid moment observable and avoids forcing point
 evaluation from the balanced phase. It does not narrow the end target.
 
 Six finite Lean types/application passedC6of8. Clean local compile/standard
-axioms/owned replay and4semantic controls; initial unused-hypothesis warning,
+axioms/owned replay and 4semantic controls; initial unused-hypothesis warning,
 binder-only rename and actual balanced-budget addition preserved. Kernel
 proof bytes and ALLdisplayed formula blocks/table unchanged after review.
 Root rechecked both owned object hashes. New prose clarifies dense-set HS
@@ -7047,7 +7047,7 @@ repairs. Original output invalid-report due prose around JSON is preserved.
 Public syntax-only recovery extracted the exact fenced bytes reversibly and
 reran all acceptance gates with0new provider calls. Native/recovery41member
 archive and all23current/frozen/committed input hashes verified. All7optional
-findings adjudicated; proof body and4finite Lean sources unchanged on adoption.
+findings adjudicated; proof body and 4finite Lean sources unchanged on adoption.
 C7accepts exact finite types/application only; no formalGaussian/flow/package.
 Canonical TeX/PDF unchanged. No live reviewer/Lean job remains. Original full
 goalACTIVE; next is exact spectral projection/complement/product consumer on
@@ -7346,7 +7346,7 @@ same-Z moderate event and accepted Gaussian/point consumer.
 
 Falsification first: complete exact script184floor cases/98partial cases,
 noncommuting ordered telescope,20small-unit-error-not-full-closeness
-examples and4moderate-density scalings PASS. These are finite controls,
+examples and 4moderate-density scalings PASS. These are finite controls,
 not actual stochastic proof. Packet has exact generator, no C5omission.
 Todo: independent preproof object/statement audit; actual analytic proof;
 value-ranked existing Lean reuse; scientific HIGHgate; then optimizer/
@@ -7473,7 +7473,7 @@ actualfirst-partyOpus5.5/high,29texts+1exactprimaryimage, unchangedHIGH
 threshold; session54342/native stratonovich-raw-variational-scientific-v1.
 All30live/packet/committed input hashes matched before launch. Supported
 launch-local2.1.304doctor/healthyaccount0short61weekly. Includes full
-class/Radon/spectral/supremum proof and4exactfinite Lean applications;
+class/Radon/spectral/supremum proof and 4exactfinite Lean applications;
 poll samehandle/receipt, no timeoutrestart. No variational adoption yet.
 Next REALoptimizer/class/source gap, not another homogeneity restatement,
 is retained as UNREVIEWED next-optimizer-class-obligations.md.
@@ -8554,7 +8554,7 @@ convergence withcompactvalues, notSp-path; sqrtp/exponential LOCALdriver
 normmoments. No sourceepsilon/delta/Young/canonicaldata/u-moment identification.
 
 21actualsmoothcompact timeconvolution/derivativecontrols, actualsingulard2
-maskorder and4finite256compact-tail controls PASS. Noncompact-envelope
+maskorder and 4finite256compact-tail controls PASS. Noncompact-envelope
 Gaussiandiagonal counterexample is outsideactualmaskedhypotheses and guards
 against inferring sampleoperators from mean-squarecolumns alone. Nullraw
 and zero maskedCMdirections allowed, no finite/periodic replacementnoise.
@@ -8891,7 +8891,7 @@ Skorohod/sourcefix/TeX/PDF/wiki/publication ornewsharpconstantclaim.
 
 ExpandedFULLv2 actualnativeOpus5.5/high thirteenchecks PASS_WITH_NOTES/
 HIGH283.696s,26completeTEXTS; no requiredrepairs. All26live/frozen/git8ad5094/
-nativeworkspacebindings and41nativearchive members checked before adoption
+nativeworkspacebindings and 41nativearchive members checked before adoption
 edits. Root canonicalreport/passing/correspondence/requiredcoverage pass.
 Original98785terminal/directvalidJSON/no recovery/relaunch; HIGHunchanged.
 V1 remainsMEDIUM322.212s/acceptedfalse, preserved19bindings/34nativefiles;
@@ -8926,7 +8926,7 @@ publication orwholepaperclearance.
 ### Next compact-mean ground controls retained — 2026-10-31 UTC
 
 OUTSIDE acceptedYoungpackets, preparatoryUNREVIEWED research only.
-36 exactrational fullwave+constant-forcing projection cases and432 residual
+36 exactrational fullwave+constant-forcing projection cases and 432 residual
 identities PASS; droppingconstantfunctional failscommutation and loses
 positiveentrance. No continuumground/gap/complement theorem frommatrices.
 Actualadmissibled3 Gamma=delta_x1 tensorLeb_x2 tensorLeb_x3,alpha1,a.5:
@@ -9021,7 +9021,7 @@ publication/wholepaperclearance.
 
 Original71921TERMINAL family8HIGH284.794s PASS_WITH_NOTES,25completeTEXTS+
 sixFULLimages/no requiredrepairs. All31live/frozen/git715b6b2/native
-bindings and46nativearchive members verified BEFOREproof. Rootcanonical
+bindings and 46nativearchive members verified BEFOREproof. Rootcanonical
 report/passing/correspondence/requiredreadcoverage pass. DirectvalidJSON/
 no retry/recovery/confidencechange. Scalarv1separatelyretained, no narrow
 longproof begun. Sixminor noteshandled: chooseR/commonnegativefirstTHEN
@@ -9050,7 +9050,7 @@ Lean/companion/HPC/contact/Skorohod/sourcefix/TeX/PDF/wiki/publication.
 
 Original61985TERMINAL full10HIGH359.291s PASS_WITH_NOTES,28completeTEXTS+
 6FULLprimaryimages/no requiredrepairs. All34live/frozen/gitbfbd472/native
-bindings and49nativearchive members verified BEFOREadoption edits; root
+bindings and 49nativearchive members verified BEFOREadoption edits; root
 canonicalreport/passing/correspondence/requiredreadcoverage pass. Direct
 validJSON/no recovery/relaunch/confidencechange. Nine optionalnotes
 adjudicated: explicitforcing-Fubini; specializedform-domain spectralcore
@@ -9488,7 +9488,7 @@ HPC/sourcefix/TeX/PDF/wiki/companion/publication; NoRoute/local isolated.
 
 After accepted statement8f94a1c, exact two headers compiled against frozen
 read-only4.35.0/Mathlib56a0058 cache; separate complete public types/standard
-axioms match original/replay;5artifactpairs and4False controls verified.
+axioms match original/replay;5artifactpairs and 4False controls verified.
 Initial compile0 warning-gateFAIL preserved (22native files),
 body-only lint correction clean successor (41native files).
 All archive members checked; headerfence unchanged; no guard/linter disabled.
@@ -9523,7 +9523,7 @@ contact/Skorohod/HPC/sourcefix/TeX/PDF/wiki/publication/wholepaper claim.
 
 Original58486 TERMINAL, full10checks PASS/PASS_WITH_NOTES/HIGH318.460s,
 no requiredrepairs. Canonical report/pass/correspondence/readcoverage pass;
-29live/frozen/Git/native bindings and all44native archive members
+29live/frozen/Git/native bindings and all 44native archive members
 verified. No recovery/restart/waiver. Adopt all-alpha-damped-lower.md:
 Jmonotone ALLq>2a, oldV unchanged, ORIGINAL all-Gamma/full-O point gain
 Q2>=2^mV(a/2)^(-1/k)F_a(E_star^O)>2^mF_a(E_star^O).
@@ -9874,7 +9874,7 @@ ticket tk-20261030-010856-codex-stratonovich-spectral retained, no duplicate/
 ingestion claim. REFRAME known-method application; noveltyUNVERIFIED.
 
 60scalar spectral fibers40/70digits,10h0Jordan evaluator calibrations,
-all t0norm1,12exact form and4sqrt guards; full Euclidean matrixnorm, not
+all t0norm1,12exact form and 4sqrt guards; full Euclidean matrixnorm, not
 actual CM/operator/SPDE or certified enclosure. Free-velocity and1_Q guards
 analytic, not numerical. Existing weightedAMGM complete type planned for
 actual1/2 weights/positive powers, no new kernel/count73facts19seams/L0.
@@ -9925,7 +9925,7 @@ static upper, source normalization or whole-goal completion claimed.
 
 Original56325 TERMINAL,16checks PASS/HIGH224.59seconds,no requiredrepairs.
 Canonical report/pass/correspondence/readcoverage pass,ALL7PRIMARY images;
-25live/frozen/Git/native bindings and40native archive members verified.
+25live/frozen/Git/native bindings and 40native archive members verified.
 V1 FAIL/HIGH retained, corrected exact2<r<2/a, no confidence-only retry or
 waiver. All8minor notes adjudicated for full beta-spectrum/rough physical/
 quarterpower/actual rate proofs. No static theorem adopted. Complete proof
@@ -11995,7 +11995,7 @@ WS assembly and final whole-paper/cold-read/wiki/delivery remain open.
 ActualOpus5.5/HIGH21passing checks (17PASS,4PASS_WITH_NOTES),
 367.179seconds,no repairs. Native36578 TERMINAL0; accepted/coverage true.
 Canonical passing/correspondence/read-ledger checks PASS;30five-way inputs
-and45raw archive members SHA256read-back verified.20complete required
+and 45raw archive members SHA256read-back verified.20complete required
 texts/9exact PNGs delivered. Eight optional notes adjudicated in
 reviews/2026-11-01-spatial-occupation-tex-integration/adjudication-v1.md.
 No source/PDF edit on adoption. Clean189-page PDF;9new proofs,132prior
@@ -13006,7 +13006,7 @@ pass or executed evidence. First make the bounded editorial scope fixes
 and pair a clean rebuilt PDF, retaining all proof bodies; then bind new
 source/render/fidelity packets and measure the first real bounded display.
 Completed reviews cannot be resumed; no chained continuation or confidence
-retry of unchanged passing work. Current13739 and44594 are BOTH TERMINAL.
+retry of unchanged passing work. Current13739 and 44594 are BOTH TERMINAL.
 No review is currently live. Independent cold read NOT DISPATCHED.
 
 Le's reported talk observation is retained in the adjudication: Chen's held
@@ -13044,7 +13044,7 @@ diff/audit, clean build, all257new renders,213proof locators and an explicit
 disposition of EVERY former401input obligation. Old unreviewed renders are
 not relabeled read: the exact new257-page PDF replaces its superseded old
 rendering, with complete mathematical source identity documented. All86
-primary/edition images are retained. Four primary groups contain24,24,19,21
+primary/edition images are retained. Four primary groups contain 24,24,19,21
 frames (two context overlaps), and11visual groups cover all current257pages
 (ten24-frame groups and one17-frame group). Every assignment is PLANNED,
 not a pass. A fresh full mathematical gate still covers all 28files,44sections,
@@ -13151,7 +13151,7 @@ SF04 is the first planned real scientific dispatch after common binding.
 ## 2026-11-01 — SF04 returned full carriers but no report; route audit retained
 
 Common v1 froze at ebd01cfe70a475da2a4947f7cd44a3dff8c9e067, tree
-b50d7949dbb2f1e771679666552441b50603e71e. Post-hook all446inventory files
+b50d7949dbb2f1e771679666552441b50603e71e. Post-hook all 446inventory files
 matched live/Git,960packet copies matched, and all16contract/required-plan
 pins matched. Official spec-v1 bound this exact source/tree; no component
 or composition acceptance was claimed. SF04 native dry-run passed with
@@ -14083,7 +14083,7 @@ correspondence. It read current descendant b49dd36, recording terminal
 SF04 MEDIUM and scoped cutoff HIGH, full goal/gates still open. Full receipt
 and exact page/verification retained under resumption/wiki-completed.
 
-Current inventory clarification: all448 matched at the earlier resumption
+Current inventory clarification: all 448 matched at the earlier resumption
 check, before93ef28f updated PROJECT-GOAL's reviewer directive. A fresh
 root check now gives447/448, the only delta PROJECT-GOAL.md governance;
 all 28 scientific TeX remain unchanged887. This known delta is documented
@@ -14320,7 +14320,7 @@ PID3148173/supervisor3147994, handle56604/session ses_e65399441ffe8l76vpBV5DEzX0
 Clean carrier8cf1476bad3376535c8ac25df4ba13d9f5446717; prompt165581bytes
 SHA2566056eba446071e4d69c2367bec9ef2b28e5b16d1ee8623977df901bf1fd061c2.
 Complete static-to-interval target plus allA/model/primary/consumer context;
-identity rows exclude prior report annotations. B01-B08 and4proof ledger.
+identity rows exclude prior report annotations. B01-B08 and 4proof ledger.
 
 Wave PROOF066-074 LIVE: ../stratonovich-main-deep-wave-v1,
 PID3146523/wrapper3146496, handle34604. Clean carrier
@@ -14907,7 +14907,7 @@ and independentlyrecomputed all214bodyhashes/statementlocators.212oldbodies
 identical,182exactreviewedreplacement,new214. TeXfiles matchcandidate; rebuiltPDF has identical all260page layouttext.
 The specific FNDCase2 production condition is satisfied in actualnotes;
 unchanged001–002 now scopedHIGH adopted with Lstarstillconditional. New214
-scopedHIGH. v25has111accepted of214identities; rawmainMEDIUM unchanged.
+scopedHIGH. v25has 111accepted of214identities; rawmainMEDIUM unchanged.
 Proofindexv3 preserves all213oldIDs and deferred093, adds214without renumber.
 182delta passes butbroaderunitadjudication pending. No whole/sourceimage/
 full260render/Kimi/cold/goalclosure. Remainingchecks and originalmodels stay.
@@ -14933,7 +14933,7 @@ whole report/rehashed90members. Rationalwitness a7/12versustheta5/8,
 Gammainequalitynot equality, factorialreciprocal direction andinvalidlabel
 advice adjudicated against correctsource. ExactRiesz/profilewindows and
 anisotropic no-go scope retained; no allmodel/Skorohod/cold/image transfer.
-v26has115scopedHIGH/all214identities. No scientificsource/PDF changes.
+v26has 115scopedHIGH/all214identities. No scientificsource/PDF changes.
 
 FreshKimi capacityevidence: readonlyusageHTTP200 short/weeklywindowsroom
 butmonthlyfieldsabsent. ONErootauthorizednative3imageattempt thenreturned
@@ -15244,7 +15244,7 @@ Root rehashed67 original and12 correction members, verified the unchanged
 original message prefix and actual model/tools0/stop, and matched all seven
 current bodies. This is one review lineage. Only112–118 are newly accepted;
 all imported-input reading limits and prior MEDIUM reports remain. Ledgerv36
-has171 scopedHIGH,3 earlier editorial deltas and40 earlier MEDIUM/partial
+has171 scopedHIGH,3 earlier editorial deltas and 40 earlier MEDIUM/partial
 rows. Source/PDF/indexv6 stay unchanged; whole-main/source-image/render/Kimi/
 cold and private-delivery gates remain open. No additional branch or clone.
 
@@ -15253,7 +15253,7 @@ cold and private-delivery gates remain open. No additional branch or clone.
 
 Root read the full010–019 and024–029 mathematical replays and rehashed all
 8+11+23 source-bound archive members. The white calculation contains all 27
-canonical domains and45 ordered split sectors; an independent local Fraction
+canonical domains and 45 ordered split sectors; an independent local Fraction
 reimplementation from actual pair positions gives the same11/540 rollup.
 The other replays derive resolvent-majorant scaling, Riesz/low-degree bounds,
 critical angular-measure closing, exact published static coefficient and
@@ -15517,7 +15517,7 @@ supervisor2856636/handle32617, clean carrier870124a. Exact input and launch
 are preserved under reviews/2026-11-03-main-current-complete. The initial
 launcher authorization-key guard failed before any provider call; original
 metadata and additive resolution are retained, and native count remainsONE.
-No automatic retry/continuation.210scopedHIGH and4current unresolved rows
+No automatic retry/continuation.210scopedHIGH and 4current unresolved rows
 are unchanged by launch; no whole-main/image/render/Kimi/fresh-cold closure.
 
 Canonical timely-learning1600ad890f0e857c057cbe3699e63402941585c2 updates
@@ -15593,7 +15593,7 @@ inputs. One harmless replay quantifier slip needs the explicit choice
 K=max(1,k), and aggregate F=2delta lognorm errors carry factor2. Frozen replays
 are unchanged. Root reran four finite scripts in separate scratch locations;
 all exit0 and reproduce their frozen result bytes. All 28Git8ce TeX,214own
-proof bodies and240statement bodies were rehashed. These are author/custody
+proof bodies and 240statement bodies were rehashed. These are author/custody
 checks, not cross-family review, whole acceptance or image/cold clearance.
 
 Evidence: reviews/2026-11-03-root-closure-adjudication/adjudication.md, exact
@@ -15886,7 +15886,7 @@ private wiki final status/delivery remain OPEN. No round/final-goal closure.
 ## 2026-11-03: af97 current bindings and history preserved
 
 Scientificaf97ae4db921a660b0a4ed1ffbe9b6f53a487e2b/PDF096cb3 is pushed and
-<HUB>-equal. Indexv7/neutralv7/ledger53 rebind all214 current proof and240
+<HUB>-equal. Indexv7/neutralv7/ledger53 rebind all214 current proof and 240
 formal statement identities, including25module hashes and15start locations.
 Exactly six current bodies differ from8ce; only165statement expands. Producer
 and separate source parser independently re-read actual Git blobs, preserved
@@ -16333,7 +16333,7 @@ Fresh ses_e5bae948cfferBosFOTk3mtZnl ended02:15:35.502239UTC after374.596184858s
 exit0/stop/tools0/all82bytesandGitheadunchanged. Exact two-message regular-file
 export verifies prompt6fcfb0a4/modeldeepseek-v4-pro; actual671252input/cache0,
 12575public+13084reasoning=25659combined under131072. Complete42830byte public
-JSON1191e795 and43055byte parsedpresentation79f4f0ec are the same JSONvalue,
+JSON1191e795 and 43055byte parsedpresentation79f4f0ec are the same JSONvalue,
 not two responses. ActualPASS_WITH_NOTES/medium with2OWN/2formal/1joinCHECKED,
 1given and0mechanicalissues. Root read EVERY publicfield and both full author
 batches. Actual fixed-factor Gaussian/Green estimate, occupied weighted infinite
@@ -16896,7 +16896,7 @@ Root read all42 complete public claim/reason/reconstruction records plus AUTHOR 
 
 ## 2026-11-07: whole215 final scientific selection before count
 
-Root read all105 distinct current-use role/locator/reason groups and complete final additive contract, rehashed337 whole origins and all215 actual complete candidate proof environments, checked241roles/13join record counts. Final selection243required whole mathematical/current/primary files+94whole available custody, including complete actualKimi40 outcome; no source cuts/semantic substitutions or status/grade premises. Root selection in reviews/2026-11-07-whole215-final-source-selection/. Pure lossless DATA and official literal count authorized using existing code, fixed311296 allowance; no provider/runtime/generation authority. Original all-model goal unchanged; this is source selection, not proof acceptance.
+Root read all105 distinct current-use role/locator/reason groups and complete final additive contract, rehashed337 whole origins and all 215 actual complete candidate proof environments, checked241roles/13join record counts. Final selection243required whole mathematical/current/primary files+94whole available custody, including complete actualKimi40 outcome; no source cuts/semantic substitutions or status/grade premises. Root selection in reviews/2026-11-07-whole215-final-source-selection/. Pure lossless DATA and official literal count authorized using existing code, fixed311296 allowance; no provider/runtime/generation authority. Original all-model goal unchanged; this is source selection, not proof acceptance.
 
 
 ## 2026-11-07: final whole215 literal input exceeds MAIN context
@@ -16976,7 +16976,7 @@ AfterREADYb7fa379push/GWparity RootauthorizedONLYN2-file source-working stage on
 
 ## 2026-11-07: N navigation delivered, request lifecycle still refused
 
-Actual9207 TERMINALnative0/418.094636s/source333+180msgprefix unchanged. Completeevidence in reviews/2026-11-07-source-stage-N-terminal/. BothnavigationfileswhollyRead; cumulative216completedReads/224completedusagechecks pass, core56of220whole/164sourcesremain. Oneunmatchedstep-start has UNKNOWN request/usage/HTTPstatus; wrappernested-steprefusalpreserved/no technicalPASS orscientificacceptance.3sameV4Procompactions cumulative/1new; no newReadfailure. Rootreadall7593Bworkingnotes; CP/Teschl range/LF10400 reporttypos qualifiedusingexactsource table. No verdict/confidence/newvote/sourceedit/auto-nextstage. Primary/adverse reconstruction andfinalall215/241/13C2/HIGH/Kimi/sourcevisual/cold/adoption/deliveryremainopen.
+Actual9207 TERMINALnative0/418.094636s/source333+180msgprefix unchanged. Completeevidence in reviews/2026-11-07-source-stage-N-terminal/. BothnavigationfileswhollyRead; cumulative216completedReads/224completedusagechecks pass, core56of220whole/164sourcesremain. Oneunmatchedstep-start has UNKNOWN request/usage/HTTPstatus; wrappernested-steprefusalpreserved/no technicalPASS orscientificacceptance.3sameV4Procompactions cumulative/1new; no newReadfailure. Rootreadall7593Bworkingnotes; CP/Teschl range/LF10400 reporttypos qualifiedusingexactsource table. No verdict/confidence/newvote/sourceedit/auto-nextstage. Primary/adverse reconstruction andfinalall 215/241/13C2/HIGH/Kimi/sourcevisual/cold/adoption/deliveryremainopen.
 
 
 ## 2026-11-07: primary-source A1 WORK READY
@@ -17016,7 +17016,7 @@ Rootreviewedactual30sourceBscope/user/code, reran10purecontrols inclpositiveprev
 
 ## 2026-11-07: B pairing/constructor/independent-upper source work LIVE
 
-AfterREADYcee013fpush/GWparity RootauthorizedONLYBthirty-sourcework, originalses_e4adf2f21ffeMDPxl7Y9MOn7QE; Rootexec19912/nativePID2860838/start93213407/executable/carrierverifiedLIVE. Safeevidence in reviews/2026-11-07-source-stage-B-live/. Object-levelinduction/norm/consumer/coarse-vssharpupperwork requested, NOTglobalverdict/confidence/newvote. PriorNUNKNOWN/refusal/technicalglobalPASSfalse/noautoC/sourceedit preserved. Finalall215/241/13C2/HIGH/Kimi/visual/cold/adoption/deliverystillowed.
+AfterREADYcee013fpush/GWparity RootauthorizedONLYBthirty-sourcework, originalses_e4adf2f21ffeMDPxl7Y9MOn7QE; Rootexec19912/nativePID2860838/start93213407/executable/carrierverifiedLIVE. Safeevidence in reviews/2026-11-07-source-stage-B-live/. Object-levelinduction/norm/consumer/coarse-vssharpupperwork requested, NOTglobalverdict/confidence/newvote. PriorNUNKNOWN/refusal/technicalglobalPASSfalse/noautoC/sourceedit preserved. Finalall 215/241/13C2/HIGH/Kimi/visual/cold/adoption/deliverystillowed.
 
 
 ## 2026-11-07: B complete source delivery; current induction distinguished from old import status
@@ -17081,7 +17081,7 @@ AfterREADY640f073push/GWparity RootauthorizedONLYL exacteight-proofworking pass 
 
 ## 2026-11-07: exact lower working complete; false W-only premise rejected
 
-L native0/317.91039075s; newwholeF011/F012threeReads verified, all220+NAVwhole/source333/prefix435unchanged/no newanomaly. Rootreadall18084B/129LF, complete technicalAUTHOR audits/all7conditions. Evidence in reviews/2026-11-07-lower119126-work-terminal/. Detailed8proofloweralgebra coherent, but proposedcondition1 v_rho∈PhiH/W-only isfalse and NOTconsumed: rawX_m,Z alreadyonW; I(QrhoPhiF)→I(PhiF)=W(F) oncommonW+Jextension;124unweightedfixeddelta products/125rawtilt neednoW-onlysource. q counterexamplepreserved; no sourcegap/sourceedit/gradepromotion. Other6ordinaryupstreamapplications remain forfulljudgment. OldNUNKNOWN/refusal/globaltechnicalPASSfalse retained. Genuinefinalall215/241/13 DATAprepared withwholecontract/crosswalk andexplicitnewcouplingrereads; no authority/call yet. Allotherfullgoalgatesremainopen.
+L native0/317.91039075s; newwholeF011/F012threeReads verified, all220+NAVwhole/source333/prefix435unchanged/no newanomaly. Rootreadall18084B/129LF, complete technicalAUTHOR audits/all7conditions. Evidence in reviews/2026-11-07-lower119126-work-terminal/. Detailed8proofloweralgebra coherent, but proposedcondition1 v_rho∈PhiH/W-only isfalse and NOTconsumed: rawX_m,Z alreadyonW; I(QrhoPhiF)→I(PhiF)=W(F) oncommonW+Jextension;124unweightedfixeddelta products/125rawtilt neednoW-onlysource. q counterexamplepreserved; no sourcegap/sourceedit/gradepromotion. Other6ordinaryupstreamapplications remain forfulljudgment. OldNUNKNOWN/refusal/globaltechnicalPASSfalse retained. Genuinefinalall 215/241/13 DATAprepared withwholecontract/crosswalk andexplicitnewcouplingrereads; no authority/call yet. Allotherfullgoalgatesremainopen.
 
 
 ## 2026-11-07: genuine full integrated MAIN judgment READY
@@ -17111,19 +17111,19 @@ Root read actualPROOF005 statement/fullproofLF1194–1336 and reproduced environ
 
 ## 2026-11-07: fresh literal ALL215 actual-proof WORKING pass READY
 
-Actual-source-first working scope supplies ALL215proofs/241roles/13joins andprimaries/challenges in96fullsources; original243-source MAIN/comparison/historydebt unchanged, no narrowergoalsuccess. V1special-literal uncertainty retained; V2onewholeJSON-stringcarrier+95literalbodies Rootinverseall96byteequal, Rootofficialcount695407reproduced. Data/code/safe evidence in reviews/2026-11-07-literal-all215-proof-working-ready/. Successfulzero-gen3commandpreflight PRIMARY/directDSV4Pro/tools0/compactionshareoff/effectiveMCP0/knowninstruction passes;configuredplugins6retained, childPURE/defaultdisable both1 source-selectexternal/internalhooklists0 (notconfig0/trace). Earlierpluginsrefusal andsetuppermissionfailure preserved. Globalsettingsuntouched/privatecapturesdiscarded.695407+32768conditionalframing+311296=1039471/head9105, notHTTP/admission. Freshcarrier248df524/tree4264037/noorigin/fullclean. ONEfreshworkingcallonlyafterREADYpush/GW/separateRootauthority, no callyet/autoretry/sourceedit/adoption/MAIN/coldcertificate. Alloriginalgatesremain.
+Actual-source-first working scope supplies ALL215proofs/241roles/13joins andprimaries/challenges in96fullsources; original243-source MAIN/comparison/historydebt unchanged, no narrowergoalsuccess. V1special-literal uncertainty retained; V2onewholeJSON-stringcarrier+95literalbodies Rootinverseall96byteequal, Rootofficialcount695407reproduced. Data/code/safe evidence in reviews/2026-11-07-literal-all 215-proof-working-ready/. Successfulzero-gen3commandpreflight PRIMARY/directDSV4Pro/tools0/compactionshareoff/effectiveMCP0/knowninstruction passes;configuredplugins6retained, childPURE/defaultdisable both1 source-selectexternal/internalhooklists0 (notconfig0/trace). Earlierpluginsrefusal andsetuppermissionfailure preserved. Globalsettingsuntouched/privatecapturesdiscarded.695407+32768conditionalframing+311296=1039471/head9105, notHTTP/admission. Freshcarrier248df524/tree4264037/noorigin/fullclean. ONEfreshworkingcallonlyafterREADYpush/GW/separateRootauthority, no callyet/autoretry/sourceedit/adoption/MAIN/coldcertificate. Alloriginalgatesremain.
 
 
-## 2026-11-07: literal all215 working terminal; focused foundation derivations next
+## 2026-11-07: literal all 215 working terminal; focused foundation derivations next
 
-Fresh literal working session ses_e491df4f9ffet3QsG3Cdnfz2cB is terminal native0/wrapper2. Actual695713 input/no cache,12990 output+7511 reasoning; raw46192B SHAfe0c6a7e4fd27ed902aed33636ef6a56378b04f7a66d6e42736f5709162cb001. BareJSON PASS_WITH_NOTES/MEDIUM,111 grouped rows with36PARTIAL and2major remains unaccepted; exact individual-ID coverage70/228 cannot be repaired by expanding groups. Root read all public reasons and complete adjudications. Evidence in reviews/2026-11-07-literal-all215-proof-working-terminal/. No located new source inequality failure; missing independent derivation remains actual work. Source-coverage count typo33 qualified as34 without altering original. Historical W-only premise remains false and unconsumed.
+Fresh literal working session ses_e491df4f9ffet3QsG3Cdnfz2cB is terminal native0/wrapper2. Actual695713 input/no cache,12990 output+7511 reasoning; raw46192B SHAfe0c6a7e4fd27ed902aed33636ef6a56378b04f7a66d6e42736f5709162cb001. BareJSON PASS_WITH_NOTES/MEDIUM,111 grouped rows with36PARTIAL and2major remains unaccepted; exact individual-ID coverage70/228 cannot be repaired by expanding groups. Root read all public reasons and complete adjudications. Evidence in reviews/2026-11-07-literal-all 215-proof-working-terminal/. No located new source inequality failure; missing independent derivation remains actual work. Source-coverage count typo33 qualified as34 without altering original. Historical W-only premise remains false and unconsumed.
 
 Root directly checked the complete mild-construction proof: occupied multiplication/closedness, fixed integrand Green-first passage, partial-width convergence, weighted infinite-series closure and uniform head/tail bound. Evidence in reviews/2026-11-07-direct-mild-construction-author-check/. No new gap found within stated incoming hypotheses; AUTHOR only, no independent vote/source edit/adoption. Focused source-only12 DATA sealed with whole7sources and no graded historical reports, manifest0bb939883eda4648f5c0ef3d75a950601597906b526eaa070cfb0949d0f6121f. Free scientific derivations requested; full215/241/13, all-model C2 and all acceptance/delivery debt unchanged.
 
 
 ## 2026-11-07: foundation12 source-only scientific working READY
 
-Root verified all seven complete source bodies/aliases, exact12 assignment, runtime diff and independent officialBPE102+204039=204141. Actual zero-generation preflight passed directDSV4Pro PRIMARY/tools0/MCP0/shareoff/compactionoff with bound originalcontext and childPURE/defaultpluginsdisabled. Conditional32768+311296 yields548205/head500371, notHTTPadmission. Evidence in reviews/2026-11-07-foundation12-source-only-working-ready/. Same isolatedcarrier248df/tree4264, freshsession only, no old graded reports in mathematical input and no confidence/verdict request. Exact headings are coverage only, never proof acceptance. ONE scientific working call pending READYpush/GW and separateRootauthority. Full goal/all215/241/13/gates unchanged; no sourceedit/adoption.
+Root verified all seven complete source bodies/aliases, exact12 assignment, runtime diff and independent officialBPE102+204039=204141. Actual zero-generation preflight passed directDSV4Pro PRIMARY/tools0/MCP0/shareoff/compactionoff with bound originalcontext and childPURE/defaultpluginsdisabled. Conditional32768+311296 yields548205/head500371, notHTTPadmission. Evidence in reviews/2026-11-07-foundation12-source-only-working-ready/. Same isolatedcarrier248df/tree4264, freshsession only, no old graded reports in mathematical input and no confidence/verdict request. Exact headings are coverage only, never proof acceptance. ONE scientific working call pending READYpush/GW and separateRootauthority. Full goal/all 215/241/13/gates unchanged; no sourceedit/adoption.
 
 
 ## 2026-11-07: foundation12 source-only scientific working LIVE
@@ -17142,7 +17142,7 @@ Agent21 read-only reply83b65b8d24ce establishes no task-local Kimi selector; def
 
 Root read actualF007 spatial/Phi/I/Q/point-test/residual clauses and primaryF088(2.9)/(2.11)/(2.12)/Definition2.1. Explicit AUTHORdeduction in reviews/2026-11-07-retaining-source-family-author-check/: originalW+ONEJ retention, exactFouriernormalization, temporalMAX/spatialSUM, actualtestidentity, fullresidual contraction/arbitraryrates, and finiteGaussianpolynomial connection to006/008/009. No operatorparent/W-only strengthening/uniqueness used. No newgap found within boundedAUTHORcheck; independent source reconstruction stillassigned, no scientificadoption.
 
-Root independently verified selectedK3capability/native4ranges in reviews/2026-11-07-Kimi-effective-capability-budget-plan/. Basecontext1048576/image_in true; no provideradmission. Defaultcompaction .85 threshold does NOT preserve311296freeallowance+65536nextReadcharge. Safe inputbounds671744beforeRead/737280actualnextrequest remain mandatory. No whole-goal runtime/profile/call or global/authchange; source-proven finite-turn/explicit-compaction boundary under investigation. Fullgoal/all215/13/gates remain active.
+Root independently verified selectedK3capability/native4ranges in reviews/2026-11-07-Kimi-effective-capability-budget-plan/. Basecontext1048576/image_in true; no provideradmission. Defaultcompaction .85 threshold does NOT preserve311296freeallowance+65536nextReadcharge. Safe inputbounds671744beforeRead/737280actualnextrequest remain mandatory. No whole-goal runtime/profile/call or global/authchange; source-proven finite-turn/explicit-compaction boundary under investigation. Fullgoal/all 215/13/gates remain active.
 
 
 ## 2026-11-07: residual011–035 plus retaining-source application READY
@@ -17152,7 +17152,7 @@ Root verified12complete source bodies/aliases and allDATA members, reproduced of
 
 ## 2026-11-07: residual011–035 and source-coupling scientific work LIVE
 
-AfterREADY2134f86push/GWresearchrefparity RootauthorizedONEfreshsource-onlyderivation. Unifiedexec99346/nativePID645165/start95441511 verifiedLIVE/nativeexecutable/noterminalreceipt. Exact12whole sources and25IDs+APPLICATION-SOURCE-COUPLING; no gradedhistory/grade/confidence request. Revalidate samehandle beforewait; noautoretry/adoption. Originalall215/241/13/allmodelC2/review/visual/cold/deliverydebtunchanged.
+AfterREADY2134f86push/GWresearchrefparity RootauthorizedONEfreshsource-onlyderivation. Unifiedexec99346/nativePID645165/start95441511 verifiedLIVE/nativeexecutable/noterminalreceipt. Exact12whole sources and25IDs+APPLICATION-SOURCE-COUPLING; no gradedhistory/grade/confidence request. Revalidate samehandle beforewait; noautoretry/adoption. Originalall 215/241/13/allmodelC2/review/visual/cold/deliverydebtunchanged.
 
 
 ## 2026-11-07: residual011–035 source work terminal and fully read
@@ -17174,17 +17174,17 @@ AfterREADY055737dpush/GWresearchrefparity RootauthorizedONEfreshsource-onlyderiv
 
 ## 2026-11-07: energy/independent-upper036–060 terminal, full public adjudication
 
-Run17390 CLOSED native0/wrapper0; freshses_e48cd8cf7ffeRTpAMT78mLiciD exact2messages/no parent/tool0/compaction0. Actual295419input+23114public+25956reason=344489; raw69735B SHA6a385ef130cfc82fcafbff4006ccaef5e3eaff71857dd5b93c8959595193af5a. Independenttechnicalaudit verifies12inverses/aliases/39pins/route/events/usage. Root readENTIRE25sections/application/GLOBAL; evidence reviews/2026-11-07-residual036060-source-only-working-terminal/.036actualenergyclosure supplied forprior033input;051noncircular chain reconstructed with009mildseparate/no085093/S2finite/132/204parent. Report042missingnorm/043inversefreefactor/047fixedendpointsnotnull/051cutoff-before-propagation andorderpassage wording qualified againstsource. Local039legalnoncommuting2x2 numerical falsification retained, notproof.047invariance/finite-model limit details remaincompressed work; no newcandidatecounterexamplelocated, no grade/HIGH/adoption. Fullgoal/all215/241/13/gatesunchanged.
+Run17390 CLOSED native0/wrapper0; freshses_e48cd8cf7ffeRTpAMT78mLiciD exact2messages/no parent/tool0/compaction0. Actual295419input+23114public+25956reason=344489; raw69735B SHA6a385ef130cfc82fcafbff4006ccaef5e3eaff71857dd5b93c8959595193af5a. Independenttechnicalaudit verifies12inverses/aliases/39pins/route/events/usage. Root readENTIRE25sections/application/GLOBAL; evidence reviews/2026-11-07-residual036060-source-only-working-terminal/.036actualenergyclosure supplied forprior033input;051noncircular chain reconstructed with009mildseparate/no085093/S2finite/132/204parent. Report042missingnorm/043inversefreefactor/047fixedendpointsnotnull/051cutoff-before-propagation andorderpassage wording qualified againstsource. Local039legalnoncommuting2x2 numerical falsification retained, notproof.047invariance/finite-model limit details remaincompressed work; no newcandidatecounterexamplelocated, no grade/HIGH/adoption. Fullgoal/all 215/241/13/gatesunchanged.
 
 
 ## 2026-11-07: raw Gaussian-driver061–093 scientific work READY
 
-Root readfullassignment/minimalruntime/setup/preflight adaptations, verified6wholepayloads/allaliases/DATA and independentofficialBPE100/225042/225142. Actual zero-generationpreflight directDSV4Pro PRIMARY/tool0/compactionoff/bothisolationflags/currentcontext passes. Evidence reviews/2026-11-07-residual061093-source-only-working-ready/. Exactly33IDs+APPLICATION-GAUSSIAN-DRIVER+GLOBAL/freeequations/no grades.093forwardstatementLF27–55 correctlyboundactual241registry; oldworkmaplocatorerratum retained, proofhashunchanged. Bothvariance->finiteoperators->two-tailenvelopes->trace->operatorCauchy->separableBanachpath required,065084no-gosretained/no006009parent/AWS/CM/tube/growingRpromotion.225142+32768conditional+311296=569206/head479370 notHTTPadmission. ONEfreshcallpendingREADYpush/GW/separateRootauthority; fullgoal/all21513/gatesunchanged.
+Root readfullassignment/minimalruntime/setup/preflight adaptations, verified6wholepayloads/allaliases/DATA and independentofficialBPE100/225042/225142. Actual zero-generationpreflight directDSV4Pro PRIMARY/tool0/compactionoff/bothisolationflags/currentcontext passes. Evidence reviews/2026-11-07-residual061093-source-only-working-ready/. Exactly33IDs+APPLICATION-GAUSSIAN-DRIVER+GLOBAL/freeequations/no grades.093forwardstatementLF27–55 correctlyboundactual241registry; oldworkmaplocatorerratum retained, proofhashunchanged. Bothvariance->finiteoperators->two-tailenvelopes->trace->operatorCauchy->separableBanachpath required,065084no-gosretained/no006009parent/AWS/CM/tube/growingRpromotion.225142+32768conditional+311296=569206/head479370 notHTTPadmission. ONEfreshcallpendingREADYpush/GW/separateRootauthority; fullgoal/all 21513/gatesunchanged.
 
 
 ## 2026-11-07: Gaussian-driver061–093 attempt failed transport, not LIVE
 
-Exec98060 CLOSEDwrapper2/native1; freshses_e48bbeef8ffe9QUGd8w4DeXZRl has step_start thenAPIError cannotconnecttoAPI/retryabletrue, no publicderivation/completedusage. Usage/HTTPadmission/billing UNKNOWN, notzero. RootlivecheckpointASSERTrefusedBEFOREwrites; no livecommitcreated. Evidence reviews/2026-11-07-residual061093-transport-failure/. Oldfence/attempt/source/grades preserved. LaterunauthedHEAD api.deepseek.com curl0/HTTP401/TLSverify0 showsendpointreachableonly, notauthenticatedmodeladmission. Onefreshtransportrecoveryproposal requested, no retryauthorized/launchedyet; secondidenticalfailure wouldstoprepeatfor diagnosis. Fullgoal/all21513/gatesunchanged, no review/adoption credit.
+Exec98060 CLOSEDwrapper2/native1; freshses_e48bbeef8ffe9QUGd8w4DeXZRl has step_start thenAPIError cannotconnecttoAPI/retryabletrue, no publicderivation/completedusage. Usage/HTTPadmission/billing UNKNOWN, notzero. RootlivecheckpointASSERTrefusedBEFOREwrites; no livecommitcreated. Evidence reviews/2026-11-07-residual061093-transport-failure/. Oldfence/attempt/source/grades preserved. LaterunauthedHEAD api.deepseek.com curl0/HTTP401/TLSverify0 showsendpointreachableonly, notauthenticatedmodeladmission. Onefreshtransportrecoveryproposal requested, no retryauthorized/launchedyet; secondidenticalfailure wouldstoprepeatfor diagnosis. Fullgoal/all 21513/gatesunchanged, no review/adoption credit.
 
 
 ## 2026-11-07: Gaussian-driver one transport recovery READY
@@ -17360,7 +17360,7 @@ Kimi source02 returned end_turn; Root read all67long lines, both tests/D1–D5/C
 
 ## 2026-11-07: integrated point/constant working11 returned; new full judgment READY
 
-Evidence reviews/2026-11-07-point-intrinsic-working11/ and reviews/2026-11-07-integrated-after-math11-ready/. Exec3425 CLOSED0, raw b0427d77cd4ed8184b41b44794d7c1e2159f2afeea6fb98099cab9da0ad4ad31; actual546744+10229=556973. Root read all182LF and all13 join summaries against source. No first candidate-source failure identified. These are selected mathematical checks, not full44-proof public reconstruction/HIGH. F001 is a whole main FILE with27 separate input modules; prior packet wording must not imply an expanded closure. Uniform178–184 estimates concern E, not uniform F-column norms. Retaining source fields can use J, while raw paths/averages are W-measurable. Exact all215/241/13 acceptance remains open.
+Evidence reviews/2026-11-07-point-intrinsic-working11/ and reviews/2026-11-07-integrated-after-math11-ready/. Exec3425 CLOSED0, raw b0427d77cd4ed8184b41b44794d7c1e2159f2afeea6fb98099cab9da0ad4ad31; actual546744+10229=556973. Root read all182LF and all13 join summaries against source. No first candidate-source failure identified. These are selected mathematical checks, not full44-proof public reconstruction/HIGH. F001 is a whole main FILE with27 separate input modules; prior packet wording must not imply an expanded closure. Uniform178–184 estimates concern E, not uniform F-column norms. Retaining source fields can use J, while raw paths/averages are W-measurable. Exact all 215/241/13 acceptance remains open.
 
 Current verifiedsource state222 cumulative/73fresh after actualsummary02. Root prepared ONE prospective new full scientific judgment, adding all10 missing whole bodies and complete oldMAINLOW/newKimi02 challenges plus whole adjudications. Exact721385conditional input+311296hard=1032681/head15895; source gate full222/fresh83 prospective PASS means DELIVERY only, not mathematical acceptance. Prepared bytes/count held externally; no per-operation provider authority yet. Pending this READY push/GW parity, then one separately authorized final dispatch. No confidence regrade/normalization or source edit. Kimi source03 actuallylaunched same native session/exec24373,21new whole bodies,conditional683638input; re-poll same handle. Original all-modelC2/requiredHIGH/source/visual/cold/delivery gates remain.
 
@@ -17459,7 +17459,7 @@ Actual89/222 cumulative and 7/83fresh;133 original bodies remain. Native reporte
 
 ## 2026-11-08:45 independent HIGH pages; both next context operations scoped
 
-Evidence reviews/2026-11-08-kimi-pixel12-high-visual-compact02-ready/. Root read full canonicalPASS_WITH_NOTES/HIGH/no repairs,5checks/16IDs/2minor/4limits. Union1–45/180images;222mainpages owed (distinct from222scientifictargets). Reported131221input/3732output/ctx134953. Visualcompact02 READY143145input/+311296=454441; completion owed before pages46–49. Mathcompact03 actually started sameexec24373 after cee346f push/parity, pending actual completion. Source06-v2 prepared312340ordinary/3whole original targets+FULL05challenge/crosswalk/disposition, no nextsourceauthority. Original all215/241/13, integratedMAIN+KimiHIGH/source/fullvisual/cold/adoption/delivery gates remain.
+Evidence reviews/2026-11-08-kimi-pixel12-high-visual-compact02-ready/. Root read full canonicalPASS_WITH_NOTES/HIGH/no repairs,5checks/16IDs/2minor/4limits. Union1–45/180images;222mainpages owed (distinct from222scientifictargets). Reported131221input/3732output/ctx134953. Visualcompact02 READY143145input/+311296=454441; completion owed before pages46–49. Mathcompact03 actually started sameexec24373 after cee346f push/parity, pending actual completion. Source06-v2 prepared312340ordinary/3whole original targets+FULL05challenge/crosswalk/disposition, no nextsourceauthority. Original all 215/241/13, integratedMAIN+KimiHIGH/source/fullvisual/cold/adoption/delivery gates remain.
 
 
 ## 2026-11-08: actual mathcompact03 complete; full source-role inventory ready
@@ -17753,7 +17753,7 @@ Root read all29319bytes/468lines, A/B/Csections/import/boundaries. Native391934i
 
 ## 2026-11-08:full original source-first MAIN packet READY after exact14/15
 
-ActualDScontext06 terminal/no-tail,431157input/2704output-plus-reasoning below463842bound;222cumulative/fresh0. Literal83+30v1 refused at742547input/+311296=1053843 (5267over),NOauthority/post. JSONwhitespace-only probe insufficient/unapplied. Source-firstv2 keepsALL83actual proof/primarybodies, ALL4adverseopinions, EVERYfullRootadjud/correction, correctedexplicitmathguide/control;26whole challenges. Four UNGRADEDintermediate rawconversations remain immutableaudithistory, notanalyticpremises/positivevotes; fullcurrentdispositions/actualsourcefindingsretained. Originalall215/241/13/allmodels/9explicitglobalchecks andeverygate unchanged. Count716588input/+311296=1027884/head20692,32768positiveframing unchanged;83/26spans byteverified. K3user-only673183prospective, actualfinalcontext/admissionowed. No newsciencecall/grade yet. Evidence reviews/2026-11-08-whole-main-source-first-after-exact15-ready/.
+ActualDScontext06 terminal/no-tail,431157input/2704output-plus-reasoning below463842bound;222cumulative/fresh0. Literal83+30v1 refused at742547input/+311296=1053843 (5267over),NOauthority/post. JSONwhitespace-only probe insufficient/unapplied. Source-firstv2 keepsALL83actual proof/primarybodies, ALL4adverseopinions, EVERYfullRootadjud/correction, correctedexplicitmathguide/control;26whole challenges. Four UNGRADEDintermediate rawconversations remain immutableaudithistory, notanalyticpremises/positivevotes; fullcurrentdispositions/actualsourcefindingsretained. Originalall 215/241/13/allmodels/9explicitglobalchecks andeverygate unchanged. Count716588input/+311296=1027884/head20692,32768positiveframing unchanged;83/26spans byteverified. K3user-only673183prospective, actualfinalcontext/admissionowed. No newsciencecall/grade yet. Evidence reviews/2026-11-08-whole-main-source-first-after-exact15-ready/.
 
 
 ## 2026-11-08:149 main pages and twenty-four valid primary pages accepted
@@ -17864,7 +17864,7 @@ Root fullread pixel49 HIGH/common-validator/all16IDs/PNGpins/no repairs. Main193
 
 ## 2026-11-08:work16 main-inference diagnosis complete; actualalternative checks17
 
-DSsamehandleterminal647747input12702output-plus-reasoning within694474bound. Root readentire10026bytes. No specificopen main-spine inference identified; ungradedsearchoutcome, noHIGH/completioncertificate. Actualsource020/033 remainall215obligations despiteconditionalstatus. Rootcorrects report-side Gaussianfeature-norm/field-global-boundedness/backgroundfactor/construction-scope slips. Independentlychecked020powers/Gammaconstant/splitfactor and033Bochner-pathwise/static-targetGreen/mixedmoment/outer-noise order; exactCAS4zeroidentities+2meaningfulbadvariants(-1,+1), notLean/grade. Guide/results evidence reviews/2026-11-08-root-alternative-verification17-working/; actualwork16report/disposition retained. No candidate/PDF change, no reviewlabelpromotion; acceptedLean80facts22seams unchanged. Ledgeractual222cumulative83freshrevalidated.
+DSsamehandleterminal647747input12702output-plus-reasoning within694474bound. Root readentire10026bytes. No specificopen main-spine inference identified; ungradedsearchoutcome, noHIGH/completioncertificate. Actualsource020/033 remainall 215obligations despiteconditionalstatus. Rootcorrects report-side Gaussianfeature-norm/field-global-boundedness/backgroundfactor/construction-scope slips. Independentlychecked020powers/Gammaconstant/splitfactor and033Bochner-pathwise/static-targetGreen/mixedmoment/outer-noise order; exactCAS4zeroidentities+2meaningfulbadvariants(-1,+1), notLean/grade. Guide/results evidence reviews/2026-11-08-root-alternative-verification17-working/; actualwork16report/disposition retained. No candidate/PDF change, no reviewlabelpromotion; acceptedLean80facts22seams unchanged. Ledgeractual222cumulative83freshrevalidated.
 
 
 ## 2026-11-08:197 main pages accepted
@@ -18276,7 +18276,7 @@ reference ties,80-column prose, nesting, captions and proof-owner endings. Both
 checker runs pass their hard checks. Required command groups, two long headers
 and26 distinct aligned-row labels are intentional exceptions, not errors.
 
-Both builds:275 technical pages and24 reader pages,0errors/undefined/overfull/tabs.
+Both builds:275 technical pages and 24 reader pages,0errors/undefined/overfull/tabs.
 All 71 embedded technical labels and233 external PDF targets resolve. All 28
 technical source files retain their ordered mathematical expressions and labels
 under whitespace and explicit single-symbol font/accent normalization;215 proof
@@ -18307,3 +18307,36 @@ withdrawn. The Kimi-K3 whole-paper
 HIGH review (gate 3) is now possible but not started; no review is
 dispatched by this entry. HANDOFF, STATUS-DIGEST and
 notes/WORKING-DRAFT-STATUS.md updated accordingly.
+
+
+## 2026-11-10: long companion reorganized as a book
+
+Le asked whether book format would suit the long document and requested balanced
+chapters/sections/subsections and a better design. Implemented the long companion
+as a 12pt,one-sided,open-any-page book while retaining the short reader as an
+article. Eleven core chapters follow the main proof; four appendices retain the
+finite-order checks, direct/interpolated bounds, higher-dimensional covariance
+comparisons and clock obstruction. The benchmark goals now accompany the model;
+summary/open comparison questions close the main argument. All 44 original section
+identities remain. The construction's seven subsections become sections, and
+the independent upper-bound argument has clearer subsections. No content is
+deleted or mathematical claim altered.
+
+Added a restrained cover, overview/proof guide, multilevel contents, short
+illustrations list, chapter/section headings, running headers, PDF metadata and
+correct cover/Roman/Arabic page labels. Body size/text width remain 12pt/6.2in;
+no smaller typography or forced odd-page blanks. Bibliography is in the contents.
+New numbering includes chapter/section; original labels remain. S:G0 is now
+a chapter label and its two references were corrected. Reader literal section
+numbers were replaced by stable references. Source-paper pinpoints were left
+unchanged. The reader map has 78 labels and 240 valid remote PDF links.
+
+Both builds clean:284book pages and 24reader pages, no errors/undefined/overfull.
+All 215 technical proof bodies retain their ordered mathematics when grouped by
+proof owner, and all original mathematical expressions and labels are retained
+through the reordering. The 27 included mathematical modules are unchanged.
+The 12/7 diagrams remain. Source/PDF pins are in notes/figures/VALIDATION.json;
+notes/book-numbering-map.json records old/new section identities and reader
+landmarks. Private baseline, build logs and visual readback stay under
+private/audit/2026-11-10-book-format/. The old illustration/style receipt at
+669ccc9 remains historical. This is not new proof or review acceptance.

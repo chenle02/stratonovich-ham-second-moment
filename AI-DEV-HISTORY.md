@@ -375,3 +375,31 @@ not a new whole-proof or whole-PDF acceptance. The old scientific grades and
 visual-page credits remain bound to their original editions. The figure guide
 and shareable source pins are under notes/figures/; private iteration records
 remain under private/audit/ in accordance with the release plan.
+
+## From a long report to a navigable technical book
+
+Le requested a book format for the long companion, with more balanced chapters,
+sections and subsections. The reading edition remains an article. The book
+now has 11 proof chapters and 4 appendices. The core proof runs through construction,
+the independent upper bound, Gaussian approximation/operator paths, wave
+evolution, the lower bound, uniform estimates, the upper comparison and the
+intrinsic constant. The earlier direct bounds and alternative approaches remain
+whole in appendices with their original qualifications. This separates the
+proof route from the retained research history without deleting either.
+
+The design adds a quiet cover, a short guide, a multilevel contents page and
+illustrations list, running headers and consistent chapter headings. It keeps
+12pt body type and the original text width. Chapters do not force blank odd
+pages. The construction chapter is divided into its seven actual steps, and
+the long upper-bound argument has clearer internal headings. The old 44 section
+labels remain; S:G0 now identifies the construction chapter. Other existing
+labels remain unchanged while their displayed numbers and pages change.
+
+The book has 284 pages and the reader stays 24 pages. All 215 technical proofs retain
+their mathematics, checked by owner despite the reordering. The 27 included
+mathematical modules are unchanged. The reader's fixed-number references were
+replaced by label links;78 landmarks and 240 remote links resolve. Source-paper
+theorem/page citations retain their original numbering. Old scientific and
+visual receipts remain historical rather than being restamped on the new book.
+The organization guide and numbering crosswalk are under notes/; exact source
+pins are in notes/figures/VALIDATION.json.

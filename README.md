@@ -4,13 +4,13 @@
 
 **Start here:** [STATUS-DIGEST.md](STATUS-DIGEST.md) is a one-page gate board and constraint summary (derived; Progress.md remains the authority).
 
-**Current illustrated working draft:** [275-page technical companion](notes/notes_stratonovich_ham_second_moment.pdf) and [24-page reader](notes/notes_stratonovich_ham_second_moment_reader.pdf), both with matching TeX. The companion contains 12 TikZ figures and the reader contains seven. Both have received a contextual plain-English and source-typing pass. See the [figure guide and validation](notes/figures/README.md), [reading guide](notes/README-reader.md), [literature crosswalk](notes/LITERATURE-REVIEW.md), and [development history](AI-DEV-HISTORY.md).
+**Current book-style companion:** [284-page book PDF](notes/notes_stratonovich_ham_second_moment.pdf), with 11 chapters, four appendices, a proof guide, contents and illustrations list. The [24-page reader](notes/notes_stratonovich_ham_second_moment_reader.pdf) remains the short entry point. See [the book guide](notes/BOOK-GUIDE.md), [source/PDF validation](notes/figures/VALIDATION.json), [reading guide](notes/README-reader.md) and [development history](AI-DEV-HISTORY.md).
 
-The reader grew from 20 to 24 pages and the companion from 269 to 275 pages;
-no smaller typography was used to conceal the added explanations. The 215
-technical proofs retain their mathematical expressions and labels. **The
-mathematical draft remains unadopted:** illustration/style review does not
-promote the existing whole MAIN or final-review status.
+All mathematical content and labels are retained; supplementary routes are now
+in appendices. The companion has12 TikZ figures and the reader has seven.
+Their external references have been refreshed for the new numbering.
+The 215 technical proofs retain their mathematics. **The mathematical draft
+remains unadopted:** book layout does not promote any independent review.
 
 The second moment of the Stratonovich hyperbolic Anderson model with noise
 fractional in time: an upper bound at the correct scale

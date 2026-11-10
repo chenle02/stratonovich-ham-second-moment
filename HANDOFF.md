@@ -1,4 +1,4 @@
-Last updated: 2026-11-09 (Codex; illustrations and Le-style revision)
+Last updated: 2026-11-09 (Codex; book-format companion)
 
 # HANDOFF
 
@@ -27,10 +27,10 @@ conversation but not implemented in the project contract or a private companion.
    It is derived; Progress.md wins any conflict.
 1. Read AGENTS.md, PROJECT-GOAL.md, the latest Progress.md entries and
    AI-DEV-HISTORY.md. Inspect both local and <HUB> working trees before edits.
-2. Current artifacts are the 269-page technical notes and20-page reader under
-   notes/. Exact hashes, clean builds,69 label checks and 209 PDF-link checks are
-   in reviews/2026-11-09-literature-review/VALIDATION.json. Read
-   notes/LITERATURE-REVIEW.md for the source/result and contribution crosswalk.
+2. Current artifacts are the 284-page book-style companion and 24-page reader
+   under notes/. Exact source/PDF pins,78 label checks and 240 remote links are
+   in notes/figures/VALIDATION.json. Read notes/BOOK-GUIDE.md and the numbering
+   map for the new chapters and appendices.
 3. The previous 263-page baseline remains recoverable at 11e009a, at the same
    notes paths. Existing review receipts retain their original version bindings.
 4. Lean: 87 accepted local facts in 26 groups. L0 CLOSED: the private companion
@@ -51,7 +51,7 @@ continuation, first reconcile the agreed recovery direction with the written
 contract explicitly. Existing whole MAIN v5 is PASS_WITH_NOTES/MEDIUM and
 unaccepted under the recorded HIGH gate; no required source repair was identified.
 Historical main visual acceptance is230/267 on the old candidate,37 remaining;
-no page credit is automatically transferred to the current275-page edition. Final cold review,
+no page credit is automatically transferred to the current 284-page edition. Final cold review,
 adoption and whole-project clearance remain open. The visual MEDIUM policy
 proposal is not adopted. Source delivery is not proof understanding.
 
@@ -67,7 +67,7 @@ No claim of research completion, gate waiver, confidence upgrade, candidate
 adoption, public release, correspondence, HPC or companion creation follows from
 this merge. No unchanged-source confidence retry or automatic review restart.
 
-## What the previous sessions produced
+## What the previous sessions produced (historical snapshots)
 
 bf9c65b preserved the working 267-page draft, frozen bibliography, build evidence,
 a 290-line human AI development narrative and a 1,068-commit pre-checkpoint
@@ -96,3 +96,13 @@ sources remain unchanged up to documented source typography. The 215 technical
 proofs are preserved; no new scientific acceptance is implied. Detailed private
 review/iteration records are under private/audit/2026-11-09-style-diagrams/.
 Agent22 should receive the committed source anchor update; do not edit its repo.
+
+Latest presentation revision: the long technical companion is a 284-page book
+with 11 chapters and 4 appendices. The reader stays 24 pages/article format. The
+model/benchmark goals open the book, the main proof follows its dependencies,
+and auxiliary/direct comparisons remain whole in appendices. Labels are stable;
+S:G0 now labels Chapter2, so the corresponding references say Chapter. Use
+notes/BOOK-GUIDE.md and notes/book-numbering-map.json. The original mathematics
+of all 215 proof bodies is retained, and the new reader map/240 links pass.
+The 27 included mathematical modules were not edited. Existing review receipts
+are not transferred; Agent22 should refresh the committed source anchor.

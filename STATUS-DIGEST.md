@@ -10,7 +10,7 @@ Update it whenever a gate below changes state.
 ## One-line state
 
 Research **incomplete.** The focused literature revision is complete locally.
-The book-style284-page working draft
+The book-style 284-page working draft
 claims both goals; **no whole-paper independent acceptance exists yet.**
 The blocker is the review gates, not a known mathematical gap.
 
@@ -27,7 +27,7 @@ proofs / 241 declarations, clean build (0 err / 0 undef / 0 overfull).
   constant; there is no identification with Chen's L; Chen's normalization
   is not corrected.
 - The 263-page baseline is at `11e009a`. The 24-page reader
-  (`notes/README-reader.md`) is paired with the284-page book.
+  (`notes/README-reader.md`) is paired with the 284-page book.
 
 ## Gate board
 
@@ -36,7 +36,7 @@ proofs / 241 declarations, clean build (0 err / 0 undef / 0 overfull).
 | 1 | Complete written proofs | Written; not accepted | main TeX |
 | 2 | DeepSeek V4 Pro whole MAIN (HIGH) | **MEDIUM — unaccepted.** PASS_WITH_NOTES, 226 PASS / 37 PWN of 263 rows, no fatal/major/required repair | `reviews/2026-11-09-full-main-v5-kernel-medium-unaccepted/` |
 | 3 | Kimi-K3 whole review (HIGH) | **Open — Kimi available again** (Le lifted the hold 2026-11-10); whole review not yet run | Progress 2026-11-10 |
-| 4 | Visual / rendered PDF | **Historical 230/267 accepted on the old PDF; 37 old pages open. No automatic visual-credit transfer to the current284-page edition** | `reviews/2026-11-09-final-local-glyph-correspondence/` |
+| 4 | Visual / rendered PDF | **Historical 230/267 accepted on the old PDF; 37 old pages open. No automatic visual-credit transfer to the current 284-page edition** | `reviews/2026-11-09-final-local-glyph-correspondence/` |
 | 5 | Visual MEDIUM policy | **PROPOSED, NOT ADOPTED — Le's decision** | `reviews/2026-11-09-visual-policy-proposal/POLICY-PROPOSED.md` |
 | 6 | Calibrations (α₀→0, p=1, Jensen, Skorohod comparison) | Open as a final gate | AGENTS.md §Calibrations |
 | 7 | Fresh independent cold read | Not started | — |
@@ -74,9 +74,9 @@ All 215 technical proofs and checked statements are unchanged modulo whitespace.
 This bounded editorial task does not complete the original research contract
 or promote any independent mathematical/visual review.
 
-## Current illustration and style revision
+## Earlier illustration and style revision (669ccc9)
 
-The current pair is275 technical pages with 12 figures and24 reader pages with
+That edition has 275 technical pages with 12 figures and 24 reader pages with
 7 figures. All 71 external technical labels and233 PDF links resolve. Prose
 was reviewed throughout the main source,27 modules and reader; private jargon
 was replaced, source typing checked, and both builds are clean. The 215 technical
@@ -88,9 +88,9 @@ cf979d6 source remains historical until its owner updates the anchor manifest.
 
 ## Book-format checkpoint
 
-The long companion is 284 pages with 11numbered chapters and 4 appendices; the
+The long companion is 284 pages with 11 numbered chapters and 4 appendices; the
 reader remains 24 pages. Both keep the 12/7 diagrams. Stable labels are retained,
-but the reader map now has 78 labels and240 valid remote links. Existing
+but the reader map now has 78 labels and 240 valid remote links. Existing
 section-number literals were repaired; source-paper pinpoints are unchanged.
 All 215 proofs retain their mathematics. This layout change does not clear a
 scientific gate. Use notes/BOOK-GUIDE.md, notes/book-numbering-map.json and

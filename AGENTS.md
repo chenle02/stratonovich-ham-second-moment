@@ -16,7 +16,8 @@ fractional in time (X. Chen, author version, `chen:author2026:time-dependency`):
    derivation to match them or require closing his energy gap to finish.
 
 The precise statements, notation and known results are in
-`notes/notes_stratonovich_ham_second_moment.tex` (§§1–3). Read it first.
+`notes/notes_stratonovich_ham_second_moment.tex` (book format; begin with
+the front guide and Chapters 1–3). Read it first.
 **Progress.md is the workflow authority** (rounds, gates, decisions).
 `PROJECT-GOAL.md` is the completion contract.
 
@@ -91,7 +92,7 @@ All.bib -> ../refdb/All.bib (read-only), extra.bib (local additions)
 - Record every failed route in Progress.md with the reason (a no-go is a
   result).
 - For a time-block approach, carry displacement AND velocity. Scalar
-  solution-value moments do not multiply across blocks. Section11 controls
+  solution-value moments do not multiply across blocks. The section labelled `S:static-phase` controls
   both terms of the static first-variance phase coefficient;its second-order
   mean term cannot be dropped,and arbitrary-phase covariance monotonicity
   is unavailable. This is a full-spatial-class tool,not an all-order bound.
