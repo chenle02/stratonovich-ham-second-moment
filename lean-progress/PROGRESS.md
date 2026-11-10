@@ -122,10 +122,15 @@
   (companion eef3e72). All five coverage same-assumptions rows now cite
   statements with the manuscript's hypotheses. lean-pkg verified-private at
   b876362 (117 claims). Closing record:
-  reviews/2026-11-10-lean-homog-model-review/ADJUDICATION.md. Le decides
-  whether this closes the wave L1 correspondence gate.
-- **Next:** Le's decision on the wave L1 gate; human statement read (A1)
-  still recommended; next wave candidates on the board (W1: B3, B9, B23,
+  reviews/2026-11-10-lean-homog-model-review/ADJUDICATION.md.
+- **WAVE L1 CORRESPONDENCE GATE: CLOSED (Le, 2026-11-10)** at companion
+  b876362 over manuscript ba01d98: Le accepted the three-review sequence.
+  Scope: AI statement-to-manuscript correspondence of the 29 whole-result
+  ledger rows (incl. the H:homog model); not human verification; the
+  Rayleigh lemma's "In particular" application stays outside Lean; any
+  later change to these rows or cited labels needs a successor review.
+- **Next:** human statement read (A1) still recommended; further W1 work
+  held pending Le's answer on community entry points (#16); next wave candidates on the board (W1: B3, B9, B23,
   B24, C26; W2/W3 need foundations);
   wave L1 (G0 pair-partition counts) when opened.
 
