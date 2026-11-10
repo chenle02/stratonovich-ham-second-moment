@@ -56,3 +56,13 @@ received separate semantic review and their integrated pages were inspected.
 The previous validation is retained in history/dbbd9c8-validation.json; current
 hashes, counts and link checks are in VALIDATION.json. This does not establish
 whole-PDF or scientific acceptance.
+
+## Chapter-opening and history edition
+
+The current pair has 301 technical pages and 28 reader pages, with 20 and ten
+figures respectively. The shared `walsh-guitar.tex` uses the credited artwork
+in `media/guitar-sandstorm/`. The 81-label map and all 248 remote PDF links
+resolve. Current pins are in VALIDATION.json; the preceding validation is
+preserved in `private/audit/2026-11-10-chapter-guides/prior-validation.json`
+from the repository root. Chapter-opening inspection covers fifteen opening
+pages; it does not certify the whole document visually or mathematically.

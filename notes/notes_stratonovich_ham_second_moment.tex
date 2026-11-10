@@ -26,6 +26,7 @@
 % === Core packages ===
 \usepackage{amsmath, amsfonts, amssymb, amsthm}
 \usepackage{enumerate}
+\usepackage{graphicx}
 \usepackage{mathrsfs}
 \usepackage{xcolor}
 \usepackage[colorlinks=true]{hyperref}
@@ -119,7 +120,11 @@ The reading edition states the main results and explains the route through
 this volume. The chapters below supply the proofs in their dependency order.
 The appendices retain the direct estimates, finite-order calculations and
 alternative approaches, together with their original hypotheses and limitations.
-They are useful comparisons; they are not all inputs to the main argument.
+They are useful comparisons; they are not all inputs to the main argument. Each
+chapter opens with its motivating question, the earlier definitions or results
+needed to enter it, and an outline of the argument. Readers may use these
+openings to choose a starting point and follow the linked prerequisites when
+needed.
 
 \begin{center}
 \begin{tabular}{@{}p{0.20\textwidth}p{0.71\textwidth}@{}}
@@ -148,6 +153,10 @@ their captions identify the precise results and the limits of the drawings.
 \mainmatter
 
 \chapter{Setting and strategy}\label{S:book-setting}
+
+\input{notes/chapter-guides/01-setting}
+
+\input{notes/history_wave_equations}
 
 \section{Model and standing assumptions}\label{S:model}
 
@@ -304,12 +313,11 @@ static coefficient theorem enters the interval-field upper bound.
 
 \section{What is known}\label{S:known}
 
-Pinpoints to Xia Chen's time-dependent Stratonovich paper refer to the current
-author version~\cite{chen:author2026:time-dependency} (64 pages, ``Submitted to
-the Annals of Applied Probability'', SHA-256 \texttt{5f7385ca\dots}); see
-\path{sources/SOURCE-MANIFEST.md}. arXiv:2510.01412v1
-\cite{chen:25:time-dependency} differs in Theorem~1.2 and must not be used as
-the authority for it.
+Pinpoints to Xia Chen's time-dependent Stratonovich paper refer to his
+public author version~\cite{chen:author2026:time-dependency}.
+Theorem~1.2 differs from the statement in arXiv:2510.01412v1
+\cite{chen:25:time-dependency}; we therefore cite that theorem from the
+author version.
 
 \subsection{Stratonovich expansion and moments}
 
@@ -452,44 +460,101 @@ chain.
 \end{proof}
 
 
-\section{Targets}\label{S:targets}
+\section{Main results}\label{S:targets}
 
-\begin{goal}[Upper bound at the correct scale]\label{G:upper}
-  Under Hypothesis~\ref{H:homog}, prove $\limsup_{t\to\infty}t^{-\kappa}\log\E
-  u^2(t,x) < \infty$, ideally with an explicit constant.
-\end{goal}
+We state the two main results for the model in Section~\ref{S:model}. Throughout
+this section, Hypothesis~\ref{H:homog} holds, $u$ is the canonical Stratonovich
+expansion~\eqref{E:expansion} with initial data $(1,0)$, and $\kappa$ is the
+exponent in~\eqref{E:kappa}. The spectral measure $\mu$ has the normalization
+specified in Hypothesis~\ref{H:homog}. Write $B_1$ for the unit ball in
+$\R^d$, and put
+\begin{equation}\label{E:intro-spectral-mass}
+  R_\alpha=\frac{\alpha\pi\mu(B_1)}{2\sin(\pi\alpha/2)}.
+\end{equation}
 
-Theorem~\ref{T:full-upper} proves this upper bound for every admissible
-dimension and homogeneous covariance, independently of the later variational
-identification. Earlier explicit bounds for $0 < \alpha \le 1$ remain available.
-
-\begin{goal}[Sharp second-moment constant]\label{G:sharp}
-  Under Hypothesis~\ref{H:homog}, derive a finite constant
-  $C_2(\Gamma,\alpha_0)$ and prove, for every fixed $x \in \R^d$,
+\begin{theorem}[Upper bound at the correct scale]\label{T:intro-upper}
+  \label{G:upper}
+  For every admissible dimension $d \in \{1,2,3\}$, there is a finite constant
+  $C = C(\alpha,\alpha_0)$ such that, for all $T \ge 1$ and $x \in \R^d$,
+  \begin{equation}\label{E:intro-upper-bound}
+    \E u^2(T,x)
+    \le e(T+2)^d
+    \exp\left\{C R_\alpha^{1/(3-\alpha)}T^\kappa\right\}.
+  \end{equation}
+  In particular, for every fixed $x \in \R^d$,
   \[
-    \lim_{t\to\infty}t^{-\kappa}\log\E u^2(t,x)
-    = C_2(\Gamma,\alpha_0).
+    \limsup_{T\to\infty}T^{-\kappa}\log\E u^2(T,x)<\infty.
   \]
-  A variational characterization must specify its full domain, covariance
-  amplitude, kinetic coefficient and Gaussian action. Derive further evaluations
-  and bounds from this formula. For zero covariance, $u(t,x) = 1$ and
-  $C_2(0,\alpha_0) = 0$.
-\end{goal}
+\end{theorem}
 
-Theorem~\ref{T:intrinsic-second-moment} proves this limit and specifies its
-complete positive-control formula. Theorem~\ref{T:intrinsic-occupation-ceiling},
+The proof is given in Theorem~\ref{T:full-upper}. It establishes finiteness
+independently of the variational identification below. The more explicit bounds
+for $0 < \alpha \le 1$ are retained in Section~\ref{S:d1-upper}.
+
+To state the limiting constant, let $I = (0,1)$ and define
+\begin{equation}\label{E:intro-control-class}
+  \mathcal{C}_{\mathrm{pos}}
+  =\left\{\Psi\in C_c^\infty(I\times\R^d;\R):
+  \Psi\ge0,\ \Psi\ne0\right\}.
+\end{equation}
+This class includes controls that do not separate into a function of time and
+a function of space. For $\Psi \in \mathcal{C}_{\mathrm{pos}}$, its covariance
+mean and variance are
+\begin{align}
+  h_{\Psi,s}(x)
+  &=\int_I|s-t|^{-\alpha_0}
+  \int_{\R^d}\Psi(t,x-y)\Gamma(\ud y)\ud t,
+  \label{E:intro-control-mean}\\
+  v_\Psi
+  &=\int_{I\times\R^d}\Psi(s,x)h_{\Psi,s}(x)\ud x\ud s.
+  \label{E:intro-control-variance}
+\end{align}
+For $s \in I$, define the nonnegative Rayleigh value
+\begin{equation}\label{E:intro-control-rate}
+  \mathcal{R}_\Psi(s)
+  =\sup_{\substack{f\in H^1(\R^d;\R)\\\|f\|_2=1}}
+  \left\{\int_{\R^d}h_{\Psi,s}(x)f(x)^2\ud x
+  -\|\nabla f\|_2^2\right\}.
+\end{equation}
+Here $H^1(\R^d;\R)$ is the real Sobolev space of square-integrable functions
+with square-integrable first weak derivatives, and $\|\cdot\|_2$ denotes the
+spatial $L^2$ norm. The spatial
+covariance retains its original amplitude in these definitions.
+
+\begin{theorem}[Second-moment limit]\label{T:intro-second-moment}
+  \label{G:sharp}
+  For every fixed $x \in \R^d$,
+  \begin{equation}\label{E:intro-second-moment-limit}
+    \lim_{T\to\infty}T^{-\kappa}\log\E u^2(T,x)
+    =C_2(\Gamma,\alpha_0),
+  \end{equation}
+  where
+  \begin{equation}\label{E:intro-second-moment-constant}
+    C_2(\Gamma,\alpha_0)
+    =\sup_{\Psi\in\mathcal{C}_{\mathrm{pos}}}
+    \left\{2\int_I\sqrt{\mathcal{R}_\Psi(s)}\ud s
+    -\frac{v_\Psi}{2}\right\}.
+  \end{equation}
+  If $\Gamma \ne 0$, then $0 < C_2(\Gamma,\alpha_0) < \infty$.
+  If $\Gamma = 0$, then $u(T,x) = 1$ and $C_2(0,\alpha_0) = 0$.
+\end{theorem}
+
+The proof is given in Theorem~\ref{T:intrinsic-second-moment}. The variational
+formula uses the full class of nonnegative smooth compact controls. Its kinetic
+coefficient is one, and its Gaussian cost is one half of the original variance.
+It does not identify an auxiliary variational value with the first-moment limit
+or with the constants in Chen's conjecture.
+Theorem~\ref{T:intrinsic-occupation-ceiling},
 Corollary~\ref{C:intrinsic-spatial-bracket} and
-Theorem~\ref{T:white-moment-bounds} derive bounds from that value. The original
-proposed bounds with endpoints $2^{(4-\alpha)/(3-\alpha)}L_*$ and
-$2^{(4-\alpha)/(3-\alpha)}L^*$ remain comparisons with
-Conjecture~\ref{Conj:allp}. Matching those endpoints or closing the source's
-variational gap is not required to identify the intrinsic value. No correction
-of the source's normalization or equality of its energy domains is adopted.
+Theorem~\ref{T:white-moment-bounds} give bounds for this same constant. In
+particular, the explicit spatial white-noise energy yields moment bounds,
+not a closed-form evaluation of the full supremum.
 
 \chapter{Construction and two-chain estimates}\label{S:G0}
 
-This section records a diagnosis of the proposed route, not a proof of
-Goal~\ref{G:upper}. Put $X_n(t,x) = S_n(g_n(\cdot,t,x))$, with $X_0 = 1$, and
+\input{notes/chapter-guides/02-G0}
+
+Put $X_n(t,x) = S_n(g_n(\cdot,t,x))$, with $X_0 = 1$, and
 \[
   \beta=4-\alpha-\alpha_0>2,\qquad
   P_k=\#\Pi_k=\frac{(2k)!}{2^k k!}.
@@ -1845,9 +1910,9 @@ already occurs in the diagonal estimate and Minkowski's inequality.
 \begin{remark}[Limitation of the uniform pairing estimate]\label{R:G0-verdict}
   Since $\beta > 2$, we have $1 < \rho < 2$. Thus, Proposition~\ref{P:envelope}
   improves the crude quadratic time scale under homogeneity. It does not itself
-  settle Goal~\ref{G:upper}; Section~\ref{S:interval-upper} uses a different
+  prove Theorem~\ref{T:intro-upper}; Section~\ref{S:interval-upper} uses a different
   argument. Theorem~3.1 used through its uniform pairing estimate is \emph{not
-  viable for Goal~\ref{G:upper}}: even with exact homogeneous norm scaling, the
+  sufficient to prove Theorem~\ref{T:intro-upper}}: even with exact homogeneous norm scaling, the
   resulting majorant has exponent $\rho > \kappa$. The order coefficient has
   factorial denominator $(k!)^{3-\alpha-\alpha_0}$, whereas the desired scale
   requires $(k!)^{3-\alpha}$; the missing factor is $(k!)^{\alpha_0}$, up to
@@ -1873,6 +1938,8 @@ already occurs in the diagonal estimate and Minkowski's inequality.
 \end{remark}
 
 \chapter{An independent upper bound}\label{S:book-independent-upper}
+
+\input{notes/chapter-guides/03-independent-upper}
 
 \section{A static phase estimate at first variance order}
 \label{S:static-phase}
@@ -2098,7 +2165,7 @@ monotonicity of the full phase energy in covariance is assumed. The estimates
 control both terms at this one variance order. They do not control higher
 Gaussian contractions, products of independent time blocks, overlapping noise
 levels or the temporal regularization limit. Thus, they do not yet establish
-Goal~\ref{G:upper}.
+Theorem~\ref{T:intro-upper}.
 
 \section{All static orders with arbitrary initial phase}
 \label{S:static-all-orders}
@@ -3593,7 +3660,7 @@ tuple. This definition introduces no kernel symmetrization.
     \exp\{C R_\alpha^{1/(3-\alpha)}
     T^{(4-\alpha-\alpha_0)/(3-\alpha)}\},\qquad T\ge1.
   \end{equation}
-  In particular, this establishes the unchanged Goal~\ref{G:upper}.
+  In particular, this proves Theorem~\ref{T:intro-upper}.
 \end{theorem}
 
 \begin{proof}
@@ -3815,12 +3882,14 @@ tuple. This definition introduces no kernel symmetrization.
   constant; any numeric $L_*$ calibration retains the source-normalization
   qualification stated earlier. The Skorohod exponent is compared, not used to
   identify constants: both Gaussian creation and annihilation were retained
-  here. The intrinsic identification in Goal~\ref{G:sharp} is proved later in
+  here. The intrinsic identification in Theorem~\ref{T:intro-second-moment} is proved in
   Theorem~\ref{T:intrinsic-second-moment}, using a separate argument.
 \end{remark}
 
 
 \chapter{Covariance estimates and Gaussian approximation}\label{S:book-gaussian-foundations}
+
+\input{notes/chapter-guides/04-gaussian-foundations}
 
 \input{notes/integrated_covariance_foundation}
 \input{notes/integrated_wave_variance}
@@ -3828,10 +3897,14 @@ tuple. This definition introduces no kernel symmetrization.
 
 \chapter{The original noise and operator paths}\label{S:book-operator-paths}
 
+\input{notes/chapter-guides/05-operator-paths}
+
 \input{notes/integrated_actual_operator_driver}
 \input{notes/integrated_source_convergence}
 
 \chapter{Fixed masks and wave evolution}\label{S:book-wave-evolution}
+
+\input{notes/chapter-guides/06-wave-evolution}
 
 \input{notes/integrated_masked_moments}
 \input{notes/integrated_constant_phase_young}
@@ -3839,11 +3912,15 @@ tuple. This definition introduces no kernel symmetrization.
 
 \chapter{Scaling and the point lower bound}\label{S:book-lower}
 
+\input{notes/chapter-guides/07-lower}
+
 \input{notes/integrated_exact_scaling}
 \input{notes/integrated_raw_block_lower}
 \input{notes/integrated_unmasked_variational}
 
 \chapter{Spatial controls and Gaussian means}\label{S:book-means}
+
+\input{notes/chapter-guides/08-means}
 
 \input{notes/integrated_temporal_equilibrium}
 \input{notes/integrated_spatial_occupation}
@@ -3852,11 +3929,15 @@ tuple. This definition introduces no kernel symmetrization.
 
 \chapter{Bounds as the spatial radius grows}\label{S:book-growing-radius}
 
+\input{notes/chapter-guides/09-growing-radius}
+
 \input{notes/integrated_uniform_mean}
 \input{notes/integrated_radius_anchor}
 \input{notes/integrated_signed_static}
 
 \chapter{Gaussian estimates for the point upper bound}\label{S:book-point-upper}
+
+\input{notes/chapter-guides/10-point-upper}
 
 \input{notes/integrated_symplectic_phase}
 \input{notes/integrated_gaussian_tubes}
@@ -3865,6 +3946,8 @@ tuple. This definition introduces no kernel symmetrization.
 \input{notes/integrated_signed_moment_upper}
 
 \chapter{The constant and its consequences}\label{S:book-constant}
+
+\input{notes/chapter-guides/11-constant}
 
 \input{notes/integrated_positive_gram}
 \input{notes/integrated_intrinsic_constant}
@@ -3917,6 +4000,8 @@ tuple. This definition introduces no kernel symmetrization.
 \appendix
 
 \chapter{Finite-order calculations}\label{S:appendix-finite-order}
+
+\input{notes/chapter-guides/12-finite-order}
 
 \section{Finite-order checks in one space dimension}\label{S:G1}
 
@@ -4266,6 +4351,8 @@ integrals is asserted.
 
 
 \chapter{Direct upper bounds and static interpolation}\label{S:appendix-direct}
+
+\input{notes/chapter-guides/13-direct}
 
 \section{Upper bounds for spatial exponents at most one}\label{S:d1-upper}
 
@@ -5446,6 +5533,8 @@ hypotheses for the Riesz covariances below are thus satisfied.
 
 
 \chapter{Covariance comparisons in higher dimensions}\label{S:appendix-covariance}
+
+\input{notes/chapter-guides/14-covariance}
 
 \section{General homogeneous covariance in dimension two}
 \label{S:planar-holder}
@@ -6851,6 +6940,8 @@ special-case constant.
 
 \chapter{Static comparisons and the clock obstruction}\label{S:appendix-static-clock}
 
+\input{notes/chapter-guides/15-static-clock}
+
 \section{A static lower comparison and a near-static mean gap}
 \label{S:near-static-lower}
 
@@ -7439,7 +7530,7 @@ weight.
 All transforms below are at fixed total order. We begin with the original
 admissible case \(d=\alpha=1\), \(\Gamma=\delta_0\), \(0<a<1\), and
 \(G_s(y)=\frac12\mathbf1_{\{|y|<s\}}\). This is a falsification case for an
-intended general representation, not a restriction of Goal~\ref{G:sharp}.
+intended general representation, not a restriction of Theorem~\ref{T:intro-second-moment}.
 
 \begin{lemma}[White-space low-order Laplace transforms]
   \label{L:white-clock-laplace}

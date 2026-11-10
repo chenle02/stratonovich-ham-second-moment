@@ -2,8 +2,8 @@
 
 The long document is now a book-style technical companion. The short reader
 remains an article and the entry point. Both retain their existing filenames.
-The book has **293 pages, 11 chapters and four appendices**; the reader has
-**27 pages**. The full pair therefore contains 320 pages.
+The book has **301 pages, 11 chapters and four appendices**; the reader has
+**28 pages**. The full pair therefore contains 329 pages.
 
 The main proof runs continuously through the numbered chapters. The appendices
 retain finite-order calculations, direct bounds with additional hypotheses,
@@ -12,21 +12,21 @@ mathematical record was deleted to make the structure appear shorter.
 
 | Chapter | Topic | Printed pages |
 |---|---|---|
-| 1 | Setting and strategy | 1–12 |
-| 2 | Construction and two-chain estimates | 13–35 |
-| 3 | An independent upper bound | 36–66 |
-| 4 | Covariance estimates and Gaussian approximation | 67–90 |
-| 5 | The original noise and operator paths | 91–108 |
-| 6 | Fixed masks and wave evolution | 109–128 |
-| 7 | Scaling and the point lower bound | 129–145 |
-| 8 | Spatial controls and Gaussian means | 146–161 |
-| 9 | Bounds as the spatial radius grows | 162–176 |
-| 10 | Gaussian estimates for the point upper bound | 177–206 |
-| 11 | The constant and its consequences | 207–224 |
-| A | Finite-order calculations | 225–230 |
-| B | Direct upper bounds and static interpolation | 231–248 |
-| C | Covariance comparisons in higher dimensions | 249–270 |
-| D | Static comparisons and the clock obstruction | 271–283 |
+| 1 | Setting and strategy | 1–16 |
+| 2 | Construction and two-chain estimates | 17–39 |
+| 3 | An independent upper bound | 40–70 |
+| 4 | Covariance estimates and Gaussian approximation | 71–94 |
+| 5 | The original noise and operator paths | 95–113 |
+| 6 | Fixed masks and wave evolution | 114–133 |
+| 7 | Scaling and the point lower bound | 134–150 |
+| 8 | Spatial controls and Gaussian means | 151–166 |
+| 9 | Bounds as the spatial radius grows | 167–181 |
+| 10 | Gaussian estimates for the point upper bound | 182–211 |
+| 11 | The constant and its consequences | 212–229 |
+| A | Finite-order calculations | 230–236 |
+| B | Direct upper bounds and static interpolation | 237–255 |
+| C | Covariance comparisons in higher dimensions | 256–277 |
+| D | Static comparisons and the clock obstruction | 278–291 |
 
 The front matter has an overview, a guide to the argument, a multilevel contents
 page and a short list of illustrations. The cover has its own PDF page label;
@@ -55,9 +55,9 @@ upgrade of the independent review status. The previous 275-page article-style
 companion is preserved at commit 669ccc9.
 
 The reader's literal section-number references were replaced by links to stable
-labels and its external map refreshed: 80 mapped labels and 246 remote PDF links
+labels and its external map refreshed: 81 mapped labels and 248 remote PDF links
 resolve. Its figures remain fixed beside their explanations. The book contains
-19 illustrations and the reader contains nine.
+20 illustrations and the reader contains ten.
 
 Build from the repository root, using the recorded frozen bibliography if the
 external refdb is unavailable:
@@ -77,3 +77,18 @@ Five additional diagrams explain endpoint elimination, degree allocation,
 interval-end charges, chronological regions and subset optimization; two
 book literature maps and one compact reader map distinguish model and result
 classes. These changes preserve all 215 existing proof bodies.
+
+## Entering a chapter directly
+
+All eleven chapters and four appendices now open with a motivating question,
+linked prerequisites and a short outline. These openings explain what each
+chapter establishes and where its conclusions stop. They distinguish fixed
+spatial cutoffs from growing radii, signed upper controls from nonnegative
+lower controls, and auxiliary comparisons from the main proof. The front
+guide explains how to use these entry points. The forty-year SWE introductions
+and the shared guitar illustration appear in both editions.
+
+The chapter openings change exposition and pagination only. The 215 proof
+bodies are unchanged up to whitespace against the preceding committed edition.
+All fifteen opening pages were inspected, and the reader's external label map
+was refreshed. This does not transfer earlier independent review acceptance.

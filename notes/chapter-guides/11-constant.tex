@@ -1,0 +1,17 @@
+The lower and upper bounds now concern the same point moment, but their
+variational domains differ. The lower bound uses nonnegative smooth controls;
+the upper bound permits signed controls in a completed covariance space.
+Identifying the limiting constant requires a proof that these two optimizations
+have the same value.
+
+Recall the lower value from Section~\ref{S:unmasked-variational} and the upper
+expression from Section~\ref{S:original-signed-score-upper}. We first solve a
+finite Hilbert-space optimization problem whose Gram matrix has nonnegative
+entries. The argument allows singular matrices and includes the zero control. We
+then apply this comparison to the physical means and remove the spatial cutoff.
+Theorem~\ref{T:intrinsic-second-moment} states the resulting limit. The
+remaining sections derive occupation and spatial-energy bounds for its constant.
+For one-dimensional spatial white noise, the spatial energy can be evaluated
+explicitly. This gives explicit moment bounds, but does not evaluate the full
+moment supremum or identify the auxiliary coefficient-one value with the actual
+first-moment constant.

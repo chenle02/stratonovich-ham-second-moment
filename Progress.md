@@ -18441,3 +18441,34 @@ on his UTK page, which the entry's url already cites. Agent #3 (manuscript
 owner) is asked to reword both; suggested wording was sent by amsg. Found while
 checking the release filter: "Submitted to the Annals" in our own PDF text had
 tripped a third-party-page marker, which is now dropped from the filter.
+
+## 2026-11-10: chapter motivations, reading outlines and supplied theory reference
+
+At Le's request, added motivation, linked prerequisites and a route through the
+argument to all eleven chapters and four appendices. The drafting subagent read
+module introductions/result headings and scoped hypotheses; root checked all
+openings and all fifteen rendered first pages. Strict Le-style checks covered
+the new openings, both historical introductions and shared guitar caption.
+The chapter-2 diagnosis-only preface was corrected without changing its results.
+The forty-year SWE narrative and public-only X. Chen citation wording are
+retained in this editorial delivery. The book is301 pages; reader 28 pages.
+All215proof bodies match3ec1ca7 up to whitespace;81technical labels and248
+remote links pass. Builds have0errors/undefined/overfull. Current exact pins
+are in notes/figures/VALIDATION.json; evidence is in
+private/audit/2026-11-10-chapter-guides/. No scientific gate is upgraded.
+
+The theoretical-retro references were only partly in the six repositories:
+Boue–Dupuis1998 had refdb only; Lyons1998 had refdb/Papis/PDF but lacked
+Forge/brain/wiki. Le supplied Boue–Dupuis's published19-page PDF. Exact source
+identity and local/<HUB> hashes were checked; source-attached request
+tk-20261110-104915-codex-stratonovich-theory-retro supersedes cancelled
+metadata-only request tk-20261110-104631-codex-stratonovich-theory-retro.
+Lyons completion request is tk-20261110-104632-codex-stratonovich-theory-retro.
+Both are queued, not completed. Exact identities and source fidelity caveats
+are in private/audit/2026-11-10-theory-references/COVERAGE.md.
+
+Le also corrected the introduction's obsolete goal presentation. Section 1.5
+now states the existing upper bound and exact second-moment limit as Theorems
+1.5.1 and 1.5.2, with self-contained definitions and links to their unchanged
+proofs in Theorems 3.3.8 and 11.2.6. Legacy labels remain aliases. This is a
+restatement of written claims, not a new proof or independent acceptance.

@@ -1,11 +1,11 @@
 # Reading edition with the current technical companion
 
-Read [the 27-page reader](notes_stratonovich_ham_second_moment_reader.pdf)
-with [the 293-page technical companion](notes_stratonovich_ham_second_moment.pdf).
+Read [the 28-page reader](notes_stratonovich_ham_second_moment_reader.pdf)
+with [the 301-page technical companion](notes_stratonovich_ham_second_moment.pdf).
 The reader introduces the model, proposed result and variational constant,
 explains how the main steps fit together, and links to the detailed proofs.
 It is a guided route through the work, not a standalone short proof.
-The combined record is 320 pages; no total-proof-length reduction is claimed.
+The combined record is 329 pages; no total-proof-length reduction is claimed.
 
 This November 9 revision matches the current **unadopted mathematical candidate**.
 It updates the literature and contribution discussion, mentions the three
@@ -29,7 +29,7 @@ technical aux, rebuild the reader, and recheck its external destinations.
 Every reader TeX edit travels with its cleanly rebuilt PDF.
 
 [Current validation](figures/README.md)
-records 78 matched labels, 240 valid external PDF links and clean builds.
+records 81 matched labels, 248 valid external PDF links and clean builds.
 The original November 5 V4 reader at commit 9895781 was paired with the old
 263-page companion. Its original source/PDF and validation remain in Git and
 [the historical review directory](../reviews/2026-11-05-reader-v4-paired-revision/).
@@ -39,10 +39,14 @@ figure sources. It uses fixed reader placement so a diagram follows the full
 statement or definition it explains. Both the figure sources/captions and all
 rendered diagram pages were reviewed. The complete figure set appears in the
 technical companion. See [the figure guide](figures/README.md). The earlier
-20-page reading editions remain historical; the current reader has 27 pages.
+20-page reading editions remain historical; the current reader has 28 pages.
 
 The technical companion is now a book with 11 chapters and 4 appendices. The
 reader remains in article format. Its technical references use the book's
 chapter/section numbering and printed pages, including explicit links to the
 appendices. See [the book guide](BOOK-GUIDE.md) and its numbering map. The
 earlier 275-page article-style companion remains in Git at 669ccc9.
+
+The companion now opens every chapter and appendix with motivation, linked
+prerequisites and an outline, so readers can enter at a topic of interest. Both
+editions begin with a short history from Walsh's lectures to moment asymptotics.

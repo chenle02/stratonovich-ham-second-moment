@@ -436,3 +436,28 @@ resolved it. The final book stays293pages and all246 reader links resolve.
 The mathematical claims and review states are unchanged. The session retro
 updated three existing Le-AI-Lab skills at3f9e25b for shared-index commits,
 careful Lean mappings and separate figure semantics/layout/design checks.
+
+## November 10: entering the book at any chapter
+
+Le requested a motivating introduction and outline at every chapter opening,
+so that a reader can start at a topic of interest. A subagent drafted all
+eleven chapter and four appendix openings; the manuscript owner checked their
+dependencies and scope, integrated them, and inspected all fifteen rendered
+opening pages. They distinguish fixed and expanding spatial cutoffs, signed
+and nonnegative controls, and auxiliary comparisons from the main proof. The
+forty-year historical narrative is integrated into both editions, and Chen's
+author-version citation now uses public bibliographic information without
+internal paths or hashes.
+
+The resulting book has301 pages and the reader 28. All215proof bodies remain
+unchanged up to whitespace, with81matched technical labels and248valid remote
+links. These editorial changes do not clear independent scientific review.
+The requested recurring conceptual reflection is available as theory-retro
+in the canonical lab commands; it separates useful synthesis from unverified
+novelty and does not launch new research automatically.
+
+Le also corrected the introduction's obsolete goal presentation. Section 1.5
+now states the existing upper bound and exact second-moment limit as Theorems
+1.5.1 and 1.5.2, with self-contained definitions and links to their unchanged
+proofs in Theorems 3.3.8 and 11.2.6. Legacy labels remain aliases. This is a
+restatement of written claims, not a new proof or independent acceptance.
