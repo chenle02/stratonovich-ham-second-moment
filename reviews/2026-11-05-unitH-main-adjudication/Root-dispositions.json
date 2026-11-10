@@ -1,0 +1,224 @@
+{
+  "kind": "ROOT_H_AUTHOR_PUBLIC_ADJUDICATION_NOT_NEW_PROOF_ACCEPTANCE",
+  "native_public_sha256": "9ce5ccf38c75510763d397f39d745c15758194708c6e7129c9870536f7ea7339",
+  "author_report_sha256": "7f8d517fc789c8fce8a8a00a09c669e3d9d164a11f68ce31087a22ee0caea492",
+  "Root_full_native_public_and_final_author_report_read": true,
+  "dispositions": [
+    {
+      "id": "R1",
+      "author_finding": {
+        "id": "R1",
+        "type": "REPORT_DECIMAL_ERROR",
+        "public_LF": [
+          156,
+          156
+        ],
+        "source_or_task_anchor": "PG216-229",
+        "disposition": "max 0.290706089803645..., not 0.302",
+        "source_repair_required": false
+      },
+      "Root_disposition": "UPHELD_AT_EXACT_REPORT_SOURCE_AND_SCOPE_BOUNDARY",
+      "Root_reason": "Source PG216\u2013229 claims no decimal maximum. Native0.302 is wrong; unique critical root r\u00b3\u2212r\u00b2\u22121=0 gives\u22480.290706. Exact rational bracket checked; no SPDE numerical constant claim."
+    },
+    {
+      "id": "R2",
+      "author_finding": {
+        "id": "R2",
+        "type": "REPORT_MISSING_NORMALIZATION",
+        "public_LF": [
+          138,
+          138
+        ],
+        "source_or_task_anchor": "PG200-214 and230-234",
+        "disposition": "numbers require ell=(1/2,1/2), b=0",
+        "source_repair_required": false
+      },
+      "Root_disposition": "UPHELD_AT_EXACT_REPORT_SOURCE_AND_SCOPE_BOUNDARY",
+      "Root_reason": "Two-label numeric values require ell_i1/2,b0, omitted by native. Source only gives matrices; entrywise optimized inequality is correct."
+    },
+    {
+      "id": "R3",
+      "author_finding": {
+        "id": "R3",
+        "type": "REPORT_REGULARITY_CAPTION_ERROR",
+        "public_LF": [
+          465,
+          465
+        ],
+        "source_or_task_anchor": "WE22-40",
+        "disposition": "f locally AC; not f_prime locally AC",
+        "source_repair_required": false
+      },
+      "Root_disposition": "UPHELD_AT_EXACT_REPORT_SOURCE_AND_SCOPE_BOUNDARY",
+      "Root_reason": "WE22\u201359 gives f locallyAC and rho=f\u00b2 derivativeL1, not fprimeAC. Unit e^-abs has jumping derivative. No source repair/H2 assumption."
+    },
+    {
+      "id": "R4",
+      "author_finding": {
+        "id": "R4",
+        "type": "REPORT_UNDEFINED_AUXILIARY_SYMBOL",
+        "public_LF": [
+          628,
+          628
+        ],
+        "source_or_task_anchor": "IC379-401",
+        "disposition": "A1 undefined; correct S1pos auxiliary",
+        "source_repair_required": false
+      },
+      "Root_disposition": "UPHELD_AT_EXACT_REPORT_SOURCE_AND_SCOPE_BOUNDARY",
+      "Root_reason": "UndefinedA1 is auxiliaryS1pos as source and report13, never actualp1/Chen."
+    },
+    {
+      "id": "Q1",
+      "author_finding": {
+        "id": "Q1",
+        "type": "NO_MANUSCRIPT_CORRECTION",
+        "public_LF": [
+          144,
+          163
+        ],
+        "source_or_task_anchor": "PG216-220",
+        "disposition": "source D(4) was already test value",
+        "source_repair_required": false
+      },
+      "Root_disposition": "UPHELD_AT_EXACT_REPORT_SOURCE_AND_SCOPE_BOUNDARY",
+      "Root_reason": "Source already says D4 is a test value, not infimum. Native clarification is not source discovery/repair."
+    },
+    {
+      "id": "Q2",
+      "author_finding": {
+        "id": "Q2",
+        "type": "WORDING_QUALIFICATION",
+        "public_LF": [
+          182,
+          182
+        ],
+        "source_or_task_anchor": "IC45-123",
+        "disposition": "no inverse covariance operator needed or defined",
+        "source_repair_required": false
+      },
+      "Root_disposition": "UPHELD_AT_EXACT_REPORT_SOURCE_AND_SCOPE_BOUNDARY",
+      "Root_reason": "Raw covariance identity/integral/absoluteFubini/completion, no inversecovariance defined/needed. Singular/zero branches remain."
+    },
+    {
+      "id": "Q3",
+      "author_finding": {
+        "id": "Q3",
+        "type": "WORDING_QUALIFICATION",
+        "public_LF": [
+          351,
+          356
+        ],
+        "source_or_task_anchor": "OC138-155",
+        "disposition": "H1 space preserved, H1 norm not invariant",
+        "source_repair_required": false
+      },
+      "Root_disposition": "UPHELD_AT_EXACT_REPORT_SOURCE_AND_SCOPE_BOUNDARY",
+      "Root_reason": "Dilation preserves H1 class, not H1 norm. Displayed kineticell\u00b2 is source-correct."
+    },
+    {
+      "id": "D1",
+      "author_finding": {
+        "id": "D1",
+        "type": "NATIVE_FULL_FORMULA_NOT_DISPLAYED",
+        "public_LF": [
+          300,
+          322
+        ],
+        "source_or_task_anchor": "IC379-401",
+        "disposition": "full positive-control formula referred to but not displayed",
+        "source_repair_required": false
+      },
+      "Root_disposition": "UPHELD_AT_EXACT_REPORT_SOURCE_AND_SCOPE_BOUNDARY",
+      "Root_reason": "IC379\u2013401 supplies full positive-control supremum/h/v/domain; public prints score labels despite fullformula caption. Preserve actual native depth, no source-proxy working."
+    },
+    {
+      "id": "D2",
+      "author_finding": {
+        "id": "D2",
+        "type": "NATIVE_REQUIRED_CONTROL_OMITTED",
+        "public_LF": [
+          144,
+          163
+        ],
+        "source_or_task_anchor": "task precision5/LF109,146",
+        "disposition": "three-label modulus control not performed",
+        "source_repair_required": false
+      },
+      "Root_disposition": "UPHELD_AT_EXACT_REPORT_SOURCE_AND_SCOPE_BOUNDARY",
+      "Root_reason": "Supplied3-label modulus countercontrol with actions1/2/1 notworked natively; finite/non-SPDE limitation remains."
+    },
+    {
+      "id": "D3",
+      "author_finding": {
+        "id": "D3",
+        "type": "NATIVE_CONSTANT_DISTINCTION_ABBREVIATED",
+        "public_LF": [
+          166,
+          184
+        ],
+        "source_or_task_anchor": "IC1-18/45-123",
+        "disposition": "generic temporal norm vs actual E Cmean not explicitly distinguished",
+        "source_repair_required": false
+      },
+      "Root_disposition": "UPHELD_AT_EXACT_REPORT_SOURCE_AND_SCOPE_BOUNDARY",
+      "Root_reason": "Generic temporal inclusion/mean ||Ct||sqrtK0 differs operatorCmean=M0||Ct||. Native omits explicit distinction, authors cannot fill native display."
+    },
+    {
+      "id": "D4",
+      "author_finding": {
+        "id": "D4",
+        "type": "NATIVE_JOIN_LIMITATION_PRESERVED",
+        "public_LF": [
+          538,
+          563
+        ],
+        "source_or_task_anchor": "IC404-428/UV321-375/SMU234-260",
+        "disposition": "actual upstream source-point/lower applications not all reconstructed",
+        "source_repair_required": false
+      },
+      "Root_disposition": "UPHELD_AT_EXACT_REPORT_SOURCE_AND_SCOPE_BOUNDARY",
+      "Root_reason": "Source\u2192fullF/Young/Bochner/UI\u2192point/tube/lower OWN applications remain genuine conditions, not missing-source; all28were supplied. No grade union."
+    },
+    {
+      "id": "D5",
+      "author_finding": {
+        "id": "D5",
+        "type": "PRIMARY_INTERFACE_SCOPE",
+        "public_LF": [
+          552,
+          563
+        ],
+        "source_or_task_anchor": "task precision16",
+        "disposition": "primary comparisons retained but detailed source application not newly reconstructed",
+        "source_repair_required": false
+      },
+      "Root_disposition": "UPHELD_AT_EXACT_REPORT_SOURCE_AND_SCOPE_BOUNDARY",
+      "Root_reason": "Primary comparison qualifications remain bounded, no new actualauthor64/v1/energy/pixel clearance. Named published proofs remain imports after precise application matching; no book campaign."
+    },
+    {
+      "id": "D6",
+      "author_finding": {
+        "id": "D6",
+        "type": "NATIVE_RECONSTRUCTION_LIMIT",
+        "public_LF": [
+          565,
+          597
+        ],
+        "source_or_task_anchor": "IC379-428 andUV251-375",
+        "disposition": "correct joint scaling stated, bijection/physical amplitude derivation not performed",
+        "source_repair_required": false
+      },
+      "Root_disposition": "UPHELD_AT_EXACT_REPORT_SOURCE_AND_SCOPE_BOUNDARY",
+      "Root_reason": "Jointthreshold formulas correct but requested bijection and physical amplitude derivations notdisplayed. Root handchecks c>0 scaling of labels/control/thresholds/action and c0direct; authorwork not extra native work."
+    }
+  ],
+  "native_confidence_scope_preserved": "HIGHfiniteGram/occupationwhite;MEDIUMintrinsic/bothconditionaljoins",
+  "original_collector_incomplete": false,
+  "no_source_gap_established_under_actual_exposed_contracts": true,
+  "source_PDF_oldacceptedgrades_changed": false,
+  "no_extra_native_working_by_author_availability": true,
+  "retry_supplement_model_or_scientific_acceptance_authorized": false,
+  "whole21424013_all_original_models_actualC2_final_gates_open": true,
+  "Root_schema_readback": "Generic Root verifier expected member.path; this author manifest uses member.file. Read stopped before H directory/write. Actual schema inspected and exact members verified; original author files/seals unchanged."
+}

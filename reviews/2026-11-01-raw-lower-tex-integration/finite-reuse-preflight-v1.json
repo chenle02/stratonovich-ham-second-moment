@@ -1,0 +1,56 @@
+{
+  "scope": "Read-only prior/current source and complete-type identity; not new compilation or application acceptance",
+  "bindings": [
+    {
+      "path": "lean-progress/local-checks/moving-cone-v1/StratonovichHAMAudit/MovingCone.lean",
+      "sha256": "5cb66155a2da41180bd3faa93bceccf5280f5a208a5827892352cb3da59eb737",
+      "unchanged_from_accepted_frozen": true
+    },
+    {
+      "path": "lean-progress/local-checks/moving-cone-v1/types-and-axioms.txt",
+      "sha256": "c69c5baf8e31705ee8c30c6a1fd3d44f359c8602fb64cbbd6591fa8b2864afe6",
+      "unchanged_from_accepted_frozen": true
+    },
+    {
+      "path": "lean-progress/local-checks/joint-tilt-v1/StratonovichHAMAudit/JointTilt.lean",
+      "sha256": "241a4d4884c94e38c51fc713bafe4b0f845902557217e624169e0794bb132ad0",
+      "unchanged_from_accepted_frozen": true
+    },
+    {
+      "path": "lean-progress/local-checks/joint-tilt-v1/types-and-axioms.txt",
+      "sha256": "4301c69795e51d8120694695fa0fb1fde575ccab5edf75a26887ace0ddc1749a",
+      "unchanged_from_accepted_frozen": true
+    },
+    {
+      "path": "lean-progress/local-checks/actual-event-v1/StratonovichHAMAudit/ActualEvent.lean",
+      "sha256": "f99c9e76e56ed47804a1774b598e03649a79b5f047d9c648675ff7d5ee73e4d1",
+      "unchanged_from_accepted_frozen": true
+    },
+    {
+      "path": "lean-progress/local-checks/actual-event-v1/types-and-axioms.txt",
+      "sha256": "6d5666b2311dc7cb380cc921bd8f0326792ba6ce8f301fbe7c71586dad13031d",
+      "unchanged_from_accepted_frozen": true
+    }
+  ],
+  "nine_existing_facts": [
+    "MovingCone.residual_budget",
+    "MovingCone.cone_conversion",
+    "MovingCone.terminal_margin",
+    "JointTilt.tilt_exponent",
+    "JointTilt.wrong_sign_error",
+    "JointTilt.wrong_cost_error",
+    "JointTilt.shifted_amplitude",
+    "ActualEvent.finite_error_accumulation",
+    "ActualEvent.moderate_penalty"
+  ],
+  "planned_guard_interfaces": [
+    "Residual: theta>=0,q<=1/8,0<=d<=theta,e<=theta/4",
+    "Cone: a>0,rho<1/2,x>=(1-rho)a,y<=theta*a/2",
+    "Terminal: j>0,16Ktheta<=j,e<=j/8,y>=3j/4-2Ktheta-e",
+    "Shift and moderate powers: delta>0; actual Jacobian covariance computed analytically first",
+    "Product: C>=1,e>=0,d(0)<=0, recurrence for ALL n by both finite sequences extended by identity"
+  ],
+  "analytic_boundary": "No Gaussian Borel law, spectral/cone hypotheses, source/canonical identity or continuum limit is kernel-certified by these scalar facts",
+  "new_compiler_runs": 0,
+  "new_facts": 0
+}

@@ -1,0 +1,73 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "medium",
+  "source_coverage": [
+    ".review/required-sources.json lines 1-42 (read plan only, no read credit)",
+    "MICRO-CONTRACT.md lines 1-14 (complete)",
+    "VectorProjection.statement.lean.txt lines 1-56 (complete)",
+    "chaos-basis.lean.txt lines 1-444 (complete)",
+    "gaussian-product.lean.txt lines 1-186 (complete)",
+    "hermite-products.lean.txt lines 1-388 (complete)",
+    "mathlib-closed-subspace-api.lean.txt lines 1-49 (complete; the excerpt itself ends mid-lemma at closure_toSubmodule_eq)",
+    "mathlib-projection-api.lean.txt lines 1-150 (complete)",
+    "mathlib-vector-Lp-api.lean.txt lines 1-194 (complete)",
+    "mathlib-vector-atom-api.lean.txt lines 1-30 (complete)",
+    "paper-finite-word.tex.txt lines 1-48 (complete)",
+    "paper-fixed-split.tex.txt lines 1-365 (complete)",
+    "source-bindings.json lines 1-62 (complete)",
+    "statement-type.stdout lines 1-7 (complete)"
+  ],
+  "checks": [
+    {
+      "claim": "VEC01: exact closed type, structural instances, arbitrary Mode and arbitrary complete Hilbert E; conclusion not assumed in any input/definition; no hidden finite-dimensional/vacuous restriction.",
+      "verdict": "PASS",
+      "reason": "VectorProjection.statement.lean.txt lines 43-46 and statement-type.stdout lines 1-3 quantify over an arbitrary Mode : Type u, an arbitrary E with [NormedAddCommGroup E] [InnerProductSpace \u211d E] [CompleteSpace E], an arbitrary predicate p, and an arbitrary finsupp f. The statement has no hypotheses. Its conclusion is one equation between starProjection(realize f) and realize(cut p f). The definitions (lines 17-40) are atom, a finite sum, a closed span, Finsupp.filter and a degree sum. None of them contains orthogonality, a projection identity or a basis fact. The HasOrthogonalProjection instance used by starProjection comes from mathlib-projection-api.lean.txt line 52 (ClosedSubmodule in a complete space). It needs CompleteSpace (Lp E 2 (noise Mode)), which follows from CompleteSpace E. That is a genuine structural instance, not a premise that makes the statement vacuous. Nothing restricts Mode or E to finite dimension or cardinality, and Mode may even be uncountable, because noise is Measure.infinitePi (gaussian-product.lean.txt line 35). I also checked by hand that the statement is true and non-trivial. realize(cut p f) lies in the span. The residual \u03a3_{\u03bd\u2209p} atom \u03bd (f \u03bd) is orthogonal to every generator atom \u03bc y with p \u03bc, because \u27e8atom \u03bd x, atom \u03bc y\u27e9 = \u03b4_{\u03bd\u03bc}\u27e8x,y\u27e9. That orthogonality passes to the closure, and eq_starProjection_of_mem_of_inner_eq_zero (projection-api lines 141-146) then gives the equality. So the target is provable from the cited APIs without density, and it is not assumed."
+    },
+    {
+      "claim": "VEC02: actual vector-valued probability L2 realization, canonical normalized scalar basis and AE representative boundary, toSpanSingleton/compLp and closed-span construction; no coefficient-space proxy mislabeled as actual L2.",
+      "verdict": "PASS",
+      "reason": "atom (line 17-18) is (toSpanSingleton \u211d x).compLp (hermiteNormalized \u03bd), so it is an element of Lp E 2 (noise Mode). The measure noise is the actual i.i.d. N(0,1) product (gaussian-product.lean.txt line 35). hermiteNormalized is (\u221a\u03b1!)\u207b\u00b9 \u2022 hermiteLp \u03b1 (chaos-basis.lean.txt line 391), with hermiteLp =\u1d50 Hm \u03b1 (line 359), and orthonormal_hermite and hermiteBasis are imported (lines 393-426). coeFn_compLp (vector-Lp-api lines 66-69) and toSpanSingleton_apply (atom-api line 17) give atom \u03bd x =\u1d50 \u03c9 \u21a6 e_\u03bd(\u03c9)\u2022x. This boundary is at the level of a.e. classes, not a chosen representative. realize is a Finsupp.sum of atoms (line 21-22), and cutoffSpace is Submodule.closure of the \u211d-span (closed-subspace-api lines 18-22 = topologicalClosure). No coefficient-space proxy is called L2. Additivity of atom in x (toSpanSingleton additive in x together with add_compLp, vector-Lp-api lines 97-101) and atom \u03bd 0 = 0 (toSpanSingleton_zero, compLp of the zero map) are available for the Finsupp sum manipulations."
+    },
+    {
+      "claim": "VEC03: arbitrary selected predicate projection target and literal per-color TOTAL-degree specialization, including zero degree/cutoff, multiple modes per color, infinitely many available indices but finite polynomial support, all/no selected modes.",
+      "verdict": "PASS",
+      "reason": "p is arbitrary. colorDegree \u03bd c = \u03a3_{ci \u2208 supp \u03bd, ci.1 = c} \u03bd ci (line 34-36), which is the total Hermite degree of color c summed over all modes of that color. colorLow N requires colorDegree \u03bd c \u2264 N c for every c (lines 38-40). This matches P = \u2297_i P_{N_i}, 'projects each color onto total Hermite degree at most N_i' (paper-finite-word.tex.txt lines 12-13; paper-fixed-split.tex.txt lines 7-8, with N_i = 2k_i). Edge cases: (i) N = 0 forces \u03bd = 0, because every mode has a color, so the target is the expectation map onto e_0\u2297E with cut giving atom 0 (f 0); (ii) Index may be infinite, and f still has finite support; (iii) p \u2261 False gives closure of span \u2205 = \u22a5, projection 0 and cut = 0, which is consistent; (iv) p \u2261 True gives the whole space by hermiteBasis density, projection id and cut = f, which is consistent; (v) Mode or Color empty is degenerate but consistent. The second Prop typechecks (statement-type.stdout lines 4-6)."
+    },
+    {
+      "claim": "VEC04: exact manuscript projection correspondence, complex-to-real restriction and equality of real/complex projections, including arbitrary coupled background/spatial-phase coefficient Hilbert space. State precisely whether any additional assumption is needed, and its actual source satisfaction, without using the desired equality as a premise.",
+      "verdict": "PASS",
+      "reason": "Manuscript side: the finite-word lemma uses independent standard real Gaussian coordinates g_ij, a complex Hilbert space \ud835\udcb3 and Gaussian polynomials with \ud835\udcb3 coefficients (paper-finite-word.tex.txt lines 2-5). Its proof uses normalized Hermite coordinates h_a (line 28), which are exactly hermiteNormalized. The fixed-split consumer applies that lemma to the cross colors only, with \ud835\udcb3 containing the bounded background Gaussian space and the spatial phase space (paper-fixed-split.tex.txt lines 221-226). So in this leaf, noise Mode is the cross-color coordinates and E is that coupled \ud835\udcb3. This is the paper's own factorization, not a surrogate, and covariance stays in e_ij and K_ij. Complex-to-real: give \ud835\udcb3 the real inner product Re\u27e8\u00b7,\u00b7\u27e9. It stays complete, and L\u00b2(\u03a9;\ud835\udcb3_\u211d) carries the real inner product Re\u222b\u27e8f,g\u27e9. The real closed span of {e_\u03bd x : p \u03bd, x \u2208 \ud835\udcb3} is \u2102-stable because x ranges over i\u00b7x too, so it is a closed complex subspace. A vector v is real-orthogonal to it iff Re\u27e8v,w\u27e9 = 0 and Re\u27e8v,iw\u27e9 = 0 for all w, iff \u27e8v,w\u27e9 = 0. The real and complex orthogonal complements therefore coincide, and so do the two projections. This argument does not use the target equality. The only extra assumption is that \ud835\udcb3 is complete, i.e. a Hilbert space. The paper says 'complex Hilbert space' (finite-word line 4). In the fixed-split use, the band-limited, finite-mode, Hermite-truncated spaces are finite-dimensional (fixed-split lines 48-50), hence complete for every \u03c1-norm. The coefficient-deletion formula does not depend on which \u03c1-inner product is placed on E. The microcontract's realification paragraph (MICRO-CONTRACT.md line 11) states this argument correctly. Not covered here: the formal Mathlib bridge (instance coherence of the \u211d-structure induced on Lp of a complex E), and the identification L\u00b2(\u03a9_cross\u00d7\u03a9_bg;Y) \u2245 L\u00b2(\u03a9_cross;L\u00b2(\u03a9_bg;Y)) that lets the background sit inside E. Both are standard and are consumer-side bridges, not defects in this leaf (see findings.minor)."
+    },
+    {
+      "claim": "VEC05: actual-regime satisfiability beyond zero/vacuum: two distinct Gaussian modes and independent nonzero coefficient vectors; complete infinite-dimensional spatial Hilbert spaces. Check nondegenerate norm claims from the actual scalar Gaussian orthonormal family; they are not claimed already kernel-proved in the proposal.",
+      "verdict": "PASS",
+      "reason": "Witness: Mode = Fin 2, \u03bd1 = single 0 1, \u03bd2 = single 1 1, E = EuclideanSpace \u211d (Fin 2), x1 = e1, x2 = e2, f = single \u03bd1 x1 + single \u03bd2 x2, p = (\u00b7 = \u03bd1). Then the target says starProjection(realize f) = atom \u03bd1 x1. Using orthonormal_hermite (chaos-basis.lean.txt line 393) and the a.e. formula, \u2016atom \u03bd x\u2016\u00b2 = \u222b|e_\u03bd|\u00b2\u2016x\u2016\u00b2 = \u2016x\u2016\u00b2 and \u27e8atom \u03bd x, atom \u03bc y\u27e9 = \u03b4_{\u03bd\u03bc}\u27e8x,y\u27e9. So the projected and the deleted parts both have norm 1, which is a nondegenerate instance. Linear independence of x1 and x2 is not needed, since orthogonality comes from distinct modes. The type admits infinite-dimensional complete E such as \u2113\u00b2 or a spatial L\u00b2, and infinite Index. MICRO-CONTRACT.md line 11 correctly says these norm facts are not yet proved in the file."
+    },
+    {
+      "claim": "VEC06: value and exact boundary: actual vector-Hilbert projection identification, not scalar normalization again; no claim of coordinate insertion implementation, word induction/application, propagator, Bochner/cutoff limit, analytic operator bounds, SPDE or final project acceptance.",
+      "verdict": "PASS",
+      "reason": "The target identifies the Mathlib starProjection on vector-valued Gaussian L\u00b2 with Hermite coefficient deletion. That is new content beyond the imported scalar basis. The consumer needs it because B_i = P S_b(...) S_b P is estimated in L\u00b2(\u03a9;X_\u03c1) norms (fixed-split lines 11, 47-52, 198-215), so P must be an orthogonal projection there and not merely an algebraic filter. MICRO-CONTRACT.md line 13 explicitly excludes J_i insertion, word induction, the full selected-word equality, Bochner words, cutoff removal and analytic/SPDE claims. It keeps the old word facts provisional and claims no gate. source-bindings.json records kind PROPOSED_TYPECHECKED_NOT_PROVED and new_public_theorems 0."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "VectorProjection.statement.lean.txt lines 43-53: the first #check fixes Mode : Type u, while the second has Mode = Color \u00d7 Index : Type (max w u). The second is a literal instance of the first only once the first is stated as a universe-polymorphic theorem, or when w \u2264 u. MICRO-CONTRACT.md line 3 calls it a 'literal specialization'; the eventual theorem should be stated universe-polymorphically.",
+      "MICRO-CONTRACT.md line 7 / second Prop: embedding modes with differing m_i into a common Color \u00d7 Index adds extra Gaussian coordinates that the paper does not have (paper-finite-word.tex.txt line 2, j \u2264 m_i). The polynomial-level formula still agrees, since unused modes carry exponent 0 and colorDegree is unchanged. However, the ambient L\u00b2 is strictly larger than the paper's. The paper's exact space is obtained from the FIRST Prop with Mode = \u03a3 i, Fin m_i and the per-color predicate. The consumer should cite that form, or note the isometric pullback.",
+      "VEC04 bridges outside this leaf: (a) the Mathlib-level statement that the \u211d-inner-product structure on Lp of a complex E (via the complex-to-real instance) agrees with the L\u00b2 structure built from E's \u211d-inner product; (b) the Fubini/tensor identification L\u00b2(\u03a9_cross\u00d7\u03a9_bg;Y) \u2245 L\u00b2(\u03a9_cross;L\u00b2(\u03a9_bg;Y)), which places the background Gaussian factor inside E (paper-fixed-split.tex.txt lines 221-223) and must intertwine the cross-color cutoff. Neither is in the packet. Both are standard and consistent with the paper's own factorization, but they must be supplied when the leaf is applied.",
+      "MICRO-CONTRACT.md line 11: 'independent vectors in R2' is stronger than needed. Orthogonality of the atoms comes from distinct Gaussian modes, not from the coefficient vectors.",
+      "MICRO-CONTRACT.md line 13 contains opaque governance tokens ('Existing81localfacts23seams', 'L0PROPOSED', 'decision4'). They cannot be checked from the packet and have no bearing on statement fidelity.",
+      "Polynomial-only scope: the finite-word lemma also asserts the identity for Bochner integrals of words (paper-finite-word.tex.txt lines 23-24). This leaf covers only finite realize f. Extending it is immediate by continuity and linearity of starProjection, but it is explicitly out of scope and not claimed."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "Statement-fidelity review only. No Lean proof exists. Truth of the target was checked by a hand argument from the cited APIs (membership of the filtered part, orthogonality of distinct-mode atoms, uniqueness of the projection), not by a kernel check.",
+    "Typechecking evidence is the supplied statement-type.stdout and source-bindings.json hashes. I did not rerun Lean or verify the hashes.",
+    "The Mathlib excerpts are partial files (for example, the closed-subspace excerpt ends mid-lemma). Instance resolution for HasOrthogonalProjection, CompleteSpace of Lp, Finsupp.filter decidability and the complex-to-real inner-product instance is inferred from the excerpts and the successful typecheck, not inspected in full.",
+    "The paper excerpts are two lemmas only. Lemma interval-contractions (the representation W_i = \u03a3 g_ij e_ij), the definitions of the phase spaces X_\u03c1 and their completeness, and the precise definition of P_{N_i} on the background colors were not supplied. My conclusion that \ud835\udcb3 is complete relies on the 'complex Hilbert space' wording and on the finite-dimensional band and truncation description in fixed-split lines 48-50.",
+    "This is an AI review, not human verification or a novelty audit. It certifies no project-level gate."
+  ]
+}

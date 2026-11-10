@@ -1,0 +1,185 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "notes/integrated_actual_operator_driver.tex: lines 1-597, complete",
+    "notes/actual-operator-driver.md: lines 1-565, complete",
+    "notes/integrated_covariance_foundation.tex: lines 1-444, complete",
+    "notes/integrated_wave_variance.tex: lines 1-549, complete",
+    "notes/integrated_compact_gaussian.tex: lines 1-639, complete",
+    "reviews/2026-10-30-actual-operator-driver/scientific-adjudication-v1.md: lines 1-43, complete",
+    "reviews/2026-11-01-covariance-tex-integration/adjudication-v3.md: lines 1-47, complete",
+    "reviews/2026-11-01-wave-variance-tex-integration/adjudication-v1.md: lines 1-55, complete",
+    "reviews/2026-11-01-compact-gaussian-tex-integration/adjudication-v2.md: lines 1-60, complete",
+    "reviews/2026-11-01-actual-driver-tex-integration/model-context-v1.tex.txt: lines 1-107, complete",
+    "reviews/2026-11-01-actual-driver-tex-integration/target-v1.md: lines 1-54, complete",
+    "reviews/2026-11-01-actual-driver-tex-integration/target-freeze-v1.json: lines 1-12, complete",
+    "reviews/2026-11-01-actual-driver-tex-integration/build-v2.json: lines 1-53, complete",
+    "reviews/2026-11-01-actual-driver-tex-integration/worker-honesty-v2.md: lines 1-40, complete",
+    "reviews/2026-11-01-actual-driver-tex-integration/crosswalk-v1.md: lines 1-29, complete",
+    "reviews/2026-11-01-actual-driver-tex-integration/prompt-v2.md: lines 1-89, complete",
+    "reviews/2026-11-01-actual-driver-tex-integration/rendered-section-v2.txt: lines 1-442, complete",
+    "reviews/2026-11-01-actual-driver-tex-integration/report-failed-v1.json: lines 1-187, complete",
+    "reviews/2026-11-01-actual-driver-tex-integration/receipt-failed-v1.json: lines 1-235, complete",
+    "reviews/2026-11-01-actual-driver-tex-integration/adjudication-failed-v1.md: lines 1-32, complete",
+    "reviews/2026-11-01-actual-driver-tex-integration/transcription-controls-v2.json: lines 1-26, complete",
+    "reviews/2026-11-01-actual-driver-tex-integration/page-v2-133.png: whole image viewed",
+    "reviews/2026-11-01-actual-driver-tex-integration/page-v2-134.png: whole image viewed",
+    "reviews/2026-11-01-actual-driver-tex-integration/page-v2-135.png: whole image viewed",
+    "reviews/2026-11-01-actual-driver-tex-integration/page-v2-136.png: whole image viewed",
+    "reviews/2026-11-01-actual-driver-tex-integration/page-v2-137.png: whole image viewed",
+    "reviews/2026-11-01-actual-driver-tex-integration/page-v2-138.png: whole image viewed",
+    "reviews/2026-11-01-actual-driver-tex-integration/page-v2-139.png: whole image viewed",
+    "reviews/2026-11-01-actual-driver-tex-integration/page-v2-140.png: whole image viewed",
+    "reviews/2026-11-01-actual-driver-tex-integration/page-v2-141.png: whole image viewed",
+    "reviews/2026-11-01-actual-driver-tex-integration/required-sources-v2.json: lines 1-119, complete (not in the frozen read plan; read for context)",
+    ".review/required-sources.json: lines 1-119, complete (read plan, no read credit)"
+  ],
+  "checks": [
+    {
+      "claim": "The full model, zero case, real quotient H_W and exact parameter windows are retained (tex lines 4-25).",
+      "verdict": "PASS",
+      "reason": "Hypothesis 1.1 is retained without narrowing, including d=1,2,3, the d=1 white case and the subcritical range. The gamma window is nonempty because alpha<2. Both beta endpoints exceed 1/2 because a<1 and alpha+a<2, and the windows match (17.1) and (17.8). For Gamma=0, H_W={0}, the basis is empty and every form, operator and bound is zero, and C,c>0 can still be chosen."
+    },
+    {
+      "claim": "The compact Radon/Schur bound (19.5) and countable smooth density hold without injectivity (lines 66-80).",
+      "verdict": "PASS",
+      "reason": "For fixed t,u the spatial pairing is at most |K| Gamma(K-K) ||F(t)||_inf ||G(u)||_inf, since only y in K-K contributes. The temporal row integral is at most 2L^(1-a)/(1-a). Rational steps followed by mollification are uniformly dense with slightly enlarged positive-time support, and (19.5) turns this into noise-norm density in the null quotient."
+    },
+    {
+      "claim": "REPAIRED: the exact squared tensor norm follows from the physical covariance and is homogeneous under tau->c tau (line 91, page 134).",
+      "verdict": "PASS",
+      "reason": "Direct expansion gives E W(tau tensor q)^2 = int int tau(t)tau(u)|t-u|^(-a) dt du * int Gamma(dy) int q(x)q(x-y)dx = Q_sp ||tau||_a^2. Under tau->c tau both sides scale by c^2. Source line 91, rendered-section-v2.txt line 64 and page 134 all show the squared H_W norm, and held md line 107 agrees. The v1 defect is removed."
+    },
+    {
+      "claim": "Q_sp is positive and finite, and signed temporal strict positivity via the Volterra/lambda identity gives infinitude (lines 82-111).",
+      "verdict": "PASS",
+      "reason": "For y in B_L and x in B_(L+1), both q factors are at least 1, so Q_sp>=|B_(L+1)|Gamma(B_L)>0. Finiteness follows from compact support. I recomputed int_(-inf)^min(t,s) 2 lambda e^(-lambda(t-r)) e^(-lambda(s-r)) dr = e^(-lambda|t-s|) and the Laplace identity. Tonelli holds because the absolute form equals the finite Riesz form. Zero norm gives E_lambda=0 for some lambda, then v=0 by continuity, and v'=lambda v-tau gives tau=0. The map tau -> tau tensor q is therefore injective on an infinite-dimensional space."
+    },
+    {
+      "claim": "Gram-Schmidt gives compact smooth representatives, and independence comes from orthonormality, not disjoint time supports (lines 113-119).",
+      "verdict": "PASS",
+      "reason": "Finite combinations of tests are tests, zero residuals are discarded only in the null quotient, and density gives completeness. E g_j g_k=delta_jk plus joint Gaussianity from the linearity of W factor the characteristic functions. No time-support argument, H_W-valued white vector or negative-time noise appears."
+    },
+    {
+      "claim": "The covariance coefficient (19.6)-(19.7) has the mask after K/Gamma, uses Gamma once, and has smoothness, literal real/complex identity and representative identity on t>=0 (lines 123-165).",
+      "verdict": "PASS",
+      "reason": "(19.6) has zeta_R outside and one Gamma. Deterministic zero extension and local bounded v and compact y ranges justify moving all derivatives onto f_j under dominated integration. The covariance with x'=x-y gives (19.7) for positive-time F. Wave tests pass to the limit through the Prop 17.3 approximations, using the unmasked coefficient's boundedness on the mask support, and W_C is complex linear without a conjugate. A null difference has zero covariance with every zeta_R F, so masked coefficients agree on t>0 and at 0 by continuity. No quotient multiplier is introduced, so there is no conflict with Prop 16.5."
+    },
+    {
+      "claim": "CLARIFIED: gain (19.9), strong continuity only, all-real Sobolev multipliers and the Lipschitz primitive hold, with E_(r+1)-valued continuity for each E_r input (lines 170-205).",
+      "verdict": "PASS",
+      "reason": "Normalized off-diagonal entries are <xi>|sin(t|xi|)|/|xi|<=C_T and |xi||sin(t|xi|)|/<xi><=1 at every r. B(H(t)) maps E_r to E_(r+1) since the second entry H u lies in H^r. S(t)z is E_r continuous, multiplication is norm continuous in t, and S(-t) is strongly continuous on E_(r+1). The integrand is therefore E_(r+1)-valued continuous and uniformly bounded, giving the Bochner bound and the Lipschitz norm primitive. Norm continuity of S is not used. The v2 wording fixes the earlier note."
+    },
+    {
+      "claim": "The E_s dual and adjoint gain are correct (lines 207-211).",
+      "verdict": "PASS",
+      "reason": "The pairing identifies the dual of H^r x H^(r-1) with H^(2s-r) x H^(2s-r-1)=E_(2s-r), isometrically via Bessel weights. The adjoint therefore maps E_(2s-r-1) to E_(2s-r). Setting 2s-r-1=s-gamma gives output E_(s+1-gamma), contained in E since gamma<1. A itself maps E_(s-gamma) to E_(s-gamma+1), also contained in E."
+    },
+    {
+      "claim": "Finite propagation covers both entries, with support-compatible density, cutoff slack and BOTH localization identities (19.10) (lines 213-228).",
+      "verdict": "PASS",
+      "reason": "I rederived the energy derivative: it equals the boundary integral of v d_n u-(v^2+|grad u|^2)/2, which is at most 0. Velocity and gradient vanish in the cone, and time integration gives displacement zero. (1-chi)z_n converges to (1-chi)z in E_r, and these approximants vanish on B_(2R+T+1). Displacement therefore vanishes on B_(2R+1) throughout [0,T], which contains supp H, and the product is exactly zero and passes to the limit. Output lies in closed B_(2R+T), where chi=1 on a neighbourhood, for both entries. Thus D_chi A=A=A D_chi at every r."
+    },
+    {
+      "claim": "The same-W row covariance (19.11) holds with the true Sobolev adjoint and no masked-raw-Hilbert multiplier (lines 230-236).",
+      "verdict": "PASS",
+      "reason": "I rechecked (17.15): S(-t)(0,f)=(-sin(t|D|)f/|D|,cos(t|D|)f), and <a,Lambda w1>+<b,Lambda^(-1) w2> gives <f,G_w>. b=H_(j,R) has common compact spatial support and bounded derivatives on [0,T]. Time integration plus (19.7) with F_(z,w) gives (19.11). The mask acts only through test zeta_R F and the coefficient, never as an operator on H_W classes."
+    },
+    {
+      "claim": "BOTH finite-family variances (19.13) are derived separately from orthogonal first-chaos rows, without j-dependent gain sums (lines 277-300).",
+      "verdict": "PASS",
+      "reason": "Rows are the projections onto orthonormal g_1..g_N. The adjoint sum uses Parseval, <X e_k,w>=<e_k,X^* w> and (17.21). The direct sum uses (17.22). Matching through y=J_0 z gives sum ||a_j y||^2=<V_in y,y> and sum ||a_j^* y||^2=<V_out y,y>. ||z||_(E_(s-gamma))=||D_gamma J_0 z|| was checked. C_T is the Prop 17.5 constant, and density uses only continuity of the finitely many bounded A_j."
+    },
+    {
+      "claim": "First-chaos membership, Parseval/Tonelli, both column expansions and the full lower-input extension (19.15) hold (lines 302-318).",
+      "verdict": "PASS",
+      "reason": "m and n coordinates are literal real raw forms in W(H_W), by Prop 17.6 and the admission in Prop 17.3. Their coefficients against the complete g_j are <A_j z,e_k> and <e_k,A_j^* w>. Tail L2(Omega;E) norms equal sum_(j>N) ||A_j z||^2. The rough-input triangle argument uses the uniform finite bound, the Schwartz expansion and continuity of m,n."
+    },
+    {
+      "claim": "Riesz limits, strong tails, two compact envelopes (19.14), correct adjoint order and real/complex extension hold (lines 320-338).",
+      "verdict": "PASS",
+      "reason": "Monotone bounded forms give V_inf<=b_I D_gamma^2. T^2<=||T||T gives strong tails. Weak limits give V_out,inf=P V P^* and V_in,inf=P^* V P, so T_out<=b_I P D^2 P^*=b_I B_out and T_in<=b_I P^* D^2 P=b_I B_in, exactly Prop 18.7, with no self-adjointness of P_chi. Real even multipliers make the a_j, D_gamma and J_0 real, so complexification preserves order, norms and multiplicities."
+    },
+    {
+      "claim": "Lemma 19.6 passes from weak to norm convergence by a finite spectral Q and quadratic CS, then to trace convergence by eigenvalue domination (lines 342-367).",
+      "verdict": "PASS",
+      "reason": "<Tx,x>=||T^(1/2)(Qx+(1-Q)x)||^2 gives the 2+2 bound, and domination by B on (1-Q) gives 2 epsilon. A finite matrix converges in norm under weak convergence. Lemma 18.8 gives lambda_j(T_N)<=lambda_j(B), and dominated summation gives the trace limit. No operator-power order is used."
+    },
+    {
+      "claim": "Lemma 19.7 retains both true variance powers with the correct constant, using finite compression, compact norm convergence and two Fatou steps (lines 369-395).",
+      "verdict": "PASS",
+      "reason": "The p-th power of (18.3) gives (q-1)^(q/2) times the average, as printed. The compression difference is positive, and order plus max-min bound each trace power separately. Compact norm convergence, singular-value Lipschitz continuity and the two Fatou steps follow the proof of Cor 18.10. Even q makes q/2 an integer."
+    },
+    {
+      "claim": "Every imported hypothesis holds at the actual family, and the Cauchy property is uniform in M>N through vanishing tail traces (lines 412-429).",
+      "verdict": "PASS",
+      "reason": "Prop 18.9 and Cor 18.10 apply with C=b_I, chi fixed, K_out=K_chi, both localizations, both variances, real independent g_j and even q with q gamma>d. sqrt(b_I)=sqrt(C_T) h^(1-a/2) B_alpha^(1/2) matches (19.18). Block variances are at most T_(.,N), which are compact, so max-min bounds their traces. Envelopes lie in S_(q/2) by Prop 18.7. Line 429 states the positive fact that the estimate uses vanishing tail traces, consistent with the held source. A common envelope is not used."
+    },
+    {
+      "claim": "The interval limit has measurable separable span, original Omega, all finite B(E) moments, compact values, Gaussian limits, literal raw rows, even admissible Schatten moments only, and long-interval additivity (lines 431-458).",
+      "verdict": "PASS",
+      "reason": "The subsequence construction is elementary and valid, and limits agree across indices. A norm limit of compact operators is compact. Singular-value Fatou gives (19.18) only at admissible even q and short I. Functionals are L2 limits of centered Gaussians. Row limits coincide in L2 because the raw forms lie in the closed first chaos and the basis is complete. Endpoint indicators have zero raw norm by (19.5). Forms and coefficients are additive. No long-h bound or smaller Schatten claim is made."
+    },
+    {
+      "claim": "The path increments and dyadic argument are correct: eta, both q0 thresholds, Schatten monotonicity, uniform C sqrt(q), maxima without independence, coarse levels and the deterministic C^eta bound (lines 473-517).",
+      "verdict": "PASS",
+      "reason": "Normalization gives ||K||_(S_q)<=||K||_(S_q0). Prop 17.5's h^(2 beta) version with Cor 18.10 gives (19.19) with sqrt(q-1)<=sqrt(q) and a q-free constant. The maximum bound is 2^(n/q), and the ratio is at most 2^(-(beta-eta-1/q0))<1 uniformly in q>=q0. Coarse levels are finitely many, with T-dependent constants. I rederived the chaining from floor-grid approximants: the increment is at most 2 sum_(m>=n) D_m, which is at most 2*2^(-n eta) S, and 2^(-n)<2 delta/T. The supremum term comes from F(0)=0, and Lipschitz finite paths come from (19.9) at r=s."
+    },
+    {
+      "claim": "REPAIRED: the max_k grid inequality is literally correct on source and page 140, and fixed-grid Cauchy, interpolation (19.21), probability Holder and the q>=max(p,q0) choice hold (lines 519-537).",
+      "verdict": "PASS",
+      "reason": "Line 522 reads ||F||_inf<=max_k ||F(t_k)||+C(mesh)^eta ||F||_(C^eta). Page 140 and rendered-section-v2.txt line 379 show max with subscript k and no stray characters, and a read-only search finds no C0 control character or 'm on' fragment in the source. For continuous F the inequality is true with C=1. Sending N,M to infinity and then the mesh to zero gives sup-norm L^q Cauchy. min(A,B delta^eta)<=A^(1-theta/eta)(B delta^eta)^(theta/eta) proves the interpolation, and the supremum term is immediate. Holder has exponents 1/(1-theta/eta) and eta/theta. Lyapunov completes the argument for each p."
+    },
+    {
+      "claim": "The countable deterministic path span handles nonseparability, with compact values for ALL times on one path event and no smaller Schatten or C^theta S_p assertion (lines 539-552, 593-597).",
+      "verdict": "PASS",
+      "reason": "Countably many Lipschitz paths give a separable C^theta closed span. One a.s. C^theta-convergent subsequence converges uniformly in operator norm, and finite paths are compact-valued for all t by Prop 18.9 and finite additivity. This gives a single path event. Limits for different p agree in probability. Lines 53-54 and 594 explicitly deny Schatten-valued paths."
+    },
+    {
+      "claim": "Gaussian path, complexified rows and basis indistinguishability hold through countable dense phases and rational times (lines 558-577).",
+      "verdict": "PASS",
+      "reason": "L2 limits of finite-dimensional Gaussian functionals are Gaussian on the closed span. The construction uses only representatives, orthonormality and completeness, and its constants depend on chi, C_(T,beta), K_chi, eta and q0, none of which depends on the basis. A countable null set, bounded operators, phase density and path continuity give indistinguishability with no uncountable raw event."
+    },
+    {
+      "claim": "The sqrt(p) and factorial/square-exponential arguments, with all zero cases, are correct (lines 579-589).",
+      "verdict": "PASS",
+      "reason": "The smallest even q>=max(p,q0) satisfies q<=p+q0+2<=(q0+3)p for p>=1, giving C1=C sqrt(q0+3). The m-th term is c^m C1^(2m)(2m)^m/m!, which is at most (2ecC1^2)^m using m!>=(m/e)^m. C1=0 is covered. Tonelli applies to the positive series. No Fernique theorem is invoked."
+    },
+    {
+      "claim": "All parent applications and clarified domains are unchanged in scope: I subset [0,T], positive-time F, Section 16-18 labels and adjudicated scopes.",
+      "verdict": "PASS",
+      "reason": "Lemma 16.3, Prop 17.3, Prop 17.5, Prop 17.6, (17.13), (17.15), (17.21), (17.22), Prop 18.3, Prop 18.7, Lemma 18.8, Prop 18.9 and Cor 18.10 were each compared with their parent statements and hypotheses. The domain clarifications add no theorem strength. They match the held md and the accepted 93d71e4 adjudication notes. transcription-controls-v2.json was treated only as a diagnostic: its homogeneity arithmetic is consistent but proves nothing about the driver."
+    },
+    {
+      "claim": "Rendered labels, cross-references, powers, adjoints, tails and all nine proof ends correspond to source.",
+      "verdict": "PASS",
+      "reason": "Equations (19.1)-(19.21) match label order, and external numbers match shared counters by my count: (17.13), (17.15), (17.21), (17.22), 16.3, 17.3, 17.5, 18.3, 18.7, 18.8, 18.9 and 18.10. All powers and adjoints in the images and rendered text agree with source, including a_j a_j^*, a_j^* a_j, P V P^*, P^* V P, h^(1-a/2), (q-1)^(q/2), 2^(n/q), and 1-theta/eta. Nine proof blocks each end with the correct 'This proves' sentence, with lines 120, 164, 236, 339, 366, 394, 458, 552 and 590. Pages 133-141 show no clipping or overlap."
+    },
+    {
+      "claim": "Scope boundaries are preserved: local fixed R,T first driver only.",
+      "verdict": "PASS",
+      "reason": "The closing paragraph and the statement deny a uniform-R path norm and C^theta S_q paths, and leave source convergence, Young flow, canonical data and solution moments separate. No Skorohod, actual-p1, sharp-constant or Chen-agreement claim appears. No statement stronger than accepted 93d71e4 plus its adjudicated clarifications was found. Only the fixed-interval constant C_T is uniform in R, and ||K_chi|| retains R,T dependence."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "OPTIONAL. Lines 186-189 state (19.11) for general I subset [0,T], while (17.13) defines ell_R on short closed intervals. Likewise (19.3) uses the open interval (0,t). Both are justified by the endpoint nullity and long-interval completion at lines 452-455 and the statement at lines 43-44, which also apply to the short open case. Non-blocking; worker-honesty-v2.md lines 30-31 acknowledge this.",
+      "OPTIONAL. Lines 479-481: the h^(2 beta) version of (19.13) is not displayed. It follows by rerunning the Lemma 19.5 proof with the replacement allowed in the last sentence of Prop 17.5, which is valid and basis-free. A one-line display would help a cold reader.",
+      "OPTIONAL. Lines 550-551: passing (19.20) to the C^theta bound silently uses ||F||_(C^theta)<=C_(T,theta,eta) ||F||_(C^eta). This is elementary and appears explicitly in held md line 514.",
+      "OPTIONAL. Lines 284 and 292-295: the real-valuedness of ell_R on real pairs and the source of the real Schwartz basis of E are implicit. They come from Prop 17.6 and wave adjudication notes 1-2. An explicit citation would help a cold reader.",
+      "OPTIONAL. Lemma 19.7 does not state that its Hilbert space is separable, and 'short interval' in Lemma 19.8 relies on the 0<h<=1 convention at line 248. Both are clear from the application.",
+      "OPTIONAL. Local overloads are unambiguous in context: C_T at line 195 versus the uniform C_T at line 252, q as a spatial bump versus a Schatten index, L in (19.5) versus the mass radius at line 82, and v as a time variable versus velocity."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "Author-only execution evidence was not independently run: file hashes, target freeze, the latexmk build, 0 errors/undefined/overfull, page count, the 84 unchanged old proof bodies, changed-block indexes, the pre-format scan and the JavaScript escape reproduction. No script, Git, Lean or numeric execution was performed. The only source scans were read-only pattern searches on the target, which found no C0 control characters other than newlines and confirmed the literal repaired lines.",
+    "Parent modules were read in full and every application to the actual family was checked, with key constants and identities recomputed. Their accepted internal proofs were reused under their adjudicated scope rather than fully re-audited, and no Lean kernel internals were rerun.",
+    "The main file notes/notes_stratonovich_ham_second_moment.tex and the PDF are not in the packet. Only model-context-v1.tex.txt, rendered-section-v2.txt and the nine page images represent them. External number correspondence was checked by counting shared counters and equation order in the supplied modules and rendered text. Correspondence with the wider paper is outside this review.",
+    "This AI review is not human verification or a novelty audit. It gives no whole-paper, cold-read, publication, companion, source-correction, source-convergence, Young-flow, canonical-solution or moment-asymptotic clearance."
+  ]
+}

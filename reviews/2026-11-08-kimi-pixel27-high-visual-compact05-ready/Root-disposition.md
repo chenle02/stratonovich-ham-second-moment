@@ -1,0 +1,1 @@
+Root read complete pixel27 HIGH report:102–105/all16views/no repairs. Crop seams and fine-script resolution only. Union1–105=105/267,420views;162pages remain. Actual deltaI122853/O4351/context127204. Compact05 READY135396input/+311296=446692 using same source-inspected8192increment. Actual compaction completion required before106–109. No mathematical or full-goal acceptance.

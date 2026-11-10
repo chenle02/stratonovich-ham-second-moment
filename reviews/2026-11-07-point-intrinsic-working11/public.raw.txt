@@ -1,0 +1,183 @@
+## GENUINE MATHEMATICAL WORK11 — integrated reconstruction of `PROOF170–213` and the 13 same-`u` joins
+
+This is mathematical working, not a grade/confidence action. The global verdict remains unchanged and unaccepted; no automatic call is issued.
+
+---
+
+### 0. Source-binding correction honored
+
+I did **not** use `REQUIRED/F051.txt` as the proof of `OWN051`. I reconstructed `T:full-upper` from the actual authoritative body in `F001` (proof `051`), together with its written parents `044–050`, `006`, `049`, `050`, and the external `(2.23)–(2.24)` qualification. All noncircularity checks below are made against that real theorem source.
+
+---
+
+### 1. `PROOF170–177` — actual first-chaos Wiener support, Cameron image, measurable norm, closed tubes, Rayleigh transfer
+
+**Scale.** `F022` fixes `Ch = E[X W(h)] = √δ M_δ h` on the original raw `H_I`; there is **no** auxiliary `J` in the tube geometry and **no** blockwise Cameron cost. The only Gaussian action is `‖Φ‖²_H_I/2`.
+
+**`P:tube-wiener-realization` (`170`).**
+- Countable norming coordinates generate the Borel sets; finite conditional expectations deliver
+  `X_j = Σ_{l≤j} W(e_l) Ce_l → X` in `L²(B)`.
+- `ker C = H_seen^⊥`, so the genuine first-chaos Cameron space is
+  `H_CM = C(H_seen)`, `‖Ch‖_CM = ‖P_seen h‖_H`,
+  with unused directions removed by orthogonal projection, not by an inverse covariance.
+- Support `E₀ = ``overline{C(H)}`` ` is shown full by head/tail Gaussian independence plus the finite-head-positivity argument, including the singular-Gram case.
+- Measurable norm: for `V_j = span{P_seen e_l : l≤j}`, any finite orthonormal family in `V_j^⊥` is orthogonal to `e_1,…,e_j`; the strong tail estimate gives
+  `P(‖Σ_k W(h_k) C h_k‖ ≥ ε) ≤ ε`,
+  which is exactly the measurable-norm tail condition. No infinite-dimensional Gaussian density is used.
+
+**`L:tube-closed-geometry` (`171`).** Compact images of closed balls are compact, hence closed; `A_δ + M_δ(B_H(r))` is closed (base closed + compact image). Least-radius attainment follows by extracting a weak limit and compact convergence. With `b_δ = 2E‖X‖`, Markov gives `μ(A_δ) ≥ 1/2`; the imported FH 11.6 applies to the genuine AWS realization and yields
+`P(d_δ(X)>r) ≤ exp(-r²/(2δ))`.
+
+**`P:tube-rayleigh-transfer` (`172`).** The dominating law is the scalar Rayleigh variable with density `(r/δ)e^{-r²/(2δ)}`; it is a layer-cake/monotone comparator, not a Hilbert Gaussian norm. The monotone-`G`, jump-handling, closed-endpoint, and zero-law cases are all covered.
+
+**`P:tube-actual-law` (`173`), `L:tube-actual-endpoint` (`174`).** The actual tuple has `E[X_δ W(Φ)] = √δ M_δ Φ`; every stopped row pullback lies in `H_I`. `M_δ` is compact at each fixed radius by the completed mean compactness plus the `1-1/r > θ` primitive. At `R=R_δ`,
+`b_δ ≤ C δ^{(1-a)/2 - d/Q} → 0`,
+using the explicit fixed-`Q` guard `Q>2d/(1-a)`. The endpoint functional is defined everywhere and identifies `P_δ(X_δ)` with the global physical `E` endpoint, with `e^{F_δ(X)/δ}=‖P_δ‖²` because the compact-perturbation/free-inverse baseline gives `‖P_δ‖≥1`.
+
+**`P:tube-coarse-envelope` (`175`), `L:tube-rayleigh-tail` (`176`), `L:tube-half-action` (`177`).** Coarse envelope `G_δ(r)≤C_env(1+b_δ^ν+r^ν)`; the exact tail budget is `4 e^{(A₀-M²/4)/δ}` under `4C≤M^{2-ν}`. The half-action identity,
+`sup_r{g_J(r)-r²/2} = sup_h{J(h)-‖h‖²/2}`,
+preserves the single global `‖Φ‖²/2` action.
+
+No internal failure found in this block.
+
+---
+
+### 2. `PROOF178–184` — uniform signed `E` form/phase rates and ordered products
+
+**`L:uniform-E-lift` (`178`).** Every `L∈V_{E,R}` is a two-component `E` multiplier `(u,v)↦(0,Mu)`; the quantitative bound uses `‖M‖=‖L‖`, and the lift to the constant-column class is used only for identification. Lift constants may depend on `R` and enter no uniform estimate.
+
+**`P:uniform-E-spectral` (`179`).** The form budget
+`½z²+(1+K²/2)b² ≤ q_V(u)+cb² ≤ 3(1+K²)z²`
+yields `D(A^{1/2})=H^1`, `D(A^{1/4})=H^{1/2}`, and the phase bound
+`‖P_V^E(t)‖ ≤ 8(1+K)²(1+t)e^{λt}`,
+with the bottom `β(V)` satisfying `-K²≤β(V)≤0`. The source `129` correction is respected: negative bottom uses spectral projections near the lower spectral edge, not `b>sup spec`.
+
+**`P:uniform-rate-averaging` (`180`).** Scalar-time averaging error `ω_δ→0` is uniform in `R≥1`; the completed-field intertwinings
+`A_δ^{K(E)} T_R(C_t⊗I) = T_R((A_δC_t)⊗I)`
+transfer the scalar tail without claiming tensor compactness. Infinite spatial rank is allowed.
+
+**`P:uniform-mean-product` (`182`) / `C:uniform-polynomial-balls` (`183`) / `P:uniform-arbitrary-residual` (`184`).** Good blocks use `λ(M̃_m)`; bad blocks use the polynomial Young growth; the last cell is handled without dividing by its length. The arbitrary residual estimate separates coarse residual from sharp mean and retains both constant columns.
+
+The scalar-time tensor is not used as a substitute for spatial compactness anywhere; no displacement scalar moments are multiplied.
+
+---
+
+### 3. `PROOF185–189` — same retaining fast sources and exact original point transfer
+
+**`L:point-fast-sources` (`186`)** builds retaining sources `Y_fast = δ^{a/2}Y(δt,x)` on the same given `W`, with canonical law for covariance `Γ_δ=g²Γ`, spatial width `ε`, temporal width `τ/δ`; no auxiliary-family reconstruction is used.
+
+**`P:point-source-cone` (`188`).** The compact data `z=(ψ,0)` gives an ordinary pointwise mild solution; the cone identity with data `(1,0)` uses total-datum finite propagation and the factorial Picard estimate, not positivity of the sample coefficient. The result is an **average of squares**,
+`E‖pr₁ P_E(L,0)z‖²_{L²(D)} = v_d E|u^{full}(L,0)|²`.
+
+**`P:original-point-transfer` (`189`).** Two separate fixed-`δ` limits:
+- source-flow convergence gives the left square average;
+- the source point limit at covariance `Γ_δ` gives the right point average;
+then canonical scaling equates the original point moment with the `Γ_δ` point moment. This is a law/moment identity with `T_δ=δ^{-1/κ}` and `R=1/δ+2`, and the data prefactor `v_d^{-1}‖ψ‖²_{H^{1/2}}` vanishes logarithmically in `δ`.
+
+No `H^{1/2}` point trace, no extra `√δ` data factor, no squared-average substitution, no raw pointwise noisy wave assumption.
+
+---
+
+### 4. `PROOF190–193` — finite-`δ` bulk, exact tail, same endpoint for every block length
+
+**`P:signed-moment-bulk-tail` (`191`).** For each fixed `B`,
+`M_δ ≤ [M²/(2δ)] e^{(S_{R_δ}+E_{δ,B,M})/δ} + 4 e^{(A₀+η_B b_δ^ν - M²/4)/δ}`,
+whenever `4A₁B^{3ν} ≤ M^{2-ν}`.
+
+**`P:signed-operator-upper` (`192`).** `M_δ` is independent of `B`; at each admissible `B`, the `δ↓0` limsup is at most `max(V_up+e_B, A₀-M_B²/4)`, and then `B→∞` with `M_B→∞`, `e_B→0` gives
+`limsup_{δ↓0} δ log M_δ ≤ V_up`.
+The order is `δ` first at fixed `B,M,K_res`, then `B`; the moving score is not assumed to converge below the limsup.
+
+**`P:original-signed-point-upper` (`193`).** Combining with `189` yields the original point upper by `limsup_δ S_{δ^{-1}+2}`. Zero covariance is handled directly from the free flow.
+
+No moving-`S_R` limit or arbitrary Gaussian covariance monotonicity was assumed.
+
+---
+
+### 5. `PROOF194–204` — finite positive Gram, entrywise comparison, and the intrinsic constant
+
+**Finite Gram (`194–198`).** The scalar dual inequality, interior strict-convex attainment, nonnegative-entry coercivity, Schur-complement realization, and active-set equality are checkpointed correctly. Zero vectors and empty index sets are allowed; singular Grams cause no exceptional case. Entrywise comparison needs only `0≤C_ij≤D_ij`, not `D-C` PSD.
+
+**`L:positive-physical-gram` (`200`).** Labels `k_i^R=h_i⊗m_Rf_i²`, `k_i^∞=h_i⊗f_i²` have actual row
+`⟨Φ,k_i^R⟩=ℓ_i^{-1}∫_{I_i}v_{T_RΦ(s)}(f_i,f_i)ds`;
+entrywise Gram order `0≤C^R_ij≤D_ij` follows from nonnegativity of kernels and `0≤m_R≤1`.
+
+**`L:positive-uniform-optimizer` (`201`) precedes the second averaging (`202`).** The optimizer `Φ_D` has `‖Φ_D‖≤M=4C_mean+4` uniformly in the label family, before partition averaging is reintroduced. The nonzero branch is a positive conic combination and is approximated inside `C_pos` with rates and raw costs converging.
+
+**`P:positive-signed-comparison` (`202`), `P:positive-score-cutoff` (`203`), `T:intrinsic-second-moment` (`204`).** The signed score is bounded above by `S₂^{pos}`, the mask limit (nonmonotone globally but `m_R=1` on each compact support eventually) recovers `S₂^{pos}`, and matching with the lower/upper point bounds gives the all-model limit:
+
+`C₂(Γ,a)=S₂^{pos}=2^{(4−α)/(3−α)}S₁^{pos}`,
+
+with
+- full **nonseparable** positive `C_c^∞` spacetime tests,
+- **unit kinetic** coefficient,
+- **one global raw variance-half action** `v_Ψ/2`,
+- original amplitude retained,
+- zero-covariance branch value zero.
+
+`S₁` is explicitly auxiliary; it is not actual `p=1` and not Chen's `L`.
+
+Dependency check: `132` finiteness imports the actual `T:full-upper` of `F001`, whose proof uses no spatial ratio, mean regulator, signed upper, `R_sp`, or `204`; `135` spatial finiteness derives from `132`, so there is no cycle. `R_α` (spectral) and `R_sp` (spatial) remain distinct.
+
+---
+
+### 6. `PROOF205–213` — occupation ceiling, white second-moment bounds
+
+**`L:occupation-raw-square` (`205`) / `P:raw-occupation-energy` (`206`) / `L:occupation-rayleigh-selection` (`207`) / `T:intrinsic-occupation-ceiling` (`208`) / `C:intrinsic-spatial-bracket` (`209`).** The full strongly-`H¹` occupation class is measurably represented in the original raw `H`, and the scalar ceiling has the exact penalty normalization. The noncompact `sech` profile is used only as an energy witness through `S:P:spatial-four-linear` compact approximation; it is not claimed to be a compact stochastic control.
+
+**`L:white-cdf-square` (`210`) / `P:white-spatial-energy` (`211`).** The CDF identity
+`∫[f'−zf(1−2F)]² = b−2zA+z²/3`
+gives `3A²≤b`, and the profile `f_l(x)=√(l/2) sech(lx)` gives uniformity at
+`R_sp=c/√3`, `E_sp=c²/6`.
+
+**`T:white-moment-bounds` (`212`) / `C:white-relative-width` (`213`).**
+`(2/3)√(c/M_a) ≤ C₂(c,a) ≤ (2/3)√(cK₀(a))`,
+with Gamma identities retaining the original `a`-time exponent; the ratio bound is a Cauchy–Schwarz estimate, not an evaluation of the intrinsic supremum.
+
+[held back: collaborators' unpublished work]
+
+---
+
+### 7. The 13 same-`u` joins
+
+I rechecked each join from the newly supplied candidates rather than from historical labels:
+
+1. **CONSTRUCTOR** (`004–005–006–007–008–009–214; 002`): translated covariance `214`, positive spatial Wick `005`, joint fixed-order `006`, occupied multiplication/series tails `008`, mild `009`, mixed `002`; actual inputs original amplitude, both roots, empty/unequal chains, Green before noise in `d=3`.
+2. **INDEPENDENT-UPPER** (`036–051`; `001–008`): outputs the same canonical scale upper **before** any variational finiteness use; tail passage does not import `002`/`007`/`008`'s theorem or `204`.
+3. **DRIVER-SOURCE** (`061–103`; `085–093`; `156–158`): both balanced variances, compact tails, interval/operator limit, `C^θ` path, given-`W` source transfer, actual ordinary response; fixed `R,T`, no `C^θ S_q` path or density assumption.
+4. **F-YOUNG-OBSERVABLE** (`104–111,103,124–126,166–167,174,189`): both constant columns; closed `E⊂F`; Young stability is for the interaction `U`, not for the free/physical flow; no `H^{1/2}` point trace.
+5. **RAW-SCALING-LOWER** (`119–126`): law scaling `119`, literal same-`W` restart `124` (not the norm–Borel law `121`), terminal tau, direct square comparison `125→126`; source limits precede `δ`; cost `v/2` exactly once.
+6. **UNMASK-FINITENESS** (`127–132`): independent `T:full-upper` funds finiteness; not `204`; full nonseparable positive class and actual amplitude.
+7. **OCCUPATION-SPATIAL** (`133–141; 205–209`): `136→137` before `138`; Lebesgue-`x` first for each displacement; no `Γ`-null inference.
+8. **UNIFORM-E-SIGNED** (`144–163; 156–158; 178–185; 190–193`): `‖V‖` is the multiplier norm, not the `H^{-1/2}` norm; `F` lift constants identify only; range in `iE` does **not** annihilate constant inputs.
+9. **SYMPLECTIC-TUBE** (`107,124,165–177,184; 166/167` retained): compact Young sums/ideal, whole-space weak-null vectors, velocity reversal for the norm floors; real-`E` coefficient closure and deterministic Young remainder for `J_E`-skew conservation; actual `169` scale `δ^{-a/2}`, `δ^{a/2}` covariance, `√δ` compensation; actual `184` residuals are compact paths.
+10. **POINT-UPPER** (`164,186–193`): source cone/tested squared-operator identity → original point to growing `E` norm; average of squares; no assumed growing-`R` compactness or block independence.
+11. **POSITIVE-INTRINSIC** (`194–204`): active Gram optimizer, **entrywise** comparison, uniform optimizer bound, cutoff removal, same canonical upper+lower ⇒ `C₂=S₂^{pos}=2^{(4−α)/(3−α)}S₁^{pos}`; rough control `Φ` has completed-row meaning.
+12. **CALIBRATION-ALTERNATIVES** (`003,010–035,052–060,210–213`): all finite white/Riesz calibrations and conditional/higher-`α`, planar, three-dimensional routes with their stated hypotheses preserved; no conditional route silently promoted to the general theorem.
+13. **DERIVED-BOUNDS-WHITE** (`133–143,204–213`): exact kinetic-half/penalty/raw-half-action factors and full `H¹` domains; `c²/6` and Gamma bounds are bounds on the intrinsic constant, not its numerical value.
+
+No join was found to be circular; the independent upper funding and the constructor/pairing/mild prerequisites are actual parents.
+
+---
+
+### 8. Root checks performed
+
+- **Tube radius** uses `C=√δ M` on the global original `H_I`; no auxiliary `J` or block costs.
+- **Point transfer** is the source-first equality of averaged squares; `185–189` use the same retaining-source limit at each fixed `δ`.
+- **Finite Gram order is entrywise**, `0≤C≤D`; no PSD order of `D−C`.
+- **`201` optimizer bound precedes the second averaging in `202`.**
+- One-label active/empty case, singular Gram, zero frequency, and zero covariance were all traversed; the zero-law direct case is present in `172`, `177`, `193`, and `204`.
+
+---
+
+### 9. First actual candidate-source failure
+
+In the supplied bodies `F022–F029` together with the authoritative `F001` and the external imports, **I have not found a first actual candidate-source failure** in the reconstructed chain `PROOF170–213`.
+
+The honest residual conditions are:
+- imported Teschl forms/spectral theorem numbers (`2.14/(2.63)`, `3.6/(3.51)–(3.53)`, `3.1–3.2`);
+- imported FH rough-path/Young and abstract-Wiener set-enlargement statements;
+- external case `C23 Theorem 1.1` used in the auxiliary energy-lemma scope;
+- the narrow out-of-core clauses for `001–035` alternative/calibration deductions, which remain assigned for the eventual whole-goal judgment and were **not** dropped.
+
+These are external applications and pre-existing scoped parents, not defects introduced in the current reconstructed chain.

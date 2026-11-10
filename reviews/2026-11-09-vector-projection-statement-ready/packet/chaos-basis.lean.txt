@@ -1,0 +1,443 @@
+/-
+# Density of polynomial cylinders and the Hermite (Wiener chaos) Hilbert basis
+
+The `L²` density of finite Gaussian polynomials, and the chaos expansion of every
+`F ∈ L²(μ)`.
+
+Proved here, for the white-noise product space `noise ι` (i.i.d. `N(0,1)` coordinates):
+* (exponential totality) if `g ∈ L²(noise)` is orthogonal to every power `(∑_{j∈s} tⱼ ωⱼ)ⁿ`
+  of every finite linear form, then `g = 0` a.e.  Proof: dominated convergence in the
+  exponential series gives `E[g e^{i ∑ tⱼωⱼ}] = 0`; hence the positive and negative parts of
+  `g · noise` have equal finite-dimensional characteristic functions, so they agree on all
+  measurable cylinders, which form a generating π-system; so `∫_A g = 0` for all `A`.
+* every such power is a finite Hermite expansion (`ωⱼ H_α = H_{α+eⱼ} + αⱼ H_{α-eⱼ}`);
+* hence the normalized Hermite products `H_α/√α!` form a `HilbertBasis` of `L²(noise)`
+  (`hermiteBasis`): every `F ∈ L²(μ)` has the chaos expansion `F = ∑_α ⟨e_α, F⟩ e_α` with
+  Parseval's identity.
+-/
+import GaussianChaos.GaussianOU
+
+set_option autoImplicit false
+noncomputable section
+open MeasureTheory ProbabilityTheory Filter Topology
+open scoped ENNReal NNReal Nat InnerProductSpace
+
+namespace GaussianChaos.ChaosDensity
+
+open GaussianProduct WienerChaos GaussianCylinders
+
+variable {ι : Type*}
+
+/-- The linear form `ω ↦ ∑_{j∈s} tⱼ ωⱼ`. -/
+def lin (s : Finset ι) (t : ι → ℝ) (ω : ι → ℝ) : ℝ := ∑ j ∈ s, t j * ω j
+
+lemma measurable_lin (s : Finset ι) (t : ι → ℝ) : Measurable (lin s t) :=
+  Finset.measurable_sum s fun j _ => measurable_const.mul (measurable_pi_apply j)
+
+lemma map_lin (s : Finset ι) (t : ι → ℝ) :
+    (noise ι).map (lin s t) = gaussianReal 0 (∑ j ∈ s, t j ^ 2).toNNReal :=
+  map_partial s t
+
+lemma integrable_exp_mul_lin (s : Finset ι) (t : ι → ℝ) (c : ℝ) :
+    Integrable (fun ω => Real.exp (c * lin s t ω)) (noise ι) := by
+  have h := integrable_exp_mul_gaussianReal (μ := 0)
+    (v := (∑ j ∈ s, t j ^ 2).toNNReal) c
+  rw [← map_lin] at h
+  exact (integrable_map_measure
+    (by fun_prop : Continuous fun x : ℝ => Real.exp (c * x)).aestronglyMeasurable
+    (measurable_lin s t).aemeasurable).mp h
+
+lemma memLp_exp_abs_lin (s : Finset ι) (t : ι → ℝ) :
+    MemLp (fun ω => Real.exp |lin s t ω|) 2 (noise ι) := by
+  have hm : AEStronglyMeasurable (fun ω => Real.exp |lin s t ω|) (noise ι) :=
+    ((by fun_prop : Continuous fun x : ℝ => Real.exp |x|).measurable.comp
+      (measurable_lin s t)).aestronglyMeasurable
+  rw [memLp_two_iff_integrable_sq hm]
+  refine ((integrable_exp_mul_lin s t 2).add (integrable_exp_mul_lin s t (-2))).mono'
+    (hm.pow 2) (Filter.Eventually.of_forall fun ω => ?_)
+  rw [Real.norm_eq_abs, abs_of_nonneg (by positivity), ← Real.exp_nat_mul]
+  have h1 := Real.exp_pos (2 * lin s t ω)
+  have h2 := Real.exp_pos (-2 * lin s t ω)
+  simp only [Pi.add_apply]
+  rcases abs_cases (lin s t ω) with ⟨h, _⟩ | ⟨h, _⟩
+  · rw [h]; push_cast; linarith
+  · rw [h]; push_cast
+    have : ((2 : ℝ) * -lin s t ω) = -2 * lin s t ω := by ring
+    rw [this]; linarith
+
+lemma allMoments_lin (s : Finset ι) (t : ι → ℝ) : AllMoments (noise ι) (lin s t) :=
+  allMoments_of_map_eq_gaussianReal (measurable_lin s t).aemeasurable (map_lin s t)
+
+lemma allMoments_lin_pow (s : Finset ι) (t : ι → ℝ) (n : ℕ) :
+    AllMoments (noise ι) (fun ω => lin s t ω ^ n) := by
+  induction n with
+  | zero => simpa using allMoments_const (P := noise ι) (1 : ℝ)
+  | succ n ih => simpa [pow_succ] using ih.mul (allMoments_lin s t)
+
+/-- `E[g e^{i ∑ tⱼωⱼ}] = 0` when `g ⟂ (∑ tⱼωⱼ)ⁿ` for all `n`. -/
+theorem integral_mul_cexp_lin_eq_zero {g : (ι → ℝ) → ℝ} (hg : MemLp g 2 (noise ι))
+    (s : Finset ι) (t : ι → ℝ) (h : ∀ n : ℕ, ∫ ω, g ω * lin s t ω ^ n ∂(noise ι) = 0) :
+    ∫ ω, (g ω : ℂ) * Complex.exp (lin s t ω * Complex.I) ∂(noise ι) = 0 := by
+  set u := lin s t
+  let F : ℕ → (ι → ℝ) → ℂ := fun N ω =>
+    (g ω : ℂ) * ∑ n ∈ Finset.range N, ((u ω : ℂ) * Complex.I) ^ n / (n ! : ℂ)
+  have hint : ∀ n, Integrable (fun ω => g ω * u ω ^ n) (noise ι) := fun n =>
+    hg.integrable_mul ((allMoments_lin_pow s t n) 2 (by simp))
+  have hterm : ∀ n ω, (g ω : ℂ) * (((u ω : ℂ) * Complex.I) ^ n / (n ! : ℂ))
+      = (Complex.I ^ n / (n ! : ℂ)) * ((g ω * u ω ^ n : ℝ) : ℂ) := by
+    intro n ω; push_cast; ring
+  have hF0 : ∀ N, ∫ ω, F N ω ∂(noise ι) = 0 := by
+    intro N
+    simp only [F, Finset.mul_sum, hterm]
+    rw [integral_finsetSum _ fun n _ => ((hint n).ofReal).const_mul _]
+    refine Finset.sum_eq_zero fun n _ => ?_
+    rw [integral_const_mul, integral_complex_ofReal, h n]
+    simp
+  have hgm : AEStronglyMeasurable (fun ω => (g ω : ℂ)) (noise ι) :=
+    Complex.continuous_ofReal.comp_aestronglyMeasurable hg.aestronglyMeasurable
+  have hum : Measurable u := measurable_lin s t
+  have hFm : ∀ N, AEStronglyMeasurable (F N) (noise ι) := by
+    intro N
+    refine hgm.mul ?_
+    have hc : Continuous fun x : ℝ =>
+        ∑ n ∈ Finset.range N, ((x : ℂ) * Complex.I) ^ n / (n ! : ℂ) := by fun_prop
+    exact (hc.measurable.comp hum).aestronglyMeasurable
+  have hbound : Integrable (fun ω => |g ω| * Real.exp |u ω|) (noise ι) :=
+    hg.abs.integrable_mul (memLp_exp_abs_lin s t)
+  have hle : ∀ N, ∀ᵐ ω ∂(noise ι), ‖F N ω‖ ≤ |g ω| * Real.exp |u ω| := by
+    intro N
+    refine Filter.Eventually.of_forall fun ω => ?_
+    simp only [F, norm_mul, Complex.norm_real, Real.norm_eq_abs]
+    refine mul_le_mul_of_nonneg_left ?_ (abs_nonneg _)
+    refine (norm_sum_le _ _).trans ?_
+    refine le_trans (le_of_eq ?_) (Real.sum_le_exp_of_nonneg (abs_nonneg (u ω)) N)
+    refine Finset.sum_congr rfl fun n _ => ?_
+    rw [norm_div, norm_pow, norm_mul, Complex.norm_I, mul_one, Complex.norm_real,
+      Real.norm_eq_abs, Complex.norm_natCast]
+  have hlim : ∀ᵐ ω ∂(noise ι), Tendsto (fun N => F N ω) atTop
+      (𝓝 ((g ω : ℂ) * Complex.exp (u ω * Complex.I))) := by
+    refine Filter.Eventually.of_forall fun ω => ?_
+    have hs := NormedSpace.expSeries_div_hasSum_exp ((u ω : ℂ) * Complex.I)
+    rw [← Complex.exp_eq_exp_ℂ] at hs
+    exact hs.tendsto_sum_nat.const_mul _
+  have hT := tendsto_integral_of_dominated_convergence _ hFm hbound hle hlim
+  simp only [hF0] at hT
+  exact (tendsto_nhds_unique tendsto_const_nhds hT).symm
+
+/-! ### From characteristic functions to `g = 0` -/
+
+/-- The difference of the two density measures integrates bounded functions against `g`. -/
+lemma integral_withDensity_sub {g : (ι → ℝ) → ℝ} (hgm : Measurable g)
+    (hg : Integrable g (noise ι)) {f : (ι → ℝ) → ℂ} (hfm : AEStronglyMeasurable f (noise ι))
+    (hf : ∀ ω, ‖f ω‖ ≤ 1) :
+    ∫ ω, f ω ∂((noise ι).withDensity fun ω => ENNReal.ofReal (g ω))
+      - ∫ ω, f ω ∂((noise ι).withDensity fun ω => ENNReal.ofReal (-g ω))
+      = ∫ ω, (g ω : ℂ) * f ω ∂(noise ι) := by
+  have h1 := integral_withDensity_eq_integral_smul (μ := noise ι)
+    (f := fun ω => (g ω).toNNReal) (measurable_real_toNNReal.comp hgm) f
+  have h2 := integral_withDensity_eq_integral_smul (μ := noise ι)
+    (f := fun ω => (-g ω).toNNReal) (measurable_real_toNNReal.comp hgm.neg) f
+  have e1 : (fun ω => ((g ω).toNNReal : ℝ≥0∞)) = fun ω => ENNReal.ofReal (g ω) := rfl
+  have e2 : (fun ω => ((-g ω).toNNReal : ℝ≥0∞)) = fun ω => ENNReal.ofReal (-g ω) := rfl
+  rw [e1] at h1; rw [e2] at h2
+  rw [h1, h2]
+  have hi : ∀ (k : (ι → ℝ) → ℝ), Integrable k (noise ι) → (∀ ω, |k ω| ≤ |g ω|) →
+      Measurable k → Integrable (fun ω => (k ω : ℂ) * f ω) (noise ι) := by
+    intro k hk hkg hkm
+    refine (hg.norm).mono' ((Complex.continuous_ofReal.comp_aestronglyMeasurable
+      hkm.aestronglyMeasurable).mul hfm) (Filter.Eventually.of_forall fun ω => ?_)
+    rw [norm_mul, Complex.norm_real, Real.norm_eq_abs, Real.norm_eq_abs]
+    calc |k ω| * ‖f ω‖ ≤ |g ω| * 1 :=
+          mul_le_mul (hkg ω) (hf ω) (norm_nonneg _) (abs_nonneg _)
+      _ = |g ω| := mul_one _
+  have hp : Integrable (fun ω => (((g ω).toNNReal : ℝ) : ℂ) * f ω) (noise ι) :=
+    hi _ (hg.pos_part) (fun ω => by
+      rw [Real.coe_toNNReal', abs_of_nonneg (le_max_right _ _)]
+      exact max_le (le_abs_self _) (abs_nonneg _)) (measurable_real_toNNReal.comp hgm).coe_nnreal_real
+  have hn : Integrable (fun ω => (((-g ω).toNNReal : ℝ) : ℂ) * f ω) (noise ι) :=
+    hi _ (hg.neg_part) (fun ω => by
+      rw [Real.coe_toNNReal', abs_of_nonneg (le_max_right _ _)]
+      exact max_le (neg_le_abs _) (abs_nonneg _))
+      (measurable_real_toNNReal.comp hgm.neg).coe_nnreal_real
+  simp only [NNReal.smul_def, Complex.real_smul] at hp hn ⊢
+  rw [← integral_sub hp hn]
+  refine integral_congr_ae (Filter.Eventually.of_forall fun ω => ?_)
+  simp only
+  rw [← sub_mul, ← Complex.ofReal_sub, Real.coe_toNNReal', Real.coe_toNNReal',
+    max_zero_sub_max_neg_zero_eq_self]
+
+/-- **Exponential totality.** If `g ∈ L²(noise)` is orthogonal to all powers of finite linear
+forms of the coordinates, then `g = 0` a.e. -/
+theorem ae_eq_zero_of_forall_lin_pow {g : (ι → ℝ) → ℝ} (hgm : Measurable g)
+    (hg : MemLp g 2 (noise ι))
+    (h : ∀ (s : Finset ι) (t : ι → ℝ) (n : ℕ), ∫ ω, g ω * lin s t ω ^ n ∂(noise ι) = 0) :
+    g =ᵐ[noise ι] 0 := by
+  classical
+  have hg1 : Integrable g (noise ι) := hg.integrable one_le_two
+  set ν₁ := (noise ι).withDensity fun ω => ENNReal.ofReal (g ω)
+  set ν₂ := (noise ι).withDensity fun ω => ENNReal.ofReal (-g ω)
+  have : IsFiniteMeasure ν₁ := isFiniteMeasure_withDensity_ofReal hg1.2
+  have : IsFiniteMeasure ν₂ := isFiniteMeasure_withDensity_ofReal hg1.neg.2
+  -- finite-dimensional marginals agree
+  have hmarg : ∀ s : Finset ι, ν₁.map s.restrict = ν₂.map s.restrict := by
+    intro s
+    have hres : Measurable (s.restrict : (ι → ℝ) → (s → ℝ)) :=
+      measurable_pi_iff.mpr fun i => measurable_pi_apply _
+    apply Measure.ext_of_charFunDual
+    funext L
+    set t : ι → ℝ := fun j => if hj : j ∈ s then L (Pi.single (⟨j, hj⟩ : s) 1) else 0
+    have hL : ∀ ω : ι → ℝ, L (s.restrict ω) = lin s t ω := by
+      intro ω
+      have hx : s.restrict ω = ∑ k : s, ω k • (Pi.single k 1 : s → ℝ) := by
+        funext k
+        simp [Finset.sum_apply, Pi.single_apply]
+      rw [hx, map_sum]
+      simp only [map_smul, smul_eq_mul, lin]
+      rw [← Finset.sum_coe_sort s]
+      refine Finset.sum_congr rfl fun k _ => ?_
+      simp only [t, dif_pos k.2]
+      ring
+    have hcont : Continuous fun x : s → ℝ => Complex.exp (L x * Complex.I) := by fun_prop
+    rw [charFunDual_apply, charFunDual_apply,
+      integral_map hres.aemeasurable hcont.aestronglyMeasurable,
+      integral_map hres.aemeasurable hcont.aestronglyMeasurable]
+    simp_rw [hL]
+    have hfm : AEStronglyMeasurable (fun ω => Complex.exp (lin s t ω * Complex.I)) (noise ι) :=
+      ((by fun_prop : Continuous fun x : ℝ => Complex.exp (x * Complex.I)).measurable.comp
+        (measurable_lin s t)).aestronglyMeasurable
+    have hsub := integral_withDensity_sub hgm hg1 hfm (fun ω => by
+      rw [show ((lin s t ω : ℝ) : ℂ) * Complex.I = ((lin s t ω : ℝ) : ℂ) * Complex.I from rfl,
+        Complex.norm_exp_ofReal_mul_I])
+    rw [integral_mul_cexp_lin_eq_zero hg s t (h s t)] at hsub
+    exact sub_eq_zero.mp hsub
+  -- hence the measures agree
+  have hcyl : ∀ A ∈ measurableCylinders (fun _ : ι => ℝ), ν₁ A = ν₂ A := by
+    intro A hA
+    obtain ⟨s, S, hS, rfl⟩ := (mem_measurableCylinders A).mp hA
+    have hres : Measurable (s.restrict : (ι → ℝ) → (s → ℝ)) :=
+      measurable_pi_iff.mpr fun i => measurable_pi_apply _
+    show ν₁ (s.restrict ⁻¹' S) = ν₂ (s.restrict ⁻¹' S)
+    rw [← Measure.map_apply hres hS, ← Measure.map_apply hres hS, hmarg s]
+  have hν : ν₁ = ν₂ := by
+    refine ext_of_generate_finite _ generateFrom_measurableCylinders.symm
+      isPiSystem_measurableCylinders hcyl ?_
+    have := hcyl Set.univ ((mem_measurableCylinders _).mpr ⟨∅, Set.univ, MeasurableSet.univ,
+      (cylinder_univ _).symm⟩)
+    exact this
+  -- all set integrals vanish
+  refine hg1.ae_eq_zero_of_forall_setIntegral_eq_zero fun A hA _ => ?_
+  have hfm : AEStronglyMeasurable (A.indicator fun _ => (1 : ℂ)) (noise ι) :=
+    (measurable_const.indicator hA).aestronglyMeasurable
+  have hsub := integral_withDensity_sub hgm hg1 hfm (fun ω => by
+    by_cases hω : ω ∈ A <;> simp [hω])
+  have h0 : ∫ ω, A.indicator (fun _ => (1 : ℂ)) ω ∂ν₁
+      - ∫ ω, A.indicator (fun _ => (1 : ℂ)) ω ∂ν₂ = 0 := by
+    rw [hν, sub_self]
+  rw [h0] at hsub
+  have hpt : (fun ω => (g ω : ℂ) * A.indicator (fun _ => (1 : ℂ)) ω)
+      = fun ω => ((A.indicator g ω : ℝ) : ℂ) := by
+    funext ω; by_cases hω : ω ∈ A <;> simp [hω]
+  rw [hpt, integral_complex_ofReal, integral_indicator hA] at hsub
+  exact_mod_cast hsub.symm
+
+/-! ### Powers of linear forms are finite Hermite expansions -/
+
+/-- `x He_n = He_{n+1} + n He_{n-1}`. -/
+lemma X_mul_He (n : ℕ) (x : ℝ) :
+    x * (He n).eval x = (He (n + 1)).eval x + (n : ℝ) * (He (n - 1)).eval x := by
+  rw [He_succ]
+  rcases n with _ | m
+  · simp [He_zero]
+  · rw [derivative_He]
+    simp only [Polynomial.eval_sub, Polynomial.eval_mul, Polynomial.eval_X, Polynomial.eval_C,
+      Nat.add_sub_cancel]
+    push_cast; ring
+
+/-- `ωⱼ H_α = H_{α+eⱼ} + αⱼ H_{α-eⱼ}`. -/
+lemma coord_mul_Hm [DecidableEq ι] (α : ι →₀ ℕ) (j : ι) (ω : ι → ℝ) :
+    ω j * Hm α ω = Hm (α + Finsupp.single j 1) ω
+      + (α j : ℝ) * Hm (α - Finsupp.single j 1) ω := by
+  set s := insert j α.support
+  have hj : j ∈ s := Finset.mem_insert_self _ _
+  have h0 : α.support ⊆ s := Finset.subset_insert _ _
+  have h1 : (α + Finsupp.single j 1).support ⊆ s := by
+    intro i hi
+    rw [Finsupp.mem_support_iff] at hi
+    by_cases hij : i = j
+    · rw [hij]; exact hj
+    · apply h0; rw [Finsupp.mem_support_iff]; simpa [Finsupp.single_apply, Ne.symm hij] using hi
+  have h2 : (α - Finsupp.single j 1).support ⊆ s := by
+    intro i hi
+    rw [Finsupp.mem_support_iff] at hi
+    apply h0; rw [Finsupp.mem_support_iff]; intro h; apply hi; simp [h]
+  rw [Hm_eq_prod_of_subset h0, Hm_eq_prod_of_subset h1, Hm_eq_prod_of_subset h2,
+    ← Finset.mul_prod_erase _ _ hj, ← Finset.mul_prod_erase _ _ hj,
+    ← Finset.mul_prod_erase _ _ hj]
+  have r1 : ∏ i ∈ s.erase j, (He ((α + Finsupp.single j 1 : ι →₀ ℕ) i)).eval (ω i)
+      = ∏ i ∈ s.erase j, (He (α i)).eval (ω i) :=
+    Finset.prod_congr rfl fun i hi => by
+      simp [Ne.symm (Finset.ne_of_mem_erase hi)]
+  have r2 : ∏ i ∈ s.erase j, (He ((α - Finsupp.single j 1 : ι →₀ ℕ) i)).eval (ω i)
+      = ∏ i ∈ s.erase j, (He (α i)).eval (ω i) :=
+    Finset.prod_congr rfl fun i hi => by
+      simp [Ne.symm (Finset.ne_of_mem_erase hi)]
+  rw [r1, r2]
+  simp only [Finsupp.coe_add, Finsupp.coe_tsub, Pi.add_apply, Pi.sub_apply,
+    Finsupp.single_eq_same]
+  rw [← mul_assoc, X_mul_He]
+  ring
+
+/-- Functions that are finite Hermite expansions. -/
+def IsExp (f : (ι → ℝ) → ℝ) : Prop := ∃ (S : Finset (ι →₀ ℕ)) (c : (ι →₀ ℕ) → ℝ), f = expand S c
+
+lemma isExp_Hm (β : ι →₀ ℕ) : IsExp (Hm β) :=
+  ⟨{β}, fun _ => 1, by funext ω; simp [expand]⟩
+
+lemma isExp_zero : IsExp (fun _ : ι → ℝ => (0 : ℝ)) := ⟨∅, fun _ => 0, by funext; simp [expand]⟩
+
+lemma IsExp.add {f g : (ι → ℝ) → ℝ} (hf : IsExp f) (hg : IsExp g) :
+    IsExp (fun ω => f ω + g ω) := by
+  classical
+  obtain ⟨S, c, rfl⟩ := hf
+  obtain ⟨T, d, rfl⟩ := hg
+  refine ⟨S ∪ T, fun α => (if α ∈ S then c α else 0) + (if α ∈ T then d α else 0), ?_⟩
+  funext ω
+  simp only [expand, add_mul, Finset.sum_add_distrib, ite_mul, zero_mul]
+  rw [Finset.sum_ite_mem, Finset.sum_ite_mem, Finset.union_inter_cancel_left,
+    Finset.union_inter_cancel_right]
+
+lemma IsExp.const_mul {f : (ι → ℝ) → ℝ} (hf : IsExp f) (a : ℝ) :
+    IsExp (fun ω => a * f ω) := by
+  obtain ⟨S, c, rfl⟩ := hf
+  refine ⟨S, fun α => a * c α, ?_⟩
+  funext ω; simp [expand, Finset.mul_sum, mul_assoc]
+
+lemma IsExp.sum {J : Type*} (s : Finset J) {f : J → (ι → ℝ) → ℝ}
+    (hf : ∀ j ∈ s, IsExp (f j)) : IsExp (fun ω => ∑ j ∈ s, f j ω) := by
+  classical
+  induction s using Finset.induction_on with
+  | empty => simpa using isExp_zero
+  | insert x s hx ih =>
+    simp only [Finset.sum_insert hx]
+    exact (hf x (Finset.mem_insert_self x s)).add
+      (ih fun j hj => hf j (Finset.mem_insert_of_mem hj))
+
+lemma IsExp.coord_mul {f : (ι → ℝ) → ℝ} (hf : IsExp f) (j : ι) :
+    IsExp (fun ω => ω j * f ω) := by
+  classical
+  obtain ⟨S, c, rfl⟩ := hf
+  have : (fun ω => ω j * expand S c ω) = fun ω => ∑ α ∈ S,
+      (c α * Hm (α + Finsupp.single j 1) ω + (c α * α j) * Hm (α - Finsupp.single j 1) ω) := by
+    funext ω
+    simp only [expand, Finset.mul_sum]
+    refine Finset.sum_congr rfl fun α _ => ?_
+    rw [mul_left_comm, coord_mul_Hm]; ring
+  rw [this]
+  exact IsExp.sum S fun α _ =>
+    ((isExp_Hm _).const_mul _).add ((isExp_Hm _).const_mul _)
+
+lemma isExp_lin_pow (s : Finset ι) (t : ι → ℝ) (n : ℕ) :
+    IsExp (fun ω => lin s t ω ^ n) := by
+  induction n with
+  | zero =>
+    refine ⟨{0}, fun _ => 1, ?_⟩
+    funext ω; simp [expand, Hm_zero]
+  | succ n ih =>
+    have : (fun ω => lin s t ω ^ (n + 1)) = fun ω => ∑ j ∈ s, t j * (ω j * lin s t ω ^ n) := by
+      funext ω
+      simp only [lin, pow_succ, Finset.mul_sum]
+      refine Finset.sum_congr rfl fun j _ => ?_
+      ring
+    rw [this]
+    exact IsExp.sum s fun j _ => (ih.coord_mul j).const_mul (t j)
+
+/-! ### The Hermite Hilbert basis of `L²(noise)` -/
+
+/-- `H_α` as an element of `L²(noise)`. -/
+def hermiteLp (α : ι →₀ ℕ) : Lp ℝ 2 (noise ι) := ((allMoments_Hm α) 2 (by simp)).toLp _
+
+lemma hermiteLp_ae (α : ι →₀ ℕ) : hermiteLp α =ᵐ[noise ι] Hm α := MemLp.coeFn_toLp _
+
+lemma inner_hermiteLp_left (α : ι →₀ ℕ) (g : Lp ℝ 2 (noise ι)) :
+    ⟪hermiteLp α, g⟫_ℝ = ∫ ω, Hm α ω * (g : (ι → ℝ) → ℝ) ω ∂(noise ι) := by
+  rw [L2.inner_def]
+  refine integral_congr_ae ?_
+  filter_upwards [hermiteLp_ae α] with ω h
+  rw [real_inner_eq_re_inner, RCLike.inner_apply, conj_trivial, h]
+  simp [mul_comm]
+
+/-- **Density.** If `g ∈ L²(noise)` is orthogonal to every Hermite product, then `g = 0`. -/
+theorem eq_zero_of_forall_inner_hermiteLp {g : Lp ℝ 2 (noise ι)}
+    (h : ∀ α, ⟪hermiteLp α, g⟫_ℝ = 0) : g = 0 := by
+  have hperp : ∀ (f : (ι → ℝ) → ℝ), IsExp f →
+      ∫ ω, (g : (ι → ℝ) → ℝ) ω * f ω ∂(noise ι) = 0 := by
+    rintro f ⟨S, c, rfl⟩
+    simp only [expand, Finset.mul_sum]
+    rw [integral_finsetSum _ fun α _ => ?_]
+    · refine Finset.sum_eq_zero fun α _ => ?_
+      have := h α
+      rw [inner_hermiteLp_left] at this
+      simp_rw [mul_left_comm _ (c α), integral_const_mul]
+      rw [show (fun ω => (g : (ι → ℝ) → ℝ) ω * Hm α ω) = fun ω => Hm α ω * (g : _ → ℝ) ω from
+        funext fun ω => mul_comm _ _, this, mul_zero]
+    · exact ((Lp.memLp g).integrable_mul ((allMoments_Hm α) 2 (by simp))).const_mul (c α)
+        |>.congr (Filter.Eventually.of_forall fun ω => by simp only [Pi.mul_apply]; ring)
+  have hae : (g : (ι → ℝ) → ℝ) =ᵐ[noise ι] 0 :=
+    ae_eq_zero_of_forall_lin_pow (Lp.stronglyMeasurable g).measurable (Lp.memLp g)
+      fun s t n => hperp _ (isExp_lin_pow s t n)
+  exact (Lp.eq_zero_iff_ae_eq_zero).mpr hae
+
+/-- The normalized Hermite products `e_α = H_α/√α!`. -/
+def hermiteNormalized (α : ι →₀ ℕ) : Lp ℝ 2 (noise ι) := (√(mfact α))⁻¹ • hermiteLp α
+
+theorem orthonormal_hermite : Orthonormal ℝ (hermiteNormalized (ι := ι)) := by
+  classical
+  rw [orthonormal_iff_ite]
+  intro α β
+  have hab : ⟪hermiteLp α, hermiteLp β⟫_ℝ = if α = β then mfact α else 0 := by
+    rw [inner_hermiteLp_left, ← integral_Hm_mul]
+    refine integral_congr_ae ?_
+    filter_upwards [hermiteLp_ae β] with ω h
+    rw [h]
+  simp only [hermiteNormalized, real_inner_smul_left, real_inner_smul_right, hab]
+  split_ifs with h
+  · subst h
+    have hp := mfact_pos α
+    have hs := Real.sqrt_pos.mpr hp
+    field_simp
+    rw [Real.sq_sqrt hp.le]
+  · simp
+
+/-- **Wiener chaos basis.** The normalized Hermite products form a Hilbert basis of
+`L²(noise)`: every `F ∈ L²(μ)` is the `L²`-sum of its chaos expansion. -/
+def hermiteBasis : HilbertBasis (ι →₀ ℕ) ℝ (Lp ℝ 2 (noise ι)) :=
+  HilbertBasis.mkOfOrthogonalEqBot orthonormal_hermite (by
+    rw [Submodule.eq_bot_iff]
+    intro g hg
+    apply eq_zero_of_forall_inner_hermiteLp
+    intro α
+    have h := Submodule.inner_right_of_mem_orthogonal
+      (Submodule.subset_span (Set.mem_range_self α)) hg
+    simp only [hermiteNormalized, real_inner_smul_left] at h
+    have hs : (√(mfact α))⁻¹ ≠ 0 := inv_ne_zero (Real.sqrt_pos.mpr (mfact_pos α)).ne'
+    exact (mul_eq_zero.mp h).resolve_left hs)
+
+theorem coe_hermiteBasis : ⇑(hermiteBasis (ι := ι)) = hermiteNormalized :=
+  HilbertBasis.coe_mkOfOrthogonalEqBot _ _
+
+/-- The chaos expansion of every `F ∈ L²(μ)` converges in `L²`. -/
+theorem hasSum_chaos (F : Lp ℝ 2 (noise ι)) :
+    HasSum (fun α => ⟪hermiteNormalized α, F⟫_ℝ • hermiteNormalized α) F := by
+  have h := (hermiteBasis (ι := ι)).hasSum_repr F
+  simp only [HilbertBasis.repr_apply_apply, coe_hermiteBasis] at h
+  exact h
+
+/-- Parseval: `‖F‖² = ∑_α ⟨e_α, F⟩²`. -/
+theorem hasSum_chaos_norm_sq (F : Lp ℝ 2 (noise ι)) :
+    HasSum (fun α => ⟪hermiteNormalized α, F⟫_ℝ ^ 2) (‖F‖ ^ 2) := by
+  have h := (hermiteBasis (ι := ι)).hasSum_inner_mul_inner F F
+  simp only [coe_hermiteBasis, real_inner_self_eq_norm_sq] at h
+  convert h using 2 with α
+  rw [sq, real_inner_comm]
+
+end GaussianChaos.ChaosDensity

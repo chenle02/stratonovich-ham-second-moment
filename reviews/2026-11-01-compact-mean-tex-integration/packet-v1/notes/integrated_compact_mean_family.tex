@@ -1,0 +1,572 @@
+\section{Compact mean families and the full-phase spectral gap}
+\label{S:compact-mean-family}
+
+Let $I=[0,1]$, let $K_x\subset\R^d$ be compact, and let
+$\sigma\mapsto V_\sigma$ be continuous from $I$ into
+$C_c^\infty(K_x)$, real and nonnegative. The index $\sigma$ is a
+family parameter, distinct from physical propagation time $t$.
+Assume that one real $w\in H^1(\R^d)$ with $\|w\|_2=1$ satisfies
+\begin{equation}\label{E:compact-common-trial}
+  \|\nabla w\|_2^2-\int V_\sigma w^2\le-\varepsilon
+  \quad\hbox{for all }\sigma\in I,\qquad \varepsilon>0.
+\end{equation}
+Put $M=\sup_I\|V_\sigma\|_\infty$ and $H_\sigma=-\Delta-V_\sigma$.
+The phases $E,F$, inclusion $i$, data $e_0$ and observable $O_\phi$
+are exactly those of Section~\ref{S:constant-phase-young}.
+Proposition~\ref{P:constant-compact-base}, with deterministic coefficient
+$h=V_\sigma$ and noise amplitude zero, gives the actual ordinary physical
+flow $P_\sigma(t)$ on $F$. Its $E$ restriction is $P_\sigma^E(t)$.
+Uniqueness of the Duhamel solution makes finite-horizon constructions
+agree on overlaps; integer horizons and autonomy give the same
+semigroup for every $t\ge0$.
+
+We import the following statements from the \emph{second edition}
+of~\cite{teschl:14:mathematical}: Theorem~10.2, p.~258, gives the
+self-adjoint $H^2$ operator, lower bound, essential spectrum $[0,\infty)$
+and compact smooth core for real compact smooth potentials in the
+dimensions considered here. Theorem~10.13, p.~273, gives a simple
+positive ground state \emph{if the spectral bottom is an eigenvalue}.
+Theorem~4.12 and Corollary~4.13, pp.~140--141, give max--min and
+form monotonicity, with the essential threshold used after discrete
+eigenvalues end and with the quadratic-form domain allowed.
+Uniformity, fractional norms and all applications to $F$ are proved below.
+
+\subsection{The ground family and the actual global phase}
+
+\begin{proposition}[Ground states and a uniform rate gap]
+  \label{P:compact-ground-family}
+  The common form domain of $H_\sigma$ is $H^1$ with form
+  $q_\sigma(u)=\|\nabla u\|_2^2-\int V_\sigma|u|^2$.
+  Its bottom $E_1(\sigma)$ is a simple eigenvalue with a unique
+  real positive-a.e. normalized ground state $p_\sigma$.
+  Let $E_2(\sigma)$ be the second max--min level, set to zero when
+  there is no second negative eigenvalue. Then
+  \begin{align}
+    -M&\le E_1(\sigma)\le-\varepsilon,\qquad
+    E_1(\sigma)<E_2(\sigma)\le0,\label{E:compact-energy-levels}\\
+    |E_j(\sigma)-E_j(\tau)|
+    &\le\|V_\sigma-V_\tau\|_\infty,\qquad j=1,2.
+    \label{E:compact-level-continuity}
+  \end{align}
+  The map $\sigma\mapsto p_\sigma$ is continuous into $H^2$ and
+  bounded there. With
+  $\lambda_\sigma=\sqrt{-E_1(\sigma)}$ and
+  $\mu_\sigma=\sqrt{-E_2(\sigma)}$,
+  \begin{equation}\label{E:compact-rate-gap}
+    \sqrt\varepsilon\le\lambda_\sigma\le\sqrt M,\qquad
+    d_0:=\inf_I(\lambda_\sigma-\mu_\sigma)>0.
+  \end{equation}
+\end{proposition}
+
+\begin{proof}
+  The imported Theorem~10.2 applies to $-V_\sigma$, which is real,
+  compactly supported and in $L^2$ for $d\le3$. It gives the stated
+  self-adjoint operator on $H^2$ and essential threshold zero.
+  Write $c=1+M$ and $A_\sigma=H_\sigma+c\ge1$.
+  On $H^2$, integration by parts and the spectral theorem give
+  \[
+    \|A_\sigma^{1/2}u\|_2^2
+    =q_\sigma(u)+c\|u\|_2^2,\qquad
+    \|u\|_{H^1}^2\le\|A_\sigma^{1/2}u\|_2^2
+    \le c\|u\|_{H^1}^2.
+  \]
+  Spectral cutoffs $1_{[1,n]}(A_\sigma)u$ show that $H^2$ is a
+  core for the half-power form norm. Fourier cutoffs show it is
+  dense in $H^1$. The two equivalent completions are therefore
+  $D(A_\sigma^{1/2})$ and $H^1$. Both norms dominate $L^2$ and
+  give the same $L^2$ limit, so these are equal as subspaces, with
+  the displayed form. This verifies the form domain used below.
+
+  The form lower bound and~\eqref{E:compact-common-trial} give
+  $-M\le E_1\le-\varepsilon$ by the imported form max--min principle.
+  The bottom belongs to the spectrum and lies below the essential
+  threshold, so it is an isolated eigenvalue of finite multiplicity.
+  Only now apply the imported Theorem~10.13: it is simple with a
+  positive ground state. Conjugation preserves the real operator;
+  positivity and unit $L^2$ norm fix its real representative.
+
+  Simplicity, isolation and threshold zero give $E_1<E_2\le0$.
+  For every common unit form test,
+  $|q_\sigma(u)-q_\tau(u)|\le\|V_\sigma-V_\tau\|_\infty$.
+  Taking the same infima over orthogonal complements and suprema
+  in the source max--min formula proves
+  \eqref{E:compact-level-continuity}, including passage of $E_2$
+  to the threshold. Compactness gives
+  $\Delta_*:=\min_I(E_2-E_1)>0$. Thus
+  \[
+    \lambda_\sigma-\mu_\sigma
+    =\frac{E_2(\sigma)-E_1(\sigma)}
+    {\lambda_\sigma+\mu_\sigma}
+    \ge\frac{\Delta_*}{2\sqrt M}>0.
+  \]
+  Here $M\ge\varepsilon>0$, and no division by $\mu_\sigma$ occurs.
+
+  Put $d_V=\|V_\sigma-V_\tau\|_\infty$ and decompose
+  $p_\tau=a p_\sigma+r$, with $r\perp p_\sigma$ and $0<a\le1$.
+  The variational bound gives
+  $q_\sigma(p_\tau)\le E_1(\sigma)+2d_V$, whereas the complementary
+  spectral bound gives
+  $q_\sigma(p_\tau)\ge E_1(\sigma)+\Delta_*\|r\|_2^2$.
+  Hence,
+  \begin{equation}\label{E:compact-ground-continuity}
+    \|p_\tau-p_\sigma\|_2^2
+    =2(1-a)\le2(1-a^2)\le4d_V/\Delta_*.
+  \end{equation}
+  The eigenfunction equation is
+  \[
+    (1-\Delta)p_\sigma
+    =(1-\lambda_\sigma^2+V_\sigma)p_\sigma.
+  \]
+  Its right side is continuous in $L^2$ and bounded there by $1+2M$.
+  The inverse of $1-\Delta$ is an isometry from $L^2$ to the Bessel
+  $H^2$ space, proving the asserted $H^2$ continuity and bound.
+  This proves Proposition~\ref{P:compact-ground-family}.
+\end{proof}
+
+\begin{lemma}[Uniform fractional phase norms]\label{L:compact-fractional-phase}
+  Let $B=1-\Delta$, $c=1+M$ and $A_\sigma=H_\sigma+c$.
+  The quarter-power domain is $H^{1/2}$ and
+  \begin{equation}\label{E:compact-quarter-power}
+    \|B^{1/4}u\|_2\le\|A_\sigma^{1/4}u\|_2
+    \le c^{1/4}\|B^{1/4}u\|_2.
+  \end{equation}
+  The norm
+  \begin{equation}\label{E:compact-spectral-phase-norm}
+    \|(u,z)\|_{E_\sigma}^2
+    =\|A_\sigma^{1/4}u\|_2^2
+    +\|A_\sigma^{-1/4}z\|_2^2
+  \end{equation}
+  is uniformly equivalent to the actual fixed norm on
+  $E=H^{1/2}\times H^{-1/2}$, interpreting the negative entry by
+  completion.
+\end{lemma}
+
+\begin{proof}
+  On the common form domain $H^1$, $B\le A_\sigma\le cB$ and all
+  three operators are at least one. For positive self-adjoint $T,S$
+  with common form domain, $T\le S$ implies
+  $(T+t)^{-1}\ge(S+t)^{-1}$ for $t>0$. Indeed,
+  \[
+    \langle f,(T+t)^{-1}f\rangle
+    =\sup_u\{2\operatorname{Re}\langle f,u\rangle
+    -q_T(u)-t\|u\|_2^2\};
+  \]
+  completing the square in the closed form norm proves the identity,
+  and comparison of the suprema proves the order.
+  Consequently $I-t(T+t)^{-1}\le I-t(S+t)^{-1}$.
+  The scalar identity
+  \[
+    \sqrt x=\frac1\pi\int_0^\infty
+    t^{-1/2}\frac{x}{x+t}\ud t
+  \]
+  follows by $t=xr^2$ and $\int_0^\infty(1+r^2)^{-1}\ud r=\pi/2$.
+  Spectral integration and positive Tonelli, first over finite
+  intervals and then by monotone convergence, give
+  $T^{1/2}\le S^{1/2}$ as forms, including domain inclusions.
+  Apply this to $B\le A_\sigma\le cB$ to obtain
+  \eqref{E:compact-quarter-power} and equality of the quarter-power
+  domains with $H^{1/2}$.
+
+  Under the $L^2$ pairing the dual norm of
+  $\|A_\sigma^{1/4}u\|_2$ at $z\in L^2$ is
+  $\|A_\sigma^{-1/4}z\|_2$. Cauchy--Schwarz gives the upper bound,
+  and a scalar multiple of $A_\sigma^{-1/2}z$ attains it.
+  Completion and~\eqref{E:compact-quarter-power} identify this
+  negative space with $H^{-1/2}$, uniformly in $\sigma$.
+  Adding the squared norms proves the claim.
+  This proves Lemma~\ref{L:compact-fractional-phase}.
+\end{proof}
+
+\begin{proposition}[The actual complementary wave on $E$]
+  \label{P:compact-E-wave}
+  Put
+  \[
+    e_\sigma^E=(p_\sigma,\lambda_\sigma p_\sigma),\qquad
+    \ell_\sigma^E(u,z)
+    =\frac{\langle p_\sigma,u\rangle+
+    \langle p_\sigma,z\rangle/\lambda_\sigma}{2},
+    \qquad \Pi_\sigma^E=e_\sigma^E\ell_\sigma^E.
+  \]
+  These are bounded real objects, continuous in their respective norms,
+  with $\ell_\sigma^E(e_\sigma^E)=1$, and
+  \begin{align}
+    P_\sigma^E(t)e_\sigma^E
+    &=e^{\lambda_\sigma t}e_\sigma^E,\qquad
+    \ell_\sigma^EP_\sigma^E(t)
+    =e^{\lambda_\sigma t}\ell_\sigma^E,\label{E:compact-E-eigen}\\
+    \|P_\sigma^E(t)(I-\Pi_\sigma^E)\|_{\mathcal B(E)}
+    &\le C(1+t)e^{\mu_\sigma t},\qquad t\ge0.
+    \label{E:compact-E-complement}
+  \end{align}
+  The constant is uniform over $\sigma\in I$.
+\end{proposition}
+
+\begin{proof}
+  Define real spectral functions $C_t(h),S_t(h)$ by
+  $\cos(t\sqrt h),\sin(t\sqrt h)/\sqrt h$ for $h>0$,
+  by $1,t$ at zero, and by
+  $\cosh(t\sqrt{-h}),\sinh(t\sqrt{-h})/\sqrt{-h}$ for $h<0$.
+  The spectral wave matrix is
+  \begin{equation}\label{E:compact-spectral-wave}
+    \begin{pmatrix}
+      C_t(H_\sigma)&S_t(H_\sigma)\\
+      -H_\sigma S_t(H_\sigma)&C_t(H_\sigma)
+    \end{pmatrix}.
+  \end{equation}
+  Real potentials, their resolvents and spectral resolutions commute
+  with conjugation. All these real functions and positive $A_\sigma$
+  powers preserve the actual real phases.
+
+  The spatial projection
+  $Q_\sigma^{\mathrm{sp}}=I-|p_\sigma\rangle\langle p_\sigma|$
+  commutes with $H_\sigma,A_\sigma$ and is contractive on both
+  entries of~\eqref{E:compact-spectral-phase-norm}.
+  On its support $h\ge E_2=-\mu_\sigma^2$, the phase isometry gives
+  scalar matrix entries
+  \[
+    C_t(h),\quad \sqrt{h+c}\,S_t(h),\quad
+    -hS_t(h)/\sqrt{h+c},\quad C_t(h).
+  \]
+  For $h\ge0$, use $|S_t(h)|\le\min(t,h^{-1/2})$ and split
+  $h\le1$ from $h\ge1$; the lower off-diagonal entry is at most
+  one. For $-\mu_\sigma^2\le h<0$, use
+  $|C_t(h)|\le e^{\mu_\sigma t}$ and
+  $|S_t(h)|\le t e^{\mu_\sigma t}$, with
+  $|h|\le M$ and $1\le h+c\le c$.
+  Thus the complementary spatial matrix has norm at most
+  $C(1+t)e^{\mu_\sigma t}$, including $\mu_\sigma=0$.
+
+  The two spatial ground branches are
+  $(p_\sigma,\pm\lambda_\sigma p_\sigma)$. Besides $\Pi_\sigma^E$,
+  their projections include the decaying branch
+  \[
+    (p_\sigma,-\lambda_\sigma p_\sigma)
+    \frac{\langle p_\sigma,u\rangle
+    -\langle p_\sigma,z\rangle/\lambda_\sigma}{2}.
+  \]
+  Their sum is the spatial ground projection on both phase entries.
+  Both projection norms are uniformly bounded in the spectral phase
+  norm because $\sqrt\varepsilon\le\lambda_\sigma\le\sqrt M$
+  and $1\le c-\lambda_\sigma^2\le c$. The decaying branch has
+  factor $e^{-\lambda_\sigma t}$ and remains in $I-\Pi_\sigma^E$.
+  The fractional norm equivalence now proves the stated complement
+  estimate for the spectral matrix.
+
+  We identify this matrix with the actual physical flow.
+  The same scalar bounds at graph levels
+  $(A_\sigma u,A_\sigma^{1/2}z)$ give continuous solutions in
+  $H^2\times H^1$. These graph norms are uniformly equivalent to
+  the Sobolev norms: the $H^1$ case was proved above, and
+  $A_\sigma-B=M-V_\sigma$ is bounded by $M$ while $A_\sigma,B\ge1$.
+  Spectral cutoffs give $u_t=z$ in $H^1$ and $z_t=-H_\sigma u$ in
+  $L^2$, with continuous derivatives there.
+  The free Fourier group on $H^1\times L^2$ has, after its Bessel
+  isometry, the same bounded weighted entries and is strongly
+  continuous by dominated Fourier convergence. Its generator is
+  $(z,\Delta u)$ on $H^2\times H^1$, as the Fourier multipliers
+  show. For compact smooth initial data, differentiating the free
+  interaction picture at these graph levels gives Duhamel with force
+  $(0,V_\sigma u)$. The identity also holds in $E$.
+  Multiplication by $V_\sigma$ maps $H^{1/2}$ into $L^2$ and then
+  $H^{-1/2}$ with bound $M$, so Picard uniqueness identifies the
+  spectral solution with the ordinary $E$ flow on these data.
+  Density within $E$ and finite-horizon boundedness extend equality
+  to all $E$. No density of $E$ in $F$ is used.
+  Finally, the ground branches give~\eqref{E:compact-E-eigen};
+  their pairings are continuous because $p_\sigma\in H^2$.
+  Continuity and uniform bounds of the displayed vectors and duals
+  follow from Proposition~\ref{P:compact-ground-family}.
+  This proves Proposition~\ref{P:compact-E-wave}.
+\end{proof}
+
+\subsection{The full-phase projection and its complementary flow}
+
+For the constant coordinates write
+$C(t)(c_1,c_2)=(c_1+tc_2,c_2)$ and
+$D_\sigma(c_1,c_2)=(0,V_\sigma c_1)\in E$.
+
+\begin{proposition}[The full-phase growing projection]
+  \label{P:compact-F-projection}
+  The actual physical flow satisfies
+  \begin{equation}\label{E:compact-F-block}
+    P_\sigma(t)(e,c)
+    =\left(P_\sigma^E(t)e+
+    \int_0^tP_\sigma^E(t-r)D_\sigma C(r)c\ud r,\ C(t)c\right).
+  \end{equation}
+  Set
+  \begin{align}
+    f_\sigma&=\frac{\int V_\sigma p_\sigma}{2\lambda_\sigma}>0,
+    &\ell_\sigma^C(c)&=
+    f_\sigma\left(\frac{c_1}{\lambda_\sigma}
+    +\frac{c_2}{\lambda_\sigma^2}\right),
+    \label{E:compact-constant-dual}\\
+    e_\sigma&=ie_\sigma^E,
+    &\ell_\sigma(e,c)&=\ell_\sigma^E(e)+\ell_\sigma^C(c),\qquad
+    \Pi_\sigma=e_\sigma\ell_\sigma,\quad Q_\sigma=I-\Pi_\sigma.
+    \label{E:compact-F-projection}
+  \end{align}
+  These vectors, duals and rank-one projections are norm-continuous
+  and uniformly bounded, and
+  \begin{equation}\label{E:compact-F-eigen}
+    \ell_\sigma(e_\sigma)=1,\qquad
+    P_\sigma(t)\Pi_\sigma=\Pi_\sigma P_\sigma(t)
+    =e^{\lambda_\sigma t}\Pi_\sigma.
+  \end{equation}
+  For every fixed nonnegative smooth compact $\phi$ of integral one,
+  \begin{equation}\label{E:compact-positive-margins}
+    \inf_I\ell_\sigma(e_0)>0,\qquad
+    \inf_I O_\phi(e_\sigma)>0.
+  \end{equation}
+\end{proposition}
+
+\begin{proof}
+  The constant coordinates obey $C(t)$ because the potential force
+  has range in $iE$. To justify variation of constants on the $E$
+  component, let $g$ be a continuous $E$ force and substitute the
+  ordinary free-Duhamel equation for $P_\sigma^E(t-r)g(r)$ in its
+  time integral. With $B_\sigma^E(u,z)=(0,V_\sigma u)$, strong
+  $E$-valued Fubini gives
+  \begin{align*}
+    &\int_0^t\int_r^t S(t-s)B_\sigma^E
+    P_\sigma^E(s-r)g(r)\ud s\ud r\\
+    &\qquad=\int_0^tS(t-s)B_\sigma^E
+    \left[\int_0^sP_\sigma^E(s-r)g(r)\ud r\right]\ud s.
+  \end{align*}
+  All norms are bounded on the finite triangle, so this exchange is
+  absolute in $E$. Thus
+  $Y(t)=P_\sigma^E(t)e+\int_0^tP_\sigma^E(t-r)g(r)\ud r$
+  solves free Duhamel with force $B_\sigma^EY+g$.
+  Take $g(r)=D_\sigma C(r)c$ and adjoin the constant block.
+  This is the same $F$ Duhamel equation as the actual ordinary flow;
+  uniqueness proves~\eqref{E:compact-F-block}.
+  Its finite-horizon bounds are uniform since the family has bounded
+  $L^\infty$ and $L^2$ norms on one compact support.
+
+  The integral defining $f_\sigma$ is finite by $L^2$
+  Cauchy--Schwarz and positive because $V_\sigma$ is nonzero by
+  the common trial and $p_\sigma>0$ a.e. Its coefficients are
+  continuous and uniformly bounded by the $H^2$ continuity and
+  positive rate floor; no $p_\sigma\in L^1$ assumption is used.
+  Directly,
+  \begin{align*}
+    \ell_\sigma^ED_\sigma C(r)c&=f_\sigma(c_1+rc_2),\\
+    \ell_\sigma^C(c)
+    &=\int_0^\infty e^{-\lambda_\sigma r}
+    f_\sigma(c_1+rc_2)\ud r,\\
+    \ell_\sigma^C(C(t)c)
+    &=\int_t^\infty e^{\lambda_\sigma(t-r)}
+    f_\sigma(c_1+rc_2)\ud r.
+  \end{align*}
+  These integrals converge absolutely. Applying $\ell_\sigma$ to
+  \eqref{E:compact-F-block}, the finite integral and this tail
+  combine to give
+  $\ell_\sigma P_\sigma(t)=e^{\lambda_\sigma t}\ell_\sigma$.
+  The ground mode also gives
+  $P_\sigma(t)e_\sigma=e^{\lambda_\sigma t}e_\sigma$ and
+  $\ell_\sigma(e_\sigma)=1$, proving~\eqref{E:compact-F-eigen}.
+  Bounded bilinear multiplication and the preceding continuous
+  coefficients prove norm continuity of all objects.
+  Finally,
+  $\ell_\sigma(e_0)=f_\sigma/\lambda_\sigma>0$ and
+  $O_\phi(e_\sigma)=\int\phi p_\sigma>0$.
+  Both are continuous on compact $I$, proving
+  \eqref{E:compact-positive-margins}. Positivity is in integrals,
+  without a point trace or a one-dimensional ODE.
+  This proves Proposition~\ref{P:compact-F-projection}.
+\end{proof}
+
+\begin{proposition}[Full-phase complement and parameter control]
+  \label{P:compact-F-complement}
+  Uniformly over $\sigma$ and $t\ge0$,
+  \begin{equation}\label{E:compact-F-complement}
+    \|P_\sigma(t)Q_\sigma\|_{\mathcal B(F)}
+    \le C(1+t)^3e^{\mu_\sigma t}.
+  \end{equation}
+  For every fixed $0<\eta<d_0$,
+  \begin{equation}\label{E:compact-normalized-complement}
+    \|e^{-\lambda_\sigma t}P_\sigma(t)Q_\sigma\|
+    \le C_\eta e^{-\eta t}.
+  \end{equation}
+  For every finite $T_0$,
+  \begin{equation}\label{E:compact-parameter-flow}
+    \sup_{0\le t\le T_0}\|P_\sigma(t)-P_\tau(t)\|_{\mathcal B(F)}
+    \le C_{T_0}
+    \big(\|V_\sigma-V_\tau\|_\infty+\|V_\sigma-V_\tau\|_2\big).
+  \end{equation}
+\end{proposition}
+
+\begin{proof}
+  Write $Q_\sigma^E=I-\Pi_\sigma^E$. Split $D_\sigma$ into its
+  growing and complementary parts in~\eqref{E:compact-F-block}
+  and use the two tail integrals in the preceding proof.
+  The exact $E$ component of $P_\sigma(t)Q_\sigma(e,c)$ is
+  \begin{equation}\label{E:compact-complement-forcing}
+    P_\sigma^E(t)Q_\sigma^Ee
+    +\int_0^tP_\sigma^E(t-r)Q_\sigma^ED_\sigma C(r)c\ud r
+    -e_\sigma^E\ell_\sigma^C(C(t)c),
+  \end{equation}
+  and the constant component is $C(t)c$. The final subtraction
+  retains the growing response to constants in the projection.
+  Since $\|Q_\sigma^ED_\sigma C(r)\|\le C(1+r)$, the integral
+  in~\eqref{E:compact-complement-forcing} has norm at most
+  \[
+    Ce^{\mu_\sigma t}|c|
+    \int_0^t(1+t-r)(1+r)\ud r
+    =Ce^{\mu_\sigma t}(t+t^2+t^3/6)|c|.
+  \]
+  The first term is bounded by
+  $C(1+t)e^{\mu_\sigma t}\|e\|_E$; the final term and constant
+  component by $C(1+t)|c|$. Since $\mu_\sigma\ge0$ this proves
+  \eqref{E:compact-F-complement}.
+  The boundedness of $(1+t)^3e^{-(d_0-\eta)t}$ proves
+  \eqref{E:compact-normalized-complement}. In particular, the
+  constant-velocity polynomial is included in this estimate.
+
+  Put $\mathcal B_\sigma=iB_F(V_\sigma)$ and
+  $d_{\sigma,\tau}=\|V_\sigma-V_\tau\|_\infty+
+  \|V_\sigma-V_\tau\|_2$.
+  The bound for $B_F$ gives
+  $\|\mathcal B_\sigma-\mathcal B_\tau\|\le d_{\sigma,\tau}$.
+  Subtract the two free-Duhamel equations on states. Their difference
+  is the sum of the integral with
+  $S_F(t-r)\mathcal B_\sigma(P_\sigma(r)-P_\tau(r))$ and that with
+  $S_F(t-r)(\mathcal B_\sigma-\mathcal B_\tau)P_\tau(r)$.
+  The uniform finite-horizon bounds and scalar Gronwall prove
+  \eqref{E:compact-parameter-flow}. The operator norm is measurable:
+  separability of $F$ expresses it as the supremum over a countable
+  dense set of unit states, each with continuous image.
+  Hence Gronwall applies without a $\mathcal B(F)$-valued derivative
+  or operator-norm continuity of the free group.
+  This proves Proposition~\ref{P:compact-F-complement}.
+\end{proof}
+
+\subsection{The original positive raw control and a common trial}
+
+\begin{lemma}[The original mean and raw variance]\label{L:compact-raw-profile}
+  Let $\Gamma\ne0$ satisfy Hypothesis~\ref{H:homog}, let $a=\alpha_0$,
+  and let real nonnegative nonzero
+  $\Psi\in C_c^\infty((0,1)\times\R^d)$ be arbitrary, without a
+  separability assumption. Define
+  \begin{equation}\label{E:compact-raw-mean}
+    h_\sigma(x)=\int_0^1|\sigma-u|^{-a}
+    (\Gamma*\Psi(u,\cdot))(x)\ud u,\qquad
+    \overline q(x)=\int_0^1\Psi(u,x)\ud u,\qquad Z=W(\Psi).
+  \end{equation}
+  Then $h$ is smooth in time and space on compact sets, and
+  \begin{equation}\label{E:compact-raw-cost}
+    0<v_\Psi:=\E Z^2
+    =\int_0^1\int\Psi(\sigma,x)h_\sigma(x)\ud x\ud\sigma<\infty.
+  \end{equation}
+  Against every smooth compact positive-time test $F_0$,
+  \[
+    \E[W(\Psi)W(F_0)]=\int F_0(s,x)h_s(x)\ud x\ud s.
+  \]
+  Moreover, on $I$,
+  \begin{equation}\label{E:compact-positive-mean-floor}
+    h_\sigma\ge\Gamma*\overline q,\qquad
+    v_\Psi\ge Q(\overline q)
+    :=\int\Gamma(\ud z)\int\overline q(x)\overline q(x-z)\ud x>0.
+  \end{equation}
+  For every fixed mask, $V_\sigma=m_Rh_\sigma$ is a smooth compact
+  family, Lipschitz in $\sigma$ in $L^\infty$ and $L^2$.
+\end{lemma}
+
+\begin{proof}
+  Choose $A\ge1$ containing the spatial support of $\Psi$ in $B_A$.
+  The raw covariance identity and absolute Fubini give the stated
+  mean pairing: the two compact tests restrict spatial differences
+  to a compact set of finite $\Gamma$ mass, and the time singularity
+  is locally integrable since $a<1$. This identifies the actual
+  linear covariance mean without evaluating noise at a point.
+  The same calculation gives~\eqref{E:compact-raw-cost}.
+  Its spatial integrand is bounded in integral by
+  $\|\Psi\|_\infty^2|B_A|\Gamma(\overline B_{2A})$,
+  and $\int_0^1\int_0^1|\sigma-u|^{-a}\ud u\ud\sigma
+  =2/((1-a)(2-a))$, proving finiteness.
+
+  Nonnegative nonzero smooth $\Psi$ has positive integral, so
+  $\overline q\ne0$. Nonzero $\Gamma$ charges some ball, and
+  homogeneity gives
+  $\Gamma(B_1)=r^{\alpha-d}\Gamma(B_r)>0$.
+  Thus every positive-radius ball has positive finite mass.
+  The continuous compact autocorrelation
+  $\int\overline q(x)\overline q(x-z)\ud x$
+  is positive at zero and bounded below on some ball.
+  This proves $0<Q(\overline q)<\infty$.
+  Since $|\sigma-u|^{-a}\ge1$ on the unit time square,
+  positive Tonelli gives both inequalities in
+  \eqref{E:compact-positive-mean-floor}.
+
+  Extend $\Psi$ by zero in time and write
+  \[
+    h_s(x)=\int_\R |r|^{-a}
+    \int\Gamma(\ud z)\Psi(s-r,x-z)\ud r.
+  \]
+  On compact $s,x$ sets the relevant $r,z$ range over fixed
+  compact sets; $|r|^{-a}$ is integrable there. Every derivative
+  falls on the smooth test, not on the singular time kernel.
+  Dominated differentiation gives smoothness and continuity of all
+  derivatives on compacts. Multiplication by $m_R$ now gives the
+  claimed compact family and its fixed-$R$ Lipschitz bounds.
+  This proves Lemma~\ref{L:compact-raw-profile}.
+\end{proof}
+
+\begin{proposition}[Binding with the original control and cost fixed]
+  \label{P:compact-original-common-trial}
+  For every $\Psi$ in Lemma~\ref{L:compact-raw-profile}, a sufficiently
+  large finite mask $m_R$ gives $V_\sigma=m_Rh_\sigma$ a common
+  negative trial~\eqref{E:compact-common-trial}.
+  Thus all preceding ground, projection, positive-margin and
+  complementary-wave conclusions apply. The actual rate is
+  Lipschitz on $I$ and has $\lambda_0>0$.
+  The original test $\Psi$, raw variable $Z$ and variance $v_\Psi$
+  are unchanged by this choice. The mask can additionally cover any
+  fixed compact variational test supports.
+\end{proposition}
+
+\begin{proof}
+  Choose a real unit $L^2$ function $\psi\in C_c^\infty(B_2)$
+  with $\psi\ge c_0>0$ on $B_1$, and put
+  $\psi_L(x)=L^{-d/2}\psi(x/L)$, $D_\psi=\|\nabla\psi\|_2^2$,
+  where $L\ge\max(1,2A)$. Choose the actual even mask with
+  $R\ge2L$, so $V_\sigma=h_\sigma$ on $\operatorname{supp}\psi_L$.
+  Positive Tonelli and~\eqref{E:compact-positive-mean-floor} give
+  \begin{align}
+    \int V_\sigma\psi_L^2
+    &\ge c_0^2L^{-d}\int_{B_L}(\Gamma*\overline q)(x)\ud x\nonumber\\
+    &=c_0^2L^{-d}\int\overline q(y)\Gamma(B_L-y)\ud y\nonumber\\
+    &\ge c_0^2L^{-d}\Gamma(B_{L/2})\int\overline q
+    =C_\Gamma L^{-\alpha},\label{E:compact-trial-potential}\\
+    C_\Gamma&=c_0^22^{\alpha-d}\Gamma(B_1)\int\overline q>0.\nonumber
+  \end{align}
+  Here $B_{L/2}\subset B_L-y$ for $|y|\le A$ and $L\ge2A$.
+  All covariance masses in the argument are compact and finite.
+  The kinetic energy is $D_\psi L^{-2}$. Since $\alpha<2$,
+  choose $L$ large enough that
+  $\varepsilon_R:=C_\Gamma L^{-\alpha}-D_\psi L^{-2}>0$.
+  Then
+  \[
+    \|\nabla\psi_L\|_2^2-\int V_\sigma\psi_L^2
+    \le-\varepsilon_R\quad\hbox{for every }\sigma\in I.
+  \]
+  Fix this finite $R$ before invoking
+  Proposition~\ref{P:compact-ground-family}.
+  Its level bound and the mean Lipschitz estimate give
+  \[
+    |\lambda_\sigma-\lambda_\tau|
+    \le\frac{\|V_\sigma-V_\tau\|_\infty}{2\sqrt{\varepsilon_R}}
+    \le C_R|\sigma-\tau|.
+  \]
+  The positive mean integrates the entire time test, so
+  $\lambda_0>0$ even though $\Psi(0,\cdot)=0$.
+  Only the trial and mask have grown; the raw test, its variable and
+  \eqref{E:compact-raw-cost} were fixed first.
+  Enlarging $R$ to contain additional fixed compact test supports
+  preserves the trial and gives equality of masked and unmasked
+  potential energies on those supports. This includes singular
+  invariant-direction covariances and the one-dimensional white case.
+  It is not an all-strength binding assertion for one fixed compact
+  potential. Masks are fixed before source or time asymptotics;
+  a later supremum over controls must follow their individual bounds.
+  This proves Proposition~\ref{P:compact-original-common-trial}.
+\end{proof}

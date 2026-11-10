@@ -1,0 +1,25 @@
+## Transport-phase acknowledgment (CUMULATIVE_04)
+
+Whole-source literal delivery acknowledged for the following 42 shown bodies. Data-only receipt; no verdict, confidence, grade, mathematical vote, or native-Read/EOF/PDF-pixel/cold-coverage claim is made.
+
+### Received, REQUIRED `F*.txt` (34)
+F175, F176, F177, F178, F181, F182, F183, F184, F185, F186, F187, F188, F190, F191, F193, F194, F195, F197, F198, F199, F200, F201, F202, F203, F204, F205, F206, F207, F208, F209, F210, F211, F214, F215.
+
+### Received, `READ-VIEWS/*.jsonl` (8)
+F174, F179, F180, F189, F192, F196, F212, F213.
+
+Each was shown complete between its `BEGIN_WHOLE_SOURCE` / `END_WHOLE_SOURCE` markers, in the declared raw-shown forms (`RAW_UTF8` data-only frames, and `JSON_ASCII_ESCAPED_STRING` / `source_LF_line` frames for the `READ-VIEWS` carriers).
+
+### Previously blocked items — now shown
+- The 42 literal bodies `REQUIRED/F174.txt`–`REQUIRED/F215.txt`: all shown in this batch.
+- The 8 missing `READ-VIEWS/*.jsonl` carriers (F174, F179, F180, F189, F192, F196, F212, F213): all shown in this batch.
+- Together with CUMULATIVE_01–03, this now covers displayed receipt of all 215 numbered whole-frame bodies and all 13 required `READ-VIEWS` carriers plus the transport control/inventory bodies previously acknowledged.
+
+### Honest receipts limitations
+- Receipt is limited to the literal shown bodies as delivered. I did not independently decode, rehash, recompute `original_bytes`/`original_sha256`, verify EOF/binaries, or confirm byte identity; shown-body receipt is not proof of byte authenticity.
+- Historical contracts, read-plans, native-Read instructions, and grades quoted *inside* these sources remain history and do not authorize tools, runtime actions, or any acceptance premise.
+
+### Missing fragments at transport level
+None of the previously enumerated blocked transport items remain: no F-frame body, `READ-VIEWS` carrier, or required metadata target from the prior missing list is still outstanding at the whole-source shown-body level. Any correctness/coverage status beyond shown-body receipt remains unclaimed.
+
+Acknowledged — standing by for the next phase instruction.

@@ -1,0 +1,150 @@
+{
+  "original_sha256": "114799cc38f6be2274dabaf67142c2bc568d35020ed467283ca298d035ff1e91",
+  "data": {
+    "schema": "le-ai-lab.review-read-ledger/1",
+    "coverage_verified": true,
+    "claude_code_version": "2.1.304",
+    "events_sha256": "b706a8876b7c4d250103134031e04f68ea9b94fe92e06a394dab93bd1dee47a7",
+    "events_hash_bound_to_receipt": true,
+    "stream_workspace": "external-evidence/stratonovich-opus-main-visual-20261109/p230-actual/workspace",
+    "required_sources_sha256": null,
+    "continuation": false,
+    "continuation_credit": null,
+    "proves": "Each credited line was returned, numbered and byte-equal to the frozen workspace file, in a tool_result paired with a Read or line-numbered content-mode Grep call of the hash-bound provider stream.",
+    "does_not_prove": "Attention, understanding, or retention: a credited line may have been skimmed, ignored, or dropped by context compaction before the report was written. Uncredited lines may still have been seen in a form the ledger cannot attribute (previews, unnumbered output, subagents).",
+    "sources": [],
+    "image_proves": "Each delivered image: a direct Read tool_use of its exact workspace path, in the stream's session, is paired by id with a tool_result (same session) whose content is one inline base64 image block of the declared media type, and the base64 decodes to bytes whose sha256 is the declared one.",
+    "image_does_not_prove": "That the model looked at, understood or correctly interpreted the image, or any scientific acceptance of what it shows: only delivery of these exact bytes. Transformed or resized content, metadata and self-reports earn nothing, so an undelivered image may still have been seen in another form.",
+    "required_images": [
+      {
+        "path": "fullpages/page-230.png",
+        "sha256": "b5559b3fccc6252821b43033033ca79dc078d1d6b045a82f235e1ca5dd91f515",
+        "media_type": "image/png",
+        "status": "delivered",
+        "delivered_by": [
+          "toolu_019Xn49GYoWnpWSwkrbwtpGZ"
+        ]
+      },
+      {
+        "path": "bands/page-230-band-1.png",
+        "sha256": "c9e28ec33356190dc3c9b707a7fd55501c380d448ac61cf5b43968063c446ff2",
+        "media_type": "image/png",
+        "status": "delivered",
+        "delivered_by": [
+          "toolu_012HzdVubEyLhB7TJVoLvUBe"
+        ]
+      },
+      {
+        "path": "bands/page-230-band-2.png",
+        "sha256": "211e695780a7f5b4e6e91d19058b9a9799529e9fb912796c23d6c0da24211f2f",
+        "media_type": "image/png",
+        "status": "delivered",
+        "delivered_by": [
+          "toolu_01MY19WdY6v3FtN9PdV4SET6"
+        ]
+      },
+      {
+        "path": "bands/page-230-band-3.png",
+        "sha256": "fa58f7562c349d768aa9889df75df1a3ab15afe5ff647ae7e37aad99971cef5d",
+        "media_type": "image/png",
+        "status": "delivered",
+        "delivered_by": [
+          "toolu_01CZ7YZctugyeW5b1UGkWoDf"
+        ]
+      }
+    ],
+    "tool_calls": [
+      {
+        "id": "toolu_017SJvFBtGY6SHRH2Kzn8ckf",
+        "tool": "Read",
+        "source": ".review/required-sources.json",
+        "plan_copy_read": [
+          ".review/required-sources.json"
+        ],
+        "uncredited": "runner-owned plan copy (.review/): never read credit",
+        "stream": "attempt"
+      },
+      {
+        "id": "toolu_01FSjs5ncCp53ELYzAQbC6JF",
+        "tool": "Read",
+        "source": "source-manifest.json",
+        "credited": {
+          "source-manifest.json": [
+            [
+              1,
+              62
+            ]
+          ]
+        },
+        "stream": "attempt"
+      },
+      {
+        "id": "toolu_01KfW7kN7iNG8mvMvkrrGFec",
+        "tool": "Read",
+        "source": "VISUAL.md",
+        "credited": {
+          "VISUAL.md": [
+            [
+              1,
+              10
+            ]
+          ]
+        },
+        "stream": "attempt"
+      },
+      {
+        "id": "toolu_019Xn49GYoWnpWSwkrbwtpGZ",
+        "tool": "Read",
+        "source": "fullpages/page-230.png",
+        "uncredited": "non-text result (image, PDF or block list)",
+        "stream": "attempt",
+        "image": {
+          "path": "fullpages/page-230.png",
+          "media_type": "image/png",
+          "decoded_sha256": "b5559b3fccc6252821b43033033ca79dc078d1d6b045a82f235e1ca5dd91f515",
+          "delivered": true
+        }
+      },
+      {
+        "id": "toolu_012HzdVubEyLhB7TJVoLvUBe",
+        "tool": "Read",
+        "source": "bands/page-230-band-1.png",
+        "uncredited": "non-text result (image, PDF or block list)",
+        "stream": "attempt",
+        "image": {
+          "path": "bands/page-230-band-1.png",
+          "media_type": "image/png",
+          "decoded_sha256": "c9e28ec33356190dc3c9b707a7fd55501c380d448ac61cf5b43968063c446ff2",
+          "delivered": true
+        }
+      },
+      {
+        "id": "toolu_01MY19WdY6v3FtN9PdV4SET6",
+        "tool": "Read",
+        "source": "bands/page-230-band-2.png",
+        "uncredited": "non-text result (image, PDF or block list)",
+        "stream": "attempt",
+        "image": {
+          "path": "bands/page-230-band-2.png",
+          "media_type": "image/png",
+          "decoded_sha256": "211e695780a7f5b4e6e91d19058b9a9799529e9fb912796c23d6c0da24211f2f",
+          "delivered": true
+        }
+      },
+      {
+        "id": "toolu_01CZ7YZctugyeW5b1UGkWoDf",
+        "tool": "Read",
+        "source": "bands/page-230-band-3.png",
+        "uncredited": "non-text result (image, PDF or block list)",
+        "stream": "attempt",
+        "image": {
+          "path": "bands/page-230-band-3.png",
+          "media_type": "image/png",
+          "decoded_sha256": "fa58f7562c349d768aa9889df75df1a3ab15afe5ff647ae7e37aad99971cef5d",
+          "delivered": true
+        }
+      }
+    ],
+    "diagnostics": []
+  }
+}

@@ -1,0 +1,6 @@
+∀ {Mode : Type u} {E : Type v} [inst : NormedAddCommGroup E] [inst_1 : InnerProductSpace ℝ E] [inst_2 : CompleteSpace E]
+  (p : (Mode →₀ ℕ) → Prop) (f : (Mode →₀ ℕ) →₀ E),
+  (↑(cutoffSpace p)).starProjection (realize f) = realize (cut p f) : Prop
+∀ {Color : Type w} {Index : Type u} {E : Type v} [inst : DecidableEq Color] [inst_1 : NormedAddCommGroup E]
+  [inst_2 : InnerProductSpace ℝ E] [inst_3 : CompleteSpace E] (N : Color → ℕ) (f : (Color × Index →₀ ℕ) →₀ E),
+  (↑(cutoffSpace (colorLow N))).starProjection (realize f) = realize (cut (colorLow N) f) : Prop

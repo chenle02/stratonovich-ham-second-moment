@@ -1,0 +1,9 @@
+# New integrated judgment after mathematical reconstruction: READY only
+
+No model dispatch is authorized by this document. Root prepared the exact new final user bytes and independently checked all222 cumulative sources, actual73/83 freshness after the last no-tail compaction, and all10 prospective whole-body inverses. No source cut, role/alias pruning, new compaction, source/PDF change or grade normalization occurred.
+
+The current immutable history retains genuine work10 and11. The final payload adds the missing F003/F007–F012/F101–F103 whole bodies, the complete unchanged original MAIN LOW, whole Root adjudications and the full new Kimi source02 mathematical report/adjudication. The old outcome is a challenge, not a grade to rewrite. The final assignment still requires each215 OWN proof, each13 join, all241 declaration roles, actual imports/domains/all models/amplitude/zero/calibrations and the global constant application. Confidence is unforced.
+
+F001 is the complete main-file text, not an expanded input closure; the complete27 input bodies are now accounted for across this same fresh history plus the pending payload. F051 is a historical review, not OWN051 TeX. Book theorems require source/hypothesis/application fidelity, not invented OWN reproof obligations. Missing later full-visual/cold/adoption/delivery gates are separate from this scientific judgment and receive no fabricated credit.
+
+Conditional official ordinary count plus32768 framing:721385 input; unchanged hard reserve311296; total1032681, headroom15895 in1048576. This is not exact native serializer/BPE admission. Actual route, finish, observed tools/SSE and usage still require collection after the separately authorized one-shot dispatch. No automatic retry or next call. Original full-goal completion remains unproved.

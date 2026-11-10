@@ -1,0 +1,78 @@
+--- frozen-B/guard.py
++++ proposed-C/guard.py
+@@ -1,38 +1,38 @@
+ from common import *
+ import subprocess
+ ROOT=Path(__file__).resolve().parent
+-need(ROOT==Path('<HOME>/.local/state/Le-AI-Lab/stratonovich-af97-unitB-main-runtime-v1-20261104'),'wrong proposal root')
++need(ROOT==Path('<HOME>/.local/state/Le-AI-Lab/stratonovich-af97-unitC-main-runtime-v1-20261105'),'wrong proposal root')
+ CLI=Path('<HOME>/.opencode/bin/opencode');CLI_HASH='f9dab32248695e9ebd56b16a1921798fd85112cf5a69c7dfd0cabc1e17be4a11'
+-SCIENCE='af97ae4db921a660b0a4ed1ffbe9b6f53a487e2b';COMMIT='765b13676ba2c23c7b387fe85fa593845aadda10'
+-USER='565537af1efa7233215db0c829d0acbe5eaf1fcdd6ee8ebd774719dfb4a41261';AGENT='d881eb0db3621bed0e5d1d4c24be2fbdb6d5420ef7b0b8f81685c169eef7a415'
+-TITLE='Stratonovich Unit B MAIN af97'
+-SCOPE='CURRENT_UNIT_B_ASSIGNMENT';CODE=('common.py','guard.py','preflight.py','run_native.py')
+-PLAN=ROOT/'ROOT-UNITB-PLAN.json';DELIVERY=ROOT/'ROOT-UNITB-DELIVERY.json'
+-MINIMUM=ROOT.parent/'unitB-Root-data-readback-20261104/Root-data-minimum.json'
+-MINIMUM_HASH='a97acfbd1fce2166132eacd050e2f69d309675369cb73fe5ba554d0bc3391be8'
+-CARRIER=ROOT.parent/'stratonovich-af97-unitB-native-preparation-20261104/carrier'
+-CARRIER_HEAD='de35bbe1b5050ae4a5de63857f9a33c450171905';CARRIER_TREE='aa55e0d1a55e8bf62f73c95fbb2fe0c01b2ef90e'
++SCIENCE='af97ae4db921a660b0a4ed1ffbe9b6f53a487e2b';COMMIT='5ef7daeea4a7609399b842ef72bc1a8b460bcd27'
++USER='26af20407ffff0df0126a9e555efd4b9b7c70555770b6130c93fdffd8afa02ab';AGENT='ff6ede335416d835285ae016e94dbae045787d96f4c634084d7c8318950e0c3f'
++TITLE='Stratonovich Unit C MAIN af97'
++SCOPE='CURRENT_UNIT_C_ASSIGNMENT';CODE=('common.py','guard.py','preflight.py','run_native.py')
++PLAN=ROOT/'ROOT-UNITC-PLAN.json';DELIVERY=ROOT/'ROOT-UNITC-DELIVERY.json'
++MINIMUM=ROOT.parent/'unitC-Root-data-readback-20261105/Root-data-minimum.json'
++MINIMUM_HASH='aec5f108cc8182d990b5421e8c6f8c40da5d07829451220080fc1e95f3ae42b2'
++CARRIER=ROOT.parent/'stratonovich-af97-unitC-native-preparation-20261105/carrier'
++CARRIER_HEAD='a32193c55cb353f5ff222573ac9a8d537ae72dde';CARRIER_TREE='8a27611c0103402abf132d8147783f3c27ee4922'
+ ENV_FLAGS={'OPENCODE_PERMISSION':'{"*":"deny"}','OPENCODE_EXPERIMENTAL_OUTPUT_TOKEN_MAX':'131072','OPENCODE_DISABLE_MODELS_FETCH':'true'}
+ def scope(p):
+  need(p['scope']==SCOPE and p['science']==SCIENCE and p['input_commit']==COMMIT,'scope/source/committed input mismatch')
+  need(p['session_title']==TITLE,'fixed custom scoped session title required')
+- need(p['proofs_current']==[f'PROOF{i:03d}'for i in range(24,61)],'exact current B37 required')
+- need(p['formal_count']==48 and p['formal_classes']=={'OWN':37,'EXTERNAL':0,'CONTEXT':11} and all(type(v)is int for v in p['formal_classes'].values()),'48 B union formal roles required; zero EXTERNAL is an integer count')
+- need(p['canonical_ownerB_count']==46 and p['extra_context_ids']==['S064','S071'],'canonical B46 plus S064/S071 context')
+- need(p['assigned_complete_joins']==['JOIN-INDEPENDENT-UPPER'] and p['partial_join_contributions']=={'JOIN-CALIBRATION-ALTERNATIVES':'B_ONLY_WITH_NAMED_BOUNDARY_APPLICATIONS'},'independent upper only; calibration B named-boundary contribution')
++ need(p['proofs_current']==[f'PROOF{i:03d}'for i in range(61,94)],'exact current C33 required')
++ need(p['formal_count']==35 and p['formal_classes']=={'OWN':33,'EXTERNAL':0,'CONTEXT':2} and all(type(v)is int for v in p['formal_classes'].values()),'35 C union formal roles required; zero EXTERNAL is an integer count')
++ need(p['canonical_ownerC_count']==34 and p['extra_context_ids']==['S064'],'canonical C34 plus S064 context')
++ need(p['assigned_internal_chains']==['FULL_CURRENT_C061093'] and p['assigned_complete_joins']==[] and p['partial_join_contributions']=={'JOIN-DRIVER-SOURCE':'C_THROUGH093_ONLY_NOT_FULL_D_PREPARED_JOIN'},'full C internal chain only; correlated-source D join remains a partial contribution')
+  need(p['global_current_context']=={'OWN':214,'declarations':240,'joins':13,'source_modules':28},'full current context narrowed or misgraded')
+  need(p['user_sha256']==USER and p['agent_sha256']==AGENT,'wrong user/scoped agent')
+  need(p['minimum_receipt']==str(MINIMUM) and p['minimum_receipt_sha256']==MINIMUM_HASH and p['minimum_complete']is True,'actual independent scoped DATA minimum not pinned')
+  need(sha(regular(MINIMUM))==MINIMUM_HASH,'Root scoped DATA minimum changed')
+  m=load(MINIMUM);need(m['Root_approved']is True and m['approval_scope']=='SCOPED_DATA_COMPLETENESS_ONLY_NOT_SCIENTIFIC_OR_PROVIDER_ACCEPTANCE','data approval is not scientific/provider acceptance')
+- for k in ['scope','science','proofs_current','formal_ids','formal_count','formal_classes','canonical_ownerB_count','extra_context_ids','assigned_complete_joins','partial_join_contributions','global_current_context','user_sha256','agent_sha256']:
++ for k in ['scope','science','proofs_current','formal_ids','formal_count','formal_classes','canonical_ownerC_count','extra_context_ids','assigned_internal_chains','assigned_complete_joins','partial_join_contributions','global_current_context','user_sha256','agent_sha256']:
+   need(p[k]==m[k],'scoped DATA minimum mismatch: '+k)
+  need(set(p['code_hashes'])==set(CODE),'runtime code pins incomplete')
+ def request_data(user,agent):
+- need(sha(user)==USER and sha(agent)==AGENT,'input/agent changed');need(b'CURRENT_UNIT_B_ASSIGNMENT\n'in user and agent.startswith(b'CURRENT_UNIT_B_ASSIGNMENT\n'),'scoped task marker missing');return{'user_bytes':len(user),'user_sha256':sha(user),'agent_bytes':len(agent),'agent_sha256':sha(agent)}
++ need(sha(user)==USER and sha(agent)==AGENT,'input/agent changed');need(b'CURRENT_UNIT_C_ASSIGNMENT\n'in user and agent.startswith(b'CURRENT_UNIT_C_ASSIGNMENT\n'),'scoped task marker missing');return{'user_bytes':len(user),'user_sha256':sha(user),'agent_bytes':len(agent),'agent_sha256':sha(agent)}
+ def capacity_components(c,total):
+  need(set(c)=={'user_tokens','agent_tokens','other_framing_bound','output','boundary','system'},'capacity fields')
+- need(all(type(v)is int and v>=0 for v in c.values()),'invalid counts');need(c['user_tokens']==726225 and c['agent_tokens']==148 and c['other_framing_bound']==744,'counted actual input mismatch')
++ need(all(type(v)is int and v>=0 for v in c.values()),'invalid counts');need(c['user_tokens']==516885 and c['agent_tokens']==180 and c['other_framing_bound']==744,'counted actual input mismatch')
+  need(c['output']==131072 and c['boundary']==16384 and c['system']==32768,'hard reserves reduced')
+  need(sum(c.values())==total<=1048576,'capacity sum/context mismatch')
+ def capacity(p):
+@@ -42,8 +42,8 @@
+  f=load(p['ROOT_framing_receipt']);need(sha(regular(p['ROOT_framing_receipt']))==p['ROOT_framing_receipt_sha256'],'framing receipt changed')
+  need(f['Root_approved']is True and f['scope']==SCOPE and f['local_context_complete']is True and f['unresolved_local_context_sources']==[],'unknown LOCAL system/tool/MCP/reference context blocks launch')
+  t=f['provider_template_treatment'];need(t['kind']=='ROOT_DECLARED_CONDITIONAL_MARGIN'and t['Root_approved']is True and type(t['tokens'])is int and t['tokens']==515 and t['source_evidence'],'conditional provider-template margin not Root-bound')
+- need(type(f['known_joined_system_tokens'])is int and f['known_joined_system_tokens']==377 and f['includes_agent_tokens']==148,'joined known system accounting')
+- need(f['known_joined_system_tokens']-148+t['tokens']==c['other_framing_bound'],'known-local plus conditional-template arithmetic')
++ need(type(f['known_joined_system_tokens'])is int and f['known_joined_system_tokens']==409 and f['includes_agent_tokens']==180,'joined known system accounting')
++ need(f['known_joined_system_tokens']-180+t['tokens']==c['other_framing_bound'],'known-local plus conditional-template arithmetic')
+  need(f['user_sha256']==USER and f['agent_sha256']==AGENT and f['CLI_sha256']==CLI_HASH and f['other_framing_bound']==c['other_framing_bound'],'wrong framing bound')
+  return r,f
+ def snapshot(p):
+@@ -77,7 +77,7 @@
+ def once_available(output_exists,fence_exists):
+  need(not output_exists and not fence_exists,'fresh scoped lineage already spent')
+ def gate(mode):
+- need(mode in{'preflight','run'},'mode');auth=ROOT/('ROOT-UNITB-'+mode.upper()+'-AUTHORIZATION.json')
++ need(mode in{'preflight','run'},'mode');auth=ROOT/('ROOT-UNITC-'+mode.upper()+'-AUTHORIZATION.json')
+  # Intentionally absent now; refuse BEFORE any snapshot/Git/CLI/profile/native action.
+  need(PLAN.is_file()and auth.is_file(),'UNBOUND Root plan/authority absent');p=load(PLAN);a=load(auth)
+  need(a['authorized']is True and a['code_audits_complete']is True and a['plan_sha256']==sha(regular(PLAN)),'Root authority mismatch')

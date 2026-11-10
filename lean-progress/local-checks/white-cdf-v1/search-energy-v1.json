@@ -1,0 +1,400 @@
+{
+  "cache": {
+    "root": "default",
+    "writes": []
+  },
+  "complete": false,
+  "coverage": {
+    "claims": 31,
+    "declaration_files_capped": [],
+    "declaration_hits_omitted": 0,
+    "declaration_only": 18,
+    "not_searched": [
+      "<PRIVATE-PACKAGE>",
+      "gaussian-chaos-lean",
+      "<PRIVATE-PACKAGE>",
+      "<PRIVATE-PACKAGE>",
+      "rough-heat-kernel",
+      "<PRIVATE-PACKAGE>",
+      "walsh-integral"
+    ],
+    "not_searched_reasons": [
+      {
+        "code": "no-checkout",
+        "detail": null,
+        "package": "<PRIVATE-PACKAGE>",
+        "remedy": "local_path is not a directory on this host; see `lean-pkg status <PRIVATE-PACKAGE> --fields local_path,repo` and clone the repository there"
+      },
+      {
+        "code": "no-checkout",
+        "detail": null,
+        "package": "gaussian-chaos-lean",
+        "remedy": "local_path is not a directory on this host; see `lean-pkg status gaussian-chaos-lean --fields local_path,repo` and clone the repository there"
+      },
+      {
+        "code": "no-checkout",
+        "detail": null,
+        "package": "<PRIVATE-PACKAGE>",
+        "remedy": "local_path is not a directory on this host; see `lean-pkg status <PRIVATE-PACKAGE> --fields local_path,repo` and clone the repository there"
+      },
+      {
+        "code": "no-checkout",
+        "detail": null,
+        "package": "<PRIVATE-PACKAGE>",
+        "remedy": "local_path is not a directory on this host; see `lean-pkg status <PRIVATE-PACKAGE> --fields local_path,repo` and clone the repository there"
+      },
+      {
+        "code": "no-checkout",
+        "detail": null,
+        "package": "rough-heat-kernel",
+        "remedy": "local_path is not a directory on this host; see `lean-pkg status rough-heat-kernel --fields local_path,repo` and clone the repository there"
+      },
+      {
+        "code": "no-checkout",
+        "detail": null,
+        "package": "<PRIVATE-PACKAGE>",
+        "remedy": "local_path is not a directory on this host; see `lean-pkg status <PRIVATE-PACKAGE> --fields local_path,repo` and clone the repository there"
+      },
+      {
+        "code": "no-checkout",
+        "detail": null,
+        "package": "walsh-integral",
+        "remedy": "local_path is not a directory on this host; see `lean-pkg status walsh-integral --fields local_path,repo` and clone the repository there"
+      }
+    ]
+  },
+  "date": "2026-11-01",
+  "loogle_query": "sq_nonneg",
+  "offline": false,
+  "ok": true,
+  "package": null,
+  "route": "natural-language",
+  "searched": 7,
+  "skipped_sources": [],
+  "sources": [
+    {
+      "cache_writes": [],
+      "cap_limit": null,
+      "capped": [],
+      "hits": [],
+      "incomplete": "7 registered package(s) not searched (no checkout) (see the coverage line)",
+      "partial": [],
+      "reason": null,
+      "revision": "sha256:31169f1fafd3",
+      "route": "natural-language",
+      "source": "registry",
+      "state": "ok",
+      "total": null
+    },
+    {
+      "cache_writes": [],
+      "cap_limit": null,
+      "capped": [],
+      "hits": [],
+      "incomplete": null,
+      "partial": [],
+      "reason": null,
+      "revision": "git:e69801d29fcb",
+      "route": "natural-language",
+      "source": "index",
+      "state": "ok",
+      "total": null
+    },
+    {
+      "cache_writes": [],
+      "cap_limit": null,
+      "capped": [],
+      "hits": [
+        {
+          "extra": {
+            "module": "Mathlib.Algebra.Order.Ring.Unbundled.Basic",
+            "type": "{R : Type u} [Semiring R] [LinearOrder R] [ExistsAddOfLE R] [PosMulMono R] [AddLeftMono R] (a : R) : 0 \u2264 a ^ 2"
+          },
+          "name": "sq_nonneg",
+          "summary": "{R : Type u} [Semiring R] [LinearOrder R] [ExistsAddOfLE R] [PosMulMono R] [AddLeftMono R] (a : R) : 0 \u2264 a ^ 2",
+          "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=sq_nonneg#doc"
+        },
+        {
+          "extra": {
+            "module": "Mathlib.Probability.Distributions.Gaussian.Real",
+            "type": "{\u03bc : \u211d} {v : NNReal} (c : \u211d) : MeasureTheory.Measure.map (fun x => c * x) (ProbabilityTheory.gaussianReal \u03bc v) = ProbabilityTheory.gaussianReal (c * \u03bc) (NNReal.mk (c ^ 2) \u22ef * v)"
+          },
+          "name": "ProbabilityTheory.gaussianReal_map_const_mul",
+          "summary": "The map of a Gaussian distribution by multiplication by a constant is a Gaussian.",
+          "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=ProbabilityTheory.gaussianReal_map_const_mul#doc"
+        },
+        {
+          "extra": {
+            "module": "Mathlib.Probability.Distributions.Gaussian.Real",
+            "type": "{\u03bc : \u211d} {v : NNReal} (c : \u211d) : MeasureTheory.Measure.map (fun x => x / c) (ProbabilityTheory.gaussianReal \u03bc v) = ProbabilityTheory.gaussianReal (\u03bc / c) (v / NNReal.mk (c ^ 2) \u22ef)"
+          },
+          "name": "ProbabilityTheory.gaussianReal_map_div_const",
+          "summary": "The map of a Gaussian distribution by multiplication by a constant is a Gaussian.",
+          "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=ProbabilityTheory.gaussianReal_map_div_const#doc"
+        },
+        {
+          "extra": {
+            "module": "Mathlib.Probability.Distributions.Gaussian.Real",
+            "type": "{\u03bc : \u211d} {v : NNReal} (c : \u211d) : MeasureTheory.Measure.map (fun x => x * c) (ProbabilityTheory.gaussianReal \u03bc v) = ProbabilityTheory.gaussianReal (c * \u03bc) (NNReal.mk (c ^ 2) \u22ef * v)"
+          },
+          "name": "ProbabilityTheory.gaussianReal_map_mul_const",
+          "summary": "The map of a Gaussian distribution by multiplication by a constant is a Gaussian.",
+          "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=ProbabilityTheory.gaussianReal_map_mul_const#doc"
+        },
+        {
+          "extra": {
+            "module": "Mathlib.Probability.Distributions.Gaussian.Real",
+            "type": "{\u03bc : \u211d} {v : NNReal} {\u03a9 : Type u_1} {m\u03a9 : MeasurableSpace \u03a9} {P : MeasureTheory.Measure \u03a9} {X : \u03a9 \u2192 \u211d} (hX : ProbabilityTheory.HasLaw X (ProbabilityTheory.gaussianReal \u03bc v) P) (c : \u211d) : ProbabilityTheory.HasLaw (fun \u03c9 => c * X \u03c9) (ProbabilityTheory.gaussianReal (c * \u03bc) (NNReal.mk (c ^ 2) \u22ef * v)) P"
+          },
+          "name": "ProbabilityTheory.gaussianReal_const_mul",
+          "summary": "If `X` is a real random variable with Gaussian law with mean `\u03bc` and variance `v`, then `c * X` has Gaussian law with mean `c * \u03bc` and variance `c ^ 2 * v`.",
+          "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=ProbabilityTheory.gaussianReal_const_mul#doc"
+        },
+        {
+          "extra": {
+            "module": "Mathlib.Probability.Distributions.Gaussian.Real",
+            "type": "{\u03bc : \u211d} {v : NNReal} {\u03a9 : Type u_1} {m\u03a9 : MeasurableSpace \u03a9} {P : MeasureTheory.Measure \u03a9} {X : \u03a9 \u2192 \u211d} (hX : ProbabilityTheory.HasLaw X (ProbabilityTheory.gaussianReal \u03bc v) P) (c : \u211d) : ProbabilityTheory.HasLaw (fun \u03c9 => X \u03c9 / c) (ProbabilityTheory.gaussianReal (\u03bc / c) (v / NNReal.mk (c ^ 2) \u22ef)) P"
+          },
+          "name": "ProbabilityTheory.gaussianReal_div_const",
+          "summary": "If `X` is a real random variable with Gaussian law with mean `\u03bc` and variance `v`, then `X * c` has Gaussian law with mean `c * \u03bc` and variance `c ^ 2 * v`.",
+          "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=ProbabilityTheory.gaussianReal_div_const#doc"
+        },
+        {
+          "extra": {
+            "module": "Mathlib.Probability.Distributions.Gaussian.Real",
+            "type": "{\u03bc : \u211d} {v : NNReal} {\u03a9 : Type u_1} {m\u03a9 : MeasurableSpace \u03a9} {P : MeasureTheory.Measure \u03a9} {X : \u03a9 \u2192 \u211d} (hX : ProbabilityTheory.HasLaw X (ProbabilityTheory.gaussianReal \u03bc v) P) (c : \u211d) : ProbabilityTheory.HasLaw (fun \u03c9 => X \u03c9 * c) (ProbabilityTheory.gaussianReal (c * \u03bc) (NNReal.mk (c ^ 2) \u22ef * v)) P"
+          },
+          "name": "ProbabilityTheory.gaussianReal_mul_const",
+          "summary": "If `X` is a real random variable with Gaussian law with mean `\u03bc` and variance `v`, then `X * c` has Gaussian law with mean `c * \u03bc` and variance `c ^ 2 * v`.",
+          "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=ProbabilityTheory.gaussianReal_mul_const#doc"
+        },
+        {
+          "extra": {
+            "module": "Mathlib.Probability.Distributions.Gaussian.Real",
+            "type": "{\u03bc : \u211d} {v : NNReal} {c : \u211d} (hc : c \u2260 0) (x : \u211d) : ProbabilityTheory.gaussianPDFReal \u03bc v (c\u207b\u00b9 * x) = |c| * ProbabilityTheory.gaussianPDFReal (c * \u03bc) (NNReal.mk (c ^ 2) \u22ef * v) x"
+          },
+          "name": "ProbabilityTheory.gaussianPDFReal_inv_mul",
+          "summary": "{\u03bc : \u211d} {v : NNReal} {c : \u211d} (hc : c \u2260 0) (x : \u211d) : ProbabilityTheory.gaussianPDFReal \u03bc v (c\u207b\u00b9 * x) = |c| * ProbabilityTheory.gaussianPDFReal (c * \u03bc) (NNReal.mk (c ^ 2) \u22ef * v) x",
+          "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=ProbabilityTheory.gaussianPDFReal_inv_mul#doc"
+        },
+        {
+          "extra": {
+            "module": "Mathlib.Probability.Distributions.Gaussian.Real",
+            "type": "{\u03bc : \u211d} {v : NNReal} {c : \u211d} (hc : c \u2260 0) (x : \u211d) : ProbabilityTheory.gaussianPDFReal \u03bc v (c * x) = |c\u207b\u00b9| * ProbabilityTheory.gaussianPDFReal (c\u207b\u00b9 * \u03bc) (NNReal.mk (c ^ 2)\u207b\u00b9 \u22ef * v) x"
+          },
+          "name": "ProbabilityTheory.gaussianPDFReal_mul",
+          "summary": "{\u03bc : \u211d} {v : NNReal} {c : \u211d} (hc : c \u2260 0) (x : \u211d) : ProbabilityTheory.gaussianPDFReal \u03bc v (c * x) = |c\u207b\u00b9| * ProbabilityTheory.gaussianPDFReal (c\u207b\u00b9 * \u03bc) (NNReal.mk (c ^ 2)\u207b\u00b9 \u22ef * v) x",
+          "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=ProbabilityTheory.gaussianPDFReal_mul#doc"
+        },
+        {
+          "extra": {
+            "module": "Mathlib.Probability.Moments.SubGaussian",
+            "type": "{\u03a9 : Type u_1} {m\u03a9 : MeasurableSpace \u03a9} {\u03bc : MeasureTheory.Measure \u03a9} {X : \u03a9 \u2192 \u211d} {c : NNReal} (h : ProbabilityTheory.HasSubgaussianMGF X c \u03bc) (r : \u211d) : ProbabilityTheory.HasSubgaussianMGF (fun \u03c9 => r * X \u03c9) (\u27e8r ^ 2, \u22ef\u27e9 * c) \u03bc"
+          },
+          "name": "ProbabilityTheory.HasSubgaussianMGF.const_mul",
+          "summary": "{\u03a9 : Type u_1} {m\u03a9 : MeasurableSpace \u03a9} {\u03bc : MeasureTheory.Measure \u03a9} {X : \u03a9 \u2192 \u211d} {c : NNReal} (h : ProbabilityTheory.HasSubgaussianMGF X c \u03bc) (r : \u211d) : ProbabilityTheory.HasSubgaussianMGF (fun \u03c9 =...",
+          "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=ProbabilityTheory.HasSubgaussianMGF.const_mul#doc"
+        },
+        {
+          "extra": {
+            "module": "Mathlib.Probability.Moments.SubGaussian",
+            "type": "{\u03a9 : Type u_1} {\u03a9' : Type u_2} {m\u03a9 : MeasurableSpace \u03a9} {m\u03a9' : MeasurableSpace \u03a9'} {\u03bd : MeasureTheory.Measure \u03a9'} {\u03ba : ProbabilityTheory.Kernel \u03a9' \u03a9} {X : \u03a9 \u2192 \u211d} {c : NNReal} (h : ProbabilityTheory.Kernel.HasSubgaussianMGF X c \u03ba \u03bd) (r : \u211d) : ProbabilityTheory.Kernel.HasSubgaussianMGF (fun \u03c9 => r * X \u03c9) (NNReal.mk (r ^ 2) \u22ef * c) \u03ba \u03bd"
+          },
+          "name": "ProbabilityTheory.Kernel.HasSubgaussianMGF.const_mul",
+          "summary": "{\u03a9 : Type u_1} {\u03a9' : Type u_2} {m\u03a9 : MeasurableSpace \u03a9} {m\u03a9' : MeasurableSpace \u03a9'} {\u03bd : MeasureTheory.Measure \u03a9'} {\u03ba : ProbabilityTheory.Kernel \u03a9' \u03a9} {X : \u03a9 \u2192 \u211d} {c : NNReal} (h : ProbabilityTheory...",
+          "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=ProbabilityTheory.Kernel.HasSubgaussianMGF.const_mul#doc"
+        }
+      ],
+      "incomplete": null,
+      "partial": [],
+      "reason": null,
+      "revision": "live (Mathlib master)",
+      "route": "natural-language",
+      "source": "loogle",
+      "state": "ok",
+      "total": null
+    },
+    {
+      "cache_writes": [],
+      "cap_limit": null,
+      "capped": [],
+      "hits": [
+        {
+          "extra": {
+            "distance": 0.44017845392227173,
+            "kind": "theorem",
+            "module": "Mathlib.Combinatorics.Additive.Energy"
+          },
+          "name": "Finset.le_card_mul_mul_mulEnergy",
+          "summary": "Multiplicative Energy Inequality: $|s|^2 |t|^2 \\leq |s \\cdot t| E_m(s, t)$",
+          "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Finset.le_card_mul_mul_mulEnergy#doc"
+        },
+        {
+          "extra": {
+            "distance": 0.46081334352493286,
+            "kind": "theorem",
+            "module": "Mathlib.Combinatorics.Additive.Energy"
+          },
+          "name": "Finset.card_sq_le_card_mul_addEnergy",
+          "summary": "Additive Energy Inequality: $ |\\{ (x, y) \\in S \\times T \\mid x + y \\in U \\}|^2 \\leq |U| \\cdot E(S, T) $",
+          "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Finset.card_sq_le_card_mul_addEnergy#doc"
+        },
+        {
+          "extra": {
+            "distance": 0.4275466799736023,
+            "kind": "theorem",
+            "module": "Mathlib.Combinatorics.Additive.Energy"
+          },
+          "name": "Finset.le_addEnergy_self",
+          "summary": "Additive Energy Inequality for Finite Sets",
+          "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Finset.le_addEnergy_self#doc"
+        },
+        {
+          "extra": {
+            "distance": 0.4500696063041687,
+            "kind": "theorem",
+            "module": "Mathlib.Combinatorics.Additive.Energy"
+          },
+          "name": "Finset.le_addEnergy",
+          "summary": "Additive Energy Inequality: |s|\u00b7|t| \u2264 E(s, t)",
+          "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Finset.le_addEnergy#doc"
+        },
+        {
+          "extra": {
+            "distance": 0.4549252390861511,
+            "kind": "theorem",
+            "module": "Mathlib.Analysis.InnerProductSpace.Defs"
+          },
+          "name": "InnerProductSpace.Core.cauchy_schwarz_aux'",
+          "summary": "Quadratic Form Non-Negativity for Cauchy-Schwarz Inequality",
+          "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=InnerProductSpace.Core.cauchy_schwarz_aux%27#doc"
+        },
+        {
+          "extra": {
+            "distance": 0.4670211672782898,
+            "kind": "theorem",
+            "module": "Mathlib.Analysis.FunctionalSpaces.SobolevInequality"
+          },
+          "name": "MeasureTheory.eLpNorm_le_eLpNorm_fderiv_of_le",
+          "summary": "Sobolev Inequality for L^p and L^q Norms on Bounded Domains",
+          "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=MeasureTheory.eLpNorm_le_eLpNorm_fderiv_of_le#doc"
+        },
+        {
+          "extra": {
+            "distance": 0.46469444036483765,
+            "kind": "theorem",
+            "module": "Mathlib.Combinatorics.SimpleGraph.Regularity.Bound"
+          },
+          "name": "SzemerediRegularity.add_div_le_sum_sq_div_card",
+          "summary": "Szemer\u00e9di Regularity Lemma Inequality: $ d + \\frac{|s|}{|t|}x^2 \\leq \\frac{1}{|t|}\\sum_{i \\in t} f(i)^2 $",
+          "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=SzemerediRegularity.add_div_le_sum_sq_div_card#doc"
+        },
+        {
+          "extra": {
+            "distance": 0.4614395499229431,
+            "kind": "definition",
+            "module": "Mathlib.Analysis.Normed.Operator.NormedSpace"
+          },
+          "name": "IsCoercive",
+          "summary": "Coercive Bilinear Form",
+          "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IsCoercive#doc"
+        },
+        {
+          "extra": {
+            "distance": 0.4346952438354492,
+            "kind": "theorem",
+            "module": "Mathlib.Combinatorics.Additive.Energy"
+          },
+          "name": "Finset.le_mulEnergy_self",
+          "summary": "$|s|^2 \\leq E_m(s)$",
+          "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Finset.le_mulEnergy_self#doc"
+        },
+        {
+          "extra": {
+            "distance": 0.474212110042572,
+            "kind": "theorem",
+            "module": "Mathlib.LinearAlgebra.QuadraticForm.Isometry"
+          },
+          "name": "QuadraticMap.Isometry.map_app'",
+          "summary": "Quadratic Isometry Preserves Quadratic Form",
+          "url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=QuadraticMap.Isometry.map_app%27#doc"
+        }
+      ],
+      "incomplete": null,
+      "partial": [],
+      "reason": null,
+      "revision": "live",
+      "route": "natural-language",
+      "source": "leansearch",
+      "state": "ok",
+      "total": null
+    },
+    {
+      "cache_writes": [],
+      "cap_limit": null,
+      "capped": [],
+      "hits": [],
+      "incomplete": null,
+      "partial": [],
+      "reason": "921 packages searched",
+      "revision": "a4b4e14d",
+      "route": "natural-language",
+      "source": "reservoir",
+      "state": "ok",
+      "total": null
+    },
+    {
+      "cache_writes": [],
+      "cap_limit": null,
+      "capped": [],
+      "hits": [
+        {
+          "extra": {
+            "repository": "scottnarmstrong/LiebThirring",
+            "theorem_names": [
+              "LiebThirringAudit.stability_of_matter",
+              "LiebThirringAudit.stability_of_matter_real",
+              "LiebThirringAudit.kinetic_lieb_thirring",
+              "LiebThirringAudit.baxter",
+              "LiebThirringAudit.electron_count_lt_of_atomic_binding",
+              "LiebThirringAudit.electron_count_lt_of_atomic_weak_ground_state",
+              "LiebThirringAudit.exists_unique_thermodynamic_energy_density",
+              "LiebThirringAudit.tendsto_electronicGroundStateEnergy_tf",
+              "LiebThirringAudit.tendsto_groundStateEnergy_tf"
+            ]
+          },
+          "name": "PALOMAR-2026-10-08-000006",
+          "summary": "Stability of Matter in Lean: Lieb\u2013Thirring, Ionization, the Thermodynamic Limit and Thomas\u2013Fermi Theory",
+          "url": "https://data.palomar-registry.org/entries/PALOMAR-2026-10-08-000006-v1.json"
+        }
+      ],
+      "incomplete": null,
+      "partial": [],
+      "reason": "880 results searched",
+      "revision": "651",
+      "route": "natural-language",
+      "source": "palomar",
+      "state": "ok",
+      "total": null
+    },
+    {
+      "cache_writes": [],
+      "cap_limit": null,
+      "capped": [],
+      "hits": [],
+      "incomplete": null,
+      "partial": [],
+      "reason": null,
+      "revision": "live",
+      "route": "natural-language",
+      "source": "github",
+      "state": "ok",
+      "total": null
+    }
+  ],
+  "term": "quadratic energy inequality",
+  "total_hits": 22,
+  "truncated_sources": [
+    "registry"
+  ]
+}

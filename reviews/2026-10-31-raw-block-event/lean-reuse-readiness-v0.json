@@ -1,0 +1,66 @@
+{
+  "status": "PREPARATORY READ-ONLY SOURCE/TYPE BINDINGS, not new application acceptance or compilation",
+  "source_and_types": [
+    {
+      "current": "lean-progress/local-checks/moving-cone-v1/StratonovichHAMAudit/MovingCone.lean",
+      "previously_reviewed_frozen": "reviews/2026-10-30-moving-block-cone/scientific-packet-v1/lean-progress/local-checks/moving-cone-v1/StratonovichHAMAudit/MovingCone.lean",
+      "sha256": "5cb66155a2da41180bd3faa93bceccf5280f5a208a5827892352cb3da59eb737",
+      "byte_match": true
+    },
+    {
+      "current": "lean-progress/local-checks/moving-cone-v1/types-and-axioms.txt",
+      "previously_reviewed_frozen": "reviews/2026-10-30-moving-block-cone/scientific-packet-v1/lean-progress/local-checks/moving-cone-v1/types-and-axioms.txt",
+      "sha256": "c69c5baf8e31705ee8c30c6a1fd3d44f359c8602fb64cbbd6591fa8b2864afe6",
+      "byte_match": true
+    },
+    {
+      "current": "lean-progress/local-checks/joint-tilt-v1/StratonovichHAMAudit/JointTilt.lean",
+      "previously_reviewed_frozen": "reviews/2026-10-30-joint-gaussian-tilt/scientific-packet-v1/lean-progress/local-checks/joint-tilt-v1/StratonovichHAMAudit/JointTilt.lean",
+      "sha256": "241a4d4884c94e38c51fc713bafe4b0f845902557217e624169e0794bb132ad0",
+      "byte_match": true
+    },
+    {
+      "current": "lean-progress/local-checks/joint-tilt-v1/types-and-axioms.txt",
+      "previously_reviewed_frozen": "reviews/2026-10-30-joint-gaussian-tilt/scientific-packet-v1/lean-progress/local-checks/joint-tilt-v1/types-and-axioms.txt",
+      "sha256": "4301c69795e51d8120694695fa0fb1fde575ccab5edf75a26887ace0ddc1749a",
+      "byte_match": true
+    },
+    {
+      "current": "lean-progress/local-checks/actual-event-v1/StratonovichHAMAudit/ActualEvent.lean",
+      "previously_reviewed_frozen": "reviews/2026-10-30-actual-shifted-event/scientific-packet-v1/lean-progress/local-checks/actual-event-v1/StratonovichHAMAudit/ActualEvent.lean",
+      "sha256": "f99c9e76e56ed47804a1774b598e03649a79b5f047d9c648675ff7d5ee73e4d1",
+      "byte_match": true
+    },
+    {
+      "current": "lean-progress/local-checks/actual-event-v1/types-and-axioms.txt",
+      "previously_reviewed_frozen": "reviews/2026-10-30-actual-shifted-event/scientific-packet-v1/lean-progress/local-checks/actual-event-v1/types-and-axioms.txt",
+      "sha256": "6d5666b2311dc7cb380cc921bd8f0326792ba6ce8f301fbe7c71586dad13031d",
+      "byte_match": true
+    }
+  ],
+  "nine_existing_facts": {
+    "MovingCone.residual_budget": {
+      "planned_actual_inputs": "theta; q=C_gap exp(-eta B); d=nu M_z; e=M_Q epsilon_op M_z",
+      "guards_to_discharge": "theta>=0,q<=1/8,d>=0,d<=theta,e<=theta/4",
+      "scope": "coefficient of normalized residual; not spectral or cone theorem"
+    },
+    "MovingCone.cone_conversion": {
+      "planned_actual_inputs": "old amplitude a>0; new normalized amplitude x; normalized residual y; rho<1/2",
+      "guards_to_discharge": "x>=(1-rho)a,y<=theta a/2,theta>=0",
+      "scope": "scalar closure once analytic estimates hold"
+    },
+    "MovingCone.terminal_margin": {
+      "planned_actual_inputs": "j=j_*,K=||O_phi|| C_gap,e=||O_phi|| epsilon_op M_z,y=normalized terminal observation/a",
+      "guards_to_discharge": "j>0,16Ktheta<=j,e<=j/8,3j/4-2Ktheta-e<=y",
+      "scope": "signed terminal margin, not point trace"
+    },
+    "JointTilt.tilt_exponent": "planned finite Gaussian sign/half-variance algebra; actual joint-law/Borel proof analytic",
+    "JointTilt.wrong_sign_error": "counter-control only, nonzero error in chosen actual finite covariance example",
+    "JointTilt.wrong_cost_error": "counter-control only, missing half cost remains -s\u00b2v/2",
+    "JointTilt.shifted_amplitude": "delta>0; g_delta=delta^((1-a)/2), covariance factor delta^(a/2), divide sqrt(delta); no raw covariance theorem",
+    "ActualEvent.finite_error_accumulation": "fixed-delta finite-source product compatibility if used: C>=1,e>=0,d0=0, all-n recurrence after extending finite factor sequences by identities. Do not assume uniform-in-delta product closeness.",
+    "ActualEvent.moderate_penalty": "delta>0, delta*(delta^(-1/4)/sqrt(delta))=delta^(1/4); probability and change-of-measure analytic"
+  },
+  "execution": "No Lean/compiler/replay run this turn; prior reviewed sources and full printed type/axiom bytes unchanged. Fresh actual consumer/hypothesis fidelity gate required after new proof is written.",
+  "boundaries": "No count increase from reuse preparation:71facts/18seams/L0 unchanged. No Gaussian/Young/cone/SPDE formal proof or official package/companion/lease/registry/HPC transaction."
+}

@@ -1,0 +1,185 @@
+/-
+# Standard Gaussian product measure and unit white noise
+
+The coordinate space `ι → ℝ` with the product law
+`noise ι = Measure.infinitePi (fun _ ↦ gaussianReal 0 1)` (i.i.d. standard Gaussian
+coordinates `ωᵢ`) carries the Hermite/Wiener-chaos theory of this library for an arbitrary
+index type `ι`.  For `ι = ℕ` this measure is, by definition, `productGaussian` of the
+`walsh-integral-lean` library (`noise_nat`).
+
+The white-noise layer is imported from `walsh-integral-lean` (`WalshIntegral.GaussianSeries`)
+and not re-proved here: for a real Hilbert space `H` with a Hilbert basis `b` indexed by `ℕ`,
+unit white noise `η = wn b : H →ₗᵢ L²(productGaussian)` is the orthonormal-series isometry of
+the coordinate sequence composed with the basis coordinates, `η(f) = ∑ₙ ⟨bₙ, f⟩ ωₙ`.
+
+Proved here:
+* coordinate facts for `noise ι` (laws, moments, independence, `E ωᵢωⱼ = δᵢⱼ`);
+* every finite combination `∑_{i∈s} cᵢ ωᵢ` has law `N(0, ∑ cᵢ²)` (`map_partial`);
+* `η(f) ∼ N(0, ‖f‖²)` (`map_wn`), the covariance `E η(f)η(g) = ⟨f,g⟩` (`integral_wn_mul`), and
+  `η` is a Gaussian process (`isGaussianProcess_wn`), from `WalshIntegral.WhiteNoise`'s
+  `orthonormalSeries_gaussian_law` and `linearLp_isGaussianProcess`.
+-/
+import Mathlib
+import WalshIntegral.WhiteNoise
+
+set_option autoImplicit false
+noncomputable section
+open MeasureTheory ProbabilityTheory Filter Topology
+open scoped ENNReal NNReal InnerProductSpace
+
+namespace GaussianChaos.GaussianProduct
+
+variable {ι : Type*}
+
+/-- The law of i.i.d. standard Gaussian coordinates. -/
+def noise (ι : Type*) : Measure (ι → ℝ) := Measure.infinitePi fun _ : ι => gaussianReal 0 1
+
+instance (ι : Type*) : IsProbabilityMeasure (noise ι) := by unfold noise; infer_instance
+
+lemma map_eval (i : ι) : (noise ι).map (fun ω => ω i) = gaussianReal 0 1 :=
+  Measure.infinitePi_map_eval _ i
+
+lemma memLp_eval (i : ι) (p : ℝ≥0∞) (hp : p ≠ ∞) :
+    MemLp (fun ω : ι → ℝ => ω i) p (noise ι) := by
+  have h := memLp_id_gaussianReal' (μ := 0) (v := 1) p hp
+  rw [← map_eval i] at h
+  exact (memLp_map_measure_iff aestronglyMeasurable_id
+    (measurable_pi_apply i).aemeasurable).mp h
+
+lemma integral_eval (i : ι) : ∫ ω, ω i ∂(noise ι) = 0 := by
+  have h := integral_map (μ := noise ι) (measurable_pi_apply i).aemeasurable
+    (f := fun x : ℝ => x) aestronglyMeasurable_id
+  rw [map_eval] at h
+  rw [← h, integral_id_gaussianReal]
+
+lemma integral_gaussian_sq : ∫ x, x ^ 2 ∂(gaussianReal 0 1) = 1 := by
+  have h := variance_eq_integral (μ := gaussianReal 0 1) (X := id) aemeasurable_id
+  rw [variance_id_gaussianReal] at h
+  simp only [id, integral_id_gaussianReal, sub_zero] at h
+  rw [← h]; simp
+
+lemma integral_eval_sq (i : ι) : ∫ ω, ω i ^ 2 ∂(noise ι) = 1 := by
+  have h := integral_map (μ := noise ι) (measurable_pi_apply i).aemeasurable
+    (f := fun x : ℝ => x ^ 2) (by fun_prop)
+  rw [map_eval] at h
+  rw [← h, integral_gaussian_sq]
+
+lemma iIndepFun_eval : iIndepFun (fun (i : ι) (ω : ι → ℝ) => ω i) (noise ι) :=
+  iIndepFun_infinitePi (X := fun _ x => x) fun _ => measurable_id
+
+lemma integral_eval_mul {i j : ι} (hij : i ≠ j) : ∫ ω, ω i * ω j ∂(noise ι) = 0 := by
+  rw [(iIndepFun_eval.indepFun hij).integral_fun_mul_eq_mul_integral
+    (measurable_pi_apply i).aestronglyMeasurable (measurable_pi_apply j).aestronglyMeasurable]
+  simp [integral_eval]
+
+/-- The coordinate `ξᵢ` as an element of `L²(noise)`. -/
+def xi (i : ι) : Lp ℝ 2 (noise ι) := (memLp_eval i 2 (by simp)).toLp _
+
+lemma xi_ae (i : ι) : xi i =ᵐ[noise ι] fun ω => ω i := MemLp.coeFn_toLp _
+
+/-! ### Laws of finite partial sums -/
+
+lemma integral_partial_sq (s : Finset ι) (c : ι → ℝ) :
+    ∫ ω, (∑ i ∈ s, c i * ω i) ^ 2 ∂(noise ι) = ∑ i ∈ s, c i ^ 2 := by
+  classical
+  have hint : ∀ i j, Integrable (fun ω : ι → ℝ => c i * c j * (ω i * ω j)) (noise ι) :=
+    fun i j => ((memLp_eval i 2 (by simp)).integrable_mul (memLp_eval j 2 (by simp))).const_mul _
+  have hexp : ∀ ω : ι → ℝ, (∑ i ∈ s, c i * ω i) ^ 2
+      = ∑ i ∈ s, ∑ j ∈ s, c i * c j * (ω i * ω j) := by
+    intro ω
+    rw [sq, Finset.sum_mul_sum]
+    refine Finset.sum_congr rfl fun i _ => Finset.sum_congr rfl fun j _ => ?_
+    ring
+  simp_rw [hexp]
+  rw [integral_finsetSum _ fun i _ => integrable_finsetSum _ fun j _ => hint i j]
+  refine Finset.sum_congr rfl fun i hi => ?_
+  rw [integral_finsetSum _ fun j _ => hint i j]
+  simp_rw [integral_const_mul]
+  rw [Finset.sum_eq_single i]
+  · simp only [← sq]
+    rw [integral_eval_sq]; ring
+  · intro j _ hji
+    rw [integral_eval_mul (Ne.symm hji), mul_zero]
+  · intro h; exact absurd hi h
+
+/-- A finite combination `∑_{i∈s} cᵢ ξᵢ` has law `N(0, ∑_{i∈s} cᵢ²)`. -/
+theorem map_partial (s : Finset ι) (c : ι → ℝ) :
+    (noise ι).map (fun ω => ∑ i ∈ s, c i * ω i)
+      = gaussianReal 0 (∑ i ∈ s, c i ^ 2).toNNReal := by
+  classical
+  have hG : ∀ i : s, HasGaussianLaw (fun ω : ι → ℝ => ω i) (noise ι) := fun i =>
+    (HasLaw.mk (measurable_pi_apply (i : ι)).aemeasurable (map_eval (i : ι))).hasGaussianLaw
+  have hI : iIndepFun (fun (i : s) (ω : ι → ℝ) => ω i) (noise ι) :=
+    iIndepFun_eval.precomp Subtype.val_injective
+  have hV := iIndepFun.hasGaussianLaw hG hI
+  let L : (s → ℝ) →L[ℝ] ℝ := ∑ i : s, c i • ContinuousLinearMap.proj i
+  have hL := hV.map_fun L
+  have hfun : (fun ω : ι → ℝ => L (fun i : s => ω i)) = fun ω => ∑ i ∈ s, c i * ω i := by
+    funext ω
+    simp only [L, FunLike.coe_sum, Finset.sum_apply, FunLike.coe_smul,
+      Pi.smul_apply, ContinuousLinearMap.proj_apply, smul_eq_mul]
+    exact Finset.sum_coe_sort s (fun i => c i * ω i)
+  rw [hfun] at hL
+  rw [hL.map_eq_gaussianReal]
+  have hmean : ∫ ω, ∑ i ∈ s, c i * ω i ∂(noise ι) = 0 := by
+    rw [integral_finsetSum _ fun i _ => ((memLp_eval i 1 (by simp)).integrable le_rfl).const_mul _]
+    simp [integral_const_mul, integral_eval]
+  have hmeas : Measurable fun ω : ι → ℝ => ∑ i ∈ s, c i * ω i :=
+    Finset.measurable_sum s fun i _ => measurable_const.mul (measurable_pi_apply i)
+  rw [hmean, variance_eq_integral hmeas.aemeasurable, hmean]
+  simp only [sub_zero]
+  rw [integral_partial_sq]
+
+/-- For `ι = ℕ`, `noise` is `walsh-integral-lean`'s `productGaussian`. -/
+theorem noise_nat : noise ℕ = WalshIntegral.WhiteNoise.productGaussian := rfl
+
+/-! ### Unit white noise on a Hilbert space with a countable basis -/
+
+open WalshIntegral.WhiteNoise
+
+lemma hasLaw_xi (n : ℕ) : HasLaw (fun ω => xi n ω) (gaussianReal 0 1) (noise ℕ) :=
+  (HasLaw.mk (measurable_pi_apply n).aemeasurable (map_eval n)).congr (xi_ae n)
+
+lemma iIndepFun_xi : iIndepFun (fun (n : ℕ) ω => xi n ω) (noise ℕ) :=
+  iIndepFun_eval.congr fun n => (xi_ae n).symm
+
+variable {H : Type*} [NormedAddCommGroup H] [InnerProductSpace ℝ H]
+
+/-- Unit white noise indexed by `H`: the linear isometry `f ↦ ∑ₙ ⟨bₙ, f⟩ ωₙ` into
+`L²(productGaussian)`, built from `WalshIntegral.WhiteNoise.orthonormalSeries`. -/
+def wn (b : HilbertBasis ℕ ℝ H) : H →ₗᵢ[ℝ] Lp ℝ 2 productGaussian :=
+  (orthonormalSeries (fun n => xi n) (orthonormal_gaussianLp _ hasLaw_xi iIndepFun_xi)).comp
+    b.repr.toLinearIsometry
+
+/-- Covariance (isometry): `⟨η f, η g⟩_{L²} = ⟨f, g⟩_H`. -/
+theorem inner_wn (b : HilbertBasis ℕ ℝ H) (f g : H) : ⟪wn b f, wn b g⟫_ℝ = ⟪f, g⟫_ℝ :=
+  (wn b).inner_map_map f g
+
+/-- `E η(f) η(g) = ⟨f, g⟩`. -/
+theorem integral_wn_mul (b : HilbertBasis ℕ ℝ H) (f g : H) :
+    ∫ ω, (wn b f : (ℕ → ℝ) → ℝ) ω * (wn b g : (ℕ → ℝ) → ℝ) ω ∂productGaussian = ⟪f, g⟫_ℝ := by
+  rw [← inner_wn b f g, L2.inner_def]
+  refine integral_congr_ae (Filter.Eventually.of_forall fun ω => ?_)
+  simp only
+  rw [real_inner_eq_re_inner, RCLike.inner_apply, conj_trivial]
+  simp [mul_comm]
+
+/-- Each `η(f)` is centered Gaussian with variance `‖f‖²`. -/
+theorem map_wn (b : HilbertBasis ℕ ℝ H) (f : H) :
+    productGaussian.map (wn b f) = gaussianReal 0 (‖f‖ ^ 2).toNNReal := by
+  have h := orthonormalSeries_gaussian_law (P := noise ℕ) (fun n => xi n) hasLaw_xi
+    iIndepFun_xi (b.repr f)
+  have hn : ‖b.repr f‖₊ = ‖f‖₊ := by
+    ext; exact b.repr.norm_map f
+  have hv : (‖f‖ ^ 2).toNNReal = ‖f‖₊ ^ 2 := by
+    rw [← coe_nnnorm, ← NNReal.coe_pow, Real.toNNReal_coe]
+  rw [hv, ← hn, ← h]
+  rfl
+
+/-- `η` is a Gaussian process indexed by `H`. -/
+theorem isGaussianProcess_wn (b : HilbertBasis ℕ ℝ H) :
+    IsGaussianProcess (fun f ω => (wn b f : (ℕ → ℝ) → ℝ) ω) productGaussian :=
+  linearLp_isGaussianProcess (wn b).toContinuousLinearMap fun f =>
+    (HasLaw.mk (Lp.aestronglyMeasurable _).aemeasurable (map_wn b f)).hasGaussianLaw
+
+end GaussianChaos.GaussianProduct

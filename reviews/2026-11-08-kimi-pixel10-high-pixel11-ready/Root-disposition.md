@@ -1,0 +1,5 @@
+# Pages34–37 independent HIGH pixel evidence
+
+Root read full5checks/16exactIDs/2minor/4limits: canonical PASS_WITH_NOTES/high/no repairs. Riesz nested displays, the calibration table and convolution scripts are legible in body bands; all crop-edge partial lines/displays have complete overlap. No mathematical/source or citation-target verification inferred. Native totals780876input/36709output, context95319; reported turn91877input/3442output=95319, within bound. No all-attempt completeness claim.
+
+Kimi union pages1–37:37/267pages/148images;230pages owed. Next38–41/16views READY653707input/+311296reserve=965003. No authority or full-goal acceptance here. Source05 genuine mathematical review remains live on original handle. Root separately checked that the raw white-noise driver is constructed as the time-integrated wave-interaction operator, not an instantaneous bounded white multiplier; deterministic signed means use their separate form closure. No new source defect from that concern. Original integrated/source/cold/adoption/delivery gates remain open.

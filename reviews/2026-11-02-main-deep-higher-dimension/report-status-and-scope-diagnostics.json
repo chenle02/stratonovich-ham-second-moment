@@ -1,0 +1,79 @@
+{
+  "raw_contract": {
+    "contract_ok": "true",
+    "contract_error": "",
+    "verdict": "PASS",
+    "confidence": "HIGH",
+    "category": "paper-review-deepseek",
+    "model": "deepseek/deepseek-v4-pro"
+  },
+  "scope": "Four-proof targeted deep review only. Report diagnostics for parent adjudication; no adoption, global/main-whole/image/cold or goal acceptance.",
+  "scientific_source_revision": "53bf01b7585b8815ec92b56b5ba1590550c3e93f",
+  "raw_proof_rows": [
+    {
+      "id": "PROOF020",
+      "raw_status": "FULLY_CHECKED",
+      "raw_row": "| PROOF020 P:higher-transfer | FULLY_CHECKED | Window, invariant, H\u00f6lder exponents, Dirichlet normalization, D\u2090 constants, symmetry, and final accumulation all re-derived; `K=12M[\u0393(1\u2212\u03b4r)D_a]^{1/r}Z_\u03b8^{1/r\u2032}`, time `\u03b2`, factorial `q`; passage to `A_k`/`\ud835\udd3cu\u00b2` valid with all hypotheses retained. |"
+    },
+    {
+      "id": "PROOF021",
+      "raw_status": "FULLY_CHECKED",
+      "raw_row": "| PROOF021 L:higher-riesz | FULLY_CHECKED | `F\u2083` formula/normalization, convex-chord and distance-derivative monotonicity, continuity, peak `2^{1\u2212\u03b1}/(2\u2212\u03b1)`; 2D small-ball `2R^{3/2}` and layer-cake `M\u2082` re-derived with all constants; averaging and Fatou optimality correct. |"
+    },
+    {
+      "id": "PROOF022",
+      "raw_status": "FULLY_CHECKED",
+      "raw_row": "| PROOF022 C:higher-riesz | FULLY_CHECKED | Riesz covariance locally integrable (`\u03b1<d`), tempered, homogeneous `\u2212\u03b1`; Gamma-mixture PSD with absolute Fubini; stated ranges satisfy `\u03b1+\u03b1\u2080<2`, additional spatial hypothesis discharged uniformly in all widths; no endpoint/broader inclusion claimed. |"
+    },
+    {
+      "id": "PROOF023",
+      "raw_status": "FULLY_CHECKED",
+      "raw_row": "| PROOF023 P:higher-obstructions | FULLY_CHECKED | 2D Riesz divergence (`3/2\u2264\u03b1<2`, wedge, `c/(3\u221a2)`, exponent `1/2\u2212\u03b1`); anisotropic `a\u2081,a\u2082` construction valid for all `1<\u03b1<2`, divergent `u^{-a\u2081\u2212a\u2082/2}`; sphere\u2192disk projection exact; Fatou/`\u03b7=\u03b5` extension rigorous; scope kept distinct from existence/scale. |"
+    }
+  ],
+  "raw_HD_rows": "HD01\u2013HD14 all FULLY_CHECKED; individual locators retained in report-obligation-locators.json",
+  "required_repairs_claimed_by_reviewer": "None",
+  "orchestrator_diagnostic_findings": [
+    {
+      "kind": "Reviewer arithmetic error in illustrative witness",
+      "raw_claim": "alpha=3/2, alpha0=1/4, r=5/3 gives a=5/8",
+      "correct": "delta=1/2, delta*r/2=5/12, so a=7/12. theta=5/8 is correct; the witness remains admissible because 1/2<7/12<1.",
+      "effect": "Report hand-control arithmetic is wrong; manuscript parameter formula unchanged and correct. Parent must adjudicate, no raw-grade upgrade or concealment."
+    },
+    {
+      "kind": "Invalid optional editorial advice",
+      "raw_claim": "Sharpen at least to equal in Gamma-bound absorption",
+      "correct": "Keep the manuscript inequality. e^-2 >= e^(-2k) for k>=1, with equality only k=1; Gamma itself was bounded below, so equality is not established.",
+      "effect": "Do not adopt this optional advice. The original manuscript inequality is valid."
+    },
+    {
+      "kind": "Unusable optional label suggestion",
+      "raw_claim": "replace pointer with P:lower-alpha/...",
+      "correct": "That is not a verified existing label. Retain existing P:low-alpha-upper pointer or let root choose an accurate prose clarification after adjudication.",
+      "effect": "No source edit is made."
+    }
+  ],
+  "other_report_limitations": [
+    "No images/raster source certification",
+    "Not strict blind; historical annotations supplied and disclosed",
+    "Not cold",
+    "No full214 or all-model intrinsic-theorem acceptance",
+    "No model substitution, retry, source edits, ACTIVE staging or commits"
+  ],
+  "native_evidence": {
+    "session": "ses_e62e44f6cffeB2kErU7Ror35hI",
+    "actual_model": "deepseek/deepseek-v4-pro",
+    "finish": "stop",
+    "exit": {
+      "exit_code": 0,
+      "elapsed_seconds": 345.7803048720234,
+      "finished_utc": "2026-11-02T16:39:04.668678+00:00"
+    },
+    "tools_used": 0,
+    "all28_Git_frozen_match": true,
+    "all28_live_match": true,
+    "regular_file_export": true,
+    "source_and_rawLF_renderer_maps_verified": true
+  },
+  "parent_adjudication": "PENDING"
+}

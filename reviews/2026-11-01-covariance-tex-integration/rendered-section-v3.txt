@@ -1,0 +1,417 @@
+Relative to the shared-clock value ρ = 1, the omitted cross-pair multiplier is exactly
+1 + λ/(2θ). For smaller correlations the deficit can be larger. This does not assert a
+correction rule at higher orders.
+   The transforms K× use gap damping. For the auxiliary cutoff function
+                                     ∫︂ T1 ∫︂ T2
+                                                           min(s, t)
+                      F (T1 , T2 ) =             |s − t|−a           ds dt,
+                                       0     0                2
+nonnegative Fubini adds 1/(θ1 θ2 ) to its double external-horizon transform. This function
+is not an actual unequal-time solution correlation. Reversing chains ending at different
+physical times instead shifts the cross covariance to |T1 − T2 − s + t|−a . Setting the two
+damping parameters equal is also not the single Laplace transform of a diagonal-horizon
+moment. For a self-pair at common gap damping, one external horizon instead adds
+1/θ, recovering the known first-mean coefficient.
+    The proposition rules out exactly the analytic covariance substitution in (15.4), with
+product heat-chain measure, unrestricted operational-time rectangle and constant Brow-
+nian correlation. Additional relative-order weights,other derived clock couplings,matrix
+representations,modulus inequalities and their possible asymptotics are not covered. In
+particular, the inequality at this first cross pair leaves open a shared-clock lower com-
+parison or asymptotic equivalence at higher orders. The original full sharp conjecture
+remains open. This is not a Skorohod result or a no-go for every two-clock method.
+
+
+16     Covariance bounds for physically masked wave
+       fields
+We establish the covariance estimates needed for the operator construction. Throughout
+this section, Hypothesis 1.1 holds, a = α0 , and Γ ̸= 0. For zero spatial covariance,
+the spatial spectral measures and actual noise variances vanish; the purely temporal
+estimates remain valid independently of Γ. We use the unitary Fourier transform
+                                 ∫︂
+                     fˆ︁(ξ) = cd    e−iξ·x f (x) dx, cd = (2π)−d/2 .
+                                  Rd
+
+The spectral convention in Hypothesis 1.1 means that, for every complex Schwartz test
+φ,                 ∫︂               ∫︂ (︃∫︂              )︃
+                           φ(x)Γ( dx) =               eiξ·x φ(x) dx µ( dξ).         (16.1)
+                      Rd                  Rd     Rd
+This is an identity of distribution pairings. We will not interchange two infinite measures
+in the associated oscillatory expression.
+    A positive tempered Radon measure has polynomial mass growth. Indeed, choose
+a nonnegative compact smooth test that is at least one on the unit ball, and apply a
+defining Schwartz seminorm bound for the distribution to its dilations. Its mass on a
+ball of radius R ≥ 1 is bounded by a power of R. Summation over dyadic shells then
+gives integrability of (1 + |x|)−N for some N , and hence absolute integrability of every
+
+                                               108
+Schwartz test. These facts apply to both Γ and µ. Smooth cutoffs converge in the
+Schwartz topology, so these integrals agree with the tempered pairings.
+
+16.1      Translated spectral growth and physical masks
+Proposition 16.1 (Translated spectral mass). Put
+                          ∫︂
+                                    2                eMΓ
+                   MΓ =        e−|x| /4 Γ( dx), CΓ = √ d .
+                            Rd                      (2 π)
+
+Then 0 < MΓ < ∞, and for y ∈ Rd and r > 0,
+              ∫︂                          (︃       )︃d ∫︂
+                     −|ξ−y|2 /r2               r               2   2
+                   e             µ( dξ) =     √             e−r |x| /4 e−iy·x Γ( dx),           (16.2)
+                 d                           2 π         Rd
+              ∫︂R                            α
+                           2 2             r MΓ
+           0≤      e−|ξ−y| /r µ( dξ) ≤ √ d ,                µ(B(y, r)) ≤ CΓ rα .                (16.3)
+                Rd                        (2    π)
+The ball may be open or closed.
+Proof. Temperedness gives finiteness   ∫︁ of M     Γ . Its positivity follows from Γ ̸= 0. To check
+                                                 2
+the Fourier constant, set J(b) = R e−Ax eibx dx for A > 0. Squaring the real Gaussian
+                                                            √︁
+integral and using polar coordinates gives J(0) = π/A.            √︁ Differentiation    and integration
+                ′                                                          −b2 /(4A)
+by parts give J (b) = −bJ(b)/(2A). Therefore, J(b) = π/Ae                            . Taking products
+over the coordinates gives
+                     ∫︂                                  (︃ √ )︃d
+                            −r2 |x|2 /4 i(ξ−y)·x           2 π             2 2
+                          e            e          dx =              e−|ξ−y| /r .
+                       Rd                                    r
+                                                    2   2
+Apply (16.1) to the single Schwartz test e−r |x| /4 e−iy·x to obtain (16.2). Its left side is
+nonnegative. Taking the absolute value on the right removes the complex phase because
+Γ is nonnegative. The pushforward of Γ by x ↦→ rx assigns mass rα−d Γ(A) to a Borel
+set A. Thus,                 ∫︂
+                                   2   2
+                                e−r |x| /4 Γ( dx) = rα−d MΓ .
+                                                                                            2   2
+This proves the Gaussian bound. On either ball B(y, r) the integrand e−|ξ−y| /r is at
+least e−1 , proving the mass bound. This proves Proposition 16.1.
+   Choose and fix a real nonzero Schwartz function ζ. For R > 0 put ζR (x) = ζ(x/R),
+                                       d ˆ︁
+       R and L = ∥ζ∥1 . Then kR (u) = R ζ(Ru) and ∥kR ∥1 = L > 0. Define
+kR = ζˆ︂            ˆ︁
+                                                   ∫︂
+                                                2
+               νR ( dη) = ρR (η) dη,  ρR (η) = cd L |kR (ξ − η)|µ( dξ).        (16.4)
+
+Proposition 16.2 (Auxiliary mask norm). The measure νR is even, tempered and
+Radon, with
+                            νR (B(y, r)) ≤ c2d L2 CΓ rα                (16.5)
+
+                                                 109
+for all y ∈ Rd and r > 0, uniformly in R > 0. If H is a separable complex Hilbert space
+and F is an H-valued Schwartz function, then
+                      ∫︂                      ∫︂
+                          ∥ζR F (ξ)∥H µ( dξ) ≤ ∥Fˆ︁(η)∥2H νR ( dη).
+                           ˆ︃       2
+                                                                                 (16.6)
+
+For a real H, the same assertion holds after complexification.
+Proof. Schwartz decay of kR and polynomial growth of µ show that ρR (η) is finite at every
+η. On compact sets of η, the integrands have a common integrable bound. Dominated
+convergence therefore makes ρR continuous, and νR is Radon. Since ζ is real, kR (−u) =
+kR (u). Evenness of µ gives evenness of ρR . Tonelli’s theorem gives
+                                        ∫︂
+                                     2
+                     νR (B(y, r)) = cd L |kR (u)|µ(B(y + u, r)) du.
+
+Proposition 16.1 and ∥kR ∥1 = L give (16.5). Polynomial growth on centered balls proves
+temperedness by the same dyadic argument as above.
+   Bochner Fourier integration gives
+                                        ∫︂
+                           ζR F (ξ) = cd kR (ξ − η)Fˆ︁(η) dη.
+                            ˆ︃
+
+For scalar Schwartz functions this follows by Fourier inversion and absolute integrabil-
+ity. It follows next for finite-rank Hilbert-valued functions. For general F , orthogonal
+projections onto increasing finite-dimensional spans converge pointwise in norm. The
+Schwartz bounds on F dominate the Fourier integrals, proving the identity by dominated
+convergence. In a finite-dimensional space the full identity projection suffices; the zero
+space is immediate. The triangle inequality and weighted Cauchy–Schwarz yield
+                                           ∫︂
+                                  2    2
+                       ∥ζˆ︃
+                          R F (ξ)∥H ≤ cd L    |kR (ξ − η)|∥Fˆ︁(η)∥2H dη.
+
+Integrating against µ and applying Tonelli’s theorem proves (16.6). Its right side is finite
+by Schwartz decay and temperedness of νR . This proves Proposition 16.2.
+
+16.2     Temporal completion and the original noise
+Lemma 16.3 (Temporal covariance completion). Let T > 0. The form
+                             ∫︂ T ∫︂ T
+                   ⟨f, g⟩a =           f (t)g(s)|t − s|−a dt ds
+                                    0   0
+
+is positive semidefinite on real compact smooth tests. Its null-quotient completion Ha is
+separable. The inclusion of tests extends continuously from L2 (0, T ), with
+                                              2T 1−a
+                                   ∥f ∥2a ≤          ∥f ∥22 .                        (16.7)
+                                              1−a
+In its complexification the norm is given by the same double integral with f (t)f (s). In
+particular, bounded measurable amplitudes on a subinterval, extended by zero, belong to
+this completion.
+
+                                              110
+Proof. Write ΓE for Euler’s Gamma function. Away from the null diagonal,
+                                        ∫︂ ∞
+                               −a   1
+                        |t − s| =            λa−1 e−λ|t−s| dλ.
+                                  ΓE (a) 0
+This follows by substitution in the defining Gamma integral. Moreover,
+                                   ∫︂ min(t,s)
+                         −λ|t−s|
+                        e        =             2λe−λ(t−u) e−λ(s−u) du.
+                                        −∞
+
+For each λ > 0 its quadratic form is an integral of a square. All exchanges for com-
+pact smooth tests are absolutely integrable because the kernel row integral is at most
+2T 1−a /(1 − a). The same bound and 2|xy| ≤ |x|2 + |y|2 prove (16.7). A countable
+L2 -dense family of compact smooth tests is consequently dense in Ha , proving separa-
+bility. The complex quadratic form is the sum of those of the real and imaginary parts,
+since symmetry cancels the imaginary cross term. Thus, the same bound holds after
+complexification. Smooth density in L2 , together with the Schur bound on the absolute
+bilinear form, extends the inclusion and the integral identity to L2 . This includes the
+stated interval amplitudes. This proves Lemma 16.3.
+    Let D consist of finite sums F (t, x) = j τj (t)fj (x) with real τj ∈ Cc∞ (0, T ) and real
+                                           ∑︁
+Schwartz fj . These give Ha -valued Schwartz functions of x. Let W denote the original
+real isonormal noise in (1.2).
+Proposition 16.4 (Completion on the same noise). The space D belongs to the original
+test-noise completion and
+                                          ∫︂
+                                 2      d
+                          EW (F ) = (2π)     ∥Fˆ︁(ξ)∥2HaC µ( dξ).             (16.8)
+
+Define the auxiliary seminorm
+                                                 ∫︂
+                                    2        d
+                           NR (F ) = (2π)             ∥Fˆ︁(η)∥2HaC νR ( dη).
+
+Then F ↦→ W (ζR F ) extends as a contraction from the null-quotient completion for NR
+into the original L2 (Ω). The extension is centered and jointly Gaussian. For finitely
+many real F1 , . . . , Fm ∈ D, their actual masked covariance matrix is bounded in posi-
+tive semidefinite order by the matrix of auxiliary inner products. This gives covariance
+comparison for every finite linear Gaussian image and every convex norm power p ≥ 1.
+                                                       ∫︁
+Proof. For real spatial Schwartz f, g, put h(z) = f (y + z)g(y) dy. Fourier inversion
+and Parseval give                        ∫︂
+                                 h(z) = eiξ·z fˆ︁(ξ)ˆ︁
+                                                    g(ξ) dξ.
+
+Therefore,                  ∫︂
+                                 eiξ·z h(z) dz = (2π)d fˆ︁(−ξ)ˆ︁
+                                                              g(−ξ).
+
+                                                 111
+Apply (16.1) to the single test h and reflect ξ using evenness of µ. The spatial covariance
+               ∫︁
+is thus (2π)d fˆ︁(ξ)ˆ︁
+                     g(ξ)µ( dξ). Summing over the finitely many temporal factors gives
+(16.8). Schwartz decay, temperedness and temporal integrability justify these pairings.
+If W is initially given only on compact spatial tests, smooth expanding cutoffs converge
+in the Schwartz topology. The spectral form is continuous in that topology, admitting
+D in the same completion.
+    Proposition 16.2, applied with H = HaC , gives EW (ζR F )2 ≤ NR (F )2 . It annihilates
+auxiliary-null tests. An auxiliary Cauchy sequence thus gives a Cauchy sequence of
+actual noise evaluations in L2 (Ω), proving the contraction extension and its uniqueness.
+Every finite linear combination of the limits is an L2 limit of centered Gaussian variables.
+Their variances converge, so their characteristic functions prove that the limits remain
+jointly centered Gaussian.
+    For the finite family let A be the actual covariance       matrix and B the auxiliary
+Gram matrix. Applying the norm inequality to i bi Fi gives bT Ab ≤ bT Bb for every
+                                                     ∑︁
+real vector b. Diagonalizing B − A constructs a centered Gaussian vector Z of that
+covariance, independent of the actual evaluation vector X, on a product space. Then
+X + Z has covariance B. Conditional Jensen gives E∥X∥p ≤ E∥X + Z∥p for every
+norm and p ≥ 1. Finite Gaussian moments ensure finiteness of both sides. This proves
+Proposition 16.4.
+   The auxiliary completion depends on R and ζ. Its construction does not define
+multiplication by ζR on the original noise quotient. Nor does the finite linear Gaussian
+comparison assert a covariance comparison for nonlinear wave solutions. The auxiliary
+and original test norms need not dominate one another. No spatial representative for
+every auxiliary class, nonnegative physical inverse covariance for νR , or uniform density
+bound in R is asserted.
+
+Proposition 16.5 (A physical mask need not preserve noise-null tests). In the admis-
+sible case d = 2, α = 1, 0 < a < 1 and Γ = δ0 ( dx1 ) dx2 , there is a real compact smooth
+mask ζ such that no finite C satisfies EW (ζF )2 ≤ CEW (F )2 for every compact smooth
+test F .
+
+Proof. Fourier inversion on Schwartz tests gives µ = (2π)−1 dξ1 δ0 ( dξ2 ) in the stated
+spectral convention. The measure Γ is nonnegative, even, positive definite and tempered,
+with Γ(cA) = cΓ(A). It therefore satisfies Hypothesis 1.1 with α = 1. This is not spatial
+white noise in dimension two. For real compact smooth g, its spatial covariance is, by
+ordinary Fubini,                                          )︃2
+                                  ∫︂ (︃∫︂
+                          V (g) =         g(x1 , x2 ) dx2     dx1 .
+                                     R     R
+
+Choose real even χ ∈     Cc∞ (R) equal to one on [−1, 1] and zero outside [−2, 2].      For
+example, on 1 < r = |x| < 2 use
+
+                                               e−1/(2−r)
+                               χ(x) =                          .
+                                         e−1/(2−r) + e−1/(r−1)
+
+
+                                               112
+The endpoint     exponentials vanish ∫︁ to every order, so the plateau pastes smoothly. Let
+Iχ = (χ′ )2 > 0 and Jχ = χ4 > 0. Positivity of Iχ follows because χ is not
+       ∫︁
+                                                   ′′
+constant, and Jχ ≥ 2. Put g(x)       ∫︁ ′′= χ(x1 )χ (x2 ) and ζ(x) = χ(x1 )χ(x2 ). Their un-
+masked marginal vanishes since χ = 0, whereas integration by parts gives the masked
+marginal −Iχ χ(x1 )2 . Thus, V (g) = 0 and V (ζg) = Jχ Iχ2 > 0. For a nonzero nonnegative
+τ ∈ Cc∞ (0, T ), set F (t, x) = τ (t)g(x). The temporal factor ∥τ ∥2a is finite and strictly pos-
+itive because its nonnegative integrand is positive on a set of positive two-dimensional
+measure. Consequently, the full unmasked variance is zero and the masked variance is
+positive. This proves Proposition 16.5.
+
+16.3     Temporal modulation and continuous wave factors
+            √
+Write ⟨x⟩ = 1 + x2 . Let I = [s, s + h] ⊂ [0, T ], with 0 < h ≤ 1. Norms below are those
+of the complexified temporal completion in Lemma 16.3.
+Lemma 16.6 (Modulated amplitudes). Let A ∈ C 1 (I; C), M = supI |A| and D =
+supI |A′ |. For every real ω,
+                                                                             16
+        ∥1I A(t)eiωt ∥2a ≤ C0 (a)h2−a (M + hD)2 ⟨hω⟩a−1 ,        C0 (a) =       .         (16.9)
+                                                                            1−a
+The bound is uniform in T, s, h, A and ω.
+                   ∫︁ s+h−v
+Proof. Put c(v) = s         A(u + v)A(u) du for 0 ≤ v ≤ h. Differentiation at the moving
+endpoint gives
+                                                 ∫︂ s+h−v
+               ′
+              c (v) = −A(s + h)A(s + h − v) +             A′ (u + v)A(u) du.
+                                                        s
+                               2       ′            2
+Thus, c(h) = 0, |c(v)| ≤ hM and |c (v)| ≤ M + hM D. Splitting the covariance square
+into its two conjugate triangles gives
+                              ∫︂ h                     ∫︂ 1
+                                    −a iωv
+                   iωt 2
+          ∥1I A(t)e ∥a = 2 Re                      2−a
+                                   v e c(v) dv = 2h Re      y −a eiωhy f (y) dy,
+                                   0                               0
+
+where f (y) = c(hy)/h. Set K = M + hD. Then f (1) = 0 and |f |, |f ′ | ≤ K 2 . If K = 0
+the assertion is immediate. If |ωh| ≤ 1, the last integral is at most K 2 /(1−a) in absolute
+value, and ⟨ωh⟩a−1 ≥ 2(a−1)/2 . The claimed constant is sufficient in this case.
+   Now suppose k = |ωh| > 1. On [0, 1/k] the integral is at most K 2 k a−1 /(1 − a). On
+[1/k, 1], integrate the exponential by parts. The endpoint at one vanishes, while the
+other endpoint contributes at most K 2 k a−1 . The derivative integral, divided by k, is
+bounded by
+                   (︃ ∫︂ 1              ∫︂ 1
+               K2
+                                                  )︃            (︃          )︃
+                              −a−1             −a        2 a−1          1
+                     a      y      dy +       y dy ≤ K k          1+           .
+                k       1/k               1/k                         1−a
+Here
+√     k −1 ≤ k a−1 √
+                   since a > 0. The total is at most 4K 2 k a−1 /(1 − a). Finally, k a−1 ≤
+         a−1
+  2⟨ωh⟩      and 8 2 ≤ 16. Including the factor 2h2−a proves the bound for either sign
+of ω. This proves Lemma 16.6.
+
+                                              113
+Lemma 16.7 (Correlated trigonometric products). Let r, ρ ≥ 0. Let Pr be either cos(rt)
+or sin(rt), and let Qρ be either cos(ρt) or sin(ρt). With the amplitude and constant above,
+
+                       ∥1I APr Qρ ∥2a ≤ C0 (a)h2−a (M + hD)2 Qh (r, ρ),            (16.10)
+                            Qh (r, ρ) := ⟨h(r − ρ)⟩a−1 + ⟨h(r + ρ)⟩a−1 .           (16.11)
+
+Proof. Expanding the two trigonometric factors gives four complex exponential modes
+with frequencies σr + τ ρ, σ, τ ∈ {−1, 1}, and coefficients of absolute value 1/4. In a
+Hilbert space,          ⃦            ⃦2 (︄        )︄
+                        ⃦∑︂          ⃦    ∑︂         ∑︂
+                               cj vj ⃦ ≤     |cj |      |cj |∥vj ∥2 .
+                        ⃦            ⃦
+                        ⃦
+                        ⃦            ⃦
+                               j                   j          j
+
+The first coefficient sum is one. Apply Lemma 16.6 to each mode. Two frequencies have
+absolute value |r − ρ| and two have absolute value r + ρ. This gives one half of the
+asserted right side, and hence the bound. Repeated or zero frequencies are permitted;
+no orthogonality or independence of the modes is used. This proves Lemma 16.7.
+
+Lemma 16.8 (Continuous sine factors). Define cr (t) = cos(rt) and
+
+                                         sin(rt)
+                          br (t) = ⟨r⟩             (r > 0),       b0 (t) = t.
+                                            r
+For Fr ∈ {cr , br } and Gρ ∈ {cρ , bρ },
+
+       ∥1I Fr Gρ ∥2a ≤ C1 (a)(1 + T )4 h2−a Qh (r, ρ),C1 (a) = 4 · 31−a C0 (a). (16.12)
+                                                               √
+Proof. For r ≥ 1, br is a sine times a coefficient at most 2. For 0 ≤ r ≤ 1, the
+fundamental theorem of calculus gives
+                                           ∫︂ 1
+                             br (t) = t⟨r⟩      cos(vrt) dv.
+                                                       0
+
+This includes r = 0. Hence, a product Fr Gρ is a scalar coefficient of absolute value
+at most two times a normalized integral of tj Pr′ (t)Qρ′ (t), where j ∈ {0, 1, 2} and |r′ −
+r|, |ρ′ − ρ| ≤ 1. The integral is over zero, one or two copies of [0, 1]; with no averages,
+use a one-point probability space. Its parameter dependence is continuous in L2 (0, T )
+by dominated convergence. Lemma 16.3 makes it continuous in Ha as well. Thus, the
+averages are genuine Bochner integrals, and their Ha images agree with the pointwise
+averages by continuity of the inclusion. Hilbert Jensen bounds the squared norm of an
+average by the average of the squared norms.
+     Apply Lemma 16.7 to each integrand with A(t) = tj . For j = 0, 1, 2, respectively,
+M + hD is at most 1, T + 1 and T 2 + 2T . In every case (M + hD)2 ≤ (1 + T )4 . For real
+x, e, the triangle inequality and its reverse imply
+
+                                     ⟨x⟩
+                                           ≤ ⟨x + e⟩ ≤ (1 + |e|)⟨x⟩.
+                                   1 + |e|
+
+                                                   114
+The changes in h(r ± ρ) have magnitude at most two, since h ≤ 1. Because a − 1 < 0,
+each altered bracket to the power a − 1 is at most 31−a times the original one. Apply
+these comparisons, Hilbert Jensen and the squared scalar coefficient bound four to obtain
+(16.12). This proves Lemma 16.8.
+    These estimates concern covariance forms and temporal factors. Identifying their
+actual two-phase wave application, both operator variance directions, source convergence
+and the solution-moment asymptotics remains part of the later integration work. None
+is established in this section or inferred from covariance domination alone.
+
+
+17     Targets
+Goal 17.1 (Upper bound at the correct scale). Under Hypothesis 1.1, prove
+lim supt→∞ t−κ log Eu2 (t, x) < ∞, ideally with an explicit constant.
+
+
+ Theorem 13.8 establishes the unchanged full upper goal for every admissible dimen-
+ sion and homogeneous covariance. The interval estimate passed scoped correctness
+ review. The preceding independent mild construction passed correctness review.
+ The explicit hypothesis/object revision and independent fixed-order construction
+ and their consumers passed their own scoped Opus5.5/HIGH review. A fresh whole-
+ paper cold read remains required. The earlier explicit bounds for 0 < α ≤ 1 remain
+ available. The sharp constant and final whole-paper cold read remain open.
+
+
+Goal 17.2 (Sharp second-moment constant). Under Hypothesis 1.1, derive a finite con-
+stant C2 (γ, α0 ) and prove, for every fixed x ∈ Rd ,
+
+                            lim t−κ log Eu2 (t, x) = C2 (γ, α0 ).
+                           t→∞
+
+A variational characterization must specify its full domain, covariance amplitude, ki-
+netic coefficient and Gaussian action. Derive further evaluations and bounds from this
+formula. For zero covariance, u(t, x) = 1 and C2 (0, α0 ) = 0.
+
+
+ Goal 17.2 follows Le’s revised direction of 2026-10-31: derive the actual constant,
+ whatever the computation gives. The original proposed bounds with endpoints
+ 2(4−α)/(3−α) L∗ and 2(4−α)/(3−α) L∗ remain comparisons with Conjecture 2.3. Matching
+ those endpoints or closing the source’s variational gap is not a completion require-
+ ment. No correction of the source’s normalization or equality of its energy domains
+ is adopted.
+
+
+
+
+                                            115
+

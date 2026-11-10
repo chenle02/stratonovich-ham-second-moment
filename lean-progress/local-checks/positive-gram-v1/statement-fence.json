@@ -1,0 +1,17 @@
+{
+  "namespace": "StratonovichHAMAudit.PositiveGram",
+  "headers": [
+    "theorem scalar_sqrt_dual (ell w t : \u211d) (hw : 0 < w) (ht : 0 \u2264 t) :\n    2 * ell * Real.sqrt t \u2264 ell ^ 2 / w + w * t :=\n",
+    "theorem gram_norm_square {\u03b9 : Type u} {H : Type v} [Fintype \u03b9]\n    [NormedAddCommGroup H] [InnerProductSpace \u211d H] (k : \u03b9 \u2192 H) (w : \u03b9 \u2192 \u211d) :\n    \u2016\u2211 i, w i \u2022 k i\u2016 ^ 2 =\n      \u2211 i, \u2211 j, w i * inner \u211d (k i) (k j) * w j :=\n",
+    "theorem active_upper_bound {\u03b9 : Type u} {H : Type v} [Fintype \u03b9]\n    [NormedAddCommGroup H] [InnerProductSpace \u211d H]\n    (Phi : H) (k : \u03b9 \u2192 H) (ell b w : \u03b9 \u2192 \u211d)\n    (hw : \u2200 i, 0 < w i) (ht : \u2200 i, 0 \u2264 inner \u211d Phi (k i) - b i) :\n    2 * (\u2211 i, ell i * Real.sqrt (inner \u211d Phi (k i) - b i)) - \u2016Phi\u2016 ^ 2 / 2 \u2264\n      (\u2211 i, ell i ^ 2 / w i) - (\u2211 i, b i * w i) + \u2016\u2211 i, w i \u2022 k i\u2016 ^ 2 / 2 :=\n",
+    "theorem half_weighted_entrywise_mono {\u03b9 : Type u} [Fintype \u03b9]\n    (C D : \u03b9 \u2192 \u03b9 \u2192 \u211d) (w : \u03b9 \u2192 \u211d)\n    (hw : \u2200 i, 0 \u2264 w i) (hCD : \u2200 i j, C i j \u2264 D i j) :\n    (1 / 2 : \u211d) * (\u2211 i, \u2211 j, w i * C i j * w j) \u2264\n      (1 / 2 : \u211d) * (\u2211 i, \u2211 j, w i * D i j * w j) :=\n"
+  ],
+  "header_sha256": [
+    "43e7e356a570a415bbcea9ec11ca2d231a060c67011c39ed403c439481518110",
+    "7147a05ec079e09e62a4d97a05aa2a3fcfec1a2c5ef43a9629ce171f76f8d26d",
+    "99cb79207ad756e2ec2337c3f2700fac07b6762ead7ab4361738f860bd434723",
+    "93166e02a71e88d0cd3c4db471a7f35ec09e6f29e7c2c27c4f56e68bcf7154f6"
+  ],
+  "frozen_before_proof": true,
+  "scope": "4finite algebraic certificates only; no dual-minimum/existence/PG1-PG2/PDE theorem"
+}

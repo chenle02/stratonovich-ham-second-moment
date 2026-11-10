@@ -1,0 +1,410 @@
+# Mathematical working turn 06
+
+This is the raw Gaussian operator/variance-layer reconstruction only. No source receipt, no verdict, no confidence. Notation: \(a:=\alpha_0\in(0,1)\), \(c_d=(2\pi)^{-d/2}\), \(\langle x\rangle=\sqrt{1+x^2}\), \(\Lambda=(1-\Delta)^{1/2}\), \(E_s=H^s\times H^{s-1}\) with \(s=1/2\). Original `INCONCLUSIVE/low` and all transport limitations stand.
+
+---
+
+## 0. Falsification first
+
+### 0.1 Zero-frequency temporal increment variance
+
+For an interval of length \(h>0\), the form \(\|1_{[0,h]}\|_a^2=\int_0^h\int_0^h|t-s|^{-a}\,dt\,ds\) is exactly
+
+\[
+2\int_0^h\int_0^s(s-t)^{-a}\,dt\,ds
+=2\int_0^h\frac{s^{1-a}}{1-a}\,ds
+=\frac{2h^{2-a}}{(1-a)(2-a)}.
+\]
+
+At \(a=1/2\): \(\frac{2h^{3/2}}{(1/2)(3/2)}=\frac{8}{3}h^{3/2}\). This is the scalar kernel test confirming the \(h^{2-a}\) scale used throughout 066–069; it uses a constant vector \(A\equiv1,\omega=0\) only as a self-consistent check that the modulation bound of `E:masked-temporal-modulation` is not tight but valid, since \(2/(2-a)\le2<16\).
+
+### 0.2 Rank-one families: why BOTH variances are needed
+
+Use \(H=\ell^2(\mathbb N)\), a fixed unit vector \(e_0\), and an orthonormal tail \(\{e_j\}_{j=1}^N\), with
+
+\[
+T_j=e_0\otimes e_j\quad(j=1,\dots,N),
+\qquad T_jT_j^*=e_0\otimes e_0,\qquad T_j^*T_j=e_j\otimes e_j.
+\]
+
+Then
+
+\[
+V_{\rm out}=\sum_jT_jT_j^*=N\,e_0\otimes e_0,
+\qquad
+V_{\rm in}=\sum_jT_j^*T_j=\sum_{j\le N}e_j\otimes e_j=P_N,
+\]
+
+so \(\operatorname{Tr}V_{\rm out}=N\) and \(\operatorname{Tr}V_{\rm in}=N\). For the Gaussian \(X=\sum_jg_jT_j\),
+
+\[
+XX^*=\left(\sum_jg_j^2\right)e_0\otimes e_0
+\Longrightarrow
+\mathbb E\|X\|_{S_4}^4=\mathbb E\left(\sum_jg_j^2\right)^{\!2}=N(N+2).
+\]
+
+But \(\operatorname{Tr}V_{\rm out}^2=N^2\) while \(\operatorname{Tr}V_{\rm in}^2=N\). Controlling only \(V_{\rm in}\) (whose trace square is \(N\)) cannot bound the \(S_4\) moment (\(N(N+2)\)), and its transpose family \(T_j'=e_j\otimes e_0\) reverses the roles: \(V_{\rm in}'=N e_0\otimes e_0\), \(V_{\rm out}'=P_N\). Hence a Gaussian matrix bound must keep the **average of the trace powers of BOTH variances**,
+
+\[
+\frac{\operatorname{Tr}V_{\rm out}^m+\operatorname{Tr}V_{\rm in}^m}{2},
+\]
+
+exactly as the Hermitian-dilation/IBP argument produces later in 077. This is a scalar-operator check, not a surrogate for the wave estimates.
+
+---
+
+## 1. OWN061 — translated spectral mass
+
+From `E:masked-spectral-convention`, the single tempered pairing applied to the Schwartz test \(e^{-r^2|x|^2/4}e^{-iy\cdot x}\) gives
+
+\[
+\int e^{-r^2|x|^2/4}e^{-iy\cdot x}\Gamma(\mathrm dx)
+=\int\left(\int e^{i\xi\cdot x}e^{-r^2|x|^2/4}e^{-iy\cdot x}\,\mathrm dx\right)\mu(\mathrm d\xi).
+\]
+
+The frequency-side Gaussian is, coordinate by coordinate from \(J(b)=\sqrt{\pi/A}e^{-b^2/(4A)}\),
+
+\[
+\int e^{-r^2|x|^2/4}e^{i(\xi-y)\cdot x}\mathrm dx
+=\left(\frac{2\sqrt\pi}{r}\right)^d e^{-|\xi-y|^2/r^2}.
+\]
+
+Therefore
+
+\[
+\int e^{-|\xi-y|^2/r^2}\mu(\mathrm d\xi)
+=\left(\frac r{2\sqrt\pi}\right)^d\int e^{-r^2|x|^2/4}e^{-iy\cdot x}\Gamma(\mathrm dx).
+\]
+
+Since \(\Gamma\ge0\), the absolute value removes the phase, and homogeneity \(x\mapsto rx\) pushes \(\Gamma\) to \(r^{\alpha-d}\Gamma\):
+
+\[
+\int e^{-r^2|x|^2/4}\Gamma(\mathrm dx)
+=r^{\alpha-d}M_\Gamma.
+\]
+
+Hence
+
+\[
+0\le\int e^{-|\xi-y|^2/r^2}\mu(\mathrm d\xi)\le\frac{r^\alpha M_\Gamma}{(2\sqrt\pi)^d}.
+\]
+
+On \(B(y,r)\) the integrand is \(\ge e^{-1}\), giving
+
+\[
+\mu(B(y,r))\le C_\Gamma r^\alpha,\qquad C_\Gamma=\frac{eM_\Gamma}{(2\sqrt\pi)^d}.
+\]
+
+Positivity \(0<M_\Gamma<\infty\): finiteness is temperedness; strict positivity uses \(\Gamma\ne0\) and the everywhere-positive Gaussian. The closed-ball estimate follows by applying the open-ball bound at \(r+\varepsilon\) and letting \(\varepsilon\downarrow0\) via Radon finiteness on bounded sets. No angular density, no isotropy, no spectral density are used; only \(\Gamma\ge0\), evenness in the convention, homogeneity, and positivity are. The zero covariance \(\Gamma=0\) gives \(M_\Gamma=0,C_\Gamma=0,\mu=0\), so all these bounds are trivially true.
+
+## 2. OWN062 — auxiliary mask norm
+
+\(\zeta_R=\zeta(\cdot/R)\), \(k_R=\widehat{\zeta_R}=R^d\widehat\zeta(R\cdot)\), \(\|k_R\|_1=\|\widehat\zeta\|_1=L\). \(\zeta\) real implies \(k_R(-u)=\overline{k_R(u)}\); evenness of \(\mu\) then gives evenness of
+
+\[
+\nu_R(\mathrm d\eta)=c_d^2L\left(\int|k_R(\xi-\eta)|\mu(\mathrm d\xi)\right)\mathrm d\eta.
+\]
+
+Ball growth: Tonelli over the nonnegative integrand gives
+
+\[
+\nu_R(B(y,r))
+=c_d^2L\int\mu(\mathrm d\xi)\int_{B(y,r)}|k_R(\xi-\eta)|\,\mathrm d\eta.
+\]
+
+With \(u=\xi-\eta\), the condition \(\eta\in B(y,r)\) is \(\xi\in B(y+u,r)\); interchanging again,
+
+\[
+=c_d^2L\int|k_R(u)|\,\mu(B(y+u,r))\,\mathrm du
+\le c_d^2L\int|k_R(u)|\,C_\Gamma r^\alpha\,\mathrm du
+=c_d^2L^2C_\Gamma r^\alpha.
+\]
+
+Uniform in \(R\) because \(\|k_R\|_1=L\).
+
+Hilbert-valued bound: Bochner Fourier inversion gives, for \(H\)-valued Schwartz \(F\),
+
+\[
+\widehat{\zeta_RF}(\xi)=c_d\int k_R(\xi-\eta)\widehat F(\eta)\,\mathrm d\eta,
+\]
+
+so by triangle inequality and the split \(|k_R|=\sqrt{|k_R|}\sqrt{|k_R|}\) with the total mass \(L\),
+
+\[
+\|\widehat{\zeta_RF}(\xi)\|_H^2
+\le c_d^2L\int|k_R(\xi-\eta)|\|\widehat F(\eta)\|_H^2\,\mathrm d\eta.
+\]
+
+Integrating against \(\mu\) and re-Tonelli proves `E:masked-hilbert-fourier`. The finite-rank approximation is legitimate by pointwise-norm convergence of the orthonormal projections of \(F\). Temperateness of \(\nu_R\): the ball bound at one radius plus dyadic shells gives polynomial growth, hence \(\int(1+|\eta|)^{-N}\mathrm d\nu_R<\infty\) for large \(N\).
+
+## 3. OWN063 — temporal completion
+
+PD: \(|t-s|^{-a}=\Gamma_E(a)^{-1}\int_0^\infty\lambda^{a-1}e^{-\lambda|t-s|}\,\mathrm d\lambda\), and
+
+\[
+e^{-\lambda|t-s|}=\int_{-\infty}^{\min(t,s)}2\lambda e^{-\lambda(t-u)}e^{-\lambda(s-u)}\,\mathrm du
+\]
+
+(limits: substitute \(w=\min(t,s)-u\), the integral evaluates to \(e^{-\lambda|t-s|}\)). So the kernel is a nonnegative mixture of rank-one squares, hence positive semidefinite on real compact smooth tests.
+
+Schur/\(\ell^2\) conversion:
+
+\[
+\sup_{t\in[0,T]}\int_0^T|t-s|^{-a}\,\mathrm ds
+=\sup_t\left(\frac{t^{1-a}+(T-t)^{1-a}}{1-a}\right)
+\le\frac{2T^{1-a}}{1-a}.
+\]
+
+For a symmetric nonnegative kernel,
+
+\[
+\langle f,Kf\rangle=\tfrac12\int K(t,s)(|f(t)|^2+|f(s)|^2)=\int|f(t)|^2\int K(t,s)\,\mathrm ds,
+\]
+
+so `E:masked-time-schur`. Separability: a countable \(L^2\)-dense family of compact smooth tests is dense in the null-quotient completion by the continuous \(L^2\) inclusion. Complexification: the sesquilinear norm is \(\int_{[0,T]^2}f(t)\overline{f(s)}|t-s|^{-a}\,\mathrm dt\,\mathrm ds\); the real/imaginary split contributes two nonnegative pieces and cancels the imaginary cross term by symmetry. Bounded measurable interval indicators are in the completion by smooth interior approximation.
+
+## 4. OWN064 — completion on the same noise
+
+For \(F=\sum_j\tau_j(t)f_j(x)\),
+
+\[
+\operatorname{Cov}(W(s,x),W(t,y))=|s-t|^{-a}\gamma(x-y)
+\]
+
+gives, after phase-space exchange,
+
+\[
+\mathbb EW(F)^2=
+\sum_{j,k}\langle\tau_j,\tau_k\rangle_a
+\int f_j(x)f_k(y)\gamma(x-y)\,\mathrm dx\,\mathrm dy.
+\]
+
+Using \(f(x)=c_d\int e^{i\xi x}\widehat f(\xi)\,\mathrm dx\), \(\int e^{i\xi x}f_j(x)\,\mathrm dx=(2\pi)^{d/2}\widehat f_j(-\xi)\), so
+
+\[
+\int f_j f_k\gamma
+=(2\pi)^d\int\widehat f_j(-\xi)\widehat f_k(\xi)\mu(\mathrm d\xi)
+=(2\pi)^d\int\widehat f_j(\xi)\overline{\widehat f_k(\xi)}\mu(\mathrm d\xi),
+\]
+
+by evenness of \(\mu\). Hence `E:masked-actual-noise-norm`.
+
+The contraction: `E:masked-hilbert-fourier` gives \(\mathbb EW(\zeta_RF)^2\le N_R(F)^2\). A Cauchy sequence in the \(N_R\)-null-quotient completion therefore maps to a Cauchy sequence in \(L^2(\Omega)\), proving the linear extension and its centered joint Gaussianity (finite-limsup of centered Gaussians), since variances converge. For a finite family, \(b^\mathsf TAb\le b^\mathsf TBb\) for every real \(b\) follows by applying the norm inequality to \(\sum b_iF_i\); then \(B-A\ge0\), an independent Gaussian \(Z\sim N(0,B-A)\) on a product space gives \(X+Z\sim N(0,B)\), and conditional Jensen yields \(\mathbb E\|X\|^p\le\mathbb E\|X+Z\|^p\) for every norm and \(p\ge1\).
+
+**Boundary, stated again:** the auxiliary completion depends on \(R,\zeta\), does **not** define multiplication by \(\zeta_R\) on the original noise null-quotient, and does **not** pretend positive point features of positive cutoffs lie in \(\Phi(H_W)\). The \(N_R\)-contraction bounds actual masked evaluations on the same \(W\); it is not a multiplication operator on noise classes.
+
+## 5. OWN065 — quotient obstruction (declared scope only)
+
+\(d=2\), \(\alpha=1\), \(\Gamma=\delta_0(\mathrm dx_1)\,\mathrm dx_2\), so
+
+\[
+\int f(x)g(y)\Gamma(x-y)\,\mathrm dx\,\mathrm dy
+=\int_{\mathbb R}\left(\int f(x_1,x_2)\,\mathrm dx_2\right)
+\left(\int g(x_1,y_2)\,\mathrm dy_2\right)\,\mathrm dx_1.
+\]
+
+Thus \(V(g)=\int(\int g\,\mathrm dx_2)^2\,\mathrm dx_1\). For \(\chi\) a real even \(C_c^\infty\) plateau \((\chi=1\) on \([-1,1]\), \(0\) off \([-2,2]\), smooth paste \(\chi=\frac{e^{-1/(2-r)}}{e^{-1/(2-r)}+e^{-1/(r-1)}}\) on \(1<r<2\), \(r=|x|)\), set \(g=\chi(x_1)\chi''(x_2)\), \(\zeta=\chi(x_1)\chi(x_2)\). Then \(\int g\,\mathrm dx_2=\chi(x_1)\int\chi''=0\), while \(\int\zeta g\,\mathrm dx_2=-\chi(x_1)^2I_\chi\) with \(I_\chi=\int(\chi')^2>0\), giving \(V(g)=0\) and \(V(\zeta g)=J_\chi I_\chi^2>0\), \(J_\chi=\int\chi^4\ge2\). With \(\tau\in C_c^\infty(0,T)\), \(\tau\ge0,\tau\ne0\), the positive-definite temporal factor is strictly positive, so masked variance \(>0\) while unmasked variance \(=0\). No finite \(C\) can dominate. This obstruction is real in the declared class and is not bypassed by anything valid; nothing is imported from it into the construction except the boundary "do not define masks on the original quotient."
+
+## 6. OWN066–068 — temporal estimates
+
+### 066
+
+Recall \(c(v)=\int_s^{s+h-v}A(u+v)\overline{A(u)}\,\mathrm du\). Splitting the double integral into the two conjugate triangles,
+
+\[
+\|1_IAe^{i\omega t}\|_a^2=2\operatorname{Re}\int_0^hv^{-a}e^{i\omega v}c(v)\,\mathrm dv.
+\]
+
+\(c(h)=0\), \(|c|\le hM^2\), and the Leibniz derivative gives \(|c'|\le M^2+hMD\). Setting \(v=hy\), \(c(hy)=h f(y)\),
+
+\[
+\|1_IAe^{i\omega t}\|_a^2=2h^{2-a}\operatorname{Re}\int_0^1y^{-a}e^{i\omega hy}f(y)\,\mathrm dy,
+\qquad f(1)=0,\quad |f|,|f'|\le(M+hD)^2.
+\]
+
+(Here the \(h^{2-a}\) power is verified: \(v^{-a}c(v)dv=(hy)^{-a}(hf(y))(hdy)=h^{2-a}y^{-a}f(y)dy\).) The \(|\omega h|\le1\) case bounds the norm by \(2h^{2-a}K^2/(1-a)\). The \(k=|\omega h|>1\) case splits \([0,1/k]\) (bound \(K^2k^{a-1}/(1-a)\)) and \([1/k,1]\) (integration by parts; endpoint \(f(1)=0\), the other endpoint \(\le K^2k^{a-1}\), derivative term \(\le K^2k^{a-1}(1+1/(1-a))\)), giving at most \(4K^2k^{a-1}/(1-a)\). Since \(k^{a-1}\le\sqrt2\langle h\omega\rangle^{a-1}\), the total is at most \(16h^{2-a}K^2\langle h\omega\rangle^{a-1}/(1-a)\), i.e. `E:masked-temporal-modulation`. Both signs of \(\omega\) are covered by \(|\omega|\).
+
+### 067
+
+The product \(P_rQ_\rho\) is a sum of four exponential modes with frequencies \(\sigma r+\tau\rho\), \(\sigma,\tau\in\{\pm1\}\), coefficients \(|c_j|=1/4\). The correlated-mode inequality
+
+\[
+\left\|\sum_jc_jv_j\right\|^2\le\left(\sum_j|c_j|\right)\sum_j|c_j|\|v_j\|^2
+\]
+
+(no orthogonality) gives, with \(\sum_j|c_j|=1\),
+
+\[
+\|1_IAP_rQ_\rho\|_a^2
+\le\tfrac12C_0h^{2-a}(M+hD)^2
+\big[\langle h(r+\rho)\rangle^{a-1}+\langle h|r-\rho|\rangle^{a-1}\big].
+\]
+
+Since the right side is smaller than the displayed \(\mathcal Q_h\)-multiple, `E:masked-trig-products` holds.
+
+### 068
+
+\(b_r(t)=\langle r\rangle\sin(rt)/r\) for \(r>0\), \(b_0(t)=t\). For \(0\le r\le1\),
+
+\[
+b_r(t)=t\langle r\rangle\int_0^1\cos(vrt)\,\mathrm dv,
+\]
+
+which also yields \(b_0(t)\). For \(r\ge1\) the sine coefficient is \(\langle r\rangle/r\le\sqrt2\). Products are scalar coefficients of modulus \(\le2\) times normalized parameter averages of \(t^jP_{r'}Q_{\rho'}\), \(j\in\{0,1,2\}\), with frequency perturbations \(|r'-r|,|\rho'-\rho|\le1\). Jensen on the genuine Bochner average (the parameter mapping is continuous in \(L^2(0,T)\), hence in \(H_a\) by the Schur bound) gives the squared norm bounded by the average of the squared norms, then 067 with \((M+hD)^2\le(1+T)^4\). The frequency shift is controlled by \(\langle x+e\rangle\le(1+|e|)\langle x\rangle\) and its reverse, and the total perturbation is at most \(2\), so each \(h(r\pm\rho)\) bracket changes by at most \(3^{(a-1)/2}\) with \(a-1<0\), producing the \(3^{1-a}\) factor. The zero-frequency sine quotient is everywhere the continuous \(t\), never a division by zero.
+
+## 7. OWN069 — scalar frequency row
+
+For \(\nu\) with \(\nu(B(y,r))\le Cr^\alpha\), define \(\nu_\xi\) as the pushforward \(\lambda\mapsto\eta=\xi-\lambda\), so \(\nu_\xi(B(0,R))\le CR^\alpha\). With \(q=\max(1,|\xi|)\), \(\epsilon=1-2\gamma>0\):
+
+**Near region \(|\lambda|\le4q\)** gives \(|\eta|\le5q\) and \(\mathcal Q_h\le2\). Then \(J_h^{\rm near}\le2\langle\xi\rangle^{-\epsilon}A_\xi(q)\) where
+
+\[
+A_\xi(q)=\int_{|\eta|\le5q}\langle\eta\rangle^{-1}\nu_\xi(\mathrm d\eta)
+\le C\left(1+2^\alpha\sum_{j=0}^{N-1}2^{j(\alpha-1)}\right),\qquad 5q\le2^N<10q.
+\]
+
+The geometric sum is bounded for \(\alpha<1\), is \(N\sim\log q\) for \(\alpha=1\), and is \(\le(10q)^{\alpha-1}/(2^{\alpha-1}-1)\) for \(\alpha>1\). Multiplying by \(q^{-\epsilon}\):
+
+- \(\alpha<1\): bounded (the power \(q^{-\epsilon}\) kills nothing needed).
+- \(\alpha=1\): \(e^{-\epsilon u}(1+u)\le1+1/(e\epsilon)\), \(u=\log q\).
+- \(\alpha>1\): the power is \(q^{\alpha+2\gamma-2}\) with \(\alpha+2\gamma<2\) by \(\gamma<(2-\alpha)/2\).
+
+So the near contribution is \(\le K(\alpha,\gamma)C\).
+
+**Far region \(|\lambda|>4q\)**, \(r:=|\lambda|\): then \(|\eta|\ge3r/4\), \(||\eta|-|\xi||\ge r/2\), \(|\eta|+|\xi|\ge r/2\), hence
+
+\[
+\mathcal Q_h(|\xi|,|\eta|)\le2\langle hr/2\rangle^{a-1}\le2^{2-a}\langle hr\rangle^{a-1},
+\]
+
+and \(\Phi_h\le2^{2-a}\langle hr\rangle^{a-1}/(\langle\xi\rangle\langle\eta\rangle)\). Thus
+
+\[
+J_h^{\rm far}\le\frac43\,2^{2-a}\int_{|\lambda|>1}|\lambda|^{-1}\langle h|\lambda|\rangle^{a-1}\nu(\mathrm d\lambda).
+\]
+
+Dyadic splitting \(\frac43 2^{2-a}\le C(\alpha,a)\), now
+
+\[
+S(h)=\sum_{j\ge0}2^{j(\alpha-1)}\langle h2^j\rangle^{a-1}.
+\]
+
+With \(L=\lfloor\log_2(1/h)\rfloor\): for \(j\le L\), \(\langle h2^j\rangle^{a-1}\le1\), giving the finite sum bounded by \(1/(1-2^{\alpha-1})\) for \(\alpha<1\), by \(1+\log_2(1/h)\) for \(\alpha=1\), by \(2^{\alpha-1}h^{1-\alpha}/(2^{\alpha-1}-1)\) for \(\alpha>1\); for \(j\ge L+1\), \((h2^j)^{a-1}\) gives the tail \(\le h^{1-\alpha}/(1-2^{\alpha+a-2})\), using \(2^{L+1}>1/h\) and the strict \(\alpha+a<2\). Hence \(S(h)\le K_{\alpha,a}B_\alpha(h)\), with
+
+\[
+B_\alpha(h)=\mathbf 1_{\alpha<1}+(1+\log(1/h))\mathbf 1_{\alpha=1}+h^{1-\alpha}\mathbf 1_{\alpha>1}.
+\]
+
+Combining near and far: \(\sup_\xi J_h(\xi)\le K(\alpha,a,\gamma)CB_\alpha(h)\), with all constants \(d\)-independent (only shell estimates). No density, no evenness, no nonnegative inverse covariance assumption.
+
+## 8. OWN070 — time-power conversion
+
+By 069, for \(h\le1\):
+
+- \(\alpha<1\): \(h^{2-a}J_h\le KCh^{2-a}\). Since \(\beta<1-a/2\), \(2-a-2\beta>0\), \(h^{2-a}\le h^{2\beta}\).
+- \(\alpha>1\): \(h^{2-a}h^{1-\alpha}=h^{3-a-\alpha}\le h^{2\beta}\) because \(\beta<(3-a-\alpha)/2\).
+- \(\alpha=1\): with \(\delta=2-a-2\beta>0\), \(h^{2-a}(1+\log(1/h))=h^{2\beta}h^\delta(1+\log(1/h))\le h^{2\beta}(1+1/(e\delta))\).
+
+Hence `E:frequency-time-bound` with \(\beta\)-dependent constants, no endpoint \(\beta\) and no \(\alpha=1\) loss.
+
+## 9. OWN071 — actual wave form and full-phase kernel
+
+### Phase space and group
+
+\(J:(\widehat z_1,\widehat z_2)\mapsto(\langle\xi\rangle^{1/2}\widehat z_1,\langle\xi\rangle^{-1/2}\widehat z_2)\) is unitary \(E_s\to L^2(\mathbb C^2)\). The free group `E:variance-free-matrix` is correct, with \(\sin(rt)/r=t\) at \(r=0\). No inhomogeneous phase-norm unitary claim is made anywhere in 071–074: only the homogeneous energy form \(E_s\) is used, on which the free group is unitarily bounded on \([0,T]\).
+
+### Physical adjoint and cutoff adjoint
+
+The first-component response \(S(-t)(0,f)=(-\sin(t|D|)f/|D|,\cos(t|D|)f)\), paired with \(w\), transfers the self-adjoint multipliers \(\Lambda,\Lambda^{-1}\) onto \(w\), giving exactly
+
+\[
+\langle S(-t)B(b(t))S(t)z,w\rangle_E=\int b(t,x)v_z(t,x)\overline{G_w(t,x)}\,\mathrm dx,
+\qquad
+G_w=-\frac{\sin(t|D|)}{|D|}\Lambda w_1+\cos(t|D|)\Lambda^{-1}w_2.
+\]
+
+This is a deterministic duality identity with real self-adjoint multipliers; no \(H^1\) point trace/algebra and no pointwise raw multiplier is used. The cutoff \(D_\chi\) (both entries times \(\chi\)) has \(E\)-adjoint
+
+\[
+D_\chi^{*,E}w=(\Lambda^{-1}\chi\Lambda w_1,\ \Lambda\chi\Lambda^{-1}w_2),
+\]
+
+verified entrywise by moving \(\Lambda,\Lambda^{-1}\) across the real \(\chi\); \(D_\chi\) is not self-adjoint and not a projection.
+
+### Normalized kernel and covariance bound
+
+With \(U=Jz,V=Jw,r=|\xi|,\rho=|\eta|\), the displacement and dual transforms are
+
+\[
+\widehat v_z=\langle\xi\rangle^{-1/2}(c_rU_1+b_rU_2),\qquad
+\widehat G_w=\langle\xi\rangle^{-1/2}(-b_rV_1+c_rV_2),
+\]
+
+using \(b_r=\langle r\rangle\sin(rt)/r\), \(b_0=t\). Their product gives `E:variance-normalized-kernel`, with the zero-frequency matrix \(\begin{pmatrix}-t&-t^2\\1&t\end{pmatrix}\). Fourier-multiplying on the conjugated test with \(F\mapsto F(-\lambda)\) and evenness of \(\nu_R\), and using \((2\pi)^dc_d^2=1\), yields `E:variance-normalized-covariance` as an **upper bound** from 062 (equality holds with \(\mu\), the aux bound uses \(\nu_R\)). The admittance of the actual masked tests \(\zeta_RF_{z,w}\) into the original completion passes through \(H_a\)-valued Schwartz-seminorm time approximation over frozen spatial values and then compact smooth temporal cutoffs; the admission constants may depend on \(R\) and are not the uniform variance constants of 073.
+
+### Complex extension
+
+`E:variance-complex-noise`: for real \(F_1,F_2\), \(A(-\xi)=\overline{A(\xi)}\) kills the mixed term by evenness of \(\mu\), giving \(\mathbb E|W_{\mathbb C}(\zeta_RF)|^2=(2\pi)^d\int\|\widehat{\zeta_RF}\|^2\,\mathrm d\mu\). Correct.
+
+## 10. OWN072 — Hilbert-valued Bessel
+
+Expand \(g\) in a countable orthonormal basis of \(H\); on each scalar coefficient apply scalar finite Bessel to \(\{u_k\}\) or \(\{\overline{u_k}\}\) (finite Bessel is subtracting the finite orthonormal projection and expanding the nonnegative remainder). Summing the scalar identities and using Parseval in \(H\) plus nonnegative Tonelli proves `E:phase-bessel` for both conjugation conventions. No independence is involved anywhere.
+
+## 11. OWN073 — both variance directions
+
+Using 068,
+
+\[
+\|1_I\mathcal K_{ij}(\cdot;\xi,\eta)\|_{H_a^{\mathbb C}}^2
+\le A_Th^{2-a}\Phi_h(\xi,\eta),\qquad A_T=C_1(a)(1+T)^4.
+\]
+
+**Input direction.** Fix \(V=Jz\), vary \(U_k=Je_k\). `E:phase-bessel` with \(u_{k,j}=(Je_k)_j\) gives the orthogonal coefficient sum, then Cauchy–Schwarz over two output indices gives
+
+\[
+\sum_k\mathbb E|\ell_R(I;e_k,z)|^2
+\le\int\nu_R(\mathrm d\lambda)\int 4A_Th^{2-a}\Phi_h(\eta+\lambda,\eta)\sum_i|V_i(\eta+\lambda)|^2\,\mathrm d\eta.
+\]
+
+This is **not** yet the stated bound; it is the exact intermediate (Bessel applied before any row estimate). Changing \(\xi=\eta+\lambda\) and applying 069 at \(\xi\), then
+
+\[
+\int\langle\xi\rangle^{-2\gamma}\sum_i|V_i(\xi)|^2\,\mathrm d\xi
+=\|z\|^2_{E_{s-\gamma}},
+\]
+
+yields `E:wave-input-variance` with \(C_T=4A_TKC_\nu\).
+
+**Output direction.** Fix \(U=Jz\), vary \(V_k=Je_k\). The conjugated Bessel applies; after \(\eta=\xi-\lambda\) the row is \(\int\Phi_h(\xi,\xi-\lambda)\nu_R(\mathrm d\lambda)\), then reflect \(\lambda\) by evenness of \(\nu_R\) and use \(\Phi_h(\xi,\xi-\lambda)=\Phi_h(\xi,\lambda-\xi)\), recovering the identical 069 row. This is a **separate** application of Bessel; no single-variance shortcut. Both directions satisfy the same \(C_T\).
+
+The \(h^{2\beta}\) upgrades use 070 directly.
+
+## 12. OWN074 — mean-square columns
+
+**Correction to the prior candidate:** the extension of the column maps from Schwartz phases to \(E_{s-\gamma}\) uses the two quadratic variance bounds of 073 plus the \(E_s\)-density of the countable Schwartz family, **not** "gain-one coefficient maps." Gain-one metric maps are proved later in 087 and play no role in 074; that forward reference in the old text was a false sentence.
+
+Construction: fix a countable real Schwartz ONB \(\{e_k\}\) of \(E_s\) (Gram–Schmidt of a dense Schwartz family; smooth Fourier cutoff preserves reality). For fixed real Schwartz \(z\), define the partial columns \(m_N(z)=\sum_{k\le N}\ell_R(I;z,e_k)e_k\) and \(n_N(z)=\sum_{k\le N}\ell_R(I;e_k,z)e_k\). By 073 both coefficient second-moment sums over \(k\) are finite with bound \(C_Th^{2-a}B_\alpha(h)\|z\|_{E_{s-\gamma}}^2\); orthogonality makes the tails exactly those sums, so both sequences are \(L^2(\Omega;E_s)\)-Cauchy. The limits are strongly measurable (finite sums measurable, separable \(E_s\)), and extensible to \(E_{s-\gamma}\) by density. The two adjoint identities follow by testing against \(w_N\) (the finite \(E_s\)-projection) and using the **singleton** input and output variance bounds to handle \(w-w_N\):
+
+\[
+\mathbb E|\ell_R(I;z,w-w_N)|^2\le C_Th^{2-a}B_\alpha(h)\|z\|_{E_{s-\gamma}}^2\|w-w_N\|_{E_s}^2\to0,
+\]
+
+and the matching singleton bound for the input direction of \(n\). Fixed-value and finite-family Gaussianity are by \(L^2\)-limits of centered Gaussians with convergent variances.
+
+The maps are \(E_{s-\gamma}^{\rm real}\to L^2(\Omega;E_s^{\rm real})\), fixed-interval only; no a.s. version, no random bounded operator, no \(S_p\)-path, no time dependence, and no source convergence follows from this section.
+
+---
+
+## First specific failed implication
+
+**None within OWN061–074.** The bounds are all verified with the exact stated hypotheses: positive homogeneous tempered even \(\Gamma\), polynomial-growth spectral \(\mu\), the ordinary spectral convention, and the strict open conditions \(\alpha+2\gamma<2\) (near sector) and \(\alpha+a<2\) (far sector). The only explicit error located in the material supplied for this turn is the prior candidate's sentence in the 074 summary ("extension uses gain-one coefficient maps"), which misattributes a later (087) step; it is removed by the 073-based extension given above. That error is a false attribution, not a failed inequality or counterexample.
+
+## Remaining mathematical gaps
+
+1. The auxiliary masked-noise completion is an \(R,\zeta\)-dependent contraction, not a multiplication operator on the original noise quotient; the \(d=2,\alpha=1\) obstruction of 065 stands and must not be used to import a spectral-density or masked-stationarity premise into later stages.
+2. The form \(\ell_R\) is a fixed-interval complex raw functional; no time path, no infinite Gaussian operator series, no uniform-in-\(R\) constant, and no Schatten structure is established yet — these are precisely the later 085–093 consequences, not inputs to 061–074.
+3. Both directional variance tails must be carried separately into the operator channels; no reduction to a single variance is available (0.2).
+4. Temporally, the modulation/trig estimates are summarized with the indicated near/far IBP bounds; the \(C_0,C_1\) constants are not optimized, and no \(\beta\)-endpoint value is claimed.
+5. All fixed-mask-radius/time-horizon constants here are distinct from any later uniform-growing-radius claim; nothing in this layer supplies such a claim.
+
+No overall review verdict, confidence, or certification statement is issued.

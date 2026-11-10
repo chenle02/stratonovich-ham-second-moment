@@ -1,0 +1,37 @@
+{
+  "scope": "Executed finite support/arithmetic falsification and analytical logic witnesses; not a proof under the full target hypotheses or a Lean certificate",
+  "free_wave": {
+    "dimension": 1,
+    "noise": "Gamma0, hence free equation",
+    "initial_displacement": "0",
+    "initial_velocity": "1_[5,6] in L2, hence in HminusHalf",
+    "observer_j": 1,
+    "observer_support": "[-2,2]",
+    "time": 9,
+    "small_initial_cutoff_index": 2,
+    "large_initial_cutoff_index": 14,
+    "physical_mask_index": 14,
+    "both_initial_cutoffs_equal1_on_terminal_observer": true,
+    "small_cutoff_kills_velocity": "psi2 support contained[-4,4], disjoint from[5,6]",
+    "large_cutoff_retains_velocity": "psi14=1 on[-14,14]",
+    "formula": "u(T,x)=1/2 integral_(x-T)^(x+T) initial_velocity(y)dy",
+    "exact_uncut_displacement_on_observer": "1/2 for every x in[-2,2]",
+    "cut_displacement": "0",
+    "endpoint_integrals_checked": [
+      "1/2",
+      "1/2"
+    ],
+    "interval_inclusion_for_all_observed_x_checked": true,
+    "result": "Agreement only on terminal observation set cannot replace initial backward-cone agreement. Identical initial displacements do not suffice when velocities differ."
+  },
+  "same_law_witness": {
+    "example": "G and -G for a nondegenerate centered real Gaussian G",
+    "fact": "Same law, yet unequal with probability1",
+    "result": "Equal-law source definitions alone cannot give a same-realization cutoff identity. This is an abstract logical witness, not a counterexample under same-W convergence hypotheses."
+  },
+  "operator_topology_boundary": {
+    "example": "Orthogonal projection onto nth coordinate of l2",
+    "fact": "Strongly tends to0 on each fixed vector but operator norm remains1",
+    "result": "Do not relabel statewise convergence as operator-norm convergence; the proposed operator-norm assumption is sufficient, not claimed necessary."
+  }
+}

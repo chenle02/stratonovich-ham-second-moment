@@ -1,0 +1,1 @@
+Root read the complete report. Canonical HIGH/no repairs, all16 exact VIEW_IDs and PNG hashes pass. Accept MAIN222-225 only: union225/267pages/900views;42remain. Crop fragments are complete in neighboring bands. Nativecontext132374 exceeds early120000guard; compact11 READY140566input plus311296hard=451862. Actualcompletion required before226-229. No math/source/cold promotion.

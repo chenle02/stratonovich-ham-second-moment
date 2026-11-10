@@ -1,0 +1,60 @@
+{
+  "status": "LOCAL_VERIFIED_ACTUAL_VECTOR_GAUSSIAN_PROJECTION_FIDELITY_HIGH",
+  "public_theorems": 1,
+  "private_helpers_and_controls_not_added": true,
+  "source_sha256": "82217588c6c6ff7d2b59ed47708d8acaeaff7224e7b9a21b4f5a58dba087bb48",
+  "frozen_statement_sha256": "74afb863b4ce71da8779216629686c7f40f98a5dc30ef1d69033300a02465b19",
+  "statement_application_review": {
+    "model_actual": "claude-opus-5-5",
+    "confidence": "high",
+    "checks": 6,
+    "all_pass": true,
+    "raw_sha256": "ade97a1055d59390a70fdb9af2f4658a55e9d0489dcbb295be9971c80641e7b6",
+    "coverage_verified": true,
+    "required_bodies": 18,
+    "source_revision": "2cce3e4deb8b07982619ae67611f5c908328eacd"
+  },
+  "lean_pkg": "0.28.0",
+  "lean": "4.35.0",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "compile_exit": 0,
+  "compile_seconds": 4.924738956964575,
+  "owned_leaf_source_replay": true,
+  "replay_object_byte_equal": true,
+  "replay_audit_byte_equal": true,
+  "replay_foundation_scope": "Seven exact-source foundation objects from reuse-probes/gaussian-basis-028-v1 are reused by hash; this is owned-leaf replay, not full dependency-closure replay.",
+  "exact_general_closed_prop_assignment": true,
+  "exact_Sigma_colored_closed_prop_assignment": true,
+  "nondegenerate_two_mode_vector_probe": {
+    "coefficient_space": "EuclideanSpace real (Fin 2)",
+    "coefficient_directions": "different nonzero unit vectors",
+    "selected_squared_norm": 1,
+    "deleted_squared_norm": 1
+  },
+  "negative_control": {
+    "status": "EXPECTED_SEMANTIC_REJECTION",
+    "exit": 1,
+    "only_error": "unsolved goals: False",
+    "case": "No selected modes cannot retain a nonzero normalized first Hermite mode.",
+    "one_deprecation_warning_retained": true
+  },
+  "accepted_local_facts_before": 81,
+  "accepted_local_facts_after": 82,
+  "accepted_local_seams_after": 24,
+  "old_abstract_word_provisional": 2,
+  "official_registry_receipt": false,
+  "new_package": false,
+  "companion_created": false,
+  "cluster_jobs": [],
+  "full_colored_word_projection_application_formalized": false,
+  "complex_realification_and_background_isometry": "Independently HIGH-reviewed mathematical source correspondence, not kernel formalized.",
+  "SPDE_formalized": false,
+  "archive_sha256": "28a98c3dc3f0bce113e2169d6edf35f91ed871631be0a5bdceb43076fdc352b7",
+  "proposal_and_source_bindings": "../../statement-proposals/vector-gaussian-projection-v2/",
+  "reuse_capsule": "../../reuse-probes/gaussian-basis-028-v1/"
+}

@@ -1,0 +1,92 @@
+{
+  "scope": "Literal report dispositions and report-only corrections for root adjudication; original raw report/source unchanged",
+  "checks": [
+    {
+      "id": "C01",
+      "raw_status": "CHECKED"
+    },
+    {
+      "id": "C02",
+      "raw_status": "CHECKED"
+    },
+    {
+      "id": "C03",
+      "raw_status": "CHECKED"
+    },
+    {
+      "id": "C04",
+      "raw_status": "CHECKED"
+    },
+    {
+      "id": "C05",
+      "raw_status": "CHECKED"
+    },
+    {
+      "id": "C06",
+      "raw_status": "CHECKED"
+    },
+    {
+      "id": "C07",
+      "raw_status": "CHECKED"
+    },
+    {
+      "id": "C08",
+      "raw_status": "CHECKED"
+    },
+    {
+      "id": "C09",
+      "raw_status": "CHECKED"
+    },
+    {
+      "id": "C10",
+      "raw_status": "CHECKED"
+    }
+  ],
+  "proof_ledger": [
+    {
+      "id": "PROOF046",
+      "raw_status": "FULLY_CHECKED"
+    },
+    {
+      "id": "PROOF047",
+      "raw_status": "FULLY_CHECKED"
+    },
+    {
+      "id": "PROOF048",
+      "raw_status": "FULLY_CHECKED"
+    }
+  ],
+  "reported_required_repairs": "none",
+  "prior_identity_report_fields_supplied": false,
+  "report_only_errors": [
+    {
+      "issue": "Metric-comparison explanation prints max (T^-2+|xi|^2)/(k^2T^-2+|xi|^2)=k^2.",
+      "correction": "For k>=1 that ratio has supremum1; the required correct ratio is (k^2T^-2+|xi|^2)/(T^-2+|xi|^2)<=k^2. Source states the correct phase inequality without the report reciprocal error.",
+      "simple_control": "k=2,xi=0: report ratio=1/4, correct ratio=4."
+    },
+    {
+      "issue": "Two-colour control asserts each ordered simplex has volumeh1*h2/2 for arbitrary intervals.",
+      "correction": "Only total volume of all order domains equals product of clipped lengths; individual volumes need not be equal. Source explicitly uses partition of cube and only totalvolume.",
+      "simple_controls": [
+        "I1=(0,1),I2=(1,2): orderedvolumes1 and0,total1.",
+        "I1=(0,2),I2=(0,1): orderedvolumes1/2 and3/2,total2."
+      ]
+    },
+    {
+      "issue": "Proof-ledger shorthand writes sum of simplexvolumes=producthi.",
+      "correction": "Exact identity uses clipped |I_i^T|; <=producthi. Detailed source and main report derivation retain this distinction."
+    }
+  ],
+  "optional_report_notes": [
+    "Expectation already in jointGaussian L2 inner product",
+    "k!<=k^k elementaryfactorialstep",
+    "M<=3k+1 sufficient;2k+1 optional",
+    "e zero-orderenergy is sufficientbound, not exactphaseisometry"
+  ],
+  "scope_gates_remaining": [
+    "Full213proof/globalgoal",
+    "Downstreamterminal/fullupperassembly",
+    "Source-image/render",
+    "Independentcold"
+  ]
+}

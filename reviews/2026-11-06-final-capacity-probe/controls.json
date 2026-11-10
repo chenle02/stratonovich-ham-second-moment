@@ -1,0 +1,71 @@
+[
+  {
+    "control": "positive exact full UTF8 value, literal reserved tags, arrays/key order/numeric lexemes",
+    "pass": true
+  },
+  {
+    "control": "mutated full source SHA witness",
+    "pass": true,
+    "refused_by": "strict source-identity/slice decoder"
+  },
+  {
+    "control": "source body mutation",
+    "pass": true,
+    "refused_by": "strict source-identity/slice decoder"
+  },
+  {
+    "control": "mutated valid UTF8 byte range",
+    "pass": true,
+    "refused_by": "complete original source fidelity"
+  },
+  {
+    "control": "range outside source",
+    "pass": true,
+    "refused_by": "strict source-identity/slice decoder"
+  },
+  {
+    "control": "bool source ID",
+    "pass": true,
+    "refused_by": "strict source-identity/slice decoder"
+  },
+  {
+    "control": "bool byte offset",
+    "pass": true,
+    "refused_by": "strict source-identity/slice decoder"
+  },
+  {
+    "control": "decimal offset is not integer",
+    "pass": true,
+    "refused_by": "strict source-identity/slice decoder"
+  },
+  {
+    "control": "missing source registry",
+    "pass": true,
+    "refused_by": "strict source-identity/slice decoder"
+  },
+  {
+    "control": "duplicate source registry ID",
+    "pass": true,
+    "refused_by": "strict source-identity/slice decoder"
+  },
+  {
+    "control": "source logical-alias removal",
+    "pass": true,
+    "refused_by": "strict source-identity/slice decoder"
+  },
+  {
+    "control": "changed original key names/order",
+    "pass": true,
+    "refused_by": "complete original source fidelity"
+  },
+  {
+    "control": "normalizing original -0 lexeme is not fidelity",
+    "pass": true,
+    "refused_by": "complete original source fidelity"
+  },
+  {
+    "control": "unknown original-looking reserved object cannot collide",
+    "pass": true,
+    "refused_by": "strict source-identity/slice decoder"
+  }
+]

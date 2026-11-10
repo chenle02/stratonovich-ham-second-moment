@@ -8,10 +8,12 @@ fractional in time (X. Chen, author version, `chen:author2026:time-dependency`):
 1. **Upper bound at the correct scale:**
    limsup_{t→∞} t^{-κ} log 𝔼u²(t,x) < ∞, with κ = (4−α−α₀)/(3−α),
    improving Chen's 𝔼u² ≤ e^{Ct²} (Remark 5.1, p. 37).
-2. **Sharp constant for p = 2:** two-sided bounds
-   2^{(4−α)/(3−α)} L_* ≤ liminf ≤ limsup ≤ 2^{(4−α)/(3−α)} L^*
-   (the p=2 case of Chen's conjecture (1.22), up to the same 𝓔_* < 𝓔 gap
-   as his p=1 theorem). The exact limit is the conditional target.
+2. **Actual constant for p = 2 (Le's 2026-10-31 revision):** prove the
+   asymptotic limit and derive its constant from the model, including an
+   exact fully specified variational characterization if that is what the
+   proof yields. Simplify and bound it as justified. Chen's conjectured
+   constants are comparisons, not values we must attain. Do not force the
+   derivation to match them or require closing his energy gap to finish.
 
 The precise statements, notation and known results are in
 `notes/notes_stratonovich_ham_second_moment.tex` (§§1–3). Read it first.
@@ -46,10 +48,12 @@ The precise statements, notation and known results are in
    (Theorem 6.1) needs the monotone order of one chain. For p = 2 each chain
    is still ordered; only the interleaving is lost. That is the opening for a
    two-clock representation.
-6. **Jensen gives the lower bound for free:** liminf ≥ 2L_*
-   (Proposition P:Jensen, proved in the notes). The conjectured constant
-   2^{(4−α)/(3−α)}L^* is larger, so the real lower-bound content is the extra
-   factor 2^{1/(3−α)}.
+6. **Actual Jensen remains a constraint:** E|u|² ≥ (Eu)² (Proposition
+   P:Jensen). Any verified applicable first-moment lower constant gives
+   the corresponding doubled lower bound. Numerical use of the source
+   label L_* retains the known normalization qualification. The guessed
+   factor in Chen's conjecture is not a required answer, and an auxiliary
+   S₁^pos is not automatically the actual first-moment constant.
 7. **Version trap.** arXiv:2510.01412v1 states an exact first-moment limit;
    the author version proves only two-sided bounds. Never cite v1 for
    Theorem 1.2. See `sources/SOURCE-MANIFEST.md`.
@@ -92,7 +96,33 @@ All.bib -> ../refdb/All.bib (read-only), extra.bib (local additions)
   mean term cannot be dropped,and arbitrary-phase covariance monotonicity
   is unavailable. This is a full-spatial-class tool,not an all-order bound.
 
-[held back: collaborators' unpublished work]
+### Workforce (paper-dev)
+- **Worker:** the Codex session running this project (GPT family).
+- **Reviews must come from a different model family than the author** of
+  the argument. Per Le's 2026-11-01 direction, use **DeepSeek V4 Pro +
+  Kimi-K3** for newly assigned reviews. Le explicitly designated
+  **DeepSeek V4 Pro as the main reviewer on 2026-11-02**. This does not
+  waive image verification or the fresh independent cold-review gate.
+  DeepSeek uses the configured
+  `paper-review-deepseek` route with `deepseek/deepseek-v4-pro`; Kimi uses
+  native `subscription-review-cli run kimi --model kimi-code/k3` with its
+  verified configured effort. Use frozen inputs and read-only execution.
+  Keep HIGH confidence, exact source/application/visual coverage and final
+  cold-reader requirements. A final cold read needs a fresh session and a
+  family independent of any author of a material repair. Do not silently
+  substitute another model, purchase quota or relax a missing-source gate.
+  Preserve prior Opus reviews under their original scope and identity.
+  A quota error, generation-limit stop or missing report is not a review:
+  record it. A text-only review does not certify source-image coverage.
+- Every round that adds a proof: freeze a packet in `reviews/<date>-<round>/`,
+  get the skeptic report, adjudicate every finding in Progress.md.
+- Canonical workflow: `<HOME>/workspace/Le-AI-Lab/commands/paper-dev.md`.
+  Skills (read the SKILL.md before using; under
+  `<HOME>/workspace/Le-AI-Lab/skills/omc-learned/` unless noted):
+  `progress-md-authority-paper-dev`, `paper-dev-review-layers-are-mandatory`,
+  `paper-dev-round-close-protocol`, `falsification-first-differentiated-routes`,
+  `numerics-gate-before-proof-investment`, `cited-theorem-source-fidelity-gate`,
+  `le-chen-writing-style`, and `skills/latex-conventions`.
 
 ### LaTeX
 - Build from the repo root:

@@ -1,0 +1,182 @@
+{
+  "scope": "Finite algebra/normalization falsification controls; not an all-order proof or independent review",
+  "white_static_EY4_pairings": {
+    "12|34": "1/2880",
+    "13|24": "1/8640",
+    "14|23": "1/5760",
+    "sum": "11/17280",
+    "meaning": "E[Y4]=c\u00b2 T6 * sum"
+  },
+  "white_static_EY2_squared": {
+    "self_self": "1/144",
+    "parallel_cross": "1/480",
+    "swapped_cross": "31/17280",
+    "sum": "187/17280",
+    "polynomial_integrals": [
+      "1/18",
+      "25/36",
+      "1/60",
+      "11/120",
+      "1/60"
+    ]
+  },
+  "white_static_total2": {
+    "EY1_squared": "c*T\u00b3/6",
+    "EY2": "c*T\u00b3/12",
+    "B1": "c*T\u00b3/3"
+  },
+  "constant_Gaussian_total2": "1/3",
+  "constant_Gaussian_total4": "1/105",
+  "interval_checks": [
+    {
+      "h": "1/128",
+      "exact_variance": 0.0003434687174647791,
+      "fresh_color_upper": 0.00034526698300124393,
+      "ratio": 0.9947916666666665
+    },
+    {
+      "h": "1/4",
+      "exact_variance": 0.052083333333333336,
+      "fresh_color_upper": 0.0625,
+      "ratio": 0.8333333333333334
+    },
+    {
+      "h": "1",
+      "exact_variance": 0.16666666666666666,
+      "fresh_color_upper": 0.5,
+      "ratio": 0.3333333333333333
+    },
+    {
+      "h": "8",
+      "exact_variance": 0.05892556509887896,
+      "fresh_color_upper": 11.313708498984761,
+      "ratio": 0.005208333333333333
+    }
+  ],
+  "K0_vs_original": {
+    "a": 0.5,
+    "H0": 8,
+    "s": 0.125,
+    "r": 0.375,
+    "K0": 2.598076211353316,
+    "original": 2.0
+  },
+  "PSD_order_counterexample": {
+    "A": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "B": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "B_minus_A_eigenvalues": [
+      -1,
+      1
+    ],
+    "test_vector": [
+      1,
+      -1
+    ],
+    "quadratic_difference": -2
+  },
+  "inventory_counts": [
+    {
+      "depth": 0,
+      "intervals_meeting_[0,1]": 4,
+      "last_length": "8",
+      "inventory_upper": "39/4"
+    },
+    {
+      "depth": 1,
+      "intervals_meeting_[0,1]": 8,
+      "last_length": "4",
+      "inventory_upper": "39/2"
+    },
+    {
+      "depth": 2,
+      "intervals_meeting_[0,1]": 13,
+      "last_length": "2",
+      "inventory_upper": "39"
+    },
+    {
+      "depth": 3,
+      "intervals_meeting_[0,1]": 20,
+      "last_length": "1",
+      "inventory_upper": "78"
+    },
+    {
+      "depth": 4,
+      "intervals_meeting_[0,1]": 30,
+      "last_length": "1/2",
+      "inventory_upper": "156"
+    },
+    {
+      "depth": 5,
+      "intervals_meeting_[0,1]": 46,
+      "last_length": "1/4",
+      "inventory_upper": "312"
+    },
+    {
+      "depth": 6,
+      "intervals_meeting_[0,1]": 74,
+      "last_length": "1/8",
+      "inventory_upper": "624"
+    },
+    {
+      "depth": 7,
+      "intervals_meeting_[0,1]": 126,
+      "last_length": "1/16",
+      "inventory_upper": "1248"
+    },
+    {
+      "depth": 8,
+      "intervals_meeting_[0,1]": 226,
+      "last_length": "1/32",
+      "inventory_upper": "2496"
+    },
+    {
+      "depth": 9,
+      "intervals_meeting_[0,1]": 422,
+      "last_length": "1/64",
+      "inventory_upper": "4992"
+    },
+    {
+      "depth": 10,
+      "intervals_meeting_[0,1]": 810,
+      "last_length": "1/128",
+      "inventory_upper": "9984"
+    },
+    {
+      "depth": 11,
+      "intervals_meeting_[0,1]": 1582,
+      "last_length": "1/256",
+      "inventory_upper": "19968"
+    },
+    {
+      "depth": 12,
+      "intervals_meeting_[0,1]": 3122,
+      "last_length": "1/512",
+      "inventory_upper": "39936"
+    }
+  ],
+  "metric_power_control": {
+    "alpha": "7/5",
+    "a": "2/5",
+    "beta": "11/5",
+    "correct_dyadic_exponent": "1/5",
+    "incorrect_squared_mean_metric_exponent": "-4/5"
+  }
+}

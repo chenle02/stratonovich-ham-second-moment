@@ -1,0 +1,123 @@
+OLD D1 METHOD ONLY; new R^d result must be proved. Exact original line numbers.
+1: # Complementary wave bound on the actual local phase
+2: 
+3: ACCEPTED at the scoped analytic/application gate: actual Opus5.5/HIGH,
+4: 18 checks PASS,268.893seconds, no required repairs; sourceb07d013.
+5: Original malformed report and reversible syntax-only recovery are retained
+6: in reviews/2026-10-30-complement-transfer/, with all optional adjudications.
+7: The weighted projection dependency is accepted at1242590. This is standard
+8: deterministic groundwork, not novelty or a sharp moment theorem.
+9: Full original goal remains active.
+10: 
+11: ## 1. Fixed objects and conclusion
+12: 
+13: Use exactly notes/spectral-ground-family.md and
+14: notes/spectral-weighted-projection.md: the fixed actual d1 family
+15: H_b=-d2-bU, b in K=[b0,b1], M=||U||infinity, positive normalized p_b,
+16: 0<l<=lambda_b<=L, mu_b=sqrt(-E2(b))>=0, and a fixed d>0 with
+17: lambda_b-mu_b>=d. The latter is the accepted rate gap, not a wave bound.
+18: Take beta=l/2 and the weighted projection constants from the weighted note.
+19: The physical P_b(t) and F are exactly those of
+20: notes/local-causal-young-flow.md Sections4-5: F is the closure of compact
+21: smooth phases PLUS both constants in uniformly local E=H1/2 x H-1/2.
+22: 
+23: We prove, uniformly b in K and t>=0,
+24: 
+25:  ||P_b(t)(I-Pi_b)||_(F->F) <= C_eta exp((lambda_b-eta)t),    (1)
+26: 
+27: for eta=min(d,beta,l)/2>0. In particular eta<inf_b lambda_b.
+28: No assertion about products of changing b, random errors or final averages
+29: is included in (1). All uses of the weighted note below are explicit.
+30: 
+31: ## 2. Uniform fractional phase identification
+32: 
+33: Set c=1+b1 M and A_b=H_b+c, B=1-d2. Their common form domain is H1, and
+34: 
+35:  B<=A_b<=cB                                                (2)
+36: 
+37: in quadratic forms, since 0<=b1M-bU<=b1M. Both operators are >=1.
+38: We give the fractional comparison rather than assume an L2 estimate
+39: automatically holds in E. If positive self-adjoint operators T,S>=1
+40: with common form domain obey T<=S, then for every t>0
+41: 
+42:  <f,(T+t)^(-1)f> >= <f,(S+t)^(-1)f>.
+43: 
+44: Indeed each side is the supremum over the common form domain of
+45: 2 Re<f,u>-<u,(T+t)u> or the corresponding S expression. Completing
+46: the square in the form norm proves this variational identity, with
+47: maximizer (T+t)^(-1)f. Thus I-t(T+t)^(-1)<=I-t(S+t)^(-1).
+48: The scalar identity
+49: 
+50:  sqrt(x)=(1/pi) integral_0^infinity t^(-1/2) x/(x+t) dt
+51: 
+52: follows by substituting t=x s and then s=r2, whose integral is pi.
+53: Apply the spectral theorem and Tonelli to its nonnegative quadratic
+54: forms. Integrating the preceding resolvent inequality, first on finite
+55: intervals then by monotone convergence, proves T^(1/2)<=S^(1/2) in
+56: forms, including the form-domain inclusion. Apply this twice to (2):
+57: 
+58:  ||B^(1/4)v||2 <= ||A_b^(1/4)v||2
+59:                   <= c^(1/4)||B^(1/4)v||2.                 (3)
+60: 
+61: The domain is exactly H1/2, with uniform constants. By Hilbert duality
+62: under the L2 pairing, the completion of L2 in ||A_b^(-1/4)w||2 is
+63: H-1/2, with uniform equivalent norms. Explicitly its norm is the supremum
+64: of |<w,v>| over ||A_b^(1/4)v||2<=1; the spectral theorem gives the equality
+65: for w in L2, and completion extends it. Define E_b by the norm
+66: 
+67:  ||(v,w)||_(E_b)^2=||A_b^(1/4)v||2^2+||A_b^(-1/4)w||2^2.    (4)
+68: 
+69: Equations (3)-(4) identify it with global E uniformly over b. This proof
+70: uses the self-adjoint spectral theorem already implicit in the accepted
+71: ground note; no new external fractional-domain theorem is imported.
+72: 
+73: ## 3. Global complementary wave calculus, including threshold zero
+74: 
+75: Let Q_b=I-|p_b><p_b| on L2. It commutes with A_b and extends as a
+76: contraction on both A-weighted entries of (4). Its spectral support for
+77: H_b lies in [E2(b),infinity)=[-mu_b^2,infinity). Define real functions
+78: 
+79:  C_t(h)=cos(t sqrt(h)), S_t(h)=sin(t sqrt(h))/sqrt(h), h>0;
+80:  C_t(0)=1, S_t(0)=t;
+81:  C_t(h)=cosh(t sqrt(-h)),
+82:  S_t(h)=sinh(t sqrt(-h))/sqrt(-h), h<0.
+83: 
+84: The spectral wave matrix on the Q phase is
+85: 
+86:  (v,w) -> (C_t(H_b)v+S_t(H_b)w,
+87:             -H_b S_t(H_b)v+C_t(H_b)w).                    (5)
+88: 
+89: After the isometry (v,w)->(A_b^(1/4)v,A_b^(-1/4)w), its four scalar
+90: entries are C_t(h), sqrt(h+c)S_t(h),
+91: -h S_t(h)/sqrt(h+c), C_t(h). Here h+c>=1. Uniformly on the stated
+92: spectral support, their absolute values are <=C(1+t)exp(mu_b t).
+93: For h>=0, use |S_t(h)|<=min(t,h^(-1/2)); split h<=1 and h>=1
+94: for the upper off-diagonal entry. The lower one is bounded by1 because
+95: sqrt(h)/sqrt(h+c)<=1. For -mu_b^2<=h<0 use
+96: |S_t(h)|<=t exp(mu_b t), |C_t(h)|<=exp(mu_b t), and
+97: |h|<=b1M, 1<=h+c<=c. These bounds also cover mu_b=0 without dividing
+98: by mu_b or assuming a second negative eigenvalue exists. Spectral integration
+99: and the triangle inequality give the corresponding bounded operator estimate
+100: on (4), hence on E.
+101: 
+102: On the ground phase, the wave complement I-Pi_b retains just
+103: (v,w)=(a p_b,-lambda_b a p_b), evolving by exp(-lambda_b t).
+104: The rank-one branch projections have uniformly bounded E_b norms, by
+105: l<=lambda_b<=L and 1<=c-lambda_b^2<=c. Combining the Q phase and this
+106: decaying branch yields
+107: 
+108:  ||P_b(t)(I-Pi_b)||_(E->E) <= C(1+t)exp(mu_b t).             (6)
+109: 
+110: To justify that (5) is the NAMED physical flow, first use smooth compact
+111: initial phases. The functional-calculus solution lies continuously in
+112: H2 x H1 on every finite horizon (the same scalar bounds at these higher
+113: A scales prove this), has u_tt=-H_b u in L2, and satisfies the free
+114: Duhamel equation. One can obtain that identity by differentiating the
+115: free variation-of-constants formula, or first on bounded H_b spectral
+116: intervals and then passing in H1 x L2. Uniqueness of that equation follows
+117: from Picard/Gronwall, since (v,w)->(0,bUv) is bounded on global E: bound
+118: H1/2->L2, multiplication by bounded U on L2, and L2->H-1/2. The accepted
+119: physical flow satisfies the same equation. Equality on compact smooth
+120: phases extends to all global E by density and finite-horizon boundedness.
+121: This does not assert that global E is dense in F.
+122: 

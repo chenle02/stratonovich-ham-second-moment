@@ -1,0 +1,817 @@
+# Mathematical working turn 04
+
+This is a mathematical reconstruction turn only. The whole current main, the eight-page Crouzeix–Palencia packet, and the source declarations of `L:phase-contractions`, `L:complex-phase`, `L:fock-form`, `L:finite-word-cutoff`, `L:interval-contractions`, `L:interval-complex` are treated as quoted evidence. No receipt, grade, verdict, or confidence is issued.
+
+## 0. Corrections from work03 carried forward explicitly
+
+1. `J_epsilon` for the white \((1,1)\) check is the **double** spatial integral
+
+\[
+J_{\varepsilon}(r,s)
+=\int_{\R}\int_{\R}G_r(x)G_s(y)\,p_{\varepsilon_1+\varepsilon_2}(x-y)\,\mathrm dx\,\mathrm dy,
+\]
+
+which tends to \(\min(r,s)/2\), not the single integral \(G_r(x)G_s(x)p_\varepsilon(x)\,\mathrm dx\) found earlier.
+
+2. The finite-horizon spatial limit uses the **marked-tail bound** for uniform finiteness after spatial limiting, not merely the integrability of \(|s-r|^{-a}\) in Lebesgue measure on a bounded square.
+
+3. The pairing envelope bounds each individual diagram; the \(P_n=(2n)!/(2^n n!)\) pairing-population sum remains necessary when summing over diagrams.
+
+4. The envelope is `OWN215`.
+
+5. The source's uniformity defect is the use of large-\(\theta\) bounds when \(\theta=n/t\) can approach \(0\); the safe choice is \(\theta=\theta_0+n/t\), giving \(e^{2\theta_0 t}\), not a dropped \(e^{2n}\).
+
+6. The Green roots \((0,0)\) at the start of each chain are deterministic and are **not** Wick-paired.
+
+7. Green-width convergence is a **per-fixed-\(s\)** dominated time integration; no unproved uniform-in-\(s\) scalar limit is asserted.
+
+8. Global multiplication closedness on the infinite sum is obtained by an a.s.-convergent subsequence **after** the \(\sqrt n\)-weighted product summability, not by finite-degree boundedness alone.
+
+---
+
+# Part I. The six operator-core lemmas
+
+## 1. PROOF037 — translated spectral resolvent and physical Green/covariance trace
+
+### Setting and two distinct masses
+
+Let \(\Gamma\) be nonnegative, even, positive-definite, tempered Radon on \(\R^d\), \(d\in\{1,2,3\}\), homogeneous in the physical sense
+
+\[
+\Gamma(cA)=c^{d-\alpha}\Gamma(A),\qquad 0<\alpha<2,
+\]
+
+and with spectral measure \(\mu\) in the convention
+
+\[
+\Gamma=\int_{\R^d}e^{i\xi\cdot x}\mu(\mathrm d\xi).
+\]
+
+Fourier uniqueness transfers homogeneity:
+
+\[
+\mu(cA)=c^{\alpha}\mu(A).
+\]
+
+We emphasize the **two different finite masses**:
+
+\[
+V:=\mu(\{\xi:|\xi|\le1\}),\qquad M:=\Gamma(\{x:|x|\le1\}).
+\]
+
+For nonzero \(\Gamma\), both are finite and positive. If \(\Gamma=0\), then \(\mu=0\), \(V=M=0\); all bounds below are trivial and are handled separately.
+
+Define
+
+\[
+R_\alpha=\frac{\alpha\pi V}{2\sin(\pi\alpha/2)},\qquad 0<\alpha<2.
+\]
+
+The point \(q=0\) integral uses the elementary identity
+
+\[
+\int_0^\infty\frac{r^{\alpha-1}}{1+r^2}\,\mathrm dr=\frac{\pi}{2\sin(\pi\alpha/2)}.
+\]
+
+### (a) The resolvent contraction — all \(d\in\{1,2,3\}\)
+
+For \(\lambda>0\), \(q\in\R^d\), and \(s>0\),
+
+\[
+\int_{\R^d}e^{-s|q+\xi|^2}\mu(\mathrm d\xi)
+=\int_{\R^d}p_{2s}(x)e^{iq\cdot x}\Gamma(\mathrm dx),
+\]
+
+which is a direct Fourier-pairing identity (the \(p_{2s}\) Fourier factor is \(e^{-s|q+\xi|^2}\) after the evenness shift \(\xi\mapsto-\xi\)). Since \(\Gamma\) is a nonnegative measure,
+
+\[
+\left|\int_{\R^d}p_{2s}(x)e^{iq\cdot x}\Gamma(\mathrm dx)\right|
+\le\int_{\R^d}p_{2s}(x)\Gamma(\mathrm dx)
+=\int_{\R^d}e^{-s|\xi|^2}\mu(\mathrm d\xi).
+\]
+
+This is an estimate of a **real physical integral by its total mass**; it uses no pointwise ordering of arbitrary phases or covariance values. Multiplying by \(e^{-\lambda^2s}\) and integrating over \(s>0\) gives
+
+\[
+\int_{\R^d}\frac{\mu(\mathrm d\xi)}{\lambda^2+|q+\xi|^2}
+\le\int_{\R^d}\frac{\mu(\mathrm d\xi)}{\lambda^2+|\xi|^2}.
+\]
+
+Because \(\mu(B_r)=Vr^\alpha\),
+
+\[
+\int_{\R^d}\frac{\mu(\mathrm d\xi)}{\lambda^2+|\xi|^2}
+=\alpha V\int_0^\infty\frac{r^{\alpha-1}}{\lambda^2+r^2}\,\mathrm dr
+=R_\alpha\lambda^{\alpha-2}.
+\]
+
+Hence
+
+\[
+\boxed{\sup_{q\in\R^d}\int_{\R^d}\frac{\mu(\mathrm d\xi)}{\lambda^2+|q+\xi|^2}
+\le R_\alpha\lambda^{\alpha-2}.}
+\]
+
+This is dimension-free and covers anisotropic, white, and singular covariances: only \(\mu(B_r)=Vr^\alpha\) and physical nonnegativity enter.
+
+### (b) The physical trace estimate — the \(d=3\) wave measure
+
+The second bound in `L:phase-contractions` is dimension-three specific, because \(G_a\) there is the normalized sphere wave measure. The Fourier kernel is
+
+\[
+\widehat G_a(\xi)=\int_{\R^3}e^{-i\xi\cdot x}G_a(\mathrm dx)
+=\frac{\sin(a|\xi|)}{|\xi|}.
+\]
+
+For \(\Gamma_\varepsilon=p_{2\varepsilon}*\Gamma\), with spectral multiplier \(e^{-\varepsilon|\xi|^2}\),
+
+\[
+T_\varepsilon(a,q)
+=\int_{\R^3}e^{iq\cdot x}\Gamma_\varepsilon(x)G_a(\mathrm dx)
+=\int_{\R^3}\widehat G_a(q+\xi)e^{-\varepsilon|\xi|^2}\mu(\mathrm d\xi).
+\]
+
+The measure \(\Gamma_\varepsilon(x)G_a(\mathrm dx)\) is finite and nonnegative, so
+
+\[
+|T_\varepsilon(a,q)|\le T_\varepsilon(a,0),
+\qquad T_\varepsilon(a,0)=\int_{\R^3}\Gamma_\varepsilon(x)G_a(\mathrm dx)\ge0.
+\]
+
+From \(\Gamma(B_r)=Mr^{3-\alpha}\) one obtains the radial distributional law
+
+\[
+\int_{\R^3}F(x)\Gamma(\mathrm dx)
+=(3-\alpha)M\int_0^\infty F(r)r^{2-\alpha}\,\mathrm dr
+=c_\Gamma\int_{\R^3}F(x)|x|^{-\alpha}\,\mathrm dx,
+\qquad c_\Gamma=\frac{(3-\alpha)M}{4\pi},
+\]
+
+for every nonnegative radial Schwartz \(F\). Taking \(F=G_a*p_{2\varepsilon}\),
+
+\[
+T_\varepsilon(a,0)
+=c_\Gamma[p_{2\varepsilon}*(G_a*|\cdot|^{-\alpha})](0)
+\le c_\Gamma\sup_{z\in\R^3}(G_a*|\cdot|^{-\alpha})(z).
+\]
+
+With \(r=|z|\), the sphere convolution is
+
+\[
+(G_a*|\cdot|^{-\alpha})(z)
+=\frac{(a+r)^{2-\alpha}-|a-r|^{2-\alpha}}{2r(2-\alpha)}.
+\]
+
+The three-region bounds
+
+\[
+r<a/2:\ \le2^{\alpha}a^{1-\alpha},
+\qquad
+r>2a:\ \le a^{1-\alpha},
+\qquad
+a/2\le r\le2a:\ \le\frac{3^{2-\alpha}a^{1-\alpha}}{2-\alpha}
+\]
+
+give
+
+\[
+\boxed{|T_\varepsilon(a,q)|\le D_\Gamma a^{1-\alpha},
+\qquad D_\Gamma=c_\Gamma\left(2^{\alpha}+\frac{3^{2-\alpha}}{2-\alpha}\right).}
+\]
+
+No isotropic or density hypothesis is used. For \(d=1,2\), the wave measure is not the sphere measure, so the analogous trace bounds require separate region computations; the declared lemma is the \(d=3\) statement.
+
+---
+
+## 2. PROOF039 — complex phase bound with genuinely noncommuting \(A_0,B\)
+
+### Falsification-first framing
+
+The central algebraic identity is **ordered**:
+
+\[
+A_\lambda^{1/2}\big[(L_\lambda+t)^{-1}-A_\kappa^{-1}\big]
+=A_\lambda^{1/2}A_\kappa^{-1/2}(1-zK_\kappa)^{-1}zK_\kappa A_\kappa^{-1/2}.
+\]
+
+Here \(A_\kappa\) commutes with \(A_\lambda\), but \(L_\lambda=A_\lambda-zB\) does **not** commute with \(A_\lambda\) when \(A_0\) and \(B\) do not commute. The numerical \(2\times2\) test in the supplied data is only evidence; the reconstruction below is the actual proof.
+
+### Setup
+
+\(A_0\ge0\) bounded selfadjoint, \(B\) bounded selfadjoint, \(A_\rho=\rho^2+A_0\), and
+
+\[
+\|A_\rho^{-1/2}BA_\rho^{-1/2}\|\le d\rho^{a-2},\qquad 0<a<1.
+\]
+
+Because \(A_0\) is bounded and \(A_\rho\ge\rho^2 I\), the operators \(A_\rho^{1/2},A_\rho^{-1/2}\) are bounded invertible square roots of positive selfadjoint operators.
+
+### Resolvent factorization
+
+For \(t\ge0\), set \(\kappa=(\lambda^2+t)^{1/2}\), \(A_\kappa=A_\lambda+t\). Then
+
+\[
+L_\lambda+t=A_\lambda+t-zB
+=A_\kappa^{1/2}(1-zK_\kappa)A_\kappa^{1/2},
+\qquad
+K_\kappa:=A_\kappa^{-1/2}BA_\kappa^{-1/2}.
+\]
+
+The sandwich hypothesis gives \(\|K_\kappa\|\le d\kappa^{a-2}\). Since \(a-2<0\) and \(\kappa\ge\lambda\),
+
+\[
+|z|\le\frac{\delta_a\lambda^{2-a}}{d}
+\quad\Longrightarrow\quad
+\|zK_\kappa\|\le\delta_a<1.
+\]
+
+Therefore \(1-zK_\kappa\) is invertible, hence \(L_\lambda+t\) is invertible for every \(t\ge0\). Moreover
+
+\[
+(L_\lambda+t)^{-1}
+=A_\kappa^{-1/2}(1-zK_\kappa)^{-1}A_\kappa^{-1/2},
+\]
+
+and
+
+\[
+\|A_\kappa^{1/2}(L_\lambda+t)^{-1}\|
+=\|(1-zK_\kappa)^{-1}A_\kappa^{-1/2}\|
+\le\frac1{(1-\delta_a)\kappa}.
+\]
+
+### The four ordered inverse-root comparisons
+
+Use the scalar identity, valid on the right half-plane,
+
+\[
+w^{-1/2}=\frac1\pi\int_0^\infty t^{-1/2}(w+t)^{-1}\,\mathrm dt,
+\]
+
+together with the fact that the principal square roots of \(L_\lambda\) and \(L_\lambda^*\) are available because both have positive-definite real part (proved below). For
+
+\[
+Q_z:=A_\lambda^{1/2}L_\lambda^{-1/2},
+\]
+
+one obtains
+
+\[
+Q_z-1
+=\frac1\pi\int_0^\infty t^{-1/2}A_\lambda^{1/2}
+\big[(L_\lambda+t)^{-1}-A_\kappa^{-1}\big]\,\mathrm dt.
+\]
+
+The ordered factorization above gives the integrand bound, without the factor \(t^{-1/2}/\pi\),
+
+\[
+\|A_\lambda^{1/2}[(L_\lambda+t)^{-1}-A_\kappa^{-1}]\|
+\le\frac{|z|d}{1-\delta_a}\kappa^{a-3}.
+\]
+
+The four factors have norms
+
+\[
+\|A_\lambda^{1/2}A_\kappa^{-1/2}\|\le1,
+\qquad
+\|(1-zK_\kappa)^{-1}\|\le(1-\delta_a)^{-1},
+\qquad
+\|zK_\kappa\|\le|z|d\kappa^{a-2},
+\qquad
+\|A_\kappa^{-1/2}\|\le\kappa^{-1}.
+\]
+
+The first uses the operator inequality \(A_\lambda\le A_\kappa\). Therefore
+
+\[
+\|Q_z-1\|
+\le\frac{|z|d\,\lambda^{a-2}I_a}{\pi(1-\delta_a)}
+\le\frac{\delta_a I_a}{\pi(1-\delta_a)}
+\le\frac16,
+\]
+
+because
+
+\[
+I_a=\int_0^\infty s^{-1/2}(1+s)^{(a-3)/2}\,\mathrm ds<\infty
+\qquad(0<a<1),
+\]
+
+and the substitution \(t=\lambda^2 s\) produces the \(\lambda^{a-2}I_a\) factor.
+
+Consequently
+
+\[
+\|Q_z\|\le2,\qquad\|Q_z^{-1}\|\le2.
+\]
+
+Apply the identical argument to \(L^*=A_0-\overline zB\) and take adjoints. This yields all four ordered comparisons
+
+\[
+\|A_\lambda^{1/2}L_\lambda^{-1/2}\|\le2,
+\qquad
+\|L_\lambda^{-1/2}A_\lambda^{1/2}\|\le2,
+\qquad
+\|L_\lambda^{1/2}A_\lambda^{-1/2}\|\le2,
+\qquad
+\|A_\lambda^{-1/2}L_\lambda^{1/2}\|\le2.
+\]
+
+Only functions of \(L\) are allowed to commute with each other; \(L\) is never commuted with \(A_\lambda\).
+
+### Numerical range containment
+
+For \(\|u\|=1\), put \(s:=\|A_0^{1/2}u\|\). For every \(\rho>0\),
+
+\[
+|\langle Bu,u\rangle|
+\le\|A_\rho^{-1/2}BA_\rho^{-1/2}\|\,\|A_\rho^{1/2}u\|^2
+\le d\rho^{a-2}(s^2+\rho^2).
+\]
+
+Evaluating at \(\rho=s\) (with the \(s=0\) case by \(\rho\downarrow0\)) gives
+
+\[
+|\langle Bu,u\rangle|\le2ds^{\,a}.
+\]
+
+Evaluating at \(\rho=\lambda\) gives
+
+\[
+|z\langle Bu,u\rangle|
+\le\delta_a(s^2+\lambda^2).
+\]
+
+Writing \(w=x+iy=\langle L_\lambda u,u\rangle\) (equivalently \(L=\lambda^2+A_0-zB\) shifted), one gets
+
+\[
+x\ge(1-\delta_a)(s^2+\lambda^2),
+\qquad
+|y|\le2\delta_a\lambda^{2-a}s^a.
+\]
+
+Using \(s^{2a}\lambda^{2-2a}\le s^2+\lambda^2\),
+
+\[
+y^2\le\frac{4\delta_a^2}{1-\delta_a}\lambda^2x
+\le\frac13\lambda^2 x,
+\qquad
+x\ge\frac34\lambda^2,
+\]
+
+so the closure of \(W(L)\) lies in the parabolic region
+
+\[
+\{x+iy:x\ge-\lambda^2/4,\ y^2\le\tfrac13\lambda^2(x+\lambda^2)\}.
+\]
+
+This region implies
+
+\[
+|\operatorname{Im}\sqrt w|\le\lambda,\qquad |w|\le x+2\lambda^2,
+\]
+
+for every \(w\in\overline{W(L)}\).
+
+### Holomorphic functions and the imported bounded Crouzeix–Palencia theorem
+
+The functions
+
+\[
+C_h(w)=\cos(h\sqrt w),
+\qquad
+F_h(w)=\sqrt{w+\lambda^2}\,\frac{\sin(h\sqrt w)}{\sqrt w},
+\qquad
+H_h(w)=\frac{w}{\sqrt{w+\lambda^2}}\,\frac{\sin(h\sqrt w)}{\sqrt w}
+\]
+
+are holomorphic on a neighborhood of \(\overline{W(L)}\). On that region the bounds
+
+\[
+|C_h(w)|\le e^{\lambda h},
+\qquad
+|F_h(w)|\le2(1+\lambda h)e^{\lambda h},
+\qquad
+|H_h(w)|\le2e^{\lambda h}
+\]
+
+follow from \(|\operatorname{Im}\sqrt w|\le\lambda\), \(\sin z/z=\int_0^h\cos(r\sqrt w)\,\mathrm dr\), and the split \(|w|\le\lambda^2/2\) versus \(|w|>\lambda^2/2\).
+
+The imported bounded-operator theorem from the packet (Theorem 6, p. 5) states that for a bounded operator \(T\) and \(f\) holomorphic on a neighborhood of \(\overline{W(T)}\),
+
+\[
+\|f(T)\|\le(1+\sqrt2)\sup_{w\in W(T)}|f(w)|.
+\]
+
+It is applied only to the **bounded** operator \(L\) at finite cutoffs; no unbounded square-root domain theorem or commutation is imported. Since \(1+\sqrt2<3\), one gets
+
+\[
+\|C_h(L)\|\le3e^{\lambda h},
+\qquad
+\|F_h(L)\|\le6(1+\lambda h)e^{\lambda h},
+\qquad
+\|H_h(L)\|\le6e^{\lambda h}.
+\]
+
+### The phase propagator block norm
+
+Under the isometry \((u,v)\mapsto(u,A_\lambda^{-1/2}v)\), the propagator of the generator with rows \((0,I)\), \((-L,0)\) has ordered blocks
+
+\[
+C_h(L),
+\qquad
+F_h(L)L_\lambda^{-1/2}A_\lambda^{1/2},
+\]
+
+\[
+-A_\lambda^{-1/2}L_\lambda^{1/2}H_h(L),
+\qquad
+A_\lambda^{-1/2}L_\lambda^{1/2}C_h(L)L_\lambda^{-1/2}A_\lambda^{1/2}.
+\]
+
+These are exactly the standard blocks \((C_h,\sin)/(\cdot)\) weighted by the two root comparisons. Their norms are at most
+
+\[
+3e^{\lambda h},\qquad12(1+\lambda h)e^{\lambda h},
+\qquad12e^{\lambda h},\qquad12e^{\lambda h}.
+\]
+
+By the bound on a block operator as the sum of its block norms,
+
+\[
+\|\mathcal M_z(h)\|_{X_\lambda\to X_\lambda}
+\le(39+12\lambda h)e^{\lambda h}
+\le100e^{2\lambda h}.
+\]
+
+This completes the uniform bound, independent of \(H,\|A_0\|,\|B\|\). The abstract exponent \(a\) here will later be specialized to \(a=\alpha/2\); it is distinct from the temporal \(\alpha_0\).
+
+### Remaining incoming hypothesis of 039
+
+The Crouzeix–Palencia theorem itself is the only imported theorem. The remaining hypothesis is the abstract sandwich
+
+\[
+\|A_\rho^{-1/2}BA_\rho^{-1/2}\|\le d\rho^{a-2}.
+\]
+
+The initialization \(\delta_a<1\) requires \(0<a<1\).
+
+---
+
+## 3. PROOF040 — Fock multiplication with correct number-operator reading
+
+The target is the uniform bound
+
+\[
+\|A_\rho^{-1/2}B_{N,m,b}A_\rho^{-1/2}\|
+\le d_N\rho^{\alpha/2-2},
+\qquad
+d_N=2\sqrt{N+1}\,\sqrt{R_\alpha},
+\]
+
+with
+
+\[
+B_{N,m,b}=P_NS_b\Big(\sum_{i=1}^m g_i M_{e_i}\Big)S_bP_N,
+\qquad
+A_\rho=\rho^2-\Delta.
+\]
+
+### Spatial column bound
+
+From the representation \(W_\varepsilon(x)=\sum_i g_i e_i(x)\), the functions satisfy
+
+\[
+\sum_i e_i(x)e_i(y)=\Gamma_\varepsilon(x-y),\qquad
+\sum_i e_i(x)^2=\Gamma_\varepsilon(0):=v_\varepsilon<\infty.
+\]
+
+For \(H_i:=A_\rho^{-1/2}M_{e_i}A_\rho^{-1/2}\), Plancherel and PROOF037 give
+
+\[
+\sum_i\|H_i f\|_2^2
+=\frac1{(2\pi)^d}\int_{\R^d}
+\frac{|\widehat f(\eta)|^2}{\rho^2+|\eta|^2}
+\left(\int_{\R^d}\frac{e^{-\varepsilon|\xi|^2}\mu(\mathrm d\xi)}
+{\rho^2+|\eta+\xi|^2}\right)\mathrm d\eta
+\le R_\alpha\rho^{\alpha-2}\|A_\rho^{-1/2}f\|_2^2.
+\]
+
+Using \(\|A_\rho^{-1/2}\|\le\rho^{-1}\),
+
+\[
+\sum_i\|H_i f\|_2^2
+\le R_\alpha\rho^{\alpha-4}\|f\|_2^2,
+\]
+
+equivalently, in quadratic forms,
+
+\[
+\sum_i H_i^2\le R_\alpha\rho^{\alpha-4}I.
+\]
+
+For the band projection, \(S_b\) commutes with \(A_\rho\) and, since each \(S_bH_iS_b\) is selfadjoint,
+
+\[
+(S_bH_iS_b)^2\le S_bH_i^2S_b.
+\]
+
+Thus the same column bound holds for the band-compressed operators \(H_i^b:=S_bH_iS_b\).
+
+### Creation/annihilation norm on the correct degree
+
+Write multiplication by the normalized Gaussian coordinate \(g_i\) as
+
+\[
+M_{g_i}=a_i+a_i^*,
+\qquad
+g_ih_{\mathbf a}
+=\sqrt{a_i+1}\,h_{\mathbf a+e_i}
++\sqrt{a_i}\,h_{\mathbf a-e_i}.
+\]
+
+The full multiplication operator on degree \(\le N\) is the sum of a creation part and an annihilation part. The precise statement avoiding both errors the task flags is as follows.
+
+Let
+
+\[
+R:\ell^2\otimes\mathcal H\to\mathcal H,\qquad (y_i)_i\mapsto\sum_i a_i^*y_i.
+\]
+
+Its adjoint is
+
+\[
+R^*:\mathcal H\to\ell^2\otimes\mathcal H,\qquad F\mapsto(a_iF)_i.
+\]
+
+Hence
+
+\[
+RR^*=\sum_i a_i^*a_i=N_{\rm tot},
+\]
+
+the total number operator. On the subspace of total degree \(k+1\), \(N_{\rm tot}=(k+1)I\). Therefore the restriction of \(R\) from inputs of degree \(k\) to outputs of degree \(k+1\) has norm
+
+\[
+\|R\|=\sqrt{k+1}.
+\]
+
+This is the **correct** operator-norm computation: the product is \(RR^*=N_{\rm tot}\), not \((k+1)I\) acting on the degree-\(k\) input, and there is no identity-per-mode term \(N+M\). The adjoint product \(R^*R\) on the sequence side is not diagonal; it is not used.
+
+Now define the spatial column
+
+\[
+C:\mathcal H\to\ell^2\otimes\mathcal H,\qquad f\mapsto(H_i^b f)_i.
+\]
+
+Since \(\sum_i(H_i^b)^2\le R_\alpha\rho^{\alpha-4}I\),
+
+\[
+\|C\|\le\sqrt{R_\alpha}\,\rho^{\alpha/2-2}.
+\]
+
+The creation part is
+
+\[
+W_c=P_NS_b\Big(\sum_i a_i^*M_{e_i}\Big)S_bP_N
+=R(I\otimes C),
+\]
+
+and the annihilation part is
+
+\[
+W_a=P_NS_b\Big(\sum_i a_iM_{e_i}\Big)S_bP_N
+=(I\otimes C^*)R^*.
+\]
+
+On degrees at most \(N\), each part has norm at most
+
+\[
+\sqrt{N+1}\sqrt{R_\alpha}\,\rho^{\alpha/2-2}
+\]
+
+(because \(\|C\|=\|C^*\|\) for the selfadjoint \(H_i^b\)). Adding the two parts proves
+
+\[
+\boxed{\|A_\rho^{-1/2}B_{N,m,b}A_\rho^{-1/2}\|
+\le2\sqrt{N+1}\,\sqrt{R_\alpha}\,\rho^{\alpha/2-2}.}
+\]
+
+This is uniform in \(\varepsilon,m,b\), with no mode-count factor. Every statement tensors with an arbitrary additional Hilbert factor by inserting identities there; the Gaussian and spatial operators act only on their respective factors.
+
+### Remaining hypotheses of 040
+
+Boundedness of \(B_{N,m,b}\) requires the band projection \(S_b\), so \(-\Delta\) is bounded on the band. The bound is only at finite \(N,m,b\); no limit is taken here. The proof requires the strengthened spatial column bound \(\sum_iH_i^2\le R_\alpha\rho^{\alpha-4}I\), not only the weaker \(\rho^{\alpha-2}\|f\|^2\) interval bound.
+
+---
+
+## 4. PROOF041 — exactness of selected finite words
+
+The proof is the color-degree induction stated in the source.
+
+For a fixed word \(i_1,\dots,i_n\), multiplication by \(g_{ij}\) changes **only** the total degree of color \(i\) by \(+1\) (creation) or \(-1\) (annihilation), and leaves every other color degree unchanged. The free operators \(I\otimes F_l\) leave all Gaussian degrees unchanged.
+
+Before insertion \(l\), the uncompressed word has color-\(i\) degree at most
+
+\[
+r_i(l)=|\{j\le l:i_j=i\}|.
+\]
+
+Therefore, for the selected word only,
+
+\[
+r_i(l)\le r_i\le N_i.
+\]
+
+Consequently \(P=\bigotimes_i P_{N_i}\) is the identity on every intermediate vector along that word:
+
+\[
+(I\otimes F_n)(PJ_{i_n}P)\cdots(PJ_{i_1}P)(I\otimes F_0)(1\otimes v)
+=(I\otimes F_n)J_{i_n}\cdots J_{i_1}(I\otimes F_0)(1\otimes v).
+\]
+
+The annihilation (lowering) term \(\sqrt{a_i}\,h_{\mathbf a-e_i}\) is retained for all \(a_i\ge1\), so **both creation and later annihilation of the same mode are preserved**, including every self-contraction within the word.
+
+**What stabilizes:** The total color degrees along the one selected word never exceed \(N_i=r_i\), so the projection inserted between consecutive word factors coincides with the identity there.
+
+**What does not follow:** This provides no identity between the full cutoff propagator and the uncompressed propagator. Different words with different intermediate degrees, words that would exceed \(N_i\), and all non-selected contractions are not covered. In particular, this is not a fresh-vacuum bound for already-occupied colors.
+
+The Bochner-integral extension is valid because the equality is equality of the vector-valued integrand at each fixed parameter.
+
+---
+
+## 5. PROOF044 — interval contractions, tensoring earlier dependence
+
+The dimension-free proof uses the same Gaussian-comparison mechanism as PROOF037. Since \(W(p_\varepsilon(x-\cdot))\) has covariance \(\Gamma_\varepsilon=p_{2\varepsilon}*\Gamma\),
+
+\[
+W_\varepsilon(x)=\sum_m g_me_m(x),
+\qquad
+\sum_me_m e_m=\Gamma_\varepsilon.
+\]
+
+The one explicit dimension-independent inequality is
+
+\[
+\int e^{-s|\eta+\xi|^2}\mu(\mathrm d\xi)
+=\int p_{2s}^{(d)}(x)e^{i\eta\cdot x}\Gamma(\mathrm dx)
+\le\int e^{-s|\xi|^2}\mu(\mathrm d\xi).
+\]
+
+Integrating against \(e^{-\rho^2s}\,\mathrm ds\) and using \(\mu(B_r)=Vr^\alpha\) gives
+
+\[
+\sup_{\eta\in\R^d}\int\frac{\mu(\mathrm d\xi)}{\rho^2+|\eta+\xi|^2}
+\le R_\alpha\rho^{\alpha-2}.
+\]
+
+Plancherel then gives the column bound
+
+\[
+\sum_m\|A_\rho^{-1/2}M_{e_m}f\|_2^2\le R_\alpha\rho^{\alpha-2}\|f\|_2^2.
+\]
+
+The phase-insertion bound on a fresh vacuum is immediate because on the vacuum only creation contributes and its norm is exactly the left side of the column bound.
+
+Substituting \(A_\rho^{-1/2}f\) gives the selfadjoint sandwiches
+
+\[
+H_i:=A_\rho^{-1/2}M_{e_i}A_\rho^{-1/2},
+\qquad
+\sum_iH_i^2\le R_\alpha\rho^{\alpha-4}I,
+\]
+
+and the Fock sandwich follows from PROOF040's number-operator argument. Tensoring with any other Hilbert factor only inserts an identity in that factor and preserves all bounds.
+
+No angular density, no origin-atom exclusion, no density of \(\mu\), and no isotropic hypothesis is used. The only covariance quantity entering is \(R_\alpha\), which depends on the spectral ball mass \(V=\mu(B_1)\).
+
+---
+
+## 6. PROOF045 — nonsymmetric complex sums and endpoint metric
+
+### Nonsymmetric sandwich and adjoint
+
+For bounded \(V\), not necessarily selfadjoint, the hypothesis is
+
+\[
+\|A_\rho^{-1/2}VA_\rho^{-1/2}\|\le D\rho^{a-2},\qquad
+D\le\delta_a\Lambda^{2-a}.
+\]
+
+Since the adjoint of \(A_\rho^{-1/2}VA_\rho^{-1/2}\) is \(A_\rho^{-1/2}V^*A_\rho^{-1/2}\), the same sandwich holds for \(V^*\).
+
+For \(L=A_0-V\), the factorization
+
+\[
+L_\Lambda+t=A_\kappa^{1/2}(1-K_\kappa)A_\kappa^{1/2},
+\qquad
+K_\kappa=A_\kappa^{-1/2}VA_\kappa^{-1/2}
+\]
+
+uses complex but bounded \(K_\kappa\). The resolvent difference is exactly
+
+\[
+(L_\Lambda+t)^{-1}-A_\kappa^{-1}
+=A_\kappa^{-1/2}(1-K_\kappa)^{-1}K_\kappa A_\kappa^{-1/2},
+\]
+
+where all three noncommuting factors are kept in this order; the \(1-K_\kappa\) factor is not moved past \(A_\kappa^{-1/2}\). This gives the same \(1/6\) inverse-root comparison when the adjoint is treated in parallel.
+
+### Numerical range without selfadjointness
+
+For \(\|u\|=1\), \(s=\|A_0^{1/2}u\|\), the same two evaluations give
+
+\[
+|\langle Vu,u\rangle|\le D\Lambda^{a-2}(s^2+\Lambda^2),
+\qquad
+|\langle Vu,u\rangle|\le2Ds^{\,a}.
+\]
+
+With \(D\le\delta_a\Lambda^{2-a}\),
+
+\[
+\operatorname{Re}\langle L_\Lambda u,u\rangle\ge(1-\delta_a)(s^2+\Lambda^2),
+\qquad
+|\operatorname{Im}\langle L_\Lambda u,u\rangle|
+\le2\delta_a\Lambda^{2-a}s^a.
+\]
+
+This is the same parabola, and the Crouzeix–Palencia theorem applies to the bounded nonselfadjoint \(L\). Selfadjointness of \(V\) is not used, and \(A_\Lambda\) is not commuted with \(L\). The uniform bound is again \(100e^{2\Lambda h}\).
+
+### Metric change and endpoint charges
+
+For a common phase vector,
+
+\[
+\|z\|_{\rho_{\rm new}}
+\le\max\{1,\rho_{\rm old}/\rho_{\rm new}\}\,\|z\|_{\rho_{\rm old}}.
+\]
+
+At a jump time \(\tau\), denote by \(E\) the **set** of fields ending at \(\tau\), by \(S\) the set starting at \(\tau\), and by \(R\) the set remaining. The ratio is at most
+
+\[
+\frac{\lambda+\sum_R\omega_i+\sum_E\omega_i}
+{\lambda+\sum_R\omega_i+\sum_S\omega_i}
+\le1+\frac{\sum_E\omega_i}{\lambda}
+\le\prod_{E}\left(1+\frac{\omega_i}{\lambda}\right).
+\]
+
+An initial increase of the weight (a start) creates no loss. The final return to \(X_\lambda\) is charged as an ending at \(T\).
+
+**Endpoints are bundled as sets.** If several connected intervals share a fixed endpoint at a grid boundary, they all belong to the same \(E\) at that jump and are charged simultaneously; they are not charged sequentially or repeatedly. Consequently their end charges multiply only once:
+
+\[
+\text{total loss}\le\prod_i\left(1+\frac{\omega_i}{\lambda}\right).
+\]
+
+Only insertion-time coincidences between variable insertion times and each other or with fixed cut points are Lebesgue-null and may be discarded. Fixed interval endpoints are not null sets.
+
+The subadditive step needed later is \(p=2-a>1\), so for nonnegative \(x_i\),
+
+\[
+\sum_ix_i^{2-a}\le\left(\sum_ix_i\right)^{2-a}.
+\]
+
+### Remaining hypotheses of 045
+
+Bounded \(A_0,V\), the sandwich \(D\le\delta_a\Lambda^{2-a}\), and the positivity of all field weights \(\omega_i>0\). It does **not** assert independence of scalar solution moments across overlapping time blocks; those are separate inputs for later fixed-split and interval-bound arguments.
+
+---
+
+# Part II. Exact operator facts now available for 047/048/051
+
+The six reconstructed lemmas supply exactly:
+
+- **PROOF037:** the resolvent bound and physical trace bound whose only covariance input is \(R_\alpha\).
+- **PROOF039/045:** the uniform \(100e^{2\Lambda h}\) complex phase bound under a sandwich \(D\le\delta_a\Lambda^{2-a}\), valid also for nonsymmetric \(V\).
+- **PROOF040/044:** the preconditioned Fock sandwich \(2\sqrt{N+1}\sqrt{R_\alpha}\rho^{\alpha/2-2}\), with the correct number-operator reading and no mode-factor loss, tensorable with earlier Hilbert dependence.
+- **PROOF041:** exactness of selected finite words at cutoffs \(N_i\ge r_i\), retaining self-contractions, without full-propagator equality.
+- **PROOF045 metric:** the total \(\prod_i(1+\omega_i/\lambda)\) loss with bundled fixed endpoints and no start loss.
+
+These are the inputs available for `047`-style fixed-split estimates and `048`-style coefficient extraction.
+
+### First identified defect or missing hypothesis
+
+**No failed inequality was located in OWN037, 039, 040, 041, 044, or 045 after the reconstructions above.** The only corrections are to the reading, not to any computation:
+
+1. The number-operator product must be read as \(RR^*=\sum a_i^*a_i=N_{\rm tot}\) on the **output** degree, giving \(\|R\|=\sqrt{k+1}\); the source's parenthetical must not be misread as \((k+1)I\) on the degree-\(k\) input, and the per-mode identity term \(N+M\) is never introduced.
+2. The endpoint charges in `045` are bundled by ending **set**; fixed grid endpoints are not null sets and may coincide.
+3. PROOF037's resolvent bound holds in every \(d\in\{1,2,3\}\); the physical trace estimate is its \(d=3\) wave-measure version.
+4. The abstract exponent \(a\) in `039/045` is later \(\alpha/2\), distinct from \(\alpha_0\).
+
+The following are **not** yet established by these six lemmas and must not be fed back into the correct-scale route:
+
+- the global \(\kappa\)-rate bound;
+- the full fixed-split subspace invariance across partitioned background segments;
+- any independence or multiplication of scalar solution moments over overlapping time blocks.
+
+---
+
+## Remaining mathematical gaps (only)
+
+1. `047`'s background-segment subspace invariance and the vector-Cauchy extraction are not yet re-derived in this turn; the operator inputs now reconstructed make them available but their full proof is the next step.
+2. `048` requires the finite-smoothed entire-series identification with \(v_{\max}\) used only for identification, plus the reflection parity \(r_i+q_i=2k_i\), before the inventory bound of `046` can be composed with the operator core.
+3. The dyadic-grid positivity comparison and amplitude-scaled tail financing in `051` require the terminal-Wick identification (`049`) and uniform tail passage (`050`), which are separate from the six operator lemmas.
+4. No global result follows from the six lemmas alone; a global \(\kappa\)-scale upper bound remains unproved until the interval and inventory chain is completed.
+
+No overall review verdict, confidence, or certification statement is issued.

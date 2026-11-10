@@ -1,0 +1,76 @@
+{
+  "schema": "subscription-review-report/1",
+  "category": "paper-review-deepseek",
+  "model": "deepseek/deepseek-v4-pro",
+  "verdict": "PASS",
+  "confidence": "high",
+  "confidence_justification": "I re-derived the two target deductions from the embedded source: the exact temporal equilibrium density/potential/mass with direct endpoint values, the compact cutoff controls and their endpoint-bounded scores, the same-W raw variance and the origin-ball strict positivity, the Radon/Lebesgue dilation powers, the radicand/cost under ell,theta, the u=alpha/q and scalar-L optimizations with the constant 8M_a q^(q/2)/R alpha^(alpha/2), and the finiteness order through the already positive-finite S1pos in PROOF132 before PROOF138/139. Every required semantic join closed, and the supplied Fraction outputs match my recomputations. Remaining uncertainty is limited to the surrounding named-input proofs consumed as inputs (notably 051/130/131), which I checked at their stated hypotheses without independently reconstructing their full internal estimates.",
+  "source_coverage": [
+    "PROOF136 statement L45-59 and proof L61-110 in notes/integrated_spatial_occupation.tex: read and re-derived.",
+    "PROOF137 statement L112-124 and proof L126-170 in notes/integrated_spatial_occupation.tex: read and re-derived.",
+    "PROOF133 L9-18/L20-33 and PROOF134 L35-49/L51-101 (Gamma/Beta identities, exact temporal potential and mass): read and re-derived, including endpoint Beta values and unnormalized M_a.",
+    "PROOF127 L23-35/L37-70, PROOF128 L72-82/L84-108, PROOF129 L110-125/L127-186 (Gaussian envelope, global mean, unmasked real H1 Rayleigh rate): read; applied to U_z=Gamma*z at c>0.",
+    "PROOF117 L445-472/L474-512 (actual mean and raw variance formula): read; used for v_Psi and positivity of raw pairings.",
+    "PROOF118 L514-525/L527-574 (common negative trial for original homogeneous mean): read as the positivity source inside 129; no unmasked eigenstate is asserted.",
+    "PROOF130 L190-201/L203-249 (monotone mask removal and the smooth chi cutoff): read; used only for the shape of chi and for the point lower-bound in the finiteness chain.",
+    "PROOF132 L305-319/L321-375 (positive finite intrinsic scores): read; S1pos finiteness/positivity and c-homogeneity checked, relying on 051/130/131 rather than 138/139.",
+    "PROOF135 L13-23/L25-37 (physical two-point B_Gamma pairings): read; used for B_Gamma(z,z) and its Radon Fubini representative independence.",
+    "PROOF051 T:full-upper statement L6595-6611 and proof structure: read as the independent finiteness input; full internal dyadic estimates not re-derived line-by-line.",
+    "supplements/complete-worked-mathematics.txt, finite-check.py, finite-results.json: read and recomputed; numerical Gamma output treated as diagnostic only.",
+    "maps/targets.json, input-application-map.json, report-contract.json, scope.txt: read as scope/navigation; not treated as mathematical premises."
+  ],
+  "checks": [
+    {
+      "claim": "SC136 PROOF136 L:spatial-static-controls",
+      "verdict": "PASS",
+      "reason": "For nonnegative nonzero z in C_c^inf, U_z=Gamma*z is globally bounded by local Radon mass, hence lambda_z(c)^2=sup_g(c*int U_z g^2 - b(g)) is finite with Lambda(c)<=c*||U_z||_inf. Positivity for every c>0 has the c>0-free gain/kinetic comparison (c*C_Gamma*L^{-alpha} - D*L^{-2}>0 since alpha<2), supplied by 129/118. Supremum of affine functions with slopes in [0, ||U_z||_inf] gives |Lambda(c)-Lambda(d)|<=||U_z||_inf*|c-d|, and on positive compact [c-,c+] the floor Lambda(c-)>=lambda_z(c-)^2>0 gives |lambda_z(c)-lambda_z(d)|<=||U_z||_inf*|c-d|/(2*lambda_z(c-)). The cutoff f_n=f_a*chi(1/(nt))*chi(1/(n(1-t))) is smooth compact after zero extension, nonzero near 1/2, increasing in n, f_n<=f_a, and f_n↑f_a pointwise. Thus k_n(s)=int|s-t|^{-a}f_n(t)dt↑int|s-t|^{-a}f_a(t)dt=1 at every s in [0,1] by MCT and PROOF134; with c0=int f_4>0 (f_4=f_a on [1/4,3/4]) and kernel |s-t|^{-a}>=1 off the diagonal, c0<=k_n(s)<=1. The mean of Psi_n=f_n (x) z is k_n(s)U_z, so its unique Rayleigh rate is lambda_z(k_n(s)), bounded by lambda_z(1) and converging pointwise; DCT gives I_{Psi_n}->lambda_z(1). The score limit is valid without monotonicity of the differences because both component limits exist separately."
+    },
+    {
+      "claim": "SC137 PROOF137 P:spatial-smooth-ratio",
+      "verdict": "PASS",
+      "reason": "For smooth compact unit real g, b(g)=||nabla g||_2^2>0 because zero weak gradient forces the Fourier transform to be supported on the null singleton {0}, hence g=0. A=A_sp(g)=B_Gamma(g^2,g^2) is finite (compact support) and positive by the continuous autocorrelation C_{g^2}(0)=||g||_4^4>0 plus Gamma(B_rho)>0. For U_ell g(x)=ell^{d/2}g(ell x): b(U_ell g)=ell^2 b, and A_sp(U_ell g)=ell^alpha A from factors ell^{2d} (two squares), ell^{-d} (dx), ell^{alpha-d} (Radon pushforward of Gamma). With z=theta(U_ell g)^2, testing with U_ell g gives lambda_z(1)^2>=theta*ell^alpha*A - ell^2*b and B_Gamma(z,z)=theta^2*ell^alpha*A. The choices ell^2=u L^2/b and theta=(1+u)L^2/(ell^alpha A) make the radicand exactly theta*ell^alpha*A-ell^2*b=(1+u)L^2-u L^2=L^2, so S1pos>=L-C(u)L^q with C(u)=M_a(1+u)^2/(2 R u^{alpha/2}). The logarithmic derivative is 2/(1+u)-alpha/(2u)=(q u-alpha)/(2u(1+u)), so u*=alpha/q is the global minimum; 1+u*=4/q. Then max_{L>0}(L-CL^q) at L*=(qC)^{-1/k} equals (k/q)(qC)^{-1/k}=k[q^q C]^{-1/k}. Substituting u* gives q^q C = 8 M_a q^{q/2}/(R alpha^{alpha/2}), since q+alpha/2-2=q/2 under q=4-alpha; this matches the stated denominator 8. Inverting the inequality bounds each R(g) by a finite number, and a normalized compact bump gives A,b>0, so 0<R0<infinity."
+    },
+    {
+      "claim": "APP-TEMPORAL-ENDPOINT-CONTROL",
+      "verdict": "PASS",
+      "reason": "Semantic join PROOF134->PROOF136 closes. With r=(1-a)/2 one has -a=2r-1. For 0<s<1 the left potential L(s) equals r*Beta(1-r,2r)*B_s(r,r), and reflection plus B_s+B_{1-s}=Beta(r,r) give the full unnormalized value r*Beta(1-r,2r)*Beta(r,r)=Gamma(r)Gamma(1-r)=D_r. At s=0 the direct integral is int t^{r-1}(1-t)^{-r}dt=Beta(r,1-r)=D_r; s=1 follows by reflection, so the endpoints are direct computations and not unjustified limits. The mass is M_a=Beta(1-r,1-r)/D_r=Gamma(1-r)/(Gamma(2-2r)Gamma(r))=Gamma((1+a)/2)/(Gamma(1+a)Gamma((1-a)/2)), unchanged and generally not one. The n=4 cutoff is exactly f_a on [1/4,3/4], so c0>=int_{1/4}^{3/4}f_a>0; the zero neighborhoods are t<=1/(2n) and t>=1-1/(2n), so zero extension is C_c^inf. The c-floor c0>0 is needed because sqrt(c) at c=n^{-2} has difference quotient n from zero; the construction stays in [c0,1] with Lambda(c0)>0."
+    },
+    {
+      "claim": "APP-RAW-COST-POSITIVITY",
+      "verdict": "PASS",
+      "reason": "Semantic join 117/135->136 closes. PROOF117 gives v_{Psi_n}=E[W(Psi_n)^2]=int Psi_n(s,x) h_s(x) ds dx exactly. For Psi_n=f_n (x) z this equals B_Gamma(z,z)*int_0^1 int_0^1 f_n(s)f_n(t)|s-t|^{-a} ds dt = B_Gamma(z,z)*int_0^1 f_n(s)k_n(s) ds; Tonelli is valid for nonnegative integrands with alpha0<1, and the symmetric double integral needs no extra factor 2 or 1/2. B_Gamma(z,z) is finite (<=||z||_2^2 Gamma(K-K)) and positive: C_z(y)=int z(x)z(x-y)dx is continuous with C_z(0)=||z||_2^2>0, so on some B_rho it exceeds ||z||_2^2/2, while homogeneity gives Gamma(B_rho)=rho^{d-alpha}Gamma(B_1)>0 by exhaustion of the nonzero measure from origin-centered balls. The product f_n(s)k_n(s) increases to f_a(s) at a.e. interior s, so v_{Psi_n}→M_a B_Gamma(z,z)=(M_a/2)B_Gamma(z,z) after the half action; only the origin ball and the given W are used, not translated-ball positivity or an unmasked eigenstate."
+    },
+    {
+      "claim": "APP-UNMASKED-RAYLEIGH-DOMAIN",
+      "verdict": "PASS",
+      "reason": "Semantic join 127/128/129/118->136 closes. Input128 bounds every h_s globally in space, so the original unmasked Gamma convolution U_z=Gamma*z is globally bounded and nonnegative. Input129 yields the real H^1 Rayleigh identity lambda_{Psi,s}^2=sup_{f in H^1(R^d;R), ||f||_2=1}(int h_s f^2 - ||nabla f||_2^2) with self-adjoint bottom; no unmasked ground eigenstate is asserted. Its negative floor is supplied through the common negative trial of 118 for the homogeneous mean, using C_Gamma L^{-alpha} versus D L^{-2} and alpha<2. Comparing identical unit tests, not eigenstates, produces the Lipschitz bound and the positive compact-c floor used for the square root. The construction is therefore the actual unmasked Rayleigh value, not a masked or eigenstate quantity, and no uniform potential decay is assumed."
+    },
+    {
+      "claim": "APP-SPATIAL-DILATION-OPTIMIZATION",
+      "verdict": "PASS",
+      "reason": "Semantic join 136->137 closes. U_ell is unit-L2 preserving; b(U_ell g)=ell^2 b by Lebesgue substitution, while A_sp(U_ell g)=ell^alpha A combines ell^{2d}, ell^{-d}, and the homogeneous Radon pushforward ell^{alpha-d}; this distingishes the Radon factor from Lebesgue volume and covers singular/white covariances. The test z=theta(U_ell g)^2 is nonnegative smooth compact, so the 136 inequality applies and the Rayleigh trial gives only a lower bound lambda_z(1)^2>=theta*ell^alpha*A-ell^2*b (never equality). Under ell^2=u L^2/b and theta=(1+u)L^2/(ell^alpha A), the radicand is L^2 and the half cost is C(u)L^q. At u=alpha/q the coefficient C is minimized, 1+u=4/q, and q^q C=8 M_a q^{q/2}/(R alpha^{alpha/2}); the scalar maximum k[q^q C]^{-1/k} reproduces the asserted constant with the factor 8 from the half action together with (1+u*)^2=16/q^2. All exponents were independently checked for the white alpha=1 and d^3 alpha=3/2, a=1/4 cases."
+    },
+    {
+      "claim": "APP-FINITE-BEFORE-ROUGH",
+      "verdict": "PASS",
+      "reason": "Semantic join 132->137 and the stated chain closes without circularity. PROOF132 obtains finite positive S1pos by first bounding the same canonical point moment above via independent T:full-upper (051), giving Q2<infinity; PROOF130's point lower bound makes every label-two score at most Q2; PROOF131's full-class dilation then bounds the whole label-one score set. None of 051/130/131 requires PROOF138/139. PROOF137 only uses this already finite positive S1pos to bound every smooth ratio by 8 M_a q^{q/2}(S1pos/k)^k/alpha^{alpha/2}. Conversely PROOF138 uses R0 from PROOF137 for the H1 extension, so the order is 132 -> 137 -> 138/139, with no downstream energy premise consumed in 137. The label-one S1pos remains an auxiliary score, not an actual p1 or Chen identifier."
+    },
+    {
+      "claim": "FINITE",
+      "verdict": "PASS",
+      "reason": "Independently recomputed rational controls: q=4-alpha, k=q-1, u=alpha/q, 1+u=4/q, q+alpha/2-2=q/2, physical dilation exponent 2d-d+alpha-d=alpha, and ratio exponent alpha-2(alpha/2)=0 for all supplied rows including (d,alpha,a)=(1,1/2,1/2), (1,1,1/2), (3,3/2,1/4), (3,7/4,1/8). With q=3,C=1/3, F(L)=L-L^3/3 has L*=1, F*=2/3, F(1/2)=11/24, F(2)=-2/3, and both maximum representations agree. The increasing-components/nonmonotone-score example (I=(1,3/2,7/4), half costs=(1/10,1,6/5)) gives scores (9/10,1/2,11/20), justifying separate limits. Cutoff plateaux agree: n=4 zero through 1/8, full density on [1/4,3/4], zero from 7/8. The a=1/2 Gamma diagnostic confirms normalized endpoint potential 1 and M_a=Gamma(3/4)/(Gamma(3/2)Gamma(1/4))<1. This computation is diagnostic and does not replace the analytic endpoint integral proof; no numerical quadrature of the intrinsic supremum is asserted."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": []
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This review is scoped to PROOF136 and PROOF137 and their named local inputs; the full 214-item ledger, source-image/render gates, other-family proofs, and the final independent cold-review gate are not cleared here.",
+    "PROOF051, PROOF130 and PROOF131 are consumed as named inputs after checking their hypotheses and the required finiteness join; their full internal dyadic/transfer estimates were not independently re-derived line-by-line.",
+    "The supplied floating Gamma and Fraction outputs are algebraic diagnostics, not substitutes for the analytic endpoint, Radon-dilation, and same-W raw-variance proofs.",
+    "No whole-main, image, render, Kimi, or unrelated-family material was checked; the complete original project goal remains unchanged but outside this packet's two-target scope."
+  ]
+}

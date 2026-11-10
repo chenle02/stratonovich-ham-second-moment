@@ -1,0 +1,206 @@
+{
+  "scope": "Author exact rational budgets and finite diagnostic checks only; no provider review or substitute for analytic proofs.",
+  "parameters": {
+    "a": "1/2",
+    "alpha": "1",
+    "s": "3/8",
+    "beta_sp": "1/8",
+    "gamma": "1/4",
+    "theta": "5/8",
+    "eta_t": "11/16",
+    "beta_t": "23/32",
+    "r": "3",
+    "p": "7/4",
+    "nu": "8/5",
+    "Q": 64
+  },
+  "white_and_plane_controls": [
+    {
+      "d": 1,
+      "model": "white c delta0",
+      "Q_gamma": "16",
+      "dyadic_gap": "1/64",
+      "anchor_delta_exponent": "15/64",
+      "radon_ball_exponent": "0",
+      "Schur_row_radius_exponent": "-1/2",
+      "Schur_column_radius_exponent": "1/2",
+      "Schur_product_radius_exponent": "0"
+    },
+    {
+      "d": 3,
+      "model": "c dx1 dx2 delta0(dx3)",
+      "Q_gamma": "16",
+      "dyadic_gap": "1/64",
+      "anchor_delta_exponent": "13/64",
+      "radon_ball_exponent": "2",
+      "Schur_row_radius_exponent": "-3/2",
+      "Schur_column_radius_exponent": "3/2",
+      "Schur_product_radius_exponent": "0"
+    }
+  ],
+  "primitive_Holder_gap": "1/24",
+  "projection_weight_power": "5/21",
+  "base_power_mean_exponent": "3/35",
+  "mean_and_last_delta_exponent": "7/15",
+  "raw_isometry_delta_exponent": "0",
+  "actual_covariance_delta_exponent": "1/2",
+  "temporal_c_t_upper": "2",
+  "coarse_mean_B_exponent": "24/5",
+  "coarse_base_B_exponent": "32/35",
+  "bad_cell_B_exponent": "9",
+  "true_clocks": [
+    {
+      "B": 2,
+      "delta": "1/16",
+      "N": 8,
+      "n": 9,
+      "tau": "0",
+      "slow_last_start": "1",
+      "slow_last_end": "1",
+      "empty_last": true,
+      "delta_n": "9/16",
+      "two_over_B": "1"
+    },
+    {
+      "B": 2,
+      "delta": "3/40",
+      "N": 6,
+      "n": 7,
+      "tau": "4/3",
+      "slow_last_start": "9/10",
+      "slow_last_end": "1",
+      "empty_last": false,
+      "delta_n": "21/40",
+      "two_over_B": "1"
+    },
+    {
+      "B": 1,
+      "delta": "2/7",
+      "N": 3,
+      "n": 4,
+      "tau": "1/2",
+      "slow_last_start": "6/7",
+      "slow_last_end": "1",
+      "empty_last": false,
+      "delta_n": "8/7",
+      "two_over_B": "2"
+    },
+    {
+      "B": 3,
+      "delta": "1/20",
+      "N": 6,
+      "n": 7,
+      "tau": "2",
+      "slow_last_start": "9/10",
+      "slow_last_end": "1",
+      "empty_last": false,
+      "delta_n": "7/20",
+      "two_over_B": "2/3"
+    }
+  ],
+  "outer_free_and_primitive_constants": [
+    {
+      "B": 1,
+      "G_Frobenius_upper": 2.23606797749979,
+      "three_B": 3,
+      "C_pr_from_Frobenius_bound": 10.000000000000002,
+      "eighteen_B_power_upper": 18.0
+    },
+    {
+      "B": 2,
+      "G_Frobenius_upper": 3.3166247903554,
+      "three_B": 6,
+      "C_pr_from_Frobenius_bound": 28.783736174728602,
+      "eighteen_B_power_upper": 114.29287574171036
+    },
+    {
+      "B": 4,
+      "G_Frobenius_upper": 5.916079783099616,
+      "three_B": 12,
+      "C_pr_from_Frobenius_bound": 125.27568179521646,
+      "eighteen_B_power_upper": 725.7145247394468
+    },
+    {
+      "B": 8,
+      "G_Frobenius_upper": 11.445523142259598,
+      "three_B": 24,
+      "C_pr_from_Frobenius_bound": 666.8565129791486,
+      "eighteen_B_power_upper": 4607.999999999998
+    }
+  ],
+  "Young_constants_diagnostic": {
+    "C_Young": 6.285213507883244,
+    "c_theta": 12.570427015766487,
+    "C_gr": 1060.4678504054405,
+    "finite": true
+  },
+  "C_s_squared_diagnostic": 10.570427015766487,
+  "control_ball_budget": {
+    "kappa_ball": "13",
+    "threshold_s": "35",
+    "tail_growth_exponent": "2/5",
+    "bad_first_exponent": "-57",
+    "bad_second_exponent": "-1"
+  },
+  "finite_Gaussian_embedding_countercontrol": [
+    {
+      "dimension": 1,
+      "identity_embedding_norm": 1,
+      "Gaussian_squared_norm_expectation": 1,
+      "Gaussian_norm_expectation": 0.7978845608028655
+    },
+    {
+      "dimension": 4,
+      "identity_embedding_norm": 1,
+      "Gaussian_squared_norm_expectation": 4,
+      "Gaussian_norm_expectation": 1.8799712059732507
+    },
+    {
+      "dimension": 16,
+      "identity_embedding_norm": 1,
+      "Gaussian_squared_norm_expectation": 16,
+      "Gaussian_norm_expectation": 3.9380256218873266
+    },
+    {
+      "dimension": 64,
+      "identity_embedding_norm": 1,
+      "Gaussian_squared_norm_expectation": 64,
+      "Gaussian_norm_expectation": 7.968812221998627
+    }
+  ],
+  "E_F_range_countercontrol": {
+    "A_F": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "range_in_E": true,
+    "E_restriction_norm": 0,
+    "F_norm": 1,
+    "constant_column_nonzero": true,
+    "scope": "Finite algebra inference control, not an alternative covariance model."
+  },
+  "physical_group_not_norm_continuous_diagnostic": [
+    {
+      "t": 0.1,
+      "frequency_pi_over_t": 31.41592653589793,
+      "diagonal_norm_difference_lower": 2.0
+    },
+    {
+      "t": 0.01,
+      "frequency_pi_over_t": 314.1592653589793,
+      "diagonal_norm_difference_lower": 2.0
+    },
+    {
+      "t": 0.001,
+      "frequency_pi_over_t": 3141.592653589793,
+      "diagonal_norm_difference_lower": 2.0
+    }
+  ],
+  "uniform_smooth_head_tail_counterexample": "Analytic translated-control proof in worked-replay.md section13 and falsification.md; no numerical decay claim."
+}

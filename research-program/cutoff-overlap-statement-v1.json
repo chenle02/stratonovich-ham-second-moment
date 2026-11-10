@@ -1,0 +1,97 @@
+{
+  "status": "FROZEN STATEMENT-FIDELITY TARGET; no proof adoption, local-flow theorem or novelty clearance",
+  "name": "Same-source cutoff overlap and horizon consistency for canonical phase evolutions",
+  "purpose": "A bounded construction interface needed before the proposed local phase evolution, also relevant to existing canonical source/point-transfer correctness. Standard locality/gluing is not claimed novel.",
+  "model": "All original H:homog Stratonovich models, d1/2/3, alpha+alpha0<2, actual amplitudes and zero covariance. Same given raw W. No final C2/positive-score/large-time upper premise.",
+  "phase": "E=H^(1/2)(Rd;R) x H^(-1/2)(Rd;R). For smooth scalar f, D_f multiplies BOTH phase components. Only strong continuity on physical states is used, not operator-norm continuity of the free group.",
+  "cutoffs": "Fix a real even zeta in Cc∞,0<=zeta<=1,equal1 on a neighbourhood of closed B1,zero off B2. zeta_n(x)=zeta(x/n) for integers n>=1. Physical noise mask m_R=zeta_R is used ONCE. Observation chi_j=zeta_j has support in closed B_(2j). Initial cutoff psi_N=zeta_N. Integers R,N>=2j+T+3 provide a strict margin around every backward cone for times in[0,T].",
+  "objects": "For integers R,T>=1, P_(R,T)(t,s) is the actual fixed-mask E physical evolution on triangle0<=s<=t<=T obtained from original-W interaction driver M_R. It may be defined as the closed E restriction of the existing F=E+R² flow; that restriction uses Ai=iM_E and free-group intertwining, not density of E in F. Horizon consistency and raw cutoff overlap are NOT presumed.",
+  "input_interfaces": [
+    {
+      "id": "C1",
+      "statement": "For the countable sequence rho_n=(1/n,1/n), take ONE retaining Gaussian source field Y_n on the underlying probability space containing the original W, with compatible restrictions across time horizons. At each fixed n it has continuous time and smooth space paths with bounded derivatives on compact time-space sets on a probability-one event. Same Y_n is used for every mask R and horizon T, not merely an equal-law source."
+    },
+    {
+      "id": "C2",
+      "statement": "For each R,T,n the actual source phase evolution P_(R,T)^n is obtained from the source interaction primitive with coefficient b_(R,n)(r,x)=m_R(x)Y_n(r,x). Source primitive identity is the statewise strong integral S_E(-r) B_E(b_(R,n)(r)) S_E(r)dr on every E state, with finite operator norm bound on each fixed horizon. No operator-norm derivative or Bochner-in-B(E) derivative of the free group is assumed."
+    },
+    {
+      "id": "C3",
+      "statement": "The Young/physical source evolution satisfies the full-phase ordinary Duhamel equation for every initial E state, all s,t in the triangle, on a common event for fixed R,T,n. Where this is not literally a stated source theorem, it must be derived from C2 and the bounded-coefficient statewise Picard/Young-sum argument; it must not be silently inferred solely from a lemma stated for data(1,0)."
+    },
+    {
+      "id": "C4",
+      "statement": "For each fixed R,T the raw/source physical families are strongly measurable in uniform triangle operator norm and E[sup_(0<=s<=t<=T)||P_(R,T)^n(t,s)-P_(R,T)(t,s)||_B(E)] ->0 as n->infinity. Existing stronger finite-Lp convergence may supply this. Every raw family has a finite uniform triangle operator norm almost surely. No uniformity in R,T,n nor an almost-sure event over all source widths is postulated."
+    },
+    {
+      "id": "C5",
+      "statement": "The free wave group on E is strongly continuous, locally bounded and has finite propagation for both phase components as distributions. Smooth compact coefficients are bounded phase perturbations after m_R. Ordinary finite propagation/initial-data and mask-overlap identities must be obtained from the ordinary equation/free supports, not assumed for the raw flow."
+    }
+  ],
+  "statement_to_audit": [
+    {
+      "id": "O1",
+      "claim": "There is one probability-one event Omega0 such that for every integer T,j>=1, every R1,R2,N1,N2>=2j+T+3 and every0<=s<=t<=T, D_chi_j P_(R1,T)(t,s) D_psi_N1 = D_chi_j P_(R2,T)(t,s) D_psi_N2 as bounded operators on E. Thus equality holds for all E initial phases simultaneously."
+    },
+    {
+      "id": "O2",
+      "claim": "On a common probability-one event, for integers1<=T1<=T2 and R>=1, restriction of P_(R,T2) to the T1 triangle equals P_(R,T1) as bounded-operator families. This must be derived from the same ordinary source and convergence; not assumed from equal laws."
+    },
+    {
+      "id": "O3",
+      "claim": "The O1 identity extends to local initial phases z in Hhalf_loc x HminusHalf_loc after applying the displayed compact data cutoffs. To justify it, choose a larger compact cutoff equal1 on BOTH data-cutoff supports, converting that particular z to one global E input; do not feed a local phase directly into P_(R,T). This still does not by itself construct the complete local evolution or its composition law."
+    }
+  ],
+  "proposed_audit_route_not_proof": [
+    "First verify/derive C3 for all E states from actual ordinary source response and Young uniqueness. For each fixed source n use free-wave finite propagation and ordinary Duhamel/Picard support induction to get O1 for the common source family; source equality is for the BOTH-component observed phase on the whole triangle.",
+    "Use triangle inequality after left observation/right data cutoffs. The expected uniform operator norm of the raw difference is bounded by the two source-to-raw errors plus the identically-zero ordinary-source difference. Let n->infinity. This gives a zero expected nonnegative norm for each fixed integer tuple; a subsequence/a.s. limit over uncountably many widths is unnecessary.",
+    "Intersect only countably many integer-tuple events. Equality in operator norm already covers all E states/time triangles; where ordinary source identities were initially stated on dense states/rational times, use boundedness/strong state continuity before this step.",
+    "For O2 use ordinary uniqueness on the shorter horizon and the same source sequence; take the same operator-norm limit. For O3 use one enlarged data cutoff on the actual local distributions."
+  ],
+  "falsification_guards": [
+    "Equal source laws alone do not give a pathwise overlap identity. G and -G have equal centered Gaussian laws but are not the same realization; their ordinary potential equations need not coincide.",
+    "Data/mask agreement only on the terminal observation set is insufficient. In d1 with no noise, initial velocity supported inside its backward cone but outside the terminal set can influence the terminal displacement. The full-cone plateau margin is necessary for this route.",
+    "Operator-norm convergence is a sufficient input here, not claimed necessary. Pointwise/strong convergence alone must not be relabelled as operator-norm convergence (orthogonal rank-one projections illustrate the distinction).",
+    "For Gamma0 all source/raw flows are free, so the statements reduce to free finite propagation and horizon uniqueness, without nonzero Gaussian assumptions."
+  ],
+  "exact_existing_sources": [
+    {
+      "path": "notes/integrated_actual_operator_driver.tex",
+      "labels": [
+        "P:actual-operator-driver",
+        "L:driver-gain-localization"
+      ],
+      "role": "Actual original-W fixed-mask path and localization; no raw overlap theorem assumed."
+    },
+    {
+      "path": "notes/integrated_source_convergence.tex",
+      "labels": [
+        "L:source-pointfield-regularity",
+        "P:source-ordinary-response"
+      ],
+      "role": "Common source regularity and actual statewise primitive."
+    },
+    {
+      "path": "notes/integrated_constant_phase_young.tex",
+      "labels": [
+        "L:constant-phase-free",
+        "P:constant-phase-driver",
+        "L:constant-source-response",
+        "P:constant-young-linear",
+        "P:constant-gaussian-flow",
+        "L:constant-source-solution"
+      ],
+      "role": "Free support/closed E restriction, source response, physical convergence and ordinary solution argument; all-state content must be audited rather than assuming the last lemma is stated generally."
+    }
+  ],
+  "not_claimed": [
+    "An unmasked bounded global wave group",
+    "A constructed complete local Frechet evolution",
+    "Point traces or equality of original point moments",
+    "Uniqueness among arbitrary formal weak SPDE solutions",
+    "New wellposedness threshold, endpoint necessity or publication novelty",
+    "Any Skorohod result, official Lean companion or main manuscript change"
+  ],
+  "literature_disposition": "REFRAME as bounded conditional interface/source-fidelity audit using existing original-model constructions, not a new expensive analytical proof wave or standalone-paper theorem. Selected CDST/Chen comparison and full novelty limitations retained.",
+  "lean_triage": "Main step is normed-operator triangle transfer and countable null-set bookkeeping plus ordinary PDE supports. Search/reuse any existing exact finite norm seam before formalization; no new package or full analytic Lean claim is proposed."
+}

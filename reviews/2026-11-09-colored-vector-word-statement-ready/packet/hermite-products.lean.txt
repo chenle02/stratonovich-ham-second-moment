@@ -1,0 +1,387 @@
+/-
+# Hermite polynomials and Wiener chaos for white noise
+
+Toward the Gaussian chaos expansion `F = ∑_j I_j(K_j)` of functionals of unit white noise
+`μ`, with `‖F‖²_{L²} = ∑_j j! ‖K_j‖²`.  We work with the white noise of `GaussianProduct`: i.i.d.
+standard Gaussian coordinates `ω_i = η(b_i)` for a Hilbert basis `(b_i)`.
+
+Proved here:
+* the probabilists' Hermite polynomials `He n` (Mathlib's `Polynomial.hermite`, mapped to `ℝ`):
+  `He_{n+1}' = (n+1) He_n` and the OU eigen-relation `He_n'' - X He_n' = -n He_n`;
+* Gaussian moments: `E X^{n+2} = (n+1) E X^n`, and Stein's identity `E[X p(X)] = E[p'(X)]` for
+  every real polynomial `p` under `N(0,1)`;
+* `E[He_n(X) p(X)] = E[p^{(n)}(X)]`, hence the orthogonality relations
+  `E[He_m(X) He_n(X)] = n! δ_{mn}`;
+* multivariate Hermite products `H_α(ω) = ∏ᵢ He_{αᵢ}(ωᵢ)` over finitely supported multi-indices
+  on the product space `noise`, with `E[H_α H_β] = α! δ_{αβ}` (`integral_Hm_mul`);
+* every `H_α` has moments of all orders; for finite chaos expansions `F = ∑_{α∈S} c_α H_α`:
+  `E[F G] = ∑ c_α d_α α!`, `‖F‖² = ∑ c_α² α!`, the chaos projections `J_n F` (`|α| = n`) are
+  mutually orthogonal, `F = ∑_n J_n F` and `‖F‖² = ∑_n ‖J_n F‖²`.
+
+The density of polynomial cylinders in `L²(noise)` and the decomposition `L²(μ) = ⊕ 𝓗_n`
+are in `GaussianChaos.ChaosDensity` and `GaussianChaos.ChaosOU`; the isometry with symmetric
+tensors is in `GaussianChaos.ChaosTensor`.
+-/
+import GaussianChaos.GaussianCylinders
+
+set_option autoImplicit false
+noncomputable section
+open MeasureTheory ProbabilityTheory Polynomial
+open scoped Real NNReal Nat ENNReal
+
+namespace GaussianChaos.WienerChaos
+
+open GaussianProduct
+
+/-- The standard Gaussian law `N(0,1)`. -/
+abbrev γ : Measure ℝ := gaussianReal 0 1
+
+/-! ## Hermite polynomials -/
+
+/-- The probabilists' Hermite polynomial `He_n` with real coefficients. -/
+def He (n : ℕ) : ℝ[X] := (hermite n).map (Int.castRingHom ℝ)
+
+lemma He_zero : He 0 = 1 := by simp [He]
+
+lemma He_succ (n : ℕ) : He (n + 1) = X * He n - derivative (He n) := by
+  simp [He, hermite_succ, Polynomial.map_sub, Polynomial.map_mul, derivative_map]
+
+lemma natDegree_He (n : ℕ) : (He n).natDegree = n := by
+  rw [He, natDegree_map_eq_of_injective (RingHom.injective_int (Int.castRingHom ℝ)),
+    natDegree_hermite]
+
+lemma coeff_He_self (n : ℕ) : (He n).coeff n = 1 := by
+  simp [He, coeff_map, coeff_hermite_self]
+
+/-- `He_{n+1}' = (n+1) He_n`. -/
+theorem derivative_He (n : ℕ) : derivative (He (n + 1)) = C ((n : ℝ) + 1) * He n := by
+  induction n with
+  | zero => simp [He_succ, He_zero]
+  | succ n ih =>
+    calc derivative (He (n + 1 + 1))
+        = derivative (X * He (n + 1) - derivative (He (n + 1))) := by rw [He_succ (n + 1)]
+      _ = He (n + 1) + X * derivative (He (n + 1)) - derivative (derivative (He (n + 1))) := by
+          rw [derivative_sub, derivative_mul, derivative_X, one_mul]
+      _ = He (n + 1) + X * (C ((n : ℝ) + 1) * He n) - C ((n : ℝ) + 1) * derivative (He n) := by
+          rw [ih, derivative_C_mul]
+      _ = C (((n + 1 : ℕ) : ℝ) + 1) * He (n + 1) := by
+          rw [show (((n + 1 : ℕ) : ℝ) + 1) = ((n : ℝ) + 1) + 1 by push_cast; ring]
+          simp only [map_add, map_one]
+          rw [He_succ n]
+          ring
+
+/-- The Ornstein–Uhlenbeck eigen-relation `He_n'' - X He_n' = -n He_n`. -/
+theorem He_eigen (n : ℕ) :
+    derivative (derivative (He n)) - X * derivative (He n) = -(C (n : ℝ) * He n) := by
+  cases n with
+  | zero => simp [He_zero]
+  | succ m =>
+    rw [derivative_He, derivative_C_mul, He_succ m]
+    push_cast
+    ring
+
+/-! ## Gaussian moments and Stein's identity -/
+
+lemma integrable_pow_γ (n : ℕ) : Integrable (fun x : ℝ => x ^ n) γ := by
+  rcases Nat.eq_zero_or_pos n with rfl | hn
+  · simp
+  have h := (memLp_id_gaussianReal' (μ := 0) (v := 1) (n : ℝ≥0∞) (by simp)).integrable_norm_pow'
+  refine (integrable_norm_iff (by fun_prop)).mp ?_
+  simpa [norm_pow] using h
+
+lemma integrable_eval (p : ℝ[X]) : Integrable (fun x => p.eval x) γ := by
+  simp_rw [eval_eq_sum_range]
+  exact integrable_finsetSum _ fun i _ => (integrable_pow_γ i).const_mul _
+
+lemma integral_γ_eq (f : ℝ → ℝ) :
+    ∫ x, f x ∂γ = ∫ x, (√(2 * π))⁻¹ * (Real.exp (-(1 / 2) * x ^ 2) * f x) := by
+  rw [integral_gaussianReal_eq_integral_smul one_ne_zero]
+  refine integral_congr_ae (Filter.Eventually.of_forall fun x => ?_)
+  simp only [gaussianPDFReal, NNReal.coe_one, mul_one, sub_zero, smul_eq_mul]
+  rw [show -x ^ 2 / 2 = -(1 / 2) * x ^ 2 by ring]
+  ring
+
+lemma integrable_pow_exp (k : ℕ) :
+    Integrable fun x : ℝ => x ^ k * Real.exp (-(1 / 2) * x ^ 2) := by
+  have h := integrable_rpow_mul_exp_neg_mul_sq (b := 1 / 2) (by norm_num) (s := (k : ℝ))
+    (by have := Nat.cast_nonneg (α := ℝ) k; linarith)
+  simpa [Real.rpow_natCast] using h
+
+/-- Gaussian moment recursion `E X^{n+2} = (n+1) E X^n`. -/
+theorem moment_rec (n : ℕ) : ∫ x, x ^ (n + 2) ∂γ = (n + 1) * ∫ x, x ^ n ∂γ := by
+  set e : ℝ → ℝ := fun x => Real.exp (-(1 / 2) * x ^ 2)
+  have hd : ∀ x, HasDerivAt (fun x => x ^ (n + 1) * e x)
+      ((n + 1) * (x ^ n * e x) - x ^ (n + 2) * e x) x := by
+    intro x
+    have h1 := hasDerivAt_pow (n + 1) x
+    have h2 : HasDerivAt e (e x * (-(1 / 2) * (2 * x))) x := by
+      have := ((hasDerivAt_pow 2 x).const_mul (-(1 / 2 : ℝ))).exp
+      simpa [e] using this
+    convert h1.mul h2 using 1
+    simp only [e]
+    push_cast
+    ring
+  have hI1 := (integrable_pow_exp n).const_mul ((n : ℝ) + 1)
+  have hI2 := integrable_pow_exp (n + 2)
+  have h0 := integral_eq_zero_of_hasDerivAt_of_integrable hd (hI1.sub hI2)
+    (integrable_pow_exp (n + 1))
+  rw [integral_sub hI1 hI2, integral_const_mul, sub_eq_zero] at h0
+  rw [integral_γ_eq, integral_γ_eq, integral_const_mul, integral_const_mul]
+  simp_rw [mul_comm (Real.exp _)]
+  rw [← h0]
+  ring
+
+/-- Stein's identity: `E[X p(X)] = E[p'(X)]` under `N(0,1)`. -/
+theorem stein (p : ℝ[X]) : ∫ x, x * p.eval x ∂γ = ∫ x, (derivative p).eval x ∂γ := by
+  induction p using Polynomial.induction_on' with
+  | add p q hp hq =>
+    have hXp : Integrable (fun x => x * p.eval x) γ := by
+      have := integrable_eval (X * p); simp only [eval_mul, eval_X] at this; exact this
+    have hXq : Integrable (fun x => x * q.eval x) γ := by
+      have := integrable_eval (X * q); simp only [eval_mul, eval_X] at this; exact this
+    simp only [eval_add, mul_add, derivative_add]
+    rw [integral_add hXp hXq, integral_add (integrable_eval _) (integrable_eval _), hp, hq]
+  | monomial n a =>
+    cases n with
+    | zero =>
+      have h0 : ∫ x, x ∂γ = 0 := by simp
+      simp [integral_mul_const, h0]
+    | succ m =>
+      simp only [eval_monomial, derivative_monomial, Nat.add_sub_cancel]
+      have h1 : (fun x : ℝ => x * (a * x ^ (m + 1))) = fun x => a * x ^ (m + 2) := by
+        funext x; ring
+      have h2 : (fun x : ℝ => a * ((m + 1 : ℕ) : ℝ) * x ^ m)
+          = fun x => (a * ((m : ℝ) + 1)) * x ^ m := by
+        funext x; push_cast; ring
+      rw [h1, h2, integral_const_mul, integral_const_mul, moment_rec]
+      ring
+
+/-- `E[He_n(X) p(X)] = E[p^{(n)}(X)]`. -/
+theorem integral_He_mul (n : ℕ) (p : ℝ[X]) :
+    ∫ x, (He n * p).eval x ∂γ = ∫ x, (derivative^[n] p).eval x ∂γ := by
+  induction n generalizing p with
+  | zero => simp [He_zero]
+  | succ n ih =>
+    have hsplit : He (n + 1) * p = X * (He n * p) - derivative (He n) * p := by
+      rw [He_succ]; ring
+    have hXint : Integrable (fun x => (X * (He n * p)).eval x) γ := integrable_eval _
+    rw [hsplit]
+    simp_rw [eval_sub]
+    rw [integral_sub hXint (integrable_eval _)]
+    have hS : ∫ x, (X * (He n * p)).eval x ∂γ = ∫ x, (derivative (He n * p)).eval x ∂γ := by
+      simp_rw [eval_mul, eval_X]
+      rw [← stein]
+      simp_rw [eval_mul]
+    rw [hS, derivative_mul]
+    simp_rw [eval_add]
+    rw [integral_add (integrable_eval _) (integrable_eval _), add_sub_cancel_left,
+      ih (derivative p), Function.iterate_succ_apply]
+
+lemma iterate_derivative_He_self (n : ℕ) : derivative^[n] (He n) = C ((n ! : ℕ) : ℝ) := by
+  have hdeg : (derivative^[n] (He n)).natDegree = 0 := by
+    have := natDegree_iterate_derivative (He n) n
+    rw [natDegree_He, Nat.sub_self] at this
+    omega
+  rw [eq_C_of_natDegree_eq_zero hdeg, coeff_iterate_derivative, zero_add,
+    Nat.descFactorial_self, coeff_He_self, nsmul_eq_mul, mul_one]
+
+/-- Hermite orthogonality: `E[He_m(X) He_n(X)] = n! δ_{mn}`. -/
+theorem integral_He_mul_He (m n : ℕ) :
+    ∫ x, (He m).eval x * (He n).eval x ∂γ = if m = n then (n ! : ℝ) else 0 := by
+  have key : ∀ a b : ℕ, ∫ x, (He a).eval x * (He b).eval x ∂γ
+      = ∫ x, (derivative^[a] (He b)).eval x ∂γ := fun a b => by
+    rw [← integral_He_mul]; simp_rw [eval_mul]
+  rcases lt_trichotomy m n with h | rfl | h
+  · rw [if_neg h.ne]
+    simp_rw [mul_comm ((He m).eval _)]
+    rw [key, iterate_derivative_eq_zero (by rw [natDegree_He]; exact h)]
+    simp
+  · rw [if_pos rfl, key, iterate_derivative_He_self]
+    simp
+  · rw [if_neg h.ne', key, iterate_derivative_eq_zero (by rw [natDegree_He]; exact h)]
+    simp
+
+/-! ## Multivariate Hermite products on the white-noise space -/
+
+variable {ι : Type*}
+
+/-- `α! = ∏ᵢ αᵢ!`. -/
+def mfact (α : ι →₀ ℕ) : ℝ := ∏ i ∈ α.support, ((α i)! : ℝ)
+
+/-- The Hermite product `H_α(ω) = ∏ᵢ He_{αᵢ}(ωᵢ)`. -/
+def Hm (α : ι →₀ ℕ) (ω : ι → ℝ) : ℝ := ∏ i ∈ α.support, (He (α i)).eval (ω i)
+
+lemma Hm_eq_prod_of_subset {α : ι →₀ ℕ} {s : Finset ι} (h : α.support ⊆ s) (ω : ι → ℝ) :
+    Hm α ω = ∏ i ∈ s, (He (α i)).eval (ω i) := by
+  refine Finset.prod_subset h fun i _ hi => ?_
+  rw [Finsupp.notMem_support_iff.mp hi, He_zero, eval_one]
+
+lemma mfact_eq_prod_of_subset {α : ι →₀ ℕ} {s : Finset ι} (h : α.support ⊆ s) :
+    mfact α = ∏ i ∈ s, ((α i)! : ℝ) := by
+  refine Finset.prod_subset h fun i _ hi => ?_
+  rw [Finsupp.notMem_support_iff.mp hi]; simp
+
+/-- Products of functions of distinct coordinates integrate to products. -/
+theorem integral_prod_coord (s : Finset ι) (g : ι → ℝ → ℝ) (hg : ∀ i, Continuous (g i)) :
+    ∫ ω, ∏ i ∈ s, g i (ω i) ∂(noise ι) = ∏ i ∈ s, ∫ x, g i x ∂γ := by
+  have hmap : (noise ι).map s.restrict = Measure.pi fun _ : s => γ :=
+    Measure.infinitePi_map_restrict _
+  have hF : Continuous fun x : s → ℝ => ∏ i : s, g i (x i) :=
+    continuous_finsetProd _ fun i _ => (hg i).comp (continuous_apply i)
+  have hres : Measurable (s.restrict : (ι → ℝ) → (s → ℝ)) :=
+    measurable_pi_iff.mpr fun i => measurable_pi_apply _
+  calc ∫ ω, ∏ i ∈ s, g i (ω i) ∂(noise ι)
+      = ∫ ω, (fun x : s → ℝ => ∏ i : s, g i (x i)) (s.restrict ω) ∂(noise ι) := by
+        refine integral_congr_ae (Filter.Eventually.of_forall fun ω => ?_)
+        simp only [Finset.restrict]
+        exact (Finset.prod_coe_sort s fun i => g i (ω i)).symm
+    _ = ∫ x, ∏ i : s, g i (x i) ∂((noise ι).map s.restrict) :=
+        (integral_map hres.aemeasurable hF.aestronglyMeasurable).symm
+    _ = ∏ i : s, ∫ x, g i x ∂γ := by
+        rw [hmap]
+        exact integral_fintype_prod_eq_prod (fun i : s => g i) (μ := fun _ => γ)
+    _ = ∏ i ∈ s, ∫ x, g i x ∂γ := Finset.prod_coe_sort s fun i => ∫ x, g i x ∂γ
+
+open Classical in
+/-- Chaos orthogonality: `E[H_α H_β] = α! δ_{αβ}`. -/
+theorem integral_Hm_mul (α β : ι →₀ ℕ) :
+    ∫ ω, Hm α ω * Hm β ω ∂(noise ι) = if α = β then mfact α else 0 := by
+  classical
+  set s := α.support ∪ β.support
+  have hα : α.support ⊆ s := Finset.subset_union_left
+  have hβ : β.support ⊆ s := Finset.subset_union_right
+  have hpt : ∀ ω, Hm α ω * Hm β ω = ∏ i ∈ s, (He (α i)).eval (ω i) * (He (β i)).eval (ω i) := by
+    intro ω
+    rw [Hm_eq_prod_of_subset hα, Hm_eq_prod_of_subset hβ, Finset.prod_mul_distrib]
+  simp_rw [hpt]
+  rw [integral_prod_coord s (fun i x => (He (α i)).eval x * (He (β i)).eval x)
+    (fun i => ((He (α i)).continuous.mul (He (β i)).continuous))]
+  simp_rw [integral_He_mul_He]
+  split_ifs with h
+  · subst h
+    rw [mfact_eq_prod_of_subset hα]
+    exact Finset.prod_congr rfl fun i _ => by rw [if_pos rfl]
+  · obtain ⟨i, hi⟩ : ∃ i, α i ≠ β i := by
+      by_contra hc; push_neg at hc; exact h (Finsupp.ext hc)
+    have his : i ∈ s := by
+      by_contra hns
+      have h1 : α i = 0 := Finsupp.notMem_support_iff.mp fun h' => hns (hα h')
+      have h2 : β i = 0 := Finsupp.notMem_support_iff.mp fun h' => hns (hβ h')
+      exact hi (h1.trans h2.symm)
+    exact Finset.prod_eq_zero his (if_neg hi)
+
+/-! ## Moments of Hermite products and finite chaos expansions -/
+
+open GaussianCylinders
+
+lemma allMoments_poly_coord (p : ℝ[X]) (i : ι) :
+    AllMoments (noise ι) (fun ω => p.eval (ω i)) := by
+  induction p using Polynomial.induction_on with
+  | C a => simpa using allMoments_const (P := noise ι) a
+  | add p q hp hq => simpa using hp.add hq
+  | monomial n a h =>
+    have hx : AllMoments (noise ι) (fun ω : ι → ℝ => ω i) := fun q hq => memLp_eval i q hq
+    have := h.mul hx
+    simpa [pow_succ, mul_assoc] using this
+
+lemma AllMoments.prod {J : Type*} (s : Finset J) {X : J → (ι → ℝ) → ℝ}
+    (hX : ∀ j ∈ s, AllMoments (noise ι) (X j)) :
+    AllMoments (noise ι) (fun ω => ∏ j ∈ s, X j ω) := by
+  classical
+  induction s using Finset.induction_on with
+  | empty => simpa using allMoments_const (P := noise ι) (1 : ℝ)
+  | insert j s hj ih =>
+    simp only [Finset.prod_insert hj]
+    exact (hX j (Finset.mem_insert_self j s)).mul
+      (ih fun k hk => hX k (Finset.mem_insert_of_mem hk))
+
+lemma allMoments_Hm (α : ι →₀ ℕ) : AllMoments (noise ι) (Hm α) :=
+  AllMoments.prod _ fun i _ => allMoments_poly_coord _ i
+
+lemma integrable_Hm_mul (α β : ι →₀ ℕ) :
+    Integrable (fun ω => Hm α ω * Hm β ω) (noise ι) :=
+  memLp_one_iff_integrable.mp (((allMoments_Hm α).mul (allMoments_Hm β)) 1 (by simp))
+
+lemma Hm_zero (ω : ι → ℝ) : Hm (0 : ι →₀ ℕ) ω = 1 := by simp [Hm]
+
+lemma mfact_zero : mfact (0 : ι →₀ ℕ) = 1 := by simp [mfact]
+
+lemma mfact_pos (α : ι →₀ ℕ) : 0 < mfact α :=
+  Finset.prod_pos fun i _ => by exact_mod_cast Nat.factorial_pos _
+
+/-- A finite chaos expansion `F = ∑_{α ∈ S} c_α H_α`. -/
+def expand (S : Finset (ι →₀ ℕ)) (c : (ι →₀ ℕ) → ℝ) (ω : ι → ℝ) : ℝ :=
+  ∑ α ∈ S, c α * Hm α ω
+
+lemma allMoments_expand (S : Finset (ι →₀ ℕ)) (c : (ι →₀ ℕ) → ℝ) :
+    AllMoments (noise ι) (expand S c) :=
+  AllMoments.sum S fun α _ => (allMoments_const (P := noise ι) (c α)).mul (allMoments_Hm α)
+
+/-- `E[F G] = ∑_α c_α d_α α!` for expansions on a common finite index set. -/
+theorem integral_expand_mul (S : Finset (ι →₀ ℕ)) (c d : (ι →₀ ℕ) → ℝ) :
+    ∫ ω, expand S c ω * expand S d ω ∂(noise ι) = ∑ α ∈ S, c α * d α * mfact α := by
+  classical
+  have hpt : ∀ ω, expand S c ω * expand S d ω
+      = ∑ α ∈ S, ∑ β ∈ S, c α * d β * (Hm α ω * Hm β ω) := by
+    intro ω
+    simp only [expand, Finset.sum_mul_sum]
+    refine Finset.sum_congr rfl fun α _ => Finset.sum_congr rfl fun β _ => ?_
+    ring
+  have hI : ∀ α β, Integrable (fun ω => c α * d β * (Hm α ω * Hm β ω)) (noise ι) :=
+    fun α β => (integrable_Hm_mul α β).const_mul _
+  simp_rw [hpt]
+  rw [integral_finsetSum _ fun α _ => integrable_finsetSum _ fun β _ => hI α β]
+  refine Finset.sum_congr rfl fun α hα => ?_
+  rw [integral_finsetSum _ fun β _ => hI α β]
+  simp_rw [integral_const_mul, integral_Hm_mul]
+  rw [Finset.sum_eq_single α]
+  · simp
+  · intro β _ hβ; simp [Ne.symm hβ]
+  · intro h; exact absurd hα h
+
+/-- `‖F‖²_{L²(μ)} = ∑_α c_α² α!`. -/
+theorem integral_expand_sq (S : Finset (ι →₀ ℕ)) (c : (ι →₀ ℕ) → ℝ) :
+    ∫ ω, expand S c ω ^ 2 ∂(noise ι) = ∑ α ∈ S, c α ^ 2 * mfact α := by
+  simp_rw [sq]
+  exact integral_expand_mul S c c
+
+/-- The total degree (chaos order) `|α| = ∑ᵢ αᵢ`. -/
+def deg (α : ι →₀ ℕ) : ℕ := ∑ i ∈ α.support, α i
+
+/-- The chaos-`n` component of an expansion. -/
+def chaosProj (n : ℕ) (S : Finset (ι →₀ ℕ)) (c : (ι →₀ ℕ) → ℝ) : (ι → ℝ) → ℝ :=
+  expand S fun α => if deg α = n then c α else 0
+
+/-- Chaos components of different order are orthogonal. -/
+theorem integral_chaosProj_mul {m n : ℕ} (hmn : m ≠ n) (S : Finset (ι →₀ ℕ))
+    (c d : (ι →₀ ℕ) → ℝ) :
+    ∫ ω, chaosProj m S c ω * chaosProj n S d ω ∂(noise ι) = 0 := by
+  rw [chaosProj, chaosProj, integral_expand_mul]
+  refine Finset.sum_eq_zero fun α _ => ?_
+  by_cases hm : deg α = m
+  · have hn : deg α ≠ n := fun h => hmn (hm.symm.trans h)
+    simp [hn]
+  · simp [hm]
+
+/-- Orthogonal chaos decomposition: `F = ∑_n J_n F` (finite sum). -/
+theorem expand_eq_sum_chaosProj (S : Finset (ι →₀ ℕ)) (c : (ι →₀ ℕ) → ℝ) (ω : ι → ℝ) :
+    expand S c ω = ∑ n ∈ S.image deg, chaosProj n S c ω := by
+  simp only [chaosProj, expand]
+  rw [Finset.sum_comm]
+  refine Finset.sum_congr rfl fun α hα => ?_
+  simp_rw [ite_mul, zero_mul]
+  rw [Finset.sum_ite_eq (S.image deg) (deg α)]
+  rw [if_pos (Finset.mem_image_of_mem deg hα)]
+
+/-- `‖F‖² = ∑_n ‖J_n F‖²`. -/
+theorem integral_expand_sq_eq_sum_chaos (S : Finset (ι →₀ ℕ)) (c : (ι →₀ ℕ) → ℝ) :
+    ∫ ω, expand S c ω ^ 2 ∂(noise ι)
+      = ∑ n ∈ S.image deg, ∫ ω, chaosProj n S c ω ^ 2 ∂(noise ι) := by
+  simp_rw [chaosProj, integral_expand_sq]
+  rw [Finset.sum_comm]
+  refine Finset.sum_congr rfl fun α hα => ?_
+  simp_rw [ite_pow, ite_mul]
+  simp only [ne_eq, OfNat.ofNat_ne_zero, not_false_eq_true, zero_pow, zero_mul]
+  rw [Finset.sum_ite_eq (S.image deg) (deg α), if_pos (Finset.mem_image_of_mem deg hα)]
+
+end GaussianChaos.WienerChaos

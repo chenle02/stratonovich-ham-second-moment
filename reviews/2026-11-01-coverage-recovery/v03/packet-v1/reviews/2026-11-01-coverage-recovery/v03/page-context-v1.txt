@@ -1,0 +1,1334 @@
+Derived text of assigned exact PDF pages only; extraction can garble mathematics. Actual PNG inspection is mandatory. No mathematical proof is supplied by this carrier.
+
+===== PHYSICAL PAGE 49 =====
+These polar rectangles form a generating family. Uniqueness of measures, first on fi-
+nite annuli and then on their increasing union, identifies the polar pushforward with
+r1−α dr σ( dω). Hence, for every nonnegative Borel function f , Tonelli gives
+                     ∫︂               ∫︂ ∫︂ ∞
+                        f (x)Γ( dx) =         f (rω)r1−α dr σ( dω).              (8.5)
+                                          S1    0
+
+Extended values are permitted. In particular, the formula applies to the nonnegative
+wave density used below.
+    The endpoint polar measures are therefore dr σ( dω) and r1−χ dr σ( dω). Their ra-
+dial integrals are finite near zero because χ < 2. Rapid decay of a Schwartz function
+controls their integrals at infinity, uniformly in direction. They are thus locally finite
+and tempered, and their stated scaling and evenness follow directly. If Γ has a density,
+the two weighted measures also have locally integrable densities.
+    To prove positive definiteness of the low endpoint, evenness gives the full-sphere line
+representation          ∫︂                      ∫︂ ∫︂
+                                              1
+                           f (x)Γlow ( dx) =          f (rω) dr σ( dω).                  (8.6)
+                                              2 S1 R
+It holds for nonnegative Borel f , and for Schwartz f by absolute integrability. For a
+complex Schwartz function φ, put φ(x)   ˜︁    = φ(−x) and ψ = φ ∗ φ.    ˜︁ Fubini in line and
+perpendicular coordinates gives
+                       ∫︂               ∫︂ ⃓∫︂                ⃓2
+                                            ⃓                 ⃓
+                           ψ(rω) dr =       ⃓ φ(sω + v) ds⃓ dv ≥ 0.
+                                            ⃓                 ⃓
+                        R               ω⊥     R
+
+Schwartz decay justifies all these integrals, uniformly for unit ω. Integrating against the
+finite measure σ in (8.6) proves Γlow (ψ) ≥ 0. The factor 1/2 is essential because both
+orientations of each line occur on the full sphere.
+    For the static endpoint put λ = χ − α > 0. For x ̸= 0,
+                                            ∫︂ ∞
+                              −λ       1                      2
+                           |x| =                 sλ/2−1 e−s|x| ds.
+                                    Γ(λ/2) 0
+                                    2
+For each s > 0, the measure e−s|x| Γ( dx) is positive definite. Indeed, the Fourier trans-
+              2
+form of e−s|x| ψ(x) is a positive Gaussian convolution of |φ|
+                                                           ˆ︁ 2 . Its pairing with the original
+positive spectral measure is nonnegative; Schwartz decay makes the pairing finite. More-
+over,                  ∫︂                     ∫︂
+                                   −λ
+                          |ψ(x)||x| Γ( dx) = |ψ(x)|Γst ( dx) < ∞
+
+by the endpoint polar integrability just proved. Tonelli with |ψ|, followed by Fubini,
+justifies the Gaussian mixture against ψ. Thus, Γst (ψ) ≥ 0. This uses smooth Gaussian
+multiplication of the original covariance and a convergent mixture, not a fractional power
+of that covariance.
+    We next prove the convolution estimate directly. Use the planar wave density
+                                                  1{|y|<h}
+                                  Gh (y) =       √︁         ,
+                                               2π h2 − |y|2
+
+                                                49
+
+===== PHYSICAL PAGE 50 =====
+                                                ⊥
+with value zero on
+                 √ the circle. Write z = aω + bω for a unit perpendicular vector. If
+                    2    2
+|b| < h, put A = h − b . Translation along the line gives
+                       ∫︂                            ∫︂ A
+                                             1                   ds        1
+                           Gh (z − rω) dr =                 √             = .
+                         R                  2π        −A        A2 − s2    2
+
+If |b| ≥ h, the open support is empty or tangent and the line integral is zero. The
+tangency point has zero line Lebesgue measure. Formula (8.6) and nonnegative Tonelli
+yield                                    ∫︂
+                                       1                         S
+                     (Gh ∗ Γlow )(z) =      1{|z·ω⊥ |<h} σ( dω) ≤ .
+                                       4 S1                      4
+Evenness, Gaussian convolution, and Tonelli now give
+             ∫︂
+                                                                           S
+                Gh,η ( dy)(pϵ ∗ Γlow )(y + z) = [pϵ+η ∗ (Gh ∗ Γlow )] (z) ≤ .
+                                                                           4
+For η = 0, use the unsmoothed Green measure. The Gaussian average has mass one, so
+the same constant works for all widths.
+   Finally, the measure pϵ (z − x)Γ( dx) is finite. Gaussian decay and polynomial radial
+growth prove this directly; the endpoint convolutions are finite for the same reason. The
+identity
+                              ϑ(α − 1) + (1 − ϑ)(α − χ) = 0
+and absence of an origin atom permit Hölder’s inequality on this unnormalized positive
+measure:
+                              ∫︂
+                 (pϵ ∗ Γ)(z) = |x|ϑ(α−1) |x|(1−ϑ)(α−χ) pϵ (z − x)Γ( dx)
+
+                              ≤ (pϵ ∗ Γlow )(z)ϑ (pϵ ∗ Γst )(z)1−ϑ .
+
+This proves Lemma 8.1.
+
+Lemma 8.2 (General planar static coefficient input). Let Ξ be a nonnegative, even,
+positive-definite tempered Radon measure on R2 with Ξ(rA) = r2−χ Ξ(A), where 1 < χ <
+2. For static Stratonovich noise with covariance Ξ, data (1, 0), and wave operator ∆,
+let Un (t, x) be its ordered integrals, with U0 = 1. There is a finite Cst = Cst (Ξ) > 0 such
+that, for k ≥ 1 and t > 0,
+                                  2k
+                                  ∑︂                                      Cstk t(4−χ)k
+                  0 ≤ Bk (t) :=         E[Um (t, x)U2k−m (t, x)] ≤                     .   (8.7)
+                                  m=0
+                                                                           (k!)3−χ
+
+Also B0 = 1.
+
+Proof. If Ξ = 0, then Un = 0 for n ≥ 1, and hence Bk = 0 for k ≥ 1. The choices Cst = 1
+and B0 = 1 give the conclusion. We may therefore assume Ξ ̸= 0.
+
+
+
+                                                50
+
+===== PHYSICAL PAGE 51 =====
+    Fourier uniqueness transfers covariance homogeneity to its positive spectral measure
+µΞ : µΞ (rA) = rχ µΞ (A). Its unit-ball mass is finite because the spectral measure is
+Radon. On dyadic annuli this gives
+              ∫︂                                                 ∑︂
+                 (1 + |ξ|2 )−1 µΞ ( dξ) ≤ µΞ (B1 ) + 2χ µΞ (B1 )    2j(χ−2) < ∞.
+               R2                                            j≥0
+
+This verifies the static Dalang condition without an angular density. The present Ξ
+also satisfies the source’s covariance assumptions: it is a nonnegative positive-definite
+tempered distribution, and 1 < χ < 2 = d. The source expressly includes generalized
+covariances and uses their heat-regularized interpretation [5, p. 2152, (2.18)]. Thus the
+coefficient estimate invoked below is a direct application within the source’s stated class,
+not an extension from density kernels. From Chen–Hu [5, Theorem 3.8(i), p. 2165], every
+fixed order exists in L2 . The product and Wick formulas (2.17) and (2.19), pp. 2151–
+2152, identify Bk with all pairings and all splits of the total order, including self-pairs
+and empty chains. Thus, every coefficient is finite and nonnegative.
+    We make explicit the finiteness input in the source’s coefficient upper rate. The
+variational constant M in Chen–Hu [5, p. 2147] is finite under the displayed Dalang
+condition. The source’s invocation on p. 2175 identifies 2χ/(4−χ) M with the square-root
+variational quantity covered by Chen [2, Theorem 1.1, p. 2]. That theorem explicitly
+states finiteness under Dalang’s condition and permits generalized nonnegative positive-
+definite covariances. We import that finiteness, not a sharp value or its proof.
+    From Chen–Hu [5, (5.1), p. 2173, and (5.15), p. 2180], with p = 2, it follows that
+                                                  1
+                Bk (t) = t(4−χ)k Bk (1),  lim sup log (k!)3−χ Bk (1) < ∞.
+                                                       (︁            )︁
+                                            k→∞ k
+
+Choose a finite R > 0 larger than this upper limit. For all sufficiently large k,
+(k!)3−χ Bk (1) ≤ eRk . Increase eR to a finite positive constant dominating the kth
+roots of the finitely many remaining quantities. The resulting Cst proves (8.7) by
+homogeneity. These are the source’s general homogeneous-covariance statements, not a
+Riesz specialization. This proves Lemma 8.2.
+Proposition 8.3 (Planar homogeneous-covariance upper bound). Let d = 2, 0 < α0 <
+1, and 1 < α < 2 − α0 . Suppose that the nonzero spatial covariance Γ is nonnegative,
+even, positive definite and tempered, with (8.1). Choose and fix
+               α0 < ϑ < 2 − α,       b0 = α0 /ϑ,      χ = (α − ϑ)/(1 − ϑ).
+Use the endpoint measures and physical angular mass S of Lemma 8.1. Put
+                   2                                   ϑ
+     Zb0 =                    , Clow = Zb0 S,    C = Clow Cst1−ϑ , q = 3 − α,
+           (1 − b0 )(2 − b0 )
+where Cst is from Lemma 8.2 for Ξ = Γst . For the Stratonovich solution with data (1, 0),
+every k ≥ 1, t > 0, and x ∈ R2 satisfy
+                          C k t(4−α−α0 )k      2
+                                                              (︁ 1/q κ )︁
+                 Ak (t) ≤                 , Eu   (t, x) ≤ exp   qC t .             (8.8)
+                             (k!)3−α
+Constants may depend on the covariance, α0 , and the fixed choice of ϑ, but not on k, t, x.
+
+                                            51
+
+===== PHYSICAL PAGE 52 =====
+Proof. The parameter interval is nonempty. We have 0 < ϑ < 1, 0 < b0 < 1, and
+                                ϑ(α − 1)                               2−α−ϑ
+                    χ−α=                 > 0,              2−χ=              > 0.
+                                 1−ϑ                                    1−ϑ
+Thus, Lemma 8.1 applies, with its interpolation weight equal to ϑ. The original spectral
+measure has ball growth of exponent α, by the same Fourier homogeneity argument
+used in Lemma 8.2. A dyadic sum gives the time-dependent spectral condition (1.5) of
+Chen [4, p. 3], since α < 2 − α0 . The low endpoint has spectral ball exponent one and
+b0 < 1; the static endpoint has exponent χ < 2. Thus, Lemma 3.6 applies to the target,
+and the imported static fixed-order theorem is used within its stated range.
+   Fix k ≥ 1, t > 0, and common noise widths ϵ, δ > 0. The spatial covariance on each
+edge has width 2ϵ. No Green smoothing is needed in dimension two. On the disjoint
+union over m = 0, . . . , 2k and D ∈ Πk , define the finite positive measure νk,t by
+          ∫︂                2k ∑︂ ∫︂
+                            ∑︂                                  ∫︂                   2k
+                                                                                     ∏︂
+               Φ dνk,t :=                                  ds        Φ(m, D, s, y)         Ghl ( dyl ).
+                                                    2k−m
+                            m=0 D∈Πk   [0,t]m
+                                            < ×[0,t]<                                l=1
+
+Here each chain has its own root, hl = sl − sp(l) , the yl are its increments, and xl is its
+cumulative
+       ∏︁ position. A zero-length chain has empty products. At fixed times the spatial
+mass is l hl ; bounded time simplexes and finite discrete sums therefore make νk,t finite.
+   For J ∈ {Γ, Γlow , Γst } write
+                         ∏︂                                ∏︂
+                HJ =         (p2ϵ ∗ J)(xi − xj ),   Tb =         |si − sj |−b .
+                        (i,j)∈D                                         (i,j)∈D
+
+The Gaussian covariance functions are bounded and continuous at each fixed width:
+their positive spectral measures are tempered, so Gaussian weighting makes them finite.
+Let Qδ be the product of the target’s truncated temporal covariances. The source
+regularization gives 0 ≤ Qδ ≤ Tα0 = Tbϑ0 . Lemma 8.1, at the common edge width, gives
+HΓ ≤ HΓϑlow HΓ1−ϑ
+                st
+                   .
+   The Gaussian moment formula and the two separate
+                                                ∫︁         chain reversals in Proposition 3.1
+identify the target regularized coefficient with Qδ HΓ dνk,t . Define
+                             ∫︂                             ∫︂
+                      ϵ                             ϵ
+                     Lk (t) = Tb0 HΓlow dνk,t ,    Bk (t) = HΓst dνk,t .
+
+The latter is the actual regularized static coefficient, including every split and pairing.
+The former is only a deterministic integral with raw temporal power. Hölder’s inequality
+on the full common measure, including its discrete variables, yields
+                                                   ϑ         1−ϑ
+                                  Aϵ,δ       ϵ        ϵ
+                                   k (t) ≤ (Lk (t)) (Bk (t))     .                                        (8.9)
+
+No interpolation of different temporal cutoff kernels is asserted.
+   We bound Lϵk directly. Orient each pair by increasing block label. Descending inte-
+gration of increments, as in Lemma 5.1, removes at a closing label its only remaining
+
+                                                    52
+
+===== PHYSICAL PAGE 53 =====
+covariance factor. Lemma 8.1 bounds that integral by S/4. At an opening label its
+paired covariance has already been removed, so the Green integral is its mass hl . The k
+opening increments sum to at most 2t. Thus, the common spatial bound is
+                                      ∏︂            tk
+                              (S/4)k     hi ≤ (S/2)k k .
+                                     i∈O
+                                                    k
+                                               D
+
+The temporal pairing sum is invariant under every permutation of its 2k labels. Each
+pairing integrates on the full time cube to (Zb0 t2−b0 )k . Partitioning by the two within-
+block orders, and then summing all splits, gives
+             2k ∑︂ ∫︂                                            2k
+            ∑︂                                  (2k)!    2−b0 k
+                                                                ∑︂       1
+                                        Tb0 ds = k (Zb0 t    )
+            m=0 D∈Π   [0,t]m       2k−m
+                           < ×[0,t]<
+                                                 2 k!           m=0
+                                                                    m!(2k − m)!
+                    k
+
+                                       2k
+                                          (Zb0 t2−b0 )k .
+                                               =
+                                       k!
+Symmetry is used for the sum, not for an individual pairing. The integral is finite
+because b0 < 1. Multiplication gives
+                                       (Zb0 S)k t(3−b0 )k     k (3−b0 )k
+                                                            Clow t
+                           Lϵk (t) ≤                      ≤              .                  (8.10)
+                                             k! k k            (k!)2
+At fixed ϵ, bounded covariance and the finite common measure make Bkϵ finite as well.
+These observations also justify finiteness in the Hölder estimate.
+   We next take fixed-order limits. The target orders converge in L2 by Lemma 3.6.
+For the static orders the corresponding input is Chen–Hu [5, Theorem 3.8(i), p. 2165].
+For products of two fixed orders, the inequality
+                   ∥Y Z − Y ′ Z ′ ∥1 ≤ ∥Y − Y ′ ∥2 ∥Z∥2 + ∥Y ′ ∥2 ∥Z − Z ′ ∥2
+gives L1 convergence. There are only 2k + 1 split products, and a zero-order factor stays
+equal to one. Hence, Aϵ,δ                      ϵ
+                         k (t) → Ak (t) and Bk (t) → Bk (t) as the noise widths vanish. The
+uniform deterministic estimate (8.10) needs no stochastic limit interpretation. Passing
+to limits in (8.9) gives
+                                      (︃ k (3−b0 )k )︃ϑ
+                                        Clow t
+                             Ak (t) ≤            2
+                                                        Bk (t)1−ϑ .
+                                           (k!)
+Only now apply Lemma 8.2. No monotonicity in the spatial width or uniform static
+smoothed asymptotic was used.
+   The parameter identities α = ϑ + (1 − ϑ)χ and α0 = ϑb0 imply
+       2ϑ + (1 − ϑ)(3 − χ) = 3 − α,            ϑ(3 − b0 ) + (1 − ϑ)(4 − χ) = 4 − α − α0 .
+This yields the coefficient bound in (8.8) with C = Clow    ϑ
+                                                               Cst1−ϑ . The constant coefficient
+is A0 = 1. For q = 3 − α > 1 and z ≥ 0,
+                                                    (︄         )︄q
+                   ∑︂ z k         ∑︂ (︃ z k/q )︃q     ∑︂ z k/q           1/q
+
+                              q
+                                =                 ≤                 = eqz .
+                    k≥0
+                         (k!)     k≥0
+                                         k!            k≥0
+                                                           k!
+
+                                                   53
+
+===== PHYSICAL PAGE 54 =====
+Proposition 3.1 supplies the nonnegative full series for the target solution. Take z =
+Ct4−α−α0 and use (4 − α − α0 )/q = κ. This proves Proposition 8.3.
+
+Corollary 8.4 (Full planar parameter range). In dimension two, under Hypoth-
+esis 1.1 and the standing covariance positivity assumptions, the upper bound
+Eu2 (t, x) ≤ exp(C2 tκ ) holds throughout 0 < α < 2 − α0 , with a finite constant
+C2 depending on α0 and the spatial covariance. A nonnegative generalized covariance
+is interpreted as the homogeneous measure and its Gaussian approximations described
+above.
+
+Proof. For 0 < α ≤ 1, apply Proposition 5.5. For 1 < α < 2 − α0 , apply Proposition 8.3.
+If the covariance vanishes, u = 1 and C2 = 0 suffices. This proves Corollary 8.4.
+
+Remark 8.5 (Planar calibrations and remaining goals). The exponent tends to (4 −
+α)/(3 − α) as α0 ↓ 0, consistently with the static source, without an interchange of limits
+or uniformity claim for the constants. For the nonzero higher-exponent case, Cauchy–
+Schwarz gives Eu(t, x) ≤ exp(qC 1/q tκ /2). If the first-moment lower rate is at least L∗ ,
+this implies 2L∗ ≤ qC 1/q . No sharp constant is identified. The existing comparisons with
+Skorohod exponents, in their stated Riesz subclasses, concern different solution concepts
+and are not inputs here. The planar endpoint construction is dimension-specific; no
+general higher-exponent result in dimension three follows from it. Section 13 treats the
+full homogeneous-covariance class by a separate argument. The intrinsic constant is
+identified separately in Theorem 40.6.
+
+
+9    Three-dimensional bounds from covariance end-
+     points
+The endpoint constructions and conditional moment transfer are retained as an alterna-
+tive route. No general three-dimensional factorization is asserted. The later full upper
+and intrinsic formula do not use these factorizations.
+    We first construct the product endpoints. Zero coordinate exponents below mean
+constant factors, not one-dimensional white noise.
+
+Lemma 9.1 (Strict product endpoints). Let 0 ≤ aj < 1 for j = 1, 2, 3, let α = a1 +
+a2 + a3 ∈ (1, 2), and choose 0 < ϑ < 2 − α. Put χ = (α − ϑ)/(1 − ϑ) and define
+
+          Lj = max{0, (aj − 1 + ϑ)/ϑ},     Uj = min{1, aj /ϑ},
+                       ∑︁
+                  1 − j Lj                                          aj − ϑbj          (9.1)
+           Λ = ∑︁         ∑︁     , bj = Lj + Λ(Uj − Lj ),      vj =          .
+                  j Uj −    j Lj                                     1−ϑ
+                  ∑︁            ∑︁
+Then 0 < Λ < 1,     j bj = 1,        j vj = χ, and
+
+    aj = ϑbj + (1 − ϑ)vj ,      aj > 0 =⇒ 0 < bj , vj < 1,    aj = 0 =⇒ bj = vj = 0.
+
+
+                                                54
+
+===== PHYSICAL PAGE 55 =====
+For any c > 0, the ordinary covariance densities
+                       3
+                      ∏︂                                3
+                                                       ∏︂                                   3
+                                                                                           ∏︂
+                                −aj                              −bj
+         γa (x) = c         |xj |     ,   γb (x) = c         |xj |     ,      γv (x) = c         |xj |−vj
+                      j=1                              j=1                                 j=1
+
+are nonnegative, even, positive definite, locally integrable and tempered. Their covariance
+homogeneity exponents are α, 1, χ, respectively, with α < χ < 2. For every ϵ > 0 and
+z ∈ R3 ,
+                        (pϵ ∗ γa )(z) ≤ (pϵ ∗ γb )(z)ϑ (pϵ ∗ γv )(z)1−ϑ .              (9.2)
+A factor with exponent zero is defined to be one everywhere.
+Proof.∑︁ We have ϑ < 1. There are at least two positive coordinates, since every aj < 1
+and j aj > 1. At a zero coordinate, Lj = Uj = 0. At a positive coordinate, Lj < Uj :
+if aj ≥ ϑ, then Uj = 1 and Lj < 1; if aj < ϑ, then Uj = aj /ϑ > 0, and either Lj = 0 or
+Uj − Lj = (1 − ϑ)/ϑ > 0.
+    Let I = {j : Lj > 0} and r = |I|. For r = 0 the sum of the lower endpoints is zero;
+for r = 1 it is less than one. For r ≥ 2,
+                            ∑︂
+                                aj ≤ α < 2 − ϑ ≤ r − (r − 1)ϑ,
+                                    j∈I
+
+because the last inequality is equivalent to (r − 2)(1 − ϑ) ≥ 0. Therefore,
+                                       ∑︁
+                                         j∈I aj − r + rϑ
+                             ∑︂
+                                 Lj =                    < 1.
+                              j
+                                               ϑ
+
+If some aj ≥ ϑ, its upper endpoint equals
+                                      ∑︁ one and a different positive
+                                                                  ∑︁     coordinate
+                                                                                ∑︁ has
+positive upper endpoint. Otherwise,
+                              ∑︁         j Uj = α/ϑ > 1. Hence,     j Lj < 1 <     j Uj ,
+which proves 0 < Λ < 1 and j bj = 1. At every positive coordinate, Lj < bj < Uj ,
+so 0 < bj < 1. The inequalities bj < Uj ≤ aj /ϑ and bj > Lj ≥ (aj − 1 + ϑ)/ϑ give
+0 < vj < 1. At a zero coordinate
+                      ∑︁         bj = vj = 0. The reconstruction identity is immediate,
+and summing it gives j vj = χ. Finally,
+
+                                    ϑ(α − 1)                               2−α−ϑ
+                  χ−α=                       > 0,        2−χ=                    > 0.
+                                     1−ϑ                                    1−ϑ
+    For any of the three exponent vectors e, local integrability is a product of one-
+dimensional integrals with exponents   below one. For a Schwartz function ψ, choose
+N > 1 and use |ψ(x)| ≤ CN j (1 + |xj |)−N . This proves absolute integrability against
+                             ∏︁
+γe and also temperedness. For each active coordinate, 0 < ej < 1, use
+                                          ∫︂ ∞
+                            −ej      1                      2
+                         |u|    =              sej /2−1 e−su ds.
+                                  Γ(ej /2) 0
+The product over the active coordinates is a positive mixture of Gaussian functions in
+those coordinates, constant in all other coordinates. Each such Gaussian is positive
+
+                                                    55
+
+===== PHYSICAL PAGE 56 =====
+definite. For a complex Schwartz φ, set ψ = φ ∗ φ,  ˜︁ where φ(x)
+                                                             ˜︁   = φ(−x). The absolute
+integrability just proved permits Tonelli with |ψ| and then Fubini for the mixture against
+ψ. Its quadratic form is nonnegative. No Euler Gamma factor at exponent zero is
+introduced. Evenness and homogeneity follow from the displayed densities.
+    The reconstruction of each exponent and the common amplitude imply γa = γbϑ γv1−ϑ
+almost everywhere; values on singular coordinate planes do not change these locally inte-
+grable covariances. Hölder’s inequality on the Gaussian probability measure gives (9.2).
+Its endpoint convolutions are finite by the product integrability and Gaussian decay.
+The amplitude remains cϑ c1−ϑ = c. This proves Lemma 9.1.
+   We now take d = 3, 0 < α0 < 1, and 1 < α < 2 − α0 . Let Γ be a nonnegative,
+even, positive-definite tempered spatial covariance, with homogeneity exponent α. As a
+positive distribution it is a Radon measure satisfying Γ(rA) = r3−α Γ(A); a covariance
+function is identified with its density measure. Gaussian convolution is used for all
+covariance products. Choose and fix
+
+               α0 < ϑ < 2 − α,         b0 = α0 /ϑ,         χ = (α − ϑ)/(1 − ϑ).                  (9.3)
+
+Then 0 < b0 < 1 and α < χ < 2, by the identities in the preceding proof. The zero
+target covariance is trivial, since then u = 1.
+Hypothesis 9.2 (Gaussian covariance comparison). There are nonnegative, even,
+positive-definite tempered endpoint covariances Γlow and Γst on R3 with measure scaling
+
+                    Γlow (rA) = r2 Γlow (A),        Γst (rA) = r3−χ Γst (A),
+
+such that, for every ϵ > 0 and z ∈ R3 ,
+
+                       (pϵ ∗ Γ)(z) ≤ (pϵ ∗ Γlow )(z)ϑ (pϵ ∗ Γst )(z)1−ϑ .                        (9.4)
+
+    This is a condition on deterministic covariance measures and their Gaussian convo-
+lutions. It assumes no moment estimate. We do not assert that every homogeneous
+covariance in dimension three admits these endpoints.
+Lemma 9.3 (Plane-supported endpoints). Retain (9.3), let c > 0, and let a1 , a2 ≥ 0
+satisfy s = a1 + a2 = α − 1. In coordinates (y, z) ∈ R2 × R, put
+                                                                              2
+                                                 aj                          ∏︂
+           m( dy, dz) = dy δ0 ( dz),       vj =     ,              Γpl = c         |yj |−aj m.
+                                                1−ϑ                          j=1
+
+Zero coordinate powers mean one. Then
+                                                          2
+                                                         ∏︂
+                           Γlow = cm,          Γst = c         |yj |−vj m
+                                                         j=1
+
+satisfy Hypothesis 9.2 for Γpl . In the spectral convention of Lemma 5.4, this low endpoint
+has Vlow = c/π.
+
+                                               56
+
+===== PHYSICAL PAGE 57 =====
+Proof. Since 0 < s < 1 − α0 and ϑ < 2 − α = 1 − s,
+                                                                     s
+             0 ≤ aj < 1,       0 ≤ vj < 1,              v1 + v2 =       = χ − 1 < 1.
+                                                                    1−ϑ
+A measure fe (y) dy δ0 ( dz), with fe (y) = j |yj |−ej and 0 ≤ ej < 1, is locally finite. For
+                                            ∏︁
+a Schwartz test function, product-weighted rapid decay proves absolute integrability and
+temperedness. Its scaling exponent as a measure is 2 − e1 − e2 . Thus, the three measures
+in the statement have exponents 3 − α, 2, and 3 − χ. They are even and nonnegative.
+    We verify positive definiteness, including the normal Dirac measure. Each positive
+coordinate power has the Gaussian mixture
+                                     ∫︂ ∞
+                       −e       1                    2
+                    |u| =                 re/2−1 e−ru dr,    0 < e < 1;
+                              Γ(e/2) 0
+
+a zero coordinate contributes the positive-definite constant one. Consequently, fe is a
+positive mixture of positive-definite tangential Gaussian functions. For φ ∈ S(R3 ), its
+quadratic form against the plane measure is
+                     ∫︂     ∫︂ ∫︂
+                         dz         fe (y − y ′ )φ(y, z)φ(y ′ , z) dy dy ′ .
+                        R      R2   R2
+
+Absolute Fubini follows by setting
+                                ∫︂ ∫︂
+                       A(u) =                 |φ(y + u, z)φ(y, z)| dy dz.
+                                    R    R2
+
+Rapid decay gives A(u) ≤ CN j (1 + |uj |)−N . Hence, fe (u)A(u) du < ∞ for N >
+                               ∏︁                            ∫︁
+
+1, by one-dimensional integrability. Integrating the nonnegative Gaussian quadratic
+forms proves positive definiteness. This argument includes the low endpoint, where
+both coordinate powers are zero.
+    For ϵ > 0 and w ∈ R3 , apply Hölder on the finite positive measure pϵ (w −
+                                 (1)                     ∏︁        −aj
+(y, z))m( dy, dz). Its mass is pϵ (w3 ). If f (y) =         j |yj |    , the identity between
+ordinary densities
+                                                    )︁1−ϑ
+                                 cf = cϑ cf 1/(1−ϑ)
+                                        (︁
+
+holds m-almost everywhere. Both endpoint convolutions are finite, since vj < 1 and
+the Gaussian decays at infinity. Hölder gives exactly (9.4); no power of a distribution is
+taken.
+   Finally, the low spectral measure is
+                                               c
+                            µlow ( dξ) =         δ0 ( dξ1 )δ0 ( dξ2 ) dξ3 .
+                                              2π
+This follows from the unit spectral atom of a constant and the one-dimensional Fourier
+identity for δ0 in the stated convention. Its unit-ball mass is c/π, so the uniform closing
+bound of Lemma 5.4 is c/2. This proves Lemma 9.3.
+
+
+                                                   57
+
+===== PHYSICAL PAGE 58 =====
+Lemma 9.4 (Linear images and finite positive sums). Fix the parameters in (9.3).
+The covariance comparison of Hypothesis 9.2 is preserved by simultaneously pushing the
+target and its two endpoints forward under any invertible linear map T : R3 → R3 . It is
+also preserved by finite sums with nonnegative weights, when all component comparisons
+use the same α, ϑ, χ.
+
+Proof. First the comparison extends to every centered nondegenerate Gaussian proba-
+bility density qΣ with covariance matrix Σ. Choose a > 0 below the smallest eigenvalue
+of Σ. The Gaussian convolution identity gives qΣ = pa ∗ qΣ−aI . Put FJ = pa ∗ J for
+each J ∈ {Γ, Γlow , Γst }. These functions are nonnegative, bounded, and continuous:
+Gaussian weighting makes their positive tempered spectral measures finite, and the co-
+variance bound is |FJ (x)| ≤ FJ (0) < ∞. Tonelli and Hölder on the Gaussian probability
+measure yield
+
+                 qΣ ∗ Γ ≤ qΣ−aI ∗ FΓϑlow FΓ1−ϑ    ≤ (qΣ ∗ Γlow )ϑ (qΣ ∗ Γst )1−ϑ .
+                                  (︁           )︁
+                                            st
+
+
+Every convolution here is finite.
+    Write JT = T# J and dT = | det T |. Pushforward preserves nonnegativity, evenness,
+local finiteness, temperedness, and homogeneous scaling, since T is invertible and com-
+mutes with scalar dilation. For positive definiteness, take a complex Schwartz function
+φ and put ψ(y) = φ(T y). Then
+
+                               (φ ∗ φ)(T
+                                    ˜︁ y) = dT (ψ ∗ ψ)(y).
+                                                    ˜︁
+
+The quadratic form of T# J is therefore dT times a nonnegative quadratic form of J.
+With Σ = ϵT −1 (T −1 )⊤ , direct Gaussian change of variables gives, for every ϵ > 0 and x,
+
+                            (pϵ ∗ JT )(x) = d−1
+                                             T (qΣ ∗ J)(T
+                                                          −1
+                                                             x).
+                                                                                                   −(1−ϑ)
+Apply the preceding comparison. The two endpoint factors contribute d−ϑ    T dT       = d−1
+                                                                                          T ,
+which is the target factor. This proves the comparison for the three pushed-forward
+measures.
+   For the finite-sum assertion, let Γi , Li , Si , 1 ≤ i ≤ N , be component triples, and let
+wi ≥ 0. At a fixed width and translation put li = (pϵ ∗Li )(x) and si = (pϵ ∗Si )(x). Finite
+sums preserve all required covariance properties and scalings. Discrete Hölder gives
+                     (︄         )︄
+                        ∑︂         ∑︂
+                pϵ ∗       wi Γi ≤     (wi li )ϑ (wi si )1−ϑ
+                        i             i
+                                     (︄                       )︄ϑ (︄                   )︄1−ϑ
+                                                 ∑︂                       ∑︂
+                                 ≤        pϵ ∗        wi Li        pϵ ∗        wi Si           .
+                                                 i                        i
+
+Zero weights cause no ambiguity, since both powers are positive. The all-zero target also
+satisfies the comparison. This proves Lemma 9.4.
+
+
+                                                     58
+
+===== PHYSICAL PAGE 59 =====
+    The linear maps in Lemma 9.4 act on the noise covariances. All moment estimates
+below still use the original isotropic wave kernel. Endpoint spectral masses and varia-
+tional quantities are computed for the transformed covariances; their values need not be
+unchanged by a nonorthogonal map.
+    For the low endpoint let Vlow = µlow (B1 ) in the spectral convention of Lemma 5.4,
+and put
+                                     2
+                      Zb0 =                     ,   Clow = 2Zb0 πVlow .
+                             (1 − b0 )(2 − b0 )
+For the actual static endpoint, write
+              ∫︂ ∫︂
+    Qst (g) =         g(y + z)2 g(y)2 dy Γst ( dz),   F3 = {g ∈ W 1,2 (R3 ) : ∥g∥2 = 1},
+               R3    R3
+
+using real Sobolev functions, and define
+              Mst = sup Qst (g)1/2 − ∥∇g∥22 ,
+                          {︁               }︁
+                          g∈F3
+                                                                (︃ √    )︃4−χ             (9.5)
+                                                                  2 Mst
+                    Q = 3 − χ,         νst = 4 − χ,     Λst = 2               .
+                                                                   4−χ
+The functional is precisely Chen–Hu’s (1.11), p. 2147, for the endpoint covariance, with
+unit gradient penalty. The positive-measure energy above agrees with the spectral form
+on every real Sobolev profile by Lemma 10.1; thus no density is assigned to a singular
+covariance. The lemma also supplies finiteness, since χ < 2 gives Dalang’s condition
+as checked below. Nonnegativity follows by dilating a unit-L2 Schwartz function: its
+energy term is nonnegative and its gradient penalty tends to zero.
+Proposition 9.5 (Conditional three-dimensional transfer). Under the preceding as-
+sumptions and Hypothesis 9.2, with Γ ̸= 0, there is a finite constant C > 0 such that
+            C k t(4−α−α0 )k
+                                              Eu2 (t, x) ≤ exp qC 1/q tκ ,
+                                                              (︁        )︁
+   Ak (t) ≤                      (k ≥ 1),                                    q = 3 − α.   (9.6)
+               (k!)3−α
+The estimates hold for all t > 0 and x ∈ R3 , with data (1, 0). The constant may depend
+on the fixed covariances, α0 , and ϑ, but not on k, t, x. In addition, the explicit variational
+upper constant satisfies
+                                                       (︁ ϑ 1−ϑ )︁1/q
+                       lim sup t−κ log Eu2 (t, x) ≤ q Clow  Λst       .                   (9.7)
+                            t→∞
+
+This constant is not asserted sharp and is not substituted into the pure all-time expo-
+nential bound in (9.6).
+Proof. We first record the general static input needed here. For a static endpoint co-
+variance Ξ of exponent χ, Fourier uniqueness gives µΞ (rA) = rχ µΞ (A) for its positive
+spectral measure. Its unit-ball mass is finite, and
+             ∫︂                                                  ∑︂
+                 (1 + |ξ|2 )−1 µΞ ( dξ) ≤ µΞ (B1 ) + 2χ µΞ (B1 )    2j(χ−2) < ∞.
+               R3                                                j≥0
+
+
+                                                59
+
+===== PHYSICAL PAGE 60 =====
+Thus, the static Dalang condition holds. Let Un be the source’s ordered integrals for
+this covariance. Its nonnegative positive-definite tempered-distribution class is explicitly
+included by the generalized covariance convention in [5, p. 2152, (2.18)]; its homogeneity
+degree satisfies 0 < χ <∑︁ 2 < 3. No density or angular regularity is added here. Let
+U0 = 1, and set Bk (t) = 2k m=0 E[Um (t, x)U2k−m (t, x)]. If Ξ = 0, then Bk = 0 for k ≥ 1,
+and Cst = 1 suffices in the bound below. For the remaining static calculation, assume
+Ξ ̸= 0. From Chen–Hu [5, Theorem 3.8(i), p. 2165, and (2.17), (2.19)–(2.22), pp. 2151–
+2153], the expectation and product rules give finite nonnegative coefficients with every
+split and pairing included; the latter formulas also specify the two-chain and measure
+conventions. Finiteness of the variational input follows from Chen [2, Theorem 1.1, p. 2],
+which gives a finite square-root variational supremum under Dalang’s condition. Chen–
+Hu identify that supremum with 2χ/(4−χ) M on p. 2175. Hence, their coefficient-rate
+constant involving M is finite. For Ξ = Γst this functional is Mst defined above. Only
+finiteness, not a sharp value, is needed for the all-time coefficient bound.
+    From Chen–Hu [5, (5.1), p. 2173, and (5.15), p. 2180], at p = 2,
+                                                                1
+               Bk (t) = t(4−χ)k Bk (1),                           log (k!)3−χ Bk (1) < ∞.
+                                                                     (︁             )︁
+                                                    lim sup
+                                                      k→∞       k
+
+For Ξ ̸= 0, choose R > 0 above this upper limit, then enlarge eR to cover the kth roots of
+the finitely many remaining quantities (k!)3−χ Bk (1). We obtain a finite Cst = Cst (Ξ) > 0
+such that
+                                 C k t(4−χ)k
+                         Bk (t) ≤ st 3−χ ,        k ≥ 1, t > 0.                       (9.8)
+                                   (k!)
+Also B0 = 1. We apply this source bound only after taking the fixed-order noise limits,
+with Ξ = Γst .
+    For the target, the same spectral scaling calculation has exponent α. Its dyadic sum
+for the weight (1 + |ξ|2 )−(2−α0 )/2 is finite because α < 2 − α0 . The target fixed-order
+limit is supplied by Lemma 3.6. The endpoint Γlow has covariance exponent one, with
+Vlow , Clow defined above. Finiteness of Vlow follows from the Radon spectral measure. It
+is positive: otherwise homogeneity gives µlow = 0, contradicting (9.4) and Γ ̸= 0.
+    Fix k ≥ 1, t > 0, and positive widths ϵ, δ, η. Noise width ϵ means edge covariance
+width 2ϵ; δ is the target temporal cutoff and η is Green smoothing. Write Xnϵ,δ,η (t, x)
+for the source’s ordered integral against its smoothed field Wϵ,δ , with every Green kernel
+replaced by Gh,η , and set X0ϵ,δ,η = 1. Explicitly, the target coefficient is
+                                           2k
+                                           ∑︂     [︂                          ]︂
+                            Aϵ,δ,η
+                             k     (t) =         E Xmϵ,δ,η        ϵ,δ,η
+                                                           (t, x)X2k−m  (t, x) .
+                                           m=0
+
+On the full disjoint union over all splits m + n = 2k and all D ∈ Πk , define a common
+finite positive measure by
+        ∫︂                  2k ∑︂ ∫︂
+                            ∑︂                                      ∫︂                   2k
+                                                                                         ∏︂
+             Φ dνk,t,η :=                                      ds        Φ(m, D, s, y)         Ghl ,η ( dyl ).
+                                                        2k−m
+                            m=0 D∈Πk       [0,t]m
+                                                < ×[0,t]<                                l=1
+
+
+                                                        60
+
+===== PHYSICAL PAGE 61 =====
+Each chain has its own root; hl = sl − sp(l) , yl is an increment, and xl is the cumulative
+                                                                                   ∏︁
+position in its chain. Empty chains use empty products. The spatial mass is l hl , so
+bounded time simplexes and finite discrete sums prove finiteness. This measure does
+not depend on which covariance is inserted.
+   For J ∈ {Γ, Γlow , Γst } set
+                         ∏︂                                  ∏︂
+                 HJ =         (p2ϵ ∗ J)(xi − xj ),    Tb =      |si − sj |−b .
+                       (i,j)∈D                             (i,j)∈D
+
+
+If Qδ is the product of the target temporal covariances, the source cutoff gives 0 ≤ Qδ ≤
+Tα0 = Tbϑ0 . The covariance hypothesis gives HΓ ≤ HΓϑlow HΓ1−ϑst
+                                                                 at the same edge width.
+Define the deterministic low endpoint and the actual regularized static coefficient by
+                          ∫︂                               ∫︂
+                  ϵ,η                              ϵ,η
+                 Lk (t) = Tb0 HΓlow dνk,t,η ,    Bk (t) = HΓst dνk,t,η .
+
+Gaussian
+      ∫︁ moments and separate chain reversal identify the target regularized coefficient
+with Qδ HΓ dνk,t,η . The static identity has temporal covariance one and includes self-
+pairings. Hölder on the entire common measure yields
+                                                  ϑ        1−ϑ
+                             Aϵ,δ,η
+                              k     (t) ≤ (Lϵ,η      ϵ,η
+                                            k (t)) (Bk (t))    .                        (9.9)
+
+No stochastic identity is assumed for Lϵ,η k with its raw temporal power, and no relation
+between different temporal cutoff kernels is used.
+    Lemma 5.4 applies to the low endpoint with no angular-density assumption. Its
+uniform closing bound is πVlow /2. Descending increment integration removes the only
+remaining covariance at each closing label; at each opening the paired covariance is
+already removed and the Green mass is hl . The k opening increments sum to at most
+2t. Consequently, the common spatial bound is (πVlow )k tk /k k , uniformly in ϵ, η. After
+summing pairings, the temporal integrand is symmetric in all 2k labels. Its full cube
+integral is Pk (Zb0 t2−b0 )k , where Pk = (2k)!/(2k k!). The block-order factors and the
+binomial split sum give
+                                       2k
+                                      ∑︂       1         2k
+                                   Pk                 = .
+                                      m=0
+                                          m!(2k − m)!    k!
+Therefore,
+                                        k (3−b0 )k     k (3−b0 )k
+                                      Clow t         Clow t
+                           Lϵ,η
+                            k (t) ≤           k
+                                                   ≤              .                    (9.10)
+                                         k! k           (k!)2
+Here b0 < 1 makes the raw temporal cube integral finite. At fixed spatial width, the
+static covariance is bounded, so its regularized coefficient is finite too. This justifies the
+finite right side in (9.9).
+    We now identify the static inner Green limit with the source’s prescribed zero-Green-
+width approximant. Take the source’s static isonormal noise W st with covariance Γst and
+set Wϵ (x) = W st (pϵ (x − ·)). All widths are therefore on the source’s Gaussian space, and
+the covariance is p2ϵ ∗ Γst . This covariance is bounded and continuous, since Gaussian
+
+                                             61
+
+===== PHYSICAL PAGE 62 =====
+weighting makes its positive tempered spectral measure finite. It has a continuous
+modification. Indeed, with µst the spectral measure,
+                                                 ∫︂
+                                                               2
+                                        2
+                  E|Wϵ (x + h) − Wϵ (x)| ≤ |h| 2
+                                                    |ξ|2 e−ϵ|ξ| µst ( dξ).
+                                                     R3
+
+The integral is finite by temperedness. Gaussian eighth moments are therefore bounded
+by a constant times |h|8 . Kolmogorov’s continuity criterion in dimension three, applied
+on compact sets and then on a countable exhaustion,
+                                                ∏︁n gives the claimed2 modification. We
+choose this version. For n ≥ 1 define Φn (x) = j=1 Wϵ (xj ) as an L random variable.
+Gaussian moments show that Φn is continuous as a map from (R3 )n to L2 and uniformly
+bounded there: if vϵ = (p2ϵ ∗ Γst )(0), then
+
+                                    ∥Φn (x)∥22 ≤ Pn vϵn .
+
+The continuity follows by applying the same finite Gaussian moment formula to
+E|Φn (x) − Φn (x′ )|2 . Its separable continuous image is strongly measurable.
+    Let gηn,t,x be the finite positive ordered Green-chain measure, including its time vari-
+ables, from the source’s kernel (2.13), with each Green factor smoothed by pη . For
+η = 0, its spatial marginal is exactly the measure µt,x      n specified immediately before
+(2.22), pp. 2152–2153. Its mass is finite because each spatial factor has mass its time
+gap. Thus,                                  ∫︂
+                                ϵ,0
+                               Un (t, x) := Φn (x)g0n,t,x ( ds, dx)
+
+exists as a Bochner integral in L2 . We verify its agreement with the source’s pathwise
+                                                                                   1/2 n/2
+integral, rather than identifying it only by ∫︁notation. Put ρ = g0n,t,x and Mn = Pn vϵ ,
+and denote the pathwise integral by Jn = Φn dρ. The continuous field version makes
+the integrand jointly measurable. Since
+             ∫︂                                          ∫︂
+                E|Φn | dρ ≤ Mn ρ(1) < ∞,        ∥Jn ∥2 ≤ ∥Φn ∥2 dρ ≤ Mn ρ(1),
+
+the pathwise integral exists almost surely and belongs to L2 . For every Y ∈ L2 , Cauchy–
+Schwarz and Fubini give                     ∫︂
+                                 E[Y Jn ] =    E[Y Φn ] dρ.
+
+Bochner duality gives the same identity for the L2 integral. Taking Y = Jn − Unϵ,0 iden-
+tifies the two random variables almost surely. Changing to another jointly measurable
+field modification leaves the integral unchanged by Fubini. Since the static integrand
+is independent of the time variables, this is the integral against µt,x
+                                                                      n in the source’s
+convention and hence its actual smoothed approximant Sn,ϵ with common width, from
+Chen–Hu [5, (3.1), p. 2153, and the convention preceding (2.22)]. Define Unϵ,η by the
+same formula with gηn,t,x , and retain U0ϵ,η = 1.
+     In the second and mixed moments of these integrals, the Gaussian moment factors
+are bounded continuous functions of all spatial positions. For each pair of time vectors,
+
+                                              62
+
+===== PHYSICAL PAGE 63 =====
+weak convergence of the products of Green measures, including mixed products with one
+width already zero, applies to these functions. The masses are unchanged. A constant
+depending only on n, ϵ times the product of all time gaps dominates the resulting time
+integrals. This is integrable on the two bounded time simplexes. Hence, as η ↓ 0,
+
+              E (Unϵ,η )2 −→ E (Unϵ,0 )2 ,    E Unϵ,η Unϵ,0 −→ E (Unϵ,0 )2 .
+                [︁       ]︁     [︁      ]︁      [︁         ]︁   [︁        ]︁
+
+Subtracting twice the second limit from the two square terms proves Unϵ,η → Unϵ,0 in
+L2 . This identifies the limit with the source approximant, rather than only showing that
+positive-width approximants are Cauchy. For the target we specify the zero-Green-width
+object as well. At fixed ϵ, δ, its field covariance is γδ0 (s − r)(p2ϵ ∗ Γ)(y − z), where
+                                  ∫︂ 1/δ
+                               −1                                         δ −α0
+                 0
+               γδ (u) = Γ(α0 )           e−λ|u| λα0 −1 dλ,    γδ0 (0) =           .
+                                    0                                   α0 Γ(α0 )
+Here Γ(α0 ) is Euler’s gamma function. The variance vϵ,δ = γδ0 (0)(p2ϵ ∗ Γ)(0) is fi-
+nite. This field has a jointly continuous modification. The temporal covariance satisfies
+γδ0 (0) − γδ0 (h) ≤ Cδ |h|, by 1 − e−λ|h| ≤ λ|h|. The spatial increment bound just proved
+applies to p2ϵ ∗ Γ. The joint increment variance is therefore bounded by Cϵ,δ (|h0 | + |h′ |2 ).
+Gaussian twelfth moments are bounded by Cϵ,δ |h|6 for |h| ≤ 1. Kolmogorov’s criterion
+in dimension four supplies the version.
+     Let fηn,t,x be the ordered Green measure of the target’s kernel (2.16), with sn+1 = t,
+xn+1 = x: its factors are Gsj+1 −sj ,η . Define
+                                               n
+                                              ∏︂
+                             Ψn (s, x) =            Wϵ,δ (sj , xj ),
+                                              j=1
+                                              ∫︂
+                           Xnϵ,δ,0 (t, x) =        Ψn (s, x)f0n,t,x ( ds, dx).
+
+The Gaussian moment bound is ∥Ψn ∥22 ≤ Pn vϵ,δ   n
+                                                   . Joint measurability, finite measure
+mass, and the preceding Fubini argument show that this Bochner integral equals the
+pathwise integral in the target’s prescribed convention [4, pp. 13–14]. The same defini-
+tion at positive η gives Xnϵ,δ,η above. Its second and mixed η/0 moments converge by
+weak Green convergence against the bounded continuous Gaussian moment functions,
+with dominating bound a constant times the product of the time gaps. Thus,
+
+                                   ∥Xnϵ,δ,η − Xnϵ,δ,0 ∥2 −→ 0.
+
+This proves the inner-limit identification with the actual target approximant. Both
+order-zero objects remain one.
+    First take this Green limit in (9.9), using the uniform bound (9.10). Next send the
+noise widths to zero. The static fixed-order L2 limit is from Chen–Hu [5, Theorem 3.8(i),
+p. 2165]; the target fixed-order limit is from Lemma 3.6. Products of two fixed orders
+converge in L1 , since
+
+                   ∥Y Z − Y ′ Z ′ ∥1 ≤ ∥Y − Y ′ ∥2 ∥Z∥2 + ∥Y ′ ∥2 ∥Z − Z ′ ∥2 .
+
+                                                     63
+
+===== PHYSICAL PAGE 64 =====
+The split sums are finite, and zero-order factors remain one. We obtain
+                                           (︃     k (3−b0 )k
+                                                               )︃ϑ
+                                                Clow t
+                                Ak (t) ≤                             Bk (t)1−ϑ .
+                                                   (k!)2
+
+Only now use (9.8). Neither monotonicity of spatial smoothing nor a uniform smoothed
+static asymptotic was needed. The identities
+
+                                  2ϑ + (1 − ϑ)(3 − χ) = 3 − α,
+                            ϑ(3 − b0 ) + (1 − ϑ)(4 − χ) = 4 − α − α0
+
+give the coefficient estimate with C = Clow ϑ
+                                               Cst1−ϑ . Finally, A0 = 1, q = 3 − α > 1, and
+                                    (︄          )︄q
+                       ∑︂ z k          ∑︂ z k/q           1/q
+
+                                q
+                                  ≤                 = eqz ,       z ≥ 0.
+                       k≥0
+                           (k!)        k≥0
+                                           k!
+
+The nonnegative full series of Proposition 3.1, with z = Ct4−α−α0 and (4−α−α0 )/q = κ,
+yields the moment estimate. It remains to prove (9.7). The precise upper coefficient
+rate in Chen–Hu’s (5.15), p. 2180, at p = 2 is
+                                                         (︃ √    )︃νst
+                             (︁   Q
+                                         )︁1/k    −Q νst   2 Mst
+                    lim sup (k!) Bk (1)        ≤2 2
+                      k→∞                                    νst
+                                               = Λst .
+
+The factor two follows from νst − Q = 1; the logarithm in the source applies to the entire
+coefficient-rate product. Fix r > 0. There is Nr ≥ 1, depending on the fixed endpoint
+and r but not on t, such that
+
+                                               (Λst + r)k
+                                    Bk (1) ≤              ,          k ≥ Nr .
+                                                 (k!)Q
+Static coefficient homogeneity and the already established coefficient Hölder inequality
+therefore give, simultaneously for every t > 0 and k ≥ Nr ,
+
+                        Drk tβk                ϑ
+            Ak (t) ≤            ,       Dr = Clow (Λst + r)1−ϑ ,              β = 4 − α − α0 .
+                        (k!)q
+
+For each 1 ≤ k < Nr the same inequality with the exact static coefficient gives Ak (t) ≤
+dk tβk , where
+                                  C ϑk Bk (1)1−ϑ
+                             dk = low 2ϑ         < ∞.
+                                       (k!)
+Adding A0 = 1 and the nonnegative series yields
+                                                                                   N r −1
+                                                  1/q κ                            ∑︂
+                    2                           qDr   t
+                 Eu (t, x) ≤ Pr (t) + e                   ,    Pr (t) = 1 +                 dk tβk .
+                                                                                   k=1
+
+
+                                                          64
+
+===== PHYSICAL PAGE 65 =====
+This finite power sum has log Pr (t)/tκ → 0; its exponents need not be integers. The
+logarithm of a sum of two positive terms is at most the larger logarithm plus log 2.
+                                                 1/q
+Consequently, the required limsup is at most qDr . Let r ↓ 0 to obtain (9.7). This also
+covers a zero static rate, without division by that rate. The exact static homogeneity
+makes Nr independent of t; no target coefficient homogeneity or smoothed static asymp-
+totic was invoked. The finitely many low orders were kept, so this argument does not
+replace the all-time constant by the asymptotic one. This proves Proposition 9.5.
+
+Corollary 9.6 (Ordinary product and Riesz covariances in dimension three). Let d = 3,
+0 < α0 < 1, and 1 < α < 2−α0 . The coefficient and all-time moment estimates in (9.6),
+and the asymptotic estimate in (9.7), hold for either of the following spatial covariances,
+with c > 0:
+
+   1. γ(x) = c 3j=1 |xj |−aj , where 0 ≤ aj < 1 and j aj = α;
+              ∏︁                                    ∑︁
+
+  2. γ(x) = c|x|−α .
+
+In the first case the constant depends only on a1 , a2 , a3 , c, α0 ; in the second it depends
+only on α, c, α0 . A zero coordinate exponent denotes a constant factor; the case aj = 1
+and any interpretation of it as coordinate white noise are excluded.
+
+Proof. In both cases choose the fixed midpoint ϑ = (α0 + 2 − α)/2 and define b0 , χ
+by (9.3). Then α0 < ϑ < 2 − α, and all subsequent choices depend only on the data
+in the statement. For the product covariance, Lemma 9.1 supplies b, v by its explicit
+interval formula. Its same-amplitude endpoint densities γb , γv are admissible covariance
+measures of exponents one and χ. Their common-width Gaussian inequality is exactly
+Hypothesis 9.2.
+    For the Riesz covariance take γ1 (x) = c|x|−1 and γχ (x) = c|x|−χ . Each degree
+e ∈ {1, α, χ} is less than three, so the corresponding density is locally integrable and
+tempered. Positive definiteness follows from the Gaussian mixture
+                                           ∫︂ ∞
+                               −e      c                     2
+                           c|x| =               se/2−1 e−s|x| ds.
+                                    Γ(e/2) 0
+For a Schwartz autocorrelation, absolute integrability follows from e < 3 near zero
+and rapid decay at infinity. Tonelli and Fubini therefore justify integrating the positive
+Gaussian quadratic forms. The affine identity α = ϑ+(1−ϑ)χ gives γα = γ1ϑ γχ1−ϑ almost
+everywhere, with the same amplitude c. Hölder on the Gaussian probability measure
+proves the required common-width comparison for every ϵ, z. Thus, in both cases all
+endpoint hypotheses are discharged without relying on an earlier candidate proposition.
+Proposition 9.5 applies. This proves Corollary 9.6.
+
+Corollary 9.7 (Finite sums of linear images). Let d = 3, 0 < α0 < 1, and 1 < α <
+2−α0 . Let Γi , 1 ≤ i ≤ N , belong to one of the following classes, always with homogeneity
+exponent α:
+
+  1. the ordinary products in Corollary 9.6;
+
+                                             65
+
+===== PHYSICAL PAGE 66 =====
+  2. the isotropic Riesz covariances in that corollary;
+
+   3. the plane-supported measures of Lemma 9.3, with a1 + a2 = α − 1.
+
+Let Ti : R3 → R3 be invertible linear maps, and let wi ≥ 0 with i wi > 0. Then the
+                                                                 ∑︁
+coefficient, all-time moment, and nonsharp variational estimates (9.6)–(9.7) hold for
+                                         N
+                                        ∑︂
+                                   Γ=         wi (Ti )# Γi .
+                                        i=1
+
+The constants may depend on all fixed component data, maps and weights. The endpoints
+and their variational quantities are those constructed in the proof.
+
+Proof. Choose the common midpoint ϑ = (α0 + 2 − α)/2, and let b0 , χ be given by (9.3).
+Lemma 9.1 supplies the ordinary-product endpoints. For a Riesz component use ci |x|−1
+and ci |x|−χ : the Gaussian-mixture calculation in the preceding proof verifies their co-
+variance properties, and α = ϑ + (1 − ϑ)χ gives their Gaussian comparison by Hölder.
+Lemma 9.3 supplies the plane-supported endpoints. Thus, every component has an
+endpoint triple with these same fixed parameters.
+   Apply Lemma 9.4 first to Ti on each triple, then to the finite weighted sums. The
+resulting endpoints are
+                           ∑︂                          ∑︂
+                    Γlow =    wi (Ti )# Γlow,i , Γst =    wi (Ti )# Γst,i .
+                           i                                   i
+
+They satisfy Hypothesis 9.2. The target is nonzero because all components are positive
+nonzero measures and some weight is positive. Proposition 9.5 now applies to these
+actual target and endpoint measures. No addition or coupling identity for random
+solutions is used. This proves Corollary 9.7.
+
+[held back until the source author has been told]
+
+                                              66
+
+===== PHYSICAL PAGE 67 =====
+three-dimensional covariance, Hypothesis 9.2 remains an additional condition, verified
+here for the stated families and their finite positive sums of invertible linear images. No
+representation or density theorem for arbitrary covariances is asserted, and no uniform
+estimate for a limiting infinite mixture is proved. Section 13 treats the full covariance
+class by a different argument. These endpoint comparisons are not inputs to the intrinsic
+constant theorem 40.6.
+
+
+10      Physical and spectral energy for measure covari-
+        ances
+This section justifies the positive-measure energy used in (9.5). It does not assume
+Hypothesis 9.2 or the conditional moment bound. The imported analytic input is the
+finiteness of the variation on the right of (1.5), stated in the closing sentence of Chen [2,
+Theorem 1.1, p. 2].
+
+
+ The energy-identification lemma passed a scoped independent review. The full con-
+ ditional moment argument has not passed its required gate. This source-functional
+ identification does not promote the separate conditional moment argument or resolve
+ general covariance factorization.
+
+
+Lemma 10.1 (Sobolev energy identification). Let Ξ be a nonnegative, even, positive-
+definite tempered Radon covariance on R3 , with Ξ(rA) = r3−χ∫︁Ξ(A) for 0 < χ < 2. Let
+µΞ be its positive even spectral measure in the convention Ξ = eiξ·x µΞ ( dξ), understood
+                                                  h(ξ) = e−iξ·x h(x) dx. For every real
+                                                            ∫︁
+distributionally, and use the Fourier transform ˆ︁
+g ∈ W 1,2 (R3 ),
+                  ∫︂ ∫︂                             ∫︂
+                                  2   2
+       QΞ (g) :=         g(y + z) g(y) dy Ξ( dz) =      |gˆ︁2 (ξ)|2 µΞ ( dξ) < ∞.  (10.1)
+                  R3   R3                              R3
+
+The physical expression is independent of the Borel representative of g. There is a finite
+C0 ≥ 0, depending on Ξ, such that
+                                     1
+                             QΞ (g) ≤ ∥g∥22 ∥∇g∥22 + C0 ∥g∥42 .                       (10.2)
+                                     2
+Proof. Fourier uniqueness∑︁gives µΞ (rA) = rχ µΞ (A). Since its unit-ball mass is finite,
+the dyadic estimate with j≥0 2j(χ−2) verifies Dalang’s condition. For a real Schwartz
+function h put                ∫︂
+                     E (h) = |ˆ︁ h(ξ)|2 µΞ ( dξ),  Q(f ) = E (f 2 ).
+
+Schwartz Fourier pairing identifies Q(f ) with its ordinary positive-measure integral.
+From the finiteness assertion in Chen [2, Theorem 1.1, closing sentence for the variation
+
+
+                                             67
+
+===== PHYSICAL PAGE 68 =====
+in (1.5), p. 2], restricted to real unit-L2 Schwartz profiles, there is C0 ≥ 0 such that
+Q(g) ≤ 21 ∥∇g∥22 + C0 for ∥g∥2 = 1. For f ̸= 0, quartic homogeneity gives
+                                               1
+                  Q(f ) = ∥f ∥42 Q(f /∥f ∥2 ) ≤ ∥f ∥22 ∥∇f ∥22 + C0 ∥f ∥42 .
+                                               2
+The same inequality is immediate for f = 0. Only Schwartz pairings have been used at
+this point, so this import presupposes no energy identification for nonsmooth profiles.
+If N (f )2 = ∥f ∥22 + ∥∇f ∥22 , it follows that Q(f )1/2 ≤ DN (f )2 for some finite D.
+    We need two different Cauchy–Schwarz inequalities. For real Schwartz f, h, spectral
+Cauchy–Schwarz gives
+                                      ∫︂         ∫︂
+                    0 ≤ P (f, h) := Ξ( dz) f (y + z)2 h(y)2 dy
+                                     ∫︂
+                                   = fˆ︁2 (ξ)hˆ︁2 (ξ)µΞ ( dξ) ≤ Q(f )1/2 Q(h)1/2 .
+
+Evenness makes the Fourier sign convention in this real pairing immaterial. On the
+other hand, Cauchy–Schwarz on the positive measure dy Ξ( dz) gives
+                  ∫︂     ∫︂
+         E (f h) = Ξ( dz) f (y + z)f (y)h(y + z)h(y) dy ≤ Q(f )1/2 Q(h)1/2 .
+
+All these are absolutely convergent Schwartz pairings. In particular, E (f h) is the
+quadratic energy of f h, not the quartic expression Q(f h).
+   Let m( dy, dz) = dy Ξ( dz) and define
+
+                     Af (y, z) = f (y + z)f (y),       Bf (ξ) = fˆ︁2 (ξ).
+
+The measure m is positive and sigma-finite. The decomposition
+
+                  Af − Ah = (f − h)(y + z)f (y) + h(y + z)(f − h)(y)
+
+and the bound for P imply
+                                        (︁             )︁
+                    ∥Af − Ah ∥L2 (m) ≤ D N (f ) + N (h) N (f − h).
+
+Since f 2 − h2 = (f − h)(f + h), the bound for E gives
+                                                     (︁             )︁
+         ∥Bf − Bh ∥L2 (µΞ ) ≤ DN (f − h)N (f + h) ≤ D N (f ) + N (h) N (f − h).
+
+   Choose real Schwartz fn → g in W 1,2 . These estimates make both Afn and Bfn
+Cauchy in their respective L2 spaces. Pass to a subsequence with fn → g Lebesgue-
+almost everywhere. Translation invariance of Lebesgue measure and sigma-finite Fubini
+give
+             fn (y + z)fn (y) −→ g(y + z)g(y) for m-almost every (y, z).
+Thus, the strong L2 (m) limit is Ag . The same Fubini argument shows that changing the
+Borel representative of g does not change this limit.
+
+                                             68
+
+===== PHYSICAL PAGE 69 =====
+   Also
+                       ∥fn2 − g 2 ∥1 ≤ ∥fn − g∥2 (∥fn ∥2 + ∥g∥2 ) −→ 0.
+Hence, fˆ︁n2 → gˆ︁2 uniformly on all frequencies. A subsequence of its strong L2 (µΞ ) limit
+converges µΞ -almost everywhere, and must agree with this uniform limit. Consequently,
+that strong limit is Bg . For every n, ∥Afn ∥2L2 (m) = Q(fn ) = ∥Bfn ∥2L2 (µΞ ) . Passing to the
+strong limits proves (10.1), including finiteness. Passing the Schwartz quartic bound to
+the same limit proves (10.2). This proves Lemma 10.1.
+    In particular, for ∥g∥2 = 1 the energy is at most ∥∇g∥22 /2 + C0 . Therefore, the
+supremum of QΞ (g)1/2 − ∥∇g∥22 is finite. Applied to Ξ = Γst , the profile-by-profile
+identity justifies the actual measure-form functional in (9.5) without assigning a density
+to the covariance or borrowing a disputed special-case constant.
+
+
+11      A static phase estimate at first variance order
+A time-block argument would have to carry both position and velocity. We establish
+a uniform estimate for the first variance coefficient with arbitrary deterministic initial
+phase. The covariance may be any member of the original three-dimensional class; no
+endpoint representation is assumed. The estimate below is not an all-order propagator
+bound.
+
+  The static contraction and first-variance phase estimates passed a scoped indepen-
+  dent review. The full general-covariance moment goal and the preceding candidate
+  moment arguments retain their stated status.
+
+   Let 0 < α < 2, and let Γ be a nonnegative, even, positive-definite tempered
+                                                                             ∫︁ Radon co-
+variance on R3 , satisfying Γ(rA) = r3−α Γ(A). Its spectral convention is Γ = eiξ·x µ( dξ).
+Put
+                                                               απV
+                  V = µ(B1 ),       M = Γ(B1 ),      Rα =              ,
+                                                           2 sin(πα/2)
+                                                                                     (11.1)
+                        (3 − α)M             α     32−α
+                  cΓ =            ,    bα = 2 +         ,      DΓ = cΓ bα .
+                            4π                    2−α
+Here B1 is the open unit ball in the relevant variable. The physical mass M and the
+spectral mass V are not identified. Let pϵ be the Brownian Gaussian density with
+covariance ϵI, and set Γϵ = p2ϵ ∗ Γ.
+Lemma 11.1 (Two static contraction bounds). For λ > 0, q ∈ R3 , a > 0, and ϵ > 0,
+      ∫︂
+               µ( dξ)
+             2           2
+                            ≤ Rα λα−2 ,                                                (11.2)
+        R3 λ   + |q  + ξ|
+                |Tϵ (a, q)| ≤ DΓ a1−α ,                                                (11.3)
+                              ∫︂                         ∫︂
+                 Tϵ (a, q) :=     eiq·x Γϵ (x)Ga ( dx) =    ˆ︁a (q + ξ)e−ϵ|ξ|2 µ( dξ).
+                                                            G
+                                 R3                        R3
+
+                                              69
+
+===== PHYSICAL PAGE 70 =====
+Proof. Homogeneity and Fourier uniqueness give µ(Br ) = V rα . In particular, there is
+no origin atom. For s > 0, Schwartz Fourier pairing yields
+       ∫︂                   ∫︂                 ∫︂              ∫︂
+           −s|q+ξ|2                                                    2
+          e         µ( dξ) = p2s (x)e Γ( dx) ≤ p2s (x)Γ( dx) = e−s|ξ| µ( dξ).
+                                     iq·x
+
+
+The integrals are finite. Evenness makes the middle integral real, and nonnegativity of
+                                        2
+Γ gives the inequality. Multiply by e−λ s and integrate in s. Nonnegative Tonelli on the
+spectral side gives the resolvent comparison. At q = 0 its value is
+                                  ∫︂ ∞ α−1
+                                        r
+                              αV       2      2
+                                                dr = Rα λα−2 .
+                                    0 λ   + r
+This proves (11.2).
+     Since µ is tempered, its Gaussian weighting is finite. Fourier Fubini therefore
+gives the identity for Tϵ . The measure Γϵ (x)Ga ( dx) is finite and nonnegative, whence
+|Tϵ (a, q)| ≤ Tϵ (a, 0). The radial distribution function of Γ is Γ(Br ) = M r3−α . Thus, for
+every nonnegative radial Schwartz function F ,
+             ∫︂                           ∫︂ ∞                    ∫︂
+                F (x)Γ( dx) = (3 − α)M         F (r)r 2−α
+                                                          dr = cΓ    F (x)|x|−α dx.
+                                           0                             R3
+
+Apply this to F = Ga ∗ p2ϵ , which is radial and Schwartz. Nonnegative Fubini gives
+               Tϵ (a, 0) = cΓ [p2ϵ ∗ (Ga ∗ | · |−α )](0) ≤ cΓ sup(Ga ∗ | · |−α )(z).
+                                                                z
+
+Write r = |z|. The spherical wave measure has mass a, and direct integration over its
+normal coordinate gives, for r > 0,
+                                               (a + r)2−α − |a − r|2−α
+                        (Ga ∗ | · |−α )(z) =                           .
+                                                      2r(2 − α)
+For r < a/2, distances from z to the sphere are at least a/2, giving the bound 2α a1−α .
+For r > 2a, they are at least a, giving a1−α . On a/2 ≤ r ≤ 2a, the displayed formula
+is at most 32−α a1−α /(2 − α). These bounds also cover the endpoints by continuity and
+give (11.3). This proves Lemma 11.1.
+   Let Aλ = λ2 − ∆, and equip deterministic phase pairs with the norm
+                                                         −1/2
+                               ∥(f, g)∥2λ = ∥f ∥22 + ∥Aλ        g∥22 .                 (11.4)
+Let Ct be the Fourier multiplier cos(t|ξ|). On one static isonormal Gaussian space with
+covariance Γ, use Wϵ (x) = W (pϵ (x − ·)). Its covariance is exactly Γϵ (x − y), with
+                                  2
+spectral measure µϵ ( dξ) = e−ϵ|ξ| µ( dξ). For real Schwartz f, g, define the free position
+w0 (t) = Ct f + Gt ∗ g and its phase Z0 (t) = (w0 (t), ẇ0 (t)). The next two regularized
+static Duhamel phases are
+                            ∫︂ t (︃                     )︃
+                                    Gt−s ∗ (Wϵ Zj,u (s))
+                 Zj+1 (t) =                                ds,   j = 0, 1,           (11.5)
+                              0      Ct−s (Wϵ Zj,u (s))
+where Zj,u is the position component. At fixed ϵ > 0 these are Gaussian-polynomial
+Bochner integrals in the indicated L2 phase space.
+
+                                                70
+
+===== PHYSICAL PAGE 71 =====
+Proposition 11.2 (First variance estimate for arbitrary phase). Let N = ∥(f, g)∥λ .
+Uniformly in ϵ > 0,
+
+                          E∥Z1 (h)∥2λ ≤ Rα h2 λα−2 (1 + λ2 h2 )2 N 2 ,                 (11.6)
+                                        DΓ (1 + λ2 h2 )h3−α
+                          ∥EZ2 (h)∥λ ≤                      N.                         (11.7)
+                                         λ(2 − α)(3 − α)
+
+In particular, put λ = h−1 and let Kϵ be the coefficient of σ 2 in the finite polynomial
+E∥Z0 (h) + σZ1 (h) + σ 2 Z2 (h)∥2λ . Then
+                             (︃             √         )︃
+                                           4 e DΓ
+                    |Kϵ | ≤ 4Rα +                        h4−α ∥(f, g)∥21/h .       (11.8)
+                                       (2 − α)(3 − α)
+
+Proof. We use the unnormalized spatial Fourier transform and Plancherel mea-
+sure (2π)−3 dη. At fixed positive smoothing, Gaussian second and fourth moments
+make (11.5) integrable: Gt has finite positive mass, Ct is an L2 contraction, and
+E|Wϵ (x)Wϵ (y)|2 ≤ 3Γϵ (0)2 . These facts, Minkowski and time integration justify the
+Gaussian and Fourier Fubini steps below first for Schwartz data.
+   Set as (η) = w
+                ˆ︁0 (s, η) and
+
+                                                           g(η)|2
+                                                          |ˆ︁
+                                  eλ (η) = |fˆ︁(η)|2 +             .
+                                                         λ2 + |η|2
+
+Cauchy–Schwarz on the two initial coordinates gives
+
+                                   |as (η)|2 ≤ (1 + λ2 s2 )eλ (η),
+
+because the squared norm of their coefficient vector is cos2 (sq) + (1 + λ2 /q 2 ) sin2 (sq) ≤
+1 + λ2 s2 , with the continuous value at q = 0. For the two-component output multiplier
+put                                    (︃                    )︃
+                                          sin(τ r) cos(τ r)
+                              kτ (r) =            ,√            .
+                                             r       λ2 + r2
+Its Euclidean squared norm is
+
+                              1 + λ2 sin2 (τ r)/r2   1 + λ2 h2
+                |kτ (r)|2 =                        ≤           ,       0 ≤ τ ≤ h.
+                                   λ2 + r 2           λ2 + r 2
+Expanding the covariance of the two copies of Wϵ , followed by spatial Plancherel, gives
+exactly
+                              ∫︂     ∫︂           ⃓∫︂ h                          ⃓2
+                    2     1                       ⃓                              ⃓
+           E∥Z1 (h)∥λ =           dη    µ ϵ ( dξ) ⃓     kh−s (|η + ξ|)a s (η) ds ⃓ .
+                        (2π)3                     ⃓
+                                                           0
+                                                                                 ⃓
+Cauchy–Schwarz in time bounds the last squared norm by
+
+                                       h2 (1 + λ2 h2 )2
+                                                        eλ (η).
+                                       λ2 + |η + ξ|2
+
+                                                 71
+
+===== PHYSICAL PAGE 72 =====
+Now µϵ ≤ µ and Lemma 11.1 give (11.6).
+    The contraction inside the mean of Z2 is the convolution operator with kernel
+Gs−r ( dx)Γϵ (x). Indeed, this follows directly from E[Wϵ (x)Wϵ (y)] = Γϵ (x − y) in the
+two Duhamel integrals. Its Fourier multiplier is Tϵ (s − r, η), up to the immaterial even
+sign. Its L2 operator norm is therefore at most DΓ (s − r)1−α . Under the isometry
+               −1/2                             √                           √
+(u, v) ↦→ (u, Aλ v), ∥kτ (|D|)∥L2 →L2 ⊕L2 ≤ 1 + λ2 h2 /λ and ∥w0 (r)∥2 ≤ 1 + λ2 h2 N .
+Minkowski and           ∫︂ h    ∫︂ s
+                                                          h3−α
+                             ds      (s − r)1−α dr =
+                          0       0                  (2 − α)(3 − α)
+prove (11.7).
+   Finally, the free phase obeys ∥Z0 (h)∥λ ≤ eλh/2 N . To see this, for Schwartz free
+data differentiate its squared norm. The −∆ terms cancel, leaving 2λ2 Re⟨A−1  λ ẇ0 , w0 ⟩,
+whose absolute value is at most λ∥Z0 ∥2λ . Gronwall gives the stated bound. The required
+coefficient is exactly
+
+                        Kϵ = E∥Z1 (h)∥2λ + 2 Re⟨Z0 (h), EZ2 (h)⟩λ .
+
+Substituting λ = h−1 into the two estimates proves (11.8). This proves Proposition 11.2.
+
+
+    The second term in Kϵ must be retained; neither its sign nor monotonicity of the
+full phase energy in covariance is assumed. The estimates control both terms at this
+one variance order. They do not control higher Gaussian contractions, products of
+independent time blocks, overlapping noise levels or the temporal regularization limit.
+Thus they do not yet establish Goal 43.1.
+
+
+12     All static orders with arbitrary initial phase
+We now seek all static Duhamel orders, retaining the full spatial covariance class of
+Section 11. The temporal covariance is not included in this section.
+
+ The phase estimates and finite-word cutoff lemma passed scoped correctness review.
+ Static estimates alone do not identify the evolution for overlapping intervals; that
+ step is treated in the next section.
+
+    We use one external operator theorem. From Crouzeix–Palencia [6, author preprint
+v1, (3), p. 1, and Theorem 6, pp. 5–6], if T is a bounded operator on a complex Hilbert
+space and F is holomorphic on a neighborhood of W (T ), then
+                       √
+       ∥F (T )∥ ≤ (1 + 2) sup |F (w)|,          W (T ) = {⟨T u, u⟩ : ∥u∥ = 1}.   (12.1)
+                           w∈W (T )
+
+The theorem is imported, not proved here. All operators to which we apply it below are
+bounded; no unbounded-operator extension is assumed.
+
+                                            72

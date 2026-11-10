@@ -1,0 +1,199 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "notes/integrated_exact_scaling.tex lines 1-61 (complete)",
+    "notes/integrated_raw_block_lower.tex lines 1-629 (complete)",
+    "notes/direct-event-calibration.md lines 1-223 (complete; Section 1 is the imported part)",
+    "notes/raw-block-event-lower.md lines 1-610 (complete)",
+    "reviews/2026-10-29-direct-event-calibration/adjudication.md lines 1-81 (complete)",
+    "reviews/2026-10-31-raw-block-event/scientific-adjudication-v1.md lines 1-50 (complete)",
+    "notes/integrated_compact_mean_family.tex lines 1-572 (complete)",
+    "notes/integrated_constant_phase_young.tex lines 1-497 (complete)",
+    "notes/integrated_masked_moments.tex lines 1-221 (complete)",
+    "notes/integrated_source_convergence.tex lines 1-491 (complete)",
+    "notes/integrated_actual_operator_driver.tex lines 1-597 (complete)",
+    "reviews/2026-11-01-compact-mean-tex-integration/adjudication-v1.md lines 1-65 (complete)",
+    "reviews/2026-11-01-moment-young-tex-integration/adjudication-v1.md lines 1-62 (complete)",
+    "reviews/2026-11-01-source-convergence-tex-integration/adjudication-v1.md lines 1-53 (complete)",
+    "reviews/2026-11-01-actual-driver-tex-integration/adjudication-v2.md lines 1-52 (complete)",
+    "reviews/2026-10-31-raw-block-event/falsification-v1.md lines 1-51 (complete)",
+    "reviews/2026-10-31-raw-block-event/falsification-scope-v0.md lines 1-45 (complete)",
+    "reviews/2026-10-31-raw-block-event/coupled-blocks-v0.json lines 1-110 (complete)",
+    "reviews/2026-10-31-raw-block-event/calibration-context-v1.txt lines 1-28 (complete)",
+    "reviews/2026-11-01-raw-lower-tex-integration/target-v1.md lines 1-91 (complete)",
+    "reviews/2026-11-01-raw-lower-tex-integration/target-freeze-v1.json lines 1-16 (complete)",
+    "reviews/2026-11-01-raw-lower-tex-integration/finite-reuse-preflight-v1.json lines 1-56 (complete)",
+    "reviews/2026-11-01-raw-lower-tex-integration/scaling-finite-reuse-v1.json lines 1-32 (complete)",
+    "reviews/2026-11-01-raw-lower-tex-integration/finite-application-map-v1.md lines 1-39 (complete)",
+    "reviews/2026-11-01-raw-lower-tex-integration/crosswalk-v1.md lines 1-22 (complete)",
+    "reviews/2026-11-01-raw-lower-tex-integration/worker-honesty-v1.md lines 1-31 (complete)",
+    "reviews/2026-11-01-raw-lower-tex-integration/prompt-v1.md lines 1-92 (complete)",
+    "reviews/2026-11-01-raw-lower-tex-integration/model-context-v1.tex.txt lines 1-107 (complete)",
+    "reviews/2026-11-01-raw-lower-tex-integration/canonical-inputs-v1.tex.txt lines 1-920 and 921-1276 (complete, two reads)",
+    "reviews/2026-11-01-raw-lower-tex-integration/build-v1.json lines 1-54 (complete; author evidence only)",
+    "reviews/2026-11-01-raw-lower-tex-integration/rendered-section-v1.txt lines 1-545 (complete)",
+    "reviews/2026-11-01-raw-lower-tex-integration/render-repair-v1.json lines 1-12 (complete)",
+    "lean-progress/local-checks/moving-cone-v1/StratonovichHAMAudit/MovingCone.lean lines 1-30 (complete)",
+    "lean-progress/local-checks/moving-cone-v1/types-and-axioms.txt lines 1-117 (complete)",
+    "lean-progress/local-checks/joint-tilt-v1/StratonovichHAMAudit/JointTilt.lean lines 1-28 (complete)",
+    "lean-progress/local-checks/joint-tilt-v1/types-and-axioms.txt lines 1-12 (complete)",
+    "lean-progress/local-checks/actual-event-v1/StratonovichHAMAudit/ActualEvent.lean lines 1-35 (complete)",
+    "lean-progress/local-checks/actual-event-v1/types-and-axioms.txt lines 1-49 (complete)",
+    "reviews/2026-10-29-direct-event-calibration/packet-v1/DirectEvent.lean lines 1-93 (complete)",
+    "reviews/2026-10-29-direct-event-calibration/packet-v1/types-and-axioms.txt lines 1-339 (complete)",
+    "reviews/2026-11-01-raw-lower-tex-integration/page-v1-166.png through page-v1-176.png (all 11 images viewed in full)",
+    "reviews/2026-10-30-fixed-mask-moment/pages/author-07.png (image viewed in full)",
+    "reviews/2026-11-01-source-convergence-tex-integration/author-page-8.png (image viewed in full)",
+    "reviews/2026-11-01-source-convergence-tex-integration/author-page-9.png (image viewed in full)",
+    "sources/SOURCE-MANIFEST.md lines 1-173 (complete)",
+    "extra.bib lines 1-18 (complete)",
+    "reviews/2026-10-29-direct-event-calibration/packet-v1/Lean-local-receipt.json lines 1-86 (complete)",
+    "lean-progress/local-checks/moving-cone-v1/local-receipt.json lines 1-69 (complete)",
+    "lean-progress/local-checks/joint-tilt-v1/local-receipt.json lines 1-70 (complete)",
+    "lean-progress/local-checks/actual-event-v1/local-receipt.json lines 1-68 (complete)"
+  ],
+  "checks": [
+    {
+      "claim": "DS powers and physical scale: delta=T^-kappa, r_T=T delta=T^((a-1)/(3-alpha)), T^(-a/2) r_T^(2-alpha/2)=sqrt(delta), T^(1-a/2) r_T^(1-alpha/2)=delta^(-1/2).",
+      "verdict": "PASS",
+      "reason": "The displayed statements match the complete public types of physical_scale, noise_scale, vertex_scale and kappa_gt_one. Guards hold: T>0, and a>0 with alpha+a<2 gives alpha<2<3 and a<1. No kernel proof was re-voted. I also confirmed that the dilation of the PDE produces exactly these factors."
+    },
+    {
+      "claim": "DS Gaussian source scaling, including white noise: amplitude T^-a r_T^-alpha, K_eta(Ts)=T^-a K_(eta/T)(s), epsilon -> epsilon/r_T^2, joint MAX/SUM widths at every vertex.",
+      "verdict": "PASS",
+      "reason": "Substituting lambda'=T lambda in the Laplace prefix gives the temporal identity. Measure homogeneity Gamma(cA)=c^(d-alpha)Gamma(A) with heat scaling gives Gamma_e(r x)=r^-alpha Gamma_(e/r^2)(x), including Gamma=delta_0 at alpha=d=1. The max and sum in E:source-joint-covariance (author (2.11)) are preserved at every vertex."
+    },
+    {
+      "claim": "DS Green measure and vertex factor: G_d(T tau, r_T dz)=r_T G_d(tau/delta, dz), forcing kernel delta^-1 G_d((t-s)/delta), and vertex factor delta^(-1/2) after sqrt(delta).",
+      "verdict": "PASS",
+      "reason": "Degree 1-d (author (2.6)) gives G(cr, c dz)=c G(r, dz), applied with c=r_T and r_T/T=delta, including the d=3 sphere measure. The Fourier multiplier of the speed-1/delta wave is delta sin(|xi|t/delta)/|xi|, and forcing delta^-2 f then gives delta^-1 G_d(t/delta)*f."
+    },
+    {
+      "claim": "DS finite-list canonical LAW identity and second moment (24.2) at fixed T,r_T, with mixed/self/empty chains, Green width first, absolute L2 series, no pathwise uniqueness or limit exchange.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The argument works at positive widths in joint law, removes Green width first (scaled by r_T^-2), then uses L:joint-fixed-order and L:vertex-crude. Equality in law is asserted, and (24.2) is immediate from it. Note: 'the law ... is the canonical expansion solution' is an abuse of wording for equality of laws."
+    },
+    {
+      "claim": "Raw pullback: T_(delta,m) is a raw test/null-quotient isometry, W_(delta,m)(f)=W_fast(f(.-mB,.)), all on the same W with Z, and no independent blocks.",
+      "verdict": "PASS",
+      "reason": "The Jacobian delta^(a-2) delta^2 delta^-a=1 and the unchanged Gamma were recomputed. Positive-time test supports are preserved, and the shift identity is literal test substitution. No independence is asserted or used. It is an isometry and not claimed onto."
+    },
+    {
+      "claim": "Separable little-Holder K(F) operator-norm space, X in B_delta with uniform sqrt(p) g_delta moments, joint Gaussian (X,Z), Bochner b.",
+      "verdict": "PASS",
+      "reason": "P_n T P_n->T holds by compactness of T and T*. Rational polygonal paths are dense using [f]_theta<=(2||f||_inf)^(1-theta) Lip(f)^theta with 0<theta<1. Finite iA_j L_psi paths are Lipschitz, compact-valued and zero-initial. Each W_(delta,m) is isonormal on H_W, so the law, and hence the constant in (25.5), is uniform in delta and m. Joint Gaussianity passes through L2 limits, and b exists by Cauchy-Schwarz."
+    },
+    {
+      "claim": "Completed indicator-matrix covariance with derivative-noise Jacobian delta^(a/2), b_m=sqrt(delta)H_m, both constant columns, not E-density in F.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "(25.6) was recomputed. The masked row uses zeta_R h as in the parent mask-after-convolution convention, giving V_(s_m+delta u) when m_R=zeta_R. shifted_amplitude supplies g_delta delta^(a/2)=sqrt(delta) with delta>0 and its exact type. Constant columns are the L_psi inputs and are identified by total finite propagation on the region where psi=1. The full-F extension uses E plus both constants. Note: the identification m_R=zeta_R and the iE-range reduction of output tests are implicit but traceable."
+    },
+    {
+      "claim": "Gaussian law (25.7) on all norm-Borel inputs: square root in law, minus sign, raw half-cost, dense-unit-vector operator norm, pi-lambda, no exceptional domain or RNP.",
+      "verdict": "PASS",
+      "reason": "Completing the square gives exp(-|G+sz|^2/2), with Tz=l(b) and |z|^2=v, so the sign and cost are correct. The argument is valid for singular covariance. ||T||=sup over D x D uses finite matrix combinations, not the largest entry or an HS sum. Distances to fixed centers are coordinate-measurable, separability gives open sets, cylinders are a pi-system, and simple/monotone passage covers extended nonnegative j. No conditional expectation is used. tilt_exponent and the two wrong-* facts are only consistency/negative controls, as the map states."
+    },
+    {
+      "claim": "Uniform block estimates: scaled maximum including g_delta, high p with N+1<=2/delta, exponential tail from n0(1-a)>=1 with low degrees by Lyapunov, both H_m/static bases bounded by H0, O(delta) difference.",
+      "verdict": "PASS",
+      "reason": "Union moment bounds, (2n)^n/n!<=(2e)^n and the exponents were recomputed. B>=1 and delta<1 give N+1<=2/delta. Lipschitz primitive bounds on the fixed horizon use the mean on s in [0,2]. No claim is made for the unscaled maximum."
+    },
+    {
+      "claim": "Every-Lq error (25.9): local Young on {M<=1}, then global Young bound, 1/theta<2 and UI; measurable by countable states and rational times.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "E_op<=C(M+delta) follows from local Lipschitz stability on the fixed ball with H^stat in C^theta(B(F)). The growth bound plus theta>1/2 gives uniform moments of every order. Note: the TeX omits the RB sentence that P_s norms are uniformly bounded on [0,B]. This is immediate from the same Young bound with H0. Suprema use states and rational times without free-group norm continuity."
+    },
+    {
+      "claim": "Indexed cone (25.10) on actual F,e0,O_phi: aperture before B, tolerance, five budgets, entrance, rebase before complement, full blocks, terminal, N=1/u=0, positive observable.",
+      "verdict": "PASS",
+      "reason": "All steps were recomputed against (23.14), (23.15), (23.17). Entrance amplitude>=a_*/2 and residual<=vartheta a_*/4 (hence ratio<=vartheta/2). Rebase uses Q_c=Q_b+Pi_b-Pi_c, the step bounds on x and y hold, the terminal value is >=j_*/2, and c_*=a_*j_*/4 with exponent N-1 for the N-1 intermediate blocks. Scalar applications match the complete types of residual_budget (theta=vartheta, q=q_B, d=nu M_z in [0,vartheta], e=M_Q eps M_z), cone_conversion (a=A>0, rho=varrho<1/2) and terminal_margin (j=j_*, K=H_obs C_gap, e=H_obs eps M_z<=j_*/8, 16K vartheta<=j_*). The constant response enters through the actual ell_s(e0)=f_s/lambda_s>0. No norm-growth or noisy-product closeness is substituted."
+    },
+    {
+      "claim": "Induced sources and pointfields: same retaining slow source, contractions and testwise limits at fixed delta,m, Y_fast(u,x)=delta^(a/2)Y(delta u,x), cutoff eta/delta, ordinary response including constants.",
+      "verdict": "PASS",
+      "reason": "(20.12) plus the isometry gives both variance bounds, and residual tests converge on transformed fixed tests, so P:source-gaussian-transfer applies. delta^a K_eta(delta r)=K_(eta/delta)(r) is verified. Ordinary responses match through the point-test integral on the transformed indicator test (P:source-ordinary-response mechanism) and L:constant-source-response for constant columns. No assumption that a retaining extension commutes with dilation is made."
+    },
+    {
+      "claim": "Raw cocycle and restart (25.11), with mean version and terminal tau, without commuting the mask through a free wave.",
+      "verdict": "PASS",
+      "reason": "Changing r->mB+r gives the exact source identity. Since S_F(mB) i S(-mB-r)=iS(-r), the mask stays inside the multiplier. Fixed-horizon bounded restriction/difference/conjugation maps carry the L^pC^theta limits. Riemann-sum conjugation plus Young uniqueness gives U_(X_m). S_F(mB+u) U S_F(-mB)=S_F(u) U_(X_m) gives (25.11). Global times delta t<=1+delta B<2 stay within the mean extension. L_ext varies with delta but is fixed for each source limit."
+    },
+    {
+      "claim": "Fixed-delta source products in L2: recurrence with both sequences identity-extended, Holder, no regularized Cameron mean.",
+      "verdict": "PASS",
+      "reason": "d(n+1)<=C d(n)+C^n e follows from telescoping with C>=1, e>=0, d(0)=0. Identity extension gives the recurrence for all n, matching the type of finite_error_accumulation. L^(4(N+1)) and L^4 Holder is correct. The statement is explicitly only a fixed-delta source limit, and the shifted product uses the fixed raw mean."
+    },
+    {
+      "claim": "Square identity (25.12): all-input continuous j_delta, original slow Psi,Z,v, X+H blocks.",
+      "verdict": "PASS",
+      "reason": "j_delta is continuous and nonnegative on all of B_delta by the everywhere-defined Young map. H lies in B_delta by Lemma 25.1. j(X)=U^2 and j(X+H)=Y^2. v is the original slow variance, and Gamma_delta does not enter the density."
+    },
+    {
+      "claim": "Point comparison (25.13): Gamma_delta=g^2 Gamma, W'=g W_fast, unit masked consumer at fast time 1/delta after the L2 identity, clock/data and canonical law.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "W' is isonormal for Gamma_delta and its literal rows are linear, so the driver is g A_R(W_fast) with both columns. U=O_phi P_glob(L,0)e0 is the parent Z_m for (Gamma_delta,W'), so (22.17) applies directly with ||phi||_1=1. g Y_fast(u)=sqrt(delta)Y(delta u) and the phase (V,delta V_t) give (24.1) at slow time 1. Independent check: isotropic r_T scaling gives amplitude r_T^(4-a-alpha)=delta^(1-a)=g^2 and r_T L=T, confirming the final equality. The comparison is an inequality; no growing-cone equality or H^1/2 point trace is used. Note: the alternative Prop 21.3 route uses the pullback source through its law at each fixed width, which is valid because E:masked-average-source depends only on that law."
+    },
+    {
+      "claim": "Event and lower rate (25.14): same-space union/Chebyshev, full remainder Riemann sum, Lipschitz rate, square restriction, 2I_R-v/2, moderate delta^(1/4), B-independent point first, then e_rate down to 0.",
+      "verdict": "PASS",
+      "reason": "P(|Z|>delta^-1/4)<=v delta^(1/2). s_N+delta tau=1 and the mesh is <=delta B. delta(N-1)<=1/B<=1 gives a loss>-e/3. Y>=exp((I_R-e)/delta). Squaring and restricting gives (2I_R-2e-v/2)/delta-delta^-3/4, and moderate_penalty matches its exact type with delta>0. The order of limits is as required. kappa>0 gives the bijection."
+    },
+    {
+      "claim": "Spatial stationarity, per-test scope, and all original models with every positive nonseparable Psi.",
+      "verdict": "PASS",
+      "reason": "Translation of positive-width vertices and fixed-order/series limits transfer point moments to every x. The parent family and common trial hold for arbitrary nonnegative nonzero Psi with no separability assumption, in d=1,2,3 at all amplitudes, including white and subcritical covariances (Gamma nonzero; only origin-centered balls enter). Suprema are only allowed after per-test inequalities."
+    },
+    {
+      "claim": "Finite-fact fidelity and boundaries against finite-application-map-v1.md.",
+      "verdict": "PASS",
+      "reason": "Four DS and nine RB facts match the supplied source and complete types, with standard axioms printed. Six RB direct consumers and three consistency/control facts play exactly the mapped roles. Analytic Gaussian/spectral/source/continuum claims are proved in text and are not attributed to Lean. No kernel deduction was re-voted and no compiler was run."
+    },
+    {
+      "claim": "Correspondence with accepted DS Section 1, RB Sections 1-9 and adjudicated clarifications; later scalar calibration not imported.",
+      "verdict": "PASS",
+      "reason": "All eight blocks reproduce the accepted arguments and formulas, and retain the U_(delta,B) explicitness, the H_obs/eta_gap symbols, equality in law, H0 for both bases, stationarity and the optional recurrence. No scalar gauge, d1 cone or uniformly local phase is promoted."
+    },
+    {
+      "claim": "PDF fidelity, pages 166-176: formulas, signs, squares, powers, velocities, probability symbol, labels, proof ends.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Viewed images match the TeX, including minus-sign density, v/(2delta), the square, delta^(1/4), blackboard P on p.174, (V,delta V_t), and all eight proof ends. Numbered cross-references (19.1), (19.11), (20.12), (22.5), (22.17), (23.17) and Lemmas 3.6/3.8 agree with the parent label order I counted. Notes: the 'preceding section' pointer and pre-existing bibliography cosmetics."
+    },
+    {
+      "claim": "Selected primary author coverage: p.7 Green, p.8-9 source law.",
+      "verdict": "PASS",
+      "reason": "(2.3)-(2.6) supply the Green multiplier, mass, explicit d=1,2,3 kernels and degree scaling. (2.9) and (2.11) supply the Laplace prefix and max/sum law used here. Only this selected coverage is claimed."
+    },
+    {
+      "claim": "Scope honesty: no p1/Chen identification, source repair, Skorohod, companion, publication or final-goal clearance; finite controls not certified proofs.",
+      "verdict": "PASS",
+      "reason": "Sections 24-25 assert only the per-test lower functional and canonical law scaling. Coupled-block quadrature is explicitly a raw-completion mechanism control and carries no proof weight. Page 176 keeps the sharp constant open."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Lemma 25.3 (TeX line 185) says P_s comes from 'the preceding section'. In the rendered order that is Section 24, which has no P_s; the object is in Section 23. A label reference would be clearer.",
+      "Lemma 24.1 says 'The law of u(Tt,r_Tx) is the canonical expansion solution V_delta'. It means equality of laws, with V_delta's scaled chains inheriting their L2 bounds through that equality. A wording cleanup would remove the abuse.",
+      "The covariance identification in (25.4) needs the driver mask and the mean mask to be the same function. m_R=zeta_R is traceable through Sections 22-23 and the CG adjudication, but Section 25 does not state it explicitly.",
+      "Three immediate steps are implicit: P_s bounded on [0,B] for UI in (25.9); Q_b P_b(B)=P_b(B)Q_b with e^(-lambda B)<=1 in the entrance estimate; and the range in iE reducing output tests to E in (25.4). All follow directly from the cited parents.",
+      "In the optional Prop 21.3 route of Prop 25.6, it would help to say that the masked comparison is used only through the fixed-width source law (widths epsilon, eta/delta). The (22.17) route needs only U=Z_m for (Gamma_delta,W').",
+      "Symbols overlap, though no application is ambiguous: Q_s tilted measure, Q_s complement projection and Q_2 rate; Y_(epsilon,eta)/Y_m/Y_fast versus Y_(delta,B); T as time, pullback and covariance square root; u as fast time and as solution; B as block size, multiplier and ball. A later presentation pass could rename these.",
+      "RB's remark that W is the given raw-law noise in semiscaled variables, with no samplewise equality to an unscaled noise, is not repeated in Section 25. No false claim results, since (25.13) is law-only. Restating it could help readers.",
+      "Recorded CG wording debt persists at integrated_compact_mean_family.tex line 491 ('every positive-radius ball'). Only the origin-centered B_(L/2) trial is consumed, and Sections 24-25 add no translated-ball claim.",
+      "Custody fields need reading in context. scaling-finite-reuse-v1.json has live_source_match=false for the DS types file while accepted_manifest_match=true. The DS receipt status is the pre-adjudication LOCAL_ELABORATED_TYPE_APPLICATION_PENDING. lean-reuse-readiness-v0.json, cited by RB and the freeze, is not in the packet. The supplied types do match the supplied source statements for the four used facts.",
+      "Abstract and roadmap text (Section 27, dependency paragraph) do not yet mention Sections 19-25, and bibliography '()' artifacts and 'Second,' remain. None of this makes a false mathematical claim."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is an AI review of the frozen packet, not human verification or a novelty audit. It makes no whole-paper, cold-read, delivery or final-goal claim.",
+    "No scripts, Lean, numerics, Git, hash recomputation or PDF build were run. Build, hash, old-proof-body and receipt statements are author evidence, and PNG hashes in the plan were not independently recomputed.",
+    "Parent modules and adjudications were reused and their applications checked, but their import trees were not re-certified. Canonical inputs cover only the supplied excerpt (through line 1276). Definitions from outside the packet, such as Section 18 wave forms and E:variance-dual-wave, were taken through their parent usage.",
+    "Primary-source coverage is limited to selected author pages 7, 8 and 9. The Teschl, Friz-Hairer and full author-PDF imports were not re-audited here.",
+    "Finite coupled-block data were read as mechanism controls only; their quadrature accuracy was not checked.",
+    "The result is a per-test lower functional. Unmasking, optimization, sharp upper bound, exact limit, source L_* identification, p=1 and Skorohod questions remain outside this verdict."
+  ]
+}

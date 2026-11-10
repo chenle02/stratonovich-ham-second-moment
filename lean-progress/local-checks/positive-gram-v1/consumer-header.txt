@@ -1,0 +1,7 @@
+private theorem active_consumer {ι : Type u} {H : Type v} [Fintype ι]
+    [NormedAddCommGroup H] [InnerProductSpace ℝ H]
+    (Phi : H) (k : ι → H) (ell b w : ι → ℝ)
+    (hw : ∀ i, 0 < w i) (ht : ∀ i, 0 ≤ inner ℝ Phi (k i) - b i) :
+    2 * (∑ i, ell i * Real.sqrt (inner ℝ Phi (k i) - b i)) - ‖Phi‖ ^ 2 / 2 ≤
+      (∑ i, ell i ^ 2 / w i) - (∑ i, b i * w i) +
+        (1 / 2 : ℝ) * (∑ i, ∑ j, w i * inner ℝ (k i) (k j) * w j) :=

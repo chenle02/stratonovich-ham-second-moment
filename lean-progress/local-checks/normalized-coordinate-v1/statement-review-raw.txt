@@ -1,0 +1,69 @@
+```json
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    ".review/required-sources.json lines 1-30 (read plan; no read credit)",
+    "NormalizedCoordinate.statement.lean.txt lines 1-17 (complete)",
+    "paper-fock-form.tex.txt lines 1-67 (complete)",
+    "MICRO-CONTRACT.md lines 1-14 (complete)",
+    "gaussian-product.lean.txt lines 1-186 (complete)",
+    "hermite-products.lean.txt lines 1-388 (complete)",
+    "chaos-basis.lean.txt lines 1-444 (complete)",
+    "kernel-types-axioms.stdout lines 1-35 (complete)",
+    "KERNEL-CAPSULE.md lines 1-6 (complete)",
+    "source-bindings.json lines 1-15 (complete)"
+  ],
+  "checks": [
+    {
+      "claim": "NORM01: exact quantified type, variables, guards and noncircularity",
+      "verdict": "PASS",
+      "reason": "Statement lines 7-16 quantify over {Mode : Type u}, [DecidableEq Mode], ν : Mode →₀ ℕ, j : Mode and ω : Mode → ℝ, and take no hypotheses. Nothing assumes the target equality, a support or cutoff equality, or nonnegativity. The DecidableEq binder only constrains the instance and matches the binder of coord_mul_Hm (chaos-basis.lean.txt:257; stdout:13). It cannot make the statement vacuous for a nonempty Mode. If Mode is empty, no j exists, so the claim holds trivially for that type only. Parsing is as intended: the left side is ω j * (Hm ν ω / √(mfact ν)), and the right side is √(ν_j+1)·(Hm(ν+e_j)/√mfact(ν+e_j)) + √(ν_j)·(Hm(ν−e_j)/√mfact(ν−e_j)). That is the intended normalized identity, not a restated hypothesis. Because mfact_pos holds (hermite-products.lean.txt:309-310), no division-by-zero convention is involved."
+    },
+    {
+      "claim": "NORM02: actual Hm/He/mfact, standard Gaussian variance and normalized L2 basis correspondence, including pointwise canonical representative versus equivalence class",
+      "verdict": "PASS",
+      "reason": "He n is Mathlib's probabilists' hermite polynomial mapped to ℝ (hermite-products.lean.txt:42; stdout:2-3), with He_succ = X·He_n − He_n' (line 46). Hm is the product over α.support of He(α i) evaluated at ω i (line 212; stdout:4-5). mfact is the product of factorials over the support (line 209; stdout:6-7). noise is infinitePi of gaussianReal 0 1 (gaussian-product.lean.txt:35), so the variance is 1 (lines 55-65). hermiteNormalized = (√mfact α)⁻¹ • hermiteLp α (chaos-basis.lean.txt:391), hermiteLp agrees with Hm almost everywhere (line 359), and orthonormal_hermite and hermiteBasis hold (lines 393-426). The target is stated for the canonical pointwise polynomial Hm/√mfact, which equals (√mfact)⁻¹·Hm. It does not use an arbitrary Lp representative, so the pointwise claim is well-posed. Its link to the basis is almost-everywhere only, which is correct. The identity is purely algebraic and holds for every ω regardless of the measure. So the variance convention matters only when a consumer combines the leaf with orthonormal_hermite."
+    },
+    {
+      "claim": "NORM03: raising AND lowering coefficients; algebraic factorial/square-root conversion; nu_j=0, nu_j=1, mixed multiindices, arbitrary Mode",
+      "verdict": "PASS",
+      "reason": "The derivation is: divide the existing coord_mul_Hm (ω_j H_ν = H_{ν+e_j} + ν_j H_{ν−e_j}, chaos-basis.lean.txt:257-288) by √ν!. Raising: mfact(ν+e_j) = (ν_j+1)·mfact ν, including when j is not in the support, where the extra factor is 1! = 1 (use mfact_eq_prod_of_subset on insert j ν.support). So √(ν_j+1)/√((ν_j+1)ν!) = 1/√ν!. Lowering for ν_j ≥ 1: mfact(ν−e_j) = ν!/ν_j, so √ν_j/√(ν!/ν_j) = ν_j/√ν!, which matches the raw coefficient ν_j. For ν_j = 0, truncated subtraction gives ν − e_j = ν, and √0 = 0 cancels the term, just as the raw coefficient (0:ℝ) does. Hand tests: ν_j=1 gives a lowering coefficient of 1/√ν!·1, which checks out. Mixed case ν=(2,1), j=1: √3/√6 = 1/√2 on He3·He1, and √2·He1·He1/√1 matches 2He1He1/√2. ν=(0,1), j=1: the left side He1(ω1)He1(ω2) equals 1·He1He1/1 + 0. For arbitrary Mode, including uncountable or empty ones, only the finite support is used. The proof needs √(ab) = √a·√b for nonnegative a, b and √(n+1) ≠ 0. Both are available without extra premises, so there are no missing hypotheses."
+    },
+    {
+      "claim": "NORM04: exact match to paper-fock-form.tex.txt normalized formula; what of the proof is verified and what remains",
+      "verdict": "PASS",
+      "reason": "paper-fock-form.tex.txt:51-53 states g_i h_k = √(k_i+1) h_{k+e_i} + √(k_i) h_{k−e_i} with normalized Hermite h_k. The leaf has the same form, with g_i ↔ ω j, h_k ↔ Hm k/√k!, and the k_i=0 lowering term handled by √0 = 0. Line 4 says 'independent standard Gaussian coordinates', which matches gaussianReal 0 1. The paper indexes over i ≥ 1 (separable, so countable). Mode is arbitrary, a harmless generalization that contains Mode = ℕ. The bindings are consistent: excerpt 5466-5531 has 66 lines, and source lines 5516-5518 are packet lines 51-53. The leaf verifies only the scalar coefficient identity behind 'multiplication by g_i is a_i^*+a_i'. Still to be done: lifting it to an Lp or almost-everywhere operator identity on hermiteNormalized; the row-map norm Σ a_i^*a_i = (k+1)I (lines 55-56); the covariance and Plancherel computation and J_{ρ,ε} bound (lines 29-45); S_b compression (lines 46-49); vector-valued composition with S_bH_iS_b; the degree-orthogonality and adjoint arguments; and the constant d_N (lines 57-63)."
+    },
+    {
+      "claim": "NORM05: three-space, real/complex, physical-covariance, index/dimension and zero-covariance boundaries",
+      "verdict": "PASS",
+      "reason": "The target contains only ℝ-valued scalars over Mode → ℝ. It has no spatial variable, no 3D Fourier factor (the paper's (2π)^{-3} at line 32 is outside the leaf), no covariance μ, e_i, H_I, X_λ or Laplacian. Mode is a Gaussian-coordinate index, not physical dimension. The independence of the coordinates is the canonical orthonormal-basis decomposition (paper line 23), not a claim that the physical noise is independent. The covariance lives in e_i(x) = E[W_ε(x)g_i], which is outside the leaf, consistent with MICRO-CONTRACT.md:9. The leaf is real-valued, as is the paper's real field (line 4), so no complex-coefficient claim is made. A degenerate or zero covariance (e_i = 0 or empty Mode) does not affect this algebraic identity and is not excluded by any premise. No physical model restriction is introduced."
+    },
+    {
+      "claim": "NORM06: value for creation/annihilation/selected-word normalization seam, known-theorem reuse, honest exclusion of stronger claims",
+      "verdict": "PASS",
+      "reason": "The leaf is a direct, standard corollary of the existing coord_mul_Hm plus factorial algebra. It is a known textbook identity, not a novelty, and the packet does not claim novelty (MICRO-CONTRACT.md:11; source-bindings.json new_public_theorems: 0). Its value is to pin down the √(k_i+1)/√k_i normalization convention that consumers of a_i^*, a_i norms rely on. MICRO-CONTRACT.md:11-13 and KERNEL-CAPSULE.md:3 explicitly exclude the Fock operator bound, the resolvent variance, colored or vector instances, projection, Bochner integration, cutoff passage, SPDE and asymptotic results, and any package or replay gate. They also keep the all-model goal and remaining gates. I found no overclaim."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "kernel-types-axioms.stdout prints the imported definitions and coord_mul_Hm, but not the elaboration output of this exact #check. That the target elaborates is asserted (MICRO-CONTRACT.md:5), but this packet does not evidence it. By inspection, the coercions, Finsupp tsub, universe u and parenthesization all look well-formed.",
+      "The leaf is measure-independent: it holds pointwise for every ω, under any variance. On its own it cannot detect a wrong variance convention. The unit-variance match enters only when a consumer combines it with orthonormal_hermite / hermiteBasis (chaos-basis.lean.txt:393-426). Consumers must also add the almost-everywhere step hermiteLp =ᵐ Hm (line 359) to restate it for Lp elements.",
+      "The [DecidableEq Mode] binder is probably not needed by the statement's terms (Finsupp +/− elaborate classically). It mirrors coord_mul_Hm and is harmless, but it is an extra instance binder that downstream users must supply.",
+      "Paper L:fock-form, outside this leaf: with P_N on both sides, creation from degree k ≤ N−1 gives √(k+1) ≤ √N, so d_N = 2√(N+1)√R_α is conservative rather than tight. This does not affect the leaf, but the constant should be noted when consumers specialize it."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "I did not run Lean or a shell. Elaboration of the target and the statement_sha256, source_main_sha256 and excerpt hashes in source-bindings.json were not independently checked.",
+    "Imported proofs (coord_mul_Hm, orthonormal_hermite, hermiteBasis) were read but not re-checked by a kernel. Per KERNEL-CAPSULE.md this is development evidence, not a replay gate.",
+    "The transitive import chain GaussianChaos.ChaosDensity → GaussianOU → … → WienerChaos is assumed from the file headers. The intermediate modules (GaussianOU, GaussianCylinders) are not in the packet.",
+    "Only the L:fock-form excerpt was available. The definitions of R_α, Section S:static-phase and Lemma L:phase-contractions were not supplied, so the analytic parts of the paper's proof were not checked.",
+    "This review covers statement, definition and paper-application fidelity only. No proof exists or was evaluated, and it gives no credit toward the full paper, operator, SPDE, package or delivery gates."
+  ]
+}
+```

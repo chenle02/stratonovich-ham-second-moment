@@ -1,0 +1,24 @@
+Read-only source excerpt,not a new #check/compile; Mathlib pin 56a005855ea17e0b0958f73ec801ae140b0a1679.
+
+Mathlib/Algebra/Order/GroupWithZero/Defs.lean lines 294-306
+294:   mpr h := mul_lt_mul_of_pos_right h a0
+295:
+296: @[simp]
+297: theorem mul_le_mul_iff_right₀ [PosMulMono α] [PosMulReflectLE α] (a0 : 0 < a) :
+298:     a * b ≤ a * c ↔ b ≤ c :=
+299:   @rel_iff_cov α>0 α (fun x y => x * y) (· ≤ ·) _ _ ⟨a, a0⟩ _ _
+300:
+301: @[simp]
+302: theorem mul_le_mul_iff_left₀ [MulPosMono α] [MulPosReflectLE α] (a0 : 0 < a) :
+303:     b * a ≤ c * a ↔ b ≤ c :=
+304:   @rel_iff_cov α>0 α (fun x y => y * x) (· ≤ ·) _ _ ⟨a, a0⟩ _ _
+305:
+306: alias mul_le_mul_iff_of_pos_left := mul_le_mul_iff_right₀
+
+Mathlib/Analysis/InnerProductSpace/Basic.lean lines 58-63
+58: theorem inner_conj_symm (x y : E) : ⟪y, x⟫† = ⟪x, y⟫ :=
+59:   InnerProductSpace.conj_inner_symm _ _
+60:
+61: theorem real_inner_comm (x y : F) : ⟪y, x⟫_ℝ = ⟪x, y⟫_ℝ :=
+62:   @inner_conj_symm ℝ _ _ _ _ x y
+63:

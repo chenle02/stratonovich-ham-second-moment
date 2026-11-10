@@ -1,0 +1,11 @@
+# Independent Kimi raw/source/Young reconstruction
+
+Root read all67 long public lines, including every calculation, both tests and the D1–D5/C1–C4 limitations. The review independently reconstructs the two actual variance directions, finite Gaussian average, compact tails, original-W driver, retaining source law, and full constant-phase Young transfer. No failed implication was identified inside its seven whole modules. This is ungraded mathematical work, not a whole-project HIGH review.
+
+Corrections to the report: cutoff source Y_rho and its heat residual generally use the retaining isonormal I and the fixed auxiliary J; the phrase “both are W-measurable components” is false for the original W. The raw driver and raw tested average are W-measurable. C_T in source073 is uniform in R; only the compact-cutoff norm and fixed-R path constants may depend on R here. No T:first theorem is an input to F003–F009: source F007 explicitly excludes a first-moment variational parent. It must not become an invented driver prerequisite.
+
+The stated source dependencies are real packet boundaries: full canonical constructor/order bounds, exact H:homog, author-source definitions and Young primary pages were not in source02. Source03 supplies the whole frozen manuscript, whole author64 pages, full pairing working/corrections/consumers, and all selected CP8/FH8 primary pages, so these can now be checked directly rather than assumed from grades.
+
+Native k3/max/default returned end_turn, observed tool0, no permissions or unsupported requests; execution was not disabled. Both model-prompt usage results were null. The local /usage command (no model turn) reported context446182/1048576 and session totals695855 input/72475 output. These are native context/session aggregates, not per-attempt accounting; prior UNKNOWN remains. No thought text was used as proof evidence.
+
+The proposed next mathematical turn has21 whole bodies and204688 ordinary public-tokenizer tokens. Using the native reported retained context446182 plus32768 conditional framing gives683638 conditional input; with the unchanged311296 reserve,994934 total. This is not exact deployed BPE or provider accounting. Native system context is already in that reported retained context and is not added twice. The next turn is not a final review and no favorable confidence is requested.

@@ -1,0 +1,83 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "CONSUMER-BRIDGES.md lines 1-18 (complete)",
+    "ColoredWord.proved.lean.txt lines 1-402 (complete)",
+    "ColoredWord.statement.lean.txt lines 1-106 (complete)",
+    "LOCAL-KERNEL-CAPSULE.json lines 1-57 (complete)",
+    "MICRO-CONTRACT.md lines 1-10 (complete)",
+    "chaos-basis.lean.txt lines 1-444 (complete)",
+    "completed-types-and-axioms.stdout lines 1-27 (complete)",
+    "exact-closed-Prop-consumer.lean.txt lines 1-30 (complete)",
+    "gaussian-product.lean.txt lines 1-186 (complete)",
+    "hermite-products.lean.txt lines 1-388 (complete)",
+    "hermite-word.lean.txt lines 1-62 (complete)",
+    "imported-types-and-axioms.stdout lines 1-90 (complete)",
+    "mathlib-vector-Lp-api.lean.txt lines 1-194 (complete)",
+    "normalized-coordinate.lean.txt lines 1-103 (complete)",
+    "paper-complex-phase-definition.tex.txt lines 1-24 (complete)",
+    "paper-finite-word.tex.txt lines 1-48 (complete)",
+    "paper-fixed-split.tex.txt lines 1-365 (complete)",
+    "paper-interval-contractions.tex.txt lines 1-74 (complete)",
+    "paper-phase-definition.tex.txt lines 1-14 (complete)",
+    "small-case-falsification.json lines 1-53 (complete)",
+    "source-bindings.json lines 1-75 (complete)",
+    "statement-type.stdout lines 1-15 (complete)",
+    "vector-projection.lean.txt lines 1-160 (complete)",
+    ".review/required-sources.json lines 1-72 (read plan only; not a packet file)"
+  ],
+  "checks": [
+    {
+      "claim": "CWAPP01: The three public types match the exact frozen Props, the private fourth helper is checked, and the assumptions, guards and axioms are actual, noncircular and free of hidden conclusion-bearing inputs or vacuous branches.",
+      "verdict": "PASS",
+      "reason": "Proved lines 1-73 match statement lines 1-73 token for token. The capsule's frozen_statement_sha256 equals the statement_sha256 in source-bindings.json. The consumer (lines 8-29) assigns coordinate_realize, word_admissible and word_cutoff to the three public Props at statement lines 77-81, 90-95 and 98-103. The kernel signatures in completed-types-and-axioms.stdout lines 1-25 agree with statement-type.stdout lines 1-14. The only difference is that m is explicit in the Prop and implicit {m} in the theorem; binder annotations are ignored by definitional equality. The fourth frame Prop (statement 84-87) is restated verbatim as an `example` at proved lines 338-343 and closed by frame_realize. Each theorem uses only propext, Classical.choice and Quot.sound. The hypotheses are only the type, instance and operator data plus, for word_cutoff, the counts<=N guard. No support, projection, domain or commutation premise appears. The proof chain is word_cutoff <- cutVector_realize, rawVector_realize, cutCoeff_eq_rawCoeff <- cut_eq_raw, whose four premises are derived concretely at lines 262-279. The chain is acyclic. The totalized zero branch of `coordinate` is shown unreachable, since dite_eq_left is used with the derived MemLp at line 176. Positive controls at lines 352-392 rule out degeneracy."
+    },
+    {
+      "claim": "CWAPP02: The canonical polynomial-to-Lp AE bridge and the signal/coordinate natural-domain and intertwining facts are derived, covering normalized raising and lowering, zero occupation, arbitrary vector coefficients, and every raw and compressed prefix domain.",
+      "verdict": "PASS",
+      "reason": "polyValue (line 20) is the canonical representative sum of Hm_nu(omega)/sqrt(nu!) times x. realize_ae (lines 144-154) proves realize f =ae polyValue f from atom_ae, which uses coeFn_compLp, Lp.coeFn_smul and hermiteLp_ae. value_insert (lines 96-113) rewrites pointwise with the imported normalized_coordinate (normalized-coordinate.lean.txt lines 61-96). That identity has both terms, sqrt(nu_j+1) times the raised term and sqrt(nu_j) times the lowered term. The zero-occupation case is handled by by_cases at line 79: truncated subtraction leaves nu and the coefficient is sqrt 0 = 0. insertCoeff (lines 29-36) has exactly these two terms with arbitrary E coefficients and any bounded K c j. coordinate_realize (lines 164-178) derives MemLp of signal on the actual Lp representative from Lp.memLp(realize(insertCoeff)).ae_eq, then identifies coordinate with that realization. This holds for every f : Poly m E. word_admissible (lines 318-328) has no counts or N hypothesis. It covers rawVector w for every list w, so every raw prefix and arbitrary N. It also covers project N (cutVector w), the exact argument fed to coordinate at line 73, by rewriting to realize and then using projection_realize. All statements are Lp equalities or MemLp of the Lp coercion, so the AE representative boundary is preserved."
+    },
+    {
+      "claim": "CWAPP03: The concrete Good, degree, vacuum, frame and filter properties fed into raw_support/cut_eq_raw are exact, covering total colored degree, finite mode sums, arbitrary words and noncommuting bounded K/F. This closes the concrete normalized multivariate Gaussian vector application within the real-Hilbert scope.",
+      "verdict": "PASS",
+      "reason": "Good d f (line 180) says every coefficient outside {nu : for all c, colorDegree Sigma.fst nu c <= d c} vanishes. colorDegree (vector-projection lines 34-36) sums nu_i over the modes i with Sigma.fst i = c, which is the total colored degree. degree_raise (lines 209-215) gives an exact +1 in color c and degree_lower (217-230) gives <=. With these, good_insert (232-253) proves Good(bump c d)(insertCoeff K c f) over the finite sum over Fin (m c). good_frame (255-259) uses only linearity of F, good_vacuum (262-265) gives degree 0, and cut_fixes_good (268-279) shows Finsupp.filter by colorLow N fixes Good d when d<=N. These match the cut_eq_raw premises exactly (hermite-word lines 35-44, kernel type at imported stdout 46-54), instantiated with V=Poly m E, J=insertCoeff K, F=coeffFrame(F b) and P=VectorProjection.cut(colorLow Sigma.fst N) at lines 285-289. No commutation or structure is assumed on K or F, B is an arbitrary index type, and words are arbitrary lists. This closes the concrete application of the generic word facts for normalized multivariate Gaussian polynomials with coefficients in an arbitrary complete real Hilbert space E : Type, with modes Sigma c, Fin (m c)."
+    },
+    {
+      "claim": "CWAPP04: The raw/cut realization and the actual orthogonal-projection recursive operator order are correct, including F0, vacuum and list reversal, and they fit the source finite-word lemma and the fixed-split application. The background extension is restricted to range(P_cross), and the source complex/background bridges stay distinct from the kernel claim.",
+      "verdict": "PASS",
+      "reason": "project N (line 49) is the actual starProjection onto the closure of the span of {atom nu x : colorLow nu}, which is the joint tensor projection onto per-color degree<=N_c tensored with I_E. projection_realize turns it into coefficient filtering, so filtering is a derived identity, not a definition. The cutVector recursion F_b compLp(P(coord(P prev))) and the rawVector recursion F_b compLp(coord prev) mirror HermiteWord.cut/raw. The base case is (I tensor F0)(1 tensor v) via vacuum(F0 v) with no initial P, which matches E:finite-word-cutoff (paper-finite-word lines 15-21). The list head is the last insertion i_n, so the paper word i_1..i_n is the reversed list. counts is invariant under this reversal, and an arbitrary B covers distinct F_1..F_n. The source lemma's complex X and Bochner clause are not kernel-claimed. Fixed-split use (paper-fixed-split lines 221-226): cross colors occur once with N_i=2. The cross insertions are the PJP form with background P_bg absorbed into K. Background segments plus identities compose into E-only F_l, with arbitrary bounded block-coupled operators allowed. The bridges (CONSUMER-BRIDGES lines 11 and 17; capsule line 47) correctly limit the background-only extension to range(P_cross). That range follows from the vacuum and PJP outputs. For raw prefixes it follows because word_cutoff applied to every tail (whose counts are <= N) equates raw prefixes with cut prefixes, which lie in range(P_cross). No global factorization or untruncated propagator identity is asserted. The complex-real and retained-background isometries check out mathematically as source correspondences. Re-inner-product projections agree because the span is stable under multiplication by i, and the Hermite tensor isometries hold by orthonormality and independence. All are explicitly labelled as not kernel-formalized."
+    },
+    {
+      "claim": "CWAPP05: Exact evidence and nondegeneracy hold: a nonzero two-insertion L2 word with mean 1 and cutoff-2 agreement, exact original Prop assignment, owned-leaf replay at pinned imports, semantic rejection of the wrong self-mean, and rejection of the insufficient cutoff-1 guard. The cutoff-1 case is a guard test only, and the noncommuting matrix probe is a mathematical recomputation.",
+      "verdict": "PASS",
+      "reason": "control_raw_ae (lines 352-360) shows the actual raw L2 word for E=R, K=F=F0=id, v=1 and a length-2 word is ae omega^2. control_mean (368-379) gives inner product 1 with the vacuum via integral_eval_sq, and the example at 381-385 derives nonzeroness from that. The example at 387-392 applies word_cutoff with N=2. The exact Prop assignment is in the consumer file. The capsule records compile exit 0, owned-leaf replay, three exact assignments, and replay import scope limited to reused pinned objects. The negative-control sources are not in the packet. Their recorded outcomes ('sole unsolved False') are mathematically forced, since 1 is not 0 and counts=2 > 1. They are correctly described as a semantic rejection and a GUARD test, not an Lp inequality; mathematically, cutVector at N=1 gives 1 versus omega^2 = 1 + sqrt2 h2. Recomputing small-case-falsification.json with K=[[0,1],[1,0]], F=diag(1,2), F0=id, v=e0 and the same F twice: after step 1, degree 1 is 2e1. After step 2, degree 0 is 2e0 and degree 2 is 2sqrt2 e0. This matches the JSON, as do FKFKv=[2,0], the wrong FFKKv=[1,0], and the identity case (v, sqrt2 v). The probe is properly labelled non-kernel."
+    },
+    {
+      "claim": "CWAPP06: The manuscript and model scope are correct: an arbitrary complete infinite-dimensional coefficient Hilbert space including background and spatial displacement/velocity, exact mode indexing, unchanged original dimensions, covariances and amplitude, and correct Type0/realification boundaries. There is no claim of Bochner words, untruncated or background cutoff removal, a full propagator, analytic wave/SPDE/limit results, or any whole-main/visual/cold/adoption/package/delivery gate.",
+      "verdict": "PASS",
+      "reason": "E is any NormedAddCommGroup with InnerProductSpace R and CompleteSpace in Type 0, with no finite-dimensionality assumption. The band phase space Y_b + Y_b with the equivalent norm (CONSUMER-BRIDGES line 7) is complete in any dimension. The constants min(1,(rho^2+b^2)^-1) and max(1,rho^-2) are correct for |eta|<=b. noise(Index m) is the iid N(0,1) product on Sigma c, Fin(m c) (gaussian-product line 35), with no auxiliary coordinates, and the colors are Sigma.fst. Covariance, amplitude and dimension enter only through the bounded K and F, so they are unchanged. Complex X is reached only through the stated realification correspondence, which is not kernel-claimed. The capsule (lines 45-52) and MICRO-CONTRACT line 7 disclaim Bochner, propagator, SPDE, registry, package and companion results, and no statement in the Lean source exceeds this. The paper lemma's Bochner clause (paper-finite-word lines 23-24) and the fixed-split cube integrals (paper-fixed-split lines 265-272) remain outside kernel scope; only per-word integrand equality is supplied."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "The raw-prefix colored-degree bound (Good (counts w) (rawCoeff w)) is proved only inside HermiteWord.cut_eq_raw via raw_support, with the concrete Good private (proved lines 180, 281-289). It can be recovered from the public word_cutoff applied to tails, but it is not exported as a standalone public lemma. The range(P_cross) argument for raw prefixes in CONSUMER-BRIDGES line 17 therefore relies on this derivation.",
+      "The negative-control sources (wrong self-mean, cutoff-1 guard) are not in the frozen packet; only their outcomes are recorded in LOCAL-KERNEL-CAPSULE.json lines 33-44. The outcomes are mathematically correct, but the source text of those controls could not be inspected.",
+      "source-bindings.json line 2 still reads kind PROPOSED_TYPECHECKED_NOT_PROVED, from the statement stage. The completed status lives only in the capsule. This is not contradictory, but the bindings file is stale.",
+      "The prompt-supplied source revision 0616f3fc6b54a65222fe5d902fecdf919b211de8 appears in no packet file. Binding relies on the sha256 values in the capsule and source-bindings.json.",
+      "The fixed-split height-changing identities I_j between X_Lambda norms are absorbed into E-operators F_l with a single fixed E norm. This is legitimate because the norms are equivalent on the band space and the Lp sets coincide, but it is source-correspondence mathematics, not kernel-proved.",
+      "Lean allows an arbitrary color type C and modes Sigma c, Fin (m c). This is more general than the paper's finitely many colors 1..M and is harmless."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "No Lean compile, replay or #print axioms was re-run (no shell permitted). Kernel facts rely on the recorded stdout and capsule, and per the contract no subjective re-proof score is given for kernel deductions.",
+    "The upstream imports WalshIntegral.WhiteNoise, GaussianChaos.GaussianOU, GaussianCylinders and full Mathlib are not in the packet. Only the supplied excerpts and type stdouts were inspected.",
+    "The source bodies of the negative controls are not supplied, so they were checked only as recorded outcomes plus independent mathematics.",
+    "Complex-real coherence, retained-background and cross-rearrangement isometries, and the Bochner/Dyson cube identities were checked as mathematics only, not as kernel theorems.",
+    "This review is an AI type/definition/application-fit audit of the local colored-word consumer only. It is not human verification, a novelty audit, or a whole-paper or package gate."
+  ]
+}

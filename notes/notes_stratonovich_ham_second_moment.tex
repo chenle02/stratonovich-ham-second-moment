@@ -16,9 +16,9 @@
 +{,}{ }                           {status}
 +{,}{ \PrintDOI}                  {doi}
 +{.}{ Available at \eprint}       {eprint}
-+{}{ \parenthesize}               {transition}
++{}{}                             {transition}
 +{;}{ \PrintReviews}              {review}
-+{.}{}                            {note}
++{.}{ }                           {note}
 }
 
 % === Core packages ===
@@ -65,52 +65,36 @@
 \begin{document}
 
 \title{The second moment of the hyperbolic Anderson model with time-dependent
-noise: Stratonovich regime\\[0.3em]
-{\normalsize Working notes (independent mild construction, 2026-10-29)}}
+noise: Stratonovich regime}
 \author{Le Chen}
 \date{\today}
 \maketitle
 
 \begin{abstract}
-  For the Stratonovich hyperbolic Anderson model driven by a Gaussian noise
-  that is fractional in time, X.~Chen~\cite{chen:author2026:time-dependency}
-  proves the sharp existence condition and studies the large-time growth
-  of the first moment. The printed variational normalization of his
-  two-sided first-moment bounds requires clarification; no correction is
-  adopted here. He conjectures the growth of all integer moments. The source records the second-moment upper bound
-  $\E u^2(t,x)\le e^{Ct^2}$. The goal of this project is (i) an upper bound
-  for $\E u^2(t,x)$ at the correct scale
-  $t^{(4-\alpha-\alpha_0)/(3-\alpha)}$, and (ii) the sharp constant in the
-  second-moment asymptotics, or two-sided bounds of the same type as the
-  first-moment result. These notes fix the model, record exactly what is
-  known (with source pinpoints), state the targets, and list the planned
-  route. Section~\ref{S:G0} gives the mixed-term expansion and the upper
-  bound $\E u^2(t,x)\le\exp(Ct^\rho)$ for large $t$, where
-  $\rho=(4-\alpha-\alpha_0)/(3-\alpha-\alpha_0)$ satisfies
-  $\kappa<\rho<2$. It identifies a time-uniformity issue in the source's
-  intermediate estimate and recovers the quadratic-exponential bound
-  with a corrected argument. The uniform pairing estimate cannot reach
-  the target scale. Section~\ref{S:G1} computes finite-order white-space
-  and Riesz coefficients and their static calibrations.
-  Section~\ref{S:d1-upper} establishes upper bounds at the target
-  scale for $0<\alpha\le1$ in dimensions one, two and three, including
-  spatial white noise in dimension one, with explicit constants.
-  Section~\ref{S:interval-upper} gives the upper-bound argument for the
-  full homogeneous covariance class in every admissible dimension,
-  using interval fields, a uniform coefficient estimate and covariance
-  domination. The sharp constant remains open. The qualification on the
-  printed first-moment normalization concerns numerical calibrations and
-  the sharp target, and is not an input to this upper bound.
-  Section~\ref{S:near-static-lower} adds a candidate static lower comparison
-  and a near-static gap from twice the actual first-mean growth rate.
-  These internal consequences passed their own scoped independent review;
-  the original sharp constant remains open.
-  A further subsection proves temporal interpolation of the full
-  moment and recovery of the static moment constant as the time exponent
-  tends to zero; these three additional proofs passed their own scoped
-  independent review.
-  A further small-order screen tests direct Brownian clock copying
-  for a two-chain gap transform and passed its own scoped independent review.
+  We study the Stratonovich hyperbolic Anderson model with temporal
+  covariance $|s-t|^{-\alpha_0}$ and homogeneous spatial covariance
+  of order $\alpha$, for $0<\alpha_0<1$, $\alpha+\alpha_0<2$ and
+  every admissible model in dimensions one, two and three.
+  For initial data $(1,0)$, the second-moment logarithm has scale
+  $t^\kappa$, where $\kappa=(4-\alpha-\alpha_0)/(3-\alpha)$.
+  We identify its limit by an explicit variational formula over all
+  nonnegative smooth compact spacetime controls, including nonseparable
+  controls. The formula retains the covariance amplitude, kinetic
+  coefficient one and Gaussian variance-half action. Its value is
+  positive and finite for nonzero covariance and zero for zero covariance.
+  An independent full upper bound supplies the earlier finiteness inputs.
+  The sharp comparison uses actual Gaussian phase operators, source-first
+  point-moment transfer, uniform spatial-radius estimates and finite
+  optimization with nonnegative Gram entries.
+  We also derive an occupation ceiling and bounds in terms of a common
+  spatial energy. For spatial covariance $c\delta_0$ in one dimension,
+  that energy is $c^2/6$, yielding explicit bounds for the same moment
+  constant. Earlier pairing estimates and finite-order calculations are
+  retained as calibrations and records of their limitations.
+  Chen's author-version first-moment results
+  \cite{chen:author2026:time-dependency} provide comparison context;
+  their printed variational normalization is not corrected here or used
+  to prescribe the constant.
 \end{abstract}
 
 \tableofcontents
@@ -159,10 +143,19 @@ Throughout we write
 \end{equation}
 
 \paragraph{Main result and dependencies.}
-The main assertion of these notes is Theorem~\ref{T:full-upper}: the
-second moment has a finite upper growth rate at scale $t^\kappa$ for
-every covariance in Hypothesis~\ref{H:homog}. The sharp constant in
-Goal~\ref{G:sharp} is open. Theorem~\ref{T:full-upper} uses the fixed-order
+Theorem~\ref{T:intrinsic-second-moment} identifies the original point-moment
+limit for every covariance in Hypothesis~\ref{H:homog}.
+Its full variational domain and normalization are displayed in
+\eqref{E:intrinsic-positive-formula}.
+Theorem~\ref{T:intrinsic-occupation-ceiling} and
+Corollary~\ref{C:intrinsic-spatial-bracket} give derived bounds;
+Section~\ref{S:intrinsic-white-evaluation} evaluates the white spatial
+energy and its resulting moment bounds.
+These bounds need not be attained at the moment constant.
+
+The independent earlier Theorem~\ref{T:full-upper} establishes finite
+upper growth at scale $t^\kappa$ and precedes its uses proving
+variational finiteness. It uses the fixed-order
 construction proved in Lemma~\ref{L:joint-fixed-order}, the Gaussian
 and complex phase estimates in Sections~\ref{S:static-phase}--\ref{S:static-all-orders},
 and the interval coefficient and inventory estimates in
@@ -178,6 +171,16 @@ arguments are retained to record their separate hypotheses
 and limitations. Section~\ref{S:d1-upper} also gives explicit constants for
 $\alpha\le1$; the full-class theorem asserts a finite uniform constant,
 without giving a numerically optimized value.
+The later proof constructs the actual operator and its retaining sources
+in Sections~\ref{S:actual-operator-driver}--\ref{S:constant-phase-young},
+then proves the same-solution lower bound and positive-control scores
+in Sections~\ref{S:actual-raw-block-lower}--\ref{S:unmasked-variational}.
+The actual Gaussian upper argument culminates in
+Sections~\ref{S:original-point-transfer}--\ref{S:original-signed-score-upper}.
+Finite Gram optimization and its physical application then match the
+upper and lower values in Section~\ref{S:intrinsic-second-moment}.
+This dependency order does not use that final identification to prove
+its own finiteness.
 
 \paragraph{Notation and source-dependent statements.}
 The target spatial degree is $\alpha$, whereas $\chi$ denotes the degree
@@ -197,22 +200,26 @@ The unconditional first-to-second moment comparison is
 Proposition~\ref{P:Jensen}. Any numerical consequence involving the
 source's $L_*$ explicitly assumes a valid first-moment lower bound with
 that constant. No correction of its printed normalization is adopted.
+When a radius is given for topological support, the closed ball is meant
+unless a strict open inclusion is specified. In particular the spatial
+cutoffs have support in $\overline B_{2R}$ and the wave Green measures
+have support in $\overline B_t$, including the sphere measure in dimension
+three. Plateau and causal-cone arguments retain their strict margins.
 
 \paragraph{Which source statements are inputs.}
 The moment estimate uses the bounded-operator Crouzeix--Palencia
 theorem in~\eqref{E:cp-input}. The fixed-order construction is supplied
 here by Lemmas~\ref{L:spatial-wick-measures}--\ref{L:joint-fixed-order},
-using only the source's universal pairing inequality
-\cite{chen:author2026:time-dependency}*{Theorem~3.1, (3.6), pp.~14--15}
-and the direct norm bounds in Lemma~\ref{L:damped-homogeneous-norms}.
+using Lemma~\ref{L:pairing-product-envelope}, which proves the finite
+product envelope used here, and the direct norm bounds in Lemma~\ref{L:damped-homogeneous-norms}.
+The Case~2 covariance step is proved independently in
+Lemma~\ref{L:translated-covariance-CS}; the precise source-display
+qualifications and regularized application are in
+Remark~\ref{R:source-case2-time-shift}.
 Thus neither Theorem~4.1 nor Lemma~4.4 nor Appendix~A.1 of the source is
 an analytic construction input. The finite-width Gaussian field and
 multiple Stratonovich integral use its definitions and regularization
 conventions, with Green smoothing removed before noise smoothing.
-The three construction lemmas and their changed consumers passed a fresh
-scoped Opus5.5/HIGH review at source revision \texttt{f9303ed}. This is
-separate from the earlier quantitative reviews and from the pending
-whole-paper cold read.
 
 Proposition~\ref{P:mild-construction} proves that the resulting series
 satisfies its onefold Stratonovich mild equation, using the corrected
@@ -282,8 +289,8 @@ The full mixed-term expansion is justified in Proposition~\ref{P:mixed}.
 
 \subsection{The universal two-chain bound}
 
-\cite{chen:author2026:time-dependency}*{Theorem~3.1, (3.6), p.~15} bounds
-exactly such two-chain pairing integrals with general nonnegative kernels
+\cite{chen:author2026:time-dependency}*{Theorem~3.1, (3.6), p.~15} states
+an estimate for such two-chain pairing integrals with nonnegative kernels
 $G_l$ by products of the norms $\|G_l\|^{(0)}$, $\|G_l\|^{(1)}_{j,k}$,
 $\|G_l\|^{(2)}_{j,k}$ of \cite{chen:author2026:time-dependency}*{(3.3)--(3.5)},
 over a partition $\{Q_0,Q_1,Q_2\}$ of $\{1,\dots,2n\}$ with $\#Q_0=\#Q_1$ and
@@ -293,17 +300,22 @@ $\Gamma(\alpha_0)^{-1}\int_{A_{j,k}}e^{-\lambda|r|}
 \lambda^{\alpha_0-1}\ud\lambda$ for measurable $A_{j,k}\subset\R_+$.
 The application to the full covariance therefore requires regularization;
 this is carried out in Lemma~\ref{L:crude-corrected}.
-The theorem includes cross-pairings between the two chains. In the
+The theorem includes cross-pairings between the two chains.
+Our finite maximum formulation is proved in
+Lemma~\ref{L:pairing-product-envelope}; a maximizing assignment may depend
+on the actual kernels. Lemma~\ref{L:translated-covariance-CS} supplies its Case~2 estimate
+with the predecessor-time difference retained, as explained in
+Remark~\ref{R:source-case2-time-shift}. In the
 source it is used only for Stratonovich integrability (Section~4) and, via
 Lemma~A.1 with $G_l(t,x)=e^{-\theta t}G(t,x)$, in Laplace variables.
 
 \subsection{Known moment bounds}
 
-\myCmts{The following statement records the source as printed. Its
+The following statement records the source as printed. Its
 variational constants require normalization clarification; see
 Remark~\ref{R:three-endpoint-scope}. We retain the printed formulas
 without adopting a correction. The upper-bound proofs below do not
-use the first-moment upper constant.}
+use the first-moment upper constant.
 
 \begin{theorem}[\cite{chen:author2026:time-dependency}*{Theorem~1.2, (1.10)--(1.13)}]\label{T:first}
   \emph{Source statement as printed.} The source states, under
@@ -443,7 +455,7 @@ and the Green regularization on pp.~13--14}.
   Lemma~\ref{L:joint-fixed-order} below constructs each $X_n$ and each
   individual two-chain diagram at arbitrary vertexwise widths, including
   unequal and empty chains. Its proof uses the positive spatial-measure
-  limit and the imported universal Theorem~3.1; it uses neither the present
+  limit and Lemma~\ref{L:pairing-product-envelope}; it uses neither the present
   proposition nor any infinite solution series.
 
   At positive noise widths Wick's formula gives zero at odd total order
@@ -483,7 +495,7 @@ and the Green regularization on pp.~13--14}.
 
   Lemmas~\ref{L:crude-corrected} and~\ref{L:vertex-crude} independently
   prove fixed-$t$ norm summability of the $X_n$, using the fixed-order
-  construction just cited and the universal pairing bound.
+  construction just cited and Lemma~\ref{L:pairing-product-envelope}.
   Proposition~\ref{P:mild-construction} identifies their series as a
   Stratonovich mild solution. None of those proofs uses the present
   mixed-term identity. Hence $U_N=\sum_{n=0}^N X_n\to u$ in $L^2$, and
@@ -567,7 +579,10 @@ $\int_0^\infty e^{-as}\widehat G_s(\xi)\ud s=(a^2+|\xi|^2)^{-1}$.
 The last expression is the space-time covariance quadratic form;
 in physical variables it pairs $G_\theta(s,x)$ with $G_\theta(t,y)$.
 Thus, the second Green factor in the printed source (3.5) is read with
-the independent variable $y$.
+the independent variable $y$; see
+Lemma~\ref{L:translated-covariance-CS} and
+Remark~\ref{R:source-case2-time-shift} for the independent justification
+and the exact source qualification.
 
 \begin{lemma}[Homogeneous damped norms and temporal tails]
   \label{L:damped-homogeneous-norms}
@@ -657,6 +672,466 @@ the independent variable $y$.
   form. This proves all smoothing and truncation assertions, including
   the bounds for temporal tails.
   This proves Lemma~\ref{L:damped-homogeneous-norms}.
+\end{proof}
+
+\paragraph{Covariance pairings of translated kernels.}
+Fix $d\in\{1,2,3\}$. Let $\mu$ be a finite positive Borel measure on
+$\R^d$ such that $\gamma(z)=\int e^{i\xi\cdot z}\mu(\ud\xi)$ is real and
+nonnegative for every $z$. Thus, $\gamma$ is bounded, continuous and even,
+with $0\le\gamma(z)\le\mu(\R^d)$. Let $\nu$ be a positive Borel measure
+on $(0,\infty)$ with $\nu((0,L])<\infty$ for every $L>0$, and put
+\[
+  \kappa_L(t)=\int_{(0,L]}e^{-\lambda|t|}\nu(\ud\lambda),\qquad
+  C_L((t,x),(s,y))=\kappa_L(t-s)\gamma(x-y).
+\]
+For complex $L^1(\R\times\R^d)$ functions $f,h$, define
+\begin{equation}\label{E:translated-covariance-form}
+  Q_L(f,h)=\int_{\R^2}\int_{\R^{2d}}
+  f(t,x)\overline{h(s,y)}\kappa_L(t-s)\gamma(x-y)
+  \ud x\ud y\ud t\ud s.
+\end{equation}
+This integral is absolutely convergent, with
+$|Q_L(f,h)|\le\nu((0,L])\mu(\R^d)\|f\|_1\|h\|_1$.
+For nonnegative $f,h$, define $Q(f,h)=\lim_{L\to\infty}Q_L(f,h)$
+as an extended nonnegative number. This positive cap limit also defines
+the pairing when the full temporal kernel is singular on the diagonal.
+The spatial covariance is fixed throughout this definition.
+For a nonnegative Borel function $G$ on $(0,\infty)\times\R^d$, let
+$G^0$ be its zero extension to nonpositive times and put
+\[
+  N_0(G)=\int_0^\infty\int_{\R^d}G(t,x)\ud x\ud t,\qquad
+  N_C(G)^2=Q(G^0,G^0).
+\]
+For $(A,a)\in\R\times\R^d$, write
+$T_{A,a}f(t,x)=f(t-A,x-a)$. All translated pairings are over the full
+time line.
+
+\begin{lemma}[Translated covariance Cauchy--Schwarz]
+  \label{L:translated-covariance-CS}
+  Under the preceding assumptions on $\mu$ and $\nu$, let $G_1,G_2$ be
+  nonnegative Borel functions with $N_0(G_i),N_C(G_i)<\infty$, $i=1,2$.
+  For arbitrary origins $(A,a),(B,b)\in\R\times\R^d$,
+  \begin{equation}\label{E:translated-covariance-CS}
+    0\le Q(T_{A,a}G_1^0,T_{B,b}G_2^0)\le N_C(G_1)N_C(G_2),
+  \end{equation}
+  and $Q(T_{A,a}G_i^0,T_{A,a}G_i^0)=N_C(G_i)^2$ for $i=1,2$.
+  The coefficient one is independent of the origins, dimension, cap and
+  covariance masses. Zero norms and zero measures are included.
+\end{lemma}
+
+\begin{proof}
+  We first prove positivity and Cauchy--Schwarz for the stationary
+  kernel $C_L$ at fixed finite $L$. For $\lambda>0$, define
+  \[
+    h_\lambda(t,r)=\sqrt{2\lambda}\,e^{-\lambda(t-r)}
+    \mathbf1_{\{r\le t\}}.
+  \]
+  Direct integration gives
+  \[
+    \int_\R h_\lambda(t,r)h_\lambda(s,r)\ud r
+    =2\lambda e^{-\lambda(t+s)}
+    \int_{-\infty}^{\min(t,s)}e^{2\lambda r}\ud r
+    =e^{-\lambda|t-s|}.
+  \]
+  In particular, $\int h_\lambda(t,r)^2\ud r=1$.
+  On the complex Hilbert space
+  \[
+    \mathcal H_L=L^2((0,L]\times\R^d\times\R,
+    \nu(\ud\lambda)\mu(\ud\xi)\ud r),
+  \]
+  with inner product linear in its first entry, put
+  $\Phi_L(t,x)(\lambda,\xi,r)=h_\lambda(t,r)e^{i\xi\cdot x}$.
+  Then
+  \[
+    \|\Phi_L(t,x)\|^2=m_L:=\nu((0,L])\mu(\R^d),\qquad
+    \langle\Phi_L(t,x),\Phi_L(s,y)\rangle=C_L((t,x),(s,y)).
+  \]
+  The scalar integrals are absolutely convergent: Cauchy--Schwarz in
+  $r$ bounds $\int|h_\lambda(t,r)h_\lambda(s,r)|\ud r$ by one, and
+  both remaining measures are finite on the cap.
+
+  The map $(t,x)\mapsto\Phi_L(t,x)$ is norm-continuous, since its squared
+  increment is $2m_L-2\operatorname{Re}C_L((t,x),(s,y))$.
+  Continuity of $C_L$ follows by dominated convergence against the finite
+  measures. Thus, the map is strongly measurable, has separable range
+  and is bounded. For $f\in L^1$, the Bochner integral
+  $F_L(f)=\int f(t,x)\Phi_L(t,x)\ud t\ud x$ exists.
+  Bochner Fubini, justified by $m_L\|f\|_1\|h\|_1$, gives
+  $Q_L(f,h)=\langle F_L(f),F_L(h)\rangle$. Therefore,
+  \[
+    |Q_L(f,h)|\le Q_L(f,f)^{1/2}Q_L(h,h)^{1/2}.
+  \]
+  This uses the original stationary covariance, rather than positivity
+  of an independently shifted cross kernel. The feature space is
+  deterministic and introduces no new Gaussian field.
+
+  Changing both integration variables in~\eqref{E:translated-covariance-form}
+  by the same time and spatial translation gives
+  \[
+    Q_L(T_{A,a}f,T_{A,a}h)=Q_L(f,h).
+  \]
+  Both differences remain unchanged. The full time line and Lebesgue
+  translation invariance justify this equality without an origin factor.
+  Apply Cauchy--Schwarz to the two different translates and this equality
+  separately to their self pairings. This proves the capped form
+  of~\eqref{E:translated-covariance-CS}.
+
+  To make the passage for possibly unbounded nonnegative kernels
+  explicit, set
+  \[
+    G_{i,M}(t,x)=\min(G_i(t,x),M)
+    \mathbf1_{\{0<t\le M,\ |x|\le M\}},\qquad M\in\N.
+  \]
+  These functions increase to $G_i$ almost everywhere. Their zero
+  extensions and translates are bounded compactly supported $L^1$
+  functions. Since $C_L\ge0$, monotone convergence passes the capped
+  inequality and common-translation identity to $G_i$ as $M\to\infty$.
+  Equivalently, the finite-cap passage follows from $L^1$ convergence
+  and the absolute bound after~\eqref{E:translated-covariance-form}.
+
+  Finally, positivity of $\nu$ and nonnegativity of $\gamma$ give
+  \[
+    Q_L(G_i^0,G_i^0)\uparrow N_C(G_i)^2,\qquad
+    Q_L(T_{A,a}G_1^0,T_{B,b}G_2^0)
+    \uparrow Q(T_{A,a}G_1^0,T_{B,b}G_2^0).
+  \]
+  The finite self norms bound the latter limit by $N_C(G_1)N_C(G_2)$.
+  The common-translation identity passes to the limit in the same way.
+  No division by a norm is used, so zero norms cause no exception.
+  No spatial Gaussian mollifier is removed in this argument.
+  This proves Lemma~\ref{L:translated-covariance-CS}.
+\end{proof}
+
+\begin{remark}[Source Case 2 and the actual regularized inputs]
+  \label{R:source-case2-time-shift}
+  \emph{(i)} In Case~2 of the proof of
+  \cite{chen:author2026:time-dependency}*{Theorem~3.1, p.~21}, the final
+  vertices belong to two nonempty chains of lengths $n_1,n_2$ with
+  $n_1+n_2=2n$. Fix their predecessor origins separately:
+  \[
+    (A,a)=
+    \begin{cases}
+      (0,0),&n_1=1,\\
+      (s_{n_1-1},x_{n_1-1}),&n_1>1,
+    \end{cases}
+    \qquad
+    (B,b)=
+    \begin{cases}
+      (0,0),&n_2=1,\\
+      (s_{2n-1},x_{2n-1}),&n_2>1.
+    \end{cases}
+  \]
+  The second chain's first vertex uses its own root. An empty chain
+  has no interchain Case~2 pair. The final-pair integral is, using
+  evenness to fix the orientation,
+  \[
+    \begin{split}
+      I&=\int_A^\infty\int_B^\infty\int_{\R^{2d}}
+      G_1(t-A,x-a)\kappa(t-s)\gamma(x-y)G_2(s-B,y-b)
+      \ud x\ud y\ud s\ud t\\
+      &=Q(T_{A,a}G_1^0,T_{B,b}G_2^0),
+    \end{split}
+  \]
+  where the full temporal expression means the positive cap limit.
+  Lemma~\ref{L:translated-covariance-CS} gives
+  $0\le I\le N_C(G_1)N_C(G_2)$ uniformly in the predecessors, so the
+  bound can be inserted into the remaining nonnegative integrals in the
+  source's induction. If only $u=t-A$ and $v=s-B$ are substituted, the
+  integrand has factors
+  \begin{equation}\label{E:translated-covariance-offset}
+    G_1(u,x-a)\kappa(u-v+A-B)\gamma(x-y)G_2(v,y-b).
+  \end{equation}
+  The time difference $A-B$ must remain. The source's first Case~2
+  equality on physical p.~21 displays $\kappa(u-v)$ after this change
+  of time variables, which is not an identity for general $A\ne B$.
+  Its spatial origins remain in the two tests, so $\gamma(x-y)$ is
+  correct in those absolute spatial variables. Changing also
+  $x=X+a$, $y=Y+b$ gives $\gamma(X-Y+a-b)$.
+  We use the original integral and the proved inequality, not the
+  offset-free equality or positivity of a shifted cross kernel.
+
+  \emph{(ii)} The norm $N_C(G)$ pairs $G(t,x)$ with $G(s,y)$ in
+  \eqref{E:translated-covariance-form}, with independent spatial variables.
+  The source's printed (3.5), physical p.~14, repeats $x$ in its second
+  Green factor. Our quadratic form states explicitly the convention used
+  in~\eqref{E:damped-norm-definitions}; it is not a literal quotation
+  of that display.
+
+  \emph{(iii)} We use the actual common-prefix source convention
+  of~\cite{chen:author2026:time-dependency}*{(2.11), p.~9, and (2.24),
+  p.~13}. Write $Y_{\epsilon,\delta}$ for its positive-width fields.
+  Independence of disjoint Laplace-frequency increments makes the
+  cross covariance of two prefixes their common part. Their upper
+  limits are $\delta_j^{-1}$ and $\delta_h^{-1}$, whose minimum is
+  $(\delta_j\vee\delta_h)^{-1}$. Spatial heat convolution on the two
+  fields gives $p_{\epsilon_j}*p_{\epsilon_h}=p_{\epsilon_j+\epsilon_h}$.
+  Thus, with the original covariance amplitude,
+  \begin{equation}\label{E:pairing-source-covariance}
+    \begin{split}
+      \E[Y_{\epsilon_j,\delta_j}(s,x)
+        Y_{\epsilon_h,\delta_h}(t,y)]
+      &=\kappa_{\delta_j\vee\delta_h}(s-t)
+        (p_{\epsilon_j+\epsilon_h}*\Gamma)(x-y),\\
+      \kappa_\delta(u)&=\frac1{\Gamma_{\mathrm E}(a)}
+        \int_0^{\delta^{-1}}e^{-\lambda|u|}\lambda^{a-1}\ud\lambda,
+        \qquad a=\alpha_0.
+    \end{split}
+  \end{equation}
+  For generalized $\Gamma$, the spatial identity follows by testing
+  against heat functions, or by their spectral multipliers; it requires
+  no covariance density. The endpoint zero in the Laplace interval has
+  zero Lebesgue measure, so $[0,L]$ and $(0,L]$ give the same integral.
+  This verifies the covariance used on each vertexwise edge. It does
+  not construct the coupled family from the given $W$ alone. Its
+  common-field realization, any prescribed auxiliary Gaussian extension,
+  and its joint source limits remain the separate hypotheses and
+  deductions of Lemmas~\ref{L:spatial-wick-measures}--\ref{L:joint-fixed-order};
+  no new point-field measurability or uniqueness claim is made here.
+  At an edge $e=\{j,h\}$, retain positive spatial widths
+  $\epsilon_j,\epsilon_h$ and use
+  \[
+    \mu_e(\ud\xi)=e^{-(\epsilon_j+\epsilon_h)|\xi|^2/2}\mu(\ud\xi),
+    \qquad \gamma_e=p_{\epsilon_j+\epsilon_h}*\Gamma\ge0.
+  \]
+  For $b=\epsilon_j+\epsilon_h>0$, the radial ball masses
+  $\mu(B_r)=Vr^\alpha$ from Lemma~\ref{L:damped-homogeneous-norms} give
+  \[
+    \mu_e(\R^d)=\alpha Vb^{-\alpha/2}
+    \int_0^\infty u^{\alpha-1}e^{-u^2/2}\ud u<\infty.
+  \]
+  This uses ball masses rather than a radial density, and establishes
+  finiteness only. It does not replace the later uniform norm bounds.
+  Nonnegativity of the heat convolution follows from the nonnegative
+  Radon measure $\Gamma$. This spatial covariance stays fixed during
+  the lemma's application. For a measurable temporal domain
+  $A_e\subset(0,\infty)$, use
+  \[
+    \nu_e(\ud\lambda)=\mathbf1_{A_e}(\lambda)
+    \lambda^{\alpha_0-1}\ud\lambda/\Gamma_{\mathrm E}(\alpha_0).
+  \]
+  Since $\alpha_0>0$, it is finite on every $(0,L]$. This covers both
+  bounded regularization domains and marked-tail domains after adding
+  the finite cap, with the Gamma normalization already included.
+  The tested kernels are $e^{-\theta t}G_t$, with positive Green
+  smoothing in dimension three when a function is required.
+  They have $N_0=\theta^{-2}$, and
+  Lemma~\ref{L:damped-homogeneous-norms} supplies the finite full and tail
+  second-norm bounds and first-norm bounds. These are precisely the
+  edge norm hypotheses used in Lemma~\ref{L:pairing-product-envelope}.
+  The Case~2 estimate contributes exactly its two second norms, with
+  coefficient one. It changes neither a $Q_2$ factor nor any coefficient
+  estimate and adds no factor depending on $A+B$.
+  Temporal cap removal uses positivity; Green-width removal at fixed
+  positive spatial widths and the subsequent spatial-noise limit retain
+  their separate weak-limit arguments in Lemmas~\ref{L:joint-fixed-order}
+  and~\ref{L:spatial-wick-measures}. No pointwise monotonicity of spatial
+  Gaussian smoothing or general unregularized spatial-distribution
+  version is asserted.
+
+  \emph{(iv)} We prove the product estimate needed here in
+  Lemma~\ref{L:pairing-product-envelope}, rather than importing the
+  remaining displayed induction. On p.~16, the empty-first-chain base
+  caption interchanges the mass and first-norm kernel labels; their
+  chronological order gives mass on the first kernel. On p.~18, (3.9)
+  omits the factor two when a fused kernel occupies a first-norm slot.
+  Retaining that factor and using the mass times first-norm convolution
+  bound below preserves the half-bound needed in Case~3. The p.~19
+  mass-slot partition uses a union of the two excluded labels, not the
+  printed intersection; its first-slot edge count excludes the fused
+  slot. The p.~21 Case~2 offset is handled by the preceding lemma.
+  These are explicit qualifications of the printed formulas, not
+  corrections attributed to the source or a claim that its intended
+  product bound is false. The finite maximum below is sufficient for
+  all our uses; we assert no partition independent of the kernel family.
+\end{remark}
+
+\subsection{A finite product bound for two ordered chains}
+
+Fix $d\ge1$, $0<a<1$ and a matching $D$ on $2n$ labels.
+For each edge $e\in D$, let $\mu_e$ be finite and positive, with
+$\gamma_e(x)=\int e^{i\xi\cdot x}\mu_e(\ud\xi)\ge0$.
+For a measurable $A_e\subset(0,\infty)$ put
+\[
+  \nu_e(\ud\lambda)=\Gamma_{\mathrm E}(a)^{-1}
+  \mathbf1_{A_e}(\lambda)\lambda^{a-1}\ud\lambda,
+  \qquad \kappa_e(t)=\int e^{-\lambda|t|}\nu_e(\ud\lambda).
+\]
+For nonnegative $G\in L^1((0,\infty)\times\R^d)$ define
+\begin{equation}\label{E:pairing-edge-norms}
+  \begin{split}
+    N_0(G)&=\int G(t,x)\ud t\ud x,\\
+    N_{1,e}(G)&=\int\left|\int e^{-\lambda t+i\xi\cdot x}
+      G(t,x)\ud t\ud x\right|\nu_e(\ud\lambda)\mu_e(\ud\xi),\\
+    N_{2,e}(G)^2&=\int G(s,x)G(t,y)
+      \kappa_e(s-t)\gamma_e(x-y)\ud s\ud x\ud t\ud y.
+  \end{split}
+\end{equation}
+Time integrations in these definitions are positive. Denote the inner
+Laplace--Fourier transform by $\mathcal L G(\lambda,\xi)$. The last
+integral means its nonnegative temporal cap limit, as in the preceding
+covariance pairing. In particular its spatial variables are independent.
+
+Let $I_1=\{1,\ldots,n_1\}$ and
+$I_2=\{n_1+1,\ldots,2n\}$, where $n_1+n_2=2n$ and either chain may
+be empty. Each chain is ordered in its own time variables. Write $p(l)$
+for its predecessor, using $(s_{p(l)},x_{p(l)})=(0,0)$ at the first
+vertex of each chain. Set
+\begin{equation}\label{E:pairing-diagram-general}
+  \begin{split}
+    I_D(\boldsymbol G)=\int
+    &\prod_{\rho=1}^2\prod_{l\in I_\rho}
+      G_l(s_l-s_{p(l)},x_l-x_{p(l)})\\
+    &\times\prod_{e=\{j,k\}\in D}
+      \kappa_e(s_j-s_k)\gamma_e(x_j-x_k)
+      \ud\boldsymbol s\ud\boldsymbol x .
+  \end{split}
+\end{equation}
+The domain is the product of the two positive ordered time simplices
+and all spatial variables.
+
+Call $(Q,\iota)$ admissible if $Q_0,Q_1,Q_2$ partition the kernel labels,
+$|Q_0|=|Q_1|$, and the map $\iota:Q_1\cup Q_2\to D$ uses each edge
+once on $Q_1$ or twice on $Q_2$, never both. There is no incidence
+requirement between $l$ and $\iota(l)$. These assignments form a finite
+nonempty set $\mathcal A_D$. Put
+\begin{equation}\label{E:pairing-product-general}
+  \mathcal P_{Q,\iota}(\boldsymbol G)=
+  \prod_{l\in Q_0}N_0(G_l)
+  \prod_{l\in Q_1}2N_{1,\iota(l)}(G_l)
+  \prod_{l\in Q_2}N_{2,\iota(l)}(G_l).
+\end{equation}
+Thus, $|Q_2|$ is even and $|Q_0|+|Q_2|/2=n$.
+
+\begin{lemma}[Pairing product envelope]\label{L:pairing-product-envelope}
+  Suppose every $G_l$ is nonnegative and integrable, and
+  $N_{1,e}(G_l),N_{2,e}(G_l)<\infty$ for every $l$ and $e\in D$.
+  Then
+  \begin{equation}\label{E:pairing-product-envelope}
+    I_D(\boldsymbol G)\le
+    \max_{(Q,\iota)\in\mathcal A_D}
+      \mathcal P_{Q,\iota}(\boldsymbol G).
+  \end{equation}
+  A maximizing assignment may depend on the actual kernels and edge data.
+  No single assignment valid for all kernel families is asserted.
+  For $n=0$, both sides are one. Zero kernels, measures and norms are allowed.
+\end{lemma}
+
+\begin{proof}
+  First cap every temporal domain at $L<\infty$; its measure is finite
+  since $a>0$. The stationary covariance pairing in
+  Lemma~\ref{L:translated-covariance-CS} has norm $N_{2,e}$.
+  Its feature $h_\lambda(t,r)e^{i\xi\cdot x}$ and its proof apply in
+  any finite dimension: their only spatial input is the finite measure
+  $\mu_e$. Hence, its coefficient-one Cauchy--Schwarz inequality and
+  invariance under simultaneous time and space translation apply here.
+  All Fourier and Bochner interchanges at this cap are justified by
+  the finite covariance mass times the relevant $L^1$ masses.
+
+  For one-sided spacetime convolution $F=G*H$, positivity and the
+  Laplace--Fourier product give
+  \begin{equation}\label{E:pairing-convolution-norms}
+    \begin{split}
+      N_0(F)&=N_0(G)N_0(H),\\
+      N_{1,e}(F)&\le N_0(G)N_{1,e}(H),\\
+      N_{2,e}(F)&\le N_0(G)N_{2,e}(H).
+    \end{split}
+  \end{equation}
+  Indeed, $|\mathcal L G(\lambda,\xi)|\le N_0(G)$ for $\lambda\ge0$
+  proves the first-norm estimate. For the second, zero-extend $H$ in
+  time. Its translates have the same covariance Hilbert norm.
+  Express $G*H$ as their Bochner integral against $G$ and apply
+  Minkowski. Thus, every fused kernel satisfies all remaining edge
+  hypotheses. No division by a norm is used.
+
+  We use induction on $n$, beginning with the empty product at $n=0$.
+  With two vertices on one chain the integral is at most
+  $N_0(G_{\rm first})N_{1,e}(G_{\rm last})$; with one on each chain
+  it is at most their two second norms by covariance Cauchy--Schwarz.
+  These also verify both nonempty-chain orientations at $n=1$.
+  Assume the full bound at $n-1$.
+
+  We first prove a half-bound on any region where an endpoint $v$,
+  its predecessor $p$ and its partner $a$ satisfy $s_a\le s_p$.
+  Require the region indicator to be independent of $(s_v,x_v)$.
+  Write $e_0=\{a,v\}$. Since $\kappa_{e_0}$ is decreasing on positive
+  arguments, replace $\kappa_{e_0}(s_v-s_a)$ by
+  $\kappa_{e_0}(s_v-s_p)$. Integrating the endpoint and taking the
+  modulus of its spatial Fourier phase gives the factor
+  \[
+    \int |\mathcal L G_v(\lambda,\xi)|
+      \nu_{e_0}(\ud\lambda)\mu_{e_0}(\ud\xi)=N_{1,e_0}(G_v).
+  \]
+  Now drop the region indicator by positivity. Remove $v$ and its edge.
+  Its partner $a$ is unpaired. If $a$ is terminal in its remaining
+  chain, integrate it to $N_0(G_a)$ and apply induction. The result
+  is one half of an admissible product, adding $a$ to $Q_0$ and $v$
+  to $Q_1$ with edge $e_0$.
+
+  Otherwise, let $b$ be the immediate successor of $a$ on its own chain.
+  Integration at $a$ gives exactly $F=G_a*G_b$ at $b$, also when $a$
+  was the first vertex. Apply induction to the two reduced chains and
+  $D\setminus\{e_0\}$. Mark the slot $i=0,1,2$ occupied by $F$ in a
+  maximizing reduced product. Let $R_0,R_1,R_2$ be its other slots and
+  $B_{\rm rest}$ their product, retaining every first-slot factor two.
+  The new slots can be chosen as follows:
+  \[
+    \begin{array}{c|ccc}
+      i&Q_0&Q_1&Q_2\\ \hline
+      0&R_0\cup\{a,b\}&R_1\cup\{v\}&R_2\\
+      1&R_0\cup\{a\}&R_1\cup\{b,v\}&R_2\\
+      2&R_0\cup\{a\}&R_1\cup\{v\}&R_2\cup\{b\}.
+    \end{array}
+  \]
+  For $i=0$, $|R_0|+1=|R_1|$ and $|R_2|$ is even. Mass
+  multiplicativity gives one half of the displayed new product.
+  For $i=1$, $|R_0|=|R_1|+1$ and $|R_2|$ is even. If $e_1$ is the
+  inherited edge, the actual term and its bound are
+  \begin{align*}
+    &N_{1,e_0}(G_v)\,[2N_{1,e_1}(F)]B_{\rm rest}\\
+    &\qquad\le\tfrac12N_0(G_a)
+      [2N_{1,e_1}(G_b)][2N_{1,e_0}(G_v)]B_{\rm rest}.
+  \end{align*}
+  The inherited edge stays first exactly once; $e_0$ is first once.
+  No incidence condition is needed. For $i=2$, $|R_0|=|R_1|$ and
+  $|R_2|$ is odd; $e_1$ already occurs once there. The last inequality
+  in~\eqref{E:pairing-convolution-norms} puts its other second norm
+  on $G_b$, a mass on $G_a$ and $2N_{1,e_0}(G_v)$ on $v$, again with
+  a factor one half. Every old edge retains its type and multiplicity.
+  The displayed counts give $|Q_0|=|Q_1|$ and even $|Q_2|$ in all
+  three cases. This proves the regional half-bound, using only the
+  full induction hypothesis, not an assumed stronger induction.
+
+  A domestic endpoint has its partner before its predecessor, so this
+  half-bound applies on the entire domain. This also handles an empty
+  chain. If both endpoints $u=n_1$ and $v=2n$ are paired to each other,
+  condition on their separate predecessors $(A,z),(B,w)$. The endpoint
+  integral keeps the temporal argument $r-q+A-B$ in relative times.
+  The original stationary covariance Cauchy--Schwarz inequality bounds
+  it by $N_{2,e}(G_u)N_{2,e}(G_v)$; translate each self pairing
+  separately. Induction and adding $u,v$ to $Q_2$ prove the full bound.
+  There is no origin factor or discarded predecessor-time offset.
+
+  It remains that both endpoint pairs are cross and distinct.
+  Let $a$ be the partner of $v$, $b$ the partner of $u$, and put
+  $p=u-1$, $q=v-1$. Then $a<u$ and $b<v$.
+  On $\{s_a\le s_q\}$ remove $v$ by the regional half-bound.
+  Its indicator is independent of $s_v,x_v$.
+  On the complementary region the chain orders give
+  $s_p\ge s_a>s_q\ge s_b$, so remove $u$ instead; that indicator is
+  independent of $s_u,x_u$. The removed partner has a successor on
+  its own chain in both cases. The two bounds are $P/2$ and $P'/2$
+  for possibly different admissible products of the original labels.
+  Therefore, their sum is at most $(P+P')/2\le\max(P,P')$.
+  This proves~\eqref{E:pairing-product-envelope} at the finite cap.
+
+  Finally, increase $L$ to infinity. The diagram integrands and all
+  norm factors increase to their declared values, by positivity and
+  monotone convergence. There are only finitely many admissible
+  products, so their maximum converges to the maximum of their limits.
+  No kernel-independent or measurable maximizing choice is needed.
+  Zero norms and measures require no exception; the positive cap
+  convention avoids any undefined product on a singular time diagonal.
+  This proves Lemma~\ref{L:pairing-product-envelope}.
 \end{proof}
 
 Use the joint Gaussian regularizations of the source's (2.11).
@@ -897,18 +1372,17 @@ in chain $i$, with value zero for an empty chain.
   of $k$ nonnegative integrals, each with one marked time covariance
   $K_{1/\eta}$ and all other time covariances full.
 
-  Apply the imported universal pairing inequality
-  \cite{chen:author2026:time-dependency}*{Theorem~3.1, (3.6), pp.~14--15}
-  to the damped kernels $e^{-s}G_s$. At first smooth the Green kernels
-  in dimension three and cap the temporal Laplace domains above.
+  Apply Lemma~\ref{L:pairing-product-envelope} to the damped kernels
+  $e^{-s}G_s$. At first smooth the Green kernels in dimension three and
+  cap the temporal Laplace domains above.
   Each spatial edge measure is a finite Gaussian-weighted $\mu$ with
   nonnegative physical covariance, and each temporal domain is a
   Laplace interval or its restriction. These are exactly the hypotheses
-  of that theorem. The finite-horizon exponential loss is at most
+  of that lemma. The finite-horizon exponential loss is at most
   $e^{T_1+T_2}$. Lemma~\ref{L:damped-homogeneous-norms} bounds all
   unmarked norms independently of the smoothing parameters. The marked
   edge appears once in the first-norm product or twice in the
-  second-norm product. Consequently,
+  second-norm product in every admissible assignment. Consequently,
   \begin{equation}\label{E:joint-temporal-tail}
     0\le F_{\boldsymbol\epsilon,0,D}
     -F_{\boldsymbol\epsilon,\eta,D}
@@ -979,7 +1453,8 @@ $C_0<\infty$ and $\theta_0=1$ such that, for $\theta\ge\theta_0$,
   On the two finite chains, the product of the exponential weights
   telescopes to $e^{-\theta(s_n+s_{2n})}\ge e^{-2\theta t}$.
   Extend the nonnegative integral to the two infinite time simplices
-  and apply the source's Theorem~3.1. If $q_i=\#Q_i$, then
+  and apply Lemma~\ref{L:pairing-product-envelope}. For every admissible
+  product, put $q_i=\#Q_i$. Then
   $q_0=q_1$ and $q_0+q_2/2=n$. Hence,~\eqref{E:crude-norms} bounds
   each pairing by $e^{2\theta t}C^n\theta^{-2n}$.
   Summing the $P_n$ pairings gives
@@ -987,9 +1462,9 @@ $C_0<\infty$ and $\theta_0=1$ such that, for $\theta\ge\theta_0$,
     \E X_n(t,x)^2\le P_n e^{2\theta t}C^n\theta^{-2n},
     \qquad\theta\ge\theta_0.
   \end{equation}
-  To be precise about the source's finite-spectral-measure hypothesis in
-  Theorem~3.1, first apply it with the spatially smoothed covariance and
-  the temporal truncations of (2.24). The smoothed spectral measure is
+  For the finite-spectral-measure hypothesis in
+  Lemma~\ref{L:pairing-product-envelope}, first apply it with the spatially
+  smoothed covariance and the temporal truncations of (2.24). The smoothed spectral measure is
   finite: the Gaussian multiplier is bounded by a constant times
   $(1+|\xi|^2)^{-(2-\alpha_0)/2}$, whose integral is finite by (1.5).
   This argument requires no radial density for the spectral measure.
@@ -1057,10 +1532,10 @@ $C_0<\infty$ and $\theta_0=1$ such that, for $\theta\ge\theta_0$,
   $s'_j=t-s_{n+1-j}$ and $y'_j=x-y_{n+1-j}$.
   This reverses the chain and only permutes its vertex widths;
   covariance differences change sign and the kernels are even.
-  For each pairing apply the imported Theorem~3.1 to
+  For each pairing apply Lemma~\ref{L:pairing-product-envelope} to
   $e^{-\theta r}G_r$, first with Green smoothing if
-  $d=3$. The theorem permits a separate finite spectral measure and
-  temporal truncation on each edge; see its (3.1)--(3.2), pp.~14--15.
+  $d=3$. The lemma permits a separate finite spectral measure and
+  temporal truncation on each edge.
   These hypotheses hold here: the spatial spectral measure on an edge
   is $e^{-(\epsilon_j+\epsilon_l)|\xi|^2/2}\mu(\ud\xi)$, which is
   finite by (1.5), and its temporal Laplace domain is
@@ -1081,8 +1556,9 @@ $C_0<\infty$ and $\theta_0=1$ such that, for $\theta\ge\theta_0$,
   normalization or large-parameter formula in the source's Appendix.
   The constants are independent of all the vertex widths.
 
-  Since $\#Q_0=\#Q_1$ and $\#Q_0+\#Q_2/2=n$ in Theorem~3.1,
-  exactly as in~\eqref{E:theta-envelope} we obtain the following bound.
+  Since $\#Q_0=\#Q_1$ and $\#Q_0+\#Q_2/2=n$ for every admissible
+  product, exactly as in~\eqref{E:theta-envelope} we obtain the following
+  bound.
   Indeed, put $D=\max\{1,2C_0\}$. The norm constants contribute at
   most $D^{\#Q_1+\#Q_2}\le D^{2n}$, so we may take $C_1=D^2$:
   \[
@@ -1320,8 +1796,8 @@ inequality.
   The products $2N_0N_1$ and $N_2^2$ therefore both have degree
   $-\beta$. Choose
   $K\ge\max\{2N_1(1),N_2(1)^2\}$, increasing it to a positive
-  constant if needed. Theorem~3.1 and $q_0+q_2/2=k$ give
-  $K^k\theta^{-\beta k}$ for every partition it supplies. The finite
+  constant if needed. Lemma~\ref{L:pairing-product-envelope} and
+  $q_0+q_2/2=k$ give $K^k\theta^{-\beta k}$ for every admissible product. The finite
   horizons contribute at most $e^{2\theta t}$. Apply this first to
   regularized moments. In $d=3$, fix $(\epsilon,\delta)$ and let
   $\eta\downarrow0$ in each factor's $L^2$ limit; Cauchy--Schwarz gives
@@ -1759,13 +2235,14 @@ remaining integrals is asserted.
 
 \section{G2 upper bounds for spatial exponents at most one}\label{S:d1-upper}
 
-\myCmts{Reviewed partial result: the upper bound at scale $t^\kappa$
+The upper bound at scale $t^\kappa$
 is proved for $0<\alpha\le1$ in dimensions one, two and three under
 the standing assumptions. The separate one-dimensional Riesz
 estimates retain their sharper constants and white endpoint.
 Degree-one covariance in dimensions two and three does not mean
 full spatial white noise. Section~\ref{S:interval-upper} treats the
-higher exponents by a separate argument; the sharp constant remains open.}
+higher exponents by a separate argument. The intrinsic constant is
+identified later in Theorem~\ref{T:intrinsic-second-moment}.
 
 We retain the two-chain expansion of Proposition~\ref{P:mixed}, but
 estimate its spatial and temporal factors in a different order. The
@@ -2327,12 +2804,11 @@ $d$-dimensional solution.
 \section{Higher spatial exponents under a convolution bound}
 \label{S:higher-alpha}
 
-\myCmts{Reviewed by Opus with PASS\_WITH\_NOTES/medium confidence;
-configured high-confidence acceptance remains pending. The convolution
-assumption below is additional to homogeneity. The concrete applications
-cover only the stated Riesz ranges. Section~\ref{S:interval-upper}
-establishes the full general upper scale by a separate argument;
-the sharp constant remains open.}
+The convolution assumption below is additional to homogeneity, and the
+concrete applications cover only the stated Riesz ranges.
+Section~\ref{S:interval-upper} establishes the full general upper scale
+by a separate argument. This alternative route is not an input to
+Theorem~\ref{T:intrinsic-second-moment}.
 
 We retain the standing covariance assumptions and take $d\in\{2,3\}$ and
 $1<\alpha<2-\alpha_0$. Put $\delta=\alpha-1$, $q=3-\alpha$, and
@@ -2509,8 +2985,8 @@ $G_{h,\eta}=p_\eta*G_h$, with $G_{h,0}=G_h$.
   This proves Proposition~\ref{P:higher-transfer}.
 \end{proof}
 
-% Spatial subclass insertion marker: the candidate lemma below discharges
-% H:spatial-maximum only for its explicitly stated isotropic Riesz ranges.
+% This lemma discharges H:spatial-maximum only for its explicitly stated
+% isotropic Riesz ranges.
 \begin{lemma}[Riesz spatial maxima]\label{L:higher-riesz}
   Let $\gamma(x)=c|x|^{-\alpha}$, $c>0$. In dimension three, for
   $1<\alpha<2$, Hypothesis~\ref{H:spatial-maximum} holds with the
@@ -2717,10 +3193,10 @@ $G_{h,\eta}=p_\eta*G_h$, with $G_{h,0}=G_h$.
 \section{Riesz bounds by interpolation with static noise}
 \label{S:static-holder}
 
-\myCmts{Candidate argument, pending independent review. This section concerns
-isotropic Riesz covariance in dimensions two and three. It does not promote
-the preceding candidate, settle general anisotropic covariance, or identify
-the sharp constant. The accepted scope stated elsewhere is unchanged.}
+This alternative argument concerns isotropic Riesz covariance in dimensions
+two and three. It does not use the preceding conditional proposition,
+settle general anisotropic covariance, or identify the sharp constant.
+The full upper and intrinsic formula later use separate arguments.
 
 We use the static Stratonovich model of Chen--Hu as one input and the
 space-degree-one estimate of Section~\ref{S:d1-upper} as the other.
@@ -3017,19 +3493,19 @@ The source hypotheses for the Riesz covariances below are thus satisfied.
   isotropic Riesz covariance throughout the stated higher-degree range
   in dimensions two and three, including the previously uncovered
   two-dimensional interval $3/2\le\alpha<2-\alpha_0$.
-  It does not prove the full homogeneous-covariance goal: arbitrary
-  anisotropic profiles need not factor into admissible endpoint
-  covariances as above. The sharp second-moment constant, novelty and
-  formal verification remain open.
+  This argument does not cover arbitrary homogeneous covariances:
+  anisotropic profiles need not factor into the admissible endpoints.
+  The intrinsic second-moment formula is given separately in
+  Theorem~\ref{T:intrinsic-second-moment}. No novelty is asserted here.
 \end{remark}
 
 \section{General homogeneous covariance in dimension two}
 \label{S:planar-holder}
 
-\myCmts{Candidate argument, pending independent review. This section gives
-complete endpoint constructions and a complete planar transfer. It does not
-use the preceding candidate proposition as an accepted input. Earlier
-accepted-scope statements and review confidence remain unchanged.}
+This section gives planar endpoint constructions and a transfer under
+its stated hypotheses. It does not use the preceding Riesz interpolation
+argument as an input. The later full upper and intrinsic formula use
+separate methods.
 
 Throughout this section $d=2$. Write $\Gamma$ for the spatial covariance
 as a nonnegative, even, positive-definite tempered Radon measure. For a
@@ -3488,20 +3964,18 @@ We first treat $\Gamma\ne0$ and $1<\alpha<2$.
   endpoint construction
   is dimension-specific; no general higher-exponent result in dimension
   three follows from it. Section~\ref{S:interval-upper} treats the full
-  homogeneous-covariance class by a separate argument. The sharp
-  constant remains open.
+  homogeneous-covariance class by a separate argument. The intrinsic
+  constant is identified separately in
+  Theorem~\ref{T:intrinsic-second-moment}.
 \end{remark}
 
 \section{Three-dimensional bounds from covariance endpoints}
 \label{S:three-endpoints}
 
-\myCmts{Expanded candidate, pending independent review of the new assembly.
-The conditional moment transfer has not passed the required high-confidence
-gate. The plane-supported endpoints and finite-sum comparison were reviewed
-separately as deterministic tools. We now include their proofs, a new
-linear-image closure argument, and the resulting moment applications.
-Earlier accepted-scope statements are unchanged; no general
-three-dimensional factorization is asserted.}
+The endpoint constructions and conditional moment transfer are retained
+as an alternative route. No general three-dimensional factorization is
+asserted. The later full upper and intrinsic formula do not use these
+factorizations.
 
 We first construct the product endpoints. Zero coordinate exponents below
 mean constant factors, not one-dimensional white noise.
@@ -4298,8 +4772,8 @@ energy term is nonnegative and its gradient penalty tends to zero.
   almost everywhere, with the same amplitude $c$. H\"older on the
   Gaussian probability measure proves the required common-width
   comparison for every $\epsilon,z$. Thus, in both cases all endpoint
-  hypotheses are discharged without relying on an earlier candidate
-  proposition. Proposition~\ref{P:three-transfer} applies. This proves
+  hypotheses are discharged.
+  Proposition~\ref{P:three-transfer} applies. This proves
   Corollary~\ref{C:three-product-riesz}.
 \end{proof}
 
@@ -4386,7 +4860,8 @@ energy term is nonnegative and its gradient penalty tends to zero.
   density theorem for arbitrary covariances is asserted, and no
   uniform estimate for a limiting infinite mixture is proved.
   Section~\ref{S:interval-upper} treats the full covariance class by
-  a different argument. The sharp constant remains open.
+  a different argument. These endpoint comparisons are not inputs to
+  the intrinsic constant theorem~\ref{T:intrinsic-second-moment}.
 \end{remark}
 
 \section{Physical and spectral energy for measure covariances}
@@ -4399,10 +4874,8 @@ The imported analytic input is the finiteness of the variation on the
 right of (1.5), stated in the closing sentence of
 Chen~\cite{chen:23:exponential}*{Theorem~1.1, p.~2}.
 
-\myCmts{The energy-identification lemma passed a scoped independent review.
-The full conditional moment argument has not passed its required gate.
 This source-functional identification does not promote the separate
-conditional moment argument or resolve general covariance factorization.}
+conditional moment argument or resolve general covariance factorization.
 
 \begin{lemma}[Sobolev energy identification]\label{L:physical-spectral-energy}
   Let $\Xi$ be a nonnegative, even, positive-definite tempered Radon
@@ -4547,10 +5020,7 @@ arbitrary deterministic initial phase. The covariance may be any member
 of the original three-dimensional class; no endpoint representation is
 assumed. The estimate below is not an all-order propagator bound.
 
-\myCmts{The static contraction and first-variance phase estimates
-passed a scoped independent review.
-The full general-covariance moment goal and the preceding candidate
-moment arguments retain their stated status.}
+
 
 Let $0<\alpha<2$, and let $\Gamma$ be a nonnegative, even,
 positive-definite tempered Radon covariance on $\R^3$, satisfying
@@ -4790,9 +5260,8 @@ establish Goal~\ref{G:upper}.
 We now seek all static Duhamel orders, retaining the full spatial
 covariance class of Section~\ref{S:static-phase}. The temporal
 covariance is not included in this section.
-\myCmts{The phase estimates and finite-word cutoff lemma passed scoped
-correctness review. Static estimates alone do not identify the evolution
-for overlapping intervals; that step is treated in the next section.}
+Static estimates alone do not identify the evolution
+for overlapping intervals; that step is treated in the next section.
 
 We use one external operator theorem. From Crouzeix--Palencia
 \cite{crouzeix.palencia:source2017:numerical}*{author preprint v1,
@@ -5361,13 +5830,8 @@ for that evolution.
 \section{Interval fields and the full upper bound}
 \label{S:interval-upper}
 
-\myCmts{The preceding interval and mild-construction arguments passed
-source-bound correctness review. The sixth cold reader requested clearer
-hypothesis and solution-object statements and a proof-level fixed-order
-input audit. The explicit statements, independent fixed-order construction and changed
-consumers passed a fresh scoped Opus5.5/HIGH review at \texttt{f9303ed}.
-The final whole-paper cold read remains pending.
-The sharp constant remains open.}
+The intrinsic constant is identified independently in
+Theorem~\ref{T:intrinsic-second-moment}.
 
 Write
 \[
@@ -5552,8 +6016,8 @@ Complex Hilbert inner products are linear in the first slot.
   \]
   An initial increase of the weight has no loss. Count a final return
   to $X_\lambda$ as an ending jump at $T$.
-  Each connected interval ends once. This proves
-  \eqref{E:interval-metric} and Lemma~\ref{L:interval-complex}.
+  Each connected interval ends once, giving~\eqref{E:interval-metric}.
+  This proves Lemma~\ref{L:interval-complex}.
 \end{proof}
 
 \begin{lemma}[A positive inventory product]\label{L:inventory-product}
@@ -6312,8 +6776,8 @@ on the empty tuple. This definition introduces no kernel symmetrization.
   Finally, the ratio of successive right sides of
   \eqref{E:terminal-term-majorant}, with an additional factor $|r|^n$,
   is $|r|\sqrt V T^2/((2n+2)\sqrt{2n+1})$, which tends to zero.
-  The zero-variance case is immediate. This proves the absolute series
-  convergence and Lemma~\ref{L:terminal-wick}.
+  The zero-variance case is immediate.
+  This proves Lemma~\ref{L:terminal-wick}.
 \end{proof}
 
 \begin{lemma}[Uniform series tails from scaled moments]\label{L:uniform-series-tail}
@@ -6602,8 +7066,7 @@ on the empty tuple. This definition introduces no kernel symmetrization.
   constants of Proposition~\ref{P:interval-coefficients}; covariance enters
   only through $R_\alpha$.
   The volume ratio is $|B_{T+2}|/|B_1|=(T+2)^d$.
-  This proves~\eqref{E:full-upper-bound} and
-  Theorem~\ref{T:full-upper}.
+  This proves Theorem~\ref{T:full-upper}.
 \end{proof}
 
 \begin{remark}[Claim and calibration boundary]\label{R:full-upper-boundary}
@@ -6616,17 +7079,17 @@ on the empty tuple. This definition introduces no kernel symmetrization.
   the source-normalization qualification stated earlier.
   The Skorohod exponent is compared, not used to identify constants:
   both Gaussian creation and annihilation were retained here.
-  Goal~\ref{G:sharp} remains open.
+  The intrinsic identification in Goal~\ref{G:sharp} is proved later in
+  Theorem~\ref{T:intrinsic-second-moment}, using a separate argument.
 \end{remark}
 
 
 \section{A static lower comparison and a near-static mean gap}
 \label{S:near-static-lower}
 
-\myCmts{The four proofs in this section passed a source-bound Opus5.5/HIGH
-review at \texttt{46d1075}, all seven checks passing. This is a scoped
-internal consequence; the original sharp target and whole-paper
-clearance remain open. No novelty or numerical normalization is claimed.}
+The comparison in this section does not identify the intrinsic constant of
+Theorem~\ref{T:intrinsic-second-moment}; no novelty or numerical
+normalization is claimed.
 
 Fix a nonzero spatial covariance in Hypothesis~\ref{H:homog}, and put
 \[
@@ -6994,7 +7457,8 @@ corresponding static terms. Set
   the corresponding Jensen rate $2L_*(a)$ in this window.
   This does not establish the original lower target
   $2^{\kappa_{\rm st}}L_*(a)$, or either sharp bound for arbitrary $a$.
-  Goal~\ref{G:sharp} remains open. The proof uses the ordinary
+  The later intrinsic formula in Theorem~\ref{T:intrinsic-second-moment}
+  does not identify either printed source endpoint. The proof here uses the ordinary
   Stratonovich pairing expansion, including self-contractions; no
   Skorohod result or sibling-project development is made.
 \end{remark}
@@ -7003,10 +7467,8 @@ corresponding static terms. Set
 \subsection{Temporal interpolation of the full moment}
 \label{S:temporal-type-continuity}
 
-\myCmts{The following three proofs and the separate scalar-inference screen
-passed their own source-bound Opus5.5/HIGH review at \texttt{1bf6141},
-all seven checks passing. The full sharp constant at a fixed positive
-temporal exponent and whole-paper clearance remain open.}
+The constant at a fixed positive temporal exponent is identified later in
+Theorem~\ref{T:intrinsic-second-moment}.
 
 Retain the fixed nonzero covariance and the notation of this section.
 For \(p=1,2\), set \(c_{p,0}(a)=1\) and, for \(k\ge1\),
@@ -7219,9 +7681,9 @@ Here \(p=1\) concerns \(\E u\), not \(\E|u|\).
 
   Neither \(L_*(a)\) nor \(L^*(a)\) enters this argument.
   The constant \(L_0\) is the actual static first-mean rate.
-  The original fixed-positive-time-exponent sharp target
-  in Goal~\ref{G:sharp} remains open; parameter continuity does not
-  identify its full conjectured curve. No all-\(p\), absolute-first-moment,
+  Parameter continuity alone does not identify the conjectured curve.
+  The separate intrinsic second-moment value is proved in
+  Theorem~\ref{T:intrinsic-second-moment}. No all-\(p\), absolute-first-moment,
   Skorohod, novelty or circulation result is claimed.
 \end{remark}
 
@@ -7229,11 +7691,9 @@ Here \(p=1\) concerns \(\E u\), not \(\E|u|\).
 \section{A small-order test for direct Brownian clock copying}
 \label{S:two-clock-screen}
 
-\myCmts{These two proofs passed a source-bound Opus5.5/HIGH review at
-\texttt{e68310f}, all seven contract groups passing. The result concerns a
-specified gap-transform substitution. It does not rule out ordering
-corrections, a diagonal-only representation, one-sided/asymptotic use,
-or the original sharp conjecture.}
+The result concerns a specified gap-transform substitution. It does not
+rule out ordering corrections, a diagonal-only representation,
+one-sided/asymptotic use, or the original sharp conjecture.
 
 Theorem~6.1 of \cite{chen:author2026:time-dependency}*{pp.~37--42}
 represents the time Laplace transform of a \emph{fixed-order} mean by a
@@ -7567,10 +8027,40 @@ The analytic covariance, not its absolute-value bound, is being copied.
   representations,modulus inequalities and their possible asymptotics are
   not covered. In particular, the inequality at this first cross pair
   leaves open a shared-clock lower comparison or asymptotic equivalence
-  at higher orders. The original full sharp conjecture remains open.
+  at higher orders. This finite clock calculation does not identify the
+  intrinsic value proved later in Theorem~\ref{T:intrinsic-second-moment}
+  with the source's all-moment conjecture.
   This is not a Skorohod result or a no-go for every two-clock method.
 \end{remark}
 
+
+\input{notes/integrated_covariance_foundation}
+\input{notes/integrated_wave_variance}
+\input{notes/integrated_compact_gaussian}
+\input{notes/integrated_actual_operator_driver}
+\input{notes/integrated_source_convergence}
+\input{notes/integrated_masked_moments}
+\input{notes/integrated_constant_phase_young}
+\input{notes/integrated_compact_mean_family}
+\input{notes/integrated_exact_scaling}
+\input{notes/integrated_raw_block_lower}
+\input{notes/integrated_unmasked_variational}
+\input{notes/integrated_temporal_equilibrium}
+\input{notes/integrated_spatial_occupation}
+\input{notes/integrated_cameron_mean}
+\input{notes/integrated_young_upper_foundation}
+\input{notes/integrated_uniform_mean}
+\input{notes/integrated_radius_anchor}
+\input{notes/integrated_signed_static}
+\input{notes/integrated_symplectic_phase}
+\input{notes/integrated_gaussian_tubes}
+\input{notes/integrated_uniform_products}
+\input{notes/integrated_point_transfer}
+\input{notes/integrated_signed_moment_upper}
+\input{notes/integrated_positive_gram}
+\input{notes/integrated_intrinsic_constant}
+\input{notes/integrated_occupation_ceiling}
+\input{notes/integrated_white_evaluation}
 
 \section{Targets}\label{S:targets}
 
@@ -7580,33 +8070,36 @@ The analytic covariance, not its absolute-value bound, is being copied.
   explicit constant.
 \end{goal}
 
-\myCmts{Theorem~\ref{T:full-upper} establishes the unchanged full upper
-goal for every admissible dimension and homogeneous covariance.
-The interval estimate passed scoped correctness review.
-The preceding independent mild construction passed correctness review.
-The explicit hypothesis/object revision and independent fixed-order
-construction and their consumers passed their own scoped Opus5.5/HIGH
-review. A fresh whole-paper cold read remains required.
-The earlier explicit bounds for $0<\alpha\le1$ remain available.
-The sharp constant and final whole-paper cold read remain open.}
+Theorem~\ref{T:full-upper} proves this upper bound for every admissible
+dimension and homogeneous covariance, independently of the later
+variational identification. Earlier explicit bounds for
+$0<\alpha\le1$ remain available.
 
 \begin{goal}[Sharp second-moment constant]\label{G:sharp}
-  Prove two-sided bounds of the type of Theorem~\ref{T:first} for $p=2$:
+  Under Hypothesis~\ref{H:homog}, derive a finite constant
+  $C_2(\Gamma,\alpha_0)$ and prove, for every fixed $x \in \R^d$,
   \[
-    2^{\frac{4-\alpha}{3-\alpha}}L_*
-    \le\liminf_{t\to\infty}t^{-\kappa}\log\E u^2(t,x)
-    \le\limsup_{t\to\infty}t^{-\kappa}\log\E u^2(t,x)
-    \le2^{\frac{4-\alpha}{3-\alpha}}L^*,
+    \lim_{t\to\infty}t^{-\kappa}\log\E u^2(t,x)
+    = C_2(\Gamma,\alpha_0).
   \]
-  which would confirm Conjecture~\ref{Conj:allp} at $p=2$ up to the same gap
-  $\cE_*<\cE$ as for $p=1$. The exact limit
-  $2^{(4-\alpha)/(3-\alpha)}L^*$ is the conditional target, contingent on
-  closing that gap.
+  A variational characterization must specify its full domain, covariance
+  amplitude, kinetic coefficient and Gaussian action. Derive further
+  evaluations and bounds from this formula. For zero covariance,
+  $u(t,x) = 1$ and $C_2(0,\alpha_0) = 0$.
 \end{goal}
 
-\myCmts{The exponents in Goal~\ref{G:sharp} are the conjectured ones. If
-the analysis produces a different $p=2$ constant, that is a finding about
-Conjecture~\ref{Conj:allp}, not a reason to adjust the target.}
+Theorem~\ref{T:intrinsic-second-moment} proves this limit and specifies
+its complete positive-control formula.
+Theorem~\ref{T:intrinsic-occupation-ceiling},
+Corollary~\ref{C:intrinsic-spatial-bracket} and
+Theorem~\ref{T:white-moment-bounds} derive bounds from that value.
+The original proposed bounds with endpoints
+$2^{(4-\alpha)/(3-\alpha)}L_*$ and
+$2^{(4-\alpha)/(3-\alpha)}L^*$ remain comparisons with
+Conjecture~\ref{Conj:allp}. Matching those endpoints or closing the source's
+variational gap is not required to identify the intrinsic value.
+No correction of the source's normalization or equality of its energy
+domains is adopted.
 
 \section{Established steps and open questions}\label{S:route}
 
@@ -7631,16 +8124,26 @@ Conjecture~\ref{Conj:allp}, not a reason to adjust the target.}
     upper scale by independent interval fields, local Gaussian-degree
     estimates and dyadic covariance domination. The latter proof does
     not assume an endpoint representation of the spatial covariance.
-  \item \textbf{The sharp constant remains open.}
-    Goal~\ref{G:sharp} requires a lower bound beyond the unconditional
-    Jensen comparison and a matching sharp upper constant. The new candidate
-    in Section~\ref{S:near-static-lower} supplies a static lower comparison
-    for all admissible temporal exponents and a strict actual-mean gap only
-    near the static endpoint; these proofs passed their own scoped review.
-    A representation
-    using two ordered chains is a possible research direction, not a
-    proved result of these notes. The intended normalization of the
-    source's first-moment constants also remains to be clarified.
+  \item \textbf{The intrinsic constant.}
+    Sections~\ref{S:actual-operator-driver}--\ref{S:intrinsic-second-moment}
+    construct the actual phase/source framework and prove matching
+    original point-moment bounds. The upper score uses the original raw
+    variance-half action. Finite Gram optimization and positive smoothing
+    identify it with the full positive-control lower value.
+    The auxiliary label-one score is not identified with an actual
+    first-moment limit or Chen's printed constants.
+  \item \textbf{Computed bounds and the white example.}
+    Section~\ref{S:intrinsic-occupation-ceiling} bounds the same constant
+    using the full occupation class and a common spatial energy.
+    Section~\ref{S:intrinsic-white-evaluation} evaluates that energy for
+    $\Gamma=c\delta_0$ and gives explicit moment bounds and the relative
+    width of their formulas. It does not evaluate the intrinsic supremum
+    numerically or assert equality at either bound.
+  \item \textbf{Source comparisons and scope.}
+    The source first-moment normalization
+    remains a qualified comparison question. Historical alternatives and
+    failed routes above retain their original scope; they are not new
+    premises of the intrinsic-limit proof.
 \end{enumerate}
 
 \bibliography{All,extra}

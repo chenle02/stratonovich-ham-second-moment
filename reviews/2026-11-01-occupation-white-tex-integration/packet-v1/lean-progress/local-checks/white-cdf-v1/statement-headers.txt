@@ -1,0 +1,6 @@
+theorem cdf_square_bound (A b : ℝ)
+    (h : ∀ z : ℝ, 0 ≤ b - 2 * z * A + z ^ 2 / 3) :
+    3 * A ^ 2 ≤ b :=
+
+theorem energy_upper (c A b : ℝ) (h : 3 * A ^ 2 ≤ b) :
+    c * A - b / 2 ≤ c ^ 2 / 6 :=

@@ -1,0 +1,59 @@
+[
+  {
+    "name": "paper-dev-review-layers-are-mandatory",
+    "description": "Mandatory paper development review layers. Enforce independent review cadence across authoring and preparation cycles without resetting debt on quota stops or renamed drafts. Trigger phrases: review debt, three rounds without review, quota stopped reviewer, candidate-only round, pre-proof gate, mandatory skeptic, combined output limit, supplement equivalence, numeric reviewer confidence, statement ordinal, source content identity.",
+    "path": "skills/omc-learned/paper-dev-review-layers-are-mandatory/SKILL.md",
+    "tag": "[R]",
+    "origin": "omc-learned",
+    "harnesses": [
+      "claude",
+      "codex",
+      "opencode",
+      "pi"
+    ],
+    "status": "active",
+    "triggers": [],
+    "skill_class": "verification",
+    "class_confidence": "high",
+    "probe_kind": "",
+    "weakness_type": ""
+  },
+  {
+    "name": "paper-dev-gitignored-state-discovery",
+    "description": "Discover gitignored paper-dev state before committing. Before staging files for a paper-dev commit, run `grep -E 'experiments|paper-dev' .gitignore` to discover which paper-dev state files are gitignored by project convention. The standard pattern across Article-* repos is: `.paper-dev-state.json` and `.paper-dev-state.json.lock` and `experiments.tsv` are GITIGNORED (volatile per-session state), while `.paper-dev-retro.md`, `.paper-dev-learnings.md`, `.paper-dev-agents.json` ARE COMMITTED (durable artifacts). The negation pattern `!.paper-dev-retro.md` whitelists the retro/learnings/agents files. DO NOT try to `git add` gitignored files blindly — they'll silently skip with no error and you may not notice the omission. Trigger before any paper-dev commit, when discovering a paper-dev workflow on a new repo, when an experiments.tsv file isn't appearing in git status, or when designing a new Article-* repo's .gitignore.",
+    "path": "skills/omc-learned/paper-dev-gitignored-state-discovery/SKILL.md",
+    "tag": "[R]",
+    "origin": "omc-learned",
+    "harnesses": [
+      "claude",
+      "codex",
+      "opencode",
+      "pi"
+    ],
+    "status": "active",
+    "triggers": [],
+    "skill_class": "coordination",
+    "class_confidence": "",
+    "probe_kind": "",
+    "weakness_type": ""
+  },
+  {
+    "name": "paper-dev-artifact-layouts-for-tooling",
+    "description": "Tooling over paper-dev state must handle three review layouts, legacy repos and headerless logs. The logs are experiments.tsv files and the legacy repos are pilot-runner ones. Article-* repos vary: canonical .paper-dev-state.json, legacy Progress.md pilot-status bullets, reviews under reviews/paper-dev timestamp dirs or loose reviews/*.md, TSV with or without the 17-column header. paper-dev-dash embodies all of it. Trigger phrases: paper-dev tooling, parse paper-dev state, read experiments.tsv, review memo format, pilot-runner legacy repo, Progress.md authority, NEEDS_FEEDBACK scan, dashboard over Article repos, paper-dev state schema.",
+    "path": "skills/omc-learned/paper-dev-artifact-layouts-for-tooling/SKILL.md",
+    "tag": "[R]",
+    "origin": "omc-learned",
+    "harnesses": [
+      "claude",
+      "codex",
+      "opencode",
+      "pi"
+    ],
+    "status": "active",
+    "triggers": [],
+    "skill_class": "tooling",
+    "class_confidence": "",
+    "probe_kind": "",
+    "weakness_type": ""
+  }
+]

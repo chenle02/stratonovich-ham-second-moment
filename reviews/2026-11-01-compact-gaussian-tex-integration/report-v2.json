@@ -1,0 +1,183 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "notes/integrated_compact_gaussian.tex: complete, lines 1-639 plus empty display line 640",
+    "notes/finite-gaussian-schatten.md: complete, lines 1-236 plus empty display line 237",
+    "notes/compact-sobolev-cutoff.md: complete, lines 1-388 plus empty display line 389",
+    "notes/integrated_wave_variance.tex: complete, lines 1-549 plus empty display line 550",
+    "reviews/2026-10-30-finite-gaussian-schatten/scientific-adjudication-v1.md: complete, lines 1-61",
+    "reviews/2026-10-30-compact-sobolev-cutoff/scientific-adjudication-v1.md: complete, lines 1-36",
+    "reviews/2026-11-01-wave-variance-tex-integration/adjudication-v1.md: complete, lines 1-55",
+    "reviews/2026-11-01-compact-gaussian-tex-integration/model-context-v1.tex.txt: complete, lines 1-107",
+    "reviews/2026-11-01-compact-gaussian-tex-integration/target-v1.md: complete, lines 1-41",
+    "reviews/2026-11-01-compact-gaussian-tex-integration/target-freeze-v1.json: complete, lines 1-12",
+    "reviews/2026-11-01-compact-gaussian-tex-integration/build-v2.json: complete, lines 1-50",
+    "reviews/2026-11-01-compact-gaussian-tex-integration/worker-honesty-v2.md: complete, lines 1-31",
+    "reviews/2026-11-01-compact-gaussian-tex-integration/crosswalk-v1.md: complete, lines 1-25",
+    "reviews/2026-11-01-compact-gaussian-tex-integration/prompt-v2.md: complete, lines 1-83",
+    "reviews/2026-11-01-compact-gaussian-tex-integration/rendered-section-v2.txt: complete, lines 1-517",
+    "reviews/2026-11-01-compact-gaussian-tex-integration/report-raw-v1.txt: complete, line 1 (single-line file), diagnostic context only",
+    "reviews/2026-11-01-compact-gaussian-tex-integration/receipt-failed-v1.json: complete, lines 1-197",
+    "reviews/2026-11-01-compact-gaussian-tex-integration/adjudication-failed-v1.md: complete, lines 1-32",
+    "reviews/2026-11-01-compact-gaussian-tex-integration/lattice-falsification-v2.json: complete, lines 1-16",
+    "reviews/2026-11-01-compact-gaussian-tex-integration/page-v2-124.png: complete image",
+    "reviews/2026-11-01-compact-gaussian-tex-integration/page-v2-125.png: complete image",
+    "reviews/2026-11-01-compact-gaussian-tex-integration/page-v2-126.png: complete image",
+    "reviews/2026-11-01-compact-gaussian-tex-integration/page-v2-127.png: complete image",
+    "reviews/2026-11-01-compact-gaussian-tex-integration/page-v2-128.png: complete image",
+    "reviews/2026-11-01-compact-gaussian-tex-integration/page-v2-129.png: complete image",
+    "reviews/2026-11-01-compact-gaussian-tex-integration/page-v2-130.png: complete image",
+    "reviews/2026-11-01-compact-gaussian-tex-integration/page-v2-131.png: complete image",
+    "reviews/2026-11-01-compact-gaussian-tex-integration/page-v2-132.png: complete image",
+    "reviews/2026-11-01-compact-gaussian-tex-integration/page-v2-133.png: complete image",
+    ".review/required-sources.json: complete, lines 1-119 (read plan only, not a packet source)"
+  ],
+  "checks": [
+    {
+      "claim": "Repair: the explicit comparison <y-ak>^-N <= max(1,2/a)^N <k>^-N follows from the reduced cell inequality for |k|>=sqrt(d).",
+      "verdict": "PASS",
+      "reason": "tex 245-254. Translating y by a lattice vector only reindexes the k-sum, so |y|<=a sqrt(d)/2 may be assumed. Then |k|>=sqrt(d) gives |y|<=a|k|/2 and |y-ak|>=a|k|/2. With c=min(1,a/2), 1+|y-ak|^2>=1+(a/2)^2|k|^2>=c^2(1+|k|^2), so <y-ak>>=c<k>. Since 1/c=max(1,2/a), raising to -N gives the displayed bound exactly."
+    },
+    {
+      "claim": "Repair: the k-shell count and the comparison-series summands are kept distinct, constants depend on a,d,N, and (18.11) holds uniformly in y.",
+      "verdict": "PASS",
+      "reason": "tex 247-257. The count C_d 2^(jd) is attached to the k-shell, and 2^(-jN) is now attached only to the comparison terms <k>^-N, not to the actual terms. Summing gives C_d 2^(j(d-N)), which converges because N>d. The finitely many k with |k|<sqrt(d) contribute at most a d-dependent count, since each term is at most 1. The total is at most that count plus max(1,2/a)^N times a (d,N)-constant, and it is independent of y. The false v1 bare-term sentence is gone. This agrees with compact-sobolev-cutoff.md 104-109."
+    },
+    {
+      "claim": "The exact rational example in lattice-falsification-v2.json is correct.",
+      "verdict": "PASS",
+      "reason": "With d=1, N=2, a=1/2, y=0, k=4, j=2: ak=2, so the actual term is 1/(1+4)=1/5. The rejected bound is 2^(-4)=1/16, and 1/5>1/16. The constant is max(1,4)^2=16, <k>^-2=1/17, the weighted bound is 16/17, and the dyadic bound is 16*2^(-4)=1. The chain 1/5<=16/17<=1 holds. k=4 lies in the j=2 shell and |k|>=sqrt(1). As the file says, this is a pointwise control and not the uniform proof."
+    },
+    {
+      "claim": "The real sigma scope and the unitary autocorrelation with T_hg(x)=g(x-h), including c_d^-1 and the sign, are correct.",
+      "verdict": "PASS",
+      "reason": "tex 202 fixes real sigma before Lemma 18.5, and Proposition 18.6 restates it. For the autocorrelation, the transform of T_hg is e^(-i xi.h) g-hat(xi). Plancherel with a first-slot-linear inner product (wave tex 178) gives the integral of e^(-i xi.h)|g-hat|^2. The unitary transform of |g-hat|^2 at h is c_d times that integral, which gives the factor c_d^-1 and the negative sign exactly as at tex 622-624. g-hat=<xi>^-gamma times a Gaussian, so |g-hat|^2 is Schwartz and the correlation decays."
+    },
+    {
+      "claim": "Lemma 18.1: strict-theta weighted power, natural powers with zero and endpoint cases, finite Holder and expectation Jensen.",
+      "verdict": "PASS",
+      "reason": "tex 14-48. The derivative theta(1-t^(theta-1)) has the stated sign, and f(1)=0. t=0 and v=0 are handled. q=0,L are identities under a^0=1. For 0<q<L, the choice u=|x|^L, v=|y|^L, theta=q/L gives (18.2). The Holder normalization gives 1/m+(m-1)/m=1. E(Z/F)^r<=1 gives Jensen, and F=0 is separated. This matches finite note 39-75."
+    },
+    {
+      "claim": "Lemma 18.2: eigenbasis trace word with no commutation, and diagonal D by doubly stochastic weights, convexity and Holder.",
+      "verdict": "PASS",
+      "reason": "tex 50-95. Tr(BY^qBY^(L-q)) equals the sum of |b_ij|^2 lambda_j^q lambda_i^(L-q), which is real. (18.2) with x=lambda_j, y=lambda_i and the i,j interchange give Tr(B^2|Y|^L). The tangent inequality uses row sums first, then column sums. (2m-2)m/(m-1)=2m yields (18.4). This matches finite note 79-121."
+    },
+    {
+      "claim": "Proposition 18.3 Hermitian step: Gaussian polynomial IBP under the product real law, ordered 2m-1 terms, pointwise spectral reasoning, F=0 and m=1 cases.",
+      "verdict": "PASS",
+      "reason": "tex 119-155. Differentiating Y^(2m-1) gives q=0..L, exactly 2m-1 ordered terms. Integrability and componentwise IBP for complex polynomials are stated, and no measurable eigenbasis is used. Lemma 18.2 and Jensen with r=(m-1)/m give F<=(2m-1)(Tr D^m)^(1/m) F^((m-1)/m), hence (18.7). m=1 is a separate equality and F=0 is separated."
+    },
+    {
+      "claim": "Proposition 18.3 dilation: Tr(UV)=Tr(VU), unnormalized traces, average 1/2 before maximum, sqrt(p-1), p=2 equality.",
+      "verdict": "PASS",
+      "reason": "tex 157-178. B_k^2 is block diagonal and D=diag(Vout,Vin). Tr Y^(2m)=Tr(XX*)^m+Tr(X*X)^m=2Tr(X*X)^m via (XX*)^m=X(X*X)^(m-1)X*. Dividing by 2 precedes the p-th root, which gives (18.5), and the maximum then gives (18.6). (2m-1)^(m/p)=sqrt(p-1). At p=2 both traces equal the second moment."
+    },
+    {
+      "claim": "Remark 18.4: exact n=16 row and column example, 288 versus 144, and the correct 1224 and 2304 bounds.",
+      "verdict": "PASS",
+      "reason": "tex 181-195. E(sum g^2)^2=3*16+16*15=288=16*18. Vout=16 (1-by-1) and Vin=I_16, so the input-only bound is 9*16=144<288. Transposition exchanges the roles. The average is 9*(256+16)/2=1224 and the maximum is 9*256=2304, and both exceed 288. No one-sided shortcut is used and no wave estimate is refuted."
+    },
+    {
+      "claim": "Lemma 18.5 Peetre for both signs and mixed Schur for counting and Lebesgue measure.",
+      "verdict": "PASS",
+      "reason": "tex 233-238 and 259-263. 1+|x|^2<=2(1+|y|^2)(1+|x-y|^2) gives the base inequality, and r<0 follows by interchange. Weighted Cauchy-Schwarz and Tonelli give squared norm at most M1 M2 on dense inputs."
+    },
+    {
+      "claim": "Exact unitary normalization and L^(-d/2) in both kernels.",
+      "verdict": "PASS",
+      "reason": "tex 265-288, recomputed. Inserting the inversion of u into L^(-d/2) times the integral of psi u e^(-i kappa.x) gives L^(-d/2) times the integral of psi-hat(kappa_k-xi) u-hat(xi), with the c_d cancellation as stated. Each e_k has transform L^(-d/2) chi-hat(xi-kappa_k) after multiplying by chi, with no extra c_d. The weighted forms have the correct ratio directions. Each kernel is dominated by a rapidly decreasing function of the frequency difference. The L^1 and lattice Schur quantities use (18.11) with a=2pi/L and y=xi."
+    },
+    {
+      "claim": "All-real-index extensions, distributional meanings, no rough Fourier sampling, and exact recovered global chi u with no alias or torus-state substitution.",
+      "verdict": "PASS",
+      "reason": "tex 290-305. Schwartz and polynomial density give unique extensions at every real r, including negative r. Each coefficient pairs the distribution with the compact smooth test psi e^(-i kappa.x). For Schwartz u, chi psi=chi and interior support give chi u with no alias on the cube. Both sides are bounded from H^(sigma+gamma) to H^sigma, so density gives (18.9). The torus is only a factor."
+    },
+    {
+      "claim": "Proposition 18.6: inclusion tails, rank (2n+1)^d<j, constant M max(3^gamma,(2L/pi)^gamma), singular approximation, p gamma>d, no endpoint or uniform radius.",
+      "verdict": "PASS",
+      "reason": "tex 309-370. I_gamma is diagonal with entries <kappa_k>^-gamma in weighted coordinates. A tail index has |kappa_k|>=2pi(n+1)/L. For j>=3^d, j^(1/d)>2 gives 2n+1<=j^(1/d)/2+1<j^(1/d). n+1>j^(1/d)/4 gives (2L/pi)^gamma j^(-gamma/d). For j<3^d, ||K||<=M since ||I_gamma||<=1, and j^(-gamma/d)>3^(-gamma). The kernel-intersection argument for s_j is correct. The constant and the summability exponent are correct. L and psi are fixed once per chi, and no endpoint or uniform-radius claim appears."
+    },
+    {
+      "claim": "Physical J0 versus Fourier J, actual A_sigma*=A_-sigma, swap U, with P_chi not assumed self-adjoint or a projection.",
+      "verdict": "PASS",
+      "reason": "tex 374-421, 517. J=(F direct-sum F)J0 agrees with wave tex 180-183. Direct computation gives P_chi=diag(A_(1/2),A_(-1/2)). Conjugating the wave adjoint (wave tex 233-237) by J0 gives diag(A_(-1/2),A_(1/2)), which equals both the Hilbert adjoint and U P_chi U. U commutes with D_gamma, which has equal diagonal entries. No evenness of chi is used."
+    },
+    {
+      "claim": "Block singular multisets, KK* and K*K positive eigenvalues with multiplicity, and both trace envelopes.",
+      "verdict": "PASS",
+      "reason": "tex 392-437. The blocks of Kout cancel to K_(chi,1/2,gamma) and K_(chi,-1/2,gamma). Kin=U Kout U, Bout=Kout Kout* and Bin=Kin Kin* with Kin*=D_gamma P_chi. The multiset union gives the additive p-th power. The inverse-isometry argument is correct, and (18.15) follows for p>=2, p gamma>d."
+    },
+    {
+      "claim": "Lemma 18.8: compactness through root approximation, eigenvalue max-min and trace powers only, never A^t<=B^t.",
+      "verdict": "PASS",
+      "reason": "tex 443-471. ||(1-Q)A^(1/2)||^2=||(1-Q)A(1-Q)|| is at most the B tail, which tends to zero, so A^(1/2) and A are compact. Max-min is derived in an eigenbasis and Rayleigh quotients are compared. Trace powers are summed for t>=1. Operator-power order is explicitly not asserted."
+    },
+    {
+      "claim": "Proposition 18.9: both localizations, both variance bounds, both congruences, individual Z compact and S_p, C=0, and no actual noise family postulated.",
+      "verdict": "PASS",
+      "reason": "tex 473-517. P Z=Z gives Vout=P Vout P*, and Z P=Z gives Vin=P* Vin P. The congruences give (18.18), and Lemma 18.8 with t=p/2 gives (18.19). Z Z*<=Vout gives Z compact through spectral projections and ||Z||_Sp^p<=Tr Vout^(p/2). The hypotheses are stated as conditional only."
+    },
+    {
+      "claim": "Corollary 18.10 compressions: same Hilbert space, both compressed variance inequalities and trace bounds, finite matrix hypotheses, no extra factor 2.",
+      "verdict": "PASS",
+      "reason": "tex 530-556. The difference sum over l of Pi Z(1-Pi)Z* Pi is positive, and the input version is the adjoint analogue. Eigenvalues satisfy compressed sum <= Pi V Pi <= V by max-min, on the shared bound. Proposition 18.3 applies to square complex matrices on ran Pi_n with the same real Gaussians and even p. Both traces are bounded before averaging, so (18.21) has no factor 2."
+    },
+    {
+      "claim": "Corollary 18.10 limit: operator-norm convergence through F and F*, norm-Lipschitz singular values, measurable extended norm, two scalar Fatou steps, no assumed S_p-Bochner convergence, finite sum only.",
+      "verdict": "PASS",
+      "reason": "tex 558-577. PiFPi-F=PiF(Pi-1)+(Pi-1)F, and ||F(Pi-1)||=||(Pi-1)F*||, so both ranges are used correctly. The inf-sup formula gives the Lipschitz bound. The norm power is a countable sum of continuous nonnegative functions. Fatou over j and then over probability gives E||X||^p<=(p-1)^(p/2)C^(p/2)||Kout||^p, and the p-th root is (18.20). No infinite or path conclusion is drawn."
+    },
+    {
+      "claim": "Proposition 18.11 witness: genuine nonzero plateau rank-one operator, correct adjoint covector and C, inverse D_gamma on Schwartz vectors only.",
+      "verdict": "PASS",
+      "reason": "tex 590-615. A_(1/2)Lambda^(1/2)v=Lambda^(1/2)(chi v)=Lambda^(1/2)v, and A_(-1/2)Lambda^(-1/2)f=Lambda^(-1/2)(chi f)=Lambda^(-1/2)f. Hence P \u1e7d=\u1e7d and P* w\u0303=w\u0303, so PZ=Z=ZP. ZZ*=||w\u0303||^2 \u1e7d\u2297\u1e7d* and Z*Z=||\u1e7d||^2 w\u0303\u2297w\u0303*. The duality inequality gives Vout<=||w\u0303||^2||D^-1 \u1e7d||^2 D^2 and Vin<=||\u1e7d||^2||D^-1 w\u0303||^2 D^2, matching the displayed C. The witness is explicitly plateau-only and not identified with a source family."
+    },
+    {
+      "claim": "Proposition 18.11 noncompactness and scope: uncut translations disprove compactness, with no endpoint necessity claim.",
+      "verdict": "PASS",
+      "reason": "tex 617-639. Translations commute with Lambda^-gamma, and ||T_hg-g||^2=2||g||^2-2Re<T_hg,g>>=||g||^2 once the correlation is small. The spaced sequence has no Cauchy image while input norms are constant. The endpoint p gamma=d is explicitly not addressed. The closing paragraph retains actual localization, tails, series, time regularity and source/Young identification as open."
+    },
+    {
+      "claim": "Source, statement and application correspondence with the accepted notes, adjudication conditions, crosswalk and target, including omissions.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "All 11 crosswalk labels exist and carry the mapped content from finite note Sections 1-5 and compact note Sections 1-7. Adjudicated conditions are retained: p>=2 with p gamma>d, multiset union, plateau-only witness, fixed L and psi, and no measurable basis. Diagnostics are omitted as the target allows. The only departures are the v2 explicit lattice and autocorrelation elaborations, which are correct. Editorial items are listed in findings.minor. No parameter or endpoint strengthening was found, and no Chen matching, source correction, actual p=1 identity, Skorohod, HPC, companion or clearance claim appears."
+    },
+    {
+      "claim": "Imported phase hypotheses and conventions from the unchanged wave-variance section are used correctly.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "E=H^(1/2)xH^(-1/2) matches E_s with s=1/2, and Lambda, c_d, J, D_chi and the cutoff adjoint agree. The first-slot-linear convention is inherited rather than restated (see minor). Section 18 does not use Hypothesis 1.1 or any actual wave form as a premise, and model-context content is unaffected. D_gamma variance hypotheses are not instantiated with the actual columns here, which the section states explicitly."
+    },
+    {
+      "claim": "Rendered formulas, numbering, cross-references and proof-end labels in rendered-section-v2.txt and pages 124-133 agree with the TeX.",
+      "verdict": "PASS",
+      "reason": "Equations (18.1)-(18.21) and statements 18.1-18.11 were compared with the TeX and the images. The page 127 comparison and the page 132 autocorrelation render as written, and no clipping or overlap was visible. There are 10 proof environments, each ending with a matching This proves sentence. Remark 18.4 has no proof block. Section 17 resolves to the wave section, and page 133 is unchanged-looking following context beginning Section 19."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "NOT MANDATORY. tex 248-256: the jth k-shell is not defined. The bound 2^(-jN) requires the convention 2^j<=|k|<2^(j+1), which is also the convention of the k=4, j=2 control. The standard reading is correct.",
+      "NOT MANDATORY. tex 98 versus tex 116: the hypothesis says N>=1, while the conclusion mentions empty families. The extra case is trivial and harmless. It is inherited from the source only in the zero-matrix sense.",
+      "NOT MANDATORY. tex 596, 602 and 622-623 use a first-slot-linear inner product on H and L^2 inherited from wave tex 178, which states it for the complexified E. The negative sign in the autocorrelation formula depends on this convention. Decay and the witness are unaffected, and for the chosen real even g the value is real anyway. A one-clause restatement would be cleaner.",
+      "NOT MANDATORY. tex 201-202 allows any gamma>0 for the deterministic arguments, while wave tex 7-9 fixes a restricted gamma and Subsections 18.3-18.4 do not repeat the scope. All proofs hold for every gamma>0, so either reading is valid. gamma also still denotes the covariance in model-context (E:cov).",
+      "NOT MANDATORY. Elementary steps are compressed but valid as checked: j^(1/d)>2 and ||I_gamma||<=1 at tex 349-359; the finite matrix-order eigenvalue step before tex 546-547; zero padding when identifying ran Pi_n matrices with Pi_n X Pi_n at tex 533-570; the choice of R with |correlation|<=||g||^2/2 at tex 626-628; independence for mixed moments at tex 185-187.",
+      "NOT MANDATORY. L denotes 2m-2, a cube side and a subspace at tex 565. Q_n denotes both an inclusion cutoff and spectral projections. D, f and U also have several local meanings. No formula was found ambiguous.",
+      "NOT MANDATORY. The Remark 18.4 title says both variance directions are necessary. Its text ties this to (18.6) and the stated constant, as source line 199-201 does explicitly. The remark should not be read as a statement about a specialized estimate, and its last sentence already says so.",
+      "NOT MANDATORY. tex 636 summarizes the results as finite matrices and conditional finite operator sums, omitting the unconditional deterministic Proposition 18.6. tex 4-5 is a forward pointer to the wave driver. Neither overclaims."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This AI review is not human verification or a novelty audit. It is a scoped integration gate, and not whole-paper, cold-read, actual stochastic-driver, official companion or publication clearance.",
+    "Only reading tools were used. No SHA256 value, source revision 2571a15d7e62ca5c83f74b0e31b03cf5e012fbe6, PDF build, Git state or proof-body identity count was independently checked. The author reports of 74 earlier and 8 unchanged module proof bodies and the build counts in build-v2.json remain author evidence, out of scope by contract and given no verdict.",
+    "The binding of PNG files to the plan hashes rests on the supplied plan. Image and rendered comparisons were done by reading, not by pixel or text diffing. The rendered text extraction has garbled layout in places, so its displayed mathematics was compared chiefly through the images and TeX.",
+    "The main TeX source and notes/integrated_covariance_foundation.tex are not in the packet. Cross-references outside Sections 17-18 and the page 133 goal text were not traced to their sources.",
+    "Lean and numeric diagnostics were not rerun and receive no confidence vote. The reviewed TeX makes no Lean claim, and the finite scalar Lean scope in the source note is not extended by it.",
+    "The conditional operator results are not evidence for an actual noise family, compact variance tails, an infinite Gaussian series, a time path, a source limit, Young flow or a moment theorem. The original PB/OC/WS model scope and the goal of actual derived constants remain open.",
+    "report-raw-v1.txt was treated as diagnostic context only. No old gate is accepted, relabeled or recovered by this report."
+  ]
+}

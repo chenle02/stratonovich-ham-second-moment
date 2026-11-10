@@ -1,0 +1,95 @@
+{
+  "theorem_source_verdict": "VERIFIED",
+  "verdict_scope": "PublishedTheorem1.2 RAWp-momentnormalization/pdependenceandneededp1,p2application;notfullnumericalconstantnormalizationaudit",
+  "application_verdict": "MATCHES_ACTUAL_AF97_USE",
+  "common_hypothesis_role_matrix": {
+    "dimension": "d=1,2,3",
+    "spatial_covariance": "original nonnegative even PD homogeneous tempered Radon Gamma,includingwhite d=alpha=1 andsingular spectra;source generalizedheat-limitconvention",
+    "homogeneity": "0<alpha<min(2,d),oralpha=d=1;nonzeroGammaforpositiveL0",
+    "temporal_covariance": "static1 at a=0;ourvariation raw |s-r|^-a withunitamplitude,no a-dependent prefactor",
+    "wave_and_noise_normalization": "Delta coefficient1,noise coefficient1,originalGammaamplitude",
+    "initial_data": "(1,0)",
+    "solution": "canonical orderedStratonovich heat-limit expansion,notarbitraryPDEuniqueness",
+    "coupling": "same sourcefield within each chaos/Stratonovich expansion; no coupling/order of different a-models required"
+  },
+  "applications": [
+    {
+      "id": "PROOF052",
+      "import": "published3.8(i)/(3.23)2165;staticTheorem1.2ratio later",
+      "actual_local_work": "staticfixedorders/absoluteseries fromindependentfractionalregularizedBr andscaledgeometrictails;rawa-power coefficientHolder afterwidthremoval",
+      "normalization": "Eu raw,single2kchain;temporalendpoint1 definedseparatelyfromEulerGamma",
+      "result": "SOURCE_AND_APPLICATION_MATCH"
+    },
+    {
+      "id": "PROOF053",
+      "import": "none needed;published5.5 corroborates",
+      "actual_local_work": "positive-coefficienttype tau=nu K^(1/nu) bycoefficientsaddle/Stirlingandell^nu bound",
+      "normalization": "nu=3-alpha fixed,notLp root",
+      "result": "INTERNAL_DEDUCTION_MATCH"
+    },
+    {
+      "id": "PROOF054",
+      "import": "publishedTheorem1.2/(1.9)2147,p=1,2",
+      "actual_local_work": "finitepositiveWicktemporalmin,Green-first/fixedNwidthlimits,NinfinityfixedT;exactstaticamplitudeclock",
+      "normalization": "RAWmoments;U_sigma(T)moment=U(sigma^(2/(4-alpha))T)moment",
+      "result": "SOURCE_AND_APPLICATION_MATCH"
+    },
+    {
+      "id": "PROOF055",
+      "import": "staticL0;ownfullupperforanchorb",
+      "actual_local_work": "K0=(L0/nu)^nu,Holderrootlimsup,positivewindowa*;rawsecondliminf>2rawmeanlimsup",
+      "normalization": "M(a)=limsup logEu;not E|u|andnotS1pos",
+      "result": "SOURCE_AND_APPLICATION_MATCH"
+    },
+    {
+      "id": "PROOF056",
+      "import": "staticfixedordersidentifiedabove",
+      "actual_local_work": "disjointunionallp2splitsincludingtwoemptyorientations/self/unequal;Holderrawtimepower",
+      "normalization": "fullRAWsecondmomentcoefficients;noorthogonalchaosshortcut",
+      "result": "INTERNAL_DEDUCTION_MATCH"
+    },
+    {
+      "id": "PROOF057",
+      "import": "sourceCp=p^kappa_st L0 atzero,own054and051",
+      "actual_local_work": "factorialroottypes thenlogconvexpositivefiniteupperrates,interiorcontinuity",
+      "normalization": "each a hasitsOWNtime normalizationT^-kappa(a)",
+      "result": "SOURCE_AND_APPLICATION_MATCH"
+    },
+    {
+      "id": "PROOF058",
+      "import": "sourceCp boundary from(1.9),notfixeda fractionalallp",
+      "actual_local_work": "fixedanchorb/logconvexupper+staticlower squeeze;ratioofliminf2/limsup1 rates",
+      "normalization": "TIME liminf/sup FIRSTatfixeda,THEN a->0;L0>0 permitsdivision",
+      "result": "SOURCE_AND_APPLICATION_MATCH"
+    }
+  ],
+  "separate_objects": [
+    {
+      "name": "L0",
+      "object": "actual static RAWfirstmeanrate",
+      "domain": "a=0,timecovariance1,sameGamma,data1,0",
+      "identified_by": "publishedTheorem1.2p1"
+    },
+    {
+      "name": "M(a)",
+      "object": "actual fractional RAWmeanlimsup",
+      "domain": "fixed0<a<min(1,2-alpha)",
+      "identified_by": "definitionin055;boundarycontinuityonlyhere"
+    },
+    {
+      "name": "S1pos(Gamma,a)",
+      "object": "auxiliarypositivecontrolscorewithlabelc=1",
+      "domain": "fullsmoothnonnegativecompactspacetimetests andrawvariancehalfaction",
+      "identified_by": "own132scoredefinition;NOTactualp1identification"
+    },
+    {
+      "name": "M_CH",
+      "object": "sourceprinted spatial variationalobject",
+      "domain": "sourceunitW1,2class,sqrtquarticGammaenergyminusgradient²",
+      "identified_by": "published(1.11);numericalnormalizationnotadopted/repaired"
+    }
+  ],
+  "existing_white_numeric_source_hold": "Preserved/notadjudicated;notapremiseof052-058",
+  "no_new_source_or_manuscript_defect_identified": true,
+  "not_independent_family_review_or_grade": true
+}

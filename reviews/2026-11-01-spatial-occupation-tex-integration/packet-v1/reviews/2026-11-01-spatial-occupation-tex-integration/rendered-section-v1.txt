@@ -1,0 +1,450 @@
+   For Γ = 0, the mean, raw variance and Rayleigh rate are zero. Set all these scores to
+zero; the free canonical solution u = 1 has the corresponding zero moment rate. Strict
+positivity above is restricted to nonzero covariance. Matching an upper variational rate
+and identifying an exact original-point limit remain later steps.
+
+
+27      The temporal equilibrium density
+                                    ∫︁ ∞                               ∫︁ 1
+We use Euler’s function ΓE (x) = 0 ux−1 e−u du, x > 0, and Beta(x, y) = 0 tx−1 (1 −
+t)y−1 dt, x, y > 0. Both integrals are positive and finite.
+
+Lemma 27.1 (Gamma and Beta identities). For positive arguments,
+
+                          ΓE (x + 1) = xΓE (x),
+                                       ΓE (x)ΓE (y)
+                          Beta(x, y) =              ,
+                                        ΓE (x + y)
+                                       22x−1 ΓE (x)ΓE (x + 1/2)
+                             ΓE (2x) =            √             .
+                                                    π
+
+Proof. Integration by parts gives the recurrence, with vanishing boundary terms. In the
+positive product Gamma integral, use (u, v) = (Rt, R(1 − t)), with Jacobian R; Tonelli
+gives the Beta–Gamma identity. For the last identity, symmetry, then  ∫︁ t =2 (1 + v)/2
+                                                                                   √
+and v 2 = w, give Beta(x, x) = 21−2x Beta(1/2, x). Also ΓE (1/2) = R e−z dz = π:
+the substitution u = z 2 gives the first equality,
+                                               ∫︁ ∞ and2 squaring the positive Gaussian
+integral and using polar coordinates gives 2π 0 re−r dr = π. Substituting these into
+the Beta–Gamma identity proves duplication. This proves Lemma 27.1.
+
+Lemma 27.2 (Exact potential and mass). For 0 < a < 1 put r = (1 − a)/2 and, for
+0 < t < 1,
+                                      [t(1 − t)]−r
+                           fa (t) =                  .                   (27.1)
+                                    ΓE (r)ΓE (1 − r)
+This positive function belongs to L1 (0, 1) ∩ L2 (0, 1), and
+     ∫︂ 1
+          |s − t|−a fa (t) dt = 1                                 for every s ∈ [0, 1], (27.2)
+       0
+               ∫︂ 1
+                                     ΓE ((1 + a)/2)
+       Ma :=        fa (t) dt =                          > 0.                           (27.3)
+                 0              ΓE (1 + a)ΓE ((1 − a)/2)
+
+Proof. The positive binomial series (1 − z)−p =                      n
+                                                         ∑︁
+                                                           n≥0 (p)n z /n!, p > 0, 0 ≤ z < 1,
+follows directly as follows. Its coefficient ratio gives uniform convergence on compact
+subintervals, including for its derivative. Termwise differentiation gives (1 − z)y ′ = py,
+y(0) = 1; hence (1 − z)p y is constant one. Here (p)0 = 1, (p)n = p(p + 1) · · · (p + n − 1).
+All terms used below are nonnegative, so Tonelli applies.
+
+
+
+                                             181
+   For 0 < s < 1 split the integral of |s − t|2r−1 [t(1 − t)]−r into left and right parts. In
+the left part, t = su gives
+                                  ∫︂ 1
+                       L(s) = s r
+                                       (1 − u)2r−1 u−r (1 − su)−r du
+                                   0
+                                                  ∑︂ (r)n (1 − r)n sn
+                            = Beta(1 − r, 2r)sr                         .
+                                                  n≥0
+                                                        (1 + r)n n!
+
+The Beta ratio follows from the Gamma recurrence. Since (r)n /(1 + r)n = r/(r + n),
+expanding the incomplete Beta integral gives
+                                                         ∫︂ s
+        L(s) = r Beta(1 − r, 2r)Bs (r, r),   Bs (r, r) =      ur−1 (1 − u)r−1 du.
+                                                             0
+
+Reflection makes the right part L(1 − s), while symmetry gives Bs (r, r) + B1−s (r, r) =
+Beta(r, r). The full integral is therefore r Beta(1 − r, 2r) Beta(r, r) = ΓE (r)ΓE (1 − r).
+All integrals are finite because −r > −1 and 2r − 1 > −1. At s = 0 the integral is
+directly Beta(r, 1 − r) = ΓE (r)ΓE (1 − r); s = 1 follows by reflection. This proves (27.2),
+including the endpoints without a limiting argument there.
+    Integrability and square integrability follow from −r > −1 and −2r = a − 1 > −1.
+Finally,
+                             Beta(1 − r, 1 − r)         ΓE (1 − r)
+                       Ma =                      =                    ,
+                              ΓE (r)ΓE (1 − r)      ΓE (2 − 2r)ΓE (r)
+which is (27.3). Its time mass has not been renormalized. This proves Lemma 27.2.
+
+
+28      Physical spatial pairings and the full occupation
+        class
+Retain a nonzero original covariance from Hypothesis 1.1 with its actual amplitude. Set
+a = α0 , k = 3 − α > 1, q = 4 − α = k + 1 and D = q − 2a > 0. The scalar D is fixed.
+All profiles are real. The finite positive score S1pos is that of Proposition 26.6.
+
+Lemma 28.1 (The physical two-point integral). The positive measure ν( dx, dy) =
+dx Γ( dy) is sigma-finite. For nonnegative functions define
+                                      ∫︂
+                           BΓ (f, h) = f (x)h(x − y)ν( dx, dy)            (28.1)
+
+initially as an extended nonnegative integral, using finite Borel representatives of
+Lebesgue classes. Its value is representative independent. Lebesgue-a.e. convergence
+transfers to ν-a.e. convergence at both positions x and x − y.
+
+Proof. Local finiteness of Γ gives sigma-finiteness on exhausting balls, and Lebesgue
+measure is sigma-finite. If N is Borel and Lebesgue null, Tonelli applied first in x gives
+
+                                            182
+ν{x ∈ N } = 0 and ν{x − y ∈ N } = 0, because every fixed translate of N is null.
+An arbitrary Lebesgue null set has a Borel null superset. Thus arbitrary versions are
+measurable in the ν completion with the same value, and the same observation applies to
+the exceptional sets of a.e. convergence. Signed pairings will be used only after absolute
+convergence. This proves Lemma 28.1.
+   Put Asp (g) = BΓ (g 2 , g 2 ) and b(g) = ∥∇g∥22 , initially for smooth compact profiles.
+For smooth compact z, write Uz = Γ ∗ z in its usual pointwise sense.
+
+Lemma 28.2 (Actual smooth temporal controls). For every nonnegative nonzero z ∈
+Cc∞ (Rd ), let                 (︃ ∫︂            )︃
+                      λz (c)2 =       sup         c    Uz g 2 − b(g) ,       c > 0.
+                                  g∈H 1 (Rd ;R)
+                                    ∥g∥2 =1
+
+This is positive and finite, and λz is Lipschitz on every compact positive c interval. With
+the exact Ma in (27.3),
+                                                    Ma
+                                   S1pos ≥ λz (1) −    BΓ (z, z).                               (28.2)
+                                                    2
+                                                                                            ∫︁ 1
+Proof. Choose nonnegative nonzero f ∈ Cc∞ (0, 1) and s0 = 1/2. Let kf (s0 ) = 0 |s0 −
+t|−a f (t) dt > 0. The actual smooth test Ψ(t, x) = cf (t)z(x)/kf (s0 ) has mean cUz at
+s0 . Proposition 26.3 gives boundedness of this potential, the displayed real Rayleigh
+formula, and a positive rate for every c > 0. Comparing identical unit tests makes
+λz (c)2 Lipschitz with constant ∥Uz ∥∞ . On a positive compact interval its rate has a
+positive floor by monotonicity, giving the square-root Lipschitz bound.
+    Use the nonincreasing smooth cutoff χ constructed in the proof of Proposition 26.4.
+For integers n ≥ 4, set on (0, 1)
+                                                                  ∫︂ 1
+           fn (t) = fa (t)χ(1/(nt))χ(1/(n(1 − t))),      kn (s) =      |s − t|−a fn (t) dt.
+                                                                         0
+
+Extend fn by zero. It is smooth compact, vanishes near both endpoints, is nonzero,
+and increases to fa . Thus Ψn = fn ⊗ z is an actual positive smooth control. Monotone
+convergence and (27.2) give kn (s) ↑ 1 for every s ∈ ∫︁[0, 1]. Since the kernel is at least one
+                                                            1
+on the unit square off its null diagonal, 0 < c0 := 0 f4 ≤ kn (s) ≤ 1. The actual mean
+is kn (s)Uz ; hence its actual rate is λz (kn (s)), converging to λz (1) and bounded by that
+finite number. Dominated convergence gives IΨn → λz (1).
+    The raw cost is exactly the nonnegative Tonelli pairing
+                                                ∫︂ 1
+                              vΨn = BΓ (z, z)        fn (s)kn (s) ds.
+                                                       0
+
+Its time integrand increases to fa , so the cost tends to Ma BΓ (z, z). The spatial factor
+is finite and positive: its smooth compact autocorrelation is positive near zero, and
+homogeneity scales any origin-centered ball of positive Γ mass to every other positive
+radius. Such a ball exists by exhaustion. Take the limit of the individual inequalities
+
+                                                      183
+S1pos ≥ IΨn − vΨn /2. The score differences need not increase. No control depends
+on original large time and no rough stochastic evolution has been used. This proves
+Lemma 28.2.
+Proposition 28.3 (The finite smooth spatial ratio). For real unit g ∈ Cc∞ (Rd ) put
+R(g) = Asp (g)/b(g)α/2 . Its supremum R0 over these profiles is a positive finite real
+number, and
+                                                   ]︃1/k
+                                         R(g)αα/2
+                                      [︃
+                                pos
+                               S1 ≥ k                    .                      (28.3)
+                                         8Ma q q/2
+Proof. The gradient energy b(g) is positive: a nonzero L2 function with zero weak gra-
+dient would have Fourier transform supported only at zero, and hence would vanish. Its
+square is nonnegative nonzero smooth compact, so the autocorrelation argument in the
+preceding proof gives 0 < A := Asp (g) < ∞. With Uℓ g(x) = ℓd/2 g(ℓx), the physical
+changes of variables give
+                              Asp (Uℓ g) = ℓα A,         b(Uℓ g) = ℓ2 b(g).                   (28.4)
+The factors in the first identity are ℓ2d from the two squares, ℓ−d from dx, and ℓα−d
+from the Radon pushforward.
+   For θ, ℓ > 0 choose the actual smooth control z = θ(Uℓ g)2 . The Rayleigh test Uℓ g
+gives λz (1)2 ≥ θℓα A − ℓ2 b, while BΓ (z, z) = θ2 ℓα A. For any L > 0, put u = α/q > 0 and
+choose
+                            ℓ2 = uL2 /b,      θ = (1 + u)L2 /(ℓα A).
+The radicand is L2 . Lemma 28.2 consequently gives
+                                                           Ma (1 + u)2
+                          S1pos ≥ L − CLq ,         C=                 > 0.
+                                                           2R(g)uα/2
+Its maximum occurs at Lk = 1/(qC) and is (k/q)(qC)−1/k . Since 1 + u = 4/q, 1/(q q C) =
+R(g)αα/2 /(8Ma q q/2 ), proving (28.3). The already finite S1pos bounds every ratio by
+8Ma q q/2 (S1pos /k)k /αα/2 . A normalized compact bump supplies a positive ratio. This
+proves positivity and finiteness of R0 before any rough spatial extension is invoked. This
+proves Proposition 28.3.
+Proposition 28.4 (The physical four-linear extension). For real f ∈ H 1 (Rd ) define
+             1−α/4      α/4
+N (f ) = ∥f ∥2     ∥∇f ∥2 . Every physical square pairing is finite and
+                                       Asp (f ) ≤ R0 N (f )4 ,                                (28.5)
+                                                  √︂
+                                        2   2
+                               0 ≤ BΓ (f , h ) ≤ Asp (f )Asp (h).                             (28.6)
+
+The actual signed integral C4 (f1 , f2 , f3 , f4 ) = BΓ (f1 f2 , f3 f4 ) is absolutely convergent and
+jointly continuous on (H 1 )4 , with
+                    ∫︂                                                   4
+                                                                        ∏︂
+                         |f1 (x)f2 (x)f3 (x − y)f4 (x − y)| dν ≤ R0           N (fj ).        (28.7)
+                                                                        j=1
+
+
+                                                   184
+The ratio supremum Rsp over all real unit H 1 profiles equals R0 . Every nonzero H 1
+profile has Asp (f ) > 0.
+Proof. For smooth compact f , normalization in R0 proves (28.5), including f = 0. All
+exponents in N are positive and N (f ) ≤ ∥f ∥H 1 . Smooth signed covariance is positive:
+                                           ∫︁
+with the ordinary transform Q ˆ︁ord (ξ) = eiξ·x Q(x) dx, the model convention gives
+                           ∫︂
+               BΓ (Q, Q) = |Q    ˆ︁ord (ξ)|2 µ( dξ) ≥ 0,   Q ∈ Cc∞ (Rd ; R).
+
+Pair Γ with the smooth compact correlation to obtain this identity; rapid Fourier decay
+and tempered µ give finiteness. Evenness of Γ and (x, y) ↦→ (x − y, −y) give symmetry.
+The quadratic polynomial for Q + tP gives covariance Cauchy–Schwarz. In particular,
+for smooth real f, h,
+                          0 ≤ BΓ (f 2 , h2 ) ≤ R0 N (f )2 N (h)2 .
+The squares of signed smooth profiles are already smooth and nonnegative.
+     Smooth compact functions are dense in H 1 . Cutoffs equal to one on the radius-R
+ball, vanishing beyond 2R and with gradient at most C/R, converge by the function and
+gradient tails and the bound C∥f ∥2 /R for the extra gradient term. Mollification then
+converges in H 1 by L2 translation continuity of the function and its weak gradients. The
+space is separable through its closed isometric image f ↦→ (f, ∇f ) in L2 (Rd )d+1 .
+     For arbitrary f, h ∈ H 1 take smooth approximants converging in H 1 and along a com-
+mon subsequence Lebesgue-a.e. Lemma 28.1 transfers this convergence at both positions
+to ν-a.e. convergence. Fatou and continuity of N give BΓ (f 2 , h2 ) ≤ R0 N (f )2 N (h)2 < ∞,
+including the diagonal bound. At this stage Fatou supplies an inequality, not continuity.
+     Apply ordinary Cauchy–Schwarz under the positive measure ν to f1 (x)f3 (x − y) and
+f2 (x)f4 (x−y).
+             ∏︁ The two squared integrals are finite by the last bound; their square root is
+at most R0 j N (fj ). This proves (28.7), absolute convergence and actual multilinearity.
+Telescoping a difference one argument at a time and using N (f ) ≤ ∥f ∥H 1 proves joint
+continuity. Thus Asp and the square pairings are continuous. Smooth PSD passes to
+finite linear combinations of H 1 squares by this continuity, and its two-profile Cauchy–
+Schwarz gives (28.6). This completes the physical pairing argument beyond Fatou.
+     Every real unit H 1 profile has positive gradient energy by the Fourier argument
+above. The homogeneous bound gives Rsp ≤ R0 , and smooth inclusion gives the reverse.
+Normalized smooth approximations preserve the ratio by continuity. Finally, for nonzero
+f , choose a bounded set E of finite positive measure where |f | ≥ c > 0. The correlation
+of 1E is continuous and positive near zero by L2 translation continuity. An origin-
+centered ball there has positive Γ mass, so Asp (f ) ≥ c4 BΓ (1E , 1E ) > 0. This uses a
+nonnegative integral, not an H 1 claim for 1E . Finiteness was already proved. This
+proves Proposition 28.4.
+Proposition 28.5 (The spatial energy and static lower score). Over all real unit H 1
+profiles define the own energy
+                                          (︃          )︃
+                                                 b(g)
+                             Esp = sup Asp (g) −         .
+                                  ∥g∥2 =1         2
+
+                                            185
+Then
+                                         2 − α α/(2−α) 2/(2−α)
+                                 Esp =        α       Rsp      ∈ (0, ∞).                           (28.8)
+                                           2
+In particular,
+                                                                             ]︃1/k
+                                                    (2z/(2 − α))(2−α)/2
+                                                     [︃
+       S1pos ≥ Ma−1/k F0 (Esp ),         F0 (z) = k                                  ,   z > 0.    (28.9)
+                                                           8q q/2
+
+The subscript in F0 labels this scalar map; the covariance retains its original temporal
+exponent a.
+
+Proof. Physical change of variables, or smooth approximation and Proposition 28.4,
+extends (28.4) to real H 1 profiles. For fixed unit g, with A, b > 0, the maximum of
+ℓα A − ℓ2 b/2 occurs at ℓ2−α = αA/b and equals
+                                         2 − α α/(2−α)
+                                              α        R(g)2/(2−α) .
+                                           2
+Dilation preserves the whole unit class and includes ℓ = 1. Taking both numerical
+suprema, then profiles with ratio tending to Rsp , proves (28.8). No optimizer is assumed.
+Smooth ratios also approach Rsp by Proposition 28.4. Pass them through (28.3) and
+substitute                                (︃       )︃(2−α)/2
+                                    α/2      2Esp
+                              Rsp α =                        .
+                                             2−α
+This gives (28.9). This proves Proposition 28.5.
+
+28.1      The kernel row and full occupation energy
+Define, for u ̸= 0,                             ∫︂ ∞
+                                        1                     2
+                             K⋆ (u) =                  e−(λ+λ /(2D))|u| λa−1 dλ,                  (28.10)
+                                      ΓE (a)     0
+
+and set K⋆ (0) = 0 for time integration.
+
+Lemma 28.6 (Exact row maximum). The kernel is even, positive off zero, locally in-
+tegrable, decreasing on (0, ∞), and K⋆ (u) ≤ |u|−a off zero. Its exact row maximum on
+[0, 1] is
+                      ∫︂ 1                         ∫︂ 1/2
+                 max       K⋆ (s − t) dt = R⋆ := 2        K⋆ (u) du ∈ (0, ∞).   (28.11)
+                   s∈[0,1]   0                               0
+
+Proof. Dropping the positive quadratic damping bounds the mixture by the Gamma
+integral |u|−a . Positivity and monotonicity
+                                      ∫︁ t   follow directly from the integrand, and a < 1
+gives local integrability. Put Φ(t) = 0 K⋆ (u) du. It is concave because its integrand is
+decreasing on positive arguments. The row is Φ(s) + Φ(1 − s) ≤ 2Φ(1/2), with equality
+at s = 1/2. The diagonal value changes no time integral. This proves Lemma 28.6.
+
+
+
+                                                     186
+    Let O be the full class of ∫︁strongly H 1 (Rd ; R)-measurable fields s ↦→ gs on (0, 1) with
+                                   1
+∥gs ∥2 = 1 a.e. and T (g) = 0 b(gs ) ds < ∞. No time smoothness, common compact
+support or optimizer condition is imposed.
+
+Proposition 28.7 (The full physical occupation class). The pairings (s, t) ↦→ BΓ (gs2 , gt2 )
+are measurable, representative independent and equal to their physical integrals. With
+                                ∫︂ 1 ∫︂ 1
+                       J(g) =             K⋆ (s − t)BΓ (gs2 , gt2 ) ds dt,
+                                     0   0
+
+every g ∈ O satisfies
+                              0 ≤ J(g) ≤ R⋆ Rsp T (g)α/2 < ∞.                          (28.12)
+The own energy over exactly this full class satisfies
+
+                0 < E⋆O := sup J(g) − T (g)/2 ≤ R⋆2/(2−α) Esp < ∞.
+                                (︁               )︁
+                                                                                       (28.13)
+                               g∈O
+
+
+Proof.∫︁ The map s ↦→ b(gs ) is measurable by continuity of the squared gradient norm.
+        1
+Also 0 ∥gs ∥2H 1 ds = 1 + T (g). Use a separably valued strong representative and replace
+exceptional null times by one fixed real unit compact bump. Joint measurable spatial
+representatives exist: approximate this Bochner L2 field by simple H 1 -valued functions
+with summable L2 (0, 1; H 1 ) errors, and choose measurable spatial versions for their
+countably many values. A subsequence has a measurable spacetime L2 limit, and for
+a.e. s its spatial L2 class is gs . Lemma 28.1 makes every pairing independent of the
+spatial versions. The continuous pairing map on the separable space H 1 × H 1 from
+Proposition 28.4 consequently gives a measurable function of (s, t) agreeing a.e. with
+the actual nonnegative physical integral.
+    Set F (s) = b(gs )α/4 . Equations (28.5) and (28.6) give BΓ (gs2 , gt2 ) ≤ Rsp F (s)F (t).
+                                                                   ∫︁ 1        ∫︁ 1
+Since 0 < α/2 < 1, concavity on the unit time interval yields 0 F 2 = 0 b(gs )α/2 ds ≤
+T (g)α/2 . Now use 2F (s)F (t) ≤ F (s)2 + F (t)2 and the exact row bound (28.11) to obtain
+(28.12). Positive Tonelli is valid before finiteness is known. Null-time modifications
+affect only a product-null set, so they cannot change J.
+                                                                      2/(2−α)
+    The scalar maximum of R⋆ Rsp T α/2 − T /2 over T ≥ 0 is R⋆                Esp , by the same
+differentiation as (28.8). This bounds the occupation supremum from above. For pos-
+itivity take a constant-in-time
+                          ∫︁ 1 ∫︁ 1 unit compact profile and its spatial dilation Uℓ . Its J is
+J0 ℓα Asp (g), where J0 = 0 0 K⋆ (s − t) ds dt ∈ (0, ∞), while T = ℓ2 b(g). For sufficiently
+small ℓ > 0, α < 2 makes J − T /2 > 0. Thus the nonempty supremum is a positive
+finite real number. This is a comparison bound; no attaining profile or equality in it
+has been asserted. No spatial point trace or rough stochastic evolution was used. This
+proves Proposition 28.7.
+    For zero covariance all spatial pairings, spatial energies and occupation energies van-
+ish; set Rsp = 0. The temporal identities remain valid, and the moment model is the
+free case already treated.
+
+
+                                             187
+29     Targets
+Goal 29.1 (Upper bound at the correct scale). Under Hypothesis 1.1, prove
+lim supt→∞ t−κ log Eu2 (t, x) < ∞, ideally with an explicit constant.
+
+
+ Theorem 13.8 establishes the unchanged full upper goal for every admissible dimen-
+ sion and homogeneous covariance. The interval estimate passed scoped correctness
+ review. The preceding independent mild construction passed correctness review.
+ The explicit hypothesis/object revision and independent fixed-order construction
+ and their consumers passed their own scoped Opus5.5/HIGH review. A fresh whole-
+ paper cold read remains required. The earlier explicit bounds for 0 < α ≤ 1 remain
+ available. The sharp constant and final whole-paper cold read remain open.
+
+
+Goal 29.2 (Sharp second-moment constant). Under Hypothesis 1.1, derive a finite con-
+stant C2 (γ, α0 ) and prove, for every fixed x ∈ Rd ,
+
+                            lim t−κ log Eu2 (t, x) = C2 (γ, α0 ).
+                            t→∞
+
+A variational characterization must specify its full domain, covariance amplitude, ki-
+netic coefficient and Gaussian action. Derive further evaluations and bounds from this
+formula. For zero covariance, u(t, x) = 1 and C2 (0, α0 ) = 0.
+
+
+ Goal 29.2 follows Le’s revised direction of 2026-10-31: derive the actual constant,
+ whatever the computation gives. The original proposed bounds with endpoints
+ 2(4−α)/(3−α) L∗ and 2(4−α)/(3−α) L∗ remain comparisons with Conjecture 2.3. Matching
+ those endpoints or closing the source’s variational gap is not a completion require-
+ ment. No correction of the source’s normalization or equality of its energy domains
+ is adopted.
+
+
+
+30     Established steps and open questions
+1. The mixed expansion and the first obstruction. Section 3 proves the complete
+   nonnegative mixed expansion and an independent convergent solution series. It cor-
+   rects the time-uniformity issue in the source’s intermediate estimate. The common-
+   per-pairing majorant has exponent ρ > κ and cannot give the desired scale. This is a
+   restriction on that majorant, not on the model or all uses of the source’s Theorem 3.1.
+
+2. Calibrations. Section 4 gives the finite white and Riesz coefficients. As α0 ↓ 0,
+   the target exponent becomes (4 − α)/(3 − α), the static exponent. Proposition 2.4
+   is unconditional; its numerical 2L∗ specialization requires the stated first-moment
+   premise. Comparisons with the Skorohod model identify time exponents only.
+
+
+                                            188
+3. The full upper scale. Section 5 gives explicit bounds when α ≤ 1. Section 13
+   proves the full homogeneous-covariance upper scale by independent interval fields,
+   local Gaussian-degree estimates and dyadic covariance domination. The latter proof
+   does not assume an endpoint representation of the spatial covariance.
+
+4. The sharp constant remains open. Goal 29.2 requires a lower bound beyond
+   the unconditional Jensen comparison and a matching sharp upper constant. The
+   new candidate in Section 14 supplies a static lower comparison for all admissible
+   temporal exponents and a strict actual-mean gap only near the static endpoint; these
+   proofs passed their own scoped review. A representation using two ordered chains
+   is a possible research direction, not a proved result of these notes. The intended
+   normalization of the source’s first-moment constants also remains to be clarified.
+
+
+References
+[1] Raluca M. Balan and Daniel Conus, Intermittency for the wave and heat equations with fractional
+    noise in time, Ann. Probab. 44 (2016), 1488–1534 (); MR3474476
+[2] Xia Chen, Exponential asymptotics for Brownian self-intersection local times under Dalang’s con-
+    dition, Electron. J. Probab. 28 (2023), Paper No. 119, 17 (); MR4660700
+[3]          , Time-dependency     in   hyperbolic   anderson   model:   Stratonovich   regime,   Preprint
+      arXiv:2510.01412 (2025) ()
+[4]          , Time-dependency in hyperbolic Anderson models: Stratonovich regime, 2026. 64-
+      page author manuscript, submitted to Ann. Appl. Probab.; retrieved 2026-10-26, SHA-256
+      5f7385ca451e643a1f3ff31835e4ee52b2708b5d2e3652eec3fb5d3958b97b6c; supersedes Theorem 1.2 of
+      arXiv:2510.01412v1.
+[5] Xia Chen and Yaozhong Hu, Hyperbolic anderson equations with general time-independent gaus-
+    sian noise: Stratonovich regime, Ann. Probab. 53 (2025), 2144–2195. Available at 2403.08603 ();
+    MR4988274.Published version of arXiv:2403.08603
+[6] Michel Crouzeix and César Palencia, The numerical range as a spectral set, 2017. Author preprint,
+    arXiv:1702.00668v1; numbering used here refers to this version.
+[7] Peter K. Friz and Martin Hairer, A course on rough paths, Universitext, Springer, Cham, [2020]
+    ©2020. With an introduction to regularity structures, Second edition of [ 3289027]. MR4174393
+[8] Gerald Teschl, Mathematical methods in quantum mechanics, Second, Graduate Studies in Math-
+    ematics, vol. 157, American Mathematical Society, Providence, RI, 2014. With applications to
+    Schrödinger operators. MR3243083
+
+
+
+
+                                                     189
+

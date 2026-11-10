@@ -1,0 +1,110 @@
+{
+  "raw_contract": {
+    "contract_ok": "true",
+    "contract_error": "",
+    "verdict": "PASS",
+    "confidence": "HIGH",
+    "category": "paper-review-deepseek",
+    "model": "deepseek/deepseek-v4-pro"
+  },
+  "scope": "Seven-proof temporal-coefficient/static-endpoint targeted deep review only; no parent adoption/global/main-whole/image/cold/goal acceptance.",
+  "scientific_source_revision": "53bf01b7585b8815ec92b56b5ba1590550c3e93f",
+  "raw_proof_rows": [
+    {
+      "id": "PROOF052",
+      "raw_status": "FULLY_CHECKED",
+      "raw_row": "| PROOF052 | `L:mean-coefficient-holder` | FULLY_CHECKED | Static/bootstrap norm series; `m_k^\u03b5(a)\u2264m_k^\u03b5(0)^{1\u2212a/b}m_k^\u03b5(b)^{a/b}`; \u03b5\u21920 then \u03b7\u21920; degree `t^{\u03b2(a)k}`; `F_a` finite on `[0,\u221e)`. No gap. |"
+    },
+    {
+      "id": "PROOF053",
+      "raw_status": "FULLY_CHECKED",
+      "raw_row": "| PROOF053 | `L:positive-series-type` | FULLY_CHECKED | \u03c4\u2192K with `(L/\u03bd)^\u03bd`; K\u2192\u03c4 with \u2113^\u03bd; equality `\u03c4=\u03bdK^{1/\u03bd}` both directions; \u03c4=0, K=0, \u03bd=1. No gap. |"
+    },
+    {
+      "id": "PROOF054",
+      "raw_status": "FULLY_CHECKED",
+      "raw_row": "| PROOF054 | `P:static-minorant-lower` | FULLY_CHECKED | `c_{\u03b4,T}\u2192T^{\u2212a}`; entrywise Wick domination; effective clock `T^{1\u2212a/(4\u2212\u03b1)}`; `T^{\u03ba(a)}` exponent; `p^{\u03ba_st}L0` lower rate. No gap. |"
+    },
+    {
+      "id": "PROOF055",
+      "raw_status": "FULLY_CHECKED",
+      "raw_row": "| PROOF055 | `P:near-static-mean-gap` | FULLY_CHECKED | `K(0)=(L0/\u03bd)^\u03bd`; `K(b)<\u221e`; `M(a)\u2264L0(B_b/K(0))^{a/(b\u03bd)}`; nonempty window; strict `2M(a)<2^{\u03ba_st}L0`. No gap. |"
+    },
+    {
+      "id": "PROOF056",
+      "raw_status": "FULLY_CHECKED",
+      "raw_row": "| PROOF056 | `L:full-moment-coefficient-holder` | FULLY_CHECKED | Split/empty-chain counting for p=1,2; k=0 coefficient 1; Holder at `a\u2081=0`; degree `\u03b2(a)k` incl. empty chains; regroup via P:mixed and static norm series. No gap. |"
+    },
+    {
+      "id": "PROOF057",
+      "raw_status": "FULLY_CHECKED",
+      "raw_row": "| PROOF057 | `P:moment-growth-logconvex` | FULLY_CHECKED | `\u039b\u0304_p(0)=C_p`; CS+fminiteness; `K_p=(\u039b\u0304_p/\u03bd)^\u03bd`; \u03bd-power cancellation; log-convex upper rate; secant continuity on (0,a_max). No gap. |"
+    },
+    {
+      "id": "PROOF058",
+      "raw_status": "FULLY_CHECKED",
+      "raw_row": "| PROOF058 | `C:static-moment-constant-continuity` | FULLY_CHECKED | `\u039b\u0304_p(a)\u2264C_p(\u039b\u0304_p(b)/C_p)^{a/b}`; squeeze at a\u21930; ratio `2^{\u03ba_st}`; iterated-limit scope stated. No gap. |"
+    }
+  ],
+  "raw_ST_statuses": "ST01\u2013ST18 each SATISFIED; individual raw locators retained. Presence/status is not a substitute for checking exact depth and every requested control.",
+  "required_repairs_claimed_by_reviewer": "None",
+  "reviewer_noncritical_notes": [
+    "Static L0 positivity justified by manuscript Gaussian-competitor scaling and legitimate imported static theorem/domain; first-principles reproof of imported law was not performed.",
+    "Reviewer alleges an over-informative mean coefficient endpoint statement mismatch.",
+    "Historical source review annotations are non-premises."
+  ],
+  "orchestrator_diagnostics": [
+    {
+      "kind": "Ratio notation differs in report summary",
+      "raw": "Checked derivations/ST18 writes upperLambda2 / upperLambda1",
+      "actual_corollary": "underlineLambda2 / overlineLambda1",
+      "assessment": "The report also checks the squeeze of BOTH lower and upper rates to Cp, which supplies the actual ratio; root must bind coverage to the actual corollary, not substitute its statement. No source change."
+    },
+    {
+      "kind": "Inaccurate optional endpoint-mismatch commentary",
+      "raw": "PROOF052 proves a=0 endpoint but statement restricts0<a<b; alleged cosmetic mismatch",
+      "assessment": "PROOF052 already interpolates between endpoint0 andb on the RHS for0<a<b; a=0 as evaluation is trivial. PROOF056 independently states/proves general endpoint a1=0. No substantive manuscript mismatch follows from this report comment; no repair is adopted."
+    },
+    {
+      "kind": "Requested illustrative hand controls not expanded",
+      "raw": "ST07 labels polynomial/nu1 cases covered and ST13 labels small-order counting satisfied without writing the specific requested exp(z)/polynomial and k1/k2 hand calculations.",
+      "assessment": "Record this completeness limit; all18 IDs/statuses are present, but presence alone is not full evidence of every requested subexample. Main type/counting derivations and source proof bodies are supplied; parent must adjudicate depth."
+    }
+  ],
+  "native_evidence": {
+    "session": "ses_e62da3231ffeo0tw7Irth89pZF",
+    "actual_model": "deepseek/deepseek-v4-pro",
+    "finish": "stop",
+    "exit": {
+      "exit_code": 0,
+      "elapsed_seconds": 268.3859029719606,
+      "finished_utc": "2026-11-02T16:48:50.225692+00:00"
+    },
+    "tools_used": 0,
+    "all28_Git_frozen_match": true,
+    "all28_live_match": true,
+    "regular_file_export": true,
+    "source_rawLF_renderer_maps_verified": true,
+    "usage": [
+      {
+        "total": 272934,
+        "input": 245143,
+        "output": 4511,
+        "reasoning": 23280,
+        "cache": {
+          "write": 0,
+          "read": 0
+        }
+      }
+    ]
+  },
+  "limitations": [
+    "No image/source-raster certification",
+    "Not strict blind; historical source annotations disclosed",
+    "Not cold",
+    "Static p1/p2 law a scoped published-source import, not internally reproved",
+    "No all214/original-all-model intrinsic-theorem or goal acceptance",
+    "No automatic retry/model substitution/source edits/ACTIVE Git operations"
+  ],
+  "parent_adjudication": "PENDING"
+}

@@ -1,0 +1,32 @@
+{
+  "scope": "Unchanged prior exact scaling source/complete types, no compiler run or new fact",
+  "bindings": [
+    {
+      "path": "reviews/2026-10-29-direct-event-calibration/packet-v1/DirectEvent.lean",
+      "sha256": "170e16ec98fbf69fd69c11d93262b8f82eb10517f08d8cebdd98ca1b9f7494bb",
+      "accepted_manifest_match": true,
+      "live_source_match": true
+    },
+    {
+      "path": "reviews/2026-10-29-direct-event-calibration/packet-v1/types-and-axioms.txt",
+      "sha256": "b024f040e5e3dbb754033721ed1d7b3ab9922bafe99da0ae80cd9ba6e07dcb8c",
+      "accepted_manifest_match": true,
+      "live_source_match": false
+    }
+  ],
+  "used_facts": [
+    "DirectEvent.kappa_gt_one",
+    "DirectEvent.physical_scale",
+    "DirectEvent.noise_scale",
+    "DirectEvent.vertex_scale"
+  ],
+  "actual_guards": [
+    "T>0 implies delta>0 and r_T>0",
+    "a<1 and alpha<2 imply alpha<3; hence 3-alpha>0"
+  ],
+  "outside_scope": [
+    "gauge_inverse",
+    "gauge_drift",
+    "monodromy"
+  ]
+}

@@ -1,0 +1,250 @@
+{
+  "scope": "9direct radial H1 scaling checks (base30/50digits),4actual d1free-source cone cases,1smooth-pulse evaluator,3heat-order and3Gaussian-observable toy guards,12prefactor rows; no certified enclosure/CM/stochastic operator proof",
+  "data_scaling_rows": [
+    {
+      "d": 1,
+      "R": 1,
+      "direct_H1_norm_squared": "6.087951668336100403586067",
+      "scaling_formula": "6.087951668336100403586067",
+      "upper_Ceta_Rd": "6.087951668336100403586067"
+    },
+    {
+      "d": 1,
+      "R": 2,
+      "direct_H1_norm_squared": "7.261091592488104505646243",
+      "scaling_formula": "7.261091592488104505646243",
+      "upper_Ceta_Rd": "12.17590333667220080717213"
+    },
+    {
+      "d": 1,
+      "R": 5,
+      "direct_H1_norm_squared": "14.71236076029139385304748",
+      "scaling_formula": "14.71236076029139385304748",
+      "upper_Ceta_Rd": "30.43975834168050201793034"
+    },
+    {
+      "d": 2,
+      "R": 1,
+      "direct_H1_norm_squared": "21.70478050652217769428127",
+      "scaling_formula": "21.70478050652217769428127",
+      "upper_Ceta_Rd": "21.70478050652217769428127"
+    },
+    {
+      "d": 2,
+      "R": 2,
+      "direct_H1_norm_squared": "40.49811261817192531106075",
+      "scaling_formula": "40.49811261817192531106075",
+      "upper_Ceta_Rd": "86.8191220260887107771251"
+    },
+    {
+      "d": 2,
+      "R": 5,
+      "direct_H1_norm_squared": "172.051437399720158628517",
+      "scaling_formula": "172.051437399720158628517",
+      "upper_Ceta_Rd": "542.6195126630544423570319"
+    },
+    {
+      "d": 3,
+      "R": 1,
+      "direct_H1_norm_squared": "58.6704664824928345880554",
+      "scaling_formula": "58.6704664824928345880554",
+      "upper_Ceta_Rd": "58.6704664824928345880554"
+    },
+    {
+      "d": 3,
+      "R": 2,
+      "direct_H1_norm_squared": "189.0811266164941011479319",
+      "scaling_formula": "189.0811266164941011479319",
+      "upper_Ceta_Rd": "469.3637318599426767044432"
+    },
+    {
+      "d": 3,
+      "R": 5,
+      "direct_H1_norm_squared": "1728.156205442632812376699",
+      "scaling_formula": "1728.156205442632812376699",
+      "upper_Ceta_Rd": "7333.808310311604323506925"
+    }
+  ],
+  "free_cone_rows": [
+    {
+      "L": 4,
+      "good_R": 6,
+      "source_point_square": "1",
+      "good_spatial_square_average": "1.0",
+      "bad_fixed_R1_square_average": "0.0"
+    },
+    {
+      "L": 8,
+      "good_R": 10,
+      "source_point_square": "1",
+      "good_spatial_square_average": "1.0",
+      "bad_fixed_R1_square_average": "0.0"
+    },
+    {
+      "L": 16,
+      "good_R": 18,
+      "source_point_square": "1",
+      "good_spatial_square_average": "1.0",
+      "bad_fixed_R1_square_average": "0.0"
+    },
+    {
+      "L": 32,
+      "good_R": 34,
+      "source_point_square": "1",
+      "good_spatial_square_average": "1.0",
+      "bad_fixed_R1_square_average": "0.0"
+    }
+  ],
+  "outside_mask_pulse": {
+    "L": 6,
+    "time_support": [
+      ".25",
+      ".75"
+    ],
+    "space_support": [
+      "2.75",
+      "3.25"
+    ],
+    "full_first_Picard": "0.5",
+    "fixed_mask_R1_first_Picard": "0.0",
+    "scope": "smooth nonnegative deterministic potential; higher full terms nonnegative, no CM/noise-law assertion"
+  },
+  "heat_order_rows": [
+    {
+      "epsilon": "0.5",
+      "point_mass_location": "3",
+      "x": "0",
+      "R": 1,
+      "mask_after_heat": "0.00006962652597337392694520902",
+      "heat_after_mask": "0",
+      "scope": "deterministic point-mass convolution guard, not a raw Gaussian sample"
+    },
+    {
+      "epsilon": "1.0",
+      "point_mass_location": "3",
+      "x": "0",
+      "R": 1,
+      "mask_after_heat": "0.004431848411938007175602353",
+      "heat_after_mask": "0",
+      "scope": "deterministic point-mass convolution guard, not a raw Gaussian sample"
+    },
+    {
+      "epsilon": "2.0",
+      "point_mass_location": "3",
+      "x": "0",
+      "R": 1,
+      "mask_after_heat": "0.02973257230590734288275439",
+      "heat_after_mask": "0",
+      "scope": "deterministic point-mass convolution guard, not a raw Gaussian sample"
+    }
+  ],
+  "observable_rows": [
+    {
+      "k_over_pi": "0.5",
+      "point_variance": "1",
+      "expected_spatial_average_of_squares": "1",
+      "variance_of_spatial_average": "0.4052847345693510857755179",
+      "scope": "stationary Gaussian harmonic toy; covariance not original H:homog class"
+    },
+    {
+      "k_over_pi": "1.0",
+      "point_variance": "1",
+      "expected_spatial_average_of_squares": "1",
+      "variance_of_spatial_average": "2.578257127239853151730217e-115",
+      "scope": "stationary Gaussian harmonic toy; covariance not original H:homog class"
+    },
+    {
+      "k_over_pi": "2.0",
+      "point_variance": "1",
+      "expected_spatial_average_of_squares": "1",
+      "variance_of_spatial_average": "1.034345021972950755813613e-103",
+      "scope": "stationary Gaussian harmonic toy; covariance not original H:homog class"
+    }
+  ],
+  "data_prefactor_rows": [
+    {
+      "d": 1,
+      "delta": "0.25",
+      "R_delta": "6.0",
+      "delta_log_data_upper_prefactor": "0.726230992588749861300707",
+      "scope": "H1 upper budget only, not H1/2 exact norm or operator moment"
+    },
+    {
+      "d": 1,
+      "delta": "0.125",
+      "R_delta": "10.0",
+      "delta_log_data_upper_prefactor": "0.4269686992651237660510428",
+      "scope": "H1 upper budget only, not H1/2 exact norm or operator moment"
+    },
+    {
+      "d": 1,
+      "delta": "0.0625",
+      "R_delta": "18.0",
+      "delta_log_data_upper_prefactor": "0.2502210161889443210373796",
+      "scope": "H1 upper budget only, not H1/2 exact norm or operator moment"
+    },
+    {
+      "d": 1,
+      "delta": "0.01",
+      "R_delta": "102.0",
+      "delta_log_data_upper_prefactor": "0.05738137314411215525452363",
+      "scope": "H1 upper budget only, not H1/2 exact norm or operator moment"
+    },
+    {
+      "d": 2,
+      "delta": "0.25",
+      "R_delta": "6.0",
+      "delta_log_data_upper_prefactor": "1.379080397182602242300776",
+      "scope": "H1 upper budget only, not H1/2 exact norm or operator moment"
+    },
+    {
+      "d": 2,
+      "delta": "0.125",
+      "R_delta": "10.0",
+      "delta_log_data_upper_prefactor": "0.8172466045327987919517667",
+      "scope": "H1 upper budget only, not H1/2 exact norm or operator moment"
+    },
+    {
+      "d": 2,
+      "delta": "0.0625",
+      "R_delta": "18.0",
+      "delta_log_data_upper_prefactor": "0.4820966353791642719995997",
+      "scope": "H1 upper budget only, not H1/2 exact norm or operator moment"
+    },
+    {
+      "d": 2,
+      "delta": "0.01",
+      "R_delta": "102.0",
+      "delta_log_data_upper_prefactor": "0.1118274827684284112970217",
+      "scope": "H1 upper budget only, not H1/2 exact norm or operator moment"
+    },
+    {
+      "d": 3,
+      "delta": "0.25",
+      "R_delta": "6.0",
+      "delta_log_data_upper_prefactor": "2.003700730810878210294457",
+      "scope": "H1 upper budget only, not H1/2 exact norm or operator moment"
+    },
+    {
+      "d": 3,
+      "delta": "0.125",
+      "R_delta": "10.0",
+      "delta_log_data_upper_prefactor": "1.193409974317685611349296",
+      "scope": "H1 upper budget only, not H1/2 exact norm or operator moment"
+    },
+    {
+      "d": 3,
+      "delta": "0.0625",
+      "R_delta": "18.0",
+      "delta_log_data_upper_prefactor": "0.7069149868279901197102227",
+      "scope": "H1 upper budget only, not H1/2 exact norm or operator moment"
+    },
+    {
+      "d": 3,
+      "delta": "0.01",
+      "R_delta": "102.0",
+      "delta_log_data_upper_prefactor": "0.1651444295541216108192643",
+      "scope": "H1 upper budget only, not H1/2 exact norm or operator moment"
+    }
+  ]
+}

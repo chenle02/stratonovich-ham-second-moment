@@ -18,6 +18,13 @@
   pilot now has three elaborated statements and an owned-source replay.
   Exact type/application review passed4checks/HIGH;no official package gate is claimed.
 
+- **Standalone local checks (current):**80acceptedfinitefacts22local seams.
+  Latesttwo white-CDF conditional algebra facts passed FULL exacttype/
+  applicationreview25HIGH313.597s atscientific95d7515. ActualH1/CDF,
+  integrals/suprema/attainment/Gamma/PDEarguments remain informal. Mirror
+  addsone2factentry andpreservesall21oldentries78facts. Privatecomposition
+  isnotthirdfact;no compiler rerun or officialpackage/companion gate.
+
 ## Planned waves (strategy in ROADMAP.md)
 
 | Wave | Target | Opens when |
@@ -457,3 +464,347 @@ for oneblankline excerpt trimming, extra separateTypeAudit, officialtagpin
 and path-only warninglog difference.71finitefacts/18seams scopedaccepted.
 FiniteGaussian/trace proof is analytic, NOTformalized byN2. L0/PROPOSED,
 decision4/no officialpackage/companion/lease/registry/HPC unchanged.
+
+## Existing finite facts: all-dimensional raw-event applications accepted — 2026-10-31
+
+Full analytic/source/type/application gate at scientific d4d876e, adoption
+c426e5a:12PASS/HIGH516.106s, no required repairs. Evidence in
+../reviews/2026-10-31-raw-block-event/scientific-adjudication-v1.md.
+New actual consumers of MovingCone3, JointTilt4 and ActualEvent2 were
+checked against COMPLETE public types and their actual guards. The root
+recomputed six unchanged source/public-type bindings to prior-reviewed
+packets; no new Lean/compiler/replay execution or new fact is claimed.
+
+Counts remain71finitefacts/18local seams. L0 PROPOSED and companion
+creation decision4 unchanged. Gaussian Banach law, compact operator paths,
+Young/source restart, continuum cone hypotheses and original point moment
+identification remain reviewed INFORMAL analytic inputs, not consequences
+formalized in Lean. See FP-RAW-EVENT in BOUNDARIES.md. The next U1-U4
+unmasking/dilation target is frozen UNREVIEWED, not a new formal consumer.
+
+## Old scalar score applications: all-dimensional consumer accepted — 2026-10-31
+
+Full U1-U4 scientific61ac2a3/adoption94d85ca,11checks/HIGH303.405s,
+no required repairs. Exact application of RawVariational.positive_score,
+label_score and strict_label_factor reviewed against complete public types.
+Positive-score I/v guard comes from actual unmasked rate and accepted raw
+variance; label_score requires only c>0,alpha<3. The d1 dilation_factors
+is NOT promoted as an all-dimensional Radon proof. Two source/type bindings
+to the old reviewed packet unchanged; no new kernel/compiler/replay run.
+71finitefacts18seams/L0 PROPOSED/companion decision4 unchanged.
+
+The resulting unmasked point lower and positive finite intrinsic S_c=c^mS1
+are ANALYTIC, including covariance/spectral/form/mask/canonical/supremum
+steps. FP-UNMASKED in BOUNDARIES.md records this. B1-B5 static/full-H1
+occupation target is frozen UNREVIEWED and introduces no new formal claim.
+
+## Full occupation bridge: old entropy application accepted — 2026-10-31
+
+Scientific249e2c4/adoptionaa4a016,18checks/HIGH366.614seconds/no required
+repairs, all18inputs33native files verified. RawValueCeiling.strict_log_gap
+complete public type and actual a>0,q-2a=D>0 guards checked in Section6.
+Two prior/current source/type byte bindings unchanged; no new kernel/
+compiler/replay/module or fact count.71facts18seams/L0 PROPOSED unchanged.
+
+New physical two-point covariance extension, absolute signed four-linear
+H1 bound, density/CS, full strongly-H1 measurable occupation energy and
+original point comparison are reviewed INFORMAL analytic claims. See
+FP-STATIC-OCCUPATION in BOUNDARIES.md; no formal Sobolev/SPDE theorem.
+Next scalar target is unreviewed. Two potential new finite moment/rational
+seams are only proposed, not Lean declarations; statement/reuse/compiler/
+replay/negative-controls/application gates precede any count change.
+No official package/companion/lease/registry/HPC transaction.
+
+## All-alpha finite moment/rational pilot — local application pending
+
+Two independently fenced public scalar headers compiled/audited at pinned
+4.35.0/Mathlib56a0058, fresh owned replay5matching artifacts, full pp.all
+types/standard axioms identical and4semantic False controls. Exact prior
+search is bounded/incomplete; reuse existing field/order/tactic primitives,
+no absence or competing-library claim. Initial compiled attempt FAILED the
+warning gate on redundant sequence focus; both full attempts preserved.
+Successor changes proof body only, exact headers match. No linter disabled.
+
+71acceptedfacts18seams remain, plus2PROVISIONAL facts pending FULL actual
+type/application gate. Source local-checks/all-alpha-moment-v1/; Gaussian
+normalization/integral/IBP/CS/derivative and actual point consumer ANALYTIC.
+No official package/companion/lease/registry/HPC transaction, L0 PROPOSED.
+
+## All-alpha two finite applications accepted — 2026-10-31
+
+Scientificed2e5f5/adoptionb5628d5,10checks/HIGH318.460s/no requiredrepairs.
+Full public types and ACTUAL moment m1/m2/rational-gap guards passed
+fidelity/application gate. Both new public source bodies/headers unchanged
+from clean local compiler/axiom/replay evidence. Initial warning-gateFAIL
+22files and clean successor41files retained;5artifactpairs/4False controls.
+Old V source/complete definitions/types/application reused unchanged.
+
+Promote two provisional facts:73acceptedfinitefacts/19local seams.
+L0 PROPOSED and official companion decision4 unchanged. Local state mirror
+updated together; see local-checks/all-alpha-moment-v1/application-summary.json.
+No formal Gaussian/integral/derivative/SPDE theorem, official package/lease/
+registry/HPC gate. Next sharp-upper work is a new analytic research screen.
+
+## Existing finite powermean: Cameron-block application accepted — 2026-10-31
+
+Scientifice0a6f3e/adoptionda1e1f7,12checks/HIGH523.772s/no requiredrepairs.
+Pinned Mathlib Real.rpow_sum_le_const_mul_sum_rpow_of_nonneg COMPLETE
+public TYPE/standardaxioms audited read-only; actual C3 substitution
+kappa=r/p>1,f_m=t_m^p>=0, nonempty cardinality/power-zero/delta bookkeeping
+checked in FULL application gate. No new local theorem, compiled formal
+operator consumer, donor/package build or fact count:73facts19seams/L0.
+
+C1 fractional physical covariance, actual-F compact CM map, tensor/time
+mean compactness and averaged sqrt(delta)epsilon_J bound remain reviewed
+INFORMAL analytic interfaces. Exact white guard excludes ONLY uniformR
+fixed smooth-projection tails. See FP-CAMERON in BOUNDARIES.md. Future
+residual-exponential DRIVER norm estimate still UNREVIEWED, not SPDE upper.
+Official companion decision4/registry/lease/HPC unchanged.
+
+## Existing real weightedAMGM: residual-norm application accepted — 2026-10-31
+
+Scientific8b16bb7/adoption0dce26f,20checks/HIGH324.742seconds. Existing pinned
+Real.geom_mean_le_arith_mean2_weighted COMPLETE public type/standard axioms
+locally audited read-only; actual real weights/bases/positive-denominator/
+zero/rpow application passed FULL analytic/source/type/application review.
+No new compiled local theorem/module/export/count;73facts19seams/L0.
+
+FP-RESIDUAL-EXP in BOUNDARIES.md records the actual fixedR Gaussian norm
+exponential estimate as INFORMAL analysis, not a formally verified SPDE
+upper. Original nonlinear/growing-cone/point/sharp/source gaps stay open;
+official companion decision4 unchanged. No donor/package/registry/lease/HPC.
+
+## Existing powermean: nonlinear residual application accepted — 2026-10-31
+
+Scientificcdf2056/adoptionb480aca,24checks/HIGH388.122seconds. Exact complete
+Mathlib powermean type and actual kappa=p/nu,f=v^nu,n>=1 positive powers/
+zero guards/nu=p equality accepted. No new source/compiler/kernel count:
+73facts19seams/L0. FP-YOUNG-RESIDUAL in BOUNDARIES.md distinguishes the
+new actual fixedR/M nonlinear E1-E4 analysis from the finite formal input.
+Original sharp-point/growing-cone/source gaps and companion decision4 open.
+
+## Existing AMGM: signed rough static form application accepted — 2026-10-31
+
+Scientific404354a/adoption7c91352,25checks/HIGH327.286seconds. Existing full
+REAL weightedAMGM type with actual weights1/2,basesz²,(Kb)² and norm/zero/
+real-power guards passed FULL application. No new source/compiler/kernel
+count73facts19seams/L0. FP-SIGNED-STATIC in BOUNDARIES.md records all rough
+form/spectral/physical-flow/mean claims as INFORMAL analysis. V1 temporal
+rangeFAIL/HIGH retained, corrected2<r<2/a. Original sharp-point/source and
+companion decision4 remain OPEN. No package/registry/lease/HPC transaction.
+
+## Existing powermean: physical mean-product upper application — 2026-10-31
+
+Scientificb1d8e5b/adoption2a22cc2,21checks/HIGH232.556seconds. COMPLETE
+powermean type reused with actualr/rnu exponents, nonnegative data/cardinal
+and positive-zero guards; no new source/compiler/kernel/count73facts19seams/
+L0. FP-MEAN-PRODUCT boundary distinguishes actual polynomial-control-ball
+mean-product upper INFORMAL analysis from the scalar finite formal input.
+Original sharp-point/source gaps and companion decision4 stayOPEN.
+
+## Gaussian cutoff-density local seam — PROVISIONAL 2026-10-31
+
+Exact public header fenced before proof; GLstatement12HIGH360.315s passed.
+Local source/types/standardaxioms/fresh replay5pairs/3falsevariants PASS.
+New singlefinite scalar inequality pending FULL actual GLapplication gate;
+73acceptedfacts19seams plus1PROVISIONALfact/newseam, no promotion yet.
+Source lean-progress/local-checks/gaussian-tail-v1/. No formal Gaussian/
+integration/conditional law/operator/SPDE, official package/lease/registry/
+HPC gate; companionL0/decision4 unchanged.
+
+## Gaussian cutoff-density actual application accepted — 2026-10-31
+
+Scientific180bf1a,18groupedchecks/HIGH335.531seconds,no requiredrepairs.
+COMPLETE publictype and EXACT application C=A1B3nu,M=M_B,x=headnorm,
+positive cutoff/modelguards checked. Sourceheader/body unchanged, std3axioms,
+5ownedreplaypairs,3standalonefalse numeric variants (not theorem calls) and
+2valid actual theorem instantiations. Native28members reverified withpost-
+cache/source/indexclean pins. Promote ONE previously provisionalfinitefact:
+74acceptedfinitefacts20local seams. No Gaussian/conditional/integral/
+operator/SPDE formalization, officialpackage/companion/lease/registry/HPC.
+
+Machine mirror reconciliation: before10entries48facts while authoritative
+ledger already19/73. Restored9accepted entries25facts, each publicsource
+byte-equal its scientificGitblob and HIGH application close in this file;
+then added newGaussian entry1fact. Currentmirror20entries74facts. Oldproofs
+unchanged, no new compile/review of old25facts claimed. See local-checks/
+gaussian-tail-v1/mirror-reconciliation-inputs.json and-summary.json.
+L0/PROPOSED and officialcompaniondecision4 unchanged.
+
+## UR original point signed-score upper: exact old-finite reuse — 2026-10-31
+
+Scientific939d697,FULL19checks/HIGH367.538s,no requiredrepairs. Actual
+GaussianTail densitycutoff application M>0,rho>=M,C=A1B^(3nu)>=0,nuin(1,2),
+4C<=M^(2-nu); Holder p/nu>=1,r/nu>1 and AMGMhalfweights/squaredbases
+checked withcompleteoldtypes/axioms. Source/declarations unchanged; no new
+compiler/kernel/fact.74acceptedfinitefacts20seams/L0 remain unchanged.
+FP-RAYLEIGH-SIGNED-MOMENT records allGaussian/integral/limsup/operator/GC
+source-point assertions as reviewed INFORMALanalysis,not formalverification.
+
+Next worthwhilefinite seam proposed,NOT built/promoted: PGactive-branch
+scalar2ell sqrt(t)<=ell^2/w+w*t,finiteHilbertcompleted-square upper,Gram
+normsquareidentity andpositive-weightentrywisequadraticcomparison. PGsource
+fit15HIGH225.532s accepted onlystatements; fullproof/actualapplication gate
+stillpending. Searchregistry/cachedMathlib beforebuilding,freezeexactpublic
+types/guards,localcompile/replay/axiom/negativecontrols ifdeveloped. No new
+officialpackage/companion/lease/registry/HPC authority; decision4 pending.
+
+## Positive-Gram local finite seam — PROVISIONAL 2026-10-31
+
+Fourpublicheaders fencedbeforeproof: scalar_sqrt_dual,gram_norm_square,
+active_upper_bound,half_weighted_entrywise_mono. Completepublictypes/std3
+axioms,6actualcalls andprivateexactPGbranchconsumer PASS. Freshsource-only
+ownedreplay5artifactpairs identical;4standaloneFalse variants rejected at
+False(notAPI/importfailure). TwoearlylocalAPI/rewritefailuresandoldunused
+ auditbinderwarnings retained; no statement/linterweakening. Finalchecks0
+errors/warnings. Currentofficialstable4.35/Mathlib56a0058 independently
+verified;9selectedsourceHEADs/indexclean,8Mathlib-onlycachelibraries. No
+privateWalsh/Rough libraryadoption,donor/dependencybuild or newpackage.
+
+Perunit2CPU,4GiBhigh/6GiBmax,64tasks,proof-j1/asyncfalse;max2concurrent
+units. Complete117membernativearchive readbackhashed. Rawsearchcoverage
+incomplete(7nocheckoutpackages); typedLoogle/actualpinRG/APIchecks retained,
+notabsence. ReuseMathlibprimitives/onlyconsumerwrappers,notnewlibrary.
+
+74acceptedfacts20seams PLUS4PROVISIONALpublicfacts/newlocalseam awaiting
+FULLPGsource/type/actualapplicationfidelity. Privateconsumer is integration
+evidence,notfifthpublicfact. PG1-PG2min/existence/attainment/Gramrealization
+and actualPDEoccupationapplication are ANALYTIC/opengates,notformalized.
+OfficialcompanionL0/decision4unchanged; no officiallease/registry/HPC gate.
+
+## Positive-Gram actual finite application accepted — 2026-10-31
+
+Scientific4e2219d,FULL26checks/HIGH305.393s,no requiredrepairs. Complete
+publictypes/std3axioms andACTUALPGguardapplications accepted; source/headers/
+compiledproofs unchanged. No subjectivekernelproofscore requested; analytic
+dualbarrier/minimum/calculus/attainment/realizationcheckedseparately.
+Promote4PROVISIONALpublicfacts/newlocal seam:78acceptedfinitefacts21seams.
+Privateintegratedconsumer remainsintegrationevidence,notfifthpublicfact.
+Derivedmirror appends1entry4facts,preserves20oldentries74facts exactly;
+officialL0/PROPOSED/candidateNone/lease/registry/HPC/companiondecision4stay.
+No compile/replay/numericrerun forclarity/promotion. Rawpre-appreceipt/status
+preserved,application-summary-v1 current. Kernelcertifiesfiniteconditional
+algebraONLY,notwholePGanalyticoptimization oractualoccupation/PDEapplication.
+
+## PB physical comparison: analytic boundary — 2026-10-31
+
+PBstatement/applicationFITpassed21HIGH884.243s at6de6728. The new author
+proof includesL2HilberttensorSchurcompletion,nonseparable rawcontrols and
+actualmeans,physicalGramguardfit,uniformnorm/smoothing/continuumarguments
+andoriginalpointupper/lowersandwich. AlltheseNEWanalyticstepsareOUTSIDE
+thekernelandrequiretheirOWNfullgate. ExistingPG finitecertificates and
+priorPGapplicationreviewremainunchanged;no directnewLeanapplication or
+statementisbeingclaimed. Trivialscalarcoercivityalonewouldnotcertifythe
+modelcomparison;no low-valuecompilejusttoincrementcount.78acceptedfacts/
+21seams/L0PROPOSED unchanged;existingmirroralreadyagrees. No companion,
+package/lease/registry/HPC action. Scientificauthoritystays../Progress.md.
+
+## PB analytic theorem accepted, no new kernel claim — 2026-10-31
+
+Scientific40ec9a9FULL19checks/HIGH387.047s,no requiredrepairs. PB0-PB5 and
+theiractualmodelapplications are reviewedINFORMAL mathematics:originalpoint
+intrinsiclimitALLmodels,notauthorconstant/p1identity. ExistingPGfinitekernel
+deductions are reused unchanged; no newly compiled theorem, new formal fact,
+seam or officialpackagegate.78facts/21seams/L0PROPOSED unchanged. New raw
+membership/time/mean,Rayleigh/smoothing/optimizationlimits andmomentassembly
+remain analytic boundaries. Fullsource/novelty/wholepaper/coldreadopen.
+
+## OC derived bounds accepted, same kernel boundary — 2026-10-31
+
+Scientific25cc688FULL18HIGH302.195s accepts the actualall-model occupation
+ceiling and commonspatialenergy bracket. Oldstrict_log_gap reused at its
+exacta>0,q-2a>0 type,includingq<3. No newkerneltheorem/compiler/seam/fact
+or officialpackagegate.78facts21seams/L0PROPOSED remainunchanged. Actual
+roughsquarecompletion,physicalpairing,time/mass/near-selection,scalar
+globaloptimization andmomenttransferare reviewedINFORMALmathematics.
+
+## White CDF finite local pilot: kernel pass, application pending — 2026-10-31
+
+Two completeheadersfrozenbeforeproof; source4d3f8ee4350f96d5936a4b213c7aff5a312218743ee43b885e3c91a3b100cbcd
+compilescleanfirsttryoncurrentstable4.35.0/Mathlib56a0058. Fulltypes/std3
+axioms,privateexactcomposition,positivecalls,ownedsource-onlyreplay5pairs
+andauditbytesidentical,twoexactFalsecontrolsPASS.53nativearchive members
+readbackhashed. Fail-closedlist/Falseparser14mutationchecks alsoPASS.
+No analyticH1/CDF/GN or energy-supremum/PDEkernelclaim. InitialactualWS
+statement/definition/applicationfidelityandOWNfullanalyticgatePENDING.
+2PROVISIONALpublicfacts/newlocalseam,accepted78facts21seamsunchanged;
+mirrorunchangeduntilpromotion. L0/PROPOSED,decision4andofficialpackagegate
+unchanged. No newrepo/package/lease/registry/HPC or donordependencybuild.
+
+## White CDF initial FIT passed; analytic application still pending — 2026-10-31
+
+ad9fe4dFIT26HIGH276.215s accepted fulltype/definition/guardpatternsfor
+the2conditionalfinitepublicfacts. Written full-H1/CDFproof andphysical
+energy/supremum/attainment/model/Gammaapplications awaitOWNFULLreview.
+Negativecontrolsourcesnowincludedandhash/name/logboundbyguardv2,
+18adversarialtextmutationsrejected; no compiler/proof rerun. Prior artifacts
+preserved.2PROVISIONAL/accepted78facts21seams/mirrorunchanged. Private
+compositionnotthirdfact, officialL0PROPOSED/decision4 unchanged.
+
+## White CDF actual applications accepted — 2026-10-31
+
+Scientific95d7515,FULL25HIGH313.597s,no requiredrepairs, accepts complete
+publictypes/definitions/ACTUALCDFsquare andphysical-energy guardapplications.
+Source4d3f8ee4350f96d5936a4b213c7aff5a312218743ee43b885e3c91a3b100cbcd,
+headers/typedproofs/replayoutputs unchanged. TwoPUBLICconditionalfacts
+promoted:80acceptedfinitefacts22seams. Privategenericconsumer notthirdfact.
+Derivedmirror adds2factentry,preserves21oldentries78factsandallofficial
+L0fields. Rawpending-statusreceipts preserved;application-summary-v1 current.
+AnalyticH1,CDF/IBP/integrals,sechattainment,Gamma andoriginalpoint bounds
+reviewedINFORMAL,notLean-certified. No newcompiler/package/registry/lease/
+remote/cluster/companionaction. Integration/finalgatesremain.
+
+
+## Hermite selected-word standalone pilot — 2026-11-08
+
+Two abstract public facts raw_support/cut_eq_raw compile on currentstableLean4.35.0 withStdonly, noMathlibimport. Corefirstcompileclean andheadersunchanged. Exacttypes/axioms audit:raw_supportnone;cut_eq_rawonlypropext/Quot.sound. Ownedsource-onlyreplayproducesbyteidenticalolean/audit; privateall-orderunnormalizedcoefficientrecurrenceconsumerpasses,order2selfpair1/order4selfpair3retained. Three semanticFalsecontrols reject insufficientcutoff1, missingloweringandwrongorder4multiplicity. One privateconsumer simplificationfailure andone control-parser-wordingfailure preserved. Initialexacttype/applicationreviewPENDING;2PROVISIONALfacts, accepted80facts22seams unchanged. Evidence local-checks/hermite-word-v1/. L0/PROPOSED anddecision4unchanged; no companion/package/registry/lease/HPC.
+
+
+## Selected-word initial FIT remains MEDIUM — 2026-11-08
+
+NativeDS whole19body review terminal18696input/14718output-plus-reasoning within52180bound. Root fullread/canonicalvalidator/exactFIT01-FIT08 all8PASS/no repairs. LiteralPASS_WITH_NOTES/MEDIUM remainsUNACCEPTED; normalizedmultimodeGaussian/Hilbert andcoupled-frame instances remaininformal. No actual false source statement located; no confidence normalization or retry. Two abstract publicfacts stillPROVISIONAL, accepted80facts22seams/L0PROPOSED unchanged. Proof/headers/compiler/replayunchanged; current application-summary-v1 records status separatefromhistoricalpendingreceipts. No new companion/package/registry/lease/HPC.
+
+
+## Existing Gaussian-basis reuse verified locally — 2026-11-09
+
+Usinglean-pkg0.28.0 search/doctor, foundregistered GaussianChaoswhosecheckoutwasabsent from search. Exact87e02e09/c111340Walsh sourceclosure7modules compiles fresh atlateststable4.35/Mathlib56a0058. Rejectedavailablee054Walsh cachepin; immutable exactsourcescompiledinstead. NormalizedproductGaussianL2basis/rawmultivariatecoordinate recurrence fulltypes/defs visible, targetedtransitiveaxioms Std3. ActualFin2firstmodeinner-square1 consumerpasses; wrongsquare2 rejectssoleFalse. Initialmissingcachehelperrefusal andpp.maxDepth APIfailure preserved; correctedAPIreuses7sameobjects,notrecompile. Canonicalcappedlocaldevelopment only, notofficiallean-pkg/comparator/registry/full-library gate. Evidence reuse-probes/gaussian-basis-028-v1/. Basisprimitiveavailableforreuse, notactualcoloredphysicalwordconsumerformalized; no newpaperfact orpromotion:80accepted/22seams+2oldprovisional. L0PROPOSED/candidateNone/jobids[]/decision4unchanged; mirroraddsONLY0factreuseentryandpreservesalloldentries. Kimi hold andvisualpolicyNOTADOPTED remain.
+
+
+## Normalized-coordinate target proposed/typechecked, not proved — 2026-11-09
+
+ExistingGaussianbasisreuse unlocks smallnormalizationconsumer. Exactclosedpropositiontypechecks at4.35; statementSHA38c89d8d0626fe279c6000089262da074d42899adbf8b2308519265627d490d1. TargetallMode/finitemultiindex/realcoordinateassignment, bothsqrtraising/lowering includingzero. GaussianprobL2 distinctrawH_I/physicalphase; no physicaldimension/time-independence/torus assumption. FrozenpaperL:fockformLF5466-5531 explicitmatchesline5518. Statement/source/microcontract in statement-proposals/normalized-coordinate-v1/. No proof yet; priorblind independentstatementfidelityrequired beforeproof; no newword/SPDE/acceptedfact/package/companion/HPC claim, old80/22+2provisional/L0 unchanged.
+
+
+## Normalized-coordinate scalar leaf locally verified — 2026-11-09
+
+Priorblind nativeOpus5.5/high sixNORMchecks PASS/no repairs, exact9sourcecoverage/rawSHAdf425444e1bb1b09328bc91c885ebb227fce5b901853a6ce584b8a210e866d02. Rootfullread/minors/limits adjudicated; exactclosedProp unchanged. ActualGaussianChaos normalization consumer provesbothsqrtraising/lowering inclzero, source594e4b17 at4.35/Mathlib56a0058 compilesclean/Std3. Freshownedleaf replaybyteequalobject/audit,reusespinned7foundationobjects,notfullclosure replay. FullPropassignment/loworderpolynomial/factorial/vacuumlowering/twoactivecoordinateL2norm controlsPASS; omittedlowering rejectssoleFalse. Intermediateproof/consumer/scriptfailure historypreserved. Evidence local-checks/normalized-coordinate-v1/. AddsONE acceptedlocalscalar fact/seam:81/23; old2abstractwordfactsstillprovisional. Actualcoloredphysicalvector/projection/operator/Bochner/cutoff/SPDE boundariesopen. OfficialL0PROPOSED/decision4/no package/registry/HPC unchanged,Kimihold/visualpolicyNOTADOPTED/fullmathHIGH/cold/finalgatesunchanged.
+
+
+## Actual vector-Gaussian projection target proposed — 2026-11-09
+
+Value-rankednextmissingwordboundary: actualorthogonalprojectiononGaussianLp(E),arbitrarycompleteHilbertEincludingcoupledbackground/spatialphase. ExistingMathlibcompLp/closedspan/starProjection APIs sufficeforstatement,nonewGaussianfoundationorpackage. Generalpredicatetargetandliteralpercolortotaldegreespecializationtypecheckfirsttry; source/defs frozen statement-proposals/vector-gaussian-projection-v1/. IdentityisCONCLUSION,nothypothesis; realificationcomplex/sourcecouplingisindependentfidelityobligation. Registrysearch0hitsbutincomplete6missingcheckouts/indexabsent,notabsence; existingknownGaussianlibraryinspected/read. No proofyet,priorblindfidelityrequired. Existing81/23+2oldprovisional/L0PROPOSEDunchanged,fullgoalgates/Kimihold/visualpolicyunchanged.
+
+
+## Vector projection statement v1 MEDIUM; exact consumer v2 proposed — 2026-11-09
+
+InitialsixVECchecksPASS/literalMEDIUMunaccepted,no proof. Rootcorrectsreviewerfinite-spatial-dimensioninference; theFourierbandisclosedinfinite-dimensionalandphase-normequivalencegivescompleteness. SuccessoractualconsumerusesSigma_iFin(m_i),notexpandedproduct; mainarbitrarypProjectionPropunchanged. ExplicitfinitebackgroundHermite/physicalphaseisometry,projectionintertwiningandrealificationargumentsplusactualphase/contractiondefinitionsaddedforindependentreview,notkernelclaims. Revisedtypedstatement74afb863b4ce71da8779216629686c7f40f98a5dc30ef1d69033300a02465b19 compilesfirsttryasPROPonly. Eighteenwholebodies/6VECpriorblindchecks prepared,capacity311492incl128000outputreservewithin1M,textdryrunPASS. No newproof/fact/promotion/package/companion/HPC,81/23+2oldprovisional/L0 unchanged. Ready reviews/2026-11-09-vector-projection-statement-v2-ready/,initialreport reviews/2026-11-09-vector-projection-statement-medium-unaccepted/. SeparateonceRootauthorityafterdurablecommitrequired.
+
+
+## Actual vector-valued Gaussian projection locally verified — 2026-11-09
+
+RevisedpriorblindOpus5.5/high sixVECchecksPASS/no repairs/full18bodycoverage,rawade97a1055d59390a70fdb9af2f4658a55e9d0489dcbb295be9971c80641e7b6. Rootreadall/adjudicated5minor5limits; S_bexplicitLF5472, spatialbandinfinite,actualphase/bg/realificationcorrespondence reviewedMATHonly. ExactgeneralclosedProp+dependentSigma-colorinstance assignedtouniversepolymorphicprojection_realize. ActualLp(E)/closedspan/starProjectionproof compileclean4.35/Mathlib56a0058/Std3; ownedleafsource replayobject/auditbyteequal,reusespinned7foundationobjects. Actual2mode/2vectorprobe selected/discardedselfinnersboth1. WrongretentionwithnoselectedmodesrejectssoleFalse(onealiaswarningpreserved). Onepubliclocalfact/seamadded82/24;2oldwordfactsstillprovisional. Evidence local-checks/vector-gaussian-projection-v1/. CoordinateJ/coloredword/Bochner/complex-instance/bg-isometryformalization/analyticSPDEassemblyremainoutsidekernel. OfficialL0PROPOSED/decision4/no package/HPC unchanged,allfullgates/Kimihold/visualpolicyNOTADOPTEDunchanged.
+
+
+## Concrete actual colored-vector finite-word target proposed — 2026-11-09
+
+ExactSigma modes,arbitrarycompleteREALHilbertcoefficientsandboundednoncommutingK/F; actualLpGaussianmultiplicationnaturaldomain/orthogonalP,notfilterproxy. ThreeclosedProps: coordinatepoly-domain/realization,allraw/cutprefixdomains,actualfinitewordcutoffequalityunderoccurrencecounts<=N; plusprivateframehelpertype. Outside-domainzeroistotalizationONLY,guardmustbeDERIVEDforallprefixes,notassumed. Typecheckfirstattemptsum-parenthesiscaught/preserved; finalfullstatementcompilesclean. Smallnoncommutingmatrix/order2lowering/cutofffalsificationrecordedBEFOREproof. Frozen statement-proposals/colored-vector-word-v1/. No proof/publicfactpromotion,82/24+2oldprovisional/L0unchanged. Requirespriorblindindependentdefinition/domain/source/applicationfidelitybeforeproof.
+
+
+## Concrete colored word kernel complete; actual application review pending — 2026-11-09
+
+FullthreefrozenpublicPropscompilecleanStd3, sourceb7d4978f5042753174249cff92448787cfbfa7267eb3d0df6ff8b09b723ec717. ActualLpcoordinatepoly-domain/identity,allraw+compressedprefixdomainsandorthogonalPwordequalityderivedwithonlycounts<=N,arbitrarycompleteREALHilbert/noncommutingboundedK,F/exactSigma modes. Exact3closedPropconsumer/private4thhelpercheckPASS; ownedleafsource replayobject/auditbyteequal(reusespinnedfoundations/localimports,notfullpristine). Actualorder2L2wordmean1/nonzero/cutoff2PASS; wrongselfmean0andwrongcutoff1GUARDrejectsoleFalse. MatrixprobeMATHonly; complex/bgbridgeMATHonly; actualbackgroundextensiononlyrangePcross,notglobalfactorization. ThreeNEWprovisional+old2stillprovisionalpendingcompletedapplicationreview; accepted82/24/L0unchanged. Evidence local-checks/colored-vector-word-v1/. No package/registry/companion/HPC,Kimihold/fullgoalgatesunchanged.
+
+
+## Concrete Gaussian/vector finite-word application accepted — 2026-11-09
+
+CompletedactualconsumerOpus5.5/high240.493s CWAPP01-06allPASS/no repairs/full23bodies,rawda51be6ebe7792200a12cdfe939978f2ee7ef00f9d5d81dafe7dc7b9bd21ffba. Rootreadall/adjudicated6minor5limits. ExactGood/vacuum/degree/frame/filter premisesDERIVEDfornormalizedmultivariatevectorcoefficientsandlinkedtoactualLpcoordinate-domain/P/raw+cutwords,notabstractproxy. Promote3newfacts+2oldunchangedgenericfacts:87localfacts26seams. OriginalMEDIUM/pendingreceiptsunchanged; currentapplication-summary-v1 incolored-vector-word-v1 andgenericapplication-summary-v2 recordnewactualscope. Sourceb7d4978f/cleanStd3/exact3Props/private4th/ownedleafreplaybyteequal/actualorder2L2mean1nonzero+cutoff2/semanticselfmean0andcutoff1GUARD controlsremainunchanged. Raw-prefixrange followsDIRECTraw_support+cut_fixes_good,notglobalbackgroundfactorization. Complex/bg/height/Bochner/analytic/SPDEbridgesoutsidekernel,officialL0PROPOSED/decision4/fullmathHIGH/cold/visual/adoption/deliverygatesunchanged,Kimihold/visualpolicyNOTADOPTEDremain.

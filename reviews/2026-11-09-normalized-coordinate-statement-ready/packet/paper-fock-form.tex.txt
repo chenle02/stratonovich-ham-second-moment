@@ -1,0 +1,66 @@
+\begin{lemma}[Gaussian cutoff form bound]\label{L:fock-form}
+  Retain the covariance and $R_\alpha$ of
+  Section~\ref{S:static-phase}. Fix $\epsilon>0$.
+  Represent the smoothed real field on independent standard Gaussian
+  coordinates as $W_\epsilon(x)=\sum_{i\ge1}g_i e_i(x)$ in $L^2(\Omega)$.
+  Let $P_N$ be projection onto Gaussian Hermite degrees at most $N$,
+  and $S_b$ spatial Fourier projection onto $|\eta|\le b$.
+  For finite $m$, on their joint range set
+  \[
+    B_{N,m,b}=P_NS_b\Big(\sum_{i=1}^m g_i M_{e_i}\Big)S_bP_N,\qquad
+    A_\rho=\rho^2-\Delta .
+  \]
+  These are bounded selfadjoint operators and, uniformly in
+  $\epsilon,m,b$,
+  \begin{equation}\label{E:fock-sandwich}
+    \|A_\rho^{-1/2}B_{N,m,b}A_\rho^{-1/2}\|
+    \le d_N\rho^{\alpha/2-2},\qquad
+    d_N=2\sqrt{N+1}\sqrt{R_\alpha}.
+  \end{equation}
+\end{lemma}
+
+\begin{proof}
+  Choose an orthonormal basis of the real isonormal space, which is
+  separable, and write $e_i(x)=\E[W_\epsilon(x)g_i]$.
+  Then $\sum_i e_i(x)^2=\Gamma_\epsilon(0)=:v_\epsilon$, and
+  $|e_i(x)|\le\sqrt{v_\epsilon}$. Thus each multiplication $M_{e_i}$
+  is bounded and selfadjoint. Put
+  $H_i=A_\rho^{-1/2}M_{e_i}A_\rho^{-1/2}$ on spatial $L^2$.
+  Gaussian isometry and spatial Plancherel give
+  \[
+    \sum_i\|H_i f\|_2^2
+    =\frac1{(2\pi)^3}\int
+    \frac{|\widehat f(\eta)|^2}{\rho^2+|\eta|^2}
+    J_{\rho,\epsilon}(\eta)\ud\eta,\qquad
+    J_{\rho,\epsilon}(\eta)
+    =\int\frac{e^{-\epsilon|\xi|^2}\mu(\ud\xi)}
+    {\rho^2+|\eta+\xi|^2}.
+  \]
+  This is the covariance calculation for
+  $A_\rho^{-1/2}W_\epsilon A_\rho^{-1/2}f$.
+  By Lemma~\ref{L:phase-contractions},
+  $J_{\rho,\epsilon}\le R_\alpha\rho^{\alpha-2}$.
+  Therefore
+  $\sum_i H_i^2\le R_\alpha\rho^{\alpha-4}I$
+  in quadratic forms. Finite sums have the same upper bound.
+  Compression to $S_b$ preserves it: for selfadjoint $H_i$,
+  $(S_bH_iS_b)^2\le S_bH_i^2S_b$ on its range.
+  Both row and column variances are the same, since these
+  operators are selfadjoint.
+
+  For completeness, use normalized Hermite polynomials, so multiplication
+  by $g_i$ is $a_i^*+a_i$, with
+  $g_i h_k=\sqrt{k_i+1}\,h_{k+e_i}+\sqrt{k_i}\,h_{k-e_i}$.
+  On degree $k$, the row map $(v_i)\mapsto\sum_i a_i^*v_i$
+  has norm $\sqrt{k+1}$: its product with its adjoint is
+  $\sum_i a_i^*a_i=(k+1)I$ on degree $k+1$.
+  Composing with the column of spatial operators $S_bH_iS_b$ bounds
+  the creation part by
+  $\sqrt{k+1}\sqrt{R_\alpha}\rho^{(\alpha-4)/2}$.
+  Distinct input degrees have orthogonal output degrees.
+  The annihilation part is its adjoint, with the same bound after
+  truncation. Adding them on degrees at most $N$ proves
+  \eqref{E:fock-sandwich}. Boundedness of $-\Delta$ on $S_b$ is explicit;
+  no infinite-frequency operator theorem was used.
+  This proves Lemma~\ref{L:fock-form}.
+\end{proof}

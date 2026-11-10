@@ -1,0 +1,125 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "reviews/2026-10-31-fixed-mask-young/target-v1.md: complete, lines 1-159",
+    "reviews/2026-10-31-fixed-mask-young/falsification-v1.md: complete, lines 1-47",
+    "reviews/2026-10-31-fixed-mask-young/source-crosswalk-v1.md: complete, lines 1-44",
+    "reviews/2026-10-31-fixed-mask-young/worker-honesty-v1.md: complete, lines 1-36",
+    "reviews/2026-10-31-fixed-mask-young/check-extension.py: complete, lines 1-62",
+    "reviews/2026-10-31-fixed-mask-young/extension-controls-v1.json: complete, lines 1-55",
+    "reviews/2026-10-31-fixed-mask-young/source-first-order-witness.json: complete, lines 1-17",
+    "reviews/2026-10-31-fixed-mask-young/accepted-input-excerpts.txt: complete, lines 1-441",
+    "reviews/2026-10-31-fixed-mask-young/accepted-input-custody.json: complete, lines 1-42",
+    "reviews/2026-10-31-fixed-mask-young/Friz-Hairer-selected.txt: complete, lines 1-259 and 260-321",
+    "reviews/2026-10-31-fixed-mask-young/Friz-Hairer-custody.json: complete, lines 1-43",
+    "notes/fixed-mask-moment-transfer.md: complete, lines 1-251",
+    ".review/required-sources.json: complete, lines 1-39 (read plan only; earns no read credit)"
+  ],
+  "checks": [
+    {
+      "claim": "C1/Y1: the same original model and data are kept, in a complete separable Hilbert phase F=E+R^2 with an injective continuous distribution embedding.",
+      "verdict": "PASS",
+      "reason": "The target keeps H:homog in d=1,2,3, the singular classes including alpha=d=1, and data (1,0). A nonzero constant has Fourier transform a multiple of a delta, so it lies in no global H^s. If e+(c1,c2)=0 then c1=-e_1 is in H^(1/2) and c2=-e_2 is in H^(-1/2), so both vanish and injectivity follows. F is a Hilbert direct sum of separable Hilbert spaces, and e0=(0,1,0) represents data (1,0)."
+    },
+    {
+      "claim": "C1/Y1: S_F(t)(e,c1,c2)=(S_E(t)e,c1+t c2,c2) is the true free-wave group, strongly continuous and bounded on finite horizons, with finite propagation; E is closed, proper and not dense.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The triangular block is the free solution with constant data and satisfies the group law. S_E is strongly continuous by accepted Section 4, and no norm continuity is asserted. iE is the kernel of the two continuous constant coordinates, so it is closed, proper and not dense. Finite propagation is true, but the proof must cover data where e and the constants cancel locally; see minor note 8."
+    },
+    {
+      "claim": "C2/Y2: chi, psi, Lpsi:F->E and A_E=M_E Lpsi are bounded, independent of psi, extend M_E on iE, retain two actual constant columns and have compact values.",
+      "verdict": "PASS",
+      "reason": "Multiplication by psi is bounded on both Sobolev entries, and c1 psi, c2 psi lie in those entries, so Lpsi is bounded. Since chi psi=chi, M_E Dpsi=M_E Dchi Dpsi=M_E Dchi=M_E, which gives the extension and psi-independence; on constants A_E gives M_E(chi c1,chi c2). The columns M_E(t)(psi,0) and M_E(t)(0,psi) are defined directly, without density. Composing a compact operator with a bounded one is compact. The radius 2R+T+1 matches accepted equation (12)."
+    },
+    {
+      "claim": "C2/Y2: A_E^rho->A_E in every finite Lp C^theta(B(F,E)), with uniform small square-exponential moments and raw W-measurability.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The difference norm is at most ||Lpsi|| times the accepted B(E) difference norm, so accepted equation (6) transfers. Accepted (3)-(4) give uniform sqrt(p) bounds, which imply a uniform small square-exponential moment. The raw path is an Lp limit of finite sums in W(f_j). The note concerns constant-dependence wording and the derivation of moments; see minor notes 2 and 4."
+    },
+    {
+      "claim": "C3/Y2: at fixed rho, A_E^rho equals the statewise integral of S_E(-r)B(mY_rho(r))S_F(r) on F, with values in E, derived directly on constants.",
+      "verdict": "PASS",
+      "reason": "B(b)(e,c1,c2)=(0,b(e_1+c1)) maps F boundedly to E for smooth compact b. Starting from accepted (18)-(20), the difference S_F(r)(0,c1,c2)-S_E(r)(psi c1,psi c2) comes from data vanishing on B_(2R+T+1). Finite propagation makes its displacement vanish on B_(2R) for r<=T, so B(b(r)) annihilates it. The target requires this argument and excludes density, operator-norm continuity of S and Radon-Nikodym arguments. Versions per fixed rho are sufficient."
+    },
+    {
+      "claim": "C4/Y3: left-composition Young evolution in B(F) exists uniquely and globally, with the composition law, the exponent 1/theta bound and local Lipschitz stability.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "For a in B(F), the map x->x u_r puts dA u into the Friz-Hairer form Y dX, so (4.3) gives (5.1). I rechecked the scaled-norm contraction, the interval count C_T(1+K^(1/theta)) and bounds (5.2)-(5.3). None of them uses d1, HS structure or the noise multiplier. Theorem 12.18 is correctly excluded because it concerns analytic semigroups. The note is that the uniqueness class is left implicit; see minor note 6."
+    },
+    {
+      "claim": "C4/Y3: U-I has range in iE and preserves both constant coordinates only in the interaction phase.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Riemann sums of dA U lie in the closed subspace iE, and the constant rows of A vanish. Physical constants then follow S_F through the definition of P, although the target does not display this; see minor note 7. The exact finite block control is consistent with this structure."
+    },
+    {
+      "claim": "C4/Y3: all-finite-Lp uniform operator-difference convergence and uniform moments hold, using Holder driver convergence rather than C0 or testwise convergence.",
+      "verdict": "PASS",
+      "reason": "Because 1/theta<2, exp(C(1+x)^(1/theta)) is dominated by const exp(c x^2) for any c>0. The explicit local Lipschitz constant, Holder's inequality and the Lp driver convergence (or convergence in probability with uniform integrability) give the limit. Measurability follows from continuity of the Young map on the closed separable path span. The target forbids replacement by C0 or testwise convergence."
+    },
+    {
+      "claim": "C5/Y4: P_A is strongly continuous, physical differences converge uniformly in operator norm, and individual paths are not claimed norm-continuous.",
+      "verdict": "PASS",
+      "reason": "S_F is uniformly bounded and strongly continuous on [0,T], and U is norm-continuous on the triangle. The bound sup||S_F(t)V(t,s)S_F(-s)||<=C_T^2 sup||V|| transfers convergence. Measurability follows from the bounded linear map named in accepted Section 5."
+    },
+    {
+      "claim": "C5/Y4: at fixed rho, the source Young flow on e0 is the ordinary wave phase and its displacement is u_rho^m of F2.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "At fixed rho the driver is Lipschitz with a strongly continuous bounded generator on states. Riemann sums therefore converge to the strong integral, and the Duhamel formula for S_F follows. Its sine component is convolution with the G_d of F2, and the difference from the free constant phase lies in E. The statement is correct and requires this proof. Later proof-stage obligations are recorded in minor note 9."
+    },
+    {
+      "claim": "C5/Y4: J_phi is bounded, A_m is W-measurable, the actual average converges in every Lp, and F3 yields E|A_m|^2<=E|u(t,0)|^2.",
+      "verdict": "PASS",
+      "reason": "|J_phi(e,c1,c2)|<=||e_1||_(H^(1/2))||phi||_(H^(-1/2))+|c1|, and for displacement e_1+c1 the functional gives the integral of phi against it. W-measurability follows from the continuous Young map applied to raw A. The F3 premise is an L2 limit of the masked averages, at arbitrary rates or along a sequence. Unit mass of phi makes ||phi||_1=1, so the displayed constant is exact. R and T are fixed before asymptotics, with no point Sobolev evaluation or stationary operator."
+    },
+    {
+      "claim": "C6: the optional deterministic base satisfies B(h):F->E, a Lipschitz primitive with the displayed dependence, the Young/source consumer at fixed g, and is not used as a Cameron shift or for block growth.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "||h e_1||_(H^(-1/2)) is bounded by C||h||_(W^(1,infinity))||e_1||_(H^(1/2)) and ||h c1||_(H^(-1/2))<=|c1| ||h||_(L^2), so the displayed norms suffice with C_T. Adding g A^rho changes only the scale of the Gaussian moments, and the explicit Lipschitz constant gives individual bounds uniform over bounded g and h. Only h=0, g=1 feeds F3, and shift claims are excluded. The topology of time continuity is left implicit; see minor note 5."
+    },
+    {
+      "claim": "C7: the exact finite controls are valid and correctly scoped.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "I verified every assertion by hand, without running the script. Cutoff independence holds because column 3 is inactive and row 1 of Q and row 2 of Q agree. Af[0,4]=Bf[1,5]=1, BA=0, (AB)^2=0, and left order matters. Each loop equals I-e^2 AB, so N=k^2 loops give I-AB with entry [0,5]=-1. On a unit horizon with equal segments, the theta=3/4 lower bound is (1/k)(4k^2)^(3/4)=2^(3/2)k^(1/2), whose fourth power is 64k^2; the five JSON rows match. The controls refute only a C0 replacement and are labelled abstract, not a continuum proof. The n=k=1 d2 row is positive and its ratio is arithmetically consistent, and it is scoped as borrowed with no error certificate. See minor notes 10 and 11."
+    },
+    {
+      "claim": "C8: accepted-source and Young excerpt custody, Friz-Hairer ranges, the reused dimension-free argument, the 12.18 boundary, the prior-art reframe and the non-certification of new analytic claims.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The excerpt line labels match all listed accepted ranges, and all six Friz-Hairer ranges are present. Lines 252-280 of the Young excerpt are generic, while the d1 multiplier consumer is not reused. The crosswalk reframes this as an application bridge with novelty unverified, and the worker note says the new obligations still need proof. Recorded hashes were not recomputed because the held sources are outside the packet and no hashing tool was available. The packet does not enumerate seven new analytic claims; see minor note 12."
+    },
+    {
+      "claim": "C9: honest branch, network and scope boundaries; the original goal stays active and no excluded upgrade or result is claimed.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The target, falsification note and worker note consistently state an isolated local branch and no fresh remote parity, push or master integration. They also exclude new Lean counts, companion, HPC, contact, Skorohod, source repair, TeX/PDF/wiki and publication claims, as well as actual d2/d3 lower rates and a sharp upper constant. The packet makes no overclaim on these points. The repository and network facts themselves are worker-reported and cannot be confirmed from the packet."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "1. Line 10 adds 0<=m<=1, while accepted actual-operator-driver.md only says zeta is nonnegative, equals 1 on B1 and vanishes off B2. This is compatible because the shape is free and F1-F3 need m<=1. It would be clearer to say that zeta is chosen with values in [0,1]. Reading B_(2R) as an open ball would also be a slight strengthening, which the cutoff margin makes harmless.",
+      "2. Line 66 says the constant depends on fixed R,T and exponents. Accepted equation (4) also allows dependence on the model and mask shape, and the extended bound also depends on psi through ||Lpsi||. This is harmless with all of these fixed, but the wording understates the dependence.",
+      "3. The target omits gamma from its parameter display, while both accepted notes fix 0<gamma<min(1/2,(2-alpha)/2). Such a gamma always exists because alpha<2 under H:homog, and it is an auxiliary construction parameter. No hypothesis is lost.",
+      "4. The target lists uniform square-exponential moments as a named input, while the source-note excerpt says uniform Gaussian sqrt(p) and exponential local pathnorm bounds. The square-exponential form follows from a uniform sqrt(p) bound, or from (3)-(4) with a uniform variance constant. The proof should record that step.",
+      "5. The optional h clause does not state the topology of time continuity. A topology such as C([0,T];C_c^infinity(K)), or at least finite sup_t||h(t)||_W1infinity with pointwise continuity, should be displayed so that the displayed norms are finite and the integrand is strongly measurable. Support dependence is also largely redundant once the L2 norm is displayed.",
+      "6. Y3 asserts uniqueness without naming the class. C^theta([s,T];B(F)), or more generally Holder exponent above 1-theta, should be stated, matching the contraction argument.",
+      "7. Y3 correctly limits constant preservation to the interaction phase, but physical constant coordinates (c1+(t-s)c2,c2)-type transport is left implicit in the definition of P. An explicit sentence would prevent later misuse.",
+      "8. Full-phase finite propagation must handle data where e and the constants cancel locally, so that e+c vanishes on a ball while neither part does. A cutoff decomposition (e+psi c)+(1-psi)c handles this. Accepted (12) only covers Sobolev phases and support of each entry.",
+      "9. Proof-stage items for Y2 and Y4 are not statement defects. The localization identities at the M_E and M_E^rho level need the short limit from finite sums of accepted (12), with one null set per fixed rho. F2 uniqueness is stated for locally continuous mild solutions, so the proof must either show that regularity for the F phase or match Picard iterates. It must also match the Bochner L2 average in F2 with the pathwise J_phi value.",
+      "10. The 64k^2 bound assumes a unit time horizon with 4k^2 equal segments, and the script encodes the value but not the time grid. It is correct under that reading, and the same computation gives 4^theta k^(2theta-1), which diverges for every theta>1/2. The script also asserts the two nonzero response entries rather than building a dropped-column model, so the phrase that dropping the columns is detected is slightly stronger than the code.",
+      "11. The script checks only masked>0 for the borrowed quadrature row. The full and ratio entries are not recomputed by the script, and low-orders-v2.json is not in the packet. The packet scopes this as a mechanism witness, which is appropriate.",
+      "12. The review request refers to seven new analytic claims, but the packet does not enumerate seven. The crosswalk has six rows and the worker note groups the obligations by type. The substance, that the new claims are uncertified, is present. A numbered list would make the count auditable.",
+      "13. Line 81 calls local-causal-young-flow.md Section 5 already source-checked, but the excerpt contains no acceptance banner for that note, and the prior gate reconnaissance is outside the packet. I checked the generic argument directly, so acceptance does not rest on that label."
+    ],
+    "note": []
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is a statement gate, not a proof certificate, a human verification, a whole-paper certificate or a novelty audit. Y1-Y4 and the optional base were checked for correctness and implication at statement level, and their long proofs were not reviewed.",
+    "Accepted inputs were read only through the frozen excerpts and notes. Omitted parts of accepted notes, and the external inputs named by F1-F3 such as author pages, L:joint-fixed-order, P:mixed and L:vertex-crude, were taken as accepted inputs and not re-derived.",
+    "check-extension.py was not executed because no execution tool was available. Its assertions and JSON rows were verified by hand with exact arithmetic.",
+    "Recorded SHA256 values and the prior review receipts were not recomputed. The held sources and low-orders-v2.json are outside the packet. The source revision named in the request does not appear in the packet.",
+    "Repository state, network failure, remote parity and worker receipts are worker-reported facts and cannot be confirmed from the packet."
+  ]
+}

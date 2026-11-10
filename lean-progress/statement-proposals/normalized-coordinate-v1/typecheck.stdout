@@ -1,0 +1,7 @@
+∀ {Mode : Type u} [DecidableEq Mode] (ν : Mode →₀ ℕ) (j : Mode) (ω : Mode → ℝ),
+  ω j * (GaussianChaos.WienerChaos.Hm ν ω / √(GaussianChaos.WienerChaos.mfact ν)) =
+    √(↑(ν j) + 1) *
+        (GaussianChaos.WienerChaos.Hm (ν + fun₀ | j => 1) ω / √(GaussianChaos.WienerChaos.mfact (ν + fun₀ | j => 1))) +
+      √↑(ν j) *
+        (GaussianChaos.WienerChaos.Hm (ν - fun₀ | j => 1) ω /
+          √(GaussianChaos.WienerChaos.mfact (ν - fun₀ | j => 1))) : Prop

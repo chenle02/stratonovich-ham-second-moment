@@ -1,0 +1,73 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "medium",
+  "source_coverage": [
+    "PDF_PAGE231 fullpages/page-231.png",
+    "PDF_PAGE231 bands/page-231-band-1.png",
+    "PDF_PAGE231 bands/page-231-band-2.png",
+    "PDF_PAGE231 bands/page-231-band-3.png",
+    "PDF_PAGE232 fullpages/page-232.png",
+    "PDF_PAGE232 bands/page-232-band-1.png",
+    "PDF_PAGE232 bands/page-232-band-2.png",
+    "PDF_PAGE232 bands/page-232-band-3.png",
+    "PDF_PAGE233 fullpages/page-233.png",
+    "PDF_PAGE233 bands/page-233-band-1.png",
+    "PDF_PAGE233 bands/page-233-band-2.png",
+    "PDF_PAGE233 bands/page-233-band-3.png",
+    "PDF_PAGE234 fullpages/page-234.png",
+    "PDF_PAGE234 bands/page-234-band-1.png",
+    "PDF_PAGE234 bands/page-234-band-2.png",
+    "PDF_PAGE234 bands/page-234-band-3.png",
+    "PDF_PAGE232 detail-views/page-232-lemma35-5-display.png",
+    "PDF_PAGE234 detail-views/page-234-lemma35-7-scripts.png",
+    "VISUAL.md lines 1-31 (complete; review contract)",
+    "source-manifest.json lines 1-272 (complete; provenance metadata only)",
+    ".review/required-sources.json lines 1-111 (complete; read plan, no read credit)"
+  ],
+  "checks": [
+    {
+      "claim": "P231: layout/margins/folio and fine glyphs are rendered legibly with no clipping, collisions, or rendering artifacts",
+      "verdict": "PASS",
+      "reason": "The full page and bands 1-3 were read. The page opens mid-sentence with 'intervals are nonempty by the strict subcritical assumptions'. Anchors visible: display (35.6) with W_m(f)=W(T_{\u03b4,m}f), X_m(u)=g_\u03b4M_R(W_m)(min(u,\u2113_m)), g_\u03b4=\u03b4^{(1-a)/2}; the unnumbered norm display ||x||_{\u03b4,p}=(\u03b4\u03a3_{m=0}^N ||x_m||^p_{C^\u03b8})^{1/p}; the Proposition 35.4 heading '(Eligibility of the actual E law)'; aligned (35.7)/(35.8) with integral limits 0 to min(u,\u2113_m) and \u221a\u03b4 M_\u03b4\u03a6; the overlined C_\u03b4(H_I) \u2282 \ud835\udcd1_\u03b4; (35.9) b_\u03b4=2E||X_\u03b4||_{\u03b4,p} \u2264 C_{Q,B,p}\u03b4^{(1-a)/2-d/Q} \u2192 0; the Proof paragraphs; folio 231 centred at the bottom. The scripts P^R_{\u03b4,E}, L^{r_t}(I;\ud835\udca6(E)), g_\u03b4\u03b4^{a/2}=\u221a\u03b4, W(H_I) and C^\u03b8 are distinct and readable. Equation numbers sit flush right, the text block is fully justified, and the margins match the other pages. The long overbar and the integral's upper limit do not collide with neighbouring lines. No band seam hides any content: every line is complete in at least one view."
+    },
+    {
+      "claim": "P232: layout/folio and fine glyphs, including the Lemma 35.5 two-row display relation positions, are rendered legibly without defect",
+      "verdict": "PASS",
+      "reason": "The full page, bands 1-3 and the 300dpi Lemma 35.5 detail were read. Anchors visible: the end of the Proposition 35.4 proof with a right-flush QED box; the Lemma 35.5 heading '(The actual endpoint functional)'; the two-row display P_m(x_m)=S_E(\u2113_m)U_{x_m}(\u2113_m,0), \ud835\udcab_\u03b4(x)=P_N(x_N)\u00b7\u00b7\u00b7P_0(x_0) over F_\u03b4(x)=2\u03b4 log max(1,||\ud835\udcab_\u03b4(x)||); (35.10) \ud835\udcab_\u03b4(X_\u03b4)=P^R_{\u03b4,E}(L_\u03b4,0), e^{F_\u03b4(X_\u03b4)/\u03b4}=||P^R_{\u03b4,E}(L_\u03b4,0)||^2; the display ||\ud835\udcab_\u03b4(x)|| \u2265 ||S_E(\u03a3_{m=0}^N \u2113_m)|| \u2265 1 with tall norm bars and a bracketed sum; the second QED box; folio 232. In the detail view, row 2 starts indented relative to row 1 so that the closing parentheses of P_m(x_m) and F_\u03b4(x) end at about the same horizontal position. The two '=' signs therefore look vertically aligned, consistent with an alignment at the relation. The crop's right edge cuts row 1 after '\ud835\udcab_\u03b4(x) =', and the crop's bottom edge cuts the following italic line. Both are crop seams, since the full lines are legible in band 1/2 and the full page. The nested subscript x_m on U, the subscript \u03b4 on F, and the superscript F_\u03b4(X_\u03b4)/\u03b4 are all distinct. No collisions or clipping."
+    },
+    {
+      "claim": "P233: section heading, layout/folio and fine glyphs are rendered legibly with no clipping, collisions, or rendering artifacts",
+      "verdict": "PASS",
+      "reason": "The full page and bands 1-3 were read. Anchors visible: the section heading '35.4 Uniform coarse envelope and the exact radial integral'; the Proposition 35.6 heading '(Coarse tube envelope and actual operator moment)'; G_\u03b4(r)=sup F_\u03b4(a+M_\u03b4\u03a6) with a two-line stacked subscript a\u2208A_\u03b4, ||\u03a6||_{H_I}\u2264r; (35.11) with the integral from 0 to \u221e of (r/\u03b4)e^{(G_\u03b4(r)-r^2/2)/\u03b4}dr; inline G_B=sup_{|v|\u2264B}||S_E(v)|| and C_pr=G_B^2[B^{1-1/r_t}+B^{1-1/r_t-\u03b8}]; (35.12) with h_m^{r_t}, (C_prC_mean)^{r_t}||\u03a6||^{r_t}_{H_I}; the F_\u03b4(a+M_\u03b4\u03a6) display; the two-row power-mean display with outer exponent \u03bd/r_t on the large parentheses; the D_0/D_1/D_2 rows aligned at '='; folio 233. The doubly scripted ||d||^\u03bd_{C^\u03b8} and b^\u03bd_\u03b4, the nested 1-\u03bd/r_t exponents and L^{r_t}(I_m) are legible and separate. One line break falls after 'C_pr \u2264' with 18B^{3-1/r_t} starting the next line. This is normal inline breaking at a relation, not a defect."
+    },
+    {
+      "claim": "P234: layout/folio and fine glyphs, including the Lemma 35.7 derivative and nested exponential scripts, are rendered legibly without defect",
+      "verdict": "PASS",
+      "reason": "The full page, bands 1-3 and the 300dpi Lemma 35.7 detail were read. Anchors visible: the end of the Proposition 35.6 proof with a QED box; the Lemma 35.7 heading '(Exact Rayleigh tail budget)'; (35.13) with the integral from M to \u221e of (r/\u03b4)e^{(G(r)-r^2/2)/\u03b4}dr \u2264 4e^{(A_0-M^2/4)/\u03b4}; the inline M^{2-\u03bd} and r^{2-\u03bd}; the Lemma 35.8 heading '(The raw half-action supremum)' with the sup_{r\u22650}{g_J(r)-r^2/2} = sup_{h\u2208H}{J(h)-||h||_H^2/2} display; the closing paragraph; folio 234. In the detail view, the text-style -d/dr fraction is distinct, and the nested exponents e^{-r^2/(8\u03b4)} (twice) and e^{(A_0-M^2/8)/\u03b4} are fully visible: the second-level superscript 2 on r and M is resolved and not clipped. b^\u03bd_\u03b4 inside C_env(1+b^\u03bd_\u03b4) is visible with its superscript and subscript stacked. The crop's left and right edges and its top line ('\u2026/4, while r^2 \u2265 M^2\u2026') are cut, but these are crop seams; the complete lines are legible in band 2 and the full page. The tall inline scripts slightly widen the gaps before the 'Analytically' and 'gives the front factor' lines. This is a normal TeX line-spacing effect without overlap. The lower roughly 40% of the page is blank after the closing paragraph."
+    },
+    {
+      "claim": "SCOPE_ALL_IMAGES: all 16 required original images (4 full pages plus 12 bands) and both required 300dpi detail views were directly inspected as images",
+      "verdict": "PASS",
+      "reason": "All 18 PNGs listed in VISUAL.md and .review/required-sources.json were opened with the Read tool and viewed as images. Each band was checked against its full page, and each band seam was resolved by an overlapping view. The two detail crops were treated as supplements, not as replacement pages. The source manifest was read only as provenance metadata. No hash or PDF provenance was recomputed."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "P232 Lemma 35.5 two-row display: the '=' signs in rows 1 and 2 look vertically aligned (row 2 is indented so that the closing parentheses of P_m(x_m) and F_\u03b4(x) line up). No pixel-measurement tool was available, so this is a visual judgement, not a measured one.",
+      "P234: the lower ~40% of the body area is blank after the closing paragraph, presumably before a section or chapter break on the next page. The cause cannot be confirmed because page 235 is out of scope. Not a rendering defect.",
+      "P234: tall inline material (the -d/dr fraction and the nested e^{-r^2/(8\u03b4)} and e^{(A_0-M^2/8)/\u03b4} superscripts) slightly increases the spacing of two proof lines. There is no overlap or clipping.",
+      "P233: an inline relation is broken across lines after 'C_pr \u2264', leaving 18B^{3-1/r_t} at the start of the next line. This is acceptable typography and optional to adjust.",
+      "None of the four pages shows a running header; the large top margin is the same on all four, so it looks like a consistent document style rather than a defect."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This review covers layout, rendering and legibility only, for physical PDF pages 231-234. It makes no claim about mathematical correctness, source fidelity, cross-reference targets, theorem validity, adoption or delivery.",
+    "Glyph positions and alignment were judged by eye from the raster images. No pixel-level measurement, OCR or hash recomputation was performed. File hashes and PDF/source provenance (revision 44b25617befac48da660d59b90ec07d47ab118cc) were taken from source-manifest.json as metadata and not verified independently.",
+    "Pages before 231 and after 234 were not seen, so continuity across page breaks (the mid-sentence opening on P231, the ending on P234) was not checked against neighbouring pages.",
+    "This AI visual review is not human verification and cannot substitute for the required whole-paper mathematical reviewers or any Kimi HIGH gate."
+  ]
+}

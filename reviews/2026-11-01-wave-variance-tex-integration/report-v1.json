@@ -1,0 +1,191 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "notes/integrated_wave_variance.tex: lines 1-549 (complete)",
+    "notes/scalar-frequency-row-bound.md: lines 1-191 (complete)",
+    "notes/actual-two-variance-forms.md: lines 1-412 (complete)",
+    "notes/integrated_covariance_foundation.tex: lines 1-444 (complete)",
+    "reviews/2026-10-30-scalar-frequency-row/scientific-adjudication-v1.md: lines 1-33 (complete)",
+    "reviews/2026-10-30-actual-two-variance/scientific-adjudication-v1.md: lines 1-45 (complete)",
+    "reviews/2026-11-01-covariance-tex-integration/adjudication-v3.md: lines 1-47 (complete)",
+    "reviews/2026-11-01-wave-variance-tex-integration/model-context-v1.tex.txt: lines 1-107 (complete)",
+    "reviews/2026-11-01-wave-variance-tex-integration/target-v1.md: lines 1-35 (complete)",
+    "reviews/2026-11-01-wave-variance-tex-integration/target-freeze-v1.json: lines 1-11 (complete)",
+    "reviews/2026-11-01-wave-variance-tex-integration/build-v1.json: lines 1-42 (complete)",
+    "reviews/2026-11-01-wave-variance-tex-integration/worker-honesty-v1.md: lines 1-28 (complete)",
+    "reviews/2026-11-01-wave-variance-tex-integration/crosswalk-v1.md: lines 1-24 (complete)",
+    "reviews/2026-11-01-wave-variance-tex-integration/prompt-v1.md: lines 1-58 (complete)",
+    "reviews/2026-11-01-wave-variance-tex-integration/rendered-section-v1.txt: lines 1-461 (complete)",
+    "reviews/2026-11-01-wave-variance-tex-integration/page-v1-116.png: image delivered and inspected (complete)",
+    "reviews/2026-11-01-wave-variance-tex-integration/page-v1-117.png: image delivered and inspected (complete)",
+    "reviews/2026-11-01-wave-variance-tex-integration/page-v1-118.png: image delivered and inspected (complete)",
+    "reviews/2026-11-01-wave-variance-tex-integration/page-v1-119.png: image delivered and inspected (complete)",
+    "reviews/2026-11-01-wave-variance-tex-integration/page-v1-120.png: image delivered and inspected (complete)",
+    "reviews/2026-11-01-wave-variance-tex-integration/page-v1-121.png: image delivered and inspected (complete)",
+    "reviews/2026-11-01-wave-variance-tex-integration/page-v1-122.png: image delivered and inspected (complete)",
+    "reviews/2026-11-01-wave-variance-tex-integration/page-v1-123.png: image delivered and inspected (complete)",
+    "reviews/2026-11-01-wave-variance-tex-integration/page-v1-124.png: image delivered and inspected (complete)",
+    ".review/required-sources.json: lines 1-101 (read plan; earns no read credit)"
+  ],
+  "checks": [
+    {
+      "claim": "Parameter setup (17.1)-(17.2): the gamma interval is nonempty and B_alpha(h) >= 1 on 0<h<=1.",
+      "verdict": "PASS",
+      "reason": "alpha+a<2 with a>0 gives alpha<2, so (2-alpha)/2>0. B_alpha>=1 holds in all three regimes, because h<=1 gives log(1/h)>=0 and h^(1-alpha)>=1 for alpha>1."
+    },
+    {
+      "claim": "P:frequency-row hypotheses: arbitrary positive translated-growth Radon nu, with no evenness, density or physical inverse premise; closed balls; the C=0 case.",
+      "verdict": "PASS",
+      "reason": "The proof uses only ball masses of the pushforward nu_xi, with nu_xi(B(0,R))=nu(B(xi,R))<=CR^alpha, so singular measures are covered. Radius r+epsilon with epsilon down to 0 gives the closed-ball bound. C=0 forces nu=0 by countable covering, and then J_h=0."
+    },
+    {
+      "claim": "Dyadic inverse-Bessel bound (17.7).",
+      "verdict": "PASS",
+      "reason": "N=ceil(log2(5q)) gives 2^(N-1)<5q<=2^N, so the unit ball and annuli j=0..N-1 cover |eta|<=5q. Each annulus contributes at most C 2^alpha 2^(j(alpha-1)). The sum is at most 1/(1-2^(alpha-1)) for alpha<1, equals N<=log2 q+log2 10 for alpha=1, and is at most (10q)^(alpha-1)/(2^(alpha-1)-1) for alpha>1. The unit-ball term 1 is absorbed since q>=1."
+    },
+    {
+      "claim": "Near region of P:frequency-row with q=max(1,|xi|) and strict gamma.",
+      "verdict": "PASS",
+      "reason": "|lambda|<=4q gives |eta|<=5q, Q_h<=2 since a-1<0, and <xi>^(2gamma-1)=<xi>^(-epsilon)<=q^(-epsilon) since <xi>>=q. For alpha<1 the bound is immediate. For alpha=1, e^(-eps u)(1+u)<=1+1/(e eps). For alpha>1 the exponent alpha+2gamma-2 is negative exactly by (17.1). The critical alpha=1 case uses gamma<1/2."
+    },
+    {
+      "claim": "Far region constants 4/3 and 2^(2-a), and the reduction to S(h).",
+      "verdict": "PASS",
+      "reason": "r>4q>=4|xi| gives |eta|>=3r/4, ||eta|-|xi||>=r/2 and |eta|+|xi|>=3r/4>=r/2. Also <h omega> >= <hr/2> >= <hr>/2, so each bracket power is at most 2^(1-a)<hr>^(a-1), and two brackets give 2^(2-a). <eta>^-1<=4/(3r). Enlarging to |lambda|>1 is valid since 4q>=4. Shell masses are at most C 2^((j+1)alpha), with the bracket monotone on shells."
+    },
+    {
+      "claim": "Negative-exponent direction in the dyadic tail and all alpha<1, =1, >1 cases of S(h)<=K B_alpha(h); K independent of dimension.",
+      "verdict": "PASS",
+      "reason": "With alpha+a-2<0 and 2^(L+1)>1/h, 2^((L+1)(alpha+a-2))<=h^(2-alpha-a), so the tail is at most h^(1-alpha)/(1-2^(alpha+a-2)). The finite sums are 1/(1-2^(alpha-1)), L+1<=1+log2(1/h), and 2^(alpha-1)h^(1-alpha)/(2^(alpha-1)-1), using 2^L<=1/h. All constants are numerical in alpha,a,gamma, and d never enters."
+    },
+    {
+      "claim": "C:frequency-time: nonempty strict beta window above 1/2, and its actual use.",
+      "verdict": "PASS",
+      "reason": "1-a/2>1/2 iff a<1, and (3-a-alpha)/2>1/2 iff alpha+a<2. The exponents 2-a>2beta (alpha<1) and 3-a-alpha>2beta (alpha>1) are correct, with h<=1. For alpha=1, delta=2-a-2beta>0 absorbs the logarithm. No endpoint is used. P:wave-two-variances applies it to h^(2-a) times the row integral, not as a reverse bound on B_alpha."
+    },
+    {
+      "claim": "Phase setup: J is unitary, S(t,xi) is the massless wave matrix with sinc at zero, B(b)(u,v)=(0,bu), and ||z||_(E_(s-gamma))=||<xi>^(-gamma)Jz||_2.",
+      "verdict": "PASS",
+      "reason": "Directly verified from the weights: <xi>^(1/2) and <xi>^(-1/2) on H^(1/2) x H^(-1/2), and <xi>^(1-2gamma), <xi>^(-1-2gamma) on the lower space. The wave matrix solves u''=Delta u, and its entries are smooth in |xi|^2."
+    },
+    {
+      "claim": "P:actual-wave-form: Schwartz/indicator admission in the same raw W for every allowed dimension, and fixed-K versus uniform constants.",
+      "verdict": "PASS",
+      "reason": "If x and x-y lie in K then y is in K-K, and Gamma(K-K)<infinity by Radon. The Schur bound 2T^(1-a)/(1-a) closes the argument in L^2-time sup-space norm. Smooth interior temporal tests with the fixed spatial support of zeta_R give Cauchy sequences in the raw completion. The text explicitly confines this R-dependent constant to admission, and it is not used in (17.21)-(17.22)."
+    },
+    {
+      "claim": "Simultaneous unmasked mu/nu_R and MASKED mu approximation.",
+      "verdict": "PASS",
+      "reason": "Frozen time partitions and smoothed indicators give F_n converging in L^2-time in every Schwartz seminorm. Integration by parts and Minkowski give the <xi>^(-N) decay, and N can be chosen for both tempered measures. Lemma L:masked-time-completion passes this to H_a. Multiplication by fixed zeta_R preserves the limits, so the masked differences converge in the mu norm and in the raw norm, and the auxiliary extension and raw limit agree."
+    },
+    {
+      "claim": "Complexification (17.19) with unchanged (2pi)^d factor.",
+      "verdict": "PASS",
+      "reason": "E|W_C(F)|^2=E W(Re F)^2+E W(Im F)^2. The cross term of ||f^+i g^||^2 is 2 Im A(xi), which is odd since A(-xi)=conj A(xi), and it integrates to zero against even mu. The inequality comes from P:masked-auxiliary-norm with H=H_a^C on finite tensors and then the limit. I re-derived the constant through c_d^2 L and white-noise normalization mu=(2pi)^(-d) d xi."
+    },
+    {
+      "claim": "Actual E_s adjoint (17.15), both phase components.",
+      "verdict": "PASS",
+      "reason": "S(-t)(0,f)=(-sin(t|D|)f/|D|,cos(t|D|)f). Pairing with weights <xi> and <xi>^(-1), and using real multipliers, gives int f^ conj(G_w^) = int f conj(G_w) with f=b v_z by Parseval. Multiplication boundedness follows from the Peetre inequality as stated. The normalized free matrix is bounded by sqrt(2)max(1,T)."
+    },
+    {
+      "claim": "Observed cutoff adjoint (17.16).",
+      "verdict": "PASS",
+      "reason": "Weighted duality gives first entry Lambda^(-1) chi Lambda w1 and second entry Lambda chi Lambda^(-1) w2. D_chi is not self-adjoint in general, as the text says. Inserting this adjoint places chi inside the Bessel-weighted arguments of G_w, which is the correct observed form. No observation cutoff enters ell_R itself."
+    },
+    {
+      "claim": "All four weighted K entries and K(0,0)=[[-t,-t^2],[1,t]].",
+      "verdict": "PASS",
+      "reason": "Substituting z1^=<eta>^(-1/2)U1 and z2^=<eta>^(1/2)U2 gives v^=<eta>^(-1/2)[c_rho U1+b_rho U2]. Likewise G^=<xi>^(-1/2)[-b_r V1+c_r V2]. Row i is the output index and column j the input index, which gives exactly (17.17). At xi=eta=0, c=1, b=t and the brackets equal 1, so the stated matrix follows. Mixed zero-radius cases use the continuous b_0=t."
+    },
+    {
+      "claim": "Fourier product at -lambda with eta+lambda, conjugation and exact cancellation (2pi)^d c_d^2=1.",
+      "verdict": "PASS",
+      "reason": "Fourier inversion gives (v conj G)^(-lambda)=c_d int v^(eta) conj(G^(eta+lambda)) d eta; the delta constraint from the exponent i(lambda+eta-xi)x is xi=eta+lambda. Reflection uses actual evenness of nu_R. Then (2pi)^d c_d^2=1 leaves no factor in (17.18). The spatial mask appears once and the actual amplitude is retained."
+    },
+    {
+      "claim": "No source field is identified with raw W; same W is used throughout.",
+      "verdict": "PASS",
+      "reason": "ell_R is defined from the original W via W_C. The text states that the deterministic identity neither identifies a positive-width source with raw noise nor asserts a source limit, and that (17.19) does not declare the masked law stationary."
+    },
+    {
+      "claim": "L:phase-bessel: Bochner integrability, separable basis, conjugated-family scalar Bessel, kernel measurability.",
+      "verdict": "PASS",
+      "reason": "The H-basis coefficient of int sum u_(k,j)g_j is the L^2 pairing with conj(u_k), and the conjugated version pairs with u_k, exactly as written; conj(u_k) is also orthonormal. Parseval and Tonelli sum over the basis. u in L^2 and g in L^2(H) give L^1(H). Bounds |c_r|<=1 and |b_r|<=sqrt(2)max(1,T) hold on [0,T]. Kernels are continuous in frequency into L^2(0,T), and hence into separable H_a^C. No independence is used."
+    },
+    {
+      "claim": "P:wave-two-variances: eligibility of actual even nu_R and kernel bound (17.23).",
+      "verdict": "PASS",
+      "reason": "P:masked-auxiliary-norm gives positive even tempered Radon nu_R with ball constant C_nu=c_d^2 L_zeta^2 C_Gamma uniformly in R, so P:frequency-row applies with no physical-inverse premise. Each K_ij is +/- (<xi><eta>)^(-1/2) F_r G_rho, and L:masked-continuous-wave gives A_T h^(2-a)Phi_h with A_T=C_1(a)(1+T)^4. I also rechecked L:masked-continuous-wave's coefficient 4, its factor 3^(1-a), and its bound (M+hD)^2<=(1+T)^4."
+    },
+    {
+      "claim": "Input direction (17.21) with U_k on the input family.",
+      "verdict": "PASS",
+      "reason": "With V=Jz fixed, g_j^lambda is as displayed. Bessel gives the sum over k at most int sum_j||g_j||^2. (a1+a2)^2<=2(a1^2+a2^2) and two j-values give 4A_T h^(2-a)Phi_h(eta+lambda,eta) sum_i|V_i|^2. Setting xi=eta+lambda, applying Tonelli and (17.24) gives C_T=4A_T K C_nu with the lower weight ||<xi>^(-gamma)Jz||^2."
+    },
+    {
+      "claim": "Output direction (17.22) with conjugated Bessel, reflection and symmetric Phi_h.",
+      "verdict": "PASS",
+      "reason": "With U=Jz fixed and eta=xi-lambda, the pairing is int sum_i conj(V_(k,i)) f_i^lambda, so the conjugated version is the right one. The same factor 4 results. The row at eta is int Phi_h(eta+lambda,eta)nu_R(d lambda); even nu_R and Q_h(r,rho)=Q_h(rho,r) turn it into int Phi_h(eta,eta-lambda)nu_R(d lambda), bounded by (17.24). Same C_T."
+    },
+    {
+      "claim": "No hidden R, I or family dependence; no independence assumption; time refinement.",
+      "verdict": "PASS",
+      "reason": "C_T contains only C_1(a), T, K(alpha,a,gamma), c_d, L_zeta and C_Gamma. Bessel is deterministic and handles any finite family size. For the h^(2beta) form, h^(2-a) times the row is at most K_beta C_nu h^(2beta)<xi>^(-2gamma), which gives constant 4A_T K_beta C_nu."
+    },
+    {
+      "claim": "P:wave-square-columns: countable real Schwartz ON basis, L^2 limits, deterministic bounded maps and extension to the lower phase.",
+      "verdict": "PASS",
+      "reason": "Real Gram-Schmidt on a countable dense Schwartz family is valid since the E_s form is real on real phases. Prop. P:wave-two-variances gives uniform finite-N sums, and the tail identities use orthonormality with no independence. Real linearity and the bound permit unique extension to E_(s-gamma)^real. The maps are deterministic from inputs into L^2(Omega;E_s^real). See minor finding on the implicit reality step."
+    },
+    {
+      "claim": "Singleton pairing proof in both ways, and basis independence.",
+      "verdict": "PASS",
+      "reason": "<m_N z,w>=ell(z,w_N) and <z,n_N w>=ell(z_N,w) hold on the real pair. Normalized singleton families in (17.22) and (17.21) give the stated bounds, with E_(s-gamma) norm on the fixed vector and E_s norm on the residual. The zero residual is handled. Two constructions have equal pairings with every fixed Schwartz basis vector, so Parseval makes their L^2 difference zero."
+    },
+    {
+      "claim": "Gaussian finite families; no common event, sample bounded operator, HS, path, source, Young or point-moment inference.",
+      "verdict": "PASS",
+      "reason": "All values lie in the closed Gaussian Hilbert space of the same W, and L^2 limits of centered Gaussians with convergent variances stay centered Gaussian. The closing paragraph disclaims every listed conclusion, and no statement in the section uses one. 'real' means real phases in dimension d, as stated."
+    },
+    {
+      "claim": "Full original d=1,2,3, singular, white and subcritical classes; zero noise; imported hypothesis roles.",
+      "verdict": "PASS",
+      "reason": "Only H:homog through C_Gamma, Radon local finiteness, evenness and temperedness are used, and alpha>1 arises only for d>=2. Admission does not require d=2,3 or T<=1. Gamma=0 is treated explicitly (forms and maps zero). Section-16 labels and roles match the crosswalk."
+    },
+    {
+      "claim": "Source correspondence with accepted scalar and two-variance notes.",
+      "verdict": "PASS",
+      "reason": "All six claims correspond to the crosswalk with no strength, range or constant change: C_nu, A_T, C_T=4A_T K C_nu, the beta window and the K entries are identical. Omitted material (old HS scope comparison, numeric and Lean controls) is non-premise, and finite Lean identity is not invoked in the TeX. Old HS scope is not imported."
+    },
+    {
+      "claim": "Stable labels, proof ends and rendered signs, exponents, hats and constants.",
+      "verdict": "PASS",
+      "reason": "Every cross-reference target in the supplied foundation and model context exists and numbers correctly (16.4, 16.11, 16.12; Prop. 16.2, 16.4; Lemma 16.3, 16.8; Hyp. 1.1). All six proofs end with 'This proves' lines. Direct PNG inspection of pages 116-124 confirms (17.1)-(17.25), the wide hats, conjugate bars, minus signs and the small matrix. A Grep found zero tabs in the target. Rendered text agrees with source."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Non-mandatory: in P:wave-square-columns the proof does not state that ell_R is real on a real Schwartz pair. This is what puts m_N,n_N in E_s^real and makes n_N real linear. It holds because cos(t|xi|), sin(t|xi|)/|xi| and the Bessel multipliers are real and even, so v_z and G_w are real and W_C reduces to W. A one-line remark would suffice.",
+      "Non-mandatory: the density sentence in P:wave-square-columns compresses the source note. Fourier cutoff alone yields compact frequency support in weighted L^2, and the source's additional usual Schwartz density and preservation of Hermitian symmetry for real phases are left implicit. These steps are standard and do not change the claim.",
+      "Non-mandatory: C_{T,beta} has no displayed formula. The proof yields 4 A_T K_beta C_nu. Displaying it would help the stated goal of deriving constants from the model.",
+      "Non-mandatory: the statement 'continuous in their frequency variables' means joint continuity in (eta,lambda), or (xi,lambda), as in the source's 'jointly continuous'. Joint continuity is true and is what Tonelli and measurability use; the word could be restored.",
+      "Non-mandatory: symbols are overloaded, each resolved locally: B (ball, coupling B(b), B_alpha), J (Fourier map, J_h), S (wave group, S(h)), K (compact set, row constant, kernel 'cal K'), r (ball radius, E_r index, |xi|, |lambda|), rho (|eta|, rho_R), epsilon (closed-ball limit, 1-2gamma), L (floor index, L_zeta), F (test functions). No formula is ambiguous in context.",
+      "Non-mandatory: Section 16 and Section 17 each 'choose and fix' zeta. Section 17's real even nonnegative compact bump is a special case of Section 16's real nonzero Schwartz mask, so the imported statements apply; evenness of zeta itself is not needed for evenness of nu_R. An explicit 'specialize' wording would be cleaner.",
+      "Non-mandatory: the last sentence refers to a 'subsequent compact-operator construction' not present in this section or in the rendered successor (Section 18 is Targets). It is a forward pointer, proves nothing and is consumed by nothing here, but it must be resolved by later integration or reworded before any final version."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is an AI artifact review, not human verification, a novelty audit, or a whole-paper or operator-path gate.",
+    "Per instruction, no script, Git, Lean, LaTeX or numeric execution was performed. The hashes in build-v1.json, target-freeze-v1.json and required-sources.json, the source revision f5c1521e518b78cbc9afba442379bd7081568815, and the zero-error build record were not independently recomputed. The build record is treated only as build evidence.",
+    "The main file notes_stratonovich_ham_second_moment.tex is not in the packet; only model-context-v1.tex.txt and the integrated foundation were supplied. The statement that all 68 earlier proof bodies are unchanged is taken as a given scope premise and was not verified here.",
+    "Label references were checked against the supplied foundation and model context and the rendered numbering, not against the complete main-file aux data.",
+    "Section 16 proofs were reused as scoped accepted evidence. The steps actually consumed by Section 17 were independently rechecked, but this review does not recertify all of that section.",
+    "The finite Lean identity and numeric controls described in the source notes were not rerun and are not premises of the reviewed TeX."
+  ]
+}

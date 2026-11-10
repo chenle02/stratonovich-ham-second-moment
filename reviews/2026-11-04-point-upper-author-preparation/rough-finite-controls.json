@@ -1,0 +1,83 @@
+{
+  "scope": "FINITE_AUTHOR_FALSIFICATIONS_NOT_NEW_THEOREM",
+  "controls": [
+    {
+      "name": "positive_order_not_arbitrary_powers",
+      "T": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "S": [
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "S_minus_T": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "S2_minus_T2": [
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "determinant": -1,
+      "consequence": "Onlyresolvent/square-rootFORMorderwithdomainsisused;arbitrarypowersnotinferred."
+    },
+    {
+      "name": "zero_rate_spectral_entry",
+      "h": 0,
+      "weighted_wave_matrix": "[[1,sqrt(c)*t],[0,1]]",
+      "consequence": "Sinequotientt and1+t factornecessary;no divisionbylambda."
+    },
+    {
+      "name": "scalar_compact_not_tensor_compact",
+      "scalar_A": "R->Lr(0,1),A1=1",
+      "images": "1 tensor e_j",
+      "pairwise_distance": "sqrt2",
+      "averaging_error": "0",
+      "consequence": "TensorNORMandscalarcompactnessdonotassertcompacttensor."
+    },
+    {
+      "name": "uniform_constant_arithmetic",
+      "c": "2+K^2",
+      "M_K_squared": "sqrt(3(1+K^2)) <=2(1+K)",
+      "matrix_factor": "2 *2(1+K)(1+t)e^(lambda t)",
+      "final_E_bound": "8(1+K)^2(1+t)e^(lambda t)",
+      "consequence": "NoF-lift/chi_Rfactorinuniformbudget."
+    },
+    {
+      "name": "F_forcing_integral",
+      "exact_integral": "int0t (1+t-s)(1+s)ds=t+t^2+t^3/6",
+      "upper": "(1+t)^3",
+      "consequence": "Retainbothc1andsc2constantresponses;qualitativeFboundnotRuniform."
+    },
+    {
+      "name": "domain_weight_check",
+      "identity": "||B0u||H-.5=||u||H1.5",
+      "consequence": "DistributionRHSinH-.5supportsH1.5inclusion,notH2operator-domainclaim."
+    }
+  ]
+}

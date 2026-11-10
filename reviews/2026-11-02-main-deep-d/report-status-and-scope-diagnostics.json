@@ -1,0 +1,70 @@
+{
+  "scope": "Literal report/custody and report-only-error audit; root mathematical adjudication required",
+  "proof_ledger": [
+    {
+      "id": "PROOF049",
+      "raw_label": "(6273\u20136329) `L:terminal-wick`",
+      "raw_status": "FULLY_CHECKED"
+    },
+    {
+      "id": "PROOF050",
+      "raw_label": "(6357\u20136377) `L:uniform-series-tail`",
+      "raw_status": "FULLY_CHECKED"
+    },
+    {
+      "id": "PROOF051",
+      "raw_label": "(6397\u20136618) `T:full-upper`",
+      "raw_status": "FULLY_CHECKED"
+    }
+  ],
+  "named_checks": {
+    "raw_statement": "All eleven risk checks pass.",
+    "format": "Explicit universal PASS then allD01-D11 names/details in oneparagraph, not11standalone statuslines",
+    "ids": [
+      "D01",
+      "D02",
+      "D03",
+      "D04",
+      "D05",
+      "D06",
+      "D07",
+      "D08",
+      "D09",
+      "D10",
+      "D11"
+    ]
+  },
+  "reported_required_repairs": "none",
+  "upstream_depth_limit": "PROOF051 ledger explicitly says P:interval-coefficients and L:joint-fixed-order supplied bodies had statements/constants/exponents/usage audited, exhaustive per-line rederivation outside targetscope. No upstream constructor-proof depth promotion from this UnitD.",
+  "report_only_errors": [
+    {
+      "issue": "Gridnesting paragraph calls childpoint(h_j/2)(2n+3s*t),s=(-1)^j; omitted childgridshift.",
+      "correction": "Choose childinteger m=2n+3s*t (integer since3t integer); actualchildendpoint(h_j/2)(m\u2212s*t)=h_j(n+s*t), exactly parentpoint. Source states correct integer-shift reasoning without report wrongpointformula.",
+      "control": "t=1/3,s=1,n=0: parent=h_j/3; reportexpression=h_j/2; correctchildendpoint=h_j/3."
+    },
+    {
+      "issue": "Wickmultiplicity paragraph says divided by(1/k!)(1/2)^k yields1.",
+      "correction": "Multiply multiplicity2^k*k! by seriesprefactor1/(2^k*k!), or divide by2^k*k!. Source correct; rawreport wording retained."
+    },
+    {
+      "issue": "Smallcase paragraph calls covariance integral the firstmoment and calls(1,1) unequalchains.",
+      "correction": "Covariance integral is E|Y1|\u00b2; EY1=0. (1,1) chains equal; (2,0) is the unequal/selfpair control. Source correct."
+    },
+    {
+      "issue": "PROOF049 ledger says onlyGaussianity andVfinite used.",
+      "correction": "Stated piecewise mean-square continuity supplies strongmeasurability/Bochner construction and is used in detailed derivation. Do not drop it."
+    }
+  ],
+  "optional_report_notes": [
+    "Gridnesting holds but coverage/inventory use withinlevel grids",
+    "K_infinity upperbound context-only",
+    "Local C_s=d/dsG_s identity terse",
+    "v_max used fixedJ/epsilon identification only"
+  ],
+  "scope_gates_remaining": [
+    "Full213/main/global",
+    "Constructor/upstream depth as actually outstanding",
+    "Source-image/render",
+    "Independentcold"
+  ]
+}

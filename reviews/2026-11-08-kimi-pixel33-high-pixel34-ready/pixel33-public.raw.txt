@@ -1,0 +1,68 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "PDF_PAGE126 fullpages/page-126.png",
+    "PDF_PAGE126 bands/page-126-band-1.png",
+    "PDF_PAGE126 bands/page-126-band-2.png",
+    "PDF_PAGE126 bands/page-126-band-3.png",
+    "PDF_PAGE127 fullpages/page-127.png",
+    "PDF_PAGE127 bands/page-127-band-1.png",
+    "PDF_PAGE127 bands/page-127-band-2.png",
+    "PDF_PAGE127 bands/page-127-band-3.png",
+    "PDF_PAGE128 fullpages/page-128.png",
+    "PDF_PAGE128 bands/page-128-band-1.png",
+    "PDF_PAGE128 bands/page-128-band-2.png",
+    "PDF_PAGE128 bands/page-128-band-3.png",
+    "PDF_PAGE129 fullpages/page-129.png",
+    "PDF_PAGE129 bands/page-129-band-1.png",
+    "PDF_PAGE129 bands/page-129-band-2.png",
+    "PDF_PAGE129 bands/page-129-band-3.png"
+  ],
+  "checks": [
+    {
+      "claim": "P126: whole-page layout is clean and all fine mathematical glyphs on the page are legible across the four views.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Overview shows a complete, regular page: section heading '17.2 Actual forms on the full phase' bold at top, justified body, centered displays, folio 126 centered at bottom, normal margins, no clipping or collisions. Bands resolve all fine content: the 2x2 Fourier matrix S(t,ξ) with sin(t|ξ|)/|ξ| entries in (17.10), the sin(t|D|)/|D| quotient in (17.12), conjugate overlines in (17.13) and (17.15), the adjoint display D_χ^{*,E}w in (17.16), the script kernel K(t;ξ,η) with 1/√⟨ξ⟩⟨η⟩ prefactor and 2x2 c_r/b_r matrix in (17.17), and the triple-norm H^ℂ_a expression with ν_R(dλ) in (17.18). Proposition 17.3 heading and red hyperlinked cross-references (16.4), (17.13), 16.2 are crisp. Band-2 top shows the upper row of the (17.10) matrix cut; the complete matrix is present in band-1, a crop artifact only. Visible anchors: heading 17.2 and equation label (17.10)."
+    },
+    {
+      "claim": "P127: whole-page layout is clean and all fine mathematical glyphs on the page are legible across the four views.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Overview shows the continuation of the proof of Proposition 17.3 filling the full page with regular margins, three unnumbered displays plus one numbered display, folio 127 centered at bottom, no clipping or collisions. Bands resolve: the bound |K|Γ(K−K)‖F(t)‖∞‖H(u)‖∞; the weighted Fourier remainder ‖F̂_n − F(ξ)‖_{L²(0,T)} ≤ ε_n⟨ξ⟩^{−N} with hat and subscript clear; the Hermitian displays A(−ξ) = overline{A(ξ)} and A(ξ) = ⟨f̂(ξ),ĝ(ξ)⟩_{H^ℂ_a} with overline and hats distinct; and (17.19) 𝔼|W_ℂ(ζ_RF)|² = (2π)^d ∫‖widehat{ζ_RF}(ξ)‖²_{H^ℂ_a}μ(dξ) ≤ (2π)^d ∫‖F̂(λ)‖²_{H^ℂ_a}ν_R(dλ) with all superscripts and measure differentials legible. Inline Peetre-type inequality ⟨ξ⟩^r⟨η⟩^{−r} ≤ 2^{|r|/2}⟨ξ−η⟩^{|r|} near the bottom reads cleanly. Band-2 bottom cuts the line 'Ex-' mid-word; the complete line is in band-3, a crop artifact only. Visible anchor: equation label (17.19); the page carries no heading, which matches its proof-continuation role and is not a defect."
+    },
+    {
+      "claim": "P128: whole-page layout is clean and all fine mathematical glyphs on the page are legible across the four views.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Overview shows the end of the Proposition 17.3 proof with a right-aligned □, the bold heading '17.3 Bessel's inequality and the two variances', Lemma 17.4 (Hilbert-valued finite Bessel inequality) with display (17.20), its proof closed by □, and the start of Proposition 17.5 (Both actual variance directions); folio 128 centered, margins regular, no collisions. Bands resolve: the hatted definitions v̂_z(t,η) = ⟨η⟩^{−1/2}[c_ρ(t)U_1(η) + b_ρ(t)U_2(η)] and Ĝ_w(t,ξ) with subscript ρ legible; the small inline 2x2 matrix ( −t −t² ; 1 t ) at 'ξ = η = 0' readable at band resolution; the F̂_{z,w}(t,−λ) convolution display with kernel K_ij(t;η+λ,η) and overline V_i(η+λ); and (17.20) with the H-subscripted triple norm and double sums. Band-2 top edge cuts the Ĝ_w row; the complete row is in band-1, a crop artifact only. Visible anchors: heading 17.3, Lemma 17.4, and equation label (17.20)."
+    },
+    {
+      "claim": "P129: whole-page layout is clean and all fine mathematical glyphs on the page are legible across the four views.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Overview shows the page opening with the carried-over word 'z,' (ordinary mid-sentence page break from p128's Proposition 17.5 statement, not a defect), displays (17.21)–(17.22), the proof with (17.23)–(17.24), the g_j^λ and f_i^λ definitions, and folio 129 centered at bottom; margins regular, no clipping or collisions. Bands resolve: the right sides C_T h^{2−a}B_α(h)‖z‖²_{E_{s−γ}} with the compound subscript E_{s−γ} legible; (17.23) ‖1_I K_ij(·;ξ,η)‖²_{H^ℂ_a} ≤ A_T h^{2−a}Φ_h(ξ,η) with A_T = C_1(a)(1+T)^4; (17.24) ∫Φ_h(ξ,ξ−λ)ν_R(dλ) ≤ KC_νB_α(h)⟨ξ⟩^{−2γ}; the Cauchy–Schwarz two-line bound with |V_i(η+λ)|² terms; and f_i^λ(ξ) = Σ_j 1_I K_ij(·;ξ,ξ−λ)U_j(ξ−λ). Band-1 bottom cuts the integral sign of (17.24) and band-2 bottom cuts the 'Lemma 17.4 and Cauchy–Schwarz' line; both are complete in the adjacent overlapping bands, crop artifacts only. Visible anchors: equation labels (17.21) and (17.24); the page carries no new heading, matching its proof-continuation role."
+    },
+    {
+      "claim": "SCOPE_ALL_IMAGES: the review covers exactly the 16 attached views of PDF physical pages 126–129, each read as pixels.",
+      "verdict": "PASS",
+      "reason": "All four required views per page (one full-page overview plus three overlapping body bands) were present and inspected as images for pages 126, 127, 128, and 129. The overlapping bands account for every body region of each page, and the overviews supply margins, folios, headings, and display alignment. No view was missing, blank, duplicated, or mislabeled relative to its listed VIEW_ID; no other pages were assessed."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Band-edge partial content at specific seams — p126 band-2 top (upper row of matrix (17.10)), p127 band-2 bottom ('Ex-' mid-word), p128 band-2 top (Ĝ_w display row), p129 band-1 bottom (integral of (17.24)) and band-2 bottom ('Cauchy–Schwarz' lead-in) — each fully present in the adjacent overlapping band; crop artifacts of the rendering views, not page defects.",
+      "The smallest nested scripts (compound subscript E_{s−γ} on p129, H^ℂ_a superscript-subscript stacks on pp126–129, the tiny inline 2x2 matrix on p128) are legible only at band resolution; the overviews alone do not resolve them.",
+      "Pages 127 and 129 are proof-continuation pages carrying no new section heading, and p129 opens mid-sentence with 'z,' carried over from p128; both are ordinary pagination, noted so the absence of a heading or sentence start is not misread as a defect."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "Pixel-only review of the 16 attached images; no tools, filesystem, shell, or network were used and no hashes were recomputed; VIEW_ID and SHA256 strings are treated as out-of-scope provenance metadata bound by Root.",
+    "Scope is exactly PDF physical pages 126–129; no other pages were inspected and no claim is made about them.",
+    "In-text cross-references (e.g. (16.4), (17.8), (17.13)–(17.19), Lemmas 16.3 and 16.8, Propositions 16.2, 16.4, 17.1, 17.3) were read as printed text only; their targets were not opened or verified.",
+    "Mathematical correctness, primary-source fidelity, and source/PDF provenance are outside this judgment; no formula was recomputed.",
+    "Fine-glyph verdicts rest on the three overlapping bands; the full-page overviews alone are insufficient for the smallest scripts, consistent with the stated role of the views.",
+    "Cold-read status, overall delivery acceptance, and all full-goal, mathematical, source, application, and adoption gates remain open and untouched by this pixel verdict."
+  ]
+}

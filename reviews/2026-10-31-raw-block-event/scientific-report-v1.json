@@ -1,0 +1,119 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "reviews/2026-10-31-raw-block-event/target-v1.md lines 1-187 complete",
+    "reviews/2026-10-31-raw-block-event/falsification-v1.md lines 1-51 complete",
+    "reviews/2026-10-31-raw-block-event/source-crosswalk-v1.md lines 1-35 complete",
+    "reviews/2026-10-31-raw-block-event/worker-honesty-v1.md lines 1-38 complete",
+    "reviews/2026-10-31-raw-block-event/check-coupled-blocks.py lines 1-66 complete (read, not executed)",
+    "reviews/2026-10-31-raw-block-event/coupled-blocks-v0.json lines 1-110 complete",
+    "reviews/2026-10-31-raw-block-event/falsification-scope-v0.md lines 1-45 complete",
+    "reviews/2026-10-31-raw-block-event/lean-reuse-readiness-v0.json lines 1-66 complete",
+    "reviews/2026-10-31-raw-block-event/input-method-excerpts-v1.txt lines 1-574 complete",
+    "reviews/2026-10-31-raw-block-event/input-method-custody-v1.json lines 1-62 complete",
+    "reviews/2026-10-31-raw-block-event/original-model-v1.txt lines 1-31 complete",
+    "reviews/2026-10-31-raw-block-event/original-model-custody-v1.json lines 1-8 complete",
+    "notes/compact-mean-ground-family.md lines 1-458 complete",
+    "notes/fixed-mask-young-constant-phase.md lines 1-433 complete",
+    "notes/fixed-mask-moment-transfer.md lines 1-250 complete",
+    "lean-progress/local-checks/moving-cone-v1/StratonovichHAMAudit/MovingCone.lean lines 1-30 complete",
+    "lean-progress/local-checks/moving-cone-v1/types-and-axioms.txt lines 1-117 complete",
+    "lean-progress/local-checks/joint-tilt-v1/StratonovichHAMAudit/JointTilt.lean lines 1-28 complete",
+    "lean-progress/local-checks/joint-tilt-v1/types-and-axioms.txt lines 1-12 complete",
+    "lean-progress/local-checks/actual-event-v1/StratonovichHAMAudit/ActualEvent.lean lines 1-35 complete",
+    "lean-progress/local-checks/actual-event-v1/types-and-axioms.txt lines 1-49 complete",
+    "notes/raw-block-event-lower.md lines 1-594 complete",
+    "notes/source-operator-convergence.md lines 1-476 complete",
+    "notes/actual-operator-driver.md lines 1-565 complete",
+    "notes/direct-event-calibration.md lines 1-223 complete",
+    "reviews/2026-10-31-raw-block-event/statement-adjudication-v1.md lines 1-65 complete",
+    "reviews/2026-10-31-raw-block-event/scientific-worker-honesty-v1.md lines 1-39 complete",
+    "Supporting searches, not required-source reads: packet-wide Grep for Jensen, Chen--Hu and L_*; Grep of notes/raw-block-event-lower.md for B-independence and L_ext. Neither used a truncating option."
+  ],
+  "checks": [
+    {
+      "claim": "C1: theorem scope, F=E+R2 constants, original Z/v, point lower bound and limitations",
+      "verdict": "PASS",
+      "reason": "Section 1 keeps the full H:homog class (d=1,2,3; 0<alpha<d or alpha=d=1; alpha+a<2) and any nonzero nonnegative nonseparable Psi. The eligible mask is fixed per Psi after the common trial of compact-mean (25)-(26). e0=(0,1,0) and O_phi agree with the accepted notes. Z and v are raw and unmasked and are never rescaled. Exponent check: R^(2-(a+alpha)/2)=delta^((1-a)/2) and R=T^((a-1)/(3-alpha)) agree with direct-event (S)/(A), so kappa is correct. Formula (1) is stated as a raw per-test lower functional with L_* identification and the sharp upper bound left open."
+    },
+    {
+      "claim": "C2: common-W pullbacks, null-quotient isometry, g_delta and Jacobian, literal matrix/time-indicator completions, both constant columns, b=sqrt(delta)H",
+      "verdict": "PASS",
+      "reason": "I recomputed the factors delta^(a-2)delta^2delta^(-a)=1, so T is an isometry that preserves nulls. The shift W_(delta,m)(f)=W_fast(f(.-mB,.)) is a literal test identity. Equation (5) follows from E[W(Tf)W(Psi)]=int Tf h. Applying it to h_R,t;z,w uses dominated convergence of smooth time cutoffs under the Schur bound. With source-operator (4),(9),(19) this gives <X_m(u)z,w>-covariance=g_delta delta^(a/2)<H_m(u)z,w>, and g_delta delta^(a/2)=sqrt(delta). The slow-test coefficient g_delta delta^(a/2-1)=delta^(-1/2) matches A2. Constant columns pass through Lpsi to Schwartz (psi,0),(0,psi); finite propagation (fixed-mask Section 3) gives S_E(r)Lpsi z and S_F(r)z the same displacement on supp V. Density of E plus constants, boundedness and path continuity give the full path identity (6)."
+    },
+    {
+      "claim": "C3: separable h0^theta K(F), Lipschitz compact coefficient limits, joint Gaussianity, Bochner covariance, operator-norm Borel generation",
+      "verdict": "PASS",
+      "reason": "Separability of K(F) in operator norm follows from P_nTP_n->T for compact T. The interpolation inequality [f]_theta<=(2||f||inf)^(1-theta)Lip(f)^theta is correct and places zero-initial Lipschitz K(F) paths in the closure. Each iA_jLpsi is Lipschitz and compact-valued by driver (10),(12) and Section 7, and Lp Ctheta limits remain in the closed B0. Laws match because W_(delta,m)(f_j) are iid, so (4) holds with constants independent of delta and m. Joint Gaussianity comes from the common first chaos. ||T||op is a supremum over dense normalized rational finite combinations, each a finite linear combination of entries; this is neither a maximum of entries nor an HS formula. Holder and supremum norms reduce to rational times."
+    },
+    {
+      "claim": "C4: degenerate finite Gaussian completion, sign, half cost, and all nonnegative Borel laws on all input space",
+      "verdict": "PASS",
+      "reason": "Substituting G'=G+sz gives (7) with Tz=l(b) and |z|^2=v, and no inverse covariance is used. Under Q_s, X has mean -s b, so the tilt density exp(-Z/sqrt(delta)-v/(2delta)) has the correct minus sign and half cost. Pi-lambda uniqueness and monotone convergence give (8) for every nonnegative norm-Borel j on B_delta. The translate is deterministic and lies in B_delta. No conditioning, RNP or Cameron-Martin input is hidden."
+    },
+    {
+      "claim": "C5: scaled maximum, square-exponential moments, global Young bound and UI, drift O(delta) at fixed B, strong-only groups, measurable suprema",
+      "verdict": "PASS",
+      "reason": "N+1<=2/delta gives (9). For n>=n0 with n0(1-a)>=1, E M^(2n)<=2C^(2n)(2n)^n; Lyapunov handles lower n; n!>=(n/e)^n gives the geometric tail 2(2ecC^2)^n, so (10) is uniform for the scaled maximum only. ||V_(s_m+delta r)-V_(s_m)||<=C delta B gives (11) through a Lipschitz primitive at fixed B. Fixed-mask (6b) gives (12). Fixed-mask (7) with 1/theta<2 gives moments of every order, so UI plus convergence in probability gives (13). Measurability uses a countable dense state set and rational times with strong continuity only, and P_(s_m) is used only for s_m<=1."
+    },
+    {
+      "claim": "C6: new-F cone, aperture before B, entrance, rebasing, residual correction, normalized errors, terminal displacement and tau=0/N=1",
+      "verdict": "PASS",
+      "reason": "I re-derived the whole chain. vartheta is fixed before B and does not depend on it. Entrance gives amplitude >=a_*/2 and residual <=vartheta a_*/4. Rebasing uses Q_c z=Q_b z+(Pi_b-Pi_c)z before the complementary bound. Then x>=(1-rho)A, y<=[q_B(vartheta+nu M_z)+M_Q eps M_z]A<=vartheta A/2, and new-cone membership holds with amplitude factor exp(lambda_c B)(1-rho). The terminal estimate 3j_*/4-2HC_gap vartheta-Heps M_z>=j_*/2 gives (18) with c_*=a_*j_*/4, including N=1 and u=0. No scalar solution moments are multiplied and no property of D beyond norm closeness is used."
+    },
+    {
+      "claim": "C6b: nine old finite facts, complete public types and exact consumers",
+      "verdict": "PASS",
+      "reason": "I compared each Lean source with its printed type. residual_budget (theta=vartheta,q=q_B,d=nu M_z,e=M_Q eps M_z), cone_conversion (a=A, x, y, rho<1/2) and terminal_margin (j=j_*,K=HC_gap,e=H eps M_z, y normalized) all have guards discharged by (14)-(15). shifted_amplitude has delta>0 and exponent sum 1/2. tilt_exponent is the half-variance algebra, and the wrong_* lemmas are used only as diagnostics. finite_error_accumulation has hypotheses C>=1, e>=0, d0<=0 and a recurrence for all n, supplied by identity extension. moderate_penalty has delta>0. Section 10 correctly limits these to scalar facts; printed axioms are the standard three."
+    },
+    {
+      "claim": "C7: induced common sources, contraction, raw retained W, first responses, conjugated cocycle, Young restart, finite products at fixed delta",
+      "verdict": "PASS",
+      "reason": "Var Y(Tf),Var D(Tf)<=||Tf||^2=||f||^2 and Var D(Tf)->0 follow from source-operator Section 5 at arbitrary rates, and Theorem 1 applies with isonormal W_(delta,m) as the given noise. Y_fast(u,x)=delta^(a/2)Y(delta u,x), and delta^a K_eta(delta r)=K_(eta/delta)(r) was recomputed by lambda->lambda delta; the max and sum width laws are preserved. Ordinary primitives match Gaussian-transfer drivers on matrix entries and extend to constants by finite propagation. (20) is a change of variable with no mask commutation. Conjugation by fixed S_F(mB) is bounded at fixed delta, giving (21). Conjugating Young Riemann sums and using uniqueness gives (22), and the composition law gives the product. The recurrence d(n+1)<=Cd(n)+C^n e, Lean (23) and Holder with L^(4(N+1)) moments are correct and confined to fixed delta. Hypothesis retainer equivariance and pathwise SPDE uniqueness are not assumed."
+    },
+    {
+      "claim": "C8: same-Z identity, tested noise-only average, unit-amplitude F3 at Gamma_delta, amplitude justification, inequality to the unmasked point, semiscaling",
+      "verdict": "PASS",
+      "reason": "j_delta is continuous on all B_delta through the locally Lipschitz Young map, so (24) follows from (8). For Gamma_delta the ONbasis f_j/g gives coefficients gA_j and variables W_fast(f_j), so the driver equals g A_R(W_fast), and chains scale by g^n. Source g Y_fast has covariance K_(eta/delta)(Gamma_delta)_epsilon with both widths tending to 0 at fixed delta, and the positivity F3 needs holds. F3 needs only single-parameter source law and the L2 premise, supplied by source/Young convergence, giving (25) as an inequality. Slow-time substitution and g_delta delta^(a/2)=sqrt(delta) identify regularized diagrams with (W), and direct-event gives (M). Slow Psi, Z and v remain unchanged, and fixed R is separated from r_T."
+    },
+    {
+      "claim": "C9: events, probability, positive average before squaring, Riemann and rho budgets, factor 2, v/2, delta^(1/4), all-large-T bijection",
+      "verdict": "PASS",
+      "reason": "P(C_delta)->1 by (13), and Chebyshev gives P(|Z|>delta^(-1/4))<=v delta^(1/2); the union bound uses no independence. (18) gives Y_delta>0 before squaring. Left Riemann error is <=C_R delta B including the delta tau cell, 0<=delta(N-1)<=1/B<=1, and the three e_rate/3 budgets give (27). Restricting the nonnegative integrand gives (28) with exact exponent (2I_R-2e_rate-v/2)/delta-delta^(-3/4), so the normalized penalty is delta^(1/4). delta=T^(-kappa) is a bijection for large T. The B dependence in (29) is a notation issue recorded under findings.minor and does not affect (1)."
+    },
+    {
+      "claim": "C10: finite-control, source and claim honesty, including calibration scope",
+      "verdict": "PASS",
+      "reason": "Section 10 treats d1 first-chaos controls as falsification aids only, does not promote an old HS phase, and asserts no new kernel run or count, source repair, Skorohod result, author-energy identification, sharp upper bound or goal completion. I checked the control formulas in check-coupled-blocks.py by hand against the JSON definitions: K_h, K0=1/((1-a)(2-a)(3-a)), v=8/((1-a)(2-a)), and the delta^(-1/2) slow coefficient. kappa->(4-alpha)/(3-alpha) as a->0 is correct, and the final paragraph explicitly disclaims the optimized constant. Provenance of its non-load-bearing Jensen remark is noted under findings.minor."
+    },
+    {
+      "claim": "Statement-gate proof obligations 1-7 and target A1-A6 are discharged by the written proof",
+      "verdict": "PASS",
+      "reason": "Scaled maximum with high then low moments is at lines 212-234. F3 amplitude route is at lines 457-479. Restart cocycle is at (20)-(22). Unit-vector combinations are at lines 177-186. Supremum measurability is at lines 261-264. e_rate and zero-extended pullbacks are distinguished. The compact-operator input is proved in Section 3. A1=(18), A2=(6), A3=(8), A4=(13), A5=(24)-(26), A6=(27)-(29),(1)."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "(29) and the e_rate->0 step use one symbol U_delta, but B depends on rho and hence on e_rate, and the note never says U_delta is independent of B. (1) is unaffected, since (26) bounds E U_delta^2 by the B-free E|u(T,0)|^2 for each B before e_rate->0. (29) as written needs either this order of limits or the explicit remark that (22) gives U_delta=O_phi P_glob(L,0)e0, which depends only on the driver on [0,L].",
+      "Symbols collide: H is both the mean primitive (Sections 2-5) and max(1,||O_phi||) (Section 6), and eta is both the spectral gap rate and the Laplace source cutoff. No inference is damaged, but clearer names would help a reader.",
+      "Lines 165-167 say (l(X),Z) can be 'written as' (TG,z.G); this is an equality in law, as the old joint-tilt note states. (7) depends only on that joint law, so this is wording only.",
+      "(12) invokes a driver ball H0+1, while (11) bounds only H_m by H0. H_m^stat satisfies the same bound because it uses the same supremum over s<=2 of ||V_s||inf+||V_s||2 and the same Lipschitz primitive estimate, but the note does not say so.",
+      "The final paragraph's 'previously proved Jensen lower bound' and the Chen--Hu reference have no supporting source in the frozen packet; the only other Jensen hits are the honesty note and an unrelated conditional-Jensen step. The remark is not load-bearing and makes no optimized-constant claim, and a citation would make the combination-by-maximum sentence auditable.",
+      "Line 550 extends the bound to any fixed x by canonical stationarity, and this is not derived in the note. It rests on the stationary-model statements in the accepted notes and is not used in (1).",
+      "(23) is not logically necessary for (25), because global driver convergence and fixed-mask Y3/(11) already give the L2 premise directly. Keeping it is harmless and its scope is honestly limited to fixed delta."
+    ],
+    "required_repairs": []
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is an AI review, not human verification, a novelty audit or a whole-paper certificate. It certifies only the frozen candidate against this packet.",
+    "Accepted inputs were audited at their exact applications and not re-proved, as the contract directs. These include compact-mean ground/gap statements, the Young and driver theorems, F1-F3, and direct-event scaling. OWN canonical L:joint-fixed-order, P:mixed, L:vertex-crude, author pages and Teschl sources are not in the packet and are trusted only through accepted notes; the same applies to actual-two-variance-forms.md, compact-sobolev-cutoff.md and other named antecedents.",
+    "I had read and search tools only. Lean was not re-run, check-coupled-blocks.py was not executed, and the SHA-256 and byte-match claims in lean-reuse-readiness-v0.json and custody files were not recomputed. Lean types were compared by reading source against the printed types and axiom lines.",
+    "All constants and algebra were checked by hand reasoning, with no independent symbolic or numerical replay. The d1 numerical controls are consistency checks only and carry no quadrature certificate.",
+    "No judgment is made on repository state, source-revision binding of d4d876ec beyond the supplied statement, or on the optimized constant, variational unmasking, sharp upper bound, source dictionary or conditional exact limit, all of which the candidate leaves open."
+  ]
+}

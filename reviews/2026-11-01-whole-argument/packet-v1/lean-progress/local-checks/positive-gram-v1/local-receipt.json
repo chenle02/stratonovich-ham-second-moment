@@ -1,0 +1,53 @@
+{
+  "status": "LOCAL_SOURCE_TYPE_AXIOMS_REPLAY_CONTROLS_PASS_PENDING_PG_APPLICATION",
+  "public_targets": 4,
+  "private_integrated_consumer_checks": 1,
+  "module_source_sha256": "d88ece3b0352580037caf78ec028b0811cd155dea0a9c8500901f618ee1ac6a6",
+  "header_fence_unchanged": true,
+  "standard_axioms_only": true,
+  "six_actual_positive_calls": true,
+  "source_only_replay": true,
+  "five_artifact_pairs_identical": {
+    "PositiveGram.ir": "91ad582c3aa8d922d9cc4d1c7341bbdbca31055d78cf0d51804b97da1d55c974",
+    "PositiveGram.ir.sig": "cfd27982a20c850f1cb86bea96bf1780d661bc7fc5b9badfe91971096d91f01e",
+    "PositiveGram.olean": "3a15d53af664baf3cf90b81fe8a5534b29f3db306c95b124e5006346f0461502",
+    "PositiveGram.olean.private": "8da26d604790020b4341826f82ead115b30679671c6faa8a46c07e0029f51a28",
+    "PositiveGram.olean.server": "eb3b30caa8c40ef3cc257f14d9301103425421dbb08a04fcc707765883daec24"
+  },
+  "audit_original_replay_text_identical": true,
+  "negative_controls": {
+    "MissingPositiveWeight": {
+      "exit": 1,
+      "failure": "arithmetic False,not import/API failure",
+      "scope": "standalone falsevariant,not a theoremapplication"
+    },
+    "MissingActive": {
+      "exit": 1,
+      "failure": "arithmetic False,not import/API failure",
+      "scope": "standalone falsevariant,not a theoremapplication"
+    },
+    "WrongHalf": {
+      "exit": 1,
+      "failure": "arithmetic False,not import/API failure",
+      "scope": "standalone falsevariant,not a theoremapplication"
+    },
+    "SignedWeights": {
+      "exit": 1,
+      "failure": "arithmetic False,not import/API failure",
+      "scope": "standalone falsevariant,not a theoremapplication"
+    }
+  },
+  "selected_dependency_pins_postflight_clean": true,
+  "resources_per_unit": {
+    "CPUQuota": "200%",
+    "MemoryHigh": "4GiB",
+    "MemoryMax": "6GiB",
+    "TasksMax": 64,
+    "proof_threads": 1,
+    "Elab.async": false
+  },
+  "max_simultaneous_units": 2,
+  "donor_or_dependency_build": false,
+  "official_package_or_companion": false,
+  "scope": "4finitealgebraic publiccertificates+1privateexactPGbranchconsumer; no dualminimum/PG1-PG2/PDE or package gate"
+}

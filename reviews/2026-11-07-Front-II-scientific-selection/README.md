@@ -1,0 +1,7 @@
+# Complete Front II selected before capacity measurement
+
+Root read the complete proposed contract and report, all grouped source aliases and fresh mathematical-use rationales, all six proof groups and every stated incoming/outgoing obligation. Root rehashed all 218 whole source origins and all 67 complete candidate proof environments. The operative full-owned assignment is exactly 052–118; consumed earlier constructor clauses are separate mathematical work at their uses. Full source bodies remain unchanged. Inherited broader roles and old statuses are explicitly nonoperative history.
+
+The selected sources include actual full covariance/wave/Gaussian/source/Young/masked-flow/compact-mean modules, complete current comparisons, actual complementary deductions, mixed adverse reports, and prospective exact primary theorem contexts. Prior author reports are mathematical working to evaluate, not acceptance certificates. Original whole source selection is preserved externally; the bindings here record exact aliases and hashes without machine-specific origin paths.
+
+Before any count Root fixed the allowance at 262144 combined output, 16384 boundary and 32768 system margin, totaling 311296. Pure assembly/count is authorized. Capacity, native framing, provider readiness and generation are not established by this record. Overflow cannot authorize source cuts or reserve reductions. The full 215-proof, thirteen-join original-model goal and every final gate remain unchanged.

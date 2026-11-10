@@ -1,0 +1,66 @@
+{
+  "scope": "Actual report custody and concrete correction needs; no production adoption or independent mathematical verdict created",
+  "actual_grade": "PASS_WITH_NOTES/HIGH",
+  "proof_ledger": [
+    {
+      "id": "PROOF004",
+      "raw_label": "`L:damped-homogeneous-norms` (611\u2013671)",
+      "raw_status": "FULLY_CHECKED"
+    },
+    {
+      "id": "PROOF005",
+      "raw_label": "`L:spatial-wick-measures` (730\u2013872)",
+      "raw_status": "FULLY_CHECKED"
+    },
+    {
+      "id": "PROOF006",
+      "raw_label": "`L:joint-fixed-order` (885\u2013969)",
+      "raw_status": "FULLY_CHECKED"
+    }
+  ],
+  "named_check_disposition": {
+    "raw_statement": "J01\u2013J12: FULLY_CHECKED",
+    "format": "collective range declaration, NOT12individual determinations",
+    "individually_mentioned_ids": [
+      "J01",
+      "J02",
+      "J07",
+      "J08",
+      "J09",
+      "J10",
+      "J12"
+    ],
+    "missing_individual_id_mentions": [
+      "J03",
+      "J04",
+      "J05",
+      "J06",
+      "J11"
+    ],
+    "no_individual_coverage_inferred_from_range": true
+  },
+  "mathematical_error_in_reviewer_repair": {
+    "quoted_claim": "offset kernel is a Schur product of shifted PSD kernels (hence PSD)",
+    "why_false": "A stationary kernel shifted independently in its two arguments generally gives a nonsymmetric cross-kernel, not a PSD kernel on one common index set. Schur product does not repair this.",
+    "simple_counterexample": "K(r)=exp(-abs(r)), shift tau=1: L(0,1)=K(0)=1 while L(1,0)=K(2)=exp(-2), so L is not Hermitian/PSD. For exact source Laplace intervalA=[1,2], same K_A(0)>K_A(2) gives the same failure.",
+    "correct_route_for_future_audit": "Use original stationary covariance bilinear form on separately translated TEST FUNCTIONS; apply Hilbert-space CS, then use translation invariance of each self norm. Do not assert the cross-kernel alone is PSD.",
+    "source_or_target_repair_adopted": false
+  },
+  "explicit_followup_obligations": [
+    "Worked translated-test stationary covariance CS with sign/space/time offsets and each selfnorm",
+    "Explicit distinction auxiliary initial-root horizon caps versus physical unequal terminaltimes; common-terminal reversal needed for actualL2Cauchy",
+    "Requested j2 Brownian pairing/control computation not explicitly displayed; generalDirichlet argument andj1 are present",
+    "Twelve individual named dispositions instead of collective range claim"
+  ],
+  "marked_constant": {
+    "reported": "4k exp(T1+T2) max(1,2N1(1),N2(1))^(2k)",
+    "author_custody_check": "Conservative scalar domination is consistent with N0(1)=1, one markedQ1 factor2N1tail or twoQ2 factorsN2tail\u00b2 andkterms. Does not justify faulty shifted-kernelPSD reasoning."
+  },
+  "scope_limits": [
+    "Text-only source/raster gate open",
+    "No full externalTheorem3.1induction reproof claimed by report",
+    "PROOF009 not targeted",
+    "Full213/global/cold goal unchanged"
+  ],
+  "no_provider_retry": true
+}

@@ -1,0 +1,1795 @@
+{
+  "scope": "Interface audit of selected own proof imports; not certified dependency closure, proof-body rereview or TeX integration clearance",
+  "source_revision": "414758c3f97224092188628f99aaf1094976e60d",
+  "nodes": [
+    {
+      "id": "MAIN",
+      "path": "notes/notes_stratonovich_ham_second_moment.tex",
+      "sha256": "58b092b258d4f363f8bfa0a02dcf492dcb9c13e794dbcab440bf7b0529b53b7d",
+      "lines": 7648,
+      "imports": [],
+      "selected_scope": "Existing canonical mixed-order construction, crude vertex summability and independent T:full-upper; retain full existing proofs.",
+      "audit_status": "IMPORT_INTERFACE_AUDITED_NOT_NEW_PROOF_CERTIFICATION",
+      "section_anchors": [],
+      "explicit_review_paths": []
+    },
+    {
+      "id": "SF",
+      "path": "notes/spectral-mask-covariance-foundation.md",
+      "sha256": "91358c34f5c03b81de7143035973fa2190dfe031ecb163aa28c677cec8f6e8b5",
+      "lines": 309,
+      "imports": [],
+      "selected_scope": "Sections1-4: actual covariance, translated spectral growth and temporal PSD/Schur.",
+      "audit_status": "IMPORT_INTERFACE_AUDITED_NOT_NEW_PROOF_CERTIFICATION",
+      "section_anchors": [
+        {
+          "line": 10,
+          "heading": "## 1. Objects and conventions"
+        },
+        {
+          "line": 39,
+          "heading": "## 2. Uniform translated spectral growth"
+        },
+        {
+          "line": 83,
+          "heading": "## 3. An auxiliary spectral measure for physical masks"
+        },
+        {
+          "line": 149,
+          "heading": "## 4. Actual temporal covariance and completion on the same noise"
+        },
+        {
+          "line": 233,
+          "heading": "## 5. A genuine compact-mask obstruction in the original quotient"
+        },
+        {
+          "line": 289,
+          "heading": "## 6. Consequences and remaining obligations"
+        }
+      ],
+      "explicit_review_paths": []
+    },
+    {
+      "id": "FR",
+      "path": "notes/scalar-frequency-row-bound.md",
+      "sha256": "bb5617c4bbffdd9fba8d5d3507deb72ea85edceaa413a10ee41b3a3669c9f1a6",
+      "lines": 191,
+      "imports": [
+        "SF"
+      ],
+      "selected_scope": "Proposition1 and Corollary2, all original exponents; spectral measure has uniform translated growth.",
+      "audit_status": "IMPORT_INTERFACE_AUDITED_NOT_NEW_PROOF_CERTIFICATION",
+      "section_anchors": [
+        {
+          "line": 9,
+          "heading": "## 1. Explicit hypotheses and target"
+        },
+        {
+          "line": 45,
+          "heading": "## 2. Inverse-Bessel integrals on expanding translated balls"
+        },
+        {
+          "line": 70,
+          "heading": "## 3. The near-frequency contribution"
+        },
+        {
+          "line": 92,
+          "heading": "## 4. The far-frequency contribution and the time scale"
+        },
+        {
+          "line": 139,
+          "heading": "## 5. Scalar time consequence strictly above one half"
+        },
+        {
+          "line": 160,
+          "heading": "## 6. Model use, diagnostics and limits"
+        }
+      ],
+      "explicit_review_paths": []
+    },
+    {
+      "id": "TP",
+      "path": "notes/temporal-phase-bound.md",
+      "sha256": "25a93a3107a25ae24b23fc920a4ead71937e3bc8c3b197fdbbfd2150102c2356",
+      "lines": 192,
+      "imports": [
+        "SF"
+      ],
+      "selected_scope": "Sections1-3: admitted indicators, temporal modulation and wave factors.",
+      "audit_status": "IMPORT_INTERFACE_AUDITED_NOT_NEW_PROOF_CERTIFICATION",
+      "section_anchors": [
+        {
+          "line": 10,
+          "heading": "## 1. Temporal Hilbert space and interval indicators"
+        },
+        {
+          "line": 36,
+          "heading": "## 2. A modulated C1 amplitude"
+        },
+        {
+          "line": 89,
+          "heading": "## 3. Correlated sine and cosine products"
+        },
+        {
+          "line": 113,
+          "heading": "## 4. Continuous sine factors, including zero frequency"
+        },
+        {
+          "line": 170,
+          "heading": "## 5. Exact scope and diagnostic limits"
+        }
+      ],
+      "explicit_review_paths": []
+    },
+    {
+      "id": "AV",
+      "path": "notes/actual-two-variance-forms.md",
+      "sha256": "4612e97d4b8e35af8a30d14592cf022159ace3072f75d2e2e5c685fb9fa03e9a",
+      "lines": 412,
+      "imports": [
+        "SF",
+        "FR",
+        "TP"
+      ],
+      "selected_scope": "Propositions1-2 and basis construction: actual forms and BOTH variance directions, not a random bounded operator.",
+      "audit_status": "IMPORT_INTERFACE_AUDITED_NOT_NEW_PROOF_CERTIFICATION",
+      "section_anchors": [
+        {
+          "line": 9,
+          "heading": "## 1. Objects, phases and precise assertions"
+        },
+        {
+          "line": 85,
+          "heading": "## 2. Actual tests, complex covariance and the auxiliary bound"
+        },
+        {
+          "line": 162,
+          "heading": "## 3. Sobolev adjoint and the full normalized interaction"
+        },
+        {
+          "line": 240,
+          "heading": "## 4. A Hilbert-valued finite Bessel step"
+        },
+        {
+          "line": 268,
+          "heading": "## 5. Both actual variance directions"
+        },
+        {
+          "line": 334,
+          "heading": "## 6. SAME-W mean-square columns, without a pathwise operator claim"
+        },
+        {
+          "line": 385,
+          "heading": "## 7. Controls and the remaining original goal"
+        }
+      ],
+      "explicit_review_paths": []
+    },
+    {
+      "id": "FG",
+      "path": "notes/finite-gaussian-schatten.md",
+      "sha256": "76e1e1583ea9de2356247358b2624f2a9890d5733efb6c9f48b1e6c05bf80b35",
+      "lines": 236,
+      "imports": [],
+      "selected_scope": "Theorem1 and complete finite proof; finite matrix statement, both variances.",
+      "audit_status": "IMPORT_INTERFACE_AUDITED_NOT_NEW_PROOF_CERTIFICATION",
+      "section_anchors": [
+        {
+          "line": 10,
+          "heading": "## 1. Precise finite statement"
+        },
+        {
+          "line": 37,
+          "heading": "## 2. Scalar weighted powers and scalar Holder"
+        },
+        {
+          "line": 77,
+          "heading": "## 3. A Hermitian trace inequality"
+        },
+        {
+          "line": 123,
+          "heading": "## 4. Gaussian integration by parts and the finite moment bound"
+        },
+        {
+          "line": 185,
+          "heading": "## 5. Both variance directions: explicit negative controls"
+        },
+        {
+          "line": 205,
+          "heading": "## 6. Verification boundaries and actual project use"
+        }
+      ],
+      "explicit_review_paths": []
+    },
+    {
+      "id": "CC",
+      "path": "notes/compact-sobolev-cutoff.md",
+      "sha256": "e892a9429c7c4af64ca2a79f8987bbf75a62e756f31b87acc67e4367faf80a70",
+      "lines": 388,
+      "imports": [
+        "FG"
+      ],
+      "selected_scope": "Whole-space compact cutoffs, actual adjoints, finite Gaussian operator upgrade; no periodic replacement of states.",
+      "audit_status": "IMPORT_INTERFACE_AUDITED_NOT_NEW_PROOF_CERTIFICATION",
+      "section_anchors": [
+        {
+          "line": 11,
+          "heading": "## 1. Conventions and statements"
+        },
+        {
+          "line": 86,
+          "heading": "## 2. Weighted mixed Schur estimates and the auxiliary Fourier maps"
+        },
+        {
+          "line": 168,
+          "heading": "## 3. Exact whole-space recovery and singular-value decay"
+        },
+        {
+          "line": 218,
+          "heading": "## 4. The actual balanced adjoints and both compact envelopes"
+        },
+        {
+          "line": 246,
+          "heading": "## 5. Compact positive order and localized variance envelopes"
+        },
+        {
+          "line": 284,
+          "heading": "## 6. Finite Gaussian sums on the actual Hilbert space"
+        },
+        {
+          "line": 331,
+          "heading": "## 7. Whole-space nonzero witness and the missing-cutoff test"
+        },
+        {
+          "line": 364,
+          "heading": "## 8. Controls and remaining project obligations"
+        }
+      ],
+      "explicit_review_paths": []
+    },
+    {
+      "id": "AD",
+      "path": "notes/actual-operator-driver.md",
+      "sha256": "ffc7ff642b17b64eb995a2d7d32610b02b6e24a49ce867a3f2eca9fca2455642",
+      "lines": 565,
+      "imports": [
+        "AV",
+        "CC",
+        "FG",
+        "SF"
+      ],
+      "selected_scope": "Sections1-10: same-W compact-operator Holder driver, both tails and Gaussian moments, fixed mask/horizon.",
+      "audit_status": "IMPORT_INTERFACE_AUDITED_NOT_NEW_PROOF_CERTIFICATION",
+      "section_anchors": [
+        {
+          "line": 11,
+          "heading": "## 1. Objects and precise result"
+        },
+        {
+          "line": 81,
+          "heading": "## 2. The actual test-noise basis, with null directions retained"
+        },
+        {
+          "line": 133,
+          "heading": "## 3. Actual deterministic covariance coefficients"
+        },
+        {
+          "line": 170,
+          "heading": "## 4. Deterministic wave operators, gain, adjoint and localization"
+        },
+        {
+          "line": 235,
+          "heading": "## 5. Finite noise projections and BOTH variance operators"
+        },
+        {
+          "line": 281,
+          "heading": "## 6. First-chaos columns and actual strong covariance tails"
+        },
+        {
+          "line": 329,
+          "heading": "## 7. Finite Schatten estimates and compact domination of the tails"
+        },
+        {
+          "line": 401,
+          "heading": "## 8. Construction on the SAME space and fixed-interval compatibility"
+        },
+        {
+          "line": 436,
+          "heading": "## 9. Actual time-path convergence, including measurability"
+        },
+        {
+          "line": 512,
+          "heading": "## 10. Gaussian growth of the local path norm"
+        },
+        {
+          "line": 532,
+          "heading": "## 11. Controls, boundary failures and remaining original scope"
+        }
+      ],
+      "explicit_review_paths": []
+    },
+    {
+      "id": "SC",
+      "path": "notes/source-operator-convergence.md",
+      "sha256": "e0c344ab16c17135550a9b60a1cad6a43b3fe12c0eeef0f0889fa078f38cc4ae",
+      "lines": 476,
+      "imports": [
+        "AD"
+      ],
+      "selected_scope": "Theorems1-2, Gaussian contraction and given-W-retaining sources; ordinary first response.",
+      "audit_status": "IMPORT_INTERFACE_AUDITED_NOT_NEW_PROOF_CERTIFICATION",
+      "section_anchors": [
+        {
+          "line": 12,
+          "heading": "## 1. Objects, inputs and statements"
+        },
+        {
+          "line": 101,
+          "heading": "## 2. Finite Gaussian comparison for a Banach linear image"
+        },
+        {
+          "line": 125,
+          "heading": "## 3. Actual Gaussian transfer and stability in the FULL path norm"
+        },
+        {
+          "line": 187,
+          "heading": "## 4. Spatial Hilbert space and a given-W-retaining source coupling"
+        },
+        {
+          "line": 268,
+          "heading": "## 5. Exact source law, domination and strong deterministic-test limit"
+        },
+        {
+          "line": 338,
+          "heading": "## 6. Actual regularized fields: continuity and all spatial derivatives"
+        },
+        {
+          "line": 391,
+          "heading": "## 7. Ordinary first-response identification on the common space"
+        },
+        {
+          "line": 442,
+          "heading": "## 8. Source fidelity, controls and remaining original goal"
+        }
+      ],
+      "explicit_review_paths": [
+        "reviews/2026-10-30-source-operator-convergence/."
+      ]
+    },
+    {
+      "id": "FM",
+      "path": "notes/fixed-mask-moment-transfer.md",
+      "sha256": "e926091011af7e967fde95216a4f72dd878bad352069cc9a2530bace6e50294b",
+      "lines": 250,
+      "imports": [
+        "SC",
+        "MAIN"
+      ],
+      "selected_scope": "F1-F3: all mixed/unequal/empty chains; source-point limit and conditional raw average transfer.",
+      "audit_status": "IMPORT_INTERFACE_AUDITED_NOT_NEW_PROOF_CERTIFICATION",
+      "section_anchors": [
+        {
+          "line": 10,
+          "heading": "## 1. Precise scope and inputs"
+        },
+        {
+          "line": 47,
+          "heading": "## 2. Actual finite-chain integrals and Green-before-noise matching"
+        },
+        {
+          "line": 98,
+          "heading": "## 3. All mixed orders, including self-pairings"
+        },
+        {
+          "line": 130,
+          "heading": "## 4. Full source solutions and positive tested observables"
+        },
+        {
+          "line": 193,
+          "heading": "## 5. New full unmasked moment limit and conditional transfer"
+        },
+        {
+          "line": 235,
+          "heading": "## 6. Remaining goal and evidence limits"
+        }
+      ],
+      "explicit_review_paths": []
+    },
+    {
+      "id": "FY",
+      "path": "notes/fixed-mask-young-constant-phase.md",
+      "sha256": "9823d6a1abd42cbd45347e460b301a5ead075ba95439b24babc70fe1adaf7a29",
+      "lines": 433,
+      "imports": [
+        "AD",
+        "SC",
+        "FM"
+      ],
+      "selected_scope": "Y1-Y4: exact E plus two constants, Young growth/stability, source identity and closes F3 premise.",
+      "audit_status": "IMPORT_INTERFACE_AUDITED_NOT_NEW_PROOF_CERTIFICATION",
+      "section_anchors": [
+        {
+          "line": 11,
+          "heading": "## 1. Scope, named inputs and the exact new consumer"
+        },
+        {
+          "line": 46,
+          "heading": "## 2. The distributional phase and full free-wave propagation"
+        },
+        {
+          "line": 112,
+          "heading": "## 3. Actual driver extension, including both constant columns"
+        },
+        {
+          "line": 173,
+          "heading": "## 4. Apply the standard Banach Young estimate at this exact phase"
+        },
+        {
+          "line": 266,
+          "heading": "## 5. Physical evolution and the actual ordinary source solution"
+        },
+        {
+          "line": 349,
+          "heading": "## 6. Construct the raw average and close the exact F3 premise"
+        },
+        {
+          "line": 394,
+          "heading": "## 7. Compact deterministic base and the remaining original goal"
+        }
+      ],
+      "explicit_review_paths": [
+        "reviews/2026-10-31-fixed-mask-young/."
+      ]
+    },
+    {
+      "id": "DS",
+      "path": "notes/direct-event-calibration.md",
+      "sha256": "41091a143e7fb7f6081aadd2475751cf115a3f5ef318965d97ccc72277f79720",
+      "lines": 223,
+      "imports": [
+        "MAIN"
+      ],
+      "selected_scope": "Section1(S)-(M) ONLY: canonical law scaling, all original measures; later scalar calibration is not imported.",
+      "audit_status": "IMPORT_INTERFACE_AUDITED_NOT_NEW_PROOF_CERTIFICATION",
+      "section_anchors": [
+        {
+          "line": 9,
+          "heading": "## 1. The exact full-class weak-noise problem"
+        },
+        {
+          "line": 67,
+          "heading": "## 2. Why the held pathwise theorem cannot fill the gap unchanged"
+        },
+        {
+          "line": 93,
+          "heading": "## 3. Scalar stability with the residual retained"
+        },
+        {
+          "line": 168,
+          "heading": "## 4. A uniform C0 replacement is false"
+        },
+        {
+          "line": 202,
+          "heading": "## 5. The first open SPDE consumer"
+        }
+      ],
+      "explicit_review_paths": [
+        "reviews/2026-10-29-direct-event-calibration/adjudication.md."
+      ]
+    },
+    {
+      "id": "CG",
+      "path": "notes/compact-mean-ground-family.md",
+      "sha256": "b42554059e25aa885602fea8429f2340ede2803d18136e8a996a2e74f25859f2",
+      "lines": 458,
+      "imports": [
+        "FY"
+      ],
+      "selected_scope": "Sections1-8: full-dimensional positive compact-family ground/gap, fractional phase, complementary full wave and common trial.",
+      "audit_status": "IMPORT_INTERFACE_AUDITED_NOT_NEW_PROOF_CERTIFICATION",
+      "section_anchors": [
+        {
+          "line": 10,
+          "heading": "## 1. Exact objects and named inputs"
+        },
+        {
+          "line": 56,
+          "heading": "## 2. Ground existence, uniform gap and H2 continuity"
+        },
+        {
+          "line": 121,
+          "heading": "## 3. Uniform fractional identification of the global phase"
+        },
+        {
+          "line": 157,
+          "heading": "## 4. Complementary wave calculus and its physical identity"
+        },
+        {
+          "line": 226,
+          "heading": "## 5. The actual full-F constant-forcing projection"
+        },
+        {
+          "line": 291,
+          "heading": "## 6. Full-F complementary physical wave and parameter bounds"
+        },
+        {
+          "line": 336,
+          "heading": "## 7. The full original positive tilt: exact mean and variance"
+        },
+        {
+          "line": 394,
+          "heading": "## 8. Common negative trial with the ORIGINAL Psi and cost fixed"
+        },
+        {
+          "line": 442,
+          "heading": "## 9. Completion boundary of this candidate"
+        }
+      ],
+      "explicit_review_paths": [
+        "reviews/2026-10-31-compact-mean-ground/scientific-adjudication-v1.md."
+      ]
+    },
+    {
+      "id": "RB",
+      "path": "notes/raw-block-event-lower.md",
+      "sha256": "4666eed85171e7704ae5ecd3a928dae501f39e49e9c92a3dac8335bd04f748aa",
+      "lines": 610,
+      "imports": [
+        "CG",
+        "AD",
+        "SC",
+        "FY",
+        "FM",
+        "DS"
+      ],
+      "selected_scope": "Sections1-9: actual common noise, raw half-cost, all full blocks/remainder and original point lower.",
+      "audit_status": "IMPORT_INTERFACE_AUDITED_NOT_NEW_PROOF_CERTIFICATION",
+      "section_anchors": [
+        {
+          "line": 10,
+          "heading": "## 1. Exact theorem, spaces and named inputs"
+        },
+        {
+          "line": 59,
+          "heading": "## 2. Actual fast-noise pullbacks and local clocks"
+        },
+        {
+          "line": 100,
+          "heading": "## 3. Separable compact-operator input and the actual mean covariance"
+        },
+        {
+          "line": 162,
+          "heading": "## 4. Gaussian change of law on ALL norm-Borel inputs"
+        },
+        {
+          "line": 204,
+          "heading": "## 5. Actual Young blocks and uniform scaled-maximum estimates"
+        },
+        {
+          "line": 272,
+          "heading": "## 6. New-F indexed cone, every full block and terminal remainder"
+        },
+        {
+          "line": 355,
+          "heading": "## 7. Induced common sources and the actual raw restart identity"
+        },
+        {
+          "line": 442,
+          "heading": "## 8. Actual squared average, Gaussian cost and point comparison"
+        },
+        {
+          "line": 504,
+          "heading": "## 9. Positive event, terminal remainder and original raw lower rate"
+        },
+        {
+          "line": 565,
+          "heading": "## 10. Exact finite reuse and remaining original goal"
+        }
+      ],
+      "explicit_review_paths": [
+        "reviews/2026-10-31-raw-block-event/."
+      ]
+    },
+    {
+      "id": "UL",
+      "path": "notes/unmasked-variational-lower.md",
+      "sha256": "09430721a7afbe42b280c09fc1277a40b2610656106e5a5c2038a6e0ac727f1b",
+      "lines": 378,
+      "imports": [
+        "CG",
+        "RB",
+        "MAIN"
+      ],
+      "selected_scope": "Sections1-6: all positive nonseparable smooth controls, unmasked H1 rate and intrinsic score scaling; finiteness from independent MAIN upper.",
+      "audit_status": "IMPORT_INTERFACE_AUDITED_NOT_NEW_PROOF_CERTIFICATION",
+      "section_anchors": [
+        {
+          "line": 10,
+          "heading": "## 1. Exact class, conclusions and accepted inputs"
+        },
+        {
+          "line": 89,
+          "heading": "## 2. The Gaussian-convolution bound and global smoothness"
+        },
+        {
+          "line": 147,
+          "heading": "## 3. Unmasked operator, exact form domain and the negative rate"
+        },
+        {
+          "line": 211,
+          "heading": "## 4. Monotone masks and the ORIGINAL point lower bound"
+        },
+        {
+          "line": 253,
+          "heading": "## 5. Exact all-dimensional Radon and Rayleigh dilation"
+        },
+        {
+          "line": 293,
+          "heading": "## 6. Positive finite auxiliary scores and the p2 factor"
+        },
+        {
+          "line": 339,
+          "heading": "## 7. Exact old finite consumers, falsification and scope"
+        }
+      ],
+      "explicit_review_paths": [
+        "reviews/2026-10-31-unmasked-variational-target/scientific-adjudication-v1.md."
+      ]
+    },
+    {
+      "id": "TE",
+      "path": "notes/damped-lower-endpoint-bridge.md",
+      "sha256": "fdc87be79511c503440efea07f0ae7cd228b10778bc0e59aee068612b11c4931",
+      "lines": 347,
+      "imports": [],
+      "selected_scope": "Section2 through equation(4) ONLY: self-contained temporal equilibrium identity and its L1/L2 mass. No old d1 stochastic or rough-control consumer.",
+      "audit_status": "IMPORT_INTERFACE_AUDITED_NOT_NEW_PROOF_CERTIFICATION",
+      "section_anchors": [
+        {
+          "line": 12,
+          "heading": "## 1. Actual model and scoped inputs"
+        },
+        {
+          "line": 50,
+          "heading": "## 2. Self-contained temporal potential identity"
+        },
+        {
+          "line": 122,
+          "heading": "## 3. Spatial energy and an actual static-control lower bound"
+        },
+        {
+          "line": 180,
+          "heading": "## 4. The actual damped occupation energy and its upper comparison"
+        },
+        {
+          "line": 242,
+          "heading": "## 5. A rigorous white point, with an exact gain"
+        },
+        {
+          "line": 302,
+          "heading": "## 6. Source dictionary, calibrations and remaining goal"
+        }
+      ],
+      "explicit_review_paths": [
+        "reviews/2026-10-30-damped-lower-bridge/"
+      ]
+    },
+    {
+      "id": "B",
+      "path": "notes/all-dimensional-static-occupation-bridge.md",
+      "sha256": "3e7a5bf8545b5de327e6eed3baca1fbf907dcba698a32b2bb94987cc2108c6f3",
+      "lines": 404,
+      "imports": [
+        "UL",
+        "TE"
+      ],
+      "selected_scope": "Sections2-5: smooth controls, positive finite R_sp, physical H1 four-linear extension and occupation class; temporal identity has no spatial restriction.",
+      "audit_status": "IMPORT_INTERFACE_AUDITED_NOT_NEW_PROOF_CERTIFICATION",
+      "section_anchors": [
+        {
+          "line": 9,
+          "heading": "## 1. Exact model, physical pairings and named inputs"
+        },
+        {
+          "line": 73,
+          "heading": "## 2. Actual smooth time controls for every compact spatial z"
+        },
+        {
+          "line": 122,
+          "heading": "## 3. Actual static controls and a uniform smooth spatial ratio"
+        },
+        {
+          "line": 166,
+          "heading": "## 4. Physical H1 extension, absolute four-linear bound and density"
+        },
+        {
+          "line": 269,
+          "heading": "## 5. Kernel row and full strongly measurable occupation class"
+        },
+        {
+          "line": 336,
+          "heading": "## 6. Original point lower in the explicitly defined energy"
+        },
+        {
+          "line": 362,
+          "heading": "## 7. Calibration, finite evidence and remaining original goal"
+        }
+      ],
+      "explicit_review_paths": [
+        "reviews/2026-10-31-all-dimensional-static-occupation/scientific-adjudication-v1.md."
+      ]
+    },
+    {
+      "id": "C3",
+      "path": "notes/upper-cameron-compactness.md",
+      "sha256": "2e66ab46546d0ad79f717ee87dd62be3010221435ce8dd8c0785905db6a0da51",
+      "lines": 500,
+      "imports": [
+        "B",
+        "CC",
+        "AD",
+        "SC",
+        "FY",
+        "RB"
+      ],
+      "selected_scope": "Sections2-7: actual fractional product and compact mean, tensor identification and raw supported-row covariance. RB use is its Section2 isometry only.",
+      "audit_status": "IMPORT_INTERFACE_AUDITED_NOT_NEW_PROOF_CERTIFICATION",
+      "section_anchors": [
+        {
+          "line": 10,
+          "heading": "## 1. Exact objects, spaces and direct accepted inputs"
+        },
+        {
+          "line": 77,
+          "heading": "## 2. Spatial fractional products and their physical meaning"
+        },
+        {
+          "line": 127,
+          "heading": "## 3. Compact spatial deterministic mean map on the EXACT F"
+        },
+        {
+          "line": 174,
+          "heading": "## 4. Actual tensor identification and supported projections"
+        },
+        {
+          "line": 195,
+          "heading": "## 5. Scalar time covariance: compact mean map without trace class"
+        },
+        {
+          "line": 253,
+          "heading": "## 6. Hilbert-valued bound and the COMPACT time-space mean map"
+        },
+        {
+          "line": 310,
+          "heading": "## 7. Actual residual drivers and completed Cameron identity"
+        },
+        {
+          "line": 413,
+          "heading": "## 8. Exact averaged norm, finite kernel reuse and uniform delta bound"
+        },
+        {
+          "line": 441,
+          "heading": "## 9. White controls obstruct uniform-R fixed smooth projections; scope"
+        }
+      ],
+      "explicit_review_paths": [
+        "reviews/2026-10-31-upper-gaussian-projection-screen/scientific-adjudication-v1.md."
+      ]
+    },
+    {
+      "id": "U",
+      "path": "notes/uniform-e-cameron-regulator.md",
+      "sha256": "c0effd4ffaaabfb5d27bd8dff690655003f9c2c47a625a2a79e8c600d1b6377f",
+      "lines": 377,
+      "imports": [
+        "C3",
+        "SC",
+        "RB"
+      ],
+      "selected_scope": "Uniform-R spatial E means, temporal tensor bound and regulator tails; raw pullback only from RB Section2.",
+      "audit_status": "IMPORT_INTERFACE_AUDITED_NOT_NEW_PROOF_CERTIFICATION",
+      "section_anchors": [
+        {
+          "line": 11,
+          "heading": "## 1. Exact claim, original model and accepted inputs"
+        },
+        {
+          "line": 73,
+          "heading": "## 2. Uniform physical cutoff constants and multiplier norm"
+        },
+        {
+          "line": 99,
+          "heading": "## 3. Translation regularity and the uniform noise-heat tail"
+        },
+        {
+          "line": 144,
+          "heading": "## 4. True spatial frequency projections, including singular measures"
+        },
+        {
+          "line": 176,
+          "heading": "## 5. Dimension-independent time tensor tails"
+        },
+        {
+          "line": 222,
+          "heading": "## 6. Actual uniform-R completed mean regulator"
+        },
+        {
+          "line": 250,
+          "heading": "## 7. Actual projected residual and block Cameron application"
+        },
+        {
+          "line": 355,
+          "heading": "## 8. Evidence limits and original target"
+        }
+      ],
+      "explicit_review_paths": [
+        "reviews/2026-10-31-uniform-e-cameron/",
+        "reviews/2026-10-31-uniform-e-cameron/scientific-adjudication-v1.md.",
+        "reviews/2026-10-31-upper-gaussian-projection-screen/mathlib-finite-holder-type-v1.txt."
+      ]
+    },
+    {
+      "id": "D1",
+      "path": "notes/upper-residual-exponential.md",
+      "sha256": "3da65c6b68b2f8448bf0d891621d329e7e437cf14445d94b488c7ef14abbbe6d",
+      "lines": 350,
+      "imports": [
+        "C3",
+        "AD",
+        "SC",
+        "FY"
+      ],
+      "selected_scope": "Fixed-mask residual exponential estimate and actual first-chaos realization. Retained conservatively for existing GL finiteness dependency.",
+      "audit_status": "IMPORT_INTERFACE_AUDITED_NOT_NEW_PROOF_CERTIFICATION",
+      "section_anchors": [
+        {
+          "line": 11,
+          "heading": "## 1. Objects, accepted inputs and precise claim"
+        },
+        {
+          "line": 88,
+          "heading": "## 2. Actual mean bound and Gaussian law"
+        },
+        {
+          "line": 121,
+          "heading": "## 3. The genuine Cameron space and the ambient Wiener realization"
+        },
+        {
+          "line": 215,
+          "heading": "## 4. Primary concentration theorem, all shifts and zero cases"
+        },
+        {
+          "line": 256,
+          "heading": "## 5. Integrating the tail with the full quadratic retained"
+        },
+        {
+          "line": 306,
+          "heading": "## 6. Limits, controls, proof scope and the next obstruction"
+        }
+      ],
+      "explicit_review_paths": [
+        "reviews/2026-10-31-upper-gaussian-projection-screen/.",
+        "reviews/2026-10-31-upper-residual-exponential/scientific-adjudication-v1.md."
+      ]
+    },
+    {
+      "id": "E1",
+      "path": "notes/upper-young-perturbation.md",
+      "sha256": "0e32e865f2f067c8b019ab70d799d652f0865fea1bdeb1637edc2a9610742951",
+      "lines": 400,
+      "imports": [
+        "FY"
+      ],
+      "selected_scope": "Sections1-3 ONLY: dimension-free multiplicative Young perturbation, any bounded left factor.",
+      "audit_status": "IMPORT_INTERFACE_AUDITED_NOT_NEW_PROOF_CERTIFICATION",
+      "section_anchors": [
+        {
+          "line": 11,
+          "heading": "## 1. Exact statements and direct inputs"
+        },
+        {
+          "line": 106,
+          "heading": "## 2. Refined Young growth and uniform inverse bounds"
+        },
+        {
+          "line": 152,
+          "heading": "## 3. Young conjugation and the multiplicative estimate"
+        },
+        {
+          "line": 199,
+          "heading": "## 4. Actual mean paths, retained head and physical baseline"
+        },
+        {
+          "line": 250,
+          "heading": "## 5. Good/bad mean-block comparison and finite-type reuse"
+        },
+        {
+          "line": 283,
+          "heading": "## 6. Uniform residual exponential estimate on a bounded control ball"
+        },
+        {
+          "line": 332,
+          "heading": "## 7. Actual Gaussian head conditioning and scope of the product"
+        },
+        {
+          "line": 372,
+          "heading": "## 8. Evidence, boundaries and the original target"
+        }
+      ],
+      "explicit_review_paths": [
+        "reviews/2026-10-31-upper-young-perturbation/.",
+        "reviews/2026-10-31-upper-young-perturbation/scientific-adjudication-v1.md."
+      ]
+    },
+    {
+      "id": "EA",
+      "path": "notes/upper-young-perturbation.md",
+      "sha256": "0e32e865f2f067c8b019ab70d799d652f0865fea1bdeb1637edc2a9610742951",
+      "lines": 400,
+      "imports": [
+        "FY",
+        "C3",
+        "D1",
+        "SC"
+      ],
+      "selected_scope": "Sections4-7: fixed-mask nonlinear residual and conditioning consumers used in GL; distinct from E1-only scope.",
+      "audit_status": "IMPORT_INTERFACE_AUDITED_NOT_NEW_PROOF_CERTIFICATION",
+      "section_anchors": [
+        {
+          "line": 11,
+          "heading": "## 1. Exact statements and direct inputs"
+        },
+        {
+          "line": 106,
+          "heading": "## 2. Refined Young growth and uniform inverse bounds"
+        },
+        {
+          "line": 152,
+          "heading": "## 3. Young conjugation and the multiplicative estimate"
+        },
+        {
+          "line": 199,
+          "heading": "## 4. Actual mean paths, retained head and physical baseline"
+        },
+        {
+          "line": 250,
+          "heading": "## 5. Good/bad mean-block comparison and finite-type reuse"
+        },
+        {
+          "line": 283,
+          "heading": "## 6. Uniform residual exponential estimate on a bounded control ball"
+        },
+        {
+          "line": 332,
+          "heading": "## 7. Actual Gaussian head conditioning and scope of the product"
+        },
+        {
+          "line": 372,
+          "heading": "## 8. Evidence, boundaries and the original target"
+        }
+      ],
+      "explicit_review_paths": [
+        "reviews/2026-10-31-upper-young-perturbation/.",
+        "reviews/2026-10-31-upper-young-perturbation/scientific-adjudication-v1.md."
+      ]
+    },
+    {
+      "id": "S",
+      "path": "notes/upper-signed-static.md",
+      "sha256": "18dba5999657f61bda73ac0f7a366835fefb94b5918436160eb58030b190260c",
+      "lines": 390,
+      "imports": [
+        "C3",
+        "FY",
+        "CG"
+      ],
+      "selected_scope": "Sections2-5 rough signed form/spectrum/physical-wave identity. CG Section5(14) supplies bounded full-F forcing/Fubini calculation, not ground-state positivity.",
+      "audit_status": "IMPORT_INTERFACE_AUDITED_NOT_NEW_PROOF_CERTIFICATION",
+      "section_anchors": [
+        {
+          "line": 11,
+          "heading": "## 1. Objects, statements and named inputs"
+        },
+        {
+          "line": 85,
+          "heading": "## 2. The limiting multiplier and its closed form"
+        },
+        {
+          "line": 139,
+          "heading": "## 3. Quarter-power phase and the actual spectral bottom"
+        },
+        {
+          "line": 188,
+          "heading": "## 4. Full spectral wave and an explicit polynomial budget"
+        },
+        {
+          "line": 220,
+          "heading": "## 5. Identify the ROUGH spectral wave with the actual physical flow"
+        },
+        {
+          "line": 296,
+          "heading": "## 6. Bottom continuity and multiplier approximation"
+        },
+        {
+          "line": 317,
+          "heading": "## 7. Actual mean fields and uniform rate averaging"
+        },
+        {
+          "line": 357,
+          "heading": "## 8. Falsification, source and formal boundaries"
+        }
+      ],
+      "explicit_review_paths": [
+        "reviews/2026-10-31-upper-signed-static/.",
+        "reviews/2026-10-31-upper-signed-static/scientific-adjudication-v1.md."
+      ]
+    },
+    {
+      "id": "MB",
+      "path": "notes/upper-mean-block-product.md",
+      "sha256": "51b1b79e66e5e76eb3165b4b33496de6c19ee420a0d5d8394a82b429f8c069f3",
+      "lines": 289,
+      "imports": [
+        "C3",
+        "S",
+        "E1",
+        "FY",
+        "EA"
+      ],
+      "selected_scope": "Fixed-mask mean-product proof used by original GL; not the later uniform-R E theorem.",
+      "audit_status": "IMPORT_INTERFACE_AUDITED_NOT_NEW_PROOF_CERTIFICATION",
+      "section_anchors": [
+        {
+          "line": 11,
+          "heading": "## 1. Exact statement, objects and accepted inputs"
+        },
+        {
+          "line": 78,
+          "heading": "## 2. Explicit polynomial block budgets"
+        },
+        {
+          "line": 105,
+          "heading": "## 3. Actual frozen means, primitive errors and finite Holder reuse"
+        },
+        {
+          "line": 154,
+          "heading": "## 4. Full good blocks: preserve the physical endpoint"
+        },
+        {
+          "line": 185,
+          "heading": "## 5. Bad blocks, the true last remainder, and the quantitative bound"
+        },
+        {
+          "line": 228,
+          "heading": "## 6. Polynomially growing control balls and the large-block limit"
+        },
+        {
+          "line": 251,
+          "heading": "## 7. Evidence and scope of the actual consumer"
+        }
+      ],
+      "explicit_review_paths": [
+        "reviews/2026-10-31-upper-mean-block-product/scientific-adjudication-v1.md."
+      ]
+    },
+    {
+      "id": "GR",
+      "path": "notes/upper-gaussian-operator.md",
+      "sha256": "aa77b85d9a639a4374ca78d98fb9814dc69ea286e134eb6b0f2f1d18bb740df5",
+      "lines": 334,
+      "imports": [
+        "RB",
+        "SC",
+        "FY"
+      ],
+      "selected_scope": "Section2(3) noise-only restart ONLY; does not use its fixed-mask upper rate.",
+      "audit_status": "IMPORT_INTERFACE_AUDITED_NOT_NEW_PROOF_CERTIFICATION",
+      "section_anchors": [
+        {
+          "line": 11,
+          "heading": "## 1. Objects, exact claim and direct accepted inputs"
+        },
+        {
+          "line": 61,
+          "heading": "## 2. Actual global restart, Borel norm and the finite head"
+        },
+        {
+          "line": 128,
+          "heading": "## 3. Score coercivity and the finite scalar tail lemma"
+        },
+        {
+          "line": 152,
+          "heading": "## 4. A coarse bound valid on the ENTIRE unbounded head"
+        },
+        {
+          "line": 195,
+          "heading": "## 5. Bulk head: actual conditioning and finite-dimensional integration"
+        },
+        {
+          "line": 226,
+          "heading": "## 6. Tail head: actual cutoff, density split and normalization"
+        },
+        {
+          "line": 266,
+          "heading": "## 7. The three limits on ONE actual operator moment"
+        },
+        {
+          "line": 306,
+          "heading": "## 8. Verification and original completion boundary"
+        }
+      ],
+      "explicit_review_paths": [
+        "reviews/2026-10-31-upper-gaussian-operator/scientific-adjudication-v1.md."
+      ]
+    },
+    {
+      "id": "GLF",
+      "path": "notes/upper-gaussian-operator.md",
+      "sha256": "aa77b85d9a639a4374ca78d98fb9814dc69ea286e134eb6b0f2f1d18bb740df5",
+      "lines": 334,
+      "imports": [
+        "C3",
+        "D1",
+        "EA",
+        "S",
+        "MB",
+        "GR"
+      ],
+      "selected_scope": "Fixed-delta finite-mask moment finiteness portion of GL as invoked by GC. A direct FY Gaussian/Young deduction may remove this branch after correspondence check.",
+      "audit_status": "IMPORT_INTERFACE_AUDITED_NOT_NEW_PROOF_CERTIFICATION",
+      "section_anchors": [
+        {
+          "line": 11,
+          "heading": "## 1. Objects, exact claim and direct accepted inputs"
+        },
+        {
+          "line": 61,
+          "heading": "## 2. Actual global restart, Borel norm and the finite head"
+        },
+        {
+          "line": 128,
+          "heading": "## 3. Score coercivity and the finite scalar tail lemma"
+        },
+        {
+          "line": 152,
+          "heading": "## 4. A coarse bound valid on the ENTIRE unbounded head"
+        },
+        {
+          "line": 195,
+          "heading": "## 5. Bulk head: actual conditioning and finite-dimensional integration"
+        },
+        {
+          "line": 226,
+          "heading": "## 6. Tail head: actual cutoff, density split and normalization"
+        },
+        {
+          "line": 266,
+          "heading": "## 7. The three limits on ONE actual operator moment"
+        },
+        {
+          "line": 306,
+          "heading": "## 8. Verification and original completion boundary"
+        }
+      ],
+      "explicit_review_paths": [
+        "reviews/2026-10-31-upper-gaussian-operator/scientific-adjudication-v1.md."
+      ]
+    },
+    {
+      "id": "SP",
+      "path": "notes/e-phase-symplectic-baseline.md",
+      "sha256": "e036d1272ba3c356f1ae1142b1b3416b2a0a4e0a6c83e1bf2d319bf547c05642",
+      "lines": 372,
+      "imports": [
+        "AD",
+        "SC",
+        "FY",
+        "C3",
+        "RB"
+      ],
+      "selected_scope": "Sections2-7, especially pure-mean and actual raw E norm baseline. RB Section2 pullback; no independent blocks.",
+      "audit_status": "IMPORT_INTERFACE_AUDITED_NOT_NEW_PROOF_CERTIFICATION",
+      "section_anchors": [
+        {
+          "line": 11,
+          "heading": "## 1. Model, distinct objects and exact new claims"
+        },
+        {
+          "line": 69,
+          "heading": "## 2. The bounded symplectic form and the full free-wave identity"
+        },
+        {
+          "line": 108,
+          "heading": "## 3. Completed covariance means and their actual source coefficients"
+        },
+        {
+          "line": 157,
+          "heading": "## 4. Ordinary source conservation by the bounded interaction equation"
+        },
+        {
+          "line": 194,
+          "heading": "## 5. Noncentered actual Young convergence and raw conservation"
+        },
+        {
+          "line": 248,
+          "heading": "## 6. Norm baseline and actual inverse"
+        },
+        {
+          "line": 264,
+          "heading": "## 7. Exact slow/fast completed block-mean application"
+        },
+        {
+          "line": 349,
+          "heading": "## 8. Finite evidence, zero covariance and remaining goal"
+        }
+      ],
+      "explicit_review_paths": [
+        "reviews/2026-10-31-growing-cone-symplectic/scientific-adjudication-v1.md."
+      ]
+    },
+    {
+      "id": "SA",
+      "path": "notes/radius-stochastic-driver-anchor.md",
+      "sha256": "74c89be3c5392f2592e86ea1a6f33bbf0120361ad5494e59cf42c875344e1ee9",
+      "lines": 329,
+      "imports": [
+        "CC",
+        "AV",
+        "AD",
+        "SC",
+        "RB",
+        "C3"
+      ],
+      "selected_scope": "Sections2-6: radius-explicit compact envelopes and actual FIRST-driver norm tending to zero on the growing-mask scale.",
+      "audit_status": "IMPORT_INTERFACE_AUDITED_NOT_NEW_PROOF_CERTIFICATION",
+      "section_anchors": [
+        {
+          "line": 12,
+          "heading": "## 1. Model, exact assertions and accepted inputs"
+        },
+        {
+          "line": 77,
+          "heading": "## 2. Uniform rescaled periodization and recovery factors"
+        },
+        {
+          "line": 120,
+          "heading": "## 3. Exact whole-space envelope and the small volume power"
+        },
+        {
+          "line": 167,
+          "heading": "## 4. Radius-explicit moments of the ACTUAL first driver"
+        },
+        {
+          "line": 229,
+          "heading": "## 5. Actual covariance contractions and arbitrary deterministic residuals"
+        },
+        {
+          "line": 255,
+          "heading": "## 6. The actual weighted block mean anchor at R_delta"
+        },
+        {
+          "line": 288,
+          "heading": "## 7. Evidence boundary and the remaining original goal"
+        }
+      ],
+      "explicit_review_paths": [
+        "reviews/2026-10-31-radius-stochastic-anchor/scientific-adjudication-v1.md."
+      ]
+    },
+    {
+      "id": "BT",
+      "path": "notes/borell-tube-rayleigh-transfer.md",
+      "sha256": "b52d4199b599b1f74c15952a19deefe7eff1d46071cffb03f3ac9c23b649dfbf",
+      "lines": 427,
+      "imports": [
+        "SA",
+        "C3",
+        "U",
+        "FY",
+        "SC",
+        "GR",
+        "SP"
+      ],
+      "selected_scope": "Full E-law realization, compact mean, closed control tubes, Rayleigh comparison, actual endpoint product and coarse bound. D1 method is explicitly rechecked in Section5.",
+      "audit_status": "IMPORT_INTERFACE_AUDITED_NOT_NEW_PROOF_CERTIFICATION",
+      "section_anchors": [
+        {
+          "line": 12,
+          "heading": "## 1. Abstract objects and the PRIMARY input"
+        },
+        {
+          "line": 52,
+          "heading": "## 2. Compact ball images, closed tubes and least-radius membership"
+        },
+        {
+          "line": 93,
+          "heading": "## 3. Rayleigh comparison for all monotone envelopes,including jumps"
+        },
+        {
+          "line": 130,
+          "heading": "## 4. Original wave input,compatible parameters and exact covariance"
+        },
+        {
+          "line": 198,
+          "heading": "## 5. The genuine E-law Wiener realization and the typical ball"
+        },
+        {
+          "line": 276,
+          "heading": "## 6. The actual endpoint functional and a uniform coarse envelope"
+        },
+        {
+          "line": 361,
+          "heading": "## 7. Exact Rayleigh tail budget and the raw half-action supremum"
+        },
+        {
+          "line": 396,
+          "heading": "## 8. Evidence and remaining original scope"
+        }
+      ],
+      "explicit_review_paths": [
+        "reviews/2026-10-31-borell-tube-transfer/scientific-adjudication-v1.md."
+      ]
+    },
+    {
+      "id": "US",
+      "path": "notes/uniform-e-spectral-products.md",
+      "sha256": "649a39f671ff4868b84baa4607457b42158a4ed4e38b6d72f3420f1f59ab41d2",
+      "lines": 464,
+      "imports": [
+        "C3",
+        "U",
+        "S",
+        "E1",
+        "SP"
+      ],
+      "selected_scope": "Sections2-8: actual rough signed E rate, uniform averaging, polynomial-radius mean product and arbitrary small residual.",
+      "audit_status": "IMPORT_INTERFACE_AUDITED_NOT_NEW_PROOF_CERTIFICATION",
+      "section_anchors": [
+        {
+          "line": 12,
+          "heading": "## 1. Exact objects and imported inputs"
+        },
+        {
+          "line": 71,
+          "heading": "## 2. The actual E closure,unique potential and fixed-R lift"
+        },
+        {
+          "line": 113,
+          "heading": "## 3. E-only form,quarter phase and exact spectral rate"
+        },
+        {
+          "line": 212,
+          "heading": "## 4. Uniform scalar-time averaging and integrated rates"
+        },
+        {
+          "line": 260,
+          "heading": "## 5. E-only primitive,Young and mean-baseline budgets"
+        },
+        {
+          "line": 305,
+          "heading": "## 6. Full good/bad blocks and true last cell"
+        },
+        {
+          "line": 362,
+          "heading": "## 7. Polynomial control balls and deterministic suprema"
+        },
+        {
+          "line": 389,
+          "heading": "## 8. Arbitrary residuals: good/bad comparison and max1 ordered product"
+        },
+        {
+          "line": 438,
+          "heading": "## 9. Evidence and remaining original objective"
+        }
+      ],
+      "explicit_review_paths": [
+        "reviews/2026-10-31-uniform-e-spectral-product/scientific-adjudication-v1.md."
+      ]
+    },
+    {
+      "id": "GC",
+      "path": "notes/growing-cone-point-upper-transfer.md",
+      "sha256": "94f6af931618c468e97e34e4c3d277c4d12be6d8c9398d503487bacbea003cc5",
+      "lines": 429,
+      "imports": [
+        "FM",
+        "FY",
+        "SC",
+        "RB",
+        "DS",
+        "GLF"
+      ],
+      "selected_scope": "Original canonical point/source-first/all-chain identity to actual E flow, polynomial data cost, fixed-delta finiteness and stationarity.",
+      "audit_status": "IMPORT_INTERFACE_AUDITED_NOT_NEW_PROOF_CERTIFICATION",
+      "section_anchors": [
+        {
+          "line": 11,
+          "heading": "## 1. Original model, geometry and exact new claim"
+        },
+        {
+          "line": 99,
+          "heading": "## 2. Actual E/F restriction, measurability and fixed-parameter moments"
+        },
+        {
+          "line": 150,
+          "heading": "## 3. Same retaining source and exact fast law"
+        },
+        {
+          "line": 205,
+          "heading": "## 4. Compact-data ordinary source displacement is a scalar mild solution"
+        },
+        {
+          "line": 268,
+          "heading": "## 5. Exact equality throughout the cone and the squared spatial average"
+        },
+        {
+          "line": 316,
+          "heading": "## 6. Source limits, canonical point law and the E operator upper"
+        },
+        {
+          "line": 369,
+          "heading": "## 7. Polynomial data cost and limiting reduction"
+        },
+        {
+          "line": 392,
+          "heading": "## 8. Zero covariance, calibrations and finite-evidence boundary"
+        }
+      ],
+      "explicit_review_paths": [
+        "reviews/2026-10-31-growing-cone-point-transfer/scientific-adjudication-v1.md."
+      ]
+    },
+    {
+      "id": "UR",
+      "path": "notes/rayleigh-signed-moment-upper.md",
+      "sha256": "6553d830506829ee8bbde682a6b88febbf2805e7cc4b8dce8832797432440de0",
+      "lines": 306,
+      "imports": [
+        "US",
+        "BT",
+        "GC",
+        "SA"
+      ],
+      "selected_scope": "Original point limsup bounded by growing-mask signed raw score; order delta then B, same endpoint at every B.",
+      "audit_status": "IMPORT_INTERFACE_AUDITED_NOT_NEW_PROOF_CERTIFICATION",
+      "section_anchors": [
+        {
+          "line": 13,
+          "heading": "## 1. Original model,fixed choices and the same physical endpoint"
+        },
+        {
+          "line": 74,
+          "heading": "## 2. Signed raw score,coercivity and its moving limsup"
+        },
+        {
+          "line": 99,
+          "heading": "## 3. Generic functional,Gaussian tube and a polynomial coarse bound"
+        },
+        {
+          "line": 149,
+          "heading": "## 4. Uniform fulltuple error on control balls"
+        },
+        {
+          "line": 177,
+          "heading": "## 5. Finite-delta compact-radius integral and exact tail"
+        },
+        {
+          "line": 209,
+          "heading": "## 6. The two limits on ONE actual moment"
+        },
+        {
+          "line": 243,
+          "heading": "## 7. Original canonical point moment,all Stratonovich chains"
+        },
+        {
+          "line": 276,
+          "heading": "## 8. Zero covariance,evidence and original scope"
+        }
+      ],
+      "explicit_review_paths": [
+        "reviews/2026-10-31-rayleigh-signed-moment/scientific-adjudication-v1.md."
+      ]
+    },
+    {
+      "id": "PG",
+      "path": "notes/positive-gram-variational-comparison.md",
+      "sha256": "5ae2e701fda361a12b41fd10d6f4ed0adddc08c07a3b4bf938d70d6fdbd24da1",
+      "lines": 255,
+      "imports": [],
+      "selected_scope": "PG1-PG2 full finite analytic optimization; positive conic maximizer and ENTRYWISE Gram comparison, not just finite Lean algebra.",
+      "audit_status": "IMPORT_INTERFACE_AUDITED_NOT_NEW_PROOF_CERTIFICATION",
+      "section_anchors": [
+        {
+          "line": 15,
+          "heading": "## 1. Exact statement and conventions"
+        },
+        {
+          "line": 47,
+          "heading": "## 2. Scalar square-root inequality and exact Hilbert algebra"
+        },
+        {
+          "line": 74,
+          "heading": "## 3. Positive-weight dual: coercivity,barrier and attained minimum"
+        },
+        {
+          "line": 114,
+          "heading": "## 4. Full positive-part score: active upper bound and matching lower"
+        },
+        {
+          "line": 158,
+          "heading": "## 5. Analytic global-radius justification and exact small controls"
+        },
+        {
+          "line": 182,
+          "heading": "## 6. Every PSD matrix has a real Gram realization"
+        },
+        {
+          "line": 203,
+          "heading": "## 7. Entrywise comparison,including changing zero-label eligibility"
+        },
+        {
+          "line": 229,
+          "heading": "## 8. Evidence,fidelity and remaining original objective"
+        }
+      ],
+      "explicit_review_paths": [
+        "reviews/2026-10-31-positive-gram-variational/scientific-adjudication-v1.md."
+      ]
+    },
+    {
+      "id": "PB",
+      "path": "notes/physical-signed-positive-score-comparison.md",
+      "sha256": "bcbcee7c15669e2b4046914d6d13e35758e54706f58ecba7e0e895454282f8a5",
+      "lines": 358,
+      "imports": [
+        "U",
+        "US",
+        "PG",
+        "UR",
+        "UL"
+      ],
+      "selected_scope": "PB0-PB5: actual raw labels, uniform optimizer norm BEFORE averaging, positive smoothing, signed score comparison and original exact point limit.",
+      "audit_status": "IMPORT_INTERFACE_AUDITED_NOT_NEW_PROOF_CERTIFICATION",
+      "section_anchors": [
+        {
+          "line": 14,
+          "heading": "## 1. Exact model, inputs and conclusions"
+        },
+        {
+          "line": 78,
+          "heading": "## 2. Actual raw membership and mean of nonseparable smooth controls"
+        },
+        {
+          "line": 150,
+          "heading": "## 3. Finite normalized raw labels and actual Gram comparison"
+        },
+        {
+          "line": 187,
+          "heading": "## 4. Noncircular uniform norm bound and positive smoothing"
+        },
+        {
+          "line": 231,
+          "heading": "## 5. Signed scores bounded by the accepted positive score"
+        },
+        {
+          "line": 280,
+          "heading": "## 6. Cutoff removal for a fixed control and for optimized scores"
+        },
+        {
+          "line": 306,
+          "heading": "## 7. Same original point limit and exact scope of the conclusion"
+        },
+        {
+          "line": 333,
+          "heading": "## 8. Necessary d1 ceiling consequence and retained source qualification"
+        }
+      ],
+      "explicit_review_paths": [
+        "reviews/2026-10-31-physical-score-comparison/scientific-adjudication-v1.md."
+      ]
+    },
+    {
+      "id": "OC",
+      "path": "notes/all-model-occupation-ceiling.md",
+      "sha256": "9d7ff55b461cd13bfdce60a533b1bf7627ac6af64be2fe3ece1648ea1e90027c",
+      "lines": 320,
+      "imports": [
+        "B",
+        "U",
+        "PB",
+        "UL",
+        "TE"
+      ],
+      "selected_scope": "Full occupation/H1 embedding and intrinsic constant ceiling; common spatial-energy bracket. Optional source-shaped strict gap algebra is separate.",
+      "audit_status": "IMPORT_INTERFACE_AUDITED_NOT_NEW_PROOF_CERTIFICATION",
+      "section_anchors": [
+        {
+          "line": 11,
+          "heading": "## 1. Exact model, prior inputs and the derived constant"
+        },
+        {
+          "line": 81,
+          "heading": "## 2. Full-H1 squares in the ACTUAL spatial and raw completions"
+        },
+        {
+          "line": 137,
+          "heading": "## 3. Finite occupation energy, dilation and exact ratio identity"
+        },
+        {
+          "line": 179,
+          "heading": "## 4. Countable Rayleigh near-occupations in every original dimension"
+        },
+        {
+          "line": 215,
+          "heading": "## 5. The computed scalar coefficient and original moment ceiling"
+        },
+        {
+          "line": 254,
+          "heading": "## 6. Comparisons are consequences, not prescribed answers"
+        },
+        {
+          "line": 303,
+          "heading": "## 7. Calibration and evidence boundaries"
+        }
+      ],
+      "explicit_review_paths": [
+        "reviews/2026-10-31-all-model-occupation-ceiling/scientific-adjudication-v1.md."
+      ]
+    },
+    {
+      "id": "GI",
+      "path": "notes/global-d1-damped-lower.md",
+      "sha256": "69f681a9a63779c76e0c2be743794a75646a18d467b463c113a44cf1106358b3",
+      "lines": 345,
+      "imports": [
+        "TE"
+      ],
+      "selected_scope": "Section3 equation(5) and named Gamma inputs ONLY: duplication from positive Beta integral, recurrence and Gamma(1/2). No d1 SPDE consumer or global Omega argument.",
+      "audit_status": "IMPORT_INTERFACE_AUDITED_NOT_NEW_PROOF_CERTIFICATION",
+      "section_anchors": [
+        {
+          "line": 12,
+          "heading": "## 1. Actual statement and scoped imports"
+        },
+        {
+          "line": 54,
+          "heading": "## 2. A positive Taylor kernel majorant"
+        },
+        {
+          "line": 89,
+          "heading": "## 3. Elementary Gamma estimates with exact constants"
+        },
+        {
+          "line": 174,
+          "heading": "## 4. Exact Gamma identity and an actual rational envelope"
+        },
+        {
+          "line": 229,
+          "heading": "## 5. Exact positivity certificates on two rational intervals"
+        },
+        {
+          "line": 293,
+          "heading": "## 6. The original point lower bound on the full d1 range"
+        }
+      ],
+      "explicit_review_paths": [
+        "reviews/2026-10-30-global-omega/"
+      ]
+    },
+    {
+      "id": "WS",
+      "path": "notes/white-spatial-evaluation.md",
+      "sha256": "9e5a200a511254a697706d1c56126b8d971742b744de381471567440221973dd",
+      "lines": 218,
+      "imports": [
+        "PB",
+        "OC",
+        "B",
+        "GI"
+      ],
+      "selected_scope": "Full real unit H1 CDF-square proof, exact white spatial energy, Gamma-function bound evaluations and ratio; only d1 alpha1 for this example.",
+      "audit_status": "IMPORT_INTERFACE_AUDITED_NOT_NEW_PROOF_CERTIFICATION",
+      "section_anchors": [
+        {
+          "line": 14,
+          "heading": "## 1. Exact model, imports and statements"
+        },
+        {
+          "line": 61,
+          "heading": "## 2. Full-H1 representatives and the CDF square identity"
+        },
+        {
+          "line": 103,
+          "heading": "## 3. Sharp spatial ratio and energy, including the kernel consumers"
+        },
+        {
+          "line": 148,
+          "heading": "## 4. Actual moment bounds and the zero case"
+        },
+        {
+          "line": 165,
+          "heading": "## 5. A sharp uniform relative-width bound for the two formulas"
+        },
+        {
+          "line": 192,
+          "heading": "## 6. Proof, computation and formalization boundaries"
+        }
+      ],
+      "explicit_review_paths": [
+        "reviews/2026-10-31-white-spatial-evaluation/scientific-adjudication-v1.md."
+      ]
+    }
+  ],
+  "topological_order": [
+    "MAIN",
+    "SF",
+    "FG",
+    "TE",
+    "PG",
+    "FR",
+    "TP",
+    "CC",
+    "DS",
+    "GI",
+    "AV",
+    "AD",
+    "SC",
+    "FM",
+    "FY",
+    "CG",
+    "E1",
+    "RB",
+    "UL",
+    "GR",
+    "B",
+    "C3",
+    "U",
+    "D1",
+    "S",
+    "SP",
+    "SA",
+    "EA",
+    "BT",
+    "US",
+    "MB",
+    "GLF",
+    "GC",
+    "UR",
+    "PB",
+    "OC",
+    "WS"
+  ],
+  "file_count": 35,
+  "alias_omission_found": {
+    "alias": "SA",
+    "path": "notes/radius-stochastic-driver-anchor.md",
+    "absent_from_initial_inventory": true,
+    "reason": "BT/UR use alias and source revision rather than literal filename"
+  },
+  "new_source_paths_relative_to_inventory_v2": [
+    "notes/actual-two-variance-forms.md",
+    "notes/compact-sobolev-cutoff.md",
+    "notes/damped-lower-endpoint-bridge.md",
+    "notes/direct-event-calibration.md",
+    "notes/e-phase-symplectic-baseline.md",
+    "notes/finite-gaussian-schatten.md",
+    "notes/global-d1-damped-lower.md",
+    "notes/radius-stochastic-driver-anchor.md",
+    "notes/scalar-frequency-row-bound.md",
+    "notes/spectral-mask-covariance-foundation.md",
+    "notes/temporal-phase-bound.md",
+    "notes/upper-gaussian-operator.md",
+    "notes/upper-mean-block-product.md",
+    "notes/upper-residual-exponential.md",
+    "notes/upper-signed-static.md",
+    "notes/upper-young-perturbation.md"
+  ],
+  "circularity_guard": "UL and spatial R_sp finiteness use independent existing MAIN T:full-upper, never UR/PB/OC",
+  "limits": "Acyclicity validates declared import order only; completeness requires source/body and review/correspondence checks",
+  "remaining": [
+    "Read complete selected proof bodies and cross-check native required-source manifests for aliases not spelled as filenames.",
+    "Choose whether to retain GLF dependency branch or prove the direct fixed-parameter Gaussian/Young finiteness deduction and review its correspondence.",
+    "Integrate full selected statements and proofs into TeX, bind source labels and validate the PDF.",
+    "Whole-argument skeptic, final independent cold reader, calibrated source comparisons and delivery gates remain open."
+  ]
+}

@@ -1,0 +1,1462 @@
+Derived text of assigned exact PDF pages only; extraction can garble mathematics. Actual PNG inspection is mandatory. No mathematical proof is supplied by this carrier.
+
+===== PHYSICAL PAGE 73 =====
+Lemma 12.1 (A complex phase bound). Let H be a complex Hilbert space, A0 a bounded
+nonnegative selfadjoint operator, and B a bounded selfadjoint operator. Write Aρ =
+ρ2 + A0 . Suppose that, for 0 < a < 1 and d > 0,
+
+                              ∥A−1/2
+                                ρ    BA−1/2
+                                       ρ    ∥ ≤ dρa−2 ,        ρ > 0.                           (12.2)
+
+Put                  ∫︂ ∞
+              Ia =          s−1/2 (1 + s)(a−3)/2 ds,     δa = min{1/4, π/(8Ia )}.
+                      0
+
+For λ > 0 and |z| ≤ δa λ2−a /d, let L = A0 − zB. The phase propagator of u′′ + Lu = 0
+satisfies
+                                                                      −1/2
+      ∥Mz (h)∥Xλ →Xλ ≤ 100e2λh ,            ∥(f, g)∥2Xλ = ∥f ∥2 + ∥Aλ        g∥2 ,   h ≥ 0.     (12.3)
+
+The constant is independent of H, ∥A0 ∥ and ∥B∥.
+
+Proof. Set δ = δa and Lλ = L + λ2 . For κ = (λ2 + t)1/2 ,
+
+                  Lλ + t = A1/2          1/2
+                            κ (1 − zKκ )Aκ ,              Kκ = A−1/2
+                                                                κ    BA−1/2
+                                                                       κ    .
+
+Since a − 2 < 0, ∥zKκ ∥ ≤ δ. Thus these operators are invertible and
+
+                                              −1             1
+                                  ∥A1/2
+                                    κ (Lλ + t) ∥ ≤                .
+                                                         (1 − δ)κ
+
+Also Re⟨Lλ u, u⟩ ≥ (1 − δ)⟨Aλ u, u⟩.
+    Principal ∫︁inverse square roots are defined on the right half-plane. The scalar identity
+  −1/2           ∞
+w      = π −1 0 t−1/2 (w + t)−1 dt, and bounded holomorphic calculus, give
+
+                   1 ∞ −1/2 1/2 [︁
+                     ∫︂
+                                                                             1/2 −1/2
+                              Aλ (Lλ + t)−1 − (Aλ + t)−1 dt,
+                                                            ]︁
+       Qz − 1 =           t                                           Qz = Aλ Lλ .
+                   π 0
+                                                                                         1/2   −1/2
+The integrals converge in operator norm. Indeed, the resolvent identity, ∥Aλ Aκ                       ∥≤
+1, and the following ordered factorization give the required integrand bound:
+                         1/2 [︁
+                        Aλ (Lλ + t)−1 − A−1
+                                               ]︁
+                                             κ
+                                      1/2
+                                  = Aλ A−1/2
+                                        κ    (1 − zKκ )−1 zKκ A−1/2
+                                                               κ    .
+
+The four factors have norms at most 1, (1 − δ)−1 , |z|dκa−2 and κ−1 , respectively. Thus,
+the integrand without t−1/2 /π is bounded by
+
+                                              |z|d a−3
+                                                  κ .
+                                              1−δ
+Consequently,
+                                                 |z|dλa−2 Ia  1
+                                  ∥Qz − 1∥ ≤                 ≤ .
+                                                  π(1 − δ)    6
+
+                                                  73
+
+===== PHYSICAL PAGE 74 =====
+In particular, Qz and Q−1                                                   ∗
+                       z have norm at most two. Apply the same argument to L =
+A0 − zB and take adjoints. It follows that all four operators
+                      1/2     −1/2        −1/2    1/2         1/2   −1/2        −1/2    1/2
+                    Aλ Lλ            ,   Lλ      Aλ ,        Lλ Aλ         ,   Aλ      Lλ     (12.4)
+
+have norm at most two. This is a quantitative comparison at the bounded cutoffs, not
+an assumed square-root domain identity.
+                                                                     1/2
+    We next control the numerical range. For ∥u∥ = 1 put s = ∥A0 u∥. Optimiz-
+ing (12.2) at ρ = s gives |⟨Bu, u⟩| ≤ 2dsa . If s = 0, the same conclusion follows by
+letting ρ ↓ 0. Separately, evaluating (12.2) at ρ = λ gives
+
+                 |⟨Bu, u⟩| ≤ dλa−2 (s2 + λ2 ),                 |z⟨Bu, u⟩| ≤ δ(s2 + λ2 ).
+
+This is the estimate for the real part; the optimized estimate controls the imaginary
+part. Thus, for w = x + iy = ⟨Lu, u⟩,
+
+                      x + λ2 ≥ (1 − δ)(s2 + λ2 ),                   |y| ≤ 2δλ2−a sa .
+
+Since s2a λ2−2a ≤ s2 + λ2 ,
+                          4δ 2 2           1
+                  y2 ≤        λ (x + λ2 ) ≤ λ2 (x + λ2 ),                      x ≥ −λ2 /4.
+                         1−δ               3
+                                                          √
+Hence |w| ≤ x + 2λ2 , and either square root of w has | Im w| ≤ λ.
+    The scalar functions
+                                                 √                               √
+               √                  √         sin(h w)                  w     sin(h w)
+Ch (w) = cos(h w),       Fh (w) = w + λ   2    √     ,    Hh (w) = √           √
+                                                 w                   w + λ2      w
+
+are holomorphic on a neighborhood of W (L). The values at w = 0 are removable; the
+only square-root branch required is that of w + λ2 , whose real part is positive. On the
+numerical range,
+
+             |Ch (w)| ≤ eλh ,   |Fh (w)| ≤ 2(1 + λh)eλh , |Hh (w)| ≤ 2eλh .
+              √                        √           √
+Indeed, | Im w| ≤ λ gives | cos(h w)|, | sin(h w)| ≤ eλh . The entire identity
+     √     √        ∫︁ h      √
+sin(h w)/ w = 0 cos(r w) dr also gives the bound heλh , including w = 0. If
+|w| ≤ λ2 /2, then                           √︁
+                                 |Fh (w)| ≤ 3/2 λheλh .
+                                                       √
+If |w| > λ2 /2, then |w + λ2 |/|w| ≤ 3, so |Fh (w)| ≤ 3eλh . These bounds imply the
+displayed estimate for Fh . Finally,
+                       |w|             λ2
+                           2
+                             ≤ 1 +        2
+                                             ≤ 1 + (1 − δ)−1 ≤ 7/3,
+                    |w + λ |        |w + λ |
+               √        √    √
+and Hh (w) = w sin(h w)/ w + λ2 gives its stated bound. All identities have their
+removable values at zero. Applying the imported (12.1) gives bounds 3eλh , 6(1 + λh)eλh
+and 6eλh for these three operator functions.
+
+                                                        74
+
+===== PHYSICAL PAGE 75 =====
+                                                   −1/2
+   Under the isometry (u, v) ↦→ (u, Aλ                    v), the four phase blocks are
+                           −1/2    1/2             −1/2    1/2              −1/2    1/2            −1/2    1/2
+      Ch (L),    Fh (L)Lλ         Aλ ,      −Aλ           Lλ Hh (L),     Aλ        Lλ Ch (L)Lλ            Aλ .
+                         (︂
+                            Ch (L) Gh (L)
+                                             )︂                       √    √
+This is the usual matrix −LG   h (L) C h (L)    , with Gh (w) = sin(h   w)/  w, after weighting.
+In the order displayed, the four block norms are at most
+
+                       3eλh ,           12(1 + λh)eλh ,           12eλh ,       12eλh .
+
+For example, the last block has two root-comparison factors of norm at most two, with
+Ch (L) between them. Only functions of L commute; no commutation with Aλ is used
+in these ordered products. A block operator on H ⊕ H has norm at most the sum of
+its four block norms, by the triangle inequality and the norm-one coordinate inclusions
+and projections. Therefore, its norm is at most
+
+                           (39 + 12λh)eλh ≤ 39(1 + λh)eλh ≤ 100e2λh .
+
+The phase operator itself is the exponential of the bounded block generator with rows
+(0, 1) and (−L, 0). It is entire in z; the intermediate square roots are used to estimate
+it, not to impose a branch-dependent definition of that entire operator. This proves
+Lemma 12.1.
+
+Lemma 12.2 (Gaussian cutoff form bound). Retain the covariance and Rα of Sec-
+tion 11. Fix ϵ > 0. Represent the smoothed real field on independent standard Gaussian
+coordinates as Wϵ (x) = i≥1 gi ei (x) in L2 (Ω). Let PN be projection onto Gaussian Her-
+                        ∑︁
+mite degrees at most N , and Sb spatial Fourier projection onto |η| ≤ b. For finite m, on
+their joint range set
+                                              m
+                                          (︂ ∑︂          )︂
+                    BN,m,b = PN Sb                 gi Mei Sb PN ,           Aρ = ρ2 − ∆.
+                                             i=1
+
+These are bounded selfadjoint operators and, uniformly in ϵ, m, b,
+                                                          √         √︁
+             ∥A−1/2
+                ρ   B N,m,b A −1/2
+                              ρ    ∥ ≤ dN ρα/2−2
+                                                 , dN =  2   N  +  1  Rα .                                       (12.5)
+
+Proof. Choose an orthonormal basis
+                                 ∑︁ of the  real isonormal space, which is separable, and
+                                          2                                 √
+write ei (x) = E[Wϵ (x)gi ]. Then i ei (x) = Γϵ (0) =: vϵ , and |ei (x)| ≤ vϵ . Thus each
+                                                              −1/2       −1/2
+multiplication Mei is bounded and selfadjoint. Put Hi = Aρ Mei Aρ             on spatial L2 .
+Gaussian isometry and spatial Plancherel give
+                                                                                               2
+                                         |fˆ︁(η)|2                                        e−ϵ|ξ| µ( dξ)
+                                   ∫︂                                                ∫︂
+        ∑︂                   1
+             ∥Hi f ∥22 =                           Jρ,ϵ (η) dη,         Jρ,ϵ (η) =                      .
+         i
+                           (2π)3        ρ2 + |η|2                                         ρ2 + |η + ξ|2
+
+                                                     −1/2        −1/2
+            covariance calculation for Aρ Wϵ Aρ f . By Lemma 11.1, Jρ,ϵ ≤ Rα ρα−2 .
+This is the∑︁
+                2         α−4
+Therefore    i Hi ≤ Rα ρ      I in quadratic forms. Finite sums have the same upper
+
+                                                           75
+
+===== PHYSICAL PAGE 76 =====
+bound. Compression to Sb preserves it: for selfadjoint Hi , (Sb Hi Sb )2 ≤ Sb Hi2 Sb on its
+range. Both row and column variances are the same, since these operators are selfadjoint.
+     For completeness, use
+                        √ normalized Hermite
+                                         √        polynomials, so multiplication by gi is
+  ∗
+a
+∑︁i + ai , with gi hk√=
+      ∗
+                          ki + 1 hk+ei + ki hk−ei . On degree∑︁ ∗k, the row map (vi ) ↦→
+     a  v
+    i i i has norm    k + 1: its product with its adjoint is   i ai ai = (k + 1)I on degree
+k + 1. Composing
+           √     √ with the column of spatial operators Sb Hi Sb bounds the creation
+part by k + 1 Rα ρ(α−4)/2 . Distinct input degrees have orthogonal output degrees.
+The annihilation part is its adjoint, with the same bound after truncation. Adding
+them on degrees at most N proves (12.5). Boundedness of −∆ on Sb is explicit; no
+infinite-frequency operator theorem was used. This proves Lemma 12.2.
+Lemma 12.3 (Exact cutoffs for finite Gaussian words). Let gij , 1 ≤ i ≤ M , 1 ≤ j ≤ mi ,
+be independent standard real Gaussian coordinates, grouped by color i, and let X be a
+complex Hilbert space. On Gaussian polynomials with coefficients in X set
+                                             mi
+                                             ∑︂
+                                      Ji =         Mgij ⊗ Kij ,
+                                             j=1
+
+where each Kij is bounded on X . Let F0 , . . . , Fn be bounded operators acting only on
+X . Fix a word i1 , . . . , in , and let ri be the number of its occurrences of color i. If Ni ≥ ri
+and P projects each color onto total Hermite degree at most Ni , then, for every v ∈ X ,
+                  (I ⊗ Fn )(P Jin P )(I ⊗ Fn−1 ) · · · (P Ji1 P )(I ⊗ F0 )(1 ⊗ v)
+                                                                                            (12.6)
+                       = (I ⊗ Fn )Jin (I ⊗ Fn−1 ) · · · Ji1 (I ⊗ F0 )(1 ⊗ v).
+The equality holds for finite sums and for Bochner integrals of such words whenever the
+displayed vector integrals exist.
+Proof.  In normalized Hermite coordinates, multiplication by gij maps ha to
+√︁                 √
+   aij + 1 ha+eij + aij ha−eij ; the second term is zero if aij = 0. Thus it changes the total
+degree of color i by one and leaves all other color degrees unchanged. The operators
+I ⊗ Fl leave every Gaussian degree unchanged. After the first l insertions, the uncom-
+pressed word therefore has color-i degree at most ri (l) = |{j ≤ l : ij = i}| ≤ ri ≤ Ni .
+This is an induction starting from degree zero in every color. Consequently P is the
+identity both before and after every insertion along that word. Induction on l now
+proves (12.6). The lowering term has been retained: the assertion includes creation
+followed by annihilation and all resulting self-contractions. Linearity and equality of
+the vector integrands prove the last assertion. This is an equality of selected finite
+words, not of full propagators at a fixed cutoff. This proves Lemma 12.3.
+Proposition 12.4 (All regularized static phase orders). Retain the full covariance class
+of Section 11. For real Schwartz f, g, let Znϵ (h) be the nth regularized static Duhamel
+phase, with the recursion (11.5) for every n ≥ 0. This is an ordinary Gaussian polyno-
+mial of degree at most n, including self-contractions; it is not a pure Wick chaos. There
+is an explicit finite constant                 √
+                                            400 2 e2
+                                     Aα =
+                                              δα/2
+
+                                                   76
+
+===== PHYSICAL PAGE 77 =====
+such that, for n ≥ 1, uniformly in ϵ > 0,
+                                                  √
+                                              Rα )n h(4−α)n/2
+                                            (Aα
+                    ∥Znϵ (h)∥L2 (Ω;X1/h ) ≤                   ∥(f, g)∥1/h .           (12.7)
+                                            (n!)(3−α)/2
+                                                                     n ϵ                   2
+                                                            ∑︁
+At every fixed positive smoothing and real coupling σ,         n≥0 σ Zn (h) converges in L
+phase. Its squared norm is at most
+              √
+             ( e + 2)2 exp 6A2/(3−α) (|σ|2 Rα )1/(3−α) h(4−α)/(3−α) ∥(f, g)∥21/h .
+                          {︁                                       }︁
+                              α                                                       (12.8)
+Proof. If Rα = 0, spectral homogeneity gives µ = 0, and every positive-order term is
+zero. Assume Rα > 0. First work at finite Gaussian cutoff m, degree cutoff N and
+spatial band b, with initial phase Sb (f, g) times the Gaussian vacuum 1. All relevant
+operators are bounded. Lemmas 12.2 and 12.1, with a = α/2, give a bound 100e2λh on
+the complex coupling circle of radius δα/2 λ2−α/2 /dN .                                     √
+   The four
+          √  phase
+               √   entries  are entire  in  the coupling,   by  the   power series for cos(h L)
+and sin(h L)/ L of a bounded L. Cauchy’s formula for their operator-valued series
+bounds the nth coefficient by
+                                    (︃             )︃n
+                                2λh        dN
+                           100e                        ∥Sb (f, g)∥λ .
+                                       δα/2 λ2−α/2
+The coefficient is exactly the nth Duhamel phase from the vacuum. Apply Lemma 12.3
+with one color, N = n, the spatial phase Hilbert space as X , and its free wave operators
+as the Fl . It identifies each cutoff Duhamel word exactly with its uncompressed word,
+including self-contractions. Dominated time integration preserves this identity.
+    Choose λ√= n/h. For any phase z, ∥z∥1/h ≤ n∥z∥n/h and ∥(f, g)∥n/h ≤ ∥(f, g)∥1/h .
+                  √
+Also dn ≤ 2 2n Rα . The preceding bound is therefore at most
+                          (︄ √ )︄n
+                            2 2e2
+                    100n              Rαn/2 h(4−α)n/2 n−(3−α)n/2 ∥(f, g)∥1/h .
+                             δα/2
+
+Since 100n ≤ 200n and n! ≤ nn , this gives (12.7) at the cutoffs.
+    We justify removal of those cutoffs at fixed ϵ and n. On √   Gaussian degrees at most
+                                                                         √
+N , the unweighted field multiplication has norm at most 2 N + 1 vϵ , uniformly in
+m, by the same creation/annihilation argument applied pointwise in x. It follows that
+the noise phase insertion (u, v) ↦→ (0, Wϵ u), between the required finite degree levels,
+is bounded on Xλ by this constant divided by λ. Free phase evolution is bounded by
+eλh/2 . For finite m, Sb → I strongly and commutes with the free propagator. Each fixed
+Duhamel word therefore converges strongly as b → ∞, by dominated time integration.
+    Next let m → ∞ on the full Gaussian space. The truncated field multiplications
+converge strongly between finite degree levels. To see this, first take a vector depending
+on finitely many Gaussian coordinates. The annihilation tail is then zero, while the
+creation tail is bounded by a constant times
+                              (︄∫︂                      )︄1/2
+                                   ∑︂
+                                             2       2
+                                       ei (x) ∥F (x)∥ dx      ,
+                                    i>m
+
+
+                                                  77
+
+===== PHYSICAL PAGE 78 =====
+which tends to zero by dominated convergence, since the sum is bounded by vϵ . Such
+vectors are dense; the uniform multiplication bound extends strong convergence to all
+vectors in those degree levels. Dominated time integration again gives convergence of
+every fixed word. The limit is precisely Znϵ , so the estimate survives both limits. We
+assert no zero-smoothing phase limit in this argument. √
+    Finally, put β = (3 − α)/2 ∈ (1/2, 3/2) and x = Aα |σ| Rα h(4−α)/2 . The elementary
+series satisfies                   ∑︂ xn            1/β
+
+                                           β
+                                             ≤ 2e3x .
+                                   n≥0
+                                       (n!)
+                               ∑︁ β
+                                  an ≤ ( an )β with an = xn/β /n!. For β < 1, apply
+                                          ∑︁
+For β ≥ 1, this follows from
+                          β −βn/(1−β) 1−β
+Hölder to ((2x1/β )n /n!)
+                       √ (2          ) . The second geometric sum is at most two.
+Since ∥Z0 (h)∥1/h ≤ e∥(f, g)∥1/h , absolute L2 summation and squaring give (12.8).
+This proves Proposition 12.4.
+Corollary 12.5 (Summable static interaction bounds). Let S0 (t) be free phase evolution
+and, for λh ≤ 1, define the static interaction map by its convergent series
+                                                   ∑︂
+                           Iσϵ (h)(f, g) = S0 (−h)    σ n Znϵ (h).
+                                                      n≥0
+
+Put γ = 3 − α, Bα = 3eA2α and
+                                                         √
+                                           2 α−2        4 eDΓ     h3−α
+                       Lα (h, λ) = 4eRα h λ      +                     ,
+                                                    (2 − α)(3 − α) λ
+                               x = Bα σ 2 Rα h4−α ,
+                                                                  1/γ
+                      E(h, σ, λ) = σ 2 Lα (h, λ) + (λh)−2 x2 eγx        .
+Uniformly in ϵ > 0,
+                        E∥Iσϵ (h)(f, g)∥2λ ≤ [1 + E(h, σ, λ)]∥(f, g)∥2λ .                (12.9)
+If 0 < α0 < 1 and α + α0 < 2, then, for hj = 2−j /λ, σj2 = h−α
+                                                            j
+                                                              0
+                                                                and T > 0,
+                                   ∑︂ T
+                                           E(hj , σj , λ) < ∞.                          (12.10)
+                                      h
+                                   j≥0 j
+
+For a finite single partition, let Mj (hj ) be the static phase maps with mutually indepen-
+dent copies of the smoothed field, real couplings σj , and λhj ≤ 1. They have continuous
+L2 extensions to independent random initial phases. Then
+                                            {︄ K          K
+                                                                           }︄
+                                                ∑︂       ∑︂
+  E∥MK (hK ) · · · M1 (h1 )(f, g)∥2λ ≤ exp λ        hj +     E(hj , σj , λ) ∥(f, g)∥2λ . (12.11)
+                                                j=1         j=1
+
+This concerns independent successive blocks on one partition. Formula (12.10) only
+sums individual upper bounds across dyadic levels; it does not identify a product with an
+evolution driven by overlapping or repeated fields.
+
+                                               78
+
+===== PHYSICAL PAGE 79 =====
+Proof. Write N = ∥(f, g)∥λ and Yn = S0 (−h)Znϵ (h). The free estimate from Section 11
+holds for both time directions,
+                             √ since its differentiated energy was bounded in absolute
+value. Thus ∥S0 (−h)∥λ ≤ e. ∑︁     Since Y0 = (f, g), Proposition 11.2 bounds the complete
+first variance coefficient of E∥ σ n Yn ∥2λ in absolute value by Lα (h, λ)N 2 . In detail, its
+first random√squared norm is bounded by e times (11.6), and its second-order mean cross
+term by 2N e times (11.7).
+    For n ≥ 1, the norm comparisons when λh ≤ 1 and (12.7) give
+                                           √      √
+                                             e (Aα Rα )n h(4−α)n/2
+                         ∥Yn ∥L2 (Ω;Xλ ) ≤                         N.
+                                           λh        (n!)γ/2
+Gaussian symmetry makes E⟨Yr , Ys ⟩λ = 0 if r + s is odd. All double series below
+converge absolutely by these bounds. For r + s = 2k, the elementary factorial inequality
+r!s! ≥ (k!)2 shows that the sum of absolute inner products is at most
+                         e(2k + 1) (A2α Rα )k h(4−α)k 2
+                                                     N ,            k ≥ 1.
+                           (λh)2         (k!)γ
+This includes r = 0 or s = 0, since λh ≤ 1 and ∥Y0 ∥ = N . The bound e(2k + 1) ≤ (3e)k
+therefore controls all orders k ≥ 2 by
+                                                             1/γ
+                               1 ∑︂ xk         2   x2 eγx
+                                             N   ≤        N 2.
+                             (λh)2 k≥2 (k!)γ        (λh)2
+                                     1/γ
+Here γ > 1, and j≥0 xj /(j!)γ ≤ eγx . Keeping the sharper first coefficient separately
+                  ∑︁
+proves (12.9).
+   Finally, set β = 4 − α − α0 > 2. After multiplication by T /hj , the two first-coefficient
+terms in (12.10) are constant multiples of
+                                                       T 2−α−α0
+                                T λα−2 h1−α
+                                        j
+                                            0
+                                              ,         h       .
+                                                       λ j
+The higher-order term is
+                            T (Bα Rα )2 2β−3                     β/γ
+                                  2
+                                       hj    exp{γ(Bα Rα )1/γ hj }.
+                                λ
+The exponential factor is bounded by its value at h0 . All three powers are positive, so
+their geometric series converge. For the finite partition, write Mj (hj ) = S0 (hj )Ij (hj ).
+Bound (12.9) and ∥S0 (hj )∥2λ ≤ eλhj give a bounded linear map from deterministic Xλ to
+L2 (Ωj ; Xλ ), initially on Schwartz phases and then by density. Tensoring with the past
+probability space extends this bound to random initial phases independent of the jth
+field. Iteration gives the product of eλhj (1 + E(hj , σj , λ)). The inequality 1 + y ≤ ey for
+y ≥ 0 proves (12.11). This proves Corollary 12.5.
+    These estimates concern individual static phase and interaction maps. Their summa-
+bility alone does not identify the evolution driven by overlapping interval fields. The
+coefficient argument in Section 13 supplies the separate estimate needed for that evolu-
+tion.
+
+                                                  79
+
+===== PHYSICAL PAGE 80 =====
+13      Interval fields and the full upper bound
+
+ The preceding interval and mild-construction arguments passed source-bound cor-
+ rectness review. The sixth cold reader requested clearer hypothesis and solution-
+ object statements and a proof-level fixed-order input audit. The explicit statements,
+ independent fixed-order construction and changed consumers passed a fresh scoped
+ Opus5.5/HIGH review at f9303ed. The final whole-paper cold read remains pend-
+ ing. The intrinsic constant is identified independently in Theorem 40.6.
+
+Write
+               ν = 3 − α > 1,       β = 4 − α − α0 > 2,      p = 2 − α0 > 1.
+Thus, β − ν = 1 − α0 > 0. In this section the spatial dimension is any admissi-
+ble d ∈ {1, 2, 3}. The spatial covariance is the nonnegative, even, positive-definite
+                                                   d−α
+tempered
+    ∫︁ iξ·xRadon measure Γ, with scaling Γ(rA) = r Γ(A) and spectral convention
+Γ = e µ( dξ). This includes Γ = δ0 when d = α = 1. Set
+                απµ(B1 )
+        Rα =               ,       Aρ = ρ2 − ∆,    ∥(f, g)∥2ρ = ∥f ∥22 + ∥A−1/2
+                                                                           ρ    g∥22 .
+               2 sin(πα/2)
+Complex Hilbert inner products are linear in the first slot.
+Lemma 13.1 (Dimension-independent Gaussian contractions). Uniformly in positive
+spatial smoothing and in finite Gaussian-mode and spatial Fourier-band cutoffs,
+                           ∑︂
+                               ∥A−1/2
+                                 ρ    Mem f ∥22 ≤ Rα ρα−2 ∥f ∥22 .              (13.1)
+                               m
+               ∑︁
+Here Wϵ (x) = m gm em (x) is an orthonormal-coordinate representation of W (pϵ (x−·)),
+whose covariance is Γϵ = p2ϵ ∗ Γ. Consequently, on a Gaussian color that
+                                                                      √ is initially in
+its vacuum, the phase insertion (u, v) ↦→ (0, Wϵ u) has norm at most Rα ρ(α−2)/2 into
+its Gaussian L2 phase. With Hermite degree of this color truncated at N , its sandwiched
+field has operator norm at most
+                                  √       √︁
+                                 2 N + 1 Rα ρα/2−2 .                              (13.2)
+Both statements remain valid tensoring with any other Hilbert factor.
+Proof. Fourier uniqueness gives µ(Br ) = rα µ(B1 ). The Gaussian comparison in
+Lemma 11.1 uses no dimension-specific identity:
+               ∫︂                    ∫︂                ∫︂
+                    −s|η+ξ|2            (d)                   2
+                  e          µ( dξ) = p2s (x)e Γ( dx) ≤ e−s|ξ| µ( dξ).
+                                              iη·x
+
+
+
+Evenness gives a real integral, and physical nonnegativity gives the inequality. Integrat-
+               2
+ing against e−ρ s ds and using radial spectral homogeneity yields
+                                  ∫︂
+                                        µ( dξ)
+                             sup      2         2
+                                                  ≤ Rα ρα−2 .
+                               η     ρ + |η + ξ|
+
+                                             80
+
+===== PHYSICAL PAGE 81 =====
+No exclusion of a physical origin atom is used.
+   Gaussian isometry and unnormalized spatial Plancherel give
+                                                       (︄∫︂                 )︄
+                                          ∫︂                  −ϵ|ξ|2
+             ∑︂
+                    −1/2        2     1              2      e        µ( dξ)
+                 ∥Aρ Mem f ∥2 =         d
+                                             |fˆ︁(η)|                          dη.
+              m
+                                    (2π)                    ρ2 + |η + ξ|2
+
+This proves (13.1). A finite mode sum is a positive sub-sum. For a Fourier-band pro-
+jection Sb , which commutes with Aρ , use Sb A−1         −1
+                                               ρ Sb ≤ Aρ to obtain∑︁ the same inequality
+for Sb Mem Sb . The phase assertion on a new color follows because m gm (0, Mem u) has
+squared norm given by the left side of (13.1), and its input is independent of this color.
+                    −1/2
+    Substituting Aρ f gives
+                           ∑︂
+                               (A−1/2
+                                  ρ   Mem A−1/2
+                                           ρ    )2 ≤ Rα ρα−4 I.
+                              m
+
+These spatial sandwiches are selfadjoint, so their row and column variances√agree. The
+normalized Hermite creation-row norm from degree j to degree j + 1 is j + 1, and
+annihilation is its adjoint, as proved in Lemma 12.2. Composition with the spatial
+column and addition of the two parts prove (13.2). The same positive operator identities
+hold with an identity on every other Hilbert factor. The calculation used only the radial
+mass µ(B1 ), homogeneity and physical nonnegativity. Thus, Rα is the only covariance
+quantity in these estimates. No angular bound or unsmoothed multiplication norm has
+been absorbed into a constant. This proves Lemma 13.1.
+Lemma 13.2 (Complex sums and changing phase weights). Let A0 be bounded, non-
+negative and selfadjoint, and let V be bounded on the same complex Hilbert space. Write
+Aρ = ρ2 + A0 . The complex phase conclusion of Lemma 12.1 holds for L = A0 − V
+whenever V is bounded, not necessarily selfadjoint,
+            ∥A−1/2
+              ρ    V A−1/2
+                      ρ    ∥ ≤ Dρa−2 ,        ρ > 0,    0 < a < 1,    D ≤ δa Λ2−a .
+Its bound is 100e2Λh in XΛ . If a piecewise-constant potential is the sum of connected-
+interval
+∑︁          fields, assign a positive weight ωi to each field present and put Λ(t) = λ +
+   i ωi 1Ii (t). The total loss from changing between these phase norms, starting and ending
+in Xλ , is at most                       ∏︂
+                                            (1 + ωi /λ).                               (13.3)
+                                          i
+
+Proof. The adjoint has the identical sandwich bound, since
+                             A−1/2
+                              ρ    V ∗ A−1/2
+                                        ρ    = (A−1/2
+                                                 ρ    V A−1/2
+                                                         ρ    )∗ .
+The form estimate at ρ = Λ gives Re⟨(L + Λ2 )u, u⟩ ≥ (1 − δa )⟨AΛ u, u⟩. The shifted
+operator and its adjoint thus have spectra in the right half-plane, where their principal
+                                       −1/2    −1/2
+inverse roots are defined. Put Kκ = Aκ V Aκ         and κ = (Λ2 + t)1/2 . The resolvent
+difference is exactly
+                    (L + Λ2 + t)−1 − A−1   −1/2
+                                      κ = Aκ    (1 − Kκ )−1 Kκ A−1/2
+                                                                κ    .
+
+                                               81
+
+===== PHYSICAL PAGE 82 =====
+                                       1/2
+Its product on the left with AΛ has norm at most Dκa−3 /(1 − δa ). The inverse-
+root integral in Lemma 12.1 therefore gives the same 1/6 bound. More explicitly, put
+                         1/2 −1/2
+LΛ = L + Λ2 and Q = AΛ LΛ . Then ∥Q − I∥ ≤ 1/6, so ∥Q∥ ≤ 7/6 and ∥Q−1 ∥ ≤ 6/5
+by its Neumann series. Taking adjoints under the norm-convergent resolvent integral
+        −1/2
+gives (LΛ )∗ = (L∗Λ )−1/2 . Apply the same estimate to L∗ = A0 − V ∗ and take adjoints.
+                −1/2 1/2                        −1/2 1/2
+This bounds LΛ AΛ by 7/6 and its inverse AΛ LΛ by 6/5. Together with Q and
+         1/2 −1/2
+Q−1 = LΛ AΛ , these are all four ordered comparisons in (12.4), each at most two.
+                                    1/2
+    For a unit vector u put s = ∥A0 u∥ and ⟨Lu, u⟩ = x + iy. The form estimate at
+ρ = Λ and, separately, at ρ = s gives
+                     |⟨V u, u⟩| ≤ DΛa−2 (s2 + Λ2 ),          |⟨V u, u⟩| ≤ 2Dsa .
+At s = 0 the second bound follows by ρ ↓ 0. Thus x + Λ2 ≥ (1 − δa )(s2 + Λ2 ) and
+|y| ≤ 2δa Λ2−a sa . These are the two inequalities used for the numerical-range parabola in
+Lemma 12.1. Its scalar bounds and the bounded-operator Crouzeix–Palencia theorem
+apply to L without selfadjointness. The four weighted block formulas there use only
+functions of L and the root comparisons just proved. Their norms are at most 3eΛh ,
+12(1 + Λh)eΛh , 12eΛh and 12eΛh . Their sum is at most 100e2Λh . This uses neither
+selfadjointness of V nor commutation of AΛ with L.
+    For a common phase vector,
+                              ∥z∥ρnew ≤ max{1, ρold /ρnew }∥z∥ρold .
+At a jump, write E for ending fields, S for starting fields, and R for those remaining.
+The ratio is at most
+                     ∑︁      ∑︁
+                 λ + R ωi + E ωi            ∑︂           ∏︂
+                     ∑︁      ∑︁       ≤1+       ωi /λ ≤     (1 + ωi /λ).
+                 λ + R ωi + S ωi             E            E
+
+An initial increase of the weight has no loss. Count a final return to Xλ as an ending jump
+at T . Each connected interval ends once, giving (13.3). This proves Lemma 13.2.
+Lemma 13.3 (A positive inventory product). For k ≥ 1, define
+                                                                  i−βl (1 + li/k)2
+            vi = i−β + k −1 i−(β−1) + k α−2 i−p ,        bi,l =                    ,   l ≥ 2.
+                                                                        (l!)ν
+There is a finite C = C(α, α0 ), independent of M, k, such that
+                                M
+                                   (︄                        )︄
+                               ∏︂                ∑︂              Ck
+                        [z k ]        1 + vi z +     bi,l z l ≤      ν
+                                                                       .                        (13.4)
+                               i=1               l≥2
+                                                                (k!)
+
+Proof. Evaluate the positive product at z = θk ν , with θ = 1/4. Put Pi = θk ν i−β and
+Qi = θki−p . The third singleton term is Qi because ν + α − 2 = 1. The inequality
+1 + A + B ≤ (1 + A)(1 + B) separates the factors 1 + Qi . For p > 1,
+        ∑︂                   ∫︂ ∞                          ∫︂ ∞
+                      −p                    −p
+            log(1 + Ai ) ≤        log(1 + Ax ) dx = A  1/p
+                                                                log(1 + x−p ) dx.
+          i≥1                      0                                     0
+
+
+                                                    82
+
+===== PHYSICAL PAGE 83 =====
+The last integral is finite. Hence their logarithmic contribution   is at most Ck 1/p ≤ Ck.
+   If i ≤ k, the remaining factor is at most Sν (4Pi ) = l≥0 (4Pi )l /(l!)ν : its singleton is
+                                                             ∑︁
+                                                                          1/ν
+at most 2Pi , and (1 + li/k)2 ≤ (1 + l)2 ≤ 4l . Since ν > 1, Sν (x) ≤ eνx . Therefore
+                        ∑︂                              ∑︂
+                             log Sν (4Pi ) ≤ ν(4θ)1/ν k    i−β/ν ≤ Ck,
+                        i≤k                             i≥1
+
+
+because β/ν > 1.
+   If i > k, then Pi ≤ θ. The remaining singleton tail is at most
+                             (︃                )︃
+                                 1        1
+                           θ         +            k ν+1−β = Ck α0 .
+                                β−1 β−2
+
+Also, uniformly for 0 ≤ P ≤ 1/4 and y ≥ 0, l≥2 P l (1 + ly)2 /(l!)ν ≤ CP 2 (1 + y 2 ).
+                                                     ∑︁
+Summing this bound gives
+
+                                       k −2 k 3−2β
+                           (︃ 1−2β                 )︃
+                               k
+                     Ck 2ν
+                                     +                = Ck 2α0 −1 ≤ Ck.
+                              2β − 1    2β − 3
+
+Use log(1 + y) ≤ y for these fine factors. The entire product is consequently at most
+eCk . Positivity of its coefficients bounds the kth coefficient by θ−k k −νk eCk ≤ C k /(k!)ν .
+This proves Lemma 13.3.
+   Let F be a finite family of connected intervals Ii meeting [0, T ], with lengths hi sorted
+decreasingly. Let Wiϵ be independent copies of the smoothed unit field, and suppose
+
+                                    hi ≤ LT /i, σi2 ≤ ch−α
+                                                        i
+                                                           0
+                                                             .                          (13.5)
+
+Write UFϵ (T ; s) for phase evolution with potential s i σi 1Ii (t)Wiϵ (x).
+                                                       ∑︁
+
+Lemma 13.4 (A fixed degree-split estimate). Retain the finite interval fields above,   ∑︁  with
+Rα > 0 and σi > 0. Fix integers ∑︁  ri , qi , ki ≥ 0 with ri + qi = 2ki , and put k = i ki ≥ 1,
+λ = k/T . Represent Wiϵ (x) =           j gij eij (x) as in Lemma 13.1. Retain mi Gaussian
+modes,
+⨂︁      a spatial Fourier band Sb , and Hermite cutoff Ni = 2ki on color i. Write P =
+    P
+   i Ni and set
+                         (︄ m              )︄
+                           ∑︂ i                                   ∑︂
+               Bi = P Sb        gij Meij Sb P,           Vz (t) =    zi σi 1Ii (t)Bi .
+                              j=1                                i
+
+
+Let Mcut
+      z (T ) be the phase evolution with this bounded potential and A0 = −∆ on the
+band. Define Ur v = [z r ]Mcut
+                           z (T )v, with the projected deterministic initial phase in the
+Gaussian vacuum. Put
+                    I = {i : ki > 0},         C = {i : ki = 1, ri = qi = 1},
+                          B = I \ C,           ℓi = 1{ri >0} + 1{qi >0} .
+
+
+                                                  83
+
+===== PHYSICAL PAGE 84 =====
+There is a finite Csplit = Csplit (α), uniform in all these cutoffs and in the finite inventory,
+such that
+                                                                    ∏︂
+               |⟨Ur v, Uq v⟩L2 (Ω;X1/T ) | ≤ k 2 Csplit
+                                                  k
+                                                        Rαk ∥v∥21/T   (σi2 h2i λα−2 )
+                                                                 i∈C
+                                                ∏︂ (σ 2 h4−α )ki                                      (13.6)
+                                                      i   i
+                                            ×                       (1 + ki /(λhi ))ℓi .
+                                                i∈B
+                                                       (ki !)ν
+
+In particular, a singleton used twice on one copy has ℓi = 1; a higher color has at most
+two metric factors.
+
+Proof. We give a bound for each vector coefficient before taking their inner product. Ev-
+ery operator below acts on the finite Gaussian-mode, Hermite and spatial-band Hilbert
+space in the statement. In particular, it is bounded. Its piecewise-constant evolution is
+a finite product of block exponentials, hence is entire in every amplitude. All coefficient
+extractions in this proof are ordinary power-series extractions.
+    An amplitude with ki = 0 is evaluated at zero on both copies. If ki > 0 but Ii ∩ [0, T ]
+has zero length, every coefficient with a positive power of that amplitude vanishes. The
+claimed inner product is then zero. We may therefore assume that every active interval
+has a positive-length intersection IiT = (ai , bi ) with (0, T ); endpoint conventions do not
+affect the evolution or its time integrals. Its length is at most hi .
+    Write a = α/2, and use the positive constant δa in Lemma 12.1. For every i ∈ B put
+
+                       ki              √︁      √︁                        δa ωi2−a
+                   ωi = ,        di = 2 2ki + 1 Rα ,                ϱi =          .                   (13.7)
+                       hi                                                 σi di
+Fix one of the two copies. Its background set is Ar = {i ∈ B : ri > 0} or Aq = {i ∈ B :
+qi > 0}; denote that set by A. Evaluate every unused amplitude at zero. Colors in C
+have degree one on this copy. Put m = |C|. Thus there are at most k background and
+cross colors altogether.
+    Background segments and the common partition.
+                                                ∑︁        Fix |zi | = ϱi for i ∈ A. With the
+cross amplitudes zero, the potential is Vz (t) = i∈A zi σi 1IiT (t)Bi . Write Pz (t, s) for its
+evolution, and set                           ∑︂
+                                Λ(t) = λ +      ωi 1IiT (t).
+                                                i∈A
+
+For each ρ > 0, Lemma 13.1 gives
+                                                          ∑︂
+       ∥A−1/2
+         ρ    Vz (t)A−1/2
+                     ρ    ∥ ≤ D(t)ρa−2 ,        D(t) =           |zi |σi di 1IiT (t) ≤ δa Λ(t)2−a .
+                                                          i∈A
+
+
+The last step follows from (13.7) and x2−a    ≤ ( xi )2−a for nonnegative xi . The spatial
+                                      ∑︁          ∑︁
+                                           i
+resolvents here include the identity on every Gaussian factor. This is a deterministic
+operator inequality on their joint Hilbert space; the input can depend on the background
+fields.
+
+
+                                              84
+
+===== PHYSICAL PAGE 85 =====
+   For the moment fix a tuple (ti )i∈C with ti ∈ IiT , all distinct and away from the
+background endpoints. The excluded tuples have Lebesgue measure zero. Form the
+common partition
+                          0 = τ0 < τ1 < · · · < τM = T                          (13.8)
+from these times and all background endpoints in (0, T ). On (τj−1 , τj ) let Λj be the
+constant value of Λ, and put Pj = Pz (τj , τj−1 ). There are at most 2|A| + m interior
+partition points, so M ≤ 2|A| + m + 1 ≤ 3k + 1. Lemma 13.2, with its adjoint bound as
+stated there, gives
+                M
+                                           (︄ M                    )︄
+               ∏︂                              ∑︂
+                   ∥Pj ∥HΛj →HΛj ≤ 100M exp 2       Λj (τj − τj−1 )
+               j=1                              j=1                              (13.9)
+                                 ≤ 1003k+1 e4k =: Mk ,    Hρ = L2 (Ω; Xρ ).
+                                                    ∑︁                      ∑︁
+Indeed, the sum in the exponential is exactly λT + i∈A ωi (bi − ai ) ≤ k + i∈A ki ≤ 2k.
+Insertion times refine a partition; they do not repeat this integral.
+   Every identity between phase norms. Put Λ0 = ΛM +1 = λ. At τj let Ij be the
+identity from HΛj to HΛj+1 , for 0 ≤ j ≤ M . Its norm is at most
+
+                                    qj := max{1, Λj /Λj+1 }.
+
+This follows directly from the two components of the phase norm and the spectral
+inequality A−1      2 −1
+            Λj+1 ≤ qj AΛj . At an interior background endpoint, let Ej , Sj , Rj denote the
+ending, starting and remaining background colors. Then
+                         ∑︁         ∑︁
+              Λj     λ + Rj ωi + Ej ωi            ∑︂          ∏︂
+                  =      ∑︁         ∑︁      ≤1+      ωi /λ ≤     (1 + ωi /λ).
+             Λj+1    λ + Rj ωi + Sj ωi             E         i∈E
+                                                            j             j
+
+
+The last product is at least one, so it also bounds qj . At an insertion-only cut the heights
+agree and qj = 1. Initially q0 = 1. At T the same inequality charges all intervals with
+bi = T as ending there. Each connected IiT ends at precisely one such cut. Consequently,
+                            M
+                            ∏︂                  ∏︂
+                                   qj ≤ DA :=         (1 + ki /(λhi )).              (13.10)
+                             j=0                i∈A
+
+This product includes the initial and final conversions. There is no new copy of DA at
+an insertion time or an overlapping interval’s start.
+                                                         (0)
+    The cross-color subspaces and the word norm. Let Gi be the vacuum of color i and
+  (1)
+Gi its first Gaussian degree. For S ⊂ C, use the tensor subspace
+                               ⨂︂ ≤N       ⨂︂ (1) ⨂︂ (0)
+                         ZS =      Gi i ⊗       Gi ⊗         Gi ,
+                                   i∈A          i∈S             i∈C\S
+
+with every omitted Gaussian color in its vacuum and with the common spatial band
+understood. Each Pj preserves the corresponding phase space over ZS : its potential
+
+                                                85
+
+===== PHYSICAL PAGE 86 =====
+acts only on colors in A, and its spatial operators act identically on all cross Gaussian
+factors. The identities Ij preserve the same tensor subspace.
+    Define Ji (u, w) = (0, σi Bi u) for i ∈ C. If i ∈
+                                                    / S, multiplication by its field takes its
+vacuum into first Gaussian degree. The Hermite cutoff Ni = 2 does not alter this step.
+Thus Ji maps the phase over ZS into the phase over ZS∪{i} . Collect all other Gaussian
+factors into Ri . Every input has the form 1i ⊗ (u, w), with (u, w) ∈ Ri ⊗ Xρ . The cutoffs
+on other colors are identities on its retained degrees, which multiplication by the color-i
+field leaves unchanged. Hence
+                                               mi
+                                               ∑︂
+                       Ji (1i ⊗ (u, w)) = σi          gij ⊗ (0, Sb Meij Sb u).
+                                                j=1
+
+Orthogonality E[gij gil ] = 1{j=l} gives
+                                                 mi
+                                                 ∑︂
+                   ∥Ji (1i ⊗ (u, w))∥2Hρ = σi2         ∥A−1/2
+                                                         ρ    Sb Meij Sb u∥2Ri ⊗L2x
+                                                 j=1
+                                               2
+                                           ≤ σi Rα ρα−2 ∥u∥2Ri ⊗L2x
+                                           ≤ σi2 Rα ρα−2 ∥1i ⊗ (u, w)∥2Hρ .
+The first inequality is (13.1) tensored with Ri and allows arbitrary dependence on earlier
+colors. Thus, at the insertion time,
+                               √︁                         √︁
+                    ∥Ji ∥ ≤ σi Rα Λ(ti )(α−2)/2 ≤ ci := σi Rα λ(α−2)/2 .          (13.11)
+Starting with Z∅ , these subspaces describe every partial word. They justify each new-
+color estimate even though the current vector depends on the background and earlier
+cross colors. No occupied-color annihilation is estimated by a vacuum bound.
+    Equivalently, apply Lemma 12.3 to the cross colors, with X containing the bounded
+background Gaussian space and the spatial phase space. Background segments act only
+on X , and each cross color occurs once. Its cutoff is an exact identity on every prefix of
+the selected word. This does not identify an untruncated background propagator with
+a fixed cutoff.
+    At an interior cut τj let Bjcut = Ji if τj = ti and let Bjcut be the identity otherwise.
+Apply Bjcut after Ij ; at an insertion cut the two heights are equal. The chronological
+word, as a map from Hλ back to Hλ , is exactly
+                   WA (z, t) = IM PM BM −1 IM −1 PM −1 · · · B1 I1 P1 I0 .
+                                      cut                     cut
+
+
+For M = 1 this means I1 P1 I0 . The rightmost factor acts first; no spatial operators
+are commuted. Multiplying their norms, using the subspaces just specified, gives the
+explicit bound
+                                (︄ M        )︄ (︄ M )︄ (︄       )︄
+                                  ∏︂             ∏︂       ∏︂
+               ∥WA (z, t)v∥λ ≤        ∥Pj ∥            qj     ci ∥v∥λ
+                                  j=1            j=0      i∈C                 (13.12)
+                                              ∏︂
+                             ≤ Mk DA ∥v∥λ         ci .
+                                                      i∈C
+
+
+                                                 86
+
+===== PHYSICAL PAGE 87 =====
+The background norm bound is on the joint Gaussian Hilbert space; it is not obtained
+by conditioning on successive fields.
+   The insertion cube and vector Cauchy formula. Give the cross colors amplitudes yi
+and define the vector                 [︄      ]︄
+                                         ∏︂
+                            ΦA (z) :=       yi Mcut
+                                                 (z,y,0) (T )v.
+                                          i∈C
+
+Variation of constants about Pz and iteration give a Dyson series. A monomial of degree
+one in every yi uses exactly m insertions, with each distinct cross color used once. Hence
+                                               {︄                               }︄
+             ∑︂ ∫︂                                   ∏︂
+   ΦA (z) =           WA (z, t)v dt,     Dπ = t ∈        IiT : tπ1 < · · · < tπm .  (13.13)
+               π   Dπ                                      i∈C
+
+Each ordered Dyson integral has coefficient one. The permutation simplices Dπ partition
+the cube up to null diagonals. In particular,
+                              ∑︂          ∏︂           ∏︂
+                                  |Dπ | =     |IiT | ≤    hi .
+                                 π          i∈C             i∈C
+
+Minkowski applied to (13.13) and the single-word bound (13.12) therefore gives
+                                                  ∏︂
+                           ∥ΦA (z)∥λ ≤ Mk DA ∥v∥λ    ci hi .                   (13.14)
+                                                            i∈C
+
+There is no factor m! or 1/m! in this estimate. For m = 0, the cube has unit mass and
+ΦA (z) = Pz (T, 0)v.
+    The vector ΦA is entire in the background amplitudes. On the first copy its coefficient
+is given by the normalized formula
+                  (︄          )︄ ∫︂
+                      ∏︂                                                       ∏︂ dθi
+                         ϱ−r
+                                               ∑︁
+          Ur v =          i
+                            i
+                                            e−i i∈Ar ri θi ΦAr ((ϱi eiθi )i )         . (13.15)
+                     i∈A           [0,2π]Ar
+                                                                              i∈A
+                                                                                  2π
+                        r                                                 r
+
+
+This is precisely the desired coefficient because each cross exponent equals one and
+every omitted exponent is zero. The normalized angular ∏︁ measure has total mass one.
+Thus (13.14) bounds ∥Ur v∥λ with the additional factor i∈Ar ϱ−r i , and the identical
+                                                                  i
+
+
+formula bounds the second copy using Aq , qi . No holomorphic formula is applied to a
+squared norm.
+   The inner product and all constants. Since λ = k/T and k ≥ 1,
+                            ∥w∥1/T ≤ k∥w∥λ ,            ∥v∥λ ≤ ∥v∥1/T .
+Cauchy–Schwarz between the two vectors on the same Gaussian space now gives, before
+any constants are absorbed,
+                                                                 ∏︂
+                   |⟨Ur v, Uq v⟩H1/T | ≤ k 2 Mk2 DAr DAq ∥v∥21/T    ϱ−2k
+                                                                     i
+                                                                        i
+
+
+                                                                    i∈B
+                                              ∏︂                                       (13.16)
+                                             × (Rα σi2 h2i λα−2 ).
+                                                  i∈C
+
+
+                                                87
+
+===== PHYSICAL PAGE 88 =====
+The radius exponent is ri + qi = 2ki . The metric product is exactly
+                                        ∏︂
+                            DAr DAq =      (1 + ki /(λhi ))ℓi .
+                                              i∈B
+
+In particular, a singleton on only one copy has one ending charge, not two. For every
+i ∈ B, d2i ≤ 12ki Rα gives
+                                      (︃ 2 2 )︃ki (︃ )︃(4−α)ki
+                                        σi di       hi
+                           ϱ−2k
+                            i
+                                i
+                                  =
+                                         δa2        ki
+                                                                      −(3−α)ki
+                                 ≤ (12δa−2 )ki (Rα σi2 h4−α
+                                                        i   )ki ki                       (13.17)
+                                                 (Rα σi2 h4−α )ki
+                                 ≤ (12δa−2 )ki            i
+                                                                  .
+                                                   (ki !)3−α
+
+The last step uses ki ! ≤ kiki . Finally,
+                                                                         ∑︂
+                    Mk2 = 1006k+2 e8k ≤ (1008 e8 )k ,          |C| +           ki = k.
+                                                                         i∈B
+
+Substituting these inequalities in (13.16) proves (13.6) with the explicit admissible choice
+                                                           −2
+                                Csplit = 1008 e8 max{1, 12δα/2 }.                        (13.18)
+
+This constant depends only on α. No permutation, Gaussian-mode, inventory-size or
+further degree factor remains. The projected initial phase has norm at most the displayed
+original ∥v∥1/T . This proves Lemma 13.4.
+
+Proposition 13.5 (Uniform interval coefficients). There is C = C(α, α0 , L, c) such that,
+for real Schwartz phase v, every k ≥ 1 satisfies
+                                                       k k βk
+                         ⃓[s ]E∥UFϵ (T ; s)v∥21/T ⃓ ≤ C Rα T ∥v∥21/T ,
+                         ⃓ 2k                     ⃓
+                                                                                         (13.19)
+                                                        (k!)ν
+
+uniformly in ϵ > 0 and the finite family. In particular,
+
+                       E∥UFϵ (T ; 1)v∥21/T ≤ e exp{CRα1/ν T β/ν }∥v∥21/T .               (13.20)
+
+Proof. Zero noise is trivial; omit any zero σi . Enlarge the inventory constant L to
+max{1, L} if necessary. The hypotheses remain true and the final constant may de-
+pend on L, so throughout this proof we may assume L ≥ 1. Replacing (σi , Wiϵ ) by
+(|σi |, sgn(σi )Wiϵ ) leaves the potential unchanged and preserves the joint law of the inde-
+pendent real Gaussian fields. Thus, we may assume σi > 0. We first work with finitely
+many Gaussian coordinates of each field and a bounded spatial Fourier band. Denote
+their common phase Hilbert space by Hρ = L2 (Ω; Xρ ). The initial data are projected to
+the band. This contracts every Xρ norm; we keep the original ∥v∥ρ on the right of the
+estimates. The projections converge strongly to the original data.
+
+                                                  88
+
+===== PHYSICAL PAGE 89 =====
+   Ordinary coefficients and their existence. Fix λ > 0 temporarily. Give interval i its
+own amplitude zi and write
+                                             ∑︂
+                               U(T ; z)v =       z r Ur v.
+                                                     r∈NF
+                                                        0
+
+
+These are ordinary power-series coefficients, without factorials incorporated
+                                                                       ∑︁ 2      in their
+definition. At fixed smoothing and finite inventory, put vmax = supt i σi 1Ii (t)Γϵ (0) <
+∞. On Gaussian
+           √       degrees at most n, multiplication by the instantaneous field has norm
+                   √
+at most 2 n + 1 vmax . The free phase has norm at most eλh/2 in Xλ , and a phase
+insertion (u, w) ↦→ (0, W u) costs at most its unweighted multiplication norm divided by
+λ. Thus, on maxi |zi | ≤ z∗ the total order-n phase is bounded by
+                                        √     √          n
+                              λT /2 (2z∗ n + 1 vmax T /λ)
+                            e                              ∥v∥λ .                 (13.21)
+                                              n!
+The series of these bounds converges for every finite z∗ . Its locally uniform convergence
+defines an entire vector function. We also verify coefficientwise absolute convergence.
+Fix z∗ > 0 and put
+                        K2z∗ =     sup    ∥U(T ; z)v∥H1/T < ∞,
+                                   maxi |zi |≤2z∗
+
+using the majorant with its temporary parameter λ = 1/T . Normalized vector Cauchy
+integration on this larger polydisc gives
+                                             ∑︂
+              ∥Ur v∥H1/T ≤ K2z∗ (2z∗ )−|r| ,    z∗|r| ∥Ur v∥H1/T ≤ 2|F | K2z∗ .
+                                                         r
+
+The sum is the product of |F| geometric series. Cauchy–Schwarz therefore bounds
+the absolute energy double series by 4|F | K2z  2
+                                                  ∗
+                                                    . This finite factor justifies the coefficient
+identities at fixed family and smoothing; it does not enter the uniform coefficient estimate
+below.
+    Set Qr,q = ⟨Ur v, Uq v⟩H1/T . Both vectors use the same Gaussian fields. Independence
+is between distinct colors, not between the two copies in this inner product. For real s,
+substitution zi = s gives the exact identity
+                                                         ∑︂
+                            [s2k ]E∥U(T ; s)v∥21/T =            Qr,q .                    (13.22)
+                                                             |r|+|q|=2k
+
+
+                        color i multiplies Ur v by (−1)ri . Hence Qr,q = 0 unless ri + qi =
+Reflection of Gaussian ∑︁
+2ki for every i, where i ki = k. If ki = 0, both coefficients are obtained by setting
+zi = 0; this removes that
+                        ∏︁ field exactly. kThere are at most k active colors. For fixed k,
+the number of splits is i (2ki + 1) ≤ 3 .
+    For this fixed k, truncate the Hermite degree of color i at Ni = 2ki . A word con-
+tributing to Ur has ri ≤ 2ki insertions of color i, and the other copy has qi ≤ 2ki .
+Lemma 12.3, with the spatial phase space as X and free phase factors between inser-
+tions, therefore preserves both selected vector coefficients exactly. Their Duhamel time
+
+                                                    89
+
+===== PHYSICAL PAGE 90 =====
+integrals and finite word sums preserve the equality. Creation followed by annihilation
+is retained; there is no Hermite-degree limit in this coefficient calculation.
+    For the uniform coefficient estimate put λ = k/T . Apply Lemma 13.4 to each selected
+coefficient, retaining the original sorted interval labels in the final sum. Its factor ℓi is
+one for a singleton mean and at most two for every higher color. The separate cross
+factor applies only at (ri , qi ) = (1, 1). Absorb k 2 Csplit
+                                                          k
+                                                              3k ck into C k , using k 2 ≤ 4k . After
+          −α
+σi2 ≤ chi 0 , the resulting local weights, with this common per-total-order constant
+understood, are
+                                 case            weight in energy
+                         (2, 0) or (0, 2)       Rα hβi (1 + 1/(λhi ))
+                                (1, 1)              Rα λα−2 h2−α
+                                                               i
+                                                                   0
+
+
+                            ki = l ≥ 2      Rαl hβl                2
+                                                 i (1 + l/(λhi )) /(l!) .
+                                                                         ν
+
+The first metric factor occurs on only one copy; the last costs at most one factor on each
+copy. To justify the length substitution, expand the entire higher-degree weight, before
+its positive constant:
+                                                     2l βl−1 l2 βl−2
+                         hβl (1 + l/(λh))2 = hβl +     h    + 2h        .
+                                                     λ        λ
+Since β > 2 and l ≥ 2, all three powers are positive. The singleton mean likewise has
+powers β, β − 1, and the cross singleton has power p = 2 − α0 > 0. Thus each whole
+local weight increases with h; we do not bound the inverse-length factor separately. At
+h = LT /i, 1 + l/(λh) = 1 + li/(kL) ≤ 1 + li/k, since L ≥ 1. The remaining powers of L
+are absorbed in the allowed C k . For a singleton let mi , ci be the first and second table
+weights. Every one of its splits is bounded by mi + ci . The higher-degree   table weight is
+already uniform over its splits. Hence the previously counted i (2ki +1) ≤ 3k bounds all
+                                                                     ∏︁
+split choices once, using these combined singleton weights; that is the factor absorbed
+into C k above. Substituting hi ≤ LT /i and λ = k/T therefore extracts C k Rαk T βk ,
+leaving vi at ki = 1 and bi,l at ki = l ≥ 2 from Lemma 13.3.
+    There is no further multinomial factor: for nonnegative weights wi,0 = 1, ordinary
+multiplication of power series gives exactly
+                                                       (︄           )︄
+                           ∑︂ ∏︂                    ∏︂ ∑︂
+                                     wi,ki = [z k ]         wi,l z l .
+                            ∑︁
+                                 i ki =k
+                                           i          i    l≥0
+
+Apply this identity to the sum in (13.22), using the two singleton alternatives together
+in vi . Lemma 13.3 now proves (13.19) at the finite cutoffs.
+    Identification and summation. Keep positive smoothing, finite inventory and a fixed
+coefficient. The finite-degree multiplication bound used in (13.21) is uniform in mode
+and band cutoffs. On finite-coordinate Gaussian vectors the omitted annihilation tail is
+zero and the creation tail tends to zero by its omitted pointwise variances and dominated
+convergence. Density in each finite degree extends this strong convergence. Closedness
+identifies the limit with actual multiplication by the measurable smoothed field. Fourier
+projections converge strongly and commute with free evolution. Dominated time inte-
+gration thus identifies every fixed Duhamel word. The selected coefficients of the local
+
+                                                 90
+
+===== PHYSICAL PAGE 91 =====
+Hermite truncation were already equal to those untruncated words. The full actual se-
+ries is constructed separately using (13.21), choosing a sufficient degree cutoff anew at
+each order. A fixed-degree truncated propagator is not identified with the full evolution.
+The entire majorant gives convergence uniformly on compact amplitude sets. The coef-
+ficients estimated above are therefore those of the actual finite-interval model, with no
+zero-smoothing limit at this step.
+    The nonuniform number vmax was used only for this identification. The uniform
+coefficient bound contains no such number. Its constants come from δα/2 , the fixed
+phase bound, the inventory lemma and L, c; covariance enters only through Rαk . The
+                                                                     1/ν
+zero-order energy is at most e∥v∥21/T . Put x = CRα T β and Y = eνx ≥ 1. Since ν > 1,
+         k    ν
+∑︁
+   k≥0 x /(k!) ≤ Y . Summing the coefficient bounds in absolute value gives
+
+                        E∥U(T ; 1)v∥21/T ≤ (e + Y − 1)∥v∥21/T ≤ eY ∥v∥21/T .
+
+Absorbing νC 1/ν into the parameter-only constant proves (13.20). This proves Proposi-
+tion 13.5.
+
+13.1       Finite Gaussian models and their terminal kernels
+For n ≥ 1, define the positive terminal-chain measure
+                                       n
+                                      ∏︂
+ gnT,x ( ds, dy) = 1[0,T ]n< (s) ds         Gsj+1 −sj (yj+1 − dyj ),      (sn+1 , yn+1 ) = (T, x). (13.23)
+                                      j=1
+
+The
+∏︁n spatial product is read backwards   ∑︁n from x. Explicitly, it is the pushforward of
+   j=1 Gsj+1 −sj ( dwj ) under yj = x −   l=j wl . This defines the measure also in dimen-
+sion three. In dimensions one and two its density is the ordered kernel gn in (2.1).
+Set g0T,x equal to unit mass on the empty tuple. This definition introduces no kernel
+symmetrization.
+Lemma 13.6 (The finite terminal-chain Wick formula). Let W(s, y) be a centered real
+Gaussian field on [0, T ] × Rd , d = 1, 2, 3, with covariance K(s, y; r, z). Suppose that
+V = sups,y E|W(s, y)|2 < ∞, and that the field is jointly continuous in mean square on
+each open cell of a finite partition of [0, T ], times Rd . Define Y0 = 1 and
+                                         n
+                                     ∫︂ ∏︂
+                         Yn (T, x) =         W(sj , yj ) gnT,x ( ds, dy).
+                                                 j=1
+
+These Bochner integrals exist in L2 (Ω) and satisfy
+                                             √︁                  T 2n
+                        ∥Yn (T, x)∥2 ≤         (2n − 1)!! V n/2       ,        n ≥ 1.                  (13.24)
+                                                                (2n)!
+For m+n = 2k, concatenate τ = (s1 , . . . , sm , r1 , . . . , rn ) and η = (y1 , . . . , ym , z1 , . . . , zn ).
+Then                                               ∑︂
+                                                               K
+                     E[Ym (T, x)Yn (T, x)] =                Tm,n,D  (T, x),                          (13.25)
+                                                            D∈Πk
+
+
+                                                       91
+
+===== PHYSICAL PAGE 92 =====
+where, with both chains terminating at (T, x),
+                   ∫︂                ∫︂
+           K
+        Tm,n,D =               ds dr
+                        [0,T ]m        n
+                              < ×[0,T ]<            (Rd )m ×(Rd )n
+                               m
+                              ∏︂                                 n
+                                                                ∏︂
+                         ×         Gsj+1 −sj (yj+1 − dyj )            Grj+1 −rj (zj+1 − dzj )   (13.26)
+                             j=1                                j=1
+                               ∏︂
+                         ×             K(τa , ηa ; τb , ηb ).
+                             {a,b}∈D
+
+
+Each pairing has coefficient one. If m + n is odd, the expectation is zero. Empty chains
+and the case m = n = 0 have the usual empty-product meaning. If K ≥ 0, every integral
+above is nonnegative. Consequently, entrywise comparison 0 ≤ K1 ≤ K2∑︁compares
+                                                                                     n
+all finite partial-order second moments in the same direction. The series       n≥0 r Yn
+                           2
+converges absolutely in L for every real or complex r.
+
+Proof. The mass of Gh is h. If Mn (T ) is the total mass of gnT,x , integration at the last
+                                        ∫︁ T
+vertex gives M0 = 1 and Mn (T ) = 0 (T − s)Mn−1 (s) ds. Induction therefore yields
+Mn (T ) = T 2n /(2n)!. Gaussian moments and Hölder’s inequality give
+                 ⃦               ⃦
+                   n
+                 ⃦∏︂             ⃦    n
+                                     ∏︂                   √︁
+                      W(s  , y )   ≤     ∥W(sj , yj )∥2n ≤ (2n − 1)!! V n/2 .
+                 ⃦               ⃦
+                 ⃦        j j ⃦
+                 ⃦               ⃦
+                  j=1                  2     j=1
+
+
+Mean-square continuity of Gaussian variables implies their continuity in every fixed finite
+Lp . Hence, the product is strongly measurable in L2 on the stated pieces. The finite
+kernel mass and the displayed bound prove Bochner integrability and (13.24).
+    Fubini now passes expectation through the product of the two finite kernel measures.
+For the m + n Gaussian variables at their labelled vertices, differentiate
+                     (︄                 )︄     (︄                                  )︄
+                       ∑︂                         1 ∑︂
+               E exp      ti W(τi , ηi ) = exp          ti tj K(τi , ηi ; τj , ηj )
+                        i
+                                                  2 i,j
+
+
+once in each ti at zero. Odd total degree gives zero. At degree 2k the result is the sum
+over unordered pair partitions, with one covariance product per pairing. Orientations
+and orderings of the k pairs cancel the exponential’s 2k k! denominator. Integration
+gives (13.25) with precisely the domains and coefficients in (13.26).
+    Symmetrizing a chain measure does not change its stochastic integral: the product of
+its n scalar field values is invariant under relabeling. Thus, averaging the n! pushforwards
+of gnT,x with coefficient 1/n! gives the same Yn . There is no additional n! factor in (13.25),
+or m!n! in a two-chain product. This identifies the ordinary ordered regularized integrals
+and their symmetrized convention in (2.1).
+    In dimension three one may first replace G by pη ∗ G. Those positive measures have
+the same masses and converge weakly to G. Off the finitely many time cut points,
+all finite Gaussian moments are bounded continuous functions of the spatial variables.
+
+                                                         92
+
+===== PHYSICAL PAGE 93 =====
+Dominated convergence for their finite Wick sums proves the same limit for the mixed
+second moments with two Green widths. It gives L2 convergence to the Bochner integral
+above, exactly the fixed-noise Green convention used in the source.
+    If K ≥ 0, positivity of the Green measures makes each covariance product nonnega-
+tive. Comparing them proves the stated finite-moment monotonicity, including self-pairs
+and unequal chains. Finally,
+                           √      the ratio √
+                                            of successive right sides of (13.24), with an addi-
+tional factor |r|n , is |r| V T 2 /((2n + 2) 2n + 1), which tends to zero. The zero-variance
+case is immediate. This proves Lemma 13.6.
+Lemma 13.7 (Uniform series tails from scaled moments). Fix (T, x). For each positive
+                                Ynϵ,δ be the terms of Lemma 13.6 for a field with nonnegative
+regularization pair (ϵ, δ), let ∑︁
+covariance. Write uϵ,δ (r) = n≥0 rn Ynϵ,δ . Suppose that, for some r > 1 and finite Br ,
+
+                sup E|uϵ,δ (r)|2 ≤ Br ,     Ynϵ,δ −→ Xn in L2 for each fixed n.
+                ϵ,δ>0
+
+                                              2   ϵ,δ          2
+           ∑︁
+Then u =      n≥0 Xn converges absolutely in L , u (1) → u in L , and
+                                          ⃦          ⃦ ⃦       ⃦
+                                                                    1/2
+                                          ⃦ ∑︂       ⃦ ⃦ ∑︂    ⃦   Br r−(N +1)
+    ∥Ynϵ,δ ∥2 , ∥Xn ∥2 ≤ Br1/2 r−n ,             ϵ,δ
+                                               Yn ⃦ , ⃦     Xn ⃦ ≤             .       (13.27)
+                                          ⃦          ⃦ ⃦       ⃦
+                                                                     1 − r−1
+                                          ⃦
+                                          ⃦          ⃦ ⃦       ⃦
+                                           n>N        2   n>N   2
+
+If also E|uϵ,δ (1)|2 ≤ B1 uniformly, then E|u|2 ≤ B1 .
+Proof. Lemma 13.6 gives absolute L2 convergence of every regularized series and nonneg-
+ative mixed moments. Its scaled second moment therefore contains the nonnegative term
+r2n E|Ynϵ,δ |2 , so r2n E|Ynϵ,δ |2 ≤ Br . Taking the fixed-order L2 limit proves the same bound
+for Xn . The geometric series and the triangle inequality give all estimates in (13.27),
+including absolute convergence.
+    For each N , write both full series as their first N + 1 terms and their tails. Their
+distance is at most                                ⃦                ⃦
+                                     1/2              N
+                                   2Br r−(N +1) ⃦  ⃦∑︂ ϵ,δ
+                                                                    ⃦
+                                                +        (Y  − X n ⃦ .
+                                                                  )
+                                                                    ⃦
+                                           −1              n
+                                     1−r
+                                                   ⃦
+                                                   ⃦ n=0            ⃦
+                                                                2
+First let ϵ, δ ↓ 0 at fixed N , and then let N → ∞. This proves convergence of the full
+regularized solution; it was not assumed. Continuity of the L2 norm passes the bound
+B1 to u. This proves Lemma 13.7.
+Theorem 13.8 (Full upper scale). Under Hypothesis 1.1, let u be the canonical ex-
+pansion solution (2.1), constructed as a Stratonovich mild solution in Proposition 3.9.
+Put
+                                          απµ(B1 )
+                                   Rα =              .
+                                         2 sin(πα/2)
+For every admissible d = 1, 2, 3, there is a finite C = C(α, α0 ) such that
+
+        Eu2 (T, x) ≤ e(T + 2)d exp{CRα1/(3−α) T (4−α−α0 )/(3−α) },     T ≥ 1.          (13.28)
+
+In particular, this establishes the unchanged Goal 43.1.
+
+                                                 93
+
+===== PHYSICAL PAGE 94 =====
+Proof. Zero noise is trivial. Choose H0 with 6T ≤ H0 < 12T . At lengths hj = H0 2−j ,
+use the three grids with endpoints hj (n + (−1)j t), n ∈ Z, t = 0, 1/3, 2/3. They are
+nested: the difference between the parent and child shifts in child units is an integer,
+since 3t ∈ Z. For s ̸= r in [0, T ], choose a scale 3|s − r| < hj ≤ 6|s − r|. Boundaries of
+the three grids at this scale have mutual spacing hj /3 > |s − r|. Hence at least one grid
+interval contains both points, including their endpoints after choosing a boundary-free
+grid. It follows that
+                                   ∑︂
+            |s − r|−α0 ≤ 6α0                |I|−α0 1I (s)1I (r) =: K∞ (s, r).      (13.29)
+                            three grids, |I|≤H0
+
+For context, the sum is at most Cα0 |s − r|−α0 off the diagonal: only lengths at least
+|s − r| contribute, with at most one interval per grid and length. Endpoint values do
+not affect the time integrals.
+    Keep intervals meeting [0, T ] through depth J, and use independent static smoothed
+fields with σI2 = 6α0 |I|−α0 . Their time covariance is the corresponding partial sum KJ .
+The decreasing interval lengths obey hi ≤ 78T /i. Indeed, at length hj there are at most
+3(T /hj + 2) intervals. Summing levels 0, . . . , j bounds their cumulative count by
+                       6T /hj + 6(j + 1) ≤ 6T /hj + 6 2j ≤ 78T /hj ,
+since H0 < 12T and 2j = H0 /hj . Each index at level j is at most that cumulative
+count, which gives the asserted decreasing-length bound. Thus, one may take L = 78
+and c = 6α0 in Proposition 13.5. Proposition 13.5 applies uniformly in J, ϵ.
+    To pass from phase data to constant initial data, choose fT ∈ Cc∞ with 0 ≤ fT ≤
+1, equal to one on BT +1 and supported in BT +2 , and set the velocity to zero. For
+|y| + s < T + 1, Gs ∗ fT (y) = s, so Cs fT (y) = 1. The support of Gt is contained
+in Bt . Along a chain ending at x ∈ B1 at time T , each earlier point (s, y) satisfies
+|y| + s ≤ |x| + T < T + 1. Thus, its free initial-data factor is one. Induction on Duhamel
+order identifies the position generated from (fT , 0) at time T on B1 with the constant-
+data model uJ,ϵ . This identity can be taken in Gaussian L2 term by term. At fixed J, ϵ,
+each finite-order terminal integral is continuous in x as an L2 (Ω) vector: write its Green
+variables as displacements from x, and use continuity of Γϵ in its mixed Wick moments.
+Bounded covariance products and the finite terminal Green mass permit dominated
+convergence. These measurable representatives identify the L2 (Ω; L2x ) position on B1
+with the same pointwise constant-data terms. The summable bound below passes this
+identity to their series. At finite J, ϵ, pointwise convergence for constant data follows
+                                n/2
+                   √︁
+from the bound (2n − 1)!! vmax T 2n /(2n)! on the nth position term. The model is
+spatially stationary. Consequently,
+            |B1 |E|uJ,ϵ (T, 0)|2 ≤ E∥ufT ,J,ϵ (T )∥22 ≤ e |BT +2 | exp{CRα1/ν T β/ν }.
+  We now identify the interval-model Wick sums before comparing them. Its centered
+Gaussian noise has covariance
+                                   ∑︂
+       E[WJ,ϵ (s, y)WJ,ϵ (r, z)] =    σI2 1I (s)1I (r)Γϵ (y − z) = KJ (s, r)Γϵ (y − z).
+                                   I∈FJ
+
+
+                                                  94
+
+===== PHYSICAL PAGE 95 =====
+Lemma 13.6 applies: at fixed J, ϵ the field has bounded variance, is mean-square contin-
+uous in space and is piecewise continuous in time. Its exact terminal kernels are (13.23),
+and every term of (13.26) has covariance factor KJ (sj , sl )Γϵ (yj −yl ), with coefficient one.
+This comparison is made before any time reversal; KJ need not be stationary in time.
+The position kernels and constant initial data are nonnegative. Thus, every such inte-
+gral, including self-pairings and unequal chain lengths, is nonnegative. The pointwise
+L2 convergence proved above identifies the full moment with their nonnegative sum. In
+particular, the moment of every finite partial-order sum is at most the full moment, even
+though samplewise partial sums need not increase.
+   From the current author version [4, (2.23)–(2.24), p. 13], the actual common noise
+regularization has covariance γδ0 (s − r)Γϵ (y − z), where
+                                              ∫︂ δ−1
+                     0 ≤ γδ0 (t) = Γ(α0 )−1             e−q|t| q α0 −1 dq ≤ |t|−α0 .
+                                               0
+
+Here Γ(α0 ) is the Euler Gamma function. At fixed positive ϵ, δ, first take the source’s
+Green-width limit. The bounded continuous covariances, weak convergence of the posi-
+tive Green measures and the dominated finite Wick calculation in Lemma 13.6 identify its
+classical measure-kernel Duhamel terms. For the source’s continuous field modification,
+these Bochner terms equal the pathwise smoothed integrals:
+                                                        ∫︁        writing Φn for the product
+of field values, the Gaussian bound in that lemma gives ∥Φn ∥2 dgnT,x < ∞. Tonelli gives
+pathwise integrability and Minkowski puts the integral in L2 . Fubini against every L2
+test variable and Bochner duality identify the two versions. The same argument applies
+before the Green-width limit in dimension three.
+     Write UNϵ,δ for the sum of source terms of orders 0, . . . , N after that Green limit.
+          ϵ
+Write VN,J   for the same partial-order sum of the finite interval model. Both moments
+are finite sums over exactly the same terminal-chain kernels and pairings; only the
+covariance factors differ. By (13.29) each source covariance factor is bounded by its K∞
+counterpart. Since KJ ↑ K∞ , nonnegative Tonelli at fixed N yields
+
+         E|UNϵ,δ (T, x)|2 ≤ lim E|VN,J
+                                   ϵ
+                                       (T, x)|2 ≤ sup E|uJ,ϵ (T, x)|2 ≤ B(T ),          (13.30)
+                           J→∞                            J
+
+where B(T ) is the right side of (13.28). The middle inequality uses the positive pairing
+sum just identified. No Gaussian field of covariance K∞ Γϵ is constructed; K∞ is used
+only inside these monotone limits of positive integrals. This is entrywise comparison of
+Wick integrals, not covariance order for arbitrary initial phases or a coupling of random
+solutions.
+    The same finite-model argument works after multiplying the source noise by any
+real amplitude a > 0. This replaces Γ by a2 Γ and Rα by a2 Rα , without changing its
+homogeneity degree or any parameter-only constant. Thus,
+
+           E|uϵ,δ (a; T, x)|2 ≤ B(T ; a) := e(T + 2)d exp{C(a2 Rα )1/ν T κ }.           (13.31)
+
+Here the full regularized series exists by Lemma 13.6; it is the ordinary Duhamel series
+with its order-n term multiplied by an . Taking the finite partial-order cutoff to infinity
+
+                                                   95
+
+===== PHYSICAL PAGE 96 =====
+in (13.30) is justified at positive regularization by that lemma, not by a theorem about
+the original unsmoothed solution.
+    Lemma 3.6 supplies the fixed-order construction: each Ynϵ,δ converges in L2 to
+Xn = Sn (gn ) as ϵ, δ ↓ 0, with arbitrary relative rates. The bounded-noise Green limit
+and ordered-kernel convention needed to match these terms are already verified in
+Lemma 13.6.
+    Apply Lemma 13.7 with r = 2 and Br = B(T ; 2). It proves absolute L2 convergence
+of the series defining u in (2.1) and convergence of the full regularized solution to that
+series. Taking the limit in (13.31) at a = 1 proves the required bound. This series-
+limit argument is independent of Proposition 3.1, Lemma 3.7, and the source’s Section 5
+convergence proof. No first-moment asymptotic or printed normalization is used. The
+fixed-order construction just used is proved here from the universal pairing bound and
+the homogeneous norm estimates; neither the source’s Theorem 4.1 nor its Lemma 4.4
+is imported. Proposition 3.9 separately proves that this same series satisfies the source’s
+Definition 2.1: its onefold Stratonovich integral equals u − 1. That construction uses the
+corrected mixed-vertex crude bound for its product and order limits. This is a separate
+dependency from the sharp-scale moment estimate just proved; the source’s Section 5(ii)
+proof is not imported. The crude constants used for this identification may depend on
+the fixed covariance; they do not enter (13.28). No uniqueness assertion is made.
+    Cutoff dependence and the order of limits. The preceding argument uses the following
+distinct statements.
+
+ (i) At fixed total order 2k, the coefficient estimates are uniform in the Gaussian-
+     mode and spatial-band cutoffs, in the finite interval family, and in positive spatial
+     smoothing. The local Hermite cutoff Ni = 2ki preserves each selected coefficient
+     exactly; it is an algebraic choice, not a degree limit. Lemma 13.4 and the inventory
+     bound contain no smoothing-dependent variance.
+
+ (ii) At fixed finite interval family and ϵ > 0, mode and band limits identify these
+      coefficients with the actual Duhamel words. The entire-series majorant in Propo-
+      sition 13.5 may depend on this family and ϵ, through vmax . It is used for identifi-
+      cation, not as a uniform moment estimate. The uniform coefficient bound passes
+      to these limits. Localization and positive covariance comparison are applied only
+      after removing these cutoffs; positivity of a finite-mode covariance is not assumed.
+
+(iii) For the resulting finite-depth interval model, the moment bound is uniform in
+      J, ϵ. Fix positive source widths ϵ, δ and finite partial order N . The Green-width
+      limit is taken first. The subsequent J → ∞ comparison in (13.30) is monotone
+      convergence of finite positive Wick integrals. At these fixed noise widths, N → ∞
+      is justified by Lemma 13.6, yielding (13.31). There is no infinite-depth Gaussian
+      field or simultaneous mode-depth limit in this step.
+
+(iv) At each fixed T, x, Γ and order n, Lemma 3.6 gives qualitative L2 convergence as
+     ϵ, δ ↓ 0, with arbitrary relative rates. The bound B(T ; 2) gives tails uniform in
+     these two widths. Lemma 13.7 first uses their limit at fixed partial order, then
+
+                                            96

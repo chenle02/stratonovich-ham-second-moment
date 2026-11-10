@@ -1,0 +1,71 @@
+{
+  "status": "EXACT_FINITE_FALSIFICATION_NOT_GENERAL_PROOF_OR_LEAN",
+  "A0_spatial": [
+    [
+      2,
+      1
+    ],
+    [
+      1,
+      2
+    ]
+  ],
+  "D_spatial": [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      2
+    ]
+  ],
+  "commutator_A0_D": [
+    [
+      0,
+      1
+    ],
+    [
+      -1,
+      0
+    ]
+  ],
+  "A0_eigenvalues": [
+    1,
+    3
+  ],
+  "Gaussian_basis": "unnormalized probabilists Hermite He_n; inner-product weights n!, multiplication g He_n=He_(n+1)+n He_(n-1), so the truncated operator is selfadjoint in this stated Gaussian metric",
+  "phase_generator": "G_z=G0+zK, G0(u,w)=(w,-A0*u), K(u,w)=(0,G_N tensor D*u)",
+  "initial_phase": "vacuum tensor u=(1,0), vacuum tensor velocity=(0,1)",
+  "tested_time_power_derivative_orders": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "tested_coupling_orders": [
+    0,
+    1,
+    2
+  ],
+  "N2_N4_embedded_coefficients_exactly_equal": true,
+  "N1_wrong_cutoff_first_difference": {
+    "time_power_derivative_order": 3,
+    "coupling_order": 2,
+    "Gaussian_degree2_velocity_spatial0_difference": 1,
+    "Taylor_coefficient_of_this_difference": "h^3/3!",
+    "vacuum_self_contraction_velocity_spatial0_retained": 1
+  },
+  "legal_abstract_phase_hypothesis": "A0>=I; bounded B_N selfadjoint in Gaussian metric; ||A_rho^(-1/2)B_N A_rho^(-1/2)|| <= ||B_N||/(rho^2+1) <= ||B_N|| rho^(a-2) for allrho>0,0<a<1. This is an abstract control, not a claim that this finite D is a spatial homogeneous-covariance realization.",
+  "boundaries": [
+    "finite derivatives only, not the full analytic phase equality",
+    "not an infinite-mode/band or zero-smoothing result",
+    "not a new Lean fact or acceptance gate",
+    "actual general cutoff induction and both-component coefficient identification remain assigned to work15"
+  ]
+}

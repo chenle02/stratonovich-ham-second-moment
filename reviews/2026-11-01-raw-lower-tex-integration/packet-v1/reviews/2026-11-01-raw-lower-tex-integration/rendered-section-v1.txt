@@ -1,0 +1,546 @@
+Here BL/2 ⊂ BL − y for |y| ≤ A and L ≥ 2A. All covariance masses in the argument are
+compact and finite. The kinetic energy is Dψ L−2 . Since α < 2, choose L large enough
+that εR := CΓ L−α − Dψ L−2 > 0. Then
+                               ∫︂
+                     ∥∇ψL ∥2 − Vσ ψL2 ≤ −εR for every σ ∈ I.
+                            2
+
+
+
+Fix this finite R before invoking Proposition 23.1. Its level bound and the mean Lipschitz
+estimate give
+                                        ∥Vσ − Vτ ∥∞
+                           |λσ − λτ | ≤     √       ≤ CR |σ − τ |.
+                                           2 εR
+The positive mean integrates the entire time test, so λ0 > 0 even though Ψ(0, ·) = 0.
+Only the trial and mask have grown; the raw test, its variable and (23.21) were fixed
+first. Enlarging R to contain additional fixed compact test supports preserves the trial
+and gives equality of masked and unmasked potential energies on those supports. This
+includes singular invariant-direction covariances and the one-dimensional white case. It
+is not an all-strength binding assertion for one fixed compact potential. Masks are fixed
+before source or time asymptotics; a later supremum over controls must follow their
+individual bounds. This proves Proposition 23.7.
+
+
+24     Exact scaling of the canonical solution
+Lemma 24.1 (Canonical law scaling). Under Hypothesis 1.1, put a = α0 , κ = (4 − α −
+a)/(3 − α), and, for T > 0,
+
+                          δ = T −κ ,     rT = T δ = T (a−1)/(3−α) .
+
+The law of u(T t, rT x) is the canonical expansion solution Vδ (t, x) with data (1, 0) of
+                                                   √
+                                 δ 2 ∂t2 Vδ = ∆Vδ + δ Ẇ Vδ ,                         (24.1)
+
+where Ẇ has the original raw covariance. In particular,
+
+                         T −κ log E|u(T, 0)|2 = δ log E|Vδ (1, 0)|2 .                (24.2)
+
+The assertion is equality in law; it assumes no pathwise uniqueness for a full rough
+solution.
+
+Proof. At positive widths, time and space dilation of the Gaussian source gives covari-
+ance amplitude T −a rT−α . This follows distributionally from the homogeneous Radon
+covariance, including spatial white noise. Its source cutoffs transform by Kη (T s) =
+T −a Kη/T (s) and ϵ ↦→ ϵ/rT2 ; the joint maximum-time and summed-space width laws are
+preserved at every vertex. The actual Green measure has the scaling
+
+                             Gd (T τ, rT dz) = rT Gd (τ /δ, dz).
+
+                                             166
+It follows from its degree 1 − d distributional scaling, also for the sphere measure in
+                                                                                   −α/2
+dimension three. Each terminal Duhamel vertex thus contributes T rT T −a/2 rT . Sub-
+stitution of the displayed positive real powers gives
+                               2−α/2
+                                      √                  1−α/2
+                       T −a/2 rT     = δ,      T 1−a/2 rT      = δ −1/2 .
+                                                                                          √
+The Green kernel for the forcing in (24.1) is δ −1 Gd ((t − s)/δ); after multiplication by δ
+it gives exactly that vertex factor. Therefore every finite list of fixed-order coefficients
+has the same joint law under the dilation, including all self-pairings, unequal orders and
+empty chains. At fixed T, rT , remove Green smoothing first in dimension three, with its
+width divided by rT2 on the scaled side. Lemma 3.6 and the absolute L2 summability
+in Lemma 3.8 pass the identities to the canonical series and its second moment. No
+large-time and source limit are interchanged. This proves the law assertion and (24.2).
+This proves Lemma 24.1.
+
+
+25     Actual raw blocks and the original point lower
+       bound
+Fix a nonzero covariance from Hypothesis 1.1 and any real nonnegative nonzero Ψ ∈
+Cc∞ ((0, 1)×Rd ). Retain the original Z = W (Ψ), v = vΨ > 0 and mean hs of Lemma 23.6.
+Choose one finite even mask mR ∈ [0, 1], equal to one on BR and supported in B2R , as in
+Proposition 23.7. Then Vs = mR hs has the ground family, rate λs and full F projection
+of Section 23. Set
+                         ∫︂ 1
+                   IR =       λs ds,   Q2 = lim inf T −κ log E|u(T, 0)|2 .
+                           0                       T →∞
+
+
+We will prove Q2 ≥ 2IR − v/2, for this same control and covariance. Fix a real nonnega-
+tive smooth compact ϕ of integral one, the bounded observable Oϕ , and the actual data
+e0 = (0, 1, 0) ∈ F . Both displacement and velocity are retained.
+
+25.1     The common raw noise and its exact Gaussian shift
+Choose an integer B ≥ 1, later fixed by the cone estimate, and take 0 < δ < min(1, 1/B).
+Define
+      ⌊︃ ⌋︃
+         1
+ N=         ≥ 1, sm = mδB (0 ≤ m ≤ N ), τ = δ −1 − N B ∈ [0, B), gδ = δ (1−a)/2 .
+        δB
+                                                                                   (25.1)
+For a smooth compact positive-fast-time test f , extended by zero, put
+
+             Tδ,m f (s, x) = δ a/2−1 f ((s − sm )/δ, x),   Wδ,m (f ) = W (Tδ,m f ).   (25.2)
+
+Write Wfast = Wδ,0 . Use the same admissible γ, θ, β as (19.1). Write AR (Wδ,m ) for the
+actual F first driver obtained by the bounded extension (22.5), on the local horizon
+
+                                                167
+[0, B], and set
+                                            ∫︂ u
+        Xm = gδ AR (Wδ,m ),      Hm (u) =          SF (−r)iBF (Vsm +δr )SF (r) dr.   (25.3)
+                                             0
+
+The convolution formula for h extends smoothly to s ∈ [0, 2], covering these means.
+Ground templates will only use sm ∈ [0, 1].
+
+Lemma 25.1 (Actual coupled Gaussian block inputs). Each Tδ,m is an isometry of
+the raw test completion, respecting covariance-null tests. All Wδ,m and Z are on the
+same given noise space, without an independence assertion. Let K(F ) have the operator
+norm and let B0 = hθ0 ([0, B]; K(F )) be the C θ closure of zero-initial polygonal compact-
+operator paths. It is a separable Banach space. In Bδ = B0N +1 with maximum norm,
+(X, Z), X = (Xm )N m=0 , is jointly centered Gaussian and
+                                         √
+                         b := E[XZ] = δ H,          H = (Hm )N m=0 .                 (25.4)
+
+Moreover,
+                                            √
+                           ∥Xm ∥Lp B0 ≤ CR,B p gδ ,          p ≥ 1.                  (25.5)
+
+Proof. Substituting s = sm + δu, t = sm + δr in the raw covariance gives the factor
+δ a−2 δ 2 δ −a = 1. Thus the maps extend isometrically through the null quotient. Direct
+test substitution gives Wδ,m (f ) = Wfast (f (· − mB, ·)). These are literal common-space
+identities.
+    Finite-rank rational matrices in a countable real Hilbert basis are dense in K(F ):
+for compact T , Pn T Pn → T in norm by compactness of T, T ∗ , and finite entries admit
+rational approximation. Polygonal paths with rational breakpoints and such matrices
+give separability of B0 . To approximate breakpoints, use uniform convergence, uniform
+Lipschitz bounds and [f ]θ ≤ (2∥f ∥∞ )1−θ Lip(f )θ . The same inequality puts every zero-
+initial Lipschitz compact-valued path in B0 by polygonal approximation. The finite raw
+coefficient paths iAj Lψ have these properties. Their actual Gaussian sums converge in
+Lp C θ and hence in the closed space B0 . Their laws and the parent Gaussian norm bound
+give (25.5). Every finite joint coefficient list with Z is Gaussian on the same W . Scalar
+continuous functionals pass through the L2 limits, preserving Gaussianity by convergence
+of variances and characteristic functions. Thus (X,√Z) is the asserted Banach Gaussian
+variable. Cauchy–Schwarz gives E∥XZ∥ ≤ ∥X∥2 v < ∞, so its Bochner covariance
+exists.
+    The original raw covariance and the test pullback give
+                                              ∫︂
+                                          a/2
+                        E[Wδ,m (f )Z] = δ        f (u, x)hsm +δu (x) dx du.         (25.6)
+
+Absolute Fubini uses compact supports, local Radon mass and a < 1. This identity
+extends to the literal driver matrix tests on E: their time indicator is approximated by
+smooth bounded tests on one compact support, converging in the raw norm by dominated
+convergence against |u−r|−a Γ; their mean pairings converge as well. The actual Sobolev
+
+                                            168
+                                                                            √
+adjoint is the one in (19.11). Hence the path covariance is gδ δ a/2 Hm = δ Hm on real
+Schwartz E pairs. For constant inputs the two columns are the same Lψ inputs (ψ, 0)
+and (0, ψ), and total finite propagation identifies their deterministic response. The span
+of E and both constant coordinates is dense in F ; E alone is not. Boundedness,
+                                                                            √      rational
+times and path continuity prove (25.4) on all F . In particular H = b/ δ ∈ Bδ . This
+proves Lemma 25.1.
+Proposition 25.2 (Change of law on the whole norm-Borel space). For every nonneg-
+ative norm-Borel j on all of Bδ ,
+                                  [︂   √                 ]︂
+                         Ej(X) = E e−Z/ δ−v/(2δ) j(X + H) .                 (25.7)
+
+The equality is valid also as an extended nonnegative integral.
+                                       2
+Proof. For real s, the density e−sZ−s v/2 defines an equivalent probability measure Qs
+by completing the square in the N (0, v) density. For any finite list ℓ of continuous real
+coordinates on Bδ , the Gaussian vector (ℓ(X), Z) is equal in law to (T G, z ·G) for a finite
+standard Gaussian vector G. A positive covariance square root gives this representation
+even when singular; no inverse is used. Here T z = ℓ(b) and |z|2 = v. Substitution
+G′ = G + sz in its density gives EQs f (ℓ(X + sb)) = Ef (ℓ(X)) for every bounded Borel
+f.
+    The matrix entries of each block in a real Hilbert basis at rational times, together
+with 0, B, generate the norm-Borel sigma-field. To see the operator-norm point, for
+a countable dense set D of unit vectors obtained from normalized rational finite basis
+combinations, ∥T ∥ = supu,w∈D |⟨T u, w⟩|. These pairings are finite linear combinations of
+matrix entries. Supremum and Hölder norms of continuous paths are suprema over ratio-
+nal times and pairs. Thus distance to every fixed element of Bδ is coordinate-measurable.
+Open balls are measurable by rational closed-ball approximation, and separability makes
+every open set a countable union of balls from dense centers. Conversely the coordinates
+are continuous. The cylinder sets form a generating pi-system; uniqueness of probability
+measures extends the finite-coordinate equality to all norm-Borel sets. Simple functions
+and monotone convergence give the identity for nonnegative j. Finally take s = δ −1/2
+and use sb = H from (25.4). The map and its deterministic translate are defined on the
+entire input space; there is no translated exceptional-domain assumption. This proves
+Proposition 25.2.
+
+25.2     Small noisy blocks and an indexed full-phase cone
+For any x ∈ B0 define Dx (u) = SF (u)Ux (u, 0) by the everywhere-defined linear Young
+                                  0                 +
+map of Proposition 22.4. Write Dm   = DXm and Dm       = DXm +Hm . The latter retains
+both the mean and the actual residual noise.
+Lemma 25.3 (Uniform block error). Let Mδ = maxm≤N ∥Xm ∥B0 , including its factor
+gδ . Then Mδ → 0 in every finite Lq , and, for some c > 0,
+                                               2
+                                      sup EecMδ < ∞.                                  (25.8)
+                                       δ
+
+
+                                            169
+With the actual deterministic Ps from the preceding section,
+                          +
+       Eop,δ := max sup ∥Dm (u) − Psm (u)∥B(F ) −→ 0          in every finite Lq .          (25.9)
+                m≤N 0≤u≤B
+
+Proof. The maximum and (25.5), with N + 1 ≤ 2/δ, give
+                                      √          √
+                 ∥Mδ ∥p ≤ (N + 1)1/p C p gδ ≤ C ′ p δ (1−a)/2−1/p .
+For fixed q, choose p > max(q, 2/(1 − a)) to prove the first limit. No independence is
+needed. Choose an integer n0 with n0 (1 − a) ≥ 1. For n ≥ n0 ,
+                         EMδ2n ≤ 2C 2n (2n)n δ n(1−a)−1 ≤ 2C 2n (2n)n .
+For 1 ≤ n < n0 , Lyapunov bounds the moment by the appropriate power of the 2n0
+moment. These finitely many terms ∑︁    are bounded. For the remaining exponential series,
+n! ≥ (n/e)n gives a geometric tail 2 n≥n0 (2ecC 2 )n for small c. This proves (25.8); no
+such assertion is made for the unscaled maximum.
+           stat
+     Let Hm     be the primitive for constant potential Vsm . Compact mean smoothness on
+[0, 2] and the statewise primitive bound give
+                                stat                              stat
+           sup max(∥Hm ∥C θ , ∥Hm    ∥C θ ) ≤ H 0 ,    sup ∥Hm − Hm    ∥C θ ≤ Cδ.
+            m                                           m
+
+Indeed, the potential difference is at most CδB in L∞ and L2 ; integration of the bounded
+free groups gives its Lipschitz primitive bound on this fixed horizon. On {Mδ ≤ 1}, local
+Young stability on the fixed ball of radius H0 + 1 gives Eop,δ ≤ C(Mδ + δ). This proves
+convergence in probability. The global Young bound also gives
+                                +
+                                  (u)∥ ≤ CB exp CB (1 + H0 + Mδ )1/θ .
+                                                (︁                    )︁
+                    max sup ∥Dm
+                     m   u≤B
+
+Since 1/θ < 2, every finite power of this bound is dominated by a constant times the
+exponential in (25.8). Uniform higher moments yield uniform integrability, proving
+(25.9). Suprema are measurable: on a countable dense set of unit states each difference
+is continuous in u, so rational times and those states suffice. Operator-norm continuity
+of the physical free group is not used. Only sm ≤ 1 supplies the ground templates. This
+proves Lemma 25.3.
+Lemma 25.4 (Indexed cone and terminal displacement). Fix 0 < ϱ < 1/2. There are
+an integer B ≥ 1 and positive ω, ϵop , c∗ such that the following holds for every N ≥ 1.
+If σ0 , . . . , σN ∈ I have adjacent distances at most ω and real bounded operator families
+Dm (u), 0 ≤ u ≤ B, satisfy
+                            max sup ∥Dm (u) − Pσm (u)∥ ≤ ϵop ,
+                            m≤N 0≤u≤B
+
+then, for 0 ≤ u ≤ B,
+                                                         (︄                      )︄
+                                                              ∑︂
+ Oϕ DN (u)DN −1 (B) · · · D0 (B)e0 ≥ c∗ (1 − ϱ)N −1 exp B           λσm + uλσN        > 0. (25.10)
+                                                              m<N
+
+No positivity, composition or independence assumption on the Dm is required.
+
+                                              170
+Proof. From (23.17) fix Cgap ≥ 1, ηgap > 0 so the normalized complementary norm is at
+most Cgap e−ηgap t . Define positive margins and finite bounds
+ a∗ = inf ℓs (e0 ),   j∗ = inf Oϕ (es ),   Me = max(1, sup ∥es ∥),     Mℓ = max(1, sup ∥ℓs ∥).
+        I                   I                            I                             I
+
+Also put MP = max(1, supI ∥Πs ∥), MQ = 1 + MP , Mz = Me + 1, E0 = ∥e0 ∥ = 1 and
+Hobs = max(1, ∥Oϕ ∥). Choose the aperture first: ϑ = min(1, j∗ /(16Hobs Cgap )) > 0.
+Next choose integer B ≥ 1 with
+                                                 (︃          )︃
+                                   −ηgap B          1 ϑa∗
+                      qB := Cgap e         ≤ min     ,          .
+                                                    8 8MQ E0
+Choose ν > 0 such that νMz ≤ min(ϱ/2, ϑ, 1/4). Uniform continuity of ℓs , Πs supplies
+ω > 0 for which adjacent distances at most ω give both norm differences at most ν.
+Finally choose ϵop > 0 satisfying all five budgets
+         Mℓ ϵop Mz ≤ ϱ/2,              MQ ϵop Mz ≤ ϑ/4,
+         Mℓ ϵop E0 ≤ a∗ /2,            MQ ϵop E0 ≤ ϑa∗ /8,           Hobs ϵop Mz ≤ j∗ /8.
+All denominators are positive. This order of choices uses the normalized complement
+rather than a growing terminal norm.
+   The cone at s consists of z = Aes + r, with A = ℓs (z) > 0, ℓs (r) = 0 and ∥r∥F ≤ ϑA.
+In particular r = Qs z and ∥z∥ ≤ Mz A. For entrance, z1 = D0 (B)e0 , with b = σ0 , has
+normalized amplitude at least a∗ − Mℓ ϵop E0 ≥ a∗ /2. Its normalized residual is at most
+qB MQ E0 + MQ ϵop E0 ≤ ϑa∗ /4. Thus it enters the cone with residual ratio at most ϑ/2
+and amplitude at least eλb B a∗ /2.
+   For an old-cone state z = Aeb + r and an adjacent index c, rebase before using the
+complementary estimate:
+       ℓc (z) ≥ (1 − νMz )A,          ∥Qc z∥ ≤ ∥Qb z∥ + ∥(Πb − Πc )z∥ ≤ (ϑ + νMz )A.
+For the next full block D close to Pc (B), put x = e−λc B ℓc (Dz) and y = e−λc B ∥Qc Dz∥.
+Since λc > 0, the perturbation and budgets give
+                       x ≥ (1 − νMz − Mℓ ϵop Mz )A ≥ (1 − ϱ)A > A/2,
+and
+                          y ≤ [qB (ϑ + νMz ) + MQ ϵop Mz ]A ≤ ϑA/2.
+The last inequality uses qB ≤ 1/8, 0 ≤ νMz ≤ ϑ and MQ ϵop Mz ≤ ϑ/4. Together with
+ϱ < 1/2, these give y ≤ ϑx. These are precisely the finite residual and cone-conversion
+margins; the old residual was not assumed to lie in the new kernel. Each full block
+therefore preserves the new cone and multiplies its amplitude by at least eλc B (1 − ϱ).
+     For the terminal 0 ≤ u ≤ B, rebase once more to c = σN . The same bounds give
+ℓc (z) ≥ 3A/4 and ∥Qc z∥ ≤ 2ϑA. Consequently,
+                          e−λc u Oϕ (Pc (u)z)/A ≥ 3j∗ /4 − 2Hobs Cgap ϑ.
+The perturbation changes this by at most Hobs ϵop Mz ≤ j∗ /8. Since 16Hobs Cgap ϑ ≤ j∗ ,
+the result is at least j∗ /2. Combine entrance, all N − 1 intermediate full blocks and
+this terminal estimate to obtain (25.10), with c∗ = a∗ j∗ /4. The induction is empty for
+N = 1 and the estimate includes u = 0. This proves Lemma 25.4.
+
+                                               171
+25.3     Actual source restart and comparison with the original
+         point
+Lemma 25.5 (The actual raw restart and source products). Fix δ, B, N and let L = δ −1 ,
+Lext = (N + 1)B ≥ L. On this global fast horizon define Aglob = gδ AR (Wfast ). Its actual
+physical flow obeys
+                                            0
+                      Pglob (mB + u, mB) = Dm (u),                   0 ≤ u ≤ B.        (25.11)
+
+The analogous identity holds with the deterministic mean Vδt added globally and local
+drivers Xm + Hm . Their finite block products, including the last remainder τ , are actual
+source limits in L2 , at this fixed δ, N .
+
+Proof. Take one retaining slow source Yϵ,η on the extension of the given W constructed
+in Section 20. Define the actual fast and local noises by
+
+                      Yfast (f ) = Yϵ,η (Tδ,0 f ),         Ym (f ) = Yϵ,η (Tδ,m f ).
+
+The pullback isometry and (20.12) give source and residual variance bounds by ∥f ∥2HW .
+The residual tends to zero on each transformed smooth compact test at fixed δ, m. Joint
+Gaussianity is retained. Proposition 20.2 therefore gives the actual Lp C θ first-driver
+limits on [0, Lext ] and on [0, B], including both constant columns.
+    Their pointfields are Yfast (u, x) = δ a/2 Yϵ,η (δu, x) and Ym (u, x) = Yfast (mB + u, x).
+Indeed, these follow by change of variables in their test integrals. The temporal law
+is Kη/δ because δ a Kη (δr) = Kη/δ (r); the spatial heat law and all joint width rules are
+unchanged. They are continuous in time and smooth in space. Their ordinary primitives
+equal their Gaussian-transfer drivers: their actual matrix entries are Ym (hR ), by the
+indicator approximation used in (25.6) and the point-test integral identity. Total finite
+propagation extends this identity to both constant columns. This does not assume a
+separately chosen retaining extension automatically commutes with time dilation.
+    Changing the ordinary source integration variable and composing the free groups
+gives the exact identity on F
+
+               SF (mB) Asrc                    src                        src
+                         [︁                               ]︁
+                            glob (mB  + u) − A glob (mB)    SF (−mB) = Xm     (u).
+
+No physical mask is commuted through a wave group. Restriction, difference and con-
+jugation are bounded maps on these fixed-horizon C θ spaces. Passing the actual source
+limits gives the same identity for Aglob , Xm . For the finitely many m, a convergent
+subsequence or rational times and path continuity gives simultaneous identities in u.
+Conjugation norms need only be finite at this fixed δ.
+    Conjugate the global interaction Young equation on [mB, mB + u] by SF (mB).
+Bounded linearity of its Riemann sums and that raw identity give the local equation
+driven by Xm . Uniqueness identifies it with UXm , proving (25.11). The ordinary de-
+terministic primitive for Vδt has the identical cocycle with local Hm . Composition now
+identifies the full product, with terminal τ .
+
+
+                                                     172
+   For completeness, source convergence of these finite products requires no growing-
+product stability assertion. At fixed δ, N let C ≥ 1 be the maximum norm of their
+source and raw factors, and let esrc be the maximum factor difference. The parent Young
+convergence gives every finite moment of C uniformly in source widths and esrc → 0 in
+every finite Lp . If d(n) is the difference of the first n ordered products, then
+
+                         d(n + 1) ≤ Cd(n) + C n esrc ,          d(0) = 0.
+
+Extend both finite sequences by identities so the recurrence holds for all natural n. The
+finite error-accumulation estimate gives d(N + 1) ≤ (N + 1)C N +1 esrc . Hölder, using C
+in L4(N +1) and the error in L4 , proves L2 convergence. This is only a fixed-δ source
+limit. Shifted source products may use the fixed raw mean plus the regularized noise;
+no finite-source Cameron mean is substituted. This proves Lemma 25.5.
+Proposition 25.6 (The square observable and canonical comparison). Define the signed
+noise-only and shifted averages
+             0      0               0                            +      +               +
+  Uδ,B = Oϕ DN (τ )DN −1 (B) · · · D0 (B)e0 ,         Yδ,B = Oϕ DN (τ )DN −1 (B) · · · D0 (B)e0 .
+
+They have all finite unweighted moments, and
+                              [︂  √              ]︂
+                       2
+                    EUδ,B = E e−Z/ δ−v/(2δ) Yδ,B
+                                              2
+                                                    ,                                       (25.12)
+                       2
+                     EUδ,B ≤ E|Vδ (1, 0)|2 = E|u(T, 0)|2 ,          δ = T −κ .              (25.13)
+
+The variance v in the density is the original slow raw variance.
+Proof. On all of Bδ put
+
+                       jδ (x) = |Oϕ DxN (τ )DxN −1 (B) · · · Dx0 (B)e0 |2 .
+
+The everywhere-defined continuous Young map, fixed-time bounded free groups, finite
+products and bounded Oϕ make jδ continuous and nonnegative on the whole input
+space. Proposition 25.2 proves (25.12). Finite products of the local Young flows have
+every finite moment by their Gaussian norm bounds and Hölder, at fixed δ, N . The
+Gaussian identity itself did not require prior integrability of jδ .
+    To apply the masked comparison at the actual amplitude, put Γδ = gδ2 Γ and W ′ =
+gδ Wfast . This is a nonzero member of the same admissible covariance class, with un-
+changed degree α and temporal parameter a. Its actual first driver is gδ times the
+original one: the raw matrix forms are linear in noise, and basis-independent Gaussian
+transfer and the bounded F extension retain both constant columns. The nth source
+chain is multiplied by gδn . Thus this is exactly the noise-only model at that amplitude.
+    Lemma 25.5 and the ordinary source identity identify Uδ,B as the L2 limit of the tested
+masked ordinary solution driven by W ′ at fast time L = 1/δ. Its sources gδ Yfast have
+the correct law, contraction and raw test limit. Apply
+                                                    ∫︁    Proposition 21.3, or equivalently
+(22.17), to Γδ and this actual source limit. Since ϕ = 1,
+                                     2
+                                   EUδ,B ≤ E|uΓδ (L, 0)|2 .
+
+                                                173
+This application describes the same noise-only fast law; it changes neither the original
+slow Ψ, Z nor v in the density.
+    The ordinary change from fast u to slow t = δu, with phase (V, δVt√       ), identifies
+this unmasked fast law with (24.1) at slow time one. Indeed, gδ Yfast (u) = δ Yϵ,η (δu),
+and its fast cutoff is η/δ. The canonical fixed-order and absolutely convergent series
+construction passes this law identity at fixed δ to the raw moment, preserving every
+mixed and self-pairing term. Lemma 24.1 gives the final equality in (25.13). The physical
+scale rT = T δ is distinct from the fixed mask radius R. The mask need not contain the
+growing backward cone: the comparison is a moment inequality, not equality of masked
+and full fields. All source limits preceded this large-time comparison. This proves
+Proposition 25.6.
+Proposition 25.7 (Original point lower rate at the raw half-cost). For every original
+positive Ψ and eligible fixed mask R chosen above, and every fixed x ∈ Rd ,
+                                                   ∫︂ 1
+                               −κ             2                vΨ
+                      lim inf T log E|u(T, x)| ≥ 2      λs ds − .             (25.14)
+                       T →∞                          0          2
+Proof. Fix erate > 0. Choose 0 < ϱ < 1/2 with log(1 − ϱ) > −erate /3, then choose the
+cone constants, including fixed B, from Lemma 25.4. For small δ the indices sm = mδB
+lie in I with adjacent gaps at most ω. Define the measurable common-space event
+
+                           Eδ = {Eop,δ ≤ ϵop } ∩ {|Z| ≤ δ −1/4 }.
+
+Lemma 25.3 and Chebyshev give P(Eδ ) → 1, because P(|Z| > δ −1/4 ) ≤ vδ 1/2 . This uses
+a union bound, with no independence from Z or between blocks.
+   On Eδ the shifted blocks meet the cone hypotheses. In particular Yδ,B > 0, and
+                                                            ∑︂
+           δ log Yδ,B ≥ δ log c∗ + δ(N − 1) log(1 − ϱ) + δB    λsm + δτ λsN .
+                                                             m<N
+
+The last two terms form the left Riemann sum for IR on the partition including its final
+interval of length δτ , with mesh at most δB. The actual rate is Lipschitz, so its error is
+at most CR δB. Also 0 ≤ δ(N − 1) ≤ 1/B ≤ 1 and hence the logarithmic loss is at least
+log(1 − ϱ) > −erate /3. For sufficiently small δ, the Riemann error and δ| log c∗ | are each
+at most erate /3. Thus Yδ,B ≥ exp((IR − erate )/δ) on Eδ , including the N = 1 and τ = 0
+cases of the cone estimate.                                                            √
+    The square integrand in (25.12) is nonnegative. Restrict it to Eδ , where −Z/ δ ≥
+−δ −3/4 . With pδ = P(Eδ ) this gives
+                                      (︃                            )︃
+                          2              2IR − 2erate − v/2    −3/4
+                       EUδ,B ≥ pδ exp                       −δ         .
+                                                 δ
+For small
+    −1/4
+          √ δ, pδ 1/4≥ 1/2 and δ log pδ → 0. The normalized moderate penalty is
+δ(δ      / δ) = δ → 0. Taking logarithms and lower limits at this fixed erate and its
+associated B gives
+                                         2
+                         lim inf δ log EUδ,B ≥ 2IR − 2erate − v/2.
+                           δ↓0
+
+
+                                            174
+By (25.13), the B-independent original point rate is at least this right side for every
+fixed erate . Only now let erate ↓ 0. The bijection δ = T −κ covers all sufficiently large T .
+    Finally, spatial translation of all positive-width vertices preserves the original noise
+law, Green kernels and constant initial data. The fixed-order L2 and absolute-series
+limits preserve equality of point second moments. Hence zero can be replaced by every
+fixed x in (25.14). Every control and mask were fixed before asymptotics; a supremum
+over them may follow their individual inequalities. This proves Proposition 25.7.
+
+
+26      Targets
+Goal 26.1 (Upper bound at the correct scale). Under Hypothesis 1.1, prove
+lim supt→∞ t−κ log Eu2 (t, x) < ∞, ideally with an explicit constant.
+
+ Theorem 13.8 establishes the unchanged full upper goal for every admissible dimen-
+ sion and homogeneous covariance. The interval estimate passed scoped correctness
+ review. The preceding independent mild construction passed correctness review.
+ The explicit hypothesis/object revision and independent fixed-order construction
+ and their consumers passed their own scoped Opus5.5/HIGH review. A fresh whole-
+ paper cold read remains required. The earlier explicit bounds for 0 < α ≤ 1 remain
+ available. The sharp constant and final whole-paper cold read remain open.
+
+Goal 26.2 (Sharp second-moment constant). Under Hypothesis 1.1, derive a finite con-
+stant C2 (γ, α0 ) and prove, for every fixed x ∈ Rd ,
+
+                             lim t−κ log Eu2 (t, x) = C2 (γ, α0 ).
+                             t→∞
+
+A variational characterization must specify its full domain, covariance amplitude, ki-
+netic coefficient and Gaussian action. Derive further evaluations and bounds from this
+formula. For zero covariance, u(t, x) = 1 and C2 (0, α0 ) = 0.
+
+ Goal 26.2 follows Le’s revised direction of 2026-10-31: derive the actual constant,
+ whatever the computation gives. The original proposed bounds with endpoints
+ 2(4−α)/(3−α) L∗ and 2(4−α)/(3−α) L∗ remain comparisons with Conjecture 2.3. Matching
+ those endpoints or closing the source’s variational gap is not a completion require-
+ ment. No correction of the source’s normalization or equality of its energy domains
+ is adopted.
+
+
+
+27      Established steps and open questions
+1. The mixed expansion and the first obstruction. Section 3 proves the complete
+   nonnegative mixed expansion and an independent convergent solution series. It cor-
+
+                                             175
+      rects the time-uniformity issue in the source’s intermediate estimate. The common-
+      per-pairing majorant has exponent ρ > κ and cannot give the desired scale. This is a
+      restriction on that majorant, not on the model or all uses of the source’s Theorem 3.1.
+
+2. Calibrations. Section 4 gives the finite white and Riesz coefficients. As α0 ↓ 0,
+   the target exponent becomes (4 − α)/(3 − α), the static exponent. Proposition 2.4
+   is unconditional; its numerical 2L∗ specialization requires the stated first-moment
+   premise. Comparisons with the Skorohod model identify time exponents only.
+
+3. The full upper scale. Section 5 gives explicit bounds when α ≤ 1. Section 13
+   proves the full homogeneous-covariance upper scale by independent interval fields,
+   local Gaussian-degree estimates and dyadic covariance domination. The latter proof
+   does not assume an endpoint representation of the spatial covariance.
+
+4. The sharp constant remains open. Goal 26.2 requires a lower bound beyond
+   the unconditional Jensen comparison and a matching sharp upper constant. The
+   new candidate in Section 14 supplies a static lower comparison for all admissible
+   temporal exponents and a strict actual-mean gap only near the static endpoint; these
+   proofs passed their own scoped review. A representation using two ordered chains
+   is a possible research direction, not a proved result of these notes. The intended
+   normalization of the source’s first-moment constants also remains to be clarified.
+
+
+References
+[1] Raluca M. Balan and Daniel Conus, Intermittency for the wave and heat equations with fractional
+    noise in time, Ann. Probab. 44 (2016), 1488–1534 (); MR3474476
+[2] Xia Chen, Exponential asymptotics for Brownian self-intersection local times under Dalang’s con-
+    dition, Electron. J. Probab. 28 (2023), Paper No. 119, 17 (); MR4660700
+[3]          , Time-dependency     in   hyperbolic   anderson   model:   Stratonovich   regime,   Preprint
+      arXiv:2510.01412 (2025) ()
+[4]          , Time-dependency in hyperbolic Anderson models: Stratonovich regime, 2026. 64-
+      page author manuscript, submitted to Ann. Appl. Probab.; retrieved 2026-10-26, SHA-256
+      5f7385ca451e643a1f3ff31835e4ee52b2708b5d2e3652eec3fb5d3958b97b6c; supersedes Theorem 1.2 of
+      arXiv:2510.01412v1.
+[5] Xia Chen and Yaozhong Hu, Hyperbolic anderson equations with general time-independent gaus-
+    sian noise: Stratonovich regime, Ann. Probab. 53 (2025), 2144–2195. Available at 2403.08603 ();
+    MR4988274.Published version of arXiv:2403.08603
+[6] Michel Crouzeix and César Palencia, The numerical range as a spectral set, 2017. Author preprint,
+    arXiv:1702.00668v1; numbering used here refers to this version.
+[7] Peter K. Friz and Martin Hairer, A course on rough paths, Universitext, Springer, Cham, [2020]
+    ©2020. With an introduction to regularity structures, Second edition of [ 3289027]. MR4174393
+[8] Gerald Teschl, Mathematical methods in quantum mechanics, Second, Graduate Studies in Math-
+    ematics, vol. 157, American Mathematical Society, Providence, RI, 2014. With applications to
+    Schrödinger operators. MR3243083
+
+
+
+                                                     176
+

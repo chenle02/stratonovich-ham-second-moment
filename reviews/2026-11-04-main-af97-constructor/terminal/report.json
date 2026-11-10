@@ -1,0 +1,579 @@
+{
+  "schema": "PROSPECTIVE_THEMED_MAIN_REPORT_V1",
+  "phase_id": "ThemeII.CONSTRUCTOR",
+  "kind": "COUPLED_CONSTRUCTOR_WORKING",
+  "source_commit": "af97ae4db921a660b0a4ed1ffbe9b6f53a487e2b",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "medium",
+  "judgment_reason": "PROOF002 and PROOF009 are reconstructed from the exact bound source with the supplied fixed-random-factor Gaussian averaging replacing the erstwhile d3 compact-approximation obligation. Both close on the actual E=L2(Omega) scope with no uniqueness premise and without importing source Section 5.3/5.4, Section 5(ii), 4.1/L4.4, an F-space point trace, a radius/operator bound, or tilted-source convergence. The mild-to-physical-moment bridge is acyclic: 005/006 build fixed-order X_n without the mixed expansion or 009; 007/008 prove summability without the mixed expansion; 009 identifies the mild solution from 006/008 only; 002 then uses 009's identification for the square convergence and monotone regrouping. The honest residual is that the AUTHOR Theorem 3.1 induction remains a named import (only its edgewise hypotheses and the OWN214 Case 2 bridge are validated here), and PROOF004/005/006/007/008/214 are consumed as validated subclauses rather than being re-derived or re-graded in this bounded report.",
+  "actual_reading_scope": [
+    "notes/notes_stratonovich_ham_second_moment.tex LF 119-138 (S064), 436-509 (S038/PROOF002), 586-674 (S005/PROOF004), 721-802 (S006/PROOF214), 941-1198 (S007/S008/PROOF005/006), 1218-1345 (S009/S010/PROOF007/008), 1347-1515 (S039/PROOF009)",
+    "author-math/green-limit-working.md (full fixed-external-width Gaussian averaging, modulus/tail/time-DCT, partial/external/order limits)",
+    "assignment.json and dependency-grammar.json (exact own/formal/join/given bindings)",
+    "input-clause-registry.json (prior-math consumer conditions for 004/005/006/007/008/214)",
+    "prior-math/pilot-calculations.json and prior-math/Ar-calculations.json (as mathematical dossiers to check, not verdict premises)",
+    "primary/chen-author-full.txt Theorem 3.1 (3.6) pp14-15, Case 2 p21, (3.3)-(3.5) qualifications",
+    "maps/all-explicit-dependencies.tsv (clause-level reference roles for 002/009)"
+  ],
+  "proofs": [
+    {
+      "id": "PROOF002",
+      "owner_label": "P:mixed",
+      "path": "notes/notes_stratonovich_ham_second_moment.tex",
+      "proof_LF": "453:509",
+      "raw_body_sha256": "3a5178f388a973b782c666260061e5ffc96afd0b57e47f06a4f845ad6ad201d9",
+      "status": "CHECKED",
+      "actual_working": [
+        "At positive vertexwise widths Wick gives zero at odd total order and the finite labelled sum over D in Pi_k at even total order 2k; all self/unequal/empty-chain diagrams appear with coefficient one, an empty chain contributing the factor one. Green width is removed first (d3 Green-before-noise), matching the 005/006 construction.",
+        "For fixed m,n the two-term bound ||Y_m Y_n - X_m X_n||_1 <= ||Y_m-X_m||_2 ||Y_n||_2 + ||X_m||_2 ||Y_n-X_n||_2 -> 0 follows from the 006 joint L2 limits, so finite positive-width Wick sums pass to the individual two-chain limits in L1; the zero-order factor stays equal to one.",
+        "Same-horizon terminal-to-initial reversal: s'_j=t-s_{m+1-j}, y'_j=x-y_{m+1-j} (with the length-n counterpart on the second chain) and the involution rho(j)=m+1-j, rho(m+j)=m+n+1-j is a pairing bijection D -> {{rho(a),rho(b)}}. Covariance differences change sign and are absorbed by evenness of |.|^{-a0} and of gamma; each transformed chain has its own root (0,0). This is a change of variables in moment integrals, not pathwise noise reversal.",
+        "Summability U_N=sum_{n<=N} X_n -> u in L2 is supplied by 007/008; 009 independently gives the mild identification (it is not a premise of the present identity). Then |E U_N^2 - E u^2| <= ||U_N-u||_2 (||U_N||_2 + ||u||_2) -> 0.",
+        "Every J_{m,n,D} is nonnegative (positive Green measures times nonnegative covariance), so the finite expansions of E U_N^2 increase with N; the limit is the full double sum, independent of enumeration, and regrouping by total order gives E u^2 = sum_k sum_{m=0}^{2k} sum_D J_{m,2k-m,D}. Monotonicity is of nonnegative expected pairing terms, not samplewise monotonicity.",
+        "The constructor factors 005/006, the summability 007/008 and the mild identification 009 do not assume this mixed expansion; no hidden circular use of the final second-moment bound is present."
+      ],
+      "inputs": [
+        {
+          "target": "PROOF005",
+          "target_label": "L:spatial-wick-measures",
+          "owner_unit": "A",
+          "kind": "OWN",
+          "premise_role": "PREMISE",
+          "state": "PRIOR_MATH_CONSUMER_VALIDATED",
+          "use_scope": "IDENTIFIED_SUBCLAUSE",
+          "clause_id": "spatial measure limit and scaling for the individual mixed-diagram spatial part",
+          "actual_hypotheses": "H:homog; positive spatial Wick-measure weak limit and degree-(4-alpha)k scaling of the undamped rho_D",
+          "actual_consumer_check": "consumed only for the spatial-measure part of each fixed-order J_{m,n,D} limit; no all-order or sharp conclusion is carried over",
+          "source_body_sha256": "d7820cfa105715b1b7fd5a3150d6fbb9b3297e6926f72d9a7edc66e3fbd6857c",
+          "math_reference": "prior-math/pilot-calculations.json#/original_mathematical_working/proofs/4",
+          "unresolved_parent_condition": "full 005 parent not re-graded here; only the identified spatial-measure subclause is consumed"
+        },
+        {
+          "target": "PROOF006",
+          "target_label": "L:joint-fixed-order",
+          "owner_unit": "A",
+          "kind": "OWN",
+          "premise_role": "PREMISE",
+          "state": "PRIOR_MATH_CONSUMER_VALIDATED",
+          "use_scope": "IDENTIFIED_SUBCLAUSE",
+          "clause_id": "joint fixed-order L2 limits at arbitrary relative vertexwise width rates, including unequal/empty chains and Green-before-noise",
+          "actual_hypotheses": "H:homog; fixed-order diagram limits plus the two-chain L2 Cauchy identity Q_n+Q_n-2Q_n=0",
+          "actual_consumer_check": "supplies each two-chain diagram limit entering J_{m,n,D}; its proof uses 005/004/214 and imported Theorem 3.1, not the mixed expansion",
+          "source_body_sha256": "0181e896a913b722c6ffaa07da1d813eb6272e9be0f20515a6583afdc3bd33b6",
+          "math_reference": "prior-math/pilot-calculations.json#/original_mathematical_working/proofs/5",
+          "unresolved_parent_condition": "imported Theorem 3.1 induction remains named; 006 is consumed as validated, not re-derived"
+        },
+        {
+          "target": "PROOF007",
+          "target_label": "L:crude-corrected",
+          "owner_unit": "A",
+          "kind": "OWN",
+          "premise_role": "PREMISE",
+          "state": "PRIOR_MATH_CONSUMER_VALIDATED",
+          "use_scope": "IDENTIFIED_SUBCLAUSE",
+          "clause_id": "fixed-t L2 summability of the X_n squares",
+          "actual_hypotheses": "H:homog; theta=theta0+n/t optimization and P_n n^{-2n} <= 2^n/n!",
+          "actual_consumer_check": "used together with 008 for the L2 series identification and the double-sum convergence; independent of the mixed expansion",
+          "source_body_sha256": "3862d65a98a76f6b367d1fdb49c5d224d7b3e8c75468ef664a84c88d3573e74a",
+          "math_reference": "prior-math/pilot-calculations.json#/original_mathematical_working/proofs/6",
+          "unresolved_parent_condition": "only the identified summability subclause is consumed"
+        },
+        {
+          "target": "PROOF008",
+          "target_label": "L:vertex-crude",
+          "owner_unit": "A",
+          "kind": "OWN",
+          "premise_role": "PREMISE",
+          "state": "PRIOR_MATH_CONSUMER_VALIDATED",
+          "use_scope": "IDENTIFIED_SUBCLAUSE",
+          "clause_id": "vertexwise uniform bound q_n and the ratio-test summability sum sqrt(n+1) q_n(T) < infinity",
+          "actual_hypotheses": "H:homog; width-uniform ||Y_n^a||_2 <= q_n and the same for X_n, fixed covariance/horizon",
+          "actual_consumer_check": "used for the monotone double sum and the L2 series identification; explicitly does not use the mixed expansion",
+          "source_body_sha256": "d047d410b01f52956b6401232267206e8e49e2ec79e173522c83834c4044653e",
+          "math_reference": "prior-math/pilot-calculations.json#/original_mathematical_working/proofs/7",
+          "unresolved_parent_condition": "constants may depend on the fixed covariance/horizon"
+        },
+        {
+          "target": "PROOF009",
+          "target_label": "P:mild-construction",
+          "owner_unit": "A",
+          "kind": "OWN",
+          "premise_role": "PREMISE",
+          "state": "CURRENT_MATH_RECONSTRUCTED",
+          "use_scope": "IDENTIFIED_SUBCLAUSE",
+          "clause_id": "identification of the canonical series u=sum X_n as a mild Stratonovich solution",
+          "actual_hypotheses": "H:homog; partial/external/order limits proved from 006/008 with fixed random factor in the Green averaging",
+          "actual_consumer_check": "009 is used only for the identification of u, computed independently of the mixed expansion; no circularity",
+          "source_body_sha256": "64049ea1f0cc33d8a5fffce8250b2bf1b3c2d6ec81782f881774670454b96b32",
+          "math_reference": null,
+          "unresolved_parent_condition": "009 reconstruction is the other owned target of this report"
+        }
+      ],
+      "constants_and_limits": [
+        "odd total order gives exactly 0; m=n=0 term equals 1",
+        "alpha_0 in (0,1); beta=4-alpha-alpha_0; P_k=(2k)!/(2^k k!)",
+        "E U_N^2 -> E u^2 via ||U_N-u||_2(||U_N||_2+||u||_2)",
+        "q_n(T)=exp(theta0 T) C^{n/2} T^n/sqrt(n!), sum sqrt(n+1) q_n(T) < infinity"
+      ],
+      "consumer_check": "Supplies the nonnegative mixed expansion E u^2 = sum_k sum_{m=0}^{2k} sum_D J_{m,2k-m,D}, the actual consumer direction needed by later envelope-type bounds; no 010-style verdict is produced and no all-order, Skorohod, Chen or intrinsic-constant identity is attached.",
+      "remaining_obligation": "None within the bounded 002 scope beyond the already named imported 005/006/008/214/Theorem-3.1 subclauses; the expansion is a convergent nonnegative double sum and grouping by total order is enumeration independent.",
+      "phase_working_reference": null,
+      "source_sha256": "364753242f9d02e57036af586ab8e777b184d897862750d3170d79f028067914"
+    },
+    {
+      "id": "PROOF009",
+      "owner_label": "P:mild-construction",
+      "path": "notes/notes_stratonovich_ham_second_moment.tex",
+      "proof_LF": "1368:1515",
+      "raw_body_sha256": "64049ea1f0cc33d8a5fffce8250b2bf1b3c2d6ec81782f881774670454b96b32",
+      "status": "CHECKED",
+      "actual_working": [
+        "Occupied multiplication: for centered linear Gaussian H and F in the closed total-degree<=n Gaussian polynomial space, ||HF||_2 <= 2 sqrt(n+1) ||H||_2 ||F||_2 via Hermite creation/annihilation (creation norm <= sqrt(n+1), annihilation norm <= sqrt(n), triangle sum); finite-coordinate approximation closes the degree-closed space; F may depend on H, and H=0 is trivial. V_a=gamma_delta^0(0) gamma_{2epsilon}(0) is finite at positive widths.",
+        "Strong measurability and continuity: positive-width terminal terms are jointly strongly measurable by rescaled unit-time Bochner construction; coupled spatial stationarity gives ||Y_n^b(s,y)-X_n(s,y)||_2 = ||Y_n^b(s,0)-X_n(s,0)||_2, so the 006 fixed-order limit is spatially uniform at fixed s and X_n(s,.) and u(s,.) have continuous E-representatives.",
+        "Fixed-external-width Bochner domination: ||W_a(s,y)X_{n-1}(s,y)||_2 <= 2 sqrt(n) sqrt(V_a) q_{n-1}(T) uniformly in 0<=s<=T and y in R^d (008 q-bounds plus spatial invariance); the spatial Green mass is t-s, so time-space Bochner integration is dominated.",
+        "Fixed-random-factor Gaussian averaging of the Green measure: for F_s(z)=W_a(s,x-z)R(s,x-z), R=X_{n-1} or u, which is E-continuous in z and globally bounded in E by M, Bochner Fubini against p_eta*G_tau is valid because the double norm is <= tau M. Over a compact ball K the compact E-modulus omega_{s,x,K}(r)->0 and the Gaussian tail P(|Z_eta|>r) <= min(1,d eta/r^2) give ||int(p_eta*G_tau)F_s - int G_tau F_s||_E <= tau [omega(r)+2M P(|Z_eta|>r)] -> 0 by first eta then r. Time dominated convergence with the integrable bound 2(t-s)M gives the time integral limit. No time-uniform modulus and no uniformity in a are claimed; the random factor is FIXED as eta varies.",
+        "Partial/external/order limits: I_{n,a}=int G(t-s,x-dz) W_a(s,x-z) X_{n-1}(s,x-z) ds equals lim_b Y_n^{(b,a)} in E by the multiplication bound times ||Y_{n-1}^b-X_{n-1}||_2; the width-uniform sup_{a>0} ||I_{n,a}||_2 <= q_n(t) follows from 008 through the partial limit. For the external limit use 006 joint convergence: choose rho with all vertex widths below rho giving ||Y_n^{(b,a)}-X_n||_2 < zeta, fix a below rho, then let b->0 to get ||I_{n,a}-X_n||_2 <= zeta; hence I_{n,a}->X_n as a->0 with no separate partial-limit theorem or rate.",
+        "Full product and order-last closure: sum_{n>=1} ||W_a X_{n-1}||_2 <= 2 sqrt(V_a) sum_{n>=1} sqrt(n) q_{n-1}(T) < infinity; closedness of multiplication and an a.s. subsequence identify the product series with W_a u, so I_a=int G W_a u = sum_n I_{n,a} in E. Finally ||I_a-(u-1)||_2 <= sum_{n=1}^N ||I_{n,a}-X_n||_2 + 2 sum_{n>N} q_n(t); first a->0 at fixed N, then N->infinity by 008 summability. This is the onefold Stratonovich mild equation in L2(Omega)."
+      ],
+      "inputs": [
+        {
+          "target": "PROOF008",
+          "target_label": "L:vertex-crude",
+          "owner_unit": "A",
+          "kind": "OWN",
+          "premise_role": "PREMISE",
+          "state": "PRIOR_MATH_CONSUMER_VALIDATED",
+          "use_scope": "IDENTIFIED_SUBCLAUSE",
+          "clause_id": "E:vertex-crude and E:vertex-summability (width-uniform q_n and sum sqrt(n+1) q_n(T) < infinity)",
+          "actual_hypotheses": "H:homog; fixed covariance/horizon width-uniform bounds extending to X_n",
+          "actual_consumer_check": "used at the external-vertex, product-series and final tail steps; independently proved without the mixed expansion",
+          "source_body_sha256": "d047d410b01f52956b6401232267206e8e49e2ec79e173522c83834c4044653e",
+          "math_reference": "prior-math/pilot-calculations.json#/original_mathematical_working/proofs/7",
+          "unresolved_parent_condition": "fixed-covariance/fixed-horizon constants suffice"
+        },
+        {
+          "target": "PROOF006",
+          "target_label": "L:joint-fixed-order",
+          "owner_unit": "A",
+          "kind": "OWN",
+          "premise_role": "PREMISE",
+          "state": "PRIOR_MATH_CONSUMER_VALIDATED",
+          "use_scope": "IDENTIFIED_SUBCLAUSE",
+          "clause_id": "joint arbitrary-relative-width L2 limits for each X_n and each diagram",
+          "actual_hypotheses": "H:homog; joint fixed-order convergence including unequal/empty chains and Green-before-noise convention",
+          "actual_consumer_check": "used for the identity lim_a I_{n,a}=X_n without a separate partial-limit theorem and for the fixed-order width removal of each factor",
+          "source_body_sha256": "0181e896a913b722c6ffaa07da1d813eb6272e9be0f20515a6583afdc3bd33b6",
+          "math_reference": "prior-math/pilot-calculations.json#/original_mathematical_working/proofs/5",
+          "unresolved_parent_condition": "depends on imported Theorem 3.1 with edgewise hypotheses plus OWN004/005/214"
+        }
+      ],
+      "constants_and_limits": [
+        "multiplication constant 2 sqrt(n+1); product bound 2 sqrt(n) sqrt(V_a) q_{n-1}(T)",
+        "V_a = gamma_delta^0(0) gamma_{2epsilon}(0) < infinity",
+        "Gaussian tail P(|Z_eta|>r) <= min(1,d eta/r^2); Green mass tau=t-s",
+        "sup_{a>0} ||I_{n,a}||_2 <= q_n(t); final tail 2 sum_{n>N} q_n(t)"
+      ],
+      "consumer_check": "Discharges the mild-identification step referenced by 002; closes the fixed-external-width Green limit by holding the random integrand fixed (weak convergence of Green measures alone would be insufficient, as the supplied mu_j and cos(z/sqrt(eta)) falsification controls show). No F-space, Sobolev point trace, radius/operator bound, tilted-source convergence, other coupling or uniqueness is inferred.",
+      "remaining_obligation": "The spatial supremum is kept outside the L2 norm: all bounds are on sup_y of pointwise E-norms, never the E-norm of a spatial supremum. Green-before-noise order is preserved; source Section 5.3/5.4, Section 5(ii), 4.1/L4.4 and any uniqueness theorem are not imported.",
+      "phase_working_reference": null,
+      "source_sha256": "364753242f9d02e57036af586ab8e777b184d897862750d3170d79f028067914"
+    }
+  ],
+  "formal_statements": [
+    {
+      "id": "S038",
+      "path": "notes/notes_stratonovich_ham_second_moment.tex",
+      "environment": "proposition",
+      "ordinal": 2,
+      "LF": "436:451",
+      "body_sha256": "33c65a18cc26a879719a08bcb6d6f73a4b8a510c92f3c4dcef806d1855d67f05",
+      "classification": "OWN",
+      "role": "own_deduction",
+      "own_proof_id": "PROOF002",
+      "status": "CHECKED",
+      "actual_clause_and_scope_check": "The odd/even total-order expression, the m=n=0 value one, and the full second-moment double sum as a convergent nonnegative series are reproduced. The product L2-to-L1 direction and the group-by-total-order step use the independently proved 009 identification and the 007/008 summability; the statement itself is not an input to the constructors.",
+      "remaining_obligation": "No uniqueness or infinite-series circularity; the series is an enumeration-independent monotone double sum of nonnegative J_{m,n,D} terms.",
+      "source_sha256": "364753242f9d02e57036af586ab8e777b184d897862750d3170d79f028067914"
+    },
+    {
+      "id": "S039",
+      "path": "notes/notes_stratonovich_ham_second_moment.tex",
+      "environment": "proposition",
+      "ordinal": 3,
+      "LF": "1347:1362",
+      "body_sha256": "e3b95ad3c6d5863f0fba50d2145e9ab426ec99cc61c70e88a85022d634e6771a",
+      "classification": "OWN",
+      "role": "own_deduction",
+      "own_proof_id": "PROOF009",
+      "status": "CHECKED",
+      "actual_clause_and_scope_check": "The mild limit exists in L2 with arbitrary relative width rates and the d3 Green-before-noise order; no uniqueness assertion is made and source Section 5.3/5.4/Section 5(ii) are not imported. The fixed-external-width Green limit is now explicit through Bochner Fubini with fixed random integrand, compact E-modulus, Gaussian tail and time dominated convergence.",
+      "remaining_obligation": "No F-space point trace, spatial-supremum L2 norm, radius/operator bound, tilted-source convergence, other coupling or uniqueness is involved.",
+      "source_sha256": "364753242f9d02e57036af586ab8e777b184d897862750d3170d79f028067914"
+    }
+  ],
+  "joins": [
+    {
+      "id": "JOIN-CONSTRUCTOR",
+      "status": "CHECKED",
+      "actual_working": [
+        "The chain Norms/translated covariance/current-source Case 2 -> positive spatial Wick measures and arbitrary-relative-width/Green-first fixed-order -> occupied multiplication/norm-sum/mild/canonical mixed series closes: 004 supplies finite N0,N1,N2 and their smoothing/truncation non-increase; 214 supplies the Case 2 independent-origin coefficient-one inequality retaining the A-B offset; 005 supplies the spatial Wick-measure limit; 006 supplies the joint fixed-order diagram/term limits; 007/008 supply fixed-t norm summability via the theta0+n/t optimization and the universal pairing bound.",
+        "The occupied-multiplication and norm-sum closure in 009 is the weighted-product-sum argument, not a finite-degree inequality applied directly to the infinite u: one applies the 2 sqrt(n+1) bound termwise, and closure plus an a.s. subsequence identifies the product series with W_a u.",
+        "The actual mild-to-physical-moment bridge is: fixed-order products in L1 (006) + moment-only same-horizon chain reversal + positive finite expected Wick sums (005/006/008) + canonical L2-series/mild identification (009) + square convergence and monotone regrouping (002). No factor is built assuming the mixed expansion.",
+        "Source hypotheses for the imported Theorem 3.1 are validated edgewise (finite Gaussian-weighted mu_e, nonnegative heat-convolved gamma_e, Laplace temporal domains) and the non-bridge induction steps stay named imports; source (3.5) repeated-x and the Case 2 offset-free equality are not used."
+      ],
+      "inputs": [
+        {
+          "target": "PROOF004",
+          "target_label": "L:damped-homogeneous-norms",
+          "owner_unit": "A",
+          "kind": "OWN",
+          "premise_role": "PREMISE",
+          "state": "PRIOR_MATH_CONSUMER_VALIDATED",
+          "use_scope": "IDENTIFIED_SUBCLAUSE",
+          "clause_id": "damped norm scalings N0=theta^-2, N1, N2^2, finite tails, smoothing/truncation non-increase",
+          "actual_hypotheses": "H:homog; alpha+a<2; nonnegative N2 time quadratic form",
+          "actual_consumer_check": "norm input for 006/008 and the marked-tail constant H",
+          "source_body_sha256": "54a170eba3afe5c50ec8095d92b1c7c89024b904e81cde882cd15bb5c86e24f8",
+          "math_reference": "prior-math/pilot-calculations.json#/original_mathematical_working/proofs/2",
+          "unresolved_parent_condition": "consumed as validated; not re-graded here"
+        },
+        {
+          "target": "PROOF005",
+          "target_label": "L:spatial-wick-measures",
+          "owner_unit": "A",
+          "kind": "OWN",
+          "premise_role": "PREMISE",
+          "state": "PRIOR_MATH_CONSUMER_VALIDATED",
+          "use_scope": "IDENTIFIED_SUBCLAUSE",
+          "clause_id": "E:spatial-wick-limit for each fixed diagram",
+          "actual_hypotheses": "H:homog; weak finite-measure limit and zero masses on r_l=0 and ell_i=T>0 faces",
+          "actual_consumer_check": "pinned spatial input to 006 diagram limits",
+          "source_body_sha256": "d7820cfa105715b1b7fd5a3150d6fbb9b3297e6926f72d9a7edc66e3fbd6857c",
+          "math_reference": "prior-math/pilot-calculations.json#/original_mathematical_working/proofs/4",
+          "unresolved_parent_condition": "full measure-theoretic derivation remains a validated upstream record"
+        },
+        {
+          "target": "PROOF006",
+          "target_label": "L:joint-fixed-order",
+          "owner_unit": "A",
+          "kind": "OWN",
+          "premise_role": "PREMISE",
+          "state": "PRIOR_MATH_CONSUMER_VALIDATED",
+          "use_scope": "IDENTIFIED_SUBCLAUSE",
+          "clause_id": "joint arbitrary-rate fixed-order L2 limits incl unequal/empty chains",
+          "actual_hypotheses": "H:homog; imported Theorem 3.1 edgewise + 004/005/214",
+          "actual_consumer_check": "fixed-order construction consumed by 002/009",
+          "source_body_sha256": "0181e896a913b722c6ffaa07da1d813eb6272e9be0f20515a6583afdc3bd33b6",
+          "math_reference": "prior-math/pilot-calculations.json#/original_mathematical_working/proofs/5",
+          "unresolved_parent_condition": "source Theorem 3.1 induction remains named"
+        },
+        {
+          "target": "PROOF007",
+          "target_label": "L:crude-corrected",
+          "owner_unit": "A",
+          "kind": "OWN",
+          "premise_role": "PREMISE",
+          "state": "PRIOR_MATH_CONSUMER_VALIDATED",
+          "use_scope": "IDENTIFIED_SUBCLAUSE",
+          "clause_id": "fixed-t L2 summability of X_n",
+          "actual_hypotheses": "H:homog; theta=theta0+n/t choice",
+          "actual_consumer_check": "series identification for 002",
+          "source_body_sha256": "3862d65a98a76f6b367d1fdb49c5d224d7b3e8c75468ef664a84c88d3573e74a",
+          "math_reference": "prior-math/pilot-calculations.json#/original_mathematical_working/proofs/6",
+          "unresolved_parent_condition": "independent of the mixed expansion"
+        },
+        {
+          "target": "PROOF008",
+          "target_label": "L:vertex-crude",
+          "owner_unit": "A",
+          "kind": "OWN",
+          "premise_role": "PREMISE",
+          "state": "PRIOR_MATH_CONSUMER_VALIDATED",
+          "use_scope": "IDENTIFIED_SUBCLAUSE",
+          "clause_id": "E:vertex-crude and E:vertex-summability",
+          "actual_hypotheses": "H:homog; width-uniform q_n and ratio-test summability",
+          "actual_consumer_check": "product/multiplication limits and final tail in 009",
+          "source_body_sha256": "d047d410b01f52956b6401232267206e8e49e2ec79e173522c83834c4044653e",
+          "math_reference": "prior-math/pilot-calculations.json#/original_mathematical_working/proofs/7",
+          "unresolved_parent_condition": "fixed covariance/horizon constants"
+        },
+        {
+          "target": "PROOF214",
+          "target_label": "L:translated-covariance-CS",
+          "owner_unit": "A",
+          "kind": "OWN",
+          "premise_role": "PREMISE",
+          "state": "PRIOR_MATH_CONSUMER_VALIDATED",
+          "use_scope": "IDENTIFIED_SUBCLAUSE",
+          "clause_id": "Case 2 independent-origin constant-one Cauchy-Schwarz retaining A-B",
+          "actual_hypotheses": "finite positive mu_e with nonnegative gamma_e, temporal nu_e finite on (0,L]",
+          "actual_consumer_check": "source Case 2 bridge for Theorem 3.1 application",
+          "source_body_sha256": "8a187e589582d0c618d281bc1a3ce974a4d0a715a0e2a750692288d465dc2434",
+          "math_reference": "prior-math/pilot-calculations.json#/original_mathematical_working/proofs/3",
+          "unresolved_parent_condition": "validated as an inequality; not a literal quotation of (3.5)"
+        },
+        {
+          "target": "AUTHOR Theorem 3.1",
+          "target_label": "universal two-chain pairing bound",
+          "owner_unit": null,
+          "kind": "PUBLISHED_IMPORT",
+          "premise_role": "PREMISE",
+          "state": "IMPORTED_HYPOTHESES_VALIDATED",
+          "use_scope": "IDENTIFIED_SUBCLAUSE",
+          "clause_id": "Theorem 3.1 (3.6) pp14-15 pairing inequality only",
+          "actual_hypotheses": "per-edge finite spectral measures with nonnegative inverse transforms, temporal Laplace domains, nonnegative kernels G_l",
+          "actual_consumer_check": "edgewise hypotheses validated via finite Gaussian-weighted mu_e and Laplace domains; Case 2 supplied by 214",
+          "source_body_sha256": null,
+          "math_reference": "primary/chen-author-full.txt physical pp14-15, Case 2 p21",
+          "unresolved_parent_condition": "the theorem's induction and non-bridge first-norm steps remain named external imports, not reproven"
+        }
+      ],
+      "constants_and_limit_order": [
+        "H=max(1,2N1(1),N2(1)^2); marked tail 2A_M+B_M^2",
+        "q_n(T)=exp(theta0 T) C^{n/2} T^n/sqrt(n!) with sum sqrt(n+1) q_n(T) < infinity",
+        "V_a=gamma_delta^0(0) gamma_{2epsilon}(0)",
+        "limit order fixed in 009: Green width at fixed noise widths -> inner vertex widths -> fixed external width a -> a->0 at fixed N -> N->infinity"
+      ],
+      "semantic_dependency_check": "Acyclic in the constructor subgraph: 005/006 neither assume the mixed expansion nor 009; 007/008 do not assume the mixed expansion; 009 uses only 006/008 (and their implicit 004/005/214/Theorem 3.1 imports); 002 uses 009 only for the identification of u. There is hidden-guard check against using any 010-type final moment bound to build the factors: none of 005/006/007/008/009 consumes such a bound.",
+      "full_model_scope": "Full H:homog class: d=1,2,3, 0<alpha_0<1, 0<alpha<d or alpha=d=1, alpha+alpha_0<2; original amplitude retained; Stratonovich Green-before-noise order; data (1,0); white/singular/zero branches kept.",
+      "remaining_obligation": "Imported Theorem 3.1 induction remains named; 004/005/006/007/008/214 are consumed validated subclauses, not re-graded within this bounded report; no uniqueness, source 5.3/5.4/Section 5(ii)/4.1/L4.4, F-trace, radius/operator bound, tilted-source convergence or other coupling is introduced."
+    }
+  ],
+  "primary_applications": [
+    {
+      "consumer": "PROOF006/008/009 fixed-order construction via 004/005/214 and the imported universal pairing inequality",
+      "edition_and_pinpoint": "Held 64-page author manuscript, Theorem 3.1, (3.6), physical pp. 14-15; edge assignments p. 15; Case 2 context pp. 18-21",
+      "actual_source_statement": "For two ordered chains with nonnegative kernels G_l, each edge carrying a finite positive spectral measure with nonnegative inverse transform and a temporal Laplace domain, the pairing integral is bounded by a product of N0, 2N1 and N2 norms over a partition Q0,Q1,Q2 with #Q0=#Q1 and #Q2 even.",
+      "hypothesis_match": "Edge measures mu_e=e^{-(eps_j+eps_h)|xi|^2/2}mu are finite by the H:homog spectral ball growth; gamma_e=p_{eps_j+eps_h}*Gamma >=0; temporal nu_e=1_{A_e} lambda^{a-1} dlambda/Gamma_E(a); the damped e^{-theta r}G_r (Green-heat in d3) tests have N0=theta^{-2} and finite N1,N2 by OWN004.",
+      "own_application_working": "OWN214 supplies the Case 2 independent-origin coefficient-one inequality retaining the A-B time offset (the printed Case 2 offset-free equality and the printed (3.5) repeated-x are not used). The marked edge contributes once as 2A_M in a first-type product or twice as B_M^2 in a second-type product, with unmarked edges bounded by H=max(1,2N1(1),N2(1)^2); smoothing/truncation non-increase follows from 004's nonnegative transforms and time quadratic form.",
+      "limitations": "Only the pairing inequality is imported; its induction and non-bridge first-norm steps remain named external inputs. No whole Theorem 3.1 reproof, no unregularized distributional extension, and no source 4.1/L4.4/Section 5 import."
+    }
+  ],
+  "finite_controls": [
+    {
+      "target": "009 fixed-random-factor Green averaging",
+      "parameters": "F_s(z)=W_a(s,x-z)R(s,x-z) E-continuous in z and globally bounded by M; p_eta Gaussian covariance eta I; G_tau wave measure of mass tau",
+      "actual_calculation": "||int(p_eta*G_tau)F_s - int G_tau F_s||_E <= tau [omega_{s,x,K}(r)+2M P(|Z_eta|>r)] <= tau [omega(r)+2M min(1,d eta/r^2)] -> 0 first in eta at fixed r, then r->0; then time DCT with integrable bound 2(t-s)M",
+      "comparison_or_counterexample": "The supplied mu_j=(1-1/j)delta0+(1/j)delta_j and f(z)=z, and mu_eta=p_eta with f_eta=cos(z/sqrt(eta)), show weak convergence or eta-wise continuity alone cannot give the limit when the integrand varies; holding F_s fixed and using the compact E-modulus is essential",
+      "scope": "Fixed external width a, fixed random integrand; Green limit precedes noise removal; no time-uniform modulus and no uniformity in a"
+    },
+    {
+      "target": "002 product L1 convergence",
+      "parameters": "positive vertexwise widths b -> 0 at fixed m,n; X_m,X_n the 006 joint L2 limits",
+      "actual_calculation": "||Y_mY_n-X_mX_n||_1 <= ||Y_m-X_m||_2 ||Y_n||_2 + ||X_m||_2 ||Y_n-X_n||_2 -> 0",
+      "comparison_or_counterexample": "This is the correct product L1-from-L2 direction; the earlier AR038 wording reversing it is not used. No second auxiliary factor is resampled: both factors use the same given noise family",
+      "scope": "Fixed-order mixed products only; passes finite positive-width Wick sums to individual diagram limits"
+    },
+    {
+      "target": "008/009 vertex and product bounds",
+      "parameters": "q_n(T)=exp(theta0 T) C^{n/2} T^n/sqrt(n!); V_a finite",
+      "actual_calculation": "||Y_n^a(t,x)||_2 <= q_n(t); sum sqrt(n+1) q_n(T) < infinity by ratio test; ||W_a X_{n-1}||_2 <= 2 sqrt(n) sqrt(V_a) q_{n-1}(T); sup_a ||I_{n,a}||_2 <= q_n(t)",
+      "comparison_or_counterexample": "The spatial supremum bound is sup_y of pointwise E-norms, not the E-norm of a spatial supremum; applying the finite-degree bound directly to the infinite u is avoided by the weighted product-sum closure",
+      "scope": "Fixed covariance/horizon; the final tail uses 2 sum_{n>N} q_n(t)"
+    }
+  ],
+  "provisional_dependencies": [
+    {
+      "target": "PROOF004",
+      "target_label": "L:damped-homogeneous-norms",
+      "owner_unit": "A",
+      "kind": "OWN",
+      "premise_role": "PREMISE",
+      "state": "PRIOR_MATH_CONSUMER_VALIDATED",
+      "use_scope": "IDENTIFIED_SUBCLAUSE",
+      "clause_id": "norm scaling/tails/smoothing non-increase",
+      "actual_hypotheses": "H:homog",
+      "actual_consumer_check": "supplies finite N1,N2 and uniform marked-tail descent for 006/008",
+      "source_body_sha256": "54a170eba3afe5c50ec8095d92b1c7c89024b904e81cde882cd15bb5c86e24f8",
+      "math_reference": "prior-math/pilot-calculations.json#/original_mathematical_working/proofs/2",
+      "unresolved_parent_condition": "validated consumer; full parent not re-graded"
+    },
+    {
+      "target": "PROOF005",
+      "target_label": "L:spatial-wick-measures",
+      "owner_unit": "A",
+      "kind": "OWN",
+      "premise_role": "PREMISE",
+      "state": "PRIOR_MATH_CONSUMER_VALIDATED",
+      "use_scope": "IDENTIFIED_SUBCLAUSE",
+      "clause_id": "E:spatial-wick-limit",
+      "actual_hypotheses": "H:homog",
+      "actual_consumer_check": "spatial measure limit feeding 006 diagrams",
+      "source_body_sha256": "d7820cfa105715b1b7fd5a3150d6fbb9b3297e6926f72d9a7edc66e3fbd6857c",
+      "math_reference": "prior-math/pilot-calculations.json#/original_mathematical_working/proofs/4",
+      "unresolved_parent_condition": "measure-theoretic internals not re-derived here"
+    },
+    {
+      "target": "PROOF006",
+      "target_label": "L:joint-fixed-order",
+      "owner_unit": "A",
+      "kind": "OWN",
+      "premise_role": "PREMISE",
+      "state": "PRIOR_MATH_CONSUMER_VALIDATED",
+      "use_scope": "IDENTIFIED_SUBCLAUSE",
+      "clause_id": "joint arbitrary-rate fixed-order L2 limits",
+      "actual_hypotheses": "H:homog + imported Theorem 3.1 additive hypotheses",
+      "actual_consumer_check": "used by 002 and 009",
+      "source_body_sha256": "0181e896a913b722c6ffaa07da1d813eb6272e9be0f20515a6583afdc3bd33b6",
+      "math_reference": "prior-math/pilot-calculations.json#/original_mathematical_working/proofs/5",
+      "unresolved_parent_condition": "Theorem 3.1 induction remains named"
+    },
+    {
+      "target": "PROOF007",
+      "target_label": "L:crude-corrected",
+      "owner_unit": "A",
+      "kind": "OWN",
+      "premise_role": "PREMISE",
+      "state": "PRIOR_MATH_CONSUMER_VALIDATED",
+      "use_scope": "IDENTIFIED_SUBCLAUSE",
+      "clause_id": "fixed-t summability",
+      "actual_hypotheses": "H:homog",
+      "actual_consumer_check": "series L2 convergence in 002",
+      "source_body_sha256": "3862d65a98a76f6b367d1fdb49c5d224d7b3e8c75468ef664a84c88d3573e74a",
+      "math_reference": "prior-math/pilot-calculations.json#/original_mathematical_working/proofs/6",
+      "unresolved_parent_condition": "independent of mixed expansion"
+    },
+    {
+      "target": "PROOF008",
+      "target_label": "L:vertex-crude",
+      "owner_unit": "A",
+      "kind": "OWN",
+      "premise_role": "PREMISE",
+      "state": "PRIOR_MATH_CONSUMER_VALIDATED",
+      "use_scope": "IDENTIFIED_SUBCLAUSE",
+      "clause_id": "E:vertex-crude/E:vertex-summability",
+      "actual_hypotheses": "H:homog",
+      "actual_consumer_check": "used by 002/009",
+      "source_body_sha256": "d047d410b01f52956b6401232267206e8e49e2ec79e173522c83834c4044653e",
+      "math_reference": "prior-math/pilot-calculations.json#/original_mathematical_working/proofs/7",
+      "unresolved_parent_condition": "fixed covariance/horizon"
+    },
+    {
+      "target": "PROOF214",
+      "target_label": "L:translated-covariance-CS",
+      "owner_unit": "A",
+      "kind": "OWN",
+      "premise_role": "PREMISE",
+      "state": "PRIOR_MATH_CONSUMER_VALIDATED",
+      "use_scope": "IDENTIFIED_SUBCLAUSE",
+      "clause_id": "Case 2 independent-origin coefficient-one inequality",
+      "actual_hypotheses": "finite positive mu_e, nonnegative gamma_e, temporal nu_e finite on (0,L]",
+      "actual_consumer_check": "source Case 2 bridge",
+      "source_body_sha256": "8a187e589582d0c618d281bc1a3ce974a4d0a715a0e2a750692288d465dc2434",
+      "math_reference": "prior-math/pilot-calculations.json#/original_mathematical_working/proofs/3",
+      "unresolved_parent_condition": "inequality, not a literal (3.5) quotation"
+    }
+  ],
+  "model_and_constant_audit": [
+    {
+      "target": "q_n summability and occupancy bound",
+      "actual_deduction": "q_n(t)=exp(theta0 t) C^{n/2} t^n/sqrt(n!); sum sqrt(n+1) q_n(T) < infinity by the ratio test; the occupied multiplication bound is 2 sqrt(n+1) ||H||_2 ||F||_2 and is applied termwise, never to the infinite u directly.",
+      "inputs": [
+        "PROOF008",
+        "PROOF009 occupied-multiplication clause (1368-1515)"
+      ],
+      "status": "CHECKED",
+      "remaining_obligation": "fixed covariance/horizon constants suffice"
+    },
+    {
+      "target": "V_a and Green Gaussian averaging",
+      "actual_deduction": "V_a=gamma_delta^0(0) gamma_{2epsilon}(0) < infinity; the Bochner Fubini double norm is <= tau M; the Gaussian tail is P(|Z_eta|>r) <= min(1,d eta/r^2); compact E-modulus omega(r)->0 gives the fixed-random-factor Green limit.",
+      "inputs": [
+        "author-math/green-limit-working.md",
+        "S039/PROOF009"
+      ],
+      "status": "CHECKED",
+      "remaining_obligation": "no bound uniform in a is claimed or needed"
+    },
+    {
+      "target": "width-uniform partial-limit bound sup_{a>0} ||I_{n,a}||_2 <= q_n(t)",
+      "actual_deduction": "follows by passing ||Y_n^{(b,a)}||_2 <= q_n(t) from 008 through the partial vertex limit b->0; this is the different width-uniform estimate used in the final order-last bound, distinct from the a-dependent 2 sqrt(n) sqrt(V_a) q_{n-1}(T).",
+      "inputs": [
+        "PROOF008",
+        "PROOF006"
+      ],
+      "status": "CHECKED",
+      "remaining_obligation": "no uniformity in n beyond summability"
+    }
+  ],
+  "semantic_cycles": [
+    {
+      "target": "002 vs 005/006/007/008/009 constructor subgraph",
+      "actual_deduction": "005/006 construct fixed-order X_n and diagrams without 002/009; 007/008 prove summability without 002; 009 proves the mild identification from 006/008 only; 002 then uses 009's identification and the monotone nonnegative double sum. Edges are forward-only in the acyclic direction; no reverse premise edge exists.",
+      "inputs": [
+        "S038",
+        "S039",
+        "PROOF002",
+        "PROOF005",
+        "PROOF006",
+        "PROOF007",
+        "PROOF008",
+        "PROOF009"
+      ],
+      "status": "CHECKED",
+      "remaining_obligation": "none within this subgraph"
+    },
+    {
+      "target": "hidden use of a final moment bound in the factors",
+      "actual_deduction": "Neither 005/006/007/008 nor 009 consumes 010-type E u^2 <= B_K or any mixed expansion; the 006 fixed-order bound uses only the imported Theorem 3.1 with 004/005/214, and 007/008 use the theta0+n/t optimization. Thus the final moment bound is not used to construct its own factors.",
+      "inputs": [
+        "PROOF006",
+        "PROOF007",
+        "PROOF008",
+        "PROOF009",
+        "PROOF214"
+      ],
+      "status": "CHECKED",
+      "remaining_obligation": "downstream 010 consumer condition not re-verdict here"
+    },
+    {
+      "target": "009 reuse of 002",
+      "actual_deduction": "all-explicit-dependencies.tsv shows PROOF009 has no edge to PROOF002; 002 references 009 at LF 498 only in the presentation direction. 009's proof body uses only 006/008. No cycle.",
+      "inputs": [
+        "all-explicit-dependencies.tsv",
+        "PROOF002 LF 453-509",
+        "PROOF009 LF 1368-1515"
+      ],
+      "status": "CHECKED",
+      "remaining_obligation": "none"
+    }
+  ],
+  "findings": [
+    {
+      "target": "PROOF009 Green fixed-external-width limit",
+      "kind": "PHASE_WORKING_DEFECT",
+      "actual_reason": "The earlier tightness/compact-vector-approximation wording left the d3 Green limit without an explicit bound; the new fixed-random-factor Bochner-Fubini calculation with compact E-modulus and Gaussian tail closes it.",
+      "weakest_missing_step_or_repair": "Use F_s fixed in eta, Bochner Fubini against the finite-mass Green measure, compact modulus omega(r)->0 and Gaussian tail P(|Z_eta|>r)<=min(1,d eta/r^2), followed by time DCT."
+    },
+    {
+      "target": "Imported AUTHOR Theorem 3.1",
+      "kind": "SOURCE_APPLICATION_LIMIT",
+      "actual_reason": "Only the (3.6) pairing inequality is imported for 006/008; its induction and non-bridge first-norm steps are not reproven here.",
+      "weakest_missing_step_or_repair": "Edgewise hypotheses are validated (finite Gaussian-weighted mu_e, nonnegative gamma_e, Laplace domains) and the Case 2 step is replaced by OWN214's constant-one inequality retaining the A-B offset."
+    },
+    {
+      "target": "004/005/006/007/008/214 internals",
+      "kind": "READING_LIMIT",
+      "actual_reason": "These are consumed as validated subclauses from the prior mathematical records in this bounded report; their full measure-theoretic derivations are not re-derived here.",
+      "weakest_missing_step_or_repair": "Record them as PRIOR_MATH_CONSUMER_VALIDATED with identified subclause scope, without re-grading or clearing their full parents."
+    }
+  ],
+  "limitations": [
+    "The AUTHOR Theorem 3.1 induction remains a named external import; only its edgewise hypotheses and the OWN214 Case 2 bridge are validated.",
+    "PROOF004/005/006/007/008/214 are consumed as validated subclauses; their full parents are not re-derived or re-graded in this bounded report.",
+    "No unique-less, source Section 5.3/5.4, Section 5(ii), Theorem 4.1/Lemma 4.4, F-space point trace, radius/operator bound, spatial-supremum L2 norm, tilted-source convergence, other coupling or Skorohod/Chen/constant identification is introduced.",
+    "The 010 envelope/majorant implication E u^2 <= B_K is not re-verdict here; this report records only that 002 now supplies its nonnegative mixed-expansion premise.",
+    "The supplied prior pilot/Ar scope summaries and the division/multiplication transcription error are preserved as reported, not silently repaired, and are not treated as verdict premises."
+  ],
+  "completed_public_record": true,
+  "given_hypotheses": [
+    {
+      "target": "H:homog",
+      "formal_id": "S064",
+      "kind": "GLOBAL_HYPOTHESIS",
+      "premise_role": "PREMISE",
+      "state": "GIVEN_ASSUMPTION",
+      "source_body_sha256": "db815521a3ffe1ff165ca09b11c8a69cb9d3922b6f71841aa2f14bff161cd903",
+      "actual_use_check": "H:homog is the standing model premise of 002/009 and of the upstream 004/005/006/007/008/214 subclauses: d=1,2,3; 0<alpha_0<1; 0<alpha<d or alpha=d=1 (spatial white); alpha+alpha_0<2; nonnegative even positive-definite tempered Radon Gamma with homogeneity and original amplitude. It supplies spectral ball growth mu(B_r)=V r^alpha, mu({0})=0, even covariance, spatial stationarity, and Green mass t. Its formal CONTEXT classification does not make it logically optional in these deductions."
+    }
+  ]
+}

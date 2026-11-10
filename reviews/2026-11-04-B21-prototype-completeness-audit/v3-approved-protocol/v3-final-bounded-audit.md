@@ -1,0 +1,41 @@
+# Independent bounded v3 prototype audit
+
+No remaining bounded v3 protocol/source-model/retention issue was found in this pass. This closes the external PROTOTYPE audit only. It is not mathematical review, a packet/DRAFT/READY release, native admission or execution authority. Actual new runtime-code/reserve and final model-document binding remain separate prerequisites.
+
+## Actual code and controls
+
+Held validator6ba3299713db306093130a6865bb69f3b86b2539963ad3b52659d238a08efc45 was read with its full v2-to-v3 changes, schema/grammar, named global registry and all control code. I executed56 separate pure consistency cases with all expected outcomes. They include every v1 completeness hole, exact/missing/duplicate/padding coverage for each required global section, honest LIMITED/NOT_READ proof/formal/application/join/question/S065/S066 records, supplied conflicts, consumed missing/unread CURRENT work, actual checked subclauses of LIMITED parents, and full PASS over an unread assigned row. BC remains comparison only; Hthree remains local conditional. Whole214 source-alias substitution and raw duplicate keys fail. Derived identity provenance does not mutate native statuses or confidence.
+
+The producer99 controls and40 minimum checks were also independently replayed to BYTE-IDENTICAL receipts. Only their two output writes were redirected externally, with non-audit Path.open write/append modes blocked. I did NOT execute the schema builder, create a packet, or call a CLI/model. No synthetic native report fixture was saved or supplied as evidence. Full mathematical sufficiency and unknown false-formula detection are not implemented or claimed; checker scientific_acceptance remainsfalse.
+
+V1's four completeness holes are preserved in the frozen independent audit. V2's wrong white-calibration associations and honest-unread false rejections remain separately recorded. V3 fixes those precise issues without rewriting either earlier snapshot. Root's accidental grammar append was handled by Root; I paused immediately and resumed only after Root verified restoration. The final audit rehashes all22 held members exactly. No Root/producer file was restored or changed by this auditor.
+
+## Source, scope and native-versus-derived identity
+
+I independently resliced all214 proof and240 formal bodies at v1, checking raw module/body hashes, formal ordinals/labels and final proof-owner labels. All454 checks passed. V3's entire proof/formal/module identity dictionaries are exactly those v1 dictionaries, and the source generator/policy distinction remains: physical source bytes identify text; pinned canonical policy identifies workflow owner/class/phase roles; native testimony supplies mathematics/status/confidence. S198 is canonical…3e47c…, never a copied native…f… value.
+
+The model-facing view matches all21 current labels, all60 formal class/role/parent/label records, S064, canonical calibration join/four questions, localS065/Hthree policy and every named mathematical global-obligation section. Only supervisor policy/custody metadata is omitted from that view; scope and the honesty/emptyfindings/not-proof rules remain explicit in the operative grammar. The sidecar continues explicitly UNASSIGNED for future model-document binding, not silently released from a custody hash.
+
+V3 names4 model/constant,4 cycle,4 primary and14 finite obligations. All assigned IDs must be present, including honest incomplete rows. Public-record completeness is TRUE for a full inventory, not automatic scientific completion. PASS requires completed required rows; actual unworked LIMITED/NOT_READ rows with precise remaining conditions do not need invented derivations/certificates. Every voluntarily supplied clause/evidence/identity still gets checked; an unread parent cannot furnish a reconstructed premise. Optional findings or a separate global dependency list may be empty when genuine.
+
+F12/F13 now correctly refer to source011/P:white-four1709-1744 and012/L:static-four1762-1837. Nine representative rows times three sector types give27 integrals; five exchanged ordered splits times three pairings times three sector types give45 cases with the reflected factor retained. Source210-213 remain distinct CDF/spatial-energy/intrinsic-bound consumers. This is reassociation of a proposed obligation caption, not a source repair or full outside-parent proof credit.
+
+## Executed retention and span audit
+
+The held source/math representation was independently reconstructed IN MEMORY. All108 base frames restore exactly: strict duplicate-key JSON/type/string/tree restoration, original TSV byte restoration and exact plain source/primary/supplement bytes. All1284 factored fields/cells are designated custody/body/module hashes in the observed inputs; none is nested below actual derivation/hypothesis/consumer/constant/remainder/correction fields. Eight thousand six hundred nine original JSON scalar origins are accounted. The helper's field-name allowlist is not universal semantic authority; any added data requires renewed path/value/context checking.
+
+The extended123-frame corpus keeps base108 unchanged and adds15 full author/primary artifacts: all three point author math batches/findings, complete H2 and F/E counterexamples and exact arithmetic, static application/finite checks, new B math/limits, and full published2180-2185 text. The selected scalar/status spans are literal assessment language only. In the mixed rough limitation leaf, only the HIGH sentence is removed; every214/240/13/unassigned-parent/whole/image/cold condition remains exact. No generic “high/checked” removal changes high-Sobolev mathematics. The full new19757-byte endpoint/clock working and its full mathematical boundaries were read, not replaced by a title or a source-presence claim.
+
+Supplied published2152/2165 texts are byte-contained at the recorded old-primary offsets; the new2180-2185 file is full. RawPDF/sourcePNG custody remains future visual evidence only: no extraction-to-glyph or Kimi/pixel gate was inferred. False prior mathematical fields remain raw beside distinct corrections; closed59/H38 and prior grades are not repaired or imported as proof.
+
+## Actual full-input baseline count
+
+I read the held count construction and independently rebuilt its127 in-memory frames:123 math/context frames plus the actual four v3 protocol documents. Their frame boundaries/hashes and81 prior-math source-to-model pointer parities reproduce the held count receipt. Thirty-two model JSON documents strictly parse with no duplicate/nonfinite values; the original POINT raw/formatted JSON trees agree. Every one of1283 original special-token spellings is absent from the full candidate and all runtime objects.
+
+The pinned official public tokenizer8f9f37ca... with local tokenizers0.23.3, no added special tokens/truncation/padding, independently gives823859 plain tokens. Full planned config/agent/text/runtime objects add1022, historical overhead485, BASELINE runtime10002 and unchanged131072output/16384boundary/32768system total1015592/head32984. This is conditional arithmetic, not exact provider admission or final fit. The actual new runtime proposal/reserve must replace10002 and be recounted; no source/math/output pruning or reserve reduction was authorized.
+
+## Remaining integration boundary
+
+The prototype source map is a verifier sidecar. The81-alias adapter proves correspondence to the actual proposed model projections, including permitted custody/status-leaf changes; it does not itself change the producer's UNASSIGNED marker or release a final packet. A separately audited builder/runtime must bind exact final paths/bytes/hashes and all retained mathematics before any real DRAFT or call. This audit need not wait for that future code, and gives it no automatic approval.
+
+No packet/prompt/carrier/config/seal/auth/Article/source/runtime/model/account/availability/six-repository action occurred. All214 OWN/240 formal/13 joins, original all-model/dimension/amplitude/data/zero/actualC2 requirements and independent DeepSeekHIGH/Kimi/visual/render/fresh-cold/private delivery gates remain unchanged. Source availability, metadata resolution, named-row counts and a conditional capacity margin satisfy none of those scientific judgments by themselves.

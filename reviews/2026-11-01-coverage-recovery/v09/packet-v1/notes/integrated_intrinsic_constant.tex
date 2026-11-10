@@ -1,0 +1,436 @@
+\section{The positive-control formula for the original moment limit}
+\label{S:intrinsic-second-moment}
+
+Retain every original covariance and amplitude.
+Write $a=\alpha_0$, $I=(0,1)$, $K(s,t)=|s-t|^{-a}$ and
+$H_I=H_t\otimes H_{\mathrm{sp}}$ for the original raw covariance.
+Keep the uniform $E$ mean $\mathcal T_R=T_R(C_t\otimes I)$ and
+$C_{\rm mean}=M_0\|C_t\|$ of Section~\ref{S:uniform-physical-products},
+with exactly the fixed $r$ chosen there. In particular $2<r<2/a$.
+To distinguish it from the map below, write $J_R=T_R$.
+For a bounded multiplier $V:H^{1/2}\to H^{-1/2}$ write
+$B_E(V)(u,v)=(0,Vu)$, the actual $E$ operator of
+Lemma~\ref{L:uniform-E-lift}.
+The physical mask is $m_R=\eta(\cdot/R)^2$, used once.
+Let $\mathcal C_{\mathrm{pos}}$ be the full nonseparable class
+in~\eqref{E:variational-positive-class}.
+For $\Psi$ in that class, retain its unmasked mean $h_{\Psi,s}$,
+raw variance $v_\Psi$, integrated full-gradient rate $I_\Psi$ and
+positive scores $S_c^{\mathrm{pos}}$ from
+Section~\ref{S:unmasked-variational}.
+No first-moment or author-constant interpretation of the label one
+is assumed.
+We assume $\Gamma\ne0$ through the following comparison lemmas.
+The theorem treats zero covariance directly.
+
+\begin{lemma}[Raw inclusion and the actual smooth mean]
+  \label{L:positive-raw-embedding}
+  For any real Hilbert space $G$ there is a bounded map
+  $J_G:L^2(I;G)\to H_t\otimes G$ with
+  \begin{equation}\label{E:positive-bochner-inclusion}
+    \|J_GF\|^2
+    =\int_{I^2}K(s,t)\langle F(s),F(t)\rangle_G\ud s\ud t
+    \le K_0\|F\|_{L^2(I;G)}^2,\qquad K_0=\frac{2^a}{1-a}.
+  \end{equation}
+  The natural inclusion puts every $\Psi\in\mathcal C_{\mathrm{pos}}$
+  in $H_I$, with
+  \begin{equation}\label{E:positive-raw-mean}
+    \|\Psi\|_{H_I}^2=v_\Psi,\qquad
+    \mathcal T_R\Psi(s)=B_E(m_Rh_{\Psi,s})\quad\hbox{a.e. }s.
+  \end{equation}
+  For each fixed smooth $\Psi$ the right side gives a canonical
+  version for every $R\ge1$ and every $s\in I$.
+\end{lemma}
+
+\begin{proof}
+  Direct integration and concavity of $x^{1-a}$ give
+  \[
+    \int_I K(s,t)\ud t
+    =\frac{s^{1-a}+(1-s)^{1-a}}{1-a}\le K_0 .
+  \]
+  For scalar $f\ge0$, Cauchy--Schwarz against $K(s,t)\ud t$ and then
+  Tonelli give $\|Kf\|_2\le K_0\|f\|_2$.
+  The same estimate for absolute values bounds the bilinear integral
+  by $K_0\|f\|_2\|g\|_2$.
+  Approximate scalar $L^2(I)$ functions by real $C_c^\infty(I)$
+  functions. This bound makes their raw test-null classes Cauchy
+  in $H_t$, defines the bounded inclusion, and identifies its pairing
+  with the integral. Finite $G$-valued tensors then give
+  \eqref{E:positive-bochner-inclusion}. Simple fields are dense in
+  Bochner $L^2(I;G)$; the same bound on differences extends $J_G$.
+  Absolute bilinear continuity extends the integral identity as well.
+
+  For $G=H_{\mathrm{sp}}$, the Bochner integral
+  $\int_IK(s,t)F(t)\ud t$ exists almost everywhere: its norm is
+  bounded by $K\|F\|(s)$, which belongs to $L^2$.
+  Simple-field approximation and the Schur estimate give a strongly
+  measurable $L^2$ version and a bounded map of norm at most $K_0$.
+  On smooth finite tensors it agrees with
+  $(C_t\otimes I)J_G$ by the actual covariance definition.
+  Approximation by such tensors converges in $L^2(I;G)$.
+  The integral converges there by Schur; the completed tensor map
+  converges in $L^r(I;G)$ by Lemma~\ref{L:uniform-mean-tensor}
+  and~\eqref{E:positive-bochner-inclusion}, hence also in $L^2$.
+  Uniqueness of the $L^2$ limit identifies these versions.
+  In particular the integral belongs to $L^r$.
+
+  Choose a closed ball $B$ containing all spatial supports of $\Psi$.
+  For real smooth $q$ supported there, the physical covariance gives
+  \begin{equation}\label{E:positive-local-spatial-bound}
+    \|q\|_{H_{\mathrm{sp}}}^2
+    \le |B|\,\Gamma(B-B)\|q\|_\infty^2.
+  \end{equation}
+  Indeed in $\int\ud x\int\Gamma(\ud y)q(x)q(x-y)$ only
+  $x\in B,y\in B-B$ contribute. Absolute values and local finiteness
+  prove the bound, including white and singular Radon covariances.
+  Thus $t\mapsto\Psi_t$ is continuous, bounded and compactly supported
+  as an $H_{\mathrm{sp}}$-valued field, and belongs to $L^2$.
+  Its image under $J_{H_{\mathrm{sp}}}$ is the original raw test class
+  of $\Psi$. Indeed, the separated compact smooth approximants in
+  Lemma~\ref{L:cameron-supported-tensor} converge uniformly on one common
+  compact support. The local bound above and the temporal Schur estimate
+  give convergence both in $L^2(I;H_{\mathrm{sp}})$ and in the original
+  covariance norm. Their finite tensor identifications therefore have
+  this same limit.
+  Formula~\eqref{E:positive-bochner-inclusion} and absolute Fubini give
+  \[
+    \|\Psi\|_{H_I}^2
+    =\int_{I^2}K(s,t)\langle\Psi_s,\Psi_t\rangle_{H_{\mathrm{sp}}}
+    \ud s\ud t
+    =\int_{I\times\R^d}\Psi(s,x)h_{\Psi,s}(x)\ud x\ud s=v_\Psi.
+  \]
+  The compact spatial supports and~\eqref{E:positive-local-spatial-bound}
+  make all these absolute integrals finite.
+
+  Test the spatial row~\eqref{E:uniform-mean-row} first with displacement
+  $f$ and dual second component $\Lambda g$, with $f,g$ compact smooth.
+  The row product is $m_Rfg$, so the preceding temporal identity gives
+  \[
+    \left\langle\int_IK(s,t)\Psi_t\ud t,m_Rfg\right\rangle_{H_{\mathrm{sp}}}
+    =\int m_Rh_{\Psi,s}fg .
+  \]
+  This Fubini step has two fixed compact supports and integrable time
+  kernel. Both resulting operators are bounded on $E$: the left by
+  the mean theorem, the right by the bounded smooth $h_{\Psi,s}$
+  and compact smooth mask. Dense states extend the identity to $E$.
+  For this fixed $\Psi$ the temporal integral exists at every $s$,
+  with norm at most $K_0\sup_t\|\Psi_t\|_{H_{\mathrm{sp}}}$.
+  Applying $J_R$ gives the explicit version in
+  \eqref{E:positive-raw-mean} for every $R,s$.
+  For each $R$ it agrees with the completed $L^r$ mean class.
+  This makes no simultaneous-version assertion over all rough controls.
+  This proves Lemma~\ref{L:positive-raw-embedding}.
+\end{proof}
+
+\begin{lemma}[Actual finite labels and entrywise order]
+  \label{L:positive-physical-gram}
+  Take a finite partition of $I$ with nonempty cells $I_i$,
+  lengths $\ell_i>0$ and $\sum_i\ell_i=1$, and real
+  $f_i\in C_c^\infty(\R^d)$ with $\|f_i\|_2=1$.
+  Put
+  \[
+    h_i=\mathbf1_{I_i}/\ell_i,\quad b_i=\|\nabla f_i\|_2^2,\quad
+    k_i^R=h_i\otimes(m_Rf_i^2),\quad
+    k_i^\infty=h_i\otimes f_i^2 .
+  \]
+  These are elements of $H_I$. If $v_L$ is the multiplier form
+  of~\eqref{E:uniform-E-pairing}, then for every $\Phi\in H_I$,
+  \begin{equation}\label{E:positive-label-row}
+    \langle\Phi,k_i^R\rangle_{H_I}
+    =\ell_i^{-1}\int_{I_i}v_{\mathcal T_R\Phi(s)}(f_i,f_i)\ud s .
+  \end{equation}
+  The Grams $C^R_{ij}=\langle k_i^R,k_j^R\rangle$ and
+  $D_{ij}=\langle k_i^\infty,k_j^\infty\rangle$ satisfy
+  $0\le C^R_{ij}\le D_{ij}$ entrywise.
+\end{lemma}
+
+\begin{proof}
+  Lemma~\ref{L:positive-raw-embedding} puts $h_i$ in $H_t$.
+  The compact smooth spatial factors lie in $H_{\mathrm{sp}}$
+  by its test definition and~\eqref{E:positive-local-spatial-bound}.
+  On a smooth finite tensor, use~\eqref{E:uniform-mean-row}
+  with $z=(f_i,0)$ and $w=(0,\Lambda f_i)$.
+  Its row is $(\eta_Rf_i)(\eta_R\Lambda^{-1}\Lambda f_i)=m_Rf_i^2$.
+  Temporal integration gives the pairing with $h_i$.
+  This proves~\eqref{E:positive-label-row} on dense tensors.
+  Its right side is a bounded raw functional, with bound
+  $\ell_i^{-1/r}C_{\rm mean}\|\Phi\|\|f_i\|_{H^{1/2}}^2$
+  by Hölder and~\eqref{E:uniform-completed-mean}.
+  The left side is bounded by Hilbert Cauchy--Schwarz.
+  Thus the identity extends to the completed $H_I$.
+  The form is the actual displacement form by
+  Lemma~\ref{L:uniform-E-lift}.
+
+  Each Gram is symmetric positive semidefinite.
+  Its entries factor into the temporal pairing of nonnegative
+  $h_i,h_j$ and the physical spatial covariance pairing.
+  The kernels $K,\Gamma$ and $f_i^2,f_j^2$ are nonnegative;
+  $0\le m_R\le1$. Tonelli therefore gives the entrywise order.
+  The physical pairing already contains $\Gamma$, and the row
+  cancellation introduces no additional Fourier factor.
+  Zero labels are permitted.
+  All hypotheses of Proposition~\ref{P:gram-entrywise-comparison}
+  are met, without assuming $D-C^R$ is positive semidefinite.
+  This proves Lemma~\ref{L:positive-physical-gram}.
+\end{proof}
+
+\begin{lemma}[Uniform optimizer norm and positive smoothing]
+  \label{L:positive-uniform-optimizer}
+  Put $M=4C_{\rm mean}+4$.
+  The supremum defining $\mathcal S_R$ may be restricted to
+  $\|\Phi\|\le M$, uniformly in $R$.
+  For every finite trial family in Lemma~\ref{L:positive-physical-gram},
+  the unmasked finite score has a maximizer $\Phi_D$ with
+  $\|\Phi_D\|\le M$. It is zero or is a positive conic combination
+  of the $k_i^\infty$. In the latter case it is approximable in $H_I$
+  by tests in $\mathcal C_{\mathrm{pos}}$.
+\end{lemma}
+
+\begin{proof}
+  Put $C=C_{\rm mean}$ and $q=\|\Phi\|$.
+  Proposition~\ref{P:uniform-rate-averaging} gives
+  \[
+    2\operatorname{Rate}_R(\Phi)-q^2/2
+    \le2+2Cq-q^2/2<2-2q<0\quad(q>M).
+  \]
+  The zero control gives zero, proving the restriction.
+
+  Denote the finite unmasked objective by $\mathfrak F_D$.
+  Proposition~\ref{P:gram-positive-optimizer} supplies an attained
+  maximum at zero or a positive conic sum $\Phi_D$.
+  Choose a finite $R'\ge1$ whose plateau contains all supports of $f_i$.
+  Then $k_i^{R'}=k_i^\infty$.
+  Write $W_i=\ell_i^{-1}\int_{I_i}\mathcal T_{R'}\Phi(s)\ud s$.
+  The row identity and real Rayleigh formula imply, for every $\Phi$,
+  \begin{align*}
+    \mathfrak F_D(\Phi)
+    &\le2\sum_i\ell_i\lambda(W_i)-q^2/2\\
+    &\le2+2\sum_i\ell_i\|W_i\|-q^2/2
+    \le2+2Cq-q^2/2 .
+  \end{align*}
+  For fixed $f_i$, the map $L\mapsto v_L(f_i,f_i)$ is bounded linear;
+  hence the form of the Bochner average is the average form.
+  Here $\lambda(L)\le\max(1,\|L\|)\le1+\|L\|$,
+  the norm of an average is bounded by the average norm, and
+  the $L^1$ mean norm is at most its $L^r$ norm.
+  No time-averaging error or concavity of the positive-part square root
+  enters this estimate. Since the maximum is nonnegative, its optimizer
+  lies in the same ball of radius $M$, independently of the partition,
+  profiles and $R'$.
+
+  On a nonzero branch write
+  $\Phi_D=\sum_{i\in A}w_i h_i\otimes f_i^2$, with $w_i>0$.
+  Extend $h_i$ by zero, convolve with a nonnegative compact smooth
+  approximate identity, and multiply by smooth cutoffs
+  $0\le\chi_j\le1$ compactly supported in $I$, tending pointwise to one.
+  The resulting nonnegative $h_{i,j}\in C_c^\infty(I)$ converge to $h_i$
+  in $L^2$: the error is bounded by the convolution error plus
+  $\|(\chi_j-1)h_i\|_2$, which tends to zero by domination.
+  Set $\Psi_j=\sum_{i\in A}w_i h_{i,j}f_i^2$.
+  Finite tensor estimates and~\eqref{E:positive-bochner-inclusion}
+  give $\Psi_j\to\Phi_D$ in $H_I$.
+  The positive conic sum has positive squared norm, since at least
+  one eligible diagonal is positive and all Gram entries are nonnegative.
+  Thus $\Psi_j\ne0$ eventually, so $\Psi_j\in\mathcal C_{\mathrm{pos}}$.
+  Costs converge.
+  The integrated rate continuity proved in
+  Proposition~\ref{P:uniform-rate-averaging} gives
+  \begin{equation}\label{E:positive-rate-continuity}
+    |\operatorname{Rate}_{R'}(\Psi_j)-\operatorname{Rate}_{R'}(\Phi_D)|
+    \le\sqrt{3+C\|\Psi_j\|+C\|\Phi_D\|}
+    \sqrt{C\|\Psi_j-\Phi_D\|}\longrightarrow0 .
+  \end{equation}
+  This estimate is uniform in $R'$.
+  It asserts no uniform derivative bound on the smooth approximants.
+  The zero branch will use $S_2^{\mathrm{pos}}\ge0$ directly.
+  This proves Lemma~\ref{L:positive-uniform-optimizer}.
+\end{proof}
+
+\begin{proposition}[Signed scores bounded by the positive score]
+  \label{P:positive-signed-comparison}
+  For every $R\ge1$,
+  \begin{equation}\label{E:positive-signed-comparison}
+    \mathcal S_R\le S_2^{\mathrm{pos}} .
+  \end{equation}
+\end{proposition}
+
+\begin{proof}
+  Use uniform partitions with $n\ge2$ cells of length $1/n$.
+  They are the $B=1,\delta=1/n$ partitions in
+  Proposition~\ref{P:uniform-rate-averaging}, with the empty last cell omitted.
+  That proposition gives $e_n\to0$, independent of $R$, such that
+  \[
+    \left|\operatorname{Rate}_R(\Phi)
+    -\sum_i\ell_i\lambda\left(\ell_i^{-1}
+    \int_{I_i}\mathcal T_R\Phi(s)\ud s\right)\right|\le e_n
+    \quad(\|\Phi\|\le M).
+  \]
+  Fix $R,\Phi,n$, with $\|\Phi\|\le M$, and denote these averages by $W_i$.
+  Real compact smooth unit trials are dense in the real $H^1$ unit sphere:
+  truncate by cutoffs tending to one, whose gradient errors tend to zero,
+  then mollify in $H^1$ and normalize in $L^2$.
+  Continuity of the multiplier form in $H^{1/2}$ and hence $H^1$
+  proves
+  \[
+    \lambda(W_i)=
+    \sup_{\substack{f\in C_c^\infty(\R^d;\R)\\\|f\|_2=1}}
+    \sqrt{(v_{W_i}(f,f)-\|\nabla f\|_2^2)_+}.
+  \]
+  The real Rayleigh supremum is nonnegative by
+  Proposition~\ref{P:uniform-E-spectral}, so the positive part
+  does not change its supremum.
+  For $\varepsilon>0$ choose one near-maximizing $f_i$ per cell
+  with error at most $\varepsilon$ in the square root.
+  This is a finite choice, not a measurable continuum optimizer.
+  Since $\sum_i\ell_i=1$, the weighted trial error contributes
+  $2\varepsilon$ to the next inequality.
+  Lemma~\ref{L:positive-physical-gram} gives
+  \[
+    2\operatorname{Rate}_R(\Phi)-\|\Phi\|^2/2
+    \le\mathfrak F_{C^R}(\Phi)+2e_n+2\varepsilon .
+  \]
+  Optimize this finite objective and use entrywise Gram comparison:
+  \[
+    \mathfrak F_{C^R}(\Phi)
+    \le\mathscr S(C^R)\le\mathscr S(D)=\mathfrak F_D(\Phi_D).
+  \]
+  This compares optimized values, not the same individual control.
+  Lemma~\ref{L:positive-uniform-optimizer} proves
+  $\|\Phi_D\|\le M$ before time averaging is used again.
+  Choose $R'$ covering the finite supports as in that lemma.
+  The label row, Rayleigh bound and the same uniform averaging estimate give
+  \begin{equation}\label{E:positive-finite-optimizer-bound}
+    \mathfrak F_D(\Phi_D)
+    \le2\operatorname{Rate}_{R'}(\Phi_D)-\|\Phi_D\|^2/2+2e_n .
+  \end{equation}
+
+  If $\Phi_D=0$, its finite score is zero.
+  Otherwise use its positive smooth approximants $\Psi_j$.
+  Lemma~\ref{L:positive-raw-embedding} identifies their actual mean
+  with $B_E(m_{R'}h_{\Psi_j,s})$ and their raw cost with $v_{\Psi_j}$.
+  Since $h_{\Psi_j,s}\ge0$ and $0\le m_{R'}\le1$, real $H^1$ form order gives
+  $\operatorname{Rate}_{R'}(\Psi_j)\le I_{\Psi_j}$.
+  Thus
+  $2\operatorname{Rate}_{R'}(\Psi_j)-\|\Psi_j\|^2/2
+  \le S_2^{\mathrm{pos}}$.
+  Rate and cost convergence pass this inequality to $\Phi_D$.
+  Together with~\eqref{E:positive-finite-optimizer-bound} and the
+  separate zero branch this yields
+  \[
+    2\operatorname{Rate}_R(\Phi)-\|\Phi\|^2/2
+    \le S_2^{\mathrm{pos}}+4e_n+2\varepsilon .
+  \]
+  All finite choices were made after fixing $n,R,\Phi$.
+  The right side is independent of those choices.
+  Let $\varepsilon\downarrow0$, take the supremum over the raw ball,
+  use Lemma~\ref{L:positive-uniform-optimizer}, and then let $n\to\infty$.
+  This proves~\eqref{E:positive-signed-comparison}.
+  Finiteness of the positive score was already proved from the
+  independent old canonical upper in
+  Proposition~\ref{P:variational-positive-scores}, not from this conclusion.
+  This proves Proposition~\ref{P:positive-signed-comparison}.
+\end{proof}
+
+\begin{proposition}[Cutoff removal for the optimized score]
+  \label{P:positive-score-cutoff}
+  The possibly nonmonotone mask family satisfies
+  \[
+    \lim_{R\to\infty}\mathcal S_R=S_2^{\mathrm{pos}}.
+  \]
+\end{proposition}
+
+\begin{proof}
+  Fix $\Psi\in\mathcal C_{\mathrm{pos}}$ before taking $R$ or moment limits.
+  Use the explicit mean version of Lemma~\ref{L:positive-raw-embedding}.
+  Its rate $\lambda_R(s)$ obeys
+  $0\le\lambda_R(s)\le\lambda_{\Psi,s}$ by real form order.
+  For each real compact smooth unit $f$, $m_R=1$ on its support for
+  every sufficiently large $R$. The Rayleigh formula therefore gives
+  \[
+    \liminf_{R\to\infty}\lambda_R(s)^2
+    \ge\int h_{\Psi,s}f^2-\|\nabla f\|_2^2.
+  \]
+  Compact trial density and~\eqref{E:variational-real-rayleigh}
+  identify the supremum of the right side as $\lambda_{\Psi,s}^2$.
+  Hence $\lambda_R(s)\to\lambda_{\Psi,s}$ for these versions.
+  The global smooth-source bound
+  $H_\Psi=\sup_{s,x}h_{\Psi,s}(x)<\infty$ gives
+  $\lambda_R(s)\le\sqrt{H_\Psi}$.
+  Dominated convergence yields
+  $\operatorname{Rate}_R(\Psi)\to I_\Psi$.
+  Neither monotonicity of $m_R$ nor an unmasked ground eigenfunction was used.
+
+  The raw representative and cost $\|\Psi\|^2=v_\Psi$ are independent of $R$.
+  Thus
+  $\liminf_R\mathcal S_R\ge2I_\Psi-v_\Psi/2$ for each fixed test.
+  Given $\varepsilon>0$, choose one fixed test with score greater than
+  $S_2^{\mathrm{pos}}-\varepsilon$; the finite supremum admits such a test.
+  Take the liminf and then $\varepsilon\downarrow0$.
+  Proposition~\ref{P:positive-signed-comparison} supplies the reverse limsup.
+  This proves Proposition~\ref{P:positive-score-cutoff}.
+\end{proof}
+
+\begin{theorem}[Intrinsic original second-moment constant]
+  \label{T:intrinsic-second-moment}
+  For every original admissible model with data $(1,0)$ and fixed $x$,
+  \begin{equation}\label{E:intrinsic-second-moment-limit}
+    \lim_{T\to\infty}T^{-(4-\alpha-a)/(3-\alpha)}
+    \log\E|u_\Gamma(T,x)|^2
+    =C_2(\Gamma,a)=S_2^{\mathrm{pos}}
+    =2^{(4-\alpha)/(3-\alpha)}S_1^{\mathrm{pos}}.
+  \end{equation}
+  Its complete positive-control formula is
+  \begin{align}
+    C_2(\Gamma,a)
+    &=\sup_{\Psi\in\mathcal C_{\mathrm{pos}}}
+    \left\{2\int_I
+    \sqrt{\sup_{\substack{f\in H^1(\R^d;\R)\\\|f\|_2=1}}
+    \left(\int h_{\Psi,s}f^2-\|\nabla f\|_2^2\right)}
+    \ud s-\frac{v_\Psi}{2}\right\},
+    \label{E:intrinsic-positive-formula}\\
+    h_{\Psi,s}(x)
+    &=\int_I|s-t|^{-a}(\Gamma*\Psi_t)(x)\ud t,\qquad
+    v_\Psi=\int_{I\times\R^d}\Psi(s,x)h_{\Psi,s}(x)\ud x\ud s.
+    \notag
+  \end{align}
+  Here $\mathcal C_{\mathrm{pos}}$ consists of all nonzero nonnegative
+  real $C_c^\infty(I\times\R^d)$ tests, including nonseparable ones.
+  The covariance retains its actual amplitude, the kinetic term has
+  coefficient one, and the Gaussian action is $v_\Psi/2$.
+  For nonzero covariance $0<C_2<\infty$.
+  For $\Gamma=0$ the constant and moment rate are zero.
+\end{theorem}
+
+\begin{proof}
+  Assume first $\Gamma\ne0$.
+  Proposition~\ref{P:original-signed-point-upper}, followed by
+  Proposition~\ref{P:positive-score-cutoff} with $R=\delta^{-1}+2$,
+  bounds the original point limsup by $S_2^{\mathrm{pos}}$.
+  Proposition~\ref{P:variational-positive-scores} bounds the original
+  point liminf below by this same value.
+  Both are for the same canonical Stratonovich solution, exponent,
+  original covariance and variance-half action.
+  Their source-first identifications retain all mixed, unequal, self
+  and empty chains and both phase components with initial data $(1,0)$.
+  The original spatial stationarity proved in
+  Proposition~\ref{P:raw-block-original-lower} extends both bounds to
+  every fixed $x$.
+  Thus the limit exists and equals $S_2^{\mathrm{pos}}$.
+  Its homogeneity, positivity and finiteness are
+  Proposition~\ref{P:variational-positive-scores}.
+  Formula~\eqref{E:variational-real-rayleigh} and the definition of the
+  original raw variance give~\eqref{E:intrinsic-positive-formula}.
+
+  If $\Gamma=0$, $H_I=\{0\}$, all means, variances and rates vanish,
+  $\mathcal S_R=S_c^{\mathrm{pos}}=0$, and $u=1$.
+  Both formulas are direct zero identities.
+  This proves Theorem~\ref{T:intrinsic-second-moment}.
+\end{proof}
+
+The label-one score is auxiliary; the theorem does not identify it with
+an actual first-moment limit or with Chen's printed constants.
+It neither repairs a source energy normalization nor asserts a Jensen
+improvement. The exponent formally tends to $(4-\alpha)/(3-\alpha)$
+as $a\downarrow0$; no interchange with the static moment limit is claimed.
+The explicit bounds and full calibration and whole-argument verification
+remain separate steps.

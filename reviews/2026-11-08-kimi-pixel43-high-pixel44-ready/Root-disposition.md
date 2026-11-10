@@ -1,0 +1,1 @@
+Root read the entire report. Canonical validator accepts HIGH/no repairs, all16 exact VIEW_IDs match and every frozen PNG hash verifies. Accept MAIN physical166-169 only: union169/267pages/676views,98remain. Crop-seam notes are covered by adjacent bands. No source/math/cold acceptance. Next170-173 READY599819input plus311296hard=911115, actualcontext41418.

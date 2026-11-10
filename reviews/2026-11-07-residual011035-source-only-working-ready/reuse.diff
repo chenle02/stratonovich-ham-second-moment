@@ -1,0 +1,25 @@
+--- foundation12/common.py
++++ residual25/common.py
+@@ -45,8 +45,8 @@
+   need(frame['mode']=='WHOLE_LITERAL_UTF8','unexpected carrier mode')
+   body=user[frame['payload_start_byte']:frame['payload_end_byte_exclusive']];source=frame['source']
+   need(len(body)==frame['payload_bytes']==frame['decoded_bytes']==source['bytes']and sha(body)==frame['payload_sha256']==frame['decoded_sha256']==source['sha256'],'literal source offset/hash mismatch')
+-  need(body==raw(source['source_path']),'whole source inverse differs')
+-  for alias in source['aliases']:need(raw(alias['origin'])==body and sha(body)==alias['sha256'],'original alias source changed')
++  need(body==raw(source[BIND.get('source_origin_key','source_path')]),'whole source inverse differs')
++  for alias in source.get('aliases',[]):need(raw(alias['origin'])==body and sha(body)==alias['sha256'],'original alias source changed')
+  count=load(DATA/'joined-count.json');need(count['tokenizer_sha256']=='8f9f37ca37fdc4f5fd36d5cf4d3b0e8392edb4e894fd10cc0d70b4957c8633cf'and count['tokenizers_version']=='0.23.3'and count['hard_allowance']==311296,'official count identity/reserve differs')
+  need(count['joined_sha256']==sha(agent+b'\n'+user),'actual joined count input differs')
+  return user,agent
+@@ -64,8 +64,8 @@
+  # Heading presence is source-working coverage only, never proof or a grade.
+  need(sha(raw(DATA/'manifest.json'))==BIND['DATA_manifest_sha256'],'foundation DATA seal changed')
+  pin=load(DATA/'manifest.json')['files'][BIND['required_ids_file']];body=raw(DATA/BIND['required_ids_file']);need(sha(body)==pin['sha256'],'required IDs member changed')
+- ids=strict(body)['exact_ids'];need(len(ids)==len(set(ids))==12,'exact twelve IDs required')
++ ids=strict(body)[BIND.get('required_ids_key','exact_ids')];need(len(ids)==len(set(ids))==BIND['required_ID_count'],'exact required ID count differs')
+  headings=re.findall(r'^## ([^\r\n]+)\r?$',text,re.M)
+- for ident in ids+[BIND['global_heading']]:need(headings.count(ident)==1,'missing/duplicate exact heading: '+ident)
++ for ident in ids+BIND.get('additional_headings',[])+[BIND['global_heading']]:need(headings.count(ident)==1,'missing/duplicate exact heading: '+ident)
+  need(headings[-1]==BIND['global_heading'],'GLOBAL conditions must finish required headings')
+- return {'all12_exact_headings_once':True,'GLOBAL_conditions_heading_once':True,'heading_coverage_only_not_derivation_acceptance':True,'accepted':False,'grade_or_confidence_not_requested_or_inferred':True,'MAIN_cold_visual_adoption':False}
++ return {'all_required_ID_headings_once':True,'required_ID_count':len(ids),'additional_headings':BIND.get('additional_headings',[]),'GLOBAL_conditions_heading_once':True,'heading_coverage_only_not_derivation_acceptance':True,'accepted':False,'grade_or_confidence_not_requested_or_inferred':True,'MAIN_cold_visual_adoption':False}

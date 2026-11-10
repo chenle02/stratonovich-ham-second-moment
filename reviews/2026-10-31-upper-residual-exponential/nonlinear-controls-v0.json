@@ -1,0 +1,67 @@
+{
+  "scope": "exact deterministic scalar controls only; no Gaussian/operator/CM-realizability/SPDE assertion",
+  "pure_nu_rows": [
+    {
+      "C": 1,
+      "x": "1/16",
+      "logU_squared": "1/256",
+      "claimed_rhs_squared": "1/512",
+      "pure_nu_bound_refuted": true
+    },
+    {
+      "C": 2,
+      "x": "1/64",
+      "logU_squared": "1/4096",
+      "claimed_rhs_squared": "1/8192",
+      "pure_nu_bound_refuted": true
+    },
+    {
+      "C": 10,
+      "x": "1/1600",
+      "logU_squared": "1/2560000",
+      "claimed_rhs_squared": "1/5120000",
+      "pure_nu_bound_refuted": true
+    },
+    {
+      "C": 100,
+      "x": "1/160000",
+      "logU_squared": "1/25600000000",
+      "claimed_rhs_squared": "1/51200000000",
+      "pure_nu_bound_refuted": true
+    }
+  ],
+  "rare_block_rows": [
+    {
+      "L": 2,
+      "number_of_blocks": 256,
+      "delta": "1/256",
+      "max_amplitude": 4,
+      "averaged_r4_budget": "1",
+      "averaged_nu_3_over_2_cost": "1/32"
+    },
+    {
+      "L": 4,
+      "number_of_blocks": 65536,
+      "delta": "1/65536",
+      "max_amplitude": 16,
+      "averaged_r4_budget": "1",
+      "averaged_nu_3_over_2_cost": "1/1024"
+    },
+    {
+      "L": 8,
+      "number_of_blocks": 16777216,
+      "delta": "1/16777216",
+      "max_amplitude": 64,
+      "averaged_r4_budget": "1",
+      "averaged_nu_3_over_2_cost": "1/32768"
+    },
+    {
+      "L": 16,
+      "number_of_blocks": 4294967296,
+      "delta": "1/4294967296",
+      "max_amplitude": 256,
+      "averaged_r4_budget": "1",
+      "averaged_nu_3_over_2_cost": "1/1048576"
+    }
+  ]
+}

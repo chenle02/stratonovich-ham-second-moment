@@ -1,0 +1,52 @@
+{
+  "scope": "Author-side actual public-report completeness and returned-claim inspection; no provider call or scientific acceptance",
+  "session_id": "ses_e643671e2ffe0NW5o9Re7EnvHO",
+  "original_report_sha256": "233181aa6f5c8ca92f06b2fa37d3e3aa43f3c17587d263a813f25e71f2fbfaac",
+  "original_terminal_checks_sha256": "214e5792bbc9755d447d4789edd287d03a6a05d0ae9c525b105cb9e73946e5d6",
+  "native_exit": {
+    "exit_code": 0,
+    "elapsed_seconds": 639.124539501965,
+    "finished_utc": "2026-11-02T10:34:38.230174+00:00"
+  },
+  "native_finish": "stop",
+  "original_header_verdict": "PASS_WITH_NOTES",
+  "original_header_confidence": "MEDIUM",
+  "public_report_complete": false,
+  "last_public_text": "tical defect.\n\n4. **PROOF117/118 rely on the raw covariance completion.** The identities `E W(\u03a8)W(F\u2080) = \u222bF\u2080(s,x)h_s(x) dx ds` and `v_\u03a8 = E Z\u00b2` are quoted from the covariance/raw-no",
+  "missing_required_check_ids": [
+    "CMF01",
+    "CMF02",
+    "CMF03",
+    "CMF04",
+    "CMF05",
+    "CMF06",
+    "CMF07",
+    "CMF08",
+    "CMF09",
+    "CMF10",
+    "CMF11",
+    "CMF12"
+  ],
+  "missing_seven_proof_status_ledger": true,
+  "missing_checked_derivations_and_required_fixes_sections": true,
+  "original_report_complete_flag_scope": "Original generic collector sets this from exit0, finishstop and nonemptytext only. It does not verify semantic/report completion; its true value is NOT accepted as complete-report evidence. Original preserved unchanged.",
+  "scoped_accepted": false,
+  "HIGH_threshold_met": false,
+  "canonical_composition_accepted": false,
+  "automatic_retry": false,
+  "same_session_completion": "NOT DISPATCHED; requires parent disposition; any future completion remains one reviewer lineage, not another vote",
+  "author_adjudication": [
+    {
+      "finding": "PROOF113 inverse-quarter norm allegedly infinite for general z in L2",
+      "disposition": "Incorrect reviewer claim. A_sigma>=1 implies lambda^-1/4<=1 on its spectrum, so A_sigma^-1/4 is bounded on all L2. Manuscript first identifies dual norm on z in L2 then completes; no correction warranted.",
+      "source": "notes/integrated_compact_mean_family.tex:126-177"
+    },
+    {
+      "finding": "PROOF114 weighted sine bound claimed C(1+t) uniformly h>=-M",
+      "disposition": "As an all-t claim this omits negative-spectrum exponential growth. Manuscript already retains exponential spectral bounds and uses graph trajectories on finite horizons; this reviewer shorthand does not establish a defect.",
+      "source": "notes/integrated_compact_mean_family.tex:204-279"
+    }
+  ],
+  "image_credit": 0,
+  "fullgoal_accepted": false
+}

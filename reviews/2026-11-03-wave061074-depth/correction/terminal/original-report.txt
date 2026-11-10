@@ -1,0 +1,187 @@
+{
+  "schema": "wave061074-depth-result-v1",
+  "verdict": "All fourteen assigned own targets PROOF061-PROOF074 reconstruct and check under the retained original hypotheses; no own-deduction flaw found. PROOF088's two finite variance inequalities, actual localizations, tail envelopes, and same-W first-chaos column expansions are matched to those results and to the typed085-087 inputs.",
+  "confidence": "0.8",
+  "confidence_reason": "I reconstructed each statement and its proof from the supplied integrated source modules, following the near/far constants, the alpha row regimes, both Hilbert-Bessel directions, the E adjoint and zero-frequency entries, and then matched PROOF088's actual projection/Parseval order. Residual uncertainty is only about non-recomputed metadata: SHA256 and raw-LF byte intervals were accepted from the neutral map and aligned with displayed content, since no hashing or file tool was used. PROOF085-087 were checked at hypothesis/use level for PROOF088, not re-audited as full proofs; PROOF075-084, 089-093 and the full-goal manual were not full reviewed.",
+  "scope": {
+    "own_targets": "PROOF061-PROOF074",
+    "application": "PROOF088 with typed085-087 input matching",
+    "exclusions": "No full093 path, whole214, whole-goal, image, render or cold certification"
+  },
+  "proof_coverage": [
+    {
+      "id": "PROOF061",
+      "owner_label": "P:masked-spectral-growth",
+      "status": "CHECKED",
+      "source_statement_and_proof_binding": "notes/integrated_covariance_foundation.tex; statement lines 35-53, proof lines 55-80; declared statement-body sha256 5b1199d39262c70913ab66d292ff25ccc362aa68c8b07d574f4d91f539f8f46b, proof-body sha256 0478c99120385aec598146ce84e88b32b6008aa7fdd23912da956175c1feb6dd (declared, not recomputed). Content aligned.",
+      "worked_derivation": "Tempered positive Radon growth gives 0<M_Gamma<inf. One-dimensional Gaussian J(b)=sqrt(pi/A)e^{-b^2/(4A)}; product gives int e^{-r^2|x|^2/4}e^{i(xi-y).x}dx=(2sqrt(pi)/r)^d e^{-|xi-y|^2/r^2}. The spectral convention is applied once to the Schwartz test e^{-r^2|x|^2/4}e^{-iy.x}. Homogeneity x->rx makes int e^{-r^2|x|^2/4}Gamma(dx)=r^{alpha-d}M_Gamma. Hence int e^{-|xi-y|^2/r^2}mu <= r^alpha M_Gamma/(2sqrt(pi))^d, and e^{-1} on the ball B(y,r) gives mu(B(y,r))<=C_Gamma r^alpha with C_Gamma=e M_Gamma/(2sqrt(pi))^d. Open/closed balls: e^{-1} holds on either.",
+      "input_applications": "E:masked-gaussian-transform (proved here), E:masked-spectral-convention (single legitimate distribution pairing), H:homog homogeneity Gamma(cA)=c^{d-alpha}Gamma(A). No angular density, finite total mass, or spectral density of mu is assumed.",
+      "remaining_gap": "none"
+    },
+    {
+      "id": "PROOF062",
+      "owner_label": "P:masked-auxiliary-norm",
+      "status": "CHECKED",
+      "source_statement_and_proof_binding": "notes/integrated_covariance_foundation.tex; statement lines 91-104, proof lines 106-142; declared statement-body sha256 f2863c7cd52b902a6102f19339e11c66702548d758579af2b3631f5ba89aed78, proof-body sha256 82c713363961236ec1f8a2e915eca336fd8193eb4c2cad52c5fcffa6872c30ee (declared, not recomputed).",
+      "worked_derivation": "rho_R finite and continuous by Schwartz decay of k_R and tempered growth of mu; dominated convergence on compact eta sets makes nu_R Radon. Real zeta gives |k_R(-u)|=|k_R(u)|, and even mu gives even nu_R. Tonelli: nu_R(B(y,r))=c_d^2 L int |k_R(u)| mu(B(y+u,r))du <= c_d^2 L^2 C_Gamma r^alpha. Bochner Fourier multiplication gives (zeta_R F)hat(xi)=c_d int k_R(xi-eta) Fhat(eta)d eta; weighted Cauchy-Schwarz and integration against mu yield the Hilbert-Fourier inequality. Finite-rank projections justify H-valued identity.",
+      "input_applications": "E:masked-auxiliary-growth, E:masked-hilbert-fourier, P:masked-spectral-growth. No positive physical inverse covariance for nu_R, no claim that nu_R density is an original angular density, no stationary masked-field assertion.",
+      "remaining_gap": "none"
+    },
+    {
+      "id": "PROOF063",
+      "owner_label": "L:masked-time-completion",
+      "status": "CHECKED",
+      "source_statement_and_proof_binding": "notes/integrated_covariance_foundation.tex; statement lines 146-161, proof lines 163-187; declared statement-body sha256 e705c08ffc13ed1d5f3306a1cbcdfb90a867118b075f619d46780d6f3bb624bc, proof-body sha256 42dbfeecea6c844deaf501aabc316a55c537f507a1b133c676297a101ec0ca69 (declared, not recomputed).",
+      "worked_derivation": "Using |t-s|^{-a}=Gamma_E(a)^{-1}int_0^inf lambda^{a-1}e^{-lambda|t-s|}dlambda and e^{-lambda|t-s|}=int_{-inf}^{min(t,s)}2lambda e^{-lambda(t-u)}e^{-lambda(s-u)}du, each lambda contributes a square, so the form is positive semidefinite. Row integral int_0^T |t-s|^{-a}ds<=2T^{1-a}/(1-a) gives ||f||_a^2<=2T^{1-a}(1-a)^{-1}||f||_2^2. Complexification separates real/imaginary parts and keeps the same norm and bound. L^2 density gives separability, including bounded interval amplitudes.",
+      "input_applications": "E:masked-time-schur (proved). Uses only 0<a<1 and finite T.",
+      "remaining_gap": "none"
+    },
+    {
+      "id": "PROOF064",
+      "owner_label": "P:masked-noise-completion",
+      "status": "CHECKED",
+      "source_statement_and_proof_binding": "notes/integrated_covariance_foundation.tex; statement lines 195-213, proof lines 215-255; declared statement-body sha256 5449474299210c9c5575fdd6b4933e4b3ab9510a9c21677149ea71251d92fe4f, proof-body sha256 cc69698b975dfff4d29e5e7bdcd59bc933477949f0e5fef3b896bb08989cf0b9 (declared, not recomputed).",
+      "worked_derivation": "For real spatial Schwartz f,g the correlation h(z)=int f(y+z)g(y)dy = int e^{iξz} fhat(ξ) overline{g hat(ξ)} dξ. Applying the spectral convention to h, then reflecting xi by evenness of mu, gives spatial covariance (2π)^d int fhat overline{g hat} mu. Summing temporal factors yields E W(F)^2=(2π)^d int ||Fhat||^2_{H_a^C} mu. Proposition 062 with H=H_a^C gives the contraction F->W(zeta_R F) from the auxiliary quotient to original L^2(Omega). Null-completion and PSD covariance comparison follow.",
+      "input_applications": "E:masked-actual-noise-norm (proved), E:masked-spectral-convention, P:masked-auxiliary-norm. No infinite-measure interchange of oscillatory pairs, no replacement of W, no nonlinear covariance comparison.",
+      "remaining_gap": "none"
+    },
+    {
+      "id": "PROOF065",
+      "owner_label": "P:masked-quotient-obstruction",
+      "status": "CHECKED",
+      "source_statement_and_proof_binding": "notes/integrated_covariance_foundation.tex; statement lines 265-271, proof lines 273-304; declared statement-body sha256 cd4c73e0fd1704f293134ef53e76a1872d88711a731da8971c8ac21b2ad3bfe4, proof-body sha256 0ebbe4612554edd33ef21a2cda3d17fb3db99e6370eeb62c771f03a127b41323 (declared, not recomputed).",
+      "worked_derivation": "Gamma=delta_0(dx1)dx2 in d=2 has Gamma(cA)=c Gamma(A), so alpha=1, and mu=(2π)^{-1}d xi1 delta_0(d xi2). Spatial variance is V(g)=int( int g(x1,x2)dx2)^2 dx1. Choosing plateau chi and g=chi(x1)chi''(x2), zeta=chi(x1)chi(x2) gives unmasked marginal int g dx2=0 but masked marginal int zeta g dx2 = -I_chi chi(x1)^2, so V(zeta g)=J_chi I_chi^2>0. A positive compact time factor makes the raw unmasked variance zero and the masked variance positive, disproving any finite constant bound of W(zeta F)^2 by CW(F)^2 on the raw quotient.",
+      "input_applications": "H:homog in the admissible alpha=d=1 case; E:masked-spectral-convention for mu; the d3 singular-plane control and falsification control 6 are analogous and checked.",
+      "remaining_gap": "none"
+    },
+    {
+      "id": "PROOF066",
+      "owner_label": "L:masked-temporal-modulation",
+      "status": "CHECKED",
+      "source_statement_and_proof_binding": "notes/integrated_covariance_foundation.tex; statement lines 312-321, proof lines 323-359; declared statement-body sha256 28bc97b9f7bae0455df9262d7452879aff695fa355dbaefcf755389c8e69d074, proof-body sha256 385a69a0a37b20e6025d4d87a485024cdbd61c7fe039282e8bd62f897bca36ed (declared, not recomputed).",
+      "worked_derivation": "With c(v)=int_s^{s+h-v}A(u+v)overline A(u)du, c(h)=0, |c|<=hM^2, |c'|<=M^2+hMD<=K^2. Twice the conjugate triangle gives 2h^{2-a}Re int_0^1 y^{-a}e^{i omega h y}f(y)dy with f(1)=0, |f|,|f'|<=K^2. For |omega h|<=1 the integral is <=K^2/(1-a); for k=|omega h|>1 split at 1/k. Endpoint and derivative integration by parts give total <=4K^2 k^{a-1}/(1-a); k^{a-1}<=sqrt2 <omega h>^{a-1}. Choosing C0(a)=16/(1-a) proves the squared-norm bound ||1_I A e^{i omega t}||_a^2<=C0(a)h^{2-a}(M+hD)^2<h omega>^{a-1}.",
+      "input_applications": "Self-contained temporal estimate; uses 0<a<1. This is the norm-SQUARED bound required by falsification control 1, not an unsquared bound.",
+      "remaining_gap": "none"
+    },
+    {
+      "id": "PROOF067",
+      "owner_label": "L:masked-trig-products",
+      "status": "CHECKED",
+      "source_statement_and_proof_binding": "notes/integrated_covariance_foundation.tex; statement lines 361-374, proof lines 376-391; declared statement-body sha256 9200b92eff0104faef1079adc8ab866b09da9c47d3131907a04029605d29cee5, proof-body sha256 f1cf6579a1b8d4cf36d08c5adf22618ba307c4ccf250f126582694a41c43191e (declared, not recomputed).",
+      "worked_derivation": "Each cos/sin product is a four-exponential sum with coefficients of absolute value 1/4 and frequencies with absolute values |r-rho| (twice) and r+rho (twice). The Hilbert inequality ||sum c_jv_j||^2<=(sum|c_j|)sum|c_j|||v_j||^2 with sum|c_j|=1 and Lemma 066 give ||1_I A P_r Q_rho||_a^2 <= C0(a)h^{2-a}(M+hD)^2 Q_h(r,rho), Q_h= <h(r-rho)>^{a-1}+<h(r+rho)>^{a-1}. No orthogonality or independence of modes is used; zero and repeated frequencies are allowed.",
+      "input_applications": "L:masked-temporal-modulation (used per mode); E:masked-frequency-pair (defined).",
+      "remaining_gap": "none"
+    },
+    {
+      "id": "PROOF068",
+      "owner_label": "L:masked-continuous-wave",
+      "status": "CHECKED",
+      "source_statement_and_proof_binding": "notes/integrated_covariance_foundation.tex; statement lines 393-405, proof lines 407-439; declared statement-body sha256 ca8df3a1728e30d4ca12b40f195126eb6402b1f22a3e4e72cf95688f2626772e, proof-body sha256 8cb881f6213017ef9bc28af755026035afd7b9909562a20e0899eec254311553 (declared, not recomputed).",
+      "worked_derivation": "b_r=<r>sin(rt)/r for r>0 and b_0=t. For 0<=r<=1, b_r(t)=t<r>int_0^1 cos(vrt)dv; for r>=1 it is a sine with coefficient <=sqrt2. Hence a product F_rG_rho is a scalar coefficient of size <=2 times a probability average of t^j P_{r'}(t)Q_{rho'}(t), j in {0,1,2}, with frequency shifts <=1. A=t^j gives (M+hD)^2<=(1+T)^4. Each changed bracket is <=3^{1-a} times the original because a-1<0 and frequencies change by at most 2. Hilbert Jensen and coefficient square <=4 produce C1(a)=4*3^{1-a}C0(a); hence ||1_I F_rG_rho||_a^2<=C1(a)(1+T)^4 h^{2-a}Q_h(r,rho).",
+      "input_applications": "E:masked-continuous-wave (proved), L:masked-time-completion, L:masked-trig-products. Retains b_0=t and the sine quotient; zero positive-time frequency is not divided by zero.",
+      "remaining_gap": "none"
+    },
+    {
+      "id": "PROOF069",
+      "owner_label": "P:frequency-row",
+      "status": "CHECKED",
+      "source_statement_and_proof_binding": "notes/integrated_wave_variance.tex; statement lines 47-54, proof lines 56-145; declared statement-body sha256 0d415ffc032ed3c72d7187b6c0e7b1c07b16ac1b9ab89db19ae2311bc6094db5, proof-body sha256 e332a784570b09324e88f0f2c2219899b11b57673362b9cd9ff849e39b933815 (declared, not recomputed).",
+      "worked_derivation": "If C=0 a countable ball cover gives nu=0. Otherwise nu_xi(B(0,R))<=CR^alpha; with q=max(1,|xi|) and N=ceil(log2(5q)), A_xi(q)=int_{|eta|<=5q}<eta>^{-1}nu_xi(d eta)<=C[1+2^alpha sum_{j=0}^{N-1}2^{j(alpha-1)}], giving the three regimes: 1, 1+log q, q^{alpha-1}. Near region |lambda|<=4q contributes <=const*q^{-epsilon}A_xi(q), bounded in all alpha regimes using epsilon=1-2gamma>0 and (for alpha>1) alpha+2gamma-2<0. Far region r=|lambda|>4q has |eta|>=3r/4, ||eta|-|xi||>=r/2, |eta|+|xi|>=r/2, so contribution is bounded by C sum_{j>=0}2^{j(alpha-1)}<h2^j>^{a-1}. With L=floor(log2(1/h)), the tail uses alpha+a-2<0 to produce h^{1-alpha}/(1-2^{alpha+a-2}); the low shells give the B_alpha(h) regimes 1, 1+ln(1/h), h^{1-alpha}. This reproduces the falsification-control exponent: far term is 2^{j(alpha-1)}<h2^j>^{a-1}, not 2^{j(a-1)}. K is finite at strict tuples and independent of d,nu,C,h,xi.",
+      "input_applications": "E:frequency-inverse-bessel (proved), E:frequency-translated-growth (hypothesis), E:variance-gamma-range. No evenness, density, finite total mass, or angular regularity is used.",
+      "remaining_gap": "none"
+    },
+    {
+      "id": "PROOF070",
+      "owner_label": "C:frequency-time",
+      "status": "CHECKED",
+      "source_statement_and_proof_binding": "notes/integrated_wave_variance.tex; statement lines 147-158, proof lines 160-172; declared statement-body sha256 a10a9f68a01708b2c705acad2fedababeae4e385a300024a82733679f9a474bd, proof-body sha256 47ce4058c337a368d7364eb028d238f0438b8ef00f54a8e027f98704d4ec3088 (declared, not recomputed).",
+      "worked_derivation": "For alpha<1, 2-a>2beta gives h^{2-a}<=h^{2beta} while B_alpha=1. For alpha>1, 3-a-alpha>2beta gives h^{2-a}h^{1-alpha}=h^{3-a-alpha}<=h^{2beta}. For alpha=1, delta=2-a-2beta>0 and h^delta(1+ln(1/h))<=1+1/(e delta), absorbing the critical logarithm. The upper endpoints exceed 1/2 because a<1 and alpha+a<2. No endpoint beta is used.",
+      "input_applications": "E:variance-beta-range, E:frequency-time-bound, P:frequency-row.",
+      "remaining_gap": "none"
+    },
+    {
+      "id": "PROOF071",
+      "owner_label": "P:actual-wave-form",
+      "status": "CHECKED",
+      "source_statement_and_proof_binding": "notes/integrated_wave_variance.tex; statement lines 221-256, proof lines 258-357; declared statement-body sha256 26082bb96b05921cf40c6b762baee33bf396bf24f0178c8b5e82b904e68f5aa3, proof-body sha256 fad3c5a975c5fb7844619bb9701b8659a530e645857f388c23344071444ff257 (declared, not recomputed).",
+      "worked_derivation": "Wave multipliers are smooth at zero via the continuous sine quotient and preserve Schwartz space; compact spatial support and Lemma 063 give raw admission (fixed-R admission constants are not the uniform variance constants). The complex noise norm is E|W_C(zeta_RF)|^2=(2π)^d int ||(zeta_RF)hat||^2_{H_a^C}mu <= (2π)^d int ||Fhat||^2_{H_a^C}nu_R. Physical-Sobolev pairing proves <S(-t)B(b(t))S(t)z,w>_E=int b(t,x)v_z(t,x) overline{G_w(t,x)}dx, and D_chi^* w=(Lambda^{-1}chi Lambda w1, Lambda chi Lambda^{-1} w2). With U=Jz,V=Jw the kernel is K(t;xi,eta)= [ -b_r c_rho, -b_r b_rho ; c_r c_rho, c_r b_rho ]/sqrt(<xi><eta>), equal to [[-t,-t^2],[1,t]] at xi=eta=0. Fourier multiplication with the conjugate gives the stated c_d convolution; after reflection in even nu_R and (2π)^d c_d^2=1, the covariance inequality has no remaining Fourier factor.",
+      "input_applications": "E:variance-complex-noise, E:variance-cutoff-adjoint, E:variance-normalized-covariance, E:variance-normalized-kernel, E:variance-physical-adjoint, L:masked-time-completion, P:masked-noise-completion.",
+      "remaining_gap": "none"
+    },
+    {
+      "id": "PROOF072",
+      "owner_label": "L:phase-bessel",
+      "status": "CHECKED",
+      "source_statement_and_proof_binding": "notes/integrated_wave_variance.tex; statement lines 361-370, proof lines 372-382; declared statement-body sha256 5a7483b0906ea05dca41c133da80e6d97cd16edbf3ab9af40ab3bfa824201163, proof-body sha256 b3392bb74ac70b45b540b0f5183c4280c2e48c8034152068f5299964e6985daf (declared, not recomputed).",
+      "worked_derivation": "Expand g in a countable ONB of H; on each scalar coefficient apply finite scalar Bessel to {overline{u_k}} for sum u_{k,j}g_j, and to {u_k} for the conjugated version. Nonnegative Tonelli and Parseval over the H basis give sum_k||int sum_j u_{k,j}g_j||^2_H <= int sum_j||g_j||^2_H. Bochner integrability follows from L^2 Cauchy-Schwarz. No independence is used.",
+      "input_applications": "E:phase-bessel (proved); no other inputs.",
+      "remaining_gap": "none"
+    },
+    {
+      "id": "PROOF073",
+      "owner_label": "P:wave-two-variances",
+      "status": "CHECKED",
+      "source_statement_and_proof_binding": "notes/integrated_wave_variance.tex; statement lines 384-399, proof lines 401-477; declared statement-body sha256 f39b0a9e9af7930c44c7be198ec05800b8f9bf55fd45d5b56b54c12f53d342a0, proof-body sha256 fe20fc62b8388ec345ee16d121a1b602f21480bdf220210c4f8eca86ec92213f (declared, not recomputed).",
+      "worked_derivation": "Each kernel entry is a product of two continuous wave factors times (<xi><eta>)^(-1/2), so Lemma 068 gives ||1_I K_ij||^2_{H_a}<=A_T h^{2-a}Phi_h(xi,eta). The growth of nu_R gives int Phi_h(xi,xi-lambda)nu_R(dlambda)<=K C_nu B_alpha(h)<xi>^{-2gamma}. Input direction: fix V=Jz and vary U_k=Je_k; Lemma 072 plus two-component Cauchy-Schwarz gives sum_j||g_j^lambda||^2 <=4A_T h^{2-a}Phi_h(eta+lambda,eta)|V(eta+lambda)|^2; changing xi=eta+lambda and integrating nu_R yields sum_k E|ell_R(I;e_k,z)|^2 <=C_T h^{2-a}B_alpha(h)||z||^2_{E_{s-gamma}} with C_T=4A_T K C_nu. Output direction: fix U=Jz and vary V_k=Je_k; after eta=xi-lambda, the conjugated Bessel gives the same bound, and the remaining row uses the actual evenness of nu_R and symmetry of Phi_h to reflect lambda and reach int Phi_h(eta,eta-lambda)nu_R(dlambda). Both directions are derived separately, matching falsification control 7. Corollary 070 converts either h^{2-a}B_alpha(h) factor to C_{T,beta}h^{2beta}.",
+      "input_applications": "C:frequency-time, E:variance-actual-growth-constant, E:variance-actual-row-bound, E:variance-normalized-covariance, E:variance-normalized-kernel, E:wave-input-variance, E:wave-output-variance, L:masked-continuous-wave, L:phase-bessel, P:frequency-row.",
+      "remaining_gap": "none"
+    },
+    {
+      "id": "PROOF074",
+      "owner_label": "P:wave-square-columns",
+      "status": "CHECKED",
+      "source_statement_and_proof_binding": "notes/integrated_wave_variance.tex; statement lines 483-498, proof lines 500-547; declared statement-body sha256 ff98e9544d4485680b9cf66cd8d275ac2dfb2f2373e5a0ea29ce6a35cab63deb, proof-body sha256 e6f48e418640f08ef35aed033e2f97477a1e2fc695e27d34e59bb80dbf484c88 (declared, not recomputed).",
+      "worked_derivation": "A countable real Schwartz ONB of E exists by Gram-Schmidt from a dense real Schwartz family (Fourier cutoff plus f->(f+overline{f(-·)})/2). Define m_N(z)=sum_{k<=N} ell_R(I;z,e_k)e_k and n_N(z)=sum_{k<=N} ell_R(I;e_k,z)e_k. Proposition 073 gives summable coefficient expected squares; phase orthogonality (not coefficient independence) makes both sequences converge in L^2(Omega;E). Singleton input/output bounds identify the limits with the two real-linear maps m_{R,I},n_{R,I}:E_{s-gamma}->L^2(Omega;E) through <m z,w>=ell_R(I;z,w)=<z,n w> in L^2. Basis independence uses a countable dense test comparison; L^2 limits of centered Gaussian finite sums with convergent variances give joint centered Gaussianity.",
+      "input_applications": "E:variance-square-columns (proved), E:wave-input-variance, E:wave-output-variance, P:wave-two-variances.",
+      "remaining_gap": "none"
+    }
+  ],
+  "application088": {
+    "status": "MATCHED",
+    "typed085087_context": "L:driver-noise-basis supplies the real smooth compact ONB {f_j} of H_W with independent standard Gaussians g_j=W(f_j); L:driver-covariance-coefficients supplies smooth real H_{j,R}(t,x)=zeta_R(x)int_{u>0}|t-u|^{-a}int Gamma(dy)f_j(u,x-y)du with deterministic covariance identity; L:driver-gain-localization supplies A_j(I)=int_I S(-t)B(H_{j,R}(t))S(t)dt with gain mapping both A_j and A_j^{*,E} from E_{s-gamma} to E, the physical-adjoint row E[g_j ell_R(I;z,w)]=<A_j(I)z,w>_E, and both D_chi-localizations. These hypotheses were checked and are sufficient for PROOF088.",
+    "worked_input_match": "PROOF088 first applies the actual noise projection: <X_N z,w>_E=sum_j g_j E[g_j ell_R]=P_N ell_R(I;z,w), so sum_{j<=N}|<A_j z,w>|^2<=E|ell_R|^2. It then uses E:wave-input-variance/E:wave-output-variance from PROOF073 with phase Parseval to get the two finite operator inequalities sum_j||A_j z||_E^2<=b_I||z||_{E_{s-gamma}}^2 and sum_j||A_j^{*,E}w||_E^2<=b_I||w||_{E_{s-gamma}}^2, extended to all E_{s-gamma} via gain-one without summing basis-dependent constants. Transport by J0 turns these into V_{out,N}<=b_I D_gamma^2 and V_{in,N}<=b_I D_gamma^2. Both actual localizations from D_chi A_j=A_j=A_jD_chi give P_chi a_j=a_j=a_jP_chi. Positive quadratic limits define V_out,inf,V_in,inf<=b_I D_gamma^2 with strong tails; localization plus positive congruence give T_out,N<=b_I B_out and T_in,N<=b_I B_in using B_out=P_chi D_gamma^2 P_chi^* and B_in=P_chi^* D_gamma^2 P_chi. PROOF074's first-chaos square columns give m_{R,I}=sum_j g_j A_j z and n_{R,I}=sum_j g_j A_j^{*,E}z in L^2(Omega;E) on the same W. No one-variance shortcut, no C^theta-Schatten path, no growing-R/T conclusion, and no self-adjoint cutoff are used in this application.",
+    "not_a_full093_review": true,
+    "remaining_gap": "none for the applied PROOF061-074 chain; PROOF075-084 envelope compactness/traces are only used later and were not full audited here, and PROOF085-087 were checked only at hypothesis/use level as assigned."
+  },
+  "source_fidelity": [
+    {
+      "source_or_local_input": "primary/chen-author-full.txt and maps/primary-bindings.json",
+      "pinpoint": "Eq(1.2), (2.3)-(2.5), Stratonovich convention; held context for the rest",
+      "hypotheses_and_normalizations": "Time covariance |s-t|^{-alpha0}, spatial spectral convention, wave Green formulas and 0<alpha0<1, alpha0+alpha<2 retained; no variance/angular-density premise is taken from the author two-sided first-moment result",
+      "unread_or_image_limits": "Entire text frame was read, but no PDF pixel/image verification was done"
+    },
+    {
+      "source_or_local_input": "notes/integrated_covariance_foundation.tex",
+      "pinpoint": "PROOF061-068, all equations and proofs",
+      "hypotheses_and_normalizations": "d in {1,2,3}, 0<a<1, 0<alpha<d or alpha=d=1, alpha+a<2, Gamma nonzero and homogeneous; zero-Gamma handled separately; physical mask after convolution retained",
+      "unread_or_image_limits": "none beyond byte-hash non-recomputation"
+    },
+    {
+      "source_or_local_input": "notes/integrated_wave_variance.tex",
+      "pinpoint": "PROOF069-074, all equations and proofs",
+      "hypotheses_and_normalizations": "0<gamma<min(1/2,(2-alpha)/2), 1/2<beta<min(1-a/2,(3-a-alpha)/2); full massless wave group with zero-frequency sine quotient; actual Sobolev adjoint; both variance directions retained",
+      "unread_or_image_limits": "none beyond byte-hash non-recomputation"
+    },
+    {
+      "source_or_local_input": "notes/integrated_actual_operator_driver.tex",
+      "pinpoint": "PROOF088 statement/proof plus typed085-087 inputs and the fixed-interval/operator-driver terms referenced by PROOF088",
+      "hypotheses_and_normalizations": "fixed R,T; E_r=H^r x H^{r-1}; parameters 0<theta<beta<...; B_out/B_in from the actual P_chi (not self-adjoint, not a projection); no growing-R/T or Schatten path in PROOF088",
+      "unread_or_image_limits": "PROOF075-084 and PROOF089-093 not full audited; only their local inputs needed by PROOF088 were checked"
+    },
+    {
+      "source_or_local_input": "notes/integrated_compact_gaussian.tex",
+      "pinpoint": "P:compact-two-envelopes and E:compact-two-factors as local input context for PROOF088",
+      "hypotheses_and_normalizations": "P_chi=J0 D_chi J0^{-1} with J0=(Lambda^{1/2},Lambda^{-1/2}); only the definitions of B_out,B_in are consumed by PROOF088; their compactness/traces belong to later modules",
+      "unread_or_image_limits": "Full proofs PROOF075-084 were not reassigned here and were not fully re-audited"
+    }
+  ],
+  "all_model_and_finite_calibrations": {
+    "worked_checks": "Zero modes: K(0,0)=[[-t,-t^2],[1,t]], so K21=t has squared temporal norm Z_a h^{2-a} with Z_a=2/((1-a)(2-a)); only squared norms are bounded, matching falsification control 1. White d1 and singular-plane d3: alpha=1 translated-ball mass at most cr/pi, no full-dimensional angular density or finite total spectral mass; C_Gamma=ec/(2sqrt(pi)) in both. Higher-alpha d3, alpha=3/2, a=1/4, gamma=1/8, beta=19/32: row far shell is 2^{j(alpha-1)}<h2^j>^{a-1}, not 2^{j(a-1)}<h2^j>^{a-1}. Both variance orientations: input direction does not need evenness, while the output-family reflection needs the actual even nu_R and symmetry of Phi_h. Physical mask need not preserve raw noise-null tests (PROOF065; d3 plane control checked).",
+    "zero_Gamma": "For Gamma=0 the spectral measures, actual forms, coefficients, and column maps are all zero; temporal estimates remain independently valid, and no nonzero noise basis is chosen.",
+    "amplitude_density_phase_normalization_guards": "The original physical Gamma>=0 is the only source of the translated spectral growth amplitude; auxiliary nu_R has a density but is not asserted to be an original angular density. No angular density, finite total spectral mass, or spectral-measure density of mu is assumed. All Fourier constants cancel as (2π)^d c_d^2=1 in the normalized covariance identity."
+  },
+  "factual_errors": [],
+  "dependency_and_cycle_guards": "Order is: PROOF061-062 -> PROOF063-064 -> PROOF065 -> PROOF066-068 -> PROOF069-070 -> PROOF071-072 -> PROOF073 -> PROOF074 -> PROOF085-087 -> PROOF088. PROOF088 uses only the finished variance-column chain and the typed085-087 row/localization inputs. The later PROOF093 path theorem is not used as a premise for these variance inputs.",
+  "missing_unread_or_conditional_inputs": [],
+  "limits": "No hashing tool or execution environment was used, so SHA256 and raw-LF byte intervals are accepted from the neutral map and checked against displayed content rather than independently recomputed. No PDF pixel/image rendering was performed. This review is bounded to PROOF061-PROOF074 and the PROOF088 application with typed085-087 hypothesis checks; PROOF075-084, PROOF089-093, the whole-manuscript, and the whole-goal obligations are not full reviewed. The compact-Gaussian envelopes enter PROOF088 only through their definitions; their compactness and trace claims are used in later modules and were not re-audited here."
+}

@@ -1,0 +1,28 @@
+{
+  "kind": "author-only exact indexing correction; not source repair or new review",
+  "original_replay_path": "replay.md",
+  "original_replay_sha256": "026b71ca2f156fcbd96365b7cb8b6e0200f48e0aa440ca42b648751e78394841",
+  "frozen_original_archive_path": "complete-replay.tar.gz",
+  "frozen_original_archive_sha256": "080daceb449dba1958737743e4a006821d4156150ec67a0ac7b24a661413b2dd",
+  "original_inventory_sha256": "13f9b1dc4649ebf7e74b849cb5ccf39ed63cd459760c6cf26e3f70989072331e",
+  "corrected_replay_path": "replay-v2.md",
+  "corrected_replay_sha256": "d5664040b37db735bf0be1894232f276e6d2c986550ff087b2f7761a8bbcf729",
+  "exact_replacement": {
+    "old_text": "Use at most n_K pieces, with n_K depending only on K,T,θ and uniformly bounded for every start s. On piece j, Nℓ(V′)≤2^(j+1) for an identity initial operator. Induction gives\n\n    E_j≤j 2^(j+1)cθ ℓ^θ δ,\n\nwhere E_j is the endpoint difference. The same local estimate controls interior times. A sufficient finite Lipschitz constant is an enlargement of (n_K+1)2^(n_K+2)cθ ℓ^θ. Hence",
+    "new_text": "Use at most n_K pieces, with n_K depending only on K,T,θ and uniformly bounded for every start s. Index the pieces by j=1,...,n, where n≤n_K. The identity initial operator has norm1. Before piece j, the second evolution has norm at most2^(j−1), so its local path norm on that piece satisfies Nℓ(V′)≤2^j. Define E_0=0 and let E_j be the difference at the RIGHT endpoint of piece j. Put a_K=cθ ℓ^θ δ. The local difference estimate gives\n\n    E_j≤2E_(j−1)+2^(j+1)a_K,\n    E_j/2^j≤E_(j−1)/2^(j−1)+2a_K≤2j a_K,\n    E_j≤j 2^(j+1)cθ ℓ^θ δ.\n\nOn piece j the same recurrence bounds its full local difference norm, so the bound also controls interior times. A shorter final piece only reduces its Young coefficient. For n≤n_K, a sufficient finite global Lipschitz constant is (n_K+1)2^(n_K+2)cθ ℓ^θ, which harmlessly enlarges n_K 2^(n_K+1)cθ ℓ^θ. Hence"
+  },
+  "derivation": {
+    "indexing": "pieces j=1,...,n<=n_K; E_j is right-endpoint difference, E_0=0",
+    "second_evolution": "left endpoint norm<=2^(j-1); local factor2 gives N_l(Vprime)<=2^j",
+    "a_K": "c_theta*l^theta*delta",
+    "recurrence": "E_j<=2E_(j-1)+2^(j+1)*a_K",
+    "normalized": "E_j/2^j<=E_(j-1)/2^(j-1)+2*a_K<=2*j*a_K",
+    "conclusion": "E_j<=j*2^(j+1)*c_theta*l^theta*delta; local difference norm obeys same recurrence",
+    "global_L_K": "(n_K+1)*2^(n_K+2)*c_theta*l^theta is a sufficient enlarged constant"
+  },
+  "scope": "Only author replay indexing clarified; source107 uses a finite C_K and is unchanged; later growth/measurability/probability/uniform-Lp arguments unaffected",
+  "new_provider_calls": 0,
+  "source_edits": 0,
+  "ref_mutations": 0,
+  "grade_upgrade": false
+}

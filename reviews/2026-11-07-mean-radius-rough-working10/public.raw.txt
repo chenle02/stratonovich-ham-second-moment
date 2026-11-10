@@ -1,0 +1,196 @@
+## Mathematical working reconstruction (not a grade/confidence action)
+
+I reconstructed `PROOF133–169` against the fresh whole sources below. Numbering is assigned by source order where bodies leave the proof numbers unstated.
+
+### A. Source-to-declaration ledger used
+
+- `REQUIRED/F014.txt` — temporal equilibrium: `L:equilibrium-gamma-beta`, `L:temporal-equilibrium`.
+- `REQUIRED/F015.txt` — spatial pairings/occupation: `L:spatial-physical-pair`, `L:spatial-static-controls`, `P:spatial-smooth-ratio`, `P:spatial-four-linear`, `P:spatial-energy-map`, `L:occupation-kernel-row`, `P:occupation-physical-class`.
+- `REQUIRED/F016.txt` — Cameron mean block: `L:cameron-fractional-products`, `P:cameron-spatial-map`, `L:cameron-supported-tensor`, `P:cameron-temporal-map`, `P:cameron-full-mean`, `L:cameron-actual-residual`, `P:cameron-actual-embedding`.
+- `REQUIRED/F017.txt` — Young upper foundation: `L:young-upper-growth`, `P:young-upper-multiplicative`.
+- `REQUIRED/F018.txt` — uniform-radius regulation: `L:uniform-mean-cutoff`, `L:uniform-mean-spatial-tails`, `L:uniform-mean-tensor`, `P:uniform-mean-regulator`, `P:uniform-actual-cameron`.
+- `REQUIRED/F019.txt` — radius-explicit anchor: `L:radius-outer-maps`, `P:radius-compact-envelopes`, `P:radius-actual-moments`, `C:radius-covariance-residuals`, `P:radius-mean-anchor`.
+- `REQUIRED/F020.txt` — signed static wave: `L:signed-limiting-multiplier`, `P:signed-closed-form`, `L:signed-spectral-wave`, `P:signed-physical-wave`.
+- `REQUIRED/F021.txt` — symplectic/block mean: `L:symplectic-free`, `L:symplectic-source-mean`, `P:symplectic-source`, `P:symplectic-raw`, `P:symplectic-block-mean`.
+- Imported Teschl pages `F138–F156` and rough-path/Cameron–Martin pages `F157–F164`.
+
+---
+
+### B. Requested dependency and falsification checks
+
+#### B.1 Temporal \(L^r\) compactness without trace class or Hilbert–Schmidt
+
+`F016` `P:cameron-temporal-map` is the key target.
+
+- \(K\) on \(L^2(I)\), kernel \(|s-t|^{-a}\), is shown **compact, self-adjoint, strictly positive, injective** by truncated-kernel Hilbert–Schmidt approximation plus Schur control of the remainder:
+  \[
+  \|K-K_\varepsilon\|\le 2\varepsilon^{1-a}/(1-a).
+  \]
+- Strict positivity uses the Gamma representation of \(|v|^{-a}\) and the strict quadratic form of \(e^{-\lambda|v|}\).
+- Non-trace-classity is shown directly: \(L^2\)-orthonormal cell indicators have summed quadratic forms
+  \[
+  2N^a/((1-a)(2-a))\to\infty.
+  \]
+  So \(K^{1/2}\iota:H_t\to L^2\) is asserted and checked **not** Hilbert–Schmidt.
+- The dimension-free transfer to \(L^r\), \(2<r<2/a\), is done through the convolution/Hölder estimates, then covariance Cauchy–Schwarz and \(L^r\) duality:
+  \[
+  \|Kf\|_{L^r}\le C_{a,r}\|f\|_{H_t}.
+  \]
+  This is legitimate: the positive-kernel HLS/Young route gives
+  \[
+  \|g\|_{H_t}^2\le\|K_a\|_{r/2}\|g\|_{r'}^2,
+  \qquad r'=r/(r-1),
+  \]
+  and `F016` explicitly verifies the required Young inequality with the split-monomial Hölder proof.
+- `F016` `P:cameron-full-mean` then proves **full fixed-\(R\) compactness** of
+  \[
+  T\Phi(s)=T_{\mathrm{sp}}(\mathcal U\Phi(s))
+  :H\to L^r(I;\mathcal K(F)).
+  \]
+  It does **not** merely tensor a compact time map with an infinite identity. It uses:
+  - spatial compactness of \(T_{\mathrm{sp}}\) (via `P:cameron-spatial-map`, cutoff gain \(1/2-s>0\));
+  - temporal compactness of \(C_t=K^{1/2}\iota\);
+  - approximation \(T_n\Phi=T_{\mathrm{sp}}Q_n\mathcal U\Phi\), with \(\|T_{\mathrm{sp}}(I-Q_n)\|\to0\);
+  - finite-coordinate compactness.
+
+`F018` `L:uniform-mean-tensor` then proves the dimension-free bound
+\[
+\|A\otimes I_G\|_{H_0\otimes G\to L^r(I;G)}\le\|A\|
+\]
+and explicitly records that this tensor extension **need not be compact** even when \(A\) is compact. So no false compact-time-tensor-identity shortcut is used.
+
+No instantaneous Hilbert-valued white Gaussian is introduced; `F016` states this directly and the tensor construction is covariance-labeled, not a pointwise-in-time Gaussian process.
+
+#### B.2 Circularity check for the spatial ratio
+
+- `F013` `P:variational-positive-scores` (the already finite positive score) imports only `T:full-upper`, plus its own dilation lemma and `P:variational-unmasked-rate`.
+- `F051` confirms `T:full-upper` closes from `048/049/050/006` and author `(2.23)–(2.24)`; its imports do **not** include the later spatial ratio \(R_{\mathrm{sp}}\), the mean regulator, the signed upper, or the intrinsic constant 204.
+- `F015` `P:spatial-smooth-ratio` uses \(S_1^{\mathrm{pos}}\) from `F013` as an upper bound via the optimization \(L-CL^q\). `F015` `L:spatial-static-controls` uses `P:variational-unmasked-rate` for the finite positive Rayleigh rate, not the spatial ratio.
+- The spectral coefficient \(R_\alpha\) in `F051` is kept distinct from \(R_{\mathrm{sp}}\). There is no circular dependence.
+
+#### B.3 Fixed-\(R\) compactness versus uniform-\(R\) regulation
+
+- `F016` fixes \(R\) throughout and only claims compactness of the full mean at that fixed radius; the compact-tail constant \(\epsilon_J\to0\) fixes \(R\) and is independent of \(\delta\).
+- `F018` proves uniform-in-\(R\ge1\) **operator-norm** bounds for the mean and regulator:
+  \[
+  \|\mathcal T_R\|\le M_0c_t,\qquad
+  \|\mathcal T_RQ_{J,K}\|\le M_0\varepsilon_J+M_fc_tK^{-\beta}.
+  \]
+  The retained spatial frequency projection \(P_K\) is explicitly allowed **infinite rank**, and no uniform-radius compactness is claimed.
+- The physical mask \(m_R=\eta_R^2\) acts once, after covariance convolution: the row is
+  \[
+  k_R(z,w)=(\eta_R z_1)(\eta_R\Lambda^{-1}w_2),
+  \]
+  and the source states it is not a multiplication on the raw-noise quotient.
+- `F019` and `F021` explicitly state that the two constant \(F\) columns require their own estimates and are not supplied by the \(E\) estimates.
+
+#### B.4 Uniform rescaled outer maps and radius-explicit stochastic anchor
+
+`F019` is the target.
+
+- `L:radius-outer-maps` gives uniform-in-\(\rho\) outer map bounds. The weighted kernels are bounded by
+  \[
+  C_r\rho^{d/2}F_r(k-\rho\xi),
+  \]
+  and the mixed Schur row/column products cancel exactly: fixed-\(k\) integration is \(O(\rho^{-d/2})\), fixed-\(\xi\) lattice summation is \(O(\rho^{d/2})\), product \(O(1)\).
+- `P:radius-compact-envelopes` gives
+  \[
+  \|\Lambda^\sigma\chi_\rho\Lambda^{-\sigma-\gamma}\|_{S_q}
+  \le C\rho^{d/q},
+  \qquad
+  \|K_{\mathrm{in}}\|_{S_q}=\|K_{\mathrm{out}}\|_{S_q}\le C_q\rho^{d/q}.
+  \]
+  The \(L^r\)-style torus summation yielding \(\rho^d\) is present.
+- `P:radius-actual-moments` uses both actual variance directions of `F004`/`F006`, both localizations, and gives
+  \[
+  \|M_R(W)\|_{L^v(C^\theta)}\le C_{Q,B}\sqrt v\,R^{d/Q}.
+  \]
+  The exponent drop \(q\ge Q\) with \(\|K_{\mathrm{out}}\|_{S_q}\le\|K_{\mathrm{out}}\|_{S_Q}\) is valid.
+- `P:radius-mean-anchor` uses
+  \[
+  Q>\frac{2d}{1-a},
+  \]
+  and \(R_\delta=\delta^{-1}+2\), obtaining
+  \[
+  2\,\E Z_\delta\le C\delta^{e_\mathrm{anchor}},\qquad
+  e_\mathrm{anchor}=\frac{1-a}{2}-\frac dQ>0.
+  \]
+  No uniform-\(R\) path norm is required; local source/path Gaussian estimates are uniform in source widths at fixed \(R,T\), while smooth pointfield regularity constants may depend on widths.
+
+#### B.5 Signed completed controls and \(H^1/H^{3/2}\) route
+
+`F020` follows the requested route.
+
+- `L:signed-limiting-multiplier` reconstructs every limiting \(L\in\mathcal V_R\) as a real \(V\in H^{-1/2}\) supported in \(\operatorname{supp}m_R\), not an \(L^\infty\) potential.
+- `P:signed-closed-form` uses the real \(H^1\) form
+  \[
+  q_V(u)=\|\nabla u\|_2^2-v_V(u,u),
+  \]
+  obtains \(D(A^{1/2})=H^1\), and proves the quarter-power comparison from the half-power form order; `F020` uses the resolvent/substitution square-root comparison and the unit dual test \(u=A^{-1/2}z/\|A^{-1/4}z\|\).
+- `L:signed-spectral-wave` obtains the spectral bottom Rayleigh identity and the three-branch sine quotient:
+  \[
+  \cos(t\sqrt h),\ \sin(t\sqrt h)/\sqrt h
+  \quad (h>0),\qquad
+  1,t\quad(h=0),\qquad
+  \cosh(t\sqrt{-h}),\ \sinh(t\sqrt{-h})/\sqrt{-h}\quad(h<0).
+  \]
+  No common \(1/\sqrt h\) is used.
+- `P:signed-physical-wave` works in the actual \(H^{3/2}\) graph/domain:
+  \[
+  D(H_V)\hookrightarrow H^{3/2},
+  \]
+  generated by
+  \[
+  A_0(u,v)=(v,\Delta u)
+  \]
+  on \(H^{3/2}\times H^{1/2}\), and identifies the spectral wave with the actual bounded-perturbation/Young physical wave. It does not assert an \(H^2\) operator domain or an unmasked ground eigenfunction.
+
+#### B.6 Symplectic and block-mean checks
+
+`F021` retains both sides and both entries.
+
+- `L:symplectic-free` constructs \(J_E=C_{\mathrm{bal}}^{-1}J_{\mathrm{symp}}C_{\mathrm{bal}}\), verifies the two duality pairings, verifies free-group preservation \(W_t^\mathsf T J_{\mathrm{symp}}W_t=J_{\mathrm{symp}}\), and proves the compact-perturbation lower bounds:
+  \[
+  \|S_E(h)+K\|\ge\|S_E(h)\|\ge1.
+  \]
+  The translation/weak-zero argument for whole-space \(E\) is checked.
+- `P:symplectic-source` and `P:symplectic-raw` show
+  \[
+  P_D(t,s)^*J_EP_D(t,s)=J_E,
+  \]
+  for the actual combined driver \(D=cM+D_\Phi\), by first locating \(A_j(0,t)\in\mathfrak g_J\), passing to the \(L^qC^\theta\) limit, taking Bochner means, and using Young remainder telescoping.
+- The zero coefficient is tested, the adjoint columns are retained, and the physical forcing in `F020` is kept as \((0,V(u+c_1),0,0)\).
+- `P:symplectic-block-mean` uses the raw isometry factor
+  \[
+  \delta^{a-2}\delta^2\delta^{-a}=1
+  \]
+  and proves the exact unscaled covariance factor at the actual stop time; the factor is identified explicitly as \(\delta^{a/2}\), not \(\sqrt\delta\). The pure-mean endpoint baseline is
+  \[
+  \|S_E(\ell_m)U_{H_{m,E}(\Phi)}(\ell_m,0)\|\ge1.
+  \]
+
+---
+
+### C. Root corrections to report09 checked against source
+
+- Forcing \(D_\sigma(c)\) in `F020` is \((0,V_\sigma(u+c_1),0,0)\).
+- The spectral sine quotient has the three separate branches and no common \(1/\sqrt h\).
+- Quarter-power comparison follows from half-power form order with the stated unit dual test.
+- Raw isometry factor is \(\delta^{a-2}\delta^2\delta^{-a}=1\).
+- Dilation cost has one control factor and one mean factor; `F013` gives \(h_{D_r\Psi}=r^2h_\Psi(rx)\) and \(v_{D_r\Psi}=r^{4-\alpha}v_\Psi\).
+- \(E\) estimates do not supply the two \(F\) constant columns; `F019`/`F021` state this explicitly.
+
+---
+
+### D. First actual source failure
+
+Within the supplied bodies `F004–F006`, `F013–F021`, `F051`, and the imported Teschl/rough-path pages, **I found no first internal source failure** in the reconstructed deductions.
+
+The remaining unverified items are exactly the explicitly imported statements and narrowed outside-owner parents, not defects inside these bodies:
+
+- Teschl `Thm 2.14/(2.63)`, `Thm 3.1/(3.18)–(3.21)`, `Thm 3.2/(3.29)–(3.33)`, `Thm 3.6/(3.51)–(3.53)`, `Thm 10.2`, `Thm 10.13`;
+- the `F051` unit-B reconstruction’s named external imports and narrowed A-owner clauses (`002,004,005,006,008,017,018`);
+- `P:raw-block-original-lower` and `P:compact-original-common-trial` are used inside `F013` but were not re-derived in the current fresh-source set;
+- `Lemma constant-phase-free`, `P:source-gaussian-transfer`, `L:raw-block-inputs`, `P:source-retaining-isometry`, `L:source-pointfield-regularity`, `P:source-ordinary-response`, and `P:constant-phase-driver/young-linear` are referenced as prior established sources.
+
+No automatic next call is issued.

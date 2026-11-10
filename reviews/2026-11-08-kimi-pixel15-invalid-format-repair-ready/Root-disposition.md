@@ -1,0 +1,7 @@
+# Pixel15 invalid JSON; no new page acceptance
+
+Root read all public content but actual json.loads fails at2050: an uppercase-U escape is invalid JSON. No canonical report/57-page union is accepted. Existing union remains pages1–53/212views. Original raw report immutable. The described page056 indicator was independently checked against the exact frozen band2 and was clear; that author corroboration does not replace a valid independent report.
+
+Canonical subscription-review-cli explicitly permits one same-session format-repair continuation after invalid-report: preserve every verdict/confidence/coverage/check/finding/repair/limit and wording, change ONLY JSON syntax. Root prepares exactly one such continuation, no scientific reassessment or higher confidence request. Acceptance requires the native public bytes equal the original apart from escaping invalid uppercase-U backslashes, a valid canonical JSON object, unchanged HIGH/empty repairs, exact sixteen view IDs and unchanged actual session/backend/tools provenance. A changed scientific string, missing row or renewed format failure is refused; no automatic retry or second vote. The previously prepared pixel16 count has no authority and must be recomputed from post-repair usage before any image call.
+
+Source07 actual current/candidate mathematical audit remains LIVE onexec24373. No source/PDF change, overallHIGH, original scope reduction or fullvisual/cold/adoption/delivery promotion.

@@ -1,0 +1,2737 @@
+{
+  "schema": "subscription-review-report/1",
+  "category": "paper-review-deepseek",
+  "model": "deepseek/deepseek-v4-pro",
+  "verdict": "INCONCLUSIVE",
+  "confidence": "medium",
+  "confidence_justification": "The supplied text is mathematically deep and internally coherent: the Calabi-free Raw-block/Gaussian-shift lower side, the occupation/spatial-energy side, and the positive/signed score matching were reconstructed and found coherent, and the static white/Riesz finite tables rechecked algebraically. However the uppermost operator-dynamics chain (dyadic interval-field full upper PROOF051, actual operator-driver PROOF093, F-extension PROOF105/110, the Cameron/Rayleigh tube envelope PROOF155/173/175, and the signed-to-positive score matching PROOF202) is so long and delicately quantified that this text-only pass could not independently re-derive every uniform constant and every cutoff passage. Those are loadbearing for the final upper limit, so a whole pass is not justified. This is an uncertainty verdict, not a mathematical rejection; no single falsifying error was established.",
+  "source_coverage": "All 28 TeX files listed in maps/files.tsv were read at the supplied SHA/lines (F01 notes_stratonovich_ham_second_moment.tex through F28 integrated_white_evaluation.tex). Supplementary reconstructions (driver-variance-interval, driver-support-dyadic, calibration-majorant-riesz-Abel, calibration-white-four, young-F-free-driver-response, young-linear-full-constants, young-ordinary-deterministic-consumers, raw-scaling-block-restart, raw-point-comparison-rate, spatial136137-controls-ratio, masked-chain-source-transfer, static-planar-full, compact-ground-F-full, white-all45-domain-integrals.tsv) were read. Primary source context files (chen-author-full, chen-hu-actual-import-contexts, chen-2023-actual-import-contexts, crouzeix-v1-selected, balan-conus-selected, teschl-2014-selected, friz-hairer-selected, chen-arxiv-v1-comparison-only, cited-bibliography.bbl) were read. Supplied dependency/citation maps were used as navigation, not as certified premises. No raster/rendered manuscript pages, no Kimi or other-family output, and no prior reports/grades were available; the text-only limitation is preserved in limitations.",
+  "proof_coverage": [
+    {
+      "id": "PROOF001",
+      "owner_label": "P:Jensen",
+      "path": "F01",
+      "proof_lines": "379:392",
+      "body_sha256": "adc019e1d6e0a1941c8ab725c147843ef332c0979c75a9d238fa4fdf31d7d2db",
+      "status": "CHECKED",
+      "worked_reason": "Uses Vertex-crude summability for mean-series interchange, even positive pairings give Eu>=1, Cauchy-Schwarz passes growth; specialization to L* explicitly conditional.",
+      "imported_inputs_and_application_checks": "Imports E:expansion, vertex-crude; no circular use of P:Jensen inside vertex-crude. Application: lower comparisons only.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF002",
+      "owner_label": "P:mixed",
+      "path": "F01",
+      "proof_lines": "453:509",
+      "body_sha256": "3a5178f388a973b782c666260061e5ffc96afd0b57e47f06a4f845ad6ad201d9",
+      "status": "CHECKED",
+      "worked_reason": "Two-chain concatenated Wick sum, terminal-to-initial involution rho, L1 product convergence, nonnegative convergent double series; separate roots unchanged.",
+      "imported_inputs_and_application_checks": "Imports joint-fixed-order construction, universal pairing context; proves mixed-moment identity independently of later moment theorems.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF003",
+      "owner_label": "L:white-test",
+      "path": "F01",
+      "proof_lines": "524:538",
+      "body_sha256": "fc567c9cdd5ddc0f982cb936a6582ae2ebb5f5db16b62973ec35b2981d39b6f8",
+      "status": "CHECKED",
+      "worked_reason": "d=alpha=1, delta covariance; integral min(s,r)/2, direct t^{3-alpha0} denominators; gives c0.",
+      "imported_inputs_and_application_checks": "Used as finite small-order calibration and source-uniformity counterexample.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF004",
+      "owner_label": "L:damped-homogeneous-norms",
+      "path": "F01",
+      "proof_lines": "614:674",
+      "body_sha256": "54a170eba3afe5c50ec8095d92b1c7c89024b904e81cde882cd15bb5c86e24f8",
+      "status": "CHECKED",
+      "worked_reason": "Spectral homogeneity mu(B_r)=V*r^alpha, radial resolvent alpha*V*a^{alpha-2}*int u^{alpha-1}/(1+u^2), N1/N2 scaling and vanishing tails via comparison to |r|^-alpha0.",
+      "imported_inputs_and_application_checks": "Input to crude/vertex/universal estimates; no source norm repair.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF005",
+      "owner_label": "L:spatial-wick-measures",
+      "path": "F01",
+      "proof_lines": "959:1101",
+      "body_sha256": "d7820cfa105715b1b7fd5a3150d6fbb9b3297e6926f72d9a7edc66e3fbd6857c",
+      "status": "CHECKED",
+      "worked_reason": "Laplace-Fourier transform positivity, two-Brownian-chain occupation bound via spectral CS and (2j)! moment bound, weak compactness plus no zero-face mass.",
+      "imported_inputs_and_application_checks": "Imports damped-norm type bounds; supplies fixed-order measure limit.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF006",
+      "owner_label": "L:joint-fixed-order",
+      "path": "F01",
+      "proof_lines": "1114:1198",
+      "body_sha256": "0181e896a913b722c6ffaa07da1d813eb6272e9be0f20515a6583afdc3bd33b6",
+      "status": "CHECKED",
+      "worked_reason": "Spatial limit at common temporal cutoff, universal pairing for marked edge, tail N1^(1/eta)+N2^(1/eta)^2 -> 0, joint Cauchy.",
+      "imported_inputs_and_application_checks": "Imports damped norms and universal Theorem3.1; constructs X_n and later regularized limits.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF007",
+      "owner_label": "L:crude-corrected",
+      "path": "F01",
+      "proof_lines": "1218:1269",
+      "body_sha256": "3862d65a98a76f6b367d1fdb49c5d224d7b3e8c75468ef664a84c88d3573e74a",
+      "status": "CHECKED",
+      "worked_reason": "Gamma(2n)<=Gamma(2n)^{2n} gives P_n n^{-2n} <= 2^n/n!, theta=theta0+n/t, sum series.",
+      "imported_inputs_and_application_checks": "Repairs Remark5.1 uniformity; proves crude large-theta bound only.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF008",
+      "owner_label": "L:vertex-crude",
+      "path": "F01",
+      "proof_lines": "1287:1345",
+      "body_sha256": "d047d410b01f52956b6401232267206e8e49e2ec79e173522c83834c4044653e",
+      "status": "CHECKED",
+      "worked_reason": "Separate finite edge spectral/temporal truncation, uniform norm bounds via damped-norm smoothing monotonicity, P_n n^-2n <=2^n/n!, ratio test.",
+      "imported_inputs_and_application_checks": "Independent of Jensen; supplies q_n for mild construction and masked moments.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF009",
+      "owner_label": "P:mild-construction",
+      "path": "F01",
+      "proof_lines": "1368:1515",
+      "body_sha256": "64049ea1f0cc33d8a5fffce8250b2bf1b3c2d6ec81782f881774670454b96b32",
+      "status": "CHECKED",
+      "worked_reason": "Hermite creation/annihilation bound 2sqrt(n+1), Bochner parameter integrals, fixed external vertex and dominated exchange, joint width limit.",
+      "imported_inputs_and_application_checks": "Uses vertex-crude, joint-fixed-order; no source Section5(ii).",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF010",
+      "owner_label": "P:envelope",
+      "path": "F01",
+      "proof_lines": "1548:1600",
+      "body_sha256": "c20ec7a0fd3aeb3eae81741071e4f6d31ec385f0ecf77df5f5fb5ac6f2fe65a1",
+      "status": "CHECKED",
+      "worked_reason": "Exact identical norm scaling, 2N0N1 and N2^2 both theta^-beta, optimization theta=beta k/(2t), factorial (k!)^(3-alpha-alpha0), log B_K ~ t^{rho}.",
+      "imported_inputs_and_application_checks": "Explicit no-go for uniform pairing majorant; records G0 scope, not used as upper input.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF011",
+      "owner_label": "P:white-four",
+      "path": "F01",
+      "proof_lines": "1709:1744",
+      "body_sha256": "cd91ff9d36f8c300f7f30b49bf7ff059fd1196e39f96d070a05305aeb6c13662",
+      "status": "CHECKED",
+      "worked_reason": "Area table F(a,b,c), delta pair contractions, all five splits/three pairings, coefficient t^{6-2alpha0}; rechecked arithmetic.",
+      "imported_inputs_and_application_checks": "Calibration and static-four input.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF012",
+      "owner_label": "L:static-four",
+      "path": "F01",
+      "proof_lines": "1762:1837",
+      "body_sha256": "d70d1f064e2f7441e6663c26d985f8cc9459c7dea6a451ddb3455f225f0d6e1a",
+      "status": "CHECKED",
+      "worked_reason": "Time-first simplex formula 1/(16m!n!) int (1-L1)_+^m(1-L2)_+^n; 27 sectors/28 lines; sums match 11/540 and rows 1/2880,...; rechecked by hand.",
+      "imported_inputs_and_application_checks": "Supplies static finite coefficients; no asymptotic claim.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF013",
+      "owner_label": "P:riesz-small",
+      "path": "F01",
+      "proof_lines": "1890:1925",
+      "body_sha256": "9d89225e1a51d036eb300b84b704de45514b7224edf1e4ec1c8c9dfbbe5fc436",
+      "status": "CHECKED",
+      "worked_reason": "Rectangle integral c_a((s+r)^{2-a}-|s-r|^{2-a})/(2(1-a)(2-a)); uniform-spatial-pair representation for all order-four terms; finite nonnegative majorant.",
+      "imported_inputs_and_application_checks": "Calibration; normalization c_a=(1-a)/2 only for white endpoint checks.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF014",
+      "owner_label": "L:d1-spatial",
+      "path": "F01",
+      "proof_lines": "2084:2136",
+      "body_sha256": "b871f57e0aef5a74058c163f32de8fd5c6a40b1f932429ebb5d68f83183f5202",
+      "status": "CHECKED",
+      "worked_reason": "Descending-label integration: at closing exactly one covariance, weighted AGM product <= K_sp^k t^{bk}/(k^{bk}).",
+      "imported_inputs_and_application_checks": "Feeds d1 and low-alpha coefficients.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF015",
+      "owner_label": "P:d1-upper",
+      "path": "F01",
+      "proof_lines": "2161:2234",
+      "body_sha256": "d8410d755d6ffc92ae72191f8dc574b51b012c6894a5e8e5a4115267bf8737f5",
+      "status": "CHECKED",
+      "worked_reason": "Symmetry of whole pairing sum F_k, cube integral P_k(Zt^{2-a})^k, split count 2^k/k!, factorial k!k^{bk}>=(k!)^q.",
+      "imported_inputs_and_application_checks": "All-time d1 upper; input to low-alpha calibration.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF016",
+      "owner_label": "L:low-alpha-convolution",
+      "path": "F01",
+      "proof_lines": "2267:2309",
+      "body_sha256": "d57dd5952de29531e90f49929234b690d83729696bc01d4365587e8c12eda4ee",
+      "status": "CHECKED",
+      "worked_reason": "Layer-cake with mu(B_r)=Vr^alpha gives V h^{1-a}/(1-a), Gaussian multiplier removes; no density.",
+      "imported_inputs_and_application_checks": "General 0<a<1 closure.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF017",
+      "owner_label": "L:alpha-one-convolution",
+      "path": "F01",
+      "proof_lines": "2321:2373",
+      "body_sha256": "495537c627c7beedd99b1bfe5730fbe0814d056dbc6e0b6d6ecc1b35f391cf50",
+      "status": "CHECKED",
+      "worked_reason": "Angular measure sigma, polar mu=dr sigma(dtheta); one-dimensional Gaussian-Abel evaluation I_a<=pi/2; endpoint not a limit.",
+      "imported_inputs_and_application_checks": "Key degree-one closing bound pi V/2.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF018",
+      "owner_label": "P:low-alpha-upper",
+      "path": "F01",
+      "proof_lines": "2401:2464",
+      "body_sha256": "19d775dc42d0a7a8916fc8fd6add577406209918691de25f5dff67d2a09bda71",
+      "status": "CHECKED",
+      "worked_reason": "Vector-increment invariant plus low-alpha closing M h^{1-a} and alpha=1 constant M=pi V/2; fixed-order limits pass.",
+      "imported_inputs_and_application_checks": "General homogeneous covariance 0<a<=1 all dimensions.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF019",
+      "owner_label": "C:d1-first-calibration",
+      "path": "F01",
+      "proof_lines": "2505:2528",
+      "body_sha256": "b09153380d761a8b52e28c43404705c70b33c0aa0359cb09cba2e7b4a83cb34e",
+      "status": "CHECKED",
+      "worked_reason": "One chain of length 2k increments sum <= t, pairing simplex factor 1/(2k)!, U1=q(ZK*/2^q)^{1/q}; conditional Jensen comparison.",
+      "imported_inputs_and_application_checks": "Source-independent calibration; not input to intrinsic theorem.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF020",
+      "owner_label": "P:higher-transfer",
+      "path": "F01",
+      "proof_lines": "2618:2750",
+      "body_sha256": "cd2b6895f73e83d1b3d18884a58af08203fbeffd7da4353d61389cfd42a2c6a6",
+      "status": "CHECKED",
+      "worked_reason": "Holder over pairings with H^r and T^{r'}, Gamma lower bound and factorial powers; explicit K; does NOT apply low-alpha conclusion.",
+      "imported_inputs_and_application_checks": "Retained conditional alternative under H:spatial-maximum only.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF021",
+      "owner_label": "L:higher-riesz",
+      "path": "F01",
+      "proof_lines": "2765:2829",
+      "body_sha256": "ac6b35538c992703ae30f94cbe62e7821e573da7ac20a643ac7c3b1d85481d8d",
+      "status": "CHECKED",
+      "worked_reason": "Isotropic Riesz maxima M3=c2^{1-a}/(2-a) by monotonicity, M2 with cutoff ball bound.",
+      "imported_inputs_and_application_checks": "Discharges H:spatial-maximum in stated Riesz ranges only.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF022",
+      "owner_label": "C:higher-riesz",
+      "path": "F01",
+      "proof_lines": "2839:2864",
+      "body_sha256": "c8c0fb82e6b99aedc1a3734af266c46f481aaa276127330818b1ca44d6c36c38",
+      "status": "CHECKED",
+      "worked_reason": "Riesz positive-definiteness via Gaussian mixture and conditional transfer.",
+      "imported_inputs_and_application_checks": "Alternative route; general model not covered.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF023",
+      "owner_label": "P:higher-obstructions",
+      "path": "F01",
+      "proof_lines": "2874:2930",
+      "body_sha256": "55344337436ad4f28e56a56de5da273b62b05f63c037ad5372927ef450e50b7f",
+      "status": "CHECKED",
+      "worked_reason": "Explicit kernels failing sup bound in stated ranges and product-covariance divergence.",
+      "imported_inputs_and_application_checks": "Scope restriction only; no obstruction to moment finiteness.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF024",
+      "owner_label": "L:static-holder-input",
+      "path": "F01",
+      "proof_lines": "3016:3046",
+      "body_sha256": "b56620af25d000c74a95a2de436bd4ffeb5717731baf58dc08715706e5092b2e",
+      "status": "CHECKED",
+      "worked_reason": "Static coefficient homogeneity from t^{4-chi} scaling and enlargement of (5.15) rate; includes empty chains.",
+      "imported_inputs_and_application_checks": "Imports CH Theorem3.8(i),5.1,5.15; only finite enlargement.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF025",
+      "owner_label": "P:static-holder-upper",
+      "path": "F01",
+      "proof_lines": "3080:3242",
+      "body_sha256": "1eeb396e11eb27099177b0ddd2ae176f8a3e81cacee4e628e779f7ad03cf7391",
+      "status": "CHECKED",
+      "worked_reason": "Common measure nu, Holder with gamma_a<=gamma_1^theta gamma_chi^{1-theta}, low endpoint and static coefficient, exponent simplification.",
+      "imported_inputs_and_application_checks": "Imports CH fixed-order and own low-alpha; Riesz higher-alpha interpolation.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF026",
+      "owner_label": "L:planar-endpoints",
+      "path": "F01",
+      "proof_lines": "3320:3447",
+      "body_sha256": "63a92f023f0a6ee5aaa29c042d133241e6dc342c6d5a4ad2369debc9d04201e0",
+      "status": "CHECKED",
+      "worked_reason": "Planar polar disintegration, line-mixture PD for low endpoint, Gaussian-mixture PD for static endpoint, closing constant S/4.",
+      "imported_inputs_and_application_checks": "Feeds general planar transfer.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF027",
+      "owner_label": "L:planar-static-input",
+      "path": "F01",
+      "proof_lines": "3465:3518",
+      "body_sha256": "4867b9c0713e90302e3836563a7cb6a8d08787b99524b8701c4b1bd83e2f8475",
+      "status": "CHECKED",
+      "worked_reason": "Dalang from spectral exponent chi<2, generalized covariance inclusion, enlargement of (5.15).",
+      "imported_inputs_and_application_checks": "Imports CH Theorem3.8(i), Chen2023 finiteness.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF028",
+      "owner_label": "P:planar-upper",
+      "path": "F01",
+      "proof_lines": "3551:3699",
+      "body_sha256": "4c111af10c78d6d94731a7fb76a3bd7be4ba10da530f77ef840472ed8a612b15",
+      "status": "CHECKED",
+      "worked_reason": "Planar closing Z_b0 S and static Z_b0 S, common measure Holder, combinatorics 2^k/k!, factorial cancellation to (k!)^{3-a}.",
+      "imported_inputs_and_application_checks": "Full planar homogeneous covariance higher range; not general d3.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF029",
+      "owner_label": "C:planar-range",
+      "path": "F01",
+      "proof_lines": "3711:3716",
+      "body_sha256": "1929f313f18ade4a78b70f6966591d7b27fbd793dbfc2f75ac6e59369c05ea4a",
+      "status": "CHECKED",
+      "worked_reason": "Combines low-alpha and planar; zero covariance direct.",
+      "imported_inputs_and_application_checks": "Alternative full planar range.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF030",
+      "owner_label": "L:product-endpoints",
+      "path": "F01",
+      "proof_lines": "3784:3848",
+      "body_sha256": "e2d1e15949d1034e12fe62c16f22dd2edd61b3259172e2d317564ef357ff82be",
+      "status": "CHECKED",
+      "worked_reason": "Linear endpoint intervals, Gaussian mixture PD, same-amplitude Holder.",
+      "imported_inputs_and_application_checks": "d3 product covariance endpoints.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF031",
+      "owner_label": "L:plane-endpoints",
+      "path": "F01",
+      "proof_lines": "3904:3967",
+      "body_sha256": "cbdfb7a346b4c0cc2a0c32efd1eaccb900543e6a459efc9f1b7121ecc0409921",
+      "status": "CHECKED",
+      "worked_reason": "Plane-supported measures, direct/spectral PD, V_low=c/pi, same-amplitude Holder.",
+      "imported_inputs_and_application_checks": "d3 plane endpoint family.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF032",
+      "owner_label": "L:endpoint-closure",
+      "path": "F01",
+      "proof_lines": "3978:4040",
+      "body_sha256": "d4e205b134456e1b01f520b75c32e81e94a33a1440b152c82ba46d6bb575db5b",
+      "status": "CHECKED",
+      "worked_reason": "Gaussian sigma comparison, linear pushforward Jacobian d_T^-1, discrete Holder for finite sums.",
+      "imported_inputs_and_application_checks": "Known d3 families closure.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF033",
+      "owner_label": "P:three-transfer",
+      "path": "F01",
+      "proof_lines": "4104:4492",
+      "body_sha256": "4ae17616b2deba75b215224fde039d0e3b6b02a9553b75d0060406c3b1d891d6",
+      "status": "CHECKED",
+      "worked_reason": "Detailed static coefficient/variational input and endpoint Holder with measure coefficients; fixed-order limit and finite-low-order cutoff for nonsharp limsup.",
+      "imported_inputs_and_application_checks": "Imports CH 3.8(i)/5.1/5.15 and Chen2023; conditional under H:three-endpoints.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF034",
+      "owner_label": "C:three-product-riesz",
+      "path": "F01",
+      "proof_lines": "4511:4542",
+      "body_sha256": "69dc5ff9df6bcb84ccd2d5a74e99d848553c516e739e846a51d75b37a4f8d61e",
+      "status": "CHECKED",
+      "worked_reason": "Product and Riesz endpoint discharge via Holder and Gaussian mixtures.",
+      "imported_inputs_and_application_checks": "Alternative d3 subclasses.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF035",
+      "owner_label": "C:three-finite-images",
+      "path": "F01",
+      "proof_lines": "4567:4595",
+      "body_sha256": "f3863e8c620d51ad83f895b593b4aada41bb769704a23fc2126679854eab6e68",
+      "status": "CHECKED",
+      "worked_reason": "Apply endpoint-closure to (T_i)_# components and weighted sums.",
+      "imported_inputs_and_application_checks": "No representation theorem asserted.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF036",
+      "owner_label": "L:physical-spectral-energy",
+      "path": "F01",
+      "proof_lines": "4666:4768",
+      "body_sha256": "2471f3ba4dd9be0de5b0a578e534958f783649424417e1e7a610ece142cc5d62",
+      "status": "CHECKED",
+      "worked_reason": "Spectral Dalang from homogeneity, Chen2023 finiteness to quartic bound, two CS inequalities, W^{1,2}/L^2 measure identification.",
+      "imported_inputs_and_application_checks": "Imports Chen2023 Theorem1.1 finiteness only.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF037",
+      "owner_label": "L:phase-contractions",
+      "path": "F01",
+      "proof_lines": "4824:4878",
+      "body_sha256": "8304bab4c2a12dec102b217ec3af64f0acdf82bd3693bef0b5ac0461b3dca79b",
+      "status": "CHECKED",
+      "worked_reason": "Resolvent comparison via Gaussian weighting, radial ball masses; trace bound T_eps(a,0)<=c_Gamma b_a a^{1-a} via radial distribution of Gamma.",
+      "imported_inputs_and_application_checks": "Base static-phase constants.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF038",
+      "owner_label": "P:static-phase-variance",
+      "path": "F01",
+      "proof_lines": "4930:5012",
+      "body_sha256": "2822039eeb3177ccda889a246c5f57ce59985879ebed4290d7be83a1729d0f73",
+      "status": "CHECKED",
+      "worked_reason": "Fourier multiplier bounds, resolvent CA, Minkowski in phase X_lambda, K via first variance coefficient.",
+      "imported_inputs_and_application_checks": "First static variance with arbitrary phase; not all-order.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF039",
+      "owner_label": "L:complex-phase",
+      "path": "F01",
+      "proof_lines": "5066:5228",
+      "body_sha256": "cd3072e82656528ba66f11a10ff10a60a861e43678c731922a37530e9f00200c",
+      "status": "CHECKED",
+      "worked_reason": "Root comparison from resolvent integral, numerical range parabola, Crouzeix bound on scalar functions of block entries.",
+      "imported_inputs_and_application_checks": "Imports Crouzeix-Palencia; no unbounded extension.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF040",
+      "owner_label": "L:fock-form",
+      "path": "F01",
+      "proof_lines": "5251:5295",
+      "body_sha256": "6e3cc05a816840140067d18ba41cfd893e59a974dc2f2fe658d4473eea5d1ca3",
+      "status": "CHECKED",
+      "worked_reason": "One-color Hermite row/column variance and frequency compression.",
+      "imported_inputs_and_application_checks": "Supplies sandwich d_N rho^{a/2-2}.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF041",
+      "owner_label": "L:finite-word-cutoff",
+      "path": "F01",
+      "proof_lines": "5323:5343",
+      "body_sha256": "73cf9d3ab5472e5cc3f8c205b6f61eacbf1d37d3561c1c8c5ba61a719abf4e09",
+      "status": "CHECKED",
+      "worked_reason": "Exact identity for selected finite words by degree induction; lowering term retained.",
+      "imported_inputs_and_application_checks": "Enables degree-exact Hermite truncation.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF042",
+      "owner_label": "P:static-phase-all-orders",
+      "path": "F01",
+      "proof_lines": "5376:5462",
+      "body_sha256": "2971df2593762519b10982458c65be583933ecbae17978fd0de3446877a9e9c4",
+      "status": "CHECKED",
+      "worked_reason": "Cauchy on complex coupling circle radius delta/d_N at lambda=n/h, factorial coefficient through (n!)^((3-a)/2), cutoff removal.",
+      "imported_inputs_and_application_checks": "Feeds interval all-orders; static only.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF043",
+      "owner_label": "C:static-interaction",
+      "path": "F01",
+      "proof_lines": "5512:5586",
+      "body_sha256": "87703d43c95df0fb9e0932d3b45c6499257ec2186bdc2fcf1637134441e8f7ee",
+      "status": "CHECKED",
+      "worked_reason": "Interaction estimate via cube of r+s coefficients and factorial series bounding e^{gamma x^{1/gamma}}; independent block product bound.",
+      "imported_inputs_and_application_checks": "Static interaction only; not final evolution.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF044",
+      "owner_label": "L:interval-contractions",
+      "path": "F01",
+      "proof_lines": "5642:5692",
+      "body_sha256": "901a777225aa1058b7a3d281d5fe4259d781765cf3e0fdd3dd257d63f4916cf9",
+      "status": "CHECKED",
+      "worked_reason": "Dimension-independent Gaussian comparison to R_alpha rho^{a-2}; no angular bound.",
+      "imported_inputs_and_application_checks": "Interface for interval fields.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF045",
+      "owner_label": "L:interval-complex",
+      "path": "F01",
+      "proof_lines": "5715:5785",
+      "body_sha256": "791160543990464c19e6cb151c1929ed37b78d59f82ce297a7d3bd3e5ffdb476",
+      "status": "CHECKED",
+      "worked_reason": "Adjoint sandwich, resolvent difference, numerical range parabola; phase-norm weight jump factors.",
+      "imported_inputs_and_application_checks": "Piecewise-constant phase control for fixed-split.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF046",
+      "owner_label": "L:inventory-product",
+      "path": "F01",
+      "proof_lines": "5801:5848",
+      "body_sha256": "2b85f1375a6568a65b652d4be324c1ac06eb25b3d569b35ad9881462bb292fc8",
+      "status": "CHECKED",
+      "worked_reason": "Positive product at z=theta k^nu with singleton and higher tails, dyadic sums; constants only alpha,a,L,c.",
+      "imported_inputs_and_application_checks": "Supplies factorial inventory in P:interval-coefficients.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF047",
+      "owner_label": "L:fixed-split",
+      "path": "F01",
+      "proof_lines": "5905:6223",
+      "body_sha256": "01b30b4d96c8025574cad230a6bcc16cc4d5e71b0f973eeefee8d839e5973a45",
+      "status": "CHECKED",
+      "worked_reason": "Fixed-radius complex Young segments, partition/metric product, fresh insertion norm, vector Cauchy, factorial radii to (k_i!)^{3-a}; explicit C_split.",
+      "imported_inputs_and_application_checks": "Loadbearing for interval coefficients; no independence assumed.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF048",
+      "owner_label": "P:interval-coefficients",
+      "path": "F01",
+      "proof_lines": "6240:6421",
+      "body_sha256": "cc45d2ef3526f5bb78d5ddf02e999b956cfc6bb788a78a760eff1adc894bfbc8",
+      "status": "CHECKED",
+      "worked_reason": "Ordinary vector Cauchy exponential majorant, color reflection kill r_i+q_i=2k_i, finite-word identity, inventory product and series summation.",
+      "imported_inputs_and_application_checks": "Target-scale interval upper; does not use crude/intrinsic.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF049",
+      "owner_label": "L:terminal-wick",
+      "path": "F01",
+      "proof_lines": "6489:6545",
+      "body_sha256": "93c3b82a05afc9c91c47b99a53a3131fea56276b65de311598e26152304efde4",
+      "status": "CHECKED",
+      "worked_reason": "Finite kernel mass t^{2n}/(2n)!, Gaussian moments, Wick formula with coefficient one, positivity comparison.",
+      "imported_inputs_and_application_checks": "Basis of interval model comparison.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF050",
+      "owner_label": "L:uniform-series-tail",
+      "path": "F01",
+      "proof_lines": "6573:6593",
+      "body_sha256": "3ec563e1efd325a59f3d117de326e964c3832d3c36d9082fba09a1389e78ea75",
+      "status": "CHECKED",
+      "worked_reason": "r^{-2n} scaled-moment bound via r>1, geometric tails, fixed-order then tail limit.",
+      "imported_inputs_and_application_checks": "Passes bounded regularized series to canonical sum.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF051",
+      "owner_label": "T:full-upper",
+      "path": "F01",
+      "proof_lines": "6613:6834",
+      "body_sha256": "c6ebb46c1a5c9e8cf937aa6e928f8a194d094d24cf4469799e118f5e85da5b50",
+      "status": "LIMITED",
+      "worked_reason": "The dyadic-grid domination K_infty>=|s-r|^-a, inventory constants L=78/c=6^a, and the positive terminal-Wick comparison are clear and were reconstructed. The remaining passage from the finite interval model to the actual source model (scaled moment B(T;a), monotone J->infty, and the exact identification of fixed-order actual terms via uniform-series-tail) is very lengthy; this text-only pass did not independently close the cutoff-order and smoothed-field identification to the same parameter-only constant.",
+      "imported_inputs_and_application_checks": "Imports interval-coefficients, terminal-wick, joint-fixed-order, damped norms; supplies finiteness input to variational-positive-scores.",
+      "remaining_gap": "Cutoff/monotone/identification passage not fully replayed; effect: the independent upper bound constraining S_c^pos rests on this closure."
+    },
+    {
+      "id": "PROOF052",
+      "owner_label": "L:mean-coefficient-holder",
+      "path": "F01",
+      "proof_lines": "6927:7026",
+      "body_sha256": "cb4ad9b919870e79dcb5e015afd29de22ea361e1e4c5688d616c16fac4fbf2f2",
+      "status": "CHECKED",
+      "worked_reason": "Static series norm summability via scaled fractional-time bound, spatial width raw limits at a, isonormal Holder, coefficient interpolation m_k(a)<=m_k(0)^{1-a/b}m_k(b)^{a/b}.",
+      "imported_inputs_and_application_checks": "Mean coefficients under temporal parameter, not first-moment constant.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF053",
+      "owner_label": "L:positive-series-type",
+      "path": "F01",
+      "proof_lines": "7042:7072",
+      "body_sha256": "6a026d4cd3e475f89e67eba0fccf9c3d856d44a3410ad06f7072dd501c2d28ac",
+      "status": "CHECKED",
+      "worked_reason": "Standard Favard-type equivalence K=limsup((k!)^nu c_k)^{1/k} and tau=nu K^{1/nu}.",
+      "imported_inputs_and_application_checks": "Used in continuity and upper types.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF054",
+      "owner_label": "P:static-minorant-lower",
+      "path": "F01",
+      "proof_lines": "7087:7145",
+      "body_sha256": "2b0aa93d965f2be01c7a2bddc1cb743d8fe16e7580fdc5fd456f3591dd839926",
+      "status": "CHECKED",
+      "worked_reason": "Laplace-prefix lower bound c_{d,T}, finite-order comparison, amplitude sigma=T^{-a/2} homogeneity, static rates.",
+      "imported_inputs_and_application_checks": "Imports CH static law; supplies lower static comparison.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF055",
+      "owner_label": "P:near-static-mean-gap",
+      "path": "F01",
+      "proof_lines": "7171:7205",
+      "body_sha256": "c4f6abb106dd65ac2819f84a991f1be2481b1800cc33d54002d2ab461c9c0a06",
+      "status": "CHECKED",
+      "worked_reason": "From K_interpol <= K0^{1-a/b}B_b^{a/b} and type lemma derive M(a) bound and window.",
+      "imported_inputs_and_application_checks": "Retained near-static comparison window.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF056",
+      "owner_label": "L:full-moment-coefficient-holder",
+      "path": "F01",
+      "proof_lines": "7262:7324",
+      "body_sha256": "ea32382adb442d683dcf71cf283e710958ff0e1346fd95bdcf501ec380e78aa0",
+      "status": "CHECKED",
+      "worked_reason": "Common measure over splits/pairings, raw-time Holder, fixed-positive limits to joint diagram values.",
+      "imported_inputs_and_application_checks": "Full-moment coefficient interpolation.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF057",
+      "owner_label": "P:moment-growth-logconvex",
+      "path": "F01",
+      "proof_lines": "7351:7397",
+      "body_sha256": "f048590dc808885370e01e5b1ba7a91b2e62a7ab22b0b08deb1b7a112b550d20",
+      "status": "CHECKED",
+      "worked_reason": "K_p submultiplicative, type equality, convexity of log upper type.",
+      "imported_inputs_and_application_checks": "Used for static-continuity route only.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF058",
+      "owner_label": "C:static-moment-constant-continuity",
+      "path": "F01",
+      "proof_lines": "7420:7434",
+      "body_sha256": "accacda5f563f275e763a6a04a0de9fda8b71934f267d6af9108af1d64fe8f03",
+      "status": "CHECKED",
+      "worked_reason": "Squeeze around C_p and ratio limit.",
+      "imported_inputs_and_application_checks": "Static continuity; not sharp target.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF059",
+      "owner_label": "L:white-clock-laplace",
+      "path": "F01",
+      "proof_lines": "7506:7532",
+      "body_sha256": "d69e6b66a0384ca6056f307a976b491457523ce58e4697e9e2442c245d2f45b9",
+      "status": "CHECKED",
+      "worked_reason": "Two gap-damped Laplace integrals via s=t+v and t=s+v; matches stated factors.",
+      "imported_inputs_and_application_checks": "Two-clock obstruction data.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF060",
+      "owner_label": "P:clock-copy-obstruction",
+      "path": "F01",
+      "proof_lines": "7624:7751",
+      "body_sha256": "8f0ac930014c253af7ae7e17a05a6c932230b66c0b4687ec4ee5919c0f1f81a8",
+      "status": "CHECKED",
+      "worked_reason": "Positive density w_theta, q-integral gives 2\theta/(2\theta+lambda) strict loss; alpha=1 closed form 2-2^a.",
+      "imported_inputs_and_application_checks": "No-go for the specified direct analytic clock-copy; not a general method no-go.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF061",
+      "owner_label": "P:masked-spectral-growth",
+      "path": "F02",
+      "proof_lines": "55:80",
+      "body_sha256": "0478c99120385aec598146ce84e88b32b6008aa7fdd23912da956175c1feb6dd",
+      "status": "CHECKED",
+      "worked_reason": "Gaussian Fourier identity with radial homogeneity giving mu(B(y,r))<=C_Gamma r^alpha.",
+      "imported_inputs_and_application_checks": "Base for auxiliary mask and wave variance.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF062",
+      "owner_label": "P:masked-auxiliary-norm",
+      "path": "F02",
+      "proof_lines": "106:142",
+      "body_sha256": "82c713363961236ec1f8a2e915eca336fd8193eb4c2cad52c5fcffa6872c30ee",
+      "status": "CHECKED",
+      "worked_reason": "Even tempered Radon nu_R, ball bound via mu(B(y+u,r)), Hilbert Fourier weighted CS.",
+      "imported_inputs_and_application_checks": "Used for masked variance comparison nu_R.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF063",
+      "owner_label": "L:masked-time-completion",
+      "path": "F02",
+      "proof_lines": "163:187",
+      "body_sha256": "42dbfeecea6c844deaf501aabc316a55c537f507a1b133c676297a101ec0ca69",
+      "status": "CHECKED",
+      "worked_reason": "Positive semidefinite Laplace mixture of |t-s|^-a with Schur 2T^{1-a}/(1-a).",
+      "imported_inputs_and_application_checks": "Temporal completion H_a.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF064",
+      "owner_label": "P:masked-noise-completion",
+      "path": "F02",
+      "proof_lines": "215:255",
+      "body_sha256": "cc69698b975dfff4d29e5e7cdbd59bc933477949f0e5fef3b896bb08989cf0b9",
+      "status": "CHECKED",
+      "worked_reason": "Spectral identity, auxiliary contraction W(zeta_R F)<=N_R(F), finite Gram comparison via independent Gaussian coupling.",
+      "imported_inputs_and_application_checks": "Masked actual completion; not nonlinear comparison.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF065",
+      "owner_label": "P:masked-quotient-obstruction",
+      "path": "F02",
+      "proof_lines": "273:304",
+      "body_sha256": "0ebbe4612554edd33ef21a2cda3d17fb3db99e6370eeb62c771f03a127b41323",
+      "status": "CHECKED",
+      "worked_reason": "d=2,alpha=1 line measure and explicit g/zeta with V(g)=0 but V(zeta g)>0.",
+      "imported_inputs_and_application_checks": "Shows multiplication by mask fails on noise quotient; uses auxiliary norm.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF066",
+      "owner_label": "L:masked-temporal-modulation",
+      "path": "F02",
+      "proof_lines": "323:359",
+      "body_sha256": "385a69a0a37b20e6025d4d87a485024cdbd61c7fe039282e8bd62f897bca36ed",
+      "status": "CHECKED",
+      "worked_reason": "Uniform amplitude/phase bound with splitting |omega h|<=1 and >1 and integration by parts.",
+      "imported_inputs_and_application_checks": "Used in wave variance time bound.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF067",
+      "owner_label": "L:masked-trig-products",
+      "path": "F02",
+      "proof_lines": "376:391",
+      "body_sha256": "f1cf6579a1b8d4cf36d08c5adf22618ba307c4ccf250f126582694a41c43191e",
+      "status": "CHECKED",
+      "worked_reason": "Four complex modes and coefficient vector CS.",
+      "imported_inputs_and_application_checks": "Frequency-pair Q_h.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF068",
+      "owner_label": "L:masked-continuous-wave",
+      "path": "F02",
+      "proof_lines": "407:439",
+      "body_sha256": "8cb881f6213017ef9bc28af755026035afd7b9909562a20e0899eec254311553",
+      "status": "CHECKED",
+      "worked_reason": "b_r representation by time sine-quotient integral, Bochner/Hilbert Jensen, frequency comparison <=3^{1-a}.",
+      "imported_inputs_and_application_checks": "Input to wave variance in R too.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF069",
+      "owner_label": "P:frequency-row",
+      "path": "F03",
+      "proof_lines": "56:145",
+      "body_sha256": "e332a784570b09324e88f0f2c2219899b11b57673362b9cd9ff849e39b933815",
+      "status": "CHECKED",
+      "worked_reason": "Near/far dyadic shells; near q^{a+2g-2} and 1-2g controls, far geometric with alpha+a-2<0; B_a(h) and independence of d.",
+      "imported_inputs_and_application_checks": "Central for both wave variance directions; only growth hypothesis.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF070",
+      "owner_label": "C:frequency-time",
+      "path": "F03",
+      "proof_lines": "160:172",
+      "body_sha256": "47ce4058c337a368d7364eb028d238f0438b8ef00f54a8e027f98704d4ec3088",
+      "status": "CHECKED",
+      "worked_reason": "Strict beta absorption of B_a(h) into h^{2b-a0}; no endpoints used.",
+      "imported_inputs_and_application_checks": "Time refinement for driver increments.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF071",
+      "owner_label": "P:actual-wave-form",
+      "path": "F03",
+      "proof_lines": "258:357",
+      "body_sha256": "fad3c5a975c5fb7844619bb9701b8659a530e645857f388c23344071444ff257",
+      "status": "CHECKED",
+      "worked_reason": "Admission via compact support/Peetre, adjoint identity, normalized kernel and cancellation of (2pi)^d c_d^2.",
+      "imported_inputs_and_application_checks": "Defines actual raw forms and nu_R comparison used by driver.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF072",
+      "owner_label": "L:phase-bessel",
+      "path": "F03",
+      "proof_lines": "372:382",
+      "body_sha256": "b3392bb74ac70b45b540b0f5183c4280c2e48c8034152068f5299964e6985daf",
+      "status": "CHECKED",
+      "worked_reason": "Hilbert-valued scalar Bessel on orthonormal family with conjugation variant.",
+      "imported_inputs_and_application_checks": "Both variance direction budgets.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF073",
+      "owner_label": "P:wave-two-variances",
+      "path": "F03",
+      "proof_lines": "401:477",
+      "body_sha256": "fe20fc62b8388ec345ee16d121a1b602f21480bdf220210c4f8eca86ec92213f",
+      "status": "CHECKED",
+      "worked_reason": "Kernel time norm <=A h^{2-a} Phi, Bessel plus Cauchy-Schwarz over both index sets, first direction uses direct row, second uses even symmetry reflection.",
+      "imported_inputs_and_application_checks": "Essential both variances; not one-sided.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF074",
+      "owner_label": "P:wave-square-columns",
+      "path": "F03",
+      "proof_lines": "500:547",
+      "body_sha256": "e6f48e418640f08ef35aed033e2f97477a1e2fc695e27d34e59bb80dbf484c88",
+      "status": "CHECKED",
+      "worked_reason": "Deterministic column maps via ONB and singleton variance bounds; Gaussian fixed-vector values.",
+      "imported_inputs_and_application_checks": "Converts forms to column operators.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF075",
+      "owner_label": "L:gaussian-scalar-powers",
+      "path": "F04",
+      "proof_lines": "30:48",
+      "body_sha256": "98f4248402d88647117447b01d6c3d949ddec290ca2e204ba802c7ab311b1e2b",
+      "status": "CHECKED",
+      "worked_reason": "Weighted AM-GM and finite Holder.",
+      "imported_inputs_and_application_checks": "Finite Gaussian matrix inputs.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF076",
+      "owner_label": "L:gaussian-trace-bounds",
+      "path": "F04",
+      "proof_lines": "65:95",
+      "body_sha256": "eb592a09bfb31d766605edaf5981442438615e695ac9a8ac3e3eaa14c4cd564e",
+      "status": "CHECKED",
+      "worked_reason": "Diagonalized eigenbasis trace-word and Holder for D|Y|^{2m-2}.",
+      "imported_inputs_and_application_checks": "Finite Gaussian moments.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF077",
+      "owner_label": "P:finite-gaussian-matrix",
+      "path": "F04",
+      "proof_lines": "119:179",
+      "body_sha256": "8587511e6035ff982239665a3e259484093fd45d6eb64f4d3fb99e37ac97d8e2",
+      "status": "CHECKED",
+      "worked_reason": "Integration by parts, Hermitian dilation, p=2 equality.",
+      "imported_inputs_and_application_checks": "Finite matrix theorem used for compact operator compression.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF078",
+      "owner_label": "L:cutoff-factorization",
+      "path": "F04",
+      "proof_lines": "232:307",
+      "body_sha256": "c38e4cda468cef22e9c824004a9f753594e293c889797893c31b70ee7e6056ee",
+      "status": "CHECKED",
+      "worked_reason": "Torus periodization/recovery with Peetre kernel bounds and lattice sums.",
+      "imported_inputs_and_application_checks": "Whole-space cutoff singular values.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF079",
+      "owner_label": "P:cutoff-singular-values",
+      "path": "F04",
+      "proof_lines": "321:366",
+      "body_sha256": "2c348906e6a2ac0918f8af3e2b950f1e0e0aab89d06c27dfebc08db5f5203baa",
+      "status": "CHECKED",
+      "worked_reason": "Torus inclusion singular values <kappa_k>^-g, recovery factorization, j^{-g/d}.",
+      "imported_inputs_and_application_checks": "Compactness/envelopes.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF080",
+      "owner_label": "P:compact-two-envelopes",
+      "path": "F04",
+      "proof_lines": "410:437",
+      "body_sha256": "0eb1028cfd761700d6949bebd90cd4652078f3df40693176ebadab47e62459ee",
+      "status": "CHECKED",
+      "worked_reason": "Balanced blocks and unitary swap; equal S_p and traces.",
+      "imported_inputs_and_application_checks": "K_out/K_in envelopes.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF081",
+      "owner_label": "L:compact-positive-order",
+      "path": "F04",
+      "proof_lines": "453:471",
+      "body_sha256": "ebde632902dd49bf402dec084cfe6b44e273ea8bf1fe1ee695de400447bfaf73",
+      "status": "CHECKED",
+      "worked_reason": "Max-min eigenvalue order and dominated trace comparison; no A^t<=B^t.",
+      "imported_inputs_and_application_checks": "Trace tail domination.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF082",
+      "owner_label": "P:localized-finite-variance",
+      "path": "F04",
+      "proof_lines": "492:513",
+      "body_sha256": "a7ccf0d02505a74dbe0dd0edafaa84614781142b54e69fae89cf86bd9b09f397",
+      "status": "CHECKED",
+      "worked_reason": "Positive congruence and compact positive order produce envelope trace bounds and each Z_l in S_p.",
+      "imported_inputs_and_application_checks": "Used in actual driver localizations.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF083",
+      "owner_label": "C:finite-gaussian-operators",
+      "path": "F04",
+      "proof_lines": "530:579",
+      "body_sha256": "913a8e754a253cb7cc8a7fa4ce1e54d621d53ee9e15342ede20d35c9fb033673",
+      "status": "CHECKED",
+      "worked_reason": "Finite-rank compression, compact norm convergence, singular-value Fatou.",
+      "imported_inputs_and_application_checks": "Compact operator Gaussian moment.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF084",
+      "owner_label": "P:cutoff-boundary-tests",
+      "path": "F04",
+      "proof_lines": "590:632",
+      "body_sha256": "9f9470aad78462957da2ab1b83d61b4d80c59de8d53f5e1242b657295aba5c3e",
+      "status": "CHECKED",
+      "worked_reason": "Nonzero plateau witness and noncompactness of Lambda^-g on whole space via translations.",
+      "imported_inputs_and_application_checks": "Justifies why chi=1 cannot be used.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF085",
+      "owner_label": "L:driver-noise-basis",
+      "path": "F05",
+      "proof_lines": "65:121",
+      "body_sha256": "1c42ab03cab5b685d1d46c26931cd5dbe79e0a71b4098311fb4a59e9d33cd4a7",
+      "status": "CHECKED",
+      "worked_reason": "Separability, positive tau x q injection into H_W, orthogonalization.",
+      "imported_inputs_and_application_checks": "Actual noise ONB for given W.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF086",
+      "owner_label": "L:driver-covariance-coefficients",
+      "path": "F05",
+      "proof_lines": "140:165",
+      "body_sha256": "4b39d3081dfa0f3857e1a63866b7473943f3ccef15d81ecc441c1cea2b4b7bdf",
+      "status": "CHECKED",
+      "worked_reason": "H_j,R smooth with compact support, literal covariance identity, independence from representative class.",
+      "imported_inputs_and_application_checks": "Driver coefficients.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF087",
+      "owner_label": "L:driver-gain-localization",
+      "path": "F05",
+      "proof_lines": "192:237",
+      "body_sha256": "d0ea78ed96b7cfe3b386b5aacf290af285d0aac4cce9a247927c9761b5b3e54d",
+      "status": "CHECKED",
+      "worked_reason": "Gain one and support via full two-entry wave support argument, not scalar displacement positivity.",
+      "imported_inputs_and_application_checks": "Provides both localizations and constant-column intertwining needed by F-extension.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF088",
+      "owner_label": "L:driver-actual-variances",
+      "path": "F05",
+      "proof_lines": "276:389",
+      "body_sha256": "62d915451b39fb62c6b28938d01ddecf79334df95fbc032e950c00eeafa9bedb",
+      "status": "CHECKED",
+      "worked_reason": "Actual Hilbert-Bessel both directions, b_I D_gamma^2, compact tails T_out/in<=b_I B, expansion m=sum g_j A_j z in first chaos.",
+      "imported_inputs_and_application_checks": "Actual finite variances for Gaussian operator limit.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF089",
+      "owner_label": "L:driver-dominated-tails",
+      "path": "F05",
+      "proof_lines": "399:416",
+      "body_sha256": "ea116ab9fb6f01fe5adf7cdfca43183f7b3272c43d9c8f3762229d2dae47910a",
+      "status": "CHECKED",
+      "worked_reason": "0<=T_N<=B compact plus weak convergence -> norm and trace vanish.",
+      "imported_inputs_and_application_checks": "Schatten tail Cauchy.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF090",
+      "owner_label": "L:driver-gaussian-tail-average",
+      "path": "F05",
+      "proof_lines": "429:444",
+      "body_sha256": "1d23f8e418fb2bf1f78d1fe5c25caf2b1094b01b614d01d8e2faecbe62888983",
+      "status": "CHECKED",
+      "worked_reason": "Finite compression and retained average of two trace powers.",
+      "imported_inputs_and_application_checks": "Used for long-path L^q norms.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF091",
+      "owner_label": "L:driver-interval-limit",
+      "path": "F05",
+      "proof_lines": "461:557",
+      "body_sha256": "f674001613b271eafc1458d66913794b02fa072337829da37b5e44c19837cb92",
+      "status": "CHECKED",
+      "worked_reason": "Uniform finite Schatten bound plus vanishing tails gives operator-norm L^q Cauchy via Y_NM; genuine limit on original space with first-chaos rows.",
+      "imported_inputs_and_application_checks": "Fixed-interval compact Gaussian operator X_R(I).",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF092",
+      "owner_label": "L:driver-holder-limit",
+      "path": "F05",
+      "proof_lines": "570:651",
+      "body_sha256": "b20b2fe4ea7cec640eb709a224cdae0e8cb4adb9d826e1504cdf22eff68f29ba",
+      "status": "CHECKED",
+      "worked_reason": "Dyadic weighted increment sum with beta-eta-1/q0>0, grid Cauchy and interpolation; L^q path limit.",
+      "imported_inputs_and_application_checks": "Operator-norm C^theta path, not Schatten-valued.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF093",
+      "owner_label": "P:actual-operator-driver",
+      "path": "F05",
+      "proof_lines": "653:689",
+      "body_sha256": "64d8a474d8cbb265f65cd500b742f18a776fe2bf2bdad3c263a164da195eddc1",
+      "status": "LIMITED",
+      "worked_reason": "The assembly from the interval limit, dyadic Holder bound and separable path span is readable and consistent: Gaussian centered path, row identities, sqrt-p moments. The fully independent replay of the Schatten-tail Cauchy and the compact-value preservation across the C^theta limit was not completed to the last norm constant in this text-only pass.",
+      "imported_inputs_and_application_checks": "Imports Lemmas 85-92, finite Gaussian operators, source-transfer later; whole lower/upper operator machinery depends on this driver.",
+      "remaining_gap": "Fixed-interval Schatten moments and path compactness not re-derived from scratch; effect propagates to F-driver, raw lower, and Cameron upper."
+    },
+    {
+      "id": "PROOF094",
+      "owner_label": "L:source-finite-comparison",
+      "path": "F06",
+      "proof_lines": "31:42",
+      "body_sha256": "c1d42000d48eba8ed27b79e69f01e1728679f1e444ff449548f14df7c191a018",
+      "status": "CHECKED",
+      "worked_reason": "Conditional Jensen with auxiliary Gaussian Z gives sqrt C comparison.",
+      "imported_inputs_and_application_checks": "Source transfer contraction.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF095",
+      "owner_label": "P:source-gaussian-transfer",
+      "path": "F06",
+      "proof_lines": "77:134",
+      "body_sha256": "ef223e5845675d562dda0774fda0d4075e19a9317a322a318f9d636d924aef52",
+      "status": "CHECKED",
+      "worked_reason": "Finite covariance <=C I, deterministic coefficient rows, separate interpolation gives same-space path limit and stability.",
+      "imported_inputs_and_application_checks": "Retaining source drivers.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF096",
+      "owner_label": "L:source-spatial-heat",
+      "path": "F06",
+      "proof_lines": "153:169",
+      "body_sha256": "69313755129b2271e22e98eda2ecc6f144d5e8418b8618881006b06fcca2456f",
+      "status": "CHECKED",
+      "worked_reason": "Positive heat contraction on spatial Hilbert space via Fourier multiplier.",
+      "imported_inputs_and_application_checks": "Source cutoff family.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF097",
+      "owner_label": "L:source-retaining-isometry",
+      "path": "F06",
+      "proof_lines": "195:236",
+      "body_sha256": "5fd27c5c7c2a267e554afdc988bb9d8fe0c2eca799c564391c3e98d59e7fdcd5",
+      "status": "CHECKED",
+      "worked_reason": "Factorizing isometry into G and product extension retaining W vs auxiliary J.",
+      "imported_inputs_and_application_checks": "Same-noise retention of sources.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF098",
+      "owner_label": "P:source-canonical-convergence",
+      "path": "F06",
+      "proof_lines": "283:360",
+      "body_sha256": "ca02cb68cbb74152823894a80100682c499e994fe87c7a3001498fefb0170f00",
+      "status": "CHECKED",
+      "worked_reason": "Pointfield covariance source fingerprint, both source and residual unit domination, strong convergence.",
+      "imported_inputs_and_application_checks": "Canonical source drivers and ordinary response.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF099",
+      "owner_label": "L:source-pointfield-regularity",
+      "path": "F06",
+      "proof_lines": "370:425",
+      "body_sha256": "6fc8d2f7d2825236526dc681c9d11b32a5b476efd664e80a7b917bb82ef8603a",
+      "status": "CHECKED",
+      "worked_reason": "G-family regularity from Kolmogorov-type grid continuity for fixed rho.",
+      "imported_inputs_and_application_checks": "Ordinary source response paths.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF100",
+      "owner_label": "P:source-ordinary-response",
+      "path": "F06",
+      "proof_lines": "439:482",
+      "body_sha256": "c0a00155a525d66ca310542404f4404be0a4b6fec17e74a62b5e7795deaabaf5",
+      "status": "CHECKED",
+      "worked_reason": "Primitive equals actual source test on driver rows for fixed pointfield; no spatial norm derivative issues.",
+      "imported_inputs_and_application_checks": "Used by F-extension and symplectic conservation.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF101",
+      "owner_label": "L:masked-chain-comparison",
+      "path": "F07",
+      "proof_lines": "39:100",
+      "body_sha256": "a10aac3a98552b578486686a32f48d233fdc3385face0417c4d35a35012cabda",
+      "status": "CHECKED",
+      "worked_reason": "Positive chain mass, Wick diagrams and per-vertex mask factor in [0,1].",
+      "imported_inputs_and_application_checks": "Masked source moments and transfer.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF102",
+      "owner_label": "P:masked-source-moments",
+      "path": "F07",
+      "proof_lines": "120:165",
+      "body_sha256": "837265877953ac87eb204ab42b0fb8514c0f08762971817251e48d99f9d08527",
+      "status": "CHECKED",
+      "worked_reason": "Picard solution/uniqueness at fixed source, two-point comparison and Bochner average.",
+      "imported_inputs_and_application_checks": "Source average comparison.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF103",
+      "owner_label": "P:masked-canonical-transfer",
+      "path": "F07",
+      "proof_lines": "183:221",
+      "body_sha256": "6edef258572d67695e834ab2608ace46f5b5095aba02f6e8980cc7b8fd23bfe1",
+      "status": "CHECKED",
+      "worked_reason": "Finite square tail majorant and fixed-order first, width limit next, N->infty last; explicit conditional premise for masked L2 limit.",
+      "imported_inputs_and_application_checks": "Used for point transfer at amplitude Gamma_delta.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF104",
+      "owner_label": "L:constant-phase-free",
+      "path": "F08",
+      "proof_lines": "39:96",
+      "body_sha256": "e965c2aa01bef8161c7fb203eef6ebe5982b3789a9da7bc6c9837f1deaf8a366",
+      "status": "CHECKED",
+      "worked_reason": "F=E+R^2 injection, cutoff L_psi bounded, S_F(t) constant block with both columns, finite propagation of total data.",
+      "imported_inputs_and_application_checks": "E is not dense in F; explicit because needed.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF105",
+      "owner_label": "P:constant-phase-driver",
+      "path": "F08",
+      "proof_lines": "124:147",
+      "body_sha256": "20cc283754a1c04048ab281f8dd423f216175a5714c8e5bf003b614372cdc42c",
+      "status": "LIMITED",
+      "worked_reason": "The definition A=iM_E L_psi and the validation of both constant columns are stated and are consistent with L:constant-phase-free and P:actual-operator-driver. However this inherits the uncompleted uniform verification from PROOF093 for the extended compact-valued path and the simultaneous localization identities for all constant inputs.",
+      "imported_inputs_and_application_checks": "Imports P:actual-operator-driver and L:driver-gain-localization; supplies A,A^rho for all F Young flows and raw lower.",
+      "remaining_gap": "Extended driver existence/norm and both constant columns not independently closed from PROOF093's limited tail."
+    },
+    {
+      "id": "PROOF106",
+      "owner_label": "L:constant-source-response",
+      "path": "F08",
+      "proof_lines": "163:187",
+      "body_sha256": "a93e96adeafde35168040e03262221206edf37c6cd3ca5dc64b01a6b20543da3",
+      "status": "CHECKED",
+      "worked_reason": "Ordinary response on all F with total finite propagation and direct column integration.",
+      "imported_inputs_and_application_checks": "Identification with fixed-rho source.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF107",
+      "owner_label": "P:constant-young-linear",
+      "path": "F08",
+      "proof_lines": "219:275",
+      "body_sha256": "9ac705655ad102e3d136dbaf9becddd711229135dc15b0858d035554df05f6c9",
+      "status": "CHECKED",
+      "worked_reason": "Scaled norm contraction, global composition/Neumann inverse, linear Banach Young deduction, no nonlinear FE theorem.",
+      "imported_inputs_and_application_checks": "Imports FH bounded-bilinear Young estimate.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF108",
+      "owner_label": "P:constant-gaussian-flow",
+      "path": "F08",
+      "proof_lines": "302:401",
+      "body_sha256": "13381367fd71bbcb5e9494fe4a130963b7b3cb7e8b695b3232789cf0ace7f84f",
+      "status": "CHECKED",
+      "worked_reason": "Square-exponential driver moment plus local Young stability and 1/theta<2 gives uniform-integrability convergence; physical conjugation into bounded family space.",
+      "imported_inputs_and_application_checks": "Actual flows and source convergence over F.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF109",
+      "owner_label": "L:constant-source-solution",
+      "path": "F08",
+      "proof_lines": "412:469",
+      "body_sha256": "0be6ab302595346fe6a6331b5ae6021bc2b39d9e265e7963a975a51e5f5e5de7",
+      "status": "CHECKED",
+      "worked_reason": "Young sums equal ordinary state integral; Picard phase/scalar chain identity to ordinary source solution.",
+      "imported_inputs_and_application_checks": "Lower-side point evaluation.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF110",
+      "owner_label": "P:constant-raw-average",
+      "path": "F08",
+      "proof_lines": "491:561",
+      "body_sha256": "05d04a48c5e4ff66260d6cc57f5404c3a17e74bbcbdf24c9a4fbcfc1d9be0cbf",
+      "status": "LIMITED",
+      "worked_reason": "The observable O_phi, Bochner-vs-ordinary average equalization and the P_{A^rho}->P_A L^p transfer are clear. The verification was not independently closed for the physical-flow mean convergence entering the L^2 masked premise, and the raw-tested limit relies on the F-driver from limited PROOF105.",
+      "imported_inputs_and_application_checks": "Imports P:masked-canonical-transfer; yields tested limit for raw lower.",
+      "remaining_gap": "Same-source masked average premise and driver regularity not fully replayed; effect on original-point lower comparison."
+    },
+    {
+      "id": "PROOF111",
+      "owner_label": "P:constant-compact-base",
+      "path": "F08",
+      "proof_lines": "578:599",
+      "body_sha256": "7d0c80df33fd2546ad8e21912538f40fb95df4128adf749a734f6591b002794d",
+      "status": "CHECKED",
+      "worked_reason": "Deterministic compact primitive A_h and shifted A_h+gA with square-exponential/Young uniform budgets.",
+      "imported_inputs_and_application_checks": "Compact-mean templates and variations.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF112",
+      "owner_label": "P:compact-ground-family",
+      "path": "F09",
+      "proof_lines": "61:124",
+      "body_sha256": "c9d76dc1e92a789b64daeec1ae0c0950921e74d63b9050d3a281ac7009dd830a",
+      "status": "CHECKED",
+      "worked_reason": "Teschl compact smooth d<=3 operator, H^1 form domain equivalence, negative common trial, simple positive ground at eigenvalue, rate gap.",
+      "imported_inputs_and_application_checks": "Imports Teschl 10.2/10.13/4.12/4.13; ground template.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF113",
+      "owner_label": "L:compact-fractional-phase",
+      "path": "F09",
+      "proof_lines": "144:178",
+      "body_sha256": "faedc07d39df2dd31af3b1c012f9e6facf9d1cae10ff246e2912e039a5f983f1",
+      "status": "CHECKED",
+      "worked_reason": "Gate quadratic form identity to fractional norm, root comparison via spectral Tonelli.",
+      "imported_inputs_and_application_checks": "Ground rate projection norms.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF114",
+      "owner_label": "P:compact-E-wave",
+      "path": "F09",
+      "proof_lines": "204:280",
+      "body_sha256": "b2e8c549b62f02728158c16b78f6ebba5e4cd13c6eeb30005ca983b51cbb8655",
+      "status": "CHECKED",
+      "worked_reason": "Spectral wave matrix, ground branches, complement estimate with polynomial and exponential.",
+      "imported_inputs_and_application_checks": "E ground wave.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF115",
+      "owner_label": "P:compact-F-projection",
+      "path": "F09",
+      "proof_lines": "322:376",
+      "body_sha256": "9aca6d66237e93496e3a80a11e2204393d74be7e6c9b3c98dcd0dabc6f43a2e0",
+      "status": "CHECKED",
+      "worked_reason": "F Duhamel block, left functional including constants, positive entrance/observation margins.",
+      "imported_inputs_and_application_checks": "Growing projection for cone lower.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF116",
+      "owner_label": "P:compact-F-complement",
+      "path": "F09",
+      "proof_lines": "398:441",
+      "body_sha256": "4d839304d403b977f7af7c3d2fc5a3755bc0b3eba720d75f4a5df9a13b1de8d0",
+      "status": "CHECKED",
+      "worked_reason": "Constant-response subtraction, (1+t)^3 complement and normalized e^{-eta t} decay, fixed-horizon parameter control.",
+      "imported_inputs_and_application_checks": "Cone aperture input.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF117",
+      "owner_label": "L:compact-raw-profile",
+      "path": "F09",
+      "proof_lines": "474:512",
+      "body_sha256": "fcc395079623be3632d1f086ad8585cfa612b35d92f65e24c0a950affeafd4f7",
+      "status": "CHECKED",
+      "worked_reason": "Original covariance mean h_s and raw variance v_Psi computed via compact-support Fubini only.",
+      "imported_inputs_and_application_checks": "Original control binding.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF118",
+      "owner_label": "P:compact-original-common-trial",
+      "path": "F09",
+      "proof_lines": "527:574",
+      "body_sha256": "ae78d77217d7bb284ae00383c42d73ee36ad570b74d6bf7b5777526ee17918a3",
+      "status": "CHECKED",
+      "worked_reason": "Plateau trial gain C_Gamma L^-a vs kinetic D L^-2, alpha<2 selects finite R without changing Psi/Z/v.",
+      "imported_inputs_and_application_checks": "Supplies fixed original mask; preserves original test and action.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF119",
+      "owner_label": "L:exact-canonical-scaling",
+      "path": "F10",
+      "proof_lines": "26:61",
+      "body_sha256": "f00aa82ca3f390ded7c6cddcdefb634a953b97d07c9ddd8f489a06ad9508d72f",
+      "status": "CHECKED",
+      "worked_reason": "Raw covariance isometry with (T,r), Green measure measure-scaling G_d(Ttau,r_T dz)=r_T G_d(tau/delta,dz), vertex product sqrt delta; law equality.",
+      "imported_inputs_and_application_checks": "Canonical T to delta scaling; no rough uniqueness.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF120",
+      "owner_label": "L:raw-block-inputs",
+      "path": "F11",
+      "proof_lines": "75:126",
+      "body_sha256": "31751de8fe0b6ed931bdd3114acdaa3f42696a03c70e9ff2d24d90a3db988da6",
+      "status": "CHECKED",
+      "worked_reason": "Raw test pullback isometry, common-space W_{delta,m}, separable little Holder space, exact covariance b=sqrt delta H and moments.",
+      "imported_inputs_and_application_checks": "Coupled Gaussian block inputs.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF121",
+      "owner_label": "P:raw-block-gaussian-law",
+      "path": "F11",
+      "proof_lines": "138:172",
+      "body_sha256": "540077204f83d1b2aef0808c0301f8a19be4a16a17fc6d18794ec58604daff93",
+      "status": "CHECKED",
+      "worked_reason": "Finite-coordinate Gaussian change of measure, cylinder sigma-field generation for norm-Borel space, generating pi-system; exact shift X+H.",
+      "imported_inputs_and_application_checks": "Core of raw lower and exact half-action.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF122",
+      "owner_label": "L:raw-block-uniform-error",
+      "path": "F11",
+      "proof_lines": "200:253",
+      "body_sha256": "d8b8294bcbfa624f0b69d125548a0516d06fcd5881b374d1e53a3e125480c745",
+      "status": "CHECKED",
+      "worked_reason": "Finite maximum polynomial probability, square-exponential maximum via n0, deterministic primitive drift and Young local stability => E_op<=L_B(M_delta+delta).",
+      "imported_inputs_and_application_checks": "Uniform block error for cone.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF123",
+      "owner_label": "L:raw-block-indexed-cone",
+      "path": "F11",
+      "proof_lines": "277:372",
+      "body_sha256": "4ffb03df0c316a74b4d7c370ac821bd46ba1f16ba05fea7cd690904e8a7e10ca",
+      "status": "CHECKED",
+      "worked_reason": "Aperture before B, rebase before complement, and terminal observation produce (1-rho)^{N-1} amplitude product including tau.",
+      "imported_inputs_and_application_checks": "Full-phase cone lower benchmark.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF124",
+      "owner_label": "L:raw-block-restart",
+      "path": "F11",
+      "proof_lines": "391:466",
+      "body_sha256": "954c69db99ab3295fd7699f56f912a9ca5be4139b265a8adbab5ee4c6174d9b3",
+      "status": "CHECKED",
+      "worked_reason": "Bounded conjugation of global interaction identity with change of variable, same source limits; fixed-delta product convergence error n C^n e_src.",
+      "imported_inputs_and_application_checks": "Literally same-W restart; no growing N claim.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF125",
+      "owner_label": "P:raw-block-point-comparison",
+      "path": "F11",
+      "proof_lines": "492:599",
+      "body_sha256": "252acef19bcdc7448e0e94455961aa823255b598598bf3a38737591fa516931a",
+      "status": "CHECKED",
+      "worked_reason": "Apply Gaussian shift to nonnegative norm-Borel j_delta => U^2 identity; masked comparison at Gamma_delta through canonical transfer; square observable.",
+      "imported_inputs_and_application_checks": "Equivariant lower direct comparison.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF126",
+      "owner_label": "P:raw-block-original-lower",
+      "path": "F11",
+      "proof_lines": "611:749",
+      "body_sha256": "eee9e91a84f405c99f501c06a784cd3708886f3f3a0a27d15d80ac6a77968deb",
+      "status": "LIMITED",
+      "worked_reason": "The event probability union bound and the left Riemann-sum rate budget through the cone are transparent and likely correct; the final liminf needs the source-to-canonical passage from PROOF125, which itself needs the ordinary response closure from PROOF100/101/103 and driver-limited steps. This pass did not independently close all source-limit premises entering Gamma_delta and the actual moderate-event restriction.",
+      "imported_inputs_and_application_checks": "Imports L:raw-block-indexed-cone, P:raw-block-square-identity, source restart, canonical scaling, masked transfer.",
+      "remaining_gap": "Source-cutoff canonical identification and raw path regularity inherited critical; effect: lower bound Q_2>=2I_R-v/2."
+    },
+    {
+      "id": "PROOF127",
+      "owner_label": "L:variational-heat-envelope",
+      "path": "F12",
+      "proof_lines": "37:70",
+      "body_sha256": "56183239395edd120f2ba77db72113f2fb99f91bfee452723885a26c50c3e3d8",
+      "status": "CHECKED",
+      "worked_reason": "Gamma*p_eps identity to spectral Gaussian, polynomial mass growth, strict positivity.",
+      "imported_inputs_and_application_checks": "Global bounds for unmasked means.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF128",
+      "owner_label": "L:variational-global-mean",
+      "path": "F12",
+      "proof_lines": "84:108",
+      "body_sha256": "6a9d3ba44742b8c0f04a8f8bc66edc66ff1598906bddc63f7a88fa25dc98d766",
+      "status": "CHECKED",
+      "worked_reason": "D Psi <=C_D p_eps plus heat envelope and integrable |s-t|^-a gives global bounded mean and Lipschitz time.",
+      "imported_inputs_and_application_checks": "Rate continuity/domination.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF129",
+      "owner_label": "P:variational-unmasked-rate",
+      "path": "F12",
+      "proof_lines": "127:186",
+      "body_sha256": "02325d1ae079e5ebbde7beba22933c51a51048e2bf13b997aec5a924e82649a3",
+      "status": "CHECKED",
+      "worked_reason": "Bounded perturbation self-adjointness, H^1 form domain, real Rayleigh identity and positive floor via compact common trial.",
+      "imported_inputs_and_application_checks": "Unmasked H_s bottom; no eigentstate claimed.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF130",
+      "owner_label": "P:variational-remove-mask",
+      "path": "F12",
+      "proof_lines": "203:249",
+      "body_sha256": "5b506f4ea434a107b5048a46c4e91f9cfb8c59bf42e47cfc0b5fcba1ea12df54",
+      "status": "CHECKED",
+      "worked_reason": "Increasing smooth radial masks, monotonically rising rates to unmasked Rayleigh and uniform convergence; passes individual raw lower to unmasked bound.",
+      "imported_inputs_and_application_checks": "Feeds S2pos lower.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF131",
+      "owner_label": "L:variational-control-dilation",
+      "path": "F12",
+      "proof_lines": "268:303",
+      "body_sha256": "45b0759c0fe2229827f7c582e81f04ed0352241cdf8e6c9252b2f8ab020aa956",
+      "status": "CHECKED",
+      "worked_reason": "Radon pushforward vs Lebesgue substitution distinguish r^{a-d} and r^{-d}; unitary dilation gives lambda/r rates; homogeneous h and v.",
+      "imported_inputs_and_application_checks": "Exact homogeneity of scores.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF132",
+      "owner_label": "P:variational-positive-scores",
+      "path": "F12",
+      "proof_lines": "321:375",
+      "body_sha256": "5f303b0e65f09010fa7d7ea4aa1da26a3be4eba3d345e3a4c793ee87daa74424",
+      "status": "CHECKED",
+      "worked_reason": "Explicit positive test, full-class dilation S_c^pos=K_c S_1^pos; finiteness via independent full-upper and label-two bound; Q2>=S2pos.",
+      "imported_inputs_and_application_checks": "Imports T:full-upper; intrinsic lower target.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF133",
+      "owner_label": "L:equilibrium-gamma-beta",
+      "path": "F13",
+      "proof_lines": "20:33",
+      "body_sha256": "a0ad6f7894448ea3aa9d9f199a15aa67171a5ad19cc641048d3e363a1dec1428",
+      "status": "CHECKED",
+      "worked_reason": "Standard Gamma/Beta recurrence and duplication.",
+      "imported_inputs_and_application_checks": "M_a calculation.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF134",
+      "owner_label": "L:temporal-equilibrium",
+      "path": "F13",
+      "proof_lines": "51:101",
+      "body_sha256": "d5cfcab3cd81d61ce548aba947f3f098831b1393be93f91b024e10ebc5ed88e0",
+      "status": "CHECKED",
+      "worked_reason": "Potential 1 for f_a by incomplete Beta with r=(1-a)/2, mass M_a; rechecked.",
+      "imported_inputs_and_application_checks": "M_a in static score and white bounds.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF135",
+      "owner_label": "L:spatial-physical-pair",
+      "path": "F14",
+      "proof_lines": "25:37",
+      "body_sha256": "a1dbbb63074b1ab189e07dc2d7389c7e298319a8317de67ecc39c0ca5b894bc4",
+      "status": "CHECKED",
+      "worked_reason": "sigma-finiteness and null-set transfer for physical integral.",
+      "imported_inputs_and_application_checks": "Physical pairings.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF136",
+      "owner_label": "L:spatial-static-controls",
+      "path": "F14",
+      "proof_lines": "61:110",
+      "body_sha256": "3a0a251a7d92f28374f93dfd06615e87657f27eef29ced5f9390fe6c63e4d00e",
+      "status": "CHECKED",
+      "worked_reason": "Smooth time cutoff f_n approximating f_a, raw cost as M_a B_Gamma(z,z), rate Lipschitz bounds via floor.",
+      "imported_inputs_and_application_checks": "Static-control lower inequality.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF137",
+      "owner_label": "P:spatial-smooth-ratio",
+      "path": "F14",
+      "proof_lines": "126:170",
+      "body_sha256": "e3e3ca568e383433912f368dc289d9f69185a279411bc7caccdbbef93e12b868",
+      "status": "CHECKED",
+      "worked_reason": "Trial score L-CL^q and optimization with u=alpha/q; R0 positive finite via S1pos.",
+      "imported_inputs_and_application_checks": "Finite smooth ratio before rough extension.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF138",
+      "owner_label": "P:spatial-four-linear",
+      "path": "F14",
+      "proof_lines": "195:265",
+      "body_sha256": "6901956cd66c2695e339af77168a989766a0cb82f780096a713e22c3da787b8f",
+      "status": "CHECKED",
+      "worked_reason": "Smooth-density extension and PSD for smooth tests, absolute four-linear bound via Cauchy-Schwarz; purely analytic, no Gamma-null inference.",
+      "imported_inputs_and_application_checks": "Extends smooth ratio to H1 profiles.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF139",
+      "owner_label": "P:spatial-energy-map",
+      "path": "F14",
+      "proof_lines": "294:319",
+      "body_sha256": "02387306cd7ed13fd82780a3367d9fbadc63ef34a16eeea83bb39d97faebfe00",
+      "status": "CHECKED",
+      "worked_reason": "Explicit zero-optimization l^{2-a}=... connects E_sp to R_sp and S1pos.",
+      "imported_inputs_and_application_checks": "White/spatial energy.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF140",
+      "owner_label": "L:occupation-kernel-row",
+      "path": "F14",
+      "proof_lines": "342:352",
+      "body_sha256": "3b34518f15bee53c313ee58bb4c62908a0faadd370c513e106e7942c7a93ac94",
+      "status": "CHECKED",
+      "worked_reason": "Even decreasing K_star concavity yields exact row max R_star.",
+      "imported_inputs_and_application_checks": "Occupation energy ceiling.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF141",
+      "owner_label": "P:occupation-physical-class",
+      "path": "F14",
+      "proof_lines": "382:431",
+      "body_sha256": "e78e5dfdec9bc93f3c51b2be8e898c14073b768c345db221e5b5d076123f47b9",
+      "status": "CHECKED",
+      "worked_reason": "Measurable pairings, concavity and row bound on full H1-unit occupation; positive via dilated profile; no attained optimizer assumed.",
+      "imported_inputs_and_application_checks": "Derived bound class.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF142",
+      "owner_label": "L:cameron-fractional-products",
+      "path": "F15",
+      "proof_lines": "44:84",
+      "body_sha256": "7dd9102ba0d0724502a0a9964e67acab31fb189f28d913ed2d0a963f33d7624e",
+      "status": "CHECKED",
+      "worked_reason": "Radial dyadic frequency decomposition in H^s for alpha/4<s<1/2 and H^1 four-linear bound.",
+      "imported_inputs_and_application_checks": "Spatial mean map needs.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF143",
+      "owner_label": "P:cameron-spatial-map",
+      "path": "F15",
+      "proof_lines": "104:153",
+      "body_sha256": "b1e56a22be5c39753c0ad57742129174f8608b0e38454507f19755bfb7def5c7",
+      "status": "CHECKED",
+      "worked_reason": "Physical row identity and fixed-radius compactness via gain 1/2-s; T_sp extensions.",
+      "imported_inputs_and_application_checks": "Spatial mean operator.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF144",
+      "owner_label": "L:cameron-supported-tensor",
+      "path": "F15",
+      "proof_lines": "165:185",
+      "body_sha256": "871b4f55065436c16f461d9150c54d3ae968aebd83b46e239f8a33afd9fd0d5c",
+      "status": "CHECKED",
+      "worked_reason": "H=H_t x H_sp; smooth supported ONB; orthogonal projection extension.",
+      "imported_inputs_and_application_checks": "Raw tensor structure.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF145",
+      "owner_label": "P:cameron-temporal-map",
+      "path": "F15",
+      "proof_lines": "203:264",
+      "body_sha256": "2f78c3bf09c638a80adffbb28e757b28227ba401139a14b74ae467caff076f64",
+      "status": "CHECKED",
+      "worked_reason": "K compact positive, C_t=K^{1/2}iota bounded compact H_t->L^r; not trace class by cell indicators.",
+      "imported_inputs_and_application_checks": "Temporal mean compactness (scalar time).",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF146",
+      "owner_label": "P:cameron-full-mean",
+      "path": "F15",
+      "proof_lines": "290:337",
+      "body_sha256": "79eacc2a67931a2f933695ff5137285be540bd6ac68348d707f8895058fa17e4",
+      "status": "CHECKED",
+      "worked_reason": "Time-space compact mean via time tensor and fixed spatial compact map; no infinite tensor compactness.",
+      "imported_inputs_and_application_checks": "Full mean field for Cameron/occupation.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF147",
+      "owner_label": "L:cameron-actual-residual",
+      "path": "F15",
+      "proof_lines": "374:407",
+      "body_sha256": "15a7a126aa5b451571171d8496d11b58282872b2bdb7ddd616f25d025c4c7734",
+      "status": "CHECKED",
+      "worked_reason": "Actual residual path tuples, literals in H_I via endpoint approximation; no support independence.",
+      "imported_inputs_and_application_checks": "Residual Cameron labels.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF148",
+      "owner_label": "P:cameron-actual-embedding",
+      "path": "F15",
+      "proof_lines": "435:512",
+      "body_sha256": "c146407b58b104edbb700a3efa9cb81b82adeeacea4f49815aae801e187146ac",
+      "status": "CHECKED",
+      "worked_reason": "Exact covariance and averaged embedding bound with epsilon_J, first-chaos Cameron space via seen span.",
+      "imported_inputs_and_application_checks": "Cameron projection structure.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF149",
+      "owner_label": "L:young-upper-growth",
+      "path": "F16",
+      "proof_lines": "31:65",
+      "body_sha256": "34b31493d1802b8e9ba925e0c9c336a1810b282b81f80837e20f46655206b1a6",
+      "status": "CHECKED",
+      "worked_reason": "Dimension-free d+d^nu growth and uniform inverse/ball control from scaled contraction.",
+      "imported_inputs_and_application_checks": "FH Young estimate only.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF150",
+      "owner_label": "P:young-upper-multiplicative",
+      "path": "F16",
+      "proof_lines": "80:110",
+      "body_sha256": "131c5d9c414c9dec026516bb697aedbc984750acd1d0ec5c5005d77956eab3ca",
+      "status": "CHECKED",
+      "worked_reason": "Conjugate Z=R dX U and product identity via Young remainders; no A inverse needed.",
+      "imported_inputs_and_application_checks": "Basis for signed/upper tube envelopes.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF151",
+      "owner_label": "L:uniform-mean-cutoff",
+      "path": "F17",
+      "proof_lines": "44:65",
+      "body_sha256": "8807ff2a4ce225763ba84fae1a18992682014610ebba4b9012020e386161a037",
+      "status": "CHECKED",
+      "worked_reason": "Uniform radius cutoff multiplier by Fourier kernel; M0=M_1/2 and product bound.",
+      "imported_inputs_and_application_checks": "Uniform constants independent of R.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF152",
+      "owner_label": "L:uniform-mean-spatial-tails",
+      "path": "F17",
+      "proof_lines": "87:161",
+      "body_sha256": "e3170d0054396d9c49032853edb38f9476b75a90dbbcc19271d632595217477f",
+      "status": "CHECKED",
+      "worked_reason": "Translation continuity, heat and frequency tails with beta=1/2-s.",
+      "imported_inputs_and_application_checks": "Cameron regulation residuals.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF153",
+      "owner_label": "L:uniform-mean-tensor",
+      "path": "F17",
+      "proof_lines": "175:209",
+      "body_sha256": "be4f87f63ac519e52aa80dd22be22f16dfda147776d8e0301317b1df392fb234",
+      "status": "CHECKED",
+      "worked_reason": "Dimension-free boundedness of scalar A tensor identity via Gaussian moment/kinematic formula.",
+      "imported_inputs_and_application_checks": "No tensor compactness.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF154",
+      "owner_label": "P:uniform-mean-regulator",
+      "path": "F17",
+      "proof_lines": "247:279",
+      "body_sha256": "62f241aec28fb21bd21286246084aeb483a2a6c4fd08e576a461dee14dd778f3",
+      "status": "CHECKED",
+      "worked_reason": "Uniform completed mean bound and Q_J,K decomposition with independent J,K tails.",
+      "imported_inputs_and_application_checks": "Uniform mean input for Cameron/Rayleigh.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF155",
+      "owner_label": "P:uniform-actual-cameron",
+      "path": "F17",
+      "proof_lines": "330:425",
+      "body_sha256": "fcb7bb63a9ccc5f8fb5e4a733684ab8fc716f83cc02c95ca431e195930139ba4",
+      "status": "LIMITED",
+      "worked_reason": "The Gaussian residual block construction and Cameron space identification on H_W are clear from L:supported labels and P:source-gaussian-transfer. The stated refined bound with explicit C_{B,E}<=18B^{3-1/r} and the first-chaos projector is not fully re-derived here; it is the quantitative heart of the later finite-radius anchor and Rayleigh tube bound.",
+      "imported_inputs_and_application_checks": "Imports uniform-mean-regulator, source transfer; supplies actual Cameron covariance contraction.",
+      "remaining_gap": "The embedding operator bound independent of R is loadbearing for the radius substitution; not independently verified to constant precision."
+    },
+    {
+      "id": "PROOF156",
+      "owner_label": "L:radius-outer-maps",
+      "path": "F18",
+      "proof_lines": "56:95",
+      "body_sha256": "25adf35c3e9553a2cda4ecb62db6e2e86a1f852cec7b526c825f7de69875e029",
+      "status": "CHECKED",
+      "worked_reason": "Rescaled cutoff factorization uniformity in rho; no radius powers in outer maps.",
+      "imported_inputs_and_application_checks": "Radius-explicit cutoff Schatten.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF157",
+      "owner_label": "P:radius-compact-envelopes",
+      "path": "F18",
+      "proof_lines": "111:167",
+      "body_sha256": "2d08330b66ae215079c1107e96e5cf948b1d89b3322c43f7be4f4e7b39fd3faf",
+      "status": "CHECKED",
+      "worked_reason": "||K_chi||_S_q<=C rho^{d/q} via lattice volume; equal in/out envelopes.",
+      "imported_inputs_and_application_checks": "R^{d/Q} anchor.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF158",
+      "owner_label": "P:radius-actual-moments",
+      "path": "F18",
+      "proof_lines": "190:277",
+      "body_sha256": "552062ea0680b5718c88092baf008c07bcf9b9d674f89d65ba38a47da54f956e",
+      "status": "CHECKED",
+      "worked_reason": "Balanced variances and Schatten envelope to C^theta path moments C sqrt p R^{d/Q}, using only fixed Q.",
+      "imported_inputs_and_application_checks": "Radius-explicit driver moments.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF159",
+      "owner_label": "C:radius-covariance-residuals",
+      "path": "F18",
+      "proof_lines": "294:313",
+      "body_sha256": "76194cfcd3f5e5643530550d088c53b71089c696b0f2d04b6ffa676be7448b37",
+      "status": "CHECKED",
+      "worked_reason": "Gaussian transfer contraction for deterministic orthogonal projections on slow space.",
+      "imported_inputs_and_application_checks": "Residual driver bounds.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF160",
+      "owner_label": "P:radius-mean-anchor",
+      "path": "F18",
+      "proof_lines": "345:372",
+      "body_sha256": "74d69a88a03f12e4987d322e010f1b2ea1fd9df587ac2de0e62c869047c9d52b",
+      "status": "CHECKED",
+      "worked_reason": "Expected z_delta bound, R_delta ~ 3/delta, exponent e_anchor=(1-a)/2-d/Q>0.",
+      "imported_inputs_and_application_checks": "Typical radius tending to zero.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF161",
+      "owner_label": "L:signed-limiting-multiplier",
+      "path": "F19",
+      "proof_lines": "25:45",
+      "body_sha256": "bbca532051b17d1a7c76fd625c112790643a8a61f9ae1805146642e7ac82dd18",
+      "status": "CHECKED",
+      "worked_reason": "Limit multiplier V in H^{-1/2}, symmetric pairing bound by operator norm.",
+      "imported_inputs_and_application_checks": "Signed spectral wave domains.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF162",
+      "owner_label": "P:signed-closed-form",
+      "path": "F19",
+      "proof_lines": "69:129",
+      "body_sha256": "0f335d735be2037751d610e9227aeac25ad0b5895cb4fec68e4de67c8ef627bd",
+      "status": "CHECKED",
+      "worked_reason": "Form domain H^1 via form lower/upper budgets, A^{1/4}=H^{1/2}, no H² domain assertion.",
+      "imported_inputs_and_application_checks": "Imports Teschl 2.14/3.6; signed multiplier operator.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF163",
+      "owner_label": "L:signed-spectral-wave",
+      "path": "F19",
+      "proof_lines": "147:210",
+      "body_sha256": "74d8581fca02d7b5ee8b0351cf9d604557a8caed56623e961852439f64dcfd56",
+      "status": "CHECKED",
+      "worked_reason": "Real/complex Rayleigh bottom, spectral matrix entries with removable values, no division by lambda.",
+      "imported_inputs_and_application_checks": "Teschl spectral theorem uses.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF164",
+      "owner_label": "P:signed-physical-wave",
+      "path": "F19",
+      "proof_lines": "224:302",
+      "body_sha256": "c7c64e2063ba3e69b48cd99d8d0a937b1b4dd22f1c454f7e3e494bbc2bae3f30",
+      "status": "CHECKED",
+      "worked_reason": "D(H_V) in H^{3/2}, free generator domain, spectral wave identification on dense core, full-F block bound with both constant columns.",
+      "imported_inputs_and_application_checks": "Lift to physical Young wave identification.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF165",
+      "owner_label": "L:symplectic-free",
+      "path": "F20",
+      "proof_lines": "49:85",
+      "body_sha256": "4513a29214abcb804ed05ac27080b21c68085957fb9da977ee431cd12f146671",
+      "status": "CHECKED",
+      "worked_reason": "Bessel-balanced symplectic form, free preservation, force skewness via balanced pairing.",
+      "imported_inputs_and_application_checks": "Conservation baseline for pure-mean norm >=1.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF166",
+      "owner_label": "L:symplectic-source-mean",
+      "path": "F20",
+      "proof_lines": "106:146",
+      "body_sha256": "178a925edc85635a99612b643c9e0c30a55a4af7ed8c5f64463ca571d7a4174b",
+      "status": "CHECKED",
+      "worked_reason": "Bochner covariance means and deterministic source primitive with both columns.",
+      "imported_inputs_and_application_checks": "Symplectic block mean.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF167",
+      "owner_label": "P:symplectic-source",
+      "path": "F20",
+      "proof_lines": "157:186",
+      "body_sha256": "d131cfe621fe0624f26e1f5e37b1560873f006dc7449d3d7ea42d2f9dadc5303",
+      "status": "CHECKED",
+      "worked_reason": "Ordinary state integral and Hilbert differentiation give source flow symplectic-conserving.",
+      "imported_inputs_and_application_checks": "Raw conservation by density.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF168",
+      "owner_label": "P:symplectic-raw",
+      "path": "F20",
+      "proof_lines": "200:274",
+      "body_sha256": "77241c1f5eb5a1a1a9bc8268e9914b66d9233578e86e407a8b376f360ad745db",
+      "status": "CHECKED",
+      "worked_reason": "Young convergence, uniform integrability via driver tails and 1/theta<2, conservation/invertibility, ||P||>=1.",
+      "imported_inputs_and_application_checks": "Basis of positive endpoint norm.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF169",
+      "owner_label": "P:symplectic-block-mean",
+      "path": "F20",
+      "proof_lines": "306:382",
+      "body_sha256": "2cf19076ce91630dbc951925032575b4c1174942b3934ef3a1933b9de4b9b3b1",
+      "status": "CHECKED",
+      "worked_reason": "Compressed completed primitive, projection to T_mT_m* range, unscaled covariance, pure-mean endpoint norm.",
+      "imported_inputs_and_application_checks": "Converts actual mean into deterministic endpoint >=1.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF170",
+      "owner_label": "P:tube-wiener-realization",
+      "path": "F21",
+      "proof_lines": "34:124",
+      "body_sha256": "7050dfc99d5892c8f7c452fe238998407cc092a5f14404fa301ba6a78fe0113e",
+      "status": "CHECKED",
+      "worked_reason": "Standard AW space via conditional regression, kernel on seen span, tightness/full support and measurable-norm tail.",
+      "imported_inputs_and_application_checks": "Gaussian tube geometry.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF171",
+      "owner_label": "L:tube-closed-geometry",
+      "path": "F21",
+      "proof_lines": "162:200",
+      "body_sha256": "cf86d9b5eac0d1b8c2c6c7a43c9658fbe703a8558c228ddb1dfeeef2cc5553b7",
+      "status": "CHECKED",
+      "worked_reason": "Compact image closedness, attainment of least radii, Borell tail on genuine support.",
+      "imported_inputs_and_application_checks": "FH 11.6 import.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF172",
+      "owner_label": "P:tube-rayleigh-transfer",
+      "path": "F21",
+      "proof_lines": "217:247",
+      "body_sha256": "293fa2b6238485131c42f8c9ba38be3ff7254f47378c1d896531ed069c2995",
+      "status": "CHECKED",
+      "worked_reason": "Tail domination by Rayleigh, layer cake including jumps, zero law handled.",
+      "imported_inputs_and_application_checks": "Exponential operator moment from radius.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF173",
+      "owner_label": "P:tube-actual-law",
+      "path": "F21",
+      "proof_lines": "299:352",
+      "body_sha256": "bdbe54f96124ec14e8a2b313153289bbb6451b70401ebe387689398bd1ecc7be",
+      "status": "LIMITED",
+      "worked_reason": "The compactness of the actual support map C_delta and the anchor b_delta are written correctly and follow from the earlier mean field compactness and radius moment. The full eligibility of the actual block law as an abstract Wiener input (H_I label for every coordinate, actual same-W covariance equality, compact C_delta) was not replayed to completion.",
+      "imported_inputs_and_application_checks": "Imports uniform-mean/Cameron compactness, radius anchor; Rayleigh tube input for operator upper.",
+      "remaining_gap": "Eligibility/compactness and exact support map not fully re-derived; effect on final tail budget."
+    },
+    {
+      "id": "PROOF174",
+      "owner_label": "L:tube-actual-endpoint",
+      "path": "F21",
+      "proof_lines": "375:412",
+      "body_sha256": "667115a04ac09d63cf1e2e4c1e1d70c01d388a402837584e4caaa9cc0ab2adf4",
+      "status": "CHECKED",
+      "worked_reason": "Globally defined endpoint functional, restart identity to global P, symplectic norm to remove max at one.",
+      "imported_inputs_and_application_checks": "Actual endpoint equality for all B.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF175",
+      "owner_label": "P:tube-coarse-envelope",
+      "path": "F21",
+      "proof_lines": "436:507",
+      "body_sha256": "db24650a2154b6f595fc632ec492b53258151e327174813314305a1679804ed9",
+      "status": "LIMITED",
+      "worked_reason": "Primitive sum and generic Young convexity produce the coarse envelope G_delta(r)<=C_env(1+b_delta^nu+r^nu) with explicit powers; this is credible, but the constants C_pr, C_mean and the uniform-in-R reduction were not independently recalculated from scratch, and the passage from the actual E-block tuple to the final operator moment relies on the limited PROOF173/155 chain.",
+      "imported_inputs_and_application_checks": "Imports P:uniform-actual-cameron, L:young-upper-growth, symplectic endpoint; supplies tube upper integrand.",
+      "remaining_gap": "Coarse-envelope constant not fully verified; effect on finite/upper limsup control."
+    },
+    {
+      "id": "PROOF176",
+      "owner_label": "L:tube-rayleigh-tail",
+      "path": "F21",
+      "proof_lines": "521:542",
+      "body_sha256": "468888c964888f15353d52ab82353620d213302e7db27591cb3abd6181636ae9",
+      "status": "CHECKED",
+      "worked_reason": "Scalar guard Cr^nu-r^2/2<=-M^2/8-r^2/8 and explicit Gaussian integral.",
+      "imported_inputs_and_application_checks": "Tail finiteness.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF177",
+      "owner_label": "L:tube-half-action",
+      "path": "F21",
+      "proof_lines": "553:562",
+      "body_sha256": "9726f634170dc0e165f65bbc4e29b758c2e136d26c5e497f164d3a7a0c07db0f",
+      "status": "CHECKED",
+      "worked_reason": "Ball supremum/global supremum exchange for J-r^2/2; no compactness needed.",
+      "imported_inputs_and_application_checks": "Half-action supremum.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF178",
+      "owner_label": "L:uniform-E-lift",
+      "path": "F22",
+      "proof_lines": "53:81",
+      "body_sha256": "64d985de1df1fbccde6d023388344d85dd512baf84931c173b873e6d27d8f76d",
+      "status": "CHECKED",
+      "worked_reason": "Restriction of class to E, same symmetric pairing constants, fixed-radius F lift for identification only.",
+      "imported_inputs_and_application_checks": "Spectral rate class.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF179",
+      "owner_label": "P:uniform-E-spectral",
+      "path": "F22",
+      "proof_lines": "104:243",
+      "body_sha256": "c37bbdf536dfffc43ca92217bb13cf3f93ab44044cdd69db46ef12f3b9b92b58",
+      "status": "CHECKED",
+      "worked_reason": "E spectral bottom, root comparisons to H^{1/2}, rate continuity by unit approximate test, identifier to actual physical wave.",
+      "imported_inputs_and_application_checks": "Teschl form/spectral imports.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF180",
+      "owner_label": "P:uniform-rate-averaging",
+      "path": "F22",
+      "proof_lines": "269:314",
+      "body_sha256": "c0375e60eacff5efbfed0943ce2455e6d6ec17cb8cc9432bb229661083c6d555",
+      "status": "CHECKED",
+      "worked_reason": "Scalar-time Bochner averaging, fixed-radius intertwinning, rate continuity and omega_delta/error.",
+      "imported_inputs_and_application_checks": "Time-averaged mean rate control.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF181",
+      "owner_label": "L:uniform-product-budgets",
+      "path": "F22",
+      "proof_lines": "346:388",
+      "body_sha256": "14757e7fda5606160d6a7ad735b98f4440e44e1bdd02b35c60b875a81ad6adb9",
+      "status": "CHECKED",
+      "worked_reason": "G_B/C_B explicit bounds, primitive L^r->C^theta, generic Young logarithmic budget, pure-mean endpoint >=1.",
+      "imported_inputs_and_application_checks": "Uniform phase product input.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF182",
+      "owner_label": "P:uniform-mean-product",
+      "path": "F22",
+      "proof_lines": "414:382",
+      "body_sha256": "b1b28eaa1508d83e4ef5bb5a6e282973d7d0faf71663b4eb2d083a6b8a2a7d68",
+      "status": "CHECKED",
+      "worked_reason": "See below.",
+      "imported_inputs_and_application_checks": "Mean-product upper with last-cell term.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF183",
+      "owner_label": "C:uniform-polynomial-balls",
+      "path": "F22",
+      "proof_lines": "497:523",
+      "body_sha256": "de0c64fbc654c68171ef6bf908d0e9bf65e33b846e95219aac101b4e027b2bb2",
+      "status": "CHECKED",
+      "worked_reason": "M_B=c_ball B^{kappa}; after good/bad/bad-splitting and K_B=B^s pass limits.",
+      "imported_inputs_and_application_checks": "Feeds residual integrated rate.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF184",
+      "owner_label": "P:uniform-arbitrary-residual",
+      "path": "F22",
+      "proof_lines": "563:614",
+      "body_sha256": "39552ab30e4af00acb48a252a4dc9ac4cd3c138ffbf4dc1f2bc86fd5a753e464",
+      "status": "CHECKED",
+      "worked_reason": "Perturbation comparison via good/bad bases plus residual error and integrated rate; no Gaussian condition on residuals.",
+      "imported_inputs_and_application_checks": "Upper residual comparison.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF185",
+      "owner_label": "L:point-actual-finiteness",
+      "path": "F23",
+      "proof_lines": "31:67",
+      "body_sha256": "8674df0bc9608eb2bc648c798e1f90dd37c195cba41998f7666cff8d35de2e95",
+      "status": "CHECKED",
+      "worked_reason": "Restriction identities, measurable norms, finiteness via fixed B=1 tube/Rayleigh; direct no-F-rate finiteness.",
+      "imported_inputs_and_application_checks": "Endpoint operator moment finite.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF186",
+      "owner_label": "L:point-fast-sources",
+      "path": "F23",
+      "proof_lines": "87:139",
+      "body_sha256": "411624f3a0afbb30edbb9d50b267512b3bed85c3620d6d88a14ca9ce0d8ff423",
+      "status": "CHECKED",
+      "worked_reason": "Defines fast source from Retained source; covariance widths via delta^a K_eta(delta r); uniform L^p flow convergence via 1/theta<2.",
+      "imported_inputs_and_application_checks": "Convergence needed by point transfer.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF187",
+      "owner_label": "L:point-compact-source",
+      "path": "F23",
+      "proof_lines": "149:212",
+      "body_sha256": "baeb859c668396d21eb0cc71f85fa4feda6d983bf5ebc517382caa802cf1750e",
+      "status": "CHECKED",
+      "worked_reason": "High Sobolev B_k path continuity, scalar Duhamel identification; no point trace.",
+      "imported_inputs_and_application_checks": "Source displacement ordinary solution.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF188",
+      "owner_label": "P:point-source-cone",
+      "path": "F23",
+      "proof_lines": "231:276",
+      "body_sha256": "45079d14f30f7ed4e5da635e91088c1bb0eee85255f2e9e09dcc5a1205f1af6b",
+      "status": "CHECKED",
+      "worked_reason": "Unmasked-vs-masked cone equality and spatial stationarity; average-of-squares identity.",
+      "imported_inputs_and_application_checks": "Core of point transfer.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF189",
+      "owner_label": "P:original-point-transfer",
+      "path": "F23",
+      "proof_lines": "293:366",
+      "body_sha256": "ae457ae3b6b342a37ecd8f1884bfcb4df3ba1aa1d7eb72b31d742a7e6fee07e0",
+      "status": "LIMITED",
+      "worked_reason": "The cone identity and source-flow convergence are coherent, and the logarithmic prefactor data normalization is correct. The exact equality E|u_Gamma(T_delta,0)|^2 = v_d^-1 E||pr1 P_delta z||_{L2(D)}^2 depends on the closed source-limit paired with the canonical law scaling, which has not been independently verified through every step at the raw (non-smoothing) driver level given the limited driver chain.",
+      "imported_inputs_and_application_checks": "Imports point-fast-sources, point-source-cone, masked canonical transfer, exact scaling; supplies original point to E-operator norm transfer.",
+      "remaining_gap": "Raw source-limit and growing-cone phase equality not fully replayed; effect on both final upper and lower original moment bounds."
+    },
+    {
+      "id": "PROOF190",
+      "owner_label": "L:signed-score-envelope",
+      "path": "F24",
+      "proof_lines": "49:96",
+      "body_sha256": "8feb640940182d0595bf33db2df4291a5dd6aca4e5cdc3faa0a8f002da0421fe",
+      "status": "CHECKED",
+      "worked_reason": "Quantitative Radon envelope with explicit A0/A1/eta_B, score ceiling 2+2 C_mean^2.",
+      "imported_inputs_and_application_checks": "Upper score boundedness.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF191",
+      "owner_label": "P:signed-moment-bulk-tail",
+      "path": "F24",
+      "proof_lines": "125:166",
+      "body_sha256": "c1dcd54834e4514bb632a88bb53a50db9385ad975f97c3e286d8de262f8b9f3c",
+      "status": "CHECKED",
+      "worked_reason": "Finite-delta bulk and exact Rayleigh tail via the polynomial envelope; deterministic real number.",
+      "imported_inputs_and_application_checks": "Operator moment finite/upper.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF192",
+      "owner_label": "P:signed-operator-upper",
+      "path": "F24",
+      "proof_lines": "178:219",
+      "body_sha256": "10487d106ebf518bb18a572b93247b402a245a0586dd3fc8346dda3fa5893f91",
+      "status": "CHECKED",
+      "worked_reason": "Max of two limits with polynomial M_B and e_B->0 gives limsup delta log M_delta <= V_up; same actual moment for every B.",
+      "imported_inputs_and_application_checks": "Upper limsup control.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF193",
+      "owner_label": "P:original-signed-point-upper",
+      "path": "F24",
+      "proof_lines": "234:260",
+      "body_sha256": "fc76ecdd1c6901ae5725944a1807cfbb73a33dcf281f2178eece6d20487b48f9",
+      "status": "CHECKED",
+      "worked_reason": "Combine point-transfer prefactor and signed-operator-upper; zero covariance free case.",
+      "imported_inputs_and_application_checks": "Original point upper by S_Rδ.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF194",
+      "owner_label": "L:gram-scalar-algebra",
+      "path": "F25",
+      "proof_lines": "42:55",
+      "body_sha256": "d2cfa006c08888b4cf3345d25199a40146783eb018e69d63e11e0f60909ef968",
+      "status": "CHECKED",
+      "worked_reason": "Elementary 2l sqrt t <=l^2/w+wt and Hilbert square completion.",
+      "imported_inputs_and_application_checks": "Finite Gram dual.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF195",
+      "owner_label": "L:gram-dual-minimum",
+      "path": "F25",
+      "proof_lines": "66:107",
+      "body_sha256": "ec891cd403db49a1013932f00d358535c4c29db5610a955220dffaa0ed414f35",
+      "status": "CHECKED",
+      "worked_reason": "Coercivity and strict convexity; positive minimizer existence and stationarity.",
+      "imported_inputs_and_application_checks": "Finite optimizer.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF196",
+      "owner_label": "P:gram-positive-optimizer",
+      "path": "F25",
+      "proof_lines": "120:157",
+      "body_sha256": "124b6bd4bd87fb65e9882d6427ee9ed10e6dbc6eb70a9ce14ba56da2da29738f",
+      "status": "CHECKED",
+      "worked_reason": "Active-duality max_A d_A^C with explicit optimizer; empty set attained by zero.",
+      "imported_inputs_and_application_checks": "Finite positive optimization.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF197",
+      "owner_label": "L:gram-realization",
+      "path": "F25",
+      "proof_lines": "166:188",
+      "body_sha256": "98ae7331bf42a8a1ef859cc686454d90f596cc55c60c9a7b2182062507f21e68",
+      "status": "CHECKED",
+      "worked_reason": "Schur complement real PSD realization; same S(C).",
+      "imported_inputs_and_application_checks": "Entrywise comparison legitimacy.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF198",
+      "owner_label": "P:gram-entrywise-comparison",
+      "path": "F25",
+      "proof_lines": "200:214",
+      "body_sha256": "5d8227118efb217258ce4df7f14e27fa4df13754d87b31c57c20c90d8b1b0afc",
+      "status": "CHECKED",
+      "worked_reason": "Pointwise C_ij<=D_ij implies dual order; no PSD of D-C.",
+      "imported_inputs_and_application_checks": "Core positive comparison.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF199",
+      "owner_label": "L:positive-raw-embedding",
+      "path": "F26",
+      "proof_lines": "45:123",
+      "body_sha256": "ccaea7fe9e89f4598385f7d85e8723d71f4567c4e4d0ac259a75a28e48246e64",
+      "status": "CHECKED",
+      "worked_reason": "Time-space Bochner inclusion, control membership with raw variance v_Psi, explicit mean T_R Psi.",
+      "imported_inputs_and_application_checks": "Bridges controls (Cpos) to signed controls.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF200",
+      "owner_label": "L:positive-physical-gram",
+      "path": "F26",
+      "proof_lines": "147:175",
+      "body_sha256": "2ed1208461a00a0969f526d03874cabaacd789004fd16ed1ea65a1180c692190",
+      "status": "CHECKED",
+      "worked_reason": "Finite labels k_i^R from mean form, nonnegative Gram and entrywise mask order.",
+      "imported_inputs_and_application_checks": "Feed entrywise comparison.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF201",
+      "owner_label": "L:positive-uniform-optimizer",
+      "path": "F26",
+      "proof_lines": "189:247",
+      "body_sha256": "bac1d8cec1bb1a8dcb7ddc52822812827337aed40bb8d218674aa18171b3d8c0",
+      "status": "CHECKED",
+      "worked_reason": "Uniform raw-ball reduction via 2Rate-q^2/2<2-2q, finite optimizer with M bound, approximation by Cpos.",
+      "imported_inputs_and_application_checks": "Positive smoothing of finite trial.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF202",
+      "owner_label": "P:positive-signed-comparison",
+      "path": "F26",
+      "proof_lines": "257:332",
+      "body_sha256": "c8c492467cbb53f52e3f509803a5e5a3bd9f623f66f2069ba825aab5360114df",
+      "status": "LIMITED",
+      "worked_reason": "The n-cell averaging-plus-finite-trial argument is plausible and algebraically consistent (S(C^R)<=S(D), positive-smooth approximation, rate/cost continuity). The numerical closing step per every epsilon and the passage from the finite D-optimizer on H_I to the smooth positive Cpos is long; it was not fully replayed with all endpoint and masking conventions.",
+      "imported_inputs_and_application_checks": "Imports P:uniform-rate-averaging, P:gram-positive-optimizer, variation-positive; supplies S_R<=S2pos.",
+      "remaining_gap": "Ball/partition/optimizer matching not independently closed; effect on matching upper and lower values."
+    },
+    {
+      "id": "PROOF203",
+      "owner_label": "P:positive-score-cutoff",
+      "path": "F26",
+      "proof_lines": "342:371",
+      "body_sha256": "5ad2a3c26f6879b54deed1f15d865f289427a46bb7e78b174912b57a12e5ec57",
+      "status": "CHECKED",
+      "worked_reason": "Fixed-control liminf through unmasked rate convergence plus master limsup bound from PROOF202.",
+      "imported_inputs_and_application_checks": "Mask removal for S_R.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF204",
+      "owner_label": "T:intrinsic-second-moment",
+      "path": "F26",
+      "proof_lines": "404:428",
+      "body_sha256": "11d24ede3638e2ae97ec5c65b82d16a47efcf73570bfcb7a930c28686ec7cff5",
+      "status": "CHECKED",
+      "worked_reason": "Synthesis: original point upper via PROOF193/203, lower via PROOF132; gives C2=S2,pand zero direct; the proof is syntactically complete once the limited component closures hold.",
+      "imported_inputs_and_application_checks": "Imports P:original-signed-point-upper, P:positive-score-cutoff, P:variational-positive-scores.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF205",
+      "owner_label": "L:occupation-raw-square",
+      "path": "F27",
+      "proof_lines": "46:98",
+      "body_sha256": "692a8d7ffca6088254bff332ee9c8f3a144fd055dc338632c4c08e24f0e5260a",
+      "status": "CHECKED",
+      "worked_reason": "Continuous square map f->f² and time embedding rho_g with A(g)=||rho_g||².",
+      "imported_inputs_and_application_checks": "Occupation own energy.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF206",
+      "owner_label": "P:raw-occupation-energy",
+      "path": "F27",
+      "proof_lines": "122:164",
+      "body_sha256": "fd93a46fa212097f7626a8adb12c81b7bcdebdf5608c08a193d37a6ec770fb60",
+      "status": "CHECKED",
+      "worked_reason": "Ratio/dilation exact exponents, no optimizer needed.",
+      "imported_inputs_and_application_checks": "Ceiling constant.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF207",
+      "owner_label": "L:occupation-rayleigh-selection",
+      "path": "F27",
+      "proof_lines": "176:216",
+      "body_sha256": "7ea377aaaac5b8841671ce89e8372437a99b5fb72485e9525dcf85b27d1f1ae8",
+      "status": "CHECKED",
+      "worked_reason": "Countable near-optimizer selection in separable real H1.",
+      "imported_inputs_and_application_checks": "Selects occupation profile.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF208",
+      "owner_label": "T:intrinsic-occupation-ceiling",
+      "path": "F27",
+      "proof_lines": "244:280",
+      "body_sha256": "4afc813afcce3bd0bb31efcb087f30ee5edaa5c771632b9400879ec2db22725d",
+      "status": "CHECKED",
+      "worked_reason": "From selection and supremum-optimization derive upper ceiling; not supposed attained.",
+      "imported_inputs_and_application_checks": "Derived bound.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF209",
+      "owner_label": "C:intrinsic-spatial-bracket",
+      "path": "F27",
+      "proof_lines": "298:334",
+      "body_sha256": "ca4d079f726b7bd42963be9d5ec5ec9e18e2c0e6c415361000daee151752a54c",
+      "status": "CHECKED",
+      "worked_reason": "Insert C_occ<=K0 R_sp into ceiling and energy map; lower spatial bracket from stationarity.",
+      "imported_inputs_and_application_checks": "Brackets for C2.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF210",
+      "owner_label": "L:white-cdf-square",
+      "path": "F28",
+      "proof_lines": "22:59",
+      "body_sha256": "06cfbaab8945c4017412abbc161a8fd68aad26ff7aaca581189387b7e6db121a",
+      "status": "CHECKED",
+      "worked_reason": "Absolute continuity, CDF F, F'=rho continuous, and two endpoint identities; exact c^2/6.",
+      "imported_inputs_and_application_checks": "White energy input.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF211",
+      "owner_label": "P:white-spatial-energy",
+      "path": "F28",
+      "proof_lines": "70:108",
+      "body_sha256": "477521882d6de25748764c2e7ae80924c5fa27f2740b182f19189b22b851ae86",
+      "status": "CHECKED",
+      "worked_reason": "3A²<=b, `sech` attains R_sp=c/√3 and E_sp=c²/6; no kernel |x|^-1.",
+      "imported_inputs_and_application_checks": "White explicit constants.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF212",
+      "owner_label": "T:white-moment-bounds",
+      "path": "F28",
+      "proof_lines": "123:138",
+      "body_sha256": "ba136fbbcfe866144f2acf6aa68240f32d02a38ba75b2d2b94413a53cf8033d8",
+      "status": "CHECKED",
+      "worked_reason": "Spatial energy mapping q=3,k=2 gives (2/3)√c/Ma and (2/3)√(c K0); rechecked alpha/a coefficients.",
+      "imported_inputs_and_application_checks": "White bounds on C2.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF213",
+      "owner_label": "C:white-relative-width",
+      "path": "F28",
+      "proof_lines": "150:173",
+      "body_sha256": "d18bfc43bc25b6da70a0ba7436cebac64de6690172892a533a227598dd9dea3e",
+      "status": "CHECKED",
+      "worked_reason": "Duplication reduces K0 M_a to Gamma product; L² Cauchy-Schwarz yields maximum at a=1/2.",
+      "imported_inputs_and_application_checks": "Relative width bound.",
+      "remaining_gap": ""
+    },
+    {
+      "id": "PROOF214",
+      "owner_label": "L:translated-covariance-CS",
+      "path": "F01",
+      "proof_lines": "721:802",
+      "body_sha256": "8a187e589582d0c618281bc1a3ce974a4d0a715a0e2a750692288d465dc2434",
+      "status": "CHECKED",
+      "worked_reason": "Deterministic feature space for stationary finite-cap kernel, Bochner Fubini, translation invariance, monotone transfer; coefficient one.",
+      "imported_inputs_and_application_checks": "Constructs source Case2 bound independently; input to Joint and universal pairings.",
+      "remaining_gap": ""
+    }
+  ],
+  "statement_coverage": {
+    "read": "All 240 formal statements S001-S240 were read at the exact fileId/LF lines and hashes supplied; grouped by file:",
+    "groups": [
+      {
+        "fileId": "F01",
+        "statements": "S001-S085",
+        "coverage": "all read; own proved statements (theorems/lemmas/propositions/corollaries) vs quoted-source statements and standing hypotheses documented below"
+      },
+      {
+        "fileId": "F02",
+        "statements": "S086-S093",
+        "coverage": "all read; covariance-continuation facts used only downstream of the operator construction"
+      },
+      {
+        "fileId": "F03",
+        "statements": "S094-S099",
+        "coverage": "all read; wave-variance facts feed the actual driver"
+      },
+      {
+        "fileId": "F04",
+        "statements": "S100-S110",
+        "coverage": "all read; finite Gaussian/cutoff facts"
+      },
+      {
+        "fileId": "F05",
+        "statements": "S111-S119",
+        "coverage": "all read; actual-driver facts"
+      },
+      {
+        "fileId": "F06",
+        "statements": "S120-S126",
+        "coverage": "all read; source-convergence facts"
+      },
+      {
+        "fileId": "F07",
+        "statements": "S127-S129",
+        "coverage": "all read; masked chain moments"
+      },
+      {
+        "fileId": "F08",
+        "statements": "S130-S137",
+        "coverage": "all read; constant-phase/Young facts"
+      },
+      {
+        "fileId": "F09",
+        "statements": "S138-S144",
+        "coverage": "all read; compact-mean family"
+      },
+      {
+        "fileId": "F10",
+        "statements": "S145",
+        "coverage": "all read; exact scaling"
+      },
+      {
+        "fileId": "F11",
+        "statements": "S146-S152",
+        "coverage": "all read; raw-block-lower facts"
+      },
+      {
+        "fileId": "F12",
+        "statements": "S153-S158",
+        "coverage": "all read; unmasked variational facts"
+      },
+      {
+        "fileId": "F13",
+        "statements": "S159-S160",
+        "coverage": "all read; temporal equilibrium"
+      },
+      {
+        "fileId": "F14",
+        "statements": "S161-S167",
+        "coverage": "all read; spatial occupation"
+      },
+      {
+        "fileId": "F15",
+        "statements": "S168-S174",
+        "coverage": "all read; Cameron mean"
+      },
+      {
+        "fileId": "F16",
+        "statements": "S175-S176",
+        "coverage": "all read; Young upper foundation"
+      },
+      {
+        "fileId": "F17",
+        "statements": "S177-S181",
+        "coverage": "all read; uniform mean regulation"
+      },
+      {
+        "fileId": "F18",
+        "statements": "S182-S186",
+        "coverage": "all read; radius anchor"
+      },
+      {
+        "fileId": "F19",
+        "statements": "S187-S190",
+        "coverage": "all read; signed static"
+      },
+      {
+        "fileId": "F20",
+        "statements": "S191-S195",
+        "coverage": "all read; symplectic phase"
+      },
+      {
+        "fileId": "F21",
+        "statements": "S196-S203",
+        "coverage": "all read; Gaussian tubes"
+      },
+      {
+        "fileId": "F22",
+        "statements": "S204-S210",
+        "coverage": "all read; uniform products"
+      },
+      {
+        "fileId": "F23",
+        "statements": "S211-S215",
+        "coverage": "all read; point transfer"
+      },
+      {
+        "fileId": "F24",
+        "statements": "S216-S219",
+        "coverage": "all read; signed moment upper"
+      },
+      {
+        "fileId": "F25",
+        "statements": "S220-S225",
+        "coverage": "all read; positive Gram"
+      },
+      {
+        "fileId": "F26",
+        "statements": "S226-S231",
+        "coverage": "all read; intrinsic formal statement"
+      },
+      {
+        "fileId": "F27",
+        "statements": "S232-S236",
+        "coverage": "all read; occupation ceiling statements"
+      },
+      {
+        "fileId": "F28",
+        "statements": "S237-S240",
+        "coverage": "all read; white evaluation"
+      }
+    ],
+    "exceptions": [
+      {
+        "statement": "S001",
+        "identity": "F01 theorem 319:340 T:first",
+        "effect": "quoted source statement carrying the printed variational normalization (1.10)-(1.13); not adopted as a premise; only comparison context with the L* specialization conditional on a first-moment lower bound"
+      },
+      {
+        "statement": "S002",
+        "identity": "F01 theorem 347:349 T:crude",
+        "effect": "quoted source roughness statement; repaired independently by L:crude-corrected; not a proof input"
+      },
+      {
+        "statement": "S064",
+        "identity": "F01 hypothesis 119:138 H:homog",
+        "effect": "standing original-model hypothesis containing d in{1,2,3}, Radon measure amplitude, alpha+a<2; used throughout"
+      },
+      {
+        "statement": "S065",
+        "identity": "F01 hypothesis 2584:2594 H:spatial-maximum",
+        "effect": "conditional extra hypothesis used only in the retained alternative P:higher-transfer; not an input to the general upper/intrinsic theorem"
+      },
+      {
+        "statement": "S066",
+        "identity": "F01 hypothesis 3865:3879 H:three-endpoints",
+        "effect": "conditional 3D endpoint hypothesis used only in the retained static alternative; not an input to the general theorem"
+      },
+      {
+        "statement": "S067",
+        "identity": "F01 conjecture 351:357 Conj:allp",
+        "effect": "conjecture, explicitly not proved; used only for the source-conjecture comparison"
+      },
+      {
+        "statement": "S068",
+        "identity": "F01 goal 7831:7835 G:upper",
+        "effect": "goal discharged by T:full-upper; no separate proof body"
+      },
+      {
+        "statement": "S069",
+        "identity": "F01 goal 7842:7853 G:sharp",
+        "effect": "goal discharged by T:intrinsic-second-moment; no separate proof body"
+      },
+      {
+        "statement": "S110",
+        "identity": "F04 remark 181:195 R:gaussian-one-variance-test",
+        "effect": "finite falsification control showing both variances needed; note, not a theorem"
+      },
+      {
+        "statement": "S225",
+        "identity": "F25 remark 216:238 R:gram-controls",
+        "effect": "analytic/gram certificate scope note; no claim of physical covariance/PSD order"
+      }
+    ],
+    "imported_vs_own": "S001/S002 are quoted source statements; S064 is the standing hypothesis; S065/S066 are conditional hypotheses for retained alternative routes; S067 is a conjecture; S068/S069 are goals; all other formal statements are own proved claims with proof bodies among PROOF001-PROOF214 (or immediate corollary syntheses)."
+  },
+  "coupled_applications": [
+    {
+      "join_id": "JOIN-CONSTRUCTOR",
+      "verdict": "PARTIAL",
+      "reason": "Mild construction and source Case2 constructor are coherent; terminal covariance bridge and fixed-order construction reconstructed. Blocked only by the driver-chain uniform re-verification noted in PROOF093."
+    },
+    {
+      "join_id": "JOIN-INDEPENDENT-UPPER",
+      "verdict": "PARTIAL",
+      "reason": "Independence order is text-verified (full-upper before variational use); the actual uniform tail passage is the LTD limited part PROOF051."
+    },
+    {
+      "join_id": "JOIN-DRIVER-SOURCE",
+      "verdict": "PARTIAL",
+      "reason": "Fourier/domain Fourier/actual Bessel variances and ordinary source response are coherent; operator path closure is partial."
+    },
+    {
+      "join_id": "JOIN-F-YOUNG-OBSERVABLE",
+      "verdict": "PASS",
+      "reason": "E dense in F is not used; constant columns are kept explicitly; norm continuity of S_F is not assumed."
+    },
+    {
+      "join_id": "JOIN-RAW-SCALING-LOWER",
+      "verdict": "PASS",
+      "reason": "Exact scaling, norm-Borel Gaussian shift, cone/restart and direct square comparison are algebraically coherent with raw v/2."
+    },
+    {
+      "join_id": "JOIN-UNMASK-FINITENESS",
+      "verdict": "PASS",
+      "reason": "Positive control class, unmasked Rayleigh and mask removal reconstructed; auxiliary S1 not identified with actual p1 on right."
+    },
+    {
+      "join_id": "JOIN-OCCUPATION-SPATIAL",
+      "verdict": "PASS",
+      "reason": "Finite smooth ratio precedes rough H1 extension; no Gamma-null issue; occupancy ceilings coherent."
+    },
+    {
+      "join_id": "JOIN-UNIFORM-E-SIGNED",
+      "verdict": "PARTIAL",
+      "reason": "Signed spectral/rate identities are coherent, but the driving uniform product/Cameron residuals inherit the LTD upper-chain limitations."
+    },
+    {
+      "join_id": "JOIN-SYMPLECTIC-TUBE",
+      "verdict": "PARTIAL",
+      "reason": "Symplectic conservation and Rayleigh tube scheme are coherent; the coarse envelope from PROOF155/173/175 is the unclosed quantification."
+    },
+    {
+      "join_id": "JOIN-POINT-UPPER",
+      "verdict": "PARTIAL",
+      "reason": "Cone-to-point identity and signed operator upper read correctly; final closure depends on PROOF189 and upper-chain limits."
+    },
+    {
+      "join_id": "JOIN-POSITIVE-INTRINSIC",
+      "verdict": "PARTIAL",
+      "reason": "The value C2=S2pos is syntactically proved by syntax; the equality depends on PROOF202 matching, so it is partial pending that reconstruction."
+    },
+    {
+      "join_id": "JOIN-CALIBRATION-ALTERNATIVES",
+      "verdict": "PASS",
+      "reason": "Finite white/Riesz/planar/static calibrations and no-go/clock obstructions retained under their stated scope; numerical majorant lower cannot be an actual moment lower."
+    },
+    {
+      "join_id": "JOIN-DERIVED-BOUNDS-WHITE",
+      "verdict": "PASS",
+      "reason": "White c²/6 and occupation/spatial-bracket bounds are computed as bounds on C2; no numerical evaluation of the intrinsic supremum is asserted."
+    }
+  ],
+  "source_fidelity": [
+    {
+      "source": "AUTHOR (chen-author-full 64-page manuscript)",
+      "verdict": "VERIFIED",
+      "hypotheses_model": "Author model (1.1)-(1.5), homogeneity (1.8), cases, Definition2.1, Theorem3.1/(3.3)-(3.6), Theorem4.1/(4.3), Theorem6.1",
+      "application": "Expansion/Wick conventions used with the correct second-chain root; Theorem3.1 Case2 use replaced by own Lemma L:translated-covariance-CS because the printed case-2 equality drops the A-B offset",
+      "effect": "No author Section4/Lemma4.4 or Theorem1.2 constant is imported as a premise; T:first quoted only with normalization qualification"
+    },
+    {
+      "source": "CH (Chen-Hu AOP53(2025)2144-2195)",
+      "verdict": "VERIFIED",
+      "hypotheses_model": "static generalized homogeneous covariance, Dalang; Theorem1.2/(1.9)/(1.10)/(1.11) for p=1,2; Theorem3.8(i), (5.1)/(5.15)",
+      "application": "Exact imported fixed-order limits and static coefficient rate; used in static-holder/planar/3D alternative routes and static lower comparison",
+      "effect": "finiteness/coefficient input only; no disputed white special-case constant adopted"
+    },
+    {
+      "source": "C23 (Chen EJP28(2023)119)",
+      "verdict": "VERIFIED",
+      "hypotheses_model": "Dalang condition, possibly generalized gamma; Theorem1.1 with finite variations (1.4)/(1.5), full unit H1 domain",
+      "application": "finiteness of square-root variational supremum and form energy quartic bound",
+      "effect": "only finiteness, not sharp value or energy-domain equality"
+    },
+    {
+      "source": "T (Teschl, 2nd ed., 2014)",
+      "verdict": "VERIFIED",
+      "hypotheses_model": "Theorem10.2 real V in L^{inf}_inf+L² for n<=3 with Cc∞ core; Theorem10.13 conditional simple positive ground state; Theorems4.12/4.13 max-min; spectral Theorems3.1/3.2; form Theorem2.14",
+      "application": "compact ground family, signed/spectral wave and uniform-E spectral operator normalization",
+      "effect": "used at compact smooth potentials; positivity is applied only after the negative trial makes the bottom an eigenvalue"
+    },
+    {
+      "source": "FH (Friz-Hairer 2020, 2nd ed.)",
+      "verdict": "VERIFIED",
+      "hypotheses_model": "Young bounded-bilinear estimate for θ>1/2 (Sections1.5/4.1); Borell11.6 for admissible Wiener space",
+      "application": "linear F Young stability and Rayleigh tube enlargement in ambient Banach spaces with bounded multiplication",
+      "effect": "only bounded-bilinear Young setting used; nonlinear vector-field theorem not imported"
+    },
+    {
+      "source": "CP (Crouzeix-Palencia, arXiv v1)",
+      "verdict": "VERIFIED",
+      "hypotheses_model": "bounded complex Hilbert-space operator and numerical range; C[Q]<=1+√2",
+      "application": "complex-phase/interval uniform operator bounds",
+      "effect": "bounded operators only; no unbounded/LMI extension assumed"
+    },
+    {
+      "source": "BC (Balan-Conus AOP44(2016)1488-1534)",
+      "verdict": "VERIFIED",
+      "hypotheses_model": "Skorohod solution, covariance normalization H(2H-1), exponent (2H+2-a)/(3-a)",
+      "application": "read-only exponent comparison in Remarks",
+      "effect": "not an input proving this Stratonovich bound; H(2H-1) not identified with this model"
+    },
+    {
+      "source": "V1-COMPARISON (arXiv:2510.01412v1)",
+      "verdict": "VERIFIED",
+      "hypotheses_model": "edition-distinction excerpt only",
+      "application": "documents that v1 Theorem1.2 differs from the held 64-page author version",
+      "effect": "not used as authority"
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [
+      {
+        "locator": "PROOF051 lines 6613-6834 (supplement driver-support-dyadic lines B)",
+        "effect": "Independent full-upper closure from finite interval model to actual source model is not fully replayed; it is the main finiteness input for all downstream finite scores. No contradiction found, but completeness is unconfirmed in this pass."
+      },
+      {
+        "locator": "PROOF093 lines 653-689 and dependency chain PROOF088/091/092",
+        "effect": "Actual Gaussian operator-driver path limit and Schatten-tail closure drive both the raw lower and Cameron upper; not independently closed in this text-only pass."
+      },
+      {
+        "locator": "PROOF155/173/175 (uniform-actual-cameron, tube-actual-law, tube-coarse-envelope)",
+        "effect": "Uniform-in-R Cameron embedding and coarse Rayleigh envelope supply the upper limsup control; explicit constants were not recomputed from scratch."
+      },
+      {
+        "locator": "PROOF202 lines 257-332 (positive-signed-comparison)",
+        "effect": "Equality S_R<=S2pos is the matching step that turns the signed upper into the positive-control formula; the partition/finite-trial/approximation closure was not fully replayed."
+      }
+    ],
+    "minor": [
+      {
+        "locator": "supplements/white-all45-domain-integrals and calibration-white-four",
+        "effect": "Program-derived 27-sector/28-line table. Algebraic spot-check of normalized rows, split sums and 11/540 verified; no independent decimal-certified quadrature for every polynomial piece."
+      },
+      {
+        "locator": "AUTHOR Remark5.1 vs L:white-test",
+        "effect": "Source-internal uniformity discrepancy identified and repaired by L:crude-corrected; it does not affect the final proof since no uniformity is imported."
+      }
+    ]
+  },
+  "required_repairs": [
+    "Provide a from-scratch closure of PROOF051's cutoff/J->infinity/source-moment identification to the same parameter-only constant C(alpha,alpha0).",
+    "Provide a from-scratch replay of the Schatten-tail Cauchy inside PROOF091/092/093, including the compact-value preservation on the C^theta path event.",
+    "Provide a from-scratch dedup of the uniform-in-R Cameron embedding bound in PROOF155 and the coarse envelope constants in PROOF175.",
+    "Provide a from-scratch replay of the finite Gram/partition/near-optimizer limit in PROOF202.",
+    "No textual/source repair is currently required: the source-fidelity notes are qualifications, not defects."
+  ],
+  "calibration_and_finite_checks": {
+    "white_four_static": "Recomputed from the time-first simplex formula: each normalized row with factor 1/192,1/48,1/32 matches 1/2880,1/8640,1/5760,1/576,29/34560,1/640,1/144,1/480,31/17280; split sums 11/17280,143/34560,187/17280 and 2..rollup (22+143+187)/17280=11/540. Denied extraneous multiplicity (no extra factor 2 for 2+2 specifically; the two chain-exchange terms for 0+4/1+3 are used).",
+    "temporal_equilibrium": "Recomputed potential 1 for f_a with r=(1-a)/2 via incomplete Beta; M_a=Gamma((1+a)/2)/(Gamma(1+a)Gamma((1-a)/2)); for a=1/2 this reduces to Gamma(3/4)/(Gamma(3/2)Gamma(1/4)).",
+    "white_spatial_energy": "From CDF 3A<=b via b-2zA+z^2/3 at z=3A, and the `sech` family gives A(ell)=ell/3, b(ell)=ell^2/3, so R_sp=c/sqrt3 and E_sp=c^2/6.",
+    "white_moment_bounds": "Recomputed F0(z)=sqrt(c)/(3) x 2/3 for q=3,k=2 gives (2/3)sqrt(c/M_a) lower and (2/3)sqrt(c K0) upper with K0=2^a/(1-a).",
+    "riesz_order_two": "Recomputed Riesz pair integral = c_a[(s+r)^{2-a}-|s-r|^{2-a}]/(2(1-a)(2-a)) and the 0+2 term; static normalization checks only under c_a=(1-a)/2 tend to white c0.",
+    "degree_one_closing": "Recomputed I_a(h,v)=int e^{-ar^2} sin(hr)cos(rv)/r dr <= pi/2 via the Gaussian-Abel one-dimensional inversion; unit-ball spectral mass V gives pi V/2, so d=1 white has V=c_delta/pi and bound c_delta/2.",
+    "normalization_guard": "A numerical majorant exponent rho>kappa in PROOF010 is a comparison of scales, not an actual moment lower bound; no conditional static alternative is silently a general input."
+  },
+  "dependency_and_cycle_audit": "The main acyclic order is: model/covariance foundation -> fixed-order/spatial-Wick construction -> mild identification -> independent interval-field full upper (PROOF051) -> actual operator driver/source drivers -> F Young/raw-block lower (PROOF120-126) -> unmasked variational class and positive scores -> Cameron/uniform-mean/radius/tube operator upper -> point transfer -> signed score upper -> finite Gram/positive matching -> intrinsic theorem -> occupation/white derived bounds. Textual-not-premise exclusions verified: Jensen does not reverse into vertex-norm proof; mixed proves zero via mild without reverse dependence; P:higher-transfer's reference to L:d1-spatial is explicated as exclusion; the full upper does not cite the alternative endpoint or intrinsic value as premises. No hard cycles established. The remaining risk is not a cycle but an unresolved closure across the operator-dynamics chain listed in the findings.",
+  "limitations": "Text-only review at exactly the supplied source SHA 8ce03ae09cca984b32aaddf3da0a6ded07f47ebc. No raster/manuscript rendering or image-based glyph verification is available. No Kimi or other-family output was used. No prior report/grade/ledger/handoff supplied. No code execution, network access, or external tool was used, so very long exact operator norm constants and the 45-domain program rational table were only algebraically spot-checked, not machine-replayed. Final-cold independent re-derivation by a separate reviewer is not yet available; the confidence level reflects this uncertainty."
+}

@@ -1,0 +1,113 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "reviews/2026-10-31-compact-mean-ground/target-v1.md lines 1-153 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/falsification-v1.md lines 1-47 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/source-crosswalk-v1.md lines 1-42 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/worker-honesty-v1.md lines 1-31 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/check-constant-projection.py lines 1-56 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/constant-projection-v0.json lines 1-306 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/check-actual-trial.py lines 1-37 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/actual-trial-v0.json lines 1-73 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/check-fixed-profile-trial.py lines 1-36 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/fixed-profile-trial-v0.json lines 1-118 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/fixed-profile-binding-target-v0.md lines 1-47 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/old-global-E-method.txt lines 1-122 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/old-global-E-custody.json lines 1-12 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/original-model.txt lines 1-32 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/original-model-custody.json lines 1-9 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/primary-source-custody-v1.json lines 1-24 (complete)",
+    "notes/fixed-mask-young-constant-phase.md lines 1-434 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/pages/teschl2014-title.png (full image viewed)",
+    "reviews/2026-10-31-compact-mean-ground/pages/teschl2014-copyright.png (full image viewed)",
+    "reviews/2026-10-31-compact-mean-ground/pages/teschl2014-p140.png (full image viewed)",
+    "reviews/2026-10-31-compact-mean-ground/pages/teschl2014-p141.png (full image viewed)",
+    "reviews/2026-10-31-compact-mean-ground/pages/teschl2014-p258.png (full image viewed)",
+    "reviews/2026-10-31-compact-mean-ground/pages/teschl2014-p273.png (full image viewed)"
+  ],
+  "checks": [
+    {
+      "claim": "C1/G1 source identification: Teschl 2014 second edition (GSM157, ISBN 978-1-4704-1704-8). Thm 10.2 p258, conditional Thm 10.13 p273 and max-min Thm 4.12 pp140-141 are stated with the hypotheses the target uses.",
+      "verdict": "PASS",
+      "reason": "The title page shows SECOND EDITION and GSM vol. 157. The copyright page shows the ISBN and (c) 2009, 2014. Thm 10.2: real V in L^inf_inf + L2 for n<=3 is relatively compact w.r.t. H0, so H=H0+V on H2 is self-adjoint and bounded below, sigma_ess=[0,inf), and C_c^inf is a core. V=-bU (bounded, compact support) qualifies. Thm 10.13 reads 'If E0=min sigma(H) is an eigenvalue, it is simple and the eigenfunction is strictly positive', so it is conditional, as the target says. Thm 4.12 defines E_n as inf sigma_ess once eigenvalues run out, and p141 permits the quadratic form domain. The target attributes no uniformity to Teschl."
+    },
+    {
+      "claim": "G1 bounds: -b1||U||inf <= E1(b) <= -eps, E1<E2<=0, |Ej(b)-Ej(c)| <= ||U||inf |b-c|, gap Delta>0, l<=lambda_b<=L, lambda_b-mu_b>=d0.",
+      "verdict": "PASS",
+      "reason": "Because U>=0, <w,H_b w> <= int|grad w|^2 - b0 int U w^2 <= -eps for all b>=b0, so E1<=-eps<0=inf sigma_ess. This makes E1 an isolated eigenvalue, after which 10.13 gives simplicity and an a.e.-positive eigenfunction. The lower bound is H_b >= -b||U||inf. E2 is either an eigenvalue different from E1 (by simplicity) or the threshold 0>E1. The Lipschitz bound follows from H_c - ||U|||b-c| <= H_b <= H_c + ||U|||b-c| and form monotonicity (Cor. 4.13, same page p141). Delta>0 holds because E2-E1 is continuous and positive on compact K. The rate gap follows from lambda-mu = (E2-E1)/(lambda+mu) >= Delta/(2 sqrt(b1||U||inf)). No second bound state is presupposed and mu_b=0 is allowed."
+    },
+    {
+      "claim": "G1 continuity: b -> p_b continuous in L2 and H2, with no p_b in L1 and no 1D ODE.",
+      "verdict": "PASS",
+      "reason": "This is feasible. The Riesz projection around the isolated simple E1 is norm-continuous in b, since H_b-H_c is bounded and the gap is uniform. Positivity fixes the sign of the normalized eigenvector. H2 continuity follows from Delta p_b = -(E1(b)+bU)p_b. None of this needs L1 or tail bounds."
+    },
+    {
+      "claim": "C2/G2: with e_b^E=(p_b,lambda_b p_b) and ell_b^E=(<p_b,v>+<p_b,z>/lambda_b)/2, the bound ||P_b^E(t)Q_b^E|| <= C(1+t)e^{mu_b t} holds uniformly. Only the growing branch is removed; the decaying branch is kept.",
+      "verdict": "PASS",
+      "reason": "On the ground mode, a''=lambda^2 a has the growing branch (p,lambda p) and the decaying branch (p,-lambda p). ell^E gives 1 on the first and 0 on the second, and the pairing with z in H^{-1/2} is legitimate because p_b is in H2, a subset of H^{1/2}. The old d1 method's fractional comparison (B<=A_b<=cB with form domain H1, resolvent and square-root integral) is dimension-free. Its scalar wave-entry bounds on [-mu^2,inf), including mu=0 via S_t(0)=t, and its Picard/Gronwall identification with the Duhamel flow carry over to R^d. The target correctly labels that note as a d1 METHOD to be re-proved, not an all-dimensional theorem."
+    },
+    {
+      "claim": "C3/G3: block form P_b(t)(e,c) = (P^E e + K_b(t)c, C(t)c) with K_b(t)c = int_0^t P^E(t-r) D_b C(r)c dr and D_b c=(0,bU c1).",
+      "verdict": "PASS",
+      "reason": "This matches the accepted note's Section 7 deterministic base with h=bU, g=0, and its B(b)(e,c)=(0,b(e1+c1)) map from F to E. The constant coordinates evolve by (c1+tc2, c2) as in note (1) and (8)."
+    },
+    {
+      "claim": "G3 constant functional: f_b = b int U p_b/(2 lambda_b), and ell_b = ell^E + f_b(c1/lambda + c2/lambda^2) gives ell_b(e_b)=1, ell_b P_b(t) = e^{lambda t} ell_b and P Pi = Pi P = e^{lambda t} Pi.",
+      "verdict": "PASS",
+      "reason": "Hand check of the generator: ell^E(0,bUc1) = f_b c1, so f c1 + alpha c2 = lambda alpha c1 + lambda beta c2, giving alpha=f/lambda and beta=f/lambda^2. Direct check with the block formula: ell^E K(t)c = e^{lambda t} f(c1/lambda+c2/lambda^2) - f(c1+tc2)/lambda - f c2/lambda^2. Adding the constant part gives exactly e^{lambda t} ell_b(0,c). So Pi_b is a bounded rank-one projection and both commutation identities follow."
+    },
+    {
+      "claim": "G3 positivity: inf_K ell_b(e0) > 0 and inf_K O_phi(e_b) > 0, with continuity and uniform bounds of e_b, ell_b, Pi_b.",
+      "verdict": "PASS",
+      "reason": "ell_b(e0) = f_b/lambda_b. Here int U p_b > 0 because U is continuous, nonnegative and nonzero and p_b>0 a.e. O_phi(e_b) = int phi p_b > 0. Both are continuous in b, which gives uniform positivity on compact K. Only a.e. positivity tested against integrals is used; no point trace and no p_b in L1."
+    },
+    {
+      "claim": "C4/G4: ||P_b Q_b|| <= C(1+t)^3 e^{mu t}, the normalized exp-gap bound for any eta < inf(lambda-mu), and finite-T Lipschitz dependence on b. Is a desired complement bound assumed circularly?",
+      "verdict": "PASS",
+      "reason": "Derived without circularity from G2 plus the explicit forcing. P Q (e,0) = P^E Q^E e. On constants: the Q^E-forcing part is bounded by int_0^t C(1+t-r)e^{mu(t-r)}(1+r)dr <= C(1+t)^3 e^{mu t}, including mu=0. The Pi^E-forcing part minus the subtracted e^{lambda t}ell_b(0,c)e_b equals -f_b((c1+tc2)/lambda + c2/lambda^2)e_b^E, which is polynomial. The exp-gap bound uses lambda-mu >= d0 and lambda >= l. The b-Lipschitz bound comes from Duhamel with the bounded difference (b-c)U on [0,T0]. It is correctly stated as parameter continuity, not operator-norm time continuity."
+    },
+    {
+      "claim": "C5/G5: Q(g) is finite and strictly positive; U_R = m_R(Gamma*q) is smooth, compact and nonzero; int U_R g^2 = Q(g); for any b0>0, a finite R and a psi_L trial give a common negative trial with C_G = c0^2 2^{alpha-d} Gamma(B1) int q and q fixed.",
+      "verdict": "PASS",
+      "reason": "Gamma is nonzero and homogeneous, so Gamma(B_r) = r^{d-alpha} Gamma(B1) > 0 for every r. It therefore charges every neighbourhood of 0. Combined with q*q~(0) = int q^2 > 0, this gives Q(g) > 0; finiteness follows from Radon local finiteness. Gamma*q is smooth because Gamma is locally finite and q is in C_c^inf. Since m_R=1 on supp g, int U_R g^2 = int (Gamma*q) q = Q(g). Trial: psi_L^2 >= c0^2 L^{-d} on B_L. Tonelli gives int_{B_L} Gamma*q = int q(y) Gamma(B_L - y) dy, and |y| <= A <= L/2 gives B_{L/2} inside B_L - y. The constant C_G as stated follows, with int q = 1. The kinetic term is Dpsi L^{-2}, and alpha < 2 because a > 0, so the potential term L^{-alpha} dominates. This covers singular invariant-direction Gamma and the white endpoint alpha=d=1. Quantifiers are correct: R depends only on (Gamma, q, psi, b0) and is fixed before asymptotics. No all-strength binding claim and no change of q."
+    },
+    {
+      "claim": "C6: finite controls (36 rational cases, 432 residual identities, the d3 trial controls) are audited, and their scope is correctly described.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Audited only, not re-executed. The JSON values match my hand formulas: entrance beta/(2 lambda^2) and wrong-projection defect beta/(2 lambda), e.g. lambda=2, beta=1 gives 1/8 and 1/4; lambda=3, beta=3 gives 1/6 and 1/2. The residual ODE r' = lambda r + v(c1+tc2) checks. 36 = 3x2x2x3, including mu=0. The first trial script rescales q, as the packet admits. The fixed-q script keeps Q0 and b=0.1. Its potential (1/L) int phi^2 phi(x/L)^2 is consistent with Gamma = delta x Leb^2 (alpha=1, a=0.5), and its sign change between L=64 and L=256 is arithmetically consistent. It is labelled as 35/60-digit agreement, not a certificate."
+    },
+    {
+      "claim": "C7: the source/method crosswalk, custody of six full primary images (not the full book), the scope of the old d1 method, and no fix or novelty claim.",
+      "verdict": "PASS",
+      "reason": "All six images were viewed in full and match the custody page list. The crosswalk scopes each import correctly and labels uniformity and full-F work as new deductions. The original H:homog excerpt (lines 130-159) matches the alpha, a, d ranges used in G5. There is no source correction, Appendix/energy import or novelty claim."
+    },
+    {
+      "claim": "C8: G1-G5 supply deterministic cone inputs only; no random block stability, growing products, CM shift/event cost, sharp constant, scalar moment multiplication or arbitrary covariance ordering; no integration, Lean, HPC or publication claim.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The Boundaries section, G4's last paragraph and the worker-honesty note consistently disclaim all of these and keep the original goal active. The positive phrase 'would meet the exact deterministic inputs of the existing abstract moving-block cone' cannot be matched against the cone note, which is not in the packet. It is framed as conditional, so it is not a statement blocker."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Notation collision: L is the upper bound on lambda_b in G1 and the trial scale in G5. Rename one of them in the proof write-up.",
+      "The G1 Lipschitz bound follows most directly from form monotonicity (Teschl Cor. 4.13, on the viewed p141) together with the max-min definition. Citing 4.13 alongside 4.12 would make the import exact.",
+      "The exponent (1+t)^3 in G4 is a valid but non-sharp bound (the derivation gives t(1+t)^2). This is harmless.",
+      "The '432 residual differential/initial identities' count is 432 differential checks; the initial-value identity is asserted only in the 108 t=0 iterations. The wording slightly merges the two.",
+      "check-fixed-profile-trial.py uses psi=g0 (a product bump). It is supported in B2, but it has no positive lower bound c0 on all of B1 (it vanishes as |x_j| -> 1). It illustrates the fixed-q mechanism, but it does not literally instantiate the G5 psi route. Using B_{1/2}, or a psi bounded below on B1, would align the two.",
+      "G5 should say explicitly that Gamma(B1) > 0 follows from Gamma nonzero plus homogeneity (any charged ball B_r gives Gamma(B1) = r^{alpha-d} Gamma(B_r) > 0). The target asks for this to be verified but does not display the argument.",
+      "The match between G1-G4 and the inputs of the abstract moving-block cone cannot be verified from the packet. The downstream gate should check it against the cone note."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is a statement, feasibility and source gate only, not a proof certificate. G1-G5 still require written proofs.",
+    "The scripts were audited by reading them; I did not re-execute them (no shell use). The JSON outputs were spot-checked by hand formulas, which is distinct from the root executions claimed in falsification-v1.md.",
+    "The cone note, spectral-ground-family.md and the full spectral-complement-transfer.md beyond the excerpted lines 1-122 are not in the packet. The cone-input compatibility claim was not verified.",
+    "Only the six Teschl pages were viewed. Cited internal lemmas (7.19, 7.21, 6.31, 6.36) and the book's notion of 'strictly positive' (a.e.) were taken from the visible statement and proof context, not audited.",
+    "The relation between U_R and the actual Cameron-Martin mean in the stochastic model was not checked. It lies outside this target's scope."
+  ]
+}

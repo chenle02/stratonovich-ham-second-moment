@@ -1,0 +1,5 @@
+# Actual required Kimi integrated upper review live
+
+After READYd0845f7 was committed, pushed and <HUB> parity verified, one fresh Kimi review began. Retained handle30371 and actual native PID2134059/start90793452 are verified live. Owned-session metadata binds the new workspace/session to K3/max, four readonly tools, no subagents and no inherited AGENTS paths. Actual first requests carry maxTokens131072. The empty-skills profile is active; complete source reading and final semantics remain future checks.
+
+Canonical dispatch uses the existing bg-run resource wrapper; actual native executable identity was independently observed after dispatch. No alternate provider/binary was substituted. No automatic retry, resume or fallback. No compaction event was observed in the initial five steps; that is not a guarantee for later steps. No connected MCP-tool capability or scientific/whole-reading credit is inferred from metadata. Original all215/limit/High/visual/cold/delivery requirements remain.

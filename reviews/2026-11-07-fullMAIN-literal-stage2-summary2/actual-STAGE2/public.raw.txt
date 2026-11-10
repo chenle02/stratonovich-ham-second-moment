@@ -1,0 +1,62 @@
+# Transport-Phase Acknowledgment (Cumulative)
+
+Mode: literal shown-body inspection only. This is **not** a mathematical vote, verdict, confidence, or grade. No native Read/EOF/hash/pixel verification was performed; declaration of a frame does not establish its byte identity.
+
+## Received and acknowledged as shown bodies
+
+### Previously acknowledged (cumulative)
+- `REQUIRED/operative-contract.md`
+- `REQUIRED/Root-selection.md`
+- `REQUIRED/all215-241roles-13joins-map.json`
+- `REQUIRED/application-bindings.json`
+
+### Received in this transport
+- `full-source-inventory.json`
+- `source-view-continuation-map.json`
+- `READ-PLAN.md`
+- Literal bodies `REQUIRED/F001.txt` through `REQUIRED/F017.txt`, specifically:
+
+| Frame | Alias(es) | Declared bytes | Declared sha256 (prefix) |
+|---|---|---|---|
+| F001 | `TARGET267/notes/notes_stratonovich_ham_second_moment.tex` | 367 834 | `516d6a65…` |
+| F002 | `CURRENT263/notes/notes_stratonovich_ham_second_moment.tex` | 356 001 | `36475324…` |
+| F003 | `integrated_covariance_foundation.tex` (both versions) | 20 305 | `b3e7e8c7…` |
+| F004 | `integrated_wave_variance.tex` (both versions) | 24 355 | `f54a6293…` |
+| F005 | `integrated_compact_gaussian.tex` (both versions) | 29 359 | `c1d8023c…` |
+| F006 | `integrated_actual_operator_driver.tex` (both versions) | 34 204 | `656a13be…` |
+| F007 | `integrated_source_convergence.tex` (both versions) | 23 788 | `13f2e0f1…` |
+| F008 | `integrated_masked_moments.tex` (both versions) | 11 103 | `55ee5ab3…` |
+| F009 | `integrated_constant_phase_young.tex` (both versions) | 26 369 | `ea971a8d…` |
+| F010 | `integrated_compact_mean_family.tex` (both versions) | 24 859 | `bd0e3d59…` |
+| F011 | `integrated_exact_scaling.tex` (both versions) | 2 608 | `ded0e93c…` |
+| F012 | `integrated_raw_block_lower.tex` (both versions) | 33 151 | `e2f1157b…` |
+| F013 | `integrated_unmasked_variational.tex` (both versions) | 16 978 | `4b7942f3…` |
+| F014 | `integrated_temporal_equilibrium.tex` (both versions) | 3 860 | `a9fba743…` |
+| F015 | `integrated_spatial_occupation.tex` (both versions) | 18 453 | `eedd1c4a…` |
+| F016 | `integrated_cameron_mean.tex` (both versions) | 22 970 | `88ae9f20…` |
+| F017 | `integrated_young_upper_foundation.tex` (both versions) | 4 501 | `86c8fd97…` |
+
+The `full-source-inventory.json` body also transports declared metadata for all **215 required frames** and all **94 custody records**, but the literal bodies of only F001–F017 are present.
+
+## Honest missing fragments (transport not yet complete)
+
+1. **Required literal bodies F018 through F215 are missing.**
+   This is **198 of the 215 numbered whole-source bodies**. Among the notable later OWN-assigned modules still absent: `integrated_uniform_mean`, `integrated_radius_anchor`, `integrated_signed_static`, `integrated_symplectic_phase`, `integrated_gaussian_tubes`, `integrated_uniform_products`, `integrated_point_transfer`, `integrated_signed_moment_upper`, `integrated_positive_gram`, `integrated_intrinsic_constant`, `integrated_occupation_ceiling`, `integrated_white_evaluation`, plus the primary/35-page evidence carriers and later adversarial/public frames.
+
+2. **The 13 required `READ-VIEWS/*.jsonl` bodies are not transported.**
+   `source-view-continuation-map.json` and `READ-PLAN.md` state that for the 13 bodies with >2000-UTF16-line obstruction
+   (`F094, F096, F113, F121, F173, F174, F179, F180, F189, F192, F196, F212, F213`),
+   every JSONL record of the corresponding `READ-VIEWS` carrier must be read. Only their view metadata (path/hash/record count) was received, not the literal JSONL record bodies.
+
+3. **Custody bodies `CUSTODY-NOT-REQUIRED/C001–C094` are not transported as bodies.**
+   Only their inventory role records appear. They are outside required scientific reading, so this is **optional provenance**, not a required-math missing fragment.
+
+## Not claimed in this phase
+- Byte/sha256/EOF identity, decoding correctness, or line-frame verification of any transported body.
+- Any mathematical review, acceptance, or rejection of the received TeX/proof content.
+- Any per-row judgment of the 215 OWN proofs, 241 declaration roles, or 13 joins.
+
+## Current state
+- **Received:** control/inventory frames plus literal bodies F001–F017.
+- **Blocked on:** F018–F215 literal bodies and the 13 `READ-VIEWS` literal bodies.
+- **Not due:** mathematical verdict/confidence/grade; that remains gated on complete transport of all 215 bodies and the 13 reversible read views.

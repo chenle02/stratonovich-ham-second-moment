@@ -1,0 +1,340 @@
+By (25.13), the B-independent original point rate is at least this right side for every
+fixed erate . Only now let erate ↓ 0. The bijection δ = T −κ covers all sufficiently large T .
+    Finally, spatial translation of all positive-width vertices preserves the original noise
+law, Green kernels and constant initial data. The fixed-order L2 and absolute-series
+limits preserve equality of point second moments. Hence zero can be replaced by every
+fixed x in (25.14). Every control and mask were fixed before asymptotics; a supremum
+over them may follow their individual inequalities. This proves Proposition 25.7.
+
+
+26      The unmasked Rayleigh rate and positive-
+        control scores
+Fix a nonzero covariance satisfying Hypothesis 1.1, including its original amplitude, and
+set a = α0 . Define the full class
+
+                    Cpos = {Ψ ∈ Cc∞ ((0, 1) × Rd ; R) : Ψ ≥ 0, Ψ ̸= 0}.                (26.1)
+                                                                −1/(1−z ) 2
+It includes nonseparable tests. ∏︁d It is nonempty: if b(z) = e           on |z| < 1 and
+zero otherwise, then b(4s − 2) j=1 b(xj ) belongs to this class. All boundary derivatives
+vanish because exponential decay dominates every power of (1−z 2 )−1 . For each Ψ retain
+the original mean hΨ,s and raw variance vΨ = EW (Ψ)2 from (23.20)–(23.21). Neither
+the test nor its covariance is changed by a physical mask. We write hs when Ψ is fixed.
+
+26.1     Global bounds and the unmasked spectral bottom
+Lemma 26.1 (Gaussian envelope for the original covariance). For the normalized heat
+                               2
+kernel pϵ (x) = (2πϵ)−d/2 e−|x| /(2ϵ) ,
+                   ∫︂
+                                 2
+    (Γ ∗ pϵ )(x) = eiξ·x e−ϵ|ξ| /2 µ( dξ), 0 ≤ (Γ ∗ pϵ )(x) ≤ (Γ ∗ pϵ )(0) < ∞. (26.2)
+
+The value at zero is strictly positive.
+
+Proof. A positive tempered Radon measure has polynomial ball growth. Indeed, evalu-
+ate its tempered bound on a nonnegative smooth cutoff equal to one on B1 , dilated by
+R ≥ 1. Its finitely many Schwartz seminorms are bounded by CRN , so positivity gives
+a ball-mass bound CRN . Summing dyadic annuli shows that (1 + |x|)−L is integrable
+for L > N . Apply this separately to Γ and µ. Gaussian weights are therefore integrable
+against both measures. The classical convolution on the left is finite and smooth locally
+in x: on compact x sets its translated Gaussian derivatives are bounded by any fixed
+sufficiently fast polynomial weight in the integration variable.
+    Pair the convolution with a Schwartz test φ. Absolute Fubini is justified by these
+weights. The resulting pairing is that
+                                    ∫︁ of Γ with  pϵ ∗ φ. Applying the spectral convention
+                                            −iξ·y            2
+in Hypothesis 1.1 and the identity pϵ (y)e        dy = e−ϵ|ξ| /2 gives exactly the right side
+of (26.2) as a distribution. The heat kernel is even, so either Fourier sign gives that
+
+                                             175
+same Gaussian multiplier. Its spectral integral is absolutely finite and continuous in
+x by dominated convergence. Thus equality of the two continuous distributions gives
+equality at every x, without an extra normalization factor. The physical convolution is
+nonnegative. Evenness of µ makes the spectral integral real, and its absolute value is
+bounded by its total Gaussian mass, the value at zero. Finally Γ ̸= 0 and pϵ > 0 give
+strict positivity there. This proves Lemma 26.1.
+Lemma 26.2 (Global regularity of the original mean). Every mixed time and space
+derivative of hs is globally bounded in space, uniformly on compact time intervals. In
+particular, for I = [0, 1] there are finite constants M, CΨ such that
+
+               0 ≤ hs (x) ≤ M,            ∥hs − ht ∥∞ ≤ CΨ |s − t|,    s, t ∈ I.        (26.3)
+
+Proof. Extend Ψ by zero in time; its compact support inside (0, 1) makes this a smooth
+extension. For any mixed derivative DΨ, a fixed ϵ > 0 and compactness of its common
+spatial support give |DΨ(t, x)| ≤ CD pϵ (x) for all t, x. Here the heat kernel has a positive
+minimum on that support. Lemma 26.1 consequently bounds Γ ∗ |DΨ(t, ·)| uniformly in
+t, x. Ordinary local differentiation against the Radon measure gives the corresponding
+derivatives of the convolution. After the change r = s − t,
+                                   ∫︂
+                          hs (x) =    |r|−a (Γ ∗ Ψ(s − r, ·))(x) dr.
+                                     R
+
+For s in a compact interval the relevant r lie in a fixed bounded interval. The preceding
+global bound times |r|−a is integrable since a < 1. Every derivative thus falls on the
+smooth test and passes through the integral by dominated convergence, with the claimed
+global spatial bounds. Nonnegativity follows from positive kernels. The bounded time
+derivative proves the Lipschitz estimate. No directional decay of the mean has been
+inferred. This proves Lemma 26.2.
+Proposition 26.3 (The actual unmasked Rayleigh rate). On complex L2 (Rd ), the op-
+erator Hs = −∆ −∫︁ hs is self-adjoint on H 2 , with actual form domain H 1 and form
+qs (f ) = ∥∇f ∥22 − √hs |f |2 . Its spectral bottom Es is uniformly negative on I. The
+positive rate λΨ,s = −Es satisfies
+                                             (︃∫︂               )︃
+                            2                         2       2
+                          λΨ,s =     sup          hs f − ∥∇f ∥2 .                 (26.4)
+                                 f ∈H 1 (Rd ;R)
+                                    ∥f ∥2 =1
+                                   ∫︁ 1
+It is Lipschitz on I, and IΨ :=     0
+                                          λΨ,s ds is positive and finite. No eigenstate at the
+unmasked bottom is asserted.
+Proof. The Fourier Laplacian A = −∆ is self-adjoint on H 2 , being multiplication by |ξ|2
+with its maximal domain. Multiplication Bs = −hs is bounded self-adjoint with norm
+at most M . Thus Hs = A + Bs is densely defined, symmetric and closed on H 2 ; the two
+graph norms are equivalent under a bounded perturbation. For real b > M ,
+
+                          Hs − ib = (I + Bs (A − ib)−1 )(A − ib).
+
+                                                  176
+The first factor has a Neumann inverse because ∥Bs (A − ib)−1 ∥ ≤ M/b < 1, and the
+same holds with +ib. To check self-adjointness directly, for u ∈ D(Hs∗ ) solve (Hs −ib)v =
+(Hs∗ − ib)u with v ∈ D(Hs ). Then u − v ∈ ker(Hs∗ − ib) = Ran(Hs + ib)⊥ = {0}. Hence
+D(Hs∗ ) = D(Hs ).
+    Set cshift = 1 + M and Js = Hs + cshift ≥ 1. Integration by parts on H 2 gives
+
+           ∥Js1/2 f ∥22 = qs (f ) + cshift ∥f ∥22 ,     ∥f ∥2H 1 ≤ ∥Js1/2 f ∥22 ≤ cshift ∥f ∥2H 1 .
+
+Spectral cutoffs 1[1,n] (Js ) show that H 2 = D(Js ) is a core for the half-power norm;
+Fourier cutoffs give its density in H 1 . Completion in the equivalent norms identifies
+      1/2
+D(Js ) and H 1 as actual L2 subspaces, since both norms dominate L2 . This proves the
+stated form domain.
+     The spectral lower bound gives one direction of the Rayleigh identity. For the reverse,
+nonzero spectral projections in [Es , Es + ϵ] give unit H 2 vectors with Rayleigh values
+at most Es + ϵ. The bottom is finite because the operator is bounded below and has
+finite Rayleigh tests. Let ϵ ↓ 0. Real tests give the same infimum: qs (u + iv) =
+qs (u) + qs (v), so the quotient is the norm-weighted average of the nonzero real quotients.
+This proves (26.4).
+     Proposition 23.7 supplies, for this original Ψ, one unit compactly supported w and a
+finite plateau mask with a common negative margin ϵ0 > 0. Its trial has support in B2L ;
+choose its plateau radius R0 ≥ 2L. The unmasked form        √ on this same w is no larger.
+                                             √
+Consequently −M ≤ Es ≤ −ϵ0 < 0, and ϵ0 ≤ λΨ,s ≤ M . Comparing identical unit
+form tests gives |Es − Et | ≤ ∥hs − ht ∥∞ and therefore
+
+                                                      CΨ
+                                     |λΨ,s − λΨ,t | ≤ √ |s − t|.
+                                                     2 ϵ0
+
+This also proves positivity and finiteness of IΨ . No compact-potential spectral theorem
+was applied to Hs . This proves Proposition 26.3.
+
+26.2     Removing masks from the numerical lower rate
+Proposition 26.4 (Monotone rates and the original point moment). There is an in-
+creasing family of admissible radial masks mR tending to one, for which the compact
+ground rates satisfy λR,s ↑ λΨ,s uniformly on I. For the original canonical solution and
+any fixed x,
+                                                             vΨ
+                         lim inf T −κ log E|u(T, x)|2 ≥ 2IΨ − .                    (26.5)
+                          T →∞                                2
+Proof. Put F (t) = e−1/t for t > 0 and zero otherwise, and define
+
+                                    F (2 − r)
+                    χ(r) =                          ,           mR (x) = χ(|x|/R).
+                              F (2 − r) + F (r − 1)
+
+The denominator is positive. The numerator decreases and the second denominator term
+increases; thus χ is nonincreasing, equals one on r ≤ 1, and zero on r ≥ 2. Flatness
+
+                                                      177
+of F at zero gives smoothness. Since χ is constant near zero, mR is smooth also at the
+spatial origin. These even [0, 1] masks increase pointwise to one.
+    Choose R0 so the preceding common trial lies in the plateau. Every R ≥ R0 has
+the same negative margin. For each fixed R, the compact-family theorem applies to
+mR hs . Its real Rayleigh formula follows from the same real/complex
+                                                          √             quotient argument
+as (26.4). The rates are continuous, positive, at most M     ∫︁ and monotone
+                                                                           ∫︁ in R. For
+every fixed real unit f ∈ H 1 , dominated convergence gives mR hs f 2 → hs f 2 . Hence
+                                              (︃∫︂                   )︃
+                   2
+              sup λR,s =        sup       sup      mR hs f − ∥∇f ∥2 = λ2Ψ,s .
+                                                          2        2
+            R≥R0          ∥f ∥2 =1, f ∈H 1 (Rd ;R) R≥R0
+
+
+Only two numerical suprema were interchanged. Positive square roots give the pointwise
+rate convergence. For Rn = R0 + n and ϵ > 0, the increasing open sets {s : λΨ,s −
+λRn ,s < ϵ} cover compact I. A finite subcover lies in the largest one,
+                                                                      ∫︁ proving uniform
+convergence. Monotonicity extends it to all real R → ∞. Therefore I λR,s ds ↑ IΨ .
+    At each fixed R use this very same mask in ∫︁the driver and mean when applying
+Proposition 25.7. It gives the lower bound with 2 I λR,s ds − vΨ /2 for the same original
+point liminf. Taking the numerical supremum over these individual bounds proves (26.5).
+There is no R(T ), unmasked noisy wave, uniform-in-mask Gaussian estimate or exchange
+of source and time limits. This proves Proposition 26.4.
+
+26.3     Full-class dilation and finite positive scores
+Lemma 26.5 (Radon and Rayleigh dilation). For r > 0 the map
+
+                                 (Dr Ψ)(s, x) = rd+2−α Ψ(s, rx)                            (26.6)
+
+is a bijection of Cpos , with inverse D1/r . With the same original covariance,
+
+ hDr Ψ,s (x) = r2 hΨ,s (rx),       vDr Ψ = r4−α vΨ ,      λDr Ψ,s = rλΨ,s ,   IDr Ψ = rIΨ . (26.7)
+
+Proof. Positive dilation preserves the full smooth positive nonzero class; multiplication
+of its amplitude powers gives the stated inverse. Homogeneity of the physical Radon
+measure gives, for every nonnegative measurable G,
+                          ∫︂                      ∫︂
+                                              α−d
+                             G(ry)Γ( dy) = r         G(z)Γ( dz).
+
+Indeed, its left pushforward measure on a Borel set A is Γ(A/r) = rα−d Γ(A). Pos-
+itive Tonelli applies this identity inside the temporal convolution, giving hDr Ψ,s (x) =
+r2 hΨ,s (rx). Now use the Lebesgue substitution z = rx in the raw pairing:
+
+                               vDr Ψ = rd+2−α r2 r−d vΨ = r4−α vΨ .
+
+This distinguishes the Radon pushforward from the spatial volume factor; it includes
+singular covariances and white noise.
+
+                                                   178
+     The map Ur f (x) = rd/2 f (rx) is a unitary bijection on real L2 , preserving
+                                                                            ∫︁     H 1 , H 2 as
+sets
+   ∫︁ under its inverse. Weak derivatives give ∥∇Ur f ∥2 = r ∥∇f ∥2 and hDr Ψ,s (Ur f )2 =
+                                                         2    2     2
+
+r2 hΨ,s f 2 . The real Rayleigh bijection proves the squared rate identity; the rates are
+positive, so their square roots and integrals give (26.7). On H 2 this is also HDr Ψ,s Ur =
+r2 Ur HΨ,s . Time has not been rescaled. For compact masks the corresponding identity
+uses mR (rx) = mR/r (x); a fixed mask radius is not invariant. This proves Lemma 26.5.
+
+
+Proposition 26.6 (Positive finite intrinsic lower scores). For c > 0, the score set {cIΨ −
+vΨ /2 : Ψ ∈ Cpos } is nonempty and bounded above. Its finite real supremum Scpos is positive
+and satisfies
+                          Scpos = c(4−α)/(3−α) S1pos , Q2 ≥ S2pos ,                  (26.8)
+where Q2 is the original point liminf. The label-one value is an auxiliary variational
+score; no actual first-moment or source-constant identification is asserted.
+Proof. Write k = 3 − α > 0, q = 4 − α = k + 1 and m = q/k > 1. Fix one Ψ0
+from the nonempty class and put I0 = IΨ0 > 0, v0 = vΨ0 > 0. Positivity of the latter
+is Lemma 23.6. For r0 = (I0 /v0 )1/k > 0, which need not be less than one, the exact
+real-power identity gives
+                     IDr0 Ψ0 − vDr0 Ψ0 /2 = r0 I0 − r0q v0 /2 = r0 I0 /2 > 0.
+This positive score belongs to an actual smooth test.
+   For c > 0 put rc = c1/k and Kc = cm > 0. Lemma 26.5 and the exact scalar powers
+give, for every Ψ,
+                          cIDrc Ψ − vDrc Ψ /2 = Kc (IΨ − vΨ /2).             (26.9)
+Since Drc is a bijection of the entire class, the whole c-score set is Kc times the whole
+label-one score set.
+   We prove boundedness before taking finite-real suprema. The independent existing
+Theorem 13.8, for the same canonical solution, gives
+                                                  κ
+                  E|u(T, 0)|2 ≤ e(T + 2)d eCup T ,        T ≥ 1,     Cup < ∞.
+Its prefactor is negligible: choose ϵ = κ/2 > 0, use log T ≤ (T ϵ − 1)/ϵ and log(T + 2) ≤
+log T + log 3 for T ≥ 1, and divide by T κ . Thus the original point limsup is at most
+Cup . One fixed test/mask lower bound gives a finite lower bound for Q2 , so Q2 is
+finite. By (26.5) every label-two score is at most this same Q2 ≤ Cup , uniformly in
+Ψ. Equation (26.9) at c = 2 consequently bounds all label-one scores by Cup /K2 . The
+nonempty set has a finite real supremum S1pos > 0 by the positive test above.
+    For general c, set equality and Kc > 0 show that Kc S1pos is the supremum: it is
+an upper bound, and every smaller number is exceeded by Kc times a label-one score
+within the corresponding positive distance of its supremum. This proves finiteness,
+positivity and the first identity in (26.8). Taking the numerical supremum of the label-
+two lower bounds proves the second. Although 2m > 2, the resulting S2pos > 2S1pos is
+only an auxiliary-score comparison. It is not a Jensen improvement without an actual
+first-moment identification. This proves Proposition 26.6.
+
+                                              179
+   For Γ = 0, the mean, raw variance and Rayleigh rate are zero. Set all these scores to
+zero; the free canonical solution u = 1 has the corresponding zero moment rate. Strict
+positivity above is restricted to nonzero covariance. Matching an upper variational rate
+and identifying an exact original-point limit remain later steps.
+
+
+27     Targets
+Goal 27.1 (Upper bound at the correct scale). Under Hypothesis 1.1, prove
+lim supt→∞ t−κ log Eu2 (t, x) < ∞, ideally with an explicit constant.
+
+ Theorem 13.8 establishes the unchanged full upper goal for every admissible dimen-
+ sion and homogeneous covariance. The interval estimate passed scoped correctness
+ review. The preceding independent mild construction passed correctness review.
+ The explicit hypothesis/object revision and independent fixed-order construction
+ and their consumers passed their own scoped Opus5.5/HIGH review. A fresh whole-
+ paper cold read remains required. The earlier explicit bounds for 0 < α ≤ 1 remain
+ available. The sharp constant and final whole-paper cold read remain open.
+
+Goal 27.2 (Sharp second-moment constant). Under Hypothesis 1.1, derive a finite con-
+stant C2 (γ, α0 ) and prove, for every fixed x ∈ Rd ,
+
+                            lim t−κ log Eu2 (t, x) = C2 (γ, α0 ).
+                            t→∞
+
+A variational characterization must specify its full domain, covariance amplitude, ki-
+netic coefficient and Gaussian action. Derive further evaluations and bounds from this
+formula. For zero covariance, u(t, x) = 1 and C2 (0, α0 ) = 0.
+
+ Goal 27.2 follows Le’s revised direction of 2026-10-31: derive the actual constant,
+ whatever the computation gives. The original proposed bounds with endpoints
+ 2(4−α)/(3−α) L∗ and 2(4−α)/(3−α) L∗ remain comparisons with Conjecture 2.3. Matching
+ those endpoints or closing the source’s variational gap is not a completion require-
+ ment. No correction of the source’s normalization or equality of its energy domains
+ is adopted.
+
+
+
+28     Established steps and open questions
+1. The mixed expansion and the first obstruction. Section 3 proves the complete
+   nonnegative mixed expansion and an independent convergent solution series. It cor-
+   rects the time-uniformity issue in the source’s intermediate estimate. The common-
+   per-pairing majorant has exponent ρ > κ and cannot give the desired scale. This is a
+   restriction on that majorant, not on the model or all uses of the source’s Theorem 3.1.
+
+                                            180
+2. Calibrations. Section 4 gives the finite white and Riesz coefficients. As α0 ↓ 0,
+   the target exponent becomes (4 − α)/(3 − α), the static exponent. Proposition 2.4
+   is unconditional; its numerical 2L∗ specialization requires the stated first-moment
+   premise. Comparisons with the Skorohod model identify time exponents only.
+
+3. The full upper scale. Section 5 gives explicit bounds when α ≤ 1. Section 13
+   proves the full homogeneous-covariance upper scale by independent interval fields,
+   local Gaussian-degree estimates and dyadic covariance domination. The latter proof
+   does not assume an endpoint representation of the spatial covariance.
+
+4. The sharp constant remains open. Goal 27.2 requires a lower bound beyond
+   the unconditional Jensen comparison and a matching sharp upper constant. The
+   new candidate in Section 14 supplies a static lower comparison for all admissible
+   temporal exponents and a strict actual-mean gap only near the static endpoint; these
+   proofs passed their own scoped review. A representation using two ordered chains
+   is a possible research direction, not a proved result of these notes. The intended
+   normalization of the source’s first-moment constants also remains to be clarified.
+
+
+References
+[1] Raluca M. Balan and Daniel Conus, Intermittency for the wave and heat equations with fractional
+    noise in time, Ann. Probab. 44 (2016), 1488–1534 (); MR3474476
+[2] Xia Chen, Exponential asymptotics for Brownian self-intersection local times under Dalang’s con-
+    dition, Electron. J. Probab. 28 (2023), Paper No. 119, 17 (); MR4660700
+[3]          , Time-dependency     in   hyperbolic   anderson   model:   Stratonovich   regime,   Preprint
+      arXiv:2510.01412 (2025) ()
+[4]          , Time-dependency in hyperbolic Anderson models: Stratonovich regime, 2026. 64-
+      page author manuscript, submitted to Ann. Appl. Probab.; retrieved 2026-10-26, SHA-256
+      5f7385ca451e643a1f3ff31835e4ee52b2708b5d2e3652eec3fb5d3958b97b6c; supersedes Theorem 1.2 of
+      arXiv:2510.01412v1.
+[5] Xia Chen and Yaozhong Hu, Hyperbolic anderson equations with general time-independent gaus-
+    sian noise: Stratonovich regime, Ann. Probab. 53 (2025), 2144–2195. Available at 2403.08603 ();
+    MR4988274.Published version of arXiv:2403.08603
+[6] Michel Crouzeix and César Palencia, The numerical range as a spectral set, 2017. Author preprint,
+    arXiv:1702.00668v1; numbering used here refers to this version.
+[7] Peter K. Friz and Martin Hairer, A course on rough paths, Universitext, Springer, Cham, [2020]
+    ©2020. With an introduction to regularity structures, Second edition of [ 3289027]. MR4174393
+[8] Gerald Teschl, Mathematical methods in quantum mechanics, Second, Graduate Studies in Math-
+    ematics, vol. 157, American Mathematical Society, Providence, RI, 2014. With applications to
+    Schrödinger operators. MR3243083
+
+
+
+
+                                                     181
+

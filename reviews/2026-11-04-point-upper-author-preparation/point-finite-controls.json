@@ -1,0 +1,52 @@
+{
+  "kind": "FINITE_AUTHOR_FALSIFICATION_NOT_MODEL_REVIEW",
+  "Green_masses": {
+    "d1": ".5*(2h)=h",
+    "d2": "integral_0^h r/sqrt(h²-r²)dr=h",
+    "d3": "4pi h²/(4pi h)=h",
+    "h0": "zero Green measure"
+  },
+  "chain_mass_coefficients_t1": [
+    "1",
+    "1/2",
+    "1/24",
+    "1/720"
+  ],
+  "zero_covariance": {
+    "point_moment": 1,
+    "spatial_square_integral": "v_d",
+    "free_matrix_zero_frequency": [
+      [
+        1,
+        "L"
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "norm_bound": "1<=||S_E(L)||<=4(1+L), not a contraction",
+    "rate": "delta log ||S_E(delta^-1)||² ->0"
+  },
+  "plane_covariance": {
+    "dimension": 3,
+    "Gamma": "dx1 dx2 tensor delta0(dx3)",
+    "alpha": 1,
+    "allowed_time": "0<a<1",
+    "PD_quadratic_form": "integral dx3 (integral dx1dx2 f)^2>=0",
+    "heat_covariance": "(4pi epsilon)^(-1/2)exp(-x3²/(4epsilon))",
+    "spectral_measure": "supported on third axis, no angular density, infinite total mass allowed",
+    "wave": "three-dimensional sphere Green; same massh"
+  },
+  "white_covariance": {
+    "dimension": 1,
+    "Gamma": "c delta0",
+    "alpha": 1,
+    "heat_at_zero": "c(4pi epsilon)^(-1/2)"
+  },
+  "fast_source_variance": "g² K_(tau/delta)(0)Gamma_(2epsilon)(0)=delta K_tau(0)Gamma_(2epsilon)(0)",
+  "product_constant": "(1+4d)^((k-1)/2), integer k>d/2+1",
+  "no_delta_uniform_UI_assumed": true,
+  "no_raw_E_point_trace": true,
+  "observable": "integral_D |v|², never |integral phi v|²"
+}

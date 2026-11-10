@@ -1,0 +1,202 @@
+{
+  "provider": "claude",
+  "started_utc": "2026-10-31T17:26:33.277262+00:00",
+  "workspace": "../../../../.local/state/Le-AI-Lab/stratonovich-growing-cone-scientific-v1/workspace",
+  "source_revision": "4c6d63eda1f5c47054a63f325dbdc06517bcf2e6",
+  "input_hashes": {
+    "lean-progress/local-checks/direct-event-v1/StratonovichHAMAudit/DirectEvent.lean": "170e16ec98fbf69fd69c11d93262b8f82eb10517f08d8cebdd98ca1b9f7494bb",
+    "lean-progress/local-checks/direct-event-v1/evidence/dev-02/compile-audit.txt": "b024f040e5e3dbb754033721ed1d7b3ab9922bafe99da0ae80cd9ba6e07dcb8c",
+    "notes/actual-operator-driver.md": "ffc7ff642b17b64eb995a2d7d32610b02b6e24a49ce867a3f2eca9fca2455642",
+    "notes/direct-event-calibration.md": "41091a143e7fb7f6081aadd2475751cf115a3f5ef318965d97ccc72277f79720",
+    "notes/fixed-mask-moment-transfer.md": "e926091011af7e967fde95216a4f72dd878bad352069cc9a2530bace6e50294b",
+    "notes/fixed-mask-young-constant-phase.md": "9823d6a1abd42cbd45347e460b301a5ead075ba95439b24babc70fe1adaf7a29",
+    "notes/growing-cone-point-upper-transfer.md": "61cb1aba8fcd8c78023f6e85d3784d31c4c6353e88883dd71d2f0cea77421c6f",
+    "notes/raw-block-event-lower.md": "4666eed85171e7704ae5ecd3a928dae501f39e49e9c92a3dac8335bd04f748aa",
+    "notes/source-operator-convergence.md": "e0c344ab16c17135550a9b60a1cad6a43b3fe12c0eeef0f0889fa078f38cc4ae",
+    "notes/upper-gaussian-operator.md": "aa77b85d9a639a4374ca78d98fb9814dc69ea286e134eb6b0f2f1d18bb740df5",
+    "reviews/2026-10-31-growing-cone-point-transfer/check-cone-v1.py": "5e70480b63d591383afcb167a229d9c124728d43415006a6e117b3bc6c8eba84",
+    "reviews/2026-10-31-growing-cone-point-transfer/cone-controls-v1.json": "a65718aa8c38fa22cc215e6369cb091a492eaa347d393142b9ab29c5441a101b",
+    "reviews/2026-10-31-growing-cone-point-transfer/falsification-v1.md": "1a7ccbb42ce8965014e51bc4c1a39509090e1b655b520f323931975501b0ddb0",
+    "reviews/2026-10-31-growing-cone-point-transfer/finite-scaling-reuse-v1.json": "abe7ee03e0a2c815791a2f0f2fd339af20307e90dd360b0711ac160dcdddf40c",
+    "reviews/2026-10-31-growing-cone-point-transfer/scientific-prompt-v1.md": "2ebf67ecd332506e33b625b098e3d4892c86d8dc5ef68819304928ea396b9149",
+    "reviews/2026-10-31-growing-cone-point-transfer/scientific-source-crosswalk-v1.md": "27343a0ff2e067ec5690d9f48e1eb968b740e347022899a19fd0a284dfeac47a",
+    "reviews/2026-10-31-growing-cone-point-transfer/scientific-worker-honesty-v1.md": "8ca091ccc180148b3849df34cf5e920b44299d205801ece55d729b1addcf9beb",
+    "reviews/2026-10-31-growing-cone-point-transfer/statement-adjudication-v2.md": "63b27fc5ee82d8500748e8e1e18bda09eb528b5b905293d34056a50b2399afe0",
+    "reviews/2026-10-31-growing-cone-point-transfer/statement-read-ledger-v2.json": "dd2c5f58d9a0d0af209e2bf342c943bae49390685864602b8ad08eb0e4a6c03f",
+    "reviews/2026-10-31-growing-cone-point-transfer/statement-receipt-v2.json": "8650cf13f399ceed510fd27cc40803009dd1261ca3b2ae9bb0ac694b0aa558ae",
+    "reviews/2026-10-31-growing-cone-point-transfer/statement-report-v2.json": "c363baf7e52fd31b0ba172a32c265398f1e968390056da69ffd99395f0a7afb8",
+    "reviews/2026-10-31-growing-cone-point-transfer/target-v1.md": "087800a6b1ffa73f6b48fd891b7ed3e6390848640149026eb4396ba97d50891f"
+  },
+  "target": "notes/growing-cone-point-upper-transfer.md",
+  "claude_account": "<removed>",
+  "review_contract_sha256": "2ebf67ecd332506e33b625b098e3d4892c86d8dc5ef68819304928ea396b9149",
+  "effort_requested": "high",
+  "resumed_from": null,
+  "resume_mode": null,
+  "resume_binding": null,
+  "min_confidence": "high",
+  "scientific_verdict": "PASS_WITH_NOTES",
+  "accepted": true,
+  "report_contract_schema": "subscription-review-report/1",
+  "report_legacy_mode": null,
+  "legacy_resume_binding": null,
+  "diagnostics": [],
+  "required_sources_sha256": "351d013dee4fefa9ccb304d2450dd466ff4de10c9f83600634a6c3b15415c2cd",
+  "required_sources_workspace_copy": ".review/required-sources.json",
+  "workspace_preflight": {
+    "schema": "le-ai-lab.review-workspace-preflight/1",
+    "scanned": "review contract (--prompt-file)",
+    "references": {
+      "notes/growing-cone-point-upper-transfer.md": [
+        "notes/growing-cone-point-upper-transfer.md"
+      ]
+    },
+    "waived": [],
+    "missing": [],
+    "required_sources_copy": ".review/required-sources.json"
+  },
+  "runtime_preflight": {
+    "effective_version": "2.1.304",
+    "cli_version": "2.1.304 (Claude Code)",
+    "image_requirements": false,
+    "supported_versions": [
+      "2.1.299",
+      "2.1.300",
+      "2.1.301",
+      "2.1.302",
+      "2.1.303",
+      "2.1.304",
+      "2.1.314"
+    ],
+    "supported": true
+  },
+  "cli_version": "2.1.304 (Claude Code)",
+  "executable": "../../../../.local/state/Le-AI-Lab/swe-white-time-resume-20261024/runtime/node_modules/@anthropic-ai/claude-code-linux-x64/claude",
+  "executable_requested": null,
+  "executable_effective": {
+    "path": "../../../../.local/state/Le-AI-Lab/swe-white-time-resume-20261024/runtime/node_modules/@anthropic-ai/claude-code-linux-x64/claude",
+    "version": "2.1.304 (Claude Code)"
+  },
+  "read_ledger_format_supported": true,
+  "auth": {
+    "authMethod": "<removed>",
+    "apiProvider": "firstParty",
+    "subscriptionType": "<removed>",
+    "email": "<account email removed>"
+  },
+  "model_requested": "claude-opus-5-5",
+  "command_without_prompt": [
+    "../../../../.claude/bin/claude-acct",
+    "run",
+    "<account removed>",
+    "--print",
+    "--model",
+    "claude-opus-5-5",
+    "--effort",
+    "high",
+    "--disable-slash-commands",
+    "--strict-mcp-config",
+    "--mcp-config",
+    "{\"mcpServers\":{}}",
+    "--permission-mode",
+    "dontAsk",
+    "--permission-prompts",
+    "none",
+    "--output-format",
+    "stream-json",
+    "--verbose",
+    "--tools",
+    "Read,Grep,Glob",
+    "--allowedTools",
+    "Read,Grep,Glob",
+    "--agents",
+    "../../../../.local/state/Le-AI-Lab/stratonovich-growing-cone-scientific-v1/claude-reviewer.json",
+    "--agent",
+    "artifact-reviewer",
+    "<stdin: prompt.txt without its final newline>"
+  ],
+  "prompt_transport": "stdin",
+  "prompt_bytes": 7648,
+  "prompt_sha256": "5960fbaf25225c8782179f41450f4de871ea9abcd4e9df8c44d761bed94f0ed1",
+  "transport_exit_code": 0,
+  "transport_ok": true,
+  "model_actual": "claude-opus-5-5",
+  "session_id": "66f2565a-ae08-45d1-a35a-984c468aaefa",
+  "usage": {
+    "input_tokens": 16,
+    "cache_creation_input_tokens": 159145,
+    "cache_read_input_tokens": 492478,
+    "output_tokens": 39738,
+    "output_tokens_details": {
+      "thinking_tokens": 30287
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 159145,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 36727,
+        "cache_read_input_tokens": 134150,
+        "cache_creation_input_tokens": 28199,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 28199
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "provider_error": false,
+  "terminal_subtype": "success",
+  "tools_actual": [
+    "Read",
+    "Grep",
+    "Glob"
+  ],
+  "actual_route_verified": true,
+  "candidate_hashes_unchanged": true,
+  "raw_report_sha256": "f3e53284e77b1f30e2ea9f9f7450ba901823c2b7122aa71eb97d398baf286af4",
+  "status": "review-complete",
+  "confidence": "high",
+  "report_interpretation": {
+    "contract_schema": "subscription-review-report/1",
+    "report_schema": "subscription-review-report/1",
+    "legacy_mode": null,
+    "normalized_verdict": "PASS_WITH_NOTES",
+    "normalized_confidence": "high",
+    "normalized_check_verdicts": [
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS"
+    ]
+  },
+  "report_sha256": "6d53cd95be6b7c320c8dd9c5150efc39077880e915656e83d9e6fdcd31df0f82",
+  "report_text_format": "bare",
+  "report_body_sha256": "f3e53284e77b1f30e2ea9f9f7450ba901823c2b7122aa71eb97d398baf286af4",
+  "finished_utc": "2026-10-31T17:32:51.110589+00:00",
+  "elapsed_seconds": 377.833,
+  "transport_events_sha256": "fe838153626563936957f582a3e6c789d891c36be24f0eae702b2d866d5f123f",
+  "transport_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "read_ledger_sha256": "d8b0262b3b0db46acbaef03746f66ac65349501c090468459c04dd760ac753f1",
+  "coverage_verified": true
+}

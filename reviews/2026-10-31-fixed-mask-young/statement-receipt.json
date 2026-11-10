@@ -1,0 +1,190 @@
+{
+  "provider": "claude",
+  "started_utc": "2026-10-31T03:34:08.371366+00:00",
+  "workspace": "${HOME}/.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-statement-v1/workspace",
+  "source_revision": "2a46ec21b0cd19c53e4ff2a8adfe70ad280a7536",
+  "input_hashes": {
+    "notes/fixed-mask-moment-transfer.md": "e926091011af7e967fde95216a4f72dd878bad352069cc9a2530bace6e50294b",
+    "reviews/2026-10-31-fixed-mask-young/Friz-Hairer-custody.json": "4b268084486d5ae768a73a07f87401af2ac0d9989c199fde075c0965cca0126b",
+    "reviews/2026-10-31-fixed-mask-young/Friz-Hairer-selected.txt": "233025e3fb25e551f63a0a644326a946bd0f44283c71c21bc16f64380b9d5e1b",
+    "reviews/2026-10-31-fixed-mask-young/accepted-input-custody.json": "536779d77d73fe99c3958610a192e4e15b68940cf906f69032f904822540cefb",
+    "reviews/2026-10-31-fixed-mask-young/accepted-input-excerpts.txt": "0e11dab5c63a43018bca9fc3403a0b7f6edc68ce530692c186138c4fb804bb71",
+    "reviews/2026-10-31-fixed-mask-young/check-extension.py": "9cf4d31cca65697f245a47dc672f839a57165ada04620cf24562531c047b4359",
+    "reviews/2026-10-31-fixed-mask-young/extension-controls-v1.json": "0ea8760785aa67fd6844a9735290bff4e88a2f16e4ef5ae4ff13d0a8da35aa58",
+    "reviews/2026-10-31-fixed-mask-young/falsification-v1.md": "dc0a6ccbcea3af678a3f33b2a7589e151118f51a03d8f9e3d7837300c8f418d7",
+    "reviews/2026-10-31-fixed-mask-young/source-crosswalk-v1.md": "ceb6d181f0b786af040d612049e747a3c6428beda7308ca70408b540784712c8",
+    "reviews/2026-10-31-fixed-mask-young/source-first-order-witness.json": "9847781b10e0319b67a8dc93b2400bde34f453c0d1ec990e5bd762de09eedf55",
+    "reviews/2026-10-31-fixed-mask-young/target-v1.md": "2cd1183430580dccb7007fbb7897940825302f0b0409ce4e30cdd3df3163130c",
+    "reviews/2026-10-31-fixed-mask-young/worker-honesty-v1.md": "59afbad530cb7a5586bb60dc41d377d444c9061306f8140a5c763cedc014575d"
+  },
+  "target": "reviews/2026-10-31-fixed-mask-young/target-v1.md",
+  "claude_account": "<removed>",
+  "review_contract_sha256": "7ba22df899a1c857d4c63f52df448869864694ede93c60e8b5b5ac1ccb6ea3e6",
+  "effort_requested": "high",
+  "resumed_from": null,
+  "resume_mode": null,
+  "resume_binding": null,
+  "min_confidence": "high",
+  "scientific_verdict": "PASS_WITH_NOTES",
+  "accepted": true,
+  "report_contract_schema": "subscription-review-report/1",
+  "report_legacy_mode": null,
+  "legacy_resume_binding": null,
+  "diagnostics": [],
+  "required_sources_sha256": "6157265065e5cfae98ea6bf8ee792b906a6534531254831a98d299ae5e1eb471",
+  "required_sources_workspace_copy": ".review/required-sources.json",
+  "workspace_preflight": {
+    "schema": "le-ai-lab.review-workspace-preflight/1",
+    "scanned": "review contract (--prompt-file)",
+    "references": {},
+    "waived": [],
+    "missing": [],
+    "required_sources_copy": ".review/required-sources.json"
+  },
+  "runtime_preflight": {
+    "effective_version": "2.1.304",
+    "cli_version": "2.1.304 (Claude Code)",
+    "image_requirements": false,
+    "supported_versions": [
+      "2.1.299",
+      "2.1.300",
+      "2.1.301",
+      "2.1.302",
+      "2.1.303",
+      "2.1.304",
+      "2.1.314"
+    ],
+    "supported": true
+  },
+  "cli_version": "2.1.304 (Claude Code)",
+  "executable": "${HOME}/.local/state/Le-AI-Lab/swe-white-time-resume-20261024/runtime/node_modules/@anthropic-ai/claude-code-linux-x64/claude",
+  "executable_requested": null,
+  "executable_effective": {
+    "path": "${HOME}/.local/state/Le-AI-Lab/swe-white-time-resume-20261024/runtime/node_modules/@anthropic-ai/claude-code-linux-x64/claude",
+    "version": "2.1.304 (Claude Code)"
+  },
+  "read_ledger_format_supported": true,
+  "auth": {
+    "authMethod": "<removed>",
+    "apiProvider": "firstParty",
+    "subscriptionType": "<removed>",
+    "email": "<account email removed>"
+  },
+  "model_requested": "claude-opus-5-5",
+  "command_without_prompt": [
+    "${HOME}/.claude/bin/claude-acct",
+    "run",
+    "<account removed>",
+    "--print",
+    "--model",
+    "claude-opus-5-5",
+    "--effort",
+    "high",
+    "--disable-slash-commands",
+    "--strict-mcp-config",
+    "--mcp-config",
+    "{\"mcpServers\":{}}",
+    "--permission-mode",
+    "dontAsk",
+    "--permission-prompts",
+    "none",
+    "--output-format",
+    "stream-json",
+    "--verbose",
+    "--tools",
+    "Read,Grep,Glob",
+    "--allowedTools",
+    "Read,Grep,Glob",
+    "--agents",
+    "${HOME}/.local/state/Le-AI-Lab/stratonovich-fixed-mask-young-statement-v1/claude-reviewer.json",
+    "--agent",
+    "artifact-reviewer",
+    "<stdin: prompt.txt without its final newline>"
+  ],
+  "prompt_transport": "stdin",
+  "prompt_bytes": 6613,
+  "prompt_sha256": "447a80151a889ccdc09c57f259e6fe9637883c3bb003ffb8ad16ea5d839ec853",
+  "transport_exit_code": 0,
+  "transport_ok": true,
+  "model_actual": "claude-opus-5-5",
+  "session_id": "5c98b681-86e2-44ec-ba07-11382fc4d92d",
+  "usage": {
+    "input_tokens": 8,
+    "cache_creation_input_tokens": 75609,
+    "cache_read_input_tokens": 121073,
+    "output_tokens": 42269,
+    "output_tokens_details": {
+      "thinking_tokens": 34387
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 75609,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 40520,
+        "cache_read_input_tokens": 73223,
+        "cache_creation_input_tokens": 5590,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 5590
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "provider_error": false,
+  "terminal_subtype": "success",
+  "tools_actual": [
+    "Read",
+    "Grep",
+    "Glob"
+  ],
+  "actual_route_verified": true,
+  "candidate_hashes_unchanged": true,
+  "raw_report_sha256": "c30c1a57949c9fa4b064e02279effc859cac29bd467eff2a651ee9eb18c7e661",
+  "status": "review-complete",
+  "confidence": "high",
+  "report_interpretation": {
+    "contract_schema": "subscription-review-report/1",
+    "report_schema": "subscription-review-report/1",
+    "legacy_mode": null,
+    "normalized_verdict": "PASS_WITH_NOTES",
+    "normalized_confidence": "high",
+    "normalized_check_verdicts": [
+      "PASS",
+      "PASS_WITH_NOTES",
+      "PASS",
+      "PASS_WITH_NOTES",
+      "PASS",
+      "PASS_WITH_NOTES",
+      "PASS_WITH_NOTES",
+      "PASS",
+      "PASS",
+      "PASS_WITH_NOTES",
+      "PASS",
+      "PASS_WITH_NOTES",
+      "PASS_WITH_NOTES",
+      "PASS_WITH_NOTES",
+      "PASS_WITH_NOTES"
+    ]
+  },
+  "report_sha256": "309502786547a423ed5ad951d963c208189de9d9405570439c7dcd4e3d2792bc",
+  "report_text_format": "bare",
+  "report_body_sha256": "c30c1a57949c9fa4b064e02279effc859cac29bd467eff2a651ee9eb18c7e661",
+  "finished_utc": "2026-10-31T03:41:02.417680+00:00",
+  "elapsed_seconds": 414.046,
+  "transport_events_sha256": "6ede2ce343840e06fc7cdbff77ecc5696cc316d0c0aaa456c076b047f7f9e11c",
+  "transport_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "read_ledger_sha256": "b2e87044953ba303b7ae8a04bc29c5640d7b64d7cf0b844bc449a427ae3edef5",
+  "coverage_verified": true
+}

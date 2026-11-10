@@ -1,0 +1,18 @@
+# Capacity and scope notes for root inspection
+
+The proposal is preparation only: no provider/effective-agent preflight, native invocation, seal, configuration installation, Article/ref mutation or clone. The frozen raw local packet was read only and remains unchanged. Root chooses any future route only after the current local units are adjudicated.
+
+Exact current input:
+
+- Science8ce03ae09cca984b32aaddf3da0a6ded07f47ebc; all28Git TeX bytes preserved.
+- All214 own statement/proof bindings and all240 formal statement bodies mechanically rebound. All own source bodies, including088/091/108/110/125/126, are inline; no source body was shortened.
+- All214neutral owner/body/statement locators and240statement locators/hashes are inline in compact tables. The redundant full neutral JSON is retained for root outside the prompt.
+- All1423explicit source references are retained, grouped into1324edges with all occurrence lines. This includes1180owner statement/proof occurrences and243outside-owner context occurrences. Closing/local/conclusion/section/negative contexts are distinguished; semantic validity and uncited application/cycle edges still require the actual whole review. Exact source context and all label ownership are retained in supervisor-only records.
+- All77citation-use occurrences are mapped to held source contexts. Whole author64page text is inline. Exact Chen–Hu physical1–10,22,30–37 and Chen2023physical1–3 cover the actual model/standinghypotheses/definitions/named statements and quoted normalizations. All retained Crouzeix/Balan–Conus/Teschl/Friz bodies are inline; v1's different firstmean excerpt is comparison-only. Full held edition/text/PDF inventory and byte/page provenance remain outside the prompt. No whole external-book proof or image coverage is claimed.
+- All14useful mathematical supplement payloads are inline: complete variance/operator/support/dyadic; majorant/Riesz/Abel; white27domains/28pieces plus every45directsector case; three Young units; raw scaling/block/cone/restart and point rate; spatial136137; static/planar; masked; compact ground/fullF. Historical introductions/dispositions and local-assignment exemptions were stripped, without changing mathematical formulas or model assumptions. These are author claims to check, not prior acceptance evidence.
+
+Actual final planning budget is1,039,383tokens =ceil(1,751,086promptcharacters/2)+131,072output+32,768system, below1,048,576 by9,193tokens. Exact tokenizer is unavailable; this is the requested conservative planning formula, not effective native capacity certification. Prompt bytes are1,780,379. Repeating the omitted full external-primary bodies with otherwise equivalent final framing would add about135,384planningtokens and exceed context. The explicit source selections remove redundant external-proof pages rather than own proofs or actual imported hypothesis contexts.
+
+The selected profile has no known source-use or input-capacity gap under that planning formula. This is not a promise that one generation will finish214substantive checks within the output cap. The future report must honestly expose LIMITED/FLAW/NOT_READ own work or source ambiguities; a complete header/count/stop is insufficient, and a whole pass may not conceal a critical own gap. No automatic retry or continuation is proposed. Root should inspect the small planning margin and exact primary uses before choosing a future route.
+
+This instructed whole MAIN is not a cold read. Zero source-image/manuscript-render/Kimi/other-family/final-cold/projectcompletion credit is supplied. Imported external statements may stay named after actual hypotheses/use/fidelity checking; this does not exempt any of the214own deductions from reconstruction.

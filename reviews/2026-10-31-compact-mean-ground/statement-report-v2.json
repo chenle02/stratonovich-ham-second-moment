@@ -1,0 +1,101 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "reviews/2026-10-31-compact-mean-ground/target-v2.md lines 1-142 (complete, whole-file read)",
+    "reviews/2026-10-31-compact-mean-ground/scope-positive-family-v2.md lines 1-35 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/worker-honesty-v2.md lines 1-32 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/target-v1.md lines 1-152 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/falsification-v1.md lines 1-47 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/source-crosswalk-v1.md lines 1-41 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/worker-honesty-v1.md lines 1-30 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/check-constant-projection.py lines 1-55 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/constant-projection-v0.json lines 1-305 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/check-actual-trial.py lines 1-36 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/actual-trial-v0.json lines 1-72 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/check-fixed-profile-trial.py lines 1-35 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/fixed-profile-trial-v0.json lines 1-117 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/fixed-profile-binding-target-v0.md lines 1-46 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/old-global-E-method.txt lines 1-121 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/old-global-E-custody.json lines 1-11 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/original-model.txt lines 1-31 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/original-model-custody.json lines 1-8 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/primary-source-custody-v1.json lines 1-23 (complete)",
+    "notes/fixed-mask-young-constant-phase.md lines 1-433 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/statement-adjudication-v1.md lines 1-34 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/statement-report-v1.json lines 1-113 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/statement-receipt-v1.json lines 1-193 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/old-positive-family-inputs.txt lines 1-186 (complete; the excerpt shows original lines 1-164 and 348-368, matching its custody ranges)",
+    "reviews/2026-10-31-compact-mean-ground/old-positive-family-custody.json lines 1-15 (complete)",
+    "reviews/2026-10-31-compact-mean-ground/pages/teschl2014-title.png (full image viewed)",
+    "reviews/2026-10-31-compact-mean-ground/pages/teschl2014-copyright.png (full image viewed)",
+    "reviews/2026-10-31-compact-mean-ground/pages/teschl2014-p140.png (full image viewed)",
+    "reviews/2026-10-31-compact-mean-ground/pages/teschl2014-p141.png (full image viewed)",
+    "reviews/2026-10-31-compact-mean-ground/pages/teschl2014-p258.png (full image viewed)",
+    "reviews/2026-10-31-compact-mean-ground/pages/teschl2014-p273.png (full image viewed)"
+  ],
+  "checks": [
+    {
+      "claim": "C1: F1 sets up a well-formed compact indexed family with a common unit trial and a uniform epsilon. Sigma is an index, not physical time. F = E + R^2 and the frozen-coefficient flow P_sigma(t) are the actual ones. The Teschl 2014 second-edition imports (10.2 p258, conditional 10.13 p273, 4.12/4.13 pp140-141 with the H1 form domain) are scoped correctly. No all-strength binding of a fixed d3 potential is claimed.",
+      "verdict": "PASS",
+      "reason": "The title page reads SECOND EDITION, GSM 157. The copyright page shows ISBN 978-1-4704-1704-8 and (c) 2009, 2014. Thm 10.2 (p258) covers real V in L^inf_inf + L^2 for n<=3; V=-V_sigma is bounded with compact support, so H_sigma is self-adjoint on H2, bounded below, sigma_ess=[0,inf), and C_c^inf is a core. Thm 10.13 (p273) is explicitly conditional ('If E0=min sigma(H) is an eigenvalue'), as the target says. p141 has Thm 4.12 with the remark that the quadratic form domain may replace D(A), and Cor 4.13 (A>=B implies E_n(A)>=E_n(B)). The frozen flow is the Section 7 deterministic base of the fixed-mask note with h(r)=V_sigma, which is admissible because V_sigma is in C_c^inf(K_x), and g=0. Its B(h)(e,c)=(0,h(e1+c1)) splits into the E-part plus D_sigma c=(0,V_sigma c1). M<inf follows from continuity on the compact I. F1 and the Boundaries state that sigma is an index and that no fixed-potential all-strength binding is asserted."
+    },
+    {
+      "claim": "C2: F2 claims uniform existence of an isolated simple a.e.-positive ground state, E2 with threshold 0, -M<=E1<E2<=0, energy-Lipschitz bounds in ||V-V'||_inf, L2/H2 continuity of p_sigma, a gap Delta>0, sqrt(eps)<=lambda<=sqrt(M), d0>0, and the global-E complementary bound C(1+t)e^{mu t}. Only the growing branch is removed, mu=0 is handled, and no p in L1, tail estimate or d1 ODE is assumed.",
+      "verdict": "PASS",
+      "reason": "The trial gives <w,H_sigma w> <= -eps < 0 = inf sigma_ess, so E1 is a discrete eigenvalue. 10.13 then gives simplicity and a.e.-positivity. Since V_sigma >= 0, H_sigma >= -M. Simplicity makes E2 either a strictly larger eigenvalue or the threshold 0 > E1. The bound -||V_s-V_t||_inf <= H_s - H_t <= ||V_s-V_t||_inf, combined with Cor 4.13 applied to constant shifts, gives the Lipschitz energy bound for j=1,2 using threshold-0 levels. This is Lipschitz in ||V-V'||_inf, not automatically in sigma, and the target says so. Continuity of V_sigma in L^inf makes E2-E1 continuous and positive on the compact I, so Delta>0. Then d0 >= Delta/(2 sqrt M). L2 continuity follows from norm-continuity of the Riesz projection, with the sign fixed by <p_s,p_t> > 0. H2 continuity follows from Delta p = -(E1+V)p. The global-E bound follows the old d1 method, which is dimension-free. Set A=H_sigma+1+M and B=1-Delta. Then B<=A<=(1+M)B, and the resolvent square-root comparison applies. Scalar wave entries on [-mu^2,inf) with S_t(0)=t cover mu=0. The decaying branch (p,-lambda p) evolves by e^{-lambda t}. ell^E is (1,0) on the two branches, and the pairing of p with H^{-1/2} is legitimate since p is in H2. Constants depend only on M, eps and Delta. The target labels the old note as a method comparator to be re-proved and the R^d deductions as obligations."
+    },
+    {
+      "claim": "C3: F3 claims block flow with D_sigma c=(0,V_sigma c1) and constant forcing f=int V p/(2 lambda) > 0. The functional ell = ell^E + f(c1/lambda + c2/lambda^2) gives ell(e)=1, a rank-one projection, two-sided commutation e^{lambda t}, continuity, uniform positive entrance at e0 and O_phi positivity. The full-F complement is bounded by C(1+t)^3 e^{mu t}, with an eta<d0 normalized bound. There is a finite-T0 parameter bound in ||.||_inf + ||.||_2.",
+      "verdict": "PASS",
+      "reason": "Hand computation with ell^E P^E(s)=e^{lambda s} ell^E and ell^E(D c)=f c1 gives ell(P(t)(0,c)) = f[c1(e^{lt}-1)/l + c2(e^{lt}-1-lt)/l^2 + (c1+tc2)/l + c2/l^2] = e^{lt} f(c1/l + c2/l^2). Also ell(e_sigma) = (1+lambda/lambda)/2 = 1. f>0 because the trial forces V_sigma nonzero, V_sigma>=0 is continuous, and p>0 a.e. V p is in L1 from compact support and p in L2, so no p in L1 is needed. ell(e0)=f/lambda, and O_phi(e_sigma)=<p,phi> > 0. Both are continuous on I, so their infima are positive. For the complement: Q(ie)=iQ^E e. On constants, the Pi^E-forcing response minus e^{lt}ell(0,c)e equals -f((c1+tc2)/l + c2/l^2)e^E, which is polynomial. The Q^E-forcing part is <= int C(1+t-r)e^{mu(t-r)}||V||_2(1+r)|c| dr <= C(1+t)^3 e^{mu t}. Then (1+t)^3 e^{-(l-mu)t} <= C_eta e^{-eta t} for eta<d0. Duhamel with ||B(V)||_{F->E} <= ||V||_inf + ||V||_2 (note eq. (4)) and uniform finite-horizon bounds give the T0 parameter estimate. This is correctly stated as parameter continuity, not time-norm continuity. The 36 exact finite cases reproduce entrance beta/(2 lambda^2) and wrong-projection defect beta/(2 lambda) (e.g. lambda=2, beta=1 gives 1/8 and 1/4)."
+    },
+    {
+      "claim": "C4: F4 retains the entire original positive class. Psi is any nonnegative nonzero C_c^inf((0,1)xR^d) function, not a product. The full H:homog ranges are kept. h_sigma is the actual raw linear CM mean, q_avg is nonzero C_c^inf, and 0<Q(q_avg)<=v_Psi<inf. h_sigma >= Gamma*q_avg holds for every sigma in [0,1]. The masked family is smooth and Lipschitz via zero extension, with the mask applied after convolution.",
+      "verdict": "PASS",
+      "reason": "The ranges (d=1,2,3; a in (0,1); 0<alpha<d or alpha=d=1; alpha+a<2) match the original H:homog excerpt (lines 135-154), with a=alpha_0. h_sigma is E[W-dot(sigma,x)Z] for Cov=|s-t|^{-a}gamma(x-y). It is identical to the old consumer's (1), and q_avg and Z=W(Psi) are defined as in the old excerpt. Since |sigma-u|<=1 on [0,1]^2 and a>0, |sigma-u|^{-a}>=1, so positive Tonelli gives h_sigma >= Gamma*q_avg at the endpoints too. Integrating Psi against this gives v_Psi = int int Psi h >= int q_avg(Gamma*q_avg) = Q(q_avg). Positivity: Gamma nonzero charges some B_r, and Gamma(B_r)=r^{d-alpha}Gamma(B_1), so every ball about 0 is charged. Together with int q_avg^2>0 and continuity of q_avg*q_avg~ this gives Q>0. Finiteness follows from local finiteness. Smoothness: extend G(u,x)=(Gamma*Psi(u,.))(x) by zero in u; this is smooth because supp_t Psi is compact in (0,1). Then h_sigma = int|v|^{-a}G(sigma-v,x)dv, so sigma-derivatives fall on G, never on |.|^{-a}. This gives smoothness and Lipschitz continuity into C^k(B_{2R}). Nonzero-ness of m_R h_sigma needs R large (Gamma*q_avg>0 near supp q_avg), and the target says 'sufficiently large'."
+    },
+    {
+      "claim": "C5: A common negative trial for all sigma, with Psi, Z and v_Psi fixed: Gamma(B1)>0, a plateau psi on B2 with psi>=c0 on B1, L>=2A, R>=2L, C_G=c0^2 2^{alpha-d}Gamma(B1)int q_avg, and L^{-alpha} beating L^{-2} because alpha<2. Psi is not altered and no masked-covariance optimization is used.",
+      "verdict": "PASS",
+      "reason": "supp psi_L is in B_{2L} and m_R=1 there, so int V_sigma psi_L^2 >= c0^2 L^{-d} int_{B_L} Gamma*q_avg = c0^2 L^{-d} int q_avg(y)Gamma(B_L - y)dy. For |y|<=A<=L/2, B_{L/2} lies inside B_L - y, and Gamma(B_{L/2}) = (L/2)^{d-alpha}Gamma(B1). This gives exactly C_G L^{-alpha}, for every sigma, via h_sigma >= Gamma*q_avg. The kinetic term is Dpsi L^{-2}, ||psi_L||_2=1, and alpha < 2-a < 2, so eps = C_G L^{-alpha} - Dpsi L^{-2} > 0 for one fixed large L. R is then fixed. This holds in the singular invariant-direction cases and at the white endpoint (Gamma=c delta_0, alpha=1, Gamma(B1)=c>0). Only the trial and mask widen. Enlarging R to cover extra compact test supports preserves int V_sigma g^2 = int h_sigma g^2. F4 states R is fixed before asymptotics and disclaims shifted-flow, Girsanov and event identities."
+    },
+    {
+      "claim": "C6: Is the compact-family strengthening sufficient to keep the full positive class in the old d1 indexed-cone method? Would the deterministic cone hypotheses match, without pretending to verify random errors or raw shift/event/cost?",
+      "verdict": "PASS",
+      "reason": "The old consumer's deterministic inputs (excerpt lines 31-48, 73-95) are: (2) ell(e)=1, P Pi = Pi P = e^{lambda t}Pi, and a uniform ||e^{-lambda t}P Q|| <= C_R e^{-eta t}; continuity and boundedness of e, ell, Pi in F, F*, B(F); lambda Lipschitz and bounded with lambda>=l>0; a_*=inf ell(e0)>0; j_*=inf J(e_sigma)>0. F3 supplies all of these on the new F, with J replaced by O_phi and J(e_sigma)=<p,phi>. F4 supplies lambda Lipschitz for the actual family. The cone's choices of theta, B, nu, omega and epsilon_op use exactly these constants. Premise (4) (random D_m close to P_sigma) and Section 3 are outside the target, and v2 Boundaries and scope lines 31-35 keep random block errors, growing products and same-Z event/cost as open gates. The old d1 uniformly-local and spectral results are explicitly not promoted. No covariance-phase ordering or scalar moment product appears."
+    },
+    {
+      "claim": "C7: All seven v1 notes are acknowledged and the scope audit is honest. The old scalar PASS is kept as a statement gate, not a long proof. 4.13 is now included and the notation is fixed. The counts 432 differential + 108 initial are correct. The product bump has a positive lower bound only on B_{1/2}, so it is an example, not a plateau-bound certificate. 36 exact models. The d3 trials are working-precision consistency only. Custody, old-method-versus-import distinction, no full book, no novelty or source fix.",
+      "verdict": "PASS",
+      "reason": "Verified from the script. There are 36 = 3x2x2x3 cases. The derivative assertion runs 36x4x3 = 432 times, and the t=0 initial identity runs 36x3 = 108 times. The t=0 residual -v(c1/l + c2/l^2) equals -(ell4 c1 + ell5 c2), since ell4=beta/(2l^2) and ell5=beta/(2l^3). The fixed-profile script keeps q=g0^2 and b=0.1. Its potential (1/L)int phi^2 phi(x/L)^2 is correct for delta_x1 x Leb^2 (d-alpha=2, so alpha=1; a=0.5). The kinetic term uses h'^2 = 4x^2/(1-x^2)^4 h^2. The sign change between L=64 and L=256 is consistent with L^{-2} versus L^{-1}. g0 vanishes as |x_j|->1, so it has no c0 on all of B1 but is bounded below on B_{1/2}, as v2 states. v2 uses sqrt(M) for the upper rate and L only for the trial scale, and cites 4.13. The old global-E and positive-family excerpts carry custody hashes and ranges and are labelled method/class comparators. The images match the custody list. The crosswalk makes no full-book, novelty or source-energy claim."
+    },
+    {
+      "claim": "C8: The original full goal is ACTIVE; work is local and isolated with the network pending and no fresh remote parity or integration; there is no new Lean, companion, HPC, contact, Skorohod, TeX, PDF, wiki, publication, lower asymptotic, sharp upper, source constant or goal-completion claim.",
+      "verdict": "PASS",
+      "reason": "The target-v2 Boundaries (lines 134-142), scope-v2 and worker-honesty-v2 (lines 27-32) state all of these disclaimers consistently. They keep sharp upper, source normalization and exact limit open, and they keep the original goal ACTIVE. The cited v1 receipt facts (12 checks, 218.396 s, PASS_WITH_NOTES/high, no repairs) match statement-receipt-v1.json and statement-report-v1.json. Claims about remote reachability and git state cannot be verified inside the packet but are framed only as limitations, not as achievements."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "F4, lines 111-115: the claim that the actual family and 'its lambda_sigma are Lipschitz' comes before the clause 'for sufficiently large but FINITE R it satisfies the COMMON negative-trial hypothesis'. lambda_sigma is only defined, and sqrt(-E1) is only Lipschitz, once E1 <= -eps < 0, i.e. once R and L are chosen so the trial holds. The proof should state lambda-Lipschitz after fixing that R.",
+      "F4 names v_Psi but does not display its formula. The proof should state v_Psi = int_0^1 int Psi(sigma,x)h_sigma(x)dx dsigma (old consumer (25)) and justify finiteness on R^d. h_sigma may not decay along invariant directions, so local finiteness plus the translation-boundedness of the positive-definite Gamma (or the compactness of Psi) must be cited explicitly.",
+      "R depends on Psi through A, q_avg and C_G, and is chosen per fixed test. Any downstream supremum over dilated tests (old consumer (26)) must take the per-test mask before the sup, or handle the order of limits. That is a downstream gate, not a statement defect.",
+      "F3 asserts that e_sigma, ell_sigma and Pi_sigma are continuous for a general continuous family. The cone method additionally imports lambda Lipschitz. For general merely-continuous families F1-F3 supply only continuity, so the proof should record that the cone application uses the F4 actual family, where Lipschitz holds.",
+      "The scalar-case remark 'V_sigma=b(sigma)U' implicitly needs b continuous with b >= b0 and the v1 trial. This is trivial but should be stated if the special case is cited.",
+      "Teschl's 'strictly positive' in 10.13 means positive a.e. in the proof context. The target already uses a.e. positivity in integrals only; keep it that way in the proof."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is a statement, feasibility and source-scope gate only. It is not a proof certificate, a human verification or a novelty audit. F1-F4 still require written proofs and a full review.",
+    "Scripts were audited by reading and hand formulas only; they were not re-executed, and no hashes were recomputed. Agreement at 35/60 working digits is not a certified error bound.",
+    "Only the six Teschl pages were viewed. Internal lemmas referenced there (7.19, 7.21, 6.31, 6.36, 7.48-7.50) were not audited.",
+    "The old positive consumer was supplied only as lines 1-164 and 348-368. Its Section 3 discharge of the random premise (4), joint-gaussian-tilt.md and the cone Lean lemmas are not in the packet, so random error and event compatibility were not checked, consistent with the target's scope.",
+    "Source revision 715b6b2, adoption 5969da5, <HUB> reachability and git parity are not verifiable from a non-git frozen packet.",
+    "Translation-boundedness of positive-definite Radon measures (used to bound unmasked Gamma*Psi) is standard background knowledge, not a packet source."
+  ]
+}

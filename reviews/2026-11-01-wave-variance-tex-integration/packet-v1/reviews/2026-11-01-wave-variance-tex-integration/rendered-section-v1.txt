@@ -1,0 +1,462 @@
+The changes in h(r ± ρ) have magnitude at most two, since h ≤ 1. Because a − 1 < 0,
+each altered bracket to the power a − 1 is at most 31−a times the original one. Apply
+these comparisons, Hilbert Jensen and the squared scalar coefficient bound four to obtain
+(16.12). This proves Lemma 16.8.
+    These estimates concern covariance forms and temporal factors. Identifying their
+actual two-phase wave application, both operator variance directions, source convergence
+and the solution-moment asymptotics remains part of the later integration work. None
+is established in this section or inferred from covariance domination alone.
+
+
+17     Frequency estimates and both wave variance di-
+       rections
+We now apply the covariance and temporal estimates of Section 16 to the full wave
+phase. We retain Hypothesis 1.1, write a = α0 , and choose and fix
+                                          (︃         )︃
+                                             1 2−α
+                             0 < γ < min       ,        .                   (17.1)
+                                             2    2
+                                                            √︁
+The interval is nonempty because α + a < 2. We use ⟨ξ⟩ = 1 + |ξ|2 and set
+                           ⎧
+                           ⎨1,
+                           ⎪                 α < 1,
+                   Bα (h) = 1 + log(1/h), α = 1,          0 < h ≤ 1.        (17.2)
+                           ⎪
+                           ⎩ 1−α
+                             h ,             α > 1,
+
+17.1     A scalar row estimate for a measure
+Let ν be a positive Radon measure satisfying
+                         ν(B(y, r)) ≤ Crα ,        y ∈ Rd ,   r > 0,                (17.3)
+where C ≥ 0. If the estimate is initially known for open balls, apply it at radius r +ϵ and
+let ϵ ↓ 0 to obtain the closed-ball estimate. Neither evenness nor a density is assumed
+here. Using (16.11), define
+                                     Qh (|ξ|, |η|)
+                         Φh (ξ, η) :=              ,                                (17.4)
+                                        ⟨ξ⟩⟨η⟩
+                                           ∫︂
+                           Jh (ξ) := ⟨ξ⟩2γ      Φh (ξ, ξ − λ)ν( dλ).                (17.5)
+                                              Rd
+
+These are initially nonnegative extended integrals. In particular, the notation denotes
+a pushforward of ν, not integration against an assumed spectral density.
+Proposition 17.1 (Uniform scalar row). There is a finite K = K(α, a, γ), independent
+of d, ν, C, h and ξ, such that
+                         sup Jh (ξ) ≤ KCBα (h),         0 < h ≤ 1.                  (17.6)
+                         ξ∈Rd
+
+
+                                            116
+Proof. If C = 0, a countable covering by finite balls gives ν = 0, and the result is
+immediate. Suppose C > 0. For each ξ, let νξ be the pushforward under λ ↦→ η = ξ − λ.
+Then νξ (B(0, R)) ≤ CRα . For q ≥ 1, put
+                                      ∫︂
+                             Aξ (q) =      ⟨η⟩−1 νξ ( dη).
+                                             |η|≤5q
+
+Choose N = ⌈log2 (5q)⌉, so 5q ≤ 2N < 10q. Splitting into the unit ball and the annuli
+2j < |η| ≤ 2j+1 gives               (︄        −1
+                                            N
+                                                        )︄
+                                            ∑︂
+                          Aξ (q) ≤ C 1 + 2α      2j(α−1) .
+                                                         j=0
+
+The geometric sum is bounded when α < 1, is N when α = 1, and is at most
+2N (α−1) /(2α−1 − 1) when α > 1. Hence,
+                                        ⎧
+                                        ⎨1,
+                                        ⎪           α < 1,
+                           Aξ (q) ≤ Kα C 1 + log q, α = 1,         (17.7)
+                                        ⎪
+                                        ⎩ α−1
+                                          q ,       α > 1,
+with a constant depending only on α.
+    Set q = max(1, |ξ|) and ϵ = 1 − 2γ > 0. On |λ| ≤ 4q we have |η| ≤ 5q. Both bracket
+powers in Qh are at most one, since a − 1 < 0. The contribution of this region to Jh (ξ)
+is at most
+                                2⟨ξ⟩−ϵ Aξ (q) ≤ 2q −ϵ Aξ (q).
+If α < 1, this is uniformly bounded by (17.7). If α = 1, the bound follows from
+                                                  1
+                       e−ϵu (1 + u) ≤ 1 +            ,         u = log q ≥ 0,
+                                                  eϵ
+since ue−ϵu has maximum 1/(eϵ). If α > 1, the remaining power is q α+2γ−2 , whose
+exponent is negative by (17.1). Thus, the near contribution is at most a constant times
+C in all three cases.
+    On the far region write r = |λ| > 4q. Then
+                            3r        ⃓|η| − |ξ|⃓ ≥ r ,
+                                      ⃓         ⃓                             r
+                    |η| ≥      ,                                   |η| + |ξ| ≥ .
+                            4                       2                         2
+Each oscillatory bracket is at least ⟨hr⟩/2, whereas ⟨η⟩−1 ≤ 4/(3r) and ⟨ξ⟩−ϵ ≤ 1.
+Consequently, the far contribution is at most
+                                 ∫︂
+                           4 2−a
+                             2            |λ|−1 ⟨h|λ|⟩a−1 ν( dλ).
+                           3       |λ|>4q
+
+Enlarge the domain to |λ| > 1 and split it into dyadic annuli. Applying (17.3) to their
+masses bounds this expression by a constant depending only on α, a times CS(h), where
+                                             ∞
+                                            ∑︂
+                                   S(h) =         2j(α−1) ⟨h2j ⟩a−1 .
+                                            j=0
+
+
+                                                  117
+Choose L = ⌊log2 (1/h)⌋ ≥ 0. For j ≤ L the bracket power is at most one. For j ≥ L + 1
+it is at most (h2j )a−1 . Since α + a − 2 < 0, the tail is
+
+                             ha−1 2(L+1)(α+a−2)      h1−α
+                                                ≤            .
+                                1 − 2α+a−2        1 − 2α+a−2
+The inequality uses 2L+1 > 1/h and the negative exponent. The finite sum is bounded
+by 1/(1 − 2α−1 ) for α < 1, by 1 + log2 (1/h) for α = 1, and by
+
+                                         2α−1 h1−α
+                                         2α−1 − 1
+for α > 1. Since h1−α ≤ 1 in the first case, we obtain S(h) ≤ Kα,a Bα (h). Combining
+the near and far bounds, and using Bα (h) ≥ 1, proves the assertion and finiteness of the
+original integral. All constants arose from numerical shell estimates and are independent
+of d. This proves Proposition 17.1.
+
+Corollary 17.2 (A time exponent above one half). For every
+                                   (︃                 )︃
+                        1                a 3−a−α
+                          < β < min 1 − ,                ,                         (17.8)
+                        2                2       2
+
+there is a finite Kβ = Kβ (α, a, γ, β) such that
+
+                        h2−a sup Jh (ξ) ≤ Kβ Ch2β ,    0 < h ≤ 1.                  (17.9)
+                              ξ
+
+
+Proof. Both upper endpoints in (17.8) exceed one half, by a < 1 and α + a < 2. If
+α < 1, use 2 − a > 2β in Proposition 17.1. If α > 1, use 3 − a − α > 2β. For α = 1, set
+δ = 2 − a − 2β > 0 and u = log(1/h). Then
+                                                                 1
+                        hδ (1 + log(1/h)) = e−δu (1 + u) ≤ 1 +      .
+                                                                 eδ
+This absorbs the critical logarithm. No endpoint value of β is used. This proves Corol-
+lary 17.2.
+
+17.2     Actual forms on the full phase
+Choose and fix T > 0. Set Λ = (1 − ∆)1/2 , s = 1/2 and Er = H r (Rd ) × H r−1 (Rd ). On
+the complexification of E = Es , use inner products linear in the first slot. The map
+
+                          Jz(ξ) = ⟨ξ⟩1/2 zˆ︁1 (ξ), ⟨ξ⟩−1/2 zˆ︁2 (ξ)
+                                    (︁                              )︁
+
+
+is unitary onto L2 (Rd ; C2 ). The full massless wave group has Fourier matrix
+                                    (︃                             )︃
+                                        cos(t|ξ|)    sin(t|ξ|)/|ξ|
+                          S(t, ξ) =                                   ,          (17.10)
+                                      −|ξ| sin(t|ξ|)   cos(t|ξ|)
+
+                                            118
+where the sine quotient is t at zero. Let B(b)(u, v) = (0, bu). Choose and fix a real even
+nonnegative ζ ∈ Cc∞ (Rd ) equal to one on B1 and zero off B2 , and put ζR (x) = ζ(x/R)
+for R > 0. For I = [t0 , t0 + h] ⊂ [0, T ], 0 < h ≤ 1, and Schwartz phases z, w, put
+
+             vz (t) = [S(t)z]1 ,                                                        (17.11)
+                        sin(t|D|)
+            Gw (t) = −            Λw1 + cos(t|D|)Λ−1 w2 ,                               (17.12)
+                           |D|
+        Fz,w (t, x) = 1I (t)vz (t, x)Gw (t, x),         ℓR (I; z, w) = WC (ζR Fz,w ),   (17.13)
+
+where WC (F ) = W (Re F ) + iW (Im F ). There is no observation cutoff in this definition.
+   We first assume Γ ̸= 0. If Γ = 0, all actual forms and the column maps below are
+zero, so their bounds hold directly. For the nonzero case, let νR be (16.4) and set
+
+                                Lζ = ∥ζ∥
+                                      ˆ︁ 1 ,        Cν = c2d L2ζ CΓ .                   (17.14)
+
+Proposition 16.2 gives a positive even tempered Radon measure with νR (B(y, r)) ≤ Cν rα ,
+uniformly in R.
+Proposition 17.3 (Actual form and phase kernel). The tests ζR Fz,w in (17.13) belong
+to the original noise completion. The form ℓR is linear in z and conjugate linear in
+w, and uses the same W as the model. For a smooth deterministic coefficient b with
+common compact spatial support and bounded spatial derivatives on [0, T ],
+                                          ∫︂
+                ⟨S(−t)B(b(t))S(t)z, w⟩E = b(t, x)vz (t, x)Gw (t, x) dx.      (17.15)
+
+For a real compact smooth χ, multiplication Dχ on both phase entries has adjoint
+
+                          Dχ∗,E w = Λ−1 χΛw1 , ΛχΛ−1 w2 .
+                                    (︁                  )︁
+                                                                               (17.16)
+
+With U = Jz, V = Jw, r = |ξ|, ρ = |η| and the continuous functions cr , br of
+Lemma 16.8, set                       (︃              )︃
+                                 1      −br cρ −br bρ
+                 K(t; ξ, η) = √︁                         (t).       (17.17)
+                                ⟨ξ⟩⟨η⟩ cr cρ   c r bρ
+Then
+                    ∫︂ ⃦                                              ⃦2
+                            2
+                       ⃦∫︂ ∑︂                                         ⃦
+                  2
+   E|ℓR (I; z, w)| ≤ ⃦        1I Kij (·; η + λ, η)Uj (η)Vi (η + λ) dη ⃦ νR ( dλ).       (17.18)
+                       ⃦                                              ⃦
+                       ⃦                                              ⃦
+                              i,j=1                                           HaC
+
+Proof. The wave multipliers are smooth at zero through the continuous sine quotient,
+with polynomially bounded frequency derivatives on finite time intervals. Bessel mul-
+tipliers preserve Schwartz space. Thus, vz , Gw and their product are continuous in all
+Schwartz seminorms on [0, T ]. For tests supported in a fixed compact K, the absolute
+spatial pairing is bounded by
+
+                              |K|Γ(K − K)∥F (t)∥∞ ∥H(u)∥∞ .
+
+                                                  119
+                                         ∫︁       ∫︁
+Indeed, only y ∈ K − K contributes to Γ( dy) F (t, x)H(u, x − y) dx. Combine this
+with the temporal Schur bound and approximate the interval indicator and the contin-
+uous time dependence by smooth interior temporal tests, keeping the spatial support
+of ζR . This admits the masked product in the original completion in every allowed
+dimension.
+    We also identify its auxiliary and spectral limits. Approximate a Schwartz-valued
+function on I by time partitions with frozen spatial values, and then replace the finitely
+many indicators by compact smooth temporal functions. A diagonal sequence Fn of finite
+temporal tensors converges in L2 time in every Schwartz seminorm. Fourier integration
+by parts and the spatial weighted supremum bounds give, for sufficiently large fixed N ,
+                                                      −N
+                       ∥Fˆ︂
+                         n − F (ξ)∥L2 (0,T ) ≤ ϵn ⟨ξ⟩    ,        ϵn → 0.
+Choose N so that the square weight is integrable against both tempered measures µ
+and νR . Lemma 16.3 gives convergence in their spectral Ha norms. Multiplication
+by the fixed ζR preserves these L2 Schwartz-seminorm limits, so the masked differences
+converge in the µ spectral norm too. The preceding compact-support estimate also gives
+convergence in the actual raw completion. Hence, the auxiliary extension and original-
+noise limit agree on these products. Constants for this admission argument may depend
+on R; they are not the uniform variance constants below.
+   For real tensor tests f, g, the Hermitian symmetry of their spatial transforms gives
+                        A(−ξ) = A(ξ),           A(ξ) = ⟨fˆ︁(ξ), g(ξ)⟩
+                                                                ˆ︁    HaC .
+
+Integration against either even µ or even νR cancels the imaginary mixed term. Ex-
+panding the squared norm of fˆ︁ + iˆ︁g, then using the preceding approximation, extends
+Proposition 16.4 to the present complex tests:
+                           ∫︂                               ∫︂
+                 2       d              2                 d
+    E|WC (ζR F )| = (2π)      ∥ζR F (ξ)∥HaC µ( dξ) ≤ (2π)
+                               ˆ︃                              ∥Fˆ︁(λ)∥2HaC νR ( dλ). (17.19)
+
+This is a bound for the actual masked noise, not a declaration that its law is stationary.
+Complex linearity of WC and linearity of vz , Gw prove the stated sesquilinearity.
+    Smooth multiplication is bounded on each Sobolev space: Fourier convolution, the
+inequality ⟨ξ⟩r ⟨η⟩−r ≤ 2|r|/2 ⟨ξ − η⟩|r| and weighted Schwartz decay reduce this to the
+L1 ∗ L2 bound. The free matrix is strongly continuous and bounded on E on compact
+time intervals, directly by its weighted Fourier entries. Thus, the ordinary first-response
+integral exists on states. Since S(−t)(0, f ) = (− sin(t|D|)f /|D|, cos(t|D|)f ), moving
+the real self-adjoint multipliers and the two Sobolev weights onto w proves (17.15).
+The same weighted duality gives (17.16). Inserting this adjoint in Gw is the correctly
+observed form; Dχ need not be self-adjoint on E. This deterministic identity does not
+identify a positive-width source with the raw noise or assert a source limit.
+    The definitions give exactly
+                        vˆ︁z (t, η) = ⟨η⟩−1/2 [cρ (t)U1 (η) + bρ (t)U2 (η)],
+                       ˆ︁w (t, ξ) = ⟨ξ⟩−1/2 [−br (t)V1 (ξ) + cr (t)V2 (ξ)].
+                       G
+
+                                               120
+Their product gives (17.17). At zero frequencies one     (︁ uses )︁ the continuous sine quotient,
+not division by zero; at ξ = η = 0 the matrix is −t           −t2 . Fourier multiplication with
+                                                           1 t
+the conjugate yields
+                                             2
+                                         ∫︂ ∑︂
+              Fˆ︁z,w (t, −λ) = cd 1I (t)       Kij (t; η + λ, η)Uj (η)Vi (η + λ) dη.
+                                           i,j=1
+
+The spatial integral is absolutely convergent uniformly on the finite time interval by
+Schwartz decay. The Schur bound also makes it a Bochner HaC integral. Reflect λ using
+evenness of νR in (17.19). Since (2π)d c2d = 1, this proves (17.18) with no remaining
+Fourier factor. This proves Proposition 17.3.
+
+17.3     Bessel’s inequality and the two variances
+Lemma 17.4 (Hilbert-valued finite Bessel inequality). Let H be a separable complex
+Hilbert space, let {uk } be a finite orthonormal family in L2 (Rd ; C2 ), and let g = (g1 , g2 ) ∈
+L2 (Rd ; H 2 ). Then
+                         ⃦∫︂ 2                      ⃦2      2
+                                                        ∫︂ ∑︂
+                     ∑︂ ⃦    ∑︂                     ⃦
+                                  uk,j (η)gj (η) dη ⃦ ≤       ∥gj (η)∥2H dη.            (17.20)
+                         ⃦                          ⃦
+                         ⃦
+                         ⃦                          ⃦
+                      k        j=1                       H      j=1
+
+The same bound holds with uk,j in place of uk,j .
+Proof. Expand g in a countable orthonormal basis of H. On each scalar coefficient apply
+scalar Bessel to the orthonormal family {uk }, or to {uk } for the conjugated version.
+Scalar finite Bessel follows by subtracting an orthogonal finite projection and expanding
+its nonnegative squared norm. Sum over the H basis and use Parseval and nonnegative
+Tonelli. The Bochner integrals exist by L2 Cauchy–Schwarz. A finite-dimensional H
+uses its finite basis, and the zero space is immediate. No independence is involved. This
+proves Lemma 17.4.
+Proposition 17.5 (Both actual variance directions). There is a finite CT , depending
+on the fixed model, mask, a, α, γ, T , but not on R, I or the orthonormal family, such that
+for every finite complex E-orthonormal Schwartz family {ek } and every Schwartz phase
+z,
+                       ∑︂
+                          E|ℓR (I; ek , z)|2 ≤ CT h2−a Bα (h)∥z∥2Es−γ ,             (17.21)
+                          k
+                          ∑︂
+                               E|ℓR (I; z, ek )|2 ≤ CT h2−a Bα (h)∥z∥2Es−γ .              (17.22)
+                          k
+
+For every β in (17.8), either right side may be replaced by CT,β h2β ∥z∥2Es−γ .
+Proof. Each entry in (17.17) is a product of two continuous wave factors times
+(⟨ξ⟩⟨η⟩)−1/2 , with a possible minus sign. Lemma 16.8 therefore gives
+          ∥1I Kij (·; ξ, η)∥2HaC ≤ AT h2−a Φh (ξ, η),        AT = C1 (a)(1 + T )4 .       (17.23)
+
+                                                   121
+The positive even Radon measure νR satisfies the actual growth bound (17.14). Thus,
+all hypotheses of Proposition 17.1 hold, and
+                      ∫︂
+                         Φh (ξ, ξ − λ)νR ( dλ) ≤ KCν Bα (h)⟨ξ⟩−2γ .          (17.24)
+
+No nonnegative physical inverse covariance of νR is needed.
+    The kernels used in Lemma√17.4 belong to its stated L2 space for each fixed λ.
+Indeed, |cr (t)| ≤ 1 and |br (t)| ≤ 2 max(1, T ) on [0, T ], by the high- and low-frequency
+representations. The kernels are continuous into L2 (0, T ) in their frequency variables,
+hence into HaC by Schur. Separability gives strong measurability. Multiplication by
+shifted Schwartz components of U or V then gives the required L2 integrability. Later λ
+integrals are of nonnegative functions; their finiteness follows from the estimates below.
+    First fix V = Jz and let Uk = Jek be the input family. In (17.18) set
+                                       2
+                                      ∑︂
+                          gjλ (η) =         1I Kij (·; η + λ, η)Vi (η + λ).
+                                      i=1
+
+Lemma 17.4 and Cauchy–Schwarz over the two output components give
+              ∑︂                   ∑︂
+                 ∥gjλ (η)∥2HaC ≤ 2    |Vi (η + λ)|2 ∥1I Kij (·; η + λ, η)∥2HaC
+                  j                     i,j
+                                                                ∑︂
+                                 ≤ 4AT h2−a Φh (η + λ, η)             |Vi (η + λ)|2 .
+                                                                  i
+
+Change variables ξ = η +λ in the Lebesgue integral for each λ, apply Tonelli and (17.24),
+and use ∥z∥Es−γ = ∥⟨ξ⟩−γ Jz∥2 . This proves (17.21) with CT = 4AT KCν .
+   Next fix U = Jz and let Vk = Jek be the output family. After η = ξ − λ in (17.18),
+put
+                                  2
+                                 ∑︂
+                         λ
+                        fi (ξ) =    1I Kij (·; ξ, ξ − λ)Uj (ξ − λ).
+                                      j=1
+
+Apply the conjugated version of Lemma 17.4. Cauchy–Schwarz over the two input
+components bounds its right side by
+                              ∫︂               ∑︂
+                          2−a
+                    4AT h        Φh (ξ, ξ − λ)    |Uj (ξ − λ)|2 dξ.
+                                                        j
+                                                                    ∫︁
+After the change of variables and Tonelli, the row at fixed η is Φh (η + λ, η)νR ( dλ).
+Reflect λ∫︁using the actual evenness of νR and then use symmetry of Φh . This row
+becomes Φh (η, η − λ)νR ( dλ), which is bounded by (17.24) with ξ = η. This proves
+(17.22) with the same CT .
+   Use Corollary 17.2 for h2−a times the row integral at the two applications above to
+obtain the asserted h2β bounds, including strict absorption of the critical logarithm. The
+constants are uniform in R, I and family size. The R-dependent admission estimate was
+not used as this uniform variance bound. This proves Proposition 17.5.
+
+                                                  122
+17.4     Same-noise mean-square columns
+Write Erreal for the real phase space in dimension d.
+Proposition 17.6 (Column and adjoint-column maps). On the same probability space
+there are deterministic bounded real linear maps
+                                          real
+                           mR,I , nR,I : Es−γ  −→ L2 (Ω; Esreal ),
+with squared bounds CT h2−a Bα (h), such that, for every fixed real Schwartz pair z, w,
+                  ⟨mR,I z, w⟩E = ℓR (I; z, w) = ⟨z, nR,I w⟩E      in L2 (Ω).      (17.25)
+Fixed-vector values and finite families of values are centered Gaussian.
+Proof. Choose a countable real Schwartz orthonormal basis {ek } of Es . Such a basis
+follows by Gram–Schmidt from a countable dense Schwartz family, discarding zero resid-
+uals. Schwartz density follows by smooth Fourier cutoff approximation in the weighted
+L2 norms. The same density holds in Es−γ .
+    For fixed real Schwartz z, define
+                         ∑︂                              ∑︂
+                mN (z) =     ℓR (I; z, ek )ek , nN (z) =    ℓR (I; ek , z)ek .
+                        k≤N                                 k≤N
+
+Both are finite Gaussian sums on the original W . By Proposition 17.5, their coefficient
+expected squares have finite sum. Orthogonality gives the squared tail norms as the
+corresponding sums of expected squares. Thus, both sequences converge in L2 (Ω; Es ) to
+m(z), n(z) with the asserted bounds, without independence of the coefficients. Finite-
+sum measurability and separable Es give strong measurability of the limits. The bounded
+real linear maps extend uniquely from Schwartz phases to Es−γ .
+    If wN is the Es projection of a Schwartz w onto the first N basis vectors, then
+⟨mN (z), w⟩E = ℓR (I; z, wN ). The singleton form of (17.22), after normalizing w − wN in
+Es , gives
+                E|ℓR (I; z, w − wN )|2 ≤ CT h2−a Bα (h)∥z∥2Es−γ ∥w − wN ∥2Es .
+The zero residual is immediate. The right side tends to zero, giving the first identity
+in (17.25). For the second, project z instead and use the singleton input bound (17.21).
+A fixed countable Schwartz orthonormal basis and Parseval show basis independence of
+the constructed limits.
+    Continuous linear functionals of the limits, and finite linear combinations of such
+functionals, are L2 limits of centered Gaussian variables with convergent variances. Their
+characteristic functions therefore converge to those of centered Gaussians. The same
+reasoning after the bounded input extension proves joint Gaussianity for arbitrary fixed
+inputs and finite families of the two maps. This proves Proposition 17.6.
+   These are maps into L2 (Ω; Es ) for fixed intervals. No common uncountable almost-
+sure version, random bounded operator, Hilbert–Schmidt realization, time path, source
+convergence or new solution-moment bound is inferred. The two variance directions will
+both be retained in the subsequent compact-operator construction.
+
+                                            123
+18     Targets
+Goal 18.1 (Upper bound at the correct scale). Under Hypothesis 1.1, prove
+lim supt→∞ t−κ log Eu2 (t, x) < ∞, ideally with an explicit constant.
+
+
+ Theorem 13.8 establishes the unchanged full upper goal for every admissible dimen-
+ sion and homogeneous covariance. The interval estimate passed scoped correctness
+ review. The preceding independent mild construction passed correctness review.
+ The explicit hypothesis/object revision and independent fixed-order construction
+ and their consumers passed their own scoped Opus5.5/HIGH review. A fresh whole-
+ paper cold read remains required. The earlier explicit bounds for 0 < α ≤ 1 remain
+ available. The sharp constant and final whole-paper cold read remain open.
+
+
+Goal 18.2 (Sharp second-moment constant). Under Hypothesis 1.1, derive a finite con-
+stant C2 (γ, α0 ) and prove, for every fixed x ∈ Rd ,
+
+                            lim t−κ log Eu2 (t, x) = C2 (γ, α0 ).
+                            t→∞
+
+A variational characterization must specify its full domain, covariance amplitude, ki-
+netic coefficient and Gaussian action. Derive further evaluations and bounds from this
+formula. For zero covariance, u(t, x) = 1 and C2 (0, α0 ) = 0.
+
+
+ Goal 18.2 follows Le’s revised direction of 2026-10-31: derive the actual constant,
+ whatever the computation gives. The original proposed bounds with endpoints
+ 2(4−α)/(3−α) L∗ and 2(4−α)/(3−α) L∗ remain comparisons with Conjecture 2.3. Matching
+ those endpoints or closing the source’s variational gap is not a completion require-
+ ment. No correction of the source’s normalization or equality of its energy domains
+ is adopted.
+
+
+
+19     Established steps and open questions
+1. The mixed expansion and the first obstruction. Section 3 proves the complete
+   nonnegative mixed expansion and an independent convergent solution series. It cor-
+   rects the time-uniformity issue in the source’s intermediate estimate. The common-
+   per-pairing majorant has exponent ρ > κ and cannot give the desired scale. This is a
+   restriction on that majorant, not on the model or all uses of the source’s Theorem 3.1.
+
+2. Calibrations. Section 4 gives the finite white and Riesz coefficients. As α0 ↓ 0,
+   the target exponent becomes (4 − α)/(3 − α), the static exponent. Proposition 2.4
+   is unconditional; its numerical 2L∗ specialization requires the stated first-moment
+   premise. Comparisons with the Skorohod model identify time exponents only.
+
+
+                                            124
+

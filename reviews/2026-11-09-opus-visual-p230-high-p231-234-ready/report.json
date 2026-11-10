@@ -1,0 +1,43 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "PDF_PAGE230 fullpages/page-230.png",
+    "PDF_PAGE230 bands/page-230-band-1.png",
+    "PDF_PAGE230 bands/page-230-band-2.png",
+    "PDF_PAGE230 bands/page-230-band-3.png",
+    "VISUAL.md lines 1-11 (complete)",
+    "source-manifest.json lines 1-63 (complete; provenance metadata only, hashes not recomputed)",
+    ".review/required-sources.json lines 1-27 (complete; read plan only)"
+  ],
+  "checks": [
+    {
+      "claim": "P230: The whole-page layout of physical page 230 and its fine mathematical glyphs render correctly, with no clipping, collisions or rendering artifacts.",
+      "verdict": "PASS",
+      "reason": "Whole page: there is one justified text block with even left and right margins. The page uses a plain style with no running head. The folio '230' is centred at the bottom with clear space above it. Text starts about 15% down the page, which looks like a normal geometry margin rather than a missing element. Displays are centred, and the tag (35.5) is flush right on the display baseline. The two QED boxes (after 'This proves Lemma 35.2.' and 'This proves Proposition 35.3.') are flush right on their last lines. The run-in bold heading 'Proposition 35.3 (Rayleigh transfer including jumps and zero law).' is followed by an italic statement. The italic 'Proof.' run-in is upright-separated correctly. The section heading '35.3 The actual wave tuple and its globally defined endpoint' is bold, fits on one line, and has proper space before and after it. Red cross-reference numbers (35.2), 35.1, (35.4), (35.5), 35.3, (32.1)\u2013(32.2) render legibly. I did not check whether their targets are correct, which is out of scope. I found no overprinting, missing glyphs, boxes or tofu, overfull lines into the margin, or line collisions.\n\nFine glyphs, read from the bands:\n- Band 1: calligraphic T_r; d_\u03b4(x) \u2264 r; \u2016h_j\u2016 \u2264 r + 1/j; x \u2212 M_\u03b4 h_j \u2208 A_\u03b4; M_\u03b4 h_j \u2192 M_\u03b4 h; b_\u03b4 > 0; \u03bc(A_\u03b4) \u2265 1/2; the multi-letter subscript H_seen (legible); the display K = C(B\u0304_H(1)) = \u221a\u03b4 M_\u03b4(B\u0304_H(1)), T_r = A_\u03b4 + (r/\u221a\u03b4)K, where the overbar and the radical vinculum are intact; \u00e2 \u2265 0; \u00e2 = +\u221e.\n- Band 2: F : E_0 \u2192 \u211d; G : [0,\u221e) \u2192 \u211d; x \u2208 T_r; the display \ud835\udd3ce^{F(X)/\u03b4} \u2264 \u222b_0^\u221e (r/\u03b4) exp((G(r) \u2212 r\u00b2/2)/\u03b4) dr, where the integral limits, the fraction bar, the big parentheses and the superscript fraction are all clear; E_0 = {0}, C = M_\u03b4 = 0, F(0) \u2264 G(0); the density (r/\u03b4)e^{\u2212r\u00b2/(2\u03b4)}; \u2119(d_\u03b4(X) \u2265 c) = lim_{s\u2191c} \u2119(d_\u03b4(X) > s) \u2264 e^{\u2212c\u00b2/(2\u03b4)} = \u2119(R_\u03b4 \u2265 c), with the under-limit s\u2191c legible.\n- Band 3: e^{G(r)/\u03b4}; {d_\u03b4(X) = \u221e}; e^{G(d_\u03b4(X))/\u03b4}; e^{G(R_\u03b4)/\u03b4}; F(X) \u2264 G(d_\u03b4(X)); F(0) \u2264 G(0) \u2264 G(r); (1 \u2212 \u03b8)^{\u22121} < r_t < 2/a, \u03bd \u2264 p < 2 < r_t, \u03bd = 1/\u03b8.\n\nNo glyph remained uncertain at band resolution."
+    },
+    {
+      "claim": "SCOPE_ALL_IMAGES: All four supplied images were inspected directly as pixels.",
+      "verdict": "PASS",
+      "reason": "Each of the four PNGs was opened with Read and inspected: the full page (773x1000) and bands 1, 2 and 3 (977x700 each). The bands overlap. Band 1 runs from the top margin to the Proposition 35.3 heading. Band 2 runs from the K/T_r display to the start of the 'Rayleigh has no atoms' line. Band 3 runs from the 'Proof.' line to the folio. Every body line is therefore fully legible in at least one view."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Carrier limitation, not a page defect: the top edge of band 3 cuts through the superscript e^{\u2212r\u00b2/(2\u03b4)} on the first 'Proof.' line. The same line is fully legible in band 2 and in the full page.",
+      "Carrier limitation, not a page defect: at 773x1000 the full-page overview is too coarse to read small subscripts with confidence (for example H_seen and \u03b4 against d in d_\u03b4). The bands resolve them.",
+      "Cosmetic and optional: an inline formula breaks after '\u2264' in the first paragraph ('\u2016h_j\u2016 \u2264 / r + 1/j'). TeX allows this break and it remains legible, so no change is needed.",
+      "Cosmetic and optional: the section heading '35.3' and 'Proposition 35.3' on the same page share the number 35.3 because they use separate counters. The page reads clearly, but a reader might briefly confuse the two. This is not a rendering defect."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is an AI visual review of supplied raster carriers for physical page 230 only. It is not human verification and does not certify other pages, mathematical correctness, fidelity to the source, cold review, adoption or project completion.",
+    "Image SHA-256 values and PDF/source provenance were taken from source-manifest.json as metadata. I did not recompute them; per the contract, Root checks them independently.",
+    "Cross-reference targets (35.1, 35.2, 35.4, 35.5, 32.1, 32.2) were checked only for legibility, not for whether they point to the right place.",
+    "The review is limited to the raster resolution supplied. Defects below that resolution, such as sub-pixel kerning or vector-level font embedding problems, cannot be detected from these PNGs."
+  ]
+}

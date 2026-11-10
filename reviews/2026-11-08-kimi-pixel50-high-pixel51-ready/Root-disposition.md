@@ -1,0 +1,1 @@
+Root read the entire public report. Canonical HIGH/no repairs, all16 exact VIEW_IDs and frozen PNG hashes pass. Accept MAIN194-197 only: union197/267pages/788views;70remain. Crop observations resolved in adjacent bands. No math/source/cold credit. Next198-201 READY640095input plus311296hard=951391, nativecontext81671.

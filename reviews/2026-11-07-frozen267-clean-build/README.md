@@ -1,0 +1,5 @@
+# Exact frozen candidate clean build verified
+
+Root copied all28 unchanged TeX files and the authoritative reviewed bibliography into an isolated build directory. latexmk with frozen-bbl mode completed with0errors/undefinedreferences-or-citations/overfullboxes and267pages. Because source uses today, the visible reviewed date was held through child-only SOURCE_DATE_EPOCH/FORCE_SOURCE_DATE; no TeX was edited. Current refdb/All.bib was neither changed nor used to regenerate a different bibliography.
+
+Layout-text bytes match the frozen PDF. ALL267 pages also render to byte-identical default RGB PPM streams under the same pdftoppm scale-to1600 renderer. PDF bytes differ, so both hashes are recorded; the verification copy does not replace frozenPDF26f9. All original source, bibliography and PDF hashes were rechecked unchanged afterward. This verifies the build/render gate for that exact source/bibliography, not mathematical correctness, a fresh cold read, new bibliography content or final adoption.

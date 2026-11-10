@@ -1,0 +1,23 @@
+\begin{lemma}[A complex phase bound]\label{L:complex-phase}
+  Let $H$ be a complex Hilbert space, $A_0$ a bounded nonnegative
+  selfadjoint operator, and $B$ a bounded selfadjoint operator.
+  Write $A_\rho=\rho^2+A_0$. Suppose that, for $0<a<1$ and $d>0$,
+  \begin{equation}\label{E:abstract-sandwich}
+    \|A_\rho^{-1/2}BA_\rho^{-1/2}\|\le d\rho^{a-2},
+    \qquad \rho>0.
+  \end{equation}
+  Put
+  \[
+    I_a=\int_0^\infty s^{-1/2}(1+s)^{(a-3)/2}\ud s,\qquad
+    \delta_a=\min\{1/4,\pi/(8I_a)\}.
+  \]
+  For $\lambda>0$ and $|z|\le\delta_a\lambda^{2-a}/d$, let
+  $L=A_0-zB$. The phase propagator of $u''+Lu=0$ satisfies
+  \begin{equation}\label{E:complex-phase-bound}
+    \|\mathcal M_z(h)\|_{X_\lambda\to X_\lambda}
+    \le100e^{2\lambda h},\qquad
+    \|(f,g)\|_{X_\lambda}^2
+    =\|f\|^2+\|A_\lambda^{-1/2}g\|^2,\quad h\ge0.
+  \end{equation}
+  The constant is independent of $H$, $\|A_0\|$ and $\|B\|$.
+\end{lemma}

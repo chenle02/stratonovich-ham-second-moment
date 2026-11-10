@@ -1,0 +1,145 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "medium",
+  "source_coverage": [
+    "notes/fixed-mask-young-constant-phase.md lines 1-313 (complete)",
+    "notes/fixed-mask-moment-transfer.md lines 1-251 (complete)",
+    "reviews/2026-10-31-fixed-mask-young/target-v1.md lines 1-159 (complete)",
+    "reviews/2026-10-31-fixed-mask-young/falsification-v1.md lines 1-47 (complete)",
+    "reviews/2026-10-31-fixed-mask-young/source-crosswalk-v1.md lines 1-44 (complete)",
+    "reviews/2026-10-31-fixed-mask-young/worker-honesty-v1.md lines 1-36 (complete)",
+    "reviews/2026-10-31-fixed-mask-young/check-extension.py lines 1-62 (complete)",
+    "reviews/2026-10-31-fixed-mask-young/extension-controls-v1.json lines 1-55 (complete)",
+    "reviews/2026-10-31-fixed-mask-young/source-first-order-witness.json lines 1-17 (complete)",
+    "reviews/2026-10-31-fixed-mask-young/accepted-input-excerpts.txt lines 1-441 (complete)",
+    "reviews/2026-10-31-fixed-mask-young/accepted-input-custody.json lines 1-42 (complete)",
+    "reviews/2026-10-31-fixed-mask-young/Friz-Hairer-selected.txt lines 1-259 and 260-321 (complete, read in two consecutive ranges)",
+    "reviews/2026-10-31-fixed-mask-young/Friz-Hairer-custody.json lines 1-43 (complete)",
+    "reviews/2026-10-31-fixed-mask-young/statement-adjudication-v1.md lines 1-42 (complete)",
+    "reviews/2026-10-31-fixed-mask-young/scientific-worker-honesty-v1.md lines 1-40 (complete)",
+    "reviews/2026-10-31-fixed-mask-young/check-extension-v2.py lines 1-76 (complete)",
+    "reviews/2026-10-31-fixed-mask-young/extension-controls-v2.json lines 1-65 (complete)",
+    "reviews/2026-10-31-fixed-mask-young/prior-young-acceptance.txt lines 1-51 (complete)",
+    "reviews/2026-10-31-fixed-mask-young/prior-young-acceptance-custody.json lines 1-21 (complete)",
+    ".review/required-sources.json lines 1-60 (read plan only, no read credit)"
+  ],
+  "checks": [
+    {
+      "claim": "C1: scope matches the original model (H:homog, d=1,2,3, a in (0,1), alpha+a<2, 0<alpha<d or alpha=d=1, data (1,0)); the gamma/theta/beta ranges match the accepted inputs exactly; mask chosen with values in [0,1]",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Parameter ranges are identical to actual-operator-driver.md (1) and source-operator-convergence.md. The [0,1] mask range is a legitimate free choice. The candidate drops the word 'even' that the accepted driver requires of zeta (see minor findings). gamma is used only through the imported inputs."
+    },
+    {
+      "claim": "C1: F=E+R^2 embeds injectively and continuously into D'; constants lie outside both Sobolev entries",
+      "verdict": "PASS",
+      "reason": "For sigma=+/-1/2, <xi>^sigma f-hat in L2 makes f-hat locally L2 near 0. Pairing with chi(xi/eps), where chi has support in the unit ball, is bounded by ||f||_{L2(B_eps)} eps^{d/2}||chi||_2, which tends to 0, while delta_0 gives chi(0)=1. If e1+c1=0 with c1 nonzero, e1-hat would be a nonzero multiple of delta_0, a contradiction. The same holds for the second entry. Continuity follows from the dual Sobolev norms and the test integrals. F is a separable Hilbert direct sum, and iE=ker pi_C is closed, proper and not dense."
+    },
+    {
+      "claim": "C1: L_psi is bounded F->E, with Peetre bounds for both Sobolev signs and bounded constant columns",
+      "verdict": "PASS",
+      "reason": "Peetre gives <xi>^s <eta>^{-s} <= 2^{|s|/2}<xi-eta>^{|s|}. So the weighted multiplication kernel is dominated by convolution with c_d 2^{|s|/2}|psi-hat(q)|<q>^{|s|}, which is in L1 because psi is Schwartz. Young's L1*L2 inequality then gives boundedness on H^{+/-1/2}. Since psi is in H^{1/2} and in H^{-1/2}, the constant columns c1 psi and c2 psi have bounded E norm."
+    },
+    {
+      "claim": "C1: S_F(t)(e,c1,c2)=(S_E(t)e,c1+t c2,c2) is the actual free wave group, strongly continuous and bounded on finite horizons",
+      "verdict": "PASS",
+      "reason": "Constant data (c1,c2) solve u_tt=Delta u with u=c1+t c2 and v=c2. The group law holds on the triangular constant block. Strong continuity and the C_T bound on E are named inputs (driver Section 4, lines 172-176). No norm continuity is claimed."
+    },
+    {
+      "claim": "C2: full-phase finite propagation for total data e+c, including locally cancelling parts, via the compact-support kernel matrix",
+      "verdict": "PASS",
+      "reason": "The matrix [[d_tG_t, G_t],[Delta G_t, d_tG_t]] is correct: u=d_tG*u0+G*v0 and v=Delta G*u0+d_tG*v0. Each entry is supported in the closed ball of radius |t| (Paley-Wiener-Schwartz, d<=3). Masses 1, t, 0, 1 reproduce (1), and time reversal covers negative t. On E, compact-distribution convolution agrees with the Fourier-multiplier definition. Because the convolution acts on the single distribution e+c, vanishing of e+c on B_{rho+|t|} forces vanishing on B_rho, with no componentwise support assumption."
+    },
+    {
+      "claim": "C3: cutoff identity (2) for raw and source drivers from the same finite A_j sums and operator-path limits, with a per-rho exception set",
+      "verdict": "PASS",
+      "reason": "Accepted (12) holds for every A_j on every E_r. M -> D_chi M and M -> M D_chi are bounded on C^theta(B(E)), so the identity passes to Lp C^theta limits. Source-operator-convergence Theorem 1 confirms that M_Y,N = sum Y(f_j) A_j uses the same A_j. A single path set comes from an a.s. convergent subsequence. Only fixed-rho exception sets are used."
+    },
+    {
+      "claim": "C3: A_E = M_E L_psi is independent of psi, restricts to M_E on iE, has compact values and range in iE, and keeps the actual constant-response columns",
+      "verdict": "PASS",
+      "reason": "(L_psi - L_psi')z lies in E and is killed by D_chi, since psi = psi' on supp chi; (2) then gives zero. For z = i e, D_chi D_psi e = D_chi e gives A i e = i M_E e. Composition with a bounded L_psi preserves compactness. The columns M_E(psi,0) and M_E(0,psi) are kept, not set to zero."
+    },
+    {
+      "claim": "C3: Lp C^theta source convergence, uniform sqrt(p) moments, square-exponential series with fixed constants, and same-W measurability carry over",
+      "verdict": "PASS",
+      "reason": "M -> i M L_psi is bounded linear, so Lp convergence at arbitrary rates and uniform sqrt(p) bounds transfer. If E X^{2n} <= C^{2n}(2n)^n and n! >= (n/e)^n, the nth term of exp(cX^2) is at most (2e c C^2)^n, so any c < 1/(2eC^2) works. Raw A is a deterministic continuous image of the W-measurable M_E."
+    },
+    {
+      "claim": "C4: B(b):F->E with ||B(b)|| <= ||b||_inf + ||b||_2; strongly continuous integrand; statewise Lipschitz B(F,E) primitive without RNP",
+      "verdict": "PASS",
+      "reason": "||b(e1+c1)||_{H^{-1/2}} <= ||b e1||_{L2} + |c1| ||b||_{L2} <= (||b||_inf + ||b||_2)||z||_F. Continuity of b in L-infinity and L2 gives operator-norm continuity of B(b(r)). Together with strong continuity and uniform boundedness of S_F(r)z and S_E(-r), the map r -> C(r)z is continuous in E. The statewise integral is linear and bounded, with increments bounded by sup||C|| |t-s|."
+    },
+    {
+      "claim": "C4: identity (5) on all of F from full propagation and the accepted E-identity",
+      "verdict": "PASS",
+      "reason": "z - iL_psi z equals (1-psi)(e+c), which vanishes on B_{2R+T+1}. By C2, S_F(r)z - iS_E(r)L_psi z has displacement vanishing on B_{2R+1}, an open neighbourhood of supp m, for r <= T. Hence B(b(r)) kills the difference. Accepted (7)/(18)-(20) then give int C z = L_rho(t)L_psi z = M_E^rho(t)L_psi z. These hold for all z and t on the fixed-rho event."
+    },
+    {
+      "claim": "C5: Banach Young import with left bilinear composition, scaled-norm contraction, patching, bound (7) with exponent 1/theta, uniqueness in C^theta, composition law, invertibility and joint norm continuity",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Left composition is a norm-1 bilinear pairing, so the held FH Section 1.5/4.1 estimate applies, and (6) matches. Check of the contraction: for W(s)=0, |||Phi W||| <= 2 max(1,C)[D] ell^theta |||W|||. Linearity makes it a contraction on the whole affine space, which gives uniqueness in C^theta. The solution satisfies |||V||| <= 2||V0||. The number of pieces is about [D]^{1/theta}, giving (7). Composition follows by uniqueness and right-multiplication linearity; Neumann series and U(t,0)U(s,0)^{-1} give joint norm continuity. The Lipschitz-dependence step is only sketched, but it is standard and matches accepted local-flow (5.3). No bounded-vector-field RDE or Theorem 12.18 is used."
+    },
+    {
+      "claim": "C5: pi_C U = pi_C and (U-I)F in iE from Young sums and closedness of iE; physical constant transport is (c1+(t-s)c2,c2)",
+      "verdict": "PASS",
+      "reason": "Every Riemann-sum term A(t_j,t_{j+1})U(t_j,s) has range in iE = ker pi_C, and operator-norm limits keep range in the closed subspace. pi_C S_F(t) depends only on pi_C, so pi_C P(t,s)z = (c1 - s c2 + t c2, c2)."
+    },
+    {
+      "claim": "C6: convergence in probability, then uniform integrability, then all-finite-Lp source convergence of the evolutions, with exp(C X^{1/theta}) controlled by exp(cX^2); measurability without norm-continuous free groups",
+      "verdict": "PASS",
+      "reason": "Localising to driver balls of radius K with the local Lipschitz bound gives convergence in probability, and the uniform Gaussian tails control the complement. Since q = 1/theta < 2, pC(1+x)^q <= c x^2 + C_{p,c}, which gives uniform moments of every order. Vitali, valid for nets in rho, gives Lp convergence. Strong measurability comes from separable path spans and the continuous Young map. Physical differences carry the factor C_T^2, and V -> S_F V S_F(-.) is bounded linear into the sup-norm family space."
+    },
+    {
+      "claim": "C7: Young Riemann sums give the statewise strong integral; unique C_t(F) strong Duhamel equation",
+      "verdict": "PASS",
+      "reason": "Using (5), each increment A^rho(t_{j+1}) - A^rho(t_j) applied to a state is int iC(r) dr. The error is at most sup||C|| T sup_{|r-t_j|<=mesh}||U(t_j,s) - U(r,s)|| ||v||, which tends to 0. Moving S_F(t) inside the Bochner integral, with S_F(t) i S_E(-r) = i S_E(t-r), gives the Duhamel equation with B(b):F->E. Gronwall gives uniqueness."
+    },
+    {
+      "claim": "C7: Picard factorial bound, nth displacement equals X_{rho,n}^m, the distribution limit matches the F2 locally uniform limit, and the pathwise J_phi average matches the F2 Bochner L2 average",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The bound C_T^{n+1} B_T^n T^n/n! is correct. The displacement of S(t-r)(0,f) is G_{t-r}*f, and B reads only the displacement, so the iterates reproduce the ordered Green chains with X_0 = 1. The phase series converges in C_t(F), hence in D'. F2 (6) gives locally uniform convergence to u_rho^m, and distribution limits coincide. No point trace and no global unmasked bound are used. The step from E-valued Bochner iterate to pointwise chain integral (test with phi, then Fubini) is only named 'wave kernel convention'; I checked it and it holds."
+    },
+    {
+      "claim": "C8: ||J_phi|| <= sqrt(||phi||^2_{H^{-1/2}} + 1); Z_m is W-measurable; masked averages converge in every finite Lp; the exact F3 L2 premise holds; (12) follows for the original canonical point moment",
+      "verdict": "PASS",
+      "reason": "Cauchy-Schwarz on the H^{1/2}/H^{-1/2} pairing plus |c1| gives the stated norm. Z_m is a continuous image of the raw W-measurable driver and does not depend on the auxiliary extension. The difference is at most ||J_phi|| ||e0|| sup||P^rho - P||, with ||e0|| = 1, so convergence holds in Lp at arbitrary rates. F3 then gives E|Z_m|^2 <= ||phi||_1^2 E|u(t,0)|^2 = E|u(t,0)|^2. R and T stay fixed, with no large-time interchange and no raw point identity. Zero covariance gives Z_m = 1 and equality."
+    },
+    {
+      "claim": "C9: optional h in C([0,T];C_c^infinity(K)): strong primitive is Lipschitz F->E; A_h + gA gives flow, all-finite-Lp convergence and source identity with individual bounds; only h=0, g=1 enters F3; no Cameron identification",
+      "verdict": "PASS",
+      "reason": "(4) gives ||B(h(r))|| <= ||h||_inf + ||h||_2, which is at most the displayed W^{1,inf}+L2 budget. The deterministic Lipschitz driver gives C^theta norm at most C T^{1-theta} Lip. exp(c(K+|g|x)^2) <= exp(2cK^2) exp(2cg^2x^2) keeps square-exponential bounds for bounded g. The source identity follows by linearity of the primitive in b. Scope limits are stated."
+    },
+    {
+      "claim": "C10: all 13 statement notes addressed; v1 kept as history and v2 rebuilds the controls; 64k^2 bound derived; five C0-only loop controls; borrowed source row with limited custody; excerpt and Friz-Hairer fidelity; seven analytic groups listed",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "All 13 items appear in the candidate. I checked the loop algebra by hand: A^2 = B^2 = BA = 0, the loop equals I - e^2 AB, the endpoint after N = k^2 loops is I - AB with entry [0][5] = -1, and e^4/dt^3 with dt = 1/(4k^2) gives 64k^2. Imported claims match accepted-input-excerpts. FH (4.3) and Proposition 8.12 match (6)-(7). The prior acceptance banner is kept with d1 scope. The v2 dropped-column control is tautological (see minor findings). The seven groups are enumerated, and the finite controls are explicitly not continuum proofs."
+    },
+    {
+      "claim": "C11: honest custody and scope limits: isolated worktree, local-only commits, network pending, original goal ACTIVE, no Lean upgrade or companion/HPC/contact/Skorohod/source fix/TeX/PDF/wiki/publication claim, no actual d2/d3 lower bound or sharp upper constant",
+      "verdict": "PASS",
+      "reason": "The candidate's Sections 1 and 7 and the two honesty notes state all of these. 71 facts/18 seams/L0 are unchanged. <HUB> is unreachable and no parity is claimed. Independent method novelty is not claimed."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Section 1 adds the [0,1] value range to m = zeta_R but drops 'even'. actual-operator-driver.md requires an even zeta, so the even property should be restated to keep the imported inputs applicable.",
+      "Section 5: the claim that the displacement of the nth E-valued Bochner phase iterate equals the pointwise chain integral X_{rho,n}^m rests on the phrase 'wave kernel convention'. A short induction (test with phi, use the support/convolution identification from Section 2, then Fubini) would make it explicit. It is correct as stated.",
+      "Section 4: local Lipschitz dependence of U_D on D is sketched in one sentence. It is standard and matches accepted local-flow (5.3), but the initial-difference propagation across pieces is not written out.",
+      "Section 6 uses J both for the auxiliary retaining extension and for the functional J_phi. Renaming one would avoid ambiguity.",
+      "Target Y4's statement that the 'ordinary source phase minus the free constant phase lies in E' follows from (8)-(9) and the constant-transport line but is never stated explicitly in Section 5.",
+      "The v2 dropped-column control only zeroes columns 4-5 and checks they are zero. It does not propagate the dropped matrices through an evolution to show a changed endpoint, so it is a near-tautological marker, not a test.",
+      "Section 2's alternative argument ('localize constants with a cutoff ... use the constant kernel masses') is redundant and only sketched; the kernel-convolution argument alone suffices."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "The named accepted inputs (actual-operator-driver.md, source-operator-convergence.md, local-causal-young-flow.md, F1-F3) were checked only through the frozen excerpts and the full fixed-mask-moment-transfer.md. Their full proofs were not re-reviewed.",
+    "Friz-Hairer is checked only against the held 321-line selected extraction, not a full-book or publisher-version audit.",
+    "No code was executed. The finite controls were checked by hand algebra, and the borrowed quadrature row was not recomputed.",
+    "Several standard arguments in the candidate are compressed (Young Lipschitz dependence, Bochner-versus-pathwise identifications). I reconstructed them in my head rather than reading complete written proofs, which is why confidence is medium.",
+    "This AI review is not human verification, a novelty audit, or a whole-paper certificate. No repository state, git revision, or network custody was independently verified."
+  ]
+}

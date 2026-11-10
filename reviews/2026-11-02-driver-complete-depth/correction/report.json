@@ -1,0 +1,51 @@
+{
+  "category": "paper-review-deepseek",
+  "model": "deepseek/deepseek-v4-pro",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "confidence_justification": "Both flagged items were independently re-derived from the byte-exact source. Item 1 is a report explanation error: the two maps need different index substitutions (r = s-gamma for A, r = gamma-s for A*), whereas the report's shared 'r=s+gamma-1 for both' is numerically correct only for A* (since s=1/2 implies s+gamma-1 = gamma-s). The source itself invokes only 'gain one at every index', so the underlying deduction is sound and the DR087/APP-GAIN-SUPPORT PASS verdicts are preserved after correcting the explanation. Item 2 is a locator/transcription error: the full module spans LF1 through LF689 (plus a short closing note), not LF1-344, and the DR086 paraphrase '(u,x-u term)' is garbled; the correct literal coefficient is zeta_R(x) int_{u>0}|t-u|^{-a} int Gamma(dy) f_j(u,x-y) du with the mask applied after convolution. Neither correction impugns any source statement, so no grade movement is warranted.",
+  "source_coverage": [
+    "supplied+read: scope.txt (seven-target boundary; downstream/image/render/Kimi/cold reading exclusions)",
+    "supplied+read: report-contract.json (subscription-review-report/1 schema and required fields)",
+    "supplied+read: maps/targets.json (statement/proof ranges; PROOF093 statement LF27-55, body LF653-689, explicit owner)",
+    "supplied+read: maps/proof-index.tsv (PROOF001-214 index and paths)",
+    "supplied+read: maps/exact-target-statements-and-proofs.txt (verbatim slices for 085,086,087,089,090,092,093)",
+    "supplied+read+reconstructed: notes/integrated_actual_operator_driver.tex - CORRECTED full-module range LF1-LF689 (LF27-55 is P:actual-operator-driver statement; reconstructed LF59-121, 123-165, 169-237, 255-389, 391-416, 418-444, 448-557, 561-651, 653-689; short unmumbered closing note follows after LF689 to the 34204-byte file end). The earlier report miscalled this 'LF1-344'; LF344 sits inside PROOF088's proof and does not bound the module.",
+    "supplied+read: notes/integrated_wave_variance.tex (actual-wave-form, both variance directions, mean-square columns)",
+    "supplied+read: notes/integrated_compact_gaussian.tex (finite Gaussian matrix, cutoff envelopes, localized finite variance, compact positive order)",
+    "supplied+read: notes/integrated_covariance_foundation.tex (temporal completion, masked noise completion, positive Laplace factorization)",
+    "supplied+read+recomputed: supplements/support-dyadic-worked-mathematics.txt",
+    "supplied+read+recomputed: supplements/variance-interval-worked-mathematics.txt",
+    "supplied+read+recomputed: supplements/finite-controls.txt",
+    "supplied+read (downstream application contract, not a fresh proof): notes/integrated_source_convergence.tex PROOF094/PROOF095 to confirm 095 consumes the fixed A_j paths and M_N -> M_R Lp(B_theta) convergence from PROOF093",
+    "supplied+read (context only): primary/source-editions.json, primary/chen-author-full.txt, primary/cited-bibliography.bbl"
+  ],
+  "checks": {
+    "COR-GAIN-INDICES": {
+      "claim": "That the E_s-adjoint gain and the direct gain 'both act from E_{s-gamma} to E' via one common index substitution r=s+gamma-1.",
+      "verdict": "PARTIAL",
+      "reason": "Concede the shared-r explanation was a report error; the source is correct and uses no shared r. Exact derivation with s=1/2, 2s=1: the E_s pairing realizes (E_r)' = E_{2s-r} (two Bessel weights, pivot s). Direct map: A : E_r -> E_{r+1} for every real r by E:driver-gain-one. Choose r_A = s - gamma: then A : E_{s-gamma} -> E_{s+1-gamma}. Since gamma<1, s+1-gamma = 3/2-gamma > 1/2 = s, so the bounded inclusion E_{s+1-gamma} -> E_s (norm <=1, because <xi>^s <= <xi>^{s+1-gamma}) composes to A : E_{s-gamma} -> E_s. Adjoint map: A* : E_{2s-r-1} -> E_{2s-r}. Choose r_{A*} = gamma - s: the domain index is 2s-(gamma-s)-1 = 1-gamma+s-1 = s-gamma, and the codomain index is 2s-(gamma-s) = 1-gamma+s = s+1-gamma, again embedding into E_s iff gamma<1. Thus the two substitutions are negatives of each other: r_A = s-gamma and r_{A*} = gamma-s = -(s-gamma), NOT equal. The earlier report's 'r=s+gamma-1' equals gamma-1/2 = gamma-s (using s=1/2), which is correct only for A*, not for A. The source's compressed sentence 'Since gamma<1, gain one at every index implies the two stated maps from E_{s-gamma} to E' is therefore accurate: it instantiates gain one at r=s-gamma for A and at r=gamma-s for the dual reading of A*; it never asserts a shared index. The strict embedding guard needed is gamma<1 (satisfied strictly, in fact gamma<1/2), giving E_{s+1-gamma} subset E_s with unit inclusion bound. Implication: DR087 and APP-GAIN-SUPPORT keep PASS; their earlier 'shared r' wording was a returned-report explanation defect, not a source defect."
+    },
+    "COR-LOCATOR-COEFFICIENT": {
+      "claim": "The full-module line range LF1-344 and the DR086 coefficient paraphrase '(Gamma*f_j)(u,x-u term)'.",
+      "verdict": "PARTIAL",
+      "reason": "Both are report transcription errors; no manuscript issue. Locator: maps/proof-index.tsv and maps/targets.json place PROOF093's statement at LF27-55 with body at LF653-689 and closing sentence at LF688, while LF59-121/123-165/169-237/... extend through LF689; hence the file contains at least lines 27-689 plus a short trailing note, so the full module is LF1-LF689 (trailing note LF690 ff.), not LF1-344. Coefficient: the exact displayed E:driver-covariance-coefficient is H_{j,R}(t,x) = zeta_R(x) int_{u>0} |t-u|^{-a} int Gamma(dy) f_j(u, x-y) du, i.e. the physical spatial argument is f_j(u, x-y), where y is the covariance integration variable; equivalently the proof writes int_R |v|^{-a} int Gamma(dy) f_j(t-v, x-y) dv after v=t-u. The mask zeta_R multiplies after the Gamma convolution, as the source stresses ('mask is after convolution'). The phrase '(u,x-u term)' in the earlier report claim was a garbled paraphrase, not a source text error. Implication: DR086 keeps PASS with the corrected literal coefficient recorded; the source_coverage entry is corrected to LF1-LF689."
+    }
+  },
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Report-internal and now corrected: DR087/APP-GAIN-SUPPORT originally stated a single shared index 'r=s+gamma-1' for both A and A*. The correct construction uses r_A = s-gamma for the direct gain and r_{A*} = gamma-s (equal to s+gamma-1 only because s=1/2) for the dual gain; the two indices are negatives of each other. The source invokes only 'gain one at every index' and is unaffected.",
+      "Report-internal and now corrected: source_coverage mis-stated the full module as LF1-344; the module spans LF1-LF689 with a short closing note. The DR086 claim paraphrase carried a stray '(u,x-u term)'; the correct coefficient is zeta_R(x) int_{u>0}|t-u|^{-a} int Gamma(dy) f_j(u,x-y) du with the post-convolution mask."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This correction preserves the original seven-proof scope; whole214, source-image, manuscript-render, Kimi and final fresh cold-review clearance remain withheld.",
+    "Named local inputs (061-084, current 088/091) remain supplied proved statements; their hypotheses were checked at the points of use, not re-derived from first principles.",
+    "Downstream PROOF094/PROOF095 were inspected only to confirm PROOF095 consumes the path/row contracts produced by PROOF093; the downstream convergence module was not re-proved here.",
+    "All estimates remain at fixed finite R,T with strict guards (gamma<min(1/2,(2-alpha)/2), q0*gamma>d, beta-eta-1/q0>0, alpha+a<2); no uniform growing-R norm, critical Schatten endpoint, or Schatten-valued Holder path is claimed.",
+    "Gamma=0 and empty intervals are treated as direct zero objects; no B_alpha(0) evaluation or nonzero-basis construction is invoked there."
+  ]
+}

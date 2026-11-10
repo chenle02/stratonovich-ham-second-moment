@@ -1,0 +1,9 @@
+# Foundation12 grade-free terminal technical audit
+
+Native0/wrapper0; fresh session ses_e48e4df63ffeWMsq6qQSRo94OV has exactly two messages/no parent, exact initial DATA user745413 bytes and exact proposed agent. All seven whole literal payload inverses and original aliases match frozen source bytes. All Root-plan pins/config/user/agent/preflight fingerprints unchanged. Exact source-byte collector independently validates actual user, direct DeepSeek V4-Pro/version1.18.31 route, assistant provenance, every active event/export/public part, balanced request step and cache-inclusive usage.
+
+One completed request: input204447/cache0, public17019, reasoning13445, FULLTURN234911. Combined output30464 below262144; input below236909; input+311296=515743 below1048576. One reasoning part was inspected only by type and token metadata. No tools/summary/compaction/additional users/unmatched steps. Both plugin flags and tool0/context/profile metadata remain bound; active hook-list exclusion is source+effective-flag evidence, not a runtime hook trace. Configured plugin inventory is retained separately.
+
+Full55726-byte ungraded public working text is preserved verbatim; all exact12 headings plus final GLOBAL conditions occur once. This is only structural working coverage, not proof correctness, depth, confidence, grade, acceptance, MAIN/cold/visual/adoption. Original collection acceptedfalse/incompletefalse preserved. No public normalization or mathematics adjudication occurred here.
+
+Only this new audit's exact files were written/frozen. No provider/CLI/Git/retry/source/runtime/profile/Root permission or content mutation; no private reasoning semantics or opaque early export inspected/copied. Private export/events remain in original custody and are bound by hashes, not copied into this audit.

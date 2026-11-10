@@ -1,0 +1,7 @@
+# Active depth audit; Kimi availability remains unverified
+
+One actual native firstParty Opus5.5/high five-proof audit started against held clean source carrier44b25617, bound to readiness9d0402a. Native stream init observes claude-opus-5-5 and only Read/Grep/Glob. At the observation it has19 Read requests and no terminal result. Requests alone are not returned full-source coverage. No grade or audit result is claimed. Original source carrier remains frozen; research bookkeeping uses a separate branch.
+
+After two empty terminal image responses the old visual session received no further model requests. A separate native ACP process/session_c7b9bc3c-5014-4f65-adc5-6bada1cf71e9 initialized with the same pinned Kimi2.5.2 binary/config, K3/max/default. Native usage before its probe says context0 and no LLM calls. One separately authorized availability-only tiny text request also ended with0 public bytes/end_turn. No images or manuscript were sent in this fresh session. Model/config metadata proves local route initialization, not remote availability; cause is unknown and no quota failure is inferred. Stop further probes or image retries until a meaningful diagnosis or external availability change. No model substitution, runtime/config/credential/system setup edit or mathematical gate waiver occurred.
+
+Main229/267pages accepted,38 remain. Both required whole mathematical HIGH gates remain unmet. The original full goal remains active. This checkpoint changes neither adopted263 nor unadopted267 manuscript/PDF bytes.

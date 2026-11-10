@@ -1,0 +1,111 @@
+{
+  "scope": "4publicfinitealgebraiccertificates+privateexactPGactivebranchconsumer; no PG1-PG2minimum/PDE/package theorem",
+  "source": "lean-progress/local-checks/positive-gram-v1/StratonovichHAMAudit/PositiveGram.lean",
+  "source_sha256": "d88ece3b0352580037caf78ec028b0811cd155dea0a9c8500901f618ee1ac6a6",
+  "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "lean_binary_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+  "mathlib_pin": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "official_latest": {
+    "leanprover/lean4": {
+      "html_url": "https://github.com/leanprover/lean4/releases/tag/v4.35.0",
+      "published_at": "2026-10-12T18:13:12Z",
+      "tag_name": "v4.35.0"
+    },
+    "leanprover-community/mathlib4": {
+      "html_url": "https://github.com/leanprover-community/mathlib4/releases/tag/v4.35.0",
+      "published_at": "2026-10-13T15:11:23Z",
+      "tag_name": "v4.35.0"
+    },
+    "mathlib_tag": {
+      "sha": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+      "type": "commit",
+      "url": "https://api.github.com/repos/leanprover-community/mathlib4/git/commits/56a005855ea17e0b0958f73ec801ae140b0a1679"
+    }
+  },
+  "selected_dependency_sources": [
+    {
+      "name": "mathlib",
+      "revision": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+      "source_clean": true,
+      "library_exists": true
+    },
+    {
+      "name": "plausible",
+      "revision": "dfa4f38190d07c37e315953e08b90fe2d95b3c24",
+      "source_clean": true,
+      "library_exists": true
+    },
+    {
+      "name": "LeanSearchClient",
+      "revision": "d6b4c7be5be75ec4917c873ac50c756dc1436372",
+      "source_clean": true,
+      "library_exists": true
+    },
+    {
+      "name": "importGraph",
+      "revision": "a41f0e9a4dea23188ea9cc1c41ac9f8bbafe0b93",
+      "source_clean": true,
+      "library_exists": true
+    },
+    {
+      "name": "proofwidgets",
+      "revision": "df72b022e558978a1c50264cfc4d7fec86fa8e04",
+      "source_clean": true,
+      "library_exists": true
+    },
+    {
+      "name": "aesop",
+      "revision": "4a174c490d8707121c4a9290800489f105d85e07",
+      "source_clean": true,
+      "library_exists": true
+    },
+    {
+      "name": "Qq",
+      "revision": "dce0ad79c486cb1fb504af04f953c3466b0c6db8",
+      "source_clean": true,
+      "library_exists": true
+    },
+    {
+      "name": "batteries",
+      "revision": "66e469188fe07963e5cf666c7d4433f45b8131c5",
+      "source_clean": true,
+      "library_exists": true
+    },
+    {
+      "name": "Cli",
+      "revision": "c24fe6078c630e89b489bffe59b3e20ac30d12c8",
+      "source_clean": true,
+      "library_exists": false
+    }
+  ],
+  "borrowed_context": "read-only official-pinned Mathlib dependency cache,9sourceHEADs/indexclean,8librarydirs; no fullMathlibrebuild",
+  "excluded_private_libraries": [
+    "WalshIntegral",
+    "RoughHeatKernel"
+  ],
+  "argv_profile": "lean -j1 -D Elab.async=false; ownedroot first on LEAN_PATH; exact argv/run source hashes in nativearchive",
+  "terminal_results": {
+    "module_compile": 0,
+    "live_type_axiom_actualcalls": 0,
+    "source_only_replay_compile": 0,
+    "source_only_replay_audit": 0,
+    "four_false_variants": 1
+  },
+  "header_fence": "lean-progress/local-checks/positive-gram-v1/statement-fence.json",
+  "five_object_pairs_identical": true,
+  "standard_axioms_only": true,
+  "resource_caps": {
+    "CPUQuota": "200%",
+    "MemoryHigh": "4GiB",
+    "MemoryMax": "6GiB",
+    "TasksMax": 64,
+    "proof_threads": 1,
+    "Elab.async": false
+  },
+  "maximum_simultaneous_units": 2,
+  "archive_members": 117,
+  "archive_readback": true,
+  "early_failures": "dev01 API/Gram rewrite; dev02 fixedleft-versus-fixedright API; bodies/logs preserved,4headers unchanged; thirdcompile PASS",
+  "old_audit_warning": "unusedbinder names corrected without linterdisable; fullpublictypes retained; actualapp output pretty; oldaudit preserved",
+  "search_scope": "rawqueries/coverage retained; seven privatecheckouts unavailable,not absence; reuse Mathlib"
+}

@@ -109,3 +109,67 @@ remains outside Lean. No companion or canonical package gate.
 | Name | Scope | Status |
 |---|---|---|
 | weighted_natural_powers | Natural L>0,q<=L,real x/y, absolute integer powers and realcastweights; exact pinned Mathlib AM-GM reuse | Local compile/audit/owned5artifact replay/3False controls; exacttype/application HIGH scientific e59c29b, native format lineage preserved |
+
+## Reconciled already-accepted local entries (state mirror only)
+
+These25facts were already accepted in PROGRESS.md; sources checked equal
+reviewed scientificGitblobs. No new proof/build/promotion in this inventory.
+
+| Local seam | Public finite facts | Scientific application source |
+|---|---|---|
+| joint-tilt-v1 | 4 | e51432c |
+| moving-cone-v1 | 3 | abfdab4 |
+| actual-event-v1 | 2 | d5dcd46 |
+| raw-variational-v1 | 4 | 0fd2a05 |
+| occupation-form-v1 | 2 | 80e47d6 |
+| raw-value-ceiling-v1 | 2 | ad6c188 |
+| damped-lower-v1 | 3 | 8883160 |
+| global-omega-v1 | 4 | ee188ab |
+| dimensional-matrix-v1 | 1 | 0743b2d |
+
+## Gaussian density split: StratonovichHAMAudit.GaussianTail
+
+| Name | Scope | Status |
+|---|---|---|
+| cutoff_density_split | REAL M>0,x>=M,C>=0,1<nu<2,4C<=M^(2-nu) implies Cx^nu-x²/2<=-M²/8-x²/8; no Gaussian measure or operator assertion | Local clean source/type/stdaxioms/5pairreplay/3falsevariants; COMPLETE actualGLtail application HIGH scientific180bf1a |
+
+## Positive-Gram finite core: StratonovichHAMAudit.PositiveGram
+
+| Public name | Exact application/boundary | Status |
+|---|---|---|
+| scalar_sqrt_dual | Realell,w>0,t>=0; exact2ell sqrt(t)<=ell^2/w+w*t,includingt0 | Localtypes/std3/replay/Falsecontrols; PGapplication26HIGH |
+| gram_norm_square | Finiteindex,realinnerproductspace,anysignedweights; exactnormsum^2=doubleGram | Sameexactgate |
+| active_upper_bound | Finiteactiveindex,positivew,nonnegativeinner(Phi,k)-b; halfnormcost; no minimum/selection | Sameexactgate |
+| half_weighted_entrywise_mono | Finiteindex,w>=0,Cij<=Dij; halfquadraticorder,noPSDdifference | Sameexactgate |
+
+PrivateAudit.active_consumer integratesactiveupper+GramidentitytotheEXACT
+conditionalPGbranchD_A bound; integrationevidence,notfifthpublicfact.
+Scientific4e2219d,FULL26HIGH305.393s checksactualguards/type/application
+anduncoveredPGanalyticproof. WholePGminimum/attainment/realization/PDE
+notLean-certified. Source/types/receipts inlocal-checks/positive-gram-v1/.
+
+## White spatial normalization: StratonovichHAMAudit.WhiteCDF
+
+| Public name | Exact type/application boundary | Status |
+|---|---|---|
+| cdf_square_bound | RealA,b; assumesFORALLrealz,0<=b-2zA+z²/3; proves3A²<=b. ActualCDFidentity must establish the premise analytically. | Source/types/std3/5pairreplay/2Falsecontrols; initialFIT26HIGH and FULLWS25HIGH |
+| energy_upper | Realc,A,b,h3:3A²<=b; cA-b/2<=c²/6. Actualc is covariance mass and physical energy/domain/attainment are analytic. | SameFULLapplicationgate95d7515 |
+
+PRIVATEactual_energy_consumer composes these APIs; notthirdpublicfact.
+SourceSHA4d3f8ee4350f96d5936a4b213c7aff5a312218743ee43b885e3c91a3b100cbcd,
+local-checks/white-cdf-v1/. Currentapplication-summary-v1 separates accepted
+usefromrawpending-statuscompile/guardreceipts.80acceptedfacts22localseams;
+noH1/CDF/integral/Gamma/supremum/PDEkerneltheoremorofficialpackagegate.
+
+
+## Provisional finite-word cutoff: StratonovichHAMAudit.HermiteWord
+
+| Public name | Exact type/application boundary | Status |
+|---|---|---|
+| raw_support | Any types C,B,V, decidable color equality; vacuumGood0, J raises degree upper bound by one in its color, F preserves bound. Ordered word satisfies coordinate occurrence-count bound. | Kernel/audit/source-only replay PASS; initial FIT pending |
+| cut_eq_raw | Same premises, P fixes every Good(d) vector for d<=N and total per-color count<=N; inserting P before/after each J preserves ordered word. | Same;2provisional,0acceptedadded |
+
+Exact full public headers/types in local-checks/hermite-word-v1/. Private scalar Hermite-coefficient recurrence consumer is not a third public fact; actual Gaussian/Hilbert/analytic applications remain outsideLean.
+
+
+Selected-word initial FIT2026-11-08:all8PASS/no repairs butliteralMEDIUM/unaccepted. Bothrows remainprovisional; accepted80facts22seams unchanged. Current local-checks/hermite-word-v1/application-summary-v1.json links complete report. No compiled normalizedmulticolorGaussian/Hilbert orcoupled-frameinstance inferred.

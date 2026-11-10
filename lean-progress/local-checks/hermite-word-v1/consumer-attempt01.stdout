@@ -1,0 +1,22 @@
+Consumer.lean:28:19: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+Consumer.lean:29:36: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  c ≥ 0
+  b ≥ 0
+  a ≥ 0
+  a - c ≥ 0
+  a + b - c ≤ 0
+where
+ a := ↑(d ())
+ b := ↑(if True then 1 else 0)
+ c := ↑(n - 1)
+Consumer.lean:28:19: warning: This simp argument is unused:
+  if_pos rfl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [bump] at hn
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

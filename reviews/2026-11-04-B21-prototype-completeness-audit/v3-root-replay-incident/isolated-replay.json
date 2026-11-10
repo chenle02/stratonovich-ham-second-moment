@@ -1,0 +1,48 @@
+{
+  "method": "fresh disposable sibling copy; all program outputs confined to copy; no incomplete writer monkeypatch",
+  "held_manifest_sha256": "063b261eb4f294d138fb6b434d5b85dd63bab48c14dc4cabbf494f24f817dfc0",
+  "programs": [
+    {
+      "program": "generate_source_map.py",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr_bytes": 0,
+      "exact_outputs": [
+        "source-map.json",
+        "model-view.json",
+        "source-reconstruction-receipt.json"
+      ]
+    },
+    {
+      "program": "build_protocol_schema.py",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr_bytes": 0,
+      "exact_outputs": [
+        "report-schema.json",
+        "operative-grammar.md"
+      ]
+    },
+    {
+      "program": "pure_controls.py",
+      "exit_code": 0,
+      "stdout": "99 pure controls passed",
+      "stderr_bytes": 0,
+      "exact_outputs": [
+        "control-results.json"
+      ]
+    },
+    {
+      "program": "minimum.py",
+      "exit_code": 0,
+      "stdout": "40 minimum checks passed",
+      "stderr_bytes": 0,
+      "exact_outputs": [
+        "minimum-result.json"
+      ]
+    }
+  ],
+  "all_held_files_unchanged": true,
+  "source_or_native_writes": false,
+  "scientific_acceptance": false
+}

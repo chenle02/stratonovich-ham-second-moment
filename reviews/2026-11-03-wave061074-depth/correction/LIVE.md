@@ -1,0 +1,27 @@
+> TERMINAL: one factual supplement fully root-read; raw confidence0.8 unchanged, no HIGH conversion. See terminal/root-adjudication.md. No reviewer is live. The launch record below is historical.
+
+# One scoped wave factual supplement, not a confidence retry
+
+OriginalactualDeepSeek V4 Pro session ses_e5dbc5178ffeww2PMtkV3pITAS finished
+577.197seconds/stop/tools0,14CHECKED and088MATCHED,confidence literalstring0.8.
+Originalsource/prompt/model/frozenframes andall14reportedbindingsverified;
+rootreadall14reasons/application/source/calibration/limits. Numeric0.8isvalid
+underthatfreefieldschema; no posthocHIGHlabel or localstateupgrade. Scope
+remains14sourceproducerproofs/alloriginalΓ and088inputmatching,notwhole093/
+214/image/Kimi/cold/goalclearance.
+
+RootbatchedallknownfactsbeforeONEsame-sessionfactual+coefficientcompletion:
+calibrationK21should1,nott;065captiond2alpha1<d,notd1whiteendpoint;public069
+finiteKproofdoesnotspellallrequestedD/N/E/Fcoefficientworking;088scopeuses
+existingnamedenvelopeinputswithoutnewcompactness/trace/full093certificate.
+Nohigherconfidenceorcategoricalconversionrequested.No furtherautofollowup.
+
+Correctionstarted2026-11-03T18:15:38.371513UTC,PID144011/startticks60986533,
+supervisor144005,exec99846,samesessionexplicit. Prompt4205bytes SHA
+48c879373a7293f90ce46858e7b98bfd461644f3d8eb6d1f9a871fa321598da8.
+Original51membercapsuleSHA967b2bc9b52bc38799d4cfa45db94c0ae1a6d3331d98d41a90ab2afb75d7d1ec
+ispreserved.Rootsource8ce/carriered1e421c1354082cb9df8b2b9f9460d5a46b5a79
+unchanged. Externalnative: siblingstate stratonovich-full-wave-variance-
+depth-packet-v1/correction/native (singleliteralpath). Checkexit.json and
+actualPIDbeforewaiting; exportdirectlytoNEWregularfileandverifyexactoriginal
+2messageprefix/newinput/model/tools/finish/sourcebeforemathematicalreading.

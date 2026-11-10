@@ -1,0 +1,486 @@
+Lemma 35.7 (Exact Rayleigh tail budget). Suppose G is Borel and G(r) ≤ A0 + Crν ,
+C ≥ 0, 1 < ν < 2. If M > 0 and 4C ≤ M 2−ν , then
+                       ∫︂ ∞
+                            r (G(r)−r2 /2)/δ              2
+                             e               dr ≤ 4e(A0 −M /4)/δ .        (35.13)
+                         M δ
+
+In particular the operator-moment bound in (35.11) is finite at fixed parameters.
+Proof. The finite scalar cutoff inequality gives, for r ≥ M , Crν − r2 /2 ≤ −M 2 /8 − r2 /8.
+Its exact guards are M > 0, r ≥ M , C ≥ 0, 1 < ν < 2 and 4C ≤ M 2−ν . Indeed,
+r2−ν ≥ M 2−ν ≥ 4C gives Crν ≤ r2 /4, while r2 ≥ M 2 splits the remaining −r2 /4 into the
+                                                         2                  2
+two displayed negative terms. Analytically, − dr  d
+                                                    [4e−r /(8δ) ] = (r/δ)e−r /(8δ) . Integrating
+                              2                                  2
+gives the front factor 4e−M /(8δ) ; multiplication by e(A0 −M /8)/δ proves (35.13). Such a
+cutoff exists since 2 − ν > 0. On [0, M ] the growth bound gives G(r) ≤ A0 + CM ν , so
+the integral is finite there as well. Apply this to A0 = Cenv (1 + bνδ ) and C = Cenv in the
+preceding proposition. No infinite-dimensional Gaussian density is used. This proves
+Lemma 35.7.
+Lemma 35.8 (The raw half-action supremum). For finite J : H → R bounded above
+on every raw ball, let gJ (r) = sup∥h∥≤r J(h). In the extended reals,
+                        sup{gJ (r) − r2 /2} = sup{J(h) − ∥h∥2H /2}.
+                        r≥0                    h∈H
+
+Proof. For the lower inequality take r = ∥h∥. For the upper inequality, every ∥h∥ ≤ r
+gives J(h) − r2 /2 ≤ J(h) − ∥h∥2 /2. Take first the ball supremum and then the radius
+supremum. Each ball is nonempty with finite supremum, so no infinity-minus-infinity
+expression occurs. No compactness, rank or density assumption is needed. This proves
+Lemma 35.8.
+   The Gaussian transfer retains the half of the single global raw action. The coarse
+envelope is not the sharp spectral/product envelope. Its application to the original
+canonical point moment, and the sharp envelope and variational comparison, require
+their separate proofs.
+
+
+36      Uniform spectral rates and phase products
+Retain every original covariance and amplitude. Set E = H 1/2 × H −1/2 , F = E ⊕ R2 ,
+and mR = η(·/R)2 , R ≥ 1, with the same fixed root profile. Choose
+                    1
+                      < θ < min(1 − a/2, (3 − a − α)/2),   ν = 1/θ,
+                    2
+                    (1 − θ)−1 < r < 2/a,    ν ≤ p < 2 < r.
+The auxiliary γ and higher Hölder exponent for the actual phase construction can be
+chosen in their strict admissible gaps. Write iI : HI → HW for the supported closed
+inclusion. For nonzero covariance the actual field is
+             TR = TR (Ct ⊗ IHsp ),       ∥TR ∥HI →Lr (I;K(E)) ≤ Cmean = M0 ∥Ct ∥,
+
+                                              221
+by Proposition 31.4. For zero covariance set Hsp = HI = {0} and M0 = Cmean = 0.
+Means and their rates are then zero, and mean flows are free; no nonzero-noise estimate
+is needed for that case. The residual comparisons below still act on the nonzero phase
+E.
+
+36.1     The actual E class and its own spectral constants
+For real smooth compact q let Vq = mR (Γ ∗ q), Mq : H 1/2 → H −1/2 be its multiplier and
+LE
+ q (u, v) = (0, Mq u). Let VE,R be their operator-norm closure in K(E).
+
+Lemma 36.1 (Unique potential and fixed-radius lift). Each L ∈ VE,R has the form
+L(u, v) = (0, M u), with ∥L∥ = ∥M ∥ =: k, and determines a unique real V ∈ H −1/2
+supported in supp mR . The actual symmetric pairing satisfies
+                               |vV (u, w)| ≤ k∥u∥H 1/2 ∥w∥H 1/2 .                        (36.1)
+It has a lift LF in the exact class of Section 33, with LF i = iL. Lift constants may
+depend on R and are used only for identification.
+Proof. For zero covariance, L = M = V = LF = 0 gives the claims directly. If LE          n → L,
+                                                   1/2   −1/2
+the zero columns persist and Mn → M in L(H , H                ), with the stated norm equality.
+At fixed R choose real compact smooth χR = 1 near supp mR . Since Mn χR = Vn ,
+∥Vn − Vj ∥H −1/2 ≤ ∥χR ∥H 1/2 ∥Mn − Mj ∥. Thus, Vn → V , with the same support by testing
+outside it. Smooth multiplication on H −1/2 identifies M u = V u on compact tests, then
+on H 1/2 by density. The identity M χR = V gives uniqueness; symmetry and (36.1) pass
+to the limit.
+    The original F operators are (u, v, c1 , c2 ) ↦→ (0, Mn u + c1 Vn , 0, 0). Their differences
+are bounded by (1 + ∥χR ∥H 1/2 )∥Mn − Mj ∥. They therefore converge in the old F class
+and give the lift. This bound is allowed to grow with R; it will enter no uniform estimate.
+Dense smooth raw controls and bounded completion of TR also show that all completed
+mean fields lie in VE,R almost everywhere. Bochner averages preserve this closed linear
+class. Complexification preserves k by the Hilbert real/imaginary splitting. The real
+symmetric pairing becomes Hermitian and its diagonal splits into the two real diagonals.
+This proves Lemma 36.1.
+Proposition 36.2 (Spectral rate in E). For L ∈ VE,R put
+                                                                     √︁
+                β(V ) = inf 1 {∥∇u∥22 − vV (u, u)},         λ(L) =     −β(V ).
+                          u∈H
+                         ∥u∥2 =1
+
+If K ≥ max(1, k), the actual physical wave satisfies, for t ≥ 0,
+     −K 2 ≤ β(V ) = inf spec HV ≤ 0,          ∥PVE (t)∥ ≤ 8(1 + K)2 (1 + t)eλ(L)t .      (36.2)
+If two such operators have norms at most K, then
+                                                                      √︁
+|β(V ) − β(W )| ≤ (K + 2)∥LV − LW ∥,            |λ(LV ) − λ(LW )| ≤     (K + 2)∥LV − LW ∥.
+                                                                                     (36.3)
+Every quantitative constant here uses the E norm alone.
+
+                                              222
+Proof. We derive the budgets without transferring a quantitative F bound. With b =
+∥u∥2 , z = ∥u∥H 1 , Fourier Cauchy–Schwarz gives ∥u∥2H 1/2 ≤ bz. Equation (36.1) and
+the half-weight arithmetic–geometric mean inequality give |vV (u, u)| ≤ Kbz ≤ z 2 /2 +
+K 2 b2 /2. The weights are 1/2, 1/2, bases z 2 , (Kb)2 ≥ 0; positive powers include zero
+norms. For qV = ∥∇u∥22 − vV (u, u) and c = 2 + K 2 ,
+     1 2
+     2
+       z + (1 + K 2 /2)b2 ≤ qV (u) + cb2 ≤ 23 z 2 + (1 + 3K 2 /2)b2 ≤ 3(1 + K 2 )z 2 .          (36.4)
+This is a densely defined closed semibounded Hermitian form on full H 1 : its shifted norm
+is equivalent to the complete H 1 norm. The lower bound dominates 2b2 , since z ≥ b and
+K ≥ 1. From [8, Theorem 2.14, p. 81, (2.63)] and Theorem 3.6, p. 109, (3.51)–(3.53), it
+represents a unique self-adjoint HV with A = HV +c ≥ 2 and D(A1/2 ) = H 1 . Closedness
+uses the definition on that book’s p. 80.
+    Put B0 = 1 − ∆ and LK = 3(1 + K 2 ). The common forms obey 21 B0 ≤ A ≤ LK B0 .
+For positive self-adjoint T, S ≥ 1 with ordered forms, completing the square gives
+           ⟨f, (T + t)−1 f ⟩ = sup{2 Re⟨f, u⟩ − qT (u) − t∥u∥2 } ≥ ⟨f, (S + t)−1 f ⟩.
+                                 u
+               √         ∫︁ ∞
+The identity x = π −1 0 t−1/2 x/(x+ t) dt follows by t = xv 2 . Positive spectral integra-
+tion and Tonelli give square-root form order, with domain inclusions, from I−t(T +t)−1 ≤
+I − t(S + t)−1 . Apply this to (B0 , 2A) and (A, LK B0 ), both pairs at least one:
+                                                                           1/4
+               D(A1/4 ) = H 1/2 ,       2−1/4 ∥u∥H 1/2 ≤ ∥A1/4 u∥2 ≤ LK ∥u∥H 1/2 .
+Under the L2 pairing the dual norm is ∥A−1/4 v∥2 , by Cauchy–Schwarz and the equality
+                                                                                1/4
+test u = A−1/2 v. Completion gives H −1/2 . Thus, with MK = LK , the phase norm
+∥(u, v)∥2EA = ∥A1/4 u∥22 + ∥A−1/4 v∥22 lies between MK−2 ∥(u, v)∥2E and MK2 ∥(u, v)∥2E . The
+                             √︁
+condition cost is MK2 = 3(1 + K 2 ) ≤ 2(1 + K).
+    For unit L2 data, b = 1 and z ≥ 1. The form budget gives qV ≥ z 2 /2 − 1 − K 2 /2 ≥
+−K 2 . A dilated compact unit bump translated wholly off the potential support has
+zero potential pairing and kinetic energy tending to zero, so β ≤ 0. Complex form
+infima agree with real ones: dividing each complex diagonal by its squared norm is
+the convex combination of the two normalized real diagonals, omitting zero parts. The
+spectral form formulas identify β with the spectral bottom by bounded spectral slices.
+There are support points because scalar spectral measures of unit vectors have mass
+one; their arbitrarily small bounded slices give approximate eigenvectors and the reverse
+form bound. Hence λ ≤ K and h +√c ≥ 2 on √            the spectrum.
+                                                           √
+    Define
+       √    Cos t (h), Sin
+                       √  t (h) √by cos(t   h), sin(t  h)/   h for h > 0, by 1, t at zero and by
+cosh(t −h), sinh(t −h)/ −h for h < 0. In the EA isometry the matrix is
+                             (︃                        √                )︃
+                                     Cost (h)
+                                            √            h + c Sint (h)
+                                                                           .
+                                −h Sint (h)/ h + c         Cost (h)
+                                                   √                                           √
+For h ≥ 0, its off-diagonals have bounds 1 + c t and one; at zero their values are c t, 0.
+For β ≤ h < 0, the  √ entries     are bounded using | Cost | ≤    √  eλt , | Sint | ≤ teλt , upper off-
+diagonal at most c teλt , and lower at most Keλt . Since c ≤ 2K, each entry is at most
+
+                                                 223
+2(1+K)(1+t)eλt . Set these entries to zero off the closed spectral support before applying
+bounded Borel calculus. From [8, Theorems 3.1–3.2, pp. 102–104, (3.18)–(3.33)], their
+matrix norm is at most twice that entry bound, and the condition cost gives (36.2).
+Spectral dominated convergence and scalar addition give the group.
+    It is the actual physical E wave. The fixed-R lift in Lemma 36.1 belongs to the
+precise class in Proposition 33.4. Its form is this same qV and has the same self-adjoint
+representative by uniqueness, regardless of the lift’s larger shift. On dense bounded
+spectral cutoffs the two waves have the same Cos, Sin functions of HV . Boundedness
+extends equality to all E. The old graph-core Duhamel identification therefore applies;
+no lift norm or χR constant entered the budgets above. Conjugation commutes with the
+real structures, so real restrictions are the actual phases.
+    Finally, take a unit ε-minimizer for W , 0 < ε ≤ 1. Since β(W ) ≤ 0, it has qW ≤ 1.
+Thus z 2 −1−Kz ≤ 1, which forces z ≤ K +2. The multiplier difference changes its form
+by at most ∥LV − LW ∥∥u∥2H 1/2 ≤ (K + 2)∥LV − LW ∥. Take infima, let ε ↓ 0 and reverse
+V, W . The square-root inequality on nonnegative −β gives (36.3). For zero covariance
+the class is {0}, HV = −∆ and β = λ = 0; the free wave gives the claims directly. This
+proves Proposition 36.2.
+
+36.2       Scalar-time averaging and actual mean budgets
+Proposition 36.3 (Uniform completed-field averaging). Use the true slow partition Im
+with mesh at most δB. Let Aδ average over each positive-length cell; an empty final
+cell is ignored. Put ωδ = ∥(Aδ − I)Ct ∥Ht →Lr (I) . At fixed B, ωδ → 0. For M ≥ 0, if
+∥Φ∥HI ≤ M , WR = TR Φ, W R = Aδ WR and Z = Cmean M , then
+             ∥WR ∥Lr , ∥W R ∥Lr ≤ Z,  ∥W R − WR ∥Lr ≤ M0 M ωδ =: Ωδ (M ),           (36.5)
+                                  ∫︂
+                      RateR (Φ) = λ(TR Φ(s)) ds,                                    (36.6)
+                                      I
+                                     √
+     ∫︂                                     √︁
+           |λ(W R ) − λ(WR )| ds ≤    3 + 2Z Ωδ (M ) =: Λδ (M ) → 0.                (36.7)
+       I
+
+These errors are uniform in R ≥ 1. The rate is finite, nonnegative and continuous on
+HI .
+Proof. Bochner averaging is a contraction on Lr (I; Z ) for any Banach Z , by Jensen.
+For continuous fields on [0, 1], its error is bounded by the modulus of continuity at
+the mesh. Simple-field approximation, followed by continuous approximation of scalar
+indicators in Lr , proves density of those fields. The contraction gives strong convergence
+for every Bochner field. In the scalar case it is uniform on the compact closure of Ct ’s
+unit-ball image, by a finite net and ∥Aδ − I∥ ≤ 2. This proves ωδ → 0.
+    On finite tensors, integration commutes with the fixed bounded TR :
+                            K(E)
+                          Aδ       TR (Ct ⊗ I)Φ = TR ((Aδ Ct ) ⊗ I)Φ.
+The dimension-free Hilbert tensor bound in Lemma 31.3, and ∥TR ∥ ≤ M0 , extend this
+typed identity to the completed HI . Applying it to the difference gives (36.5). Averages
+
+                                               224
+remain in the same closed E operator class. Only scalar-time compactness was used; the
+tensor map is not claimed compact. Nor does this assert noncompactness of a composite
+spatial family: each fixed-radius completed mean is compact.
+   For any two such fields, apply (36.3) with the pointwise bound
+
+                            K(s) = max(1, ∥W1 (s)∥, ∥W2 (s)∥).
+
+Cauchy–Schwarz gives
+          ∫︂                    √︁                    √︁
+             |λ(W1 ) − λ(W2 )| ≤ 3 + ∥W1 ∥L1 + ∥W2 ∥L1 ∥W1 − W2 ∥L1 .
+             I
+
+Continuity of λ on the class makes these quantities measurable. Since |I| = 1, this
+proves (36.7). It also proves rate continuity, while λ(L) ≤ max(1, ∥L∥) gives RateR (Φ) ≤
+1+Cmean ∥Φ∥. For zero covariance the fields and rate errors are zero directly. This proves
+Proposition 36.3.
+   For the remaining proofs use the full parameter package and true B, δ, N, ℓm , Im
+partition of Section 29. For WR = TR Φ define
+             ∫︂ min(u,ℓm )
+  Hm (u) =                 SE (−v)WR (sm + δv)SE (v) dv, Pmmean = SE (ℓm )UHm (ℓm , 0).
+             0
+
+Lemma 36.4 (Explicit physical primitive and growth budgets). Write GB =
+sup|v|≤B ∥SE (v)∥ and CB = G2B [B 1−1/r + B 1−1/r−θ ]. Then 1 ≤ GB ≤ 3B,
+CB ≤ 18B 3−1/r ≤ 32B 3−1/r and CB B 1/r ≥ B. The stopped primitives lie in the
+zero-start little Hölder space and
+                                                    ∑︂
+         ∥Hm ∥θ ≤ am := CB δ −1/r ∥WR ∥Lr (Im ) , δ    arm ≤ CBr ∥WR ∥rLr . (36.8)
+                                                        m
+
+There is a fixed Cgr = Cgr (θ) > 0 such that
+
+                 log ∥SE (ℓ)UD (ℓ, 0)∥ ≤ Cgr B(1 + ∥D∥νθ ),   0 ≤ ℓ ≤ B.           (36.9)
+
+The actual mean endpoints have ∥Pmmean ∥ ≥ 1.
+
+Proof. The balanced free matrix has upper entry ⟨k⟩√sin(vk)/k and lower −k sin(vk)/⟨k⟩.
+Splitting k ≤ 1 and k ≥ 1 bounds the upper by 2B, while the lower and diagonals
+have bound one. At zero the off-diagonals are v, 0. The Frobenius bound gives GB ≤
+√
+  3 + 2B 2 ≤ 3B; SE (0) = I gives GB ≥ 1. The stated CB inequalities follow, including
+CB B 1/r = G2B (B + B 1−θ ) ≥ B. Hölder in time with 1 − 1/r > θ, the affine time change,
+compact conjugation and constant stopping prove (36.8); the true partition sums the
+rth powers, with zero on an empty cell.
+    For the explicit Young budget put d = ∥D∥θ and cθ = 2 max(1, CYoung ), as in the
+local estimate proving Lemma 30.1. If cθ dB θ ≤ 1/4, whole-interval contraction gives
+log sup ∥UD ∥ ≤ log(4/3) < 1/2. Otherwise at most 2B(4cθ d)ν contraction pieces have
+
+                                            225
+norm at most 4/3. Combine their logarithms with log GB ≤ log(4B). For example
+Cgr = 4 + log 4 + 2(4cθ )ν gives (36.9), since B ≥ 1. This is the generic algebra argument
+on L(E) with multiplication norm one, not an unspecified radius-dependent bound.
+    Finally Proposition 34.5 applies exactly: TR is the same compression of the actual F
+mean, with the same one-mask physical model. Its fast direction is δ −a/2 Tδ,m ∗
+                                                                                 iI Φ, finite
+at fixed δ. The completed covariance identity identifies the primitive up to ℓm , then
+stops it. Thus, pure-mean symplectic conservation gives the endpoint norm at least
+one, deterministically for each Φ. No fast-direction cost estimate is used. An empty
+endpoint is I, and the zero-covariance case is the free identity in Lemma 34.1. This
+proves Lemma 36.4.
+
+36.3       Full blocks, the true last cell and polynomial control balls
+Proposition 36.5 (Finite-mesh physical mean-product bound). Fix B as above, M ≥ 0
+and K ≥ 1, and put Z = Cmean M . Uniformly for R ≥ 1, ∥Φ∥ ≤ M ,
+            N
+           ∑︂                                  LB,K
+       δ         log ∥Pmmean ∥ − RateR (Φ) ≤        + Cgr 32r Z r B 3r (K −r + K ν−r )
+           m=0
+                                                B
+                                               + Λδ (M ) + C(θ, B, K)Eδ + Lastδ ,        (36.10)
+where LB,K = log 16 + 4 log(1 + K) + 3 log(1 + B) and
+                        Eδ = (2/B)1−1/r CB Ωδ (M ) + (2/B)1−ν/r CBν Ωδ (M )ν ,
+                     Lastδ = Cgr B[δ + CBν Z ν δ 1−ν/r ].
+The last three terms vanish as δ ↓ 0 at fixed B, K, M .
+Proof. On each positive-length cell use its own Bochner average M m ; set it to zero on
+an empty cell and form the constant-field primitive H m . Put em = CB δ −1/r ∥WR −
+W R ∥Lr (Im ) . Jensen and (36.8) give
+                                       ∑︂                         ∑︂
+∥H m ∥θ ≤ am , ∥Hm −H m ∥θ ≤ em , δ        erm ≤ CBr Ωδ (M )r , δ    arm ≤ DM := CBr Z r .
+                                                                                    ν
+Finite
+  ∑︁ power νmean at exponents r and r/ν > 1, with nonnegative inputs em , em , gives
+δ m (em + em ) ≤ Eδ . Here n = N + 1 ≥ 2, δ > 0 and δn ≤ 2/B; all subsequent powers
+are positive and zero errors are allowed.
+    On full cells only, ∥M m ∥ ≤ (δB)−1/r ∥WR ∥Lr (Im ) = am /(CB B 1/r ) ≤ am /B. Split full
+indices m < N into good am ≤ K and bad am > K. On a good block, Proposition 30.2
+applies with base H m , perturbation Hm − H m and the actual left multiplier SE (B). The
+baseline is the actual static wave of M m by Proposition 36.2. Its norm bound is at most
+K/B ≤ K, so
+                    log ∥Pmmean ∥ ≤ LB,K + Bλ(M m ) + C(θ, B, K)(em + eνm ).
+This sufficient prefactor follows from the bound in E, 8(1 + K)2 (1 + B), by enlarging
+it. Since δN ≤ 1/B, the prefactors sum to at most LB,K /B. Nonnegativity of λ gives
+
+                                                  226
+  ∑︁                  ∫︁
+δ good Bλ(M m ) ≤ I λ(W R ) ≤ RateR (Φ) + Λδ (M ). Bad and last rate cells can be
+dropped in this upper bound.
+    On bad full cells (36.9) gives Cgr B(1 + aνm ). Because am > K ≥ 1 and r > ν,
+1 + aνm ≤ (K −r + K ν−r )arm . Their weighted sum is bounded by Cgr BCBr Z r (K −r + K ν−r ).
+The inequality CB ≤ 32B 3−1/r yields the displayed bad-block term.
+    If ℓN = 0, the last endpoint is I and log ∥I∥ = 0. Otherwise use the actual stopped
+path, not its frozen full-cell formula. Since aN ≤ CB δ −1/r Z, its weighted logarithm is at
+most Lastδ by (36.9). This tends to zero because ν < r, even for arbitrarily short last
+cells; no division by that cell length occurs. Combining these estimates proves (36.10).
+All constants are independent of R. This proves Proposition 36.5.
+Corollary 36.6 (Every polynomial control radius). For cball > 0, κball ≥ 0 put MB =
+cball B κball . Then
+                                      {︄                              }︄
+                                          ∑︂
+                  lim sup lim sup sup   δ    log ∥Pmmean ∥ − RateR (Φ) ≤ 0.
+                B→∞      δ↓0      R≥1          m
+                B∈N             ∥Φ∥≤MB
+
+Proof. Choose s > r(3 + κball )/(r − ν) and KB = B s . At each fixed B, the inner δ limit
+has a fixed finite radius and threshold, so the last three errors in (36.10) vanish first. Its
+bad terms become
+                    Cgr 32r Cmean
+                             r
+                                  crball {B r(3+κball )−sr + B r(3+κball )+s(ν−r) }.
+Both exponents are negative: the second by choice and the first because s > 3 + κball .
+Also LB,KB /B ≤ [log 16 + 7 log 2 + (4s + 3) log B]/B → 0. Thus, the outer integer-B
+limit gives the claim. No diagonal choice Bδ , Mδ is asserted. At fixed parameters all
+primitive maps are bounded linear into separable little Hölder products. Young local
+dependence and positive endpoint norms make the displayed logarithms continuous;
+the rate is continuous by Proposition 36.3. Growth bounds make each control-ball
+supremum finite. A countable dense subset of each closed Hilbert ball has the same
+supremum. Supremum over R is an ordinary deterministic real supremum, not a random
+measurability or compact-family claim. This proves Corollary 36.6.
+
+36.4     Arbitrary small residual paths and the ordered product
+Proposition 36.7 (Residual comparison and the integrated rate). Let xm be arbi-
+trary
+   ∑︁ zero-start little C θ compact-operator paths on [0, B], put vm = ∥xm ∥θ and Y =
+        p 1/p
+(δ m vm   ) . Define
+                                                                       ∏︂ ∥P pert ∥
+                                                                           m
+                 Pmpert = SE (ℓm )UHm +xm (ℓm , 0),           zrat =       mean
+                                                                                .
+                                                                       m
+                                                                         ∥Pm ∥
+
+For fixed integer B ≥ 1, M ≥ 0 and every Kres ≥ 1,
+                 δ log max(1, zrat ) ≤ CKres [(2/B)1−1/p Y + (2/B)1−ν/p Y ν ]
+                                                    −r     ν−r
+                                       + cB DM (Kres   + Kres  ),                      (36.11)
+
+                                                   227
+uniformly in R ≥ 1, ∥Φ∥ ≤ M . Here DM = CBr (Cmean M )r . If bδ ≥ 0 is any de-
+terministic sequence tending to zero at each fixed B, MB is as in Corollary 36.6, and
+F = 2δ log max(1, ∥PNpert · · · P0pert ∥), then
+
+                   lim sup lim sup      sup         {F − 2 RateR (Φ)} ≤ 0.         (36.12)
+                     B→∞     δ↓0     R≥1, ∥Φ∥≤MB
+                     B∈N                 Y ≤bδ
+
+No Gaussian, Cameron or Hamiltonian condition on the residuals is imposed.
+Proof. All endpoint norms are positive by the actual Young and free inverses. On every
+cell with am ≤ Kres apply Proposition 30.2 with base Hm , perturbation xm and left
+                                                                              ν
+multiplier SE (ℓm ). It gives logarithmic ratio at most C(θ, B, Kres )(vm + vm  ). On cells
+                                       ν     ν−1 ν     ν
+with am > Kres use (36.9), (am +vm ) ≤ 2 (am +vm ) and the actual mean denominator
+∥Pmmean ∥ ≥ 1. The logarithmic ratio is at most cB (1 + aνm + vmν
+                                                                   ), with cB independent
+of Kres , R, δ, Φ, M . Increase CKres to dominate both good and bad residual constants.
+Summation gives a nonnegative bound
+                                           ∑︂                ∑︂
+                                                    ν
+                 log max(1, zrat ) ≤ CKres   (vm + vm ) + cB      (1 + aνm ).
+                                         m                    am >Kres
+
+                                            −r       ν−r
+The bad sum times δ is at most DM (Kres          + Kres  ). Finite power  mean at exponents
+  ≥ 1 and p/ν ≥ 1, with nonnegative inputs vm , vm , gives δ vm ≤ (2/B)1−1/p Y and
+                                                        ν
+                                                                   ∑︁
+p ∑︁
+     ν
+δ vm    ≤ (2/B)1−ν/p Y ν . This includes p = ν, zero entries and the true empty block,
+with no singular powers. ∏︁
+                          It proves (36.11).
+    The product Aprod = m ∥Pmmean ∥ is at least one. Submultiplicativity, without com-
+mutation, gives
+                    max(1, ∥PNpert · · · P0pert ∥) ≤ Aprod max(1, zrat ),
+                               ∑︂
+                      F − 2δ      log ∥Pmmean ∥ ≤ 2δ log max(1, zrat ).
+                               m
+
+At fixed B, M, Kres the residual terms vanish on Y ≤ bδ . Let δ ↓ 0 first and then
+Kres → ∞. Since r > ν, the residual excess has limsup at most zero, uniformly in
+R, Φ. Now take M = MB at each fixed B and combine with Corollary 36.6; a supre-
+mum of sums is no larger than the sum of the suprema. The outer integer-B limit
+proves (36.12). The endpoint functional is continuous on all tuples by generic Young
+local dependence, including nonphysical residuals. Nothing was multiplied as scalar
+displacement moments. This proves Proposition 36.7.
+   These are uniform deterministic E-phase product estimates. Their Gaussian
+Rayleigh application, original point transfer and signed-positive score comparison
+remain separate steps.
+
+
+37     Targets
+Goal 37.1 (Upper bound at the correct scale). Under Hypothesis 1.1, prove
+lim supt→∞ t−κ log Eu2 (t, x) < ∞, ideally with an explicit constant.
+
+                                              228
+ Theorem 13.8 establishes the unchanged full upper goal for every admissible dimen-
+ sion and homogeneous covariance. The interval estimate passed scoped correctness
+ review. The preceding independent mild construction passed correctness review.
+ The explicit hypothesis/object revision and independent fixed-order construction
+ and their consumers passed their own scoped Opus5.5/HIGH review. A fresh whole-
+ paper cold read remains required. The earlier explicit bounds for 0 < α ≤ 1 remain
+ available. The sharp constant and final whole-paper cold read remain open.
+
+
+Goal 37.2 (Sharp second-moment constant). Under Hypothesis 1.1, derive a finite con-
+stant C2 (γ, α0 ) and prove, for every fixed x ∈ Rd ,
+
+                            lim t−κ log Eu2 (t, x) = C2 (γ, α0 ).
+                            t→∞
+
+A variational characterization must specify its full domain, covariance amplitude, ki-
+netic coefficient and Gaussian action. Derive further evaluations and bounds from this
+formula. For zero covariance, u(t, x) = 1 and C2 (0, α0 ) = 0.
+
+
+ Goal 37.2 follows Le’s revised direction of 2026-10-31: derive the actual constant,
+ whatever the computation gives. The original proposed bounds with endpoints
+ 2(4−α)/(3−α) L∗ and 2(4−α)/(3−α) L∗ remain comparisons with Conjecture 2.3. Matching
+ those endpoints or closing the source’s variational gap is not a completion require-
+ ment. No correction of the source’s normalization or equality of its energy domains
+ is adopted.
+
+
+
+38     Established steps and open questions
+1. The mixed expansion and the first obstruction. Section 3 proves the complete
+   nonnegative mixed expansion and an independent convergent solution series. It cor-
+   rects the time-uniformity issue in the source’s intermediate estimate. The common-
+   per-pairing majorant has exponent ρ > κ and cannot give the desired scale. This is a
+   restriction on that majorant, not on the model or all uses of the source’s Theorem 3.1.
+
+2. Calibrations. Section 4 gives the finite white and Riesz coefficients. As α0 ↓ 0,
+   the target exponent becomes (4 − α)/(3 − α), the static exponent. Proposition 2.4
+   is unconditional; its numerical 2L∗ specialization requires the stated first-moment
+   premise. Comparisons with the Skorohod model identify time exponents only.
+
+3. The full upper scale. Section 5 gives explicit bounds when α ≤ 1. Section 13
+   proves the full homogeneous-covariance upper scale by independent interval fields,
+   local Gaussian-degree estimates and dyadic covariance domination. The latter proof
+   does not assume an endpoint representation of the spatial covariance.
+
+
+                                            229
+4. The sharp constant remains open. Goal 37.2 requires a lower bound beyond
+   the unconditional Jensen comparison and a matching sharp upper constant. The
+   new candidate in Section 14 supplies a static lower comparison for all admissible
+   temporal exponents and a strict actual-mean gap only near the static endpoint; these
+   proofs passed their own scoped review. A representation using two ordered chains
+   is a possible research direction, not a proved result of these notes. The intended
+   normalization of the source’s first-moment constants also remains to be clarified.
+
+
+References
+[1] Raluca M. Balan and Daniel Conus, Intermittency for the wave and heat equations with fractional
+    noise in time, Ann. Probab. 44 (2016), 1488–1534 (); MR3474476
+[2] Xia Chen, Exponential asymptotics for Brownian self-intersection local times under Dalang’s con-
+    dition, Electron. J. Probab. 28 (2023), Paper No. 119, 17 (); MR4660700
+[3]          , Time-dependency     in   hyperbolic   anderson   model:   Stratonovich   regime,   Preprint
+      arXiv:2510.01412 (2025) ()
+[4]          , Time-dependency in hyperbolic Anderson models: Stratonovich regime, 2026. 64-
+      page author manuscript, submitted to Ann. Appl. Probab.; retrieved 2026-10-26, SHA-256
+      5f7385ca451e643a1f3ff31835e4ee52b2708b5d2e3652eec3fb5d3958b97b6c; supersedes Theorem 1.2 of
+      arXiv:2510.01412v1.
+[5] Xia Chen and Yaozhong Hu, Hyperbolic anderson equations with general time-independent gaus-
+    sian noise: Stratonovich regime, Ann. Probab. 53 (2025), 2144–2195. Available at 2403.08603 ();
+    MR4988274.Published version of arXiv:2403.08603
+[6] Michel Crouzeix and César Palencia, The numerical range as a spectral set, 2017. Author preprint,
+    arXiv:1702.00668v1; numbering used here refers to this version.
+[7] Peter K. Friz and Martin Hairer, A course on rough paths, Universitext, Springer, Cham, [2020]
+    ©2020. With an introduction to regularity structures, Second edition of [ 3289027]. MR4174393
+[8] Gerald Teschl, Mathematical methods in quantum mechanics, Second, Graduate Studies in Math-
+    ematics, vol. 157, American Mathematical Society, Providence, RI, 2014. With applications to
+    Schrödinger operators. MR3243083
+
+
+
+
+                                                     230

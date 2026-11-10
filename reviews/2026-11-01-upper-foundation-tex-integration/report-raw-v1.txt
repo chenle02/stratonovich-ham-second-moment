@@ -1,0 +1,163 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    ".review/required-sources.json: lines 1-188 complete (read plan; earns no read credit)",
+    "notes/integrated_cameron_mean.tex: lines 1-510 complete",
+    "notes/integrated_young_upper_foundation.tex: lines 1-110 complete",
+    "notes/upper-cameron-compactness.md: lines 1-500 complete",
+    "notes/integrated_spatial_occupation.tex: lines 1-428 complete",
+    "notes/integrated_compact_gaussian.tex: lines 1-639 complete",
+    "notes/integrated_actual_operator_driver.tex: lines 1-597 complete",
+    "notes/integrated_source_convergence.tex: lines 1-491 complete",
+    "notes/integrated_constant_phase_young.tex: lines 1-497 complete",
+    "notes/integrated_raw_block_lower.tex: lines 1-629 complete",
+    "reviews/2026-10-31-upper-gaussian-projection-screen/scientific-adjudication-v1.md: lines 1-48 complete",
+    "reviews/2026-10-31-upper-young-perturbation/scientific-adjudication-v1.md: lines 1-45 complete",
+    "reviews/2026-11-01-spatial-occupation-tex-integration/adjudication-v1.md: lines 1-71 complete",
+    "reviews/2026-11-01-compact-gaussian-tex-integration/adjudication-v2.md: lines 1-60 complete",
+    "reviews/2026-11-01-actual-driver-tex-integration/adjudication-v2.md: lines 1-52 complete",
+    "reviews/2026-11-01-source-convergence-tex-integration/adjudication-v1.md: lines 1-53 complete",
+    "reviews/2026-11-01-moment-young-tex-integration/adjudication-v1.md: lines 1-62 complete",
+    "reviews/2026-11-01-raw-lower-tex-integration/adjudication-v1.md: lines 1-82 complete",
+    "reviews/2026-10-31-upper-gaussian-projection-screen/mathlib-finite-holder-type-v1.txt: lines 1-18 complete",
+    "reviews/2026-10-31-upper-gaussian-projection-screen/falsification-v1.md: lines 1-85 complete",
+    "reviews/2026-10-31-upper-young-perturbation/falsification-v1.md: lines 1-34 complete",
+    "reviews/2026-10-31-upper-young-perturbation/primary-young-excerpt-v1.txt: lines 1-50 complete",
+    "reviews/2026-10-31-upper-young-perturbation/primary-young-custody-v1.json: lines 1-38 complete",
+    "reviews/2026-11-01-upper-foundation-tex-integration/source-young-statement-v1.txt: lines 1-14 complete",
+    "reviews/2026-11-01-upper-foundation-tex-integration/source-young-proof-v1.txt: lines 1-93 complete",
+    "reviews/2026-11-01-upper-foundation-tex-integration/source-custody-v1.json: lines 1-27 complete",
+    "reviews/2026-11-01-upper-foundation-tex-integration/target-v1.md: lines 1-102 complete",
+    "reviews/2026-11-01-upper-foundation-tex-integration/target-freeze-v1.json: lines 1-27 complete",
+    "reviews/2026-11-01-upper-foundation-tex-integration/finite-reuse-preflight-v1.json: lines 1-15 complete",
+    "reviews/2026-11-01-upper-foundation-tex-integration/finite-application-map-v1.md: lines 1-22 complete",
+    "reviews/2026-11-01-upper-foundation-tex-integration/crosswalk-v1.md: lines 1-21 complete",
+    "reviews/2026-11-01-upper-foundation-tex-integration/worker-honesty-v1.md: lines 1-34 complete",
+    "reviews/2026-11-01-upper-foundation-tex-integration/prompt-v1.md: lines 1-87 complete",
+    "reviews/2026-11-01-upper-foundation-tex-integration/model-context-v1.tex.txt: lines 1-107 complete",
+    "reviews/2026-11-01-upper-foundation-tex-integration/bibliography-input-v1.txt: lines 1-14 complete",
+    "reviews/2026-11-01-upper-foundation-tex-integration/build-v1.json: lines 1-53 complete",
+    "reviews/2026-11-01-upper-foundation-tex-integration/rendered-section-v1.txt: lines 1-480 complete",
+    "reviews/2026-11-01-upper-foundation-tex-integration/page-v1-188.png through page-v1-197.png: all 10 images viewed in full",
+    "reviews/2026-10-31-upper-young-perturbation/friz-hairer-pdf028.png, friz-hairer-pdf075.png, friz-hairer-pdf076.png: all 3 images viewed in full"
+  ],
+  "checks": [
+    {
+      "claim": "Lemma cameron-fractional-products: H^1 product completion, real radial bands including the low block, the bound on the sum of N(f_j), absolute a.e. series, two-position null transfer, and (29.1)-(29.2)",
+      "verdict": "PASS",
+      "reason": "Hand-checked. (28.7) with f1=f3=f, f2=f4=g gives the H_sp bound sqrt(R_sp)N(f)N(g), and expanding product differences gives the Cauchy property. On |xi|<2^j, ||grad f_j||<=2^j||f_j|| gives N(f_j)<=2^{j alpha/4}||f_j||_2, and j=0 has factor 1. On a band with j>=1, 2^{js}<=2^s<xi>^s gives the exact 2^{2s} factor. C_s=2^s(sum 2^{-2j(s-alpha/4)})^{1/2}. The interval alpha/4<s<1/2 is nonempty because alpha<2. The a.e. bound on the four-fold band sum is transferred at both positions x and x-y by Lemma spatial-physical-pair, then Tonelli gives C_s^4 R_sp. Absolute H_sp convergence of the double series gives (29.1) with C_s^2 sqrt(R_sp). The partial sums are genuine H^1 products. No Lp multiplier, Fatou-only equality or supremum embedding is used."
+    },
+    {
+      "claim": "Prop cameron-spatial-map: exact velocity dual, row identity (29.4), null quotient, compact values and a compact MAP on actual F",
+      "verdict": "PASS",
+      "reason": "<T_sp q z,w>_F=<V(z1+c1),w2>_{H^-1/2}=int V(z1+c1)Lambda^-1 w2, with V=eta^2(Gamma*q). This factors as int (Gamma*q)(eta z1+c1 eta)(eta w')=B_Gamma(k,q)=B_Gamma(q,k) by evenness. ||w'||_{H^1/2}=||w2||_{H^-1/2} is exact. Prop cutoff-singular-values with (sigma,gamma)=(s,1/2-s) gives compact factor families, and (-1/2,1) gives compactness of smooth images; the c1 column is finite rank and the c2 column is zero. A bilinear continuous image of a compact set is compact, which gives L. Self-adjoint Q_n, the finite-net argument and finite rank give operator-norm limits of finite-rank maps, so the map itself is compact. The mask is applied once and the root eta only factors states."
+    },
+    {
+      "claim": "Lemma cameron-supported-tensor: tensor identity, density with legal support and error bound, closed H_I, smooth supported ON basis, P_J orthogonal on H_W",
+      "verdict": "PASS",
+      "reason": "On separated tests the raw form factors by absolute Fubini. For G bounded by eps on I x A, x and x-y in A force y in A-A, which gives the printed eps^2|A|Gamma(A-A) int int |s-t|^-a. Time partitions keep support inside I x R^d. Gram-Schmidt preserves smooth compact support. The finite formula sum <.,e_j>e_j is orthogonal on H_W. No time-indicator multiplier or time independence is claimed."
+    },
+    {
+      "claim": "Prop cameron-temporal-map: Schur, strict positivity, compactness, iota isometry onto L2, Lr compactness, non-trace and non-HS",
+      "verdict": "PASS",
+      "reason": "The ordinary transform of exp(-lambda|v|) is 2 lambda/(lambda^2+xi^2), and the unitary f-hat gives the displayed form. The Gamma integral is correct. The truncation error Schur bound 2 eps^{1-a}/(1-a) is exact. Density of the range holds because K^{1/2} has trivial kernel and tests are L2 dense. Young: u=r/2 and v=r' satisfy 1/u+1/v=1+1/r and u,v<r because r>2; the Holder reciprocals sum to 1. The r-th power integration closes to ||f||_u^r||h||_v^r. K_a is in L^{r/2} iff r<2/a. Interpolation gives compact Lr with r_2 in (r,2/a). Cell double integral: 2h^{2-a}/((1-a)(2-a)) with h=1/N, multiplied by N and summed over N cells, gives 2N^a/((1-a)(2-a)) exactly. The trace is infinite, and because iota is unitary the HS norm squared of K^{1/2}iota equals Tr K, which is infinite."
+    },
+    {
+      "claim": "Prop cameron-full-mean: dimension-free Hilbert-valued bound, single spatial covariance, actual smooth mean, compact T and epsilon_J->0",
+      "verdict": "PASS",
+      "reason": "The field estimate follows from pointwise Cauchy-Schwarz with the nonnegative kernel and Young applied to ||g_s||. Duality with ||U||^{r-2}U and L^{r'} coefficient approximation closes with no dimension factor. The separated identity is (Kf)(s)iB_F(m_R Gamma*q). General smooth tests follow from uniform support approximation, the finite time row, local Gamma mass and the L^infinity+L^2 multiplier bound. T_n=sum_j C_t(ext_j)T_sp q_j is compact, and ||T-T_n||<=||T_sp(I-Q_n)||C_{a,r}. The weak-null contradiction is valid because a compact operator maps weakly null sequences to norm-null ones. General H controls are stated only as completed operator fields."
+    },
+    {
+      "claim": "Block setup and parameters (29.8): true partition and nonempty intervals",
+      "verdict": "PASS",
+      "reason": "s_N+delta ell_N=1, so the intervals partition [0,1] with a possibly empty last interval. N>=1 because delta B<1. 1/(1-theta)<2/a iff theta<1-a/2. The driver threshold is positive above 1/2 because a<1 and a+alpha<2. theta>1/2 gives 1/theta<2 and forces r>1/(1-theta)>2. The stated intervals are nonempty."
+    },
+    {
+      "claim": "Lemma cameron-actual-residual: transfer, genuine F extension, beta/beta2 reading, stopping at true ell_m, little-Holder tuple, rows in H_I, scalar statistics in closed W(H_I)",
+      "verdict": "PASS",
+      "reason": "Var Y<=||f||^2 satisfies the hypothesis of Prop source-gaussian-transfer with C=1. The localization argument of Prop constant-phase-driver passes termwise to the transferred limit, so A=iM_Y L_psi is well defined and keeps both constant columns. Reading the driver at (beta,beta2) with theta<beta<beta2 is allowed by (E:driver-parameters). Compact-valued C^beta paths have polygonal approximants converging in C^theta by interpolation. Rows up to ell_m have slow support in I_m, inside [0,1]. Endpoint approximation is dominated against the integrable kernel and local Gamma. Q_J preserves H_I. The noise W(P_H Q_J T f) has identical observed rows, with coefficient tests in H_I, and its scalar L2 limits lie in closed W(H_I). Original global basis tests are not assumed supported. The empty last interval gives the zero path."
+    },
+    {
+      "claim": "Prop cameron-actual-embedding: covariance (29.9), Jacobian, both constant responses, compact Bochner integral, S_F matrix and conjugation continuity",
+      "verdict": "PASS",
+      "reason": "<Q_J T f,Phi>=<T f,Q_J Phi>, and the substitution s=s_m+delta v gives delta^{a/2-1}*delta=delta^{a/2}. Multiplying by delta^{(1-a)/2} gives sqrt(delta). F-constant block: c1+v c2, so both columns are retained. The Bessel coordinate computation reproduces exactly the printed entries <xi>sin(v|xi|)/|xi| and -|xi|sin(v|xi|)/<xi>. The adjoint is the transpose, bounded by C(1+B). Conjugation of compact A is norm continuous by strong convergence on compact images and on A* images. Norm continuity of S_F itself is not claimed."
+    },
+    {
+      "claim": "Primitive estimate (29.12), exact C_B, delta^{-1/r}, norm and final bound (29.11)",
+      "verdict": "PASS",
+      "reason": "Holder gives increment <=sqrt(delta)G_B^2|du|^{1-1/r}delta^{-1/r}t_m. The sup and seminorm terms give G_B^2[B^{1-1/r}+B^{1-1/r-theta}]. The exponent 1-1/r-theta is positive by r>1/(1-theta). Then (delta sum x_m^p)^{1/p}<=sqrt(delta)C_B delta^{1/p-1/r}(sum t^p)^{1/p}<=sqrt(delta)C_B(delta n)^{1/p-1/r}||M||_{Lr}. delta n<=2/B and ||M||<=epsilon_J||Phi|| give (29.11) exactly. The weighting is delta, not delta B."
+    },
+    {
+      "claim": "Finite Mathlib application: fidelity to the supplied type and all guards (kernel deduction not re-voted)",
+      "verdict": "PASS",
+      "reason": "Type: hp 1<=p and hf nonnegativity give (sum f)^p<=card^(p-1) sum f^p, with standard axioms printed. Instantiation: p:=r/p>1, f_m:=t_m^p>=0 including zero terms, card=N+1=n>=2, and n<=2/(delta B) from delta B<1. (t^p)^{r/p}=t^r for t>=0, and the 1/r power gives the displayed bound. sum t_m^r=||M||^r_{Lr(I)} is an analytic partition fact, not a kernel fact. No new compile or fact is claimed."
+    },
+    {
+      "claim": "First-chaos Cameron identification: H_seen, ker L, minimum preimage norm, no inverse covariance or new law",
+      "verdict": "PASS",
+      "reason": "l(L Phi)=E[W(k_l)W(Phi)]=<k_l,Phi>. Hahn-Banach gives ker L=H_seen^perp. The closed first chaos of X is W(H_seen), so the Cameron space is L(H_seen) with the H norm, which equals the minimum raw preimage norm after orthogonal projection. An operator bound on all of H is therefore the embedding bound. Density extension is justified by Bochner Cauchy-Schwarz and the (29.12) bound on the right side."
+    },
+    {
+      "claim": "Lemma young-upper-growth: generic Banach hypotheses, small and large cases, no prefactor, uniform Ctheta inverse",
+      "verdict": "PASS",
+      "reason": "(22.10) uses only completeness of the path space and multiplication of norm one, so it transfers to any nonzero Banach space B(X). Small case: ratio rho<=1/4 gives N<=1/(1-rho), and -log(1-rho)<=2 rho. Large case: the expression inside the ceiling exceeds 1 exactly iff c d B^theta>1/4, and n_D^{-theta}B^theta(c d)<=1/4 by nu theta=1. Composition gives (4/3)^{n_D}. At d=0, U=I. For the inverse: N_l(Q-I)<=1/3, the Neumann inverse is <=3/2, and a pair closer than the piece length crosses at most one boundary, which gives the concavity factor 2^{1-theta}. The inverse identity sign is correct."
+    },
+    {
+      "claim": "Prop young-upper-multiplicative: left order, Z integral, remainder sum, product identity, exact ||A U_H(t)|| for any bounded A",
+      "verdict": "PASS",
+      "reason": "G is C^theta in L(B(X)), and the primary Young estimate with V=W=B(X) gives ||Z||_theta<=L'x and Z_{s,t}=R(s)X_{s,t}U(s)+O(|t-s|^{2theta}). Exact expansion: P_{s,t}=U_{s,t}V(s)+U(s)V_{s,t}+U_{s,t}V_{s,t}, with U(s)R(s)=I, gives (H+X)_{s,t}P(s)+O(|t-s|^{2theta}). The remainder sum is <=mesh^{2theta-1}B. P is C^theta, so left sums converge and uniqueness gives U_{H+X}=U_H U_Z. Applying (30.1) to Z gives exp(C(x+x^nu)), and at x=0 the factor is exactly 1. Left multiplication by A needs no inverse of A. No density, scalar commutation or quadratic correction appears."
+    },
+    {
+      "claim": "E1 statement and proof slice correspondence with the supplied source, and exclusion of E2-E4",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "All E1 statement and proof steps are carried over faithfully, and no E2-E4 content appears. The source's K>=1 quantifier appears in the TeX lemma but is not repeated in Prop young-upper-multiplicative (see minor finding)."
+    },
+    {
+      "claim": "C3 Sections 1-8 and adopted clarification correspondence, fixed R, Section 9 only as context",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Every mathematical step of Sections 1-8 and the crosswalk rows are present with matching constants. No uniform-R positive claim appears, and the closing text disclaims one. Some source sentences are compressed (see minor findings); none changes a claim or leaves an unprovable step."
+    },
+    {
+      "claim": "Primary Friz-Hairer correspondence, printed pages 13, 61-62",
+      "verdict": "PASS",
+      "reason": "The three PNGs show printed p.13 (Young integration with L(V,W)-valued integrand and V-valued integrator for general Banach spaces), p.61 (4.1) Riemann-Stieltjes sums and the alpha+beta>1 convergence, and p.62 (4.2)-(4.3). Applied exponents alpha=beta=theta>1/2. No nonlinear bounded-vector-field or analytic-semigroup theorem is used. The citation and bibliography entry [7] match."
+    },
+    {
+      "claim": "Rendered pages 188-197 against TeX: signs, powers, norms, covariance factors, ordering, labels, proof ends, clipping",
+      "verdict": "PASS",
+      "reason": "All ten PNGs viewed. Equations (29.1)-(29.12) and (30.1)-(30.3) agree with the source: free-matrix signs, sqrt(delta), (2/B)^{1/p-1/r}, delta^{-1/r}, C_B, and LEFT order. The rendered cross-references 28.1, (28.7), 18.6, 20.2, 25.1, (25.2), (25.6), 22.4 and (22.10) are consistent with the parent order, and the supplied label search located each parent label. All nine proofs end with their This-proves sentence and a QED box. No clipping or overlap was observed. Pages 196-197 are unchanged-context target, roadmap and bibliography material."
+    },
+    {
+      "claim": "Scope limits: no concentration, original point upper, exact limit, p1/Chen identity, instantaneous Gaussian field or trace-class claim",
+      "verdict": "PASS",
+      "reason": "The final paragraph and Prop temporal-map state these limits explicitly, and no later consumer is introduced. All original nonzero Gamma, dimensions, amplitudes and white/subcritical cases are retained with no narrowing. The 73/19 versus 80/22 difference is dated bookkeeping and does not alter these claims."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Prop cameron-spatial-map uses s without fixing it. Optional: say 'fix s in (alpha/4,1/2)' and recall that alpha<2 follows from alpha_0>0 and alpha+alpha_0<2, so the interval is nonempty.",
+      "Prop cameron-full-mean leaves r implicit from Prop cameron-temporal-map, and leaves unstated whether the finite tensors have smooth f_j or general H_t coordinates. Optional: state 2<r<2/a and smooth or H_t coordinates, extended through C_t. The later r in (29.8) lies in that range, so epsilon_J is consistent.",
+      "In Prop cameron-temporal-map, the phrase '(29.5) first gives compactness into L^2' refers to an equation displayed with target L^r; the source displays the L^2 version separately. The intended object K^{1/2}iota into L^2 is unambiguous. Optional wording improvement.",
+      "Prop young-upper-multiplicative does not restate K>=1 from the source and Lemma young-upper-growth. It is harmless: replace K by max(K,1). Optional to restate.",
+      "Real invariance of real cutoffs and Bessel weights (adopted clarification 9) and the source's explicit 'representative independence' and 'joint four-linear continuity on H^s' wording are compressed in the TeX. They follow directly from the closed real subspaces, Lemma spatial-physical-pair and (29.2). Optional to restate.",
+      "Prop cameron-actual-embedding compresses the indicator-row covariance to 'Literal rows'. The required approximation for signed Q_J Phi is the same argument as in the proof of Lemma raw-block-inputs together with the 'absolute Fubini for signed tests' sentence. An explicit pointer would help a cold reader.",
+      "The target's retained white growing-R negative guard appears in the TeX only as a disclaimer of any uniform-radius tail, not as the Section 9 construction. This matches the review contract (context, not a new result). A one-line pointer could be added at final assembly.",
+      "Reused symbols have local meanings: s (Sobolev index or time), N (functional or block count), l (functional or block length), Q_n, Q_J and Q_s, and B_F, B_Gamma and integer B. No actual application was found ambiguous. Global renaming is optional presentation work.",
+      "The empty parentheses in bibliography entries [1]-[3] and [5], and the roadmap on pages 196-197 omitting the new sections, are prior presentation debt. They make no new mathematical or completion claim."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "AI read-only review. Not human verification, a novelty audit, a whole-paper cold read, publication clearance or final-goal clearance.",
+    "Author build, hash, Git, unchanged-prior-proof-body and preformat evidence was not executed or independently confirmed by this reviewer; PNG hashes were not recomputed. They are reported author or harness evidence, distinct from the hand scientific checks above.",
+    "Supplied parents were checked for fit of each new application and were not broadly recertified. Parent inputs not in the packet, including the wave-variance section, P:actual-wave-form, E:variance-dual-wave, the temporal-equilibrium file and the deeper UL and compact-mean sections, are used only through their accepted statements in supplied parents.",
+    "Primary source coverage is selected Friz-Hairer pages (printed 13, 61, 62) and the excerpt only, not a full-book or publisher audit. Only the excerpted E1 slices and complete C3 source were compared; later E2-E4 were excluded as instructed.",
+    "No Lean, numeric or script execution was run. The Mathlib fact was reviewed for type fidelity and actual guards only. All analytic, Gaussian, compactness and Cameron conclusions remain informal written proofs, not kernel-certified. Finite controls in the falsification records are not continuum or numerical certificates.",
+    "This result covers fixed-R C1-C3 and generic E1 only. It gives no concentration, nonlinear Gaussian product, uniform-R tail, original point upper, exact limit, p1/Chen identity, source repair or Skorohod conclusion.",
+    "Gold-standard self-check: NOT gold standard - this is one independent read-only review of a section integration, not whole-paper certification. To close: complete the remaining integration and whole-paper gates; the remaining human and publication decisions need Le's decision."
+  ]
+}

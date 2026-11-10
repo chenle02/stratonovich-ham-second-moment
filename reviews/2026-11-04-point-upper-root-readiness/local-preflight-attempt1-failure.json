@@ -1,0 +1,32 @@
+{
+  "scope": "FAILED_LOCAL_PREFLIGHT_ASSERTION_PRESERVED_NO_PROVIDER",
+  "observed_utc": "2026-11-04T11:28:24.987177+00:00",
+  "failed_code_preflight_sha256": "47d781e6c46af32fd048cc3f86c97794dc6393c5b79ff36a59c61c9e47e19247",
+  "plan_sha256": "e8fb9afec485f50456a622a82a9a0f7f5de449fbb2df31160cca5aabdcf29af8",
+  "failure": "Strict all-rules-after-last-universal-deny assertion rejected the builtin external_directory tool-output allowance.",
+  "permission_rule_count": 2925,
+  "last_universal_deny_index": 2923,
+  "post_deny_rule_count": 1,
+  "post_deny_rules": [
+    {
+      "permission": "external_directory",
+      "pattern": "<HOME>/.local/share/opencode/tool-output/*",
+      "action": "allow"
+    }
+  ],
+  "all12_tools_false": true,
+  "model": {
+    "providerID": "deepseek",
+    "modelID": "deepseek-v4-pro"
+  },
+  "source_prompt_manifest_103carrier_unchanged": true,
+  "manifest_members_rehashed": 147,
+  "carrier_head": "1bdb4101c59effac0e2fdee203bb927134aed52e",
+  "safe_preflight_receipt_created": false,
+  "native_directory_exists": false,
+  "provider_calls": 0,
+  "full_agent_permission_dump_not_for_delivery": "Preserved only in external diagnostic file; concise permission summary here.",
+  "official_semantics_source": "https://docs.opencode.ai/docs/permissions/",
+  "source_semantics": "Last matching rule wins; external_directory is a separate guard in addition to permissions keyed by tool name.",
+  "next_action": "Prepare and independently inspect bounded tool-effective-deny amendment in separate v2 directory; no input/config/model/global edits or provider retries."
+}

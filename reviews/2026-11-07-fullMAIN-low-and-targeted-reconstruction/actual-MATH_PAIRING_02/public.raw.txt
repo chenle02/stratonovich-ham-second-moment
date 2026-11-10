@@ -1,0 +1,419 @@
+## A. Fully indexed Brownian moment bound (PROOF005)
+
+Fix \(d\in\{1,2,3\}\), \(0<\alpha<2\), and a nonzero homogeneous nonnegative even positive-definite tempered Radon covariance \(\Gamma\) with spectral measure \(\mu\), \(\mu(B_r)=V r^\alpha\). Put
+
+\[
+\gamma_b=p_b*\Gamma,\qquad b>0,
+\]
+
+and recall the heat bound
+
+\[
+(p_h*\gamma_b)(z)=\int e^{i\xi\cdot z}e^{-(h+b)|\xi|^2/2}\mu(\mathrm d\xi),
+\qquad
+|(p_h*\gamma_b)(z)|
+\le A h^{-\alpha/2},
+\qquad
+A:=\alpha V\int_0^\infty u^{\alpha-1}e^{-u^2/2}\mathrm du<\infty,
+\]
+
+valid uniformly in \(b>0,z\). The target moment is
+
+\[
+\mathbb E_B S_b(T)^j,\qquad
+S_b(T)=\int_0^T\int_0^T\gamma_b(B_s-B_t)\,\mathrm ds\,\mathrm dt .
+\]
+
+Here \(B\) is a \(d\)-dimensional Brownian motion starting at \(0\).
+
+### A.1. Deletion induction for one fixed ordered configuration and fixed matching
+
+Write
+
+\[
+S_b(T)^j=\int_{[0,T]^{2j}}
+\prod_{\{p,q\}\in D}\gamma_b(B_{s_p}-B_{s_q})\,\mathrm d\mathbf s ,
+\]
+
+where \(D\) is the fixed matching used by the \(j\) double-integrals. Partition \([0,T]^{2j}\) into the \((2j)!\) open ordered simplices \(0<t_1<\cdots<t_{2j}<T\). On one such simplex the integral is, after relabeling by the order,
+
+\[
+J_D(T):=\int_{0<t_1<\cdots<t_{2j}<T}
+\mathbb E_B\prod_{\{p,q\}\in D^{(o)}}\gamma_b(B_{t_p}-B_{t_q})\,\mathrm dt_1\cdots\mathrm dt_{2j},
+\]
+
+where \(D^{(o)}\) is the matching induced on \(\{1,\dots,2j\}\) by the chosen ordering. It suffices to bound \(J_D(T)\) for an **arbitrary fixed matching** \(D\) on the ordered indices.
+
+**Deletion recursion.** Start with \(R=\{1,\dots,2j\}\). Repeat \(j\) times:
+
+1. \(q=\max R\).
+2. \(p=\operatorname{partner}_D(q)\).
+3. \(v=\max(R\setminus\{q\})\).
+
+Condition on all remaining Brownian coordinates except \(B_{t_q}\), i.e. on \(B_{t_r},r\in R\setminus\{q\}\). Write \(h=t_q-t_v>0\) and
+
+\[
+B_{t_q}-B_{t_p}=(B_{t_v}-B_{t_p})+(B_{t_q}-B_{t_v}),
+\]
+
+where the increment \(B_{t_q}-B_{t_v}\) is independent of the conditioning and has law \(N(0,hI_d)\). Therefore
+
+\[
+\begin{aligned}
+\mathbb E&\Big[\gamma_b(B_{t_q}-B_{t_p})\,\Big|\,\mathcal F_{R\setminus\{q\}}\Big]\\
+&=\mathbb E\Big[\gamma_b\big((B_{t_v}-B_{t_p})+Z\big)\,\Big|\,B_{t_v},B_{t_p}\Big],\qquad Z\sim N(0,hI_d),\\
+&=(p_h*\gamma_b)(B_{t_v}-B_{t_p})
+\le A h^{-\alpha/2}.
+\end{aligned}
+\]
+
+The bound is deterministic; it also covers the final step \(v=p\), where the conditional mean is \((p_h*\gamma_b)(0)\). All other factors in \(\prod\gamma_b\) are edges of \(D\) disjoint from \(\{p,q\}\), so they involve neither \(B_{t_q}\) nor \(B_{t_p}\). Hence the tower property gives
+
+\[
+\mathbb E\prod_{\{u,w\}\in D_R}\gamma_b(B_{t_u}-B_{t_w})
+\le A\,(t_q-t_v)^{-\alpha/2}\;
+\mathbb E\prod_{\{u,w\}\in D_R\setminus\{\{q,p\}\}}\gamma_b(B_{t_u}-B_{t_w}),
+\]
+
+and the remaining coordinates retain their Brownian marginal law. This is the complete all-\(j\) induction; the matching is an arbitrary fixed matching and no enumeration of infinitely many matchings is performed.
+
+**Right-endpoint gap replacement.** The \(j\) selected right endpoints \(q_1>\cdots>q_j\) are distinct. At step with right endpoint \(q\),
+
+\[
+v\le q-1
+\qquad\Longrightarrow\qquad
+t_q-t_v\ge t_q-t_{q-1}=:d_q .
+\]
+
+Since \(x\mapsto x^{-\alpha/2}\) is decreasing,
+
+\[
+(t_q-t_v)^{-\alpha/2}\le d_q^{-\alpha/2}.
+\]
+
+Therefore, on the ordered simplex,
+
+\[
+\mathbb E\prod_{\{p,q\}\in D}\gamma_b(B_{t_p}-B_{t_q})
+\le A^j\prod_{r\in Q(D)} d_r^{-\alpha/2},
+\]
+
+where \(Q(D)\subset\{1,\dots,2j\}\) is the set of the \(j\) selected right-endpoint indices.
+
+### A.2. Terminal-slack correction and the Dirichlet integration
+
+The ordered simplex is parametrized by
+
+\[
+d_r=t_r-t_{r-1}\ (t_0=0,\ r=1,\dots,2j),
+\qquad
+\tau=T-t_{2j}\ge0 ,
+\]
+
+so there are \(2j\) **integration gaps** \(d_1,\dots,d_{2j}\) plus the **terminal slack** \(\tau\), with \(\sum_{r=1}^{2j}d_r+\tau=T\), and \(\mathrm dt_1\cdots\mathrm dt_{2j}=\mathrm dd_1\cdots\mathrm dd_{2j}\).
+
+The singular factor involves only the \(j\) selected right-endpoint gaps \(d_r,r\in Q(D)\); the remaining \(j\) unselected \(d_r\)'s and the terminal slack \(\tau\) all appear with exponent \(0\). Changing the set \(Q(D)\) cannot change the value, so
+
+\[
+\int_{0<t_1<\cdots<t_{2j}<T}
+\prod_{r\in Q(D)}d_r^{-\alpha/2}\,\mathrm dt_1\cdots\mathrm dt_{2j}
+=
+\int_{\Delta_T}
+d_{r_1}^{-\alpha/2}\cdots d_{r_j}^{-\alpha/2}\,\mathrm dd_1\cdots\mathrm dd_{2j},
+\]
+
+where \(\Delta_T=\{d_1,\dots,d_{2j}\ge0,\ \tau\ge0:\ \sum_{r=1}^{2j}d_r+\tau=T\}\). This is a Dirichlet integral with \(2j+1\) variables, \(j\) of them carrying exponent \(1-\alpha/2\) and the other \(j+1\) variables carrying exponent \(1\):
+
+\[
+\int_{\Delta_T}
+d_{r_1}^{-\alpha/2}\cdots d_{r_j}^{-\alpha/2}\,\mathrm dd_1\cdots\mathrm dd_{2j}
+=
+\frac{\Gamma_{\mathrm E}(1-\alpha/2)^j\,\Gamma_{\mathrm E}(1)^{j+1}}
+{\Gamma_{\mathrm E}(j(1-\alpha/2)+(j+1))}
+T^{j(1-\alpha/2)+(j+1)-1}.
+\]
+
+Since
+
+\[
+j(1-\alpha/2)+(j+1)=2j+1-\frac{\alpha j}{2}
+=(2-\alpha/2)j+1,
+\]
+
+and
+
+\[
+j(1-\alpha/2)+(j+1)-1=j(2-\alpha/2),
+\]
+
+we obtain
+
+\[
+\int_{0<t_1<\cdots<t_{2j}<T}
+\prod_{r\in Q(D)}d_r^{-\alpha/2}\,\mathrm dt_1\cdots\mathrm dt_{2j}
+=
+\frac{\Gamma_{\mathrm E}(1-\alpha/2)^j}{\Gamma_{\mathrm E}((2-\alpha/2)j+1)}
+T^{(2-\alpha/2)j}.
+\]
+
+**Correction to the prior wording.** The terminal slack \(T-t_{2j}\) is **not** one of the selected singular gaps. There are \(2j\) integration gaps plus one terminal slack; exactly \(j\) of the \(2j\) gaps are selected. This is why the denominator is \(\Gamma_{\mathrm E}((2-\alpha/2)j+1)\), i.e. the exponent vector has \(2j+1\) coordinates, not \(2j\).
+
+Hence, for every ordered simplex and every matching \(D\),
+
+\[
+J_D(T)\le
+A^j\frac{\Gamma_{\mathrm E}(1-\alpha/2)^j}{\Gamma_{\mathrm E}((2-\alpha/2)j+1)}
+T^{(2-\alpha/2)j}.
+\]
+
+There are \((2j)!\) ordered simplices, so
+
+\[
+\boxed{
+\mathbb E_B S_b(T)^j
+\le
+\frac{(2j)!\,[A\,\Gamma_{\mathrm E}(1-\alpha/2)]^j}
+{\Gamma_{\mathrm E}((2-\alpha/2)j+1)}
+T^{(2-\alpha/2)j}.
+}
+\]
+
+The bound is uniform in \(b>0\). If \(\Gamma=0\), then \(\gamma_b\equiv0\), \(A=0\), and both sides vanish; the zeroth moment \(j=0\) is \(1\).
+
+### A.3. Explicit \(j=2\) check of all three matchings
+
+For \(t_1<t_2<t_3<t_4\), the three matchings are
+
+\[
+D_A=\{(1,2),(3,4)\},\quad
+D_B=\{(1,3),(2,4)\},\quad
+D_C=\{(1,4),(2,3)\}.
+\]
+
+- \(D_A\): \(q=4,p=3,v=3\), gap \(d_4\); remove \(\{3,4\}\); \(q=2,p=1,v=1\), gap \(d_2\). Bound \(A^2 d_4^{-\alpha/2}d_2^{-\alpha/2}\).
+- \(D_B\): \(q=4,p=2,v=3\), gap \(t_4-t_3=d_4\); remove \(\{2,4\}\); \(q=3,p=1,v=1\), gap \(t_3-t_1=d_2+d_3\ge d_3\). Bound \(A^2 d_4^{-\alpha/2}d_3^{-\alpha/2}\).
+- \(D_C\): \(q=4,p=1,v=3\), gap \(d_4\); remove \(\{1,4\}\); \(q=3,p=2,v=2\), gap \(d_3\). Bound \(A^2 d_4^{-\alpha/2}d_3^{-\alpha/2}\).
+
+All three produce distinct right endpoints and pairwise products of the form \(d_{r_1}^{-1/2\alpha}d_{r_2}^{-1/2\alpha}\) with the same Dirichlet value; the \((2j)!=24\) multiplier is the sum over orderings.
+
+---
+
+## B. PROOF005 \(\to\) PROOF006 and the actual multiple Stratonovich \(X_n\)
+
+This argument works at the **common physical endpoint** \((t,x)\): both terminal chains are reversed at the same \((t,x)\), and the diagram-lemma parameters \(T_1,T_2\) are **integration horizon cutoffs**. They are not an assertion about different-time reflected covariances, and they will be set equal to the physical \(t\) at the end.
+
+### B.1. Fixed positive vertexwise widths: Wick formula, MAX/SUM rules, Green-first in \(d=3\)
+
+Use the retaining extension of the given noise family from the source-driver stage: one fixed isonormal map \(\mathcal I\) on
+
+\[
+\mathcal G=L^2((0,\infty)_\lambda\times\mathbb R_r,\nu_a(\mathrm d\lambda)\mathrm dr;H_\Gamma),
+\qquad
+\mathcal I(\Phi h)=W(h),
+\]
+
+with vertexwise point features
+
+\[
+v_{\varepsilon,\delta;t,x}(\lambda,r)
+=\mathbf 1_{\{\lambda\le\delta^{-1}\}}\sqrt{2\lambda}\,
+e^{-\lambda(t-r)}\mathbf 1_{\{r\le t\}}
+\,p_\varepsilon(x-\cdot).
+\]
+
+As the counterrecord correctly notes, for positive finite cutoffs \(v_{\varepsilon,\delta;t,x}\notin\Phi(H_W)\); the point fields use the auxiliary component of \(\mathcal I\). **This is irrelevant to the Wick formula**, which uses only the Gaussian law. For two vertices,
+
+\[
+\operatorname{Cov}(Y_{\varepsilon_j,\delta_j}(s,x),Y_{\varepsilon_k,\delta_k}(t,y))
+=\langle v_{\varepsilon_j,\delta_j;s,x},v_{\varepsilon_k,\delta_k;t,y}\rangle_{\mathcal G}
+=K_{\max(\delta_j,\delta_k)}(s-t)\,\Gamma_{\varepsilon_j+\varepsilon_k}(x-y),
+\]
+
+with
+
+\[
+K_\eta(u)=\frac1{\Gamma_{\mathrm E}(a)}\int_0^{\eta^{-1}}e^{-\lambda|u|}\lambda^{a-1}\mathrm d\lambda,\qquad a=\alpha_0.
+\]
+
+This is precisely the **MAX-temporal-cutoff** and **SUM-spatial-heat** rule. Let \(\mathbf a\) be vertexwise widths on the first chain and \(\mathbf b\) on the second chain, with common terminal \((t,x)\). At fixed positive widths,
+
+\[
+\mathbb E[Y_m^{\mathbf a}(t,x)Y_n^{\mathbf b}(t,x)]
+=
+\sum_{D\in\Pi_k}
+\int_{\Omega_{m,n}}
+\Big(\prod_{\rho=1}^2\prod_{l\in I_\rho}G(s_l-s_{p(l)},x_l-x_{p(l)})\Big)
+\prod_{\{j,h\}\in D}
+K_{\max(\delta_j,\delta_h)}(s_j-s_h)\Gamma_{\varepsilon_j+\varepsilon_h}(x_j-x_h),
+\]
+
+where \(m+n=2k\), \(I_1=\{1,\dots,m\}\), \(I_2=\{m+1,\dots,2n\}\), each chain has its own root \((0,0)\), and the domain \(\Omega_{m,n}\) is the product of the two separate ordered simplices. Each pairing enters once; self-pairs and cross-pairs are both included; unequal and empty chains are included with the empty chain contributing factor \(1\). Odd total order gives \(0\).
+
+**Absolute integrability.** At fixed positive widths every \(K_{\max(\delta_j,\delta_h)}\le K_{\max(\delta_j,\delta_h)}(0)<\infty\) and every \(\Gamma_{\varepsilon_j+\varepsilon_h}(x_j-x_h)\le\Gamma_{\varepsilon_j+\varepsilon_h}(0)<\infty\). Green factors have finite positive mass \(G_h(\mathbb R^d)=h\). Therefore the finite Gaussian polynomial integrand is dominated on bounded time horizons by a constant times the product of Green masses, and expectation commutes with the Green integrations.
+
+**Dimension three, Green-first.** In \(d=3\) replace each \(G_{h_l}\) by \(G_{h_l,\eta}=p_\eta*G_{h_l}\), a smooth \(L^1\) density of mass \(h_l\). At fixed noise widths \((\varepsilon_j,\delta_j)\), the covariance products are bounded continuous functions of all spatial variables; products of the finite Green measures converge weakly as \(\eta\downarrow0\), with the same masses \(h_l\). Dominated convergence applies to both square moments and mixed Green-width moments, so the fixed-order \(L^2\) limits exist and the Green smoothing is removed **first**, before any noise width is removed. The same identity then holds for the actual wave measures \(G_{h_l}\).
+
+### B.2. Common temporal upper-\(L\) cap and the spatial limit of PROOF005
+
+For one fixed pairing \(D\in\Pi_k\), use the gap measure \(\rho_{\boldsymbol\varepsilon,D}(\mathrm d\mathbf r)=J_{\boldsymbol\varepsilon,D}(\mathbf r)\,\mathrm d\mathbf r\) of PROOF005, where \(s_j(\mathbf r)\) is the cumulative time in each chain. With the common temporal cap \(L\),
+
+\[
+M_L(\mathbf r)=\prod_{\{j,h\}\in D}K_L(s_j(\mathbf r)-s_h(\mathbf r)),
+\qquad
+K_L(u)=\frac1{\Gamma_{\mathrm E}(a)}\int_0^L e^{-\lambda|u|}\lambda^{a-1}\mathrm d\lambda.
+\]
+
+The function \(M_L\) is bounded and continuous in \(\mathbf r\). By the PROOF005 weak convergence
+
+\[
+\int_{\ell_1<T_1,\ell_2<T_2}\varphi\,\mathrm d\rho_{\boldsymbol\varepsilon,D}
+\longrightarrow
+\int_{\ell_1<T_1,\ell_2<T_2}\varphi\,\mathrm d\rho_D,
+\]
+
+valid for bounded continuous \(\varphi\) and all \(T_1,T_2>0\), with \(\rho_D\) giving zero mass to every coordinate face \(r_l=0\) and every horizon face \(\ell_i=T_i\), the spatial limit at the common cap \(L\) exists:
+
+\[
+b_D(L;T_1,T_2)
+:=\lim_{\boldsymbol\varepsilon\to0}
+\int_{\ell_1<T_1,\ell_2<T_2}M_L(\mathbf r)\,\mathrm d\rho_{\boldsymbol\varepsilon,D}
+=\int_{\ell_1<T_1,\ell_2<T_2}M_L(\mathbf r)\,\mathrm d\rho_D.
+\]
+
+No boundary atom contributes, so there is no defect from the horizon or zero-gap faces.
+
+### B.3. Uniform marked-tail remainder
+
+Use unit damping kernels \(e^{-s}G_s\) on the horizon region \(\ell_1<T_1,\ell_2<T_2\). Their \(N_0=e^{-\text{total chain time}}e^{\text{restored}}=1\) after the horizon loss is accounted; the restoration on each chain is at most \(e^{T_1+T_2}\). Define, at damping \(1\),
+
+\[
+A_L=N_1^{(L)}(1),\qquad
+B_L=N_2^{(L)}(1),\qquad
+H=\max\bigl(1,2N_1^{\mathrm{full}}(1),N_2^{\mathrm{full}}(1)^2\bigr),
+\]
+
+where the tail norms use temporal domain \(\lambda\in(L,\infty)\).
+
+By the reconstructed pairing envelope, for **every admissible product** \(P_{Q,\iota}\) of the \(2k\) kernel labels, every edge appears exactly once as a first-norm edge or exactly twice as a second-norm edge. For the marked edge \(e_*\) this gives either
+
+\[
+2N_{1}^{(L)}(G_l)=2A_L
+\qquad\text{or}\qquad
+N_2^{(L)}(G_l)N_2^{(L)}(G_{l'})=B_L^2 .
+\]
+
+Every unmarked edge contributes first-norm product \(\le2N_1^{\mathrm{full}}(1)\le H\) or second-norm product \(\le N_2^{\mathrm{full}}(1)^2\le H\); all mass slots contribute \(N_0=1\le H\). Since there are \(k-1\) unmarked edges,
+
+\[
+P_{Q,\iota}\le H^{k-1}(2A_L+B_L^2).
+\]
+
+This is valid for every assignment of marked edge to kernel slots, because the edge-lattice multiplicity rule does not require incidence between an edge and the kernel carrying its norm. There are \(k\) choices of the marked edge in the difference-of-products estimate, so the marked-tail remainder is bounded by
+
+\[
+\boxed{
+F_{\boldsymbol\varepsilon,0,D}-F_{\boldsymbol\varepsilon,L,D}
+\;\le\;
+k\,e^{T_1+T_2}\,H^{k-1}(2A_L+B_L^2),
+}
+\]
+
+uniformly over all spatial widths and over positive Green smoothing in \(d=3\). The horizon factor is the **unit-damping** \(e^{T_1+T_2}\); no arbitrary \(\theta\) inequality is invoked. The heat-removal uniformity for \(N_1^{(L)},N_2^{(L)}\) is the spectral multiplier bound, not pointwise monotonicity of spatial heat smoothing.
+
+### B.4. The \(\varepsilon/L\) argument and the joint limit
+
+For each \(D\), the actual vertexwise diagram with temporal caps \(\delta_j\) obeys, whenever all \(\delta_j\le L^{-1}\),
+
+\[
+F_{\boldsymbol\varepsilon,L,D}\;\le\;F_{\boldsymbol\varepsilon,\boldsymbol\delta,D}\;\le\;F_{\boldsymbol\varepsilon,0,D},
+\]
+
+where \(F_{\boldsymbol\varepsilon,0,D}\) uses the full factors \(|s_j-s_h|^{-a}\). The lower bound uses that each vertexwise cap \(1/\max(\delta_j,\delta_h)\ge L\), hence \(K_{\max(\delta_j,\delta_h)}\ge K_L\). The upper bound is the full singular kernel.
+
+Fix \(L>0\). B.2 gives the spatial limit of the common-\(L\) diagram,
+
+\[
+F_{\boldsymbol\varepsilon,L,D}\xrightarrow[\boldsymbol\varepsilon\to0]{}
+b_D(L)=\lim_{T_1,T_2\to\infty}b_D(L;T_1,T_2),
+\]
+
+monotone in \(L\). B.3 gives
+
+\[
+0\le F_{\boldsymbol\varepsilon,0,D}-F_{\boldsymbol\varepsilon,L,D}
+\le C_{k,T_1,T_2}(A_L+B_L^2)
+\]
+
+uniformly in \(\boldsymbol\varepsilon\). PROOF004 gives \(A_L,B_L\to0\) as \(L\to\infty\), and at positive spatial widths \(F_{\boldsymbol\varepsilon,0,D}\) is finite using the supremum bounds on \(\Gamma_\varepsilon\) and the integrability of \(|s-r|^{-a}\) on disjoint pairs. Hence:
+
+1. Letting \(\boldsymbol\varepsilon\to0\) in the common-\(L\) term and using the uniform tail,
+2. letting \(L\to\infty\),
+
+shows that every vertexwise diagram, with arbitrary spatial and temporal relative rates, converges to the finite number
+
+\[
+b_D=\lim_{L\to\infty}b_D(L),
+\]
+
+independent of all relative noise-width rates. This is the requested identified limiting diagram value \(b_D\).
+
+### B.5. The unique \(L^2\) limit of \(Y_n^{\mathbf a}\); no hidden action
+
+Fix \(n\ge1,t>0,x\). For two width vectors \(\mathbf a,\mathbf b\) of length \(n\), the real Gaussian variables \(Y_n^{\mathbf a},Y_n^{\mathbf b}\) lie on the same isonormal space, and
+
+\[
+\mathbb E|Y_n^{\mathbf a}-Y_n^{\mathbf b}|^2
+=
+\mathbb E|Y_n^{\mathbf a}|^2
+-2\mathbb E[Y_n^{\mathbf a}Y_n^{\mathbf b}]
++\mathbb E|Y_n^{\mathbf b}|^2.
+\]
+
+All three expectations are finite Gaussian Wick sums over the same partition set \(\Pi_n\): diagonal widths \(\mathbf a,\mathbf a\); paired opposite widths \(\mathbf a,\mathbf b\); diagonal widths \(\mathbf b,\mathbf b\). By B.1--B.4 each individual pairing diagram has the same finite limit \(b_D\), independent of the width vectors and their relative rates. Therefore
+
+\[
+\mathbb E|Y_n^{\mathbf a}Y_n^{\mathbf b}|\to Q_n:=\sum_{D\in\Pi_n}b_D
+\qquad\text{for each of the three mixed moments},
+\]
+
+and hence
+
+\[
+\mathbb E|Y_n^{\mathbf a}-Y_n^{\mathbf b}|^2
+\longrightarrow Q_n-2Q_n+Q_n=0.
+\]
+
+Thus \(\{Y_n^{\mathbf a}\}_{\mathbf a}\) is Cauchy in \(L^2(\Omega)\); completeness gives a unique limit \(X_n(t,x)\), independent of all width ratios. For any sequence using common widths \((\varepsilon,\delta)\) at every vertex, \(Y_n^{(\varepsilon,\delta)}\) is exactly the source's regularized \(S_{n,\varepsilon,\delta}(g_n)\) with Green smoothing first in \(d=3\); the same unique limit identifies
+
+\[
+X_n(t,x)=S_n(g_n(\cdot,t,x))
+\]
+
+with the source's multiple Stratonovich definition. There is no hidden factorial or extra Gaussian action: the Wick coefficient is one per pairing, the ordered terminal-chain measures are used once, and \(G_h(\mathbb R^d)=h\) already fixes the Green normalization.
+
+Boundary and degenerate cases:
+
+- \(n=0\): \(Y_0=X_0=1\); the empty-product convention applies.
+- Odd total order \((m+n)\) odd: the finite Gaussian Wick sum vanishes, and this vanishes in the limit.
+- Empty chains, unequal chains: included; an empty chain contributes the factor one and has no horizon variables.
+- Zero covariance \(\Gamma=0\): all covariances vanish, \(Y_n=0\) a.s. for \(n\ge1\), all \(b_D=0\), \(Q_n=0\), and \(X_n=0\) for \(n\ge1\).
+
+**Notation correction adopted.** Write the collision-by-positive-gap value as \(G_{h}(0)=1/2\) for \(h>0\) (as in the \(d=1\) indicator normalization); this is not the zero-time wave measure \(G_0\), which is zero. The prior notation \(G(0)=1/2\) is therefore replaced by \(G_{s_2-s_1}(0)=1/2\), with \(s_2-s_1>0\).
+
+---
+
+## First genuine failed implication
+
+Within the two foundations requested, **no failed implication was located**. The only corrections required were structural rather than quantitative:
+
+1. The terminal slack \(T-t_{2j}\) in A is **not** a selected singular gap; the Dirichlet integration has \(2j+1\) gap variables, \(j\) of them singular.
+2. \(G(0)\) in the earlier white-space calibration must be read as \(G_{h}(0)=1/2\) for positive time gap \(h\), not as the zero-time wave measure.
+
+No circular appeal was used: the derivation above uses PROOF005's spatial-measure limit, PROOF004's damped-norm tail convergence \(\to0\), and the per-family pairing envelope from the reconstruction (with exact \(2\) per first norm). It does not invoke the infinite solution series, the mixed-term expansion proposition, or the mild construction, so the fixed-order diagram limits are not built on the objects they construct.
+
+## Remaining mathematical gaps
+
+1. The identification of \(\rho_D\) with the fixed-order Wick diagram measures is now complete **at the common endpoint** \((t,x)\) for each fixed \(n\). What remains outside this working turn is the passage from these per-\((n,D)\) joint limits to the full second-moment series and the mild-solution identification; those belong to the whole-goal assessment, not to the two foundations checked here.
+2. The per-family quantifier of the pairing envelope is preserved, not upgraded. For the fixed-order limits and the tail/\(\theta\)/homogeneous consumers this is sufficient, because each candidate product is singly bounded; no single measure-independent partition is asserted.
+3. The positive-cutoff point features are not \(W\)-measurable for positive finite cutoffs (as the counterrecord establishes); the fixed-order Gaussian/Wick calculations above use only the isonormal law of the fixed extension and never rely on \(W\)-measurability of individual cutoff fields.
+4. The nonmathematical gates (Native Read, hash, pixel, cold certification) remain separate and were not premises of this derivation.

@@ -1,0 +1,45 @@
+{
+  "bindings": [
+    {
+      "path": "lean-progress/local-checks/gaussian-tail-v1/StratonovichHAMAudit/GaussianTail.lean",
+      "accepted_source": "180bf1a",
+      "sha256": "521a209c3dce14b35e9d71b26267f24b0a7e4e050f1955306b8c666646582649",
+      "byte_equal": true
+    },
+    {
+      "path": "lean-progress/local-checks/gaussian-tail-v1/types-and-axioms.txt",
+      "accepted_source": "180bf1a",
+      "sha256": "9e493656d90d9e6c274e3597514dcd7730da89d0e068fa664f89ac8b6c009688",
+      "byte_equal": true
+    },
+    {
+      "path": "reviews/2026-10-31-upper-gaussian-projection-screen/mathlib-finite-holder-type-v1.txt",
+      "accepted_source": "e0a6f3e",
+      "sha256": "87785a8efab82c8c79775246c22de47eb222f7a9bca11c05b5c6316392c7e93a",
+      "byte_equal": true
+    },
+    {
+      "path": "reviews/2026-10-31-upper-gaussian-projection-screen/mathlib-finite-holder-custody-v1.json",
+      "accepted_source": "e0a6f3e",
+      "sha256": "1e8329755a3e514088e14ed00b0477a1ce7c1bf9d3914ce9379a3dbd50383f3a",
+      "byte_equal": true
+    }
+  ],
+  "tail_actual_application": {
+    "declaration": "StratonovichHAMAudit.GaussianTail.cutoff_density_split",
+    "M": "positive cutoff M",
+    "x": "raw control radius r>=M",
+    "C": "coarse envelope coefficient C>=0",
+    "nu": "1/theta in(1,2)",
+    "cutoff": "4C<=M^(2-nu)",
+    "scope": "scalar inequality only; Rayleigh tail integral and Gaussian transfer analytic"
+  },
+  "holder_actual_application": {
+    "declaration": "Real.rpow_sum_le_const_mul_sum_rpow_of_nonneg",
+    "residual": "exponent p/nu>=1, values norm(a_m)^nu>=0; raise nu/p and include positive delta weights",
+    "control": "exponent r_t/nu>1, values norm(H_m Phi)^nu>=0; raise nu/r_t and include weights",
+    "guards": "n=N+1>=2,delta>0,p>=nu>1,r_t>2>nu,positivepowers include zero/emptylast",
+    "scope": "finite powermean ONLY; no Gaussian/Young/operator claim"
+  },
+  "new_compile_or_fact_count": false
+}

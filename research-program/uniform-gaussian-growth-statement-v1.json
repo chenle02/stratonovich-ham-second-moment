@@ -1,0 +1,106 @@
+{
+  "status": "FROZEN AUTHOR STATEMENT CANDIDATE; extraction for independent audit, not a new proved theorem or novelty claim",
+  "name": "Uniform Gaussian upper-growth transfer on varying path spaces",
+  "role": "Candidate supporting proposition for paperI; must not be marketed as a new Gaussian LDP solely by repackaging Borell concentration",
+  "scope": "No new original-model theorem, no lower terminal-observable conclusion, no exact moving-score limit, no covariance-mixture asymptotic conclusion.",
+  "parameters": "Fix p>0, nu in(1,2), s>=0, A0,C>=0, c0,c1>=0. delta decreases to0; B ranges over positive integers. Constants listed here do not depend on delta or B. All statements below hold for delta small enough at each fixed B; no diagonal B(delta) is assumed.",
+  "hypotheses": [
+    {
+      "id": "U1",
+      "statement": "H is a fixed real separable Hilbert space with its given isonormal W. For every delta,B, let V_(delta,B) be a real separable Banach space, X_(delta,B) a strongly measurable centered Gaussian variable with finite second norm moment, and M_(delta,B):H->V_(delta,B) a compact linear map. Every continuous linear coordinate ell(X) belongs to the first chaos of W and E[X W(h)]=sqrt(delta) M_(delta,B)h for h in H. No H-valued standard Gaussian or unnormalized inverse-covariance norm is assumed."
+    },
+    {
+      "id": "U2",
+      "statement": "b_(delta,B)=2 E||X_(delta,B)|| tends to0 as delta->0 for each fixed B. The zero Gaussian law is allowed, with support{0}, M=0,b=0. Unseen raw directions are retained in H and removed only by the true covariance quotient where needed."
+    },
+    {
+      "id": "U3",
+      "statement": "F_(delta,B):V_(delta,B)->R is continuous. A positive extended-real quantity Z_delta in(0,infinity], independent of B, satisfies Z_delta<=E exp(F_(delta,B)(X_(delta,B))/delta). Finite expectation is to be deduced from U5, not assumed. Endpoint products for every B must represent or bound this same Z_delta."
+    },
+    {
+      "id": "U4",
+      "statement": "J_delta:H->[0,infinity) is finite, J_delta(0)=0, and J_delta(h)<=c0+c1||h||. J_delta may depend on delta through a growing localization, but is independent of B. Define S_delta=sup_(h in H){p J_delta(h)-||h||^2/2}. The quadratic estimate makes 0<=S_delta<=p*c0+(p*c1)^2/2. No optimizer is assumed."
+    },
+    {
+      "id": "U5",
+      "statement": "There are finite eta_B>=0, independent of delta at each fixed B, such that for every rho>=0, ||a||<=b_(delta,B) and ||h||<=rho, F_(delta,B)(a+M_(delta,B)h)<=A0+C*B^s*rho^nu+eta_B*b_(delta,B)^nu. The base ball is in V_(delta,B); no random selector is used."
+    },
+    {
+      "id": "U6",
+      "statement": "There exist fixed c>0 and k>s/(2-nu). Set R_B=c B^k. Define E_(delta,B)=max(0,sup_(||a||<=b_(delta,B),||h||<=R_B){F_(delta,B)(a+M_(delta,B)h)-p J_delta(h)}). It is finite. For each B, e_B=limsup_(delta->0) E_(delta,B) is finite, and e_B->0 as integer B->infinity. Only one such polynomial cutoff is required, not every polynomial radius. Fixed-ball convergence alone is insufficient."
+    }
+  ],
+  "proposed_conclusion": "Z_delta is finite for delta sufficiently small and limsup_(delta->0) delta log Z_delta <= limsup_(delta->0) S_delta < infinity.",
+  "source_deduction_skeleton_not_new_proof": "Use actual Gaussian support/Cameron image and Borell enlargement to dominate by the Rayleigh-radius integral. Split at R_B. U6 bounds the bulk by (R_B^2/(2delta))*exp((S_delta+E_(delta,B))/delta). U5 and 4 C B^s<=R_B^(2-nu), eventually in B by k>s/(2-nu), bound the tail by 4 exp((A0+eta_B*b^nu-R_B^2/4)/delta). Take delta->0 at fixed B, then B->infinity; logarithmic factors vanish, e_B->0 and R_B->infinity. Actual sufficiency of every step is assigned to the skeptic; this skeleton confers no acceptance.",
+  "existing_sources": [
+    {
+      "path": "notes/integrated_gaussian_tubes.tex",
+      "labels": [
+        "P:tube-wiener-realization",
+        "L:tube-closed-geometry",
+        "P:tube-rayleigh-transfer",
+        "L:tube-rayleigh-tail",
+        "L:tube-half-action"
+      ],
+      "role": "Original Gaussian support/quotient/tube transfer and scalar tail arguments; treated as scoped existing inputs, not new abstract discoveries."
+    },
+    {
+      "path": "notes/integrated_signed_moment_upper.tex",
+      "labels": [
+        "L:signed-score-envelope",
+        "P:signed-moment-bulk-tail",
+        "P:signed-operator-upper"
+      ],
+      "role": "Existing bulk/tail and same-endpoint ordered-limit architecture. Current wave p=2 and s=3nu; the proposed abstract statement does not prove actual wave p-moment bounds for other p."
+    },
+    {
+      "path": "notes/integrated_uniform_products.tex",
+      "labels": [
+        "C:uniform-polynomial-balls",
+        "P:uniform-arbitrary-residual"
+      ],
+      "role": "Current model-specific deterministic mechanism for U6. Abstract U6 is a substantial independently verifiable deterministic estimate, not the requested stochastic conclusion restated."
+    }
+  ],
+  "what_the_upper_statement_does_not_supply": [
+    "A lower bound for an observed displacement: it needs a positive/nonvanishing projection of the actual initial data and robust terminal observable growth on shifted events.",
+    "Identification of limsup S_delta with sup of pointwise limiting rates: requires a separate variational convergence/positive-control comparison or compactness argument.",
+    "An unmasked noisy wave group, a positive phase semigroup, global uniform regularization limits, or covariance monotonicity for arbitrary signed potentials.",
+    "Novelty of this supporting Gaussian proposition: exact prior-art comparison remains open; possible independent contribution lies in wave-specific verification/uniformity and broader applications."
+  ],
+  "nonzero_sanity_model": {
+    "data": "H=V=R, W=N(0,1), X_delta=sqrt(delta)W, M=identity, p=1, F_delta,B(x)=a|x|, J_delta(h)=a|h| for a>0; independent of B.",
+    "guards": "b_delta=2sqrt(2delta/pi), choose any nu in(1,2), s=0, C=a,A0=3a,eta_B=0. Error <=a b_delta, so e_B=0; choose any k>0.",
+    "exact_value": "E exp(a|W|/sqrt(delta))=2 exp(a²/(2delta)) Phi(a/sqrt(delta)); hence normalized limit and S_delta both equal a²/2. This is a scalar sanity case, not an SPDE application or novelty witness."
+  },
+  "falsification_boundaries": [
+    {
+      "id": "F1",
+      "claim_refuted": "Uniform operator growth implies lower displacement growth for every nonzero phase.",
+      "witness": "Scalar wave u_second=u, phase generator[[0,1],[1,0]], initial(1,-1): operator norm exp(t), displacement exp(-t), determinant1. Not original initial(1,0)."
+    },
+    {
+      "id": "F2",
+      "claim_refuted": "Fixed-control-ball deterministic convergence is sufficient for the Gaussian upper tail cutoff.",
+      "witness": "Error M^(3/2)/B vanishes at each fixed M; coarse B exponent9/2 requires cutoff exponent k>9. At k10 the tail-dominance exponent is1/2, but the error grows as B14."
+    },
+    {
+      "id": "F3",
+      "claim_refuted": "A finite mixture inherits exact homogeneous scaling at the largest order.",
+      "witness": "d1, temporal alpha0=1/2, Gamma(x)=|x|^(-1/4)+|x|^(-1/2). Gamma(4)-4^(-1/2)Gamma(1)=(sqrt(2)-1)/2>0."
+    },
+    {
+      "id": "F4",
+      "claim_refuted": "Pointwise convergence J_n(h)->J(h) plus uniform norm-ball coercivity allows interchanging sup and limit.",
+      "witness": "H=l2, e_n orthonormal, p1, J_n(h)=max(0,1-2||h-e_n||). For every fixed h, J_n(h)->0, all J_n<=1 and J_n(0)=0; score at h=e_n is1/2. Thus liminf S_n>=1/2 whereas the score supremum of the pointwise limit is0. Bounded optimal norms do not eliminate escaping directions."
+    }
+  ],
+  "mixture_scope_probe": {
+    "hypotheses": "d in1,2,3; fixed0<a<1; Gamma=Gamma1+Gamma2 with each nonnegative even positive-definite tempered Radon, homogeneous order alpha_j, each original admissible including allowedwhite, a+alpha_j<2.",
+    "first_target": "At fixed finite T and smooth physical mask, extend the actual same-W compact-operator driver and Young-flow construction. Common theta must satisfy1/2<theta<min_j{1-a/2,(3-a-alpha_j)/2}; auxiliary gamma also chosen in every required interval.",
+    "reason_to_test": "Scalar covariance forms add. Check both wave-variance estimates and admissible even Schatten guards in the existing construction without assuming an independent decomposition of an arbitrary given W.",
+    "not_established": "No full-source proof of this extension, no exact mixture time scaling, roughest-order dominance, intrinsic moment constant or second-application acceptance."
+  },
+  "lean_triage": "No new Lean package/run/fact. Existing local GaussianTail.cutoff_density_split has scoped earlier use; a future application must inspect exact types. The current extraction is analytic Gaussian geometry and ordered uniform limits. Do not replace those with a hollow assumed-conclusion theorem.",
+  "review_gate": "Independent statement-fidelity/sufficiency audit before proof adoption; original HIGH threshold, actual DeepSeek V4 Pro route. Kimi monthly-quota refusal remains; source images or full novelty reading are not claimed by this text-only target."
+}

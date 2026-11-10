@@ -1,0 +1,31 @@
+{
+  "scope": "Regression against actual malformed v2 spec and corrected v3 spec; not reviewer read coverage or mathematical verification",
+  "checker_sha256": "340d34cae426feb1e67e4f4fcefe8c13bf025ea9f84db15d7211e275fb587577",
+  "rows": [
+    {
+      "spec": "reviews/2026-11-01-covariance-tex-integration/required-sources-v2.json",
+      "spec_sha256": "57281382d53afa6bf6f66d179b3d2ea7a8cd13050d81d2a12f2c66751b380c02",
+      "packet": "reviews/2026-11-01-covariance-tex-integration/packet-v2",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "result": {
+        "status": "REFUSED",
+        "reason": "PNG declared as text: reviews/2026-11-01-covariance-tex-integration/page-108.png"
+      }
+    },
+    {
+      "spec": "reviews/2026-11-01-covariance-tex-integration/required-sources-v3.json",
+      "spec_sha256": "c8062bb6e4577312eaa2766fa46038a071065feb40a2297b93e797e89e351fb3",
+      "packet": "reviews/2026-11-01-covariance-tex-integration/packet-v3",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "result": {
+        "status": "PASS",
+        "text_sources": 16,
+        "image_sources": 8,
+        "spec_sha256": "c8062bb6e4577312eaa2766fa46038a071065feb40a2297b93e797e89e351fb3",
+        "scope": "required-media classification and canonical spec validation only"
+      }
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+\documentclass[12pt]{article}
+
+% === amsrefs bibliography setup ===
+\usepackage{amsrefs}
+\BibSpec{article}{%
++{}{\PrintAuthors}                {author}
++{,}{ \textit}                    {title}
++{.}{ }                           {part}
++{:}{ }                           {subtitle}
++{,}{ \PrintContributions}        {contribution}
++{.}{ \PrintPartials}             {partial}
++{,}{ }                           {journal}
++{}{ \textbf}                     {volume}
++{}{ \parenthesize}               {date}
++{,}{ }                           {pages}
++{,}{ }                           {status}
++{,}{ \PrintDOI}                  {doi}
++{.}{ Available at \eprint}       {eprint}
++{}{ \parenthesize}               {transition}
++{;}{ \PrintReviews}              {review}
++{.}{}                            {note}
+}
+
+% === Core packages ===
+\usepackage{amsmath, amsfonts, amssymb, amsthm}
+\usepackage{enumerate}
+\usepackage{mathrsfs}
+\usepackage{xcolor}
+\usepackage[colorlinks=true]{hyperref}
+\usepackage{framed}
+\usepackage{url}
+\setlength{\emergencystretch}{3em}
+
+% === Page geometry ===
+\setlength{\textwidth}{6.2in}
+\setlength{\oddsidemargin}{0.1in}
+\setlength{\evensidemargin}{0.1in}
+\setlength{\textheight}{8.8in}
+\setlength{\topmargin}{0in}
+
+% === Equation numbering ===
+\numberwithin{equation}{section}
+
+% === Theorem environments (shared counter) ===
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{hypothesis}[theorem]{Hypothesis}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{goal}[theorem]{Goal}
+
+% === Standard macros ===
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\W}{\dot W}
+\newcommand{\ud}{\,\mathrm{d}}
+\newcommand{\cE}{\mathcal{E}}
+\newcommand{\myCmts}[1]{\begin{framed}\noindent\textcolor{red}{#1}\end{framed}}
+
+\section{Model and standing assumptions}\label{S:model}
+
+We study the hyperbolic Anderson model
+\cite{chen:author2026:time-dependency}*{(1.1)}
+\begin{equation}\label{E:HAM}
+  \frac{\partial^2 u}{\partial t^2}(t,x)=\Delta u(t,x)+\W(t,x)u(t,x),
+  \qquad u(0,x)=1,\quad \frac{\partial u}{\partial t}(0,x)=0,
+\end{equation}
+for $(t,x)\in\R_+\times\R^d$, $d\in\{1,2,3\}$, interpreted in the
+Stratonovich sense (limit of classical wave equations driven by smoothed
+noises $\W_{\epsilon,\delta}$). The noise is centered Gaussian with
+\begin{equation}\label{E:cov}
+  \operatorname{Cov}\big(\W(s,x),\W(t,y)\big)=|s-t|^{-\alpha_0}\gamma(x-y),
+  \qquad 0<\alpha_0<1,
+\end{equation}
+where $\gamma\ge0$ is nonnegative definite with spectral measure $\mu$.
+
+\begin{hypothesis}[Homogeneous covariance]\label{H:homog}
+  Let $d\in\{1,2,3\}$ and $0<\alpha_0<1$.
+  The spatial covariance is a nonnegative, even, positive-definite
+  tempered Radon measure $\Gamma$ on $\R^d$, with positive even
+  tempered Radon spectral measure $\mu$ in the convention
+  \[
+    \Gamma=\int e^{i\xi\cdot x}\mu(\ud\xi)
+    \quad\text{in the sense of tempered distributions}.
+  \]
+  The symbol $\gamma$ in~\eqref{E:cov} denotes this covariance as a
+  function when one exists, and as a distribution otherwise.
+  For every Borel set $A$ and $c>0$,
+  $\Gamma(cA)=c^{d-\alpha}\Gamma(A)$, and
+  \begin{equation}\label{E:threshold}
+    \alpha_0+\alpha<2,
+  \end{equation}
+  with $0<\alpha<d$, or $\alpha=d=1$.
+  In particular, the last case includes spatial white noise
+  $\Gamma=\delta_0$.
+\end{hypothesis}
+
+Throughout we write
+\begin{equation}\label{E:kappa}
+  \kappa:=\frac{4-\alpha-\alpha_0}{3-\alpha}\in(1,2).
+\end{equation}

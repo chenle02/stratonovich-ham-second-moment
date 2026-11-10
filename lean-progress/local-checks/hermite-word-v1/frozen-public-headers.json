@@ -1,0 +1,12 @@
+{
+  "original_sha256": "6401faa96200708131fe0353ca4d787441a9d96377b54367f238e0e4a6317612",
+  "note": "Derived relative-locator transcription; original bytes retained externally.",
+  "data": {
+    "source_sha256": "3011e0156dd23d1a75abc39eac6473cb3cc7c7fc1d02cd75a40082db6e792acb",
+    "headers": [
+      "theorem raw_support\n    (Good : (C \u2192 Nat) \u2192 V \u2192 Prop)\n    (J : C \u2192 V \u2192 V) (F : B \u2192 V \u2192 V) (v\u2080 : V)\n    (hv\u2080 : Good (fun _ => 0) v\u2080)\n    (hJ : \u2200 d i v, Good d v \u2192 Good (bump i d) (J i v))\n    (hF : \u2200 d b v, Good d v \u2192 Good d (F b v))\n    (w : List (C \u00d7 B)) : Good (counts w) (raw J F v\u2080 w) := by",
+      "theorem cut_eq_raw\n    (Good : (C \u2192 Nat) \u2192 V \u2192 Prop)\n    (J : C \u2192 V \u2192 V) (F : B \u2192 V \u2192 V) (P : V \u2192 V)\n    (v\u2080 : V) (N : C \u2192 Nat)\n    (hv\u2080 : Good (fun _ => 0) v\u2080)\n    (hJ : \u2200 d i v, Good d v \u2192 Good (bump i d) (J i v))\n    (hF : \u2200 d b v, Good d v \u2192 Good d (F b v))\n    (hP : \u2200 d v, (\u2200 c, d c \u2264 N c) \u2192 Good d v \u2192 P v = v)\n    (w : List (C \u00d7 B)) (hN : \u2200 c, counts w c \u2264 N c) :\n    cut P J F v\u2080 w = raw J F v\u2080 w := by"
+    ],
+    "never_edited_after_first_compile": true
+  }
+}

@@ -1,0 +1,47 @@
+Diagnosis requested. No verdict, no regrading, no JSON report.
+
+## First materially incomplete independent inferences, per proof
+
+### 005 — L:spatial-wick-measures
+- **Exact inference:** the final uniform total-mass bound achieved by combining the Brownian occupation-moment estimate (E:construction-brownian-moments) into the two-chain absorption `(1+S_1)^k (1+S_2)^k`, then separating the expectation of the product of the two independent paths.
+- **Incoming hypotheses:** homogeneous Radon measure Γ, `γ_b = p_b∗Γ`, the heat bound `(p_t∗γ_b)(x) ≤ A t^{−α/2}`, two independent Brownian chains.
+- **Checked:** the heat bound itself; the conditional mean `E[γ_b(B_v−B_p)|others] ≤ A(s_v−s_p)^{−α/2}`; that `s_v−s_p` dominates the original adjacent gap at `v` (since `p` has smaller original index, so `s_p ≤ s_{v−1}`, even when `v−1` has already been removed); distinct selected right endpoints; and the Dirichlet integration `Γ_E(1−α/2)^j / Γ_E((2−α/2)j+1) · T^{(2−α/2)j}` with the `(2j)!` order count.
+- **Not yet written out independently:** a complete induction invariant for the removal procedure, and the combinatorial absorption over all splits `(v_1,v_2,w)` with `v_1+v_2+w=k` into the `(1+S_1)^k(1+S_2)^k` bound *before* taking expectation.
+- **Status:** no candidate-source gap located; this is an unperformed formal induction plus the combinatorial absorption step, against a complete source proof. Beyond it, only unquantified residual inspection risk remains.
+
+### 033 — P:three-transfer
+- **Exact inference:** the p=2 specialization of Chen–Hu (5.15) used to define `Λ_st`, including the factor `2^{ν_st−Q}=2` from `ν_st−Q=(4−χ)−(3−χ)=1`, the homogeneity `B_k(t)=t^{(4−χ)k}B_k(1)`, and the unit-gradient/half-gradient identification against `M_st`.
+- **Incoming hypotheses:** `Γ_st` nonnegative, even, positive-definite tempered Radon with exponent `1<χ<2` and Dalang's condition; imported Chen–Hu Theorem 3.8(i), (5.1), (5.15) at p=2, and C23 (1.1) finiteness.
+- **Checked:** the low/static endpoint estimates, the conditional-Hölder coefficient bound `C_low^θ C_st^{1−θ}`, the r-regularization `k≥N_r`, the exact low-order retention giving `log P_r(t)/t^κ→0`, and the final `q D_r^{1/q}` limsup.
+- **Not yet written out independently:** a line-level page reading of (5.15) at p=2 (published p.2180) confirming the exact coefficient form `2(2√M/(4−χ))^{4−χ}` under the normalization actually used by `M_st`, i.e., that the imported constant is consumed correctly and no sharp value or gradient-factor mismatch is silently introduced.
+- **Status:** no candidate gap; this is an unperformed named-import verification (my prior check read the region but did not re-derive the printed coefficient factor in place). Complete source proof exists; only the import match remains partially unverified.
+
+### 042 — P:static-phase-all-orders
+- **Exact inference:** that the n-th Cauchy coefficient of the bounded-operator propagator equals the recursion-defined `Z_n^ϵ(h)` entrywise (position and velocity), including self-contractions, without the compression introducing an extra contribution from the projection boundary at degree `N=n`.
+- **Incoming hypotheses:** bounded `L=A_0−zB` at finite mode/band/Hermite cutoffs, holomorphic on/inside the circle `δ_{α/2}λ^{2−α/2}/d_N`, Crouzeix–Palencia bound `100e^{2λh}`.
+- **Checked:** circle radius, Cauchy coefficient bound, `L:finite-word-cutoff` at `N=n`, `λ=n/h` factorial recovery, cutoff removal at fixed spatial smoothing, and the absolute series bound.
+- **Not yet written out independently:** the explicit term-by-term expansion matching `C_h(L)`, `F_h(L)`, `H_h(L)` (weighted in the isometry `(u,v)↦(u,A_λ^{-1/2}v)`) to the two-component Duhamel recursion, especially the velocity forcing and the claim that self-contractions in the single color are exactly the coefficient's ordinary degree-n Taylor monomial, not a renormalized chaos.
+- **Status:** no candidate gap; unperformed pair-of-series matching against a complete source proof; otherwise only residual inspection risk.
+
+### 047 — L:fixed-split
+- **Exact inference:** the tensor-subspace invariance claim that each background-segment propagator `P_j=P_z^Λ(τ_j,τ_{j−1})` preserves the phase space over `Z_S` and acts as an identity on the fresh/cross Gaussian factors, so the global word factors into background segment products and single `J_i` insertions without order-commutation errors.
+- **Incoming hypotheses:** piecewise-constant `Λ(t)`, each `B_i` acting nontrivially only on color-i's Gaussian factor and on the spatial band, `−Δ` acting only spatially, noncommutativity of `B_i` with free evolution permitted.
+- **Checked:** per-segment CP bound, the ending-only phase-metric product `D_A`, the fresh-insertion bound `c_i`, the permutation-simplex cube count `Σπ|D_π|≤Πh_i`, the normalized vector Cauchy extraction, the factorial step, and `C_split`.
+- **Not yet written out independently:** a full induction across the segment list spelling out the decomposition `H_{Λ_j} = L²(⊗_A G_i^{≤N_i}) ⊗ (⊗_S G_i^{(1)}) ⊗ (⊗_{C∖S} G_i^{(0)}) ⊗ X_{Λ_j}` and showing the segment exponential is `(background Gaussian polynomial operator) ⊗ (spatial evolution) ⊗ Id`, so the ordering of `B_i`, `S(−t)`, and the cross insertions is legitimate.
+- **Status:** no candidate gap; unperformed decomposition/induction write-out; the source proof is complete. Residual risk beyond this is inspection-level only.
+
+### 048 — P:interval-coefficients
+- **Exact inference:** the final identification after cutoff removal that the coefficients estimated at finite mode/band truncations are exactly the actual word coefficients of the finite-interval model, i.e., the strong mode/band convergence of each fixed word transfers the uniform coefficient bound to the uncut model.
+- **Incoming hypotheses:** finite interval inventory, bounded truncated `B_i`, the entire-majorant bound, `L:finite-word-cutoff` exactness at `N_i=2k_i`.
+- **Checked:** color parity and split count, exact Hermite preservation, the three local weight types, positive-power expansion before length substitution, inventory matching, the identification-vs-uniform-bound separation, and series summation.
+- **Not yet written out independently:** the last strong-convergence step per selected word with explicit dominators—the annihilation tail term vanishing on finite-coordinate Gaussian vectors and the creation tail dominated by `Σ_i e_i(x)^2=v_ε`; the band `S_b→I` commuting with free evolution; then dominated time integration at fixed words—rather than only the qualitative claim.
+- **Status:** no candidate gap; unperformed detailed limit write-out against a complete source proof (working04 described, but did not replace, this derivation). Otherwise residual inspection risk only.
+
+### Overall distinction
+No identified inference in these five is a candidate-source gap. They are all (b) unperformed independent calculations with complete source proofs and exact resolving derivations as above, plus (c) unquantified residual inspection risk on lines outside the named nodes.
+
+[held back: collaborators' unpublished work]
+
+[held back: collaborators' unpublished work]
+
+This is a genuine remaining named-import/application verification, with no Skorohod development required. It is independent of my five proof diagnoses and does not change the source or report identities or confer any new confidence level.

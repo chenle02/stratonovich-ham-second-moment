@@ -1,0 +1,68 @@
+{
+  "status": "LOCAL_KERNEL_PASS_PENDING_INITIAL_WS_APPLICATION_REVIEW",
+  "source_sha256": "4d3f8ee4350f96d5936a4b213c7aff5a312218743ee43b885e3c91a3b100cbcd",
+  "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "lean_binary_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+  "mathlib_pin": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "results": {
+    "compile-original": {
+      "exit": 0,
+      "elapsed": 2.7894890308380127,
+      "peak_rss_kib": 1888492
+    },
+    "audit-original": {
+      "exit": 0,
+      "elapsed": 3.8862154483795166,
+      "peak_rss_kib": 1848780
+    },
+    "compile-replay": {
+      "exit": 0,
+      "elapsed": 3.676657199859619,
+      "peak_rss_kib": 1870268
+    },
+    "audit-replay": {
+      "exit": 0,
+      "elapsed": 1.6310441493988037,
+      "peak_rss_kib": 1816912
+    },
+    "negative-cdf": {
+      "exit": 1,
+      "elapsed": 1.6154756546020508,
+      "peak_rss_kib": 1810556
+    },
+    "negative-energy": {
+      "exit": 1,
+      "elapsed": 3.4899344444274902,
+      "peak_rss_kib": 1816724
+    }
+  },
+  "header_fence_unchanged": true,
+  "standard_axioms_only": true,
+  "public_facts": 2,
+  "private_consumer_is_not_third_fact": true,
+  "owned_replay_object_hashes": {
+    "olean": "dbe078d3cfae3f0110e10b9a0cfd1fd354dc6aeabe0226a2f1ecc59642ab7225",
+    "olean.private": "e49172c5d07b29c14bd853cbbbb0cd451a0f3363c2d29c6f72e00b04c402fbf9",
+    "olean.server": "a3866c489aee131d4230508e3cfc45e01a6f5151f287e7a6b0b3f0367b78b96b",
+    "ir": "1a1b0fc2d4ee1194c88fc091e636331a377ce9fe114ddbba364fb85a85bcccbf",
+    "ir.sig": "d7dbd095b3aeecbe98e193b526405e8bce6d2d6373f8acb06de8fb0b06a82615"
+  },
+  "source_only_replay_equal": true,
+  "audit_output_equal": true,
+  "selected_dependency_count": 9,
+  "cached_library_count": 8,
+  "excluded_private_libraries": [
+    "WalshIntegral",
+    "RoughHeatKernel"
+  ],
+  "resources": {
+    "cpu_quota": "200%",
+    "memory_high": "4GiB",
+    "memory_max": "6GiB",
+    "tasks_max": 64,
+    "proof_threads": 1,
+    "max_concurrent": 2
+  },
+  "archive_members": 53,
+  "scope": "two conditional real algebra deductions with exact printed types/private composition/false controls; not H1/CDF/GN/energy supremum/PDE or package theorem"
+}

@@ -1,0 +1,34 @@
+# Author execution and limits
+
+8newcompleteproofs/169priorbodiesbyteidentical byauthorexecution. String.raw/
+preformatC0/format-tex/proofends/unique-label checksPASS. Clean223pagePDF:
+0errors/undefinedrefs/cites/overfull. Oneendpointdisplay splitBEFOREfreeze.
+All10new/context/bibPNGs214-223 inspected; afterexplicitglobalflowdefinition
+andBorelGclarification, changed218-221reinspected, othersSHAunchanged.
+Exacthalfaction/covariance/deltaweights/Rayleighfront4/M²quarter/signs/
+actualmean/radiusstopping intact. Goalsbox spans221-222 legibly; roadmap/
+bibcosmeticsareoldfinalpresentationdebt. Build/hash/Git/oldbody/image
+observations authorchecks, notreviewer executions.
+
+FullBTmathematicalscope/sourcea1c90c7 plusallneededD1genericrealization/
+tightnesswrittenSELFCONTAINED. No D1normexp/GLrate/GLFfiniteness import.
+ActualRBrestart matchesGR samegivenslowW/source/pullbacks onFULLFthenE.
+ActualEtuple/compactmean/fixedQanchor andPRIMARYSETtheorem, notnorm-only
+surrogate. PointprefactorGCconsumerdeferredtoGC/URowncompletegate, not
+removedfromgoal. Coarseoperatorboundonly, no sharpconstant/exactlimit.
+
+PRIMARYheldSOURCEPDF freshlySHAverified d7ba220ed75d6220af13ca964e763365da954ac2fdf8bc4e9d76b7aa32a6b170;
+heldllmTexSHA5d00d79bd0eb8e9095fd845e5fd2e38bddb47a6e466accc3dca1787f725acd82.
+NormalizedPDFhasDIFFERENTSHAce6affe9815f9f4b464a34419ffa1ca49996552c6ee31e06b291a764c2da950e,
+NOTequatedtooriginalorclaimedindependentreadingcoverage. Exactheldsource
+PNGsp190-191/fullselectedexcerpt read, notfullbook/publisheraudit. Existing
+readonlyrefdbcitekeyverified, no newsource/refrepair/ingestionclaim.
+
+OldfiniteGaussianTail/powermeantypesatactualguards only,nocompiler/fact.
+Olddiagnosticdata/code read/notrerun; floatnotcertified/casesnotindependent
+samples. ActualinputsGaussian, NONLINEARwaveoutputnotGaussian. Trueglobal
+HALFaction/notembeddingorfastcostsum; no rawHGaussian/timeindependence/
+finiteheadconditioning/pointtrace/source-firstreversal.80facts22seamsand
+L0PROPOSEDunchanged. Fullindependentsource/proof/applicationgatePENDING.
+No HPC/companion/contact/Skorohod/sibling/sourcefix/publication. Remaining
+US/GC/UR/PG/PB/OC/WS/fullargument/coldread/lit/wiki/privateparityOPEN.

@@ -1,0 +1,343 @@
+StratonovichHAMAudit.PositiveGram.scalar_sqrt_dual : ∀ (ell w t : Real)
+  (hw : @LT.lt.{0} Real Real.instLT (@OfNat.ofNat.{0} Real (nat_lit 0) (@Zero.toOfNat0.{0} Real Real.instZero)) w)
+  (ht : @LE.le.{0} Real Real.instLE (@OfNat.ofNat.{0} Real (nat_lit 0) (@Zero.toOfNat0.{0} Real Real.instZero)) t),
+  @LE.le.{0} Real Real.instLE
+    (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+      (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+        (@OfNat.ofNat.{0} Real (nat_lit 2)
+          (@instOfNatAtLeastTwo.{0} Real (nat_lit 2) Real.instNatCast
+            (@Nat.instAtLeastTwoHAddOfNat (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))
+              (@Nat.instNeZeroSucc (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))))))
+        ell)
+      (Real.sqrt t))
+    (@HAdd.hAdd.{0, 0, 0} Real Real Real (@instHAdd.{0} Real Real.instAdd)
+      (@HDiv.hDiv.{0, 0, 0} Real Real Real (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+        (@HPow.hPow.{0, 0, 0} Real Nat Real
+          (@instHPow.{0, 0} Real Nat (@NPow.toPow.{0} Real (@Monoid.toNPow.{0} Real Real.instMonoid))) ell
+          (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))
+        w)
+      (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul) w t))
+'StratonovichHAMAudit.PositiveGram.scalar_sqrt_dual' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@StratonovichHAMAudit.PositiveGram.gram_norm_square.{u_1,
+    u_2} : ∀ {ι : Type u_1} {H : Type u_2} [inst : Fintype.{u_1} ι] [inst_1 : NormedAddCommGroup.{u_2} H]
+  [inst_2 :
+    @InnerProductSpace.{0, u_2} Real H Real.instRCLike (@NormedAddCommGroup.toSeminormedAddCommGroup.{u_2} H inst_1)]
+  (k : ι → H) (w : ι → Real),
+  @Eq.{1} Real
+    (@HPow.hPow.{0, 0, 0} Real Nat Real
+      (@instHPow.{0, 0} Real Nat (@NPow.toPow.{0} Real (@Monoid.toNPow.{0} Real Real.instMonoid)))
+      (@Norm.norm.{u_2} H (@NormedAddCommGroup.toNorm.{u_2} H inst_1)
+        (@Finset.sum.{u_1, u_2} ι H
+          (@AddCommGroup.toAddCommMonoid.{u_2} H (@NormedAddCommGroup.toAddCommGroup.{u_2} H inst_1))
+          (@Finset.univ.{u_1} ι inst) fun (i : ι) =>
+          @HSMul.hSMul.{0, u_2, u_2} Real H H
+            (@instHSMul.{0, u_2} Real H
+              (@SMulZeroClass.toSMul.{0, u_2} Real H
+                (@AddZero.toZero.{u_2} H
+                  (@AddZeroClass.toAddZero.{u_2} H
+                    (@AddMonoid.toAddZeroClass.{u_2} H
+                      (@SubNegMonoid.toAddMonoid.{u_2} H
+                        (@AddGroup.toSubNegMonoid.{u_2} H
+                          (@AddCommGroup.toAddGroup.{u_2} H (@NormedAddCommGroup.toAddCommGroup.{u_2} H inst_1)))))))
+                (@DistribSMul.toSMulZeroClass.{0, u_2} Real H
+                  (@AddMonoid.toAddZeroClass.{u_2} H
+                    (@SubNegMonoid.toAddMonoid.{u_2} H
+                      (@AddGroup.toSubNegMonoid.{u_2} H
+                        (@AddCommGroup.toAddGroup.{u_2} H (@NormedAddCommGroup.toAddCommGroup.{u_2} H inst_1)))))
+                  (@DistribMulAction.toDistribSMul.{0, u_2} Real H Real.instMonoid
+                    (@SubNegMonoid.toAddMonoid.{u_2} H
+                      (@AddGroup.toSubNegMonoid.{u_2} H
+                        (@AddCommGroup.toAddGroup.{u_2} H (@NormedAddCommGroup.toAddCommGroup.{u_2} H inst_1))))
+                    (@Module.toDistribMulAction.{0, u_2} Real H Real.semiring
+                      (@AddCommGroup.toAddCommMonoid.{u_2} H (@NormedAddCommGroup.toAddCommGroup.{u_2} H inst_1))
+                      (@NormedSpace.toModule.{0, u_2} Real H Real.normedField
+                        (@NormedAddCommGroup.toSeminormedAddCommGroup.{u_2} H inst_1)
+                        (@InnerProductSpace.toNormedSpace.{0, u_2} Real H Real.instRCLike
+                          (@NormedAddCommGroup.toSeminormedAddCommGroup.{u_2} H inst_1) inst_2)))))))
+            (w i) (k i)))
+      (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))
+    (@Finset.sum.{u_1, 0} ι Real Real.instAddCommMonoid (@Finset.univ.{u_1} ι inst) fun (i : ι) =>
+      @Finset.sum.{u_1, 0} ι Real Real.instAddCommMonoid (@Finset.univ.{u_1} ι inst) fun (j : ι) =>
+        @HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+          (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul) (w i)
+            (@Inner.inner.{0, u_2} Real H
+              (@InnerProductSpace.toInner.{0, u_2} Real H Real.instRCLike
+                (@NormedAddCommGroup.toSeminormedAddCommGroup.{u_2} H inst_1) inst_2)
+              (k i) (k j)))
+          (w j))
+'StratonovichHAMAudit.PositiveGram.gram_norm_square' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@StratonovichHAMAudit.PositiveGram.active_upper_bound.{u_1,
+    u_2} : ∀ {ι : Type u_1} {H : Type u_2} [inst : Fintype.{u_1} ι] [inst_1 : NormedAddCommGroup.{u_2} H]
+  [inst_2 :
+    @InnerProductSpace.{0, u_2} Real H Real.instRCLike (@NormedAddCommGroup.toSeminormedAddCommGroup.{u_2} H inst_1)]
+  (Phi : H) (k : ι → H) (ell b w : ι → Real)
+  (hw :
+    ∀ (i : ι),
+      @LT.lt.{0} Real Real.instLT (@OfNat.ofNat.{0} Real (nat_lit 0) (@Zero.toOfNat0.{0} Real Real.instZero)) (w i))
+  (ht :
+    ∀ (i : ι),
+      @LE.le.{0} Real Real.instLE (@OfNat.ofNat.{0} Real (nat_lit 0) (@Zero.toOfNat0.{0} Real Real.instZero))
+        (@HSub.hSub.{0, 0, 0} Real Real Real (@instHSub.{0} Real Real.instSub)
+          (@Inner.inner.{0, u_2} Real H
+            (@InnerProductSpace.toInner.{0, u_2} Real H Real.instRCLike
+              (@NormedAddCommGroup.toSeminormedAddCommGroup.{u_2} H inst_1) inst_2)
+            Phi (k i))
+          (b i))),
+  @LE.le.{0} Real Real.instLE
+    (@HSub.hSub.{0, 0, 0} Real Real Real (@instHSub.{0} Real Real.instSub)
+      (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+        (@OfNat.ofNat.{0} Real (nat_lit 2)
+          (@instOfNatAtLeastTwo.{0} Real (nat_lit 2) Real.instNatCast
+            (@Nat.instAtLeastTwoHAddOfNat (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))
+              (@Nat.instNeZeroSucc (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))))))
+        (@Finset.sum.{u_1, 0} ι Real Real.instAddCommMonoid (@Finset.univ.{u_1} ι inst) fun (i : ι) =>
+          @HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul) (ell i)
+            (Real.sqrt
+              (@HSub.hSub.{0, 0, 0} Real Real Real (@instHSub.{0} Real Real.instSub)
+                (@Inner.inner.{0, u_2} Real H
+                  (@InnerProductSpace.toInner.{0, u_2} Real H Real.instRCLike
+                    (@NormedAddCommGroup.toSeminormedAddCommGroup.{u_2} H inst_1) inst_2)
+                  Phi (k i))
+                (b i)))))
+      (@HDiv.hDiv.{0, 0, 0} Real Real Real (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+        (@HPow.hPow.{0, 0, 0} Real Nat Real
+          (@instHPow.{0, 0} Real Nat (@NPow.toPow.{0} Real (@Monoid.toNPow.{0} Real Real.instMonoid)))
+          (@Norm.norm.{u_2} H (@NormedAddCommGroup.toNorm.{u_2} H inst_1) Phi)
+          (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))
+        (@OfNat.ofNat.{0} Real (nat_lit 2)
+          (@instOfNatAtLeastTwo.{0} Real (nat_lit 2) Real.instNatCast
+            (@Nat.instAtLeastTwoHAddOfNat (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))
+              (@Nat.instNeZeroSucc (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))))))))
+    (@HAdd.hAdd.{0, 0, 0} Real Real Real (@instHAdd.{0} Real Real.instAdd)
+      (@HSub.hSub.{0, 0, 0} Real Real Real (@instHSub.{0} Real Real.instSub)
+        (@Finset.sum.{u_1, 0} ι Real Real.instAddCommMonoid (@Finset.univ.{u_1} ι inst) fun (i : ι) =>
+          @HDiv.hDiv.{0, 0, 0} Real Real Real (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+            (@HPow.hPow.{0, 0, 0} Real Nat Real
+              (@instHPow.{0, 0} Real Nat (@NPow.toPow.{0} Real (@Monoid.toNPow.{0} Real Real.instMonoid))) (ell i)
+              (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))
+            (w i))
+        (@Finset.sum.{u_1, 0} ι Real Real.instAddCommMonoid (@Finset.univ.{u_1} ι inst) fun (i : ι) =>
+          @HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul) (b i) (w i)))
+      (@HDiv.hDiv.{0, 0, 0} Real Real Real (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+        (@HPow.hPow.{0, 0, 0} Real Nat Real
+          (@instHPow.{0, 0} Real Nat (@NPow.toPow.{0} Real (@Monoid.toNPow.{0} Real Real.instMonoid)))
+          (@Norm.norm.{u_2} H (@NormedAddCommGroup.toNorm.{u_2} H inst_1)
+            (@Finset.sum.{u_1, u_2} ι H
+              (@AddCommGroup.toAddCommMonoid.{u_2} H (@NormedAddCommGroup.toAddCommGroup.{u_2} H inst_1))
+              (@Finset.univ.{u_1} ι inst) fun (i : ι) =>
+              @HSMul.hSMul.{0, u_2, u_2} Real H H
+                (@instHSMul.{0, u_2} Real H
+                  (@SMulZeroClass.toSMul.{0, u_2} Real H
+                    (@AddZero.toZero.{u_2} H
+                      (@AddZeroClass.toAddZero.{u_2} H
+                        (@AddMonoid.toAddZeroClass.{u_2} H
+                          (@SubNegMonoid.toAddMonoid.{u_2} H
+                            (@AddGroup.toSubNegMonoid.{u_2} H
+                              (@AddCommGroup.toAddGroup.{u_2} H
+                                (@NormedAddCommGroup.toAddCommGroup.{u_2} H inst_1)))))))
+                    (@DistribSMul.toSMulZeroClass.{0, u_2} Real H
+                      (@AddMonoid.toAddZeroClass.{u_2} H
+                        (@SubNegMonoid.toAddMonoid.{u_2} H
+                          (@AddGroup.toSubNegMonoid.{u_2} H
+                            (@AddCommGroup.toAddGroup.{u_2} H (@NormedAddCommGroup.toAddCommGroup.{u_2} H inst_1)))))
+                      (@DistribMulAction.toDistribSMul.{0, u_2} Real H Real.instMonoid
+                        (@SubNegMonoid.toAddMonoid.{u_2} H
+                          (@AddGroup.toSubNegMonoid.{u_2} H
+                            (@AddCommGroup.toAddGroup.{u_2} H (@NormedAddCommGroup.toAddCommGroup.{u_2} H inst_1))))
+                        (@Module.toDistribMulAction.{0, u_2} Real H Real.semiring
+                          (@AddCommGroup.toAddCommMonoid.{u_2} H (@NormedAddCommGroup.toAddCommGroup.{u_2} H inst_1))
+                          (@NormedSpace.toModule.{0, u_2} Real H Real.normedField
+                            (@NormedAddCommGroup.toSeminormedAddCommGroup.{u_2} H inst_1)
+                            (@InnerProductSpace.toNormedSpace.{0, u_2} Real H Real.instRCLike
+                              (@NormedAddCommGroup.toSeminormedAddCommGroup.{u_2} H inst_1) inst_2)))))))
+                (w i) (k i)))
+          (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))
+        (@OfNat.ofNat.{0} Real (nat_lit 2)
+          (@instOfNatAtLeastTwo.{0} Real (nat_lit 2) Real.instNatCast
+            (@Nat.instAtLeastTwoHAddOfNat (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))
+              (@Nat.instNeZeroSucc (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))))))))
+'StratonovichHAMAudit.PositiveGram.active_upper_bound' depends on axioms: [propext,
+ Classical.choice.{u},
+ Quot.sound.{u}]
+@StratonovichHAMAudit.PositiveGram.half_weighted_entrywise_mono.{u_1} : ∀ {ι : Type u_1} [inst : Fintype.{u_1} ι]
+  (C D : ι → ι → Real) (w : ι → Real)
+  (hw :
+    ∀ (i : ι),
+      @LE.le.{0} Real Real.instLE (@OfNat.ofNat.{0} Real (nat_lit 0) (@Zero.toOfNat0.{0} Real Real.instZero)) (w i))
+  (hCD : ∀ (i j : ι), @LE.le.{0} Real Real.instLE (C i j) (D i j)),
+  @LE.le.{0} Real Real.instLE
+    (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+      (@HDiv.hDiv.{0, 0, 0} Real Real Real (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+        (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne))
+        (@OfNat.ofNat.{0} Real (nat_lit 2)
+          (@instOfNatAtLeastTwo.{0} Real (nat_lit 2) Real.instNatCast
+            (@Nat.instAtLeastTwoHAddOfNat (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))
+              (@Nat.instNeZeroSucc (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0))))))))
+      (@Finset.sum.{u_1, 0} ι Real Real.instAddCommMonoid (@Finset.univ.{u_1} ι inst) fun (i : ι) =>
+        @Finset.sum.{u_1, 0} ι Real Real.instAddCommMonoid (@Finset.univ.{u_1} ι inst) fun (j : ι) =>
+          @HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+            (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul) (w i) (C i j)) (w j)))
+    (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+      (@HDiv.hDiv.{0, 0, 0} Real Real Real (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+        (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne))
+        (@OfNat.ofNat.{0} Real (nat_lit 2)
+          (@instOfNatAtLeastTwo.{0} Real (nat_lit 2) Real.instNatCast
+            (@Nat.instAtLeastTwoHAddOfNat (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))
+              (@Nat.instNeZeroSucc (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0))))))))
+      (@Finset.sum.{u_1, 0} ι Real Real.instAddCommMonoid (@Finset.univ.{u_1} ι inst) fun (i : ι) =>
+        @Finset.sum.{u_1, 0} ι Real Real.instAddCommMonoid (@Finset.univ.{u_1} ι inst) fun (j : ι) =>
+          @HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+            (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul) (w i) (D i j)) (w j)))
+'StratonovichHAMAudit.PositiveGram.half_weighted_entrywise_mono' depends on axioms: [propext,
+ Classical.choice.{u},
+ Quot.sound.{u}]
+scalar_sqrt_dual 1 1 1
+  (Mathlib.Meta.NormNum.isNat_lt_true (Mathlib.Meta.NormNum.isNat_ofNat ℝ Nat.cast_zero)
+    (Mathlib.Meta.NormNum.isNat_ofNat ℝ Nat.cast_one) (Eq.refl false))
+  (Mathlib.Meta.NormNum.isNat_le_true (Mathlib.Meta.NormNum.isNat_ofNat ℝ Nat.cast_zero)
+    (Mathlib.Meta.NormNum.isNat_ofNat ℝ Nat.cast_one) (Eq.refl true)) : 2 * 1 * √1 ≤ 1 ^ 2 / 1 + 1 * 1
+scalar_sqrt_dual 3 2 0
+  (Mathlib.Meta.NormNum.isNat_lt_true (Mathlib.Meta.NormNum.isNat_ofNat ℝ Nat.cast_zero)
+    (Mathlib.Meta.NormNum.isNat_ofNat ℝ (Eq.refl 2)) (Eq.refl false))
+  (Mathlib.Meta.NormNum.isNat_le_true (Mathlib.Meta.NormNum.isNat_ofNat ℝ Nat.cast_zero)
+    (Mathlib.Meta.NormNum.isNat_ofNat ℝ Nat.cast_zero) (Eq.refl true)) : 2 * 3 * √0 ≤ 3 ^ 2 / 2 + 2 * 0
+gram_norm_square (fun i => if i = 0 then 1 else 2) fun i =>
+  if i = 0 then 1
+  else
+    -1 : ‖∑ i, (if i = 0 then 1 else -1) • if i = 0 then 1 else 2‖ ^ 2 =
+  ∑ i,
+    ∑ j, (if i = 0 then 1 else -1) * inner ℝ (if i = 0 then 1 else 2) (if j = 0 then 1 else 2) * if j = 0 then 1 else -1
+active_upper_bound 1 (fun x => 1) (fun x => 1) (fun x => 0) (fun x => 1)
+  (fun i =>
+    Mathlib.Meta.NormNum.isNat_lt_true (Mathlib.Meta.NormNum.isNat_ofNat ℝ Nat.cast_zero)
+      (Mathlib.Meta.NormNum.isNat_ofNat ℝ Nat.cast_one) (Eq.refl false))
+  fun i =>
+  of_eq_true
+    (Eq.trans
+      (Eq.trans
+        (congrArg (LE.le 0)
+          (Eq.trans
+            (congrFun'
+              (congrArg HSub.hSub
+                (Eq.trans (inner_self_eq_norm_sq_to_K 1)
+                  (Eq.trans (congrFun' (congrArg HPow.hPow (congrArg RCLike.ofReal norm_one)) 2) (one_pow 2))))
+              0)
+            (sub_zero 1)))
+        zero_le_one._simp_1)
+      (eq_true
+        True.intro)) : 2 * ∑ i, 1 * √(inner ℝ 1 1 - 0) - ‖1‖ ^ 2 / 2 ≤
+  ∑ i, 1 ^ 2 / 1 - ∑ i, 0 * 1 + ‖∑ i, 1 • 1‖ ^ 2 / 2
+active_upper_bound 0 (fun x => 1) (fun x => 1) (fun x => 0) (fun x => 1)
+  (fun i =>
+    Mathlib.Meta.NormNum.isNat_lt_true (Mathlib.Meta.NormNum.isNat_ofNat ℝ Nat.cast_zero)
+      (Mathlib.Meta.NormNum.isNat_ofNat ℝ Nat.cast_one) (Eq.refl false))
+  fun i =>
+  of_eq_true
+    (Eq.trans
+      (congrArg (LE.le 0)
+        (Eq.trans (congrFun' (congrArg HSub.hSub (Eq.trans (congrArg (HMul.hMul 1) (conj_trivial 0)) (mul_zero 1))) 0)
+          (sub_self 0)))
+      (Std.le_refl._simp_1
+        0)) : 2 * ∑ i, 1 * √(inner ℝ 0 1 - 0) - ‖0‖ ^ 2 / 2 ≤ ∑ i, 1 ^ 2 / 1 - ∑ i, 0 * 1 + ‖∑ i, 1 • 1‖ ^ 2 / 2
+half_weighted_entrywise_mono (fun i j => if i = j then 1 else 0) (fun i j => if i = j then 1 else 1 / 2)
+  (fun i => if i = 0 then 0 else 1)
+  (fun i =>
+    if h : i = 0 then
+      Eq.mpr (id (congrArg (LE.le 0) (ite_eq_left h)))
+        (Mathlib.Meta.NormNum.isNat_le_true (Mathlib.Meta.NormNum.isNat_ofNat ℝ Nat.cast_zero)
+          (Mathlib.Meta.NormNum.isNat_ofNat ℝ Nat.cast_zero) (Eq.refl true))
+    else
+      Eq.mpr (id (congrArg (LE.le 0) (ite_eq_right h)))
+        (Mathlib.Meta.NormNum.isNat_le_true (Mathlib.Meta.NormNum.isNat_ofNat ℝ Nat.cast_zero)
+          (Mathlib.Meta.NormNum.isNat_ofNat ℝ Nat.cast_one) (Eq.refl true)))
+  fun i j =>
+  if h : i = j then
+    Eq.mpr (id (congr (congrArg LE.le (ite_eq_left h)) (ite_eq_left h)))
+      (Mathlib.Meta.NormNum.isNat_le_true (Mathlib.Meta.NormNum.isNat_ofNat ℝ Nat.cast_one)
+        (Mathlib.Meta.NormNum.isNat_ofNat ℝ Nat.cast_one) (Eq.refl true))
+  else
+    Eq.mpr (id (congr (congrArg LE.le (ite_eq_right h)) (ite_eq_right h)))
+      (Mathlib.Meta.NormNum.isRat_le_true
+        (Mathlib.Meta.NormNum.IsNNRat.to_isRat
+          (Mathlib.Meta.NormNum.IsNat.to_isNNRat (Mathlib.Meta.NormNum.isNat_ofNat ℝ Nat.cast_zero)))
+        (Mathlib.Meta.NormNum.IsNNRat.to_isRat
+          (Mathlib.Meta.NormNum.isNNRat_div
+            (Mathlib.Meta.NormNum.isNNRat_mul (Eq.refl HMul.hMul)
+              (Mathlib.Meta.NormNum.IsNat.to_isNNRat (Mathlib.Meta.NormNum.isNat_ofNat ℝ Nat.cast_one))
+              (Mathlib.Meta.NormNum.isNNRat_inv_pos
+                (Mathlib.Meta.NormNum.IsNat.to_isNNRat (Mathlib.Meta.NormNum.isNat_ofNat ℝ (Eq.refl 2))))
+              (Eq.refl (Nat.mul 1 1)) (Eq.refl 2))))
+        (Eq.refl
+          true)) : (1 / 2 * ∑ i, ∑ j, ((if i = 0 then 0 else 1) * if i = j then 1 else 0) * if j = 0 then 0 else 1) ≤
+  1 / 2 * ∑ i, ∑ j, ((if i = 0 then 0 else 1) * if i = j then 1 else 1 / 2) * if j = 0 then 0 else 1
+@_private.Audit.0.StratonovichHAMAudit.PositiveGramAudit.active_consumer.{u_1,
+    u_2} : ∀ {ι : Type u_1} {H : Type u_2} [inst : Fintype.{u_1} ι] [inst_1 : NormedAddCommGroup.{u_2} H]
+  [inst_2 :
+    @InnerProductSpace.{0, u_2} Real H Real.instRCLike (@NormedAddCommGroup.toSeminormedAddCommGroup.{u_2} H inst_1)]
+  (Phi : H) (k : ι → H) (ell b w : ι → Real)
+  (hw :
+    ∀ (i : ι),
+      @LT.lt.{0} Real Real.instLT (@OfNat.ofNat.{0} Real (nat_lit 0) (@Zero.toOfNat0.{0} Real Real.instZero)) (w i))
+  (ht :
+    ∀ (i : ι),
+      @LE.le.{0} Real Real.instLE (@OfNat.ofNat.{0} Real (nat_lit 0) (@Zero.toOfNat0.{0} Real Real.instZero))
+        (@HSub.hSub.{0, 0, 0} Real Real Real (@instHSub.{0} Real Real.instSub)
+          (@Inner.inner.{0, u_2} Real H
+            (@InnerProductSpace.toInner.{0, u_2} Real H Real.instRCLike
+              (@NormedAddCommGroup.toSeminormedAddCommGroup.{u_2} H inst_1) inst_2)
+            Phi (k i))
+          (b i))),
+  @LE.le.{0} Real Real.instLE
+    (@HSub.hSub.{0, 0, 0} Real Real Real (@instHSub.{0} Real Real.instSub)
+      (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+        (@OfNat.ofNat.{0} Real (nat_lit 2)
+          (@instOfNatAtLeastTwo.{0} Real (nat_lit 2) Real.instNatCast
+            (@Nat.instAtLeastTwoHAddOfNat (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))
+              (@Nat.instNeZeroSucc (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))))))
+        (@Finset.sum.{u_1, 0} ι Real Real.instAddCommMonoid (@Finset.univ.{u_1} ι inst) fun (i : ι) =>
+          @HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul) (ell i)
+            (Real.sqrt
+              (@HSub.hSub.{0, 0, 0} Real Real Real (@instHSub.{0} Real Real.instSub)
+                (@Inner.inner.{0, u_2} Real H
+                  (@InnerProductSpace.toInner.{0, u_2} Real H Real.instRCLike
+                    (@NormedAddCommGroup.toSeminormedAddCommGroup.{u_2} H inst_1) inst_2)
+                  Phi (k i))
+                (b i)))))
+      (@HDiv.hDiv.{0, 0, 0} Real Real Real (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+        (@HPow.hPow.{0, 0, 0} Real Nat Real
+          (@instHPow.{0, 0} Real Nat (@NPow.toPow.{0} Real (@Monoid.toNPow.{0} Real Real.instMonoid)))
+          (@Norm.norm.{u_2} H (@NormedAddCommGroup.toNorm.{u_2} H inst_1) Phi)
+          (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))
+        (@OfNat.ofNat.{0} Real (nat_lit 2)
+          (@instOfNatAtLeastTwo.{0} Real (nat_lit 2) Real.instNatCast
+            (@Nat.instAtLeastTwoHAddOfNat (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))
+              (@Nat.instNeZeroSucc (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))))))))
+    (@HAdd.hAdd.{0, 0, 0} Real Real Real (@instHAdd.{0} Real Real.instAdd)
+      (@HSub.hSub.{0, 0, 0} Real Real Real (@instHSub.{0} Real Real.instSub)
+        (@Finset.sum.{u_1, 0} ι Real Real.instAddCommMonoid (@Finset.univ.{u_1} ι inst) fun (i : ι) =>
+          @HDiv.hDiv.{0, 0, 0} Real Real Real (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+            (@HPow.hPow.{0, 0, 0} Real Nat Real
+              (@instHPow.{0, 0} Real Nat (@NPow.toPow.{0} Real (@Monoid.toNPow.{0} Real Real.instMonoid))) (ell i)
+              (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))
+            (w i))
+        (@Finset.sum.{u_1, 0} ι Real Real.instAddCommMonoid (@Finset.univ.{u_1} ι inst) fun (i : ι) =>
+          @HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul) (b i) (w i)))
+      (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+        (@HDiv.hDiv.{0, 0, 0} Real Real Real (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+          (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne))
+          (@OfNat.ofNat.{0} Real (nat_lit 2)
+            (@instOfNatAtLeastTwo.{0} Real (nat_lit 2) Real.instNatCast
+              (@Nat.instAtLeastTwoHAddOfNat (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))
+                (@Nat.instNeZeroSucc (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0))))))))
+        (@Finset.sum.{u_1, 0} ι Real Real.instAddCommMonoid (@Finset.univ.{u_1} ι inst) fun (i : ι) =>
+          @Finset.sum.{u_1, 0} ι Real Real.instAddCommMonoid (@Finset.univ.{u_1} ι inst) fun (j : ι) =>
+            @HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul)
+              (@HMul.hMul.{0, 0, 0} Real Real Real (@instHMul.{0} Real Real.instMul) (w i)
+                (@Inner.inner.{0, u_2} Real H
+                  (@InnerProductSpace.toInner.{0, u_2} Real H Real.instRCLike
+                    (@NormedAddCommGroup.toSeminormedAddCommGroup.{u_2} H inst_1) inst_2)
+                  (k i) (k j)))
+              (w j))))
+'_private.Audit.0.StratonovichHAMAudit.PositiveGramAudit.active_consumer' depends on axioms: [propext,
+ Classical.choice.{u},
+ Quot.sound.{u}]

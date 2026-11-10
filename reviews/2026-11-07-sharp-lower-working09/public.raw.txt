@@ -1,0 +1,795 @@
+# Mathematical working turn 09
+
+This is an independent reconstruction of `PROOF112–132` from the four whole modules `F010` (compact mean family and full-phase spectral gap), `F011` (canonical law scaling), `F012` (raw blocks and the original-point lower bound), and `F013` (unmasked Rayleigh rate and positive-score homogeneity), checked against the nineteen supplied Teschl pages `F138–F156`. No grade, confidence, or final verdict is issued; fixed \((R,T)\) source limits precede all time asymptotics.
+
+Root’s work08 corrections are accepted:
+
+1. \(E_s=H^s(\R^d)\times H^{s-1}(\R^d)\) is a **componentwise Bessel pivot**; no component swap. Under the \(E_s\)-pairing, for \(s=1/2\),
+
+\[
+\sup_{\|z\|_{E_r}\le1}|\langle z,w\rangle_{E_s}|
+=\|w\|_{E_{2s-r}},
+\]
+
+so dualizing \(A:E_r\to E_{r+1}\) gives \(A^{*,E}:E_{2s-r-1}\to E_{2s-r}\). The earlier added “component swap” is false.
+
+2. The local free-wave energy identity is unhalved,
+
+\[
+\partial_t\left(\frac{v^2+|\nabla u|^2}{2}\right)
+-\operatorname{div}(v\nabla u)=0,
+\]
+
+and the moving-boundary flux \(v\partial_nu-\frac{v^2+|\nabla u|^2}{2}\le0\) is then the correct finite-propagation input.
+
+3. In `L:driver-actual-variances`, \(V_{\rm out}=\sum_ja_ja_j^*\) is controlled by the **input**-varying phase Bessel bound for \(A_j^*w\), and \(V_{\rm in}=\sum_ja_j^*a_j\) by the **output**-varying bound for \(A_jz\). These channels are not interchangeable.
+
+4. Quadratic-form tails tending to zero give only **strong** convergence; the operator-norm and trace-tail decay need `L:driver-dominated-tails` (compact domination of \(T_N\) by \(b_IB\)).
+
+5. Source/raw-residual and flow bounds are uniform in \(\rho\) at fixed \((R,T)\); only the smooth pointfield-regularity constants depend on \(\rho\), and source convergence is \(L^p\) in path norm.
+
+6. The point-moment right-hand side is the unmasked canonical \(u\), while \(Z_m\) is a masked tested average; constant displacement at time \(r\) is \(c_1+rc_2\), Green width must be distinct from temporal \(\eta\) and removed first at fixed positive noise widths; the mixed-order passage uses **absolute double summability** \((\sum_n q_n)^2\).
+
+---
+
+# 0. Two opening examples
+
+## 0.1 Singular invariant-direction covariance
+
+Throughout the admissible singular class
+
+\[
+d=2,\quad \alpha=1,\quad \Gamma=\delta_0(\mathrm dx_1)\,\mathrm dx_2,
+\qquad \mu=(2\pi)^{-1}\mathrm d\xi_1\,\delta_0(\mathrm d\xi_2),
+\]
+
+every covariance pairing is the **measure** pairing
+
+\[
+B_\Gamma(f,g)=\int_{\R}\Bigl(\int_\R f(x_1,x_2)\,\mathrm dx_2\Bigr)
+\Bigl(\int_\R g(x_1,y_2)\,\mathrm dy_2\Bigr)\,\mathrm dx_1 .
+\]
+
+The mean profile \(h_s=\int|\sigma-u|^{-a}\Gamma*\Psi(u)\,\mathrm du\) is therefore a genuine smooth convolution against a Radon measure, and the raw variance \(v_\Psi\) is computed through \(B_\Gamma\) only. This is the class in which the quotient obstruction of the mask layer operates, and it is included without isotropy or density hypotheses.
+
+## 0.2 Zero-frequency constant block
+
+For the extended phase \(F=E\oplus\R^2\), the free evolution of constant coordinates is
+
+\[
+C(t)(c_1,c_2)=(c_1+t\,c_2,\ c_2),
+\qquad
+C(t)=\exp t\begin{pmatrix}0&1\\0&0\end{pmatrix}
+=\begin{pmatrix}1&t\\0&1\end{pmatrix}.
+\]
+
+This is the zero-frequency content of the massless wave group, and it is exactly why the two constant-response columns \(iM_R(\psi,0)\) and \(iM_R(0,\psi)\) are retained. The constant displacement at time \(r\) is \(c_1+rc_2\).
+
+---
+
+# PROOF112 — `P:compact-ground-family`
+
+### Imported Teschl facts, actually located in the given pages
+
+- **Theorem 10.2, p. 258 (`F153`).** For \(d\le3\), real \(V\in L^\infty_\infty(\R^d)+L^2(\R^d)\) is relatively compact with respect to \(-\Delta\); \(H=H_0+V\) is self-adjoint on \(H^2\), bounded below, and \(\sigma_{\mathrm{ess}}(H)=[0,\infty)\); \(C_c^\infty\) is a core. Here each \(V_\sigma\in C_c^\infty\subset L^2\), so this applies directly and supplies the essential threshold.
+- **Theorem 10.13, p. 273 (`F154–F155`).** If the bottom of the spectrum of \(H\) is an eigenvalue, it is simple with a strictly positive ground state.
+- **Theorem 4.12 and Corollary 4.13, pp. 140–141 (`F147–F149`).** Max–min/min–max levels \(E_j(H)\) are computed below the essential spectrum, and \(A\ge B\) in PSD order implies \(E_j(A)\ge E_j(B)\); the page explicitly allows the quadratic-form domain in the definition of \(U(\psi_1,\ldots,\psi_{n-1})\).
+- **Theorem 2.14, p. 81 (`F139`).** A closed semi-bounded form is the form of a unique self-adjoint operator; this justifies the \(H^1\) form-domain identification.
+
+### Level bound, simplicity, and positivity
+
+For the shift \(c=1+M\), \(A_\sigma=H_\sigma+c\). Since \(V_\sigma\le M\),
+
+\[
+0\le M-V_\sigma\le M,
+\qquad
+B=1-\Delta,\qquad B\le A_\sigma\le (1+M)B.
+\]
+
+The common form domain is \(H^1\), because on \(H^2\):
+
+\[
+\|A_\sigma^{1/2}u\|_2^2
+=q_\sigma(u)+c\|u\|_2^2
+=\|u\|_{H^1}^2-\int V_\sigma|u|^2+M\|u\|_2^2,
+\]
+
+whence \(q_\sigma\) is form-bounded below by \(-M\|\cdot\|_2^2\) and the completed form domain is \(H^1\). The trial (E:compact-common-trial) gives \(E_1(\sigma)\le-\varepsilon<0\), and the \(L^\infty\) bound of \(V_\sigma\) gives \(E_1(\sigma)\ge-M\). Hence
+
+\[
+-M\le E_1(\sigma)\le-\varepsilon<0=\inf\sigma_{\mathrm{ess}}(H_\sigma).
+\]
+
+Therefore \(E_1(\sigma)\) is an isolated eigenvalue of finite multiplicity, and Theorem 10.13 makes it **simple** with a real strictly positive normalized ground state \(p_\sigma\).
+
+### Level continuity and gap
+
+For unit \(u\), \(|q_\sigma(u)-q_\tau(u)|\le\|V_\sigma-V_\tau\|_\infty\int|u|^2\), and the max–min formula
+
+\[
+E_j=\sup_{\psi_1,\ldots,\psi_{j-1}}
+\inf_{u\in U(\psi_1,\ldots,\psi_{j-1}),\|u\|_2=1}q(u)
+\]
+
+makes each \(E_j\) a \(1\)-Lipschitz function in \(\|\cdot\|_\infty\). With \(E_2(\sigma)\) set to zero if there is no second negative level,
+
+\[
+|E_j(\sigma)-E_j(\tau)|\le\|V_\sigma-V_\tau\|_\infty,\qquad j=1,2.
+\]
+
+Simplicity and isolation give \(E_2-E_1>0\) pointwise; continuity on the compact interval \(I\) gives \(\Delta_*:=\min_I(E_2-E_1)>0\). With \(\lambda=\sqrt{-E_1}\), \(\mu=\sqrt{-E_2}\),
+
+\[
+\lambda_\sigma-\mu_\sigma
+=\frac{E_2-E_1}{\lambda+\mu}
+\ge\frac{\Delta_*}{2\sqrt M}=:d_0>0,
+\]
+
+never dividing by \(\mu_\sigma\) (which may be zero).
+
+### Ground-state continuity in \(L^2\) and \(H^2\)
+
+Decompose \(p_\tau=a p_\sigma+r\), \(r\perp p_\sigma\), \(a>0\), \(a^2+\|r\|_2^2=1\). Set \(d_V=\|V_\sigma-V_\tau\|_\infty\). Then
+
+\[
+q_\sigma(p_\tau)\le q_\tau(p_\tau)+d_V
+=E_1(\tau)+d_V\le E_1(\sigma)+2d_V,
+\]
+
+and the complementary max–min bound gives
+
+\[
+q_\sigma(p_\tau)=a^2E_1(\sigma)+q_\sigma(r)
+\ge a^2E_1(\sigma)+E_2(\sigma)\|r\|_2^2
+=E_1(\sigma)+(E_2-E_1)\|r\|_2^2.
+\]
+
+Hence \(\|r\|_2^2\le2d_V/\Delta_*\), and
+
+\[
+\|p_\tau-p_\sigma\|_2^2=2(1-a)\le2(1-a^2)=2\|r\|_2^2
+\le\frac{4d_V}{\Delta_*}.
+\]
+
+Finally the eigen-equation
+
+\[
+(1-\Delta)p_\sigma=(1+V_\sigma-\lambda_\sigma^2)p_\sigma
+\]
+
+has a right side continuous in \(L^2\), and \((1-\Delta)^{-1}\) is an isometry onto the Bessel \(H^2\), giving continuity and boundedness of \(p_\sigma\) in \(H^2\).
+
+---
+
+# PROOF113 — `L:compact-fractional-phase`
+
+The scalar identity
+
+\[
+\sqrt x=\frac1\pi\int_0^\infty t^{-1/2}\frac{x}{x+t}\,\mathrm dt
+\]
+
+together with the resolvent-variational identity
+
+\[
+\langle f,(T+t)^{-1}f\rangle
+=\sup_u\big\{2\operatorname{Re}\langle f,u\rangle-q_T(u)-t\|u\|_2^2\big\}
+\]
+
+proves monotonicity: if \(T,S\ge1\) are positive self-adjoint with common form domain and \(T\le S\) as forms, then \((T+t)^{-1}\ge(S+t)^{-1}\) and \(T^{1/2}\le S^{1/2}\) as forms. With \(T^{1/4}=(T^{1/2})^{1/2}\) applied to
+
+\[
+B\le A_\sigma\le cB,\qquad c=1+M,
+\]
+
+one obtains
+
+\[
+B^{1/4}\le A_\sigma^{1/4}\le c^{1/4}B^{1/4},
+\]
+
+so the quarter-power domain is \(H^{1/2}\). The dual of \(\|A_\sigma^{1/4}u\|_2\) against \(z\in L^2\) is exactly \(\|A_\sigma^{-1/4}z\|_2\), attained at \(u=\frac{z}{\|A^{-1/2}z\|_2}A_\sigma^{-1/2}z\), so the negative coordinate is identified with \(H^{-1/2}\) uniformly in \(\sigma\). Hence
+
+\[
+\|(u,z)\|_{E_\sigma}^2
+=\|A_\sigma^{1/4}u\|_2^2+\|A_\sigma^{-1/4}z\|_2^2
+\]
+
+is uniformly equivalent to the fixed norm on \(E=H^{1/2}\times H^{-1/2}\).
+
+---
+
+# PROOF114 — `P:compact-E-wave`
+
+For \(h\ge-\mu^2\) define
+
+\[
+C_t(h)=\begin{cases}\cos(t\sqrt h),&h>0\\1,&h=0\\\cosh(t\sqrt{-h}),&h<0\end{cases},
+\qquad
+S_t(h)=\frac{1}{\sqrt{h}}\times
+\begin{cases}\sin(t\sqrt h),&h>0\\ t,&h=0\\ \sinh(t\sqrt{-h}),&h<0,\end{cases}
+\]
+
+so the spectral wave matrix is
+
+\[
+\begin{pmatrix}C_t(H_\sigma)&S_t(H_\sigma)\\-H_\sigma S_t(H_\sigma)&C_t(H_\sigma)\end{pmatrix}.
+\]
+
+The projection \(\Pi_\sigma^E\) is
+
+\[
+e_\sigma^E=(p_\sigma,\lambda_\sigma p_\sigma),\qquad
+\ell_\sigma^E(u,z)=\frac{\langle p_\sigma,u\rangle+
+\lambda_\sigma^{-1}\langle p_\sigma,z\rangle}{2},
+\]
+
+so \(\ell_\sigma^E(e_\sigma^E)=1\), and the eigenproperties follow from \(H_\sigma p_\sigma=-\lambda_\sigma^2p_\sigma\).
+
+On \(Q_\sigma^{\mathrm{sp}}=I-|p_\sigma\rangle\langle p_\sigma|\), one has \(h\ge E_2=-\mu_\sigma^2\). The matrix entries are bounded by
+
+\[
+|C_t(h)|\le e^{\mu t},\qquad |S_t(h)|\le\min(t,h^{-1/2})\le t e^{\mu t}
+\ \text{for}\ h<0,
+\qquad
+|S_t(h)|\le\min(t,h^{-1/2})\ \text{for}\ h\ge0.
+\]
+
+After weighting by the square root of \(h+c\) (uniformly bounded since \(1\le h+c\le c\) for \(-\mu^2\le h\le0\), while the high-frequency parts use the Bessel \(\sqrt h\) factors), the complementary phase matrix has norm at most \(C(1+t)e^{\mu_\sigma t}\). The decaying ground branch \((p_\sigma,-\lambda_\sigma p_\sigma)\) has exactly the \(e^{-\lambda t}\) dual normalization and remains in \(I-\Pi_\sigma^E\). The identification of this spectral matrix with the ordinary \(E\) flow uses graph-level data \((A_\sigma u,A_\sigma^{1/2}z)\), finite-horizon free propagation, Duhamel with the compact smooth force \(V_\sigma u\), and Picard uniqueness; no density of \(E\) in \(F\) is invoked (only \(E\) itself is treated).
+
+---
+
+# PROOF115 — `P:compact-F-projection`
+
+The full Duhamel block (E:compact-F-block) is exact under strong \(E\)-valued Fubini over the finite time triangle. The constant response force is \(D_\sigma(c_1,c_2)=(0,-?)\)—carefully, \(B(-\Delta?;\C)\): the constant-to-\(E\) map is \(D_\sigma(c_1,c_2)=(0, -V_\sigma c_1)\) as a forcing on the \(E\) pair, and the variation produces exactly the displayed \(E\)-integral plus the constant block \(C(t)c\).
+
+The constant dual solves, at once, the exponential transport equation. Set \(f_\sigma=\frac{\int V_\sigma p_\sigma}{2\lambda_\sigma}>0\). Then
+
+\[
+\ell_\sigma^ED_\sigma C(r)c=f_\sigma(c_1+rc_2),
+\]
+
+and choosing
+
+\[
+\ell_\sigma^C(c)=\int_0^\infty e^{-\lambda_\sigma r}f_\sigma(c_1+rc_2)\,\mathrm dr
+\]
+
+gives
+
+\[
+\ell_\sigma^C(c)=f\left(\frac{c_1}{\lambda}+\frac{c_2}{\lambda^2}\right),
+\qquad
+\ell_\sigma^C(C(t)c)=e^{\lambda t}\ell_\sigma^C(c).
+\]
+
+Consequently \(\ell_\sigma e_\sigma=1\) and \(\ell_\sigma P_\sigma(t)=e^{\lambda t}\ell_\sigma\); hence the rank-one projection \(\Pi_\sigma\) intertwines with \(P_\sigma(t)\) through the single growing eigenvalue. Positivity of the margins,
+
+\[
+\ell_\sigma(e_0)=\frac{f_\sigma}{\lambda_\sigma}>0,\qquad
+O_\phi(e_\sigma)=\int\phi(x)p_\sigma(x)\,\mathrm dx>0,
+\]
+
+uses positivity of \(p_\sigma\) and nonnegativity of \(\phi\), never a point trace.
+
+---
+
+# PROOF116 — `P:compact-F-complement`
+
+Splitting \(D_\sigma\) into the growing and complementary sectors and using the two explicit tail integrals, the \(E\)-component of \(P_\sigma(t)Q_\sigma(e,c)\) is
+
+\[
+P_\sigma^E(t)Q_\sigma^E e
++\int_0^tP_\sigma^E(t-r)Q_\sigma^ED_\sigma C(r)c\,\mathrm dr
+-e_\sigma^E\ell_\sigma^C(C(t)c).
+\]
+
+The first term is \(O((1+t)e^{\mu t})\), the integral is at most
+
+\[
+C e^{\mu t}|c|\int_0^t(1+t-r)(1+r)\,\mathrm dr
+\le C(t+t^2+t^3)e^{\mu t}|c|,
+\]
+
+and the subtraction is \(O((1+t))\); this proves
+
+\[
+\|P_\sigma(t)Q_\sigma\|_{\mathcal B(F)}\le C(1+t)^3e^{\mu t}.
+\]
+
+Since \(\mu\le\lambda-d_0\),
+
+\[
+\|e^{-\lambda t}P_\sigma(t)Q_\sigma\|\le C_\eta e^{-\eta t}
+\]
+
+for every \(0<\eta<d_0\). The parameter continuity is a direct subtraction of the two free-Duhamel equations and scalar Gronwall, legal because operator norms are measurable through a countable dense set of states.
+
+---
+
+# PROOF117 — `L:compact-raw-profile`
+
+For fixed nonnegative nonseparable \(\Psi\in C_c^\infty((0,1)\times\R^d)\),
+
+\[
+h_s(x)=\int_0^1|\sigma-u|^{-a}(\Gamma*\Psi(u,\cdot))(x)\,\mathrm du,
+\]
+
+and \(Z=W(\Psi)\) with
+
+\[
+v_\Psi=\int_0^1\int_{\R^d}\Psi(s,x)h_s(x)\,\mathrm dx\,\mathrm ds<\infty.
+\]
+
+Finiteness uses the already-proved ball-growth positivity of \(\Gamma\) and the integrability of \(|\sigma-u|^{-a}\), \(a<1\). Smoothness of \(h\) uses the compact \(r,z\)-support in any bounded \((s,x)\) set so all derivatives fall on \(\Psi\). The covariance identity is exactly
+
+\[
+\mathbb E[W(\Psi)W(F_0)]=\int F_0(s,x)h_s(x)\,\mathrm dx\,\mathrm ds,
+\]
+
+and
+
+\[
+h_\sigma\ge\Gamma*\overline q,
+\qquad v_\Psi\ge Q(\overline q)>0,
+\qquad \overline q=\int_0^1\Psi(u,\cdot)\,\mathrm du.
+\]
+
+This holds for singular covariances because \(Q(\overline q)\) is the positive measure autocorrelation. The masked family \(V_\sigma=m_Rh_\sigma\) is therefore smooth, compact, and Lipschitz in \(L^\infty\cap L^2\).
+
+---
+
+# PROOF118 — `P:compact-original-common-trial`
+
+Take \(\psi\in C_c^\infty(B_2)\), \(\psi\ge c_0>0\) on \(B_1\), \(\psi_L=L^{-d/2}\psi(\cdot/L)\), with mask radius \(R\ge2L\). Using nonnegativity and homogeneity \(\Gamma(B_{L/2})=2^{\alpha-d}\Gamma(B_1)L^\alpha\),
+
+\[
+\int V_\sigma\psi_L^2
+\ge c_0^2L^{-d}\int_{B_L}(\Gamma*\overline q)(x)\,\mathrm dx
+\ge c_0^2L^{-d}\Gamma(B_{L/2})\int\overline q
+=C_\Gamma L^{-\alpha}.
+\]
+
+Since kinetic energy \(D_\psi L^{-2}\) and \(\alpha<2\), one finds \(L\) with
+
+\[
+\|\nabla\psi_L\|_2^2-\int V_\sigma\psi_L^2\le-\varepsilon_R<0
+\]
+
+uniformly in \(\sigma\). The raw test \(\Psi\), variable \(Z\), and variance \(v_\Psi\) were fixed before this mask choice. The mask can be enlarged to contain any further fixed compact test supports without disturbing the trial.
+
+---
+
+# PROOF119 — `L:exact-canonical-scaling`
+
+The two nontrivial vertex powers are
+
+\[
+T^{-a/2}r_T^{\,(4-\alpha)/2}
+=T^{-\kappa/2}=\delta^{1/2},
+\qquad
+T^{1-a/2}r_T^{\,(2-\alpha)/2}
+=T^{\kappa/2}=\delta^{-1/2},
+\]
+
+where the source displays the first as \(T^{-a/2}r_T^{2-\alpha/2}\) (identical, since \(\frac{4-\alpha}{2}=2-\frac\alpha2\)). Hence the time-weighted Green kernel
+
+\[
+\delta^{-1}G_d\left(\frac{t-s}{\delta},\cdot\right)
+\]
+
+carries exactly the same vertex factor as the dilated vertex \(T r_T T^{-a/2}r_T^{-\alpha/2}\). The source cutoff laws transform by \(\delta^aK_\eta(\delta r)=K_{\eta/\delta}(r)\) and \(\varepsilon\mapsto\varepsilon/r_T^2\), preserving max-time/sum-space at every vertex. \(d=3\) Green width is removed first at fixed noise widths, with the Green width divided by \(r_T^2\) on the scaled side. The joint fixed-order diagram laws and the absolutely summable series then give the equality in law of the canonical solution at scaled coordinates and the moment identity.
+
+---
+
+# PROOF120 — `L:raw-block-inputs`
+
+The pullback maps \(T_{\delta,m}f=\delta^{a/2-1}f((\cdot-s_m)/\delta,\cdot)\) are exact isometries of \(H_W\): the double temporal substitution gives factor
+
+\[
+\delta^{(a/2-1)\cdot2}\cdot\delta\cdot\delta^{1-a}=1
+\]
+
+(one \(\delta\) from each differential, one \(\delta^{1-a}\) from \(\delta^{-a}\delta^{2}=\delta^{1-a}\)). The identities \(W_{\delta,m}(f)=W_{\mathrm{fast}}(f(\cdot-mB,\cdot))\) are literal common-noise-space equalities.
+
+The path space \(\mathscr B_0\) is separable by finite-rank rational matrices and polygonal paths with rational breakpoints. The joint variable \((X,Z)\) is Gaussian on the same \(W\), and the raw covariance trace gives
+
+\[
+\mathbb E[W_{\delta,m}(f)Z]
+=\delta^{a/2}\int f(u,x)h_{s_m+\delta u}(x)\,\mathrm dx\,\mathrm du,
+\]
+
+so after the \(g_\delta=\delta^{(1-a)/2}\) amplitude,
+
+\[
+b:=\mathbb E[XZ]=g_\delta\,\delta^{a/2}H_m=\sqrt\delta\,H_m.
+\]
+
+The deterministic mean response \(H_m\) includes both constant columns, and the span of \(E\) together with the two constant coordinates is dense in \(F\) while \(E\) alone is not.
+
+---
+
+# PROOF121 — `P:raw-block-gaussian-law`
+
+The crucial point is that the Gaussian change of measure is **one global shift** using one fixed raw variable \(Z\in N(0,v)\). For the jointly Gaussian pair \((X,Z)\),
+
+\[
+(X,Z)\overset d=(\mathrm T G,z\cdot G),
+\qquad
+(\mathrm T G)z^\ast=\mathrm E[XZ]=b.
+\]
+
+On the product Gaussian space define the density \(e^{-sZ-s^2v/2}\). For every finite list of coordinates, \(G'=G+sz\) gives the Cameron–Martin identity
+
+\[
+\mathbb E[e^{-sZ-s^2v/2}f(X+sb)]
+=\mathbb Ef(X).
+\]
+
+The coordinate maps generate the norm-Borel \(\sigma\)-field because every operator norm and Hölder norm is a supremum over a countable dense set of rational times and normalized rational finite combinations in a Hilbert basis; the cylinder sets form a \(\pi\)-system. Taking \(s=\delta^{-1/2}\) and \(sb=H\) gives, for all nonnegative norm-Borel \(j\),
+
+\[
+\mathbb E j(X)=\mathbb E[e^{-Z/\sqrt\delta-v/(2\delta)}j(X+H)],
+\]
+
+with no independence between the blocks \(X_m\), none between \(Z\) and the blocks, and no tilted source-limit assertion.
+
+---
+
+# PROOF122 — `L:raw-block-uniform-error`
+
+From the block input moments,
+
+\[
+\|M_\delta\|_p\le(N+1)^{1/p}C\sqrt p\,g_\delta
+\le C'\sqrt p\,\delta^{(1-a)/2-1/p}.
+\]
+
+No independence enters; the maximum moment uses \(N+1\le2/\delta\) only. The constant-potential static primitive approximates \(H_m\) to \(O(\delta)\) in \(C^\theta\); local Young stability on the ball \(H_0+1\) then gives \(E_{\mathrm{op},\delta}\le C(M_\delta+\delta)\). Uniform higher moments follow from the global Young estimate and the square-exponential bound of the driver norm, so the convergence passes to every finite \(L^q\).
+
+---
+
+# PROOF123 — `L:raw-block-indexed-cone` (complete induction)
+
+The choices are ordered to avoid circular budgeting: aperture \(\vartheta\) first, then integer \(B\) from the normalized-complement decay \(C_{\mathrm{gap}}e^{-\eta_{\mathrm{gap}}B}\), then \(\nu\) from uniform projection/dual continuity, then \(\omega>0\), then \(\epsilon_{\mathrm{op}}\) from the five explicit budgets. The cone at index \(s\) is
+
+\[
+\mathscr C_s=\{z=Ae_s+r:A>0,\ r=Q_sz,\ \|r\|_F\le\vartheta A\}.
+\]
+
+**Entrance.** For \(z_1=D_0(B)e_0\), \(b=\sigma_0\),
+
+\[
+A_1=\ell_b(z_1)\ge a_* - M_\ell\epsilon_{\mathrm{op}}E_0\ge a_*/2,
+\]
+
+\[
+\|Q_bz_1\|\le q_BM_QE_0+M_Q\epsilon_{\mathrm{op}}E_0\le\vartheta a_*/4,
+\]
+
+so \(z_1\in\mathscr C_b\) with ratio at most \(\vartheta/2\).
+
+**Rebasing.** For \(z=Ae_b+r\) in the old cone and adjacent \(c\), since \(1-2\nu M_z\ge1/2\),
+
+\[
+\ell_c(z)\ge1-\nu M_zA,\qquad
+\|Q_cz\|\le(\vartheta+\nu M_z)A.
+\]
+
+**One full block.** \(D\) close to \(P_c(B)\), with
+
+\[
+x=e^{-\lambda_cB}\ell_c(Dz),\quad
+y=e^{-\lambda_cB}\|Q_cDz\|,
+\]
+
+the budgets give \(x\ge(1-\varrho)A>A/2\) and \(y\le\vartheta A/2\), hence \(y\le\vartheta x\). The old residual was explicitly rebased into the new structural subspace \(Q_c\); no assumption that it already lay in the new kernel is made. So each full block preserves the new cone and multiplies its amplitude by at least \(e^{\lambda_cB}(1-\varrho)\).
+
+**Terminal \(0\le u\le B\).** Rebase once more to \(c=\sigma_N\). Then \(\ell_c(\zeta)\ge3A/4\), \(\|Q_c\zeta\|\le2\vartheta A\), and
+
+\[
+e^{-\lambda_cu}\frac{O_\phi(P_c(u)z)}{A}
+\ge\frac{3j_*}4-2H_{\mathrm{obs}}C_{\mathrm{gap}}\vartheta,
+\]
+
+with the perturbation correction \(H_{\mathrm{obs}}\epsilon_{\mathrm{op}}M_z\le j_*/8\). The choice \(\vartheta=j_*/(16H_{\mathrm{obs}}C_{\mathrm{gap}})\) gives the terminal factor at least \(j_*/2\).
+
+**Bookkeeping.** For \(N=1\) there are no intermediate blocks and the loop is empty; \(u=0\) is covered because \(e^{-\lambda_cu}=1\) and \(O_\phi\) acts on the same \(z\). Combining entrance, \(N-1\) intermediate blocks, and the terminal factor gives (E:raw-block-positive-product) with \(c_*=a_*j_*/4\). Both nonzero constant columns and both data entries are retained.
+
+---
+
+# PROOF124 — `L:raw-block-restart`
+
+On the global fast horizon \(L_{\mathrm{ext}}=(N+1)B\), the driver \(A_{\mathrm{glob}}=g_\delta A_R(W_{\mathrm{fast}})\) and the local drivers \(X_m=g_\delta A_R(W_{\delta,m})\) satisfy the algebraic cocycle
+
+\[
+S_F(mB)\big[A_{\mathrm{glob}}(mB+u)-A_{\mathrm{glob}}(mB)\big]S_F(-mB)
+=X_m(u).
+\]
+
+This is an exact conjugation identity obtained without commuting the mask through any wave group. The actual fast local noises \(Y_m(f)=Y_{\epsilon,\eta}(T_{\delta,m}f)\) have pointfields
+
+\[
+Y_m(u,x)=Y_{\mathrm{fast}}(mB+u,x),
+\qquad
+Y_{\mathrm{fast}}(u,x)=\delta^{a/2}Y_{\epsilon,\eta}(\delta u,x),
+\]
+
+with temporal law \(K_{\eta/\delta}\), source and residual bounded by the \(H_W\)-norm, and residual tending to zero testwise. Green smoothing is a distinct width, removed first at fixed positive noise widths. The finite block products are actual \(L^2\) source limits at fixed \(\delta,N\), proved by the error-accumulation recurrence \(d(n+1)\le C d(n)+C^n e_{\mathrm{src}}\) and Hölder on a fixed finite horizon; no uniform estimate in growing \(N\) is needed. The \(L^2\) source convergence of this same product discharges the masked-comparison premise.
+
+---
+
+# PROOF125 — `P:raw-block-point-comparison`
+
+Define
+
+\[
+j_\delta(x)=|O_\phi D_{x_N}(\tau)D_{x_{N-1}}(B)\cdots D_{x_0}(B)e_0|^2.
+\]
+
+The Young map is continuous on all of \(\mathscr B_\delta\), so \(j_\delta\) is continuous and nonnegative everywhere. Applying the global Gaussian shift with \(X+H\) exactly as the translate gives
+
+\[
+\mathbb E U_{\delta,B}^2
+=\mathbb E[e^{-Z/\sqrt\delta-v/(2\delta)}Y_{\delta,B}^2].
+\]
+
+No source convergence under the exponential density is used; the identity is an exact pathwise-in-law identity.
+
+The noise-only model corresponds to \(W'=g_\delta W_{\mathrm{fast}}\) with rescaled covariance \(\Gamma_\delta=g_\delta^2\Gamma\) in the same admissible class; its \(n\)-th source chain carries exactly \(g_\delta^n\). The \(L^2\) convergence of the source products \(F_{m,\rho}\to F_m\) at fixed \(\delta,N\) (from PROOF124) supplies the premise of `P:masked-canonical-transfer`. Since \(0\le m_R\le1\) multiplies every nonnegative displacement Wick integrand by the product of vertex masks, the masked/unmasked comparison is ordering of nonnegative diagrams including unequal, self, and empty chains. Therefore
+
+\[
+\mathbb E U_{\delta,B}^2
+\le\mathbb E|u_{\Gamma_\delta}(L,0)|^2
+=\mathbb E|u(T,0)|^2,
+\qquad\delta=T^{-\kappa},
+\]
+
+using the canonical unmasked point moment on the right; the equality in `F011` carries the raw law. All source limits are at fixed \(\delta\), before large-time passage.
+
+---
+
+# PROOF126 — `P:raw-block-original-lower`
+
+The rate is extracted with the quantifier order
+
+\[
+\forall e_{\mathrm{rate}}>0:\exists B=B(e_{\mathrm{rate}})<\infty:\forall\delta\downarrow0,
+\]
+
+never \(B=B(\delta)\). The block-maximum event \(E_\delta\) has probability at least
+
+\[
+1-A_p\eta^{-p}\delta^{\gamma_p}-v\delta^{1/2}\to1,
+\]
+
+a single union bound with no independence and no product of block probabilities. On \(E_\delta\) the indexed cone gives \(Y_{\delta,B}>0\) and
+
+\[
+Y_{\delta,B}\ge e^{(I_R-e_{\mathrm{rate}})/\delta},
+\]
+
+using the left Riemann sum for \(I_R\) with the final remainder \(\tau\), and the constant for \(\delta(N-1)\log(1-\varrho)\) is absorbed into \(e_{\mathrm{rate}}/3\). Restricting the nonnegative shifted integral to \(E_\delta\), where \(-Z/\sqrt\delta\ge-\delta^{-3/4}\),
+
+\[
+\mathbb E|u(T,0)|^2\ge p_\delta e^{(2I_R-2e_{\mathrm{rate}}-v/2)/\delta-\delta^{-3/4}}.
+\]
+
+Multiplying the logarithm by \(\delta\) and using \(\delta\log p_\delta\to0\), the linear Girsanov cost \(\delta^{-3/4}\) contributes \(\delta^{1/4}\to0\), while the quadratic cost is precisely \(v/2\). Hence
+
+\[
+\liminf_{T\to\infty}T^{-\kappa}\log\mathbb E|u(T,0)|^2
+\ge2I_R-2e_{\mathrm{rate}}-\frac{v}2,
+\]
+
+and \(e_{\mathrm{rate}}\downarrow0\) completes it. Spatial translation extends \(0\) to every fixed \(x\).
+
+---
+
+# PROOF127–128 — `L:variational-heat-envelope`, `L:variational-global-mean`
+
+The Gaussian envelope is the actual spectral identity
+
+\[
+(\Gamma*p_\varepsilon)(x)=\int e^{i\xi\cdot x}e^{-\varepsilon|\xi|^2/2}\mu(\mathrm d\xi),
+\qquad
+0\le(\Gamma*p_\varepsilon)(x)\le(\Gamma*p_\varepsilon)(0)<\infty,
+\]
+
+with strict positivity at zero for \(\Gamma\ne0\); it uses the single balanced distribution pairing, no pointwise density. This gives the global derivative envelope: every mixed derivative of \(\Gamma*\Psi\) is bounded because the compact support of \(\Psi\) makes \(|\Psi|,|D\Psi|\le C_Dp_\varepsilon\) for one fixed \(\varepsilon>0\), and after \(r=s-t\) the local integrability \(|\cdot|^{-a}\) gives globally bounded derivatives of \(h_s\). This is the self-contained regularity input for the unmasked/bounded-perturbation step; no compact-decay theorem is applied to \(h_s\).
+
+---
+
+# PROOF129 — `P:variational-unmasked-rate`
+
+Here \(H_s=-\Delta-h_s\), with \(\|h_s\|_\infty\le M\), so both required facts are proved independently of Teschl Theorem 10.2.
+
+**Self-adjointness.** \(A=-\Delta\) is self-adjoint on \(H^2\), \(B_s=-h_s\) is bounded self-adjoint; for \(b>M\),
+
+\[
+H_s-ib=(I+B_s(A-ib)^{-1})(A-ib),
+\]
+
+and the first factor has a Neumann inverse because \(\|B_s(A-ib)^{-1}\|\le M/b<1\). The same holds with \(+ib\), proving \(H_s\) self-adjoint on \(H^2\) with two-sided resolvent points. (Teschl `F138–F139` supplies only the semi-bounded form correspondence; the self-contained bounded-perturbation argument is the one actually used, since \(h_s\) is not in the relatively-compact class.)
+
+**Form domain.** \(J_s=H_s+1+M\ge1\) satisfies
+
+\[
+\|J_s^{1/2}f\|_2^2=q_s(f)+(1+M)\|f\|_2^2,
+\qquad\|f\|_{H^1}^2\le\|J_s^{1/2}f\|_2^2\le(1+M)\|f\|_{H^1}^2,
+\]
+
+so \(D(J_s^{1/2})=H^1\), by completion in equivalent dominating norms.
+
+**Rayleigh formula.** For any \(b>\sup\sigma(H_s)\), the Rayleigh–Ritz characterization on the form domain gives \(\lambda_{\Psi,s}^2\) as the supremum over real unit \(H^1\) functions of \(\int h_sf^2-\|\nabla f\|_2^2\). The negative floor \(\sqrt{\varepsilon_0}\le\lambda_{\Psi,s}\le\sqrt M\) is provided by the compact plateau trial of `P:compact-original-common-trial`, which uses only the mask in its support. No eigenstate at the unmasked bottom is asserted. The Lipschitz property follows from \(C_\Psi\) of `L:variational-global-mean`.
+
+---
+
+# PROOF130 — `P:variational-remove-mask`
+
+The monotone masks
+
+\[
+m_R(x)=\chi(|x|/R),
+\qquad
+\chi(r)=\frac{F(2-r)}{F(2-r)+F(r-1)},\quad F=e^{-1/t},
+\]
+
+are even, smooth, increase to \(1\), and equal \(1\) on \(B_R\), \(0\) off \(B_{2R}\). For \(R\ge R_0\), each \(V_{R,s}=m_Rh_s\) is a compact smooth family, so its compact-ground statements apply and its ground rate \(\lambda_{R,s}\) is real with the same Rayleigh formula. Since \(m_R\uparrow1\), dominated convergence gives
+
+\[
+\int m_Rh_sf^2\uparrow\int h_sf^2
+\]
+
+for every fixed real unit \(f\in H^1\), and the **single** interchange of two numerical suprema over \(f\) and \(R\) yields
+
+\[
+\sup_{R\ge R_0}\lambda_{R,s}^2=\lambda_{\Psi,s}^2.
+\]
+
+Positive square roots and the monotone increasing rate functions give uniform-in-\(s\) convergence over the compact interval \(I\) (by an increasing-cover argument). Hence
+
+\[
+\int_0^1\lambda_{R,s}\,\mathrm ds\uparrow I_\Psi.
+\]
+
+Applying `F012` at each fixed \(R\) to the **same** point liminf \(Q_2\) and then taking the numerical supremum over \(R\) gives
+
+\[
+\liminf_{T\to\infty}T^{-\kappa}\log\mathbb E|u(T,x)|^2
+\ge2I_\Psi-\frac{v_\Psi}{2}.
+\]
+
+No \(R(T)\), no unmasked noisy wave in the lower bound, no mask-uniform Gaussian estimate, and no exchange of source and time limits is used.
+
+---
+
+# PROOF131 — `L:variational-control-dilation`
+
+The dilation
+
+\[
+(D_r\Psi)(s,x)=r^{d+2-\alpha}\Psi(s,rx)
+\]
+
+is a bijection of \(\mathcal C_{\mathrm{pos}}\) with inverse \(D_{1/r}\). Two different scalings are carefully separated:
+
+- **Radon pushforward.** For the physical covariance,
+
+\[
+\int G(ry)\Gamma(\mathrm dy)=r^{\alpha-d}\int G(z)\Gamma(\mathrm dz),
+\]
+
+by the homogeneity \(\Gamma(A/r)=r^{\alpha-d}\Gamma(A)\), giving
+
+\[
+h_{D_r\Psi,s}(x)=r^2h_{\Psi,s}(rx).
+\]
+
+- **Lebesgue spatial volume.** In the raw variance pairing,
+
+\[
+v_{D_r\Psi}
+=r^{(d+2-\alpha)+2-d}v_\Psi
+=r^{4-\alpha}v_\Psi,
+\]
+
+the \(r^2\) coming from the two mean factors and \(r^{-d}\) from the spatial volume. The two powers are never conflated.
+
+The unitary \(U_rf=r^{d/2}f(r\cdot)\) satisfies
+
+\[
+\|\nabla U_rf\|_2^2=r^2\|\nabla f\|_2^2,
+\qquad
+\int h_{D_r\Psi,s}(U_rf)^2=r^2\int h_{\Psi,s}f^2,
+\]
+
+so the Rayleigh bijection gives
+
+\[
+\lambda_{D_r\Psi,s}=r\lambda_{\Psi,s},\qquad
+I_{D_r\Psi}=rI_\Psi,\qquad
+v_{D_r\Psi}=r^{4-\alpha}v_\Psi .
+\]
+
+Time is not rescaled, and for masks the relation \(m_R(rx)=m_{R/r}(x)\) records that a fixed mask radius is not invariant under dilation.
+
+---
+
+# PROOF132 — `P:variational-positive-scores`
+
+Let \(k=3-\alpha>0\), \(q=4-\alpha=k+1\), \(m=q/k=(4-\alpha)/(3-\alpha)>1\).
+
+**Nonemptiness and positivity.** Fix \(\Psi_0\in\mathcal C_{\mathrm{pos}}\); choose \(r_0=(I_0/v_0)^{1/k}>0\). Since \(I_{D_r\Psi}=rI_\Psi\) and \(v_{D_r\Psi}=r^q v_\Psi\),
+
+\[
+I_{D_{r_0}\Psi_0}-\frac{v_{D_{r_0}\Psi_0}}2
+=r_0I_0-\frac{r_0^q v_0}{2}
+=r_0I_0-\frac{r_0\cdot(r_0^k v_0)}2
+=\frac{r_0I_0}{2}>0.
+\]
+
+**Homogeneity without taking a supremum in a circular way.** For \(c>0\), \(r_c=c^{1/k}\), \(K_c=c^m\), and every \(\Psi\),
+
+\[
+cI_{D_{r_c}\Psi}-\frac{v_{D_{r_c}\Psi}}2
+=c\,r_cI_\Psi-\frac{r_c^q v_\Psi}2
+=K_c\left(I_\Psi-\frac{v_\Psi}2\right).
+\]
+
+This is an exact set equality because the \(c\)-score set is the image under the bijection \(D_{r_c}\) of the label-one score set followed by the scalar multiplication \(K_c\).
+
+**Finiteness.** The score set is bounded by the **independent upper bound** Theorem `T:full-upper`, applied to the same canonical solution:
+
+\[
+\mathbb E|u(T,0)|^2\le e(T+2)^d e^{C_{\mathrm{up}}T^\kappa},
+\qquad
+Q_2\le C_{\mathrm{up}}.
+\]
+
+Since every label-two score is at most \(Q_2\), and the \(c=2\) set scaling maps the whole label-one set by \(K_2>0\), all label-one scores are at most \(C_{\mathrm{up}}/K_2\). Therefore the finite real suprema exist. Consequently
+
+\[
+S_c^{\mathrm{pos}}=K_cS_1^{\mathrm{pos}}
+=c^{(4-\alpha)/(3-\alpha)}S_1^{\mathrm{pos}},\qquad
+Q_2\ge S_2^{\mathrm{pos}}.
+\]
+
+This is the declared conditional-variational structure: the label-one score is auxiliary and not identified with a first-moment constant or a Jensen improvement.
+
+---
+
+# Dependency audit
+
+The completed chain is:
+
+\[
+\begin{array}{c}
+\text{F010: compact ground family, fractional phase, }E\text{ complement, }F\text{ projection/complement, raw profile/common trial}\\
+\Rightarrow\text{F011: canonical law scaling}\\
+\Rightarrow\text{F012: raw Gaussian shift, block error, indexed cone, source restart, canonical comparison, original lower rate}\\
+\Rightarrow\text{F013: unmasked Rayleigh rate, mask removal, Radon dilation, finite positive scores}.
+\end{array}
+\]
+
+The only external spectral inputs are the actually-located Teschl facts listed in PROOF112; the unmasked nondecaying mean is handled by the self-contained bounded-perturbation argument in PROOF129, not by Teschl Theorem 10.2. Positivity/finiteness of the upper variational scores uses the existing independent `T:full-upper`, never the later intrinsic-constant or closure theorem as a parent. The point comparison at the end is to the **unmasked canonical** \(\mathbb E|u(T,0)|^2\), not to a masked point moment.
+
+---
+
+# First actual source failure
+
+**None located in `F010–F013` against the supplied Teschl pages.** The imported spectral hypotheses are satisfied exactly as advertised:
+
+- compact smooth decaying \(V_\sigma\) falls in \(C_c^\infty\subset L^2\), where Teschl Theorem 10.2 gives \(H^2\) self-adjointness, boundedness below, \(\sigma_{\mathrm{ess}}=[0,\infty)\), and a \(C_c^\infty\) core;
+- Theorem 10.13 gives the simple strictly-positive ground state only after the bottom is known to be an eigenvalue below the essential threshold;
+- Theorem 4.12/Corollary 4.13 give max–min/order, and the page explicitly permits the quadratic-form domain.
+
+All corrections needed this turn are to my own earlier report (component-swapped dual, unhalved energy identity, reversed variance labels, strong-vs-norm tail decay, source-width uniformity, masked-vs-unmasked point moment, \(c_1+rc_2\), Green width distinct from \(\eta\), and absolute double summability); none is a defect in `F010–F013`.
+
+## Remaining mathematical gaps
+
+1. The compact ground family requires \(V_\sigma\in C_c^\infty\), and the mask \(m_R\) is fixed before time asymptotics; a convergence of masks \(m_R\to1\) exists only as an increasing numerical lower-bound scheme, not as a masked point-moment equality.
+2. The lower bound is a pointwise-in-\((R,T)\) estimate with \(Q_2\) independent of \(R\); no uniform-in-mask Gaussian estimate and no \(R(T)\) is used, so the supremum of the lower bounds is a pure numerical supremum.
+3. The Gaussian shift \(e^{-Z/\sqrt\delta-v/(2\delta)}\) is one global shift; the resulting lower bound carries exactly the half-variance cost \(v/2\) and requires no independence of blocks or of \(Z\) from the blocks, but it likewise gives no tilted source-field limit.
+4. The Full-class score supremum is real and finite but is not identified as the intrinsic second-moment constant; positivity and boundedness use `T:full-upper` only, and the sharp-constant matching remains a separate, later stage.
+5. All bounds here are at fixed \((R,T)\), with time asymptotics taken last; no joint large-\(R\), large-\(T\) limit is asserted.

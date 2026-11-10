@@ -1,0 +1,58 @@
+theorem StratonovichHAMAudit.HermiteWord.raw_support : ∀ {C B V : Type} [inst : DecidableEq C]
+  (Good : (C → Nat) → V → Prop) (J : C → V → V) (F : B → V → V) (v₀ : V),
+  Good (fun x => 0) v₀ →
+    (∀ (d : C → Nat) (i : C) (v : V), Good d v → Good (StratonovichHAMAudit.HermiteWord.bump i d) (J i v)) →
+      (∀ (d : C → Nat) (b : B) (v : V), Good d v → Good d (F b v)) →
+        ∀ (w : List (C × B)),
+          Good (StratonovichHAMAudit.HermiteWord.counts w) (StratonovichHAMAudit.HermiteWord.raw J F v₀ w) :=
+fun {C B V} [DecidableEq C] Good J F v₀ hv₀ hJ hF w =>
+  List.rec hv₀
+    (fun a w ih =>
+      hF (StratonovichHAMAudit.HermiteWord.counts (a :: w)) a.snd
+        (J a.fst (StratonovichHAMAudit.HermiteWord.raw J F v₀ w))
+        (hJ (StratonovichHAMAudit.HermiteWord.counts w) a.fst (StratonovichHAMAudit.HermiteWord.raw J F v₀ w) ih))
+    w
+theorem StratonovichHAMAudit.HermiteWord.cut_eq_raw : ∀ {C B V : Type} [inst : DecidableEq C]
+  (Good : (C → Nat) → V → Prop) (J : C → V → V) (F : B → V → V) (P : V → V) (v₀ : V) (N : C → Nat),
+  Good (fun x => 0) v₀ →
+    (∀ (d : C → Nat) (i : C) (v : V), Good d v → Good (StratonovichHAMAudit.HermiteWord.bump i d) (J i v)) →
+      (∀ (d : C → Nat) (b : B) (v : V), Good d v → Good d (F b v)) →
+        (∀ (d : C → Nat) (v : V), (∀ (c : C), d c ≤ N c) → Good d v → P v = v) →
+          ∀ (w : List (C × B)),
+            (∀ (c : C), StratonovichHAMAudit.HermiteWord.counts w c ≤ N c) →
+              StratonovichHAMAudit.HermiteWord.cut P J F v₀ w = StratonovichHAMAudit.HermiteWord.raw J F v₀ w :=
+fun {C B V} [DecidableEq C] Good J F P v₀ N hv₀ hJ hF hP w hN =>
+  List.rec (motive := fun w =>
+    (∀ (c : C), StratonovichHAMAudit.HermiteWord.counts w c ≤ N c) →
+      StratonovichHAMAudit.HermiteWord.cut P J F v₀ w = StratonovichHAMAudit.HermiteWord.raw J F v₀ w)
+    (fun hN => Eq.refl (StratonovichHAMAudit.HermiteWord.cut P J F v₀ []))
+    (fun a w ih hN =>
+      have hs := fun c =>
+        have hc := hN c;
+        Decidable.byContradiction fun a_1 => StratonovichHAMAudit.HermiteWord.cut_eq_raw._proof_1_5 N a w c hc a_1;
+      have hw := StratonovichHAMAudit.HermiteWord.raw_support Good J F v₀ hv₀ hJ hF w;
+      have hp₀ := hP (StratonovichHAMAudit.HermiteWord.counts w) (StratonovichHAMAudit.HermiteWord.raw J F v₀ w) hs hw;
+      have hp₁ :=
+        hP (StratonovichHAMAudit.HermiteWord.bump a.fst (StratonovichHAMAudit.HermiteWord.counts w))
+          (J a.fst (StratonovichHAMAudit.HermiteWord.raw J F v₀ w)) hN
+          (hJ (StratonovichHAMAudit.HermiteWord.counts w) a.fst (StratonovichHAMAudit.HermiteWord.raw J F v₀ w) hw);
+      id
+        (Eq.mpr
+          (id
+            (congrArg
+              (fun _a =>
+                F a.snd (P (J a.fst (P _a))) = F a.snd (J a.fst (StratonovichHAMAudit.HermiteWord.raw J F v₀ w)))
+              (ih hs)))
+          (Eq.mpr
+            (id
+              (congrArg
+                (fun _a => F a.snd (P (J a.fst _a)) = F a.snd (J a.fst (StratonovichHAMAudit.HermiteWord.raw J F v₀ w)))
+                hp₀))
+            (Eq.mpr
+              (id
+                (congrArg (fun _a => F a.snd _a = F a.snd (J a.fst (StratonovichHAMAudit.HermiteWord.raw J F v₀ w)))
+                  hp₁))
+              (Eq.refl (F a.snd (J a.fst (StratonovichHAMAudit.HermiteWord.raw J F v₀ w))))))))
+    w hN
+'StratonovichHAMAudit.HermiteWord.raw_support' does not depend on any axioms
+'StratonovichHAMAudit.HermiteWord.cut_eq_raw' depends on axioms: [propext, Quot.sound]

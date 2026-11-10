@@ -1,0 +1,3 @@
+# Genuine integrated MAIN mathematical judgment live
+
+Root authorized exactly one final F assessment after READYaa24986 push and <HUB> research-ref parity. Native executable/model/original session/carrier and PID/start were verified against procfs. Complete original215/241/13/all-model C2 scope, unforced confidence, exact228 minimum rows plus global/import/calibration work and new full source-coupling rereads are requested. No component-grade conjunction, automatic retry/adoption or whole-goal acceptance. Old N usage remains UNKNOWN and its global technical refusal remains distinct from any actual final report.

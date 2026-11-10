@@ -1,0 +1,7889 @@
+{
+  "H:homog": {
+    "id": "H:homog",
+    "kind": "hypothesis",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 122,
+    "labels": [
+      "H:homog",
+      "E:threshold"
+    ],
+    "references": [
+      "E:cov"
+    ],
+    "edges": [
+      "E:cov"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "T:first": {
+    "id": "T:first",
+    "kind": "theorem",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 319,
+    "labels": [
+      "T:first"
+    ],
+    "references": [
+      "H:homog"
+    ],
+    "edges": [
+      "H:homog"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [
+      "chen:author2026:time-dependency"
+    ],
+    "proof_ids": []
+  },
+  "T:crude": {
+    "id": "T:crude",
+    "kind": "theorem",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 347,
+    "labels": [
+      "T:crude"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [
+      "chen:author2026:time-dependency"
+    ],
+    "proof_ids": []
+  },
+  "Conj:allp": {
+    "id": "Conj:allp",
+    "kind": "conjecture",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 351,
+    "labels": [
+      "Conj:allp"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [
+      "chen:author2026:time-dependency"
+    ],
+    "proof_ids": []
+  },
+  "P:Jensen": {
+    "id": "P:Jensen",
+    "kind": "proposition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 366,
+    "labels": [
+      "P:Jensen"
+    ],
+    "references": [
+      "E:expansion",
+      "H:homog",
+      "L:vertex-crude",
+      "P:Jensen",
+      "T:first"
+    ],
+    "edges": [
+      "E:expansion",
+      "H:homog",
+      "L:vertex-crude",
+      "T:first"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [
+      "chen:author2026:time-dependency"
+    ],
+    "proof_ids": [
+      "PROOF001"
+    ]
+  },
+  "P:mixed": {
+    "id": "P:mixed",
+    "kind": "proposition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 436,
+    "labels": [
+      "P:mixed",
+      "E:mixed-moment",
+      "E:full-second"
+    ],
+    "references": [
+      "E:full-second",
+      "E:mixed-diagram",
+      "E:mixed-moment",
+      "H:homog",
+      "L:crude-corrected",
+      "L:joint-fixed-order",
+      "L:spatial-wick-measures",
+      "L:vertex-crude",
+      "P:mild-construction",
+      "P:mixed"
+    ],
+    "edges": [
+      "E:mixed-diagram",
+      "H:homog",
+      "L:crude-corrected",
+      "L:joint-fixed-order",
+      "L:spatial-wick-measures",
+      "L:vertex-crude",
+      "P:mild-construction"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF002"
+    ]
+  },
+  "L:white-test": {
+    "id": "L:white-test",
+    "kind": "lemma",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 513,
+    "labels": [
+      "L:white-test",
+      "E:white-test"
+    ],
+    "references": [
+      "E:full-second",
+      "L:white-test"
+    ],
+    "edges": [
+      "P:mixed"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF003"
+    ]
+  },
+  "R:source-uniformity": {
+    "id": "R:source-uniformity",
+    "kind": "remark",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 540,
+    "labels": [
+      "R:source-uniformity"
+    ],
+    "references": [
+      "E:white-test"
+    ],
+    "edges": [
+      "L:white-test"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "L:damped-homogeneous-norms": {
+    "id": "L:damped-homogeneous-norms",
+    "kind": "lemma",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 583,
+    "labels": [
+      "L:damped-homogeneous-norms",
+      "E:damped-tail-norms"
+    ],
+    "references": [
+      "E:damped-norm-definitions",
+      "E:damped-tail-norms",
+      "H:homog",
+      "L:damped-homogeneous-norms"
+    ],
+    "edges": [
+      "E:damped-norm-definitions",
+      "H:homog"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF004"
+    ]
+  },
+  "L:spatial-wick-measures": {
+    "id": "L:spatial-wick-measures",
+    "kind": "lemma",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 712,
+    "labels": [
+      "L:spatial-wick-measures",
+      "E:spatial-wick-limit"
+    ],
+    "references": [
+      "E:construction-brownian-moments",
+      "E:construction-heat-bound",
+      "E:spatial-positive-laplace",
+      "E:spatial-wick-limit",
+      "H:homog",
+      "L:spatial-wick-measures"
+    ],
+    "edges": [
+      "H:homog"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF005"
+    ]
+  },
+  "L:joint-fixed-order": {
+    "id": "L:joint-fixed-order",
+    "kind": "lemma",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 874,
+    "labels": [
+      "L:joint-fixed-order"
+    ],
+    "references": [
+      "E:joint-temporal-tail",
+      "E:spatial-wick-limit",
+      "H:homog",
+      "L:damped-homogeneous-norms",
+      "L:joint-fixed-order",
+      "L:spatial-wick-measures"
+    ],
+    "edges": [
+      "H:homog",
+      "L:damped-homogeneous-norms",
+      "L:spatial-wick-measures"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [
+      "chen:author2026:time-dependency"
+    ],
+    "proof_ids": [
+      "PROOF006"
+    ]
+  },
+  "L:crude-corrected": {
+    "id": "L:crude-corrected",
+    "kind": "lemma",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 979,
+    "labels": [
+      "L:crude-corrected",
+      "E:crude-corrected"
+    ],
+    "references": [
+      "E:crude-corrected",
+      "E:crude-norms",
+      "E:theta-envelope",
+      "H:homog",
+      "L:crude-corrected",
+      "L:damped-homogeneous-norms",
+      "L:joint-fixed-order",
+      "P:mixed"
+    ],
+    "edges": [
+      "E:crude-norms",
+      "H:homog",
+      "L:damped-homogeneous-norms",
+      "L:joint-fixed-order",
+      "P:mixed"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF007"
+    ]
+  },
+  "L:vertex-crude": {
+    "id": "L:vertex-crude",
+    "kind": "lemma",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 1044,
+    "labels": [
+      "L:vertex-crude",
+      "E:vertex-crude",
+      "E:vertex-summability"
+    ],
+    "references": [
+      "E:crude-norms",
+      "E:theta-envelope",
+      "E:vertex-crude",
+      "E:vertex-summability",
+      "H:homog",
+      "L:damped-homogeneous-norms",
+      "L:joint-fixed-order",
+      "L:vertex-crude"
+    ],
+    "edges": [
+      "E:crude-norms",
+      "H:homog",
+      "L:crude-corrected",
+      "L:damped-homogeneous-norms",
+      "L:joint-fixed-order"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [
+      "chen:author2026:time-dependency"
+    ],
+    "proof_ids": [
+      "PROOF008"
+    ]
+  },
+  "P:mild-construction": {
+    "id": "P:mild-construction",
+    "kind": "proposition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 1118,
+    "labels": [
+      "P:mild-construction",
+      "E:mild-construction"
+    ],
+    "references": [
+      "E:external-vertex-limit",
+      "E:fixed-external-domination",
+      "E:mild-construction",
+      "E:occupied-multiplication",
+      "E:partial-vertex-limit",
+      "E:vertex-crude",
+      "E:vertex-summability",
+      "H:homog",
+      "L:joint-fixed-order",
+      "L:vertex-crude",
+      "P:mild-construction"
+    ],
+    "edges": [
+      "H:homog",
+      "L:joint-fixed-order",
+      "L:vertex-crude"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [
+      "chen:author2026:time-dependency"
+    ],
+    "proof_ids": [
+      "PROOF009"
+    ]
+  },
+  "P:envelope": {
+    "id": "P:envelope",
+    "kind": "proposition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 1296,
+    "labels": [
+      "P:envelope",
+      "E:homogeneous-envelope",
+      "E:B-envelope",
+      "E:envelope-growth"
+    ],
+    "references": [
+      "E:B-envelope",
+      "E:envelope-growth",
+      "E:homogeneous-envelope",
+      "H:homog",
+      "L:crude-corrected",
+      "L:damped-homogeneous-norms",
+      "L:joint-fixed-order",
+      "P:envelope",
+      "P:mixed"
+    ],
+    "edges": [
+      "H:homog",
+      "L:crude-corrected",
+      "L:damped-homogeneous-norms",
+      "L:joint-fixed-order",
+      "P:mixed"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF010"
+    ]
+  },
+  "R:G0-verdict": {
+    "id": "R:G0-verdict",
+    "kind": "remark",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 1373,
+    "labels": [
+      "R:G0-verdict"
+    ],
+    "references": [
+      "G:upper",
+      "L:white-test",
+      "P:envelope",
+      "S:interval-upper"
+    ],
+    "edges": [
+      "G:upper",
+      "L:white-test",
+      "P:envelope",
+      "S:interval-upper"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "P:white-four": {
+    "id": "P:white-four",
+    "kind": "proposition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 1453,
+    "labels": [
+      "P:white-four",
+      "E:white-four-table",
+      "E:total-four"
+    ],
+    "references": [
+      "E:total-four",
+      "E:white-four-table",
+      "L:static-four",
+      "P:white-four"
+    ],
+    "edges": [
+      "L:static-four"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF011"
+    ]
+  },
+  "L:static-four": {
+    "id": "L:static-four",
+    "kind": "lemma",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 1517,
+    "labels": [
+      "L:static-four",
+      "E:static-four-table"
+    ],
+    "references": [
+      "E:sector-values",
+      "E:static-four-table",
+      "E:total-four",
+      "L:static-four",
+      "L:white-test",
+      "P:white-four"
+    ],
+    "edges": [
+      "L:white-test",
+      "P:white-four"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF012"
+    ]
+  },
+  "P:riesz-small": {
+    "id": "P:riesz-small",
+    "kind": "proposition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 1612,
+    "labels": [
+      "P:riesz-small",
+      "E:riesz-two",
+      "E:riesz-four"
+    ],
+    "references": [
+      "E:riesz-four",
+      "E:riesz-two",
+      "E:total-four",
+      "P:riesz-small"
+    ],
+    "edges": [
+      "P:white-four"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF013"
+    ]
+  },
+  "R:riesz-static": {
+    "id": "R:riesz-static",
+    "kind": "remark",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 1698,
+    "labels": [
+      "R:riesz-static"
+    ],
+    "references": [
+      "E:riesz-two"
+    ],
+    "edges": [
+      "P:riesz-small"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "R:G1-scope": {
+    "id": "R:G1-scope",
+    "kind": "remark",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 1750,
+    "labels": [
+      "R:G1-scope"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [
+      "chen.hu:25:hyperbolic"
+    ],
+    "proof_ids": []
+  },
+  "L:d1-spatial": {
+    "id": "L:d1-spatial",
+    "kind": "lemma",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 1833,
+    "labels": [
+      "L:d1-spatial",
+      "E:d1-spatial-product",
+      "E:d1-spatial-max"
+    ],
+    "references": [
+      "E:d1-covariances",
+      "E:d1-spatial-max",
+      "E:d1-spatial-product",
+      "L:d1-spatial"
+    ],
+    "edges": [
+      "E:d1-covariances"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF014"
+    ]
+  },
+  "P:d1-upper": {
+    "id": "P:d1-upper",
+    "kind": "proposition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 1918,
+    "labels": [
+      "P:d1-upper",
+      "E:d1-coefficient",
+      "E:d1-upper"
+    ],
+    "references": [
+      "E:d1-coefficient",
+      "E:d1-covariances",
+      "E:d1-spatial-max",
+      "E:d1-time-symmetry",
+      "E:d1-upper",
+      "L:d1-spatial",
+      "L:joint-fixed-order",
+      "P:d1-upper",
+      "P:mixed"
+    ],
+    "edges": [
+      "E:d1-covariances",
+      "L:d1-spatial",
+      "L:joint-fixed-order",
+      "P:mixed"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [
+      "chen:author2026:time-dependency"
+    ],
+    "proof_ids": [
+      "PROOF015"
+    ]
+  },
+  "L:low-alpha-convolution": {
+    "id": "L:low-alpha-convolution",
+    "kind": "lemma",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 2022,
+    "labels": [
+      "L:low-alpha-convolution",
+      "E:low-alpha-radial",
+      "E:low-alpha-convolution"
+    ],
+    "references": [
+      "E:low-alpha-convolution",
+      "E:low-alpha-radial",
+      "L:low-alpha-convolution"
+    ],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [
+      "chen:author2026:time-dependency"
+    ],
+    "proof_ids": [
+      "PROOF016"
+    ]
+  },
+  "L:alpha-one-convolution": {
+    "id": "L:alpha-one-convolution",
+    "kind": "lemma",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 2082,
+    "labels": [
+      "L:alpha-one-convolution",
+      "E:alpha-one-convolution"
+    ],
+    "references": [
+      "E:alpha-one-convolution",
+      "L:alpha-one-convolution"
+    ],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF017"
+    ]
+  },
+  "P:low-alpha-upper": {
+    "id": "P:low-alpha-upper",
+    "kind": "proposition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 2146,
+    "labels": [
+      "P:low-alpha-upper",
+      "E:low-alpha-constants",
+      "E:low-alpha-coefficient"
+    ],
+    "references": [
+      "E:d1-time-symmetry",
+      "E:low-alpha-coefficient",
+      "H:homog",
+      "L:alpha-one-convolution",
+      "L:d1-spatial",
+      "L:joint-fixed-order",
+      "L:low-alpha-convolution",
+      "P:d1-upper",
+      "P:low-alpha-upper"
+    ],
+    "edges": [
+      "H:homog",
+      "L:alpha-one-convolution",
+      "L:d1-spatial",
+      "L:joint-fixed-order",
+      "L:low-alpha-convolution",
+      "P:d1-upper"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [
+      "chen:author2026:time-dependency"
+    ],
+    "proof_ids": [
+      "PROOF018"
+    ]
+  },
+  "R:low-alpha-scope": {
+    "id": "R:low-alpha-scope",
+    "kind": "remark",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 2237,
+    "labels": [
+      "R:low-alpha-scope"
+    ],
+    "references": [
+      "L:alpha-one-convolution",
+      "P:d1-upper"
+    ],
+    "edges": [
+      "L:alpha-one-convolution",
+      "P:d1-upper"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "C:d1-first-calibration": {
+    "id": "C:d1-first-calibration",
+    "kind": "corollary",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 2260,
+    "labels": [
+      "C:d1-first-calibration",
+      "E:d1-first-calibration"
+    ],
+    "references": [
+      "C:d1-first-calibration",
+      "E:d1-covariances",
+      "E:d1-first-calibration",
+      "L:d1-spatial",
+      "P:Jensen",
+      "P:d1-upper",
+      "P:low-alpha-upper"
+    ],
+    "edges": [
+      "E:d1-covariances",
+      "L:d1-spatial",
+      "P:Jensen",
+      "P:d1-upper",
+      "P:low-alpha-upper"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF019"
+    ]
+  },
+  "R:d1-upper-checks": {
+    "id": "R:d1-upper-checks",
+    "kind": "remark",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 2301,
+    "labels": [
+      "R:d1-upper-checks"
+    ],
+    "references": [
+      "E:d1-coefficient",
+      "E:d1-time-symmetry",
+      "L:white-test",
+      "P:envelope"
+    ],
+    "edges": [
+      "L:white-test",
+      "P:d1-upper",
+      "P:envelope"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "R:d1-comparisons": {
+    "id": "R:d1-comparisons",
+    "kind": "remark",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 2320,
+    "labels": [
+      "R:d1-comparisons"
+    ],
+    "references": [
+      "R:G1-scope"
+    ],
+    "edges": [
+      "R:G1-scope"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [
+      "balan.conus:16:intermittency"
+    ],
+    "proof_ids": []
+  },
+  "H:spatial-maximum": {
+    "id": "H:spatial-maximum",
+    "kind": "hypothesis",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 2355,
+    "labels": [
+      "H:spatial-maximum",
+      "E:higher-convolution"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "P:higher-transfer": {
+    "id": "P:higher-transfer",
+    "kind": "proposition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 2367,
+    "labels": [
+      "P:higher-transfer",
+      "E:higher-constants",
+      "E:higher-bound"
+    ],
+    "references": [
+      "E:higher-holder",
+      "H:homog",
+      "H:spatial-maximum",
+      "L:d1-spatial",
+      "L:joint-fixed-order",
+      "P:higher-transfer",
+      "P:low-alpha-upper",
+      "P:mixed",
+      "S:d1-upper"
+    ],
+    "edges": [
+      "H:homog",
+      "H:spatial-maximum",
+      "L:d1-spatial",
+      "L:joint-fixed-order",
+      "P:low-alpha-upper",
+      "P:mixed",
+      "S:d1-upper"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [
+      "chen:author2026:time-dependency"
+    ],
+    "proof_ids": [
+      "PROOF020"
+    ]
+  },
+  "L:higher-riesz": {
+    "id": "L:higher-riesz",
+    "kind": "lemma",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 2525,
+    "labels": [
+      "L:higher-riesz"
+    ],
+    "references": [
+      "H:spatial-maximum",
+      "L:higher-riesz"
+    ],
+    "edges": [
+      "H:spatial-maximum"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [
+      "chen:author2026:time-dependency"
+    ],
+    "proof_ids": [
+      "PROOF021"
+    ]
+  },
+  "C:higher-riesz": {
+    "id": "C:higher-riesz",
+    "kind": "corollary",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 2602,
+    "labels": [
+      "C:higher-riesz"
+    ],
+    "references": [
+      "C:higher-riesz",
+      "E:higher-bound",
+      "E:higher-constants",
+      "L:higher-riesz",
+      "P:higher-transfer"
+    ],
+    "edges": [
+      "L:higher-riesz",
+      "P:higher-transfer"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF022"
+    ]
+  },
+  "P:higher-obstructions": {
+    "id": "P:higher-obstructions",
+    "kind": "proposition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 2637,
+    "labels": [
+      "P:higher-obstructions"
+    ],
+    "references": [
+      "H:spatial-maximum",
+      "L:higher-riesz",
+      "P:higher-obstructions"
+    ],
+    "edges": [
+      "H:spatial-maximum",
+      "L:higher-riesz"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF023"
+    ]
+  },
+  "R:higher-calibrations": {
+    "id": "R:higher-calibrations",
+    "kind": "remark",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 2703,
+    "labels": [
+      "R:higher-calibrations"
+    ],
+    "references": [
+      "P:Jensen",
+      "P:higher-transfer",
+      "R:d1-comparisons",
+      "T:first"
+    ],
+    "edges": [
+      "P:Jensen",
+      "P:higher-transfer",
+      "R:d1-comparisons",
+      "T:first"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [
+      "balan.conus:16:intermittency"
+    ],
+    "proof_ids": []
+  },
+  "L:static-holder-input": {
+    "id": "L:static-holder-input",
+    "kind": "lemma",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 2771,
+    "labels": [
+      "L:static-holder-input",
+      "E:static-holder-input"
+    ],
+    "references": [
+      "E:static-holder-input",
+      "L:static-holder-input"
+    ],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [
+      "chen.hu:25:hyperbolic"
+    ],
+    "proof_ids": [
+      "PROOF024"
+    ]
+  },
+  "P:static-holder-upper": {
+    "id": "P:static-holder-upper",
+    "kind": "proposition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 2819,
+    "labels": [
+      "P:static-holder-upper",
+      "E:static-holder-parameters",
+      "E:static-holder-upper"
+    ],
+    "references": [
+      "E:d1-time-symmetry",
+      "E:static-holder-affine",
+      "E:static-holder-low",
+      "E:static-holder-regularized",
+      "E:static-holder-upper",
+      "L:alpha-one-convolution",
+      "L:joint-fixed-order",
+      "L:static-holder-input",
+      "P:d1-upper",
+      "P:low-alpha-upper",
+      "P:mixed",
+      "P:static-holder-upper",
+      "S:d1-upper"
+    ],
+    "edges": [
+      "L:alpha-one-convolution",
+      "L:joint-fixed-order",
+      "L:static-holder-input",
+      "P:d1-upper",
+      "P:low-alpha-upper",
+      "P:mixed",
+      "S:d1-upper"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [
+      "chen.hu:25:hyperbolic",
+      "chen:author2026:time-dependency"
+    ],
+    "proof_ids": [
+      "PROOF025"
+    ]
+  },
+  "R:static-holder-scope": {
+    "id": "R:static-holder-scope",
+    "kind": "remark",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 3015,
+    "labels": [
+      "R:static-holder-scope"
+    ],
+    "references": [
+      "E:static-holder-upper",
+      "R:higher-calibrations",
+      "T:intrinsic-second-moment"
+    ],
+    "edges": [
+      "P:static-holder-upper",
+      "R:higher-calibrations",
+      "T:intrinsic-second-moment"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "L:planar-endpoints": {
+    "id": "L:planar-endpoints",
+    "kind": "lemma",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 3062,
+    "labels": [
+      "L:planar-endpoints",
+      "E:planar-endpoints",
+      "E:planar-line-convolution",
+      "E:planar-gaussian-holder"
+    ],
+    "references": [
+      "E:planar-line-mixture",
+      "L:planar-endpoints"
+    ],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF026"
+    ]
+  },
+  "L:planar-static-input": {
+    "id": "L:planar-static-input",
+    "kind": "lemma",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 3221,
+    "labels": [
+      "L:planar-static-input",
+      "E:planar-static-input"
+    ],
+    "references": [
+      "E:planar-static-input",
+      "L:planar-static-input"
+    ],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [
+      "chen.hu:25:hyperbolic",
+      "chen:23:exponential"
+    ],
+    "proof_ids": [
+      "PROOF027"
+    ]
+  },
+  "P:planar-upper": {
+    "id": "P:planar-upper",
+    "kind": "proposition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 3292,
+    "labels": [
+      "P:planar-upper",
+      "E:planar-upper"
+    ],
+    "references": [
+      "E:planar-coefficient-holder",
+      "E:planar-low-coefficient",
+      "E:planar-measure-scaling",
+      "E:planar-upper",
+      "L:d1-spatial",
+      "L:joint-fixed-order",
+      "L:planar-endpoints",
+      "L:planar-static-input",
+      "P:mixed",
+      "P:planar-upper"
+    ],
+    "edges": [
+      "E:planar-measure-scaling",
+      "L:d1-spatial",
+      "L:joint-fixed-order",
+      "L:planar-endpoints",
+      "L:planar-static-input",
+      "P:mixed"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [
+      "chen.hu:25:hyperbolic",
+      "chen:author2026:time-dependency"
+    ],
+    "proof_ids": [
+      "PROOF028"
+    ]
+  },
+  "C:planar-range": {
+    "id": "C:planar-range",
+    "kind": "corollary",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 3473,
+    "labels": [
+      "C:planar-range"
+    ],
+    "references": [
+      "C:planar-range",
+      "H:homog",
+      "P:low-alpha-upper",
+      "P:planar-upper"
+    ],
+    "edges": [
+      "H:homog",
+      "P:low-alpha-upper",
+      "P:planar-upper"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF029"
+    ]
+  },
+  "R:planar-scope": {
+    "id": "R:planar-scope",
+    "kind": "remark",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 3490,
+    "labels": [
+      "R:planar-scope"
+    ],
+    "references": [
+      "S:interval-upper",
+      "T:intrinsic-second-moment"
+    ],
+    "edges": [
+      "S:interval-upper",
+      "T:intrinsic-second-moment"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "L:product-endpoints": {
+    "id": "L:product-endpoints",
+    "kind": "lemma",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 3519,
+    "labels": [
+      "L:product-endpoints",
+      "E:product-endpoint-vectors",
+      "E:product-gaussian-comparison"
+    ],
+    "references": [
+      "E:product-gaussian-comparison",
+      "L:product-endpoints"
+    ],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF030"
+    ]
+  },
+  "H:three-endpoints": {
+    "id": "H:three-endpoints",
+    "kind": "hypothesis",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 3637,
+    "labels": [
+      "H:three-endpoints",
+      "E:three-gaussian-comparison"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "L:plane-endpoints": {
+    "id": "L:plane-endpoints",
+    "kind": "lemma",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 3657,
+    "labels": [
+      "L:plane-endpoints"
+    ],
+    "references": [
+      "E:three-gaussian-comparison",
+      "E:three-parameters",
+      "H:three-endpoints",
+      "L:alpha-one-convolution",
+      "L:plane-endpoints"
+    ],
+    "edges": [
+      "E:three-parameters",
+      "H:three-endpoints",
+      "L:alpha-one-convolution"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF031"
+    ]
+  },
+  "L:endpoint-closure": {
+    "id": "L:endpoint-closure",
+    "kind": "lemma",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 3741,
+    "labels": [
+      "L:endpoint-closure"
+    ],
+    "references": [
+      "E:three-parameters",
+      "H:three-endpoints",
+      "L:endpoint-closure"
+    ],
+    "edges": [
+      "E:three-parameters",
+      "H:three-endpoints"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF032"
+    ]
+  },
+  "P:three-transfer": {
+    "id": "P:three-transfer",
+    "kind": "proposition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 3853,
+    "labels": [
+      "P:three-transfer",
+      "E:three-transfer",
+      "E:three-variational-upper"
+    ],
+    "references": [
+      "E:three-gaussian-comparison",
+      "E:three-low-coefficient",
+      "E:three-regularized-holder",
+      "E:three-static-coefficient",
+      "E:three-transfer",
+      "E:three-variational-upper",
+      "H:three-endpoints",
+      "L:alpha-one-convolution",
+      "L:joint-fixed-order",
+      "P:mixed",
+      "P:three-transfer"
+    ],
+    "edges": [
+      "H:three-endpoints",
+      "L:alpha-one-convolution",
+      "L:joint-fixed-order",
+      "P:mixed"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [
+      "chen.hu:25:hyperbolic",
+      "chen:23:exponential",
+      "chen:author2026:time-dependency"
+    ],
+    "proof_ids": [
+      "PROOF033"
+    ]
+  },
+  "C:three-product-riesz": {
+    "id": "C:three-product-riesz",
+    "kind": "corollary",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 4266,
+    "labels": [
+      "C:three-product-riesz"
+    ],
+    "references": [
+      "C:three-product-riesz",
+      "E:three-parameters",
+      "E:three-transfer",
+      "E:three-variational-upper",
+      "H:three-endpoints",
+      "L:product-endpoints",
+      "P:three-transfer"
+    ],
+    "edges": [
+      "E:three-parameters",
+      "H:three-endpoints",
+      "L:product-endpoints",
+      "P:three-transfer"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF034"
+    ]
+  },
+  "C:three-finite-images": {
+    "id": "C:three-finite-images",
+    "kind": "corollary",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 4316,
+    "labels": [
+      "C:three-finite-images"
+    ],
+    "references": [
+      "C:three-finite-images",
+      "C:three-product-riesz",
+      "E:three-parameters",
+      "E:three-transfer",
+      "E:three-variational-upper",
+      "H:three-endpoints",
+      "L:endpoint-closure",
+      "L:plane-endpoints",
+      "L:product-endpoints",
+      "P:three-transfer"
+    ],
+    "edges": [
+      "C:three-product-riesz",
+      "E:three-parameters",
+      "H:three-endpoints",
+      "L:endpoint-closure",
+      "L:plane-endpoints",
+      "L:product-endpoints",
+      "P:three-transfer"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF035"
+    ]
+  },
+  "R:three-endpoint-scope": {
+    "id": "R:three-endpoint-scope",
+    "kind": "remark",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 4369,
+    "labels": [
+      "R:three-endpoint-scope"
+    ],
+    "references": [
+      "H:three-endpoints",
+      "P:Jensen",
+      "S:interval-upper",
+      "T:intrinsic-second-moment"
+    ],
+    "edges": [
+      "H:three-endpoints",
+      "P:Jensen",
+      "S:interval-upper",
+      "T:intrinsic-second-moment"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [
+      "balan.conus:16:intermittency"
+    ],
+    "proof_ids": []
+  },
+  "L:physical-spectral-energy": {
+    "id": "L:physical-spectral-energy",
+    "kind": "lemma",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 4418,
+    "labels": [
+      "L:physical-spectral-energy",
+      "E:physical-spectral-energy",
+      "E:energy-quartic-bound"
+    ],
+    "references": [
+      "E:energy-quartic-bound",
+      "E:physical-spectral-energy",
+      "L:physical-spectral-energy"
+    ],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [
+      "chen:23:exponential"
+    ],
+    "proof_ids": [
+      "PROOF036"
+    ]
+  },
+  "L:phase-contractions": {
+    "id": "L:phase-contractions",
+    "kind": "lemma",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 4585,
+    "labels": [
+      "L:phase-contractions",
+      "E:phase-resolvent",
+      "E:phase-trace"
+    ],
+    "references": [
+      "E:phase-resolvent",
+      "E:phase-trace",
+      "L:phase-contractions"
+    ],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF037"
+    ]
+  },
+  "P:static-phase-variance": {
+    "id": "P:static-phase-variance",
+    "kind": "proposition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 4683,
+    "labels": [
+      "P:static-phase-variance",
+      "E:phase-born",
+      "E:phase-mean",
+      "E:phase-variance"
+    ],
+    "references": [
+      "E:phase-born",
+      "E:phase-duhamel",
+      "E:phase-mean",
+      "E:phase-variance",
+      "L:phase-contractions",
+      "P:static-phase-variance"
+    ],
+    "edges": [
+      "E:phase-duhamel",
+      "L:phase-contractions"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF038"
+    ]
+  },
+  "L:complex-phase": {
+    "id": "L:complex-phase",
+    "kind": "lemma",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 4820,
+    "labels": [
+      "L:complex-phase",
+      "E:abstract-sandwich",
+      "E:complex-phase-bound"
+    ],
+    "references": [
+      "E:abstract-sandwich",
+      "E:cp-input",
+      "L:complex-phase"
+    ],
+    "edges": [
+      "E:cp-input"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF039"
+    ]
+  },
+  "L:fock-form": {
+    "id": "L:fock-form",
+    "kind": "lemma",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 5008,
+    "labels": [
+      "L:fock-form",
+      "E:fock-sandwich"
+    ],
+    "references": [
+      "E:fock-sandwich",
+      "L:fock-form",
+      "L:phase-contractions",
+      "S:static-phase"
+    ],
+    "edges": [
+      "L:phase-contractions",
+      "S:static-phase"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF040"
+    ]
+  },
+  "L:finite-word-cutoff": {
+    "id": "L:finite-word-cutoff",
+    "kind": "lemma",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 5075,
+    "labels": [
+      "L:finite-word-cutoff",
+      "E:finite-word-cutoff"
+    ],
+    "references": [
+      "E:finite-word-cutoff",
+      "L:finite-word-cutoff"
+    ],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF041"
+    ]
+  },
+  "P:static-phase-all-orders": {
+    "id": "P:static-phase-all-orders",
+    "kind": "proposition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 5123,
+    "labels": [
+      "P:static-phase-all-orders",
+      "E:all-static-phase-orders",
+      "E:all-static-phase-sum"
+    ],
+    "references": [
+      "E:all-static-phase-orders",
+      "E:all-static-phase-sum",
+      "E:phase-duhamel",
+      "L:complex-phase",
+      "L:finite-word-cutoff",
+      "L:fock-form",
+      "P:static-phase-all-orders",
+      "S:static-phase"
+    ],
+    "edges": [
+      "E:phase-duhamel",
+      "L:complex-phase",
+      "L:finite-word-cutoff",
+      "L:fock-form",
+      "S:static-phase"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF042"
+    ]
+  },
+  "C:static-interaction": {
+    "id": "C:static-interaction",
+    "kind": "corollary",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 5242,
+    "labels": [
+      "C:static-interaction",
+      "E:static-interaction",
+      "E:static-block-series",
+      "E:independent-static-blocks"
+    ],
+    "references": [
+      "C:static-interaction",
+      "E:all-static-phase-orders",
+      "E:independent-static-blocks",
+      "E:phase-born",
+      "E:phase-mean",
+      "E:static-block-series",
+      "E:static-interaction",
+      "P:static-phase-variance",
+      "S:static-phase"
+    ],
+    "edges": [
+      "P:static-phase-all-orders",
+      "P:static-phase-variance",
+      "S:static-phase"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF043"
+    ]
+  },
+  "L:interval-contractions": {
+    "id": "L:interval-contractions",
+    "kind": "lemma",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 5404,
+    "labels": [
+      "L:interval-contractions",
+      "E:interval-column",
+      "E:interval-fock"
+    ],
+    "references": [
+      "E:interval-column",
+      "E:interval-fock",
+      "L:fock-form",
+      "L:interval-contractions",
+      "L:phase-contractions"
+    ],
+    "edges": [
+      "L:fock-form",
+      "L:phase-contractions"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF044"
+    ]
+  },
+  "L:interval-complex": {
+    "id": "L:interval-complex",
+    "kind": "lemma",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 5478,
+    "labels": [
+      "L:interval-complex",
+      "E:interval-metric"
+    ],
+    "references": [
+      "E:interval-metric",
+      "E:phase-root-comparisons",
+      "L:complex-phase",
+      "L:interval-complex"
+    ],
+    "edges": [
+      "L:complex-phase"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF045"
+    ]
+  },
+  "L:inventory-product": {
+    "id": "L:inventory-product",
+    "kind": "lemma",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 5571,
+    "labels": [
+      "L:inventory-product",
+      "E:inventory-product"
+    ],
+    "references": [
+      "L:inventory-product"
+    ],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF046"
+    ]
+  },
+  "L:fixed-split": {
+    "id": "L:fixed-split",
+    "kind": "lemma",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 5644,
+    "labels": [
+      "L:fixed-split",
+      "E:fixed-split-bound"
+    ],
+    "references": [
+      "E:fixed-split-bound",
+      "E:interval-column",
+      "E:interval-cross-cube",
+      "E:interval-cross-vector",
+      "E:split-before-absorption",
+      "E:split-radii",
+      "E:split-word-product",
+      "L:complex-phase",
+      "L:finite-word-cutoff",
+      "L:fixed-split",
+      "L:interval-complex",
+      "L:interval-contractions"
+    ],
+    "edges": [
+      "L:complex-phase",
+      "L:finite-word-cutoff",
+      "L:interval-complex",
+      "L:interval-contractions"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF047"
+    ]
+  },
+  "P:interval-coefficients": {
+    "id": "P:interval-coefficients",
+    "kind": "proposition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 6009,
+    "labels": [
+      "P:interval-coefficients",
+      "E:interval-coefficient-bound",
+      "E:interval-phase-bound"
+    ],
+    "references": [
+      "E:interval-coefficient-bound",
+      "E:interval-energy-splits",
+      "E:interval-entire-majorant",
+      "E:interval-phase-bound",
+      "L:finite-word-cutoff",
+      "L:fixed-split",
+      "L:inventory-product",
+      "P:interval-coefficients"
+    ],
+    "edges": [
+      "L:finite-word-cutoff",
+      "L:fixed-split",
+      "L:inventory-product"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF048"
+    ]
+  },
+  "L:terminal-wick": {
+    "id": "L:terminal-wick",
+    "kind": "lemma",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 6224,
+    "labels": [
+      "L:terminal-wick",
+      "E:terminal-term-majorant",
+      "E:terminal-wick-formula",
+      "E:terminal-pairing-integral"
+    ],
+    "references": [
+      "E:expansion",
+      "E:terminal-pairing-integral",
+      "E:terminal-term-majorant",
+      "E:terminal-wick-formula",
+      "L:terminal-wick"
+    ],
+    "edges": [
+      "E:expansion"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF049"
+    ]
+  },
+  "L:uniform-series-tail": {
+    "id": "L:uniform-series-tail",
+    "kind": "lemma",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 6331,
+    "labels": [
+      "L:uniform-series-tail",
+      "E:uniform-series-tail"
+    ],
+    "references": [
+      "E:uniform-series-tail",
+      "L:terminal-wick",
+      "L:uniform-series-tail"
+    ],
+    "edges": [
+      "L:terminal-wick"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF050"
+    ]
+  },
+  "T:full-upper": {
+    "id": "T:full-upper",
+    "kind": "theorem",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 6379,
+    "labels": [
+      "T:full-upper",
+      "E:full-upper-bound"
+    ],
+    "references": [
+      "E:dyadic-time-majorant",
+      "E:expansion",
+      "E:full-upper-bound",
+      "E:interval-source-comparison",
+      "E:regularized-scaled-moment",
+      "E:terminal-chain-measure",
+      "E:terminal-pairing-integral",
+      "G:upper",
+      "H:homog",
+      "L:crude-corrected",
+      "L:fixed-split",
+      "L:joint-fixed-order",
+      "L:terminal-wick",
+      "L:uniform-series-tail",
+      "P:interval-coefficients",
+      "P:mild-construction",
+      "P:mixed",
+      "T:full-upper"
+    ],
+    "edges": [
+      "E:expansion",
+      "E:terminal-chain-measure",
+      "G:upper",
+      "H:homog",
+      "L:crude-corrected",
+      "L:fixed-split",
+      "L:joint-fixed-order",
+      "L:terminal-wick",
+      "L:uniform-series-tail",
+      "P:interval-coefficients",
+      "P:mild-construction",
+      "P:mixed"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [
+      "chen:author2026:time-dependency"
+    ],
+    "proof_ids": [
+      "PROOF051"
+    ]
+  },
+  "R:full-upper-boundary": {
+    "id": "R:full-upper-boundary",
+    "kind": "remark",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 6620,
+    "labels": [
+      "R:full-upper-boundary"
+    ],
+    "references": [
+      "G:sharp",
+      "T:full-upper",
+      "T:intrinsic-second-moment"
+    ],
+    "edges": [
+      "G:sharp",
+      "T:full-upper",
+      "T:intrinsic-second-moment"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "L:mean-coefficient-holder": {
+    "id": "L:mean-coefficient-holder",
+    "kind": "lemma",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 6700,
+    "labels": [
+      "L:mean-coefficient-holder",
+      "E:mean-positive-series",
+      "E:mean-coefficient-holder"
+    ],
+    "references": [
+      "E:joint-temporal-tail",
+      "E:mean-coefficient-holder",
+      "E:mean-positive-series",
+      "E:regularized-scaled-moment",
+      "L:joint-fixed-order",
+      "L:mean-coefficient-holder",
+      "L:spatial-wick-measures",
+      "L:terminal-wick",
+      "L:uniform-series-tail",
+      "L:vertex-crude",
+      "P:mixed"
+    ],
+    "edges": [
+      "L:joint-fixed-order",
+      "L:spatial-wick-measures",
+      "L:terminal-wick",
+      "L:uniform-series-tail",
+      "L:vertex-crude",
+      "P:mixed",
+      "T:full-upper"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF052"
+    ]
+  },
+  "L:positive-series-type": {
+    "id": "L:positive-series-type",
+    "kind": "lemma",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 6814,
+    "labels": [
+      "L:positive-series-type",
+      "E:positive-series-type"
+    ],
+    "references": [
+      "L:positive-series-type"
+    ],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF053"
+    ]
+  },
+  "P:static-minorant-lower": {
+    "id": "P:static-minorant-lower",
+    "kind": "proposition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 6860,
+    "labels": [
+      "P:static-minorant-lower",
+      "E:static-minorant-moment",
+      "E:static-minorant-rate"
+    ],
+    "references": [
+      "E:static-minorant-moment",
+      "E:static-minorant-rate",
+      "E:static-ratio-input",
+      "L:joint-fixed-order",
+      "L:mean-coefficient-holder",
+      "L:spatial-wick-measures",
+      "P:static-minorant-lower"
+    ],
+    "edges": [
+      "E:static-ratio-input",
+      "L:joint-fixed-order",
+      "L:mean-coefficient-holder",
+      "L:spatial-wick-measures"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF054"
+    ]
+  },
+  "P:near-static-mean-gap": {
+    "id": "P:near-static-mean-gap",
+    "kind": "proposition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 6933,
+    "labels": [
+      "P:near-static-mean-gap",
+      "E:near-static-mean-upper",
+      "E:near-static-window",
+      "E:near-static-mean-gap"
+    ],
+    "references": [
+      "E:mean-coefficient-holder",
+      "E:near-static-mean-upper",
+      "E:near-static-window",
+      "L:mean-coefficient-holder",
+      "L:positive-series-type",
+      "P:near-static-mean-gap",
+      "P:static-minorant-lower",
+      "T:full-upper"
+    ],
+    "edges": [
+      "L:mean-coefficient-holder",
+      "L:positive-series-type",
+      "P:static-minorant-lower",
+      "T:full-upper"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF055"
+    ]
+  },
+  "R:near-static-scope": {
+    "id": "R:near-static-scope",
+    "kind": "remark",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 6993,
+    "labels": [
+      "R:near-static-scope"
+    ],
+    "references": [
+      "E:near-static-mean-gap",
+      "E:near-static-window",
+      "T:intrinsic-second-moment"
+    ],
+    "edges": [
+      "P:near-static-mean-gap",
+      "T:intrinsic-second-moment"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "L:full-moment-coefficient-holder": {
+    "id": "L:full-moment-coefficient-holder",
+    "kind": "lemma",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 7036,
+    "labels": [
+      "L:full-moment-coefficient-holder",
+      "E:full-moment-positive-series",
+      "E:full-moment-coefficient-holder"
+    ],
+    "references": [
+      "E:full-moment-coefficient-holder",
+      "E:full-moment-positive-series",
+      "E:joint-temporal-tail",
+      "E:mean-positive-series",
+      "L:full-moment-coefficient-holder",
+      "L:mean-coefficient-holder",
+      "L:spatial-wick-measures",
+      "P:mixed"
+    ],
+    "edges": [
+      "L:joint-fixed-order",
+      "L:mean-coefficient-holder",
+      "L:spatial-wick-measures",
+      "P:mixed"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF056"
+    ]
+  },
+  "P:moment-growth-logconvex": {
+    "id": "P:moment-growth-logconvex",
+    "kind": "proposition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 7126,
+    "labels": [
+      "P:moment-growth-logconvex",
+      "E:moment-growth-logconvex"
+    ],
+    "references": [
+      "E:moment-growth-logconvex",
+      "L:full-moment-coefficient-holder",
+      "L:positive-series-type",
+      "P:moment-growth-logconvex",
+      "P:static-minorant-lower"
+    ],
+    "edges": [
+      "L:full-moment-coefficient-holder",
+      "L:positive-series-type",
+      "P:static-minorant-lower"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF057"
+    ]
+  },
+  "C:static-moment-constant-continuity": {
+    "id": "C:static-moment-constant-continuity",
+    "kind": "corollary",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 7188,
+    "labels": [
+      "C:static-moment-constant-continuity",
+      "E:static-constant-envelope",
+      "E:static-constant-continuity",
+      "E:static-moment-ratio-continuity"
+    ],
+    "references": [
+      "C:static-moment-constant-continuity",
+      "E:static-constant-continuity",
+      "E:static-constant-envelope",
+      "E:static-moment-ratio-continuity",
+      "P:moment-growth-logconvex",
+      "P:static-minorant-lower"
+    ],
+    "edges": [
+      "P:moment-growth-logconvex",
+      "P:static-minorant-lower"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF058"
+    ]
+  },
+  "R:temporal-type-scope": {
+    "id": "R:temporal-type-scope",
+    "kind": "remark",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 7225,
+    "labels": [
+      "R:temporal-type-scope"
+    ],
+    "references": [
+      "T:intrinsic-second-moment"
+    ],
+    "edges": [
+      "T:intrinsic-second-moment"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "L:white-clock-laplace": {
+    "id": "L:white-clock-laplace",
+    "kind": "lemma",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 7268,
+    "labels": [
+      "L:white-clock-laplace",
+      "E:white-cross-clock-transform",
+      "E:white-self-clock-transform"
+    ],
+    "references": [
+      "E:white-cross-clock-transform",
+      "E:white-self-clock-transform",
+      "L:white-clock-laplace"
+    ],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF059"
+    ]
+  },
+  "P:clock-copy-obstruction": {
+    "id": "P:clock-copy-obstruction",
+    "kind": "proposition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 7385,
+    "labels": [
+      "P:clock-copy-obstruction",
+      "E:cross-clock-lambda-weight",
+      "E:clock-copy-obstruction",
+      "E:degree-one-clock-loss"
+    ],
+    "references": [
+      "E:degree-one-clock-loss",
+      "L:damped-homogeneous-norms",
+      "P:clock-copy-obstruction"
+    ],
+    "edges": [
+      "L:damped-homogeneous-norms"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF060"
+    ]
+  },
+  "R:clock-copy-scope": {
+    "id": "R:clock-copy-scope",
+    "kind": "remark",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 7544,
+    "labels": [
+      "R:clock-copy-scope"
+    ],
+    "references": [
+      "E:naive-clock-candidate",
+      "T:intrinsic-second-moment"
+    ],
+    "edges": [
+      "E:naive-clock-candidate",
+      "T:intrinsic-second-moment"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "G:upper": {
+    "id": "G:upper",
+    "kind": "goal",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 7622,
+    "labels": [
+      "G:upper"
+    ],
+    "references": [
+      "H:homog"
+    ],
+    "edges": [
+      "H:homog"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "G:sharp": {
+    "id": "G:sharp",
+    "kind": "goal",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 7633,
+    "labels": [
+      "G:sharp"
+    ],
+    "references": [
+      "H:homog"
+    ],
+    "edges": [
+      "H:homog"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "P:masked-spectral-growth": {
+    "id": "P:masked-spectral-growth",
+    "kind": "proposition",
+    "path": "notes/integrated_covariance_foundation.tex",
+    "line": 35,
+    "labels": [
+      "P:masked-spectral-growth",
+      "E:masked-gaussian-transform",
+      "E:masked-translated-ball"
+    ],
+    "references": [
+      "E:masked-gaussian-transform",
+      "E:masked-spectral-convention",
+      "P:masked-spectral-growth"
+    ],
+    "edges": [
+      "E:masked-spectral-convention"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF061"
+    ]
+  },
+  "P:masked-auxiliary-norm": {
+    "id": "P:masked-auxiliary-norm",
+    "kind": "proposition",
+    "path": "notes/integrated_covariance_foundation.tex",
+    "line": 91,
+    "labels": [
+      "P:masked-auxiliary-norm",
+      "E:masked-auxiliary-growth",
+      "E:masked-hilbert-fourier"
+    ],
+    "references": [
+      "E:masked-auxiliary-growth",
+      "E:masked-hilbert-fourier",
+      "P:masked-auxiliary-norm",
+      "P:masked-spectral-growth"
+    ],
+    "edges": [
+      "P:masked-spectral-growth"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF062"
+    ]
+  },
+  "L:masked-time-completion": {
+    "id": "L:masked-time-completion",
+    "kind": "lemma",
+    "path": "notes/integrated_covariance_foundation.tex",
+    "line": 146,
+    "labels": [
+      "L:masked-time-completion",
+      "E:masked-time-schur"
+    ],
+    "references": [
+      "E:masked-time-schur",
+      "L:masked-time-completion"
+    ],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF063"
+    ]
+  },
+  "P:masked-noise-completion": {
+    "id": "P:masked-noise-completion",
+    "kind": "proposition",
+    "path": "notes/integrated_covariance_foundation.tex",
+    "line": 195,
+    "labels": [
+      "P:masked-noise-completion",
+      "E:masked-actual-noise-norm"
+    ],
+    "references": [
+      "E:masked-actual-noise-norm",
+      "E:masked-spectral-convention",
+      "P:masked-auxiliary-norm",
+      "P:masked-noise-completion"
+    ],
+    "edges": [
+      "E:masked-spectral-convention",
+      "P:masked-auxiliary-norm"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF064"
+    ]
+  },
+  "P:masked-quotient-obstruction": {
+    "id": "P:masked-quotient-obstruction",
+    "kind": "proposition",
+    "path": "notes/integrated_covariance_foundation.tex",
+    "line": 265,
+    "labels": [
+      "P:masked-quotient-obstruction"
+    ],
+    "references": [
+      "H:homog",
+      "P:masked-quotient-obstruction"
+    ],
+    "edges": [
+      "H:homog"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF065"
+    ]
+  },
+  "L:masked-temporal-modulation": {
+    "id": "L:masked-temporal-modulation",
+    "kind": "lemma",
+    "path": "notes/integrated_covariance_foundation.tex",
+    "line": 312,
+    "labels": [
+      "L:masked-temporal-modulation",
+      "E:masked-temporal-modulation"
+    ],
+    "references": [
+      "L:masked-temporal-modulation"
+    ],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF066"
+    ]
+  },
+  "L:masked-trig-products": {
+    "id": "L:masked-trig-products",
+    "kind": "lemma",
+    "path": "notes/integrated_covariance_foundation.tex",
+    "line": 361,
+    "labels": [
+      "L:masked-trig-products",
+      "E:masked-trig-products",
+      "E:masked-frequency-pair"
+    ],
+    "references": [
+      "L:masked-temporal-modulation",
+      "L:masked-trig-products"
+    ],
+    "edges": [
+      "L:masked-temporal-modulation"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF067"
+    ]
+  },
+  "L:masked-continuous-wave": {
+    "id": "L:masked-continuous-wave",
+    "kind": "lemma",
+    "path": "notes/integrated_covariance_foundation.tex",
+    "line": 393,
+    "labels": [
+      "L:masked-continuous-wave",
+      "E:masked-continuous-wave"
+    ],
+    "references": [
+      "E:masked-continuous-wave",
+      "L:masked-continuous-wave",
+      "L:masked-time-completion",
+      "L:masked-trig-products"
+    ],
+    "edges": [
+      "L:masked-time-completion",
+      "L:masked-trig-products"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF068"
+    ]
+  },
+  "P:frequency-row": {
+    "id": "P:frequency-row",
+    "kind": "proposition",
+    "path": "notes/integrated_wave_variance.tex",
+    "line": 47,
+    "labels": [
+      "P:frequency-row",
+      "E:frequency-row-bound"
+    ],
+    "references": [
+      "E:frequency-inverse-bessel",
+      "E:frequency-translated-growth",
+      "E:variance-gamma-range",
+      "P:frequency-row"
+    ],
+    "edges": [
+      "E:frequency-translated-growth",
+      "E:variance-gamma-range"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF069"
+    ]
+  },
+  "C:frequency-time": {
+    "id": "C:frequency-time",
+    "kind": "corollary",
+    "path": "notes/integrated_wave_variance.tex",
+    "line": 147,
+    "labels": [
+      "C:frequency-time",
+      "E:variance-beta-range",
+      "E:frequency-time-bound"
+    ],
+    "references": [
+      "C:frequency-time",
+      "E:variance-beta-range",
+      "P:frequency-row"
+    ],
+    "edges": [
+      "P:frequency-row"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF070"
+    ]
+  },
+  "P:actual-wave-form": {
+    "id": "P:actual-wave-form",
+    "kind": "proposition",
+    "path": "notes/integrated_wave_variance.tex",
+    "line": 221,
+    "labels": [
+      "P:actual-wave-form",
+      "E:variance-physical-adjoint",
+      "E:variance-cutoff-adjoint",
+      "E:variance-normalized-kernel",
+      "E:variance-normalized-covariance"
+    ],
+    "references": [
+      "E:variance-actual-form",
+      "E:variance-complex-noise",
+      "E:variance-cutoff-adjoint",
+      "E:variance-normalized-covariance",
+      "E:variance-normalized-kernel",
+      "E:variance-physical-adjoint",
+      "L:masked-continuous-wave",
+      "L:masked-time-completion",
+      "P:actual-wave-form",
+      "P:masked-noise-completion"
+    ],
+    "edges": [
+      "E:variance-actual-form",
+      "L:masked-continuous-wave",
+      "L:masked-time-completion",
+      "P:masked-noise-completion"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF071"
+    ]
+  },
+  "L:phase-bessel": {
+    "id": "L:phase-bessel",
+    "kind": "lemma",
+    "path": "notes/integrated_wave_variance.tex",
+    "line": 361,
+    "labels": [
+      "L:phase-bessel",
+      "E:phase-bessel"
+    ],
+    "references": [
+      "L:phase-bessel"
+    ],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF072"
+    ]
+  },
+  "P:wave-two-variances": {
+    "id": "P:wave-two-variances",
+    "kind": "proposition",
+    "path": "notes/integrated_wave_variance.tex",
+    "line": 384,
+    "labels": [
+      "P:wave-two-variances",
+      "E:wave-input-variance",
+      "E:wave-output-variance"
+    ],
+    "references": [
+      "C:frequency-time",
+      "E:variance-actual-growth-constant",
+      "E:variance-actual-row-bound",
+      "E:variance-beta-range",
+      "E:variance-normalized-covariance",
+      "E:variance-normalized-kernel",
+      "E:wave-input-variance",
+      "E:wave-output-variance",
+      "L:masked-continuous-wave",
+      "L:phase-bessel",
+      "P:frequency-row",
+      "P:wave-two-variances"
+    ],
+    "edges": [
+      "C:frequency-time",
+      "E:variance-actual-growth-constant",
+      "L:masked-continuous-wave",
+      "L:phase-bessel",
+      "P:actual-wave-form",
+      "P:frequency-row"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF073"
+    ]
+  },
+  "P:wave-square-columns": {
+    "id": "P:wave-square-columns",
+    "kind": "proposition",
+    "path": "notes/integrated_wave_variance.tex",
+    "line": 483,
+    "labels": [
+      "P:wave-square-columns",
+      "E:variance-square-columns"
+    ],
+    "references": [
+      "E:variance-square-columns",
+      "E:wave-input-variance",
+      "E:wave-output-variance",
+      "P:wave-square-columns",
+      "P:wave-two-variances"
+    ],
+    "edges": [
+      "P:wave-two-variances"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF074"
+    ]
+  },
+  "L:gaussian-scalar-powers": {
+    "id": "L:gaussian-scalar-powers",
+    "kind": "lemma",
+    "path": "notes/integrated_compact_gaussian.tex",
+    "line": 14,
+    "labels": [
+      "L:gaussian-scalar-powers",
+      "E:gaussian-weighted-power",
+      "E:gaussian-integer-power"
+    ],
+    "references": [
+      "E:gaussian-weighted-power",
+      "L:gaussian-scalar-powers"
+    ],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF075"
+    ]
+  },
+  "L:gaussian-trace-bounds": {
+    "id": "L:gaussian-trace-bounds",
+    "kind": "lemma",
+    "path": "notes/integrated_compact_gaussian.tex",
+    "line": 50,
+    "labels": [
+      "L:gaussian-trace-bounds",
+      "E:gaussian-trace-word",
+      "E:gaussian-trace-holder"
+    ],
+    "references": [
+      "E:gaussian-integer-power",
+      "E:gaussian-trace-holder",
+      "E:gaussian-trace-word",
+      "L:gaussian-scalar-powers",
+      "L:gaussian-trace-bounds"
+    ],
+    "edges": [
+      "L:gaussian-scalar-powers"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF076"
+    ]
+  },
+  "P:finite-gaussian-matrix": {
+    "id": "P:finite-gaussian-matrix",
+    "kind": "proposition",
+    "path": "notes/integrated_compact_gaussian.tex",
+    "line": 97,
+    "labels": [
+      "P:finite-gaussian-matrix",
+      "E:finite-gaussian-average",
+      "E:finite-gaussian-maximum"
+    ],
+    "references": [
+      "E:finite-gaussian-average",
+      "E:finite-hermitian-gaussian",
+      "L:gaussian-scalar-powers",
+      "P:finite-gaussian-matrix"
+    ],
+    "edges": [
+      "L:gaussian-scalar-powers"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF077"
+    ]
+  },
+  "R:gaussian-one-variance-test": {
+    "id": "R:gaussian-one-variance-test",
+    "kind": "remark",
+    "path": "notes/integrated_compact_gaussian.tex",
+    "line": 181,
+    "labels": [
+      "R:gaussian-one-variance-test"
+    ],
+    "references": [
+      "E:finite-gaussian-maximum"
+    ],
+    "edges": [
+      "P:finite-gaussian-matrix"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "L:cutoff-factorization": {
+    "id": "L:cutoff-factorization",
+    "kind": "lemma",
+    "path": "notes/integrated_compact_gaussian.tex",
+    "line": 208,
+    "labels": [
+      "L:cutoff-factorization",
+      "E:cutoff-periodic-maps",
+      "E:cutoff-whole-space-recovery"
+    ],
+    "references": [
+      "E:cutoff-lattice-sum",
+      "E:cutoff-peetre",
+      "E:cutoff-periodic-maps",
+      "E:cutoff-whole-space-recovery",
+      "L:cutoff-factorization"
+    ],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF078"
+    ]
+  },
+  "P:cutoff-singular-values": {
+    "id": "P:cutoff-singular-values",
+    "kind": "proposition",
+    "path": "notes/integrated_compact_gaussian.tex",
+    "line": 309,
+    "labels": [
+      "P:cutoff-singular-values",
+      "E:cutoff-singular-values"
+    ],
+    "references": [
+      "L:cutoff-factorization",
+      "P:cutoff-singular-values"
+    ],
+    "edges": [
+      "L:cutoff-factorization"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF079"
+    ]
+  },
+  "P:compact-two-envelopes": {
+    "id": "P:compact-two-envelopes",
+    "kind": "proposition",
+    "path": "notes/integrated_compact_gaussian.tex",
+    "line": 392,
+    "labels": [
+      "P:compact-two-envelopes",
+      "E:compact-envelope-traces"
+    ],
+    "references": [
+      "E:compact-envelope-traces",
+      "L:cutoff-factorization",
+      "P:compact-two-envelopes",
+      "P:cutoff-singular-values"
+    ],
+    "edges": [
+      "L:cutoff-factorization",
+      "P:cutoff-singular-values"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF080"
+    ]
+  },
+  "L:compact-positive-order": {
+    "id": "L:compact-positive-order",
+    "kind": "lemma",
+    "path": "notes/integrated_compact_gaussian.tex",
+    "line": 443,
+    "labels": [
+      "L:compact-positive-order",
+      "E:compact-positive-trace"
+    ],
+    "references": [
+      "E:compact-positive-trace",
+      "L:compact-positive-order"
+    ],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF081"
+    ]
+  },
+  "P:localized-finite-variance": {
+    "id": "P:localized-finite-variance",
+    "kind": "proposition",
+    "path": "notes/integrated_compact_gaussian.tex",
+    "line": 473,
+    "labels": [
+      "P:localized-finite-variance",
+      "E:localized-finite-hypotheses",
+      "E:localized-two-envelopes",
+      "E:localized-trace-bounds"
+    ],
+    "references": [
+      "E:localized-finite-hypotheses",
+      "L:compact-positive-order",
+      "P:compact-two-envelopes",
+      "P:localized-finite-variance"
+    ],
+    "edges": [
+      "L:compact-positive-order",
+      "P:compact-two-envelopes"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF082"
+    ]
+  },
+  "C:finite-gaussian-operators": {
+    "id": "C:finite-gaussian-operators",
+    "kind": "corollary",
+    "path": "notes/integrated_compact_gaussian.tex",
+    "line": 519,
+    "labels": [
+      "C:finite-gaussian-operators",
+      "E:finite-gaussian-operator-bound"
+    ],
+    "references": [
+      "C:finite-gaussian-operators",
+      "E:finite-gaussian-compression-bound",
+      "E:localized-finite-hypotheses",
+      "P:finite-gaussian-matrix"
+    ],
+    "edges": [
+      "P:finite-gaussian-matrix",
+      "P:localized-finite-variance"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF083"
+    ]
+  },
+  "P:cutoff-boundary-tests": {
+    "id": "P:cutoff-boundary-tests",
+    "kind": "proposition",
+    "path": "notes/integrated_compact_gaussian.tex",
+    "line": 583,
+    "labels": [
+      "P:cutoff-boundary-tests"
+    ],
+    "references": [
+      "E:localized-finite-hypotheses",
+      "P:cutoff-boundary-tests"
+    ],
+    "edges": [
+      "P:localized-finite-variance"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF084"
+    ]
+  },
+  "P:actual-operator-driver": {
+    "id": "P:actual-operator-driver",
+    "kind": "proposition",
+    "path": "notes/integrated_actual_operator_driver.tex",
+    "line": 27,
+    "labels": [
+      "P:actual-operator-driver",
+      "E:driver-path-convergence",
+      "E:driver-raw-row",
+      "E:driver-gaussian-norm"
+    ],
+    "references": [
+      "E:driver-fixed-schatten"
+    ],
+    "edges": [
+      "L:driver-interval-limit"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "L:driver-noise-basis": {
+    "id": "L:driver-noise-basis",
+    "kind": "lemma",
+    "path": "notes/integrated_actual_operator_driver.tex",
+    "line": 59,
+    "labels": [
+      "L:driver-noise-basis"
+    ],
+    "references": [
+      "L:driver-noise-basis",
+      "L:masked-time-completion"
+    ],
+    "edges": [
+      "L:masked-time-completion"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF085"
+    ]
+  },
+  "L:driver-covariance-coefficients": {
+    "id": "L:driver-covariance-coefficients",
+    "kind": "lemma",
+    "path": "notes/integrated_actual_operator_driver.tex",
+    "line": 123,
+    "labels": [
+      "L:driver-covariance-coefficients",
+      "E:driver-covariance-coefficient",
+      "E:driver-literal-covariance"
+    ],
+    "references": [
+      "E:driver-literal-covariance",
+      "E:variance-actual-form",
+      "L:driver-covariance-coefficients",
+      "P:actual-wave-form"
+    ],
+    "edges": [
+      "E:variance-actual-form",
+      "P:actual-wave-form"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF086"
+    ]
+  },
+  "L:driver-gain-localization": {
+    "id": "L:driver-gain-localization",
+    "kind": "lemma",
+    "path": "notes/integrated_actual_operator_driver.tex",
+    "line": 169,
+    "labels": [
+      "L:driver-gain-localization",
+      "E:driver-coefficient-operator",
+      "E:driver-gain-one",
+      "E:driver-actual-localization",
+      "E:driver-covariance-row"
+    ],
+    "references": [
+      "E:driver-actual-localization",
+      "E:driver-coefficient-operator",
+      "E:driver-covariance-coefficient",
+      "E:driver-covariance-row",
+      "E:driver-gain-one",
+      "E:driver-literal-covariance",
+      "E:variance-physical-adjoint",
+      "L:driver-gain-localization"
+    ],
+    "edges": [
+      "L:driver-covariance-coefficients",
+      "P:actual-wave-form"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF087"
+    ]
+  },
+  "L:driver-actual-variances": {
+    "id": "L:driver-actual-variances",
+    "kind": "lemma",
+    "path": "notes/integrated_actual_operator_driver.tex",
+    "line": 255,
+    "labels": [
+      "L:driver-actual-variances",
+      "E:driver-two-variances",
+      "E:driver-compact-tail-envelopes",
+      "E:driver-column-expansions"
+    ],
+    "references": [
+      "E:driver-actual-localization",
+      "E:driver-column-expansions",
+      "E:driver-compact-tail-envelopes",
+      "E:driver-covariance-row",
+      "E:driver-two-variances",
+      "E:wave-input-variance",
+      "E:wave-output-variance",
+      "L:driver-actual-variances"
+    ],
+    "edges": [
+      "L:driver-gain-localization",
+      "P:wave-two-variances"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF088"
+    ]
+  },
+  "L:driver-dominated-tails": {
+    "id": "L:driver-dominated-tails",
+    "kind": "lemma",
+    "path": "notes/integrated_actual_operator_driver.tex",
+    "line": 342,
+    "labels": [
+      "L:driver-dominated-tails",
+      "E:driver-trace-tails"
+    ],
+    "references": [
+      "L:compact-positive-order",
+      "L:driver-dominated-tails"
+    ],
+    "edges": [
+      "L:compact-positive-order"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF089"
+    ]
+  },
+  "L:driver-gaussian-tail-average": {
+    "id": "L:driver-gaussian-tail-average",
+    "kind": "lemma",
+    "path": "notes/integrated_actual_operator_driver.tex",
+    "line": 369,
+    "labels": [
+      "L:driver-gaussian-tail-average",
+      "E:driver-retained-gaussian-average"
+    ],
+    "references": [
+      "C:finite-gaussian-operators",
+      "L:driver-gaussian-tail-average",
+      "P:finite-gaussian-matrix"
+    ],
+    "edges": [
+      "C:finite-gaussian-operators",
+      "P:finite-gaussian-matrix"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF090"
+    ]
+  },
+  "L:driver-interval-limit": {
+    "id": "L:driver-interval-limit",
+    "kind": "lemma",
+    "path": "notes/integrated_actual_operator_driver.tex",
+    "line": 399,
+    "labels": [
+      "L:driver-interval-limit",
+      "E:driver-fixed-schatten"
+    ],
+    "references": [
+      "C:finite-gaussian-operators",
+      "E:driver-compact-tail-envelopes",
+      "E:driver-fixed-schatten",
+      "L:driver-dominated-tails",
+      "L:driver-gaussian-tail-average",
+      "L:driver-interval-limit",
+      "P:localized-finite-variance"
+    ],
+    "edges": [
+      "C:finite-gaussian-operators",
+      "L:driver-actual-variances",
+      "L:driver-dominated-tails",
+      "L:driver-gaussian-tail-average",
+      "P:localized-finite-variance"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF091"
+    ]
+  },
+  "L:driver-holder-limit": {
+    "id": "L:driver-holder-limit",
+    "kind": "lemma",
+    "path": "notes/integrated_actual_operator_driver.tex",
+    "line": 463,
+    "labels": [
+      "L:driver-holder-limit"
+    ],
+    "references": [
+      "E:driver-dyadic-moment-sum",
+      "E:driver-gain-one",
+      "E:driver-gaussian-norm",
+      "E:driver-raw-row",
+      "L:driver-holder-limit",
+      "L:driver-interval-limit",
+      "L:driver-noise-basis",
+      "P:actual-operator-driver",
+      "P:wave-two-variances"
+    ],
+    "edges": [
+      "L:driver-gain-localization",
+      "L:driver-interval-limit",
+      "L:driver-noise-basis",
+      "P:actual-operator-driver",
+      "P:wave-two-variances"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF092",
+      "PROOF093"
+    ]
+  },
+  "L:source-finite-comparison": {
+    "id": "L:source-finite-comparison",
+    "kind": "lemma",
+    "path": "notes/integrated_source_convergence.tex",
+    "line": 21,
+    "labels": [
+      "L:source-finite-comparison",
+      "E:source-finite-comparison"
+    ],
+    "references": [
+      "L:source-finite-comparison"
+    ],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF094"
+    ]
+  },
+  "P:source-gaussian-transfer": {
+    "id": "P:source-gaussian-transfer",
+    "kind": "proposition",
+    "path": "notes/integrated_source_convergence.tex",
+    "line": 44,
+    "labels": [
+      "P:source-gaussian-transfer",
+      "E:source-raw-variance-bound",
+      "E:source-transfer-tail",
+      "E:source-transfer-norm",
+      "E:source-transferred-row"
+    ],
+    "references": [
+      "E:source-raw-variance-bound",
+      "E:source-transferred-row",
+      "E:variance-dual-wave",
+      "L:driver-holder-limit",
+      "L:driver-interval-limit",
+      "L:source-finite-comparison",
+      "P:source-gaussian-transfer"
+    ],
+    "edges": [
+      "E:variance-dual-wave",
+      "L:driver-holder-limit",
+      "L:driver-interval-limit",
+      "L:source-finite-comparison"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF095"
+    ]
+  },
+  "L:source-spatial-heat": {
+    "id": "L:source-spatial-heat",
+    "kind": "lemma",
+    "path": "notes/integrated_source_convergence.tex",
+    "line": 138,
+    "labels": [
+      "L:source-spatial-heat",
+      "E:source-heat-definition"
+    ],
+    "references": [
+      "L:source-spatial-heat",
+      "P:masked-noise-completion"
+    ],
+    "edges": [
+      "P:masked-noise-completion"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF096"
+    ]
+  },
+  "L:source-retaining-isometry": {
+    "id": "L:source-retaining-isometry",
+    "kind": "lemma",
+    "path": "notes/integrated_source_convergence.tex",
+    "line": 179,
+    "labels": [
+      "L:source-retaining-isometry",
+      "E:source-feature-isometry",
+      "E:source-given-W-retention"
+    ],
+    "references": [
+      "E:driver-test-continuity",
+      "E:source-feature-isometry",
+      "E:source-given-W-retention",
+      "L:source-retaining-isometry"
+    ],
+    "edges": [
+      "L:driver-noise-basis"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF097"
+    ]
+  },
+  "P:source-canonical-convergence": {
+    "id": "P:source-canonical-convergence",
+    "kind": "proposition",
+    "path": "notes/integrated_source_convergence.tex",
+    "line": 256,
+    "labels": [
+      "P:source-canonical-convergence",
+      "E:source-joint-covariance",
+      "E:source-two-dominations",
+      "E:source-driver-limit"
+    ],
+    "references": [
+      "E:source-cutoff-noises",
+      "E:source-driver-limit",
+      "E:source-heat-inner-product",
+      "E:source-joint-covariance",
+      "L:source-spatial-heat",
+      "P:source-canonical-convergence",
+      "P:source-gaussian-transfer"
+    ],
+    "edges": [
+      "E:source-cutoff-noises",
+      "L:source-spatial-heat",
+      "P:source-gaussian-transfer"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF098"
+    ]
+  },
+  "L:source-pointfield-regularity": {
+    "id": "L:source-pointfield-regularity",
+    "kind": "lemma",
+    "path": "notes/integrated_source_convergence.tex",
+    "line": 364,
+    "labels": [
+      "L:source-pointfield-regularity"
+    ],
+    "references": [
+      "E:source-derivative-increments",
+      "E:source-joint-covariance",
+      "E:source-point-feature",
+      "L:source-pointfield-regularity"
+    ],
+    "edges": [
+      "P:source-canonical-convergence"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF099"
+    ]
+  },
+  "P:source-ordinary-response": {
+    "id": "P:source-ordinary-response",
+    "kind": "proposition",
+    "path": "notes/integrated_source_convergence.tex",
+    "line": 427,
+    "labels": [
+      "P:source-ordinary-response",
+      "E:source-ordinary-response"
+    ],
+    "references": [
+      "E:source-driver-limit",
+      "L:driver-gain-localization",
+      "P:source-ordinary-response"
+    ],
+    "edges": [
+      "L:driver-gain-localization",
+      "P:source-canonical-convergence"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF100"
+    ]
+  },
+  "L:masked-chain-comparison": {
+    "id": "L:masked-chain-comparison",
+    "kind": "lemma",
+    "path": "notes/integrated_masked_moments.tex",
+    "line": 23,
+    "labels": [
+      "L:masked-chain-comparison",
+      "E:masked-order-comparison",
+      "E:masked-order-bound"
+    ],
+    "references": [
+      "E:masked-chain-mass",
+      "E:masked-order-bound",
+      "E:masked-order-comparison",
+      "L:joint-fixed-order",
+      "L:masked-chain-comparison",
+      "L:source-pointfield-regularity",
+      "L:vertex-crude"
+    ],
+    "edges": [
+      "L:joint-fixed-order",
+      "L:source-pointfield-regularity",
+      "L:vertex-crude"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF101"
+    ]
+  },
+  "P:masked-source-moments": {
+    "id": "P:masked-source-moments",
+    "kind": "proposition",
+    "path": "notes/integrated_masked_moments.tex",
+    "line": 102,
+    "labels": [
+      "P:masked-source-moments",
+      "E:masked-two-point",
+      "E:masked-average-source"
+    ],
+    "references": [
+      "E:masked-average-source",
+      "E:masked-chain-mass",
+      "E:masked-two-point",
+      "E:vertex-summability",
+      "L:masked-chain-comparison",
+      "P:masked-source-moments"
+    ],
+    "edges": [
+      "L:masked-chain-comparison",
+      "L:vertex-crude"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF102"
+    ]
+  },
+  "P:masked-canonical-transfer": {
+    "id": "P:masked-canonical-transfer",
+    "kind": "proposition",
+    "path": "notes/integrated_masked_moments.tex",
+    "line": 167,
+    "labels": [
+      "P:masked-canonical-transfer",
+      "E:masked-unmasked-moment-limit",
+      "E:masked-conditional-transfer"
+    ],
+    "references": [
+      "E:masked-average-source",
+      "E:masked-unmasked-moment-limit",
+      "L:joint-fixed-order",
+      "P:masked-canonical-transfer",
+      "P:mixed"
+    ],
+    "edges": [
+      "L:joint-fixed-order",
+      "P:masked-source-moments",
+      "P:mixed"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF103"
+    ]
+  },
+  "L:constant-phase-free": {
+    "id": "L:constant-phase-free",
+    "kind": "lemma",
+    "path": "notes/integrated_constant_phase_young.tex",
+    "line": 23,
+    "labels": [
+      "L:constant-phase-free",
+      "E:constant-phase-cutoff",
+      "E:constant-phase-free"
+    ],
+    "references": [
+      "E:constant-phase-cutoff",
+      "E:constant-phase-free",
+      "L:constant-phase-free",
+      "L:driver-gain-localization"
+    ],
+    "edges": [
+      "L:driver-gain-localization"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF104"
+    ]
+  },
+  "P:constant-phase-driver": {
+    "id": "P:constant-phase-driver",
+    "kind": "proposition",
+    "path": "notes/integrated_constant_phase_young.tex",
+    "line": 106,
+    "labels": [
+      "P:constant-phase-driver",
+      "E:constant-phase-localization",
+      "E:constant-phase-driver"
+    ],
+    "references": [
+      "E:constant-phase-driver",
+      "E:constant-phase-localization",
+      "E:source-driver-limit",
+      "L:driver-gain-localization",
+      "P:constant-phase-driver",
+      "P:source-gaussian-transfer"
+    ],
+    "edges": [
+      "L:driver-gain-localization",
+      "P:source-canonical-convergence",
+      "P:source-gaussian-transfer"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF105"
+    ]
+  },
+  "L:constant-source-response": {
+    "id": "L:constant-source-response",
+    "kind": "lemma",
+    "path": "notes/integrated_constant_phase_young.tex",
+    "line": 149,
+    "labels": [
+      "L:constant-source-response",
+      "E:constant-source-response"
+    ],
+    "references": [
+      "E:constant-source-response",
+      "L:constant-phase-free",
+      "L:constant-source-response",
+      "P:source-ordinary-response"
+    ],
+    "edges": [
+      "L:constant-phase-free",
+      "P:source-ordinary-response"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF106"
+    ]
+  },
+  "P:constant-young-linear": {
+    "id": "P:constant-young-linear",
+    "kind": "proposition",
+    "path": "notes/integrated_constant_phase_young.tex",
+    "line": 204,
+    "labels": [
+      "P:constant-young-linear",
+      "E:constant-young-equation",
+      "E:constant-young-growth"
+    ],
+    "references": [
+      "E:constant-young-difference",
+      "E:constant-young-estimate",
+      "E:constant-young-growth",
+      "E:constant-young-local",
+      "P:constant-young-linear"
+    ],
+    "edges": [
+      "E:constant-young-estimate"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF107"
+    ]
+  },
+  "P:constant-gaussian-flow": {
+    "id": "P:constant-gaussian-flow",
+    "kind": "proposition",
+    "path": "notes/integrated_constant_phase_young.tex",
+    "line": 277,
+    "labels": [
+      "P:constant-gaussian-flow",
+      "E:constant-flow-limit",
+      "E:constant-flow-range",
+      "E:constant-physical-flow"
+    ],
+    "references": [
+      "E:constant-flow-limit",
+      "E:constant-flow-range",
+      "E:constant-phase-driver",
+      "E:constant-physical-flow",
+      "E:constant-young-growth",
+      "P:constant-gaussian-flow",
+      "P:constant-young-linear"
+    ],
+    "edges": [
+      "P:constant-phase-driver",
+      "P:constant-young-linear"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF108"
+    ]
+  },
+  "L:constant-source-solution": {
+    "id": "L:constant-source-solution",
+    "kind": "lemma",
+    "path": "notes/integrated_constant_phase_young.tex",
+    "line": 341,
+    "labels": [
+      "L:constant-source-solution"
+    ],
+    "references": [
+      "E:constant-source-response",
+      "L:constant-source-solution",
+      "P:masked-source-moments"
+    ],
+    "edges": [
+      "L:constant-source-response",
+      "P:masked-source-moments"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF109"
+    ]
+  },
+  "P:constant-raw-average": {
+    "id": "P:constant-raw-average",
+    "kind": "proposition",
+    "path": "notes/integrated_constant_phase_young.tex",
+    "line": 407,
+    "labels": [
+      "P:constant-raw-average",
+      "E:constant-raw-average",
+      "E:constant-tested-limit",
+      "E:constant-original-point-transfer"
+    ],
+    "references": [
+      "E:constant-original-point-transfer",
+      "E:constant-raw-average",
+      "E:constant-tested-limit",
+      "L:constant-source-solution",
+      "P:constant-gaussian-flow",
+      "P:constant-raw-average",
+      "P:masked-canonical-transfer",
+      "P:masked-source-moments"
+    ],
+    "edges": [
+      "L:constant-source-solution",
+      "P:constant-gaussian-flow",
+      "P:masked-canonical-transfer",
+      "P:masked-source-moments"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF110"
+    ]
+  },
+  "P:constant-compact-base": {
+    "id": "P:constant-compact-base",
+    "kind": "proposition",
+    "path": "notes/integrated_constant_phase_young.tex",
+    "line": 463,
+    "labels": [
+      "P:constant-compact-base"
+    ],
+    "references": [
+      "E:constant-original-point-transfer",
+      "L:constant-source-response",
+      "P:constant-compact-base"
+    ],
+    "edges": [
+      "L:constant-source-response",
+      "P:constant-raw-average"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF111"
+    ]
+  },
+  "P:compact-ground-family": {
+    "id": "P:compact-ground-family",
+    "kind": "proposition",
+    "path": "notes/integrated_compact_mean_family.tex",
+    "line": 36,
+    "labels": [
+      "P:compact-ground-family",
+      "E:compact-energy-levels",
+      "E:compact-level-continuity",
+      "E:compact-rate-gap"
+    ],
+    "references": [
+      "E:compact-common-trial",
+      "E:compact-level-continuity",
+      "P:compact-ground-family"
+    ],
+    "edges": [
+      "E:compact-common-trial"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF112"
+    ]
+  },
+  "L:compact-fractional-phase": {
+    "id": "L:compact-fractional-phase",
+    "kind": "lemma",
+    "path": "notes/integrated_compact_mean_family.tex",
+    "line": 126,
+    "labels": [
+      "L:compact-fractional-phase",
+      "E:compact-quarter-power",
+      "E:compact-spectral-phase-norm"
+    ],
+    "references": [
+      "E:compact-quarter-power",
+      "L:compact-fractional-phase"
+    ],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF113"
+    ]
+  },
+  "P:compact-E-wave": {
+    "id": "P:compact-E-wave",
+    "kind": "proposition",
+    "path": "notes/integrated_compact_mean_family.tex",
+    "line": 180,
+    "labels": [
+      "P:compact-E-wave",
+      "E:compact-E-eigen",
+      "E:compact-E-complement"
+    ],
+    "references": [
+      "E:compact-E-eigen",
+      "E:compact-spectral-phase-norm",
+      "P:compact-E-wave",
+      "P:compact-ground-family"
+    ],
+    "edges": [
+      "L:compact-fractional-phase",
+      "P:compact-ground-family"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF114"
+    ]
+  },
+  "P:compact-F-projection": {
+    "id": "P:compact-F-projection",
+    "kind": "proposition",
+    "path": "notes/integrated_compact_mean_family.tex",
+    "line": 288,
+    "labels": [
+      "P:compact-F-projection",
+      "E:compact-F-block",
+      "E:compact-constant-dual",
+      "E:compact-F-projection",
+      "E:compact-F-eigen",
+      "E:compact-positive-margins"
+    ],
+    "references": [
+      "E:compact-F-block",
+      "E:compact-F-eigen",
+      "E:compact-positive-margins",
+      "P:compact-F-projection"
+    ],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF115"
+    ]
+  },
+  "P:compact-F-complement": {
+    "id": "P:compact-F-complement",
+    "kind": "proposition",
+    "path": "notes/integrated_compact_mean_family.tex",
+    "line": 378,
+    "labels": [
+      "P:compact-F-complement",
+      "E:compact-F-complement",
+      "E:compact-normalized-complement",
+      "E:compact-parameter-flow"
+    ],
+    "references": [
+      "E:compact-F-block",
+      "E:compact-F-complement",
+      "E:compact-complement-forcing",
+      "E:compact-normalized-complement",
+      "E:compact-parameter-flow",
+      "P:compact-F-complement"
+    ],
+    "edges": [
+      "P:compact-F-projection"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF116"
+    ]
+  },
+  "L:compact-raw-profile": {
+    "id": "L:compact-raw-profile",
+    "kind": "lemma",
+    "path": "notes/integrated_compact_mean_family.tex",
+    "line": 445,
+    "labels": [
+      "L:compact-raw-profile",
+      "E:compact-raw-mean",
+      "E:compact-raw-cost",
+      "E:compact-positive-mean-floor"
+    ],
+    "references": [
+      "E:compact-positive-mean-floor",
+      "E:compact-raw-cost",
+      "H:homog",
+      "L:compact-raw-profile"
+    ],
+    "edges": [
+      "H:homog"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF117"
+    ]
+  },
+  "P:compact-original-common-trial": {
+    "id": "P:compact-original-common-trial",
+    "kind": "proposition",
+    "path": "notes/integrated_compact_mean_family.tex",
+    "line": 514,
+    "labels": [
+      "P:compact-original-common-trial"
+    ],
+    "references": [
+      "E:compact-common-trial",
+      "E:compact-positive-mean-floor",
+      "E:compact-raw-cost",
+      "L:compact-raw-profile",
+      "P:compact-ground-family",
+      "P:compact-original-common-trial"
+    ],
+    "edges": [
+      "E:compact-common-trial",
+      "L:compact-raw-profile",
+      "P:compact-ground-family"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF118"
+    ]
+  },
+  "L:exact-canonical-scaling": {
+    "id": "L:exact-canonical-scaling",
+    "kind": "lemma",
+    "path": "notes/integrated_exact_scaling.tex",
+    "line": 4,
+    "labels": [
+      "L:exact-canonical-scaling",
+      "E:exact-fast-equation",
+      "E:exact-moment-scaling"
+    ],
+    "references": [
+      "E:exact-fast-equation",
+      "E:exact-moment-scaling",
+      "H:homog",
+      "L:exact-canonical-scaling",
+      "L:joint-fixed-order",
+      "L:vertex-crude"
+    ],
+    "edges": [
+      "H:homog",
+      "L:joint-fixed-order",
+      "L:vertex-crude"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF119"
+    ]
+  },
+  "L:raw-block-inputs": {
+    "id": "L:raw-block-inputs",
+    "kind": "lemma",
+    "path": "notes/integrated_raw_block_lower.tex",
+    "line": 55,
+    "labels": [
+      "L:raw-block-inputs",
+      "E:raw-block-covariance",
+      "E:raw-block-moments"
+    ],
+    "references": [
+      "E:driver-covariance-row",
+      "E:raw-block-covariance",
+      "E:raw-block-moments",
+      "L:raw-block-inputs"
+    ],
+    "edges": [
+      "L:driver-gain-localization"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF120"
+    ]
+  },
+  "P:raw-block-gaussian-law": {
+    "id": "P:raw-block-gaussian-law",
+    "kind": "proposition",
+    "path": "notes/integrated_raw_block_lower.tex",
+    "line": 128,
+    "labels": [
+      "P:raw-block-gaussian-law",
+      "E:raw-block-gaussian-law"
+    ],
+    "references": [
+      "E:raw-block-covariance",
+      "P:raw-block-gaussian-law"
+    ],
+    "edges": [
+      "L:raw-block-inputs"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF121"
+    ]
+  },
+  "L:raw-block-uniform-error": {
+    "id": "L:raw-block-uniform-error",
+    "kind": "lemma",
+    "path": "notes/integrated_raw_block_lower.tex",
+    "line": 182,
+    "labels": [
+      "L:raw-block-uniform-error",
+      "E:raw-block-maximum-exponential",
+      "E:raw-block-operator-error"
+    ],
+    "references": [
+      "E:compact-F-block",
+      "E:raw-block-maximum-exponential",
+      "E:raw-block-moments",
+      "E:raw-block-operator-error",
+      "L:raw-block-uniform-error"
+    ],
+    "edges": [
+      "L:raw-block-inputs",
+      "P:compact-F-projection"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF122"
+    ]
+  },
+  "L:raw-block-indexed-cone": {
+    "id": "L:raw-block-indexed-cone",
+    "kind": "lemma",
+    "path": "notes/integrated_raw_block_lower.tex",
+    "line": 255,
+    "labels": [
+      "L:raw-block-indexed-cone",
+      "E:raw-block-positive-product"
+    ],
+    "references": [
+      "E:compact-normalized-complement",
+      "E:raw-block-positive-product",
+      "L:raw-block-indexed-cone"
+    ],
+    "edges": [
+      "P:compact-F-complement"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF123"
+    ]
+  },
+  "L:raw-block-restart": {
+    "id": "L:raw-block-restart",
+    "kind": "lemma",
+    "path": "notes/integrated_raw_block_lower.tex",
+    "line": 376,
+    "labels": [
+      "L:raw-block-restart",
+      "E:raw-block-restart"
+    ],
+    "references": [
+      "E:raw-block-mean-jacobian",
+      "E:raw-block-restart",
+      "E:source-two-dominations",
+      "L:raw-block-restart",
+      "P:source-gaussian-transfer",
+      "S:source-driver-convergence"
+    ],
+    "edges": [
+      "L:raw-block-inputs",
+      "P:source-canonical-convergence",
+      "P:source-gaussian-transfer",
+      "S:source-driver-convergence"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF124"
+    ]
+  },
+  "P:raw-block-point-comparison": {
+    "id": "P:raw-block-point-comparison",
+    "kind": "proposition",
+    "path": "notes/integrated_raw_block_lower.tex",
+    "line": 468,
+    "labels": [
+      "P:raw-block-point-comparison",
+      "E:raw-block-square-identity",
+      "E:raw-block-original-comparison"
+    ],
+    "references": [
+      "E:constant-original-point-transfer",
+      "E:exact-fast-equation",
+      "E:raw-block-original-comparison",
+      "E:raw-block-square-identity",
+      "L:exact-canonical-scaling",
+      "L:raw-block-restart",
+      "P:masked-canonical-transfer",
+      "P:raw-block-gaussian-law",
+      "P:raw-block-point-comparison"
+    ],
+    "edges": [
+      "L:exact-canonical-scaling",
+      "L:raw-block-restart",
+      "P:constant-raw-average",
+      "P:masked-canonical-transfer",
+      "P:raw-block-gaussian-law"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF125"
+    ]
+  },
+  "P:raw-block-original-lower": {
+    "id": "P:raw-block-original-lower",
+    "kind": "proposition",
+    "path": "notes/integrated_raw_block_lower.tex",
+    "line": 554,
+    "labels": [
+      "P:raw-block-original-lower",
+      "E:raw-block-original-lower"
+    ],
+    "references": [
+      "E:raw-block-original-comparison",
+      "E:raw-block-original-lower",
+      "E:raw-block-square-identity",
+      "L:raw-block-indexed-cone",
+      "L:raw-block-uniform-error",
+      "P:raw-block-original-lower"
+    ],
+    "edges": [
+      "L:raw-block-indexed-cone",
+      "L:raw-block-uniform-error",
+      "P:raw-block-point-comparison"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF126"
+    ]
+  },
+  "L:variational-heat-envelope": {
+    "id": "L:variational-heat-envelope",
+    "kind": "lemma",
+    "path": "notes/integrated_unmasked_variational.tex",
+    "line": 23,
+    "labels": [
+      "L:variational-heat-envelope",
+      "E:variational-heat-envelope"
+    ],
+    "references": [
+      "E:variational-heat-envelope",
+      "H:homog",
+      "L:variational-heat-envelope"
+    ],
+    "edges": [
+      "H:homog"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF127"
+    ]
+  },
+  "L:variational-global-mean": {
+    "id": "L:variational-global-mean",
+    "kind": "lemma",
+    "path": "notes/integrated_unmasked_variational.tex",
+    "line": 72,
+    "labels": [
+      "L:variational-global-mean",
+      "E:variational-global-mean"
+    ],
+    "references": [
+      "L:variational-global-mean",
+      "L:variational-heat-envelope"
+    ],
+    "edges": [
+      "L:variational-heat-envelope"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF128"
+    ]
+  },
+  "P:variational-unmasked-rate": {
+    "id": "P:variational-unmasked-rate",
+    "kind": "proposition",
+    "path": "notes/integrated_unmasked_variational.tex",
+    "line": 110,
+    "labels": [
+      "P:variational-unmasked-rate",
+      "E:variational-real-rayleigh"
+    ],
+    "references": [
+      "E:variational-real-rayleigh",
+      "P:compact-original-common-trial",
+      "P:variational-unmasked-rate"
+    ],
+    "edges": [
+      "P:compact-original-common-trial"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF129"
+    ]
+  },
+  "P:variational-remove-mask": {
+    "id": "P:variational-remove-mask",
+    "kind": "proposition",
+    "path": "notes/integrated_unmasked_variational.tex",
+    "line": 190,
+    "labels": [
+      "P:variational-remove-mask",
+      "E:variational-unmasked-point-lower"
+    ],
+    "references": [
+      "E:variational-real-rayleigh",
+      "E:variational-unmasked-point-lower",
+      "P:raw-block-original-lower",
+      "P:variational-remove-mask"
+    ],
+    "edges": [
+      "P:raw-block-original-lower",
+      "P:variational-unmasked-rate"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF130"
+    ]
+  },
+  "L:variational-control-dilation": {
+    "id": "L:variational-control-dilation",
+    "kind": "lemma",
+    "path": "notes/integrated_unmasked_variational.tex",
+    "line": 253,
+    "labels": [
+      "L:variational-control-dilation",
+      "E:variational-control-dilation",
+      "E:variational-dilation-values"
+    ],
+    "references": [
+      "E:variational-dilation-values",
+      "L:variational-control-dilation"
+    ],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF131"
+    ]
+  },
+  "P:variational-positive-scores": {
+    "id": "P:variational-positive-scores",
+    "kind": "proposition",
+    "path": "notes/integrated_unmasked_variational.tex",
+    "line": 305,
+    "labels": [
+      "P:variational-positive-scores",
+      "E:variational-score-homogeneity"
+    ],
+    "references": [
+      "E:variational-score-homogeneity",
+      "E:variational-score-set-scaling",
+      "E:variational-unmasked-point-lower",
+      "L:compact-raw-profile",
+      "L:variational-control-dilation",
+      "P:variational-positive-scores",
+      "T:full-upper"
+    ],
+    "edges": [
+      "L:compact-raw-profile",
+      "L:variational-control-dilation",
+      "P:variational-remove-mask",
+      "T:full-upper"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF132"
+    ]
+  },
+  "L:equilibrium-gamma-beta": {
+    "id": "L:equilibrium-gamma-beta",
+    "kind": "lemma",
+    "path": "notes/integrated_temporal_equilibrium.tex",
+    "line": 9,
+    "labels": [
+      "L:equilibrium-gamma-beta"
+    ],
+    "references": [
+      "L:equilibrium-gamma-beta"
+    ],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF133"
+    ]
+  },
+  "L:temporal-equilibrium": {
+    "id": "L:temporal-equilibrium",
+    "kind": "lemma",
+    "path": "notes/integrated_temporal_equilibrium.tex",
+    "line": 35,
+    "labels": [
+      "L:temporal-equilibrium",
+      "E:temporal-equilibrium-density",
+      "E:temporal-equilibrium-potential",
+      "E:temporal-equilibrium-mass"
+    ],
+    "references": [
+      "E:temporal-equilibrium-mass",
+      "E:temporal-equilibrium-potential",
+      "L:temporal-equilibrium"
+    ],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF134"
+    ]
+  },
+  "L:spatial-physical-pair": {
+    "id": "L:spatial-physical-pair",
+    "kind": "lemma",
+    "path": "notes/integrated_spatial_occupation.tex",
+    "line": 13,
+    "labels": [
+      "L:spatial-physical-pair",
+      "E:spatial-physical-pair"
+    ],
+    "references": [
+      "L:spatial-physical-pair"
+    ],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF135"
+    ]
+  },
+  "L:spatial-static-controls": {
+    "id": "L:spatial-static-controls",
+    "kind": "lemma",
+    "path": "notes/integrated_spatial_occupation.tex",
+    "line": 45,
+    "labels": [
+      "L:spatial-static-controls",
+      "E:spatial-static-score"
+    ],
+    "references": [
+      "E:temporal-equilibrium-mass",
+      "E:temporal-equilibrium-potential",
+      "L:spatial-static-controls",
+      "P:variational-remove-mask",
+      "P:variational-unmasked-rate"
+    ],
+    "edges": [
+      "L:temporal-equilibrium",
+      "P:variational-remove-mask",
+      "P:variational-unmasked-rate"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF136"
+    ]
+  },
+  "P:spatial-smooth-ratio": {
+    "id": "P:spatial-smooth-ratio",
+    "kind": "proposition",
+    "path": "notes/integrated_spatial_occupation.tex",
+    "line": 112,
+    "labels": [
+      "P:spatial-smooth-ratio",
+      "E:spatial-smooth-score"
+    ],
+    "references": [
+      "E:spatial-smooth-score",
+      "L:spatial-static-controls",
+      "P:spatial-smooth-ratio"
+    ],
+    "edges": [
+      "L:spatial-static-controls"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF137"
+    ]
+  },
+  "P:spatial-four-linear": {
+    "id": "P:spatial-four-linear",
+    "kind": "proposition",
+    "path": "notes/integrated_spatial_occupation.tex",
+    "line": 172,
+    "labels": [
+      "P:spatial-four-linear",
+      "E:spatial-homogeneous-bound",
+      "E:spatial-square-CS",
+      "E:spatial-four-linear"
+    ],
+    "references": [
+      "E:spatial-four-linear",
+      "E:spatial-homogeneous-bound",
+      "E:spatial-square-CS",
+      "L:spatial-physical-pair",
+      "P:spatial-four-linear"
+    ],
+    "edges": [
+      "L:spatial-physical-pair"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF138"
+    ]
+  },
+  "P:spatial-energy-map": {
+    "id": "P:spatial-energy-map",
+    "kind": "proposition",
+    "path": "notes/integrated_spatial_occupation.tex",
+    "line": 267,
+    "labels": [
+      "P:spatial-energy-map",
+      "E:spatial-energy-map",
+      "E:spatial-static-energy-score"
+    ],
+    "references": [
+      "E:spatial-dilation",
+      "E:spatial-energy-map",
+      "E:spatial-smooth-score",
+      "E:spatial-static-energy-score",
+      "P:spatial-energy-map",
+      "P:spatial-four-linear"
+    ],
+    "edges": [
+      "P:spatial-four-linear",
+      "P:spatial-smooth-ratio"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF139"
+    ]
+  },
+  "L:occupation-kernel-row": {
+    "id": "L:occupation-kernel-row",
+    "kind": "lemma",
+    "path": "notes/integrated_spatial_occupation.tex",
+    "line": 332,
+    "labels": [
+      "L:occupation-kernel-row",
+      "E:occupation-kernel-row"
+    ],
+    "references": [
+      "L:occupation-kernel-row"
+    ],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF140"
+    ]
+  },
+  "P:occupation-physical-class": {
+    "id": "P:occupation-physical-class",
+    "kind": "proposition",
+    "path": "notes/integrated_spatial_occupation.tex",
+    "line": 361,
+    "labels": [
+      "P:occupation-physical-class",
+      "E:occupation-physical-bound",
+      "E:occupation-own-energy"
+    ],
+    "references": [
+      "E:occupation-kernel-row",
+      "E:occupation-physical-bound",
+      "E:spatial-energy-map",
+      "E:spatial-homogeneous-bound",
+      "E:spatial-square-CS",
+      "L:spatial-physical-pair",
+      "P:occupation-physical-class",
+      "P:spatial-four-linear"
+    ],
+    "edges": [
+      "L:occupation-kernel-row",
+      "L:spatial-physical-pair",
+      "P:spatial-energy-map",
+      "P:spatial-four-linear"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF141"
+    ]
+  },
+  "L:cameron-fractional-products": {
+    "id": "L:cameron-fractional-products",
+    "kind": "lemma",
+    "path": "notes/integrated_cameron_mean.tex",
+    "line": 29,
+    "labels": [
+      "L:cameron-fractional-products",
+      "E:cameron-fractional-product",
+      "E:cameron-fractional-absolute"
+    ],
+    "references": [
+      "E:cameron-fractional-absolute",
+      "E:cameron-fractional-product",
+      "E:spatial-four-linear",
+      "L:cameron-fractional-products",
+      "L:spatial-physical-pair"
+    ],
+    "edges": [
+      "L:spatial-physical-pair",
+      "P:spatial-four-linear"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF142"
+    ]
+  },
+  "P:cameron-spatial-map": {
+    "id": "P:cameron-spatial-map",
+    "kind": "proposition",
+    "path": "notes/integrated_cameron_mean.tex",
+    "line": 86,
+    "labels": [
+      "P:cameron-spatial-map",
+      "E:cameron-spatial-row"
+    ],
+    "references": [
+      "E:cameron-spatial-row",
+      "L:cameron-fractional-products",
+      "P:cameron-spatial-map",
+      "P:cutoff-singular-values"
+    ],
+    "edges": [
+      "L:cameron-fractional-products",
+      "P:cutoff-singular-values"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF143"
+    ]
+  },
+  "L:cameron-supported-tensor": {
+    "id": "L:cameron-supported-tensor",
+    "kind": "lemma",
+    "path": "notes/integrated_cameron_mean.tex",
+    "line": 157,
+    "labels": [
+      "L:cameron-supported-tensor"
+    ],
+    "references": [
+      "L:cameron-supported-tensor"
+    ],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF144"
+    ]
+  },
+  "P:cameron-temporal-map": {
+    "id": "P:cameron-temporal-map",
+    "kind": "proposition",
+    "path": "notes/integrated_cameron_mean.tex",
+    "line": 187,
+    "labels": [
+      "P:cameron-temporal-map",
+      "E:cameron-temporal-map"
+    ],
+    "references": [
+      "E:cameron-temporal-map",
+      "P:cameron-temporal-map"
+    ],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF145"
+    ]
+  },
+  "P:cameron-full-mean": {
+    "id": "P:cameron-full-mean",
+    "kind": "proposition",
+    "path": "notes/integrated_cameron_mean.tex",
+    "line": 266,
+    "labels": [
+      "P:cameron-full-mean",
+      "E:cameron-full-mean",
+      "E:cameron-compact-tail"
+    ],
+    "references": [
+      "E:cameron-compact-tail",
+      "E:cameron-full-mean",
+      "E:cameron-spatial-row",
+      "L:cameron-supported-tensor",
+      "P:cameron-full-mean"
+    ],
+    "edges": [
+      "L:cameron-supported-tensor",
+      "P:cameron-spatial-map"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF146"
+    ]
+  },
+  "L:cameron-actual-residual": {
+    "id": "L:cameron-actual-residual",
+    "kind": "lemma",
+    "path": "notes/integrated_cameron_mean.tex",
+    "line": 359,
+    "labels": [
+      "L:cameron-actual-residual"
+    ],
+    "references": [
+      "E:cameron-block-parameters",
+      "L:cameron-actual-residual",
+      "L:raw-block-inputs",
+      "P:source-gaussian-transfer"
+    ],
+    "edges": [
+      "E:cameron-block-parameters",
+      "L:raw-block-inputs",
+      "P:source-gaussian-transfer"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF147"
+    ]
+  },
+  "P:cameron-actual-embedding": {
+    "id": "P:cameron-actual-embedding",
+    "kind": "proposition",
+    "path": "notes/integrated_cameron_mean.tex",
+    "line": 409,
+    "labels": [
+      "P:cameron-actual-embedding",
+      "E:cameron-actual-covariance",
+      "E:cameron-averaged-norm",
+      "E:cameron-averaged-bound"
+    ],
+    "references": [
+      "E:cameron-actual-covariance",
+      "E:cameron-spatial-row",
+      "E:raw-block-mean-jacobian",
+      "L:cameron-actual-residual",
+      "P:cameron-actual-embedding"
+    ],
+    "edges": [
+      "L:cameron-actual-residual",
+      "L:raw-block-inputs",
+      "P:cameron-spatial-map"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF148"
+    ]
+  },
+  "L:young-upper-growth": {
+    "id": "L:young-upper-growth",
+    "kind": "lemma",
+    "path": "notes/integrated_young_upper_foundation.tex",
+    "line": 17,
+    "labels": [
+      "L:young-upper-growth",
+      "E:young-upper-refined-growth",
+      "E:young-upper-inverse-control"
+    ],
+    "references": [
+      "E:constant-young-local",
+      "E:young-upper-refined-growth",
+      "L:young-upper-growth"
+    ],
+    "edges": [
+      "P:constant-young-linear"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF149"
+    ]
+  },
+  "P:young-upper-multiplicative": {
+    "id": "P:young-upper-multiplicative",
+    "kind": "proposition",
+    "path": "notes/integrated_young_upper_foundation.tex",
+    "line": 67,
+    "labels": [
+      "P:young-upper-multiplicative",
+      "E:young-upper-multiplicative"
+    ],
+    "references": [
+      "E:young-upper-refined-growth",
+      "L:young-upper-growth",
+      "P:young-upper-multiplicative"
+    ],
+    "edges": [
+      "L:young-upper-growth"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF150"
+    ]
+  },
+  "L:uniform-mean-cutoff": {
+    "id": "L:uniform-mean-cutoff",
+    "kind": "lemma",
+    "path": "notes/integrated_uniform_mean.tex",
+    "line": 28,
+    "labels": [
+      "L:uniform-mean-cutoff",
+      "E:uniform-spatial-mean"
+    ],
+    "references": [
+      "E:uniform-mean-row",
+      "L:cameron-fractional-products",
+      "L:uniform-mean-cutoff"
+    ],
+    "edges": [
+      "E:uniform-mean-row",
+      "L:cameron-fractional-products"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF151"
+    ]
+  },
+  "L:uniform-mean-spatial-tails": {
+    "id": "L:uniform-mean-spatial-tails",
+    "kind": "lemma",
+    "path": "notes/integrated_uniform_mean.tex",
+    "line": 67,
+    "labels": [
+      "L:uniform-mean-spatial-tails",
+      "E:uniform-mean-heat",
+      "E:uniform-mean-frequency"
+    ],
+    "references": [
+      "E:uniform-mean-frequency",
+      "E:uniform-mean-heat",
+      "E:uniform-mean-row",
+      "E:uniform-mean-row-translation",
+      "L:uniform-mean-cutoff",
+      "L:uniform-mean-spatial-tails"
+    ],
+    "edges": [
+      "E:uniform-mean-row",
+      "L:uniform-mean-cutoff"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF152"
+    ]
+  },
+  "L:uniform-mean-tensor": {
+    "id": "L:uniform-mean-tensor",
+    "kind": "lemma",
+    "path": "notes/integrated_uniform_mean.tex",
+    "line": 165,
+    "labels": [
+      "L:uniform-mean-tensor"
+    ],
+    "references": [
+      "L:uniform-mean-tensor"
+    ],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF153"
+    ]
+  },
+  "P:uniform-mean-regulator": {
+    "id": "P:uniform-mean-regulator",
+    "kind": "proposition",
+    "path": "notes/integrated_uniform_mean.tex",
+    "line": 229,
+    "labels": [
+      "P:uniform-mean-regulator",
+      "E:uniform-completed-mean"
+    ],
+    "references": [
+      "E:uniform-completed-mean",
+      "E:uniform-mean-frequency",
+      "L:uniform-mean-tensor",
+      "P:uniform-mean-regulator"
+    ],
+    "edges": [
+      "L:uniform-mean-spatial-tails",
+      "L:uniform-mean-tensor"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF154"
+    ]
+  },
+  "P:uniform-actual-cameron": {
+    "id": "P:uniform-actual-cameron",
+    "kind": "proposition",
+    "path": "notes/integrated_uniform_mean.tex",
+    "line": 308,
+    "labels": [
+      "P:uniform-actual-cameron",
+      "E:uniform-actual-covariance",
+      "E:uniform-actual-cameron-bound"
+    ],
+    "references": [
+      "E:cameron-actual-covariance",
+      "E:uniform-actual-covariance",
+      "L:cameron-actual-residual",
+      "P:cameron-actual-embedding",
+      "P:source-gaussian-transfer",
+      "P:uniform-actual-cameron"
+    ],
+    "edges": [
+      "L:cameron-actual-residual",
+      "P:cameron-actual-embedding",
+      "P:source-gaussian-transfer"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF155"
+    ]
+  },
+  "L:radius-outer-maps": {
+    "id": "L:radius-outer-maps",
+    "kind": "lemma",
+    "path": "notes/integrated_radius_anchor.tex",
+    "line": 44,
+    "labels": [
+      "L:radius-outer-maps"
+    ],
+    "references": [
+      "E:cutoff-lattice-sum",
+      "E:cutoff-peetre",
+      "L:cutoff-factorization",
+      "L:radius-outer-maps"
+    ],
+    "edges": [
+      "L:cutoff-factorization"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF156"
+    ]
+  },
+  "P:radius-compact-envelopes": {
+    "id": "P:radius-compact-envelopes",
+    "kind": "proposition",
+    "path": "notes/integrated_radius_anchor.tex",
+    "line": 97,
+    "labels": [
+      "P:radius-compact-envelopes",
+      "E:radius-cutoff-Schatten",
+      "E:radius-two-envelopes"
+    ],
+    "references": [
+      "E:compact-two-factors",
+      "E:radius-anchor-parameters",
+      "E:radius-cutoff-Schatten",
+      "E:radius-lattice-volume",
+      "P:compact-two-envelopes",
+      "P:cutoff-singular-values",
+      "P:radius-compact-envelopes"
+    ],
+    "edges": [
+      "E:compact-two-factors",
+      "E:radius-anchor-parameters",
+      "P:compact-two-envelopes",
+      "P:cutoff-singular-values"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF157"
+    ]
+  },
+  "P:radius-actual-moments": {
+    "id": "P:radius-actual-moments",
+    "kind": "proposition",
+    "path": "notes/integrated_radius_anchor.tex",
+    "line": 175,
+    "labels": [
+      "P:radius-actual-moments",
+      "E:radius-actual-path-moments"
+    ],
+    "references": [
+      "C:finite-gaussian-operators",
+      "E:driver-actual-localization",
+      "E:radius-actual-path-moments",
+      "E:radius-anchor-Q",
+      "E:radius-anchor-parameters",
+      "E:radius-two-envelopes",
+      "L:driver-actual-variances",
+      "L:driver-holder-limit",
+      "L:driver-noise-basis",
+      "P:radius-actual-moments",
+      "P:wave-two-variances"
+    ],
+    "edges": [
+      "C:finite-gaussian-operators",
+      "E:radius-anchor-Q",
+      "E:radius-anchor-parameters",
+      "L:driver-actual-variances",
+      "L:driver-gain-localization",
+      "L:driver-holder-limit",
+      "L:driver-noise-basis",
+      "P:radius-compact-envelopes",
+      "P:wave-two-variances"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF158"
+    ]
+  },
+  "C:radius-covariance-residuals": {
+    "id": "C:radius-covariance-residuals",
+    "kind": "corollary",
+    "path": "notes/integrated_radius_anchor.tex",
+    "line": 279,
+    "labels": [
+      "C:radius-covariance-residuals"
+    ],
+    "references": [
+      "C:radius-covariance-residuals",
+      "E:raw-block-pullback",
+      "L:raw-block-inputs",
+      "P:radius-actual-moments",
+      "P:source-gaussian-transfer"
+    ],
+    "edges": [
+      "E:raw-block-pullback",
+      "L:raw-block-inputs",
+      "P:radius-actual-moments",
+      "P:source-gaussian-transfer"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF159"
+    ]
+  },
+  "P:radius-mean-anchor": {
+    "id": "P:radius-mean-anchor",
+    "kind": "proposition",
+    "path": "notes/integrated_radius_anchor.tex",
+    "line": 317,
+    "labels": [
+      "P:radius-mean-anchor",
+      "E:radius-mean-anchor",
+      "E:radius-mean-anchor-decay"
+    ],
+    "references": [
+      "C:radius-covariance-residuals",
+      "E:radius-anchor-Q",
+      "E:radius-mean-anchor",
+      "E:radius-mean-anchor-decay",
+      "P:radius-mean-anchor",
+      "S:actual-cameron-mean"
+    ],
+    "edges": [
+      "C:radius-covariance-residuals",
+      "E:radius-anchor-Q",
+      "S:actual-cameron-mean"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF160"
+    ]
+  },
+  "L:signed-limiting-multiplier": {
+    "id": "L:signed-limiting-multiplier",
+    "kind": "lemma",
+    "path": "notes/integrated_signed_static.tex",
+    "line": 13,
+    "labels": [
+      "L:signed-limiting-multiplier",
+      "E:signed-multiplier-form"
+    ],
+    "references": [
+      "L:cutoff-factorization",
+      "L:signed-limiting-multiplier"
+    ],
+    "edges": [
+      "L:cutoff-factorization"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF161"
+    ]
+  },
+  "P:signed-closed-form": {
+    "id": "P:signed-closed-form",
+    "kind": "proposition",
+    "path": "notes/integrated_signed_static.tex",
+    "line": 47,
+    "labels": [
+      "P:signed-closed-form",
+      "E:signed-form-domain",
+      "E:signed-form-bounds",
+      "E:signed-quarter-phase"
+    ],
+    "references": [
+      "E:signed-form-domain",
+      "E:signed-multiplier-form",
+      "E:signed-quarter-phase",
+      "L:signed-spectral-wave",
+      "P:signed-closed-form"
+    ],
+    "edges": [
+      "L:signed-limiting-multiplier",
+      "L:signed-spectral-wave"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [
+      "teschl:14:mathematical"
+    ],
+    "proof_ids": [
+      "PROOF162"
+    ]
+  },
+  "L:signed-spectral-wave": {
+    "id": "L:signed-spectral-wave",
+    "kind": "lemma",
+    "path": "notes/integrated_signed_static.tex",
+    "line": 131,
+    "labels": [
+      "L:signed-spectral-wave",
+      "E:signed-E-wave"
+    ],
+    "references": [
+      "E:signed-E-wave",
+      "E:signed-spectral-matrix",
+      "L:constant-phase-free",
+      "L:signed-spectral-wave"
+    ],
+    "edges": [
+      "L:constant-phase-free"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [
+      "teschl:14:mathematical"
+    ],
+    "proof_ids": [
+      "PROOF163"
+    ]
+  },
+  "P:signed-physical-wave": {
+    "id": "P:signed-physical-wave",
+    "kind": "proposition",
+    "path": "notes/integrated_signed_static.tex",
+    "line": 212,
+    "labels": [
+      "P:signed-physical-wave",
+      "E:signed-F-wave"
+    ],
+    "references": [
+      "E:compact-F-block",
+      "E:signed-form-bounds",
+      "L:signed-spectral-wave",
+      "P:cameron-actual-embedding",
+      "P:signed-physical-wave"
+    ],
+    "edges": [
+      "L:signed-spectral-wave",
+      "P:cameron-actual-embedding",
+      "P:compact-F-projection",
+      "P:signed-closed-form"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [
+      "teschl:14:mathematical"
+    ],
+    "proof_ids": [
+      "PROOF164"
+    ]
+  },
+  "L:symplectic-free": {
+    "id": "L:symplectic-free",
+    "kind": "lemma",
+    "path": "notes/integrated_symplectic_phase.tex",
+    "line": 34,
+    "labels": [
+      "L:symplectic-free"
+    ],
+    "references": [
+      "L:symplectic-free"
+    ],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF165"
+    ]
+  },
+  "L:symplectic-source-mean": {
+    "id": "L:symplectic-source-mean",
+    "kind": "lemma",
+    "path": "notes/integrated_symplectic_phase.tex",
+    "line": 87,
+    "labels": [
+      "L:symplectic-source-mean",
+      "E:symplectic-mean-convergence",
+      "E:symplectic-source-primitive"
+    ],
+    "references": [
+      "E:symplectic-combined-driver",
+      "E:symplectic-mean-convergence",
+      "E:symplectic-source-primitive",
+      "L:symplectic-source-mean"
+    ],
+    "edges": [
+      "E:symplectic-combined-driver"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF166"
+    ]
+  },
+  "P:symplectic-source": {
+    "id": "P:symplectic-source",
+    "kind": "proposition",
+    "path": "notes/integrated_symplectic_phase.tex",
+    "line": 148,
+    "labels": [
+      "P:symplectic-source"
+    ],
+    "references": [
+      "L:symplectic-free",
+      "P:symplectic-source"
+    ],
+    "edges": [
+      "L:symplectic-free"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF167"
+    ]
+  },
+  "P:symplectic-raw": {
+    "id": "P:symplectic-raw",
+    "kind": "proposition",
+    "path": "notes/integrated_symplectic_phase.tex",
+    "line": 188,
+    "labels": [
+      "P:symplectic-raw",
+      "E:symplectic-raw-conservation"
+    ],
+    "references": [
+      "E:symplectic-combined-driver",
+      "E:symplectic-mean-convergence",
+      "P:constant-gaussian-flow",
+      "P:symplectic-raw"
+    ],
+    "edges": [
+      "E:symplectic-combined-driver",
+      "L:symplectic-source-mean",
+      "P:constant-gaussian-flow"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF168"
+    ]
+  },
+  "P:symplectic-block-mean": {
+    "id": "P:symplectic-block-mean",
+    "kind": "proposition",
+    "path": "notes/integrated_symplectic_phase.tex",
+    "line": 276,
+    "labels": [
+      "P:symplectic-block-mean",
+      "E:symplectic-block-primitive",
+      "E:symplectic-block-direction"
+    ],
+    "references": [
+      "E:cameron-actual-covariance",
+      "E:cameron-block-parameters",
+      "E:raw-block-pullback",
+      "E:symplectic-block-direction",
+      "E:symplectic-block-primitive",
+      "E:symplectic-unscaled-covariance",
+      "P:cameron-full-mean",
+      "P:constant-phase-driver",
+      "P:symplectic-block-mean",
+      "P:symplectic-raw",
+      "S:actual-cameron-mean"
+    ],
+    "edges": [
+      "E:cameron-block-parameters",
+      "E:raw-block-pullback",
+      "P:cameron-actual-embedding",
+      "P:cameron-full-mean",
+      "P:constant-phase-driver",
+      "P:symplectic-raw",
+      "S:actual-cameron-mean"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF169"
+    ]
+  },
+  "P:tube-wiener-realization": {
+    "id": "P:tube-wiener-realization",
+    "kind": "proposition",
+    "path": "notes/integrated_gaussian_tubes.tex",
+    "line": 21,
+    "labels": [
+      "P:tube-wiener-realization",
+      "E:tube-cameron-space"
+    ],
+    "references": [
+      "E:tube-cameron-space",
+      "E:tube-finite-regression",
+      "P:tube-wiener-realization"
+    ],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF170"
+    ]
+  },
+  "L:tube-closed-geometry": {
+    "id": "L:tube-closed-geometry",
+    "kind": "lemma",
+    "path": "notes/integrated_gaussian_tubes.tex",
+    "line": 144,
+    "labels": [
+      "L:tube-closed-geometry",
+      "E:tube-attained-radius"
+    ],
+    "references": [
+      "E:tube-attained-radius",
+      "E:tube-cameron-space",
+      "L:tube-closed-geometry",
+      "P:tube-wiener-realization"
+    ],
+    "edges": [
+      "P:tube-wiener-realization"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF171"
+    ]
+  },
+  "P:tube-rayleigh-transfer": {
+    "id": "P:tube-rayleigh-transfer",
+    "kind": "proposition",
+    "path": "notes/integrated_gaussian_tubes.tex",
+    "line": 202,
+    "labels": [
+      "P:tube-rayleigh-transfer",
+      "E:tube-rayleigh-transfer"
+    ],
+    "references": [
+      "E:tube-attained-radius",
+      "E:tube-rayleigh-transfer",
+      "P:tube-rayleigh-transfer"
+    ],
+    "edges": [
+      "L:tube-closed-geometry"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF172"
+    ]
+  },
+  "P:tube-actual-law": {
+    "id": "P:tube-actual-law",
+    "kind": "proposition",
+    "path": "notes/integrated_gaussian_tubes.tex",
+    "line": 275,
+    "labels": [
+      "P:tube-actual-law",
+      "E:tube-actual-mean",
+      "E:tube-actual-covariance",
+      "E:tube-typical-radius"
+    ],
+    "references": [
+      "C:radius-covariance-residuals",
+      "E:cameron-actual-covariance",
+      "E:tube-actual-covariance",
+      "E:tube-actual-mean",
+      "E:tube-typical-radius",
+      "L:cameron-actual-residual",
+      "L:cameron-supported-tensor",
+      "P:cameron-full-mean",
+      "P:radius-mean-anchor",
+      "P:symplectic-block-mean",
+      "P:tube-actual-law",
+      "P:tube-wiener-realization",
+      "P:uniform-mean-regulator"
+    ],
+    "edges": [
+      "C:radius-covariance-residuals",
+      "L:cameron-actual-residual",
+      "L:cameron-supported-tensor",
+      "P:cameron-actual-embedding",
+      "P:cameron-full-mean",
+      "P:radius-mean-anchor",
+      "P:symplectic-block-mean",
+      "P:tube-wiener-realization",
+      "P:uniform-mean-regulator"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF173"
+    ]
+  },
+  "L:tube-actual-endpoint": {
+    "id": "L:tube-actual-endpoint",
+    "kind": "lemma",
+    "path": "notes/integrated_gaussian_tubes.tex",
+    "line": 354,
+    "labels": [
+      "L:tube-actual-endpoint",
+      "E:tube-global-endpoint"
+    ],
+    "references": [
+      "E:tube-global-endpoint",
+      "L:raw-block-restart",
+      "L:tube-actual-endpoint",
+      "P:symplectic-raw"
+    ],
+    "edges": [
+      "L:raw-block-restart",
+      "P:symplectic-raw"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF174"
+    ]
+  },
+  "P:tube-coarse-envelope": {
+    "id": "P:tube-coarse-envelope",
+    "kind": "proposition",
+    "path": "notes/integrated_gaussian_tubes.tex",
+    "line": 416,
+    "labels": [
+      "P:tube-coarse-envelope",
+      "E:tube-coarse-envelope"
+    ],
+    "references": [
+      "E:constant-young-growth",
+      "E:tube-global-endpoint",
+      "E:tube-primitive-sum",
+      "E:young-upper-refined-growth",
+      "P:tube-coarse-envelope",
+      "P:tube-rayleigh-transfer",
+      "P:uniform-actual-cameron"
+    ],
+    "edges": [
+      "L:tube-actual-endpoint",
+      "L:young-upper-growth",
+      "P:constant-young-linear",
+      "P:tube-rayleigh-transfer",
+      "P:uniform-actual-cameron"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF175"
+    ]
+  },
+  "L:tube-rayleigh-tail": {
+    "id": "L:tube-rayleigh-tail",
+    "kind": "lemma",
+    "path": "notes/integrated_gaussian_tubes.tex",
+    "line": 509,
+    "labels": [
+      "L:tube-rayleigh-tail",
+      "E:tube-rayleigh-tail"
+    ],
+    "references": [
+      "E:tube-coarse-envelope",
+      "E:tube-rayleigh-tail",
+      "L:tube-rayleigh-tail"
+    ],
+    "edges": [
+      "P:tube-coarse-envelope"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF176"
+    ]
+  },
+  "L:tube-half-action": {
+    "id": "L:tube-half-action",
+    "kind": "lemma",
+    "path": "notes/integrated_gaussian_tubes.tex",
+    "line": 544,
+    "labels": [
+      "L:tube-half-action"
+    ],
+    "references": [
+      "L:tube-half-action"
+    ],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF177"
+    ]
+  },
+  "L:uniform-E-lift": {
+    "id": "L:uniform-E-lift",
+    "kind": "lemma",
+    "path": "notes/integrated_uniform_products.tex",
+    "line": 38,
+    "labels": [
+      "L:uniform-E-lift",
+      "E:uniform-E-pairing"
+    ],
+    "references": [
+      "E:uniform-E-pairing",
+      "L:uniform-E-lift",
+      "S:signed-static-wave"
+    ],
+    "edges": [
+      "S:signed-static-wave"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF178"
+    ]
+  },
+  "P:uniform-E-spectral": {
+    "id": "P:uniform-E-spectral",
+    "kind": "proposition",
+    "path": "notes/integrated_uniform_products.tex",
+    "line": 83,
+    "labels": [
+      "P:uniform-E-spectral",
+      "E:uniform-E-static-bound",
+      "E:uniform-E-rate-continuity"
+    ],
+    "references": [
+      "E:uniform-E-pairing",
+      "E:uniform-E-rate-continuity",
+      "E:uniform-E-static-bound",
+      "L:uniform-E-lift",
+      "P:constant-young-linear",
+      "P:signed-physical-wave",
+      "P:uniform-E-spectral"
+    ],
+    "edges": [
+      "L:uniform-E-lift",
+      "P:constant-young-linear",
+      "P:signed-physical-wave"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [
+      "teschl:14:mathematical"
+    ],
+    "proof_ids": [
+      "PROOF179"
+    ]
+  },
+  "P:uniform-rate-averaging": {
+    "id": "P:uniform-rate-averaging",
+    "kind": "proposition",
+    "path": "notes/integrated_uniform_products.tex",
+    "line": 247,
+    "labels": [
+      "P:uniform-rate-averaging",
+      "E:uniform-field-averaging",
+      "E:uniform-mean-rate",
+      "E:uniform-rate-averaging"
+    ],
+    "references": [
+      "E:uniform-E-rate-continuity",
+      "E:uniform-field-averaging",
+      "E:uniform-rate-averaging",
+      "L:uniform-mean-tensor",
+      "P:uniform-rate-averaging"
+    ],
+    "edges": [
+      "L:uniform-mean-tensor",
+      "P:uniform-E-spectral"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF180"
+    ]
+  },
+  "L:uniform-product-budgets": {
+    "id": "L:uniform-product-budgets",
+    "kind": "lemma",
+    "path": "notes/integrated_uniform_products.tex",
+    "line": 325,
+    "labels": [
+      "L:uniform-product-budgets",
+      "E:uniform-product-primitive",
+      "E:uniform-product-growth"
+    ],
+    "references": [
+      "E:uniform-product-growth",
+      "E:uniform-product-primitive",
+      "L:symplectic-free",
+      "L:uniform-product-budgets",
+      "L:young-upper-growth",
+      "P:symplectic-block-mean"
+    ],
+    "edges": [
+      "L:symplectic-free",
+      "L:young-upper-growth",
+      "P:symplectic-block-mean"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF181"
+    ]
+  },
+  "P:uniform-mean-product": {
+    "id": "P:uniform-mean-product",
+    "kind": "proposition",
+    "path": "notes/integrated_uniform_products.tex",
+    "line": 392,
+    "labels": [
+      "P:uniform-mean-product",
+      "E:uniform-mean-product"
+    ],
+    "references": [
+      "E:uniform-mean-product",
+      "E:uniform-product-growth",
+      "E:uniform-product-primitive",
+      "P:uniform-E-spectral",
+      "P:uniform-mean-product",
+      "P:young-upper-multiplicative"
+    ],
+    "edges": [
+      "L:uniform-product-budgets",
+      "P:uniform-E-spectral",
+      "P:young-upper-multiplicative"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF182"
+    ]
+  },
+  "C:uniform-polynomial-balls": {
+    "id": "C:uniform-polynomial-balls",
+    "kind": "corollary",
+    "path": "notes/integrated_uniform_products.tex",
+    "line": 477,
+    "labels": [
+      "C:uniform-polynomial-balls"
+    ],
+    "references": [
+      "C:uniform-polynomial-balls",
+      "E:uniform-mean-product",
+      "P:uniform-rate-averaging"
+    ],
+    "edges": [
+      "P:uniform-mean-product",
+      "P:uniform-rate-averaging"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF183"
+    ]
+  },
+  "P:uniform-arbitrary-residual": {
+    "id": "P:uniform-arbitrary-residual",
+    "kind": "proposition",
+    "path": "notes/integrated_uniform_products.tex",
+    "line": 520,
+    "labels": [
+      "P:uniform-arbitrary-residual",
+      "E:uniform-residual-ratio",
+      "E:uniform-residual-integrated-rate"
+    ],
+    "references": [
+      "C:uniform-polynomial-balls",
+      "E:uniform-product-growth",
+      "E:uniform-residual-integrated-rate",
+      "E:uniform-residual-ratio",
+      "P:uniform-arbitrary-residual",
+      "P:young-upper-multiplicative"
+    ],
+    "edges": [
+      "C:uniform-polynomial-balls",
+      "L:uniform-product-budgets",
+      "P:young-upper-multiplicative"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF184"
+    ]
+  },
+  "L:point-actual-finiteness": {
+    "id": "L:point-actual-finiteness",
+    "kind": "lemma",
+    "path": "notes/integrated_point_transfer.tex",
+    "line": 21,
+    "labels": [
+      "L:point-actual-finiteness",
+      "E:point-fixed-finiteness"
+    ],
+    "references": [
+      "E:point-fixed-finiteness",
+      "E:tube-global-endpoint",
+      "L:point-actual-finiteness",
+      "L:tube-rayleigh-tail",
+      "P:constant-phase-driver",
+      "P:symplectic-raw",
+      "P:tube-actual-law",
+      "P:tube-coarse-envelope"
+    ],
+    "edges": [
+      "L:tube-actual-endpoint",
+      "L:tube-rayleigh-tail",
+      "P:constant-phase-driver",
+      "P:symplectic-raw",
+      "P:tube-actual-law",
+      "P:tube-coarse-envelope"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF185"
+    ]
+  },
+  "L:point-fast-sources": {
+    "id": "L:point-fast-sources",
+    "kind": "lemma",
+    "path": "notes/integrated_point_transfer.tex",
+    "line": 69,
+    "labels": [
+      "L:point-fast-sources",
+      "E:point-source-flow-limit"
+    ],
+    "references": [
+      "E:point-source-flow-limit",
+      "L:constant-source-solution",
+      "L:point-fast-sources",
+      "P:actual-operator-driver",
+      "P:constant-gaussian-flow",
+      "P:masked-canonical-transfer",
+      "P:source-gaussian-transfer",
+      "P:source-ordinary-response",
+      "P:symplectic-source"
+    ],
+    "edges": [
+      "L:constant-source-solution",
+      "P:actual-operator-driver",
+      "P:constant-gaussian-flow",
+      "P:masked-canonical-transfer",
+      "P:source-gaussian-transfer",
+      "P:source-ordinary-response",
+      "P:symplectic-source"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF186"
+    ]
+  },
+  "L:point-compact-source": {
+    "id": "L:point-compact-source",
+    "kind": "lemma",
+    "path": "notes/integrated_point_transfer.tex",
+    "line": 141,
+    "labels": [
+      "L:point-compact-source"
+    ],
+    "references": [
+      "L:point-compact-source"
+    ],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF187"
+    ]
+  },
+  "P:point-source-cone": {
+    "id": "P:point-source-cone",
+    "kind": "proposition",
+    "path": "notes/integrated_point_transfer.tex",
+    "line": 214,
+    "labels": [
+      "P:point-source-cone",
+      "E:point-source-square-average"
+    ],
+    "references": [
+      "E:point-source-square-average",
+      "L:constant-phase-free",
+      "L:point-fast-sources",
+      "P:masked-source-moments",
+      "P:point-source-cone"
+    ],
+    "edges": [
+      "L:constant-phase-free",
+      "L:point-fast-sources",
+      "P:masked-source-moments"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF188"
+    ]
+  },
+  "P:original-point-transfer": {
+    "id": "P:original-point-transfer",
+    "kind": "proposition",
+    "path": "notes/integrated_point_transfer.tex",
+    "line": 278,
+    "labels": [
+      "P:original-point-transfer",
+      "E:original-point-transfer",
+      "E:original-point-rate-reduction"
+    ],
+    "references": [
+      "E:exact-fast-equation",
+      "E:masked-unmasked-moment-limit",
+      "E:original-point-rate-reduction",
+      "E:original-point-transfer",
+      "E:point-fixed-finiteness",
+      "E:point-source-flow-limit",
+      "E:point-source-square-average",
+      "L:exact-canonical-scaling",
+      "L:symplectic-free",
+      "P:original-point-transfer",
+      "P:raw-block-original-lower",
+      "P:raw-block-point-comparison"
+    ],
+    "edges": [
+      "L:exact-canonical-scaling",
+      "L:point-actual-finiteness",
+      "L:point-fast-sources",
+      "L:symplectic-free",
+      "P:masked-canonical-transfer",
+      "P:point-source-cone",
+      "P:raw-block-original-lower",
+      "P:raw-block-point-comparison"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF189"
+    ]
+  },
+  "L:signed-score-envelope": {
+    "id": "L:signed-score-envelope",
+    "kind": "lemma",
+    "path": "notes/integrated_signed_moment_upper.tex",
+    "line": 22,
+    "labels": [
+      "L:signed-score-envelope",
+      "E:signed-raw-score",
+      "E:signed-polynomial-envelope"
+    ],
+    "references": [
+      "E:signed-polynomial-envelope",
+      "E:uniform-product-growth",
+      "L:signed-score-envelope",
+      "P:tube-coarse-envelope",
+      "P:uniform-rate-averaging"
+    ],
+    "edges": [
+      "L:uniform-product-budgets",
+      "P:tube-coarse-envelope",
+      "P:uniform-rate-averaging"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF190"
+    ]
+  },
+  "P:signed-moment-bulk-tail": {
+    "id": "P:signed-moment-bulk-tail",
+    "kind": "proposition",
+    "path": "notes/integrated_signed_moment_upper.tex",
+    "line": 98,
+    "labels": [
+      "P:signed-moment-bulk-tail",
+      "E:signed-error-limit",
+      "E:signed-finite-moment"
+    ],
+    "references": [
+      "E:signed-error-limit",
+      "E:signed-finite-moment",
+      "L:tube-rayleigh-tail",
+      "P:signed-moment-bulk-tail",
+      "P:uniform-arbitrary-residual"
+    ],
+    "edges": [
+      "L:tube-rayleigh-tail",
+      "P:uniform-arbitrary-residual"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF191"
+    ]
+  },
+  "P:signed-operator-upper": {
+    "id": "P:signed-operator-upper",
+    "kind": "proposition",
+    "path": "notes/integrated_signed_moment_upper.tex",
+    "line": 168,
+    "labels": [
+      "P:signed-operator-upper"
+    ],
+    "references": [
+      "E:signed-finite-moment",
+      "P:signed-moment-bulk-tail",
+      "P:signed-operator-upper"
+    ],
+    "edges": [
+      "P:signed-moment-bulk-tail"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF192"
+    ]
+  },
+  "P:original-signed-point-upper": {
+    "id": "P:original-signed-point-upper",
+    "kind": "proposition",
+    "path": "notes/integrated_signed_moment_upper.tex",
+    "line": 221,
+    "labels": [
+      "P:original-signed-point-upper"
+    ],
+    "references": [
+      "P:original-point-transfer",
+      "P:original-signed-point-upper",
+      "P:raw-block-original-lower",
+      "P:signed-operator-upper"
+    ],
+    "edges": [
+      "P:original-point-transfer",
+      "P:raw-block-original-lower",
+      "P:signed-operator-upper"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF193"
+    ]
+  },
+  "L:gram-scalar-algebra": {
+    "id": "L:gram-scalar-algebra",
+    "kind": "lemma",
+    "path": "notes/integrated_positive_gram.tex",
+    "line": 28,
+    "labels": [
+      "L:gram-scalar-algebra",
+      "E:gram-sqrt-dual",
+      "E:gram-hilbert-square"
+    ],
+    "references": [
+      "E:gram-hilbert-square",
+      "L:gram-scalar-algebra"
+    ],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF194"
+    ]
+  },
+  "L:gram-dual-minimum": {
+    "id": "L:gram-dual-minimum",
+    "kind": "lemma",
+    "path": "notes/integrated_positive_gram.tex",
+    "line": 57,
+    "labels": [
+      "L:gram-dual-minimum",
+      "E:gram-dual-stationarity"
+    ],
+    "references": [
+      "E:gram-dual-coercivity",
+      "E:gram-dual-stationarity",
+      "L:gram-dual-minimum"
+    ],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF195"
+    ]
+  },
+  "P:gram-positive-optimizer": {
+    "id": "P:gram-positive-optimizer",
+    "kind": "proposition",
+    "path": "notes/integrated_positive_gram.tex",
+    "line": 109,
+    "labels": [
+      "P:gram-positive-optimizer",
+      "E:gram-active-duality"
+    ],
+    "references": [
+      "E:finite-gram-score",
+      "E:gram-active-duality",
+      "E:gram-dual-stationarity",
+      "L:gram-dual-minimum",
+      "L:gram-scalar-algebra",
+      "P:gram-positive-optimizer"
+    ],
+    "edges": [
+      "E:finite-gram-score",
+      "L:gram-dual-minimum",
+      "L:gram-scalar-algebra"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF196"
+    ]
+  },
+  "L:gram-realization": {
+    "id": "L:gram-realization",
+    "kind": "lemma",
+    "path": "notes/integrated_positive_gram.tex",
+    "line": 159,
+    "labels": [
+      "L:gram-realization"
+    ],
+    "references": [
+      "E:gram-active-duality",
+      "L:gram-realization"
+    ],
+    "edges": [
+      "P:gram-positive-optimizer"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF197"
+    ]
+  },
+  "P:gram-entrywise-comparison": {
+    "id": "P:gram-entrywise-comparison",
+    "kind": "proposition",
+    "path": "notes/integrated_positive_gram.tex",
+    "line": 190,
+    "labels": [
+      "P:gram-entrywise-comparison"
+    ],
+    "references": [
+      "L:gram-realization",
+      "P:gram-entrywise-comparison",
+      "P:gram-positive-optimizer"
+    ],
+    "edges": [
+      "L:gram-realization",
+      "P:gram-positive-optimizer"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF198"
+    ]
+  },
+  "R:gram-controls": {
+    "id": "R:gram-controls",
+    "kind": "remark",
+    "path": "notes/integrated_positive_gram.tex",
+    "line": 216,
+    "labels": [
+      "R:gram-controls"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "L:positive-raw-embedding": {
+    "id": "L:positive-raw-embedding",
+    "kind": "lemma",
+    "path": "notes/integrated_intrinsic_constant.tex",
+    "line": 26,
+    "labels": [
+      "L:positive-raw-embedding",
+      "E:positive-bochner-inclusion",
+      "E:positive-raw-mean"
+    ],
+    "references": [
+      "E:positive-bochner-inclusion",
+      "E:positive-local-spatial-bound",
+      "E:positive-raw-mean",
+      "E:uniform-mean-row",
+      "L:cameron-supported-tensor",
+      "L:positive-raw-embedding",
+      "L:uniform-mean-tensor"
+    ],
+    "edges": [
+      "E:uniform-mean-row",
+      "L:cameron-supported-tensor",
+      "L:uniform-mean-tensor"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF199"
+    ]
+  },
+  "L:positive-physical-gram": {
+    "id": "L:positive-physical-gram",
+    "kind": "lemma",
+    "path": "notes/integrated_intrinsic_constant.tex",
+    "line": 125,
+    "labels": [
+      "L:positive-physical-gram",
+      "E:positive-label-row"
+    ],
+    "references": [
+      "E:positive-label-row",
+      "E:positive-local-spatial-bound",
+      "E:uniform-E-pairing",
+      "E:uniform-completed-mean",
+      "E:uniform-mean-row",
+      "L:positive-physical-gram",
+      "L:positive-raw-embedding",
+      "L:uniform-E-lift",
+      "P:gram-entrywise-comparison"
+    ],
+    "edges": [
+      "E:uniform-mean-row",
+      "L:positive-raw-embedding",
+      "L:uniform-E-lift",
+      "P:gram-entrywise-comparison",
+      "P:uniform-mean-regulator"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF200"
+    ]
+  },
+  "L:positive-uniform-optimizer": {
+    "id": "L:positive-uniform-optimizer",
+    "kind": "lemma",
+    "path": "notes/integrated_intrinsic_constant.tex",
+    "line": 177,
+    "labels": [
+      "L:positive-uniform-optimizer"
+    ],
+    "references": [
+      "E:positive-bochner-inclusion",
+      "L:positive-physical-gram",
+      "L:positive-uniform-optimizer",
+      "P:gram-positive-optimizer",
+      "P:uniform-rate-averaging"
+    ],
+    "edges": [
+      "L:positive-physical-gram",
+      "L:positive-raw-embedding",
+      "P:gram-positive-optimizer",
+      "P:uniform-rate-averaging"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF201"
+    ]
+  },
+  "P:positive-signed-comparison": {
+    "id": "P:positive-signed-comparison",
+    "kind": "proposition",
+    "path": "notes/integrated_intrinsic_constant.tex",
+    "line": 249,
+    "labels": [
+      "P:positive-signed-comparison",
+      "E:positive-signed-comparison"
+    ],
+    "references": [
+      "E:positive-finite-optimizer-bound",
+      "E:positive-signed-comparison",
+      "L:positive-physical-gram",
+      "L:positive-raw-embedding",
+      "L:positive-uniform-optimizer",
+      "P:positive-signed-comparison",
+      "P:uniform-E-spectral",
+      "P:uniform-rate-averaging",
+      "P:variational-positive-scores"
+    ],
+    "edges": [
+      "L:positive-physical-gram",
+      "L:positive-raw-embedding",
+      "L:positive-uniform-optimizer",
+      "P:uniform-E-spectral",
+      "P:uniform-rate-averaging",
+      "P:variational-positive-scores"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF202"
+    ]
+  },
+  "P:positive-score-cutoff": {
+    "id": "P:positive-score-cutoff",
+    "kind": "proposition",
+    "path": "notes/integrated_intrinsic_constant.tex",
+    "line": 334,
+    "labels": [
+      "P:positive-score-cutoff"
+    ],
+    "references": [
+      "E:variational-real-rayleigh",
+      "L:positive-raw-embedding",
+      "P:positive-score-cutoff",
+      "P:positive-signed-comparison"
+    ],
+    "edges": [
+      "L:positive-raw-embedding",
+      "P:positive-signed-comparison",
+      "P:variational-unmasked-rate"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF203"
+    ]
+  },
+  "T:intrinsic-second-moment": {
+    "id": "T:intrinsic-second-moment",
+    "kind": "theorem",
+    "path": "notes/integrated_intrinsic_constant.tex",
+    "line": 373,
+    "labels": [
+      "T:intrinsic-second-moment",
+      "E:intrinsic-second-moment-limit",
+      "E:intrinsic-positive-formula"
+    ],
+    "references": [
+      "E:intrinsic-positive-formula",
+      "E:variational-real-rayleigh",
+      "P:original-signed-point-upper",
+      "P:positive-score-cutoff",
+      "P:raw-block-original-lower",
+      "P:variational-positive-scores",
+      "T:intrinsic-second-moment"
+    ],
+    "edges": [
+      "P:original-signed-point-upper",
+      "P:positive-score-cutoff",
+      "P:raw-block-original-lower",
+      "P:variational-positive-scores",
+      "P:variational-unmasked-rate"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF204"
+    ]
+  },
+  "L:occupation-raw-square": {
+    "id": "L:occupation-raw-square",
+    "kind": "lemma",
+    "path": "notes/integrated_occupation_ceiling.tex",
+    "line": 24,
+    "labels": [
+      "L:occupation-raw-square",
+      "E:occupation-raw-identities"
+    ],
+    "references": [
+      "E:occupation-raw-identities",
+      "E:positive-bochner-inclusion",
+      "L:occupation-raw-square",
+      "L:positive-raw-embedding",
+      "P:spatial-four-linear"
+    ],
+    "edges": [
+      "L:positive-raw-embedding",
+      "P:spatial-four-linear"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF205"
+    ]
+  },
+  "P:raw-occupation-energy": {
+    "id": "P:raw-occupation-energy",
+    "kind": "proposition",
+    "path": "notes/integrated_occupation_ceiling.tex",
+    "line": 100,
+    "labels": [
+      "P:raw-occupation-energy",
+      "E:raw-occupation-energy",
+      "E:raw-occupation-ratio"
+    ],
+    "references": [
+      "E:raw-occupation-energy",
+      "E:raw-occupation-ratio",
+      "P:raw-occupation-energy",
+      "P:spatial-four-linear"
+    ],
+    "edges": [
+      "P:spatial-four-linear"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF206"
+    ]
+  },
+  "L:occupation-rayleigh-selection": {
+    "id": "L:occupation-rayleigh-selection",
+    "kind": "lemma",
+    "path": "notes/integrated_occupation_ceiling.tex",
+    "line": 166,
+    "labels": [
+      "L:occupation-rayleigh-selection",
+      "E:occupation-rayleigh-selection"
+    ],
+    "references": [
+      "E:occupation-rayleigh-selection",
+      "L:occupation-raw-square",
+      "L:occupation-rayleigh-selection",
+      "P:variational-unmasked-rate"
+    ],
+    "edges": [
+      "L:occupation-raw-square",
+      "P:variational-unmasked-rate"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF207"
+    ]
+  },
+  "T:intrinsic-occupation-ceiling": {
+    "id": "T:intrinsic-occupation-ceiling",
+    "kind": "theorem",
+    "path": "notes/integrated_occupation_ceiling.tex",
+    "line": 228,
+    "labels": [
+      "T:intrinsic-occupation-ceiling",
+      "E:occupation-score-ceiling"
+    ],
+    "references": [
+      "E:occupation-score-ceiling",
+      "E:raw-occupation-ratio",
+      "L:occupation-rayleigh-selection",
+      "T:intrinsic-occupation-ceiling",
+      "T:intrinsic-second-moment"
+    ],
+    "edges": [
+      "L:occupation-rayleigh-selection",
+      "P:raw-occupation-energy",
+      "T:intrinsic-second-moment"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF208"
+    ]
+  },
+  "C:intrinsic-spatial-bracket": {
+    "id": "C:intrinsic-spatial-bracket",
+    "kind": "corollary",
+    "path": "notes/integrated_occupation_ceiling.tex",
+    "line": 282,
+    "labels": [
+      "C:intrinsic-spatial-bracket",
+      "E:intrinsic-spatial-bracket"
+    ],
+    "references": [
+      "C:intrinsic-spatial-bracket",
+      "E:occupation-scalar-map",
+      "E:occupation-score-ceiling",
+      "E:spatial-energy-map",
+      "E:spatial-static-energy-score",
+      "E:temporal-equilibrium-mass",
+      "T:intrinsic-second-moment"
+    ],
+    "edges": [
+      "E:occupation-scalar-map",
+      "L:temporal-equilibrium",
+      "P:spatial-energy-map",
+      "T:intrinsic-occupation-ceiling",
+      "T:intrinsic-second-moment"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF209"
+    ]
+  },
+  "L:white-cdf-square": {
+    "id": "L:white-cdf-square",
+    "kind": "lemma",
+    "path": "notes/integrated_white_evaluation.tex",
+    "line": 13,
+    "labels": [
+      "L:white-cdf-square",
+      "E:white-cdf-square"
+    ],
+    "references": [
+      "E:white-cdf-square",
+      "L:white-cdf-square"
+    ],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF210"
+    ]
+  },
+  "P:white-spatial-energy": {
+    "id": "P:white-spatial-energy",
+    "kind": "proposition",
+    "path": "notes/integrated_white_evaluation.tex",
+    "line": 61,
+    "labels": [
+      "P:white-spatial-energy"
+    ],
+    "references": [
+      "E:white-cdf-square",
+      "P:spatial-four-linear",
+      "P:white-spatial-energy"
+    ],
+    "edges": [
+      "L:white-cdf-square",
+      "P:spatial-four-linear"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF211"
+    ]
+  },
+  "T:white-moment-bounds": {
+    "id": "T:white-moment-bounds",
+    "kind": "theorem",
+    "path": "notes/integrated_white_evaluation.tex",
+    "line": 110,
+    "labels": [
+      "T:white-moment-bounds",
+      "E:white-moment-bounds"
+    ],
+    "references": [
+      "C:intrinsic-spatial-bracket",
+      "E:spatial-static-energy-score",
+      "E:white-moment-bounds",
+      "T:intrinsic-second-moment",
+      "T:white-moment-bounds"
+    ],
+    "edges": [
+      "C:intrinsic-spatial-bracket",
+      "P:spatial-energy-map",
+      "T:intrinsic-second-moment"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF212"
+    ]
+  },
+  "C:white-relative-width": {
+    "id": "C:white-relative-width",
+    "kind": "corollary",
+    "path": "notes/integrated_white_evaluation.tex",
+    "line": 140,
+    "labels": [
+      "C:white-relative-width"
+    ],
+    "references": [
+      "C:white-relative-width",
+      "L:equilibrium-gamma-beta"
+    ],
+    "edges": [
+      "L:equilibrium-gamma-beta"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": [
+      "PROOF213"
+    ]
+  },
+  "S:model": {
+    "id": "S:model",
+    "kind": "context-or-definition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 105,
+    "labels": [
+      "S:model"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:HAM": {
+    "id": "E:HAM",
+    "kind": "context-or-definition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 107,
+    "labels": [
+      "E:HAM"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [
+      "chen:author2026:time-dependency"
+    ],
+    "proof_ids": []
+  },
+  "E:cov": {
+    "id": "E:cov",
+    "kind": "context-or-definition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 107,
+    "labels": [
+      "E:cov"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [
+      "chen:author2026:time-dependency"
+    ],
+    "proof_ids": []
+  },
+  "E:kappa": {
+    "id": "E:kappa",
+    "kind": "context-or-definition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 143,
+    "labels": [
+      "E:kappa"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "S:known": {
+    "id": "S:known",
+    "kind": "context-or-definition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 246,
+    "labels": [
+      "S:known"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:expansion": {
+    "id": "E:expansion",
+    "kind": "context-or-definition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 257,
+    "labels": [
+      "E:expansion"
+    ],
+    "references": [
+      "H:homog",
+      "P:mixed"
+    ],
+    "edges": [
+      "H:homog",
+      "P:mixed"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [
+      "chen:author2026:time-dependency"
+    ],
+    "proof_ids": []
+  },
+  "E:Sn2": {
+    "id": "E:Sn2",
+    "kind": "context-or-definition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 257,
+    "labels": [
+      "E:Sn2"
+    ],
+    "references": [
+      "H:homog",
+      "P:mixed"
+    ],
+    "edges": [
+      "H:homog",
+      "P:mixed"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [
+      "chen:author2026:time-dependency"
+    ],
+    "proof_ids": []
+  },
+  "S:G0": {
+    "id": "S:G0",
+    "kind": "context-or-definition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 394,
+    "labels": [
+      "S:G0"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:mixed-diagram": {
+    "id": "E:mixed-diagram",
+    "kind": "context-or-definition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 409,
+    "labels": [
+      "E:mixed-diagram"
+    ],
+    "references": [
+      "E:mixed-diagram",
+      "L:joint-fixed-order",
+      "L:spatial-wick-measures"
+    ],
+    "edges": [
+      "L:joint-fixed-order",
+      "L:spatial-wick-measures"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [
+      "chen:author2026:time-dependency"
+    ],
+    "proof_ids": []
+  },
+  "E:damped-norm-definitions": {
+    "id": "E:damped-norm-definitions",
+    "kind": "context-or-definition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 558,
+    "labels": [
+      "E:damped-norm-definitions"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:crude-norms": {
+    "id": "E:crude-norms",
+    "kind": "context-or-definition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 971,
+    "labels": [
+      "E:crude-norms"
+    ],
+    "references": [
+      "L:damped-homogeneous-norms"
+    ],
+    "edges": [
+      "L:damped-homogeneous-norms"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "S:G1": {
+    "id": "S:G1",
+    "kind": "context-or-definition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 1407,
+    "labels": [
+      "S:G1"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:interval-area": {
+    "id": "E:interval-area",
+    "kind": "context-or-definition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 1424,
+    "labels": [
+      "E:interval-area"
+    ],
+    "references": [
+      "E:interval-area"
+    ],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "S:d1-upper": {
+    "id": "S:d1-upper",
+    "kind": "context-or-definition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 1771,
+    "labels": [
+      "S:d1-upper"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:d1-covariances": {
+    "id": "E:d1-covariances",
+    "kind": "context-or-definition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 1788,
+    "labels": [
+      "E:d1-covariances"
+    ],
+    "references": [
+      "H:homog"
+    ],
+    "edges": [
+      "H:homog"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:d1-constants": {
+    "id": "E:d1-constants",
+    "kind": "context-or-definition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 1788,
+    "labels": [
+      "E:d1-constants"
+    ],
+    "references": [
+      "H:homog"
+    ],
+    "edges": [
+      "H:homog"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "S:higher-alpha": {
+    "id": "S:higher-alpha",
+    "kind": "context-or-definition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 2339,
+    "labels": [
+      "S:higher-alpha"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "S:static-holder": {
+    "id": "S:static-holder",
+    "kind": "context-or-definition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 2728,
+    "labels": [
+      "S:static-holder"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "S:planar-holder": {
+    "id": "S:planar-holder",
+    "kind": "context-or-definition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 3038,
+    "labels": [
+      "S:planar-holder"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:planar-measure-scaling": {
+    "id": "E:planar-measure-scaling",
+    "kind": "context-or-definition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 3046,
+    "labels": [
+      "E:planar-measure-scaling"
+    ],
+    "references": [
+      "H:homog"
+    ],
+    "edges": [
+      "H:homog"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [
+      "chen.hu:25:hyperbolic",
+      "chen:author2026:time-dependency"
+    ],
+    "proof_ids": []
+  },
+  "S:three-endpoints": {
+    "id": "S:three-endpoints",
+    "kind": "context-or-definition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 3508,
+    "labels": [
+      "S:three-endpoints"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:three-parameters": {
+    "id": "E:three-parameters",
+    "kind": "context-or-definition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 3622,
+    "labels": [
+      "E:three-parameters"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:three-static-variational": {
+    "id": "E:three-static-variational",
+    "kind": "context-or-definition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 3820,
+    "labels": [
+      "E:three-static-variational"
+    ],
+    "references": [
+      "L:alpha-one-convolution",
+      "L:physical-spectral-energy"
+    ],
+    "edges": [
+      "L:alpha-one-convolution",
+      "L:physical-spectral-energy"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "S:energy-fidelity": {
+    "id": "S:energy-fidelity",
+    "kind": "context-or-definition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 4403,
+    "labels": [
+      "S:energy-fidelity"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "S:static-phase": {
+    "id": "S:static-phase",
+    "kind": "context-or-definition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 4552,
+    "labels": [
+      "S:static-phase"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:phase-constants": {
+    "id": "E:phase-constants",
+    "kind": "context-or-definition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 4566,
+    "labels": [
+      "E:phase-constants"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:phase-norm": {
+    "id": "E:phase-norm",
+    "kind": "context-or-definition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 4657,
+    "labels": [
+      "E:phase-norm"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:phase-duhamel": {
+    "id": "E:phase-duhamel",
+    "kind": "context-or-definition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 4657,
+    "labels": [
+      "E:phase-duhamel"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "S:static-all-orders": {
+    "id": "S:static-all-orders",
+    "kind": "context-or-definition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 4798,
+    "labels": [
+      "S:static-all-orders"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:cp-input": {
+    "id": "E:cp-input",
+    "kind": "context-or-definition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 4808,
+    "labels": [
+      "E:cp-input"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [
+      "crouzeix.palencia:source2017:numerical"
+    ],
+    "proof_ids": []
+  },
+  "S:interval-upper": {
+    "id": "S:interval-upper",
+    "kind": "context-or-definition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 5372,
+    "labels": [
+      "S:interval-upper"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:interval-inventory": {
+    "id": "E:interval-inventory",
+    "kind": "context-or-definition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 5634,
+    "labels": [
+      "E:interval-inventory"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:terminal-chain-measure": {
+    "id": "E:terminal-chain-measure",
+    "kind": "context-or-definition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 6209,
+    "labels": [
+      "E:terminal-chain-measure"
+    ],
+    "references": [
+      "E:expansion"
+    ],
+    "edges": [
+      "E:expansion"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "S:near-static-lower": {
+    "id": "S:near-static-lower",
+    "kind": "context-or-definition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 6635,
+    "labels": [
+      "S:near-static-lower"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:static-ratio-input": {
+    "id": "E:static-ratio-input",
+    "kind": "context-or-definition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 6662,
+    "labels": [
+      "E:static-ratio-input"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [
+      "chen.hu:25:hyperbolic"
+    ],
+    "proof_ids": []
+  },
+  "S:temporal-type-continuity": {
+    "id": "S:temporal-type-continuity",
+    "kind": "context-or-definition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 7017,
+    "labels": [
+      "S:temporal-type-continuity"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:full-moment-coefficients": {
+    "id": "E:full-moment-coefficients",
+    "kind": "context-or-definition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 7026,
+    "labels": [
+      "E:full-moment-coefficients"
+    ],
+    "references": [
+      "L:mean-coefficient-holder"
+    ],
+    "edges": [
+      "L:mean-coefficient-holder"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:moment-growth-types": {
+    "id": "E:moment-growth-types",
+    "kind": "context-or-definition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 7115,
+    "labels": [
+      "E:moment-growth-types"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "S:two-clock-screen": {
+    "id": "S:two-clock-screen",
+    "kind": "context-or-definition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 7244,
+    "labels": [
+      "S:two-clock-screen"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:averaged-clock-kernel": {
+    "id": "E:averaged-clock-kernel",
+    "kind": "context-or-definition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 7325,
+    "labels": [
+      "E:averaged-clock-kernel"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [
+      "chen:author2026:time-dependency"
+    ],
+    "proof_ids": []
+  },
+  "E:naive-clock-candidate": {
+    "id": "E:naive-clock-candidate",
+    "kind": "context-or-definition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 7362,
+    "labels": [
+      "E:naive-clock-candidate"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "S:targets": {
+    "id": "S:targets",
+    "kind": "context-or-definition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 7620,
+    "labels": [
+      "S:targets"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "S:route": {
+    "id": "S:route",
+    "kind": "context-or-definition",
+    "path": "notes/notes_stratonovich_ham_second_moment.tex",
+    "line": 7662,
+    "labels": [
+      "S:route"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "S:masked-covariance": {
+    "id": "S:masked-covariance",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_covariance_foundation.tex",
+    "line": 1,
+    "labels": [
+      "S:masked-covariance"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:masked-spectral-convention": {
+    "id": "E:masked-spectral-convention",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_covariance_foundation.tex",
+    "line": 4,
+    "labels": [
+      "E:masked-spectral-convention"
+    ],
+    "references": [
+      "H:homog"
+    ],
+    "edges": [
+      "H:homog"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:masked-auxiliary-measure": {
+    "id": "E:masked-auxiliary-measure",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_covariance_foundation.tex",
+    "line": 82,
+    "labels": [
+      "E:masked-auxiliary-measure"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "S:wave-variance": {
+    "id": "S:wave-variance",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_wave_variance.tex",
+    "line": 1,
+    "labels": [
+      "S:wave-variance"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:variance-gamma-range": {
+    "id": "E:variance-gamma-range",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_wave_variance.tex",
+    "line": 4,
+    "labels": [
+      "E:variance-gamma-range"
+    ],
+    "references": [
+      "H:homog",
+      "S:masked-covariance"
+    ],
+    "edges": [
+      "H:homog",
+      "S:masked-covariance"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:variance-scale-profile": {
+    "id": "E:variance-scale-profile",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_wave_variance.tex",
+    "line": 4,
+    "labels": [
+      "E:variance-scale-profile"
+    ],
+    "references": [
+      "H:homog",
+      "S:masked-covariance"
+    ],
+    "edges": [
+      "H:homog",
+      "S:masked-covariance"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:frequency-translated-growth": {
+    "id": "E:frequency-translated-growth",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_wave_variance.tex",
+    "line": 24,
+    "labels": [
+      "E:frequency-translated-growth"
+    ],
+    "references": [
+      "E:masked-frequency-pair"
+    ],
+    "edges": [
+      "L:masked-trig-products"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:frequency-row-kernel": {
+    "id": "E:frequency-row-kernel",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_wave_variance.tex",
+    "line": 24,
+    "labels": [
+      "E:frequency-row-kernel"
+    ],
+    "references": [
+      "E:masked-frequency-pair"
+    ],
+    "edges": [
+      "L:masked-trig-products"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:frequency-row-integral": {
+    "id": "E:frequency-row-integral",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_wave_variance.tex",
+    "line": 24,
+    "labels": [
+      "E:frequency-row-integral"
+    ],
+    "references": [
+      "E:masked-frequency-pair"
+    ],
+    "edges": [
+      "L:masked-trig-products"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:variance-free-matrix": {
+    "id": "E:variance-free-matrix",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_wave_variance.tex",
+    "line": 176,
+    "labels": [
+      "E:variance-free-matrix"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:variance-displacement": {
+    "id": "E:variance-displacement",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_wave_variance.tex",
+    "line": 176,
+    "labels": [
+      "E:variance-displacement"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:variance-dual-wave": {
+    "id": "E:variance-dual-wave",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_wave_variance.tex",
+    "line": 176,
+    "labels": [
+      "E:variance-dual-wave"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:variance-actual-form": {
+    "id": "E:variance-actual-form",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_wave_variance.tex",
+    "line": 176,
+    "labels": [
+      "E:variance-actual-form"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:variance-actual-growth-constant": {
+    "id": "E:variance-actual-growth-constant",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_wave_variance.tex",
+    "line": 211,
+    "labels": [
+      "E:variance-actual-growth-constant"
+    ],
+    "references": [
+      "E:masked-auxiliary-measure",
+      "P:masked-auxiliary-norm"
+    ],
+    "edges": [
+      "E:masked-auxiliary-measure",
+      "P:masked-auxiliary-norm"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "S:compact-gaussian": {
+    "id": "S:compact-gaussian",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_compact_gaussian.tex",
+    "line": 1,
+    "labels": [
+      "S:compact-gaussian"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:compact-balanced-cutoff": {
+    "id": "E:compact-balanced-cutoff",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_compact_gaussian.tex",
+    "line": 374,
+    "labels": [
+      "E:compact-balanced-cutoff"
+    ],
+    "references": [
+      "S:wave-variance"
+    ],
+    "edges": [
+      "S:wave-variance"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:compact-two-factors": {
+    "id": "E:compact-two-factors",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_compact_gaussian.tex",
+    "line": 374,
+    "labels": [
+      "E:compact-two-factors"
+    ],
+    "references": [
+      "S:wave-variance"
+    ],
+    "edges": [
+      "S:wave-variance"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "S:actual-operator-driver": {
+    "id": "S:actual-operator-driver",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_actual_operator_driver.tex",
+    "line": 1,
+    "labels": [
+      "S:actual-operator-driver"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:driver-parameters": {
+    "id": "E:driver-parameters",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_actual_operator_driver.tex",
+    "line": 13,
+    "labels": [
+      "E:driver-parameters"
+    ],
+    "references": [
+      "S:wave-variance"
+    ],
+    "edges": [
+      "S:wave-variance"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:driver-short-variance-budget": {
+    "id": "E:driver-short-variance-budget",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_actual_operator_driver.tex",
+    "line": 241,
+    "labels": [
+      "E:driver-short-variance-budget"
+    ],
+    "references": [
+      "P:compact-two-envelopes",
+      "P:wave-two-variances"
+    ],
+    "edges": [
+      "P:compact-two-envelopes",
+      "P:wave-two-variances"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "S:source-driver-convergence": {
+    "id": "S:source-driver-convergence",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_source_convergence.tex",
+    "line": 1,
+    "labels": [
+      "S:source-driver-convergence"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:source-cutoff-noises": {
+    "id": "E:source-cutoff-noises",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_source_convergence.tex",
+    "line": 240,
+    "labels": [
+      "E:source-cutoff-noises"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:source-covariance-functions": {
+    "id": "E:source-covariance-functions",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_source_convergence.tex",
+    "line": 240,
+    "labels": [
+      "E:source-covariance-functions"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "S:masked-moments": {
+    "id": "S:masked-moments",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_masked_moments.tex",
+    "line": 1,
+    "labels": [
+      "S:masked-moments"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "S:constant-phase-young": {
+    "id": "S:constant-phase-young",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_constant_phase_young.tex",
+    "line": 1,
+    "labels": [
+      "S:constant-phase-young"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:constant-phase-space": {
+    "id": "E:constant-phase-space",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_constant_phase_young.tex",
+    "line": 12,
+    "labels": [
+      "E:constant-phase-space"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:constant-young-estimate": {
+    "id": "E:constant-young-estimate",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_constant_phase_young.tex",
+    "line": 191,
+    "labels": [
+      "E:constant-young-estimate"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [
+      "friz.hairer:20:course"
+    ],
+    "proof_ids": []
+  },
+  "S:compact-mean-family": {
+    "id": "S:compact-mean-family",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_compact_mean_family.tex",
+    "line": 1,
+    "labels": [
+      "S:compact-mean-family"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:compact-common-trial": {
+    "id": "E:compact-common-trial",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_compact_mean_family.tex",
+    "line": 4,
+    "labels": [
+      "E:compact-common-trial"
+    ],
+    "references": [
+      "P:constant-compact-base",
+      "S:constant-phase-young"
+    ],
+    "edges": [
+      "P:constant-compact-base",
+      "S:constant-phase-young"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "S:exact-canonical-scaling": {
+    "id": "S:exact-canonical-scaling",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_exact_scaling.tex",
+    "line": 1,
+    "labels": [
+      "S:exact-canonical-scaling"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "S:actual-raw-block-lower": {
+    "id": "S:actual-raw-block-lower",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_raw_block_lower.tex",
+    "line": 1,
+    "labels": [
+      "S:actual-raw-block-lower"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:raw-block-clocks": {
+    "id": "E:raw-block-clocks",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_raw_block_lower.tex",
+    "line": 28,
+    "labels": [
+      "E:raw-block-clocks"
+    ],
+    "references": [
+      "E:constant-phase-driver",
+      "E:driver-parameters"
+    ],
+    "edges": [
+      "E:driver-parameters",
+      "P:constant-phase-driver"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:raw-block-pullback": {
+    "id": "E:raw-block-pullback",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_raw_block_lower.tex",
+    "line": 28,
+    "labels": [
+      "E:raw-block-pullback"
+    ],
+    "references": [
+      "E:constant-phase-driver",
+      "E:driver-parameters"
+    ],
+    "edges": [
+      "E:driver-parameters",
+      "P:constant-phase-driver"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:raw-block-drivers": {
+    "id": "E:raw-block-drivers",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_raw_block_lower.tex",
+    "line": 28,
+    "labels": [
+      "E:raw-block-drivers"
+    ],
+    "references": [
+      "E:constant-phase-driver",
+      "E:driver-parameters"
+    ],
+    "edges": [
+      "E:driver-parameters",
+      "P:constant-phase-driver"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "S:unmasked-variational": {
+    "id": "S:unmasked-variational",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_unmasked_variational.tex",
+    "line": 1,
+    "labels": [
+      "S:unmasked-variational"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:variational-positive-class": {
+    "id": "E:variational-positive-class",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_unmasked_variational.tex",
+    "line": 4,
+    "labels": [
+      "E:variational-positive-class"
+    ],
+    "references": [
+      "E:compact-raw-cost",
+      "E:compact-raw-mean",
+      "H:homog"
+    ],
+    "edges": [
+      "H:homog",
+      "L:compact-raw-profile"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "S:temporal-equilibrium": {
+    "id": "S:temporal-equilibrium",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_temporal_equilibrium.tex",
+    "line": 1,
+    "labels": [
+      "S:temporal-equilibrium"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "S:spatial-occupation-foundation": {
+    "id": "S:spatial-occupation-foundation",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_spatial_occupation.tex",
+    "line": 1,
+    "labels": [
+      "S:spatial-occupation-foundation"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:occupation-damped-kernel": {
+    "id": "E:occupation-damped-kernel",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_spatial_occupation.tex",
+    "line": 323,
+    "labels": [
+      "E:occupation-damped-kernel"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "S:actual-cameron-mean": {
+    "id": "S:actual-cameron-mean",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_cameron_mean.tex",
+    "line": 1,
+    "labels": [
+      "S:actual-cameron-mean"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:cameron-block-parameters": {
+    "id": "E:cameron-block-parameters",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_cameron_mean.tex",
+    "line": 341,
+    "labels": [
+      "E:cameron-block-parameters"
+    ],
+    "references": [
+      "E:raw-block-pullback"
+    ],
+    "edges": [
+      "E:raw-block-pullback"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "S:young-upper-foundation": {
+    "id": "S:young-upper-foundation",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_young_upper_foundation.tex",
+    "line": 1,
+    "labels": [
+      "S:young-upper-foundation"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "S:uniform-mean-regulation": {
+    "id": "S:uniform-mean-regulation",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_uniform_mean.tex",
+    "line": 1,
+    "labels": [
+      "S:uniform-mean-regulation"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:uniform-mean-row": {
+    "id": "E:uniform-mean-row",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_uniform_mean.tex",
+    "line": 4,
+    "labels": [
+      "E:uniform-mean-row"
+    ],
+    "references": [
+      "E:cameron-fractional-product",
+      "P:cameron-spatial-map",
+      "S:actual-cameron-mean"
+    ],
+    "edges": [
+      "L:cameron-fractional-products",
+      "P:cameron-spatial-map",
+      "S:actual-cameron-mean"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:uniform-actual-residual": {
+    "id": "E:uniform-actual-residual",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_uniform_mean.tex",
+    "line": 283,
+    "labels": [
+      "E:uniform-actual-residual"
+    ],
+    "references": [
+      "E:cameron-block-parameters",
+      "E:raw-block-pullback",
+      "L:raw-block-inputs"
+    ],
+    "edges": [
+      "E:cameron-block-parameters",
+      "E:raw-block-pullback",
+      "L:raw-block-inputs"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "S:radius-stochastic-anchor": {
+    "id": "S:radius-stochastic-anchor",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_radius_anchor.tex",
+    "line": 1,
+    "labels": [
+      "S:radius-stochastic-anchor"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:radius-anchor-parameters": {
+    "id": "E:radius-anchor-parameters",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_radius_anchor.tex",
+    "line": 4,
+    "labels": [
+      "E:radius-anchor-parameters"
+    ],
+    "references": [
+      "H:homog",
+      "S:uniform-mean-regulation"
+    ],
+    "edges": [
+      "H:homog",
+      "S:uniform-mean-regulation"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:radius-anchor-Q": {
+    "id": "E:radius-anchor-Q",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_radius_anchor.tex",
+    "line": 4,
+    "labels": [
+      "E:radius-anchor-Q"
+    ],
+    "references": [
+      "H:homog",
+      "S:uniform-mean-regulation"
+    ],
+    "edges": [
+      "H:homog",
+      "S:uniform-mean-regulation"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "S:signed-static-wave": {
+    "id": "S:signed-static-wave",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_signed_static.tex",
+    "line": 1,
+    "labels": [
+      "S:signed-static-wave"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "S:actual-symplectic-phase": {
+    "id": "S:actual-symplectic-phase",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_symplectic_phase.tex",
+    "line": 1,
+    "labels": [
+      "S:actual-symplectic-phase"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:symplectic-combined-driver": {
+    "id": "E:symplectic-combined-driver",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_symplectic_phase.tex",
+    "line": 4,
+    "labels": [
+      "E:symplectic-combined-driver"
+    ],
+    "references": [
+      "E:driver-parameters",
+      "L:source-pointfield-regularity",
+      "L:source-retaining-isometry",
+      "P:constant-phase-driver",
+      "P:constant-young-linear",
+      "P:source-gaussian-transfer",
+      "P:source-ordinary-response"
+    ],
+    "edges": [
+      "E:driver-parameters",
+      "L:source-pointfield-regularity",
+      "L:source-retaining-isometry",
+      "P:constant-phase-driver",
+      "P:constant-young-linear",
+      "P:source-gaussian-transfer",
+      "P:source-ordinary-response"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "S:actual-gaussian-tubes": {
+    "id": "S:actual-gaussian-tubes",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_gaussian_tubes.tex",
+    "line": 1,
+    "labels": [
+      "S:actual-gaussian-tubes"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:tube-covariance-scale": {
+    "id": "E:tube-covariance-scale",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_gaussian_tubes.tex",
+    "line": 4,
+    "labels": [
+      "E:tube-covariance-scale"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:tube-actual-input": {
+    "id": "E:tube-actual-input",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_gaussian_tubes.tex",
+    "line": 251,
+    "labels": [
+      "E:tube-actual-input"
+    ],
+    "references": [
+      "E:radius-anchor-Q",
+      "E:radius-anchor-parameters",
+      "S:actual-cameron-mean"
+    ],
+    "edges": [
+      "E:radius-anchor-Q",
+      "E:radius-anchor-parameters",
+      "S:actual-cameron-mean"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "S:uniform-physical-products": {
+    "id": "S:uniform-physical-products",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_uniform_products.tex",
+    "line": 1,
+    "labels": [
+      "S:uniform-physical-products"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "S:original-point-transfer": {
+    "id": "S:original-point-transfer",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_point_transfer.tex",
+    "line": 1,
+    "labels": [
+      "S:original-point-transfer"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "S:original-signed-score-upper": {
+    "id": "S:original-signed-score-upper",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_signed_moment_upper.tex",
+    "line": 1,
+    "labels": [
+      "S:original-signed-score-upper"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "S:finite-positive-gram": {
+    "id": "S:finite-positive-gram",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_positive_gram.tex",
+    "line": 1,
+    "labels": [
+      "S:finite-positive-gram"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:finite-gram-score": {
+    "id": "E:finite-gram-score",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_positive_gram.tex",
+    "line": 4,
+    "labels": [
+      "E:finite-gram-score"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:finite-gram-dual": {
+    "id": "E:finite-gram-dual",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_positive_gram.tex",
+    "line": 4,
+    "labels": [
+      "E:finite-gram-dual"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "S:intrinsic-second-moment": {
+    "id": "S:intrinsic-second-moment",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_intrinsic_constant.tex",
+    "line": 1,
+    "labels": [
+      "S:intrinsic-second-moment"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "S:intrinsic-occupation-ceiling": {
+    "id": "S:intrinsic-occupation-ceiling",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_occupation_ceiling.tex",
+    "line": 1,
+    "labels": [
+      "S:intrinsic-occupation-ceiling"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:raw-occupation-definitions": {
+    "id": "E:raw-occupation-definitions",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_occupation_ceiling.tex",
+    "line": 4,
+    "labels": [
+      "E:raw-occupation-definitions"
+    ],
+    "references": [
+      "P:occupation-physical-class"
+    ],
+    "edges": [
+      "P:occupation-physical-class"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "E:occupation-scalar-map": {
+    "id": "E:occupation-scalar-map",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_occupation_ceiling.tex",
+    "line": 218,
+    "labels": [
+      "E:occupation-scalar-map"
+    ],
+    "references": [
+      "E:spatial-static-energy-score"
+    ],
+    "edges": [
+      "P:spatial-energy-map"
+    ],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  },
+  "S:intrinsic-white-evaluation": {
+    "id": "S:intrinsic-white-evaluation",
+    "kind": "context-or-definition",
+    "path": "notes/integrated_white_evaluation.tex",
+    "line": 1,
+    "labels": [
+      "S:intrinsic-white-evaluation"
+    ],
+    "references": [],
+    "edges": [],
+    "unresolved_references": [],
+    "external_citekeys": [],
+    "proof_ids": []
+  }
+}

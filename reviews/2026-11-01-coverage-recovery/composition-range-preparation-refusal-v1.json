@@ -1,0 +1,8 @@
+{
+  "scope": "Local pre-provider composition preparation error, not tool/Lean/math/provider failure",
+  "error": "required_sources[53]: ranges must be a nonempty list of [first,last]",
+  "cause": "Generator passed Python tuples to JSON-schema consumer before serialization; JSON roundtrip would have normalized, but explicit lists are the correct input",
+  "repair": "Explicit list-of-list ranges in new v2 preparation; exact75-228/266-303 obligations unchanged",
+  "provider_calls": 0,
+  "scientific_verdict": null
+}

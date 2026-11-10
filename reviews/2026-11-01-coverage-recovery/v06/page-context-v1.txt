@@ -1,0 +1,1261 @@
+Derived text of assigned exact PDF pages only; extraction can garble mathematics. Actual PNG inspection is mandatory. No mathematical proof is supplied by this carrier.
+
+===== PHYSICAL PAGE 121 =====
+Proof. The wave multipliers are smooth at zero through the continuous sine quotient,
+with polynomially bounded frequency derivatives on finite time intervals. Bessel mul-
+tipliers preserve Schwartz space. Thus, vz , Gw and their product are continuous in all
+Schwartz seminorms on [0, T ]. For tests supported in a fixed compact K, the absolute
+spatial pairing is bounded by
+
+                            |K|Γ(K − K)∥F (t)∥∞ ∥H(u)∥∞ .
+                                         ∫︁       ∫︁
+Indeed, only y ∈ K − K contributes to Γ( dy) F (t, x)H(u, x − y) dx. Combine this
+with the temporal Schur bound and approximate the interval indicator and the contin-
+uous time dependence by smooth interior temporal tests, keeping the spatial support
+of ζR . This admits the masked product in the original completion in every allowed
+dimension.
+    We also identify its auxiliary and spectral limits. Approximate a Schwartz-valued
+function on I by time partitions with frozen spatial values, and then replace the finitely
+many indicators by compact smooth temporal functions. A diagonal sequence Fn of finite
+temporal tensors converges in L2 time in every Schwartz seminorm. Fourier integration
+by parts and the spatial weighted supremum bounds give, for sufficiently large fixed N ,
+                                                      −N
+                       ∥Fˆ︂
+                         n − F (ξ)∥L2 (0,T ) ≤ ϵn ⟨ξ⟩    ,      ϵn → 0.
+
+Choose N so that the square weight is integrable against both tempered measures µ
+and νR . Lemma 16.3 gives convergence in their spectral Ha norms. Multiplication
+by the fixed ζR preserves these L2 Schwartz-seminorm limits, so the masked differences
+converge in the µ spectral norm too. The preceding compact-support estimate also gives
+convergence in the actual raw completion. Hence, the auxiliary extension and original-
+noise limit agree on these products. Constants for this admission argument may depend
+on R; they are not the uniform variance constants below.
+   For real tensor tests f, g, the Hermitian symmetry of their spatial transforms gives
+
+                        A(−ξ) = A(ξ),         A(ξ) = ⟨fˆ︁(ξ), g(ξ)⟩
+                                                              ˆ︁    HaC .
+
+Integration against either even µ or even νR cancels the imaginary mixed term. Ex-
+panding the squared norm of fˆ︁ + iˆ︁g, then using the preceding approximation, extends
+Proposition 16.4 to the present complex tests:
+                           ∫︂                               ∫︂
+                 2       d              2                 d
+    E|WC (ζR F )| = (2π)      ∥ζR F (ξ)∥HaC µ( dξ) ≤ (2π)
+                               ˆ︃                              ∥Fˆ︁(λ)∥2HaC νR ( dλ). (17.19)
+
+This is a bound for the actual masked noise, not a declaration that its law is stationary.
+Complex linearity of WC and linearity of vz , Gw prove the stated sesquilinearity.
+    Smooth multiplication is bounded on each Sobolev space: Fourier convolution, the
+inequality ⟨ξ⟩r ⟨η⟩−r ≤ 2|r|/2 ⟨ξ − η⟩|r| and weighted Schwartz decay reduce this to the
+L1 ∗ L2 bound. The free matrix is strongly continuous and bounded on E on compact
+time intervals, directly by its weighted Fourier entries. Thus, the ordinary first-response
+integral exists on states. Since S(−t)(0, f ) = (− sin(t|D|)f /|D|, cos(t|D|)f ), moving
+
+                                             121
+
+===== PHYSICAL PAGE 122 =====
+the real self-adjoint multipliers and the two Sobolev weights onto w proves (17.15).
+The same weighted duality gives (17.16). Inserting this adjoint in Gw is the correctly
+observed form; Dχ need not be self-adjoint on E. This deterministic identity does not
+identify a positive-width source with the raw noise or assert a source limit.
+   The definitions give exactly
+
+                           vˆ︁z (t, η) = ⟨η⟩−1/2 [cρ (t)U1 (η) + bρ (t)U2 (η)],
+                          ˆ︁w (t, ξ) = ⟨ξ⟩−1/2 [−br (t)V1 (ξ) + cr (t)V2 (ξ)].
+                          G
+
+Their product gives (17.17). At zero frequencies one
+                                                  (︁ uses  )︁ the continuous sine quotient,
+                                                    −t −t2
+not division by zero; at ξ = η = 0 the matrix is 1 t . Fourier multiplication with
+the conjugate yields
+                                                2
+                                            ∫︂ ∑︂
+               Fˆ︁z,w (t, −λ) = cd 1I (t)             Kij (t; η + λ, η)Uj (η)Vi (η + λ) dη.
+                                              i,j=1
+
+
+The spatial integral is absolutely convergent uniformly on the finite time interval by
+Schwartz decay. The Schur bound also makes it a Bochner HaC integral. Reflect λ using
+evenness of νR in (17.19). Since (2π)d c2d = 1, this proves (17.18) with no remaining
+Fourier factor. This proves Proposition 17.3.
+
+17.3     Bessel’s inequality and the two variances
+Lemma 17.4 (Hilbert-valued finite Bessel inequality). Let H be a separable complex
+Hilbert space, let {uk } be a finite orthonormal family in L2 (Rd ; C2 ), and let g = (g1 , g2 ) ∈
+L2 (Rd ; H 2 ). Then
+                        ⃦∫︂                      ⃦2
+                     ∑︂ ⃦    2
+                            ∑︂                   ⃦       2
+                                                     ∫︂ ∑︂
+                               uk,j (η)gj (η) dη ⃦ ≤       ∥gj (η)∥2H dη.                     (17.20)
+                        ⃦                        ⃦
+                        ⃦
+                        ⃦                        ⃦
+                      k        j=1                          H      j=1
+
+
+The same bound holds with uk,j in place of uk,j .
+
+Proof. Expand g in a countable orthonormal basis of H. On each scalar coefficient apply
+scalar Bessel to the orthonormal family {uk }, or to {uk } for the conjugated version.
+Scalar finite Bessel follows by subtracting an orthogonal finite projection and expanding
+its nonnegative squared norm. Sum over the H basis and use Parseval and nonnegative
+Tonelli. The Bochner integrals exist by L2 Cauchy–Schwarz. A finite-dimensional H
+uses its finite basis, and the zero space is immediate. No independence is involved. This
+proves Lemma 17.4.
+
+Proposition 17.5 (Both actual variance directions). There is a finite CT , depending
+on the fixed model, mask, a, α, γ, T , but not on R, I or the orthonormal family, such that
+for every finite complex E-orthonormal Schwartz family {ek } and every Schwartz phase
+
+
+                                                      122
+
+===== PHYSICAL PAGE 123 =====
+z,
+                         ∑︂
+                               E|ℓR (I; ek , z)|2 ≤ CT h2−a Bα (h)∥z∥2Es−γ ,                (17.21)
+                          k
+                         ∑︂
+                               E|ℓR (I; z, ek )|2 ≤ CT h2−a Bα (h)∥z∥2Es−γ .                (17.22)
+                          k
+
+
+For every β in (17.8), either right side may be replaced by CT,β h2β ∥z∥2Es−γ .
+
+Proof. Each entry in (17.17) is a product of two continuous wave factors times
+(⟨ξ⟩⟨η⟩)−1/2 , with a possible minus sign. Lemma 16.8 therefore gives
+
+          ∥1I Kij (·; ξ, η)∥2HaC ≤ AT h2−a Φh (ξ, η),           AT = C1 (a)(1 + T )4 .      (17.23)
+
+The positive even Radon measure νR satisfies the actual growth bound (17.14). Thus,
+all hypotheses of Proposition 17.1 hold, and
+                      ∫︂
+                         Φh (ξ, ξ − λ)νR ( dλ) ≤ KCν Bα (h)⟨ξ⟩−2γ .          (17.24)
+
+No nonnegative physical inverse covariance of νR is needed.
+    The kernels used in Lemma√17.4 belong to its stated L2 space for each fixed λ.
+Indeed, |cr (t)| ≤ 1 and |br (t)| ≤ 2 max(1, T ) on [0, T ], by the high- and low-frequency
+representations. The kernels are continuous into L2 (0, T ) in their frequency variables,
+hence into HaC by Schur. Separability gives strong measurability. Multiplication by
+shifted Schwartz components of U or V then gives the required L2 integrability. Later λ
+integrals are of nonnegative functions; their finiteness follows from the estimates below.
+    First fix V = Jz and let Uk = Jek be the input family. In (17.18) set
+                                           2
+                                          ∑︂
+                              gjλ (η) =         1I Kij (·; η + λ, η)Vi (η + λ).
+                                          i=1
+
+Lemma 17.4 and Cauchy–Schwarz over the two output components give
+              ∑︂                   ∑︂
+                 ∥gjλ (η)∥2HaC ≤ 2    |Vi (η + λ)|2 ∥1I Kij (·; η + λ, η)∥2HaC
+                   j                        i,j
+                                                                    ∑︂
+                                     ≤ 4AT h2−a Φh (η + λ, η)             |Vi (η + λ)|2 .
+                                                                      i
+
+Change variables ξ = η +λ in the Lebesgue integral for each λ, apply Tonelli and (17.24),
+and use ∥z∥Es−γ = ∥⟨ξ⟩−γ Jz∥2 . This proves (17.21) with CT = 4AT KCν .
+   Next fix U = Jz and let Vk = Jek be the output family. After η = ξ − λ in (17.18),
+put
+                                  2
+                                 ∑︂
+                         λ
+                        fi (ξ) =    1I Kij (·; ξ, ξ − λ)Uj (ξ − λ).
+                                          j=1
+
+
+                                                      123
+
+===== PHYSICAL PAGE 124 =====
+Apply the conjugated version of Lemma 17.4. Cauchy–Schwarz over the two input
+components bounds its right side by
+                              ∫︂               ∑︂
+                          2−a
+                    4AT h        Φh (ξ, ξ − λ)    |Uj (ξ − λ)|2 dξ.
+                                                  j
+                                                                    ∫︁
+After the change of variables and Tonelli, the row at fixed η is Φh (η + λ, η)νR ( dλ).
+Reflect λ∫︁using the actual evenness of νR and then use symmetry of Φh . This row
+becomes Φh (η, η − λ)νR ( dλ), which is bounded by (17.24) with ξ = η. This proves
+(17.22) with the same CT .
+   Use Corollary 17.2 for h2−a times the row integral at the two applications above to
+obtain the asserted h2β bounds, including strict absorption of the critical logarithm. The
+constants are uniform in R, I and family size. The R-dependent admission estimate was
+not used as this uniform variance bound. This proves Proposition 17.5.
+
+17.4     Same-noise mean-square columns
+Write Erreal for the real phase space in dimension d.
+
+Proposition 17.6 (Column and adjoint-column maps). On the same probability space
+there are deterministic bounded real linear maps
+                                          real
+                           mR,I , nR,I : Es−γ  −→ L2 (Ω; Esreal ),
+
+with squared bounds CT h2−a Bα (h), such that, for every fixed real Schwartz pair z, w,
+
+                  ⟨mR,I z, w⟩E = ℓR (I; z, w) = ⟨z, nR,I w⟩E      in L2 (Ω).      (17.25)
+
+Fixed-vector values and finite families of values are centered Gaussian.
+
+Proof. Choose a countable real Schwartz orthonormal basis {ek } of Es . Such a ba-
+sis follows by Gram–Schmidt from a countable dense Schwartz family, discarding zero
+residuals. Schwartz density follows by smooth Fourier cutoff approximation in the
+weighted L2 norms: approximate by compact smooth Fourier coordinates, replace g(ξ)
+by (g(ξ) + g(−ξ))/2, and apply the inverse Bessel/Fourier maps. The resulting phases
+are real Schwartz, and Gram–Schmidt preserves that class. The same density holds in
+Es−γ .
+    For fixed real Schwartz z, define
+                         ∑︂                              ∑︂
+                mN (z) =     ℓR (I; z, ek )ek , nN (z) =    ℓR (I; ek , z)ek .
+                        k≤N                                 k≤N
+
+Both are finite Gaussian sums on the original W . By Proposition 17.5, their coefficient
+expected squares have finite sum. Orthogonality gives the squared tail norms as the
+corresponding sums of expected squares. Thus, both sequences converge in L2 (Ω; Es ) to
+
+
+                                            124
+
+===== PHYSICAL PAGE 125 =====
+m(z), n(z) with the asserted bounds, without independence of the coefficients. Finite-
+sum measurability and separable Es give strong measurability of the limits. The bounded
+real linear maps extend uniquely from Schwartz phases to Es−γ .
+    If wN is the Es projection of a Schwartz w onto the first N basis vectors, then
+⟨mN (z), w⟩E = ℓR (I; z, wN ). The singleton form of (17.22), after normalizing w − wN in
+Es , gives
+               E|ℓR (I; z, w − wN )|2 ≤ CT h2−a Bα (h)∥z∥2Es−γ ∥w − wN ∥2Es .
+The zero residual is immediate. The right side tends to zero, giving the first identity
+in (17.25). For the second, project z instead and use the singleton input bound (17.21).
+A fixed countable Schwartz orthonormal basis and Parseval show basis independence of
+the constructed limits.
+    Continuous linear functionals of the limits, and finite linear combinations of such
+functionals, are L2 limits of centered Gaussian variables with convergent variances. Their
+characteristic functions therefore converge to those of centered Gaussians. The same
+reasoning after the bounded input extension proves joint Gaussianity for arbitrary fixed
+inputs and finite families of the two maps. This proves Proposition 17.6.
+   These are maps into L2 (Ω; Es ) for fixed intervals. No common uncountable almost-
+sure version, random bounded operator, Hilbert–Schmidt realization, time path, source
+convergence or new solution-moment bound is inferred by this section alone. Both
+variance directions are retained in Section 19.
+
+
+18     Finite Gaussian moments                              and      whole-space
+       Sobolev compactness
+We prove the finite Gaussian and compact-cutoff estimates needed to construct the
+wave driver. All traces and Schatten norms in this section are unnormalized. The spatial
+states remain on Rd , d ∈ {1, 2, 3}. Here p is an auxiliary Schatten and Gaussian-moment
+index. The auxiliary periodic space below is used only to factor a compactly supported
+multiplication operator. No infinite Gaussian series or time path is constructed in this
+section.
+
+18.1     Finite Gaussian matrices with both variance powers
+Lemma 18.1 (Scalar power estimates). For 0 < θ < 1 and u, v ≥ 0,
+                                uθ v 1−θ ≤ θu + (1 − θ)v.                          (18.1)
+Consequently, if L > 0 and 0 ≤ q ≤ L are integers, then for real x, y,
+                                            q L L−q L
+                            |x|q |y|L−q ≤     |x| +   |y| .                        (18.2)
+                                            L       L
+For nonnegative finite sequences, the usual Hölder inequality holds with exponents m and
+m/(m − 1), m > 1. If Z ≥ 0 has finite expectation F and 0 < r < 1, then EZ r ≤ F r .
+
+                                             125
+
+===== PHYSICAL PAGE 126 =====
+Proof. If v > 0, divide (18.1) by v and put t = u/v. The function θt+1−θ −tθ decreases
+to zero at one and then increases, by its derivative θ(1 − tθ−1 ). Continuity covers t = 0;
+if v = 0 the inequality is immediate. For 0 < q < L, apply this with u = |x|L , v = |y|L
+and θ = q/L. The endpoint cases q = 0, L are identities, with the ordinary integer
+convention a0 = 1.
+    To prove finite Hölder, divide the two sequences by their respective ℓm and ℓm/(m−1)
+norms. If either norm vanishes, the result is immediate. Apply (18.1) with θ = 1/m
+to the corresponding normalized powers and sum; the sum of products is at most one.
+Undo the normalization. Finally, F = 0 gives Z = 0 almost surely. If F > 0, apply
+(18.1) to u = Z/F , v = 1 and θ = r, and integrate. The right side has expectation one.
+This proves Lemma 18.1.
+Lemma 18.2 (Two Hermitian trace bounds). Let B, Y be finite Hermitian matrices,
+m ≥ 2 an integer, and L = 2m − 2. For integers 0 ≤ q ≤ L,
+
+                              Re Tr(BY q BY L−q ) ≤ Tr(B 2 |Y |L ).                        (18.3)
+
+If D ≥ 0 is Hermitian, then
+
+                       Tr(D|Y |2m−2 ) ≤ (Tr Dm )1/m (Tr |Y |2m )(m−1)/m .                  (18.4)
+
+Proof. Diagonalize Y , with real eigenvalues λi , and write bij for the entries of B in that
+basis. Hermitian symmetry gives bji = bij . The trace word is the real sum
+                                     ∑︂
+                                        |bij |2 λqj λL−q
+                                                     i   .
+                                        i,j
+
+Bound each product by its absolute value and use (18.2). ∑︁      After interchanging i, j, the
+two resulting sums agree because |bij | = |bji |. Each equals i,j |bij |2 |λi |L = Tr(B 2 |Y |L ).
+The two weights sum to one, proving (18.3). No commutation of B and Y is used.
+   In the same basis put di = D∑︁  ii ≥ 0. If θj are the nonnegative eigenvalues of D, a
+unitary change of basis gives di = j |Uij |2 θj . Both row and column sums of |Uij |2 equal
+one. Finite convexity therefore yields
+                             ∑︂        ∑︂
+                                 dm
+                                  i ≤      |Uij |2 θjm = Tr Dm .
+                                 i            i,j
+
+For completeness, the convexity step follows from tm ≥ sm + msm−1 (t − s) for s, t ≥ 0,
+obtained by differentiating the difference. Average this inequality∑︁with s equal to the
+                                                                                2m−2
+weighted mean. Now apply finite Hölder from Lemma 18.1 to            i di |λi |     . Since
+(2m − 2)m/(m − 1) = 2m, the last display proves (18.4), including zero sums. This
+proves Lemma 18.2.
+Proposition 18.3 (Finite Gaussian matrix moment). Let A1 , . . . , AN be complex o-by-n
+matrices, with o, n, N ≥ 1, and let gk be independent real standard Gaussians. Put
+                      ∑︂                   ∑︂                  ∑︂
+               X=        gk A k ,   Vout =    Ak A∗k ,   Vin =     A∗k Ak .
+                        k                           k                  k
+
+
+                                                    126
+
+===== PHYSICAL PAGE 127 =====
+For even p = 2m ≥ 2, with ∥A∥pSp = Tr((A∗ A)m ),
+
+                                               m
+                                                           )︃1/p
+                                                 + Tr Vinm
+                                                 (︃
+                                         Tr Vout
+                   (E∥X∥pSp )1/p ≤
+                                     √︁
+                                    p−1                                              (18.5)
+                                                 2
+                                            (︂                   )︂
+                                                 1/2        1/2
+                                 √︁
+                                ≤ p − 1 max ∥Vout ∥Sp , ∥Vin ∥Sp .                   (18.6)
+
+The constants are independent of o, n, N . The first inequality is an equality at p = 2.
+Empty or zero families give the zero identity.
+Proof. First suppose Bk are Hermitian and put Y = k gk Bk and D = k Bk2 . All poly-
+                                                     ∑︁                  ∑︁
+nomial moments are finite because Gaussian decay dominates every fixed power. Com-
+ponentwise integration by parts against the product Gaussian density gives E[gk P (g)] =
+E[∂k P (g)], with zero boundary terms. It applies to complex polynomials through their
+real and imaginary parts; absolute polynomial integrability justifies ∑︁
+                                                                      Fubini.
+                               2m                               2m
+    For m ≥ 2, put F = E Tr Y     and L = 2m − 2. Write Tr Y       = k gk Tr(Bk Y 2m−1 )
+and differentiate the 2m − 1 factors in their order. This gives exactly
+                                      L
+                                  ∑︂ ∑︂
+                            F =                E Tr(Bk Y q Bk Y L−q ).
+                                     k   q=0
+
+The eigenbasis calculation above shows these traces are real. The differentiated polyno-
+mial is real by conjugation and trace cyclicity. No derivative of a spectral absolute value
+or measurable choice of an eigenbasis is needed. The two trace bounds give
+
+                      F ≤ (2m − 1)E Tr(D|Y |2m−2 )
+                         ≤ (2m − 1)(Tr Dm )1/m E(Tr |Y |2m )(m−1)/m
+                         ≤ (2m − 1)(Tr Dm )1/m F (m−1)/m .
+
+Here Tr |Y |2m = Tr Y 2m , and the last inequality is the expectation bound in Lemma 18.1.
+If F = 0 the conclusion is immediate. Otherwise divide by its positive fractional power
+and raise to m to obtain
+
+                              E Tr Y 2m ≤ (2m − 1)m Tr Dm .                     (18.7)
+
+For m = 1, independence gives directly E Tr Y 2 = k Tr Bk2 = Tr D, proving the same
+                                                      ∑︁
+formula as equality.
+   For rectangular Ak , use the Hermitian dilation
+                  (︃       )︃            (︃      )︃
+                     0 Ak                   0 X
+            Bk =              ,     Y =             ,    D = diag(Vout , Vin ).
+                    A∗k 0                   X∗ 0
+
+Finite entrywise summation proves Tr(U V ) = Tr(V U ) for compatible rectangular ma-
+trices. Since (XX ∗ )m = X(X ∗ X)m−1 X ∗ , it follows that
+
+                Tr Y 2m = 2 Tr((X ∗ X)m ),             Tr Dm = Tr Vout
+                                                                    m
+                                                                       + Tr Vinm .
+
+                                                 127
+
+===== PHYSICAL PAGE 128 =====
+Substitute in (18.7), divide by two and take the pth root. This proves (18.5). For positive
+V , spectral diagonalization gives ∥V 1/2 ∥pSp = Tr V m , and the average of two nonnegative
+numbers is bounded by their maximum. At p = 2, E Tr X ∗ X = Tr Vin = Tr Vout , proving
+the claimed equality. This proves Proposition 18.3.
+Remark 18.4 (Both variance directions are necessary). Let n = 16∑︁and Ak = eTk be the
+coordinate row matrices. The only nonzero singular value of X is ( k gk2 )1/2 . Gaussian
+integration by parts gives Eg 2 = 1, Eg 4 = 3, and hence
+                       E∥X∥4S4 = 3n + n(n − 1) = n(n + 2) = 288.
+Here Vout = n and Vin = In . Keeping only the input variance in (18.6) would give fourth
+power 9 Tr In2 = 144, which is false. Transposing the family refutes the corresponding
+output-only bound. The actual average and maximum bounds have fourth powers 1224
+and 2304, respectively. This finite example asserts nothing about a specialized wave
+estimate.
+
+18.2     Whole-space cutoffs through an auxiliary periodic space
+Use the unitary Fourier transform with cd = (2π)−d/2 and Λ = (1 − ∆)1/2 . For real r, the
+norm on H r (Rd ) is ∥⟨ξ⟩r u∥
+                           ˆ︁ 2 . The deterministic cutoff arguments allow any smoothing
+order γ > 0. Fix real σ and a real compact smooth χ. Singular values sj , j ≥ 1, are
+counted with
+         ∑︁ multiplicity,     with zeros appended when necessary. For compact K, put
+    p               p
+∥K∥Sp = j sj (K) .
+Lemma 18.5 (Cutoff factorization). Choose a cube QL = (−L/2, L/2)d containing
+supp χ in its interior, and a real ψ ∈ Cc∞ (QL ) equal to one near supp χ. On the auxiliary
+torus TL use Lebesgue measure and the orthonormal basis
+                     ek (x) = L−d/2 eiκk ·x ,    κk = 2πk/L,     k ∈ Zd ,
+with ∥v∥2H r (TL ) = k ⟨κk ⟩2r |vk |2 . Periodization of ψu and multiplication of a periodic
+                    ∑︁
+function by χ extend to bounded maps
+                  Pψ : H r (Rd ) → H r (TL ),         Eχ : H r (TL ) → H r (Rd )            (18.8)
+for every real r. If Iγ denotes the identity inclusion from H σ+γ (TL ) to H σ (TL ), then
+                           Eχ Iγ Pψ u = χu,           u ∈ H σ+γ (Rd ).                      (18.9)
+                                                                          √
+Proof. For x, y ∈ Rd and real r, the elementary inequality ⟨x⟩ ≤              2⟨y⟩⟨x − y⟩ gives
+                               (︃     )︃r
+                                  ⟨x⟩
+                                          ≤ 2|r|/2 ⟨x − y⟩|r| .                            (18.10)
+                                  ⟨y⟩
+For negative r, interchange x, y before raising to |r|. Integration by parts gives rapid
+decay of the Fourier transform of every compact smooth cutoff. For any lattice spacing
+a > 0 and N > d,                   ∑︂
+                               sup     ⟨y − ak⟩−N < ∞.                           (18.11)
+                                  y
+                                      k∈Zd
+
+
+                                                128
+
+===== PHYSICAL PAGE 129 =====
+                                                               √                 √
+Indeed, translate y into a centered lattice cell, where |y| ≤ a d/2. For |k| ≥ d we
+have |y − ak| ≥ a|k|/2. The remaining terms are finite; the tail converges by dyadic
+                                             jd
+lattice counting, since
+                    √ there are at most Cd 2 lattice points in the jth shell in k. More
+precisely, for |k| ≥ d, the preceding inequality gives
+
+                           ⟨y − ak⟩−N ≤ max(1, 2/a)N ⟨k⟩−N .
+
+The comparison-series terms are bounded by 2−jN on each dyadic k-shell. Thus, its
+convergent geometric sum carries constants depending on a, d, N , as does (18.11).
+    We use the mixed Schur bound for a kernel whose absolute row and column integrals
+are bounded by M1 , M2 . Weighted Cauchy–Schwarz at each output point, followed
+by Tonelli, bounds its squared operator norm by M1 M2 . The same proof works with
+counting measure on one side and Lebesgue measure on the other, first on dense finite
+or compact inputs.
+    For Schwartz u, the kth coefficient of its cutoff periodization is
+                           ∫︂                                ∫︂
+                      −d/2               −iκk ·x        −d/2    ˆ︁ k − ξ)ˆ︁
+           (Pψ u)k = L        ψ(x)u(x)e          dx = L         ψ(κ      u(ξ) dξ.
+
+The cd from Fourier inversion cancels the c−1
+                                            d in the ordinary Fourier integral of ψ. After
+weighting, its exact kernel is
+                                     (︃       )︃r
+                                −d/2    ⟨κk ⟩     ˆ︁ k − ξ).
+                               L                  ψ(κ
+                                         ⟨ξ⟩
+For a finite torus polynomial v, the normalized Fourier kernel of Eχ v is
+                                      (︃       )︃r
+                                 −d/2     ⟨ξ⟩
+                               L                   ˆ︁ − κk ).
+                                                   χ(ξ
+                                         ⟨κk ⟩
+
+There is no additional cd in this kernel. By (18.10), each is bounded in absolute value by a
+rapidly decreasing function of its frequency difference, times a fixed constant. One Schur
+quantity is its L1 integral and the other a uniformly translated lattice sum, bounded
+by (18.11). This proves (18.8), including negative r.
+    Smooth compact approximation in weighted Fourier L2 proves Schwartz density on
+Rd ; weighted sequence truncation proves polynomial density on the torus. Hence, these
+maps extend uniquely. Their distributional meanings follow by testing against compact
+smooth functions and density: each periodic coefficient pairs the distribution with a
+compact smooth test. No point sampling of a rough Fourier function is used. The same
+full-Lebesgue Schur argument proves smooth compact multiplication bounded on every
+whole-space H r .
+    For Schwartz u, the periodic Fourier series of ψu converges smoothly on the cube.
+Since χψ = χ and χ is supported strictly inside the cube, multiplying this series by
+χ recovers χu with no alias term. Both sides are bounded from H σ+γ (Rd ) to H σ (Rd ),
+using the just-proved maps, the inclusion and smooth multiplication. Density proves
+(18.9) on that full domain. This proves Lemma 18.5.
+
+                                            129
+
+===== PHYSICAL PAGE 130 =====
+Proposition 18.6 (Whole-space cutoff singular values). For real σ and γ > 0, the
+initially Schwartz-defined operator Kχ,σ,γ = Λσ χΛ−σ−γ extends uniquely to a compact
+operator on L2 (Rd ), and
+                                    sj (Kχ,σ,γ ) ≤ Cχ,σ,γ,d j −γ/d ,        j ≥ 1.              (18.12)
+Consequently, Kχ,σ,γ ∈ Sp whenever p ≥ 1 and pγ > d.
+Proof. The zero cutoff is immediate. Fix one cube and cutoff pair L, ψ as in Lemma 18.5.
+Its recovery identity gives
+                              Kχ,σ,γ = Λσ Eχ Iγ Pψ Λ−σ−γ .
+In the weighted torus coordinates, Iγ is diagonal with entries ⟨κk ⟩−γ . Let Qn retain
+|k|∞ ≤ n. Its rank is (2n + 1)d , and
+                             ∥(1 − Qn )Iγ ∥ ≤ [1 + (2π/L)2 (n + 1)2 ]−γ/2 −→ 0.
+Replacing the inclusion by Qn Iγ gives finite-rank Kn converging in norm to Kχ,σ,γ . This
+proves compactness: finite-dimensional images have finite nets of each positive radius,
+and norm approximation transfers those nets to the limiting image of the unit ball.
+   Put
+            M = ∥Eχ : H σ (TL ) → H σ (Rd )∥∥Pψ : H σ+γ (Rd ) → H σ+γ (TL )∥.
+The outer Bessel maps are unitary. For j ≥ 3d , choose n = ⌊j 1/d /4⌋. Then
+                (2n + 1)d ≤ (j 1/d /2 + 1)d < j,               ∥K − Kn ∥ ≤ M (2L/π)γ j −γ/d .
+The second estimate follows from n + 1 > j 1/d /4. For a compact operator, every rank
+less than j approximation F satisfies sj (K) ≤ ∥K − F ∥: the span of the first j right
+singular vectors contains a unit vector in ker F , on which ∥K · ∥ ≥ sj (K). If sj (K) = 0
+the inequality is immediate. For j < 3d use sj (K) ≤ ∥K∥ ≤ M . Thus, one may take
+                                       Cχ,σ,γ,d = M max(3γ , (2L/π)γ ).
+                     −pγ/d
+           ∑︁
+Finally,        jj           converges for pγ > d. This proves Proposition 18.6.
+    No uniform support-radius constant or endpoint necessity is asserted in Proposi-
+tion 18.6. The periodic inclusion was only a factor of the recovered whole-space opera-
+tor.
+
+18.3       Balanced adjoints and localized variance envelopes
+For E = H 1/2 (Rd ) × H −1/2 (Rd ) use the physical unitary coordinates
+                              J0 (u, v) = (Λ1/2 u, Λ−1/2 v),           H = L2 (Rd ; C2 ).
+The frequency map J in Section 17 is (F ⊕ F)J0 . Let Dχ multiply both phase entries
+and define
+                                 Pχ = J0 Dχ J0−1 ,    Dγ = diag(Λ−γ , Λ−γ ),                    (18.13)
+                                Kout = Pχ Dγ ,     Kin = Pχ∗ Dγ .                               (18.14)
+
+                                                        130
+
+===== PHYSICAL PAGE 131 =====
+Proposition 18.7 (Both compact envelopes). The operator Pχ is bounded. For the
+unitary swap U (v, w) = (w, v),
+
+                              Pχ∗ = U Pχ U,         Kin = U Kout U.
+
+Both factors are compact and have equal Sp norms for p ≥ 1, pγ > d. For p ≥ 2, pγ > d,
+the positive compact operators
+
+                 Bout = Pχ Dγ2 Pχ∗ = Kout Kout
+                                           ∗
+                                               ,         Bin = Pχ∗ Dγ2 Pχ = Kin Kin
+                                                                                 ∗
+
+
+satisfy
+                                     p/2           p/2
+                                Tr Bout = Tr Bin = ∥Kout ∥pSp .                       (18.15)
+
+Proof. Put Aσ = Λσ χΛ−σ . The full-Lebesgue Schur argument in Lemma 18.5 shows
+boundedness for every real σ. On Schwartz functions, self-adjointness of real multipli-
+cation and of the Bessel powers gives A∗σ = A−σ . Density and boundedness extend this
+to the actual Hilbert adjoints. No evenness of χ is needed. Thus,
+
+               Pχ = diag(A1/2 , A−1/2 ),       Pχ∗ = diag(A−1/2 , A1/2 ) = U Pχ U.
+
+The swap commutes with Dγ , giving the claimed factor identity. The blocks of Kout
+are Kχ,1/2,γ and Kχ,−1/2,γ . Proposition 18.6 gives compactness and Sp membership. The
+singular values of their direct sum form the multiset union, so
+
+                          ∥Kout ∥pSp = ∥Kχ,1/2,γ ∥pSp + ∥Kχ,−1/2,γ ∥pSp .
+
+Unitary conjugation preserves them. Finally, the positive eigenvalues of KK ∗ and K√
+                                                                                   ∗
+                                                                                     K
+agree with
+         √ multiplicity: on an eigenspace with eigenvalue λ > 0, the maps K/ λ
+and K ∗ / λ are inverse isometries. Zero eigenvalues contribute nothing to the trace.
+Summing these scalar powers proves (18.15). This proves Proposition 18.7.
+   We use the usual positive square root of a bounded positive operator and the spectral
+decomposition of compact positive operators. The needed order argument is recorded
+explicitly.
+Lemma 18.8 (Compact positive order and trace). If A, B are bounded self-adjoint
+operators with 0 ≤ A ≤ B and B compact positive, then A is compact and its ordered
+eigenvalues satisfy λj (A) ≤ λj (B), including zero padding. Consequently, for t ≥ 1 with
+finite Tr B t ,
+                                       Tr At ≤ Tr B t .                           (18.16)
+Proof. Let Qn be finite spectral projections of B whose tails tend to zero in norm. Then
+
+          ∥(1 − Qn )A1/2 ∥2 = ∥(1 − Qn )A(1 − Qn )∥ ≤ ∥(1 − Qn )B(1 − Qn )∥ −→ 0.
+
+Thus, A1/2 is a norm limit of finite-rank operators and is compact, as is A. For compact
+positive operators, the max-min formula for λj follows in an eigenbasis: the span of the
+first j eigenvectors gives the lower bound for the supremum over j-dimensional subspaces
+
+                                               131
+
+===== PHYSICAL PAGE 132 =====
+of their minimum Rayleigh quotient, while every such subspace meets the orthogonal
+complement of the first j−1 eigenvectors, giving the upper bound. Compare the Rayleigh
+quotients of A and B to obtain the eigenvalue inequality. Sum the ordered scalar powers
+to prove (18.16). No inequality At ≤ B t is asserted. This proves Lemma 18.8.
+Proposition 18.9 (Localized finite variance bounds). Suppose finitely many bounded
+operators Zℓ on H satisfy
+                                 ∑︂                        ∑︂
+ Pχ Zℓ = Zℓ = Zℓ Pχ ,    Vout :=    Zℓ Zℓ∗ ≤ CDγ2 , Vin :=    Zℓ∗ Zℓ ≤ CDγ2 , (18.17)
+                                        ℓ                              ℓ
+
+with C ≥ 0. If p ≥ 2 and pγ > d, every Zℓ is compact in Sp , the two variances are
+compact in Sp/2 , and
+
+                                            Vout ≤ CBout ,    Vin ≤ CBin ,         (18.18)
+                           p/2             p/2
+                      Tr Vout ,       Tr Vin ≤ C p/2 ∥Kout ∥pSp .                  (18.19)
+
+Proof. Left localization gives Vout = Pχ Vout Pχ∗ . Apply positive congruence to the output
+bound in (18.17) to get Vout ≤ CPχ Dγ2 Pχ∗ = CBout . Right localization similarly gives
+Vin = Pχ∗ Vin Pχ ≤ CBin . Proposition 18.7 and Lemma 18.8 prove compactness and the
+two trace bounds with t = p/2. If C = 0, both variances and every Zℓ vanish, so all
+assertions are immediate.
+    For each ℓ, Zℓ Zℓ∗ ≤ Vout is compact by the same lemma. Its finite spectral projections
+Qn give ∥(1−Qn )Zℓ ∥2 = ∥(1−Qn )Zℓ Zℓ∗ (1−Qn )∥ → 0. Hence, Zℓ is compact. Its singular
+values squared are the nonzero eigenvalues of Zℓ Zℓ∗ . Comparing with Vout and summing
+                                     p/2
+proves Zℓ ∈ Sp with ∥Zℓ ∥pSp ≤ Tr Vout . This proves Proposition 18.9.
+   The two localization identities are hypotheses here; an actual noise coefficient family
+has not yet been shown to satisfy them. In particular, Pχ is not assumed self-adjoint or
+a projection.
+Corollary 18.10 (Finite Gaussian operators). Under (18.17), let gℓ be∑︁independent real
+standard Gaussians. For even p ≥ 2 with pγ > d, the finite sum X = ℓ gℓ Zℓ satisfies
+                                              √
+                        (E∥X∥pSp )1/p ≤ p − 1 C∥Kout ∥Sp .
+                                       √︁
+                                                                               (18.20)
+
+Its extended norm is measurable, with finite expectation as displayed.
+Proof. Choose finite-rank orthogonal projections Πn from a∑︁   countable orthonormal basis
+of H, with Πn → I strongly. Put Zℓ,n = Πn Zℓ Πn and Xn = ℓ gℓ Zℓ,n , viewed as matrices
+on ran Πn . Their output variance satisfies
+                             ∑︂
+                                Πn Zℓ Πn Zℓ∗ Πn ≤ Πn Vout Πn ,
+                                  ℓ
+
+since the difference is ℓ Πn Zℓ (1 − Πn )Zℓ∗ Πn ≥ 0. The input inequality is identical with
+                      ∑︁
+adjoints interchanged. Compact max-min also gives λj (Πn V Πn ) ≤ λj (V ) for positive
+
+                                                  132
+
+===== PHYSICAL PAGE 133 =====
+compact V , since Rayleigh subspaces inside ran Πn form a subset of all subspaces. Thus,
+both variance trace powers of these matrices are bounded by C p/2 ∥Kout ∥pSp .
+   Proposition 18.3 applies to these finite complex matrices, the same real independent
+Gaussians and the even p. Taking the average of the two already bounded trace powers
+gives
+                          E∥Xn ∥pSp ≤ (p − 1)p/2 C p/2 ∥Kout ∥pSp .              (18.21)
+No factor two is added by this average.
+   For each Gaussian coordinate vector, X is a finite sum of compact operators. Strong
+convergence of Πn implies Πn XΠn → X in operator norm: approximate X by a finite-
+rank F , use uniform strong convergence on the finite-dimensional ranges of F and F ∗ ,
+and control the remainder using ∥Πn ∥ ≤ 1. Singular values are norm-Lipschitz. Indeed,
+their formula
+                            sj (A) = inf      sup      ∥Av∥
+                                        dim L<j v∈L⊥ , ∥v∥=1
+
+follows from compact singular vectors and gives sj (A) ≤ sj (B) + ∥A − B∥, and the
+reverse bound by interchanging A, B. Hence, sj (Xn ) → sj (X) for each j. Fatou for the
+nonnegative singular-value sum gives ∥X∥pSp ≤ lim inf n ∥Xn ∥pSp , allowing extended infin-
+ity. These variables are measurable: the finite Gaussian coordinate map into operators is
+norm-continuous, each singular value is continuous, and the norm power is their nonneg-
+ative measurable sum. Fatou in probability and (18.21) prove the bound and almost-sure
+finiteness. No Sp -Bochner convergence is assumed. This proves Corollary 18.10.
+
+18.4     A nonzero witness and the need for a compact cutoff
+Proposition 18.11 (Whole-space cutoff tests). If χ equals one on a nonempty open
+set, there is a nonzero rank-one operator satisfying (18.17) with a finite common C. On
+the other hand, Λ−γ on L2 (Rd ) is not compact for any γ > 0.
+Proof. Choose nonzero real v, f ∈ Cc∞ supported inside the plateau, and put v˜︁ =
+(Λ1/2 v, 0) and w ˜︁ = (Λ−1/2 f, 0). Both are Schwartz. The actual block formulas give
+Pχ v˜︁ = v˜︁ and Pχ∗ w
+                     ˜︁ = w. ˜︁ Therefore, Zx = ⟨x, w⟩˜︁  ˜︁ v satisfies Pχ Z = Z = ZPχ . Its two
+variances are ∥w∥ ˜︁ 2 v˜︁ ⊗ v˜︁∗ and ∥˜︁
+                                       v∥2 w    ˜︁∗ . For any Schwartz a and any x ∈ H,
+                                           ˜︁ ⊗ w
+                         |⟨x, a⟩| = |⟨Dγ x, Dγ−1 a⟩| ≤ ∥Dγ x∥∥Dγ−1 a∥.
+The inverse multiplier is applied only to Schwartz a, so it belongs to H. Apply the
+inequality with a = v,
+                    ˜︁ w
+                       ˜︁ to obtain the two variance bounds with
+                                  ˜︁ 2 ∥Dγ−1 v∥      v∥2 ∥Dγ−1 w∥
+                                             ˜︁ 2 , ∥˜︁        ˜︁ 2 < ∞.
+                               (︁                                  )︁
+                     C = max ∥w∥
+This witness uses a plateau; no nonzero family is inferred for every compact cutoff or
+identified with an actual source family.
+    For noncompactness, take f with nonzero Gaussian Fourier transform. Then g =
+  −γ
+Λ f is a nonzero Schwartz function. The images of translates of f are the same trans-
+lates of g. With Th g(x) = g(x − h), Plancherel gives
+                                   ∫︂
+                                            g(ξ)|2 dξ = c−1
+                        ⟨Th g, g⟩ = e−iξ·h |ˆ︁              g|2 (h).
+                                                         d |ˆ︁
+                                                            ˆ︃
+
+
+                                              133
+
+===== PHYSICAL PAGE 134 =====
+                             g|2 is Schwartz. Choose a large spacing so that any two
+This tends to zero because |ˆ︁
+distinct translates in the resulting sequence have image distance at least ∥g∥. The
+input norms are identical, but the images have no Cauchy subsequence. This disproves
+compactness. This proves Proposition 18.11.
+    Thus, the choice χ = 1 cannot be substituted into the compact-cutoff argument. No
+necessity at the Schatten endpoint pγ = d is asserted. The results concern finite matrices
+and conditional finite operator sums. Actual coefficient localization, compact variance
+tails, an infinite Gaussian series and time regularity are proved in Section 19; source
+and Young identification are proved in Sections 20–22. They are not consequences of
+the finite comparison alone.
+
+
+19     The actual Gaussian operator driver
+We now construct the first interaction driver on the same probability space as the original
+noise. Retain Hypothesis 1.1, set a = α0 , s = 1/2 and Er = H r (Rd ) × H r−1 (Rd ), and
+initially use real phases E = Es . Let HW be the real completion of Cc∞ ((0, ∞) × Rd )
+modulo its covariance-null tests. The given isonormal process on it is W . If Γ = 0, the
+driver and all raw forms are zero, so the conclusions below hold directly. Assume Γ ̸= 0
+in the construction.
+    Choose and fix R, T > 0 and a real even nonnegative ζ ∈ Cc∞ (Rd ) equal to one on
+B1 and zero off B2 . The physical mask is ζR (x) = ζ(x/R). The free group S(t) and
+forms ℓR are those of Section 17; both phase entries and the continuous zero-frequency
+sine quotient are retained. Fix parameters
+                    (︃        )︃                        (︃                 )︃
+                       1 2−α          1                       a 3−a−α
+       0 < γ < min       ,       ,      < θ < β < min 1 − ,                   .      (19.1)
+                       2   2          2                       2      2
+
+The strict intervals are nonempty. The C θ norm is the supremum norm plus the θ-Hölder
+seminorm.
+
+Proposition 19.1 (Same-noise compact operator path). There is an orthonormal basis
+{fj } of HW with real smooth compact test representatives, independent standard real
+Gaussians gj = W (fj ), and deterministic operators Aj (0, t) on E such that
+                      ∑︂
+            XN (t) :=     gj Aj (0, t) −→ MR (t) in Lp (Ω; C θ ([0, T ]; B(E))) (19.2)
+                       j≤N
+
+
+for every finite p ≥ 1. The limit is a centered Gaussian path on the original probability
+space, starts at zero, and has compact values at every time on one probability-one path
+set. For each fixed real Schwartz pair z, w and t ∈ [0, T ],
+
+                       ⟨MR (t)z, w⟩E = ℓR ((0, t); z, w)   in L2 (Ω).               (19.3)
+
+
+
+                                            134
+
+===== PHYSICAL PAGE 135 =====
+Long raw intervals mean their actual completed test, equivalently the additive unit-
+interval construction justified below. Different compact smooth test bases give indis-
+tinguishable paths on the same W . For constants C, c > 0 depending on the fixed data
+but not the basis or p,
+                                       √
+                   (E∥MR ∥pC θ )1/p ≤ C p,     E exp(c∥MR ∥2C θ ) < ∞.          (19.4)
+Its complexification has the corresponding sesquilinear raw identity. Fixed-interval Schat-
+ten moments hold at the admissible even indices in (19.18). Arbitrary p above refers to
+B(E), not arbitrary Schatten indices or a Schatten-valued path.
+
+19.1     A test basis and literal covariance coefficients
+Lemma 19.2 (Basis in the prescribed quotient). The nonzero space HW is separable
+and infinite-dimensional. It has a real orthonormal basis with compact smooth represen-
+tatives, whose evaluations by W are independent standard real Gaussians.
+Proof. For tests supported in [0, L] × K, with K compact, the physical covariance and
+the temporal Schur bound give the absolute estimate
+                                    2L1−a
+       |⟨F, G⟩HW | ≤ |K|Γ(K − K)          ∥∥F (t)∥∞ ∥L2 (0,L) ∥∥G(t)∥∞ ∥L2 (0,L) .    (19.5)
+                                    1−a
+Only spatial differences in K − K contribute. On each rational compact box inside
+positive time, rational step approximations followed by compact smooth mollifiers at ra-
+tional scales give a countable uniformly dense test collection, supported in a fixed slightly
+larger box. The estimate proves noise-norm approximation. The union over increasing
+boxes is dense in the test completion. This proves separability without assuming the
+covariance form is injective.
+    Choose L ≥ 1 with 0 < Γ(BL ) < ∞ and nonnegative compact smooth q ≥ 1 on
+B2L+1 . Then
+                         ∫︂        ∫︂
+                  Qsp := Γ( dy) q(x)q(x − y) dx ≥ |BL+1 |Γ(BL ) > 0,
+
+and the compact-support estimate makes it finite. For every real compact smooth
+positive-time τ , the tensor identity is
+                                  ∥τ ⊗ q∥2HW = Qsp ∥τ ∥2a .
+Here the temporal norm is computed on any finite interval containing the support of τ .
+It is strictly positive for signed nonzero τ . Indeed, zero-extend this deterministic test
+and use the positive Laplace factorization from Lemma 16.3 to write
+                                              ∫︂ ∞
+                                 2      1
+                            ∥τ ∥a =                λa−1 Eλ (τ ) dλ,
+                                     ΓE (a) 0
+                                     ∫︂     ⃓∫︂ ∞                     ⃓2
+                                                     −λ(t−r)
+                                            ⃓                         ⃓
+                           Eλ (τ ) =    2λ ⃓⃓      e         τ (t) dt⃓⃓ dr.
+                                    R      r
+
+
+                                               135
+
+===== PHYSICAL PAGE 136 =====
+Signed exchanges are absolutely integrable on the test support, by the temporal Schur
+estimate. If the norm vanished, some λ > 0 would have Eλ = 0. Its inner integral v(r) is
+continuous and satisfies v ′ = λv − τ . Vanishing almost everywhere makes it identically
+zero and forces τ = 0. Thus, infinitely many linearly independent compact time bumps
+inject into HW after multiplication by q.
+    Apply Gram–Schmidt to a countable dense real test collection, discarding zero resid-
+uals in the given null quotient. Infinitude gives an infinite basis; each representative
+is a finite linear combination of compact smooth tests. The isonormal identity gives
+Egj gk = δjk . Joint Gaussian characteristic functions then factor, giving independence
+and unit variances. No physical null direction is removed beyond the prescribed quotient,
+and no HW -valued white Gaussian vector is used. This proves Lemma 19.2.
+
+Lemma 19.3 (Actual covariance coefficients). For each basis representative put
+                                 ∫︂            ∫︂
+                                            −a
+            Hj,R (t, x) = ζR (x)    |t − u|       Γ( dy)fj (u, x − y) du.      (19.6)
+                                    u>0
+
+These functions are real smooth on finite time-space compacts, supported spatially in
+B2R , with bounded derivatives there. For smooth compact real positive-time F , and also
+for the admitted wave tests of (17.13),
+                                         ∫︂
+                       E[WC (ζR F )gj ] = Hj,R (t, x)F (t, x) dt dx.              (19.7)
+
+The coefficient on t ≥ 0 depends only on the HW class of fj .
+
+Proof. Extend ∫︁ fj −a
+                    smoothly
+                       ∫︁      by zero in time and substitute v = t − u. The unmasked
+expression is R |v|       Γ( dy)fj (t−v, x−y) dv. On each compact (t, x) set, the integrand
+involves only bounded v and a common compact set of y. Local Radon mass and
+local integrability of |v|−a allow every mixed derivative to move onto the smooth test.
+Dominated integration proves smoothness and the derivative bounds. Multiplication by
+ζR gives the stated support. Zero extension is only of a deterministic test; no negative-
+time noise is introduced.
+    The physical covariance formula and absolute Fubini give (19.7) first for real compact
+tests. The compact difference set in Γ and integrable temporal singularity justify the ex-
+change. For wave tests use the common-support raw approximations of Proposition 17.3,
+converging in L2 time in the spatial supremum norm after masking. The left side con-
+verges by noise Cauchy–Schwarz and the right side by the coefficient’s boundedness on
+that support. Real and imaginary parts give the complex version. If two representatives
+give the same class, their Gaussian difference is zero. Testing the covariance identity
+against every compact smooth F makes the difference of their masked coefficients zero as
+a distribution for t > 0. Smoothness, then continuity at zero, proves the representative
+assertion on t ≥ 0. This proves Lemma 19.3.
+
+
+
+
+                                           136
+
+===== PHYSICAL PAGE 137 =====
+19.2     Gain, adjoints and actual localization
+Lemma 19.4 (Deterministic coefficient operators). For I ⊂ [0, T ], the statewise integral
+                                ∫︂
+                     Aj (I)z = S(−t)B(Hj,R (t))S(t)z dt                            (19.8)
+                                        I
+
+satisfies, for every real r,
+                               ∥Aj (I)∥B(Er ,Er+1 ) ≤ Cj,r,R,T |I|.                 (19.9)
+Its Es adjoint has the gain E2s−r−1 → E2s−r , so both operators act from Es−γ to E.
+Choose real compact smooth χ = 1 on B2R+T +1 . On every Er ,
+                                Dχ Aj (I) = Aj (I) = Aj (I)Dχ .                    (19.10)
+For each fixed Schwartz pair,
+                               E[gj ℓR (I; z, w)] = ⟨Aj (I)z, w⟩E .                (19.11)
+Proof. The full massless wave is strongly continuous and bounded on every Er on finite
+time intervals. Its normalized off-diagonal Fourier entries have sizes at most CT and
+one, respectively; continuity and domination prove the strong assertion. Multiplication
+by Hj,R (t) is bounded on every H r , continuously in t, by weighted Fourier convolution
+and its compact smooth derivative bounds. Hence, B(Hj,R (t)) : Er → Er+1 is bounded:
+its second entry is a multiplier of the displacement in H r . The integrand in (19.8) is
+strongly continuous with values in Er+1 for each input in Er , and uniformly bounded in
+that operator norm. Statewise Bochner integration proves (19.9), including the Lipschitz
+operator-norm primitive Aj (0, t). Norm continuity of S(t) is not needed.
+    Under the Es pairing, the dual of Er is isometrically E2s−r , directly by the two
+Bessel weights. Dualizing the gain-one bound therefore gives the asserted adjoint gain.
+It agrees on Schwartz phases with the actual bounded Es adjoint. Since γ < 1, gain one
+at every index implies the two stated maps from Es−γ to E.
+    For smooth data the free-wave energy on a shrinking ball has nonpositive boundary
+flux: v∂n u − (v 2 + |∇u|2 )/2 ≤ 0. Vanishing initial displacement and velocity give zero
+velocity and gradient in the cone; integration of velocity from the zero displacement gives
+zero displacement there as well. Time reversal gives the backward assertion. Thus, both
+entries of S(±t) enlarge supports by at most |t|. Density and testing against compact
+smooth functions extend this support assertion to Sobolev phases. In particular, for
+input (1 − Dχ )z, approximate z by Schwartz phases and retain the factor 1 − Dχ ; the
+approximants vanish on B2R+T +1 . Their free displacement vanishes on B2R throughout
+[0, T ], and the same is true in the distributional limit. They contribute nothing to the
+integral. Its output is supported in B2R+T , by the support of Hj,R and backward finite
+propagation. Since χ = 1 on a neighborhood of this ball, both identities in (19.10)
+follow. This uses both entries, not a scalar restart or a positivity theorem.
+    Finally apply the physical Sobolev pairing (17.15) and (19.7) to the state integral.
+They give (19.11). In (19.6), the mask is after convolution; replacing it by a mask inside
+Γ ∗ fj would change this identity. This proves Lemma 19.4.
+
+                                               137
+
+===== PHYSICAL PAGE 138 =====
+19.3     Actual finite variances and first-chaos tails
+Put J0 (u, v) = (Λ1/2 u, Λ−1/2 v), H0 = L2 (Rd ; R2 ), aj = J0 Aj (I)J0−1 and Pχ = J0 Dχ J0−1 .
+The operator Dγ = diag(Λ−γ , Λ−γ ) acts on these physical coordinates. Its two compact
+envelopes Bout , Bin are those of Proposition 18.7, after complexification when Schatten
+norms are used. For I ⊂ [0, T ] with 0 < h = |I| ≤ 1, set
+                                     bI = CT h2−a Bα (h),                                   (19.12)
+where CT is the uniform-in-R constant in Proposition 17.5.
+Lemma 19.5 (Both actual variances and their tails). For every N ,
+                      ∑︂                            ∑︂
+            Vout,N :=    aj a∗j ≤ bI Dγ2 , Vin,N :=     a∗j aj ≤ bI Dγ2 .                   (19.13)
+                           j≤N                                    j≤N
+
+The finite families satisfy both actual localizations by Pχ . There are bounded positive
+limits Vout,∞ , Vin,∞ with positive tails Tout,N , Tin,N → 0 strongly, and
+                            Tout,N ≤ bI Bout ,           Tin,N ≤ bI Bin .                   (19.14)
+For each fixed z ∈ Es−γ , the real column maps satisfy
+                 ∑︂                             ∑︂
+      mR,I (z) =    gj Aj (I)z,      nR,I (z) =    gj Aj (I)∗,E z           in L2 (Ω; E).   (19.15)
+                   j                                 j
+                                                              ∑︁
+Proof. By (19.11), the finite matrix forms of XN (I) = j≤N gj Aj (I) are the orthogonal
+Gaussian projections of ℓR (I; z, w) onto g1 , . . . , gN . Thus,
+                            E|⟨XN (I)z, w⟩E |2 ≤ E|ℓR (I; z, w)|2 .
+These are noise-test-basis projections, not source mollifiers. Choose a real Schwartz
+orthonormal basis {ek } of E. Independence of the finite gj and phase Parseval give, for
+Schwartz w,
+                  ∑︂ ∗,E                         ∑︂
+                      ∥Aj w∥2E = E∥XN∗,E w∥2E =       E|⟨XN ek , w⟩E |2
+                   j≤N                                       k
+
+                                   ≤ bI ∥w∥2Es−γ .
+Apply (17.21) first to finite phase sums and then use nonnegative monotone convergence.
+The
+∑︁ other direction      uses (17.22), with input fixed and output ek varying, to bound
+              2
+   j≤N ∥A j z∥E  by the  same expression. Extend these inequalities to E by density. Since
+∥z∥Es−γ = ∥Dγ J0 z∥H0 , they give (19.13). The localization follows from (19.10); no sum
+of individual j-dependent gain bounds was used.
+    The coordinates of mR,I (z), for Schwartz z, are the literal raw forms ℓR (I; z, ek ) and
+belong to the closed first chaos W (HW ). Their coefficients against gj are ⟨Aj z, ek ⟩E .
+Parseval in that chaos, followed by Parseval in E and positive Tonelli, gives
+           ∑︂                                           ∑︂
+                ∥Aj z∥2E = E∥mR,I (z)∥2E ,   mR,I (z) =     gj Aj z in L2 (Ω; E).
+            j                                                    j
+
+
+                                             138
+
+===== PHYSICAL PAGE 139 =====
+The same argument for the adjoint column gives the other expansion. Membership in
+this first chaos comes from actual linear noise tests, not merely Gaussianity. To extend
+to a fixed Es−γ input, approximate by Schwartz phases. The finite inequalities extend
+to that space by the gain bounds and have a constant uniform in N . Apply them to
+the input difference, then use the Schwartz expansion and continuity of m, n. This
+proves (19.15) on the full claimed input domain.
+    The convergent positive quadratic sums, restricted to E and transported by J0 ,
+define the bounded positive operators V·,∞ by polarization and Riesz. They retain the
+bounds bI Dγ2 . Their tails have quadratic forms tending to zero. Since they are uniformly
+bounded and positive, ∥TN v∥2 ≤ ∥TN ∥⟨TN v, v⟩ → 0. Passing to the limit in the finite
+localization identities gives
+
+                      Vout,∞ = Pχ Vout,∞ Pχ∗ ,      Vin,∞ = Pχ∗ Vin,∞ Pχ ,
+
+and the same identities for their tails. Positive congruence applied to TN ≤ bI Dγ2
+proves (19.14).
+    Complexification preserves these statements and constants. The Hilbert norms split
+into real and imaginary squared norms; real operators extend isometrically. A real or-
+thonormal basis complexifies to a complex orthonormal basis, preserving singular values
+and multiplicities. The complex column maps have the same bounds and sesquilinear
+row identities. This proves Lemma 19.5.
+Lemma 19.6 (Compact domination of positive tails). If 0 ≤ TN ≤ B, with positive
+compact B ∈ Sm , m ≥ 1, and TN → 0 weakly, then
+
+                              ∥TN ∥ −→ 0,          Tr TNm −→ 0.                    (19.16)
+
+Proof. Choose a finite spectral projection Q of B with ∥(1 − Q)B(1 − Q)∥ < ϵ. Positive
+quadratic Cauchy–Schwarz gives, for unit x,
+
+        ⟨TN x, x⟩ ≤ 2⟨TN Qx, Qx⟩ + 2⟨TN (1 − Q)x, (1 − Q)x⟩ ≤ 2∥QTN Q∥ + 2ϵ.
+
+Weak convergence makes the finite-dimensional matrix QTN Q converge in norm to zero.
+Letting ϵ ↓ 0 proves norm convergence. Lemma 18.8 gives λj (TN ) ≤ λj (B), while each
+λj (TN ) → 0 by norm convergence. Dominated summation of λj (B)m proves the trace
+limit. No order comparison of the operator powers is used. This proves Lemma 19.6.
+Lemma 19.7 (Retained finite Gaussian variance powers). Let Zℓ be finitely many com-
+pact operators whose two variances Vout , Vin belong to Sq/2 , for an even q ≥ 2. With
+independent standard real gℓ ,
+                      ⃦           ⃦q
+                                                       q/2       q/2
+                                              q/2 Tr Vout + Tr Vin
+                      ⃦∑︂         ⃦
+                            gℓ Zℓ ⃦ ≤ (q − 1)                        .          (19.17)
+                      ⃦           ⃦
+                    E⃦
+                      ⃦
+                         ℓ
+                                  ⃦                        2
+                                    Sq
+
+Proof. Compress by finite-rank orthogonal Qk → I strongly.        The compressed output
+variance is at most Qk Vout Qk , since their difference is ℓ Qk Zℓ (1 − Qk )Zℓ∗ Qk ≥ 0; the
+                                                          ∑︁
+
+
+                                             139
+
+===== PHYSICAL PAGE 140 =====
+input inequality is the same with adjoints interchanged. Positive-order and compres-
+sion max-min compare their trace powers with the uncompressed ones. Apply Proposi-
+tion 18.3 on the finite range, retaining the average. For each finite Gaussian coordinate
+vector, compactness gives operator-norm convergence of the compressed sum to the orig-
+inal sum. The singular-value norm-Lipschitz argument in the proof of Corollary 18.10,
+then Fatou over singular values and probability, proves the displayed bound. The ex-
+tended norm is measurable by the same finite-coordinate continuity argument. No infi-
+nite Gaussian series or Sq -Bochner convergence is assumed. This proves Lemma 19.7.
+
+19.4     Actual interval limits on the given probability space
+Lemma 19.8 (Fixed-interval operator construction). For each fixed short interval I,
+XN (I) converges in every finite Lp (Ω; B(E)) to a compact-valued centered Gaussian op-
+erator XR (I) on the original probability space. For every admissible even q ≥ 2, qγ > d,
+                                √︁
+    (E∥XR (I)∥qSq )1/q ≤ q − 1 CT h1−a/2 Bα (h)1/2 ∥Kχ ∥Sq ,
+                        √︁
+                                                                 Kχ = Pχ Dγ .     (19.18)
+
+Its fixed Schwartz rows equal the actual raw forms in L2 .
+Proof. The actual finite families aj , j ≤ N , now satisfy every hypothesis of Propo-
+sition 18.9 and Corollary 18.10: both localizations, both weighted variances, and the
+independent real gj have been proved. Thus, their coefficients are compact, and the
+finite sums satisfy the bound in (19.18), uniformly in N . The fixed cutoff factor may
+depend on R, T .
+    Apply Lemma 19.6 to (19.14), whose fixed-interval envelopes belong to Sq/2 . Both
+tail trace powers tend to zero. For M > N , the two variances of M
+                                                                       ∑︁
+                                                                         j=N +1 gj Aj (I) are
+bounded by the corresponding tails. Lemma 19.7 and eigenvalue max-min show that
+its expected Sq norm to the qth power tends to zero, uniformly in M > N . Since the
+operator norm is at most the Sq norm, this gives Lq (B(E)) Cauchy convergence. This
+Cauchy estimate uses the vanishing tail traces.
+    All finite sums lie in the separable closed real span of the countably many determin-
+istic Aj (I) in B(E). For an elementary realization of the limit, choose a subsequence
+with summable Lq norms of successive differences. Their L1 norms are summable, so
+the pointwise operator-norm differences sum absolutely almost surely. Completeness
+gives a limit in that span; Fatou and the Cauchy property give convergence of the whole
+sequence in Lq . This proves strong measurability on the same original space, with no
+new noise. Different admissible even indices give the same limit by uniqueness of con-
+vergence in probability. Choosing a larger even index yields convergence for every finite
+operator-norm moment p ≥ 1.
+    An almost surely norm-convergent subsequence makes the limit compact. Singular-
+value Fatou gives (19.18). Every continuous linear functional is an L2 limit of centered
+Gaussians, as are finite combinations, so the limit is jointly centered Gaussian. The
+fixed matrix rows of XN (I) are the orthogonal projections of the literal raw forms onto
+the complete noise basis. They converge to those forms in L2 . Operator-norm L2
+convergence identifies their other limit with ⟨XR (I)z, w⟩E .
+
+                                            140
+
+===== PHYSICAL PAGE 141 =====
+   For a long interval, partition it into finitely many intervals of length at most one.
+Their indicators add to the long indicator except at finitely many endpoints, which have
+zero raw norm by the common-support temporal estimate. Raw completion and linearity
+give exact additivity of the forms. Strong-integral additivity gives it for every XN and
+hence for the operator limits. No long-h version of the short-interval bound is used.
+This proves Lemma 19.8.
+
+19.5     Time-path convergence and Gaussian norm bounds
+Lemma 19.9 (Actual Hölder path limit). The finite paths XN (t) = XN ((0, t)) converge
+in Lp (Ω; C θ ([0, T ]; B(E))) for every finite p ≥ 1, in a separable closed path span on the
+same probability space. The limit starts at zero and has compact values for all times on
+                                                                               √
+one path event. For sufficiently large even q0 , its C θ norm has Lq bound C q, uniformly
+over even q ≥ q0 and the basis.
+Proof. Choose θ < η < β and an even q0 ≥ 2 with q0 γ > d and β − η − 1/q0 > 0. For
+q ≥ q0 , the singular-value sequence gives ∥Kχ ∥Sq ≤ ∥Kχ ∥Sq0 : if the latter is nonzero,
+normalize by it, so every singular value is at most one, and sum its qth powers. The zero
+case is immediate. Apply the finite Gaussian operator estimate with the time-refined
+actual variances from Proposition 17.5. This gives, uniformly in N and even q ≥ q0 ,
+                                               √
+                ∥XN (t) − XN (u)∥Lq (B(E)) ≤ C q |t − u|β ,    |t − u| ≤ 1.       (19.19)
+
+The constant includes the fixed Sq0 cutoff norm and does not depend on q. Longer
+increments are finite sums of unit increments, with constants depending on T .
+    Let Dn (F ) be the maximum of adjacent increments on the grid kT 2−n , 0 ≤ k ≤ 2n .
+At fine levels T 2−n ≤ 1, the elementary bound for a finite maximum yields
+                                                 √
+                            ∥Dn (XN )∥Lq ≤ 2n/q C q (T 2−n )β .
+
+No independence of these increments is used. The finitely many coarse levels are con-
+trolled by unit partitions. Minkowski and a geometric sum therefore give
+                                ⃦               ⃦
+                                ⃦∑︂             ⃦       √
+                            sup ⃦   2nη Dn (XN )⃦ ≤ Cη q,                     (19.20)
+                                ⃦               ⃦
+                             N ⃦                ⃦
+                                  n≥0              Lq
+
+since the fine-level ratio is at most 2−(β−η−1/q0 ) < 1.
+    For a continuous Banach-valued F starting at zero, this weighted dyadic sum controls
+its C η norm. Approximate two times by dyadic points at a scale comparable to their
+separation. The two grid points differ by at most two adjacent increments, and each
+endpoint’s finer binary corrections are bounded by the tail sum of Dn . Multiplying
+by the separation to the power −η bounds that total by the weighted sum, up to a
+constant depending on T, η. Continuity identifies the endpoint limits and also controls
+the supremum norm from F (0) = 0. The finite paths are Lipschitz by (19.9). Thus,
+(19.20) gives uniform Lq C η bounds, and the triangle inequality gives the same bound
+for their differences.
+
+                                            141
+
+===== PHYSICAL PAGE 142 =====
+   On a fixed finite time grid, Lemma 19.8 gives Lq convergence of every point value.
+For continuous F ,
+                       ∥F ∥∞ ≤ max ∥F (tk )∥ + C(mesh)η ∥F ∥C η .
+                                   k
+
+Apply this to XN − XM , send N, M → ∞ at a fixed grid, and then send the mesh to
+zero. The uniform C η bound proves sup-norm Lq Cauchy convergence. The deterministic
+interpolation inequality
+                                                      θ/η
+                             ∥F ∥C θ ≤ C∥F ∥1−θ/η
+                                            ∞     ∥F ∥C η                   (19.21)
+follows by bounding each increment by both 2∥F ∥∞ and its C η bound, and splitting at
+their balancing scale. Its supremum term is controlled too. Scalar Hölder in probability
+proves the Lq C θ Cauchy property. For any requested finite p, choose an even q ≥
+max(p, q0 ) and use Lyapunov.
+    The full Hölder/operator space need not be separable. Nevertheless, every finite
+path lies in the span of the countably many deterministic Lipschitz paths Aj (0, ·).
+Their C θ -closed real span is a separable Banach space. In it the same elementary
+Cauchy/subsequence construction as in Lemma 19.8 gives a strongly measurable limit
+MR on the original space. Different p limits agree by uniqueness of convergence in
+probability in the path norm. An almost surely C θ -convergent subsequence converges
+uniformly in operator norm. Finite paths have compact values on short intervals, and on
+long ones by finite additivity. Therefore, the limit has compact values at every time on
+that single path set. It starts at zero. Passing the uniform bounds from (19.20) through
+                                              √
+the path convergence proves the asserted C q bound. This proves Lemma 19.9.
+Proof of Proposition 19.1. Lemmas 19.2–19.9 construct the stated finite sums and their
+path limit, with no new probability space. Evaluation at a fixed time agrees with the
+interval limit by uniqueness in probability. Its raw row identity is (19.3), by Lemma 19.8,
+including the long-interval interpretation. The same additivity identifies each fixed in-
+crement with XR (I), proving its stated Schatten moment bound.
+    The finite paths are Gaussian linear combinations of deterministic paths. Every
+continuous linear functional on their closed path span converges in L2 to a centered
+Gaussian; finite linear combinations do as well. Thus, MR is a centered Gaussian path.
+The four real pair identities give its complexified sesquilinear row identity.
+    The construction used only compact smooth representatives, orthonormality and
+completeness, so it applies to any such noise basis. Compare two constructions using
+a fixed countable dense Schwartz phase collection and rational times. Both rows equal
+the same original raw forms. A countable null-set union, boundedness of the operators,
+phase density and path continuity give equality at all times on one probability-one set.
+This proves indistinguishability without an assumed common event for uncountably
+many raw evaluations.
+    For p ≥ 1, choose even q ≥ max(p, q0 ) with q ≤ p + q0 + 2 ≤ (q0 + 3)p. Lemma 19.9
+and Lyapunov give the first bound in (19.4). Write its resulting constant as C1 and
+let Y = ∥MR ∥C θ . If C1 = 0, then Y =√ 0 almost surely and the exponential bound
+is immediate. Otherwise, EY 2m ≤ (C1 2m)2m . Since m! ≥ (m/e)m , as follows by
+integrating log x from one to m, the mth term in the exponential series is at most
+
+                                           142
+
+===== PHYSICAL PAGE 143 =====
+(2ecC12 )m . For 0 < c < 1/(2eC12 ), positive Tonelli and the geometric series prove the
+second bound. This proves Proposition 19.1.
+    All constants here may depend on R, T and the fixed admissible parameters. No
+uniform-in-R path-norm estimate or C θ Sq -valued path is asserted. This constructs the
+local masked first driver on the original noise. Source-cutoff convergence, Young evolu-
+tion, canonical initial data and solution-moment asymptotics remain separate parts of
+the argument.
+
+
+20     Convergence of the canonical Gaussian source
+       drivers
+We match the heat normalization, Laplace prefix and joint source law in the author
+version [4, (1.20), (1.21), (2.9), (2.11), pp. 5–6, 8–9]. Given-noise retention, the Radon
+implementation and the operator-path conclusions are proved here. No first-moment
+variational theorem is an input.
+    Retain Hypothesis 1.1, the fixed R, T, ζR , E and parameters of (19.1), and the original
+noise space HW . Write Bθ = C θ ([0, T ]; B(E)). Fix one raw test∑︁ basis fj and its actual
+coefficient paths Aj (t) from Proposition 19.1. Thus, MN = j≤N W (fj )Aj → MR in
+every finite Lp (Bθ ). Zero covariance gives zero noises and drivers throughout; assume
+Γ ̸= 0 in the construction.
+
+20.1     Gaussian transfer in the full path norm
+Lemma 20.1 (Finite Gaussian linear images). Let v1 , . . . , vN lie in a real Banach space
+and let ξ be a centered Gaussian vector with covariance bounded by CI, C ≥ 0. For
+independent standard real gj and p ≥ 1,
+                     (︄ ⃦         ⃦p )︄1/p    (︄ ⃦         ⃦p )︄1/p
+                        ⃦∑︂       ⃦         √    ⃦∑︂       ⃦
+                            ξj vj ⃦        ≤ C E⃦    gj vj ⃦        .                (20.1)
+                        ⃦         ⃦              ⃦         ⃦
+                       E⃦
+                        ⃦         ⃦              ⃦         ⃦
+                           j                           j
+
+
+Proof. The function φ(x) = ∥ j xj vj ∥p is continuous and convex, even when the lin-
+                                ∑︁
+
+ear image gives only a seminorm on RN . Its Gaussian expectations are finite by the
+finite-sum bound. On an auxiliary space take an independent centered Gaussian Z of
+covariance CI −
+              √Cov ξ. Conditional Jensen gives Eφ(ξ) ≤ Eφ(ξ + Z). The latter vector
+has the law of C g, proving the claim. The case C = 0 is immediate. This auxiliary
+comparison changes neither the actual coupling of ξ nor any nonlinear wave solution.
+This proves Lemma 20.1.
+
+Proposition 20.2 (Actual Gaussian transfer and stability). Let Y be a centered Gaus-
+sian linear noise on smooth compact positive-time tests, on a common coupled space,
+with
+                               Var Y (F ) ≤ C∥F ∥2HW .                         (20.2)
+
+                                            143
+
+===== PHYSICAL PAGE 144 =====
+                                               ∑︁
+It extends to HW . The finite paths MY,N =       j≤N Y (fj )Aj converge in every finite
+Lp (Bθ ) to an actual centered Gaussian path MY with compact values at all times on one
+path event, and
+                                             √
+                        ∥MY − MY,N ∥Lp Bθ ≤ C∥MR − MN ∥Lp Bθ ,                    (20.3)
+                                             √
+                                ∥MY ∥Lp Bθ ≤ C∥MR ∥Lp Bθ .                        (20.4)
+
+For a fixed real Schwartz pair and time,
+
+                             ⟨MY (t)z, w⟩E = Y (hR,t;z,w )    in L2 ,                      (20.5)
+
+where hR,t;z,w is the literal raw test class ζR 1(0,t) vz Gw with the actual adjoint from (17.12).
+The path is basis-independent up to indistinguishability, is linear in jointly Gaussian
+noise families, and complexifies sesquilinearly.
+    If (W, Yn ) are jointly centered Gaussian, Yn and Dn = W − Yn have uniform bounds
+of the form (20.2), and Var Dn (F ) → 0 on every smooth compact test, then MYn → MR
+in every finite Lp (Bθ ).
+
+Proof. The variance bound annihilates raw-null tests and extends Y as a bounded linear
+map into its actual L2 space. Completion preserves Gaussian finite-dimensional laws.
+For each finite raw orthonormal family, the covariance of its Y evaluations is bounded
+by CI, by applying the variance bound to every real linear combination. Independence
+of Y (fj ) is not assumed.
+    Apply Lemma 20.1 with vj = Aj (·) in Bθ , also to finite tails. The standard com-
+parison vector has the law of the raw W (fj ). The already-proved raw path convergence
+makes MY,N Cauchy in every Lp . It lies in the same separable closed span of the count-
+ably many deterministic paths. The elementary Cauchy/subsequence construction of
+Lemma 19.9 gives a strongly measurable limit on the actual space of Y . Different p
+limits agree by convergence in probability. Passing to limits in the finite inequalities
+gives both displayed bounds. An almost surely uniformly convergent subsequence gives
+compact values for all times. Functional L2 limits of Gaussian linear combinations prove
+that the path is Gaussian.
+    For real Schwartz z, w, the actual coefficient identity is
+
+                  ⟨Aj (t)z, w⟩E = E[W (hR,t;z,w )W (fj )] = ⟨hR,t;z,w , fj ⟩HW .
+
+Therefore, the finite transferred row is Y (PN h), with PN the raw HW orthogonal pro-
+jection. Since PN h → h, the noise bound gives Y (PN h) → Y (h) in L2 . Operator-path
+L2 convergence proves (20.5). Long intervals use the same raw completion and endpoint
+nullity as in Lemma 19.8. No filter is commuted through a physical mask or wave group.
+Four real pair identities give the complex assertion. Countably many dense Schwartz
+phases and rational times, followed by phase density and path continuity, prove basis
+indistinguishability.
+    For jointly Gaussian Y, Z, their real linear combinations have a raw variance bound
+by the L2 triangle inequality. The finite sums are linear in the noise, hence so are the
+
+                                               144

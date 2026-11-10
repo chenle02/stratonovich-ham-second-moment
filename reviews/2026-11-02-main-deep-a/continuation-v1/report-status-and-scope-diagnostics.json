@@ -1,0 +1,84 @@
+{
+  "scope": "Literal report status/custody audit, pending root mathematical adjudication; not new scientific review",
+  "named_checks": [
+    {
+      "id": "A01",
+      "raw_status": "FULLY_CHECKED."
+    },
+    {
+      "id": "A02",
+      "raw_status": "FULLY_CHECKED."
+    },
+    {
+      "id": "A03",
+      "raw_status": "FULLY_CHECKED."
+    },
+    {
+      "id": "A04",
+      "raw_status": "FULLY_CHECKED."
+    },
+    {
+      "id": "A05",
+      "raw_status": "FULLY_CHECKED."
+    },
+    {
+      "id": "A06",
+      "raw_status": "FULLY_CHECKED."
+    },
+    {
+      "id": "A07",
+      "raw_status": "FULLY_CHECKED."
+    },
+    {
+      "id": "A08",
+      "raw_status": "CHECKED / CONSISTENT (scoped)."
+    }
+  ],
+  "target_ledger": [
+    {
+      "id": "PROOF037",
+      "label": "L:phase-contractions",
+      "raw_status": "FULLY_CHECKED"
+    },
+    {
+      "id": "PROOF038",
+      "label": "P:static-phase-variance",
+      "raw_status": "FULLY_CHECKED"
+    },
+    {
+      "id": "PROOF039",
+      "label": "L:complex-phase",
+      "raw_status": "FULLY_CHECKED"
+    },
+    {
+      "id": "PROOF040",
+      "label": "L:fock-form",
+      "raw_status": "FULLY_CHECKED"
+    },
+    {
+      "id": "PROOF041",
+      "label": "L:finite-word-cutoff",
+      "raw_status": "FULLY_CHECKED"
+    }
+  ],
+  "required_blocking_fixes_in_report": "none for five target proofs",
+  "source_image_mainwhole_cold_gates": "remain open",
+  "report_only_caveats": [
+    {
+      "issue": "Spectral homogeneity opening uses density-style \u03bc(c\u03be)=c^(\u03b1\u22123)\u03bc(\u03be).",
+      "source_boundary": "Actual proof uses Radon measure law \u03bc(cA)=c^\u03b1\u03bc(A), no density assumed. Preserve raw report and do not import density shorthand."
+    },
+    {
+      "issue": "Report calls run blind/excluded prior-status artifacts.",
+      "source_boundary": "Full prior report absent, but target-identities nestedreport supplied5prior status annotations. See prior-annotation-custody-clarification.json. Not cold."
+    },
+    {
+      "issue": "Target ledger says Q_z real; Q_z is generally complex.",
+      "source_boundary": "Actual source uses Q_z and adjoint/inverse order correctly; do not copy report wordreal into proof."
+    },
+    {
+      "issue": "Fock detailed paragraph writes a scalar-coefficient creation inequality; exact general-row argument is terse.",
+      "source_boundary": "Source explicitly uses RR*=sum a_i* a_i=(k+1)I on degree k+1. Root should assess this exact interface rather than promote the report paraphrase."
+    }
+  ]
+}

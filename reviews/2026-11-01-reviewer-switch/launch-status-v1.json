@@ -1,0 +1,48 @@
+{
+  "recorded_utc": "2026-11-01T23:37:10.030835+00:00",
+  "authorization": "Le2026-11-01: Can you use DeepSeek V4 Pro + Kimi-K3 as your reviewers? This supersedes Opus-only routing for new assigned reviews; original confidence/source/scope requirements retained.",
+  "scientific_source_revision": "3c375e63d3253bd571a604dae7a82dfa9c49ef42",
+  "main_composition_epoch_unchanged": "887fbfbe0fa4368d6b32a436615d73349b2445d8",
+  "deepseek": {
+    "launch": {
+      "started_utc": "2026-11-01T23:36:22.847684+00:00",
+      "argv": [
+        "<HOME>/.opencode/bin/opencode",
+        "run",
+        "--pure",
+        "--dir",
+        "<HOME>/.local/state/Le-AI-Lab/stratonovich-independent-finiteness-review-v1/deepseek-carrier",
+        "--agent",
+        "reviewer",
+        "--model",
+        "deepseek/deepseek-v4-pro",
+        "--format",
+        "json"
+      ],
+      "carrier_head": "84211f992533e06dfac08c8d66c4a204dd9feb45",
+      "scientific_source_revision": "3c375e63d3253bd571a604dae7a82dfa9c49ef42",
+      "prompt_sha256": "52fc30389579acd3b692f2adbe12e36366d52d89c67e7b43d6b77615b6370d3e",
+      "prompt_bytes": 49032,
+      "model_requested": "deepseek/deepseek-v4-pro",
+      "tools": "all denied; complete inline texts, no image certification",
+      "permission_env": "{\"*\":\"deny\"}",
+      "configured_route_category": "paper-review-deepseek",
+      "transport": "stdin"
+    },
+    "status_at_observation": "running; actual process handle29446",
+    "source_coverage": "Full inlined textual inputs. No image credit or scientific verdict yet.",
+    "receipt_adapter": "Canonical panel-generated prompt, explicit readonly OpenCode launch; not a Claude ledger or old common composition pass."
+  },
+  "kimi": {
+    "status": "blocked-provider",
+    "model_actual": "k3",
+    "route_verified": true,
+    "transport_exit_code": 1,
+    "elapsed_seconds": 4.78,
+    "stderr": "error: failed to run prompt: provider.api_error: 429 You've reached your monthly usage limit for this billing cycle. Your quota will be refreshed in the next cycle. To continue now, purchase extra usage or upgrade your plan: https://www.kimi.com/membership/subscription?tab=quota\nSee log: <HOME>/.kimi-code/logs/kimi-code.log\n",
+    "scientific_verdict": null,
+    "accepted": false,
+    "retry": "No unchanged retry or purchase/upgrade. Pending genuine quota restoration."
+  },
+  "old_opus_attempts": "Preserved unchanged; no converted verdicts or credits"
+}

@@ -1,0 +1,113 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "reviews/2026-10-31-unmasked-variational-target/target-v2.md: lines 1-105 (complete)",
+    "reviews/2026-10-31-unmasked-variational-target/falsification-v0.md: lines 1-56 (complete)",
+    "reviews/2026-10-31-unmasked-variational-target/lean-reuse-v1.json: lines 1-25 (complete)",
+    "reviews/2026-10-31-unmasked-variational-target/upper-custody-v1.json: lines 1-10 (complete)",
+    "reviews/2026-10-31-unmasked-variational-target/worker-honesty-v1.md: lines 1-38 (complete)",
+    "notes/compact-mean-ground-family.md: lines 1-459 (complete)",
+    "notes/raw-block-event-lower.md: lines 1-611 (complete)",
+    "reviews/2026-10-31-raw-block-event/scientific-adjudication-v1.md: lines 1-51 (complete)",
+    "notes/raw-variational-dilation.md: lines 1-250 (complete)",
+    "reviews/2026-10-30-raw-variational-dilation/accepted-full-upper-statement.txt: lines 1-18 (complete)",
+    "reviews/2026-10-30-raw-variational-dilation/accepted-full-upper-custody.json: lines 1-11 (complete)",
+    "reviews/2026-10-30-raw-variational-dilation/accepted-upper-context.txt: lines 1-39 (complete)",
+    "lean-progress/local-checks/raw-variational-v1/StratonovichHAMAudit/RawVariational.lean: lines 1-74 (complete)",
+    "lean-progress/local-checks/raw-variational-v1/types-and-axioms.txt: lines 1-196 (complete)",
+    ".review/required-sources.json: lines 1-45 (complete; read plan, earns no credit)"
+  ],
+  "checks": [
+    {
+      "claim": "C1 scope: the target keeps the original full H:homog class, d=1,2,3, alpha+a<2, every nonnegative nonzero nonseparable Psi, the same canonical Q2 and the unmodified raw cost, with no angular-density, d1 or Riesz restriction.",
+      "verdict": "PASS",
+      "reason": "Target lines 8-11 use the same h_s, v_Psi and Q2 as raw-block-event-lower Section 1. H:homog is included by reference, including 0<alpha<d or alpha=d=1. No density or separability hypothesis appears in U1-U4. Line 32 forbids modifying Psi or the raw variance."
+    },
+    {
+      "claim": "C1/U1 global mean bounds: h and all time and spatial derivatives are bounded globally in x, uniformly for s in compact intervals, and s->h_s is L-infinity Lipschitz.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The statement is true and the candidate route is feasible. With the H:homog convention, (Gamma*p_eps)(x)=int e^{i xi.x} e^{-eps|xi|^2/2} mu(d xi), which is at most its value at x=0 and finite because mu is tempered. Absolute convergence and identification with the distribution pairing follow from the polynomial mass Gamma(B_n)=n^(d-alpha)Gamma(B_1). Each derivative satisfies sup_t|D Psi(t,y)|<=C_D p_eps(y), since the spatial support is uniformly compact and p_eps has a positive minimum there. After writing h_s=int_R |r|^-a (Gamma*Psi(s-r,.))(x)dr with zero extension, time derivatives land on the test, and for compact s the variable r stays in a bounded set where |r|^-a is integrable. This gives every global bound, and the case j=1 gives the Lipschitz property. The target displays only the inequality, so the proof must write out the identity. Compact-family Section 7 supplies only local smoothness, as the target says."
+    },
+    {
+      "claim": "C1/U1 operator claims: H_s is self-adjoint on H2, E_s equals the H1 Rayleigh infimum, E_s has a uniform negative upper bound, lambda_s is finite, positive and Lipschitz, and no ground state or compactness is asserted.",
+      "verdict": "PASS",
+      "reason": "A bounded real multiplication perturbation of -Delta on H2 is self-adjoint with form domain H1, and the target marks the Rayleigh correspondence as a new proof obligation. Compact Section 2 is a usable method comparator, but its Theorem 10.2 input is not applied to unmasked h. Since h>=m_R h>=0, the Section 8 trial psi_L gives q_s(psi_L)<=-epsilon for all s. Boundedness gives E_s>=-sup||h_s||_inf, and |E_s-E_t|<=||h_s-h_t||_inf with the floor sqrt(epsilon) gives Lipschitz lambda. Lines 21-22 assert no eigenvalue, gap or decay."
+    },
+    {
+      "claim": "C2/U2 masks: chi(|x|/R) is monotone in R, eligible for the accepted theorems for R>=R0, and R0 and the trial are fixed by Psi.",
+      "verdict": "PASS",
+      "reason": "Because chi is nonincreasing, chi(|x|/R) is nondecreasing in R and tends to 1. It is smooth, even, [0,1]-valued and equal to 1 on B_R, as required by compact Section 8 (R>=2L, R>=A) and raw-block Section 1 (finite even [0,1] mask). With L fixed, the same psi_L and epsilon serve every R>=R0, since supp psi_L lies in B_(2L), inside the set where m_R=1."
+    },
+    {
+      "claim": "C2/U2 limit: lambda_(R,s) increases to lambda_s uniformly on [0,1], I_R increases to I_Psi, and Q2>=2I_Psi-v_Psi/2 follows from per-fixed-mask inequalities only.",
+      "verdict": "PASS",
+      "reason": "For unit u, int m_R h_s u^2 increases to int h_s u^2 by monotone convergence. Hence sup_R sup_u [int m_R h_s u^2-||grad u||^2] equals sup_u sup_R of the same expression, so lambda_(R,s)^2 increases to lambda_s^2. Compact (27) and U1 give continuity of the approximants and the limit, so Dini gives uniformity along a sequence, and monotonicity extends it to real R. I_R then increases to I_Psi. Raw theorem (1) holds for each eligible R with v and Q2 independent of R, so taking the supremum of numbers suffices. No R(delta), gap, uniform event or source/time limit exchange is used."
+    },
+    {
+      "claim": "C3/U3 dilation: D_r uses amplitude r^(d+2-alpha), is a bijection of the class, and gives h->r^2 h(rx), lambda->r lambda, I->rI, v->r^(4-alpha)v, with mask R/r for compact rates, including singular and white Gamma.",
+      "verdict": "PASS",
+      "reason": "Independent computation: (T_r)_#Gamma(A)=Gamma(A/r)=r^(alpha-d)Gamma(A), so Gamma*[q(r.)](x)=r^(alpha-d)(Gamma*q)(rx), and the amplitude gives r^2. This uses only Radon homogeneity. With unitary U_r g(x)=r^(d/2)g(rx), H_(D_r Psi,s)=r^2 U_r H_(Psi,s) U_r^-1 on H2, so E scales by r^2 and lambda by r, at each fixed s. The time support and profile are unchanged, so I scales by r. Also v_(D_r Psi)=r^(d+2-alpha)r^2 r^(-d) v=r^(4-alpha)v. D_r D_s=D_(rs) gives the bijection. Further m_(R/r)(x)=m_R(rx) gives the mask rule, and a fixed R instead gives r lambda_(rR)."
+    },
+    {
+      "claim": "C4/U4: S_c is positive, finite and real, S_c=c^m S_1 and Q2>=S_2=2^m S_1, with q>1, k>0, c^m>0 and no circularity; S_1 is not first-mean or author L_*.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "From alpha+a<2 and a>0 we get alpha<2, so q>2 and k>1. With s=c^(1/k): c s=s^q=c^(q/k), so the score satisfies c I(D_s Psi)-v(D_s Psi)/2=c^m(I-v/2), and bijectivity gives equality of score sets. Ordering is sound. The S_2 score set is bounded above by Q2<=limsup<=C_up<infinity, since log(e(T+2)^d)/T^kappa->0 with kappa=(4-alpha-a)/(3-alpha)>0 and alpha_0=a. The set equality then transfers boundedness to every c, and a real supremum follows. Positivity comes from an actual dilate, r I-r^q v/2>0 for small r, or at exact r^k=I/v where the value is rI/2. Q2>=S_2 is a supremum over numbers. Lines 65-67 disclaim source identification and Jensen improvement. Nonemptiness is implicit but elementary."
+    },
+    {
+      "claim": "C5 invariant-direction diagnostic: d=2, Gamma=delta_(x1=0) tensor Lebesgue_(x2), alpha=1, 0<a<1 is admissible, h is invariant along x2, long tubes approach the bottom, and no L2 ground eigenfunction exists.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Verified: Gamma(rA)=r Gamma(A), so d-alpha=1 and alpha=1<d=2. The pairing is int(int q dx2)^2 dx1>=0, and mu is Lebesgue in xi1 tensor delta in xi2, up to convention. Also h=k_f(s)q1(x1)int q2. The product trial has value e1+L^-2||g'||^2, the slicewise bound gives H>=e1, and vanishing shifted form forces d_2 F=0, hence F=0. U1 and U2 remain consistent with this example. Note: falsification lines 20-21 cite the accepted input tersely. The compact family assumes a trial, and Section 8 says it is not all-strength binding. The d=1 trial here is elementary: for psi_L, potential mass is of order L^-1 against kinetic energy of order L^-2 (equivalently d1 white Section 8). No arbitrary-dimension binding is claimed."
+    },
+    {
+      "claim": "C5 scale controls: white and invariant cost and the wrong fixed-R mask are actual diagnostics, with no numerical, error or kernel certificate claimed.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "d1 white: amplitude r^2, h->r^2 h(rx), cost r^3, and omitting the Jacobian gives r^4. d2 invariant: amplitude r^3, invariant integral r^-1, cost r^(3+2-2)=r^3. The mask identity m_R(rx)=m_(R/r)(x) is exact. All were recomputed. Line 3 disclaims certificates. The arbitrary-d Radon control and the S_1 control required by target lines 73-75 are not worked examples: the first is shown only for d=1,2, the second is a scope disclaimer. The general formula was verified independently above, so this does not block the statements."
+    },
+    {
+      "claim": "C6 import ledger: compact-family mean regularity is local only, the full compact gap and projection are not used for unmasked h, the raw stochastic theorem is fixed Psi/R, old raw-variational and rough-X are comparators, the upper is finite-rate same-model only, and no uninspected noncompact source is used.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Lines 78-90 match compact Sections 7-9, raw-block Sections 1, 9 and 10, adjudication lines 40-48, upper-custody scope and accepted-full-upper custody. Line 88 forbids uninspected pages. The rough-X file notes/occupation-control-approximation.md is outside the packet, so its description is unverified, but no U1-U4 statement relies on it. Raw-variational is scoped narrower than 'd1' alone: positive separable tests and d1 Riesz/white covariance. The target's comparator-only use remains correct."
+    },
+    {
+      "claim": "C6/C4 same-model identity between raw theorem Q2 and T:full-upper.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Raw-block Sections 8-9 and adjudication line 41 use the same original canonical point second moment for all d=1,2,3. T:full-upper covers the canonical expansion solution at every x and admissible d. Upper-custody v1 names this identity in scope, and alpha_0=a is recorded in accepted-upper-context. The written context dictionary still names only the d1 consumer actual-shifted-event(4), and E:expansion, E:cov and direct-event-calibration.md are outside the packet. The identification is supported at statement level. The full proof should restate it for raw-block equation (1)."
+    },
+    {
+      "claim": "C7 Lean reuse: label_score, positive_score and strict_label_factor have complete public types and the planned guards hold; dilation_factors is not promoted; no new compile or formal analytic claim.",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The Lean source and printed types agree on all four theorems, each with propext, Classical.choice and Quot.sound as axioms. Types are dimension-free scalar rpow statements. label_score needs c>0 and alpha<3, and maps s=c^(1/(3-alpha)), which matches U4. positive_score needs I,v>0 and alpha<3, which matches r=(I/v)^(1/k) at c=1. strict_label_factor needs alpha<3. All follow from alpha<2 once U1-U3 are proved. dilation_factors is the d=1 instance of the general exponents and is excluded (lean-reuse line 22; target lines 92-97). Note: the label_score entry mentions positive I and v, which are not hypotheses of that theorem."
+    },
+    {
+      "claim": "C8 honesty and scope: only cutoff removal and the own S functional are proposed; author normalization, occupation bridge, all-alpha comparison, sharp upper and exact limit stay open; no p1/Jensen improvement or out-of-scope activity.",
+      "verdict": "PASS",
+      "reason": "Lines 66-67 and 101-104 say so, worker-honesty lines 8-13 and 33-37 agree, and adjudication lines 45-50 record the same exclusions. Target line 3 and the honesty note both mark the statements as unreviewed and frozen, with no long proof claimed."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "Target U1 displays only the inequality chain for Gamma*p_eps. The full proof should write the identity, the convention from H:homog and the justification of the Schwartz pairing.",
+      "Falsification lines 20-21 attribute 1d negativity to the accepted input without a trial. A one-line d1 trial or Section 8 white application would close this; it is not all-strength binding in arbitrary dimension.",
+      "Target lines 73-75 ask for a spatial Radon-factor control in arbitrary d and for a test of the replacement S_1=actual first-moment rate. Falsification-v0 exhibits d=1,2 and only a scope disclaimer respectively. The general formula checks independently.",
+      "accepted-upper-context.txt names the d1 consumer actual-shifted-event(4). The full proof should restate alpha_0=a, the prefactor limit and canonical-solution identification explicitly for raw-block equation (1) in all d.",
+      "Target line 61 says 'small spatial dilation', which means small r, i.e. a spatially spreading test. Lean positive_score uses the different exact r=(I/v)^(1/k). Both are valid, but the proof should state which one it uses.",
+      "The lean-reuse label_score entry mentions positive I and v although the theorem has no such hypotheses. These are application context, not type guards.",
+      "Nonemptiness of the positive smooth class is implicit in U4. A product bump suffices, and it may be stated explicitly.",
+      "The proof should fix real or complex Rayleigh tests consistently. For a real potential, q(u+iv)=q(u)+q(v), so the bottoms coincide.",
+      "The crosswalk's 'accepted ONLY in d1' understates that the old raw-variational result is also restricted to separable tests and d1 Riesz/white Gamma."
+    ],
+    "note": []
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is a statement, source, type and planned-application gate only. No long proof of U1-U4 was supplied or accepted, and the analytic checks here are reviewer calculations rather than a full proof certificate, human verification, novelty audit or kernel run.",
+    "Canonical TeX (notes/notes_stratonovich_ham_second_moment.tex), including E:cov, E:expansion and P:mild-construction, is not in the packet. Neither are direct-event-calibration.md, occupation-control-approximation.md, the Teschl pages or the earlier frozen scientific-packet paths. Exact accepted statements and excerpts were used instead.",
+    "SHA-256 values, byte matches, revision bindings and adoption identifiers could not be recomputed with read-only tools. They were only checked for mutual consistency in the supplied records. The custody file records active revision 64d9398 while this review's source revision is 723fbeb; the relation between them cannot be determined from the packet.",
+    "Accepted compact-family and raw-block theorems were read completely and used as accepted inputs at their stated scope, not recertified.",
+    "No Lean compile or replay was run; printed types and source were compared by reading."
+  ]
+}

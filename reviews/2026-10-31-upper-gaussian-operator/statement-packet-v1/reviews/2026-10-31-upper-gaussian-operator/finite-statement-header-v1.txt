@@ -1,0 +1,4 @@
+theorem cutoff_density_split (M x C nu : ℝ)
+    (hM : 0 < M) (hx : M ≤ x) (hC : 0 ≤ C)
+    (hnu : 1 < nu ∧ nu < 2) (hcut : 4 * C ≤ M ^ (2 - nu)) :
+    C * x ^ nu - x ^ 2 / 2 ≤ -M ^ 2 / 8 - x ^ 2 / 8 := by

@@ -1,0 +1,69 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "medium",
+  "source_coverage": [
+    "PDF_PAGE235 fullpages/page-235.png",
+    "PDF_PAGE235 bands/page-235-band-1.png",
+    "PDF_PAGE235 bands/page-235-band-2.png",
+    "PDF_PAGE235 bands/page-235-band-3.png",
+    "PDF_PAGE236 fullpages/page-236.png",
+    "PDF_PAGE236 bands/page-236-band-1.png",
+    "PDF_PAGE236 bands/page-236-band-2.png",
+    "PDF_PAGE236 bands/page-236-band-3.png",
+    "PDF_PAGE237 fullpages/page-237.png",
+    "PDF_PAGE237 bands/page-237-band-1.png",
+    "PDF_PAGE237 bands/page-237-band-2.png",
+    "PDF_PAGE237 bands/page-237-band-3.png",
+    "PDF_PAGE238 fullpages/page-238.png",
+    "PDF_PAGE238 bands/page-238-band-1.png",
+    "PDF_PAGE238 bands/page-238-band-2.png",
+    "PDF_PAGE238 bands/page-238-band-3.png",
+    "PDF_PAGE238 detail-views/page-238-omega-domain-subscript.png",
+    "Metadata only, not image evidence: .review/required-sources.json lines 1-105 (complete); source-manifest.json lines 1-232 (complete); VISUAL.md lines 1-29 (complete)"
+  ],
+  "checks": [
+    {
+      "claim": "P235: layout, margins, folio and fine glyphs render cleanly",
+      "verdict": "PASS",
+      "reason": "Read in the overview and all three bands. The heading '36 Uniform spectral rates and phase products' sits below the same top white space seen on pages 236-238, so it is a consistent page layout and not a gap. The two-line display for theta, nu, r and p is aligned. The display with T_R = T_R(C_t \u2297 I_{H_sp}) and the norm subscript H_I\u2192L^r(I;K(E)) is legible. Subsection '36.1 The actual E class and its own spectral constants', 'Lemma 36.1 (Unique potential and fixed-radius lift)' in italic, the display numbered (36.1) at the right margin, and the subscripts H^{-1/2},H^{1/2} and H^{1/2} are all legible. The 'Proof.' paragraph and the second paragraph about the original F operators read cleanly. The red links 31.4, 33 and 36.1 render. The folio 235 is centred. Line breaks such as '(3\u2212' / 'a\u2212\u03b1)/2)' are ordinary text breaks. I found no clipping, collisions or overfull lines. Band seams cut through the lines with E, L^E_q and 'depend on R ...', but every one of those lines is complete in an overlapping band."
+    },
+    {
+      "claim": "P236: layout, margins, folio and fine glyphs render cleanly",
+      "verdict": "PASS",
+      "reason": "Read in the overview and all three bands. The page opens by finishing the Lemma 36.1 proof, ending 'This proves Lemma 36.1.' with the QED box at the right. 'Proposition 36.2 (Spectral rate in E)' follows. The display for beta(V) has a stacked inf subscript (u\u2208H^1 over \u2016u\u2016_2=1) and \u03bb(L)=\u221a(\u2212\u03b2(V)), both clean. Display (36.2) shows \u2016P^E_V(t)\u2016 \u2264 8(1+K)^2(1+t)e^{\u03bb(L)t}, with the superscript readable. In (36.3) the number drops to its own line under the wide display. That is standard amsmath behaviour and causes no collision. In (36.4) the fractions \u00bd and 3/2 are inline-sized and legible. The supremum display \u27e8f,(T+t)^{-1}f\u27e9 = sup_u{...} is clean. The inline integral \u03c0^{-1}\u222b_0^\u221e t^{-1/2}... is legible. The last display, D(A^{1/4}) = H^{1/2} with 2^{-1/4} and L_K^{1/4}, keeps its fine scripts legible. Citation [8] is green and the links are red. Folio 236. I found no clipping, overlap or rendering artifacts."
+    },
+    {
+      "claim": "P237: layout, margins, folio and fine glyphs render cleanly",
+      "verdict": "PASS",
+      "reason": "Read in the overview and all three bands. This is a dense text page with no section heading. Fine scripts are legible: \u2016A^{-1/4}v\u2016_2, M_K = L_K^{1/4}, \u2016(u,v)\u2016^2_{E_A}, M_K^{-2} and M_K^2 \u2016\u00b7\u2016^2_E, and \u221a(3(1+K^2)). The square roots in Cos_t(h), Sin_t(h) = cos(t\u221ah), sin(t\u221ah)/\u221ah, and in cosh(t\u221a\u2212h), sinh(t\u221a\u2212h)/\u221a\u2212h, are fully drawn and their vincula are not clipped. The centred 2\u00d72 matrix display with large parentheses, \u221a(h+c) Sin_t(h) and \u2212h Sin_t(h)/\u221a(h+c), is clean. Inline e^{\u03bbt}, \u221ac te^{\u03bbt}, 2(1+K)(1+t)e^{\u03bbt}, S_E(\u2212v)LS_E(v) and the \u03b5-minimizer line are legible. Links [8], (36.2), 36.1, 33.4 and 22.4 render. Folio 237. One cosmetic point: inside the absolute-value bars of '| Cos_t | \u2264 e^{\u03bbt}' and '| Sin_t | \u2264 te^{\u03bbt}' there is visible operator spacing (see minor findings). It is not a defect."
+    },
+    {
+      "claim": "P238: layout, margins, folio and fine glyphs, including the 300 dpi omega-subscript detail, render cleanly",
+      "verdict": "PASS",
+      "reason": "Read in the overview, all three bands and the 300 dpi detail crop. The page finishes the Proposition 36.2 proof with 'This proves Proposition 36.2.' and a QED box. Subsection '36.2 Scalar-time averaging and actual mean budgets' follows, then 'Proposition 36.3 (Uniform completed-field averaging)' in italic. Displays (36.5), (36.6) and (36.7) are each centred, with their numbers flush right. The overlined W\u0304_R, \u03a9_\u03b4(M), \u039b_\u03b4(M) and the integral subscript I are all legible. The display A_\u03b4^{K(E)} T_R(C_t\u2297I)\u03a6 = T_R((A_\u03b4C_t)\u2297I)\u03a6 has a legible superscript. The display K(s) = max(...) and the Cauchy\u2013Schwarz integral with nested square roots and L^1 subscripts are clean. The script Z in L^r(I;Z) renders. Folio 238 and the closing QED box are present. In the detail crop, the norm-domain subscript in '\u03c9_\u03b4 = \u2016(A_\u03b4 \u2212 I)C_t\u2016_{H_t\u2192L^r(I)}' clearly shows the glyph sequence: capital italic H, a subscript that is a lowercase italic t (crossbar and hooked foot, not a capital I), a right arrow, L with superscript r, then (I). Whether it was meant to be H_I is out of scope and not judged here; it is recorded as a minor observation. I found no clipping or collisions."
+    },
+    {
+      "claim": "SCOPE_ALL_IMAGES: all 16 original images and the 1 supplemental detail view were inspected directly as images",
+      "verdict": "PASS",
+      "reason": "I opened each of the 17 required PNGs with the Read tool: four full-page overviews, twelve body bands and the page-238 omega-subscript detail. Each was inspected as rendered pixels. The manifest and required-sources files were read only as provenance metadata. I did not recompute any hashes."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "P238 detail view: the printed norm-domain subscript in \u03c9_\u03b4 = \u2016(A_\u03b4\u2212I)C_t\u2016_{H_t\u2192L^r(I)} is visibly a lowercase italic 't' (H_t). Nearby text on P238 uses H_I (e.g. \u2016\u03a6\u2016_{H_I}, 'completed H_I'), as does P235 (\u2016T_R\u2016_{H_I\u2192L^r(I;K(E))}). This is reported only as a visible glyph difference. Whether it is intended is a source or mathematics question outside this visual scope.",
+      "P236 display (36.3): the equation number sits on its own line below the wide display. This is standard automatic placement with no collision. It is noted for completeness only.",
+      "P237: the inline absolute values '| Cos_t | \u2264 e^{\u03bbt}' and '| Sin_t | \u2264 te^{\u03bbt}' have visible operator spacing inside the bars. This is cosmetic and fully legible.",
+      "P238: displays (36.5)-(36.7) are centred one by one rather than aligned at the relation sign, so the left edges are ragged. This reads as a deliberate gathered layout, not a defect."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is a visual review of layout, rendering and legibility only, for PDF pages 235-238. It does not assess mathematical correctness, source fidelity, cross-reference targets, adoption or delivery.",
+    "The full-page overviews are low resolution (773\u00d71000). Fine-glyph judgements rest mainly on the 977\u00d7700 bands and, for one subscript, the 300 dpi detail crop. Tiny scripts outside the detail crop were judged at band resolution only.",
+    "I did not recompute file hashes or PDF/source provenance. The manifest was taken as metadata only.",
+    "This is an AI review, not human verification, and it cannot stand in for the required whole mathematical reviewers or any Kimi HIGH gate."
+  ]
+}

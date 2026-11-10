@@ -1,0 +1,54 @@
+{
+  "scope": "Exact rational finite block-extension/Young composition controls. E markers and constant markers are abstract direct-sum coordinates, NOT a finite-grid proof that continuum constants lie outside Sobolev E. No replacement SPDE or continuum certification.",
+  "cutoff_independence": "PASS (inactive fourth coordinate and two different constant localization columns)",
+  "constant_response_negative_control": "Dropping the two constant-response columns would falsely give zero first response; Af[0,4]=Bf[1,5]=1.",
+  "left_order_negative_control": "Chronological evolution (I+B)(I+A) differs from (I+A)(I+B).",
+  "C0_only_negative_control": [
+    {
+      "k": 1,
+      "loop_count": 1,
+      "driver_coordinate_sup": "1",
+      "theta_three_quarters_seminorm_lower_to_fourth": 64,
+      "endpoint_difference_e1_from_second_constant": "-1"
+    },
+    {
+      "k": 2,
+      "loop_count": 4,
+      "driver_coordinate_sup": "1/2",
+      "theta_three_quarters_seminorm_lower_to_fourth": 256,
+      "endpoint_difference_e1_from_second_constant": "-1"
+    },
+    {
+      "k": 3,
+      "loop_count": 9,
+      "driver_coordinate_sup": "1/3",
+      "theta_three_quarters_seminorm_lower_to_fourth": 576,
+      "endpoint_difference_e1_from_second_constant": "-1"
+    },
+    {
+      "k": 4,
+      "loop_count": 16,
+      "driver_coordinate_sup": "1/4",
+      "theta_three_quarters_seminorm_lower_to_fourth": 1024,
+      "endpoint_difference_e1_from_second_constant": "-1"
+    },
+    {
+      "k": 8,
+      "loop_count": 64,
+      "driver_coordinate_sup": "1/8",
+      "theta_three_quarters_seminorm_lower_to_fourth": 4096,
+      "endpoint_difference_e1_from_second_constant": "-1"
+    }
+  ],
+  "C0_scope": "Small supremum of the driving path alone does NOT imply Young solution convergence. Four-segment loops; theta=3/4 seminorm diverges. Target requires actual Ctheta convergence, theta>1/2.",
+  "actual_source_first_order_quadrature_witness": {
+    "x": "0.0",
+    "y": "0.0",
+    "n": 1,
+    "k": 1,
+    "full": "0.00832639739859734961627204336887",
+    "masked": "0.0045503328910919147848632117814",
+    "ratio": "0.5464948012039944102928991"
+  },
+  "actual_source_witness_scope": "Accepted finite positive quadrature, original singular d2 source model. Strictly positive first-order response; no error-controlled continuum approximation."
+}

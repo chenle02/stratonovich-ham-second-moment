@@ -1,0 +1,7 @@
+# Front-I53: scientific selection and actual capacity
+
+Root approved all 168 whole source-origin roles for the exact 53-proof constructor/initial-deductions/upper-bound front before counting. Every assigned proof and consumed outside implication must be derived or explicitly conditioned. Higher proof text is visible context, not accepted work. The exact source cutoff law and original all-model goal remain intact.
+
+The complete literal input has 139 full-byte frames. Root independently compared every frame with all source origins, all aliases with the scientific selection, and the exact joined hash/count arithmetic. The first joined count is 841978 tokens; unchanged hard allowance311296 gives1153274, exceeding context by104698 before unknown framing. No provider call or post-count source/reserve cut occurred. Inert runtime preparation is preserved but cannot launch.
+
+The complete 53-proof input remains immutable. The next coherent mathematical assignment is the sixteen-proof upper engine036–051, including its physical/spectral foundation, phase and interval estimates, finite source comparison, tails and upper conclusion. Earlier constructor/initial proofs001–035+214+external215 remain separate required debt. Unaccepted cross-front inputs must stay conditional until independently discharged; favorable component reports alone cannot establish the original result. No manuscript adoption or full-goal acceptance follows.

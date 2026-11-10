@@ -1,0 +1,22 @@
+[
+  {
+    "attempt": "dev-01",
+    "exit": 1,
+    "first_signature": "PositiveGram.lean:17:Invalid field mp on monotonicity function",
+    "other_error": "line32 needs multiplication through finite sum and real inner symmetry",
+    "new_evidence": "read complete pinned type; correct mul_le_mul_iff_right\u2080 at GroupWithZero/Defs:297; prettyprinted finite-sum goal",
+    "scope": "proof bodies only; all4headers unchanged; failedsource and logs preserved"
+  },
+  {
+    "attempt": "dev-02",
+    "exit": 1,
+    "first_signature": "PositiveGram.lean:18:rewrite add_mul fails",
+    "new_evidence": "actual goal is w*LHS<=w*RHS; pinned Defs297 is fixed-left a, Defs302 mul_le_mul_iff_left\u2080 is fixed-right a, matching add_mul/div_mul_cancel",
+    "repair": "select exact fixed-right iff; no header change; dev02source/log preserved"
+  },
+  {
+    "attempt": "dev-03",
+    "exit": 0,
+    "scope": "all4targets compile,no warnings,headers unchanged; audit/replay/controls still pending"
+  }
+]

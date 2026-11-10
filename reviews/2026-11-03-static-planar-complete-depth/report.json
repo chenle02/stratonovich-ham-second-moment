@@ -1,0 +1,94 @@
+{
+  "schema": "subscription-review-report/1",
+  "category": "paper-review-deepseek",
+  "model": "deepseek/deepseek-v4-pro",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "confidence_justification": "All six target statements/proofs and the required finite arithmetic were reconstructed against the supplied exact text and primary pinpoints. The main inherited elements are the published Chen--Hu fixed-order/coefficient theorems and Chen2023(1.4) finiteness; these were verified in class, domain, data, normalization and used conclusion from the supplied primary text, without reproving their external proofs (permitted by scope). The arithmetic for the singular line, k=1..8 counts, dilation/p2 multipliers and unnormalized Holder was re-derived and matches the supplied Fraction output. Remaining uncertainty is limited to: no code execution, partial author-manuscript page supply, and no numeric evaluation of the imported variational constant itself.",
+  "source_coverage": "Read and reconstructed: notes/notes_stratonovich_ham_second_moment.tex LF3000-3046 (Lemma static-holder-input), LF3048-3242 (Proposition static-holder-upper), LF3290-3447 (Lemma planar-endpoints), LF3449-3518 (Lemma planar-static-input), LF3520-3699 (Proposition planar-upper), LF3701-3716 (Corollary planar-range); named inputs P:mixed (LF436-509), L:joint-fixed-order (LF1103-1198), L:translated-covariance-CS (LF708-802), L:d1-spatial (LF2062-2136), P:d1-upper (LF2147-2234), L:low-alpha-convolution (LF2251-2309), L:alpha-one-convolution (LF2311-2373), P:low-alpha-upper (LF2375-2464), P:masked-source-moments (integrated_masked_moments LF102-165), L:damped-homogeneous-norms (LF586-674). Primary read: chen-hu-full.txt pp.2144-2147, 2149-2153, 2165, 2173-2180 (1.8/1.11, 2.17-2.22, 3.8(i), 5.1, 5.15); chen-2023-full.txt p.2 (Theorem1.1(1.4)); chen-author-selected.txt physical pp.1-3,7-15,21 for time-dependency displays (2.9),(2.11),(2.23)-(2.25), Theorem3.1/pp.13-14. Supplied author claims to reconstruct: supplements/static-planar-complete-mathematics.txt, finite-check-tasks.txt, finite-exact-check.py, finite-exact-results.json, finite-execution-summary.txt. Published Chen--Hu/Chen2023 statements are inherited/imported, not re-proved.",
+  "checks": {
+    "SP024 PROOF024 L:static-holder-input": {
+      "claim": "For static gamma_chi=c|x|^(-chi), d in {2,3}, 1<chi<2, full total-order coefficients B_k(t)=sum_{m=0}^{2k} E[U_m U_{2k-m}] obey B_0=1 and B_k(t)<=C_st^k t^((4-chi)k)/(k!)^(3-chi).",
+      "verdict": "PASS",
+      "reason": "The proof reconstructs B_k via Chen--Hu (2.17)/(2.19) as the complete nonnegative sum over all 2k+1 splits and all pairings, including self-pairs and the two distinct empty-chain ends; no orthogonality of different orders is asserted. Fixed-order L^2 existence is imported from Chen--Hu Theorem3.8(i). Only the finite upper coefficient rate from (5.1)/(5.15) at p=2 is used: limsup_k (1/k)log[(k!)^{3-chi}B_k(1)]<infty and B_k(t)=t^((4-chi)k)B_k(1). The finite-k enlargement to a single all-k C_st is explicitly separated from the asymptotic Lambda_st, and B_0=1/zero coefficients cause no log-zero problem."
+    },
+    "SP025 PROOF025 P:static-holder-upper": {
+      "claim": "Isotropic Riesz interpolation in d=2,3 yields A_k(t)<=C^k t^((4-alpha-alpha0)k)/(k!)^(3-alpha) and E u^2<=exp(q C^{1/q} t^kappa) with C=C_low^theta C_st^(1-theta), C_low=2 Z_b0 pi V_1.",
+      "verdict": "PASS",
+      "reason": "Holder is applied on one common deterministic positive diagram measure nu_{k,t,eta} carrying every split and pairing; H_alpha<=H_1^theta H_chi^(1-theta) by pointwise gamma_alpha=gamma_1^theta gamma_chi^(1-theta) with same amplitude c, and Q_delta<=T_alpha0=T_b0^theta. L_k^{eps,eta} is treated only as a deterministic raw low-temporal integral and bounded by C_low^k t^((3-b0)k)/(k! k^k); B_k^{eps,eta} is the actual regularized static coefficient. Fixed-order limits are taken (Green smoothing before noise smoothing in d=3, then Chen--Hu 3.8(i) and L:joint-fixed-order) before applying Lemma024, avoiding spatial-heat monotonicity and uniform static smoothed asymptotics. The exponent identities 2theta+(1-theta)(3-chi)=3-alpha and theta(3-b0)+(1-theta)(4-chi)=4-alpha-alpha0 are exact, and the l^q-sum scalar inequality is elementary."
+    },
+    "SP026 PROOF026 L:planar-endpoints": {
+      "claim": "Planar Gamma of degree alpha admits finite angular mass S, weighted endpoints Gamma_low=|x|^{alpha-1}Gamma and Gamma_st=|x|^{alpha-chi}Gamma, closing bound S/4, and unnormalized Gaussian Holder.",
+      "verdict": "PASS",
+      "reason": "Scaling forces Gamma({0})=0; polar rectangles give the genuine polar disintegration Gamma=r^{1-alpha}dr sigma(domega) with sigma=(2-alpha) times the unit-cone mass, so the two endpoints have polar measures dr sigma and r^{1-chi} dr sigma (covariance degrees 1 and chi). Positive definiteness of Gamma_low is proved directly from the full-sphere line representation with the essential factor 1/2 and a line/perpendicular Fubini square; Gamma_st is proved PD by positive Gaussian mixture |x|^{-lambda}, not by a fractional power of a distribution. The wave-kernel line integral gives exactly 1/2 on the open support, producing (G_h*Gamma_low)(z)<=S/4, preserved under Gaussian convolution with mass one. Holder is on the unnormalized measure p_eps(z-x)Gamma(dx) with no mass normalization and no origin atom."
+    },
+    "SP027 PROOF027 L:planar-static-input": {
+      "claim": "Arbitrary nonnegative even PD tempered Radon Xi on R^2 with Xi(rA)=r^(2-chi)Xi(A), 1<chi<2, has C_st with B_k<=C_st^k t^((4-chi)k)/(k!)^(3-chi), B_0=1.",
+      "verdict": "PASS",
+      "reason": "The zero-covariance case is handled separately (U_n=0, B_k=0 for k>=1, C_st=1, B_0=1). Fourier uniqueness transfers homogeneity to the positive spectral measure (mu(rA)=r^chi mu(A)); a dyadic shell sum verifies static Dalang without any angular density. Chen2023 Theorem1.1(1.4) is imported only for finiteness of the square-root half-gradient supremum (not the nonsquare-root (1.5)), and Chen--Hu (2.18) is cited for the generalized-covariance convention. The coefficient input re-imports (5.1)/(5.15) at p=2 for general homogeneous covariances, then makes the finite-k C_st enlargement."
+    },
+    "SP028 PROOF028 P:planar-upper": {
+      "claim": "Planar homogeneous-covariance upper bound: A_k(t)<=C^k t^((4-alpha-alpha0)k)/(k!)^(3-alpha), E u^2<=exp(q C^{1/q} t^kappa), C=C_low^theta C_st^(1-theta), C_low=Z_b0 S.",
+      "verdict": "PASS",
+      "reason": "The common measure nu_{k,t} is finite and identical for all three covariance profiles; H_Gamma<=H_low^theta H_st^(1-theta) and Q_delta<=T_b0^theta reduce A_k^{eps,delta} to L_k^eps^theta B_k^eps^(1-theta) by Holder on the full direct-sum measure. The closing bound S/4 with opening masses gives (S/2)^k t^k/k^k; the temporal sum over pairings (symmetric only as a sum, not for one pairing) and splits gives 2^k(Z_b0 t^(2-b0))^k/k!, i.e. C_low=Z_b0 S. Fixed-order limits use Chen--Hu 3.8(i) for the static endpoint and L:joint-fixed-order for the target; no interpolation of distinct temporal cutoffs, no spatial-heat monotonicity and no smoothed static asymptotic are assumed. Exponent identities and the nonnegative series are exact."
+    },
+    "SP029 PROOF029 C:planar-range": {
+      "claim": "In d=2 the upper bound E u^2<=exp(C_2 t^kappa) holds throughout 0<alpha<2-alpha0 with zero-covariance convention u=1, C_2=0.",
+      "verdict": "PASS",
+      "reason": "For 0<alpha<=1 the proof invokes P:low-alpha-upper (general nonnegative PD Radon covariance, all dimensions including d=2); for 1<alpha<2-alpha0 it invokes P:planar-upper, whose parameter interval alpha0<theta<2-alpha is nonempty precisely because alpha+alpha0<2. A nonnegative generalized covariance is handled as the homogeneous measure with Gaussian approximations. The zero-covariance case gives the trivial free solution explicitly."
+    },
+    "APP-STATIC-CLASS-COEFFICIENT": {
+      "claim": "Actual static class and p2 total-order coefficient with published 5.15 coefficient/log type.",
+      "verdict": "PASS",
+      "reason": "PROOF024 uses isotropic gamma_chi=c|x|^(-chi) with 1<chi<2 and d=2,3, admissible in Chen--Hu's stated class; PROOF027 uses arbitrary nonnegative even PD tempered Radon Xi of covariance degree chi in d=2, also explicitly allowed via the source's generalized covariance convention. The published (5.15) at p=2 is a coefficient-rate statement: limsup_k (1/k)log[(k!)^{3-chi}B_k(1)]<=log Lambda_st with Lambda_st=2(2 sqrt(M)/(4-chi))^{4-chi}; its right side is the log of a full positive coefficient quantity, not a normalized moment/time asymptotic. The unit-gradient M and half-gradient E_half are on the same unit-L^2 H^1 domain F_d, with E_half=2^{chi/(4-chi)}M by the one-to-one same-domain dilation s=2^{2/(4-chi)}."
+    },
+    "APP-HOLDER-ACTUAL-LIMITS": {
+      "claim": "Holder at common positive diagram measure with actual regularized Gaussian/Bochner limits and Green-before-noise order.",
+      "verdict": "PASS",
+      "reason": "In both PROOF025 and PROOF028 the Holder step is carried out after each actual Gaussian moment formula, on the shared deterministic diagram measure, so no joint Gaussian coupling of different endpoint noise models is introduced. The low coefficient L_k is kept as a deterministic raw-temporal integral, while the static B_k is the actual regularized static coefficient. In d=3 the Green smoothing is removed before noise smoothing (weak convergence of finite Green-measure products against bounded continuous covariances, with identical masses prod_l h_l), and then noise width removal uses Chen--Hu 3.8(i) for static orders and L:joint-fixed-order for the target, with L^1 convergence of the finite split products."
+    },
+    "APP-PLANAR-CONSTANTS-RANGE": {
+      "claim": "Planar endpoint constants and full strict parameter window.",
+      "verdict": "PASS",
+      "reason": "The angular mass S=sigma(S^1) is physical, not normalized to one. The closing bound is S/4; the independent spectral normalization gives V_low=S/(2pi), hence pi V_low/2=S/4, and C_low=Z_b0 S. The interpolation weight theta=(chi-alpha)/(chi-1) satisfies theta(alpha-1)+(1-theta)(alpha-chi)=0, and the strict window alpha0<theta<2-alpha, b0=alpha0/theta∈(0,1), chi∈(alpha,2) is nonempty throughout 1<alpha<2-alpha0; the full planar range is 0<alpha<2-alpha0 including the low-alpha branch and Gamma=0."
+    },
+    "APP-SCOPE-CALIBRATIONS": {
+      "claim": "Riesz-only d3 scope; C_st vs Lambda; Jensen/source qualifications retained.",
+      "verdict": "PASS",
+      "reason": "The d=3 use in PROOF025 is only the isotropic Riesz transfer, and the invariant d=2 endpoint construction in PROOF026-027 does not yield a generic d=3 angular factorization. The all-time C_st is explicitly distinguished from the nonsharp asymptotic Lambda_st (which alone controls only a limsup of coefficient kth roots); a finite-k enlargement is required and is provided. Actual Jensen is retained with its valid first-moment lower premise; no equality with intrinsic C2, Chen's printed L*/L_* or an auxiliary S1 is inferred."
+    },
+    "FINITE-LINE-NORMALIZATION": {
+      "claim": "Singular-line parameters, amplitudes 1 and 3, dilation/p2 multiplier, spectral closing and unnormalized Holder.",
+      "verdict": "PASS",
+      "reason": "For Gamma=c|x1|^(-1/4)dx1 delta0(dx2), alpha=5/4, a=1/5, theta=3/8: chi=(5/4-3/8)/(5/8)=7/5, b=(1/5)/(3/8)=8/15, q=7/4, beta=51/20, kappa=(51/20)/(7/4)=51/35, Z_b0=2/((7/15)(22/15))=225/77. Then sigma=c(delta_e1+delta_-e1), S=2c, closing=S/4=c/2, V_low=c/pi, C_low=Z_b0 S=450c/77 (so c=1 gives 1/2 and 450/77; c=3 gives 3/2 and 1350/77). Gamma_low=c line Lebesgue (zero radial power, PD directly), Gamma_st=c|x1|^(-2/5) line. Dilation: s=2^(10/13), sqrt-energy power=s^(chi/2)=2^(7/13), half-gradient power=s^2/2=2^(7/13), so E_half=2^(7/13)M; the p=2 coefficient power-of-two factor is 2^-((3-chi))2^(4-chi)=2^1. Unnormalized Holder control at radii 1 and 2^40 with weights 2,3 satisfies mass^8<=low^3 * static^5."
+    },
+    "FINITE-TEMPORAL-HOLDER": {
+      "claim": "All k=1..8 pairing/split counts and the finite-k enlargement overshoot.",
+      "verdict": "PASS",
+      "reason": "P_k=(2k)!/(2^k k!), sum_{m=0}^{2k}1/[m!(2k-m)!]=2^{2k}/(2k)!, and their product equals 2^k/k!, verified for k=1..8 (1,3,15,105,945,10395,135135,2027025 pairings and temporal rollups 2,2,4/3,2/3,4/15,4/45,8/315,2/315). The square follows only after summing over all pairings and splits; one pairing alone is generally not symmetric under time labels. Combined with the S/4 closing and opening AM-GM this gives the low bound (Z_b0 S)^k t^((3-b0)k)/(k! k^k). The abstract sequence d_1=100, d_k=1 (k>=2) has lambda_s=limsup d_k^{1/k}=1, which does not bound d_1; hence C_st must dominate every finite kth root separately and is not the asymptotic Lambda_st."
+    },
+    "PRIMARY-STATIC-NORMALIZATION": {
+      "claim": "Published 5.15 coefficient/log type and same-domain half-gradient finiteness imported from Chen2023(1.4), not (1.5).",
+      "verdict": "PASS",
+      "reason": "Chen--Hu (5.15) is imported as a factorially normalized coefficient rate at fixed p: at p=2, limsup_k (1/k)log[(k!)^{3-chi}B_k(1)]<=log[2(2 sqrt(M)/(4-chi))^{4-chi}]. The finiteness input is Chen2023 Theorem1.1(1.4), the square-root quartic with the HALF-gradient penalty on the unit-L^2 H^1 domain F_d; finiteness of M then follows via M=E_half/2^{chi/(4-chi)}. The nonsquare-root variational expression (1.5) is not substituted for it. No static white numerical corollary, no Gamma(0), and no normalization of S to one is used."
+    }
+  },
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "The published Chen--Hu Theorem3.8(i)/(5.1)/(5.15) and Chen2023 Theorem1.1(1.4) are inherited under their exact hypotheses; their full external proofs were not re-derived, only their class/domain/data/normalization and used conclusions were verified (within the allowed scope).",
+      "The Chen author time-dependency manuscript is supplied only as selected physical pages 1-3,7-15,21; all displays actually cited by PROOF025/028 ((2.9),(2.11),(2.23)-(2.24), pp.13-14, Theorem3.1) are present in those pages, and no missing page was needed.",
+      "Finite-exact-check.py was treated as re-derived arithmetic evidence and cross-checked by hand against the exact fractions in finite-exact-results.json; it was not executed by this reviewer.",
+      "C_st and Lambda_st are validated qualitatively and in their power-of-two/coefficient structure, but their absolute numerical values for a specific covariance are not computed because they depend on the imported variational supremum M, which is not numerically evaluated here.",
+      "The reconstruction confirms the scope notes: no equality with intrinsic C2, Chen's printed L*/L_*, or an auxiliary S1 is forced, and no all-Gamma d=3 factorization follows from PROOF026-027."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "Review confined to PROOF024-029 and their named application joins; the full 214-map, later intrinsic-constant theorem, other families, and final-goal cold clearance were not reviewed.",
+    "No tools, build, search, execution, delegation, or hidden-model fallback were used; all verification is by inspection of the supplied text and by hand reconstruction of the supplied arithmetic.",
+    "No source-image/render or whole-main manual re-derivation was performed; primary text verification used the provided text-only editions at the stated pinpoints.",
+    "The inherited published theorems are accepted as imported inputs per the stated scope; this review does not constitute an independent proof of Chen--Hu or Chen2023."
+  ]
+}

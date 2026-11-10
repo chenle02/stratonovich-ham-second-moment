@@ -1,0 +1,596 @@
+# Mathematical detail audit of the six assigned F001 proofs
+
+This is a derivation audit only. No overall verdict, confidence label, adoption statement, or source edit is requested or supplied. The report is read as evidence, not as a scale axiom.
+
+---
+
+## 0. Falsification-first items
+
+### 0.1 The k=1 spatial-white-control check of L:spatial-wick-measures (005)
+
+Take $d=1$, $\alpha=1$, $\Gamma=\delta_0$ (amplitude $c=1$), and the single pair $D=\{\{1,2\}\}$ of $2k=2$ vertices. There are exactly two chain types.
+
+**Cross density.** Two chains of length one have independent roots, so $x_1=z_1$, $x_2=z_2$ and
+
+\[
+J_{\epsilon,D}(r_1,r_2)=\iint G_{r_1}(\mathrm dz_1)G_{r_2}(\mathrm dz_2)\,(p_{\epsilon_1+\epsilon_2}*\delta_0)(z_1-z_2).
+\]
+
+In the white limit the covariance is $\delta_0$, and with $G_r(z)=\tfrac12\mathbf 1_{\{|z|<r\}}$:
+
+\[
+J_D(r_1,r_2)=\int G_{r_1}(z)G_{r_2}(z)\,\mathrm dz=\frac12 \min(r_1,r_2).
+\]
+
+**Self density.** One chain of length two has $x_1=z_1$, $x_2=z_1+z_2$, and $\delta_0(x_1-x_2)=\delta_0(z_2)$, giving
+
+\[
+J_D(r_1,r_2)=\iint G_{r_1}(\mathrm dz_1)G_{r_2}(\mathrm dz_2)\delta_0(z_2)
+=G_{r_2}(0)\int G_{r_1}(\mathrm dz_1)=\frac12 r_1.
+\]
+
+By symmetry the $(0,2)$ orientation gives $\tfrac12 r_2$. Hence the asserted self density $r_1/2$ and cross density $\min(r_1,r_2)/2$ are exact.
+
+**Homogeneity.** For k=1 the exponent is $(4-\alpha)k=3$. Directly: the two Green factors each scale by $c$ under $(r,z)\mapsto(cr,cz)$, the single covariance of degree $-\alpha=-1$ scales by $c^{-1}$, and the two time differentials by $c^{2}$, giving $c^{2}c^{-1}c^{2}=c^{3}$, concordant with $c^{(4-\alpha)k}$.
+
+**Laplace transform and faces.** For the cross case, the spectral measure of $\delta_0$ is $\mu(\mathrm d\xi)=\mathrm d\xi/(2\pi)$ in the convention $\gamma(x)=\int e^{i\xi x}\mu(\mathrm d\xi)$. The formula (E:spatial-positive-laplace) gives, with $\eta_1=\xi$, $\eta_2=-\xi$,
+
+\[
+L_{\epsilon,D}(\lambda_1,\lambda_2)
+=\int_{\mathbb R}\frac{\mathrm d\xi}{2\pi}\,
+e^{-(\epsilon_1+\epsilon_2)\xi^2/2}
+\frac{1}{(1+\lambda_1)^2+\xi^2}
+\frac{1}{(1+\lambda_2)^2+\xi^2}>0.
+\]
+
+This is manifestly positive and increasing as $\epsilon_1+\epsilon_2\downarrow 0$. Sending $\lambda_1\to\infty$ (dominated by the $\lambda_1=0$ integrand, which is integrable) gives $L_D(\infty,\lambda_2)\to 0$, i.e. $\nu_D\{r_1=0\}=0$; similarly for $r_2=0$. The compact-cube $c\downarrow0$ argument gives no mass at $r_l=\infty$. The horizon faces $\ell_1=r_1=T$, $\ell_2=r_2=T$ have Lebesgue-measure zero. All boundary faces have zero $\rho_D$-mass, exactly as asserted.
+
+**Conclusion for 0.1.** The formulas and homogeneity claimed in the prompt are verified. No candidate-source failure appears here.
+
+### 0.2 The 040 $\rho$-power: report reason is false; the source is correct
+
+L:fock-form has, in the actual F001 text,
+
+\[
+H_i=A_\rho^{-1/2}M_{e_i}A_\rho^{-1/2},
+\qquad
+\sum_i\|H_if\|_2^2
+=\frac1{(2\pi)^3}\int
+\frac{|\widehat f(\eta)|^2}{\rho^2+|\eta|^2}\,J_{\rho,\epsilon}(\eta)\,\mathrm d\eta,
+\]
+
+with $J_{\rho,\epsilon}(\eta)\le R_\alpha\rho^{\alpha-2}$ from L:phase-contractions. Hence, pointwise in $\eta$,
+
+\[
+\frac{J_{\rho,\epsilon}(\eta)}{\rho^2+|\eta|^2}
+\le R_\alpha\rho^{\alpha-2}\frac1{\rho^2+|\eta|^2}
+\le R_\alpha\rho^{\alpha-4},
+\]
+
+so the actual source concludes
+
+\[
+\sum_i H_i^2\le R_\alpha\rho^{\alpha-4}I.
+\]
+
+The Kimi report's PROOF040 reason instead wrote $\sum_i\|H_if\|^2\le R_\alpha\rho^{\alpha-2}\|f\|^2$, which drops the factor $(\rho^2+|\eta|^2)^{-1}\le\rho^{-2}$. That is a report-reason error, not a source fault: the missing $\rho^{-2}$ is material for small $\rho$.
+
+**Admissible counterexample to the report form.** Let $d=3$, $\alpha=1$, $\Gamma=c\,\mathrm dx_1\mathrm dx_2\delta_0(\mathrm dx_3)$, $c>0$. As derived in the supplied normalization record, the spectral measure is
+
+\[
+\mu=\frac{c}{2\pi}\delta_0(\mathrm d\xi_1)\delta_0(\mathrm d\xi_2)\mathrm d\xi_3,
+\qquad
+R_1=\frac{\alpha\pi V}{2\sin(\pi\alpha/2)}=\frac c2,\qquad V=\mu(B_1)=c/\pi .
+\]
+
+As $\epsilon\downarrow0$,
+
+\[
+J_{\rho,\epsilon}(\eta)\uparrow
+\frac c{2\sqrt{\rho^2+|\eta_\perp|^2}},\qquad \eta_\perp=(\eta_1,\eta_2).
+\]
+
+For $|\eta|\le\rho/2$,
+
+\[
+J_0(\eta)\ge\frac{2R_1}{\sqrt5}\,\rho^{-1}>\frac45 R_1\rho^{-1},
+\qquad
+(\rho^2+|\eta|^2)^{-1}\ge\frac45\rho^{-2}.
+\]
+
+Take a real unit $L^2$ function $f$ with even smooth Fourier support in $\{|\eta|\le\rho/2\}$. Then
+
+\[
+\sum_i\|H_i f\|_2^2
+=\frac1{(2\pi)^3}\int\frac{|\widehat f|^2}{\rho^2+|\eta|^2}J_{\rho,\epsilon}(\eta)\mathrm d\eta
+\ge \frac{16}{25}R_1\rho^{-3}\frac{\|\widehat f\|^2_{(2\pi)^{-3}\text{-norm}}}{1}
+=\frac{16}{25}R_1\rho^{-3}.
+\]
+
+At $\rho=1/2$ this is $\frac{64c}{25}>c=R_1\rho^{-1}$. Thus the report's claimed bound $R_\alpha\rho^{\alpha-2}$ fails. The actual source bound is $R_1\rho^{\alpha-4}=R_1\rho^{-3}=4c$ for $\rho=1/2$, and $\frac{64c}{25}<4c$, so the source is consistent. The monotone approximation by finite positive $\epsilon$ makes the lower bound available for all sufficiently small fixed positive widths (no unregularized instantaneous white pointfield is asserted).
+
+### 0.3 Legal bounded controls for L:complex-phase and L:fixed-split
+
+**L:complex-phase abstract hypothesis.** $A_0\ge0$ bounded self-adjoint, $B$ bounded self-adjoint, and
+
+\[
+\|A_\rho^{-1/2}BA_\rho^{-1/2}\|\le d\,\rho^{a-2},\qquad \rho>0,\quad 0<a<1 .
+\]
+
+A legal nonzero test: $H$ real or complex, $A_0=I$, $B=bI$, $b\ne0$. Then
+
+\[
+\|A_\rho^{-1/2}BA_\rho^{-1/2}\|
+=\frac{|b|}{\rho^2+1}
+\le|b|,\qquad\rho\le1,
+\qquad
+\frac{|b|}{\rho^2+1}\le|b|\rho^{-2}\le|b|\rho^{a-2},\qquad\rho\ge1 .
+\]
+
+So $d=|b|$ (for any $a\in(0,1)$) satisfies the hypothesis on the full halfline. The illegal variant is $A_0=0$ with $B\ne0$: then $\|A_\rho^{-1/2}BA_\rho^{-1/2}\|=\rho^{-2}\|B\|$, which cannot be $\le d\rho^{a-2}$ as $\rho\downarrow0$ (the right side $\to\infty$ while $\rho^{-2}\|B\|\to\infty$ faster? No — the comparison is $\|B\|\le d\rho^{a}$, which fails as $\rho\downarrow0$ unless $B=0$). So the false form bound route is avoided precisely by using $A_0=I$-type regularizations or nonnegative $A_0$ with a spectral band, as in the candidate.
+
+**Degree-split legal controls.** For L:fixed-split, a legal control is a finite set of intervals with $\sigma_i>0$, field coordinates $g_{ij}$ with $\sum_j e_{ij}(x)^2=v_{\epsilon,i}<\infty$ at fixed width, Hermite cutoff $N_i=2k_i$, and spatial band $S_b$. The three singleton splits are:
+
+- $(p_i,q_i)=(2,0)$: the color appears twice on the first copy only; treated entirely inside the background segment on copy one, with $\ell_i=1_{r_i>0}+1_{q_i>0}=1$. The two insertions create then annihilate the same color, so the vacuum-to-degree-two polynomial includes the self-contraction (the $\sigma_i^2$ variance), with no cross-copy contraction.
+- $(p_i,q_i)=(0,2)$: the mirror copy, same charges.
+- $(p_i,q_i)=(1,1)$: the color is fresh on both copies, inserted once per copy; the fresh-vacuum one-sided insertion bound applies on each copy, and the cross-copy contraction is carried by the Cauchy–Schwarz product of the two copies.
+- $k_i=0$ (empty cell): the amplitude is evaluated at zero and the color is removed exactly.
+- $\sigma_i=0$: omitted; zero covariance $R_\alpha=0$ reduces the phase to free evolution before any division by $\delta_{\alpha/2}$ or a radius.
+
+The noncommuting background is retained because the spatial multiplications $M_{e_i}$ do not commute, and L:fixed-split never commutes spatial operators: segment products are ordered chronologically, and the cylinder/phase-weight changes use only the ending-only metric accounting.
+
+A subtlety explicitly survives: the fresh-insertion bound
+
+\[
+\|J_i\|^2=\sigma_i^2\sum_j\|A_\rho^{-1/2}S_bM_{e_{ij}}S_bu\|^2
+\le\sigma_i^2R_\alpha\rho^{\alpha-2}\|u\|^2
+\]
+
+uses only the column variance of a *fresh* Gaussian color, whose coordinates are independent of the incoming state, and the spatial operators act as the identity on all Gaussian factors. It does **not** assert the false general "one-variance Schatten bound" for repeated insertions of an already occupied color; that case is handled by the background Fock row bound $2\sqrt{N+1}$ (creation plus annihilation), not by the vacuum one-sided bound.
+
+---
+
+## 1. L:spatial-wick-measures (005)
+
+**One-line object.** The transform in (E:spatial-positive-laplace) is exactly the joint space-time Laplace–Fourier image: each vertex contributes the wave Laplace kernel
+
+\[
+\int_0^\infty e^{-(1+\lambda_l)r}G_r(\mathrm dz)\mathrm dr
+\;\longleftrightarrow\;
+\frac1{(1+\lambda_l)^2+|\eta_l|^2},
+\]
+
+and the covariance pair $(j,h)$ contributes $e^{-(\epsilon_j+\epsilon_h)|\xi_e|^2/2}\mu(\mathrm d\xi_e)$. Positivity of the integrand gives transform monotonicity as any $\epsilon_l$ decreases. This is not pointwise monotonicity of a density.
+
+**Uniform mass.** Replacing every edge width by $2\epsilon_*$ only increases the transform, so it suffices to bound the common-width value at $\lambda=0$. The wavelet–heat identity
+
+\[
+\int_0^\infty e^{-t}G_t(\mathrm dx)\mathrm dt
+=\frac12\int_0^\infty e^{-u/2}p_u(x)\mathrm du\,\mathrm dx
+\]
+
+converts the $2k$ Green factors into two Brownian chains with gap measures $e^{-u_l/2}\mathrm du_l$, a global factor $2^{-2k-2}$, and one covariance $\gamma_{2\epsilon_*}$ per edge. Spectral Cauchy–Schwarz (valid because $\gamma_{2\epsilon_*}$ is a positive-definite covariance) bounds each cross occupation by
+
+\[
+0\le A_{12}\le\sqrt{S^{(1)}S^{(2)}},
+\qquad
+S_b(T)=\int_0^T\int_0^T\gamma_b(B_s,B_t)\mathrm ds\mathrm dt.
+\]
+
+If the pairing has $v_1,v_2$ self-pairs and $w$ cross-pairs ($v_1+v_2+w=k$), the product is at most $S_1^{v_1+w/2}S_2^{v_2+w/2}\le(1+S_1)^k(1+S_2)^k$. The Brownian moment estimate
+
+\[
+\mathbb E_B S_b(T)^j
+\le\frac{(2j)![A\Gamma_E(1-\alpha/2)]^j}{\Gamma_E((2-\alpha/2)j+1)}
+T^{(2-\alpha/2)j}
+\]
+
+is obtained by sorting the $2j$ times, repeatedly conditioning on the largest remaining vertex, replacing its paired covariance by $A$ times the adjacent-gap power $-\alpha/2$, and integrating the $j$ selected adjacent gaps over the simplex of $2j$ gaps. Independence of the two chains then gives
+
+\[
+\sup_{\epsilon>0}L_{\epsilon,D}(0)<\infty .
+\]
+
+The exact combinatorial constant is not load-bearing: for 005 and its consumer 006/007 constants are allowed to depend on $k,D,T_1,T_2$; only finiteness uniform in the widths is needed.
+
+**Weak convergence.** Push to $[0,1]^{2k}$ by $y_l=e^{-r_l}$. The compact cube has weak cluster limits; their integer monomial moments are the prescribed $L_D(m_1,\dots,m_{2k})$, and Weierstrass density fixes a unique cluster. For $c>0$,
+
+\[
+\int\prod_l y_l^{c}\,\mathrm d\bar\mu
+=\int e^{-c\sum_l r_l}\mathrm d\nu_D=L_D(c,\dots,c)\to L_D(0)
+\]
+
+as $c\downarrow0$ by continuity at zero, while the integrand converges to $\mathbf 1_{\{\text{all }y_l>0\}}$. Hence the limit has no mass on $\{y_l=0\}$, i.e. no mass at $r_l=+\infty$. This is the infinity-face exclusion.
+
+**Zero faces.** In the positive limiting integral, $\lambda_l\to+\infty$ makes the factor $(1+\lambda_l)^2+|\eta_l|^2\to\infty$, giving pointwise convergence to zero dominated by the integrable zero-parameter integrand. On the measure side this is $\nu_D\{r_l=0\}$. So each coordinate-zero face has zero mass.
+
+**Homogeneity.** The scaling computation
+
+\[
+G_{cr}(c\,\mathrm dz)=c\,G_r(\mathrm dz),\qquad
+\gamma_b(cx)=c^{-\alpha}\gamma_{b/c^2}(x)
+\]
+
+with the $2k$ time Jacobians gives
+
+\[
+\rho_{\epsilon,D}(cA)=c^{(4-\alpha)k}\rho_{\epsilon/c^2,D}(A),
+\]
+
+passing to the vague limit to $\rho_D$. This uses only Radon/measure homogeneity, never a density.
+
+**Horizon faces.** If a compact piece of $\{\ell_i=T\}$, $T>0$, had positive $\rho_D$-mass, its dilates $cA$, $c\in[1,2]$, would be disjoint sets of common positive lower mass inside a fixed compact, contradicting local finiteness. Empty chains contribute no horizon variable; the positive-level face is empty, which is the stated exception. The bounded region $\{\ell_1<T_1,\ell_2<T_2\}$ has boundary contained in the zero-coordinate and horizon faces, so weak convergence holds with bounded continuous tests and the bounded multiplier $e^{\sum r_l}$.
+
+No hidden density or time-source-limit assumption is used.
+
+---
+
+## 2. L:fock-form (040)
+
+The one substantive report-facing point is fully resolved in §0.2: the sandwiched Gaussian column satisfies
+
+\[
+\sum_i\|A_\rho^{-1/2}M_{e_i}A_\rho^{-1/2}f\|_2^2
+\le R_\alpha\rho^{\alpha-4}\|f\|_2^2 .
+\]
+
+The remainder is the standard two-sided creation–annihilation computation. On normalized Hermite coordinates, multiplication by $g_i$ is $a_i^*+a_i$. At Gaussian degree $k$, the creation row $(v_i)\mapsto\sum_i a_i^*v_i$ has squared norm $\sum_i a_i^*a_i=(k+1)I$ on its range, hence norm $\sqrt{k+1}$. Composing with the spatial column $\{S_bH_iS_b\}_i$ of norm at most $\sqrt{R_\alpha}\rho^{(\alpha-4)/2}$, and adding the annihilation adjoint, gives
+
+\[
+\|A_\rho^{-1/2}B_{N,m,b}A_\rho^{-1/2}\|
+\le 2\sqrt{N+1}\sqrt{R_\alpha}\,\rho^{(\alpha-4)/2}
+=d_N\,\rho^{\alpha/2-2},
+\]
+
+with $d_N=2\sqrt{N+1}\sqrt{R_\alpha}$. This is the actual conclusion of L:fock-form. The compression to $S_b$ preserves the quadratic-form bound for self-adjoint $H_i$ because $(S_bH_iS_b)^2\le S_bH_i^2S_b$ on its range; no unbounded-operator extension is invoked.
+
+---
+
+## 3. P:static-phase-all-orders (042)
+
+**Circle radius and Cauchy series.** At cutoffs (m modes, band b, Hermite degree N) the potential $B_{N,m,b}$ is bounded self-adjoint and satisfies the L:complex-phase hypothesis with $a=\alpha/2$ and $d_N$ above. For a single color with coupling $z$, the phase propagator $\mathcal M_z(h)$ is bounded by $100e^{2\lambda h}$ on $|z|\le\delta_{\alpha/2}\lambda^{2-\alpha/2}/d_N$ with $\lambda>0$. The four phase entries are entire in $z$ (power series of bounded $L$), so the vector Cauchy formula bounds the $n$-th Duhamel coefficient by
+
+\[
+\|c_n\|_{X_\lambda}\le 100e^{2\lambda h}
+\left(\frac{d_N}{\delta_{\alpha/2}\lambda^{2-\alpha/2}}\right)^n
+\|(f,g)\|_\lambda .
+\]
+
+**Word identification.** L:finite-word-cutoff with one color, $N=n$, base space the spatial phase space, and free wave propagators as the $F_l$, shows the truncated word equals the untruncated word term by term: after $l$ insertions the color degree is at most $l\le n\le N$, and the projection is the identity along the whole word. This retains creation-after-annihilation self-contractions; no lowering term is deleted and the coefficient is an ordinary degree-$n$ Gaussian polynomial, not a Wick chaos.
+
+**Choice $\lambda=n/h$ and constants.** Putting $J_n=\|Z_n(h)\|_{L^2(\Omega;X_{1/h})}$,
+
+\[
+J_n\le
+100 n\,e^{2n}\,\delta_{\alpha/2}^{-n}\,d_n^{n}
+\left(\frac hn\right)^{(2-\alpha/2)n}
+\|(f,g)\|_{1/h},
+\]
+
+using $\|z\|_{1/h}\le n\|z\|_{n/h}$ and $\|(f,g)\|_{n/h}\le\|(f,g)\|_{1/h}$. With $d_n^n\le 2^{3n/2}n^{n/2}R_\alpha^{n/2}$,
+
+\[
+J_n\le
+100 n\,2^{3n/2}e^{2n}\delta_{\alpha/2}^{-n}
+R_\alpha^{n/2}h^{(4-\alpha)n/2}
+n^{-(3-\alpha)n/2}\|(f,g)\|_{1/h}.
+\]
+
+Since $n!\le n^n$,
+
+\[
+n^{-(3-\alpha)n/2}\le(n!)^{-(3-\alpha)/2},
+\qquad
+100n\,2^{3n/2}\le(400\sqrt2)^n.
+\]
+
+Absorbing $e^{2n}$ into $(e^2)^n$ and setting
+
+\[
+A_\alpha=\frac{400\sqrt2\,e^2}{\delta_{\alpha/2}}
+\]
+
+yields exactly (E:all-static-phase-orders).
+
+**Cutoff removal.** At fixed $\epsilon,n$, the multiplication operators converge strongly as $b\to\infty$ (free evolution commutes with $S_b$) and as $m\to\infty$ (annihilation tails vanish on finite-coordinate vectors; creation tails vanish by dominated convergence using $\sum_i e_i(x)^2=v_\epsilon$). Dominated time integration transfers convergence to each fixed word. No limit in the zero-smoothing parameter $\epsilon$ is asserted.
+
+**Full series.** With $\beta=(3-\alpha)/2$, the elementary bound $\sum_n x^n/(n!)^\beta\le2e^{3x^{1/\beta}}$ (splitting $\beta\ge1$ and $\beta<1$) and $\|Z_0\|_{1/h}\le\sqrt e\|(f,g)\|_{1/h}$ give (E:all-static-phase-sum). The $n=0$ term is the free phase.
+
+---
+
+## 4. L:fixed-split (047)
+
+The proof proceeds copy by copy, with the inner product.
+
+**Background segment.** On one copy, the background amplitudes $i\in\mathcal B$ with positive exponent are fixed at radii
+
+\[
+\omega_i=\frac{k_i}{h_i},\qquad
+d_i=2\sqrt{2k_i+1}\sqrt{R_\alpha},\qquad
+\varrho_i=\frac{\delta_{\alpha/2}\omega_i^{2-\alpha/2}}{\sigma_i d_i},
+\]
+
+so that with $\Lambda(t)=\lambda+\sum_{i\in\mathcal A}\omega_i\mathbf 1_{I_i^T}(t)$,
+
+\[
+D(t)=\sum_{i\in\mathcal A}|z_i|\sigma_i d_i\mathbf 1_{I_i^T}(t)
+\le\delta_{\alpha/2}\Lambda(t)^{2-\alpha/2}.
+\]
+
+L:interval-complex (adjoint + non-self-adjoint form) bounds each segment at constant $\Lambda_j$ by $100e^{2\Lambda_j\Delta_j}$. Summing over the common partition $\tau_0<\dots<\tau_M=T$ ($M\le3k+1$),
+
+\[
+\prod_{j}\|P_j\|\le 100^{3k+1}\exp\Big(2\lambda T+2\sum\omega_i|I_i^T|\Big)
+\le100^{3k+1}e^{4k}=:M_k.
+\]
+
+**Phase-metric changes.** The identity between neighboring phase weights has norm at most $\max\{1,\Lambda_j/\Lambda_{j+1}\}$, and at an ending cut this is at most $\prod_{i\in E_j}(1+\omega_i/\lambda)$. Each connected interval ends exactly once; insertion cuts change nothing. Hence the total metric charge on copy $\mathcal A\subset\mathcal B$ is
+
+\[
+D_{\mathcal A}=\prod_{i\in\mathcal A}\left(1+\frac{k_i}{\lambda h_i}\right).
+\]
+
+This is the ending-only accounting. A same-copy mean color appears in exactly one copy because $\ell_i=\mathbf 1_{\{r_i>0\}}+\mathbf 1_{\{q_i>0\}}$ gives one charge for $(2,0)$ or $(0,2)$; the cross singleton $(1,1)$ is in $\mathcal C$ and carries no metric charge. This is exactly the "do not square the singleton charge" point.
+
+**Fresh cross insertion.** For $i\in\mathcal C$, the tensor subspace $\mathscr Z_S$ carries only the vacuum of the fresh color $i$; the background potentials $B_i$ act as the identity on all Gaussian factors, and the incoming state is independent of the coordinates of $i$. Hence
+
+\[
+\|J_i(1_i\otimes(u,w))\|_{\mathcal H_\rho}^2
+=\sigma_i^2\sum_j\|A_\rho^{-1/2}S_bM_{e_{ij}}S_bu\|^2_{\mathscr R_i\otimes L^2}
+\le\sigma_i^2R_\alpha\rho^{\alpha-2}\|(u,w)\|_\rho^2,
+\]
+
+so at the insertion time, $\|J_i\|\le c_i:=\sigma_i\sqrt{R_\alpha}\lambda^{(\alpha-2)/2}$.
+
+**Cube and Cauchy.** The monomial of degree one in each $y_i$, $i\in\mathcal C$, expands by Dyson iteration into
+
+\[
+\Phi_{\mathcal A}(z)=\sum_{\pi}\int_{D_\pi}\mathcal W_{\mathcal A}(z,t)v\,\mathrm dt,
+\qquad
+\sum_\pi|D_\pi|=\prod_{i\in\mathcal C}|I_i^T|\le\prod_{i\in\mathcal C}h_i.
+\]
+
+There is no $m!$ factor: each ordered simplex enters once. Minkowski and the single-word bound give
+
+\[
+\|\Phi_{\mathcal A}(z)\|_\lambda
+\le M_kD_{\mathcal A}\|v\|_\lambda\prod_{i\in\mathcal C}c_ih_i.
+\]
+
+The vector Cauchy extraction over the background radii,
+
+\[
+U_r v=\left(\prod_{i\in\mathcal A_r}\varrho_i^{-r_i}\right)
+\int_{[0,2\pi]^{\mathcal A_r}}e^{-i\sum r_i\theta_i}
+\Phi_{\mathcal A_r}((\varrho_ie^{i\theta_i}))
+\prod_i\frac{\mathrm d\theta_i}{2\pi},
+\]
+
+is exact (each cross exponent is one, every omitted exponent is zero); the normalized angular measure has total mass one.
+
+**Assembling the inner product.** With $\|w\|_{1/T}\le k\|w\|_\lambda$ and $\|v\|_\lambda\le\|v\|_{1/T}$, Cauchy–Schwarz between the two vectors gives, before absorbing constants,
+
+\[
+|\langle U_rv,U_qv\rangle_{\mathcal H_{1/T}}|
+\le k^2M_k^2D_{\mathcal A_r}D_{\mathcal A_q}\|v\|_{1/T}^2
+\prod_{i\in\mathcal B}\varrho_i^{-2k_i}
+\prod_{i\in\mathcal C}R_\alpha\sigma_i^2h_i^2\lambda^{\alpha-2},
+\]
+
+with $D_{\mathcal A_r}D_{\mathcal A_q}=\prod_{i\in\mathcal B}(1+k_i/(\lambda h_i))^{\ell_i}$. The factorial step is
+
+\[
+\varrho_i^{-2k_i}
+=(12\delta_{\alpha/2}^{-2})^{k_i}
+(R_\alpha\sigma_i^2h_i^{4-\alpha})^{k_i}k_i^{-(3-\alpha)k_i}
+\le(12\delta_{\alpha/2}^{-2})^{k_i}
+\frac{(R_\alpha\sigma_i^2h_i^{4-\alpha})^{k_i}}{(k_i!)^{3-\alpha}},
+\]
+
+using $d_i^2=4(2k_i+1)R_\alpha\le12k_iR_\alpha$ and $k_i!\le k_i^{k_i}$. Finally $M_k^2=100^{6k+2}e^{8k}\le(100^8e^8)^k$. Thus
+
+\[
+C_{\rm split}=100^8e^8\max\{1,12\delta_{\alpha/2}^{-2}\}
+\]
+
+is admissible and depends only on $\alpha$.
+
+---
+
+## 5. P:interval-coefficients (048)
+
+**Coefficient identity.** The reflection of color $i$ multiplies $U_rv$ by $(-1)^{r_i}$, so $Q_{r,q}=0$ unless $r_i+q_i=2k_i$ for every $i$, with $\sum_i k_i=k$. For fixed $\boldsymbol k$ the split count is $\prod_i(2k_i+1)\le3^k$. The Hermite cutoff $N_i=2k_i$ preserves each selected coefficient exactly by L:finite-word-cutoff.
+
+**Local weights.** From L:fixed-split with $\sigma_i^2\le c h_i^{-\alpha_0}$ and $\lambda=k/T$:
+
+- mean singletons $(2,0),(0,2)$: $R_\alpha\,h_i^{\beta}(1+1/(\lambda h_i))\cdot$ constants;
+- cross singleton $(1,1)$: $R_\alpha\,\lambda^{\alpha-2}h_i^{2-\alpha_0}=R_\alpha\,\lambda^{\alpha-2}h_i^p$, $p=2-\alpha_0$;
+- $k_i=l\ge2$: $R_\alpha^l h_i^{\beta l}(1+l/(\lambda h_i))^2/(l!)^\nu$.
+
+**Positive-power expansion before substitution.** For $l\ge2$,
+
+\[
+h^{\beta l}\left(1+\frac l{\lambda h}\right)^2
+=h^{\beta l}+\frac{2l}{\lambda}h^{\beta l-1}
++\frac{l^2}{\lambda^2}h^{\beta l-2},
+\]
+
+and since $\beta l-2>0$ (because $\beta>2,l\ge2$) all powers are positive; the mean singleton has powers $\beta,\beta-1$, and the cross singleton has power $p=2-\alpha_0>0$. Therefore each whole local weight is increasing in $h$, so the inventory substitution $h_i\le LT/i$ is applied term-by-term to positive powers, not to the inverse-length factor in isolation.
+
+**Matching the inventory lemma.** With $h_i\le LT/i$ and $\lambda=k/T$, the mean and cross singleton alternatives combine into the single generating coefficient
+
+\[
+i^{-(4-\alpha-\alpha_0)}
++k^{-1}i^{-(3-\alpha-\alpha_0)}
++k^{\alpha-2}i^{-(2-\alpha_0)}
+\]
+
+after extracting $C^kR_\alpha^kT^{(4-\alpha-\alpha_0)k}$; this is exactly the $v_i$ of L:inventory-product, and the higher-degree weights give exactly
+
+\[
+b_{i,l}=\frac{i^{-(4-\alpha-\alpha_0)l}(1+li/k)^2}{(l!)^{3-\alpha}},
+\]
+
+using $l/(\lambda h)=li/(Lk)\le li/k$ for $L\ge1$.
+
+**Inventory bound.** L:inventory-product was re-derived above: at $z=\theta k^\nu$, $\theta=1/4$, the $1+Q_i$ factors contribute $\le Ck$, the $i\le k$ factors $\le Ck$, the $i>k$ singletons $\le Ck^{\alpha_0}\le Ck$, and the fine higher-degree factors $\le Ck^{2\alpha_0-1}\le Ck$; hence the $k$-th coefficient is $\le\theta^{-k}k^{-\nu k}e^{Ck}\le C^k/(k!)^\nu$. The third singleton identity $\nu+\alpha-2=1$ is checked: $\nu=3-\alpha$.
+
+**Identification separation.** The entire-majorant constant $v_{\max}$ depends on the fixed family and on $\epsilon$; it is used only to identify coefficients of the actual regularized model, not in the uniform coefficient bound, whose constants come from $\delta_{\alpha/2}$, the inventory lemma, and $L,c$; the covariance enters only through $R_\alpha^k$.
+
+**Summation.** The zero-order energy is at most $e\|v\|_{1/T}^2$, and for $\nu>1$,
+
+\[
+\sum_{k\ge0}\frac{x^k}{(k!)^\nu}
+\le\left(\sum_{k\ge0}\frac{x^{k/\nu}}{k!}\right)^\nu
+=e^{\nu x^{1/\nu}},
+\]
+
+with $x=CR_\alpha T^\beta$, producing (E:interval-phase-bound) after absorbing $\nu C^{1/\nu}$.
+
+---
+
+## 6. P:three-transfer (033)
+
+**Setup.** The conditional Gaussian comparison H:three-endpoints produces, on one common positive measure $\nu_{k,t,\eta}$, the H\“older decomposition
+
+\[
+A_k^{\epsilon,\delta,\eta}(t)
+\le\left(L_k^{\epsilon,\eta}(t)\right)^{\vartheta}
+\left(B_k^{\epsilon,\eta}(t)\right)^{1-\vartheta},
+\]
+
+where $L_k$ is the deterministic raw-time low-endpoint integral and $B_k$ is the actual regularized static coefficient. The parameter identities
+
+\[
+\alpha=\vartheta+(1-\vartheta)\chi,\qquad \alpha_0=\vartheta b_0
+\]
+
+imply
+
+\[
+2\vartheta+(1-\vartheta)(3-\chi)=3-\alpha,\qquad
+\vartheta(3-b_0)+(1-\vartheta)(4-\chi)=4-\alpha-\alpha_0 .
+\]
+
+**Low endpoint.** L:alpha-one-convolution gives the degree-one closing bound $\pi V_{\rm low}/2$ (no angular density). Descending integration gives the common spatial bound $(\pi V_{\rm low})^k t^k/k^k$; the symmetric temporal pairing sum with exponent $b_0$ contributes $2^k(Z_{b_0}t^{2-b_0})^k/k!$. Hence
+
+\[
+L_k(t)\le\frac{(2Z_{b_0}\pi V_{\rm low})^k t^{(3-b_0)k}}{k!k^k}
+=\frac{C_{\rm low}^k t^{(3-b_0)k}}{(k!)^2}.
+\]
+
+**Static and target inner Green limits.** For the static endpoint, the bounded continuous covariance $p_{2\epsilon}*\Gamma_{\rm st}$ admits a continuous modification (Gaussian eighth moments and Kolmogorov in $d=3$); the product $\Phi_n=\prod_jW_\epsilon(x_j)$ is $L^2$-continuous and uniformly bounded by $P_n^{1/2}v_\epsilon^{n/2}$. Consequently the Bochner integral against the ordered chain measure equals the pathwise integral, and the $\eta\downarrow0$ Green convergence holds in $L^2$ with the mixed Gaussian moment factors as bounded continuous test functions. This identifies the limit with the source's prescribed $S_{n,\epsilon}$. The target object is identified the same way using $\gamma_\delta^0(s-r)(p_{2\epsilon}*\Gamma)(y-z)$ and Kolmogorov in dimension four. Green limits precede noise limits.
+
+**Noise limits and the coefficient bound.** Static fixed-order $L^2$ convergence is Chen–Hu Theorem 3.8(i); target fixed-order convergence is L:joint-fixed-order; products converge in $L^1$ through
+
+\[
+\|YZ-Y'Z'\|_1\le\|Y-Y'\|_2\|Z\|_2+\|Y'\|_2\|Z-Z'\|_2 .
+\]
+
+The limit combination is
+
+\[
+A_k(t)\le\left(\frac{C_{\rm low}^k t^{(3-b_0)k}}{(k!)^2}\right)^{\vartheta}
+B_k(t)^{1-\vartheta},
+\]
+
+then the static coefficient bound $B_k(t)\le C_{\rm st}^k t^{(4-\chi)k}/(k!)^{3-\chi}$ gives
+
+\[
+A_k(t)\le\frac{(C_{\rm low}^\vartheta C_{\rm st}^{1-\vartheta})^k
+t^{(4-\alpha-\alpha_0)k}}{(k!)^{3-\alpha}}.
+\]
+
+**Variational upper at $r\downarrow0$.** Chen–Hu (5.15) at $p=2$ yields the precise rate
+
+\[
+\limsup_{k\to\infty}\left((k!)^{3-\chi}B_k(1)\right)^{1/k}
+\le
+2\left(\frac{2\sqrt{\mathcal M_{\rm st}}}{4-\chi}\right)^{4-\chi}
+=\Lambda_{\rm st},
+\]
+
+with the factor two from $\nu_{\rm st}-Q=1$. For $r>0$ and $k\ge N_r$,
+
+\[
+A_k(t)\le\frac{D_r^k t^{(4-\alpha-\alpha_0)k}}{(k!)^{3-\alpha}},
+\qquad
+D_r=C_{\rm low}^{\vartheta}(\Lambda_{\rm st}+r)^{1-\vartheta}.
+\]
+
+The finitely many lower orders $k<N_r$ use the exact static coefficients and give a finite polynomial $P_r(t)$ with $\log P_r(t)/t^\kappa\to0$. Hence the limsup is at most $qD_r^{1/q}$, then $r\downarrow0$ gives (E:three-variational-upper). The zero static rate needs no division: the rate form is used only at $k\ge N_r$, with lower orders kept by exact values.
+
+**Boundaries retained.** The transfer is conditional on H:three-endpoints; the named external inputs are Chen–Hu Theorem 3.8(i), (2.17)/(2.19), (5.1)/(5.15) at $p=2$, and Chen 2023 Theorem 1.1 for finiteness of the square-root variational term. No pointwise heat monotonicity, no smoothed-static asymptotic, and no application beyond the stated comparison families is used.
+
+---
+
+## 7. Amplitude and noise normalization
+
+Everything is kept distinct from the label-$p$ score homogeneity.
+
+**Radon-control bijection (algebraic, independent of the limit theorem).** Let $k=3-\alpha$, $Q=4-\alpha$, $b>0$, $r=b^{1/k}$, and
+
+\[
+(D_r\Psi)(s,x)=r^{d+2-\alpha}\Psi(s,rx).
+\]
+
+This is a bijection of the full nonseparable class $\mathcal C_{\mathrm{pos}}$. On the original $\Gamma$,
+
+\[
+h_{D_r\Psi}(s,x)=r^2h_\Psi(s,rx),\quad
+v_{D_r\Psi}=r^Qv_\Psi,\quad
+\lambda_{D_r\Psi,s}=r\lambda_{\Psi,s},\quad
+I_{D_r\Psi}=rI_\Psi.
+\]
+
+The distinction is Radon pushforward (degree $d-\alpha$) versus Lebesgue volume ($r^{-d}$ in the variance pairing), which is why $v$ carries $r^Q$ rather than a Lebesgue-only power. Now take $\Psi_b=b^{-1}D_r\Psi$ on $b\Gamma$. Linearity in $\Gamma$ and quadraticity in the control give
+
+\[
+h^{b\Gamma}_{\Psi_b}(s,x)=r^2h_\Psi(s,rx),\qquad
+v^{b\Gamma}(\Psi_b)=b^{-1}r^Q v_\Psi,\qquad
+I_{b\Gamma}(\Psi_b)=rI_\Psi .
+\]
+
+With $r=b^{1/k}$,
+
+\[
+b^{-1}r^Q=b^{-1}b^{Q/k}=b^{1/k}=r .
+\]
+
+Hence the label-$p$ score set of $b\Gamma$ is exactly $r$ times the label-$p$ score set of $\Gamma$:
+
+\[
+S_p(b\Gamma)=b^{1/(3-\alpha)}S_p(\Gamma).
+\]
+
+For $p=2$ this is the covariance-amplitude law for the constant.
+
+**Equivalent moment-series normalization (conditional).** A total-order-$2k$ pairing coefficient multiplies by $b^k$ under $\Gamma\to b\Gamma$ and scales as $t^{(4-\alpha-\alpha_0)k}$ under time-space homogeneity. Therefore the absolutely convergent second-moment series obeys
+
+\[
+\mathbb E\,u^2_{b\Gamma}(t,x)
+=\mathbb E\,u^2_\Gamma(b^{1/(4-\alpha-\alpha_0)}t,x).
+\]
+
+*Conditionally on the actual second-moment limit established in the separately reviewed Theorem T:intrinsic-second-moment*, this yields
+
+\[
+C_2(b\Gamma)=b^{\kappa/(4-\alpha-\alpha_0)}C_2(\Gamma)
+=b^{1/(3-\alpha)}C_2(\Gamma),
+\qquad
+\kappa=\frac{4-\alpha-\alpha_0}{3-\alpha}.
+\]
+
+This is the conditional implication; it does not reprove the limit theorem. The variational bijection above is a standalone algebraic identity. A noise amplitude $\sigma$ multiplies the covariance by $|\sigma|^2$, so the moment constant scales by $|\sigma|^{2/(3-\alpha)}$. The variance of a Gaussian control carries amplitude $b$ linearly and control amplitude quadratically, the kinetic term has coefficient one, and the action is the single global $v_\Psi/2$; $b=0$ or $\Gamma=0$ gives zero directly.
+
+The label-$p$ power is different: it is the *score-set* homogeneity $S_c^{\mathrm{pos}}=c^{Q/k}S_1^{\mathrm{pos}}=c^{(4-\alpha)/(3-\alpha)}S_1^{\mathrm{pos}}$ at fixed $\Gamma$, which is how $C_2=S_2^{\mathrm{pos}}=2^{Q/k}S_1^{\mathrm{pos}}$ arises. The covariance-moment law is $b^{1/k}$, not $c^{Q/k}$.
+
+---
+
+## 8. Report-reason error vs. source fault vs. incoming boundary
+
+**Report-reason error (concrete):** Kimi PROOF040 wrote the intermediate sandwiched column as $\le R_\alpha\rho^{\alpha-2}\|f\|^2$; the actual source L:fock-form has $\le R_\alpha\rho^{\alpha-4}\|f\|^2$ because the resolvent factor $(\rho^2+|\eta|^2)^{-1}\le\rho^{-2}$ is present. §0.2 shows the report form is false for an admissible admissible-positive-width regime, while the source form is satisfied. This is a defect in the secondary report, not in the candidate source.
+
+**No candidate-source failure found in the six assigned proofs.** The derivations above of 005, 033, 040, 042, 047, 048 close with the stated hypotheses; the only correction encountered is the outside-report reason above. The 005 Brownian-moment constant is not load-bearing because the consumer allows constants depending on $k,D,T_1,T_2$.
+
+**Genuine incoming boundaries:** 033 is conditional on H:three-endpoints and imports Chen–Hu (3.8(i), 2.17/2.19, 5.1/5.15 at $p=2$) and Chen 2023 (1.1); 039/040/045/047/048 import the bounded-operators Crouzeix–Palencia statement (bounded cutoffs only) and the Young estimate; the amplitude moment-series normalization is stated conditionally on 204 while the variational bijection is unconditional and algebraic.

@@ -1,0 +1,6 @@
+{
+  "header": "private theorem active_consumer {\u03b9 : Type u} {H : Type v} [Fintype \u03b9]\n    [NormedAddCommGroup H] [InnerProductSpace \u211d H]\n    (Phi : H) (k : \u03b9 \u2192 H) (ell b w : \u03b9 \u2192 \u211d)\n    (hw : \u2200 i, 0 < w i) (ht : \u2200 i, 0 \u2264 inner \u211d Phi (k i) - b i) :\n    2 * (\u2211 i, ell i * Real.sqrt (inner \u211d Phi (k i) - b i)) - \u2016Phi\u2016 ^ 2 / 2 \u2264\n      (\u2211 i, ell i ^ 2 / w i) - (\u2211 i, b i * w i) +\n        (1 / 2 : \u211d) * (\u2211 i, \u2211 j, w i * inner \u211d (k i) (k j) * w j) :=\n",
+  "sha256": "b66a6120c0dcde2f12023d484367316727ed8531b7eac0f419ee84b9f79c0b07",
+  "frozen_before_proof": true,
+  "scope": "private audit integration check: exact PG active-branch upper; four public module headers unchanged"
+}

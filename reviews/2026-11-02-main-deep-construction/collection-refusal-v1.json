@@ -1,0 +1,34 @@
+{
+  "scope": "Author locator-metadata error; original frozen map and first collector retained; no scientific input changed and no reviewer rerun",
+  "original_collection_failure": "AssertionError at collect.py line23: source-manifest/historical-v1 line ranges did not match Python splitlines rendering",
+  "cause": "Start offsets counted newline characters, while the Chen author text has38formfeeds also counted by canonical splitlines. Two later input offsets were38lines early.",
+  "changed_ranges": [
+    {
+      "alias": "source-manifest.md",
+      "old": [
+        4036,
+        4208
+      ],
+      "correct": [
+        4074,
+        4246
+      ]
+    },
+    {
+      "alias": "historical-v1-context.tex",
+      "old": [
+        4212,
+        4270
+      ],
+      "correct": [
+        4250,
+        4308
+      ]
+    }
+  ],
+  "original_carrier_map_unchanged": true,
+  "exact_packet_reconstruction_from_all_original_inputs": true,
+  "every_corrected_range_matches": true,
+  "actual_prompt_all_target_lines_delivered": true,
+  "scope_effect": "Main construction proof ranges and full author carrier range correct; manifest and historical-v1 locator numbers incorrect but their actual complete text was delivered. Metadata correction gives no review acceptance or confidence upgrade."
+}

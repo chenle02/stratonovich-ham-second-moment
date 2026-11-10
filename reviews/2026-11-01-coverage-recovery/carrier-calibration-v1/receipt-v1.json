@@ -1,0 +1,173 @@
+{
+  "provider": "claude",
+  "started_utc": "2026-11-01T19:34:02.712578+00:00",
+  "workspace": "../../../../.local/state/Le-AI-Lab/stratonovich-carrier-calibration-v1/native/workspace",
+  "source_revision": "f875d3edab938c48403410950105fe344f5bcbab",
+  "input_hashes": {
+    "reviews/2026-11-01-coverage-recovery/carrier-calibration-v1/carrier-scope-v1.json": "81807aeb297caec6624cb5ce5ed6cabb22152979a692894248c364dde38901e6",
+    "reviews/2026-11-01-coverage-recovery/carrier-calibration-v1/prompt-v1.md": "b796c328bb0f82fc37c4d037ea465b274b294f3f4345852ab7a96421161777a1",
+    "reviews/2026-11-01-coverage-recovery/pages/manuscript-247.png": "5dba6744dcf008cce0ac66a28e1c093c30b2f1827d1bfa58f422c1fcc63f6eca",
+    "reviews/2026-11-01-final-consolidation/primary/friz-hairer-pdf200.png": "cb2475d8305b7dd5b27c1703a54924a4536e7836f059b0a935816d78c2d04823",
+    "reviews/2026-11-01-final-consolidation/primary/teschl-2014-pdf093.png": "62c7e5e8c511e430bca4493d67909a5bc38638bb74367eddb7676a288baba90f"
+  },
+  "target": "reviews/2026-11-01-coverage-recovery/carrier-calibration-v1/carrier-scope-v1.json",
+  "claude_account": "<removed>",
+  "review_contract_sha256": "b796c328bb0f82fc37c4d037ea465b274b294f3f4345852ab7a96421161777a1",
+  "effort_requested": "high",
+  "resumed_from": null,
+  "resume_mode": null,
+  "resume_binding": null,
+  "min_confidence": "high",
+  "scientific_verdict": "PASS_WITH_NOTES",
+  "accepted": true,
+  "report_contract_schema": "subscription-review-report/1",
+  "report_legacy_mode": null,
+  "legacy_resume_binding": null,
+  "diagnostics": [],
+  "required_sources_sha256": "13246bcd45a1b52f2e8f1f6725cf1fd99ccd844aa03766d4ee1a6ea784c5923f",
+  "required_sources_workspace_copy": ".review/required-sources.json",
+  "workspace_preflight": {
+    "schema": "le-ai-lab.review-workspace-preflight/1",
+    "scanned": "review contract (--prompt-file)",
+    "references": {
+      "reviews/2026-11-01-coverage-recovery/carrier-calibration-v1/carrier-scope-v1.json": [
+        "reviews/2026-11-01-coverage-recovery/carrier-calibration-v1/carrier-scope-v1.json"
+      ]
+    },
+    "waived": [],
+    "missing": [],
+    "required_sources_copy": ".review/required-sources.json"
+  },
+  "runtime_preflight": {
+    "effective_version": "2.1.304",
+    "cli_version": "2.1.304 (Claude Code)",
+    "image_requirements": true,
+    "supported_versions": [
+      "2.1.302",
+      "2.1.304",
+      "2.1.314"
+    ],
+    "supported": true
+  },
+  "cli_version": "2.1.304 (Claude Code)",
+  "executable": "../../../../.local/state/Le-AI-Lab/swe-white-time-resume-20261024/runtime/node_modules/@anthropic-ai/claude-code-linux-x64/claude",
+  "executable_requested": null,
+  "executable_effective": {
+    "path": "../../../../.local/state/Le-AI-Lab/swe-white-time-resume-20261024/runtime/node_modules/@anthropic-ai/claude-code-linux-x64/claude",
+    "version": "2.1.304 (Claude Code)"
+  },
+  "read_ledger_format_supported": true,
+  "auth": {
+    "authMethod": "<removed>",
+    "apiProvider": "firstParty",
+    "subscriptionType": "<removed>",
+    "email": "<account email removed>"
+  },
+  "model_requested": "claude-opus-5-5",
+  "command_without_prompt": [
+    "../../../../.claude/bin/claude-acct",
+    "run",
+    "<account removed>",
+    "--print",
+    "--model",
+    "claude-opus-5-5",
+    "--effort",
+    "high",
+    "--disable-slash-commands",
+    "--strict-mcp-config",
+    "--mcp-config",
+    "{\"mcpServers\":{}}",
+    "--permission-mode",
+    "dontAsk",
+    "--permission-prompts",
+    "none",
+    "--output-format",
+    "stream-json",
+    "--verbose",
+    "--tools",
+    "Read,Grep,Glob",
+    "--allowedTools",
+    "Read,Grep,Glob",
+    "--agents",
+    "../../../../.local/state/Le-AI-Lab/stratonovich-carrier-calibration-v1/native/claude-reviewer.json",
+    "--agent",
+    "artifact-reviewer",
+    "<stdin: prompt.txt without its final newline>"
+  ],
+  "prompt_transport": "stdin",
+  "prompt_bytes": 4901,
+  "prompt_sha256": "56324d8c0794c801583f65e1284b45ce065a199e6b6d9ca64829457c47aa3e26",
+  "transport_exit_code": 0,
+  "transport_ok": true,
+  "model_actual": "claude-opus-5-5",
+  "session_id": "970f86e1-b765-4ffa-a047-5c0aeb016549",
+  "usage": {
+    "input_tokens": 6,
+    "cache_creation_input_tokens": 21293,
+    "cache_read_input_tokens": 43095,
+    "output_tokens": 4141,
+    "output_tokens_details": {
+      "thinking_tokens": 696
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 21293,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 3458,
+        "cache_read_input_tokens": 20693,
+        "cache_creation_input_tokens": 3804,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 3804
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "provider_error": false,
+  "terminal_subtype": "success",
+  "tools_actual": [
+    "Read",
+    "Grep",
+    "Glob"
+  ],
+  "actual_route_verified": true,
+  "candidate_hashes_unchanged": true,
+  "raw_report_sha256": "9d6c6ebbb8e3012ab5c80ebd51c508e0ad9b3988312e31de1a106e21436b9f11",
+  "status": "review-complete",
+  "confidence": "high",
+  "report_interpretation": {
+    "contract_schema": "subscription-review-report/1",
+    "report_schema": "subscription-review-report/1",
+    "legacy_mode": null,
+    "normalized_verdict": "PASS_WITH_NOTES",
+    "normalized_confidence": "high",
+    "normalized_check_verdicts": [
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS",
+      "PASS"
+    ]
+  },
+  "report_sha256": "09c0afad0f08d75100cbffd8d17f77d7b99a10eb1940fc6bbfbb7a63c8ea7144",
+  "report_text_format": "fenced-json",
+  "report_body_sha256": "a4207ba924e6a73dc8fa39a92d294ca3aa5f77e867f490c026722870866e6d29",
+  "finished_utc": "2026-11-01T19:34:46.519005+00:00",
+  "elapsed_seconds": 43.806,
+  "transport_events_sha256": "5a175393610d5cf7657708dbe4e99da51eb4eb6dcd6a0851b4c37fa496772443",
+  "transport_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "read_ledger_sha256": "f1c2ca0cf2773e99df8b788e7fc091c515d0f5a200b6535c93d2991324802721",
+  "coverage_verified": true
+}

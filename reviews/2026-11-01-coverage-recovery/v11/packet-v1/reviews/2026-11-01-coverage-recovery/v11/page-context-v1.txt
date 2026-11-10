@@ -1,0 +1,875 @@
+Derived text of assigned exact PDF pages only; extraction can garble mathematics. Actual PNG inspection is mandatory. No mathematical proof is supplied by this carrier.
+
+===== PHYSICAL PAGE 241 =====
+   The function is smooth in that orthant. Its Hessian on a nonzero vector ξ has value
+                               ∑︂ 2ℓ2       ∑︂
+                                      i 2
+                                       ξ +        ξi Cij ξj > 0.
+                                i
+                                    wi3 i  i,j
+
+The first term is strictly positive and the second is a squared Hilbert norm. Restriction
+to any nonconstant line segment is strictly convex, proving uniqueness. Each coordinate
+permits both signs
+               ∑︁ of a small perturbation at the interior minimum. Differentiation gives
+   2   2
+−ℓi /wi − bi + j Cij wj = 0. This is (39.5). This proves Lemma 39.2.
+
+Proposition 39.3 (Positive conic maximizer). The finite real value in (39.1) satisfies
+
+                                    S (C) = max dC
+                                                 A.                                 (39.7)
+                                              A⊂J
+
+If a maximizing subset is empty, Φ =∑︁0 attains the score. If a maximizing subset A
+                                           A
+is nonempty, a maximizer is ΦA =      i∈A wi ki with strictly positive coefficients. No
+uniqueness of the primal maximizer or maximizing subset is asserted.
+
+Proof. For arbitrary Φ, let A(Φ) = {i : ⟨Φ, ki ⟩ > bi }. It is contained in J . All other
+score terms vanish, including equality at the threshold. If A(Φ) is empty, FC (Φ) =
+      2
+−∥Φ∥∑︁/2 ≤ 0. Otherwise, for any positive w on A = A(Φ), set ti = ⟨Φ, ki ⟩ − bi > 0 and
+z = i∈A wi ki . Lemma 39.1 gives
+                       ∑︂             ∑︂
+              FC (Φ) ≤      ℓ2i /wi −    bi wi + ⟨Φ, z⟩ − ∥Φ∥2 /2 ≤ DA
+                                                                     C
+                                                                       (w).
+                          i             i
+
+This holds for every positive w, so FC (Φ) ≤ dC A . There are finitely many subsets and
+their values are finite by Lemma 39.2. Taking the supremum bounds S (C) above by
+their maximum.
+    Conversely, FC (0) = 0 = dC ∅ . For nonempty A, take its √︁    dual minimizer. Equa-
+tion (39.5) makes every label in A strictly active at ΦA , with ⟨ΦA , ki ⟩ − bi = ℓi /wiA .
+Both inequalities in the preceding display are then equalities for the sum restricted to
+A, since z = ΦA . This restricted score equals dC  A . All omitted labels contribute non-
+negative terms to the full score, hence FC (ΦA ) ≥ dC   A , even if this value is negative.
+Maximizing over A, including the empty set, proves (39.7) and the asserted attainment.
+For a maximizing nonempty subset the upper and lower bounds force FC (ΦA ) = dC      A ; no
+outside inactivity was assumed. All-zero labels give S (C) = 0 directly. This proves
+Proposition 39.3.
+
+Lemma 39.4 (Real Gram realization). Every finite real symmetric positive semidefinite
+matrix is the Gram matrix of vectors in a finite-dimensional real Hilbert space. When
+its entries are nonnegative, the value S (C) is independent of its realization.
+
+Proof. Induct on the size, with the empty matrix realized in {0}. Diagonal entries are
+nonnegative. If all vanish, testing on ei + tej gives 2tCij ≥ 0 for every real t, hence
+C = 0, realized by zero vectors. Otherwise permute a positive diagonal c into the first
+
+                                            241
+
+===== PHYSICAL PAGE 242 =====
+                           [︁   ]︁
+position and write C = vc vAT . The Schur complement B = A − vv T /c is positive
+                                               on (−v T y/c, y). Realize
+semidefinite: test the original quadratic form √                    √ B by vectors ui
+using the induction hypothesis. Then k1 = ( c, 0) and ki = (vi / c, ui ) for the other
+indices realize C. Undo the permutation. Entries of B need not be nonnegative; this
+construction requires neither nonnegative coordinates nor complete positivity.
+   In any realization, Cii = 0 means ki = 0, so its entire row vanishes. Formula (39.7)
+depends only on C, ℓ, b and these eligible indices. It therefore proves realization inde-
+pendence whenever the entries are nonnegative, which is the scope in which S (C) is
+used. This proves Lemma 39.4.
+
+Proposition 39.5 (Entrywise Gram comparison). Let C, D be real symmetric positive
+semidefinite matrices on the same finite index set, with 0 ≤ Cij ≤ Dij . With the same
+ℓi > 0, bi ≥ 0,
+                                   S (C) ≤ S (D).
+No positive-semidefinite order on D − C is required.
+
+Proof. Lemma 39.4 defines both values. Their eligible sets satisfy JC ⊂ JD . For
+nonempty A ⊂ JC and positive weights,
+
+                      D        C          1 ∑︂
+                     DA (w) − DA (w) =            wi (Dij − Cij )wj ≥ 0.
+                                          2 i,j∈A
+
+Taking infima gives dC         D
+                        A ≤ dA . The empty values are both zero. Taking maxima and
+using the inclusion of eligible families proves the claim by Proposition 39.3. This includes
+the appearance of previously zero labels. This proves Proposition 39.5.
+
+Remark 39.6 (Exact checks and scope). The empty value is essential: for one label
+with C = 1, ℓ = 1/10, b = 4, the nonempty dual has D(4) = −3199/400 < 0, whereas
+the primal
+       √︁ score at zero is zero. Global concavity is unavailable: for k = ℓ = b = 1 the
+score 2 (ϕ − 1)+ − ϕ2 /2 decreases on [0, 1] and has infinite positive right slope at one.
+For k = ℓ = 1, b = 0, differentiation on ϕ > 0 gives the maximum 3/2 at ϕ = 1; on ϕ ≤ 0
+the score is nonpositive. Doubling the cost changes the [︂ positive
+                                                                ]︂    critical point to 2−2/3
+                                                          1 1/2
+and the maximum to 3 2−4/3 . Finally C = I2 , D = 1/2        1     are nonnegative positive
+semidefinite Grams but D − C has eigenvalues 1/2, −1/2. These are finite analytic
+checks, not a covariance-order theorem for physical waves.
+    The scalar, finite Gram, conditional active upper and half-quadratic entrywise de-
+ductions have existing local Lean certificates at their exact hypotheses. Dual coercivity,
+calculus, attainment, realization and the infimum/maximum argument above remain
+analytic proofs. No new kernel fact or formalization of the physical application follows
+merely from these certificates.
+
+
+
+
+                                            242
+
+===== PHYSICAL PAGE 243 =====
+40     The positive-control formula for the original mo-
+       ment limit
+Retain every original covariance and amplitude. Write a = α0 , I = (0, 1), K(s, t) =
+|s − t|−a and HI = Ht ⊗ Hsp for the original raw covariance. Keep the uniform E mean
+TR = TR (Ct ⊗ I) and Cmean = M0 ∥Ct ∥ of Section 36, with exactly the fixed r chosen
+there. In particular 2 < r < 2/a. To distinguish it from the map below, write JR = TR .
+For a bounded multiplier V : H 1/2 → H −1/2 write BE (V )(u, v) = (0, V u), the actual E
+operator of Lemma 36.1. The physical mask is mR = η(·/R)2 , used once. Let Cpos be the
+full nonseparable class in (26.1). For Ψ in that class, retain its unmasked mean hΨ,s , raw
+variance vΨ , integrated full-gradient rate IΨ and positive scores Scpos from Section 26. No
+first-moment or author-constant interpretation of the label one is assumed. We assume
+Γ ̸= 0 through the following comparison lemmas. The theorem treats zero covariance
+directly.
+Lemma 40.1 (Raw inclusion and the actual smooth mean). For any real Hilbert space
+G there is a bounded map JG : L2 (I; G) → Ht ⊗ G with
+                                                                            2a
+               ∫︂
+           2
+   ∥JG F ∥ =        K(s, t)⟨F (s), F (t)⟩G ds dt ≤ K0 ∥F ∥2L2 (I;G) , K0 =     . (40.1)
+                 I2                                                        1−a
+The natural inclusion puts every Ψ ∈ Cpos in HI , with
+
+                    ∥Ψ∥2HI = vΨ ,     TR Ψ(s) = BE (mR hΨ,s )    a.e. s.             (40.2)
+
+For each fixed smooth Ψ the right side gives a canonical version for every R ≥ 1 and
+every s ∈ I.
+Proof. Direct integration and concavity of x1−a give
+
+                                         s1−a + (1 − s)1−a
+                        ∫︂
+                            K(s, t) dt =                   ≤ K0 .
+                          I                    1−a
+For scalar f ≥ 0, Cauchy–Schwarz against K(s, t) dt and then Tonelli give
+∥Kf ∥2 ≤ K0 ∥f ∥2 . The same estimate for absolute values bounds the bilinear in-
+tegral by K0 ∥f ∥2 ∥g∥2 . Approximate scalar L2 (I) functions by real Cc∞ (I) functions.
+This bound makes their raw test-null classes Cauchy in Ht , defines the bounded
+inclusion, and identifies its pairing with the integral. Finite G-valued tensors then give
+(40.1). Simple fields are dense in Bochner L2 (I; G); the same bound on differences
+extends JG . Absolute bilinear continuity∫︁extends the integral identity as well.
+    For G = Hsp , the Bochner integral I K(s, t)F (t) dt exists almost everywhere: its
+norm is bounded by K∥F ∥(s), which belongs to L2 . Simple-field approximation and the
+Schur estimate give a strongly measurable L2 version and a bounded map of norm at most
+K0 . On smooth finite tensors it agrees with (Ct ⊗I)JG by the actual covariance definition.
+Approximation by such tensors converges in L2 (I; G). The integral converges there by
+Schur; the completed tensor map converges in Lr (I; G) by Lemma 31.3 and (40.1), hence
+
+                                            243
+
+===== PHYSICAL PAGE 244 =====
+also in L2 . Uniqueness of the L2 limit identifies these versions. In particular the integral
+belongs to Lr .
+    Choose a closed ball B containing all spatial supports of Ψ. For real smooth q
+supported there, the physical covariance gives
+
+                                 ∥q∥2Hsp ≤ |B| Γ(B − B)∥q∥2∞ .                           (40.3)
+           ∫︁    ∫︁
+Indeed in dx Γ( dy)q(x)q(x − y) only x ∈ B, y ∈ B − B contribute. Absolute values
+and local finiteness prove the bound, including white and singular Radon covariances.
+Thus t ↦→ Ψt is continuous, bounded and compactly supported as an Hsp -valued field,
+and belongs to L2 . Its image under JHsp is the original raw test class of Ψ. Indeed,
+the separated compact smooth approximants in Lemma 29.3 converge uniformly on one
+common compact support. The local bound above and the temporal Schur estimate give
+convergence both in L2 (I; Hsp ) and in the original covariance norm. Their finite tensor
+identifications therefore have this same limit. Formula (40.1) and absolute Fubini give
+                    ∫︂                              ∫︂
+              2
+         ∥Ψ∥HI =       K(s, t)⟨Ψs , Ψt ⟩Hsp ds dt =    Ψ(s, x)hΨ,s (x) dx ds = vΨ .
+                    I2                                 I×Rd
+
+The compact spatial supports and (40.3) make all these absolute integrals finite.
+   Test the spatial row (31.1) first with displacement f and dual second component
+Λg, with f, g compact smooth. The row product is mR f g, so the preceding temporal
+identity gives       ⟨︃∫︂                   ⟩︃     ∫︂
+                              K(s, t)Ψt dt, mR f g         =   mR hΨ,s f g.
+                          I                          Hsp
+
+This Fubini step has two fixed compact supports and integrable time kernel. Both
+resulting operators are bounded on E: the left by the mean theorem, the right by the
+bounded smooth hΨ,s and compact smooth mask. Dense states extend the identity
+to E. For this fixed Ψ the temporal integral exists at every s, with norm at most
+K0 supt ∥Ψt ∥Hsp . Applying JR gives the explicit version in (40.2) for every R, s. For
+each R it agrees with the completed Lr mean class. This makes no simultaneous-version
+assertion over all rough controls. This proves Lemma 40.1.
+
+Lemma 40.2 (Actual finite labels and∑︁  entrywise order). Take a finite partition of I with
+nonempty cells Ii , lengths ℓi > 0 and i ℓi = 1, and real fi ∈ Cc∞ (Rd ) with ∥fi ∥2 = 1.
+Put
+          hi = 1Ii /ℓi , bi = ∥∇fi ∥22 , kiR = hi ⊗ (mR fi2 ), ki∞ = hi ⊗ fi2 .
+These are elements of HI . If vL is the multiplier form of (36.1), then for every Φ ∈ HI ,
+                                           ∫︂
+                               R        −1
+                          ⟨Φ, ki ⟩HI = ℓi      vTR Φ(s) (fi , fi ) ds.              (40.4)
+                                                Ii
+
+
+The Grams CijR = ⟨kiR , kjR ⟩ and Dij = ⟨ki∞ , kj∞ ⟩ satisfy 0 ≤ CijR ≤ Dij entrywise.
+
+
+
+                                               244
+
+===== PHYSICAL PAGE 245 =====
+Proof. Lemma 40.1 puts hi in Ht . The compact smooth spatial factors lie in Hsp by
+its test definition and (40.3). On a smooth finite tensor, use (31.1) with z = (fi , 0)
+and w = (0, Λfi ). Its row is (ηR fi )(ηR Λ−1 Λfi ) = mR fi2 . Temporal integration gives the
+pairing with hi . This proves (40.4) on dense tensors. Its right side is a bounded raw
+                           −1/r
+functional, with bound ℓi Cmean ∥Φ∥∥fi ∥2H 1/2 by Hölder and (31.6). The left side is
+bounded by Hilbert Cauchy–Schwarz. Thus the identity extends to the completed HI .
+The form is the actual displacement form by Lemma 36.1.
+    Each Gram is symmetric positive semidefinite. Its entries factor into the temporal
+pairing of nonnegative hi , hj and the physical spatial covariance pairing. The kernels
+K, Γ and fi2 , fj2 are nonnegative; 0 ≤ mR ≤ 1. Tonelli therefore gives the entrywise
+order. The physical pairing already contains Γ, and the row cancellation introduces no
+additional Fourier factor. Zero labels are permitted. All hypotheses of Proposition 39.5
+are met, without assuming D−C R is positive semidefinite. This proves Lemma 40.2.
+
+Lemma 40.3 (Uniform optimizer norm and positive smoothing). Put M = 4Cmean + 4.
+The supremum defining SR may be restricted to ∥Φ∥ ≤ M , uniformly in R. For every
+finite trial family in Lemma 40.2, the unmasked finite score has a maximizer ΦD with
+∥ΦD ∥ ≤ M . It is zero or is a positive conic combination of the ki∞ . In the latter case it
+is approximable in HI by tests in Cpos .
+
+Proof. Put C = Cmean and q = ∥Φ∥. Proposition 36.3 gives
+
+             2 RateR (Φ) − q 2 /2 ≤ 2 + 2Cq − q 2 /2 < 2 − 2q < 0 (q > M ).
+
+The zero control gives zero, proving the restriction.
+   Denote the finite unmasked objective by FD . Proposition 39.3 supplies an attained
+maximum at zero or a positive conic sum ΦD . Choose a finite∫︁ R′ ≥ 1 whose plateau
+                                      ′
+contains all supports of fi . Then kiR = ki∞ . Write Wi = ℓ−1
+                                                           i    T ′ Φ(s) ds. The row
+                                                              Ii R
+identity and real Rayleigh formula imply, for every Φ,
+                              ∑︂
+                  FD (Φ) ≤ 2     ℓi λ(Wi ) − q 2 /2
+                                i
+                                    ∑︂
+                          ≤2+2           ℓi ∥Wi ∥ − q 2 /2 ≤ 2 + 2Cq − q 2 /2.
+                                    i
+
+For fixed fi , the map L ↦→ vL (fi , fi ) is bounded linear; hence the form of the Bochner
+average is the average form. Here λ(L) ≤ max(1, ∥L∥) ≤ 1+∥L∥, the norm of an average
+is bounded by the average norm, and the L1 mean norm is at most its Lr norm. No
+time-averaging error or concavity of the positive-part square root enters this estimate.
+Since the maximum is nonnegative, its optimizer lies in the same ball of radius M ,
+                                                  ′
+independently of the partition, profiles and ∑︁ R .         2
+    On a nonzero branch write ΦD =             i∈A wi hi ⊗ fi , with wi > 0. Extend hi by
+zero, convolve with a nonnegative compact smooth approximate identity, and multiply
+by smooth cutoffs 0 ≤ χj ≤ 1 compactly supported in I, tending pointwise to one.
+The resulting nonnegative hi,j ∈ Cc∞ (I) converge to hi in L2 : the error is bounded
+
+                                               245
+
+===== PHYSICAL PAGE 246 =====
+by the∑︁convolution error plus ∥(χj − 1)hi ∥2 , which tends to zero by domination. Set
+                      2
+Ψj =     i∈A wi hi,j fi . Finite tensor estimates and (40.1) give Ψj → ΦD in HI . The
+positive conic sum has positive squared norm, since at least one eligible diagonal is
+positive and all Gram entries are nonnegative. Thus Ψj ̸= 0 eventually, so Ψj ∈ Cpos .
+Costs converge. The integrated rate continuity proved in Proposition 36.3 gives
+                                    √︂                     √︂
+   | RateR′ (Ψj ) − RateR′ (ΦD )| ≤ 3 + C∥Ψj ∥ + C∥ΦD ∥ C∥Ψj − ΦD ∥ −→ 0. (40.5)
+
+This estimate is uniform in R′ . It asserts no uniform derivative bound on the smooth
+approximants. The zero branch will use S2pos ≥ 0 directly. This proves Lemma 40.3.
+Proposition 40.4 (Signed scores bounded by the positive score). For every R ≥ 1,
+
+                                          SR ≤ S2pos .                             (40.6)
+
+Proof. Use uniform partitions with n ≥ 2 cells of length 1/n. They are the B = 1, δ =
+1/n partitions in Proposition 36.3, with the empty last cell omitted. That proposition
+gives en → 0, independent of R, such that
+             ⃓                    (︃   ∫︂             )︃⃓⃓
+             ⃓            ∑︂
+             ⃓RateR (Φ) −     ℓi λ ℓ−1      TR Φ(s) ds ⃓ ≤ en (∥Φ∥ ≤ M ).
+             ⃓                                           ⃓
+                                     i
+             ⃓
+                            i            Ii              ⃓
+
+Fix R, Φ, n, with ∥Φ∥ ≤ M , and denote these averages by Wi . Real compact smooth
+unit trials are dense in the real H 1 unit sphere: truncate by cutoffs tending to one,
+whose gradient errors tend to zero, then mollify in H 1 and normalize in L2 . Continuity
+of the multiplier form in H 1/2 and hence H 1 proves
+                                          √︂
+                      λ(Wi ) =     sup      (vWi (f, f ) − ∥∇f ∥22 )+ .
+                                f ∈Cc∞ (Rd ;R)
+                                   ∥f ∥2 =1
+
+The real Rayleigh supremum is nonnegative by Proposition 36.2, so the positive part
+does not change its supremum. For ε > 0 choose one near-maximizing fi per cell with
+error at most ε in∑︁the square root. This is a finite choice, not a measurable continuum
+optimizer. Since i ℓi = 1, the weighted trial error contributes 2ε to the next inequality.
+Lemma 40.2 gives
+
+                      2 RateR (Φ) − ∥Φ∥2 /2 ≤ FC R (Φ) + 2en + 2ε.
+
+Optimize this finite objective and use entrywise Gram comparison:
+
+                        FC R (Φ) ≤ S (C R ) ≤ S (D) = FD (ΦD ).
+
+This compares optimized values, not the same individual control. Lemma 40.3 proves
+∥ΦD ∥ ≤ M before time averaging is used again. Choose R′ covering the finite supports
+as in that lemma. The label row, Rayleigh bound and the same uniform averaging
+estimate give
+                    FD (ΦD ) ≤ 2 RateR′ (ΦD ) − ∥ΦD ∥2 /2 + 2en .              (40.7)
+
+                                                 246
+
+===== PHYSICAL PAGE 247 =====
+    If ΦD = 0, its finite score is zero. Otherwise use its positive smooth approximants
+Ψj . Lemma 40.1 identifies their actual mean with BE (mR′ hΨj ,s ) and their raw cost with
+vΨj . Since hΨj ,s ≥ 0 and 0 ≤ mR′ ≤ 1, real H 1 form order gives RateR′ (Ψj ) ≤ IΨj . Thus
+2 RateR′ (Ψj ) − ∥Ψj ∥2 /2 ≤ S2pos . Rate and cost convergence pass this inequality to ΦD .
+Together with (40.7) and the separate zero branch this yields
+                         2 RateR (Φ) − ∥Φ∥2 /2 ≤ S2pos + 4en + 2ε.
+All finite choices were made after fixing n, R, Φ. The right side is independent of those
+choices. Let ε ↓ 0, take the supremum over the raw ball, use Lemma 40.3, and then let
+n → ∞. This proves (40.6). Finiteness of the positive score was already proved from
+the independent old canonical upper in Proposition 26.6, not from this conclusion. This
+proves Proposition 40.4.
+Proposition 40.5 (Cutoff removal for the optimized score). The possibly nonmonotone
+mask family satisfies
+                                  lim SR = S2pos .
+                                       R→∞
+
+Proof. Fix Ψ ∈ Cpos before taking R or moment limits. Use the explicit mean version
+of Lemma 40.1. Its rate λR (s) obeys 0 ≤ λR (s) ≤ λΨ,s by real form order. For each
+real compact smooth unit f , mR = 1 on its support for every sufficiently large R. The
+Rayleigh formula therefore gives
+                                         ∫︂
+                         lim inf λR (s) ≥ hΨ,s f 2 − ∥∇f ∥22 .
+                                       2
+                             R→∞
+
+Compact trial density and (26.4) identify the supremum of the right side as λ2Ψ,s . Hence
+λR (s) → λΨ,s for these versions. The global smooth-source bound HΨ = sups,x hΨ,s (x) <
+                  √
+∞ gives λR (s) ≤ HΨ . Dominated convergence yields RateR (Ψ) → IΨ . Neither mono-
+tonicity of mR nor an unmasked ground eigenfunction was used.
+    The raw representative and cost ∥Ψ∥2 = vΨ are independent of R. Thus lim inf R SR ≥
+2IΨ − vΨ /2 for each fixed test. Given ε > 0, choose one fixed test with score greater
+than S2pos − ε; the finite supremum admits such a test. Take the liminf and then ε ↓ 0.
+Proposition 40.4 supplies the reverse limsup. This proves Proposition 40.5.
+Theorem 40.6 (Intrinsic original second-moment constant). For every original admis-
+sible model with data (1, 0) and fixed x,
+     lim T −(4−α−a)/(3−α) log E|uΓ (T, x)|2 = C2 (Γ, a) = S2pos = 2(4−α)/(3−α) S1pos .   (40.8)
+    T →∞
+
+Its complete positive-control formula is
+                         ⎧                                                        ⎫
+                         ⎪
+                         ⎪     ⌜               (︃∫︂                    )︃         ⎪
+                                                                                  ⎪
+                         ⎨ ∫︂ ⃓                                                v  ⎬
+                               ⃓                           2 − ∥∇f ∥ 2          Ψ
+      C2 (Γ, a) = sup 2 ⃓           sup             hΨ,s f           2    ds −      ,    (40.9)
+                  Ψ∈Cpos ⎪
+                         ⎪   I
+                               ⎷f ∈H 1 (Rd ;R)                                  2⎪⎪
+                                   ∥f ∥2 =1
+                         ⎩                                                        ⎭
+                  ∫︂                                         ∫︂
+                           −a
+       hΨ,s (x) = |s − t| (Γ ∗ Ψt )(x) dt,            vΨ =        Ψ(s, x)hΨ,s (x) dx ds.
+                    I                                       I×Rd
+
+
+                                              247
+
+===== PHYSICAL PAGE 248 =====
+Here Cpos consists of all nonzero nonnegative real Cc∞ (I × Rd ) tests, including nonsepa-
+rable ones. The covariance retains its actual amplitude, the kinetic term has coefficient
+one, and the Gaussian action is vΨ /2. For nonzero covariance 0 < C2 < ∞. For Γ = 0
+the constant and moment rate are zero.
+Proof. Assume first Γ ̸= 0. Proposition 38.4, followed by Proposition 40.5 with R =
+δ −1 + 2, bounds the original point limsup by S2pos . Proposition 26.6 bounds the original
+point liminf below by this same value. Both are for the same canonical Stratonovich
+solution, exponent, original covariance and variance-half action. Their source-first iden-
+tifications retain all mixed, unequal, self and empty chains and both phase components
+with initial data (1, 0). The original spatial stationarity proved in Proposition 25.7
+extends both bounds to every fixed x. Thus the limit exists and equals S2pos . Its homo-
+geneity, positivity and finiteness are Proposition 26.6. Formula (26.4) and the definition
+of the original raw variance give (40.9).
+     If Γ = 0, HI = {0}, all means, variances and rates vanish, SR = Scpos = 0, and u = 1.
+Both formulas are direct zero identities. This proves Theorem 40.6.
+    The label-one score is auxiliary; the theorem does not identify it with an actual
+first-moment limit or with Chen’s printed constants. It neither repairs a source energy
+normalization nor asserts a Jensen improvement. The exponent formally tends to (4 −
+α)/(3 − α) as a ↓ 0; no interchange with the static moment limit is claimed. The explicit
+bounds and full calibration and whole-argument verification remain separate steps.
+
+
+41     Occupation bounds for the intrinsic constant
+Retain all original models and amplitudes, put a = α0 , q = 4 − α > 2, k = 3 − α =
+q − 1 > 1 and m = q/k. The temporal kernel is K(s, t) = |s − t|−a on I = (0, 1); its
+diagonal value may be set to zero. Let O be the full strongly H 1 -measurable unit-profile
+class defined before Proposition 28.7. Here we use the raw kernel, defining
+             ∫︂
+     A(g) =       K(s, t)BΓ (gs2 , gt2 ) ds dt,
+               I2
+                                                                                   (41.1)
+                   A(g)                           O
+      Cocc = sup       α/2
+                           ,                    Eζ  = sup {A(g) − ζT (g)}, ζ > 0.
+             g∈O T (g)                                g∈O
+
+The scalar penalty ζ is not a spatial mask. These objects differ from the earlier damped-
+kernel energy. Assume Γ ̸= 0 until the direct zero case below.
+Lemma 41.1 (Full-profile squares in the original raw space). There is a continuous map
+Q : H 1 (Rd ; R) → Hsp with
+                 ⟨Q(f ), Q(h)⟩Hsp = BΓ (f 2 , h2 ),       ∥Q(f )∥2 = Asp (f ).
+For g ∈ O, the element ρg = JHsp (s ↦→ Q(gs )) belongs to the original HI and satisfies
+                                                ∫︂ ∫︂
+                   2
+              ∥ρg ∥HI = A(g),      ⟨Ψ, ρg ⟩HI =       hΨ,s (x)gs (x)2 dx ds        (41.2)
+                                                      I   Rd
+
+                                             248
+
+===== PHYSICAL PAGE 249 =====
+for every Ψ ∈ Cpos . In particular,
+                                                               √︁
+                                            ⟨Ψ, ρg ⟩HI ≤         vΨ A(g).
+Proof. Approximate f in H 1 by real compact smooth fn . Proposition 28.4 gives
+∥fn2 − fl2 ∥2Hsp = C4 (fn − fl , fn + fl , fn − fl , fn + fl ) ≤ Rsp N (fn − fl )2 N (fn + fl )2 → 0.
+
+Here N is continuous on H 1 and N (f ) ≤ ∥f ∥H 1 . Completeness defines Q(f ); interlacing
+two approximating sequences proves independence. Passing the physical four-linear
+continuity and Hilbert pairings to limits proves the first identities. The same difference
+bound, first for smooth approximants and then by passage to the limit, proves continuity
+of Q.
+   Thus Fg (s) = Q(gs ) is strongly measurable. Writing bs = ∥∇gs ∥22 , the unit norm and
+0 < α/2 < 1 give
+                   ∫︂                   ∫︂
+                      ∥Fg (s)∥ ds ≤ Rsp bα/2
+                              2
+                                            s  ds ≤ Rsp T (g)α/2 < ∞.
+                        I                                I
+
+Lemma 40.1 now constructs ρg and identifies its squared norm with the physical A(g).
+Joint measurability and representative independence follow from the continuous physical
+pairing on (H 1 )2 . Absolute time integrability follows from the same Schur bound.
+   Choose one compact smooth χ equal to one on all spatial supports of Ψt . For real
+f ∈ H 1 , smooth approximation gives
+              ⟨Ψt , Q(f )⟩Hsp = lim BΓ (Ψt , fn2 ) = C4 (χ, Ψt , f, f ) = BΓ (Ψt , f 2 ).
+                                      n
+
+Proposition 28.4 justifies these absolute integrals and limits. Polarizing (40.1) gives
+                                    ∫︂
+                         ⟨Ψ, ρg ⟩ =    K(s, t)⟨Ψt , Q(gs )⟩Hsp dt ds.
+                                                 I2
+
+The absolute integrand is bounded by the product of two Hsp norms against K, integrable
+by Schur and L2 Cauchy–Schwarz. Evenness of Γ and Tonelli for the nonnegative physical
+integrands yield (41.2). Hilbert Cauchy–Schwarz with ∥Ψ∥2 = vΨ proves the bound. No
+rough occupation is inserted into a stochastic flow. This proves Lemma 41.1.
+Proposition 41.2 (Raw occupation energy and dilation). With K0 = 2a /(1 − a),
+                                          0 < Cocc ≤ K0 Rsp < ∞.
+Moreover
+                                                                              (︃        )︃α/(2−α)
+                                                                        2−α        α
+         EζO = Dζ Cocc
+                   2/(2−α)
+                           ,                                       Dζ =                             ,   (41.3)
+                                                                         2         2ζ
+                 (︄          )︄(2−α)/2 (︃        )︃α/2
+                      2EζO                  2ζ
+        Cocc =                                           .                                              (41.4)
+                      2−α                   α
+
+In particular EζO > 0 is finite and equals ζ −α/(2−α) E1O .
+
+                                                             249
+
+===== PHYSICAL PAGE 250 =====
+Proof. A unit H 1 profile has positive gradient energy: a zero weak gradient makes it
+constant, and an L2 constant on Rd is zero. Hence 0 < T (g) < ∞. Spatial covari-
+                                                 α/4 α/4
+ance Cauchy–Schwarz gives BΓ (gs2 , gt2 ) ≤ Rsp bs bt . Schur with row bound K0 , then
+concavity, proves
+                              0 ≤ A(g) ≤ K0 Rsp T (g)α/2 .                      (41.5)
+A fixed compact smooth unit profile, constant in time, belongs to O and has positive A
+by Proposition 28.4. This proves positivity and finiteness of Cocc .
+    The map (Uℓ g)s (x) = ℓd/2 gs (ℓx) is an H 1 isomorphism preserving unit mass and
+strong measurability. It has inverse U1/ℓ and is a bijection on O. The physical Radon
+change of variables gives
+                        A(Uℓ g) = ℓα A(g),         T (Uℓ g) = ℓ2 T (g).
+Indeed the two densities contribute ℓ2d , dx contributes ℓ−d , and the pushforward of Γ
+contributes ℓα−d . Approximation extends the identity to full H 1 . Taking the union
+over g, ℓ leaves the class unchanged. For fixed A, T > 0, the derivative of Aℓα − ζT ℓ2
+has the sign of αA − 2ζT ℓ2−α . Its global maximum occurs at ℓ = (αA/(2ζT ))1/(2−α)
+and equals Dζ [A/T α/2 ]2/(2−α) . For A = 0 the supremum is zero as ℓ ↓ 0. Bounding
+every ratio by Cocc gives one inequality in (41.3). Fixed ratios approaching its positive
+supremum give the other by continuity of the positive power. Algebra gives (41.4) and
+the penalty scaling. No optimizer or minimax interchange is assumed. This proves
+Proposition 41.2.
+Lemma 41.3 (Countable Rayleigh near-occupations). For fixed Ψ ∈ Cpos and every
+ε > 0 there is gε ∈ O such that
+                                            √︁
+                             IΨ2 + T (gε ) ≤ vΨ A(gε ) + ε.             (41.6)
+Proof. The real H 1 space is separable, for example by its isometric embedding f ↦→
+(f, ∇f ) into a finite product of L2 spaces. Compact smooth density therefore supplies a
+countable real family. Discard zero and normalize each member in L2 to obtain fj dense
+in the L2 -unit H 1 class. Normalization preserves convergence
+                                                           ∫︁    because the approximating
+L norms tend to one. Put bj = ∥∇fj ∥2 and Rj (s) = hΨ,s fj2 − bj . Bounded-potential
+  2                                       2
+
+form continuity and Proposition 26.3 give λ2Ψ,s = supj Rj (s). The canonical functions
+are measurable,
+            ⋃︁     indeed continuous. Let Uj = {s : Rj (s) > λ2Ψ,s − ε}, A1 = U1 and
+Aj = Uj \ i<j Ui . These first-index cells are Borel and cover I. Put gε (s) = fj on
+Aj . Finite-valued truncations using f1 on the remaining cells converge pointwise in H 1 ,
+proving strong measurability. A null-set representative may be filled by f1 .
+    With HΨ = sups,x hΨ,s (x) < ∞, the selection implies
+                                   ∫︂
+                        b(gε (s)) < hΨ,s gε (s)2 − λ2Ψ,s + ε ≤ HΨ + ε.
+
+Thus it belongs to the actual O. Integrating the near-Rayleigh inequality, using
+Lemma 41.1, gives
+                  ∫︂                                     √︁
+                     λ2Ψ,s ds + T (gε ) ≤ ⟨Ψ, ρgε ⟩ + ε ≤ vΨ A(gε ) + ε.
+                    I
+
+                                             250
+
+===== PHYSICAL PAGE 251 =====
+                                                     ∫︁
+Time Cauchy–Schwarz on the unit interval gives IΨ2 ≤ I λ2Ψ,s ds. This proves (41.6).
+No eigenvector, continuum selector or limiting occupation is required. This proves
+Lemma 41.3.
+   For 0 ≤ b < q/2 define Fb (0) = 0 and
+                         [︄                         )︃(2−α)/2 ]︄1/k
+                            (q − 2b)(q−2b)/2
+                                             (︃
+                                                 2z
+              Fb (z) = k                                            ,      z > 0.    (41.7)
+                              8(q − b)q−b       2−α
+
+At b = 0 this is exactly the map in (28.9). The display parameter b does not change the
+actual temporal exponent a.
+Theorem 41.4 (The computed occupation ceiling). For every positive score coefficient
+c,
+                                    [︃ α/2     ]︃1/k
+                     pos        m     α Cocc
+                    Sc ≤ Uc := c k                                            (41.8)
+                                       8q q/2
+                                = cm (2ζ)α/(2k) F0 (EζO ),    ζ > 0.
+In particular the actual original moment constant satisfies C2 (Γ, a) ≤ U2 for every orig-
+inal model. This ceiling is not asserted to be attained or equal to C2 .
+Proof.
+√        Fix Ψ and write v = vΨ , C = Cocc and β = α/4. Lemma 41.3 gives IΨ2 ≤
+        β
+  vCT − T + ε for some T > 0. Bound it by the supremum over all √         T ≥ 0 before
+                                                                           vCT β−1 − 1
+sending ε ↓ 0. If v = 0, that supremum is zero. If v > 0, the derivative β √
+strictly decreases from infinity to −1. Its unique positive zero is T∗ = (β vC)1/(1−β) .
+The global maximum equals (q/4)(α/4)α/q (vC)2/q . In both cases,
+                                             √︁
+                       IΨ ≤ Dv 1/q ,    D = q/4(α/4)α/(2q) C 1/q .
+The scalar function cDv 1/q −v/2 vanishes at zero, tends to minus infinity, and has strictly
+decreasing derivative. Its unique positive maximum is at v∗ = (2cD/q)q/k , with value
+kv∗ /2. Direct positive-power algebra gives
+                                 (2D/q)q = q −q/2 (α/4)α/2 C.
+Since k + α = 3, the maximum is precisely Uc in (41.8), with denominator eight. Substi-
+tution of (41.4) gives the second form, retaining the factor (2ζ)α/(2k) . Take the supremum
+over the actual smooth positive-control class. Theorem 40.6 identifies C2 = S2pos , prov-
+ing the moment ceiling. The penalty factor cancels its energy scaling, so the ceiling is
+independent of ζ. This proves Theorem 41.4.
+Corollary 41.5 (A common spatial-energy bracket). With the same original covariance
+and Ma of (27.3),
+                                                              1/k
+                      2m Ma−1/k F0 (Esp ) ≤ C2 (Γ, a) ≤ 2m K0 F0 (Esp ).             (41.9)
+For Γ ̸= 0 there is also the own-energy comparison
+                                            O               O
+                               C2 ≤ 2m F0 (E1/2 ) < 2m Fa (E1/2 ).
+
+                                              251
+
+===== PHYSICAL PAGE 252 =====
+Proof. Insert Cocc ≤ K0 Rsp into (41.8) and use (28.8). This gives the upper bracket; the
+lower is (28.9) multiplied by 2m , using Theorem 40.6. Both concern one common spatial
+energy, not an assumed first moment.
+   For completeness put
+
+             ∆ = 21 [q log q + (q − 2a) log(q − 2a)] − (q − a) log(q − a) > 0.
+
+Here a > 0 and q − 2a > 2 − a > 1. The existing scalar strict-log-gap deduction applies
+at exactly these guards, without q ≥ 3. Equivalently the strict midpoint convexity of
+x log x on positive arguments, whose second derivative is 1/x, gives the sign. Subtracting
+logarithms in (41.7) gives
+
+                                        cm Fa (EζO )
+                                                          (︃                   )︃
+                                                             ∆ − (α/2) log(2ζ)
+          log(Fa (z)/F0 (z)) = ∆/k,                  = exp                        .
+                                            Uc                      k
+At ζ = 1/2 this and the ceiling prove the strict comparison. At ζ = 1 the comparison is
+not universally favorable. For α = 5/4, a = 1/2, d = 2,
+                                                     1111 77
+                          8[∆ − (α/2) log 2] = log           < 0,
+                                                      25 918
+since 1111 77 = 234966429149994773 and 25 918 = 4803028329503971872. This contrasts
+computed bounds; it refutes no actual moment inequality. This proves Corollary 41.5.
+
+
+    For Γ = 0, all raw means and scores vanish and C2 = 0. Here Q = 0, A = 0 and
+Cocc = 0. The supremum of −ζT (g) is zero: dilate a fixed unit compact profile by
+ℓd/2 f (ℓx) and let ℓ ↓ 0. The same argument gives Esp = 0 and the earlier damped energy
+zero, without using a zero vector as a unit profile. With Fb (0) = 0, every non-strict
+bound above is the zero identity. These own energies are not identified with Chen’s
+printed energies.
+
+
+42     Spatial white noise: energy and explicit moment
+       bounds
+Take d = α = 1 and Γ = cδ0 , c ≥ 0, with temporal kernel |s − t|−a , 0 < a < 1, and
+data
+√ (1, 0). The parameter c is covariance mass; the coefficient of unit noise would be
+  c. No additional temporal normalization
+                                    ∫︁ 4 is inserted.
+                                                  ∫︁ The   wave kinetic coefficient is
+                        1                             ′ 2
+one. For real unit f ∈ H (R) put A = R f and b = R (f ) . The physical covariance is
+Asp (f ) = cA.
+Lemma∫︁ 42.1 (The full-profile CDF square identity). Every such f has A < ∞. With
+        x
+F(x) = −∞ f (y)2 dy, for every real z,
+                          ∫︂
+                     0 ≤ [f ′ − zf (1 − 2F)]2 = b − 2zA + z 2 /3.           (42.1)
+                            R
+
+                                           252
+
+===== PHYSICAL PAGE 253 =====
+Proof. On a bounded interval the weak derivative f ′ is L1 by Cauchy–Schwarz. Its
+integral primitive has weak derivative f ′ by Fubini. Subtracting it from f gives a func-
+tion of weak derivative zero, hence constant almost everywhere: test against derivatives
+of compact smooth primitives of all zero-integral test functions. The resulting locally
+absolutely continuous representatives patch on overlaps, giving one continuous represen-
+tative.              2
+     ∫︁ Thus ρ = f is locally absolutely       continuous with ρ′ = 2f f ′ ∈ L1 (R), while ρ ≥ 0
+                                  ′
+and ρ = 1. Integrability of ρ makes ρ Cauchy on each infinite tail, so it has finite
+limits at both ends.∫︁ Its L1 integrability
+                                   ∫︁            forces both limits to be zero. It is therefore
+                         2
+bounded, and A = ρ ≤ ∥ρ∥∞ ρ < ∞.
+    Now 0 ≤ F ≤ 1, F′ = ρ continuously, and its limits are zero and one. The derivative
+of ρ(1 − 2F) is ρ′ (1 − 2F) − 2ρ2 ∈ L1 . Its endpoint limits vanish. Integrating on [−R, R]
+and sending R → ∞ gives               ∫︂
+                                         f ′ f (1 − 2F) = A.
+                                      R
+The polynomial P (y) = y − 2y + (4/3)y 3 has derivative (1 − 2y)2 . The chain rule and
+                                  2
+
+the endpoints of F give
+                        ∫︂
+                           f 2 (1 − 2F)2 = P (1) − P (0) = 1/3.
+                             R
+
+Absolute integrability holds since this integrand is bounded by f 2 . For each real z, both
+terms in the square in (42.1) are in L2 , and their cross product is absolutely integrable.
+Expansion and the two preceding identities prove the formula. Neither positivity of f
+nor strict increase of its CDF is required. This proves Lemma 42.1.
+Proposition 42.2 (Exact white spatial energy). For c > 0,
+                                   √
+                          Rsp = c/ 3,       Esp = c2 /6.
+Both values are zero at c = 0.
+Proof. Substitution z = 3A into (42.1) gives 3A2 ≤ b. This is the exact premise and
+conclusion of the existing conditional WhiteCDF square deduction. Here A > 0, since
+A = 0 would imply f = 0 a.e. Also b > 0: zero derivative makes its continuous          √
+                                               2
+representative
+    √          constant  and hence  zero  in L   , contradicting  unit mass.  Thus  A/   b≤
+1/ 3.                                                                  √︁
+     For ℓ > 0 use the real smooth H 1 profile fℓ (x) =                  ℓ/2 sech(ℓx), with
+fℓ′ = −ℓ tanh(ℓx)fℓ . Set t = tanh(ℓx), so dt = ℓ sech2 (ℓx) dx. Direct integration
+gives
+          1 1                     ℓ 1                                    ℓ2 1 2
+ ∫︂        ∫︂            ∫︂        ∫︂                         ∫︂           ∫︂
+      2                      4                2                    ′ 2
+     fℓ =      dt = 1,      fℓ =       (1 − t ) dt = ℓ/3,        (fℓ ) =        t dt = ℓ2 /3.
+          2 −1                   4 −1                                     2 −1
+                                         √
+The ratio is attained, proving Rsp = c/ 3. The physical Dirac measure introduces no
+Fourier constant or nonintegrable kernel |x|−1 . The existing conditional energy deduction
+applies to 3A2 ≤ b:
+                   cA − b/2 ≤ cA − 32 A2 = c2 /6 − 32 (A − c/3)2 ≤ c2 /6.
+
+                                              253
+
+===== PHYSICAL PAGE 254 =====
+At ℓ = c > 0 the profile attains c2 /6. These are full H 1 energy profiles; compact
+approximation equality is Proposition 28.4, not a claim that the noncompact profile
+itself is a compact stochastic control. At c = 0 the ratio is zero and the energy is
+sup(−b/2) = 0, approached by fℓ as ℓ ↓ 0. No zero-scale profile is used as a unit vector.
+The CDF, integral and attainment arguments remain analytic; the two finite conditional
+deductions do not formalize them. This proves Proposition 42.2.
+Theorem 42.3 (Explicit white moment bounds). For the same original point limit,
+
+                                               2a
+   √︃
+ 2    c                2 √︁                                    ΓE ((1 + a)/2)
+         ≤ C2 (c, a) ≤      cK0 (a), K0 (a) =     , Ma =                           .
+ 3 Ma                  3                      1−a         ΓE (1 + a)ΓE ((1 − a)/2)
+                                                                              (42.2)
+Its time exponent is (3 − a)/2. These are bounds, not a numerical evaluation of the
+intrinsic supremum.
+Proof. Here q = 3, k = 2, m = 3/2. Formula (28.9) gives
+                                                    ]︃1/2
+                                            (2z)1/2
+                                             [︃
+                                 F0 (z) = 2               .
+                                             8 33/2
+             √︁            √                      √       √                        √
+For c > 0,      2Esp = c/ 3, hence F0 (Esp ) = c/(3 2) and 2m F0 (Esp ) = (2/3) c.
+Substitution into Corollary 41.5 proves (42.2) in the original units. All Gamma factors
+are positive finite for 0 < a < 1. At c = 0, u = 1 and C2 = 0 by Theorem 40.6; both
+displayed bounds vanish. This proves Theorem 42.3.
+Corollary 42.4 (Uniform relative width of the bound formulas). For c > 0, the ratio
+of the upper and lower formulas is
+                                        [︃    √       ]︃1/2
+                           √︁                   π
+                             K0 (a)Ma ≤                     ,
+                                           2ΓE (5/4)2
+with equality at a = 1/2.
+Proof. Duplication and recurrence from Lemma 27.1 give
+               2a ΓE ((1 + a)/2)ΓE (1 + a/2)
+ΓE (1 + a) =                 √               ,     (1 − a)ΓE ((1 − a)/2) = 2ΓE ((3 − a)/2).
+                               π
+Therefore                                       √
+                                                 π
+                         K0 (a)Ma =                             .
+                                    2ΓE (1 + a/2)ΓE ((3 − a)/2)
+Put x = 1 + a/2, y = (3 − a)/2, so x, y > 0 and x + y = 5/2. In Euler’s Gamma integral
+the L2 (0, ∞) functions t(x−1)/2 e−t/2 and t(y−1)/2 e−t/2 have squared norms ΓE (x), ΓE (y)
+and inner product ΓE (5/4). Cauchy–Schwarz, positivity, inversion and the increasing
+square root prove the bound. At a = 1/2, x = y = 5/4, giving equality. Replacing a by
+1 − a exchanges these two arguments, so only this ratio of bound formulas is symmetric,
+not the moment constant or exponent. This proves Corollary 42.4.
+
+                                             254
+
+===== PHYSICAL PAGE 255 =====
+   This example retains the all-model theorem rather than replacing its scope. The
+formal static exponent is 3/2 as a ↓ 0; no interchange of long-time and temporal-endpoint
+limits is asserted. Jensen holds for the same canonical solution, while S1pos remains
+auxiliary. The read-only Skorohod comparison at strict spatial Riesz exponent below
+one does not cover this spatial-white endpoint. A separate white-time problem cannot
+be substituted for 0 < a < 1. No new Skorohod result, source correction or certified
+decimal enclosure is claimed.
+
+
+43     Targets and verification status
+Goal 43.1 (Upper bound at the correct scale). Under Hypothesis 1.1, prove
+lim supt→∞ t−κ log Eu2 (t, x) < ∞, ideally with an explicit constant.
+
+   Theorem 13.8 proves this upper bound for every admissible dimension and homoge-
+neous covariance, independently of the later variational identification. Earlier explicit
+bounds for 0 < α ≤ 1 remain available.
+
+Goal 43.2 (Sharp second-moment constant). Under Hypothesis 1.1, derive a finite con-
+stant C2 (Γ, α0 ) and prove, for every fixed x ∈ Rd ,
+
+                            lim t−κ log Eu2 (t, x) = C2 (Γ, α0 ).
+                            t→∞
+
+A variational characterization must specify its full domain, covariance amplitude, ki-
+netic coefficient and Gaussian action. Derive further evaluations and bounds from this
+formula. For zero covariance, u(t, x) = 1 and C2 (0, α0 ) = 0.
+
+    Theorem 40.6 proves this limit and specifies its complete positive-control formula.
+Theorem 41.4, Corollary 41.5 and Theorem 42.3 derive bounds from that value. The
+original proposed bounds with endpoints 2(4−α)/(3−α) L∗ and 2(4−α)/(3−α) L∗ remain com-
+parisons with Conjecture 2.3. Matching those endpoints or closing the source’s varia-
+tional gap is not required to identify the intrinsic value. No correction of the source’s
+normalization or equality of its energy domains is adopted. The component integrations
+have passed their scoped independent proof and application reviews. Whole-argument
+and final independent cold reviews of the consolidated candidate, followed by the re-
+maining project delivery checks, are still required.
+
+
+44     Established steps and open questions
+1. The mixed expansion and the first obstruction. Section 3 proves the complete
+   nonnegative mixed expansion and an independent convergent solution series. It cor-
+   rects the time-uniformity issue in the source’s intermediate estimate. The common-
+   per-pairing majorant has exponent ρ > κ and cannot give the desired scale. This is a
+   restriction on that majorant, not on the model or all uses of the source’s Theorem 3.1.
+
+
+                                            255
+
+===== PHYSICAL PAGE 256 =====
+2. Calibrations. Section 4 gives the finite white and Riesz coefficients. As α0 ↓ 0,
+   the target exponent becomes (4 − α)/(3 − α), the static exponent. Proposition 2.4
+   is unconditional; its numerical 2L∗ specialization requires the stated first-moment
+   premise. Comparisons with the Skorohod model identify time exponents only.
+
+3. The full upper scale. Section 5 gives explicit bounds when α ≤ 1. Section 13
+   proves the full homogeneous-covariance upper scale by independent interval fields,
+   local Gaussian-degree estimates and dyadic covariance domination. The latter proof
+   does not assume an endpoint representation of the spatial covariance.
+
+4. The intrinsic constant. Sections 19–40 construct the actual phase/source frame-
+   work and prove matching original point-moment bounds. The upper score uses the
+   original raw variance-half action. Finite Gram optimization and positive smoothing
+   identify it with the full positive-control lower value. The auxiliary label-one score is
+   not identified with an actual first-moment limit or Chen’s printed constants.
+
+5. Computed bounds and the white example. Section 41 bounds the same con-
+   stant using the full occupation class and a common spatial energy. Section 42 evalu-
+   ates that energy for Γ = cδ0 and gives explicit moment bounds and the relative width
+   of their formulas. It does not evaluate the intrinsic supremum numerically or assert
+   equality at either bound.
+
+6. Verification still to complete. Scoped reviews do not replace the fresh whole-
+   argument skeptic and final independent cold read. The source first-moment normal-
+   ization remains a qualified comparison question. Historical alternatives and failed
+   routes above retain their original scope; they are not new premises of the intrinsic-
+   limit proof.
+
+
+References
+[1] Raluca M. Balan and Daniel Conus, Intermittency for the wave and heat equations with fractional
+    noise in time, Ann. Probab. 44 (2016), 1488–1534; MR3474476
+[2] Xia Chen, Exponential asymptotics for Brownian self-intersection local times under Dalang’s con-
+    dition, Electron. J. Probab. 28 (2023), Paper No. 119, 17; MR4660700
+[3]          , Time-dependency   in   hyperbolic   anderson   model:   Stratonovich   regime,   Preprint
+      arXiv:2510.01412 (2025)
+[4]          , Time-dependency in hyperbolic Anderson models: Stratonovich regime, 2026. 64-
+      page author manuscript, submitted to Ann. Appl. Probab.; retrieved 2026-10-26, SHA-256
+      5f7385ca451e643a1f3ff31835e4ee52b2708b5d2e3652eec3fb5d3958b97b6c; supersedes Theorem 1.2 of
+      arXiv:2510.01412v1.
+[5] Xia Chen and Yaozhong Hu, Hyperbolic anderson equations with general time-independent gaus-
+    sian noise: Stratonovich regime, Ann. Probab. 53 (2025), 2144–2195. Available at 2403.08603;
+    MR4988274. Published version of arXiv:2403.08603
+[6] Michel Crouzeix and César Palencia, The numerical range as a spectral set, 2017. Author preprint,
+    arXiv:1702.00668v1; numbering used here refers to this version.
+
+
+                                                   256
+
+===== PHYSICAL PAGE 257 =====
+[7] Peter K. Friz and Martin Hairer, A course on rough paths, Universitext, Springer, Cham, [2020]
+    ©2020. With an introduction to regularity structures, Second edition of [ 3289027]. MR4174393
+[8] Gerald Teschl, Mathematical methods in quantum mechanics, Second, Graduate Studies in Math-
+    ematics, vol. 157, American Mathematical Society, Providence, RI, 2014. With applications to
+    Schrödinger operators. MR3243083
+
+
+
+
+                                               257
