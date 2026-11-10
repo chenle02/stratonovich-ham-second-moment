@@ -6,17 +6,36 @@
 
 ## Current wave
 
-- **Wave:** L0 (setup) — `PROPOSED`
-- **Companion package:** not yet created. Planned name
-  `stratonovich-ham-second-moment-lean` (private, registered through
-  `lean-pkg register` only after `lean-pkg search` finds no reusable package).
-- **Next execution gate:** explicit approval at PROJECT-GOAL.md decision point 4
-  before companion creation. G0 and the alpha<=1 proof now have reviewed
-  statements; that mathematical readiness does not authorize creating a repo.
-  No companion L1 wave,lease or cluster job has been opened. Le separately
-  authorized standalone local Lean verification on2026-10-29;the clock-filter
-  pilot now has three elaborated statements and an owned-source replay.
-  Exact type/application review passed4checks/HIGH;no official package gate is claimed.
+- **Wave:** L0 (setup) — `CLOSED` 2026-11-09 (Le approved decision point 4
+  in session; the open-release design D4 binds the companion).
+- **Companion package:** `stratonovich-ham-second-moment-lean`, checkout
+  `../../Project-stratonovich-ham-second-moment-lean`, remote
+  github.com/chenle02/stratonovich-ham-second-moment-lean (PRIVATE until
+  Le's public flip; fresh root commit 29e7367, no incubation history).
+  Registered in lean-pkg; status `verified-private` at 38d1616 (lower-tier
+  systemd receipt: clean build, 0 sorry, standard three axioms, all 88
+  claims' axioms read from the built environment). Claims synced at 358529c.
+- **Companion content:** 23 Mathlib-only seams, sources byte-identical to
+  local-checks (HermiteWordConsumer import path only): 82 public theorems,
+  43 public definitions; claims.yaml has 88 rows (78 theorems + 6 defs
+  reusable, 4 PositiveGram helpers internal); 68 negative controls all
+  rejected; 26 audits compile. The 3 GaussianChaos-dependent seams
+  (normalized-coordinate, vector-gaussian-projection, colored-vector-word;
+  9 facts) are WITHHELD by Le's 2026-11-09 decision until gaussian-chaos-lean
+  is licensed and public; they stay here in local-checks.
+- **Manuscript anchor:** revision cf979d6, pinned in the companion's
+  provenance/manuscript-anchor.json (main TeX + 27 inputs + PDF SHA-256).
+  The statement ledger cites 45 labels, all present at cf979d6; 35 claims
+  map to a label, 53 check computations with no direct label at cf979d6
+  (whole seams AllAlphaMoment, DampedLower, DimensionalMatrix, GlobalOmega,
+  LocalFlow, MiddleCross, OccupationForm, PhaseResponse, ProjectionResidual,
+  TerminalCross, plus 8 rows in DirectEvent/InteractionDriver/RawValueCeiling).
+  Flagged to #3 as a possible target mismatch; not a Lean defect.
+- **Not claimed:** no Comparator tier, no whole-paper gate, no correspondence
+  re-review of the packaged statements (the ledger is an AI-drafted review
+  draft), no Palomar eligibility (seam companion, ADR-0070 D4).
+- **Next:** independent correspondence read of docs/statement-ledger.md;
+  wave L1 (G0 pair-partition counts) when opened.
 
 - **Standalone local checks (current, 2026-11-09):** 87 accepted finite
   facts in 26 local seams. The latest promotion added three concrete
@@ -25,8 +44,8 @@
   last 2026-11-09 log entry and `local-checks/colored-vector-word-v1/`).
   Analytic inputs (H1/CDF, integrals, suprema, attainment, Gamma, PDE,
   complex/background/Bochner bridges) remain informal and outside the
-  kernel. Official wave L0 PROPOSED; no package, companion, registry entry
-  or cluster job. The earlier 80/22 snapshot is superseded history.
+  kernel. These are the development record; the public companion packages 23 of
+  the 26 seams (see above). The earlier 80/22 snapshot is superseded history.
 
 ## Planned waves (strategy in ROADMAP.md)
 
@@ -42,6 +61,7 @@
 |---|---|---|---|
 | L0 | PROPOSED | 2026-10-26 | Setup by session #4; no Lean code yet |
 | L0 | PROPOSED | 2026-10-28 | Readiness/strategy refresh after source and plane-endpoint reviews; creation approval still pending, no package or Lean verification |
+| L0 | CLOSED | 2026-11-09 | Companion created and registered (verified-private at 38d1616); 23 seams packaged, 3 GaussianChaos seams withheld; manuscript anchor cf979d6 |
 
 ## New proof seams retained for later statement fences
 
