@@ -1,0 +1,111 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "PROVENANCE.json:1-567 — complete.",
+    "candidate/statement-ledger.md:1-627 — complete, read consecutively as 1-220, 221-430, 431-627.",
+    "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean:1-105 — complete.",
+    "lean/StratonovichHAMSecondMoment/KappaRange.lean:1-42 — complete.",
+    "lean/StratonovichHAMSecondMoment/DriverParameters.lean:1-51 — complete.",
+    "lean/claims.yaml:1-845 — complete, read consecutively as 1-220, 221-440, 441-660, 661-845.",
+    "lean/coverage.yaml:1-344 — complete, read consecutively as 1-180, 181-344.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:140-200 — partial file; required excerpt complete.",
+    "manuscript/notes/integrated_actual_operator_driver.tex:1-30 — partial file; required excerpt complete.",
+    "manuscript/notes/integrated_covariance_foundation.tex:1-35, 250-278; additional search-match lines 56, 65, 79-81, 89, 94-97, 103, 114, 116, 118-119, 121, 125, 130-131, 134-135, 184-185, 192, 197, 209, 212-213, 218, 222, 224, 226 — partial file."
+  ],
+  "checks": [
+    {
+      "claim": "StratonovichHAMSecondMoment.HomogHypothesis.IsTempered: H:homog",
+      "verdict": "PASS",
+      "reason": "FIDELITY: candidate/statement-ledger.md:562 and lean/claims.yaml:790-796 accurately summarize HomogHypothesis.lean:34-35: '∃ k : ℕ, ∫⁻ x, ENNReal.ofReal ((1 + ‖x‖) ^ (-(k : ℝ))) ∂ν < ⊤'. MAPPING: main TeX:171-172 requires 'tempered Radon measure'; integrated_covariance_foundation.tex:23-30 explicitly derives integrability of '(1+|x|)^{-N}' and absolute integrability of Schwartz tests. For nonnegative Radon measures, this polynomial-integrability condition is equivalent to temperedness; natural exponents suffice."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.HomogHypothesis.IsEven: H:homog",
+      "verdict": "PASS",
+      "reason": "FIDELITY: ledger:563 and claims.yaml:797-803 match HomogHypothesis.lean:38-39, 'ν.map (fun x => -x) = ν'. MAPPING: main TeX:171-172 requires both Γ and μ to be 'even'. Invariance under the continuous reflection x ↦ -x is precisely this condition."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.HomogHypothesis.IsPosDefDistr: H:homog",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "FIDELITY: ledger:564 and claims.yaml:804-810 match HomogHypothesis.lean:44-47: for every complex Schwartz φ, the integral of '∫ y, φ (x + y) * (starRingEnd ℂ) (φ y)' against Γ has imaginary part zero and nonnegative real part. MAPPING: main TeX:171 requires 'positive-definite tempered Radon measure'. The inner expression equals (φ * φ̃)(x), where φ̃(z)=conj(φ(-z)); hence the sign and conjugation are correct. Under Γ_tempered in the enclosing structure, the convolution is Schwartz and its Γ-integral exists, so totalized integration causes no defect. H2 concerns only wording for standalone use."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.HomogHypothesis.IsSpectralMeasure: H:homog",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "FIDELITY: ledger:565 and claims.yaml:811-817 match HomogHypothesis.lean:52-55: '∫ x, φ x ∂Γ = ∫ ξ, (∫ x, φ x * Complex.exp (Complex.I * (inner ℝ ξ x : ℝ))) ∂μ'. MAPPING: main TeX:175-176 states 'Γ=∫ e^{iξ·x} μ(dξ)' as tempered distributions; integrated_covariance_foundation.tex:13-21 expands it into exactly this Schwartz-test identity. The positive exponential sign, absence of a conjugate on φ, and absence of a Fourier normalization factor are correct. Temperedness of Γ and μ supplies integrability of both pairings; no interchange of two infinite measures is required. H2 concerns only standalone-domain wording."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.HomogHypothesis.HomogCovariance: H:homog",
+      "verdict": "PASS",
+      "reason": "FIDELITY: ledger:566 and claims.yaml:818-824 match HomogHypothesis.lean:64-80. MAPPING: compare Lean 'dim', 'alpha0_pos', 'alpha0_lt_one', Γ/μ local finiteness, evenness and temperedness, 'Γ_posdef', 'spectral', 'threshold', and 'alpha_range' with main TeX:169-185. All clauses are represented. Measure-valued Γ and μ are nonnegative; locally finite Borel measures on finite-dimensional Euclidean space are Radon. 'Positive' μ means nonnegative, not nonzero: integrated_actual_operator_driver.tex:9-11 explicitly allows Γ=0. Lean:77-78, 'Γ (c • A) = ENNReal.ofReal (c ^ ((d : ℝ) - alpha)) * Γ A', matches TeX:179-180, 'for every Borel set A and c > 0, Γ(cA)=c^{d-α}Γ(A)'. Pointwise scalar action is the dilation image; for c>0 its multiplier is finite and strictly positive, so ENNReal.ofReal does not alter the equation, including infinite masses. E:cov's γ is explicitly identified with Γ as a function or distribution at TeX:178-179; no density assumption is improperly imposed. This predicate models the covariance hypothesis, not construction of the Gaussian noise."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.HomogHypothesis.homog_params: H:homog",
+      "verdict": "PASS",
+      "reason": "FIDELITY: ledger:567 and claims.yaml:825-831 match HomogHypothesis.lean:84-87: 'DriverParameters.Homog d alpha alpha0'. MAPPING: DriverParameters.lean:20-22 expands this to d∈{1,2,3}, 0<α₀<1, α₀+α<2, and 0<α<d or α=d=1, exactly the numerical clauses of main TeX:170, 181-184. The proof only projects these conditions and commutes the threshold sum."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.HomogHypothesis.kappa_mem_Ioo_paper: E:kappa",
+      "verdict": "PASS",
+      "reason": "FIDELITY: ledger:568 and claims.yaml:832-838 match HomogHypothesis.lean:91-95: '(h : HomogCovariance d alpha alpha0 Γ μ)' implies 'KappaRange.kappa alpha alpha0 ∈ Set.Ioo 1 2'. KappaRange.lean:22 defines '(4 - alpha - alpha0) / (3 - alpha)'. MAPPING: main TeX:188-191 states 'κ:=(4-α-α₀)/(3-α)∈(1,2)' under H:homog. The assumptions ensure α<2, hence a positive denominator; the two strict inequalities follow from α₀<1 and α+α₀<2. The full covariance hypothesis is retained even though unused analytically."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.HomogHypothesis.parameters_nonempty_paper: E:driver-parameters",
+      "verdict": "PASS",
+      "reason": "FIDELITY: ledger:569 and claims.yaml:839-845 match HomogHypothesis.lean:99-103: under HomogCovariance there exist γ, θ, β satisfying '0 < γ ∧ γ < min (1 / 2) ((2 - alpha) / 2)' and '1 / 2 < θ ∧ θ < β ∧ β < min (1 - alpha0 / 2) ((3 - alpha0 - alpha) / 2)'. MAPPING: integrated_actual_operator_driver.tex:5-7 retains H:homog and sets 'a = α₀'; lines 18-23 give exactly these two chains and state 'The strict intervals are nonempty.' DriverParameters.lean:25-49 correctly proves simultaneous existence. Neither endpoint nor strictness is lost."
+    },
+    {
+      "claim": "PARA-HomogHypothesis",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "candidate/statement-ledger.md:552-558 correctly describes the full predicate and both numerical wrappers. Its explanation that Lean measures are nonnegative and local finiteness supplies Radon regularity on R^d is sound. The explicitly expanded spectral identity agrees with integrated_covariance_foundation.tex:13-21. Optional qualification H2 would make the component definitions' intended domain clearer."
+    },
+    {
+      "claim": "PARA-KappaRange",
+      "verdict": "PASS",
+      "reason": "ledger:573-578 accurately distinguishes the numerical-only theorem KappaRange.lean:26-29 from the full-hypothesis wrapper HomogHypothesis.lean:91-95. It correctly identifies the numerical theorem as a generalization of the manuscript's assumption presentation and the conclusion as both inequalities of E:kappa."
+    },
+    {
+      "claim": "PARA-DriverParameters",
+      "verdict": "PASS",
+      "reason": "ledger:498-503 agrees with DriverParameters.lean:20-49 and HomogHypothesis.lean:99-103. The manuscript retains H:homog and sets a=α₀ at integrated_actual_operator_driver.tex:5-7. The paragraph correctly states that the interval arguments need only 0<a<1 and a+α<2, rather than the covariance clauses."
+    },
+    {
+      "claim": "COVERAGE-ROWS",
+      "verdict": "PASS",
+      "reason": "lean/coverage.yaml:27-40 cites precisely homog-hypothesis-parameters-nonempty-paper and homog-hypothesis-kappa-mem-ioo-paper, whose claims.yaml entries are at 832-845. Both wrappers retain a faithful model of H:homog. Consequently class 'same-assumptions' is honest, and no generalization note is necessary for these wrapper-based rows. The numerical-only variants are separately identified as generalizations in the ledger."
+    },
+    {
+      "claim": "SCOPE-PROSE",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "ledger:29-44 correctly distinguishes numerical generalizations from full-hypothesis wrappers and accurately lists the covariance clauses modeled by HomogCovariance. There is a minor bookkeeping error: 'five ... modules (sections marked whole result)' overlooks HomogHypothesis itself; six such sections appear at lines 496, 512, 529, 550, 571 and 585. The count of five labelled result conclusions remains correct. See H1."
+    },
+    {
+      "claim": "LEDGER-INDEX",
+      "verdict": "PASS",
+      "reason": "ledger:105-107 indexes all eight HomogHypothesis declarations appearing in rows 562-569, with the same H:homog, E:kappa and E:driver-parameters assignments. A label search across all 50 supplied LaTeX files found H:homog at main TeX:169, E:kappa at main TeX:189, and E:driver-parameters at integrated_actual_operator_driver.tex:18. The associated S:model, E:cov and E:threshold labels also exist at main TeX:152, 163 and 181."
+    },
+    {
+      "claim": "LEDGER-TOTALS",
+      "verdict": "PASS",
+      "reason": "Counting declaration rows across the whole ledger's tables gives 117 rows: 13 explicitly marked definitions and 104 theorem rows; 69 rows cite a manuscript label and 48 have no direct label. These equal ledger:110-111. Independently, claims.yaml contains 104 'kind: theorem' entries and 13 'kind: definition' entries."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "H1 — SCOPE-PROSE module count. candidate/statement-ledger.md:29-30 says 'The five StratonovichHAMSecondMoment modules (sections marked whole result below)', but six headings occur at lines 496, 512, 529, 550, 571 and 585. HomogHypothesis.lean:6-9 describes the added module as stating 'Hypothesis H:homog ... and the two results'; the corresponding TeX labels are main TeX:169 and 189 and integrated_actual_operator_driver.tex:18. Optional exact fix: replace the opening with 'The six StratonovichHAMSecondMoment modules ... model H:homog and formalize the conclusions of five labelled results'. This does not affect mathematical correspondence.",
+      "H2 — Standalone component-domain wording. HomogHypothesis.lean:44-55 defines IsPosDefDistr and IsSpectralMeasure on arbitrary measures, while ledger:564-565 and claims.yaml:807,814 describe distributional properties without explicitly repeating the ambient temperedness conditions. Main TeX:171-176 requires 'tempered Radon measure' before asserting positive-definiteness and the spectral identity. The enclosing Lean structure supplies Γ_tempered and μ_tempered at lines 71 and 75, so its model is faithful and the wrappers are unaffected. Optional exact clarification: prefix the component summaries with 'For the tempered measures used in HomogCovariance'. Without that ambient qualification, the bare predicates alone do not establish temperedness, and totalized Bochner integrals should not be interpreted as certificates of convergence."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "All complete-reading requirement A ranges were read without gaps or truncation. The two required manuscript excerpts were read completely, but the rest of those files was not reviewed.",
+    "All 50 LaTeX inputs were searched for the relevant labels; files producing no matching lines were searched, not substantively read. Other manuscript content outside the reported ranges was not audited.",
+    "Compilation without sorry and with standard axioms, and the supervisor-checked byte binding, were supplied premises; no build or independent provenance reconstruction was performed.",
+    "Standard meanings of Measure, SchwartzMap, IsLocallyFiniteMeasure, EuclideanSpace volume, pointwise scalar action and starRingEnd on complex numbers were used. Mathlib implementation sources were not included in the packet and were not inspected.",
+    "The mathematical equivalence between the integral encodings and tempered-distribution terminology was assessed analytically; this packet does not supply Lean proofs of those equivalences.",
+    "This is an AI correspondence review, not human verification or a novelty audit."
+  ]
+}

@@ -1,0 +1,121 @@
+Review the frozen packet rooted at <HOME>/.local/state/Le-AI-Lab/stratonovich-lean-homog-review-v1/attempt-01/workspace. Primary target: candidate/statement-ledger.md. Source revision: d7abbd40133991d84d4826cb66c9c8cd3802ac8e.
+
+You are an independent artifact reviewer. Read only the frozen packet
+and the supplied review contract. Report correctness, missing assumptions,
+incorrect constants, failed implications, and uncertainty. Do not edit files,
+use the network, send messages, publish, install, or delegate. Do not launch a
+research or coding workflow. Return a scientific report rather than a plan.
+Use exactly one JSON object with schema "subscription-review-report/1", verdict (PASS, PASS_WITH_NOTES, FAIL, or
+INCONCLUSIVE), confidence (high, medium, low), source_coverage (list of strings),
+checks (list of objects with claim, verdict, reason), findings (an object with
+fatal, major, minor lists), required_repairs (list), and limitations (list).
+required_repairs contains ONLY mandatory changes that block acceptance. Optional
+clarifications belong in findings.minor, never in required_repairs. PASS and
+PASS_WITH_NOTES require empty fatal, major and required_repairs lists and no
+failed/unchecked claim. If a repair is mandatory, return FAIL or INCONCLUSIVE;
+never weaken a finding to obtain PASS.
+Read every required source completely. Never use Grep head_limit or any other
+truncating or limiting option on a required source. After any pagination or
+truncation marker (for example a partial Read, an offset/limit notice, or
+"output truncated"), keep reading the next range until the whole file is read.
+In source_coverage, list each exact file and the line ranges you actually read.
+If coverage of any required source is incomplete, say "partial" for that source
+in source_coverage and state the gap in limitations.
+An AI review is not human verification or a novelty audit. Do not silently
+repair a candidate and PASS the original. A terminal error is not a verdict.
+
+Frozen packet file index (relative to workspace; a listed file is not proof of reading):
+["PROVENANCE.json", "candidate/statement-ledger.md", "lean/StratonovichHAMSecondMoment/DriverParameters.lean", "lean/StratonovichHAMSecondMoment/HomogHypothesis.lean", "lean/StratonovichHAMSecondMoment/KappaRange.lean", "lean/claims.yaml", "lean/coverage.yaml", "manuscript/notes/book-layout.tex", "manuscript/notes/figures/active-subset-optimization.tex", "manuscript/notes/figures/common-noise.tex", "manuscript/notes/figures/cross-colour-cube.tex", "manuscript/notes/figures/dyadic-cover.tex", "manuscript/notes/figures/endpoint-elimination.tex", "manuscript/notes/figures/gaussian-enlargement.tex", "manuscript/notes/figures/global-control-blocks.tex", "manuscript/notes/figures/hermite-cutoff.tex", "manuscript/notes/figures/interval-allocations.tex", "manuscript/notes/figures/interval-end-metrics.tex", "manuscript/notes/figures/light-cone.tex", "manuscript/notes/figures/literature-interpretations.tex", "manuscript/notes/figures/literature-results-map.tex", "manuscript/notes/figures/nonseparable-controls.tex", "manuscript/notes/figures/order-of-limits.tex", "manuscript/notes/figures/positive-gram.tex", "manuscript/notes/figures/proof-map.tex", "manuscript/notes/figures/styles.tex", "manuscript/notes/figures/two-chain-pairings.tex", "manuscript/notes/figures/white-strip.tex", "manuscript/notes/integrated_actual_operator_driver.tex", "manuscript/notes/integrated_cameron_mean.tex", "manuscript/notes/integrated_compact_gaussian.tex", "manuscript/notes/integrated_compact_mean_family.tex", "manuscript/notes/integrated_constant_phase_young.tex", "manuscript/notes/integrated_covariance_foundation.tex", "manuscript/notes/integrated_exact_scaling.tex", "manuscript/notes/integrated_gaussian_tubes.tex", "manuscript/notes/integrated_intrinsic_constant.tex", "manuscript/notes/integrated_masked_moments.tex", "manuscript/notes/integrated_occupation_ceiling.tex", "manuscript/notes/integrated_point_transfer.tex", "manuscript/notes/integrated_positive_gram.tex", "manuscript/notes/integrated_radius_anchor.tex", "manuscript/notes/integrated_raw_block_lower.tex", "manuscript/notes/integrated_signed_moment_upper.tex", "manuscript/notes/integrated_signed_static.tex", "manuscript/notes/integrated_source_convergence.tex", "manuscript/notes/integrated_spatial_occupation.tex", "manuscript/notes/integrated_symplectic_phase.tex", "manuscript/notes/integrated_temporal_equilibrium.tex", "manuscript/notes/integrated_uniform_mean.tex", "manuscript/notes/integrated_uniform_products.tex", "manuscript/notes/integrated_unmasked_variational.tex", "manuscript/notes/integrated_wave_variance.tex", "manuscript/notes/integrated_white_evaluation.tex", "manuscript/notes/integrated_young_upper_foundation.tex", "manuscript/notes/literature_review.tex", "manuscript/notes/notes_stratonovich_ham_second_moment.tex"]
+
+Independent correspondence review: Lean model of Hypothesis H:homog and two results restated under it
+
+You are an independent, skeptical reviewer. Your workspace is a frozen,
+read-only packet. Use your file-reading and search tools actively; do not
+rely on memory. Do not modify any file.
+
+PACKET
+- candidate/statement-ledger.md : the ledger (Lean companion commit
+  d7abbd401339). Review ONLY: the section "HomogHypothesis (whole result)", the
+  paragraphs of the sections "KappaRange (whole result)" and
+  "DriverParameters (whole result)", the Scope bullet on the whole-result
+  modules, the index entries for H:homog / E:kappa / E:driver-parameters,
+  and the totals line.
+- lean/StratonovichHAMSecondMoment/HomogHypothesis.lean, KappaRange.lean,
+  DriverParameters.lean : ground truth. lean/claims.yaml, lean/coverage.yaml.
+- manuscript/notes/... : all 50 LaTeX inputs at revision ba01d9857383.
+- PROVENANCE.json : byte binding of every packet file (supervisor-checked).
+
+The Lean compiles with no sorry and only standard axioms. Correspondence is
+in question, above all the FIDELITY OF THE MODEL of Hypothesis H:homog
+(main TeX, Section S:model, around lines 150-191): the predicate
+HomogCovariance and its parts IsTempered, IsEven, IsPosDefDistr,
+IsSpectralMeasure. For every clause of H:homog (and the context it relies
+on, e.g. E:cov), decide whether the Lean model states it exactly, states
+something weaker or stronger, omits it, or adds something the manuscript
+does not say. Check in particular: the Fourier/spectral convention
+Gamma = int e^(i xi.x) mu(d xi) "in the sense of tempered distributions"
+and its Lean encoding; positive-definiteness of Gamma as a distribution and
+its encoding via phi * phi~; "tempered Radon measure" encoded as locally
+finite plus polynomial integrability; "nonnegative, even"; "positive"
+spectral measure; the scaling Gamma(cA) = c^(d-alpha) Gamma(A) "for every
+Borel set A and c > 0" (Lean uses the pointwise scaled set c * A and
+ENNReal.ofReal); the parameter conditions. Mathlib names may be checked by
+their evident meaning; if a name's meaning is uncertain, say so.
+Then check that kappa_mem_Ioo_paper and parameters_nonempty_paper state
+E:kappa and E:driver-parameters under the full hypothesis (the driver
+section sets a = alpha_0 and retains H:homog), and that the two coverage
+rows that cite them may honestly be class same-assumptions.
+
+CHECKS (exactly these 15, in this order, with these claim strings):
+  1. claim "StratonovichHAMSecondMoment.HomogHypothesis.IsTempered: H:homog"
+  2. claim "StratonovichHAMSecondMoment.HomogHypothesis.IsEven: H:homog"
+  3. claim "StratonovichHAMSecondMoment.HomogHypothesis.IsPosDefDistr: H:homog"
+  4. claim "StratonovichHAMSecondMoment.HomogHypothesis.IsSpectralMeasure: H:homog"
+  5. claim "StratonovichHAMSecondMoment.HomogHypothesis.HomogCovariance: H:homog"
+  6. claim "StratonovichHAMSecondMoment.HomogHypothesis.homog_params: H:homog"
+  7. claim "StratonovichHAMSecondMoment.HomogHypothesis.kappa_mem_Ioo_paper: E:kappa"
+  8. claim "StratonovichHAMSecondMoment.HomogHypothesis.parameters_nonempty_paper: E:driver-parameters"
+  9. claim "PARA-HomogHypothesis"   10. claim "PARA-KappaRange"
+  11. claim "PARA-DriverParameters"
+  12. claim "COVERAGE-ROWS": the coverage.yaml rows for E:kappa and
+      E:driver-parameters (class, claims, absence of a generalization note).
+  13. claim "SCOPE-PROSE": the Scope bullet on the whole-result modules.
+  14. claim "LEDGER-INDEX": index entries for the 8 HomogHypothesis
+      declarations agree with their rows; cited labels exist (search
+      \label across all 50 files).
+  15. claim "LEDGER-TOTALS": 117 = 104 theorems + 13 definitions; 69
+      labelled, 48 unlabelled, counted from the whole ledger's tables.
+For rows 1-8: FIDELITY (row and claims.yaml summary match the Lean) and
+MAPPING (the Lean faithfully renders the cited manuscript text).
+
+COMPLETE-READING REQUIREMENT (binding)
+A. Read completely, in consecutive ranges with no gaps: the three Lean
+   files; candidate/statement-ledger.md; lean/claims.yaml;
+   lean/coverage.yaml; lines 140-200 of
+   manuscript/notes/notes_stratonovich_ham_second_moment.tex; lines 1-30 of
+   manuscript/notes/integrated_actual_operator_driver.tex.
+B. Other files: search as needed and read matches in context.
+C. If A is incomplete, mark affected checks INCONCLUSIVE and give
+   confidence medium or low.
+
+REPORT FORMAT (strict; the report is machine-validated)
+Return ONLY the JSON object: no text before or after it, no code fence.
+Use exactly the fields of the schema "subscription-review-report/1".
+- "checks": exactly the 15 objects above, in order, with those claim
+  strings. verdict one of PASS, PASS_WITH_NOTES, FAIL, INCONCLUSIVE, PARTIAL
+  (PASS: correct; PASS_WITH_NOTES: correct with a minor wording point
+  reported as a minor finding; PARTIAL: material imprecision; FAIL: wrong;
+  INCONCLUSIVE: not checkable). reason: evidence with file:line, quoting
+  Lean and TeX side by side for rows 1-8.
+- "findings": fatal = a misstatement or unfaithful model a citing reader
+  would be misled by; major = material imprecision; minor = wording. Each
+  string starts with an ID (H1, H2, ...), names the item, quotes Lean and
+  TeX with file:line, and gives the exact fix.
+- "required_repairs": only changes required before these rows can be
+  cited as correct.
+- "source_coverage": every file read, exact line ranges, "complete" or
+  "partial".
+- "verdict": PASS or PASS_WITH_NOTES only if fatal, major and
+  required_repairs are empty and every check is PASS or PASS_WITH_NOTES.
+- "confidence": high only if requirement A is complete.
+

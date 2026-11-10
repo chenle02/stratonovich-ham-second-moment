@@ -113,8 +113,20 @@
   synced at 9d1c7c4. Coverage: 5 same-assumptions, 19 inputs-supplied, 4
   outside. No manuscript defect found. The 19 new ledger rows await an
   independent correspondence review (Codex, launched 2026-11-10).
-- **Next:** adjudicate the wave-L1 correspondence review; human statement
-  read (work package A1) still recommended;
+- **Wave L1 correspondence (2026-11-10):** three Codex GPT-6.1-Sol reviews:
+  (1) 5 findings on overstated same-assumptions claims, repaired with
+  exact-hypothesis wrappers (Gram, Rayleigh) and, at Le's choice, a full
+  Lean model of H:homog (HomogHypothesis.HomogCovariance) with wrappers
+  for E:kappa and E:driver-parameters; (2) confirmation 29/30; (3) H:homog
+  model review PASS_WITH_NOTES/high, ACCEPTED, 2 minor wording fixes
+  (companion eef3e72). All five coverage same-assumptions rows now cite
+  statements with the manuscript's hypotheses. lean-pkg verified-private at
+  b876362 (117 claims). Closing record:
+  reviews/2026-11-10-lean-homog-model-review/ADJUDICATION.md. Le decides
+  whether this closes the wave L1 correspondence gate.
+- **Next:** Le's decision on the wave L1 gate; human statement read (A1)
+  still recommended; next wave candidates on the board (W1: B3, B9, B23,
+  B24, C26; W2/W3 need foundations);
   wave L1 (G0 pair-partition counts) when opened.
 
 - **Standalone local checks (current, 2026-11-09):** 87 accepted finite
