@@ -66,3 +66,12 @@ resolve. Current pins are in VALIDATION.json; the preceding validation is
 preserved in `private/audit/2026-11-10-chapter-guides/prior-validation.json`
 from the repository root. Chapter-opening inspection covers fifteen opening
 pages; it does not certify the whole document visually or mathematically.
+
+## Reader/report figure parity
+
+Both literature maps now use `literature-results-drawing.tex`, with their own
+captions and stable labels. The reader matches the report's fonts and colors.
+The positive-Gram diagram separates the singular-case heading from the vector
+label. All ten reader figures and the affected report figures were inspected.
+The guitar caption's source indentation now survives the repaired formatter.
+This resolves the previously pending caption-style correction.

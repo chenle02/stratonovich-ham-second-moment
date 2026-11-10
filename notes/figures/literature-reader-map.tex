@@ -1,53 +1,16 @@
+% Reader caption for the shared literature comparison.
 \begin{figure}
-\centering
-\begin{tikzpicture}[x=1cm,y=1cm]
-  \node[ham/box,text width=5.1cm] at (0,2.55)
-  {Skorohod interpretation};
-  \node[ham/box,text width=5.1cm] at (5.8,2.55)
-  {Ordinary Stratonovich limit};
-  \node[ham/note] at (-3.85,0) {White\\in time};
-  \node[ham/box,text width=5.1cm,minimum height=3.2cm] at (0,0)
-  {Chen--Dalang~\cite{chen.dalang:15:moment}\\
-  Exact second moments\\[3pt]
-  Chen--Guo--Song~\cite{chen.guo.ea:24:moments}\\
-  Exact second moments;\\higher-$p$ growth orders};
-  \node[ham/box,text width=5.1cm,minimum height=3.2cm] at (5.8,0)
-  {No source claim listed here.\\[3pt]
-  A specified approximation\\needs a separate theorem.};
-  \node[ham/note] at (-3.85,-3.7) {Static\\noise};
-  \node[ham/box,text width=5.1cm,minimum height=3.3cm] at (0,-3.7)
-  {Balan--Chen--Chen~\cite{balan.chen.ea:22:exact}\\
-  Exact asymptotics, $p\ge2$\\[3pt]
-  Chen--Eisenberg~\cite{chen.eisenberg:23:interpolating}\\
-  Fractional equations\\time order $<2$};
-  \node[ham/box,text width=5.1cm,minimum height=3.3cm] at (5.8,-3.7)
-  {Balan~\cite{balan:22:stratonovich}: construction\\[3pt]
-  Xia Chen--Hu~\cite{chen.hu:25:hyperbolic}\\
-  Exact asymptotics\\at integer $p\ge1$};
-  \node[ham/note] at (-3.85,-7.9) {Fractional\\temporal\\noise};
-  \node[ham/box,text width=5.1cm,minimum height=3.6cm] at (0,-7.9)
-  {Balan--Conus; Hu--Wang\\
-  \cites{balan.conus:16:intermittency,hu.wang:24:matching}\\
-  Moment-growth orders\\[3pt]
-  Chen--Deya--Song--Tindel\\
-  \cite{chen.deya.ea:25:solving}\\
-  Construction; data conditions};
-  \node[ham/box,fill=hamgold!9,text width=5.1cm,minimum height=3.6cm] at (5.8,-7.9)
-  {Xia Chen's author version\\
-  \cite{chen:author2026:time-dependency}\\
-  Two-sided $p=1$ bounds\\[3pt]
-  Present manuscript: $p=2$\\
-  Intrinsic variational formula\\
-  Written proof; acceptance pending};
-\end{tikzpicture}
-\caption[Selected moment results by noise model]{A reading map of selected results, not an implication diagram.
-The rows are different temporal noise models, not limiting arrows. Every
-source retains its spatial covariance, dimension and initial-data hypotheses;
-the technical literature review gives the detailed comparison. Exact second
-moments and matching higher-moment growth orders are different conclusions.
-Fractional differentiation in Chen--Eisenberg is not fractional temporal
-noise. The highlighted cell records the present written claim, not a higher
-verification grade. The white-in-time Stratonovich cell is not an
-assertion that the problem is open or that it equals the It\^o model.}
-\label{Fig:literature-reader-map}
+  \centering
+  \input{notes/figures/literature-results-drawing}
+  \caption[Selected moment results by noise model]{A reading map of selected results, not an implication diagram.
+    The rows distinguish temporal covariance models. The small sketches show
+    covariances, not noise paths or limits between rows. Every
+    source retains its spatial covariance, dimension and initial-data hypotheses;
+    the technical literature review gives the detailed comparison. Exact second
+    moments and matching higher-moment growth orders are different conclusions.
+    Fractional differentiation in Chen--Eisenberg is not fractional temporal
+    noise. The highlighted band records the present written claim; independent review
+    remains pending. The white-in-time Stratonovich cell is not an
+    assertion that the problem is open or that it equals the It\^o model.}
+  \label{Fig:literature-reader-map}
 \end{figure}

@@ -1,0 +1,96 @@
+% Shared vector drawing for the report and reading edition.
+\begin{tikzpicture}[x=1cm,y=1cm,
+  lit/text/.style={anchor=north west,align=flush left,text width=5.35cm,
+  font=\small,inner sep=0pt,
+  execute at begin node={\hyphenpenalty=10000\relax}},
+  lit/tag/.style={anchor=west,font=\small\bfseries,inner sep=0pt},
+  lit/regime/.style={align=center,font=\small,inner sep=0pt}]
+  % The two colored columns classify products, not solution inclusions.
+  \fill[hamblue!3] (1.65,.35) rectangle (7.35,-11.75);
+  \fill[hamteal!3] (7.75,.35) rectangle (13.45,-11.75);
+  \fill[hamblue] (1.65,.35) rectangle (7.35,1.15);
+  \fill[hamteal] (7.75,.35) rectangle (13.45,1.15);
+  \node[text=white,font=\bfseries] at (4.5,.75) {Skorohod};
+  \node[text=white,font=\bfseries] at (10.6,.75) {Ordinary Stratonovich};
+  \node[lit/regime,text=hamblue!80!black] at (.55,.75)
+  {Temporal\\covariance};
+
+  % White time: the spike represents a delta covariance, not a noise path.
+  \node[lit/regime] at (.55,-.25) {White\\in time};
+  \draw[gray] (-.05,-1.4)--(1.15,-1.4);
+  \draw[-{Latex[length=1.6mm]},thick,hamgold]
+  (.55,-1.4)--(.55,-.85);
+  \node[lit/regime] at (.55,-1.8) {$\delta_0$};
+  \node[lit/tag,text=hamblue] at (1.9,-.1) {Exact second moments};
+  \node[lit/text] at (1.9,-.45)
+  {Chen--Dalang~\cite{chen.dalang:15:moment}\\
+  Space-time white noise, $d = 1$.\\[4pt]
+  Chen--Guo--Song~\cite{chen.guo.ea:24:moments}\\
+  Exact $p = 2$; wave higher-$p$\\
+  growth orders $p^{3/2}$.};
+  \node[lit/tag,text=hamteal] at (8,-.1) {Approximation matters};
+  \node[lit/text] at (8,-.45)
+  {No source claim is listed here.\\[4pt]
+  Specify smoothing and convergence.\\[4pt]
+  No It\^o equality or openness\\
+  is inferred.};
+
+  \draw[hamblue!18] (1.9,-3.2)--(7.1,-3.2);
+  \draw[hamteal!22] (8,-3.2)--(13.2,-3.2);
+  % Static time: one constant covariance profile.
+  \node[lit/regime] at (.55,-3.65) {Static\\noise};
+  \draw[gray] (-.05,-4.8)--(1.15,-4.8);
+  \draw[thick,hamgold] (-.05,-4.25)--(1.15,-4.25);
+  \node[lit/regime] at (.55,-5.2) {$1$};
+  \node[lit/tag,text=hamblue] at (1.9,-3.7) {Exact rates};
+  \node[lit/text] at (1.9,-4.05)
+  {Balan--Le Chen--Xia Chen\\
+  \cite{balan.chen.ea:22:exact}: $p \ge 2$.\\
+  Homogeneous: $d \le 3$;\\
+  spatial white: $d \le 2$.\\[4pt]
+  Chen--Eisenberg~\cite{chen.eisenberg:23:interpolating}\\
+  Exact rates; static noise;\\
+  fractional time order $< 2$.};
+  \node[lit/tag,text=hamteal] at (8,-3.7) {Construction / exact rates};
+  \node[lit/text] at (8,-4.05)
+  {Balan~\cite{balan:22:stratonovich}: $d = 1,2$ construction.\\
+  Stronger spectral condition.\\[4pt]
+  Xia Chen--Hu~\cite{chen.hu:25:hyperbolic}\\
+  Exact rates, integer $p \ge 1$;\\
+  Dalang and homogeneity hypotheses.};
+
+  \draw[hamblue!18] (1.9,-7.7)--(7.1,-7.7);
+  \draw[hamteal!22] (8,-7.7)--(13.2,-7.7);
+  % Fractional time: schematic singular, decreasing covariance.
+  \node[lit/regime] at (.55,-8.45) {Fractional\\in time};
+  \draw[gray] (-.05,-9.65)--(1.15,-9.65);
+  \draw[thick,hamgold]
+  (.05,-8.85) .. controls (.18,-9.35) and (.65,-9.45) .. (1.15,-9.52);
+  \node[lit/regime] at (.55,-10.1) {$|t|^{-\alpha_0}$};
+  \node[lit/tag,text=hamblue] at (1.9,-8.1) {Bounds / construction};
+  \node[lit/text] at (1.9,-8.45)
+  {Balan--Conus; Hu--Wang\\
+  \cites{balan.conus:16:intermittency,hu.wang:24:matching}\\
+  Growth orders; no sharp constant.\\[4pt]
+  Chen--Deya--Song--Tindel\\
+  \cite{chen.deya.ea:25:solving}: construction;\\
+  data hypotheses depend on $d$.};
+  \node[lit/tag,text=hamteal] at (8,-8.1) {First-moment bounds};
+  \node[lit/text] at (8,-8.45)
+  {Xia Chen, author version\\
+  \cite{chen:author2026:time-dependency}\\
+  $d = 1,2,3$, $\alpha + \alpha_0 < 2$.\\[4pt]
+  Two-sided first-moment bounds;\\
+  the exact limit is predicted.};
+
+  % A separate manuscript contribution, not a transferred literature claim.
+  \fill[hamgold!9,rounded corners=2pt]
+  (1.65,-12.1) rectangle (13.45,-13.65);
+  \draw[hamgold,line width=2pt] (1.65,-12.1)--(1.65,-13.65);
+  \node[lit/tag,text=hamgold!85!black] at (1.95,-12.45)
+  {Present manuscript \quad Fractional-time Stratonovich, $p = 2$};
+  \node[anchor=north west,align=left,text width=10.9cm,
+  font=\small,inner sep=0pt] at (1.95,-12.75)
+  {Intrinsic variational formula for the second-moment limit.\\
+  Written proof; independent review remains pending.};
+\end{tikzpicture}

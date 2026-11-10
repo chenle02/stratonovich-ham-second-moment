@@ -18480,3 +18480,21 @@ source/PDF pins are refreshed in the follow-up. Strict source-style completion
 for that caption awaits Agent21's formatter repair969e9094 and <MACHINE> deployment.
 All15chapter openings and the two introductory theorem restatements pass their
 scoped checks; no mathematical or independent-review status changed.
+
+## 2026-11-10: reader figures brought to report quality
+
+Le requested matching figure quality. The reader's old literature grid now
+uses the same vector drawing as the report, including covariance sketches and
+the separate contribution band. The reader matches its Latin Modern fonts and
+blue/teal palette, including external-document links. Repositioned an overlapping
+Gram-panel label in the shared diagram. Inspected all ten reader figures and
+the two affected report figures. The reader stays 28 pages; report 301. All 215
+proof bodies and the reader's document body are unchanged up to whitespace;
+81 label mappings and 248 external links pass. Both builds are clean.
+
+Agent 21's formatter repair 969e9094 is now available on <MACHINE> and passes the
+actual guitar-fragment idempotence check. Correct two/four-space source
+indentation is restored; the earlier pending caption-only style item is closed.
+The actual formatter hash and preservation checks are recorded under
+private/audit/2026-11-10-reader-figure-parity/. Current pins are refreshed in
+notes/figures/VALIDATION.json; independent scientific gates are unchanged.

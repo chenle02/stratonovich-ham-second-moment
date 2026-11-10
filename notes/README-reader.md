@@ -50,3 +50,8 @@ earlier 275-page article-style companion remains in Git at 669ccc9.
 The companion now opens every chapter and appendix with motivation, linked
 prerequisites and an outline, so readers can enter at a topic of interest. Both
 editions begin with a short history from Walsh's lectures to moment asymptotics.
+
+The reader now uses the report's Latin Modern fonts and blue/teal palette.
+Its literature comparison shares the report's vector drawing, including the
+covariance sketches and separate contribution band. All ten figures were
+inspected at their final page positions; the reading edition remains 28 pages.
