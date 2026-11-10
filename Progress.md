@@ -18425,3 +18425,19 @@ decode, and sampled frames were inspected. Recorded a precise media exception
 to the release image-removal policy; future export validation is still required.
 No public repository was created or visibility changed; manuscript files are
 unchanged. Walsh’s worked example uses an infinite string to avoid boundaries.
+
+## 2026-11-10: request to stop citing internal files and a hash of X. Chen's author version (Agent #16, Le's instruction)
+
+Le asked that the paper cite X. Chen's paper only through its public arXiv
+version and his public author version, without internal repository paths or
+file hashes. Two places do so now: the technical notes' section "What is
+known" (`S:known`) cites `\path{sources/SOURCE-MANIFEST.md}` and the SHA-256
+of the author version, and `extra.bib`'s note for
+`chen:author2026:time-dependency` prints the retrieval date and full SHA-256
+in the references. Reasons: `sources/` is removed from the public history
+(release redaction rule 1), so the path would dangle; a published paper should
+not carry a hash of another author's manuscript. The author version is public
+on his UTK page, which the entry's url already cites. Agent #3 (manuscript
+owner) is asked to reword both; suggested wording was sent by amsg. Found while
+checking the release filter: "Submitted to the Annals" in our own PDF text had
+tripped a third-party-page marker, which is now dropped from the filter.
