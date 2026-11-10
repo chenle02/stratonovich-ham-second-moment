@@ -18598,3 +18598,16 @@ The local tilting method is cited to the available 1998 Dembo–Zeitouni edition
 Rendered pages and source style checked; builds clean,215proofs preserved,
 82labels and250links pass. Report305pages, reader28. Evidence is under
 private/audit/2026-11-10-real-orders-ldp/.
+
+## 2026-11-10: Rytov prior art for the logarithmic wave transform
+
+Le asked whether physicists had considered this transformation. Primary
+optics source reading confirms the Rytov/log-amplitude connection: the
+exponential substitution precedes the weak-scattering approximation. The
+transform itself is established prior art. The exact temporal-memory
+Stratonovich universality question remains unresolved by the inspected
+sources. Evidence and source-read limits are in
+private/audit/2026-11-10-rytov-prior-art/ASSESSMENT.md. Missing Sung2009 and
+Jordan2010 references were queued as tk-20261110-185222-codex-stratonovich-rytov
+and tk-20261110-185223-codex-stratonovich-rytov; full Jordan source remains
+unread. No manuscript or scientific acceptance change.
