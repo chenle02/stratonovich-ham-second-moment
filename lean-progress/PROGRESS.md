@@ -54,8 +54,15 @@
   INVALID-REPORT: Kimi prefixed one prose sentence despite the JSON-only
   instruction; recover-report cannot strip a prose prefix. Gate NOT closed
   by receipt. Record: reviews/2026-11-10-lean-ledger-kimi-k3-v2/.
-- **Next:** Le's choice: lab tool change (recover a prose prefix), a
-  Codex/Claude route, or a human read;
+- **Codex GPT-6.1-Sol review (2026-11-10):** at companion 5e0d122 over
+  669ccc9, VALID report, FAIL/high: 1 fatal (DimensionalMatrix is the phase
+  kernel of P:actual-wave-form, missed by all earlier reviews and the target
+  triage), 2 major (HermiteWord zero-count hypothesis; tilt_exponent has no
+  displayed step). All accepted; repaired at companion c9e28af (36 labelled,
+  52 unlabelled; coverage 20+4). Record:
+  reviews/2026-11-10-lean-ledger-codex-gpt61sol/.
+- **Next:** successor Codex review of the repaired ledger at c9e28af for an
+  accepted receipt; then a human read (A1) remains valuable;
   wave L1 (G0 pair-partition counts) when opened.
 
 - **Standalone local checks (current, 2026-11-09):** 87 accepted finite

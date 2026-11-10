@@ -1,0 +1,109 @@
+Review the frozen packet rooted at <HOME>/.local/state/Le-AI-Lab/stratonovich-lean-ledger-codex-v1/attempt-01/workspace. Primary target: candidate/statement-ledger.md. Source revision: 5e0d122fd3f8efd6b4dc758f431818df912eff05.
+
+You are an independent artifact reviewer. Read only the frozen packet
+and the supplied review contract. Report correctness, missing assumptions,
+incorrect constants, failed implications, and uncertainty. Do not edit files,
+use the network, send messages, publish, install, or delegate. Do not launch a
+research or coding workflow. Return a scientific report rather than a plan.
+Use exactly one JSON object with schema "subscription-review-report/1", verdict (PASS, PASS_WITH_NOTES, FAIL, or
+INCONCLUSIVE), confidence (high, medium, low), source_coverage (list of strings),
+checks (list of objects with claim, verdict, reason), findings (an object with
+fatal, major, minor lists), required_repairs (list), and limitations (list).
+required_repairs contains ONLY mandatory changes that block acceptance. Optional
+clarifications belong in findings.minor, never in required_repairs. PASS and
+PASS_WITH_NOTES require empty fatal, major and required_repairs lists and no
+failed/unchecked claim. If a repair is mandatory, return FAIL or INCONCLUSIVE;
+never weaken a finding to obtain PASS.
+Read every required source completely. Never use Grep head_limit or any other
+truncating or limiting option on a required source. After any pagination or
+truncation marker (for example a partial Read, an offset/limit notice, or
+"output truncated"), keep reading the next range until the whole file is read.
+In source_coverage, list each exact file and the line ranges you actually read.
+If coverage of any required source is incomplete, say "partial" for that source
+in source_coverage and state the gap in limitations.
+An AI review is not human verification or a novelty audit. Do not silently
+repair a candidate and PASS the original. A terminal error is not a verdict.
+
+Frozen packet file index (relative to workspace; a listed file is not proof of reading):
+["PROVENANCE.json", "candidate/statement-ledger.md", "lean/StratonovichHAMAudit/ActualEvent.lean", "lean/StratonovichHAMAudit/AllAlphaMoment.lean", "lean/StratonovichHAMAudit/ClockFilter.lean", "lean/StratonovichHAMAudit/DampedLower.lean", "lean/StratonovichHAMAudit/DimensionalMatrix.lean", "lean/StratonovichHAMAudit/DirectEvent.lean", "lean/StratonovichHAMAudit/FiniteYoung.lean", "lean/StratonovichHAMAudit/GaussianTail.lean", "lean/StratonovichHAMAudit/GlobalOmega.lean", "lean/StratonovichHAMAudit/HermiteWord.lean", "lean/StratonovichHAMAudit/HermiteWordConsumer.lean", "lean/StratonovichHAMAudit/InteractionDriver.lean", "lean/StratonovichHAMAudit/JointTilt.lean", "lean/StratonovichHAMAudit/LocalFlow.lean", "lean/StratonovichHAMAudit/MiddleCross.lean", "lean/StratonovichHAMAudit/MovingCone.lean", "lean/StratonovichHAMAudit/OccupationForm.lean", "lean/StratonovichHAMAudit/PhaseResponse.lean", "lean/StratonovichHAMAudit/PositiveGram.lean", "lean/StratonovichHAMAudit/ProjectionResidual.lean", "lean/StratonovichHAMAudit/RawValueCeiling.lean", "lean/StratonovichHAMAudit/RawVariational.lean", "lean/StratonovichHAMAudit/TerminalCross.lean", "lean/StratonovichHAMAudit/WhiteCDF.lean", "lean/claims.yaml", "lean/coverage.yaml", "manuscript/notes/figures/common-noise.tex", "manuscript/notes/figures/dyadic-cover.tex", "manuscript/notes/figures/gaussian-enlargement.tex", "manuscript/notes/figures/global-control-blocks.tex", "manuscript/notes/figures/hermite-cutoff.tex", "manuscript/notes/figures/light-cone.tex", "manuscript/notes/figures/nonseparable-controls.tex", "manuscript/notes/figures/order-of-limits.tex", "manuscript/notes/figures/positive-gram.tex", "manuscript/notes/figures/proof-map.tex", "manuscript/notes/figures/styles.tex", "manuscript/notes/figures/two-chain-pairings.tex", "manuscript/notes/figures/white-strip.tex", "manuscript/notes/integrated_actual_operator_driver.tex", "manuscript/notes/integrated_cameron_mean.tex", "manuscript/notes/integrated_compact_gaussian.tex", "manuscript/notes/integrated_compact_mean_family.tex", "manuscript/notes/integrated_constant_phase_young.tex", "manuscript/notes/integrated_covariance_foundation.tex", "manuscript/notes/integrated_exact_scaling.tex", "manuscript/notes/integrated_gaussian_tubes.tex", "manuscript/notes/integrated_intrinsic_constant.tex", "manuscript/notes/integrated_masked_moments.tex", "manuscript/notes/integrated_occupation_ceiling.tex", "manuscript/notes/integrated_point_transfer.tex", "manuscript/notes/integrated_positive_gram.tex", "manuscript/notes/integrated_radius_anchor.tex", "manuscript/notes/integrated_raw_block_lower.tex", "manuscript/notes/integrated_signed_moment_upper.tex", "manuscript/notes/integrated_signed_static.tex", "manuscript/notes/integrated_source_convergence.tex", "manuscript/notes/integrated_spatial_occupation.tex", "manuscript/notes/integrated_symplectic_phase.tex", "manuscript/notes/integrated_temporal_equilibrium.tex", "manuscript/notes/integrated_uniform_mean.tex", "manuscript/notes/integrated_uniform_products.tex", "manuscript/notes/integrated_unmasked_variational.tex", "manuscript/notes/integrated_wave_variance.tex", "manuscript/notes/integrated_white_evaluation.tex", "manuscript/notes/integrated_young_upper_foundation.tex", "manuscript/notes/notes_stratonovich_ham_second_moment.tex"]
+
+Independent correspondence review: Lean statement ledger vs manuscript
+
+You are an independent, skeptical reviewer. Your workspace is a frozen,
+read-only packet. Use your file-reading and search tools actively; do not
+rely on memory. Do not modify any file.
+
+PACKET
+- candidate/statement-ledger.md : the object under review (Lean companion
+  commit 5e0d122fd3f8). For each of 88 Lean declarations it states what the
+  Lean statement says, which manuscript label it supports ("Paper label",
+  or "no direct label"), and which inputs stay outside Lean.
+- lean/StratonovichHAMAudit/*.lean : the 24 Lean source files (ground truth
+  for what each declaration states). lean/claims.yaml (one-line summary per
+  declaration) and lean/coverage.yaml (per-label coverage rows).
+- manuscript/notes/... : all 41 LaTeX inputs of the manuscript at revision
+  669ccc9b0724 (main file notes/notes_stratonovich_ham_second_moment.tex,
+  27 integrated_*.tex modules, 13 figure/style files). Labels are \label{...}.
+- PROVENANCE.json : byte binding of every packet file to its git blob
+  (supervisor-checked; you need not recompute hashes).
+
+The Lean proofs compile with no sorry and only standard axioms; proof
+correctness is NOT in question. Correspondence is. Statements in the ledger
+about an earlier manuscript revision or about files outside this packet are
+out of scope: note them under limitations, do not count them as findings.
+
+FOR EVERY ONE OF THE 88 LEDGER ROWS, check:
+1. FIDELITY: the ledger's "What it states" and the claims.yaml summary match
+   the Lean type (hypotheses, quantifiers, strict vs non-strict, parameter
+   ranges, constants). A shortened but correct paraphrase is acceptable
+   (the ledger says the Lean type is exact); an omitted or wrong hypothesis,
+   range or constant is not. Open the Lean file and read the statement.
+2. MAPPING (labelled rows): locate \label{<label>} by search. Does that
+   labelled statement or its proof actually use this exact fact, with
+   compatible hypotheses, ranges and constants? Cite file and line.
+3. NO DIRECT LABEL rows (55): search the manuscript for the computation
+   (distinctive constants, polynomials, exponents, symbol combinations).
+   Record the search terms. If it is used inside a labelled statement or
+   proof, report the label with file:line.
+4. OUTSIDE INPUTS: the listed outside inputs are really what the Lean
+   statement assumes or leaves out; flag any hypothesis that silently
+   replaces something the paper proves differently.
+5. OVERCLAIM: any ledger sentence that overstates what Lean checks or
+   misdescribes the manuscript. Check that the index table agrees with the
+   per-module tables and that the totals (88 = 82 theorems + 6 definitions;
+   33 labelled, 55 unlabelled) are correct. Every label cited anywhere in
+   the ledger must exist in the manuscript.
+
+REPORT FORMAT (strict; the report is machine-validated)
+Return ONLY the JSON object: no text before or after it, no code fence.
+Use exactly the fields of the schema "subscription-review-report/1".
+- "checks": exactly 88 objects, one per ledger row in ledger order.
+  claim  = "<full declaration name>: <ledger label or 'no direct label'>"
+  verdict must be one of PASS, PASS_WITH_NOTES, FAIL, INCONCLUSIVE, PARTIAL:
+    PASS             fidelity correct and mapping correct (or absence
+                     confirmed for a no-label row)
+    PASS_WITH_NOTES  correct, with a minor wording imprecision you report
+                     as a minor finding
+    PARTIAL          material imprecision (the row is partly wrong or
+                     overstated)
+    FAIL             wrong statement or wrong mapping, or the computation
+                     is used under a label the row does not cite
+    INCONCLUSIVE     you could not check this row
+  reason = begins with one row label, then evidence:
+    "OK: ..." for a labelled row, "ABSENT-CONFIRMED: ..." or
+    "LABEL-FOUND <label>: ..." for a no-label row; give file:line, and for
+    no-label rows the search terms used.
+- "findings": fatal = CRITICAL (wrong mapping or misstatement a citing
+  reader would be misled by), major = material imprecision, minor =
+  wording. Each string starts with an ID (K1, K2, ...), names the
+  declaration(s), quotes Lean and TeX with file:line, and gives the exact
+  ledger fix.
+- "required_repairs": only ledger changes that must be made before the
+  ledger can be cited as a correct correspondence record.
+- "verdict": PASS or PASS_WITH_NOTES only if fatal, major and
+  required_repairs are empty and every check is PASS or PASS_WITH_NOTES;
+  otherwise FAIL or INCONCLUSIVE.
+- "confidence": high only if you opened every Lean statement and searched
+  the manuscript for every row; otherwise list skipped rows in
+  "limitations" and use medium or low.
+
