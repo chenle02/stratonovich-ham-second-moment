@@ -151,9 +151,14 @@
   PASS_WITH_NOTES), all 6 findings accepted and repaired at 17f0490; narrow
   confirmation at 17f0490 PASS_WITH_NOTES/high, accepted, 1 minor (fixed
   79afdde). Records: reviews/2026-11-10-lean-wave-l2-*/ADJUDICATION.md.
-  **The wave L2 correspondence gate is NOT closed:** it awaits Le's
-  acceptance of this review sequence.
-- **Next:** Le's decision on the wave L2 gate; Easley external kernel
+- **WAVE L2 CORRESPONDENCE GATE: CLOSED (Le, 2026-11-10)** at companion
+  79afdde over manuscript ba01d98: Le accepted the three-review sequence
+  plus the confirmation review. Scope: AI statement-to-manuscript
+  correspondence of the 106 wave-L2 ledger rows and their coverage rows;
+  not human verification; the supplied inputs of P:radius-mean-anchor and
+  L:masked-trig-products stay outside Lean; any later change to these rows
+  or cited labels needs a successor review.
+- **Next:** Easley external kernel
   replay (leanchecker --fresh per module) of 837778a (Lean sources
   identical to 79afdde) in progress; human statement read (A1) still
   recommended; remaining W1 board items (excluding the reserved B3, B4,
@@ -184,7 +189,7 @@
 | L0 | PROPOSED | 2026-10-26 | Setup by session #4; no Lean code yet |
 | L0 | PROPOSED | 2026-10-28 | Readiness/strategy refresh after source and plane-endpoint reviews; creation approval still pending, no package or Lean verification |
 | L0 | CLOSED | 2026-11-09 | Companion created and registered (verified-private at 38d1616); 23 seams packaged, 3 GaussianChaos seams withheld; manuscript anchor cf979d6 |
-| L2 | REVIEWED, gate awaiting Le | 2026-11-10 | Three whole results (C26, B23, B24); verified-private at 79afdde; reviews/2026-11-10-lean-wave-l2-* |
+| L2 | CLOSED (Le) | 2026-11-10 | Three whole results (C26, B23, B24); verified-private at 79afdde; reviews/2026-11-10-lean-wave-l2-* |
 
 ## New proof seams retained for later statement fences
 
