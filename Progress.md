@@ -18357,3 +18357,11 @@ The six-repository inventory found a missing paper, an incomplete pipeline recor
 and a stale source edition; three requests are queued with exact identities in
 the private literature audit. Queued is not ingested. No scientific review,
 whole-document visual acceptance or whole-goal gate is upgraded by this wave.
+
+Delivery note: the completed editorial bytes were captured in shared-index
+commit ba01d98 together with Agent16 private draft edits. Agent16 reported the
+accidental mixed scope; all committed source/bibliography/PDF hashes were
+independently rechecked against the finished validation and match. Nothing was
+lost; no pushed history is rewritten. The private delivery audit preserves the
+incident and exact source binding. Future shared-index commits use explicit
+commit pathspecs as well as explicit staging.

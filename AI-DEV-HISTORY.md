@@ -419,3 +419,9 @@ The resulting book/reader pair has 293/27 pages, 19/9 figures, 80 mapped labels
 and 246 valid remote PDF links, with clean builds. The source/PDF pins are in
 notes/figures/VALIDATION.json. Earlier page-review receipts are not transferred,
 and no mathematical acceptance gate is upgraded by this wave.
+
+Delivery clarification: commit ba01d98 contains this finished editorial wave
+alongside another agent's private draft changes, because an ordinary commit
+captured the shared index. The committed artifact hashes were independently
+checked and match final validation. The mixed commit is preserved as history;
+it is not presented as a manuscript-only atomic commit.
