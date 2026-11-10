@@ -1,13 +1,15 @@
 # STATUS DIGEST — read this first, then the tail of Progress.md
 
-Current editorial edition (November 10): **301-page book and 28-page reader**.
+Current editorial edition (November 10): **302-page book and 28-page reader**.
 All eleven chapters and four appendices have motivation, linked prerequisites
 and an outline. Section 1.5 states the two existing results as Theorems 1.5.1
 and 1.5.2, with links to their unchanged proofs. All 215 proof bodies are
-preserved; 81 technical labels and 248 reader links pass. This presentation
+preserved; 82 technical labels and 250 reader links pass. This presentation
 update does not clear the independent review gates below. Older page counts
 in dated entries describe their historical editions. Exact current pins:
 notes/figures/VALIDATION.json.
+
+Section 1.6 now discusses higher even moments as future work.
 
 State as of the November 9 literature revision (baseline `3a94ff9` plus
 Agent #16's Lean-header correction `037caa6`); Lean row updated from Agent

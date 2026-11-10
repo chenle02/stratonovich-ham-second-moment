@@ -1,0 +1,72 @@
+\section{Future work}\label{S:future-work}
+
+The second-moment argument suggests several questions about higher moments.
+We discuss them here as possible extensions. The results of this manuscript
+concern the second moment; the proposed limits below require further proof.
+We retain Hypothesis~\ref{H:homog}, the initial data $(1,0)$ and the exponent
+$\kappa$ from~\eqref{E:kappa}.
+
+\paragraph{Higher even moments.}
+A natural first question is whether, for each fixed even integer $p \ge 2$,
+\begin{equation}\label{E:future-even-moments}
+  \lim_{t\to\infty}t^{-\kappa}\log\E|u(t,x)|^p
+  =\left(\frac{p}{2}\right)^{\frac{4-\alpha}{3-\alpha}}
+  C_2(\Gamma,\alpha_0),\qquad x\in\R^d.
+\end{equation}
+The candidate comes from the variational expression in
+Theorem~\ref{T:intro-second-moment}. If a Gaussian shift produces an integrated
+deterministic growth rate $I_\Psi$, its contribution to the $p$th moment should
+be compared with the same Gaussian cost $v_\Psi/2$. This suggests optimizing
+$pI_\Psi-v_\Psi/2$ over the full positive-control class. The homogeneity of
+these variational values is already proved for every positive coefficient in
+Proposition~\ref{P:variational-positive-scores}. What remains is their
+identification with the higher point-moment limits. Formula
+\eqref{E:future-even-moments} uses the intrinsic second-moment constant; it does
+not require identifying that constant with the one predicted in the source.
+
+Even orders allow us to use $|u|^p = u^p$ and Gaussian pairing expansions
+without assuming that the solution is nonnegative. A $p$-chain expansion must
+retain self-pairings, cross-pairings, unequal chain lengths and empty chains.
+The scaling identity and the Gaussian change of measure offer a different
+starting point that may avoid estimating all these pairings separately.
+The lower-bound construction and finite Gram optimization also suggest
+extensions with coefficient $p$. Higher-moment convergence, uniform
+integrability and the comparison with the original point observable must
+still be justified.
+
+\paragraph{Point moments and spatial regularity.}
+The main obstacle in the present upper-bound method occurs in
+Proposition~\ref{P:original-point-transfer}. Stationarity and finite
+propagation identify the pointwise second moment with an expected spatial
+$L^2$ norm. The displacement component of the wave phase controls this norm.
+For a $p$th moment, the corresponding argument would require a spatial $L^p$
+bound. Taking a higher power of an $L^2$ bound does not supply it.
+
+The existing displacement space is $H^{1/2}(\R^d)$. On a fixed ball, the
+fractional Sobolev embeddings control every finite $L^p$ norm when $d = 1$,
+$L^p$ up to $p = 4$ when $d = 2$, and $L^p$ up to $p = 3$ when $d = 3$;
+see~\cite{di-nezza.palatucci.ea:12:hitchhikers}*{Section~6}.
+Thus, the present phase space suggests a route to all fixed even moments in
+one dimension and to the fourth moment in two dimensions. In three dimensions,
+the fourth moment already lies beyond this direct embedding argument.
+This is a restriction of the method, not a nonexistence statement for the
+moment. A different point-moment comparison or stronger spatial estimates
+would be needed. Any additional regularity must be established under the
+original covariance assumptions.
+
+\paragraph{A first test and further questions.}
+The fourth moment in one spatial dimension is a useful first test. One would
+first establish the fourth-moment point comparison and the required source
+limits. The Gaussian upper argument would then need to control the fourth
+power of the evolution norm, with bounds uniform in the growing spatial
+radius. Matching this bound with the shifted lower estimate would test the
+prediction $C_4 = 2^{(4-\alpha)/(3-\alpha)}C_2$. The validity of the Sobolev
+embedding alone does not complete these steps.
+
+Even a proof for every fixed even $p$ would leave two separate questions:
+absolute moments of other orders, and estimates uniform as $p\to\infty$.
+Interpolation between adjacent even moments need not identify the exact
+constant at an intermediate order. Uniform large-$p$ estimates also require
+tracking the dependence on $p$ throughout the construction, source limits and
+Gaussian tail bounds. These questions may clarify which parts of the present
+method apply to moment growth beyond the second moment.

@@ -18514,3 +18514,14 @@ guitar caption now links the collection and spells out CC0 as a public-domain
 dedication, linked to the Creative Commons explanation. Verified the public
 repository and its license statement. Both PDFs rebuilt cleanly and current
 pins refreshed; proof bodies and reader reference mappings are preserved.
+
+## 2026-11-10: future work on higher moments
+
+Added Section 1.6 at Le's request, with the proposed fixed-even-moment
+constant, reusable parts of the proof, the H1/2-to-Lp obstacle and the fourth
+moment in one dimension as a first test. Cited the fractional Sobolev reference
+already in refdb/wiki; its Section 6 supports the stated embedding ranges.
+These are proposed extensions, not new proved claims or a new research goal.
+The reader links to the discussion. Report 302 pages, reader 28; all 215 proof
+bodies preserved, 82 mapped labels and 250 external links valid. Both builds
+are clean; the two rendered future-work pages were inspected.
