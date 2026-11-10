@@ -44,3 +44,15 @@ Generated label entries, necessary command arguments and distinct labels on
 separately numbered aligned equations are retained intentionally. The technical
 companion retains its technical-report organization; the reader supplies the
 front-facing result statements and guide.
+
+## November 10 additions
+
+The book now contains 19 figures and the reader nine. Added endpoint elimination,
+interval degree allocation, phase-norm changes, chronological cross-color
+regions and active-subset optimization. The latter also appears in the reader.
+Two book literature figures and a compact reader map distinguish the stochastic
+products and selected source-qualified results. All eight new sources/captions
+received separate semantic review and their integrated pages were inspected.
+The previous validation is retained in history/dbbd9c8-validation.json; current
+hashes, counts and link checks are in VALIDATION.json. This does not establish
+whole-PDF or scientific acceptance.

@@ -151,3 +151,17 @@ Git delivery checks pass. It does not complete the original research project,
 its whole-mathematical reviews, source/application gate, final visual/cold review
 or acceptance. Earlier receipts remain bound to their original source/PDF bytes;
 pagination changes in the new edition do not transfer old visual-page credit.
+
+## November 10 expansion: both stochastic interpretations
+
+The book now has a dedicated comparison in `literature_review.tex`, organized
+by white-in-time, static and fractional temporal noise. It explains Skorohod
+orthogonality, Stratonovich traces, the dependence of smooth-noise limits on
+the approximation, and practical advantages and limitations of each model.
+The source comparison distinguishes construction, growth-order bounds and
+exact asymptotic limits. In particular, the CDST2025 data restrictions and the
+BS2019 Riesz-limit specialization are retained. This is a bounded survey;
+it is not an exhaustive novelty verdict or a new scientific review gate.
+
+The pinned author edition remains the authority for the source first-moment
+statement. Catalogue presence alone does not establish edition fidelity.

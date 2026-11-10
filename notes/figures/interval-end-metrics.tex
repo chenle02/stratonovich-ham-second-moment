@@ -1,0 +1,42 @@
+\begin{figure}
+\centering
+\begin{tikzpicture}[x=.96cm,y=1cm]
+  \draw[ham/arrow] (-.3,0)--(12.2,0) node[right] {$t$};
+  \draw[hamblue,line width=2pt] (1,3.0)--(7,3.0);
+  \draw[hamteal,line width=2pt,dashed] (3,2.45)--(9,2.45);
+  \draw[hamgold,line width=2pt,densely dotted] (5,1.9)--(11,1.9);
+  \node[anchor=west,font=\small] at (7.2,3.0) {$I_1^T$};
+  \node[anchor=west,font=\small] at (9.2,2.45) {$I_2^T$};
+  \node[anchor=west,font=\small] at (11.2,1.9) {$I_3^T$};
+  \draw[hamblue,semithick]
+  (0,.3)--(1,.3)--(1,.55)--(3,.55)--(3,.8)--(5,.8)
+  --(5,1.05)--(7,1.05)--(7,.8)--(9,.8)--(9,.55)
+  --(11,.55)--(11,.3)--(12,.3);
+  \node[font=\small,anchor=east] at (-.15,.8) {$\Lambda(t)$};
+  \foreach \hamStart in {1,3,5} {
+  \draw[hamblue!40,dashed] (\hamStart,-.2)--(\hamStart,1.1);
+  }
+  \foreach \hamEnd in {7,9,11} {
+  \draw[hamgold,dashed] (\hamEnd,-.2)--(\hamEnd,1.1);
+  }
+  \filldraw[draw=hamblue,fill=white] (4,0) circle (2pt);
+  \node[ham/note,text width=3.5cm] at (2.9,-1.1)
+  {Cuts with no ending interval:\\$q_j=1$};
+  \node[ham/note,text width=2.1cm] at (7,-1.1) {$q_j\le1+\omega_1/\lambda$};
+  \node[ham/note,text width=2.1cm] at (9,-1.1) {$q_j\le1+\omega_2/\lambda$};
+  \node[ham/note,text width=2.1cm] at (11,-1.1) {$q_j\le1+\omega_3/\lambda$};
+  \node[ham/box,text width=10.3cm] at (6,-3.05)
+  {$\displaystyle\prod_jq_j\le
+  \prod_{i\in\mathcal A}(1+\omega_i/\lambda)$\\
+  Each connected interval is charged at its end, once.};
+\end{tikzpicture}
+\caption[One phase-norm charge at each interval end]{Changes of phase norm are charged at interval endpoints.
+The staircase illustrates $\Lambda(t)=\lambda+
+\sum_{i\in\mathcal A}\omega_i\mathbf1_{I_i^T}(t)$ for three overlapping
+intervals; its heights are schematic. The conversion satisfies
+$q_j=\max\{1,\Lambda_j/\Lambda_{j+1}\}$. A cut containing only starts or insertions adds no factor. At a shared ending
+cut, charge all ending intervals together; the final conversion at $T$ is
+also included. This prevents repeating the full product at every insertion.
+See \ProofRef{Lemma}{L:fixed-split}.}
+\label{Fig:interval-end-metrics}
+\end{figure}

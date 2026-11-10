@@ -1,0 +1,39 @@
+\begin{figure}
+\centering
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \node[ham/note,text width=4.8cm] at (1.6,3.65)
+  {Which cross colors have appeared?};
+  \node[ham/box,text width=1.35cm] (hamEmpty) at (0,0) {$\mathscr Z_\varnothing$};
+  \node[ham/box,text width=1.35cm] (hamI) at (3.2,0) {$\mathscr Z_{\{i\}}$};
+  \node[ham/box,text width=1.35cm] (hamJ) at (0,2.45) {$\mathscr Z_{\{j\}}$};
+  \node[ham/box,text width=1.35cm] (hamIJ) at (3.2,2.45) {$\mathscr Z_{\{i,j\}}$};
+  \draw[ham/arrow] (hamEmpty)--node[below,font=\small] {$J_i$} (hamI);
+  \draw[ham/arrow] (hamEmpty)--node[left,font=\small] {$J_j$} (hamJ);
+  \draw[ham/arrow] (hamI)--node[right,font=\small] {$J_j$} (hamIJ);
+  \draw[ham/arrow] (hamJ)--node[above,font=\small] {$J_i$} (hamIJ);
+  \node[ham/note,text width=4.8cm] at (1.6,-1.85)
+  {Background evolution preserves each subspace.\\
+  The two paths need not give the same vector.};
+  \begin{scope}[xshift=6.9cm]
+    \fill[hamblue!9] (0,0)--(3.2,0)--(3.2,3.2)--cycle;
+    \fill[hamteal!12] (0,0)--(0,3.2)--(3.2,3.2)--cycle;
+    \draw[hamblue] (0,0) rectangle (3.2,3.2);
+    \draw[dashed] (0,0)--(3.2,3.2);
+    \draw[ham/arrow] (-.15,0)--(3.65,0) node[right] {$t_i$};
+    \draw[ham/arrow] (0,-.15)--(0,3.65) node[above] {$t_j$};
+    \node[ham/note] at (.95,2.25) {$t_i<t_j$\\$\pi=(i,j)$};
+    \node[ham/note] at (2.25,.95) {$t_j<t_i$\\$\pi=(j,i)$};
+    \node[ham/note,text width=4.3cm] at (1.6,-1.85)
+    {The ordered regions fill the square\\apart from the null diagonal.};
+  \end{scope}
+\end{tikzpicture}
+\caption[Cross-color subsets and chronological regions]{For two distinct cross colors, each insertion starts from the
+vacuum in its own unused color. The left square records subspaces only;
+it is not a commutative operator diagram. The right picture uses identical
+time windows for clarity. In general the ordered regions partition
+$I_i^T\times I_j^T$ up to the equal-time diagonal. Each chronological
+operator word has coefficient one, and the total volume is
+$|I_i^T||I_j^T|$, without an extra $2!$ or $1/2!$. Spatial operators are
+not reordered. See \ProofRef{Lemma}{L:fixed-split}.}
+\label{Fig:cross-colour-cube}
+\end{figure}

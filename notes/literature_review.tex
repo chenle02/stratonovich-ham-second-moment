@@ -1,0 +1,199 @@
+\section{Skorohod and Stratonovich wave equations}\label{S:literature-context}
+
+The meaning of the noise product is part of the model. The same formal wave
+operator and covariance do not specify the same equation under the Skorohod
+and Stratonovich interpretations. We review both interpretations below,
+separating existence results, moment-growth bounds and exact asymptotics.
+All comparisons retain the hypotheses of the cited papers.
+
+\subsection{The two products and their consequences}
+
+The Skorohod integral is the divergence operator of Malliavin calculus. For the
+linear equation with deterministic initial data, its iterated integrals form
+orthogonal homogeneous Wiener chaoses. In the convergent expansion, every
+positive-order term has mean zero, so the mean solution is the deterministic
+free wave. Orthogonality reduces its second moment to a sum of squared chaos
+norms. For adapted integrands and white-in-time noise, this interpretation
+agrees with the It\^o integral in the corresponding integration framework;
+see Walsh~\cite{walsh:86:introduction} and Dalang~\cite{dalang:99:extending}.
+Temporal correlation removes the martingale structure, even when the
+Skorohod integral remains available.
+
+The Stratonovich construction considered here takes ordinary products of
+regularized Gaussian noise and then removes the regularization. Wick's
+formula retains contractions within an iterated term as well as contractions
+between different terms. These self-pairings change the mean; terms of unequal
+iteration orders can contribute to the second moment. This is why the
+Skorohod second-moment isometry does not directly solve the present problem.
+It does not mean that a Stratonovich solution has no orthogonal chaos
+expansion: trace terms can be regrouped into Wiener chaoses, as in
+Balan~\cite{balan:22:stratonovich}. The iteration order and the final Wiener
+chaos order are different indices.
+
+For regular noise, ordinary multiplication connects the equation to
+deterministic wave evolution in a random potential. Stratonovich models are
+therefore natural for specified smooth-noise approximations. For singular noise, convergence, the approximation scheme and any
+required counterterms must be proved. There is no universal conversion formula
+that identifies the two wave equations. In particular, an adapted
+white-in-time Skorohod solution being an It\^o solution does not identify it
+with an unspecified smooth-noise limit. The three-dimensional approximation
+analysis of Delgado-Vences--Sanz-Sol\'e
+\cite{delgado-vences.sanz-sole:14:approximation} shows why
+regularization requires care.
+
+\input{notes/figures/literature-interpretations}
+
+\subsection{White-in-time noise}
+
+White-in-time wave equations provide a useful starting point because adapted
+stochastic integration is available. Conus--Dalang
+\cite{conus.dalang:08:non-linear} develop constructions in higher dimensions
+under their noise and initial-data assumptions. Dalang--Mueller--Tribe
+\cite{dalang.mueller.ea:08:feynman-kac-type} obtain Feynman--Kac-type
+representations using Poisson processes and random flights. Thus, the absence
+of the usual Brownian heat-equation representation does not imply the absence
+of all probabilistic moment representations for wave equations.
+
+Chen--Dalang~\cite{chen.dalang:15:moment}*{Theorem~2.3 and Corollary~1.1}
+derive moment bounds and explicit second-moment formulas for the
+one-dimensional space-time white-noise equation, including rough initial
+data. Chen--Guo--Song~\cite{chen.guo.ea:24:moments}*{Theorem~1.1} study a
+fractional SPDE family driven by space-time white noise. Their second moments
+and second Lyapunov exponents are explicit. Their wave specialization gives
+matching upper and lower $p^{3/2}$ moment-growth orders under the stated data
+conditions~\cite{chen.guo.ea:24:moments}*{Proposition~5.10; (1.10)--(1.11),
+pp.~4257--4258}. The higher-moment constants are not optimal, and these bounds
+do not assert an exact higher-moment leading constant or a general
+higher-moment limit.
+
+Balan--Song~\cite{balan.song:19:second}*{Theorems~1.1 and 1.3} relate the
+second-moment Laplace transforms of hyperbolic and parabolic Anderson models.
+Their general result identifies an upper second Lyapunov exponent; their
+Riesz specialization proves an actual limit. These conclusions should not be
+interchanged. In three dimensions with a different spatial covariance class,
+Dalang--Mueller~\cite{dalang.mueller:09:intermittency} establish upper and
+lower moment-growth bounds of order $p^{4/3}$, with the lower bound at even
+orders and with separate hypotheses on the two bounds. The power of the moment
+order therefore depends on the spatial covariance, not only on the word
+``wave''.
+
+Rough spatial noise is another distinct direction. Balan--Jolis--Quer-Sardanyons
+\cite{balan.jolis.ea:17:intermittency} treat one-dimensional spatial fractional
+noise with Hurst index between $1/4$ and $1/2$; Liu--Hu--Wang
+\cite{liu.hu.ea:22:nonlinear} develop nonlinear well-posedness in this range
+under their coefficient assumptions. Such distributional spatial covariances
+are outside the nonnegative spatial-measure class of the present paper. Their
+results do not extend the scope of Hypothesis~\ref{H:homog} by analogy.
+
+\subsection{Time-independent noise}
+
+For the static Skorohod equation with initial data $(1,0)$, Balan--Le Chen--Xia
+Chen~\cite{balan.chen.ea:22:exact}*{Theorem~1.6} obtain exact large-time and
+high-moment asymptotics with a variational constant. Their homogeneous spatial
+covariances cover dimensions at most three; their global spatial white-noise
+case covers dimensions one and two. Three-dimensional white noise belongs to
+a separate finite-time discussion, not this global large-time assertion.
+Chen--Eisenberg~\cite{chen.eisenberg:23:interpolating}*{Theorems~1.6--1.7}
+study fractional differential operators with static Skorohod noise. Their time
+order lies strictly below two. Fractional time differentiation is distinct
+from temporal correlation of the noise and does not silently include the
+ordinary wave endpoint.
+
+For ordinary static Stratonovich products, Balan
+\cite{balan:22:stratonovich} constructs solutions in dimensions one and two
+under a spectral condition stronger than Dalang's condition, and gives both
+a probabilistic representation and a comparison of chaos expansions.
+Xia Chen--Hu~\cite{chen.hu:25:hyperbolic} treat dimensions at most three under
+Dalang's condition and establish homogeneous moment asymptotics at positive
+integer orders. Their published variational expressions require the
+normalization qualifications recorded in this manuscript; we do not import
+a numerical white-noise constant from them.
+
+There is a concrete difference in admissible roughness for these unrenormalized
+static constructions. For the common flat data and homogeneous function
+covariances, the Skorohod range in the preceding exact-asymptotics result
+allows spatial homogeneity exponent below three, subject to its dimension
+restriction, whereas the ordinary Stratonovich range requires exponent below
+two. This comparison concerns those solution classes. Renormalized
+Anderson-Hamiltonian wave equations, such as those in
+Gubinelli--Ugurcan--Zachhuber~\cite{gubinelli.ugurcan.ea:20:semilinear}, are a
+related but different construction; their existence does not identify an
+ordinary Stratonovich product with a Skorohod product.
+
+\subsection{Fractional temporal correlation}
+
+On the Skorohod side, Balan--Song~\cite{balan.song:17:hyperbolic} develop the
+space-time homogeneous Gaussian-noise construction. Its higher-dimensional
+statements have additional spectral hypotheses, including absolute continuity
+of the spectral measure in the relevant results. Xia Chen--Deya--Song--Tindel
+\cite{chen.deya.ea:25:solving} sharpen the spectral solvability analysis. For
+homogeneous spatial covariance and temporal singularity exponent $\alpha_0$,
+the resulting noise threshold is $\alpha + \alpha_0 < 3$, under the paper's
+stated data conditions. The sufficiency statement in dimensions two and three
+imposes Fourier integrability on the initial displacement; the necessity
+statement uses a positive lower bound on the free wave. These are different
+hypotheses and directions, not an unconditional common-data equivalence with
+the present construction. The static endpoint also needs separate treatment.
+
+Balan--Conus~\cite{balan.conus:16:intermittency} give moment bounds for
+fractional-in-time noise under their spatial covariance conditions, including
+a second-moment lower bound in dimensions at most three at the same time-growth
+order as the upper bound for positive constant initial displacement and
+nonnegative constant initial velocity. Hu--Wang~\cite{hu.wang:24:matching}*{Theorem~3.7}
+obtain matching higher-moment growth orders under their covariance and
+Green-kernel hypotheses. Neither conclusion by itself identifies a sharp
+leading constant. Space-time white noise is not an automatic specialization
+of their functional spatial lower-bound hypotheses.
+
+On the Stratonovich side, Xia Chen--Deya--Song--Tindel
+\cite{chen.deya.ea:23:hyperbolic} construct solutions in dimensions one and two
+using Strichartz estimates and weighted function spaces. Their sufficient
+regularity ranges and initial-data assumptions differ from the full
+homogeneous range considered here. Xia Chen's current author version
+\cite{chen:author2026:time-dependency} treats fractional temporal correlation
+in dimensions one through three, with homogeneous condition
+$\alpha + \alpha_0 < 2$. It proves two-sided first-moment asymptotic bounds and
+a coarse quadratic-exponential second-moment upper bound. The stronger exact
+first-moment statement of arXiv:2510.01412v1 is not the statement of this
+edition; the version convention is specified in Section~\ref{S:known}.
+
+\input{notes/figures/literature-results-map}
+
+\subsection{Advantages, limitations and the present contribution}
+
+For second-moment analysis, the main advantage of the Skorohod formulation is
+orthogonality: it removes unequal-chaos-order cross terms and makes isometries
+and hypercontractivity directly available. In some static covariance classes
+it also permits rougher noise than ordinary Stratonovich multiplication. The
+price is that Wick-ordered multiplication specifies a different stochastic model;
+it cannot generally be substituted for an ordinary smooth random potential.
+With temporally correlated noise, it does not restore adapted martingale
+methods.
+
+The Stratonovich formulation retains the interactions generated by ordinary
+multiplication and can connect to deterministic wave and Gaussian variational
+methods. Its cost is control of traces, self-pairings and unequal iteration
+orders, together with potentially stronger conditions for an unrenormalized
+limit. Neither interpretation supplies a general wave maximum principle.
+Both admit chaos methods and, in suitable settings, probabilistic
+representations. The appropriate choice is determined by the model and the
+specified approximation, rather than by a universal preference for one
+calculus.
+
+The present contribution concerns the temporally correlated Stratonovich
+problem. Theorem~\ref{T:full-upper} gives the full homogeneous-class upper bound
+at the scale $t^\kappa$. Theorem~\ref{T:intrinsic-second-moment} identifies the
+second-moment limit through nonnegative compact space-time controls, retaining
+the original covariance amplitude, unit kinetic coefficient and global
+half-variance cost. This intrinsic expression is not a numerical closed form,
+a sharp all-moment formula or an identification with the source's
+first-moment variational constants. These are the claims of the written
+proofs; the independent review status is recorded separately from this
+literature comparison.
+
+Related work in progress with Raluca Balan and Jinxin Wang treats three
+Skorohod projects: noise colored in time and space in one dimension; colored
+noise in two dimensions; and white-in-time noise in dimensions one, two and
+three. We mention these scopes to locate the present work within the broader
+program. No unpublished result from them is used here, and no equality of
+their constants with the present Stratonovich constant is asserted.

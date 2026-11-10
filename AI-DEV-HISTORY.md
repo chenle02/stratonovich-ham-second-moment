@@ -7,7 +7,7 @@ It does not contain private model reasoning or reproduce credentials.
 
 The project has a substantial written candidate proof and an explicit intrinsic
 variational expression for the second-moment constant. **Whole-project acceptance
-is still open.** The current 267-page working draft is versioned for preservation;
+is still open.** The working drafts are versioned for preservation;
 that action does not adopt the candidate or upgrade any review result.
 
 ## How to study the record
@@ -403,3 +403,19 @@ theorem/page citations retain their original numbering. Old scientific and
 visual receipts remain historical rather than being restamped on the new book.
 The organization guide and numbering crosswalk are under notes/; exact source
 pins are in notes/figures/VALIDATION.json.
+
+## November 10: interpretation comparison and explanatory diagrams
+
+[held back: collaborators' unpublished work]
+
+Five new diagrams explain finite-chain endpoint elimination, degree splits and
+allocations, phase-norm charges at interval ends, chronological regions and
+finite-subset optimization. Two book literature maps and a compact reader map
+explain the model distinctions. Source/caption readback and integrated layout
+checks closed the required editorial corrections. All 215 proof bodies retain
+their text modulo whitespace and added diagram inputs.
+
+The resulting book/reader pair has 293/27 pages, 19/9 figures, 80 mapped labels
+and 246 valid remote PDF links, with clean builds. The source/PDF pins are in
+notes/figures/VALIDATION.json. Earlier page-review receipts are not transferred,
+and no mathematical acceptance gate is upgraded by this wave.

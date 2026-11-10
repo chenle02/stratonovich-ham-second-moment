@@ -18340,3 +18340,20 @@ notes/book-numbering-map.json records old/new section identities and reader
 landmarks. Private baseline, build logs and visual readback stay under
 private/audit/2026-11-10-book-format/. The old illustration/style receipt at
 669ccc9 remains historical. This is not new proof or review acceptance.
+
+
+### 2026-11-10 — expanded literature and explanatory diagrams
+
+[held back: collaborators' unpublished work]
+
+Added five mathematical diagrams and three literature diagram sources. The book
+uses19 figures and the reader9. Diagram-source semantics and integrated new-page
+layouts were checked. All215 original proof bodies are text-identical modulo
+whitespace and new diagram inputs. No mathematical theorem or proof was added.
+Final artifacts:293-page book,27-page reader;80 mapped labels,246 valid remote
+PDF links; both builds have0errors/undefined references/citations/overfull boxes.
+Current pins:notes/figures/VALIDATION.json. Earlier validation remains historical.
+The six-repository inventory found a missing paper, an incomplete pipeline record
+and a stale source edition; three requests are queued with exact identities in
+the private literature audit. Queued is not ingested. No scientific review,
+whole-document visual acceptance or whole-goal gate is upgraded by this wave.

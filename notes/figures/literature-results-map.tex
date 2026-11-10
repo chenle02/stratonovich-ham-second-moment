@@ -1,0 +1,66 @@
+\begin{figure}
+\centering
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \node[ham/box,text width=5.2cm] at (0,2.6) {Skorohod};
+  \node[ham/box,text width=5.2cm] at (5.8,2.6) {Ordinary Stratonovich};
+  \node[ham/note] at (-3.85,0) {White\\in time};
+  \node[ham/box,text width=5.2cm,minimum height=3.7cm] at (0,0)
+  {Chen--Dalang~\cite{chen.dalang:15:moment}\\
+  Space-time white noise, $d=1$\\
+  Exact second moments\\[3pt]
+  Chen--Guo--Song~\cite{chen.guo.ea:24:moments}\\
+  Fractional SPDEs: $p=2$ exact\\
+  Wave higher-$p$ orders $p^{3/2}$};
+  \node[ham/box,text width=5.2cm,minimum height=3.7cm] at (5.8,0)
+  {No source claim listed here.\\[3pt]
+  A specified approximation\\
+  needs its own theorem.\\
+  No It\^o equality or openness is inferred.};
+  \node[ham/note] at (-3.85,-4.8) {Static\\noise};
+  \node[ham/box,text width=5.2cm,minimum height=4.7cm] at (0,-4.8)
+  {Balan--Le Chen--Xia Chen\\\cite{balan.chen.ea:22:exact}\\
+  Exact asymptotics, $p\ge2$\\
+  Homogeneous cases: $d\le3$\\
+  Spatial-white cases: $d\le2$\\[3pt]
+  Chen--Eisenberg~\cite{chen.eisenberg:23:interpolating}\\
+  Fractional time order $<2$\\
+  Static noise; exact rates};
+  \node[ham/box,text width=5.2cm,minimum height=4.7cm] at (5.8,-4.8)
+  {Balan~\cite{balan:22:stratonovich}\\
+  Construction in $d=1,2$\\
+  Stronger spectral condition\\[3pt]
+  Xia Chen--Hu~\cite{chen.hu:25:hyperbolic}\\
+  Dalang and homogeneity\\hypotheses apply\\
+  Exact asymptotics\\at integer $p\ge1$};
+  \node[ham/note] at (-3.85,-10.25) {Fractional\\temporal\\noise};
+  \node[ham/box,text width=5.2cm,minimum height=4.4cm] at (0,-10.25)
+  {Balan--Conus; Hu--Wang\\
+  \cites{balan.conus:16:intermittency,hu.wang:24:matching}\\
+  Moment-growth bounds/orders\\
+  No identified sharp constant\\[3pt]
+  Chen--Deya--Song--Tindel\\
+  \cite{chen.deya.ea:25:solving}\\
+  Construction results\\
+  Data hypotheses depend on $d$};
+  \node[ham/box,fill=hamgold!9,text width=5.2cm,minimum height=4.4cm] at (5.8,-10.25)
+  {Xia Chen's pinned author version\\
+  \cite{chen:author2026:time-dependency}\\
+  $d=1,2,3$, $\alpha+\alpha_0<2$\\
+  Two-sided first-moment bounds\\[3pt]
+  Present manuscript: $p=2$\\
+  Intrinsic variational formula\\
+  Written proof; review pending};
+\end{tikzpicture}
+\caption[Source-qualified literature comparison]{Selected source-qualified results. Each cell separates a construction,
+a moment-growth order and an exact asymptotic conclusion; it does not state
+that one source covers every covariance in its column. The higher-moment
+lower bounds of Chen--Guo--Song retain their data hypotheses and have
+nonoptimal constants. The higher-dimensional Skorohod construction retains
+its Fourier-integrability and necessity qualifications. Chen--Hu is not
+used to transfer a numerical constant, and the pinned Xia Chen author
+version is not replaced by its stronger arXiv-v1 first-moment wording.
+No arrows indicate inclusions, endpoint limits or a universal preference
+between stochastic interpretations. The adjacent literature review retains
+the full source conditions.}
+\label{Fig:literature-results-map}
+\end{figure}

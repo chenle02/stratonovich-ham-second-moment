@@ -300,6 +300,8 @@ auxiliary sections. In particular, our uses of the latter cite Theorem~1.1, not
 Corollary~1.2. Thus, neither a disputed first-moment constant nor an auxiliary
 static coefficient theorem enters the interval-field upper bound.
 
+\input{notes/literature_review}
+
 \section{What is known}\label{S:known}
 
 Pinpoints to Xia Chen's time-dependent Stratonovich paper refer to the current
@@ -308,62 +310,6 @@ the Annals of Applied Probability'', SHA-256 \texttt{5f7385ca\dots}); see
 \path{sources/SOURCE-MANIFEST.md}. arXiv:2510.01412v1
 \cite{chen:25:time-dependency} differs in Theorem~1.2 and must not be used as
 the authority for it.
-
-\subsection{Earlier moment results and the present setting}\label{S:literature-context}
-
-For the stochastic wave equation driven by space-time white noise,
-Chen--Dalang~\cite{chen.dalang:15:moment}*{Theorem~2.3 and Corollary~1.1} derive
-moment bounds and explicit second-moment formulas, including rough initial data.
-Their random-field construction uses the It\^o--Walsh integral.
-Chen--Guo--Song~\cite{chen.guo.ea:24:moments}*{Theorem~1.1} extend moment
-analysis to a fractional SPDE family with space-time white noise. Besides exact
-second moments and their Lyapunov exponents, their wave specialization gives
-matching upper and lower $p^{3/2}$ moment-growth
-orders~\cite{chen.guo.ea:24:moments}*{Proposition~5.10; (1.10)--(1.11),
-pp.~4257--4258}. The higher-moment constants in that comparison are not optimal;
-these bounds do not assert an exact higher-moment leading constant or the
-existence of a general higher-moment limit.
-
-With time-independent Gaussian noise, Balan--Le Chen--Xia
-Chen~\cite{balan.chen.ea:22:exact}*{Theorem~1.6} obtain exact large-time and
-high-moment asymptotics for the Skorohod wave equation, with a variational
-constant, for their homogeneous covariances in dimensions at most three and
-spatial white noise in dimensions one and two. This is a close predecessor for
-sharp hyperbolic moment asymptotics.
-Chen--Eisenberg~\cite{chen.eisenberg:23:interpolating}*{Theorems~1.6--1.7}
-develop solvability and exact moment asymptotics for fractional equations with
-time-independent noise in the Skorohod sense. Fractional time differentiation in
-that family is distinct from temporal correlation of the noise; its fractional
-time order lies strictly below two. For fractional temporal noise, the Skorohod
-moment bounds of Balan--Conus~\cite{balan.conus:16:intermittency} provide a
-further comparison under their respective covariance assumptions.
-Hu--Wang~\cite{hu.wang:24:matching}*{Theorem~3.7} obtain matching moment-growth
-bounds under their covariance and Green-kernel hypotheses; matching growth
-orders do not by themselves identify a sharp leading constant.
-
-On the Stratonovich side, Balan~\cite{balan:22:stratonovich} constructs the
-time-independent-noise solution in dimensions one and two under a spectral
-condition stronger than Dalang's condition. Xia
-Chen--Hu~\cite{chen.hu:25:hyperbolic} establish homogeneous moment asymptotics
-for the static Stratonovich model. The Strichartz construction of Xia
-Chen--Deya--Song--Tindel in dimensions one and
-two~\cite{chen.deya.ea:23:hyperbolic} is another Stratonovich well-posedness
-approach under its own noise and data hypotheses. Xia Chen's author-version
-result for fractional temporal
-noise~\cite{chen:author2026:time-dependency}*{Theorem~1.2} gives two-sided
-first-moment bounds, with an exact limit predicted rather than proved there. Its
-Remark~5.1 supplies the coarse second-moment upper bound. These are the direct
-context for the present second-moment problem.
-
-The distinction between interpretations matters to the argument. The Skorohod
-chaos expansion is orthogonal across orders, whereas the Stratonovich moment
-expansion retains self-pairings and unequal-order cross terms. The results above
-are therefore literature comparisons, not a transfer of their solutions or sharp
-constants to this problem. We derive the constant from the present model rather
-than prescribe a conjectured endpoint or identify an auxiliary coefficient-one
-variational expression with an established first-moment limit.
-
-% [held back: collaborators' unpublished work]
 
 \subsection{Stratonovich expansion and moments}
 
@@ -1243,6 +1189,8 @@ Thus, $|Q_2|$ is even and $|Q_0|+|Q_2|/2 = n$.
   cap convention avoids any undefined product on a singular time diagonal. This
   proves Lemma~\ref{L:pairing-product-envelope}.
 \end{proof}
+
+\input{notes/figures/endpoint-elimination}
 
 Use the joint Gaussian regularizations of the source's (2.11). Write $a =
 (\epsilon,\delta) > 0$ for one pair of widths and $\boldsymbol a =
@@ -2929,6 +2877,8 @@ independent copies of the smoothed unit field, and suppose
 Write $\mathcal{U}_{\mathcal{F}}^\epsilon(T;s)$ for phase evolution with
 potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
 
+\input{notes/figures/interval-allocations}
+
 \begin{lemma}[A fixed degree-split estimate]\label{L:fixed-split}
   Retain the finite interval fields above, with $R_\alpha > 0$ and $\sigma_i >
   0$. Fix integers $r_i,q_i,k_i \ge 0$ with $r_i+q_i = 2k_i$, and put $k =
@@ -3076,6 +3026,8 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
   This product includes the initial and final conversions. There is no new copy
   of $D_{\mathcal{A}}$ at an insertion time or an overlapping interval's start.
 
+  \input{notes/figures/interval-end-metrics}
+
   \emph{The cross-color subspaces and the word norm.} Let $\mathscr{G}_i^{(0)}$
   be the vacuum of color $i$ and $\mathscr{G}_i^{(1)}$ its first Gaussian
   degree. For $S \subset \mathcal{C}$, use the tensor subspace
@@ -3197,6 +3149,8 @@ potential $s\sum_i\sigma_i\mathbf1_{I_i}(t)W_i^\epsilon(x)$.
   \end{equation}
   There is no factor $m!$ or $1/m!$ in this estimate. For $m = 0$, the cube has
   unit mass and $\Phi_{\mathcal{A}}(z) = P_z(T,0)v$.
+
+  \input{notes/figures/cross-colour-cube}
 
   The vector $\Phi_{\mathcal{A}}$ is entire in the background amplitudes. On the
   first copy its coefficient is given by the normalized formula

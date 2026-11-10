@@ -1,0 +1,38 @@
+\begin{figure}
+\centering
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \node[ham/box,minimum width=5.2cm] (hamSkoroProduct) at (0,0)
+  {Skorohod / Wick product\\$u\diamond\dot W$};
+  \node[ham/box,minimum width=5.2cm] (hamStratoProduct) at (6.5,0)
+  {Ordinary Stratonovich construction\\regularize first, then multiply};
+  \node[ham/box,minimum width=5.2cm] (hamSkoroIntegral) at (0,-1.8)
+  {Divergence stochastic integral\\and Wiener-chaos expansion};
+  \node[ham/box,minimum width=5.2cm] (hamStratoLimit) at (6.5,-1.8)
+  {Classical random wave equations\\followed by the specified limit};
+  \draw[ham/arrow] (hamSkoroProduct)--(hamSkoroIntegral);
+  \draw[ham/arrow] (hamStratoProduct)--(hamStratoLimit);
+  \node[ham/note] at (0,-3.6)
+  {Adapted white-in-time integrands:\\
+  Skorohod agrees with It\^o\\
+  under the integration hypotheses.};
+  \node[ham/note] at (6.5,-3.6)
+  {Singular noise requires\\
+  a specified approximation scheme\\
+  and a convergence theorem.\\
+  Correction terms may be needed.};
+  \draw[hamblue!35] (-2.8,-5.0)--(9.3,-5.0);
+  \node[ham/box,minimum width=10.9cm] at (3.25,-6.0)
+  {The same formal wave operator and noise covariance\\
+  do not identify the solutions or their moment constants.};
+\end{tikzpicture}
+\caption[Two meanings of the noise product]{The stochastic product is part of the model. The arrows run only
+within each construction; there is no conversion arrow between the columns.
+For the linear Skorohod equation with deterministic data, iteration order
+agrees with orthogonal chaos order. Ordinary Stratonovich iteration retains
+self-contractions and unequal-order moment terms, although the final
+solution can still be regrouped into orthogonal Wiener chaoses. See
+Balan~\cite{balan:22:stratonovich} for a comparison of the expansions.
+An adapted It\^o identification does not identify an unspecified
+smooth-noise approximation.}
+\label{Fig:literature-interpretations}
+\end{figure}

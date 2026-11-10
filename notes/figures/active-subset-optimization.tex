@@ -1,0 +1,32 @@
+\begin{figure}
+\centering
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \node[ham/box,text width=7.8cm] (hamRoot) at (5.1,1.7)
+  {Discard zero vectors: $\mathcal J=\{i:k_i\ne0\}$.\\
+  Illustrate all subsets when $\mathcal J=\{1,2\}$.};
+  \foreach \hamSubsetId/\hamSubsetX/\hamSubsetName/\hamSubsetValue in
+  {empty/0/{\varnothing}/{0},first/3.4/{\{1\}}/{d_{\{1\}}^C},second/6.8/{\{2\}}/{d_{\{2\}}^C},both/10.2/{\{1,2\}}/{d_{\{1,2\}}^C}} {
+  \node[ham/box,text width=2.7cm] (hamSubset\hamSubsetId) at (\hamSubsetX,-.15)
+  {$A=\hamSubsetName$\\value $\hamSubsetValue$};
+  \draw[ham/arrow] (hamRoot)--(hamSubset\hamSubsetId);
+  }
+  \node[ham/note,text width=10.6cm] at (5.1,-1.8)
+  {For every nonempty $A$, minimize $D_A^C(w)$ over $w_i>0$.\\
+  The weight minimizer $w^A$ is unique; $d_A^C$ need not be positive.};
+  \node[ham/box,text width=8.4cm] (hamMax) at (5.1,-3.4)
+  {$\mathscr S(C)=\max\{0,d_{\{1\}}^C,d_{\{2\}}^C,d_{\{1,2\}}^C\}$\\
+  Take a maximizing subset; if nonempty, set $\Phi_A=\sum_{i\in A}w_i^Ak_i$.};
+  \node[ham/note,text width=10.7cm] at (5.1,-5.1)
+  {The omitted terms are nonnegative at $\Phi_A$.\\
+  Their inactivity is not assumed in the construction.};
+\end{tikzpicture}
+\caption[Minimize within each subset, then maximize over subsets]{The finite-subset identity includes the empty set with value zero.
+For each nonempty subset the inner problem is a strictly convex minimization
+in positive weights, followed by a maximum over subsets. This does not assert
+global concavity of the original objective, uniqueness of its maximizer,
+or an effective algorithm. No inverse Gram matrix is used, so coincident
+vectors and singular Gram matrices remain allowed. See
+\ProofRef{Lemma}{L:gram-dual-minimum} and
+\ProofRef{Proposition}{P:gram-positive-optimizer}.}
+\label{Fig:active-subset-optimization}
+\end{figure}

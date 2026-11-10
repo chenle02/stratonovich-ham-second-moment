@@ -1,4 +1,4 @@
-Last updated: 2026-11-09 (Codex; book-format companion)
+Last updated: 2026-11-10 (Codex; expanded literature and diagrams)
 
 # HANDOFF
 
@@ -27,8 +27,8 @@ conversation but not implemented in the project contract or a private companion.
    It is derived; Progress.md wins any conflict.
 1. Read AGENTS.md, PROJECT-GOAL.md, the latest Progress.md entries and
    AI-DEV-HISTORY.md. Inspect both local and <HUB> working trees before edits.
-2. Current artifacts are the 284-page book-style companion and 24-page reader
-   under notes/. Exact source/PDF pins,78 label checks and 240 remote links are
+2. Current artifacts are the 293-page book-style companion and 27-page reader
+   under notes/. Exact source/PDF pins,80 label checks and 246 remote links are
    in notes/figures/VALIDATION.json. Read notes/BOOK-GUIDE.md and the numbering
    map for the new chapters and appendices.
 3. The previous 263-page baseline remains recoverable at 11e009a, at the same
@@ -51,7 +51,7 @@ continuation, first reconcile the agreed recovery direction with the written
 contract explicitly. Existing whole MAIN v5 is PASS_WITH_NOTES/MEDIUM and
 unaccepted under the recorded HIGH gate; no required source repair was identified.
 Historical main visual acceptance is230/267 on the old candidate,37 remaining;
-no page credit is automatically transferred to the current 284-page edition. Final cold review,
+no page credit is automatically transferred to the current 293-page edition. Final cold review,
 adoption and whole-project clearance remain open. The visual MEDIUM policy
 proposal is not adopted. Source delivery is not proof understanding.
 
@@ -97,7 +97,7 @@ proofs are preserved; no new scientific acceptance is implied. Detailed private
 review/iteration records are under private/audit/2026-11-09-style-diagrams/.
 Agent22 should receive the committed source anchor update; do not edit its repo.
 
-Latest presentation revision: the long technical companion is a 284-page book
+Historical book-format checkpoint: the long technical companion is a 284-page book
 with 11 chapters and 4 appendices. The reader stays 24 pages/article format. The
 model/benchmark goals open the book, the main proof follows its dependencies,
 and auxiliary/direct comparisons remain whole in appendices. Labels are stable;
@@ -106,3 +106,10 @@ notes/BOOK-GUIDE.md and notes/book-numbering-map.json. The original mathematics
 of all 215 proof bodies is retained, and the new reader map/240 links pass.
 The 27 included mathematical modules were not edited. Existing review receipts
 are not transferred; Agent22 should refresh the committed source anchor.
+
+Latest editorial wave expands both stochastic interpretations and their tradeoffs;
+19 book figures and nine reader figures, with all 215 proofs retained.
+See notes/figures/VALIDATION.json for current source/PDF pins. Literature
+source checks and builds do not change scientific acceptance. Three source
+acquisition/completion/edition requests are pending; exact identities and
+evidence remain under private/audit/2026-11-10-expanded-literature/.

@@ -1,0 +1,41 @@
+\begin{figure}
+\centering
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \node[ham/note,text width=11.5cm] at (4.6,1.65)
+  {For each interval, $r_i+q_i=2k_i$: count its occurrences on the two copies.};
+  \node[ham/box,text width=3.1cm] (hamCross) at (.4,-.2)
+  {One on each copy\\$k_i=1$, $(r_i,q_i)=(1,1)$\\$i\in\mathcal C$};
+  \node[ham/box,text width=3.1cm] (hamSame) at (4.6,-.2)
+  {Two on one copy\\$k_i=1$, $(r_i,q_i)=(2,0)$\\or $(0,2)$};
+  \node[ham/box,text width=3.1cm] (hamHigher) at (8.8,-.2)
+  {Higher degree\\$k_i\ge2$\\all splits retained};
+  \node[ham/note,text width=11.5cm] at (4.6,-2.35)
+  {The pair counts $k_i$ are then allocated across the intervals.\\
+  Example: $k=2$ and $M=3$ give exactly six weak compositions.};
+  \foreach \hamAllocationX/\hamAllocationTuple in
+  {.4/{(2,0,0)},4.6/{(0,2,0)},8.8/{(0,0,2)}} {
+  \node[ham/box,text width=2.7cm] at (\hamAllocationX,-3.6) {$\hamAllocationTuple$};
+  }
+  \foreach \hamAllocationX/\hamAllocationTuple in
+  {.4/{(1,1,0)},4.6/{(1,0,1)},8.8/{(0,1,1)}} {
+  \node[ham/box,text width=2.7cm] at (\hamAllocationX,-4.75) {$\hamAllocationTuple$};
+  }
+  \node[ham/note,text width=11.8cm] at (4.6,-6.1)
+  {$[z^2]\prod_{i=1}^3\left(\sum_{l\ge0}a_{i,l}z^l\right)
+  =\sum_{k_1+k_2+k_3=2}a_{1,k_1}a_{2,k_2}a_{3,k_3}$.\\
+  Each displayed allocation contributes once.};
+\end{tikzpicture}
+\caption[Degree splits and pair-count allocations]{Two different counts must be kept separate. First split each
+interval's even total degree between two copies built from the same Gaussian
+fields; only distinct colors are independent. For $k_i=l$, there are
+$2l+1$ possible splits. Cross singletons use
+one insertion on each copy; a singleton confined to one copy is estimated
+with the other background terms and has one ending factor, not two.
+Then sum the pair counts over interval
+indices. Ordinary positive-product coefficient extraction counts weak
+compositions, without an extra multinomial coefficient. The displayed
+$a_{i,l}$ are generic coefficients, not additional model parameters.
+See \ProofRef{Lemma}{L:fixed-split} and
+\ProofRef{Lemma}{L:inventory-product}.}
+\label{Fig:interval-allocations}
+\end{figure}

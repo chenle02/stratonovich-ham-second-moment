@@ -1,0 +1,68 @@
+\begin{figure}
+\centering
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \node[ham/box,text width=5.3cm] (hamRoot) at (5,0)
+  {Inspect the\\chain endpoints};
+  \node[ham/box,text width=3.25cm] (hamSelf) at (.6,-1.65)
+  {Endpoint paired\\within its own chain};
+  \node[ham/box,text width=3.25cm] (hamTogether) at (5,-1.65)
+  {Endpoints paired\\with each other};
+  \node[ham/box,text width=3.25cm] (hamDistinct) at (9.4,-1.65)
+  {Distinct cross-pairs};
+  \draw[ham/arrow] (hamRoot)--(hamSelf);
+  \draw[ham/arrow] (hamRoot)--(hamTogether);
+  \draw[ham/arrow] (hamRoot)--(hamDistinct);
+  \node[ham/box,text width=3.25cm] (hamHalf) at (.6,-3.45)
+  {Regional estimate\\on the full domain};
+  \node[ham/box,text width=3.25cm] (hamCS) at (5,-3.45)
+  {Covariance bound\\with both origins};
+  \node[ham/box,text width=3.25cm] (hamRegions) at (9.4,-3.45)
+  {$s_a\le s_q$: remove $v$\\$s_a>s_q$: remove $u$};
+  \draw[ham/arrow] (hamSelf)--(hamHalf);
+  \draw[ham/arrow] (hamTogether)--(hamCS);
+  \draw[ham/arrow] (hamDistinct)--(hamRegions);
+  \node[ham/note,text width=10.5cm] at (5,-4.75)
+  {The two cross-pair regions give $P/2$ and $P'/2$,\\
+  with possibly different assignments: $(P+P')/2\le\max(P,P')$.};
+  \draw[hamblue!35] (-1.1,-5.4)--(11.1,-5.4);
+  \node[ham/note] at (1.7,-5.95) {On $s_a\le s_q$, remove $v$};
+  \node[ham/dot] (hamBefore) at (-.4,-6.8) {};
+  \node[ham/dot] (hamA) at (1.4,-6.8) {};
+  \node[ham/dot] (hamB) at (3.2,-6.8) {};
+  \node[ham/dot] (hamQ) at (1.4,-8.0) {};
+  \node[ham/dot] (hamV) at (3.2,-8.0) {};
+  \draw[ham/arrow] (hamBefore)--node[above,font=\small] {$G_a$} (hamA);
+  \draw[ham/arrow] (hamA)--node[above,font=\small] {$G_b$} (hamB);
+  \draw[ham/arrow] (hamQ)--(hamV);
+  \draw[ham/pair] (hamA)--(hamV);
+  \node[font=\small,above=2pt] at (hamA) {$a$};
+  \node[font=\small,above=2pt] at (hamB) {$b$};
+  \node[font=\small,below=2pt] at (hamQ) {$q$};
+  \node[font=\small,below=2pt] at (hamV) {$v$};
+  \draw[ham/arrow] (4.2,-7.5)--(5.3,-7.5);
+  \node[font=\small] at (4.75,-7.0) {$N_{1,e_0}(G_v)$};
+  \node[ham/dot] (hamAfterBefore) at (6.4,-6.8) {};
+  \node[ham/dot] (hamAfterB) at (9.7,-6.8) {};
+  \node[ham/dot] at (8.05,-8.0) {};
+  \draw[ham/arrow] (hamAfterBefore)--node[above,font=\small] {$G_a*G_b$} (hamAfterB);
+  \node[font=\small,above=2pt] at (hamAfterB) {$b$};
+  \node[font=\small,below=2pt] at (8.05,-8.0) {$q$};
+  \node[ham/note,text width=5.2cm] at (8.05,-9.5)
+  {Integrate out $v$ and $a$;\\keep the other predecessors unchanged.};
+\end{tikzpicture}
+\caption[Endpoint elimination in two ordered chains]{The endpoint cases in the finite two-chain product bound. The empty
+matching is the induction base; if only one chain is nonempty, use the
+within-chain case.
+Here $u,v$ are the chain endpoints, $a$ is paired with $v$,
+and $q$ precedes $v$ in the distinct-cross-pair case. The lower sketch
+shows one local fragment used in the regional fusion step, with
+$b$ the immediate successor of $a$; other pairings are suppressed. Deleting $v$ on $s_a\le s_q$ extracts
+$N_{1,e_0}(G_v)$, where $e_0=\{a,v\}$. If the unpaired $a$ is terminal,
+integrate it to $N_0(G_a)$ instead; otherwise fuse its two consecutive
+kernels by one-sided spacetime convolution. The mutually paired endpoint case retains
+both predecessor origins, including their time difference. The argument
+chooses a finite maximum of products; it does not produce one assignment
+valid for all kernel families. See
+\ProofRef{Lemma}{L:pairing-product-envelope}.}
+\label{Fig:endpoint-elimination}
+\end{figure}

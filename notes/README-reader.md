@@ -1,11 +1,11 @@
 # Reading edition with the current technical companion
 
-Read [the 24-page reader](notes_stratonovich_ham_second_moment_reader.pdf)
-with [the 284-page technical companion](notes_stratonovich_ham_second_moment.pdf).
+Read [the 27-page reader](notes_stratonovich_ham_second_moment_reader.pdf)
+with [the 293-page technical companion](notes_stratonovich_ham_second_moment.pdf).
 The reader introduces the model, proposed result and variational constant,
 explains how the main steps fit together, and links to the detailed proofs.
 It is a guided route through the work, not a standalone short proof.
-The combined record is 308 pages; no total-proof-length reduction is claimed.
+The combined record is 320 pages; no total-proof-length reduction is claimed.
 
 This November 9 revision matches the current **unadopted mathematical candidate**.
 It updates the literature and contribution discussion, mentions the three
@@ -39,7 +39,7 @@ figure sources. It uses fixed reader placement so a diagram follows the full
 statement or definition it explains. Both the figure sources/captions and all
 rendered diagram pages were reviewed. The complete figure set appears in the
 technical companion. See [the figure guide](figures/README.md). The earlier
-20-page reading editions remain historical; the current reader has 24 pages.
+20-page reading editions remain historical; the current reader has 27 pages.
 
 The technical companion is now a book with 11 chapters and 4 appendices. The
 reader remains in article format. Its technical references use the book's
