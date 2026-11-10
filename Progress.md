@@ -18413,3 +18413,15 @@ commit3f9e25b: shared-index commit safety, equivalent-form Lean correspondence
 and separate semantic/layout/design figure checks. Description and skill gates
 passed3/3; discovery, runtime synchronization and strict Codex budget checks
 passed. No scientific gate is upgraded by either editorial work or retro.
+
+### 2026-11-10 — prepare public guitar illustration and videos
+
+Le authorized inclusion of the SPDE-Visuals guitar artwork and videos in the
+future public repository. Added one still and two5-second H.264 videos under
+media/guitar-sandstorm/, with linked preview, historical context, explicit
+AI-generation/simulation distinction, CC0 license and upstream commit/hash
+provenance. All three copies match upstream committed bytes; both videos fully
+decode, and sampled frames were inspected. Recorded a precise media exception
+to the release image-removal policy; future export validation is still required.
+No public repository was created or visibility changed; manuscript files are
+unchanged. Walsh’s worked example uses an infinite string to avoid boundaries.

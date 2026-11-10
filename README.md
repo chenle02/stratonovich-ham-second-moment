@@ -143,3 +143,10 @@ The wiki project page is
 ## Related projects
 
 [held back: collaborators' unpublished work]
+
+## A guitar in a sandstorm
+
+[The illustrated opening](media/guitar-sandstorm/README.md) collects an
+AI-generated desert-guitar image and two short videos inspired by Walsh’s
+stochastic-string example. Source credit, the CC0 dedication and the distinction
+between artistic illustration and numerical simulation accompany the files.
