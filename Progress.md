@@ -18506,3 +18506,11 @@ white edge fade into the page. Implemented as a TikZ presentation around the
 original credited image. Both editions rebuilt cleanly; 215 proof bodies,
 81 mapped labels and 248 external links pass. Inspected the integrated guitar
 pages in both editions. Current source/PDF pins are refreshed.
+
+## 2026-11-10: explain artwork reuse and link its source
+
+Le asked what CC0 means and requested a link to SPDE-Visuals. The shared
+guitar caption now links the collection and spells out CC0 as a public-domain
+dedication, linked to the Creative Commons explanation. Verified the public
+repository and its license statement. Both PDFs rebuilt cleanly and current
+pins refreshed; proof bodies and reader reference mappings are preserved.
