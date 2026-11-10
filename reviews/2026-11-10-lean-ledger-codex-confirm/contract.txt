@@ -1,0 +1,78 @@
+Independent narrow confirmation review: repaired rows of a Lean statement ledger vs manuscript
+
+You are an independent, skeptical reviewer. Your workspace is a frozen,
+read-only packet. Use your file-reading and search tools actively; do not
+rely on memory. Do not modify any file.
+
+PACKET
+- candidate/statement-ledger.md : the ledger under review (Lean companion
+  commit 48ce162955b2). It maps 88 Lean declarations to manuscript labels.
+- lean/StratonovichHAMAudit/*.lean : the 24 Lean source files (ground truth).
+  lean/claims.yaml and lean/coverage.yaml.
+- manuscript/notes/... : all 50 LaTeX inputs of the manuscript at revision
+  ba01d9857383. Labels are \label{...}.
+- PROVENANCE.json : byte binding of every packet file (supervisor-checked).
+
+The Lean proofs compile with no sorry and only standard axioms; proof
+correctness is NOT in question. Correspondence is. Statements about earlier
+manuscript revisions or files outside this packet are out of scope: note
+them under limitations, do not count them as findings.
+
+SCOPE. A previous complete-reading review accepted the other 86 rows. Two rows
+were then repaired. Review ONLY these six items, as six checks in this order:
+  1. claim "StratonovichHAMAudit.DirectEvent.kappa_gt_one: E:kappa (lower inequality)"
+     Fidelity of the row to the Lean type; whether E:kappa (manuscript main
+     file) is the right label for the lower inequality kappa > 1 under the
+     Lean hypotheses; whether the ledger's statement of its use in the proof
+     of P:original-point-transfer is accurate; whether the row and coverage
+     correctly say that kappa < 2 is not checked.
+  2. claim "StratonovichHAMAudit.LocalFlow.noise_order: L:temporal-equilibrium"
+     Fidelity; whether, with the Lean alpha read as the temporal exponent a,
+     the range and identity are exactly those used in the proof of
+     L:temporal-equilibrium; whether the stated difference (Lean r >= 0 vs
+     the manuscript's r > 0) and the outside inputs are accurate.
+  3. claim "PARA-DirectEvent": the DirectEvent module paragraph: accurate,
+     no overclaim, and no remaining attribution of kappa > 1 to
+     L:exact-canonical-scaling.
+  4. claim "PARA-LocalFlow": the LocalFlow module paragraph: accurate, no
+     overclaim, exception described correctly.
+  5. claim "LEDGER-INDEX": the "Index by label" table agrees with the
+     per-module tables for all 88 rows; every label cited anywhere in the
+     ledger exists in the manuscript (search the \label commands of all
+     50 files); coverage.yaml's rows for E:kappa, L:temporal-equilibrium and
+     L:exact-canonical-scaling name the right claims.
+  6. claim "LEDGER-TOTALS": 88 = 82 theorems + 6 definitions; 40 labelled,
+     48 unlabelled, counted from the per-module tables.
+
+COMPLETE-READING REQUIREMENT (binding)
+A. Read completely, in consecutive ranges with no gaps:
+   candidate/statement-ledger.md, lean/claims.yaml, lean/coverage.yaml,
+   lean/StratonovichHAMAudit/DirectEvent.lean, lean/StratonovichHAMAudit/LocalFlow.lean,
+   manuscript/notes/integrated_exact_scaling.tex,
+   manuscript/notes/integrated_point_transfer.tex,
+   manuscript/notes/integrated_temporal_equilibrium.tex,
+   and lines 160-200 of manuscript/notes/notes_stratonovich_ham_second_moment.tex
+   (H:homog and E:kappa).
+B. Other files: search as needed for item 5 and read matches in context.
+C. If A is incomplete, mark affected checks INCONCLUSIVE and give
+   confidence medium or low.
+
+REPORT FORMAT (strict; the report is machine-validated)
+Return ONLY the JSON object: no text before or after it, no code fence.
+Use exactly the fields of the schema "subscription-review-report/1".
+- "checks": exactly the six objects above, in order, with the claim strings
+  given. verdict one of PASS, PASS_WITH_NOTES, FAIL, INCONCLUSIVE, PARTIAL
+  (PASS: correct; PASS_WITH_NOTES: correct with a minor wording point
+  reported as a minor finding; PARTIAL: material imprecision; FAIL: wrong;
+  INCONCLUSIVE: not checkable). reason: evidence with file:line.
+- "findings": fatal = wrong mapping or misstatement a citing reader would be
+  misled by; major = material imprecision; minor = wording. Each string
+  starts with an ID (C1, C2, ...), names the item, quotes Lean and TeX with
+  file:line, and gives the exact ledger fix.
+- "required_repairs": only changes that must be made before the ledger can
+  be cited as a correct correspondence record.
+- "source_coverage": every file read, exact line ranges, "complete" or
+  "partial".
+- "verdict": PASS or PASS_WITH_NOTES only if fatal, major and
+  required_repairs are empty and every check is PASS or PASS_WITH_NOTES.
+- "confidence": high only if requirement A is complete.

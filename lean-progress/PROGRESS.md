@@ -86,9 +86,15 @@
   repaired at companion 435fdb0 (40 labelled / 48 unlabelled; coverage
   24+4). Gate NOT closed: no accepted receipt. Record:
   reviews/2026-11-10-lean-ledger-codex-split/ (JOIN.md, ADJUDICATION.md).
-- **Next:** narrow successor confirmation of the changed rows at 435fdb0
-  with an accepted receipt (Le decides whether it plus the join suffices);
-  human read (A1) still recommended;
+- **Narrow confirmation (2026-11-10):** Codex GPT-6.1-Sol at companion
+  48ce162 over manuscript ba01d98, six checks (two repaired rows, DirectEvent
+  and LocalFlow paragraphs, index, totals): PASS/high, 0 findings,
+  ACCEPTED receipt. Script: the other 86 rows are byte-identical to 0eb9403,
+  where they passed under complete reading. All 88 rows now covered; closing
+  record reviews/2026-11-10-lean-ledger-codex-confirm/ADJUDICATION.md.
+  Documented conjunction, not a compose certificate.
+- **Next:** Le decides whether this closes the correspondence gate; a human
+  statement read (A1) remains recommended;
   wave L1 (G0 pair-partition counts) when opened.
 
 - **Standalone local checks (current, 2026-11-09):** 87 accepted finite
