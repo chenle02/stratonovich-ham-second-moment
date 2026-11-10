@@ -1,8 +1,8 @@
 # STATUS DIGEST — read this first, then the tail of Progress.md
 
 State as of the November 9 literature revision (baseline `3a94ff9` plus
-Agent #16's Lean-header correction `037caa6`); Lean and wiki rows checked
-against their sources the same day. This is a **derived summary**, not an
+Agent #16's Lean-header correction `037caa6`); Lean row updated from Agent
+#22's companion receipt the same day. This is a **derived summary**, not an
 authority. If it conflicts with `Progress.md` (workflow authority) or
 `PROJECT-GOAL.md` (completion contract), those win; fix this file.
 Update it whenever a gate below changes state.
@@ -42,7 +42,7 @@ proofs / 241 declarations, clean build (0 err / 0 undef / 0 overfull).
 | 7 | Fresh independent cold read | Not started | — |
 | 8 | Clean build + committed PDF | **PASS** for current bytes | `reviews/2026-11-09-literature-review/` |
 | 9 | Delivery: Progress, wiki status, handoff, <HUB> sync | Git synced. **Wiki project page STALE**: `updated: 2026-11-03`, still describes the 257-page/213-proof candidate and MAIN INCONCLUSIVE/low; needs a status-only refresh through the wiki ticket workflow | `../SPDEs-wiki/content/projects/stratonovich-ham-second-moment.md` |
-| L | Lean | 87 accepted local facts / 26 seams (latest log entry); official wave L0 PROPOSED, no companion package (decision point 4). Agent #16 refreshed the Current header at 037caa6; the historical 80/22 snapshot is superseded | `lean-progress/PROGRESS.md` (last 2026-11-09 entry) |
+| L | Lean | Private development: 87 accepted local facts / 26 seams. **Companion created (Le's instruction, 2026-11-09), L0 CLOSED:** `chenle02/stratonovich-ham-second-moment-lean`, PRIVATE until the public flip; verified commit `38d16163` (lean-pkg receipt, registry verified-private). Public counts: 23 of 26 seams, 82 theorems, 43 defs, 88 claims = 78 audited theorems + 6 audited defs + 4 helpers; 68 negative controls all rejected; 0 sorry; axioms propext, Classical.choice, Quot.sound only. 3 seams (9 facts) withheld: they depend on the private gaussian-chaos-lean. Coverage: 4 main theorems outside Lean, 21 labelled results with analytic inputs supplied. Only 35 of 88 claims map to a manuscript label (53 unlabelled, flagged to #3) | `lean-progress/PROGRESS.md` (f4aab9a); companion `docs/statement-ledger.md`, `coverage.yaml` |
 
 ## Standing constraints (do not violate)
 
@@ -55,7 +55,9 @@ proofs / 241 declarations, clean build (0 err / 0 undef / 0 overfull).
 2. Adopt or reject the visual MEDIUM policy proposal (gate 5).
 3. Path to a HIGH whole-math verdict without unchanged retries (gate 2),
    and when the Kimi hold ends (gate 3).
-4. Lean companion creation (decision point 4).
+4. Lean companion: created and verified (decision point 4 settled by Le,
+   2026-11-09). Open: labels for the 53 unlabelled claims (#3), and the
+   community Lean effort (release design D9).
 
 ## Where to look
 
