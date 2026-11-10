@@ -18385,3 +18385,14 @@ unlabelled rows;28 coverage rows (24 inputs-supplied,4 outside). These are not
 whole-proof counts. Agent22 owns the successor review and current ledger state;
 its split-review files remain untracked and were not staged here. Gate remains
 open. No manuscript, Lean theorem, PDF, or scientific acceptance changed.
+
+### 2026-11-10 — user-supplied missing reference PDF
+
+Sent Le the requested citation via Auburn Outlook and verified exact Sent
+From/To/CC, body, subject and absence of attachments. Le then supplied the
+59-page published Brzezniak–Cerrai PDF in Downloads. Title, DOI and SHA-256
+were verified; retained privately at ddafa84 and checked byte-identical on
+<HUB>. Replaced the pending acquisition request with a source-supplied
+ingestion request, exact receipt identity in the private queue ledger.
+The PDF is acquired; six-repository ingestion remains pending. No direct
+six-repository write or unrequested correspondence occurred.
