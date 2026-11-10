@@ -62,6 +62,9 @@ run only, the Kimi-K3 correspondence review of the Lean statement ledger
 ~/.local/state/Le-AI-Lab/stratonovich-lean-ledger-kimi-v1/attempt-01,
 launched 07:11 before the hold was noticed, then explicitly continued by Le).
 All other Kimi requests, probes and retries remain on hold.
+**Superseded (2026-11-10):** Le later told Agent #16 "Kimi is available now",
+which lifts the hold generally; see the entry "2026-11-10: Le lifts the
+Kimi hold (Agent #16)". This one-run exception is kept as history.
 See the November9 review directories and current literal HANDOFF.md.
 
 ## 2026-11-06: third body-band visual batch adjudicated
@@ -18296,9 +18299,11 @@ Le stated in the Agent #16 session: "Kimi is available now". This ends the
 temporary hold of 2026-11-09 (ed19d77). Kimi-K3 requests are allowed again
 under the normal review protocol: frozen inputs, read-only execution, and
 no confidence-only retries of unchanged inputs. Agent #22's Kimi-K3 Lean
-ledger correspondence review over 669ccc9, which started before this
-statement was recorded, may proceed. Agent #16 had asked it to stop
-pending confirmation; that request is withdrawn. The Kimi-K3 whole-paper
+ledger correspondence review over 669ccc9 (attempt-01, never stopped)
+continues. Le had earlier, in #22's session, lifted the hold for that one
+run only; the general lift here supersedes that exception, which is now
+marked superseded in place. Agent #16's request to stop the run is
+withdrawn. The Kimi-K3 whole-paper
 HIGH review (gate 3) is now possible but not started; no review is
 dispatched by this entry. HANDOFF, STATUS-DIGEST and
 notes/WORKING-DRAFT-STATUS.md updated accordingly.
