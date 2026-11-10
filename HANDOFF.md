@@ -33,8 +33,13 @@ conversation but not implemented in the project contract or a private companion.
    notes/LITERATURE-REVIEW.md for the source/result and contribution crosswalk.
 3. The previous 263-page baseline remains recoverable at 11e009a, at the same
    notes paths. Existing review receipts retain their original version bindings.
-4. Latest accepted local Lean total is 87 facts in 26 groups. Official companion
-   wave remains L0/PROPOSED; no separate project package or cluster job exists.
+4. Lean: 87 accepted local facts in 26 groups. L0 CLOSED: the private companion
+   `chenle02/stratonovich-ham-second-moment-lean` (owner Agent #22) is verified
+   at 38d16163 and re-anchored at 4bdffba to manuscript 669ccc9 (cf979d6 kept
+   as history). Public: 23 of 26 seams, 78 audited facts; 33 claim rows map to
+   manuscript labels. Ledger correspondence is not yet accepted (DeepSeek
+   MEDIUM; Kimi-K3 review running). No cluster job. Community work packages
+   are drafted on its docs/community branch (release design D9).
 5. Kimi hold LIFTED by Le on 2026-11-10 ("Kimi is available now"). Kimi-K3
    requests are allowed again under the normal review protocol; no
    confidence-only retries of unchanged inputs.
