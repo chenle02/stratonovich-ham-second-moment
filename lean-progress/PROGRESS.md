@@ -93,8 +93,15 @@
   where they passed under complete reading. All 88 rows now covered; closing
   record reviews/2026-11-10-lean-ledger-codex-confirm/ADJUDICATION.md.
   Documented conjunction, not a compose certificate.
-- **Next:** Le decides whether this closes the correspondence gate; a human
-  statement read (A1) remains recommended;
+- **LEDGER CORRESPONDENCE GATE: CLOSED (Le, 2026-11-10)** at companion
+  48ce162 over manuscript ba01d98. Le accepted the documented conjunction
+  (split complete-reading review of the 86 unchanged rows + the accepted
+  narrow confirmation receipt of the repairs) as closing the gate. Scope:
+  AI statement-to-manuscript correspondence of docs/statement-ledger.md
+  (40 labelled / 48 unlabelled). Not human verification; analytic inputs
+  outside Lean are not verified; any later ledger or cited-label change
+  needs a successor review.
+- **Next:** human statement read (work package A1) still recommended;
   wave L1 (G0 pair-partition counts) when opened.
 
 - **Standalone local checks (current, 2026-11-09):** 87 accepted finite
