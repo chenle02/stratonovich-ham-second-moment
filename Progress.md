@@ -18176,3 +18176,18 @@ resolve to current named destinations or direct page target. Evidence and
 source/PDF hashes in reviews/2026-11-09-reader-current-companion-merge/.
 Historical263+20 pairing and its reports remain unchanged in Git. No new proof
 claim or review-confidence promotion, independent clearance or goal completion.
+
+
+## 2026-11-09: STATUS-DIGEST.md added at Le's request (Claude Code)
+
+Le asked for a one-page digest so Codex and new sessions need not read this
+whole file. STATUS-DIGEST.md summarizes the claimed results, a gate board with
+evidence paths, standing constraints and pending decisions. It is derived:
+this file and PROJECT-GOAL.md win any conflict. The Lean row was checked against
+lean-progress/PROGRESS.md: the latest entry gives 87 local facts/26 seams, L0
+PROPOSED, no companion. Its "Current" header block (80/22) is stale and was not
+edited. The wiki row was checked against the SPDEs-wiki project page: it is
+stale (updated 2026-11-03; 257-page/213-proof candidate, MAIN INCONCLUSIVE/low).
+A status-only wiki refresh is needed through the wiki ticket workflow; it was
+not done here. HANDOFF.md pre-flight and README now point to the digest. No
+manuscript, review, grade, gate or policy change; all gates remain as recorded.

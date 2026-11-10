@@ -23,6 +23,8 @@ conversation but not implemented in the project contract or a private companion.
 
 ## Pre-flight checks
 
+0. Read STATUS-DIGEST.md first: a one-page gate board and constraint list.
+   It is derived; Progress.md wins any conflict.
 1. Read AGENTS.md, PROJECT-GOAL.md, the latest Progress.md entries and
    AI-DEV-HISTORY.md. Inspect both local and <HUB> working trees before edits.
 2. The working 267-page main TeX SHA is
