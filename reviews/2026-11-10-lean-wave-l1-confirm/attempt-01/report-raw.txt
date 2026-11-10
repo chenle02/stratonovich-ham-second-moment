@@ -1,0 +1,191 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "high",
+  "source_coverage": [
+    "PROVENANCE.json:1-300,301-587,588 — complete.",
+    "candidate/statement-ledger.md:1-300,301-600 — complete.",
+    "lean/claims.yaml:1-400,401-789 — complete.",
+    "lean/coverage.yaml:1-348 — complete.",
+    "lean/StratonovichHAMSecondMoment/DriverParameters.lean:1-51 — complete.",
+    "lean/StratonovichHAMSecondMoment/GaussianScalarPowers.lean:1-132 — complete.",
+    "lean/StratonovichHAMSecondMoment/GramScalarAlgebra.lean:1-93 — complete.",
+    "lean/StratonovichHAMSecondMoment/KappaRange.lean:1-42 — complete.",
+    "lean/StratonovichHAMSecondMoment/RayleighTail.lean:1-190 — complete.",
+    "manuscript/notes/integrated_compact_gaussian.tex:1-310,311-617 — complete.",
+    "manuscript/notes/integrated_positive_gram.tex:1-218 — complete.",
+    "manuscript/notes/integrated_actual_operator_driver.tex:1-330,331-655 — complete.",
+    "manuscript/notes/integrated_gaussian_tubes.tex:1-260,261-503 — complete.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:150-200;3827;3831;3862;3869 — partial file; complete required excerpt. Target-label search across all 50 manuscript TeX files returned all 11 relevant labels within the fully read sources or required excerpt."
+  ],
+  "checks": [
+    {
+      "claim": "StratonovichHAMSecondMoment.DriverParameters.Homog: H:homog",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/DriverParameters.lean:20-22 states 'd = 1 ∨ d = 2 ∨ d = 3', '0 < a', 'a < 1', 'a + alpha < 2', and '(0 < alpha ∧ alpha < d) ∨ (alpha = d ∧ d = 1)'. TeX manuscript/notes/notes_stratonovich_ham_second_moment.tex:169-185 gives precisely these numerical hypotheses, with a = alpha_0. The omission of covariance, spectral and scaling data is explicitly identified as a parameter-only generalization in candidate/statement-ledger.md:493-502. lean/claims.yaml:720-726 faithfully summarizes the definition."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.DriverParameters.gamma_interval_nonempty: E:driver-parameters",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/DriverParameters.lean:25-26 assumes 'h : Homog d alpha a' and concludes existence of '0 < γ ∧ γ < min (1 / 2) ((2 - alpha) / 2)'. TeX manuscript/notes/integrated_actual_operator_driver.tex:5-6 retains 'H:homog', and :18-23 gives the identical strict gamma interval and asserts nonemptiness. candidate/statement-ledger.md:493-503 discloses the dropped covariance hypotheses; lean/claims.yaml:727-733 matches the Lean type."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.DriverParameters.theta_beta_interval_nonempty: E:driver-parameters",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/DriverParameters.lean:33-34 assumes 'h : Homog d alpha a' and concludes '∃ θ β', with '1 / 2 < θ ∧ θ < β ∧ β < min (1 - a / 2) ((3 - a - alpha) / 2)'. TeX manuscript/notes/integrated_actual_operator_driver.tex:5-6,18-23 retains H:homog and states the same chain and nonemptiness. The parameter-only generalization is disclosed at candidate/statement-ledger.md:493-498; its row :504 and lean/claims.yaml:734-740 are faithful."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.DriverParameters.parameters_nonempty: E:driver-parameters",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/DriverParameters.lean:44-46 assumes 'h : Homog d alpha a' and concludes simultaneous existence of 'γ θ β' satisfying both strict chains. TeX manuscript/notes/integrated_actual_operator_driver.tex:5-6,18-23 retains H:homog and says 'The strict intervals are nonempty.' Constants, strictness and simultaneous existence agree. candidate/statement-ledger.md:493-505 and lean/claims.yaml:741-747 accurately describe the parameter-only statement."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianScalarPowers.weighted_power: L:gaussian-scalar-powers",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/GaussianScalarPowers.lean:29-31 assumes '0 < θ', 'θ < 1', '0 ≤ u', '0 ≤ v'. TeX manuscript/notes/integrated_compact_gaussian.tex:14-16 states '0 < θ < 1' and 'u,v ≥ 0', with the same weighted-power inequality. candidate/statement-ledger.md:519 and lean/claims.yaml:643-649 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianScalarPowers.integer_power: L:gaussian-scalar-powers",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/GaussianScalarPowers.lean:37-39 uses '(L q : ℕ)', '0 < L', 'q ≤ L', and arbitrary real x,y. TeX manuscript/notes/integrated_compact_gaussian.tex:18-22 uses integers 'L > 0' and '0 ≤ q ≤ L', with real x,y and identical weights and powers; :34-35 explicitly includes endpoint powers with a^0 = 1. candidate/statement-ledger.md:520 and lean/claims.yaml:650-656 are faithful."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianScalarPowers.finite_holder: L:gaussian-scalar-powers",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/GaussianScalarPowers.lean:66-70 assumes a finite set, '1 < m', and '0 ≤ a i', '0 ≤ b i' on it. TeX manuscript/notes/integrated_compact_gaussian.tex:24-25 states finite Hölder for 'nonnegative finite sequences' with exponents m and m/(m-1), 'm > 1'; its normalization proof :37-41 confirms the usual conclusion. Exponents and zero cases agree. candidate/statement-ledger.md:521 and lean/claims.yaml:657-663 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GaussianScalarPowers.expectation_rpow_le: L:gaussian-scalar-powers",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/GaussianScalarPowers.lean:91-94 assumes '[IsProbabilityMeasure μ]', 'Integrable Z μ', '0 ≤ᵐ[μ] Z', and '0 < r < 1'; it proves integrability and the expectation bound. TeX manuscript/notes/integrated_compact_gaussian.tex:25-26 says 'Z ≥ 0 has finite expectation F' and '0 < r < 1'; :41-43 uses 'almost surely' and expectation of the constant one. Thus probability, integrability and almost-everywhere interpretation are genuine implicit conditions, explicitly recorded at candidate/statement-ledger.md:509-522 and lean/claims.yaml:664-670."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GramScalarAlgebra.gram_scalar_algebra_paper: L:gram-scalar-algebra",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/GramScalarAlgebra.lean:82-89 assumes '[CompleteSpace H]', a finite index type, 'C i j = inner ℝ (k i) (k j)', and '0 ≤ C i j'; its scalar component quantifies arbitrary real ell, '0 < w' and '0 ≤ t'. TeX manuscript/notes/integrated_positive_gram.tex:4-6 supplies a real Hilbert space, finite indices and the same Gram hypotheses; :26-36 states all three conclusions with real ell, w > 0, t ≥ 0. The ell_i,b_i families in the score setup do not occur in this lemma's conclusions, and their nonuse is expressly disclosed at candidate/statement-ledger.md:528-532. The row :538 and lean/claims.yaml:776-782 match the wrapper."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GramScalarAlgebra.sqrt_dual: L:gram-scalar-algebra",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/GramScalarAlgebra.lean:32-33 assumes arbitrary real ell, '0 < w', '0 ≤ t'. TeX manuscript/notes/integrated_positive_gram.tex:27-29 says 'For real ell, w > 0 and t ≥ 0' and gives the identical inequality. candidate/statement-ledger.md:539 and lean/claims.yaml:671-677 accurately summarize it; the paragraph :528-532 explains the unused ambient hypotheses."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GramScalarAlgebra.hilbert_square: L:gram-scalar-algebra",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/GramScalarAlgebra.lean:56-59 assumes a real inner product space and arbitrary 'Φ z : H', concluding the equality and ensuing inequality as a conjunction. TeX manuscript/notes/integrated_positive_gram.tex:4,31-34 assumes a real Hilbert space and 'Φ,z ∈ H', with the identical chain and factors 1/2. The completeness generalization is explicit at candidate/statement-ledger.md:528-532; row :540 and lean/claims.yaml:692-698 are faithful."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GramScalarAlgebra.hilbert_square_eq: L:gram-scalar-algebra",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/GramScalarAlgebra.lean:41-43 assumes a real inner product space and 'Φ z : H'. TeX manuscript/notes/integrated_positive_gram.tex:4,31-34 uses a real Hilbert space and 'Φ,z ∈ H'. The equality is identical; dropping completeness is expressly disclosed at candidate/statement-ledger.md:528-532. Row :541 and lean/claims.yaml:678-684 correctly identify only the identity component."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GramScalarAlgebra.hilbert_square_le: L:gram-scalar-algebra",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/GramScalarAlgebra.lean:49-51 assumes a real inner product space and 'Φ z : H', concluding '<Φ,z> - ‖Φ‖²/2 ≤ ‖z‖²/2'. TeX manuscript/notes/integrated_positive_gram.tex:4,31-34 uses a real Hilbert space and gives the same inequality by its equality chain. The disclosed completeness generalization is valid. candidate/statement-ledger.md:542 and lean/claims.yaml:685-691 faithfully describe the inequality component."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.GramScalarAlgebra.gram_identity: L:gram-scalar-algebra",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/GramScalarAlgebra.lean:66-70 assumes finite indices, a real inner product space, 'C i j = inner ℝ (k i) (k j)', and arbitrary real weights. TeX manuscript/notes/integrated_positive_gram.tex:4-6,36 has finite indices, a real Hilbert space, the same definition of C and finite real weights. The norm-square identity is identical. Omitting completeness and entrywise nonnegativity is explicitly disclosed at candidate/statement-ledger.md:528-532. Row :543 and lean/claims.yaml:699-705 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.KappaRange.kappa: E:kappa",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/KappaRange.lean:22 defines '(4 - alpha - alpha0) / (3 - alpha)' without hypotheses. TeX manuscript/notes/notes_stratonovich_ham_second_moment.tex:188-190 defines the identical expression in the standing H:homog context :169-185. candidate/statement-ledger.md:555 and lean/claims.yaml:706-712 claim the formula, not an unconditional range; the following theorem supplies the admissible-domain range."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.KappaRange.kappa_mem_Ioo: E:kappa",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/KappaRange.lean:26-29 assumes 'd = 1 ∨ d = 2 ∨ d = 3', '0 < alpha0 < 1', 'alpha0 + alpha < 2', and '(0 < alpha ∧ alpha < d) ∨ (alpha = d ∧ d = 1)', concluding membership in 'Set.Ioo 1 2'. TeX manuscript/notes/notes_stratonovich_ham_second_moment.tex:169-190 supplies those parameters plus covariance data and states κ ∈ (1,2). candidate/statement-ledger.md:547-556 accurately discloses the parameter-only generalization; lean/claims.yaml:713-719 matches."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RayleighTail.rayleigh_tail_paper: L:tube-rayleigh-tail",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/RayleighTail.lean:178-185 assumes 'Measurable G', growth for '0 ≤ r', '0 ≤ C', '1 < ν < 2', '0 < δ', 'δ < 1', '0 < M', and '4 * C ≤ M ^ (2 - ν)'. TeX manuscript/notes/integrated_gaussian_tubes.tex:8-9 fixes '0 < δ < 1'; :455-461 gives Borel G, the same growth, exponent and cutoff conditions, and exactly '4 exp((A0-M²/4)/δ)'. The halfline domain is supported by :182, and head finiteness by :476-477. candidate/statement-ledger.md:560-572 and lean/claims.yaml:783-789 accurately disclose the real-domain representation and omitted application."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RayleighTail.rayleigh_tail: L:tube-rayleigh-tail",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/RayleighTail.lean:91-97 assumes measurable G, growth on '0 ≤ r', '0 ≤ C', '1 < ν < 2', '0 < δ', '0 < M', and the same cutoff. TeX manuscript/notes/integrated_gaussian_tubes.tex:8-9,455-461 has the additional standing 'δ < 1', with identical integral and constant 4. candidate/statement-ledger.md:564-573 explicitly identifies this generalization and the unformalized application. lean/claims.yaml:769-775 faithfully summarizes the type."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RayleighTail.rayleigh_head_integrable: L:tube-rayleigh-tail",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/RayleighTail.lean:146-149 assumes 'Measurable G', growth on '0 ≤ r', '0 ≤ C', '1 < ν', '0 < δ', and '0 < M'. TeX manuscript/notes/integrated_gaussian_tubes.tex:455-457,476-477 asserts finiteness on [0,M] under the lemma's stronger hypotheses, using 'G(r) ≤ A0 + C M^ν'. candidate/statement-ledger.md:574 expressly notes that ν < 2 and the cutoff are unnecessary; :564 identifies the delta generalization. lean/claims.yaml:762-768 is faithful."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RayleighTail.cutoff_split: L:tube-rayleigh-tail",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/RayleighTail.lean:32-35 assumes '0 < M', 'M ≤ r', '0 ≤ C', '1 < ν', 'ν < 2', and '4 * C ≤ M ^ (2 - ν)'. TeX manuscript/notes/integrated_gaussian_tubes.tex:468-472 explicitly lists these exact scalar conditions and concludes 'Cr^ν-r²/2 ≤ -M²/8-r²/8'. candidate/statement-ledger.md:575 and lean/claims.yaml:748-754 correctly map this to the proof step."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RayleighTail.gaussian_weight_tail: L:tube-rayleigh-tail",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/RayleighTail.lean:54-57 assumes '0 < δ', '0 ≤ M', and proves integrability and integral '4 * exp(-M²/(8δ))'. TeX manuscript/notes/integrated_gaussian_tubes.tex:8-9,457,472-475 uses '0 < δ < 1', 'M > 0' and the same antiderivative and tail value. candidate/statement-ledger.md:564,576 and lean/claims.yaml:755-761 explicitly state the broader endpoint and delta ranges. Open versus closed integration endpoints do not change the Lebesgue integral."
+    },
+    {
+      "claim": "PARA-DriverParameters",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:493-498 cites the correct source, whose manuscript/notes/integrated_actual_operator_driver.tex:5-6 retains H:homog and :18-23 asserts nonemptiness. The paragraph correctly describes lean/StratonovichHAMSecondMoment/DriverParameters.lean:20-46 as a numerical generalization and accurately identifies the parameters actually used."
+    },
+    {
+      "claim": "PARA-GaussianScalarPowers",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:509-515 accurately covers all four parts of manuscript/notes/integrated_compact_gaussian.tex:13-44 and lean/StratonovichHAMSecondMoment/GaussianScalarPowers.lean:29-94. Probability, finite expectation as integrability, almost-everywhere nonnegativity and the proved power integrability are justified by the TeX proof, not merely asserted by the ledger."
+    },
+    {
+      "claim": "PARA-GramScalarAlgebra",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:526-534 accurately identifies manuscript/notes/integrated_positive_gram.tex:4-6,26-49, the generalized inner-product statements, and the Hilbert/nonnegative-Gram wrapper at lean/StratonovichHAMSecondMoment/GramScalarAlgebra.lean:82-89. It expressly identifies the unused score parameters ell_i,b_i; the lemma itself quantifies an unrestricted scalar ell."
+    },
+    {
+      "claim": "PARA-KappaRange",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:547-551 accurately maps the formula and both strict inequalities to manuscript/notes/notes_stratonovich_ham_second_moment.tex:169-190, and honestly describes lean/StratonovichHAMSecondMoment/KappaRange.lean:22-29 as a parameter-only generalization."
+    },
+    {
+      "claim": "PARA-RayleighTail",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:560-568 accurately distinguishes the general delta-positive results from the delta-less-than-one wrapper, explains the domain representation, includes head and tail integrability, and excludes the application at manuscript/notes/integrated_gaussian_tubes.tex:463-464,477-478. The Lean types at lean/StratonovichHAMSecondMoment/RayleighTail.lean:91-97,146-149,178-185 support these statements."
+    },
+    {
+      "claim": "LEDGER-INDEX",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:97-102 lists exactly the 21 declarations in the five module tables :502-576, with matching labels. An unrestricted target-label search across all 50 manuscript TeX files found every relevant label: manuscript/notes/integrated_compact_gaussian.tex:13,15,20; manuscript/notes/integrated_positive_gram.tex:26,28,32; manuscript/notes/integrated_actual_operator_driver.tex:18; manuscript/notes/integrated_gaussian_tubes.tex:455,458; manuscript/notes/notes_stratonovich_ham_second_moment.tex:169,189."
+    },
+    {
+      "claim": "LEDGER-TOTALS",
+      "verdict": "PASS",
+      "reason": "Counting the declaration rows in all per-module tables of candidate/statement-ledger.md:108-576 gives 109 rows: 8 definitions and 101 theorems, with 61 labelled and 48 unlabelled. The five new sections contribute 21 rows, including two definitions. These counts agree with :105-106 and the kinds in lean/claims.yaml:1-789."
+    },
+    {
+      "claim": "COVERAGE-ROWS",
+      "verdict": "FAIL",
+      "reason": "The Gaussian, Gram and Rayleigh rows at lean/coverage.yaml:101-117,185-194 cite appropriate declarations and accurately scope the Rayleigh omission. However, E:driver-parameters at :27-35 and E:kappa at :36-44 are both classified 'same-assumptions' while citing only parameter-only generalizations. Their notes acknowledge the discrepancy but do not cure the false class under the review contract. Neither cited declaration includes the manuscript's covariance hypotheses. See W1 and W2."
+    },
+    {
+      "claim": "SCOPE-PROSE",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:29-42 accurately distinguishes Gaussian manuscript hypotheses, generalized Gram/Rayleigh results with paper wrappers, and the two parameter-only generalizations. It expressly excludes the Rayleigh application and explains implicit analytic side conditions. This prose is accurate independently of the contradictory coverage classifications identified in W1 and W2."
+    }
+  ],
+  "findings": {
+    "fatal": [
+      "W1 — E:driver-parameters coverage misclassification. lean/coverage.yaml:31 says 'class: same-assumptions' and :33 cites parameters_nonempty, but Lean lean/StratonovichHAMSecondMoment/DriverParameters.lean:44 assumes only '(h : Homog d alpha a)', whose definition :20-22 contains numerical conditions alone. TeX manuscript/notes/integrated_actual_operator_driver.tex:5-6 says 'Retain Hypothesis H:homog'; manuscript/notes/notes_stratonovich_ham_second_moment.tex:171-180 additionally requires covariance and spectral measures and covariance scaling. The coverage note :34-35 correctly calls this a generalization, contradicting its class. Fix the coverage classification to explicitly represent a parameter-only generalization rather than same-assumptions, or cite a new wrapper that actually states the full manuscript hypotheses.",
+      "W2 — E:kappa coverage misclassification. lean/coverage.yaml:42 says 'class: same-assumptions' and :41 cites kappa_mem_Ioo. Lean lean/StratonovichHAMSecondMoment/KappaRange.lean:26-28 assumes only 'hd', 'h0', 'h1', 'hthr' and 'halpha', all numerical. TeX manuscript/notes/notes_stratonovich_ham_second_moment.tex:169-190 states the exponent range in the standing homogeneous-covariance context, including the measure and scaling hypotheses at :171-180. The coverage note :43-44 acknowledges that those hypotheses are not modelled. Fix the coverage classification to explicitly represent a parameter-only generalization rather than same-assumptions, or cite a new wrapper with the full manuscript hypotheses."
+    ],
+    "major": [],
+    "minor": []
+  },
+  "required_repairs": [
+    "Resolve W1: remove the false same-assumptions classification for E:driver-parameters by classifying the cited statement as a parameter-only generalization, or supply and cite a genuinely manuscript-hypothesis wrapper.",
+    "Resolve W2: remove the false same-assumptions classification for E:kappa by classifying the cited statement as a parameter-only generalization, or supply and cite a genuinely manuscript-hypothesis wrapper."
+  ],
+  "limitations": [
+    "All complete-reading requirement A sources and the full required main-manuscript excerpt were read. The remainder of the main manuscript and other TeX inputs were not substantively reviewed; all 50 inputs were searched for the relevant labels.",
+    "Compilation, absence of sorry and the axiom restriction were supplied premises, not independently reproduced. This review concerns correspondence, not kernel proof verification.",
+    "The provenance record was read; its supervisor-checked byte binding was accepted rather than independently reconstructed.",
+    "This AI review is neither human verification nor a novelty audit. Previously reviewed ledger rows were read for totals but not re-audited for mathematical correspondence."
+  ]
+}
