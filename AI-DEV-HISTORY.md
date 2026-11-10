@@ -425,3 +425,14 @@ alongside another agent's private draft changes, because an ordinary commit
 captured the shared index. The committed artifact hashes were independently
 checked and match final validation. The mixed commit is preserved as history;
 it is not presented as a manuscript-only atomic commit.
+
+### Figure1.3 and reusable lessons
+
+After Le identified Figure1.3 as too plain, its uniform text-box grid was
+replaced with distinct product columns, temporal covariance sketches, clearer
+result headings and a separate contribution band. Rendered review caught
+overrun that clean LaTeX logs did not; shorter text and flush-left paragraphs
+resolved it. The final book stays293pages and all246 reader links resolve.
+The mathematical claims and review states are unchanged. The session retro
+updated three existing Le-AI-Lab skills at3f9e25b for shared-index commits,
+careful Lean mappings and separate figure semantics/layout/design checks.

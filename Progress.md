@@ -18396,3 +18396,20 @@ were verified; retained privately at ddafa84 and checked byte-identical on
 ingestion request, exact receipt identity in the private queue ledger.
 The PDF is acquired; six-repository ingestion remains pending. No direct
 six-repository write or unrequested correspondence occurred.
+
+### 2026-11-10 — redesign literature Figure1.3
+
+Le asked for more engaging design, naming Figure1.3. Replaced the uniform
+box grid with distinct product columns, schematic temporal covariance glyphs,
+result headings and a separate current-contribution band. Preserved source
+conditions and the distinction between written claims and review acceptance.
+The first render exposed overflow despite clean logs; shortened and spaced
+the cells, then inspected the final integrated page. Final build clean,293
+pages,246 valid reader links; no mathematical source or reader map changed.
+Updated validation pins and retained the previous source binding.
+
+The requested retro updated three existing canonical skills in Le-AI-Lab
+commit3f9e25b: shared-index commit safety, equivalent-form Lean correspondence
+and separate semantic/layout/design figure checks. Description and skill gates
+passed3/3; discovery, runtime synchronization and strict Codex budget checks
+passed. No scientific gate is upgraded by either editorial work or retro.
