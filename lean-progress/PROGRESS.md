@@ -23,7 +23,10 @@
   (normalized-coordinate, vector-gaussian-projection, colored-vector-word;
   9 facts) are WITHHELD by Le's 2026-11-09 decision until gaussian-chaos-lean
   is licensed and public; they stay here in local-checks.
-- **Manuscript anchor:** revision 669ccc9 (presentation-only successor of
+- **Manuscript anchor:** revision ba01d98 (2026-11-10; presentation-only
+  successor of 669ccc9 with the expanded literature review and diagrams;
+  50 TeX inputs, 293-page PDF; companion 48ce162 re-anchored, all 56 cited
+  labels and their math unchanged). Previous: revision 669ccc9 (presentation-only successor of
   cf979d6), pinned in the companion's provenance/manuscript-anchor.json at
   companion 4bdffba: 41 TeX inputs (28 core + 12 figures + styles) and the
   275-page PDF; cf979d6 kept under history. Script check: all 46 cited
