@@ -297,3 +297,16 @@ branches are retained. The chronology files remain the explicitly bounded
 pre-checkpoint snapshot above; use Git itself for subsequent commits and the
 merged master-only history. This consolidation changes no scientific acceptance
 state and leaves the source, PDF and earlier review evidence unchanged.
+
+## Editorial reader brought into the primary branch
+
+Le subsequently authorized updating and merging the editorial reader. Its two
+original commits remain parents in the history. The November 9 reader still has
+20 pages, now paired with the267-page candidate (287pages combined). Sixty-four
+of the68 old embedded labels had stale numbers/pages; all were refreshed and
+one pairing-envelope label added, giving69 matched labels. All209 external PDF
+links resolve in the current companion. The source-bound explanation now cites
+the self-contained product envelope rather than importing that entire step
+from Chen. Root checked pages1/4/5/19; builds are clean, the technical PDF is
+byte-identical, and independent acceptance is unchanged. See
+reviews/2026-11-09-reader-current-companion-merge/ for the exact validation.

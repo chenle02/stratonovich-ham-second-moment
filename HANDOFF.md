@@ -12,7 +12,7 @@ both archived pre-merge handoffs. Merging Git branches is not scientific adoptio
 Use this canonical repository on `master`. It now contains the working manuscript,
 Lean local checks, reviews and detailed AI development history. No external
 research-worktree cd is needed. The research branch is retained for provenance;
-the editorial reader branch remains separate and preserved.
+the editorial reader history is now also merged; its branch remains preserved.
 
 Le's latest requests were to save the working TeX/PDF, preserve a detailed human
 AI development history, and merge the research branch into the primary branch.
@@ -69,3 +69,10 @@ both parents preserved; it does not squash or delete branches. The earlier
 master and research handoffs are retained verbatim under
 handoffs/2026-11-09-before-master-consolidation/. They are historical snapshots,
 not current execution instructions. Review and source files retain exact bytes.
+
+Editorial update: Le authorized aligning and merging the20-page reader with
+the267-page companion. Both PDFs are now under notes/ on master. Reader guide:
+notes/README-reader.md. Current validation:
+reviews/2026-11-09-reader-current-companion-merge/. All69 technical labels and
+209 external PDF links match; no independent acceptance change. The original
+editorial branch is retained until Le requests removal.

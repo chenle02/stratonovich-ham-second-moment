@@ -18158,3 +18158,21 @@ The source/PDF and all prior review evidence remain byte-identical to bf9c65b.
 The existing clean-build receipt therefore remains applicable; no new TeX edit
 or mathematical acceptance occurs. Research remains incomplete; no review
 restart, new goal, companion, Kimi probe or policy change is authorized here.
+
+
+## 2026-11-09: editorial reader aligned and merged at Le's request
+
+Le authorized the proposed update and merge. Merge preserves both original
+editorial commits without squashing. Reader remains20pages paired now with267
+technical pages (287combined), not a standalone20-page proof. All68 old embedded
+labels refreshed; add pairing-envelope label for69 matched numbers/pages.
+Explain finite product maximum/kernel-dependent assignment and source context
+instead of importing the entire bound. Add draft-status notice. No main proof
+or main TeX/PDF bytes changed. Root checked rendered pages1/4/5/19.
+
+Main rebuilt with frozen date/bbl to exactly the prior PDF hash; reader formatted
+and rebuilt cleanly:0errors/undefined/overfull/tabs. All209 external PDF links
+resolve to current named destinations or direct page target. Evidence and
+source/PDF hashes in reviews/2026-11-09-reader-current-companion-merge/.
+Historical263+20 pairing and its reports remain unchanged in Git. No new proof
+claim or review-confidence promotion, independent clearance or goal completion.
