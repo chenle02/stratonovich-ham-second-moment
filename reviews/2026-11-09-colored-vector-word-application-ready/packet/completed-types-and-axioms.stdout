@@ -1,0 +1,26 @@
+@StratonovichHAMAudit.ColoredWord.coordinate_realize : ∀ {C E : Type} [DecidableEq C] [inst : NormedAddCommGroup E]
+  [inst_1 : InnerProductSpace ℝ E] [CompleteSpace E] {m : C → ℕ} (K : (c : C) → Fin (m c) → E →L[ℝ] E) (c : C)
+  (f : StratonovichHAMAudit.ColoredWord.Poly m E),
+  MeasureTheory.MemLp (StratonovichHAMAudit.ColoredWord.signal K c ↑↑(StratonovichHAMAudit.VectorProjection.realize f))
+      2 (GaussianChaos.GaussianProduct.noise (StratonovichHAMAudit.ColoredWord.Index m)) ∧
+    StratonovichHAMAudit.ColoredWord.coordinate K c (StratonovichHAMAudit.VectorProjection.realize f) =
+      StratonovichHAMAudit.VectorProjection.realize (StratonovichHAMAudit.ColoredWord.insertCoeff K c f)
+'StratonovichHAMAudit.ColoredWord.coordinate_realize' depends on axioms: [propext, Classical.choice, Quot.sound]
+@StratonovichHAMAudit.ColoredWord.word_admissible : ∀ {C B E : Type} [inst : DecidableEq C]
+  [inst_1 : NormedAddCommGroup E] [inst_2 : InnerProductSpace ℝ E] [inst_3 : CompleteSpace E] {m : C → ℕ}
+  (K : (c : C) → Fin (m c) → E →L[ℝ] E) (F : B → E →L[ℝ] E) (F₀ : E →L[ℝ] E) (v : E) (N : C → ℕ) (w : List (C × B))
+  (c : C),
+  MeasureTheory.MemLp
+      (StratonovichHAMAudit.ColoredWord.signal K c ↑↑(StratonovichHAMAudit.ColoredWord.rawVector K F F₀ v w)) 2
+      (GaussianChaos.GaussianProduct.noise (StratonovichHAMAudit.ColoredWord.Index m)) ∧
+    MeasureTheory.MemLp
+      (StratonovichHAMAudit.ColoredWord.signal K c
+        ↑↑((StratonovichHAMAudit.ColoredWord.project N) (StratonovichHAMAudit.ColoredWord.cutVector K F F₀ v N w)))
+      2 (GaussianChaos.GaussianProduct.noise (StratonovichHAMAudit.ColoredWord.Index m))
+'StratonovichHAMAudit.ColoredWord.word_admissible' depends on axioms: [propext, Classical.choice, Quot.sound]
+@StratonovichHAMAudit.ColoredWord.word_cutoff : ∀ {C B E : Type} [inst : DecidableEq C] [inst_1 : NormedAddCommGroup E]
+  [inst_2 : InnerProductSpace ℝ E] [inst_3 : CompleteSpace E] {m : C → ℕ} (K : (c : C) → Fin (m c) → E →L[ℝ] E)
+  (F : B → E →L[ℝ] E) (F₀ : E →L[ℝ] E) (v : E) (N : C → ℕ) (w : List (C × B)),
+  (∀ (c : C), StratonovichHAMAudit.HermiteWord.counts w c ≤ N c) →
+    StratonovichHAMAudit.ColoredWord.cutVector K F F₀ v N w = StratonovichHAMAudit.ColoredWord.rawVector K F F₀ v w
+'StratonovichHAMAudit.ColoredWord.word_cutoff' depends on axioms: [propext, Classical.choice, Quot.sound]

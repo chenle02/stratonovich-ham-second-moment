@@ -1,0 +1,401 @@
+import HermiteWord
+import NormalizedCoordinate
+import VectorProjection
+
+set_option autoImplicit false
+
+noncomputable section
+namespace StratonovichHAMAudit.ColoredWord
+
+open MeasureTheory GaussianChaos.GaussianProduct
+open StratonovichHAMAudit.VectorProjection
+
+variable {C B E : Type} [DecidableEq C]
+variable [NormedAddCommGroup E] [InnerProductSpace ℝ E] [CompleteSpace E]
+
+abbrev Index (m : C → ℕ) := Σ c, Fin (m c)
+abbrev Poly (m : C → ℕ) (E : Type) [Zero E] := (Index m →₀ ℕ) →₀ E
+
+/-- The canonical polynomial representative, not an arbitrary chosen Lp representative. -/
+def polyValue {m : C → ℕ} (f : Poly m E) (ω : Index m → ℝ) : E :=
+  f.sum (fun ν x => (GaussianChaos.WienerChaos.Hm ν ω /
+    Real.sqrt (GaussianChaos.WienerChaos.mfact ν)) • x)
+
+def vacuum (m : C → ℕ) (x : E) : Poly m E := Finsupp.single 0 x
+
+def coeffFrame {m : C → ℕ} (F : E →L[ℝ] E) (f : Poly m E) : Poly m E :=
+  f.mapRange F (map_zero F)
+
+def insertCoeff {m : C → ℕ} (K : ∀ c, Fin (m c) → E →L[ℝ] E)
+    (c : C) (f : Poly m E) : Poly m E := by
+  classical
+  exact f.sum (fun ν x => ∑ j : Fin (m c),
+    (Finsupp.single (ν + Finsupp.single ⟨c,j⟩ 1)
+      (Real.sqrt ((ν ⟨c,j⟩ : ℝ) + 1) • K c j x) +
+    Finsupp.single (ν - Finsupp.single ⟨c,j⟩ 1)
+      (Real.sqrt (ν ⟨c,j⟩ : ℝ) • K c j x)))
+
+def signal {m : C → ℕ} (K : ∀ c, Fin (m c) → E →L[ℝ] E)
+    (c : C) (g : (Index m → ℝ) → E) : (Index m → ℝ) → E :=
+  fun ω => ∑ j : Fin (m c), ω ⟨c,j⟩ • K c j (g ω)
+
+/-- Multiplication on its natural L2 domain; totalized by zero elsewhere.
+The proposed domain theorems must prove this fallback NEVER occurs in either finite word. -/
+def coordinate {m : C → ℕ} (K : ∀ c, Fin (m c) → E →L[ℝ] E)
+    (c : C) (g : Lp E 2 (noise (Index m))) : Lp E 2 (noise (Index m)) := by
+  classical
+  exact if h : MemLp (signal K c g) 2 (noise (Index m)) then h.toLp _ else 0
+
+def project {m : C → ℕ} (N : C → ℕ) :
+    Lp E 2 (noise (Index m)) →L[ℝ] Lp E 2 (noise (Index m)) :=
+  (cutoffSpace (E := E) (colorLow Sigma.fst N)).toSubmodule.starProjection
+
+def rawCoeff {m : C → ℕ} (K : ∀ c, Fin (m c) → E →L[ℝ] E)
+    (F : B → E →L[ℝ] E) (F₀ : E →L[ℝ] E) (v : E) (w : List (C × B)) : Poly m E :=
+  HermiteWord.raw (insertCoeff K) (fun b => coeffFrame (F b)) (vacuum m (F₀ v)) w
+
+def cutCoeff {m : C → ℕ} (K : ∀ c, Fin (m c) → E →L[ℝ] E)
+    (F : B → E →L[ℝ] E) (F₀ : E →L[ℝ] E) (v : E) (N : C → ℕ)
+    (w : List (C × B)) : Poly m E :=
+  HermiteWord.cut (VectorProjection.cut (colorLow Sigma.fst N)) (insertCoeff K)
+    (fun b => coeffFrame (F b)) (vacuum m (F₀ v)) w
+
+def rawVector {m : C → ℕ} (K : ∀ c, Fin (m c) → E →L[ℝ] E)
+    (F : B → E →L[ℝ] E) (F₀ : E →L[ℝ] E) (v : E) : List (C × B) → Lp E 2 (noise (Index m))
+  | [] => realize (vacuum m (F₀ v))
+  | (c,b) :: w => (F b).compLp (coordinate K c (rawVector K F F₀ v w))
+
+def cutVector {m : C → ℕ} (K : ∀ c, Fin (m c) → E →L[ℝ] E)
+    (F : B → E →L[ℝ] E) (F₀ : E →L[ℝ] E) (v : E) (N : C → ℕ) :
+    List (C × B) → Lp E 2 (noise (Index m))
+  | [] => realize (vacuum m (F₀ v))
+  | (c,b) :: w => (F b).compLp
+      (project N (coordinate K c (project N (cutVector K F F₀ v N w))))
+
+attribute [local instance] Classical.propDecidable
+omit [CompleteSpace E]
+
+private def valueHom {m : C → ℕ} (ω : Index m → ℝ) : Poly m E →+ E :=
+  Finsupp.liftAddHom (fun ν =>
+    { toFun := fun x => (GaussianChaos.WienerChaos.Hm ν ω /
+        Real.sqrt (GaussianChaos.WienerChaos.mfact ν)) • x
+      map_zero' := smul_zero _
+      map_add' := fun x y => smul_add _ x y })
+
+omit [DecidableEq C] in
+private lemma valueHom_apply {m : C → ℕ} (ω : Index m → ℝ) (f : Poly m E) :
+    valueHom ω f = polyValue f ω := rfl
+
+omit [DecidableEq C] in
+private lemma value_single {m : C → ℕ} (ν : Index m →₀ ℕ) (x : E) (ω : Index m → ℝ) :
+    polyValue (Finsupp.single ν x) ω =
+      (GaussianChaos.WienerChaos.Hm ν ω / Real.sqrt (GaussianChaos.WienerChaos.mfact ν)) • x := by
+  classical
+  simp [polyValue]
+
+private lemma value_insert {m : C → ℕ} (K : ∀ c, Fin (m c) → E →L[ℝ] E)
+    (c : C) (f : Poly m E) (ω : Index m → ℝ) :
+    polyValue (insertCoeff K c f) ω = signal K c (polyValue f) ω := by
+  classical
+  change valueHom ω (f.sum _) = _
+  rw [map_finsuppSum]
+  simp only [map_sum, map_add, valueHom_apply, value_single]
+  simp only [signal, polyValue, Finsupp.sum, map_sum, map_smul, Finset.smul_sum]
+  rw [Finset.sum_comm]
+  apply Finset.sum_congr rfl
+  intro j _
+  apply Finset.sum_congr rfl
+  intro ν _
+  simp only [smul_smul]
+  rw [← add_smul]
+  congr 1
+  simpa only [mul_comm] using
+    (StratonovichHAMAudit.NormalizedCoordinate.normalized_coordinate ν ⟨c,j⟩ ω).symm
+
+omit [DecidableEq C] in
+private lemma value_frame {m : C → ℕ} (F : E →L[ℝ] E) (f : Poly m E) (ω : Index m → ℝ) :
+    polyValue (coeffFrame F f) ω = F (polyValue f ω) := by
+  classical
+  rw [polyValue, coeffFrame, Finsupp.sum_mapRange_index (by intro ν; simp)]
+  simp [polyValue, Finsupp.sum, map_sum, map_smul]
+
+omit [DecidableEq C] in
+private lemma atom_ae {m : C → ℕ} (ν : Index m →₀ ℕ) (x : E) :
+    (atom ν x : (Index m → ℝ) → E) =ᵐ[noise (Index m)]
+      fun ω => (GaussianChaos.WienerChaos.Hm ν ω /
+        Real.sqrt (GaussianChaos.WienerChaos.mfact ν)) • x := by
+  filter_upwards [ContinuousLinearMap.coeFn_compLp (ContinuousLinearMap.toSpanSingleton ℝ x)
+      (GaussianChaos.ChaosDensity.hermiteNormalized ν),
+    Lp.coeFn_smul ((Real.sqrt (GaussianChaos.WienerChaos.mfact ν))⁻¹)
+      (GaussianChaos.ChaosDensity.hermiteLp ν),
+    GaussianChaos.ChaosDensity.hermiteLp_ae ν] with ω hx hs hh
+  change (ContinuousLinearMap.toSpanSingleton ℝ x).compLp
+    (GaussianChaos.ChaosDensity.hermiteNormalized ν) ω = _
+  rw [hx]
+  change ((Real.sqrt (GaussianChaos.WienerChaos.mfact ν))⁻¹ •
+    GaussianChaos.ChaosDensity.hermiteLp ν : Lp ℝ 2 (noise (Index m))) ω • x = _
+  rw [hs]
+  change (((Real.sqrt (GaussianChaos.WienerChaos.mfact ν))⁻¹ *
+    GaussianChaos.ChaosDensity.hermiteLp ν ω) • x) = _
+  rw [hh]
+  simp [div_eq_mul_inv, mul_comm]
+
+omit [DecidableEq C] in
+private lemma realize_ae {m : C → ℕ} (f : Poly m E) :
+    (realize f : (Index m → ℝ) → E) =ᵐ[noise (Index m)] polyValue f := by
+  classical
+  have h := (Filter.eventually_all_finset f.support).mpr
+    (fun ν _ => atom_ae (m := m) ν (f ν))
+  filter_upwards [Lp.coeFn_fun_finsetSum f.support (fun ν => atom ν (f ν)), h] with ω hs ha
+  change (∑ ν ∈ f.support, atom ν (f ν) : Lp E 2 (noise (Index m))) ω = _
+  rw [hs]
+  apply Finset.sum_congr rfl
+  intro ν hν
+  exact ha ν hν
+
+omit [DecidableEq C] in
+private lemma frame_realize {m : C → ℕ} (F : E →L[ℝ] E) (f : Poly m E) :
+    realize (coeffFrame F f) = F.compLp (realize f) := by
+  apply Lp.ext
+  filter_upwards [realize_ae (coeffFrame F f), ContinuousLinearMap.coeFn_compLp F (realize f),
+    realize_ae f] with ω hf hF hr
+  rw [hf, hF, hr, value_frame]
+
+theorem coordinate_realize [CompleteSpace E] {m : C → ℕ} (K : ∀ c, Fin (m c) → E →L[ℝ] E)
+    (c : C) (f : Poly m E) :
+    MemLp (signal K c (realize f)) 2 (noise (Index m)) ∧
+      coordinate K c (realize f) = realize (insertCoeff K c f) := by
+  have ha : (realize (insertCoeff K c f) : (Index m → ℝ) → E) =ᵐ[noise (Index m)]
+      signal K c (realize f) := by
+    filter_upwards [realize_ae (insertCoeff K c f), realize_ae f] with ω hi hf
+    rw [hi, value_insert]
+    simp only [signal, hf]
+  have hm := (Lp.memLp (realize (insertCoeff K c f))).ae_eq ha
+  refine ⟨hm, ?_⟩
+  unfold coordinate
+  rw [dite_eq_left hm]
+  apply Lp.ext
+  exact hm.coeFn_toLp.trans ha.symm
+
+private def Good {m : C → ℕ} (d : C → ℕ) (f : Poly m E) : Prop :=
+  ∀ ν, ¬(∀ c, colorDegree Sigma.fst ν c ≤ d c) → f ν = 0
+
+omit [InnerProductSpace ℝ E] in
+private lemma good_single {m : C → ℕ} {d : C → ℕ} (ν : Index m →₀ ℕ) (x : E)
+    (h : ∀ c, colorDegree Sigma.fst ν c ≤ d c) : Good d (Finsupp.single ν x) := by
+  classical
+  intro μ hm
+  by_cases he : ν = μ
+  · subst μ
+    exact (hm h).elim
+  · simp [he]
+
+omit [InnerProductSpace ℝ E] in
+private lemma good_add {m : C → ℕ} {d : C → ℕ} {f g : Poly m E}
+    (hf : Good d f) (hg : Good d g) : Good d (f + g) := by
+  intro ν hn
+  change f ν + g ν = 0
+  rw [hf ν hn, hg ν hn, zero_add]
+
+omit [InnerProductSpace ℝ E] in
+private lemma good_sum {m : C → ℕ} {d : C → ℕ} {ι : Type} (s : Finset ι)
+    (f : ι → Poly m E) (h : ∀ i ∈ s, Good d (f i)) : Good d (∑ i ∈ s, f i) := by
+  classical
+  intro ν hn
+  rw [show (∑ i ∈ s, f i) ν = ∑ i ∈ s, (f i) ν from
+    map_sum (Finsupp.applyAddHom ν) f s]
+  exact Finset.sum_eq_zero (fun i hi => h i hi ν hn)
+
+private lemma degree_raise {m : C → ℕ} (ν : Index m →₀ ℕ) (c : C) (j : Fin (m c)) (a : C) :
+    colorDegree Sigma.fst (ν + Finsupp.single ⟨c,j⟩ 1) a =
+      colorDegree Sigma.fst ν a + if a = c then 1 else 0 := by
+  classical
+  unfold colorDegree
+  rw [Finsupp.sum_add_index' (by intro i; simp) (by intro i x y; split_ifs <;> simp)]
+  simp [eq_comm]
+
+private lemma degree_lower {m : C → ℕ} (ν : Index m →₀ ℕ) (c : C) (j : Fin (m c)) (a : C) :
+    colorDegree Sigma.fst (ν - Finsupp.single ⟨c,j⟩ 1) a ≤ colorDegree Sigma.fst ν a := by
+  classical
+  unfold colorDegree
+  apply Finsupp.sum_le_sum_index (show ν - Finsupp.single ⟨c,j⟩ 1 ≤ ν from by
+    intro i
+    exact Nat.sub_le _ _)
+  · intro i _ x y hxy
+    dsimp
+    split_ifs
+    · exact hxy
+    · rfl
+  · intro i _
+    simp
+
+private lemma good_insert {m : C → ℕ} (K : ∀ c, Fin (m c) → E →L[ℝ] E)
+    (d : C → ℕ) (c : C) (f : Poly m E) (hf : Good d f) :
+    Good (HermiteWord.bump c d) (insertCoeff K c f) := by
+  classical
+  unfold insertCoeff Finsupp.sum
+  apply good_sum
+  intro ν hν
+  have hd : ∀ a, colorDegree Sigma.fst ν a ≤ d a := by
+    by_contra hn
+    exact (Finsupp.mem_support_iff.mp hν) (hf ν hn)
+  apply good_sum
+  intro j _
+  apply good_add
+  · apply good_single
+    intro a
+    rw [degree_raise]
+    exact Nat.add_le_add_right (hd a) _
+  · apply good_single
+    intro a
+    exact (degree_lower ν c j a).trans ((hd a).trans (by
+      unfold HermiteWord.bump
+      omega))
+
+private lemma good_frame {m : C → ℕ} (F : E →L[ℝ] E) (d : C → ℕ)
+    (f : Poly m E) (hf : Good d f) : Good d (coeffFrame F f) := by
+  intro ν hn
+  change F (f ν) = 0
+  rw [hf ν hn, map_zero]
+
+omit [InnerProductSpace ℝ E] in
+private lemma good_vacuum (m : C → ℕ) (x : E) : Good (fun _ => 0) (vacuum m x) := by
+  apply good_single
+  intro c
+  simp [colorDegree]
+
+omit [InnerProductSpace ℝ E] in
+private lemma cut_fixes_good {m : C → ℕ} (N d : C → ℕ) (f : Poly m E)
+    (hd : ∀ c, d c ≤ N c) (hf : Good d f) :
+    VectorProjection.cut (colorLow Sigma.fst N) f = f := by
+  classical
+  apply Finsupp.ext
+  intro ν
+  by_cases hp : colorLow Sigma.fst N ν
+  · simp [VectorProjection.cut, hp]
+  · have hb : ¬(∀ c, colorDegree Sigma.fst ν c ≤ d c) := by
+      intro hν
+      exact hp (fun c => (hν c).trans (hd c))
+    simp [VectorProjection.cut, hp, hf ν hb]
+
+private lemma cutCoeff_eq_rawCoeff {m : C → ℕ} (K : ∀ c, Fin (m c) → E →L[ℝ] E)
+    (F : B → E →L[ℝ] E) (F₀ : E →L[ℝ] E) (v : E) (N : C → ℕ)
+    (w : List (C × B)) (hN : ∀ c, HermiteWord.counts w c ≤ N c) :
+    cutCoeff K F F₀ v N w = rawCoeff K F F₀ v w := by
+  exact HermiteWord.cut_eq_raw (Good (m := m) (E := E)) (insertCoeff K)
+    (fun b => coeffFrame (F b)) (VectorProjection.cut (colorLow Sigma.fst N))
+    (vacuum m (F₀ v)) N (good_vacuum m (F₀ v)) (good_insert K)
+    (fun d b f hf => good_frame (F b) d f hf)
+    (fun d f hd hf => cut_fixes_good N d f hd hf) w hN
+
+private lemma rawVector_realize [CompleteSpace E] {m : C → ℕ}
+    (K : ∀ c, Fin (m c) → E →L[ℝ] E) (F : B → E →L[ℝ] E)
+    (F₀ : E →L[ℝ] E) (v : E) (w : List (C × B)) :
+    rawVector K F F₀ v w = realize (rawCoeff K F F₀ v w) := by
+  induction w with
+  | nil => rfl
+  | cons a w ih =>
+    change (F a.2).compLp (coordinate K a.1 (rawVector K F F₀ v w)) =
+      realize (coeffFrame (F a.2) (insertCoeff K a.1 (rawCoeff K F F₀ v w)))
+    rw [ih, (coordinate_realize K a.1 (rawCoeff K F F₀ v w)).2, frame_realize]
+
+private lemma cutVector_realize [CompleteSpace E] {m : C → ℕ}
+    (K : ∀ c, Fin (m c) → E →L[ℝ] E) (F : B → E →L[ℝ] E)
+    (F₀ : E →L[ℝ] E) (v : E) (N : C → ℕ) (w : List (C × B)) :
+    cutVector K F F₀ v N w = realize (cutCoeff K F F₀ v N w) := by
+  induction w with
+  | nil => rfl
+  | cons a w ih =>
+    change (F a.2).compLp (project N (coordinate K a.1 (project N (cutVector K F F₀ v N w)))) =
+      realize (coeffFrame (F a.2) (VectorProjection.cut (colorLow Sigma.fst N)
+        (insertCoeff K a.1 (VectorProjection.cut (colorLow Sigma.fst N) (cutCoeff K F F₀ v N w)))))
+    rw [ih]
+    simp only [project, projection_realize]
+    rw [(coordinate_realize K a.1
+      (VectorProjection.cut (colorLow Sigma.fst N) (cutCoeff K F F₀ v N w))).2,
+      projection_realize, frame_realize]
+
+theorem word_admissible [CompleteSpace E] {m : C → ℕ}
+    (K : ∀ c, Fin (m c) → E →L[ℝ] E) (F : B → E →L[ℝ] E)
+    (F₀ : E →L[ℝ] E) (v : E) (N : C → ℕ) (w : List (C × B)) (c : C) :
+    MemLp (signal K c (rawVector K F F₀ v w)) 2 (noise (Index m)) ∧
+      MemLp (signal K c (project N (cutVector K F F₀ v N w))) 2 (noise (Index m)) := by
+  constructor
+  · rw [rawVector_realize]
+    exact (coordinate_realize K c _).1
+  · rw [cutVector_realize]
+    simp only [project, projection_realize]
+    exact (coordinate_realize K c _).1
+
+theorem word_cutoff [CompleteSpace E] {m : C → ℕ}
+    (K : ∀ c, Fin (m c) → E →L[ℝ] E) (F : B → E →L[ℝ] E)
+    (F₀ : E →L[ℝ] E) (v : E) (N : C → ℕ) (w : List (C × B))
+    (hN : ∀ c, HermiteWord.counts w c ≤ N c) :
+    cutVector K F F₀ v N w = rawVector K F F₀ v w := by
+  rw [cutVector_realize, rawVector_realize, cutCoeff_eq_rawCoeff K F F₀ v N w hN]
+
+-- Exact fourth frozen closed Prop, deliberately kept private rather than counted as another result.
+example : (∀ {C E : Type} [DecidableEq C] [NormedAddCommGroup E]
+    [InnerProductSpace ℝ E] [CompleteSpace E] (m : C → ℕ)
+    (F : E →L[ℝ] E) (f : Poly m E),
+    realize (coeffFrame F f) = F.compLp (realize f)) := by
+  intro C E _ _ _ _ m F f
+  exact frame_realize F f
+
+-- Private actual-Lp controls, not additional paper facts.
+private abbrev controlModes : Unit → ℕ := fun _ => 1
+private def controlK (_ : Unit) (_ : Fin 1) : ℝ →L[ℝ] ℝ := ContinuousLinearMap.id ℝ ℝ
+private def controlF (_ : Unit) : ℝ →L[ℝ] ℝ := ContinuousLinearMap.id ℝ ℝ
+private def controlWord : List (Unit × Unit) := [((),()), ((),())]
+private abbrev controlIndex : Index controlModes := ⟨(),(0 : Fin 1)⟩
+
+private lemma control_raw_ae :
+    (rawVector controlK controlF (ContinuousLinearMap.id ℝ ℝ) 1 controlWord :
+      (Index controlModes → ℝ) → ℝ) =ᵐ[noise (Index controlModes)] fun ω => ω controlIndex ^ 2 := by
+  rw [rawVector_realize]
+  refine (realize_ae _).trans (Filter.Eventually.of_forall fun ω => ?_)
+  simp [controlWord, rawCoeff, HermiteWord.raw, value_frame, value_insert, signal,
+    vacuum, value_single, controlModes, controlK, controlF, controlIndex,
+    GaussianChaos.WienerChaos.Hm_zero,
+    GaussianChaos.WienerChaos.mfact_zero, pow_two]
+
+private lemma control_vacuum_ae :
+    (realize (vacuum controlModes (1 : ℝ)) : (Index controlModes → ℝ) → ℝ) =ᵐ[noise (Index controlModes)]
+      fun _ => 1 := by
+  refine (realize_ae _).trans (Filter.Eventually.of_forall fun ω => ?_)
+  simp [vacuum, value_single, GaussianChaos.WienerChaos.Hm_zero, GaussianChaos.WienerChaos.mfact_zero]
+
+private lemma control_mean :
+    inner ℝ (rawVector controlK controlF (ContinuousLinearMap.id ℝ ℝ) 1 controlWord)
+      (realize (vacuum controlModes (1 : ℝ))) = 1 := by
+  rw [MeasureTheory.L2.inner_def]
+  calc
+    (∫ ω, inner ℝ (rawVector controlK controlF (ContinuousLinearMap.id ℝ ℝ) 1 controlWord ω)
+        (realize (vacuum controlModes (1 : ℝ)) ω) ∂noise (Index controlModes)) =
+        ∫ ω, ω controlIndex ^ 2 ∂noise (Index controlModes) := by
+      apply integral_congr_ae
+      filter_upwards [control_raw_ae, control_vacuum_ae] with ω hr hv
+      rw [hr, hv, Real.inner_apply, mul_one]
+    _ = 1 := integral_eval_sq controlIndex
+
+example : rawVector controlK controlF (ContinuousLinearMap.id ℝ ℝ) 1 controlWord ≠ 0 := by
+  intro h
+  have hm := control_mean
+  rw [h, inner_zero_left] at hm
+  norm_num at hm
+
+example : cutVector controlK controlF (ContinuousLinearMap.id ℝ ℝ) 1 (fun _ => 2) controlWord =
+    rawVector controlK controlF (ContinuousLinearMap.id ℝ ℝ) 1 controlWord := by
+  apply word_cutoff
+  intro c
+  cases c
+  norm_num [controlWord, HermiteWord.counts, HermiteWord.bump]
+
+end StratonovichHAMAudit.ColoredWord
+
+#check @StratonovichHAMAudit.ColoredWord.coordinate_realize
+#print axioms StratonovichHAMAudit.ColoredWord.coordinate_realize
+#check @StratonovichHAMAudit.ColoredWord.word_admissible
+#print axioms StratonovichHAMAudit.ColoredWord.word_admissible
+#check @StratonovichHAMAudit.ColoredWord.word_cutoff
+#print axioms StratonovichHAMAudit.ColoredWord.word_cutoff

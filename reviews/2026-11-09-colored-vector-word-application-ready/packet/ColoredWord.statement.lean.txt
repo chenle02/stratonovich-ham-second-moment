@@ -1,0 +1,105 @@
+import HermiteWord
+import NormalizedCoordinate
+import VectorProjection
+
+set_option autoImplicit false
+
+noncomputable section
+namespace StratonovichHAMAudit.ColoredWord
+
+open MeasureTheory GaussianChaos.GaussianProduct
+open StratonovichHAMAudit.VectorProjection
+
+variable {C B E : Type} [DecidableEq C]
+variable [NormedAddCommGroup E] [InnerProductSpace ℝ E] [CompleteSpace E]
+
+abbrev Index (m : C → ℕ) := Σ c, Fin (m c)
+abbrev Poly (m : C → ℕ) (E : Type) [Zero E] := (Index m →₀ ℕ) →₀ E
+
+/-- The canonical polynomial representative, not an arbitrary chosen Lp representative. -/
+def polyValue {m : C → ℕ} (f : Poly m E) (ω : Index m → ℝ) : E :=
+  f.sum (fun ν x => (GaussianChaos.WienerChaos.Hm ν ω /
+    Real.sqrt (GaussianChaos.WienerChaos.mfact ν)) • x)
+
+def vacuum (m : C → ℕ) (x : E) : Poly m E := Finsupp.single 0 x
+
+def coeffFrame {m : C → ℕ} (F : E →L[ℝ] E) (f : Poly m E) : Poly m E :=
+  f.mapRange F (map_zero F)
+
+def insertCoeff {m : C → ℕ} (K : ∀ c, Fin (m c) → E →L[ℝ] E)
+    (c : C) (f : Poly m E) : Poly m E := by
+  classical
+  exact f.sum (fun ν x => ∑ j : Fin (m c),
+    (Finsupp.single (ν + Finsupp.single ⟨c,j⟩ 1)
+      (Real.sqrt ((ν ⟨c,j⟩ : ℝ) + 1) • K c j x) +
+    Finsupp.single (ν - Finsupp.single ⟨c,j⟩ 1)
+      (Real.sqrt (ν ⟨c,j⟩ : ℝ) • K c j x)))
+
+def signal {m : C → ℕ} (K : ∀ c, Fin (m c) → E →L[ℝ] E)
+    (c : C) (g : (Index m → ℝ) → E) : (Index m → ℝ) → E :=
+  fun ω => ∑ j : Fin (m c), ω ⟨c,j⟩ • K c j (g ω)
+
+/-- Multiplication on its natural L2 domain; totalized by zero elsewhere.
+The proposed domain theorems must prove this fallback NEVER occurs in either finite word. -/
+def coordinate {m : C → ℕ} (K : ∀ c, Fin (m c) → E →L[ℝ] E)
+    (c : C) (g : Lp E 2 (noise (Index m))) : Lp E 2 (noise (Index m)) := by
+  classical
+  exact if h : MemLp (signal K c g) 2 (noise (Index m)) then h.toLp _ else 0
+
+def project {m : C → ℕ} (N : C → ℕ) :
+    Lp E 2 (noise (Index m)) →L[ℝ] Lp E 2 (noise (Index m)) :=
+  (cutoffSpace (E := E) (colorLow Sigma.fst N)).toSubmodule.starProjection
+
+def rawCoeff {m : C → ℕ} (K : ∀ c, Fin (m c) → E →L[ℝ] E)
+    (F : B → E →L[ℝ] E) (F₀ : E →L[ℝ] E) (v : E) (w : List (C × B)) : Poly m E :=
+  HermiteWord.raw (insertCoeff K) (fun b => coeffFrame (F b)) (vacuum m (F₀ v)) w
+
+def cutCoeff {m : C → ℕ} (K : ∀ c, Fin (m c) → E →L[ℝ] E)
+    (F : B → E →L[ℝ] E) (F₀ : E →L[ℝ] E) (v : E) (N : C → ℕ)
+    (w : List (C × B)) : Poly m E :=
+  HermiteWord.cut (VectorProjection.cut (colorLow Sigma.fst N)) (insertCoeff K)
+    (fun b => coeffFrame (F b)) (vacuum m (F₀ v)) w
+
+def rawVector {m : C → ℕ} (K : ∀ c, Fin (m c) → E →L[ℝ] E)
+    (F : B → E →L[ℝ] E) (F₀ : E →L[ℝ] E) (v : E) : List (C × B) → Lp E 2 (noise (Index m))
+  | [] => realize (vacuum m (F₀ v))
+  | (c,b) :: w => (F b).compLp (coordinate K c (rawVector K F F₀ v w))
+
+def cutVector {m : C → ℕ} (K : ∀ c, Fin (m c) → E →L[ℝ] E)
+    (F : B → E →L[ℝ] E) (F₀ : E →L[ℝ] E) (v : E) (N : C → ℕ) :
+    List (C × B) → Lp E 2 (noise (Index m))
+  | [] => realize (vacuum m (F₀ v))
+  | (c,b) :: w => (F b).compLp
+      (project N (coordinate K c (project N (cutVector K F F₀ v N w))))
+
+-- CLOSED PROPS ONLY. No new theorem/proof of these statements is supplied.
+-- 1. Actual coordinate multiplication has its natural L2 domain on every vector polynomial.
+#check (∀ {C E : Type} [DecidableEq C] [NormedAddCommGroup E]
+    [InnerProductSpace ℝ E] [CompleteSpace E] (m : C → ℕ)
+    (K : ∀ c, Fin (m c) → E →L[ℝ] E) (c : C) (f : Poly m E),
+    MemLp (signal K c (realize f)) 2 (noise (Index m)) ∧
+      coordinate K c (realize f) = realize (insertCoeff K c f))
+
+-- Helper fidelity: arbitrary physical coefficient frames agree in actual L2.
+#check (∀ {C E : Type} [DecidableEq C] [NormedAddCommGroup E]
+    [InnerProductSpace ℝ E] [CompleteSpace E] (m : C → ℕ)
+    (F : E →L[ℝ] E) (f : Poly m E),
+    realize (coeffFrame F f) = F.compLp (realize f))
+
+-- 2. No totalization fallback at ANY prefix, raw or compressed, even without a cutoff-size guard.
+#check (∀ {C B E : Type} [DecidableEq C] [NormedAddCommGroup E]
+    [InnerProductSpace ℝ E] [CompleteSpace E] (m : C → ℕ)
+    (K : ∀ c, Fin (m c) → E →L[ℝ] E) (F : B → E →L[ℝ] E)
+    (F₀ : E →L[ℝ] E) (v : E) (N : C → ℕ) (w : List (C × B)) (c : C),
+    MemLp (signal K c (rawVector K F F₀ v w)) 2 (noise (Index m)) ∧
+      MemLp (signal K c (project N (cutVector K F F₀ v N w))) 2 (noise (Index m)))
+
+-- 3. The manuscript's finite-word equality in the actual vector-valued Gaussian L2 space.
+#check (∀ {C B E : Type} [DecidableEq C] [NormedAddCommGroup E]
+    [InnerProductSpace ℝ E] [CompleteSpace E] (m : C → ℕ)
+    (K : ∀ c, Fin (m c) → E →L[ℝ] E) (F : B → E →L[ℝ] E)
+    (F₀ : E →L[ℝ] E) (v : E) (N : C → ℕ) (w : List (C × B)),
+    (∀ c, HermiteWord.counts w c ≤ N c) →
+      cutVector K F F₀ v N w = rawVector K F F₀ v w)
+
+end StratonovichHAMAudit.ColoredWord
