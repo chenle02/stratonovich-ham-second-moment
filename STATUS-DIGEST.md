@@ -1,6 +1,6 @@
 # STATUS DIGEST — read this first, then the tail of Progress.md
 
-Current editorial edition (November 10): **304-page book and 28-page reader**.
+Current editorial edition (November 10): **305-page book and 28-page reader**.
 All eleven chapters and four appendices have motivation, linked prerequisites
 and an outline. Section 1.5 states the two existing results as Theorems 1.5.1
 and 1.5.2, with links to their unchanged proofs. All 215 proof bodies are

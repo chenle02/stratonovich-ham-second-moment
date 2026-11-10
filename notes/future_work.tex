@@ -46,6 +46,67 @@ extensions with coefficient $p$. Higher-moment convergence, uniform
 integrability and the comparison with the original point observable must
 still be justified.
 
+\paragraph{Real orders and sharp upper tails.}
+A stronger question is whether~\eqref{E:future-even-moments} holds for every
+fixed real $p \ge 1$. The variational homogeneity allows real coefficients,
+and the Gaussian change of measure applies to absolute powers. However, the
+comparison between masked and original moments in
+Proposition~\ref{P:masked-canonical-transfer} uses nonnegative Gaussian pairing
+terms. Such an expansion does not directly represent a noninteger absolute
+power. A replacement comparison and the required moment convergence are
+therefore needed. Interpolation between even orders gives bounds, but does
+not in general identify the exact constant at an intermediate order. At
+$p = 1$, the proposed quantity is $\E|u|$, which must be distinguished from
+the signed mean $\E u$ in the source. We do not assume positivity of the wave
+solution. Thus, the real-order extension is plausible from the control
+formula, but remains a separate open question.
+
+For a nonzero covariance, suppose that the real-order extension has been
+established for every $p \ge 1$. For this discussion, set
+\[
+  m=\frac{4-\alpha}{3-\alpha}>1,\qquad
+  A=2^{-m}C_2(\Gamma,\alpha_0)>0,\qquad z_*=mA.
+\]
+Then the limiting logarithmic moment function on this range is $Ap^m$.
+The corresponding sharp upper-tail consequence is
+\begin{equation}\label{E:future-upper-tail}
+  \lim_{t\to\infty}t^{-\kappa}
+  \log\mathbb{P}\big\{|u(t,x)|\ge e^{zt^\kappa}\big\}
+  =-\mathcal{I}(z),\qquad z\ge z_*,
+\end{equation}
+for each fixed $x$, where
+\begin{equation}\label{E:future-tail-rate}
+  \mathcal{I}(z)
+  =(m-1)m^{-m/(m-1)}A^{-1/(m-1)}z^{4-\alpha}.
+\end{equation}
+The threshold comes from the maximizing moment order
+$p_z=(z/(mA))^{1/(m-1)}$. For $z>z_*$ this order lies in $(1,\infty)$,
+where the hypothesized moment limits are available on both sides of $p_z$.
+The exponential-tilting argument uses this local information for the lower
+bound and the moment inequality for the upper bound; the endpoint follows
+from thresholds above $z_*$ by monotonicity. This is the moment-method
+application described in~\cite{dembo.zeitouni:98:large}*{Section~2.3}.
+We do not invoke a full G\"artner--Ellis theorem on an unverified domain of
+moment orders. Formula~\eqref{E:future-upper-tail} is conditional on the
+real-order extension, not a large-deviation result established here for the
+wave equation.
+
+For $0<z<z_*$, optimizing only over $p\ge1$ gives the upper bound
+\[
+  \limsup_{t\to\infty}t^{-\kappa}
+  \log\mathbb{P}\big\{|u(t,x)|\ge e^{zt^\kappa}\big\}
+  \le-\max\{0,z-A\}.
+\]
+Those moment orders do not determine the sharp rate on this remaining range.
+If the same moment formula were proved for every real $p>0$, the sharp
+upper-tail expression would extend to every $z>0$. Neither version supplies
+a lower-tail principle for $\log|u|$, where small values and zeros require
+separate analysis. For spatial white noise in one dimension,
+$m=3/2$ and the predicted upper-tail rate is
+$\mathcal{I}(z)=32z^3/(27C_2^2)$; with real orders only above one, its stated
+range is $z\ge3C_2/(4\sqrt2)$. The time speed and $C_2$ still depend on the
+temporal covariance.
+
 \paragraph{Point moments and spatial regularity.}
 The main obstacle in the present upper-bound method occurs in
 Proposition~\ref{P:original-point-transfer}. Stationarity and finite

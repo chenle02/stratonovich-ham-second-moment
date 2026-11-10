@@ -2,8 +2,8 @@
 
 The long document is now a book-style technical companion. The short reader
 remains an article and the entry point. Both retain their existing filenames.
-The book has **304 pages, 11 chapters and four appendices**; the reader has
-**28 pages**. The full pair therefore contains 332 pages.
+The book has **305 pages, 11 chapters and four appendices**; the reader has
+**28 pages**. The full pair therefore contains 333 pages.
 
 The main proof runs continuously through the numbered chapters. The appendices
 retain finite-order calculations, direct bounds with additional hypotheses,
@@ -14,21 +14,22 @@ mathematical record was deleted to make the structure appear shorter.
 |---|---|---|
 | A | guide to the proof | ii–vii |
 | A | guide to the proof | ii–vii |
-| 1 | Setting and strategy | 1–19 |
-| 2 | Construction and two-chain estimates | 20–42 |
-| 3 | An independent upper bound | 43–73 |
-| 4 | Covariance estimates and Gaussian approximation | 74–97 |
-| 5 | The original noise and operator paths | 98–116 |
-| 6 | Fixed masks and wave evolution | 117–136 |
-| 7 | Scaling and the point lower bound | 137–153 |
-| 8 | Spatial controls and Gaussian means | 154–169 |
-| 9 | Bounds as the spatial radius grows | 170–184 |
-| 10 | Gaussian estimates for the point upper bound | 185–214 |
-| 11 | The constant and its consequences | 215–232 |
-| A | Finite-order calculations | 233–239 |
-| B | Direct upper bounds and static interpolation | 240–258 |
-| C | Covariance comparisons in higher dimensions | 259–280 |
-| D | Static comparisons and the clock obstruction | 281–294 |
+| A | guide to the proof | ii–vii |
+| 1 | Setting and strategy | 1–20 |
+| 2 | Construction and two-chain estimates | 21–43 |
+| 3 | An independent upper bound | 44–74 |
+| 4 | Covariance estimates and Gaussian approximation | 75–98 |
+| 5 | The original noise and operator paths | 99–117 |
+| 6 | Fixed masks and wave evolution | 118–137 |
+| 7 | Scaling and the point lower bound | 138–154 |
+| 8 | Spatial controls and Gaussian means | 155–170 |
+| 9 | Bounds as the spatial radius grows | 171–185 |
+| 10 | Gaussian estimates for the point upper bound | 186–215 |
+| 11 | The constant and its consequences | 216–233 |
+| A | Finite-order calculations | 234–240 |
+| B | Direct upper bounds and static interpolation | 241–259 |
+| C | Covariance comparisons in higher dimensions | 260–281 |
+| D | Static comparisons and the clock obstruction | 282–295 |
 
 The front matter has an overview, a guide to the argument, a multilevel contents
 page and a short list of illustrations. The cover has its own PDF page label;

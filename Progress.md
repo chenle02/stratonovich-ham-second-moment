@@ -18585,3 +18585,16 @@ scaling. A formal log-wave expansion suggests a possible effective damping
 mechanism, but its centering, positivity/localization and negligible-inertia
 assumptions are unproved, and temporal memory remains to be tested.
 No universality conjecture, simulation, proof or scientific gate is added.
+
+## 2026-11-10: real orders and the precise conditional upper tail
+
+At Le's request, refined Section1.6 around Conjecture1.6.1. Real p>=1 is
+a stronger open question. The finite signed/absolute distinction and the
+masked-to-original pairing comparison are explicit obstacles. The conditional
+upper-tail range is z>=mA, with A=C2/2^m and m=(4-alpha)/(3-alpha);
+all positive thresholds would require the corresponding information below
+p=1 or a separate direct-tail argument. No full two-sided LDP is asserted.
+The local tilting method is cited to the available 1998 Dembo–Zeitouni edition.
+Rendered pages and source style checked; builds clean,215proofs preserved,
+82labels and250links pass. Report305pages, reader28. Evidence is under
+private/audit/2026-11-10-real-orders-ldp/.
