@@ -10,13 +10,13 @@ Update it whenever a gate below changes state.
 ## One-line state
 
 Research **incomplete.** The focused literature revision is complete locally.
-The illustrated275-page working draft
+The book-style284-page working draft
 claims both goals; **no whole-paper independent acceptance exists yet.**
 The blocker is the review gates, not a known mathematical gap.
 
 ## What the draft claims (unadopted)
 
-`notes/notes_stratonovich_ham_second_moment.{tex,pdf}`, 275 pp., 215 OWN
+`notes/notes_stratonovich_ham_second_moment.{tex,pdf}`, 284 pp., 215 OWN
 proofs / 241 declarations, clean build (0 err / 0 undef / 0 overfull).
 - **G:upper:** `T:full-upper` gives the t^κ scale, κ = (4−α−α₀)/(3−α).
 - **G:sharp:** an all-model limit in d = 1,2,3, with C₂ = S₂^pos = 2^{(4−α)/(3−α)} S₁^pos.
@@ -27,7 +27,7 @@ proofs / 241 declarations, clean build (0 err / 0 undef / 0 overfull).
   constant; there is no identification with Chen's L; Chen's normalization
   is not corrected.
 - The 263-page baseline is at `11e009a`. The 24-page reader
-  (`notes/README-reader.md`) is paired with the275-page draft.
+  (`notes/README-reader.md`) is paired with the284-page book.
 
 ## Gate board
 
@@ -36,13 +36,13 @@ proofs / 241 declarations, clean build (0 err / 0 undef / 0 overfull).
 | 1 | Complete written proofs | Written; not accepted | main TeX |
 | 2 | DeepSeek V4 Pro whole MAIN (HIGH) | **MEDIUM — unaccepted.** PASS_WITH_NOTES, 226 PASS / 37 PWN of 263 rows, no fatal/major/required repair | `reviews/2026-11-09-full-main-v5-kernel-medium-unaccepted/` |
 | 3 | Kimi-K3 whole review (HIGH) | **Open — Kimi available again** (Le lifted the hold 2026-11-10); whole review not yet run | Progress 2026-11-10 |
-| 4 | Visual / rendered PDF | **Historical 230/267 accepted on the old PDF; 37 old pages open. No automatic visual-credit transfer to the current275-page edition** | `reviews/2026-11-09-final-local-glyph-correspondence/` |
+| 4 | Visual / rendered PDF | **Historical 230/267 accepted on the old PDF; 37 old pages open. No automatic visual-credit transfer to the current284-page edition** | `reviews/2026-11-09-final-local-glyph-correspondence/` |
 | 5 | Visual MEDIUM policy | **PROPOSED, NOT ADOPTED — Le's decision** | `reviews/2026-11-09-visual-policy-proposal/POLICY-PROPOSED.md` |
 | 6 | Calibrations (α₀→0, p=1, Jensen, Skorohod comparison) | Open as a final gate | AGENTS.md §Calibrations |
 | 7 | Fresh independent cold read | Not started | — |
 | 8 | Clean build + committed PDF | **PASS** for current bytes | `notes/figures/VALIDATION.json` |
 | 9 | Delivery: Progress, wiki status, handoff, <HUB> sync | Git synced. **Wiki project page refreshed 2026-11-09** through the six-repo queue (ticket `tk-20261109-220806-claude-stratonovich-status-digest`, receipt `maintained`, lint clean, wiki commits `aefd5403`, `ae0093ae`). It describes the 269-page unadopted edition, MAIN v5 MEDIUM unaccepted, visual 230/267 on the old edition with no transfer, and keeps the 2026-11-03 block as dated history. Refresh again when a gate changes | `../SPDEs-wiki/content/projects/stratonovich-ham-second-moment.md` |
-| L | Lean | Private development: 87 accepted local facts / 26 seams. **Companion created (Le's instruction, 2026-11-09), L0 CLOSED:** `chenle02/stratonovich-ham-second-moment-lean`, PRIVATE until the public flip; verified commit `38d16163` (lean-pkg receipt, registry verified-private). Public counts: 23 of 26 seams, 82 theorems, 43 defs, 88 claims = 78 audited theorems + 6 audited defs + 4 helpers; 68 negative controls all rejected; 0 sorry; axioms propext, Classical.choice, Quot.sound only. 3 seams (9 facts) withheld: they depend on the private gaussian-chaos-lean. Re-anchored at companion `4bdffba` to manuscript `669ccc9` (275 pages; `cf979d6` kept as history): all 46 cited labels exist and the 40 cited statements/proofs are mathematically unchanged, so no correspondence changed. Coverage after the ledger review (companion `a78c5d0`, docs-only descendant of `38d16163`): 4 main theorems outside Lean, 20 labelled results with analytic inputs supplied. 33 of 88 claim rows map to a manuscript label; the other 55 are development calculations that make no current-paper claim (#3's ruling, `private/audit/2026-11-09-companion-target-triage.md`), and claim rows are not a count of formalized proofs. The verification section cites only the 33 mapped rows. Ledger correspondence: two independent families found no fidelity error or wrong mapping. DeepSeek V4 Pro: PASS_WITH_CONCERNS, MEDIUM, 0 critical / 1 major / 6 minor, all adjudicated (`reviews/2026-11-09-lean-ledger-correspondence/ADJUDICATION.md`). Kimi-K3 over `669ccc9`: content PASS_WITH_NOTES, HIGH, 88/88 rows (33 mappings correct, 55 absences confirmed by recorded search), 0 fatal / 0 major / 4 minor, all accepted as wording (companion `01e2480`, docs-only); **but its receipt is INVALID-REPORT** (the dispatch contract used check verdicts outside the report schema; recovery refused), so **the formal correspondence gate is still open, pending a schema-conforming rerun** (`reviews/2026-11-10-lean-ledger-kimi-k3/ADJUDICATION.md`) | `lean-progress/PROGRESS.md` (f4aab9a); companion `docs/statement-ledger.md`, `coverage.yaml` |
+| L | Lean | Private development: 87 accepted local facts / 26 seams. **Companion created (Le's instruction, 2026-11-09), L0 CLOSED:** `chenle02/stratonovich-ham-second-moment-lean`, PRIVATE until the public flip; verified commit `38d16163` (lean-pkg receipt, registry verified-private). Public counts: 23 of 26 seams, 82 theorems, 43 defs, 88 claims = 78 audited theorems + 6 audited defs + 4 helpers; 68 negative controls all rejected; 0 sorry; axioms propext, Classical.choice, Quot.sound only. 3 seams (9 facts) withheld: they depend on the private gaussian-chaos-lean. Re-anchored at companion `4bdffba` to manuscript `669ccc9` (275 pages; `cf979d6` kept as history): all 46 cited labels exist and the 40 cited statements/proofs are mathematically unchanged, so no correspondence changed. Coverage after the ledger review (companion `a78c5d0`, docs-only descendant of `38d16163`): 4 main theorems outside Lean, 20 labelled results with analytic inputs supplied. 33 of 88 claim rows map to a manuscript label; the other 55 are development calculations that make no current-paper claim (#3's ruling, `private/audit/2026-11-09-companion-target-triage.md`), and claim rows are not a count of formalized proofs. The verification section cites only the 33 mapped rows. Ledger correspondence: three independent reports from two families found no fidelity error or wrong mapping. DeepSeek V4 Pro: PASS_WITH_CONCERNS, MEDIUM (valid receipt; `reviews/2026-11-09-lean-ledger-correspondence/ADJUDICATION.md`). Kimi-K3 v1 and v2 over `669ccc9`: content PASS_WITH_NOTES, HIGH, 88/88 rows, 0 fatal / 0 major, all minor findings applied (companion `5e0d122`, docs-only, counts 33/55 unchanged); **both receipts INVALID-REPORT** (v1: check verdicts outside the schema; v2: a prose sentence before the JSON, which `recover-report` cannot strip). **The formal correspondence gate is still open; the options are with Le** (`reviews/2026-11-10-lean-ledger-kimi-k3-v2/ADJUDICATION.md`) | `lean-progress/PROGRESS.md` (f4aab9a); companion `docs/statement-ledger.md`, `coverage.yaml` |
 
 ## Standing constraints (do not violate)
 
@@ -85,3 +85,14 @@ proofs retain their mathematics and labels. Illustration review inspected all
 The wiki receipt above describes the preceding269-page edition and needs its
 next status refresh to mention this edition. The Lean companion's pinned
 cf979d6 source remains historical until its owner updates the anchor manifest.
+
+## Book-format checkpoint
+
+The long companion is 284 pages with 11numbered chapters and 4 appendices; the
+reader remains 24 pages. Both keep the 12/7 diagrams. Stable labels are retained,
+but the reader map now has 78 labels and240 valid remote links. Existing
+section-number literals were repaired; source-paper pinpoints are unchanged.
+All 215 proofs retain their mathematics. This layout change does not clear a
+scientific gate. Use notes/BOOK-GUIDE.md, notes/book-numbering-map.json and
+notes/figures/VALIDATION.json. Companion anchoring and the wiki's current-edition
+status should be refreshed by their owners after this committed checkpoint.
