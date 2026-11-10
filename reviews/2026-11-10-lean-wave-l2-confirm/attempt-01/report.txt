@@ -1,0 +1,93 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "PROVENANCE.json:1-110 — partial; revision identifiers and primary-source bindings read.",
+    "prior/TemporalEquilibrium-report.json:1-150,151-273 — complete.",
+    "prior/RadiusMeanAnchor-report.json:1-120,121-220 — complete.",
+    "prior/MaskedTrigProducts-report.json:1-110,111-213 — complete.",
+    "lean/StratonovichHAMSecondMoment/TemporalEquilibrium.lean:1-220,221-440,441-647 — complete.",
+    "lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean:1-244,245-443,444-546 — complete.",
+    "lean/StratonovichHAMSecondMoment/MaskedTrigProducts.lean:1-180,181-358 — complete.",
+    "candidate/statement-ledger.md:1-160,608-903 — partial file; Index by label and all three required whole-result sections read completely. All per-module table label/declaration fields across lines 144-875 were additionally scanned and counted.",
+    "lean/claims.yaml:1-22,846-1147,1148-1380,1381-1590 — partial file; all three relevant modules read completely. Declaration/kind fields across lines 1-1590 were additionally scanned for the global count and one-to-one ledger correspondence.",
+    "lean/coverage.yaml:1-175,176-342 — complete.",
+    "manuscript/notes/integrated_temporal_equilibrium.tex:1-90 — complete.",
+    "manuscript/notes/integrated_radius_anchor.tex:1-170,171-339 — complete.",
+    "manuscript/notes/integrated_source_convergence.tex:1-124 — partial; required Gaussian-transfer statement and substantive proof read.",
+    "manuscript/notes/integrated_covariance_foundation.tex:141-160,294-378 — partial; relevant completion, modulation and trigonometric-product statements and proof read."
+  ],
+  "checks": [
+    {
+      "claim": "StratonovichHAMSecondMoment.TemporalEquilibrium.lintegral_affine_beta: no direct label",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:841 now says 'no direct label (auxiliary to the Lean proof route)'; index:121-122 assigns it only to the no-direct-label row. lean/claims.yaml:903-909 accurately reproduces the hypotheses and identity at lean/StratonovichHAMSecondMoment/TemporalEquilibrium.lean:109-111. The distinct manuscript computation retains (1-su)^(-r) at manuscript/notes/integrated_temporal_equilibrium.tex:56-69."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TemporalEquilibrium.lintegral_mobius: no direct label",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:846 has the required auxiliary designation, consistently indexed at :122 rather than :121. lean/claims.yaml:938-944 matches lean/StratonovichHAMSecondMoment/TemporalEquilibrium.lean:242-244, including 0<r<1/2 and 0<t<1. The manuscript instead evaluates the left potential by series at manuscript/notes/integrated_temporal_equilibrium.tex:56-70."
+    },
+    {
+      "claim": "PARA-TemporalEquilibrium",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "The revised ordinary-integral wording at candidate/statement-ledger.md:812-815 is supported by lean/StratonovichHAMSecondMoment/TemporalEquilibrium.lean:402-411,561-564,593-595 and manuscript/notes/integrated_temporal_equilibrium.tex:4-6,74-86. The remaining paragraph correctly describes the parameter substitution, endpoints, totalization and alternative proof route. Its auxiliary-finiteness clause has a minor scope ambiguity concerning structural reflection/splitting identities; see C1."
+    },
+    {
+      "claim": "TemporalEquilibrium-MAPPING-RESCAN",
+      "verdict": "PASS",
+      "reason": "All 21 labelled rows at candidate/statement-ledger.md:833-875 were checked. The seven Gamma/Beta rows correspond to manuscript/notes/integrated_temporal_equilibrium.tex:8-29; the other fourteen correspond to :32-44,68-86. In particular, lintegral_left is the incomplete-Beta formula, since Beta(1-2r,2r)/Beta(r,1-2r)=r Beta(1-r,2r); lintegral_potential and Beta_combo express the full potential and its normalization. Compare lean/StratonovichHAMSecondMoment/TemporalEquilibrium.lean:279-283,349-351,384-385. No further W1/W2-type mapping defect was found."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RadiusMeanAnchor.mean_anchor_bound_blocks: P:radius-mean-anchor",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:770 now explicitly lists probability mu, theta>=0, delta>=0 and p>=1, alongside g>=0 and nonnegative lengths. Its input column supplies hMC, hMint, hMmom and hXmeas, matching lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean:326-343 and lean/claims.yaml:1338-1344. These specialize to manuscript/notes/integrated_radius_anchor.tex:282-292,308-321."
+    },
+    {
+      "claim": "PARA-RadiusMeanAnchor",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:720-727 correctly identifies hXmeas as a supplied consequence, not a manuscript gap. manuscript/notes/integrated_source_convergence.tex:81-89 constructs a strongly measurable transferred path in a separable closed span, and manuscript/notes/integrated_radius_anchor.tex:262-275 applies that transfer to the residual paths. Fixed stopping is a bounded linear contraction in the stated Holder norm; scaling and taking the norm preserve strong measurability. This yields precisely the scalar hypothesis at lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean:337-338,467-469."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedTrigProducts.trig_product_bound: L:masked-trig-products",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:658 and lean/claims.yaml:1391 now acknowledge the derivable membership witness hp. This matches lean/StratonovichHAMSecondMoment/MaskedTrigProducts.lean:309-317; prodFn_mem at :258-262 derives that witness from hmem. The bound and frequency pair match manuscript/notes/integrated_covariance_foundation.tex:347-358."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedTrigProducts.trig_product_bound_half: L:masked-trig-products",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:659 inherits the corrected hypotheses from :658; lean/claims.yaml:1398 explicitly mentions hp. Both match lean/StratonovichHAMSecondMoment/MaskedTrigProducts.lean:278-286. The factor 1/2 is exactly the stronger intermediate conclusion described at manuscript/notes/integrated_covariance_foundation.tex:370-375."
+    },
+    {
+      "claim": "PARA-MaskedTrigProducts",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:633-637 now distinguishes the paper wrapper's derived membership from the general helpers' redundant witness. lean/StratonovichHAMSecondMoment/MaskedTrigProducts.lean:258-262,284,315,351-356 confirms this distinction. It faithfully represents the finite-mode deduction in manuscript/notes/integrated_covariance_foundation.tex:363-375 without supplying the product estimate itself."
+    },
+    {
+      "claim": "LEDGER-TOTALS",
+      "verdict": "PASS",
+      "reason": "Counting all 32 per-module tables gives 223 distinct declarations: 142 labelled and 81 unlabelled, agreeing with candidate/statement-ledger.md:131-132 and lean/coverage.yaml:2. Joining every table declaration to lean/claims.yaml's declaration/kind fields gives exactly 188 theorems and 35 definitions, with no missing, extra or duplicate declaration. TemporalEquilibrium contributes 21 labelled and 22 unlabelled rows."
+    },
+    {
+      "claim": "NO-REGRESSION",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Reinspection of candidate/statement-ledger.md:120-128,608-775,797-875, the corresponding Lean types and claims summaries, and lean/coverage.yaml:1-342 found no additional substantive correspondence or counting regression. Coverage still accurately distinguishes the two supplied-input modules from TemporalEquilibrium's unconditional analytic deductions. The only residual wording point is C1."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "C1 — PARA-TemporalEquilibrium, auxiliary-finiteness wording. candidate/statement-ledger.md:814-815 says 'the auxiliary lintegral identities instead establish finite nonnegative values'. This is accurate for the evaluated Beta/potential integrals, but could be read as including every structural helper: lean/StratonovichHAMSecondMoment/TemporalEquilibrium.lean:147-148 takes arbitrary 'F : ℝ → ℝ≥0∞', and :160-161 likewise states splitting without finiteness assumptions. For F identically infinity on a nonempty interval, these identities have infinite values. The manuscript's particular evaluations are finite: manuscript/notes/integrated_temporal_equilibrium.tex:74 says 'All integrals are finite'. Optional exact clarification: replace the clause with 'the evaluated auxiliary lintegrals establish finite nonnegative values; the general reflection and splitting identities do not themselves assert finiteness'. The individual ledger rows already state the unrestricted helper types correctly."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "Complete-reading requirement A was satisfied. Outside the required sections, candidate/statement-ledger.md:161-607 and lean/claims.yaml:23-845 received field-level counting rather than substantive review.",
+    "PROVENANCE.json:111-585, manuscript/notes/integrated_source_convergence.tex:125-466, and manuscript/notes/integrated_covariance_foundation.tex:1-140,161-293,379-428 were not read; these ranges were not required for the narrow checks.",
+    "The packet contains prior reports rather than the complete earlier source revision or README. Regression assessment therefore concerns the reported edits and current supplied sections/counts, not an independently reconstructed historical diff or unseen README text.",
+    "No compilation, proof-correctness audit or independent byte-binding verification was performed. Correspondence acceptance retains the explicitly disclosed supplied analytic inputs.",
+    "This AI review is neither human verification nor a novelty audit."
+  ]
+}
