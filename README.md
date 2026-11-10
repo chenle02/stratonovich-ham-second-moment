@@ -4,16 +4,15 @@
 
 **Start here:** [STATUS-DIGEST.md](STATUS-DIGEST.md) is a one-page gate board and constraint summary (derived; Progress.md remains the authority).
 
-**Current working draft (2026-11-09):** [267-page PDF](notes/notes_stratonovich_ham_second_moment.pdf) and [TeX](notes/notes_stratonovich_ham_second_moment.tex), preserved as an **unadopted mathematical candidate**. See [draft status](notes/WORKING-DRAFT-STATUS.md), [AI development history](AI-DEV-HISTORY.md), and [build evidence](reviews/2026-11-09-working-draft-267-checkpoint/README.md). Latest whole MAIN remains MEDIUM/unaccepted; the dated scientific and review summaries below are historical.
+**Current working draft (2026-11-09 literature revision):** [269-page PDF](notes/notes_stratonovich_ham_second_moment.pdf) and [TeX](notes/notes_stratonovich_ham_second_moment.tex), an **unadopted mathematical candidate**. The opening contribution paragraph and literature discussion now include the relevant SWE predecessors and the three ongoing Skorohod projects. See [the source/result crosswalk](notes/LITERATURE-REVIEW.md), [draft status](notes/WORKING-DRAFT-STATUS.md), [AI development history](AI-DEV-HISTORY.md), and [current validation](reviews/2026-11-09-literature-review/README.md). Whole MAIN remains MEDIUM/unaccepted at its original scope; the dated summaries below are historical.
 
 **Reading guide:** [20-page reader](notes/notes_stratonovich_ham_second_moment_reader.pdf),
 [matching TeX](notes/notes_stratonovich_ham_second_moment_reader.tex), and
-[guide](notes/README-reader.md). Updated on November 9 to match the current
-267-page companion, with 69 matched technical labels and 209 checked external
-PDF links. The combined record has 287 pages. It guides the reader through the
-argument and depends on the full notes for detailed proofs; independent
-clearance remains open. [Current validation](reviews/2026-11-09-reader-current-companion-merge/).
-The original 263+20-page pairing at 9895781 remains historical.
+[guide](notes/README-reader.md), paired with the current 269-page companion.
+The combined record has289 pages. All 69 technical labels and 209 external PDF
+links match. It guides the reading of the full proof; independent clearance
+remains open. The original263+20-page and later267+20-page pairings remain
+historical in Git and their original review directories.
 
 The second moment of the Stratonovich hyperbolic Anderson model with noise
 fractional in time: an upper bound at the correct scale

@@ -16,7 +16,9 @@ force Chen's predicted constant or create a Lean companion without approval.
 
 ## Status
 
-ACTIVE — auxiliary visual review proceeding; Kimi hold and all original gates preserved.
+Research INCOMPLETE — the focused literature/contribution revision is
+completed locally, with its Git delivery recorded in commit history. Kimi hold
+and all original scientific acceptance gates are preserved.
 
 ## Round
 
@@ -18191,3 +18193,43 @@ stale (updated 2026-11-03; 257-page/213-proof candidate, MAIN INCONCLUSIVE/low).
 A status-only wiki refresh is needed through the wiki ticket workflow; it was
 not done here. HANDOFF.md pre-flight and README now point to the digest. No
 manuscript, review, grade, gate or policy change; all gates remain as recorded.
+
+
+## 2026-11-09: new focused literature-review goal and contribution revision
+
+Le explicitly requested a new goal for the literature review and asked that
+our contribution be emphasized. He added three ongoing projects with Raluca
+Balan/JinxinWang: colored time/space d1; colored time/space d2; white-in-time
+d1/2/3. The goal tool was set to source-check/integrate the review, update both
+manuscripts, validate and deliver. It is not completion or restart of the
+original scientific goal or a waiver of its outstanding reviews.
+
+Primary published editions of Chen–Dalang2015, Balan–LeChen–XiaChen2022,
+Chen–Eisenberg2023 and Chen–Guo–Song2024 were checked at their model/main
+statements. CGS local31PDF was arXivv1; the published2024PDF was retrieved,
+pinned separately and rendered pp4257/4259 checked. Main comparison separates
+Itô–Walsh white-time, static Skorohod, fractional differential operators and
+fractional temporal covariance. CGS p^(3/2) orders are not sharp higher-moment
+constants. Include Balan/ChenHu/CDST Stratonovich context and BalanConus/HuWang
+colored Skorohod bounds under their own hypotheses. Ongoing projects get scope
+prose only: no invented titles/preprint status/proof inputs or constant identity.
+Sibling read only; no messages, queue edits, release, HPC or Lean work.
+
+notes/LITERATURE-REVIEW.md records the bounded source/result/contribution
+crosswalk, selected reading coverage and limits. No full source-proof audit,
+MathSciNet citation-chain search or exhaustive novelty verdict is claimed.
+Source editions/hash pins are in sources/literature-20261109/. Main contribution
+paragraph highlights correct-scale upper, intrinsic full spacetime-control
+constant, original amplitude/kinetic/half-action/zero case, same canonicalu,
+and occupation/white-energy bounds without claiming numerical evaluation.
+
+Both builds clean:269technical pages and20reader pages,0errors/undefined/
+overfull/tabs.69 mapped labels and209 external PDF targets valid. All215 main
+proof bodies and checked theorem-like environments unchanged modulo whitespace.
+Existing bibliography entries retained; All.bib/extra.bib unchanged. Root visual
+readback main6/7/8,reader4/5 is editorial, not independent full visual clearance.
+Evidence in reviews/2026-11-09-literature-review/; original receipts retained
+and NO230/267 visual credit transferred to new269-page PDF. MAINv5MEDIUM,
+Kimi hold,87/26localLean/L0,independent/cold/adoption gates remain. Agent16
+concurrently committed037caa6 updating the Lean header; preserve it separately.
+README/status/handoff/history now reflect the new edition and focused task.

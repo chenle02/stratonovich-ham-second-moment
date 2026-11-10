@@ -142,6 +142,23 @@ Throughout we write
   \kappa:=\frac{4-\alpha-\alpha_0}{3-\alpha}\in(1,2).
 \end{equation}
 
+\paragraph{Contribution of the present work.}
+We address the second moment of the original Stratonovich solution with
+fractional temporal covariance throughout Hypothesis~\ref{H:homog}.
+The independent upper bound reaches the scale $t^\kappa$, rather than
+only the coarse quadratic exponential scale in the source.
+The main identification gives an intrinsic variational expression for
+the limiting constant over all nonnegative smooth compact spacetime
+controls, without a separability restriction. It retains the covariance
+amplitude, kinetic coefficient one and Gaussian half-action, and includes
+the zero covariance case. The upper and lower comparisons refer to the
+same canonical solution. The occupation and spatial-energy estimates
+then give bounds on this constant; evaluating the white spatial energy
+is not a numerical evaluation of the full moment supremum.
+The earlier results discussed below concern different stochastic
+interpretations or temporal covariances and do not supply this
+identification by substitution.
+
 \paragraph{Main result and dependencies.}
 Theorem~\ref{T:intrinsic-second-moment} identifies the original point-moment
 limit for every covariance in Hypothesis~\ref{H:homog}.
@@ -241,12 +258,73 @@ the interval-field upper bound.
 
 \section{What is known}\label{S:known}
 
-All pinpoints below refer to the current author version
-\cite{chen:author2026:time-dependency} (64 pages, ``Submitted to the Annals
+Pinpoints to Xia Chen's time-dependent Stratonovich paper refer to the
+current author version~\cite{chen:author2026:time-dependency} (64 pages, ``Submitted to the Annals
 of Applied Probability'', SHA-256 \texttt{5f7385ca\dots}); see
 \path{sources/SOURCE-MANIFEST.md}. arXiv:2510.01412v1
 \cite{chen:25:time-dependency} differs in Theorem~1.2 and must not be used as
 the authority for it.
+
+\subsection{Earlier moment results and the present setting}\label{S:literature-context}
+
+For the stochastic wave equation driven by space-time white noise,
+Chen--Dalang~\cite{chen.dalang:15:moment}*{Theorem~2.3 and Corollary~1.1}
+derive moment bounds and explicit second-moment formulas, including
+rough initial data. Their random-field construction uses the
+It\^o--Walsh integral. Chen--Guo--Song~\cite{chen.guo.ea:24:moments}*{Theorem~1.1}
+extend moment analysis to a fractional SPDE family with space-time white
+noise. Besides exact second moments and their Lyapunov exponents, their
+wave specialization gives matching upper and lower $p^{3/2}$
+moment-growth orders~\cite{chen.guo.ea:24:moments}*{Proposition~5.10;
+(1.10)--(1.11), pp.~4257--4258}.
+The higher-moment constants in that comparison are not optimal; these
+bounds do not assert an exact higher-moment leading constant or the
+existence of a general higher-moment limit.
+
+With time-independent Gaussian noise, Balan--Le Chen--Xia
+Chen~\cite{balan.chen.ea:22:exact}*{Theorem~1.6}
+obtain exact large-time and high-moment asymptotics for the Skorohod
+wave equation, with a variational constant, for their homogeneous covariances in
+dimensions at most three and spatial white noise in dimensions one and two.
+This is a close predecessor for sharp hyperbolic moment asymptotics.
+Chen--Eisenberg~\cite{chen.eisenberg:23:interpolating}*{Theorems~1.6--1.7}
+develop solvability and exact moment asymptotics for fractional equations
+with time-independent noise in the Skorohod sense. Fractional time
+differentiation in that family is distinct from temporal correlation
+of the noise; its fractional time order lies strictly below two.
+For fractional temporal noise, the Skorohod moment bounds of
+Balan--Conus~\cite{balan.conus:16:intermittency} provide a further
+comparison under their respective covariance assumptions.
+Hu--Wang~\cite{hu.wang:24:matching}*{Theorem~3.7}
+obtain matching moment-growth bounds under their covariance and
+Green-kernel hypotheses; matching growth orders do not by themselves
+identify a sharp leading constant.
+
+On the Stratonovich side, Balan~\cite{balan:22:stratonovich}
+constructs the time-independent-noise solution in dimensions one and two
+under a spectral condition stronger than Dalang's condition.
+Xia Chen--Hu~\cite{chen.hu:25:hyperbolic} establish homogeneous
+moment asymptotics for the static Stratonovich model.
+The Strichartz construction of Xia Chen--Deya--Song--Tindel
+in dimensions one and two~\cite{chen.deya.ea:23:hyperbolic}
+is another Stratonovich well-posedness approach under its own noise
+and data hypotheses. Xia Chen's author-version result for fractional
+temporal noise~\cite{chen:author2026:time-dependency}*{Theorem~1.2}
+gives two-sided first-moment bounds, with an exact limit predicted
+rather than proved there. Its Remark~5.1 supplies the coarse
+second-moment upper bound. These are the direct context for the present
+second-moment problem.
+
+The distinction between interpretations matters to the argument.
+The Skorohod chaos expansion is orthogonal across orders, whereas the
+Stratonovich moment expansion retains self-pairings and unequal-order
+cross terms. The results above are therefore literature comparisons,
+not a transfer of their solutions or sharp constants to this problem.
+We derive the actual constant from the present model rather than
+prescribe a conjectured endpoint or identify an auxiliary label-one
+score with an established first-moment limit.
+
+% [held back: collaborators' unpublished work]
 
 \subsection{Stratonovich expansion and moments}
 
@@ -869,12 +947,12 @@ time line.
   \begin{equation}\label{E:pairing-source-covariance}
     \begin{split}
       \E[Y_{\epsilon_j,\delta_j}(s,x)
-        Y_{\epsilon_h,\delta_h}(t,y)]
+      Y_{\epsilon_h,\delta_h}(t,y)]
       &=\kappa_{\delta_j\vee\delta_h}(s-t)
-        (p_{\epsilon_j+\epsilon_h}*\Gamma)(x-y),\\
+      (p_{\epsilon_j+\epsilon_h}*\Gamma)(x-y),\\
       \kappa_\delta(u)&=\frac1{\Gamma_{\mathrm E}(a)}
-        \int_0^{\delta^{-1}}e^{-\lambda|u|}\lambda^{a-1}\ud\lambda,
-        \qquad a=\alpha_0.
+      \int_0^{\delta^{-1}}e^{-\lambda|u|}\lambda^{a-1}\ud\lambda,
+      \qquad a=\alpha_0.
     \end{split}
   \end{equation}
   For generalized $\Gamma$, the spatial identity follows by testing
@@ -961,9 +1039,9 @@ For nonnegative $G\in L^1((0,\infty)\times\R^d)$ define
   \begin{split}
     N_0(G)&=\int G(t,x)\ud t\ud x,\\
     N_{1,e}(G)&=\int\left|\int e^{-\lambda t+i\xi\cdot x}
-      G(t,x)\ud t\ud x\right|\nu_e(\ud\lambda)\mu_e(\ud\xi),\\
+    G(t,x)\ud t\ud x\right|\nu_e(\ud\lambda)\mu_e(\ud\xi),\\
     N_{2,e}(G)^2&=\int G(s,x)G(t,y)
-      \kappa_e(s-t)\gamma_e(x-y)\ud s\ud x\ud t\ud y.
+    \kappa_e(s-t)\gamma_e(x-y)\ud s\ud x\ud t\ud y.
   \end{split}
 \end{equation}
 Time integrations in these definitions are positive. Denote the inner
@@ -980,10 +1058,10 @@ vertex of each chain. Set
   \begin{split}
     I_D(\boldsymbol G)=\int
     &\prod_{\rho=1}^2\prod_{l\in I_\rho}
-      G_l(s_l-s_{p(l)},x_l-x_{p(l)})\\
+    G_l(s_l-s_{p(l)},x_l-x_{p(l)})\\
     &\times\prod_{e=\{j,k\}\in D}
-      \kappa_e(s_j-s_k)\gamma_e(x_j-x_k)
-      \ud\boldsymbol s\ud\boldsymbol x .
+    \kappa_e(s_j-s_k)\gamma_e(x_j-x_k)
+    \ud\boldsymbol s\ud\boldsymbol x .
   \end{split}
 \end{equation}
 The domain is the product of the two positive ordered time simplices
@@ -1009,7 +1087,7 @@ Thus, $|Q_2|$ is even and $|Q_0|+|Q_2|/2=n$.
   \begin{equation}\label{E:pairing-product-envelope}
     I_D(\boldsymbol G)\le
     \max_{(Q,\iota)\in\mathcal A_D}
-      \mathcal P_{Q,\iota}(\boldsymbol G).
+    \mathcal P_{Q,\iota}(\boldsymbol G).
   \end{equation}
   A maximizing assignment may depend on the actual kernels and edge data.
   No single assignment valid for all kernel families is asserted.
@@ -1059,7 +1137,7 @@ Thus, $|Q_2|$ is even and $|Q_0|+|Q_2|/2=n$.
   modulus of its spatial Fourier phase gives the factor
   \[
     \int |\mathcal L G_v(\lambda,\xi)|
-      \nu_{e_0}(\ud\lambda)\mu_{e_0}(\ud\xi)=N_{1,e_0}(G_v).
+    \nu_{e_0}(\ud\lambda)\mu_{e_0}(\ud\xi)=N_{1,e_0}(G_v).
   \]
   Now drop the region indicator by positivity. Remove $v$ and its edge.
   Its partner $a$ is unpaired. If $a$ is terminal in its remaining
@@ -1089,7 +1167,7 @@ Thus, $|Q_2|$ is even and $|Q_0|+|Q_2|/2=n$.
   \begin{align*}
     &N_{1,e_0}(G_v)\,[2N_{1,e_1}(F)]B_{\rm rest}\\
     &\qquad\le\tfrac12N_0(G_a)
-      [2N_{1,e_1}(G_b)][2N_{1,e_0}(G_v)]B_{\rm rest}.
+    [2N_{1,e_1}(G_b)][2N_{1,e_0}(G_v)]B_{\rm rest}.
   \end{align*}
   The inherited edge stays first exactly once; $e_0$ is first once.
   No incidence condition is needed. For $i=2$, $|R_0|=|R_1|$ and

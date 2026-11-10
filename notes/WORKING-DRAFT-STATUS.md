@@ -1,24 +1,26 @@
-# Current working draft — 267 pages
+# Current working draft — 269 pages, with a 20-page reader
 
-The TeX and PDF at `notes/notes_stratonovich_ham_second_moment.*` now store the
-November 5 integration candidate, rebuilt and committed at Le's request on
-November 9. **This is an unadopted mathematical working draft.** Its storage in
-Git does not satisfy outstanding scientific or procedural acceptance gates.
+The current TeX/PDF pair contains the November 9 literature/contribution revision
+of the earlier267-page integration candidate. **It remains an unadopted
+mathematical working draft.** The new opening contribution paragraph, literature
+comparison and ongoing-project note do not change its theorem statements or
+215 proof bodies (unchanged modulo whitespace).
 
-The previous tracked 263-page baseline is preserved at commit
-`11e009aac6fcc9fdeddb00cdd7063dc56c457aad`, at the same notes paths. The historical
-20-page reader was paired with that 263-page baseline, not this new candidate.
+The [20-page reader](notes_stratonovich_ham_second_moment_reader.pdf) matches
+this 269-page companion; the combined record has289 pages. Both PDFs build with
+zero errors, undefined references/citations and overfull boxes. All 69 embedded
+technical labels and 209 external PDF links match. Exact hashes and evidence:
+[the literature validation](../reviews/2026-11-09-literature-review/README.md).
 
-The 267-page build passes with zero errors, undefined references/citations and
-overfull boxes. The exact command, frozen bibliography, source hashes and
-original-versus-rebuilt PDF distinction are documented in
-[the checkpoint](../reviews/2026-11-09-working-draft-267-checkpoint/README.md).
+The prior263-page baseline is preserved at 11e009a and the267-page checkpoint at
+bf9c65b. Their earlier PDFs and receipts retain their original identities.
+Latest whole MAINv5 remains PASS_WITH_NOTES/MEDIUM and unaccepted under the
+recorded HIGH gate. Scoped HIGH reviews and87 local Lean facts in26 groups do
+not establish whole-paper acceptance. The historical230/267 accepted visual
+pages are bound to the old edition; no credit is automatically transferred to
+this 269-page PDF. Kimi remains on Le's temporary hold. No final cold-reader,
+whole-goal completion or release clearance is claimed.
 
-Latest whole MAIN v5 remains PASS_WITH_NOTES/MEDIUM and unaccepted under the
-recorded HIGH gate. Scoped HIGH reviews and 87 local Lean facts in 26 groups
-do not establish whole-paper acceptance. Accepted main visual coverage remains
-230/267 pages; 37 remain. Kimi is on Le's requested temporary hold. No final
-cold-reader clearance, whole-goal completion or public release is claimed.
-
-[AI development history](../AI-DEV-HISTORY.md) explains the evolution and limits.
-`Progress.md` remains the detailed workflow authority; dated entries are history.
+[The literature crosswalk](LITERATURE-REVIEW.md) distinguishes growth orders,
+exact constants and noise models. Progress.md remains workflow authority;
+AI-DEV-HISTORY.md records the development and historical limitations.

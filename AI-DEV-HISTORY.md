@@ -310,3 +310,27 @@ the self-contained product envelope rather than importing that entire step
 from Chen. Root checked pages1/4/5/19; builds are clean, the technical PDF is
 byte-identical, and independent acceptance is unchanged. See
 reviews/2026-11-09-reader-current-companion-merge/ for the exact validation.
+
+## Focused literature goal and contribution positioning
+
+Le asked for an honest evaluation of his earlier SWE work, then requested a
+new literature-review goal. The initial shortlist omitted Chen–Guo–Song; Le
+pointed it out, and it was restored as a central white-noise moment-growth
+reference. The new edition distinguishes the 2024 published paper from the
+local 2022 preprint, exact second moments from higher-moment growth orders,
+and static Skorohod results from temporally correlated Stratonovich results.
+Chen–Dalang, Balan–Le Chen–Xia Chen and Chen–Eisenberg receive specific roles;
+direct Stratonovich and colored-noise precedents retain their own hypotheses.
+
+[held back: collaborators' unpublished work]
+
+The exposition and expanded bibliography produce 269 technical pages; the
+reader remains 20 pages. All 215 technical proofs and checked theorem-like
+statements are unchanged modulo whitespace. Both builds are clean; 69 portable
+references and 209 external PDF links match. Root inspected technical pages
+6, 7 and 8 and reader pages 4 and 5, not the entire new edition independently.
+The historical 230/267 visual acceptance remains bound to the old PDF. Earlier
+review grades and bindings and the incomplete scientific contract are unchanged.
+Agent #16's concurrent commit 037caa6 corrected the Lean summary; that work was
+preserved separately. Detailed validation is retained in
+reviews/2026-11-09-literature-review/; Git records the delivered checkpoint.

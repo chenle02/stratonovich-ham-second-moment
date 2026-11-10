@@ -1,16 +1,17 @@
 # Reading edition with the current technical companion
 
 Read [the 20-page reader](notes_stratonovich_ham_second_moment_reader.pdf)
-with [the 267-page technical companion](notes_stratonovich_ham_second_moment.pdf).
+with [the 269-page technical companion](notes_stratonovich_ham_second_moment.pdf).
 The reader introduces the model, proposed result and variational constant,
 explains how the main steps fit together, and links to the detailed proofs.
 It is a guided route through the work, not a standalone 20-page proof.
-The combined record is 287 pages; no total-proof-length reduction is claimed.
+The combined record is 289 pages; no total-proof-length reduction is claimed.
 
 This November 9 revision matches the current **unadopted mathematical candidate**.
-It updates all technical label numbers/pages, explains the self-contained finite
-pairing envelope, and includes that lemma in the proof map. The technical source
-and PDF are unchanged. Its scope remains 215 OWN proofs, 241 declarations,
+It updates the literature and contribution discussion, mentions the three
+ongoing Skorohod projects, and refreshes the technical page map. The technical
+proofs and statements are unchanged modulo whitespace; the exposition and
+bibliography have been revised. Its scope remains215 OWN proofs,241 declarations,
 13 joins and nine global checks. Independent scientific and final clearance
 remain open; the reader does not change those acceptance states.
 
@@ -27,7 +28,7 @@ For future technical edits, refresh the embedded map from the newly compiled
 technical aux, rebuild the reader, and recheck its external destinations.
 Every reader TeX edit travels with its cleanly rebuilt PDF.
 
-[Current validation](../reviews/2026-11-09-reader-current-companion-merge/README.md)
+[Current validation](../reviews/2026-11-09-literature-review/README.md)
 records 69 matched labels, 209 valid external PDF links and clean builds.
 The original November 5 V4 reader at commit 9895781 was paired with the old
 263-page companion. Its original source/PDF and validation remain in Git and
