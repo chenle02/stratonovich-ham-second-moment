@@ -1,0 +1,71 @@
+Independent correspondence review: Lean statement ledger vs manuscript
+
+You are an independent, skeptical reviewer. Your workspace is a frozen,
+read-only packet. Use your file-reading and search tools (grep/search over
+files) actively; do not rely on memory. Do not modify any file.
+
+PACKET
+- candidate/statement-ledger.md : the object under review (Lean companion
+  commit 4bdffba181a7). For each of 88 Lean declarations it states what the
+  Lean statement says, which manuscript label it supports ("Paper label",
+  or "no direct label"), and which inputs stay outside Lean.
+- lean/StratonovichHAMAudit/*.lean : the 24 Lean source files (ground truth
+  for what each declaration states). lean/claims.yaml (one-line summary per
+  declaration) and lean/coverage.yaml (per-label coverage rows).
+- manuscript/notes/... : all 41 LaTeX inputs of the manuscript at revision
+  669ccc9b0724 (main file notes/notes_stratonovich_ham_second_moment.tex,
+  27 integrated_*.tex modules, 13 figure/style files). Labels are \label{...}.
+- PROVENANCE.json : byte binding of every packet file to its git blob
+  (supervisor-checked; you need not recompute hashes).
+
+The Lean proofs compile with no sorry and only standard axioms; proof
+correctness is NOT in question. Correspondence is.
+
+FOR EVERY ONE OF THE 88 LEDGER ROWS, check:
+1. FIDELITY: the ledger's "What it states" and the claims.yaml summary match
+   the Lean type exactly (hypotheses, quantifiers, strict vs non-strict,
+   parameter ranges, constants). Open the Lean file and read the statement.
+2. MAPPING (labelled rows): locate \label{<label>} by search. Does that
+   labelled statement or its proof actually use this exact fact, with
+   compatible hypotheses, ranges and constants? Cite file and line.
+   Classify OK / WEAK (Lean checks only part, and the ledger does not say
+   so) / WRONG (the label does not use it).
+3. NO DIRECT LABEL rows (55): search the manuscript for the computation
+   (distinctive constants, polynomials, exponents, symbol combinations). For
+   each such row record the search terms you used. If it IS used inside some
+   labelled statement or proof, report LABEL-FOUND:<label> with file:line;
+   otherwise ABSENT-CONFIRMED.
+4. OUTSIDE INPUTS: the listed outside inputs are really what the Lean
+   statement assumes or leaves out; flag any hypothesis that silently
+   replaces something the paper proves differently.
+5. OVERCLAIM: any sentence of the ledger (scope, module paragraphs, index,
+   "Not in Lean") that overstates what Lean checks or misdescribes the
+   manuscript. Also check the index table agrees with the per-module tables
+   and that the totals (88 = 82 theorems + 6 definitions; 33 labelled,
+   55 unlabelled) are correct.
+
+Every label cited anywhere in the ledger must be checked to exist.
+
+REPORT
+In your report's findings, give each finding an ID (K1, K2, ...), a severity
+(CRITICAL: a wrong mapping or misstatement a reader citing the row would be
+misled by; MAJOR: material imprecision; MINOR: wording), the declaration(s),
+quoted Lean and TeX with file:line, the problem, and the exact ledger fix.
+Also include a complete per-row table: all 88 rows in ledger order, each
+"<declaration> | FIDELITY OK/ISSUE | MAPPING OK/WEAK/WRONG/ABSENT-CONFIRMED/
+LABEL-FOUND:<label> | search terms (for no-label rows) | note".
+State your overall verdict and confidence. Confidence HIGH requires that
+you actually opened every Lean statement and searched the manuscript for
+every row; if you did not complete all 88 rows, list exactly which were
+skipped and give LOW or MEDIUM confidence.
+
+MAPPING TO THE REQUIRED JSON REPORT SCHEMA
+- Put the 88 per-row results in "checks", one object per ledger row:
+  claim = "<declaration>: <ledger label>", verdict = the row's MAPPING
+  result (OK, WEAK, WRONG, ABSENT-CONFIRMED or LABEL-FOUND:<label>; prefix
+  "FIDELITY-ISSUE;" if fidelity fails), reason = evidence with file:line
+  and, for no-label rows, the search terms used.
+- CRITICAL findings go in findings.fatal, MAJOR in findings.major, MINOR in
+  findings.minor; each finding string starts with its ID (K1, ...).
+- required_repairs: only ledger changes that must be made before the ledger
+  can be cited as a correct correspondence record.

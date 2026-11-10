@@ -41,8 +41,15 @@
 - **Not claimed:** no Comparator tier, no whole-paper gate, no correspondence
   re-review of the packaged statements (the ledger is an AI-drafted review
   draft), no Palomar eligibility (seam companion, ADR-0070 D4).
-- **Next:** second-family (Kimi-K3) or human correspondence read of the
-  post-repair ledger at a78c5d0 for a HIGH gate;
+- **Kimi-K3 ledger review (2026-11-10):** read-only, tool-assisted over
+  669ccc9, companion 4bdffba: content PASS_WITH_NOTES/high, 88/88 rows,
+  0 fatal/0 major/4 minor (all accepted, wording; companion 01e2480), 55
+  absences confirmed by search. Receipt INVALID-REPORT (supervisor's
+  contract used non-schema check verdicts; recover-report refused), so the
+  correspondence gate is NOT closed by receipt. Record:
+  reviews/2026-11-10-lean-ledger-kimi-k3/ADJUDICATION.md.
+- **Next:** new Kimi-K3 attempt at 01e2480 with a schema-conforming,
+  contract-checked contract (needs Le's go-ahead), or a human read;
   wave L1 (G0 pair-partition counts) when opened.
 
 - **Standalone local checks (current, 2026-11-09):** 87 accepted finite
