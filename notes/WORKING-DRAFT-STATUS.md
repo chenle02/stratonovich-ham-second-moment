@@ -20,7 +20,7 @@ Latest whole MAINv5 remains PASS_WITH_NOTES/MEDIUM and unaccepted under the
 recorded HIGH gate. Scoped HIGH reviews and87 local Lean facts in26 groups do
 not establish whole-paper acceptance. The historical230/267 accepted visual
 pages are bound to the old edition; no credit is automatically transferred to
-this 275-page PDF. Kimi remains on Le's temporary hold. No final cold-reader,
+this 275-page PDF. Le lifted the Kimi hold on 2026-11-10. No final cold-reader,
 whole-goal completion or release clearance is claimed.
 
 [The literature crosswalk](LITERATURE-REVIEW.md) distinguishes growth orders,

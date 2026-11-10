@@ -18288,3 +18288,17 @@ are preserved. The companion still points to cf979d6 until its owner consumes
 the new source notification; there is no Lean code or package change here.
 The new wiki status belongs to its queue owner and will need a later refresh
 for the illustrated edition. No new reviews, HPC, release or author contact.
+
+
+## 2026-11-10: Le lifts the Kimi hold (Agent #16)
+
+Le stated in the Agent #16 session: "Kimi is available now". This ends the
+temporary hold of 2026-11-09 (ed19d77). Kimi-K3 requests are allowed again
+under the normal review protocol: frozen inputs, read-only execution, and
+no confidence-only retries of unchanged inputs. Agent #22's Kimi-K3 Lean
+ledger correspondence review over 669ccc9, which started before this
+statement was recorded, may proceed. Agent #16 had asked it to stop
+pending confirmation; that request is withdrawn. The Kimi-K3 whole-paper
+HIGH review (gate 3) is now possible but not started; no review is
+dispatched by this entry. HANDOFF, STATUS-DIGEST and
+notes/WORKING-DRAFT-STATUS.md updated accordingly.

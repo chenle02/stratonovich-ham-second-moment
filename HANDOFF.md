@@ -35,8 +35,9 @@ conversation but not implemented in the project contract or a private companion.
    notes paths. Existing review receipts retain their original version bindings.
 4. Latest accepted local Lean total is 87 facts in 26 groups. Official companion
    wave remains L0/PROPOSED; no separate project package or cluster job exists.
-5. Kimi remains on Le's temporary hold. Do not issue requests or probes, infer
-   replenishment, change account settings or resume it automatically.
+5. Kimi hold LIFTED by Le on 2026-11-10 ("Kimi is available now"). Kimi-K3
+   requests are allowed again under the normal review protocol; no
+   confidence-only retries of unchanged inputs.
 
 ## Concrete deliverables for the next session
 

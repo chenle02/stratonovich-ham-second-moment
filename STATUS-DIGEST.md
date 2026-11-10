@@ -35,7 +35,7 @@ proofs / 241 declarations, clean build (0 err / 0 undef / 0 overfull).
 |---|---|---|---|
 | 1 | Complete written proofs | Written; not accepted | main TeX |
 | 2 | DeepSeek V4 Pro whole MAIN (HIGH) | **MEDIUM — unaccepted.** PASS_WITH_NOTES, 226 PASS / 37 PWN of 263 rows, no fatal/major/required repair | `reviews/2026-11-09-full-main-v5-kernel-medium-unaccepted/` |
-| 3 | Kimi-K3 whole review (HIGH) | **BLOCKED — Le's hold** (weekly 429 quota) | Progress 2026-11-09 |
+| 3 | Kimi-K3 whole review (HIGH) | **Open — Kimi available again** (Le lifted the hold 2026-11-10); whole review not yet run | Progress 2026-11-10 |
 | 4 | Visual / rendered PDF | **Historical 230/267 accepted on the old PDF; 37 old pages open. No automatic visual-credit transfer to the current275-page edition** | `reviews/2026-11-09-final-local-glyph-correspondence/` |
 | 5 | Visual MEDIUM policy | **PROPOSED, NOT ADOPTED — Le's decision** | `reviews/2026-11-09-visual-policy-proposal/POLICY-PROPOSED.md` |
 | 6 | Calibrations (α₀→0, p=1, Jensen, Skorohod comparison) | Open as a final gate | AGENTS.md §Calibrations |
@@ -54,7 +54,7 @@ proofs / 241 declarations, clean build (0 err / 0 undef / 0 overfull).
    PROJECT-GOAL.md / Progress.md. Record it before new research work.
 2. Adopt or reject the visual MEDIUM policy proposal (gate 5).
 3. Path to a HIGH whole-math verdict without unchanged retries (gate 2),
-   and when the Kimi hold ends (gate 3).
+   and scheduling the Kimi-K3 whole review now that Kimi is available (gate 3).
 4. Lean companion: created and verified (decision point 4 settled by Le,
    2026-11-09). Open: the community Lean effort (release design D9).
 
