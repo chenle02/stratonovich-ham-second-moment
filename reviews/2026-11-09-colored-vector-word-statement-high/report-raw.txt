@@ -1,0 +1,82 @@
+```json
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    ".review/required-sources.json lines 1-60 (complete; read plan only)",
+    "CONSUMER-BRIDGES.md lines 1-16 (complete)",
+    "ColoredWord.statement.lean.txt lines 1-106 (complete)",
+    "MICRO-CONTRACT.md lines 1-16 (complete)",
+    "chaos-basis.lean.txt lines 1-444 (complete)",
+    "gaussian-product.lean.txt lines 1-186 (complete)",
+    "hermite-products.lean.txt lines 1-388 (complete)",
+    "hermite-word.lean.txt lines 1-62 (complete)",
+    "imported-types-and-axioms.stdout lines 1-90 (complete)",
+    "mathlib-vector-Lp-api.lean.txt lines 1-194 (complete)",
+    "normalized-coordinate.lean.txt lines 1-103 (complete)",
+    "paper-complex-phase-definition.tex.txt lines 1-24 (complete)",
+    "paper-finite-word.tex.txt lines 1-48 (complete)",
+    "paper-fixed-split.tex.txt lines 1-365 (complete)",
+    "paper-interval-contractions.tex.txt lines 1-74 (complete)",
+    "paper-phase-definition.tex.txt lines 1-14 (complete)",
+    "small-case-falsification.json lines 1-53 (complete)",
+    "source-bindings.json lines 1-75 (complete)",
+    "statement-type.stdout lines 1-15 (complete)",
+    "vector-projection.lean.txt lines 1-160 (complete)"
+  ],
+  "checks": [
+    {
+      "claim": "CWORD01: exact closed types, structural/nonstructural assumptions, noncircularity; Type0 versus physical scope; empty colors/words/zero covariance",
+      "verdict": "PASS",
+      "reason": "statement-type.stdout lines 1-14 confirms all four Props are closed and match ColoredWord.statement.lean.txt lines 77-103. Their only hypotheses are type and instance binders: C, B, E : Type, [DecidableEq C], and E a complete real inner-product space. There are also the data m, K, F, F0, v, N, w and c. Statement 3 has exactly one nonstructural hypothesis, ∀ c, counts w c ≤ N c (line 102). No domain, support, vacuum, projection or cutoff-equality fact is a premise. Statement 2 is not used as an input to statement 3. It is derivable from statement 1, the frame helper and projection_realize. Type0 binders match HermiteWord's {C B V : Type} (hermite-word line 5). Type0 still contains L2(R^d), the band phase spaces and finite direct sums of them, so physical dimension is not restricted. Degenerate cases are well-posed. For an empty word, counts = 0 and cut = raw by definition. If m c = 0, signal and insertCoeff are empty sums, so coordinate gives toLp 0 = 0. K = 0 (zero covariance) gives zero insertions. An empty or infinite C, hence an infinite Index m, is allowed by noise = infinitePi (gaussian-product line 35). C needs no Fintype because colorDegree is a Finsupp sum."
+    },
+    {
+      "claim": "CWORD02: dependent coordinate set, total degree/count guard, normalized raising and lowering, zero occupation, finite sums, genuine vector coefficients, parentheses, K action, no dropped self-contraction",
+      "verdict": "PASS",
+      "reason": "Index m = Σ c, Fin (m c) (line 16) is exactly the source set {g_ij}. colorDegree Sigma.fst ν c sums ν over all modes of color c (vector-projection lines 34-40), so colorLow is the per-color total-degree cutoff of paper-finite-word line 13, not a per-mode cutoff. In insertCoeff (lines 29-36), ∑ j : Fin (m c) binds the whole parenthesized sum of both singles, so raising and lowering both sit inside the mode sum. Both summands apply K c j to the coefficient x. Raising uses sqrt(↑ν⟨c,j⟩ + 1), with the cast applied before adding 1. Lowering uses sqrt(↑ν⟨c,j⟩) at ν − e_cj. At ν_cj = 0, truncated subtraction gives index ν with coefficient sqrt 0 • Kx = 0, so it contributes nothing. This matches normalized_coordinate (normalized-coordinate lines 61-69, kernel type in imported-types lines 1-14) and paper-finite-word lines 28-31. Lowering is retained, so the self-contraction term is not dropped (paper line 41-43). Coefficients are arbitrary vectors in E, not scalars."
+    },
+    {
+      "claim": "CWORD03: actual Gaussian Lp signal/coordinate, natural domain, AE representative issue, totalization, and both domain targets excluding every fallback at all raw and compressed prefixes",
+      "verdict": "PASS",
+      "reason": "signal (lines 38-40) is the pointwise Σ_j ω_cj • K_cj(g ω), using the actual Gaussian coordinate. coordinate (lines 44-47) branches on MemLp of the signal of the fixed Lp coercion ↑↑g. That is the natural maximal L2 domain of the multiplication operator. MemLp and MemLp.toLp do not depend on the representative chosen. No Prop asserts any pointwise identity between a representative and polyValue: polyValue appears in no Prop, and all equalities are Lp equalities. Statement 1 is true. realize f is a.e. equal to Σ_ν (Hm ν/√ν!) • f ν, via coeFn_compLp (mathlib-api lines 66-70) and hermiteLp_ae (chaos-basis line 359). Its coordinate product has all moments, and the AE-transferred recurrence gives realize ∘ insertCoeff. The frame helper is true: (F ∘L toSpanSingleton x) = toSpanSingleton (F x), and compLp is additive (add_compLp, line 97). By induction, rawVector w = realize(rawCoeff w) and cutVector w = realize(cutCoeff w), using projection_realize (vector-projection lines 105-116). Statement 2 is stated exactly at the arguments coordinate receives. For raw this is rawVector w with the head color (line 66 vs line 94). For compressed it is project N (cutVector w) (line 73 vs line 95). It quantifies over every w, c and N. So the dif_pos branch is the one taken at every prefix of both words, with or without a cutoff guard. The conclusion is not vacuous, and the domain is the right one."
+    },
+    {
+      "claim": "CWORD04: chronological order, F0/vacuum and list reversal, arbitrary noncommuting frames/K, coupled background/phase coefficient Hilbert space; comparison with finite-word and fixed-split proofs including P before and after each insertion",
+      "verdict": "PASS",
+      "reason": "The base case realize(vacuum m (F0 v)) = atom 0 (F0 v) equals 1⊗F0 v, since Hm 0 = 1 and mfact 0 = 1 (hermite-products lines 305-307). The step (c,b)::w ↦ F_b(P J_c P(prev)) (lines 72-73) reproduces (I⊗F_n)(PJ_{i_n}P)…(PJ_{i_1}P)(I⊗F_0)(1⊗v) of paper-finite-word lines 17-21, with list [(i_n,b_n),…,(i_1,b_1)] and P on both sides of every insertion. The raw word (line 66) matches lines 19-20. Position-dependent frames are available by taking B = Fin n. No Prop assumes commutation between K_cj, F_b or F0. E is an arbitrary complete real inner-product space, so it may be E_rho with coupled background and phase operator matrices. Fixed-split B_i = P S_b(Σ g M)S_b P (paper-fixed-split line 11) and J_i(u,w) = (0, σ_i B_i u) (line 180) correspond to K_ij(u,w) = (0, σ_i S_b M_{e_ij} S_b u) with P before and after. The chronological product W_A (lines 234-236, rightmost first) maps to F0 = 𝓘_1P_1𝓘_0 and F_b = the segment products between insertions. Each cross color occurs once and N_i = 2 ≥ 1 (lines 182, 221-226), so statement 3's guard holds."
+    },
+    {
+      "claim": "CWORD05: actual orthogonal P versus coefficient filter, coefficient-to-Lp links, applicability of the generic induction, no proxy mislabeled as concrete, and the complex-real/finite-background boundary",
+      "verdict": "PASS",
+      "reason": "project (lines 49-51) is the actual starProjection onto cutoffSpace, the closure of the span of all atoms with colorLow. It is not defined as a filter. The filter appears only in cutCoeff, and projection_realize, whose kernel type and axioms are in imported-types lines 19-30, identifies the two on polynomials. cut_eq_raw (hermite-word lines 35-59) applies with Good d f := ∀ ν ∈ f.support, ∀ c, colorDegree ν c ≤ d c. hv0 holds for single 0 x. hJ holds because ν+e_cj bumps only color c and ν−e_cj ≤ ν. hF holds because mapRange shrinks support. hP holds because the filter is the identity when d ≤ N. All of these must be proved for the exact definitions; none is assumed. The Lp conclusion then follows through the frame and coordinate links. rawCoeff and cutCoeff are labeled proof tools and do not stand in for the Lp claim. CONSUMER-BRIDGES lines 7-13 are correct as mathematics. The phase-norm equivalence constants min(1,(ρ²+b²)^{-1}) and max(1,ρ^{-2}) are correct. The finite-background isometry rests on scalar orthonormality and independence of the cross and background coordinate groups. Real and complex projections agree because the span is i-stable. These bridges are declared mathematics, not kernel results, and that boundary is kept."
+    },
+    {
+      "claim": "CWORD06: satisfiability/value/falsification probes and scope exclusions",
+      "verdict": "PASS",
+      "reason": "I recomputed the probes. One mode, identity K and F: J(h0 v) = h1 v and J(h1 v) = √2 h2 v + h0 v. So the length-2 raw word is v h0 + √2 h2 v, which is non-zero in both degree 0 and degree 2. With N = 1, the compressed word is P(√2 h2 v + h0 v) = h0 v ≠ raw. This is consistent with the guard counts = 2 > 1 failing. With K = swap, F = diag(1,2), v = e0 and F0 = id: J(h0 e0) = h1 e1, then F gives 2h1 e1, then J gives √2 h2 (2e0) + h0 (2e0), and F leaves this unchanged. That is degree0 (2,0) and degree2 √2(2,0), matching small-case-falsification.json lines 28-31 and 45-51. The wrongly commuted FFKKv = (1,0) differs. For two modes of one color with N_c = 2, the term h_{e1+e2} has color degree 2 and is retained, which confirms the total-degree reading. Arbitrary infinite-dimensional E is admitted. MICRO-CONTRACT line 15 excludes the full fixed-cutoff propagator identity, Bochner integration, infinite cutoff, analytic estimates and SPDE claims, and no Prop asserts any of them."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "polyValue (ColoredWord.statement.lean.txt lines 19-22) appears in none of the four Props. Its docstring 'canonical polynomial representative' therefore has no use in these statements. A private AE lemma realize f =ᵐ polyValue f would be the natural link for the proof, but it is not required by the statement.",
+      "Statement 2 gives domain membership only. The prefix value identities rawVector w = realize(rawCoeff w) and cutVector w = realize(cutCoeff w) are implicit intermediate facts. Stating them as private lemmas would make the coefficient-to-Lp link auditable. This is optional.",
+      "Fixed-split consumer (paper-fixed-split lines 11-14, 174-177, 221-226): the actual background potential uses the full P, which includes cross-color cutoffs. So P_z equals I⊗F_bg only on range(P_cross), not on the whole space. The cut word only ever feeds F inputs from range(P) (vacuum start, and outputs of P J P). Instantiating F_b := the compressed background-only evolution on E_rho is therefore correct. CONSUMER-BRIDGES.md line 9 could state this restriction explicitly. This is a source-correspondence clarification, not a defect in the statement.",
+      "Complex-to-real bridge (CONSUMER-BRIDGES.md line 13): in Mathlib, viewing a complex inner-product space as a real one goes through a non-instance definition, which needs a type synonym. A kernel-level consumer therefore needs extra glue. The packet correctly marks this as outside the kernel.",
+      "CONSUMER-BRIDGES.md line 5 says the arbitrary-Mode theorem is intended to be universe-polymorphic, while the ColoredWord Props are Type0. This is harmless for the physical spaces, but the two scopes should not be conflated.",
+      "small-case-falsification.json implicitly takes F0 = id and the same F at both positions. Stating this would make the probe fully self-describing."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "This is a statement, definition and source-application review done by reasoning. No proof of the four Props exists, and none was kernel-checked here. Truth and provability were established by hand-derived proof routes, not compiled.",
+    "Imported kernel deductions (normalized_coordinate, projection_realize, raw_support, cut_eq_raw) were taken at their printed types and axioms and were not re-proved. Hashes in source-bindings.json were not recomputed. No shell was used.",
+    "Lean elaboration risks that affect proofs, not statements, were not tested, such as a mismatch between the DecidableEq instance on the Sigma index and the classical instance. statement-type.stdout shows the Props typecheck.",
+    "Paper excerpts are frozen fragments. Lemma L:fock-form, L:phase-contractions, L:interval-complex and the full manuscript were not available. Source correspondence is judged only against the supplied excerpts.",
+    "The CONSUMER-BRIDGES mathematics (finite-background isometry, density, complex-real projection agreement) was checked for plausibility and correctness of constants, not formally verified.",
+    "This AI review is not human verification and not a novelty audit."
+  ]
+}
+```
