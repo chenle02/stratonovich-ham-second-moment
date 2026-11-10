@@ -162,6 +162,13 @@ All.bib -> ../refdb/All.bib (read-only), extra.bib (local additions)
   `<HUB>:<HOME>/<REMOTES>/Article-Stratonovich-HAM-Second-Moment.git`.
 - Atomic commits per unit of work; push after each; stage only your own
   paths (never `git add -A`).
+- Several agents share this checkout and its Git index. **Commit by
+  pathspec only:** `git commit -m "msg" -- <path> ...`. A pre-commit guard
+  (`scripts/guard-shared-index.sh`, called from `.git/hooks/pre-commit`)
+  refuses plain, `-a`, `-i` and `--amend` commits; for a deliberate
+  whole-index commit use `SHARED_INDEX_OK=1 git commit ...`. Never use
+  `--no-verify`. Before pushing, check `git show --stat HEAD` and that the
+  branch is not already ahead with another agent's commits.
 - After every push from a non-<HUB> machine, sync <HUB>:
   `ssh <HUB> 'cd "<HOME>/workspace/svn/Article-Stratonovich-HAM-Second-Moment" && git fetch origin --prune && git pull --rebase --autostash'`
   and verify HEAD parity. Never drop or reset another agent's work.
