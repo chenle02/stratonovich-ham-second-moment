@@ -129,10 +129,35 @@
   ledger rows (incl. the H:homog model); not human verification; the
   Rayleigh lemma's "In particular" application stays outside Lean; any
   later change to these rows or cited labels needs a successor review.
-- **Next:** human statement read (A1) still recommended; further W1 work
-  held pending Le's answer on community entry points (#16); next wave candidates on the board (W1: B3, B9, B23,
-  B24, C26; W2/W3 need foundations);
-  wave L1 (G0 pair-partition counts) when opened.
+- **Wave L2 (2026-11-10, built and reviewed):** three further whole
+  results (board C26, B23, B24; B3, B4, B9 stay reserved as community entry
+  points per Le via #16): S:temporal-equilibrium (L:equilibrium-gamma-beta
+  and L:temporal-equilibrium with the manuscript's hypotheses, nothing
+  supplied; the potential identity proved on all of [0,1] by a Moebius
+  substitution instead of the TeX series), P:radius-mean-anchor (every
+  conclusion; the moment bound of C:radius-covariance-residuals supplied,
+  measurability hXmeas explicit) and L:masked-trig-products (every
+  conclusion, all four cos/sin cases; completion membership and the
+  modulation bound supplied). 84 theorems, 24 public definitions, 13
+  refutations; 223 claims; coverage 7 same-assumptions, 18 inputs-supplied,
+  4 outside. No manuscript defect found (minor observations: r, rho >= 0 and
+  a > 0 for the potential identity are not needed; measurability of the
+  C^theta norm is implicit). Companion c4fa5be..a2e9625; lean-pkg receipt at
+  79afdde (fresh build, 0 sorry, 223 claim axioms), verified-private
+  re-gated b876362 -> 9033c4e -> 79afdde; claims synced at a2e9625.
+- **Wave L2 correspondence (2026-11-10):** three Codex GPT-6.1-Sol reviews
+  at c4e0620 (TemporalEquilibrium FAIL: two route-auxiliary helpers
+  mislabelled as TeX proof steps; RadiusMeanAnchor and MaskedTrigProducts
+  PASS_WITH_NOTES), all 6 findings accepted and repaired at 17f0490; narrow
+  confirmation at 17f0490 PASS_WITH_NOTES/high, accepted, 1 minor (fixed
+  79afdde). Records: reviews/2026-11-10-lean-wave-l2-*/ADJUDICATION.md.
+  **The wave L2 correspondence gate is NOT closed:** it awaits Le's
+  acceptance of this review sequence.
+- **Next:** Le's decision on the wave L2 gate; Easley external kernel
+  replay (leanchecker --fresh per module) of 837778a (Lean sources
+  identical to 79afdde) in progress; human statement read (A1) still
+  recommended; remaining W1 board items (excluding the reserved B3, B4,
+  B9); W2/W3 need foundations.
 
 - **Standalone local checks (current, 2026-11-09):** 87 accepted finite
   facts in 26 local seams. The latest promotion added three concrete
@@ -159,6 +184,7 @@
 | L0 | PROPOSED | 2026-10-26 | Setup by session #4; no Lean code yet |
 | L0 | PROPOSED | 2026-10-28 | Readiness/strategy refresh after source and plane-endpoint reviews; creation approval still pending, no package or Lean verification |
 | L0 | CLOSED | 2026-11-09 | Companion created and registered (verified-private at 38d1616); 23 seams packaged, 3 GaussianChaos seams withheld; manuscript anchor cf979d6 |
+| L2 | REVIEWED, gate awaiting Le | 2026-11-10 | Three whole results (C26, B23, B24); verified-private at 79afdde; reviews/2026-11-10-lean-wave-l2-* |
 
 ## New proof seams retained for later statement fences
 
