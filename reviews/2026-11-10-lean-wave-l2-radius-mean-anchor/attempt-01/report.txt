@@ -1,0 +1,220 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "PROVENANCE.json:1-548 — complete.",
+    "lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean:1-546 — complete.",
+    "candidate/statement-ledger.md:1-133,288-367,410-432,686-771,871-897 — partial file; complete required Scope, Index by label, RadiusMeanAnchor section, and relevant cross-reference contexts.",
+    "lean/claims.yaml:1148-1380 — partial file; complete RadiusMeanAnchor entries.",
+    "lean/coverage.yaml:1-342 — complete.",
+    "manuscript/notes/integrated_radius_anchor.tex:1-339 — complete.",
+    "manuscript/notes/integrated_actual_operator_driver.tex:1-80 — partial file; complete required range.",
+    "manuscript/notes/integrated_cameron_mean.tex:1-20,270-330 — partial file; complete required range.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:150-200 — partial file; complete required range.",
+    "manuscript/notes/integrated_source_convergence.tex:1-124 — partial file; Gaussian-transfer statement and proof read completely. Additional search-only excerpts:135,141,149,155,165,195,322-323,332,370,377-378,412,417.",
+    "Manuscript-wide label search returned the cited labels at integrated_radius_anchor.tex:10,17,159,248,281,293,298; integrated_cameron_mean.tex:2; notes_stratonovich_ham_second_moment.tex:169."
+  ],
+  "checks": [
+    {
+      "claim": "StratonovichHAMSecondMoment.RadiusMeanAnchor.anchor_Q_iff: P:radius-mean-anchor",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean:53-55 assumes 'ha : a < 1' and proves the stated equivalence. TeX manuscript/notes/integrated_radius_anchor.tex:323-325 says the last Q condition 'is equivalent to Q(1-a) > 2d'; a<1 follows from H:homog. Ledger:738 and claims.yaml:1152 accurately describe this harmless real-parameter generalization."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RadiusMeanAnchor.anchor_margin_pos: P:radius-mean-anchor",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean:59-60 assumes 'a < 1', '0 < Q', and '2*d/(1-a) < Q'. TeX manuscript/notes/integrated_radius_anchor.tex:323-325 uses exactly this cutoff and '2Q > 0' to obtain e_anchor>0. Ledger:739 and claims.yaml:1159 correctly disclose arbitrary real d."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RadiusMeanAnchor.supNorm: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean:71,78 defines 'sSup (supSet B f)' without boundedness hypotheses. TeX manuscript/notes/integrated_actual_operator_driver.tex:23-24 specifies 'the supremum norm plus the theta-Hölder seminorm'. Ledger:699-706 discloses the real-supremum convention and bounded-path restriction; ledger:740 and claims.yaml:1166 are faithful. No separately labelled assertion is claimed."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RadiusMeanAnchor.holderSemi: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean:74-81 takes the real supremum of '‖f t - f s‖ / |t - s| ^ θ' for distinct points in Icc 0 B. TeX manuscript/notes/integrated_actual_operator_driver.tex:23-24 calls for the theta-Hölder seminorm. Ledger:741 and claims.yaml:1173 match, with the unbounded-set convention disclosed at ledger:704-706."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RadiusMeanAnchor.holderNorm: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean:84 defines 'supNorm B f + holderSemi θ B f'. TeX manuscript/notes/integrated_actual_operator_driver.tex:23-24 defines the norm as 'the supremum norm plus the theta-Hölder seminorm', not a maximum or equivalent rescaling. Ledger:742 and claims.yaml:1180 preserve this exact normalization; ledger:705-708 limits its norm interpretation to bounded Hölder restrictions."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RadiusMeanAnchor.IsCHolder: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean:87-88 requires 'BddAbove (supSet B f) ∧ BddAbove (quotSet θ B f)'. TeX manuscript/notes/integrated_radius_anchor.tex:11-14 has 1/2<theta<1, where these conditions precisely characterize finite C^theta norm on [0,B]. Ledger:702-708 and claims.yaml:1187 correctly describe the representation in its manuscript application."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RadiusMeanAnchor.stop: P:radius-mean-anchor",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean:91 defines 'fun u => f (min u ℓ)' without additional hypotheses. TeX manuscript/notes/integrated_radius_anchor.tex:287 uses 'M_R(Y_m)(min(u,ell_m))', with constant extension discussed at:308-309. Ledger:744 and claims.yaml:1194 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RadiusMeanAnchor.supNorm_nonneg: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean:93-94 proves '0 ≤ supNorm B f' without boundedness assumptions. TeX manuscript/notes/integrated_actual_operator_driver.tex:23-24 uses a supremum norm but has no separately stated nonnegativity result. Ledger:745 and claims.yaml:1201 accurately identify an internal fact about the explicit representation."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RadiusMeanAnchor.holderSemi_nonneg: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean:96-97 proves '0 ≤ holderSemi θ B f' for arbitrary parameters. TeX manuscript/notes/integrated_actual_operator_driver.tex:23-24 supplies the seminorm convention, not a labelled nonnegativity assertion. Ledger:746 and claims.yaml:1208 match the Lean type, including its unrestricted domain."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RadiusMeanAnchor.holderNorm_nonneg: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean:99-100 proves '0 ≤ holderNorm θ B f' unconditionally. TeX manuscript/notes/integrated_actual_operator_driver.tex:23-24 defines the sum of the two norm components. Ledger:747 and claims.yaml:1215 faithfully report this representation helper without claiming a direct label."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RadiusMeanAnchor.min_mem_Icc: no direct label",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean:102-104 assumes '0 ≤ ℓ' and 'u ∈ Icc 0 B'. TeX manuscript/notes/integrated_radius_anchor.tex:287 uses stopping at true block lengths, which lie in [0,B) or equal B by manuscript/notes/integrated_cameron_mean.tex:299-301. Ledger:748 and claims.yaml:1222 match the elementary, more general helper."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RadiusMeanAnchor.stop_supSet_le: P:radius-mean-anchor",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean:106-108 assumes '0 ≤ ℓ' and 'BddAbove (supSet B f)'. TeX manuscript/notes/integrated_radius_anchor.tex:308-309 says stopping 'does not increase its supremum'; its paths already have finite C^theta norm. Ledger:749 and claims.yaml:1229 correctly state the pointwise supremum-bound step, with weaker harmless hypotheses."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RadiusMeanAnchor.stop_quotSet_le: P:radius-mean-anchor",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean:112-114 assumes '0 ≤ θ', '0 ≤ ℓ', and bounded Hölder quotients. TeX manuscript/notes/integrated_radius_anchor.tex:308-309 asserts that stopping does not increase the Hölder seminorm; its theta>1/2 and true block lengths imply these hypotheses. Ledger:750 and claims.yaml:1236 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RadiusMeanAnchor.stopped_isCHolder: P:radius-mean-anchor",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean:134-137 assumes '0 ≤ θ', '0 ≤ ℓ', and 'IsCHolder θ B f'. TeX manuscript/notes/integrated_radius_anchor.tex:287-289,308-309 uses the stopped path in C^theta and proves nonincrease of both components. Ledger:751 and claims.yaml:1243 correctly isolate the resulting membership statement."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RadiusMeanAnchor.stopped_path_sup_le: P:radius-mean-anchor",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean:140-142 assumes '0 ≤ ℓ' and bounded supSet, proving 'supNorm B (stop ℓ f) ≤ supNorm B f'. TeX manuscript/notes/integrated_radius_anchor.tex:308-309 states the same supremum contraction for its C^theta paths. Ledger:752 and claims.yaml:1250 match; no zero-start assumption is needed for this particular inequality."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RadiusMeanAnchor.stopped_path_holder_le: P:radius-mean-anchor",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean:146-149 assumes '0 ≤ θ', '0 ≤ ℓ', and bounded quotSet. TeX manuscript/notes/integrated_radius_anchor.tex:308-309 asserts nonincrease of the Hölder seminorm under its stronger parameter and block hypotheses. Ledger:753 and claims.yaml:1257 preserve the inequality and conditions."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RadiusMeanAnchor.stopped_holderNorm_le: P:radius-mean-anchor",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean:151-153 assumes '0 ≤ θ', '0 ≤ ℓ', and 'IsCHolder θ B f'. TeX manuscript/notes/integrated_radius_anchor.tex:308-309 gives contraction of both components, whose sum is the manuscript norm by manuscript/notes/integrated_actual_operator_driver.tex:23-24. Ledger:754 and claims.yaml:1264 correctly report contraction with constant one."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RadiusMeanAnchor.stop_zero_path: P:radius-mean-anchor",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean:157-160 assumes 'hf0 : f 0 = 0' and concludes zero on Icc 0 B. TeX manuscript/notes/integrated_radius_anchor.tex:154-155 specifies paths 'starting at zero', and:309-310 says an empty last interval gives the zero path. Ledger:755 and claims.yaml:1271 correctly retain the essential zero-start hypothesis."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RadiusMeanAnchor.smul_isCHolder_and_le: P:radius-mean-anchor",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean:164-168 assumes a real normed space and 'IsCHolder θ B f', allowing arbitrary real g and bounding by '|g| * holderNorm'. TeX manuscript/notes/integrated_radius_anchor.tex:287,290,315-317 scales the stopped path by positive g_delta. Ledger:756 and claims.yaml:1278 accurately state the more general scalar step; its inequality suffices without changing constants."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RadiusMeanAnchor.blockPath: P:radius-mean-anchor",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean:185-186 defines 'fun u => g • P (min u ℓ)'. TeX manuscript/notes/integrated_radius_anchor.tex:287 defines 'X_m(u)=g_delta M_R(Y_m)(min(u,ell_m))'. Ledger:757 and claims.yaml:1285 match exactly after the disclosed abstraction of the operator-valued path to a real normed-space-valued path."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RadiusMeanAnchor.blockPath_norm_le: P:radius-mean-anchor",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean:190-192 assumes '0 ≤ θ', '0 ≤ ℓ', and 'IsCHolder θ B P'. TeX manuscript/notes/integrated_radius_anchor.tex:308-317 combines stopping contraction with g_delta scaling. Ledger:758 and claims.yaml:1292 correctly state the resulting '|g|' bound, with no extra constant."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RadiusMeanAnchor.block_count_le: P:radius-mean-anchor",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean:204-205 assumes '0 < δ', '0 < B', and 'δ * B < 1', using the natural floor. TeX manuscript/notes/integrated_radius_anchor.tex:282-284,320-321 uses the same positive floor argument for integer B≥1. Ledger:759 and claims.yaml:1299 faithfully state both conclusions; natural and integer floors coincide here."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RadiusMeanAnchor.block_mass_le: P:radius-mean-anchor",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean:214-215 assumes '0 < δ', '0 < B', 'δ * B < 1' and concludes δ(N+1)≤2/B. TeX manuscript/notes/integrated_radius_anchor.tex:316-321 uses N+1≤2/(δB) in exactly this way. Ledger:760 and claims.yaml:1306 match the implied scalar consequence."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RadiusMeanAnchor.ell: P:radius-mean-anchor",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean:223-224 defines B for m<N and 'δ⁻¹ - N*B' otherwise. TeX manuscript/notes/integrated_cameron_mean.tex:299-301 defines 'ell_m=B for m<N' and 'ell_N=δ⁻¹-NB'; manuscript/notes/integrated_radius_anchor.tex:282-284 imports that partition. Ledger:761 and claims.yaml:1313 match on every used index m≤N; extending the last value to unused m>N is harmless."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RadiusMeanAnchor.ell_mem: P:radius-mean-anchor",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean:227-228 assumes '0 < δ', '0 < B' and proves '0 ≤ ell δ B m ∧ ell δ B m ≤ B'. TeX manuscript/notes/integrated_cameron_mean.tex:299-301 gives full-block length B and last length in '[0,B)'. Ledger:762 and claims.yaml:1320 correctly state the non-strict bound needed for stopping, not a claim to formalize strictness of the last-length assertion itself."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RadiusMeanAnchor.lyapunov_mean_le: P:radius-mean-anchor",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean:245-248 assumes 'IsProbabilityMeasure μ', '1 ≤ p', pointwise nonnegative Z, AE-strong measurability, and integrable Z^p. TeX manuscript/notes/integrated_radius_anchor.tex:288-292,310-315 uses a nonnegative norm aggregate, p≥1, and 'Probability normalization and Lyapunov'. Ledger:763 and claims.yaml:1327 accurately make the ordinary expectation side conditions explicit and add integrability as a conclusion."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RadiusMeanAnchor.mean_anchor_bound_general: P:radius-mean-anchor",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean:276-283 assumes probability μ, δ≥0, p≥1, A≥0, nonnegative Y, integrable Y_m^p and '∫ Y_m^p ≤ A^p' for m≤N. TeX manuscript/notes/integrated_radius_anchor.tex:311-319 applies exactly this finite-sum argument to Y_m=‖X_m‖. Ledger:764 and claims.yaml:1334 match the abstraction, including the factor (δ(N+1))^(1/p), without block independence."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RadiusMeanAnchor.mean_anchor_bound_blocks: P:radius-mean-anchor",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean:326-343 assumes probability μ, '0 ≤ θ', '0 ≤ δ', '0 ≤ g', '1 ≤ p', nonnegative lengths, hMC/hMint/hMmom, and hXmeas. TeX manuscript/notes/integrated_radius_anchor.tex:253-258,287-292,308-319 supplies the corresponding C^theta moment input and stopped-block argument. claims.yaml:1341 is complete; ledger:765 is accurate when read with its paragraph and input column, but omits several common side conditions from the row itself. See W1."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RadiusMeanAnchor.radius_le: P:radius-mean-anchor",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean:393-395 assumes '0 < δ' and 'δ ≤ 1'. TeX manuscript/notes/integrated_radius_anchor.tex:323 says 'R_delta ≤ 3/δ because δ < 1'. Ledger:766 and claims.yaml:1348 accurately disclose the harmless inclusion of the endpoint δ=1."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RadiusMeanAnchor.radius_substitution: P:radius-mean-anchor",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean:398-405 assumes '0 < δ', 'δ ≤ 1', and '0 ≤ x'. TeX manuscript/notes/integrated_radius_anchor.tex:323-327 substitutes R_delta≤3/δ into the radius power, with x=d/Q>0. Ledger:767 and claims.yaml:1355 preserve 3^x and exponent (1-a)/2-x; allowing arbitrary real a is harmless."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RadiusMeanAnchor.mean_anchor_decay: P:radius-mean-anchor",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean:409-411 assumes δ∈(0,1], x≥0, K≥0, and 'EZ ≤ K * (δ^((1-a)/2) * (1/δ+2)^x)'. TeX manuscript/notes/integrated_radius_anchor.tex:294-302,323-327 has this premise with K=(2/B)^(1/p)C_Q,B√p and x=d/Q. Ledger:768 and claims.yaml:1362 match both factors of two and the decay exponent."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RadiusMeanAnchor.decay_tendsto: P:radius-mean-anchor",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean:416-421 assumes 'he : 0 < e' and proves Tendsto of Kδ^e along '𝓝[>] 0'. TeX manuscript/notes/integrated_radius_anchor.tex:299-302,327-328 gives the limit with positive e_anchor and fixed B,p,Q,model. Ledger:769 and claims.yaml:1369 correctly describe the deterministic upper-bound limit, not an independently formalized family of random paths."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.RadiusMeanAnchor.radius_mean_anchor_paper: P:radius-mean-anchor",
+      "verdict": "PASS",
+      "reason": "Lean lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean:445-469 carries the manuscript's numerical H:homog conditions, strict exponent chains, even natural Q≥2, integer B≥1, '0 < δ < min 1 (1/B)', p≥1, R≥1, and supplied hMC/hMint/hMmom/hXmeas. TeX manuscript/notes/notes_stratonovich_ham_second_moment.tex:169-185 and manuscript/notes/integrated_radius_anchor.tex:4-26,247-258,280-304 give those parameters and the L^p(C^theta) residual input. The latter implies the supplied membership/integrability/moment conditions; strong path measurability followed by continuous stopping and norm implies hXmeas. Conclusions at Lean:470-486 match TeX:293-304 exactly in constants and powers. Ledger:708-734 explicitly discloses abstraction of covariance, noise, operator codomain, and projection; these are harmless for this deduction. Ledger:770 and claims.yaml:1376 match the conditional theorem."
+    },
+    {
+      "claim": "PARA-RadiusMeanAnchor",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Ledger:688-734 cites the correct manuscript file and describes the exact norm, real-supremum caveat, path/noise/projection abstraction, supplied hMC/hMint/hMmom, explicit hXmeas and probability normalization, derived nonnegativity of C, unused numerical hypotheses, and unformalized constructions. These agree with lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean:442-542 and manuscript/notes/integrated_radius_anchor.tex:247-329. Its same-hypotheses language is understood with its express parameter-only abstraction. The measurability explanation could be more informative: the manuscript already constructs strongly measurable transferred paths. See W2."
+    },
+    {
+      "claim": "LEDGER-INDEX",
+      "verdict": "PASS",
+      "reason": "Ledger:123 lists exactly 25 RadiusMeanAnchor declarations under P:radius-mean-anchor; ledger:128 lists the remaining eight under no direct label, matching all 33 section rows. Manuscript-wide label search located every cited label: integrated_radius_anchor.tex:10,17,159,248,281,293,298; integrated_cameron_mean.tex:2; notes_stratonovich_ham_second_moment.tex:169. There are no missing or misassigned RadiusMeanAnchor index entries."
+    },
+    {
+      "claim": "COVERAGE-ROWS",
+      "verdict": "PASS",
+      "reason": "lean/coverage.yaml:264-276 correctly uses inputs-supplied, names the radius_mean_anchor_paper claim, and lists precisely the analytic supplied groups hMC/hMint/hMmom plus hXmeas from lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean:459-469. The full conclusions at:470-486 match manuscript/notes/integrated_radius_anchor.tex:293-304. The supplied L^p(C^theta) data are not stronger than C:radius-covariance-residuals as used; probability normalization is an ordinary explicit expectation side condition. The parameter-only H:homog abstraction is disclosed in the ledger."
+    },
+    {
+      "claim": "CROSS-REFERENCES",
+      "verdict": "PASS",
+      "reason": "Ledger:48-55 correctly identifies the supplied moment/measurability inputs. InteractionDriver references at:300-318 distinguish the dimension-two scalar steps from the general margin and mean theorem; their cited targets exist and have the advertised roles. The Not in Lean list at:891-895 correctly leaves the moment theorem and residual-path construction outside Lean. LocalFlow:343-366 and PhaseResponse:410-431 do not incorrectly redirect their unrelated whole-result references to RadiusMeanAnchor."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "W1 — mean_anchor_bound_blocks row wording. candidate/statement-ledger.md:765 begins 'For general N, ell_m >= 0, g >= 0', whereas lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean:327-329 also explicitly assumes '[IsProbabilityMeasure μ]', 'hθ : 0 ≤ θ', 'hδ : 0 ≤ δ', and 'hp : 1 ≤ p'. TeX manuscript/notes/integrated_radius_anchor.tex:282-292,310 provides positive δ, admissible θ, 'p ≥ 1', and 'Probability normalization'. These conditions are recoverable from the section and claims.yaml:1341, so the shortened row is acceptable in context. Optional exact fix: include probability μ, θ≥0, δ≥0, and p≥1 in ledger:765 itself.",
+      "W2 — hXmeas explanation. candidate/statement-ledger.md:720-722 says the manuscript treats X_m as C^theta-valued 'without addressing measurability of its norm' and notes nonseparability. Lean lean/StratonovichHAMSecondMoment/RadiusMeanAnchor.lean:467-469 assumes 'AEStronglyMeasurable ... holderNorm ... blockPath'. TeX manuscript/notes/integrated_source_convergence.tex:84-87 explicitly constructs a 'strongly measurable limit' in a separable closed span, and manuscript/notes/integrated_radius_anchor.tex:262-266 invokes that transfer for the same paths. Deterministic stopping/scaling is continuous in the stated Hölder norm, and the norm is continuous, so hXmeas follows for these manuscript paths despite ambient nonseparability. Optional exact fix: explain this implication and describe hXmeas as a separately supplied consequence of the manuscript construction, rather than suggesting a substantive measurability gap."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "All complete-reading requirements A were satisfied. Partial-file coverage concerns only material outside the prescribed sections or ranges; unrelated ledger rows and the rest of the manuscript were not reviewed.",
+    "The result is correspondence acceptance conditional on the explicitly supplied residual-path moment and measurability inputs; their analytic proofs and stochastic constructions are not formalized by this module.",
+    "Compilation, absence of sorry, standard-axiom status, and packet byte binding were accepted as supplied by the review contract, not independently rerun.",
+    "This AI review is not human verification or a novelty audit."
+  ]
+}

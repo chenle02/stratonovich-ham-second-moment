@@ -1,0 +1,106 @@
+Independent correspondence review: newly formalized whole labelled result(s) (Lean ledger rows) vs manuscript
+
+You are an independent, skeptical reviewer. Your workspace is a frozen,
+read-only packet. Use your file-reading and search tools actively; do not
+rely on memory. Do not modify any file.
+
+PACKET
+- candidate/statement-ledger.md : the ledger (Lean companion commit
+  c4e062041f00). Review ONLY its section "## MaskedTrigProducts (whole result)", the index
+  rows for MaskedTrigProducts, and the items named in the global checks below. All other
+  rows were reviewed earlier.
+- lean/StratonovichHAMSecondMoment/MaskedTrigProducts.lean : the Lean module (ground truth
+  for what each declaration states). lean/claims.yaml, lean/coverage.yaml.
+- manuscript/notes/... : all LaTeX inputs of the manuscript at revision
+  ba01d9857383. Labels are \label{...}.
+- PROVENANCE.json : byte binding of every packet file (supervisor-checked).
+
+The Lean file compiles with no sorry and only standard axioms; proof
+correctness is NOT in question. Correspondence is. The ledger and
+coverage.yaml claim that L:masked-trig-products, E:masked-frequency-pair and E:masked-temporal-modulation are formalized in full: every
+conclusion proved, with hypotheses that match the manuscript, apart from
+side conditions the TeX leaves implicit and inputs explicitly declared as
+supplied. Test that claim hard: any Lean hypothesis that the manuscript
+does not have, any manuscript hypothesis the Lean drops, any weaker Lean
+conclusion, any changed constant, range, quantifier order or strictness,
+any modelling choice that changes the mathematical object, and any
+supplied hypothesis stronger than the manuscript result it stands for is a
+finding, unless the ledger states it AND it is genuinely harmless. Decide
+that yourself from the TeX; do not accept the ledger's word.
+Pay attention to: the abstraction of the completion H_a^C as a complex inner product space E with a submodule V of functions and a linear map emb (is it faithful? does any hypothesis assume the conclusion?); whether hmem and hmod are no stronger than L:masked-time-completion and L:masked-temporal-modulation; and whether masked_trig_products_paper has exactly the lemma hypotheses.
+
+CHECKS (exactly these 36, in this order, with these claim strings):
+  1. claim "StratonovichHAMSecondMoment.MaskedTrigProducts.masked_trig_products_paper: L:masked-trig-products"
+  2. claim "StratonovichHAMSecondMoment.MaskedTrigProducts.trig_product_bound: L:masked-trig-products"
+  3. claim "StratonovichHAMSecondMoment.MaskedTrigProducts.trig_product_bound_half: L:masked-trig-products"
+  4. claim "StratonovichHAMSecondMoment.MaskedTrigProducts.prodFn_mem: L:masked-trig-products"
+  5. claim "StratonovichHAMSecondMoment.MaskedTrigProducts.norm_sq_sum_le: L:masked-trig-products"
+  6. claim "StratonovichHAMSecondMoment.MaskedTrigProducts.norm_sq_sum_le_inner: L:masked-trig-products"
+  7. claim "StratonovichHAMSecondMoment.MaskedTrigProducts.four_mode: L:masked-trig-products"
+  8. claim "StratonovichHAMSecondMoment.MaskedTrigProducts.cos_cos_expand: L:masked-trig-products"
+  9. claim "StratonovichHAMSecondMoment.MaskedTrigProducts.sin_sin_expand: L:masked-trig-products"
+  10. claim "StratonovichHAMSecondMoment.MaskedTrigProducts.sin_cos_expand: L:masked-trig-products"
+  11. claim "StratonovichHAMSecondMoment.MaskedTrigProducts.cos_sin_expand: L:masked-trig-products"
+  12. claim "StratonovichHAMSecondMoment.MaskedTrigProducts.norm_coef: L:masked-trig-products"
+  13. claim "StratonovichHAMSecondMoment.MaskedTrigProducts.sum_norm_coef: L:masked-trig-products"
+  14. claim "StratonovichHAMSecondMoment.MaskedTrigProducts.prodFn_eq: L:masked-trig-products"
+  15. claim "StratonovichHAMSecondMoment.MaskedTrigProducts.sum_bracket_freq: L:masked-trig-products"
+  16. claim "StratonovichHAMSecondMoment.MaskedTrigProducts.Trig.eval_expand: L:masked-trig-products"
+  17. claim "StratonovichHAMSecondMoment.MaskedTrigProducts.exp_sgn: L:masked-trig-products"
+  18. claim "StratonovichHAMSecondMoment.MaskedTrigProducts.norm_coef1: L:masked-trig-products"
+  19. claim "StratonovichHAMSecondMoment.MaskedTrigProducts.bracket_neg: no direct label"
+  20. claim "StratonovichHAMSecondMoment.MaskedTrigProducts.C₀: E:masked-temporal-modulation"
+  21. claim "StratonovichHAMSecondMoment.MaskedTrigProducts.bracket: no direct label"
+  22. claim "StratonovichHAMSecondMoment.MaskedTrigProducts.frequencyPair: E:masked-frequency-pair"
+  23. claim "StratonovichHAMSecondMoment.MaskedTrigProducts.Trig: L:masked-trig-products"
+  24. claim "StratonovichHAMSecondMoment.MaskedTrigProducts.Trig.eval: L:masked-trig-products"
+  25. claim "StratonovichHAMSecondMoment.MaskedTrigProducts.modeFn: L:masked-trig-products"
+  26. claim "StratonovichHAMSecondMoment.MaskedTrigProducts.prodFn: L:masked-trig-products"
+  27. claim "StratonovichHAMSecondMoment.MaskedTrigProducts.coef: L:masked-trig-products"
+  28. claim "StratonovichHAMSecondMoment.MaskedTrigProducts.freq: L:masked-trig-products"
+  29. claim "StratonovichHAMSecondMoment.MaskedTrigProducts.coef1: L:masked-trig-products"
+  30. claim "StratonovichHAMSecondMoment.MaskedTrigProducts.sgn: no direct label"
+  31. claim "PARA-MaskedTrigProducts": the "MaskedTrigProducts (whole result)" section paragraph is accurate, cites the right file, states every abstraction, implicit hypothesis, unused carried hypothesis and supplied input, and does not overclaim
+  32. claim "LEDGER-INDEX": the "Index by label" rows for MaskedTrigProducts list exactly these 30 declarations under the labels their rows give, and every label cited in the MaskedTrigProducts section exists in the manuscript (search \label across all files)
+  33. claim "COVERAGE-ROWS": the coverage.yaml row for L:masked-trig-products: class inputs-supplied with full conclusion is justified, its claims are right, and its inputs list names exactly what masked_trig_products_paper takes as supplied hypotheses
+  34. claim "CROSS-REFERENCES": every other place in the ledger that now points to MaskedTrigProducts (step-module intros and rows such as LocalFlow, PhaseResponse, InteractionDriver; the "Not in Lean" section) is accurate
+  35. claim "LEDGER-TOTALS": the totals line (223 = 188 theorems + 35 definitions; 144 labelled, 79 unlabelled) agrees with a count of the per-module tables of the whole ledger, and every claims.yaml decl has exactly one ledger row
+  36. claim "SCOPE-PROSE": the Scope bullets about the whole-result modules and the internal-status sentence are accurate
+For each row check (1-30): FIDELITY (ledger "What it states" and the
+claims.yaml summary match the Lean type) and MAPPING (the cited label, or
+"no direct label", is right: the labelled statement or its proof contains
+exactly this, with the same hypotheses).
+
+COMPLETE-READING REQUIREMENT (binding)
+A. Read completely, in consecutive ranges with no gaps: the Lean file;
+   the "MaskedTrigProducts (whole result)" section and the "Scope" and "Index by label"
+   sections of candidate/statement-ledger.md; the MaskedTrigProducts entries of
+   lean/claims.yaml; lean/coverage.yaml;
+   manuscript/notes/integrated_covariance_foundation.tex,
+B. Other files: search as needed (labels, standing assumptions) and read
+   matches in context.
+C. If A is incomplete, mark affected checks INCONCLUSIVE and give
+   confidence medium or low.
+
+REPORT FORMAT (strict; the report is machine-validated)
+Return ONLY the JSON object: no text before or after it, no code fence.
+Use exactly the fields of the schema "subscription-review-report/1".
+- "checks": exactly the 36 objects above, in order, with those claim
+  strings. verdict one of PASS, PASS_WITH_NOTES, FAIL, INCONCLUSIVE, PARTIAL
+  (PASS: correct; PASS_WITH_NOTES: correct with a minor wording point
+  reported as a minor finding; PARTIAL: material imprecision; FAIL: wrong,
+  including a hypothesis mismatch that falsifies "same-assumptions";
+  INCONCLUSIVE: not checkable). reason: evidence with file:line, quoting
+  the Lean hypothesis and the TeX hypothesis side by side for rows 1-30.
+- "findings": fatal = misstatement or false "same-assumptions" claim a
+  citing reader would be misled by; major = material imprecision; minor =
+  wording. Each string starts with an ID (W1, W2, ...), names the item,
+  quotes Lean and TeX with file:line, and gives the exact fix (ledger,
+  coverage, or Lean statement).
+- "required_repairs": only changes that must be made before these rows can
+  be cited as correct.
+- "source_coverage": every file read, exact line ranges, "complete" or
+  "partial".
+- "verdict": PASS or PASS_WITH_NOTES only if fatal, major and
+  required_repairs are empty and every check is PASS or PASS_WITH_NOTES.
+- "confidence": high only if requirement A is complete.

@@ -1,0 +1,273 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "high",
+  "source_coverage": [
+    "PROVENANCE.json:1-190,191-370,371-547 — complete.",
+    "lean/StratonovichHAMSecondMoment/TemporalEquilibrium.lean:1-220,221-440,441-647 — complete.",
+    "candidate/statement-ledger.md:1-160,288-318,343-367,410-432,792-897 — complete for required Scope, Index by label, TemporalEquilibrium section and relevant cross-references; partial file.",
+    "lean/claims.yaml:846-1000,1001-1147 — complete TemporalEquilibrium entries; partial file.",
+    "lean/coverage.yaml:1-342 — complete.",
+    "manuscript/notes/integrated_temporal_equilibrium.tex:1-90 — complete.",
+    "manuscript/notes/integrated_white_evaluation.tex:115-150 — partial, contextual reading.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:3838-3855 — partial, contextual reading.",
+    "manuscript/notes/**/*.tex — targeted label search across all supplied LaTeX files; all six labels cited by the TemporalEquilibrium section were located in manuscript/notes/integrated_temporal_equilibrium.tex:2,8,32,34,40,44."
+  ],
+  "checks": [
+    {
+      "claim": "StratonovichHAMSecondMoment.TemporalEquilibrium.betaKernel: no direct label",
+      "verdict": "PASS",
+      "reason": "TemporalEquilibrium.lean:53 defines 'x y t : ℝ' and t^(x-1)(1-t)^(y-1), matching ledger:827 and claims.yaml:850. TeX integrated_temporal_equilibrium.tex:5 uses this integrand for 'x,y > 0' in the unlabelled introduction. The total auxiliary definition does not alter the positive-argument application."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TemporalEquilibrium.Beta: no direct label",
+      "verdict": "PASS",
+      "reason": "TemporalEquilibrium.lean:56 defines 'Beta (x y : ℝ)' by the integral over Ioo 0 1, matching ledger:828 and claims.yaml:857. TeX integrated_temporal_equilibrium.tex:5 defines the same integral for 'x,y > 0' outside a labelled statement; convergence on that domain is separately proved."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TemporalEquilibrium.cplx_kernel_eq: no direct label",
+      "verdict": "PASS",
+      "reason": "TemporalEquilibrium.lean:58-59 assumes 'ht : t ∈ Icc 0 1', with unrestricted real x,y, and identifies complex and real integrands. Ledger:829 and claims.yaml:864 agree. TeX integrated_temporal_equilibrium.tex:4-6 assumes positive arguments and does not introduce complex powers; no direct label is appropriate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TemporalEquilibrium.betaKernel_integrableOn: no direct label",
+      "verdict": "PASS",
+      "reason": "TemporalEquilibrium.lean:64-65 assumes 'hx : 0 < x', 'hy : 0 < y' and proves integrability. TeX integrated_temporal_equilibrium.tex:5-6 says 'x,y > 0' and both integrals are finite. Ledger:830 and claims.yaml:871 faithfully describe this unlabelled introductory fact."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TemporalEquilibrium.Beta_eq_Gamma: L:equilibrium-gamma-beta",
+      "verdict": "PASS",
+      "reason": "TemporalEquilibrium.lean:74-75 assumes '0 < x', '0 < y' and proves Beta x y = Gamma x Gamma y / Gamma(x+y). TeX integrated_temporal_equilibrium.tex:9-13 says 'For positive arguments' and gives exactly that identity. Ledger:831 and claims.yaml:878 agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TemporalEquilibrium.betaKernel_nonneg: no direct label",
+      "verdict": "PASS",
+      "reason": "TemporalEquilibrium.lean:94 assumes 't ∈ Ioo 0 1' with arbitrary real x,y and proves nonnegativity, as ledger:832 and claims.yaml:885 state. TeX integrated_temporal_equilibrium.tex:5-6 discusses positive-argument Beta integrals, not this unrestricted pointwise helper; no direct label is appropriate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TemporalEquilibrium.lintegral_betaKernel: no direct label",
+      "verdict": "PASS",
+      "reason": "TemporalEquilibrium.lean:97-98 assumes '0 < x', '0 < y' and equates the nonnegative lintegral with ofReal(Beta x y), matching ledger:833 and claims.yaml:892. TeX integrated_temporal_equilibrium.tex:5-6 has 'x,y > 0' and a finite positive ordinary integral, but no separate ENNReal statement."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TemporalEquilibrium.Beta_pos: no direct label",
+      "verdict": "PASS",
+      "reason": "TemporalEquilibrium.lean:103 assumes '0 < x', '0 < y' and concludes '0 < Beta x y'. TeX integrated_temporal_equilibrium.tex:5-6 states positivity under 'x,y > 0' in the unlabelled introduction. Ledger:834 and claims.yaml:899 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TemporalEquilibrium.lintegral_affine_beta: L:temporal-equilibrium",
+      "verdict": "FAIL",
+      "reason": "Fidelity passes: TemporalEquilibrium.lean:109-111 assumes 'u < s', '0 < p', '0 < q' and states the general two-factor affine Beta integral, exactly as ledger:835 and claims.yaml:906 summarize. Mapping fails: TeX integrated_temporal_equilibrium.tex:56-64 assumes '0 < s < 1' with r=(1-a)/2 and evaluates an integrand retaining the additional factor '(1-su)^(-r)'. The general affine identity is an auxiliary of the alternative Lean proof, not a stated step of the cited TeX proof. See W1."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TemporalEquilibrium.lintegral_reflect: no direct label",
+      "verdict": "PASS",
+      "reason": "TemporalEquilibrium.lean:147-148 takes arbitrary 'F : ℝ → ℝ≥0∞' and real p,q, without order or measurability hypotheses, matching ledger:836 and claims.yaml:913. TeX integrated_temporal_equilibrium.tex:71,76 uses reflection for the particular potential under '0 < a < 1'; the unrestricted helper appropriately has no direct label."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TemporalEquilibrium.lintegral_split: no direct label",
+      "verdict": "PASS",
+      "reason": "TemporalEquilibrium.lean:160-161 assumes 's ∈ Icc 0 1' for arbitrary nonnegative extended-real F, matching ledger:837 and claims.yaml:920. TeX integrated_temporal_equilibrium.tex:56 splits its particular potential for '0 < s < 1'; the general null-point splitting helper is not itself a manuscript statement."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TemporalEquilibrium.mobius_pointwise: no direct label",
+      "verdict": "PASS",
+      "reason": "TemporalEquilibrium.lean:183-186 assumes 't ∈ Ioo 0 1', 'v ∈ Ioo 0 1', with unrestricted r, and proves the displayed Jacobian identity. Ledger:838 and claims.yaml:927 agree. TeX integrated_temporal_equilibrium.tex:49-78 instead uses a series argument under '0 < a < 1'; this Möbius helper is correctly unlabelled."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TemporalEquilibrium.mobius_image: no direct label",
+      "verdict": "PASS",
+      "reason": "TemporalEquilibrium.lean:218-219 assumes 't ∈ Ioo 0 1' and gives the image Ioo 0 t, matching ledger:839 and claims.yaml:934. TeX integrated_temporal_equilibrium.tex:56-70 uses '0 < s < 1' and the affine substitution t=su, not this Möbius map; no direct label is appropriate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TemporalEquilibrium.lintegral_mobius: L:temporal-equilibrium",
+      "verdict": "FAIL",
+      "reason": "Fidelity passes: TemporalEquilibrium.lean:242-244 assumes '0 < r', 'r < 1/2', 't ∈ Ioo 0 1' and proves the Euler-type identity, matching ledger:840 and claims.yaml:941. Mapping fails: TeX integrated_temporal_equilibrium.tex:56-70, under '0 < s < 1', computes L(s) with exponent 2r-1 and density exponent -r; it does not state or use this different convolution with exponent -2r and betaKernel r r. Mark it no direct label. See W2."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TemporalEquilibrium.lintegral_left: L:temporal-equilibrium",
+      "verdict": "PASS",
+      "reason": "TemporalEquilibrium.lean:279-283 assumes '0 < r < 1/2', 's ∈ Icc 0 1'; ledger:841 and claims.yaml:948 reproduce its multiplied incomplete-Beta identity. TeX integrated_temporal_equilibrium.tex:33,56-69 assumes '0 < a < 1', '0 < s < 1' and states L(s)=r Beta(1-r,2r) B_s(r,r). Gamma recurrence gives Beta(1-2r,2r)/Beta(r,1-2r)=r Beta(1-r,2r). The disclosed closed-interval extension adds valid endpoint cases."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TemporalEquilibrium.betaKernel_symm: no direct label",
+      "verdict": "PASS",
+      "reason": "TemporalEquilibrium.lean:345 assumes only 'r x : ℝ' and proves betaKernel symmetry, matching ledger:842 and claims.yaml:955. TeX integrated_temporal_equilibrium.tex:71-72 uses symmetry for the incomplete Beta integral under '0 < a < 1'; the unrestricted algebraic helper appropriately has no direct label."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TemporalEquilibrium.lintegral_potential: L:temporal-equilibrium",
+      "verdict": "PASS",
+      "reason": "TemporalEquilibrium.lean:349-351 assumes '0 < r < 1/2', 's ∈ Icc 0 1', matching ledger:843 and claims.yaml:962. TeX integrated_temporal_equilibrium.tex:33,73-78 assumes '0 < a < 1', r=(1-a)/2, and gives the full unnormalized integral Gamma(r)Gamma(1-r), including endpoints. The Lean Beta quotient equals that constant by Beta_combo; the parameter substitution is bijective on these ranges."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TemporalEquilibrium.Beta_combo: L:temporal-equilibrium",
+      "verdict": "PASS",
+      "reason": "TemporalEquilibrium.lean:384-385 assumes '0 < r < 1/2' and evaluates the Beta quotient, matching ledger:844 and claims.yaml:969. TeX integrated_temporal_equilibrium.tex:33,73-74 evaluates 'r Beta(1-r,2r) Beta(r,r)' under the equivalent range. Beta-Gamma and recurrence identify the two coefficients; the constant is unchanged."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TemporalEquilibrium.gammaE_integral: no direct label",
+      "verdict": "PASS",
+      "reason": "TemporalEquilibrium.lean:402-404 assumes 'hx : 0 < x' and supplies integrability, the Gamma integral identity and positivity. TeX integrated_temporal_equilibrium.tex:4-6 says 'x > 0' and gives the same positive finite integral outside the lemmas. Ledger:845 and claims.yaml:976 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TemporalEquilibrium.Beta_integrableOn: no direct label",
+      "verdict": "PASS",
+      "reason": "TemporalEquilibrium.lean:410-411 assumes '0 < x', '0 < y' and proves integrability of the explicit integrand. TeX integrated_temporal_equilibrium.tex:5-6 has 'x,y > 0' and finiteness in its unlabelled introduction. Ledger:846 and claims.yaml:983 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TemporalEquilibrium.Beta_eq_betaIntegral: no direct label",
+      "verdict": "PASS",
+      "reason": "TemporalEquilibrium.lean:415 takes arbitrary 'x y : ℝ' and identifies the two totalized library integrals, matching ledger:847 and claims.yaml:990. TeX integrated_temporal_equilibrium.tex:5 defines Beta only for 'x,y > 0' and has no Complex.betaIntegral object. The library identification is correctly marked no direct label."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TemporalEquilibrium.gamma_beta_recurrence: L:equilibrium-gamma-beta",
+      "verdict": "PASS",
+      "reason": "TemporalEquilibrium.lean:426 assumes 'hx : 0 < x' and proves Gamma(x+1)=x Gamma(x). TeX integrated_temporal_equilibrium.tex:9-11 says 'For positive arguments' and states exactly this. Ledger:848 and claims.yaml:997 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TemporalEquilibrium.gamma_beta_beta_gamma: L:equilibrium-gamma-beta",
+      "verdict": "PASS",
+      "reason": "TemporalEquilibrium.lean:430-431 assumes '0 < x', '0 < y' and proves the Beta-Gamma identity. TeX integrated_temporal_equilibrium.tex:9,12-13 uses 'positive arguments' and the identical quotient. Ledger:849 and claims.yaml:1004 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TemporalEquilibrium.gamma_beta_duplication_general: L:equilibrium-gamma-beta",
+      "verdict": "PASS",
+      "reason": "TemporalEquilibrium.lean:436-437 assumes only 'x : ℝ'; TeX integrated_temporal_equilibrium.tex:9,14-15 restricts to 'positive arguments'. Ledger:850 explicitly says 'without the sign hypothesis', and claims.yaml:1011 says 'every real x'. This disclosed generalization specializes to the manuscript formula; its exact-hypothesis counterpart is also provided."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TemporalEquilibrium.gamma_beta_duplication: L:equilibrium-gamma-beta",
+      "verdict": "PASS",
+      "reason": "TemporalEquilibrium.lean:448-450 carries '_hx : 0 < x', matching TeX integrated_temporal_equilibrium.tex:9,14-15, 'For positive arguments'. The power 2^(2x-1), shift x+1/2 and denominator sqrt(pi) agree. Ledger:851 and claims.yaml:1018 correctly disclose the unused hypothesis."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TemporalEquilibrium.gamma_beta_proof_steps: L:equilibrium-gamma-beta",
+      "verdict": "PASS",
+      "reason": "TemporalEquilibrium.lean:454-455 assumes 'hx : 0 < x' and proves Beta(x,x)=2^(1-2x)Beta(1/2,x) together with Gamma(1/2)=sqrt(pi). TeX integrated_temporal_equilibrium.tex:9,23-27 gives these exact proof steps for positive arguments. Ledger:852 and claims.yaml:1025 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TemporalEquilibrium.gamma_beta_paper: L:equilibrium-gamma-beta",
+      "verdict": "PASS",
+      "reason": "TemporalEquilibrium.lean:470-474 assumes only 'hx : 0 < x', 'hy : 0 < y' and conjoins all three identities. TeX integrated_temporal_equilibrium.tex:8-17 says 'For positive arguments' and states those same identities. Ledger:853 and claims.yaml:1032 match; no analytic input is supplied."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TemporalEquilibrium.density: L:temporal-equilibrium",
+      "verdict": "PASS",
+      "reason": "TemporalEquilibrium.lean:480-481 defines 'density (a t : ℝ)' with r=(1-a)/2 expanded. TeX integrated_temporal_equilibrium.tex:33-35 assumes '0 < a < 1', '0 < t < 1' and gives exactly the same numerator and Gamma-product denominator. Ledger:854 and claims.yaml:1039 explicitly disclose totalization; the physical-domain values agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TemporalEquilibrium.mass: L:temporal-equilibrium",
+      "verdict": "PASS",
+      "reason": "TemporalEquilibrium.lean:484 defines 'mass (a : ℝ)' as the integral over Ioo 0 1. TeX integrated_temporal_equilibrium.tex:33,41 defines M_a by that integral under '0 < a < 1'. Ledger:855 and claims.yaml:1046 match; the whole-result theorem supplies integrability on that range."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TemporalEquilibrium.normalizer_pos: no direct label",
+      "verdict": "PASS",
+      "reason": "TemporalEquilibrium.lean:486-487 assumes '0 < a', 'a < 1' and proves positivity of the Gamma-product denominator, matching ledger:856 and claims.yaml:1053. TeX integrated_temporal_equilibrium.tex:4-6,33-35 uses '0 < a < 1' and positive Gamma arguments; this extracted helper has no separately asserted manuscript identity."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TemporalEquilibrium.measurable_density: no direct label",
+      "verdict": "PASS",
+      "reason": "TemporalEquilibrium.lean:490 takes arbitrary 'a : ℝ' and proves measurability, matching ledger:857 and claims.yaml:1060. TeX integrated_temporal_equilibrium.tex:33-37 considers '0 < a < 1' and asserts Lp membership without a separate measurability statement. No direct label is appropriate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TemporalEquilibrium.density_pos: L:temporal-equilibrium",
+      "verdict": "PASS",
+      "reason": "TemporalEquilibrium.lean:494-495 assumes '0 < a', 'a < 1' and concludes positivity for every 't ∈ Ioo 0 1'. TeX integrated_temporal_equilibrium.tex:33-37 assumes '0 < a < 1', '0 < t < 1' and calls f_a positive. Ledger:858 and claims.yaml:1067 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TemporalEquilibrium.rpow_prod_eq_betaKernel: no direct label",
+      "verdict": "PASS",
+      "reason": "TemporalEquilibrium.lean:500-501 assumes 't ∈ Ioo 0 1' with arbitrary real p and rewrites the product power as betaKernel(1-p,1-p). Ledger:859 and claims.yaml:1074 match. TeX integrated_temporal_equilibrium.tex:33,80-86 uses the physical range '0 < a < 1'; the general power-bookkeeping helper is correctly unlabelled."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TemporalEquilibrium.density_integrableOn: L:temporal-equilibrium",
+      "verdict": "PASS",
+      "reason": "TemporalEquilibrium.lean:507-508 assumes '0 < a', 'a < 1' and proves IntegrableOn density (Ioo 0 1). TeX integrated_temporal_equilibrium.tex:33,37 assumes '0 < a < 1' and asserts L1(0,1). Ledger:860 and claims.yaml:1081 faithfully express the same property."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TemporalEquilibrium.density_memLp_one: L:temporal-equilibrium",
+      "verdict": "PASS",
+      "reason": "TemporalEquilibrium.lean:518-520 assumes '0 < a', 'a < 1' and proves MemLp with exponent 1 for volume.restrict(Ioo 0 1). TeX integrated_temporal_equilibrium.tex:33,37 assumes '0 < a < 1' and states L1(0,1). Ledger:861 and claims.yaml:1088 match the same Lebesgue-measure space."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TemporalEquilibrium.density_sq_integrableOn: L:temporal-equilibrium",
+      "verdict": "PASS",
+      "reason": "TemporalEquilibrium.lean:525-526 assumes 'ha0 : 0 < a', '_ha1 : a < 1' and proves integrability of density squared. TeX integrated_temporal_equilibrium.tex:33,37,80-81 assumes '0 < a < 1' and derives square integrability from 'a-1 > -1'. Ledger:862 and claims.yaml:1095 correctly disclose the carried, unused upper bound."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TemporalEquilibrium.density_memLp_two: L:temporal-equilibrium",
+      "verdict": "PASS",
+      "reason": "TemporalEquilibrium.lean:540-543 assumes '0 < a', 'a < 1' and proves MemLp exponent 2 for volume.restrict(Ioo 0 1). TeX integrated_temporal_equilibrium.tex:33,37 assumes '0 < a < 1' and states L2(0,1). Ledger:863 and claims.yaml:1102 agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TemporalEquilibrium.integrableOn_and_integral_of_lintegral: no direct label",
+      "verdict": "PASS",
+      "reason": "TemporalEquilibrium.lean:547-550 assumes 'MeasurableSet S', 'Measurable f', pointwise nonnegativity on S, '0 ≤ c' and the finite lintegral identity. Ledger:864 and claims.yaml:1109 list every hypothesis and both conclusions. TeX integrated_temporal_equilibrium.tex:33,74-78 works under '0 < a < 1' and asserts finiteness of particular integrals, not this abstract conversion lemma."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TemporalEquilibrium.potential_eq_one: L:temporal-equilibrium",
+      "verdict": "PASS",
+      "reason": "TemporalEquilibrium.lean:561-564 assumes only '0 < a', 'a < 1' and quantifies '∀ s ∈ Icc 0 1', proving integrability and integral 1. TeX integrated_temporal_equilibrium.tex:33,39-40 has '0 < a < 1' and 'for every s∈[0,1]'; its proof:74-78 explicitly covers finiteness and endpoints. Ledger:865 and claims.yaml:1116 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TemporalEquilibrium.mass_eq: L:temporal-equilibrium",
+      "verdict": "PASS",
+      "reason": "TemporalEquilibrium.lean:593-595 assumes '0 < a', 'a < 1' and proves integrability plus mass = Gamma((1+a)/2)/(Gamma(1+a)Gamma((1-a)/2)). TeX integrated_temporal_equilibrium.tex:33,41-44 states that exact quotient under '0 < a < 1'. Ledger:866 and claims.yaml:1123 preserve all constants."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TemporalEquilibrium.mass_pos: L:temporal-equilibrium",
+      "verdict": "PASS",
+      "reason": "TemporalEquilibrium.lean:615 assumes '0 < a', 'a < 1' and proves '0 < mass a'. TeX integrated_temporal_equilibrium.tex:33,41-44 assumes '0 < a < 1' and concludes M_a>0. Ledger:867 and claims.yaml:1130 agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TemporalEquilibrium.normalizer_eq_pi_div_sin: no direct label",
+      "verdict": "PASS",
+      "reason": "TemporalEquilibrium.lean:624-626 takes arbitrary 'a : ℝ' and states the totalized reflection formula, matching ledger:868 and claims.yaml:1137. TeX integrated_temporal_equilibrium.tex:33-35 assumes '0 < a < 1' and uses the Gamma-product normalizer but does not state this sine identity. The row explicitly identifies it as an extra remark, not a manuscript result."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.TemporalEquilibrium.temporal_equilibrium_paper: L:temporal-equilibrium",
+      "verdict": "PASS",
+      "reason": "TemporalEquilibrium.lean:633-645 assumes exactly 'ha0 : 0 < a', 'ha1 : a < 1'. TeX integrated_temporal_equilibrium.tex:33 assumes '0 < a < 1'. Every conclusion in TeX:35-44 appears: the same density, positivity, L1 and L2 membership, potential 1 for every closed-interval s, the exact mass quotient and positive mass. Ledger:869 and claims.yaml:1144 are faithful; nothing is supplied."
+    },
+    {
+      "claim": "PARA-TemporalEquilibrium",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "candidate/statement-ledger.md:794-823 identifies the correct source and accurately describes the whole-result hypotheses, totalized density, Lebesgue Lp spaces, null diagonal, unused hypotheses and alternative proof route. Its universal wording 'Every integral conclusion includes ... integrability' at :807-808 is too broad for the auxiliary declarations, which often provide finiteness or separate integrability lemmas instead. This does not weaken either wrapper. See W3."
+    },
+    {
+      "claim": "LEDGER-INDEX",
+      "verdict": "PASS",
+      "reason": "candidate/statement-ledger.md:120-122 lists exactly 43 distinct declarations: seven under L:equilibrium-gamma-beta, sixteen under L:temporal-equilibrium and twenty without a direct label, matching the row assignments at :827-869. All six section labels exist at integrated_temporal_equilibrium.tex:2,8,32,34,40,44. The index is internally exact, although it inherits the two substantive mapping defects reported separately."
+    },
+    {
+      "claim": "COVERAGE-ROWS",
+      "verdict": "PASS",
+      "reason": "lean/coverage.yaml:69-75,177-183 points to the correct wrapper IDs in lean/claims.yaml:1029-1035,1141-1147. TemporalEquilibrium.lean:470-474 carries only x>0,y>0, matching TeX:9; :633-645 carries only 0<a<1, matching TeX:33. Both wrappers prove every corresponding conclusion without supplied inputs. The same-assumptions classifications are justified."
+    },
+    {
+      "claim": "CROSS-REFERENCES",
+      "verdict": "PASS",
+      "reason": "The relevant references in candidate/statement-ledger.md:44-46,100,349-360 correctly distinguish LocalFlow's weaker parameter bookkeeping from the full TemporalEquilibrium results. Its Not in Lean section:871-897 does not exclude the newly formalized equilibrium lemmas. PhaseResponse:410-431 and InteractionDriver:288-318 point to their respective other whole-result modules, not incorrectly to TemporalEquilibrium."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [
+      "W1 — lintegral_affine_beta has an incorrect manuscript-proof mapping. candidate/statement-ledger.md:835 labels it 'L:temporal-equilibrium (proof)', while TemporalEquilibrium.lean:109-111 assumes 'u < s', '0 < p', '0 < q' and evaluates the general two-factor affine Beta integral. manuscript/notes/integrated_temporal_equilibrium.tex:56-64 instead assumes '0 < s < 1' and writes 'L(s)=s^r ∫(1-u)^(2r-1)u^(-r)(1-su)^(-r) du'; the additional factor remains essential. The stated general affine identity is not a step presented by that proof. Exact fix: mark this ledger row 'no direct label (auxiliary to the alternative Lean proof)' and move its index entry at candidate/statement-ledger.md:121 to :122.",
+      "W2 — lintegral_mobius has an incorrect manuscript-proof mapping. candidate/statement-ledger.md:840 labels it 'L:temporal-equilibrium (proof)', but TemporalEquilibrium.lean:242-244 assumes '0 < r < 1/2', 't ∈ Ioo 0 1' and evaluates '∫(t-u)^(-2r) betaKernel r r u'. manuscript/notes/integrated_temporal_equilibrium.tex:56-70 computes instead the potential left part with exponent '2r-1' and obtains 'L(s)=r Beta(1-r,2r) B_s(r,r)' through series expansion. The Möbius convolution is absent from that proof; the ledger's explanation of an alternative route does not make it a TeX proof step. Exact fix: mark this row 'no direct label (auxiliary to the alternative Lean proof)' and move its index entry from candidate/statement-ledger.md:121 to :122."
+    ],
+    "minor": [
+      "W3 — PARA-TemporalEquilibrium uses overly universal integrability wording. candidate/statement-ledger.md:807-808 says 'Every integral conclusion includes the integrability of its integrand'. TemporalEquilibrium.lean:97-98,109-111,349-351 states lintegral equalities without explicit IntegrableOn conjuncts; integrability is separately proved or follows from finite nonnegative values. The actual manuscript potential conclusion under '0 < a < 1' in manuscript/notes/integrated_temporal_equilibrium.tex:33,39-40 is correctly represented with explicit integrability at TemporalEquilibrium.lean:561-564. Optional wording fix: say that the manuscript's ordinary integral evaluations have integrability proved, while auxiliary lintegral identities establish finite nonnegative values."
+    ]
+  },
+  "required_repairs": [
+    "Relabel lintegral_affine_beta as having no direct manuscript label, identify it as an auxiliary of the alternative Lean proof, and update the TemporalEquilibrium index assignment consistently.",
+    "Relabel lintegral_mobius as having no direct manuscript label, identify it as an auxiliary of the alternative Lean proof, and update the TemporalEquilibrium index assignment consistently."
+  ],
+  "limitations": [
+    "All complete-reading requirements A were satisfied. Unrelated ledger sections and claims.yaml entries were intentionally not reviewed; contextual manuscript readings outside the required temporal-equilibrium source were partial.",
+    "Compilation, absence of sorry and standard-axiom status were accepted as stipulated; no build or independent kernel verification was performed.",
+    "The provenance binding was accepted as supervisor-checked rather than independently reconstructed.",
+    "This AI correspondence review is neither human verification nor a novelty audit."
+  ]
+}

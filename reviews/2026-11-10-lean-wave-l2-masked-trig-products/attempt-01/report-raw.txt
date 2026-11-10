@@ -1,0 +1,213 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "PASS_WITH_NOTES",
+  "confidence": "high",
+  "source_coverage": [
+    "lean/StratonovichHAMSecondMoment/MaskedTrigProducts.lean:1-358 — complete.",
+    "manuscript/notes/integrated_covariance_foundation.tex:1-147,148-293,294-428 — complete; initial truncated output was recovered by explicit range reads.",
+    "candidate/statement-ledger.md:1-240,288-367,410-432,608-685,871-897 — partial file, but complete required Scope, Index by label, MaskedTrigProducts section and relevant cross-reference contexts; declaration and label columns of all 223 per-module rows were additionally scanned across lines 1-897 for the global count.",
+    "lean/claims.yaml:1-22,1380-1590 — partial file, but all required MaskedTrigProducts entries complete; declaration, kind and status fields were additionally scanned across lines 1-1590 for global correspondence and status counts.",
+    "lean/coverage.yaml:1-175,176-342 — complete.",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:155-216 — partial, standing covariance assumptions read in context.",
+    "PROVENANCE.json:1-85 — partial, revision and primary artifact bindings read.",
+    "All packet manuscript LaTeX files were searched for the six labels cited in the MaskedTrigProducts section; positive matches were entirely within manuscript/notes/integrated_covariance_foundation.tex:141,300,303,347,354,358."
+  ],
+  "checks": [
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedTrigProducts.masked_trig_products_paper: L:masked-trig-products",
+      "verdict": "PASS",
+      "reason": "MaskedTrigProducts.lean:339-354 carries '0 < a', 'a < 1', '0 < T', '0 < h', 'h ≤ 1', interval containment, 'ContDiffOn ℝ 1 A', the two supremum equalities and nonnegative frequencies. These match integrated_covariance_foundation.tex:296-306,347-358: '0 < h ≤ 1', 'A ∈ C^1(I;ℂ)', 'M = sup_I|A|' and 'D = sup_I|A′|', with 0<a<1 inherited from notes_stratonovich_ham_second_moment.tex:169-170. Supplied 'hmem : ∀ ω' and 'hmod : ∀ ω' match the completion consequence at TeX:153-155 and modulation at TeX:301-306. Membership and the entire stated bound are concluded, not assumed. Ledger:655 and claims.yaml:1384 faithfully summarize this."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedTrigProducts.trig_product_bound: L:masked-trig-products",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "MaskedTrigProducts.lean:309-317 assumes 'hmem : ∀ ω' and the mode bound 'hmod : ∀ ω', corresponding to integrated_covariance_foundation.tex:153-155,301-306, then proves precisely TeX:352-358 with general C. Arbitrary sets and real parameters are disclosed generalizations of the proof at TeX:363-375. Ledger:656 and claims.yaml:1391 omit the explicit 'hp : prodFn ... ∈ V' argument. This is harmless because prodFn_mem at Lean:258-262 derives hp from hmem; see W1."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedTrigProducts.trig_product_bound_half: L:masked-trig-products",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "MaskedTrigProducts.lean:278-286 has the same 'hmem', 'hmod' and redundant 'hp : prodFn ... ∈ V' hypotheses as the full bound, and concludes its right side divided by two. Compare integrated_covariance_foundation.tex:371-374: apply modulation to each mode, obtaining 'one half of the asserted right side'. Ledger:657 and claims.yaml:1398 accurately give the constant and generality, subject to W1's harmless omission of hp."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedTrigProducts.prodFn_mem: L:masked-trig-products",
+      "verdict": "PASS",
+      "reason": "MaskedTrigProducts.lean:258-260 assumes only 'hmem : ∀ ω : ℝ, modeFn I A ω ∈ V' and concludes product membership. Integrated_covariance_foundation.tex:153-155 supplies membership for bounded measurable interval amplitudes, while TeX:363-365 supplies their finite linear expansion. The arbitrary-submodule formulation is a valid disclosed generalization. Ledger:658 and claims.yaml:1405 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedTrigProducts.norm_sq_sum_le: L:masked-trig-products",
+      "verdict": "PASS",
+      "reason": "MaskedTrigProducts.lean:65-68 assumes a complex seminormed space and finite family, and states '‖∑ c j • v j‖² ≤ (∑ ‖c j‖) * ∑ ‖c j‖ * ‖v j‖²'. Integrated_covariance_foundation.tex:365-368 states the identical inequality 'In a Hilbert space'. The weaker ambient assumptions are correctly disclosed in ledger:659 and claims.yaml:1412."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedTrigProducts.norm_sq_sum_le_inner: L:masked-trig-products",
+      "verdict": "PASS",
+      "reason": "MaskedTrigProducts.lean:91-94 assumes '[InnerProductSpace ℂ E]' and states the finite weighted norm-square inequality. Integrated_covariance_foundation.tex:365-368 assumes 'a Hilbert space' and gives the same inequality. Completeness is unnecessary for a finite sum, as reflected in ledger:660 and claims.yaml:1419."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedTrigProducts.four_mode: L:masked-trig-products",
+      "verdict": "PASS",
+      "reason": "MaskedTrigProducts.lean:180-182 takes '(P Q : Trig) (r ρ t : ℝ)' and expands the product into four exponential modes. Integrated_covariance_foundation.tex:348-349,363-365 takes the same cosine/sine choices and gives frequencies 'σr+τρ', with signs in '{−1,1}'. Removing nonnegativity for this algebraic identity is harmless and disclosed. Ledger:661 and claims.yaml:1426 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedTrigProducts.cos_cos_expand: L:masked-trig-products",
+      "verdict": "PASS",
+      "reason": "MaskedTrigProducts.lean:194-199 takes real r,ρ,t without analytic hypotheses and gives coefficients '(1/4,1/4,1/4,1/4)' at the four signed frequencies. Integrated_covariance_foundation.tex:363-365 says expansion gives four modes with coefficients of absolute value '1/4'; the cosine-cosine specialization has exactly these positive coefficients. Ledger:662 and claims.yaml:1433 agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedTrigProducts.sin_sin_expand: L:masked-trig-products",
+      "verdict": "PASS",
+      "reason": "MaskedTrigProducts.lean:206-211 takes real r,ρ,t and gives coefficients '−1/4,1/4,1/4,−1/4' in frequency order r+ρ,r−ρ,−r+ρ,−r−ρ. These are the sine-sine specialization of integrated_covariance_foundation.tex:348-349,363-365, whose hypothesis permits both sine factors and whose expansion has coefficient magnitudes '1/4'. Ledger:663 and claims.yaml:1440 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedTrigProducts.sin_cos_expand: L:masked-trig-products",
+      "verdict": "PASS",
+      "reason": "MaskedTrigProducts.lean:220-225, for real r,ρ,t, gives '−i/4,−i/4,i/4,i/4'. Integrated_covariance_foundation.tex:348-349 permits P=sin,Q=cos and TeX:363-365 describes the four-mode expansion with magnitudes '1/4'. The displayed coefficients have the correct signs and frequencies. Ledger:664 and claims.yaml:1447 agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedTrigProducts.cos_sin_expand: L:masked-trig-products",
+      "verdict": "PASS",
+      "reason": "MaskedTrigProducts.lean:232-237, for real r,ρ,t, gives '−i/4,i/4,−i/4,i/4'. Integrated_covariance_foundation.tex:348-349 permits P=cos,Q=sin and TeX:363-365 gives the four-mode construction. This is its correct cosine-sine specialization, with no additional analytic hypothesis. Ledger:665 and claims.yaml:1454 agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedTrigProducts.norm_coef: L:masked-trig-products",
+      "verdict": "PASS",
+      "reason": "MaskedTrigProducts.lean:152 states '(P Q : Trig) (j : Bool × Bool) : ‖coef P Q j‖ = 1/4'. Integrated_covariance_foundation.tex:363-365, for the same two factor choices and four sign pairs, says 'coefficients of absolute value 1/4'. Ledger:666 and claims.yaml:1461 are exact."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedTrigProducts.sum_norm_coef: L:masked-trig-products",
+      "verdict": "PASS",
+      "reason": "MaskedTrigProducts.lean:156 assumes only '(P Q : Trig)' and concludes '∑ j : Bool × Bool, ‖coef P Q j‖ = 1'. Integrated_covariance_foundation.tex:370 says 'The first coefficient sum is one' under the same factor choices. Ledger:667 and claims.yaml:1468 agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedTrigProducts.prodFn_eq: L:masked-trig-products",
+      "verdict": "PASS",
+      "reason": "MaskedTrigProducts.lean:244-245 takes any set I, amplitude A, factor choices and real frequencies, concluding 'prodFn ... = ∑ j, coef ... • modeFn ...'. Integrated_covariance_foundation.tex:352,363-371 expands the masked amplitude using the same modes. No smoothness or sign condition is needed for this pointwise identity. Ledger:668 and claims.yaml:1475 faithfully describe that proof step."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedTrigProducts.sum_bracket_freq: L:masked-trig-products",
+      "verdict": "PASS",
+      "reason": "MaskedTrigProducts.lean:265-266 takes arbitrary real a,h,r,ρ and concludes the four bracket powers sum to '2 * frequencyPair a h r ρ'. Integrated_covariance_foundation.tex:371-373 says two frequencies have absolute value '|r−ρ|' and two 'r+ρ'. Bracket evenness makes the identity valid beyond the manuscript's nonnegative frequencies. Ledger:669 and claims.yaml:1482 disclose this generality."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedTrigProducts.Trig.eval_expand: L:masked-trig-products",
+      "verdict": "PASS",
+      "reason": "MaskedTrigProducts.lean:168-169 assumes '(k : Trig) (x : ℝ)' and gives the two signed exponential terms. Integrated_covariance_foundation.tex:363-365 says 'Expanding the two trigonometric factors'; this internal one-factor identity implements that expansion with precisely the allowed cosine/sine factors. Ledger:670 and claims.yaml:1489 give the correct coefficients."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedTrigProducts.exp_sgn: L:masked-trig-products",
+      "verdict": "PASS",
+      "reason": "MaskedTrigProducts.lean:161-164 assumes '(σ : Bool) (x : ℝ)' and identifies the exponential with 'exp(ix)' or 'exp(−ix)'. Integrated_covariance_foundation.tex:364 uses 'σ,τ ∈ {−1,1}'. This is an internal implementation of those two sign choices, without an additional mathematical assumption. Ledger:671 and claims.yaml:1496 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedTrigProducts.norm_coef1: L:masked-trig-products",
+      "verdict": "PASS",
+      "reason": "MaskedTrigProducts.lean:148 assumes '(k : Trig) (σ : Bool)' and states '‖coef1 k σ‖ = 1/2'. Integrated_covariance_foundation.tex:363-365 expands two cosine/sine factors to coefficients of magnitude '1/4'; this internal single-factor calculation is the corresponding Euler-expansion substep. Ledger:672 and claims.yaml:1503 accurately identify it as internal."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedTrigProducts.bracket_neg: no direct label",
+      "verdict": "PASS",
+      "reason": "MaskedTrigProducts.lean:102 takes '(x : ℝ)' and states 'bracket (−x) = bracket x'. Integrated_covariance_foundation.tex:296 defines '⟨x⟩ = √(1+x²)' without a label; TeX:372 uses absolute frequencies but does not separately state this identity. The unlabelled internal-helper treatment in ledger:673 and claims.yaml:1510 is appropriate."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedTrigProducts.C₀: E:masked-temporal-modulation",
+      "verdict": "PASS",
+      "reason": "MaskedTrigProducts.lean:325 defines 'C₀ (a : ℝ) := 16 / (1 − a)', without hypotheses; integrated_covariance_foundation.tex:303-306 states 'C₀(a) = 16/(1−a)' in the modulation display under 0<a<1. Ledger:674 expressly restricts the correspondence to this constant and says the bound is supplied; claims.yaml:1517 does likewise. There is no claim that this definition proves modulation."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedTrigProducts.bracket: no direct label",
+      "verdict": "PASS",
+      "reason": "MaskedTrigProducts.lean:100 defines 'bracket (x : ℝ) := Real.sqrt (1 + x^2)'. Integrated_covariance_foundation.tex:296 says 'Write ⟨x⟩ = √(1+x²)' in unlabelled introductory prose. Ledger:675 and claims.yaml:1524 give precisely this definition and correctly avoid assigning it a direct label."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedTrigProducts.frequencyPair: E:masked-frequency-pair",
+      "verdict": "PASS",
+      "reason": "MaskedTrigProducts.lean:106-107 defines, for real a,h,r,ρ, 'bracket(h*(r−ρ))^(a−1) + bracket(h*(r+ρ))^(a−1)'. Integrated_covariance_foundation.tex:355-358 defines the identical Q_h under the lemma's parameter ranges. Definition on a larger domain is harmless. Ledger:676 and claims.yaml:1531 match both terms and powers."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedTrigProducts.Trig: L:masked-trig-products",
+      "verdict": "PASS",
+      "reason": "MaskedTrigProducts.lean:110-113 defines exactly two constructors, 'cos' and 'sin', without hypotheses. Integrated_covariance_foundation.tex:348-349 says each factor is 'either cos' or 'sin'. Ledger:677 and claims.yaml:1538 faithfully encode these choices; generated implementation declarations are not separate mathematical claims."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedTrigProducts.Trig.eval: L:masked-trig-products",
+      "verdict": "PASS",
+      "reason": "MaskedTrigProducts.lean:116-118 evaluates the two constructors as '(Real.cos x : ℂ)' and '(Real.sin x : ℂ)'. Integrated_covariance_foundation.tex:348-349 uses these real factors, with the complex amplitude and norm fixed at TeX:297-301. Ledger:678 and claims.yaml:1545 correctly mention the complex coercion."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedTrigProducts.modeFn: L:masked-trig-products",
+      "verdict": "PASS",
+      "reason": "MaskedTrigProducts.lean:121-122 takes a set I, A:ℝ→ℂ and real ω, defining 'I.indicator ... A t * exp((ω*t)*I)'. Integrated_covariance_foundation.tex:304 and 363-371 use '1_I A(t)e^{iωt}' as the modes in the product proof. No extra modelling restriction is imposed. Ledger:679 and claims.yaml:1552 agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedTrigProducts.prodFn: L:masked-trig-products",
+      "verdict": "PASS",
+      "reason": "MaskedTrigProducts.lean:125-126 takes I,A,P,Q,r,ρ and defines 'I.indicator ... A t * P.eval(r*t) * Q.eval(ρ*t)'. Integrated_covariance_foundation.tex:348-353 uses the same factor choices and the object '1_I A P_r Q_ρ'. Ledger:680 and claims.yaml:1559 are faithful."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedTrigProducts.coef: L:masked-trig-products",
+      "verdict": "PASS",
+      "reason": "MaskedTrigProducts.lean:141 defines 'coef (P Q : Trig) (j : Bool × Bool) := coef1 P j.1 * coef1 Q j.2'. Integrated_covariance_foundation.tex:363-365 expands the two factors into four modes. Multiplying the two single-factor coefficients is exactly this expansion, with no extra hypothesis. Ledger:681 and claims.yaml:1566 agree."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedTrigProducts.freq: L:masked-trig-products",
+      "verdict": "PASS",
+      "reason": "MaskedTrigProducts.lean:144 defines, for real r,ρ and a sign pair j, 'sgn j.1 * r + sgn j.2 * ρ'. Integrated_covariance_foundation.tex:364 specifies frequencies 'σr+τρ', 'σ,τ ∈ {−1,1}'. The Boolean encoding changes neither frequencies nor multiplicity. Ledger:682 and claims.yaml:1573 match."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedTrigProducts.coef1: L:masked-trig-products",
+      "verdict": "PASS",
+      "reason": "MaskedTrigProducts.lean:135-138 defines coefficients '1/2' for cosine and '−i/2', 'i/2' for the two sine signs. Integrated_covariance_foundation.tex:363-365 invokes expansion of the allowed cosine/sine factors; these are exactly its Euler-expansion coefficients. Ledger:683 and claims.yaml:1580 correctly describe this internal definition."
+    },
+    {
+      "claim": "StratonovichHAMSecondMoment.MaskedTrigProducts.sgn: no direct label",
+      "verdict": "PASS",
+      "reason": "MaskedTrigProducts.lean:129-131 defines 'true => 1' and 'false => −1'. Integrated_covariance_foundation.tex:364 uses 'σ,τ ∈ {−1,1}' but contains no Boolean-sign definition. Ledger:684 and claims.yaml:1587 correctly describe an unlabelled implementation encoding rather than a separate labelled manuscript result."
+    },
+    {
+      "claim": "PARA-MaskedTrigProducts",
+      "verdict": "PASS_WITH_NOTES",
+      "reason": "Ledger:610-651 cites the correct manuscript input and accurately discloses E, V, linear emb, hmem, hmod, unused carried assumptions, supremum/derivative conventions, general parameter ranges and the half bound. The abstraction is sound: choose V as pointwise representatives whose restrictions belong to L²(0,T), and emb as their canonical linear map into H_a^ℂ. Injectivity is neither available on pointwise representatives nor needed. TeX:148-155 supplies this interpretation; TeX:301-306 supplies precisely hmod, not a product estimate. The blanket statement at ledger:634-635 that product membership is never assumed needs the harmless qualification in W1 for the two general helper signatures."
+    },
+    {
+      "claim": "LEDGER-INDEX",
+      "verdict": "PASS",
+      "reason": "Ledger:124-127 lists exactly 30 distinct MaskedTrigProducts declarations: 25 under L:masked-trig-products, one frequency-pair definition, one modulation-constant definition and three with no direct label. These agree with rows 655-684. Searching all packet manuscript LaTeX files located every section-cited label at integrated_covariance_foundation.tex:141,300,303,347,354,358."
+    },
+    {
+      "claim": "COVERAGE-ROWS",
+      "verdict": "PASS",
+      "reason": "coverage.yaml:123-135 correctly uses class 'inputs-supplied', names the paper wrapper and general full bound, and lists exactly the two supplied analytic hypotheses: mode membership with a linear map, and modulation for every real ω. Compare MaskedTrigProducts.lean:347-350. The product estimate and membership follow from those inputs; neither is supplied. Full conclusion is justified for this disclosed abstraction, without claiming construction of the completion or proof of modulation."
+    },
+    {
+      "claim": "CROSS-REFERENCES",
+      "verdict": "PASS",
+      "reason": "All ledger occurrences of MaskedTrigProducts and masked-trig references were located. PhaseResponse prose at ledger:416-422 and row 430 correctly distinguish its real cosine-cosine identity from this module's complex expansion, sine cases and norm bound. The Not in Lean discussion at ledger:891-895 correctly leaves completion and modulation supplied. LocalFlow:343-365 and InteractionDriver:288-318 contain no conflicting new MaskedTrigProducts attribution."
+    },
+    {
+      "claim": "LEDGER-TOTALS",
+      "verdict": "PASS",
+      "reason": "Counting all per-module table declarations gives 223 distinct rows, comprising 144 labelled and 79 unlabelled rows, matching ledger:131-132. Joining their declaration names to all claims.yaml declaration/kind fields gives 188 theorems and 35 definitions. Every one of the 223 claims has exactly one ledger row, with no extra ledger declaration."
+    },
+    {
+      "claim": "SCOPE-PROSE",
+      "verdict": "PASS",
+      "reason": "Ledger:30-55 identifies nine whole-result modules and distinguishes seven results without supplied analytic inputs from RadiusMeanAnchor and MaskedTrigProducts. Its newly added MaskedTrigProducts description agrees with Lean:339-356 and coverage.yaml:123-135. The internal-status sentence at ledger:78-81 is numerically correct: claims.yaml contains four internal PositiveGram declarations plus 11 TemporalEquilibrium, six RadiusMeanAnchor and six MaskedTrigProducts helpers, totalling the stated additional 23."
+    }
+  ],
+  "findings": {
+    "fatal": [],
+    "major": [],
+    "minor": [
+      "W1 — General-bound membership wording. candidate/statement-ledger.md:634-635 says 'The product function is never assumed to lie in V'; rows 656-657 and lean/claims.yaml:1391,1398 omit the explicit helper argument. In fact lean/StratonovichHAMSecondMoment/MaskedTrigProducts.lean:284,315 takes 'hp : prodFn I A P Q r ρ ∈ V'. The manuscript states the product bound in manuscript/notes/integrated_covariance_foundation.tex:352-353 and derives it through the four-mode expansion at lines 363-375, without a separate membership assumption. This is harmless rather than a hypothesis obstruction: prodFn_mem at Lean:258-262 derives hp solely from hmem, and masked_trig_products_paper at Lean:351-356 concludes membership itself. Optional exact clarification: change the paragraph to say membership is not an independent assumption of the paper wrapper; the two general bound helpers accept a redundant membership witness derivable by prodFn_mem, and mention that witness in their ledger/claims summaries."
+    ]
+  },
+  "required_repairs": [],
+  "limitations": [
+    "All complete-reading requirement A sources and required sections were read completely. Unread ledger prose and claims summaries outside those sections were not substantively re-reviewed; only their global declaration, label, kind and status fields were audited.",
+    "PROVENANCE.json:86-547 was not read. Byte binding was accepted as supervisor-checked, as stipulated; hashes were not independently recomputed.",
+    "Manuscript files other than the covariance foundation were searched only as needed for labels and standing assumptions; the main manuscript was read in context only at lines 155-216.",
+    "Compilation, proof correctness and standard-axiom status were accepted from the contract, not independently tested.",
+    "The actual temporal completion, its integral norm and the canonical map are not constructed in this module. Acceptance concerns the explicitly disclosed inputs-supplied correspondence and its valid mathematical specialization.",
+    "This AI review is neither human verification nor a novelty audit."
+  ]
+}
