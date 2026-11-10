@@ -1,0 +1,37 @@
+\begin{figure}
+  \centering
+  \begin{tikzpicture}[x=1cm,y=1cm]
+    \node[ham/box,text width=9.5cm] at (5.4,2.05)
+    {One spacetime control $\Psi$ on $(0,1)\times\R^d$\\
+    one cost $v_\Psi/2=\|\Psi\|_{H_I}^2/2$};
+    \draw[ham/arrow] (-.3,0)--(11.5,0) node[right] {time};
+    \foreach \hamPointX in {0,2.2,4.4,6.6,8.8} {\draw (\hamPointX,-.14)--(\hamPointX,.14);}
+    \draw (10.2,-.14)--(10.2,.14);
+    \foreach \hamPointX/\hamBlockIndex in {1.1/0,3.3/1,5.5/2,7.7/{N-1}} {
+    \draw[fill=hamblue!9,draw=hamblue] (\hamPointX-1.02,.18) rectangle (\hamPointX+1.02,.65);
+    \node[font=\small] at (\hamPointX,.42) {$X_{\hamBlockIndex}$};
+    }
+    \draw[fill=hamgold!12,draw=hamgold] (8.88,.18) rectangle (10.12,.65);
+    \node[font=\small] at (9.5,.42) {$X_N$};
+    \node[font=\small,anchor=north] at (0,-.18) {$0$};
+    \node[font=\small,anchor=north] at (8.8,-.18) {$NB$};
+    \node[font=\small,anchor=north] at (10.2,-.18) {$\delta^{-1}$};
+    \draw[ham/brace] (0,-.83)--(2.2,-.83);
+    \node[font=\small,anchor=north] at (1.1,-.98) {$B$};
+    \draw[ham/brace] (8.8,-.83)--(10.2,-.83);
+    \node[font=\small,anchor=north] at (9.5,-.98) {$\tau\in[0,B)$};
+    \draw[ham/pair] (1.1,.75) to[bend left=16] (5.5,.75);
+    \draw[ham/pair] (3.3,.75) to[bend left=12] (9.5,.75);
+    \node[ham/note,text width=10cm] at (5.25,-2.65)
+    {Correlated blocks; ordered evolution carries $(u,\partial_tu)$.\\
+    The last block may be empty. Example: $N=4$.};
+  \end{tikzpicture}
+  \caption{The true partition in fast time. Here $N=\lfloor1/(\delta B)\rfloor$
+    and $\tau=\delta^{-1}-NB$. All blocks come from the same noise and a single
+    control on the whole time interval. The change-of-law density has cost
+    $v_\Psi/(2\delta)$; the displayed $v_\Psi/2$ is its normalized cost. The
+    proof does not multiply independent block probabilities or add separate
+    Gaussian costs. See \ProofRef{Lemma}{L:raw-block-inputs} and
+    \ProofRef{Proposition}{P:tube-actual-law}.}
+  \label{Fig:global-control-blocks}
+\end{figure}

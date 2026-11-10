@@ -1,62 +1,57 @@
 \section{Finite optimization with nonnegative Gram entries}
 \label{S:finite-positive-gram}
 
-Let $H$ be any real Hilbert space, $\mathcal I$ a finite index set,
-$k_i\in H$, $\ell_i>0$ and $b_i\ge0$.
-Write $C_{ij}=\langle k_i,k_j\rangle$ and assume $C_{ij}\ge0$ for every
-pair. The Gram matrix is symmetric and positive semidefinite, since
-$\sum_{i,j}a_iC_{ij}a_j=\|\sum_i a_i k_i\|^2$.
-Put $t_+=\max(t,0)$ and define
+Let $H$ be any real Hilbert space, $\mathcal{I}$ a finite index set, $k_i \in
+H$, $\ell_i > 0$ and $b_i \ge 0$. Write $C_{ij} = \langle k_i,k_j\rangle$ and
+assume $C_{ij} \ge 0$ for every pair. The Gram matrix is symmetric and positive
+semidefinite, since $\sum_{i,j}a_iC_{ij}a_j = \|\sum_i a_i k_i\|^2$. Put $t_+ =
+\max(t,0)$ and define
 \begin{equation}\label{E:finite-gram-score}
-  \mathfrak F_C(\Phi)
-  =2\sum_{i\in\mathcal I}\ell_i
+  \mathfrak{F}_C(\Phi)
+  =2\sum_{i\in\mathcal{I}}\ell_i
   \sqrt{(\langle\Phi,k_i\rangle-b_i)_+}-\|\Phi\|^2/2,
-  \qquad \mathscr S(C)=\sup_{\Phi\in H}\mathfrak F_C(\Phi).
+  \qquad \mathscr{S}(C)=\sup_{\Phi\in H}\mathfrak{F}_C(\Phi).
 \end{equation}
-Let $\mathcal J=\{i:k_i\ne0\}=\{i:C_{ii}>0\}$.
-Zero labels contribute zero because $b_i\ge0$.
-Empty index sets, singular Grams and $H=\{0\}$ are allowed.
-For nonempty $A\subset\mathcal J$ and $w_i>0$, set
+Let $\mathcal{J} = \{i:k_i\ne0\} = \{i:C_{ii}>0\}$. Zero vectors contribute zero
+because $b_i \ge 0$. Empty index sets, singular Grams and $H = \{0\}$ are
+allowed. For nonempty $A \subset \mathcal{J}$ and $w_i > 0$, set
 \begin{equation}\label{E:finite-gram-dual}
   D_A^C(w)=\sum_{i\in A}\frac{\ell_i^2}{w_i}
   -\sum_{i\in A}b_iw_i
   +\frac12\sum_{i,j\in A}w_iC_{ij}w_j,
   \qquad d_A^C=\inf_{w_i>0}D_A^C(w).
 \end{equation}
-Set $d_\varnothing^C=0$.
+Set $d_\varnothing^C = 0$.
 
 \begin{lemma}[Scalar and Hilbert identities]\label{L:gram-scalar-algebra}
-  For real $\ell$, $w>0$ and $t\ge0$,
+  For real $\ell$, $w > 0$ and $t \ge 0$,
   \begin{equation}\label{E:gram-sqrt-dual}
     2\ell\sqrt t\le\ell^2/w+wt.
   \end{equation}
-  For $\Phi,z\in H$,
+  For $\Phi,z \in H$,
   \begin{equation}\label{E:gram-hilbert-square}
     \langle\Phi,z\rangle-\|\Phi\|^2/2
     =\|z\|^2/2-\|\Phi-z\|^2/2\le\|z\|^2/2.
   \end{equation}
-  For finite real $w_i$,
-  $\|\sum_iw_ik_i\|^2=\sum_{i,j}w_iC_{ij}w_j$.
+  For finite real $w_i$, $\|\sum_iw_ik_i\|^2 = \sum_{i,j}w_iC_{ij}w_j$.
 \end{lemma}
 
 \begin{proof}
-  Since $\sqrt w>0$ and $\sqrt{wt}=\sqrt w\sqrt t$,
+  Since $\sqrt w > 0$ and $\sqrt{wt} = \sqrt w\sqrt t$,
   \[
     0\le(\ell/\sqrt w-\sqrt{wt})^2
     =\ell^2/w+wt-2\ell\sqrt t.
   \]
-  This includes $t=0$. If $\ell,t>0$, equality holds for
-  $w=\ell/\sqrt t$.
-  Expanding $\|\Phi-z\|^2$ proves~\eqref{E:gram-hilbert-square}.
-  Bilinearity of the real inner product proves the finite Gram identity.
-  These identities use neither compactness of a Hilbert ball nor an
-  inverse covariance matrix.
-  This proves Lemma~\ref{L:gram-scalar-algebra}.
+  This includes $t = 0$. If $\ell,t > 0$, equality holds for $w = \ell/\sqrt t$.
+  Expanding $\|\Phi-z\|^2$ proves~\eqref{E:gram-hilbert-square}. Bilinearity of
+  the real inner product proves the finite Gram identity. These identities use
+  neither compactness of a Hilbert ball nor an inverse covariance matrix. This
+  proves Lemma~\ref{L:gram-scalar-algebra}.
 \end{proof}
 
 \begin{lemma}[Interior dual minimum]\label{L:gram-dual-minimum}
-  Each nonempty $A\subset\mathcal J$ has a unique positive minimizer
-  $w^A$ of $D_A^C$. At this minimizer,
+  Each nonempty $A \subset \mathcal{J}$ has a unique positive minimizer $w^A$ of
+  $D_A^C$. At this minimizer,
   \begin{equation}\label{E:gram-dual-stationarity}
     \sum_{j\in A}C_{ij}w_j^A-b_i
     =\frac{\ell_i^2}{(w_i^A)^2}>0,\qquad i\in A.
@@ -64,8 +59,8 @@ Set $d_\varnothing^C=0$.
 \end{lemma}
 
 \begin{proof}
-  Put $c_i=C_{ii}>0$ and $K_A=\sum_{i\in A}b_i^2/c_i$.
-  Nonnegative entries and positive weights give
+  Put $c_i = C_{ii} > 0$ and $K_A = \sum_{i\in A}b_i^2/c_i$. Nonnegative entries
+  and positive weights give
   \[
     D_A^C(w)\ge
     \sum_i\left(\ell_i^2/w_i-b_iw_i+c_iw_i^2/2\right).
@@ -75,164 +70,147 @@ Set $d_\varnothing^C=0$.
     D_A^C(w)\ge
     \sum_i\ell_i^2/w_i+\frac14\sum_i c_iw_i^2-K_A.
   \end{equation}
-  Thus no coordinate can approach zero or infinity in a bounded sublevel
-  while a different negative term hides its growth.
-  Take $w^0=(1,\ldots,1)$, $d_0=D_A^C(w^0)$ and $L_A=d_0+K_A$.
-  Equation~\eqref{E:gram-dual-coercivity} at $w^0$ gives
-  $L_A\ge\sum_i\ell_i^2+\sum_i c_i/4>0$.
-  Every $w$ with $D_A^C(w)\le d_0$ satisfies
+  Thus, no coordinate can approach zero or infinity in a bounded sublevel while
+  a different negative term hides its growth. Take $w^0 = (1,\ldots,1)$, $d_0 =
+  D_A^C(w^0)$ and $L_A = d_0+K_A$. Equation~\eqref{E:gram-dual-coercivity} at
+  $w^0$ gives $L_A \ge \sum_i\ell_i^2+\sum_i c_i/4 > 0$. Every $w$ with
+  $D_A^C(w) \le d_0$ satisfies
   \[
     \ell_i^2/L_A\le w_i\le\sqrt{4L_A/c_i}.
   \]
-  The sublevel is nonempty and closed inside this compact box, which
-  lies in the open positive orthant. A minimizing sequence chosen in
-  the sublevel has a convergent subsequence there. Continuity attains
-  its infimum. Outside this sublevel the values exceed $d_0$, so the
-  minimum is global on the entire positive orthant.
+  The sublevel is nonempty and closed inside this compact box, which lies in the
+  open positive orthant. A minimizing sequence chosen in the sublevel has a
+  convergent subsequence there. Continuity attains its infimum. Outside this
+  sublevel the values exceed $d_0$, so the minimum is global on the entire
+  positive orthant.
 
-  The function is smooth in that orthant.
-  Its Hessian on a nonzero vector $\xi$ has value
+  The function is smooth in that orthant. Its Hessian on a nonzero vector $\xi$
+  has value
   \[
     \sum_i\frac{2\ell_i^2}{w_i^3}\xi_i^2
     +\sum_{i,j}\xi_iC_{ij}\xi_j>0.
   \]
-  The first term is strictly positive and the second is a squared
-  Hilbert norm. Restriction to any nonconstant line segment is
-  strictly convex, proving uniqueness.
-  Each coordinate permits both signs of a small perturbation at the
-  interior minimum. Differentiation gives
-  $-\ell_i^2/w_i^2-b_i+\sum_jC_{ij}w_j=0$.
-  This is~\eqref{E:gram-dual-stationarity}.
-  This proves Lemma~\ref{L:gram-dual-minimum}.
+  The first term is strictly positive and the second is a squared Hilbert norm.
+  Restriction to any nonconstant line segment is strictly convex, proving
+  uniqueness. Each coordinate permits both signs of a small perturbation at the
+  interior minimum. Differentiation gives $-\ell_i^2/w_i^2-b_i+\sum_jC_{ij}w_j =
+  0$. This is~\eqref{E:gram-dual-stationarity}. This proves
+  Lemma~\ref{L:gram-dual-minimum}.
 \end{proof}
 
 \begin{proposition}[Positive conic maximizer]\label{P:gram-positive-optimizer}
   The finite real value in~\eqref{E:finite-gram-score} satisfies
   \begin{equation}\label{E:gram-active-duality}
-    \mathscr S(C)=\max_{A\subset\mathcal J}d_A^C .
+    \mathscr{S}(C)=\max_{A\subset\mathcal{J}}d_A^C .
   \end{equation}
-  If a maximizing subset is empty, $\Phi=0$ attains the score.
-  If a maximizing subset $A$ is nonempty, a maximizer is
-  $\Phi_A=\sum_{i\in A}w_i^A k_i$ with strictly positive coefficients.
-  No uniqueness of the primal maximizer or maximizing subset is asserted.
+  If a maximizing subset is empty, $\Phi = 0$ attains the supremum. If a
+  maximizing subset $A$ is nonempty, a maximizer is $\Phi_A = \sum_{i\in A}w_i^A
+  k_i$ with strictly positive coefficients. No uniqueness of the primal
+  maximizer or maximizing subset is asserted.
 \end{proposition}
 
 \begin{proof}
-  For arbitrary $\Phi$, let
-  $A(\Phi)=\{i:\langle\Phi,k_i\rangle>b_i\}$.
-  It is contained in $\mathcal J$.
-  All other score terms vanish, including equality at the threshold.
-  If $A(\Phi)$ is empty, $\mathfrak F_C(\Phi)=-\|\Phi\|^2/2\le0$.
-  Otherwise, for any positive $w$ on $A=A(\Phi)$, set
-  $t_i=\langle\Phi,k_i\rangle-b_i>0$ and $z=\sum_{i\in A}w_ik_i$.
+  For arbitrary $\Phi$, let $A(\Phi) = \{i:\langle\Phi,k_i\rangle>b_i\}$. It is
+  contained in $\mathcal{J}$. All other terms in the objective vanish, including
+  equality at the threshold. If $A(\Phi)$ is empty, $\mathfrak{F}_C(\Phi) =
+  -\|\Phi\|^2/2 \le 0$. Otherwise, for any positive $w$ on $A = A(\Phi)$, set
+  $t_i = \langle\Phi,k_i\rangle-b_i > 0$ and $z = \sum_{i\in A}w_ik_i$.
   Lemma~\ref{L:gram-scalar-algebra} gives
   \[
-    \mathfrak F_C(\Phi)
+    \mathfrak{F}_C(\Phi)
     \le\sum_i\ell_i^2/w_i-\sum_i b_iw_i
     +\langle\Phi,z\rangle-\|\Phi\|^2/2
     \le D_A^C(w).
   \]
-  This holds for every positive $w$, so
-  $\mathfrak F_C(\Phi)\le d_A^C$.
-  There are finitely many subsets and their values are finite by
-  Lemma~\ref{L:gram-dual-minimum}.
-  Taking the supremum bounds $\mathscr S(C)$ above by their maximum.
+  This holds for every positive $w$, so $\mathfrak{F}_C(\Phi) \le d_A^C$. There
+  are finitely many subsets and their values are finite by
+  Lemma~\ref{L:gram-dual-minimum}. Taking the supremum bounds $\mathscr{S}(C)$
+  above by their maximum.
 
-  Conversely, $\mathfrak F_C(0)=0=d_\varnothing^C$.
-  For nonempty $A$, take its dual minimizer.
-  Equation~\eqref{E:gram-dual-stationarity} makes every label in $A$
-  strictly active at $\Phi_A$, with
-  $\sqrt{\langle\Phi_A,k_i\rangle-b_i}=\ell_i/w_i^A$.
-  Both inequalities in the preceding display are then equalities
-  for the sum restricted to $A$, since $z=\Phi_A$.
-  This restricted score equals $d_A^C$.
-  All omitted labels contribute nonnegative terms to the full score,
-  hence $\mathfrak F_C(\Phi_A)\ge d_A^C$, even if this value is negative.
-  Maximizing over $A$, including the empty set, proves
-  \eqref{E:gram-active-duality} and the asserted attainment.
-  For a maximizing nonempty subset the upper and lower bounds force
-  $\mathfrak F_C(\Phi_A)=d_A^C$; no outside inactivity was assumed.
-  All-zero labels give $\mathscr S(C)=0$ directly.
-  This proves Proposition~\ref{P:gram-positive-optimizer}.
+  Conversely, $\mathfrak{F}_C(0) = 0 = d_\varnothing^C$. For nonempty $A$, take
+  its dual minimizer. Equation~\eqref{E:gram-dual-stationarity} makes every
+  vector in $A$ strictly active at $\Phi_A$, with
+  $\sqrt{\langle\Phi_A,k_i\rangle-b_i} = \ell_i/w_i^A$. Both inequalities in the
+  preceding display are then equalities for the sum restricted to $A$, since $z
+  = \Phi_A$. This restricted objective equals $d_A^C$. All omitted vectors
+  contribute nonnegative terms to the full objective, hence
+  $\mathfrak{F}_C(\Phi_A) \ge d_A^C$, even if this value is negative. Maximizing
+  over $A$, including the empty set, proves \eqref{E:gram-active-duality} and
+  the asserted attainment. For a maximizing nonempty subset the upper and lower
+  bounds force $\mathfrak{F}_C(\Phi_A) = d_A^C$; no outside inactivity was
+  assumed. All-zero vectors give $\mathscr{S}(C) = 0$ directly. This proves
+  Proposition~\ref{P:gram-positive-optimizer}.
 \end{proof}
 
+\input{notes/figures/positive-gram}
+
 \begin{lemma}[Real Gram realization]\label{L:gram-realization}
-  Every finite real symmetric positive semidefinite matrix is the Gram
-  matrix of vectors in a finite-dimensional real Hilbert space.
-  When its entries are nonnegative, the value $\mathscr S(C)$ is
-  independent of its realization.
+  Every finite real symmetric positive semidefinite matrix is the Gram matrix of
+  vectors in a finite-dimensional real Hilbert space. When its entries are
+  nonnegative, the value $\mathscr{S}(C)$ is independent of its realization.
 \end{lemma}
 
 \begin{proof}
-  Induct on the size, with the empty matrix realized in $\{0\}$.
-  Diagonal entries are nonnegative.
-  If all vanish, testing on $e_i+t e_j$ gives $2tC_{ij}\ge0$ for
-  every real $t$, hence $C=0$, realized by zero vectors.
-  Otherwise permute a positive diagonal $c$ into the first position
-  and write $C=\left[\begin{smallmatrix}c&v^{\mathsf T}\\v&A\end{smallmatrix}\right]$.
-  The Schur complement $B=A-vv^{\mathsf T}/c$ is positive semidefinite:
-  test the original quadratic form on $(-v^{\mathsf T}y/c,y)$.
-  Realize $B$ by vectors $u_i$ using the induction hypothesis.
-  Then $k_1=(\sqrt c,0)$ and
-  $k_i=(v_i/\sqrt c,u_i)$ for the other indices realize $C$.
-  Undo the permutation.
-  Entries of $B$ need not be nonnegative; this construction requires
-  neither nonnegative coordinates nor complete positivity.
+  Induct on the size, with the empty matrix realized in $\{0\}$. Diagonal
+  entries are nonnegative. If all vanish, testing on $e_i+t e_j$ gives $2tC_{ij}
+  \ge 0$ for every real $t$, hence $C = 0$, realized by zero vectors. Otherwise
+  permute a positive diagonal $c$ into the first position and write $C =
+  \left[\begin{smallmatrix}c&v^{\mathsf{T}}\\v&A\end{smallmatrix}\right]$. The
+  Schur complement $B = A-vv^{\mathsf{T}}/c$ is positive semidefinite: test the
+  original quadratic form on $(-v^{\mathsf{T}}y/c,y)$. Realize $B$ by vectors
+  $u_i$ using the induction hypothesis. Then $k_1 = (\sqrt c,0)$ and $k_i =
+  (v_i/\sqrt c,u_i)$ for the other indices realize $C$. Undo the permutation.
+  Entries of $B$ need not be nonnegative; this construction requires neither
+  nonnegative coordinates nor complete positivity.
 
-  In any realization, $C_{ii}=0$ means $k_i=0$, so its entire row
-  vanishes. Formula~\eqref{E:gram-active-duality} depends only on
-  $C,\ell,b$ and these eligible indices. It therefore proves
-  realization independence whenever the entries are nonnegative,
-  which is the scope in which $\mathscr S(C)$ is used.
+  In any realization, $C_{ii} = 0$ means $k_i = 0$, so its entire row vanishes.
+  Formula~\eqref{E:gram-active-duality} depends only on $C,\ell,b$ and these
+  eligible indices. It therefore proves realization independence whenever the
+  entries are nonnegative, which is the scope in which $\mathscr{S}(C)$ is used.
   This proves Lemma~\ref{L:gram-realization}.
 \end{proof}
 
 \begin{proposition}[Entrywise Gram comparison]\label{P:gram-entrywise-comparison}
-  Let $C,D$ be real symmetric positive semidefinite matrices on the
-  same finite index set, with $0\le C_{ij}\le D_{ij}$.
-  With the same $\ell_i>0,b_i\ge0$,
+  Let $C,D$ be real symmetric positive semidefinite matrices on the same finite
+  index set, with $0 \le C_{ij} \le D_{ij}$. With the same $\ell_i > 0,b_i \ge
+  0$,
   \[
-    \mathscr S(C)\le\mathscr S(D).
+    \mathscr{S}(C)\le\mathscr{S}(D).
   \]
   No positive-semidefinite order on $D-C$ is required.
 \end{proposition}
 
 \begin{proof}
-  Lemma~\ref{L:gram-realization} defines both values.
-  Their eligible sets satisfy $\mathcal J_C\subset\mathcal J_D$.
-  For nonempty $A\subset\mathcal J_C$ and positive weights,
+  Lemma~\ref{L:gram-realization} defines both values. Their eligible sets
+  satisfy $\mathcal{J}_C \subset \mathcal{J}_D$. For nonempty $A \subset
+  \mathcal{J}_C$ and positive weights,
   \[
     D_A^D(w)-D_A^C(w)
     =\frac12\sum_{i,j\in A}w_i(D_{ij}-C_{ij})w_j\ge0.
   \]
-  Taking infima gives $d_A^C\le d_A^D$.
-  The empty values are both zero.
-  Taking maxima and using the inclusion of eligible families proves
-  the claim by Proposition~\ref{P:gram-positive-optimizer}.
-  This includes the appearance of previously zero labels.
-  This proves Proposition~\ref{P:gram-entrywise-comparison}.
+  Taking infima gives $d_A^C \le d_A^D$. The empty values are both zero. Taking
+  maxima and using the inclusion of eligible families proves the claim by
+  Proposition~\ref{P:gram-positive-optimizer}. This includes the appearance of
+  previously zero vectors. This proves
+  Proposition~\ref{P:gram-entrywise-comparison}.
 \end{proof}
 
 \begin{remark}[Exact checks and scope]\label{R:gram-controls}
-  The empty value is essential: for one label with $C=1$,
-  $\ell=1/10,b=4$, the nonempty dual has
-  $D(4)=-3199/400<0$, whereas the primal score at zero is zero.
-  Global concavity is unavailable: for $k=\ell=b=1$ the score
-  $2\sqrt{(\phi-1)_+}-\phi^2/2$ decreases on $[0,1]$ and has infinite
-  positive right slope at one.
-  For $k=\ell=1,b=0$, differentiation on $\phi>0$ gives the maximum
-  $3/2$ at $\phi=1$; on $\phi\le0$ the score is nonpositive.
-  Doubling the cost changes the positive critical point to $2^{-2/3}$
-  and the maximum to $3\,2^{-4/3}$.
-  Finally $C=I_2$, $D=\left[\begin{smallmatrix}1&1/2\\1/2&1\end{smallmatrix}\right]$
-  are nonnegative positive semidefinite Grams but $D-C$ has eigenvalues
-  $1/2,-1/2$. These are finite analytic checks, not a covariance-order
-  theorem for physical waves.
+  The empty value is essential: for one vector with $C = 1$, $\ell = 1/10,b =
+  4$, the nonempty dual has $D(4) = -3199/400 < 0$, whereas the primal objective
+  at zero is zero. Global concavity is unavailable: for $k = \ell = b = 1$ the
+  objective $2\sqrt{(\phi-1)_+}-\phi^2/2$ decreases on $[0,1]$ and has infinite
+  positive right slope at one. For $k = \ell = 1,b = 0$, differentiation on
+  $\phi > 0$ gives the maximum $3/2$ at $\phi = 1$; on $\phi \le 0$ the
+  objective is nonpositive. Doubling the cost changes the positive critical
+  point to $2^{-2/3}$ and the maximum to $3\,2^{-4/3}$. Finally, $C = I_2$, $D =
+  \left[\begin{smallmatrix}1&1/2\\1/2&1\end{smallmatrix}\right]$ are nonnegative
+  positive semidefinite Grams but $D-C$ has eigenvalues $1/2,-1/2$. These are
+  finite analytic checks, not a covariance-order theorem for physical waves.
 
-  The scalar, finite Gram, conditional active upper and half-quadratic
-  entrywise deductions have existing local Lean certificates at their
-  exact hypotheses. Dual coercivity, calculus, attainment, realization
-  and the infimum/maximum argument above remain analytic proofs.
-  No new kernel fact or formalization of the physical application follows
-  merely from these certificates.
+  The scalar, finite Gram, conditional active upper and half-quadratic entrywise
+  deductions have existing local Lean certificates at their exact hypotheses.
+  Dual coercivity, calculus, attainment, realization and the infimum/maximum
+  argument above remain analytic proofs. No new kernel fact or formalization of
+  the physical application follows merely from these certificates.
 \end{remark}

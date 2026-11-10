@@ -1,0 +1,51 @@
+\begin{figure}
+  \centering
+  \begin{tikzpicture}[x=1cm,y=1cm]
+    \foreach \hamPanelOffset/\hamPanelTitle in {0/{Cross-pairs},4.25/{Self-pairs},8.5/{Unequal orders}} {
+    \node[ham/note] at (\hamPanelOffset+1.7,1.05) {\hamPanelTitle};
+    }
+    \begin{scope}
+      \node[ham/dot] (a1) at (.6,0) {};
+      \node[ham/dot] (a2) at (2.8,0) {};
+      \node[ham/dot] (b1) at (.6,-1.05) {};
+      \node[ham/dot] (b2) at (2.8,-1.05) {};
+      \draw[ham/arrow] (a1)--(a2);
+      \draw[ham/arrow] (b1)--(b2);
+      \draw[ham/pair] (a1)--(b2);
+      \draw[ham/pair] (a2)--(b1);
+      \node[ham/note] at (1.7,-1.92) {$m=n=2$};
+    \end{scope}
+    \begin{scope}[xshift=4.25cm]
+      \node[ham/dot] (c1) at (.6,0) {};
+      \node[ham/dot] (c2) at (2.8,0) {};
+      \node[ham/dot] (d1) at (.6,-1.05) {};
+      \node[ham/dot] (d2) at (2.8,-1.05) {};
+      \draw[ham/arrow] (c1)--(c2);
+      \draw[ham/arrow] (d1)--(d2);
+      \draw[ham/pair] (c1) to[bend left=32] (c2);
+      \draw[ham/pair] (d1) to[bend right=32] (d2);
+      \node[ham/note] at (1.7,-1.92) {$m=n=2$};
+    \end{scope}
+    \begin{scope}[xshift=8.5cm]
+      \node[ham/dot] (e1) at (1.7,0) {};
+      \node[ham/dot] (f1) at (.35,-1.05) {};
+      \node[ham/dot] (f2) at (1.7,-1.05) {};
+      \node[ham/dot] (f3) at (3.05,-1.05) {};
+      \draw[ham/arrow] (f1)--(f2);
+      \draw[ham/arrow] (f2)--(f3);
+      \draw[ham/pair] (e1)--(f2);
+      \draw[ham/pair] (f1) to[bend right=28] (f3);
+      \node[ham/note] at (1.7,-1.92) {$m=1,\ n=3$};
+    \end{scope}
+    \draw[ham/arrow] (.5,-2.65)--(1.25,-2.65);
+    \node[anchor=west,font=\small] at (1.4,-2.65) {order within a chain};
+    \draw[ham/pair] (6.4,-2.65)--(7.15,-2.65);
+    \node[anchor=west,font=\small] at (7.3,-2.65) {one covariance pairing};
+  \end{tikzpicture}
+  \caption{Three permitted pairing contributions. Each chain has its own time
+    order; no common interleaving is imposed by the picture. Stratonovich
+    products include self-pairs and unequal orders, as well as cross-pairs.
+    These examples do not list every pairing. See
+    \ProofRef{Proposition}{P:mixed}.}
+  \label{Fig:two-chain-pairings}
+\end{figure}

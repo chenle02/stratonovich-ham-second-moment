@@ -1,0 +1,27 @@
+\begin{figure}
+  \centering
+  \begin{tikzpicture}[x=1cm,y=1cm]
+    \draw[ham/arrow] (0,0)--(6,0) node[right] {$x$};
+    \draw[ham/arrow] (0,0)--(0,3.6) node[above] {$s$};
+    \draw[dotted] (.3,3.15)--(5.6,3.15);
+    \node[anchor=east,font=\small] at (-.1,.05) {$0$};
+    \node[anchor=east,font=\small] at (-.1,3.15) {$1$};
+    \filldraw[draw=hamblue,fill=hamblue!12] (.85,.45) rectangle (2.55,1.45);
+    \filldraw[draw=hamteal,dashed,fill=hamteal!12] (3.25,1.8) rectangle (5.05,2.8);
+    \node[font=\small] at (1.7,.95) {$\phi_1(s)\psi_1(x)$};
+    \node[font=\small] at (4.15,2.3) {$\phi_2(s)\psi_2(x)$};
+    \node[ham/box,text width=4.6cm] at (9,2.65)
+    {$\Psi\ge0$, smooth and compactly supported\\
+    $\Psi=\phi_1\psi_1+\phi_2\psi_2$};
+    \node[ham/box,text width=4.6cm] at (9,-.2)
+    {Keep covariance amplitude\\
+    gradient coefficient $1$\\
+    cost $v_\Psi/2$};
+  \end{tikzpicture}
+  \caption{The control class is not restricted to one product of time and space
+    functions. Two smooth nonnegative bumps with distinct time and space
+    supports give a simple non-factorizing example. The shaded sets indicate
+    supports, not a proposed optimizer. The full class is infinite-dimensional;
+    see \ProofRef{Theorem}{T:intrinsic-second-moment}.}
+  \label{Fig:nonseparable-controls}
+\end{figure}

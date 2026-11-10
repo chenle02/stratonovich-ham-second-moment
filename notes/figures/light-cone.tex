@@ -1,0 +1,34 @@
+\begin{figure}
+  \centering
+  \begin{tikzpicture}[x=1cm,y=1cm]
+    \fill[hamblue!4] (-5.4,0) rectangle (5.4,3.4);
+    \fill[white] (-2.7,0) rectangle (2.7,3.4);
+    \fill[hamteal!10] (-2.5,0)--(0,2.5)--(2.5,0)--cycle;
+    \draw[ham/arrow] (-5.7,0)--(5.7,0) node[right] {$y$};
+    \draw[ham/arrow] (0,-.25)--(0,3.55) node[above] {$s$};
+    \draw[thick,hamteal] (-2.5,0)--(0,2.5)--(2.5,0);
+    \draw[dashed,hamblue] (-2.7,0)--(-2.7,3.25);
+    \draw[dashed,hamblue] (2.7,0)--(2.7,3.25);
+    \draw[hamblue] (-5.4,0)--(-5.4,3.25);
+    \draw[hamblue] (5.4,0)--(5.4,3.25);
+    \fill (0,2.5) circle (1.7pt);
+    \node[anchor=west,fill=white,inner sep=2pt] at (.15,2.55) {$(T,x)$};
+    \node[ham/note,text width=4.2cm] at (0,.65)
+    {$|y-x|\le T-s$\\data: $(u,\partial_tu)$};
+    \node[font=\small,anchor=north] at (-2.7,-.1) {$-R$};
+    \node[font=\small,anchor=north] at (2.7,-.1) {$R$};
+    \node[ham/note,fill=white] at (0,3.05) {mask equals one on $B_R$};
+    \node[font=\small,anchor=north] at (-5.4,-.1) {$-2R$};
+    \node[font=\small,anchor=north] at (5.4,-.1) {$2R$};
+  \end{tikzpicture}
+  \caption{A spatial cross-section of finite propagation. The entire backward
+    cone is chosen inside the region where the mask equals one; the mask
+    vanishes outside $\overline{B}_{2R}$. The drawing is schematic and does not
+    prescribe a value of $R/T$. Shading indicates the domain of dependence, not
+    a Green density; in dimension three the Green measure is supported on a
+    sphere. In the point-moment comparison, $L=\delta^{-1}$, $R=L+2$ and $x\in
+    B_1$. Both displacement and velocity must be passed between time intervals.
+    See \ProofRef{Lemma}{L:raw-block-restart} and
+    \ProofRef{Proposition}{P:original-point-transfer}.}
+  \label{Fig:light-cone}
+\end{figure}

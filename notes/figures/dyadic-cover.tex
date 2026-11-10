@@ -1,0 +1,32 @@
+\begin{figure}
+  \centering
+  \begin{tikzpicture}[x=1cm,y=1cm]
+    \draw[ham/brace] (0,.62)--(3,.62);
+    \node[font=\small,anchor=south] at (1.5,.77) {$h_j$};
+    \foreach \hamGridRow/\hamPanelShift/\hamGridName in {0/0/{0},1/1/{1/3},2/2/{2/3}} {
+    \draw[hamblue] (0,-\hamGridRow)--(11.4,-\hamGridRow);
+    \foreach \hamGridIndex in {0,1,2,3} {
+    \pgfmathsetmacro{\hamGridBoundary}{3*\hamGridIndex+\hamPanelShift}
+    \draw (\hamGridBoundary,-\hamGridRow-.12)--(\hamGridBoundary,-\hamGridRow+.12);
+    }
+    \node[anchor=east,font=\small] at (-.25,-\hamGridRow) {$t=\hamGridName$};
+    }
+    \draw[hamteal,line width=3pt] (1,-1)--(4,-1);
+    \draw[hamteal] (1,-1.2)--(1,-.8);
+    \draw[hamteal] (4,-1.2)--(4,-.8);
+    \draw[dashed] (2.8,.2)--(2.8,-2.55);
+    \draw[dashed] (3.4,.2)--(3.4,-2.55);
+    \node[anchor=north,font=\small] at (2.8,-2.6) {$s$};
+    \node[anchor=north,font=\small] at (3.4,-2.6) {$r$};
+    \node[ham/note,text width=5.4cm] at (7.4,-2.95)
+    {$3|s-r|<h_j\le6|s-r|$\\both points in one interval};
+  \end{tikzpicture}
+  \caption{The three grids at one selected scale. Their boundaries are separated
+    by $h_j/3>|s-r|$, so at least one grid has no boundary between $s$ and $r$.
+    The full nested construction uses endpoints $h_j(n+(-1)^jt)$ for
+    $t=0,1/3,2/3$; the shift alternates with the level. The resulting infinite
+    sum dominates $|s-r|^{-a}$ off the diagonal. This is not a claim that an
+    arbitrary finite partial sum already dominates it. See
+    \ProofRef{Theorem}{T:full-upper}.}
+  \label{Fig:dyadic-cover}
+\end{figure}

@@ -4,15 +4,13 @@
 
 **Start here:** [STATUS-DIGEST.md](STATUS-DIGEST.md) is a one-page gate board and constraint summary (derived; Progress.md remains the authority).
 
-**Current working draft (2026-11-09 literature revision):** [269-page PDF](notes/notes_stratonovich_ham_second_moment.pdf) and [TeX](notes/notes_stratonovich_ham_second_moment.tex), an **unadopted mathematical candidate**. The opening contribution paragraph and literature discussion now include the relevant SWE predecessors and the three ongoing Skorohod projects. See [the source/result crosswalk](notes/LITERATURE-REVIEW.md), [draft status](notes/WORKING-DRAFT-STATUS.md), [AI development history](AI-DEV-HISTORY.md), and [current validation](reviews/2026-11-09-literature-review/README.md). Whole MAIN remains MEDIUM/unaccepted at its original scope; the dated summaries below are historical.
+**Current illustrated working draft:** [275-page technical companion](notes/notes_stratonovich_ham_second_moment.pdf) and [24-page reader](notes/notes_stratonovich_ham_second_moment_reader.pdf), both with matching TeX. The companion contains 12 TikZ figures and the reader contains seven. Both have received a contextual plain-English and source-typing pass. See the [figure guide and validation](notes/figures/README.md), [reading guide](notes/README-reader.md), [literature crosswalk](notes/LITERATURE-REVIEW.md), and [development history](AI-DEV-HISTORY.md).
 
-**Reading guide:** [20-page reader](notes/notes_stratonovich_ham_second_moment_reader.pdf),
-[matching TeX](notes/notes_stratonovich_ham_second_moment_reader.tex), and
-[guide](notes/README-reader.md), paired with the current 269-page companion.
-The combined record has289 pages. All 69 technical labels and 209 external PDF
-links match. It guides the reading of the full proof; independent clearance
-remains open. The original263+20-page and later267+20-page pairings remain
-historical in Git and their original review directories.
+The reader grew from 20 to 24 pages and the companion from 269 to 275 pages;
+no smaller typography was used to conceal the added explanations. The 215
+technical proofs retain their mathematical expressions and labels. **The
+mathematical draft remains unadopted:** illustration/style review does not
+promote the existing whole MAIN or final-review status.
 
 The second moment of the Stratonovich hyperbolic Anderson model with noise
 fractional in time: an upper bound at the correct scale

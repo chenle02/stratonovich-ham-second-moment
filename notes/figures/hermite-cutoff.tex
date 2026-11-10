@@ -1,0 +1,29 @@
+\begin{figure}
+  \centering
+  \begin{tikzpicture}[x=1.7cm,y=.62cm]
+    \fill[hamblue!4] (0,0)--(4,4)--(4,0)--cycle;
+    \draw[ham/arrow] (-.15,0)--(4.5,0) node[right] {insertions};
+    \draw[ham/arrow] (0,-.25)--(0,4.85) node[above] {degree};
+    \draw[dashed,hamgold,thick] (0,4)--(4.25,4);
+    \node[anchor=west,font=\small] at (4.3,4) {$N=4$};
+    \draw[dotted,thick] (0,0)--(1,1)--(2,2)--(3,3)--(4,4);
+    \node[font=\small,fill=white] at (2.6,3.25) {$r(\ell)=\ell$};
+    \draw[hamblue,line width=1.2pt]
+    (0,0)--(1,1)--(2,2)--(3,1)--(4,2);
+    \foreach \hamPointX/\hamPointY in {0/0,1/1,2/2,3/1,4/2} {
+    \filldraw[draw=hamblue,fill=white] (\hamPointX,\hamPointY) circle (2pt);
+    }
+    \foreach \hamPointX in {1,2,3,4} {\node[font=\small,anchor=north] at (\hamPointX,-.18) {$\hamPointX$};}
+    \node[ham/note,text width=8cm] at (2,-2.25)
+    {Every prefix stays below its occurrence count.\\
+    Projection changes none of these selected finite words.};
+  \end{tikzpicture}
+  \caption{One possible degree path for four multiplications in a single
+    Gaussian color. Multiplication is a sum of raising and lowering terms; the
+    solid line illustrates one term, not the entire polynomial. For each color,
+    every prefix has degree at most its occurrence count, which is at most the
+    chosen cutoff. The result concerns selected finite words acting on the
+    degree-zero vector, not entire propagators at a fixed cutoff. See
+    \ProofRef{Lemma}{L:finite-word-cutoff}.}
+  \label{Fig:hermite-cutoff}
+\end{figure}

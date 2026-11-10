@@ -1,0 +1,33 @@
+\begin{figure}
+  \centering
+  \begin{tikzpicture}[x=1cm,y=1cm]
+    \draw[ham/arrow] (-.3,0)--(6.6,0);
+    \draw[ham/arrow] (0,-.3)--(0,4.0);
+    \filldraw[draw=hamblue,fill=hamblue!12]
+    (1.8,1.45) ellipse (.8 and .5);
+    \draw[hamteal,thick,dashed]
+    (1.05,.8)..controls (.3,1.5) and (.9,2.8)..(2.0,2.75)
+    ..controls (3.6,3.25) and (4.3,1.75)..(3.3,.95)
+    ..controls (2.7,.25) and (1.8,.3)..(1.05,.8);
+    \node[font=\small] at (1.8,1.45) {$A_\delta$};
+    \node[ham/note,text width=4.6cm] at (3.1,3.6)
+    {$A_\delta+\mathcal{M}_\delta(\overline{B}_{H_I}(r))$};
+    \fill (5.1,2.6) circle (1.6pt);
+    \node[ham/note,text width=2.2cm] at (5.15,1.7)
+    {outside the\\enlarged set};
+    \node[ham/box,text width=4.5cm] at (9.45,2.5)
+    {Probability of the complement\\
+    $\le \exp\{-r^2/(2\delta)\}$};
+    \node[ham/note,text width=4.7cm] at (9.45,.65)
+    {$r$ is a control-space radius.\\
+    It is not Euclidean distance\\in the picture.};
+  \end{tikzpicture}
+  \caption{A schematic finite-dimensional projection of enlargement for the
+    nonzero Gaussian law in the cited lemma. The map $\mathcal{M}_\delta$ is
+    compact, so the image of a closed control ball is compact; the set
+    $A_\delta$ itself need not be compact. No ambient Lebesgue density or
+    Euclidean distance formula is being assumed. The cost uses one global
+    control norm. See \ProofRef{Lemma}{L:tube-closed-geometry} and
+    \ProofRef{Proposition}{P:tube-rayleigh-transfer}.}
+  \label{Fig:gaussian-enlargement}
+\end{figure}

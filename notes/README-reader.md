@@ -1,11 +1,11 @@
 # Reading edition with the current technical companion
 
-Read [the 20-page reader](notes_stratonovich_ham_second_moment_reader.pdf)
-with [the 269-page technical companion](notes_stratonovich_ham_second_moment.pdf).
+Read [the 24-page reader](notes_stratonovich_ham_second_moment_reader.pdf)
+with [the 275-page technical companion](notes_stratonovich_ham_second_moment.pdf).
 The reader introduces the model, proposed result and variational constant,
 explains how the main steps fit together, and links to the detailed proofs.
-It is a guided route through the work, not a standalone 20-page proof.
-The combined record is 289 pages; no total-proof-length reduction is claimed.
+It is a guided route through the work, not a standalone short proof.
+The combined record is 299 pages; no total-proof-length reduction is claimed.
 
 This November 9 revision matches the current **unadopted mathematical candidate**.
 It updates the literature and contribution discussion, mentions the three
@@ -28,8 +28,15 @@ For future technical edits, refresh the embedded map from the newly compiled
 technical aux, rebuild the reader, and recheck its external destinations.
 Every reader TeX edit travels with its cleanly rebuilt PDF.
 
-[Current validation](../reviews/2026-11-09-literature-review/README.md)
-records 69 matched labels, 209 valid external PDF links and clean builds.
+[Current validation](figures/README.md)
+records 71 matched labels, 233 valid external PDF links and clean builds.
 The original November 5 V4 reader at commit 9895781 was paired with the old
 263-page companion. Its original source/PDF and validation remain in Git and
 [the historical review directory](../reviews/2026-11-05-reader-v4-paired-revision/).
+
+The illustrated edition adds seven TikZ figures, selected from twelve shared
+figure sources. It uses fixed reader placement so a diagram follows the full
+statement or definition it explains. Both the figure sources/captions and all
+rendered diagram pages were reviewed. The complete figure set appears in the
+technical companion. See [the figure guide](figures/README.md). The earlier
+20-page reading editions remain historical; the current reader has 24 pages.

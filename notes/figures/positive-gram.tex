@@ -1,0 +1,30 @@
+\begin{figure}
+  \centering
+  \begin{tikzpicture}[x=1cm,y=1cm]
+    \begin{scope}
+      \fill[hamteal!9] (0,0)--(4,.89655)--(4,3)--(2.1875,3)--cycle;
+      \draw[ham/arrow] (0,0)--(2.9,.65) node[right] {$k_1$};
+      \draw[ham/arrow] (0,0)--(1.75,2.4) node[above] {$k_2$};
+      \draw[ham/arrow,hamteal,very thick] (0,0)--(3.0,2.15)
+      node[anchor=west] {$\Phi_A=\sum_{i\in A}w_i^Ak_i$};
+      \node[ham/note] at (1.8,-.6) {$\langle k_i,k_j\rangle\ge0,\quad w_i^A>0$};
+    \end{scope}
+    \begin{scope}[xshift=8.3cm]
+      \draw[ham/arrow] (0,0)--(2.2,1.1) node[above] {$k_2=2k_1$};
+      \draw[ham/arrow,thick] (0,0)--(1.1,.55) node[below] {$k_1$};
+      \filldraw[fill=white,draw=hamgold,thick] (0,0) circle (2pt);
+      \node[ham/note,text width=3.2cm] at (1.0,2.15)
+      {Singular Gram matrices\\are allowed};
+      \node[ham/note,text width=3.2cm] at (1,-1.45)
+      {A zero vector contributes zero.\\The active set may be empty.};
+    \end{scope}
+  \end{tikzpicture}
+  \caption{Finite positive combinations, not an inverse covariance formula. For
+    a nonempty maximizing active set, a maximizer has positive coefficients on
+    its selected vectors. The right panel shows why linear independence must not
+    be imposed. The drawing is in a finite-dimensional span and does not
+    restrict the ambient Hilbert space. Neither the maximizing subset nor the
+    maximizer is asserted to be unique. See
+    \ProofRef{Proposition}{P:gram-positive-optimizer}.}
+  \label{Fig:positive-gram}
+\end{figure}

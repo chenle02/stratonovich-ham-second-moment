@@ -1,0 +1,14 @@
+% Shared presentation for the mathematical diagrams.
+% Requires TikZ libraries arrows.meta, calc, positioning and decorations.pathreplacing.
+\definecolor{hamblue}{RGB}{36,75,105}
+\definecolor{hamteal}{RGB}{30,112,106}
+\definecolor{hamgold}{RGB}{156,101,20}
+\tikzset{
+ham/box/.style={draw=hamblue, fill=hamblue!4, rounded corners=2pt,
+align=center, font=\small, inner sep=5pt, minimum height=9mm},
+ham/arrow/.style={-{Latex[length=2mm]}, semithick, draw=hamblue},
+ham/pair/.style={dashed, thick, draw=hamteal},
+ham/dot/.style={circle, draw=hamblue, fill=white, inner sep=1.8pt},
+ham/note/.style={font=\small, align=center},
+ham/brace/.style={decorate, decoration={brace, amplitude=4pt}, semithick}
+}

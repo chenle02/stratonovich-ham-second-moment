@@ -1,0 +1,23 @@
+\begin{figure}
+  \centering
+  \begin{tikzpicture}[x=1cm,y=1cm]
+    \node[ham/box,text width=4cm] (finite) at (0,0)
+    {Fix the orders $m,n$\\and positive noise widths};
+    \node[ham/box,text width=4cm] (green) at (5.5,0)
+    {Remove Green smoothing\\with noise widths fixed};
+    \node[ham/box,text width=4cm] (noise) at (5.5,-2.5)
+    {Let both noise widths vanish\\at arbitrary relative rates};
+    \node[ham/box,text width=4cm] (series) at (0,-2.5)
+    {Use the tail estimate\\to sum all orders};
+    \draw[ham/arrow] (finite)--(green);
+    \draw[ham/arrow] (green)--(noise);
+    \draw[ham/arrow] (noise)--(series);
+  \end{tikzpicture}
+  \caption{The order of the construction limits. The Green smoothing is removed
+    while the external noise widths remain positive. Fixed-order convergence and
+    a separate summable bound then identify the full solution. See
+    \ProofRef{Lemma}{L:joint-fixed-order} and
+    \ProofRef{Lemma}{L:uniform-series-tail}. Later source limits are taken at
+    fixed radius before the large-time limit.}
+  \label{Fig:order-of-limits}
+\end{figure}

@@ -1,10 +1,9 @@
 \section{The temporal equilibrium density}
 \label{S:temporal-equilibrium}
 
-We use Euler's function
-$\Gamma_E(x)=\int_0^\infty u^{x-1}e^{-u}\ud u$, $x>0$,
-and $\operatorname{Beta}(x,y)=\int_0^1t^{x-1}(1-t)^{y-1}\ud t$,
-$x,y>0$. Both integrals are positive and finite.
+We use Euler's function $\Gamma_E(x) = \int_0^\infty u^{x-1}e^{-u}\ud u$, $x >
+0$, and $\operatorname{Beta}(x,y) = \int_0^1t^{x-1}(1-t)^{y-1}\ud t$, $x,y > 0$.
+Both integrals are positive and finite.
 
 \begin{lemma}[Gamma and Beta identities]\label{L:equilibrium-gamma-beta}
   For positive arguments,
@@ -18,22 +17,20 @@ $x,y>0$. Both integrals are positive and finite.
 \end{lemma}
 
 \begin{proof}
-  Integration by parts gives the recurrence, with vanishing boundary
-  terms. In the positive product Gamma integral, use
-  $(u,v)=(Rt,R(1-t))$, with Jacobian $R$; Tonelli gives the
-  Beta--Gamma identity. For the last identity, symmetry, then
-  $t=(1+v)/2$ and $v^2=w$, give
-  $\operatorname{Beta}(x,x)=2^{1-2x}\operatorname{Beta}(1/2,x)$.
-  Also $\Gamma_E(1/2)=\int_\R e^{-z^2}\ud z=\sqrt\pi$:
-  the substitution $u=z^2$ gives the first equality, and squaring
-  the positive Gaussian integral and using polar coordinates gives
-  $2\pi\int_0^\infty re^{-r^2}\ud r=\pi$.
-  Substituting these into the Beta--Gamma identity proves duplication.
-  This proves Lemma~\ref{L:equilibrium-gamma-beta}.
+  Integration by parts gives the recurrence, with vanishing boundary terms. In
+  the positive product Gamma integral, use $(u,v) = (Rt,R(1-t))$, with Jacobian
+  $R$; Tonelli gives the Beta--Gamma identity. For the last identity, symmetry,
+  then $t = (1+v)/2$ and $v^2 = w$, give $\operatorname{Beta}(x,x) =
+  2^{1-2x}\operatorname{Beta}(1/2,x)$. Also $\Gamma_E(1/2) = \int_\R e^{-z^2}\ud
+  z = \sqrt\pi$: the substitution $u = z^2$ gives the first equality, and
+  squaring the positive Gaussian integral and using polar coordinates gives
+  $2\pi\int_0^\infty re^{-r^2}\ud r = \pi$. Substituting these into the
+  Beta--Gamma identity proves duplication. This proves
+  Lemma~\ref{L:equilibrium-gamma-beta}.
 \end{proof}
 
 \begin{lemma}[Exact potential and mass]\label{L:temporal-equilibrium}
-  For $0<a<1$ put $r=(1-a)/2$ and, for $0<t<1$,
+  For $0 < a < 1$ put $r = (1-a)/2$ and, for $0 < t < 1$,
   \begin{equation}\label{E:temporal-equilibrium-density}
     f_a(t)=\frac{[t(1-t)]^{-r}}{\Gamma_E(r)\Gamma_E(1-r)}.
   \end{equation}
@@ -49,18 +46,15 @@ $x,y>0$. Both integrals are positive and finite.
 \end{lemma}
 
 \begin{proof}
-  The positive binomial series
-  $(1-z)^{-p}=\sum_{n\ge0}(p)_nz^n/n!$, $p>0$, $0\le z<1$,
-  follows directly as follows. Its coefficient ratio gives uniform
-  convergence on compact subintervals, including for its derivative.
-  Termwise differentiation gives $(1-z)y'=py$, $y(0)=1$;
-  hence $(1-z)^py$ is constant one. Here
-  $(p)_0=1$, $(p)_n=p(p+1)\cdots(p+n-1)$.
-  All terms used below are nonnegative, so Tonelli applies.
+  The positive binomial series $(1-z)^{-p} = \sum_{n\ge0}(p)_nz^n/n!$, $p > 0$,
+  $0 \le z < 1$, follows directly as follows. Its coefficient ratio gives
+  uniform convergence on compact subintervals, including for its derivative.
+  Termwise differentiation gives $(1-z)y' = py$, $y(0) = 1$; hence $(1-z)^py$ is
+  constant one. Here $(p)_0 = 1$, $(p)_n = p(p+1)\cdots(p+n-1)$. All terms used
+  below are nonnegative, so Tonelli applies.
 
-  For $0<s<1$ split the integral of
-  $|s-t|^{2r-1}[t(1-t)]^{-r}$ into left and right parts.
-  In the left part, $t=su$ gives
+  For $0 < s < 1$ split the integral of $|s-t|^{2r-1}[t(1-t)]^{-r}$ into left
+  and right parts. In the left part, $t = su$ gives
   \begin{align*}
     L(s)
     &=s^r\int_0^1(1-u)^{2r-1}u^{-r}(1-su)^{-r}\ud u\\
@@ -68,34 +62,29 @@ $x,y>0$. Both integrals are positive and finite.
     \sum_{n\ge0}
     \frac{(r)_n(1-r)_ns^n}{(1+r)_n n!}.
   \end{align*}
-  The Beta ratio follows from the Gamma recurrence.
-  Since $(r)_n/(1+r)_n=r/(r+n)$, expanding the incomplete Beta
-  integral gives
+  The Beta ratio follows from the Gamma recurrence. Since $(r)_n/(1+r)_n =
+  r/(r+n)$, expanding the incomplete Beta integral gives
   \[
     L(s)=r\operatorname{Beta}(1-r,2r)B_s(r,r),\qquad
     B_s(r,r)=\int_0^s u^{r-1}(1-u)^{r-1}\ud u.
   \]
   Reflection makes the right part $L(1-s)$, while symmetry gives
-  $B_s(r,r)+B_{1-s}(r,r)=\operatorname{Beta}(r,r)$.
-  The full integral is therefore
-  $r\operatorname{Beta}(1-r,2r)\operatorname{Beta}(r,r)
-  =\Gamma_E(r)\Gamma_E(1-r)$.
-  All integrals are finite because $-r>-1$ and $2r-1>-1$.
-  At $s=0$ the integral is directly
-  $\operatorname{Beta}(r,1-r)=\Gamma_E(r)\Gamma_E(1-r)$;
-  $s=1$ follows by reflection. This proves
-  \eqref{E:temporal-equilibrium-potential}, including the endpoints
-  without a limiting argument there.
+  $B_s(r,r)+B_{1-s}(r,r) = \operatorname{Beta}(r,r)$. The full integral is
+  therefore $r\operatorname{Beta}(1-r,2r)\operatorname{Beta}(r,r) =
+  \Gamma_E(r)\Gamma_E(1-r)$. All integrals are finite because $-r > -1$ and
+  $2r-1 > -1$. At $s = 0$ the integral is directly $\operatorname{Beta}(r,1-r) =
+  \Gamma_E(r)\Gamma_E(1-r)$; $s = 1$ follows by reflection. This proves
+  \eqref{E:temporal-equilibrium-potential}, including the endpoints without a
+  limiting argument there.
 
-  Integrability and square integrability follow from
-  $-r>-1$ and $-2r=a-1>-1$. Finally,
+  Integrability and square integrability follow from $-r > -1$ and $-2r = a-1 >
+  -1$. Finally,
   \[
     M_a=
     \frac{\operatorname{Beta}(1-r,1-r)}
     {\Gamma_E(r)\Gamma_E(1-r)}
     =\frac{\Gamma_E(1-r)}{\Gamma_E(2-2r)\Gamma_E(r)},
   \]
-  which is~\eqref{E:temporal-equilibrium-mass}.
-  Its time mass has not been renormalized.
-  This proves Lemma~\ref{L:temporal-equilibrium}.
+  which is~\eqref{E:temporal-equilibrium-mass}. Its time mass has not been
+  renormalized. This proves Lemma~\ref{L:temporal-equilibrium}.
 \end{proof}

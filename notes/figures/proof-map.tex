@@ -1,0 +1,36 @@
+\begin{figure}
+  \centering
+  \begin{tikzpicture}[x=1cm,y=1cm]
+    \node[ham/box,text width=4.2cm] (construction) at (3,0)
+    {One solution\\one fixed coupling\\retaining the given $W$};
+    \node[ham/box,text width=4cm] (upper) at (0,-2.2)
+    {Independent upper bound\\on moment growth};
+    \node[ham/box,text width=4cm] (lower) at (6,-2.2)
+    {Point lower bound\\for each fixed control};
+    \node[ham/box,text width=4.2cm] (finite) at (3,-4.4)
+    {Finite supremum\\over positive controls};
+    \node[ham/box,text width=4cm] (signed) at (0,-6.6)
+    {Operator estimates\\for the point upper bound};
+    \node[ham/box,text width=4cm] (comparison) at (6,-6.6)
+    {Positive Gram comparison\\then remove the mask};
+    \node[ham/box,text width=4.2cm] (limit) at (3,-8.8)
+    {Matching values\\$C_2(\Gamma,a)=S_2^{\mathrm{pos}}$};
+    \draw[ham/arrow] (construction)--(upper);
+    \draw[ham/arrow] (construction)--(lower);
+    \draw[ham/arrow] (upper)--(finite);
+    \draw[ham/arrow] (lower)--(finite);
+    \draw[ham/arrow] (finite)--(signed);
+    \draw[ham/arrow] (signed)--(comparison);
+    \draw[ham/arrow] (comparison)--(limit);
+    \draw[ham/arrow] (lower.east)--++(1.05,0) |- (limit.east);
+  \end{tikzpicture}
+  \caption{The main dependencies. The independent upper bound and the
+    fixed-control lower bound give finiteness before the sharp constant is
+    identified. Further operator estimates and the positive Gram comparison then
+    bound the same point moment from above. Arrows indicate dependencies, not a
+    claim that a box alone proves the next one. See
+    \ProofRef{Theorem}{T:full-upper},
+    \ProofRef{Proposition}{P:variational-positive-scores}, and
+    \ProofRef{Theorem}{T:intrinsic-second-moment}.}
+  \label{Fig:proof-map}
+\end{figure}

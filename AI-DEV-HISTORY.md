@@ -334,3 +334,44 @@ review grades and bindings and the incomplete scientific contract are unchanged.
 Agent #16's concurrent commit 037caa6 corrected the Lean summary; that work was
 preserved separately. Detailed validation is retained in
 reviews/2026-11-09-literature-review/; Git records the delivered checkpoint.
+
+## Illustrations and the missing writing-style pass
+
+Le asked whether both PDFs had passed his strict writing-style check, including
+removal of jargon. The answer was no: earlier build, reference and selected
+page checks did not establish that. He then requested a subagent survey and
+engaging TikZ figures in the reader and report. The resulting revision includes
+12 reusable diagrams in the companion and seven in the reader.
+
+The survey selected figures for dependencies, nonfactorized controls, pairings,
+ordered limits, original-noise coupling, finite propagation, correlated blocks
+with one cost, finite-word cutoffs, shifted grids, rectangle/strip geometry,
+positive Gram combinations and Gaussian enlargement. It omitted decoration
+that would repeat a one-line condition or suggest an unproved optimizer.
+A separate reviewer found four real geometric errors in the first drafts; all
+were corrected. A real-preamble build then found a variable-name collision
+that the standalone harness had missed. Integrated page review caught reader
+floats splitting a theorem and a formula qualification. Reader-only fixed
+placement and corrected insertion sites resolved both problems.
+
+The language work was broader than a word-list scan: all prose in the main
+technical source, all 27 included mathematical modules and the reader was read
+contextually. Unfamiliar names were replaced with concrete descriptions while
+standard mathematical terms and all model/source qualifications were retained.
+The source-typing pass also checked reference ties, font/accent arguments,
+inline readability, wrapping, nesting, captions and linked proof endings.
+A faulty early accent edit matched the prefix of dots; a local build exposed
+it, it was restored, and the final mathematical-preservation check passes.
+The reader's existing series deduction is now a named partial proof, and its
+finite-model lemma contains its actual quantitative statement.
+
+The revised reader has 24 pages and the technical companion 275 pages. The growth
+from 20/269 pages is explained by illustrations rather than hidden by smaller
+typography. Both builds are clean;71 label mappings and233 external PDF links
+match. All 215 technical proofs retain their ordered mathematical expressions
+and labels, with only documented source typography changes. The site audit,
+source/caption review and inspection of19 figure pages are editorial evidence,
+not a new whole-proof or whole-PDF acceptance. The old scientific grades and
+visual-page credits remain bound to their original editions. The figure guide
+and shareable source pins are under notes/figures/; private iteration records
+remain under private/audit/ in accordance with the release plan.

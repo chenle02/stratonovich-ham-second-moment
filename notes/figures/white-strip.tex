@@ -1,0 +1,33 @@
+\begin{figure}
+  \centering
+  \begin{tikzpicture}[x=1cm,y=1cm]
+    \foreach \hamPanelShift/\hamStripWidth/\hamPanelTitle in {0/.35/{Narrow strip},4.25/1.65/{Corners removed},8.5/3.15/{Full rectangle}} {
+    \begin{scope}[xshift=\hamPanelShift cm]
+      \node[ham/note] at (0,2.15) {\hamPanelTitle};
+      \begin{scope}
+        \clip (-1.55,-1.05) rectangle (1.55,1.05);
+        \fill[hamteal!18] (-4,-4-\hamStripWidth)--(4,4-\hamStripWidth)--(4,4+\hamStripWidth)--(-4,-4+\hamStripWidth)--cycle;
+        \draw[hamteal,dashed] (-4,-4-\hamStripWidth)--(4,4-\hamStripWidth);
+        \draw[hamteal,dashed] (-4,-4+\hamStripWidth)--(4,4+\hamStripWidth);
+      \end{scope}
+      \draw[hamblue] (-1.55,-1.05) rectangle (1.55,1.05);
+      \draw[ham/arrow] (-1.8,0)--(1.8,0) node[right] {$x$};
+      \draw[ham/arrow] (0,-1.3)--(0,1.4) node[above] {$y$};
+      \node[font=\small,anchor=north] at (-1.55,-1.1) {$-a$};
+      \node[font=\small,anchor=north] at (1.55,-1.1) {$a$};
+      \node[font=\small,anchor=east] at (-1.6,1.05) {$b$};
+      \node[font=\small,anchor=east] at (-1.6,-1.05) {$-b$};
+    \end{scope}
+    }
+    \node[font=\small] at (0,-1.95) {$0<c<a-b$};
+    \node[font=\small] at (4.25,-1.95) {$a-b\le c<a+b$};
+    \node[font=\small] at (8.5,-1.95) {$c\ge a+b$};
+  \end{tikzpicture}
+  \caption{The area $F(a,b,c)$ in the spatial-white order-four calculation: the
+    shaded part is $[-a,a]\times[-b,b]\cap\{|x-y|<c\}$. The drawing uses
+    $a>b>0$; here $a,b,c$ are time-increment parameters, not covariance
+    exponents. The three geometric cases explain the positive-part formula,
+    without replacing the separate pairing and time-order calculations. See
+    \ProofRef{Proposition}{P:white-four}.}
+  \label{Fig:white-strip}
+\end{figure}

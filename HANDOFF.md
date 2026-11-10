@@ -1,4 +1,4 @@
-Last updated: 2026-11-09 (Codex; literature/contribution revision)
+Last updated: 2026-11-09 (Codex; illustrations and Le-style revision)
 
 # HANDOFF
 
@@ -45,7 +45,7 @@ continuation, first reconcile the agreed recovery direction with the written
 contract explicitly. Existing whole MAIN v5 is PASS_WITH_NOTES/MEDIUM and
 unaccepted under the recorded HIGH gate; no required source repair was identified.
 Historical main visual acceptance is230/267 on the old candidate,37 remaining;
-no page credit is automatically transferred to the current 269-page edition. Final cold review,
+no page credit is automatically transferred to the current275-page edition. Final cold review,
 adoption and whole-project clearance remain open. The visual MEDIUM policy
 proposal is not adopted. Source delivery is not proof understanding.
 
@@ -79,3 +79,14 @@ reviews/2026-11-09-reader-current-companion-merge/. All 69 technical labels and
 editorial branch is retained until Le requests removal.
 
 [held back: collaborators' unpublished work]
+
+Illustration/style checkpoint:12 shared TikZ figures are in the technical
+companion and 7 in the reader; all source/caption bodies and integrated figure
+pages were inspected. Both sources received a contextual plain-English and
+typing pass. The reader is now24 pages and companion 275 pages. Use
+notes/figures/VALIDATION.json for the exact new source/PDF pins, not the older
+literature packet. Mathematical expressions and labels in all 28 technical
+sources remain unchanged up to documented source typography. The 215 technical
+proofs are preserved; no new scientific acceptance is implied. Detailed private
+review/iteration records are under private/audit/2026-11-09-style-diagrams/.
+Agent22 should receive the committed source anchor update; do not edit its repo.
