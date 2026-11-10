@@ -1,0 +1,67 @@
+{
+ "schema": "stratonovich.split-review-join-facts/1",
+ "summary": {
+  "same_source_revision": true,
+  "source_revision": "0eb9403dfb93cc223dbeb1571aa9d96cf0a157b8",
+  "disjoint": true,
+  "union_size": 88,
+  "union_equals_all_88": true,
+  "scope_M_matches_partition": true,
+  "scope_S_matches_partition": true
+ },
+ "components": {
+  "M-main": {
+   "receipt_sha256": "6cf887f109b7a5e99c82d3fb9092e88dc154abfa08019bdaa802f785c8d85ea8",
+   "report_sha256": "d0cf50873a57f5dd76afdf7d0b4b1cd6e8edcaeea6c0d776c6a58b5eef1611ca",
+   "status": "review-complete",
+   "accepted": false,
+   "verdict": "FAIL",
+   "confidence": "high",
+   "source_revision": "0eb9403dfb93cc223dbeb1571aa9d96cf0a157b8",
+   "model_actual": "gpt-6.1-sol",
+   "effort_actual": "high",
+   "candidate_hashes_unchanged": true,
+   "started_utc": "2026-11-10T14:35:32.358427+00:00",
+   "finished_utc": "2026-11-10T14:46:01.694143+00:00",
+   "elapsed_seconds": 629.335,
+   "checks": 54,
+   "verdicts": {
+    "PASS": 53,
+    "FAIL": 1
+   },
+   "findings": {
+    "fatal": 1,
+    "major": 0,
+    "minor": 0
+   },
+   "required_repairs": 1
+  },
+  "S-modules": {
+   "receipt_sha256": "461968d12d9f61a3ba7cb7a20a036675945b0ef34e87dd2a4afd22f6a92c0ce5",
+   "report_sha256": "796e0dcef82aabf1cfb5818e815290a3d876904a322406c735f635d4cb39b896",
+   "status": "review-complete",
+   "accepted": false,
+   "verdict": "FAIL",
+   "confidence": "high",
+   "source_revision": "0eb9403dfb93cc223dbeb1571aa9d96cf0a157b8",
+   "model_actual": "gpt-6.1-sol",
+   "effort_actual": "high",
+   "candidate_hashes_unchanged": true,
+   "started_utc": "2026-11-10T14:35:32.371894+00:00",
+   "finished_utc": "2026-11-10T14:42:40.169082+00:00",
+   "elapsed_seconds": 427.797,
+   "checks": 37,
+   "verdicts": {
+    "PASS": 35,
+    "PARTIAL": 1,
+    "FAIL": 1
+   },
+   "findings": {
+    "fatal": 1,
+    "major": 0,
+    "minor": 0
+   },
+   "required_repairs": 1
+  }
+ }
+}

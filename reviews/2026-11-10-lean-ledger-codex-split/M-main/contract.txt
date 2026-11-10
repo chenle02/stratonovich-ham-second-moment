@@ -1,0 +1,150 @@
+Independent correspondence review, COMPONENT M (main file) of a split review: Lean statement ledger vs manuscript
+
+You are an independent, skeptical reviewer. Your workspace is a frozen,
+read-only packet. Use your file-reading and search tools actively; do not
+rely on memory. Do not modify any file.
+
+PACKET
+- candidate/statement-ledger.md : the object under review (Lean companion
+  commit 0eb9403dfb93). For each of 88 Lean declarations it states what the
+  Lean statement says, which manuscript label it supports ("Paper label",
+  or "no direct label"), and which inputs stay outside Lean.
+- lean/StratonovichHAMAudit/*.lean : the 24 Lean source files (ground truth
+  for what each declaration states). lean/claims.yaml and lean/coverage.yaml.
+- manuscript/notes/... : LaTeX inputs of the manuscript at revision
+  669ccc9b0724. Labels are \label{...}.
+- PROVENANCE.json : byte binding of every packet file to its git blob
+  (supervisor-checked; you need not recompute hashes).
+
+The Lean proofs compile with no sorry and only standard axioms; proof
+correctness is NOT in question. Correspondence is. Statements in the ledger
+about an earlier manuscript revision or about files outside this packet are
+out of scope: note them under limitations, do not count them as findings.
+
+THIS COMPONENT reviews ONLY the 54 ledger rows listed below. The other
+rows are reviewed by another component; do not report on them.
+
+ROWS IN SCOPE (54):
+  1. StratonovichHAMAudit.AllAlphaMoment.moment_lower: no direct label
+  2. StratonovichHAMAudit.AllAlphaMoment.rational_gap: no direct label
+  3. StratonovichHAMAudit.ClockFilter.resolvent_partial_fraction: `P:clock-copy-obstruction`
+  4. StratonovichHAMAudit.ClockFilter.clock_filter_bounds: `P:clock-copy-obstruction`
+  5. StratonovichHAMAudit.ClockFilter.strict_filter_integral: `P:clock-copy-obstruction`
+  6. StratonovichHAMAudit.DampedLower.exact_margin: no direct label
+  7. StratonovichHAMAudit.DampedLower.pi_cube_certificate: no direct label
+  8. StratonovichHAMAudit.DampedLower.rational_pi_gain: no direct label
+  9. StratonovichHAMAudit.DirectEvent.gauge_inverse: no direct label
+  10. StratonovichHAMAudit.DirectEvent.gauge_drift: no direct label
+  11. StratonovichHAMAudit.DirectEvent.monodromy: no direct label
+  12. StratonovichHAMAudit.GlobalOmega.envelopePolynomial: no direct label
+  13. StratonovichHAMAudit.GlobalOmega.envelopeDenom: no direct label
+  14. StratonovichHAMAudit.GlobalOmega.envelopeRational: no direct label
+  15. StratonovichHAMAudit.GlobalOmega.left_certificate: no direct label
+  16. StratonovichHAMAudit.GlobalOmega.right_certificate: no direct label
+  17. StratonovichHAMAudit.GlobalOmega.polynomial_pos: no direct label
+  18. StratonovichHAMAudit.GlobalOmega.rational_lt_one: no direct label
+  19. StratonovichHAMAudit.HermiteWord.raw_support: `L:finite-word-cutoff`
+  20. StratonovichHAMAudit.HermiteWord.cut_eq_raw: `L:finite-word-cutoff`
+  21. StratonovichHAMAudit.InteractionDriver.gaussian_prefactor: no direct label
+  22. StratonovichHAMAudit.InteractionDriver.gaussian_exponent: no direct label
+  23. StratonovichHAMAudit.JointTilt.tilt_exponent: no direct label (auxiliary to `P:raw-block-gaussian-law`)
+  24. StratonovichHAMAudit.JointTilt.wrong_sign_error: no direct label (diagnostic)
+  25. StratonovichHAMAudit.JointTilt.wrong_cost_error: no direct label (diagnostic)
+  26. StratonovichHAMAudit.LocalFlow.noise_order: no direct label
+  27. StratonovichHAMAudit.LocalFlow.schur_row: no direct label
+  28. StratonovichHAMAudit.LocalFlow.schur_column: no direct label
+  29. StratonovichHAMAudit.LocalFlow.schur_rescale: no direct label
+  30. StratonovichHAMAudit.LocalFlow.source_overlap: no direct label
+  31. StratonovichHAMAudit.LocalFlow.source_white_obstruction: no direct label
+  32. StratonovichHAMAudit.LocalFlow.source_tail_obstruction: no direct label
+  33. StratonovichHAMAudit.MiddleCross.certificate_pos: no direct label
+  34. StratonovichHAMAudit.MiddleCross.parameter_identity: no direct label
+  35. StratonovichHAMAudit.MiddleCross.parameter_numerator_pos: no direct label
+  36. StratonovichHAMAudit.MiddleCross.difference_identity: no direct label
+  37. StratonovichHAMAudit.MiddleCross.resolvent_difference: no direct label
+  38. StratonovichHAMAudit.MiddleCross.root_numerator_pos: no direct label
+  39. StratonovichHAMAudit.MiddleCross.middle_bound: no direct label
+  40. StratonovichHAMAudit.OccupationForm.potential_budget: no direct label
+  41. StratonovichHAMAudit.OccupationForm.shifted_coercivity: no direct label
+  42. StratonovichHAMAudit.PhaseResponse.rough_phase_choice: no direct label
+  43. StratonovichHAMAudit.PhaseResponse.balanced_phase: no direct label
+  44. StratonovichHAMAudit.PhaseResponse.energy_boundary: no direct label
+  45. StratonovichHAMAudit.PhaseResponse.four_component_gram: no direct label
+  46. StratonovichHAMAudit.PhaseResponse.frequency_window: no direct label
+  47. StratonovichHAMAudit.ProjectionResidual.projection_gap: no direct label
+  48. StratonovichHAMAudit.ProjectionResidual.tilted_gap: no direct label
+  49. StratonovichHAMAudit.RawValueCeiling.exact_gap: no direct label
+  50. StratonovichHAMAudit.TerminalCross.polynomial_identity: no direct label
+  51. StratonovichHAMAudit.TerminalCross.polynomial_pos: no direct label
+  52. StratonovichHAMAudit.TerminalCross.rate_le: no direct label
+  53. StratonovichHAMAudit.TerminalCross.exponential_difference: no direct label
+  54. StratonovichHAMAudit.TerminalCross.terminal_bound: no direct label
+
+COMPLETE-READING REQUIREMENT (binding; this component exists because an
+earlier single-pass review could not read the main file completely)
+A. Read manuscript/notes/notes_stratonovich_ham_second_moment.tex COMPLETELY:
+   all 7706 lines, in consecutive chunks of at most 400 lines
+   (1-400, 401-800, ..., up to 7706), with no gaps and no skipped
+   chunk, before giving any verdict. Do not substitute grep output for any
+   chunk. List every chunk range in source_coverage.
+B. Read the ledger, claims.yaml, coverage.yaml and the Lean files of the
+   rows in scope completely.
+C. Every other manuscript file is in the packet for the no-label searches
+   (rule 3): search them all and read each match in context; they need not
+   be read completely.
+D. If A or B is incomplete, mark every affected row INCONCLUSIVE and give
+   confidence medium or low.
+
+FOR EACH ROW IN YOUR SCOPE, check:
+1. FIDELITY: the ledger's "What it states" and the claims.yaml summary match
+   the Lean type (hypotheses, quantifiers, strict vs non-strict, parameter
+   ranges, constants). A shortened but correct paraphrase is acceptable;
+   an omitted or wrong hypothesis, range or constant is not.
+2. MAPPING (labelled rows): the labelled statement or its proof actually
+   uses this exact fact (or, where the ledger says so, the stated special
+   case), with compatible hypotheses, ranges and constants. Cite file:line.
+3. NO DIRECT LABEL rows: search ALL manuscript files for the computation
+   (distinctive constants, polynomials, exponents, symbol combinations, and
+   equivalent forms such as a product written as an expansion), READ the
+   surrounding statement or proof of every match, and decide whether the
+   computation is used inside some labelled statement or proof. Record the
+   search terms and the contexts read.
+4. OUTSIDE INPUTS: the listed outside inputs are really what the Lean
+   statement assumes or leaves out.
+
+REPORT FORMAT (strict; the report is machine-validated)
+Return ONLY the JSON object: no text before or after it, no code fence.
+Use exactly the fields of the schema "subscription-review-report/1".
+- "checks": exactly one object per row in YOUR scope, in the listed order
+  (no ledger-wide checks in this component).
+  claim  = "<full declaration name>: <ledger label or 'no direct label'>"
+  verdict must be one of PASS, PASS_WITH_NOTES, FAIL, INCONCLUSIVE, PARTIAL:
+    PASS             fidelity correct and mapping correct (or absence
+                     confirmed for a no-label row)
+    PASS_WITH_NOTES  correct, with a minor wording imprecision you report
+                     as a minor finding
+    PARTIAL          material imprecision (the row is partly wrong or
+                     overstated)
+    FAIL             wrong statement or wrong mapping, or the computation
+                     is used under a label the row does not cite
+    INCONCLUSIVE     you could not check this row (including any row whose
+                     required reading is incomplete)
+  reason = begins with one row label, then evidence:
+    "OK: ..." for a labelled row, "ABSENT-CONFIRMED: ..." or
+    "LABEL-FOUND <label>: ..." for a no-label row; give file:line, and for
+    no-label rows the search terms used.
+- "findings": fatal = CRITICAL (wrong mapping or misstatement a citing
+  reader would be misled by), major = material imprecision, minor =
+  wording. Each string starts with an ID (M1, M2, ...), names the
+  declaration(s), quotes Lean and TeX with file:line, and gives the exact
+  ledger fix.
+- "required_repairs": only ledger changes that must be made before the
+  ledger can be cited as a correct correspondence record.
+- "source_coverage": every file read, with exact line ranges and the word
+  "complete" or "partial".
+- "verdict": PASS or PASS_WITH_NOTES only if fatal, major and
+  required_repairs are empty and every check is PASS or PASS_WITH_NOTES;
+  otherwise FAIL or INCONCLUSIVE.
+- "confidence": high only if every required reading below is complete and
+  every row in scope was checked; otherwise medium or low, with the gap in
+  "limitations".

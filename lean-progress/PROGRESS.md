@@ -75,8 +75,17 @@
   two_frequency_average is the cosine case of the L:masked-trig-products
   expansion (companion 0eb9403; 39 labelled / 49 unlabelled; coverage 22+4).
   Record: reviews/2026-11-10-lean-ledger-codex-gpt61sol-v3-complete-reading/.
-- **Next:** split review: a main-file pass (complete, chunked) for the 49
-  no-label + 5 main-file rows, composed with module coverage; plus A1;
+- **Split Codex review (2026-11-10):** compose cannot take Codex receipts,
+  so Le chose two Codex components + a documented join. M (main TeX read
+  gapless 1-7706) and S (17 modules complete), both high confidence, same
+  candidate 0eb9403, disjoint rows covering all 88: 86 PASS, 2 fatal, both
+  accepted (kappa_gt_one -> E:kappa; noise_order -> L:temporal-equilibrium),
+  repaired at companion 435fdb0 (40 labelled / 48 unlabelled; coverage
+  24+4). Gate NOT closed: no accepted receipt. Record:
+  reviews/2026-11-10-lean-ledger-codex-split/ (JOIN.md, ADJUDICATION.md).
+- **Next:** narrow successor confirmation of the changed rows at 435fdb0
+  with an accepted receipt (Le decides whether it plus the join suffices);
+  human read (A1) still recommended;
   wave L1 (G0 pair-partition counts) when opened.
 
 - **Standalone local checks (current, 2026-11-09):** 87 accepted finite

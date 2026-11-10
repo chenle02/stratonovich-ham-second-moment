@@ -1,0 +1,257 @@
+{
+  "schema": "subscription-review-report/1",
+  "verdict": "FAIL",
+  "confidence": "high",
+  "source_coverage": [
+    "PROVENANCE.json:1-459 complete",
+    "candidate/statement-ledger.md:1-478 complete",
+    "lean/claims.yaml:1-642 complete",
+    "lean/coverage.yaml:1-343 complete",
+    "lean/StratonovichHAMAudit/ActualEvent.lean:1-35 complete",
+    "lean/StratonovichHAMAudit/AllAlphaMoment.lean:1-29 complete",
+    "lean/StratonovichHAMAudit/ClockFilter.lean:1-64 complete",
+    "lean/StratonovichHAMAudit/DampedLower.lean:1-34 complete",
+    "lean/StratonovichHAMAudit/DimensionalMatrix.lean:1-23 complete",
+    "lean/StratonovichHAMAudit/DirectEvent.lean:1-93 complete",
+    "lean/StratonovichHAMAudit/FiniteYoung.lean:1-34 complete",
+    "lean/StratonovichHAMAudit/GaussianTail.lean:1-29 complete",
+    "lean/StratonovichHAMAudit/GlobalOmega.lean:1-144 complete",
+    "lean/StratonovichHAMAudit/HermiteWord.lean:1-61 complete",
+    "lean/StratonovichHAMAudit/HermiteWordConsumer.lean:1-70 complete",
+    "lean/StratonovichHAMAudit/InteractionDriver.lean:1-100 complete",
+    "lean/StratonovichHAMAudit/JointTilt.lean:1-28 complete",
+    "lean/StratonovichHAMAudit/LocalFlow.lean:1-51 complete",
+    "lean/StratonovichHAMAudit/MiddleCross.lean:1-192 complete",
+    "lean/StratonovichHAMAudit/MovingCone.lean:1-30 complete",
+    "lean/StratonovichHAMAudit/OccupationForm.lean:1-23 complete",
+    "lean/StratonovichHAMAudit/PhaseResponse.lean:1-67 complete",
+    "lean/StratonovichHAMAudit/PositiveGram.lean:1-87 complete",
+    "lean/StratonovichHAMAudit/ProjectionResidual.lean:1-28 complete",
+    "lean/StratonovichHAMAudit/RawValueCeiling.lean:1-27 complete",
+    "lean/StratonovichHAMAudit/RawVariational.lean:1-73 complete",
+    "lean/StratonovichHAMAudit/TerminalCross.lean:1-113 complete",
+    "lean/StratonovichHAMAudit/WhiteCDF.lean:1-20 complete",
+    "manuscript/notes/integrated_actual_operator_driver.tex:1-330,331-655 complete",
+    "manuscript/notes/integrated_cameron_mean.tex:1-230,231-457 complete",
+    "manuscript/notes/integrated_compact_gaussian.tex:1-310,311-617 complete",
+    "manuscript/notes/integrated_covariance_foundation.tex:1-220,221-428 complete",
+    "manuscript/notes/integrated_exact_scaling.tex:1-56 complete",
+    "manuscript/notes/integrated_gaussian_tubes.tex:1-255,256-503 complete",
+    "manuscript/notes/integrated_intrinsic_constant.tex:1-205,206-388 complete",
+    "manuscript/notes/integrated_occupation_ceiling.tex:1-308 complete",
+    "manuscript/notes/integrated_point_transfer.tex:1-323 complete",
+    "manuscript/notes/integrated_positive_gram.tex:1-216 complete",
+    "manuscript/notes/integrated_radius_anchor.tex:1-339 complete",
+    "manuscript/notes/integrated_raw_block_lower.tex:1-230,231-460,461-675 complete",
+    "manuscript/notes/integrated_symplectic_phase.tex:1-205,206-383 complete",
+    "manuscript/notes/integrated_temporal_equilibrium.tex:1-90 complete",
+    "manuscript/notes/integrated_unmasked_variational.tex:1-343 complete",
+    "manuscript/notes/integrated_wave_variance.tex:1-270,271-531 complete",
+    "manuscript/notes/integrated_white_evaluation.tex:1-164 complete",
+    "manuscript/notes/notes_stratonovich_ham_second_moment.tex:105-160,420,1354,1585,5010-5198,5245-5365,5769,6460,7273,7402 partial; referenced passages and label-search hits only"
+  ],
+  "checks": [
+    {
+      "claim": "StratonovichHAMAudit.ActualEvent.finite_error_accumulation: L:raw-block-restart",
+      "verdict": "PASS",
+      "reason": "OK: Ledger and claims match the recurrence, signs and conclusion in lean/StratonovichHAMAudit/ActualEvent.lean:9-12. The exact recurrence and bound occur in manuscript/notes/integrated_raw_block_lower.tex:396-409. Operator estimates, extension by identities and moment convergence correctly remain outside Lean."
+    },
+    {
+      "claim": "StratonovichHAMAudit.ActualEvent.moderate_penalty: P:raw-block-original-lower",
+      "verdict": "PASS",
+      "reason": "OK: The positive-delta identity in lean/StratonovichHAMAudit/ActualEvent.lean:25-26 matches both summaries. Its event restriction and normalized penalty appear in manuscript/notes/integrated_raw_block_lower.tex:588-595,639-659; Gaussian law and limits are correctly excluded."
+    },
+    {
+      "claim": "StratonovichHAMAudit.DimensionalMatrix.backward: P:actual-wave-form",
+      "verdict": "PASS",
+      "reason": "OK: The definition matches lean/StratonovichHAMAudit/DimensionalMatrix.lean:9-10. It is the backward version of manuscript/notes/integrated_wave_variance.tex:178-185, used in the physical adjoint calculation at 309-311. The ledger explicitly excludes the continuous zero-frequency interpretation and weighted conversion."
+    },
+    {
+      "claim": "StratonovichHAMAudit.DimensionalMatrix.coupling: P:actual-wave-form",
+      "verdict": "PASS",
+      "reason": "OK: The matrix in lean/StratonovichHAMAudit/DimensionalMatrix.lean:11 is exactly the force B(b)(u,v)=(0,bu) defined in manuscript/notes/integrated_wave_variance.tex:185 and used at 218-220. Its model interpretation is correctly left external."
+    },
+    {
+      "claim": "StratonovichHAMAudit.DimensionalMatrix.forward: P:actual-wave-form",
+      "verdict": "PASS",
+      "reason": "OK: lean/StratonovichHAMAudit/DimensionalMatrix.lean:12-13 matches the summaries and the unweighted free matrix in manuscript/notes/integrated_wave_variance.tex:178-185. Trigonometric interpretation and the zero-frequency extension are appropriately excluded."
+    },
+    {
+      "claim": "StratonovichHAMAudit.DimensionalMatrix.full_interaction: P:actual-wave-form",
+      "verdict": "PASS",
+      "reason": "OK: All four entries and unrestricted real field division match lean/StratonovichHAMAudit/DimensionalMatrix.lean:15-17. The unweighted interaction underlying manuscript/notes/integrated_wave_variance.tex:218-220,309-326 has these entries. The ledger correctly distinguishes this product from the weighted kernel at 231-238."
+    },
+    {
+      "claim": "StratonovichHAMAudit.DirectEvent.kappa_gt_one: L:exact-canonical-scaling",
+      "verdict": "FAIL",
+      "reason": "OK: Fidelity and claims summary match lean/StratonovichHAMAudit/DirectEvent.lean:12,16-17. Mapping fails: manuscript/notes/integrated_exact_scaling.tex:4-56 neither states nor uses kappa>1; its fixed-T scaling requires the displayed exponent identities, not this strict bound. The bound instead occurs under E:kappa in manuscript/notes/notes_stratonovich_ham_second_moment.tex:142-144 and is explicitly used in manuscript/notes/integrated_point_transfer.tex:307-310. See S1."
+    },
+    {
+      "claim": "StratonovichHAMAudit.DirectEvent.physical_scale: L:exact-canonical-scaling",
+      "verdict": "PASS",
+      "reason": "OK: Definitions and hypotheses in lean/StratonovichHAMAudit/DirectEvent.lean:12-14,22-23 match both summaries. The same radius identity is stated in manuscript/notes/integrated_exact_scaling.tex:5-10. No stochastic scaling assertion is attributed to this scalar theorem."
+    },
+    {
+      "claim": "StratonovichHAMAudit.DirectEvent.noise_scale: L:exact-canonical-scaling",
+      "verdict": "PASS",
+      "reason": "OK: lean/StratonovichHAMAudit/DirectEvent.lean:36-37 matches the positive-T identity and parameter range. The exact factor appears in manuscript/notes/integrated_exact_scaling.tex:39-43. Covariance scaling and equality in law correctly remain outside Lean."
+    },
+    {
+      "claim": "StratonovichHAMAudit.DirectEvent.vertex_scale: L:exact-canonical-scaling",
+      "verdict": "PASS",
+      "reason": "OK: lean/StratonovichHAMAudit/DirectEvent.lean:48-50 matches both summaries. The same vertex identity is used in manuscript/notes/integrated_exact_scaling.tex:38-47; Green scaling and passage to the canonical series are correctly excluded."
+    },
+    {
+      "claim": "StratonovichHAMAudit.FiniteYoung.weighted_natural_powers: L:gaussian-scalar-powers",
+      "verdict": "PASS",
+      "reason": "OK: Natural exponents, endpoint cases and real-cast weights match lean/StratonovichHAMAudit/FiniteYoung.lean:9-11. The exact inequality is manuscript/notes/integrated_compact_gaussian.tex:18-23, with endpoint conventions at 33-35. Trace and Gaussian applications remain external."
+    },
+    {
+      "claim": "StratonovichHAMAudit.GaussianTail.cutoff_density_split: L:tube-rayleigh-tail",
+      "verdict": "PASS",
+      "reason": "OK: Every sign, range and constant matches lean/StratonovichHAMAudit/GaussianTail.lean:9-12 and manuscript/notes/integrated_gaussian_tubes.tex:467-475. The ledger correctly separates this scalar split from the Rayleigh integration."
+    },
+    {
+      "claim": "StratonovichHAMAudit.InteractionDriver.temporal_range: E:driver-parameters",
+      "verdict": "PASS",
+      "reason": "OK: lean/StratonovichHAMAudit/InteractionDriver.lean:10,16-17 proves exactly the stated endpoint range for 0<a<1. It supplies the temporal endpoint in manuscript/notes/integrated_actual_operator_driver.tex:18-24. The other endpoint and parameter conditions are explicitly excluded."
+    },
+    {
+      "claim": "StratonovichHAMAudit.InteractionDriver.variance_norm: L:driver-interval-limit",
+      "verdict": "PASS",
+      "reason": "OK: The square-root identity and nonnegativity hypotheses match lean/StratonovichHAMAudit/InteractionDriver.lean:21-22. It is the scalar normalization of the variance budget at manuscript/notes/integrated_actual_operator_driver.tex:239-243 into the bound at 432-435. Variance and Schatten estimates remain external."
+    },
+    {
+      "claim": "StratonovichHAMAudit.InteractionDriver.holder_parameters: L:driver-holder-limit",
+      "verdict": "PASS",
+      "reason": "OK: The midpoint conclusions match lean/StratonovichHAMAudit/InteractionDriver.lean:11,57-61; the omitted explicit p>0 hypothesis follows from the ledger's stronger positive lower threshold. Setting H=beta and eta=(H+theta)/2 gives the admissible choice in manuscript/notes/integrated_actual_operator_driver.tex:538-539. The ledger clearly limits coverage to this choice."
+    },
+    {
+      "claim": "StratonovichHAMAudit.InteractionDriver.dyadic_ratio: L:driver-holder-limit",
+      "verdict": "PASS",
+      "reason": "OK: The midpoint-defined factor and strict margin match lean/StratonovichHAMAudit/InteractionDriver.lean:11,13-14,79-80. With H=beta, it is the midpoint instance of manuscript/notes/integrated_actual_operator_driver.tex:554-568. Chaining and interpolation are correctly excluded."
+    },
+    {
+      "claim": "StratonovichHAMAudit.InteractionDriver.box_margin: P:radius-mean-anchor (case d = 2, p = Q)",
+      "verdict": "PASS",
+      "reason": "OK: lean/StratonovichHAMAudit/InteractionDriver.lean:86-87 matches the summaries. For d=2 and Lean p=Q, the threshold and margin are exactly manuscript/notes/integrated_radius_anchor.tex:20,302,323-325. The ledger correctly distinguishes the moment index Q from the manuscript's averaging index p."
+    },
+    {
+      "claim": "StratonovichHAMAudit.InteractionDriver.box_scale: P:radius-mean-anchor (case d = 2, p = Q)",
+      "verdict": "PASS",
+      "reason": "OK: The positive-delta power identity matches lean/StratonovichHAMAudit/InteractionDriver.lean:94-95. At d=2, p=Q it is the radius-power bookkeeping in manuscript/notes/integrated_radius_anchor.tex:293-302,323-327, with the external factor 3^(d/Q) retained by the manuscript."
+    },
+    {
+      "claim": "StratonovichHAMAudit.JointTilt.shifted_amplitude: L:raw-block-inputs",
+      "verdict": "PASS",
+      "reason": "OK: lean/StratonovichHAMAudit/JointTilt.lean:21-22 matches both summaries. Multiplying through by sqrt(delta) gives precisely manuscript/notes/integrated_raw_block_lower.tex:93-110. Noise pullback and mean identification are correctly outside Lean."
+    },
+    {
+      "claim": "StratonovichHAMAudit.MovingCone.residual_budget: L:raw-block-indexed-cone",
+      "verdict": "PASS",
+      "reason": "OK: All hypotheses and constants match lean/StratonovichHAMAudit/MovingCone.lean:8-10. The substitution q=q_B, d=nu M_z, e=M_Q epsilon_op M_z gives manuscript/notes/integrated_raw_block_lower.tex:304-310. Spectral and perturbation inputs remain external."
+    },
+    {
+      "claim": "StratonovichHAMAudit.MovingCone.cone_conversion: L:raw-block-indexed-cone",
+      "verdict": "PASS",
+      "reason": "OK: lean/StratonovichHAMAudit/MovingCone.lean:14-17 matches the stated signs and non-strict conclusions. Applying it to normalized amplitude and residual divided by A gives manuscript/notes/integrated_raw_block_lower.tex:295-313. The moving-projection estimates are correctly excluded."
+    },
+    {
+      "claim": "StratonovichHAMAudit.MovingCone.terminal_margin: L:raw-block-indexed-cone",
+      "verdict": "PASS",
+      "reason": "OK: lean/StratonovichHAMAudit/MovingCone.lean:25-27 matches both summaries. With j=j_* and K=H_obs C_gap, its exact budget is manuscript/notes/integrated_raw_block_lower.tex:315-325. Terminal observable estimates remain external."
+    },
+    {
+      "claim": "StratonovichHAMAudit.PhaseResponse.two_frequency_average: L:masked-trig-products (cosine-cosine case, real form)",
+      "verdict": "PASS",
+      "reason": "OK: The identity matches lean/StratonovichHAMAudit/PhaseResponse.lean:42-43. Pairing conjugate modes in the cosine-cosine expansion of manuscript/notes/integrated_covariance_foundation.tex:362-365 gives exactly this real form. The ledger accurately excludes the complex expansion, sine cases and Hilbert-space bound."
+    },
+    {
+      "claim": "StratonovichHAMAudit.PositiveGram.scalar_sqrt_dual: L:gram-scalar-algebra",
+      "verdict": "PASS",
+      "reason": "OK: The arbitrary real ell, positive w and nonnegative t match lean/StratonovichHAMAudit/PositiveGram.lean:12-13 and manuscript/notes/integrated_positive_gram.tex:26-30,39-45. No additional analytic premise is needed."
+    },
+    {
+      "claim": "StratonovichHAMAudit.PositiveGram.gram_norm_square: L:gram-scalar-algebra",
+      "verdict": "PASS",
+      "reason": "OK: The finite-index identity in a real inner product space matches lean/StratonovichHAMAudit/PositiveGram.lean:21-24 and manuscript/notes/integrated_positive_gram.tex:36,46-47. Neither positivity of weights nor finite dimension of the ambient space is required."
+    },
+    {
+      "claim": "StratonovichHAMAudit.PositiveGram.active_upper_bound: P:gram-positive-optimizer",
+      "verdict": "PASS",
+      "reason": "OK: The conditional inequality matches lean/StratonovichHAMAudit/PositiveGram.lean:38-43. Restricting its finite index type to the active set gives manuscript/notes/integrated_positive_gram.tex:113-125. Lean permits threshold equality and arbitrary real ell,b, so the manuscript's stricter assumptions are compatible. Optimization and attainment are correctly excluded."
+    },
+    {
+      "claim": "StratonovichHAMAudit.PositiveGram.half_weighted_entrywise_mono: P:gram-entrywise-comparison",
+      "verdict": "PASS",
+      "reason": "OK: Entrywise order, nonnegative weights and the factor one half match lean/StratonovichHAMAudit/PositiveGram.lean:72-76. This is exactly the comparison in manuscript/notes/integrated_positive_gram.tex:183-191. Gram realization and optimization correctly remain external."
+    },
+    {
+      "claim": "StratonovichHAMAudit.RawValueCeiling.strict_log_gap: C:intrinsic-spatial-bracket",
+      "verdict": "PASS",
+      "reason": "OK: The strict inequality under a>0 and q-2a>0 matches lean/StratonovichHAMAudit/RawValueCeiling.lean:12-14. The same expression and precise conditions occur in manuscript/notes/integrated_occupation_ceiling.tex:275-286. Energy identifications are correctly excluded."
+    },
+    {
+      "claim": "StratonovichHAMAudit.RawVariational.dilation_factors: L:variational-control-dilation",
+      "verdict": "PASS",
+      "reason": "OK: Both power identities match lean/StratonovichHAMAudit/RawVariational.lean:9-11. As explicitly qualified by the module paragraph, these are the d=1 factors in manuscript/notes/integrated_unmasked_variational.tex:243-254. Radon homogeneity and Rayleigh scaling remain external."
+    },
+    {
+      "claim": "StratonovichHAMAudit.RawVariational.label_score: P:variational-positive-scores",
+      "verdict": "PASS",
+      "reason": "OK: Constants, exponent and hypotheses match lean/StratonovichHAMAudit/RawVariational.lean:22-24. The identity is exactly the dilation substitution in manuscript/notes/integrated_unmasked_variational.tex:298-307. Class bijection and finite supremum arguments are correctly excluded."
+    },
+    {
+      "claim": "StratonovichHAMAudit.RawVariational.positive_score: P:variational-positive-scores",
+      "verdict": "PASS",
+      "reason": "OK: The choice r=(I/v)^(1/(3-alpha)) and positivity hypotheses match lean/StratonovichHAMAudit/RawVariational.lean:40-42 and manuscript/notes/integrated_unmasked_variational.tex:287-296. Positivity for actual controls remains an external input."
+    },
+    {
+      "claim": "StratonovichHAMAudit.RawVariational.strict_label_factor: P:variational-positive-scores",
+      "verdict": "PASS",
+      "reason": "OK: lean/StratonovichHAMAudit/RawVariational.lean:64-65 matches both summaries. The exponent exceeds one at manuscript/notes/integrated_unmasked_variational.tex:287, and the exact strict factor is used at 333-335 without a first-moment identification."
+    },
+    {
+      "claim": "StratonovichHAMAudit.WhiteCDF.cdf_square_bound: P:white-spatial-energy",
+      "verdict": "PASS",
+      "reason": "OK: The universally quantified quadratic hypothesis and conclusion match lean/StratonovichHAMAudit/WhiteCDF.lean:8-10. manuscript/notes/integrated_white_evaluation.tex:62-66 makes precisely this substitution. The CDF integral identity is correctly identified as external."
+    },
+    {
+      "claim": "StratonovichHAMAudit.WhiteCDF.energy_upper: P:white-spatial-energy",
+      "verdict": "PASS",
+      "reason": "OK: The sole scalar hypothesis and constant 1/6 match lean/StratonovichHAMAudit/WhiteCDF.lean:15-16. The same deduction occurs in manuscript/notes/integrated_white_evaluation.tex:79-84. Variational domain and attainment are correctly excluded."
+    },
+    {
+      "claim": "LEDGER-INDEX",
+      "verdict": "PASS",
+      "reason": "OK: candidate/statement-ledger.md:57-79 agrees with the per-module assignments for all 88 rows, including the qualified special cases. Searching label commands across all 18 manuscript files found all 56 distinct manuscript labels cited anywhere in the ledger. This internal consistency does not validate the erroneous correspondence identified in S1."
+    },
+    {
+      "claim": "LEDGER-TOTALS",
+      "verdict": "PASS",
+      "reason": "OK: The per-module tables contain 88 declaration rows: 39 labelled and 49 unlabelled. lean/claims.yaml records 82 theorems and 6 definitions. Source declaration counts also give 82 public theorems and 43 public definitions, consistent with six ledger definitions plus the 37 auxiliary definitions described at candidate/statement-ledger.md:20-24."
+    },
+    {
+      "claim": "LEDGER-SCOPE",
+      "verdict": "PARTIAL",
+      "reason": "OK: The formalization boundaries at candidate/statement-ledger.md:25-38,456-478 and the component's special-case qualifications are accurate. However, the DirectEvent paragraph at 163-165 groups kappa>1 with computations of L:exact-canonical-scaling, repeating the unsupported location assignment in row 172. It requires the same correction as S1."
+    }
+  ],
+  "findings": {
+    "fatal": [
+      "S1: StratonovichHAMAudit.DirectEvent.kappa_gt_one has a wrong manuscript mapping. Lean states '1 < kappa alpha a' under a<1 and alpha<3 (lean/StratonovichHAMAudit/DirectEvent.lean:16-17), faithfully paraphrased at candidate/statement-ledger.md:172. But L:exact-canonical-scaling states its result 'for T > 0' and displays 'r_T=T delta=T^((a-1)/(3-alpha))' (manuscript/notes/integrated_exact_scaling.tex:4-10); neither its statement nor its complete proof at 26-56 uses kappa>1. The actual labelled occurrence is 'kappa := (4-alpha-alpha_0)/(3-alpha) in (1,2)' under E:kappa (manuscript/notes/notes_stratonovich_ham_second_moment.tex:142-144), and an explicit application is 'Since alpha < 2 < 3, a < 1, we have kappa > 1' in P:original-point-transfer (manuscript/notes/integrated_point_transfer.tex:307-310). Exact ledger fix: change this row's Paper label to E:kappa, qualified as the lower inequality only; update the index and DirectEvent paragraph accordingly, retaining the exclusion of kappa<2."
+    ],
+    "major": [],
+    "minor": []
+  },
+  "required_repairs": [
+    "Correct the kappa_gt_one correspondence at candidate/statement-ledger.md:172 to E:kappa (lower inequality only), update its index assignment at line 61, and revise lines 163-165 so they do not attribute use of kappa>1 to L:exact-canonical-scaling."
+  ],
+  "limitations": [
+    "All required complete readings were completed. The main manuscript file was intentionally read only at referenced passages and label-search hits; other ranges were not read, as permitted by requirement C.",
+    "The other 54 declaration rows were not independently adjudicated; their index membership and totals were checked only for the required ledger-wide checks.",
+    "Earlier manuscript revisions, unavailable Audit outputs, provenance/manuscript-anchor.json and withheld modules are outside this packet and were not verified.",
+    "Compilation and standard-axiom proof correctness were accepted as stipulated; hashes were not recomputed.",
+    "This is an AI correspondence review, not human verification or a novelty audit."
+  ]
+}
