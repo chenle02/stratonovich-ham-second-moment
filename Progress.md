@@ -18498,3 +18498,11 @@ indentation is restored; the earlier pending caption-only style item is closed.
 The actual formatter hash and preservation checks are recorded under
 private/audit/2026-11-10-reader-figure-parity/. Current pins are refreshed in
 notes/figures/VALIDATION.json; independent scientific gates are unchanged.
+
+## 2026-11-10: soften the guitar illustration
+
+At Le's request, the shared guitar figure now has rounded corners and a smooth
+white edge fade into the page. Implemented as a TikZ presentation around the
+original credited image. Both editions rebuilt cleanly; 215 proof bodies,
+81 mapped labels and 248 external links pass. Inspected the integrated guitar
+pages in both editions. Current source/PDF pins are refreshed.

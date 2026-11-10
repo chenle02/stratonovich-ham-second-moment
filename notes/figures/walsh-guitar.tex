@@ -1,6 +1,26 @@
 \begin{figure}
   \centering
-  \includegraphics[width=0.48\textwidth]{media/guitar-sandstorm/illustration.png}
+  \begin{tikzpicture}
+    \begin{scope}
+      \clip[rounded corners=9pt]
+      (-0.24\textwidth,-0.24\textwidth) rectangle
+      (0.24\textwidth,0.24\textwidth);
+      \node[inner sep=0pt,outer sep=0pt] (art) {
+      \includegraphics[width=0.48\textwidth]{media/guitar-sandstorm/illustration.png}};
+      % Soft white rings blend the image into the paper without changing the art.
+      \begin{scope}
+        \clip (art.south west) rectangle (art.north east);
+        \foreach \k in {24,23,...,1} {
+        \draw[white,opacity=0.12,line width=\k*0.65pt,
+        rounded corners=9pt]
+        (art.south west) rectangle (art.north east);
+        }
+      \end{scope}
+      % The outer white frame also removes the square corner remnants.
+      \draw[white,line width=3pt,rounded corners=9pt]
+      (art.south west) rectangle (art.north east);
+    \end{scope}
+  \end{tikzpicture}
   \caption[A guitar in a sandstorm]{AI-generated illustration inspired by
     Walsh's guitar-in-a-sandstorm example. Artwork from Le Chen's SPDE-Visuals
     collection, released under CC0. This is an artistic illustration, not a
