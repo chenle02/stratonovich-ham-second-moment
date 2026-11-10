@@ -18472,3 +18472,11 @@ now states the existing upper bound and exact second-moment limit as Theorems
 1.5.1 and 1.5.2, with self-contained definitions and links to their unchanged
 proofs in Theorems 3.3.8 and 11.2.6. Legacy labels remain aliases. This is a
 restatement of written claims, not a new proof or independent acceptance.
+
+Post-commit check: Agent16 preserved the exact editorial STATUS-DIGEST paragraph
+in e5e8c98. Its301/28pages,215proofs,81labels and248links were verified. The
+TeX hook changed only the guitar fragment's indentation; actual committed
+source/PDF pins are refreshed in the follow-up. Strict source-style completion
+for that caption awaits Agent21's formatter repair969e9094 and <MACHINE> deployment.
+All15chapter openings and the two introductory theorem restatements pass their
+scoped checks; no mathematical or independent-review status changed.
