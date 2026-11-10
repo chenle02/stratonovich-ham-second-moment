@@ -1,9 +1,11 @@
 # Article-Stratonovich-HAM-Second-Moment
 
-**Compact reading prototype:** [20-page reader](../stratonovich-reading-notes-20261105/notes/notes_stratonovich_ham_second_moment_reader.pdf)
+**Current working draft (2026-11-09):** [267-page PDF](notes/notes_stratonovich_ham_second_moment.pdf) and [TeX](notes/notes_stratonovich_ham_second_moment.tex), preserved as an **unadopted mathematical candidate**. See [draft status](notes/WORKING-DRAFT-STATUS.md), [AI development history](AI-DEV-HISTORY.md), and [build evidence](reviews/2026-11-09-working-draft-267-checkpoint/README.md). Latest whole MAIN remains MEDIUM/unaccepted; the dated scientific and review summaries below are historical.
+
+**Historical compact reading prototype:** [20-page reader](../stratonovich-reading-notes-20261105/notes/notes_stratonovich_ham_second_moment_reader.pdf)
 with its [matching TeX](../stratonovich-reading-notes-20261105/notes/notes_stratonovich_ham_second_moment_reader.tex),
 committed together at `9895781` on `editorial/reading-notes-20261105`. Use it with
-the [unchanged 263-page technical companion](notes/notes_stratonovich_ham_second_moment.pdf).
+the 263-page technical companion preserved at commit `11e009a` (the same notes path).
 The complete package has 283 pages; no total-proof-length reduction or final
 independent clearance is claimed. [Latest paired revision and validation](reviews/2026-11-05-reader-v4-paired-revision/).
 

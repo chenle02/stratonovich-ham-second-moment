@@ -210,9 +210,8 @@ three. Plateau and causal-cone arguments retain their strict margins.
 The moment estimate uses the bounded-operator Crouzeix--Palencia
 theorem in~\eqref{E:cp-input}. The fixed-order construction is supplied
 here by Lemmas~\ref{L:spatial-wick-measures}--\ref{L:joint-fixed-order},
-using only the source's universal pairing inequality
-\cite{chen:author2026:time-dependency}*{Theorem~3.1, (3.6), pp.~14--15}
-and the direct norm bounds in Lemma~\ref{L:damped-homogeneous-norms}.
+using Lemma~\ref{L:pairing-product-envelope}, which proves the finite
+product envelope used here, and the direct norm bounds in Lemma~\ref{L:damped-homogeneous-norms}.
 The Case~2 covariance step is proved independently in
 Lemma~\ref{L:translated-covariance-CS}; the precise source-display
 qualifications and regularized application are in
@@ -290,8 +289,8 @@ The full mixed-term expansion is justified in Proposition~\ref{P:mixed}.
 
 \subsection{The universal two-chain bound}
 
-\cite{chen:author2026:time-dependency}*{Theorem~3.1, (3.6), p.~15} bounds
-exactly such two-chain pairing integrals with general nonnegative kernels
+\cite{chen:author2026:time-dependency}*{Theorem~3.1, (3.6), p.~15} states
+an estimate for such two-chain pairing integrals with nonnegative kernels
 $G_l$ by products of the norms $\|G_l\|^{(0)}$, $\|G_l\|^{(1)}_{j,k}$,
 $\|G_l\|^{(2)}_{j,k}$ of \cite{chen:author2026:time-dependency}*{(3.3)--(3.5)},
 over a partition $\{Q_0,Q_1,Q_2\}$ of $\{1,\dots,2n\}$ with $\#Q_0=\#Q_1$ and
@@ -302,7 +301,9 @@ $\Gamma(\alpha_0)^{-1}\int_{A_{j,k}}e^{-\lambda|r|}
 The application to the full covariance therefore requires regularization;
 this is carried out in Lemma~\ref{L:crude-corrected}.
 The theorem includes cross-pairings between the two chains.
-Lemma~\ref{L:translated-covariance-CS} supplies its Case~2 estimate
+Our finite maximum formulation is proved in
+Lemma~\ref{L:pairing-product-envelope}; a maximizing assignment may depend
+on the actual kernels. Lemma~\ref{L:translated-covariance-CS} supplies its Case~2 estimate
 with the predecessor-time difference retained, as explained in
 Remark~\ref{R:source-case2-time-shift}. In the
 source it is used only for Stratonovich integrability (Section~4) and, via
@@ -454,7 +455,7 @@ and the Green regularization on pp.~13--14}.
   Lemma~\ref{L:joint-fixed-order} below constructs each $X_n$ and each
   individual two-chain diagram at arbitrary vertexwise widths, including
   unequal and empty chains. Its proof uses the positive spatial-measure
-  limit and the imported universal Theorem~3.1; it uses neither the present
+  limit and Lemma~\ref{L:pairing-product-envelope}; it uses neither the present
   proposition nor any infinite solution series.
 
   At positive noise widths Wick's formula gives zero at odd total order
@@ -494,7 +495,7 @@ and the Green regularization on pp.~13--14}.
 
   Lemmas~\ref{L:crude-corrected} and~\ref{L:vertex-crude} independently
   prove fixed-$t$ norm summability of the $X_n$, using the fixed-order
-  construction just cited and the universal pairing bound.
+  construction just cited and Lemma~\ref{L:pairing-product-envelope}.
   Proposition~\ref{P:mild-construction} identifies their series as a
   Stratonovich mild solution. None of those proofs uses the present
   mixed-term identity. Hence $U_N=\sum_{n=0}^N X_n\to u$ in $L^2$, and
@@ -856,8 +857,38 @@ time line.
   in~\eqref{E:damped-norm-definitions}; it is not a literal quotation
   of that display.
 
-  \emph{(iii)} At an edge $e=\{j,h\}$ of the manuscript's pairing
-  estimates, retain positive spatial widths $\epsilon_j,\epsilon_h$ and use
+  \emph{(iii)} We use the actual common-prefix source convention
+  of~\cite{chen:author2026:time-dependency}*{(2.11), p.~9, and (2.24),
+  p.~13}. Write $Y_{\epsilon,\delta}$ for its positive-width fields.
+  Independence of disjoint Laplace-frequency increments makes the
+  cross covariance of two prefixes their common part. Their upper
+  limits are $\delta_j^{-1}$ and $\delta_h^{-1}$, whose minimum is
+  $(\delta_j\vee\delta_h)^{-1}$. Spatial heat convolution on the two
+  fields gives $p_{\epsilon_j}*p_{\epsilon_h}=p_{\epsilon_j+\epsilon_h}$.
+  Thus, with the original covariance amplitude,
+  \begin{equation}\label{E:pairing-source-covariance}
+    \begin{split}
+      \E[Y_{\epsilon_j,\delta_j}(s,x)
+        Y_{\epsilon_h,\delta_h}(t,y)]
+      &=\kappa_{\delta_j\vee\delta_h}(s-t)
+        (p_{\epsilon_j+\epsilon_h}*\Gamma)(x-y),\\
+      \kappa_\delta(u)&=\frac1{\Gamma_{\mathrm E}(a)}
+        \int_0^{\delta^{-1}}e^{-\lambda|u|}\lambda^{a-1}\ud\lambda,
+        \qquad a=\alpha_0.
+    \end{split}
+  \end{equation}
+  For generalized $\Gamma$, the spatial identity follows by testing
+  against heat functions, or by their spectral multipliers; it requires
+  no covariance density. The endpoint zero in the Laplace interval has
+  zero Lebesgue measure, so $[0,L]$ and $(0,L]$ give the same integral.
+  This verifies the covariance used on each vertexwise edge. It does
+  not construct the coupled family from the given $W$ alone. Its
+  common-field realization, any prescribed auxiliary Gaussian extension,
+  and its joint source limits remain the separate hypotheses and
+  deductions of Lemmas~\ref{L:spatial-wick-measures}--\ref{L:joint-fixed-order};
+  no new point-field measurability or uniqueness claim is made here.
+  At an edge $e=\{j,h\}$, retain positive spatial widths
+  $\epsilon_j,\epsilon_h$ and use
   \[
     \mu_e(\ud\xi)=e^{-(\epsilon_j+\epsilon_h)|\xi|^2/2}\mu(\ud\xi),
     \qquad \gamma_e=p_{\epsilon_j+\epsilon_h}*\Gamma\ge0.
@@ -885,8 +916,8 @@ time line.
   smoothing in dimension three when a function is required.
   They have $N_0=\theta^{-2}$, and
   Lemma~\ref{L:damped-homogeneous-norms} supplies the finite full and tail
-  second-norm bounds. The source theorem's separate first-norm
-  hypotheses remain in force for the induction steps still imported.
+  second-norm bounds and first-norm bounds. These are precisely the
+  edge norm hypotheses used in Lemma~\ref{L:pairing-product-envelope}.
   The Case~2 estimate contributes exactly its two second norms, with
   coefficient one. It changes neither a $Q_2$ factor nor any coefficient
   estimate and adds no factor depending on $A+B$.
@@ -895,9 +926,213 @@ time line.
   their separate weak-limit arguments in Lemmas~\ref{L:joint-fixed-order}
   and~\ref{L:spatial-wick-measures}. No pointwise monotonicity of spatial
   Gaussian smoothing or general unregularized spatial-distribution
-  version is asserted. The other parts of the source's Theorem~3.1
-  remain imported with their hypotheses unchanged.
+  version is asserted.
+
+  \emph{(iv)} We prove the product estimate needed here in
+  Lemma~\ref{L:pairing-product-envelope}, rather than importing the
+  remaining displayed induction. On p.~16, the empty-first-chain base
+  caption interchanges the mass and first-norm kernel labels; their
+  chronological order gives mass on the first kernel. On p.~18, (3.9)
+  omits the factor two when a fused kernel occupies a first-norm slot.
+  Retaining that factor and using the mass times first-norm convolution
+  bound below preserves the half-bound needed in Case~3. The p.~19
+  mass-slot partition uses a union of the two excluded labels, not the
+  printed intersection; its first-slot edge count excludes the fused
+  slot. The p.~21 Case~2 offset is handled by the preceding lemma.
+  These are explicit qualifications of the printed formulas, not
+  corrections attributed to the source or a claim that its intended
+  product bound is false. The finite maximum below is sufficient for
+  all our uses; we assert no partition independent of the kernel family.
 \end{remark}
+
+\subsection{A finite product bound for two ordered chains}
+
+Fix $d\ge1$, $0<a<1$ and a matching $D$ on $2n$ labels.
+For each edge $e\in D$, let $\mu_e$ be finite and positive, with
+$\gamma_e(x)=\int e^{i\xi\cdot x}\mu_e(\ud\xi)\ge0$.
+For a measurable $A_e\subset(0,\infty)$ put
+\[
+  \nu_e(\ud\lambda)=\Gamma_{\mathrm E}(a)^{-1}
+  \mathbf1_{A_e}(\lambda)\lambda^{a-1}\ud\lambda,
+  \qquad \kappa_e(t)=\int e^{-\lambda|t|}\nu_e(\ud\lambda).
+\]
+For nonnegative $G\in L^1((0,\infty)\times\R^d)$ define
+\begin{equation}\label{E:pairing-edge-norms}
+  \begin{split}
+    N_0(G)&=\int G(t,x)\ud t\ud x,\\
+    N_{1,e}(G)&=\int\left|\int e^{-\lambda t+i\xi\cdot x}
+      G(t,x)\ud t\ud x\right|\nu_e(\ud\lambda)\mu_e(\ud\xi),\\
+    N_{2,e}(G)^2&=\int G(s,x)G(t,y)
+      \kappa_e(s-t)\gamma_e(x-y)\ud s\ud x\ud t\ud y.
+  \end{split}
+\end{equation}
+Time integrations in these definitions are positive. Denote the inner
+Laplace--Fourier transform by $\mathcal L G(\lambda,\xi)$. The last
+integral means its nonnegative temporal cap limit, as in the preceding
+covariance pairing. In particular its spatial variables are independent.
+
+Let $I_1=\{1,\ldots,n_1\}$ and
+$I_2=\{n_1+1,\ldots,2n\}$, where $n_1+n_2=2n$ and either chain may
+be empty. Each chain is ordered in its own time variables. Write $p(l)$
+for its predecessor, using $(s_{p(l)},x_{p(l)})=(0,0)$ at the first
+vertex of each chain. Set
+\begin{equation}\label{E:pairing-diagram-general}
+  \begin{split}
+    I_D(\boldsymbol G)=\int
+    &\prod_{\rho=1}^2\prod_{l\in I_\rho}
+      G_l(s_l-s_{p(l)},x_l-x_{p(l)})\\
+    &\times\prod_{e=\{j,k\}\in D}
+      \kappa_e(s_j-s_k)\gamma_e(x_j-x_k)
+      \ud\boldsymbol s\ud\boldsymbol x .
+  \end{split}
+\end{equation}
+The domain is the product of the two positive ordered time simplices
+and all spatial variables.
+
+Call $(Q,\iota)$ admissible if $Q_0,Q_1,Q_2$ partition the kernel labels,
+$|Q_0|=|Q_1|$, and the map $\iota:Q_1\cup Q_2\to D$ uses each edge
+once on $Q_1$ or twice on $Q_2$, never both. There is no incidence
+requirement between $l$ and $\iota(l)$. These assignments form a finite
+nonempty set $\mathcal A_D$. Put
+\begin{equation}\label{E:pairing-product-general}
+  \mathcal P_{Q,\iota}(\boldsymbol G)=
+  \prod_{l\in Q_0}N_0(G_l)
+  \prod_{l\in Q_1}2N_{1,\iota(l)}(G_l)
+  \prod_{l\in Q_2}N_{2,\iota(l)}(G_l).
+\end{equation}
+Thus, $|Q_2|$ is even and $|Q_0|+|Q_2|/2=n$.
+
+\begin{lemma}[Pairing product envelope]\label{L:pairing-product-envelope}
+  Suppose every $G_l$ is nonnegative and integrable, and
+  $N_{1,e}(G_l),N_{2,e}(G_l)<\infty$ for every $l$ and $e\in D$.
+  Then
+  \begin{equation}\label{E:pairing-product-envelope}
+    I_D(\boldsymbol G)\le
+    \max_{(Q,\iota)\in\mathcal A_D}
+      \mathcal P_{Q,\iota}(\boldsymbol G).
+  \end{equation}
+  A maximizing assignment may depend on the actual kernels and edge data.
+  No single assignment valid for all kernel families is asserted.
+  For $n=0$, both sides are one. Zero kernels, measures and norms are allowed.
+\end{lemma}
+
+\begin{proof}
+  First cap every temporal domain at $L<\infty$; its measure is finite
+  since $a>0$. The stationary covariance pairing in
+  Lemma~\ref{L:translated-covariance-CS} has norm $N_{2,e}$.
+  Its feature $h_\lambda(t,r)e^{i\xi\cdot x}$ and its proof apply in
+  any finite dimension: their only spatial input is the finite measure
+  $\mu_e$. Hence, its coefficient-one Cauchy--Schwarz inequality and
+  invariance under simultaneous time and space translation apply here.
+  All Fourier and Bochner interchanges at this cap are justified by
+  the finite covariance mass times the relevant $L^1$ masses.
+
+  For one-sided spacetime convolution $F=G*H$, positivity and the
+  Laplace--Fourier product give
+  \begin{equation}\label{E:pairing-convolution-norms}
+    \begin{split}
+      N_0(F)&=N_0(G)N_0(H),\\
+      N_{1,e}(F)&\le N_0(G)N_{1,e}(H),\\
+      N_{2,e}(F)&\le N_0(G)N_{2,e}(H).
+    \end{split}
+  \end{equation}
+  Indeed, $|\mathcal L G(\lambda,\xi)|\le N_0(G)$ for $\lambda\ge0$
+  proves the first-norm estimate. For the second, zero-extend $H$ in
+  time. Its translates have the same covariance Hilbert norm.
+  Express $G*H$ as their Bochner integral against $G$ and apply
+  Minkowski. Thus, every fused kernel satisfies all remaining edge
+  hypotheses. No division by a norm is used.
+
+  We use induction on $n$, beginning with the empty product at $n=0$.
+  With two vertices on one chain the integral is at most
+  $N_0(G_{\rm first})N_{1,e}(G_{\rm last})$; with one on each chain
+  it is at most their two second norms by covariance Cauchy--Schwarz.
+  These also verify both nonempty-chain orientations at $n=1$.
+  Assume the full bound at $n-1$.
+
+  We first prove a half-bound on any region where an endpoint $v$,
+  its predecessor $p$ and its partner $a$ satisfy $s_a\le s_p$.
+  Require the region indicator to be independent of $(s_v,x_v)$.
+  Write $e_0=\{a,v\}$. Since $\kappa_{e_0}$ is decreasing on positive
+  arguments, replace $\kappa_{e_0}(s_v-s_a)$ by
+  $\kappa_{e_0}(s_v-s_p)$. Integrating the endpoint and taking the
+  modulus of its spatial Fourier phase gives the factor
+  \[
+    \int |\mathcal L G_v(\lambda,\xi)|
+      \nu_{e_0}(\ud\lambda)\mu_{e_0}(\ud\xi)=N_{1,e_0}(G_v).
+  \]
+  Now drop the region indicator by positivity. Remove $v$ and its edge.
+  Its partner $a$ is unpaired. If $a$ is terminal in its remaining
+  chain, integrate it to $N_0(G_a)$ and apply induction. The result
+  is one half of an admissible product, adding $a$ to $Q_0$ and $v$
+  to $Q_1$ with edge $e_0$.
+
+  Otherwise, let $b$ be the immediate successor of $a$ on its own chain.
+  Integration at $a$ gives exactly $F=G_a*G_b$ at $b$, also when $a$
+  was the first vertex. Apply induction to the two reduced chains and
+  $D\setminus\{e_0\}$. Mark the slot $i=0,1,2$ occupied by $F$ in a
+  maximizing reduced product. Let $R_0,R_1,R_2$ be its other slots and
+  $B_{\rm rest}$ their product, retaining every first-slot factor two.
+  The new slots can be chosen as follows:
+  \[
+    \begin{array}{c|ccc}
+      i&Q_0&Q_1&Q_2\\ \hline
+      0&R_0\cup\{a,b\}&R_1\cup\{v\}&R_2\\
+      1&R_0\cup\{a\}&R_1\cup\{b,v\}&R_2\\
+      2&R_0\cup\{a\}&R_1\cup\{v\}&R_2\cup\{b\}.
+    \end{array}
+  \]
+  For $i=0$, $|R_0|+1=|R_1|$ and $|R_2|$ is even. Mass
+  multiplicativity gives one half of the displayed new product.
+  For $i=1$, $|R_0|=|R_1|+1$ and $|R_2|$ is even. If $e_1$ is the
+  inherited edge, the actual term and its bound are
+  \begin{align*}
+    &N_{1,e_0}(G_v)\,[2N_{1,e_1}(F)]B_{\rm rest}\\
+    &\qquad\le\tfrac12N_0(G_a)
+      [2N_{1,e_1}(G_b)][2N_{1,e_0}(G_v)]B_{\rm rest}.
+  \end{align*}
+  The inherited edge stays first exactly once; $e_0$ is first once.
+  No incidence condition is needed. For $i=2$, $|R_0|=|R_1|$ and
+  $|R_2|$ is odd; $e_1$ already occurs once there. The last inequality
+  in~\eqref{E:pairing-convolution-norms} puts its other second norm
+  on $G_b$, a mass on $G_a$ and $2N_{1,e_0}(G_v)$ on $v$, again with
+  a factor one half. Every old edge retains its type and multiplicity.
+  The displayed counts give $|Q_0|=|Q_1|$ and even $|Q_2|$ in all
+  three cases. This proves the regional half-bound, using only the
+  full induction hypothesis, not an assumed stronger induction.
+
+  A domestic endpoint has its partner before its predecessor, so this
+  half-bound applies on the entire domain. This also handles an empty
+  chain. If both endpoints $u=n_1$ and $v=2n$ are paired to each other,
+  condition on their separate predecessors $(A,z),(B,w)$. The endpoint
+  integral keeps the temporal argument $r-q+A-B$ in relative times.
+  The original stationary covariance Cauchy--Schwarz inequality bounds
+  it by $N_{2,e}(G_u)N_{2,e}(G_v)$; translate each self pairing
+  separately. Induction and adding $u,v$ to $Q_2$ prove the full bound.
+  There is no origin factor or discarded predecessor-time offset.
+
+  It remains that both endpoint pairs are cross and distinct.
+  Let $a$ be the partner of $v$, $b$ the partner of $u$, and put
+  $p=u-1$, $q=v-1$. Then $a<u$ and $b<v$.
+  On $\{s_a\le s_q\}$ remove $v$ by the regional half-bound.
+  Its indicator is independent of $s_v,x_v$.
+  On the complementary region the chain orders give
+  $s_p\ge s_a>s_q\ge s_b$, so remove $u$ instead; that indicator is
+  independent of $s_u,x_u$. The removed partner has a successor on
+  its own chain in both cases. The two bounds are $P/2$ and $P'/2$
+  for possibly different admissible products of the original labels.
+  Therefore, their sum is at most $(P+P')/2\le\max(P,P')$.
+  This proves~\eqref{E:pairing-product-envelope} at the finite cap.
+
+  Finally, increase $L$ to infinity. The diagram integrands and all
+  norm factors increase to their declared values, by positivity and
+  monotone convergence. There are only finitely many admissible
+  products, so their maximum converges to the maximum of their limits.
+  No kernel-independent or measurable maximizing choice is needed.
+  Zero norms and measures require no exception; the positive cap
+  convention avoids any undefined product on a singular time diagonal.
+  This proves Lemma~\ref{L:pairing-product-envelope}.
+\end{proof}
 
 Use the joint Gaussian regularizations of the source's (2.11).
 Write $a=(\epsilon,\delta)>0$ for one pair of widths and
@@ -1137,18 +1372,17 @@ in chain $i$, with value zero for an empty chain.
   of $k$ nonnegative integrals, each with one marked time covariance
   $K_{1/\eta}$ and all other time covariances full.
 
-  Apply the imported universal pairing inequality
-  \cite{chen:author2026:time-dependency}*{Theorem~3.1, (3.6), pp.~14--15}
-  to the damped kernels $e^{-s}G_s$. At first smooth the Green kernels
-  in dimension three and cap the temporal Laplace domains above.
+  Apply Lemma~\ref{L:pairing-product-envelope} to the damped kernels
+  $e^{-s}G_s$. At first smooth the Green kernels in dimension three and
+  cap the temporal Laplace domains above.
   Each spatial edge measure is a finite Gaussian-weighted $\mu$ with
   nonnegative physical covariance, and each temporal domain is a
   Laplace interval or its restriction. These are exactly the hypotheses
-  of that theorem. The finite-horizon exponential loss is at most
+  of that lemma. The finite-horizon exponential loss is at most
   $e^{T_1+T_2}$. Lemma~\ref{L:damped-homogeneous-norms} bounds all
   unmarked norms independently of the smoothing parameters. The marked
   edge appears once in the first-norm product or twice in the
-  second-norm product. Consequently,
+  second-norm product in every admissible assignment. Consequently,
   \begin{equation}\label{E:joint-temporal-tail}
     0\le F_{\boldsymbol\epsilon,0,D}
     -F_{\boldsymbol\epsilon,\eta,D}
@@ -1219,7 +1453,8 @@ $C_0<\infty$ and $\theta_0=1$ such that, for $\theta\ge\theta_0$,
   On the two finite chains, the product of the exponential weights
   telescopes to $e^{-\theta(s_n+s_{2n})}\ge e^{-2\theta t}$.
   Extend the nonnegative integral to the two infinite time simplices
-  and apply the source's Theorem~3.1. If $q_i=\#Q_i$, then
+  and apply Lemma~\ref{L:pairing-product-envelope}. For every admissible
+  product, put $q_i=\#Q_i$. Then
   $q_0=q_1$ and $q_0+q_2/2=n$. Hence,~\eqref{E:crude-norms} bounds
   each pairing by $e^{2\theta t}C^n\theta^{-2n}$.
   Summing the $P_n$ pairings gives
@@ -1227,9 +1462,9 @@ $C_0<\infty$ and $\theta_0=1$ such that, for $\theta\ge\theta_0$,
     \E X_n(t,x)^2\le P_n e^{2\theta t}C^n\theta^{-2n},
     \qquad\theta\ge\theta_0.
   \end{equation}
-  To be precise about the source's finite-spectral-measure hypothesis in
-  Theorem~3.1, first apply it with the spatially smoothed covariance and
-  the temporal truncations of (2.24). The smoothed spectral measure is
+  For the finite-spectral-measure hypothesis in
+  Lemma~\ref{L:pairing-product-envelope}, first apply it with the spatially
+  smoothed covariance and the temporal truncations of (2.24). The smoothed spectral measure is
   finite: the Gaussian multiplier is bounded by a constant times
   $(1+|\xi|^2)^{-(2-\alpha_0)/2}$, whose integral is finite by (1.5).
   This argument requires no radial density for the spectral measure.
@@ -1297,10 +1532,10 @@ $C_0<\infty$ and $\theta_0=1$ such that, for $\theta\ge\theta_0$,
   $s'_j=t-s_{n+1-j}$ and $y'_j=x-y_{n+1-j}$.
   This reverses the chain and only permutes its vertex widths;
   covariance differences change sign and the kernels are even.
-  For each pairing apply the imported Theorem~3.1 to
+  For each pairing apply Lemma~\ref{L:pairing-product-envelope} to
   $e^{-\theta r}G_r$, first with Green smoothing if
-  $d=3$. The theorem permits a separate finite spectral measure and
-  temporal truncation on each edge; see its (3.1)--(3.2), pp.~14--15.
+  $d=3$. The lemma permits a separate finite spectral measure and
+  temporal truncation on each edge.
   These hypotheses hold here: the spatial spectral measure on an edge
   is $e^{-(\epsilon_j+\epsilon_l)|\xi|^2/2}\mu(\ud\xi)$, which is
   finite by (1.5), and its temporal Laplace domain is
@@ -1321,8 +1556,9 @@ $C_0<\infty$ and $\theta_0=1$ such that, for $\theta\ge\theta_0$,
   normalization or large-parameter formula in the source's Appendix.
   The constants are independent of all the vertex widths.
 
-  Since $\#Q_0=\#Q_1$ and $\#Q_0+\#Q_2/2=n$ in Theorem~3.1,
-  exactly as in~\eqref{E:theta-envelope} we obtain the following bound.
+  Since $\#Q_0=\#Q_1$ and $\#Q_0+\#Q_2/2=n$ for every admissible
+  product, exactly as in~\eqref{E:theta-envelope} we obtain the following
+  bound.
   Indeed, put $D=\max\{1,2C_0\}$. The norm constants contribute at
   most $D^{\#Q_1+\#Q_2}\le D^{2n}$, so we may take $C_1=D^2$:
   \[
@@ -1560,8 +1796,8 @@ inequality.
   The products $2N_0N_1$ and $N_2^2$ therefore both have degree
   $-\beta$. Choose
   $K\ge\max\{2N_1(1),N_2(1)^2\}$, increasing it to a positive
-  constant if needed. Theorem~3.1 and $q_0+q_2/2=k$ give
-  $K^k\theta^{-\beta k}$ for every partition it supplies. The finite
+  constant if needed. Lemma~\ref{L:pairing-product-envelope} and
+  $q_0+q_2/2=k$ give $K^k\theta^{-\beta k}$ for every admissible product. The finite
   horizons contribute at most $e^{2\theta t}$. Apply this first to
   regularized moments. In $d=3$, fix $(\epsilon,\delta)$ and let
   $\eta\downarrow0$ in each factor's $L^2$ limit; Cauchy--Schwarz gives

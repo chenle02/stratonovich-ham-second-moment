@@ -18110,3 +18110,36 @@ OneverifiednativeDSV4Pro manualsame-model/no-tailcompactionfinishedsamehandle, i
 ## 2026-11-09:full MAIN v5 returns canonical MEDIUM, unaccepted
 
 NEWgenuinewhole reviewwithcompletedactualGaussiankernelconsumerfinished; actualnativeDSV4Pro input691415/output+reasoning18183/FULL709598 withinunchangedinput732375+hard311296/1048576. Nativeidle/cumulative222/fresh83+10kernelbodies/captured-user0515f212 verified. RootreadALL263rows/coverage/4minor/5limits: literalPASS_WITH_NOTES/MEDIUM,226PASS/37PWN,no fatal/major/requiredrepairs. RawcanonicalJSONsha1c390118fe2fc93348d573d797262e3bb3e3b6f494ba60f3b86cc14720bc06d6. ALLoriginalsemantic215/26/13/9IDsandprimarylabels presentonce;13join+9globalclaimsbareIDsfailrequiredtrailingdelimiter, legacyrefusalJOIN-CONSTRUCTORpreserved. Preliminaryrenamed-IDdescriptioncorrected;NONErenamedormissing. No report/parser/grade repair,MEDIUM independentlyfailsHIGH. Source-backedreportcorrections:155epsilon_Jscalar-timeINDEPENDENTR(F018LF218-227/324-327),F001+27modulescollectiveproofcoverage,backgroundtensoronlycrossrange,REALHilbertEallowsinfinitephysicaldimensions. Evidence reviews/2026-11-09-full-main-v5-kernel-medium-unaccepted/. No concrete new source repair found; stopunchangedconfidence retries/newinventedproofobligations. Review-procedure questionaskedunderfocusedreviewskill,existinggatesretained; Kimiheld/visualpolicyNOTADOPTED/currentvisual230of267/cold/adoption/deliveryallopen. Local87/26andcandidate/PDFunchanged. FirstnewimpasseauditaftermeaningfulMAIN5progress,goalACTIVE/incomplete,notpausedorcomplete.
+
+
+## 2026-11-09: user-requested working-draft and human-history checkpoint
+
+Le requested an atomic commit/push of the current working TeX/PDF, followed by
+a detailed AI development history for human study. The frozen 267-page candidate
+is now stored at the normal tracked notes paths; this is storage authorization,
+not mathematical adoption. The prior 263-page baseline remains recoverable at
+11e009aac6fcc9fdeddb00cdd7063dc56c457aad. All 27 included modules and extra.bib
+are unchanged. Main TeX SHA516d6a650bdac7d3da68672f37836afd084b651c39553b43d5135d0512e39d14.
+
+Fresh frozen-bibliography/date build:267 pages,0errors,0undefined references/
+citations,0overfull. PDF SHAa2aea80bd73cad92db7e2fe70bff7aa6c70f6142d5be460a2710d3f88667f434
+is byte-identical to the independently verified November7 rebuild. The reviewed
+original267 PDF hash26f9... remains distinct; prior raster/layout equality is
+retained as prior evidence, not a newly performed visual review. Exact source
+pins, frozen tracked bbl and build logs are in
+reviews/2026-11-09-working-draft-267-checkpoint/.
+
+AI-DEV-HISTORY.md supplies the requested human narrative, failed routes,
+scientific milestones, formalization limits and review/process mistakes.
+history/git-history.tsv and its JSON mirror preserve all1068 reachable commits
+through11e009a before this checkpoint, not other unmerged/external work. No
+private model reasoning or credentials are added. README now distinguishes
+the current candidate from the historical263+20-page reader pairing.
+
+Current local Lean total remains87/26 (official L0PROPOSED/no companion);
+wholeMAINv5 remainsMEDIUM/unaccepted; visual230/267,37remaining; Kimi hold
+continues. The proposed focused recovery direction was approved conversationally
+but not written into the contract or executed before the stop. Earlier research
+goal clearance and completion of the separate literal stop objective are not
+research completion. No new proof/review request, acceptance-policy change,
+companion creation, HPC use, circulation or whole-goal completion is claimed.
